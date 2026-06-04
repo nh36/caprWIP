@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 43.
-- Covered by scaffold placeholders: 27.
+- Covered by pilot/full production reports: 44.
+- Covered by scaffold placeholders: 26.
 - Grouped into multi-change units: 57 changes across 18 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 27.
+- Still needing human judgement or promotion decisions: 26.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -23,7 +23,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 021 | SC021 | full | one-sided singleton with runner-bounded earlier side and real but broad/far `SC021 < SC040` via `heaven` (`heofun` vs. `heofon`); bundled `PWGmcChanges` remains a runner limitation, not a historical boundary | review and book dossiers drafted | promote as a short singleton full note; keep promoted SC039-SC040 as a rightward cross-reference only and do not build a non-contiguous chapter |
 | 022 | SC022 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; source support is descriptive but sufficient to keep the rule visible | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
 | 023 | SC023 | full | one-sided singleton with runner-bounded earlier side and real but broad/far `SC023 < SC047` via `do`, where delaying the rule collapses the derivation to no output; bundled `PWGmcChanges` remains a runner limitation, not a historical boundary | review and book dossiers drafted | promote as a short singleton full note; keep promoted SC046-SC048 as a rightward cross-reference only and do not build a non-contiguous chapter |
-| 024 | SC024 | scaffold | one-sided later-facing member: earlier search stops at bundled `PWGmcChanges`, while the later boundary is real but broad/far at `SC024 < SC056` via `sheep` and `year` (`sċīep` / `ġīer` vs. `sċēap` / `ġēar`) | review and book dossiers drafted | keep as a singleton scaffold note for now; treat promoted SC055-SC056 as a rightward cross-reference only and do not promote SC024 in this commit |
+| 024 | SC024 | full | one-sided singleton with runner-bounded earlier side and real but broad/far `SC024 < SC056` via `sheep` and `year` (`sċīep` / `ġīer` vs. `sċēap` / `ġēar`); bundled `PWGmcChanges` remains a runner limitation, not a historical boundary | review and book dossiers drafted | promote as a short singleton full note; keep promoted SC055-SC056 as a rightward cross-reference only and do not build a non-contiguous chapter |
 | 025 | SC025 | scaffold | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; keep the long-`ē`-before-nasal background visible without turning either side into positive chronology | review and book dossiers drafted | keep as a singleton scaffold note; do not promote in this commit and do not narrate either search boundary as positive historical chronology |
 | 026-027 | SC026; SC027 | full | strong local reciprocal pair | literature and book dossiers drafted | keep as paired full production report |
 | 028 | SC028 | scaffold | historically legible preconsonantal `x`-loss note with no positive first-break boundary on either side; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break | literature and book dossiers drafted | keep as a singleton scaffold note immediately before the promoted SC029-SC030 core; do not merge it backward into SC026-SC027 or forward into SC029-SC030 |
@@ -622,45 +622,86 @@ SC024 in the same commit.
 
 #### Historical formulation
 
-SC024 *NWGmcLongELowering* remains scaffolded here as a short singleton note
-rather than being promoted immediately. The dossiers show that it is one of the
-strongest source-backed later-facing members of the former SC018-SC025 zone,
-but its live positive edge still points outward to a later promoted report
-rather than to an internal adjacent partner.
+SC024 *NWGmcLongELowering* is promoted here as a **short singleton long-vowel
+note**. It is not a claim that the handbooks isolate one broad long-vowel
+chapter under exactly this CAPR label, and it is not a reason to build a
+non-contiguous chapter with the later promoted `SC055-SC056` umlaut core. The
+historical point is narrower: the sheep / year material keeps this lowering
+legible, and the split early Northwest Germanic zone is clearer if its final
+one-sided candidate is made explicit in strict chronological position after
+SC023.
 
-#### Current evidence
+#### Source tradition
 
-The earlier side is still runner-bounded at bundled *PWGmcChanges*, so that
-left edge must not be rewritten as a positive historical boundary. The later
-side is real but broad/far: `SC024 < SC056`, carried by sheep and year.
-Moving SC024 later than the promoted `SC055-SC056` umlaut report yields
-sċīep / ġīer rather than expected sċēap / ġēar.
+The source tradition is clear enough for a short promotion. Campbell treats
+West Saxon sċēap and ġēar as outcomes of earlier long-vowel
+lowering/fronting in the relevant region [@Campbell1959, §156]. Ringe and
+Taylor likewise discuss the skēpa- / jēra- pathway behind these forms
+[@RingeTaylor2014].
+
+That is enough support for a short note. The prose should keep SC024 focused on
+the narrow lowering/fronting hinge behind sċēap and ġēar, not inflate it
+into a broad long-vowel chapter or a hidden left member of the later
+SC055-SC056 unit.
+
+#### CAPR implementation
+
+CAPR sharpens that broad background into one explicit step: SC024
+*NWGmcLongELowering* lowers the relevant long ē in the early Northwest
+Germanic zone so that the sheep and year derivations reach expected OE
+sċēap and ġēar rather than later high-diphthong outcomes. This is more
+specific than the handbook phrasing, but that specificity is exactly why the
+note is useful. It lets the book mark the third promoted singleton in the split
+early Northwest Germanic zone without pretending that the whole zone forms one
+adjacent production chapter.
 
 #### Place in the cascade
 
-SC024 now stands as its own singleton scaffold note immediately after the
-scaffold SC023 n-stem note and immediately before the scaffold SC025 long-*e*
-nasal-rounding note. It should remain in that local position while treating
-promoted `SC055-SC056` as a rightward cross-reference rather than as a reason
-to merge non-contiguous chapters.
+This note belongs immediately after the promoted `SC023` **N-stem n-loss note**
+and immediately before the scaffold `SC025` **Long e nasal-rounding note**. Its
+meaningful positive chronology link points outward on the right to the already
+promoted `SC055-SC056` **Umlaut core and palatal-diphthongization follower**
+report, but that relation should remain a cross-reference rather than a reason
+to pull SC024 out of strict chronological order.
+
+That placement is the point of the promotion. SC024 is the third full singleton
+to emerge from the split early Northwest Germanic zone, and it closes the
+current run of one-sided early-zone promotions while leaving SC018, SC022, and
+SC025 as boundary/context notes.
 
 #### Order evidence
 
-Current first-break evidence identifies one historically interpretable boundary
-for SC024. The earlier search stops at bundled *PWGmcChanges*, so the left edge
-remains runner-limited rather than historically fixed. The later search does
-find a real broad/far boundary at SC056: if NWGmc long-ē lowering is delayed
-past that stage, PGmc skḗpą yields sċīep instead of expected OE sċēap,
-and PGmc jḗrą yields ġīer instead of expected ġēar. That is enough to
-keep SC024 visible as a likely later singleton candidate, but not enough to
-promote it in this structural cleanup commit.
+The chronology card gives SC024 a real but one-sided window: its earlier side
+is runner-bounded at bundled *PWGmcChanges*, while its later side yields the
+broad/far boundary `SC024 < SC056`.
 
-#### Status
+On the earlier side, the current runner can move SC024 back only to the bundled
+*PWGmcChanges* boundary. That is a methodological runner limitation, not a
+positive historical boundary, so the note must not rewrite it as one.
 
-This is a scaffold placeholder, not finished book prose. The review and book
-dossiers now support SC024 as a plausible later singleton promotion, but the
-present commit only splits the early zone structurally and keeps the SC056
-relation as a cross-reference rather than chapter architecture.
+On the later side, SC024 must precede SC056. If NWGmc long-ē lowering is
+delayed across the promoted umlaut core, PGmc skḗpą yields sċīep instead
+of expected OE sċēap, and PGmc jḗrą yields ġīer instead of expected
+ġēar. That later edge is historically real, but it is broad/far and belongs
+as a rightward cross-reference to SC055-SC056 rather than as chapter
+architecture inside one shared report.
+
+#### Interpretation
+
+SC024 is promoted because the modest reading is now the best one. The sheep
+and year evidence is narrow, but it is genuine, and the assembled half is
+clearer when the last promoted singleton in this early-zone run is stated
+explicitly. The result is a cleaner sequence: promoted SC023, promoted SC024,
+scaffold SC025, then the promoted SC026-SC027 corridor.
+
+#### Remaining cautions
+
+The cautions are mostly structural. SC024 should not be merged with the
+promoted `SC055-SC056` report just because its one positive edge points there.
+Its earlier boundary against bundled *PWGmcChanges* must remain a runner
+limitation rather than a historical claim. And the note should stay modest: it
+is a short architectural singleton, not a new corridor report and not a reason
+to reopen SC018, SC022, or SC025 in the same commit.
 
 ## Long e nasal-rounding note
 

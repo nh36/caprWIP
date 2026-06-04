@@ -4,17 +4,17 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 31
-assembled units: one pilot production report (`016-020`), twenty-one full
-production reports (`014-015`, `021`, `023`, `026-027`, `029-030`, `031-034`,
-`035-037`, `039-040`, `041`, `042`, `043`, `044-045`, `046-048`, `049-050`,
-`051`, `052`, `053-054`, `055-056`, `063`, `064-065`, and `066-068`), and 9
-remaining scaffold placeholders. The opening of the half is now more explicit
-as well: the promoted `SC014-SC015` prelude feeds into the pilot `SC016-SC020`
-corridor, then the scaffold `SC018` note, promoted `SC021` singleton note,
-scaffold `SC022`, promoted `SC023`, and the remaining scaffold `SC024` and
-`SC025` notes before the promoted `SC026-SC027` corridor, separate scaffold
-`SC028` note, promoted `SC029-SC030` glide/fronting core, and promoted
-`SC031-SC034` diphthong chain.
+assembled units: one pilot production report (`016-020`), twenty-two full
+production reports (`014-015`, `021`, `023`, `024`, `026-027`, `029-030`,
+`031-034`, `035-037`, `039-040`, `041`, `042`, `043`, `044-045`, `046-048`,
+`049-050`, `051`, `052`, `053-054`, `055-056`, `063`, `064-065`, and
+`066-068`), and 8 remaining scaffold placeholders. The opening of the half is
+now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
+pilot `SC016-SC020` corridor, then the scaffold `SC018` note, promoted
+`SC021` singleton note, scaffold `SC022`, promoted `SC023`, promoted `SC024`,
+and the remaining scaffold `SC025` note before the promoted `SC026-SC027`
+corridor, separate scaffold `SC028` note, promoted `SC029-SC030`
+glide/fronting core, and promoted `SC031-SC034` diphthong chain.
 
 ## Book architecture note
 
@@ -34,7 +34,7 @@ production unit.
 | 021 | Unstressed o-raising note | SC021 | full | no | no | defer | Now promoted as the first singleton full report from the split early zone. Its real but broad/far `SC021 < SC040` relation via `heaven` remains a rightward cross-reference to promoted SC039-SC040 rather than a reason to merge chapters. |
 | 022 | Mn dissimilation note | SC022 | scaffold | no | no | low | Now split out as its own singleton scaffold note. The rule is historically legible enough to keep visible, but its current card is still boundary-limited on both sides. |
 | 023 | N-stem n-loss note | SC023 | full | no | no | defer | Now promoted as the second singleton full report from the split early zone. Its real but broad/far `SC023 < SC047` relation via `do` remains a rightward cross-reference to promoted SC046-SC048 rather than a reason to merge chapters. |
-| 024 | Long e-lowering note | SC024 | scaffold | no | no | medium | Now split out as a source-backed later singleton candidate. Its real but broad/far `SC024 < SC056` relation via `sheep` and `year` should remain a cross-reference to promoted SC055-SC056 rather than a reason to merge chapters. |
+| 024 | Long e-lowering note | SC024 | full | no | no | defer | Now promoted as the third singleton full report from the split early zone. Its real but broad/far `SC024 < SC056` relation via `sheep` and `year` remains a rightward cross-reference to promoted SC055-SC056 rather than a reason to merge chapters. |
 | 025 | Long e nasal-rounding note | SC025 | scaffold | no | no | low | Now split out as its own singleton scaffold note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary must remain methodological limits rather than chapter architecture. |
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
 | 028 | Preconsonantal x-loss note | SC028 | scaffold | no | maybe | low | Now split out as its own short scaffold note. It remains historically legible through `x`-loss material, but its chronology card is boundary-limited on both sides and still does not justify finished standalone promotion. |
@@ -62,16 +62,14 @@ production unit.
 
 ## Recommended next targets
 
-1. **SC024 follow-on singleton review** — with SC023 now promoted, SC024 is the clearest next singleton candidate from the split early NWGmc zone because it has one real broad/far outward link to the already promoted SC055-SC056 report.
-2. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, and `SC059-SC061` remain visible, but they are still lower-priority than the remaining one-sided singleton candidate.
-3. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
+1. **Boundary/context scaffold notes and residual bridges** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, and `SC059-SC061` remain visible, but they are all lower-confidence than the singleton promotions already completed in the split early NWGmc zone.
+2. **Late-tail and closing clusters** — still later work once the remaining smaller structural decisions are clearer; they remain too broad for immediate promotion unchanged.
 
 ## Recommended immediate next step
 
-With SC023 now promoted as the second singleton full report from the split
-early NWGmc zone, the next substantive promotion decision should probably be
-SC024. `SC018`, `SC022`, and `SC025` remain boundary-limited/context-note
-material unless further source work changes that. The smaller residual scaffold
-notes and bridges can wait behind that remaining one-sided singleton decision,
-and the late-tail and closing clusters still need later subdivision rather than
+With SC024 now promoted as the third singleton full report from the split early
+NWGmc zone, `SC018`, `SC022`, and `SC025` remain the boundary-limited/context
+notes in that early region unless further source work changes that. The smaller
+residual scaffold notes and bridges can remain scaffolded for now, and the
+late-tail and closing clusters still need later subdivision rather than
 immediate promotion.
