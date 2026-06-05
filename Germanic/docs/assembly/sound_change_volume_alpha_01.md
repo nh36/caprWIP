@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 47.
-- Covered by scaffold placeholders: 23.
+- Covered by pilot/full production reports: 48.
+- Covered by scaffold placeholders: 22.
 - Grouped into multi-change units: 50 changes across 21 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 23.
+- Still needing human judgement or promotion decisions: 22.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -57,7 +57,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 079-080 | SC079; SC080 | scaffold | opening bridge: `SC055 < SC079 < SC080`, with a broad/far left edge and a narrow local right edge, while SC080 remains one-sided on the right | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a modest scaffold bridge; SC079 is the stronger opener, SC080 is the final-geminate follower, and the pair remains lower-priority than SC085-SC086 or SC087 |
 | 081-083 | SC081; SC082; SC083 | scaffold | technical middle bridge: `SC081 < SC082 < SC083`, with SC082 as the strongest center, SC081's left edge broad/far to SC055, and SC083's later side runner-bounded | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a scaffold bridge; SC082 is the real center, SC081 and SC083 remain subordinate flanks, and SC083 should not be merged into the promoted SC085-SC086 report |
 | 085-086 | SC085; SC086 | full | strongest compact closing core: `SC073 < SC085 < SC086`, with SC086 also receiving the SC078 seam as a cross-reference | literature and book dossiers drafted | promote as a focused full closing report; keep SC073 and SC078 as leftward cross-references only, do not claim a positive SC086 < SC087 boundary, and do not expand into SC081-SC083 or SC087 |
-| 087 | SC087 | scaffold | terminal singleton: source-backed and book-facing, but its earlier boundary is broad/far back to SC044 and the later side is runner-bounded | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold terminal note; it remains the strongest later closing singleton candidate, but do not promote it in this commit |
+| 087 | SC087 | full | terminal singleton with broad/far `SC044 < SC087` and a runner-bounded later side | literature and book dossiers drafted | promote as a short terminal singleton full report; keep SC044-SC045 as a distant leftward cross-reference only, do not claim a positive SC086 < SC087 relation, and do not absorb SC078, SC079-SC080, or SC081-SC083 |
 
 ## Opening vowel prelude
 
@@ -3503,7 +3503,7 @@ larger mixed chapter.
 
 This report belongs immediately after the scaffold `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge** and immediately
-before the scaffold SC087 **R-metathesis terminal note**. Its meaningful outward
+before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
 chronology links point left to the still-scaffolded `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** through SC085 and
 farther left to the still-scaffolded SC078 **Weak-tail reduction right-edge
@@ -3566,42 +3566,89 @@ positive `SC086 < SC087` boundary that the card does not show.
 
 #### Historical formulation
 
-SC087 *OERMetathesis* now stands as its own singleton scaffold note at the very
-end of the sound-change half. The dossier work shows that it is source-backed
-and book-facing enough to deserve explicit visibility, but it behaves like an
-independent terminal note rather than like the right member of the `SC085-SC086`
-core.
+SC087 *OERMetathesis* is promoted here as a **short terminal singleton full
+report**. The dossier work shows that r-metathesis is source-backed and
+book-facing enough to deserve explicit production prose, but the modest reading
+is still the right one: this is an independent terminal note, not an extension
+of the promoted `SC085-SC086` h-loss/contraction core and not a reason to pull
+in SC078, `SC079-SC080`, or `SC081-SC083`.
 
-#### Current evidence
+#### Source tradition
 
-The rule has one real earlier boundary, but it is broad and far away rather than
-local. SC087 must follow SC044, where the burst derivation otherwise breaks
-too early and yields beorstan instead of expected OE berstan. On the later
-side, the search stops at the current runner limit beyond order 86 without a
-real break. That later limit is methodological and must not be rewritten as a
-positive historical boundary.
+The source tradition for this note is real and distinct. Hogg treats
+r-metathesis as a genuine Old English process with variable chronology and makes
+clear that it belongs to a different late consonant/vowel history from
+contracted verbs and final-geminate simplification [@Hogg1992]. Ringe and
+Taylor likewise treat metathesis of *r* with short vowels as a real Old English
+development and use beornan / berstan type material to show that the process
+is historically interpretable without making it a compact local pair
+[@RingeTaylor2014]. Luick and Sievers-Brunner reinforce the same point from the
+older grammar tradition, treating metathesis as its own late rearrangement
+history and using the familiar berstan, frost, and cerse family as core
+examples [@Luick1914; @SieversBrunner1965, §179].
+
+That is enough support for a short terminal production note. It is also a reason
+to keep the note separate from the newly promoted h-loss/contraction report: the
+historical process is real, but it is not just the last step of the SC085-SC086
+core under another name.
+
+#### CAPR implementation
+
+CAPR isolates this late process as one explicit step: SC087 *OERMetathesis*.
+That formalization is narrower than the broader historical discussions in Hogg,
+Ringe and Taylor, Luick, and Sievers-Brunner, but it is useful in the book
+because it gives the terminal *r*-rearrangement material a precise
+chronological place instead of leaving it buried in a generic closing cluster.
 
 #### Place in the cascade
 
-SC087 now stands immediately after the promoted `SC085-SC086`
-**H-loss and contraction core** and closes the current sound-change-half
-scaffold. Its meaningful positive chronology link points far left to the
-promoted `SC044-SC045` **Breaking and velar-fricative palatalization** report,
-but that broad/far relation should remain a distant cross-reference rather than
-chapter architecture.
+This report belongs immediately after the promoted `SC085-SC086`
+**H-loss and contraction core** and closes the current sound-change half. Its
+meaningful positive chronology relation points far left to the promoted
+`SC044-SC045` **Breaking and velar-fricative palatalization** report through
+SC044. That broad/far relation should remain a distant leftward cross-reference
+rather than a reason to build a non-contiguous chapter.
+
+This is also why SC087 remains separate from SC085-SC086 even though it follows
+that report directly. Adjacency in the assembled order is real, but the source
+tradition and the chronology card do not make SC087 the right-hand half of a
+tighter local pair.
 
 #### Order evidence
 
-Current first-break evidence places SC087 after SC044. If OE R Metathesis is
-moved before that much earlier stage, PGmc bréstaną yields beorstan instead
-of expected OE berstan. The later side is different: the current runner finds
-no real break beyond the current order before the runner limit, so the note
-records a broad/far leftward constraint plus a terminal runner-bounded right
-side, not a compact local window.
+SC087 has one positive chronology relation, and it is broad/far: `SC044 < SC087`.
 
-#### Status
+If OE R Metathesis is moved before the much earlier SC044 OE Breaking stage,
+PGmc bréstaną yields beorstan rather than expected OE berstan. That left
+edge is historically real, but it is not local and should be narrated as a
+distant cross-reference to the promoted SC044-SC045 report rather than as a
+compact local window.
 
-This is a scaffold placeholder, not finished book prose. Keep SC087 visible as
-the terminal singleton note that follows the promoted SC085-SC086 report, but do
-not promote it in this commit and do not turn either its broad/far SC044
-relation or its runner-bounded later side into chapter architecture.
+The later side is different. The current runner finds no real break beyond the
+current order before the runner limit. That is a boundary-limited negative
+result, not a positive historical boundary. The report therefore must not
+claim a positive `SC086 < SC087` relation, and it must not turn the end of
+the runner into a must-follow or must-precede statement.
+
+#### Interpretation
+
+SC087 is promoted because the terminal singleton reading is now the best one.
+The historical process is real and book-facing enough to merit explicit prose,
+but its chronology is broad/far on the left and runner-bounded on the right. A
+short terminal note therefore fits the evidence better than either a larger
+closing cluster or a forced merger with SC085-SC086.
+
+That makes this an architectural endpoint. It gives the closing region an
+explicit terminal note while leaving the narrower `SC079-SC080` and more
+technical `SC081-SC083` bridges scaffolded and keeping SC078 outside the closing
+report structure.
+
+#### Remaining cautions
+
+The cautions are mostly structural. SC087 should not be merged with the promoted
+SC085-SC086 report merely because it follows it in the cascade. Its broad/far
+`SC044 < SC087` relation should remain only a distant cross-reference to the
+promoted SC044-SC045 report. Its later side must remain a runner-bounded limit
+rather than a positive boundary. And the report should stay focused: it is a
+short terminal singleton note, not a reason to reopen SC078, `SC079-SC080`, or
+`SC081-SC083` in the same chapter.
