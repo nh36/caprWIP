@@ -49,7 +49,7 @@ larger mixed chapter.
 
 This report belongs immediately after the scaffold `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge** and immediately
-before the scaffold SC087 **R-metathesis terminal note**. Its meaningful outward
+before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
 chronology links point left to the still-scaffolded `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** through SC085 and
 farther left to the still-scaffolded SC078 **Weak-tail reduction right-edge
