@@ -4,11 +4,11 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 41
-assembled units: one pilot production report (`016-020`), twenty-three full
+assembled units: one pilot production report (`016-020`), twenty-four full
 production reports (`014-015`, `021`, `023`, `024`, `026-027`, `029-030`,
 `031-034`, `035-037`, `039-040`, `041`, `042`, `043`, `044-045`, `046-048`,
-`049-050`, `051`, `052`, `053-054`, `055-056`, `059`, `063`, `064-065`, and
-`066-068`), and 17 remaining scaffold placeholders. The opening of the half is
+`049-050`, `051`, `052`, `053-054`, `055-056`, `059`, `063`, `064-065`,
+`066-068`, and `085-086`), and 16 remaining scaffold placeholders. The opening of the half is
 now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
 pilot `SC016-SC020` corridor, then the scaffold `SC018` note, promoted
 `SC021` singleton note, scaffold `SC022`, promoted `SC023`, promoted `SC024`,
@@ -20,7 +20,8 @@ plus separate scaffold notes for SC060 and SC061 before the promoted SC063
 apocope report, the old broad `SC069-SC078` late-tail scaffold has now been
 structurally split into SC069, SC070-SC071, SC072-SC073, SC074-SC075, SC076,
 and SC078, and the former broad `SC079-087` closing scaffold has now been split
-into `SC079-SC080`, `SC081-SC083`, `SC085-SC086`, and `SC087`.
+into scaffold `SC079-SC080`, scaffold `SC081-SC083`, promoted `SC085-SC086`,
+and scaffold `SC087`.
 
 ## Book architecture note
 
@@ -70,24 +71,23 @@ production unit.
 | 072-073 | Unstressed long-vowel shortening and ae-merger core | SC072; SC073 | scaffold | yes | no | defer | Now split out as the strongest internal late-tail core. `SC072` has real `SC064 < SC072 < SC073` chronology, SC073 reciprocates it on the left and points forward to SC085 on the right, and this pair remains the clearest non-closing later production candidate. |
 | 074-075 | Medial unstressed-i lowering bridge | SC074; SC075 | scaffold | yes | maybe | low | Now split out as a narrow local bridge. `SC074` sits between SC072 and SC075, while SC075 remains one-sided and runner-bounded on the right, so the pair is useful but lower-priority than SC072-SC073 or SC078. |
 | 076 | Prefix i-reduction note | SC076 | scaffold | no | no | low | Now split out as its own source-backed but chronology-negative singleton note. The earlier side still stops at bundled `PWGmcChanges`, the later side remains runner-bounded, and the rule should not be forced into a grouped production unit just for convenience. |
-| 078 | Weak-tail reduction right-edge note | SC078 | scaffold | no | no | defer | SC078 remains explicitly outside the closing cluster. Its broad earlier `SC070 < SC078` limit and narrower later `SC078 < SC086` boundary are both real, but the right edge should point only to the future `SC085-SC086` core or SC086 itself as a cross-reference, not pull SC078 forward into the closing chapter structure. |
+| 078 | Weak-tail reduction right-edge note | SC078 | scaffold | no | no | defer | SC078 remains explicitly outside the closing cluster. Its broad earlier `SC070 < SC078` limit and narrower later `SC078 < SC086` boundary are both real, but the right edge should point only to the promoted `SC085-SC086` report through SC086 as a cross-reference, not pull SC078 forward into the closing chapter structure. |
 | 079-080 | Final-j loss and final-geminate simplification bridge | SC079; SC080 | scaffold | yes | maybe | low | Now split out as a real but modest opening bridge. SC079 has a broad/far left edge to SC055 and a local right edge to SC080, while SC080 remains the one-sided final-geminate follower. |
 | 081-083 | J-strengthening, vocalization, and ei-contraction bridge | SC081; SC082; SC083 | scaffold | yes | maybe | low | Now split out as a technical middle bridge with SC082 as the real center. SC081 and SC083 are historically legible but subordinate, and SC083 belongs with this chain rather than with SC085-SC086. |
-| 085-086 | H-loss and contraction core | SC085; SC086 | scaffold | yes | no | defer | Now split out as the strongest compact closing core. `SC085 < SC086` is the cleanest local closing pair, the source support is strongest here, and the already explicit SC078 seam should point only here by cross-reference. |
+| 085-086 | H-loss and contraction core | SC085; SC086 | full | no | no | defer | Now promoted as the strongest compact closing production report. `SC085 < SC086` is the cleanest local closing pair, SC085 keeps SC073 only as a leftward cross-reference to the scaffolded `SC072-SC073` core, SC086 receives SC078 only as a leftward cross-reference, and the later side of SC086 remains runner-bounded rather than historically positive. |
 | 087 | R-metathesis terminal note | SC087 | scaffold | no | no | defer | Now split out as an independent terminal singleton note. It is source-backed and book-facing, but its positive boundary is broad/far back to SC044 and its later side is runner-bounded. |
 
 ## Recommended next targets
 
-1. **SC085-SC086 later promotion** — inside the newly split closing region, `SC085-SC086` is now the strongest first closing production candidate.
-2. **SC087 later promotion** — if the project wants a terminal singleton rather than another pair, SC087 is now the strongest closing singleton candidate.
-3. **SC072-SC073 later promotion** — outside the closing region, `SC072-SC073` remains the strongest non-closing production candidate.
-4. **SC078 continued deferral** — SC078 should remain scaffolded until `SC085-SC086` has been promoted or otherwise structurally settled; the real `SC078 < SC086` seam should remain a cross-reference only.
+1. **SC087 later promotion** — after the promotion of SC085-SC086, SC087 is now the strongest later closing singleton candidate.
+2. **SC072-SC073 later promotion** — outside the closing region, `SC072-SC073` remains the strongest non-closing production candidate.
+3. **SC078 continued deferral** — SC078 should remain scaffolded for now and point only by cross-reference to the promoted SC085-SC086 report through SC086.
+4. **Remaining closing bridges** — `SC081-SC083` and `SC079-SC080` remain scaffolded closing bridges and are lower-priority than SC087 or SC072-SC073.
 
 ## Recommended immediate next step
 
-With the old `SC079-087` row now structurally split, the clearest next
-substantive move inside the closing region is likely a later promotion of
-`SC085-SC086`. If the project instead wants the next production move elsewhere,
-`SC072-SC073` remains the strongest non-closing candidate. SC078 should stay
-scaffolded meanwhile and point only by cross-reference to the eventual
-`SC085-SC086` closing unit.
+With SC085-SC086 now promoted as the compact closing core, the clearest next
+substantive move is either a later promotion of SC087 as the terminal singleton
+or a return to SC072-SC073 as the strongest non-closing candidate. SC078 should
+stay scaffolded meanwhile and point only by cross-reference to the promoted
+SC085-SC086 report through SC086.

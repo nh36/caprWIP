@@ -23,7 +23,7 @@ strongest future production target in the closing region.
 
 The bridge belongs immediately after the scaffold `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge** and immediately before
-the scaffold `SC085-SC086` **H-loss and contraction core**. Its meaningful
+the promoted `SC085-SC086` **H-loss and contraction core**. Its meaningful
 outward chronology links point left to promoted `SC055-SC056` through SC081 and
 right only indirectly toward SC085, but neither relation should become a reason
 to collapse this middle bridge into a non-local chapter.
@@ -47,4 +47,4 @@ technical middle bridge with SC082 as center.
 
 This is a scaffold placeholder, not finished book prose. Keep SC081-SC083
 visible as a real but more technical bridge, with SC082 as the center, and do
-not promote it in this commit.
+not merge it into the promoted SC085-SC086 report.

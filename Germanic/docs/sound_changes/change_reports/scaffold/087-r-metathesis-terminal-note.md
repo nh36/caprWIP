@@ -21,7 +21,7 @@ positive historical boundary.
 
 #### Place in the cascade
 
-SC087 now stands immediately after the scaffold `SC085-SC086`
+SC087 now stands immediately after the promoted `SC085-SC086`
 **H-loss and contraction core** and closes the current sound-change-half
 scaffold. Its meaningful positive chronology link points far left to the
 promoted `SC044-SC045` **Breaking and velar-fricative palatalization** report,
@@ -40,6 +40,6 @@ side, not a compact local window.
 #### Status
 
 This is a scaffold placeholder, not finished book prose. Keep SC087 visible as
-the terminal singleton note of the closing region, but do not promote it in this
-commit and do not turn either its broad/far SC044 relation or its runner-bounded
-later side into chapter architecture.
+the terminal singleton note that follows the promoted SC085-SC086 report, but do
+not promote it in this commit and do not turn either its broad/far SC044
+relation or its runner-bounded later side into chapter architecture.

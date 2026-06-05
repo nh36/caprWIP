@@ -6,10 +6,10 @@
 
 SC078 `OEWeakTailReduction` now stands as its own singleton scaffold note at the
 right edge of the split late-tail region. The dossier work shows that it is the
-strongest singleton candidate on this side of the seam, but this commit keeps it
-scaffolded because its later relation to SC086 should be judged against the
-future `SC085-SC086` closing core rather than by pulling SC078 into the closing
-cluster itself.
+strongest singleton candidate on this side of the seam, but this report still
+leaves it scaffolded because its later relation to SC086 should remain a
+cross-reference to the newly promoted `SC085-SC086` closing report rather than
+an excuse to pull SC078 into the closing chapter itself.
 
 #### Current evidence
 
@@ -26,9 +26,9 @@ SC078 now stands as its own singleton scaffold note immediately after the
 scaffold SC076 **Prefix i-reduction note** and immediately before the scaffold
 `SC079-SC080` **Final-j loss and final-geminate simplification bridge**. Its
 meaningful rightward chronology link still points past that opening bridge to
-the future scaffold `SC085-SC086` **H-loss and contraction core**, and that
-relation should remain a cross-reference only rather than a reason to pull SC078
-forward into a non-contiguous closing chapter.
+the promoted `SC085-SC086` **H-loss and contraction core**, and that relation
+should remain a cross-reference only rather than a reason to pull SC078 forward
+into a non-contiguous closing chapter.
 
 #### Order evidence
 
@@ -47,5 +47,5 @@ closing seam as much as to the late-tail region itself.
 
 This is a scaffold placeholder, not finished book prose. SC078 is now the
 strongest singleton/right-edge candidate in the split late-tail region, but it
-should probably still wait until the split closing scaffold has settled around a
-future `SC085-SC086` unit before any promotion decision.
+should probably still wait until the promoted `SC085-SC086` report has settled
+its rightward cross-reference before any promotion decision.

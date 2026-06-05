@@ -24,9 +24,9 @@ The core belongs immediately after the scaffold `SC070-SC071`
 **Early unstressed fronting and shortening bridge** and immediately before the
 scaffold `SC074-SC075` **Medial unstressed-i lowering bridge**. Its meaningful
 outward chronology links point left to the promoted `SC064-SC065`
-**Post-apocope tail** through SC064 and right to the still-scaffolded closing
-region through SC085, but both links should remain cross-references rather than
-reasons to stretch this row out of strict order.
+**Post-apocope tail** through SC064 and right to the promoted `SC085-SC086`
+**H-loss and contraction core** through SC085, but both links should remain
+cross-references rather than reasons to stretch this row out of strict order.
 
 #### Order evidence
 
