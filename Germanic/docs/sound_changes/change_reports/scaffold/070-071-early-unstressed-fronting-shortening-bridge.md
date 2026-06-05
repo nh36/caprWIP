@@ -21,7 +21,7 @@ center in the region.
 #### Place in the cascade
 
 The bridge belongs immediately after the scaffold SC069 **Early o-shortening
-context note** and immediately before the scaffold `SC072-SC073`
+context note** and immediately before the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core**. Its meaningful outward
 chronology relation points left to the promoted SC052 **Velar palatalization
 hinge**, but that link should remain a cross-reference rather than a reason to

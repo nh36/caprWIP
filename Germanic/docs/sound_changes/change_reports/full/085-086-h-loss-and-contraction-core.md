@@ -12,7 +12,7 @@ from the still-scaffolded SC078 note.
 
 That stronger reading is also narrower than the old grouped scaffold. The report
 promotes only SC085 and SC086. It does **not** expand backward into the more
-technical `SC081-SC083` bridge, outward into the still-scaffolded `SC072-SC073`
+technical `SC081-SC083` bridge, outward into the promoted `SC072-SC073`
 late-tail core, forward into SC087, or leftward into SC078 itself.
 
 #### Source tradition
@@ -50,7 +50,7 @@ larger mixed chapter.
 This report belongs immediately after the scaffold `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge** and immediately
 before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
-chronology links point left to the still-scaffolded `SC072-SC073`
+chronology links point left to the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** through SC085 and
 farther left to the still-scaffolded SC078 **Weak-tail reduction right-edge
 note** through SC086.
@@ -65,7 +65,7 @@ The local center of the report is `SC085 < SC086`.
 
 SC085 must follow SC073 and precede SC086. If OE H Loss is moved earlier than
 SC073, PGmc `*táixōn` yields `tāæ` rather than expected OE `tā`, so the leftward
-SC073 relation is real but should remain a cross-reference to the scaffolded
+SC073 relation is real but should remain a cross-reference to the promoted
 `SC072-SC073` core. If SC085 is moved later than SC086, forms such as `flee`,
 `slay`, `ten`, and `toe` retain over-long vocalic sequences: PGmc `*fléuxaną`
 yields `flēoan` instead of `flēon`, PGmc `*sláxaną` yields `sleaan` instead of
@@ -100,7 +100,7 @@ The report should stay focused. It should not expand backward into `SC081-SC083`
 just because the more technical bridge precedes it. It should not expand forward
 into SC087 just because SC087 is the next closing note. It should not pull SC078
 into the chapter merely because `SC078 < SC086` is real, and it should not turn
-`SC073 < SC085` into a reason to absorb the scaffolded `SC072-SC073` core.
+`SC073 < SC085` into a reason to absorb the promoted `SC072-SC073` core.
 
 Most importantly, the later side of SC086 remains runner-bounded. This chapter
 may state the real local center `SC085 < SC086`, but it must not invent a

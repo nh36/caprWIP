@@ -8,7 +8,7 @@ This scaffold unit now groups SC074 `OEMedUnstressedILowering1` and SC075
 `OEMedUnstressedILowering` as a narrow medial-unstressed-`i` lowering bridge
 inside the split late-tail region. The dossier work shows that the pair is real
 and worth keeping visible, but also narrower and lower-priority than the
-SC072-SC073 core or the SC078 right-edge note.
+promoted SC072-SC073 core or the SC078 right-edge note.
 
 #### Current evidence
 
@@ -20,7 +20,7 @@ production prose.
 
 #### Place in the cascade
 
-The bridge belongs immediately after the scaffold `SC072-SC073`
+The bridge belongs immediately after the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** and immediately before
 the scaffold SC076 **Prefix i-reduction note**. Its meaningful outward link
 points left to SC072 through the `fright` derivation, but that relation should
@@ -44,4 +44,4 @@ not a settled production unit.
 
 This is a scaffold placeholder, not finished book prose. Keep SC074-SC075
 visible as a narrow late-tail bridge, but leave it scaffolded and lower-priority
-than SC072-SC073 or SC078.
+than the promoted SC072-SC073 core or SC078.
