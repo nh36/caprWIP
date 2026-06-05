@@ -41,8 +41,9 @@ a broader scaffold.
 This report belongs immediately after the scaffold SC076 **Prefix i-reduction
 note** and immediately before the scaffold `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge**. Its meaningful
-rightward chronology link points past those remaining scaffolded closing bridges
-to the promoted `SC085-SC086` **H-loss and contraction core** through SC086.
+rightward chronology link points past the remaining scaffolded opening bridge
+and into the promoted `SC081-SC083` technical middle bridge before reaching the
+promoted `SC085-SC086` **H-loss and contraction core** through SC086.
 
 That rightward link is real, but it remains a cross-reference only. SC078 should
 not be pulled forward into a non-contiguous closing report, and SC079-SC080 or

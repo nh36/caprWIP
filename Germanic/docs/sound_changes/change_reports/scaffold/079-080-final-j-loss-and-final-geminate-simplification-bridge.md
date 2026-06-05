@@ -21,7 +21,7 @@ closing production target.
 #### Place in the cascade
 
 The bridge belongs immediately after the promoted SC078 **Weak-tail reduction
-right-edge note** and immediately before the scaffold `SC081-SC083`
+right-edge note** and immediately before the promoted `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge**. Its meaningful
 outward chronology relation points far left to the promoted `SC055-SC056`
 **Umlaut core and palatal-diphthongization follower**, but that broad/far link

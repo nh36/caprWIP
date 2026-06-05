@@ -8,7 +8,8 @@ This is a **compact closing production report** centred on SC085 `OEHLoss` and
 SC086 `OEContraction`. The dossier work shows that this adjacent pair is the
 strongest compact core in the closing region: it has the clearest handbook
 support, the cleanest local chronology, and the best-defined right-edge seam
-from the now-promoted SC078 report.
+from the now-promoted SC078 report. It remains more book-facing than the newly
+promoted but more technical SC081-SC083 bridge immediately to its left.
 
 That stronger reading is also narrower than the old grouped scaffold. The report
 promotes only SC085 and SC086. It does **not** expand backward into the more
@@ -47,7 +48,7 @@ larger mixed chapter.
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC081-SC083`
+This report belongs immediately after the promoted `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge** and immediately
 before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
 chronology links point left to the promoted `SC072-SC073`
@@ -96,8 +97,9 @@ explicitly scaffolded.
 
 #### Remaining cautions
 
-The report should stay focused. It should not expand backward into `SC081-SC083`
-just because the more technical bridge precedes it. It should not expand forward
+The report should stay focused. It should not expand backward into the promoted
+`SC081-SC083` bridge just because the more technical sequence precedes it. It
+should not expand forward
 into SC087 just because SC087 is the next closing note. It should not pull SC078
 into the chapter merely because `SC078 < SC086` is real, and it should not turn
 `SC073 < SC085` into a reason to absorb the promoted `SC072-SC073` core.
