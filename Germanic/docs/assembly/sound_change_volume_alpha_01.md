@@ -7,7 +7,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 - Ordinary chronology-card sound changes represented: 70/70.
 - Covered by pilot/full production reports: 45.
 - Covered by scaffold placeholders: 25.
-- Grouped into multi-change units: 51 changes across 19 units.
+- Grouped into multi-change units: 50 changes across 21 units.
 - Still needing literature dossiers: 64.
 - Still needing human judgement or promotion decisions: 25.
 - Negative/boundary-only chronology cards: 10.
@@ -53,8 +53,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 072-073 | SC072; SC073 | scaffold | strongest internal core: `SC064 < SC072 < SC073`, with SC073 also pointing forward to SC085 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep scaffolded in this commit, but treat as the strongest later production candidate inside the split late-tail region; keep SC064 and SC085 as cross-references only |
 | 074-075 | SC074; SC075 | scaffold | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a narrow scaffold bridge; it remains useful for visibility but is lower-priority than SC072-SC073 or SC078 |
 | 076 | SC076 | scaffold | source-backed but chronology-negative singleton: no positive first-break boundary in either direction, with the earlier search blocked by bundled `PWGmcChanges` and the later side runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold note; do not force SC076 into a grouped production unit and do not narrate either boundary limit as positive chronology |
-| 078 | SC078 | scaffold | right-edge hinge: broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical boundary | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold right-edge note in this commit; it is the strongest singleton candidate, but its SC086 relation should be judged alongside the closing SC079-SC087 cluster before any promotion |
-| 079-087 | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | mixed closing profile: `SC079 < SC080`, `SC081 < SC082 < SC083`, and `SC085 < SC086` provide separate internal seams, while SC087 remains a broad/far terminal note | literature and book dossiers drafted; pending human chapter-shape review | keep grouped scaffold in this commit, but plan a later structural split before any promotion; the strongest closing candidates are SC085-SC086 or SC087, and SC078 should remain a cross-reference only |
+| 078 | SC078 | scaffold | right-edge hinge: broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical boundary | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold right-edge note in this commit; its SC086 relation should point only to the future SC085-SC086 closing core as a cross-reference, not to a non-contiguous chapter |
+| 079-080 | SC079; SC080 | scaffold | opening bridge: `SC055 < SC079 < SC080`, with a broad/far left edge and a narrow local right edge, while SC080 remains one-sided on the right | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a modest scaffold bridge; SC079 is the stronger opener, SC080 is the final-geminate follower, and the pair remains lower-priority than SC085-SC086 or SC087 |
+| 081-083 | SC081; SC082; SC083 | scaffold | technical middle bridge: `SC081 < SC082 < SC083`, with SC082 as the strongest center, SC081's left edge broad/far to SC055, and SC083's later side runner-bounded | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a scaffold bridge; SC082 is the real center, SC081 and SC083 remain subordinate flanks, and SC083 should not be merged into SC085-SC086 |
+| 085-086 | SC085; SC086 | scaffold | strongest compact closing core: `SC073 < SC085 < SC086`, with SC086 also receiving the SC078 seam as a cross-reference | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep scaffolded in this commit, but treat as the strongest later closing production candidate; keep SC073 and SC078 as cross-references only |
+| 087 | SC087 | scaffold | terminal singleton: source-backed and book-facing, but its earlier boundary is broad/far back to SC044 and the later side is runner-bounded | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold terminal note; it is the strongest later closing singleton candidate, but do not promote it in this commit |
 
 ## Opening vowel prelude
 
@@ -3304,8 +3307,9 @@ and do not rewrite either boundary limit into positive historical chronology.
 SC078 *OEWeakTailReduction* now stands as its own singleton scaffold note at the
 right edge of the split late-tail region. The dossier work shows that it is the
 strongest singleton candidate on this side of the seam, but this commit keeps it
-scaffolded because its later relation to SC086 should be judged alongside the
-closing `SC079-SC087` cluster.
+scaffolded because its later relation to SC086 should be judged against the
+future `SC085-SC086` closing core rather than by pulling SC078 into the closing
+cluster itself.
 
 #### Current evidence
 
@@ -3320,9 +3324,11 @@ more interpretable side.
 
 SC078 now stands as its own singleton scaffold note immediately after the
 scaffold SC076 **Prefix i-reduction note** and immediately before the scaffold
-`SC079-SC087` **Final-j, contraction, and metathesis cluster**. Its rightward
-chronology link to SC086 should remain a cross-reference only until the closing
-cluster has also been dossier-reviewed.
+`SC079-SC080` **Final-j loss and final-geminate simplification bridge**. Its
+meaningful rightward chronology link still points past that opening bridge to
+the future scaffold `SC085-SC086` **H-loss and contraction core**, and that
+relation should remain a cross-reference only rather than a reason to pull SC078
+forward into a non-contiguous closing chapter.
 
 #### Order evidence
 
@@ -3341,46 +3347,204 @@ closing seam as much as to the late-tail region itself.
 
 This is a scaffold placeholder, not finished book prose. SC078 is now the
 strongest singleton/right-edge candidate in the split late-tail region, but it
-should probably still wait until the dossier-prepared `SC079-SC087` cluster has
-been structurally reviewed or split before any promotion decision.
+should probably still wait until the split closing scaffold has settled around a
+future `SC085-SC086` unit before any promotion decision.
 
-## Final-j, contraction, and metathesis cluster
+## Final-j loss and final-geminate simplification bridge
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit groups `SC079`, `SC080`, `SC081`, `SC082`, `SC083`,
-`SC085`, `SC086`, and `SC087` as the closing final-j, contraction, and
-metathesis cluster. It gives the assembled sound-change half a visible terminal
-section without pretending that every closing card already has its own mature
-chapter.
+This scaffold unit now groups SC079 *OEJLossAfterHeavy* and SC080
+*OEFinalGeminateSimplification* as the opening bridge of the split closing
+region. The pair is historically real and adjacent, but it is modest rather
+than central: SC079 is the broader left-edge hinge, while SC080 is the narrower
+one-sided follower.
 
 #### Current evidence
 
-All eight member changes already have chronology cards and FOMA implementations,
-and the grouped row now has dedicated literature and book dossiers. Those
-dossiers show that this is not a promotable eight-change core: `SC079-SC080`,
-`SC081-SC083`, and `SC085-SC086` are the clearest internal seams, while SC087
-behaves more like an independent terminal singleton note.
+SC079 has positive boundaries on both sides. It must follow SC055 and precede
+SC080. SC080 then directly reciprocates that local relation on the left, but its
+later side remains runner-bounded through the current SC087 boundary. The pair
+therefore forms a real opening bridge without yet behaving like the strongest
+closing production target.
 
 #### Place in the cascade
 
-The unit spans current cascade orders 79-87, from *OEJLossAfterHeavy* through
-*OERMetathesis*. It closes the current sound-change-half scaffold.
+The bridge belongs immediately after the scaffold SC078 **Weak-tail reduction
+right-edge note** and immediately before the scaffold `SC081-SC083`
+**J-strengthening, vocalization, and ei-contraction bridge**. Its meaningful
+outward chronology relation points far left to the promoted `SC055-SC056`
+**Umlaut core and palatal-diphthongization follower**, but that broad/far link
+should remain a cross-reference rather than a reason to merge non-adjacent
+chapters.
 
 #### Order evidence
 
-The cards mix several different closing profiles. `SC079 < SC080` is a narrow
-opening bridge, `SC081 < SC082 < SC083` forms a technical local chain,
-`SC085 < SC086` is the strongest compact closing pair, and SC087 remains a
-broad/far terminal note. The grouped row therefore remains a visibility
-placeholder rather than pretending that one shared chapter shape has already
-been decided.
+Current first-break evidence gives the pair one real local seam: `SC079 < SC080`.
+If SC079 is moved later than SC080, the lung derivation yields lungenn
+instead of expected OE lungen. SC079 also has a broader leftward anchor: if
+OE J Loss After Heavy is moved before SC055, forms such as believe, bow, and
+follow undo the live umlaut-sensitive vowel development across a large set of
+derivations.
+
+SC080 is different. Its earlier relation to SC079 is real and directly
+reciprocal, but the later side remains a no-break-before-boundary result through
+SC087. The bridge should therefore stay modest: it marks a real opening seam,
+not the main center of the closing region.
 
 #### Status
 
-This is still a scaffold placeholder, not finished book prose. The row is now
-dossier-prepared and pending human chapter-shape review, but it should not be
-promoted unchanged. The likely next substantive move is a later structural split
-into smaller closing scaffold rows before any production promotion here.
+This is a scaffold placeholder, not finished book prose. Keep SC079-SC080
+visible as a real but lower-priority opening bridge, but do not promote it in
+this commit and do not rewrite SC080's runner-bounded later side as a positive
+historical boundary.
+
+## J-strengthening, vocalization, and ei-contraction bridge
+
+### Sound-change report
+
+#### Historical formulation
+
+This scaffold unit now groups SC081 *OEJStrengtheningAfterFrontDiphthong*,
+SC082 *OEIntervocalicJVocalization*, and SC083 *OEUnstressedEIContraction* as
+the technical middle bridge of the split closing region. The dossier work shows
+that the chain is historically real, but also more technical and less book-
+facing than the later `SC085-SC086` core. SC082 is the true center, while SC081
+and SC083 remain subordinate flanks.
+
+#### Current evidence
+
+The chain has real local order evidence. SC081 must follow SC055 and precede
+SC082. SC082 then sits between SC081 and SC083 with positive boundaries on both
+sides. SC083 finally reciprocates the left edge but has no later real break
+before the current SC087 boundary. That makes the unit coherent, but not the
+strongest future production target in the closing region.
+
+#### Place in the cascade
+
+The bridge belongs immediately after the scaffold `SC079-SC080`
+**Final-j loss and final-geminate simplification bridge** and immediately before
+the scaffold `SC085-SC086` **H-loss and contraction core**. Its meaningful
+outward chronology links point left to promoted `SC055-SC056` through SC081 and
+right only indirectly toward SC085, but neither relation should become a reason
+to collapse this middle bridge into a non-local chapter.
+
+#### Order evidence
+
+Current first-break evidence gives the bridge a real internal sequence:
+`SC081 < SC082 < SC083`. If SC081 is moved later than SC082, PGmc stráwjaną
+yields strīeian instead of expected OE strīeġan. SC082 then anchors the
+chain most strongly: if it is moved earlier than SC081, the same strew
+derivation vocalizes too soon, and if it is moved later than SC083, forms such
+as bore, handle, and make retain extra *ei*-like sequences instead of the
+live contracted -ian outcomes.
+
+SC083 should stay with this chain rather than being merged into `SC085-SC086`.
+Its only positive historical boundary is `SC082 < SC083`, and its later side
+remains runner-bounded through SC087. The note therefore records a real but
+technical middle bridge with SC082 as center.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. Keep SC081-SC083
+visible as a real but more technical bridge, with SC082 as the center, and do
+not promote it in this commit.
+
+## H-loss and contraction core
+
+### Sound-change report
+
+#### Historical formulation
+
+This scaffold unit now groups SC085 *OEHLoss* and SC086 *OEContraction* as the
+strongest compact core of the split closing region. The dossier work shows that
+this pair has the best source support and the cleanest local chronology in the
+closing zone, but this commit keeps it scaffolded so the structural split can
+land before any promotion.
+
+#### Current evidence
+
+The pair has the strongest local evidence on the right side of the half. SC085
+must follow SC073 and precede SC086. SC086 then directly reciprocates that left
+edge and also receives the already explicit SC078 seam as a rightward
+cross-reference. Both members are historically legible in the source tradition,
+and both cards show genuine order-sensitive behavior rather than only
+boundary-limited results.
+
+#### Place in the cascade
+
+The core belongs immediately after the scaffold `SC081-SC083`
+**J-strengthening, vocalization, and ei-contraction bridge** and immediately
+before the scaffold SC087 **R-metathesis terminal note**. Its meaningful outward
+chronology links point left to the scaffold `SC072-SC073`
+**Unstressed long-vowel shortening and ae-merger core** through SC085 and
+farther left to the scaffold SC078 **Weak-tail reduction right-edge note**
+through SC086, but both relations should remain cross-references rather than
+reasons to stretch this unit out of strict order.
+
+#### Order evidence
+
+Current first-break evidence gives the core a real local center: `SC085 < SC086`.
+If SC085 is moved later than SC086, forms such as flee, slay, ten, and
+toe retain over-long vocalic sequences. If SC085 is moved earlier than SC073,
+the toe derivation yields an extra final vowel, so its left side is also real.
+
+SC086 then directly reciprocates the left edge: if it is moved earlier than
+SC085, the same four-row contraction set develops over-long vocalic outputs.
+Its later side is runner-bounded, so this note should not be rewritten into a
+claim that SC086 must precede SC087. The pair is therefore the clearest later
+closing production candidate, but it remains scaffolded in this commit.
+
+#### Status
+
+This is still a scaffold placeholder, not finished book prose. The pair is now
+structurally explicit as the strongest later closing production candidate, but
+it should not be promoted in this commit.
+
+## R-metathesis terminal note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC087 *OERMetathesis* now stands as its own singleton scaffold note at the very
+end of the sound-change half. The dossier work shows that it is source-backed
+and book-facing enough to deserve explicit visibility, but it behaves like an
+independent terminal note rather than like the right member of the `SC085-SC086`
+core.
+
+#### Current evidence
+
+The rule has one real earlier boundary, but it is broad and far away rather than
+local. SC087 must follow SC044, where the burst derivation otherwise breaks
+too early and yields beorstan instead of expected OE berstan. On the later
+side, the search stops at the current runner limit beyond order 86 without a
+real break. That later limit is methodological and must not be rewritten as a
+positive historical boundary.
+
+#### Place in the cascade
+
+SC087 now stands immediately after the scaffold `SC085-SC086`
+**H-loss and contraction core** and closes the current sound-change-half
+scaffold. Its meaningful positive chronology link points far left to the
+promoted `SC044-SC045` **Breaking and velar-fricative palatalization** report,
+but that broad/far relation should remain a distant cross-reference rather than
+chapter architecture.
+
+#### Order evidence
+
+Current first-break evidence places SC087 after SC044. If OE R Metathesis is
+moved before that much earlier stage, PGmc bréstaną yields beorstan instead
+of expected OE berstan. The later side is different: the current runner finds
+no real break beyond the current order before the runner limit, so the note
+records a broad/far leftward constraint plus a terminal runner-bounded right
+side, not a compact local window.
+
+#### Status
+
+This is a scaffold placeholder, not finished book prose. Keep SC087 visible as
+the terminal singleton note of the closing region, but do not promote it in this
+commit and do not turn either its broad/far SC044 relation or its runner-bounded
+later side into chapter architecture.
