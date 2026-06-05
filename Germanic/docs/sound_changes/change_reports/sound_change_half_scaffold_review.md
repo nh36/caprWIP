@@ -70,18 +70,18 @@ production unit.
 | 074-075 | Medial unstressed-i lowering bridge | SC074; SC075 | scaffold | yes | maybe | low | Now split out as a narrow local bridge. `SC074` sits between SC072 and SC075, while SC075 remains one-sided and runner-bounded on the right, so the pair is useful but lower-priority than SC072-SC073 or SC078. |
 | 076 | Prefix i-reduction note | SC076 | scaffold | no | no | low | Now split out as its own source-backed but chronology-negative singleton note. The earlier side still stops at bundled `PWGmcChanges`, the later side remains runner-bounded, and the rule should not be forced into a grouped production unit just for convenience. |
 | 078 | Weak-tail reduction right-edge note | SC078 | scaffold | no | no | defer | Now split out as the strongest singleton/right-edge candidate in the late-tail region. Its broad earlier `SC070 < SC078` limit and narrower later `SC078 < SC086` boundary are both real, but the right edge should likely wait for a dossier pass on `SC079-087` before any promotion decision. |
-| 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Closing cluster is useful for scope visibility, but too broad and mixed to promote unchanged. |
+| 079-087 | Final-j, contraction, and metathesis cluster | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | yes | likely | defer | Now dossier-prepared as a terminal visibility placeholder, but the source pass argues against grouped promotion unchanged. The clearest later split points are `SC079-SC080`, `SC081-SC083`, `SC085-SC086`, and `SC087`; `SC085-SC086` is the strongest closing subcluster, while SC087 is the clearest terminal singleton. |
 
 ## Recommended next targets
 
-1. **Closing cluster dossier preparation** — now that SC078 has been split out as its own right-edge note, the likeliest next substantive move is a dossier-preparation pass for `SC079-087` so the SC078 → SC086 seam can be judged before any singleton promotion there.
-2. **SC072-SC073 later promotion** — inside the newly split late-tail region, `SC072-SC073` is now the strongest first production candidate once the project wants a prose move rather than more structural work.
-3. **Other split late-tail scaffolds and residual notes** — `SC069`, `SC070-SC071`, `SC074-SC075`, and `SC076` are now in better structural positions, but they remain lower-priority than `SC072-SC073` and the SC078/right-edge decision. The earlier boundary/context notes and other residual scaffolds (`SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, `SC060`, `SC061`) also remain visible without needing automatic promotion.
+1. **SC079-SC087 structural split** — the new dossiers now make clear that the grouped closing row should not be promoted unchanged. The likeliest closing-cluster move is a structural split into `SC079-SC080`, `SC081-SC083`, `SC085-SC086`, and `SC087`.
+2. **SC072-SC073 later promotion** — if the project wants the next prose move before more closing-cluster architecture, `SC072-SC073` remains the strongest first production candidate elsewhere in the split late-tail region.
+3. **SC078 right-edge seam** — SC078 should remain scaffolded until the closing cluster has been structurally reviewed; the real `SC078 < SC086` seam should point to a future closing subcluster, not pull SC078 forward into a non-contiguous chapter.
 
 ## Recommended immediate next step
 
-With the old `SC069-SC078` row now structurally split, the clearest next
-substantive move is likely a dossier-preparation pass for `SC079-087` so the
-SC078 → SC086 seam can be judged before any right-edge promotion. If the
-project instead wants the first production move inside the newly split late-tail
-region, `SC072-SC073` is now the strongest candidate.
+With `SC079-087` now dossier-prepared, the clearest next substantive move is
+likely a structural split of that closing row before any promotion there. If the
+project instead wants the first production move before more closing-cluster
+architecture, `SC072-SC073` remains the strongest candidate, while SC078 should
+stay scaffolded until the closing `SC085-SC086` / SC087 architecture is clearer.

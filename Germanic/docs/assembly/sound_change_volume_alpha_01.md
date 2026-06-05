@@ -54,7 +54,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 074-075 | SC074; SC075 | scaffold | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a narrow scaffold bridge; it remains useful for visibility but is lower-priority than SC072-SC073 or SC078 |
 | 076 | SC076 | scaffold | source-backed but chronology-negative singleton: no positive first-break boundary in either direction, with the earlier search blocked by bundled `PWGmcChanges` and the later side runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold note; do not force SC076 into a grouped production unit and do not narrate either boundary limit as positive chronology |
 | 078 | SC078 | scaffold | right-edge hinge: broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical boundary | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold right-edge note in this commit; it is the strongest singleton candidate, but its SC086 relation should be judged alongside the closing SC079-SC087 cluster before any promotion |
-| 079-087 | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | mixed broad and local closing cluster | no dedicated dossier yet | grouped closing scaffold |
+| 079-087 | SC079; SC080; SC081; SC082; SC083; SC085; SC086; SC087 | scaffold | mixed closing profile: `SC079 < SC080`, `SC081 < SC082 < SC083`, and `SC085 < SC086` provide separate internal seams, while SC087 remains a broad/far terminal note | literature and book dossiers drafted; pending human chapter-shape review | keep grouped scaffold in this commit, but plan a later structural split before any promotion; the strongest closing candidates are SC085-SC086 or SC087, and SC078 should remain a cross-reference only |
 
 ## Opening vowel prelude
 
@@ -3341,8 +3341,8 @@ closing seam as much as to the late-tail region itself.
 
 This is a scaffold placeholder, not finished book prose. SC078 is now the
 strongest singleton/right-edge candidate in the split late-tail region, but it
-should probably wait until `SC079-SC087` has been dossier-reviewed before any
-promotion decision.
+should probably still wait until the dossier-prepared `SC079-SC087` cluster has
+been structurally reviewed or split before any promotion decision.
 
 ## Final-j, contraction, and metathesis cluster
 
@@ -3358,9 +3358,11 @@ chapter.
 
 #### Current evidence
 
-All eight member changes already have chronology cards and FOMA implementations.
-Dedicated literature dossiers have not yet been promoted for the grouped
-closing cluster, so the present entry remains scaffold material.
+All eight member changes already have chronology cards and FOMA implementations,
+and the grouped row now has dedicated literature and book dossiers. Those
+dossiers show that this is not a promotable eight-change core: `SC079-SC080`,
+`SC081-SC083`, and `SC085-SC086` are the clearest internal seams, while SC087
+behaves more like an independent terminal singleton note.
 
 #### Place in the cascade
 
@@ -3369,13 +3371,16 @@ The unit spans current cascade orders 79-87, from *OEJLossAfterHeavy* through
 
 #### Order evidence
 
-The cards mix broad and local closing behavior rather than forming a neat
-sequence of equally mature standalone sections. That is why the current
-assembled half keeps them together as one terminal scaffold cluster.
+The cards mix several different closing profiles. `SC079 < SC080` is a narrow
+opening bridge, `SC081 < SC082 < SC083` forms a technical local chain,
+`SC085 < SC086` is the strongest compact closing pair, and SC087 remains a
+broad/far terminal note. The grouped row therefore remains a visibility
+placeholder rather than pretending that one shared chapter shape has already
+been decided.
 
 #### Status
 
-This is a scaffold placeholder, not finished book prose. It still needs
-literature work and a human judgement pass on whether the closing region should
-remain grouped or be broken into contraction, *j*-loss, and metathesis
-subchapters.
+This is still a scaffold placeholder, not finished book prose. The row is now
+dossier-prepared and pending human chapter-shape review, but it should not be
+promoted unchanged. The likely next substantive move is a later structural split
+into smaller closing scaffold rows before any production promotion here.

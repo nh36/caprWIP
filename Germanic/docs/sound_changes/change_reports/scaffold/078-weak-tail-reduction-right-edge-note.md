@@ -44,5 +44,5 @@ closing seam as much as to the late-tail region itself.
 
 This is a scaffold placeholder, not finished book prose. SC078 is now the
 strongest singleton/right-edge candidate in the split late-tail region, but it
-should probably wait until `SC079-SC087` has been dossier-reviewed before any
-promotion decision.
+should probably still wait until the dossier-prepared `SC079-SC087` cluster has
+been structurally reviewed or split before any promotion decision.
