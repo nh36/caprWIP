@@ -3564,7 +3564,7 @@ farther left to the still-scaffolded SC078 **Weak-tail reduction right-edge
 note** through SC086.
 
 Those links matter, but they remain cross-references only. `SC073 < SC085`
-should not pull the scaffolded late-tail core into this chapter, and `SC078 <
+should not pull the promoted late-tail core into this chapter, and `SC078 <
 SC086` should not pull SC078 forward into a non-contiguous closing report.
 
 #### Order evidence
