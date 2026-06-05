@@ -4,11 +4,11 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 41
-assembled units: one pilot production report (`016-020`), twenty-four full
+assembled units: one pilot production report (`016-020`), twenty-five full
 production reports (`014-015`, `021`, `023`, `024`, `026-027`, `029-030`,
 `031-034`, `035-037`, `039-040`, `041`, `042`, `043`, `044-045`, `046-048`,
 `049-050`, `051`, `052`, `053-054`, `055-056`, `059`, `063`, `064-065`,
-`066-068`, and `085-086`), and 16 remaining scaffold placeholders. The opening of the half is
+`066-068`, `085-086`, and `087`), and 15 remaining scaffold placeholders. The opening of the half is
 now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
 pilot `SC016-SC020` corridor, then the scaffold `SC018` note, promoted
 `SC021` singleton note, scaffold `SC022`, promoted `SC023`, promoted `SC024`,
@@ -21,7 +21,7 @@ apocope report, the old broad `SC069-SC078` late-tail scaffold has now been
 structurally split into SC069, SC070-SC071, SC072-SC073, SC074-SC075, SC076,
 and SC078, and the former broad `SC079-087` closing scaffold has now been split
 into scaffold `SC079-SC080`, scaffold `SC081-SC083`, promoted `SC085-SC086`,
-and scaffold `SC087`.
+and promoted `SC087`.
 
 ## Book architecture note
 
