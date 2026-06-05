@@ -53,10 +53,11 @@ of syncope and post-syncope cluster simplification
 
 This corridor belongs to the late weak-tail zone. It follows SC063 **OE High
 Vowel Apocope** and the immediate post-apocope tail SC064-SC065, and it
-precedes the broader late unstressed-tail cluster SC069-SC078. That placement is
-important because the report should remain a narrow promoted corridor rather
-than a proxy for the whole late-tail zone: it isolates one specific sequence in
-which later weak-tail reduction produces clusters that then need local cleanup.
+precedes the split late-tail scaffold region (`SC069`, `SC070-SC071`,
+`SC072-SC073`, `SC074-SC075`, `SC076`, `SC078`). That placement is important
+because the report should remain a narrow promoted corridor rather than a proxy
+for the whole late-tail zone: it isolates one specific sequence in which later
+weak-tail reduction produces clusters that then need local cleanup.
 
 #### Order evidence
 

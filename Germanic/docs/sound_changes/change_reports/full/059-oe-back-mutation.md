@@ -51,8 +51,8 @@ This report belongs immediately after the scaffold `SC057-SC058`
 new scaffold `SC060` **WS palatal umlaut note**. Its real chronology edges point
 outward rather than architecturally inward: leftward to the already promoted
 `SC046-SC048` **Restoration and nasal-tail corridor** through SC048, and
-rightward to the still-scaffolded `SC069-SC078` late unstressed-tail region
-through SC078.
+rightward to the split late-tail scaffold region through the standalone
+`SC078` **Weak-tail reduction right-edge note**.
 
 That placement is the point of the promotion. SC059 replaces the old grouped
 bridge as the real center of the seam while leaving SC060 and SC061 visible but
@@ -74,8 +74,8 @@ On the later side, SC059 must also precede SC078. If OE Back Mutation is delayed
 into the later weak-tail region, PGmc `*stélaną` again yields `steolan` instead
 of `stelan`, and PGmc `*wébaną` yields `weofan` instead of `wefan`. That later
 edge is also historically real, but it is broad/far and should remain a
-rightward cross-reference to the late weak-tail scaffold rather than a reason to
-expand this note into `SC078` or the larger `SC069-SC078` cluster.
+rightward cross-reference to the split late-tail scaffold region rather than a
+reason to expand this note into `SC078` or the larger late weak-tail sequence.
 
 Taken together, the cards support a genuine singleton center with two outward
 links: `SC048 < SC059 < SC078`.
@@ -97,8 +97,8 @@ been resolved into finished prose.
 
 The cautions are structural as much as descriptive. SC059 should not be merged
 backward into the promoted `SC046-SC048` corridor just because `SC048 < SC059`
-is real. It should not be expanded forward into SC078 or the larger
-`SC069-SC078` scaffold just because `SC059 < SC078` is real. And the report
+is real. It should not be expanded forward into SC078 or the larger split
+late-tail scaffold region just because `SC059 < SC078` is real. And the report
 should stay focused on back mutation itself rather than broadening into a general
 article on the whole later weak-tail region. The point of the promotion is
 precise: isolate the source-backed center, keep the outward links as
