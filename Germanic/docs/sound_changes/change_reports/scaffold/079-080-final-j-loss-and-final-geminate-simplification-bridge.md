@@ -20,7 +20,7 @@ closing production target.
 
 #### Place in the cascade
 
-The bridge belongs immediately after the scaffold SC078 **Weak-tail reduction
+The bridge belongs immediately after the promoted SC078 **Weak-tail reduction
 right-edge note** and immediately before the scaffold `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge**. Its meaningful
 outward chronology relation points far left to the promoted `SC055-SC056`
@@ -45,6 +45,6 @@ not the main center of the closing region.
 #### Status
 
 This is a scaffold placeholder, not finished book prose. Keep SC079-SC080
-visible as a real but lower-priority opening bridge, but do not promote it in
-this commit and do not rewrite SC080's runner-bounded later side as a positive
-historical boundary.
+visible as a real but lower-priority opening bridge after the promoted SC078
+singleton, but do not promote it in this commit and do not rewrite SC080's
+runner-bounded later side as a positive historical boundary.

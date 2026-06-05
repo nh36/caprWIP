@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 50.
-3. Number covered by scaffold placeholders: 20.
+2. Number covered by pilot/full production reports: 51.
+3. Number covered by scaffold placeholders: 19.
 4. Number grouped into multi-change units: 50.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 20.
+6. Number needing human judgement: 19.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -53,7 +53,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 072-073 | SC072; SC073 | full | strongest internal core: `SC064 < SC072 < SC073`, with SC073 also pointing forward to SC085 | literature and book dossiers drafted | promote as a compact adjacent full report; keep SC064 and SC085 as outward cross-references only, and do not expand into SC070-SC071, SC074-SC075, SC076, or SC078 |
 | 074-075 | SC074; SC075 | scaffold | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a narrow scaffold bridge; it remains useful for visibility but is lower-priority than SC072-SC073 or SC078 |
 | 076 | SC076 | scaffold | source-backed but chronology-negative singleton: no positive first-break boundary in either direction, with the earlier search blocked by bundled `PWGmcChanges` and the later side runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold note; do not force SC076 into a grouped production unit and do not narrate either boundary limit as positive chronology |
-| 078 | SC078 | scaffold | right-edge hinge: broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical boundary | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold right-edge note; its SC086 relation should point only to the promoted SC085-SC086 report as a cross-reference, not to a non-contiguous chapter |
+| 078 | SC078 | full | right-edge hinge with broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical seam | literature and book dossiers drafted | promote as a singleton right-edge full report; keep the rightward SC086 relation as a cross-reference only to promoted SC085-SC086, and do not create a non-contiguous SC078-SC086 chapter |
 | 079-080 | SC079; SC080 | scaffold | opening bridge: `SC055 < SC079 < SC080`, with a broad/far left edge and a narrow local right edge, while SC080 remains one-sided on the right | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a modest scaffold bridge; SC079 is the stronger opener, SC080 is the final-geminate follower, and the pair remains lower-priority than SC085-SC086 or SC087 |
 | 081-083 | SC081; SC082; SC083 | scaffold | technical middle bridge: `SC081 < SC082 < SC083`, with SC082 as the strongest center, SC081's left edge broad/far to SC055, and SC083's later side runner-bounded | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a scaffold bridge; SC082 is the real center, SC081 and SC083 remain subordinate flanks, and SC083 should not be merged into the promoted SC085-SC086 report |
 | 085-086 | SC085; SC086 | full | strongest compact closing core: `SC073 < SC085 < SC086`, with SC086 also receiving the SC078 seam as a cross-reference | literature and book dossiers drafted | promote as a focused full closing report; keep SC073 and SC078 as leftward cross-references only, do not claim a positive SC086 < SC087 boundary, and do not expand into SC081-SC083 or SC087 |

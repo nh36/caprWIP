@@ -8,7 +8,7 @@ This is a **compact closing production report** centred on SC085 `OEHLoss` and
 SC086 `OEContraction`. The dossier work shows that this adjacent pair is the
 strongest compact core in the closing region: it has the clearest handbook
 support, the cleanest local chronology, and the best-defined right-edge seam
-from the still-scaffolded SC078 note.
+from the now-promoted SC078 report.
 
 That stronger reading is also narrower than the old grouped scaffold. The report
 promotes only SC085 and SC086. It does **not** expand backward into the more
@@ -52,7 +52,7 @@ This report belongs immediately after the scaffold `SC081-SC083`
 before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
 chronology links point left to the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** through SC085 and
-farther left to the still-scaffolded SC078 **Weak-tail reduction right-edge
+farther left to the promoted SC078 **Weak-tail reduction right-edge
 note** through SC086.
 
 Those links matter, but they remain cross-references only. `SC073 < SC085`
@@ -80,7 +80,7 @@ before the SC087 boundary, so this report must **not** turn the runner-bounded
 later side into a positive claim that SC086 must precede SC087.
 
 The already explicit SC078 seam also lands here. SC078 must precede SC086, but
-that relation remains a leftward cross-reference from the scaffolded SC078 note
+that relation remains a leftward cross-reference from the promoted SC078 report
 into this report through SC086 only. It is not a reason to treat SC078 as part
 of the same adjacent chapter.
 
