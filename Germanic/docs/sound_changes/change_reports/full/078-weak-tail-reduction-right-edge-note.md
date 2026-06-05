@@ -39,10 +39,10 @@ a broader scaffold.
 #### Place in the cascade
 
 This report belongs immediately after the scaffold SC076 **Prefix i-reduction
-note** and immediately before the scaffold `SC079-SC080`
+note** and immediately before the promoted `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge**. Its meaningful
-rightward chronology link points past the remaining scaffolded opening bridge
-and into the promoted `SC081-SC083` technical middle bridge before reaching the
+rightward chronology link points through the promoted opening bridge and into
+the promoted `SC081-SC083` technical middle bridge before reaching the
 promoted `SC085-SC086` **H-loss and contraction core** through SC086.
 
 That rightward link is real, but it remains a cross-reference only. SC078 should
@@ -93,6 +93,6 @@ The cautions are mainly architectural. The earlier `SC070 < SC078` boundary is
 real, but it should remain a broad computational limit rather than a tight local
 adjacency claim. The later `SC078 < SC086` edge is also real, but it should
 remain a rightward cross-reference to the promoted SC085-SC086 report through
-SC086 only. The report should not absorb scaffolded SC076, SC079-SC080, or
-SC081-SC083, and it should not treat the promoted `SC072-SC073` late-tail core
+SC086 only. The report should not absorb scaffolded SC076, the promoted SC079-SC080 or
+SC081-SC083 bridges, and it should not treat the promoted `SC072-SC073` late-tail core
 as a co-member rather than as left-side context.

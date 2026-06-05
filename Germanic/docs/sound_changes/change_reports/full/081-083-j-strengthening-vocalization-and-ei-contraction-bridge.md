@@ -48,7 +48,7 @@ show why all three steps matter: the real local center of gravity is the chain
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC079-SC080`
+This report belongs immediately after the promoted `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge** and immediately before
 the promoted `SC085-SC086` **H-loss and contraction core**. Its meaningful
 outward chronology links point far left to promoted `SC055-SC056` through SC081
@@ -96,7 +96,7 @@ inflating it into a major handbook chapter: SC081 as the broad/far left flank,
 SC082 as the real center, SC083 as the right follower.
 
 That is exactly what this middle bridge should do. It fills the technical gap
-between the modest opening `SC079-SC080` scaffold and the promoted
+between the modest opening promoted `SC079-SC080` bridge and the promoted
 SC085-SC086 core while keeping the whole region strictly chronological.
 
 #### Remaining cautions

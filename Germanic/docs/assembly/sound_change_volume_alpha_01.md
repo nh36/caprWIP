@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 54.
-- Covered by scaffold placeholders: 16.
+- Covered by pilot/full production reports: 56.
+- Covered by scaffold placeholders: 14.
 - Grouped into multi-change units: 50 changes across 21 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 16.
+- Still needing human judgement or promotion decisions: 14.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -54,7 +54,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 074-075 | SC074; SC075 | scaffold | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a narrow scaffold bridge; it remains useful for visibility but is lower-priority than SC072-SC073 or SC078 |
 | 076 | SC076 | scaffold | source-backed but chronology-negative singleton: no positive first-break boundary in either direction, with the earlier search blocked by bundled `PWGmcChanges` and the later side runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold note; do not force SC076 into a grouped production unit and do not narrate either boundary limit as positive chronology |
 | 078 | SC078 | full | right-edge hinge with broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical seam | literature and book dossiers drafted | promote as a singleton right-edge full report; keep the rightward SC086 relation as a cross-reference only to promoted SC085-SC086, and do not create a non-contiguous SC078-SC086 chapter |
-| 079-080 | SC079; SC080 | scaffold | opening bridge: `SC055 < SC079 < SC080`, with a broad/far left edge and a narrow local right edge, while SC080 remains one-sided on the right | shared closing-cluster literature and book dossiers drafted; row split after chapter-shape review | keep as a modest scaffold bridge; SC079 is the stronger opener, SC080 is the final-geminate follower, and the pair remains lower-priority than SC085-SC086 or SC087 |
+| 079-080 | SC079; SC080 | full | opening bridge: `SC055 < SC079 < SC080`, with a broad/far left edge and a narrow local right edge, while SC080 remains one-sided on the right | literature and book dossiers drafted | promote as a modest opening closing-bridge full report; keep the broad/far SC055 relation as a cross-reference only, do not rewrite SC080's runner-bounded later side as positive chronology, and do not merge the pair into SC078 or SC081-SC083 |
 | 081-083 | SC081; SC082; SC083 | full | technical middle bridge: `SC081 < SC082 < SC083`, with SC082 as the strongest center, SC081's left edge broad/far to SC055, and SC083's later side runner-bounded | literature and book dossiers drafted | promote as a cautious technical full bridge with SC082 as the center; keep SC055 and SC085 as outward cross-references only, do not rewrite SC083's runner-bounded later side as positive chronology, and do not merge into SC085-SC086 |
 | 085-086 | SC085; SC086 | full | strongest compact closing core: `SC073 < SC085 < SC086`, with SC086 also receiving the SC078 seam as a cross-reference | literature and book dossiers drafted | promote as a focused full closing report; keep SC073 and SC078 as leftward cross-references only, do not claim a positive SC086 < SC087 boundary, and do not expand into SC081-SC083 or SC087 |
 | 087 | SC087 | full | terminal singleton with broad/far `SC044 < SC087` and a runner-bounded later side | literature and book dossiers drafted | promote as a short terminal singleton full report; keep SC044-SC045 as a distant leftward cross-reference only, do not claim a positive SC086 < SC087 relation, and do not absorb SC078, SC079-SC080, or SC081-SC083 |
@@ -3393,10 +3393,10 @@ a broader scaffold.
 #### Place in the cascade
 
 This report belongs immediately after the scaffold SC076 **Prefix i-reduction
-note** and immediately before the scaffold `SC079-SC080`
+note** and immediately before the promoted `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge**. Its meaningful
-rightward chronology link points past the remaining scaffolded opening bridge
-and into the promoted `SC081-SC083` technical middle bridge before reaching the
+rightward chronology link points through the promoted opening bridge and into
+the promoted `SC081-SC083` technical middle bridge before reaching the
 promoted `SC085-SC086` **H-loss and contraction core** through SC086.
 
 That rightward link is real, but it remains a cross-reference only. SC078 should
@@ -3447,8 +3447,8 @@ The cautions are mainly architectural. The earlier `SC070 < SC078` boundary is
 real, but it should remain a broad computational limit rather than a tight local
 adjacency claim. The later `SC078 < SC086` edge is also real, but it should
 remain a rightward cross-reference to the promoted SC085-SC086 report through
-SC086 only. The report should not absorb scaffolded SC076, SC079-SC080, or
-SC081-SC083, and it should not treat the promoted `SC072-SC073` late-tail core
+SC086 only. The report should not absorb scaffolded SC076, the promoted SC079-SC080 or
+SC081-SC083 bridges, and it should not treat the promoted `SC072-SC073` late-tail core
 as a co-member rather than as left-side context.
 
 ## Final-j loss and final-geminate simplification bridge
@@ -3457,23 +3457,46 @@ as a co-member rather than as left-side context.
 
 #### Historical formulation
 
-This scaffold unit now groups SC079 *OEJLossAfterHeavy* and SC080
-*OEFinalGeminateSimplification* as the opening bridge of the split closing
-region. The pair is historically real and adjacent, but it is modest rather
-than central: SC079 is the broader left-edge hinge, while SC080 is the narrower
-one-sided follower.
+This is a modest opening closing-bridge full report centred on SC079
+*OEJLossAfterHeavy* and SC080 *OEFinalGeminateSimplification*. The pair is
+historically real and adjacent, but it is not the main closing core. SC079 is
+the stronger hinge, with a broad/far leftward tie to the earlier umlaut region
+and a real local right edge to SC080. SC080 is the narrower one-sided follower.
 
-#### Current evidence
+That narrower reading is also the honest one. The report promotes only SC079 and
+SC080. It does not merge backward into the promoted SC078 singleton report,
+does not stretch forward into the promoted `SC081-SC083` technical bridge,
+and does not pretend that this opening seam is as book-facing as the
+already-promoted `SC085-SC086` and SC087 reports farther right.
 
-SC079 has positive boundaries on both sides. It must follow SC055 and precede
-SC080. SC080 then directly reciprocates that local relation on the left, but its
-later side remains runner-bounded through the current SC087 boundary. The pair
-therefore forms a real opening bridge without yet behaving like the strongest
-closing production target.
+#### Source tradition
+
+The source tradition gives the pair enough technical support for explicit
+production prose, but not enough to inflate it into a major handbook chapter.
+The best support for SC079 comes from loss of *j* between unstressed vowels and
+the broader contracted-verb background that also feeds the rest of the closing
+zone [@Fulk2018, §6.11, §12.21]. Campbell's vocalization material and final
+consonant discussions give the technical background for both the *j*-loss
+material and the final-geminate issue [@Campbell1959, §§266--274, §401, §731].
+Hogg's account of late final degemination gives SC080 its clearest handbook
+support [@Hogg1992].
+
+That support is enough for a short adjacent report, but the hierarchy remains
+uneven. SC079 carries the larger historical load; SC080 is best read as the
+local follower that resolves the final-geminate issue after SC079.
+
+#### CAPR implementation
+
+CAPR sharpens this opening closing sequence into two adjacent steps. SC079
+*OEJLossAfterHeavy* removes *j* after the relevant heavy-syllable patterns, and
+SC080 *OEFinalGeminateSimplification* then removes the leftover final geminate
+material. That segmentation is more explicit than most handbook prose, but the
+chronology cards show why the two-step articulation is useful: the local seam is
+the real adjacent pair `SC079 < SC080`.
 
 #### Place in the cascade
 
-The bridge belongs immediately after the promoted SC078 **Weak-tail reduction
+This report belongs immediately after the promoted SC078 **Weak-tail reduction
 right-edge note** and immediately before the promoted `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge**. Its meaningful
 outward chronology relation points far left to the promoted `SC055-SC056`
@@ -3481,26 +3504,52 @@ outward chronology relation points far left to the promoted `SC055-SC056`
 should remain a cross-reference rather than a reason to merge non-adjacent
 chapters.
 
+That placement is the point of the promotion. The report fills the opening gap
+in the split closing region while remaining clearly subordinate to the stronger
+technical middle bridge and the later closing core.
+
 #### Order evidence
 
-Current first-break evidence gives the pair one real local seam: `SC079 < SC080`.
-If SC079 is moved later than SC080, the lung derivation yields lungenn
-instead of expected OE lungen. SC079 also has a broader leftward anchor: if
-OE J Loss After Heavy is moved before SC055, forms such as believe, bow, and
-follow undo the live umlaut-sensitive vowel development across a large set of
-derivations.
+The local center of the report is `SC079 < SC080`.
 
-SC080 is different. Its earlier relation to SC079 is real and directly
-reciprocal, but the later side remains a no-break-before-boundary result through
-SC087. The bridge should therefore stay modest: it marks a real opening seam,
-not the main center of the closing region.
+SC079 must follow SC055 and precede SC080. If OE J Loss After Heavy is moved
+before SC055, forms such as believe, bow, and follow undo the live
+umlaut-sensitive vowel development: PGmc galáubijaną yields ġelēafan
+instead of expected OE ġelīefan, PGmc báugijaną yields bēaġan instead of
+expected bīeġan, and PGmc fúlgijaną yields fulġan instead of fylġan,
+alongside a wider failure set. That left edge is historically real, but it is
+broad/far across SC055 rather than a tight local adjacency claim.
 
-#### Status
+SC079 must also precede SC080. If it is moved later than SC080, PGmc lúnganjō
+yields lungenn rather than expected OE lungen. SC080 directly reciprocates
+that same left edge: if OE Final Geminate Simplification is moved before SC079,
+the lung derivation again yields lungenn instead of lungen.
 
-This is a scaffold placeholder, not finished book prose. Keep SC079-SC080
-visible as a real but lower-priority opening bridge after the promoted SC078
-singleton, but do not promote it in this commit and do not rewrite SC080's
-runner-bounded later side as a positive historical boundary.
+SC080 is different on the right. The current runner finds no real later break
+for it before the SC087 boundary. That no-break result is runner-bounded and
+must not be rewritten into a positive claim that SC080 must precede SC087.
+
+#### Interpretation
+
+SC079-SC080 is promoted because it is the remaining opening bridge that the
+closing region needs for explicit prose. The report remains modest on purpose.
+SC079 is the stronger hinge with the broader historical load; SC080 is the
+one-sided final-geminate follower. Together they justify a short adjacent report,
+but not a larger closing chapter.
+
+This makes the closing sequence much clearer in book form: promoted SC078 on the
+left, promoted SC079-SC080 as the opening bridge, promoted SC081-SC083 as the
+technical middle bridge, then the promoted SC085-SC086 core and the promoted
+SC087 terminal singleton.
+
+#### Remaining cautions
+
+The report should stay narrow. It should not merge backward into the promoted
+SC078 singleton report just because the two units are adjacent. It should not
+merge forward into the promoted `SC081-SC083` bridge just because that sequence
+follows it. SC079's broad/far left edge to SC055 should remain only a
+cross-reference, and SC080's runner-bounded later side must not be turned into a
+positive historical boundary.
 
 ## J-strengthening, vocalization, and ei-contraction bridge
 
@@ -3552,7 +3601,7 @@ show why all three steps matter: the real local center of gravity is the chain
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC079-SC080`
+This report belongs immediately after the promoted `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge** and immediately before
 the promoted `SC085-SC086` **H-loss and contraction core**. Its meaningful
 outward chronology links point far left to promoted `SC055-SC056` through SC081
@@ -3600,7 +3649,7 @@ inflating it into a major handbook chapter: SC081 as the broad/far left flank,
 SC082 as the real center, SC083 as the right follower.
 
 That is exactly what this middle bridge should do. It fills the technical gap
-between the modest opening `SC079-SC080` scaffold and the promoted
+between the modest opening promoted `SC079-SC080` bridge and the promoted
 SC085-SC086 core while keeping the whole region strictly chronological.
 
 #### Remaining cautions
@@ -3801,9 +3850,9 @@ short terminal note therefore fits the evidence better than either a larger
 closing cluster or a forced merger with SC085-SC086.
 
 That makes this an architectural endpoint. It gives the closing region an
-explicit terminal note while leaving the narrower `SC079-SC080` and more
-technical `SC081-SC083` bridges scaffolded and keeping SC078 outside the closing
-report structure.
+explicit terminal note while leaving the promoted but still modest `SC079-SC080`
+and more technical `SC081-SC083` bridges in place and keeping SC078 outside the
+closing report structure.
 
 #### Remaining cautions
 
@@ -3813,4 +3862,4 @@ SC085-SC086 report merely because it follows it in the cascade. Its broad/far
 promoted SC044-SC045 report. Its later side must remain a runner-bounded limit
 rather than a positive boundary. And the report should stay focused: it is a
 short terminal singleton note, not a reason to reopen SC078, `SC079-SC080`, or
-`SC081-SC083` in the same chapter.
+`SC081-SC083` inside the same chapter.

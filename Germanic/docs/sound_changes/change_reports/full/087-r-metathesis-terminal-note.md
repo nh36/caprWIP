@@ -77,9 +77,9 @@ short terminal note therefore fits the evidence better than either a larger
 closing cluster or a forced merger with SC085-SC086.
 
 That makes this an architectural endpoint. It gives the closing region an
-explicit terminal note while leaving the narrower `SC079-SC080` and more
-technical `SC081-SC083` bridges scaffolded and keeping SC078 outside the closing
-report structure.
+explicit terminal note while leaving the promoted but still modest `SC079-SC080`
+and more technical `SC081-SC083` bridges in place and keeping SC078 outside the
+closing report structure.
 
 #### Remaining cautions
 
@@ -89,4 +89,4 @@ SC085-SC086 report merely because it follows it in the cascade. Its broad/far
 promoted SC044-SC045 report. Its later side must remain a runner-bounded limit
 rather than a positive boundary. And the report should stay focused: it is a
 short terminal singleton note, not a reason to reopen SC078, `SC079-SC080`, or
-`SC081-SC083` in the same chapter.
+`SC081-SC083` inside the same chapter.
