@@ -116,3 +116,21 @@ In particular:
    those are now refinement needs rather than missing-dossier coverage.
 4. Boundary-limited residual rules such as `SC058` remain deliberately modest in
    readiness and drafting priority.
+
+## Final reproducibility audit
+
+Final verification reran:
+
+1. `python3 Germanic/docs/assembly/build_sound_change_volume.py`
+2. `bash Germanic/docs/assembly/build_sound_change_volume.sh`
+
+The assembled half remains scaffold-free and literature-complete:
+
+1. no scaffold placeholders remain in the active assembled outputs;
+2. no ordinary-change literature gaps remain;
+3. inventory consistency checks passed;
+4. listed literature-dossier and quotation-witness paths all exist.
+
+This pass made one narrow reproducibility fix: it regenerated the tracked
+`sound_change_volume_alpha_01.tex` file so the LaTeX artifact now matches the
+current scaffold-free Markdown build instead of an older scaffold-era state.
