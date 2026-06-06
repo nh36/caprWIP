@@ -4,12 +4,12 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 42
-assembled units: one pilot production report (`016-020`), thirty-nine full
+assembled units: one pilot production report (`016-020`), forty-one full
 production reports (`014-015`, `018`, `021`, `022`, `023`, `024`, `025`,
 `026-027`, `028`, `029-030`, `031-034`, `035-037`, `039-040`, `041`, `042`,
 `043`, `044-045`, `046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`,
-`057`, `058`, `059`, `060`, `061`, `063`, `064-065`, `066-068`, `070-071`,
-`072-073`, `074-075`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and 2 remaining scaffold placeholders. The opening of the half is
+`057`, `058`, `059`, `060`, `061`, `063`, `064-065`, `066-068`, `069`,
+`070-071`, `072-073`, `074-075`, `076`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and 0 remaining scaffold placeholders. The opening of the half is
 now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
 pilot `SC016-SC020` corridor, then the promoted `SC018` note, promoted
 `SC021` singleton note, promoted `SC022`, promoted `SC023`, promoted `SC024`,
@@ -19,9 +19,9 @@ glide/fronting core, and promoted `SC031-SC034` diphthong chain. Farther right,
 the post-umlaut residual and back-mutation seam has now been split into
 promoted `SC057`, promoted `SC058`, promoted `SC059`, promoted `SC060`, and
 promoted `SC061` before the promoted SC063 apocope report, and the old broad
-`SC069-SC078` late-tail scaffold has now been
-structurally split into SC069, promoted `SC070-SC071`, promoted `SC072-SC073`, promoted `SC074-SC075`, SC076,
-and promoted `SC078`, and the former broad `SC079-087` closing scaffold has now been split
+`SC069-SC078` late-tail structure has now been fully articulated into promoted
+`SC069`, `SC070-SC071`, `SC072-SC073`, `SC074-SC075`, `SC076`, and `SC078`, and
+the former broad `SC079-087` closing scaffold has now been split
 into promoted `SC079-SC080`, promoted `SC081-SC083`, promoted `SC085-SC086`,
 and promoted `SC087`.
 
@@ -75,11 +75,11 @@ bridge report, short singleton note, or residual/context note.
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | full | no | maybe | defer | Now promoted as a short cautious bridge report. `SC064` is the narrow positive-evidence member, while `SC065` is treated explicitly as card-negative contextual syncope material rather than as a coequal chronology anchor. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | full | no | maybe | defer | Now promoted as a narrow late weak-tail syncope-and-cleanup report; retain the caution that SC067 functions mainly as a bridge member rather than as a coequal historical anchor. |
-| 069 | Early o-shortening context note | SC069 | scaffold | no | no | low | Now split out as its own broad/far opener/context note. Its only positive boundary `SC023 < SC069` is non-local, while the later side remains runner-bounded, so it should stay a scaffold context note rather than a future chapter center. |
-| 070-071 | Early unstressed fronting and shortening bridge | SC070; SC071 | full | no | no | defer | Now promoted as a cautious early late-tail bridge. `SC070` is the stronger hinge `SC052 < SC070 < SC071`, while SC071 remains the one-sided follower with a runner-bounded later side. The pair stays distinct from the scaffold SC069 opener on the left and the promoted SC072-SC073 core on the right. |
+| 069 | Early o-shortening context note | SC069 | full | no | no | defer | Now promoted as a short finished late-tail opener/context note. Its only positive boundary `SC023 < SC069` remains broad/far, while the later side remains runner-bounded, so the prose stays contextual rather than chapter-central. |
+| 070-071 | Early unstressed fronting and shortening bridge | SC070; SC071 | full | no | no | defer | Now promoted as a cautious early late-tail bridge. `SC070` is the stronger hinge `SC052 < SC070 < SC071`, while SC071 remains the one-sided follower with a runner-bounded later side. The pair stays distinct from the promoted SC069 opener on the left and the promoted SC072-SC073 core on the right. |
 | 072-073 | Unstressed long-vowel shortening and ae-merger core | SC072; SC073 | full | no | no | defer | Now promoted as the strongest compact late-tail production report. `SC072 < SC073` is the local center, `SC064 < SC072` remains a leftward cross-reference to promoted SC064-SC065, and `SC073 < SC085` remains a forward cross-reference to promoted SC085-SC086. |
-| 074-075 | Medial unstressed-i lowering bridge | SC074; SC075 | full | no | no | defer | Now promoted as a narrow, witness-limited medial unstressed-i lowering bridge. `SC074` sits between the promoted SC072-SC073 core and SC075, while SC075 remains one-sided and runner-bounded on the right. The pair stays distinct from the scaffolded SC076 note and the promoted SC078 right-edge report. |
-| 076 | Prefix i-reduction note | SC076 | scaffold | no | no | low | Now split out as its own source-backed but chronology-negative singleton note. The earlier side still stops at bundled `PWGmcChanges`, the later side remains runner-bounded, and the rule should continue to stay visible as context rather than a near-term production target. |
+| 074-075 | Medial unstressed-i lowering bridge | SC074; SC075 | full | no | no | defer | Now promoted as a narrow, witness-limited medial unstressed-i lowering bridge. `SC074` sits between the promoted SC072-SC073 core and SC075, while SC075 remains one-sided and runner-bounded on the right. The pair stays distinct from the promoted SC076 note and the promoted SC078 right-edge report. |
+| 076 | Prefix i-reduction note | SC076 | full | no | no | defer | Now promoted as a short finished late-tail residual/context note. The source support remains real, but the chronology stays negative in both directions, so the prose remains brief and explicitly non-positive. |
 | 078 | Weak-tail reduction right-edge note | SC078 | full | no | no | defer | Now promoted as a singleton right-edge late-tail report. Its broad earlier `SC070 < SC078` limit remains a large computational boundary, its narrower later `SC078 < SC086` seam remains a rightward cross-reference to the promoted SC085-SC086 report through SC086, and it still stands outside the closing cluster proper. |
 | 079-080 | Final-j loss and final-geminate simplification bridge | SC079; SC080 | full | no | no | defer | Now promoted as a modest opening closing bridge. SC079 is the stronger hinge with a broad/far left edge to SC055 and a local right edge to SC080, while SC080 remains the one-sided final-geminate follower. The pair stays distinct from the promoted SC078 singleton on the left and the promoted SC081-SC083 technical bridge on the right. |
 | 081-083 | J-strengthening, vocalization, and ei-contraction bridge | SC081; SC082; SC083 | full | no | no | defer | Now promoted as a cautious technical middle bridge with SC082 as the real center. SC081 remains the broad/far left flank, SC083 remains the one-sided right follower, and the bridge stays distinct from the promoted SC085-SC086 core. |
@@ -110,31 +110,23 @@ note. SC060 and SC061 have also been converted into short finished singleton
 notes with their real leftward SC055 and SC023 anchors kept explicit and their
 runner-bounded later sides kept non-positive.
 
-### Late-tail residual context notes: likely short final notes, not major reports
+### Batch C now complete: late-tail residual/context notes
 
-These two late-tail scaffolds should ultimately become finished prose, but the
-evidence profile points toward residual/context-note treatment rather than
-substantial reports.
+Batch C is now complete. SC069 and SC076 have been converted into short finished
+late-tail residual/context notes. SC069 remains a broad/far opener/context note
+with its distant `SC023 < SC069` relation kept explicitly non-local, while SC076
+remains a source-backed but chronology-negative residual note whose search
+boundaries stay purely methodological.
 
-1. **SC069** — a broad/far opener/context note. Its only positive relation is the
-   distant `SC023 < SC069` boundary, and its later side is runner-bounded. It
-   should likely become a short late-tail opener/context note, not a major
-   chapter.
-2. **SC076** — source-backed but chronology-negative in both directions. It
-   should likely become a short late-tail residual/context note rather than a
-   grouped or substantial report.
+## Residual-completion phase
 
-## Recommended completion batches
-
-The remaining completion work is now down to one final explicit batch.
-
-1. **Batch C: late-tail residual context notes** — convert SC069 and SC076 into
-   short finished late-tail residual/context notes. The late-tail architecture is
-   now complete enough that these can be written modestly without reopening the
-   promoted bridge/core/right-edge structure.
+The residual-completion phase for the 70 ordinary sound changes is now complete.
+No scaffold placeholders remain in the assembled sound-change half.
 
 ## Recommended immediate next step
 
-The next useful substantive task is now **Batch C**: convert SC069 and SC076
-into short finished late-tail residual/context notes. Those are the only
-remaining scaffold placeholders in the assembled half.
+The next useful substantive task is now **final quality control** of the
+assembled sound-change half: check the consistency of cross-references, the
+proportion of the shorter residual notes against the larger bridge/core reports,
+and any remaining generated-register or assembly wording that still reflects the
+former scaffold era.

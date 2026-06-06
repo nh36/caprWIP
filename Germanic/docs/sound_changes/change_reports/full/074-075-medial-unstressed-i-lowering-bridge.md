@@ -13,7 +13,7 @@ SC075 is the narrower follower.
 
 That smaller reading is the honest one. The report promotes only SC074 and
 SC075. It does **not** merge backward into the promoted `SC072-SC073` core,
-does **not** absorb the scaffolded SC076 context note, and does **not** turn
+does **not** absorb the promoted SC076 context note, and does **not** turn
 this narrow bridge into a reason to reopen the promoted SC078 right-edge report.
 
 #### Source tradition
@@ -48,7 +48,7 @@ adjacent seam `SC074 < SC075`.
 
 This report belongs immediately after the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** and immediately before
-the scaffold SC076 **Prefix i-reduction note**. Its meaningful outward
+the promoted SC076 **Prefix i-reduction note**. Its meaningful outward
 chronology relation points left to the promoted late-tail core through SC072,
 but that relation should remain a cross-reference rather than a reason to merge
 chapters.
@@ -90,14 +90,14 @@ one-sided on the right.
 This gives the late-tail architecture a cleaner middle shape in book form:
 promoted `SC070-SC071` as the early bridge, promoted `SC072-SC073` as the main
 compact core, promoted SC074-SC075 as the narrow witness-limited middle bridge,
-scaffolded SC076 as the context note to the right, and promoted SC078 as the
+promoted SC076 as the context note to the right, and promoted SC078 as the
 late-tail right-edge report.
 
 #### Remaining cautions
 
 The report should stay narrow. It should not be absorbed into the promoted
 `SC072-SC073` core just because the two units are adjacent. It should not absorb
-SC076 just because the scaffolded note follows it. And it should not be treated
+SC076 just because the promoted note follows it. And it should not be treated
 as if it were a second late-tail core merely because its local chronology is
 real. Its leftward `SC072 < SC074` relation should remain a cross-reference
 only, and SC075's runner-bounded later side must not be turned into a positive

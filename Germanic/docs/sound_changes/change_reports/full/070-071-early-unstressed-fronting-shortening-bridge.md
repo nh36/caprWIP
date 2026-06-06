@@ -11,7 +11,7 @@ it has a real leftward relation to the promoted SC052 hinge and a local right
 edge to SC071. SC071 is the narrower follower.
 
 That narrower reading is the honest one. The report promotes only SC070 and
-SC071. It does **not** merge backward into the scaffold SC069 opener/context
+SC071. It does **not** merge backward into the promoted SC069 opener/context
 note, does **not** merge forward into the promoted `SC072-SC073` core, and does
 **not** treat this early bridge as a reason to reopen any of the later closing
 reports.
@@ -45,7 +45,7 @@ real adjacent seam `SC070 < SC071`.
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold SC069 **Early o-shortening
+This report belongs immediately after the promoted SC069 **Early o-shortening
 context note** and immediately before the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core**. Its meaningful outward
 chronology relation points left to the promoted SC052 **Velar palatalization
@@ -55,7 +55,7 @@ chapter architecture.
 That placement is the point of the promotion. SC070-SC071 now gives the split
 late-tail region an explicit early bridge without displacing the stronger
 middle core on the right. Farther right, the promoted `SC074-SC075` bridge and
-the scaffolded SC076 note remain distinct, while SC078 remains the promoted
+the promoted SC076 note remain distinct, while SC078 remains the promoted
 right-edge report rather than a co-member of this chapter.
 
 #### Order evidence
@@ -87,10 +87,10 @@ the early side of the split late-tail region. The report remains cautious on
 purpose. SC070 is the stronger hinge because it has positive evidence on both
 sides; SC071 is the local follower and remains one-sided on the right.
 
-This gives the late-tail architecture a clearer shape in book form: scaffolded
+This gives the late-tail architecture a clearer shape in book form: promoted
 SC069 as the opener/context note, promoted SC070-SC071 as the early bridge,
 promoted `SC072-SC073` as the compact late-tail core, promoted `SC074-SC075`
-as the narrow medial bridge, scaffolded SC076 as the remaining weaker context
+as the narrow medial bridge, promoted SC076 as the remaining weaker context
 note, and promoted SC078 as the right-edge report.
 
 #### Remaining cautions

@@ -15,7 +15,7 @@ The report promotes only SC072 and SC073. It does **not** absorb the leftward
 `SC064 < SC072` relation into the promoted `SC064-SC065` bridge, does **not**
 pull the rightward `SC073 < SC085` relation into the promoted `SC085-SC086`
 closing report, and does **not** expand into the promoted `SC070-SC071`
-bridge, the promoted `SC074-SC075` bridge, the scaffolded SC076 note, or the
+bridge, the promoted `SC074-SC075` bridge, the promoted SC076 note, or the
 promoted SC078 report.
 
 #### Source tradition
@@ -99,7 +99,7 @@ The report should stay focused. It should not expand backward into SC064-SC065
 just because `SC064 < SC072` is real. It should not expand forward into the
 promoted SC085-SC086 report just because `SC073 < SC085` is real. It should not
 absorb the promoted `SC070-SC071` bridge, the promoted `SC074-SC075` bridge,
-the scaffolded SC076 note, or the promoted SC078 report, just because they
+the promoted SC076 note, or the promoted SC078 report, just because they
 belong to the same broader late-tail region.
 And although SC073 has a real rightward edge to SC085, that narrower handoff should remain only a
 cross-reference rather than a claim that this pair and the closing core belong
