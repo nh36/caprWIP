@@ -1,16 +1,13 @@
-# The Old English i-umlaut and its West Saxon right edge
+# The Old English i-umlaut and West Saxon palatal diphthongization
 
-## 1. Historical discussion
+## Historical discussion
 
 Luick gives the change its traditional scale:
 
 > Der wichtigste Fall von palataler Beeinflussung … war die Veränderung der
 > urenglischen Vokale durch i oder j der Folgesilbe.
 >
-> In context, this means that i-umlaut is treated as the central case of
-> palatal influence in early English.
-
-[@Luick1914, pp. 166--167, §182]
+> [@Luick1914, pp. 166--167, §182]
 
 Campbell gives the most compact classical formulation in English when he writes
 that “the process known as i-umlaut or i-mutation operates on practically all
@@ -27,20 +24,18 @@ its chronological delicacy when he calls it “diphthongization by initial
 palatal consonants (which precedes front umlaut but not breaking)”
 [@Fulk2018, p. 74, §4.13].
 
-## 2. Development of the discussion
-
 The sequence of discussion is fairly clear. Luick, Campbell, and Hogg all give
 i-umlaut primary importance. Ringe and Taylor and Fulk then help separate that
 major change from the narrower West-Saxon diphthongization that stands beside
-it. The literature therefore establishes a large, system-wide umlautal change and a
-narrower adjoining process affecting words after initial palatals. That
+it. The literature therefore establishes a large, system-wide umlautal change
+and a narrower adjoining process affecting words after initial palatals. That
 distinction matters because the two processes act in different environments and
 produce different lexical consequences.
 
-## 3. Formalization in the present project
+## Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
 
-The implementation keeps the broad umlaut rule and the narrower West-Saxon
-diphthongization rule separate:
+The first component of the implementation handles the broad fronting of vowels
+under the influence of following `i` or `j`.
 
 ```foma
 define OEIUmlautFronting [
@@ -56,11 +51,43 @@ define OEIUmlautFronting [
     {*ó} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ú} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
+```
 
+In prose, the rule fronts and raises the relevant simple vowels when a following
+`i` or `j` provides the trigger.
+
+Historically, this is the most central part of the umlautal development
+described by Luick, Campbell, Hogg, Ringe and Taylor, and Fulk. Within the
+present implementation it stands after [velar palatalization before front vowels
+(`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and before the narrower
+West-Saxon palatal-diphthongization rule discussed below.
+
+As a component rule, it shares the chronology of [the composite i-umlaut rule
+(`OEIUmlaut`)](#rule-OEIUmlaut).
+
+## Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
+
+The second component handles the raising of umlauted `æ` to `e`.
+
+```foma
 define OEIUmlautRaising [
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
+```
 
+In plain language, this rule takes the fronted low vowel created by the earlier
+fronting rule and raises it further where the same umlaut trigger still holds.
+
+Historically, this belongs inside the same broad i-umlaut development. It is
+part of the same chronological development and shares the evidence base of [the
+composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+
+## Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
+
+The third component handles the diphthongal outcomes that also undergo
+i-umlaut.
+
+```foma
 define OEIUmlautDiphthong [
     {*ea} -> {*ie} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ēa} -> {*īe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
@@ -72,11 +99,46 @@ define OEIUmlautDiphthong [
     {*éo} -> {*íe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
     {*ío} -> {*íe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
+```
 
+In prose, the rule states that diphthongal inputs are subject to umlaut as well:
+the vowel change is not confined to simple vowels.
+
+This matters historically because the handbooks describe i-umlaut as a
+system-wide assimilatory development. The rule therefore stands inside the same
+chronological bracket as [fronting under i-umlaut
+(`OEIUmlautFronting`)](#rule-OEIUmlautFronting) and [raising under i-umlaut
+(`OEIUmlautRaising`)](#rule-OEIUmlautRaising), even though its outputs are
+shaped differently.
+
+## The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
+
+The implementation also defines a composite rule that composes the three
+preceding parts.
+
+```foma
 define OEIUmlaut OEIUmlautFronting
     .o. OEIUmlautRaising
     .o. OEIUmlautDiphthong;
 ```
+
+In prose, this says that the implementation treats the umlaut as a sequence of
+fronting, raising, and diphthongal adjustments composed in order.
+
+Chronologically, the composite rule must follow [velar palatalization before
+front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization). If it is
+moved too early, forms such as _cow_ and _lung_ become over-palatalized. PGmc
+*\*kūi* yields *ċȳ*; the expected form is *cȳ*. PGmc *\*lúnganjō* yields
+*lunġen*; the expected form is *lungen*.
+
+Those failures show that the broad umlautal rule needs an earlier terminus post
+quem in the palatalization sequence, even though it remains the main vowel
+change within the present chapter.
+
+## West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
+
+The narrower West-Saxon rule is treated separately from the broader umlautal
+complex.
 
 ```foma
 define OEWsPalatalDiphthongization [
@@ -89,51 +151,21 @@ define OEWsPalatalDiphthongization [
 ];
 ```
 
-In prose, the distinction is straightforward. `OEIUmlaut` performs the broad
-fronting, raising, and diphthongal adjustments caused by following `i/j`.
-`OEWsPalatalDiphthongization` is much narrower: it applies at the left edge of a
-word after an already palatal consonant and creates specifically West-Saxon
-diphthongal outputs.
+In prose, this rule diphthongizes certain vowels after already palatal
+consonants in West Saxon. It therefore has a narrower dialectal and
+chronological scope than the broader umlaut rule.
 
-## 4. Chronological placement
+Its place is later than [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+If this rule is moved too early, the later ordering is constrained by forms such
+as _gift_ and _sheath_. PGmc *\*géftiz* then yields *ġieft*; the expected form
+is *ġift*. PGmc *\*skáiθiz* yields *sċǣþ*; the expected form is *sċēaþ*.
 
-The present chronology is fixed by concrete lexical failures in both directions.
+No tested lexical item provides a comparably precise later terminus ante quem.
+The available evidence therefore establishes the rule's relation to the earlier
+umlautal process much more clearly than it fixes a later point by which it must
+already have applied.
 
-If i-umlaut is moved too early, before velar palatalization, the outputs of
-_cow_ and _lung_ become over-palatalized. PGmc *\*kūi* yields *ċȳ*; the
-expected form is *cȳ*. PGmc *\*lúnganjō* yields *lunġen*; the expected form is
-*lungen*.
-
-If i-umlaut is moved too late, or if West-Saxon diphthongization is moved too
-early, the local right edge breaks around _gift_ and _sheath_. PGmc
-*\*géftiz* then yields *ġieft*; the expected form is *ġift*. PGmc
-*\*skáiθiz* yields *sċǣþ*; the expected form is *sċēaþ*.
-
-The crucial limit is on the later side of the West-Saxon diphthongization rule.
-No tested lexical item fixes a narrower later boundary. There is therefore no
-warrant for turning that negative result into a historical claim that the rule
-must stand before the final stages of the sequence.
-
-## 5. Consequences for reconstructed forms
-
-The chapter changes the shape of reconstructed forms on a large scale. In the
-umlaut rule proper, back vowels front and high vowels raise under following
-`i/j`; this is why forms such as *cȳ* and *lungen* belong to the same chapter as
-more familiar textbook examples like _giest_ and _giefan_ [@Campbell1959,
-pp. 69--72, §§190--191; @Fulk2018, pp. 61--63, §4.7].
-
-The West-Saxon follower has a narrower consequence. It produces the diphthongal
-surface forms expected in words such as _giefan_ and _sceap_, but it does so
-only after the broader umlautal setting is already in place
-[@RingeTaylor2014, p. 215, §6.5.1; @Hogg1992, p. 108]. That is why the implementation treats it as a narrower follow-on process and not
-as a second main change of equal scale.
-
-## 6. Remaining cautions
-
-The West-Saxon diphthongal material is genuine, but it is narrower, more
-dialect-specific, and less stably placed in the broader chronology than the
-umlautal change itself. The evidence is therefore strongest when it is used to
-distinguish the two processes and keep them from collapsing into one
-undifferentiated chapter. The available tests fix the left edge well, but they
-do not license a sweeping claim about the far right of the whole Old English
-sequence.
+The two rules should accordingly be kept distinct. The broad umlautal rule
+accounts for a system-wide assimilatory change; the West-Saxon rule accounts for
+a narrower palatal-consonant-conditioned diphthongization whose chronological
+and dialectal scope is more restricted.

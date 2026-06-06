@@ -35,11 +35,23 @@ META_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("meta:deserve section", re.compile(r"deserve(?:s|d)?[^.\n]{0,40}\bsection\b", re.I)),
     ("meta:this section should", re.compile(r"\bthis section should\b", re.I)),
     ("meta:this chapter should", re.compile(r"\bthis chapter should\b", re.I)),
+    ("meta:development section", re.compile(r"Development of the discussion", re.I)),
+    ("meta:remaining cautions", re.compile(r"Remaining cautions", re.I)),
     ("meta:pilot", re.compile(r"\bpilot\b", re.I)),
     ("meta:scaffold", re.compile(r"\bscaffold\b", re.I)),
     ("meta:chronology card", re.compile(r"chronology card", re.I)),
     ("meta:runner", re.compile(r"\brunner\b", re.I)),
+    ("meta:left edge", re.compile(r"\bleft edge\b", re.I)),
+    ("meta:right edge", re.compile(r"\bright edge\b", re.I)),
+    ("meta:left-hand", re.compile(r"\bleft-hand\b", re.I)),
+    ("meta:right-hand", re.compile(r"\bright-hand\b", re.I)),
+    ("meta:leftward", re.compile(r"\bleftward\b", re.I)),
+    ("meta:rightward", re.compile(r"\brightward\b", re.I)),
+    ("meta:far right", re.compile(r"\bfar right\b", re.I)),
+    ("meta:far left", re.compile(r"\bfar left\b", re.I)),
+    ("meta:chapter center", re.compile(r"\bchapter center\b", re.I)),
     ("meta:file path", re.compile(r"Germanic/docs/")),
+    ("meta:internal id", re.compile(r"\bSC\d{3}\b")),
 ]
 
 
@@ -70,6 +82,29 @@ def iter_target_files(include_all: bool) -> list[Path]:
     return [path for path in files if path.name not in DEFAULT_SKIP]
 
 
+def define_warnings(path: Path) -> list[tuple[Path, int, str, str]]:
+    warnings: list[tuple[Path, int, str, str]] = []
+    lines = path.read_text(encoding="utf-8").splitlines()
+    inside_foma = False
+    block_start = 0
+    define_count = 0
+    for idx, line in enumerate(lines, start=1):
+        stripped = line.strip()
+        if stripped.startswith("```foma"):
+            inside_foma = True
+            block_start = idx
+            define_count = 0
+            continue
+        if inside_foma and stripped.startswith("```"):
+            if define_count > 1:
+                warnings.append((path, block_start, "foma:multiple-define", f"{define_count} define statements in one foma block"))
+            inside_foma = False
+            continue
+        if inside_foma and re.match(r"define\s+\w+", stripped):
+            define_count += 1
+    return warnings
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check reader-facing sound-change prose for AI-style audit patterns.")
     parser.add_argument("--strict", action="store_true", help="Exit non-zero if warnings are found.")
@@ -79,6 +114,7 @@ def main() -> int:
     warnings: list[tuple[Path, int, str, str]] = []
 
     for path in iter_target_files(args.all):
+        warnings.extend(define_warnings(path))
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
             if "—" in line and not is_ignorable_line(line):
                 warnings.append((path, line_number, "emdash", line.rstrip()))

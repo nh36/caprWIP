@@ -10,14 +10,17 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 3. Use short, functional subsectioning; each section should do one job.
 4. Prefer prose paragraphs over status-language bullet lists.
 
-## Pilot section sequence
+## Rule-level architecture
 
-1. Historical discussion
-2. Comparison of the traditions
-3. Formalization in the present project
-4. Chronological placement
-5. Consequences for reconstructed forms
-6. Remaining cautions
+1. The FOMA rule is the basic reader-facing unit.
+2. Grouped introductions are allowed, but individual rule discussions must be
+   separate.
+3. Each FOMA rule gets one code box.
+4. Each code box contains one `define`.
+5. Each rule gets a prose equivalent.
+6. Rule sections should be labelled for cross-reference.
+7. Chronology should refer to rule titles and cross-references, not `SC###`.
+8. Internal report numbers and file paths stay out of the chapter body.
 
 ## Tone
 
@@ -50,7 +53,7 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 ## Formalization
 
 1. Show the actual FOMA definition in a fenced `foma` block.
-2. Quote the core rule and only the immediately necessary helper definitions.
+2. Each code box should contain one `define`.
 3. Explain what the code does in linguistic prose after the code block.
 4. The FOMA code box is the one place where the technical implementation should
    be shown directly.
@@ -97,6 +100,13 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 7. Discuss scale linguistically, not editorially.
 8. Keep implementation details in the formalization section.
 9. Keep internal identifiers and file references out of the chapter body.
+10. Fold “Development of the discussion” into the final paragraph of
+    “Historical discussion.”
+11. Do not use “Remaining cautions” as a section heading in reader-facing prose.
+12. Express chronology temporally, not spatially.
+13. Avoid “left edge,” “right edge,” “left-hand,” and “right-hand” in
+    chronology prose.
+14. In block quotations, keep the citation inside the quoted block.
 
 ## Audit command
 
