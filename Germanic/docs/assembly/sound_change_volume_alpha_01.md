@@ -8,7 +8,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 - Covered by pilot/full production reports: 70.
 - Covered by scaffold placeholders: 0.
 - Grouped into multi-change units: 48 changes across 20 units.
-- Still needing literature dossiers: 64.
+- Still needing literature dossiers: 2.
 - Still needing human judgement or promotion decisions: 0.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
