@@ -14,8 +14,8 @@ That stronger reading is also narrower than the broader late-tail dossier frame.
 The report promotes only SC072 and SC073. It does **not** absorb the leftward
 `SC064 < SC072` relation into the promoted `SC064-SC065` bridge, does **not**
 pull the rightward `SC073 < SC085` relation into the promoted `SC085-SC086`
-closing report, and does **not** expand into scaffolded `SC070-SC071`,
-`SC074-SC075`, `SC076`, or the promoted SC078 report.
+closing report, and does **not** expand into the promoted `SC070-SC071`
+bridge, scaffolded `SC074-SC075`, `SC076`, or the promoted SC078 report.
 
 #### Source tradition
 
@@ -49,7 +49,7 @@ adjacent seam `SC072 < SC073`.
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC070-SC071`
+This report belongs immediately after the promoted `SC070-SC071`
 **Early unstressed fronting and shortening bridge** and immediately before the
 scaffold `SC074-SC075` **Medial unstressed-i lowering bridge**. Its meaningful
 outward chronology links point left to the promoted `SC064-SC065`
@@ -97,8 +97,9 @@ material scaffolded.
 The report should stay focused. It should not expand backward into SC064-SC065
 just because `SC064 < SC072` is real. It should not expand forward into the
 promoted SC085-SC086 report just because `SC073 < SC085` is real. It should not
-absorb scaffolded `SC070-SC071`, `SC074-SC075`, or `SC076`, or the promoted
-SC078 report, just because they belong to the same broader late-tail region.
+absorb the promoted `SC070-SC071` bridge, scaffolded `SC074-SC075` or `SC076`,
+or the promoted SC078 report, just because they belong to the same broader
+late-tail region.
 And although SC073 has a real rightward edge to SC085, that narrower handoff should remain only a
 cross-reference rather than a claim that this pair and the closing core belong
 to one larger adjacent report.

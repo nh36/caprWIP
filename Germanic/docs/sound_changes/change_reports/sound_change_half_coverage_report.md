@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 56.
-3. Number covered by scaffold placeholders: 14.
+2. Number covered by pilot/full production reports: 58.
+3. Number covered by scaffold placeholders: 12.
 4. Number grouped into multi-change units: 50.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 14.
+6. Number needing human judgement: 12.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -49,7 +49,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 064-065 | SC064; SC065 | full | narrow positive SC064 with card-negative SC065 | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 066-068 | SC066; SC067; SC068 | full | strong local corridor with one weaker bridge member | literature and book dossiers drafted | keep as narrow full production report |
 | 069 | SC069 | scaffold | broad/far opener: `SC023 < SC069` is real but non-local, and the later side remains runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold opener/context note; keep SC023 as a distant cross-reference only and do not turn the runner-bounded later side into chapter architecture |
-| 070-071 | SC070; SC071 | scaffold | early local bridge: `SC052 < SC070 < SC071`, while SC071's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a short scaffold bridge; SC070 is the stronger hinge, SC071 remains the one-sided follower, and SC052 stays a leftward cross-reference only |
+| 070-071 | SC070; SC071 | full | early local bridge: `SC052 < SC070 < SC071`, while SC071's later side remains runner-bounded | literature and book dossiers drafted | promote as a cautious early late-tail bridge full report; keep SC052 as a leftward cross-reference only, do not rewrite SC071's runner-bounded later side as positive chronology, and do not merge the pair into SC069 or SC072-SC073 |
 | 072-073 | SC072; SC073 | full | strongest internal core: `SC064 < SC072 < SC073`, with SC073 also pointing forward to SC085 | literature and book dossiers drafted | promote as a compact adjacent full report; keep SC064 and SC085 as outward cross-references only, and do not expand into SC070-SC071, SC074-SC075, SC076, or SC078 |
 | 074-075 | SC074; SC075 | scaffold | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a narrow scaffold bridge; it remains useful for visibility but is lower-priority than SC072-SC073 or SC078 |
 | 076 | SC076 | scaffold | source-backed but chronology-negative singleton: no positive first-break boundary in either direction, with the earlier search blocked by bundled `PWGmcChanges` and the later side runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold note; do not force SC076 into a grouped production unit and do not narrate either boundary limit as positive chronology |

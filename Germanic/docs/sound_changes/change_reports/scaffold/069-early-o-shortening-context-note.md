@@ -21,7 +21,7 @@ historical boundary.
 #### Place in the cascade
 
 SC069 now stands immediately after the promoted `SC066-SC068` **Syncope and
-degemination corridor** and immediately before the scaffold `SC070-SC071`
+degemination corridor** and immediately before the promoted `SC070-SC071`
 **Early unstressed fronting and shortening bridge**. Its only positive outward
 chronology link points far left to the promoted SC023 **N-stem n-loss note**,
 but that broad/far relation should remain a distant cross-reference rather than
