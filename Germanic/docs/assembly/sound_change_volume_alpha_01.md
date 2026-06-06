@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 58.
-- Covered by scaffold placeholders: 12.
+- Covered by pilot/full production reports: 60.
+- Covered by scaffold placeholders: 10.
 - Grouped into multi-change units: 50 changes across 21 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 12.
+- Still needing human judgement or promotion decisions: 10.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -51,7 +51,7 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 069 | SC069 | scaffold | broad/far opener: `SC023 < SC069` is real but non-local, and the later side remains runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold opener/context note; keep SC023 as a distant cross-reference only and do not turn the runner-bounded later side into chapter architecture |
 | 070-071 | SC070; SC071 | full | early local bridge: `SC052 < SC070 < SC071`, while SC071's later side remains runner-bounded | literature and book dossiers drafted | promote as a cautious early late-tail bridge full report; keep SC052 as a leftward cross-reference only, do not rewrite SC071's runner-bounded later side as positive chronology, and do not merge the pair into SC069 or SC072-SC073 |
 | 072-073 | SC072; SC073 | full | strongest internal core: `SC064 < SC072 < SC073`, with SC073 also pointing forward to SC085 | literature and book dossiers drafted | promote as a compact adjacent full report; keep SC064 and SC085 as outward cross-references only, and do not expand into SC070-SC071, SC074-SC075, SC076, or SC078 |
-| 074-075 | SC074; SC075 | scaffold | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a narrow scaffold bridge; it remains useful for visibility but is lower-priority than SC072-SC073 or SC078 |
+| 074-075 | SC074; SC075 | full | narrow local bridge: `SC072 < SC074 < SC075`, while SC075's later side remains runner-bounded | literature and book dossiers drafted | promote as a narrow witness-limited medial unstressed-i lowering bridge full report; keep SC072 as a leftward cross-reference only, do not rewrite SC075's runner-bounded later side as positive chronology, and do not merge the pair into SC072-SC073, SC076, or SC078 |
 | 076 | SC076 | scaffold | source-backed but chronology-negative singleton: no positive first-break boundary in either direction, with the earlier search blocked by bundled `PWGmcChanges` and the later side runner-bounded through SC087 | shared late-tail literature and book dossiers drafted; row split after chapter-shape review | keep as a singleton scaffold note; do not force SC076 into a grouped production unit and do not narrate either boundary limit as positive chronology |
 | 078 | SC078 | full | right-edge hinge with broad earlier `SC070 < SC078` computational limit and narrower later `SC078 < SC086` historical seam | literature and book dossiers drafted | promote as a singleton right-edge full report; keep the rightward SC086 relation as a cross-reference only to promoted SC085-SC086, and do not create a non-contiguous SC078-SC086 chapter |
 | 079-080 | SC079; SC080 | full | opening bridge: `SC055 < SC079 < SC080`, with a broad/far left edge and a narrow local right edge, while SC080 remains one-sided on the right | literature and book dossiers drafted | promote as a modest opening closing-bridge full report; keep the broad/far SC055 relation as a cross-reference only, do not rewrite SC080's runner-bounded later side as positive chronology, and do not merge the pair into SC078 or SC081-SC083 |
@@ -3162,9 +3162,9 @@ chapter architecture.
 
 That placement is the point of the promotion. SC070-SC071 now gives the split
 late-tail region an explicit early bridge without displacing the stronger
-middle core on the right. Farther right, `SC074-SC075` and SC076 remain
-scaffolded, while SC078 remains the promoted right-edge report rather than a
-co-member of this chapter.
+middle core on the right. Farther right, the promoted `SC074-SC075` bridge and
+the scaffolded SC076 note remain distinct, while SC078 remains the promoted
+right-edge report rather than a co-member of this chapter.
 
 #### Order evidence
 
@@ -3197,9 +3197,9 @@ sides; SC071 is the local follower and remains one-sided on the right.
 
 This gives the late-tail architecture a clearer shape in book form: scaffolded
 SC069 as the opener/context note, promoted SC070-SC071 as the early bridge,
-promoted `SC072-SC073` as the compact late-tail core, scaffolded `SC074-SC075`
-and SC076 as the remaining weaker middle notes, and promoted SC078 as the
-right-edge report.
+promoted `SC072-SC073` as the compact late-tail core, promoted `SC074-SC075`
+as the narrow medial bridge, scaffolded SC076 as the remaining weaker context
+note, and promoted SC078 as the right-edge report.
 
 #### Remaining cautions
 
@@ -3227,7 +3227,8 @@ The report promotes only SC072 and SC073. It does not absorb the leftward
 `SC064 < SC072` relation into the promoted `SC064-SC065` bridge, does not
 pull the rightward `SC073 < SC085` relation into the promoted `SC085-SC086`
 closing report, and does not expand into the promoted `SC070-SC071`
-bridge, scaffolded `SC074-SC075`, `SC076`, or the promoted SC078 report.
+bridge, the promoted `SC074-SC075` bridge, the scaffolded SC076 note, or the
+promoted SC078 report.
 
 #### Source tradition
 
@@ -3263,7 +3264,7 @@ adjacent seam `SC072 < SC073`.
 
 This report belongs immediately after the promoted `SC070-SC071`
 **Early unstressed fronting and shortening bridge** and immediately before the
-scaffold `SC074-SC075` **Medial unstressed-i lowering bridge**. Its meaningful
+promoted `SC074-SC075` **Medial unstressed-i lowering bridge**. Its meaningful
 outward chronology links point left to the promoted `SC064-SC065`
 **Post-apocope tail** through SC064 and right to the promoted `SC085-SC086`
 **H-loss and contraction core** through SC085.
@@ -3309,9 +3310,9 @@ material scaffolded.
 The report should stay focused. It should not expand backward into SC064-SC065
 just because `SC064 < SC072` is real. It should not expand forward into the
 promoted SC085-SC086 report just because `SC073 < SC085` is real. It should not
-absorb the promoted `SC070-SC071` bridge, scaffolded `SC074-SC075` or `SC076`,
-or the promoted SC078 report, just because they belong to the same broader
-late-tail region.
+absorb the promoted `SC070-SC071` bridge, the promoted `SC074-SC075` bridge,
+the scaffolded SC076 note, or the promoted SC078 report, just because they
+belong to the same broader late-tail region.
 And although SC073 has a real rightward edge to SC085, that narrower handoff should remain only a
 cross-reference rather than a claim that this pair and the closing core belong
 to one larger adjacent report.
@@ -3322,47 +3323,104 @@ to one larger adjacent report.
 
 #### Historical formulation
 
-This scaffold unit now groups SC074 *OEMedUnstressedILowering1* and SC075
-*OEMedUnstressedILowering* as a narrow medial-unstressed-*i* lowering bridge
-inside the split late-tail region. The dossier work shows that the pair is real
-and worth keeping visible, but also narrower and lower-priority than the
-promoted SC072-SC073 core or the SC078 right-edge note.
+This is a narrow medial unstressed-i lowering bridge full report centred on
+SC074 *OEMedUnstressedILowering1* and SC075
+*OEMedUnstressedILowering*. The pair is real and adjacent, but it is not the
+main late-tail core. SC074 is the stronger hinge because it has a real leftward
+relation to the promoted `SC072-SC073` core and a local right edge to SC075.
+SC075 is the narrower follower.
 
-#### Current evidence
+That smaller reading is the honest one. The report promotes only SC074 and
+SC075. It does not merge backward into the promoted `SC072-SC073` core,
+does not absorb the scaffolded SC076 context note, and does not turn
+this narrow bridge into a reason to reopen the promoted SC078 right-edge report.
 
-SC074 has positive boundaries on both sides: it must follow SC072 and precede
-SC075. SC075 then directly reciprocates that left edge but has no later real
-break before the current SC087 boundary. The pair therefore has a real local
-shape, but its evidence is witness-limited and does not yet justify finished
-production prose.
+#### Source tradition
+
+The source tradition supports the pair as part of the broader late
+unstressed-vowel and weak-tail environment, but not as one of its major
+handbook centers. Hogg is useful because he keeps apocope, syncope, and later
+cluster simplification in the same late zone while warning against turning
+every internal CAPR step into a separate large historical law
+[@Hogg1992, pp. 120--121]. Ringe and Taylor provide the clearest staged late
+framework, but their strongest emphasis falls on the shortening/apocope core
+rather than on this narrower medial-lowering bridge
+[@RingeTaylor2014, §§6.7.3--6.8.4, 6.9.1--6.9.3]. Luick likewise supports the
+broader late unstressed-vowel environment without making this pair a standalone
+chapter center [@Luick1914, §§304--307].
+
+Together those sources justify keeping SC074-SC075 explicit in production
+prose, but only as a modest, witness-limited bridge. The broader environment is
+historically real; this specific pair remains smaller and less source-central
+than the promoted `SC072-SC073` core or the promoted SC078 right-edge report.
+
+#### CAPR implementation
+
+CAPR makes this narrow bridge explicit as two adjacent lowering rules. SC074
+*OEMedUnstressedILowering1* handles the first medial unstressed-*i* lowering
+step, and SC075 *OEMedUnstressedILowering* then completes the local sequence.
+That segmentation is finer-grained than handbook prose, but the chronology
+cards show why it is useful: the local center of the report is the real
+adjacent seam `SC074 < SC075`.
 
 #### Place in the cascade
 
-The bridge belongs immediately after the promoted `SC072-SC073`
+This report belongs immediately after the promoted `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** and immediately before
-the scaffold SC076 **Prefix i-reduction note**. Its meaningful outward link
-points left to SC072 through the fright derivation, but that relation should
-remain a local cross-reference rather than a reason to merge chapters.
+the scaffold SC076 **Prefix i-reduction note**. Its meaningful outward
+chronology relation points left to the promoted late-tail core through SC072,
+but that relation should remain a cross-reference rather than a reason to merge
+chapters.
+
+That placement is the point of the promotion. SC074-SC075 now gives the split
+late-tail region an explicit narrow middle bridge while leaving the stronger
+core on the left and the weaker context note on the right in their own proper
+shapes. The promoted `SC070-SC071` early bridge remains farther left as
+regional context, and the promoted SC078 right-edge report remains distinct
+farther right.
 
 #### Order evidence
 
-Current first-break evidence gives the bridge one real local sequence:
-`SC072 < SC074 < SC075`. If SC074 is moved before SC072, PGmc fúrxtīnaz
-yields fyrhti rather than expected OE fyrhte; if SC074 is moved later than
-SC075, PGmc skíllingaz yields sċilleng instead of expected sċilling.
-SC075 then directly reciprocates that left edge: if it is moved before SC074,
-the same shilling derivation lowers too early.
+The local center of the report is `SC074 < SC075`.
 
-The later side of SC075 is different. The search reaches the current SC087
-boundary without finding a real break, so the bridge should not be rewritten
-into a claim that SC075 must precede SC087. This is a useful scaffold bridge,
-not a settled production unit.
+SC074 must follow SC072 and precede SC075. If OE Med Unstressed I Lowering1 is
+moved before SC072, PGmc fúrxtīnaz yields fyrhti rather than expected OE
+fyrhte. That leftward relation is real, but it should remain only a
+cross-reference to the promoted `SC072-SC073` report rather than a reason to
+merge chapters.
 
-#### Status
+SC074 must also precede SC075. If it is moved later than SC075, PGmc
+skíllingaz yields sċilleng instead of expected sċilling.
 
-This is a scaffold placeholder, not finished book prose. Keep SC074-SC075
-visible as a narrow late-tail bridge, but leave it scaffolded and lower-priority
-than the promoted SC072-SC073 core or SC078.
+SC075 directly reciprocates that left edge. If OE Med Unstressed I Lowering is
+moved before SC074, PGmc skíllingaz again yields sċilleng rather than
+expected sċilling. The current runner finds no later real break for SC075
+before the SC087 boundary. That result is runner-bounded and must not be
+rewritten into a positive claim that SC075 must precede SC087.
+
+#### Interpretation
+
+SC074-SC075 is promoted because it is the strongest remaining local late-tail
+pair after the earlier bridge and the compact core were already made explicit.
+The report remains narrow on purpose. SC074 is the stronger hinge because it has
+positive evidence on both sides; SC075 is the local follower and remains
+one-sided on the right.
+
+This gives the late-tail architecture a cleaner middle shape in book form:
+promoted `SC070-SC071` as the early bridge, promoted `SC072-SC073` as the main
+compact core, promoted SC074-SC075 as the narrow witness-limited middle bridge,
+scaffolded SC076 as the context note to the right, and promoted SC078 as the
+late-tail right-edge report.
+
+#### Remaining cautions
+
+The report should stay narrow. It should not be absorbed into the promoted
+`SC072-SC073` core just because the two units are adjacent. It should not absorb
+SC076 just because the scaffolded note follows it. And it should not be treated
+as if it were a second late-tail core merely because its local chronology is
+real. Its leftward `SC072 < SC074` relation should remain a cross-reference
+only, and SC075's runner-bounded later side must not be turned into a positive
+historical boundary.
 
 ## Prefix i-reduction note
 
@@ -3387,7 +3445,7 @@ than a positive chronology claim.
 #### Place in the cascade
 
 SC076 now stands as its own singleton scaffold note immediately after the
-scaffold `SC074-SC075` **Medial unstressed-i lowering bridge** and immediately
+promoted `SC074-SC075` **Medial unstressed-i lowering bridge** and immediately
 before the promoted SC078 **Weak-tail reduction right-edge note**. It belongs in
 that position because the source tradition justifies a visible prefix-vowel note,
 but its chronology evidence still does not justify folding it into a grouped

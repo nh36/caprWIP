@@ -54,9 +54,9 @@ chapter architecture.
 
 That placement is the point of the promotion. SC070-SC071 now gives the split
 late-tail region an explicit early bridge without displacing the stronger
-middle core on the right. Farther right, `SC074-SC075` and SC076 remain
-scaffolded, while SC078 remains the promoted right-edge report rather than a
-co-member of this chapter.
+middle core on the right. Farther right, the promoted `SC074-SC075` bridge and
+the scaffolded SC076 note remain distinct, while SC078 remains the promoted
+right-edge report rather than a co-member of this chapter.
 
 #### Order evidence
 
@@ -89,9 +89,9 @@ sides; SC071 is the local follower and remains one-sided on the right.
 
 This gives the late-tail architecture a clearer shape in book form: scaffolded
 SC069 as the opener/context note, promoted SC070-SC071 as the early bridge,
-promoted `SC072-SC073` as the compact late-tail core, scaffolded `SC074-SC075`
-and SC076 as the remaining weaker middle notes, and promoted SC078 as the
-right-edge report.
+promoted `SC072-SC073` as the compact late-tail core, promoted `SC074-SC075`
+as the narrow medial bridge, scaffolded SC076 as the remaining weaker context
+note, and promoted SC078 as the right-edge report.
 
 #### Remaining cautions
 

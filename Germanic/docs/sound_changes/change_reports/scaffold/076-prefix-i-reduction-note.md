@@ -21,7 +21,7 @@ than a positive chronology claim.
 #### Place in the cascade
 
 SC076 now stands as its own singleton scaffold note immediately after the
-scaffold `SC074-SC075` **Medial unstressed-i lowering bridge** and immediately
+promoted `SC074-SC075` **Medial unstressed-i lowering bridge** and immediately
 before the promoted SC078 **Weak-tail reduction right-edge note**. It belongs in
 that position because the source tradition justifies a visible prefix-vowel note,
 but its chronology evidence still does not justify folding it into a grouped
