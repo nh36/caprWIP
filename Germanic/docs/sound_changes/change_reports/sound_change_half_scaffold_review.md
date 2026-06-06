@@ -5,10 +5,11 @@
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 41
 assembled units: one pilot production report (`016-020`), thirty-five full
-production reports (`014-015`, `021`, `023`, `024`, `026-027`, `029-030`,
-`031-034`, `035-037`, `039-040`, `041`, `042`, `043`, `044-045`, `046-048`,
-`049-050`, `051`, `052`, `053-054`, `055-056`, `059`, `063`, `064-065`,
-`066-068`, `070-071`, `072-073`, `074-075`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and 5 remaining scaffold placeholders. The opening of the half is
+production reports (`014-015`, `018`, `021`, `022`, `023`, `024`, `025`,
+`026-027`, `028`, `029-030`, `031-034`, `035-037`, `039-040`, `041`, `042`,
+`043`, `044-045`, `046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`,
+`059`, `063`, `064-065`, `066-068`, `070-071`, `072-073`, `074-075`, `078`,
+`079-080`, `081-083`, `085-086`, and `087`), and 5 remaining scaffold placeholders. The opening of the half is
 now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
 pilot `SC016-SC020` corridor, then the promoted `SC018` note, promoted
 `SC021` singleton note, promoted `SC022`, promoted `SC023`, promoted `SC024`,
