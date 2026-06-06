@@ -97,3 +97,22 @@ This does **not** make SC058 a strong source-backed chapter. Its new dossier is
 deliberately residual and documents thin, scattered source support plus the
 current chronology-negative card state. Any future work here is optional
 refinement rather than required coverage repair.
+
+## Follow-up: readiness and quotation metadata normalization
+
+After the SC057/SC058 dossier files closed the last `not_found` gaps, this pass
+normalized the inventory's downstream readiness and quotation metadata so it no
+longer says that a literature dossier is still missing where a real dossier file
+ already exists.
+
+In particular:
+
+1. `SC057` and `SC058` now record verified quotation-source witness files in the
+   inventory.
+2. Rows with actual literature coverage no longer keep the stale
+   `book_section_readiness = needs_literature_dossier` state.
+3. Rows with `partial` dossier coverage may still carry future-work items such as
+   direct quotations, representative examples, or human chronology framing, but
+   those are now refinement needs rather than missing-dossier coverage.
+4. Boundary-limited residual rules such as `SC058` remain deliberately modest in
+   readiness and drafting priority.
