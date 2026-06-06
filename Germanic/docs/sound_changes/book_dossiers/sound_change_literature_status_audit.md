@@ -134,3 +134,14 @@ The assembled half remains scaffold-free and literature-complete:
 This pass made one narrow reproducibility fix: it regenerated the tracked
 `sound_change_volume_alpha_01.tex` file so the LaTeX artifact now matches the
 current scaffold-free Markdown build instead of an older scaffold-era state.
+
+## PDF build check
+
+`SOUND_CHANGE_BUILD_PDF=1 bash Germanic/docs/assembly/build_sound_change_volume.sh`
+now fails clearly when the local lexical-style Noto font setup is unavailable,
+instead of crashing later inside `fontspec`.
+
+The matching Docker-backed path,
+`bash Germanic/docs/assembly/build_sound_change_volume_docker.sh`, succeeded with
+the same `pandoc/latex` + Noto-font toolchain used by the lexical-volume PDF
+workflow.

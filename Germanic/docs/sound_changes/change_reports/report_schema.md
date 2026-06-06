@@ -122,6 +122,13 @@ PDF generation is opt-in for local inspection only:
 SOUND_CHANGE_BUILD_PDF=1 bash Germanic/docs/assembly/build_sound_change_volume.sh
 ```
 
+If the local environment does not provide the same Noto-font setup used by the
+lexical-volume PDF workflow, use:
+
+```bash
+bash Germanic/docs/assembly/build_sound_change_volume_docker.sh
+```
+
 Do not commit the PDF as part of the repository build workflow.
 
 Source Markdown may use inline code spans for linguistic forms during authoring,

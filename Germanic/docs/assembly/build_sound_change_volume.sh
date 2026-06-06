@@ -9,6 +9,7 @@ assembled_tex="${script_dir}/sound_change_volume_alpha_01.tex"
 assembled_pdf="${script_dir}/sound_change_volume_alpha_01.pdf"
 metadata="${script_dir}/full_volume_metadata.yaml"
 refs_bib="${repo_root}/docs/refs.bib"
+docker_wrapper="bash Germanic/docs/assembly/build_sound_change_volume_docker.sh"
 
 # MacTeX commonly installs TeX engines here without updating non-login PATHs.
 if [[ -d /Library/TeX/texbin ]] && [[ ":${PATH}:" != *":/Library/TeX/texbin:"* ]]; then
@@ -48,6 +49,22 @@ elif command -v lualatex >/dev/null 2>&1; then
 fi
 
 if [[ -n "${pdf_engine}" ]]; then
+  tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/sound-change-font-check.XXXXXX")"
+  trap 'rm -rf "${tmpdir}"' EXIT
+  cat > "${tmpdir}/fontcheck.tex" <<'EOF'
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\setmonofont{Noto Sans Mono}
+\begin{document}
+ok \texttt{mono}
+\end{document}
+EOF
+  if ! "${pdf_engine}" -interaction=nonstopmode -halt-on-error -output-directory "${tmpdir}" "${tmpdir}/fontcheck.tex" >/dev/null 2>&1; then
+    echo "Local PDF build requires the same Noto-font setup as the lexical-volume path: 'Noto Serif' and 'Noto Sans Mono' must be available to ${pdf_engine}." >&2
+    echo "Install those fonts locally or use ${docker_wrapper}." >&2
+    exit 1
+  fi
   pandoc "${assembled_md}" \
     --standalone \
     --from=markdown+raw_tex+citations \

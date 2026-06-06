@@ -45,6 +45,13 @@ now opt-in for local inspection only:
 SOUND_CHANGE_BUILD_PDF=1 bash Germanic/docs/assembly/build_sound_change_volume.sh
 ```
 
+If local fonts or TeX tools do not match the lexical-volume Noto-font setup, use
+the Docker-backed render path that mirrors the lexical-volume PDF workflow:
+
+```bash
+bash Germanic/docs/assembly/build_sound_change_volume_docker.sh
+```
+
 Repository tasks should normally stop at Markdown/TeX and should not commit the
 PDF. Source reports may use inline code spans for linguistic forms during
 authoring, but the assembly step converts those spans to reader-facing
