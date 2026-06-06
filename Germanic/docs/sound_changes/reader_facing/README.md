@@ -20,6 +20,19 @@ These files do **not** replace the existing sound-change reports. They are a
 controlled pilot for tone, structure, quotation practice, code presentation,
 and chronology explanation.
 
+## Pilot PDF build
+
+To assemble the three pilot chapters into one reviewable PDF, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_pilot_docker.sh
+```
+
+This writes:
+
+- `reader_facing_pilot_01.md`
+- `reader_facing_pilot_01.pdf`
+
 ## Numbering note
 
 The current sound-change assembly wrappers do **not** request numbered section
