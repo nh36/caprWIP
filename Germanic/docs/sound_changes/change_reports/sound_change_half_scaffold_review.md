@@ -9,7 +9,7 @@ production reports (`014-015`, `018`, `021`, `022`, `023`, `024`, `025`,
 `026-027`, `028`, `029-030`, `031-034`, `035-037`, `039-040`, `041`, `042`,
 `043`, `044-045`, `046-048`, `049-050`, `051`, `052`, `053-054`, `055-056`,
 `057`, `058`, `059`, `060`, `061`, `063`, `064-065`, `066-068`, `069`,
-`070-071`, `072-073`, `074-075`, `076`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and 0 remaining scaffold placeholders. The opening of the half is
+`070-071`, `072-073`, `074-075`, `076`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and no scaffold placeholders remain. The opening of the half is
 now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
 pilot `SC016-SC020` corridor, then the promoted `SC018` note, promoted
 `SC021` singleton note, promoted `SC022`, promoted `SC023`, promoted `SC024`,
@@ -33,11 +33,11 @@ Grouped production reports may cover adjacent changes only. Non-adjacent
 changes should be handled by cross-reference, not by a single out-of-order
 production unit.
 
-No remaining scaffold should be treated as a final book decision. Every
-ordinary sound change still needs finished prose treatment in the printed
-version. The residual question is therefore not whether these units are
-discussed, but what final prose form they deserve: substantial report, cautious
-bridge report, short singleton note, or residual/context note.
+No part of the former scaffold era should be mistaken for a still-pending
+promotion decision. Every ordinary sound change in the printed version now has
+finished prose treatment, but the book still benefits from keeping clear which
+units ended up as substantial reports, cautious bridges, short singleton notes,
+or residual/context notes.
 
 ## Structural review of current units
 

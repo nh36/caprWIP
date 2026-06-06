@@ -420,9 +420,9 @@ def compute_coverage_stats(
     }
 
 
-def build_unit_register(rows: list[dict[str, str]], id_key: str) -> str:
+def build_unit_register(rows: list[dict[str, str]], id_key: str, treatment_heading: str = "Recommended treatment") -> str:
     header = [
-        "| Unit | Change IDs | Status | Chronology status | Literature status | Recommended treatment |",
+        f"| Unit | Change IDs | Status | Chronology status | Literature status | {treatment_heading} |",
         "| --- | --- | --- | --- | --- | --- |",
     ]
     body = [
@@ -457,6 +457,7 @@ def build_volume_text(
     scaffold_rows: list[dict[str, str]],
     stats: dict[str, object],
 ) -> str:
+    treatment_heading = "Final treatment" if stats["scaffold_changes"] == 0 else "Recommended treatment"
     if stats["scaffold_changes"] == 0:
         intro = (
             "_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and "
@@ -488,7 +489,7 @@ def build_volume_text(
         "",
         "## Unit register",
         "",
-        build_unit_register(scaffold_rows, "UNIT_ID"),
+        build_unit_register(scaffold_rows, "UNIT_ID", treatment_heading),
         "",
     ]
 
@@ -513,6 +514,7 @@ def build_volume_text(
 
 
 def build_coverage_report_text(scaffold_rows: list[dict[str, str]], stats: dict[str, object]) -> str:
+    treatment_heading = "Final treatment" if stats["scaffold_changes"] == 0 else "Recommended treatment"
     if stats["scaffold_changes"] == 0:
         recommended_next_work = (
             "10. Recommended next work: final quality control of the assembled sound-change half."
@@ -540,7 +542,7 @@ def build_coverage_report_text(scaffold_rows: list[dict[str, str]], stats: dict[
         "",
         "## Unit register",
         "",
-        build_unit_register(scaffold_rows, "UNIT_ID"),
+        build_unit_register(scaffold_rows, "UNIT_ID", treatment_heading),
         "",
     ]
     return "\n".join(parts).rstrip() + "\n"

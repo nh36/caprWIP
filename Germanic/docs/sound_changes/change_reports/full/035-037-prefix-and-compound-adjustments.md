@@ -134,7 +134,7 @@ linking cleanup is historically intelligible and computationally important, even
 though its own card evidence is technical rather than ordinary-historical.
 
 That makes the unit a derivational bridge in the strongest useful sense. It is
-adjacent, chronological, and coherent enough to promote as finished prose, but
+adjacent, chronological, and coherent enough to carry finished prose, but
 the finished prose should be explicit about hierarchy rather than flattening all
 three members into coequal textbook laws. If later architecture ever narrows the
 region around SC036, that would be a chapter-shape refinement rather than proof
