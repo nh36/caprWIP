@@ -66,10 +66,10 @@ bridge report, short singleton note, or residual/context note.
 | 052 | Velar palatalization hinge | SC052 | full | no | no | defer | Now promoted as a standalone full report after dossier preparation. The chapter keeps SC052 in strict chronological position between SC051 and the SC053-SC054 bridge while treating SC050 as feeder/context rather than as a non-contiguous co-member. |
 | 053-054 | Pre-umlaut bridge and W-loss | SC053; SC054 | full | no | maybe | defer | Now promoted as a short adjacent chronological bridge report. `SC053` remains the residual `*ngw > *ng` member with no positive card boundary, while `SC054` is treated as the narrower source-backed `sea` bridge between SC020 and SC063 without creating a non-contiguous chapter. |
 | 055-056 | Umlaut core and palatal-diphthongization follower | SC055; SC056 | full | no | no | defer | Now promoted as a narrow full report with `SC055` as the historical center and `SC056` as the West Saxon right-edge follower; keep the caution that broad textbook chronology and local CAPR order do not perfectly coincide. |
-| 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | yes | likely | low | Residual scaffold retained after the split: the new palatalization/fronting review now explicitly flags `SC057` for later reconsideration with `SC049-SC052`, while `SC058` remains boundary-limited material with no positive first-break boundary. |
+| 057-058 | Post-umlaut residual and palatalization-side note | SC057; SC058 | scaffold | no | yes | defer | Batch B review now recommends splitting this residual unit in the next conversion commit. SC057 has a real leftward anchor across SC052 and should become a short singleton note; SC058 remains boundary-limited in both directions and should become a shorter residual/context note rather than an uneven coequal partner in one grouped report. |
 | 059 | OE back mutation | SC059 | full | no | no | defer | Now promoted as the singleton back-mutation center of the old seam. Its real `SC048 < SC059 < SC078` chronology stays explicit, while the left edge remains a cross-reference to the promoted SC046-SC048 corridor and the right edge now points into the split late-tail scaffold region through SC078. |
-| 060 | WS palatal umlaut note | SC060 | scaffold | no | no | low | Now split out as its own one-sided scaffold note. The real left edge `SC055 < SC060` via `might` and `night` should stay a cross-reference to the promoted umlaut core, while the later side remains runner-bounded. |
-| 061 | Weak-tail nasal-loss note | SC061 | scaffold | no | no | low | Now split out as its own one-sided scaffold note. The real left edge `SC023 < SC061` via `do` should stay a cross-reference to the promoted SC023 singleton note, while the later side remains runner-bounded. |
+| 060 | WS palatal umlaut note | SC060 | scaffold | no | no | defer | Batch B review now recommends converting this next as a short finished singleton note. Its real left edge `SC055 < SC060` via `might` and `night` should remain a cross-reference to the promoted umlaut core, while the later side remains runner-bounded rather than historically positive. |
+| 061 | Weak-tail nasal-loss note | SC061 | scaffold | no | no | defer | Batch B review now recommends converting this next as a short finished singleton note. Its real left edge `SC023 < SC061` via `do` should remain a cross-reference to the promoted SC023 singleton note, while the later side remains runner-bounded rather than historically positive. |
 | 063 | High-vowel apocope | SC063 | full | no | no | defer | Already promoted from scaffold; now joins `SC043` as the second singleton full-report model. |
 | 064-065 | Post-apocope tail | SC064; SC065 | full | no | maybe | defer | Now promoted as a short cautious bridge report. `SC064` is the narrow positive-evidence member, while `SC065` is treated explicitly as card-negative contextual syncope material rather than as a coequal chronology anchor. |
 | 066-068 | Syncope and degemination corridor | SC066; SC067; SC068 | full | no | maybe | defer | Now promoted as a narrow late weak-tail syncope-and-cleanup report; retain the caution that SC067 functions mainly as a bridge member rather than as a coequal historical anchor. |
@@ -99,22 +99,24 @@ SC018, SC022, SC025, and SC028 have now been converted into short finished
 singleton notes. Their cards remained boundary-limited or chronology-light, so
 the correct final form was short standalone prose rather than larger reports.
 
-### Palatalization / umlaut-side residuals: needs focused review
+### Batch B structurally reviewed: split SC057-SC058, then convert SC060 and SC061 as singleton notes
 
-This is the structurally most interesting remaining group. It should not remain
-scaffolded in the final book, but it probably needs one last focused review
-before the final prose form is fixed.
+Batch B has now been structurally reviewed. The remaining palatalization /
+umlaut-side residuals should all receive finished prose next, but they do not
+all want the same final shape.
 
-1. **SC057-SC058** — likely still the key structural decision point. SC057 has a
-   real leftward anchor across SC052, while SC058 remains boundary-limited. This
-   may remain a grouped residual unit, or it may be better split if review shows
-   the pair is too uneven for one finished report.
-2. **SC060** — one-sided but historically interpretable through its real leftward
-   SC055 anchor; likely a short singleton note once the residual palatalization /
-   umlaut-side plan is settled.
-3. **SC061** — one-sided with a real SC023 leftward anchor and a runner-bounded
-   later side; likely a short singleton note rather than a broader weak-tail
-   chapter.
+1. **SC057-SC058 should be split in the next conversion commit.** SC057 has a
+   real leftward anchor across SC052 and enough evidence for a short singleton
+   note of its own. SC058 remains boundary-limited in both directions and is
+   better treated as a separate short residual/context note than as an uneven
+   co-member of one grouped report.
+2. **SC060 should become a short finished singleton note.** Its real leftward
+   `SC055 < SC060` relation via `might` and `night` is enough for finished prose,
+   but the later side remains runner-bounded and must stay a methodological
+   limit rather than a positive chronology claim.
+3. **SC061 should become a short finished singleton note.** Its real leftward
+   `SC023 < SC061` relation via `do` is enough for finished prose, but the later
+   side remains runner-bounded and must likewise stay non-positive.
 
 ### Late-tail residual context notes: likely short final notes, not major reports
 
@@ -135,10 +137,11 @@ substantial reports.
 The remaining completion work now looks best as two explicit batches after the
 completion of Batch A.
 
-1. **Batch B: palatalization / umlaut-side residual review** — do one focused
-   structural review of SC057-SC058, SC060, and SC061, then decide whether the
-   final shape is one grouped residual bridge plus singleton notes, or a cleaner
-   split into separate short units.
+1. **Batch B: palatalization / umlaut-side conversion** — in the next conversion
+   commit, split SC057-SC058, convert SC057 to a short singleton note with its
+   real SC052 leftward anchor, convert SC058 to a short boundary-limited
+   residual/context note, and convert SC060 and SC061 to short finished
+   singleton notes.
 2. **Batch C: late-tail residual context notes** — convert SC069 and SC076 into
    short finished late-tail residual/context notes. The late-tail architecture is
    now complete enough that these can be written modestly without reopening the
@@ -146,7 +149,7 @@ completion of Batch A.
 
 ## Recommended immediate next step
 
-The next useful substantive task is **Batch B**: the focused palatalization /
-umlaut-side residual review for SC057-SC058, SC060, and SC061. That is now the
-main remaining structural decision before the last late-tail residual/context
-notes in Batch C.
+The next useful substantive task is now the **Batch B conversion commit**:
+split SC057-SC058 in line with this review, then convert SC057, SC058, SC060,
+and SC061 into the short finished prose forms specified here. Batch C then
+remains the last late-tail residual/context-note cleanup.
