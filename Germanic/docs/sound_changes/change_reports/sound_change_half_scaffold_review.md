@@ -31,6 +31,12 @@ Grouped production reports may cover adjacent changes only. Non-adjacent
 changes should be handled by cross-reference, not by a single out-of-order
 production unit.
 
+No remaining scaffold should be treated as a final book decision. Every
+ordinary sound change still needs finished prose treatment in the printed
+version. The residual question is therefore not whether these units are
+discussed, but what final prose form they deserve: substantial report, cautious
+bridge report, short singleton note, or residual/context note.
+
 ## Structural review of current units
 
 | UNIT_ID | TITLE | CHANGE_IDS | CURRENT_STATUS | KEEP_AS_GROUP_FOR_NOW | SPLIT_LATER? | PROMOTION_PRIORITY | REASON |
@@ -77,16 +83,82 @@ production unit.
 | 085-086 | H-loss and contraction core | SC085; SC086 | full | no | no | defer | Now promoted as the strongest compact closing production report. `SC085 < SC086` is the cleanest local closing pair, SC085 keeps SC073 only as a leftward cross-reference to the promoted `SC072-SC073` core, SC086 receives SC078 only as a leftward cross-reference, and the later side of SC086 remains runner-bounded rather than historically positive. |
 | 087 | R-metathesis terminal note | SC087 | full | no | no | defer | Now promoted as a short terminal singleton full report. Its only positive chronology relation is the broad/far leftward `SC044 < SC087`, which remains a distant cross-reference to promoted SC044-SC045, while the later side remains runner-bounded rather than historically positive. |
 
-## Recommended next targets
+## Residual-completion classification
 
-1. **SC069 later review or continued scaffolding** — the broad/far opener/context note still matters structurally, but it remains weaker as a production target than the promoted local bridges and core.
-2. **SC076** — this remains the lowest-priority late-tail candidate: a chronology-negative context note rather than an immediate production target.
-3. **Residual scaffold notes elsewhere in the half** — `SC018`, `SC022`, `SC025`, `SC028`, `SC057-SC058`, `SC060`, and `SC061` remain explicitly represented and can stay scaffolded until a separate review pass changes their priority.
+After the SC074-SC075 promotion, the remaining scaffold units are no longer
+clustered around one obvious promotable historical region. The late-tail and
+closing architecture is essentially complete. The remaining work is now a
+**residual-completion phase**: all remaining scaffolds should ultimately become
+finished prose, but mostly as short notes or cautious residual reports rather
+than as major chapters.
+
+### Residual early singleton notes: likely short finished notes
+
+These units are historically legible and deserve explicit finished prose, but
+their chronology evidence remains boundary-limited or otherwise too weak for
+anything larger than short singleton notes.
+
+1. **SC018** — boundary-limited on both sides; likely a short finished singleton
+   note rather than a larger NWGmc report.
+2. **SC022** — likewise boundary-limited on both sides; likely a short finished
+   singleton note.
+3. **SC025** — long-`e`-before-nasal context with boundary-limited chronology;
+   likely a short finished singleton note.
+4. **SC028** — historically legible preconsonantal `x`-loss note, but still
+   boundary-limited in both directions; likely a short finished singleton note.
+
+### Palatalization / umlaut-side residuals: needs focused review
+
+This is the structurally most interesting remaining group. It should not remain
+scaffolded in the final book, but it probably needs one last focused review
+before the final prose form is fixed.
+
+1. **SC057-SC058** — likely still the key structural decision point. SC057 has a
+   real leftward anchor across SC052, while SC058 remains boundary-limited. This
+   may remain a grouped residual unit, or it may be better split if review shows
+   the pair is too uneven for one finished report.
+2. **SC060** — one-sided but historically interpretable through its real leftward
+   SC055 anchor; likely a short singleton note once the residual palatalization /
+   umlaut-side plan is settled.
+3. **SC061** — one-sided with a real SC023 leftward anchor and a runner-bounded
+   later side; likely a short singleton note rather than a broader weak-tail
+   chapter.
+
+### Late-tail residual context notes: likely short final notes, not major reports
+
+These two late-tail scaffolds should ultimately become finished prose, but the
+evidence profile points toward residual/context-note treatment rather than
+substantial reports.
+
+1. **SC069** — a broad/far opener/context note. Its only positive relation is the
+   distant `SC023 < SC069` boundary, and its later side is runner-bounded. It
+   should likely become a short late-tail opener/context note, not a major
+   chapter.
+2. **SC076** — source-backed but chronology-negative in both directions. It
+   should likely become a short late-tail residual/context note rather than a
+   grouped or substantial report.
+
+## Recommended completion batches
+
+The remaining completion work now looks best as three explicit batches.
+
+1. **Batch A: residual early singleton notes** — convert SC018, SC022, SC025,
+   and SC028 into short finished singleton notes. These are the cleanest
+   remaining residuals because their likely final form is already clear even if
+   the chronology is weak.
+2. **Batch B: palatalization / umlaut-side residual review** — do one focused
+   structural review of SC057-SC058, SC060, and SC061, then decide whether the
+   final shape is one grouped residual bridge plus singleton notes, or a cleaner
+   split into separate short units.
+3. **Batch C: late-tail residual context notes** — convert SC069 and SC076 into
+   short finished late-tail residual/context notes. The late-tail architecture is
+   now complete enough that these can be written modestly without reopening the
+   promoted bridge/core/right-edge structure.
 
 ## Recommended immediate next step
 
-With SC070-SC071 and SC074-SC075 now promoted as the flanking late-tail
-bridges, alongside the already promoted SC072-SC073 compact core and SC078
-singleton right-edge report, the remaining late-tail scaffold work is now down
-to SC069 and SC076. Both remain lower-priority scaffold notes rather than
-immediate promotion targets.
+The next useful substantive task is **Batch A**: convert SC018, SC022, SC025,
+and SC028 from scaffold placeholders into short finished singleton notes. That
+would remove the clearest boundary-limited residuals first while leaving the
+more structurally ambiguous palatalization / umlaut-side decisions for their own
+focused review pass.
