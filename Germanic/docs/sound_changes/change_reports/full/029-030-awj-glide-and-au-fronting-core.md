@@ -49,7 +49,7 @@ in book prose.
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC028`
+This report belongs immediately after the promoted `SC028`
 **Preconsonantal x-loss note** and immediately before the promoted
 `SC031-SC034` **West Saxon diphthong chain**. On the left, the promoted
 `SC026-SC027` nasal spirant corridor remains a separate earlier chapter. On the
@@ -99,7 +99,7 @@ the two reports collapse into one chapter.
 
 The result is a short full report that fits the book's architecture better than
 the old grouped entry bridge. It keeps the strongest local seam explicit,
-preserves strict chronology, and leaves both the boundary-limited left note and
+preserves strict chronology, and leaves both the promoted short left note and
 the larger right-hand diphthong chain in their own chapters.
 
 #### Remaining cautions

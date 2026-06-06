@@ -4,16 +4,16 @@
 
 The sound-change half is now fully visible and buildable as an assembled book
 half rather than as a single pilot chapter. The current scaffold has 41
-assembled units: one pilot production report (`016-020`), thirty-one full
+assembled units: one pilot production report (`016-020`), thirty-five full
 production reports (`014-015`, `021`, `023`, `024`, `026-027`, `029-030`,
 `031-034`, `035-037`, `039-040`, `041`, `042`, `043`, `044-045`, `046-048`,
 `049-050`, `051`, `052`, `053-054`, `055-056`, `059`, `063`, `064-065`,
-`066-068`, `070-071`, `072-073`, `074-075`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and 9 remaining scaffold placeholders. The opening of the half is
+`066-068`, `070-071`, `072-073`, `074-075`, `078`, `079-080`, `081-083`, `085-086`, and `087`), and 5 remaining scaffold placeholders. The opening of the half is
 now more explicit as well: the promoted `SC014-SC015` prelude feeds into the
-pilot `SC016-SC020` corridor, then the scaffold `SC018` note, promoted
-`SC021` singleton note, scaffold `SC022`, promoted `SC023`, promoted `SC024`,
-and the remaining scaffold `SC025` note before the promoted `SC026-SC027`
-corridor, separate scaffold `SC028` note, promoted `SC029-SC030`
+pilot `SC016-SC020` corridor, then the promoted `SC018` note, promoted
+`SC021` singleton note, promoted `SC022`, promoted `SC023`, promoted `SC024`,
+and the promoted `SC025` note before the promoted `SC026-SC027`
+corridor, separate promoted `SC028` note, promoted `SC029-SC030`
 glide/fronting core, and promoted `SC031-SC034` diphthong chain. Farther right,
 the old grouped `SC059-SC061` bridge has now been split into promoted SC059
 plus separate scaffold notes for SC060 and SC061 before the promoted SC063
@@ -43,14 +43,14 @@ bridge report, short singleton note, or residual/context note.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 014-015 | Opening vowel prelude | SC014; SC015 | full | no | maybe | defer | Now promoted as a short cautious opening bridge. SC014 remains the brief boundary-limited opening note, while SC015 is the stronger `world`-anchored member and carries most of the prose. |
 | 016-020 | Early vocalic/final corridor | SC016; SC017; SC019; SC020 | pilot | yes | maybe | defer | Already the only pilot production report; keep as the baseline corridor while other units catch up. |
-| 018 | Stressed monosyllable o-raising note | SC018 | scaffold | no | no | low | Now split out as its own singleton scaffold note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary must remain methodological limits rather than chapter architecture. |
+| 018 | Stressed monosyllable o-raising note | SC018 | full | no | no | defer | Now promoted as a short finished singleton note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary remain methodological limits rather than chapter architecture. |
 | 021 | Unstressed o-raising note | SC021 | full | no | no | defer | Now promoted as the first singleton full report from the split early zone. Its real but broad/far `SC021 < SC040` relation via `heaven` remains a rightward cross-reference to promoted SC039-SC040 rather than a reason to merge chapters. |
-| 022 | Mn dissimilation note | SC022 | scaffold | no | no | low | Now split out as its own singleton scaffold note. The rule is historically legible enough to keep visible, but its current card is still boundary-limited on both sides. |
+| 022 | Mn dissimilation note | SC022 | full | no | no | defer | Now promoted as a short finished singleton note. The rule is historically legible enough to keep visible, but its current card is still boundary-limited on both sides. |
 | 023 | N-stem n-loss note | SC023 | full | no | no | defer | Now promoted as the second singleton full report from the split early zone. Its real but broad/far `SC023 < SC047` relation via `do` remains a rightward cross-reference to promoted SC046-SC048 rather than a reason to merge chapters. |
 | 024 | Long e-lowering note | SC024 | full | no | no | defer | Now promoted as the third singleton full report from the split early zone. Its real but broad/far `SC024 < SC056` relation via `sheep` and `year` remains a rightward cross-reference to promoted SC055-SC056 rather than a reason to merge chapters. |
-| 025 | Long e nasal-rounding note | SC025 | scaffold | no | no | low | Now split out as its own singleton scaffold note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary must remain methodological limits rather than chapter architecture. |
+| 025 | Long e nasal-rounding note | SC025 | full | no | no | defer | Now promoted as a short finished singleton note. It remains historically legible, but both sides of the current card are boundary-limited, so bundled `PWGmcChanges` and the SC087 search boundary remain methodological limits rather than chapter architecture. |
 | 026-027 | Nasal spirant corridor | SC026; SC027 | full | no | no | defer | Now promoted as the first paired full production report after the singleton chapters; use it as the corridor model rather than as a remaining candidate. |
-| 028 | Preconsonantal x-loss note | SC028 | scaffold | no | maybe | low | Now split out as its own short scaffold note. It remains historically legible through `x`-loss material, but its chronology card is boundary-limited on both sides and still does not justify finished standalone promotion. |
+| 028 | Preconsonantal x-loss note | SC028 | full | no | no | defer | Now promoted as a short finished singleton note. It remains historically legible through `x`-loss material, but its chronology card is boundary-limited on both sides and still does not justify anything larger than finished standalone prose. |
 | 029-030 | Awj glide and au-fronting core | SC029; SC030 | full | no | no | defer | Now promoted as the compact local `hay` / `strew` core. SC029 remains the one-sided `awj` feeder with a runner-bounded earlier side, while SC030 is the source-backed fronting center and keeps SC032 only as a rightward handoff. |
 | 031-034 | West Saxon diphthong chain | SC031; SC032; SC033; SC034 | full | no | maybe | defer | Now promoted as a cautious four-change corridor report: `SC031`/`SC034` are the local reciprocal core, while `SC032`/`SC033` remain subordinate flank material. Future book architecture could still narrow the chapter later if needed. |
 | 035-037 | Prefix and compound adjustments | SC035; SC036; SC037 | full | no | maybe | defer | Now promoted as a cautious adjacent derivational bridge. SC036 is the clear source-backed center of gravity, while SC035 remains the one-sided prefix flank and SC037 remains the technical/compound flank; any later narrowing around SC036 is optional rather than urgent. |
@@ -92,20 +92,11 @@ closing architecture is essentially complete. The remaining work is now a
 finished prose, but mostly as short notes or cautious residual reports rather
 than as major chapters.
 
-### Residual early singleton notes: likely short finished notes
+### Batch A now complete: residual early singleton notes
 
-These units are historically legible and deserve explicit finished prose, but
-their chronology evidence remains boundary-limited or otherwise too weak for
-anything larger than short singleton notes.
-
-1. **SC018** — boundary-limited on both sides; likely a short finished singleton
-   note rather than a larger NWGmc report.
-2. **SC022** — likewise boundary-limited on both sides; likely a short finished
-   singleton note.
-3. **SC025** — long-`e`-before-nasal context with boundary-limited chronology;
-   likely a short finished singleton note.
-4. **SC028** — historically legible preconsonantal `x`-loss note, but still
-   boundary-limited in both directions; likely a short finished singleton note.
+SC018, SC022, SC025, and SC028 have now been converted into short finished
+singleton notes. Their cards remained boundary-limited or chronology-light, so
+the correct final form was short standalone prose rather than larger reports.
 
 ### Palatalization / umlaut-side residuals: needs focused review
 
@@ -140,25 +131,21 @@ substantial reports.
 
 ## Recommended completion batches
 
-The remaining completion work now looks best as three explicit batches.
+The remaining completion work now looks best as two explicit batches after the
+completion of Batch A.
 
-1. **Batch A: residual early singleton notes** — convert SC018, SC022, SC025,
-   and SC028 into short finished singleton notes. These are the cleanest
-   remaining residuals because their likely final form is already clear even if
-   the chronology is weak.
-2. **Batch B: palatalization / umlaut-side residual review** — do one focused
+1. **Batch B: palatalization / umlaut-side residual review** — do one focused
    structural review of SC057-SC058, SC060, and SC061, then decide whether the
    final shape is one grouped residual bridge plus singleton notes, or a cleaner
    split into separate short units.
-3. **Batch C: late-tail residual context notes** — convert SC069 and SC076 into
+2. **Batch C: late-tail residual context notes** — convert SC069 and SC076 into
    short finished late-tail residual/context notes. The late-tail architecture is
    now complete enough that these can be written modestly without reopening the
    promoted bridge/core/right-edge structure.
 
 ## Recommended immediate next step
 
-The next useful substantive task is **Batch A**: convert SC018, SC022, SC025,
-and SC028 from scaffold placeholders into short finished singleton notes. That
-would remove the clearest boundary-limited residuals first while leaving the
-more structurally ambiguous palatalization / umlaut-side decisions for their own
-focused review pass.
+The next useful substantive task is **Batch B**: the focused palatalization /
+umlaut-side residual review for SC057-SC058, SC060, and SC061. That is now the
+main remaining structural decision before the last late-tail residual/context
+notes in Batch C.

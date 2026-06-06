@@ -38,8 +38,8 @@ adjacent production chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the scaffold `SC018` **Stressed
-monosyllable o-raising note** and immediately before the scaffold `SC022` **Mn
+This note belongs immediately after the promoted `SC018` **Stressed
+monosyllable o-raising note** and immediately before the promoted `SC022` **Mn
 dissimilation note**. Its meaningful positive chronology link points outward on
 the right to the already promoted `SC039-SC040` **Medial unstressed vowel
 core**, but that relation should remain a cross-reference rather than a reason
@@ -71,7 +71,7 @@ than as chapter architecture inside one shared report.
 SC021 is promoted because the modest reading is now the best one. The `heaven`
 evidence is narrow, but it is genuine, and the assembled half is clearer when
 the earliest promoted singleton in this split zone is stated explicitly. The
-result is a cleaner sequence: scaffold SC018, promoted SC021, scaffold SC022,
+result is a cleaner sequence: promoted SC018, promoted SC021, promoted SC022,
 then the remaining early Northwest Germanic singleton notes before the promoted
 SC026-SC027 corridor.
 

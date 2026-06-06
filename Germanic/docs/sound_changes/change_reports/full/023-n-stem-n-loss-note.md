@@ -38,8 +38,8 @@ production chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the scaffold `SC022` **Mn dissimilation
-note** and immediately before the scaffold `SC024` **Long e-lowering note**.
+This note belongs immediately after the promoted `SC022` **Mn dissimilation
+note** and immediately before the promoted `SC024` **Long e-lowering note**.
 Its meaningful positive chronology link points outward on the right to the
 already promoted `SC046-SC048` **Restoration and nasal-tail corridor**, but
 that relation should remain a cross-reference rather than a reason to pull
@@ -72,7 +72,7 @@ architecture inside one shared report.
 SC023 is promoted because the modest reading is now the best one. The `do`
 evidence is narrow, but it is genuine, and the assembled half is clearer when
 the next promoted singleton in this split zone is stated explicitly. The result
-is a cleaner sequence: scaffold SC022, promoted SC023, scaffold SC024, then the
+is a cleaner sequence: promoted SC022, promoted SC023, promoted SC024, then the
 remaining early Northwest Germanic singleton notes before the promoted
 SC026-SC027 corridor.
 

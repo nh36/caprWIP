@@ -40,7 +40,7 @@ adjacent production chapter.
 #### Place in the cascade
 
 This note belongs immediately after the promoted `SC023` **N-stem n-loss note**
-and immediately before the scaffold `SC025` **Long e nasal-rounding note**. Its
+and immediately before the promoted `SC025` **Long e nasal-rounding note**. Its
 meaningful positive chronology link points outward on the right to the already
 promoted `SC055-SC056` **Umlaut core and palatal-diphthongization follower**
 report, but that relation should remain a cross-reference rather than a reason
@@ -74,7 +74,7 @@ SC024 is promoted because the modest reading is now the best one. The `sheep`
 and `year` evidence is narrow, but it is genuine, and the assembled half is
 clearer when the last promoted singleton in this early-zone run is stated
 explicitly. The result is a cleaner sequence: promoted SC023, promoted SC024,
-scaffold SC025, then the promoted SC026-SC027 corridor.
+promoted SC025, then the promoted SC026-SC027 corridor.
 
 #### Remaining cautions
 
