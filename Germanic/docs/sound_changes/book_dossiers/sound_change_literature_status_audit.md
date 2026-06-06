@@ -81,3 +81,19 @@ The `needs_literature` count in generated coverage should now reflect actual
 missing dossier coverage much more honestly. If it does not drop to **2**, the
 remaining discrepancy should be treated as a bug in the reporting pipeline
 rather than as a real absence of dossier files.
+
+## Follow-up: SC057 and SC058 dossier completion
+
+Explicit literature-dossier coverage has now been added for the two remaining
+ordinary-change gaps:
+
+1. `SC057` — `Germanic/docs/sound_changes/literature_dossiers/057-oe-j-cluster-coalescence.dossier.md`
+2. `SC058` — `Germanic/docs/sound_changes/literature_dossiers/058-oe-nasal-dissimilation-residual.dossier.md`
+
+The inventory therefore now has **zero** `not_found` rows for ordinary
+sound-change literature coverage.
+
+This does **not** make SC058 a strong source-backed chapter. Its new dossier is
+deliberately residual and documents thin, scattered source support plus the
+current chronology-negative card state. Any future work here is optional
+refinement rather than required coverage repair.

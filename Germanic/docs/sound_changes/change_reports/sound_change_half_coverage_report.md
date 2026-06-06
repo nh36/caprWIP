@@ -6,7 +6,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 2. Number covered by pilot/full production reports: 70.
 3. Number covered by scaffold placeholders: 0.
 4. Number grouped into multi-change units: 48.
-5. Number needing literature dossiers: 2.
+5. Number needing literature dossiers: 0.
 6. Number needing human judgement: 0.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
