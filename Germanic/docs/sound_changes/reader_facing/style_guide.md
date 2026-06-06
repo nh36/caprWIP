@@ -32,21 +32,45 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 1. Use short, relevant quotations from both older German and newer
    English-language scholarship where available.
 2. Compare how the traditions frame the same phenomenon.
-3. Do not overquote; one or two compact quotations per subsection is usually
+3. Do not bold quotations.
+4. Use inline quotation marks for short quotations and block quotes for longer
+   passages.
+5. Do not overquote; one or two compact quotations per subsection is usually
    enough.
+6. Give a brief translation or gloss after a longer German quotation where it
+   helps readability.
+
+## Citations
+
+1. Book citations in the reader-facing chapters must include page numbers.
+2. Section numbers may follow page numbers when they help the reader.
+3. If a page number cannot be verified, paraphrase or replace the passage rather
+   than presenting an unverified quotation as final prose.
 
 ## Formalization
 
 1. Show the actual FOMA definition in a fenced `foma` block.
 2. Quote the core rule and only the immediately necessary helper definitions.
 3. Explain what the code does in linguistic prose after the code block.
+4. The FOMA code box is the one place where the technical implementation should
+   be shown directly.
 
 ## Chronology
 
-1. Explain chronology with **words and wrong outputs**, not bare `SC###`
-   relations.
+1. Explain chronology with words and wrong outputs, not bare internal
+   identifiers.
 2. Say what breaks when the change is moved too early or too late.
 3. Distinguish real lexical breakpoints from search-boundary limits.
+4. Present chronology evidence through lexical consequences, not through file
+   references or test-harness language.
+
+## Internal material
+
+1. Internal file paths do not belong in the reader-facing chapters.
+2. Internal `SC###` labels should be confined to source notes or maintainer
+   metadata.
+3. Reports, dossiers, chronology cards, and debug files are evidence tools, not
+   the visible subject of the prose.
 
 ## Numbering
 

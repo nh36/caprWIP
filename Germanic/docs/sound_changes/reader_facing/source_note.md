@@ -29,6 +29,12 @@
 - `docs/references/ringe_taylor_linguistic_history_vol2.txt`
 - `docs/references/luick_historische_grammatik.txt`
 - `docs/references/fulk_comparative_grammar_early_germanic.vision.txt`
+- `docs/references/fulk_comparative_grammar_early_germanic.pdf`
+
+## Citation verification note
+
+For the revised pilot chapters, page citations were checked against the local
+text witnesses and, where useful, against the repository PDF witness as well.
 
 ## Scope of the pilot
 

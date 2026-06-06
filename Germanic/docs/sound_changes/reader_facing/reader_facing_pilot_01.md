@@ -10,24 +10,23 @@ _This assembled pilot PDF is for checking the first reader-facing rewrite layer 
 
 # Velar palatalization before front vowels
 
-_Internal rule and chronology card: `OEVelarPalatalization` (`SC052`)._
-
 ## 1. Historical discussion
 
 Older German scholarship places this change inside a broad early palatal phase.
-Luick opens the relevant sequence with the heading **“Frühe Verschiebungen in
-palataler Richtung”** and immediately treats English `k` and `g` before bright
-vowels as part of that field [@Luick1914, §168]. The older tradition is not
-wrong to frame the matter broadly: plain velars, `sk`, and later palatal
+Luick introduces the whole region under the heading “Frühe Verschiebungen in
+palataler Richtung” and immediately treats English `k` and `g` before bright
+vowels as part of that field [@Luick1914, p. 157, §168]. The older tradition is
+not wrong to frame the matter broadly: plain velars, `sk`, and later palatal
 effects do belong to one neighborhood.
 
 Newer English-language scholarship is more explicit about the sequencing inside
-that neighborhood. Ringe and Taylor write that **“After initial velars and *sk
-had been palatalized”** later West-Saxon diphthongization follows, which makes
+that neighborhood. Ringe and Taylor write that “after initial velars and *sk
+had been palatalized” later West-Saxon diphthongization follows, which makes
 plain velar palatalization a real earlier consonantal stage rather than a mere
-side note [@RingeTaylor2014, §6.5.1]. Campbell likewise distinguishes plain
-velars from the broader `sk` complex when he notes that **“[sk] is more prone to
-palatalization and assibilation than [k]”** [@Campbell1959, §440].
+side note [@RingeTaylor2014, p. 215, §6.5.1]. Campbell likewise distinguishes
+plain velars from the broader `sk` complex when he notes that “[sk] is more
+prone to palatalization and assibilation than [k]”
+[@Campbell1959, p. 278, §440].
 
 The result is a familiar historical picture: the older tradition gives the
 large palatal field, while the newer English handbooks make it easier to isolate
@@ -40,11 +39,11 @@ differently.
 
 Luick's prose is large-scale and architectural. It describes an early movement
 toward palatal articulation and then places later vowel changes to the right of
-that region [@Luick1914, §§168--183]. Campbell, Hogg, and especially Ringe and
+that region [@Luick1914, pp. 157--167, §§168--182]. Campbell and Ringe and
 Taylor are more explicit about internal differentiation: plain velars, `sk`,
 and later front-mutation material are related, but they are not identical
-processes [@Campbell1959, §170; @Hogg1992, pp. 106--107, 111--114;
-@RingeTaylor2014, §§6.4.1, 6.5.1, 6.6.1--6.6.4].
+processes [@Campbell1959, p. 278, §440; @RingeTaylor2014, pp. 203--215,
+§§6.4.1, 6.5.1].
 
 That comparison matters for the present chapter. The change is substantial
 enough to deserve its own reader-facing section, but it should still be
@@ -53,8 +52,8 @@ a self-contained sound law detached from its neighbors.
 
 ## 3. Formalization in the present project
 
-The present implementation expresses the change with one helper definition for
-plain `k` and a second block for plain `g`:
+The implementation formalizes the change with one helper definition for plain
+`k` and a second block for plain `g`:
 
 ```foma
 define OEVelarPalatalizationKFront [
@@ -92,16 +91,16 @@ umlautal developments testable.
 
 ## 4. Chronological placement
 
-The order-sensitivity work gives this change a concrete local chronology.
+The chronology can be tested by moving the rule in either direction.
 
-Placed too early, before Sievers-law syncope, it breaks the derivation of
-_stretch_. With PGmc *\*strákkijaną* in the wrong order, the model produces
-*strecċan* instead of the expected Old English *streċċan* [Germanic/docs/sound_changes/order_tests/chronology_cards/SC052-oe-velar-palatalization.md].
+Placed too early, before the syncope that prepares the consonant cluster, it
+breaks the derivation of _stretch_. With PGmc *\*strákkijaną* in the wrong
+order, the model produces *strecċan* instead of the expected Old English
+*streċċan*.
 
 Placed too late, after i-umlaut, it over-palatalizes forms such as _cow_ and
-_lung_. The chronology card records that PGmc *\*kūi* then yields *ċȳ* instead
-of expected *cȳ*, and PGmc *\*lúnganjō* yields *lunġen* instead of expected
-*lungen* [Germanic/docs/sound_changes/order_tests/chronology_cards/SC052-oe-velar-palatalization.md].
+_lung_. PGmc *\*kūi* then yields *ċȳ* instead of expected *cȳ*, and PGmc
+*\*lúnganjō* yields *lunġen* instead of expected *lungen*.
 
 That is the reader-facing reason for the rule's present position: it must come
 after the syncope that prepares forms like _stretch_, but before the umlautal
@@ -114,7 +113,8 @@ Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes that later chapters presuppose.
 That matters not only for dictionary-like forms such as *cild* or *dæg*, but
 also for the broader relation between consonantal palatalization and later
-vowel-fronting processes [@Campbell1959, §170; @RingeTaylor2014, §6.4.1].
+vowel-fronting processes [@Luick1914, p. 157, §168; @Campbell1959, p. 278,
+§440; @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1].
 
 In other words, the rule is consequential because it creates the consonantal
 environment inherited by the umlaut chapter. Without it, later reconstructed
@@ -136,24 +136,29 @@ coequal historical unit.
 
 # The Old English i-umlaut and its West Saxon right edge
 
-_Internal rules and chronology cards: `OEIUmlaut` (`SC055`) and
-`OEWsPalatalDiphthongization` (`SC056`)._
-
 ## 1. Historical discussion
 
 For the older German tradition, the center of this chapter is unmistakable.
-Luick writes: **“Der wichtigste Fall von palataler Beeinflussung … war die
-Veränderung der urenglischen Vokale durch i oder j der Folgesilbe”** [@Luick1914,
-§182]. That is a strong way of saying that i-umlaut is one of the major early
-English vowel changes, not a marginal local effect.
+Luick puts the point strongly:
+
+> Der wichtigste Fall von palataler Beeinflussung … war die Veränderung der
+> urenglischen Vokale durch i oder j der Folgesilbe.
+>
+> In context, this means that i-umlaut is treated as the central case of
+> palatal influence in early English.
+
+[@Luick1914, pp. 166--167, §182]
+
+That is a strong way of saying that i-umlaut is one of the major early English
+vowel changes, not a marginal local effect.
 
 Recent English-language scholarship says the same in a different register. Fulk
-describes the process as **“front mutation, more commonly referred to as front
-umlaut or i/j-umlaut”** and treats it as a large assimilatory change affecting
-much of the vowel system [@Fulk2018, §4.7]. But Fulk also gives the crucial
-complication for the second half of this chapter: **“diphthongization by initial
-palatal consonants (which precedes front umlaut but not breaking)”**
-[@Fulk2018, §4.13].
+describes the process as “front mutation, more commonly referred to as front
+umlaut or i/j-umlaut” and treats it as a large assimilatory change affecting
+much of the vowel system [@Fulk2018, pp. 61--63, §4.7]. But Fulk also gives the
+crucial complication for the second half of this chapter: “diphthongization by
+initial palatal consonants (which precedes front umlaut but not breaking)”
+[@Fulk2018, p. 74, §4.13].
 
 The historical discussion therefore has two layers. The chapter center is the
 Old English i-umlaut itself; the West-Saxon palatal diphthongization material is
@@ -166,23 +171,27 @@ The traditions agree strongly on the importance of i-umlaut and less strongly on
 the place of the West-Saxon diphthongal material.
 
 Campbell and Hogg both treat i-mutation as one of the central Old English vowel
-developments, while also recognizing a narrower palatal-vowel zone with forms
-such as _giefan_, _giest_, and _sceap_ [@Campbell1959, §§190--197, 248--251;
-@Hogg1992, pp. 104--105, 111--114]. Luick likewise gives i-Umlaut primary
-weight, but treats palatal diphthongization as part of a broader palatal field
-rather than as a second chapter of equal scale [@Luick1914, §§181--183].
+developments. Campbell begins the main section by writing that “the process
+known as i-umlaut or i-mutation operates on practically all the sounds which it
+could theoretically affect in OE” [@Campbell1959, pp. 69--72, §190]. Hogg is
+equally clear about scale: “we come now to a change which is almost as
+uncontroversial as it is important” [@Hogg1992, p. 112]. Luick likewise gives
+i-Umlaut primary weight, but treats palatal diphthongization as part of a
+broader palatal field rather than as a second chapter of equal scale
+[@Luick1914, pp. 166--167, §182].
 
 Ringe and Taylor and Fulk sharpen the contrast. Both recognize the West-Saxon
 diphthongization material, but both place it differently in the broader textbook
 chronology from the local order found by the present implementation
-[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. That is why
-the present chapter is best read as **a major umlaut chapter with a narrower
-West-Saxon right-edge follower**, not as a pair of fully equal historical laws.
+[@RingeTaylor2014, pp. 215, 222, §§6.5.1, 6.6.1; @Fulk2018, pp. 61--63, 74,
+§§4.7, 4.13]. That is why the present chapter is best read as a major umlaut
+chapter with a narrower West-Saxon right-edge follower, not as a pair of fully
+equal historical laws.
 
 ## 3. Formalization in the present project
 
-The present implementation keeps the broad umlaut rule and the narrower
-West-Saxon diphthongization rule separate:
+The implementation keeps the broad umlaut rule and the narrower West-Saxon
+diphthongization rule separate:
 
 ```foma
 define OEIUmlautFronting [
@@ -242,21 +251,19 @@ diphthongal outputs.
 The present chronology is fixed by concrete lexical failures in both directions.
 
 If i-umlaut is moved too early, before velar palatalization, the outputs of
-_cow_ and _lung_ become over-palatalized. The chronology card records PGmc
-*\*kūi* > *ċȳ* instead of expected *cȳ*, and PGmc *\*lúnganjō* > *lunġen*
-instead of expected *lungen* [Germanic/docs/sound_changes/order_tests/chronology_cards/SC055-oe-i-umlaut.md].
+_cow_ and _lung_ become over-palatalized. PGmc *\*kūi* yields *ċȳ* instead of
+expected *cȳ*, and PGmc *\*lúnganjō* yields *lunġen* instead of expected
+*lungen*.
 
 If i-umlaut is moved too late, or if West-Saxon diphthongization is moved too
-early, the local right edge breaks around _gift_ and _sheath_. The card records
-PGmc *\*géftiz* > *ġieft* instead of expected *ġift*, and PGmc
-*\*skáiθiz* > *sċǣþ* instead of expected *sċēaþ*
-[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; Germanic/docs/sound_changes/order_tests/chronology_cards/SC055-oe-i-umlaut.md; Germanic/docs/sound_changes/order_tests/chronology_cards/SC056-oe-ws-palatal-diphthongization.md].
+early, the local right edge breaks around _gift_ and _sheath_. PGmc
+*\*géftiz* then yields *ġieft* instead of expected *ġift*, and PGmc
+*\*skáiθiz* yields *sċǣþ* instead of expected *sċēaþ*.
 
-The crucial methodological limit is on the later side of the West-Saxon
-diphthongization rule. The search found no narrower later lexical break before
-the present search boundary, so there is no warrant for turning that negative
-result into a historical claim that the rule must stand before the final stages
-of the cascade.
+The crucial limit is on the later side of the West-Saxon diphthongization rule.
+No tested lexical item fixes a narrower later boundary. There is therefore no
+warrant for turning that negative result into a historical claim that the rule
+must stand before the final stages of the sequence.
 
 ## 5. Consequences for reconstructed forms
 
@@ -264,12 +271,12 @@ The chapter changes the shape of reconstructed forms on a large scale. In the
 umlaut rule proper, back vowels front and high vowels raise under following
 `i/j`; this is why forms such as *cȳ* and *lungen* belong to the same chapter as
 more familiar textbook examples like _giest_ and _giefan_ [@Campbell1959,
-§§190--197; @Fulk2018, §4.7].
+pp. 69--72, §§190--191; @Fulk2018, pp. 61--63, §4.7].
 
 The West-Saxon follower has a narrower consequence. It produces the diphthongal
 surface forms expected in words such as _giefan_ and _sceap_, but it does so
 only after the broader umlautal setting is already in place
-[@RingeTaylor2014, §6.5.1; @Hogg1992, pp. 104--105]. That is why the present
+[@RingeTaylor2014, p. 215, §6.5.1; @Hogg1992, p. 108]. That is why the
 implementation treats it as a right-edge follower rather than as a second main
 chapter of equal scale.
 
@@ -282,31 +289,30 @@ is narrower, more dialect-specific, and less stably placed in the broader
 handbook chronology. For that reason the reader-facing chapter should keep the
 asymmetry visible: one major sound law with one narrower right-edge follower.
 
-It should also avoid turning the negative later search for SC056 into a positive
-historical boundary. The present evidence is strong enough to fix the local
-relation to the left, but not to license a sweeping claim about the far right of
-the whole Old English sequence.
+It should also avoid turning the negative later result for the West-Saxon
+follower into a positive historical boundary. The present evidence is strong
+enough to fix the local relation to the left, but not to license a sweeping
+claim about the far right of the whole Old English sequence.
 
 \newpage
 
 # Nasal dissimilation
 
-_Internal rule and chronology card: `OENasalDissimilation` (`SC058`)._
-
 ## 1. Historical discussion
 
 This is not a chapter-sized textbook sound law. The strongest newer
 English-language formulation recovered in the local sources is Fulk's cautious
-statement: **“In the cluster mn, the first consonant tends to lose its nasality
-by dissimilation, though the results are hardly regular”** [@Fulk2018, §6.11].
+statement: “In the cluster mn, the first consonant tends to lose its nasality
+by dissimilation, though the results are hardly regular”
+[@Fulk2018, p. 121, §6.11].
 That is already a warning about scale: the phenomenon is real, but not neat or
 uniform.
 
 The older German material is thinner and more lexical. Luick preserves outcomes
-such as **“enitre ‘einjährig (aus *anwintri)”** rather than building a separate
-chapter around them [@Luick1914]. Campbell and Hogg likewise reach forms such as
-_heofon_ in other discussions without isolating a major Old English
-“nasal-dissimilation” law [@Campbell1959; @Hogg1992].
+such as “enitre ‘einjährig (aus *anwintri)” rather than building a separate
+chapter around them [@Luick1914, p. 166]. Campbell and Hogg likewise reach
+forms such as _heofon_ in other discussions without isolating a major Old
+English “nasal-dissimilation” law [@Campbell1959, p. 155; @Hogg1992, p. 112].
 
 The historical discussion must therefore begin by lowering expectations. The
 change belongs in the book because the sources preserve scattered evidence for
@@ -318,11 +324,11 @@ The contrast between traditions is instructive.
 
 Newer English-language scholarship, especially Fulk, is willing to formulate a
 general tendency in `mn` clusters, while immediately warning that the results
-are irregular [@Fulk2018, §6.11]. Ringe and Taylor are more lexical still:
-their clearest direct statement is simply that *enetre* reflects **“loss of the
-second *n by dissimilation”** [@RingeTaylor2014]. The older German tradition,
+are irregular [@Fulk2018, p. 121, §6.11]. Ringe and Taylor are more lexical
+still: their clearest direct statement is simply that *enetre* reflects “loss of
+the second *n by dissimilation” [@RingeTaylor2014, p. 282]. The older German tradition,
 represented here by Luick, preserves useful lexical traces but does not make
-them into a chapter heading [@Luick1914].
+them into a chapter heading [@Luick1914, p. 166].
 
 That comparison is the right historical scale for the present section. The rule
 is not fictitious, but it is better treated as a residual pattern than as a
@@ -330,7 +336,7 @@ large named law comparable to i-umlaut or breaking.
 
 ## 3. Formalization in the present project
 
-The present implementation isolates the change very narrowly:
+The implementation isolates the change very narrowly:
 
 ```foma
 define OENasalDissimilation [
@@ -349,10 +355,11 @@ shape.
 
 The current chronology evidence is negative in both directions.
 
-When the search moves the rule earlier, it finds no lexical breakpoint before
-the left-hand search limit at bundled `PWGmcChanges`. When it moves the rule
-later, it finds no lexical breakpoint before the current right-hand search limit
-at `SC087` [Germanic/docs/sound_changes/order_tests/chronology_cards/SC058-oe-nasal-dissimilation.md].
+When the rule is moved earlier, the present tests find no lexical breakpoint
+before the inherited West-Germanic material that lies to the left of the Old
+English sequence. When it is moved later, they likewise fail to identify a
+narrower lexical boundary before the far right edge of the tested Old English
+sequence.
 
 That means the chapter cannot be written like the stronger pilot cases. There is
 no _stretch_, _cow_, or _gift_-style failure here to prove a narrow local slot.
@@ -363,9 +370,10 @@ narrower earlier or later boundary** within the tested window.
 
 Even so, the rule has real interpretative consequences. It provides a place in
 the implementation for outcomes of the _heofon_, _fæstenn_, and _enetre_ type
-discussed in the literature [@Fulk2018, §6.11; @RingeTaylor2014; @Luick1914].
-Without an explicit rule, those outcomes would be left to diffuse analogy or to
-unexplained exception lists.
+discussed in the literature [@Fulk2018, p. 121, §6.11; @RingeTaylor2014, p. 282;
+@Campbell1959, p. 155; @Luick1914, p. 166; @Hogg1992, p. 112]. Without an
+explicit rule, those outcomes would be left to diffuse analogy or to unexplained
+exception lists.
 
 The consequence is therefore modest but real. The rule marks a narrow, partly
 lexicalized dissimilation tendency inside the larger Old English system. It does
@@ -377,11 +385,11 @@ of development visible in the model.
 This section should stay short.
 
 The literature does not justify treating nasal dissimilation as a chapter center
-of the same rank as the major textbook sound laws. Nor does the present
-chronology search justify a narrow slot fixed by lexical breakpoints on both
-sides. The right reader-facing stance is therefore deliberately modest: the rule
-is explicit in the present implementation, historically supported in scattered
-examples, and chronologically underdetermined within the tested range.
+of the same rank as the major textbook sound laws. Nor do the present tests
+justify a narrow slot fixed by lexical breakpoints on both sides. The right
+reader-facing stance is therefore deliberately modest: the rule is explicit in
+the present implementation, historically supported in scattered examples, and
+chronologically underdetermined within the tested range.
 
 \newpage
 
@@ -416,6 +424,12 @@ examples, and chronologically underdetermined within the tested range.
 - `docs/references/ringe_taylor_linguistic_history_vol2.txt`
 - `docs/references/luick_historische_grammatik.txt`
 - `docs/references/fulk_comparative_grammar_early_germanic.vision.txt`
+- `docs/references/fulk_comparative_grammar_early_germanic.pdf`
+
+## Citation verification note
+
+For the revised pilot chapters, page citations were checked against the local
+text witnesses and, where useful, against the repository PDF witness as well.
 
 ## Scope of the pilot
 

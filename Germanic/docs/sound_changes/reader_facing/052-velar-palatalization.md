@@ -1,23 +1,22 @@
 # Velar palatalization before front vowels
 
-_Internal rule and chronology card: `OEVelarPalatalization` (`SC052`)._
-
 ## 1. Historical discussion
 
 Older German scholarship places this change inside a broad early palatal phase.
-Luick opens the relevant sequence with the heading **“Frühe Verschiebungen in
-palataler Richtung”** and immediately treats English `k` and `g` before bright
-vowels as part of that field [@Luick1914, §168]. The older tradition is not
-wrong to frame the matter broadly: plain velars, `sk`, and later palatal
+Luick introduces the whole region under the heading “Frühe Verschiebungen in
+palataler Richtung” and immediately treats English `k` and `g` before bright
+vowels as part of that field [@Luick1914, p. 157, §168]. The older tradition is
+not wrong to frame the matter broadly: plain velars, `sk`, and later palatal
 effects do belong to one neighborhood.
 
 Newer English-language scholarship is more explicit about the sequencing inside
-that neighborhood. Ringe and Taylor write that **“After initial velars and *sk
-had been palatalized”** later West-Saxon diphthongization follows, which makes
+that neighborhood. Ringe and Taylor write that “after initial velars and *sk
+had been palatalized” later West-Saxon diphthongization follows, which makes
 plain velar palatalization a real earlier consonantal stage rather than a mere
-side note [@RingeTaylor2014, §6.5.1]. Campbell likewise distinguishes plain
-velars from the broader `sk` complex when he notes that **“[sk] is more prone to
-palatalization and assibilation than [k]”** [@Campbell1959, §440].
+side note [@RingeTaylor2014, p. 215, §6.5.1]. Campbell likewise distinguishes
+plain velars from the broader `sk` complex when he notes that “[sk] is more
+prone to palatalization and assibilation than [k]”
+[@Campbell1959, p. 278, §440].
 
 The result is a familiar historical picture: the older tradition gives the
 large palatal field, while the newer English handbooks make it easier to isolate
@@ -30,11 +29,11 @@ differently.
 
 Luick's prose is large-scale and architectural. It describes an early movement
 toward palatal articulation and then places later vowel changes to the right of
-that region [@Luick1914, §§168--183]. Campbell, Hogg, and especially Ringe and
+that region [@Luick1914, pp. 157--167, §§168--182]. Campbell and Ringe and
 Taylor are more explicit about internal differentiation: plain velars, `sk`,
 and later front-mutation material are related, but they are not identical
-processes [@Campbell1959, §170; @Hogg1992, pp. 106--107, 111--114;
-@RingeTaylor2014, §§6.4.1, 6.5.1, 6.6.1--6.6.4].
+processes [@Campbell1959, p. 278, §440; @RingeTaylor2014, pp. 203--215,
+§§6.4.1, 6.5.1].
 
 That comparison matters for the present chapter. The change is substantial
 enough to deserve its own reader-facing section, but it should still be
@@ -43,8 +42,8 @@ a self-contained sound law detached from its neighbors.
 
 ## 3. Formalization in the present project
 
-The present implementation expresses the change with one helper definition for
-plain `k` and a second block for plain `g`:
+The implementation formalizes the change with one helper definition for plain
+`k` and a second block for plain `g`:
 
 ```foma
 define OEVelarPalatalizationKFront [
@@ -82,16 +81,16 @@ umlautal developments testable.
 
 ## 4. Chronological placement
 
-The order-sensitivity work gives this change a concrete local chronology.
+The chronology can be tested by moving the rule in either direction.
 
-Placed too early, before Sievers-law syncope, it breaks the derivation of
-_stretch_. With PGmc *\*strákkijaną* in the wrong order, the model produces
-*strecċan* instead of the expected Old English *streċċan* [Germanic/docs/sound_changes/order_tests/chronology_cards/SC052-oe-velar-palatalization.md].
+Placed too early, before the syncope that prepares the consonant cluster, it
+breaks the derivation of _stretch_. With PGmc *\*strákkijaną* in the wrong
+order, the model produces *strecċan* instead of the expected Old English
+*streċċan*.
 
 Placed too late, after i-umlaut, it over-palatalizes forms such as _cow_ and
-_lung_. The chronology card records that PGmc *\*kūi* then yields *ċȳ* instead
-of expected *cȳ*, and PGmc *\*lúnganjō* yields *lunġen* instead of expected
-*lungen* [Germanic/docs/sound_changes/order_tests/chronology_cards/SC052-oe-velar-palatalization.md].
+_lung_. PGmc *\*kūi* then yields *ċȳ* instead of expected *cȳ*, and PGmc
+*\*lúnganjō* yields *lunġen* instead of expected *lungen*.
 
 That is the reader-facing reason for the rule's present position: it must come
 after the syncope that prepares forms like _stretch_, but before the umlautal
@@ -104,7 +103,8 @@ Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes that later chapters presuppose.
 That matters not only for dictionary-like forms such as *cild* or *dæg*, but
 also for the broader relation between consonantal palatalization and later
-vowel-fronting processes [@Campbell1959, §170; @RingeTaylor2014, §6.4.1].
+vowel-fronting processes [@Luick1914, p. 157, §168; @Campbell1959, p. 278,
+§440; @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1].
 
 In other words, the rule is consequential because it creates the consonantal
 environment inherited by the umlaut chapter. Without it, later reconstructed
