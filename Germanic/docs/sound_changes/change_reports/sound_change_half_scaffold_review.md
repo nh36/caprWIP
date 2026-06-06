@@ -88,12 +88,11 @@ bridge report, short singleton note, or residual/context note.
 
 ## Residual-completion classification
 
-After the SC074-SC075 promotion, the remaining scaffold units are no longer
-clustered around one obvious promotable historical region. The late-tail and
-closing architecture is essentially complete. The remaining work is now a
-**residual-completion phase**: all remaining scaffolds should ultimately become
-finished prose, but mostly as short notes or cautious residual reports rather
-than as major chapters.
+The late-tail and closing architecture is now complete, and the former
+**residual-completion phase** has ended. The important editorial distinction
+that remains is not scaffold versus full prose, but the final scale of the
+finished units: substantial report, cautious bridge, short singleton note, or
+residual/context note.
 
 ### Batch A now complete: residual early singleton notes
 

@@ -11,7 +11,7 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
-10. Recommended next work: human review of the full scaffold structure, then choose the next cluster to promote from scaffold to production prose.
+10. Recommended next work: final quality control of the assembled sound-change half.
 
 ## Unit register
 

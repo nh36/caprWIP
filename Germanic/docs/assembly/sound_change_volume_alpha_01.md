@@ -1,6 +1,6 @@
 # Sound-change half, alpha 01
 
-_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and `Germanic/docs/sound_changes/change_reports/sound_change_half_scaffold.tsv`. Pilot/full rows preserve finished production prose where it exists; scaffold rows keep the rest of the 70-change half visible and buildable without pretending that the prose is complete._
+_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and `Germanic/docs/sound_changes/change_reports/sound_change_half_scaffold.tsv`. All 70 ordinary sound changes now have pilot/full production prose in the assembled half._
 
 ## Coverage summary
 

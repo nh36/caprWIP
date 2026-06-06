@@ -457,13 +457,23 @@ def build_volume_text(
     scaffold_rows: list[dict[str, str]],
     stats: dict[str, object],
 ) -> str:
+    if stats["scaffold_changes"] == 0:
+        intro = (
+            "_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and "
+            "`Germanic/docs/sound_changes/change_reports/sound_change_half_scaffold.tsv`. "
+            "All 70 ordinary sound changes now have pilot/full production prose in the assembled half._"
+        )
+    else:
+        intro = (
+            "_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and "
+            "`Germanic/docs/sound_changes/change_reports/sound_change_half_scaffold.tsv`. "
+            "Pilot/full rows preserve finished production prose where it exists; scaffold rows keep the rest of the "
+            "70-change half visible and buildable without pretending that the prose is complete._"
+        )
     parts: list[str] = [
         "# Sound-change half, alpha 01",
         "",
-        "_Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv` and "
-        "`Germanic/docs/sound_changes/change_reports/sound_change_half_scaffold.tsv`. "
-        "Pilot/full rows preserve finished production prose where it exists; scaffold rows keep the rest of the "
-        "70-change half visible and buildable without pretending that the prose is complete._",
+        intro,
         "",
         "## Coverage summary",
         "",
@@ -503,6 +513,15 @@ def build_volume_text(
 
 
 def build_coverage_report_text(scaffold_rows: list[dict[str, str]], stats: dict[str, object]) -> str:
+    if stats["scaffold_changes"] == 0:
+        recommended_next_work = (
+            "10. Recommended next work: final quality control of the assembled sound-change half."
+        )
+    else:
+        recommended_next_work = (
+            "10. Recommended next work: human review of the full scaffold structure, then choose the next cluster to "
+            "promote from scaffold to production prose."
+        )
     parts = [
         "# Sound-change half coverage report",
         "",
@@ -517,8 +536,7 @@ def build_coverage_report_text(scaffold_rows: list[dict[str, str]], stats: dict[
         f"7. Number negative/boundary-only: {stats['negative_boundary_only']}.",
         f"8. Number broad/far/contextual: {stats['broad_far_contextual']}.",
         "9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.",
-        "10. Recommended next work: human review of the full scaffold structure, then choose the next cluster to "
-        "promote from scaffold to production prose.",
+        recommended_next_work,
         "",
         "## Unit register",
         "",
