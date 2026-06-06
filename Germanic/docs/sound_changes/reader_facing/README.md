@@ -33,6 +33,21 @@ This writes:
 - `reader_facing_pilot_01.md`
 - `reader_facing_pilot_01.pdf`
 
+## Style audit workflow
+
+After drafting or revising any reader-facing chapter, run:
+
+```bash
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
+```
+
+Inspect the warnings manually. If the pilot PDF is being rebuilt, run the
+checker before:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_pilot_docker.sh
+```
+
 ## Numbering note
 
 The current sound-change assembly wrappers do **not** request numbered section

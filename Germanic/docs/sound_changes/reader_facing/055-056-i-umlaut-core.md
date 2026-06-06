@@ -32,8 +32,8 @@ palatal consonants (which precedes front umlaut but not breaking)”
 The sequence of discussion is fairly clear. Luick, Campbell, and Hogg all give
 i-umlaut primary importance. Ringe and Taylor and Fulk then help separate that
 major change from the narrower West-Saxon diphthongization that stands beside
-it. The literature therefore establishes a large, system-wide umlautal change
-and a narrower adjoining process affecting words after initial palatals. That
+it. The literature therefore establishes a large, system-wide umlautal change and a
+narrower adjoining process affecting words after initial palatals. That
 distinction matters because the two processes act in different environments and
 produce different lexical consequences.
 
@@ -100,14 +100,14 @@ diphthongal outputs.
 The present chronology is fixed by concrete lexical failures in both directions.
 
 If i-umlaut is moved too early, before velar palatalization, the outputs of
-_cow_ and _lung_ become over-palatalized. PGmc *\*kūi* yields *ċȳ* instead of
-expected *cȳ*, and PGmc *\*lúnganjō* yields *lunġen* instead of expected
+_cow_ and _lung_ become over-palatalized. PGmc *\*kūi* yields *ċȳ*; the
+expected form is *cȳ*. PGmc *\*lúnganjō* yields *lunġen*; the expected form is
 *lungen*.
 
 If i-umlaut is moved too late, or if West-Saxon diphthongization is moved too
 early, the local right edge breaks around _gift_ and _sheath_. PGmc
-*\*géftiz* then yields *ġieft* instead of expected *ġift*, and PGmc
-*\*skáiθiz* yields *sċǣþ* instead of expected *sċēaþ*.
+*\*géftiz* then yields *ġieft*; the expected form is *ġift*. PGmc
+*\*skáiθiz* yields *sċǣþ*; the expected form is *sċēaþ*.
 
 The crucial limit is on the later side of the West-Saxon diphthongization rule.
 No tested lexical item fixes a narrower later boundary. There is therefore no
@@ -125,14 +125,15 @@ pp. 69--72, §§190--191; @Fulk2018, pp. 61--63, §4.7].
 The West-Saxon follower has a narrower consequence. It produces the diphthongal
 surface forms expected in words such as _giefan_ and _sceap_, but it does so
 only after the broader umlautal setting is already in place
-[@RingeTaylor2014, p. 215, §6.5.1; @Hogg1992, p. 108]. That is why the implementation treats it as a narrower follow-on process rather
-than as a second main change of equal scale.
+[@RingeTaylor2014, p. 215, §6.5.1; @Hogg1992, p. 108]. That is why the implementation treats it as a narrower follow-on process and not
+as a second main change of equal scale.
 
 ## 6. Remaining cautions
 
 The West-Saxon diphthongal material is genuine, but it is narrower, more
 dialect-specific, and less stably placed in the broader chronology than the
 umlautal change itself. The evidence is therefore strongest when it is used to
-distinguish the two processes rather than to collapse them into one undifferentiated
-chapter. The available tests fix the left edge well, but they do not license a
-sweeping claim about the far right of the whole Old English sequence.
+distinguish the two processes and keep them from collapsing into one
+undifferentiated chapter. The available tests fix the left edge well, but they
+do not license a sweeping claim about the far right of the whole Old English
+sequence.

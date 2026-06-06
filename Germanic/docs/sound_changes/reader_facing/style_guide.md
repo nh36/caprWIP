@@ -84,6 +84,30 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 3. Keep implementation details in the formalization section, not in the
    historical discussion.
 
+## AI-style audit rules
+
+1. Avoid repeated em dashes in ordinary prose; prefer commas, parentheses,
+   semicolons, or a new sentence.
+2. Avoid colon-led loose lists inside prose paragraphs.
+3. Avoid formulaic rhetorical negation such as `not merely X, but Y`,
+   `not X but Y`, and overused `rather than`.
+4. Remove meta-chapter language from the chapter body.
+5. Do not describe whether a sound change “deserves” a chapter.
+6. Do not call the prose “reader-facing” inside the chapter body.
+7. Discuss scale linguistically, not editorially.
+8. Keep implementation details in the formalization section.
+9. Keep internal identifiers and file references out of the chapter body.
+
+## Audit command
+
+Run this after drafting or revising a chapter:
+
+```bash
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
+```
+
+Use `--strict` only when the chapter is expected to be free of flagged lines.
+
 ## Numbering
 
 The later reader-facing assembly should enable Pandoc section numbering with

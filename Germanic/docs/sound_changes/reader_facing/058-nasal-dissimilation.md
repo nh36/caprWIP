@@ -3,9 +3,9 @@
 ## 1. Historical discussion
 
 Luick preserves individual outcomes such as “enitre ‘einjährig (aus *anwintri)”
-without building a separate chapter around them [@Luick1914, p. 166]. Campbell
+without isolating a separate law around them [@Luick1914, p. 166]. Campbell
 likewise reaches forms such as _heofon_ in a discussion of suffixal variation
-rather than in any special section on nasal dissimilation [@Campbell1959,
+and does not set them off in any special section on nasal dissimilation [@Campbell1959,
 p. 155]. Hogg mentions _heofon_ in the course of his account of back mutation,
 again without isolating a separate law [@Hogg1992, p. 112].
 
@@ -22,9 +22,8 @@ explicit but still cautious generalization. Luick preserves the kind of form the
 rule is meant to capture. Campbell and Hogg show that related outcomes enter the
 handbooks, but only incidentally, as part of larger accounts of other changes.
 Fulk makes the recurrent `mn` tendency explicit, while Ringe and Taylor provide
-an exact lexical case in _enetre_. What emerges is a limited but recurring
-dissimilatory pattern rather than a sound change of the same scope as the major
-Old English vowel laws.
+an exact lexical case in _enetre_. What emerges is a limited but recurring dissimilatory pattern whose scope is far
+smaller than that of the major Old English vowel laws.
 
 ## 3. Formalization in the present project
 
@@ -67,16 +66,14 @@ explicit rule, those outcomes would be left to diffuse analogy or to unexplained
 exception lists.
 
 The consequence is therefore modest but real. The rule marks a narrow, partly
-lexicalized dissimilation tendency inside the larger Old English system. It does
-not reorganize the whole chronology, but it keeps a historically attested type
-of development visible in the model.
+lexicalized dissimilation tendency inside the larger Old English system. It
+leaves the larger chronology largely unchanged and keeps a historically
+attested type of development visible in the model.
 
 ## 6. Remaining cautions
 
-This section should stay short.
-
 The evidence points to a narrow dissimilatory tendency, especially in
-`mn`-type clusters and a small group of lexical outcomes, rather than to a
-regular change operating across a broad phonological field. The rule is secure
+`mn`-type clusters and a small group of lexical outcomes. There is no support
+for a regular change operating across a broad phonological field. The rule is secure
 enough to model, but the available tests leave its position within the Old
 English sequence underdetermined.

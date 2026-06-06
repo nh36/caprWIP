@@ -64,10 +64,9 @@ define OEVelarPalatalization [
 ```
 
 In prose, the rule does exactly what the title suggests: it palatalizes plain
-`k` and `g` in front-vocalic and `j`-adjacent environments. The point of
-writing it as a separate rule is not to deny the larger palatal field, but to
-make the relative order of plain-velar palatalization, `sk`-palatalization, and
-umlautal developments testable.
+`k` and `g` in front-vocalic and `j`-adjacent environments. Writing it as a
+separate rule clarifies the relative order of plain-velar palatalization,
+`sk`-palatalization, and umlautal developments.
 
 ## 4. Chronological placement
 
@@ -75,14 +74,14 @@ The chronology can be tested by moving the rule in either direction.
 
 Placed too early, before the syncope that prepares the consonant cluster, it
 breaks the derivation of _stretch_. With PGmc *\*strákkijaną* in the wrong
-order, the model produces *strecċan* instead of the expected Old English
+order, the model produces *strecċan*; the expected Old English form is
 *streċċan*.
 
 Placed too late, after i-umlaut, it over-palatalizes forms such as _cow_ and
-_lung_. PGmc *\*kūi* then yields *ċȳ* instead of expected *cȳ*, and PGmc
-*\*lúnganjō* yields *lunġen* instead of expected *lungen*.
+_lung_. PGmc *\*kūi* then yields *ċȳ*; the expected form is *cȳ*. PGmc
+*\*lúnganjō* yields *lunġen*; the expected form is *lungen*.
 
-That is the reason for the rule's present position: it must come
+That is the reason for the rule's present position. It must come
 after the syncope that prepares forms like _stretch_, but before the umlautal
 stage that would otherwise create the wrong palatalized outputs in _cow_ and
 _lung_.
@@ -91,22 +90,21 @@ _lung_.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes that later chapters presuppose.
-That matters not only for dictionary-like forms such as *cild* or *dæg*, but
-also for the broader relation between consonantal palatalization and later
+That matters for dictionary-like forms such as *cild* or *dæg* and for the
+broader relation between consonantal palatalization and later
 vowel-fronting processes [@Luick1914, p. 157, §168; @Campbell1959, p. 278,
 §440; @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1].
 
 In other words, the rule is consequential because it creates the consonantal
 environment inherited by the umlaut chapter. Without it, later reconstructed
-forms are not merely shifted in date; they come out with the wrong consonant
-quality.
+forms come out with the wrong consonant quality.
 
 ## 6. Remaining cautions
 
 This change belongs to a wider palatalizing environment, but the evidence does
-not require that every neighboring palatal process be merged with it. `sk`
-belongs to a related but not identical development, and the later umlautal
+not require every neighboring palatal process to be merged with it. `sk`
+belongs to a related but distinct development, and the later umlautal
 material poses a different historical problem. The left-hand relation to
-Sievers-law syncope is likewise specific rather than expansive: the _stretch_
+Sievers-law syncope is likewise specific and limited. The _stretch_
 evidence shows a real dependency without turning the feeder process into a
 coequal sound law of the same scope.

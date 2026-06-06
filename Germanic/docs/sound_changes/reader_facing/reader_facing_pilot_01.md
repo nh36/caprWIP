@@ -74,10 +74,9 @@ define OEVelarPalatalization [
 ```
 
 In prose, the rule does exactly what the title suggests: it palatalizes plain
-`k` and `g` in front-vocalic and `j`-adjacent environments. The point of
-writing it as a separate rule is not to deny the larger palatal field, but to
-make the relative order of plain-velar palatalization, `sk`-palatalization, and
-umlautal developments testable.
+`k` and `g` in front-vocalic and `j`-adjacent environments. Writing it as a
+separate rule clarifies the relative order of plain-velar palatalization,
+`sk`-palatalization, and umlautal developments.
 
 ## 4. Chronological placement
 
@@ -85,14 +84,14 @@ The chronology can be tested by moving the rule in either direction.
 
 Placed too early, before the syncope that prepares the consonant cluster, it
 breaks the derivation of _stretch_. With PGmc *\*strákkijaną* in the wrong
-order, the model produces *strecċan* instead of the expected Old English
+order, the model produces *strecċan*; the expected Old English form is
 *streċċan*.
 
 Placed too late, after i-umlaut, it over-palatalizes forms such as _cow_ and
-_lung_. PGmc *\*kūi* then yields *ċȳ* instead of expected *cȳ*, and PGmc
-*\*lúnganjō* yields *lunġen* instead of expected *lungen*.
+_lung_. PGmc *\*kūi* then yields *ċȳ*; the expected form is *cȳ*. PGmc
+*\*lúnganjō* yields *lunġen*; the expected form is *lungen*.
 
-That is the reason for the rule's present position: it must come
+That is the reason for the rule's present position. It must come
 after the syncope that prepares forms like _stretch_, but before the umlautal
 stage that would otherwise create the wrong palatalized outputs in _cow_ and
 _lung_.
@@ -101,23 +100,22 @@ _lung_.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes that later chapters presuppose.
-That matters not only for dictionary-like forms such as *cild* or *dæg*, but
-also for the broader relation between consonantal palatalization and later
+That matters for dictionary-like forms such as *cild* or *dæg* and for the
+broader relation between consonantal palatalization and later
 vowel-fronting processes [@Luick1914, p. 157, §168; @Campbell1959, p. 278,
 §440; @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1].
 
 In other words, the rule is consequential because it creates the consonantal
 environment inherited by the umlaut chapter. Without it, later reconstructed
-forms are not merely shifted in date; they come out with the wrong consonant
-quality.
+forms come out with the wrong consonant quality.
 
 ## 6. Remaining cautions
 
 This change belongs to a wider palatalizing environment, but the evidence does
-not require that every neighboring palatal process be merged with it. `sk`
-belongs to a related but not identical development, and the later umlautal
+not require every neighboring palatal process to be merged with it. `sk`
+belongs to a related but distinct development, and the later umlautal
 material poses a different historical problem. The left-hand relation to
-Sievers-law syncope is likewise specific rather than expansive: the _stretch_
+Sievers-law syncope is likewise specific and limited. The _stretch_
 evidence shows a real dependency without turning the feeder process into a
 coequal sound law of the same scope.
 
@@ -157,8 +155,8 @@ palatal consonants (which precedes front umlaut but not breaking)”
 The sequence of discussion is fairly clear. Luick, Campbell, and Hogg all give
 i-umlaut primary importance. Ringe and Taylor and Fulk then help separate that
 major change from the narrower West-Saxon diphthongization that stands beside
-it. The literature therefore establishes a large, system-wide umlautal change
-and a narrower adjoining process affecting words after initial palatals. That
+it. The literature therefore establishes a large, system-wide umlautal change and a
+narrower adjoining process affecting words after initial palatals. That
 distinction matters because the two processes act in different environments and
 produce different lexical consequences.
 
@@ -225,14 +223,14 @@ diphthongal outputs.
 The present chronology is fixed by concrete lexical failures in both directions.
 
 If i-umlaut is moved too early, before velar palatalization, the outputs of
-_cow_ and _lung_ become over-palatalized. PGmc *\*kūi* yields *ċȳ* instead of
-expected *cȳ*, and PGmc *\*lúnganjō* yields *lunġen* instead of expected
+_cow_ and _lung_ become over-palatalized. PGmc *\*kūi* yields *ċȳ*; the
+expected form is *cȳ*. PGmc *\*lúnganjō* yields *lunġen*; the expected form is
 *lungen*.
 
 If i-umlaut is moved too late, or if West-Saxon diphthongization is moved too
 early, the local right edge breaks around _gift_ and _sheath_. PGmc
-*\*géftiz* then yields *ġieft* instead of expected *ġift*, and PGmc
-*\*skáiθiz* yields *sċǣþ* instead of expected *sċēaþ*.
+*\*géftiz* then yields *ġieft*; the expected form is *ġift*. PGmc
+*\*skáiθiz* yields *sċǣþ*; the expected form is *sċēaþ*.
 
 The crucial limit is on the later side of the West-Saxon diphthongization rule.
 No tested lexical item fixes a narrower later boundary. There is therefore no
@@ -250,17 +248,18 @@ pp. 69--72, §§190--191; @Fulk2018, pp. 61--63, §4.7].
 The West-Saxon follower has a narrower consequence. It produces the diphthongal
 surface forms expected in words such as _giefan_ and _sceap_, but it does so
 only after the broader umlautal setting is already in place
-[@RingeTaylor2014, p. 215, §6.5.1; @Hogg1992, p. 108]. That is why the implementation treats it as a narrower follow-on process rather
-than as a second main change of equal scale.
+[@RingeTaylor2014, p. 215, §6.5.1; @Hogg1992, p. 108]. That is why the implementation treats it as a narrower follow-on process and not
+as a second main change of equal scale.
 
 ## 6. Remaining cautions
 
 The West-Saxon diphthongal material is genuine, but it is narrower, more
 dialect-specific, and less stably placed in the broader chronology than the
 umlautal change itself. The evidence is therefore strongest when it is used to
-distinguish the two processes rather than to collapse them into one undifferentiated
-chapter. The available tests fix the left edge well, but they do not license a
-sweeping claim about the far right of the whole Old English sequence.
+distinguish the two processes and keep them from collapsing into one
+undifferentiated chapter. The available tests fix the left edge well, but they
+do not license a sweeping claim about the far right of the whole Old English
+sequence.
 
 \newpage
 
@@ -269,9 +268,9 @@ sweeping claim about the far right of the whole Old English sequence.
 ## 1. Historical discussion
 
 Luick preserves individual outcomes such as “enitre ‘einjährig (aus *anwintri)”
-without building a separate chapter around them [@Luick1914, p. 166]. Campbell
+without isolating a separate law around them [@Luick1914, p. 166]. Campbell
 likewise reaches forms such as _heofon_ in a discussion of suffixal variation
-rather than in any special section on nasal dissimilation [@Campbell1959,
+and does not set them off in any special section on nasal dissimilation [@Campbell1959,
 p. 155]. Hogg mentions _heofon_ in the course of his account of back mutation,
 again without isolating a separate law [@Hogg1992, p. 112].
 
@@ -288,9 +287,8 @@ explicit but still cautious generalization. Luick preserves the kind of form the
 rule is meant to capture. Campbell and Hogg show that related outcomes enter the
 handbooks, but only incidentally, as part of larger accounts of other changes.
 Fulk makes the recurrent `mn` tendency explicit, while Ringe and Taylor provide
-an exact lexical case in _enetre_. What emerges is a limited but recurring
-dissimilatory pattern rather than a sound change of the same scope as the major
-Old English vowel laws.
+an exact lexical case in _enetre_. What emerges is a limited but recurring dissimilatory pattern whose scope is far
+smaller than that of the major Old English vowel laws.
 
 ## 3. Formalization in the present project
 
@@ -333,17 +331,15 @@ explicit rule, those outcomes would be left to diffuse analogy or to unexplained
 exception lists.
 
 The consequence is therefore modest but real. The rule marks a narrow, partly
-lexicalized dissimilation tendency inside the larger Old English system. It does
-not reorganize the whole chronology, but it keeps a historically attested type
-of development visible in the model.
+lexicalized dissimilation tendency inside the larger Old English system. It
+leaves the larger chronology largely unchanged and keeps a historically
+attested type of development visible in the model.
 
 ## 6. Remaining cautions
 
-This section should stay short.
-
 The evidence points to a narrow dissimilatory tendency, especially in
-`mn`-type clusters and a small group of lexical outcomes, rather than to a
-regular change operating across a broad phonological field. The rule is secure
+`mn`-type clusters and a small group of lexical outcomes. There is no support
+for a regular change operating across a broad phonological field. The rule is secure
 enough to model, but the available tests leave its position within the Old
 English sequence underdetermined.
 
