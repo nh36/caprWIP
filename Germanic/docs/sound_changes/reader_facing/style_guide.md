@@ -29,9 +29,8 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 
 ## Quotations and comparison
 
-1. Use short, relevant quotations from both older German and newer
-   English-language scholarship where available.
-2. Compare how the traditions frame the same phenomenon.
+1. Use short, relevant quotations from the most useful scholarship available.
+2. Prefer a chronological discussion of individual authors and works.
 3. Do not bold quotations.
 4. Use inline quotation marks for short quotations and block quotes for longer
    passages.
@@ -39,6 +38,7 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
    enough.
 6. Give a brief translation or gloss after a longer German quotation where it
    helps readability.
+7. Compare sources only after explaining what each source actually says.
 
 ## Citations
 
@@ -71,6 +71,18 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
    metadata.
 3. Reports, dossiers, chronology cards, and debug files are evidence tools, not
    the visible subject of the prose.
+4. Do not describe whether a sound change “deserves” a chapter or section.
+5. Do not call the prose “reader-facing” inside the chapter body.
+6. Discuss scope and scale linguistically, not editorially.
+
+## Framing
+
+1. Avoid a mechanical contrast between “German” and “English” traditions.
+2. If there is a real intellectual contrast, describe the contrast in terms of
+   arguments, chronology, or phonological interpretation rather than language
+   alone.
+3. Keep implementation details in the formalization section, not in the
+   historical discussion.
 
 ## Numbering
 

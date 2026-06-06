@@ -2,43 +2,33 @@
 
 ## 1. Historical discussion
 
-Older German scholarship places this change inside a broad early palatal phase.
-Luick introduces the whole region under the heading “Frühe Verschiebungen in
-palataler Richtung” and immediately treats English `k` and `g` before bright
-vowels as part of that field [@Luick1914, p. 157, §168]. The older tradition is
-not wrong to frame the matter broadly: plain velars, `sk`, and later palatal
-effects do belong to one neighborhood.
+Luick places the change inside a broad early palatalizing movement. Under the
+heading “Frühe Verschiebungen in palataler Richtung,” he treats English `k` and
+`g` before bright vowels together with the larger field of palatal effects
+[@Luick1914, p. 157, §168].
 
-Newer English-language scholarship is more explicit about the sequencing inside
-that neighborhood. Ringe and Taylor write that “after initial velars and *sk
-had been palatalized” later West-Saxon diphthongization follows, which makes
-plain velar palatalization a real earlier consonantal stage rather than a mere
-side note [@RingeTaylor2014, p. 215, §6.5.1]. Campbell likewise distinguishes
-plain velars from the broader `sk` complex when he notes that “[sk] is more
-prone to palatalization and assibilation than [k]”
+Campbell narrows the picture by distinguishing plain velars from the especially
+palatal-prone `sk` cluster. His remark that “[sk] is more prone to palatalization
+and assibilation than [k]” is brief, but it makes clear that different members
+of the larger palatal field need not behave identically
 [@Campbell1959, p. 278, §440].
 
-The result is a familiar historical picture: the older tradition gives the
-large palatal field, while the newer English handbooks make it easier to isolate
-plain velar palatalization as a distinct step within that field.
+Ringe and Taylor make the chronological relation still clearer. When they write
+that “after initial velars and *sk had been palatalized” West-Saxon
+diphthongization follows, plain velar palatalization becomes an earlier
+consonantal stage presupposed by later vowel developments
+[@RingeTaylor2014, p. 215, §6.5.1].
 
-## 2. Comparison of the traditions
+## 2. Development of the discussion
 
-The German and English traditions agree on the phenomenon but weight it
-differently.
-
-Luick's prose is large-scale and architectural. It describes an early movement
-toward palatal articulation and then places later vowel changes to the right of
-that region [@Luick1914, pp. 157--167, §§168--182]. Campbell and Ringe and
-Taylor are more explicit about internal differentiation: plain velars, `sk`,
-and later front-mutation material are related, but they are not identical
-processes [@Campbell1959, p. 278, §440; @RingeTaylor2014, pp. 203--215,
-§§6.4.1, 6.5.1].
-
-That comparison matters for the present chapter. The change is substantial
-enough to deserve its own reader-facing section, but it should still be
-explained as part of the larger palatalization-to-umlaut corridor rather than as
-a self-contained sound law detached from its neighbors.
+Taken together, these accounts show a gradual tightening of focus. Luick treats
+palatalization as a broad early movement. Campbell distinguishes more sharply
+between plain velars and the `sk` complex. Ringe and Taylor then place the plain
+velar change in an explicit sequence that leads forward to later West-Saxon
+diphthongization. The literature therefore supports two claims at once: the
+change belongs to a larger palatalizing environment, but it also needs to be
+kept distinct from neighboring processes if the sequence of developments is to
+be described accurately.
 
 ## 3. Formalization in the present project
 
@@ -92,7 +82,7 @@ Placed too late, after i-umlaut, it over-palatalizes forms such as _cow_ and
 _lung_. PGmc *\*kūi* then yields *ċȳ* instead of expected *cȳ*, and PGmc
 *\*lúnganjō* yields *lunġen* instead of expected *lungen*.
 
-That is the reader-facing reason for the rule's present position: it must come
+That is the reason for the rule's present position: it must come
 after the syncope that prepares forms like _stretch_, but before the umlautal
 stage that would otherwise create the wrong palatalized outputs in _cow_ and
 _lung_.
@@ -113,11 +103,10 @@ quality.
 
 ## 6. Remaining cautions
 
-This section should remain narrow.
-
-It is not a chapter on every Old English palatal development. `sk` belongs to a
-related but not identical part of the tradition, and the later umlaut chapter is
-still a different historical problem. Nor should the left-hand relation to
-Sievers-law syncope be inflated into a larger joint chapter: the _stretch_
-evidence shows a real dependency, but it does not turn the feeder process into a
-coequal historical unit.
+This change belongs to a wider palatalizing environment, but the evidence does
+not require that every neighboring palatal process be merged with it. `sk`
+belongs to a related but not identical development, and the later umlautal
+material poses a different historical problem. The left-hand relation to
+Sievers-law syncope is likewise specific rather than expansive: the _stretch_
+evidence shows a real dependency without turning the feeder process into a
+coequal sound law of the same scope.

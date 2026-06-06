@@ -2,39 +2,29 @@
 
 ## 1. Historical discussion
 
-This is not a chapter-sized textbook sound law. The strongest newer
-English-language formulation recovered in the local sources is Fulk's cautious
-statement: “In the cluster mn, the first consonant tends to lose its nasality
-by dissimilation, though the results are hardly regular”
-[@Fulk2018, p. 121, §6.11].
-That is already a warning about scale: the phenomenon is real, but not neat or
-uniform.
+Luick preserves individual outcomes such as “enitre ‘einjährig (aus *anwintri)”
+without building a separate chapter around them [@Luick1914, p. 166]. Campbell
+likewise reaches forms such as _heofon_ in a discussion of suffixal variation
+rather than in any special section on nasal dissimilation [@Campbell1959,
+p. 155]. Hogg mentions _heofon_ in the course of his account of back mutation,
+again without isolating a separate law [@Hogg1992, p. 112].
 
-The older German material is thinner and more lexical. Luick preserves outcomes
-such as “enitre ‘einjährig (aus *anwintri)” rather than building a separate
-chapter around them [@Luick1914, p. 166]. Campbell and Hogg likewise reach
-forms such as _heofon_ in other discussions without isolating a major Old
-English “nasal-dissimilation” law [@Campbell1959, p. 155; @Hogg1992, p. 112].
+Fulk supplies the clearest general formulation: “In the cluster mn, the first
+consonant tends to lose its nasality by dissimilation, though the results are
+hardly regular” [@Fulk2018, p. 121, §6.11]. Ringe and Taylor stay close to the
+lexical evidence and note that _enetre_ reflects “loss of the second *n by
+dissimilation” [@RingeTaylor2014, p. 282].
 
-The historical discussion must therefore begin by lowering expectations. The
-change belongs in the book because the sources preserve scattered evidence for
-the pattern, not because the handbooks present it as a major canonical law.
+## 2. Development of the discussion
 
-## 2. Comparison of the traditions
-
-The contrast between traditions is instructive.
-
-Newer English-language scholarship, especially Fulk, is willing to formulate a
-general tendency in `mn` clusters, while immediately warning that the results
-are irregular [@Fulk2018, p. 121, §6.11]. Ringe and Taylor are more lexical
-still: their clearest direct statement is simply that *enetre* reflects “loss of
-the second *n by dissimilation” [@RingeTaylor2014, p. 282]. The older German tradition,
-represented here by Luick, preserves useful lexical traces but does not make
-them into a chapter heading [@Luick1914, p. 166].
-
-That comparison is the right historical scale for the present section. The rule
-is not fictitious, but it is better treated as a residual pattern than as a
-large named law comparable to i-umlaut or breaking.
+The discussion therefore develops from scattered lexical observations to a more
+explicit but still cautious generalization. Luick preserves the kind of form the
+rule is meant to capture. Campbell and Hogg show that related outcomes enter the
+handbooks, but only incidentally, as part of larger accounts of other changes.
+Fulk makes the recurrent `mn` tendency explicit, while Ringe and Taylor provide
+an exact lexical case in _enetre_. What emerges is a limited but recurring
+dissimilatory pattern rather than a sound change of the same scope as the major
+Old English vowel laws.
 
 ## 3. Formalization in the present project
 
@@ -63,10 +53,9 @@ English sequence. When it is moved later, they likewise fail to identify a
 narrower lexical boundary before the far right edge of the tested Old English
 sequence.
 
-That means the chapter cannot be written like the stronger pilot cases. There is
-no _stretch_, _cow_, or _gift_-style failure here to prove a narrow local slot.
-The honest statement is simpler: the search found **no lexical evidence for a
-narrower earlier or later boundary** within the tested window.
+No comparable pair of lexical failures fixes a narrower slot here. The present
+tests do not identify sharper evidence for an earlier or later position within
+the Old English sequence.
 
 ## 5. Consequences for reconstructed forms
 
@@ -86,9 +75,8 @@ of development visible in the model.
 
 This section should stay short.
 
-The literature does not justify treating nasal dissimilation as a chapter center
-of the same rank as the major textbook sound laws. Nor do the present tests
-justify a narrow slot fixed by lexical breakpoints on both sides. The right
-reader-facing stance is therefore deliberately modest: the rule is explicit in
-the present implementation, historically supported in scattered examples, and
-chronologically underdetermined within the tested range.
+The evidence points to a narrow dissimilatory tendency, especially in
+`mn`-type clusters and a small group of lexical outcomes, rather than to a
+regular change operating across a broad phonological field. The rule is secure
+enough to model, but the available tests leave its position within the Old
+English sequence underdetermined.
