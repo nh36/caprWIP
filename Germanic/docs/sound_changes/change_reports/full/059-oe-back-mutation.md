@@ -46,17 +46,17 @@ regions belong to the same chapter.
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC057-SC058`
-**Post-umlaut residual and palatalization-side note** and immediately before the
-new scaffold `SC060` **WS palatal umlaut note**. Its real chronology edges point
+This report belongs immediately after the promoted SC058
+**OE Nasal Dissimilation residual note** and immediately before the
+promoted SC060 **WS palatal umlaut note**. Its real chronology edges point
 outward rather than architecturally inward: leftward to the already promoted
 `SC046-SC048` **Restoration and nasal-tail corridor** through SC048, and
 rightward to the split late-tail scaffold region through the standalone
 `SC078` **Weak-tail reduction right-edge note**.
 
 That placement is the point of the promotion. SC059 replaces the old grouped
-bridge as the real center of the seam while leaving SC060 and SC061 visible but
-scaffolded in strict chronological order.
+bridge as the real center of the seam while leaving SC060 and SC061 visible as
+separate short notes in strict chronological order.
 
 #### Order evidence
 
@@ -86,7 +86,7 @@ SC059 is promoted because the modest reading is now the best one. The new
 dossiers make clear that back mutation is the only member of the old bridge with
 both strong source support and real two-sided chronology. That makes it worth
 stating explicitly in production prose, while SC060 and SC061 remain as
-one-sided scaffold notes.
+one-sided companion notes rather than coequal chapter centers.
 
 This is therefore an architectural singleton. It marks the true center of the
 late vowel seam without turning neighboring cross-references into chapter
@@ -102,4 +102,4 @@ late-tail scaffold region just because `SC059 < SC078` is real. And the report
 should stay focused on back mutation itself rather than broadening into a general
 article on the whole later weak-tail region. The point of the promotion is
 precise: isolate the source-backed center, keep the outward links as
-cross-references, and leave SC060 and SC061 scaffolded.
+cross-references, and leave SC060 and SC061 as separate promoted notes.

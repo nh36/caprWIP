@@ -5,11 +5,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 ## Coverage summary
 
 - Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 64.
-- Covered by scaffold placeholders: 6.
-- Grouped into multi-change units: 50 changes across 21 units.
+- Covered by pilot/full production reports: 68.
+- Covered by scaffold placeholders: 2.
+- Grouped into multi-change units: 48 changes across 20 units.
 - Still needing literature dossiers: 64.
-- Still needing human judgement or promotion decisions: 6.
+- Still needing human judgement or promotion decisions: 2.
 - Negative/boundary-only chronology cards: 10.
 - Broad/far/contextual chronology cards: 31.
 
@@ -41,10 +41,11 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |
 | 053-054 | SC053; SC054 | full | negative edge plus narrow bridge evidence | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
-| 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | Batch B review recommends splitting this unit in the next conversion commit: convert SC057 to a short singleton note with its real SC052 leftward anchor, and convert SC058 to a shorter boundary-limited residual/context note |
+| 057 | SC057 | full | one-sided singleton with real `SC052 < SC057` via `bow`, `follow`, `hedge`, `seek`, and `singe`, but no later real break before the current runner boundary | no dedicated dossier yet | promote as a short singleton note; keep SC052 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 058 | SC058 | full | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | no dedicated dossier yet | promote as a short residual/context note; keep bundled `PWGmcChanges` and the SC087 search boundary as methodological limits rather than historical chronology, and do not inflate the rule into a larger grouped report |
 | 059 | SC059 | full | source-backed singleton with real two-sided chronology `SC048 < SC059 < SC078`; the later `SC059 < SC078` edge is broad/far and remains a rightward cross-reference only | literature and book dossiers drafted | promote as a short singleton full note; keep SC046-SC048 and the split late-tail scaffold region, especially SC078, as leftward/rightward cross-references only and do not recreate the old grouped bridge |
-| 060 | SC060 | scaffold | one-sided singleton with real `SC055 < SC060` via `might` and `night`, but no later real break before the current runner boundary | literature and book dossiers drafted | Batch B review recommends converting this next as a short finished singleton note; keep promoted SC055-SC056 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
-| 061 | SC061 | scaffold | one-sided singleton with real `SC023 < SC061` via `do`, but no later real break before the current runner boundary | literature and book dossiers drafted | Batch B review recommends converting this next as a short finished singleton note; keep promoted SC023 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 060 | SC060 | full | one-sided singleton with real `SC055 < SC060` via `might` and `night`, but no later real break before the current runner boundary | literature and book dossiers drafted | promote as a short finished singleton note; keep promoted SC055-SC056 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 061 | SC061 | full | one-sided singleton with real `SC023 < SC061` via `do`, but no later real break before the current runner boundary | literature and book dossiers drafted | promote as a short finished singleton note; keep promoted SC023 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | full | narrow positive SC064 with card-negative SC065 | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 066-068 | SC066; SC067; SC068 | full | strong local corridor with one weaker bridge member | literature and book dossiers drafted | keep as narrow full production report |
@@ -2212,8 +2213,8 @@ This promotion extracts one clean palatalization chapter from the broader
 region. Its value is architectural as much as historical. The neighboring
 reports are now clearer because they no longer have to share one placeholder:
 SC049-SC050 forms the promoted left-hand bridge report, SC052 stands as the
-promoted standalone hinge into the umlaut region, and SC057 remains a later
-palatalization-side question rather than part of this chapter.
+promoted standalone hinge into the umlaut region, and the promoted SC057 note
+remains a later palatalization-side note rather than part of this chapter.
 
 That makes SC051 a good example of how the production layer should mature. The
 book does not need to solve the whole palatalization/fronting region at once.
@@ -2233,9 +2234,9 @@ the wider palatalization complex rather than as a fully isolated law
 The chapter must also avoid duplicating the already promoted SC052 hinge report
 or the promoted SC055-SC056 umlaut-core report. SC056 belongs here only as
 SC051's right-hand local boundary, not as coequal chapter content. SC052 should
-be cross-referenced as the neighboring hinge chapter, and SC057 remains the
-later unresolved palatalization-side material. This report settles only the
-narrow case for SC051.
+be cross-referenced as the neighboring hinge chapter, and the promoted SC057
+note remains separate later palatalization-side material. This report settles
+only the narrow case for SC051.
 
 ## Velar palatalization hinge
 
@@ -2313,8 +2314,8 @@ immediately preceding promoted report, and SC052 is the immediately following
 standalone hinge report.
 
 To the right, SC052 now precedes the promoted SC053-SC054 pre-umlaut bridge
-report and the promoted SC055-SC056 umlaut-core report. Farther right, SC057
-remains a later unresolved palatalization-side question. That placement is the
+report and the promoted SC055-SC056 umlaut-core report. Farther right, the
+promoted SC057 note remains a later palatalization-side development. That placement is the
 main architectural gain of this promotion: the book can now discuss the plain-velar
 hinge explicitly while keeping the assembled order strictly chronological.
 
@@ -2361,8 +2362,8 @@ umlaut-core report.
 
 The chapter must also keep the left edge in proportion. stretch is enough to
 show that SC050 matters as feeder/context, but not enough to justify a
-non-contiguous `SC050-SC052` production unit. SC057 should remain unresolved for
-later review rather than being absorbed here by implication.
+non-contiguous `SC050-SC052` production unit. The promoted SC057 note should
+remain separate rather than being absorbed here by implication.
 
 ## Pre-umlaut bridge and W-loss
 
@@ -2589,51 +2590,144 @@ sources such as Ringe and Taylor and Fulk that place palatal-triggered
 diphthongization differently in the wider sequence
 [@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC053-SC054
 should remain a separate promoted bridge report rather than being absorbed into
-the umlaut core, and SC057 should remain reserved for later reconsideration
-with the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
+the umlaut core, and the promoted SC057 note should remain separate from both
+this chapter and the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
 narrow: it is a report on the umlaut core and its West Saxon right edge, not a
 general handbook article on every aspect of Old English i-mutation.
 
-## Post-umlaut residual and palatalization-side note
+## OE J Cluster Coalescence note
 
 ### Sound-change report
 
 #### Historical formulation
 
-This scaffold unit keeps SC057 OE J Cluster Coalescence and SC058 **OE
-Nasal Dissimilation** visible after the promoted umlaut core. The pairing is
-deliberately provisional: SC057 has one-sided evidence that points back toward
-the palatalization/fronting region, while SC058 is still boundary-limited
-residual material.
+SC057 *OEJClusterCoalescence* is promoted here as a **short finished singleton
+note**. It belongs to the broader palatalization and fronting neighborhood, but
+it is not the center of that region and should not be merged back into the
+promoted `SC049-SC052` or `SC055-SC056` reports. The honest final form is a
+short one-sided note: historically legible, explicitly placed, but narrower
+than the major palatalization and umlaut chapters around it.
 
-#### Current evidence
+#### Source tradition
 
-Chronology cards and live implementations exist for both rules. SC057 has a
-positive earlier boundary across SC052 OE Velar Palatalization, but its
-later side is runner-bounded. SC058 has no positive first-break boundary in
-either tested direction.
+The source tradition supports SC057 only as part of the broader
+palatalization/fronting zone rather than as a major handbook chapter of its
+own. Campbell, Ringe and Taylor, and Fulk all treat the same neighborhood of
+palatalized and fronted outcomes that underlies forms such as bīeġan and
+sēċan [@Campbell1959, §120, §170; @RingeTaylor2014, §§6.4.1, 6.5.1, 6.6.1--6.6.4;
+@Fulk2018, §§4.7, 4.13].
+
+That is enough support for a short finished note. It is not enough to make
+SC057 a coequal companion to the promoted SC051, SC052, or SC055-SC056 reports,
+which is exactly why the prose should remain brief and structurally restrained.
+
+#### CAPR implementation
+
+CAPR isolates this material as one explicit step: SC057
+*OEJClusterCoalescence*. That narrower formulation is useful because it keeps a
+real later palatalization-side rule visible in strict order without pretending
+that the whole broader palatalization/fronting region forms one chapter.
 
 #### Place in the cascade
 
-The unit occupies current orders 57-58, immediately after the promoted
-SC055-SC056 report and before the later back-mutation and weak-tail bridge.
-That keeps the post-umlaut residual zone visible without forcing it into the
-same promoted chapter as the umlaut core.
+This note belongs immediately after the promoted `SC055-SC056`
+**Umlaut core and palatal-diphthongization follower** report and immediately
+before the promoted SC058 OE Nasal Dissimilation residual note. Its
+meaningful positive chronology link points outward on the left to the promoted
+SC052 **Velar palatalization hinge**, but that relation should remain a
+cross-reference rather than a reason to merge non-adjacent chapters.
+
+Farther right, the next stronger seam belongs to promoted SC059 back mutation.
+That broader context matters for orientation, but SC057 itself stays a short
+palatalization-side note rather than a bridge chapter.
 
 #### Order evidence
 
-SC057 must currently follow SC052, with witnesses such as bow, follow,
-hedge, seek, and *singe showing that it belongs to the broader
-palatalization/fronting neighborhood. Its later side remains a no-break result
-bounded by the current search space. SC058, by contrast, is negative and
-boundary-limited on both sides, so it does not yet define a positive historical
-adjacency of its own.
+SC057 has one real positive chronology edge. It must follow SC052. If OE J
+Cluster Coalescence is moved before the promoted velar-palatalization hinge,
+PGmc báugijaną yields bēaġan rather than expected OE bīeġan, and PGmc
+sōkijaną yields sōċan rather than expected sēċan. Related forms such as
+follow, hedge, and singe fail in the same broader palatalization/fronting
+way.
 
-#### Status
+The later side is different. The current runner finds no real later break for
+SC057 before the SC087 boundary. That result is runner-bounded and must not
+be rewritten into a claim that SC057 must precede SC087.
 
-This is a scaffold placeholder, not finished book prose. SC057 should be
-reconsidered when SC049-SC052 receives a dedicated structural review, and SC058
-remains residual scaffold material unless stronger evidence emerges.
+#### Interpretation
+
+SC057 is promoted because the final book should not leave ordinary sound changes
+in scaffold form where a short honest note will do. The right final treatment is
+therefore explicit but modest: keep the real SC052 anchor visible, keep the
+later side non-positive, and let the note stand on its own instead of forcing it
+back into a larger palatalization chapter.
+
+#### Remaining cautions
+
+The note should stay narrow. SC052 remains a leftward cross-reference only, not
+a reason to recreate a non-contiguous `SC049-SC052` chapter. The promoted
+SC055-SC056 umlaut core likewise remains separate. And the runner-bounded later
+side must not be turned into a positive historical boundary.
+
+## OE Nasal Dissimilation residual note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC058 *OENasalDissimilation* is promoted here as a **short finished residual
+note**. It is included because every ordinary sound change needs finished prose
+in the final book, not because the current evidence makes it a strong
+chronological hinge. The right final form is therefore explicitly residual and
+contextual.
+
+#### Source tradition
+
+The source tradition is thinner here than for the neighboring palatalization and
+umlaut rules. That is itself part of the reason the prose should stay short.
+SC058 belongs in the book because it is an ordinary modeled sound change, but
+the current historical profile does not justify a larger chapter claim.
+
+#### CAPR implementation
+
+CAPR isolates this residual material as one explicit step: SC058
+*OENasalDissimilation*. That explicitness is enough to justify a short finished
+note even though the rule does not currently recover any positive first-break
+chronology of its own.
+
+#### Place in the cascade
+
+This note belongs immediately after the promoted SC057 **OE J Cluster
+Coalescence note** and immediately before the promoted SC059 **OE back
+mutation** report. It remains a short residual/context note in that position
+rather than a coequal partner to either neighboring chapter.
+
+#### Order evidence
+
+Current testing does not identify a positive historical first-break
+boundary for SC058 in either direction. On the earlier side, the search reaches
+bundled *PWGmcChanges*; that is a methodological runner limit, not a detected
+historical boundary. On the later side, the search reaches the current SC087
+boundary with no real break; that is a no-break-before-boundary result bounded
+by the present search space, not a claim that SC058 must precede SC087.
+
+This means the note records a boundary-limited computational result rather than
+a positive local chronology claim.
+
+#### Interpretation
+
+SC058 is promoted because residual completion requires finished prose even for
+the weakest ordinary rules. The honest final treatment is therefore very short:
+keep the rule explicit, state clearly that the current chronology is
+boundary-limited in both directions, and avoid inflating that limited evidence
+into a larger chapter.
+
+#### Remaining cautions
+
+The methodological boundaries matter here. Bundled *PWGmcChanges* and the
+current SC087 boundary are search limits, not historical anchors for SC058.
+This note should therefore stay brief and should not be read as a coequal
+partner to the promoted SC057 note or the promoted SC059 back-mutation report.
 
 ## OE back mutation
 
@@ -2683,17 +2777,17 @@ regions belong to the same chapter.
 
 #### Place in the cascade
 
-This report belongs immediately after the scaffold `SC057-SC058`
-**Post-umlaut residual and palatalization-side note** and immediately before the
-new scaffold `SC060` **WS palatal umlaut note**. Its real chronology edges point
+This report belongs immediately after the promoted SC058
+OE Nasal Dissimilation residual note and immediately before the
+promoted SC060 **WS palatal umlaut note**. Its real chronology edges point
 outward rather than architecturally inward: leftward to the already promoted
 `SC046-SC048` **Restoration and nasal-tail corridor** through SC048, and
 rightward to the split late-tail scaffold region through the standalone
 `SC078` **Weak-tail reduction right-edge note**.
 
 That placement is the point of the promotion. SC059 replaces the old grouped
-bridge as the real center of the seam while leaving SC060 and SC061 visible but
-scaffolded in strict chronological order.
+bridge as the real center of the seam while leaving SC060 and SC061 visible as
+separate short notes in strict chronological order.
 
 #### Order evidence
 
@@ -2723,7 +2817,7 @@ SC059 is promoted because the modest reading is now the best one. The new
 dossiers make clear that back mutation is the only member of the old bridge with
 both strong source support and real two-sided chronology. That makes it worth
 stating explicitly in production prose, while SC060 and SC061 remain as
-one-sided scaffold notes.
+one-sided companion notes rather than coequal chapter centers.
 
 This is therefore an architectural singleton. It marks the true center of the
 late vowel seam without turning neighboring cross-references into chapter
@@ -2739,7 +2833,7 @@ late-tail scaffold region just because `SC059 < SC078` is real. And the report
 should stay focused on back mutation itself rather than broadening into a general
 article on the whole later weak-tail region. The point of the promotion is
 precise: isolate the source-backed center, keep the outward links as
-cross-references, and leave SC060 and SC061 scaffolded.
+cross-references, and leave SC060 and SC061 as separate promoted notes.
 
 ## WS palatal umlaut note
 
@@ -2747,51 +2841,65 @@ cross-references, and leave SC060 and SC061 scaffolded.
 
 #### Historical formulation
 
-SC060 *OEWsPalatalUmlaut* remains visible here as a short singleton scaffold
-note rather than being folded back into the promoted `SC055-SC056` umlaut core.
-The dossier work shows enough historical background for the might / night
-material to keep the rule explicit in the book, but the current chronology card
-is one-sided and does not yet justify finished standalone promotion.
+SC060 *OEWsPalatalUmlaut* is promoted here as a **short finished singleton
+note**. It is historically legible through the might / night material, but
+its chronology remains one-sided. The right final form is therefore a short
+singleton note in strict order, not a reason to merge the rule back into the
+promoted umlaut core.
 
-#### Current evidence
+#### Source tradition
 
-The rule is historically real, yet current order testing identifies only one
-positive historical first-break boundary for it. On the earlier side, SC060 must
-follow SC055. On the later side, the search reaches the current SC087 boundary
-without finding a real break; that later no-break result is a runner limitation,
-not a positive historical boundary.
+The source tradition is narrower than for the main umlaut chapter but still real
+enough for finished prose. Campbell and Ringe and Taylor both support the
+historical development behind forms such as miht and niht, while Fulk's
+broader chronology cautions help keep the rule tied to the umlaut and
+palatal-vowel region rather than treated as a coequal chapter center
+[@Campbell1959, §§248--251; @RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4;
+@Fulk2018, §§4.7, 4.13].
+
+That support is enough for a short finished note. It is not enough to justify
+folding SC060 back into the promoted `SC055-SC056` report.
+
+#### CAPR implementation
+
+CAPR isolates this narrower West Saxon material as one explicit step: SC060
+*OEWsPalatalUmlaut*. That explicit rule is analytically useful because it keeps a
+real one-sided later note visible after back mutation without pretending it
+anchors a larger chapter.
 
 #### Place in the cascade
 
-SC060 now stands as its own singleton scaffold note immediately after the new
-promoted `SC059` OE back mutation report and immediately before the new
-scaffold `SC061` **Weak-tail nasal-loss note**. Its meaningful positive
-chronology link points outward on the left to the already promoted `SC055-SC056`
-**Umlaut core and palatal-diphthongization follower**, but that relation should
-remain a cross-reference rather than a reason to merge chapters.
+This note belongs immediately after the promoted SC059 OE back mutation
+report and immediately before the promoted SC061 **Weak-tail nasal-loss note**.
+Its meaningful positive chronology link points outward on the left to the
+promoted `SC055-SC056` umlaut core, but that relation should remain a
+cross-reference rather than a reason to merge chapters.
 
 #### Order evidence
 
-Current first-break evidence places SC060 after SC055. If OE WS Palatal Umlaut
-is moved before the promoted umlaut core, PGmc máxtiz yields mieht rather
-than expected OE miht, and PGmc náxti yields nieht rather than niht.
-That earlier boundary is historically interpretable and should be kept visible as
-the note's real leftward anchor.
+SC060 has one real positive historical boundary. It must follow SC055. If OE WS
+Palatal Umlaut is moved before the promoted umlaut core, PGmc máxtiz yields
+mieht rather than expected OE miht, and PGmc náxti yields nieht rather
+than expected niht.
 
-The later side is different. The current runner can move SC060 forward through
-the searchable corridor without finding a real break before the SC087 boundary.
-That is a no-break-before-boundary result bounded by the present search space,
-not a positive claim that SC060 must precede SC087. The note therefore records a
-historically legible but one-sided rule, not a promotable local chapter center.
+The later side is different. The current runner finds no real later break for
+SC060 before the SC087 boundary. That result is runner-bounded and must not
+be rewritten into a claim that SC060 must precede SC087.
 
-#### Status
+#### Interpretation
 
-This is a scaffold placeholder, not finished book prose. The existing grouped
-dossiers now make SC060's role clear enough to keep it visible as its own
-one-sided note while leaving any future promotion to a later decision about the
-right edge of the umlaut / palatal-vowel region. Do not merge SC060 back into
-`SC055-SC056`, and do not rewrite the runner-bounded later side as a positive
-historical boundary.
+SC060 is promoted because the final book should not leave one-sided but
+historically legible ordinary rules in scaffold form when a short finished note
+will do. The correct final treatment is modest: keep the real leftward umlaut
+anchor explicit, keep the later side non-positive, and leave the main umlaut
+chapter where it already belongs.
+
+#### Remaining cautions
+
+The note should stay narrow. The promoted `SC055-SC056` umlaut core remains a
+leftward cross-reference only, not a destination for merger. And the
+runner-bounded later side must remain a methodological limit rather than a
+positive historical boundary.
 
 ## Weak-tail nasal-loss note
 
@@ -2799,51 +2907,62 @@ historical boundary.
 
 #### Historical formulation
 
-SC061 *OEWeakTailNasalLoss* remains visible here as a short singleton scaffold
-note rather than being merged back into the promoted SC023 singleton note or
-into a broader late weak-tail chapter. The dossier work shows enough historical
-background for the *do* / dōn material to keep the rule explicit in the book,
-but the current chronology card is one-sided and does not yet justify finished
-standalone promotion.
+SC061 *OEWeakTailNasalLoss* is promoted here as a **short finished singleton
+note**. It is historically legible through the *do* / dōn pathway, but its
+chronology remains one-sided. The right final form is therefore a short
+singleton note in strict order, not a reason to merge the rule back into SC023
+or to widen it into a broader weak-tail chapter.
 
-#### Current evidence
+#### Source tradition
 
-The rule is historically legible, yet current order testing identifies only one
-positive historical first-break boundary for it. On the earlier side, SC061 must
-follow SC023. On the later side, the search reaches the current SC087 boundary
-without finding a real break; that later no-break result is a runner limitation,
-not a positive historical boundary.
+The source tradition is modest but real. Ringe and Taylor discuss the
+development of dōn and the surrounding reduction of older morphological
+material, which is enough to keep the rule historically legible even though it
+does not rise to a larger textbook chapter of its own [@RingeTaylor2014].
+
+That is enough support for a short finished note. It is not enough to justify
+merging SC061 backward into the promoted SC023 singleton or outward into a
+larger weak-tail chapter.
+
+#### CAPR implementation
+
+CAPR isolates this material as one explicit step: SC061 *OEWeakTailNasalLoss*.
+That narrower implementation is useful because it keeps the dōn pathway
+explicit in strict order even though the rule remains one-sided in current
+chronology testing.
 
 #### Place in the cascade
 
-SC061 now stands as its own singleton scaffold note immediately after the new
-scaffold `SC060` **WS palatal umlaut note** and immediately before the promoted
-SC063 **High-vowel apocope** report. Its meaningful positive chronology link
-points outward on the left to the already promoted SC023 **N-stem n-loss note**,
-but that relation should remain a cross-reference rather than a reason to merge
-non-adjacent chapters.
+This note belongs immediately after the promoted SC060 **WS palatal umlaut
+note** and immediately before the promoted SC063 **OE high vowel apocope**
+report. Its meaningful positive chronology link points outward on the left to
+the promoted SC023 **N-stem n-loss note**, but that relation should remain a
+cross-reference rather than a reason to merge non-adjacent chapters.
 
 #### Order evidence
 
-Current first-break evidence places SC061 after SC023. If OE Weak Tail Nasal
-Loss is moved before the promoted SC023 singleton note, PGmc dōną no longer
-yields expected OE dōn; the earlier-shifted derivation records no output at
-all. That earlier boundary is historically interpretable and should be kept
-visible as the note's real leftward anchor.
+SC061 has one real positive historical boundary. It must follow SC023. If OE
+Weak Tail Nasal Loss is moved before the promoted SC023 singleton note, PGmc
+dōną no longer yields expected OE dōn; the earlier-shifted derivation
+records no output at all.
 
-The later side is different. The current runner can move SC061 forward through
-the searchable corridor without finding a real break before the SC087 boundary.
-That is a no-break-before-boundary result bounded by the present search space,
-not a positive claim that SC061 must precede SC087. The note therefore records a
-historically legible but one-sided rule, not a promotable local chapter center.
+The later side is different. The current runner finds no real later break for
+SC061 before the SC087 boundary. That result is runner-bounded and must not
+be rewritten into a claim that SC061 must precede SC087.
 
-#### Status
+#### Interpretation
 
-This is a scaffold placeholder, not finished book prose. The existing grouped
-dossiers now make SC061's role clear enough to keep it visible as its own
-one-sided note while leaving any future promotion to a later decision about the
-late weak-tail region. Do not merge SC061 back into SC023, and do not rewrite
-the runner-bounded later side as a positive historical boundary.
+SC061 is promoted because residual completion requires finished prose even for
+one-sided ordinary rules. The honest final treatment is therefore a short note:
+keep the real SC023 anchor explicit, keep the later side non-positive, and let
+the rule remain a small but visible part of the weak-tail sequence.
+
+#### Remaining cautions
+
+The note should stay narrow. The promoted SC023 report remains a leftward
+cross-reference only, not a merger target. The later side remains runner-bounded
+and must not be turned into a positive historical boundary. And the note should
+not be broadened into a larger weak-tail chapter.
 
 ## High-vowel apocope
 

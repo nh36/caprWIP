@@ -74,8 +74,8 @@ immediately preceding promoted report, and SC052 is the immediately following
 standalone hinge report.
 
 To the right, SC052 now precedes the promoted SC053-SC054 pre-umlaut bridge
-report and the promoted SC055-SC056 umlaut-core report. Farther right, SC057
-remains a later unresolved palatalization-side question. That placement is the
+report and the promoted SC055-SC056 umlaut-core report. Farther right, the
+promoted SC057 note remains a later palatalization-side development. That placement is the
 main architectural gain of this promotion: the book can now discuss the plain-velar
 hinge explicitly while keeping the assembled order strictly chronological.
 
@@ -122,5 +122,5 @@ already promoted SC051 **OE Sk Palatalization** report or the promoted SC055-SC0
 
 The chapter must also keep the left edge in proportion. `stretch` is enough to
 show that SC050 matters as feeder/context, but not enough to justify a
-non-contiguous `SC050-SC052` production unit. SC057 should remain unresolved for
-later review rather than being absorbed here by implication.
+non-contiguous `SC050-SC052` production unit. The promoted SC057 note should
+remain separate rather than being absorbed here by implication.

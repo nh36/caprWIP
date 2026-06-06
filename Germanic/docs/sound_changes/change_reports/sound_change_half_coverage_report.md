@@ -3,11 +3,11 @@
 _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the chronology-card inventory._
 
 1. Total ordinary sound changes covered: 70.
-2. Number covered by pilot/full production reports: 64.
-3. Number covered by scaffold placeholders: 6.
-4. Number grouped into multi-change units: 50.
+2. Number covered by pilot/full production reports: 68.
+3. Number covered by scaffold placeholders: 2.
+4. Number grouped into multi-change units: 48.
 5. Number needing literature dossiers: 64.
-6. Number needing human judgement: 6.
+6. Number needing human judgement: 2.
 7. Number negative/boundary-only: 10.
 8. Number broad/far/contextual: 31.
 9. Every ordinary `SC*.md` chronology card is represented somewhere in the assembled sound-change half: yes.
@@ -41,10 +41,11 @@ _Generated from `sound_change_half_scaffold.tsv`, `report_manifest.tsv`, and the
 | 052 | SC052 | full | strong local hinge with two-sided card evidence | literature and book dossiers drafted | keep as standalone chronological full production report |
 | 053-054 | SC053; SC054 | full | negative edge plus narrow bridge evidence | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 055-056 | SC055; SC056 | full | strong local pair with right-edge caution | literature and book dossiers drafted | keep as paired full production report |
-| 057-058 | SC057; SC058 | scaffold | one-sided palatalization-side evidence plus residual negative edge | no dedicated dossier yet | Batch B review recommends splitting this unit in the next conversion commit: convert SC057 to a short singleton note with its real SC052 leftward anchor, and convert SC058 to a shorter boundary-limited residual/context note |
+| 057 | SC057 | full | one-sided singleton with real `SC052 < SC057` via `bow`, `follow`, `hedge`, `seek`, and `singe`, but no later real break before the current runner boundary | no dedicated dossier yet | promote as a short singleton note; keep SC052 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 058 | SC058 | full | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | no dedicated dossier yet | promote as a short residual/context note; keep bundled `PWGmcChanges` and the SC087 search boundary as methodological limits rather than historical chronology, and do not inflate the rule into a larger grouped report |
 | 059 | SC059 | full | source-backed singleton with real two-sided chronology `SC048 < SC059 < SC078`; the later `SC059 < SC078` edge is broad/far and remains a rightward cross-reference only | literature and book dossiers drafted | promote as a short singleton full note; keep SC046-SC048 and the split late-tail scaffold region, especially SC078, as leftward/rightward cross-references only and do not recreate the old grouped bridge |
-| 060 | SC060 | scaffold | one-sided singleton with real `SC055 < SC060` via `might` and `night`, but no later real break before the current runner boundary | literature and book dossiers drafted | Batch B review recommends converting this next as a short finished singleton note; keep promoted SC055-SC056 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
-| 061 | SC061 | scaffold | one-sided singleton with real `SC023 < SC061` via `do`, but no later real break before the current runner boundary | literature and book dossiers drafted | Batch B review recommends converting this next as a short finished singleton note; keep promoted SC023 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 060 | SC060 | full | one-sided singleton with real `SC055 < SC060` via `might` and `night`, but no later real break before the current runner boundary | literature and book dossiers drafted | promote as a short finished singleton note; keep promoted SC055-SC056 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
+| 061 | SC061 | full | one-sided singleton with real `SC023 < SC061` via `do`, but no later real break before the current runner boundary | literature and book dossiers drafted | promote as a short finished singleton note; keep promoted SC023 as a leftward cross-reference only and do not rewrite the runner-bounded later side as a positive historical boundary |
 | 063 | SC063 | full | strong local standalone report | substantial source material exists | keep as singleton full production report |
 | 064-065 | SC064; SC065 | full | narrow positive SC064 with card-negative SC065 | literature and book dossiers drafted | keep as short adjacent chronological bridge report |
 | 066-068 | SC066; SC067; SC068 | full | strong local corridor with one weaker bridge member | literature and book dossiers drafted | keep as narrow full production report |

@@ -86,7 +86,7 @@ sources such as Ringe and Taylor and Fulk that place palatal-triggered
 diphthongization differently in the wider sequence
 [@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC053-SC054
 should remain a separate promoted bridge report rather than being absorbed into
-the umlaut core, and SC057 should remain reserved for later reconsideration
-with the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
+the umlaut core, and the promoted SC057 note should remain separate from both
+this chapter and the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
 narrow: it is a report on the umlaut core and its West Saxon right edge, not a
 general handbook article on every aspect of Old English i-mutation.

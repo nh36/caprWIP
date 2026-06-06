@@ -97,8 +97,8 @@ This promotion extracts one clean palatalization chapter from the broader
 region. Its value is architectural as much as historical. The neighboring
 reports are now clearer because they no longer have to share one placeholder:
 SC049-SC050 forms the promoted left-hand bridge report, SC052 stands as the
-promoted standalone hinge into the umlaut region, and SC057 remains a later
-palatalization-side question rather than part of this chapter.
+promoted standalone hinge into the umlaut region, and the promoted SC057 note
+remains a later palatalization-side note rather than part of this chapter.
 
 That makes SC051 a good example of how the production layer should mature. The
 book does not need to solve the whole palatalization/fronting region at once.
@@ -118,6 +118,6 @@ the wider palatalization complex rather than as a fully isolated law
 The chapter must also avoid duplicating the already promoted SC052 hinge report
 or the promoted SC055-SC056 umlaut-core report. SC056 belongs here only as
 SC051's right-hand local boundary, not as coequal chapter content. SC052 should
-be cross-referenced as the neighboring hinge chapter, and SC057 remains the
-later unresolved palatalization-side material. This report settles only the
-narrow case for SC051.
+be cross-referenced as the neighboring hinge chapter, and the promoted SC057
+note remains separate later palatalization-side material. This report settles
+only the narrow case for SC051.
