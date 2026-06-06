@@ -43,6 +43,17 @@ forms such as _heofon_, _fæstenn_, and _enetre_. It is much narrower than the
 major vowel changes and is best understood as a recurring but partly lexicalized
 pattern.
 
+The relation between the sources and the formalization is correspondingly close
+but not exact. Fulk formulates the tendency at the level of `mn` clusters and
+illustrates it with _heofon_ and _fæstenn_ [@Fulk2018, p. 121, §6.11]. Ringe
+and Taylor show the same kind of development in _enetre_ [@RingeTaylor2014,
+p. 282]. Campbell's “heofon is for older hefzen” and Hogg's `*hefon > heofon`
+preserve outcomes that the present implementation wants to keep visible
+[@Campbell1959, p. 155;
+@Hogg1992, p. 112]. The formal rule is therefore narrower than the total set of
+handbook remarks: it models one plausible recurrent environment and does not
+claim to exhaust every dissimilatory development involving nasals.
+
 Chronologically, the available tests do not identify a sharper position within
 the Old English sequence. When the rule is moved earlier, no lexical breakpoint
 appears before the inherited West-Germanic material that precedes the tested Old

@@ -42,6 +42,9 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 6. Give a brief translation or gloss after a longer German quotation where it
    helps readability.
 7. Compare sources only after explaining what each source actually says.
+8. Historical discussion should identify the examples, conditioning
+   environments, and scope of the change in each source, then explain how those
+   details motivate the formalization.
 
 ## Citations
 
@@ -120,6 +123,6 @@ Use `--strict` only when the chapter is expected to be free of flagged lines.
 
 ## Numbering
 
-The later reader-facing assembly should enable Pandoc section numbering with
-`--number-sections` (or an equivalent metadata setting) instead of relying on
-manual workflow prose.
+Reader-facing sound-change chapters should be built with numbered sections and
+subsections. Enable Pandoc section numbering with `--number-sections` (or an
+equivalent metadata setting) instead of relying on manual workflow prose.

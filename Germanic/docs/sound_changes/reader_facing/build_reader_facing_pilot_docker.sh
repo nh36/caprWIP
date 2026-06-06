@@ -32,7 +32,7 @@ parts: list[str] = [
     "## Included sections",
     "",
     "1. Velar palatalization before front vowels",
-    "2. The Old English i-umlaut and its West Saxon right edge",
+    "2. The Old English i-umlaut and West Saxon palatal diphthongization",
     "3. Nasal dissimilation",
     "",
 ]
@@ -63,6 +63,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_pilot_01.md \
       --standalone \
       --from=markdown+raw_tex+citations \
+      --number-sections \
       --table-of-contents \
       --metadata-file=Germanic/docs/assembly/full_volume_metadata.yaml \
       --bibliography=docs/refs.bib \

@@ -5,7 +5,7 @@ _This assembled pilot PDF is for checking the first reader-facing rewrite layer 
 ## Included sections
 
 1. Velar palatalization before front vowels
-2. The Old English i-umlaut and its West Saxon right edge
+2. The Old English i-umlaut and West Saxon palatal diphthongization
 3. Nasal dissimilation
 
 # Velar palatalization before front vowels
@@ -15,19 +15,40 @@ _This assembled pilot PDF is for checking the first reader-facing rewrite layer 
 Luick places the change inside a broad early palatalizing movement. Under the
 heading “Frühe Verschiebungen in palataler Richtung,” he treats English `k` and
 `g` before bright vowels together with the larger field of palatal effects
-[@Luick1914, p. 157, §168].
+[@Luick1914, p. 157, §168]. His emphasis falls on the environment first: velars
+before bright vowels and in the vicinity of the palatal glide belong to one
+early phonological corridor. The examples associated with that corridor, such as
+`ceaster`, `geaf`, `giefan`, and `giest`, already show that consonantal
+palatalization and later vowel effects stand close together historically, even
+when they must be distinguished analytically [@Luick1914, pp. 157--167,
+§§168--182].
 
 Campbell narrows the picture by distinguishing plain velars from the especially
 palatal-prone `sk` cluster. His remark that “[sk] is more prone to
 palatalization and assibilation than [k]” is brief, but it makes clear that
 different members of the larger palatal field need not behave identically
-[@Campbell1959, p. 278, §440].
+[@Campbell1959, p. 278, §440]. Elsewhere in the same part of the grammar he uses
+forms such as `cild`, `dæg`, `giefan`, and `giest`, which show how palatalized
+velars, palatal influence, and later umlautal outcomes meet in the same region
+of the lexicon without collapsing into one process [@Campbell1959, pp. 69--72,
+89, §§170, 190--191].
+
+Hogg makes the conditioning sharper still. He states that the change takes place
+when the velar consonant is adjacent to and in the same syllable as a front
+vowel or the palatal consonant `j` [@Hogg1992, pp. 103--104]. This formulation
+is important because it moves the discussion from a broad list of palatal
+outcomes to a more precise phonological environment involving adjacency and
+syllable structure.
 
 Ringe and Taylor make the chronological relation still clearer. When they write
 that “after initial velars and *sk had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
-[@RingeTaylor2014, p. 215, §6.5.1].
+[@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
+such as `weccan`, `licgan`, `lecgan`, `secg`, `ecg`, `wicg`, and `brycg`,
+illustrate the same point in lexical detail: front vowels and `j` create the
+palatal environment in which plain `k` and `g` cease to behave as plain velars
+[@RingeTaylor2014, pp. 213--214, §6.4.1].
 
 Taken together, these accounts show a gradual tightening of focus. Luick treats
 palatalization as a broad early movement. Campbell distinguishes more sharply
@@ -63,8 +84,11 @@ In prose, the rule turns plain `k` into a palatal outcome before front vowels
 and `j`, including the geminated environment before `j`.
 
 Historically, this section corresponds to the core of the older discussion of
-palatalized velars. It is the part of the process that prepares forms such as
-those later assumed by [velar palatalization before front vowels
+palatalized velars. It captures the environments behind forms such as `weccan`,
+`licgan`, and `lecgan`, where front vowels or `j` trigger the palatal outcome in
+the first place [@RingeTaylor2014, pp. 213--214, §6.4.1]. It is also the part
+of the process that prepares forms later assumed by [velar palatalization before
+front vowels
 (`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and, farther on, by
 [fronting under i-umlaut (`OEIUmlautFronting`)](#rule-OEIUmlautFronting).
 
@@ -143,17 +167,26 @@ Luick gives the change its traditional scale:
 Campbell gives the most compact classical formulation in English when he writes
 that “the process known as i-umlaut or i-mutation operates on practically all
 the sounds which it could theoretically affect in OE”
-[@Campbell1959, p. 69, §190]. Hogg continues in the same vein: “we come now to
-a change which is almost as uncontroversial as it is important”
-[@Hogg1992, p. 112]. Taken together, these statements leave little doubt that
-i-umlaut is one of the central Old English vowel changes.
+[@Campbell1959, p. 69, §190]. He immediately defines the core conditioning
+environment as a following `i` or `j`, and he goes on to trace the consequences
+across much of the vowel system, including forms such as `giest`, `giefan`,
+`hierde`, and `ieldra` [@Campbell1959, pp. 69--72, §§190--197]. Hogg continues
+in the same vein: “we come now to a change which is almost as
+uncontroversial as it is important” [@Hogg1992, p. 112]. His examples, such as
+`bryd`, `trymman`, `bedd`, `ciest`, and `wiersa`, likewise emphasize that the
+change is a broad redistribution of vowel quality across the Old English vowel
+system [@Hogg1992, pp. 112--114]. Taken together, these statements leave little doubt
+that i-umlaut is one of the central Old English vowel changes.
 
 The narrower palatal-diphthongal material is described differently. Ringe and
 Taylor treat West-Saxon diphthongization after initial palatals as a distinct
 process [@RingeTaylor2014, p. 215, §6.5.1], and Fulk is even more explicit about
 its chronological delicacy when he calls it “diphthongization by initial
 palatal consonants (which precedes front umlaut but not breaking)”
-[@Fulk2018, p. 74, §4.13].
+[@Fulk2018, p. 74, §4.13]. Ringe and Taylor's examples such as `gieldan`,
+`scield`, and `scieppan` show that this narrower process is triggered by already
+palatal consonants and leads to specifically West-Saxon diphthongal outputs
+[@RingeTaylor2014, pp. 215--216, §6.5.1].
 
 The sequence of discussion is fairly clear. Luick, Campbell, and Hogg all give
 i-umlaut primary importance. Ringe and Taylor and Fulk then help separate that
@@ -193,6 +226,13 @@ present implementation it stands after [velar palatalization before front vowels
 (`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and before the narrower
 West-Saxon palatal-diphthongization rule discussed below.
 
+The handbooks describe the same conditioning environment in different ways but
+with the same phonological consequence: a following high front vocoid triggers
+the fronting of earlier back vowels. That is why forms such as `byre`, `fylgan`,
+`gylden`, `wyrm`, and `giest` can all be treated inside the same formal rule
+even though they belong to different lexical classes [@RingeTaylor2014,
+p. 222, §6.6.1; @Campbell1959, pp. 69--72, §§190--191].
+
 As a component rule, it shares the chronology of [the composite i-umlaut rule
 (`OEIUmlaut`)](#rule-OEIUmlaut).
 
@@ -212,6 +252,12 @@ fronting rule and raises it further where the same umlaut trigger still holds.
 Historically, this belongs inside the same broad i-umlaut development. It is
 part of the same chronological development and shares the evidence base of [the
 composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+
+This narrower subrule matters because the sources do not describe umlaut as
+simple fronting alone. Campbell explicitly notes that the low front vowel
+changes again before `m` and `n` in most dialects [@Campbell1959, p. 69, §190],
+and Hogg likewise treats short front vowels as part of the same assimilatory
+system [@Hogg1992, p. 112].
 
 ## Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
 
@@ -242,6 +288,13 @@ chronological bracket as [fronting under i-umlaut
 (`OEIUmlautRaising`)](#rule-OEIUmlautRaising), even though its outputs are
 shaped differently.
 
+The relevant examples are the recurring West-Saxon `ie` forms cited in the
+handbooks, including `giest`, `giefan`, and `hierde` in Campbell and `ciest` in
+Hogg [@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @Hogg1992,
+pp. 112--114]. The present formalization keeps those diphthongal outcomes
+visible as a distinct part of the general umlautal development and does not
+leave them implicit under the broad description of fronting.
+
 ## The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 The implementation also defines a composite rule that composes the three
@@ -266,6 +319,12 @@ Those failures show that the broad umlautal rule needs an earlier terminus post
 quem in the palatalization sequence, even though it remains the main vowel
 change within the present chapter.
 
+The composite rule is important because the literature presents the umlaut as a
+single historical development even while the implementation decomposes it into
+formal parts. The composite definition is the point at which the separate
+fronting, raising, and diphthongal effects are treated as one chronological
+event in the Old English sequence.
+
 ## West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
 
 The narrower West-Saxon rule is treated separately from the broader umlautal
@@ -285,6 +344,14 @@ define OEWsPalatalDiphthongization [
 In prose, this rule diphthongizes certain vowels after already palatal
 consonants in West Saxon. It therefore has a narrower dialectal and
 chronological scope than the broader umlaut rule.
+
+The historical evidence for that narrower scope is concrete. Ringe and Taylor
+illustrate the rule with forms such as `gieldan`, `scield`, and `scieppan`,
+where an already palatal consonant triggers the diphthongal outcome
+[@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg's `giefan` and `sceap` material
+belongs to the same phonological zone [@Hogg1992, pp. 108--109], while Fulk
+distinguishes this palatal-consonant-triggered diphthongization from the broad
+front-mutation process [@Fulk2018, p. 74, §4.13].
 
 Its place is later than [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
 If this rule is moved too early, the later ordering is constrained by forms such
@@ -347,6 +414,17 @@ Historically, the rule captures the limited type of dissimilation reflected in
 forms such as _heofon_, _fæstenn_, and _enetre_. It is much narrower than the
 major vowel changes and is best understood as a recurring but partly lexicalized
 pattern.
+
+The relation between the sources and the formalization is correspondingly close
+but not exact. Fulk formulates the tendency at the level of `mn` clusters and
+illustrates it with _heofon_ and _fæstenn_ [@Fulk2018, p. 121, §6.11]. Ringe
+and Taylor show the same kind of development in _enetre_ [@RingeTaylor2014,
+p. 282]. Campbell's “heofon is for older hefzen” and Hogg's `*hefon > heofon`
+preserve outcomes that the present implementation wants to keep visible
+[@Campbell1959, p. 155;
+@Hogg1992, p. 112]. The formal rule is therefore narrower than the total set of
+handbook remarks: it models one plausible recurrent environment and does not
+claim to exhaust every dissimilatory development involving nasals.
 
 Chronologically, the available tests do not identify a sharper position within
 the Old English sequence. When the rule is moved earlier, no lexical breakpoint

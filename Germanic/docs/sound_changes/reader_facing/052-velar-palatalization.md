@@ -5,19 +5,40 @@
 Luick places the change inside a broad early palatalizing movement. Under the
 heading “Frühe Verschiebungen in palataler Richtung,” he treats English `k` and
 `g` before bright vowels together with the larger field of palatal effects
-[@Luick1914, p. 157, §168].
+[@Luick1914, p. 157, §168]. His emphasis falls on the environment first: velars
+before bright vowels and in the vicinity of the palatal glide belong to one
+early phonological corridor. The examples associated with that corridor, such as
+`ceaster`, `geaf`, `giefan`, and `giest`, already show that consonantal
+palatalization and later vowel effects stand close together historically, even
+when they must be distinguished analytically [@Luick1914, pp. 157--167,
+§§168--182].
 
 Campbell narrows the picture by distinguishing plain velars from the especially
 palatal-prone `sk` cluster. His remark that “[sk] is more prone to
 palatalization and assibilation than [k]” is brief, but it makes clear that
 different members of the larger palatal field need not behave identically
-[@Campbell1959, p. 278, §440].
+[@Campbell1959, p. 278, §440]. Elsewhere in the same part of the grammar he uses
+forms such as `cild`, `dæg`, `giefan`, and `giest`, which show how palatalized
+velars, palatal influence, and later umlautal outcomes meet in the same region
+of the lexicon without collapsing into one process [@Campbell1959, pp. 69--72,
+89, §§170, 190--191].
+
+Hogg makes the conditioning sharper still. He states that the change takes place
+when the velar consonant is adjacent to and in the same syllable as a front
+vowel or the palatal consonant `j` [@Hogg1992, pp. 103--104]. This formulation
+is important because it moves the discussion from a broad list of palatal
+outcomes to a more precise phonological environment involving adjacency and
+syllable structure.
 
 Ringe and Taylor make the chronological relation still clearer. When they write
 that “after initial velars and *sk had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
-[@RingeTaylor2014, p. 215, §6.5.1].
+[@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
+such as `weccan`, `licgan`, `lecgan`, `secg`, `ecg`, `wicg`, and `brycg`,
+illustrate the same point in lexical detail: front vowels and `j` create the
+palatal environment in which plain `k` and `g` cease to behave as plain velars
+[@RingeTaylor2014, pp. 213--214, §6.4.1].
 
 Taken together, these accounts show a gradual tightening of focus. Luick treats
 palatalization as a broad early movement. Campbell distinguishes more sharply
@@ -53,8 +74,11 @@ In prose, the rule turns plain `k` into a palatal outcome before front vowels
 and `j`, including the geminated environment before `j`.
 
 Historically, this section corresponds to the core of the older discussion of
-palatalized velars. It is the part of the process that prepares forms such as
-those later assumed by [velar palatalization before front vowels
+palatalized velars. It captures the environments behind forms such as `weccan`,
+`licgan`, and `lecgan`, where front vowels or `j` trigger the palatal outcome in
+the first place [@RingeTaylor2014, pp. 213--214, §6.4.1]. It is also the part
+of the process that prepares forms later assumed by [velar palatalization before
+front vowels
 (`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and, farther on, by
 [fronting under i-umlaut (`OEIUmlautFronting`)](#rule-OEIUmlautFronting).
 
