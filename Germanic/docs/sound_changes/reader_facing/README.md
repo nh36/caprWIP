@@ -1,0 +1,30 @@
+# Reader-facing sound-change pilot
+
+This directory is a **new book-facing layer** for the sound-change half. The
+existing reports, dossiers, chronology cards, and FOMA definitions remain the
+source material; the files here test how that material can be rewritten for a
+historical-linguistic reader who does not need the internal workflow.
+
+The present pilot contains three deliberately different cases:
+
+1. `052-velar-palatalization.md` — a major consonantal change with rich
+   scholarship and clear local chronology.
+2. `055-056-i-umlaut-core.md` — a grouped chapter with one major central change
+   and one narrower right-edge follower.
+3. `058-nasal-dissimilation.md` — a residual change with thin source support and
+   boundary-limited chronology.
+
+## Current scope
+
+These files do **not** replace the existing sound-change reports. They are a
+controlled pilot for tone, structure, quotation practice, code presentation,
+and chronology explanation.
+
+## Numbering note
+
+The current sound-change assembly wrappers do **not** request numbered section
+headings. `Germanic/docs/assembly/build_sound_change_volume.sh` passes Markdown
+through Pandoc, but it does not add `--number-sections`, and
+`full_volume_metadata.yaml` does not currently override that. A later
+reader-facing assembly should enable numbering there rather than hard-coding
+numbers in prose.
