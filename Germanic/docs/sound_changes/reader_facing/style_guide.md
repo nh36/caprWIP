@@ -61,6 +61,15 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 4. The FOMA code box is the one place where the technical implementation should
    be shown directly.
 
+## Old English forms
+
+1. Old English forms in prose are italicized.
+2. On first mention in a section, give a brief one-word Modern English gloss in
+   LaTeX-style single quotation marks where possible.
+3. Do not put Old English forms in code spans unless discussing literal model
+   output or code.
+4. Do not italicize or gloss inside FOMA code blocks.
+
 ## Chronology
 
 1. Explain chronology with words and wrong outputs, not bare internal
@@ -110,6 +119,7 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 13. Avoid “left edge,” “right edge,” “left-hand,” and “right-hand” in
     chronology prose.
 14. In block quotations, keep the citation inside the quoted block.
+15. Do not use “corridor” for sound-change groupings or historical developments.
 
 ## Audit command
 

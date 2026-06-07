@@ -2,17 +2,19 @@
 
 ## Historical discussion
 
-Luick preserves individual outcomes such as “enitre ‘einjährig (aus *anwintri)”
-without isolating a separate law around them [@Luick1914, p. 166]. Campbell
-likewise reaches forms such as _heofon_ in a discussion of suffixal variation
+Luick preserves individual outcomes such as *enetre* `yearling' (with the
+spelling *enitre* in his text) without isolating a separate law around them
+[@Luick1914, p. 166]. Campbell likewise reaches forms such as *heofon* `heaven'
+in a discussion of suffixal variation
 and does not set them off in any special section on nasal dissimilation
-[@Campbell1959, p. 155]. Hogg mentions _heofon_ in the course of his account of
+[@Campbell1959, p. 155]. Hogg mentions *heofon* `heaven' in the course of
+his account of
 back mutation, again without isolating a separate law [@Hogg1992, p. 112].
 
 Fulk supplies the clearest general formulation: “In the cluster mn, the first
 consonant tends to lose its nasality by dissimilation, though the results are
 hardly regular” [@Fulk2018, p. 121, §6.11]. Ringe and Taylor stay close to the
-lexical evidence and note that _enetre_ reflects “loss of the second *n by
+lexical evidence and note that *enetre* `yearling' reflects “loss of the second *n by
 dissimilation” [@RingeTaylor2014, p. 282].
 
 The discussion therefore develops from scattered lexical observations to a more
@@ -39,14 +41,16 @@ In plain language, the rule turns medial `m` into `f` in a restricted
 short-vowel environment before a following syllable containing `n`.
 
 Historically, the rule captures the limited type of dissimilation reflected in
-forms such as _heofon_, _fæstenn_, and _enetre_. It is much narrower than the
+forms such as *heofon* `heaven', *fæstenn* `fasting', and *enetre*
+`yearling'. It is much narrower than the
 major vowel changes and is best understood as a recurring but partly lexicalized
 pattern.
 
 The relation between the sources and the formalization is correspondingly close
 but not exact. Fulk formulates the tendency at the level of `mn` clusters and
-illustrates it with _heofon_ and _fæstenn_ [@Fulk2018, p. 121, §6.11]. Ringe
-and Taylor show the same kind of development in _enetre_ [@RingeTaylor2014,
+illustrates it with *heofon* `heaven' and *fæstenn* `fasting'
+[@Fulk2018, p. 121, §6.11]. Ringe
+and Taylor show the same kind of development in *enetre* `yearling' [@RingeTaylor2014,
 p. 282]. Campbell's “heofon is for older hefzen” and Hogg's `*hefon > heofon`
 preserve outcomes that the present implementation wants to keep visible
 [@Campbell1959, p. 155;
@@ -65,7 +69,8 @@ evidence therefore gives neither a precise terminus post quem nor a precise
 terminus ante quem for the rule within the tested sequence.
 
 Even so, the rule has real interpretative consequences. It provides a place in
-the implementation for outcomes of the _heofon_, _fæstenn_, and _enetre_ type
+the implementation for outcomes of the *heofon* `heaven', *fæstenn* `fasting',
+and *enetre* `yearling' type
 discussed in the literature [@Fulk2018, p. 121, §6.11; @RingeTaylor2014,
 p. 282; @Campbell1959, p. 155; @Luick1914, p. 166; @Hogg1992, p. 112]. Without
 an explicit rule, those outcomes would be left to diffuse analogy or to

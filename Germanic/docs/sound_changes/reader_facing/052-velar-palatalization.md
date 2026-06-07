@@ -7,8 +7,8 @@ heading “Frühe Verschiebungen in palataler Richtung,” he treats English `k`
 `g` before bright vowels together with the larger field of palatal effects
 [@Luick1914, p. 157, §168]. His emphasis falls on the environment first: velars
 before bright vowels and in the vicinity of the palatal glide belong to one
-early phonological corridor. The examples associated with that corridor, such as
-`ceaster`, `geaf`, `giefan`, and `giest`, already show that consonantal
+early phonological sequence. The examples associated with that sequence, such as
+*ceaster* `town', *geaf* `gave', *giefan* `give', and *giest* `guest', already show that consonantal
 palatalization and later vowel effects stand close together historically, even
 when they must be distinguished analytically [@Luick1914, pp. 157--167,
 §§168--182].
@@ -18,7 +18,7 @@ palatal-prone `sk` cluster. His remark that “[sk] is more prone to
 palatalization and assibilation than [k]” is brief, but it makes clear that
 different members of the larger palatal field need not behave identically
 [@Campbell1959, p. 278, §440]. Elsewhere in the same part of the grammar he uses
-forms such as `cild`, `dæg`, `giefan`, and `giest`, which show how palatalized
+forms such as *cild* `child', *dæg* `day', *giefan* `give', and *giest* `guest', which show how palatalized
 velars, palatal influence, and later umlautal outcomes meet in the same region
 of the lexicon without collapsing into one process [@Campbell1959, pp. 69--72,
 89, §§170, 190--191].
@@ -35,7 +35,8 @@ that “after initial velars and *sk had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
 [@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
-such as `weccan`, `licgan`, `lecgan`, `secg`, `ecg`, `wicg`, and `brycg`,
+such as *weccan* `wake', *licgan* `lie', *lecgan* `lay', *secg* `retainer',
+*ecg* `edge', *wicg* `horse', and *brycg* `bridge',
 illustrate the same point in lexical detail: front vowels and `j` create the
 palatal environment in which plain `k` and `g` cease to behave as plain velars
 [@RingeTaylor2014, pp. 213--214, §6.4.1].
@@ -74,8 +75,8 @@ In prose, the rule turns plain `k` into a palatal outcome before front vowels
 and `j`, including the geminated environment before `j`.
 
 Historically, this section corresponds to the core of the older discussion of
-palatalized velars. It captures the environments behind forms such as `weccan`,
-`licgan`, and `lecgan`, where front vowels or `j` trigger the palatal outcome in
+palatalized velars. It captures the environments behind forms such as *weccan*
+`wake', *licgan* `lie', and *lecgan* `lay', where front vowels or `j` trigger the palatal outcome in
 the first place [@RingeTaylor2014, pp. 213--214, §6.4.1]. It is also the part
 of the process that prepares forms later assumed by [velar palatalization before
 front vowels
@@ -118,18 +119,20 @@ such as _cow_ and _lung_. See [fronting under i-umlaut
 
 If the rule is moved too early, before the syncope that prepares the consonant
 cluster, it breaks the derivation of _stretch_. With PGmc *\*strákkijaną* in the
-wrong order, the model produces *strecċan*; the expected Old English form is
-*streċċan*.
+wrong order, the model produces *strecċan* `stretch'; the expected Old English
+form is *streċċan* `stretch'.
 
 If it is moved too late, after i-umlaut, it over-palatalizes forms such as
-_cow_ and _lung_. PGmc *\*kūi* then yields *ċȳ*; the expected form is *cȳ*.
-PGmc *\*lúnganjō* yields *lunġen*; the expected form is *lungen*.
+_cow_ and _lung_. PGmc *\*kūi* then yields *ċȳ* `cows'; the expected form is
+*cȳ* `cows'. PGmc *\*lúnganjō* yields *lunġen* `lungs'; the expected form is
+*lungen* `lungs'.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes presupposed by later
 developments, including the umlautal rules discussed in
 [fronting under i-umlaut (`OEIUmlautFronting`)](#rule-OEIUmlautFronting).
-That matters for dictionary-like forms such as *cild* or *dæg* and for the
+That matters for dictionary-like forms such as *cild* `child' or *dæg* `day'
+and for the
 broader relation between consonantal palatalization and later vowel-fronting
 processes [@Luick1914, p. 157, §168; @Campbell1959, p. 278, §440;
 @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1].

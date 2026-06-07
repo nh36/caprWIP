@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import argparse
 import re
-import sys
 from pathlib import Path
 
 
@@ -50,9 +49,15 @@ META_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("meta:far right", re.compile(r"\bfar right\b", re.I)),
     ("meta:far left", re.compile(r"\bfar left\b", re.I)),
     ("meta:chapter center", re.compile(r"\bchapter center\b", re.I)),
+    ("meta:corridor", re.compile(r"\bcorridor\b", re.I)),
     ("meta:file path", re.compile(r"Germanic/docs/")),
     ("meta:internal id", re.compile(r"\bSC\d{3}\b")),
 ]
+
+OE_CODE_SPAN_RE = re.compile(
+    r"`(ceaster|geaf|giefan|giest|cild|dæg|weccan|licgan|lecgan|secg|ecg|wicg|brycg|streċċan|strecċan|cȳ|lungen|gylden|wyrm|hierde|ieldra|bryd|trymman|bedd|ciest|wiersa|gieldan|scield|scieppan|sceap|ġift|ġieft|sċēaþ|sċǣþ|heofon|fæstenn|enetre)`",
+    re.I,
+)
 
 
 def is_ignorable_line(line: str) -> bool:
@@ -115,11 +120,20 @@ def main() -> int:
 
     for path in iter_target_files(args.all):
         warnings.extend(define_warnings(path))
+        inside_fence = False
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+            stripped = line.strip()
+            if stripped.startswith("```"):
+                inside_fence = not inside_fence
+                continue
+            if inside_fence:
+                continue
             if "—" in line and not is_ignorable_line(line):
                 warnings.append((path, line_number, "emdash", line.rstrip()))
             if colon_list_match(line):
                 warnings.append((path, line_number, "colon-list", line.rstrip()))
+            if not is_ignorable_line(line) and OE_CODE_SPAN_RE.search(line):
+                warnings.append((path, line_number, "oe-form:code-span", line.rstrip()))
             for label, pattern in NEGATION_PATTERNS:
                 if pattern.search(line):
                     warnings.append((path, line_number, label, line.rstrip()))
