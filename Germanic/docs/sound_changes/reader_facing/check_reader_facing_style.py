@@ -58,6 +58,9 @@ OE_CODE_SPAN_RE = re.compile(
     r"`(ceaster|geaf|giefan|giest|cild|dæg|weccan|licgan|lecgan|secg|ecg|wicg|brycg|streċċan|strecċan|cȳ|lungen|gylden|wyrm|hierde|ieldra|bryd|trymman|bedd|ciest|wiersa|gieldan|scield|scieppan|sceap|ġift|ġieft|sċēaþ|sċǣþ|heofon|fæstenn|enetre)`",
     re.I,
 )
+GLOSS_BACKTICK_RE = re.compile(r"`[A-Za-z][A-Za-z -]*'")
+ITALIC_ENGLISH_RE = re.compile(r"_(stretch|cow|lung|gift|sheath|yearling)_", re.I)
+RECONSTRUCTION_MARKDOWN_RE = re.compile(r"\*\\\*")
 
 
 def is_ignorable_line(line: str) -> bool:
@@ -111,7 +114,7 @@ def define_warnings(path: Path) -> list[tuple[Path, int, str, str]]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Check reader-facing sound-change prose for AI-style audit patterns.")
+    parser = argparse.ArgumentParser(description="Check reader-facing sound-change prose for style and formatting patterns.")
     parser.add_argument("--strict", action="store_true", help="Exit non-zero if warnings are found.")
     parser.add_argument("--all", action="store_true", help="Scan all Markdown files in the directory, including notes and generated pilot Markdown.")
     args = parser.parse_args()
@@ -132,6 +135,12 @@ def main() -> int:
                 warnings.append((path, line_number, "emdash", line.rstrip()))
             if colon_list_match(line):
                 warnings.append((path, line_number, "colon-list", line.rstrip()))
+            if GLOSS_BACKTICK_RE.search(line):
+                warnings.append((path, line_number, "gloss:backtick-quote", line.rstrip()))
+            if ITALIC_ENGLISH_RE.search(line):
+                warnings.append((path, line_number, "gloss:italic-english", line.rstrip()))
+            if RECONSTRUCTION_MARKDOWN_RE.search(line):
+                warnings.append((path, line_number, "reconstruction:markdown-asterisk", line.rstrip()))
             if not is_ignorable_line(line) and OE_CODE_SPAN_RE.search(line):
                 warnings.append((path, line_number, "oe-form:code-span", line.rstrip()))
             for label, pattern in NEGATION_PATTERNS:

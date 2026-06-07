@@ -11,29 +11,28 @@ Luick gives the change its traditional scale:
 
 Campbell gives the most compact classical formulation in English when he writes
 that “the process known as i-umlaut or i-mutation operates on practically all
-the sounds which it could theoretically affect in OE”
-[@Campbell1959, p. 69, §190]. He immediately defines the core conditioning
-environment as a following `i` or `j`, and he goes on to trace the consequences
-across much of the vowel system, including forms such as *giest* `guest',
-*giefan* `give', *hierde* `shepherd', and *ieldra* `older'
-[@Campbell1959, pp. 69--72, §§190--197]. Hogg continues
-in the same vein: “we come now to a change which is almost as
+the sounds which it could theoretically affect in OE” [@Campbell1959, p. 69,
+§190]. He immediately defines the core conditioning environment as a following
+`i` or `j`, and he goes on to trace the consequences across much of the vowel
+system, including forms such as *giest* ‘guest’, *giefan* ‘give’, *hierde*
+‘shepherd’, and *ieldra* ‘older’ [@Campbell1959, pp. 69--72, §§190--197].
+
+Hogg continues in the same vein: “we come now to a change which is almost as
 uncontroversial as it is important” [@Hogg1992, p. 112]. His examples, such as
-*bryd* `bride', *trymman* `strengthen', *bedd* `bed', *ciest* `chest', and
-*wiersa* `worse', likewise emphasize that the
-change is a broad redistribution of vowel quality across the Old English vowel
-system [@Hogg1992, pp. 112--114]. Taken together, these statements leave little doubt
-that i-umlaut is one of the central Old English vowel changes.
+*bryd* ‘bride’, *trymman* ‘strengthen’, *bedd* ‘bed’, *ciest* ‘chest’, and
+*wiersa* ‘worse’, likewise emphasize that the change is a broad redistribution
+of vowel quality across the Old English vowel system [@Hogg1992,
+pp. 112--114].
 
 The narrower palatal-diphthongal material is described differently. Ringe and
 Taylor treat West-Saxon diphthongization after initial palatals as a distinct
 process [@RingeTaylor2014, p. 215, §6.5.1], and Fulk is even more explicit about
 its chronological delicacy when he calls it “diphthongization by initial
 palatal consonants (which precedes front umlaut but not breaking)”
-[@Fulk2018, p. 74, §4.13]. Ringe and Taylor's examples such as *gieldan*
-`pay', *scield* `shield', and *scieppan* `create' show that this narrower process is triggered by already
-palatal consonants and leads to specifically West-Saxon diphthongal outputs
-[@RingeTaylor2014, pp. 215--216, §6.5.1].
+[@Fulk2018, p. 74, §4.13]. Ringe and Taylor’s examples such as *gieldan* ‘pay’,
+*scield* ‘shield’, and *scieppan* ‘create’ show that this narrower process is
+triggered by already palatal consonants and leads to specifically West-Saxon
+diphthongal outputs [@RingeTaylor2014, pp. 215--216, §6.5.1].
 
 The sequence of discussion is fairly clear. Luick, Campbell, and Hogg all give
 i-umlaut primary importance. Ringe and Taylor and Fulk then help separate that
@@ -76,9 +75,10 @@ West-Saxon palatal-diphthongization rule discussed below.
 The handbooks describe the same conditioning environment in different ways but
 with the same phonological consequence: a following high front vocoid triggers
 the fronting of earlier back vowels. That is why forms such as *fylgan*
-`follow', *gylden* `golden', *wyrm* `worm', and *giest* `guest' can all be treated inside the same formal rule
-even though they belong to different lexical classes [@RingeTaylor2014,
-p. 222, §6.6.1; @Campbell1959, pp. 69--72, §§190--191].
+‘follow’, *gylden* ‘golden’, *wyrm* ‘worm’, and *giest* ‘guest’ can all be
+treated inside the same formal rule even though they belong to different lexical
+classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
+§§190--191].
 
 As a component rule, it shares the chronology of [the composite i-umlaut rule
 (`OEIUmlaut`)](#rule-OEIUmlaut).
@@ -136,9 +136,9 @@ chronological bracket as [fronting under i-umlaut
 shaped differently.
 
 The relevant examples are the recurring West-Saxon `ie` forms cited in the
-handbooks, including *giest* `guest', *giefan* `give', and *hierde*
-`shepherd' in Campbell and *ciest* `chest' in
-Hogg [@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @Hogg1992,
+handbooks, including *giest* ‘guest’, *giefan* ‘give’, and *hierde*
+‘shepherd’ in Campbell and *ciest* ‘chest’ in Hogg
+[@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @Hogg1992,
 pp. 112--114]. The present formalization keeps those diphthongal outcomes
 visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
@@ -159,9 +159,10 @@ fronting, raising, and diphthongal adjustments composed in order.
 
 Chronologically, the composite rule must follow [velar palatalization before
 front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization). If it is
-moved too early, forms such as _cow_ and _lung_ become over-palatalized. PGmc
-*\*kūi* yields *ċȳ* `cows'; the expected form is *cȳ* `cows'. PGmc *\*lúnganjō*
-yields *lunġen* `lungs'; the expected form is *lungen* `lungs'.
+moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
+over-palatalized. PGmc <em>*kūi</em> yields *ċȳ* ‘cows’; the expected form is
+*cȳ* ‘cows’. PGmc <em>*lúnganjō</em> yields *lunġen* ‘lungs’; the expected form
+is *lungen* ‘lungs’.
 
 Those failures show that the broad umlautal rule needs an earlier terminus post
 quem in the palatalization sequence, even though it remains the main vowel
@@ -194,23 +195,22 @@ consonants in West Saxon. It therefore has a narrower dialectal and
 chronological scope than the broader umlaut rule.
 
 The historical evidence for that narrower scope is concrete. Ringe and Taylor
-illustrate the rule with forms such as *gieldan* `pay', *scield* `shield', and
-*scieppan* `create',
-where an already palatal consonant triggers the diphthongal outcome
-[@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg's *giefan* `give' and *sceap*
-`sheep' material
-belongs to the same phonological zone [@Hogg1992, pp. 108--109], while Fulk
-distinguishes this palatal-consonant-triggered diphthongization from the broad
-front-mutation process [@Fulk2018, p. 74, §4.13].
+illustrate the rule with forms such as *gieldan* ‘pay’, *scield* ‘shield’, and
+*scieppan* ‘create’, where an already palatal consonant triggers the diphthongal
+outcome [@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg’s *giefan* ‘give’ and
+*sceap* ‘sheep’ material belongs to the same phonological zone
+[@Hogg1992, pp. 108--109], while Fulk distinguishes this
+palatal-consonant-triggered diphthongization from the broad front-mutation
+process [@Fulk2018, p. 74, §4.13].
 
 Its place is later than [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
 If this rule is moved too early, the later ordering is constrained by forms such
-as _gift_ and _sheath_. PGmc *\*géftiz* then yields *ġieft* `gift'; the expected
-form is *ġift* `gift'. PGmc *\*skáiθiz* yields *sċǣþ* `sheath'; the expected
-form is *sċēaþ* `sheath'.
+as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc <em>*géftiz</em> then yields
+*ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc <em>*skáiθiz</em>
+yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
 
 No tested lexical item provides a comparably precise later terminus ante quem.
-The available evidence therefore establishes the rule's relation to the earlier
+The available evidence therefore establishes the rule’s relation to the earlier
 umlautal process much more clearly than it fixes a later point by which it must
 already have applied.
 
