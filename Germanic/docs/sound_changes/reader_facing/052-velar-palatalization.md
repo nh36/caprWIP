@@ -35,11 +35,11 @@ that “after initial velars and *sk had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
 [@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
-such as *weccan* ‘wake’, *licgan* ‘lie’, *lecgan* ‘lay’, *secg* ‘retainer’,
-*ecg* ‘edge’, *wicg* ‘horse’, and *brycg* ‘bridge’, illustrate the same point
-in lexical detail: front vowels and `j` create the palatal environment in which
-plain `k` and `g` cease to behave as plain velars
-[@RingeTaylor2014, pp. 213--214, §6.4.1].
+such as \emph{weccan} ‘wake’, \emph{licgan} ‘lie’, \emph{lecgan} ‘lay’,
+\emph{secg} ‘retainer’, \emph{ecg} ‘edge’, \emph{wicg} ‘horse’, and
+\emph{brycg} ‘bridge’, illustrate the same point in lexical detail: front
+vowels and `j` create the palatal environment in which plain `k` and `g` cease
+to behave as plain velars [@RingeTaylor2014, pp. 213--214, §6.4.1].
 
 Taken together, these accounts show a gradual tightening of focus. Luick treats
 palatalization as a broad early movement. Campbell distinguishes more sharply
@@ -120,12 +120,12 @@ composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut) below.
 
 If the rule is moved too early, before the syncope that prepares the consonant
 cluster, it breaks the derivation that should yield *streċċan* ‘stretch’. With
-PGmc <em>*strákkijaną</em> in the wrong order, the model produces *strecċan*
+PGmc \emph{*strákkijaną} in the wrong order, the model produces *strecċan*
 ‘stretch’; the expected Old English form is *streċċan* ‘stretch’.
 
 If it is moved too late, after i-umlaut, it over-palatalizes forms such as
-*cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc <em>*kūi</em> then yields *ċȳ* ‘cows’;
-the expected form is *cȳ* ‘cows’. PGmc <em>*lúnganjō</em> yields *lunġen*
+*cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc \emph{*kūi} then yields *ċȳ* ‘cows’;
+the expected form is *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen*
 ‘lungs’; the expected form is *lungen* ‘lungs’.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer

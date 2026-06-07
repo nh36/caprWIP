@@ -160,8 +160,8 @@ fronting, raising, and diphthongal adjustments composed in order.
 Chronologically, the composite rule must follow [velar palatalization before
 front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization). If it is
 moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
-over-palatalized. PGmc <em>*kūi</em> yields *ċȳ* ‘cows’; the expected form is
-*cȳ* ‘cows’. PGmc <em>*lúnganjō</em> yields *lunġen* ‘lungs’; the expected form
+over-palatalized. PGmc \emph{*kūi} yields *ċȳ* ‘cows’; the expected form is
+*cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’; the expected form
 is *lungen* ‘lungs’.
 
 Those failures show that the broad umlautal rule needs an earlier terminus post
@@ -205,8 +205,8 @@ process [@Fulk2018, p. 74, §4.13].
 
 Its place is later than [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
 If this rule is moved too early, the later ordering is constrained by forms such
-as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc <em>*géftiz</em> then yields
-*ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc <em>*skáiθiz</em>
+as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc \emph{*géftiz} then yields
+*ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc \emph{*skáiθiz}
 yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
 
 No tested lexical item provides a comparably precise later terminus ante quem.

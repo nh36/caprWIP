@@ -69,6 +69,8 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 3. Do not put Old English forms in code spans unless discussing literal model
    output or code.
 4. Do not italicize or gloss inside FOMA code blocks.
+5. For reconstructed forms, use raw LaTeX emphasis like `\emph{*kūi}` so the
+   visible reconstruction asterisk survives Pandoc/LaTeX cleanly.
 
 ## Chronology
 

@@ -45,11 +45,11 @@ that “after initial velars and *sk had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
 [@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
-such as *weccan* ‘wake’, *licgan* ‘lie’, *lecgan* ‘lay’, *secg* ‘retainer’,
-*ecg* ‘edge’, *wicg* ‘horse’, and *brycg* ‘bridge’, illustrate the same point
-in lexical detail: front vowels and `j` create the palatal environment in which
-plain `k` and `g` cease to behave as plain velars
-[@RingeTaylor2014, pp. 213--214, §6.4.1].
+such as \emph{weccan} ‘wake’, \emph{licgan} ‘lie’, \emph{lecgan} ‘lay’,
+\emph{secg} ‘retainer’, \emph{ecg} ‘edge’, \emph{wicg} ‘horse’, and
+\emph{brycg} ‘bridge’, illustrate the same point in lexical detail: front
+vowels and `j` create the palatal environment in which plain `k` and `g` cease
+to behave as plain velars [@RingeTaylor2014, pp. 213--214, §6.4.1].
 
 Taken together, these accounts show a gradual tightening of focus. Luick treats
 palatalization as a broad early movement. Campbell distinguishes more sharply
@@ -130,12 +130,12 @@ composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut) below.
 
 If the rule is moved too early, before the syncope that prepares the consonant
 cluster, it breaks the derivation that should yield *streċċan* ‘stretch’. With
-PGmc <em>*strákkijaną</em> in the wrong order, the model produces *strecċan*
+PGmc \emph{*strákkijaną} in the wrong order, the model produces *strecċan*
 ‘stretch’; the expected Old English form is *streċċan* ‘stretch’.
 
 If it is moved too late, after i-umlaut, it over-palatalizes forms such as
-*cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc <em>*kūi</em> then yields *ċȳ* ‘cows’;
-the expected form is *cȳ* ‘cows’. PGmc <em>*lúnganjō</em> yields *lunġen*
+*cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc \emph{*kūi} then yields *ċȳ* ‘cows’;
+the expected form is *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen*
 ‘lungs’; the expected form is *lungen* ‘lungs’.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
@@ -319,8 +319,8 @@ fronting, raising, and diphthongal adjustments composed in order.
 Chronologically, the composite rule must follow [velar palatalization before
 front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization). If it is
 moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
-over-palatalized. PGmc <em>*kūi</em> yields *ċȳ* ‘cows’; the expected form is
-*cȳ* ‘cows’. PGmc <em>*lúnganjō</em> yields *lunġen* ‘lungs’; the expected form
+over-palatalized. PGmc \emph{*kūi} yields *ċȳ* ‘cows’; the expected form is
+*cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’; the expected form
 is *lungen* ‘lungs’.
 
 Those failures show that the broad umlautal rule needs an earlier terminus post
@@ -364,8 +364,8 @@ process [@Fulk2018, p. 74, §4.13].
 
 Its place is later than [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
 If this rule is moved too early, the later ordering is constrained by forms such
-as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc <em>*géftiz</em> then yields
-*ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc <em>*skáiθiz</em>
+as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc \emph{*géftiz} then yields
+*ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc \emph{*skáiθiz}
 yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
 
 No tested lexical item provides a comparably precise later terminus ante quem.
@@ -431,7 +431,7 @@ but not exact. Fulk formulates the tendency at the level of `mn` clusters and
 illustrates it with *heofon* ‘heaven’ and *fæstenn* ‘fasting’
 [@Fulk2018, p. 121, §6.11]. Ringe and Taylor show the same kind of development
 in *enetre* ‘yearling’ [@RingeTaylor2014, p. 282]. Campbell’s “heofon is for
-older hefzen” and Hogg’s sequence <em>*hefon > heofon</em> preserve outcomes
+older hefzen” and Hogg’s sequence \emph{*hefon > heofon} preserve outcomes
 that the present implementation wants to keep visible [@Campbell1959, p. 155;
 @Hogg1992, p. 112]. The formal rule is therefore narrower than the total set of
 handbook remarks: it models one plausible recurrent environment and does not

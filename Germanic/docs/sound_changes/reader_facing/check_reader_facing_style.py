@@ -61,6 +61,7 @@ OE_CODE_SPAN_RE = re.compile(
 GLOSS_BACKTICK_RE = re.compile(r"`[A-Za-z][A-Za-z -]*'")
 ITALIC_ENGLISH_RE = re.compile(r"_(stretch|cow|lung|gift|sheath|yearling)_", re.I)
 RECONSTRUCTION_MARKDOWN_RE = re.compile(r"\*\\\*")
+RECONSTRUCTION_HTML_RE = re.compile(r"<(?:em|i)>\*")
 
 
 def is_ignorable_line(line: str) -> bool:
@@ -141,6 +142,8 @@ def main() -> int:
                 warnings.append((path, line_number, "gloss:italic-english", line.rstrip()))
             if RECONSTRUCTION_MARKDOWN_RE.search(line):
                 warnings.append((path, line_number, "reconstruction:markdown-asterisk", line.rstrip()))
+            if RECONSTRUCTION_HTML_RE.search(line):
+                warnings.append((path, line_number, "reconstruction:html-emphasis", line.rstrip()))
             if not is_ignorable_line(line) and OE_CODE_SPAN_RE.search(line):
                 warnings.append((path, line_number, "oe-form:code-span", line.rstrip()))
             for label, pattern in NEGATION_PATTERNS:

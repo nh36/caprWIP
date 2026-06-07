@@ -49,7 +49,7 @@ but not exact. Fulk formulates the tendency at the level of `mn` clusters and
 illustrates it with *heofon* ‘heaven’ and *fæstenn* ‘fasting’
 [@Fulk2018, p. 121, §6.11]. Ringe and Taylor show the same kind of development
 in *enetre* ‘yearling’ [@RingeTaylor2014, p. 282]. Campbell’s “heofon is for
-older hefzen” and Hogg’s sequence <em>*hefon > heofon</em> preserve outcomes
+older hefzen” and Hogg’s sequence \emph{*hefon > heofon} preserve outcomes
 that the present implementation wants to keep visible [@Campbell1959, p. 155;
 @Hogg1992, p. 112]. The formal rule is therefore narrower than the total set of
 handbook remarks: it models one plausible recurrent environment and does not
