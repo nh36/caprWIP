@@ -11,8 +11,11 @@ DEFAULT_SKIP = {
     "README.md",
     "style_guide.md",
     "source_note.md",
+    "source_note_pilot_02.md",
     "ai_style_audit_checklist.md",
     "reader_facing_pilot_01.md",
+    "reader_facing_pilot_02.md",
+    "reader_facing_pilot_02_report.md",
 }
 
 NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [

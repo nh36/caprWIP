@@ -14,6 +14,13 @@ The present pilot contains three deliberately different cases:
 3. `058-nasal-dissimilation.md` — a residual change with thin source support and
    boundary-limited chronology.
 
+An expanded local batch now also exists for a separate pilot-02 build:
+
+1. `049-050-b-allophony-and-sievers-law-syncope.md`
+2. `051-sk-palatalization.md`
+3. `053-054-pre-umlaut-bridge-and-w-loss.md`
+4. `057-j-cluster-coalescence.md`
+
 ## Current scope
 
 These files do **not** replace the existing sound-change reports. They are a
@@ -32,6 +39,17 @@ This writes:
 
 - `reader_facing_pilot_01.md`
 - `reader_facing_pilot_01.pdf`
+
+To build the expanded batch without altering the original pilot target, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_pilot_02_docker.sh
+```
+
+This writes:
+
+- `reader_facing_pilot_02.md`
+- `reader_facing_pilot_02.pdf`
 
 ## Style audit workflow
 
