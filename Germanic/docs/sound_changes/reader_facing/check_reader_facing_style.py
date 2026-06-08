@@ -18,6 +18,8 @@ DEFAULT_SKIP = {
     "reader_facing_pilot_02_report.md",
     "reader_facing_local_section_01.md",
     "reader_facing_local_section_01_report.md",
+    "reader_facing_local_section_02.md",
+    "reader_facing_local_section_02_report.md",
 }
 
 NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [

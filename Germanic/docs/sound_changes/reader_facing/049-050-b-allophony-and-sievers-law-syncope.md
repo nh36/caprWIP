@@ -20,8 +20,8 @@ law as real historical material in weak verbs and related formations
 [@Adamczyk2001]. Fulk gives the compact comparative summary through familiar
 forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
 [@Fulk2018, p. 28, §6.15]. The point of keeping the two changes together is
-therefore practical and chronological. The allophonic distribution of *b needs a
-brief place in the book, and Sievers-law syncope is the last narrow feeder
+therefore practical and chronological. The behavior of Germanic \emph{*b} still
+needs a brief place in the book, and Sievers-law syncope is the last narrow feeder
 before the palatalization sequence begins in earnest.
 
 ## Distribution of *b* after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony}
@@ -37,8 +37,8 @@ define PGmcBAllophony [
 ];
 ```
 
-In prose, the rule says that *b becomes a fricative after vowels and liquids,
-while geminate *bb keeps the stop value.
+In prose, the rule says that \emph{*b} becomes a fricative after vowels and
+liquids, while geminate \emph{*bb} keeps the stop value.
 
 Historically, this is the sort of narrow distributional statement that the
 handbooks place within the consonant system and discuss only briefly on its own.
@@ -68,8 +68,8 @@ Its place in the sequence is clearer than that of the allophony rule. The
 change must already have happened before [velar palatalization before front
 vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization), because the
 cluster behind *streċċan* ‘stretch’ depends on the syncope. With PGmc
-\emph{*strákkijaną} in the wrong order, the derivation stops at *strecċan*
-‘stretch’; the expected Old English form is *streċċan* ‘stretch’. That is a real chronological
+\emph{*strákkijaną} in the wrong order, the derivation yields *strecċan*
+‘stretch’. The expected Old English form is *streċċan* ‘stretch’. That is a real chronological
 consequence. No equally precise earlier lexical breakpoint fixes how far back
 the syncope must stand, so the historical picture remains asymmetric. The rule
 is secure as an immediate feeder into the palatalization zone, even though its

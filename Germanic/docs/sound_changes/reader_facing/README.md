@@ -63,6 +63,18 @@ This writes:
 - `reader_facing_local_section_01.md`
 - `reader_facing_local_section_01.pdf`
 
+To extend that ordered section rightward through back mutation and the two short
+weak-tail notes, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_02_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_02.md`
+- `reader_facing_local_section_02.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
