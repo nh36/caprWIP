@@ -31,7 +31,7 @@ outcomes to a more precise phonological environment involving adjacency and
 syllable structure.
 
 Ringe and Taylor make the chronological relation still clearer. When they write
-that “after initial velars and *sk had been palatalized” West-Saxon
+that “after initial velars and \emph{*sk} had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
 [@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
@@ -51,7 +51,7 @@ change belongs to a larger palatalizing environment, and it must be kept
 distinct from neighboring processes if the sequence of developments is to be
 described accurately.
 
-## Palatalization of k before front vowels and j (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront}
+## SC052. Palatalization of \emph{*k} before front vowels and \emph{*j} (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront}
 
 The first part of the implementation isolates the `k`-side environments of the
 change.
@@ -88,7 +88,7 @@ Within the present implementation, this helper rule is not ordered separately
 from the broader velar-palatalization rule below. Its chronology is therefore
 that of the larger rule it feeds.
 
-## Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
+## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
 The broader rule adds the `g` environments and composes them with the `k`
 palatalization rule above.

@@ -41,6 +41,18 @@ META_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("meta:deserve section", re.compile(r"deserve(?:s|d)?[^.\n]{0,40}\bsection\b", re.I)),
     ("meta:this section should", re.compile(r"\bthis section should\b", re.I)),
     ("meta:this chapter should", re.compile(r"\bthis chapter should\b", re.I)),
+    ("meta:the chapter should", re.compile(r"\bthe chapter should\b", re.I)),
+    ("meta:the note should", re.compile(r"\bthe note should\b", re.I)),
+    ("meta:this chapter is meant to", re.compile(r"\bthis chapter is meant to\b", re.I)),
+    ("meta:keep visible", re.compile(r"\bkeeps?\b[^.\n]{0,40}\bvisible\b", re.I)),
+    ("meta:larger chapter of its own", re.compile(r"larger chapter of (?:its|their) own", re.I)),
+    ("meta:extension", re.compile(r"\bextension\b", re.I)),
+    ("meta:local section", re.compile(r"\blocal section\b", re.I)),
+    ("meta:build", re.compile(r"\bbuild(?: target| path| script| layer)?\b", re.I)),
+    ("meta:project", re.compile(r"\bproject\b", re.I)),
+    ("meta:workflow", re.compile(r"\bworkflow\b", re.I)),
+    ("meta:source report", re.compile(r"\bsource report\b", re.I)),
+    ("meta:manifest", re.compile(r"\bmanifest\b", re.I)),
     ("meta:development section", re.compile(r"Development of the discussion", re.I)),
     ("meta:remaining cautions", re.compile(r"Remaining cautions", re.I)),
     ("meta:pilot", re.compile(r"\bpilot\b", re.I)),
@@ -69,6 +81,9 @@ GLOSS_BACKTICK_RE = re.compile(r"`[A-Za-z][A-Za-z -]*'")
 ITALIC_ENGLISH_RE = re.compile(r"_(stretch|cow|lung|gift|sheath|yearling)_", re.I)
 RECONSTRUCTION_MARKDOWN_RE = re.compile(r"\*\\\*")
 RECONSTRUCTION_HTML_RE = re.compile(r"<(?:em|i)>\*")
+INLINE_CODE_RE = re.compile(r"`[^`]*`")
+SAFE_LATEX_RE = re.compile(r"\\emph\{[^}]*\}")
+BARE_STAR_TOKEN_RE = re.compile(r"\*[-\wþðæǣȳċġƿȝʃʒʧʤβ]+(?:\*)?", re.UNICODE)
 
 
 def is_ignorable_line(line: str) -> bool:
@@ -96,6 +111,21 @@ def iter_target_files(include_all: bool) -> list[Path]:
     if include_all:
         return files
     return [path for path in files if path.name not in DEFAULT_SKIP]
+
+
+def bare_star_matches(line: str) -> list[str]:
+    masked = INLINE_CODE_RE.sub("", line)
+    masked = SAFE_LATEX_RE.sub("", masked)
+    masked = masked.replace(r"\*", "")
+    matches: list[str] = []
+    for match in BARE_STAR_TOKEN_RE.finditer(masked):
+        token = match.group(0)
+        if token.endswith("*"):
+            inner = token[1:-1]
+            if inner and re.fullmatch(r"[\wþðæǣȳċġƿȝʃʒʧʤβ]+", inner, re.UNICODE):
+                continue
+        matches.append(token)
+    return matches
 
 
 def define_warnings(path: Path) -> list[tuple[Path, int, str, str]]:
@@ -141,6 +171,9 @@ def main() -> int:
                 continue
             if "—" in line and not is_ignorable_line(line):
                 warnings.append((path, line_number, "emdash", line.rstrip()))
+            if stripped.startswith("## ") and stripped != "## Historical discussion":
+                if not re.match(r"## SC\d{3}\.\s", stripped):
+                    warnings.append((path, line_number, "heading:missing-sc-number", line.rstrip()))
             if colon_list_match(line):
                 warnings.append((path, line_number, "colon-list", line.rstrip()))
             if GLOSS_BACKTICK_RE.search(line):
@@ -151,12 +184,16 @@ def main() -> int:
                 warnings.append((path, line_number, "reconstruction:markdown-asterisk", line.rstrip()))
             if RECONSTRUCTION_HTML_RE.search(line):
                 warnings.append((path, line_number, "reconstruction:html-emphasis", line.rstrip()))
+            if bare_star_matches(line):
+                warnings.append((path, line_number, "reconstruction:bare-star-form", line.rstrip()))
             if not is_ignorable_line(line) and OE_CODE_SPAN_RE.search(line):
                 warnings.append((path, line_number, "oe-form:code-span", line.rstrip()))
             for label, pattern in NEGATION_PATTERNS:
                 if pattern.search(line):
                     warnings.append((path, line_number, label, line.rstrip()))
             for label, pattern in META_PATTERNS:
+                if label == "meta:internal id" and stripped.startswith("## SC"):
+                    continue
                 if pattern.search(line):
                     warnings.append((path, line_number, label, line.rstrip()))
 

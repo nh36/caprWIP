@@ -12,6 +12,9 @@ assembled_pdf="${script_dir}/reader_facing_local_section_02.pdf"
 
 cd "${repo_root}"
 
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_section_order.py \
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_02_docker.sh
+
 python3 - <<'PY'
 from pathlib import Path
 
@@ -45,6 +48,17 @@ for idx, name in enumerate(chapter_files):
     if idx:
         parts.extend(["", r"\newpage", ""])
     parts.append((root / name).read_text(encoding="utf-8").rstrip())
+
+parts.extend([
+    "",
+    r"\newpage",
+    "",
+    "# References",
+    "",
+    "::: {#refs}",
+    ":::",
+    "",
+])
 
 out.write_text("\n".join(parts), encoding="utf-8")
 PY

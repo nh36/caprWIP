@@ -12,11 +12,11 @@ The sequence is continuous without pretending to be one single historical law. S
 
 The two changes gathered here belong to different historical categories, and
 they sit next to each other in the sequence that leads into Old English
-palatalization. The first is the positional alternation of Germanic *b. Hogg
+palatalization. The first is the positional alternation of Germanic \emph{*b}. Hogg
 states the Old English distribution clearly: /b/ is a stop initially, after
 nasals, and in gemination, while the same segment is otherwise realized as a
 voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
-the broader West Germanic background by treating Proto-West-Germanic *b as a
+the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
 segment whose stop and fricative values depend on position
 [@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
 fricative pattern in Old English [@Luick1914, p. 107].
@@ -32,9 +32,9 @@ therefore practical and chronological. The behavior of Germanic \emph{*b} still
 needs a brief place in the book, and Sievers-law syncope is the last narrow feeder
 before the palatalization sequence begins in earnest.
 
-## Distribution of *b* after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony}
+## SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony}
 
-The first rule formalizes the stop-fricative alternation of Germanic *b.
+The first rule formalizes the stop-fricative alternation of Germanic \emph{*b}.
 
 ```foma
 define PGmcBAllophony [
@@ -58,9 +58,9 @@ No equally sharp later lexical breakpoint emerges within the tested sequence, so
 the rule is best read as an early distributional adjustment whose later limit is
 less tightly fixed than its earlier dependency.
 
-## Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
+## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
 
-The second rule removes the Sievers-law *i before *j after a consonant.
+The second rule removes the Sievers-law \emph{*i} before \emph{*j} after a consonant.
 
 ```foma
 define SieversLawSyncope [
@@ -68,8 +68,8 @@ define SieversLawSyncope [
 ];
 ```
 
-In plain language, the rule contracts the heavier *-CijV-* sequence to
-*-CjV-*. That is why it belongs to the historical aftermath of Sievers' Law and
+In plain language, the rule contracts the heavier \emph{*-CijV-*} sequence to
+\emph{*-CjV-*}. That is why it belongs to the historical aftermath of Sievers' Law and
 stands apart from the earlier stop-fricative distribution.
 
 Its place in the sequence is clearer than that of the allophony rule. The
@@ -85,18 +85,18 @@ earlier limit is less sharply bounded.
 
 \newpage
 
-# Palatalization of *sk* to *sc*
+# Palatalization of \emph{*sk} to \emph{*sc}
 
 ## Historical discussion
 
-The palatalization of *sk to Old English *sc is one of the recognizable early
+The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the recognizable early
 cluster changes in the larger palatalization zone. Campbell distinguishes the
-cluster from plain velars when he remarks that *sk is especially prone to
+cluster from plain velars when he remarks that \emph{*sk} is especially prone to
 palatalization and assibilation [@Campbell1959, p. 278, §440]. Hogg gives the
-same change a clearer structural place by treating *sk beside the palatalization
+same change a clearer structural place by treating \emph{*sk} beside the palatalization
 of plain velars and before the later West Saxon diphthongal developments
 [@Hogg1992, pp. 106--107, 111--112]. Ringe and Taylor make the same sequence
-explicit when they distinguish the earlier palatalization of velars and *sk from
+explicit when they distinguish the earlier palatalization of velars and \emph{*sk} from
 the later diphthongization after already palatal consonants
 [@RingeTaylor2014, §§6.4.1, 6.5.1].
 
@@ -104,15 +104,15 @@ Luick and Sievers-Brunner are especially useful for the larger frame. Both treat
 the cluster change as part of a broader early movement toward palatal
 articulation, while still allowing later vowel consequences to form a different
 chapter of the history [@Luick1914, §168; @SieversBrunner1965, §91.a]. Fulk's
-summary is the most concise warning against overextension: Old English *sc is
+summary is the most concise warning against overextension: Old English \emph{*sc} is
 palatal except in the well-known back-vowel environments that preserve harder
 outcomes [@Fulk2018, p. 28]. The result is a historically clear rule, but not an
 excuse to merge the whole palatalization and umlaut region into one undivided
 chapter.
 
-## Palatalization of *sk* (`OESkPalatalization`) {#rule-OESkPalatalization}
+## SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization}
 
-The implementation keeps the *sk rule explicit.
+The implementation states the \emph{*sk} rule explicitly.
 
 ```foma
 define OESkPalatalization [
@@ -128,8 +128,8 @@ define OESkPalatalization [
 ];
 ```
 
-In prose, the rule turns *sk into a palatal outcome in the environments that
-lead to Old English *sc.
+In prose, the rule turns \emph{*sk} into a palatal outcome in the environments
+that lead to Old English \emph{*sc}.
 
 Its historical place is between the earlier restoration and the later palatal
 vowel developments. If it is moved too early, the forms behind *flasce* ‘flask’
@@ -181,7 +181,7 @@ outcomes to a more precise phonological environment involving adjacency and
 syllable structure.
 
 Ringe and Taylor make the chronological relation still clearer. When they write
-that “after initial velars and *sk had been palatalized” West-Saxon
+that “after initial velars and \emph{*sk} had been palatalized” West-Saxon
 diphthongization follows, plain velar palatalization becomes an earlier
 consonantal stage presupposed by later vowel developments
 [@RingeTaylor2014, p. 215, §6.5.1]. Their own examples of the plain-velar rule,
@@ -201,7 +201,7 @@ change belongs to a larger palatalizing environment, and it must be kept
 distinct from neighboring processes if the sequence of developments is to be
 described accurately.
 
-## Palatalization of k before front vowels and j (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront}
+## SC052. Palatalization of \emph{*k} before front vowels and \emph{*j} (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront}
 
 The first part of the implementation isolates the `k`-side environments of the
 change.
@@ -238,7 +238,7 @@ Within the present implementation, this helper rule is not ordered separately
 from the broader velar-palatalization rule below. Its chronology is therefore
 that of the larger rule it feeds.
 
-## Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
+## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
 The broader rule adds the `g` environments and composes them with the `k`
 palatalization rule above.
@@ -297,12 +297,12 @@ same scope.
 
 \newpage
 
-# The pre-umlaut bridge and loss of *w* before *i*
+# The pre-umlaut bridge and loss of \emph{*w} before \emph{*i}
 
 ## Historical discussion
 
 The two rules gathered here are unequal in weight. The first is a narrow loss of
-*w after velars in the *ngw sequence. Ringe and Taylor make the historical core
+\emph{*w} after velars in the \emph{*ngw} sequence. Ringe and Taylor make the historical core
 clear when they derive PGmc \emph{*singwan} to Old English *singan* ‘sing’
 [@RingeTaylor2014, §6.4.2]. That gives the change a real comparative anchor, but
 it does not turn it into a large chapter of its own. It is the kind of small
@@ -310,17 +310,17 @@ cleanup rule that needs a place in the sequence without claiming the status of a
 major handbook law.
 
 The second rule is historically more legible. Campbell notes the recurring loss
-of *w before *i in unstressed position [@Campbell1959, §406]. Ringe and Taylor
-trace the development of *sǣ* ‘sea’ from earlier *saiwi- / *sawi-
+of \emph{*w} before \emph{*i} in unstressed position [@Campbell1959, §406]. Ringe and Taylor
+trace the development of *sǣ* ‘sea’ from earlier \emph{*saiwi-} / \emph{*sawi-}
 [@RingeTaylor2014, §6.7.1], and Luick gives the same trajectory in his own
 historical grammar [@Luick1914, §187]. The chapter therefore belongs in the
 stretch between plain palatalization and the umlautal core, but it should keep
 the asymmetry visible: the first rule is a narrow bridge, the second is a
 stronger glide-loss development with a specific lexical witness.
 
-## Loss of *w* after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss}
+## SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss}
 
-The first rule handles the *ngw simplification.
+The first rule handles the \emph{*ngw} simplification.
 
 ```foma
 define OEPostVelarWLoss [
@@ -328,7 +328,7 @@ define OEPostVelarWLoss [
 ];
 ```
 
-In prose, the rule removes *w after the velar cluster in forms of the
+In prose, the rule removes \emph{*w} after the velar cluster in forms of the
 \emph{*singwan} type.
 
 Historically, this is a very small rule. It keeps developments such as *singan*
@@ -338,7 +338,7 @@ later Old English sequence, so the safest reading is modest: this is a local
 bridge rule that belongs before the umlautal chapter without claiming a more
 precise historical frame than the evidence supports.
 
-## Loss of *w* before final *i* (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
+## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
 The second rule is the more historically legible member of the pair.
 
@@ -348,15 +348,15 @@ define OEWLossBeforeI [
 ];
 ```
 
-In prose, the rule removes non-initial *w before final unstressed *i.
+In prose, the rule removes non-initial \emph{*w} before final unstressed \emph{*i}.
 
-The best witness is *sǣ* ‘sea’. Campbell's discussion of the loss of *w before
-*i, Ringe and Taylor's derivation from earlier *saiwi- / *sawi-, and Luick's
+The best witness is *sǣ* ‘sea’. Campbell's discussion of the loss of \emph{*w} before
+\emph{*i}, Ringe and Taylor's derivation from earlier \emph{*saiwi-} / \emph{*sawi-}, and Luick's
 parallel account all point to the same historical consequence
 [@Campbell1959, §406; @RingeTaylor2014, §6.7.1; @Luick1914, §187]. The glide has
 to disappear early enough for the preceding vowel to continue into the later
 fronted and lengthened outcome. If the glide survives too long, the derivation
-retains *w and misses *sǣ* ‘sea’.
+retains \emph{*w} and misses *sǣ* ‘sea’.
 
 This is why the chapter belongs immediately before the broader umlautal
 developments discussed in [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
@@ -409,7 +409,7 @@ and a narrower adjoining process affecting words after initial palatals. That
 distinction matters because the two processes act in different environments and
 produce different lexical consequences.
 
-## Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
+## SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
 
 The first component of the implementation handles the broad fronting of vowels
 under the influence of following `i` or `j`.
@@ -450,7 +450,7 @@ classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
 As a component rule, it shares the chronology of [the composite i-umlaut rule
 (`OEIUmlaut`)](#rule-OEIUmlaut).
 
-## Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
+## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
 The second component handles the raising of umlauted `æ` to `e`.
 
@@ -473,7 +473,7 @@ changes again before `m` and `n` in most dialects [@Campbell1959, p. 69, §190],
 and Hogg likewise treats short front vowels as part of the same assimilatory
 system [@Hogg1992, p. 112].
 
-## Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
+## SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
 
 The third component handles the diphthongal outcomes that also undergo
 i-umlaut.
@@ -510,7 +510,7 @@ pp. 112--114]. The present formalization keeps those diphthongal outcomes
 visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
 
-## The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
+## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 The implementation also defines a composite rule that composes the three
 preceding parts.
@@ -541,7 +541,7 @@ formal parts. The composite definition is the point at which the separate
 fronting, raising, and diphthongal effects are treated as one chronological
 event in the Old English sequence.
 
-## West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
+## SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
 
 The narrower West-Saxon rule is treated separately from the broader umlautal
 complex.
@@ -603,12 +603,12 @@ sequence even though the larger palatalization and umlaut chapters carry more of
 the explanatory weight.
 
 That narrower scale matters. Earlier chapters have already established the plain
-velar and *sk palatalizations, and the umlaut chapter has already handled the
+velar and \emph{*sk} palatalizations, and the umlaut chapter has already handled the
 major vowel consequences. The present rule is a later coalescence inside that
 same neighborhood. It deserves explicit prose because the lexical outcomes are
 clear, not because it eclipses the larger processes around it.
 
-## Coalescence of velar + *j* clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence}
+## SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence}
 
 The implementation keeps the later cluster coalescence very small and explicit.
 
@@ -619,7 +619,7 @@ define OEJClusterCoalescence (
 );
 ```
 
-In prose, the rule coalesces *gj and *kj into the palatal outcomes that later
+In prose, the rule coalesces \emph{*gj} and \emph{*kj} into the palatal outcomes that later
 surface in forms such as *bīeġan* ‘bend’ and *sēċan* ‘seek’.
 
 Its earlier dependency is clearer than its later limit. The rule must follow
@@ -628,12 +628,12 @@ because if the coalescence is forced too early the developments behind *bīeġan
 ‘bend’ and *sēċan* ‘seek’ are lost. Related forms such as *fylġan* ‘follow’,
 *heċġ* ‘hedge’, and *sengan* ‘singe’ fail in the same broader palatalization
 zone. No comparably sharp later lexical breakpoint emerges within the remaining
-sequence, so the chapter should stay short and one-sided in its chronology.
+sequence, so the chronology remains short and one-sided.
 
 That modest shape is historically appropriate. The rule is a real later member
 of the palatalization region, but it does not need to absorb the umlautal
-chapter behind it or the nasal-dissimilation chapter that follows it. Its job is
-to show that the later coalescence remains visible in the sequence once the
+chapter behind it or the nasal-dissimilation chapter that follows it. The
+later coalescence remains visible in the sequence once the
 larger neighboring chapters are already in place.
 
 \newpage
@@ -654,7 +654,7 @@ Fulk supplies the clearest general formulation: “In the cluster mn, the first
 consonant tends to lose its nasality by dissimilation, though the results are
 hardly regular” [@Fulk2018, p. 121, §6.11]. Ringe and Taylor stay close to the
 lexical evidence and note that *enetre* ‘yearling’ reflects “loss of the second
-*n by dissimilation” [@RingeTaylor2014, p. 282].
+\emph{*n} by dissimilation” [@RingeTaylor2014, p. 282].
 
 The discussion therefore develops from scattered lexical observations to a more
 explicit but still cautious generalization. Luick preserves the kind of form the
@@ -665,7 +665,7 @@ an exact lexical case in *enetre* ‘yearling’. What emerges is a limited but
 recurring dissimilatory pattern whose scope is far smaller than that of the
 major Old English vowel laws.
 
-## Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation}
+## SC058. Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation}
 
 The implementation formalizes the change as a narrow rule applying in short
 vowel environments before a following `n`.
@@ -690,7 +690,7 @@ illustrates it with *heofon* ‘heaven’ and *fæstenn* ‘fasting’
 [@Fulk2018, p. 121, §6.11]. Ringe and Taylor show the same kind of development
 in *enetre* ‘yearling’ [@RingeTaylor2014, p. 282]. Campbell’s “heofon is for
 older hefzen” and Hogg’s sequence \emph{*hefon > heofon} preserve outcomes
-that the present implementation wants to keep visible [@Campbell1959, p. 155;
+of the same kind as those modeled here [@Campbell1959, p. 155;
 @Hogg1992, p. 112]. The formal rule is therefore narrower than the total set of
 handbook remarks: it models one plausible recurrent environment and does not
 claim to exhaust every dissimilatory development involving nasals.
@@ -724,7 +724,7 @@ English sequence underdetermined.
 
 ## Historical discussion
 
-Back mutation is the substantive center of this small extension. Campbell treats
+Back mutation is the substantive center of this part of the sequence. Campbell treats
 it as a later Old English diphthongizing development before following back
 vowels, and his examples already show why forms such as *heofon* ‘heaven’ are
 historically legible outcomes in their own right
@@ -736,13 +736,13 @@ picture by distinguishing West Saxon forms such as *giefan* ‘give’ and *wefa
 historical phenomenon with its own profile beside the earlier umlautal
 changes [@Fulk2018, §4.8].
 
-That makes this chapter different from the short notes that follow it. Back
+That makes back mutation different from the short notes that follow it. Back
 mutation belongs to the same local stretch of the sequence, but it carries more
 historical weight and clearer lexical consequences. Even so, its later relation
-lies beyond the present section, so the chapter should stay local and keep the
-later weak-tail region as a forward reference only.
+lies beyond this immediate stretch of the sequence, and the later weak-tail
+region is best kept as a forward reference only.
 
-## Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
+## SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
 The implementation keeps the change as one explicit rule.
 
@@ -764,11 +764,11 @@ expected form is *ġiefan* ‘give’. \emph{*stélaną} likewise produces *steo
 ‘steal’; the expected form is *stelan* ‘steal’. The later side is different. If
 the rule is pushed too far to the right, \emph{*wébaną} yields *weofan*
 ‘weave’; the expected form is *wefan* ‘weave’.
-That later edge is real, but it points beyond the present local section into the
+That later edge is real, but it points beyond the present stretch of the sequence into the
 later weak-tail reductions, so here it should remain only a forward reference.
 
-This is why the chapter can act as the center of the extension without claiming
-that the following weak-tail notes belong to the same historical law. The rule
+This is why the change can serve as the center here without implying that the
+following weak-tail notes belong to the same historical law. The rule
 marks a real local seam, but the section after it immediately becomes narrower.
 
 \newpage
@@ -777,19 +777,19 @@ marks a real local seam, but the section after it immediately becomes narrower.
 
 ## Historical discussion
 
-This note stays brief. Campbell and Ringe and Taylor both support the
+The evidence is narrow enough that the discussion can stay brief. Campbell and Ringe and Taylor both support the
 development behind forms such as *miht* ‘might’ and *niht* ‘night’, while Fulk's
 broader chronology makes clear that this material belongs beside the umlaut and
 palatal-vowel region as a subordinate note beside it
 [@Campbell1959, §§248--251; @RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4;
 @Fulk2018, §§4.7, 4.13].
 
-That is why the note belongs here after back mutation but still points back
-to the earlier umlautal chapter. The historical phenomenon is real, yet its
-place in the sequence is one-sided. The chapter should therefore register the
-change clearly and then stop.
+That is why the note belongs here after back mutation even though its clearest
+historical tie still reaches back to the earlier umlautal chapter. The
+phenomenon is real, yet its place in the sequence is one-sided. The evidence is
+clear enough to state and narrow enough to remain brief.
 
-## West Saxon palatal umlaut before *h*-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut}
+## SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut}
 
 The implementation treats the West Saxon change as one explicit rule.
 
@@ -810,7 +810,7 @@ define OEWsPalatalUmlaut [
 ];
 ```
 
-In prose, the rule reduces short diphthongs to *i before the relevant *h*
+In prose, the rule reduces short diphthongs to \emph{*i} before the relevant \emph{*h}
 clusters.
 
 The crucial point is its earlier dependency. The rule must follow [the composite
@@ -826,7 +826,7 @@ afterpiece to the umlaut chapter, not as the start of a new larger unit.
 
 ## Historical discussion
 
-This is the narrowest chapter in the extension. The development is historically
+The development belongs to the narrower end of the later weak-tail sequence. It is historically
 legible through the pathway that leads to *dōn* ‘do’, and the broader late
 weak-tail setting is supported by the usual handbook discussions of apocope and
 related reduction [@Campbell1959, §§345--349; @Hogg1992, pp. 120--121;
@@ -834,11 +834,10 @@ related reduction [@Campbell1959, §§345--349; @Hogg1992, pp. 120--121;
 sequence, in the older development of \emph{*dōną}. That keeps the note real,
 while also keeping it small.
 
-Within the present section the chapter follows back mutation and West Saxon
-palatal umlaut only because the sequence continues onward through this local run
-of later changes. It should not be made heavier than that local role requires.
+Within this later run of changes it follows back mutation and West Saxon
+palatal umlaut, but the evidence remains slighter than theirs.
 
-## Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss}
+## SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss}
 
 The implementation keeps the change as one short rule.
 
@@ -849,16 +848,25 @@ define OEWeakTailNasalLoss [
 ];
 ```
 
-In prose, the rule reduces final weak-tail endings of the type *-ną and *-mą to
-plain final *-n and *-m.
+In prose, the rule reduces final weak-tail endings of the type \emph{*-ną} and
+\emph{*-mą} to plain final \emph{*-n} and \emph{*-m}.
 
 The clearest lexical witness is the pathway to *dōn* ‘do’. If the rule is moved
-too early, before the older reduction that already shapes the *dōną sequence,
+too early, before the older reduction that already shapes the \emph{*dōną}
+sequence,
 the derivation no longer reaches *dōn* ‘do’ at all. No equally sharp later
 breakpoint appears within the tested sequence. That is why the note remains
 one-sided and why its earlier relation should be understood as a distant
-cross-reference only and should not reshape this local section.
+cross-reference only and should not reshape the broader sequence.
 
-The chapter is therefore meant to close the extension quietly. It keeps one real
-late weak-tail adjustment visible in order, but it does not try to turn that
-small adjustment into a larger chapter of its own.
+The development is best treated as a small late weak-tail adjustment. It remains
+visible in the sequence because it affects the pathway to *dōn* ‘do’, but the
+evidence does not support treating it as the center of a wider historical
+development.
+
+\newpage
+
+# References
+
+::: {#refs}
+:::

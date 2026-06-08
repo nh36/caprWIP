@@ -42,7 +42,7 @@ and a narrower adjoining process affecting words after initial palatals. That
 distinction matters because the two processes act in different environments and
 produce different lexical consequences.
 
-## Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
+## SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
 
 The first component of the implementation handles the broad fronting of vowels
 under the influence of following `i` or `j`.
@@ -83,7 +83,7 @@ classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
 As a component rule, it shares the chronology of [the composite i-umlaut rule
 (`OEIUmlaut`)](#rule-OEIUmlaut).
 
-## Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
+## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
 The second component handles the raising of umlauted `æ` to `e`.
 
@@ -106,7 +106,7 @@ changes again before `m` and `n` in most dialects [@Campbell1959, p. 69, §190],
 and Hogg likewise treats short front vowels as part of the same assimilatory
 system [@Hogg1992, p. 112].
 
-## Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
+## SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
 
 The third component handles the diphthongal outcomes that also undergo
 i-umlaut.
@@ -143,7 +143,7 @@ pp. 112--114]. The present formalization keeps those diphthongal outcomes
 visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
 
-## The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
+## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 The implementation also defines a composite rule that composes the three
 preceding parts.
@@ -174,7 +174,7 @@ formal parts. The composite definition is the point at which the separate
 fronting, raising, and diphthongal effects are treated as one chronological
 event in the Old English sequence.
 
-## West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
+## SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
 
 The narrower West-Saxon rule is treated separately from the broader umlautal
 complex.

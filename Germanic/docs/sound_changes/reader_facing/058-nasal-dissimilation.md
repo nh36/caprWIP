@@ -14,7 +14,7 @@ Fulk supplies the clearest general formulation: “In the cluster mn, the first
 consonant tends to lose its nasality by dissimilation, though the results are
 hardly regular” [@Fulk2018, p. 121, §6.11]. Ringe and Taylor stay close to the
 lexical evidence and note that *enetre* ‘yearling’ reflects “loss of the second
-*n by dissimilation” [@RingeTaylor2014, p. 282].
+\emph{*n} by dissimilation” [@RingeTaylor2014, p. 282].
 
 The discussion therefore develops from scattered lexical observations to a more
 explicit but still cautious generalization. Luick preserves the kind of form the
@@ -25,7 +25,7 @@ an exact lexical case in *enetre* ‘yearling’. What emerges is a limited but
 recurring dissimilatory pattern whose scope is far smaller than that of the
 major Old English vowel laws.
 
-## Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation}
+## SC058. Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation}
 
 The implementation formalizes the change as a narrow rule applying in short
 vowel environments before a following `n`.
@@ -50,7 +50,7 @@ illustrates it with *heofon* ‘heaven’ and *fæstenn* ‘fasting’
 [@Fulk2018, p. 121, §6.11]. Ringe and Taylor show the same kind of development
 in *enetre* ‘yearling’ [@RingeTaylor2014, p. 282]. Campbell’s “heofon is for
 older hefzen” and Hogg’s sequence \emph{*hefon > heofon} preserve outcomes
-that the present implementation wants to keep visible [@Campbell1959, p. 155;
+of the same kind as those modeled here [@Campbell1959, p. 155;
 @Hogg1992, p. 112]. The formal rule is therefore narrower than the total set of
 handbook remarks: it models one plausible recurrent environment and does not
 claim to exhaust every dissimilatory development involving nasals.

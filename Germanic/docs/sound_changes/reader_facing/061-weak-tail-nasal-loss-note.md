@@ -2,7 +2,7 @@
 
 ## Historical discussion
 
-This is the narrowest chapter in the extension. The development is historically
+The development belongs to the narrower end of the later weak-tail sequence. It is historically
 legible through the pathway that leads to *dōn* ‘do’, and the broader late
 weak-tail setting is supported by the usual handbook discussions of apocope and
 related reduction [@Campbell1959, §§345--349; @Hogg1992, pp. 120--121;
@@ -10,11 +10,10 @@ related reduction [@Campbell1959, §§345--349; @Hogg1992, pp. 120--121;
 sequence, in the older development of \emph{*dōną}. That keeps the note real,
 while also keeping it small.
 
-Within the present section the chapter follows back mutation and West Saxon
-palatal umlaut only because the sequence continues onward through this local run
-of later changes. It should not be made heavier than that local role requires.
+Within this later run of changes it follows back mutation and West Saxon
+palatal umlaut, but the evidence remains slighter than theirs.
 
-## Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss}
+## SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss}
 
 The implementation keeps the change as one short rule.
 
@@ -25,16 +24,18 @@ define OEWeakTailNasalLoss [
 ];
 ```
 
-In prose, the rule reduces final weak-tail endings of the type *-ną and *-mą to
-plain final *-n and *-m.
+In prose, the rule reduces final weak-tail endings of the type \emph{*-ną} and
+\emph{*-mą} to plain final \emph{*-n} and \emph{*-m}.
 
 The clearest lexical witness is the pathway to *dōn* ‘do’. If the rule is moved
-too early, before the older reduction that already shapes the *dōną sequence,
+too early, before the older reduction that already shapes the \emph{*dōną}
+sequence,
 the derivation no longer reaches *dōn* ‘do’ at all. No equally sharp later
 breakpoint appears within the tested sequence. That is why the note remains
 one-sided and why its earlier relation should be understood as a distant
-cross-reference only and should not reshape this local section.
+cross-reference only and should not reshape the broader sequence.
 
-The chapter is therefore meant to close the extension quietly. It keeps one real
-late weak-tail adjustment visible in order, but it does not try to turn that
-small adjustment into a larger chapter of its own.
+The development is best treated as a small late weak-tail adjustment. It remains
+visible in the sequence because it affects the pathway to *dōn* ‘do’, but the
+evidence does not support treating it as the center of a wider historical
+development.

@@ -2,7 +2,7 @@
 
 ## Historical discussion
 
-Back mutation is the substantive center of this small extension. Campbell treats
+Back mutation is the substantive center of this part of the sequence. Campbell treats
 it as a later Old English diphthongizing development before following back
 vowels, and his examples already show why forms such as *heofon* ‘heaven’ are
 historically legible outcomes in their own right
@@ -14,13 +14,13 @@ picture by distinguishing West Saxon forms such as *giefan* ‘give’ and *wefa
 historical phenomenon with its own profile beside the earlier umlautal
 changes [@Fulk2018, §4.8].
 
-That makes this chapter different from the short notes that follow it. Back
+That makes back mutation different from the short notes that follow it. Back
 mutation belongs to the same local stretch of the sequence, but it carries more
 historical weight and clearer lexical consequences. Even so, its later relation
-lies beyond the present section, so the chapter should stay local and keep the
-later weak-tail region as a forward reference only.
+lies beyond this immediate stretch of the sequence, and the later weak-tail
+region is best kept as a forward reference only.
 
-## Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
+## SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
 The implementation keeps the change as one explicit rule.
 
@@ -42,9 +42,9 @@ expected form is *ġiefan* ‘give’. \emph{*stélaną} likewise produces *steo
 ‘steal’; the expected form is *stelan* ‘steal’. The later side is different. If
 the rule is pushed too far to the right, \emph{*wébaną} yields *weofan*
 ‘weave’; the expected form is *wefan* ‘weave’.
-That later edge is real, but it points beyond the present local section into the
+That later edge is real, but it points beyond the present stretch of the sequence into the
 later weak-tail reductions, so here it should remain only a forward reference.
 
-This is why the chapter can act as the center of the extension without claiming
-that the following weak-tail notes belong to the same historical law. The rule
+This is why the change can serve as the center here without implying that the
+following weak-tail notes belong to the same historical law. The rule
 marks a real local seam, but the section after it immediately becomes narrower.

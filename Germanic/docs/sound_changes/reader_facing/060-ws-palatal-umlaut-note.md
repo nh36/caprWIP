@@ -2,19 +2,19 @@
 
 ## Historical discussion
 
-This note stays brief. Campbell and Ringe and Taylor both support the
+The evidence is narrow enough that the discussion can stay brief. Campbell and Ringe and Taylor both support the
 development behind forms such as *miht* ‘might’ and *niht* ‘night’, while Fulk's
 broader chronology makes clear that this material belongs beside the umlaut and
 palatal-vowel region as a subordinate note beside it
 [@Campbell1959, §§248--251; @RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4;
 @Fulk2018, §§4.7, 4.13].
 
-That is why the note belongs here after back mutation but still points back
-to the earlier umlautal chapter. The historical phenomenon is real, yet its
-place in the sequence is one-sided. The chapter should therefore register the
-change clearly and then stop.
+That is why the note belongs here after back mutation even though its clearest
+historical tie still reaches back to the earlier umlautal chapter. The
+phenomenon is real, yet its place in the sequence is one-sided. The evidence is
+clear enough to state and narrow enough to remain brief.
 
-## West Saxon palatal umlaut before *h*-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut}
+## SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut}
 
 The implementation treats the West Saxon change as one explicit rule.
 
@@ -35,7 +35,7 @@ define OEWsPalatalUmlaut [
 ];
 ```
 
-In prose, the rule reduces short diphthongs to *i before the relevant *h*
+In prose, the rule reduces short diphthongs to \emph{*i} before the relevant \emph{*h}
 clusters.
 
 The crucial point is its earlier dependency. The rule must follow [the composite
