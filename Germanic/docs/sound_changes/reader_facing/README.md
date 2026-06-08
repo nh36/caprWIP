@@ -51,6 +51,18 @@ This writes:
 - `reader_facing_pilot_02.md`
 - `reader_facing_pilot_02.pdf`
 
+To build the ordered seven-chapter local section without altering the preserved
+pilot outputs, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_01_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_01.md`
+- `reader_facing_local_section_01.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
