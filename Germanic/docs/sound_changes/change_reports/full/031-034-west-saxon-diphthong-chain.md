@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-`SC031-SC034` is promoted here as a **cautious West Saxon diphthong-chain
+`SC031-SC034` appears here as a **cautious West Saxon diphthong-chain
 report**: a real four-change corridor in the model, not a claim that the
 handbooks themselves present exactly four separate laws matching CAPR's present
 segmentation [@Campbell1959, §120; @Campbell1959, §§170--176, 185, 222--227;
@@ -55,21 +55,21 @@ source tradition is more overlapped and asymmetrical than the transducer layer.
 #### Place in the cascade
 
 This report belongs immediately after `SC030` **OE Au Fronting** and before the
-promoted `SC035-SC037` **Prefix and compound adjustments** bridge. On its
+`SC035-SC037` **Prefix and compound adjustments** bridge. On its
 right, it reaches toward
 three later contexts without collapsing into them: `SC032` points forward to
 `SC040` **OE Med Unstressed U Lowering**, `SC034` points forward to `SC043`
 **Anglo-Frisian Brightening**, and `SC033` points forward to `SC044`
 **OE Breaking**.
 
-That position matters for book architecture. The chapter can now cover the local
+That position matters for narrative shape. The chapter can now cover the local
 West Saxon diphthong corridor as a coherent middle zone, while the already
-promoted `SC043` report remains the dedicated right-hand chapter for the
+`SC043` report remains the dedicated right-hand chapter for the
 brightening pivot rather than being duplicated here.
 
 #### Order evidence
 
-The chronology cards justify promotion, but only if the internal asymmetry stays
+The chronology cards justify the grouping, but only if the internal asymmetry stays
 visible. The strongest local relation is the reciprocal `SC031 < SC034` /
 `SC034` after `SC031` pair. On both sides the witnesses are `dew` and `hew`:
 moving `SC031` later than `SC034`, or `SC034` earlier than `SC031`, restores
@@ -90,7 +90,7 @@ card does not yield an ordinary historical boundary before the bundled
 `PWGmcChanges` runner limit, and the expanded-PWGmc note across `SC008` is
 supplementary only rather than a replacement for the default chronology claim.
 
-`SC034` likewise has a real forward relation into the promoted brightening
+`SC034` likewise has a real forward relation into the brightening
 region. It must precede `SC043`, with the `show` witnesses and the `straw` side
 of the `aw` set showing why the corridor points naturally toward the later
 brightening chapter without becoming identical with it. `SC031`'s own
@@ -99,13 +99,13 @@ and must not be rewritten as the default left boundary of the report.
 
 #### Interpretation
 
-This chapter is valuable precisely because it promotes a real region without
+This chapter is valuable precisely because it captures a real region without
 flattening its internal structure. `SC031` and `SC034` are the local reciprocal
 core. `SC032` and `SC033` remain inside the report because they belong to the
 same West Saxon diphthongal corridor, but they are presented as subordinate or
 flank material rather than as equal historical centers.
 
-That makes the report a useful model for later promotions. CAPR can promote a
+That makes the report a useful model for later grouped reports. CAPR can sustain a
 multi-change corridor even when the handbooks support the region more strongly
 than they support the model's exact segmentation. The result is more than a
 placeholder, but still careful about the difference between source tradition,
@@ -119,7 +119,6 @@ real ordering constraint, but not a tidy set of alternate surface reflexes.
 their expanded-PWGmc supplementary notes. `SC033` should also remain somewhat
 open on the right, since its broad relation to `SC044` does not make it a tight
 local pair in the way that `SC031` and `SC034` are. Finally, this report should
-not duplicate the separate `SC043` brightening chapter. If later book
-architecture ever demands a narrower chapter centered only on the `SC031` /
+not duplicate the separate `SC043` brightening chapter. If later narrative shape ever demands a narrower chapter centered only on the `SC031` /
 `SC034` pair, that would be a revision of chapter shape, not a discovery that
 the present corridor was unreal.

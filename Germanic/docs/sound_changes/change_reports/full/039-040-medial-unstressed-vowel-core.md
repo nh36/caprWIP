@@ -4,9 +4,9 @@
 
 #### Historical formulation
 
-`SC039-SC040` is promoted here as a **narrow adjacent medial-vowel core
+`SC039-SC040` appears here as a **narrow adjacent medial-vowel core
 report**, not as a claim that the handbooks present one named two-change chapter
-with exactly these CAPR labels. The promotion is justified because the source
+with exactly these CAPR labels. The grouping is justified because the source
 tradition and the ordinary chronology line up most strongly on this pair. SC039
 **OE WI Combinative U Umlaut** is the narrow `widow`-based left flank: a
 historically legible `w`-conditioned low-stress `u` adjustment whose earlier
@@ -36,8 +36,8 @@ in the historical space of low-stress medial-vowel adjustment
 turning SC072 into part of this chapter's architecture [@RingeTaylor2014,
 p. 267].
 
-That combination is enough to justify finished prose for the pair. The
-handbooks do not force one classical "SC039-SC040 chapter," but they do support
+That combination is enough to justify final prose for the pair. The
+handbooks do not force one classical "`SC039-SC040` chapter," but they do support
 exactly the kind of narrow adjacent medial-vowel core that the chronology cards
 now isolate.
 
@@ -58,26 +58,26 @@ recognizable in book prose.
 That is why the split works. The pair is not just adjacent in the cascade; it
 is a real local core in both source support and order evidence. SC041 remains
 visible to the right as a separate final-loss note rather than a coequal member
-of this promoted unit.
+of this unit.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC035-SC037` **Prefix and
-compound adjustments** bridge and immediately before the promoted `SC041`
+This report belongs immediately after the `SC035-SC037` **Prefix and
+compound adjustments** bridge and immediately before the `SC041`
 **Final bare-a loss note**. The immediate rightward neighborhood then continues
-through promoted `SC042` into the promoted SC043 brightening pivot.
+through `SC042` into the SC043 brightening pivot.
 
 The outward chronology links should remain cross-references only. SC036 points
 forward to SC040, but that later relation should not pull this report leftward
 into the earlier derivational bridge. SC040 points rightward to SC072 through
 `youth`, but that relation is broad/far and should remain orientation rather
-than chapter architecture. SC041 now remains explicitly separate on the right so
-that the local medial-vowel core can be promoted without flattening the broader
+than a larger chapter claim. SC041 now remains explicitly separate on the right so
+that the local medial-vowel core can be without flattening the broader
 final-loss hinge into the same chapter.
 
 #### Order evidence
 
-The order evidence is the clearest reason to promote this pair.
+The order evidence is the clearest reason to keep this pair together.
 
 SC039 has one live positive historical boundary, and it is rightward. If OE WI
 Combinative U Umlaut is delayed past SC040, PGmc `*wíduwōn` yields `wudowe`
@@ -100,7 +100,7 @@ side functioning as a tight local reciprocal corridor.
 
 #### Interpretation
 
-This promotion works because it is narrower and more honest than the old grouped
+This report works because it is narrower and more honest than the old grouped
 bridge. SC039 remains visible as the one-sided `widow` flank. SC040 carries the
 report as the stronger source-backed historical center, with `world` and
 `youth` keeping the broader low-stress context in view. And SC041 is no longer
@@ -108,7 +108,7 @@ forced into the same production unit when its own chronology points outward to
 SC020 and SC046 rather than forming an equally tight local pair here.
 
 The result is a short full report that fits the book's architecture better than
-the previous three-change scaffold. It keeps the strongest local seam explicit,
+the previous older three-change version. It keeps the strongest local seam explicit,
 preserves strict chronology, and leaves the broader final-loss material visible
 without pretending it is part of the same immediate core.
 

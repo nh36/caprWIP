@@ -4,11 +4,11 @@
 
 #### Historical formulation
 
-SC028 `NWGmcPreconsonantalXLoss` is promoted here as a **short finished
+SC028 `NWGmcPreconsonantalXLoss` appears here as a **short finished
 singleton note**. It is historically legible as preconsonantal `x`-loss and
-deserves explicit finished prose, but its chronology card remains boundary-limited
+deserves explicit final prose, but its chronology card remains boundary-limited
 on both sides. The right final form is therefore a short standalone note, not a
-reason to reopen either neighboring promoted bridge/core report.
+reason to reopen either neighboring bridge/core report.
 
 #### Source tradition
 
@@ -27,12 +27,12 @@ CAPR isolates this background as one explicit step: SC028
 `NWGmcPreconsonantalXLoss`. That sharper implementation is useful because it
 lets the book keep the left edge of the glide/fronting entry zone visible
 without pretending that the rule carries the same local chronology weight as the
-already promoted `SC029-SC030` core.
+earlier `SC029-SC030` core.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC026-SC027`
-**Nasal spirant corridor** and immediately before the promoted `SC029-SC030`
+This note belongs immediately after the `SC026-SC027`
+**Nasal spirant corridor** and immediately before the `SC029-SC030`
 **Awj glide and au-fronting core**. It should remain a short standalone note in
 that position rather than being merged backward into the nasal spirant corridor
 or forward into the glide/fronting core.
@@ -51,9 +51,9 @@ evidence is negative or boundary-limited rather than positively local.
 
 #### Interpretation
 
-SC028 is promoted because residual completion requires finished prose even where
+SC028 belongs here because residual completion requires final prose even where
 the chronology is light. The rule remains explicit, the note stays short, and
-the stronger local story remains with the already promoted `SC029-SC030` core to
+the stronger local story remains with the earlier `SC029-SC030` core to
 its right.
 
 #### Remaining cautions
@@ -61,4 +61,4 @@ its right.
 The methodological boundaries matter here. Bundled `PWGmcChanges` and the
 current SC087 search boundary are search limits, not historical anchors for
 SC028. This note should therefore stay brief and should not be merged into the
-promoted `SC026-SC027` corridor or the promoted `SC029-SC030` core.
+`SC026-SC027` corridor or the `SC029-SC030` core.

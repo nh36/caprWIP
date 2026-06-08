@@ -12,9 +12,9 @@ chapter [@Campbell1959, §170; @Campbell1959, §§440--441;
 @Hogg1992, pp. 106--107; @RingeTaylor2014, §6.4.1; @Luick1914, §168;
 @Fulk2018, p. 28; @SieversBrunner1965, §91.a].
 
-This report is therefore deliberately narrow. It promotes SC051 as its own
-concise singleton chapter between the promoted SC049-SC050 bridge report on the
-left and the promoted SC052 standalone hinge report on the right. The
+This report is therefore deliberately narrow. It treats SC051 as its own
+concise singleton chapter between the `SC049-SC050` bridge report on the
+left and the SC052 standalone hinge report on the right. The
 historical claim is that OE *sk > sc* deserves its own chapter shape inside the
 broader palatalization region without collapsing those neighboring reports into
 one larger unit.
@@ -60,14 +60,14 @@ chapter.
 
 #### Place in the cascade
 
-SC051 follows SC046 **OE A Restoration**, sits inside the broader SC049-SC052
+SC051 follows SC046 **OE A Restoration**, sits inside the broader `SC049-SC052`
 palatalization/fronting region, and precedes SC056 **OE Ws Palatal
 Diphthongization**. In the new assembly layout it now stands between the `049-050` bridge report on
 the left and the SC052 hinge report on the right, rather than remaining buried
 inside the old four-change placeholder.
 
 That placement matters for book structure as well as for local order. On its
-right, SC051 belongs near the already promoted SC055-SC056 umlaut-core report,
+right, SC051 belongs near the earlier `SC055-SC056` umlaut-core report,
 but it must only cross-reference that chapter rather than duplicate it. The
 point of this report is to clarify one narrow palatalization rule before the
 book returns to the neighboring velar-palatalization and umlaut material.
@@ -88,21 +88,21 @@ outcomes [@Campbell1959, §170; @Campbell1959, §§440--441;
 
 Both boundaries are historically interpretable and fairly local. That is the
 main reason SC051 is promotable as a narrow report: it has stronger local
-two-sided evidence than the parent SC049-SC052 cluster, and it does not depend
+two-sided evidence than the parent `SC049-SC052` cluster, and it does not depend
 on overreading a runner-bounded side as a positive historical boundary.
 
 #### Interpretation
 
-This promotion extracts one clean palatalization chapter from the broader
+This report isolates one clean palatalization chapter from the broader
 region. Its value is architectural as much as historical. The neighboring
 reports are now clearer because they no longer have to share one placeholder:
-SC049-SC050 forms the promoted left-hand bridge report, SC052 stands as the
-promoted standalone hinge into the umlaut region, and the promoted SC057 note
+`SC049-SC050` forms the left-hand bridge report, SC052 stands as the
+ standalone hinge into the umlaut region, and the SC057 note
 remains a later palatalization-side note rather than part of this chapter.
 
 That makes SC051 a good example of how the production layer should mature. The
 book does not need to solve the whole palatalization/fronting region at once.
-It can promote the rule that is already historically legible, dossier-backed,
+It can treat the rule that is already historically legible, source-backed,
 and locally well bounded, while leaving the rest of the structure visible for
 later review.
 
@@ -115,9 +115,9 @@ the wider palatalization complex rather than as a fully isolated law
 [@Campbell1959, §170; @Campbell1959, §§440--441; @Hogg1992, pp. 106--107;
 @RingeTaylor2014, §6.4.1; @Luick1914, §168].
 
-The chapter must also avoid duplicating the already promoted SC052 hinge report
-or the promoted SC055-SC056 umlaut-core report. SC056 belongs here only as
+The chapter must also avoid duplicating the earlier SC052 hinge report
+or the `SC055-SC056` umlaut-core report. SC056 belongs here only as
 SC051's right-hand local boundary, not as coequal chapter content. SC052 should
-be cross-referenced as the neighboring hinge chapter, and the promoted SC057
+be cross-referenced as the neighboring hinge chapter, and the SC057
 note remains separate later palatalization-side material. This report settles
 only the narrow case for SC051.

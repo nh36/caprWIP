@@ -11,10 +11,10 @@ velars and `sk` inside a broader palatalization complex rather than as wholly
 independent headline chapters [@Campbell1959, §170; @Hogg1992, pp. 106--107;
 @RingeTaylor2014, §6.4.1; @Luick1914, §§168--176; @Fulk2018, p. 28].
 
-This report therefore promotes SC052 as a standalone chronological hinge, not
+This report therefore treats SC052 as a standalone chronological hinge, not
 as part of a non-contiguous `SC050-SC052` pair. On its left stands the already
-promoted SC051 **OE Sk Palatalization** report; on its right stands the
-promoted SC055-SC056 **umlaut-core** report. The historical claim is narrow but
+SC051 **OE Sk Palatalization** report; on its right stands the
+`SC055-SC056` **umlaut-core** report. The historical claim is narrow but
 important: plain velar palatalization deserves its own concise report between
 those neighboring chapters.
 
@@ -70,13 +70,13 @@ SC052 sits at current order 52. SC050 remains its feeder/context on the left:
 the `stretch` relation matters because Sievers Law Syncope creates the shape
 that the palatalization rule then acts on, not because SC050 and SC052 should
 be merged into one out-of-order chapter. In the assembled book, SC051 is the
-immediately preceding promoted report, and SC052 is the immediately following
+immediately preceding report, and SC052 is the immediately following
 standalone hinge report.
 
-To the right, SC052 now precedes the promoted SC053-SC054 pre-umlaut bridge
-report and the promoted SC055-SC056 umlaut-core report. Farther right, the
-promoted SC057 note remains a later palatalization-side development. That placement is the
-main architectural gain of this promotion: the book can now discuss the plain-velar
+To the right, SC052 now precedes the `SC053-SC054` pre-umlaut bridge
+report and the `SC055-SC056` umlaut-core report. Farther right, the
+SC057 note remains a later palatalization-side development. That placement is the
+main architectural gain of this report: the book can now discuss the plain-velar
 hinge explicitly while keeping the assembled order strictly chronological.
 
 #### Order evidence
@@ -89,7 +89,7 @@ results show `SC050 < SC052 < SC055`.
 
 The left edge still requires restraint. SC050's earlier side is runner-limited,
 not a positive historical boundary, so the `stretch` relation must not be
-inflated into a whole `SC050-SC052` production chapter. The right edge is
+inflated into a whole `SC050-SC052` chapter. The right edge is
 narrow as well, but it is historically interpretable because the source
 tradition broadly places palatalization before i-umlaut or front mutation
 [@Campbell1959, §§190--197; @Hogg1992, pp. 111--114;
@@ -98,18 +98,18 @@ tradition broadly places palatalization before i-umlaut or front mutation
 
 #### Interpretation
 
-SC052 is stronger than residual scaffold material. Its value is not just that it
+SC052 is stronger than residual placeholder material. Its value is not just that it
 has one witness on the left and two on the right, but that those witnesses make
 historical sense inside the broader source tradition. This is therefore the kind
-of central hinge rule that can be promoted without pretending the whole
+of central hinge rule that can be without pretending the whole
 palatalization region has been fully resolved.
 
 The report also shows how the sound-change half can mature while preserving
 strict chronological order. SC050 remains visible as feeder/context in the
-earlier `049-050` bridge report, SC051 remains a separate promoted cluster
+earlier `049-050` bridge report, SC051 remains a separate cluster
 chapter,
-SC052 now receives its own prose immediately after SC051, and SC055-SC056
-remains the promoted umlaut-core chapter to the right. The neighboring reports
+SC052 now receives its own prose immediately after SC051, and `SC055-SC056`
+remains the umlaut-core chapter to the right. The neighboring reports
 should be cross-referenced, not duplicated.
 
 #### Remaining cautions
@@ -117,10 +117,10 @@ should be cross-referenced, not duplicated.
 This report should stay narrow. It does not exhaust Old English palatalization,
 and it should not be read as if SC051 and SC052 were historically unrelated just
 because the book now treats them as adjacent reports. It must not duplicate the
-already promoted SC051 **OE Sk Palatalization** report or the promoted SC055-SC056
+earlier SC051 **OE Sk Palatalization** report or the `SC055-SC056`
 **umlaut-core** report.
 
 The chapter must also keep the left edge in proportion. `stretch` is enough to
 show that SC050 matters as feeder/context, but not enough to justify a
-non-contiguous `SC050-SC052` production unit. The promoted SC057 note should
+non-contiguous `SC050-SC052` production unit. The SC057 note should
 remain separate rather than being absorbed here by implication.

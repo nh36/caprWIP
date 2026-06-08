@@ -6,8 +6,7 @@
 
 This is a **short adjacent chronological bridge report**, not a major textbook
 chapter. It keeps two neighboring ordinary FST changes visible between the
-promoted SC046-SC048 **Restoration and nasal-tail corridor** and the promoted
-SC051 and SC052 palatalization reports without pretending that SC049 and SC050
+`SC046-SC048` **Restoration and nasal-tail corridor** and the SC051 and SC052 palatalization reports without pretending that SC049 and SC050
 are one historical process.
 
 SC049 **PGmc B Allophony** is the narrower and more implementation-heavy member.
@@ -18,7 +17,7 @@ initially or after nasals and as a voiced bilabial fricative elsewhere
 treats Sievers-law reflexes, heavy/light stem structure, weak verbs, and
 gemination as real historical material [@Adamczyk2001; @Fulk2018, p. 28,
 sec. 6.15]. The pair therefore stays together for practical chronological
-reasons, not because the sources present a standard SC049-SC050 chapter.
+reasons, not because the sources present a standard `SC049-SC050` chapter.
 
 #### Source tradition
 
@@ -59,14 +58,14 @@ without implying that all three rules should be merged into one unit.
 
 #### Place in the cascade
 
-This unit belongs immediately after the promoted SC046-SC048 corridor and
-immediately before the promoted SC051 report. It also stands directly to the
-left of the promoted SC052 hinge report. That placement is the main reason to
-promote the pair together: both changes are adjacent, both are ordinary FST
-changes, and both need explicit prose in the assembled half.
+This unit belongs immediately after the `SC046-SC048` corridor and
+immediately before the SC051 report. It also stands directly to the
+left of the SC052 hinge report. That placement is the main reason to
+treat the pair together: both changes are adjacent, both are ordinary FST
+changes, and both need explicit prose in the volume.
 
 SC050's forward relation to SC052 should be handled by cross-reference rather
-than by a non-contiguous SC050-SC052 chapter. SC052 remains the later promoted
+than by a non-contiguous `SC050-SC052` chapter. SC052 remains the later
 hinge report where plain velar palatalization is discussed in its own right;
 this bridge report only explains why Sievers Law Syncope belongs immediately to
 its left.
@@ -89,7 +88,7 @@ delaying it past OE Velar Palatalization breaks the `stretch` derivation and
 yields `strecċan` instead of expected `streċċan`.
 
 Taken together, the cards support `SC037 < SC049` and `SC050 < SC052`, but
-they do not support an internal reciprocal chronology claim for SC049-SC050 as
+they do not support an internal reciprocal chronology claim for `SC049-SC050` as
 a pair.
 
 #### Interpretation
@@ -110,7 +109,7 @@ evidence they actually have.
 SC049 should not be overstated. The handbooks support the stop/fricative
 distribution of `b`, but the current chronology evidence is still one-sided and
 compound-specific. SC050 should not be allowed to duplicate the already
-promoted SC052 report. Its role here is to mark the Sievers-law bridge and the
+SC052 report. Its role here is to mark the Sievers-law bridge and the
 `stretch` dependency, not to absorb the later plain-velar palatalization
 discussion into an out-of-order unit.
 

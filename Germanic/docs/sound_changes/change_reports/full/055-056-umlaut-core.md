@@ -38,17 +38,17 @@ handles the broad fronting and raising effects conditioned by following *i/j*.
 `OEWsPalatalDiphthongization` then handles a narrower West Saxon
 palatal-triggered diphthongization zone. This is useful book material because
 it lets the model isolate the local right edge of the umlaut core. But the
-local CAPR relation `SC055 < SC056` should still be presented as a model-facing
+local CAPR relation `SC055 < SC056` should still be presented as a technical
 ordering result, not as a verbatim restatement of the broad handbook
 chronology.
 
 #### Place in the cascade
 
 This report belongs immediately after SC052 **OE Velar Palatalization** and,
-in the present assembly, after the promoted SC053-SC054 pre-umlaut bridge
+in the present assembly, after the `SC053-SC054` pre-umlaut bridge
 report. On
-its right, it precedes later promoted material, especially SC063 **OE High
-Vowel Apocope** and the SC066-SC068 syncope corridor, both of which depend on
+its right, it precedes later material, especially SC063 **OE High
+Vowel Apocope** and the `SC066-SC068` syncope corridor, both of which depend on
 the earlier umlaut setting already being in place. That position gives the
 chapter a useful book role: it is the early Old English vowel core that stands
 between palatalization and the later weak-tail reductions.
@@ -84,9 +84,9 @@ should not grant it equal historical weight. More broadly, the broad textbook
 chronology and CAPR's local chronology do not coincide perfectly, especially in
 sources such as Ringe and Taylor and Fulk that place palatal-triggered
 diphthongization differently in the wider sequence
-[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC053-SC054
-should remain a separate promoted bridge report rather than being absorbed into
-the umlaut core, and the promoted SC057 note should remain separate from both
-this chapter and the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
+[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. `SC053-SC054`
+should remain a separate bridge report rather than being absorbed into
+the umlaut core, and the SC057 note should remain separate from both
+this chapter and the `SC049-SC052` palatalization/fronting cluster. The chapter should also stay
 narrow: it is a report on the umlaut core and its West Saxon right edge, not a
 general handbook article on every aspect of Old English i-mutation.

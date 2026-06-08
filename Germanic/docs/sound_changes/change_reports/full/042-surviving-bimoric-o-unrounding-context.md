@@ -4,11 +4,11 @@
 
 #### Historical formulation
 
-SC042 `PWGmcSurvivingBimoricOUnrounding` is promoted here as a **short
+SC042 `PWGmcSurvivingBimoricOUnrounding` appears here as a **short
 singleton context note**. It is not a claim that the handbooks isolate one
 large independent chapter under exactly this label. The historical point is
 smaller: CAPR needs an explicit surviving-bimoric `ō` pathway behind `rest`,
-and that pathway belongs immediately on the left edge of the promoted SC043
+and that pathway belongs immediately on the left edge of the SC043
 brightening pivot rather than hidden inside a larger non-contiguous chapter
 [@Campbell1959, §§131, 157--158; @Hogg1992, pp. 101, 119;
 @RingeTaylor2014, pp. 157--158, 189--190].
@@ -26,9 +26,9 @@ retraction/restoration in a sequence that makes CAPR's narrow `rest` pathway
 historically legible even if the precise SC042 label is model-shaped
 [@RingeTaylor2014, pp. 157--158, 189--190].
 
-That is enough support for a modest promotion. The report should present SC042
+That is enough support for a modest note. The report should present SC042
 as a narrow feeder/context rule inside the post-final-loss seam, not as a
-coequal chapter center beside SC043, SC044-SC045, or SC046-SC048.
+coequal chapter center beside SC043, `SC044-SC045`, or `SC046-SC048`.
 
 #### CAPR implementation
 
@@ -42,13 +42,13 @@ implicit.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC041` **Final bare-a loss
-note** and immediately before the promoted `SC043` **Anglo-Frisian
-brightening** report. On its right, the already promoted `SC044-SC045`
+This note belongs immediately after the `SC041` **Final bare-a loss
+note** and immediately before the `SC043` **Anglo-Frisian
+brightening** report. On its right, the earlier `SC044-SC045`
 **Breaking and velar-fricative palatalization** report remains a separate
 neighboring unit rather than part of the same chapter.
 
-That placement is the whole reason to promote SC042 now. It closes the small
+That placement is the whole reason to treat SC042 now. It closes the small
 architectural seam between final-loss and brightening without pretending that
 the note itself is a major post-brightening chapter.
 
@@ -61,28 +61,27 @@ On the earlier side, SC042 must follow SC020. If the unrounding stage is moved
 earlier across PGmc Final Z Deletion, PGmc `*rástōz` yields `rasta` rather than
 expected OE `ræste`. That earlier edge is historically interpretable, but it
 should remain a leftward cross-reference to the pilot `SC016-SC020` corridor
-rather than chapter architecture.
+rather than a larger chapter claim.
 
 On the later side, SC042 must precede SC043. If the same unrounding stage is
 delayed across Anglo-Frisian Brightening, PGmc `*rástōz` again yields `rasta`
 rather than `ræste`. This later edge is tighter and more local: it is the
 direct handoff that makes SC042 worth keeping explicit immediately before the
-promoted brightening report.
+ brightening report.
 
 #### Interpretation
 
-SC042 is promoted because the modest reading is now the best one. The `rest`
+SC042 belongs here because the modest reading is now the best one. The `rest`
 evidence is thin, but it is genuine on both sides, and the book is clearer when
 the surviving-bimoric feeder to SC043 is stated explicitly. That gives the
-assembled half a cleaner local sequence: `SC041 -> SC042 -> SC043`, followed by
-the already separate SC044-SC045 and SC046-SC048 reports.
+volume a cleaner local sequence: `SC041 -> SC042 -> SC043`, followed by
+the already separate `SC044-SC045` and `SC046-SC048` reports.
 
 #### Remaining cautions
 
 The cautions are mostly structural. SC042 should still be narrated as a short
 context note rather than a major standalone chapter. Its evidence remains
 witness-limited, so the prose should not overstate independence. It should not
-be merged non-contiguously with SC044-SC045 just because that pair belongs to
+be merged non-contiguously with `SC044-SC045` just because that pair belongs to
 the same broader post-brightening region. And its leftward relation to SC020
-should stay a cross-reference rather than a reason to reopen the earlier pilot
-corridor here.
+should stay a cross-reference rather than a reason to reopen the earlier `SC016-SC020` corridor here.

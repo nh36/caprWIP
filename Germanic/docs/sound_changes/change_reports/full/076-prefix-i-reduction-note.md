@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC076 `OEPrefixIReduction` is promoted here as a **short finished late-tail
+SC076 `OEPrefixIReduction` appears here as a **short finished late-tail
 residual/context note**. The source support outruns the chronology evidence: the
 rule is historically legible enough to deserve final prose, but it has not
 become a local chronology hinge. The right final form is therefore brief and
@@ -20,9 +20,9 @@ they do not isolate SC076 as a major handbook center
 [@Hogg1992, pp. 120--121; @RingeTaylor2014, §§6.7.3--6.9.3;
 @Luick1914, §§304--307].
 
-That is enough to justify finished prose. It is not enough to turn SC076 into a
+That is enough to justify final prose. It is not enough to turn SC076 into a
 larger bridge or to reopen the late-tail structure that has already been
-promoted around it.
+ around it.
 
 #### CAPR implementation
 
@@ -33,9 +33,8 @@ any positive historical boundary for it.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC074-SC075`
-**Medial unstressed-i lowering bridge** and immediately before the promoted
-SC078 **Weak-tail reduction right-edge note**. It should remain a short residual
+This note belongs immediately after the `SC074-SC075`
+**Medial unstressed-i lowering bridge** and immediately before the SC078 **Weak-tail reduction right-edge note**. It should remain a short residual
 note in that position rather than being folded into either neighboring report.
 
 #### Order evidence
@@ -53,7 +52,7 @@ therefore negative and boundary-limited rather than positive.
 
 #### Interpretation
 
-SC076 is now finished prose because every ordinary sound change should be
+SC076 is now final prose because every ordinary sound change should be
 represented by final prose, not because the rule has become a local chronology
 anchor. The correct final treatment is a short residual/context note: keep the
 historical legitimacy of late prefix-vowel weakening explicit, but keep the
@@ -61,7 +60,6 @@ chronology language strictly methodological.
 
 #### Remaining cautions
 
-This note should stay brief. It should not be folded into the promoted
-`SC074-SC075` bridge, the promoted SC078 right-edge report, or any larger
+This note should stay brief. It should not be folded into the `SC074-SC075` bridge, the SC078 right-edge report, or any larger
 late-tail chapter. Bundled `PWGmcChanges` and the current SC087 boundary remain
 search limits, not historical boundaries for SC076.

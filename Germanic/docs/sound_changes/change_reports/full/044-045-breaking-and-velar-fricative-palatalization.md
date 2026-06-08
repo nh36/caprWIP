@@ -6,7 +6,7 @@
 
 SC044 **OE Breaking** is standard handbook material: front vowels develop into
 broken diphthongal outputs before `h`, `rC`, `lC`, and related local contexts,
-and it belongs after the fronted stage created by the promoted SC043
+and it belongs after the fronted stage created by the SC043
 Anglo-Frisian Brightening report [@Campbell1959, §139;
 @RingeTaylor2014, §§6.2.1--6.2.3; @Fulk2018, §4.13]. SC045 **OE Velar
 Fricative Palatalization** is narrower in CAPR's naming, but historically
@@ -42,10 +42,9 @@ palatalization article.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC043 brightening pivot. On
-its left, promoted SC042 remains a separate short context note rather than part of
-this production unit. On its right, the report leads into the promoted
-SC046-SC048 post-brightening corridor, while SC060 **OE Ws Palatal Umlaut**
+This report belongs immediately after the SC043 brightening pivot. On
+its left, SC042 remains a separate short context note rather than part of
+this production unit. On its right, the report leads into the `SC046-SC048` post-brightening corridor, while SC060 **OE Ws Palatal Umlaut**
 remains only a later rightward cross-reference rather than part of this
 chapter's architecture.
 
@@ -63,10 +62,10 @@ orientation, not a reason to extend the report beyond its adjacent pair.
 
 #### Interpretation
 
-For book purposes, SC044-SC045 is the strongest adjacent report immediately to
+For book purposes, `SC044-SC045` is the strongest adjacent report immediately to
 the right of SC043. SC044 is the standard handbook center; SC045 is the local
 velar/fricative partner that the CAPR implementation makes unusually explicit.
-That is enough to justify promotion as a full adjacent production report. But
+That is enough to justify treatment as a full adjacent report. But
 the chapter should still stay modest: it is not a replacement for the SC043
 brightening report, and it is not a whole post-brightening chapter covering
 everything through SC060.
@@ -74,10 +73,10 @@ everything through SC060.
 #### Remaining cautions
 
 The cautions matter as much as the positive result. SC042 should remain visible
-as a separate promoted context note rather than being pulled into this report
+as a separate context note rather than being pulled into this report
 non-contiguously. SC045 should not be narrated as a general chapter on all Old
 English palatalization; here it is the local velar/fricative follow-on to
 breaking. And although `SC045 < SC060` is a real later relation, it is narrow
-and should remain a rightward cross-reference rather than chapter architecture.
-The promoted SC046-SC048 corridor likewise remains a separate neighboring
+and should remain a rightward cross-reference rather than a larger chapter claim.
+The `SC046-SC048` corridor likewise remains a separate neighboring
 chapter rather than material to absorb into this pair.

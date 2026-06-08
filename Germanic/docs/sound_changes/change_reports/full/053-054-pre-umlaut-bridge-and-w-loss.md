@@ -6,8 +6,7 @@
 
 This is a **short adjacent chronological bridge report**, not a major textbook
 chapter. It keeps two neighboring ordinary FST changes visible between the
-promoted SC052 **OE Velar Palatalization** hinge report and the promoted
-SC055-SC056 **umlaut-core** report without pretending that SC053 and SC054 form
+SC052 **OE Velar Palatalization** hinge report and the `SC055-SC056` **umlaut-core** report without pretending that SC053 and SC054 form
 one strong traditional chapter.
 
 SC053 **OE Post Velar W Loss** is the weaker and more residual member. It is a
@@ -18,7 +17,7 @@ does support loss of `w` before unstressed `i`, especially in the `sea`
 derivation from earlier `*saiwi-` / `*sawi-` to OE `sǣ`
 [@Campbell1959, §406; @RingeTaylor2014, §6.7.1; @Luick1914, §187]. The pair
 therefore stays together for practical chronological reasons, not because the
-sources present a standard SC053-SC054 chapter.
+sources present a standard `SC053-SC054` chapter.
 
 #### Source tradition
 
@@ -76,12 +75,12 @@ too-late glide.
 #### Place in the cascade
 
 This unit belongs immediately after SC052 **OE Velar Palatalization** and
-immediately before the promoted SC055-SC056 **umlaut-core** report. That is the
-main reason to promote the pair together: both changes are adjacent, both are
-ordinary FST changes, and both need explicit prose in the assembled half.
+immediately before the `SC055-SC056` **umlaut-core** report. That is the
+main reason to treat the pair together: both changes are adjacent, both are
+ordinary FST changes, and both need explicit prose in the volume.
 
 SC054's later relation to SC063 **OE High Vowel Apocope** should be handled by
-cross-reference only. SC063 remains the later promoted report where high-vowel
+cross-reference only. SC063 remains the later report where high-vowel
 apocope is discussed in its own right; this bridge report only explains why the
 glide-loss rule must already be in place to the left of that later chapter.
 
@@ -104,7 +103,7 @@ on the same witness.
 
 Taken together, the cards support `SC020 < SC054 < SC063`, while SC053 remains
 card-negative residual bridge material. They do **not** support an internal
-reciprocal chronology claim for SC053-SC054 as a pair.
+reciprocal chronology claim for `SC053-SC054` as a pair.
 
 #### Interpretation
 
@@ -118,19 +117,19 @@ backing and a real, if witness-limited, two-sided chronology profile centered on
 That makes the pairing practical and chronological rather than traditional. The
 book does not need to pretend that SC053 and SC054 form a standard handbook
 chapter. It only needs to keep them visible, in order, and properly situated
-between the promoted SC052 hinge report and the promoted SC055-SC056 umlaut
+between the SC052 hinge report and the `SC055-SC056` umlaut
 core.
 
 #### Remaining cautions
 
 SC053 should not be made stronger than it is. Its earlier and later card results
 are boundary-limited negative evidence, not positive chronology claims. SC054
-should not be allowed to sprawl into a non-contiguous SC054-SC063 chapter just
+should not be allowed to sprawl into a non-contiguous `SC054-SC063` chapter just
 because its later boundary happens to be SC063. That rightward relation belongs
-in cross-reference, not in chapter architecture.
+in cross-reference, not in a larger chapter claim.
 
-More broadly, this report should not duplicate the promoted SC055-SC056
-**umlaut-core** report on the right or the promoted SC063 **High-vowel
+More broadly, this report should not duplicate the `SC055-SC056`
+**umlaut-core** report on the right or the SC063 **High-vowel
 apocope** report farther right. Its purpose is narrower: to keep a weak
 residual member and a narrow positive member visible in strict chronological
 order without inflating either one into a major chapter.

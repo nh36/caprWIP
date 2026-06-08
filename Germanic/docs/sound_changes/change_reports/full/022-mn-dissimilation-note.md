@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC022 `NWGmcMnDissimilation` is promoted here as a **short finished singleton
+SC022 `NWGmcMnDissimilation` appears here as a **short finished singleton
 note**. The source background is thinner and more descriptive than for the
 stronger nearby singletons, but the rule is still historically legible enough to
 remain explicit in the book. The right final form is therefore a short note, not
@@ -17,7 +17,7 @@ simplification of `mn` material descriptively, including the special status of
 forms such as `month` inside the broader analogical and phonological history
 [@Campbell1959, §§470, 484].
 
-That support is enough to justify finished prose, but only in a restrained form.
+That support is enough to justify final prose, but only in a restrained form.
 SC022 belongs in the book because it is historically legible, not because the
 current record turns it into a strong chronology hinge.
 
@@ -30,8 +30,8 @@ pattern more descriptively than as a separate major chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC021` **Unstressed
-o-raising note** and immediately before the promoted `SC023` **N-stem n-loss
+This note belongs immediately after the `SC021` **Unstressed
+o-raising note** and immediately before the `SC023` **N-stem n-loss
 note**. It should remain a short standalone note in that position rather than
 being merged with either neighboring singleton or with any broader early NWGmc
 holding chapter.
@@ -46,13 +46,13 @@ boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC022 must precede SC087.
 
 The note therefore records historically legible but chronology-light material.
-Its evidence is sufficient for explicit finished prose, but not for a stronger
+Its evidence is sufficient for explicit final prose, but not for a stronger
 order claim.
 
 #### Interpretation
 
-SC022 is promoted because the final printed version should not leave ordinary
-sound changes in scaffold form when a short honest note will do. The correct
+SC022 belongs here because the volume should not leave ordinary
+sound changes in placeholder form when a short honest note will do. The correct
 final treatment is modest: keep the rule visible, keep the chronology language
 negative and methodological, and avoid inflating a thin descriptive background
 into a larger report.

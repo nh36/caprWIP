@@ -36,7 +36,8 @@ than by a single out-of-order production unit.
 ## Finished production reports
 
 Each finished pilot/full report should be concise, book-facing Markdown
-suitable for later Pandoc / LaTeX integration. The standard section order is:
+suitable for later Pandoc / LaTeX integration. `STYLE_STANDARD.md` is the
+authoritative prose standard; this schema records the fixed section order:
 
 ```md
 ### Sound-change report
@@ -58,6 +59,14 @@ suitable for later Pandoc / LaTeX integration. The standard section order is:
 
 Keep the style aligned with the lexical reports: concise prose, selective
 quotation, and no dossier-sized audit machinery.
+
+Run the style audit after revising production reports:
+
+```bash
+python3 Germanic/tools/audit_sound_change_report_style.py
+```
+
+This writes `sound_change_style_audit.md` beside the manifest and scaffold.
 
 ## Scaffold placeholders
 

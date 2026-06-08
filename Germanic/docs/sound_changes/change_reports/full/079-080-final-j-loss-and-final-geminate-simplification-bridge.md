@@ -10,16 +10,16 @@ historically real and adjacent, but it is not the main closing core. SC079 is
 the stronger hinge, with a broad/far leftward tie to the earlier umlaut region
 and a real local right edge to SC080. SC080 is the narrower one-sided follower.
 
-That narrower reading is also the honest one. The report promotes only SC079 and
-SC080. It does **not** merge backward into the promoted SC078 singleton report,
-does **not** stretch forward into the promoted `SC081-SC083` technical bridge,
-and does **not** pretend that this opening seam is as book-facing as the
-already-promoted `SC085-SC086` and SC087 reports farther right.
+That narrower reading is also the honest one. The report discusses only SC079 and
+SC080. It does **not** merge backward into the SC078 singleton report,
+does **not** stretch forward into the `SC081-SC083` technical bridge,
+and does **not** pretend that this opening seam is as book-style as the
+earlier `SC085-SC086` and SC087 reports farther right.
 
 #### Source tradition
 
 The source tradition gives the pair enough technical support for explicit
-production prose, but not enough to inflate it into a major handbook chapter.
+prose, but not enough to inflate it into a major handbook chapter.
 The best support for SC079 comes from loss of `j` between unstressed vowels and
 the broader contracted-verb background that also feeds the rest of the closing
 zone [@Fulk2018, §6.11, §12.21]. Campbell's vocalization material and final
@@ -43,15 +43,15 @@ the real adjacent pair `SC079 < SC080`.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC078 **Weak-tail reduction
-right-edge note** and immediately before the promoted `SC081-SC083`
+This report belongs immediately after the SC078 **Weak-tail reduction
+right-edge note** and immediately before the `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge**. Its meaningful
-outward chronology relation points far left to the promoted `SC055-SC056`
+outward chronology relation points far left to the `SC055-SC056`
 **Umlaut core and palatal-diphthongization follower**, but that broad/far link
 should remain a cross-reference rather than a reason to merge non-adjacent
 chapters.
 
-That placement is the point of the promotion. The report fills the opening gap
+That placement matters because The report fills the opening gap
 in the split closing region while remaining clearly subordinate to the stronger
 technical middle bridge and the later closing core.
 
@@ -78,22 +78,20 @@ must **not** be rewritten into a positive claim that SC080 must precede SC087.
 
 #### Interpretation
 
-SC079-SC080 is promoted because it is the remaining opening bridge that the
+`SC079-SC080` belongs here because it is the remaining opening bridge that the
 closing region needs for explicit prose. The report remains modest on purpose.
 SC079 is the stronger hinge with the broader historical load; SC080 is the
 one-sided final-geminate follower. Together they justify a short adjacent report,
 but not a larger closing chapter.
 
-This makes the closing sequence much clearer in book form: promoted SC078 on the
-left, promoted SC079-SC080 as the opening bridge, promoted SC081-SC083 as the
-technical middle bridge, then the promoted SC085-SC086 core and the promoted
-SC087 terminal singleton.
+This makes the closing sequence much clearer in book form: SC078 on the
+left, `SC079-SC080` as the opening bridge, `SC081-SC083` as the
+technical middle bridge, then the `SC085-SC086` core and the SC087 terminal singleton.
 
 #### Remaining cautions
 
-The report should stay narrow. It should not merge backward into the promoted
-SC078 singleton report just because the two units are adjacent. It should not
-merge forward into the promoted `SC081-SC083` bridge just because that sequence
+The report should stay narrow. It should not merge backward into the SC078 singleton report just because the two units are adjacent. It should not
+merge forward into the `SC081-SC083` bridge just because that sequence
 follows it. SC079's broad/far left edge to SC055 should remain only a
 cross-reference, and SC080's runner-bounded later side must not be turned into a
 positive historical boundary.

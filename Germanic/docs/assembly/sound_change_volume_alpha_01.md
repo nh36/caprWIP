@@ -66,13 +66,12 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 
 #### Historical formulation
 
-`SC014-SC015` is promoted here as a short, cautious opening bridge report,
+`SC014-SC015` appears here as a short, cautious opening bridge report,
 not as a claim that the traditional grammars present one robust textbook chapter
-called "opening vowel prelude." The grouped report is useful for book
-architecture because these are the earliest ordinary FST changes in the
-assembled half, and the sound-change narrative reads more clearly if it begins
+called "opening vowel prelude." The grouped report is useful for narrative shape because these are the earliest ordinary FST changes in the
+volume, and the sound-change narrative reads more clearly if it begins
 with an explicit opening prelude rather than jumping straight into the more
-developed `SC016-SC020` pilot corridor.
+developed `SC016-SC020` corridor.
 
 The internal hierarchy of the pair should stay explicit. SC014
 NWGmc Unstressed Ai Monophthongization is the weak opening member:
@@ -121,7 +120,7 @@ corridor.
 
 #### Place in the cascade
 
-This report sits at the very opening of the assembled half and hands off
+This report sits at the very opening of the volume and hands off
 directly to the pilot `SC016-SC020` **Early vocalic/final corridor**.
 
 ```foma
@@ -134,17 +133,16 @@ directly to the pilot `SC016-SC020` **Early vocalic/final corridor**.
 .o. PGmcFinalZDeletion
 ```
 
-That immediate handoff is the main book-level reason to promote the row now.
-The report gives the half an explicit opening without absorbing the pilot
-corridor to the right. Its outward links should remain restrained. Bundled
+That immediate handoff is the main structural reason to keep the row here.
+The report gives the volume an explicit opening without absorbing the `SC016-SC020` corridor to the right. Its outward links should remain restrained. Bundled
 *PWGmcChanges* bounds the earlier search space for both rules, but that is a
-runner limitation rather than a historical left boundary. SC015 points forward
+runner limitation rather than a positive left boundary. SC015 points forward
 to SC036 through world, but that relation should remain a cross-reference
-only, not chapter architecture.
+only, not a larger chapter claim.
 
 #### Order evidence
 
-The order evidence justifies promotion only if the asymmetry remains explicit.
+The order evidence justifies the grouping only if the asymmetry remains explicit.
 
 SC014 is source-backed but chronology-negative in current testing. The earlier
 search runs safely down to bundled *PWGmcChanges* with no real break, and the
@@ -153,12 +151,12 @@ Those results should not be rewritten into positive chronology claims. The card
 supports SC014 as a brief opening note, not as a strongly bounded local law.
 
 SC015 is the stronger member. Its earlier search is likewise runner-bounded at
-bundled *PWGmcChanges*, so that side is not a positive historical boundary
+bundled *PWGmcChanges*, so that side is not a positive earlier boundary
 either. The later side is real, but broad/far: SC015 must precede SC036
 OE Inter Stress Raising. If SC015 is delayed later than SC036, the world
 derivation yields wuruld rather than expected weorold. That is a genuine
 historical ordering statement, but it is still a forward cross-reference rather
-than a reason to build a non-contiguous SC015-SC036 chapter.
+than a reason to build a non-contiguous `SC015-SC036` chapter.
 
 Taken together, the cards support a short opening bridge with one weak
 boundary-limited member and one stronger forward-looking member. They do not
@@ -167,9 +165,9 @@ support a local reciprocal corridor.
 #### Interpretation
 
 The value of this report is architectural as much as historical. It lets the
-assembled half begin with explicit prose for the earliest ordinary Northwest
+volume begin with explicit prose for the earliest ordinary Northwest
 Germanic vowel adjustments instead of leaving the narrative to start abruptly at
-the pilot corridor. That is enough to justify production prose even though the
+the `SC016-SC020` corridor. That is enough to justify prose even though the
 two members do not contribute equal weight.
 
 SC014 should therefore stay brief: historically plausible, source-backed, and
@@ -185,9 +183,9 @@ The cautions here are straightforward but important. Do not treat bundled
 *PWGmcChanges* as a historical left boundary for either rule. Do not treat
 SC014's no-break-before-boundary result as proof that it must precede the whole
 rest of the half. Do not let the forward `SC015 < SC036` relation pull this
-opening report into a non-contiguous chapter with the later promoted
+opening report into a non-contiguous chapter with the later
 `SC035-SC037` bridge. And do not let the prelude duplicate the neighboring
-`SC016-SC020` pilot corridor. The report should remain exactly what it is: a
+`SC016-SC020` corridor. The report should remain exactly what it is: a
 short cautious opening bridge with SC014 brief and SC015 carrying most of the
 prose.
 
@@ -270,9 +268,9 @@ ordinary sound-law implementation of the four: it lowers stressed `u/ú` to
 `o/ó` before a following non-high vowel while explicitly blocking the relevant
 nasal and *j* environments. SC019 formalizes final unstressed -ō > *-u* as a
 separate stage, while the adjacent monosyllabic ō rule is split off into
-SC018. SC020 then deletes final *z* outright with the simple rewrite
-`[{*z} -> 0 || _.#.]`, even though the literature states the historical core
-more narrowly as loss of word-final *z* in unstressed syllables
+SC018. SC020 then deletes final *z* outright by applying a simple word-final deletion
+step, even though the literature states the historical core more narrowly as
+loss of word-final *z* in unstressed syllables
 [@Campbell1959; @Fulk2018; @RingeTaylor2014; @Crist2002].
 
 That explicitness is useful, but it is not neutral. SC016 is more sharply
@@ -334,7 +332,7 @@ an undifferentiated graph chapter.
 
 #### Interpretation
 
-The book-level value of this corridor is methodological as well as historical.
+The structural value of this corridor is methodological as well as historical.
 The literature gives four real phenomena, but it gives them unevenly: one is a
 strong standard sound law, one is a real but weakly named West Saxon sub-rule,
 and two belong most naturally to ending structure and final-syllable history.
@@ -342,7 +340,7 @@ The CAPR cascade then forces those phenomena into explicit ordered rule form.
 The chronology cards, finally, show where specific derivations break if that
 order is disturbed.
 
-That combination is what makes the corridor worth a production report. It shows
+That combination is what makes the corridor worth its own report. It shows
 how the sound-change half of the book can move from scholarship to model to
 controlled inference without confusing the three. The handbooks do not give a
 ready-made four-part chapter, but they do provide the historical material from
@@ -350,7 +348,7 @@ which the corridor can be written responsibly.
 
 #### Remaining cautions
 
-SC016 should probably be described in finished prose as a **modeled West Saxon
+SC016 should probably be described in final prose as a **modeled West Saxon
 palatal-glide / rising-diphthong sub-rule** rather than as a universally named
 sound law. SC019's label may likewise need softening toward **final unstressed
 -ō > *-u*** language. SC020's literature-backed core is narrower than CAPR's
@@ -367,11 +365,11 @@ should not expand this entry into a graph-driven chapter.
 
 #### Historical formulation
 
-SC018 *NWGmcStressedMonosyllableORaising* is promoted here as a **short finished
+SC018 *NWGmcStressedMonosyllableORaising* appears here as a **short finished
 singleton note**. It is historically legible enough to remain explicit in the
 book, but the current chronology card is boundary-limited on both sides. The
 right reading is therefore modest: this is a short standalone note in strict
-chronological position, not a reason to expand the pilot corridor or to merge
+chronological position, not a reason to expand the `SC016-SC020` corridor or to merge
 the rule into the following SC021 singleton.
 
 #### Source tradition
@@ -379,7 +377,7 @@ the rule into the following SC021 singleton.
 The source tradition is sufficient for a short finished note. Campbell treats
 the Northwest Germanic and Old English long-vowel region behind stressed
 monosyllabic *o*-raising as ordinary handbook material, and the same broader
-background also feeds the already promoted `SC016-SC020` corridor
+background also feeds the earlier `SC016-SC020` corridor
 [@Campbell1959, §138; @RingeTaylor2014; @Fulk2018].
 
 That is enough to keep SC018 visible, but not enough to inflate it into a major
@@ -397,9 +395,9 @@ explicit without pretending that it anchors a larger report of its own.
 #### Place in the cascade
 
 This note belongs immediately after the pilot `SC016-SC020`
-**Early vocalic/final corridor** and immediately before the promoted `SC021`
+**Early vocalic/final corridor** and immediately before the `SC021`
 **Unstressed o-raising note**. It should remain a short standalone note in that
-position rather than being folded backward into the pilot corridor or forward
+position rather than being folded backward into the `SC016-SC020` corridor or forward
 into the later singleton sequence.
 
 #### Order evidence
@@ -417,9 +415,8 @@ local chronology claim of its own.
 
 #### Interpretation
 
-SC018 is promoted because the final book should discuss every ordinary sound
-change explicitly, and SC018 is historically legible enough to deserve finished
-prose. The honest final prose form is short: the rule stays visible, but its
+SC018 belongs here because the final volume should discuss every ordinary sound
+change explicitly, and SC018 is historically legible enough to deserve final prose. The honest final prose form is short: the rule stays visible, but its
 current chronology remains boundary-limited rather than positively ordered.
 
 #### Remaining cautions
@@ -427,7 +424,7 @@ current chronology remains boundary-limited rather than positively ordered.
 The caution is methodological. Bundled *PWGmcChanges* and the current SC087
 search boundary are limits of the searchable corridor, not historical anchors
 for SC018. This note should therefore stay brief and should not be merged into
-either the pilot corridor on the left or the SC021 singleton on the right.
+either the `SC016-SC020` corridor on the left or the SC021 singleton on the right.
 
 ## Unstressed o-raising note
 
@@ -435,10 +432,10 @@ either the pilot corridor on the left or the SC021 singleton on the right.
 
 #### Historical formulation
 
-SC021 *NWGmcUnstressedORaising* is promoted here as a **short singleton
+SC021 *NWGmcUnstressedORaising* appears here as a **short singleton
 unstressed-vowel note**. It is not a claim that the handbooks isolate one large
 independent chapter under exactly this CAPR label, and it is not a reason to
-build a non-contiguous chapter with the later promoted `SC039-SC040`
+build a non-contiguous chapter with the later `SC039-SC040`
 medial-vowel core. The historical point is narrower: the heaven / heofon
 material keeps this change legible, and the split early Northwest Germanic zone
 is clearer if its strongest one-sided member is made explicit in strict
@@ -453,9 +450,9 @@ heofon / heofun region inside later unstressed-vowel development, and Ringe
 and Taylor also keep heaven historically legible inside the wider West
 Germanic and Old English vocalic record [@Hogg1992; @RingeTaylor2014].
 
-That is enough support for a short promotion. The prose should keep SC021
+That is enough support for a short note. The prose should keep SC021
 focused on the narrow unstressed-vowel hinge behind heofon, not inflate it
-into a corridor report or a hidden left member of the later SC039-SC040 unit.
+into a corridor report or a hidden left member of the later `SC039-SC040` unit.
 
 #### CAPR implementation
 
@@ -463,22 +460,22 @@ CAPR sharpens that broad unstressed-vowel background into one explicit step:
 SC021 *NWGmcUnstressedORaising* isolates the unstressed-vowel adjustment that
 lets the heaven derivation reach heofon rather than heofun. This is more
 specific than the handbook phrasing, but that specificity is exactly why the
-note is useful. It lets the book mark the first promoted singleton in the split
+note is useful. It lets the book mark the first singleton in the split
 early Northwest Germanic zone without pretending that the whole zone forms one
-adjacent production chapter.
+adjacent chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC018` **Stressed
-monosyllable o-raising note** and immediately before the promoted `SC022` **Mn
+This note belongs immediately after the `SC018` **Stressed
+monosyllable o-raising note** and immediately before the `SC022` **Mn
 dissimilation note**. Its meaningful positive chronology link points outward on
-the right to the already promoted `SC039-SC040` **Medial unstressed vowel
+the right to the earlier `SC039-SC040` **Medial unstressed vowel
 core**, but that relation should remain a cross-reference rather than a reason
 to pull SC021 out of strict chronological order.
 
-That placement is the point of the promotion. SC021 is the first full singleton
+That placement matters because SC021 is the first full singleton
 to emerge from the split early Northwest Germanic zone, and it establishes the
-model for possible later singleton promotions of SC023 and SC024 without
+model for possible later singleton treatments of SC023 and SC024 without
 flattening the whole region into one non-local chapter.
 
 #### Order evidence
@@ -489,31 +486,30 @@ broad/far boundary `SC021 < SC040`.
 
 On the earlier side, the current runner can move SC021 back only to the bundled
 *PWGmcChanges* boundary. That is a methodological runner limitation, not a
-positive historical boundary, so the note must not rewrite it as one.
+positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC021 must precede SC040. If NWGmc unstressed *o*-raising is
-delayed across the promoted medial-vowel core, PGmc xémonų yields heofun
+delayed across the medial-vowel core, PGmc xémonų yields heofun
 rather than expected OE heofon. That later edge is historically real, but it
-is broad/far and belongs as a rightward cross-reference to SC039-SC040 rather
-than as chapter architecture inside one shared report.
+is broad/far and belongs as a rightward cross-reference to `SC039-SC040` rather
+than as a larger chapter claim inside one shared report.
 
 #### Interpretation
 
-SC021 is promoted because the modest reading is now the best one. The heaven
-evidence is narrow, but it is genuine, and the assembled half is clearer when
-the earliest promoted singleton in this split zone is stated explicitly. The
-result is a cleaner sequence: promoted SC018, promoted SC021, promoted SC022,
-then the remaining early Northwest Germanic singleton notes before the promoted
-SC026-SC027 corridor.
+SC021 belongs here because the modest reading is now the best one. The heaven
+evidence is narrow, but it is genuine, and the volume is clearer when
+the earliest singleton in this split zone is stated explicitly. The
+result is a cleaner sequence: SC018, SC021, SC022,
+then the remaining early Northwest Germanic singleton notes before the `SC026-SC027` corridor.
 
 #### Remaining cautions
 
 The cautions are mostly structural. SC021 should not be merged with the
-promoted `SC039-SC040` report just because its one positive edge points there.
+`SC039-SC040` report just because its one positive edge points there.
 Its earlier boundary against bundled *PWGmcChanges* must remain a runner
 limitation rather than a historical claim. And the note should stay modest: it
 is a short architectural singleton, not a new corridor report and not a reason
-to promote SC023 or SC024 in the same commit.
+to treat SC023 or SC024 the same way.
 
 ## Mn dissimilation note
 
@@ -521,7 +517,7 @@ to promote SC023 or SC024 in the same commit.
 
 #### Historical formulation
 
-SC022 *NWGmcMnDissimilation* is promoted here as a **short finished singleton
+SC022 *NWGmcMnDissimilation* appears here as a **short finished singleton
 note**. The source background is thinner and more descriptive than for the
 stronger nearby singletons, but the rule is still historically legible enough to
 remain explicit in the book. The right final form is therefore a short note, not
@@ -534,7 +530,7 @@ simplification of *mn* material descriptively, including the special status of
 forms such as month inside the broader analogical and phonological history
 [@Campbell1959, §§470, 484].
 
-That support is enough to justify finished prose, but only in a restrained form.
+That support is enough to justify final prose, but only in a restrained form.
 SC022 belongs in the book because it is historically legible, not because the
 current record turns it into a strong chronology hinge.
 
@@ -547,8 +543,8 @@ pattern more descriptively than as a separate major chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC021` **Unstressed
-o-raising note** and immediately before the promoted `SC023` **N-stem n-loss
+This note belongs immediately after the `SC021` **Unstressed
+o-raising note** and immediately before the `SC023` **N-stem n-loss
 note**. It should remain a short standalone note in that position rather than
 being merged with either neighboring singleton or with any broader early NWGmc
 holding chapter.
@@ -563,13 +559,13 @@ boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC022 must precede SC087.
 
 The note therefore records historically legible but chronology-light material.
-Its evidence is sufficient for explicit finished prose, but not for a stronger
+Its evidence is sufficient for explicit final prose, but not for a stronger
 order claim.
 
 #### Interpretation
 
-SC022 is promoted because the final printed version should not leave ordinary
-sound changes in scaffold form when a short honest note will do. The correct
+SC022 belongs here because the volume should not leave ordinary
+sound changes in placeholder form when a short honest note will do. The correct
 final treatment is modest: keep the rule visible, keep the chronology language
 negative and methodological, and avoid inflating a thin descriptive background
 into a larger report.
@@ -587,10 +583,10 @@ SC023, or any broader early Northwest Germanic chapter.
 
 #### Historical formulation
 
-SC023 *NWGmcNStemNLoss* is promoted here as a **short singleton n-stem-loss
+SC023 *NWGmcNStemNLoss* appears here as a **short singleton n-stem-loss
 note**. It is not a claim that the handbooks isolate one broad morphology
 chapter under exactly this CAPR label, and it is not a reason to build a
-non-contiguous chapter with the later promoted `SC046-SC048` restoration and
+non-contiguous chapter with the later `SC046-SC048` restoration and
 nasal-tail corridor. The historical point is narrower: the *do* / dōn
 material keeps this reduction legible, and the split early Northwest Germanic
 zone is clearer if its next strongest one-sided member is made explicit in
@@ -603,10 +599,10 @@ syncretism and reduction in the Germanic *n*-stems and separately discuss the
 development of the verb *do*, which is exactly the kind of morphologized
 material CAPR is isolating here [@RingeTaylor2014].
 
-That is enough support for a short promotion. The prose should keep SC023
+That is enough support for a short note. The prose should keep SC023
 focused on the narrow n-stem-loss hinge behind *do* / dōn, not inflate it
 into a full n-stem morphology chapter or a hidden left member of the later
-SC046-SC048 unit.
+`SC046-SC048` unit.
 
 #### CAPR implementation
 
@@ -615,22 +611,22 @@ CAPR sharpens that broad background into one explicit step: SC023
 Germanic zone so that the *do* derivation reaches expected OE dōn rather than
 collapsing later in the nasal-tail region. This is more specific than the
 handbook phrasing, but that specificity is exactly why the note is useful. It
-lets the book mark the second promoted singleton in the split early Northwest
+lets the book mark the second singleton in the split early Northwest
 Germanic zone without pretending that the whole zone forms one adjacent
-production chapter.
+chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC022` **Mn dissimilation
-note** and immediately before the promoted `SC024` **Long e-lowering note**.
+This note belongs immediately after the `SC022` **Mn dissimilation
+note** and immediately before the `SC024` **Long e-lowering note**.
 Its meaningful positive chronology link points outward on the right to the
-already promoted `SC046-SC048` **Restoration and nasal-tail corridor**, but
+earlier `SC046-SC048` **Restoration and nasal-tail corridor**, but
 that relation should remain a cross-reference rather than a reason to pull
 SC023 out of strict chronological order.
 
-That placement is the point of the promotion. SC023 is the second full
+That placement matters because SC023 is the second full
 singleton to emerge from the split early Northwest Germanic zone, and it
-extends the model for possible later singleton promotion of SC024 while leaving
+extends the model for possible later singleton treatment of SC024 while leaving
 SC018, SC022, and SC025 as boundary/context notes.
 
 #### Order evidence
@@ -641,34 +637,32 @@ broad/far boundary `SC023 < SC047`.
 
 On the earlier side, the current runner can move SC023 back only to the bundled
 *PWGmcChanges* boundary. That is a methodological runner limitation, not a
-positive historical boundary, so the note must not rewrite it as one.
+positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC023 must precede SC047. If NWGmc n-stem *n*-loss is
-delayed across the promoted restoration and nasal-tail corridor, PGmc dōną
+delayed across the restoration and nasal-tail corridor, PGmc dōną
 no longer yields expected OE dōn; the later-shifted derivation records no
 output at all. That later edge is historically real, but it is broad/far and
-belongs as a rightward cross-reference to SC046-SC048 rather than as chapter
-architecture inside one shared report.
+belongs as a rightward cross-reference to `SC046-SC048` rather than as a larger chapter claim inside one shared report.
 
 #### Interpretation
 
-SC023 is promoted because the modest reading is now the best one. The *do*
-evidence is narrow, but it is genuine, and the assembled half is clearer when
-the next promoted singleton in this split zone is stated explicitly. The result
-is a cleaner sequence: promoted SC022, promoted SC023, promoted SC024, then the
-remaining early Northwest Germanic singleton notes before the promoted
-SC026-SC027 corridor.
+SC023 belongs here because the modest reading is now the best one. The *do*
+evidence is narrow, but it is genuine, and the volume is clearer when
+the next singleton in this split zone is stated explicitly. The result
+is a cleaner sequence: SC022, SC023, SC024, then the
+remaining early Northwest Germanic singleton notes before the `SC026-SC027` corridor.
 
 #### Remaining cautions
 
 The cautions are mostly structural. SC023 should not be merged with the
-promoted `SC046-SC048` report just because its one positive edge points there.
+`SC046-SC048` report just because its one positive edge points there.
 Its earlier boundary against bundled *PWGmcChanges* must remain a runner
 limitation rather than a historical claim. And the failed late derivation
 should be described as no output or derivational collapse, not as a competing
 Old English surface form. The note should stay modest: it is a short
-architectural singleton, not a new corridor report and not a reason to promote
-SC024 in the same commit.
+architectural singleton, not a new corridor report and not a reason to treat
+SC024 the same way.
 
 ## Long e-lowering note
 
@@ -676,10 +670,10 @@ SC024 in the same commit.
 
 #### Historical formulation
 
-SC024 *NWGmcLongELowering* is promoted here as a **short singleton long-vowel
+SC024 *NWGmcLongELowering* appears here as a **short singleton long-vowel
 note**. It is not a claim that the handbooks isolate one broad long-vowel
 chapter under exactly this CAPR label, and it is not a reason to build a
-non-contiguous chapter with the later promoted `SC055-SC056` umlaut core. The
+non-contiguous chapter with the later `SC055-SC056` umlaut core. The
 historical point is narrower: the sheep / year material keeps this lowering
 legible, and the split early Northwest Germanic zone is clearer if its final
 one-sided candidate is made explicit in strict chronological position after
@@ -687,7 +681,7 @@ SC023.
 
 #### Source tradition
 
-The source tradition is clear enough for a short promotion. Campbell treats
+The source tradition is clear enough for a short note. Campbell treats
 West Saxon sċēap and ġēar as outcomes of earlier long-vowel
 lowering/fronting in the relevant region [@Campbell1959, §156]. Ringe and
 Taylor likewise discuss the skēpa- / jēra- pathway behind these forms
@@ -696,7 +690,7 @@ Taylor likewise discuss the skēpa- / jēra- pathway behind these forms
 That is enough support for a short note. The prose should keep SC024 focused on
 the narrow lowering/fronting hinge behind sċēap and ġēar, not inflate it
 into a broad long-vowel chapter or a hidden left member of the later
-SC055-SC056 unit.
+`SC055-SC056` unit.
 
 #### CAPR implementation
 
@@ -705,22 +699,22 @@ CAPR sharpens that broad background into one explicit step: SC024
 Germanic zone so that the sheep and year derivations reach expected OE
 sċēap and ġēar rather than later high-diphthong outcomes. This is more
 specific than the handbook phrasing, but that specificity is exactly why the
-note is useful. It lets the book mark the third promoted singleton in the split
+note is useful. It lets the book mark the third singleton in the split
 early Northwest Germanic zone without pretending that the whole zone forms one
-adjacent production chapter.
+adjacent chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC023` **N-stem n-loss note**
-and immediately before the promoted `SC025` **Long e nasal-rounding note**. Its
+This note belongs immediately after the `SC023` **N-stem n-loss note**
+and immediately before the `SC025` **Long e nasal-rounding note**. Its
 meaningful positive chronology link points outward on the right to the already
-promoted `SC055-SC056` **Umlaut core and palatal-diphthongization follower**
+`SC055-SC056` **Umlaut core and palatal-diphthongization follower**
 report, but that relation should remain a cross-reference rather than a reason
 to pull SC024 out of strict chronological order.
 
-That placement is the point of the promotion. SC024 is the third full singleton
+That placement matters because SC024 is the third full singleton
 to emerge from the split early Northwest Germanic zone, and it closes the
-current run of one-sided early-zone promotions while leaving SC018, SC022, and
+current run of one-sided early-zone notes while leaving SC018, SC022, and
 SC025 as boundary/context notes.
 
 #### Order evidence
@@ -731,31 +725,30 @@ broad/far boundary `SC024 < SC056`.
 
 On the earlier side, the current runner can move SC024 back only to the bundled
 *PWGmcChanges* boundary. That is a methodological runner limitation, not a
-positive historical boundary, so the note must not rewrite it as one.
+positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC024 must precede SC056. If NWGmc long-ē lowering is
-delayed across the promoted umlaut core, PGmc skḗpą yields sċīep instead
+delayed across the umlaut core, PGmc skḗpą yields sċīep instead
 of expected OE sċēap, and PGmc jḗrą yields ġīer instead of expected
 ġēar. That later edge is historically real, but it is broad/far and belongs
-as a rightward cross-reference to SC055-SC056 rather than as chapter
-architecture inside one shared report.
+as a rightward cross-reference to `SC055-SC056` rather than as a larger chapter claim inside one shared report.
 
 #### Interpretation
 
-SC024 is promoted because the modest reading is now the best one. The sheep
-and year evidence is narrow, but it is genuine, and the assembled half is
-clearer when the last promoted singleton in this early-zone run is stated
-explicitly. The result is a cleaner sequence: promoted SC023, promoted SC024,
-promoted SC025, then the promoted SC026-SC027 corridor.
+SC024 belongs here because the modest reading is now the best one. The sheep
+and year evidence is narrow, but it is genuine, and the volume is
+clearer when the last singleton in this early-zone run is stated
+explicitly. The result is a cleaner sequence: SC023, SC024,
+SC025, then the `SC026-SC027` corridor.
 
 #### Remaining cautions
 
 The cautions are mostly structural. SC024 should not be merged with the
-promoted `SC055-SC056` report just because its one positive edge points there.
+`SC055-SC056` report just because its one positive edge points there.
 Its earlier boundary against bundled *PWGmcChanges* must remain a runner
 limitation rather than a historical claim. And the note should stay modest: it
 is a short architectural singleton, not a new corridor report and not a reason
-to reopen SC018, SC022, or SC025 in the same commit.
+to reopen SC018, SC022, or SC025 the same way.
 
 ## Long e nasal-rounding note
 
@@ -763,15 +756,15 @@ to reopen SC018, SC022, or SC025 in the same commit.
 
 #### Historical formulation
 
-SC025 *NWGmcLongENasalRounding* is promoted here as a **short finished
+SC025 *NWGmcLongENasalRounding* appears here as a **short finished
 singleton note**. The long-ē-before-nasal background is historically legible
 enough to remain explicit, but the chronology card is boundary-limited on both
 sides. The right final form is therefore a short standalone note, not a hidden
-extension of SC024 or SC026-SC027.
+extension of SC024 or `SC026-SC027`.
 
 #### Source tradition
 
-The source tradition is modest but clear enough for finished prose. Campbell
+The source tradition is modest but clear enough for final prose. Campbell
 explicitly cites forms such as moon and month from earlier mēnō /
 mēnōþ, and Ringe and Taylor treat the same long-vowel-before-nasal region
 inside the broader West Germanic development [@Campbell1959, §129;
@@ -790,8 +783,8 @@ without overstating its chronology.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC024` **Long e-lowering
-note** and immediately before the promoted `SC026-SC027`
+This note belongs immediately after the `SC024` **Long e-lowering
+note** and immediately before the `SC026-SC027`
 **Nasal spirant corridor**. It should remain a short standalone note in that
 position rather than being merged backward into SC024 or forward into the nasal
 spirant corridor.
@@ -811,7 +804,7 @@ order claim.
 
 #### Interpretation
 
-SC025 is promoted because residual completion requires finished prose even for
+SC025 belongs here because residual completion requires final prose even for
 chronology-light rules. The honest final treatment is a short singleton note:
 keep the long-ē-before-nasal background visible, keep the chronology phrasing
 strictly methodological, and avoid inflating the rule into a corridor chapter.
@@ -821,7 +814,7 @@ strictly methodological, and avoid inflating the rule into a corridor chapter.
 The main caution is not to turn methodological search limits into history.
 Bundled *PWGmcChanges* and the current SC087 boundary are not positive
 chronology anchors for SC025. This note should therefore stay brief and should
-not be merged into the stronger neighboring SC024 or SC026-SC027 reports.
+not be merged into the stronger neighboring SC024 or `SC026-SC027` reports.
 
 ## Nasal spirant corridor
 
@@ -871,14 +864,14 @@ that the traditional literature recognized two separately named sound laws
 
 #### Place in the cascade
 
-SC026-SC027 sits after the early unstressed and boundary-limited Northwest
+`SC026-SC027` sits after the early unstressed and boundary-limited Northwest
 Germanic zone and before the early *x*-loss and glide/fronting entry zone. The
 pair follows nearby left-side context such as `SC025`, but its strongest local
 identity is internal: `SC026` and `SC027` form a tight reciprocal center. On
 the right, `SC028` provides useful context, especially for forms such as
 fist, because later *x*-loss and fronting material still help shape the final
 Old English outcome. But that neighboring context should remain contextual
-rather than being folded into this promoted unit.
+rather than being folded into this unit.
 
 #### Order evidence
 
@@ -892,8 +885,8 @@ requires `SC026 < SC027`.
 
 #### Interpretation
 
-For book purposes, this is the first strong paired production report after the
-singleton promotions because it shows how CAPR can sharpen a historically
+For book purposes, this is the first strong paired report after the
+singleton treatments because it shows how CAPR can sharpen a historically
 bundled process into a formally ordered corridor without pretending that the
 handbooks already drew the same line. The historical claim remains the bundled
 North Sea Germanic / Ingvaeonic nasal-loss development. CAPR then makes the
@@ -924,11 +917,11 @@ Old English output.
 
 #### Historical formulation
 
-SC028 *NWGmcPreconsonantalXLoss* is promoted here as a **short finished
+SC028 *NWGmcPreconsonantalXLoss* appears here as a **short finished
 singleton note**. It is historically legible as preconsonantal *x*-loss and
-deserves explicit finished prose, but its chronology card remains boundary-limited
+deserves explicit final prose, but its chronology card remains boundary-limited
 on both sides. The right final form is therefore a short standalone note, not a
-reason to reopen either neighboring promoted bridge/core report.
+reason to reopen either neighboring bridge/core report.
 
 #### Source tradition
 
@@ -947,12 +940,12 @@ CAPR isolates this background as one explicit step: SC028
 *NWGmcPreconsonantalXLoss*. That sharper implementation is useful because it
 lets the book keep the left edge of the glide/fronting entry zone visible
 without pretending that the rule carries the same local chronology weight as the
-already promoted `SC029-SC030` core.
+earlier `SC029-SC030` core.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC026-SC027`
-**Nasal spirant corridor** and immediately before the promoted `SC029-SC030`
+This note belongs immediately after the `SC026-SC027`
+**Nasal spirant corridor** and immediately before the `SC029-SC030`
 **Awj glide and au-fronting core**. It should remain a short standalone note in
 that position rather than being merged backward into the nasal spirant corridor
 or forward into the glide/fronting core.
@@ -971,9 +964,9 @@ evidence is negative or boundary-limited rather than positively local.
 
 #### Interpretation
 
-SC028 is promoted because residual completion requires finished prose even where
+SC028 belongs here because residual completion requires final prose even where
 the chronology is light. The rule remains explicit, the note stays short, and
-the stronger local story remains with the already promoted `SC029-SC030` core to
+the stronger local story remains with the earlier `SC029-SC030` core to
 its right.
 
 #### Remaining cautions
@@ -981,7 +974,7 @@ its right.
 The methodological boundaries matter here. Bundled *PWGmcChanges* and the
 current SC087 search boundary are search limits, not historical anchors for
 SC028. This note should therefore stay brief and should not be merged into the
-promoted `SC026-SC027` corridor or the promoted `SC029-SC030` core.
+`SC026-SC027` corridor or the `SC029-SC030` core.
 
 ## Awj glide and au-fronting core
 
@@ -989,9 +982,9 @@ promoted `SC026-SC027` corridor or the promoted `SC029-SC030` core.
 
 #### Historical formulation
 
-`SC029-SC030` is promoted here as a **compact adjacent glide/fronting core
+`SC029-SC030` appears here as a **compact adjacent glide/fronting core
 report**, not as a claim that the handbooks present one named two-change chapter
-with exactly these CAPR labels. The promotion is justified because the local
+with exactly these CAPR labels. The grouping is justified because the local
 source support and the ordinary chronology align most strongly on this pair.
 SC029 OE Awj Glide Formation is the left member: it belongs to the early
 awj / auj developments behind hay and strew, but its earlier side
@@ -1012,7 +1005,7 @@ examples include hawja > hieg and strawjaną > *Angl.* OE strégan
 this material belongs to the normal Old English diphthongal history rather than
 to a narrow lexical accident [@Luick1914, §116].
 
-That combination is enough to justify finished prose for SC029-SC030 without
+That combination is enough to justify final prose for `SC029-SC030` without
 pulling SC028 in as a coequal member. The handbooks support the historical
 region well; CAPR then isolates the tight local seam inside it.
 
@@ -1034,21 +1027,19 @@ in book prose.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC028`
-**Preconsonantal x-loss note** and immediately before the promoted
-`SC031-SC034` **West Saxon diphthong chain**. On the left, the promoted
-`SC026-SC027` nasal spirant corridor remains a separate earlier chapter. On the
+This report belongs immediately after the `SC028`
+**Preconsonantal x-loss note** and immediately before the `SC031-SC034` **West Saxon diphthong chain**. On the left, the `SC026-SC027` nasal spirant corridor remains a separate earlier chapter. On the
 right, SC030's later relation to `SC032` provides a genuine handoff into the
-already promoted diphthongal region, but that relation should remain a
+earlier diphthongal region, but that relation should remain a
 cross-reference rather than a reason to merge the two reports.
 
-That position matters for book architecture. The pair gives the assembled half a
+That position matters for narrative shape. The pair gives the volume a
 real local seam between the nasal spirant corridor and the broader diphthong
 chain while leaving SC028 visible as a separate left-edge context note.
 
 #### Order evidence
 
-The order evidence is the clearest reason to promote this pair.
+The order evidence is the clearest reason to keep this pair together.
 
 SC029 has one live positive historical boundary, and it is rightward. If OE Awj
 Glide Formation is delayed past SC030, PGmc xáwwją yields hauġ instead of
@@ -1056,7 +1047,7 @@ expected OE hīeġ, and stráwjaną yields strauian instead of expected
 strīeġan. That makes `SC029 < SC030` a real local chronology claim. The
 earlier side is not comparable: the current runner can move SC029 safely back to
 order *13*, but the search then stops at bundled *PWGmcChanges*, so the present
-result does not identify any positive earlier historical boundary for SC029.
+result does not identify any positive earlier boundary for SC029.
 
 SC030 reciprocates that local evidence on its left and adds one broader
 rightward boundary of its own. Moving SC030 earlier than SC029 again produces
@@ -1065,7 +1056,7 @@ genuine reciprocal local core. Moving SC030 later than SC032 causes a broader
 set of derivations to fail outright rather than to produce competing surface
 forms: believe, bow, bread, dream, and flea all collapse to no output
 when OE Au Fronting is delayed too far. That later relation is real, but it is
-best read as a rightward handoff into the next promoted region rather than as a
+best read as a rightward handoff into the next region rather than as a
 second local reciprocal pair.
 
 Taken together, the cards support one sharp adjacent claim and one broader
@@ -1074,17 +1065,17 @@ side functioning as a tight local reciprocal corridor.
 
 #### Interpretation
 
-This promotion works because it is narrower and more honest than the old
-three-change scaffold. SC028 remains visible as the historically legible but
+This report works because it is narrower and more honest than the
+older three-change version. SC028 remains visible as the historically legible but
 chronology-negative *x*-loss preface. SC029 and SC030 carry the actual report
 because the same hay / strew material that the handbook tradition discusses
 also defines the local reciprocal boundary. And SC030's later SC032 relation
 keeps the handoff into the West Saxon diphthong chain explicit without making
 the two reports collapse into one chapter.
 
-The result is a short full report that fits the book's architecture better than
+The result is a short full report that fits the book's narrative shape better than
 the old grouped entry bridge. It keeps the strongest local seam explicit,
-preserves strict chronology, and leaves both the promoted short left note and
+preserves strict chronology, and leaves both the short left note and
 the larger right-hand diphthong chain in their own chapters.
 
 #### Remaining cautions
@@ -1092,7 +1083,7 @@ the larger right-hand diphthong chain in their own chapters.
 The cautions are structural as much as evidential. SC029's runner-bounded
 earlier side must not be turned into a hidden positive boundary against bundled
 *PWGmcChanges*. SC028 should remain visible to the left as a separate context
-note rather than being treated as a coequal member of this promoted report.
+note rather than being treated as a coequal member of this report.
 SC030's later relation to SC032 is real, but its failure set must be described
 as no-output / derivational collapse rather than as a cluster of competing Old
 English surface forms. And this report should not be expanded backward into
@@ -1104,7 +1095,7 @@ English surface forms. And this report should not be expanded backward into
 
 #### Historical formulation
 
-`SC031-SC034` is promoted here as a **cautious West Saxon diphthong-chain
+`SC031-SC034` appears here as a **cautious West Saxon diphthong-chain
 report**: a real four-change corridor in the model, not a claim that the
 handbooks themselves present exactly four separate laws matching CAPR's present
 segmentation [@Campbell1959, §120; @Campbell1959, §§170--176, 185, 222--227;
@@ -1155,21 +1146,21 @@ source tradition is more overlapped and asymmetrical than the transducer layer.
 #### Place in the cascade
 
 This report belongs immediately after `SC030` OE Au Fronting and before the
-promoted `SC035-SC037` **Prefix and compound adjustments** bridge. On its
+`SC035-SC037` **Prefix and compound adjustments** bridge. On its
 right, it reaches toward
 three later contexts without collapsing into them: `SC032` points forward to
 `SC040` OE Med Unstressed U Lowering, `SC034` points forward to `SC043`
 **Anglo-Frisian Brightening**, and `SC033` points forward to `SC044`
 OE Breaking.
 
-That position matters for book architecture. The chapter can now cover the local
+That position matters for narrative shape. The chapter can now cover the local
 West Saxon diphthong corridor as a coherent middle zone, while the already
-promoted `SC043` report remains the dedicated right-hand chapter for the
+`SC043` report remains the dedicated right-hand chapter for the
 brightening pivot rather than being duplicated here.
 
 #### Order evidence
 
-The chronology cards justify promotion, but only if the internal asymmetry stays
+The chronology cards justify the grouping, but only if the internal asymmetry stays
 visible. The strongest local relation is the reciprocal `SC031 < SC034` /
 `SC034` after `SC031` pair. On both sides the witnesses are dew and hew:
 moving `SC031` later than `SC034`, or `SC034` earlier than `SC031`, restores
@@ -1190,7 +1181,7 @@ card does not yield an ordinary historical boundary before the bundled
 *PWGmcChanges* runner limit, and the expanded-PWGmc note across `SC008` is
 supplementary only rather than a replacement for the default chronology claim.
 
-`SC034` likewise has a real forward relation into the promoted brightening
+`SC034` likewise has a real forward relation into the brightening
 region. It must precede `SC043`, with the show witnesses and the straw side
 of the *aw* set showing why the corridor points naturally toward the later
 brightening chapter without becoming identical with it. `SC031`'s own
@@ -1199,13 +1190,13 @@ and must not be rewritten as the default left boundary of the report.
 
 #### Interpretation
 
-This chapter is valuable precisely because it promotes a real region without
+This chapter is valuable precisely because it captures a real region without
 flattening its internal structure. `SC031` and `SC034` are the local reciprocal
 core. `SC032` and `SC033` remain inside the report because they belong to the
 same West Saxon diphthongal corridor, but they are presented as subordinate or
 flank material rather than as equal historical centers.
 
-That makes the report a useful model for later promotions. CAPR can promote a
+That makes the report a useful model for later grouped reports. CAPR can sustain a
 multi-change corridor even when the handbooks support the region more strongly
 than they support the model's exact segmentation. The result is more than a
 placeholder, but still careful about the difference between source tradition,
@@ -1219,8 +1210,7 @@ real ordering constraint, but not a tidy set of alternate surface reflexes.
 their expanded-PWGmc supplementary notes. `SC033` should also remain somewhat
 open on the right, since its broad relation to `SC044` does not make it a tight
 local pair in the way that `SC031` and `SC034` are. Finally, this report should
-not duplicate the separate `SC043` brightening chapter. If later book
-architecture ever demands a narrower chapter centered only on the `SC031` /
+not duplicate the separate `SC043` brightening chapter. If later narrative shape ever demands a narrower chapter centered only on the `SC031` /
 `SC034` pair, that would be a revision of chapter shape, not a discovery that
 the present corridor was unreal.
 
@@ -1230,11 +1220,11 @@ the present corridor was unreal.
 
 #### Historical formulation
 
-`SC035-SC037` is promoted here as a **cautious adjacent derivational bridge
+`SC035-SC037` appears here as a **cautious adjacent derivational bridge
 report**, not as a claim that the traditional grammars present one classic
 three-change chapter called "prefix and compound adjustments." The grouping is
 useful because all three rules are adjacent ordinary FST changes that need
-explicit prose somewhere in the assembled half, but the internal hierarchy is
+explicit prose somewhere in the volume, but the internal hierarchy is
 uneven and should stay explicit. SC035 OE Prefix A Reduction is a narrow
 prefix-vowel flank. SC036 OE Inter Stress Raising is the clear center of
 gravity, with the strongest source support and the strongest ordinary chronology
@@ -1283,7 +1273,7 @@ independent chapter by itself.
 SC036 *OEInterStressRaising* is the center of the report. It adjusts medial
 unstressed vocalism between stronger stress peaks, which is why it lands most
 naturally in the historical space described by Campbell, Hogg, and Ringe and
-Taylor. If this grouped report works as finished production prose, it works
+Taylor. If this grouped report works as final prose, it works
 primarily because SC036 gives it a real historical middle.
 
 SC037 *OECompoundLinkingSyncope* then handles the right-hand compound and
@@ -1296,25 +1286,24 @@ level as SC036.
 
 #### Place in the cascade
 
-This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
-diphthong chain** and immediately before the promoted `SC039-SC040`
-**Medial unstressed vowel core**, followed by the separate promoted `SC041`
-final-loss note. That position is the main reason to promote the grouped row
+This bridge sits immediately after the `SC031-SC034` **West Saxon
+diphthong chain** and immediately before the `SC039-SC040`
+**Medial unstressed vowel core**, followed by the separate `SC041`
+final-loss note. That position is the main reason to keep the grouped row
 unchanged for now: it keeps a real seam in the middle of the half explicit
-without forcing three tiny chapters or a non-contiguous chapter architecture.
+without forcing three tiny chapters or a non-contiguous a larger chapter claim.
 
 The outward chronology links should remain cross-references only. SC035 points
-rightward to promoted SC043 through believe, but that does not justify
+rightward to SC043 through believe, but that does not justify
 pulling this report out of place toward the brightening chapter. SC036 points
 forward to SC040, but that later relation should remain a forward cross-
-reference rather than a reason to absorb this report into the promoted
-`SC039-SC040` core. SC037 points rightward again through the rainbow
-evidence that later appears at the left edge of promoted `SC049-SC050`, but
+reference rather than a reason to absorb this report into the `SC039-SC040` core. SC037 points rightward again through the rainbow
+evidence that later appears at the left edge of `SC049-SC050`, but
 that relation should likewise remain cross-reference only.
 
 #### Order evidence
 
-The order evidence justifies promotion only if the asymmetry stays visible.
+The order evidence justifies the grouping only if the asymmetry stays visible.
 
 SC035 has one real positive historical boundary, and it is rightward. The card
 shows that SC035 must precede SC043: if OE Prefix A Reduction is delayed beyond
@@ -1340,12 +1329,12 @@ find a real computational break across SC038 OE Strip Secondary Stress:
 moving SC037 later produces reġnefoga instead of expected reġnboga in
 rainbow. But SC038 is a technical marker, so that result must remain exactly
 what the card says it is: non-historical / technical-marker evidence, not a
-normal chronology claim. The later rainbow relation to promoted SC049 is real
+normal chronology claim. The later rainbow relation to SC049 is real
 and book-useful, but it should remain a rightward cross-reference only.
 
 Taken together, the cards support a grouped chapter with one strong center and
 two modest flanks: `SC035 < SC043`, `SC019 < SC036 < SC040`, and a
-technical-marker SC037/SC038 computational seam that should not be promoted
+technical-marker SC037/SC038 computational seam that should not be treated
 into ordinary chronology.
 
 #### Interpretation
@@ -1360,8 +1349,8 @@ linking cleanup is historically intelligible and computationally important, even
 though its own card evidence is technical rather than ordinary-historical.
 
 That makes the unit a derivational bridge in the strongest useful sense. It is
-adjacent, chronological, and coherent enough to carry finished prose, but
-the finished prose should be explicit about hierarchy rather than flattening all
+adjacent, chronological, and coherent enough to carry final prose, but
+the final prose should be explicit about hierarchy rather than flattening all
 three members into coequal textbook laws. If later architecture ever narrows the
 region around SC036, that would be a chapter-shape refinement rather than proof
 that the present bridge was mistaken.
@@ -1384,9 +1373,9 @@ derivational bridge with SC036 as its clear center of gravity.
 
 #### Historical formulation
 
-`SC039-SC040` is promoted here as a **narrow adjacent medial-vowel core
+`SC039-SC040` appears here as a **narrow adjacent medial-vowel core
 report**, not as a claim that the handbooks present one named two-change chapter
-with exactly these CAPR labels. The promotion is justified because the source
+with exactly these CAPR labels. The grouping is justified because the source
 tradition and the ordinary chronology line up most strongly on this pair. SC039
 OE WI Combinative U Umlaut is the narrow widow-based left flank: a
 historically legible *w*-conditioned low-stress *u* adjustment whose earlier
@@ -1416,8 +1405,8 @@ jugunpi > geogup ~ iugup likewise supports the later youth witness without
 turning SC072 into part of this chapter's architecture [@RingeTaylor2014,
 p. 267].
 
-That combination is enough to justify finished prose for the pair. The
-handbooks do not force one classical "SC039-SC040 chapter," but they do support
+That combination is enough to justify final prose for the pair. The
+handbooks do not force one classical "`SC039-SC040` chapter," but they do support
 exactly the kind of narrow adjacent medial-vowel core that the chronology cards
 now isolate.
 
@@ -1438,26 +1427,26 @@ recognizable in book prose.
 That is why the split works. The pair is not just adjacent in the cascade; it
 is a real local core in both source support and order evidence. SC041 remains
 visible to the right as a separate final-loss note rather than a coequal member
-of this promoted unit.
+of this unit.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC035-SC037` **Prefix and
-compound adjustments** bridge and immediately before the promoted `SC041`
+This report belongs immediately after the `SC035-SC037` **Prefix and
+compound adjustments** bridge and immediately before the `SC041`
 **Final bare-a loss note**. The immediate rightward neighborhood then continues
-through promoted `SC042` into the promoted SC043 brightening pivot.
+through `SC042` into the SC043 brightening pivot.
 
 The outward chronology links should remain cross-references only. SC036 points
 forward to SC040, but that later relation should not pull this report leftward
 into the earlier derivational bridge. SC040 points rightward to SC072 through
 youth, but that relation is broad/far and should remain orientation rather
-than chapter architecture. SC041 now remains explicitly separate on the right so
-that the local medial-vowel core can be promoted without flattening the broader
+than a larger chapter claim. SC041 now remains explicitly separate on the right so
+that the local medial-vowel core can be without flattening the broader
 final-loss hinge into the same chapter.
 
 #### Order evidence
 
-The order evidence is the clearest reason to promote this pair.
+The order evidence is the clearest reason to keep this pair together.
 
 SC039 has one live positive historical boundary, and it is rightward. If OE WI
 Combinative U Umlaut is delayed past SC040, PGmc wíduwōn yields wudowe
@@ -1480,7 +1469,7 @@ side functioning as a tight local reciprocal corridor.
 
 #### Interpretation
 
-This promotion works because it is narrower and more honest than the old grouped
+This report works because it is narrower and more honest than the old grouped
 bridge. SC039 remains visible as the one-sided widow flank. SC040 carries the
 report as the stronger source-backed historical center, with world and
 youth keeping the broader low-stress context in view. And SC041 is no longer
@@ -1488,7 +1477,7 @@ forced into the same production unit when its own chronology points outward to
 SC020 and SC046 rather than forming an equally tight local pair here.
 
 The result is a short full report that fits the book's architecture better than
-the previous three-change scaffold. It keeps the strongest local seam explicit,
+the previous older three-change version. It keeps the strongest local seam explicit,
 preserves strict chronology, and leaves the broader final-loss material visible
 without pretending it is part of the same immediate core.
 
@@ -1509,13 +1498,13 @@ earlier `SC035-SC037` bridge.
 
 #### Historical formulation
 
-SC041 *PWGmcFinalBareALoss* is promoted here as a **short singleton final-loss
+SC041 *PWGmcFinalBareALoss* appears here as a **short singleton final-loss
 note**, not as a claim that the handbooks present one isolated textbook chapter
 with exactly this CAPR label. The historical type is nevertheless real. The
 broader tradition supports early loss or erosion of final short low vowels, and
-that support is enough to justify explicit production prose for the rule even
+that support is enough to justify explicit prose for the rule even
 though its chronology is broader than the tight local widow pair that now
-carries promoted `SC039-SC040` to the left [@Campbell1959, §341;
+carries `SC039-SC040` to the left [@Campbell1959, §341;
 @RingeTaylor2014, pp. 60--61].
 
 #### Source tradition
@@ -1527,7 +1516,7 @@ part of early Germanic and prehistoric Old English final-syllable erosion
 comparatively by arguing that the loss of word-final short low vowels was
 already a Proto-West-Germanic change [@RingeTaylor2014, pp. 60--61].
 
-That source support does not make SC041 part of the promoted `SC039-SC040`
+That source support does not make SC041 part of the `SC039-SC040`
 medial-vowel core. It instead makes SC041 historically legible as the first
 explicit final-loss hinge after that core: close enough to belong here in strict
 chronological order, but broad enough that it works better as a short singleton
@@ -1550,16 +1539,16 @@ effect belongs to this one rule.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC039-SC040`
-**Medial unstressed vowel core** and immediately before the promoted `SC042`
+This note belongs immediately after the `SC039-SC040`
+**Medial unstressed vowel core** and immediately before the `SC042`
 **Surviving bimoric O unrounding context**. Its broader cross-references point
 outward rather than architecturally inward: leftward to the pilot
 `SC016-SC020` **Early vocalic/final corridor** through SC020, and rightward to
-the promoted `SC046-SC048` **Restoration and nasal-tail corridor** through
+the `SC046-SC048` **Restoration and nasal-tail corridor** through
 SC046.
 
 That position is what makes SC041 useful as a singleton note. It closes the
-medial-lowering/final-loss seam without reopening the earlier pilot corridor or
+medial-lowering/final-loss seam without reopening the earlier `SC016-SC020` corridor or
 collapsing into the later restoration chapter.
 
 #### Order evidence
@@ -1573,8 +1562,7 @@ outputs survives. Representative failures include beard, bosom, bottom,
 calf, and coat; concretely, PGmc bárdaz yields bearda rather than
 expected OE beard, and kámbaz yields camba rather than camb. That
 earlier boundary is historically real, but it is broad/far and should be read as
-a leftward cross-reference to the pilot corridor rather than as local chapter
-architecture.
+a leftward cross-reference to the `SC016-SC020` corridor rather than as local chapter claim.
 
 On the later side, SC041 must precede SC046. If final bare-*a* loss is delayed
 too long, the later restoration environment changes and fronted outcomes are
@@ -1582,7 +1570,7 @@ lost. Representative failures include craft, dale, day, hazel, and
 mast; concretely, PGmc kráftaz yields craft rather than expected OE
 cræft, and dágaz yields dag rather than expected dæġ. This later
 boundary is also historically real, but it should remain a rightward
-cross-reference to the promoted restoration corridor rather than a reason to
+cross-reference to the restoration corridor rather than a reason to
 merge the two units.
 
 Taken together, the cards support a real hinge but not a tight local reciprocal
@@ -1591,16 +1579,15 @@ production units.
 
 #### Interpretation
 
-This promotion works because it is deliberately modest. SC041 is not the center
-of a larger new corridor, and it is not a hidden third member of the promoted
-`SC039-SC040` report. Its job is architectural: to keep a real final-loss stage
+This report works because it is deliberately modest. SC041 is not the center
+of a larger new corridor, and it is not a hidden third member of the `SC039-SC040` report. Its job is architectural: to keep a real final-loss stage
 explicit between the medial-vowel core and the brightening/restoration region.
 
 The literature supports that move. Campbell and Ringe and Taylor both confirm
 that final short low-vowel loss belongs to the historical background of the
 period. CAPR then sharpens that background into one testable rule, and the
 chronology card shows that the rule sits in a broad but genuine window between
-the earlier pilot corridor and the later restoration hinge.
+the earlier `SC016-SC020` corridor and the later restoration hinge.
 
 #### Remaining cautions
 
@@ -1608,8 +1595,8 @@ The cautions are mostly structural. SC041 should not be merged back into
 `SC039-SC040`, because its broad `SC020 < SC041 < SC046` chronology is not the
 same kind of local reciprocal core that justifies that pair. It should not be
 merged backward into the pilot `SC016-SC020` corridor or forward into the
-promoted `SC046-SC048` restoration report, because those links are outward
-cross-references rather than chapter architecture. And its later failures should
+`SC046-SC048` restoration report, because those links are outward
+cross-references rather than a larger chapter claim. And its later failures should
 be described as environment-changing derivational consequences that block
 restored/fronted outputs, not as a cluster of competing local surface variants
 inside one narrow chapter.
@@ -1620,11 +1607,11 @@ inside one narrow chapter.
 
 #### Historical formulation
 
-SC042 *PWGmcSurvivingBimoricOUnrounding* is promoted here as a **short
+SC042 *PWGmcSurvivingBimoricOUnrounding* appears here as a **short
 singleton context note**. It is not a claim that the handbooks isolate one
 large independent chapter under exactly this label. The historical point is
 smaller: CAPR needs an explicit surviving-bimoric ō pathway behind rest,
-and that pathway belongs immediately on the left edge of the promoted SC043
+and that pathway belongs immediately on the left edge of the SC043
 brightening pivot rather than hidden inside a larger non-contiguous chapter
 [@Campbell1959, §§131, 157--158; @Hogg1992, pp. 101, 119;
 @RingeTaylor2014, pp. 157--158, 189--190].
@@ -1642,9 +1629,9 @@ retraction/restoration in a sequence that makes CAPR's narrow rest pathway
 historically legible even if the precise SC042 label is model-shaped
 [@RingeTaylor2014, pp. 157--158, 189--190].
 
-That is enough support for a modest promotion. The report should present SC042
+That is enough support for a modest note. The report should present SC042
 as a narrow feeder/context rule inside the post-final-loss seam, not as a
-coequal chapter center beside SC043, SC044-SC045, or SC046-SC048.
+coequal chapter center beside SC043, `SC044-SC045`, or `SC046-SC048`.
 
 #### CAPR implementation
 
@@ -1658,13 +1645,13 @@ implicit.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC041` **Final bare-a loss
-note** and immediately before the promoted `SC043` **Anglo-Frisian
-brightening** report. On its right, the already promoted `SC044-SC045`
+This note belongs immediately after the `SC041` **Final bare-a loss
+note** and immediately before the `SC043` **Anglo-Frisian
+brightening** report. On its right, the earlier `SC044-SC045`
 **Breaking and velar-fricative palatalization** report remains a separate
 neighboring unit rather than part of the same chapter.
 
-That placement is the whole reason to promote SC042 now. It closes the small
+That placement is the whole reason to treat SC042 now. It closes the small
 architectural seam between final-loss and brightening without pretending that
 the note itself is a major post-brightening chapter.
 
@@ -1677,31 +1664,30 @@ On the earlier side, SC042 must follow SC020. If the unrounding stage is moved
 earlier across PGmc Final Z Deletion, PGmc rástōz yields rasta rather than
 expected OE ræste. That earlier edge is historically interpretable, but it
 should remain a leftward cross-reference to the pilot `SC016-SC020` corridor
-rather than chapter architecture.
+rather than a larger chapter claim.
 
 On the later side, SC042 must precede SC043. If the same unrounding stage is
 delayed across Anglo-Frisian Brightening, PGmc rástōz again yields rasta
 rather than ræste. This later edge is tighter and more local: it is the
 direct handoff that makes SC042 worth keeping explicit immediately before the
-promoted brightening report.
+ brightening report.
 
 #### Interpretation
 
-SC042 is promoted because the modest reading is now the best one. The rest
+SC042 belongs here because the modest reading is now the best one. The rest
 evidence is thin, but it is genuine on both sides, and the book is clearer when
 the surviving-bimoric feeder to SC043 is stated explicitly. That gives the
-assembled half a cleaner local sequence: `SC041 -> SC042 -> SC043`, followed by
-the already separate SC044-SC045 and SC046-SC048 reports.
+volume a cleaner local sequence: `SC041 -> SC042 -> SC043`, followed by
+the already separate `SC044-SC045` and `SC046-SC048` reports.
 
 #### Remaining cautions
 
 The cautions are mostly structural. SC042 should still be narrated as a short
 context note rather than a major standalone chapter. Its evidence remains
 witness-limited, so the prose should not overstate independence. It should not
-be merged non-contiguously with SC044-SC045 just because that pair belongs to
+be merged non-contiguously with `SC044-SC045` just because that pair belongs to
 the same broader post-brightening region. And its leftward relation to SC020
-should stay a cross-reference rather than a reason to reopen the earlier pilot
-corridor here.
+should stay a cross-reference rather than a reason to reopen the earlier `SC016-SC020` corridor here.
 
 ## Anglo-Frisian brightening
 
@@ -1791,7 +1777,7 @@ rather than as a simple handbook quotation.
 
 SC044 OE Breaking is standard handbook material: front vowels develop into
 broken diphthongal outputs before *h*, *rC*, *lC*, and related local contexts,
-and it belongs after the fronted stage created by the promoted SC043
+and it belongs after the fronted stage created by the SC043
 Anglo-Frisian Brightening report [@Campbell1959, §139;
 @RingeTaylor2014, §§6.2.1--6.2.3; @Fulk2018, §4.13]. SC045 **OE Velar
 Fricative Palatalization** is narrower in CAPR's naming, but historically
@@ -1827,10 +1813,9 @@ palatalization article.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC043 brightening pivot. On
-its left, promoted SC042 remains a separate short context note rather than part of
-this production unit. On its right, the report leads into the promoted
-SC046-SC048 post-brightening corridor, while SC060 OE Ws Palatal Umlaut
+This report belongs immediately after the SC043 brightening pivot. On
+its left, SC042 remains a separate short context note rather than part of
+this production unit. On its right, the report leads into the `SC046-SC048` post-brightening corridor, while SC060 OE Ws Palatal Umlaut
 remains only a later rightward cross-reference rather than part of this
 chapter's architecture.
 
@@ -1848,10 +1833,10 @@ orientation, not a reason to extend the report beyond its adjacent pair.
 
 #### Interpretation
 
-For book purposes, SC044-SC045 is the strongest adjacent report immediately to
+For book purposes, `SC044-SC045` is the strongest adjacent report immediately to
 the right of SC043. SC044 is the standard handbook center; SC045 is the local
 velar/fricative partner that the CAPR implementation makes unusually explicit.
-That is enough to justify promotion as a full adjacent production report. But
+That is enough to justify treatment as a full adjacent report. But
 the chapter should still stay modest: it is not a replacement for the SC043
 brightening report, and it is not a whole post-brightening chapter covering
 everything through SC060.
@@ -1859,12 +1844,12 @@ everything through SC060.
 #### Remaining cautions
 
 The cautions matter as much as the positive result. SC042 should remain visible
-as a separate promoted context note rather than being pulled into this report
+as a separate context note rather than being pulled into this report
 non-contiguously. SC045 should not be narrated as a general chapter on all Old
 English palatalization; here it is the local velar/fricative follow-on to
 breaking. And although `SC045 < SC060` is a real later relation, it is narrow
-and should remain a rightward cross-reference rather than chapter architecture.
-The promoted SC046-SC048 corridor likewise remains a separate neighboring
+and should remain a rightward cross-reference rather than a larger chapter claim.
+The `SC046-SC048` corridor likewise remains a separate neighboring
 chapter rather than material to absorb into this pair.
 
 ## Restoration and nasal-tail corridor
@@ -1873,7 +1858,7 @@ chapter rather than material to absorb into this pair.
 
 #### Historical formulation
 
-`SC046-SC048` is promoted here as a **cautious adjacent post-brightening
+`SC046-SC048` appears here as a **cautious adjacent post-brightening
 corridor report**, not as a claim that the handbooks present one neat
 three-change Old English chapter in exactly this form. The internal structure is
 uneven by design. SC046 OE A Restoration is the source-backed
@@ -1900,7 +1885,7 @@ support the broader historical environment in which SC047 and SC048 operate, but
 they do not yield one tidy handbook chapter named exactly the way CAPR segments
 it [@Campbell1959, §403, §§205--206; @RingeTaylor2014, §6.9.4]. The result is a
 real historical neighborhood with uneven source support: SC046 is the clearest
-source-backed hinge, while SC047-SC048 is a stronger computational core than a
+source-backed hinge, while `SC047-SC048` is a stronger computational core than a
 classical textbook pair.
 
 #### CAPR implementation
@@ -1921,9 +1906,9 @@ with a clear internal center of gravity, not three symmetrical coequal laws.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC044-SC045
+This report belongs immediately after the `SC044-SC045`
 **Breaking and velar-fricative palatalization** report and immediately before
-the promoted SC049-SC050 **Onset allophony and Sievers-law bridge**. On its
+the `SC049-SC050` **Onset allophony and Sievers-law bridge**. On its
 left it still depends on the earlier SC043 **Anglo-Frisian Brightening** pivot,
 because SC046 is one of the stages that partly reverses the fronted outcomes
 created there. On its right SC048 points forward to SC059 OE Back Mutation,
@@ -1932,7 +1917,7 @@ reason to expand this chapter past its adjacent corridor.
 
 #### Order evidence
 
-The chronology cards justify promotion precisely because they show one strong
+The chronology cards justify the grouping precisely because they show one strong
 hinge plus one stronger internal core.
 
 SC046 must follow SC043 and precede SC048. If it is moved earlier than SC043,
@@ -1961,7 +1946,7 @@ reason to stretch the chapter into a non-local back-mutation report.
 
 Taken together, the cards support `SC043 < SC046 < SC048`, `SC034 < SC047 <
 SC048, and SC047 < SC048 < SC059`. The strongest internal claim is the broad
-reciprocal SC047-SC048 core; SC046 is the clearer historical hinge that makes
+reciprocal `SC047-SC048` core; SC046 is the clearer historical hinge that makes
 the corridor legible on the left.
 
 #### Interpretation
@@ -1969,27 +1954,26 @@ the corridor legible on the left.
 This report is useful because it keeps three adjacent ordinary FST changes
 explicit without pretending they are equal members of a classical handbook law.
 SC046 is the historically clearest member and should carry the source
-explanation. SC047-SC048 is where the strongest internal reciprocity lies, and
+explanation. `SC047-SC048` is where the strongest internal reciprocity lies, and
 the book should say so plainly. The result is a corridor with one source-backed
 hinge feeding a more model-internal nasal-tail cleanup zone.
 
-That is enough to justify promotion as full production prose. The chapter is no
+That is enough to justify treatment as full prose. The chapter is no
 longer just a placeholder, but it remains deliberately cautious about the gap
 between the handbooks' broader historical region and CAPR's sharper three-rule
-segmentation. If later book architecture ever narrows the corridor into SC046
-plus a separate SC047-SC048 pair, that would be a chapter-shape revision rather
+segmentation. If later narrative shape ever narrows the corridor into SC046
+plus a separate `SC047-SC048` pair, that would be a chapter-shape revision rather
 than proof that the present corridor was unreal.
 
 #### Remaining cautions
 
 The caution is structural as much as descriptive. This report should not absorb
-the already promoted SC043 or SC044-SC045 material on its left, and it should
-not absorb the promoted SC049-SC050 bridge on its right. SC047 and SC048 should
+the earlier SC043 or `SC044-SC045` material on its left, and it should
+not absorb the `SC049-SC050` bridge on its right. SC047 and SC048 should
 not be overstated as if the handbooks routinely present them as a named joint
 chapter; their strongest support here is the broad reciprocal -en failure core
 inside the model. And although `SC048 < SC059` is a real later relation, it is
-narrow and should remain a rightward cross-reference rather than chapter
-architecture. The corridor should stay exactly what it is: an adjacent,
+narrow and should remain a rightward cross-reference rather than a larger chapter claim. The corridor should stay exactly what it is: an adjacent,
 chronological, but unevenly source-backed post-brightening report.
 
 ## Onset allophony and Sievers-law bridge
@@ -2000,8 +1984,7 @@ chronological, but unevenly source-backed post-brightening report.
 
 This is a short adjacent chronological bridge report, not a major textbook
 chapter. It keeps two neighboring ordinary FST changes visible between the
-promoted SC046-SC048 **Restoration and nasal-tail corridor** and the promoted
-SC051 and SC052 palatalization reports without pretending that SC049 and SC050
+`SC046-SC048` **Restoration and nasal-tail corridor** and the SC051 and SC052 palatalization reports without pretending that SC049 and SC050
 are one historical process.
 
 SC049 PGmc B Allophony is the narrower and more implementation-heavy member.
@@ -2012,7 +1995,7 @@ initially or after nasals and as a voiced bilabial fricative elsewhere
 treats Sievers-law reflexes, heavy/light stem structure, weak verbs, and
 gemination as real historical material [@Adamczyk2001; @Fulk2018, p. 28,
 sec. 6.15]. The pair therefore stays together for practical chronological
-reasons, not because the sources present a standard SC049-SC050 chapter.
+reasons, not because the sources present a standard `SC049-SC050` chapter.
 
 #### Source tradition
 
@@ -2053,14 +2036,14 @@ without implying that all three rules should be merged into one unit.
 
 #### Place in the cascade
 
-This unit belongs immediately after the promoted SC046-SC048 corridor and
-immediately before the promoted SC051 report. It also stands directly to the
-left of the promoted SC052 hinge report. That placement is the main reason to
-promote the pair together: both changes are adjacent, both are ordinary FST
-changes, and both need explicit prose in the assembled half.
+This unit belongs immediately after the `SC046-SC048` corridor and
+immediately before the SC051 report. It also stands directly to the
+left of the SC052 hinge report. That placement is the main reason to
+treat the pair together: both changes are adjacent, both are ordinary FST
+changes, and both need explicit prose in the volume.
 
 SC050's forward relation to SC052 should be handled by cross-reference rather
-than by a non-contiguous SC050-SC052 chapter. SC052 remains the later promoted
+than by a non-contiguous `SC050-SC052` chapter. SC052 remains the later
 hinge report where plain velar palatalization is discussed in its own right;
 this bridge report only explains why Sievers Law Syncope belongs immediately to
 its left.
@@ -2083,7 +2066,7 @@ delaying it past OE Velar Palatalization breaks the stretch derivation and
 yields strecċan instead of expected streċċan.
 
 Taken together, the cards support `SC037 < SC049` and `SC050 < SC052`, but
-they do not support an internal reciprocal chronology claim for SC049-SC050 as
+they do not support an internal reciprocal chronology claim for `SC049-SC050` as
 a pair.
 
 #### Interpretation
@@ -2104,7 +2087,7 @@ evidence they actually have.
 SC049 should not be overstated. The handbooks support the stop/fricative
 distribution of *b*, but the current chronology evidence is still one-sided and
 compound-specific. SC050 should not be allowed to duplicate the already
-promoted SC052 report. Its role here is to mark the Sievers-law bridge and the
+SC052 report. Its role here is to mark the Sievers-law bridge and the
 stretch dependency, not to absorb the later plain-velar palatalization
 discussion into an out-of-order unit.
 
@@ -2128,9 +2111,9 @@ chapter [@Campbell1959, §170; @Campbell1959, §§440--441;
 @Hogg1992, pp. 106--107; @RingeTaylor2014, §6.4.1; @Luick1914, §168;
 @Fulk2018, p. 28; @SieversBrunner1965, §91.a].
 
-This report is therefore deliberately narrow. It promotes SC051 as its own
-concise singleton chapter between the promoted SC049-SC050 bridge report on the
-left and the promoted SC052 standalone hinge report on the right. The
+This report is therefore deliberately narrow. It treats SC051 as its own
+concise singleton chapter between the `SC049-SC050` bridge report on the
+left and the SC052 standalone hinge report on the right. The
 historical claim is that OE sk > sc deserves its own chapter shape inside the
 broader palatalization region without collapsing those neighboring reports into
 one larger unit.
@@ -2176,14 +2159,14 @@ chapter.
 
 #### Place in the cascade
 
-SC051 follows SC046 OE A Restoration, sits inside the broader SC049-SC052
+SC051 follows SC046 OE A Restoration, sits inside the broader `SC049-SC052`
 palatalization/fronting region, and precedes SC056 **OE Ws Palatal
 Diphthongization**. In the new assembly layout it now stands between the *049-050* bridge report on
 the left and the SC052 hinge report on the right, rather than remaining buried
 inside the old four-change placeholder.
 
 That placement matters for book structure as well as for local order. On its
-right, SC051 belongs near the already promoted SC055-SC056 umlaut-core report,
+right, SC051 belongs near the earlier `SC055-SC056` umlaut-core report,
 but it must only cross-reference that chapter rather than duplicate it. The
 point of this report is to clarify one narrow palatalization rule before the
 book returns to the neighboring velar-palatalization and umlaut material.
@@ -2204,21 +2187,21 @@ outcomes [@Campbell1959, §170; @Campbell1959, §§440--441;
 
 Both boundaries are historically interpretable and fairly local. That is the
 main reason SC051 is promotable as a narrow report: it has stronger local
-two-sided evidence than the parent SC049-SC052 cluster, and it does not depend
+two-sided evidence than the parent `SC049-SC052` cluster, and it does not depend
 on overreading a runner-bounded side as a positive historical boundary.
 
 #### Interpretation
 
-This promotion extracts one clean palatalization chapter from the broader
+This report isolates one clean palatalization chapter from the broader
 region. Its value is architectural as much as historical. The neighboring
 reports are now clearer because they no longer have to share one placeholder:
-SC049-SC050 forms the promoted left-hand bridge report, SC052 stands as the
-promoted standalone hinge into the umlaut region, and the promoted SC057 note
+`SC049-SC050` forms the left-hand bridge report, SC052 stands as the
+ standalone hinge into the umlaut region, and the SC057 note
 remains a later palatalization-side note rather than part of this chapter.
 
 That makes SC051 a good example of how the production layer should mature. The
 book does not need to solve the whole palatalization/fronting region at once.
-It can promote the rule that is already historically legible, dossier-backed,
+It can treat the rule that is already historically legible, source-backed,
 and locally well bounded, while leaving the rest of the structure visible for
 later review.
 
@@ -2231,10 +2214,10 @@ the wider palatalization complex rather than as a fully isolated law
 [@Campbell1959, §170; @Campbell1959, §§440--441; @Hogg1992, pp. 106--107;
 @RingeTaylor2014, §6.4.1; @Luick1914, §168].
 
-The chapter must also avoid duplicating the already promoted SC052 hinge report
-or the promoted SC055-SC056 umlaut-core report. SC056 belongs here only as
+The chapter must also avoid duplicating the earlier SC052 hinge report
+or the `SC055-SC056` umlaut-core report. SC056 belongs here only as
 SC051's right-hand local boundary, not as coequal chapter content. SC052 should
-be cross-referenced as the neighboring hinge chapter, and the promoted SC057
+be cross-referenced as the neighboring hinge chapter, and the SC057
 note remains separate later palatalization-side material. This report settles
 only the narrow case for SC051.
 
@@ -2251,10 +2234,10 @@ velars and *sk* inside a broader palatalization complex rather than as wholly
 independent headline chapters [@Campbell1959, §170; @Hogg1992, pp. 106--107;
 @RingeTaylor2014, §6.4.1; @Luick1914, §§168--176; @Fulk2018, p. 28].
 
-This report therefore promotes SC052 as a standalone chronological hinge, not
+This report therefore treats SC052 as a standalone chronological hinge, not
 as part of a non-contiguous `SC050-SC052` pair. On its left stands the already
-promoted SC051 OE Sk Palatalization report; on its right stands the
-promoted SC055-SC056 umlaut-core report. The historical claim is narrow but
+SC051 OE Sk Palatalization report; on its right stands the
+`SC055-SC056` umlaut-core report. The historical claim is narrow but
 important: plain velar palatalization deserves its own concise report between
 those neighboring chapters.
 
@@ -2310,13 +2293,13 @@ SC052 sits at current order 52. SC050 remains its feeder/context on the left:
 the stretch relation matters because Sievers Law Syncope creates the shape
 that the palatalization rule then acts on, not because SC050 and SC052 should
 be merged into one out-of-order chapter. In the assembled book, SC051 is the
-immediately preceding promoted report, and SC052 is the immediately following
+immediately preceding report, and SC052 is the immediately following
 standalone hinge report.
 
-To the right, SC052 now precedes the promoted SC053-SC054 pre-umlaut bridge
-report and the promoted SC055-SC056 umlaut-core report. Farther right, the
-promoted SC057 note remains a later palatalization-side development. That placement is the
-main architectural gain of this promotion: the book can now discuss the plain-velar
+To the right, SC052 now precedes the `SC053-SC054` pre-umlaut bridge
+report and the `SC055-SC056` umlaut-core report. Farther right, the
+SC057 note remains a later palatalization-side development. That placement is the
+main architectural gain of this report: the book can now discuss the plain-velar
 hinge explicitly while keeping the assembled order strictly chronological.
 
 #### Order evidence
@@ -2329,7 +2312,7 @@ results show `SC050 < SC052 < SC055`.
 
 The left edge still requires restraint. SC050's earlier side is runner-limited,
 not a positive historical boundary, so the stretch relation must not be
-inflated into a whole `SC050-SC052` production chapter. The right edge is
+inflated into a whole `SC050-SC052` chapter. The right edge is
 narrow as well, but it is historically interpretable because the source
 tradition broadly places palatalization before i-umlaut or front mutation
 [@Campbell1959, §§190--197; @Hogg1992, pp. 111--114;
@@ -2338,18 +2321,18 @@ tradition broadly places palatalization before i-umlaut or front mutation
 
 #### Interpretation
 
-SC052 is stronger than residual scaffold material. Its value is not just that it
+SC052 is stronger than residual placeholder material. Its value is not just that it
 has one witness on the left and two on the right, but that those witnesses make
 historical sense inside the broader source tradition. This is therefore the kind
-of central hinge rule that can be promoted without pretending the whole
+of central hinge rule that can be without pretending the whole
 palatalization region has been fully resolved.
 
 The report also shows how the sound-change half can mature while preserving
 strict chronological order. SC050 remains visible as feeder/context in the
-earlier *049-050* bridge report, SC051 remains a separate promoted cluster
+earlier *049-050* bridge report, SC051 remains a separate cluster
 chapter,
-SC052 now receives its own prose immediately after SC051, and SC055-SC056
-remains the promoted umlaut-core chapter to the right. The neighboring reports
+SC052 now receives its own prose immediately after SC051, and `SC055-SC056`
+remains the umlaut-core chapter to the right. The neighboring reports
 should be cross-referenced, not duplicated.
 
 #### Remaining cautions
@@ -2357,12 +2340,12 @@ should be cross-referenced, not duplicated.
 This report should stay narrow. It does not exhaust Old English palatalization,
 and it should not be read as if SC051 and SC052 were historically unrelated just
 because the book now treats them as adjacent reports. It must not duplicate the
-already promoted SC051 OE Sk Palatalization report or the promoted SC055-SC056
+earlier SC051 OE Sk Palatalization report or the `SC055-SC056`
 umlaut-core report.
 
 The chapter must also keep the left edge in proportion. stretch is enough to
 show that SC050 matters as feeder/context, but not enough to justify a
-non-contiguous `SC050-SC052` production unit. The promoted SC057 note should
+non-contiguous `SC050-SC052` production unit. The SC057 note should
 remain separate rather than being absorbed here by implication.
 
 ## Pre-umlaut bridge and W-loss
@@ -2373,8 +2356,7 @@ remain separate rather than being absorbed here by implication.
 
 This is a short adjacent chronological bridge report, not a major textbook
 chapter. It keeps two neighboring ordinary FST changes visible between the
-promoted SC052 OE Velar Palatalization hinge report and the promoted
-SC055-SC056 umlaut-core report without pretending that SC053 and SC054 form
+SC052 OE Velar Palatalization hinge report and the `SC055-SC056` umlaut-core report without pretending that SC053 and SC054 form
 one strong traditional chapter.
 
 SC053 OE Post Velar W Loss is the weaker and more residual member. It is a
@@ -2385,7 +2367,7 @@ does support loss of *w* before unstressed *i*, especially in the sea
 derivation from earlier saiwi- / sawi- to OE sǣ
 [@Campbell1959, §406; @RingeTaylor2014, §6.7.1; @Luick1914, §187]. The pair
 therefore stays together for practical chronological reasons, not because the
-sources present a standard SC053-SC054 chapter.
+sources present a standard `SC053-SC054` chapter.
 
 #### Source tradition
 
@@ -2443,12 +2425,12 @@ too-late glide.
 #### Place in the cascade
 
 This unit belongs immediately after SC052 OE Velar Palatalization and
-immediately before the promoted SC055-SC056 umlaut-core report. That is the
-main reason to promote the pair together: both changes are adjacent, both are
-ordinary FST changes, and both need explicit prose in the assembled half.
+immediately before the `SC055-SC056` umlaut-core report. That is the
+main reason to treat the pair together: both changes are adjacent, both are
+ordinary FST changes, and both need explicit prose in the volume.
 
 SC054's later relation to SC063 OE High Vowel Apocope should be handled by
-cross-reference only. SC063 remains the later promoted report where high-vowel
+cross-reference only. SC063 remains the later report where high-vowel
 apocope is discussed in its own right; this bridge report only explains why the
 glide-loss rule must already be in place to the left of that later chapter.
 
@@ -2471,7 +2453,7 @@ on the same witness.
 
 Taken together, the cards support `SC020 < SC054 < SC063`, while SC053 remains
 card-negative residual bridge material. They do not support an internal
-reciprocal chronology claim for SC053-SC054 as a pair.
+reciprocal chronology claim for `SC053-SC054` as a pair.
 
 #### Interpretation
 
@@ -2485,19 +2467,19 @@ sea.
 That makes the pairing practical and chronological rather than traditional. The
 book does not need to pretend that SC053 and SC054 form a standard handbook
 chapter. It only needs to keep them visible, in order, and properly situated
-between the promoted SC052 hinge report and the promoted SC055-SC056 umlaut
+between the SC052 hinge report and the `SC055-SC056` umlaut
 core.
 
 #### Remaining cautions
 
 SC053 should not be made stronger than it is. Its earlier and later card results
 are boundary-limited negative evidence, not positive chronology claims. SC054
-should not be allowed to sprawl into a non-contiguous SC054-SC063 chapter just
+should not be allowed to sprawl into a non-contiguous `SC054-SC063` chapter just
 because its later boundary happens to be SC063. That rightward relation belongs
-in cross-reference, not in chapter architecture.
+in cross-reference, not in a larger chapter claim.
 
-More broadly, this report should not duplicate the promoted SC055-SC056
-umlaut-core report on the right or the promoted SC063 **High-vowel
+More broadly, this report should not duplicate the `SC055-SC056`
+umlaut-core report on the right or the SC063 **High-vowel
 apocope** report farther right. Its purpose is narrower: to keep a weak
 residual member and a narrow positive member visible in strict chronological
 order without inflating either one into a major chapter.
@@ -2542,17 +2524,17 @@ handles the broad fronting and raising effects conditioned by following *i/j.
 *OEWsPalatalDiphthongization* then handles a narrower West Saxon
 palatal-triggered diphthongization zone. This is useful book material because
 it lets the model isolate the local right edge of the umlaut core. But the
-local CAPR relation `SC055 < SC056` should still be presented as a model-facing
+local CAPR relation `SC055 < SC056` should still be presented as a technical
 ordering result, not as a verbatim restatement of the broad handbook
 chronology.
 
 #### Place in the cascade
 
 This report belongs immediately after SC052 OE Velar Palatalization and,
-in the present assembly, after the promoted SC053-SC054 pre-umlaut bridge
+in the present assembly, after the `SC053-SC054` pre-umlaut bridge
 report. On
-its right, it precedes later promoted material, especially SC063 **OE High
-Vowel Apocope** and the SC066-SC068 syncope corridor, both of which depend on
+its right, it precedes later material, especially SC063 **OE High
+Vowel Apocope** and the `SC066-SC068` syncope corridor, both of which depend on
 the earlier umlaut setting already being in place. That position gives the
 chapter a useful book role: it is the early Old English vowel core that stands
 between palatalization and the later weak-tail reductions.
@@ -2588,10 +2570,10 @@ should not grant it equal historical weight. More broadly, the broad textbook
 chronology and CAPR's local chronology do not coincide perfectly, especially in
 sources such as Ringe and Taylor and Fulk that place palatal-triggered
 diphthongization differently in the wider sequence
-[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. SC053-SC054
-should remain a separate promoted bridge report rather than being absorbed into
-the umlaut core, and the promoted SC057 note should remain separate from both
-this chapter and the SC049-SC052 palatalization/fronting cluster. The chapter should also stay
+[@RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. `SC053-SC054`
+should remain a separate bridge report rather than being absorbed into
+the umlaut core, and the SC057 note should remain separate from both
+this chapter and the `SC049-SC052` palatalization/fronting cluster. The chapter should also stay
 narrow: it is a report on the umlaut core and its West Saxon right edge, not a
 general handbook article on every aspect of Old English i-mutation.
 
@@ -2601,10 +2583,10 @@ general handbook article on every aspect of Old English i-mutation.
 
 #### Historical formulation
 
-SC057 *OEJClusterCoalescence* is promoted here as a **short finished singleton
+SC057 *OEJClusterCoalescence* appears here as a **short finished singleton
 note**. It belongs to the broader palatalization and fronting neighborhood, but
 it is not the center of that region and should not be merged back into the
-promoted `SC049-SC052` or `SC055-SC056` reports. The honest final form is a
+`SC049-SC052` or `SC055-SC056` reports. The honest final form is a
 short one-sided note: historically legible, explicitly placed, but narrower
 than the major palatalization and umlaut chapters around it.
 
@@ -2618,7 +2600,7 @@ sēċan [@Campbell1959, §120, §170; @RingeTaylor2014, §§6.4.1, 6.5.1, 6.6.1-
 @Fulk2018, §§4.7, 4.13].
 
 That is enough support for a short finished note. It is not enough to make
-SC057 a coequal companion to the promoted SC051, SC052, or SC055-SC056 reports,
+SC057 a coequal companion to the SC051, SC052, or `SC055-SC056` reports,
 which is exactly why the prose should remain brief and structurally restrained.
 
 #### CAPR implementation
@@ -2630,21 +2612,20 @@ that the whole broader palatalization/fronting region forms one chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC055-SC056`
+This note belongs immediately after the `SC055-SC056`
 **Umlaut core and palatal-diphthongization follower** report and immediately
-before the promoted SC058 OE Nasal Dissimilation residual note. Its
-meaningful positive chronology link points outward on the left to the promoted
-SC052 **Velar palatalization hinge**, but that relation should remain a
+before the SC058 OE Nasal Dissimilation residual note. Its
+meaningful positive chronology link points outward on the left to the SC052 **Velar palatalization hinge**, but that relation should remain a
 cross-reference rather than a reason to merge non-adjacent chapters.
 
-Farther right, the next stronger seam belongs to promoted SC059 back mutation.
+Farther right, the next stronger seam belongs to SC059 back mutation.
 That broader context matters for orientation, but SC057 itself stays a short
 palatalization-side note rather than a bridge chapter.
 
 #### Order evidence
 
 SC057 has one real positive chronology edge. It must follow SC052. If OE J
-Cluster Coalescence is moved before the promoted velar-palatalization hinge,
+Cluster Coalescence is moved before the velar-palatalization hinge,
 PGmc báugijaną yields bēaġan rather than expected OE bīeġan, and PGmc
 sōkijaną yields sōċan rather than expected sēċan. Related forms such as
 follow, hedge, and singe fail in the same broader palatalization/fronting
@@ -2656,8 +2637,8 @@ be rewritten into a claim that SC057 must precede SC087.
 
 #### Interpretation
 
-SC057 is promoted because the final book should not leave ordinary sound changes
-in scaffold form where a short honest note will do. The right final treatment is
+SC057 belongs here because the final volume should not leave ordinary sound changes
+in placeholder form where a short honest note will do. The right final treatment is
 therefore explicit but modest: keep the real SC052 anchor visible, keep the
 later side non-positive, and let the note stand on its own instead of forcing it
 back into a larger palatalization chapter.
@@ -2665,8 +2646,7 @@ back into a larger palatalization chapter.
 #### Remaining cautions
 
 The note should stay narrow. SC052 remains a leftward cross-reference only, not
-a reason to recreate a non-contiguous `SC049-SC052` chapter. The promoted
-SC055-SC056 umlaut core likewise remains separate. And the runner-bounded later
+a reason to recreate a non-contiguous `SC049-SC052` chapter. the `SC055-SC056` umlaut core likewise remains separate. And the runner-bounded later
 side must not be turned into a positive historical boundary.
 
 ## OE Nasal Dissimilation residual note
@@ -2675,9 +2655,9 @@ side must not be turned into a positive historical boundary.
 
 #### Historical formulation
 
-SC058 *OENasalDissimilation* is promoted here as a **short finished residual
-note**. It is included because every ordinary sound change needs finished prose
-in the final book, not because the current evidence makes it a strong
+SC058 *OENasalDissimilation* appears here as a **short finished residual
+note**. It is included because every ordinary sound change needs final prose
+in the final volume, not because the current evidence makes it a strong
 chronological hinge. The right final form is therefore explicitly residual and
 contextual.
 
@@ -2697,8 +2677,8 @@ chronology of its own.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted SC057 **OE J Cluster
-Coalescence note** and immediately before the promoted SC059 **OE back
+This note belongs immediately after the SC057 **OE J Cluster
+Coalescence note** and immediately before the SC059 **OE back
 mutation** report. It remains a short residual/context note in that position
 rather than a coequal partner to either neighboring chapter.
 
@@ -2716,7 +2696,7 @@ a positive local chronology claim.
 
 #### Interpretation
 
-SC058 is promoted because residual completion requires finished prose even for
+SC058 belongs here because residual completion requires final prose even for
 the weakest ordinary rules. The honest final treatment is therefore very short:
 keep the rule explicit, state clearly that the current chronology is
 boundary-limited in both directions, and avoid inflating that limited evidence
@@ -2727,7 +2707,7 @@ into a larger chapter.
 The methodological boundaries matter here. Bundled *PWGmcChanges* and the
 current SC087 boundary are search limits, not historical anchors for SC058.
 This note should therefore stay brief and should not be read as a coequal
-partner to the promoted SC057 note or the promoted SC059 back-mutation report.
+partner to the SC057 note or the SC059 back-mutation report.
 
 ## OE back mutation
 
@@ -2735,9 +2715,10 @@ partner to the promoted SC057 note or the promoted SC059 back-mutation report.
 
 #### Historical formulation
 
-SC059 *OEBackMutation* is promoted here as a **short singleton back-mutation
-report**. It replaces the old grouped `SC059-SC061` scaffold because the dossier
-work now shows that SC059 is the clear source-backed center of that seam. The
+SC059 *OEBackMutation* appears here as a **short singleton back-mutation
+report**. It stands apart from the older grouped `SC059-SC061` version because
+the evidence now shows that SC059 is the clear source-backed center of that
+seam. The
 historical point is narrower than the old grouped bridge: back mutation or back
 umlaut is a real Old English vowel-development zone in the handbooks, but that
 does not justify pulling SC060, SC061, or the later weak-tail cluster into
@@ -2759,7 +2740,7 @@ West Saxon giefan and weofan beside West Saxon wefan
 mutation as a separate historical phenomenon rather than a mere side effect of
 earlier umlaut [@Fulk2018, §4.8].
 
-That is enough support for explicit production prose. The report should stay
+That is enough support for explicit prose. The report should stay
 focused on back mutation itself, not inflate SC059 into a general weak-tail
 chapter and not re-create the old grouped `SC059-SC061` bridge under another
 name.
@@ -2771,22 +2752,22 @@ CAPR isolates this historical zone as one explicit step: SC059
 that appear in forms such as ġiefan, stelan, and wefan when the rule is
 misordered. This is more specific than the handbook phrasing, but that
 specificity is exactly why the singleton report is useful. It lets the book mark
-the real center of the seam between the promoted post-brightening corridor on
+the real center of the seam between the post-brightening corridor on
 the left and the later weak-tail region on the right without pretending those
 regions belong to the same chapter.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC058
+This report belongs immediately after the SC058
 OE Nasal Dissimilation residual note and immediately before the
-promoted SC060 **WS palatal umlaut note**. Its real chronology edges point
-outward rather than architecturally inward: leftward to the already promoted
+SC060 **WS palatal umlaut note**. Its real chronology edges point
+outward rather than architecturally inward: leftward to the earlier
 `SC046-SC048` **Restoration and nasal-tail corridor** through SC048, and
-rightward to the split late-tail scaffold region through the standalone
+rightward to the split late-tail region through the standalone
 `SC078` **Weak-tail reduction right-edge note**.
 
-That placement is the point of the promotion. SC059 replaces the old grouped
-bridge as the real center of the seam while leaving SC060 and SC061 visible as
+That placement matters because SC059 now serves as the real center of the seam
+while leaving SC060 and SC061 visible as
 separate short notes in strict chronological order.
 
 #### Order evidence
@@ -2795,17 +2776,16 @@ The chronology card gives SC059 a real two-sided window: `SC048 < SC059 <
 SC078`.
 
 On the earlier side, SC059 must follow SC048. If OE Back Mutation is moved
-before the promoted restoration and nasal-tail corridor reaches SC048, PGmc
+before the restoration and nasal-tail corridor reaches SC048, PGmc
 gébaną yields ġeofan rather than expected OE ġiefan, and PGmc stélaną
 likewise yields steolan rather than stelan. That earlier edge is
-historically real, but it belongs as a leftward cross-reference to the promoted
-`SC046-SC048` report rather than as a reason to merge the two units.
+historically real, but it belongs as a leftward cross-reference to the `SC046-SC048` report rather than as a reason to merge the two units.
 
 On the later side, SC059 must also precede SC078. If OE Back Mutation is delayed
 into the later weak-tail region, PGmc stélaną again yields steolan instead
 of stelan, and PGmc wébaną yields weofan instead of wefan. That later
 edge is also historically real, but it is broad/far and should remain a
-rightward cross-reference to the split late-tail scaffold region rather than a
+rightward cross-reference to the split late-tail region rather than a
 reason to expand this note into `SC078` or the larger late weak-tail sequence.
 
 Taken together, the cards support a genuine singleton center with two outward
@@ -2813,27 +2793,26 @@ links: `SC048 < SC059 < SC078`.
 
 #### Interpretation
 
-SC059 is promoted because the modest reading is now the best one. The new
-dossiers make clear that back mutation is the only member of the old bridge with
+SC059 belongs here because the modest reading is now the best one. The evidence
+makes clear that back mutation is the only member of the old bridge with
 both strong source support and real two-sided chronology. That makes it worth
-stating explicitly in production prose, while SC060 and SC061 remain as
+stating explicitly in prose, while SC060 and SC061 remain as
 one-sided companion notes rather than coequal chapter centers.
 
 This is therefore an architectural singleton. It marks the true center of the
-late vowel seam without turning neighboring cross-references into chapter
-architecture and without claiming that the whole weak-tail region has already
-been resolved into finished prose.
+late vowel seam without turning neighboring cross-references into a larger chapter claim and without claiming that the whole weak-tail region has already
+been resolved into final prose.
 
 #### Remaining cautions
 
 The cautions are structural as much as descriptive. SC059 should not be merged
-backward into the promoted `SC046-SC048` corridor just because `SC048 < SC059`
+backward into the `SC046-SC048` corridor just because `SC048 < SC059`
 is real. It should not be expanded forward into SC078 or the larger split
-late-tail scaffold region just because `SC059 < SC078` is real. And the report
+late-tail region just because `SC059 < SC078` is real. And the report
 should stay focused on back mutation itself rather than broadening into a general
-article on the whole later weak-tail region. The point of the promotion is
+article on the whole later weak-tail region. The point is
 precise: isolate the source-backed center, keep the outward links as
-cross-references, and leave SC060 and SC061 as separate promoted notes.
+cross-references, and leave SC060 and SC061 as separate notes.
 
 ## WS palatal umlaut note
 
@@ -2841,16 +2820,16 @@ cross-references, and leave SC060 and SC061 as separate promoted notes.
 
 #### Historical formulation
 
-SC060 *OEWsPalatalUmlaut* is promoted here as a **short finished singleton
+SC060 *OEWsPalatalUmlaut* appears here as a **short finished singleton
 note**. It is historically legible through the might / night material, but
 its chronology remains one-sided. The right final form is therefore a short
 singleton note in strict order, not a reason to merge the rule back into the
-promoted umlaut core.
+ umlaut core.
 
 #### Source tradition
 
 The source tradition is narrower than for the main umlaut chapter but still real
-enough for finished prose. Campbell and Ringe and Taylor both support the
+enough for final prose. Campbell and Ringe and Taylor both support the
 historical development behind forms such as miht and niht, while Fulk's
 broader chronology cautions help keep the rule tied to the umlaut and
 palatal-vowel region rather than treated as a coequal chapter center
@@ -2858,7 +2837,7 @@ palatal-vowel region rather than treated as a coequal chapter center
 @Fulk2018, §§4.7, 4.13].
 
 That support is enough for a short finished note. It is not enough to justify
-folding SC060 back into the promoted `SC055-SC056` report.
+folding SC060 back into the `SC055-SC056` report.
 
 #### CAPR implementation
 
@@ -2869,16 +2848,16 @@ anchors a larger chapter.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted SC059 OE back mutation
-report and immediately before the promoted SC061 **Weak-tail nasal-loss note**.
+This note belongs immediately after the SC059 OE back mutation
+report and immediately before the SC061 **Weak-tail nasal-loss note**.
 Its meaningful positive chronology link points outward on the left to the
-promoted `SC055-SC056` umlaut core, but that relation should remain a
+`SC055-SC056` umlaut core, but that relation should remain a
 cross-reference rather than a reason to merge chapters.
 
 #### Order evidence
 
 SC060 has one real positive historical boundary. It must follow SC055. If OE WS
-Palatal Umlaut is moved before the promoted umlaut core, PGmc máxtiz yields
+Palatal Umlaut is moved before the umlaut core, PGmc máxtiz yields
 mieht rather than expected OE miht, and PGmc náxti yields nieht rather
 than expected niht.
 
@@ -2888,15 +2867,15 @@ be rewritten into a claim that SC060 must precede SC087.
 
 #### Interpretation
 
-SC060 is promoted because the final book should not leave one-sided but
-historically legible ordinary rules in scaffold form when a short finished note
+SC060 belongs here because the final volume should not leave one-sided but
+historically legible ordinary rules in placeholder form when a short finished note
 will do. The correct final treatment is modest: keep the real leftward umlaut
 anchor explicit, keep the later side non-positive, and leave the main umlaut
 chapter where it already belongs.
 
 #### Remaining cautions
 
-The note should stay narrow. The promoted `SC055-SC056` umlaut core remains a
+The note should stay narrow. The `SC055-SC056` umlaut core remains a
 leftward cross-reference only, not a destination for merger. And the
 runner-bounded later side must remain a methodological limit rather than a
 positive historical boundary.
@@ -2907,7 +2886,7 @@ positive historical boundary.
 
 #### Historical formulation
 
-SC061 *OEWeakTailNasalLoss* is promoted here as a **short finished singleton
+SC061 *OEWeakTailNasalLoss* appears here as a **short finished singleton
 note**. It is historically legible through the *do* / dōn pathway, but its
 chronology remains one-sided. The right final form is therefore a short
 singleton note in strict order, not a reason to merge the rule back into SC023
@@ -2921,7 +2900,7 @@ material, which is enough to keep the rule historically legible even though it
 does not rise to a larger textbook chapter of its own [@RingeTaylor2014].
 
 That is enough support for a short finished note. It is not enough to justify
-merging SC061 backward into the promoted SC023 singleton or outward into a
+merging SC061 backward into the SC023 singleton or outward into a
 larger weak-tail chapter.
 
 #### CAPR implementation
@@ -2933,16 +2912,16 @@ chronology testing.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted SC060 **WS palatal umlaut
-note** and immediately before the promoted SC063 **OE high vowel apocope**
+This note belongs immediately after the SC060 **WS palatal umlaut
+note** and immediately before the SC063 **OE high vowel apocope**
 report. Its meaningful positive chronology link points outward on the left to
-the promoted SC023 **N-stem n-loss note**, but that relation should remain a
+the SC023 **N-stem n-loss note**, but that relation should remain a
 cross-reference rather than a reason to merge non-adjacent chapters.
 
 #### Order evidence
 
 SC061 has one real positive historical boundary. It must follow SC023. If OE
-Weak Tail Nasal Loss is moved before the promoted SC023 singleton note, PGmc
+Weak Tail Nasal Loss is moved before the SC023 singleton note, PGmc
 dōną no longer yields expected OE dōn; the earlier-shifted derivation
 records no output at all.
 
@@ -2952,14 +2931,14 @@ be rewritten into a claim that SC061 must precede SC087.
 
 #### Interpretation
 
-SC061 is promoted because residual completion requires finished prose even for
+SC061 belongs here because residual completion requires final prose even for
 one-sided ordinary rules. The honest final treatment is therefore a short note:
 keep the real SC023 anchor explicit, keep the later side non-positive, and let
 the rule remain a small but visible part of the weak-tail sequence.
 
 #### Remaining cautions
 
-The note should stay narrow. The promoted SC023 report remains a leftward
+The note should stay narrow. The SC023 report remains a leftward
 cross-reference only, not a merger target. The later side remains runner-bounded
 and must not be turned into a positive historical boundary. And the note should
 not be broadened into a larger weak-tail chapter.
@@ -3065,8 +3044,7 @@ is centered on the fright / furht- witness family, where the weak-tail
 derivation yields OE fyrhte. SC065 OE Medial Syncope is different in kind:
 it represents a narrow CAPR slice of the broader medial-syncope material that
 follows the main apocope zone. The pair stays together because the two changes
-are adjacent and occupy the immediate post-SC063 tail before the promoted
-SC066-SC068 syncope/degemination corridor.
+are adjacent and occupy the immediate post-SC063 tail before the `SC066-SC068` syncope/degemination corridor.
 
 #### Source tradition
 
@@ -3107,7 +3085,7 @@ broader late medial-syncope tradition than as the whole historical phenomenon
 #### Place in the cascade
 
 This unit belongs immediately after SC063 OE High Vowel Apocope and
-immediately before the promoted SC066-SC068 **Syncope and Degemination
+immediately before the `SC066-SC068` **Syncope and Degemination
 Corridor**. That is the main reason to keep the pair together: it supplies a
 short post-apocope bridge in strict chronological order rather than leaving the
 weak-tail aftermath undescribed.
@@ -3153,12 +3131,12 @@ chapter that would blur their actual evidence profile.
 The prose must not overstate the fright evidence for SC064. Both positive
 boundaries are real, but both are carried by the same witness family. SC065 must
 not be turned into a positive chronology anchor; its card remains negative and
-boundary-limited. The chapter should not duplicate the promoted SC063
-**High-vowel apocope** report on the left or the promoted SC066-SC068
+boundary-limited. The chapter should not duplicate the SC063
+**High-vowel apocope** report on the left or the `SC066-SC068`
 **Syncope and degemination corridor** on the right.
 
-More broadly, the report should not imply that the handbooks present SC064-SC065
-as a standard paired chapter. The point of promotion is narrower: both ordinary
+More broadly, the report should not imply that the handbooks present `SC064-SC065`
+as a standard paired chapter. The point is narrower: both ordinary
 FST changes now receive explicit prose in their proper chronological place, with
 SC064 treated as the narrow positive-evidence member and SC065 treated as
 card-negative contextual syncope material.
@@ -3217,10 +3195,9 @@ of syncope and post-syncope cluster simplification
 #### Place in the cascade
 
 This corridor belongs to the late weak-tail zone. It follows SC063 **OE High
-Vowel Apocope** and the immediate post-apocope tail SC064-SC065, and it
-precedes the split late-tail region (`SC069`, `SC070-SC071`, promoted
-`SC072-SC073`, `SC074-SC075`, `SC076`, `SC078`). That placement is important
-because the report should remain a narrow promoted corridor rather than a proxy
+Vowel Apocope** and the immediate post-apocope tail `SC064-SC065`, and it
+precedes the split late-tail region (`SC069`, `SC070-SC071`, `SC072-SC073`, `SC074-SC075`, `SC076`, `SC078`). That placement is important
+because the report should remain a narrow corridor rather than a proxy
 for the whole late-tail zone: it isolates one specific sequence in which later
 weak-tail reduction produces clusters that then need local cleanup.
 
@@ -3265,7 +3242,7 @@ not proof that the handbook tradition recognizes three coequal named laws.
 
 #### Historical formulation
 
-SC069 *OEEarlyOShortening* is promoted here as a **short finished late-tail
+SC069 *OEEarlyOShortening* appears here as a **short finished late-tail
 opener/context note**. The change is historically legible as part of the larger
 late unstressed-vowel cleanup, but it is not the beginning of the real local
 late-tail core. The honest final treatment is therefore contextual and
@@ -3281,8 +3258,8 @@ shortening, and later weak-tail cleanup as historically real
 [@Campbell1959, §§345--354, 388--389; @Hogg1992, pp. 120--121;
 @RingeTaylor2014, §§6.7.3--6.9.3; @Luick1914, §§304--307; @Fulk2018, §§5.6--5.7].
 
-That is enough to justify finished prose for SC069. It is not enough to turn the
-rule into a new local late-tail core alongside the already promoted bridges and
+That is enough to justify final prose for SC069. It is not enough to turn the
+rule into a new local late-tail core alongside the earlier bridges and
 center of gravity to its right.
 
 #### CAPR implementation
@@ -3294,15 +3271,13 @@ implicit inside neighboring reductions.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC066-SC068`
-**Syncope and degemination corridor** and immediately before the promoted
-`SC070-SC071` **Early unstressed fronting and shortening bridge**. Its only
-positive outward chronology relation points far left to the promoted SC023
+This note belongs immediately after the `SC066-SC068`
+**Syncope and degemination corridor** and immediately before the `SC070-SC071` **Early unstressed fronting and shortening bridge**. Its only
+positive outward chronology relation points far left to the SC023
 **N-stem n-loss note**, but that broad/far relation should remain a distant
-cross-reference rather than chapter architecture.
+cross-reference rather than a larger chapter claim.
 
-The local late-tail architecture begins more credibly with the promoted
-`SC070-SC071` bridge and is strongest in the promoted `SC072-SC073` core. SC069
+The local late-tail architecture begins more credibly with the `SC070-SC071` bridge and is strongest in the `SC072-SC073` core. SC069
 therefore remains the opener/context note of the region, not its hidden main
 chapter.
 
@@ -3317,15 +3292,15 @@ earth, flask, heart, and line.
 
 The later side is different. The current runner finds no real later break for
 SC069 before the SC087 boundary. That result is runner-bounded and must not
-be rewritten into a claim that SC069 must historically precede SC087.
+be rewritten as an SC087 boundary claim.
 
 #### Interpretation
 
-SC069 is now finished prose because every ordinary sound change should appear in
-the final printed version, not because the rule has become a local chronology
+SC069 is now final prose because every ordinary sound change should appear in
+the volume, not because the rule has become a local chronology
 hinge. The right final treatment is therefore a modest context note: keep the
 broad/far `SC023 < SC069` relation explicit, keep the later side non-positive,
-and leave the real late-tail architecture to the already promoted bridge and
+and leave the real late-tail architecture to the earlier bridge and
 core units to the right.
 
 #### Remaining cautions
@@ -3334,7 +3309,7 @@ This note should stay contextual. Its positive relation to SC023 is too distant
 to organize local prose, so the book should not build a non-contiguous chapter
 around that edge. The runner-bounded later side must remain a methodological
 limit rather than a must-precede claim about SC087. And the note should not be
-allowed to reopen or rival the promoted late-tail bridge/core structure.
+allowed to reopen or rival the late-tail bridge/core structure.
 
 ## Early unstressed fronting and shortening bridge
 
@@ -3345,12 +3320,12 @@ allowed to reopen or rival the promoted late-tail bridge/core structure.
 This is a cautious early late-tail bridge full report centred on SC070
 *OEUnstressedFrontingEarly* and SC071 *OELateOShortening*. The pair is real and
 adjacent, but it is not the main late-tail core. SC070 is the stronger hinge:
-it has a real leftward relation to the promoted SC052 hinge and a local right
+it has a real leftward relation to the SC052 hinge and a local right
 edge to SC071. SC071 is the narrower follower.
 
-That narrower reading is the honest one. The report promotes only SC070 and
-SC071. It does not merge backward into the promoted SC069 opener/context
-note, does not merge forward into the promoted `SC072-SC073` core, and does
+That narrower reading is the honest one. The report discusses only SC070 and
+SC071. It does not merge backward into the SC069 opener/context
+note, does not merge forward into the `SC072-SC073` core, and does
 not treat this early bridge as a reason to reopen any of the later closing
 reports.
 
@@ -3370,7 +3345,7 @@ both inside the same late unstressed-vowel environment [@Luick1914, §§304--307
 Together those sources justify a modest bridge report. They support the broader
 late-tail environment more strongly than they support this exact pair as a
 handbook chapter, which is why the prose stays smaller and more technical than
-the promoted `SC072-SC073` core or the promoted SC078 right-edge report.
+the `SC072-SC073` core or the SC078 right-edge report.
 
 #### CAPR implementation
 
@@ -3383,17 +3358,17 @@ real adjacent seam `SC070 < SC071`.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC069 **Early o-shortening
-context note** and immediately before the promoted `SC072-SC073`
+This report belongs immediately after the SC069 **Early o-shortening
+context note** and immediately before the `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core**. Its meaningful outward
-chronology relation points left to the promoted SC052 **Velar palatalization
+chronology relation points left to the SC052 **Velar palatalization
 hinge**, but that leftward relation should remain a cross-reference rather than
-chapter architecture.
+a larger chapter claim.
 
-That placement is the point of the promotion. SC070-SC071 now gives the split
+That placement matters because `SC070-SC071` now gives the split
 late-tail region an explicit early bridge without displacing the stronger
-middle core on the right. Farther right, the promoted `SC074-SC075` bridge and
-the promoted SC076 note remain distinct, while SC078 remains the promoted
+middle core on the right. Farther right, the `SC074-SC075` bridge and
+the SC076 note remain distinct, while SC078 remains the treated
 right-edge report rather than a co-member of this chapter.
 
 #### Order evidence
@@ -3403,7 +3378,7 @@ The local center of the report is `SC070 < SC071`.
 SC070 must follow SC052 and precede SC071. If OE Unstressed Fronting Early is
 moved before SC052, PGmc lúnganjō yields lunġen rather than expected OE
 lungen. That leftward relation is real, but it should remain only a
-cross-reference to the promoted SC052 report rather than a reason to merge
+cross-reference to the SC052 report rather than a reason to merge
 non-adjacent chapters.
 
 SC070 must also precede SC071. If it is moved later than SC071, PGmc
@@ -3420,22 +3395,20 @@ positive claim that SC071 must precede SC087.
 
 #### Interpretation
 
-SC070-SC071 is promoted because it is now the strongest remaining local pair on
+`SC070-SC071` belongs here because it is now the strongest remaining local pair on
 the early side of the split late-tail region. The report remains cautious on
 purpose. SC070 is the stronger hinge because it has positive evidence on both
 sides; SC071 is the local follower and remains one-sided on the right.
 
-This gives the late-tail architecture a clearer shape in book form: promoted
-SC069 as the opener/context note, promoted SC070-SC071 as the early bridge,
-promoted `SC072-SC073` as the compact late-tail core, promoted `SC074-SC075`
-as the narrow medial bridge, promoted SC076 as the remaining weaker context
-note, and promoted SC078 as the right-edge report.
+This gives the late-tail architecture a clearer shape in book form: SC069 as the opener/context note, `SC070-SC071` as the early bridge,
+`SC072-SC073` as the compact late-tail core, `SC074-SC075`
+as the narrow medial bridge, SC076 as the remaining weaker context
+note, and SC078 as the right-edge report.
 
 #### Remaining cautions
 
 The report should stay narrow. It should not absorb SC069 just because the two
-units are adjacent, and it should not be absorbed into the promoted
-`SC072-SC073` core just because that stronger chapter follows it immediately. Its
+units are adjacent, and it should not be absorbed into the `SC072-SC073` core just because that stronger chapter follows it immediately. Its
 leftward `SC052 < SC070` relation should remain a cross-reference only, not a
 license to build a non-adjacent chapter. And SC071's runner-bounded later side
 must not be turned into a positive historical boundary.
@@ -3446,19 +3419,20 @@ must not be turned into a positive historical boundary.
 
 #### Historical formulation
 
-This is a compact adjacent late-tail production report centred on SC072
-*OEUnstressedLongVowelShortening* and SC073 *OEUnstressedAEMerger*. The dossier
-work shows that this pair is the strongest internal production-scale seam in the
-split late-tail region: it has the clearest middle core, real local reciprocity,
+This is a compact adjacent late-tail report centred on SC072
+*OEUnstressedLongVowelShortening* and SC073 *OEUnstressedAEMerger*. The
+evidence shows that this pair is the strongest internal seam in the split
+late-tail region: it has the clearest middle core, real local reciprocity,
 and source support that is stronger than the flanking bridges on either side.
 
-That stronger reading is also narrower than the broader late-tail dossier frame.
-The report promotes only SC072 and SC073. It does not absorb the leftward
-`SC064 < SC072` relation into the promoted `SC064-SC065` bridge, does not
-pull the rightward `SC073 < SC085` relation into the promoted `SC085-SC086`
-closing report, and does not expand into the promoted `SC070-SC071`
-bridge, the promoted `SC074-SC075` bridge, the promoted SC076 note, or the
-promoted SC078 report.
+That stronger reading is also narrower than the broader late-tail region as a
+whole.
+The report discusses only SC072 and SC073. It does not absorb the leftward
+`SC064 < SC072` relation into the `SC064-SC065` bridge, does not
+pull the rightward `SC073 < SC085` relation into the `SC085-SC086`
+closing report, and does not expand into the `SC070-SC071`
+bridge, the `SC074-SC075` bridge, the SC076 note, or the
+SC078 report.
 
 #### Source tradition
 
@@ -3492,18 +3466,18 @@ adjacent seam `SC072 < SC073`.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC070-SC071`
+This report belongs immediately after the `SC070-SC071`
 **Early unstressed fronting and shortening bridge** and immediately before the
-promoted `SC074-SC075` **Medial unstressed-i lowering bridge**. Its meaningful
-outward chronology links point left to the promoted `SC064-SC065`
-**Post-apocope tail** through SC064 and right to the promoted `SC085-SC086`
+`SC074-SC075` **Medial unstressed-i lowering bridge**. Its meaningful
+outward chronology links point left to the `SC064-SC065`
+**Post-apocope tail** through SC064 and right to the `SC085-SC086`
 **H-loss and contraction core** through SC085.
 
 Those outward relations matter, but they remain cross-references only. `SC064 <
 SC072` should not pull the post-apocope tail forward into this chapter, and
 `SC073 < SC085` should not pull this report rightward into the closing
 h-loss/contraction core. The report stays strictly adjacent and chronological:
-only SC072 and SC073 are promoted here.
+only SC072 and SC073 are here.
 
 #### Order evidence
 
@@ -3512,7 +3486,7 @@ The local center of the report is `SC072 < SC073`.
 SC072 must follow SC064 and precede SC073. If OE Unstressed Long Vowel
 Shortening is moved earlier than SC064, PGmc fúrxtīnaz yields fyrhten
 rather than expected OE fyrhte, so the leftward SC064 relation is real but
-should remain a cross-reference to the promoted `SC064-SC065` report. If SC072
+should remain a cross-reference to the `SC064-SC065` report. If SC072
 is moved later than SC073, broad final *-e* outcomes merge too early to -æ:
 PGmc nḗdrōn yields nǣdræ instead of nǣdre, and PGmc fádēr yields
 fædær instead of fæder, alongside the wider adder / father failure set.
@@ -3522,26 +3496,26 @@ moved earlier than SC072, the same broad adder / father / related final-
 vowel set merges too soon. Its later side is real but narrower: if SC073 is
 moved later than SC085, PGmc táixōn yields tāæ rather than expected OE
 tā. That rightward `SC073 < SC085` edge remains a forward cross-reference only
-to the promoted `SC085-SC086` report rather than a reason to enlarge this
+to the `SC085-SC086` report rather than a reason to enlarge this
 chapter beyond its adjacent pair.
 
 #### Interpretation
 
-SC072-SC073 is promoted because it is the clearest remaining compact late-tail
+`SC072-SC073` belongs here because it is the clearest remaining compact late-tail
 core. The pair has stronger source support and cleaner internal chronology than
 the flanking `SC070-SC071` and `SC074-SC075` bridges, while still remaining
 strictly adjacent and modest in scope. This is the same editorial move that has
-worked elsewhere in the half: promote the compact source-backed center, keep the
+worked elsewhere in the half: keep the compact source-backed center together, keep the
 real but outward relations as cross-references, and leave the weaker neighboring
-material scaffolded.
+material separate.
 
 #### Remaining cautions
 
-The report should stay focused. It should not expand backward into SC064-SC065
+The report should stay focused. It should not expand backward into `SC064-SC065`
 just because `SC064 < SC072` is real. It should not expand forward into the
-promoted SC085-SC086 report just because `SC073 < SC085` is real. It should not
-absorb the promoted `SC070-SC071` bridge, the promoted `SC074-SC075` bridge,
-the promoted SC076 note, or the promoted SC078 report, just because they
+`SC085-SC086` report just because `SC073 < SC085` is real. It should not
+absorb the `SC070-SC071` bridge, the `SC074-SC075` bridge,
+the SC076 note, or the SC078 report, just because they
 belong to the same broader late-tail region.
 And although SC073 has a real rightward edge to SC085, that narrower handoff should remain only a
 cross-reference rather than a claim that this pair and the closing core belong
@@ -3557,13 +3531,13 @@ This is a narrow medial unstressed-i lowering bridge full report centred on
 SC074 *OEMedUnstressedILowering1* and SC075
 *OEMedUnstressedILowering*. The pair is real and adjacent, but it is not the
 main late-tail core. SC074 is the stronger hinge because it has a real leftward
-relation to the promoted `SC072-SC073` core and a local right edge to SC075.
+relation to the `SC072-SC073` core and a local right edge to SC075.
 SC075 is the narrower follower.
 
-That smaller reading is the honest one. The report promotes only SC074 and
-SC075. It does not merge backward into the promoted `SC072-SC073` core,
-does not absorb the promoted SC076 context note, and does not turn
-this narrow bridge into a reason to reopen the promoted SC078 right-edge report.
+That smaller reading is the honest one. The report discusses only SC074 and
+SC075. It does not merge backward into the `SC072-SC073` core,
+does not absorb the SC076 context note, and does not turn
+this narrow bridge into a reason to reopen the SC078 right-edge report.
 
 #### Source tradition
 
@@ -3579,10 +3553,10 @@ rather than on this narrower medial-lowering bridge
 broader late unstressed-vowel environment without making this pair a standalone
 chapter center [@Luick1914, §§304--307].
 
-Together those sources justify keeping SC074-SC075 explicit in production
-prose, but only as a modest, witness-limited bridge. The broader environment is
+Together those sources justify keeping `SC074-SC075` explicit in prose, but
+only as a modest, witness-limited bridge. The broader environment is
 historically real; this specific pair remains smaller and less source-central
-than the promoted `SC072-SC073` core or the promoted SC078 right-edge report.
+than the `SC072-SC073` core or the SC078 right-edge report.
 
 #### CAPR implementation
 
@@ -3595,18 +3569,18 @@ adjacent seam `SC074 < SC075`.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC072-SC073`
+This report belongs immediately after the `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** and immediately before
-the promoted SC076 **Prefix i-reduction note**. Its meaningful outward
-chronology relation points left to the promoted late-tail core through SC072,
+the SC076 **Prefix i-reduction note**. Its meaningful outward
+chronology relation points left to the late-tail core through SC072,
 but that relation should remain a cross-reference rather than a reason to merge
 chapters.
 
-That placement is the point of the promotion. SC074-SC075 now gives the split
+That placement matters because `SC074-SC075` now gives the split
 late-tail region an explicit narrow middle bridge while leaving the stronger
 core on the left and the weaker context note on the right in their own proper
-shapes. The promoted `SC070-SC071` early bridge remains farther left as
-regional context, and the promoted SC078 right-edge report remains distinct
+shapes. The `SC070-SC071` early bridge remains farther left as
+regional context, and the SC078 right-edge report remains distinct
 farther right.
 
 #### Order evidence
@@ -3616,7 +3590,7 @@ The local center of the report is `SC074 < SC075`.
 SC074 must follow SC072 and precede SC075. If OE Med Unstressed I Lowering1 is
 moved before SC072, PGmc fúrxtīnaz yields fyrhti rather than expected OE
 fyrhte. That leftward relation is real, but it should remain only a
-cross-reference to the promoted `SC072-SC073` report rather than a reason to
+cross-reference to the `SC072-SC073` report rather than a reason to
 merge chapters.
 
 SC074 must also precede SC075. If it is moved later than SC075, PGmc
@@ -3626,27 +3600,26 @@ SC075 directly reciprocates that left edge. If OE Med Unstressed I Lowering is
 moved before SC074, PGmc skíllingaz again yields sċilleng rather than
 expected sċilling. The current runner finds no later real break for SC075
 before the SC087 boundary. That result is runner-bounded and must not be
-rewritten into a positive claim that SC075 must precede SC087.
+rewritten as an SC087 boundary claim.
 
 #### Interpretation
 
-SC074-SC075 is promoted because it is the strongest remaining local late-tail
+`SC074-SC075` belongs here because it is the strongest remaining local late-tail
 pair after the earlier bridge and the compact core were already made explicit.
 The report remains narrow on purpose. SC074 is the stronger hinge because it has
 positive evidence on both sides; SC075 is the local follower and remains
 one-sided on the right.
 
 This gives the late-tail architecture a cleaner middle shape in book form:
-promoted `SC070-SC071` as the early bridge, promoted `SC072-SC073` as the main
-compact core, promoted SC074-SC075 as the narrow witness-limited middle bridge,
-promoted SC076 as the context note to the right, and promoted SC078 as the
+`SC070-SC071` as the early bridge, `SC072-SC073` as the main
+compact core, `SC074-SC075` as the narrow witness-limited middle bridge,
+SC076 as the context note to the right, and SC078 as the
 late-tail right-edge report.
 
 #### Remaining cautions
 
-The report should stay narrow. It should not be absorbed into the promoted
-`SC072-SC073` core just because the two units are adjacent. It should not absorb
-SC076 just because the promoted note follows it. And it should not be treated
+The report should stay narrow. It should not be absorbed into the `SC072-SC073` core just because the two units are adjacent. It should not absorb
+SC076 just because the note follows it. And it should not be treated
 as if it were a second late-tail core merely because its local chronology is
 real. Its leftward `SC072 < SC074` relation should remain a cross-reference
 only, and SC075's runner-bounded later side must not be turned into a positive
@@ -3658,7 +3631,7 @@ historical boundary.
 
 #### Historical formulation
 
-SC076 *OEPrefixIReduction* is promoted here as a **short finished late-tail
+SC076 *OEPrefixIReduction* appears here as a **short finished late-tail
 residual/context note**. The source support outruns the chronology evidence: the
 rule is historically legible enough to deserve final prose, but it has not
 become a local chronology hinge. The right final form is therefore brief and
@@ -3674,9 +3647,9 @@ they do not isolate SC076 as a major handbook center
 [@Hogg1992, pp. 120--121; @RingeTaylor2014, §§6.7.3--6.9.3;
 @Luick1914, §§304--307].
 
-That is enough to justify finished prose. It is not enough to turn SC076 into a
+That is enough to justify final prose. It is not enough to turn SC076 into a
 larger bridge or to reopen the late-tail structure that has already been
-promoted around it.
+ around it.
 
 #### CAPR implementation
 
@@ -3687,9 +3660,8 @@ any positive historical boundary for it.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC074-SC075`
-**Medial unstressed-i lowering bridge** and immediately before the promoted
-SC078 **Weak-tail reduction right-edge note**. It should remain a short residual
+This note belongs immediately after the `SC074-SC075`
+**Medial unstressed-i lowering bridge** and immediately before the SC078 **Weak-tail reduction right-edge note**. It should remain a short residual
 note in that position rather than being folded into either neighboring report.
 
 #### Order evidence
@@ -3707,7 +3679,7 @@ therefore negative and boundary-limited rather than positive.
 
 #### Interpretation
 
-SC076 is now finished prose because every ordinary sound change should be
+SC076 is now final prose because every ordinary sound change should be
 represented by final prose, not because the rule has become a local chronology
 anchor. The correct final treatment is a short residual/context note: keep the
 historical legitimacy of late prefix-vowel weakening explicit, but keep the
@@ -3715,8 +3687,7 @@ chronology language strictly methodological.
 
 #### Remaining cautions
 
-This note should stay brief. It should not be folded into the promoted
-`SC074-SC075` bridge, the promoted SC078 right-edge report, or any larger
+This note should stay brief. It should not be folded into the `SC074-SC075` bridge, the SC078 right-edge report, or any larger
 late-tail chapter. Bundled *PWGmcChanges* and the current SC087 boundary remain
 search limits, not historical boundaries for SC076.
 
@@ -3726,18 +3697,18 @@ search limits, not historical boundaries for SC076.
 
 #### Historical formulation
 
-SC078 *OEWeakTailReduction* is promoted here as a **singleton right-edge
-late-tail full report**. The dossier work shows that it is stronger than a mere
+SC078 *OEWeakTailReduction* appears here as a **singleton right-edge
+late-tail report**. The evidence shows that it is stronger than a mere
 context note because it has real chronology on both sides, but the modest
 reading is still the right one: this is a singleton report, not a bridge into
-the promoted `SC085-SC086` closing core and not a license for a non-contiguous
-SC078-SC086 chapter.
+the `SC085-SC086` closing core and not a license for a non-contiguous
+`SC078-SC086` chapter.
 
 #### Source tradition
 
 The source tradition supports late weak-tail reduction and the broader
 post-apocope cleanup environment, but not a chapter that stretches out of
-chronological order to join SC078 to SC085-SC086. Campbell, Hogg, Ringe and
+chronological order to join SC078 to `SC085-SC086`. Campbell, Hogg, Ringe and
 Taylor, Luick, and Fulk all support a late weak-tail region in which apocope,
 syncope, shortening, contraction, and further cleanup remain active
 [@Campbell1959, §§345--354, 388--389; @Hogg1992, pp. 120--121;
@@ -3746,7 +3717,7 @@ syncope, shortening, contraction, and further cleanup remain active
 Within that broader environment, SC078 is best read as the right-edge weak-tail
 hinge. The source tradition supports the late reduction setting that makes forms
 such as flēon and slēan historically legible, but it does not require
-that this report absorb the later promoted h-loss/contraction core. The honest
+that this report absorb the later h-loss/contraction core. The honest
 source claim is therefore narrower: late weak-tail reduction is real, its seam
 with SC086 is real, and that seam should remain a cross-reference only.
 
@@ -3756,25 +3727,25 @@ CAPR isolates this late weak-tail hinge as one explicit step: SC078
 *OEWeakTailReduction*. That formalization is narrower than the handbook
 tradition, but it is useful in the book because it gives the right edge of the
 split late-tail region a precise local place instead of leaving it buried inside
-a broader scaffold.
+a broader grouping.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC076 **Prefix i-reduction
-note** and immediately before the promoted `SC079-SC080`
+This report belongs immediately after the SC076 **Prefix i-reduction
+note** and immediately before the `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge**. Its meaningful
-rightward chronology link points through the promoted opening bridge and into
-the promoted `SC081-SC083` technical middle bridge before reaching the
-promoted `SC085-SC086` **H-loss and contraction core** through SC086.
+rightward chronology link points through the opening bridge and into
+the `SC081-SC083` technical middle bridge before reaching the
+`SC085-SC086` **H-loss and contraction core** through SC086.
 
 That rightward link is real, but it remains a cross-reference only. SC078 should
-not be pulled forward into a non-contiguous closing report, and SC079-SC080 or
-SC081-SC083 should not be erased from the chronology just because SC086 is the
+not be pulled forward into a non-contiguous closing report, and `SC079-SC080` or
+`SC081-SC083` should not be erased from the chronology just because SC086 is the
 more interpretable right-edge target.
 
-The report also belongs to the right of the promoted `SC072-SC073`
+The report also belongs to the right of the `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** as part of the same
-late-tail region, but that promoted core remains a left-side regional context,
+late-tail region, but that core remains a left-side regional context,
 not a co-member of this report.
 
 #### Order evidence
@@ -3790,22 +3761,22 @@ should be narrated as a large computational boundary rather than as a tight loca
 adjacency claim.
 
 On the later side, SC078 must precede SC086. If OE Weak Tail Reduction is moved
-later than the promoted h-loss/contraction core, PGmc fléuxaną yields
+later than the h-loss/contraction core, PGmc fléuxaną yields
 flēoan instead of expected OE flēon, and PGmc sláxaną yields sleaan
 instead of slēan. This later side is much narrower and is the more
 interpretable right-edge seam.
 
 That difference in profile is exactly why the report should stay singleton. The
 left edge is broad and computationally heavy; the right edge is sharper and
-book-facing. Together they make SC078 worth promoting, but not worth merging
+book-legible. Together they make SC078 worth its own report, but not worth merging
 into any neighboring report.
 
 #### Interpretation
 
-SC078 is promoted because it is the strongest remaining singleton candidate in
+SC078 belongs here because it is the strongest remaining singleton candidate in
 the late-tail region. The report makes the right edge of that region explicit
 without pretending that the broader closing architecture has collapsed into one
-chapter. This is the same editorial move used elsewhere in the half: promote the
+chapter. This follows the same pattern used elsewhere in the half: keep the
 adjacent source-backed center or hinge, keep real but outward relations as
 cross-references, and keep weaker neighboring notes separate.
 
@@ -3814,9 +3785,9 @@ cross-references, and keep weaker neighboring notes separate.
 The cautions are mainly architectural. The earlier `SC070 < SC078` boundary is
 real, but it should remain a broad computational limit rather than a tight local
 adjacency claim. The later `SC078 < SC086` edge is also real, but it should
-remain a rightward cross-reference to the promoted SC085-SC086 report through
-SC086 only. The report should not absorb the promoted SC076 note, the promoted SC079-SC080 or
-SC081-SC083 bridges, and it should not treat the promoted `SC072-SC073` late-tail core
+remain a rightward cross-reference to the `SC085-SC086` report through
+SC086 only. The report should not absorb the SC076 note, the `SC079-SC080` or
+`SC081-SC083` bridges, and it should not treat the `SC072-SC073` late-tail core
 as a co-member rather than as left-side context.
 
 ## Final-j loss and final-geminate simplification bridge
@@ -3831,16 +3802,16 @@ historically real and adjacent, but it is not the main closing core. SC079 is
 the stronger hinge, with a broad/far leftward tie to the earlier umlaut region
 and a real local right edge to SC080. SC080 is the narrower one-sided follower.
 
-That narrower reading is also the honest one. The report promotes only SC079 and
-SC080. It does not merge backward into the promoted SC078 singleton report,
-does not stretch forward into the promoted `SC081-SC083` technical bridge,
-and does not pretend that this opening seam is as book-facing as the
-already-promoted `SC085-SC086` and SC087 reports farther right.
+That narrower reading is also the honest one. The report discusses only SC079 and
+SC080. It does not merge backward into the SC078 singleton report,
+does not stretch forward into the `SC081-SC083` technical bridge,
+and does not pretend that this opening seam is as book-style as the
+earlier `SC085-SC086` and SC087 reports farther right.
 
 #### Source tradition
 
 The source tradition gives the pair enough technical support for explicit
-production prose, but not enough to inflate it into a major handbook chapter.
+prose, but not enough to inflate it into a major handbook chapter.
 The best support for SC079 comes from loss of *j* between unstressed vowels and
 the broader contracted-verb background that also feeds the rest of the closing
 zone [@Fulk2018, §6.11, §12.21]. Campbell's vocalization material and final
@@ -3864,15 +3835,15 @@ the real adjacent pair `SC079 < SC080`.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC078 **Weak-tail reduction
-right-edge note** and immediately before the promoted `SC081-SC083`
+This report belongs immediately after the SC078 **Weak-tail reduction
+right-edge note** and immediately before the `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge**. Its meaningful
-outward chronology relation points far left to the promoted `SC055-SC056`
+outward chronology relation points far left to the `SC055-SC056`
 **Umlaut core and palatal-diphthongization follower**, but that broad/far link
 should remain a cross-reference rather than a reason to merge non-adjacent
 chapters.
 
-That placement is the point of the promotion. The report fills the opening gap
+That placement matters because The report fills the opening gap
 in the split closing region while remaining clearly subordinate to the stronger
 technical middle bridge and the later closing core.
 
@@ -3899,22 +3870,20 @@ must not be rewritten into a positive claim that SC080 must precede SC087.
 
 #### Interpretation
 
-SC079-SC080 is promoted because it is the remaining opening bridge that the
+`SC079-SC080` belongs here because it is the remaining opening bridge that the
 closing region needs for explicit prose. The report remains modest on purpose.
 SC079 is the stronger hinge with the broader historical load; SC080 is the
 one-sided final-geminate follower. Together they justify a short adjacent report,
 but not a larger closing chapter.
 
-This makes the closing sequence much clearer in book form: promoted SC078 on the
-left, promoted SC079-SC080 as the opening bridge, promoted SC081-SC083 as the
-technical middle bridge, then the promoted SC085-SC086 core and the promoted
-SC087 terminal singleton.
+This makes the closing sequence much clearer in book form: SC078 on the
+left, `SC079-SC080` as the opening bridge, `SC081-SC083` as the
+technical middle bridge, then the `SC085-SC086` core and the SC087 terminal singleton.
 
 #### Remaining cautions
 
-The report should stay narrow. It should not merge backward into the promoted
-SC078 singleton report just because the two units are adjacent. It should not
-merge forward into the promoted `SC081-SC083` bridge just because that sequence
+The report should stay narrow. It should not merge backward into the SC078 singleton report just because the two units are adjacent. It should not
+merge forward into the `SC081-SC083` bridge just because that sequence
 follows it. SC079's broad/far left edge to SC055 should remain only a
 cross-reference, and SC080's runner-bounded later side must not be turned into a
 positive historical boundary.
@@ -3927,15 +3896,15 @@ positive historical boundary.
 
 This is a cautious technical middle closing bridge centred on SC081
 *OEJStrengtheningAfterFrontDiphthong*, SC082 *OEIntervocalicJVocalization*, and
-SC083 *OEUnstressedEIContraction*. The source dossier shows that the chain is
+SC083 *OEUnstressedEIContraction*. The evidence shows that the chain is
 historically real and locally coherent, but also more technical and less
-book-facing than the already promoted `SC085-SC086` h-loss/contraction core.
+book-style than the earlier `SC085-SC086` h-loss/contraction core.
 That makes SC082 the true center, with SC081 as the left flank and SC083 as the
 right follower.
 
-The report therefore stays compact and explicit. It promotes only SC081-SC083.
-It does not merge into the promoted SC085-SC086 report, does not
-stretch backward into promoted SC078, and does not try to turn one
+The report therefore stays compact and explicit. It discusses only `SC081-SC083`.
+It does not merge into the `SC085-SC086` report, does not
+stretch backward into SC078, and does not try to turn one
 technically coherent bridge into a broader closing chapter than the evidence
 supports.
 
@@ -3953,7 +3922,7 @@ the `SC081 < SC082 < SC083` chain [@RingeTaylor2014, §§6.9.1--6.9.3].
 What the sources do not give is a major handbook-style chapter of equal
 co-headliners. SC082 is the clearest technical center. SC081 is historically
 legible but broad/far on the left, and SC083 is historically real but one-sided
-on the right. The honest production shape is therefore a cautious technical
+on the right. The honest shape is therefore a cautious technical
 bridge, not a broad closing core.
 
 #### CAPR implementation
@@ -3969,16 +3938,16 @@ show why all three steps matter: the real local center of gravity is the chain
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC079-SC080`
+This report belongs immediately after the `SC079-SC080`
 **Final-j loss and final-geminate simplification bridge** and immediately before
-the promoted `SC085-SC086` **H-loss and contraction core**. Its meaningful
-outward chronology links point far left to promoted `SC055-SC056` through SC081
+the `SC085-SC086` **H-loss and contraction core**. Its meaningful
+outward chronology links point far left to `SC055-SC056` through SC081
 and right only indirectly toward SC085, but neither relation should become a
 reason to pull this bridge out of strict local order.
 
-SC078 remains a promoted singleton left context only. It should not be treated
+SC078 remains a singleton left context only. It should not be treated
 as a co-member of this report, and this bridge should not be stretched forward
-into SC085-SC086 just because the later promoted core is more book-facing.
+into `SC085-SC086` just because the later core is more book-style.
 
 #### Order evidence
 
@@ -4004,28 +3973,27 @@ stage, forms such as bore, learn, and lick preserve extra *ei*-like
 sequences: boreian, liorneian, and licceian instead of borian,
 liornian, and liccian. Its later side is different: the current runner finds
 no real later break before the SC087 boundary. That later no-break result is
-runner-bounded and must not be rewritten into a claim that SC083 must
-precede SC087.
+runner-bounded and must not be rewritten as an SC087 boundary claim.
 
 #### Interpretation
 
-SC081-SC083 is promoted because it is coherent enough for finished production
-prose once the stronger closing anchors around it are already explicit. The
+`SC081-SC083` belongs here because it is coherent enough for final prose once
+the stronger closing anchors around it are already explicit. The
 report does not pretend to be the main closing core. Instead, it shows how the
-book can give honest prose to more technical model-facing material without
+book can give honest prose to more technical material without
 inflating it into a major handbook chapter: SC081 as the broad/far left flank,
 SC082 as the real center, SC083 as the right follower.
 
 That is exactly what this middle bridge should do. It fills the technical gap
-between the modest opening promoted `SC079-SC080` bridge and the promoted
-SC085-SC086 core while keeping the whole region strictly chronological.
+between the modest opening `SC079-SC080` bridge and the `SC085-SC086` core
+while keeping the whole region strictly chronological.
 
 #### Remaining cautions
 
 The cautions are mainly architectural. SC081's leftward SC055 relation is real
 but broad/far and should remain a cross-reference only. SC083 should stay with
-this bridge rather than being treated as a right-edge feeder into SC085-SC086.
-SC078 must remain outside the report as a promoted singleton left context. And
+this bridge rather than being treated as a right-edge feeder into `SC085-SC086`.
+SC078 must remain outside the report as a singleton left context. And
 SC083's runner-bounded later side must not be turned into a positive claim that
 it must precede SC087.
 
@@ -4035,16 +4003,16 @@ it must precede SC087.
 
 #### Historical formulation
 
-This is a compact closing production report centred on SC085 *OEHLoss* and
-SC086 *OEContraction*. The dossier work shows that this adjacent pair is the
+This is a compact closing report centred on SC085 *OEHLoss* and
+SC086 *OEContraction*. The evidence shows that this adjacent pair is the
 strongest compact core in the closing region: it has the clearest handbook
 support, the cleanest local chronology, and the best-defined right-edge seam
-from the now-promoted SC078 report. It remains more book-facing than the newly
-promoted but more technical SC081-SC083 bridge immediately to its left.
+from SC078. It remains more book-legible than the more technical
+`SC081-SC083` bridge immediately to its left.
 
-That stronger reading is also narrower than the old grouped scaffold. The report
-promotes only SC085 and SC086. It does not expand backward into the more
-technical `SC081-SC083` bridge, outward into the promoted `SC072-SC073`
+That stronger reading is also narrower than the old grouped version. The report
+discusses only SC085 and SC086. It does not expand backward into the more
+technical `SC081-SC083` bridge, outward into the `SC072-SC073`
 late-tail core, forward into SC087, or leftward into SC078 itself.
 
 #### Source tradition
@@ -4079,16 +4047,16 @@ larger mixed chapter.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC081-SC083`
+This report belongs immediately after the `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge** and immediately
-before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
-chronology links point left to the promoted `SC072-SC073`
+before the SC087 **R-metathesis terminal note**. Its meaningful outward
+chronology links point left to the `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** through SC085 and
-farther left to the promoted SC078 **Weak-tail reduction right-edge
+farther left to the SC078 **Weak-tail reduction right-edge
 note** through SC086.
 
 Those links matter, but they remain cross-references only. `SC073 < SC085`
-should not pull the promoted late-tail core into this chapter, and `SC078 <
+should not pull the late-tail core into this chapter, and `SC078 <
 SC086` should not pull SC078 forward into a non-contiguous closing report.
 
 #### Order evidence
@@ -4097,8 +4065,7 @@ The local center of the report is `SC085 < SC086`.
 
 SC085 must follow SC073 and precede SC086. If OE H Loss is moved earlier than
 SC073, PGmc táixōn yields tāæ rather than expected OE tā, so the leftward
-SC073 relation is real but should remain a cross-reference to the promoted
-`SC072-SC073` core. If SC085 is moved later than SC086, forms such as flee,
+SC073 relation is real but should remain a cross-reference to the `SC072-SC073` core. If SC085 is moved later than SC086, forms such as flee,
 slay, ten, and toe retain over-long vocalic sequences: PGmc fléuxaną
 yields flēoan instead of flēon, PGmc sláxaną yields sleaan instead of
 slēan, PGmc téxun yields teoon instead of tēon, and PGmc táixōn
@@ -4112,28 +4079,27 @@ before the SC087 boundary, so this report must not turn the runner-bounded
 later side into a positive claim that SC086 must precede SC087.
 
 The already explicit SC078 seam also lands here. SC078 must precede SC086, but
-that relation remains a leftward cross-reference from the promoted SC078 report
+that relation remains a leftward cross-reference from the SC078 report
 into this report through SC086 only. It is not a reason to treat SC078 as part
 of the same adjacent chapter.
 
 #### Interpretation
 
-SC085-SC086 is promoted because it is the strongest compact closing report now
+`SC085-SC086` belongs here because it is the strongest compact closing report now
 available. It gives the closing region one clear production center without
 overstating the more technical `SC081-SC083` bridge or the broader, more
 terminal SC087 material. This is the same editorial move that has worked well
-elsewhere in the half: promote the adjacent source-backed core, keep real but
+elsewhere in the half: keep the adjacent source-backed core together, keep real but
 non-local relations as cross-references, and leave weaker neighboring material
-explicitly scaffolded.
+separate.
 
 #### Remaining cautions
 
-The report should stay focused. It should not expand backward into the promoted
-`SC081-SC083` bridge just because the more technical sequence precedes it. It
+The report should stay focused. It should not expand backward into the `SC081-SC083` bridge just because the more technical sequence precedes it. It
 should not expand forward
 into SC087 just because SC087 is the next closing note. It should not pull SC078
 into the chapter merely because `SC078 < SC086` is real, and it should not turn
-`SC073 < SC085` into a reason to absorb the promoted `SC072-SC073` core.
+`SC073 < SC085` into a reason to absorb the `SC072-SC073` core.
 
 Most importantly, the later side of SC086 remains runner-bounded. This chapter
 may state the real local center `SC085 < SC086`, but it must not invent a
@@ -4145,11 +4111,11 @@ positive `SC086 < SC087` boundary that the card does not show.
 
 #### Historical formulation
 
-SC087 *OERMetathesis* is promoted here as a **short terminal singleton full
-report**. The dossier work shows that r-metathesis is source-backed and
-book-facing enough to deserve explicit production prose, but the modest reading
+SC087 *OERMetathesis* appears here as a **short terminal singleton full
+report**. The evidence shows that r-metathesis is source-backed and
+book-style enough to deserve explicit prose, but the modest reading
 is still the right one: this is an independent terminal note, not an extension
-of the promoted `SC085-SC086` h-loss/contraction core and not a reason to pull
+of the `SC085-SC086` h-loss/contraction core and not a reason to pull
 in SC078, `SC079-SC080`, or `SC081-SC083`.
 
 #### Source tradition
@@ -4167,8 +4133,8 @@ history and using the familiar berstan, frost, and cerse family as core
 examples [@Luick1914; @SieversBrunner1965, §179].
 
 That is enough support for a short terminal production note. It is also a reason
-to keep the note separate from the newly promoted h-loss/contraction report: the
-historical process is real, but it is not just the last step of the SC085-SC086
+to keep the note separate from the new h-loss/contraction report: the
+historical process is real, but it is not just the last step of the `SC085-SC086`
 core under another name.
 
 #### CAPR implementation
@@ -4181,14 +4147,13 @@ chronological place instead of leaving it buried in a generic closing cluster.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC085-SC086`
+This report belongs immediately after the `SC085-SC086`
 **H-loss and contraction core** and closes the current sound-change half. Its
-meaningful positive chronology relation points far left to the promoted
-`SC044-SC045` **Breaking and velar-fricative palatalization** report through
+meaningful positive chronology relation points far left to the `SC044-SC045` **Breaking and velar-fricative palatalization** report through
 SC044. That broad/far relation should remain a distant leftward cross-reference
 rather than a reason to build a non-contiguous chapter.
 
-This is also why SC087 remains separate from SC085-SC086 even though it follows
+This is also why SC087 remains separate from `SC085-SC086` even though it follows
 that report directly. Adjacency in the assembled order is real, but the source
 tradition and the chronology card do not make SC087 the right-hand half of a
 tighter local pair.
@@ -4200,7 +4165,7 @@ SC087 has one positive chronology relation, and it is broad/far: `SC044 < SC087`
 If OE R Metathesis is moved before the much earlier SC044 OE Breaking stage,
 PGmc bréstaną yields beorstan rather than expected OE berstan. That left
 edge is historically real, but it is not local and should be narrated as a
-distant cross-reference to the promoted SC044-SC045 report rather than as a
+distant cross-reference to the `SC044-SC045` report rather than as a
 compact local window.
 
 The later side is different. The current runner finds no real break beyond the
@@ -4211,23 +4176,22 @@ the runner into a must-follow or must-precede statement.
 
 #### Interpretation
 
-SC087 is promoted because the terminal singleton reading is now the best one.
-The historical process is real and book-facing enough to merit explicit prose,
+SC087 belongs here because the terminal singleton reading is now the best one.
+The historical process is real and book-style enough to merit explicit prose,
 but its chronology is broad/far on the left and runner-bounded on the right. A
 short terminal note therefore fits the evidence better than either a larger
-closing cluster or a forced merger with SC085-SC086.
+closing cluster or a forced merger with `SC085-SC086`.
 
 That makes this an architectural endpoint. It gives the closing region an
-explicit terminal note while leaving the promoted but still modest `SC079-SC080`
+explicit terminal note while leaving the but still modest `SC079-SC080`
 and more technical `SC081-SC083` bridges in place and keeping SC078 outside the
 closing report structure.
 
 #### Remaining cautions
 
-The cautions are mostly structural. SC087 should not be merged with the promoted
-SC085-SC086 report merely because it follows it in the cascade. Its broad/far
+The cautions are mostly structural. SC087 should not be merged with the `SC085-SC086` report merely because it follows it in the cascade. Its broad/far
 `SC044 < SC087` relation should remain only a distant cross-reference to the
-promoted SC044-SC045 report. Its later side must remain a runner-bounded limit
+`SC044-SC045` report. Its later side must remain a runner-bounded limit
 rather than a positive boundary. And the report should stay focused: it is a
 short terminal singleton note, not a reason to reopen SC078, `SC079-SC080`, or
 `SC081-SC083` inside the same chapter.

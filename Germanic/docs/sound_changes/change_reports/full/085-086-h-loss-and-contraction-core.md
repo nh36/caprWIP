@@ -4,16 +4,16 @@
 
 #### Historical formulation
 
-This is a **compact closing production report** centred on SC085 `OEHLoss` and
-SC086 `OEContraction`. The dossier work shows that this adjacent pair is the
+This is a **compact closing report** centred on SC085 `OEHLoss` and
+SC086 `OEContraction`. The evidence shows that this adjacent pair is the
 strongest compact core in the closing region: it has the clearest handbook
 support, the cleanest local chronology, and the best-defined right-edge seam
-from the now-promoted SC078 report. It remains more book-facing than the newly
-promoted but more technical SC081-SC083 bridge immediately to its left.
+from SC078. It remains more book-legible than the more technical
+`SC081-SC083` bridge immediately to its left.
 
-That stronger reading is also narrower than the old grouped scaffold. The report
-promotes only SC085 and SC086. It does **not** expand backward into the more
-technical `SC081-SC083` bridge, outward into the promoted `SC072-SC073`
+That stronger reading is also narrower than the old grouped version. The report
+discusses only SC085 and SC086. It does **not** expand backward into the more
+technical `SC081-SC083` bridge, outward into the `SC072-SC073`
 late-tail core, forward into SC087, or leftward into SC078 itself.
 
 #### Source tradition
@@ -48,16 +48,16 @@ larger mixed chapter.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted `SC081-SC083`
+This report belongs immediately after the `SC081-SC083`
 **J-strengthening, vocalization, and ei-contraction bridge** and immediately
-before the promoted SC087 **R-metathesis terminal note**. Its meaningful outward
-chronology links point left to the promoted `SC072-SC073`
+before the SC087 **R-metathesis terminal note**. Its meaningful outward
+chronology links point left to the `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core** through SC085 and
-farther left to the promoted SC078 **Weak-tail reduction right-edge
+farther left to the SC078 **Weak-tail reduction right-edge
 note** through SC086.
 
 Those links matter, but they remain cross-references only. `SC073 < SC085`
-should not pull the promoted late-tail core into this chapter, and `SC078 <
+should not pull the late-tail core into this chapter, and `SC078 <
 SC086` should not pull SC078 forward into a non-contiguous closing report.
 
 #### Order evidence
@@ -66,8 +66,7 @@ The local center of the report is `SC085 < SC086`.
 
 SC085 must follow SC073 and precede SC086. If OE H Loss is moved earlier than
 SC073, PGmc `*táixōn` yields `tāæ` rather than expected OE `tā`, so the leftward
-SC073 relation is real but should remain a cross-reference to the promoted
-`SC072-SC073` core. If SC085 is moved later than SC086, forms such as `flee`,
+SC073 relation is real but should remain a cross-reference to the `SC072-SC073` core. If SC085 is moved later than SC086, forms such as `flee`,
 `slay`, `ten`, and `toe` retain over-long vocalic sequences: PGmc `*fléuxaną`
 yields `flēoan` instead of `flēon`, PGmc `*sláxaną` yields `sleaan` instead of
 `slēan`, PGmc `*téxun` yields `teoon` instead of `tēon`, and PGmc `*táixōn`
@@ -81,28 +80,27 @@ before the SC087 boundary, so this report must **not** turn the runner-bounded
 later side into a positive claim that SC086 must precede SC087.
 
 The already explicit SC078 seam also lands here. SC078 must precede SC086, but
-that relation remains a leftward cross-reference from the promoted SC078 report
+that relation remains a leftward cross-reference from the SC078 report
 into this report through SC086 only. It is not a reason to treat SC078 as part
 of the same adjacent chapter.
 
 #### Interpretation
 
-SC085-SC086 is promoted because it is the strongest compact closing report now
+`SC085-SC086` belongs here because it is the strongest compact closing report now
 available. It gives the closing region one clear production center without
 overstating the more technical `SC081-SC083` bridge or the broader, more
 terminal SC087 material. This is the same editorial move that has worked well
-elsewhere in the half: promote the adjacent source-backed core, keep real but
+elsewhere in the half: keep the adjacent source-backed core together, keep real but
 non-local relations as cross-references, and leave weaker neighboring material
-explicitly scaffolded.
+separate.
 
 #### Remaining cautions
 
-The report should stay focused. It should not expand backward into the promoted
-`SC081-SC083` bridge just because the more technical sequence precedes it. It
+The report should stay focused. It should not expand backward into the `SC081-SC083` bridge just because the more technical sequence precedes it. It
 should not expand forward
 into SC087 just because SC087 is the next closing note. It should not pull SC078
 into the chapter merely because `SC078 < SC086` is real, and it should not turn
-`SC073 < SC085` into a reason to absorb the promoted `SC072-SC073` core.
+`SC073 < SC085` into a reason to absorb the `SC072-SC073` core.
 
 Most importantly, the later side of SC086 remains runner-bounded. This chapter
 may state the real local center `SC085 < SC086`, but it must not invent a

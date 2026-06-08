@@ -7,12 +7,12 @@
 This is a **cautious early late-tail bridge full report** centred on SC070
 `OEUnstressedFrontingEarly` and SC071 `OELateOShortening`. The pair is real and
 adjacent, but it is not the main late-tail core. SC070 is the stronger hinge:
-it has a real leftward relation to the promoted SC052 hinge and a local right
+it has a real leftward relation to the SC052 hinge and a local right
 edge to SC071. SC071 is the narrower follower.
 
-That narrower reading is the honest one. The report promotes only SC070 and
-SC071. It does **not** merge backward into the promoted SC069 opener/context
-note, does **not** merge forward into the promoted `SC072-SC073` core, and does
+That narrower reading is the honest one. The report discusses only SC070 and
+SC071. It does **not** merge backward into the SC069 opener/context
+note, does **not** merge forward into the `SC072-SC073` core, and does
 **not** treat this early bridge as a reason to reopen any of the later closing
 reports.
 
@@ -32,7 +32,7 @@ both inside the same late unstressed-vowel environment [@Luick1914, §§304--307
 Together those sources justify a modest bridge report. They support the broader
 late-tail environment more strongly than they support this exact pair as a
 handbook chapter, which is why the prose stays smaller and more technical than
-the promoted `SC072-SC073` core or the promoted SC078 right-edge report.
+the `SC072-SC073` core or the SC078 right-edge report.
 
 #### CAPR implementation
 
@@ -45,17 +45,17 @@ real adjacent seam `SC070 < SC071`.
 
 #### Place in the cascade
 
-This report belongs immediately after the promoted SC069 **Early o-shortening
-context note** and immediately before the promoted `SC072-SC073`
+This report belongs immediately after the SC069 **Early o-shortening
+context note** and immediately before the `SC072-SC073`
 **Unstressed long-vowel shortening and ae-merger core**. Its meaningful outward
-chronology relation points left to the promoted SC052 **Velar palatalization
+chronology relation points left to the SC052 **Velar palatalization
 hinge**, but that leftward relation should remain a cross-reference rather than
-chapter architecture.
+a larger chapter claim.
 
-That placement is the point of the promotion. SC070-SC071 now gives the split
+That placement matters because `SC070-SC071` now gives the split
 late-tail region an explicit early bridge without displacing the stronger
-middle core on the right. Farther right, the promoted `SC074-SC075` bridge and
-the promoted SC076 note remain distinct, while SC078 remains the promoted
+middle core on the right. Farther right, the `SC074-SC075` bridge and
+the SC076 note remain distinct, while SC078 remains the treated
 right-edge report rather than a co-member of this chapter.
 
 #### Order evidence
@@ -65,7 +65,7 @@ The local center of the report is `SC070 < SC071`.
 SC070 must follow SC052 and precede SC071. If OE Unstressed Fronting Early is
 moved before SC052, PGmc `*lúnganjō` yields `lunġen` rather than expected OE
 `lungen`. That leftward relation is real, but it should remain only a
-cross-reference to the promoted SC052 report rather than a reason to merge
+cross-reference to the SC052 report rather than a reason to merge
 non-adjacent chapters.
 
 SC070 must also precede SC071. If it is moved later than SC071, PGmc
@@ -82,22 +82,20 @@ positive claim that SC071 must precede SC087.
 
 #### Interpretation
 
-SC070-SC071 is promoted because it is now the strongest remaining local pair on
+`SC070-SC071` belongs here because it is now the strongest remaining local pair on
 the early side of the split late-tail region. The report remains cautious on
 purpose. SC070 is the stronger hinge because it has positive evidence on both
 sides; SC071 is the local follower and remains one-sided on the right.
 
-This gives the late-tail architecture a clearer shape in book form: promoted
-SC069 as the opener/context note, promoted SC070-SC071 as the early bridge,
-promoted `SC072-SC073` as the compact late-tail core, promoted `SC074-SC075`
-as the narrow medial bridge, promoted SC076 as the remaining weaker context
-note, and promoted SC078 as the right-edge report.
+This gives the late-tail architecture a clearer shape in book form: SC069 as the opener/context note, `SC070-SC071` as the early bridge,
+`SC072-SC073` as the compact late-tail core, `SC074-SC075`
+as the narrow medial bridge, SC076 as the remaining weaker context
+note, and SC078 as the right-edge report.
 
 #### Remaining cautions
 
 The report should stay narrow. It should not absorb SC069 just because the two
-units are adjacent, and it should not be absorbed into the promoted
-`SC072-SC073` core just because that stronger chapter follows it immediately. Its
+units are adjacent, and it should not be absorbed into the `SC072-SC073` core just because that stronger chapter follows it immediately. Its
 leftward `SC052 < SC070` relation should remain a cross-reference only, not a
 license to build a non-adjacent chapter. And SC071's runner-bounded later side
 must not be turned into a positive historical boundary.

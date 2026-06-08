@@ -46,14 +46,14 @@ that the traditional literature recognized two separately named sound laws
 
 #### Place in the cascade
 
-SC026-SC027 sits after the early unstressed and boundary-limited Northwest
+`SC026-SC027` sits after the early unstressed and boundary-limited Northwest
 Germanic zone and before the early `x`-loss and glide/fronting entry zone. The
 pair follows nearby left-side context such as `SC025`, but its strongest local
 identity is internal: `SC026` and `SC027` form a tight reciprocal center. On
 the right, `SC028` provides useful context, especially for forms such as
 `fist`, because later `x`-loss and fronting material still help shape the final
 Old English outcome. But that neighboring context should remain contextual
-rather than being folded into this promoted unit.
+rather than being folded into this unit.
 
 #### Order evidence
 
@@ -67,8 +67,8 @@ requires `SC026 < SC027`.
 
 #### Interpretation
 
-For book purposes, this is the first strong paired production report after the
-singleton promotions because it shows how CAPR can sharpen a historically
+For book purposes, this is the first strong paired report after the
+singleton treatments because it shows how CAPR can sharpen a historically
 bundled process into a formally ordered corridor without pretending that the
 handbooks already drew the same line. The historical claim remains the bundled
 North Sea Germanic / Ingvaeonic nasal-loss development. CAPR then makes the

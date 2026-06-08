@@ -4,9 +4,9 @@
 
 #### Historical formulation
 
-SC058 `OENasalDissimilation` is promoted here as a **short finished residual
-note**. It is included because every ordinary sound change needs finished prose
-in the final book, not because the current evidence makes it a strong
+SC058 `OENasalDissimilation` appears here as a **short finished residual
+note**. It is included because every ordinary sound change needs final prose
+in the final volume, not because the current evidence makes it a strong
 chronological hinge. The right final form is therefore explicitly residual and
 contextual.
 
@@ -26,8 +26,8 @@ chronology of its own.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted SC057 **OE J Cluster
-Coalescence note** and immediately before the promoted SC059 **OE back
+This note belongs immediately after the SC057 **OE J Cluster
+Coalescence note** and immediately before the SC059 **OE back
 mutation** report. It remains a short residual/context note in that position
 rather than a coequal partner to either neighboring chapter.
 
@@ -45,7 +45,7 @@ a positive local chronology claim.
 
 #### Interpretation
 
-SC058 is promoted because residual completion requires finished prose even for
+SC058 belongs here because residual completion requires final prose even for
 the weakest ordinary rules. The honest final treatment is therefore very short:
 keep the rule explicit, state clearly that the current chronology is
 boundary-limited in both directions, and avoid inflating that limited evidence
@@ -56,4 +56,4 @@ into a larger chapter.
 The methodological boundaries matter here. Bundled `PWGmcChanges` and the
 current SC087 boundary are search limits, not historical anchors for SC058.
 This note should therefore stay brief and should not be read as a coequal
-partner to the promoted SC057 note or the promoted SC059 back-mutation report.
+partner to the SC057 note or the SC059 back-mutation report.

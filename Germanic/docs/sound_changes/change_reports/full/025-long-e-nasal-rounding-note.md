@@ -4,15 +4,15 @@
 
 #### Historical formulation
 
-SC025 `NWGmcLongENasalRounding` is promoted here as a **short finished
+SC025 `NWGmcLongENasalRounding` appears here as a **short finished
 singleton note**. The long-`ē`-before-nasal background is historically legible
 enough to remain explicit, but the chronology card is boundary-limited on both
 sides. The right final form is therefore a short standalone note, not a hidden
-extension of SC024 or SC026-SC027.
+extension of SC024 or `SC026-SC027`.
 
 #### Source tradition
 
-The source tradition is modest but clear enough for finished prose. Campbell
+The source tradition is modest but clear enough for final prose. Campbell
 explicitly cites forms such as `moon` and `month` from earlier `*mēnō` /
 `*mēnōþ`, and Ringe and Taylor treat the same long-vowel-before-nasal region
 inside the broader West Germanic development [@Campbell1959, §129;
@@ -31,8 +31,8 @@ without overstating its chronology.
 
 #### Place in the cascade
 
-This note belongs immediately after the promoted `SC024` **Long e-lowering
-note** and immediately before the promoted `SC026-SC027`
+This note belongs immediately after the `SC024` **Long e-lowering
+note** and immediately before the `SC026-SC027`
 **Nasal spirant corridor**. It should remain a short standalone note in that
 position rather than being merged backward into SC024 or forward into the nasal
 spirant corridor.
@@ -52,7 +52,7 @@ order claim.
 
 #### Interpretation
 
-SC025 is promoted because residual completion requires finished prose even for
+SC025 belongs here because residual completion requires final prose even for
 chronology-light rules. The honest final treatment is a short singleton note:
 keep the long-`ē`-before-nasal background visible, keep the chronology phrasing
 strictly methodological, and avoid inflating the rule into a corridor chapter.
@@ -62,4 +62,4 @@ strictly methodological, and avoid inflating the rule into a corridor chapter.
 The main caution is not to turn methodological search limits into history.
 Bundled `PWGmcChanges` and the current SC087 boundary are not positive
 chronology anchors for SC025. This note should therefore stay brief and should
-not be merged into the stronger neighboring SC024 or SC026-SC027 reports.
+not be merged into the stronger neighboring SC024 or `SC026-SC027` reports.

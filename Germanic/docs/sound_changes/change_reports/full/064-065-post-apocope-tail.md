@@ -14,8 +14,7 @@ is centered on the `fright` / `*furht-*` witness family, where the weak-tail
 derivation yields OE `fyrhte`. SC065 **OE Medial Syncope** is different in kind:
 it represents a narrow CAPR slice of the broader medial-syncope material that
 follows the main apocope zone. The pair stays together because the two changes
-are adjacent and occupy the immediate post-SC063 tail before the promoted
-SC066-SC068 syncope/degemination corridor.
+are adjacent and occupy the immediate post-SC063 tail before the `SC066-SC068` syncope/degemination corridor.
 
 #### Source tradition
 
@@ -56,7 +55,7 @@ broader late medial-syncope tradition than as the whole historical phenomenon
 #### Place in the cascade
 
 This unit belongs immediately after SC063 **OE High Vowel Apocope** and
-immediately before the promoted SC066-SC068 **Syncope and Degemination
+immediately before the `SC066-SC068` **Syncope and Degemination
 Corridor**. That is the main reason to keep the pair together: it supplies a
 short post-apocope bridge in strict chronological order rather than leaving the
 weak-tail aftermath undescribed.
@@ -102,12 +101,12 @@ chapter that would blur their actual evidence profile.
 The prose must not overstate the `fright` evidence for SC064. Both positive
 boundaries are real, but both are carried by the same witness family. SC065 must
 not be turned into a positive chronology anchor; its card remains negative and
-boundary-limited. The chapter should not duplicate the promoted SC063
-**High-vowel apocope** report on the left or the promoted SC066-SC068
+boundary-limited. The chapter should not duplicate the SC063
+**High-vowel apocope** report on the left or the `SC066-SC068`
 **Syncope and degemination corridor** on the right.
 
-More broadly, the report should not imply that the handbooks present SC064-SC065
-as a standard paired chapter. The point of promotion is narrower: both ordinary
+More broadly, the report should not imply that the handbooks present `SC064-SC065`
+as a standard paired chapter. The point is narrower: both ordinary
 FST changes now receive explicit prose in their proper chronological place, with
 SC064 treated as the narrow positive-evidence member and SC065 treated as
 card-negative contextual syncope material.

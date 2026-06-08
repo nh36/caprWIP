@@ -4,11 +4,11 @@
 
 #### Historical formulation
 
-`SC035-SC037` is promoted here as a **cautious adjacent derivational bridge
+`SC035-SC037` appears here as a **cautious adjacent derivational bridge
 report**, not as a claim that the traditional grammars present one classic
 three-change chapter called "prefix and compound adjustments." The grouping is
 useful because all three rules are adjacent ordinary FST changes that need
-explicit prose somewhere in the assembled half, but the internal hierarchy is
+explicit prose somewhere in the volume, but the internal hierarchy is
 uneven and should stay explicit. SC035 **OE Prefix A Reduction** is a narrow
 prefix-vowel flank. SC036 **OE Inter Stress Raising** is the clear center of
 gravity, with the strongest source support and the strongest ordinary chronology
@@ -57,7 +57,7 @@ independent chapter by itself.
 SC036 `OEInterStressRaising` is the center of the report. It adjusts medial
 unstressed vocalism between stronger stress peaks, which is why it lands most
 naturally in the historical space described by Campbell, Hogg, and Ringe and
-Taylor. If this grouped report works as finished production prose, it works
+Taylor. If this grouped report works as final prose, it works
 primarily because SC036 gives it a real historical middle.
 
 SC037 `OECompoundLinkingSyncope` then handles the right-hand compound and
@@ -70,25 +70,24 @@ level as SC036.
 
 #### Place in the cascade
 
-This bridge sits immediately after the promoted `SC031-SC034` **West Saxon
-diphthong chain** and immediately before the promoted `SC039-SC040`
-**Medial unstressed vowel core**, followed by the separate promoted `SC041`
-final-loss note. That position is the main reason to promote the grouped row
+This bridge sits immediately after the `SC031-SC034` **West Saxon
+diphthong chain** and immediately before the `SC039-SC040`
+**Medial unstressed vowel core**, followed by the separate `SC041`
+final-loss note. That position is the main reason to keep the grouped row
 unchanged for now: it keeps a real seam in the middle of the half explicit
-without forcing three tiny chapters or a non-contiguous chapter architecture.
+without forcing three tiny chapters or a non-contiguous a larger chapter claim.
 
 The outward chronology links should remain cross-references only. SC035 points
-rightward to promoted SC043 through `believe`, but that does not justify
+rightward to SC043 through `believe`, but that does not justify
 pulling this report out of place toward the brightening chapter. SC036 points
 forward to SC040, but that later relation should remain a forward cross-
-reference rather than a reason to absorb this report into the promoted
-`SC039-SC040` core. SC037 points rightward again through the `rainbow`
-evidence that later appears at the left edge of promoted `SC049-SC050`, but
+reference rather than a reason to absorb this report into the `SC039-SC040` core. SC037 points rightward again through the `rainbow`
+evidence that later appears at the left edge of `SC049-SC050`, but
 that relation should likewise remain cross-reference only.
 
 #### Order evidence
 
-The order evidence justifies promotion only if the asymmetry stays visible.
+The order evidence justifies the grouping only if the asymmetry stays visible.
 
 SC035 has one real positive historical boundary, and it is rightward. The card
 shows that SC035 must precede SC043: if OE Prefix A Reduction is delayed beyond
@@ -114,12 +113,12 @@ find a real computational break across SC038 **OE Strip Secondary Stress**:
 moving SC037 later produces `reġnefoga` instead of expected `reġnboga` in
 `rainbow`. But SC038 is a technical marker, so that result must remain exactly
 what the card says it is: non-historical / technical-marker evidence, not a
-normal chronology claim. The later `rainbow` relation to promoted SC049 is real
+normal chronology claim. The later `rainbow` relation to SC049 is real
 and book-useful, but it should remain a rightward cross-reference only.
 
 Taken together, the cards support a grouped chapter with one strong center and
 two modest flanks: `SC035 < SC043`, `SC019 < SC036 < SC040`, and a
-technical-marker SC037/SC038 computational seam that should not be promoted
+technical-marker SC037/SC038 computational seam that should not be treated
 into ordinary chronology.
 
 #### Interpretation
@@ -134,8 +133,8 @@ linking cleanup is historically intelligible and computationally important, even
 though its own card evidence is technical rather than ordinary-historical.
 
 That makes the unit a derivational bridge in the strongest useful sense. It is
-adjacent, chronological, and coherent enough to carry finished prose, but
-the finished prose should be explicit about hierarchy rather than flattening all
+adjacent, chronological, and coherent enough to carry final prose, but
+the final prose should be explicit about hierarchy rather than flattening all
 three members into coequal textbook laws. If later architecture ever narrows the
 region around SC036, that would be a chapter-shape refinement rather than proof
 that the present bridge was mistaken.

@@ -4,13 +4,12 @@
 
 #### Historical formulation
 
-`SC014-SC015` is promoted here as a **short, cautious opening bridge report**,
+`SC014-SC015` appears here as a **short, cautious opening bridge report**,
 not as a claim that the traditional grammars present one robust textbook chapter
-called "opening vowel prelude." The grouped report is useful for book
-architecture because these are the earliest ordinary FST changes in the
-assembled half, and the sound-change narrative reads more clearly if it begins
+called "opening vowel prelude." The grouped report is useful for narrative shape because these are the earliest ordinary FST changes in the
+volume, and the sound-change narrative reads more clearly if it begins
 with an explicit opening prelude rather than jumping straight into the more
-developed `SC016-SC020` pilot corridor.
+developed `SC016-SC020` corridor.
 
 The internal hierarchy of the pair should stay explicit. SC014
 **NWGmc Unstressed Ai Monophthongization** is the weak opening member:
@@ -59,7 +58,7 @@ corridor.
 
 #### Place in the cascade
 
-This report sits at the very opening of the assembled half and hands off
+This report sits at the very opening of the volume and hands off
 directly to the pilot `SC016-SC020` **Early vocalic/final corridor**.
 
 ```foma
@@ -72,17 +71,16 @@ directly to the pilot `SC016-SC020` **Early vocalic/final corridor**.
 .o. PGmcFinalZDeletion
 ```
 
-That immediate handoff is the main book-level reason to promote the row now.
-The report gives the half an explicit opening without absorbing the pilot
-corridor to the right. Its outward links should remain restrained. Bundled
+That immediate handoff is the main structural reason to keep the row here.
+The report gives the volume an explicit opening without absorbing the `SC016-SC020` corridor to the right. Its outward links should remain restrained. Bundled
 `PWGmcChanges` bounds the earlier search space for both rules, but that is a
-runner limitation rather than a historical left boundary. SC015 points forward
+runner limitation rather than a positive left boundary. SC015 points forward
 to SC036 through `world`, but that relation should remain a cross-reference
-only, not chapter architecture.
+only, not a larger chapter claim.
 
 #### Order evidence
 
-The order evidence justifies promotion only if the asymmetry remains explicit.
+The order evidence justifies the grouping only if the asymmetry remains explicit.
 
 SC014 is source-backed but chronology-negative in current testing. The earlier
 search runs safely down to bundled `PWGmcChanges` with no real break, and the
@@ -91,12 +89,12 @@ Those results should not be rewritten into positive chronology claims. The card
 supports SC014 as a brief opening note, not as a strongly bounded local law.
 
 SC015 is the stronger member. Its earlier search is likewise runner-bounded at
-bundled `PWGmcChanges`, so that side is not a positive historical boundary
+bundled `PWGmcChanges`, so that side is not a positive earlier boundary
 either. The later side is real, but broad/far: SC015 must precede SC036
 **OE Inter Stress Raising**. If SC015 is delayed later than SC036, the `world`
 derivation yields `wuruld` rather than expected `weorold`. That is a genuine
 historical ordering statement, but it is still a forward cross-reference rather
-than a reason to build a non-contiguous SC015-SC036 chapter.
+than a reason to build a non-contiguous `SC015-SC036` chapter.
 
 Taken together, the cards support a short opening bridge with one weak
 boundary-limited member and one stronger forward-looking member. They do **not**
@@ -105,9 +103,9 @@ support a local reciprocal corridor.
 #### Interpretation
 
 The value of this report is architectural as much as historical. It lets the
-assembled half begin with explicit prose for the earliest ordinary Northwest
+volume begin with explicit prose for the earliest ordinary Northwest
 Germanic vowel adjustments instead of leaving the narrative to start abruptly at
-the pilot corridor. That is enough to justify production prose even though the
+the `SC016-SC020` corridor. That is enough to justify prose even though the
 two members do not contribute equal weight.
 
 SC014 should therefore stay brief: historically plausible, source-backed, and
@@ -123,8 +121,8 @@ The cautions here are straightforward but important. Do not treat bundled
 `PWGmcChanges` as a historical left boundary for either rule. Do not treat
 SC014's no-break-before-boundary result as proof that it must precede the whole
 rest of the half. Do not let the forward `SC015 < SC036` relation pull this
-opening report into a non-contiguous chapter with the later promoted
+opening report into a non-contiguous chapter with the later
 `SC035-SC037` bridge. And do not let the prelude duplicate the neighboring
-`SC016-SC020` pilot corridor. The report should remain exactly what it is: a
+`SC016-SC020` corridor. The report should remain exactly what it is: a
 short cautious opening bridge with SC014 brief and SC015 carrying most of the
 prose.

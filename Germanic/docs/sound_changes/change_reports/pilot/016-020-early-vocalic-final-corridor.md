@@ -77,9 +77,9 @@ ordinary sound-law implementation of the four: it lowers stressed `u/ú` to
 `o/ó` before a following non-high vowel while explicitly blocking the relevant
 nasal and `j` environments. SC019 formalizes final unstressed `*-ō > *-u` as a
 separate stage, while the adjacent monosyllabic `ō` rule is split off into
-SC018. SC020 then deletes final `*z` outright with the simple rewrite
-`[{*z} -> 0 || _ .#.]`, even though the literature states the historical core
-more narrowly as loss of word-final `*z` in unstressed syllables
+SC018. SC020 then deletes final `*z` outright by applying a simple word-final deletion
+step, even though the literature states the historical core more narrowly as
+loss of word-final `*z` in unstressed syllables
 [@Campbell1959; @Fulk2018; @RingeTaylor2014; @Crist2002].
 
 That explicitness is useful, but it is not neutral. SC016 is more sharply
@@ -141,7 +141,7 @@ an undifferentiated graph chapter.
 
 #### Interpretation
 
-The book-level value of this corridor is methodological as well as historical.
+The structural value of this corridor is methodological as well as historical.
 The literature gives four real phenomena, but it gives them unevenly: one is a
 strong standard sound law, one is a real but weakly named West Saxon sub-rule,
 and two belong most naturally to ending structure and final-syllable history.
@@ -149,7 +149,7 @@ The CAPR cascade then forces those phenomena into explicit ordered rule form.
 The chronology cards, finally, show where specific derivations break if that
 order is disturbed.
 
-That combination is what makes the corridor worth a production report. It shows
+That combination is what makes the corridor worth its own report. It shows
 how the sound-change half of the book can move from scholarship to model to
 controlled inference without confusing the three. The handbooks do not give a
 ready-made four-part chapter, but they do provide the historical material from
@@ -157,7 +157,7 @@ which the corridor can be written responsibly.
 
 #### Remaining cautions
 
-SC016 should probably be described in finished prose as a **modeled West Saxon
+SC016 should probably be described in final prose as a **modeled West Saxon
 palatal-glide / rising-diphthong sub-rule** rather than as a universally named
 sound law. SC019's label may likewise need softening toward **final unstressed
 `*-ō > *-u`** language. SC020's literature-backed core is narrower than CAPR's
