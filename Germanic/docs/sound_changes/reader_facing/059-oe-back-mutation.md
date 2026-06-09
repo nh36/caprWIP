@@ -6,13 +6,13 @@ Back mutation is the substantive center of this part of the sequence. Campbell t
 it as a later Old English diphthongizing development before following back
 vowels, and his examples already show why forms such as *heofon* ‘heaven’ are
 historically legible outcomes in their own right
-[@Campbell1959, §207]. Hogg treats the same development as a later change with
+[@Campbell1959, p. 86, §207]. Hogg treats the same development as a later change with
 clear parallels to breaking [@Hogg1992, p. 112]. Ringe and Taylor sharpen the
 picture by distinguishing West Saxon forms such as *giefan* ‘give’ and *wefan*
 ‘weave’ from non-West-Saxon forms such as *geofad* and *weofan*
-[@RingeTaylor2014, §6.9.4]. Fulk likewise treats back mutation as a distinct
+[@RingeTaylor2014, p. 319, §6.9.4]. Fulk likewise treats back mutation as a distinct
 historical phenomenon with its own profile beside the earlier umlautal
-changes [@Fulk2018, §4.8].
+changes [@Fulk2018, p. 69, §4.8].
 
 That makes back mutation different from the short notes that follow it. Back
 mutation belongs to the same local stretch of the sequence, but it carries more

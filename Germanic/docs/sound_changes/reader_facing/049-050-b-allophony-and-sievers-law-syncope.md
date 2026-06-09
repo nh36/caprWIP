@@ -17,9 +17,9 @@ Sievers' Law belongs to a different part of the historical discussion. It is a
 prosodic and morphological adjustment in heavy stems, not a distributional
 allophone of a stop consonant. Adamczyk treats the Old English reflexes of the
 law as real historical material in weak verbs and related formations
-[@Adamczyk2001]. Fulk gives the compact comparative summary through familiar
+[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through familiar
 forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
-[@Fulk2018, p. 28, §6.15]. The point of keeping the two changes together is
+[@Fulk2018, p. 127, §6.15]. The point of keeping the two changes together is
 therefore practical and chronological. The behavior of Germanic \emph{*b} still
 needs a brief place in the book, and Sievers-law syncope is the last narrow feeder
 before the palatalization sequence begins in earnest.

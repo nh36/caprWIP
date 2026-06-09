@@ -25,9 +25,9 @@ Sievers' Law belongs to a different part of the historical discussion. It is a
 prosodic and morphological adjustment in heavy stems, not a distributional
 allophone of a stop consonant. Adamczyk treats the Old English reflexes of the
 law as real historical material in weak verbs and related formations
-[@Adamczyk2001]. Fulk gives the compact comparative summary through familiar
+[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through familiar
 forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
-[@Fulk2018, p. 28, §6.15]. The point of keeping the two changes together is
+[@Fulk2018, p. 127, §6.15]. The point of keeping the two changes together is
 therefore practical and chronological. The behavior of Germanic \emph{*b} still
 needs a brief place in the book, and Sievers-law syncope is the last narrow feeder
 before the palatalization sequence begins in earnest.
@@ -99,12 +99,12 @@ of plain velars and before the later West Saxon diphthongal developments
 [@Hogg1992, pp. 106--107, 111--112]. Ringe and Taylor make the same sequence
 explicit when they distinguish the earlier palatalization of velars and \emph{*sk} from
 the later diphthongization after already palatal consonants
-[@RingeTaylor2014, §§6.4.1, 6.5.1].
+[@RingeTaylor2014, pp. 213--216, §§6.4.1, 6.5.1].
 
-Luick and Sievers-Brunner are especially useful for the larger frame. Both treat
+Luick is especially useful for the larger frame. He treats
 the cluster change as part of a broader early movement toward palatal
 articulation, while still allowing later vowel consequences to form a different
-chapter of the history [@Luick1914, §168; @SieversBrunner1965, §91.a]. Fulk's
+chapter of the history [@Luick1914, p. 157, §168]. Fulk's
 summary is the most concise warning against overextension: Old English \emph{*sc} is
 palatal except in the well-known back-vowel environments that preserve harder
 outcomes [@Fulk2018, p. 28]. The result is a historically clear rule, but not an
@@ -319,16 +319,16 @@ same scope.
 The two rules gathered here are unequal in weight. The first is a narrow loss of
 \emph{*w} after velars in the \emph{*ngw} sequence. Ringe and Taylor make the historical core
 clear when they derive PGmc \emph{*singwan} to Old English *singan* ‘sing’
-[@RingeTaylor2014, §6.4.2]. That gives the change a real comparative anchor, but
+[@RingeTaylor2014, p. 214, §6.4.2]. That gives the change a real comparative anchor, but
 it does not turn it into a large chapter of its own. It is the kind of small
 cleanup rule that needs a place in the sequence without claiming the status of a
 major handbook law.
 
 The second rule is historically more legible. Campbell notes the recurring loss
-of \emph{*w} before \emph{*i} in unstressed position [@Campbell1959, §406]. Ringe and Taylor
+of \emph{*w} before \emph{*i} in unstressed position [@Campbell1959, p. 167, §406]. Ringe and Taylor
 trace the development of *sǣ* ‘sea’ from earlier \emph{*saiwi-} / \emph{*sawi-}
-[@RingeTaylor2014, §6.7.1], and Luick gives the same trajectory in his own
-historical grammar [@Luick1914, §187]. The chapter therefore belongs in the
+[@RingeTaylor2014, p. 257, §6.7.1], and Luick gives the same trajectory in his own
+historical grammar [@Luick1914, p. 173, §187]. The chapter therefore belongs in the
 stretch between plain palatalization and the umlautal core, but it should keep
 the asymmetry visible: the first rule is a narrow bridge, the second is a
 stronger glide-loss development with a specific lexical witness.
@@ -371,7 +371,7 @@ In prose, the rule removes non-initial \emph{*w} before final unstressed \emph{*
 The best witness is *sǣ* ‘sea’. Campbell's discussion of the loss of \emph{*w} before
 \emph{*i}, Ringe and Taylor's derivation from earlier \emph{*saiwi-} / \emph{*sawi-}, and Luick's
 parallel account all point to the same historical consequence
-[@Campbell1959, §406; @RingeTaylor2014, §6.7.1; @Luick1914, §187]. The glide has
+[@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. The glide has
 to disappear early enough for the preceding vowel to continue into the later
 fronted and lengthened outcome. If the glide survives too long, the derivation
 retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before SC020, the
@@ -650,8 +650,8 @@ and dialectal scope is more restricted.
 This chapter belongs to the later part of the palatalization and fronting
 region. Campbell, Ringe and Taylor, and Fulk all discuss the same neighborhood
 of palatalized and fronted outcomes that underlies forms such as *bīeġan*
-‘bend’ and *sēċan* ‘seek’ [@Campbell1959, §§120, 170;
-@RingeTaylor2014, §§6.4.1, 6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. None
+‘bend’ and *sēċan* ‘seek’ [@Campbell1959, pp. 89, 107--108, §§170, 248--251;
+@RingeTaylor2014, pp. 213--251, §§6.4.1, 6.5.1, 6.6.1--6.6.4; @Fulk2018, pp. 65, 75, §§4.7, 4.13]. None
 of them turns this later cluster adjustment into a major independent headline.
 The historical interest lies in the fact that it remains a real part of the
 sequence even though the larger palatalization and umlaut chapters carry more of
@@ -786,13 +786,13 @@ Back mutation is the substantive center of this part of the sequence. Campbell t
 it as a later Old English diphthongizing development before following back
 vowels, and his examples already show why forms such as *heofon* ‘heaven’ are
 historically legible outcomes in their own right
-[@Campbell1959, §207]. Hogg treats the same development as a later change with
+[@Campbell1959, p. 86, §207]. Hogg treats the same development as a later change with
 clear parallels to breaking [@Hogg1992, p. 112]. Ringe and Taylor sharpen the
 picture by distinguishing West Saxon forms such as *giefan* ‘give’ and *wefan*
 ‘weave’ from non-West-Saxon forms such as *geofad* and *weofan*
-[@RingeTaylor2014, §6.9.4]. Fulk likewise treats back mutation as a distinct
+[@RingeTaylor2014, p. 319, §6.9.4]. Fulk likewise treats back mutation as a distinct
 historical phenomenon with its own profile beside the earlier umlautal
-changes [@Fulk2018, §4.8].
+changes [@Fulk2018, p. 69, §4.8].
 
 That makes back mutation different from the short notes that follow it. Back
 mutation belongs to the same local stretch of the sequence, but it carries more
@@ -842,8 +842,8 @@ The evidence is narrow enough that the discussion can stay brief. Campbell and R
 development behind forms such as *miht* ‘might’ and *niht* ‘night’, while Fulk's
 broader chronology makes clear that this material belongs beside the umlaut and
 palatal-vowel region as a subordinate note beside it
-[@Campbell1959, §§248--251; @RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4;
-@Fulk2018, §§4.7, 4.13].
+[@Campbell1959, pp. 107--108, §§248--251; @RingeTaylor2014, pp. 215--251, §§6.5.1, 6.6.1--6.6.4;
+@Fulk2018, pp. 65, 75, §§4.7, 4.13].
 
 That is why the note belongs here after back mutation even though its clearest
 historical tie still reaches back to the earlier umlautal chapter. The
@@ -893,8 +893,8 @@ boundary is available.
 The development belongs to the narrower end of the later weak-tail sequence. It is historically
 legible through the pathway that leads to *dōn* ‘do’, and the broader late
 weak-tail setting is supported by the usual handbook discussions of apocope and
-related reduction [@Campbell1959, §§345--349; @Hogg1992, pp. 120--121;
-@Fulk2018, §5.6]. But the decisive lexical tie lies much farther back in the
+related reduction [@Campbell1959, pp. 144--145, §§345--349; @Hogg1992, pp. 120--121;
+@Fulk2018, p. 91, §5.6]. But the decisive lexical tie lies much farther back in the
 sequence, in the older development of \emph{*dōną}. That keeps the note real,
 while also keeping it small.
 

@@ -12,6 +12,9 @@ assembled_pdf="${script_dir}/reader_facing_local_section_02.pdf"
 
 cd "${repo_root}"
 
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_citations.py
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_foma_width.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_section_order.py \
   --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_02_docker.sh
 
@@ -77,9 +80,12 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "
     set -e
     apk add --no-cache ${font_package} >/dev/null
+    kpsewhich fvextra.sty >/dev/null 2>&1 || tlmgr install fvextra >/dev/null
     pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_02.md \
       --standalone \
       --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
+      --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --number-sections \
       --table-of-contents \
       --metadata-file=Germanic/docs/assembly/full_volume_metadata.yaml \

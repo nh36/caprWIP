@@ -11,12 +11,12 @@ of plain velars and before the later West Saxon diphthongal developments
 [@Hogg1992, pp. 106--107, 111--112]. Ringe and Taylor make the same sequence
 explicit when they distinguish the earlier palatalization of velars and \emph{*sk} from
 the later diphthongization after already palatal consonants
-[@RingeTaylor2014, §§6.4.1, 6.5.1].
+[@RingeTaylor2014, pp. 213--216, §§6.4.1, 6.5.1].
 
-Luick and Sievers-Brunner are especially useful for the larger frame. Both treat
+Luick is especially useful for the larger frame. He treats
 the cluster change as part of a broader early movement toward palatal
 articulation, while still allowing later vowel consequences to form a different
-chapter of the history [@Luick1914, §168; @SieversBrunner1965, §91.a]. Fulk's
+chapter of the history [@Luick1914, p. 157, §168]. Fulk's
 summary is the most concise warning against overextension: Old English \emph{*sc} is
 palatal except in the well-known back-vowel environments that preserve harder
 outcomes [@Fulk2018, p. 28]. The result is a historically clear rule, but not an

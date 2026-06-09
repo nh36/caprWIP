@@ -5,8 +5,8 @@
 This chapter belongs to the later part of the palatalization and fronting
 region. Campbell, Ringe and Taylor, and Fulk all discuss the same neighborhood
 of palatalized and fronted outcomes that underlies forms such as *bīeġan*
-‘bend’ and *sēċan* ‘seek’ [@Campbell1959, §§120, 170;
-@RingeTaylor2014, §§6.4.1, 6.5.1, 6.6.1--6.6.4; @Fulk2018, §§4.7, 4.13]. None
+‘bend’ and *sēċan* ‘seek’ [@Campbell1959, pp. 89, 107--108, §§170, 248--251;
+@RingeTaylor2014, pp. 213--251, §§6.4.1, 6.5.1, 6.6.1--6.6.4; @Fulk2018, pp. 65, 75, §§4.7, 4.13]. None
 of them turns this later cluster adjustment into a major independent headline.
 The historical interest lies in the fact that it remains a real part of the
 sequence even though the larger palatalization and umlaut chapters carry more of

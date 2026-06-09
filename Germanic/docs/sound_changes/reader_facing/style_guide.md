@@ -49,8 +49,11 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 ## Citations
 
 1. Book citations in the reader-facing chapters must include page numbers.
-2. Section numbers may follow page numbers when they help the reader.
-3. If a page number cannot be verified, paraphrase or replace the passage rather
+2. Section numbers may follow page numbers when they help the reader, but they do
+   not replace page numbers.
+3. A citation without page number(s) is acceptable only if it is explicitly
+   whitelisted as a whole-work/general reference.
+4. If a page number cannot be verified, paraphrase or replace the passage rather
    than presenting an unverified quotation as final prose.
 
 ## Formalization
@@ -60,6 +63,9 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 3. Explain what the code does in linguistic prose after the code block.
 4. The FOMA code box is the one place where the technical implementation should
    be shown directly.
+5. The PDF build wraps fenced `foma` blocks through the width-safe rendering
+   protocol. Do not hand-format them in ways that assume fixed unwrapped line
+   width.
 
 ## Old English forms
 

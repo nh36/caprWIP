@@ -6,8 +6,8 @@ The evidence is narrow enough that the discussion can stay brief. Campbell and R
 development behind forms such as *miht* ‘might’ and *niht* ‘night’, while Fulk's
 broader chronology makes clear that this material belongs beside the umlaut and
 palatal-vowel region as a subordinate note beside it
-[@Campbell1959, §§248--251; @RingeTaylor2014, §§6.5.1, 6.6.1--6.6.4;
-@Fulk2018, §§4.7, 4.13].
+[@Campbell1959, pp. 107--108, §§248--251; @RingeTaylor2014, pp. 215--251, §§6.5.1, 6.6.1--6.6.4;
+@Fulk2018, pp. 65, 75, §§4.7, 4.13].
 
 That is why the note belongs here after back mutation even though its clearest
 historical tie still reaches back to the earlier umlautal chapter. The

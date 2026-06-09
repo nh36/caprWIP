@@ -23,6 +23,9 @@ DEFAULT_SKIP = {
     "reader_facing_chronology_evidence_check_01.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",
+    "reader_facing_citation_check_01.md",
+    "reader_facing_foma_width_check_01.md",
+    "reader_facing_pdf_qc_02_report.md",
 }
 
 NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [

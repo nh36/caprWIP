@@ -5,8 +5,8 @@
 The development belongs to the narrower end of the later weak-tail sequence. It is historically
 legible through the pathway that leads to *dōn* ‘do’, and the broader late
 weak-tail setting is supported by the usual handbook discussions of apocope and
-related reduction [@Campbell1959, §§345--349; @Hogg1992, pp. 120--121;
-@Fulk2018, §5.6]. But the decisive lexical tie lies much farther back in the
+related reduction [@Campbell1959, pp. 144--145, §§345--349; @Hogg1992, pp. 120--121;
+@Fulk2018, p. 91, §5.6]. But the decisive lexical tie lies much farther back in the
 sequence, in the older development of \emph{*dōną}. That keeps the note real,
 while also keeping it small.
 
