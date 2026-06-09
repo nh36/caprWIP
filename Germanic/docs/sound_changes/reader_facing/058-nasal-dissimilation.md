@@ -63,7 +63,8 @@ more precise later boundary within the remainder of the Old English sequence.
 
 No comparable pair of lexical failures fixes a narrower slot here. The present
 evidence therefore gives neither a precise terminus post quem nor a precise
-terminus ante quem for the rule within the tested sequence.
+terminus ante quem for the rule within the tested sequence. No exact wrong early
+or late output is currently available for this chapter.
 
 Even so, the rule has real interpretative consequences. It provides a place in
 the implementation for outcomes of the *heofon* ‘heaven’, *fæstenn* ‘fasting’,

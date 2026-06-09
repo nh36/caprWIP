@@ -1,0 +1,25 @@
+# Reader-facing chronology evidence audit 01
+
+This is an internal control file for the current ten-chapter reader-facing local
+section. It records what chronology evidence each SC-numbered rule section now
+states explicitly and what action was taken in the prose.
+
+| SC | Rule name | Chapter file | Earlier-boundary evidence | Later-boundary evidence | Witness word(s) | Expected form | Wrong early output | Wrong late output | Status | Action taken in reader-facing prose |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SC049 | `PGmcBAllophony` | `049-050-b-allophony-and-sievers-law-syncope.md` | `SC037 < SC049` | none recovered | rainbow | *reġnboga* | *reġnfoga* | — | one-sided | Earlier boundary and wrong/expected pair stated; later side left explicitly open |
+| SC050 | `SieversLawSyncope` | `049-050-b-allophony-and-sievers-law-syncope.md` | none recovered | `SC050 < SC052` | stretch | *streċċan* | — | *strecċan* | one-sided | Later boundary and exact late wrong form stated; earlier side left explicit as open |
+| SC051 | `OESkPalatalization` | `051-sk-palatalization.md` | `SC046 < SC051` | `SC051 < SC056` | flask, wash / shaft, shear, sheath, sheep, shield | *flasce*, *wascan* / *sċeaft*, *sċēar*, *sċēaþ*, *sċēap*, *sċield* | *flæsce*, *wæscan* | no single uniform later wrong form isolated | two-sided; no single late wrong form | Exact earlier wrong forms added; later boundary stated with caution about output shape |
+| SC052 | `OEVelarPalatalizationKFront` | `052-velar-palatalization.md` | `SC050 < SC052` | `SC052 < SC055` | stretch / cow, lung | *streċċan* / *cȳ*, *lungen* | *strecċan* | *ċȳ*, *lunġen* | complete (shared with main rule) | Shared boundary logic added explicitly |
+| SC052 | `OEVelarPalatalization` | `052-velar-palatalization.md` | `SC050 < SC052` | `SC052 < SC055` | stretch / cow, lung | *streċċan* / *cȳ*, *lungen* | *strecċan* | *ċȳ*, *lunġen* | complete | Earlier and later boundaries stated explicitly |
+| SC053 | `OEPostVelarWLoss` | `053-054-pre-umlaut-bridge-and-w-loss.md` | none recovered | none recovered | sing | *singan* | — | — | boundary-limited; no exact wrong form available | Prose now states lack of positive earlier/later boundary |
+| SC054 | `OEWLossBeforeI` | `053-054-pre-umlaut-bridge-and-w-loss.md` | `SC020 < SC054` | `SC054 < SC063` | sea | *sǣ* | *sǣw* | *sǣw* | complete; witness-limited | Two-sided `sea` diagnostic made explicit |
+| SC055 | `OEIUmlautFronting` | `055-056-i-umlaut-core.md` | `SC052 < SC055` | `SC055 < SC056` | cow, lung / gift, sheath | *cȳ*, *lungen* / *ġift*, *sċēaþ* | *ċȳ*, *lunġen* | *ġieft*, *sċǣþ* | complete (shared composite evidence) | Shared composite chronology added explicitly |
+| SC055 | `OEIUmlautRaising` | `055-056-i-umlaut-core.md` | `SC052 < SC055` | `SC055 < SC056` | cow, lung / gift, sheath | *cȳ*, *lungen* / *ġift*, *sċēaþ* | *ċȳ*, *lunġen* | *ġieft*, *sċǣþ* | complete (shared composite evidence) | Shared chronology added explicitly |
+| SC055 | `OEIUmlautDiphthong` | `055-056-i-umlaut-core.md` | `SC052 < SC055` | `SC055 < SC056` | cow, lung / gift, sheath | *cȳ*, *lungen* / *ġift*, *sċēaþ* | *ċȳ*, *lunġen* | *ġieft*, *sċǣþ* | complete (shared composite evidence) | Shared chronology added explicitly |
+| SC055 | `OEIUmlaut` | `055-056-i-umlaut-core.md` | `SC052 < SC055` | `SC055 < SC056` | cow, lung / gift, sheath | *cȳ*, *lungen* / *ġift*, *sċēaþ* | *ċȳ*, *lunġen* | *ġieft*, *sċǣþ* | complete | Composite-rule chronology now states both boundaries |
+| SC056 | `OEWsPalatalDiphthongization` | `055-056-i-umlaut-core.md` | `SC055 < SC056` | none recovered | gift, sheath | *ġift*, *sċēaþ* | *ġieft*, *sċǣþ* | — | one-sided | Earlier boundary and wrong/expected pair stated; later side explicitly absent |
+| SC057 | `OEJClusterCoalescence` | `057-j-cluster-coalescence.md` | `SC052 < SC057` | none recovered | bend, seek<br>follow, hedge, singe | *bīeġan*, *sēċan* | *bēaġan*, *sōċan* | — | one-sided | Earlier boundary made explicit; later side kept modest |
+| SC058 | `OENasalDissimilation` | `058-nasal-dissimilation.md` | none recovered | none recovered | heaven, fasting, yearling | *heofon*, *fæstenn*, *enetre* | — | — | boundary-limited; no exact wrong form available | Prose now states that no exact wrong early/late output is available |
+| SC059 | `OEBackMutation` | `059-oe-back-mutation.md` | `SC048 < SC059` | `SC059 < SC078` | give, steal / steal, weave | *ġiefan*, *stelan* / *stelan*, *wefan* | *ġeofan*, *steolan* | *steolan*, *weofan* | complete | Two-sided boundary logic and explicit wrong/expected outputs stated |
+| SC060 | `OEWsPalatalUmlaut` | `060-ws-palatal-umlaut-note.md` | `SC055 < SC060` | none recovered | might, night | *miht*, *niht* | *mieht*, *nieht* | — | one-sided | Earlier boundary and exact wrong/expected outputs stated; later side explicitly absent |
+| SC061 | `OEWeakTailNasalLoss` | `061-weak-tail-nasal-loss-note.md` | `SC023 < SC061` | none recovered | do | *dōn* | no output | — | one-sided | Earlier boundary made explicit; later side explicitly absent |

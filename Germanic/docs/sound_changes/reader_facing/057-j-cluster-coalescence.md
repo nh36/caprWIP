@@ -32,13 +32,15 @@ define OEJClusterCoalescence (
 In prose, the rule coalesces \emph{*gj} and \emph{*kj} into the palatal outcomes that later
 surface in forms such as *bīeġan* ‘bend’ and *sēċan* ‘seek’.
 
-Its earlier dependency is clearer than its later limit. The rule must follow
-[velar palatalization before front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization),
-because if the coalescence is forced too early the developments behind *bīeġan*
-‘bend’ and *sēċan* ‘seek’ are lost. Related forms such as *fylġan* ‘follow’,
+Its earlier dependency is clearer than its later limit. If the rule is moved
+before [velar palatalization before front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization),
+the developments behind *bīeġan* ‘bend’ and *sēċan* ‘seek’ are lost. Related forms such as *fylġan* ‘follow’,
 *heċġ* ‘hedge’, and *sengan* ‘singe’ fail in the same broader palatalization
-zone. No comparably sharp later lexical breakpoint emerges within the remaining
-sequence, so the chronology remains short and one-sided.
+zone. PGmc `*báugijaną` yields *bēaġan* ‘bend’ rather than expected OE *bīeġan*,
+and PGmc `*sōkijaną` yields *sōċan* ‘seek’ rather than expected *sēċan*. This
+gives the earlier boundary `SC052 < SC057`. No comparably sharp later lexical
+breakpoint emerges within the remaining sequence, so the chronology remains
+short and one-sided.
 
 That modest shape is historically appropriate. The rule is a real later member
 of the palatalization region, but it does not need to absorb the umlautal

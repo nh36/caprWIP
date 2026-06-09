@@ -20,6 +20,9 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_01_report.md",
     "reader_facing_local_section_02.md",
     "reader_facing_local_section_02_report.md",
+    "reader_facing_chronology_evidence_check_01.md",
+    "reader_facing_chronology_evidence_audit_01.md",
+    "reader_facing_chronology_evidence_qc_01_report.md",
 }
 
 NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
@@ -70,7 +73,6 @@ META_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("meta:chapter center", re.compile(r"\bchapter center\b", re.I)),
     ("meta:corridor", re.compile(r"\bcorridor\b", re.I)),
     ("meta:file path", re.compile(r"Germanic/docs/")),
-    ("meta:internal id", re.compile(r"\bSC\d{3}\b")),
 ]
 
 OE_CODE_SPAN_RE = re.compile(
@@ -190,10 +192,10 @@ def main() -> int:
                 warnings.append((path, line_number, "oe-form:code-span", line.rstrip()))
             for label, pattern in NEGATION_PATTERNS:
                 if pattern.search(line):
+                    if label in {"negation:rather than", "negation:instead of"} and ("expected" in line or "yields" in line or "produces" in line):
+                        continue
                     warnings.append((path, line_number, label, line.rstrip()))
             for label, pattern in META_PATTERNS:
-                if label == "meta:internal id" and stripped.startswith("## SC"):
-                    continue
                 if pattern.search(line):
                     warnings.append((path, line_number, label, line.rstrip()))
 

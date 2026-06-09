@@ -52,11 +52,11 @@ Historically, this is the sort of narrow distributional statement that the
 handbooks place within the consonant system and discuss only briefly on its own.
 Even so, it matters because later derivations assume that the
 alternation is already in place. The clearest tested consequence appears in
-*reġnboga* ‘rainbow’. The compound must already have passed through the earlier
-linking-vowel adjustment before the bilabial stop and fricative values settle.
+*reġnboga* ‘rainbow’. If the rule is moved before the earlier linking-vowel
+adjustment, the derivation yields *reġnfoga* ‘rainbow’ rather than expected OE
+*reġnboga* ‘rainbow’. This gives the earlier boundary `SC037 < SC049`.
 No equally sharp later lexical breakpoint emerges within the tested sequence, so
-the rule is best read as an early distributional adjustment whose later limit is
-less tightly fixed than its earlier dependency.
+the rule has no explicit later boundary within the present sequence.
 
 ## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
 
@@ -72,16 +72,17 @@ In plain language, the rule contracts the heavier \emph{*-CijV-*} sequence to
 \emph{*-CjV-*}. That is why it belongs to the historical aftermath of Sievers' Law and
 stands apart from the earlier stop-fricative distribution.
 
-Its place in the sequence is clearer than that of the allophony rule. The
-change must already have happened before [velar palatalization before front
-vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization), because the
-cluster behind *streċċan* ‘stretch’ depends on the syncope. With PGmc
+Its place in the sequence is clearer than that of the allophony rule. If the
+change is delayed until after [velar palatalization before front
+vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization), the cluster
+behind *streċċan* ‘stretch’ is affected too late. With PGmc
 \emph{*strákkijaną} in the wrong order, the derivation yields *strecċan*
 ‘stretch’. The expected Old English form is *streċċan* ‘stretch’. That is a real chronological
 consequence. No equally precise earlier lexical breakpoint fixes how far back
 the syncope must stand, so the historical picture remains asymmetric. The rule
 is secure as an immediate feeder into the palatalization zone, even though its
-earlier limit is less sharply bounded.
+earlier limit is less sharply bounded. The later boundary is therefore
+`SC050 < SC052`.
 
 \newpage
 
@@ -133,13 +134,19 @@ that lead to Old English \emph{*sc}.
 
 Its historical place is between the earlier restoration and the later palatal
 vowel developments. If it is moved too early, the forms behind *flasce* ‘flask’
-and *wascan* ‘wash’ are disrupted before the earlier vocalic setting is in
-place. If it is moved too late, the cluster no longer feeds the later
+and *wascan* ‘wash’ are fronted too soon, yielding *flæsce* ‘flask’ and
+*wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This gives the
+earlier boundary `SC046 < SC051`. If it is moved too late, the cluster no longer feeds the later
 West-Saxon diphthongal outcomes that appear in *sċeaft* ‘shaft’, *sċēar*
 ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’. That is why
 the rule sits naturally beside [velar palatalization before front vowels
 (`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and before [West Saxon
 palatal diphthongization (`OEWsPalatalDiphthongization`)](#rule-OEWsPalatalDiphthongization).
+
+No single later wrong form is isolated for the whole group of
+\emph{*sċea-*} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
+must already be palatalized before the later West-Saxon diphthongal rule
+applies. This gives the later boundary `SC051 < SC056`.
 
 The narrower chapter shape matters. The cluster rule is real and historically
 visible, but it is still only one part of the broader palatalizing sequence. The
@@ -236,7 +243,12 @@ the palatal outcome in the first place [@RingeTaylor2014, pp. 213--214,
 
 Within the present implementation, this helper rule is not ordered separately
 from the broader velar-palatalization rule below. Its chronology is therefore
-that of the larger rule it feeds.
+that of the larger rule it feeds. If the palatalization complex is moved before
+Sievers-law syncope, PGmc \emph{*strákkijaną} yields *strecċan* ‘stretch’ rather
+than expected OE *streċċan* ‘stretch’. If it is delayed beyond the umlautal
+core, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen*
+‘lungs’ rather than expected OE *cȳ* and *lungen*. The shared boundary pattern
+is therefore `SC050 < SC052 < SC055`.
 
 ## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
@@ -277,6 +289,9 @@ If it is moved too late, after i-umlaut, it over-palatalizes forms such as
 *cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc \emph{*kūi} then yields *ċȳ* ‘cows’;
 the expected form is *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen*
 ‘lungs’; the expected form is *lungen* ‘lungs’.
+
+These lexical failures give the earlier boundary `SC050 < SC052` and the
+later boundary `SC052 < SC055`.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes presupposed by later
@@ -333,10 +348,13 @@ In prose, the rule removes \emph{*w} after the velar cluster in forms of the
 
 Historically, this is a very small rule. It keeps developments such as *singan*
 ‘sing’ visible in the sequence, but it does not create a large family of lexical
-breakpoints. The tested evidence does not fix a narrow place for it within the
-later Old English sequence, so the safest reading is modest: this is a local
-bridge rule that belongs before the umlautal chapter without claiming a more
-precise historical frame than the evidence supports.
+breakpoints. Current testing does not recover a positive earlier or later
+boundary: the search reaches older material on the left and the later Old
+English search limit on the right with no decisive wrong form. If the rule is
+moved either earlier or later within the tested sequence, no lexical witness yet
+provides a sharper wrong/expected pair. The safest reading is therefore modest:
+this is a local bridge rule that belongs before the umlautal chapter without
+claiming a sharper chronological slot than the evidence supports.
 
 ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
@@ -356,7 +374,11 @@ parallel account all point to the same historical consequence
 [@Campbell1959, §406; @RingeTaylor2014, §6.7.1; @Luick1914, §187]. The glide has
 to disappear early enough for the preceding vowel to continue into the later
 fronted and lengthened outcome. If the glide survives too long, the derivation
-retains \emph{*w} and misses *sǣ* ‘sea’.
+retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before SC020, the
+same witness yields *sǣw* ‘sea’ rather than expected OE *sǣ*. This gives the
+earlier boundary `SC020 < SC054`. If the rule is delayed until after SC063, the
+same witness again yields *sǣw* rather than expected *sǣ*. This gives the later
+boundary `SC054 < SC063`.
 
 This is why the chapter belongs immediately before the broader umlautal
 developments discussed in [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
@@ -447,6 +469,16 @@ treated inside the same formal rule even though they belong to different lexical
 classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
 §§190--191].
 
+The same ordering logic that governs the umlaut complex governs this component.
+If the umlautal rule set is moved before SC052, PGmc \emph{*kūi} yields *ċȳ*
+‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen*
+‘lungs’ rather than expected OE *lungen*. At the other edge, the later
+West-Saxon diphthongization must follow the umlautal rule set: if that later
+rule is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than
+expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than
+expected *sċēaþ*. This gives the
+shared boundary pattern `SC052 < SC055 < SC056`.
+
 As a component rule, it shares the chronology of [the composite i-umlaut rule
 (`OEIUmlaut`)](#rule-OEIUmlaut).
 
@@ -466,6 +498,13 @@ fronting rule and raises it further where the same umlaut trigger still holds.
 Historically, this belongs inside the same broad i-umlaut development. It is
 part of the same chronological development and shares the evidence base of [the
 composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+
+Like the fronting component, this raising rule belongs inside `SC052 < SC055 <
+SC056`. If the umlaut complex is moved before SC052, \emph{*kūi} yields *ċȳ*
+instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
+expected *lungen*. If the later West-Saxon diphthongization is moved too early,
+\emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
+yields *sċǣþ* rather than expected *sċēaþ*.
 
 This narrower subrule matters because the sources do not describe umlaut as
 simple fronting alone. Campbell explicitly notes that the low front vowel
@@ -510,6 +549,13 @@ pp. 112--114]. The present formalization keeps those diphthongal outcomes
 visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
 
+Chronologically, this component also shares the same evidence as the umlaut
+complex as a whole. If the umlaut complex is moved before SC052, it
+over-palatalizes
+\emph{*kūi} and \emph{*lúnganjō}; too-early West-Saxon diphthongization yields
+*ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. The rule therefore
+belongs within `SC052 < SC055 < SC056`.
+
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 The implementation also defines a composite rule that composes the three
@@ -530,6 +576,12 @@ moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
 over-palatalized. PGmc \emph{*kūi} yields *ċȳ* ‘cows’; the expected form is
 *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’; the expected form
 is *lungen* ‘lungs’.
+
+The same local network gives the later boundary. If West-Saxon palatal
+diphthongization is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’
+rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’
+rather than expected *sċēaþ*. The composite umlaut rule therefore occupies `SC052 <
+SC055 < SC056`.
 
 Those failures show that the broad umlautal rule needs an earlier terminus post
 quem in the palatalization sequence, even though it remains the main vowel
@@ -575,6 +627,9 @@ If this rule is moved too early, the later ordering is constrained by forms such
 as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc \emph{*géftiz} then yields
 *ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc \emph{*skáiθiz}
 yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
+
+This gives the earlier boundary `SC055 < SC056`. No comparably sharp later
+boundary is available.
 
 No tested lexical item provides a comparably precise later terminus ante quem.
 The available evidence therefore establishes the rule’s relation to the earlier
@@ -622,13 +677,15 @@ define OEJClusterCoalescence (
 In prose, the rule coalesces \emph{*gj} and \emph{*kj} into the palatal outcomes that later
 surface in forms such as *bīeġan* ‘bend’ and *sēċan* ‘seek’.
 
-Its earlier dependency is clearer than its later limit. The rule must follow
-[velar palatalization before front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization),
-because if the coalescence is forced too early the developments behind *bīeġan*
-‘bend’ and *sēċan* ‘seek’ are lost. Related forms such as *fylġan* ‘follow’,
+Its earlier dependency is clearer than its later limit. If the rule is moved
+before [velar palatalization before front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization),
+the developments behind *bīeġan* ‘bend’ and *sēċan* ‘seek’ are lost. Related forms such as *fylġan* ‘follow’,
 *heċġ* ‘hedge’, and *sengan* ‘singe’ fail in the same broader palatalization
-zone. No comparably sharp later lexical breakpoint emerges within the remaining
-sequence, so the chronology remains short and one-sided.
+zone. PGmc `*báugijaną` yields *bēaġan* ‘bend’ rather than expected OE *bīeġan*,
+and PGmc `*sōkijaną` yields *sōċan* ‘seek’ rather than expected *sēċan*. This
+gives the earlier boundary `SC052 < SC057`. No comparably sharp later lexical
+breakpoint emerges within the remaining sequence, so the chronology remains
+short and one-sided.
 
 That modest shape is historically appropriate. The rule is a real later member
 of the palatalization region, but it does not need to absorb the umlautal
@@ -703,7 +760,8 @@ more precise later boundary within the remainder of the Old English sequence.
 
 No comparable pair of lexical failures fixes a narrower slot here. The present
 evidence therefore gives neither a precise terminus post quem nor a precise
-terminus ante quem for the rule within the tested sequence.
+terminus ante quem for the rule within the tested sequence. No exact wrong early
+or late output is currently available for this chapter.
 
 Even so, the rule has real interpretative consequences. It provides a place in
 the implementation for outcomes of the *heofon* ‘heaven’, *fæstenn* ‘fasting’,
@@ -767,6 +825,9 @@ the rule is pushed too far to the right, \emph{*wébaną} yields *weofan*
 That later edge is real, but it points beyond the present stretch of the sequence into the
 later weak-tail reductions, so here it should remain only a forward reference.
 
+These lexical failures give the earlier boundary `SC048 < SC059` and the later
+boundary `SC059 < SC078`.
+
 This is why the change can serve as the center here without implying that the
 following weak-tail notes belong to the same historical law. The rule
 marks a real local seam, but the section after it immediately becomes narrower.
@@ -816,9 +877,12 @@ clusters.
 The crucial point is its earlier dependency. The rule must follow [the composite
 i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut), because if it is moved too early
 the forms behind *miht* ‘might’ and *niht* ‘night’ remain at the overdeveloped
-stage *mieht* and *nieht*. No comparably sharp later lexical breakpoint emerges
+stage *mieht* and *nieht* rather than expected OE *miht* and *niht*. No comparably sharp later lexical breakpoint emerges
 within the remainder of the section. The note therefore belongs here as a short
 afterpiece to the umlaut chapter, not as the start of a new larger unit.
+
+This gives the earlier boundary `SC055 < SC060`. No comparably sharp later
+boundary is available.
 
 \newpage
 
@@ -854,10 +918,13 @@ In prose, the rule reduces final weak-tail endings of the type \emph{*-ną} and
 The clearest lexical witness is the pathway to *dōn* ‘do’. If the rule is moved
 too early, before the older reduction that already shapes the \emph{*dōną}
 sequence,
-the derivation no longer reaches *dōn* ‘do’ at all. No equally sharp later
-breakpoint appears within the tested sequence. That is why the note remains
+the derivation records no output instead of expected OE *dōn* ‘do’. No equally
+sharp later breakpoint appears within the tested sequence. That is why the note remains
 one-sided and why its earlier relation should be understood as a distant
 cross-reference only and should not reshape the broader sequence.
+
+This gives the earlier boundary `SC023 < SC061`. No comparably sharp later
+boundary is available.
 
 The development is best treated as a small late weak-tail adjustment. It remains
 visible in the sequence because it affects the pathway to *dōn* ‘do’, but the

@@ -44,11 +44,11 @@ Historically, this is the sort of narrow distributional statement that the
 handbooks place within the consonant system and discuss only briefly on its own.
 Even so, it matters because later derivations assume that the
 alternation is already in place. The clearest tested consequence appears in
-*reġnboga* ‘rainbow’. The compound must already have passed through the earlier
-linking-vowel adjustment before the bilabial stop and fricative values settle.
+*reġnboga* ‘rainbow’. If the rule is moved before the earlier linking-vowel
+adjustment, the derivation yields *reġnfoga* ‘rainbow’ rather than expected OE
+*reġnboga* ‘rainbow’. This gives the earlier boundary `SC037 < SC049`.
 No equally sharp later lexical breakpoint emerges within the tested sequence, so
-the rule is best read as an early distributional adjustment whose later limit is
-less tightly fixed than its earlier dependency.
+the rule has no explicit later boundary within the present sequence.
 
 ## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
 
@@ -64,13 +64,14 @@ In plain language, the rule contracts the heavier \emph{*-CijV-*} sequence to
 \emph{*-CjV-*}. That is why it belongs to the historical aftermath of Sievers' Law and
 stands apart from the earlier stop-fricative distribution.
 
-Its place in the sequence is clearer than that of the allophony rule. The
-change must already have happened before [velar palatalization before front
-vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization), because the
-cluster behind *streċċan* ‘stretch’ depends on the syncope. With PGmc
+Its place in the sequence is clearer than that of the allophony rule. If the
+change is delayed until after [velar palatalization before front
+vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization), the cluster
+behind *streċċan* ‘stretch’ is affected too late. With PGmc
 \emph{*strákkijaną} in the wrong order, the derivation yields *strecċan*
 ‘stretch’. The expected Old English form is *streċċan* ‘stretch’. That is a real chronological
 consequence. No equally precise earlier lexical breakpoint fixes how far back
 the syncope must stand, so the historical picture remains asymmetric. The rule
 is secure as an immediate feeder into the palatalization zone, even though its
-earlier limit is less sharply bounded.
+earlier limit is less sharply bounded. The later boundary is therefore
+`SC050 < SC052`.

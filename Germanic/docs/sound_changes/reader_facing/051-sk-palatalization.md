@@ -46,13 +46,19 @@ that lead to Old English \emph{*sc}.
 
 Its historical place is between the earlier restoration and the later palatal
 vowel developments. If it is moved too early, the forms behind *flasce* ‘flask’
-and *wascan* ‘wash’ are disrupted before the earlier vocalic setting is in
-place. If it is moved too late, the cluster no longer feeds the later
+and *wascan* ‘wash’ are fronted too soon, yielding *flæsce* ‘flask’ and
+*wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This gives the
+earlier boundary `SC046 < SC051`. If it is moved too late, the cluster no longer feeds the later
 West-Saxon diphthongal outcomes that appear in *sċeaft* ‘shaft’, *sċēar*
 ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’. That is why
 the rule sits naturally beside [velar palatalization before front vowels
 (`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and before [West Saxon
 palatal diphthongization (`OEWsPalatalDiphthongization`)](#rule-OEWsPalatalDiphthongization).
+
+No single later wrong form is isolated for the whole group of
+\emph{*sċea-*} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
+must already be palatalized before the later West-Saxon diphthongal rule
+applies. This gives the later boundary `SC051 < SC056`.
 
 The narrower chapter shape matters. The cluster rule is real and historically
 visible, but it is still only one part of the broader palatalizing sequence. The

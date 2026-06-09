@@ -86,7 +86,12 @@ the palatal outcome in the first place [@RingeTaylor2014, pp. 213--214,
 
 Within the present implementation, this helper rule is not ordered separately
 from the broader velar-palatalization rule below. Its chronology is therefore
-that of the larger rule it feeds.
+that of the larger rule it feeds. If the palatalization complex is moved before
+Sievers-law syncope, PGmc \emph{*strákkijaną} yields *strecċan* ‘stretch’ rather
+than expected OE *streċċan* ‘stretch’. If it is delayed beyond the umlautal
+core, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen*
+‘lungs’ rather than expected OE *cȳ* and *lungen*. The shared boundary pattern
+is therefore `SC050 < SC052 < SC055`.
 
 ## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
@@ -127,6 +132,9 @@ If it is moved too late, after i-umlaut, it over-palatalizes forms such as
 *cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc \emph{*kūi} then yields *ċȳ* ‘cows’;
 the expected form is *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen*
 ‘lungs’; the expected form is *lungen* ‘lungs’.
+
+These lexical failures give the earlier boundary `SC050 < SC052` and the
+later boundary `SC052 < SC055`.
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes presupposed by later

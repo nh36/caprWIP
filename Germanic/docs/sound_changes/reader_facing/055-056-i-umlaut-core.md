@@ -80,6 +80,16 @@ treated inside the same formal rule even though they belong to different lexical
 classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
 §§190--191].
 
+The same ordering logic that governs the umlaut complex governs this component.
+If the umlautal rule set is moved before SC052, PGmc \emph{*kūi} yields *ċȳ*
+‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen*
+‘lungs’ rather than expected OE *lungen*. At the other edge, the later
+West-Saxon diphthongization must follow the umlautal rule set: if that later
+rule is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than
+expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than
+expected *sċēaþ*. This gives the
+shared boundary pattern `SC052 < SC055 < SC056`.
+
 As a component rule, it shares the chronology of [the composite i-umlaut rule
 (`OEIUmlaut`)](#rule-OEIUmlaut).
 
@@ -99,6 +109,13 @@ fronting rule and raises it further where the same umlaut trigger still holds.
 Historically, this belongs inside the same broad i-umlaut development. It is
 part of the same chronological development and shares the evidence base of [the
 composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+
+Like the fronting component, this raising rule belongs inside `SC052 < SC055 <
+SC056`. If the umlaut complex is moved before SC052, \emph{*kūi} yields *ċȳ*
+instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
+expected *lungen*. If the later West-Saxon diphthongization is moved too early,
+\emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
+yields *sċǣþ* rather than expected *sċēaþ*.
 
 This narrower subrule matters because the sources do not describe umlaut as
 simple fronting alone. Campbell explicitly notes that the low front vowel
@@ -143,6 +160,13 @@ pp. 112--114]. The present formalization keeps those diphthongal outcomes
 visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
 
+Chronologically, this component also shares the same evidence as the umlaut
+complex as a whole. If the umlaut complex is moved before SC052, it
+over-palatalizes
+\emph{*kūi} and \emph{*lúnganjō}; too-early West-Saxon diphthongization yields
+*ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. The rule therefore
+belongs within `SC052 < SC055 < SC056`.
+
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 The implementation also defines a composite rule that composes the three
@@ -163,6 +187,12 @@ moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
 over-palatalized. PGmc \emph{*kūi} yields *ċȳ* ‘cows’; the expected form is
 *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’; the expected form
 is *lungen* ‘lungs’.
+
+The same local network gives the later boundary. If West-Saxon palatal
+diphthongization is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’
+rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’
+rather than expected *sċēaþ*. The composite umlaut rule therefore occupies `SC052 <
+SC055 < SC056`.
 
 Those failures show that the broad umlautal rule needs an earlier terminus post
 quem in the palatalization sequence, even though it remains the main vowel
@@ -208,6 +238,9 @@ If this rule is moved too early, the later ordering is constrained by forms such
 as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc \emph{*géftiz} then yields
 *ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc \emph{*skáiθiz}
 yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
+
+This gives the earlier boundary `SC055 < SC056`. No comparably sharp later
+boundary is available.
 
 No tested lexical item provides a comparably precise later terminus ante quem.
 The available evidence therefore establishes the rule’s relation to the earlier

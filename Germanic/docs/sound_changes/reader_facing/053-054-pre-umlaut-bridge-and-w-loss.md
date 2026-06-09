@@ -34,10 +34,13 @@ In prose, the rule removes \emph{*w} after the velar cluster in forms of the
 
 Historically, this is a very small rule. It keeps developments such as *singan*
 ‘sing’ visible in the sequence, but it does not create a large family of lexical
-breakpoints. The tested evidence does not fix a narrow place for it within the
-later Old English sequence, so the safest reading is modest: this is a local
-bridge rule that belongs before the umlautal chapter without claiming a more
-precise historical frame than the evidence supports.
+breakpoints. Current testing does not recover a positive earlier or later
+boundary: the search reaches older material on the left and the later Old
+English search limit on the right with no decisive wrong form. If the rule is
+moved either earlier or later within the tested sequence, no lexical witness yet
+provides a sharper wrong/expected pair. The safest reading is therefore modest:
+this is a local bridge rule that belongs before the umlautal chapter without
+claiming a sharper chronological slot than the evidence supports.
 
 ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
@@ -57,7 +60,11 @@ parallel account all point to the same historical consequence
 [@Campbell1959, §406; @RingeTaylor2014, §6.7.1; @Luick1914, §187]. The glide has
 to disappear early enough for the preceding vowel to continue into the later
 fronted and lengthened outcome. If the glide survives too long, the derivation
-retains \emph{*w} and misses *sǣ* ‘sea’.
+retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before SC020, the
+same witness yields *sǣw* ‘sea’ rather than expected OE *sǣ*. This gives the
+earlier boundary `SC020 < SC054`. If the rule is delayed until after SC063, the
+same witness again yields *sǣw* rather than expected *sǣ*. This gives the later
+boundary `SC054 < SC063`.
 
 This is why the chapter belongs immediately before the broader umlautal
 developments discussed in [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).

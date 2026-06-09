@@ -41,6 +41,9 @@ clusters.
 The crucial point is its earlier dependency. The rule must follow [the composite
 i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut), because if it is moved too early
 the forms behind *miht* ‘might’ and *niht* ‘night’ remain at the overdeveloped
-stage *mieht* and *nieht*. No comparably sharp later lexical breakpoint emerges
+stage *mieht* and *nieht* rather than expected OE *miht* and *niht*. No comparably sharp later lexical breakpoint emerges
 within the remainder of the section. The note therefore belongs here as a short
 afterpiece to the umlaut chapter, not as the start of a new larger unit.
+
+This gives the earlier boundary `SC055 < SC060`. No comparably sharp later
+boundary is available.
