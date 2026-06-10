@@ -4,7 +4,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 17.
+- Sections checked: 23.
 - Sections with warnings: 0.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | Boundary wording | Limitation wording | Warnings |
@@ -26,3 +26,9 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | yes | yes | yes | yes | no | — |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | yes | yes | no | yes | yes | — |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | yes | yes | yes | yes | yes | — |
+| 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | yes | yes | yes | yes | no | — |
+| 064-065-post-apocope-tail.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | yes | yes | yes | yes | no | — |
+| 064-065-post-apocope-tail.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | yes | no | no | yes | yes | — |
+| 066-068-syncope-and-degemination-corridor.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | yes | yes | yes | yes | no | — |
+| 066-068-syncope-and-degemination-corridor.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | yes | no | no | yes | yes | — |
+| 066-068-syncope-and-degemination-corridor.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | yes | yes | yes | yes | yes | — |

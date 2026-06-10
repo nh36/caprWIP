@@ -41,7 +41,7 @@ def chapter_sc_numbers(path: Path) -> list[str]:
     return numbers
 
 
-def verify(build_script: Path) -> tuple[list[str], list[str]]:
+def verify(build_script: Path) -> tuple[list[str], list[str], list[str]]:
     inventory_order = load_inventory_order()
     chapter_files = parse_chapter_files(build_script)
     flattened: list[str] = []
@@ -51,6 +51,9 @@ def verify(build_script: Path) -> tuple[list[str], list[str]]:
         if not chapter_path.exists():
             raise FileNotFoundError(f"Missing chapter file in build list: {chapter_path}")
         numbers = chapter_sc_numbers(chapter_path)
+        missing = [change_id for change_id in numbers if change_id not in inventory_order]
+        if missing:
+            raise ValueError(f"Unknown SC id(s) in {name}: {missing}")
         chapter_expected = sorted(numbers, key=lambda change_id: inventory_order[change_id])
         if numbers != chapter_expected:
             raise ValueError(f"Internal SC order mismatch in {name}: {numbers} vs {chapter_expected}")
@@ -61,17 +64,20 @@ def verify(build_script: Path) -> tuple[list[str], list[str]]:
         raise ValueError(f"Chapter order mismatch: {flattened} vs nondecreasing current_order expectation")
 
     unique_flattened: list[str] = []
+    seen_nonadjacent: set[str] = set()
     for change_id in flattened:
-        if not unique_flattened or unique_flattened[-1] != change_id:
-            unique_flattened.append(change_id)
+        if unique_flattened and unique_flattened[-1] == change_id:
+            continue
+        if change_id in seen_nonadjacent:
+            raise ValueError(f"Non-adjacent repeated SC id in build order: {change_id}")
+        unique_flattened.append(change_id)
+        seen_nonadjacent.add(change_id)
 
     unique_orders = [inventory_order[change_id] for change_id in unique_flattened]
-    if unique_orders[0] != 49 or unique_orders[-1] != 61:
-        raise ValueError(f"Expected local section to span SC049..SC061, got orders {unique_orders[0]}..{unique_orders[-1]}")
-    if unique_orders != list(range(49, 62)):
-        raise ValueError(f"Expected contiguous unique current_order range 49..61, got {unique_orders}")
+    if unique_orders != sorted(unique_orders):
+        raise ValueError(f"Unique SC order mismatch: {unique_flattened} vs sorted current_order expectation")
 
-    return chapter_files, flattened
+    return chapter_files, flattened, unique_flattened
 
 
 def main() -> int:
@@ -84,13 +90,15 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    chapter_files, flattened = verify(args.build_script.resolve())
+    chapter_files, flattened, unique_flattened = verify(args.build_script.resolve())
     print(f"Verified reader-facing order for {args.build_script}")
     print("Chapters:")
     for chapter in chapter_files:
         print(f"  - {chapter}")
     print("SC order:")
     print("  " + ", ".join(flattened))
+    print("Unique SC order:")
+    print("  " + ", ".join(unique_flattened))
     return 0
 
 

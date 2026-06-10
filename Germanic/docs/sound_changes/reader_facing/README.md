@@ -75,6 +75,18 @@ This writes:
 - `reader_facing_local_section_02.md`
 - `reader_facing_local_section_02.pdf`
 
+To extend the same ordered section through high-vowel apocope and the next late
+weak-tail batch, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_03_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_03.md`
+- `reader_facing_local_section_03.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
