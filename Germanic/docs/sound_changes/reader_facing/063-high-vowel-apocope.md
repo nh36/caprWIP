@@ -51,6 +51,15 @@ define OEHighVowelApocope [
 
 In prose, the rule deletes final \emph{*i}, \emph{*u}, and \emph{*ų} when the preceding structure is heavy enough, or when a trisyllabic form behaves as equivalent to a heavy environment. The longer code box makes visible how many separate environments the transducer has to distinguish in order to realize what the handbooks describe more compactly.
 
-Its chronology is explicit on both sides. If the rule is moved before [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut), PGmc \emph{*kūi} yields *cū* rather than expected OE *cȳ* ‘cow’, and PGmc \emph{*brūdiz} yields *brūd* rather than expected OE *brȳd* ‘bride’. If the rule is delayed until after later unstressed-long-vowel shortening, PGmc \emph{*fúrxtīnaz} yields *fyrht* rather than expected OE *fyrhte* ‘fright’. This gives the earlier boundary `SC055 < SC063` and the later boundary `SC063 < SC072`.
+Its chronology is explicit on both sides. If the rule is moved before
+[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*kūi} yields *cū* rather than
+expected OE *cȳ* ‘cow’, and PGmc \emph{*brūdiz} yields *brūd* rather than
+expected OE *brȳd* ‘bride’. If the rule is delayed until after
+SC072 OEUnstressedLongVowelShortening, PGmc \emph{*fúrxtīnaz} yields *fyrht*
+rather than expected OE *fyrhte* ‘fright’. This means that
+[SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), and that
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope) must come before
+SC072 OEUnstressedLongVowelShortening.
 
 That placement is historically apt. The rule must come late enough for umlautal effects to have already been created, but it is not the last weak-tail event in the language. Apocope removes a major set of final high vowels, yet later weak-tail cleanup still remains.

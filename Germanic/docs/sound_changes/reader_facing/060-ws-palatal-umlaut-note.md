@@ -38,12 +38,13 @@ define OEWsPalatalUmlaut [
 In prose, the rule reduces short diphthongs to \emph{*i} before the relevant \emph{*h}
 clusters.
 
-The crucial point is its earlier dependency. The rule must follow [the composite
-i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut), because if it is moved too early
+The crucial point is its earlier dependency. The rule must follow
+[SC055 OEIUmlaut](#rule-OEIUmlaut), because if it is moved too early
 the forms behind *miht* ‘might’ and *niht* ‘night’ remain at the overdeveloped
 stage *mieht* and *nieht* rather than expected OE *miht* and *niht*. No comparably sharp later lexical breakpoint emerges
 within the remainder of the section. The note therefore belongs here as a short
 afterpiece to the umlaut chapter, not as the start of a new larger unit.
 
-This gives the earlier boundary `SC055 < SC060`. No comparably sharp later
+This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
+[SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut). No comparably sharp later
 boundary is available.

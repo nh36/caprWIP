@@ -46,7 +46,8 @@ Even so, it matters because later derivations assume that the
 alternation is already in place. The clearest tested consequence appears in
 *reġnboga* ‘rainbow’. If the rule is moved before the earlier linking-vowel
 adjustment, the derivation yields *reġnfoga* ‘rainbow’ rather than expected OE
-*reġnboga* ‘rainbow’. This gives the earlier boundary `SC037 < SC049`.
+*reġnboga* ‘rainbow’. This shows that SC037 OECompoundLinkingSyncope must come
+before [SC049 PGmcBAllophony](#rule-PGmcBAllophony).
 No equally sharp later lexical breakpoint emerges within the tested sequence, so
 the rule has no explicit later boundary within the present sequence.
 
@@ -65,13 +66,13 @@ In plain language, the rule contracts the heavier \emph{*-CijV-*} sequence to
 stands apart from the earlier stop-fricative distribution.
 
 Its place in the sequence is clearer than that of the allophony rule. If the
-change is delayed until after [velar palatalization before front
-vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization), the cluster
+change is delayed until after [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), the cluster
 behind *streċċan* ‘stretch’ is affected too late. With PGmc
 \emph{*strákkijaną} in the wrong order, the derivation yields *strecċan*
 ‘stretch’. The expected Old English form is *streċċan* ‘stretch’. That is a real chronological
 consequence. No equally precise earlier lexical breakpoint fixes how far back
 the syncope must stand, so the historical picture remains asymmetric. The rule
 is secure as an immediate feeder into the palatalization zone, even though its
-earlier limit is less sharply bounded. The later boundary is therefore
-`SC050 < SC052`.
+earlier limit is less sharply bounded. The evidence therefore places
+[SC050 SieversLawSyncope](#rule-SieversLawSyncope) before
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization).

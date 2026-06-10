@@ -30,6 +30,8 @@ DEFAULT_SKIP = {
     "reader_facing_citation_check_01.md",
     "reader_facing_foma_width_check_01.md",
     "reader_facing_pdf_qc_02_report.md",
+    "reader_facing_crossref_check_01.md",
+    "reader_facing_crossref_qc_01_report.md",
 }
 
 

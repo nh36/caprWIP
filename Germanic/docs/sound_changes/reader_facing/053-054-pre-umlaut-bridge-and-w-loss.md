@@ -60,13 +60,15 @@ parallel account all point to the same historical consequence
 [@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. The glide has
 to disappear early enough for the preceding vowel to continue into the later
 fronted and lengthened outcome. If the glide survives too long, the derivation
-retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before SC020, the
-same witness yields *sǣw* ‘sea’ rather than expected OE *sǣ*. This gives the
-earlier boundary `SC020 < SC054`. If the rule is delayed until after SC063, the
-same witness again yields *sǣw* rather than expected *sǣ*. This gives the later
-boundary `SC054 < SC063`.
+retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before
+SC020 PGmcFinalZDeletion, the same witness yields *sǣw* ‘sea’ rather than
+expected OE *sǣ*. This shows that SC020 PGmcFinalZDeletion must come before
+[SC054 OEWLossBeforeI](#rule-OEWLossBeforeI). If the rule is delayed until after
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the same witness again yields *sǣw*
+rather than expected *sǣ*. This places [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI)
+before [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
 
 This is why the chapter belongs immediately before the broader umlautal
-developments discussed in [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+developments discussed in [SC055 OEIUmlaut](#rule-OEIUmlaut).
 The two rules together form a genuine bridge into that later vowel chapter, but
 only the second has a strong lexical and handbook footing of its own.

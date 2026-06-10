@@ -80,9 +80,8 @@ palatalized velars. It captures the environments behind forms such as *weccan*
 ‘wake’, *licgan* ‘lie’, and *lecgan* ‘lay’, where front vowels or `j` trigger
 the palatal outcome in the first place [@RingeTaylor2014, pp. 213--214,
 §6.4.1]. It is also the part of the process that prepares forms later assumed by
-[velar palatalization before front vowels
-(`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and, farther on, by
-[fronting under i-umlaut (`OEIUmlautFronting`)](#rule-OEIUmlautFronting).
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and, farther on, by
+[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting).
 
 Within the present implementation, this helper rule is not ordered separately
 from the broader velar-palatalization rule below. Its chronology is therefore
@@ -91,7 +90,9 @@ Sievers-law syncope, PGmc \emph{*strákkijaną} yields *strecċan* ‘stretch’
 than expected OE *streċċan* ‘stretch’. If it is delayed beyond the umlautal
 core, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen*
 ‘lungs’ rather than expected OE *cȳ* and *lungen*. The shared boundary pattern
-is therefore `SC050 < SC052 < SC055`.
+is therefore clear. [SC050 SieversLawSyncope](#rule-SieversLawSyncope) must
+come before [SC052 OEVelarPalatalizationKFront](#rule-OEVelarPalatalizationKFront), and the
+palatalization complex must in turn come before [SC055 OEIUmlautFronting](#rule-OEIUmlautFronting).
 
 ## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
@@ -119,9 +120,9 @@ developments.
 
 The rule belongs after the earlier syncope that prepares forms like *streċċan*
 ‘stretch’ and before the later umlautal rules that would otherwise
-over-palatalize forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’. See [fronting
-under i-umlaut (`OEIUmlautFronting`)](#rule-OEIUmlautFronting) and [the
-composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut) below.
+over-palatalize forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’. See
+[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting) and
+[SC055 OEIUmlaut](#rule-OEIUmlaut) below.
 
 If the rule is moved too early, before the syncope that prepares the consonant
 cluster, it breaks the derivation that should yield *streċċan* ‘stretch’. With
@@ -133,13 +134,15 @@ If it is moved too late, after i-umlaut, it over-palatalizes forms such as
 the expected form is *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen*
 ‘lungs’; the expected form is *lungen* ‘lungs’.
 
-These lexical failures give the earlier boundary `SC050 < SC052` and the
-later boundary `SC052 < SC055`.
+These lexical failures show that [SC050 SieversLawSyncope](#rule-SieversLawSyncope)
+must come before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
+and that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) must come
+before [SC055 OEIUmlaut](#rule-OEIUmlaut).
 
 Once the rule is in place, plain velars before front vowels and `j` no longer
 remain plain. They become the palatal outcomes presupposed by later
-developments, including the umlautal rules discussed in [fronting under
-i-umlaut (`OEIUmlautFronting`)](#rule-OEIUmlautFronting). That matters for
+developments, including the umlautal rules discussed in
+[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting). That matters for
 dictionary-like forms such as *cild* ‘child’ or *dæg* ‘day’ and for the broader
 relation between consonantal palatalization and later vowel-fronting processes
 [@Luick1914, p. 157, §168; @Campbell1959, p. 278, §440; @RingeTaylor2014,

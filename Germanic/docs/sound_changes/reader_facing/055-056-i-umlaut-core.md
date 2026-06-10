@@ -68,8 +68,7 @@ In prose, the rule fronts and raises the relevant simple vowels when a following
 
 Historically, this is the most central part of the umlautal development
 described by Luick, Campbell, Hogg, Ringe and Taylor, and Fulk. Within the
-present implementation it stands after [velar palatalization before front vowels
-(`OEVelarPalatalization`)](#rule-OEVelarPalatalization) and before the narrower
+present implementation it stands after [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and before the narrower
 West-Saxon palatal-diphthongization rule discussed below.
 
 The handbooks describe the same conditioning environment in different ways but
@@ -81,17 +80,18 @@ classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
 §§190--191].
 
 The same ordering logic that governs the umlaut complex governs this component.
-If the umlautal rule set is moved before SC052, PGmc \emph{*kūi} yields *ċȳ*
+If the umlautal rule set is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc \emph{*kūi} yields *ċȳ*
 ‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen*
 ‘lungs’ rather than expected OE *lungen*. At the other edge, the later
 West-Saxon diphthongization must follow the umlautal rule set: if that later
 rule is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than
 expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than
-expected *sċēaþ*. This gives the
-shared boundary pattern `SC052 < SC055 < SC056`.
+expected *sċēaþ*. This shows that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
+must come before [SC055 OEIUmlautFronting](#rule-OEIUmlautFronting), and that
+[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting) must come before
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
 
-As a component rule, it shares the chronology of [the composite i-umlaut rule
-(`OEIUmlaut`)](#rule-OEIUmlaut).
+As a component rule, it shares the chronology of [SC055 OEIUmlaut](#rule-OEIUmlaut).
 
 ## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
@@ -107,15 +107,22 @@ In plain language, this rule takes the fronted low vowel created by the earlier
 fronting rule and raises it further where the same umlaut trigger still holds.
 
 Historically, this belongs inside the same broad i-umlaut development. It is
-part of the same chronological development and shares the evidence base of [the
-composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+part of the same chronological development and shares the evidence base of
+[SC055 OEIUmlaut](#rule-OEIUmlaut).
 
-Like the fronting component, this raising rule belongs inside `SC052 < SC055 <
-SC056`. If the umlaut complex is moved before SC052, \emph{*kūi} yields *ċȳ*
+Like the fronting component, this raising rule falls between
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). If the umlaut complex is moved before
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), \emph{*kūi} yields *ċȳ*
 instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
 expected *lungen*. If the later West-Saxon diphthongization is moved too early,
 \emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
 yields *sċǣþ* rather than expected *sċēaþ*.
+
+These outcomes show that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
+must come before [SC055 OEIUmlautRaising](#rule-OEIUmlautRaising), and that
+[SC055 OEIUmlautRaising](#rule-OEIUmlautRaising) must come before
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
 
 This narrower subrule matters because the sources do not describe umlaut as
 simple fronting alone. Campbell explicitly notes that the low front vowel
@@ -147,9 +154,8 @@ the vowel change is not confined to simple vowels.
 
 This matters historically because the handbooks describe i-umlaut as a
 system-wide assimilatory development. The rule therefore stands inside the same
-chronological bracket as [fronting under i-umlaut
-(`OEIUmlautFronting`)](#rule-OEIUmlautFronting) and [raising under i-umlaut
-(`OEIUmlautRaising`)](#rule-OEIUmlautRaising), even though its outputs are
+chronological bracket as [SC055 OEIUmlautFronting](#rule-OEIUmlautFronting) and
+[SC055 OEIUmlautRaising](#rule-OEIUmlautRaising), even though its outputs are
 shaped differently.
 
 The relevant examples are the recurring West-Saxon `ie` forms cited in the
@@ -161,11 +167,17 @@ visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
 
 Chronologically, this component also shares the same evidence as the umlaut
-complex as a whole. If the umlaut complex is moved before SC052, it
+complex as a whole. If the umlaut complex is moved before
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), it
 over-palatalizes
 \emph{*kūi} and \emph{*lúnganjō}; too-early West-Saxon diphthongization yields
 *ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. The rule therefore
-belongs within `SC052 < SC055 < SC056`.
+belongs between [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). This places
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) before
+[SC055 OEIUmlautDiphthong](#rule-OEIUmlautDiphthong), and it places
+[SC055 OEIUmlautDiphthong](#rule-OEIUmlautDiphthong) before
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
 
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
@@ -181,8 +193,8 @@ define OEIUmlaut OEIUmlautFronting
 In prose, this says that the implementation treats the umlaut as a sequence of
 fronting, raising, and diphthongal adjustments composed in order.
 
-Chronologically, the composite rule must follow [velar palatalization before
-front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization). If it is
+Chronologically, the composite rule must follow
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization). If it is
 moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
 over-palatalized. PGmc \emph{*kūi} yields *ċȳ* ‘cows’; the expected form is
 *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’; the expected form
@@ -191,8 +203,9 @@ is *lungen* ‘lungs’.
 The same local network gives the later boundary. If West-Saxon palatal
 diphthongization is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’
 rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’
-rather than expected *sċēaþ*. The composite umlaut rule therefore occupies `SC052 <
-SC055 < SC056`.
+rather than expected *sċēaþ*. The composite umlaut rule therefore must apply
+after [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and before
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
 
 Those failures show that the broad umlautal rule needs an earlier terminus post
 quem in the palatalization sequence, even though it remains the main vowel
@@ -233,14 +246,15 @@ outcome [@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg’s *giefan* ‘give’ 
 palatal-consonant-triggered diphthongization from the broad front-mutation
 process [@Fulk2018, p. 74, §4.13].
 
-Its place is later than [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
+Its place is later than [SC055 OEIUmlaut](#rule-OEIUmlaut).
 If this rule is moved too early, the later ordering is constrained by forms such
 as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc \emph{*géftiz} then yields
 *ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc \emph{*skáiθiz}
 yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
 
-This gives the earlier boundary `SC055 < SC056`. No comparably sharp later
-boundary is available.
+This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). No
+comparably sharp later boundary is available.
 
 No tested lexical item provides a comparably precise later terminus ante quem.
 The available evidence therefore establishes the rule’s relation to the earlier

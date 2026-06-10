@@ -5,6 +5,8 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
+from reader_facing_check_utils import normalize_whitespace
+
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT_PATH = ROOT / "reader_facing_chronology_evidence_check_01.md"
@@ -28,17 +30,31 @@ DEFAULT_SKIP = {
     "reader_facing_citation_check_01.md",
     "reader_facing_foma_width_check_01.md",
     "reader_facing_pdf_qc_02_report.md",
+    "reader_facing_crossref_check_01.md",
+    "reader_facing_crossref_qc_01_report.md",
 }
 
 RULE_HEADING_RE = re.compile(r"^##\s+(SC\d{3}\.[^\n]+)$", re.M)
 CODE_BLOCK_RE = re.compile(r"(?ms)^```.*?^```[ \t]*\n?")
-RELATION_RE = re.compile(r"SC\d{3}\s*<\s*SC\d{3}")
+SYMBOLIC_RELATION_RE = re.compile(r"SC\d{3}\s*<\s*SC\d{3}")
+SC_RULE_REF_RE = re.compile(r"SC\d{3}\s+[A-Z][A-Za-z0-9]+")
 
 MOVE_PATTERNS = [
     re.compile(r"if [^.]*moved", re.I),
     re.compile(r"when [^.]*moved", re.I),
     re.compile(r"if [^.]*delayed", re.I),
     re.compile(r"if [^.]*applied", re.I),
+]
+BOUNDARY_PATTERNS = [
+    re.compile(r"must\s+(?:\w+\s+){0,4}come\s+before", re.I),
+    re.compile(r"comes\s+before", re.I),
+    re.compile(r"must\s+apply\s+before", re.I),
+    re.compile(r"places?[\s\S]{0,160}\bbefore\b", re.I),
+    re.compile(r"must\s+follow", re.I),
+    re.compile(r"must\s+(?:\w+\s+){0,4}come\s+after", re.I),
+    re.compile(r"comes\s+after", re.I),
+    re.compile(r"must\s+apply\s+after", re.I),
+    re.compile(r"places?[\s\S]{0,160}\bafter\b", re.I),
 ]
 OUTPUT_PATTERNS = [
     re.compile(r"\byields?\b", re.I),
@@ -64,8 +80,10 @@ class SectionCheck:
     has_move: bool
     has_expected: bool
     has_output: bool
+    has_sc_rule_ref: bool
     has_boundary: bool
     has_limitation: bool
+    has_symbolic_relation: bool
     warnings: list[str]
 
 
@@ -94,10 +112,14 @@ def check_section(file_name: str, heading: str, body: str) -> SectionCheck:
     has_move = any(pattern.search(prose) for pattern in MOVE_PATTERNS)
     has_expected = "expected" in prose.lower()
     has_output = any(pattern.search(prose) for pattern in OUTPUT_PATTERNS)
-    has_boundary = "boundary" in prose.lower() or bool(RELATION_RE.search(prose))
+    has_sc_rule_ref = bool(SC_RULE_REF_RE.search(prose))
+    has_boundary = any(pattern.search(prose) for pattern in BOUNDARY_PATTERNS)
     has_limitation = any(pattern.search(prose) for pattern in LIMITATION_PATTERNS)
+    has_symbolic_relation = bool(SYMBOLIC_RELATION_RE.search(prose))
 
     warnings: list[str] = []
+    if has_symbolic_relation:
+        warnings.append("symbolic chronology notation found")
     if not has_move:
         warnings.append("missing move-condition wording")
     if not has_output and not has_limitation:
@@ -105,7 +127,9 @@ def check_section(file_name: str, heading: str, body: str) -> SectionCheck:
     if not has_expected and not has_limitation:
         warnings.append("missing expected-form wording")
     if not has_boundary and not has_limitation:
-        warnings.append("missing explicit boundary conclusion")
+        warnings.append("missing explicit verbal boundary conclusion")
+    if has_boundary and not has_sc_rule_ref and not has_limitation:
+        warnings.append("missing SC-plus-rule reference in chronology prose")
 
     return SectionCheck(
         file_name=file_name,
@@ -113,8 +137,10 @@ def check_section(file_name: str, heading: str, body: str) -> SectionCheck:
         has_move=has_move,
         has_expected=has_expected,
         has_output=has_output,
+        has_sc_rule_ref=has_sc_rule_ref,
         has_boundary=has_boundary,
         has_limitation=has_limitation,
+        has_symbolic_relation=has_symbolic_relation,
         warnings=warnings,
     )
 
@@ -131,8 +157,8 @@ def render_report(results: list[SectionCheck]) -> str:
         f"- Sections checked: {len(results)}.",
         f"- Sections with warnings: {warning_count}.",
         "",
-        "| File | Rule section | Move wording | Expected form | Wrong output/result | Boundary wording | Limitation wording | Warnings |",
-        "| --- | --- | --- | --- | --- | --- | --- | --- |",
+        "| File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |",
+        "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ]
 
     for result in results:
@@ -145,9 +171,11 @@ def render_report(results: list[SectionCheck]) -> str:
                     "yes" if result.has_move else "no",
                     "yes" if result.has_expected else "no",
                     "yes" if result.has_output else "no",
+                    "yes" if result.has_sc_rule_ref else "no",
                     "yes" if result.has_boundary else "no",
                     "yes" if result.has_limitation else "no",
-                    "; ".join(result.warnings) if result.warnings else "—",
+                    "yes" if result.has_symbolic_relation else "no",
+                    normalize_whitespace("; ".join(result.warnings)) if result.warnings else "—",
                 ]
             )
             + " |"

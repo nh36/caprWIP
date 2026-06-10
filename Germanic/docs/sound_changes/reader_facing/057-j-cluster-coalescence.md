@@ -33,12 +33,13 @@ In prose, the rule coalesces \emph{*gj} and \emph{*kj} into the palatal outcomes
 surface in forms such as *bīeġan* ‘bend’ and *sēċan* ‘seek’.
 
 Its earlier dependency is clearer than its later limit. If the rule is moved
-before [velar palatalization before front vowels (`OEVelarPalatalization`)](#rule-OEVelarPalatalization),
+before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization),
 the developments behind *bīeġan* ‘bend’ and *sēċan* ‘seek’ are lost. Related forms such as *fylġan* ‘follow’,
 *heċġ* ‘hedge’, and *sengan* ‘singe’ fail in the same broader palatalization
 zone. PGmc `*báugijaną` yields *bēaġan* ‘bend’ rather than expected OE *bīeġan*,
 and PGmc `*sōkijaną` yields *sōċan* ‘seek’ rather than expected *sēċan*. This
-gives the earlier boundary `SC052 < SC057`. No comparably sharp later lexical
+shows that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) must come
+before [SC057 OEJClusterCoalescence](#rule-OEJClusterCoalescence). No comparably sharp later lexical
 breakpoint emerges within the remaining sequence, so the chronology remains
 short and one-sided.
 

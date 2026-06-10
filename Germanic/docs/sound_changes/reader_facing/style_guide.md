@@ -19,8 +19,23 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 4. Each code box contains one `define`.
 5. Each rule gets a prose equivalent.
 6. Rule sections should be labelled for cross-reference.
-7. Chronology should refer to rule titles and cross-references, not `SC###`.
+7. Reader-facing sound-change cross-references should normally show both SC
+   number and FST rule name.
 8. Internal report numbers and file paths stay out of the chapter body.
+
+## Cross-references
+
+1. Reader-facing cross-references to sound changes must normally show both SC
+   number and FST rule name.
+2. For rules already present in the current assembled PDF, use a Markdown link
+   to the rule anchor, for example `[SC055 OEIUmlaut](#rule-OEIUmlaut)`.
+3. For rules outside the current assembled PDF, use a consistent plain-text
+   reference with both SC number and FST rule name, and do not create a broken
+   internal link.
+4. Avoid bare `SC###` references in chapter prose unless they are part of a full
+   SC-number-plus-rule-name reference.
+5. Avoid bare FST rule-name references in chapter prose unless they are part of a
+   full SC-number-plus-rule-name reference.
 
 ## Tone
 
@@ -80,18 +95,21 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 
 ## Chronology
 
-1. Explain chronology with words and wrong outputs, not bare internal
-   identifiers.
+1. Explain chronology with words such as “before” and “after,” not symbolic
+   `SC### < SC###` notation.
 2. Say what breaks when the change is moved too early or too late.
 3. Distinguish real lexical breakpoints from search-boundary limits.
-4. Present chronology evidence through lexical consequences, not through file
+4. When chronology refers to another sound change, use the SC-number-plus-rule
+   format, with a working internal link for current-section targets and plain
+   text for outside-section targets.
+5. Present chronology evidence through lexical consequences, not through file
    references or test-harness language.
 
 ## Internal material
 
 1. Internal file paths do not belong in the reader-facing chapters.
-2. Internal `SC###` labels should be confined to source notes or maintainer
-   metadata.
+2. Do not use bare `SC###` labels in chapter prose; when they are needed, pair
+   them with the rule name.
 3. Reports, dossiers, chronology cards, and debug files are evidence tools, not
    the visible subject of the prose.
 4. Do not describe whether a sound change “deserves” a chapter or section.

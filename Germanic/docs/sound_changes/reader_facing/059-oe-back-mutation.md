@@ -45,8 +45,10 @@ the rule is pushed too far to the right, \emph{*wébaną} yields *weofan*
 That later edge is real, but it points beyond the present stretch of the sequence into the
 later weak-tail reductions, so here it should remain only a forward reference.
 
-These lexical failures give the earlier boundary `SC048 < SC059` and the later
-boundary `SC059 < SC078`.
+These lexical failures show that SC048 OESecondaryNasalization must come before
+[SC059 OEBackMutation](#rule-OEBackMutation) and that
+[SC059 OEBackMutation](#rule-OEBackMutation) must come before
+SC078 OEWeakTailReduction.
 
 This is why the change can serve as the center here without implying that the
 following weak-tail notes belong to the same historical law. The rule

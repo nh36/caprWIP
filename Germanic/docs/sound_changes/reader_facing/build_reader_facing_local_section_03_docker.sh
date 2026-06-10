@@ -17,6 +17,8 @@ python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_citations.
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_foma_width.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_section_order.py \
   --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_03_docker.sh
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_crossrefs.py \
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_03_docker.sh
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_chronology_evidence.py
 
 python3 - <<'PY'
@@ -84,7 +86,10 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "
     set -e
     apk add --no-cache ${font_package} >/dev/null
-    kpsewhich fvextra.sty >/dev/null 2>&1 || tlmgr install fvextra >/dev/null
+    kpsewhich fvextra.sty >/dev/null 2>&1 || (
+      tlmgr option repository https://mirror.ctan.org/systems/texlive/tlnet >/dev/null &&
+      tlmgr install fvextra >/dev/null
+    )
     pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_03.md \
       --standalone \
       --from=markdown+raw_tex+citations \

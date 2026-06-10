@@ -20,7 +20,15 @@ define OELAdjacentSyncope [
 
 In prose, it deletes medial \emph{*i} before \emph{*l}, creating forms such as *netle* ‘nettle’ and *spinl* ‘spindle’.
 
-Its chronology is explicit on both sides. If the rule is moved before [the composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut), PGmc \emph{*nátilōn} yields *nætle* rather than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl* rather than expected *spinl* ‘spindle’. If the rule is delayed until after [preconsonantal degemination (`OEPreconsonantalDegemination`)](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields *spinnl* rather than expected *spinl*. This gives the earlier boundary `SC055 < SC066` and the later boundary `SC066 < SC068`.
+Its chronology is explicit on both sides. If the rule is moved before
+[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*nátilōn} yields *nætle* rather
+than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl*
+rather than expected *spinl* ‘spindle’. If the rule is delayed until after
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields *spinnl* rather than expected *spinl*. This shows that
+[SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), and that
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination).
 
 The rule is therefore stronger than a mere descriptive convenience. It has concrete lexical witnesses, and those witnesses show that the syncope must stand after umlaut but before later cluster cleanup.
 
@@ -50,6 +58,12 @@ define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantal
 
 In prose, it simplifies doubled \emph{*tt} or \emph{*nn} before a following sonorant. The historical logic is straightforward enough. Once syncope has created a cluster such as the one behind *spinl* ‘spindle’, the doubled consonant does not remain [@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
-Its positive evidence is one-sided but exact. If the rule is moved before [L-adjacent syncope (`OELAdjacentSyncope`)](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō} yields *spinnl* rather than expected OE *spinl* ‘spindle’. No later real break is currently available before the current search boundary. This gives the earlier boundary `SC066 < SC068`, while the later side remains one-sided.
+Its positive evidence is one-sided but exact. If the rule is moved before
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō}
+yields *spinnl* rather than expected OE *spinl* ‘spindle’. No later real break
+is currently available before the current search boundary. This places
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) before
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination),
+while the later side remains one-sided.
 
 That one-sided profile is still meaningful. The rule is clearly later than the syncope that creates the offending cluster, but the current evidence does not yet force a sharper later boundary beyond that.
