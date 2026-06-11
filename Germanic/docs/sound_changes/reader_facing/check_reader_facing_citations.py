@@ -27,6 +27,8 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_03_report.md",
     "reader_facing_local_section_04.md",
     "reader_facing_local_section_04_report.md",
+    "reader_facing_local_section_05.md",
+    "reader_facing_local_section_05_report.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_check_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",

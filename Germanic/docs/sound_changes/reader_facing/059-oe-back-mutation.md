@@ -48,7 +48,7 @@ later weak-tail reductions, so here it should remain only a forward reference.
 These lexical failures show that SC048 OESecondaryNasalization must come before
 [SC059 OEBackMutation](#rule-OEBackMutation) and that
 [SC059 OEBackMutation](#rule-OEBackMutation) must come before
-SC078 OEWeakTailReduction.
+[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction).
 
 This is why the change can serve as the center here without implying that the
 following weak-tail notes belong to the same historical law. The rule

@@ -99,6 +99,18 @@ This writes:
 - `reader_facing_local_section_04.md`
 - `reader_facing_local_section_04.pdf`
 
+To extend the same ordered section through medial unstressed-i lowering,
+prefix-vowel reduction, and weak-tail reduction, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_05_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_05.md`
+- `reader_facing_local_section_05.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
