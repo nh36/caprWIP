@@ -10,8 +10,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
 | --- | --- | --- | --- | --- |
-| 049-050-b-allophony-and-sievers-law-syncope.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 31 | 38 | no |
-| 049-050-b-allophony-and-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 58 | 72 | no |
+| 049-050-b-allophony-and-sievers-law-syncope.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 22 | 38 | no |
+| 049-050-b-allophony-and-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 63 | 72 | no |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | 30 | 77 | no |
 | 052-velar-palatalization.md | SC052. Palatalization of \emph{*k} before front vowels and \emph{*j} (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront} | 59 | 58 | no |
 | 052-velar-palatalization.md | SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | 102 | 74 | no |

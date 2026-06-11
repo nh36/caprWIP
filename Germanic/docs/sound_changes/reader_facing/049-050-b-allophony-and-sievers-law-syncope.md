@@ -1,10 +1,8 @@
 # B allophony and Sievers-law syncope
 
-## Historical discussion
+## Historical discussion of B allophony
 
-The two changes gathered here belong to different historical categories, and
-they sit next to each other in the sequence that leads into Old English
-palatalization. The first is the positional alternation of Germanic \emph{*b}. Hogg
+The first change is the positional alternation of Germanic \emph{*b}. Hogg
 states the Old English distribution clearly: /b/ is a stop initially, after
 nasals, and in gemination, while the same segment is otherwise realized as a
 voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
@@ -13,16 +11,9 @@ segment whose stop and fricative values depend on position
 [@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
 fricative pattern in Old English [@Luick1914, p. 107].
 
-Sievers' Law belongs to a different part of the historical discussion. It is a
-prosodic and morphological adjustment in heavy stems, not a distributional
-allophone of a stop consonant. Adamczyk treats the Old English reflexes of the
-law as real historical material in weak verbs and related formations
-[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through familiar
-forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
-[@Fulk2018, p. 127, §6.15]. The point of keeping the two changes together is
-therefore practical and chronological. The behavior of Germanic \emph{*b} still
-needs a brief place in the book, and Sievers-law syncope is the last narrow feeder
-before the palatalization sequence begins in earnest.
+This is a narrow consonantal distribution with limited independent scope, but it
+matters because later derivations already assume that the alternation is in
+place.
 
 ## SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony}
 
@@ -50,6 +41,20 @@ adjustment, the derivation yields *reġnfoga* ‘rainbow’ rather than expected
 before [SC049 PGmcBAllophony](#rule-PGmcBAllophony).
 No equally sharp later lexical breakpoint emerges within the tested sequence, so
 the rule has no explicit later boundary within the present sequence.
+
+## Historical discussion of Sievers-law syncope
+
+Sievers' Law belongs to a different historical problem. It is a prosodic and
+morphological adjustment in heavy stems, not a distributional allophone of a
+stop consonant. Adamczyk treats the Old English reflexes of the law as real
+historical material in weak verbs and related formations
+[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through
+familiar forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
+[@Fulk2018, p. 127, §6.15].
+
+That makes the change historically narrower but chronologically important. It is
+the last small feeder before the palatalization sequence begins in earnest, and
+its place in the cascade is clearer than that of the preceding allophony rule.
 
 ## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
 

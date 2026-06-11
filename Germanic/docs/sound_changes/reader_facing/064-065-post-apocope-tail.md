@@ -1,6 +1,6 @@
-# The post-apocope tail
+# Post-apocope \emph{*n}-loss and medial syncope
 
-## Historical discussion
+## Historical discussion of post-apocope \emph{*n}-loss and medial syncope
 
 After high-vowel apocope the weak tail is still not entirely settled. Hogg, Ringe and Taylor, and Fulk all describe a late region in which further medial reduction and cluster pressure remain active, even though the evidence is much less even than it was for the main apocope rule [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4; @Fulk2018, p. 91, §5.6]. The inherited \emph{*furht-} family adds one especially narrow witness of its own, because it shows that a single surviving nasal can still decide whether the weak-tail output is right or wrong [@Kroonen2013, p. 201].
 

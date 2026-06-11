@@ -1,8 +1,8 @@
 # Late syncope and degemination
 
-## Historical discussion
+## Historical discussion of late syncope and degemination
 
-Once later medial syncope begins to bite, the language inherits new consonant clusters that do not always remain stable. Hogg and Ringe and Taylor both describe this connection between vowel loss and later consonant cleanup, while Brunner's discussion of *netle* ‘nettle’ beside later *netele* keeps the syncope evidence tied to a concrete lexical type [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2; @SieversBrunner1965, pp. 144--145, §§158--159]. Fulk is especially useful for the larger timing, because he places this syncope after i-umlaut [@Fulk2018, p. 91, §5.6].
+Once later medial syncope begins to bite, the language inherits new consonant clusters that do not always remain stable. Hogg and Ringe and Taylor both describe this connection between vowel loss and later consonant simplification, while Brunner's discussion of *netle* ‘nettle’ beside later *netele* keeps the syncope evidence tied to a concrete lexical type [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2; @SieversBrunner1965, pp. 144--145, §§158--159]. Fulk is especially useful for the larger timing, because he places this syncope after i-umlaut [@Fulk2018, p. 91, §5.6].
 
 The resulting chapter has an uneven center of gravity. Syncope itself is well motivated, one downstream degemination rule has a clear lexical breakpoint, and the dental assimilation step between them is plausible without yet being independently well anchored. That imbalance is part of the point. The sequence shows how the transducer can make a narrow chain of consequences explicit without pretending that every member has the same evidential weight.
 
@@ -30,7 +30,7 @@ rather than expected *spinl* ‘spindle’. If the rule is delayed until after
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
 [SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination).
 
-The rule is therefore stronger than a mere descriptive convenience. It has concrete lexical witnesses, and those witnesses show that the syncope must stand after umlaut but before later cluster cleanup.
+The rule is therefore stronger than a mere descriptive convenience. It has concrete lexical witnesses, and those witnesses show that the syncope must stand after umlaut but before later cluster simplification.
 
 ## SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation}
 
@@ -42,15 +42,15 @@ define OEDentalAssimilation [
 ];
 ```
 
-In prose, it removes \emph{*θ} after \emph{*t} when syncope has created an over-heavy dental cluster. That kind of cleanup is historically plausible as part of the same late sequence that follows syncope [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
+In prose, it removes \emph{*θ} after \emph{*t} when syncope has created an over-heavy dental cluster. That kind of cluster simplification is historically plausible as part of the same late sequence that follows syncope [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
 The chronology tests, however, do not yet isolate a positive earlier boundary or a positive later boundary for this rule. If the rule is moved earlier, the search reaches bundled earlier material without a real break. If it is delayed, the search likewise reaches the current search boundary without a real break. No exact wrong early or late output is currently available, so the section remains boundary-limited.
 
-That makes the rule best read as a narrow bridge inside the late syncope sequence. It is useful in the derivation, but the present evidence does not justify treating it as a stronger chronology anchor than it is.
+That makes the rule best read as a narrow intermediate step inside the late syncope sequence. It is useful in the derivation, but the present evidence does not justify treating it as a stronger chronology anchor than it is.
 
 ## SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
 
-The final cleanup rule is written as one composed definition.
+The final degemination rule is written as one composed definition.
 
 ```foma
 define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN;

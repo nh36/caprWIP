@@ -62,4 +62,4 @@ rather than expected OE *fyrhte* ‘fright’. This means that
 [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope) must come before
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
 
-That placement is historically apt. The rule must come late enough for umlautal effects to have already been created, but it is not the last weak-tail event in the language. Apocope removes a major set of final high vowels, yet later weak-tail cleanup still remains.
+That placement is historically apt. The rule must come late enough for umlautal effects to have already been created, but it is not the last weak-tail event in the language. Apocope removes a major set of final high vowels, yet later weak-tail reductions still remain.

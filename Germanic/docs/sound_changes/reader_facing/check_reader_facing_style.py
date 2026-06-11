@@ -33,6 +33,7 @@ DEFAULT_SKIP = {
     "reader_facing_crossref_check_01.md",
     "reader_facing_crossref_qc_01_report.md",
     "reader_facing_generated_prose_check_01.md",
+    "reader_facing_grouping_language_qc_01_report.md",
 }
 
 NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
@@ -50,6 +51,7 @@ NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
 
 META_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("meta:reader-facing stance", re.compile(r"reader-facing stance", re.I)),
+    ("meta:bridge", re.compile(r"\bbridge\b", re.I)),
     ("meta:chapter-sized", re.compile(r"chapter-sized", re.I)),
     ("meta:deserve section", re.compile(r"deserve(?:s|d)?[^.\n]{0,40}\bsection\b", re.I)),
     ("meta:this section should", re.compile(r"\bthis section should\b", re.I)),
@@ -81,6 +83,7 @@ META_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("meta:far right", re.compile(r"\bfar right\b", re.I)),
     ("meta:far left", re.compile(r"\bfar left\b", re.I)),
     ("meta:chapter center", re.compile(r"\bchapter center\b", re.I)),
+    ("meta:cleanup", re.compile(r"\bcleanup(?: rule)?\b", re.I)),
     ("meta:corridor", re.compile(r"\bcorridor\b", re.I)),
     ("meta:file path", re.compile(r"Germanic/docs/")),
 ]
@@ -163,6 +166,34 @@ def define_warnings(path: Path) -> list[tuple[Path, int, str, str]]:
     return warnings
 
 
+def grouped_history_warnings(path: Path) -> list[tuple[Path, int, str, str]]:
+    warnings: list[tuple[Path, int, str, str]] = []
+    lines = path.read_text(encoding="utf-8").splitlines()
+    unique_sc_numbers = {
+        match.group(1)
+        for line in lines
+        if (match := re.match(r"##\s+SC(\d{3})\.\s", line.strip()))
+    }
+    if len(unique_sc_numbers) <= 1:
+        return warnings
+    generic_lines = [idx for idx, line in enumerate(lines, start=1) if line.strip() == "## Historical discussion"]
+    explicit_lines = [
+        idx
+        for idx, line in enumerate(lines, start=1)
+        if re.match(r"## Historical discussion of .+", line.strip())
+    ]
+    if len(generic_lines) == 1 and not explicit_lines:
+        warnings.append(
+            (
+                path,
+                generic_lines[0],
+                "grouped:single-generic-historical-discussion",
+                lines[generic_lines[0] - 1],
+            )
+        )
+    return warnings
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check reader-facing sound-change prose for style and formatting patterns.")
     parser.add_argument("--strict", action="store_true", help="Exit non-zero if warnings are found.")
@@ -173,6 +204,7 @@ def main() -> int:
 
     for path in iter_target_files(args.all):
         warnings.extend(define_warnings(path))
+        warnings.extend(grouped_history_warnings(path))
         inside_fence = False
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
             stripped = line.strip()
@@ -183,8 +215,10 @@ def main() -> int:
                 continue
             if "—" in line and not is_ignorable_line(line):
                 warnings.append((path, line_number, "emdash", line.rstrip()))
-            if stripped.startswith("## ") and stripped != "## Historical discussion":
-                if not re.match(r"## SC\d{3}\.\s", stripped):
+            if stripped.startswith("## "):
+                if re.match(r"## Historical discussion(?: of .+)?$", stripped):
+                    pass
+                elif not re.match(r"## SC\d{3}\.\s", stripped):
                     warnings.append((path, line_number, "heading:missing-sc-number", line.rstrip()))
             if colon_list_match(line):
                 warnings.append((path, line_number, "colon-list", line.rstrip()))
@@ -207,6 +241,8 @@ def main() -> int:
                     warnings.append((path, line_number, label, line.rstrip()))
             for label, pattern in META_PATTERNS:
                 if pattern.search(line):
+                    if label == "meta:bridge" and re.search(r"[‘']bridge[’']", line):
+                        continue
                     warnings.append((path, line_number, label, line.rstrip()))
 
     if warnings:

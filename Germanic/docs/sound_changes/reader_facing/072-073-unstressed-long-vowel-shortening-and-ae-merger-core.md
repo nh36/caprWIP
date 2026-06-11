@@ -1,10 +1,10 @@
 # Unstressed long-vowel shortening and ae-merger
 
-## Historical discussion
+## Historical discussion of unstressed long-vowel shortening and ae-merger
 
 This pair is the strongest internal seam in the late weak tail. Campbell's discussion of shortening of unaccented long vowels gives the classical background, while Ringe and Taylor place shortening of unstressed long vowels among the last prehistoric Old English changes and then carry the story forward into the immediately following developments [@Campbell1959, p. 148, §355; @Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3; @Fulk2018, pp. 90--96, §§5.6--5.7]. What the finite-state derivation adds is a very sharp distinction between the shortening itself and the later merger of unstressed \emph{*æ} with \emph{*e}.
 
-That is why this chapter can be more substantial than the opening note or the earlier bridge. [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) and [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) have a real reciprocal relation in the cards, and the chapter can show both sides of it directly. The pair also keeps its outward relations in view: [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) remains the earlier prerequisite for shortening, while SC085 OEHLoss remains the later outward handoff from the merger.
+That is why this chapter can be more substantial than the opening note or the earlier pair. [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) and [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) have a real reciprocal relation in the cards, and the chapter can show both sides of it directly. The pair also keeps its outward relations in view: [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) remains the earlier prerequisite for shortening, while SC085 OEHLoss remains the later outward handoff from the merger.
 
 ## SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening}
 

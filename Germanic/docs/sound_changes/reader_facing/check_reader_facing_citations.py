@@ -36,6 +36,7 @@ DEFAULT_SKIP = {
     "reader_facing_crossref_check_01.md",
     "reader_facing_crossref_qc_01_report.md",
     "reader_facing_generated_prose_check_01.md",
+    "reader_facing_grouping_language_qc_01_report.md",
 }
 
 CITATION_BLOCK_RE = re.compile(r"\[@([^\]]+)\]", re.S)

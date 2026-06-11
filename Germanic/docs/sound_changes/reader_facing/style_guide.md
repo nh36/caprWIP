@@ -15,15 +15,22 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 ## Rule-level architecture
 
 1. The FOMA rule is the basic reader-facing unit.
-2. Grouped introductions are allowed, but individual rule discussions must be
-   separate.
-3. Each FOMA rule gets one code box.
-4. Each code box contains one `define`.
-5. Each rule gets a prose equivalent.
-6. Rule sections should be labelled for cross-reference.
-7. Reader-facing sound-change cross-references should normally show both SC
+2. Grouped chapters may share one historical discussion only when the prose
+   explains the members' close historical, phonological, morphological, or
+   derivational interaction.
+3. If multiple sound changes are merely adjacent in the cascade, each should
+   have its own historical discussion and rule-level treatment.
+4. When a grouped chapter keeps one shared historical discussion, the heading
+   should say explicitly what the shared discussion covers; avoid a generic
+   `## Historical discussion`.
+5. Individual rule discussions must still be separate.
+6. Each FOMA rule gets one code box.
+7. Each code box contains one `define`.
+8. Each rule gets a prose equivalent.
+9. Rule sections should be labelled for cross-reference.
+10. Reader-facing sound-change cross-references should normally show both SC
    number and FST rule name.
-8. Internal report numbers and file paths stay out of the chapter body.
+11. Internal report numbers and file paths stay out of the chapter body.
 
 ## Cross-references
 
@@ -147,7 +154,8 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 13. Avoid “left edge,” “right edge,” “left-hand,” and “right-hand” in
     chronology prose.
 14. In block quotations, keep the citation inside the quoted block.
-15. Do not use “corridor” for sound-change groupings or historical developments.
+15. Do not use internal planning labels such as “bridge,” “corridor,” or
+    “cleanup rule” for sound-change groupings or historical developments.
 
 ## Audit command
 
