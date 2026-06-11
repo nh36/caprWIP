@@ -4,8 +4,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 23.
-- Blocks over the conservative 90-character threshold: 4.
+- Foma blocks checked: 28.
+- Blocks over the conservative 90-character threshold: 6.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -33,6 +33,11 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 066-068-syncope-and-degemination-corridor.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 13 | 62 | no |
 | 066-068-syncope-and-degemination-corridor.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | 39 | 29 | no |
 | 066-068-syncope-and-degemination-corridor.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | 55 | 88 | no |
+| 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | 13 | 107 | yes |
+| 070-071-early-unstressed-fronting-shortening-bridge.md | SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly} | 13 | 55 | no |
+| 070-071-early-unstressed-fronting-shortening-bridge.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | 27 | 140 | yes |
+| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | 13 | 71 | no |
+| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | 33 | 49 | no |
 
 ## Lines that would have overflowed under the old rendering
 
@@ -73,6 +78,14 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 ### 064-065-post-apocope-tail.md:35 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 - `93` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]`
+
+### 069-early-o-shortening-context-note.md:13 — SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening}
+
+- `107` chars — `    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal`
+
+### 070-071-early-unstressed-fronting-shortening-bridge.md:27 — SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening}
+
+- `140` chars — `    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*`
 
 ## Interpretation
 

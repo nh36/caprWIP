@@ -8,6 +8,7 @@ from pathlib import Path
 
 from reader_facing_check_utils import (
     DEFAULT_BUILD_SCRIPT,
+    build_all_source_rule_heading_map,
     build_rule_heading_map,
     iter_build_chapter_paths,
     line_number,
@@ -49,6 +50,7 @@ class ScanCounts:
 def scan_file(
     path: Path,
     current_rule_map: dict[str, object],
+    all_rule_map: dict[str, object],
     current_pairs: set[tuple[str, str]],
 ) -> tuple[list[CrossrefIssue], ScanCounts]:
     text = path.read_text(encoding="utf-8")
@@ -67,15 +69,27 @@ def scan_file(
 
         heading = current_rule_map.get(target)
         if heading is None:
-            counts.broken_internal_anchors_found += 1
-            issues.append(
-                CrossrefIssue(
-                    file_name=path.name,
-                    line_number=line,
-                    issue_type="broken-internal-anchor",
-                    detail=f"{visible} -> {target}",
+            future_heading = all_rule_map.get(target)
+            if future_heading is None:
+                counts.broken_internal_anchors_found += 1
+                issues.append(
+                    CrossrefIssue(
+                        file_name=path.name,
+                        line_number=line,
+                        issue_type="broken-internal-anchor",
+                        detail=f"{visible} -> {target}",
+                    )
                 )
-            )
+            elif future_heading.sc_number not in visible or future_heading.rule_name not in visible:
+                counts.incomplete_internal_link_text_found += 1
+                issues.append(
+                    CrossrefIssue(
+                        file_name=path.name,
+                        line_number=line,
+                        issue_type="incomplete-future-link-text",
+                        detail=f"{visible} -> {target}",
+                    )
+                )
             continue
 
         has_expected_sc = bool(re.search(rf"\b{re.escape(heading.sc_number)}\b", visible))
@@ -179,7 +193,7 @@ def render_report(
     lines = [
         "# Reader-facing cross-reference check 01",
         "",
-        "_Generated from the current local-section-03 chapter files and their SC-numbered rule headings._",
+        "_Generated from the current build-script chapter files and their SC-numbered rule headings._",
         "",
         "## Summary",
         "",
@@ -219,12 +233,13 @@ def main() -> int:
 
     build_script = args.build_script.resolve()
     current_rule_map = build_rule_heading_map(build_script)
+    all_rule_map = build_all_source_rule_heading_map()
     current_pairs = {(heading.sc_number, heading.rule_name) for heading in current_rule_map.values()}
 
     all_issues: list[CrossrefIssue] = []
     totals = ScanCounts()
     for path in iter_build_chapter_paths(build_script):
-        issues, counts = scan_file(path, current_rule_map, current_pairs)
+        issues, counts = scan_file(path, current_rule_map, all_rule_map, current_pairs)
         all_issues.extend(issues)
         totals.chapter_files_checked += counts.chapter_files_checked
         totals.sound_change_links_checked += counts.sound_change_links_checked

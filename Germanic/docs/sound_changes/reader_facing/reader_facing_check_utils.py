@@ -24,12 +24,41 @@ class RuleHeading:
     anchor: str
 
 
-def parse_chapter_files(build_script: Path) -> list[str]:
+def iter_chapter_source_paths() -> list[Path]:
+    return sorted(ROOT.glob("[0-9]*.md"))
+
+
+def extract_embedded_python(build_script: Path) -> str:
     text = build_script.read_text(encoding="utf-8")
-    match = re.search(r"chapter_files\s*=\s*(\[[^\]]*\])", text, re.S)
+    match = re.search(r"python3 - <<'PY'\n(.*?)\nPY", text, re.S)
     if not match:
-        raise ValueError(f"Could not find chapter_files list in {build_script}")
-    return list(ast.literal_eval(match.group(1)))
+        raise ValueError(f"Could not find embedded Python block in {build_script}")
+    return match.group(1)
+
+
+def parse_python_list_assignment(build_script: Path, name: str) -> list[str]:
+    module = ast.parse(extract_embedded_python(build_script))
+    for node in module.body:
+        if isinstance(node, ast.Assign):
+            for target in node.targets:
+                if isinstance(target, ast.Name) and target.id == name:
+                    return list(ast.literal_eval(node.value))
+        if isinstance(node, ast.AnnAssign):
+            if isinstance(node.target, ast.Name) and node.target.id == name and node.value is not None:
+                return list(ast.literal_eval(node.value))
+    raise ValueError(f"Could not find {name} list assignment in {build_script}")
+
+
+def parse_chapter_files(build_script: Path) -> list[str]:
+    return parse_python_list_assignment(build_script, "chapter_files")
+
+
+def parse_intro_parts(build_script: Path) -> list[str]:
+    parts = parse_python_list_assignment(build_script, "parts")
+    if "## Introduction" not in parts:
+        raise ValueError(f"Could not find ## Introduction marker in {build_script}")
+    start = parts.index("## Introduction") + 1
+    return [part for part in parts[start:] if part.strip() and not part.startswith("#")]
 
 
 def iter_build_chapter_paths(build_script: Path = DEFAULT_BUILD_SCRIPT) -> list[Path]:
@@ -58,6 +87,16 @@ def extract_rule_headings(path: Path) -> list[RuleHeading]:
 def build_rule_heading_map(build_script: Path = DEFAULT_BUILD_SCRIPT) -> dict[str, RuleHeading]:
     mapping: dict[str, RuleHeading] = {}
     for path in iter_build_chapter_paths(build_script):
+        for heading in extract_rule_headings(path):
+            if heading.anchor in mapping:
+                raise ValueError(f"Duplicate rule anchor {heading.anchor} in {path}")
+            mapping[heading.anchor] = heading
+    return mapping
+
+
+def build_all_source_rule_heading_map() -> dict[str, RuleHeading]:
+    mapping: dict[str, RuleHeading] = {}
+    for path in iter_chapter_source_paths():
         for heading in extract_rule_headings(path):
             if heading.anchor in mapping:
                 raise ValueError(f"Duplicate rule anchor {heading.anchor} in {path}")

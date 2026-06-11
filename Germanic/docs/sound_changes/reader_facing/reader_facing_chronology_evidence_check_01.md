@@ -4,7 +4,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 23.
+- Sections checked: 28.
 - Sections with warnings: 0.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
@@ -32,3 +32,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 066-068-syncope-and-degemination-corridor.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | yes | yes | yes | yes | yes | no | no | — |
 | 066-068-syncope-and-degemination-corridor.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | yes | no | no | no | no | yes | no | — |
 | 066-068-syncope-and-degemination-corridor.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | yes | yes | yes | yes | yes | yes | no | — |
+| 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | yes | yes | yes | yes | yes | yes | no | — |
+| 070-071-early-unstressed-fronting-shortening-bridge.md | SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly} | yes | yes | yes | yes | yes | no | no | — |
+| 070-071-early-unstressed-fronting-shortening-bridge.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | yes | yes | yes | yes | yes | yes | no | — |
+| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | yes | yes | yes | yes | yes | no | no | — |
+| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | yes | yes | yes | yes | yes | no | no | — |

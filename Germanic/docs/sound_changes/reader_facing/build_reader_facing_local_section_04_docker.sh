@@ -8,8 +8,8 @@ platform="${ASSEMBLY_DOCKER_PLATFORM:-linux/amd64}"
 font_package="${ASSEMBLY_DOCKER_FONT_PACKAGE:-font-noto}"
 tlmgr_repo="${ASSEMBLY_DOCKER_TLMGR_REPOSITORY:-https://ftp.fau.de/ctan/systems/texlive/tlnet}"
 
-assembled_md="${script_dir}/reader_facing_local_section_03.md"
-assembled_pdf="${script_dir}/reader_facing_local_section_03.pdf"
+assembled_md="${script_dir}/reader_facing_local_section_04.md"
+assembled_pdf="${script_dir}/reader_facing_local_section_04.pdf"
 
 cd "${repo_root}"
 
@@ -17,11 +17,11 @@ python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_citations.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_foma_width.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_section_order.py \
-  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_03_docker.sh
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_04_docker.sh
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_generated_prose.py \
-  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_03_docker.sh
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_04_docker.sh
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_crossrefs.py \
-  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_03_docker.sh
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_04_docker.sh
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_chronology_evidence.py
 
 python3 - <<'PY'
@@ -29,7 +29,7 @@ from pathlib import Path
 import re
 
 root = Path("Germanic/docs/sound_changes/reader_facing")
-out = root / "reader_facing_local_section_03.md"
+out = root / "reader_facing_local_section_04.md"
 chapter_files = [
     "049-050-b-allophony-and-sievers-law-syncope.md",
     "051-sk-palatalization.md",
@@ -44,18 +44,21 @@ chapter_files = [
     "063-high-vowel-apocope.md",
     "064-065-post-apocope-tail.md",
     "066-068-syncope-and-degemination-corridor.md",
+    "069-early-o-shortening-context-note.md",
+    "070-071-early-unstressed-fronting-shortening-bridge.md",
+    "072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md",
 ]
 rule_heading_re = re.compile(r"^##\s+SC\d{3}\..*\{#(rule-[^}]+)\}\s*$")
 link_re = re.compile(r"\[([^\]]+)\]\((#rule-[^)]+)\)")
 
 parts: list[str] = [
-    "# A local Old English sequence from allophony to late syncope and degemination",
+    "# A local Old English sequence from allophony to unstressed long-vowel shortening and ae-merger",
     "",
     "## Introduction",
     "",
-    "This section follows an ordered stretch of Old English sound changes from labial allophony and Sievers-law syncope through palatalization, umlaut, back mutation, high-vowel apocope, post-apocope reduction, and later syncope and degemination.",
+    "This section follows an ordered stretch of Old English sound changes from labial allophony and Sievers-law syncope through palatalization, umlaut, back mutation, high-vowel apocope, post-apocope reduction, later syncope and degemination, early o-shortening, early unstressed fronting, later o-shortening, and the shortening and merger of weak final vowels.",
     "",
-    "The chapters vary in scale. Some describe major vowel or consonant developments; others record narrower changes that matter because they fix concrete lexical breakpoints in the finite-state cascade.",
+    "The chapters vary in scale. Some describe large vowel or consonant developments; others record narrower adjustments whose value lies in the lexical breakpoints they fix within the finite-state cascade.",
     "",
 ]
 active_anchors: set[str] = set()
@@ -106,7 +109,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       tlmgr option repository ${tlmgr_repo} >/dev/null &&
       tlmgr install fvextra >/dev/null
     )
-    pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_03.md \
+    pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_04.md \
       --standalone \
       --from=markdown+raw_tex+citations \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
@@ -117,7 +120,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --bibliography=docs/refs.bib \
       --citeproc \
       --pdf-engine=xelatex \
-      -o Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_03.pdf
+      -o Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_04.pdf
   "
 
 echo "Generated ${assembled_md}"

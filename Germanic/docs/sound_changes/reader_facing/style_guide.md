@@ -9,6 +9,8 @@ entry `Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.
 2. Keep internal metadata brief and secondary.
 3. Use short, functional subsectioning; each section should do one job.
 4. Prefer prose paragraphs over status-language bullet lists.
+5. Generated section introductions should read as book prose and should not
+   describe editorial process or build workflow.
 
 ## Rule-level architecture
 

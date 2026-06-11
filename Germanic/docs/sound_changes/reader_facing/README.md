@@ -87,6 +87,18 @@ This writes:
 - `reader_facing_local_section_03.md`
 - `reader_facing_local_section_03.pdf`
 
+To extend that ordered section through unstressed long-vowel shortening and the
+unstressed ae-merger core, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_04_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_04.md`
+- `reader_facing_local_section_04.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

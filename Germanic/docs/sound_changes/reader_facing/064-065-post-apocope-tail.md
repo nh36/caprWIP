@@ -19,12 +19,12 @@ In prose, it removes a final \emph{*n} after long \emph{*ī}. That looks tiny on
 The chronology is two-sided even though the witness base is not broad. If the
 rule is moved before SC041 PWGmcFinalBareALoss, PGmc \emph{*fúrxtīnaz} yields
 *fyrhten* rather than expected OE *fyrhte* ‘fright’. If the rule is delayed
-until after SC072 OEUnstressedLongVowelShortening, the same PGmc form again
+until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the same PGmc form again
 yields *fyrhten* rather than expected *fyrhte*. This shows that
 SC041 PWGmcFinalBareALoss must come before
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), and it places
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) before
-SC072 OEUnstressedLongVowelShortening.
+[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
 
 That symmetry does not make the rule large. Both boundaries are carried by the same witness family, so the evidence is real but narrow. The value of the rule lies in showing that even a very small formal step can still have a concrete lexical place in the chronology.
 
