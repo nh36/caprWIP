@@ -48,7 +48,7 @@ Its historical place is between the earlier restoration and the later palatal
 vowel developments. If it is moved too early, the forms behind *flasce* ‘flask’
 and *wascan* ‘wash’ are fronted too soon, yielding *flæsce* ‘flask’ and
 *wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This gives the
-earlier result. This shows that SC046 OEARestoration must come before
+earlier result. This shows that [SC046 OEARestoration](#rule-OEARestoration) must come before
 [SC051 OESkPalatalization](#rule-OESkPalatalization). If it is moved too late, the cluster no longer feeds the later
 West-Saxon diphthongal outcomes that appear in *sċeaft* ‘shaft’, *sċēar*
 ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’. That is why

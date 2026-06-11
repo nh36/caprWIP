@@ -123,6 +123,30 @@ This writes:
 - `reader_facing_local_section_06.md`
 - `reader_facing_local_section_06.pdf`
 
+To extend the same ordered section leftward through surviving bimoric
+o-unrounding, Anglo-Frisian brightening, breaking, and restoration, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_07_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_07.md`
+- `reader_facing_local_section_07.pdf`
+
+To extend the same ordered section leftward through surviving bimoric
+o-unrounding, Anglo-Frisian brightening, breaking, and restoration, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_07_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_07.md`
+- `reader_facing_local_section_07.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

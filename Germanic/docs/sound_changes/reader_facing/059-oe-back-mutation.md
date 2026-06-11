@@ -45,7 +45,7 @@ the rule is pushed too far to the right, \emph{*wébaną} yields *weofan*
 That later edge is real, but it points beyond the present stretch of the sequence into the
 later weak-tail reductions, so here it should remain only a forward reference.
 
-These lexical failures show that SC048 OESecondaryNasalization must come before
+These lexical failures show that [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization) must come before
 [SC059 OEBackMutation](#rule-OEBackMutation) and that
 [SC059 OEBackMutation](#rule-OEBackMutation) must come before
 [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction).
