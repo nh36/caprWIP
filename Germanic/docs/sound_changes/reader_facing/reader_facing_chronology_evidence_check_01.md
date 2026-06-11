@@ -4,7 +4,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 32.
+- Sections checked: 40.
 - Sections with warnings: 0.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
@@ -41,3 +41,11 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 074-075-medial-unstressed-i-lowering.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | yes | yes | yes | yes | yes | yes | no | — |
 | 076-prefix-i-reduction.md | SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | yes | no | no | yes | no | yes | no | — |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | yes | yes | yes | yes | yes | no | no | — |
+| 079-080-final-j-loss-and-final-geminate-simplification.md | SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | yes | yes | yes | yes | yes | no | no | — |
+| 079-080-final-j-loss-and-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | yes | yes | yes | yes | yes | no | no | — |
+| 081-083-j-strengthening-vocalization-and-ei-contraction.md | SC081. Strengthening of \emph{*j} after front diphthongs (`OEJStrengtheningAfterFrontDiphthong`) {#rule-OEJStrengtheningAfterFrontDiphthong} | yes | yes | yes | yes | yes | no | no | — |
+| 081-083-j-strengthening-vocalization-and-ei-contraction.md | SC082. Intervocalic vocalization of \emph{*j} (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization} | yes | yes | yes | yes | yes | no | no | — |
+| 081-083-j-strengthening-vocalization-and-ei-contraction.md | SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | yes | yes | yes | yes | yes | yes | no | — |
+| 085-086-h-loss-and-contraction.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | yes | yes | yes | yes | yes | no | no | — |
+| 085-086-h-loss-and-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | yes | yes | yes | yes | yes | yes | no | — |
+| 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | yes | yes | yes | yes | yes | yes | no | — |

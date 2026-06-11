@@ -111,6 +111,18 @@ This writes:
 - `reader_facing_local_section_05.md`
 - `reader_facing_local_section_05.pdf`
 
+To extend the same ordered section through final-j loss, contraction, and
+r-metathesis, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_06_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_06.md`
+- `reader_facing_local_section_06.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

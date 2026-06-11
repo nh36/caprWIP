@@ -4,8 +4,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 32.
-- Blocks over the conservative 90-character threshold: 7.
+- Foma blocks checked: 40.
+- Blocks over the conservative 90-character threshold: 9.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -42,6 +42,14 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 074-075-medial-unstressed-i-lowering.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | 29 | 33 | no |
 | 076-prefix-i-reduction.md | SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 13 | 107 | yes |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | 13 | 48 | no |
+| 079-080-final-j-loss-and-final-geminate-simplification.md | SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | 13 | 141 | yes |
+| 079-080-final-j-loss-and-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | 30 | 38 | no |
+| 081-083-j-strengthening-vocalization-and-ei-contraction.md | SC081. Strengthening of \emph{*j} after front diphthongs (`OEJStrengtheningAfterFrontDiphthong`) {#rule-OEJStrengtheningAfterFrontDiphthong} | 13 | 72 | no |
+| 081-083-j-strengthening-vocalization-and-ei-contraction.md | SC082. Intervocalic vocalization of \emph{*j} (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization} | 29 | 59 | no |
+| 081-083-j-strengthening-vocalization-and-ei-contraction.md | SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | 45 | 92 | yes |
+| 085-086-h-loss-and-contraction.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | 13 | 56 | no |
+| 085-086-h-loss-and-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | 29 | 24 | no |
+| 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | 13 | 63 | no |
 
 ## Lines that would have overflowed under the old rendering
 
@@ -94,6 +102,15 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 ### 076-prefix-i-reduction.md:13 — SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
 
 - `107` chars — `    {*i} -> {*ĕ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic`
+
+### 079-080-final-j-loss-and-final-geminate-simplification.md:13 — SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy}
+
+- `117` chars — `    {*j} -> 0 || (EnglishStarLongVowel | EnglishStarDiphthong) [EnglishStarConsonantNoR | EnglishPalatalConsonant] _,`
+- `141` chars — `    {*j} -> 0 || EnglishStarShortVowel [EnglishStarConsonant | EnglishPalatalConsonant] [EnglishStarConsonantNoR | EnglishPalatalConsonant] _`
+
+### 081-083-j-strengthening-vocalization-and-ei-contraction.md:45 — SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction}
+
+- `92` chars — `    {*e} -> 0 || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*i}`
 
 ## Interpretation
 
