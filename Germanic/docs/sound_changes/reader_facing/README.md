@@ -172,6 +172,18 @@ This writes:
 - `reader_facing_local_section_10.md`
 - `reader_facing_local_section_10.pdf`
 
+To extend the same ordered section further leftward through nasal spirant
+changes, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_11_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_11.md`
+- `reader_facing_local_section_11.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
