@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_BUILD_SCRIPT = ROOT / "build_reader_facing_local_section_12_docker.sh"
+DEFAULT_BUILD_SCRIPT = ROOT / "build_reader_facing_local_section_13_docker.sh"
 RULE_HEADING_RE = re.compile(
     r"^##\s+(SC\d{3})\.\s+(.*?)\s+\(`([^`]+)`\)\s+\{#(rule-[^}]+)\}\s*$"
 )

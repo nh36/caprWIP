@@ -61,8 +61,8 @@ parallel account all point to the same historical consequence
 to disappear early enough for the preceding vowel to continue into the later
 fronted and lengthened outcome. If the glide survives too long, the derivation
 retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before
-SC020 PGmcFinalZDeletion, the same witness yields *sǣw* ‘sea’ rather than
-expected OE *sǣ*. This shows that SC020 PGmcFinalZDeletion must come before
+[SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), the same witness yields *sǣw* ‘sea’ rather than
+expected OE *sǣ*. This shows that [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) must come before
 [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI). If the rule is delayed until after
 [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the same witness again yields *sǣw*
 rather than expected *sǣ*. This places [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI)

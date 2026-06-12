@@ -4,10 +4,10 @@ _Generated from the current build-script chapter files and their SC-numbered rul
 
 ## Summary
 
-- Build script: `/Users/nathanhill/Code/capr-v3-working/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_12_docker.sh`.
-- Chapter files checked: 39.
-- Rule headings mapped from current chapter files: 67.
-- Sound-change links checked: 366.
+- Build script: `/Users/nathanhill/Code/capr-v3-working/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_13_docker.sh`.
+- Chapter files checked: 42.
+- Rule headings mapped from current chapter files: 72.
+- Sound-change links checked: 399.
 - Symbolic `<` relations found: 0.
 - Bare SC references found: 0.
 - Rule-name-only references found: 0.

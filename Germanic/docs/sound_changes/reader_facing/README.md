@@ -196,6 +196,18 @@ This writes:
 - `reader_facing_local_section_12.md`
 - `reader_facing_local_section_12.pdf`
 
+To extend the same ordered section further leftward through the early vocalic
+and final changes from SC016 to SC020, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_13_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_13.md`
+- `reader_facing_local_section_13.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
