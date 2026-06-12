@@ -135,17 +135,18 @@ This writes:
 - `reader_facing_local_section_07.md`
 - `reader_facing_local_section_07.pdf`
 
-To extend the same ordered section leftward through surviving bimoric
-o-unrounding, Anglo-Frisian brightening, breaking, and restoration, use:
+To extend the same ordered section further leftward through prefix and
+compound adjustments, medial unstressed vowel changes, and final bare-a
+loss, use:
 
 ```bash
-bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_07_docker.sh
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_08_docker.sh
 ```
 
 This writes:
 
-- `reader_facing_local_section_07.md`
-- `reader_facing_local_section_07.pdf`
+- `reader_facing_local_section_08.md`
+- `reader_facing_local_section_08.pdf`
 
 ## Style audit workflow
 

@@ -17,11 +17,11 @@ define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
 In prose, it removes a final \emph{*n} after long \emph{*ī}. That looks tiny on the page, but the effect is real in the inherited family behind *fyrhte* ‘fright’.
 
 The chronology is two-sided even though the witness base is not broad. If the
-rule is moved before SC041 PWGmcFinalBareALoss, PGmc \emph{*fúrxtīnaz} yields
+rule is moved before [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), PGmc \emph{*fúrxtīnaz} yields
 *fyrhten* rather than expected OE *fyrhte* ‘fright’. If the rule is delayed
 until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the same PGmc form again
 yields *fyrhten* rather than expected *fyrhte*. This shows that
-SC041 PWGmcFinalBareALoss must come before
+[SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss) must come before
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), and it places
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) before
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).

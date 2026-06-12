@@ -37,7 +37,7 @@ Even so, it matters because later derivations assume that the
 alternation is already in place. The clearest tested consequence appears in
 *reġnboga* ‘rainbow’. If the rule is moved before the earlier linking-vowel
 adjustment, the derivation yields *reġnfoga* ‘rainbow’ rather than expected OE
-*reġnboga* ‘rainbow’. This shows that SC037 OECompoundLinkingSyncope must come
+*reġnboga* ‘rainbow’. This shows that [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) must come
 before [SC049 PGmcBAllophony](#rule-PGmcBAllophony).
 No equally sharp later lexical breakpoint emerges within the tested sequence, so
 the rule has no explicit later boundary within the present sequence.
