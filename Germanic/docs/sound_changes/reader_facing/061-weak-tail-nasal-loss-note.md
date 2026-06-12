@@ -35,7 +35,7 @@ sharp later breakpoint appears within the tested sequence. That is why the note 
 one-sided and why its earlier relation should be understood as a distant
 cross-reference only and should not reshape the broader sequence.
 
-This shows that SC023 NWGmcNStemNLoss must come before
+This shows that [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must come before
 [SC061 OEWeakTailNasalLoss](#rule-OEWeakTailNasalLoss). No comparably sharp later
 boundary is available.
 

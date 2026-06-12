@@ -4,12 +4,17 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 62.
+- Foma blocks checked: 67.
 - Blocks over the conservative 90-character threshold: 10.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
 | --- | --- | --- | --- | --- |
+| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`NWGmcUnstressedORaising`) {#rule-NWGmcUnstressedORaising} | 13 | 89 | no |
+| 022-mn-dissimilation.md | SC022. Dissimilation of \emph{mn} sequences (`NWGmcMnDissimilation`) {#rule-NWGmcMnDissimilation} | 13 | 68 | no |
+| 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`NWGmcNStemNLoss`) {#rule-NWGmcNStemNLoss} | 13 | 30 | no |
+| 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`NWGmcLongELowering`) {#rule-NWGmcLongELowering} | 13 | 64 | no |
+| 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | 13 | 39 | no |
 | 026-027-nasal-spirant-changes.md | SC026. Lengthening before nasal plus spirant (`NWGmcNasalSpirantLengthening`) {#rule-NWGmcNasalSpirantLengthening} | 13 | 69 | no |
 | 026-027-nasal-spirant-changes.md | SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss} | 37 | 60 | no |
 | 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss} | 13 | 44 | no |

@@ -184,6 +184,18 @@ This writes:
 - `reader_facing_local_section_11.md`
 - `reader_facing_local_section_11.pdf`
 
+To extend the same ordered section further leftward through the early
+unstressed-vowel and boundary notes from SC021 to SC025, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_12_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_12.md`
+- `reader_facing_local_section_12.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

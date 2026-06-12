@@ -38,6 +38,8 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_10_report.md",
     "reader_facing_local_section_11.md",
     "reader_facing_local_section_11_report.md",
+    "reader_facing_local_section_12.md",
+    "reader_facing_local_section_12_report.md",
     "reader_facing_chronology_evidence_check_01.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",
@@ -55,6 +57,7 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_09_report.md",
     "reader_facing_local_section_10_report.md",
     "reader_facing_local_section_11_report.md",
+    "reader_facing_local_section_12_report.md",
 }
 
 NEGATION_PATTERNS: list[tuple[str, re.Pattern[str]]] = [

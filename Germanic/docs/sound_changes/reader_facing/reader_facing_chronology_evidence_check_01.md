@@ -4,11 +4,16 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 62.
+- Sections checked: 67.
 - Sections with warnings: 0.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`NWGmcUnstressedORaising`) {#rule-NWGmcUnstressedORaising} | yes | yes | yes | yes | yes | yes | no | — |
+| 022-mn-dissimilation.md | SC022. Dissimilation of \emph{mn} sequences (`NWGmcMnDissimilation`) {#rule-NWGmcMnDissimilation} | yes | no | yes | no | no | yes | no | — |
+| 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`NWGmcNStemNLoss`) {#rule-NWGmcNStemNLoss} | yes | yes | yes | yes | yes | yes | no | — |
+| 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`NWGmcLongELowering`) {#rule-NWGmcLongELowering} | yes | yes | yes | yes | yes | yes | no | — |
+| 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | yes | no | yes | no | no | yes | no | — |
 | 026-027-nasal-spirant-changes.md | SC026. Lengthening before nasal plus spirant (`NWGmcNasalSpirantLengthening`) {#rule-NWGmcNasalSpirantLengthening} | yes | yes | yes | yes | yes | yes | no | — |
 | 026-027-nasal-spirant-changes.md | SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss} | yes | yes | yes | yes | yes | yes | no | — |
 | 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss} | yes | no | yes | no | no | yes | no | — |
