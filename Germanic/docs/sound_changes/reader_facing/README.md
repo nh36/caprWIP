@@ -208,6 +208,18 @@ This writes:
 - `reader_facing_local_section_13.md`
 - `reader_facing_local_section_13.pdf`
 
+To extend the same ordered section further leftward through the earliest
+unstressed vowel changes, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_14_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_14.md`
+- `reader_facing_local_section_14.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
