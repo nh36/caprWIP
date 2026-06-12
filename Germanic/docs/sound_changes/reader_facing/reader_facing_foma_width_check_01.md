@@ -4,12 +4,15 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 57.
+- Foma blocks checked: 60.
 - Blocks over the conservative 90-character threshold: 10.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
 | --- | --- | --- | --- | --- |
+| 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss} | 13 | 44 | no |
+| 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation} | 19 | 38 | no |
+| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting} | 42 | 21 | no |
 | 031-034-west-saxon-diphthong-chain.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | 19 | 27 | no |
 | 031-034-west-saxon-diphthong-chain.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 39 | 28 | no |
 | 031-034-west-saxon-diphthong-chain.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 67 | 49 | no |
