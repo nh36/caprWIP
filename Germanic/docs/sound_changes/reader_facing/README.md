@@ -148,6 +148,18 @@ This writes:
 - `reader_facing_local_section_08.md`
 - `reader_facing_local_section_08.pdf`
 
+To extend the same ordered section further leftward through the West Saxon
+diphthong sequence, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_09_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_09.md`
+- `reader_facing_local_section_09.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

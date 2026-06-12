@@ -34,6 +34,8 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_07_report.md",
     "reader_facing_local_section_08.md",
     "reader_facing_local_section_08_report.md",
+    "reader_facing_local_section_09.md",
+    "reader_facing_local_section_09_report.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_check_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",
@@ -47,6 +49,7 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_06_report.md",
     "reader_facing_local_section_07_report.md",
     "reader_facing_local_section_08_report.md",
+    "reader_facing_local_section_09_report.md",
 }
 
 

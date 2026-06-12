@@ -4,12 +4,16 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 53.
+- Foma blocks checked: 57.
 - Blocks over the conservative 90-character threshold: 10.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
 | --- | --- | --- | --- | --- |
+| 031-034-west-saxon-diphthong-chain.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | 19 | 27 | no |
+| 031-034-west-saxon-diphthong-chain.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 39 | 28 | no |
+| 031-034-west-saxon-diphthong-chain.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 67 | 49 | no |
+| 031-034-west-saxon-diphthong-chain.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 90 | 61 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 13 | 59 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 36 | 54 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 61 | 47 | no |

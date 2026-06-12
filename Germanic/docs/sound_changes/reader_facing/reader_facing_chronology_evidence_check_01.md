@@ -4,11 +4,15 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 53.
+- Sections checked: 57.
 - Sections with warnings: 0.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 031-034-west-saxon-diphthong-chain.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | yes | yes | yes | yes | yes | yes | no | — |
+| 031-034-west-saxon-diphthong-chain.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | yes | yes | yes | yes | yes | no | no | — |
+| 031-034-west-saxon-diphthong-chain.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | yes | yes | yes | yes | yes | yes | no | — |
+| 031-034-west-saxon-diphthong-chain.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | yes | yes | yes | yes | yes | no | no | — |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | yes | yes | yes | yes | yes | yes | no | — |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | yes | yes | yes | yes | yes | no | no | — |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | yes | yes | yes | yes | yes | yes | no | — |
