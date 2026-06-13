@@ -6,11 +6,11 @@
 
 SC002 `PGmcGmSimplification` appears here as a narrow Proto-Germanic consonant note. The modeled change deletes `*g` before `*m`, and the clearest inventory witnesses are the families behind `dream` and `team`.
 
-That historical claim is plausible, but the present source base is still limited. The phenomenon is best treated as a backend singleton candidate rather than as a report already ready for volume use.
+That historical claim is plausible, but the present source base is still limited. The phenomenon is best treated as a narrow singleton note rather than as a broad historical core.
 
 #### Source tradition
 
-Current source support is lexical rather than expository. Kroonen derives OE `dream` from `*draugma-` and states that OE `tēam` continues `*tauma-`, whose original form was `*taugma-` and, like `*drauma- < *draugma-`, lost its `*g` [@Kroonen2013, pp. 101, 511]. Orel independently supports the dream family through his `*draumaz` entry [@Orel2003, p. 114].
+Current source support is lexical rather than expository. Kroonen derives OE `dream` from `*draugma-` and states that OE `tēam` continues `*tauma-`, whose original form was `*taugma-` and, like `*drauma- < *draugma-`, lost its `*g` [@Kroonen2013, pp. 101, 511]. Orel independently supports the dream family through his `*draumaz` entry [@Orel2003, p. 114] and the team family through `*tauxmaz` [@Orel2003, p. 403], but that second entry already reflects the simplified cluster and therefore does not itself establish the `*g`-loss.
 
 That is enough to make the sound change historically legible. It is not yet enough to count as a full comparative-grammar discussion of the rule. No broader handbook-style phonological treatment of `*gm > *m` was recovered in this pass, so the source base remains primarily etymological. The inventory's second witness `team` is supported lexically, but the current source base still needs a clearer comparative discussion before chapter prose would be advisable.
 
@@ -46,8 +46,8 @@ That later break is not an ordinary historical chronology relation. `SC094` is a
 
 #### Interpretation
 
-SC002 is now better grounded than it was in the draft-only pass, because the chronology layer has been validated rather than merely blocked by infrastructure. Even so, the result remains weak for promotion: the earlier side is only a start-boundary observation, the later side breaks only at a non-historical orthography stage, and the source base is still narrow and mainly etymological.
+SC002 is now better grounded than it was when the chronology layer was still blocked by infrastructure. Even so, the result remains weak as a historical singleton: the earlier side is only a start-boundary observation, the later side breaks only at a non-historical orthography stage, and the source base is still narrow and mainly etymological.
 
 #### Remaining cautions
 
-The main caution remains evidential. At present the source base for SC002 is mostly etymological, not a broad comparative discussion of the sound change as such. The validated chronology card also yields no ordinary historical boundary: it records a boundary-only earlier result and a non-historical orthography-surface later break. Until the phonological literature base is broadened and a stronger historical chronology claim becomes available, SC002 should remain out of `report_manifest.tsv`.
+The main caution remains evidential. At present the source base for SC002 is mostly etymological, not a broad comparative discussion of the sound change as such. The validated chronology card also yields no ordinary historical boundary: it records a boundary-only earlier result and a non-historical orthography-surface later break. Until the phonological literature base is broadened and a stronger historical chronology claim becomes available, SC002 should remain a backend-preparation note rather than a fully anchored historical core.

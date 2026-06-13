@@ -1,8 +1,8 @@
-# SC003 PGmc Rhotacism — book dossier
+# SC003 West Germanic rhotacism — book dossier
 
 ## Historical phenomenon
 
-SC003 isolates the medial change of `*z` to `*r` in the families behind `deer`, `hoard`, `learn`, `berry`, and related forms.
+SC003 isolates the medial change of `*z` to `*r` in the families behind `deer`, `hoard`, `learn`, `berry`, and related forms. Historically, the change is best described as a post-PWGmc West Germanic rhotacism rather than as Proto-Germanic proper.
 
 ## Relevant CAPR rule
 
@@ -20,12 +20,12 @@ SC003 isolates the medial change of `*z` to `*r` in the families behind `deer`, 
 ## Source support found so far
 
 1. Hogg provides a compact OE-facing summary of intervocalic rhotacism and final loss [@Hogg1992, p. 37].
-2. Ringe and Taylor discuss the change directly and caution that it was not uniform in West Germanic [@RingeTaylor2014, p. 98].
-3. Crist separates rhotacism from word-final `*z` deletion and clarifies the relative order [@Crist2002, pp. 1, 4].
+2. Ringe and Taylor discuss the change directly, note that it was not uniform in West Germanic, and assign the overall process to the post-PWGmc period [@RingeTaylor2014, pp. 52, 98, 102].
+3. Crist separates rhotacism from word-final `*z` deletion, clarifies the relative order, and rejects inheritance from Proto-Northwest Germanic [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
 
 ## Missing source support
 
-1. The present material does not yet settle whether the inventory's `Proto-Germanic` stage label is the best historical label for book use.
+1. The historical label can now be given cautiously as post-PWGmc West Germanic, but a more explicit discussion of how evenly the change spread within WGmc would still be useful.
 2. A more explicit discussion of the precise medial conditioning would still be useful.
 
 ## Chronology/order-test status
@@ -38,4 +38,4 @@ SC003 isolates the medial change of `*z` to `*r` in the families behind `deer`, 
 ## Cautions for eventual reader-facing prose
 
 1. Do not merge this change with final `*z` deletion.
-2. Keep the stage-label caution visible until the backend review resolves it.
+2. Keep the distinction between CAPR rule name `PGmcRhotacism` and the historical label post-PWGmc West Germanic rhotacism visible in any later prose.

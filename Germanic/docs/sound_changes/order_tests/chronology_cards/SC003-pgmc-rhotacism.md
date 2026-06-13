@@ -1,4 +1,4 @@
-# SC003 PGmc Rhotacism — chronology evidence card
+# SC003 West Germanic rhotacism — chronology evidence card
 
 ## Current position
 - current_order: `3`
@@ -28,7 +28,7 @@
 Current first-break evidence identifies one historically interpretable boundary for SC003. The earlier search moved safely across SC002 down to order `2` and then stopped at the left edge of the tested historical chain with no real break, so that side remains boundary-only rather than a positive chronology constraint. The later search does find a real historical boundary at `SC044` OE Breaking: if PGmc Rhotacism is moved later than that stage, PGmc `*líznōjaną` yields `lirnian` rather than expected OE `liornian`, and related witnesses such as `*líznōθi`, `*líznô`, and `*mízdai` likewise yield `lirnaþ`, `lirna`, and `merde` instead of `liornaþ`, `liorna`, and `meorde`.
 
 ## Caveats
-This card is one-sided in current testing. The later boundary is historically interpretable, but it is broad/far across SC044 rather than a tight local adjacency claim, and the report layer should continue to keep SC003 distinct from final `*z` deletion and to preserve the unresolved stage-label caution.
+This card is one-sided in current testing. The later boundary is historically interpretable, but it is broad/far across SC044 rather than a tight local adjacency claim. The backend report layer now treats the historical stage as post-PWGmc West Germanic even though CAPR retains the rule name `PGmcRhotacism`, and the chronology evidence should be read with that distinction in mind.
 
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01.tsv`

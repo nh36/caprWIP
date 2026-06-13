@@ -17,7 +17,7 @@ SC002 isolates loss of `*g` before `*m` in the lexical families behind `dream` a
 ## Source support found so far
 
 1. Kroonen gives direct lexical support for both families and explicitly notes the loss of `*g` [@Kroonen2013, pp. 101, 511].
-2. Orel supports the dream family independently [@Orel2003, p. 114].
+2. Orel supports the dream family through `*draumaz` [@Orel2003, p. 114] and the team family through `*tauxmaz` [@Orel2003, p. 403], but the latter entry does not itself spell out the lost `*g`.
 
 ## Missing source support
 

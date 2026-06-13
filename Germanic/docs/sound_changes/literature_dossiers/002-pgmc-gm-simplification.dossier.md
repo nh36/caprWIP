@@ -19,7 +19,7 @@ This dossier concerns loss of `*g` before `*m` in the small lexical family repre
 ## Source support found so far
 
 1. Kroonen derives OE `dream` from `*draugma-` and OE `tēam` from `*tauma-`, explicitly adding that `*taugma-`, like `*drauma- < *draugma-`, lost its `*g` [@Kroonen2013, pp. 101, 511].
-2. Orel independently supports the dream family through `*draumaz` [@Orel2003, p. 114].
+2. Orel independently supports the dream family through `*draumaz` [@Orel2003, p. 114] and the team family through `*tauxmaz` [@Orel2003, p. 403], though the latter entry already reflects the simplified cluster and so does not independently prove the `*g`-loss.
 
 ## Missing source support
 

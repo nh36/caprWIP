@@ -1,18 +1,18 @@
-# Rhotacism
+# West Germanic rhotacism
 
 ### Sound-change report
 
 #### Historical formulation
 
-SC003 `PGmcRhotacism` appears here as a singleton consonant report for the change of medial `*z` to `*r`. The inventory treats it as a Proto-Germanic stage, but the clearest source support places the change more cautiously in the later Germanic daughter histories, especially West Germanic.
+SC003 `PGmcRhotacism` appears here as a singleton consonant report for the change of medial `*z` to `*r`. Historically, the change is better treated as a **post-PWGmc West Germanic rhotacism** than as a Proto-Germanic innovation proper. Ringe and Taylor place rhotacism in the post-PWGmc sound-change layer and stress that it was not uniform within WGmc [@RingeTaylor2014, pp. 98, 102], while Crist argues that it cannot be inherited from Proto-Northwest Germanic and must follow earlier WGmc `*z`-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
 
-That does not make the rule unusable. It does mean the backend apparatus should preserve the stage-label caution explicitly instead of assuming that the current inventory label is already historiographically settled.
+That does not make the CAPR rule name unusable. It does mean the backend apparatus should distinguish the implementation label `PGmcRhotacism` from the source-supported historical stage label.
 
 #### Source tradition
 
-The source support for the phenomenon itself is strong. Hogg states succinctly that Germanic `/z/` yielded `/r/` in intervocalic position in Old English, though it was generally lost finally [@Hogg1992, p. 37]. Ringe and Taylor go farther by warning that rhotacism was not uniform in West Germanic and can be shown to have occurred independently in Norse and West Germanic [@RingeTaylor2014, p. 98]. Crist's analysis of West Germanic `*z` loss then clarifies the relative chronology: word-final `*z` deletion precedes rhotacism, so the two changes must not be collapsed into one event [@Crist2002, pp. 1, 4].
+The source support for the phenomenon itself is strong. Hogg states succinctly that Germanic `/z/` yielded `/r/` in intervocalic position in Old English, though it was generally lost finally [@Hogg1992, p. 37]. Ringe and Taylor go farther: they first note that the change occurred independently in Norse and WGmc and was not uniform even in the latter [@RingeTaylor2014, p. 52], and later advise assigning the process to the post-PWGmc period [@RingeTaylor2014, pp. 98, 102]. Crist's analysis aligns with that caution by arguing that rhotacism is not inherited from Proto-Northwest Germanic and must follow earlier WGmc `*z`-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
 
-This is enough source support for a backend report. It is not enough to treat the current stage label as settled. The clearest sources support the change itself more strongly than they support a simple Proto-Germanic placement.
+This is enough source support not only for a backend report but for a cautious historical label. The clearest sources support the change itself strongly and support locating it in the West Germanic area after PWGmc rather than at Proto-Germanic proper.
 
 #### CAPR implementation
 
@@ -26,11 +26,13 @@ define PGmcRhotacism [
 
 The implementation is broader than a strictly intervocalic `V_V` rule because the current model also needs to retain medial `VzC` environments. That choice matches the local FST comment, but it should still be kept distinct from the narrower formulations in the historical literature.
 
+For implementation continuity, CAPR keeps the exact rule name `PGmcRhotacism`. That identifier should be read as a model label rather than as the best historical stage label.
+
 #### Place in the cascade
 
 In the current inventory ordering, SC003 follows SC002 `PGmcGmSimplification` and precedes the Proto-West-Germanic developments that begin with SC004. In the implementation, however, it remains inside the same bundled Proto-Germanic consonant block that also contains final `*z` deletion.
 
-That placement still matters, but the early-rule harness now exposes SC003 to standalone first-break testing without changing the production bundle. The rule is therefore no longer chronology-draft-only even though the live cascade remains bundled.
+That placement still matters, but the early-rule harness now exposes SC003 to standalone first-break testing without changing the production bundle. The rule therefore has direct chronology support even though the live cascade remains bundled, and the historical prose can now say more clearly that the modeled stage name is earlier than the source-supported historical interpretation.
 
 #### Order evidence
 
@@ -48,8 +50,8 @@ That later boundary is historically interpretable, but it is broad/far rather th
 
 #### Interpretation
 
-SC003 is now substantially stronger than SC002 on the chronology side. It has a validated one-sided historical boundary and exact wrong-output diagnostics, and the literature support for the phenomenon itself is already solid. The remaining reason to hold it back from manifest promotion is not chronology but historical placement: the existing sources still encourage a more cautious stage label than the inventory's simple `Proto-Germanic` framing.
+SC003 is now substantially stronger than SC002 on both the chronology and source sides. It has a validated one-sided historical boundary and exact wrong-output diagnostics, and the literature now supports a cautious historical label: **post-PWGmc West Germanic rhotacism**. That is enough for a cautious singleton report, provided the prose keeps the CAPR rule name and the historical label clearly distinct.
 
 #### Remaining cautions
 
-Two cautions still matter most. First, backend prose should keep rhotacism distinct from final `*z` deletion, because the literature treats them as separate events with their own chronology. Second, the current `Proto-Germanic` stage label still needs review against the stronger West Germanic / Northwest Germanic framing in the existing sources. The chronology question is now in much better shape, but until that stage-label review is resolved, SC003 should remain out of `report_manifest.tsv`.
+Two cautions still matter most. First, backend prose should keep rhotacism distinct from final `*z` deletion, because the literature treats them as separate events with their own chronology. Second, the later boundary with `SC044` is broad/far rather than a tight local adjacency claim. The prose should therefore continue to describe the historical stage as post-PWGmc West Germanic while reserving `PGmcRhotacism` for the CAPR rule label.
