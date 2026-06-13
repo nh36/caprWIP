@@ -48,6 +48,9 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_14.md",
     "reader_facing_local_section_14_report.md",
     "reader_facing_manifest_coverage_01.md",
+    "reader_facing_local_section_15.md",
+    "reader_facing_local_section_15_report.md",
+    "reader_facing_manifest_coverage_03.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_check_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",
@@ -68,6 +71,8 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_13_report.md",
     "reader_facing_local_section_14_report.md",
     "reader_facing_manifest_coverage_01.md",
+    "reader_facing_local_section_15_report.md",
+    "reader_facing_manifest_coverage_03.md",
 }
 
 CITATION_BLOCK_RE = re.compile(r"\[@([^\]]+)\]", re.S)
