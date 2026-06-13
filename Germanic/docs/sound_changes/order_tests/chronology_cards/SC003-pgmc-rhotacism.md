@@ -1,35 +1,36 @@
-# SC003 PGmc Rhotacism — draft chronology evidence card
+# SC003 PGmc Rhotacism — chronology evidence card
 
 ## Current position
 - current_order: `3`
 - rule_name: `PGmcRhotacism`
-- safe computational window: `not yet established`
-- status: `draft_needs_validation`
+- safe computational window: `2-43` (earlier side boundary-only; later side broad/far)
+- status: `first_break_complete`
 
 ## Earlier boundary
-- first earlier break: `not yet tested`
-- crossed stage: `not available`
-- crossed stage type: `not_tested`
+- first earlier break: `none found before tested-chain boundary at order 2`
+- crossed stage: `SC002` Gm Simplification
+- crossed stage type: `historical_sound_change`
 - failure count: `0`
 - representative failures: `none`
-- concrete failure example: `none — the current first-break infrastructure skips SC003 because it does not yet reorder inside bundled or non-explicit chain positions`
-- interpretation: No earlier historical boundary is currently established for SC003.
+- concrete failure example: `none — no earlier real break was found before the tested-chain boundary`
+- interpretation: The temporary early-rule harness can move SC003 earlier safely across SC002 down to order `2`, but it cannot test farther because that reaches the left edge of the tested historical chain. This is therefore a boundary-only result rather than an earlier historical boundary for PGmc Rhotacism.
 
 ## Later boundary
-- first later break: `not yet tested`
-- crossed stage: `not available`
-- crossed stage type: `not_tested`
-- failure count: `0`
-- representative failures: `none`
-- concrete failure example: `none — the current first-break infrastructure skips SC003 because it does not yet reorder inside bundled or non-explicit chain positions`
-- interpretation: No later historical boundary is currently established for SC003.
+- first later break: order `44`
+- crossed stage: `SC044` OE Breaking
+- crossed stage type: `historical_sound_change`
+- failure count: `4`
+- representative failures: `learn; learn (3sg); learn (iptv.2sg); meed`
+- concrete failure example: PGmc `*líznōjaną` yields expected OE `liornian`, but the later-shifted variant yields `lirnian`
+- interpretation: SC003 can move later safely through order `43`, but it cannot move later across SC044. Delaying PGmc Rhotacism that far forward leaves the wrong consonant-and-vowel sequence in the `learn` family, and the same shift also yields `lirnaþ`, `lirna`, and `merde`.
 
 ## Chronology statement
-This is a draft card awaiting validated order-test evidence. In `order_sensitivity_first_break_batch_04_manifest.tsv`, SC003 is marked `skipped` because the current runner does not yet reorder inside bundles or non-explicit chain positions. No earlier or later first-break boundary is therefore established at present.
+Current first-break evidence identifies one historically interpretable boundary for SC003. The earlier search moved safely across SC002 down to order `2` and then stopped at the left edge of the tested historical chain with no real break, so that side remains boundary-only rather than a positive chronology constraint. The later search does find a real historical boundary at `SC044` OE Breaking: if PGmc Rhotacism is moved later than that stage, PGmc `*líznōjaną` yields `lirnian` rather than expected OE `liornian`, and related witnesses such as `*líznōθi`, `*líznô`, and `*mízdai` likewise yield `lirnaþ`, `lirna`, and `merde` instead of `liornaþ`, `liorna`, and `meorde`.
 
 ## Caveats
-Do not use this draft card to claim chronology. It records an infrastructure gap, not a historical result.
+This card is one-sided in current testing. The later boundary is historically interpretable, but it is broad/far across SC044 rather than a tight local adjacency claim, and the report layer should continue to keep SC003 distinct from final `*z` deletion and to preserve the unresolved stage-label caution.
 
 ## Source files
-- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_batch_04_manifest.tsv`
-- `Germanic/docs/sound_changes/sound_change_inventory.tsv`
+- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01.tsv`
+- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_changes.tsv`
+- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_failures.tsv`

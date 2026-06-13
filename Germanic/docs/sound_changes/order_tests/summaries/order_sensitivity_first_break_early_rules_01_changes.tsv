@@ -1,0 +1,7 @@
+variant_id	change_id	display_name	direction	variant_order	crossed_change_id	crossed_display_name	crossed_rule_name	crossed_entry_type	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	baseline_matches_expected	variant_matches_expected	status_change	likely_break_stage_or_note
+SC002_later_order_93	SC002	Gm Simplification	later	93	SC094	Old English Remove Stars	OldEnglishRemoveStars	orthography_surface	dream	*dráugmaz	drēam	drēam	drēagm	yes	no	newly_failing	Crossing OldEnglishRemoveStars changed the output.
+SC002_later_order_93	SC002	Gm Simplification	later	93	SC094	Old English Remove Stars	OldEnglishRemoveStars	orthography_surface	team	*táugmaz	tēam	tēam	tēagm	yes	no	newly_failing	Crossing OldEnglishRemoveStars changed the output.
+SC003_later_order_44	SC003	Rhotacism	later	44	SC044	OE Breaking	OEBreaking	historical_sound_change	learn	*líznōjaną	liornian	liornian	lirnian	yes	no	newly_failing	Crossing OEBreaking changed the output.
+SC003_later_order_44	SC003	Rhotacism	later	44	SC044	OE Breaking	OEBreaking	historical_sound_change	learn (3sg)	*líznōθi	liornaþ	liornaþ	lirnaþ	yes	no	newly_failing	Crossing OEBreaking changed the output.
+SC003_later_order_44	SC003	Rhotacism	later	44	SC044	OE Breaking	OEBreaking	historical_sound_change	learn (iptv.2sg)	*líznô	liorna	liorna	lirna	yes	no	newly_failing	Crossing OEBreaking changed the output.
+SC003_later_order_44	SC003	Rhotacism	later	44	SC044	OE Breaking	OEBreaking	historical_sound_change	meed	*mízdai	meorde	meorde	merde	yes	no	newly_failing	Crossing OEBreaking changed the output.

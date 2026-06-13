@@ -28,12 +28,13 @@ This dossier concerns loss of `*g` before `*m` in the small lexical family repre
 
 ## Chronology/order-test status
 
-1. No validated chronology card existed before this pass.
-2. A draft chronology card is being added because the current first-break infrastructure skips SC002 as a bundled/non-explicit chain position.
-3. No earlier or later historical boundary is yet established.
+1. A validated chronology card now exists from the temporary early-rule first-break harness.
+2. The earlier search found no real break before the tested-chain boundary at order `2`, so the earlier side is boundary-only rather than historically positive.
+3. The later search breaks at `SC094` Old English Remove Stars: `*dráugmaz` yields `drēagm` instead of `drēam`, and `*táugmaz` yields `tēagm` instead of `tēam`.
+4. Because `SC094` is an orthography-surface support stage, the validated later break is non-historical rather than an ordinary sound-change chronology boundary.
 
 ## Cautions for eventual reader-facing prose
 
 1. If promoted later, the prose will need to say plainly that the evidence is narrow and lexical.
 2. The current inventory example `team` is source-backed lexically, but the sound change still lacks a stronger expository source.
-3. Reader-facing prose should wait until validated order evidence exists.
+3. Reader-facing prose should still wait until the source base is stronger; the chronology layer is now validated, but it does not yet provide an ordinary historical boundary.

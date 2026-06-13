@@ -32,12 +32,13 @@ This dossier concerns the change of medial `*z` to `*r`, represented in the inve
 
 ## Chronology/order-test status
 
-1. No validated chronology card existed before this pass.
-2. A draft chronology card is being added because the current first-break infrastructure skips SC003 as a bundled/non-explicit chain position.
-3. No earlier or later historical boundary is yet established inside the order-test layer.
+1. A validated chronology card now exists from the temporary early-rule first-break harness.
+2. The earlier search moved safely across SC002 down to order `2` and then reached the left edge of the tested historical chain with no real break, so the earlier side is boundary-only rather than positive.
+3. The later search finds a real historical break at `SC044` OE Breaking: `*líznōjaną` yields `lirnian` instead of `liornian`, with parallel failures in `learn (3sg)`, `learn (iptv.2sg)`, and `meed`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for eventual reader-facing prose
 
 1. Any later prose should keep rhotacism distinct from final `*z` deletion.
 2. The current stage label may need to be softened from `Proto-Germanic` toward a later West Germanic / Northwest Germanic formulation if the backend review confirms the caution in Ringe and Taylor.
-3. Reader-facing prose should wait until validated order evidence exists.
+3. Reader-facing prose should still wait until the stage-label review is resolved, even though the chronology layer is now validated.

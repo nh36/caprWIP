@@ -30,8 +30,10 @@ SC003 isolates the medial change of `*z` to `*r` in the families behind `deer`, 
 
 ## Chronology/order-test status
 
-1. No validated order-test evidence exists yet.
-2. A draft chronology card is being added only to record that the current runner skips this stage.
+1. Validated early-rule first-break evidence now exists for SC003.
+2. The earlier search moved safely across SC002 to order `2` and then reached the left edge of the tested historical chain with no real break, so the earlier side remains boundary-only.
+3. The later search breaks at `SC044` OE Breaking, where `learn`, `learn (3sg)`, `learn (iptv.2sg)`, and `meed` yield `lirnian`, `lirnaþ`, `lirna`, and `merde` instead of `liornian`, `liornaþ`, `liorna`, and `meorde`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for eventual reader-facing prose
 

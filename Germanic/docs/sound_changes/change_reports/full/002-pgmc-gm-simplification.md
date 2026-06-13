@@ -28,18 +28,26 @@ The rule is intentionally narrow. It captures the loss of `*g` before `*m` in th
 
 In the current inventory ordering, SC002 is the first historical sound change after the excluded support/input stage `SC001 EnglishProtoInput`, and it stands immediately before SC003 `PGmcRhotacism`. In the implementation, however, it still sits inside the bundled Proto-Germanic consonant block rather than as an independently reorderable chain member.
 
-That distinction matters for backend placement. The rule has a clear place in the modeled cascade, but the current order-test infrastructure still treats it as part of a bundle rather than as a validated standalone chronology node.
+That distinction still matters for backend placement. The production cascade keeps SC002 inside the bundle, but the temporary early-rule harness now expands the sandbox order so the rule can be tested as a standalone chronology target without changing the live FST.
 
 #### Order evidence
 
-Validated order evidence is not yet established. The existing batch manifest for first-break testing marks SC002 as `skipped`, with the explicit note that the current runner does not yet reorder inside bundles or non-explicit chain positions (`Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_batch_04_manifest.tsv`).
+Validated order evidence now exists through the temporary early-rule harness:
 
-That means no earlier or later historical boundary has yet been tested in a way comparable to the manifest-backed SC014-SC087 material. No exact wrong-output diagnostic is currently available, and the draft chronology card created in this pass therefore records missing chronology evidence rather than a positive chronology claim.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_failures.tsv`
+
+The earlier search found no real break before the tested-chain boundary at order `2`. SC002 is already the leftmost historical rule in that temporary harness, so the earlier side is boundary-only rather than a positive chronology constraint.
+
+The later search does find a real computational break at order `93` across `SC094` Old English Remove Stars. If PGmc Gm Simplification is delayed that far, PGmc `*dráugmaz` yields `drēagm` rather than `drēam`, and PGmc `*táugmaz` yields `tēagm` rather than `tēam`.
+
+That later break is not an ordinary historical chronology relation. `SC094` is an orthography-surface support stage, so the validated result is computationally real but non-historical.
 
 #### Interpretation
 
-SC002 is adequate for backend preparation but not yet for manifest entry. The historical phenomenon is real enough to justify a production-style source report and dossiers, but it still lacks validated order evidence and would benefit from stronger phonological source support beyond the lexical dictionary entries now in hand.
+SC002 is now better grounded than it was in the draft-only pass, because the chronology layer has been validated rather than merely blocked by infrastructure. Even so, the result remains weak for promotion: the earlier side is only a start-boundary observation, the later side breaks only at a non-historical orthography stage, and the source base is still narrow and mainly etymological.
 
 #### Remaining cautions
 
-The main caution is evidential. At present the source base for SC002 is mostly etymological, not a broad comparative discussion of the sound change as such. The current order-test infrastructure also skips the rule entirely, so no chronology statement should be inferred from the absence of failures. Until dedicated order evidence exists and the phonological literature base is broadened, SC002 should remain out of `report_manifest.tsv`.
+The main caution remains evidential. At present the source base for SC002 is mostly etymological, not a broad comparative discussion of the sound change as such. The validated chronology card also yields no ordinary historical boundary: it records a boundary-only earlier result and a non-historical orthography-surface later break. Until the phonological literature base is broadened and a stronger historical chronology claim becomes available, SC002 should remain out of `report_manifest.tsv`.

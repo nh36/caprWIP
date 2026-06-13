@@ -26,8 +26,10 @@ SC002 isolates loss of `*g` before `*m` in the lexical families behind `dream` a
 
 ## Chronology/order-test status
 
-1. No validated order-test evidence exists yet.
-2. A draft chronology card is being added only to record that the current runner skips this stage.
+1. Validated early-rule first-break evidence now exists for SC002.
+2. The earlier search found no real break before the tested-chain boundary at order `2`, so the earlier side is boundary-only rather than historically positive.
+3. The later search breaks only at `SC094` Old English Remove Stars, where `dream` and `team` yield `drēagm` and `tēagm` instead of `drēam` and `tēam`.
+4. Because `SC094` is an orthography-surface support stage, that later break is non-historical rather than an ordinary chronology boundary.
 
 ## Cautions for eventual reader-facing prose
 

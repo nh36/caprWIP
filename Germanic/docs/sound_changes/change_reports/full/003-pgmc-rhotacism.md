@@ -30,18 +30,26 @@ The implementation is broader than a strictly intervocalic `V_V` rule because th
 
 In the current inventory ordering, SC003 follows SC002 `PGmcGmSimplification` and precedes the Proto-West-Germanic developments that begin with SC004. In the implementation, however, it remains inside the same bundled Proto-Germanic consonant block that also contains final `*z` deletion.
 
-That placement explains the present backend status. SC003 clearly belongs in the historical inventory, but it is not yet exposed to the same standalone order-testing machinery that later manifest-backed rules use.
+That placement still matters, but the early-rule harness now exposes SC003 to standalone first-break testing without changing the production bundle. The rule is therefore no longer chronology-draft-only even though the live cascade remains bundled.
 
 #### Order evidence
 
-Validated order evidence is not yet established. The existing batch manifest for first-break testing marks SC003 as `skipped`, again because the current runner does not yet reorder inside bundles or non-explicit chain positions (`Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_batch_04_manifest.tsv`).
+Validated order evidence now exists through the temporary early-rule harness:
 
-No earlier or later historical boundary has therefore been validated for SC003 in the current order-test apparatus. No exact wrong-output diagnostic is available, and the draft chronology card created in this pass records missing chronology evidence rather than a positive chronology claim.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_failures.tsv`
+
+The earlier search moved SC003 safely across SC002 down to order `2` and then reached the left edge of the tested historical chain with no real break. That side is therefore boundary-only rather than a positive earlier chronology constraint.
+
+The later search does find a real historical break at order `44` across `SC044` OE Breaking. If PGmc Rhotacism is delayed past that stage, PGmc `*líznōjaną` yields `lirnian` rather than `liornian`, `*líznōθi` yields `lirnaþ` rather than `liornaþ`, `*líznô` yields `lirna` rather than `liorna`, and `*mízdai` yields `merde` rather than `meorde`.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
 
 #### Interpretation
 
-SC003 is stronger than SC002 in source support, but not yet ready for manifest entry. The historical phenomenon is well attested, yet the combination of missing validated order evidence and a potentially too-early inventory stage label means this rule should stay in backend preparation until the chronology and stage placement are clearer.
+SC003 is now substantially stronger than SC002 on the chronology side. It has a validated one-sided historical boundary and exact wrong-output diagnostics, and the literature support for the phenomenon itself is already solid. The remaining reason to hold it back from manifest promotion is not chronology but historical placement: the existing sources still encourage a more cautious stage label than the inventory's simple `Proto-Germanic` framing.
 
 #### Remaining cautions
 
-Two cautions matter most. First, backend prose should keep rhotacism distinct from final `*z` deletion, because the literature treats them as separate events with their own chronology. Second, the current `Proto-Germanic` stage label needs review against the stronger West Germanic / Northwest Germanic framing in the existing sources. Until that review and dedicated order testing are complete, SC003 should remain out of `report_manifest.tsv`.
+Two cautions still matter most. First, backend prose should keep rhotacism distinct from final `*z` deletion, because the literature treats them as separate events with their own chronology. Second, the current `Proto-Germanic` stage label still needs review against the stronger West Germanic / Northwest Germanic framing in the existing sources. The chronology question is now in much better shape, but until that stage-label review is resolved, SC003 should remain out of `report_manifest.tsv`.
