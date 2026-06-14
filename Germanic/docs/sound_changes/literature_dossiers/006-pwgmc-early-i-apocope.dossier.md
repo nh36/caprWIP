@@ -32,13 +32,13 @@ This dossier concerns the early loss of final `*i` after unstressed syllables be
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The old batch-04 manifest skipped SC006 only because `PWGmcChanges` was still bundled for first-break purposes.
-3. The current runner can now test SC006 directly with `--order-profile expanded-pwgmc`.
-4. No real first-break TSV output exists yet, so no validated earlier or later boundary is currently available.
+1. A validated chronology card now exists from the expanded-PWGmc first-break output family.
+2. The earlier search moved safely across SC005 and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side is boundary-only.
+3. The later search breaks at `SC034` OE Aw Long Diphthong: `*skáwōθi` yields `sċēaweþ` instead of `sċēawaþ`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for eventual reader-facing prose
 
 1. Emphasize the chronological importance of the rule for blocking later i-umlaut where the final trigger has already disappeared.
-2. Do not state a chronology boundary until real first-break TSV output exists.
+2. Treat the later `SC034` relation as broad/far rather than as a local seam.
 3. A later reader-facing chapter should probably foreground the suffixal evidence and `geoguþ`, then treat the other trace examples as supporting detail.

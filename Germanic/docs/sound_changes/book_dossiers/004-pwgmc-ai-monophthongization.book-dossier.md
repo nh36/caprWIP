@@ -29,9 +29,10 @@ SC004 isolates the West Germanic monophthongization of inherited `*ai`, especial
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner can now test SC004 directly with `--order-profile expanded-pwgmc`.
-3. No real first-break TSV output exists yet.
+1. Validated expanded-PWGmc first-break evidence now exists for SC004.
+2. The earlier search found no real break before the left edge of the tested expanded-PWGmc chain at order `4`, so the earlier side is boundary-only.
+3. The later search breaks at `SC036` OE Inter Stress Raising, where `*sáiwalō` yields `sāwel` instead of `sāwol`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for eventual reader-facing prose
 

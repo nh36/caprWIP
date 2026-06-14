@@ -35,14 +35,22 @@ That means the main backend blocker is no longer runner visibility. It is simply
 
 #### Order evidence
 
-No validated chronology card exists yet for SC006. The older batch-04 manifest lists it as skipped only because the bundled `PWGmcChanges` stage had not yet been made reorderable in first-break mode.
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
 
-The current runner can now test SC006 directly with `--order-profile expanded-pwgmc`, and the dry-run order inspection in this pass confirmed that SC006 resolves as the third rule in that expanded profile. No real first-break TSV output was produced here, so its earlier/later boundaries remain unvalidated and should not yet be narrated as historical constraints.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
+
+The earlier search moved SC006 safely across SC005 and SC004 down to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order `34` across `SC034` OE Aw Long Diphthong. If PWGmc Early I Apocope is delayed that far, PGmc `*skáwōθi` yields `sċēaweþ` rather than expected OE `sċēawaþ`.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
 
 #### Interpretation
 
-SC006 is a good backend singleton candidate. The historical phenomenon is well enough supported to justify a production-style report and dossiers, and the trace occurrence count is substantial enough to make later chronology work worthwhile. What it still lacks is the validated first-break TSV layer.
+SC006 works well as a short singleton note. The historical phenomenon is well supported, and the chronology layer now supplies a usable one-sided later boundary. The report's center of gravity should remain the anti-umlaut and suffixal evidence rather than an attempt to distribute equal weight across every current trace witness.
 
 #### Remaining cautions
 
-The major caution is not the existence of the rule but its current documentation boundary. Real first-break TSV output is still missing, and the retrieved source discussion is strongest for suffixal evidence and `geoguþ` rather than for every inventory witness. Until the chronology layer is computed from the expanded-PWGmc runner, SC006 should remain out of `report_manifest.tsv`.
+The major caution is not the existence of the rule but its scale. The retrieved source discussion is strongest for suffixal evidence and `geoguþ` rather than for every inventory witness, and the later `SC034` relation is broad/far rather than local. Those limits should remain visible even in a cautious singleton note.

@@ -25,9 +25,10 @@ SC005 isolates a narrow pre-`m` raising in unstressed endings, currently represe
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner can now test SC005 directly with `--order-profile expanded-pwgmc`.
-3. The `needs_human_review=yes` stage-label issue remains unresolved.
+1. Validated expanded-PWGmc first-break evidence now exists for SC005.
+2. The earlier search moved safely across SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side remains boundary-only.
+3. The later search breaks at `SC017` NWGmc U Lowering, where `*skúldramiz` yields `sċoldrum` instead of `sċuldrum`.
+4. The `needs_human_review=yes` stage-label issue remains unresolved.
 
 ## Cautions for eventual reader-facing prose
 

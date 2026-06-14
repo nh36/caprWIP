@@ -29,10 +29,11 @@ This dossier concerns the raising of unstressed noninitial `*a` to `*u` before f
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The old batch-04 manifest skipped SC005 only because `PWGmcChanges` was still bundled for first-break purposes.
-3. The current runner can now test SC005 directly with `--order-profile expanded-pwgmc`.
-4. The `needs_human_review=yes` stage-label issue remains explicit even though the computation path is now available.
+1. A validated chronology card now exists from the expanded-PWGmc first-break output family.
+2. The earlier search moved safely across SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side is boundary-only.
+3. The later search breaks at `SC017` NWGmc U Lowering: `*skúldramiz` yields `sċoldrum` instead of `sċuldrum`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
+5. The `needs_human_review=yes` stage-label issue remains explicit even though chronology is now validated.
 
 ## Cautions for eventual reader-facing prose
 

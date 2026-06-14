@@ -32,13 +32,13 @@ This dossier concerns the West Germanic monophthongization of inherited `*ai`, e
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The old batch-04 manifest skipped SC004 only because `PWGmcChanges` was still bundled for first-break purposes.
-3. The current runner can now test SC004 directly with `--order-profile expanded-pwgmc`.
-4. No real first-break TSV output exists yet, so no earlier or later historical boundary is currently established.
+1. A validated chronology card now exists from the expanded-PWGmc first-break output family.
+2. The earlier search found no real break before the left edge of the tested expanded-PWGmc chain at order `4`, so the earlier side is boundary-only rather than historically positive.
+3. The later search breaks at `SC036` OE Inter Stress Raising: `*sáiwalō` yields `sāwel` instead of `sāwol`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for eventual reader-facing prose
 
 1. Keep the word-final unstressed `*ai` evidence distinct from the broader CAPR packaging of nonfinal `*ai > *ā`.
-2. Do not overstate the chronology until real first-break TSV output exists.
+2. Treat the later `SC036` relation as broad/far rather than as a local seam.
 3. A later reader-facing chapter should probably treat this as a short early singleton rather than as a broad survey chapter.

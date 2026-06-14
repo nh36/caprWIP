@@ -30,9 +30,10 @@ SC006 isolates the early loss of final `*i` after unstressed syllables before la
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner can now test SC006 directly with `--order-profile expanded-pwgmc`.
-3. No real first-break TSV output exists yet.
+1. Validated expanded-PWGmc first-break evidence now exists for SC006.
+2. The earlier search moved safely across SC005 and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side remains boundary-only.
+3. The later search breaks at `SC034` OE Aw Long Diphthong, where `*skáwōθi` yields `sċēaweþ` instead of `sċēawaþ`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for eventual reader-facing prose
 

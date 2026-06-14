@@ -34,14 +34,22 @@ That bundle position no longer blocks chronology testing in principle. The curre
 
 #### Order evidence
 
-No validated chronology card exists yet for SC005. The old batch-04 manifest marks it skipped only because the earlier first-break workflow did not expand `PWGmcChanges` into explicit reorderable stages.
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
 
-The current runner can now test SC005 directly with `--order-profile expanded-pwgmc`, and the dry-run order inspection in this pass confirmed that SC005 resolves as the second rule in that expanded profile. No real first-break TSV output was produced here, however, so no earlier/later historical boundary should yet be claimed.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
+
+The earlier search moved SC005 safely across SC004 down to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order `17` across `SC017` NWGmc U Lowering. If NWGmc A To U Before M is delayed that far, PGmc `*skúldramiz` yields `sċoldrum` rather than expected OE `sċuldrum`.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
 
 #### Interpretation
 
-SC005 is a cautious singleton candidate, but it is not yet ready for manifest promotion. The source support is real enough to justify a backend report and dossiers, yet the stage label remains under human review and the chronology layer is still missing real first-break TSV evidence.
+SC005 is a cautious singleton candidate. The source support is real enough to justify a backend report and a validated chronology card now exists, but the rule still reads best as a narrowly framed note because the strongest evidence is morphologized ending behavior rather than a broad lexical set.
 
 #### Remaining cautions
 
-Three cautions remain explicit. First, the stage label is unresolved: the current literature support fits a wider North/West-Germanic inflectional development at least as well as a narrowly Northwest-Germanic singleton. Second, the compact trace currently gives only one lexical witness, `shoulder`, while the source prose is mostly morphological rather than lexical. Third, until real first-break TSV output exists, SC005 should remain out of `report_manifest.tsv`.
+Three cautions remain explicit. First, the stage label is unresolved: the current literature support fits a wider North/West-Germanic inflectional development at least as well as a narrowly Northwest-Germanic singleton. Second, the compact trace currently gives only one lexical witness, `shoulder`, while the source prose is mostly morphological rather than lexical. Third, the chronology card is one-sided and broad/far on its later side. Those limits keep SC005 as backend-preparation only for now.

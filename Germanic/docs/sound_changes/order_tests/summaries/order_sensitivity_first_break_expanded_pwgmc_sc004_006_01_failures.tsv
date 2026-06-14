@@ -1,0 +1,4 @@
+variant_id	change_id	direction	variant_order	crossed_change_id	crossed_display_name	crossed_rule_name	crossed_entry_type	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	failure_type	note
+SC004_later_order_36	SC004	later	36	SC036	OE Inter Stress Raising	OEInterStressRaising	historical_sound_change	soul	*sáiwalō	sāwol	sāwol	sāwel	newly_failing	Crossing OEInterStressRaising changed the output.
+SC005_later_order_17	SC005	later	17	SC017	NWGmc U Lowering	NWGmcULowering	historical_sound_change	shoulder	*skúldramiz	sċuldrum	sċuldrum	sċoldrum	newly_failing	Crossing NWGmcULowering changed the output.
+SC006_later_order_34	SC006	later	34	SC034	OE Aw Long Diphthong	OEAwLongDiphthong	historical_sound_change	show (3sg)	*skáwōθi	sċēawaþ	sċēawaþ	sċēaweþ	newly_failing	Crossing OEAwLongDiphthong changed the output.
