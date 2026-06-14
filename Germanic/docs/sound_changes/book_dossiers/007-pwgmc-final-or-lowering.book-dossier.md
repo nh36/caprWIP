@@ -26,9 +26,10 @@ SC007 isolates the lowering of final bimoric `*ō` to `*a` before word-final `*r
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner can test SC007 directly with `--order-profile expanded-pwgmc`.
-3. No real first-break TSV output exists yet.
+1. Validated expanded-PWGmc first-break evidence now exists for SC007.
+2. The earlier search moved safely across SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side is boundary-only.
+3. The later search breaks at `SC043` Anglo Frisian Brightening, where `*wátōr` yields `water` instead of `wæter`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for future reader-facing prose
 

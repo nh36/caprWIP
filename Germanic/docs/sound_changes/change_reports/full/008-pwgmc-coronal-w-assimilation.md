@@ -35,14 +35,22 @@ That keeps the chronology path straightforward even though the live bundled casc
 
 #### Order evidence
 
-No validated chronology card exists yet for SC008. The current runner can test it directly with `--order-profile expanded-pwgmc`, and dry-run order inspection in this pass confirmed that SC008 resolves as the fifth rule in that expanded profile.
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
 
-What is still missing is real earlier/later first-break TSV output. Until those TSVs exist, no historical boundary should be claimed.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_failures.tsv`
+
+The earlier search moved SC008 safely across SC007, SC006, SC005, and SC004 down to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order `31` across `SC031` OE WW Simplification. If PWGmc Coronal W Assimilation is delayed that far, PGmc `*fédwōr` yields `fēowwer` rather than expected OE `fēower`.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
 
 #### Interpretation
 
-SC008 is a narrow backend singleton candidate. The source support for the phenomenon is good, but the number of core historical examples is very small. That makes the rule appropriate for backend preparation, but still too thin to stand alone as a fully anchored historical note in the absence of validated chronology output.
+SC008 works well as a narrow singleton note. The source support for the phenomenon is good, the chronology layer now yields a usable later boundary, and the pronominal support keeps the rule from collapsing into a single-example convenience. That is enough for a cautious manifest-backed note.
 
 #### Remaining cautions
 
-The main caution is concentration of evidence. The historical case depends on a small cluster of forms, especially `four` and the plural-pronominal material. Any later prose should keep the rule tightly bounded and should not let the broad formal implementation read as if the sources had established a much wider lexical scope.
+The main caution is concentration of evidence. The historical case depends on a small cluster of forms, especially `four` and the plural-pronominal material. The earlier side of the chronology card is also only boundary-only, while the later `SC031` relation is broad/far rather than local. Any later prose should keep the rule tightly bounded and should not let the broad formal implementation read as if the sources had established a much wider lexical scope.

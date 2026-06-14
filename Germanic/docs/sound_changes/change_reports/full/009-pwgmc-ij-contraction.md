@@ -35,14 +35,22 @@ That means chronology testing is procedurally ready even though the historical s
 
 #### Order evidence
 
-No validated chronology card exists yet for SC009. The current runner can test it directly with `--order-profile expanded-pwgmc`, and dry-run order inspection in this pass confirmed that SC009 resolves as the sixth rule in that expanded profile.
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
 
-What is still missing is real earlier/later first-break TSV output. Until those TSVs exist, no historical boundary should be claimed.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_failures.tsv`
+
+The earlier search moved SC009 safely across SC008, SC007, SC006, SC005, and SC004 down to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order `32` across `SC032` OE Diphthong Leveling. If PWGmc Ij Contraction is delayed that far, PGmc `*fríjōndz` yields `friund` rather than expected OE `frēond`.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
 
 #### Interpretation
 
-SC009 is best treated as a cautious backend note rather than a strong core report. The historical change is real enough to record, but the source base itself warns against broad generalization beyond the `friend` sequence.
+SC009 is best treated as a cautious backend note rather than a manifest-backed singleton. The historical change is real enough to record, and the chronology layer is now validated, but the source base itself warns against broad generalization beyond the `friend` sequence.
 
 #### Remaining cautions
 
-The key caution is lexical uniqueness. Any later prose should keep the `friend` family at the center and should not let CAPR's formal rule read like a major chapter-scale West Germanic vowel change. Even with future chronology output, this change may remain better suited to a short note than to a broad standalone discussion.
+The key caution is lexical uniqueness. The later `SC032` boundary is real but broad/far, while the `friend` family remains effectively the whole historical case. Any later prose should keep that family at the center and should not let CAPR's formal rule read like a major chapter-scale West Germanic vowel change. For now this is still too narrow for `report_manifest.tsv`.

@@ -28,10 +28,10 @@ This dossier concerns the lowering of final bimoric `*ō` to `*a` before word-fi
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner already exposes SC007 directly with `--order-profile expanded-pwgmc`.
-3. Dry-run order inspection in this pass placed SC007 as the fourth rule in the expanded PWGmc order.
-4. No real first-break TSV output exists yet.
+1. A validated chronology card now exists from the expanded-PWGmc first-break output family.
+2. The earlier search moved safely across SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side is boundary-only.
+3. The later search breaks at `SC043` Anglo Frisian Brightening: `*wátōr` yields `water` instead of `wæter`.
+4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
 ## Cautions for future reader-facing prose
 

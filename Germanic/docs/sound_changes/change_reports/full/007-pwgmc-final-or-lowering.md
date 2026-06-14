@@ -34,14 +34,22 @@ That means the rule already has a clean chronology-test path even though it rema
 
 #### Order evidence
 
-No validated chronology card exists yet for SC007. The current runner can test it directly with `--order-profile expanded-pwgmc`, and dry-run order inspection in this pass confirmed that SC007 resolves as the fourth rule in that expanded profile.
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
 
-What is still missing is real earlier/later first-break TSV output. Until those TSVs exist, no historical boundary should be claimed.
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_failures.tsv`
+
+The earlier search moved SC007 safely across SC006, SC005, and SC004 down to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order `43` across `SC043` Anglo Frisian Brightening. If PWGmc Final Or Lowering is delayed that far, PGmc `*wátōr` yields `water` rather than expected OE `wæter`.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
 
 #### Interpretation
 
-SC007 is a plausible singleton backend note. The source support is real, but narrow, and the historical story is tied closely to a small lexical set. That makes it suitable for backend preparation now, but not yet strong enough to stand as a fully anchored historical note on its own.
+SC007 works best as a narrow singleton note. The source support is real, the chronology layer now yields one usable later boundary, and the witness set is coherent even if small. That is enough for a cautious manifest-backed note, provided the report keeps the narrow environment and limited lexical base explicit.
 
 #### Remaining cautions
 
-The chief caution is scope. The rule is narrowly conditioned and strongly tied to the `four` and `water` evidence. Any later prose should resist turning this into a broad long-vowel chapter or implying that the small witness set supports a much larger phenomenon than the sources actually state.
+The chief caution is scope. The rule is narrowly conditioned and strongly tied to the `four` and `water` evidence. The earlier side of the chronology card is also only boundary-only, while the later `SC043` relation is broad/far rather than local. Any later prose should resist turning this into a broad long-vowel chapter or implying that the small witness set supports a much larger phenomenon than the sources actually state.
