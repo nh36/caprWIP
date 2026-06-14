@@ -53,6 +53,9 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_16.md",
     "reader_facing_local_section_16_report.md",
     "reader_facing_manifest_coverage_04.md",
+    "reader_facing_local_section_17.md",
+    "reader_facing_local_section_17_report.md",
+    "reader_facing_manifest_coverage_05.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_check_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",
@@ -77,6 +80,8 @@ DEFAULT_SKIP = {
     "reader_facing_manifest_coverage_03.md",
     "reader_facing_local_section_16_report.md",
     "reader_facing_manifest_coverage_04.md",
+    "reader_facing_local_section_17_report.md",
+    "reader_facing_manifest_coverage_05.md",
 }
 
 

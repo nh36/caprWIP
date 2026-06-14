@@ -4,13 +4,13 @@ _Generated from the introduction prose embedded in the active reader-facing buil
 
 ## Summary
 
-- Build script: `/Users/nathanhill/Code/capr-v3-working/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_16_docker.sh`.
+- Build script: `/Users/nathanhill/Code/capr-v3-working/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_17_docker.sh`.
 - Introduction paragraphs checked: 2.
 - Issues found: 0.
 
 ## Introduction paragraphs
 
-1. This section follows an ordered stretch from West Germanic rhotacism, Proto-West-Germanic ai-monophthongization, early i-apocope, the earliest unstressed vowel changes, early vocalic and final changes, nasal spirant changes, preconsonantal x-loss, awj glide formation, au-fronting, and the West Saxon diphthong sequence through brightening, breaking, restoration, palatalization, weak-tail reduction, contraction, and r-metathesis.
+1. This section follows an ordered stretch from West Germanic rhotacism, Proto-West-Germanic ai-monophthongization, early i-apocope, final *ō-lowering before *r, coronal-w assimilation, the earliest unstressed vowel changes, early vocalic and final changes, nasal spirant changes, preconsonantal x-loss, awj glide formation, au-fronting, and the West Saxon diphthong sequence through brightening, breaking, restoration, palatalization, weak-tail reduction, contraction, and r-metathesis.
 2. Some chapters treat broad vowel histories, while others record smaller rules whose value lies in the witness words that fix their place within the finite-state sequence.
 
 ## Issues

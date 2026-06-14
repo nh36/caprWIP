@@ -4,7 +4,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 77.
+- Sections checked: 79.
 - Sections with warnings: 0.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
@@ -12,6 +12,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism} | yes | yes | yes | yes | yes | yes | no | — |
 | 004-pwgmc-ai-monophthongization.md | SC004. Proto-West-Germanic ai-monophthongization (`PWGmcAiMonophthongization`) {#rule-PWGmcAiMonophthongization} | yes | yes | yes | yes | yes | yes | no | — |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | yes | yes | yes | yes | yes | yes | no | — |
+| 007-final-o-lowering-before-r.md | SC007. Lowering of final bimoric \emph{*ō} before \emph{*r} (`PWGmcFinalOrLowering`) {#rule-PWGmcFinalOrLowering} | yes | yes | yes | yes | yes | yes | no | — |
+| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | yes | yes | yes | yes | yes | yes | no | — |
 | 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`NWGmcUnstressedAiMonophthongization`) {#rule-NWGmcUnstressedAiMonophthongization} | yes | no | yes | yes | no | yes | no | — |
 | 014-015-opening-vowel-prelude.md | SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering} | yes | yes | yes | yes | yes | yes | no | — |
 | 016-017-west-saxon-palatal-glide-and-u-lowering.md | SC016. West Saxon palatal glide before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | yes | yes | yes | yes | yes | yes | no | — |
