@@ -51,6 +51,9 @@ DEFAULT_SKIP = {
     "reader_facing_local_section_15.md",
     "reader_facing_local_section_15_report.md",
     "reader_facing_manifest_coverage_03.md",
+    "reader_facing_local_section_16.md",
+    "reader_facing_local_section_16_report.md",
+    "reader_facing_manifest_coverage_04.md",
     "reader_facing_chronology_evidence_audit_01.md",
     "reader_facing_chronology_evidence_qc_01_report.md",
     "reader_facing_citation_check_01.md",
@@ -72,6 +75,8 @@ DEFAULT_SKIP = {
     "reader_facing_manifest_coverage_01.md",
     "reader_facing_local_section_15_report.md",
     "reader_facing_manifest_coverage_03.md",
+    "reader_facing_local_section_16_report.md",
+    "reader_facing_manifest_coverage_04.md",
 }
 
 RULE_HEADING_RE = re.compile(r"^##\s+(SC\d{3}\.[^\n]+)$", re.M)

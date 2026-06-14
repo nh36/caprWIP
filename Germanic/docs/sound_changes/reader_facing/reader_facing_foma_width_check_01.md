@@ -4,13 +4,15 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 75.
-- Blocks over the conservative 90-character threshold: 10.
+- Foma blocks checked: 77.
+- Blocks over the conservative 90-character threshold: 11.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
 | --- | --- | --- | --- | --- |
 | 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism} | 13 | 42 | no |
+| 004-pwgmc-ai-monophthongization.md | SC004. Proto-West-Germanic ai-monophthongization (`PWGmcAiMonophthongization`) {#rule-PWGmcAiMonophthongization} | 13 | 34 | no |
+| 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | 13 | 103 | yes |
 | 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`NWGmcUnstressedAiMonophthongization`) {#rule-NWGmcUnstressedAiMonophthongization} | 15 | 44 | no |
 | 014-015-opening-vowel-prelude.md | SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering} | 33 | 55 | no |
 | 016-017-west-saxon-palatal-glide-and-u-lowering.md | SC016. West Saxon palatal glide before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | 19 | 41 | no |
@@ -87,6 +89,11 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | 13 | 63 | no |
 
 ## Lines that would have overflowed under the old rendering
+
+### 006-early-i-apocope.md:13 — SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope}
+
+- `99` chars — `    {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.,`
+- `103` chars — `    {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ {*z} .#.`
 
 ### 042-surviving-bimoric-o-unrounding.md:13 — SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding}
 
