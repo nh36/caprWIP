@@ -27,10 +27,10 @@ SC011 isolates the development of postconsonantal `*j` to syllabic `*i` after fi
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner can test SC011 directly with `--order-profile expanded-pwgmc`.
-3. No real first-break TSV output exists yet.
-4. Even with clean chronology, SC011 may remain only conditionally suitable for reader-facing promotion because the current trace layer shows no direct hits.
+1. A validated chronology card now exists at `Germanic/docs/sound_changes/order_tests/chronology_cards/SC011-pwgmc-syllabic-j.md`.
+2. The earlier side breaks immediately at `SC010` `PWGmcJGemination`, where `*nátją` yields `nete` instead of expected `nett`.
+3. The later side reaches order `86` with no real break before the current SC087 boundary.
+4. SC011 is now suitable for a cautious reader-facing singleton note, but the trace-light status must remain visible.
 
 ## Cautions for future reader-facing prose
 

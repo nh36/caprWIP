@@ -29,10 +29,10 @@ This dossier concerns the hardening of voiced dental fricative `*ð` to stop `*d
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner already exposes SC013 directly with `--order-profile expanded-pwgmc`.
-3. Dry-run order inspection in this pass placed SC013 as the tenth rule in the expanded PWGmc order.
-4. No real first-break TSV output exists yet.
+1. A validated chronology card now exists at `Germanic/docs/sound_changes/order_tests/chronology_cards/SC013-pwgmc-dental-hardening.md`.
+2. The earlier search moved safely across SC012, SC011, SC010, SC009, SC008, SC007, SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break.
+3. The later search reached order `86` with no real break before the current SC087 boundary.
+4. The result is fully negative / boundary-only and therefore does not itself supply a positive chronology constraint.
 
 ## Cautions for future reader-facing prose
 

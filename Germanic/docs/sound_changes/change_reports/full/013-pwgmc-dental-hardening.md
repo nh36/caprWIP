@@ -34,14 +34,14 @@ That makes SC013 a natural right-edge singleton in the present backend-preparati
 
 #### Order evidence
 
-No validated chronology card exists yet for SC013. The current runner can test it directly with `--order-profile expanded-pwgmc`, and dry-run order inspection in this pass confirmed that SC013 resolves as the tenth rule in the expanded PWGmc order.
+Validated expanded-PWGmc first-break TSV output now exists for SC013, and the chronology card is complete. The earlier search moved safely across SC012, SC011, SC010, SC009, SC008, SC007, SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break.
 
-What is still missing is real earlier/later first-break TSV output. Until those TSVs exist, no historical boundary should yet be claimed.
+The later search likewise reached order `86` with no real break before the current SC087 boundary. Both sides are therefore boundary-only / chronology-negative in current testing.
 
 #### Interpretation
 
-SC013 is a strong backend singleton candidate. The source support for the basic change is direct, the implementation is straightforward, and the rule stands at a clean structural edge before the SC014 onward sequence. Its main missing piece is validated chronology output.
+SC013 can still stand as a short finished singleton note. The source support for the basic change is direct, the implementation is straightforward, and the negative chronology card is acceptable so long as the note stays precise and does not claim a positive local ordering that current testing does not show.
 
 #### Remaining cautions
 
-The chief caution is evidential balance. The systemic historical statement is strong, but the current lexical witness layer is still fairly compact, and no validated chronology card exists yet. Any later prose should keep the rule precise and should not pretend that the chronology is already established before the first-break TSVs have been validated.
+The chief caution is methodological. The systemic historical statement is strong, but both sides of the validated chronology card are boundary-only. Any later prose should keep the rule precise and should not turn the tested-chain left edge or the SC087 search boundary into historical anchors.

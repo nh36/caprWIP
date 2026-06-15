@@ -30,10 +30,10 @@ This dossier concerns the development by which postconsonantal `*j` becomes syll
 
 ## Chronology/order-test status
 
-1. No validated chronology card exists yet.
-2. The ordinary runner already exposes SC011 directly with `--order-profile expanded-pwgmc`.
-3. Dry-run order inspection in this pass placed SC011 as the eighth rule in the expanded PWGmc order.
-4. No real first-break TSV output exists yet.
+1. A validated chronology card now exists at `Germanic/docs/sound_changes/order_tests/chronology_cards/SC011-pwgmc-syllabic-j.md`.
+2. The earlier search breaks immediately at `SC010` `PWGmcJGemination`, where `*nátją` yields `nete` instead of expected `nett`.
+3. The later search reaches order `86` with no real break before the current SC087 boundary.
+4. This gives SC011 one real local left boundary plus a boundary-only later side.
 
 ## Cautions for future reader-facing prose
 

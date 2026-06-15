@@ -46,14 +46,14 @@ The local implementation logic also makes SC010 important for the next rule. In 
 
 #### Order evidence
 
-No validated chronology card exists yet for SC010. The current runner can test it directly with `--order-profile expanded-pwgmc`, and dry-run order inspection in this pass confirmed that SC010 resolves as the seventh rule in the expanded PWGmc order.
+Validated expanded-PWGmc first-break TSV output now exists for SC010, and the chronology card is complete. The earlier search moved safely across SC009, SC008, SC007, SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side is boundary-only.
 
-What is still missing is real earlier/later first-break TSV output. Until those TSVs exist, no historical boundary should yet be claimed.
+The later search finds an immediate real break at SC011 `PWGmcSyllabicJ`: if SC010 is delayed to order `11`, PGmc `*nátją` yields `nete` instead of expected OE `nett`. That is a tight local reciprocal boundary with SC011 rather than a broad/far rightward limit.
 
 #### Interpretation
 
-SC010 is a plausible singleton backend note and likely a stronger candidate than some of the immediately preceding rules. The source support is good, the trace presence is substantial, and the implementation captures a recognized West Germanic development. What it still lacks is validated chronology output.
+SC010 can now stand as a cautious singleton note. The source support is good, the trace presence is substantial, and the validated order evidence recovers a tight local seam with SC011 rather than only a distant broad/far boundary.
 
 #### Remaining cautions
 
-The main cautions are internal and chronological. The rule is well supported historically, but the present pass does not yet establish its exact earlier/later first-break boundaries. Any later prose should also keep the relation to SC011 visible without implying that the two rules must become a single grouped unit.
+The main caution is scope. The rule is well supported historically, but the earlier side remains boundary-only at the left edge of the tested expanded-PWGmc chain. Any later prose should keep the relation to SC011 visible without turning the pair into a mandatory grouped chapter or enlarging SC010 into a general consonant-doubling chapter.

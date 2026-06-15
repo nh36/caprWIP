@@ -35,14 +35,14 @@ Its most important local relation is to SC010. In CAPR, j-gemination must preced
 
 #### Order evidence
 
-No validated chronology card exists yet for SC011. The current runner can test it directly with `--order-profile expanded-pwgmc`, and dry-run order inspection in this pass confirmed that SC011 resolves as the eighth rule in the expanded PWGmc order.
+Validated expanded-PWGmc first-break TSV output now exists for SC011, and the chronology card is complete. The earlier search finds an immediate real break at SC010 `PWGmcJGemination`: if SC011 is moved earlier to order `10`, PGmc `*nátją` yields `nete` instead of expected OE `nett`.
 
-What is still missing is real earlier/later first-break TSV output. Until those TSVs exist, no historical boundary should yet be claimed.
+The later search then reaches order `86` with no real break before the current SC087 boundary, so the later side is boundary-only rather than a positive historical limit.
 
 #### Interpretation
 
-SC011 is a backend note with good source support but weak current trace visibility. It is worth preparing now because it is structurally important to the early PWGmc cascade, but its zero-count trace status means it may later remain a modest or highly conditional singleton note.
+SC011 can now stand as a cautious singleton note. The handbook support is good and the validated order evidence recovers a real local seam with SC010, even though the current compact trace still gives the rule a zero direct occurrence count of its own.
 
 #### Remaining cautions
 
-The main caution is the mismatch between source support and present trace visibility. The historical phenomenon is real, but the compact trace currently yields no direct SC011 hits. Any later prose should keep that limitation visible and should not let the modeled importance of the rule outrun the current lexical evidence.
+The main caution is the mismatch between the validated boundary and the present trace layer. The historical phenomenon is real and the SC010/SC011 seam is now explicit, but the compact trace still yields no direct SC011 hits. Any later prose should keep that limitation visible and should not inflate the rule into a broader high-vowel chapter.
