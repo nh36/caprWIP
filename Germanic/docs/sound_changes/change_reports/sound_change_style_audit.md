@@ -4,7 +4,7 @@ _Generated from `report_manifest.tsv`, `sound_change_half_scaffold.tsv`, and `ST
 
 ## Summary
 
-- Reports checked: 50.
+- Reports checked: 53.
 - Reports with one or more findings: 0.
 - Total findings counted: 0.
 - Structure findings: 0.
@@ -17,4 +17,4 @@ _Generated from `report_manifest.tsv`, `sound_change_half_scaffold.tsv`, and `ST
 
 ## Reports with no findings
 
-- 50 report(s) matched the current audit without findings.
+- 53 report(s) matched the current audit without findings.

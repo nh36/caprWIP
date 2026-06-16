@@ -35,8 +35,8 @@ This dossier concerns the raising of unstressed noninitial `*a` to `*u` before f
 4. That later boundary is historically interpretable but broad/far rather than tightly local.
 5. The `needs_human_review=yes` stage-label issue remains explicit even though chronology is now validated.
 
-## Cautions for eventual reader-facing prose
+## Cautions for reader-facing prose
 
 1. Keep the stage-label uncertainty visible.
-2. Do not write this as a settled Northwest-Germanic singleton until the label review is resolved.
-3. A later chapter would need to explain that the strongest source support is morphological ending evidence, not just the single lexical trace witness.
+2. Write this as a cautious singleton note whose strongest evidence is morphological ending behavior before final `*m`.
+3. Do not let the single lexical trace witness `shoulder` carry the whole argument by itself.

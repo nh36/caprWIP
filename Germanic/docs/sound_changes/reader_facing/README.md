@@ -271,6 +271,19 @@ This writes:
 - `reader_facing_local_section_18.md`
 - `reader_facing_local_section_18.pdf`
 
+To extend the same ordered section farther leftward by adding unstressed
+\emph{*a}-raising before final \emph{*m}, \emph{ij}-contraction in the `friend`
+family, and \emph{lþ}-voicing, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_19.md`
+- `reader_facing_local_section_19.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

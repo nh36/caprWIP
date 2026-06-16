@@ -49,8 +49,8 @@ That later boundary is historically interpretable, but it is broad/far rather th
 
 #### Interpretation
 
-SC009 is best treated as a cautious backend note rather than a manifest-backed singleton. The historical change is real enough to record, and the chronology layer is now validated, but the source base itself warns against broad generalization beyond the `friend` sequence.
+SC009 can now stand as a short lexical singleton note. The historical change is real enough to explain the `friend` family explicitly, and the validated chronology shows that the rule cannot simply be delayed indefinitely. The uniqueness of the `friend` family should remain part of the chapter rather than a reason to omit it.
 
 #### Remaining cautions
 
-The key caution is lexical uniqueness. The later `SC032` boundary is real but broad/far, while the `friend` family remains effectively the whole historical case. Any later prose should keep that family at the center and should not let CAPR's formal rule read like a major chapter-scale West Germanic vowel change. For now this is still too narrow for `report_manifest.tsv`.
+The key caution is lexical uniqueness. The later `SC032` boundary is real but broad/far, while the `friend` family remains effectively the whole historical case. Any later prose should keep that family at the center and should not let CAPR's formal rule read like a major chapter-scale West Germanic vowel change.

@@ -40,8 +40,8 @@ The later search likewise reached order `86` with no real break before the curre
 
 #### Interpretation
 
-SC012 remains a useful backend note with real historical support, but the present evidence does not yet justify turning it into a finished singleton note. The underlying sound change is credible, yet the best current stage wording is narrower than the inventory's label and the validated chronology card supplies no positive boundary on either side.
+SC012 can now stand as a cautious singleton note. The underlying sound change is credible and source-supported, and the sequence should account for it explicitly even though the validated chronology card supplies no positive local boundary on either side.
 
 #### Remaining cautions
 
-Two cautions matter most. First, the historical stage may be narrower than the inventory's plain PWGmc framing, since Ringe and Taylor describe the change as northern WGmc. Second, the validated chronology card is negative on both sides and therefore supplies no positive local ordering claim. Until those points are resolved more fully, SC012 should remain out of `report_manifest.tsv`.
+Two cautions matter most. First, the historical stage may be narrower than the inventory's plain PWGmc framing, since Ringe and Taylor describe the change as northern WGmc. Second, the validated chronology card is negative on both sides and therefore supplies no positive local ordering claim. The chapter should keep both cautions visible and should not present the rule as a tightly anchored local seam.

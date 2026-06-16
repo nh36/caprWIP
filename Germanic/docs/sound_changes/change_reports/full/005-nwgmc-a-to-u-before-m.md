@@ -48,8 +48,8 @@ That later boundary is historically interpretable, but it is broad/far rather th
 
 #### Interpretation
 
-SC005 is a cautious singleton candidate. The source support is real enough to justify a backend report and a validated chronology card now exists, but the rule still reads best as a narrowly framed note because the strongest evidence is morphologized ending behavior rather than a broad lexical set.
+SC005 can now stand as a cautious singleton note. The source support points to a real unstressed-vowel development before final `*m` in inflectional material, and the validated chronology card adds a real later boundary even though that boundary is broad/far rather than local. The section should not make the whole case rest on the compact trace witness `shoulder`.
 
 #### Remaining cautions
 
-Three cautions remain explicit. First, the stage label is unresolved: the current literature support fits a wider North/West-Germanic inflectional development at least as well as a narrowly Northwest-Germanic singleton. Second, the compact trace currently gives only one lexical witness, `shoulder`, while the source prose is mostly morphological rather than lexical. Third, the chronology card is one-sided and broad/far on its later side. Those limits keep SC005 as backend-preparation only for now.
+Three cautions remain explicit. First, the stage label is unresolved: the current literature support fits a wider North/West-Germanic inflectional development at least as well as a narrowly Northwest-Germanic singleton. Second, the compact trace currently gives only one lexical witness, `shoulder`, while the source prose is mostly morphological rather than lexical. Third, the chronology card is one-sided and broad/far on its later side. Those limits should remain visible in prose rather than being used as grounds for omission.

@@ -31,7 +31,7 @@ SC012 isolates the development of word-internal `*lþ` to `*ld`.
 1. A validated chronology card now exists at `Germanic/docs/sound_changes/order_tests/chronology_cards/SC012-pwgmc-l-th-voicing.md`.
 2. The earlier side is boundary-only: the search moved safely across SC011, SC010, SC009, SC008, SC007, SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break.
 3. The later side reached order `86` with no real break before the current SC087 boundary.
-4. SC012 is not yet suitable for reader-facing promotion as a singleton note because the current card is negative on both sides and the stage-label caution is still unresolved.
+4. SC012 is now suitable for a cautious reader-facing singleton note, but the stage-label caution and the fully negative chronology must stay explicit.
 
 ## Cautions for future reader-facing prose
 

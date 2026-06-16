@@ -32,8 +32,8 @@ This dossier concerns the contraction of `*ijo` to `*iu` in the `friend` family.
 3. The later search breaks at `SC032` OE Diphthong Leveling: `*fríjōndz` yields `friund` instead of `frēond`.
 4. That later boundary is historically interpretable but broad/far rather than tightly local.
 
-## Cautions for future reader-facing prose
+## Cautions for reader-facing prose
 
 1. Keep the `friend` family at the center.
 2. Do not generalize beyond the single historical sequence more than the source itself allows.
-3. Even with later chronology output, this may remain better suited to a brief note than to a large standalone chapter.
+3. Treat this as a short lexical note rather than as evidence for a broadly productive sound law.

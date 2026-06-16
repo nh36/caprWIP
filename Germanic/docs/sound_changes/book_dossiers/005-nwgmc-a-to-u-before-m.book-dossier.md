@@ -28,10 +28,10 @@ SC005 isolates a narrow pre-`m` raising in unstressed endings, currently represe
 1. Validated expanded-PWGmc first-break evidence now exists for SC005.
 2. The earlier search moved safely across SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side remains boundary-only.
 3. The later search breaks at `SC017` NWGmc U Lowering, where `*skúldramiz` yields `sċoldrum` instead of `sċuldrum`.
-4. The `needs_human_review=yes` stage-label issue remains unresolved.
+4. SC005 is now suitable for a cautious reader-facing singleton note because the inflectional development is linguistically real, even though the stage label remains cautious and the later boundary is broad/far.
 
 ## Cautions for eventual reader-facing prose
 
-1. Keep the human-review label visible.
+1. Keep the stage-label caution visible.
 2. Do not smooth away the mismatch between the current `NWGmc` label and the wider source framing.
-3. Treat chronology as unresolved until real first-break TSV output exists.
+3. Keep the inflectional ending evidence central and do not let `shoulder` carry the whole case.

@@ -33,10 +33,10 @@ This dossier concerns the development of word-internal `*lþ` to `*ld`.
 1. A validated chronology card now exists at `Germanic/docs/sound_changes/order_tests/chronology_cards/SC012-pwgmc-l-th-voicing.md`.
 2. The earlier search moved safely across SC011, SC010, SC009, SC008, SC007, SC006, SC005, and SC004 to order `4` and then reached the left edge of the tested expanded-PWGmc chain with no real break.
 3. The later search reached order `86` with no real break before the current SC087 boundary.
-4. The result is fully negative / boundary-only and does not yet give a positive chronology constraint.
+4. The result is fully negative / boundary-only and does not itself give a positive chronology constraint, but the source support is still strong enough for a cautious reader-facing note.
 
-## Cautions for future reader-facing prose
+## Cautions for reader-facing prose
 
 1. Keep the stage-label caution visible.
 2. Do not silently equate the narrower northern WGmc source phrasing with a fully settled pan-PWGmc label.
-3. Treat chronology as unresolved until real first-break TSV output exists.
+3. State plainly that the chronology is boundary-only on both sides and does not provide a positive local seam.

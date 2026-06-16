@@ -1,5 +1,7 @@
 # Reader-facing remaining gap audit 01
 
+> Superseded editorially by `reader_facing_sc005_009_012_inclusion_01_report.md`, which records the later decision to include `SC005`, `SC009`, and `SC012` in the reader-facing sequence while keeping their cautions visible.
+
 ## Latest commit inspected
 
 1. `a50972de docs: add reader-facing SC010 SC011 and SC013`
