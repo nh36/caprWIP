@@ -258,6 +258,19 @@ This writes:
 - `reader_facing_local_section_17.md`
 - `reader_facing_local_section_17.pdf`
 
+To extend the same ordered section farther leftward by adding West Germanic
+j-gemination, syllabic j after final-vowel loss, and dental hardening while
+still leaving SC005, SC009, and SC012 outside the reader-facing span, use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_18_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_18.md`
+- `reader_facing_local_section_18.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:
