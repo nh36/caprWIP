@@ -2,15 +2,17 @@
 
 ## Introduction
 
-This section follows an ordered stretch from West Germanic rhotacism, Proto-West-Germanic ai-monophthongization, unstressed a-raising before final m, early i-apocope, final *ō-lowering before *r, coronal-w assimilation, ij-contraction in the friend family, West Germanic j-gemination, syllabic j after final-vowel loss, lþ-voicing, dental hardening, the earliest unstressed vowel changes, early vocalic and final changes, nasal spirant changes, preconsonantal x-loss, awj glide formation, au-fronting, and the West Saxon diphthong sequence through brightening, breaking, restoration, palatalization, weak-tail reduction, contraction, and r-metathesis.
+This section follows a continuous sequence from early West Germanic consonant and vowel changes to the Old English developments that culminate in r-metathesis.
 
-Some chapters treat broad vowel histories, while others record smaller rules whose value lies in the witness words that fix their place within the finite-state sequence.
+Some chapters treat large familiar changes such as rhotacism, brightening, breaking, umlaut, and apocope. Others are smaller ordered notes whose importance lies in the witness words that fix the sequence.
+
+Not every numbered step has the same historical weight. Each section either represents a meaningful change of its own or helps explain why neighboring changes stand where they do.
 
 ## Numbering note
 
-The rule numbers follow the CAPR sound-change inventory so that each chapter can still be traced back to the finite-state implementation and the chronology tests.
+The rule numbers follow the CAPR sound-change inventory so that each chapter remains traceable to the implementation and the chronology tests.
 
-Not every inventory number becomes a prose sound-change chapter. SC038, SC062, and SC084 are technical or weight-marking stages, and SC077 is a numbering gap. They are therefore not treated as sound-change chapters here.
+A few internal numbers do not become sound-change chapters. SC038, SC062, and SC084 are technical or weight-marking stages, and SC077 is a numbering gap.
 
 # West Germanic rhotacism
 
@@ -74,7 +76,7 @@ The later boundary is broad and distant. It is not a local adjacency claim. The 
 
 Campbell notes that unstressed \emph{u} is especially well preserved before \emph{m}, with dat.pl. \emph{-um} and related endings as the clearest evidence [@Campbell1959, p. 156, §373]. Fulk likewise treats the development of early unstressed \emph{*o} to \emph{u} before \emph{m} as one of the important similarities shared by North and West Germanic [@Fulk2018, p. 16, §5.2].
 
-That makes this a small but real unstressed-vowel development in inflectional material. The point of the section is not a broad lexical sound law. The internal CAPR label is narrower and more technical than the title used here, and the strongest evidence concerns noninitial unstressed material before final \emph{*m}.
+That makes this a small but real unstressed-vowel development in inflectional material. It belongs here as a short morphophonological note, and the strongest evidence concerns noninitial unstressed material before final \emph{*m}. The internal CAPR label is narrower and more technical than the title used here.
 
 ## SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`NWGmcAToUBeforeM`) {#rule-NWGmcAToUBeforeM}
 
@@ -90,7 +92,7 @@ In prose, the rule raises unstressed noninitial \emph{*a} before final \emph{*m}
 
 Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*skúldramiz} yields *sċoldrum* rather than expected OE *sċuldrum*. This shows that [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering) in the modeled sequence.
 
-The later boundary is broad and distant. It is not a local adjacency claim. The earlier side remains boundary-only, and the section should be read as a cautious inflectional sound-change note. It does not claim a broad lexical law.
+The later boundary is real, but it lies well to the right of the rule's own position and does not create a close local seam. The earlier side remains boundary-only, and the section should be read as a cautious inflectional sound-change note.
 
 \newpage
 
@@ -180,7 +182,7 @@ The later boundary is broad and distant. It is not a local adjacency claim. The 
 
 Ringe and Taylor describe a change of `*ijo` to `*iu` in the `friend` family, with the pathway PGmc \emph{*frijond-} > PWGmc \emph{*friund} > OE *frēond* 'friend' [@RingeTaylor2014, p. 62]. The same source immediately warns that the `*ijo` sequence is unique enough that wider generalization is inadvisable [@RingeTaylor2014, p. 62].
 
-That narrowness is part of the history, not an objection to writing the section. This is a short lexical sound-change note on a rare sequence in the `friend` family, not a broadly productive rule for many unrelated forms.
+That narrowness is part of the history. This is a short lexical sound-change note on a rare sequence in the `friend` family, and it belongs in a continuous account of the early sequence even though it is not a broadly productive rule.
 
 ## SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction}
 
@@ -197,7 +199,7 @@ In prose, the rule contracts the rare \emph{*ijō} sequence in the family behind
 
 Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), PGmc \emph{*fríjōndz} yields *friund* rather than expected OE *frēond*. This shows that [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction) must come before [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling) in the modeled sequence.
 
-The later boundary is broad and distant. It does not turn this into a productive sound law. The earlier side remains boundary-only, and the rule is best read as a short lexical note on the `friend` family.
+The later boundary is real, but it lies far to the right of the rare `friend` development and does not turn the rule into a productive sound law. The earlier side remains boundary-only, and the rule is best read as a short lexical note on the `friend` family. From here the sequence passes into the tighter local seam between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ).
 
 \newpage
 
@@ -270,7 +272,7 @@ The source support is real, but the live trace remains thin. That is why the cha
 
 Ringe and Taylor treat word-internal \emph{*lþ} > \emph{*ld} as a regular sound change in northern West Germanic and illustrate it with forms such as *fealdan*, *beald*, *wuldor*, and *gylden* [@RingeTaylor2014, pp. 170--171]. Campbell gives a similar West-Germanic-facing formulation with examples such as *fealdan*, *wuldor*, *beald*, *gold*, and *feld* [@Campbell1959, p. 169, §414].
 
-That is strong enough for a short chapter, but the scope should stay cautious. The internal CAPR implementation places the rule at this early stage, while the source discussion points most clearly to a northern West Germanic development. It does not support an unqualified pan-PWGmc law.
+That makes the change substantial enough for a short chapter, but the scope should stay cautious. The internal CAPR implementation places the rule at this early stage, while the source discussion points most clearly to a northern West Germanic development. It does not support an unqualified pan-PWGmc law.
 
 ## SC012. \emph{lþ}-voicing (`PWGmcLThVoicing`) {#rule-PWGmcLThVoicing}
 
@@ -286,7 +288,7 @@ In prose, the rule voices \emph{*lþ} to \emph{*ld}. This is the development beh
 
 Its chronology is deliberately modest. If [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing) is moved earlier within the tested range, it crosses [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), [SC010 PWGmcJGemination](#rule-PWGmcJGemination), [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction), [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely to order `4` and then reaches the start of the tested expanded-PWGmc chain with no real break. If it is moved later, the search reaches order `86`, the current [SC087 OERMetathesis](#rule-OERMetathesis) boundary, with no real break. The order test therefore does not place [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing) before or after any specific neighboring stage.
 
-The chronology is boundary-only on both sides. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. The rule is included because the source support for the \emph{lþ > ld} development is strong, not because the order test supplies a positive local boundary.
+The chronology is boundary-only on both sides. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. The rule is included because the source support for the \emph{lþ > ld} development is strong, not because the order test supplies a positive local boundary. After this scope-limited note, [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) returns to a broader systemic consonant adjustment.
 
 \newpage
 
@@ -312,7 +314,7 @@ In prose, the rule turns voiced dental fricative \emph{*ð} into stop \emph{*d}.
 
 Its chronology is deliberately modest. If [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) is moved earlier within the tested range, it crosses [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing), [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), [SC010 PWGmcJGemination](#rule-PWGmcJGemination), [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction), [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely to order `4` and then reaches the start of the tested expanded-PWGmc chain with no real break. If it is moved later, the search reaches order `86`, the current [SC087 OERMetathesis](#rule-OERMetathesis) boundary, with no real break. The order evidence is therefore negative or boundary-only on both sides. It does not place the rule before or after any specific neighboring stage. The rule is included because the source support for dental hardening itself is strong, and the order test supplies no positive local boundary.
 
-The prose should therefore stay precise and systemic. Neither side of the current order evidence provides a positive local anchor.
+The prose should therefore stay precise and systemic. Neither side of the current order evidence provides a positive local anchor. From here the sequence turns to [SC014 NWGmcUnstressedAiMonophthongization](#rule-NWGmcUnstressedAiMonophthongization) and [SC015 NWGmcILowering](#rule-NWGmcILowering), where the first unstable unstressed vowels come into view.
 
 \newpage
 
