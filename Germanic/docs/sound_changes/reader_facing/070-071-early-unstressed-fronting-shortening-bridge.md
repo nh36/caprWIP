@@ -18,7 +18,7 @@ In prose, the rule fronts unstressed \emph{*a} to \emph{*æ} at the point where 
 
 Its chronology is explicit on both sides. If the rule is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc \emph{*lúnganjō} yields *lunġen* rather than expected OE *lungen* ‘lungs’. If the rule is delayed until after [SC071 OELateOShortening](#rule-OELateOShortening), PGmc \emph{*búrōθi} yields *boreþ* rather than expected OE *boraþ* ‘bears’, and PGmc \emph{*mḗnōθz} yields *mōneþ* rather than expected *mōnaþ* ‘month’. This shows that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) must come before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), and that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC071 OELateOShortening](#rule-OELateOShortening).
 
-That two-sided pattern is why [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) serves as the real hinge of the pair. The earlier side is narrow, but the later side produces a coherent set of wrong unstressed vowels across several verbal and nominal endings.
+That two-sided pattern is why [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) serves as the hinge of the pair. The later relation to [SC071 OELateOShortening](#rule-OELateOShortening) is the closer local result, while the earlier boundary at [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) mainly shows that this fronting belongs after the older palatal developments. CAPR keeps it here as an early stage inside the later unstressed-vowel sequence.
 
 ## SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening}
 

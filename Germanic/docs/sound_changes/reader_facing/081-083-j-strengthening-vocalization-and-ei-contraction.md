@@ -20,7 +20,7 @@ In prose, the rule keeps \emph{*j} as a strengthened consonantal outcome after t
 
 Its chronology is explicit on both sides. If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*stráwjaną} yields *strēaġan* rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields *strīeian* rather than *strīeġan*. This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong), and that [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) must come before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
-The left side is broad and far, but the right side is a sharp local seam in the *strīeġan* derivation.
+The earlier constraint reaches back to [SC055 OEIUmlaut](#rule-OEIUmlaut) and therefore defines a wide interval, not a close neighboring pair. The later relation to [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) is the real local seam in the *strīeġan* derivation, which is why CAPR keeps [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) here as the flank on the left side of the chain.
 
 ## SC082. Intervocalic vocalization of \emph{*j} (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization}
 

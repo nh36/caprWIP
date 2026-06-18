@@ -26,7 +26,7 @@ yields *fyrhten* rather than expected *fyrhte*. This shows that
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) before
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
 
-That symmetry does not make the rule large. Both boundaries are carried by the same witness family, so the evidence is real but narrow. The value of the rule lies in showing that even a very small formal step can still have a concrete lexical place in the chronology.
+That symmetry does not make the rule large. Both boundaries are carried by the same witness family, so the evidence is real but narrow. The checked forms therefore place [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) within a wider post-apocope interval between earlier final-loss material and later unstressed-vowel shortening. CAPR keeps the rule here because the `fright` family belongs to that broader weak-tail aftermath.
 
 ## SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 

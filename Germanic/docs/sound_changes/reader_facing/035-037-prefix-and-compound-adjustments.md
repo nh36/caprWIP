@@ -21,7 +21,7 @@ define OEPrefixAReduction [
 
 In prose, the rule reduces prefixal \emph{*ga-} to unstressed \emph{*ge-}. This is the step that gives forms such as *ġelīefan* ‘believe’ their expected prefix vowel.
 
-Its chronology is one-sided but concrete. If the rule is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*galáubijaną} yields *ġealīefan* rather than expected OE *ġelīefan* ‘believe’. This shows that [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). The earlier direction remains boundary-limited in current testing: the search reaches bundled earlier material without finding an ordinary historical break, so the card does not yet show what this rule must follow.
+Its chronology is one-sided but concrete. If the rule is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*galáubijaną} yields *ġealīefan* rather than expected OE *ġelīefan* ‘believe’. This shows that [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). The earlier direction is not yet fixed by the checked forms, so the card does not yet show what this rule must follow.
 
 ## Historical discussion of inter-stress raising
 
@@ -46,7 +46,7 @@ In prose, the rule raises medial unstressed \emph{*a} to \emph{*u} in the low-st
 
 Its chronology is explicit on both sides. If the rule is moved before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc \emph{*sáiwalō} yields *sāwel* rather than expected OE *sāwol* ‘soul’. If it is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*sáiwalō} yields *sāwul* rather than expected *sāwol*, and PGmc \emph{*wír-àldu} yields *weoruld* rather than expected *weorold* ‘world’. This shows that [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising), and that [SC036 OEInterStressRaising](#rule-OEInterStressRaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
-The earlier boundary is real, but it reaches farther back than the immediate neighborhood. The later boundary is the more local result inside this part of the sequence.
+The checked forms therefore place the rule within a broader low-stress interval. The later boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) is the more local result inside this stretch, while the earlier relation to [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) mainly shows that \emph{world}- and \emph{soul}-type vocalism belongs after the earlier final-vowel developments. CAPR keeps the rule here because the handbooks treat these medial unstressed vowels as one historical grouping.
 
 ## Historical discussion of compound linking syncope
 
@@ -68,4 +68,4 @@ define OECompoundLinkingSyncope [
 
 In prose, the rule removes a weak linking vowel inside compounds before a following grave-stressed member. This is the step that yields forms such as *reġnboga* ‘rainbow’.
 
-Its chronology is boundary-limited. If the rule is delayed until after SC038 OEStripSecondaryStress, PGmc \emph{*régna-bùgô} yields *reġnefoga* rather than expected OE *reġnboga* ‘rainbow’. This shows that [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) must come before SC038 OEStripSecondaryStress, but that conclusion is technical rather than ordinary-historical because SC038 OEStripSecondaryStress is not an ordinary sound change. The earlier direction also reaches bundled earlier material without finding a historical break, so the present evidence remains one-sided and boundary-limited.
+The order test does not yet identify an ordinary historical stage that this rule must follow. If it is delayed until after SC038 OEStripSecondaryStress, PGmc \emph{*régna-bùgô} yields *reġnefoga* rather than expected OE *reġnboga* ‘rainbow’. That result shows only that compound-linking syncope must precede the later technical stress-stripping stage built into the implementation. Because SC038 OEStripSecondaryStress is not an ordinary sound change, this is not a historical local order in its own right. CAPR keeps the rule here because the handbooks treat reduced compound junctures and unstable linking vowels as part of the same weakened-compound behavior discussed around [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).

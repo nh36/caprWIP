@@ -43,7 +43,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 031-034-west-saxon-diphthong-chain.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | yes | yes | yes | yes | yes | no | no | — |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | yes | yes | yes | yes | yes | yes | no | — |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | yes | yes | yes | yes | yes | no | no | — |
-| 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | yes | yes | yes | yes | yes | yes | no | — |
+| 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | yes | yes | yes | yes | yes | no | no | — |
 | 039-040-medial-unstressed-vowel-changes.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | yes | yes | yes | yes | yes | yes | no | — |
 | 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | yes | yes | yes | yes | yes | no | no | — |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | yes | yes | yes | yes | yes | no | no | — |

@@ -30,7 +30,7 @@ rather than expected *spinl* ‘spindle’. If the rule is delayed until after
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
 [SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination).
 
-The rule is therefore stronger than a mere descriptive convenience. It has concrete lexical witnesses, and those witnesses show that the syncope must stand after umlaut but before later cluster simplification.
+The checked forms therefore place the rule in a wider late-syncope interval. The later relation to [SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination) is the nearer local result; the earlier boundary at [SC055 OEIUmlaut](#rule-OEIUmlaut) mainly shows that this syncope belongs after the umlautal phase described in the handbooks. CAPR keeps it here as the opening step in the syncope-and-cluster-simplification sequence.
 
 ## SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation}
 

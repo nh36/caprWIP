@@ -69,7 +69,11 @@ expected OE *sǣ*. This shows that [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDe
 rather than expected *sǣ*. This places [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI)
 before [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
 
-This is why the chapter belongs immediately before the broader umlautal
-developments discussed in [SC055 OEIUmlaut](#rule-OEIUmlaut).
-The two rules together form a genuine lead-in to that later vowel chapter, but
-only the second has a strong lexical and handbook footing of its own.
+The checked forms therefore place the rule within a wide pre-umlaut interval:
+after [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) and before
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), without fixing close
+neighbors on both sides. CAPR keeps it here because the handbooks treat the loss of
+\emph{*w} before unstressed \emph{*i} as part of the pre-umlaut history behind
+*sǣ* ‘sea’. The modeled placement should be read as a source-based choice
+within that interval, with the chapter serving as a lead-in to the umlautal
+material and not as a locally pinned pair on both sides.

@@ -50,6 +50,11 @@ These lexical failures show that [SC048 OESecondaryNasalization](#rule-OESeconda
 [SC059 OEBackMutation](#rule-OEBackMutation) must come before
 [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction).
 
-This is why the change can serve as the center here without implying that the
-following weak-tail notes belong to the same historical law. The rule
-marks a real local seam, but the section after it immediately becomes narrower.
+The checked forms therefore place the rule within a wider later-vowel interval.
+The nearer earlier
+constraint is [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization);
+the later relation to [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
+mainly shows that back mutation must precede the wider weak-tail reductions.
+CAPR keeps the rule here because the handbooks treat back mutation as a distinct
+later vowel development between the earlier mutation/restoration material and
+the closing weak-tail reductions.
