@@ -77,4 +77,7 @@ The evidence points to a narrow dissimilatory tendency, especially in `mn`-type
 clusters and a small group of lexical outcomes. There is no support for a
 regular change operating across a broad phonological field. The rule is secure
 enough to model, but the available tests leave its position within the Old
-English sequence underdetermined.
+English sequence underdetermined. Its place here therefore rests mainly on the
+fact that the scattered lexical outcomes belong to the same middle Old English
+vowel-and-suffix region described in the handbooks, not on a closer diagnostic
+ordering test.

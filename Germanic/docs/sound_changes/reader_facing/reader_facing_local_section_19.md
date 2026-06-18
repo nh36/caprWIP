@@ -288,7 +288,7 @@ In prose, the rule voices \emph{*lþ} to \emph{*ld}. This is the development beh
 
 Its chronology is deliberately modest. If [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing) is moved earlier within the tested range, it crosses [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), [SC010 PWGmcJGemination](#rule-PWGmcJGemination), [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction), [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely to order `4` and then reaches the start of the tested expanded-PWGmc chain with no real break. If it is moved later, the search reaches order `86`, the current [SC087 OERMetathesis](#rule-OERMetathesis) boundary, with no real break. The order test therefore does not place [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing) before or after any specific neighboring stage.
 
-The chronology is boundary-only on both sides. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. The rule is included because the source support for the \emph{lþ > ld} development is strong, not because the order test supplies a positive local boundary. After this scope-limited note, [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) returns to a broader systemic consonant adjustment.
+The chronology is weak on both sides. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. The rule is included because the source support for the \emph{lþ > ld} development is strong, not because the order test supplies a positive local boundary. Its place here is best read as an informed placement within the early consonant sequence, guided by the comparative evidence for northern West Germanic \emph{lþ}-voicing rather than by a close diagnostic failure. After this scope-limited note, [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) returns to a broader systemic consonant adjustment.
 
 \newpage
 
@@ -312,9 +312,9 @@ define PWGmcDentalHardening [
 
 In prose, the rule turns voiced dental fricative \emph{*ð} into stop \emph{*d}. It preserves a systemic step in the consonant history, not a single isolated lexical anecdote.
 
-Its chronology is deliberately modest. If [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) is moved earlier within the tested range, it crosses [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing), [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), [SC010 PWGmcJGemination](#rule-PWGmcJGemination), [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction), [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely to order `4` and then reaches the start of the tested expanded-PWGmc chain with no real break. If it is moved later, the search reaches order `86`, the current [SC087 OERMetathesis](#rule-OERMetathesis) boundary, with no real break. The order evidence is therefore negative or boundary-only on both sides. It does not place the rule before or after any specific neighboring stage. The rule is included because the source support for dental hardening itself is strong, and the order test supplies no positive local boundary.
+Its chronology is deliberately modest. If [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) is moved earlier within the tested range, it crosses [SC012 PWGmcLThVoicing](#rule-PWGmcLThVoicing), [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), [SC010 PWGmcJGemination](#rule-PWGmcJGemination), [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction), [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely to order `4` and then reaches the start of the tested expanded-PWGmc chain with no real break. If it is moved later, the search reaches order `86`, the current [SC087 OERMetathesis](#rule-OERMetathesis) boundary, with no real break. The order evidence is therefore negative on both sides: the current finite-state test does not identify a nearest ordering constraint in either direction. It does not place the rule before or after any specific neighboring stage. The rule is included because the source support for dental hardening itself is strong, and the order test supplies no positive local boundary.
 
-The prose should therefore stay precise and systemic. Neither side of the current order evidence provides a positive local anchor. From here the sequence turns to [SC014 NWGmcUnstressedAiMonophthongization](#rule-NWGmcUnstressedAiMonophthongization) and [SC015 NWGmcILowering](#rule-NWGmcILowering), where the first unstable unstressed vowels come into view.
+The prose should therefore stay precise and systemic. Neither side of the current order evidence provides a positive local anchor. The position is justified chiefly by the comparative history of dental hardening in early West Germanic, while the local finite-state test leaves the exact neighborhood open. From here the sequence turns to [SC014 NWGmcUnstressedAiMonophthongization](#rule-NWGmcUnstressedAiMonophthongization) and [SC015 NWGmcILowering](#rule-NWGmcILowering), where the first unstable unstressed vowels come into view.
 
 \newpage
 
@@ -340,7 +340,7 @@ define NWGmcUnstressedAiMonophthongization [
 
 In prose, the rule removes the unstressed diphthongal quality of \emph{*ai} and merges the result with unstressed \emph{*e}. It preserves a historically plausible opening step in the early Northwest Germanic vowel history.
 
-Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative.
+Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative. The rule is placed here because the comparative literature treats unstressed \emph{*ai} monophthongization as part of the earliest Northwest Germanic simplification of unstressed vowels. This position should therefore be read as an informed opening placement rather than as a slot fixed by a neighboring diagnostic failure.
 
 ## Historical discussion of early unstressed front-vowel leveling
 
@@ -456,7 +456,7 @@ define NWGmcStressedMonosyllableORaising [
 
 In prose, the rule raises final stressed monosyllabic \emph{*ō} to \emph{*ū}. It preserves a historically recognizable step behind forms such as *cū*, *hū*, and *tū*.
 
-Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative.
+Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative. Its position is justified mainly by the general early Northwest-Germanic and Old English long-vowel history of stressed \emph{*ō}, not by a closer diagnostic interaction with its neighbors.
 
 \newpage
 
@@ -560,7 +560,7 @@ define NWGmcMnDissimilation [
 
 In prose, the rule turns an earlier \emph{m} into \emph{β} when another nasal follows later in the word. It preserves a small but historically recognizable step in the prehistory of forms such as *heofon* and *month*.
 
-Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative.
+Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative. The rule remains here because the handbooks treat \emph{mn}-dissimilation as a real descriptive tendency within the same early Northwest-Germanic consonant zone, even though they do not give it a closer relative chronology.
 
 \newpage
 
@@ -638,7 +638,7 @@ define NWGmcLongENasalRounding [
 
 In prose, the rule rounds long \emph{ē} to \emph{ō} before nasals. It preserves a historically intelligible step behind month-type and moon-type outcomes without claiming more chronology than the current testing supports.
 
-Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative.
+Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative. The note sits here because the literature treats long \emph{ē} before nasals as part of the same early Northwest-Germanic nasal-vowel region as the surrounding \emph{ē}-developments. Its placement is therefore source-based and approximate, not fixed by a neighboring test failure.
 
 \newpage
 
@@ -710,7 +710,7 @@ define NWGmcPreconsonantalXLoss [
 
 In prose, the rule deletes \emph{*x} before \emph{*s} plus another consonant. It preserves a historically recognizable part of the older consonant history without assigning it more order-testing force than the current evidence supports.
 
-Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative.
+Current testing does not identify a positive historical boundary on either side. If the rule is moved earlier or later within the currently tested range, no witness word yields a historical first-break result: the earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break. No exact wrong output is available in either direction, because neither side yields a historical first-break witness. In reader-facing terms, this is a historically legible change whose current order evidence remains chronology-negative. The rule is placed here because the comparative literature treats preconsonantal \emph{*x}-loss as background to the glide and fronting developments that follow. The current test does not identify a closer relative chronology than that.
 
 \newpage
 
@@ -1541,7 +1541,10 @@ English search limit on the right with no decisive wrong form. If the rule is
 moved either earlier or later within the tested sequence, no lexical witness yet
 provides a sharper wrong/expected pair. The safest reading is therefore modest:
 this is a local pre-umlaut rule that belongs before the umlautal chapter without
-claiming a sharper chronological slot than the evidence supports.
+claiming a sharper chronological slot than the evidence supports. Its place here
+rests mainly on the comparative evidence for `*singwan > singan` and on its role
+as residual lead-in material before the stronger glide-loss and umlautal changes
+to the right.
 
 ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
@@ -1978,7 +1981,10 @@ The evidence points to a narrow dissimilatory tendency, especially in `mn`-type
 clusters and a small group of lexical outcomes. There is no support for a
 regular change operating across a broad phonological field. The rule is secure
 enough to model, but the available tests leave its position within the Old
-English sequence underdetermined.
+English sequence underdetermined. Its place here therefore rests mainly on the
+fact that the scattered lexical outcomes belong to the same middle Old English
+vowel-and-suffix region described in the handbooks, not on a closer diagnostic
+ordering test.
 
 \newpage
 
@@ -2253,7 +2259,7 @@ define OEMedialSyncope [
 
 In prose, it deletes medial \emph{*i} before a following dental after a heavy syllable. The broader historical background is secure enough, since the handbooks do treat late medial syncope as part of the same weak-tail region [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4; @Fulk2018, p. 91, §5.6].
 
-The finite-state chronology is much weaker, however. If the rule is moved earlier, the current tests find no real break before the search reaches bundled earlier material. If the rule is delayed, the tests likewise find no real break before the current search boundary. No exact wrong early or late output is currently available, so this section remains boundary-limited and does not claim a sharper relation than the evidence supports.
+The finite-state chronology is much weaker, however. If the rule is moved earlier, the current tests find no real break before the search reaches bundled earlier material. If the rule is delayed, the tests likewise find no real break before the current search boundary. No exact wrong early or late output is currently available, so this section does not claim a sharper relation than the evidence supports. The rule remains here because the handbooks place late medial syncope in the same post-apocope weak-tail zone before the heavier cluster cleanups to the right, even though they do not isolate a narrower local seam for this specific rule.
 
 That limitation is worth stating plainly. Late medial syncope belongs in the history of the weak tail, but this particular rule does not yet fix an earlier boundary or a later boundary of its own.
 
@@ -2305,9 +2311,9 @@ define OEDentalAssimilation [
 
 In prose, it removes \emph{*θ} after \emph{*t} when syncope has created an over-heavy dental cluster. That kind of cluster simplification is historically plausible as part of the same late sequence that follows syncope [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
-The chronology tests, however, do not yet isolate a positive earlier boundary or a positive later boundary for this rule. If the rule is moved earlier, the search reaches bundled earlier material without a real break. If it is delayed, the search likewise reaches the current search boundary without a real break. No exact wrong early or late output is currently available, so the section remains boundary-limited.
+The chronology tests, however, do not yet isolate a positive earlier boundary or a positive later boundary for this rule. If the rule is moved earlier, the search reaches bundled earlier material without a real break. If it is delayed, the search likewise reaches the current search boundary without a real break. No exact wrong early or late output is currently available, so the section remains lightly constrained.
 
-That makes the rule best read as a narrow intermediate step inside the late syncope sequence. It is useful in the derivation, but the present evidence does not justify treating it as a stronger chronology anchor than it is.
+That makes the rule best read as a narrow intermediate step inside the late syncope sequence. It is useful in the derivation, but the present evidence does not justify treating it as a stronger chronology anchor than it is. Its place here is supported chiefly by the broader handbook logic of post-syncope dental-cluster simplification, while the exact three-step segmentation remains sharper in CAPR than in the historical sources.
 
 ## SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
 
@@ -2503,9 +2509,9 @@ define OEPrefixIReduction [
 
 In prose, the rule reduces unstressed prefixal \emph{*i} to a weaker vowel in the \emph{bi-} and \emph{ni-} type prefixes before a consonant plus a following vowel. This is the development that helps make later prefix spellings such as OE \emph{*be-} and \emph{*ne-} historically intelligible.
 
-The chronology evidence is boundary-limited on both sides. If the rule is moved earlier, the current tests do not find a real lexical break before the search reaches bundled earlier material. If the rule is delayed, they do not find a real lexical break before the tested range ends at [SC087 OERMetathesis](#rule-OERMetathesis). No exact wrong early or late output is currently available, so the prose does not claim a sharper ordering relation than the evidence supports.
+The chronology evidence is weak on both sides. If the rule is moved earlier, the current tests do not find a real lexical break before the search reaches bundled earlier material. If the rule is delayed, they do not find a real lexical break before the tested range ends at [SC087 OERMetathesis](#rule-OERMetathesis). No exact wrong early or late output is currently available, so the prose does not claim a sharper ordering relation than the evidence supports.
 
-That modest result is still useful. The rule has historical legitimacy from the prefix-vowel literature, but its place in the sequence remains a bounded methodological note, not a positive lexical hinge.
+That modest result is still useful. The rule has historical legitimacy from the prefix-vowel literature, and it belongs in this late weak-tail region for that reason. Its place in the sequence should therefore be read as a source-based approximation, not as a positive lexical hinge fixed by the current test.
 
 \newpage
 

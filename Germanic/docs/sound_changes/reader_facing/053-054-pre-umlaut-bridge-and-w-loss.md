@@ -40,7 +40,10 @@ English search limit on the right with no decisive wrong form. If the rule is
 moved either earlier or later within the tested sequence, no lexical witness yet
 provides a sharper wrong/expected pair. The safest reading is therefore modest:
 this is a local pre-umlaut rule that belongs before the umlautal chapter without
-claiming a sharper chronological slot than the evidence supports.
+claiming a sharper chronological slot than the evidence supports. Its place here
+rests mainly on the comparative evidence for `*singwan > singan` and on its role
+as residual lead-in material before the stronger glide-loss and umlautal changes
+to the right.
 
 ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
