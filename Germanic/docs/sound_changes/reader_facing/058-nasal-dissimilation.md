@@ -55,16 +55,12 @@ of the same kind as those modeled here [@Campbell1959, p. 155;
 handbook remarks: it models one plausible recurrent environment and does not
 claim to exhaust every dissimilatory development involving nasals.
 
-Chronologically, the available tests do not identify a sharper position within
-the Old English sequence. When the rule is moved earlier, no lexical breakpoint
-appears before the inherited West-Germanic material that precedes the tested Old
-English changes. When it is moved later, the tests likewise fail to identify a
-more precise later boundary within the remainder of the Old English sequence.
-
-No comparable pair of lexical failures fixes a narrower slot here. The present
-evidence therefore gives neither a precise terminus post quem nor a precise
-terminus ante quem for the rule within the tested sequence. No exact wrong early
-or late output is currently available for this chapter.
+Chronologically, the order test does not by itself determine a sharper position
+within the Old English sequence. If the rule is moved earlier or later within
+the tested sequence, no checked form yields a form different from the expected
+one. The tested forms therefore do not place
+[SC058 OENasalDissimilation](#rule-OENasalDissimilation) before or after any
+specific neighboring change.
 
 Even so, the rule has real interpretative consequences. It provides a place in
 the implementation for outcomes of the *heofon* ‘heaven’, *fæstenn* ‘fasting’,
@@ -77,7 +73,7 @@ The evidence points to a narrow dissimilatory tendency, especially in `mn`-type
 clusters and a small group of lexical outcomes. There is no support for a
 regular change operating across a broad phonological field. The rule is secure
 enough to model, but the available tests leave its position within the Old
-English sequence underdetermined. Its place here therefore rests mainly on the
-fact that the scattered lexical outcomes belong to the same middle Old English
-vowel-and-suffix region described in the handbooks, not on a closer diagnostic
-ordering test.
+English sequence underdetermined. CAPR keeps it in this middle Old English
+stretch because the relevant lexical outcomes are discussed alongside
+surrounding weak-vowel and suffixal developments, not because the handbooks fix
+a closer relative chronology.

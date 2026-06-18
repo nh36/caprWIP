@@ -34,16 +34,14 @@ In prose, the rule removes \emph{*w} after the velar cluster in forms of the
 
 Historically, this is a very small rule. It keeps developments such as *singan*
 ‘sing’ visible in the sequence, but it does not create a large family of lexical
-breakpoints. Current testing does not recover a positive earlier or later
-boundary: the search reaches older material on the left and the later Old
-English search limit on the right with no decisive wrong form. If the rule is
-moved either earlier or later within the tested sequence, no lexical witness yet
-provides a sharper wrong/expected pair. The safest reading is therefore modest:
-this is a local pre-umlaut rule that belongs before the umlautal chapter without
-claiming a sharper chronological slot than the evidence supports. Its place here
-rests mainly on the comparative evidence for `*singwan > singan` and on its role
-as residual lead-in material before the stronger glide-loss and umlautal changes
-to the right.
+breakpoints. If the rule is moved earlier or later within the tested sequence,
+no checked form yields a form different from the expected one. The tested forms
+therefore do not place [SC053 OEPostVelarWLoss](#rule-OEPostVelarWLoss) before
+or after any specific neighboring change. CAPR keeps it here because the
+comparative evidence for `*singwan > singan` makes a narrow post-velar
+\emph{*w}-loss historically plausible in this pre-umlaut stretch. Even so, the
+placement should be read as approximate: the rule is a small prefatory note
+before the better-attested glide-loss and umlautal developments to the right.
 
 ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
