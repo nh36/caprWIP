@@ -19,7 +19,9 @@ define OEWICombinativeUUmlaut [
 
 In prose, the rule changes the first vowel of \emph{wi}-forms under the following back-vowel conditions. This is the step that helps produce OE *wuduwe* ‘widow’.
 
-Its chronology is clear on the later side. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*wíduwōn} yields *wudowe* rather than expected OE *wuduwe* ‘widow’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). The earlier direction remains one-sided in current testing: the search reaches bundled earlier material without producing an ordinary historical break.
+Its chronology is clear on the later side. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*wíduwōn} yields *wudowe* rather than expected OE *wuduwe* ‘widow’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the `widow` material belongs to the same low-stress vocalic sequence as the following medial lowering.
 
 ## SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering}
 

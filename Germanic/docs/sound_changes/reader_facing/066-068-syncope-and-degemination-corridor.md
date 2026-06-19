@@ -60,10 +60,13 @@ In prose, it simplifies doubled \emph{*tt} or \emph{*nn} before a following sono
 
 Its positive evidence is one-sided but exact. If the rule is moved before
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō}
-yields *spinnl* rather than expected OE *spinl* ‘spindle’. No later real break
-is currently available before the current search boundary. This places
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) before
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination),
-while the later side remains one-sided.
+yields *spinnl* rather than expected OE *spinl* ‘spindle’. This shows that
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination). If the
+rule is moved later within the tested sequence, no checked form yields a form
+different from the expected one.
 
-That one-sided profile is still meaningful. The rule is clearly later than the syncope that creates the offending cluster, but the current evidence does not yet force a sharper later boundary beyond that.
+That one-sided profile is still meaningful. The checked forms fix the earlier
+relation but do not identify a corresponding later constraint. CAPR keeps the
+rule here because the sources treat this simplification as a follower to the
+syncope-created cluster sequence.

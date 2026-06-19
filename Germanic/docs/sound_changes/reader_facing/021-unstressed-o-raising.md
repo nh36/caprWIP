@@ -18,6 +18,6 @@ define NWGmcUnstressedORaising [
 
 In prose, the rule raises unstressed \emph{*o} to \emph{*u} before a later \emph{*u}. This is the adjustment that helps keep the *heofon* derivation on its attested path.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*xémonų} yields *heofun* rather than expected OE *heofon* ‘heaven’. This shows that [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its chronology is real but one-sided. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*xémonų} yields *heofun* rather than expected OE *heofon* ‘heaven’. This shows that [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
 
-The later boundary is therefore broad and distant. The earlier side remains a search-boundary limitation, not a historical anchor.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the *heofon* family belongs to the same early unstressed-vowel history described above.

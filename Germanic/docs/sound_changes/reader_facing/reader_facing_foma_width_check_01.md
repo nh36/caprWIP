@@ -34,19 +34,19 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`NWGmcLongELowering`) {#rule-NWGmcLongELowering} | 13 | 64 | no |
 | 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | 13 | 39 | no |
 | 026-027-nasal-spirant-changes.md | SC026. Lengthening before nasal plus spirant (`NWGmcNasalSpirantLengthening`) {#rule-NWGmcNasalSpirantLengthening} | 13 | 69 | no |
-| 026-027-nasal-spirant-changes.md | SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss} | 37 | 60 | no |
+| 026-027-nasal-spirant-changes.md | SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss} | 39 | 60 | no |
 | 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss} | 13 | 44 | no |
 | 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation} | 19 | 38 | no |
-| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting} | 42 | 21 | no |
+| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting} | 44 | 21 | no |
 | 031-034-west-saxon-diphthong-chain.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | 19 | 27 | no |
-| 031-034-west-saxon-diphthong-chain.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 39 | 28 | no |
-| 031-034-west-saxon-diphthong-chain.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 67 | 49 | no |
-| 031-034-west-saxon-diphthong-chain.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 90 | 61 | no |
+| 031-034-west-saxon-diphthong-chain.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 41 | 28 | no |
+| 031-034-west-saxon-diphthong-chain.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 69 | 49 | no |
+| 031-034-west-saxon-diphthong-chain.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 94 | 61 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 13 | 59 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 36 | 54 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 61 | 47 | no |
 | 039-040-medial-unstressed-vowel-changes.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 13 | 56 | no |
-| 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 28 | 68 | no |
+| 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 30 | 68 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 13 | 28 | no |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 13 | 94 | yes |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`AngloFrisianBrightening`) {#rule-AngloFrisianBrightening} | 13 | 41 | no |

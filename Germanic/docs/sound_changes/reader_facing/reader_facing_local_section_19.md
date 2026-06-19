@@ -34,9 +34,9 @@ define PGmcRhotacism [
 
 In prose, the rule turns surviving medial \emph{*z} into \emph{*r} in the West Germanic line. CAPR keeps the label [SC003 PGmcRhotacism](#rule-PGmcRhotacism) for the modeled rewrite, but the historical interpretation is later than the name suggests.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses SC002 PGmcGmSimplification safely and reaches order `2` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*líznōjaną} yields *lirnian* rather than expected OE *liornian* ‘learn’, PGmc \emph{*líznōθi} yields *lirnaþ* rather than expected *liornaþ*, PGmc \emph{*líznô} yields *lirna* rather than expected *liorna*, and PGmc \emph{*mízdai} yields *merde* rather than expected OE *meorde* ‘meed’. This shows that [SC003 PGmcRhotacism](#rule-PGmcRhotacism) must come before [SC044 OEBreaking](#rule-OEBreaking) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*líznōjaną} yields *lirnian* rather than expected OE *liornian* ‘learn’, PGmc \emph{*líznōθi} yields *lirnaþ* rather than expected *liornaþ*, PGmc \emph{*líznô} yields *lirna* rather than expected *liorna*, and PGmc \emph{*mízdai} yields *merde* rather than expected OE *meorde* ‘meed’. This shows that [SC003 PGmcRhotacism](#rule-PGmcRhotacism) must come before [SC044 OEBreaking](#rule-OEBreaking) in the modeled sequence.
 
-The later boundary is broad and distant. It is not a local adjacency claim. The earlier side remains boundary-only, but the later witness set still shows that West Germanic rhotacism must already have happened before the sequence reaches [SC044 OEBreaking](#rule-OEBreaking).
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat West Germanic rhotacism as a later development after the earlier \emph{*z}-loss material described above.
 
 \newpage
 
@@ -64,9 +64,9 @@ define PWGmcAiMonophthongization [
 
 In prose, the rule monophthongizes inherited \emph{*ai}. The clearest source support is for the word-final unstressed outcome, where \emph{*ai} merges with long mid \emph{*ē}; CAPR then keeps the broader inherited \emph{*ai} treatment visible in the same modeled step.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no witness word yields a historical first-break result before the search reaches order `4`, the beginning of the current expanded-PWGmc test range, so no earlier positive boundary is yet available. If it is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*sáiwalō} yields *sāwel* rather than expected OE *sāwol* ‘soul’. This shows that [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*sáiwalō} yields *sāwel* rather than expected OE *sāwol* ‘soul’. This shows that [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.
 
-The later boundary is broad and distant. It is not a local adjacency claim. The earlier side remains boundary-only, and the source caution remains important: the broad modeled rule is historically plausible, but the most explicit source support still clusters around the unstressed and word-final side of the change.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the broader inherited \emph{*ai} treatment here because the clearest source support places unstressed \emph{*ai} reduction among the early Northwest Germanic vowel shifts.
 
 \newpage
 
@@ -90,9 +90,9 @@ define NWGmcAToUBeforeM [
 
 In prose, the rule raises unstressed noninitial \emph{*a} before final \emph{*m} in ending material. It preserves a narrow morphophonological step that remains visible in the `shoulder` family, but the historical case is broader than that single compact-trace witness because the strongest support comes from inflectional endings.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*skúldramiz} yields *sċoldrum* rather than expected OE *sċuldrum*. This shows that [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*skúldramiz} yields *sċoldrum* rather than expected OE *sċuldrum*. This shows that [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering) in the modeled sequence.
 
-The later boundary is real, but it lies well to the right of the rule's own position and does not create a close local seam. The earlier side remains boundary-only, and the section should be read as a cautious inflectional sound-change note.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources place pre-\emph{*m} unstressed \emph{u} inside the same early ending history. The note remains a small inflectional development, not a broad lexical sound law.
 
 \newpage
 
@@ -117,9 +117,9 @@ define PWGmcEarlyIApocope [
 
 In prose, the rule deletes final \emph{*i} in remote unstressed syllables. That timing matters because later umlaut no longer sees the lost ending vowel, which is why forms like *geoguþ* ‘youth’ preserve the expected vocalism.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM) and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*skáwōθi} yields *sċēaweþ* rather than expected OE *sċēawaþ*. This shows that [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope) must come before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*skáwōθi} yields *sċēaweþ* rather than expected OE *sċēawaþ*. This shows that [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope) must come before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) in the modeled sequence.
 
-The later boundary is broad and distant. It is not a local adjacency claim. The earlier side remains boundary-only, but the later witness still shows that the early suffixal loss must already have happened before the sequence reaches [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong).
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat this suffixal loss as an early step in the ending history before the later diphthongal developments.
 
 \newpage
 
@@ -143,9 +143,9 @@ define PWGmcFinalOrLowering [
 
 In prose, the rule lowers final bimoric \emph{*ō} before word-final \emph{*r}. This is the adjustment that lies behind the West Germanic vocalism of *fēower* ‘four’ and *wæter* ‘water’.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*wátōr} yields *water* rather than expected OE *wæter* ‘water’. This shows that [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*wátōr} yields *water* rather than expected OE *wæter* ‘water’. This shows that [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) in the modeled sequence.
 
-The later boundary is broad and distant. It is not a local adjacency claim. The earlier side remains boundary-only, and the narrow witness set should stay visible whenever this rule is discussed.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the `four` and `water` material belongs to the same early West Germanic final-vowel history described above.
 
 \newpage
 
@@ -170,9 +170,9 @@ define PWGmcCoronalWAssimilation [
 
 In prose, the rule assimilates coronal consonants before \emph{*w} so that the sequence behaves as \emph{*ww}. The lexical evidence is concentrated in the pathway to *fēower* ‘four’, while the pronominal material shows that the change is not confined to one isolated noun.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc \emph{*fédwōr} yields *fēowwer* rather than expected OE *fēower* ‘four’. This shows that [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) must come before [SC031 OEWWSimplification](#rule-OEWWSimplification) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc \emph{*fédwōr} yields *fēowwer* rather than expected OE *fēower* ‘four’. This shows that [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) must come before [SC031 OEWWSimplification](#rule-OEWWSimplification) in the modeled sequence.
 
-The later boundary is broad and distant. It is not a local adjacency claim. The earlier side remains boundary-only, and the chapter keeps the small lexical and pronominal witness set explicit while keeping the broad CAPR rule subordinate to the historical evidence.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the `four` and pronominal material places this assimilation in the same early West Germanic cluster before the later diphthongal developments.
 
 \newpage
 
@@ -197,9 +197,9 @@ define PWGmcIjContraction [
 
 In prose, the rule contracts the rare \emph{*ijō} sequence in the family behind OE *frēond* 'friend'. The section belongs here because a continuous account of the early sequence should explain that development openly, even though the source base remains effectively one family.
 
-Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, it crosses [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) safely and reaches order `4` with no real break, so no earlier positive boundary is yet available. If it is delayed until after [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), PGmc \emph{*fríjōndz} yields *friund* rather than expected OE *frēond*. This shows that [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction) must come before [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling) in the modeled sequence.
+Its chronology is useful but one-sided. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If it is delayed until after [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), PGmc \emph{*fríjōndz} yields *friund* rather than expected OE *frēond*. This shows that [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction) must come before [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling) in the modeled sequence.
 
-The later boundary is real, but it lies far to the right of the rare `friend` development and does not turn the rule into a productive sound law. The earlier side remains boundary-only, and the rule is best read as a short lexical note on the `friend` family. From here the sequence passes into the tighter local seam between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ).
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat the `friend` development as a narrow early change within the same sequence. It remains a one-family note, not a productive sound law. From here the sequence passes into the tighter local seam between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ).
 
 \newpage
 
@@ -235,7 +235,7 @@ define PWGmcJGemination [
 
 In prose, the rule doubles consonants before \emph{*j} after a short vowel. It preserves one of the steps behind OE *nett* 'net' and related West Germanic outcomes in this narrow environment.
 
-Its chronology is useful but asymmetric. The earlier search moved the rule safely across [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction), [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation), [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), [SC005 NWGmcAToUBeforeM](#rule-NWGmcAToUBeforeM), and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) to order `4` and then reached the start of the tested expanded-PWGmc chain with no real break. This side is boundary-only. It does not provide a positive chronology constraint. The later search breaks immediately at [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ). If [SC010 PWGmcJGemination](#rule-PWGmcJGemination) is delayed past [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), PGmc \emph{*nátją} yields *nete* rather than expected OE *nett* 'net'. This gives a tight local seam between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ). In practice, [SC010 PWGmcJGemination](#rule-PWGmcJGemination) must come before [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ).
+Its chronology is useful but asymmetric. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If [SC010 PWGmcJGemination](#rule-PWGmcJGemination) is delayed past [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), PGmc \emph{*nátją} yields *nete* rather than expected OE *nett* 'net'. This shows that [SC010 PWGmcJGemination](#rule-PWGmcJGemination) must come before [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ). The checked forms therefore fix the close relation between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), but do not identify a corresponding earlier constraint. CAPR keeps the rule here because the sources treat West Germanic j-gemination as the consonantal step that must already be in place before the following syllabic-\emph{j} development.
 
 \newpage
 
@@ -260,7 +260,7 @@ define PWGmcSyllabicJ [
 
 In prose, the rule turns postconsonantal \emph{*j} into syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} has been lost. It keeps explicit a small but historically real step behind forms such as *here* and *rice*.
 
-Its chronology is mixed. The earlier search breaks immediately at [SC010 PWGmcJGemination](#rule-PWGmcJGemination). If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) is moved before [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc \emph{*nátją} yields *nete* rather than expected OE *nett* 'net'. The later search reaches order `86`, the current [SC087 OERMetathesis](#rule-OERMetathesis) boundary, with no real break. This later-side result is boundary-only. It does not provide a positive chronology constraint. This gives a tight local seam with [SC010 PWGmcJGemination](#rule-PWGmcJGemination) on the earlier side, while leaving no later-side positive boundary. In practice, [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) must come after [SC010 PWGmcJGemination](#rule-PWGmcJGemination).
+Its chronology is mixed. If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) is moved before [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc \emph{*nátją} yields *nete* rather than expected OE *nett* 'net'. This shows that [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) must come after [SC010 PWGmcJGemination](#rule-PWGmcJGemination). If the rule is moved later within the tested sequence, no checked form yields a form different from the expected one. The checked forms therefore fix the earlier relation between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), but do not identify a corresponding later constraint. CAPR keeps the rule here because the sources treat syllabic \emph{*j} as the follower to final-vowel loss once the earlier consonant adjustments are already in place.
 
 The source support is real, but the live trace remains thin. That is why the chapter stays narrow and does not turn into a broader discussion of high-vowel behavior.
 
@@ -363,7 +363,7 @@ define NWGmcILowering [
 
 In prose, the rule lowers or levels early front-vowel quality in unstressed syllables. In the current sequence, that adjustment is especially visible in the pathway to *weorold* ‘world’.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields *wuruld* rather than expected OE *weorold* ‘world’. This shows that [SC015 NWGmcILowering](#rule-NWGmcILowering) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising). Moving the rule earlier within the tested sequence, however, did not produce a diagnostic contrast among the checked forms before the search reached the start of the tested early sequence, so the order test does not yet give a closer earlier constraint.
+Its chronology is real but one-sided. If the rule is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields *wuruld* rather than expected OE *weorold* ‘world’. This shows that [SC015 NWGmcILowering](#rule-NWGmcILowering) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one. The checked forms therefore do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the cited `weorold` material places it inside the same early unstressed-vowel sequence.
 
 Together these two early notes hand the sequence forward to [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) and [SC017 NWGmcULowering](#rule-NWGmcULowering), where the local chronology becomes tighter and the derivations more crowded.
 
@@ -405,7 +405,7 @@ define OEWsPalatalGlide [
 
 In prose, the rule inserts a front glide after an initial palatal before back-vocalic \emph{u}. This is the step that helps produce West Saxon forms such as *ġeoc* ‘yoke’.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields *ġoc* rather than expected OE *ġeoc* ‘yoke’. This shows that [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its chronology is real but one-sided. If the rule is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields *ġoc* rather than expected OE *ġeoc* ‘yoke’. This shows that [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one. The checked forms therefore do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the `ġeoc` / `ġeong` / `ġeoguþ` material belongs to the same early West Saxon palatal-glide development described above.
 
 ## Historical discussion of u-lowering
 
@@ -532,9 +532,9 @@ define NWGmcUnstressedORaising [
 
 In prose, the rule raises unstressed \emph{*o} to \emph{*u} before a later \emph{*u}. This is the adjustment that helps keep the *heofon* derivation on its attested path.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*xémonų} yields *heofun* rather than expected OE *heofon* ‘heaven’. This shows that [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its chronology is real but one-sided. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*xémonų} yields *heofun* rather than expected OE *heofon* ‘heaven’. This shows that [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
 
-The later boundary is therefore broad and distant. The earlier side remains a search-boundary limitation, not a historical anchor.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the *heofon* family belongs to the same early unstressed-vowel history described above.
 
 \newpage
 
@@ -584,9 +584,9 @@ define NWGmcNStemNLoss [
 
 In prose, the rule removes the final \emph{n} of the relevant n-stem ending and leaves the nasalized long vowel that later developments can reshape. In the current sequence, this is the step that keeps the derivation of *dōn* on track.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc \emph{*dōną} no longer yields expected OE *dōn* ‘do’, and the row records no output at all (\emph{+?}). This shows that [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must come before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its chronology is real but one-sided. If the rule is delayed until after [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc \emph{*dōną} no longer yields expected OE *dōn* ‘do’, and the row records no output at all (\emph{+?}). This shows that [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must come before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
 
-The later boundary is therefore historically real but broad and distant. The bad outcome must be read as a failed derivation, not as a competing Old English surface form.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources place this n-stem reduction in the same early final-ending history that eventually feeds the later apocope material. The bad outcome on the supported side must still be read as a failed derivation, not as a competing Old English surface form.
 
 \newpage
 
@@ -611,9 +611,9 @@ define NWGmcLongELowering [
 
 In prose, the rule lowers long \emph{ē} to \emph{ǣ} before non-nasal consonants. This is the earlier adjustment behind the later West Saxon outputs seen in *sċēap* and *ġēar*.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), PGmc \emph{*skḗpą} yields *sċīep* rather than expected OE *sċēap* ‘sheep’, and PGmc \emph{*jḗrą} yields *ġīer* rather than expected *ġēar* ‘year’. This shows that [SC024 NWGmcLongELowering](#rule-NWGmcLongELowering) must come before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its chronology is real but one-sided. If the rule is delayed until after [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), PGmc \emph{*skḗpą} yields *sċīep* rather than expected OE *sċēap* ‘sheep’, and PGmc \emph{*jḗrą} yields *ġīer* rather than expected *ġēar* ‘year’. This shows that [SC024 NWGmcLongELowering](#rule-NWGmcLongELowering) must come before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
 
-The later boundary is therefore broad and distant. The earlier side remains a search-boundary limitation, not a historical anchor.
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat the lowering as the earlier stage behind the later West Saxon outputs *sċēap* and *ġēar*.
 
 \newpage
 
@@ -672,7 +672,9 @@ define NWGmcNasalSpirantLengthening [
 
 In prose, the rule lengthens and reshapes the vowel before nasal plus voiceless spirant sequences. This is the stage that helps produce OE *fȳst* ‘fist’, *gōs* ‘goose’, and *ġeoguþ* ‘youth’.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss), PGmc \emph{*fúnxstiz} yields *fyst* rather than expected OE *fȳst* ‘fist’, PGmc \emph{*gánsz} yields *ġeas* rather than expected *gōs* ‘goose’, and PGmc \emph{*júgunθ} yields *ġeogoþ* rather than expected *ġeoguþ* ‘youth’. This shows that [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) must come before [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss), PGmc \emph{*fúnxstiz} yields *fyst* rather than expected OE *fȳst* ‘fist’, PGmc \emph{*gánsz} yields *ġeas* rather than expected *gōs* ‘goose’, and PGmc \emph{*júgunθ} yields *ġeogoþ* rather than expected *ġeoguþ* ‘youth’. This shows that [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) must come before [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat vowel lengthening and nasal loss as two parts of the same inherited nasal-spirant development.
 
 ## SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss}
 
@@ -686,7 +688,9 @@ define NWGmcNasalSpirantLoss [
 
 In prose, the rule deletes the nasal before a voiceless spirant after the vowel has already been adjusted. This is the stage that completes the same inherited development behind *fȳst*, *gōs*, and *ġeoguþ*.
 
-Its ordinary historical chronology is one-sided in the opposite direction. If the rule is moved before [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening), PGmc \emph{*fúnxstiz} yields *fyst* rather than expected OE *fȳst* ‘fist’, PGmc \emph{*gánsz} yields *ġeas* rather than expected *gōs* ‘goose’, and PGmc \emph{*júgunθ} yields *ġeogoþ* rather than expected *ġeoguþ* ‘youth’. This shows that [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) must come before [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss). If the rule is moved later within the currently tested range, no witness word yields a historical first-break result before the search reaches the present limit, so no later positive boundary is yet available.
+Its ordinary historical chronology is one-sided in the opposite direction. If the rule is moved before [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening), PGmc \emph{*fúnxstiz} yields *fyst* rather than expected OE *fȳst* ‘fist’, PGmc \emph{*gánsz} yields *ġeas* rather than expected *gōs* ‘goose’, and PGmc \emph{*júgunθ} yields *ġeogoþ* rather than expected *ġeoguþ* ‘youth’. This shows that [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) must come before [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss). If the rule is moved later within the tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only the earlier relation: [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss) must follow [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening). They do not identify a corresponding later constraint, and CAPR keeps the rule here because the same inherited development requires the nasal to disappear only after the preceding vowel has already been adjusted.
 
 \newpage
 
@@ -743,7 +747,9 @@ define OEAwjGlideFormation [
 
 In prose, the rule turns older \emph{awj} material into the glide sequence that the following fronting rule can read. This is the step behind forms such as *hīeġ* and *strīeġan*.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC030 OEAuFronting](#rule-OEAuFronting), PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. This shows that [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) must come before [SC030 OEAuFronting](#rule-OEAuFronting). The earlier direction remains boundary-limited in current testing: the search reaches bundled earlier material without a real break.
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC030 OEAuFronting](#rule-OEAuFronting), PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. This shows that [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) must come before [SC030 OEAuFronting](#rule-OEAuFronting). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat `awj` reshaping as the preparatory step before the fronted diphthongal outcomes develop.
 
 ## Historical discussion of au-fronting
 
@@ -796,7 +802,9 @@ define OEWWSimplification [
 
 In prose, the rule reduces a doubled \emph{w} to a single \emph{w}. That simplification is what allows the later \emph{ēaw} rule to work with the shape seen in *dēaw* and *hēawan*.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*dáwwō} yields *dawu* rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields *hawan* rather than expected *hēawan* ‘hew’. This shows that [SC031 OEWWSimplification](#rule-OEWWSimplification) must come before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong). A farther-left computational break is also visible: PGmc \emph{*fédwōr} yields *fēowwer* instead of expected OE *fēower* ‘four’, and PGmc \emph{*xáwwją} yields *hēai* instead of expected *hīeġ* ‘hay’. Because that break appears only before the earlier sequence is divided into ordinary historical rules, it does not identify a normal earlier boundary for [SC031 OEWWSimplification](#rule-OEWWSimplification).
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*dáwwō} yields *dawu* rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields *hawan* rather than expected *hēawan* ‘hew’. This shows that [SC031 OEWWSimplification](#rule-OEWWSimplification) must come before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong). If the rule is moved earlier within the ordinary tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier historical constraint, and CAPR keeps the rule here because the `dēaw` / `hēawan` material belongs to the same West Saxon diphthong zone that the following rule develops further.
 
 ## Historical discussion of diphthong leveling
 
@@ -847,7 +855,9 @@ define OEEwLongDiphthong [
 
 In prose, the rule turns \emph{ew} and \emph{iw} sequences into long \emph{ēow}. This is the step behind forms such as *ċēowan*, *fēower*, and *cnēow*.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*kéwwaną} yields *ċeowan* rather than expected OE *ċēowan* ‘chew’, PGmc \emph{*fédwōr} yields *feower* rather than expected *fēower* ‘four’, and PGmc \emph{*knéwą} yields *cneow* rather than expected *cnēow* ‘knee’. This shows that [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) must come before [SC044 OEBreaking](#rule-OEBreaking). A farther-left computational break also appears when the search reaches undivided earlier material: PGmc \emph{*fédwōr} yields *feower* instead of *fēower*. Because that break does not cross an ordinary historical rule, it does not identify a normal earlier boundary for [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong).
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*kéwwaną} yields *ċeowan* rather than expected OE *ċēowan* ‘chew’, PGmc \emph{*fédwōr} yields *feower* rather than expected *fēower* ‘four’, and PGmc \emph{*knéwą} yields *cneow* rather than expected *cnēow* ‘knee’. This shows that [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) must come before [SC044 OEBreaking](#rule-OEBreaking). If the rule is moved earlier within the ordinary tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier historical constraint, and CAPR keeps the rule here because the sources treat long \emph{ēow} as part of the same diphthong region even though its strongest ordering relation points forward to breaking.
 
 ## Historical discussion of long \emph{ēaw}
 
@@ -969,7 +979,9 @@ define OEWICombinativeUUmlaut [
 
 In prose, the rule changes the first vowel of \emph{wi}-forms under the following back-vowel conditions. This is the step that helps produce OE *wuduwe* ‘widow’.
 
-Its chronology is clear on the later side. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*wíduwōn} yields *wudowe* rather than expected OE *wuduwe* ‘widow’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). The earlier direction remains one-sided in current testing: the search reaches bundled earlier material without producing an ordinary historical break.
+Its chronology is clear on the later side. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*wíduwōn} yields *wudowe* rather than expected OE *wuduwe* ‘widow’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the `widow` material belongs to the same low-stress vocalic sequence as the following medial lowering.
 
 ## SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering}
 
@@ -2332,13 +2344,16 @@ In prose, it simplifies doubled \emph{*tt} or \emph{*nn} before a following sono
 
 Its positive evidence is one-sided but exact. If the rule is moved before
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō}
-yields *spinnl* rather than expected OE *spinl* ‘spindle’. No later real break
-is currently available before the current search boundary. This places
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) before
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination),
-while the later side remains one-sided.
+yields *spinnl* rather than expected OE *spinl* ‘spindle’. This shows that
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination). If the
+rule is moved later within the tested sequence, no checked form yields a form
+different from the expected one.
 
-That one-sided profile is still meaningful. The rule is clearly later than the syncope that creates the offending cluster, but the current evidence does not yet force a sharper later boundary beyond that.
+That one-sided profile is still meaningful. The checked forms fix the earlier
+relation but do not identify a corresponding later constraint. CAPR keeps the
+rule here because the sources treat this simplification as a follower to the
+syncope-created cluster sequence.
 
 \newpage
 
@@ -2362,9 +2377,9 @@ define OEEarlyOShortening [
 
 In prose, the rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.
 
-Its chronology is real, but it is broad and one-sided. If the rule is moved before [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss), PGmc \emph{*nḗdrōn} yields *nǣdran* rather than expected OE *nǣdre* ‘adder’, PGmc \emph{*érθōn} yields *eorþan* rather than expected *eorþe* ‘earth’, and PGmc \emph{*fláskōn} yields *flascan* rather than expected *flasce* ‘flask’. The same earlier shift also disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of failures shows that [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must come before [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening).
+Its chronology is real, but it is one-sided. If the rule is moved before [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss), PGmc \emph{*nḗdrōn} yields *nǣdran* rather than expected OE *nǣdre* ‘adder’, PGmc \emph{*érθōn} yields *eorþan* rather than expected *eorþe* ‘earth’, and PGmc \emph{*fláskōn} yields *flascan* rather than expected *flasce* ‘flask’. The same earlier shift also disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of failures shows that [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must come before [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening).
 
-No equally sharp later breakpoint appears within the tested range. The current search reaches its later boundary without a real break, so the rule should not be given a spurious later limit. Early o-shortening is therefore best read as an opening adjustment in the late weak tail, not as the central chronology seam of the region.
+If the rule is moved later within the tested sequence, no checked form yields a form different from the expected one. The checked forms therefore do not identify a corresponding later constraint. CAPR keeps the rule here because the sources treat early \emph{*ō}-shortening as an opening step in the later weak-tail sequence, not as the central chronology seam of the region.
 
 \newpage
 
@@ -2717,7 +2732,7 @@ That one-sided profile is still substantial because the earlier reciprocal seam 
 
 ## Historical discussion
 
-R-metathesis closes the present sequence, but it does not behave like the second half of a tidy local pair. The historical process is real enough to deserve explicit prose, yet its chronology is broad and distant on the left and open on the right. Sievers-Brunner gives a clear page-safe grammatical statement of the phenomenon through forms such as *berstan* ‘burst’, *forst* ‘frost’, and *cærse* ‘cress’ [@SieversBrunner1965, p. 159, §179]. Luick likewise treats metathesis as a later rearrangement whose interaction with breaking remains variable and not tightly local [@Luick1914, p. 201].
+R-metathesis closes the present sequence, but it does not behave like the second half of a tidy local pair. The historical process is real enough to deserve explicit prose, yet its chronology reaches much farther back on the left than it does on the right. Sievers-Brunner gives a clear page-safe grammatical statement of the phenomenon through forms such as *berstan* ‘burst’, *forst* ‘frost’, and *cærse* ‘cress’ [@SieversBrunner1965, p. 159, §179]. Luick likewise treats metathesis as a later rearrangement whose interaction with breaking remains variable and not tightly local [@Luick1914, p. 201].
 
 That is why the chapter stays short. The note belongs after the contraction chapter in the assembled order, but the evidence does not justify inventing a positive claim that [SC086 OEContraction](#rule-OEContraction) must come before [SC087 OERMetathesis](#rule-OERMetathesis) simply because the two are adjacent.
 
@@ -2740,9 +2755,9 @@ define OERMetathesis [
 
 In prose, the rule moves \emph{*r} across a following short vowel in the relevant late clusters, producing forms such as *berstan* ‘burst’ where an earlier order would still show a broken vowel sequence.
 
-Its chronology is one-sided and broad. If the rule is moved before [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*bréstaną} yields *beorstan* rather than expected OE *berstan* ‘burst’. That shows that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC087 OERMetathesis](#rule-OERMetathesis). The later side is different: the current tests find no real break beyond the current order before the search limit, so the available evidence does not identify any later historical boundary for [SC087 OERMetathesis](#rule-OERMetathesis).
+Its chronology is one-sided. If the rule is moved before [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*bréstaną} yields *beorstan* rather than expected OE *berstan* ‘burst’. That shows that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC087 OERMetathesis](#rule-OERMetathesis). If the rule is moved later within the tested sequence, no checked form yields a form different from the expected one.
 
-That profile is exactly why the chapter remains modest. The earlier relation is historically real, but it is broad and far away. The right side remains boundary-limited. R-metathesis therefore works best as a short closing note, not as the capstone of a tighter adjacent pair.
+That profile is exactly why the chapter remains modest. The checked forms fix the earlier relation but do not identify a corresponding later constraint. CAPR keeps the rule here because the sources treat r-metathesis as a late rearrangement that follows the earlier breaking and contraction history without being fixed immediately beside either one.
 
 \newpage
 

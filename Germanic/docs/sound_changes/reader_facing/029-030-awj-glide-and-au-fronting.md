@@ -27,7 +27,9 @@ define OEAwjGlideFormation [
 
 In prose, the rule turns older \emph{awj} material into the glide sequence that the following fronting rule can read. This is the step behind forms such as *hīeġ* and *strīeġan*.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC030 OEAuFronting](#rule-OEAuFronting), PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. This shows that [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) must come before [SC030 OEAuFronting](#rule-OEAuFronting). The earlier direction remains boundary-limited in current testing: the search reaches bundled earlier material without a real break.
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC030 OEAuFronting](#rule-OEAuFronting), PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. This shows that [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) must come before [SC030 OEAuFronting](#rule-OEAuFronting). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat `awj` reshaping as the preparatory step before the fronted diphthongal outcomes develop.
 
 ## Historical discussion of au-fronting
 

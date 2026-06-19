@@ -34,7 +34,7 @@ define OEWsPalatalGlide [
 
 In prose, the rule inserts a front glide after an initial palatal before back-vocalic \emph{u}. This is the step that helps produce West Saxon forms such as *ġeoc* ‘yoke’.
 
-Its chronology is real but one-sided. If the rule is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields *ġoc* rather than expected OE *ġeoc* ‘yoke’. This shows that [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering). If the rule is moved earlier within the currently tested range, no witness word yields a historical first-break result before the search reaches bundled earlier material, so no earlier positive boundary is yet available.
+Its chronology is real but one-sided. If the rule is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields *ġoc* rather than expected OE *ġeoc* ‘yoke’. This shows that [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) must come before [SC017 NWGmcULowering](#rule-NWGmcULowering). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one. The checked forms therefore do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the `ġeoc` / `ġeong` / `ġeoguþ` material belongs to the same early West Saxon palatal-glide development described above.
 
 ## Historical discussion of u-lowering
 

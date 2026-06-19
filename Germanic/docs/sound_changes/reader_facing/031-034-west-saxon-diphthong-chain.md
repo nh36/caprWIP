@@ -24,7 +24,9 @@ define OEWWSimplification [
 
 In prose, the rule reduces a doubled \emph{w} to a single \emph{w}. That simplification is what allows the later \emph{ēaw} rule to work with the shape seen in *dēaw* and *hēawan*.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*dáwwō} yields *dawu* rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields *hawan* rather than expected *hēawan* ‘hew’. This shows that [SC031 OEWWSimplification](#rule-OEWWSimplification) must come before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong). A farther-left computational break is also visible: PGmc \emph{*fédwōr} yields *fēowwer* instead of expected OE *fēower* ‘four’, and PGmc \emph{*xáwwją} yields *hēai* instead of expected *hīeġ* ‘hay’. Because that break appears only before the earlier sequence is divided into ordinary historical rules, it does not identify a normal earlier boundary for [SC031 OEWWSimplification](#rule-OEWWSimplification).
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*dáwwō} yields *dawu* rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields *hawan* rather than expected *hēawan* ‘hew’. This shows that [SC031 OEWWSimplification](#rule-OEWWSimplification) must come before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong). If the rule is moved earlier within the ordinary tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier historical constraint, and CAPR keeps the rule here because the `dēaw` / `hēawan` material belongs to the same West Saxon diphthong zone that the following rule develops further.
 
 ## Historical discussion of diphthong leveling
 
@@ -75,7 +77,9 @@ define OEEwLongDiphthong [
 
 In prose, the rule turns \emph{ew} and \emph{iw} sequences into long \emph{ēow}. This is the step behind forms such as *ċēowan*, *fēower*, and *cnēow*.
 
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*kéwwaną} yields *ċeowan* rather than expected OE *ċēowan* ‘chew’, PGmc \emph{*fédwōr} yields *feower* rather than expected *fēower* ‘four’, and PGmc \emph{*knéwą} yields *cneow* rather than expected *cnēow* ‘knee’. This shows that [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) must come before [SC044 OEBreaking](#rule-OEBreaking). A farther-left computational break also appears when the search reaches undivided earlier material: PGmc \emph{*fédwōr} yields *feower* instead of *fēower*. Because that break does not cross an ordinary historical rule, it does not identify a normal earlier boundary for [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong).
+Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*kéwwaną} yields *ċeowan* rather than expected OE *ċēowan* ‘chew’, PGmc \emph{*fédwōr} yields *feower* rather than expected *fēower* ‘four’, and PGmc \emph{*knéwą} yields *cneow* rather than expected *cnēow* ‘knee’. This shows that [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) must come before [SC044 OEBreaking](#rule-OEBreaking). If the rule is moved earlier within the ordinary tested sequence, no checked form yields a form different from the expected one.
+
+The checked forms therefore fix only that later relation. They do not identify a corresponding earlier historical constraint, and CAPR keeps the rule here because the sources treat long \emph{ēow} as part of the same diphthong region even though its strongest ordering relation points forward to breaking.
 
 ## Historical discussion of long \emph{ēaw}
 

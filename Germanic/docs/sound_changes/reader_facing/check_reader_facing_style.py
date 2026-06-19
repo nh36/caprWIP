@@ -64,6 +64,7 @@ DEFAULT_SKIP = {
     "reader_facing_source_based_chronology_rationales_01.md",
     "reader_facing_chronology_rationale_grounding_01.md",
     "reader_facing_broad_window_chronology_review_01.md",
+    "reader_facing_one_direction_chronology_review_01.md",
     "reader_facing_chronology_confidence_audit_01.md",
     "reader_facing_local_section_19_editorial_review_01.md",
     "reader_facing_chronology_evidence_check_01.md",
