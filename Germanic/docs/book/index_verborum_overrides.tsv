@@ -1,1 +1,18 @@
 action	language	form	display	sort_key	source_scope	source_ref	note
+add	on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Safely labelled Old Norse comparison form.
+add	ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Safely labelled Old Frisian comparison form.
+add	ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	Safely labelled Old High German comparison form.
+add	goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	Safely labelled Gothic comparison form.
+add	on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Safely labelled Old Norse comparison form.
+add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	Old English comparison form discussed explicitly in prose.
+add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	Old English comparison form discussed explicitly in prose.
+ignore		attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
+ignore		attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:99	Derivation-class label, not an indexable form.
+ignore		citation				Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:25	Ordinary English prose false positive.
+ignore		comparator				Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:39	Ordinary English prose false positive.
+ignore		derivation				Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:23	Ordinary English prose false positive.
+ignore		development				Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:28	Ordinary English prose false positive.
+ignore		development				Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:49	Ordinary English prose false positive.
+ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:40	Ordinary English prose false positive.
+ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:40	Ordinary English prose false positive.
+ignore		family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33	Ordinary English prose false positive.

@@ -1,5 +1,7 @@
 language	form	display	sort_key	source_scope	source_ref	origin	status
 oe	ǣl	ǣl	ael	trace_output	eel — OE ǣl	compact	auto
+oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	override	override
+oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	override	override
 oe	ān	ān	an	trace_output	one — OE ān	compact	auto
 oe	bacan	bacan	bacan	lexical_heading	bake — OE bacan	manifest	auto
 oe	bacan	bacan	bacan	trace_output	bake — OE bacan	compact	auto
@@ -2319,3 +2321,8 @@ preoe	*xwæl	*xwæl	xwael	trace_stage	whale — OE hwæl	compact:Anglo Frisian B
 preoe	*xwḯl	*xwḯl	xwil	trace_stage	while — OE hwīl	compact:OE High Vowel Apocope	auto
 preoe	*xwḯnan	*xwḯnan	xwinan	trace_stage	whine — OE hwīnan	compact:OE Heavy Syllable Nasal Apocope; compact:OE Weak Tail Reduction	auto
 preoe	*xwḯnąn	*xwḯnąn	xwinan	trace_stage	whine — OE hwīnan	compact:OE Secondary Nasalization	auto
+on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
+on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	override	override
+ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	override	override
+ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
+goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	override	override

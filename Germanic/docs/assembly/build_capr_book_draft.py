@@ -13,6 +13,7 @@ INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
+MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
 LANGUAGE_ORDER = ["oe", "pgmc", "pwgmc", "nwgmc", "preoe", "on", "ohg", "ofris", "goth"]
 
@@ -25,9 +26,19 @@ def index_command(language: str, sort_key: str, display: str) -> str:
     return rf"\index[{language}]{{{latex_escape(sort_key)}@{latex_escape(display)}}}"
 
 
-def load_production_rows() -> tuple[dict[str, list[str]], list[str]]:
-    commands_by_ref: dict[str, list[str]] = defaultdict(list)
+def heading_ref(lexical_item: str, counterpart: str) -> str:
+    return f"{lexical_item} — OE {counterpart}"
+
+
+def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, list[str]]], list[str]]:
+    commands_by_heading_ref: dict[str, list[str]] = defaultdict(list)
+    commands_by_line_ref: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
     counts = Counter()
+    model_entry_heading_map = {}
+    with MANIFEST_PATH.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        for row in reader:
+            model_entry_heading_map[row["model_entry_path"]] = heading_ref(row["lexical_item"], row["counterpart"])
     with FORMS_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:
@@ -41,10 +52,33 @@ def load_production_rows() -> tuple[dict[str, list[str]], list[str]]:
             if not ref:
                 continue
             command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip())
-            if command not in commands_by_ref[ref]:
-                commands_by_ref[ref].append(command)
+            if ".md:" in ref:
+                path_part, line_part = ref.rsplit(":", 1)
+                if path_part in model_entry_heading_map:
+                    heading = model_entry_heading_map[path_part]
+                    if command not in commands_by_heading_ref[heading]:
+                        commands_by_heading_ref[heading].append(command)
+                elif line_part.isdigit():
+                    line_no = int(line_part)
+                    if command not in commands_by_line_ref[path_part][line_no]:
+                        commands_by_line_ref[path_part][line_no].append(command)
+            else:
+                if command not in commands_by_heading_ref[ref]:
+                    commands_by_heading_ref[ref].append(command)
     nonempty = [language for language in LANGUAGE_ORDER if counts.get(language)]
-    return commands_by_ref, nonempty
+    return commands_by_heading_ref, commands_by_line_ref, nonempty
+
+
+def inject_line_commands(path: Path, line_commands: dict[str, dict[int, list[str]]]) -> str:
+    rel = path.relative_to(REPO_ROOT).as_posix()
+    commands = line_commands.get(rel, {})
+    lines = path.read_text(encoding="utf-8").splitlines()
+    out: list[str] = []
+    for idx, line in enumerate(lines, start=1):
+        out.append(line)
+        if idx in commands:
+            out.extend(commands[idx])
+    return "\n".join(out).rstrip()
 
 
 def strip_title_block(text: str) -> str:
@@ -96,9 +130,9 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
 
 
 def build_book_markdown() -> str:
-    commands_by_ref, nonempty_languages = load_production_rows()
-    intro = INTRO_PATH.read_text(encoding="utf-8").rstrip()
-    chronology = transform_chronology(CHRONOLOGY_PATH.read_text(encoding="utf-8"))
+    commands_by_ref, line_commands, nonempty_languages = load_production_rows()
+    intro = inject_line_commands(INTRO_PATH, line_commands)
+    chronology = transform_chronology(inject_line_commands(CHRONOLOGY_PATH, line_commands))
     lexical = transform_lexical(LEXICAL_PATH.read_text(encoding="utf-8"), commands_by_ref)
     index_parts = [rf"\printindex[{language}]" for language in nonempty_languages]
     parts = [

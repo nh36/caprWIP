@@ -54,3 +54,21 @@ LaTeX `\index[...]` command after the tagged span.
 - Curated decisions belong in
   `Germanic/docs/book/index_verborum_overrides.tsv`, not in the generated
   `index_verborum_forms.tsv`.
+
+## Scholarly policy
+
+- Structured lexical and trace forms are indexed automatically at the lexical
+  entry or trace location that generated them.
+- Significant forms in running prose should be tagged explicitly with `.iv`
+  spans when they ought to contribute an occurrence-level index reference.
+- Broad audit candidates are warnings only. They do **not** enter the
+  production index unless they are:
+  1. tagged in prose,
+  2. added through `action=add` overrides, or
+  3. captured by another structured production source.
+- Unresolved audit candidates should eventually be:
+  1. tagged,
+  2. added by override,
+  3. ignored by override, or
+  4. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
+     backlog is still being worked down.

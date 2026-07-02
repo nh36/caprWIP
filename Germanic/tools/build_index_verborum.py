@@ -21,7 +21,7 @@ MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
-BASELINE_PATH = BOOK_DIR / "index_verborum_baseline.tsv"
+UNRESOLVED_BASELINE_PATH = BOOK_DIR / "index_verborum_unresolved_baseline.tsv"
 
 PRODUCTION_FIELDS = [
     "language",
@@ -123,6 +123,8 @@ class CandidateOccurrence:
     source_ref: str
     source_path: str
     line_no: int
+    heading: str
+    line_text: str
 
 
 def transliterate_sort_key(text: str) -> str:
@@ -340,8 +342,11 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
     rel = path.relative_to(REPO_ROOT).as_posix()
     candidates: list[CandidateOccurrence] = []
     in_fence = False
+    current_heading = ""
     for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
         stripped = line.strip()
+        if stripped.startswith("#"):
+            current_heading = stripped
         if stripped.startswith("```"):
             in_fence = not in_fence
             continue
@@ -354,11 +359,29 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
             raw = next(group for group in match.groups() if group)
             form = strip_markup(raw)
             if form:
-                candidates.append(CandidateOccurrence(form=form, source_ref=f"{rel}:{line_no}", source_path=rel, line_no=line_no))
+                candidates.append(
+                    CandidateOccurrence(
+                        form=form,
+                        source_ref=f"{rel}:{line_no}",
+                        source_path=rel,
+                        line_no=line_no,
+                        heading=current_heading,
+                        line_text=stripped,
+                    )
+                )
         for match in re.finditer(r"\b(?:PGmc|PWGmc|NWGmc|OE|ON|OHG|OFri|Goth)\s+(\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()\-]+)", scrubbed):
             form = strip_markup(match.group(1))
             if form:
-                candidates.append(CandidateOccurrence(form=form, source_ref=f"{rel}:{line_no}", source_path=rel, line_no=line_no))
+                candidates.append(
+                    CandidateOccurrence(
+                        form=form,
+                        source_ref=f"{rel}:{line_no}",
+                        source_path=rel,
+                        line_no=line_no,
+                        heading=current_heading,
+                        line_text=stripped,
+                    )
+                )
     return candidates
 
 
@@ -399,7 +422,7 @@ def override_matches(override: dict[str, str], *, form: str, source_scope: str =
     return True
 
 
-def build_production_rows() -> list[ProductionOccurrence]:
+def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ignore_overrides: list[dict[str, str]] | None = None) -> list[ProductionOccurrence]:
     manifest_rows = parse_manifest_rows()
     manifest_by_title = {
         (row["lexical_item"], row["counterpart"], row["protoform"]): heading_ref(row["lexical_item"], row["counterpart"])
@@ -443,7 +466,8 @@ def build_production_rows() -> list[ProductionOccurrence]:
                 origin=row["origin"],
             )
 
-    add_overrides, ignore_overrides = load_overrides()
+    if add_overrides is None or ignore_overrides is None:
+        add_overrides, ignore_overrides = load_overrides()
     for row in add_overrides:
         add_production(
             store,
@@ -483,13 +507,64 @@ def build_production_rows() -> list[ProductionOccurrence]:
     )
 
 
-def build_audit_rows(production_rows: list[ProductionOccurrence]) -> dict[str, list[dict[str, str]]]:
+FALSE_POSITIVE_FORMS = {
+    "attestation",
+    "attested_variant",
+    "breaking",
+    "citation",
+    "comparator",
+    "derivation",
+    "development",
+    "evidence",
+    "family",
+}
+
+
+def guess_unresolved_category(candidate: CandidateOccurrence) -> str:
+    text = candidate.line_text
+    form = candidate.form
+    label_map = [
+        (("Old Norse", "ON "), "likely_on"),
+        (("Old High German", "OHG "), "likely_ohg"),
+        (("Old Frisian", "OFris", "OFri "), "likely_ofris"),
+        (("Gothic", "Goth."), "likely_goth"),
+        (("PGmc", "Proto-Germanic"), "likely_pgmc"),
+        (("PWGmc", "Proto-West Germanic", "Proto-West-Germanic"), "likely_pwgmc"),
+        (("NWGmc", "Proto-Northwest Germanic", "Proto-Northwest-Germanic"), "likely_nwgmc"),
+        (("Old English", "OE "), "likely_oe"),
+    ]
+    for needles, category in label_map:
+        if any(needle in text for needle in needles):
+            return category
+    if form in FALSE_POSITIVE_FORMS:
+        return "likely_false_positive"
+    if candidate.heading.startswith("### Old English evidence"):
+        return "likely_oe"
+    if candidate.source_path.endswith("reader_facing_local_section_19.md"):
+        return "likely_preoe" if form.startswith("*") else "likely_oe"
+    if form.startswith("*"):
+        return "likely_pgmc"
+    if any(ch in form for ch in "þðæǣœȳċġǭǫáéíóúāēīōūḗḯ"):
+        return "likely_oe"
+    return "likely_false_positive"
+
+
+def build_audit_rows(
+    production_rows: list[ProductionOccurrence],
+    candidates: list[CandidateOccurrence] | None = None,
+    ignore_overrides: list[dict[str, str]] | None = None,
+) -> dict[str, list[dict[str, str]]]:
     production_forms = {row.form for row in production_rows}
-    _, ignore_overrides = load_overrides()
+    if ignore_overrides is None:
+        _, ignore_overrides = load_overrides()
     buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
     seen: set[tuple[str, str]] = set()
-    for path in source_files_for_audit():
-        for candidate in broad_candidates_from_path(path):
+    source_candidates = candidates
+    if source_candidates is None:
+        source_candidates = []
+        for path in source_files_for_audit():
+            source_candidates.extend(broad_candidates_from_path(path))
+    for candidate in source_candidates:
             if (candidate.form, candidate.source_ref) in seen:
                 continue
             seen.add((candidate.form, candidate.source_ref))
@@ -498,14 +573,17 @@ def build_audit_rows(production_rows: list[ProductionOccurrence]) -> dict[str, l
             category = candidate_category(candidate.form)
             if any(override_matches(override, form=candidate.form, source_ref=candidate.source_ref) for override in ignore_overrides):
                 category = "ignored_by_override"
-            buckets[category].append(
-                {
-                    "form": candidate.form,
-                    "source_ref": candidate.source_ref,
-                }
-            )
+            entry = {
+                "form": candidate.form,
+                "source_ref": candidate.source_ref,
+                "source_path": candidate.source_path,
+                "sort_key": transliterate_sort_key(candidate.form),
+            }
+            if category == "needs_review":
+                entry["category"] = guess_unresolved_category(candidate)
+            buckets[category].append(entry)
     for rows in buckets.values():
-        rows.sort(key=lambda row: (transliterate_sort_key(row["form"]), row["form"], row["source_ref"]))
+        rows.sort(key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"]))
     return buckets
 
 
@@ -528,20 +606,60 @@ def write_forms(rows: list[ProductionOccurrence]) -> None:
             )
 
 
-def write_audit(rows: list[ProductionOccurrence], buckets: dict[str, list[dict[str, str]]]) -> int:
+def load_unresolved_baseline(path: Path) -> dict[tuple[str, str], dict[str, str]]:
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        return {
+            ((row.get("form") or "").strip(), (row.get("source_ref") or "").strip()): {key: (value or "").strip() for key, value in row.items()}
+            for row in reader
+        }
+
+
+def write_unresolved_baseline(path: Path, entries: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=["form", "source_ref", "category", "sort_key", "note"])
+        writer.writeheader()
+        for entry in sorted(entries, key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"])):
+            writer.writerow(
+                {
+                    "form": entry["form"],
+                    "source_ref": entry["source_ref"],
+                    "category": entry.get("category", ""),
+                    "sort_key": entry.get("sort_key", ""),
+                    "note": "",
+                }
+            )
+
+
+def compare_against_baseline(entries: list[dict[str, str]], baseline: dict[tuple[str, str], dict[str, str]]) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
+    current = {(entry["form"], entry["source_ref"]): entry for entry in entries}
+    new_entries = [entry for key, entry in current.items() if key not in baseline]
+    resolved_entries = [baseline[key] for key in baseline if key not in current]
+    new_entries.sort(key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"]))
+    resolved_entries.sort(key=lambda row: (row.get("sort_key", ""), row.get("form", ""), row.get("source_ref", "")))
+    return new_entries, resolved_entries
+
+
+def write_audit(rows: list[ProductionOccurrence], buckets: dict[str, list[dict[str, str]]], baseline: dict[tuple[str, str], dict[str, str]]) -> int:
     counts_by_language = Counter(row.language for row in rows)
     unique_by_language = {
         language: len({row.display for row in rows if row.language == language})
         for language in counts_by_language
     }
+    needs_review_entries = buckets.get("needs_review", [])
+    new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
     lines = [
         "# Index verborum audit",
         "",
         f"- Production indexed occurrences: {len(rows)}",
         f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
-        f"- Audit-only candidates needing review: {len(buckets.get('needs_review', []))}",
+        f"- Audit-only candidates needing review: {len(needs_review_entries)}",
         f"- Ignored fragments or sequences: {len(buckets.get('ignored_fragment', [])) + len(buckets.get('ignored_by_override', []))}",
         f"- Possible extraction garbage: {len(buckets.get('possible_garbage', []))}",
+        f"- New unresolved candidates relative to baseline: {len(new_entries)}",
+        f"- Baseline candidates now resolved or ignored: {len(resolved_entries)}",
         "",
         "## Production indexed forms by language",
         "",
@@ -562,43 +680,63 @@ def write_audit(rows: list[ProductionOccurrence], buckets: dict[str, list[dict[s
             lines.append(f"- `{row.display}` ({row.source_scope}; {row.source_ref})")
         lines.append("")
 
-    def render_bucket(title: str, bucket_name: str) -> None:
-        entries = buckets.get(bucket_name, [])
+    def render_bucket(title: str, entries: list[dict[str, str]], columns: tuple[str, ...] = ("form", "source_ref")) -> None:
         lines.append(f"## {title}")
         lines.append("")
         if not entries:
             lines.append("_None._")
             lines.append("")
             return
-        lines.append("| Form | Source |")
-        lines.append("| --- | --- |")
+        label_map = {"form": "Form", "source_ref": "Source", "category": "Category", "count": "Count", "source_path": "Source file"}
+        lines.append("| " + " | ".join(label_map[col] for col in columns) + " |")
+        lines.append("| " + " | ".join("---" for _ in columns) + " |")
         for entry in entries:
-            lines.append(f"| `{entry['form']}` | {entry['source_ref']} |")
+            parts = []
+            for col in columns:
+                value = entry[col]
+                parts.append(f"`{value}`" if col == "form" else str(value))
+            lines.append("| " + " | ".join(parts) + " |")
         lines.append("")
 
-    render_bucket("Candidates needing language assignment", "needs_review")
-    render_bucket("Ignored fragments or sequences", "ignored_fragment")
-    render_bucket("Ignored by override", "ignored_by_override")
-    render_bucket("Possible extraction garbage", "possible_garbage")
+    guess_groups: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for entry in needs_review_entries:
+        guess_groups[entry["category"]].append(entry)
+    for group in guess_groups.values():
+        group.sort(key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"]))
+
+    render_bucket("Likely Old English forms", guess_groups.get("likely_oe", []))
+    render_bucket("Likely Proto-Germanic forms", guess_groups.get("likely_pgmc", []))
+    render_bucket("Likely Proto-West Germanic forms", guess_groups.get("likely_pwgmc", []))
+    render_bucket("Likely Proto-Northwest Germanic forms", guess_groups.get("likely_nwgmc", []))
+    render_bucket("Likely pre-Old-English or model-internal forms", guess_groups.get("likely_preoe", []))
+    render_bucket("Likely Old Norse forms", guess_groups.get("likely_on", []))
+    render_bucket("Likely Old High German forms", guess_groups.get("likely_ohg", []))
+    render_bucket("Likely Old Frisian forms", guess_groups.get("likely_ofris", []))
+    render_bucket("Likely Gothic forms", guess_groups.get("likely_goth", []))
+    render_bucket("Likely ordinary-language false positives", guess_groups.get("likely_false_positive", []))
+    render_bucket("Ignored fragments or sequences", buckets.get("ignored_fragment", []))
+    render_bucket("Ignored by override", buckets.get("ignored_by_override", []))
+    render_bucket("Possible extraction garbage", buckets.get("possible_garbage", []))
+
+    top_forms = Counter(entry["form"] for entry in needs_review_entries)
+    render_bucket(
+        "Top repeated unresolved forms",
+        [{"form": form, "count": count} for form, count in top_forms.most_common(20)],
+        columns=("form", "count"),
+    )
+    by_source = Counter(entry["source_path"] for entry in needs_review_entries)
+    render_bucket(
+        "Unresolved forms by source file",
+        [{"source_path": source, "count": count} for source, count in by_source.most_common(20)],
+        columns=("source_path", "count"),
+    )
+    render_bucket("New unresolved candidates relative to baseline", new_entries, columns=("form", "source_ref", "category"))
+    render_bucket("Resolved or ignored baseline candidates", resolved_entries, columns=("form", "source_ref", "category"))
     AUDIT_PATH.write_text("\n".join(lines), encoding="utf-8")
-    unresolved = len(buckets.get("needs_review", []))
+    unresolved = len(needs_review_entries)
     if unresolved:
         print(f"Warning: unresolved index candidates = {unresolved}; see {AUDIT_PATH}")
     return unresolved
-
-
-def load_baseline(path: Path) -> dict[str, int]:
-    metrics: dict[str, int] = {}
-    if not path.exists():
-        return metrics
-    with path.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        for row in reader:
-            metric = (row.get("metric") or "").strip()
-            value = (row.get("value") or "").strip()
-            if metric and value:
-                metrics[metric] = int(value)
-    return metrics
 
 
 def ensure_override_file() -> None:
@@ -621,8 +759,13 @@ def main() -> None:
     parser.add_argument(
         "--baseline",
         type=Path,
-        default=BASELINE_PATH,
+        default=UNRESOLVED_BASELINE_PATH,
         help="Baseline TSV used by --strict-mode=baseline.",
+    )
+    parser.add_argument(
+        "--write-unresolved-baseline",
+        action="store_true",
+        help="Rewrite the unresolved-candidate baseline from the current needs_review set.",
     )
     args = parser.parse_args()
     run_sort_key_assertions()
@@ -631,14 +774,18 @@ def main() -> None:
     production_rows = build_production_rows()
     write_forms(production_rows)
     audit_buckets = build_audit_rows(production_rows)
-    unresolved = write_audit(production_rows, audit_buckets)
+    baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
+    needs_review_entries = audit_buckets.get("needs_review", [])
+    if args.write_unresolved_baseline:
+        write_unresolved_baseline(args.baseline.expanduser().resolve(), needs_review_entries)
+        baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
+    unresolved = write_audit(production_rows, audit_buckets, baseline)
     strict_mode = "all" if args.strict else args.strict_mode
     if strict_mode == "all":
         raise SystemExit(1 if unresolved else 0)
     if strict_mode == "baseline":
-        baseline = load_baseline(args.baseline.expanduser().resolve())
-        baseline_value = baseline.get("needs_review_candidates", 0)
-        raise SystemExit(1 if unresolved > baseline_value else 0)
+        new_entries, _ = compare_against_baseline(needs_review_entries, baseline)
+        raise SystemExit(1 if new_entries else 0)
     raise SystemExit(0)
 
 

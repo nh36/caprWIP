@@ -38,6 +38,7 @@ bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section
 bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 
 python3 Germanic/tools/build_index_verborum.py ${strict_flag}
+python3 Germanic/tools/check_index_verborum.py
 python3 "${script_dir}/build_capr_book_draft.py"
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \

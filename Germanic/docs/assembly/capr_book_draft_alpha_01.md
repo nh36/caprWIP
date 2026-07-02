@@ -3567,6 +3567,9 @@ West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bān
 \index[oe]{bu@bū}
 \index[pgmc]{bo@*bō}
 \index[nwgmc]{bu@*bū}
+\index[on]{badir@báðir}
+\index[ohg]{bede@bēde}
+\index[ofris]{bethe@bēthe}
 
 Derivation: _\*bō_ > _bū_ (regular).
 
@@ -8748,6 +8751,8 @@ though the citation lemma remains the nominative singular.
 \index[pgmc]{brustz@*brústz}
 \index[preoe]{breost@*brēost}
 \index[preoe]{breosta@*brēostą}
+\index[on]{brjost@brjóst}
+\index[goth]{brusts@brusts}
 
 Derivation: citation reconstruction _\*brústz_; form followed here _\*bréustą_ > _brēost_ (early analogy).
 
@@ -11134,6 +11139,7 @@ selected inflected cell.
 
 ### thousand — OE þūsend
 
+\index[oe]{aerende@ærende}
 \index[oe]{thusend@þūsend}
 \index[pgmc]{usendi@*θūs-èndi}
 \index[pgmc]{usendi@*θūsèndi}
@@ -15721,3 +15727,11 @@ The comparison below sets the regular result beside the attested lexical excepti
 \printindex[nwgmc]
 
 \printindex[preoe]
+
+\printindex[on]
+
+\printindex[ohg]
+
+\printindex[ofris]
+
+\printindex[goth]
