@@ -233,11 +233,11 @@ Old English form: _bōc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the beech noun as _\*bōk(j)ō-_ and cites Old English boc, _bēce_ among its reflexes [@Kroonen2013]. The form followed here, _\*bōkō_, is the nominative-singular shape of that family, which is the relevant comparison form here.
+Kroonen gives the beech noun as _\*bōk(j)ō-_ and cites Old English _boc_, [_bēce_]{.iv lang=oe sort=bece} among its reflexes [@Kroonen2013]. The form followed here, _\*bōkō_, is the nominative-singular shape of that family, which is the relevant comparison form here.
 
 #### Old English evidence
 
-Kroonen's Old English evidence already separates the paradigm material: _boc_ as the nominative form and _bēce_ as an oblique form [@Kroonen2013]. The relevant comparator is therefore _bōc_; _bēċe_ remains related paradigm evidence rather than the form chosen for this comparison.
+Kroonen's Old English evidence already separates the paradigm material: _boc_ as the nominative form and [_bēce_]{.iv lang=oe sort=bece} as an oblique form [@Kroonen2013]. The relevant comparator is therefore _bōc_; [_bēċe_]{.iv lang=oe sort=bece} remains related paradigm evidence rather than the form chosen for this comparison.
 
 #### Development to Old English
 
@@ -360,15 +360,15 @@ Old English form: _bǣr_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as _\*bērō-_ f. 'bier' and cites Old English bar, _bær_ among the reflexes [@Kroonen2013, 717]. The form followed here, _\*bḗrō_, is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as _\*bērō-_ f. 'bier' and cites Old English _bar_, [_bær_]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The form followed here, _\*bḗrō_, is the same lexeme in the accent notation used here.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as _bær_, and Kroonen also records _bar_ beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target _bǣr_ is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer}, and Kroonen also records _bar_ beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target _bǣr_ is therefore a normalized long-vowel spelling of the same noun.
 
 #### Source note
 
-Lexicographic spellings vary between _bær_ and _bar_. The normalized target _bǣr_ simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer} and _bar_. The normalized target _bǣr_ simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 #### Development to Old English
 
@@ -552,7 +552,7 @@ Old English form: _bū_
 #### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under _\*ba-_ and gives the inherited
-paradigm _\*bai_, _\*bans_, _\*bōz_/_\*bōns_, _\*bō_, with Old English _bēġen_, _bā_, and
+paradigm _\*bai_, _\*bans_, _\*bōz_/_\*bōns_, _\*bō_, with Old English [_bēġen_]{.iv lang=oe sort=begen}, _bā_, and
 neuter _bū_ [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual _\*bō_.
 
@@ -567,10 +567,10 @@ displace the inherited neuter _\*bō_ > _bū_ treated here.
 #### Old English evidence
 
 The Old English dual paradigm is well established. Brunner gives masculine
-_bēġen_, feminine _bā_, and neuter _bū_ beside _bā_, with compounds such as
+[_bēġen_]{.iv lang=oe sort=begen}, feminine _bā_, and neuter _bū_ beside _bā_, with compounds such as
 _bā_ _twā_, _bū_ _tū_, and _bām_ _twām_ [@SieversBrunner1965, §324 Anm. 2].
-Campbell and Fulk present the same basic pattern: masculine _bēġen_, feminine
-_bā_, neuter _bā_, _bū_, genitive _bēġra_, _bēġ(e)a_, and dative _bǣm_
+Campbell and Fulk present the same basic pattern: masculine [_bēġen_]{.iv lang=oe sort=begen}, feminine
+_bā_, neuter _bā_, _bū_, genitive _bēġra_, _bēġ(e)a_, and dative [_bǣm_]{.iv lang=oe sort=baem}
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
 _bū_ is therefore an attested neuter dual form, not a reconstruction. It is the
@@ -787,7 +787,7 @@ Kroonen treats the noun under _\*kalbiz-_ and notes an older s-stem _\*kalbaz_, 
 
 #### Old English evidence
 
-Clark Hall gives cealf I. _(æ_, e) nm. (nap. cealfru), and Bosworth-Toller likewise records _Caelf_ / _Cealf_ beside plural forms such as _calfur_ and _cealfru_ [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-_-r-_ plural pattern [@Campbell1959; @Fulk2018, 193]. The spelling _ċealf_ used here makes the palatalized initial explicit; the ordinary attested dictionary headword is _cealf_.
+Clark Hall gives [_cealf_]{.iv lang=oe sort=cealf} I. (æ, e) nm. (nap. [_cealfru_]{.iv lang=oe sort=cealfru}), and Bosworth-Toller likewise records _Caelf_ / _Cealf_ beside plural forms such as _calfur_ and [_cealfru_]{.iv lang=oe sort=cealfru} [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-_-r-_ plural pattern [@Campbell1959; @Fulk2018, 193]. The spelling _ċealf_ used here makes the palatalized initial explicit; the ordinary attested dictionary headword is [_cealf_]{.iv lang=oe sort=cealf}.
 
 #### Development to Old English
 
@@ -1030,7 +1030,7 @@ Kroonen gives the inherited strong verb as _\*faran-_, and Orel gives the same l
 
 #### Old English evidence
 
-Clark Hall lemmatizes the strong verb as _faran_ and separately records weak _færan_ 'to frighten'; _fære_, _færst_, and _færð_ belong to present-tense forms of _faran_ rather than to the infinitive itself [@ClarkHall1960]. Bosworth-Toller preserves the same distinction [@BosworthToller1898, 108]. The Old English form here is therefore the attested citation infinitive _faran_.
+Clark Hall lemmatizes the strong verb as _faran_ and separately records weak _færan_ 'to frighten'; [_fære_]{.iv lang=oe sort=faere}, [_færst_]{.iv lang=oe sort=faerst}, and [_færð_]{.iv lang=oe sort=faerd} belong to present-tense forms of _faran_ rather than to the infinitive itself [@ClarkHall1960]. Bosworth-Toller preserves the same distinction [@BosworthToller1898, 108]. The Old English form here is therefore the attested citation infinitive _faran_.
 
 #### Development to Old English
 
@@ -4743,8 +4743,8 @@ Old English form: _cwedu_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the resin word as _\*kwedu-2_ and gives Old English
-variants _cwidu_, _cweodu_, and _c(w)udu_ [@Kroonen2013, 355]. Orel likewise
-lists _cwidu_ under the cognate set [@Orel2003, 266]. The derivational input
+variants [_cwidu_]{.iv lang=oe sort=cwidu}, [_cweodu_]{.iv lang=oe sort=cweodu}, and _c(w)udu_ [@Kroonen2013, 355]. Orel likewise
+lists [_cwidu_]{.iv lang=oe sort=cwidu} under the cognate set [@Orel2003, 266]. The derivational input
 _\*kwéðuz_
 therefore represents the older e-grade, voiced-dental form behind the chosen
 variant _cwedu_.
@@ -4752,8 +4752,8 @@ variant _cwedu_.
 #### Old English evidence
 
 The Old English word survives in a wider variant set than one dictionary
-headword suggests. Ringe and Taylor discuss _cwidu_ > _cwudu_ > _cudu_ and also
-note late West Saxon _cweodu_; Clark Hall gives _cwudu_, _cweodu_, and _cudu_
+headword suggests. Ringe and Taylor discuss [_cwidu_]{.iv lang=oe sort=cwidu} > [_cwudu_]{.iv lang=oe sort=cwudu} > _cudu_ and also
+note late West Saxon [_cweodu_]{.iv lang=oe sort=cweodu}; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu}, [_cweodu_]{.iv lang=oe sort=cweodu}, and _cudu_
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested _cwedu_ is treated here
 as the
 conservative variant within that set.

@@ -1,13 +1,23 @@
 action	language	form	display	sort_key	source_scope	source_ref	note
-add	on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Safely labelled Old Norse comparison form.
-add	ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Safely labelled Old Frisian comparison form.
-add	ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	Safely labelled Old High German comparison form.
-add	goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	Safely labelled Gothic comparison form.
-add	on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Safely labelled Old Norse comparison form.
+add	on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Norse comparison form.
+add	ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Frisian comparison form.
+add	ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	Clearly labelled Old High German comparison form.
+add	goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	Clearly labelled Gothic comparison form.
+add	on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Clearly labelled Old Norse comparison form.
 add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	Old English comparison form discussed explicitly in prose.
 add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	Old English comparison form discussed explicitly in prose.
+add	on	fylgja	fylgja	fylgja	override	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22	Clearly labelled Old Norse comparison form.
+add	on	gangr	gangr	gangr	override	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	Clearly labelled Old Norse comparison form.
+add	on	hliþó	hliþó	hlitho	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21	Clearly labelled Old Norse comparison form.
+add	goth	faurhtei	faurhtei	faurhtei	override	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22	Clearly labelled Gothic comparison form.
+add	goth	stibna	stibna	stibna	override	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23	Clearly labelled Gothic comparison form.
 ignore		attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
-ignore		attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:99	Derivation-class label, not an indexable form.
+ignore		attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:101	Derivation-class label, not a lexical form.
+ignore		breaking				Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29	Process label, not an indexed form.
+ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:183	English gloss/family label, not a historical form.
+ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:185	English gloss/family label, not a historical form.
+ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:202	English gloss/family label, not a historical form.
+ignore		layer				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21	Ordinary English prose false positive.
 ignore		citation				Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:25	Ordinary English prose false positive.
 ignore		comparator				Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:39	Ordinary English prose false positive.
 ignore		derivation				Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:23	Ordinary English prose false positive.
@@ -16,3 +26,6 @@ ignore		development				Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu
 ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:40	Ordinary English prose false positive.
 ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:40	Ordinary English prose false positive.
 ignore		family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33	Ordinary English prose false positive.
+ignore		beide				Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31	Modern German comparison mentioned in English prose; outside current index scope.
+ignore		learn				Germanic/docs/assembly/capr_book_intro_alpha_01.md:83	English gloss in prose, not a historical-language form.
+ignore		field				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:287	English gloss in prose, not a historical-language form.

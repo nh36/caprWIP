@@ -22,7 +22,7 @@ Kroonen gives the inherited strong verb as `*faran-`, and Orel gives the same le
 
 ### Old English evidence
 
-Clark Hall lemmatizes the strong verb as `faran` and separately records weak `færan` 'to frighten'; `fære`, `færst`, and `færð` belong to present-tense forms of `faran` rather than to the infinitive itself [@ClarkHall1960]. Bosworth-Toller preserves the same distinction [@BosworthToller1898, 108]. The selected target is therefore the attested citation infinitive `faran`.
+Clark Hall lemmatizes the strong verb as `faran` and separately records weak `færan` 'to frighten'; [`fære`]{.iv lang=oe sort=faere}, [`færst`]{.iv lang=oe sort=faerst}, and [`færð`]{.iv lang=oe sort=faerd} belong to present-tense forms of `faran` rather than to the infinitive itself [@ClarkHall1960]. Bosworth-Toller preserves the same distinction [@BosworthToller1898, 108]. The selected target is therefore the attested citation infinitive `faran`.
 
 ### Development to Old English
 

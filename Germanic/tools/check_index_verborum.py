@@ -7,7 +7,6 @@ from pathlib import Path
 from build_index_verborum import (
     INTRO_PATH,
     CandidateOccurrence,
-    add_production,
     build_audit_rows,
     build_production_rows,
     compare_against_baseline,
@@ -64,19 +63,22 @@ def assert_overrides_load() -> None:
 
 
 def assert_add_override_behavior() -> None:
-    store: dict[tuple[str, str, str, str, str], object] = {}
-    add_production(
-        store,
-        language="on",
-        form="báðir",
-        display="báðir",
-        sort_key=transliterate_sort_key("báðir"),
-        source_scope="override_add_test",
-        source_ref="synthetic:on:1",
-        origin="override",
-        status="override",
+    rows = build_production_rows(
+        add_overrides=[
+            {
+                "action": "add",
+                "language": "on",
+                "form": "báðir",
+                "display": "báðir",
+                "sort_key": transliterate_sort_key("báðir"),
+                "source_scope": "override_add_test",
+                "source_ref": "synthetic:on:1",
+                "note": "synthetic add override",
+            }
+        ],
+        ignore_overrides=[],
     )
-    assert any(getattr(row, "display", "") == "báðir" and getattr(row, "language", "") == "on" for row in store.values())
+    assert any(row.display == "báðir" and row.language == "on" and row.source_scope == "override_add_test" for row in rows)
 
 
 def assert_ignore_override_behavior() -> None:
@@ -106,9 +108,12 @@ def assert_baseline_strictness() -> None:
     synthetic_entries = list(needs_review) + [
         {
             "form": "synthetic-form",
+            "source_path": "synthetic.md",
             "source_ref": "synthetic.md:1",
+            "heading": "### Synthetic heading",
             "category": "likely_pgmc",
             "sort_key": "syntheticform",
+            "context": "synthetic form in synthetic context",
         }
     ]
     new_entries, _ = compare_against_baseline(synthetic_entries, baseline)

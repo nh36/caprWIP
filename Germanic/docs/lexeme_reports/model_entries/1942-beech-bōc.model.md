@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the beech noun as `*bōk(j)ō-` and cites Old English `boc, bēce` among its reflexes [@Kroonen2013]. The selected input `*bōkō` is the nominative-singular shape of that family, which is the relevant comparison form here.
+Kroonen gives the beech noun as `*bōk(j)ō-` and cites Old English `boc`, [`bēce`]{.iv lang=oe sort=bece} among its reflexes [@Kroonen2013]. The selected input `*bōkō` is the nominative-singular shape of that family, which is the relevant comparison form here.
 
 ### Old English evidence
 
-Kroonen's Old English evidence already separates the paradigm material: `boc` as the nominative form and `bēce` as an oblique form [@Kroonen2013]. The relevant comparator is therefore `bōc`; `bēċe` remains related paradigm evidence rather than the form chosen for this comparison.
+Kroonen's Old English evidence already separates the paradigm material: `boc` as the nominative form and [`bēce`]{.iv lang=oe sort=bece} as an oblique form [@Kroonen2013]. The relevant comparator is therefore `bōc`; [`bēċe`]{.iv lang=oe sort=bece} remains related paradigm evidence rather than the form chosen for this comparison.
 
 ### Development to Old English
 

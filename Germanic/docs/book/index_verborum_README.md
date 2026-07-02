@@ -72,3 +72,13 @@ LaTeX `\index[...]` command after the tagged span.
   3. ignored by override, or
   4. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
      backlog is still being worked down.
+
+## Baseline stability
+
+- `index_verborum_unresolved_baseline.tsv` is the current guardrail for
+  baseline strictness.
+- Source line numbers are still kept in `source_ref` for human navigation, but
+  baseline comparison is not intended to depend on line numbers alone.
+- The unresolved baseline now also carries the source path, nearest heading,
+  category, and a short context snippet so that ordinary line shifts do not
+  automatically count as newly introduced candidates.

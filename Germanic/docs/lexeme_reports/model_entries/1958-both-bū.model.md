@@ -19,7 +19,7 @@ DERIVATION_CLASS: regular
 ### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under `*ba-` and gives the inherited
-paradigm `*bai, *bans, *bōz/*bōns, *bō`, with Old English `bēġen`, `bā`, and
+paradigm `*bai, *bans, *bōz/*bōns, *bō`, with Old English [`bēġen`]{.iv lang=oe sort=begen}, `bā`, and
 neuter `bū` [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual `*bō`.
 
@@ -34,10 +34,10 @@ displace the inherited neuter `*bō > bū` treated here.
 ### Old English evidence
 
 The Old English dual paradigm is well established. Brunner gives masculine
-`bēġen`, feminine `bā`, and neuter `bū` beside `bā`, with compounds such as
+[`bēġen`]{.iv lang=oe sort=begen}, feminine `bā`, and neuter `bū` beside `bā`, with compounds such as
 `bā twā`, `bū tū`, and `bām twām` [@SieversBrunner1965, §324 Anm. 2].
-Campbell and Fulk present the same basic pattern: masculine `bēġen`, feminine
-`bā`, neuter `bā, bū`, genitive `bēġra, bēġ(e)a`, and dative `bǣm`
+Campbell and Fulk present the same basic pattern: masculine [`bēġen`]{.iv lang=oe sort=begen}, feminine
+`bā`, neuter `bā, bū`, genitive `bēġra, bēġ(e)a`, and dative [`bǣm`]{.iv lang=oe sort=baem}
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
 `bū` is therefore an attested neuter dual form, not a reconstruction. It is the

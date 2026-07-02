@@ -5,6 +5,10 @@ oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2
 oe	ān	ān	an	trace_output	one — OE ān	compact	auto
 oe	bacan	bacan	bacan	lexical_heading	bake — OE bacan	manifest	auto
 oe	bacan	bacan	bacan	trace_output	bake — OE bacan	compact	auto
+oe	bǣm	bǣm	baem	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
+oe	bær	bær	baer	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md:21	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md	auto
+oe	bær	bær	baer	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md:25	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md	auto
+oe	bær	bær	baer	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md:29	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md	auto
 oe	bǣr	bǣr	baer	lexical_heading	bier — OE bǣr	manifest	auto
 oe	bǣr	bǣr	baer	trace_output	bier — OE bǣr	compact	auto
 oe	bæst	bæst	baest	trace_output	bast — OE bæst	compact	auto
@@ -16,7 +20,13 @@ oe	bannes	bannes	bannes	trace_output	ban — OE bannes	compact	auto
 oe	bēag	bēag	beag	lexical_heading	bow — OE bēag	manifest	auto
 oe	bēag	bēag	beag	trace_output	bow — OE bēag	compact	auto
 oe	beard	beard	beard	trace_output	beard — OE beard	compact	auto
+oe	bēce	bēce	bece	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md	auto
+oe	bēce	bēce	bece	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md	auto
+oe	bēċe	bēċe	bece	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md	auto
 oe	befer	befer	befer	trace_output	beaver — OE befer	compact	auto
+oe	bēġen	bēġen	begen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
+oe	bēġen	bēġen	begen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
+oe	bēġen	bēġen	begen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:39	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 oe	beġinnan	beġinnan	beginnan	lexical_heading	begin — OE beġinnan	manifest	auto
 oe	beġinnan	beġinnan	beginnan	trace_output	begin — OE beġinnan	compact	auto
 oe	beorg	beorg	beorg	trace_output	barrow — OE beorg	compact	auto
@@ -61,8 +71,10 @@ oe	būr	būr	bur	trace_output	bower — OE būr	compact	auto
 oe	byrd	byrd	byrd	lexical_heading	birth — OE byrd	manifest	auto
 oe	byrd	byrd	byrd	trace_output	birth — OE byrd	compact	auto
 oe	camb	camb	camb	trace_output	comb — OE camb	compact	auto
+oe	cealf	cealf	cealf	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md	auto
 oe	ċealf	ċealf	cealf	lexical_heading	calf — OE ċealf	manifest	auto
 oe	ċealf	ċealf	cealf	trace_output	calf — OE ċealf	compact	auto
+oe	cealfru	cealfru	cealfru	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md	auto
 oe	ċēowan	ċēowan	ceowan	trace_output	chew — OE ċēowan	compact	auto
 oe	climban	climban	climban	trace_output	climb — OE climban	compact	auto
 oe	cnedan	cnedan	cnedan	trace_output	knead — OE cnedan	compact	auto
@@ -78,6 +90,13 @@ oe	cræft	cræft	craeft	trace_output	craft — OE cræft	compact	auto
 oe	cropp	cropp	cropp	trace_output	crop — OE cropp	compact	auto
 oe	cwedu	cwedu	cwedu	lexical_heading	cud — OE cwedu	manifest	auto
 oe	cwedu	cwedu	cwedu	trace_output	cud — OE cwedu	compact	auto
+oe	cweodu	cweodu	cweodu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:22	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cweodu	cweodu	cweodu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:32	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cwidu	cwidu	cwidu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:22	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cwidu	cwidu	cwidu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:23	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cwidu	cwidu	cwidu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:31	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cwudu	cwudu	cwudu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:31	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cwudu	cwudu	cwudu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:32	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe	cȳ	cȳ	cy	lexical_heading	cow — OE cȳ	manifest	auto
 oe	cȳ	cȳ	cy	trace_output	cow — OE cȳ	compact	auto
 oe	dǣd	dǣd	daed	lexical_heading	deed — OE dǣd	manifest	auto
@@ -100,6 +119,9 @@ oe	drincan	drincan	drincan	trace_output	drink — OE drincan	compact	auto
 oe	eorþe	eorþe	eorthe	trace_output	earth — OE eorþe	compact	auto
 oe	etan	etan	etan	trace_output	eat — OE etan	compact	auto
 oe	fæder	fæder	faeder	trace_output	father — OE fæder	compact	auto
+oe	færð	færð	faerd	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md	auto
+oe	fære	fære	faere	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md	auto
+oe	færst	færst	faerst	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md	auto
 oe	faran	faran	faran	lexical_heading	fare — OE faran	manifest	auto
 oe	faran	faran	faran	trace_output	fare — OE faran	compact	auto
 oe	fealdan	fealdan	fealdan	trace_output	fold — OE fealdan	compact	auto
@@ -2323,6 +2345,11 @@ preoe	*xwḯnan	*xwḯnan	xwinan	trace_stage	whine — OE hwīnan	compact:OE Hea
 preoe	*xwḯnąn	*xwḯnąn	xwinan	trace_stage	whine — OE hwīnan	compact:OE Secondary Nasalization	auto
 on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
 on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	override	override
+on	fylgja	fylgja	fylgja	override	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22	override	override
+on	gangr	gangr	gangr	override	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	override	override
+on	hliþó	hliþó	hlitho	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21	override	override
 ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	override	override
 ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
 goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	override	override
+goth	faurhtei	faurhtei	faurhtei	override	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22	override	override
+goth	stibna	stibna	stibna	override	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23	override	override
