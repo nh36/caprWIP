@@ -39,6 +39,6 @@ The comparison below is manual.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | `*líkkōjaną` | manual probe output `liccian` | liccian | ordinary dictionary headword of the verb, but not the selected finite cell |
-| imperative singular companion | `*líkkô` | manual probe output `licca` | licca | useful family control, but not the target of this entry |
-| selected present third singular | `*líkkōθi` | manual probe output `liccaþ` | liccaþ | exact match between the chosen input and the selected target |
+| lexeme-level infinitive | [`*líkkōjaną`]{.iv lang=pgmc sort=likkojana} | manual probe output [`liccian`]{.iv lang=oe sort=liccian} | [`liccian`]{.iv lang=oe sort=liccian} | ordinary dictionary headword of the verb, but not the selected finite cell |
+| imperative singular companion | [`*líkkô`]{.iv lang=pgmc sort=likko} | manual probe output [`licca`]{.iv lang=oe sort=licca} | [`licca`]{.iv lang=oe sort=licca} | useful family control, but not the target of this entry |
+| selected present third singular | [`*líkkōθi`]{.iv lang=pgmc sort=likkothi} | manual probe output [`liccaþ`]{.iv lang=oe sort=liccath} | [`liccaþ`]{.iv lang=oe sort=liccath} | exact match between the chosen input and the selected target |

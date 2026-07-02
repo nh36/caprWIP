@@ -15,15 +15,28 @@ LaTeX `\index[...]` command after the tagged span.
 ## Required attributes
 
 - `lang` — one of:
-  - `oe` — Old English
-  - `pgmc` — Proto-Germanic
-  - `pwgmc` — Proto-West Germanic
-  - `nwgmc` — Proto-Northwest Germanic
-  - `preoe` — Pre-Old-English and model-internal forms
-  - `on` — Old Norse
-  - `ohg` — Old High German
-  - `ofris` — Old Frisian
-  - `goth` — Gothic
+<!-- BEGIN AUTO-LANGUAGE-LIST -->
+- `oe` — Old English forms
+- `pgmc` — Proto-Germanic forms
+- `pwgmc` — Proto-West Germanic forms
+- `nwgmc` — Proto-Northwest Germanic forms
+- `preoe` — Pre-Old-English and model-internal forms
+- `on` — Old Norse forms
+- `ohg` — Old High German forms
+- `ofris` — Old Frisian forms
+- `goth` — Gothic forms
+- `os` — Old Saxon forms
+- `odutch` — Old Dutch forms
+- `mdutch` — Middle Dutch forms
+- `dutch` — Dutch forms
+- `german` — German forms
+- `lat` — Latin forms
+- `greek` — Greek forms
+- `skt` — Sanskrit forms
+- `me` — Middle English forms
+- `modeng` — Modern English linguistic forms
+- `oirish` — Old Irish forms
+<!-- END AUTO-LANGUAGE-LIST -->
 - `sort` — ASCII sort key used in the printed index
 
 ## Optional attributes
@@ -57,6 +70,12 @@ LaTeX `\index[...]` command after the tagged span.
 
 ## Scholarly policy
 
+- The index verborum includes every form cited as linguistic evidence,
+  irrespective of language.
+- Ordinary English glosses and prose words do **not** belong in the index.
+- Reconstructed forms are indexed with their asterisks in the printed index.
+- Reconstructed Old English forms belong in the **Old English** index with an
+  asterisk, not under Proto-Germanic or generic pre-Old-English.
 - Structured lexical and trace forms are indexed automatically at the lexical
   entry or trace location that generated them.
 - Significant forms in running prose should be tagged explicitly with `.iv`

@@ -5194,9 +5194,9 @@ Old English form: _brandes_
 
 #### Reconstruction and comparative evidence
 
-The inherited noun is the masculine a-stem _\*brándaz_, continued by Old English
-_brand_ and its continental cognates [@Orel2003, 53]. The selected
-input _\*brándas_ is not a different lexeme but the genitive singular of that
+The inherited noun is the masculine a-stem [_\*brándaz_]{.iv lang=pgmc sort=brandaz}, continued by Old English
+[_brand_]{.iv lang=oe sort=brand} and its continental cognates [@Orel2003, 53]. The selected
+input [_\*brándas_]{.iv lang=pgmc sort=brandas} is not a different lexeme but the genitive singular of that
 same a-stem noun.
 
 What matters here is therefore not a stem-class disagreement but the difference
@@ -5206,20 +5206,20 @@ making the oblique ending explicit.
 
 #### Old English evidence
 
-Old English dictionaries lemmatize the noun as _brand_ [@ClarkHall1960, 49;
+Old English dictionaries lemmatize the noun as [_brand_]{.iv lang=oe sort=brand} [@ClarkHall1960, 49;
 @BosworthToller1898, 116]. Bosworth-Toller also records inflectional forms such as
-_brandas_, _branda_, and _brandum_ under the same entry [@BosworthToller1898, 116].
+[_brandas_]{.iv lang=oe sort=brandas}, [_branda_]{.iv lang=oe sort=branda}, and [_brandum_]{.iv lang=oe sort=brandum} under the same entry [@BosworthToller1898, 116].
 
-The specific comparison form in this entry, _brandes_, is the expected
+The specific comparison form in this entry, [_brandes_]{.iv lang=oe sort=brandes}, is the expected
 genitive singular of that a-stem noun. It is therefore an inferred Old English
 paradigm form rather than the ordinary dictionary headword.
 
 #### Development to Old English
 
-From _\*brándas_, the regular Old English development passes through the usual
-unstressed-vowel weakening of the inflectional ending, yielding _brandes_.
+From [_\*brándas_]{.iv lang=pgmc sort=brandas}, the regular Old English development passes through the usual
+unstressed-vowel weakening of the inflectional ending, yielding [_brandes_]{.iv lang=oe sort=brandes}.
 Nothing in the stem itself requires a special repair. The root consonants and
-the stressed vowel are the same as in the citation lemma _brand_.
+the stressed vowel are the same as in the citation lemma [_brand_]{.iv lang=oe sort=brand}.
 
 The analytical weight of the entry lies in the ending. By choosing the oblique
 singular rather than the nominative citation form, the entry presents the same
@@ -5232,11 +5232,11 @@ selected oblique singular.
 
 | Form / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *brándaz | expected OE lemma _brand_ | brand | regular headword-level outcome |
-| genitive singular | *brándas | regular output: _brandes_ | brandes | exact match for the oblique cell |
+| citation nominative singular | [_\*brándaz_]{.iv lang=pgmc sort=brandaz} | expected OE lemma [_brand_]{.iv lang=oe sort=brand} | [_brand_]{.iv lang=oe sort=brand} | regular headword-level outcome |
+| genitive singular | [_\*brándas_]{.iv lang=pgmc sort=brandas} | regular output: [_brandes_]{.iv lang=oe sort=brandes} | [_brandes_]{.iv lang=oe sort=brandes} | exact match for the oblique cell |
 
 The noun itself is straightforwardly inherited. The main point of the entry is
-that _brandes_ belongs to the same regular a-stem paradigm as _brand_, even
+that [_brandes_]{.iv lang=oe sort=brandes} belongs to the same regular a-stem paradigm as [_brand_]{.iv lang=oe sort=brand}, even
 though the citation lemma remains the nominative singular.
 
 ### breast — OE brēost
@@ -7138,33 +7138,33 @@ Old English form: _sparian_
 
 #### Reconstruction and comparative evidence
 
-Kroonen keeps the inherited verb under class-III _\*sparēn-_
-[@Kroonen2013, 465]. Orel similarly preserves _\*sparēnan_ [@Orel2003, 362]. Ringe
-and Taylor, however, reconstruct _\*sparai-_ ~ _\*sparja-_ for the English branch
+Kroonen keeps the inherited verb under class-III [_\*sparēn-_]{.iv lang=pgmc sort=sparen}
+[@Kroonen2013, 465]. Orel similarly preserves [_\*sparēnan_]{.iv lang=pgmc sort=sparenan} [@Orel2003, 362]. Ringe
+and Taylor, however, reconstruct [_\*sparai-_]{.iv lang=preoe sort=sparai} ~ [_\*sparja-_]{.iv lang=preoe sort=sparja} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
-The form followed here, _\*spárōjaną_, therefore represents the refashioned class-II
-formation behind Old English _sparian_, while the citation reconstruction
-_\*sparēną_ remains the inherited comparative headword.
+The derivational input [_\*spárōjaną_]{.iv lang=pgmc sort=sparojana} therefore represents the refashioned class-II
+formation behind Old English [_sparian_]{.iv lang=oe sort=sparian}, while the citation reconstruction
+[_\*sparēną_]{.iv lang=pgmc sort=sparena} remains the inherited comparative headword.
 
 #### Old English evidence
 
-Campbell says that _sparian_ does not show the ordinary class-III
-characteristics, but the Ritual forms, normalized here as _spæria_, _spær_, and
-_spærede_, together with Vespasian Psalter _spearad_, point to primitive Old
+Campbell says that [_sparian_]{.iv lang=oe sort=sparian} does not show the ordinary class-III
+characteristics, but the Ritual forms, normalized here as [_spæria_]{.iv lang=oe sort=spaeria}, [_spær_]{.iv lang=oe sort=spaer}, and
+[_spærede_]{.iv lang=oe sort=spaerede}, together with Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad}, point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
-Northumbrian _spæria_, _spærede_ beside common Old English _sparian_ and
-Vespasian Psalter _spearad_ [@SieversBrunner1965, §364 Anm. 11]. The citation
-form treated here is _sparian_; the Anglian forms are relics of the older
+Northumbrian [_spæria_]{.iv lang=oe sort=spaeria}, [_spærede_]{.iv lang=oe sort=spaerede} beside common Old English [_sparian_]{.iv lang=oe sort=sparian} and
+Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad} [@SieversBrunner1965, §364 Anm. 11]. The citation
+form treated here is [_sparian_]{.iv lang=oe sort=sparian}; the Anglian forms are relics of the older
 formation, not alternative headwords of equal status.
 
 #### Development to Old English
 
-Once the class-II formation _\*spárōjaną_ is chosen, the remaining development is
+Once the class-II formation [_\*spárōjaną_]{.iv lang=pgmc sort=sparojana} is chosen, the remaining development is
 regular. The regular derivation shows brightening, restoration of _a_ before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
-reduction, and contraction to _sparian_. By contrast, Brunner's rule against
-further apocope of final _-e_ explains why Ritual _spær_ cannot be the regular
-continuation of inherited _\*spárē_ [@SieversBrunner1965, §150].
+reduction, and contraction to [_sparian_]{.iv lang=oe sort=sparian}. By contrast, Brunner's rule against
+further apocope of final _-e_ explains why Ritual [_spær_]{.iv lang=oe sort=spaer} cannot be the regular
+continuation of inherited [_\*spárē_]{.iv lang=preoe sort=spare} [@SieversBrunner1965, §150].
 
 #### Formation comparison
 
@@ -7173,10 +7173,10 @@ with the refashioned class-II one that yields the citation verb.
 
 | Formation / comparison | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| inherited class-III infinitive | *spárēną | paradigm comparison / probe output: _sparen_ | sparian | wrong class and wrong ending for the citation verb |
-| inherited class-III imperative singular | *spárē | paradigm comparison / probe output: _spære_ | Ritual _spær_ | loss of final _-e_ is not regular, so the relic form cannot control the entry |
-| inherited class-III finite present | *spárēθi | paradigm comparison / probe output: _spæreþ_ | _spearad_ | attested form is mixed, not a direct continuation of the inherited cell |
-| selected class-II formation | *spárōjaną | documented regular output: _sparian_ | sparian | exact match between derivational input and Old English citation form |
+| inherited class-III infinitive | [_\*spárēną_]{.iv lang=pgmc sort=sparena} | paradigm comparison / probe output: [_sparen_]{.iv lang=oe sort=sparen} | [_sparian_]{.iv lang=oe sort=sparian} | wrong class and wrong ending for the citation verb |
+| inherited class-III imperative singular | [_\*spárē_]{.iv lang=preoe sort=spare} | paradigm comparison / probe output: [_spære_]{.iv lang=oe sort=spaere} | Ritual [_spær_]{.iv lang=oe sort=spaer} | loss of final _-e_ is not regular, so the relic form cannot control the entry |
+| inherited class-III finite present | [_\*spárēθi_]{.iv lang=preoe sort=sparethi} | paradigm comparison / probe output: [_spæreþ_]{.iv lang=oe sort=spaereth} | [_spearad_]{.iv lang=oe sort=spearad} | attested form is mixed, not a direct continuation of the inherited cell |
+| selected class-II formation | [_\*spárōjaną_]{.iv lang=pgmc sort=sparojana} | documented regular output: [_sparian_]{.iv lang=oe sort=sparian} | [_sparian_]{.iv lang=oe sort=sparian} | exact match between derivational input and Old English citation form |
 
 ### staff — OE stæf
 
@@ -9111,36 +9111,36 @@ Old English form: _heofon_
 #### Reconstruction and comparative evidence
 
 The inherited noun belongs to the mn-stem family cited by Kroonen as
-_\*hemina-_ ~ _\*hemna-_ [@Kroonen2013, 220]. The form followed here, _\*xémonų_, is an
+[_\*hemina-_]{.iv lang=pgmc sort=hemina} ~ [_\*hemna-_]{.iv lang=pgmc sort=hemna} [@Kroonen2013, 220]. The derivational input [_\*xémonų_]{.iv lang=pgmc sort=xemonu} is an
 oblique singular form within that paradigm rather than the lexeme-level
-citation form _\*xémenaz_.
+citation form [_\*xémenaz_]{.iv lang=pgmc sort=xemenaz}.
 
 That difference matters for the West Saxon target. Ringe and Taylor give
-northern WGmc _\*hebun_ > West Saxon and Northumbrian _heofon_, Mercian
-_heofen_ [@RingeTaylor2014, 324]. Campbell likewise gives _heofon_ beside
-_hefen_ in the same West-Saxon _u_-umlaut environment [@Campbell1959, §210.1].
+northern WGmc [_\*hebun_]{.iv lang=preoe sort=hebun} > West Saxon and Northumbrian [_heofon_]{.iv lang=oe sort=heofon}, Mercian
+[_heofen_]{.iv lang=oe sort=heofen} [@RingeTaylor2014, 324]. Campbell likewise gives [_heofon_]{.iv lang=oe sort=heofon} beside
+[_hefen_]{.iv lang=oe sort=hefen} in the same West-Saxon _u_-umlaut environment [@Campbell1959, §210.1].
 
 #### Old English evidence
 
-Old English dictionaries record the standard West Saxon noun as _heofon_,
-alongside Anglian or Mercian _hefen_ material [@ClarkHall1960, 188;
-@BosworthToller1898, 43]. Campbell also cites an earlier stage _hefzen_ in the
+Old English dictionaries record the standard West Saxon noun as [_heofon_]{.iv lang=oe sort=heofon},
+alongside Anglian or Mercian [_hefen_]{.iv lang=oe sort=hefen} material [@ClarkHall1960, 188;
+@BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe sort=hefzen} in the
 history of the word [@Campbell1959, §381].
 
-The target of this entry is the West Saxon citation form _heofon_. Its vowel
+The target of this entry is the West Saxon citation form [_heofon_]{.iv lang=oe sort=heofon}. Its vowel
 history points toward the oblique stem rather than the front-vocalic nominative
 line.
 
 #### Development to Old English
 
-From _\*xémonų_, the West Saxon line passes through the oblique-stem type
-reflected in northern WGmc _\*hebun_ [@RingeTaylor2014, 324]. Campbell's
-_heofon_ beside _hefen_ and earlier _hefzen_ show the later West-Saxon
-back-mutation and suffix reshaping behind _heofon_
+From [_\*xémonų_]{.iv lang=pgmc sort=xemonu}, the West Saxon line passes through the oblique-stem type
+reflected in northern WGmc [_\*hebun_]{.iv lang=preoe sort=hebun} [@RingeTaylor2014, 324]. Campbell's
+[_heofon_]{.iv lang=oe sort=heofon} beside [_hefen_]{.iv lang=oe sort=hefen} and earlier [_hefzen_]{.iv lang=oe sort=hefzen} show the later West-Saxon
+back-mutation and suffix reshaping behind [_heofon_]{.iv lang=oe sort=heofon}
 [@Campbell1959, §210.1; @Campbell1959, §381].
 
 The front-vocalic nominative line remains important as background because it
-explains the dialectal _hefen_ type. West Saxon _heofon_ reflects the oblique
+explains the dialectal [_hefen_]{.iv lang=oe sort=hefen} type. West Saxon [_heofon_]{.iv lang=oe sort=heofon} reflects the oblique
 stem that was generalized into the nominative position.
 
 #### Paradigm comparison
@@ -9150,9 +9150,9 @@ line from the oblique stem selected for West Saxon _heofon_.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *xémenaz | front-vocalic _hefen_ type outcome | hefen / heofen | useful control, but not the West Saxon form used here |
-| selected oblique singular | *xémonų | regular output: _heofon_ | heofon | exact match between input, output, and target |
-| older pre-OE stage | inherited oblique line | earlier _hefzen_ stage | hefzen | historical background for the same West Saxon development |
+| citation nominative singular | [_\*xémenaz_]{.iv lang=pgmc sort=xemenaz} | front-vocalic [_hefen_]{.iv lang=oe sort=hefen} type outcome | [_hefen_]{.iv lang=oe sort=hefen} / [_heofen_]{.iv lang=oe sort=heofen} | useful control, but not the West Saxon form used here |
+| selected oblique singular | [_\*xémonų_]{.iv lang=pgmc sort=xemonu} | regular output: [_heofon_]{.iv lang=oe sort=heofon} | [_heofon_]{.iv lang=oe sort=heofon} | exact match between input, output, and target |
+| older pre-OE stage | inherited oblique line | earlier [_hefzen_]{.iv lang=oe sort=hefzen} stage | [_hefzen_]{.iv lang=oe sort=hefzen} | historical background for the same West Saxon development |
 
 ### live — OE lifeþ
 
@@ -10572,9 +10572,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*líkkōjaną_ | regular output _liccian_ | liccian | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular companion | _\*líkkô_ | regular output _licca_ | licca | useful family control, but not the target of this entry |
-| present third singular | _\*líkkōθi_ | regular output _liccaþ_ | liccaþ | exact match between the derivational input and the Old English form here |
+| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana} | regular output [_liccian_]{.iv lang=oe sort=liccian} | [_liccian_]{.iv lang=oe sort=liccian} | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | [_\*líkkô_]{.iv lang=pgmc sort=likko} | regular output [_licca_]{.iv lang=oe sort=licca} | [_licca_]{.iv lang=oe sort=licca} | useful family control, but not the target of this entry |
+| present third singular | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi} | regular output [_liccaþ_]{.iv lang=oe sort=liccath} | [_liccaþ_]{.iv lang=oe sort=liccath} | exact match between the derivational input and the Old English form here |
 
 ### show (iptv.2sg) — OE sċēawa
 
@@ -10646,9 +10646,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*skáwōjaną_ | regular output _sċēawian_ | scēawian | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular | _\*skáwô_ | regular output _sċēawa_ | scēawa / normalized sċēawa | exact match between the derivational input and the Old English form here |
-| present third singular companion | _\*skáwōθi_ | regular output _sċēawaþ_ | sċēawaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana} | regular output [_sċēawian_]{.iv lang=oe sort=sceawian} | [_scēawian_]{.iv lang=oe sort=sceawian} | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular | [_\*skáwô_]{.iv lang=pgmc sort=skawo} | regular output [_sċēawa_]{.iv lang=oe sort=sceawa} | [_scēawa_]{.iv lang=oe sort=sceawa} / normalized [_sċēawa_]{.iv lang=oe sort=sceawa} | exact match between the derivational input and the Old English form here |
+| present third singular companion | [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi} | regular output [_sċēawaþ_]{.iv lang=oe sort=sceawath} | [_sċēawaþ_]{.iv lang=oe sort=sceawath} | useful family control, but not the target of this entry |
 
 ### show (3sg) — OE sċēawaþ
 
@@ -10825,9 +10825,9 @@ better-attested neighboring forms.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _\*knúbbô_ > _\*cnobba_ | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
-| _cnopp_ / _cnoppa_ | attested OE branch | important control form, but belongs to the voiceless branch |
-| _cnæp_ | attested OE form from another family | not part of the present lexeme line |
+| [_\*knúbbô_ > _\*cnobba_]{.iv lang=oe display=*cnobba sort=cnobba} | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
+| [_cnopp_]{.iv lang=oe sort=cnopp} / [_cnoppa_]{.iv lang=oe sort=cnoppa} | attested OE branch | important control form, but belongs to the voiceless branch |
+| [_cnæp_]{.iv lang=oe sort=cnaep} | attested OE form from another family | not part of the present lexeme line |
 
 This remains the most review-sensitive item here, because the choice between
 reconstructed _\*cnobba_ and attested _cnoppa_ is still a comparator-policy

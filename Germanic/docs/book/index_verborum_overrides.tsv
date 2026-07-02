@@ -1,9 +1,15 @@
 action	language	form	display	sort_key	source_scope	source_ref	note
 add	on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Norse comparison form.
 add	ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Frisian comparison form.
+add	os	be-thia	be-thia	bethia	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Saxon comparison form.
 add	ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	Clearly labelled Old High German comparison form.
 add	goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	Clearly labelled Gothic comparison form.
 add	on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Clearly labelled Old Norse comparison form.
+add	os	briost	briost	briost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Clearly labelled Old Saxon comparison form.
+add	ohg	backan	backan	backan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
+add	ohg	bahhan	bahhan	bahhan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
+add	ofris	dore	dore	dore	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old Frisian comparison form.
+add	ohg	tura	tura	tura	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old High German comparison form.
 add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	Old English comparison form discussed explicitly in prose.
 add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	Old English comparison form discussed explicitly in prose.
 add	on	fylgja	fylgja	fylgja	override	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22	Clearly labelled Old Norse comparison form.
@@ -11,6 +17,11 @@ add	on	gangr	gangr	gangr	override	Germanic/docs/lexeme_reports/model_entries/203
 add	on	hliþó	hliþó	hlitho	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21	Clearly labelled Old Norse comparison form.
 add	goth	faurhtei	faurhtei	faurhtei	override	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22	Clearly labelled Gothic comparison form.
 add	goth	stibna	stibna	stibna	override	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23	Clearly labelled Gothic comparison form.
+add	on	fugl	fugl	fugl	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	Clearly labelled Old Norse comparison form.
+add	ohg	fogal	fogal	fogal	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	Clearly labelled Old High German comparison form.
+add	ofris	skawia	skawia	skawia	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old Frisian comparison form.
+add	os	skawōn	skawōn	skawon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old Saxon comparison form.
+add	ohg	scouwōn	scouwōn	scouwon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old High German comparison form.
 ignore		attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
 ignore		attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:101	Derivation-class label, not a lexical form.
 ignore		breaking				Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29	Process label, not an indexed form.

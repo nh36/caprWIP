@@ -41,7 +41,6 @@ oe	blōd	blōd	blod	trace_output	blood — OE blōd	compact	auto
 oe	bōc	bōc	boc	lexical_heading	beech — OE bōc	manifest	auto
 oe	bōc	bōc	boc	trace_output	beech — OE bōc	compact	auto
 oe	bōc	bōc	boc	trace_output	book — OE bōc	compact	auto
-oe	bocc	bocc	bocc	trace_output	buck — OE bucc	compact	auto
 oe	bōg	bōg	bog	trace_output	bough — OE bōg	compact	auto
 oe	boga	boga	boga	trace_output	bow — OE boga	compact	auto
 oe	bora	bora	bora	lexical_heading	bore (iptv.2sg) — OE bora	manifest	auto
@@ -53,8 +52,20 @@ oe	borian	borian	borian	trace_output	bore — OE borian	compact	auto
 oe	bōsm	bōsm	bosm	trace_output	bosom — OE bōsm	compact	auto
 oe	botm	botm	botm	lexical_heading	bottom — OE botm	manifest	auto
 oe	botm	botm	botm	trace_output	bottom — OE botm	compact	auto
+oe	brand	brand	brand	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:22	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brand	brand	brand	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:33	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brand	brand	brand	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:46	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brand	brand	brand	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:59	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brand	brand	brand	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:63	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	branda	branda	branda	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:35	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brandas	brandas	brandas	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:35	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brandes	brandes	brandes	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:37	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brandes	brandes	brandes	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:44	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brandes	brandes	brandes	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:60	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	brandes	brandes	brandes	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:63	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
 oe	brandes	brandes	brandes	lexical_heading	brand — OE brandes	manifest	auto
 oe	brandes	brandes	brandes	trace_output	brand — OE brandes	compact	auto
+oe	brandum	brandum	brandum	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:35	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
 oe	brēad	brēad	bread	trace_output	bread — OE brēad	compact	auto
 oe	brēċ	brēċ	brec	lexical_heading	breeches — OE brēċ	manifest	auto
 oe	brēċ	brēċ	brec	trace_output	breeches — OE brēċ	compact	auto
@@ -67,6 +78,7 @@ oe	brȳd	brȳd	bryd	trace_output	bride — OE brȳd	compact	auto
 oe	bū	bū	bu	lexical_heading	both — OE bū	manifest	auto
 oe	bū	bū	bu	trace_output	both — OE bū	compact	auto
 oe	bucc	bucc	bucc	lexical_heading	buck — OE bucc	manifest	auto
+oe	bocc	bucc	bucc	trace_output	buck — OE bucc	compact	auto
 oe	būr	būr	bur	trace_output	bower — OE būr	compact	auto
 oe	byrd	byrd	byrd	lexical_heading	birth — OE byrd	manifest	auto
 oe	byrd	byrd	byrd	trace_output	birth — OE byrd	compact	auto
@@ -77,12 +89,15 @@ oe	ċealf	ċealf	cealf	trace_output	calf — OE ċealf	compact	auto
 oe	cealfru	cealfru	cealfru	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md	auto
 oe	ċēowan	ċēowan	ceowan	trace_output	chew — OE ċēowan	compact	auto
 oe	climban	climban	climban	trace_output	climb — OE climban	compact	auto
+oe	cnæp	cnæp	cnaep	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:64	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md	auto
 oe	cnedan	cnedan	cnedan	trace_output	knead — OE cnedan	compact	auto
 oe	cnēow	cnēow	cneow	trace_output	knee — OE cnēow	compact	auto
 oe	cniht	cniht	cniht	lexical_heading	knight — OE cniht	manifest	auto
 oe	cniht	cniht	cniht	trace_output	knight — OE cniht	compact	auto
-oe	cnobba	cnobba	cnobba	lexical_heading	knob — OE cnobba	manifest	auto
-oe	cnobba	cnobba	cnobba	trace_output	knob — OE cnobba	compact	auto
+oe	cnobba	*cnobba	cnobba	lexical_heading	knob — OE *cnobba	manifest	auto
+oe	cnobba	*cnobba	cnobba	trace_output	knob — OE *cnobba	compact	auto
+oe	cnopp	cnopp	cnopp	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:63	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md	auto
+oe	cnoppa	cnoppa	cnoppa	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:63	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md	auto
 oe	corn	corn	corn	lexical_heading	corn — OE corn	manifest	auto
 oe	corn	corn	corn	trace_output	corn — OE corn	compact	auto
 oe	cræft	cræft	craeft	lexical_heading	craft — OE cræft	manifest	auto
@@ -149,7 +164,6 @@ oe	flēogan	flēogan	fleogan	trace_output	fly — OE flēogan	compact	auto
 oe	flēon	flēon	fleon	trace_output	flee — OE flēon	compact	auto
 oe	flōd	flōd	flod	trace_output	flood — OE flōd	compact	auto
 oe	fōdor	fōdor	fodor	trace_output	fodder — OE fōdor	compact	auto
-oe	fogol	fogol	fogol	trace_output	fowl — OE fugol	compact	auto
 oe	fola	fola	fola	trace_output	foal — OE fola	compact	auto
 oe	folc	folc	folc	trace_output	folk — OE folc	compact	auto
 oe	forst	forst	forst	trace_output	frost — OE forst	compact	auto
@@ -157,13 +171,14 @@ oe	fox	fox	fox	trace_output	fox — OE fox	compact	auto
 oe	frēond	frēond	freond	trace_output	friend — OE frēond	compact	auto
 oe	frēosan	frēosan	freosan	trace_output	freeze — OE frēosan	compact	auto
 oe	fugol	fugol	fugol	lexical_heading	fowl — OE fugol	manifest	auto
+oe	fogol	fugol	fugol	trace_output	fowl — OE fugol	compact	auto
 oe	fundene	fundene	fundene	lexical_heading	find — OE fundene	manifest	auto
 oe	fundene	fundene	fundene	trace_output	find — OE fundene	compact	auto
 oe	furh	furh	furh	trace_output	furrow — OE furh	compact	auto
 oe	fylġan	fylġan	fylgan	lexical_heading	follow — OE fylġan	manifest	auto
 oe	fylġan	fylġan	fylgan	trace_output	follow — OE fylġan	compact	auto
-oe	fȳr	fȳr	fyr	trace_output	fire — OE fȳre	compact	auto
 oe	fȳre	fȳre	fyre	lexical_heading	fire — OE fȳre	manifest	auto
+oe	fȳr	fȳre	fyre	trace_output	fire — OE fȳre	compact	auto
 oe	fyrhte	fyrhte	fyrhte	lexical_heading	fright — OE fyrhte	manifest	auto
 oe	fyrhte	fyrhte	fyrhte	trace_output	fright — OE fyrhte	compact	auto
 oe	fȳst	fȳst	fyst	trace_output	fist — OE fȳst	compact	auto
@@ -214,6 +229,14 @@ oe	healdan	healdan	healdan	trace_output	hold — OE healdan	compact	auto
 oe	heall	heall	heall	trace_output	hall — OE heall	compact	auto
 oe	hearm	hearm	hearm	trace_output	harm — OE hearm	compact	auto
 oe	hēawan	hēawan	heawan	trace_output	hew — OE hēawan	compact	auto
+oe	hefen	hefen	hefen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:29	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefen	hefen	hefen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:34	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefen	hefen	hefen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefen	hefen	hefen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefen	hefen	hefen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefzen	hefzen	hefzen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:35	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefzen	hefzen	hefzen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	hefzen	hefzen	hefzen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:63	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 oe	heġġ	heġġ	hegg	lexical_heading	hedge — OE heġġ	manifest	auto
 oe	heġġ	heġġ	hegg	trace_output	hedge — OE heġġ	compact	auto
 oe	helm	helm	helm	lexical_heading	helm — OE helm	manifest	auto
@@ -221,6 +244,16 @@ oe	helm	helm	helm	trace_output	helm — OE helm	compact	auto
 oe	help	help	help	trace_output	help — OE help	compact	auto
 oe	helpan	helpan	helpan	lexical_heading	help — OE helpan	manifest	auto
 oe	helpan	helpan	helpan	trace_output	help — OE helpan	compact	auto
+oe	heofen	heofen	heofen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofen	heofen	heofen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:33	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:38	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:47	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+oe	heofon	heofon	heofon	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 oe	heofon	heofon	heofon	lexical_heading	heaven — OE heofon	manifest	auto
 oe	heofon	heofon	heofon	trace_output	heaven — OE heofon	compact	auto
 oe	heord	heord	heord	trace_output	herd — OE heord	compact	auto
@@ -269,10 +302,13 @@ oe	lēag	lēag	leag	trace_output	lye — OE lēag	compact	auto
 oe	lēosan	lēosan	leosan	lexical_heading	forlorn — OE lēosan	manifest	auto
 oe	lēosan	lēosan	leosan	trace_output	forlorn — OE lēosan	compact	auto
 oe	leþer	leþer	lether	trace_output	leather — OE leþer	compact	auto
+oe	licca	licca	licca	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:43	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
 oe	licca	licca	licca	lexical_heading	lick (iptv.2sg) — OE licca	manifest	auto
 oe	licca	licca	licca	trace_output	lick (iptv.2sg) — OE licca	compact	auto
+oe	liccaþ	liccaþ	liccath	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:44	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
 oe	liccaþ	liccaþ	liccath	lexical_heading	lick (3sg) — OE liccaþ	manifest	auto
 oe	liccaþ	liccaþ	liccath	trace_output	lick (3sg) — OE liccaþ	compact	auto
+oe	liccian	liccian	liccian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:42	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
 oe	liccian	liccian	liccian	trace_output	lick — OE liccian	compact	auto
 oe	līehtan	līehtan	liehtan	lexical_heading	light — OE līehtan	manifest	auto
 oe	līehtan	līehtan	liehtan	trace_output	light — OE līehtan	compact	auto
@@ -345,8 +381,8 @@ oe	rǣdan	rǣdan	raedan	trace_output	read — OE rǣdan	compact	auto
 oe	ræste	ræste	raeste	lexical_heading	rest — OE ræste	manifest	auto
 oe	ræste	ræste	raeste	trace_output	rest — OE ræste	compact	auto
 oe	rāp	rāp	rap	trace_output	rope — OE rāp	compact	auto
-oe	rēac	rēac	reac	lexical_heading	reek — OE rēac	manifest	auto
-oe	rēac	rēac	reac	trace_output	reek — OE rēac	compact	auto
+oe	rēac	*rēac	reac	lexical_heading	reek — OE *rēac	manifest	auto
+oe	rēac	*rēac	reac	trace_output	reek — OE *rēac	compact	auto
 oe	reġn	reġn	regn	trace_output	rain — OE reġn	compact	auto
 oe	reġnboga	reġnboga	regnboga	trace_output	rainbow — OE reġnboga	compact	auto
 oe	rīdan	rīdan	ridan	trace_output	ride — OE rīdan	compact	auto
@@ -355,10 +391,10 @@ oe	rinnan	rinnan	rinnan	trace_output	run — OE rinnan	compact	auto
 oe	rocc	rocc	rocc	lexical_heading	coat — OE rocc	manifest	auto
 oe	rocc	rocc	rocc	trace_output	coat — OE rocc	compact	auto
 oe	rōd	rōd	rod	trace_output	rood — OE rōd	compact	auto
-oe	rost	rost	rost	trace_output	rust — OE rust	compact	auto
 oe	rōþor	rōþor	rothor	trace_output	rudder — OE rōþor	compact	auto
 oe	rūm	rūm	rum	trace_output	room — OE rūm	compact	auto
 oe	rust	rust	rust	lexical_heading	rust — OE rust	manifest	auto
+oe	rost	rust	rust	trace_output	rust — OE rust	compact	auto
 oe	ryġe	ryġe	ryge	trace_output	rye — OE ryġe	compact	auto
 oe	sacu	sacu	sacu	trace_output	sake — OE sacu	compact	auto
 oe	sǣ	sǣ	sae	lexical_heading	sea — OE sǣ	manifest	auto
@@ -373,10 +409,15 @@ oe	sċeaft	sċeaft	sceaft	trace_output	shaft — OE sċeaft	compact	auto
 oe	sċēap	sċēap	sceap	lexical_heading	sheep — OE sċēap	manifest	auto
 oe	sċēap	sċēap	sceap	trace_output	sheep — OE sċēap	compact	auto
 oe	sċēaþ	sċēaþ	sceath	trace_output	sheath — OE sċēaþ	compact	auto
+oe	scēawa	scēawa	sceawa	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:43	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
+oe	sċēawa	sċēawa	sceawa	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:43	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
 oe	sċēawa	sċēawa	sceawa	lexical_heading	show (iptv.2sg) — OE sċēawa	manifest	auto
 oe	sċēawa	sċēawa	sceawa	trace_output	show (iptv.2sg) — OE sċēawa	compact	auto
+oe	sċēawaþ	sċēawaþ	sceawath	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:44	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
 oe	sċēawaþ	sċēawaþ	sceawath	lexical_heading	show (3sg) — OE sċēawaþ	manifest	auto
 oe	sċēawaþ	sċēawaþ	sceawath	trace_output	show (3sg) — OE sċēawaþ	compact	auto
+oe	scēawian	scēawian	sceawian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:42	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
+oe	sċēawian	sċēawian	sceawian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:42	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
 oe	sċēawian	sċēawian	sceawian	lexical_heading	show — OE sċēawian	manifest	auto
 oe	sċēawian	sċēawian	sceawian	trace_output	show — OE sċēawian	compact	auto
 oe	sċield	sċield	scield	trace_output	shield — OE sċield	compact	auto
@@ -412,12 +453,32 @@ oe	smierwan	smierwan	smierwan	lexical_heading	smear — OE smierwan	manifest	aut
 oe	smierwan	smierwan	smierwan	trace_output	smear — OE smierwan	compact	auto
 oe	snāw	snāw	snaw	trace_output	snow — OE snāw	compact	auto
 oe	sorg	sorg	sorg	trace_output	sorrow — OE sorg	compact	auto
+oe	spær	spær	spaer	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:32	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spær	spær	spaer	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:46	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spær	spær	spaer	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spære	spære	spaere	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spærede	spærede	spaerede	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:33	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spærede	spærede	spaerede	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:35	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spæreþ	spæreþ	spaereth	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spæria	spæria	spaeria	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:32	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spæria	spæria	spaeria	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:35	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 oe	spannan	spannan	spannan	lexical_heading	span — OE spannan	manifest	auto
 oe	spannan	spannan	spannan	trace_output	span — OE spannan	compact	auto
 oe	spanne	spanne	spanne	lexical_heading	span — OE spanne	manifest	auto
 oe	spanne	spanne	spanne	trace_output	span — OE spanne	compact	auto
+oe	sparen	sparen	sparen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:26	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:31	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:35	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:37	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:45	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	sparian	sparian	sparian	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 oe	sparian	sparian	sparian	lexical_heading	spare — OE sparian	manifest	auto
 oe	sparian	sparian	sparian	trace_output	spare — OE sparian	compact	auto
+oe	spearad	spearad	spearad	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:33	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spearad	spearad	spearad	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:36	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+oe	spearad	spearad	spearad	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 oe	spearra	spearra	spearra	lexical_heading	spar — OE spearra	manifest	auto
 oe	spearra	spearra	spearra	trace_output	spar — OE spearra	compact	auto
 oe	speoru	speoru	speoru	trace_output	spear — OE speoru	compact	auto
@@ -444,8 +505,8 @@ oe	strēam	strēam	stream	trace_output	stream — OE strēam	compact	auto
 oe	strēaw	strēaw	streaw	trace_output	straw — OE strēaw	compact	auto
 oe	streċċan	streċċan	streccan	trace_output	stretch — OE streċċan	compact	auto
 oe	strenġ	strenġ	streng	trace_output	string — OE strenġ	compact	auto
-oe	strīeġan	strīeġan	striegan	lexical_heading	strew — OE strīeġan	manifest	auto
-oe	strīeġan	strīeġan	striegan	trace_output	strew — OE strīeġan	compact	auto
+oe	strīeġan	*strīeġan	striegan	lexical_heading	strew — OE *strīeġan	manifest	auto
+oe	strīeġan	*strīeġan	striegan	trace_output	strew — OE *strīeġan	compact	auto
 oe	styrtan	styrtan	styrtan	trace_output	start — OE styrtan	compact	auto
 oe	sumer	sumer	sumer	lexical_heading	summer — OE sumer	manifest	auto
 oe	sumer	sumer	sumer	trace_output	summer — OE sumer	compact	auto
@@ -467,8 +528,8 @@ oe	tā	tā	ta	trace_output	toe — OE tā	compact	auto
 oe	tācn	tācn	tacn	lexical_heading	token — OE tācn	manifest	auto
 oe	tācn	tācn	tacn	trace_output	token — OE tācn	compact	auto
 oe	tæppa	tæppa	taeppa	lexical_heading	tap — OE tæppa	manifest	auto
+oe	tappa	tæppa	taeppa	trace_output	tap — OE tæppa	compact	auto
 oe	tang	tang	tang	trace_output	tongs — OE tang	compact	auto
-oe	tappa	tappa	tappa	trace_output	tap — OE tæppa	compact	auto
 oe	tēam	tēam	team	trace_output	team — OE tēam	compact	auto
 oe	tēon	tēon	teon	lexical_heading	ten — OE tēon	manifest	auto
 oe	tēon	tēon	teon	trace_output	ten — OE tēon	compact	auto
@@ -542,22 +603,17 @@ oe	windan	windan	windan	trace_output	wind — OE windan	compact	auto
 oe	winter	winter	winter	trace_output	winter — OE winter	compact	auto
 oe	wīþiġ	wīþiġ	withig	lexical_heading	withy — OE wīþiġ	manifest	auto
 oe	wīþiġ	wīþiġ	withig	trace_output	withy — OE wīþiġ	compact	auto
-oe	wolf	wolf	wolf	trace_output	wolf — OE wulf	compact	auto
-oe	woll	woll	woll	trace_output	wool — OE wull	compact	auto
 oe	word	word	word	trace_output	word — OE word	compact	auto
 oe	wringan	wringan	wringan	trace_output	wring — OE wringan	compact	auto
 oe	wuduwe	wuduwe	wuduwe	trace_output	widow — OE wuduwe	compact	auto
 oe	wulf	wulf	wulf	lexical_heading	wolf — OE wulf	manifest	auto
+oe	wolf	wulf	wulf	trace_output	wolf — OE wulf	compact	auto
 oe	wull	wull	wull	lexical_heading	wool — OE wull	manifest	auto
+oe	woll	wull	wull	trace_output	wool — OE wull	compact	auto
 oe	wundor	wundor	wundor	trace_output	wonder — OE wundor	compact	auto
 oe	wyrm	wyrm	wyrm	trace_output	worm — OE wyrm	compact	auto
 pgmc	*áinaz	*áinaz	ainaz	trace_proto_input	one — OE ān	compact	auto
-pgmc	*θáką	*θáką	aka	trace_proto_input	thatch — OE þæc	compact	auto
 pgmc	*āna	*āna	ana	trace_stage	one — OE ān	compact:PGmc Final Z Deletion	auto
-pgmc	*θánkaz	*θánkaz	ankaz	trace_proto_input	thanks — OE þanc	compact	auto
-pgmc	*θánkijaną	*θánkijaną	ankijana	lexical_protoform	think — OE þenċan	manifest	auto
-pgmc	*θánkijaną	*θánkijaną	ankijana	trace_proto_input	think — OE þenċan	compact	auto
-pgmc	*báθą	*báθą	baa	trace_proto_input	bath — OE bæþ	compact	auto
 pgmc	*báiną	*báiną	baina	lexical_protoform	bone — OE bān	manifest	auto
 pgmc	*báiną	*báiną	baina	trace_proto_input	bone — OE bān	compact	auto
 pgmc	*bákaną	*bákaną	bakana	lexical_protoform	bake — OE bacan	manifest	auto
@@ -570,6 +626,7 @@ pgmc	*bánnas	*bánnas	bannas	trace_proto_input	ban — OE bannes	compact	auto
 pgmc	*bárda	*bárda	barda	trace_stage	beard — OE beard	compact:PGmc Final Z Deletion	auto
 pgmc	*bárdaz	*bárdaz	bardaz	trace_proto_input	beard — OE beard	compact	auto
 pgmc	*bástą	*bástą	basta	trace_proto_input	bast — OE bæst	compact	auto
+pgmc	*báθą	*báθą	batha	trace_proto_input	bath — OE bæþ	compact	auto
 pgmc	*báug	*báug	baug	lexical_protoform	bow — OE bēag	manifest	auto
 pgmc	*báug	*báug	baug	trace_proto_input	bow — OE bēag	compact	auto
 pgmc	*báugijaną	*báugijaną	baugijana	lexical_protoform	bow — OE bīeġan	manifest	auto
@@ -600,8 +657,13 @@ pgmc	*bōkz	*bōkz	bokz	trace_proto_input	book — OE bōc	compact	auto
 pgmc	*bōsma	*bōsma	bosma	trace_stage	bosom — OE bōsm	compact:PGmc Final Z Deletion	auto
 pgmc	*bōsmaz	*bōsmaz	bosmaz	trace_proto_input	bosom — OE bōsm	compact	auto
 pgmc	*bóttma	*bóttma	bottma	trace_stage	bottom — OE botm	compact:PGmc Final Z Deletion	auto
+pgmc	*brándas	*brándas	brandas	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:23	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+pgmc	*brándas	*brándas	brandas	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:43	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+pgmc	*brándas	*brándas	brandas	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:60	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
 pgmc	*brándas	*brándas	brandas	lexical_protoform	brand — OE brandes	manifest	auto
 pgmc	*brándas	*brándas	brandas	trace_proto_input	brand — OE brandes	compact	auto
+pgmc	*brándaz	*brándaz	brandaz	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:21	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+pgmc	*brándaz	*brándaz	brandaz	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:59	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
 pgmc	*brándaz	*brándaz	brandaz	lexical_proto	brand — OE brandes	manifest	auto
 pgmc	*bráudą	*bráudą	brauda	trace_proto_input	bread — OE brēad	compact	auto
 pgmc	*brékaną	*brékaną	brekana	trace_proto_input	break — OE brecan	compact	auto
@@ -627,11 +689,11 @@ pgmc	*búrdiz	*búrdiz	burdiz	lexical_protoform	birth — OE byrd	manifest	auto
 pgmc	*búrdiz	*búrdiz	burdiz	trace_proto_input	birth — OE byrd	compact	auto
 pgmc	*búrô	*búrô	buro	lexical_protoform	bore (iptv.2sg) — OE bora	manifest	auto
 pgmc	*búrô	*búrô	buro	trace_proto_input	bore (iptv.2sg) — OE bora	compact	auto
-pgmc	*búrōθi	*búrōθi	buroi	lexical_protoform	bore (3sg) — OE boraþ	manifest	auto
-pgmc	*búrōθi	*búrōθi	buroi	trace_proto_input	bore (3sg) — OE boraþ	compact	auto
 pgmc	*búrōjaną	*búrōjaną	burojana	trace_proto_input	bore — OE borian	compact	auto
 pgmc	*burōną	*burōną	burona	lexical_proto	bore (3sg) — OE boraþ	manifest	auto
 pgmc	*burōną	*burōną	burona	lexical_proto	bore (iptv.2sg) — OE bora	manifest	auto
+pgmc	*búrōθi	*búrōθi	burothi	lexical_protoform	bore (3sg) — OE boraþ	manifest	auto
+pgmc	*búrōθi	*búrōθi	burothi	trace_proto_input	bore (3sg) — OE boraþ	compact	auto
 pgmc	*búttmaz	*búttmaz	buttmaz	lexical_protoform	bottom — OE botm	manifest	auto
 pgmc	*búttmaz	*búttmaz	buttmaz	trace_proto_input	bottom — OE botm	compact	auto
 pgmc	*ça	*ça	ca	trace_stage	hawk — OE hafoc	compact:PGmc B Allophony	auto
@@ -665,16 +727,13 @@ pgmc	*drḯbaną	*drḯbaną	dribana	trace_proto_input	drive — OE drīfan	comp
 pgmc	*drínkaną	*drínkaną	drinkana	trace_proto_input	drink — OE drincan	compact	auto
 pgmc	*dúrą	*dúrą	dura	lexical_protoform	door — OE dor	manifest	auto
 pgmc	*dúrą	*dúrą	dura	trace_proto_input	door — OE dor	compact	auto
-pgmc	*θégnaz	*θégnaz	egnaz	trace_proto_input	thane — OE þeġn	compact	auto
 pgmc	*ḗla	*ḗla	ela	trace_stage	eel — OE ǣl	compact:PGmc Final Z Deletion	auto
 pgmc	*ḗlaz	*ḗlaz	elaz	trace_proto_input	eel — OE ǣl	compact	auto
-pgmc	*érθōn	*érθōn	eron	trace_proto_input	earth — OE eorþe	compact	auto
-pgmc	*θéstilaz	*θéstilaz	estilaz	lexical_proto	thistle — OE þistles	manifest	auto
+pgmc	*érθōn	*érθōn	erthon	trace_proto_input	earth — OE eorþe	compact	auto
 pgmc	*étaną	*étaną	etana	trace_proto_input	eat — OE etan	compact	auto
-pgmc	*θéubaz	*θéubaz	eubaz	trace_proto_input	thief — OE þēof	compact	auto
 pgmc	*fádēr	*fádēr	fader	trace_proto_input	father — OE fæder	compact	auto
-pgmc	*fálθaną	*fálθaną	falana	trace_proto_input	fold — OE fealdan	compact	auto
 pgmc	*fállaną	*fállaną	fallana	trace_proto_input	fall — OE feallan	compact	auto
+pgmc	*fálθaną	*fálθaną	falthana	trace_proto_input	fold — OE fealdan	compact	auto
 pgmc	*fáraną	*fáraną	farana	lexical_protoform	fare — OE faran	manifest	auto
 pgmc	*fáraną	*fáraną	farana	trace_proto_input	fare — OE faran	compact	auto
 pgmc	*fárna	*fárna	farna	trace_stage	fern — OE fearn	compact:PGmc Final Z Deletion	auto
@@ -687,13 +746,13 @@ pgmc	*fédwōr	*fédwōr	fedwor	trace_proto_input	four — OE fēower	compact	au
 pgmc	*féldu	*féldu	feldu	trace_stage	field — OE feld	compact:PGmc Final Z Deletion	auto
 pgmc	*féllą	*féllą	fella	lexical_protoform	fell — OE fell	manifest	auto
 pgmc	*féllą	*féllą	fella	trace_proto_input	fell — OE fell	compact	auto
-pgmc	*félθuz	*félθuz	feluz	lexical_protoform	field — OE feld	manifest	auto
-pgmc	*félθuz	*félθuz	feluz	trace_proto_input	field — OE feld	compact	auto
+pgmc	*félθuz	*félθuz	felthuz	lexical_protoform	field — OE feld	manifest	auto
+pgmc	*félθuz	*félθuz	felthuz	trace_proto_input	field — OE feld	compact	auto
 pgmc	*féxtaną	*féxtaną	fextana	trace_proto_input	fight — OE feohtan	compact	auto
 pgmc	*féxu	*féxu	fexu	trace_proto_input	fee — OE feoh	compact	auto
-pgmc	*fínθaną	*fínθaną	finana	lexical_proto	find — OE fundene	manifest	auto
 pgmc	*fíngra	*fíngra	fingra	trace_stage	finger — OE finger	compact:PGmc Final Z Deletion	auto
 pgmc	*fíngraz	*fíngraz	fingraz	trace_proto_input	finger — OE finger	compact	auto
+pgmc	*fínθaną	*fínθaną	finthana	lexical_proto	find — OE fundene	manifest	auto
 pgmc	*físka	*físka	fiska	trace_stage	fish — OE fisċ	compact:PGmc Final Z Deletion	auto
 pgmc	*fískaz	*fískaz	fiskaz	trace_proto_input	fish — OE fisċ	compact	auto
 pgmc	*fláiskiz	*fláiskiz	flaiskiz	trace_proto_input	flesh — OE flǣsċ	compact	auto
@@ -765,15 +824,14 @@ pgmc	*grḯpaną	*grḯpaną	gripana	trace_proto_input	gripe — OE grīpan	comp
 pgmc	*grúndu	*grúndu	grundu	trace_stage	ground — OE grund	compact:PGmc Final Z Deletion	auto
 pgmc	*grúnduz	*grúnduz	grunduz	trace_proto_input	ground — OE grund	compact	auto
 pgmc	*gúdą	*gúdą	guda	trace_proto_input	god — OE god	compact	auto
-pgmc	*gúlθą	*gúlθą	gula	lexical_protoform	gold — OE gold	manifest	auto
-pgmc	*gúlθą	*gúlθą	gula	trace_proto_input	gold — OE gold	compact	auto
-pgmc	*θíngą	*θíngą	inga	trace_proto_input	thing — OE þing	compact	auto
-pgmc	*θístilas	*θístilas	istilas	lexical_protoform	thistle — OE þistles	manifest	auto
-pgmc	*θístilas	*θístilas	istilas	trace_proto_input	thistle — OE þistles	compact	auto
+pgmc	*gúlθą	*gúlθą	gultha	lexical_protoform	gold — OE gold	manifest	auto
+pgmc	*gúlθą	*gúlθą	gultha	trace_proto_input	gold — OE gold	compact	auto
+pgmc	hemina-	*hemina-*	hemina	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+pgmc	hemna-	*hemna-*	hemna	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 pgmc	*jḗrą	*jḗrą	jera	trace_proto_input	year — OE ġēar	compact	auto
-pgmc	*júgunθ	*júgunθ	jugun	lexical_protoform	youth — OE ġeoguþ	manifest	auto
-pgmc	*júgunθ	*júgunθ	jugun	trace_proto_input	youth — OE ġeoguþ	compact	auto
-pgmc	*júgunθiz	*júgunθiz	juguniz	lexical_proto	youth — OE ġeoguþ	manifest	auto
+pgmc	*júgunθ	*júgunθ	jugunth	lexical_protoform	youth — OE ġeoguþ	manifest	auto
+pgmc	*júgunθ	*júgunθ	jugunth	trace_proto_input	youth — OE ġeoguþ	compact	auto
+pgmc	*júgunθiz	*júgunθiz	jugunthiz	lexical_proto	youth — OE ġeoguþ	manifest	auto
 pgmc	*júką	*júką	juka	trace_proto_input	yoke — OE ġeoc	compact	auto
 pgmc	*kálba	*kálba	kalba	trace_stage	calf — OE ċealf	compact:PGmc Final Z Deletion	auto
 pgmc	*kálbaz	*kálbaz	kalbaz	lexical_protoform	calf — OE ċealf	manifest	auto
@@ -789,9 +847,9 @@ pgmc	*knéxta	*knéxta	knexta	trace_stage	knight — OE cniht	compact:PGmc Final
 pgmc	*knéxtaz	*knéxtaz	knextaz	lexical_protoform	knight — OE cniht	manifest	auto
 pgmc	*knéxtaz	*knéxtaz	knextaz	trace_proto_input	knight — OE cniht	compact	auto
 pgmc	*kníxtaz	*kníxtaz	knixtaz	lexical_proto	knight — OE cniht	manifest	auto
-pgmc	*knúbbô	*knúbbô	knubbo	lexical_protoform	knob — OE cnobba	manifest	auto
-pgmc	*knúbbô	*knúbbô	knubbo	trace_proto_input	knob — OE cnobba	compact	auto
-pgmc	*knúppaz	*knúppaz	knuppaz	lexical_proto	knob — OE cnobba	manifest	auto
+pgmc	*knúbbô	*knúbbô	knubbo	lexical_protoform	knob — OE *cnobba	manifest	auto
+pgmc	*knúbbô	*knúbbô	knubbo	trace_proto_input	knob — OE *cnobba	compact	auto
+pgmc	*knúppaz	*knúppaz	knuppaz	lexical_proto	knob — OE *cnobba	manifest	auto
 pgmc	*kōz	*kōz	koz	lexical_proto	cow — OE cȳ	manifest	auto
 pgmc	*kráfta	*kráfta	krafta	trace_stage	craft — OE cræft	compact:PGmc Final Z Deletion	auto
 pgmc	*kráftaz	*kráftaz	kraftaz	lexical_protoform	craft — OE cræft	manifest	auto
@@ -806,28 +864,28 @@ pgmc	*kúrną	*kúrną	kurna	trace_proto_input	corn — OE corn	compact	auto
 pgmc	*kwédu	*kwédu	kwedu	trace_stage	cud — OE cwedu	compact:PGmc Final Z Deletion	auto
 pgmc	*kwéðuz	*kwéðuz	kweduz	lexical_protoform	cud — OE cwedu	manifest	auto
 pgmc	*kwéðuz	*kwéðuz	kweduz	trace_proto_input	cud — OE cwedu	compact	auto
-pgmc	*kwíθuz	*kwíθuz	kwiuz	lexical_proto	cud — OE cwedu	manifest	auto
+pgmc	*kwíθuz	*kwíθuz	kwithuz	lexical_proto	cud — OE cwedu	manifest	auto
 pgmc	*lā	*lā	la	trace_stage	loath — OE lāþ	compact:PGmc Final Z Deletion	auto
 pgmc	*lábbaz	*lábbaz	labbaz	lexical_proto	lap — OE lappa	manifest	auto
-pgmc	*láiθaz	*láiθaz	laiaz	trace_proto_input	loath — OE lāþ	compact	auto
 pgmc	*láidijaną	*láidijaną	laidijana	lexical_protoform	lead — OE lǣdan	manifest	auto
 pgmc	*láidijaną	*láidijaną	laidijana	trace_proto_input	lead — OE lǣdan	compact	auto
 pgmc	*láimą	*láimą	laima	lexical_protoform	loam — OE lām	manifest	auto
 pgmc	*láimą	*láimą	laima	trace_proto_input	loam — OE lām	compact	auto
 pgmc	*laimōn	*laimōn	laimon	lexical_proto	loam — OE lām	manifest	auto
 pgmc	*láistijaną	*láistijaną	laistijana	trace_proto_input	last — OE lǣstan	compact	auto
+pgmc	*láiθaz	*láiθaz	laithaz	trace_proto_input	loath — OE lāþ	compact	auto
 pgmc	*lákaną	*lákaną	lakana	lexical_proto	laugh — OE hliehhan	manifest	auto
 pgmc	*lándą	*lándą	landa	trace_proto_input	land — OE land	compact	auto
-pgmc	*laθōjaną	*laθōjaną	laojana	lexical_proto	lade — OE hladan	manifest	auto
 pgmc	*láppô	*láppô	lappo	lexical_protoform	lap — OE lappa	manifest	auto
 pgmc	*láppô	*láppô	lappo	trace_proto_input	lap — OE lappa	compact	auto
+pgmc	*laθōjaną	*laθōjaną	lathojana	lexical_proto	lade — OE hladan	manifest	auto
 pgmc	*láubą	*láubą	lauba	trace_proto_input	leaf — OE lēaf	compact	auto
 pgmc	*láugō	*láugō	laugo	trace_proto_input	lye — OE lēag	compact	auto
 pgmc	*láuka	*láuka	lauka	trace_stage	leek — OE lēac	compact:PGmc Final Z Deletion	auto
 pgmc	*láukaz	*láukaz	laukaz	trace_proto_input	leek — OE lēac	compact	auto
 pgmc	*lēa	*lēa	lea	trace_stage	leaf — OE lēaf	compact:PGmc B Allophony	auto
-pgmc	*léθrą	*léθrą	lera	trace_proto_input	leather — OE leþer	compact	auto
 pgmc	*lḗtaną	*lḗtaną	letana	trace_proto_input	let — OE lǣtan	compact	auto
+pgmc	*léθrą	*léθrą	lethra	trace_proto_input	leather — OE leþer	compact	auto
 pgmc	*léusaną	*léusaną	leusana	lexical_protoform	forlorn — OE lēosan	manifest	auto
 pgmc	*léusaną	*léusaną	leusana	trace_proto_input	forlorn — OE lēosan	compact	auto
 pgmc	*léuxtijaną	*léuxtijaną	leuxtijana	lexical_protoform	light — OE līehtan	manifest	auto
@@ -836,17 +894,20 @@ pgmc	*lí	*lí	li	trace_stage	live — OE lifeþ	compact:PGmc B Allophony	auto
 pgmc	*lí	*lí	li	trace_stage	liver — OE lifer	compact:PGmc B Allophony	auto
 pgmc	*lḯ	*lḯ	li	trace_stage	life — OE līf	compact:PGmc B Allophony	auto
 pgmc	*lḯbą	*lḯbą	liba	trace_proto_input	life — OE līf	compact	auto
-pgmc	*líbēθi	*líbēθi	libei	lexical_protoform	live — OE lifeþ	manifest	auto
-pgmc	*líbēθi	*líbēθi	libei	trace_proto_input	live — OE lifeþ	compact	auto
 pgmc	*libēną	*libēną	libena	lexical_proto	live — OE lifeþ	manifest	auto
+pgmc	*líbēθi	*líbēθi	libethi	lexical_protoform	live — OE lifeþ	manifest	auto
+pgmc	*líbēθi	*líbēθi	libethi	trace_proto_input	live — OE lifeþ	compact	auto
 pgmc	*líbrō	*líbrō	libro	trace_proto_input	liver — OE lifer	compact	auto
+pgmc	*líkkô	*líkkô	likko	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:43	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
 pgmc	*líkkô	*líkkô	likko	lexical_protoform	lick (iptv.2sg) — OE licca	manifest	auto
 pgmc	*líkkô	*líkkô	likko	trace_proto_input	lick (iptv.2sg) — OE licca	compact	auto
-pgmc	*líkkōθi	*líkkōθi	likkoi	lexical_protoform	lick (3sg) — OE liccaþ	manifest	auto
-pgmc	*líkkōθi	*líkkōθi	likkoi	trace_proto_input	lick (3sg) — OE liccaþ	compact	auto
+pgmc	*líkkōjaną	*líkkōjaną	likkojana	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:42	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
 pgmc	*líkkōjaną	*líkkōjaną	likkojana	trace_proto_input	lick — OE liccian	compact	auto
 pgmc	*likkōną	*likkōną	likkona	lexical_proto	lick (3sg) — OE liccaþ	manifest	auto
 pgmc	*likkōną	*likkōną	likkona	lexical_proto	lick (iptv.2sg) — OE licca	manifest	auto
+pgmc	*líkkōθi	*líkkōθi	likkothi	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:44	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
+pgmc	*líkkōθi	*líkkōθi	likkothi	lexical_protoform	lick (3sg) — OE liccaþ	manifest	auto
+pgmc	*líkkōθi	*líkkōθi	likkothi	trace_proto_input	lick (3sg) — OE liccaþ	compact	auto
 pgmc	*lḯmą	*lḯmą	lima	trace_proto_input	lime — OE līm	compact	auto
 pgmc	*líndō	*líndō	lindo	lexical_protoform	linden — OE lind	manifest	auto
 pgmc	*líndō	*líndō	lindo	trace_proto_input	linden — OE lind	compact	auto
@@ -854,12 +915,12 @@ pgmc	*lḯnōn	*lḯnōn	linon	trace_proto_input	line — OE līne	compact	auto
 pgmc	*lḯstōn	*lḯstōn	liston	trace_proto_input	list — OE līste	compact	auto
 pgmc	*líznô	*líznô	lizno	lexical_protoform	learn (iptv.2sg) — OE liorna	manifest	auto
 pgmc	*líznô	*líznô	lizno	trace_proto_input	learn (iptv.2sg) — OE liorna	compact	auto
-pgmc	*líznōθi	*líznōθi	liznoi	lexical_protoform	learn (3sg) — OE liornaþ	manifest	auto
-pgmc	*líznōθi	*líznōθi	liznoi	trace_proto_input	learn (3sg) — OE liornaþ	compact	auto
 pgmc	*liznōjaną	*liznōjaną	liznojana	lexical_proto	learn (3sg) — OE liornaþ	manifest	auto
 pgmc	*liznōjaną	*liznōjaną	liznojana	lexical_proto	learn (iptv.2sg) — OE liorna	manifest	auto
 pgmc	*líznōjaną	*líznōjaną	liznojana	lexical_protoform	learn — OE liornian	manifest	auto
 pgmc	*líznōjaną	*líznōjaną	liznojana	trace_proto_input	learn — OE liornian	compact	auto
+pgmc	*líznōθi	*líznōθi	liznothi	lexical_protoform	learn (3sg) — OE liornaþ	manifest	auto
+pgmc	*líznōθi	*líznōθi	liznothi	trace_proto_input	learn (3sg) — OE liornaþ	compact	auto
 pgmc	*lókka	*lókka	lokka	trace_stage	lock — OE locc	compact:PGmc Final Z Deletion	auto
 pgmc	*lúką	*lúką	luka	trace_proto_input	lock — OE loc	compact	auto
 pgmc	*lúkkaz	*lúkkaz	lukkaz	trace_proto_input	lock — OE locc	compact	auto
@@ -873,11 +934,11 @@ pgmc	*lūsz	*lūsz	lusz	trace_proto_input	louse — OE lūs	compact	auto
 pgmc	*máinijaną	*máinijaną	mainijana	trace_proto_input	mean — OE mǣnan	compact	auto
 pgmc	*mákô	*mákô	mako	lexical_protoform	make (iptv.2sg) — OE maca	manifest	auto
 pgmc	*mákô	*mákô	mako	trace_proto_input	make (iptv.2sg) — OE maca	compact	auto
-pgmc	*mákōθi	*mákōθi	makoi	lexical_protoform	make (3sg) — OE macaþ	manifest	auto
-pgmc	*mákōθi	*mákōθi	makoi	trace_proto_input	make (3sg) — OE macaþ	compact	auto
 pgmc	*mákōjaną	*mákōjaną	makojana	trace_proto_input	make — OE macian	compact	auto
 pgmc	*makōną	*makōną	makona	lexical_proto	make (3sg) — OE macaþ	manifest	auto
 pgmc	*makōną	*makōną	makona	lexical_proto	make (iptv.2sg) — OE maca	manifest	auto
+pgmc	*mákōθi	*mákōθi	makothi	lexical_protoform	make (3sg) — OE macaþ	manifest	auto
+pgmc	*mákōθi	*mákōθi	makothi	trace_proto_input	make (3sg) — OE macaþ	compact	auto
 pgmc	*málta	*málta	malta	trace_stage	malt — OE mealt	compact:PGmc Final Z Deletion	auto
 pgmc	*máltaz	*máltaz	maltaz	trace_proto_input	malt — OE mealt	compact	auto
 pgmc	*mánnas	*mánnas	mannas	lexical_protoform	man — OE mannes	manifest	auto
@@ -895,7 +956,7 @@ pgmc	*méluk	*méluk	meluk	trace_stage	milk — OE meoloc	compact:PGmc Final Z D
 pgmc	*mélukz	*mélukz	melukz	lexical_protoform	milk — OE meoloc	manifest	auto
 pgmc	*mélukz	*mélukz	melukz	trace_proto_input	milk — OE meoloc	compact	auto
 pgmc	*mḗnō	*mḗnō	meno	trace_stage	month — OE mōnaþ	compact:PGmc Final Z Deletion	auto
-pgmc	*mḗnōθz	*mḗnōθz	menoz	trace_proto_input	month — OE mōnaþ	compact	auto
+pgmc	*mḗnōθz	*mḗnōθz	menothz	trace_proto_input	month — OE mōnaþ	compact	auto
 pgmc	*mízdai	*mízdai	mizdai	lexical_protoform	meed — OE meorde	manifest	auto
 pgmc	*mízdai	*mízdai	mizdai	trace_proto_input	meed — OE meorde	compact	auto
 pgmc	*mizdō	*mizdō	mizdo	lexical_proto	meed — OE meorde	manifest	auto
@@ -925,7 +986,7 @@ pgmc	*nḗðlō	*nḗðlō	nedlo	lexical_protoform	needle — OE nǣdl	manifest	
 pgmc	*nḗðlō	*nḗðlō	nedlo	trace_proto_input	needle — OE nǣdl	compact	auto
 pgmc	*nḗdrōn	*nḗdrōn	nedron	lexical_protoform	adder — OE nǣdre	manifest	auto
 pgmc	*nḗdrōn	*nḗdrōn	nedron	trace_proto_input	adder — OE nǣdre	compact	auto
-pgmc	*nḗθlō	*nḗθlō	nelo	lexical_proto	needle — OE nǣdl	manifest	auto
+pgmc	*nḗθlō	*nḗθlō	nethlo	lexical_proto	needle — OE nǣdl	manifest	auto
 pgmc	*nígun	*nígun	nigun	trace_proto_input	nine — OE nigon	compact	auto
 pgmc	*nístą	*nístą	nista	trace_proto_input	nest — OE nest	compact	auto
 pgmc	*núsō	*núsō	nuso	lexical_protoform	nose — OE nosu	manifest	auto
@@ -936,23 +997,20 @@ pgmc	*rastō	*rastō	rasto	lexical_proto	rest — OE ræste	manifest	auto
 pgmc	*rástō	*rástō	rasto	trace_stage	rest — OE ræste	compact:PGmc Final Z Deletion	auto
 pgmc	*rástōz	*rástōz	rastoz	lexical_protoform	rest — OE ræste	manifest	auto
 pgmc	*rástōz	*rástōz	rastoz	trace_proto_input	rest — OE ræste	compact	auto
-pgmc	*ráuka	*ráuka	rauka	trace_stage	reek — OE rēac	compact:PGmc Final Z Deletion	auto
-pgmc	*ráukaz	*ráukaz	raukaz	lexical_protoform	reek — OE rēac	manifest	auto
-pgmc	*ráukaz	*ráukaz	raukaz	trace_proto_input	reek — OE rēac	compact	auto
-pgmc	*ráukiz	*ráukiz	raukiz	lexical_proto	reek — OE rēac	manifest	auto
+pgmc	*ráuka	*ráuka	rauka	trace_stage	reek — OE *rēac	compact:PGmc Final Z Deletion	auto
+pgmc	*ráukaz	*ráukaz	raukaz	lexical_protoform	reek — OE *rēac	manifest	auto
+pgmc	*ráukaz	*ráukaz	raukaz	trace_proto_input	reek — OE *rēac	compact	auto
+pgmc	*ráukiz	*ráukiz	raukiz	lexical_proto	reek — OE *rēac	manifest	auto
 pgmc	*rḗdaną	*rḗdaną	redana	trace_proto_input	read — OE rǣdan	compact	auto
 pgmc	*régną	*régną	regna	trace_proto_input	rain — OE reġn	compact	auto
 pgmc	*régnabùgô	*régnabùgô	regnabugo	trace_proto_input	rainbow — OE reġnboga	compact	auto
-pgmc	*θréjez	*θréjez	rejez	lexical_protoform	three — OE þrīe	manifest	auto
-pgmc	*θréjez	*θréjez	rejez	trace_proto_input	three — OE þrīe	compact	auto
-pgmc	*θréskaną	*θréskaną	reskana	trace_proto_input	thrash — OE þresċan	compact	auto
 pgmc	*rḯdaną	*rḯdaną	ridana	trace_proto_input	ride — OE rīdan	compact	auto
 pgmc	*ríndō	*ríndō	rindo	trace_proto_input	rind — OE rind	compact	auto
 pgmc	*rínnaną	*rínnaną	rinnana	trace_proto_input	run — OE rinnan	compact	auto
 pgmc	*rō	*rō	ro	trace_stage	rudder — OE rōþor	compact:PGmc Final Z Deletion	auto
 pgmc	*rōdō	*rōdō	rodo	trace_proto_input	rood — OE rōd	compact	auto
 pgmc	*rókka	*rókka	rokka	trace_stage	coat — OE rocc	compact:PGmc Final Z Deletion	auto
-pgmc	*rōθraz	*rōθraz	roraz	trace_proto_input	rudder — OE rōþor	compact	auto
+pgmc	*rōθraz	*rōθraz	rothraz	trace_proto_input	rudder — OE rōþor	compact	auto
 pgmc	*rúgi	*rúgi	rugi	trace_stage	rye — OE ryġe	compact:PGmc Final Z Deletion	auto
 pgmc	*rúgiz	*rúgiz	rugiz	trace_proto_input	rye — OE ryġe	compact	auto
 pgmc	*rúkkaz	*rúkkaz	rukkaz	lexical_protoform	coat — OE rocc	manifest	auto
@@ -990,18 +1048,21 @@ pgmc	*sḯdōn	*sḯdōn	sidon	trace_proto_input	side — OE sīde	compact	auto
 pgmc	*síngwaną	*síngwaną	singwana	trace_proto_input	sing — OE singan	compact	auto
 pgmc	*skā	*skā	ska	trace_stage	sheath — OE sċēaþ	compact:PGmc Final Z Deletion	auto
 pgmc	*skáftą	*skáftą	skafta	trace_proto_input	shaft — OE sċeaft	compact	auto
-pgmc	*skáiθiz	*skáiθiz	skaiiz	trace_proto_input	sheath — OE sċēaþ	compact	auto
+pgmc	*skáiθiz	*skáiθiz	skaithiz	trace_proto_input	sheath — OE sċēaþ	compact	auto
 pgmc	*skámō	*skámō	skamo	trace_proto_input	shame — OE sċamu	compact	auto
 pgmc	*skáub	*skáub	skaub	lexical_protoform	shove — OE sċēaf	manifest	auto
 pgmc	*skáub	*skáub	skaub	trace_proto_input	shove — OE sċēaf	compact	auto
+pgmc	*skáwô	*skáwô	skawo	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:43	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
 pgmc	*skáwô	*skáwô	skawo	lexical_protoform	show (iptv.2sg) — OE sċēawa	manifest	auto
 pgmc	*skáwô	*skáwô	skawo	trace_proto_input	show (iptv.2sg) — OE sċēawa	compact	auto
-pgmc	*skáwōθi	*skáwōθi	skawoi	lexical_protoform	show (3sg) — OE sċēawaþ	manifest	auto
-pgmc	*skáwōθi	*skáwōθi	skawoi	trace_proto_input	show (3sg) — OE sċēawaþ	compact	auto
+pgmc	*skáwōjaną	*skáwōjaną	skawojana	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:42	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
 pgmc	*skáwōjaną	*skáwōjaną	skawojana	lexical_protoform	show — OE sċēawian	manifest	auto
 pgmc	*skáwōjaną	*skáwōjaną	skawojana	trace_proto_input	show — OE sċēawian	compact	auto
 pgmc	*skawōną	*skawōną	skawona	lexical_proto	show (3sg) — OE sċēawaþ	manifest	auto
 pgmc	*skawōną	*skawōną	skawona	lexical_proto	show (iptv.2sg) — OE sċēawa	manifest	auto
+pgmc	*skáwōθi	*skáwōθi	skawothi	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:44	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md	auto
+pgmc	*skáwōθi	*skáwōθi	skawothi	lexical_protoform	show (3sg) — OE sċēawaþ	manifest	auto
+pgmc	*skáwōθi	*skáwōθi	skawothi	trace_proto_input	show (3sg) — OE sċēawaþ	compact	auto
 pgmc	*skēa	*skēa	skea	trace_stage	shove — OE sċēaf	compact:PGmc B Allophony	auto
 pgmc	*skéldu	*skéldu	skeldu	trace_stage	shield — OE sċield	compact:PGmc Final Z Deletion	auto
 pgmc	*skélduz	*skélduz	skelduz	trace_proto_input	shield — OE sċield	compact	auto
@@ -1034,7 +1095,14 @@ pgmc	*spánnai	*spánnai	spannai	trace_proto_input	span — OE spanne	compact	au
 pgmc	*spánnaną	*spánnaną	spannana	lexical_protoform	span — OE spannan	manifest	auto
 pgmc	*spánnaną	*spánnaną	spannana	trace_proto_input	span — OE spannan	compact	auto
 pgmc	*spannō	*spannō	spanno	lexical_proto	span — OE spanne	manifest	auto
+pgmc	*sparēn-	*sparēn-	sparen	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:21	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+pgmc	*sparēną	*sparēną	sparena	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:27	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 pgmc	*sparēną	*sparēną	sparena	lexical_proto	spare — OE sparian	manifest	auto
+pgmc	*spárēną	*spárēną	sparena	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+pgmc	*sparēnan	*sparēnan	sparenan	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:22	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+pgmc	*spárōjaną	*spárōjaną	sparojana	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+pgmc	*spárōjaną	*spárōjaną	sparojana	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+pgmc	*spárōjaną	*spárōjaną	sparojana	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 pgmc	*spárōjaną	*spárōjaną	sparojana	lexical_protoform	spare — OE sparian	manifest	auto
 pgmc	*spárōjaną	*spárōjaną	sparojana	trace_proto_input	spare — OE sparian	compact	auto
 pgmc	*spárrô	*spárrô	sparro	lexical_protoform	spar — OE spearra	manifest	auto
@@ -1074,8 +1142,8 @@ pgmc	*strángiz	*strángiz	strangiz	trace_proto_input	string — OE strenġ	comp
 pgmc	*stráuma	*stráuma	strauma	trace_stage	stream — OE strēam	compact:PGmc Final Z Deletion	auto
 pgmc	*stráumaz	*stráumaz	straumaz	trace_proto_input	stream — OE strēam	compact	auto
 pgmc	*stráwą	*stráwą	strawa	trace_proto_input	straw — OE strēaw	compact	auto
-pgmc	*stráwjaną	*stráwjaną	strawjana	lexical_protoform	strew — OE strīeġan	manifest	auto
-pgmc	*stráwjaną	*stráwjaną	strawjana	trace_proto_input	strew — OE strīeġan	compact	auto
+pgmc	*stráwjaną	*stráwjaną	strawjana	lexical_protoform	strew — OE *strīeġan	manifest	auto
+pgmc	*stráwjaną	*stráwjaną	strawjana	trace_proto_input	strew — OE *strīeġan	compact	auto
 pgmc	*stúkkaz	*stúkkaz	stukkaz	trace_proto_input	stock — OE stocc	compact	auto
 pgmc	*stúrkaz	*stúrkaz	sturkaz	trace_proto_input	stork — OE storc	compact	auto
 pgmc	*stúrmaz	*stúrmaz	sturmaz	trace_proto_input	storm — OE storm	compact	auto
@@ -1110,6 +1178,26 @@ pgmc	*táugmaz	*táugmaz	taugmaz	trace_proto_input	team — OE tēam	compact	aut
 pgmc	*táuma	*táuma	tauma	trace_stage	team — OE tēam	compact:PGmc Final Z Deletion	auto
 pgmc	*téxun	*téxun	texun	lexical_protoform	ten — OE tēon	manifest	auto
 pgmc	*téxun	*téxun	texun	trace_proto_input	ten — OE tēon	compact	auto
+pgmc	*θáką	*θáką	thaka	trace_proto_input	thatch — OE þæc	compact	auto
+pgmc	*θánkaz	*θánkaz	thankaz	trace_proto_input	thanks — OE þanc	compact	auto
+pgmc	*θánkijaną	*θánkijaną	thankijana	lexical_protoform	think — OE þenċan	manifest	auto
+pgmc	*θánkijaną	*θánkijaną	thankijana	trace_proto_input	think — OE þenċan	compact	auto
+pgmc	*θégnaz	*θégnaz	thegnaz	trace_proto_input	thane — OE þeġn	compact	auto
+pgmc	*θéstilaz	*θéstilaz	thestilaz	lexical_proto	thistle — OE þistles	manifest	auto
+pgmc	*θéubaz	*θéubaz	theubaz	trace_proto_input	thief — OE þēof	compact	auto
+pgmc	*θíngą	*θíngą	thinga	trace_proto_input	thing — OE þing	compact	auto
+pgmc	*θístilas	*θístilas	thistilas	lexical_protoform	thistle — OE þistles	manifest	auto
+pgmc	*θístilas	*θístilas	thistilas	trace_proto_input	thistle — OE þistles	compact	auto
+pgmc	*θréjez	*θréjez	threjez	lexical_protoform	three — OE þrīe	manifest	auto
+pgmc	*θréjez	*θréjez	threjez	trace_proto_input	three — OE þrīe	compact	auto
+pgmc	*θréskaną	*θréskaną	threskana	trace_proto_input	thrash — OE þresċan	compact	auto
+pgmc	*θúnraz	*θúnraz	thunraz	trace_proto_input	thunder — OE þunor	compact	auto
+pgmc	*θúrnaz	*θúrnaz	thurnaz	lexical_protoform	thorn — OE þorn	manifest	auto
+pgmc	*θúrnaz	*θúrnaz	thurnaz	trace_proto_input	thorn — OE þorn	compact	auto
+pgmc	*θúrstuz	*θúrstuz	thurstuz	trace_proto_input	thirst — OE þurst	compact	auto
+pgmc	*θūs-èndi	*θūs-èndi	thusendi	lexical_protoform	thousand — OE þūsend	manifest	auto
+pgmc	*θūsèndi	*θūsèndi	thusendi	trace_proto_input	thousand — OE þūsend	compact	auto
+pgmc	*θūs-undī	*θūs-undī	thusundi	lexical_proto	thousand — OE þūsend	manifest	auto
 pgmc	*tḯdi	*tḯdi	tidi	trace_stage	tide — OE tīd	compact:PGmc Final Z Deletion	auto
 pgmc	*tī́diz	*tī́diz	tidiz	lexical_proto	tide — OE tīd	manifest	auto
 pgmc	*tḯdiz	*tḯdiz	tidiz	lexical_protoform	tide — OE tīd	manifest	auto
@@ -1124,13 +1212,6 @@ pgmc	*tūną	*tūną	tuna	lexical_protoform	town — OE tūn	manifest	auto
 pgmc	*tūną	*tūną	tuna	trace_proto_input	town — OE tūn	compact	auto
 pgmc	*túngōn	*túngōn	tungon	trace_proto_input	tongue — OE tunge	compact	auto
 pgmc	*úfnaz	*úfnaz	ufnaz	trace_proto_input	oven — OE ofn	compact	auto
-pgmc	*θúnraz	*θúnraz	unraz	trace_proto_input	thunder — OE þunor	compact	auto
-pgmc	*θúrnaz	*θúrnaz	urnaz	lexical_protoform	thorn — OE þorn	manifest	auto
-pgmc	*θúrnaz	*θúrnaz	urnaz	trace_proto_input	thorn — OE þorn	compact	auto
-pgmc	*θúrstuz	*θúrstuz	urstuz	trace_proto_input	thirst — OE þurst	compact	auto
-pgmc	*θūs-èndi	*θūs-èndi	usendi	lexical_protoform	thousand — OE þūsend	manifest	auto
-pgmc	*θūsèndi	*θūsèndi	usendi	trace_proto_input	thousand — OE þūsend	compact	auto
-pgmc	*θūs-undī	*θūs-undī	usundi	lexical_proto	thousand — OE þūsend	manifest	auto
 pgmc	*úxsô	*úxsô	uxso	trace_proto_input	ox — OE oxa	compact	auto
 pgmc	*wábsa	*wábsa	wabsa	trace_stage	wasp — OE wæfs	compact:PGmc Final Z Deletion	auto
 pgmc	*wábsaz	*wábsaz	wabsaz	lexical_protoform	wasp — OE wæfs	manifest	auto
@@ -1140,16 +1221,16 @@ pgmc	*wádaną	*wádaną	wadana	trace_proto_input	wade — OE wadan	compact	auto
 pgmc	*wæ	*wæ	wae	trace_stage	wasp — OE wæfs	compact:PGmc B Allophony	auto
 pgmc	*wágna	*wágna	wagna	trace_stage	wain — OE wæġn	compact:PGmc Final Z Deletion	auto
 pgmc	*wágnaz	*wágnaz	wagnaz	trace_proto_input	wain — OE wæġn	compact	auto
-pgmc	*wáiθiz	*wáiθiz	waiiz	lexical_proto	withy — OE wīþiġ	manifest	auto
 pgmc	*wainōjaną	*wainōjaną	wainojana	lexical_proto	whine — OE hwīnan	manifest	auto
+pgmc	*wáiθiz	*wáiθiz	waithiz	lexical_proto	withy — OE wīþiġ	manifest	auto
 pgmc	*wákaną	*wákaną	wakana	lexical_protoform	wake — OE wacan	manifest	auto
 pgmc	*wákaną	*wákaną	wakana	trace_proto_input	wake — OE wacan	compact	auto
 pgmc	*wakēną	*wakēną	wakena	lexical_proto	wake — OE wacan	manifest	auto
 pgmc	*wálaz	*wálaz	walaz	lexical_proto	whale — OE hwæl	manifest	auto
 pgmc	*wáldaną	*wáldaną	waldana	trace_proto_input	wield — OE wealdan	compact	auto
 pgmc	*wáldu	*wáldu	waldu	trace_stage	wold — OE weald	compact:PGmc Final Z Deletion	auto
-pgmc	*wálθuz	*wálθuz	waluz	lexical_protoform	wold — OE weald	manifest	auto
-pgmc	*wálθuz	*wálθuz	waluz	trace_proto_input	wold — OE weald	compact	auto
+pgmc	*wálθuz	*wálθuz	walthuz	lexical_protoform	wold — OE weald	manifest	auto
+pgmc	*wálθuz	*wálθuz	walthuz	trace_proto_input	wold — OE weald	compact	auto
 pgmc	*wárpą	*wárpą	warpa	trace_proto_input	warp — OE wearp	compact	auto
 pgmc	*wártōn	*wártōn	warton	trace_proto_input	wart — OE wearte	compact	auto
 pgmc	*wáskaną	*wáskaną	waskana	lexical_protoform	wash — OE wascan	manifest	auto
@@ -1178,18 +1259,18 @@ pgmc	*wéstanē	*wéstanē	westane	trace_proto_input	west — OE westene	compact
 pgmc	*wéxti	*wéxti	wexti	trace_stage	wight — OE wiht	compact:PGmc Final Z Deletion	auto
 pgmc	*wéxtiz	*wéxtiz	wextiz	trace_proto_input	wight — OE wiht	compact	auto
 pgmc	*wḯ	*wḯ	wi	trace_stage	wife — OE wīf	compact:PGmc B Allophony	auto
-pgmc	*wḯθagą	*wḯθagą	wiaga	lexical_protoform	withy — OE wīþiġ	manifest	auto
-pgmc	*wḯθagą	*wḯθagą	wiaga	trace_proto_input	withy — OE wīþiġ	compact	auto
 pgmc	*wḯbą	*wḯbą	wiba	trace_proto_input	wife — OE wīf	compact	auto
 pgmc	*wíduwōn	*wíduwōn	widuwon	trace_proto_input	widow — OE wuduwe	compact	auto
 pgmc	*wíndaną	*wíndaną	windana	lexical_protoform	wind — OE windan	manifest	auto
 pgmc	*wíndaną	*wíndaną	windana	trace_proto_input	wind — OE windan	compact	auto
 pgmc	*wíntru	*wíntru	wintru	trace_stage	winter — OE winter	compact:PGmc Final Z Deletion	auto
 pgmc	*wíntruz	*wíntruz	wintruz	trace_proto_input	winter — OE winter	compact	auto
-pgmc	*wíθrą	*wíθrą	wira	trace_proto_input	wether — OE weþer	compact	auto
 pgmc	*wíra-àldiz	*wíra-àldiz	wiraaldiz	lexical_proto	world — OE weorold	manifest	auto
 pgmc	*wír-àldu	*wír-àldu	wiraldu	lexical_protoform	world — OE weorold	manifest	auto
 pgmc	*wíràldu	*wíràldu	wiraldu	trace_proto_input	world — OE weorold	compact	auto
+pgmc	*wḯθagą	*wḯθagą	withaga	lexical_protoform	withy — OE wīþiġ	manifest	auto
+pgmc	*wḯθagą	*wḯθagą	withaga	trace_proto_input	withy — OE wīþiġ	compact	auto
+pgmc	*wíθrą	*wíθrą	withra	trace_proto_input	wether — OE weþer	compact	auto
 pgmc	*wólfa	*wólfa	wolfa	trace_stage	wolf — OE wulf	compact:PGmc Final Z Deletion	auto
 pgmc	*wrínganą	*wrínganą	wringana	trace_proto_input	wring — OE wringan	compact	auto
 pgmc	*wúlfaz	*wúlfaz	wulfaz	lexical_protoform	wolf — OE wulf	manifest	auto
@@ -1201,9 +1282,9 @@ pgmc	*wúrdą	*wúrdą	wurda	trace_proto_input	word — OE word	compact	auto
 pgmc	*wúrmi	*wúrmi	wurmi	trace_stage	worm — OE wyrm	compact:PGmc Final Z Deletion	auto
 pgmc	*wúrmiz	*wúrmiz	wurmiz	trace_proto_input	worm — OE wyrm	compact	auto
 pgmc	*xā	*xā	xa	trace_stage	heath — OE hǣþ	compact:PGmc Final Z Deletion	auto
-pgmc	*xábēθi	*xábēθi	xabei	lexical_protoform	have — OE hæfeþ	manifest	auto
-pgmc	*xábēθi	*xábēθi	xabei	trace_proto_input	have — OE hæfeþ	compact	auto
 pgmc	*xabēną	*xabēną	xabena	lexical_proto	have — OE hæfeþ	manifest	auto
+pgmc	*xábēθi	*xábēθi	xabethi	lexical_protoform	have — OE hæfeþ	manifest	auto
+pgmc	*xábēθi	*xábēθi	xabethi	trace_proto_input	have — OE hæfeþ	compact	auto
 pgmc	*xábuka	*xábuka	xabuka	trace_stage	hawk — OE hafoc	compact:PGmc Final Z Deletion	auto
 pgmc	*xábukaz	*xábukaz	xabukaz	trace_proto_input	hawk — OE hafoc	compact	auto
 pgmc	*xággja	*xággja	xaggja	trace_stage	hedge — OE heġġ	compact:PGmc Final Z Deletion	auto
@@ -1211,9 +1292,9 @@ pgmc	*xágjaz	*xágjaz	xagjaz	lexical_protoform	hedge — OE heġġ	manifest	aut
 pgmc	*xágjaz	*xágjaz	xagjaz	trace_proto_input	hedge — OE heġġ	compact	auto
 pgmc	*xáglą	*xáglą	xagla	trace_proto_input	hail — OE hæġl	compact	auto
 pgmc	*xágô	*xágô	xago	trace_proto_input	haw — OE haga	compact	auto
-pgmc	*xáiθiz	*xáiθiz	xaiiz	trace_proto_input	heath — OE hǣþ	compact	auto
 pgmc	*xáilijaną	*xáilijaną	xailijana	trace_proto_input	heal — OE hǣlan	compact	auto
 pgmc	*xáimaz	*xáimaz	xaimaz	trace_proto_input	home — OE hām	compact	auto
+pgmc	*xáiθiz	*xáiθiz	xaithiz	trace_proto_input	heath — OE hǣþ	compact	auto
 pgmc	*xáldaną	*xáldaną	xaldana	lexical_protoform	hold — OE healdan	manifest	auto
 pgmc	*xáldaną	*xáldaną	xaldana	trace_proto_input	hold — OE healdan	compact	auto
 pgmc	*xállō	*xállō	xallo	trace_proto_input	hall — OE heall	compact	auto
@@ -1240,7 +1321,12 @@ pgmc	*xélmaz	*xélmaz	xelmaz	trace_proto_input	helm — OE helm	compact	auto
 pgmc	*xélpaną	*xélpaną	xelpana	lexical_protoform	help — OE helpan	manifest	auto
 pgmc	*xélpaną	*xélpaną	xelpana	trace_proto_input	help — OE helpan	compact	auto
 pgmc	*xélpō	*xélpō	xelpo	trace_proto_input	help — OE help	compact	auto
+pgmc	*xémenaz	*xémenaz	xemenaz	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:24	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+pgmc	*xémenaz	*xémenaz	xemenaz	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 pgmc	*xémenaz	*xémenaz	xemenaz	lexical_proto	heaven — OE heofon	manifest	auto
+pgmc	*xémonų	*xémonų	xemonu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+pgmc	*xémonų	*xémonų	xemonu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:44	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+pgmc	*xémonų	*xémonų	xemonu	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 pgmc	*xémonų	*xémonų	xemonu	lexical_protoform	heaven — OE heofon	manifest	auto
 pgmc	*xémonų	*xémonų	xemonu	trace_proto_input	heaven — OE heofon	compact	auto
 pgmc	*xéndjō	*xéndjō	xendjo	lexical_protoform	hind — OE hind	manifest	auto
@@ -1248,8 +1334,8 @@ pgmc	*xéndjō	*xéndjō	xendjo	trace_proto_input	hind — OE hind	compact	auto
 pgmc	*xér	*xér	xer	trace_stage	hearth — OE heorþ	compact:PGmc Final Z Deletion	auto
 pgmc	*xḗrą	*xḗrą	xera	lexical_protoform	hair — OE hǣr	manifest	auto
 pgmc	*xḗrą	*xḗrą	xera	trace_proto_input	hair — OE hǣr	compact	auto
-pgmc	*xérθaz	*xérθaz	xeraz	trace_proto_input	hearth — OE heorþ	compact	auto
 pgmc	*xérdō	*xérdō	xerdo	trace_proto_input	herd — OE heord	compact	auto
+pgmc	*xérθaz	*xérθaz	xerthaz	trace_proto_input	hearth — OE heorþ	compact	auto
 pgmc	*xértōn	*xértōn	xerton	trace_proto_input	heart — OE heorte	compact	auto
 pgmc	*xláðaną	*xláðaną	xladana	lexical_protoform	lade — OE hladan	manifest	auto
 pgmc	*xláðaną	*xláðaną	xladana	trace_proto_input	lade — OE hladan	compact	auto
@@ -1340,7 +1426,7 @@ pwgmc	*nḗdlō	*nḗdlō	nedlo	trace_stage	needle — OE nǣdl	compact:PWGmc De
 pwgmc	*ófn	*ófn	ofn	trace_stage	oven — OE ofn	compact:PWGmc Final Bare A Loss	auto
 pwgmc	*rāpą	*rāpą	rapa	trace_stage	rope — OE rāp	compact:PWGmc Ai Monophthongization	auto
 pwgmc	*rástā	*rástā	rasta	trace_stage	rest — OE ræste	compact:PWGmc Surviving Bimoric O Unrounding	auto
-pwgmc	*rēak	*rēak	reak	trace_stage	reek — OE rēac	compact:PWGmc Final Bare A Loss	auto
+pwgmc	*rēak	*rēak	reak	trace_stage	reek — OE *rēac	compact:PWGmc Final Bare A Loss	auto
 pwgmc	*rō	*rō	ro	trace_stage	rudder — OE rōþor	compact:PWGmc Final Bare A Loss	auto
 pwgmc	*rókk	*rókk	rokk	trace_stage	coat — OE rocc	compact:PWGmc Final Bare A Loss	auto
 pwgmc	*sáttjaną	*sáttjaną	sattjana	trace_stage	set — OE settan	compact:PWGmc J Gemination	auto
@@ -1429,7 +1515,7 @@ nwgmc	*gōs	*gōs	gos	trace_stage	goose — OE gōs	compact:NWGmc Nasal Spirant 
 nwgmc	*jǣrą	*jǣrą	jaera	trace_stage	year — OE ġēar	compact:NWGmc Long E Lowering	auto
 nwgmc	*jéugū	*jéugū	jeugu	trace_stage	youth — OE ġeoguþ	compact:NWGmc Nasal Spirant Loss	auto
 nwgmc	*jéugūn	*jéugūn	jeugun	trace_stage	youth — OE ġeoguþ	compact:NWGmc Nasal Spirant Lengthening	auto
-nwgmc	*knóbbô	*knóbbô	knobbo	trace_stage	knob — OE cnobba	compact:NWGmc U Lowering	auto
+nwgmc	*knóbbô	*knóbbô	knobbo	trace_stage	knob — OE *cnobba	compact:NWGmc U Lowering	auto
 nwgmc	*kórną	*kórną	korna	trace_stage	corn — OE corn	compact:NWGmc U Lowering	auto
 nwgmc	*króppaz	*króppaz	kroppaz	trace_stage	crop — OE cropp	compact:NWGmc U Lowering	auto
 nwgmc	*lǣtaną	*lǣtaną	laetana	trace_stage	let — OE lǣtan	compact:NWGmc Long E Lowering	auto
@@ -1775,6 +1861,8 @@ preoe	*græsą	*græsą	graesa	trace_stage	grass — OE græs	compact:Anglo Fris
 preoe	*grḯpan	*grḯpan	gripan	trace_stage	gripe — OE grīpan	compact:OE Heavy Syllable Nasal Apocope; compact:OE Weak Tail Reduction	auto
 preoe	*grḯpąn	*grḯpąn	gripan	trace_stage	gripe — OE grīpan	compact:OE Secondary Nasalization	auto
 preoe	*grúnd	*grúnd	grund	trace_stage	ground — OE grund	compact:OE High Vowel Apocope	auto
+preoe	*hebun	*hebun	hebun	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+preoe	*hebun	*hebun	hebun	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 preoe	*jǣr	*jǣr	jaer	trace_stage	year — OE ġēar	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*jēar	*jēar	jear	trace_stage	year — OE ġēar	compact:OE Ws Palatal Diphthongization	auto
 preoe	*jéogu	*jéogu	jeogu	trace_stage	youth — OE ġeoguþ	compact:OE Unstressed Long Vowel Shortening	auto
@@ -1797,7 +1885,7 @@ preoe	*knēow	*knēow	kneow	trace_stage	knee — OE cnēow	compact:OE Heavy Syll
 preoe	*knēową	*knēową	kneowa	trace_stage	knee — OE cnēow	compact:OE Ew Long Diphthong	auto
 preoe	*knéoxt	*knéoxt	kneoxt	trace_stage	knight — OE cniht	compact:OE Breaking	auto
 preoe	*knixt	*knixt	knixt	trace_stage	knight — OE cniht	compact:OE Ws Palatal Umlaut	auto
-preoe	*knóbba	*knóbba	knobba	trace_stage	knob — OE cnobba	compact:OE Unstressed Long Vowel Shortening	auto
+preoe	*knóbba	*knóbba	knobba	trace_stage	knob — OE *cnobba	compact:OE Unstressed Long Vowel Shortening	auto
 preoe	*kórn	*kórn	korn	trace_stage	corn — OE corn	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*kræft	*kræft	kraeft	trace_stage	craft — OE cræft	compact:Anglo Frisian Brightening	auto
 preoe	*kȳ	*kȳ	ky	trace_stage	cow — OE cȳ	compact:OE High Vowel Apocope	auto
@@ -1957,11 +2045,11 @@ preoe	*rǣdąn	*rǣdąn	raedan	trace_stage	read — OE rǣdan	compact:OE Seconda
 preoe	*ræstæ	*ræstæ	raestae	trace_stage	rest — OE ræste	compact:OE Unstressed Long Vowel Shortening	auto
 preoe	*ræstǣ	*ræstǣ	raestae	trace_stage	rest — OE ræste	compact:Anglo Frisian Brightening	auto
 preoe	*ræste	*ræste	raeste	trace_stage	rest — OE ræste	compact:OE Unstressed AE Merger	auto
-preoe	*ráeuka	*ráeuka	raeuka	trace_stage	reek — OE rēac	compact:OE Au Fronting	auto
+preoe	*ráeuka	*ráeuka	raeuka	trace_stage	reek — OE *rēac	compact:OE Au Fronting	auto
 preoe	*rāp	*rāp	rap	trace_stage	rope — OE rāp	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*ré	*ré	re	trace_stage	rain — OE reġn	compact:OE Velar Palatalization	auto
 preoe	*ré	*ré	re	trace_stage	rainbow — OE reġnboga	compact:OE Unstressed Long Vowel Shortening; compact:OE Velar Palatalization	auto
-preoe	*rēaka	*rēaka	reaka	trace_stage	reek — OE rēac	compact:OE Diphthong Leveling	auto
+preoe	*rēaka	*rēaka	reaka	trace_stage	reek — OE *rēac	compact:OE Diphthong Leveling	auto
 preoe	*régn	*régn	regn	trace_stage	rain — OE reġn	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*régnbogô	*régnbogô	regnbogo	trace_stage	rainbow — OE reġnboga	compact:OE Med Unstressed U Lowering	auto
 preoe	*régnbugô	*régnbugô	regnbugo	trace_stage	rainbow — OE reġnboga	compact:OE Strip Secondary Stress	auto
@@ -2068,11 +2156,16 @@ preoe	*spærrô	*spærrô	spaerro	trace_stage	spar — OE spearra	compact:Anglo 
 preoe	*spánnan	*spánnan	spannan	trace_stage	span — OE spannan	compact:OE Heavy Syllable Nasal Apocope; compact:OE Weak Tail Reduction	auto
 preoe	*spánnąn	*spánnąn	spannan	trace_stage	span — OE spannan	compact:OE Secondary Nasalization	auto
 preoe	*spánne	*spánne	spanne	trace_stage	span — OE spanne	compact:OE Unstressed Long Vowel Shortening	auto
+preoe	*sparai-	*sparai-	sparai	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+preoe	*spárē	*spárē	spare	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+preoe	*spárē	*spárē	spare	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*spareian	*spareian	spareian	trace_stage	spare — OE sparian	compact:OE Intervocalic J Vocalization	auto
 preoe	*sparejan	*sparejan	sparejan	trace_stage	spare — OE sparian	compact:OE Weak Tail Reduction	auto
 preoe	*sparejąn	*sparejąn	sparejan	trace_stage	spare — OE sparian	compact:OE Unstressed Long Vowel Shortening	auto
 preoe	*sparējąn	*sparējąn	sparejan	trace_stage	spare — OE sparian	compact:OE I Umlaut	auto
+preoe	*spárēθi	*spárēθi	sparethi	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*sparian	*sparian	sparian	trace_stage	spare — OE sparian	compact:OE Unstressed EI Contraction	auto
+preoe	*sparja-	*sparja-	sparja	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*sparōjan	*sparōjan	sparojan	trace_stage	spare — OE sparian	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*sparōjąn	*sparōjąn	sparojan	trace_stage	spare — OE sparian	compact:OE Secondary Nasalization	auto
 preoe	*sparōjaną	*sparōjaną	sparojana	trace_stage	spare — OE sparian	compact:OE A Restoration	auto
@@ -2110,21 +2203,21 @@ preoe	*stræ	*stræ	strae	trace_stage	stretch — OE streċċan	compact:OE Velar
 preoe	*strækkijan	*strækkijan	straekkijan	trace_stage	stretch — OE streċċan	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*strækkijąn	*strækkijąn	straekkijan	trace_stage	stretch — OE streċċan	compact:OE Secondary Nasalization	auto
 preoe	*strækkijaną	*strækkijaną	straekkijana	trace_stage	stretch — OE streċċan	compact:Anglo Frisian Brightening	auto
-preoe	*stráeujaną	*stráeujaną	straeujana	trace_stage	strew — OE strīeġan	compact:OE Au Fronting	auto
+preoe	*stráeujaną	*stráeujaną	straeujana	trace_stage	strew — OE *strīeġan	compact:OE Au Fronting	auto
 preoe	*stráeuma	*stráeuma	straeuma	trace_stage	stream — OE strēam	compact:OE Au Fronting	auto
 preoe	*strán	*strán	stran	trace_stage	string — OE strenġ	compact:OE Velar Palatalization	auto
-preoe	*stráujaną	*stráujaną	straujana	trace_stage	strew — OE strīeġan	compact:OE Awj Glide Formation	auto
+preoe	*stráujaną	*stráujaną	straujana	trace_stage	strew — OE *strīeġan	compact:OE Awj Glide Formation	auto
 preoe	*stre	*stre	stre	trace_stage	stretch — OE streċċan	compact:OE I Umlaut; compact:OE J Loss After Heavy; compact:OE Weak Tail Reduction	auto
-preoe	*strēajan	*strēajan	streajan	trace_stage	strew — OE strīeġan	compact:OE Heavy Syllable Nasal Apocope	auto
-preoe	*strēająn	*strēająn	streajan	trace_stage	strew — OE strīeġan	compact:OE Secondary Nasalization	auto
-preoe	*strēajaną	*strēajaną	streajana	trace_stage	strew — OE strīeġan	compact:OE Diphthong Leveling	auto
+preoe	*strēajan	*strēajan	streajan	trace_stage	strew — OE *strīeġan	compact:OE Heavy Syllable Nasal Apocope	auto
+preoe	*strēająn	*strēająn	streajan	trace_stage	strew — OE *strīeġan	compact:OE Secondary Nasalization	auto
+preoe	*strēajaną	*strēajaną	streajana	trace_stage	strew — OE *strīeġan	compact:OE Diphthong Leveling	auto
 preoe	*strēama	*strēama	streama	trace_stage	stream — OE strēam	compact:OE Diphthong Leveling	auto
 preoe	*strḗaw	*strḗaw	streaw	trace_stage	straw — OE strēaw	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*strḗawą	*strḗawą	streawa	trace_stage	straw — OE strēaw	compact:OE Aw Long Diphthong	auto
 preoe	*stren	*stren	stren	trace_stage	string — OE strenġ	compact:OE High Vowel Apocope; compact:OE I Umlaut	auto
-preoe	*strīe	*strīe	strie	trace_stage	strew — OE strīeġan	compact:OE J Strengthening After Front Diphthong	auto
-preoe	*strīejan	*strīejan	striejan	trace_stage	strew — OE strīeġan	compact:OE Weak Tail Reduction	auto
-preoe	*strīejąn	*strīejąn	striejan	trace_stage	strew — OE strīeġan	compact:OE I Umlaut	auto
+preoe	*strīe	*strīe	strie	trace_stage	strew — OE *strīeġan	compact:OE J Strengthening After Front Diphthong	auto
+preoe	*strīejan	*strīejan	striejan	trace_stage	strew — OE *strīeġan	compact:OE Weak Tail Reduction	auto
+preoe	*strīejąn	*strīejąn	striejan	trace_stage	strew — OE *strīeġan	compact:OE I Umlaut	auto
 preoe	*stúrtijan	*stúrtijan	sturtijan	trace_stage	start — OE styrtan	compact:OE Heavy Syllable Nasal Apocope	auto
 preoe	*stúrtijąn	*stúrtijąn	sturtijan	trace_stage	start — OE styrtan	compact:OE Secondary Nasalization	auto
 preoe	*styrtan	*styrtan	styrtan	trace_stage	start — OE styrtan	compact:OE J Loss After Heavy	auto
@@ -2345,11 +2438,22 @@ preoe	*xwḯnan	*xwḯnan	xwinan	trace_stage	whine — OE hwīnan	compact:OE Hea
 preoe	*xwḯnąn	*xwḯnąn	xwinan	trace_stage	whine — OE hwīnan	compact:OE Secondary Nasalization	auto
 on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
 on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	override	override
+on	fugl	fugl	fugl	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	override	override
 on	fylgja	fylgja	fylgja	override	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22	override	override
 on	gangr	gangr	gangr	override	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	override	override
 on	hliþó	hliþó	hlitho	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21	override	override
+ohg	backan	backan	backan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	override	override
+ohg	bahhan	bahhan	bahhan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	override	override
 ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	override	override
+ohg	fogal	fogal	fogal	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	override	override
+ohg	scouwōn	scouwōn	scouwon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	override	override
+ohg	tura	tura	tura	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	override	override
 ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
+ofris	dore	dore	dore	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	override	override
+ofris	skawia	skawia	skawia	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	override	override
 goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	override	override
 goth	faurhtei	faurhtei	faurhtei	override	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22	override	override
 goth	stibna	stibna	stibna	override	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23	override	override
+os	be-thia	be-thia	bethia	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	override	override
+os	briost	briost	briost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	override	override
+os	skawōn	skawōn	skawon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	override	override

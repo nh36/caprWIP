@@ -38,8 +38,8 @@ bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section
 bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 
 python3 Germanic/tools/build_index_verborum.py ${strict_flag}
-python3 Germanic/tools/check_index_verborum.py
 python3 "${script_dir}/build_capr_book_draft.py"
+python3 Germanic/tools/check_index_verborum.py
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "
@@ -62,6 +62,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --lua-filter=Germanic/tools/index_verborum_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/assembly/book_draft_pdf_header.tex \
+      --include-in-header=Germanic/docs/assembly/book_draft_index_registry.tex \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${book_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
       -o ${combined_tex#${repo_root}/}

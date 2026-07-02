@@ -13,9 +13,17 @@ INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
+LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
-LANGUAGE_ORDER = ["oe", "pgmc", "pwgmc", "nwgmc", "preoe", "on", "ohg", "ofris", "goth"]
+
+
+def load_language_order() -> list[str]:
+    with LANGUAGE_REGISTRY_PATH.open(encoding="utf-8") as handle:
+        return [row["code"] for row in csv.DictReader(handle, delimiter="\t") if (row.get("active") or "").strip() == "1"]
+
+
+LANGUAGE_ORDER = load_language_order()
 
 
 def latex_escape(value: str) -> str:
@@ -26,8 +34,12 @@ def index_command(language: str, sort_key: str, display: str) -> str:
     return rf"\index[{language}]{{{latex_escape(sort_key)}@{latex_escape(display)}}}"
 
 
-def heading_ref(lexical_item: str, counterpart: str) -> str:
-    return f"{lexical_item} — OE {counterpart}"
+def oe_target_display(counterpart: str, derivation_class: str) -> str:
+    return f"*{counterpart}" if derivation_class == "reconstructed_oe" else counterpart
+
+
+def heading_ref(lexical_item: str, counterpart: str, derivation_class: str = "") -> str:
+    return f"{lexical_item} — OE {oe_target_display(counterpart, derivation_class)}"
 
 
 def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, list[str]]], list[str]]:
@@ -38,7 +50,7 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
     with MANIFEST_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:
-            model_entry_heading_map[row["model_entry_path"]] = heading_ref(row["lexical_item"], row["counterpart"])
+            model_entry_heading_map[row["model_entry_path"]] = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
     with FORMS_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:

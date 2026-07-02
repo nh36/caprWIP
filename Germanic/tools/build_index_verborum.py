@@ -14,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 BOOK_DIR = REPO_ROOT / "Germanic/docs/book"
 ASSEMBLY_DIR = REPO_ROOT / "Germanic/docs/assembly"
 INTRO_PATH = ASSEMBLY_DIR / "capr_book_intro_alpha_01.md"
+README_PATH = BOOK_DIR / "index_verborum_README.md"
 MANIFEST_PATH = ASSEMBLY_DIR / "manifest_all_by_class.tsv"
 COMPACT_PATH = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
@@ -22,6 +23,8 @@ FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 UNRESOLVED_BASELINE_PATH = BOOK_DIR / "index_verborum_unresolved_baseline.tsv"
+LANGUAGE_REGISTRY_PATH = BOOK_DIR / "index_verborum_languages.tsv"
+INDEX_HEADER_PATH = ASSEMBLY_DIR / "book_draft_index_registry.tex"
 
 PRODUCTION_FIELDS = [
     "language",
@@ -43,18 +46,21 @@ OVERRIDE_FIELDS = [
     "source_ref",
     "note",
 ]
-LANGUAGE_ORDER = ["oe", "pgmc", "pwgmc", "nwgmc", "preoe", "on", "ohg", "ofris", "goth"]
-LANGUAGE_TITLES = {
-    "oe": "Old English forms",
-    "pgmc": "Proto-Germanic forms",
-    "pwgmc": "Proto-West Germanic forms",
-    "nwgmc": "Proto-Northwest Germanic forms",
-    "preoe": "Pre-Old-English and model-internal forms",
-    "on": "Old Norse forms",
-    "ohg": "Old High German forms",
-    "ofris": "Old Frisian forms",
-    "goth": "Gothic forms",
-}
+
+
+def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str, str], dict[str, str]]:
+    with LANGUAGE_REGISTRY_PATH.open(encoding="utf-8") as handle:
+        rows = [
+            {key: (value or "").strip() for key, value in row.items()}
+            for row in csv.DictReader(handle, delimiter="\t")
+        ]
+    order = [row["code"] for row in rows]
+    titles = {row["code"]: row["title"] for row in rows}
+    columns = {row["code"]: row["columns"] for row in rows}
+    return rows, order, titles, columns
+
+
+LANGUAGE_REGISTRY, LANGUAGE_ORDER, LANGUAGE_TITLES, LANGUAGE_COLUMNS = load_language_registry()
 FORM_RE = re.compile(r"[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./*()-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
 EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
@@ -104,7 +110,82 @@ TRANSLIT_MAP = {
     "ú": "u",
     "ḗ": "e",
     "ḯ": "i",
+    "ṛ": "r",
+    "ṝ": "r",
+    "ḷ": "l",
+    "ḹ": "l",
+    "ṃ": "m",
+    "ṁ": "m",
+    "ḥ": "h",
+    "ś": "s",
+    "ṣ": "s",
+    "ñ": "n",
+    "ṇ": "n",
+    "ṭ": "t",
+    "ḍ": "d",
+    "α": "a",
+    "β": "b",
+    "γ": "g",
+    "δ": "d",
+    "ε": "e",
+    "ζ": "z",
+    "η": "e",
+    "θ": "th",
+    "ι": "i",
+    "κ": "k",
+    "λ": "l",
+    "μ": "m",
+    "ν": "n",
+    "ξ": "x",
+    "ο": "o",
+    "π": "p",
+    "ρ": "r",
+    "σ": "s",
+    "ς": "s",
+    "τ": "t",
+    "υ": "u",
+    "φ": "ph",
+    "χ": "ch",
+    "ψ": "ps",
+    "ω": "o",
 }
+
+
+def write_index_registry_header(production_rows: list[ProductionOccurrence]) -> None:
+    languages_in_use = {row.language for row in production_rows}
+    lines = []
+    for row in LANGUAGE_REGISTRY:
+        if row["code"] not in languages_in_use:
+            continue
+        lines.append(
+            rf"\makeindex[name={row['code']},title={{{row['title']}}},columns={row['columns']}]"
+        )
+    INDEX_HEADER_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+README_LANG_BEGIN = "<!-- BEGIN AUTO-LANGUAGE-LIST -->"
+README_LANG_END = "<!-- END AUTO-LANGUAGE-LIST -->"
+
+
+def rewrite_readme_language_block() -> None:
+    if not README_PATH.exists():
+        return
+    text = README_PATH.read_text(encoding="utf-8")
+    if README_LANG_BEGIN not in text or README_LANG_END not in text:
+        return
+    body_lines = []
+    for row in LANGUAGE_REGISTRY:
+        if row.get("active") != "1":
+            continue
+        body_lines.append(f"- `{row['code']}` — {row['title']}")
+    replacement = README_LANG_BEGIN + "\n" + "\n".join(body_lines) + "\n" + README_LANG_END
+    text = re.sub(
+        re.escape(README_LANG_BEGIN) + r".*?" + re.escape(README_LANG_END),
+        replacement,
+        text,
+        flags=re.S,
+    )
+    README_PATH.write_text(text, encoding="utf-8")
 
 
 @dataclass
@@ -135,18 +216,18 @@ class CandidateOccurrence:
 
 def transliterate_sort_key(text: str) -> str:
     text = text.lstrip("*").casefold()
-    replaced = "".join(TRANSLIT_MAP.get(ch, ch) for ch in text)
-    normalized = unicodedata.normalize("NFKD", replaced)
+    normalized = unicodedata.normalize("NFKD", text)
     stripped = "".join(ch for ch in normalized if not unicodedata.combining(ch))
-    return re.sub(r"[^a-z0-9]+", "", stripped)
+    replaced = "".join(TRANSLIT_MAP.get(ch, ch) for ch in stripped)
+    return re.sub(r"[^a-z0-9]+", "", replaced)
 
 
 def run_sort_key_assertions() -> None:
-    assert transliterate_sort_key("þanc") == "thanc"
-    assert transliterate_sort_key("bæþ") == "baeth"
-    assert transliterate_sort_key("bǣr") == "baer"
-    assert transliterate_sort_key("ġiefan") == "giefan"
-    assert transliterate_sort_key("sċuldrum") == "sculdrum"
+    assert transliterate_sort_key("þanc") == "thanc", transliterate_sort_key("þanc")
+    assert transliterate_sort_key("bæþ") == "baeth", transliterate_sort_key("bæþ")
+    assert transliterate_sort_key("bǣr") == "baer", transliterate_sort_key("bǣr")
+    assert transliterate_sort_key("ġiefan") == "giefan", transliterate_sort_key("ġiefan")
+    assert transliterate_sort_key("sċuldrum") == "sculdrum", transliterate_sort_key("sċuldrum")
 
 
 def strip_markup(text: str) -> str:
@@ -158,8 +239,12 @@ def strip_markup(text: str) -> str:
     return value.strip("`.,;:!?()[]{}“”\"' ")
 
 
-def heading_ref(lexical_item: str, counterpart: str) -> str:
-    return f"{lexical_item} — OE {counterpart}"
+def oe_target_display(counterpart: str, derivation_class: str) -> str:
+    return f"*{counterpart}" if derivation_class == "reconstructed_oe" else counterpart
+
+
+def heading_ref(lexical_item: str, counterpart: str, derivation_class: str = "") -> str:
+    return f"{lexical_item} — OE {oe_target_display(counterpart, derivation_class)}"
 
 
 def looks_formlike(text: str) -> bool:
@@ -189,12 +274,34 @@ def stage_to_language(label: str, form: str) -> str:
         return "nwgmc"
     if compact.startswith(("Old Norse", "ON")):
         return "on"
+    if compact.startswith(("Old Saxon", "OS")):
+        return "os"
     if compact.startswith(("Old High German", "OHG")):
         return "ohg"
     if compact.startswith(("Old Frisian", "OFri")):
         return "ofris"
     if compact.startswith(("Gothic", "Goth")):
         return "goth"
+    if compact.startswith(("Old Dutch",)):
+        return "odutch"
+    if compact.startswith(("Middle Dutch",)):
+        return "mdutch"
+    if compact.startswith(("Dutch",)):
+        return "dutch"
+    if compact.startswith(("German",)):
+        return "german"
+    if compact.startswith(("Latin", "Lat.")):
+        return "lat"
+    if compact.startswith(("Greek", "Gk.")):
+        return "greek"
+    if compact.startswith(("Sanskrit", "Skt.")):
+        return "skt"
+    if compact.startswith(("Middle English",)):
+        return "me"
+    if compact.startswith(("Modern English",)):
+        return "modeng"
+    if compact.startswith(("Old Irish",)):
+        return "oirish"
     return "preoe" if form.startswith("*") else "oe"
 
 
@@ -465,24 +572,32 @@ def override_matches(override: dict[str, str], *, form: str, source_scope: str =
 def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ignore_overrides: list[dict[str, str]] | None = None) -> list[ProductionOccurrence]:
     manifest_rows = parse_manifest_rows()
     manifest_by_title = {
-        (row["lexical_item"], row["counterpart"], row["protoform"]): heading_ref(row["lexical_item"], row["counterpart"])
+        (row["lexical_item"], row["counterpart"], row["protoform"]): row
         for row in manifest_rows
     }
     store: dict[tuple[str, str, str, str, str], ProductionOccurrence] = {}
     for row in manifest_rows:
-        ref = heading_ref(row["lexical_item"], row["counterpart"])
-        add_production(store, language="oe", form=row["counterpart"], source_scope="lexical_heading", source_ref=ref, origin="manifest")
+        ref = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
+        oe_display = oe_target_display(row["counterpart"], row["derivation_class"])
+        add_production(store, language="oe", form=row["counterpart"], display=oe_display, source_scope="lexical_heading", source_ref=ref, origin="manifest")
         add_production(store, language="pgmc", form=row["protoform"], source_scope="lexical_protoform", source_ref=ref, origin="manifest")
         if row["proto"] and row["proto"] != row["protoform"]:
             add_production(store, language="pgmc", form=row["proto"], source_scope="lexical_proto", source_ref=ref, origin="manifest")
 
     for entry in parse_compact_entries():
-        ref = manifest_by_title.get((entry["title"], entry["expected"], entry["proto"])) or heading_ref(str(entry["title"]), str(entry["expected"]))
+        manifest_row = manifest_by_title.get((entry["title"], entry["expected"], entry["proto"]))
+        if manifest_row is not None:
+            ref = heading_ref(manifest_row["lexical_item"], manifest_row["counterpart"], manifest_row["derivation_class"])
+            oe_display = oe_target_display(manifest_row["counterpart"], manifest_row["derivation_class"])
+        else:
+            ref = heading_ref(str(entry["title"]), str(entry["expected"]))
+            oe_display = str(entry["expected"])
         if entry["proto_input"]:
             add_production(store, language="pgmc", form=str(entry["proto_input"]), source_scope="trace_proto_input", source_ref=ref, origin="compact")
         for form in entry["outputs"]:
             lang = "preoe" if form.startswith("*") else "oe"
-            add_production(store, language=lang, form=form, source_scope="trace_output", source_ref=ref, origin="compact")
+            display = oe_display if manifest_row is not None and lang == "oe" else None
+            add_production(store, language=lang, form=form, display=display, source_scope="trace_output", source_ref=ref, origin="compact")
         for label, form in entry["stages"]:
             add_production(
                 store,
@@ -578,9 +693,20 @@ def guess_unresolved_category(candidate: CandidateOccurrence) -> str:
     form = candidate.form
     label_map = [
         (("Old Norse", "ON "), "likely_on"),
+        (("Old Saxon", "OS "), "likely_os"),
         (("Old High German", "OHG "), "likely_ohg"),
         (("Old Frisian", "OFris", "OFri "), "likely_ofris"),
         (("Gothic", "Goth."), "likely_goth"),
+        (("Old Dutch",), "likely_odutch"),
+        (("Middle Dutch",), "likely_mdutch"),
+        (("Dutch",), "likely_dutch"),
+        (("German",), "likely_german"),
+        (("Latin", "Lat."), "likely_lat"),
+        (("Greek", "Gk."), "likely_greek"),
+        (("Sanskrit", "Skt."), "likely_skt"),
+        (("Middle English",), "likely_me"),
+        (("Modern English",), "likely_modeng"),
+        (("Old Irish",), "likely_oirish"),
         (("PGmc", "Proto-Germanic"), "likely_pgmc"),
         (("PWGmc", "Proto-West Germanic", "Proto-West-Germanic"), "likely_pwgmc"),
         (("NWGmc", "Proto-Northwest Germanic", "Proto-Northwest-Germanic"), "likely_nwgmc"),
@@ -607,7 +733,7 @@ def build_audit_rows(
     candidates: list[CandidateOccurrence] | None = None,
     ignore_overrides: list[dict[str, str]] | None = None,
 ) -> dict[str, list[dict[str, str]]]:
-    production_forms = {row.form for row in production_rows}
+    production_occurrences = {(row.form, row.source_ref) for row in production_rows}
     if ignore_overrides is None:
         _, ignore_overrides = load_overrides()
     buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -621,7 +747,7 @@ def build_audit_rows(
         if (candidate.form, candidate.source_ref) in seen:
             continue
         seen.add((candidate.form, candidate.source_ref))
-        if candidate.form in production_forms:
+        if (candidate.form, candidate.source_ref) in production_occurrences:
             continue
         category = candidate_category(candidate.form)
         if any(override_matches(override, form=candidate.form, source_ref=candidate.source_ref) for override in ignore_overrides):
@@ -797,9 +923,20 @@ def write_audit(
     render_bucket("Likely Proto-Northwest Germanic forms", guess_groups.get("likely_nwgmc", []))
     render_bucket("Likely pre-Old-English or model-internal forms", guess_groups.get("likely_preoe", []))
     render_bucket("Likely Old Norse forms", guess_groups.get("likely_on", []))
+    render_bucket("Likely Old Saxon forms", guess_groups.get("likely_os", []))
     render_bucket("Likely Old High German forms", guess_groups.get("likely_ohg", []))
     render_bucket("Likely Old Frisian forms", guess_groups.get("likely_ofris", []))
     render_bucket("Likely Gothic forms", guess_groups.get("likely_goth", []))
+    render_bucket("Likely Old Dutch forms", guess_groups.get("likely_odutch", []))
+    render_bucket("Likely Middle Dutch forms", guess_groups.get("likely_mdutch", []))
+    render_bucket("Likely Dutch forms", guess_groups.get("likely_dutch", []))
+    render_bucket("Likely German forms", guess_groups.get("likely_german", []))
+    render_bucket("Likely Latin forms", guess_groups.get("likely_lat", []))
+    render_bucket("Likely Greek forms", guess_groups.get("likely_greek", []))
+    render_bucket("Likely Sanskrit forms", guess_groups.get("likely_skt", []))
+    render_bucket("Likely Middle English forms", guess_groups.get("likely_me", []))
+    render_bucket("Likely Modern English linguistic forms", guess_groups.get("likely_modeng", []))
+    render_bucket("Likely Old Irish forms", guess_groups.get("likely_oirish", []))
     render_bucket("Likely ordinary-language false positives", guess_groups.get("likely_false_positive", []))
     render_bucket("Ignored fragments or sequences", buckets.get("ignored_fragment", []))
     render_bucket("Ignored by override", buckets.get("ignored_by_override", []))
@@ -858,7 +995,9 @@ def main() -> None:
     run_sort_key_assertions()
     BOOK_DIR.mkdir(parents=True, exist_ok=True)
     ensure_override_file()
+    rewrite_readme_language_block()
     production_rows = build_production_rows()
+    write_index_registry_header(production_rows)
     write_forms(production_rows)
     audit_buckets = build_audit_rows(production_rows)
     baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())

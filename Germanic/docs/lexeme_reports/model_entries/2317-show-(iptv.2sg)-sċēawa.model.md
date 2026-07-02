@@ -39,6 +39,6 @@ The comparison below is manual.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | `*skáwōjaną` | manual probe output `sċēawian` | scēawian | ordinary dictionary headword of the verb, but not the selected finite cell |
-| selected imperative singular | `*skáwô` | manual probe output `sċēawa` | scēawa / normalized sċēawa | exact match between the chosen input and the selected target |
-| present third singular companion | `*skáwōθi` | manual probe output `sċēawaþ` | sċēawaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [`*skáwōjaną`]{.iv lang=pgmc sort=skawojana} | manual probe output [`sċēawian`]{.iv lang=oe sort=sceawian} | [`scēawian`]{.iv lang=oe sort=sceawian} | ordinary dictionary headword of the verb, but not the selected finite cell |
+| selected imperative singular | [`*skáwô`]{.iv lang=pgmc sort=skawo} | manual probe output [`sċēawa`]{.iv lang=oe sort=sceawa} | [`scēawa`]{.iv lang=oe sort=sceawa} / normalized [`sċēawa`]{.iv lang=oe sort=sceawa} | exact match between the chosen input and the selected target |
+| present third singular companion | [`*skáwōθi`]{.iv lang=pgmc sort=skawothi} | manual probe output [`sċēawaþ`]{.iv lang=oe sort=sceawath} | [`sċēawaþ`]{.iv lang=oe sort=sceawath} | useful family control, but not the target of this entry |

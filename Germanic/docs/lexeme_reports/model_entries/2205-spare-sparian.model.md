@@ -18,33 +18,33 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen keeps the inherited verb under class-III `*sparēn-`
-[@Kroonen2013, 465]. Orel similarly preserves `*sparēnan` [@Orel2003, 362]. Ringe
-and Taylor, however, reconstruct `*sparai- ~ *sparja-` for the English branch
+Kroonen keeps the inherited verb under class-III [`*sparēn-`]{.iv lang=pgmc sort=sparen}
+[@Kroonen2013, 465]. Orel similarly preserves [`*sparēnan`]{.iv lang=pgmc sort=sparenan} [@Orel2003, 362]. Ringe
+and Taylor, however, reconstruct [`*sparai-`]{.iv lang=preoe sort=sparai} ~ [`*sparja-`]{.iv lang=preoe sort=sparja} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
-The selected input `*spárōjaną` therefore represents the refashioned class-II
-formation behind Old English `sparian`, while the citation reconstruction
-`*sparēną` remains the inherited comparative headword.
+The selected input [`*spárōjaną`]{.iv lang=pgmc sort=sparojana} therefore represents the refashioned class-II
+formation behind Old English [`sparian`]{.iv lang=oe sort=sparian}, while the citation reconstruction
+[`*sparēną`]{.iv lang=pgmc sort=sparena} remains the inherited comparative headword.
 
 ### Old English evidence
 
-Campbell says that `sparian` does not show the ordinary class-III
-characteristics, but the Ritual forms, normalized here as `spæria`, `spær`, and
-`spærede`, together with Vespasian Psalter `spearad`, point to primitive Old
+Campbell says that [`sparian`]{.iv lang=oe sort=sparian} does not show the ordinary class-III
+characteristics, but the Ritual forms, normalized here as [`spæria`]{.iv lang=oe sort=spaeria}, [`spær`]{.iv lang=oe sort=spaer}, and
+[`spærede`]{.iv lang=oe sort=spaerede}, together with Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad}, point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
-Northumbrian `spæria`, `spærede` beside common Old English `sparian` and
-Vespasian Psalter `spearad` [@SieversBrunner1965, §364 Anm. 11]. The citation
-form treated here is `sparian`; the Anglian forms are relics of the older
+Northumbrian [`spæria`]{.iv lang=oe sort=spaeria}, [`spærede`]{.iv lang=oe sort=spaerede} beside common Old English [`sparian`]{.iv lang=oe sort=sparian} and
+Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad} [@SieversBrunner1965, §364 Anm. 11]. The citation
+form treated here is [`sparian`]{.iv lang=oe sort=sparian}; the Anglian forms are relics of the older
 formation, not alternative headwords of equal status.
 
 ### Development to Old English
 
-Once the class-II formation `*spárōjaną` is chosen, the remaining development is
+Once the class-II formation [`*spárōjaną`]{.iv lang=pgmc sort=sparojana} is chosen, the remaining development is
 regular. The documented trace shows brightening, restoration of `a` before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
-reduction, and contraction to `sparian`. By contrast, Brunner's rule against
-further apocope of final `-e` explains why Ritual `spær` cannot be the regular
-continuation of inherited `*spárē` [@SieversBrunner1965, §150].
+reduction, and contraction to [`sparian`]{.iv lang=oe sort=sparian}. By contrast, Brunner's rule against
+further apocope of final `-e` explains why Ritual [`spær`]{.iv lang=oe sort=spaer} cannot be the regular
+continuation of inherited [`*spárē`]{.iv lang=preoe sort=spare} [@SieversBrunner1965, §150].
 
 ### Formation comparison
 
@@ -53,7 +53,7 @@ with the refashioned class-II one that yields the citation verb.
 
 | Formation / comparison | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| inherited class-III infinitive | *spárēną | manual comparison / probe output: `sparen` | sparian | wrong class and wrong ending for the citation verb |
-| inherited class-III imperative singular | *spárē | manual comparison / probe output: `spære` | Ritual `spær` | loss of final `-e` is not regular, so the relic form cannot control the entry |
-| inherited class-III finite present | *spárēθi | manual comparison / probe output: `spæreþ` | `spearad` | attested form is mixed, not a direct continuation of the inherited cell |
-| selected class-II formation | *spárōjaną | documented trace output: `sparian` | sparian | exact match between selected input and Old English citation form |
+| inherited class-III infinitive | [`*spárēną`]{.iv lang=pgmc sort=sparena} | manual comparison / probe output: [`sparen`]{.iv lang=oe sort=sparen} | [`sparian`]{.iv lang=oe sort=sparian} | wrong class and wrong ending for the citation verb |
+| inherited class-III imperative singular | [`*spárē`]{.iv lang=preoe sort=spare} | manual comparison / probe output: [`spære`]{.iv lang=oe sort=spaere} | Ritual [`spær`]{.iv lang=oe sort=spaer} | loss of final `-e` is not regular, so the relic form cannot control the entry |
+| inherited class-III finite present | [`*spárēθi`]{.iv lang=preoe sort=sparethi} | manual comparison / probe output: [`spæreþ`]{.iv lang=oe sort=spaereth} | [`spearad`]{.iv lang=oe sort=spearad} | attested form is mixed, not a direct continuation of the inherited cell |
+| selected class-II formation | [`*spárōjaną`]{.iv lang=pgmc sort=sparojana} | documented trace output: [`sparian`]{.iv lang=oe sort=sparian} | [`sparian`]{.iv lang=oe sort=sparian} | exact match between selected input and Old English citation form |
