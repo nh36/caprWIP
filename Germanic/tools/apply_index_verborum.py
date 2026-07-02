@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Legacy helper superseded by index_verborum_filter.lua in the combined book build."""
 from __future__ import annotations
 
 import argparse

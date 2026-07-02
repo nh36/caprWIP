@@ -1,15 +1,50 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import csv
 import re
+from collections import Counter, defaultdict
 from pathlib import Path
+
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[2]
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
+FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
+LANGUAGE_ORDER = ["oe", "pgmc", "pwgmc", "nwgmc", "preoe", "on", "ohg", "ofris", "goth"]
+
+
+def latex_escape(value: str) -> str:
+    return value.replace("@", r"\@").replace("!", r"\!").replace("|", r"\|")
+
+
+def index_command(language: str, sort_key: str, display: str) -> str:
+    return rf"\index[{language}]{{{latex_escape(sort_key)}@{latex_escape(display)}}}"
+
+
+def load_production_rows() -> tuple[dict[str, list[str]], list[str]]:
+    commands_by_ref: dict[str, list[str]] = defaultdict(list)
+    counts = Counter()
+    with FORMS_PATH.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        for row in reader:
+            language = (row.get("language") or "").strip()
+            if not language:
+                continue
+            counts[language] += 1
+            if row.get("source_scope") == "explicit_tag":
+                continue
+            ref = (row.get("source_ref") or "").strip()
+            if not ref:
+                continue
+            command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip())
+            if command not in commands_by_ref[ref]:
+                commands_by_ref[ref].append(command)
+    nonempty = [language for language in LANGUAGE_ORDER if counts.get(language)]
+    return commands_by_ref, nonempty
 
 
 def strip_title_block(text: str) -> str:
@@ -31,8 +66,6 @@ def transform_chronology(text: str) -> str:
     for line in strip_title_block(strip_references(text)).splitlines():
         if line == "## Introduction":
             out.append("## Scope and orientation")
-        elif line == "## Numbering note":
-            out.append("## Numbering note")
         elif line.startswith("# "):
             out.append("## " + line[2:])
         elif line.startswith("## "):
@@ -42,7 +75,7 @@ def transform_chronology(text: str) -> str:
     return "\n".join(out).rstrip()
 
 
-def transform_lexical(text: str) -> str:
+def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
     out: list[str] = []
     lines = strip_title_block(text).splitlines()
     if lines and lines[0].startswith("_Alpha 01"):
@@ -51,16 +84,23 @@ def transform_lexical(text: str) -> str:
             lines = lines[1:]
     for line in lines:
         if line.startswith("## Part "):
-            out.append(re.sub(r"^## Part [IVX]+\.\s+", "## ", line))
-        else:
-            out.append(line)
+            line = re.sub(r"^## Part [IVX]+\.\s+", "## ", line)
+        out.append(line)
+        if line.startswith("### "):
+            ref = line[4:].strip()
+            commands = commands_by_ref.get(ref, [])
+            if commands:
+                out.append("")
+                out.extend(commands)
     return "\n".join(out).rstrip()
 
 
 def build_book_markdown() -> str:
+    commands_by_ref, nonempty_languages = load_production_rows()
     intro = INTRO_PATH.read_text(encoding="utf-8").rstrip()
     chronology = transform_chronology(CHRONOLOGY_PATH.read_text(encoding="utf-8"))
-    lexical = transform_lexical(LEXICAL_PATH.read_text(encoding="utf-8"))
+    lexical = transform_lexical(LEXICAL_PATH.read_text(encoding="utf-8"), commands_by_ref)
+    index_parts = [rf"\printindex[{language}]" for language in nonempty_languages]
     parts = [
         r"\mainmatter",
         intro,
@@ -78,15 +118,7 @@ def build_book_markdown() -> str:
         "",
         r"\part*{Index verborum}",
         r"\addcontentsline{toc}{part}{Index verborum}",
-        r"\printindex[oe]",
-        r"\printindex[pgmc]",
-        r"\printindex[pwgmc]",
-        r"\printindex[nwgmc]",
-        r"\printindex[preoe]",
-        r"\printindex[on]",
-        r"\printindex[ohg]",
-        r"\printindex[ofris]",
-        r"\printindex[goth]",
+        *index_parts,
     ]
     return "\n\n".join(parts) + "\n"
 

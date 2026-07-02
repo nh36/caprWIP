@@ -11,12 +11,16 @@ tlmgr_repo="${ASSEMBLY_DOCKER_TLMGR_REPOSITORY:-https://ftp.fau.de/ctan/systems/
 intro_md="${script_dir}/capr_book_intro_alpha_01.md"
 intro_pdf="${script_dir}/capr_book_intro_alpha_01.pdf"
 combined_md="${script_dir}/capr_book_draft_alpha_01.md"
-indexed_md="${script_dir}/capr_book_draft_alpha_01.indexed.md"
 combined_tex="${script_dir}/capr_book_draft_alpha_01.tex"
 combined_pdf="${script_dir}/capr_book_draft_alpha_01.pdf"
 intro_metadata="${script_dir}/full_volume_metadata.yaml"
 book_metadata="${script_dir}/book_draft_metadata.yaml"
 refs_bib="${repo_root}/docs/refs.bib"
+strict_flag=""
+
+if [[ "${INDEX_VERBORUM_STRICT:-0}" == "1" ]]; then
+  strict_flag="--strict"
+fi
 
 cd "${repo_root}"
 
@@ -33,9 +37,8 @@ fi
 bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh
 bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 
-python3 Germanic/tools/build_index_verborum.py
+python3 Germanic/tools/build_index_verborum.py ${strict_flag}
 python3 "${script_dir}/build_capr_book_draft.py"
-python3 Germanic/tools/apply_index_verborum.py "${combined_md}" "${indexed_md}"
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "
@@ -53,8 +56,9 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${intro_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
       --pdf-engine=xelatex -o ${intro_pdf#${repo_root}/}
-    pandoc ${indexed_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
+    pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
       --top-level-division=chapter --number-sections --table-of-contents --toc-depth=1 \
+      --lua-filter=Germanic/tools/index_verborum_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/assembly/book_draft_pdf_header.tex \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
@@ -74,7 +78,7 @@ echo "Generated ${intro_pdf}"
 echo "Generated ${combined_md}"
 echo "Generated ${combined_pdf}"
 
-rm -f "${indexed_md}" "${combined_tex}" \
+rm -f "${combined_tex}" \
   "${script_dir}/capr_book_draft_alpha_01.aux" \
   "${script_dir}/capr_book_draft_alpha_01.log" \
   "${script_dir}/capr_book_draft_alpha_01.toc" \
