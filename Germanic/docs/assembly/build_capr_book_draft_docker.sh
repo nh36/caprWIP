@@ -19,7 +19,7 @@ refs_bib="${repo_root}/docs/refs.bib"
 strict_flag=""
 
 if [[ "${INDEX_VERBORUM_STRICT:-0}" == "1" ]]; then
-  strict_flag="--strict"
+  strict_flag="--strict-mode baseline"
 fi
 
 cd "${repo_root}"

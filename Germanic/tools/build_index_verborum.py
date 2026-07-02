@@ -21,6 +21,7 @@ MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
+BASELINE_PATH = BOOK_DIR / "index_verborum_baseline.tsv"
 
 PRODUCTION_FIELDS = [
     "language",
@@ -586,6 +587,20 @@ def write_audit(rows: list[ProductionOccurrence], buckets: dict[str, list[dict[s
     return unresolved
 
 
+def load_baseline(path: Path) -> dict[str, int]:
+    metrics: dict[str, int] = {}
+    if not path.exists():
+        return metrics
+    with path.open(encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        for row in reader:
+            metric = (row.get("metric") or "").strip()
+            value = (row.get("value") or "").strip()
+            if metric and value:
+                metrics[metric] = int(value)
+    return metrics
+
+
 def ensure_override_file() -> None:
     if OVERRIDES_PATH.exists():
         return
@@ -596,7 +611,19 @@ def ensure_override_file() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--strict", action="store_true", help="Fail if audit candidates needing review remain.")
+    parser.add_argument("--strict", action="store_true", help="Alias for --strict-mode=all.")
+    parser.add_argument(
+        "--strict-mode",
+        choices=("off", "baseline", "all"),
+        default="off",
+        help="Strictness policy for unresolved audit candidates.",
+    )
+    parser.add_argument(
+        "--baseline",
+        type=Path,
+        default=BASELINE_PATH,
+        help="Baseline TSV used by --strict-mode=baseline.",
+    )
     args = parser.parse_args()
     run_sort_key_assertions()
     BOOK_DIR.mkdir(parents=True, exist_ok=True)
@@ -605,7 +632,14 @@ def main() -> None:
     write_forms(production_rows)
     audit_buckets = build_audit_rows(production_rows)
     unresolved = write_audit(production_rows, audit_buckets)
-    raise SystemExit(1 if args.strict and unresolved else 0)
+    strict_mode = "all" if args.strict else args.strict_mode
+    if strict_mode == "all":
+        raise SystemExit(1 if unresolved else 0)
+    if strict_mode == "baseline":
+        baseline = load_baseline(args.baseline.expanduser().resolve())
+        baseline_value = baseline.get("needs_review_candidates", 0)
+        raise SystemExit(1 if unresolved > baseline_value else 0)
+    raise SystemExit(0)
 
 
 if __name__ == "__main__":
