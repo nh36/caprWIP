@@ -128,9 +128,20 @@ TABLE_STOPWORDS = {
     "selected",
     "inherited",
     "ritual",
+    "oe",
+    "on",
+    "ohg",
+    "os",
+    "ofri",
+    "goth",
+    "pgmc",
+    "pwgmc",
+    "nwgmc",
+    "pre-oe",
 }
 TABLE_SELECTED_PHRASES = (
     "selected input",
+    "selected pre-oe input",
     "selected dative",
     "selected genitive",
     "selected oblique",
@@ -140,6 +151,9 @@ TABLE_SELECTED_PHRASES = (
     "selected a-stem",
     "selected oe-facing input",
     "oe-facing input",
+    "selected j-present branch",
+    "selected derived formation",
+    "derived oe-facing formation",
     "modeled input",
     "form followed here",
     "selected transponent",
@@ -227,6 +241,10 @@ TABLE_NEGATIVE_PHRASES = (
     "but not the target",
     "not the direct source",
     "excluded by",
+    "later hardening stage",
+    "intermediate pre-oe stage",
+    "same derivation",
+    "not the proto-germanic form followed here",
 )
 TABLE_TARGET_PHRASES = (
     "selected target",
@@ -234,6 +252,18 @@ TABLE_TARGET_PHRASES = (
     "old english target",
     "selected attested cell",
 )
+TABLE_METADATA_LABELS = {
+    "oe",
+    "on",
+    "ohg",
+    "os",
+    "ofri",
+    "goth",
+    "pgmc",
+    "pwgmc",
+    "nwgmc",
+    "pre-oe",
+}
 BARE_TABLE_CELL_RE = re.compile(r"^\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*(?:/\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*)*$")
 TRANSLIT_MAP = {
     "þ": "th",
@@ -715,6 +745,25 @@ def table_header_kind(header: str) -> str:
     return ""
 
 
+def notation_or_metadata_reason(form: str) -> str:
+    lowered = form.casefold()
+    if lowered in TABLE_METADATA_LABELS:
+        return "table metadata label"
+    if (
+        "~" in form
+        or "..." in form
+        or form.endswith("-")
+        or form.startswith("-")
+        or "*-" in form
+        or "-*" in form
+        or " " in form
+        or "(" in form
+        or ")" in form
+    ):
+        return "notation or compound expression"
+    return ""
+
+
 def extract_forms_from_markup(text: str) -> list[str]:
     forms: list[str] = []
     seen: set[str] = set()
@@ -853,23 +902,41 @@ def infer_table_semantic_language(
     row_text = normalize_semantic_text(mention.row_text)
     cell_text = normalize_semantic_text(mention.cell_text)
     hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
+    non_oe_hints = hints - {"oe"}
     if mention.form in target_forms:
         return "oe", True
-    if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
-        for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
-            if code in hints:
-                return code, True
-        return "pgmc", True
+    if mention.form.startswith("*"):
+        if role in {"selected_input", "source_protoform"}:
+            if "preoe" in hints:
+                return "preoe", True
+            if len(non_oe_hints) == 1:
+                return next(iter(non_oe_hints)), True
+            if len(non_oe_hints) > 1:
+                return "", False
+            return "pgmc", True
+        if role == "comparison_form":
+            if "preoe" in hints:
+                return "preoe", True
+            if len(non_oe_hints) == 1:
+                return next(iter(non_oe_hints)), True
+            if len(non_oe_hints) > 1:
+                return "", False
+            return "pgmc", False
+        if role in {"target_form", "regular_output"}:
+            return "", False
     if role in {"target_form", "regular_output"}:
-        if len(hints - {"oe"}) == 0:
+        if len(non_oe_hints) == 0:
             return "oe", True
     if role == "comparison_form":
+        if len(non_oe_hints) == 1:
+            return next(iter(non_oe_hints)), True
+        if len(non_oe_hints) > 1:
+            return "", False
         if mention.cell_kind in {"comparison", "output"} and len(hints - {"oe"}) == 0:
             return "oe", True
-        if len(hints) == 1:
-            return next(iter(hints)), True
         if mention.form in target_forms:
             return "oe", True
+        return "oe", False
     return "", False
 
 
@@ -881,9 +948,11 @@ def collect_table_semantic_results(
     auto_rows: list[dict[str, str]] = []
     suggestions: list[dict[str, str]] = []
     ignored: list[dict[str, str]] = []
+    notation: list[dict[str, str]] = []
     seen_auto: set[tuple[str, str, str, str]] = set()
     seen_suggest: set[tuple[str, str, str, str]] = set()
     seen_ignored: set[tuple[str, str]] = set()
+    seen_notation: set[tuple[str, str]] = set()
 
     for path in sorted(MODEL_ENTRIES_DIR.glob("*.model.md")):
         source_path = relative_source_path(path)
@@ -892,6 +961,25 @@ def collect_table_semantic_results(
         for mention in table_form_mentions_from_path(path):
             pair = (mention.form, mention.source_ref)
             if pair in production_pairs:
+                continue
+            notation_reason = notation_or_metadata_reason(mention.form)
+            if notation_reason:
+                if pair not in seen_notation:
+                    seen_notation.add(pair)
+                    notation.append(
+                        {
+                            "source_ref": mention.source_ref,
+                            "nearest_heading": mention.heading,
+                            "row_label": mention.row_label,
+                            "form": mention.form,
+                            "display": mention.form,
+                            "suggested_language": "",
+                            "suggested_role": "",
+                            "confidence": "ignore",
+                            "reason": notation_reason,
+                            "context": mention.line_text,
+                        }
+                    )
                 continue
             if mention.form.casefold() in TABLE_STOPWORDS or candidate_category(mention.form) != "needs_review":
                 if pair not in seen_ignored:
@@ -921,6 +1009,7 @@ def collect_table_semantic_results(
             is_comparison = contains_phrase(semantic_text, TABLE_COMPARISON_PHRASES)
             is_negative = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
             is_target = contains_phrase(semantic_text, TABLE_TARGET_PHRASES)
+            caution_intermediate = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
 
             role_candidates: list[tuple[str, str, str]] = []
             if mention.cell_kind == "input":
@@ -959,28 +1048,34 @@ def collect_table_semantic_results(
             for role, confidence, reason in role_candidates:
                 language, confident_language = infer_table_semantic_language(mention, role, target_forms)
                 if not language:
-                    key = (mention.form, mention.source_ref, role, "suggest")
-                    auto_key = ("", mention.form, role, mention.source_ref)
-                    if key not in seen_suggest:
-                        seen_suggest.add(key)
-                        suggestions.append(
-                            {
-                                "source_ref": mention.source_ref,
-                                "nearest_heading": mention.heading,
-                                "row_label": mention.row_label,
-                                "form": mention.form,
-                                "display": mention.form,
-                                "suggested_language": "",
-                                "suggested_role": role,
-                                "confidence": "suggest",
-                                "reason": f"{reason}; language unclear",
-                                "context": mention.line_text,
-                            }
-                        )
-                    continue
+                    if role == "comparison_form" and mention.form.startswith("*"):
+                        language = "preoe" if caution_intermediate else "pgmc"
+                    else:
+                        key = (mention.form, mention.source_ref, role, "suggest")
+                        if key not in seen_suggest:
+                            seen_suggest.add(key)
+                            suggestions.append(
+                                {
+                                    "source_ref": mention.source_ref,
+                                    "nearest_heading": mention.heading,
+                                    "row_label": mention.row_label,
+                                    "form": mention.form,
+                                    "display": mention.form,
+                                    "suggested_language": "",
+                                    "suggested_role": role,
+                                    "confidence": "suggest",
+                                    "reason": f"{reason}; language unclear",
+                                    "context": mention.line_text,
+                                }
+                            )
+                        continue
                 if confidence == "auto" and role == "comparison_form" and mention.cell_kind == "form" and not confident_language:
                     confidence = "suggest"
                 if confidence == "auto" and role == "comparison_form" and is_negative:
+                    confidence = "suggest"
+                if confidence == "auto" and mention.form.startswith("*") and role == "comparison_form" and not confident_language:
+                    confidence = "suggest"
+                if confidence == "auto" and mention.form.startswith("*") and caution_intermediate:
                     confidence = "suggest"
                 if confidence == "auto":
                     key = (language, mention.form, role, mention.source_ref)
@@ -1029,6 +1124,7 @@ def collect_table_semantic_results(
         "auto_rows": auto_rows,
         "suggestions": suggestions,
         "ignored": ignored,
+        "notation": notation,
         "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in suggestions],
         "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in ignored],
     }
@@ -1225,13 +1321,37 @@ def infer_table_semantic_language(
     mention: TableFormMention,
     role: str,
     target_forms: set[str],
+    *,
+    derivation_class: str = "",
+    caution_intermediate: bool = False,
 ) -> tuple[str, bool]:
     row_text = normalize_semantic_text(mention.row_text)
     cell_text = normalize_semantic_text(mention.cell_text)
-    header_text = normalize_semantic_text(mention.cell_header)
     hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
     if mention.form in target_forms:
+        if mention.form.startswith("*") and derivation_class != "reconstructed_oe":
+            return "", False
         return "oe", True
+    non_oe_hints = hints - {"oe"}
+    if mention.form.startswith("*"):
+        if role in {"selected_input", "source_protoform", "comparison_form"}:
+            if "preoe" in hints or caution_intermediate:
+                return "preoe", "preoe" in hints
+            if len(non_oe_hints) == 1:
+                return next(iter(non_oe_hints)), True
+            if len(non_oe_hints) > 1:
+                return "", False
+            return "pgmc", False if role == "comparison_form" else True
+        if role in {"target_form", "regular_output"}:
+            if derivation_class == "reconstructed_oe" and mention.form in target_forms:
+                return "oe", True
+            if "preoe" in hints or caution_intermediate:
+                return "preoe", "preoe" in hints
+            if len(non_oe_hints) == 1:
+                return next(iter(non_oe_hints)), True
+            if len(non_oe_hints) > 1:
+                return "", False
+            return "pgmc", False
     if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
         for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
             if code in hints:
@@ -1241,12 +1361,17 @@ def infer_table_semantic_language(
         if len(hints - {"oe"}) == 0:
             return "oe", True
     if role == "comparison_form":
+        if len(non_oe_hints) > 1:
+            return "", False
+        if len(non_oe_hints) == 1:
+            return next(iter(non_oe_hints)), True
         if mention.cell_kind in {"comparison", "output"} and len(hints - {"oe"}) == 0:
             return "oe", True
         if len(hints) == 1:
             return next(iter(hints)), True
         if mention.form in target_forms:
             return "oe", True
+        return "oe", False
     return "", False
 
 
@@ -1258,17 +1383,39 @@ def classify_table_semantic_mentions(
     auto_rows: list[dict[str, str]] = []
     suggestions: list[dict[str, str]] = []
     ignored: list[dict[str, str]] = []
+    notation: list[dict[str, str]] = []
     seen_auto: set[tuple[str, str, str, str]] = set()
     seen_suggest: set[tuple[str, str, str, str]] = set()
     seen_ignored: set[tuple[str, str]] = set()
+    seen_notation: set[tuple[str, str]] = set()
 
     for path in sorted(MODEL_ENTRIES_DIR.glob("*.model.md")):
         source_path = relative_source_path(path)
         entry_row = manifest_map.get(source_path)
         target_forms = entry_target_forms(entry_row)
+        derivation_class = (entry_row or {}).get("derivation_class", "")
         for mention in table_form_mentions_from_path(path):
             pair = (mention.form, mention.source_ref)
             if pair in production_pairs:
+                continue
+            notation_reason = notation_or_metadata_reason(mention.form)
+            if notation_reason:
+                if pair not in seen_notation:
+                    seen_notation.add(pair)
+                    notation.append(
+                        {
+                            "source_ref": mention.source_ref,
+                            "nearest_heading": mention.heading,
+                            "row_label": mention.row_label,
+                            "form": mention.form,
+                            "display": mention.form,
+                            "suggested_language": "",
+                            "suggested_role": "",
+                            "confidence": "ignore",
+                            "reason": notation_reason,
+                            "context": mention.line_text,
+                        }
+                    )
                 continue
             if mention.form.casefold() in TABLE_STOPWORDS or candidate_category(mention.form) != "needs_review":
                 if pair not in seen_ignored:
@@ -1298,6 +1445,7 @@ def classify_table_semantic_mentions(
             is_comparison = contains_phrase(semantic_text, TABLE_COMPARISON_PHRASES)
             is_negative = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
             is_target = contains_phrase(semantic_text, TABLE_TARGET_PHRASES)
+            caution_intermediate = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
 
             role_candidates: list[tuple[str, str]] = []
             if mention.cell_kind == "input":
@@ -1334,7 +1482,13 @@ def classify_table_semantic_mentions(
                     role_candidates.append(("comparison_form", "comparison form row"))
 
             for role, reason in role_candidates:
-                language, confident_language = infer_table_semantic_language(mention, role, target_forms)
+                language, confident_language = infer_table_semantic_language(
+                    mention,
+                    role,
+                    target_forms,
+                    derivation_class=derivation_class,
+                    caution_intermediate=caution_intermediate,
+                )
                 if not language:
                     if role == "comparison_form":
                         language = "pgmc" if mention.form.startswith("*") else ""
@@ -1361,6 +1515,10 @@ def classify_table_semantic_mentions(
                 if role == "comparison_form" and (mention.cell_kind == "form" and not mention.form.startswith("*") and not confident_language):
                     confidence = "suggest"
                 if role == "comparison_form" and is_negative:
+                    confidence = "suggest"
+                if mention.form.startswith("*") and role == "comparison_form" and not confident_language:
+                    confidence = "suggest"
+                if caution_intermediate and mention.form.startswith("*"):
                     confidence = "suggest"
                 if confidence == "auto":
                     key = (language, mention.form, role, mention.source_ref)
@@ -1402,6 +1560,7 @@ def classify_table_semantic_mentions(
         "auto_rows": auto_rows,
         "suggestions": suggestions,
         "ignored": ignored,
+        "notation": notation,
         "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in suggestions],
         "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in ignored],
     }
@@ -1689,6 +1848,7 @@ def build_audit_rows(
     semantic_results = table_semantic_results or collect_table_semantic_results(production_rows)
     suggest_pairs = {(row["form"], row["source_ref"]) for row in semantic_results["suggest_pairs"]}
     ignore_pairs = {(row["form"], row["source_ref"]) for row in semantic_results["ignore_pairs"]}
+    notation_pairs = {(row["form"], row["source_ref"]) for row in semantic_results.get("notation", [])}
     buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
     seen: set[tuple[str, str]] = set()
     source_candidates = candidates
@@ -1706,6 +1866,8 @@ def build_audit_rows(
         category = candidate_category(candidate.form)
         if any(override_matches(override, form=candidate.form, source_ref=candidate.source_ref) for override in ignore_overrides):
             category = "ignored_by_override"
+        elif (candidate.form, candidate.source_ref) in notation_pairs:
+            category = "table_semantic_notation"
         elif (candidate.form, candidate.source_ref) in ignore_pairs:
             category = "table_semantic_ignored"
         elif (candidate.form, candidate.source_ref) in suggest_pairs:
@@ -1817,7 +1979,7 @@ def write_audit(
         for language in counts_by_language
     }
     needs_review_entries = buckets.get("needs_review", [])
-    semantic_results = table_semantic_results or {"auto_rows": [], "suggestions": [], "ignored": []}
+    semantic_results = table_semantic_results or {"auto_rows": [], "suggestions": [], "ignored": [], "notation": []}
     excluded_trace_entries = excluded_intermediate_trace_forms()
     new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
     lines = [
@@ -1829,6 +1991,7 @@ def write_audit(
         f"- Table semantic auto-promoted: {len(semantic_results.get('auto_rows', []))}",
         f"- Table semantic suggestions: {len(semantic_results.get('suggestions', []))}",
         f"- Table semantic ignored: {len(semantic_results.get('ignored', []))}",
+        f"- Table semantic notation / compound expressions: {len(semantic_results.get('notation', []))}",
         f"- Already indexed nearby: {len(buckets.get('already_indexed_nearby', []))}",
         f"- Ignored fragments or sequences: {len(buckets.get('ignored_fragment', [])) + len(buckets.get('ignored_by_override', []))}",
         f"- Possible extraction garbage: {len(buckets.get('possible_garbage', []))}",
@@ -1940,6 +2103,11 @@ def write_audit(
     render_bucket(
         "Table semantic ignored",
         semantic_results.get("ignored", []),
+        columns=("form", "source_ref", "reason"),
+    )
+    render_bucket(
+        "Table semantic notation / compound expressions",
+        semantic_results.get("notation", []),
         columns=("form", "source_ref", "reason"),
     )
     render_bucket("Already indexed nearby", buckets.get("already_indexed_nearby", []), columns=("form", "source_ref", "heading", "candidate_origin"))

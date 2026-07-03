@@ -72,6 +72,18 @@ def parse_audit_summary_lines() -> set[str]:
     return lines
 
 
+def parse_audit_table_semantic_notation_pairs() -> set[tuple[str, str]]:
+    section = audit_section("Table semantic notation / compound expressions")
+    pairs: set[tuple[str, str]] = set()
+    for line in section.splitlines():
+        if not line.startswith("| `"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) >= 2:
+            pairs.add((parts[0].strip("`"), parts[1]))
+    return pairs
+
+
 def parse_table_scanned_unresolved_pairs() -> set[tuple[str, str]]:
     section = audit_section("Table-scanned unresolved candidates")
     pairs: set[tuple[str, str]] = set()
@@ -82,6 +94,10 @@ def parse_table_scanned_unresolved_pairs() -> set[tuple[str, str]]:
         if len(parts) >= 2:
             pairs.add((parts[0].strip("`"), parts[1]))
     return pairs
+
+
+def parse_table_scanned_unresolved_forms() -> set[str]:
+    return {form for form, _ in parse_table_scanned_unresolved_pairs()}
 
 
 def parse_registry_codes() -> set[str]:
@@ -397,6 +413,8 @@ def assert_table_semantic_rows() -> None:
         assert row["display"].casefold() not in TABLE_STOPWORDS
         assert ">" not in row["form"]
         assert ">" not in row["display"]
+        if row["form"].startswith("*") and row["language"] == "oe":
+            assert row["form_role"] == "target_form"
     scope_map: dict[tuple[str, str, str, str], set[str]] = {}
     for row in forms_rows:
         key = (row["language"], row["form"], row["form_role"], row["source_ref"])
@@ -406,6 +424,25 @@ def assert_table_semantic_rows() -> None:
     for row in suggestion_rows:
         key = (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"])
         assert key not in production_keys
+    assert not any(row["form"] == "*nēþlō" and row["language"] == "oe" for row in table_rows)
+    assert not any(row["form"] == "*nḗdlō" for row in table_rows)
+    assert not any(row["form"] == "*lákaną" and row["suggested_language"] == "oe" for row in suggestion_rows)
+    unresolved_forms = parse_table_scanned_unresolved_forms()
+    for label in {"OE", "ON", "OHG", "OS", "OFri", "Goth", "PGmc", "PWGmc", "NWGmc", "pre-OE"}:
+        assert label not in unresolved_forms
+    notation_pairs = parse_audit_table_semantic_notation_pairs()
+    assert any(form == "*fōr ~ *fun-" for form, _ in notation_pairs)
+    assert any(form == "*watar-~*watan-" for form, _ in notation_pairs)
+
+    def auto_or_suggest(form: str, role: str) -> bool:
+        return (
+            any(row["form"] == form and row["form_role"] == role for row in table_rows)
+            or any(row["form"] == form and row["suggested_role"] == role for row in suggestion_rows)
+        )
+
+    assert auto_or_suggest("*kráftaz", "selected_input")
+    assert auto_or_suggest("*lúnganjō", "selected_input")
+    assert auto_or_suggest("*xláxjaną", "selected_input")
 
 
 def assert_reconstructed_oe_index_commands() -> None:

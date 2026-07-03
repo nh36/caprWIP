@@ -568,7 +568,6 @@ oe	neaht	neaht	neaht	regular_output	explicit_tag	Germanic/docs/lexeme_reports/mo
 oe	neaht	neaht	neaht	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:60	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
 oe	neahtas	neahtas	neahtas	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:37	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
 oe	neht	neht	neht	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:34	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
-oe	*nēþlō	*nēþlō	nethlo	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:57	table_semantic_rule	auto
 oe	nett	nett	nett	target_form	lexical_heading	net — OE nett	manifest	auto
 oe	nieht	nieht	nieht	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:34	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
 oe	niht	niht	niht	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:22	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
@@ -1302,9 +1301,9 @@ pgmc	*líznōθi	*líznōθi	liznothi	source_protoform	lexical_protoform	learn (
 pgmc	*líznōθi	*líznōθi	liznothi	selected_input	trace_proto_input	learn (3sg) — OE liornaþ	compact	auto
 pgmc	*lúką	*lúką	luka	selected_input	trace_proto_input	lock — OE loc	compact	auto
 pgmc	*lúkkaz	*lúkkaz	lukkaz	selected_input	trace_proto_input	lock — OE locc	compact	auto
+pgmc	*lúnganjō	*lúnganjō	lunganjo	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:56	table_semantic_rule	auto
 pgmc	*lúnganjō	*lúnganjō	lunganjo	source_protoform	lexical_protoform	lung — OE lungen	manifest	auto
 pgmc	*lúnganjō	*lúnganjō	lunganjo	selected_input	trace_proto_input	lung — OE lungen	compact	auto
-pgmc	*lungō	*lungō	lungo	source_protoform	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:55	table_semantic_rule	auto
 pgmc	*lungō	*lungō	lungo	source_protoform	lexical_proto	lung — OE lungen	manifest	auto
 pgmc	*lústuz	*lústuz	lustuz	selected_input	trace_proto_input	lust — OE lust	compact	auto
 pgmc	*lūsz	*lūsz	lusz	selected_input	trace_proto_input	louse — OE lūs	compact	auto
@@ -1806,6 +1805,7 @@ pgmc	*xértōn	*xértōn	xerton	selected_input	trace_proto_input	heart — OE he
 pgmc	*xláðaną	*xláðaną	xladana	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56	table_semantic_rule	auto
 pgmc	*xláðaną	*xláðaną	xladana	source_protoform	lexical_protoform	lade — OE hladan	manifest	auto
 pgmc	*xláðaną	*xláðaną	xladana	selected_input	trace_proto_input	lade — OE hladan	compact	auto
+pgmc	*xláxjaną	*xláxjaną	xlaxjana	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57	table_semantic_rule	auto
 pgmc	*xláxjaną	*xláxjaną	xlaxjana	source_protoform	lexical_protoform	laugh — OE hliehhan	manifest	auto
 pgmc	*xláxjaną	*xláxjaną	xlaxjana	selected_input	trace_proto_input	laugh — OE hliehhan	compact	auto
 pgmc	*xlídą	*xlídą	xlida	source_protoform	lexical_protoform	lid — OE hlid	manifest	auto
@@ -1846,7 +1846,7 @@ pwgmc	*skúldru	*skúldru	skuldru	comparison_form	explicit_tag	Germanic/docs/lex
 preoe	*bakan	*bakan	bakan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md	auto
 preoe	*hebun	*hebun	hebun	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 preoe	*hebun	*hebun	hebun	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
-preoe	*nḗdlō	*nḗdlō	nedlo	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59	table_semantic_rule	auto
+preoe	*kráftaz	*kráftaz	kraftaz	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 preoe	*sparai-	*sparai-	sparai	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
