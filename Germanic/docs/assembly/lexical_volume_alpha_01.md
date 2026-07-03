@@ -551,12 +551,12 @@ Old English form: _bū_
 
 #### Reconstruction and comparative evidence
 
-Kroonen treats the Germanic numeral under [_\*ba-_]{.iv lang=pgmc sort=ba role=source_protoform} and gives the inherited
+Kroonen treats the Germanic numeral under _\*ba-_ and gives the inherited
 paradigm _\*bai_, _\*bans_, _\*bōz_/_\*bōns_, _\*bō_, with Old English [_bēġen_]{.iv lang=oe sort=begen role=comparison_form}, [_bā_]{.iv lang=oe sort=ba role=comparison_form}, and
 neuter [_bū_]{.iv lang=oe sort=bu role=target_form} [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input}.
 
-The older explanation of [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} derives it from [_\*bō-jen-_]{.iv lang=pgmc sort=bojen role=source_protoform}, and Orel still
+The older explanation of [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} derives it from _\*bō-jen-_, and Orel still
 gives OE _bezen_ (< _\*bō-jenō)_ beside _ON_ [_báðir_]{.iv lang=on sort=badir role=comparison_form}, _OFris_ [_bēthe_]{.iv lang=ofris sort=bethe role=comparison_form}, _OS_ [_be-thia_]{.iv lang=os sort=bethia role=comparison_form},
 and _OHG_ [_bēde_]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a _\*bō-þ-_ analysis instead
@@ -5465,10 +5465,10 @@ Old English form: _dile_
 #### Reconstruction and comparative evidence
 
 Comparative evidence preserves both an i-stem and a ja-stem formation, with Old
-English _dile_ on one side and continental forms such as Old Saxon _dilli_ and
-Old High German _tilli_ on the other [@Fulk2018, 170]. The derivational input
-_\*déliz_ therefore represents the i-stem side of the paradigm,
-whereas the citation label _\*déljaz_ is a broader comparative headword.
+English [_dile_]{.iv lang=oe sort=dile role=target_form} on one side and continental forms such as Old Saxon [_dilli_]{.iv lang=os sort=dilli role=comparison_form} and
+Old High German [_tilli_]{.iv lang=ohg sort=tilli role=comparison_form} on the other [@Fulk2018, 170]. The derivational input
+[_\*déliz_]{.iv lang=pgmc sort=deliz role=selected_input} therefore represents the i-stem side of the paradigm,
+whereas the citation label [_\*déljaz_]{.iv lang=pgmc sort=deljaz role=source_protoform} is a broader comparative headword.
 
 That stem-class distinction matters for the Old English consonant shape. A
 ja-stem with _\*-lj-_ would be expected to produce gemination, but the Old
@@ -5478,18 +5478,18 @@ the i-stems provides the relevant morphological background for the OE side
 
 #### Old English evidence
 
-Old English dictionaries record the plant name as _dile_, alongside the variant
-_dili_ [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
+Old English dictionaries record the plant name as [_dile_]{.iv lang=oe sort=dile role=target_form}, alongside the variant
+[_dili_]{.iv lang=oe sort=dili role=comparison_form} [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
 therefore an attested Old English noun with single _l_.
 
 The Old English evidence is the relevant point. Whatever broader comparative
 headword is chosen for the family, the inherited form reflected in OE is the
-i-stem type _dile_, not a geminated _dill_ outcome.
+i-stem type [_dile_]{.iv lang=oe sort=dile role=target_form}, not a geminated [_dill_]{.iv lang=oe sort=dill role=comparison_form} outcome.
 
 #### Development to Old English
 
-From _\*déliz_, regular loss of final _z_ and the later lowering of unstressed
-_i_ yield _dile_. The stem itself remains ungeminated throughout that path.
+From [_\*déliz_]{.iv lang=pgmc sort=deliz role=selected_input}, regular loss of final _z_ and the later lowering of unstressed
+_i_ yield [_dile_]{.iv lang=oe sort=dile role=target_form}. The stem itself remains ungeminated throughout that path.
 
 The important contrast is negative rather than phonological. If the word were
 forced through a ja-stem _\*-lj-_ pathway, the expected result would show _ll_.
@@ -5502,10 +5502,10 @@ from the stem class actually reflected in Old English.
 
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative ja-stem label | *déljaz | ja-stem type outcome with gemination | dill-type comparison | useful comparative label, but not the OE form |
-| selected i-stem formation | *déliz | regular output: _dile_ | dile | exact match between formation and attested OE noun |
+| comparative ja-stem label | [_\*déljaz_]{.iv lang=pgmc sort=deljaz role=source_protoform} | ja-stem type outcome with gemination | [_dill_]{.iv lang=oe sort=dill role=comparison_form}-type comparison | useful comparative label, but not the OE form |
+| selected i-stem formation | [_\*déliz_]{.iv lang=pgmc sort=deliz role=selected_input} | regular output: [_dile_]{.iv lang=oe sort=dile role=regular_output} | [_dile_]{.iv lang=oe sort=dile role=target_form} | exact match between formation and attested OE noun |
 
-The single _l_ is the decisive diagnostic. It identifies _dile_ with the i-stem
+The single _l_ is the decisive diagnostic. It identifies [_dile_]{.iv lang=oe sort=dile role=target_form} with the i-stem
 formation rather than with the continental ja-stem branch.
 
 ### fast — OE festan
@@ -5661,31 +5661,31 @@ Old English form: _flasce_
 
 #### Reconstruction and comparative evidence
 
-The wider Germanic family is often cited under a form such as _\*flaskō_, but
+The wider Germanic family is often cited under a form such as [_\*flaskō_]{.iv lang=pgmc sort=flasko role=source_protoform}, but
 the evidence relevant for Old English points instead to a weak feminine
-formation _\*fláskōn_ / _\*flaskǭ_ [@Orel2003, 104]. That distinction is
+formation [_\*fláskōn_]{.iv lang=pgmc sort=flaskon role=selected_input} / [_\*flaskǭ_]{.iv lang=pgmc sort=flasko role=source_protoform} [@Orel2003, 104]. That distinction is
 crucial for the suffixal history of the noun.
 
 The derivational input therefore differs from the citation label in stem class. Old
-English _flasce_ belongs with the weak feminine line, and the plural or oblique
-forms _flascan_ support that analysis [@RingeTaylor2014, 192].
+English [_flasce_]{.iv lang=oe sort=flasce role=target_form} belongs with the weak feminine line, and the plural or oblique
+forms [_flascan_]{.iv lang=oe sort=flascan role=comparison_form} support that analysis [@RingeTaylor2014, 192].
 
 #### Old English evidence
 
-Old English dictionaries record the noun as _flasce_, with inflectional support
-from forms such as _flascan_; a later West Saxon _flaxe_ is also noted as a
+Old English dictionaries record the noun as [_flasce_]{.iv lang=oe sort=flasce role=target_form}, with inflectional support
+from forms such as [_flascan_]{.iv lang=oe sort=flascan role=comparison_form}; a later West Saxon [_flaxe_]{.iv lang=oe sort=flaxe role=comparison_form} is also noted as a
 secondary variant [@BosworthToller1898, 235; @ClarkHall1960, 121].
 
-The relevant comparison form is therefore the weak feminine noun _flasce_.
+The relevant comparison form is therefore the weak feminine noun [_flasce_]{.iv lang=oe sort=flasce role=target_form}.
 The plural and oblique evidence matters because it helps explain why the vowel
 and ending are preserved as they are in the singular.
 
 #### Development to Old English
 
-From _\*fláskōn_, the weak feminine passes through the expected loss of _n_ and
-the later Old English development of the unstressed ending, reaching _flasce_.
-Campbell cites restored _a_ in exactly this environment, including _flasce_
-after inflected _flascan_ [@Campbell1959, §158]. Once the weak feminine
+From [_\*fláskōn_]{.iv lang=pgmc sort=flaskon role=selected_input}, the weak feminine passes through the expected loss of _n_ and
+the later Old English development of the unstressed ending, reaching [_flasce_]{.iv lang=oe sort=flasce role=target_form}.
+Campbell cites restored _a_ in exactly this environment, including [_flasce_]{.iv lang=oe sort=flasce role=target_form}
+after inflected [_flascan_]{.iv lang=oe sort=flascan role=comparison_form} [@Campbell1959, §158]. Once the weak feminine
 formation is chosen, the noun follows a regular path to its Old English shape.
 
 The decisive issue is morphological rather than phonological. A simple strong
@@ -5699,11 +5699,11 @@ from the weak feminine formation actually reflected in Old English.
 
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| broader comparative headword | *flaskō | broader family label | wider family context | useful lexeme label, but not the cleanest OE-facing derivation |
-| selected weak feminine formation | *fláskōn | regular output: _flasce_ | flasce | exact match between formation and attested OE noun |
+| broader comparative headword | [_\*flaskō_]{.iv lang=pgmc sort=flasko role=source_protoform} | broader family label | wider family context | useful lexeme label, but not the cleanest OE-facing derivation |
+| selected weak feminine formation | [_\*fláskōn_]{.iv lang=pgmc sort=flaskon role=selected_input} | regular output: [_flasce_]{.iv lang=oe sort=flasce role=regular_output} | [_flasce_]{.iv lang=oe sort=flasce role=target_form} | exact match between formation and attested OE noun |
 
 The weak feminine suffix is the relevant point. It aligns the inherited form
-with attested _flasce_ and its supporting paradigm forms.
+with attested [_flasce_]{.iv lang=oe sort=flasce role=target_form} and its supporting paradigm forms.
 
 ### follow — OE fylġan
 
@@ -5759,34 +5759,34 @@ Old English form: _fylġan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen keeps the verb under _\*fulgen-_ and gives Old English _fylgan, folgian_,
-adding that Old Norse _fylgja_ and Old English _fylg(e)an_ continue a formation
+Kroonen keeps the verb under _\*fulgen-_ and gives Old English [_fylgan_]{.iv lang=oe sort=fylgan role=comparison_form}, [_folgian_]{.iv lang=oe sort=folgian role=comparison_form},
+adding that Old Norse [_fylgja_]{.iv lang=on sort=fylgja role=comparison_form} and Old English [_fylg(e)an_]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} continue a formation
 _\*fulgjan-_ [@Kroonen2013, 159]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
 Ringe and Taylor make the split explicit as PNWGmc _\*fulgija-_ ~ _\*fulgai-_ > OE _fylgan_ ~ _folgian_ and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The derivational input
-_\*fúlgijaną_ belongs to the class-I _\*fulgija-_ / _\*fulgjan-_ branch; the citation
-form _\*fulgēną_ belongs to the parallel class-II history behind _folgian_.
+[_\*fúlgijaną_]{.iv lang=pgmc sort=fulgijana role=selected_input} belongs to the class-I _\*fulgija-_ / _\*fulgjan-_ branch; the citation
+form [_\*fulgēną_]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [_folgian_]{.iv lang=oe sort=folgian role=comparison_form}.
 
 #### Old English evidence
 
-The Old English evidence preserves both formations. Clark Hall lists _fylgan_
-with variant spellings _fylgian_ and _fyligan_ [@ClarkHall1960, 125].
-Bosworth-Toller likewise has a separate _fylgean_ entry
+The Old English evidence preserves both formations. Clark Hall lists [_fylgan_]{.iv lang=oe sort=fylgan role=comparison_form}
+with variant spellings [_fylgian_]{.iv lang=oe sort=fylgian role=comparison_form} and [_fyligan_]{.iv lang=oe sort=fyligan role=comparison_form} [@ClarkHall1960, 125].
+Bosworth-Toller likewise has a separate [_fylgean_]{.iv lang=oe sort=fylgean role=comparison_form} entry
 [@BosworthToller1898, 275].
 
-Bright notes traces of the older conjugation in _fylg(e)an_
-[@BrightCassidyRingler1971, 77] and lists _folgian (fylgean)_ in the glossary
+Bright notes traces of the older conjugation in [_fylg(e)an_]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form}
+[@BrightCassidyRingler1971, 77] and lists [_folgian_]{.iv lang=oe sort=folgian role=comparison_form} ([_fylgean_]{.iv lang=oe sort=fylgean role=comparison_form}) in the glossary
 [@BrightCassidyRingler1971, 364]. The relevant comparison form in this entry is
-therefore the class-I verb _fylgan_ / _fylgean_, here normalized as _fylġan_.
+therefore the class-I verb [_fylgan_]{.iv lang=oe sort=fylgan role=comparison_form} / [_fylgean_]{.iv lang=oe sort=fylgean role=comparison_form}, here normalized as [_fylġan_]{.iv lang=oe sort=fylgan role=target_form}.
 The spelling with ġ represents the palatalized velar before a front-vocalic
 environment.
 
 #### Development to Old English
 
-_\*fúlgijaną_ is a class-I weak-verb formation. In the class-I branch the _\*j_
+[_\*fúlgijaną_]{.iv lang=pgmc sort=fulgijana role=selected_input} is a class-I weak-verb formation. In the class-I branch the _\*j_
 blocks NWGmc lowering of _u_ to _o_, since Ringe and Taylor formulate that
 lowering for environments in which no _\*j_ intervened [@RingeTaylor2014, 96].
 The same front-vocalic environment then triggers i-umlaut, so _u_ becomes _y_
@@ -5794,8 +5794,8 @@ The same front-vocalic environment then triggers i-umlaut, so _u_ becomes _y_
 
 The subsequent Old English developments are palatalization of the velar,
 weak-tail reduction, and loss of _j_ after a heavy syllable, yielding
-_fylġan_. This is the regular outcome of the class-I formation. The class-II
-form _folgian_ belongs to the parallel _\*-ē-_ / _\*-ai-_ branch and is not the
+[_fylġan_]{.iv lang=oe sort=fylgan role=target_form}. This is the regular outcome of the class-I formation. The class-II
+form [_folgian_]{.iv lang=oe sort=folgian role=comparison_form} belongs to the parallel _\*-ē-_ / _\*-ai-_ branch and is not the
 form modeled here.
 
 #### Class comparison
@@ -5806,12 +5806,12 @@ no full automatic class probe is presented here.
 
 | Formation / class | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation class-II formation | *fulgēną | probe output: _folgon_ | folgian | mismatch: the regular output is not the remodeled infinitive _folgian_ |
-| parallel class-II branch | PNWGmc *fulgai- | Ringe-Taylor: OE _folgian_ | folgian | documents the separate class-II branch, but not the target of this entry |
-| selected class-I formation | *fúlgijaną | regular output: _fylġan_ | fylġan / fylgan | exact match between input, output, and class |
+| citation class-II formation | [_\*fulgēną_]{.iv lang=pgmc sort=fulgena role=source_protoform} | probe output: [_folgon_]{.iv lang=oe sort=folgon role=regular_output} | [_folgian_]{.iv lang=oe sort=folgian role=comparison_form} | mismatch: the regular output is not the remodeled infinitive _folgian_ |
+| parallel class-II branch | PNWGmc _\*fulgai-_ | Ringe-Taylor: OE [_folgian_]{.iv lang=oe sort=folgian role=comparison_form} | [_folgian_]{.iv lang=oe sort=folgian role=comparison_form} | documents the separate class-II branch, but not the target of this entry |
+| selected class-I formation | [_\*fúlgijaną_]{.iv lang=pgmc sort=fulgijana role=selected_input} | regular output: [_fylġan_]{.iv lang=oe sort=fylgan role=regular_output} | [_fylġan_]{.iv lang=oe sort=fylgan role=target_form} / [_fylgan_]{.iv lang=oe sort=fylgan role=comparison_form} | exact match between input, output, and class |
 
-The relevant point is the class split. _fylġan_ is the regular Old English
-outcome of the class-I _\*fulgija-_ / _\*fulgjan-_ formation, whereas _folgian_
+The relevant point is the class split. [_fylġan_]{.iv lang=oe sort=fylgan role=target_form} is the regular Old English
+outcome of the class-I _\*fulgija-_ / _\*fulgjan-_ formation, whereas [_folgian_]{.iv lang=oe sort=folgian role=comparison_form}
 belongs to the parallel class-II branch.
 
 ### gall — OE ġealla
@@ -5964,19 +5964,19 @@ Old English form: _cniht_
 #### Reconstruction and comparative evidence
 
 The comparative sources align on an _e_-grade reconstruction for this noun.
-Ringe and Taylor cite _\*kneht_, and Orel gives _\*knextaz_
+Ringe and Taylor cite _\*kneht_, and Orel gives [_\*knextaz_]{.iv lang=pgmc sort=knextaz role=selected_input}
 [@RingeTaylor2014, 142; @Orel2003, 256]. Kluge-Seebold likewise points to
-_\*knehta-_ [@KlugeSeebold2011, 506]. The form followed here, _\*knéxtaz_, follows that
+_\*knehta-_ [@KlugeSeebold2011, 506]. The derivational input [_\*knéxtaz_]{.iv lang=pgmc sort=knextaz role=selected_input} follows that
 comparative evidence.
 
-A competing citation reconstruction _\*kníxtaz_ remains possible as a label for
+A competing citation reconstruction [_\*kníxtaz_]{.iv lang=pgmc sort=knixtaz role=source_protoform} remains possible as a label for
 the word family, but it is not the reconstruction followed here. The Old
-English development discussed below is based on _\*knéxtaz_.
+English development discussed below is based on [_\*knéxtaz_]{.iv lang=pgmc sort=knextaz role=selected_input}.
 
 #### Old English evidence
 
-Old English dictionaries record the noun as _cniht_ [@ClarkHall1960, 63;
-@BosworthToller1898, 71]. Campbell cites plural _cneohtas_ among the broken
+Old English dictionaries record the noun as [_cniht_]{.iv lang=oe sort=cniht role=target_form} [@ClarkHall1960, 63;
+@BosworthToller1898, 71]. Campbell cites plural [_cneohtas_]{.iv lang=oe sort=cneohtas role=comparison_form} among the broken
 forms, showing the same vowel environment from another point in the paradigm
 [@Campbell1959, §146].
 
@@ -5985,9 +5985,9 @@ OE comparator is needed here.
 
 #### Development to Old English
 
-From _\*knéxtaz_, the relevant Old English changes include breaking before the
-velar cluster and then the later reduction that yields _cniht_. Campbell later
-notes the early West-Saxon alternation _cniht_ beside plural _cneohtas_
+From [_\*knéxtaz_]{.iv lang=pgmc sort=knextaz role=selected_input}, the relevant Old English changes include breaking before the
+velar cluster and then the later reduction that yields [_cniht_]{.iv lang=oe sort=cniht role=target_form}. Campbell later
+notes the early West-Saxon alternation [_cniht_]{.iv lang=oe sort=cniht role=target_form} beside plural [_cneohtas_]{.iv lang=oe sort=cneohtas role=comparison_form}
 [@Campbell1959, §305]. Sievers-Brunner gives the same contrast as _cniht ... cneohtas_ [@SieversBrunner1965, §122]. With that corrected input, the
 derivation is straightforward.
 
@@ -5998,9 +5998,9 @@ input from a competing citation reconstruction.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| competing citation reconstruction | *kníxtaz | not the reconstruction followed here | broader citation tradition | useful as a competing label, but not the source-based choice used for the OE derivation |
-| handbook-supported reconstruction | *knéxtaz | regular output: _cniht_ | cniht | exact match between comparative reconstruction and attested OE noun |
-| related plural evidence | same stem family | plural _cneohtas_ type background | cneohtas | supports the vowel environment, but not the Old English form here cell |
+| competing citation reconstruction | [_\*kníxtaz_]{.iv lang=pgmc sort=knixtaz role=source_protoform} | not the reconstruction followed here | broader citation tradition | useful as a competing label, but not the source-based choice used for the OE derivation |
+| handbook-supported reconstruction | [_\*knéxtaz_]{.iv lang=pgmc sort=knextaz role=selected_input} | regular output: [_cniht_]{.iv lang=oe sort=cniht role=regular_output} | [_cniht_]{.iv lang=oe sort=cniht role=target_form} | exact match between comparative reconstruction and attested OE noun |
+| related plural evidence | same stem family | plural [_cneohtas_]{.iv lang=oe sort=cneohtas role=comparison_form} type background | [_cneohtas_]{.iv lang=oe sort=cneohtas role=comparison_form} | supports the vowel environment, but not the Old English form here cell |
 
 ### lade — OE hladan
 
@@ -8818,8 +8818,8 @@ Old English form: _fyrhte_
 
 #### Reconstruction and comparative evidence
 
-The noun belongs to the inherited in-stem abstract _\*furxtīn_, the same family
-as Gothic _faurhtei_ [@Orel2003, 120]. The form followed here, _\*fúrxtīnaz_, is not a
+The noun belongs to the inherited in-stem abstract [_\*furxtīn_]{.iv lang=pgmc sort=furxtin role=source_protoform}, the same family
+as Gothic [_faurhtei_]{.iv lang=goth sort=faurhtei role=comparison_form} [@Orel2003, 120]. The derivational input [_\*fúrxtīnaz_]{.iv lang=pgmc sort=furxtinaz role=selected_input} is not a
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with _-u_ or _-o_ as
@@ -8830,20 +8830,20 @@ better-known lemma forms do.
 
 #### Old English evidence
 
-Bosworth-Toller records _fyrhte_ with textual attestation, and it also
-records nominative forms such as _fyrhtu_ and _fyrhto_
+Bosworth-Toller records [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form} with textual attestation, and it also
+records nominative forms such as [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form} and [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form}
 [@BosworthToller1898, 160]. Clark Hall separately preserves adjective and verb
 material under _fyrht_ / _fyrhtan_, which helps keep the noun distinct from the
 adjectival family [@ClarkHall1960, 141].
 
-The relevant comparison form is therefore the attested oblique _fyrhte_.
+The relevant comparison form is therefore the attested oblique [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form}.
 The nominative lemma forms remain part of the Old English evidence, but the
 Old English form here of this entry is the oblique cell.
 
 #### Development to Old English
 
-From _\*fúrxtīnaz_, the oblique in-stem develops through the loss and weakening
-of the final ending, yielding _fyrhte_. The form compared here therefore
+From [_\*fúrxtīnaz_]{.iv lang=pgmc sort=furxtinaz role=selected_input}, the oblique in-stem develops through the loss and weakening
+of the final ending, yielding [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form}. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
 paradigm.
 
@@ -8859,12 +8859,12 @@ later remodeled nominative line.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation in-stem headword | *furxtīn | broader noun-class label | wider family context | useful lexeme label, but not the cell compared here |
-| remodeled nominative line | nominative in-stem forms | _fyrhtu_ / _fyrhto_ type lemma forms | fyrhtu / fyrhto | genuine OE evidence, but later remodeled |
-| selected oblique singular | *fúrxtīnaz | regular output: _fyrhte_ | fyrhte | exact match between input, output, and attested cell |
+| citation in-stem headword | [_\*furxtīn_]{.iv lang=pgmc sort=furxtin role=source_protoform} | broader noun-class label | wider family context | useful lexeme label, but not the cell compared here |
+| remodeled nominative line | nominative in-stem forms | [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form} / [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form} type lemma forms | [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form} / [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form} | genuine OE evidence, but later remodeled |
+| selected oblique singular | [_\*fúrxtīnaz_]{.iv lang=pgmc sort=furxtinaz role=selected_input} | regular output: [_fyrhte_]{.iv lang=oe sort=fyrhte role=regular_output} | [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form} | exact match between input, output, and attested cell |
 
 The oblique in-stem form is the relevant comparison form. It yields attested
-_fyrhte_ directly, while the more familiar nominative forms belong to a later
+[_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form} directly, while the more familiar nominative forms belong to a later
 analogical layer.
 
 ### hammer — OE hameres
@@ -8916,9 +8916,9 @@ Old English form: _hameres_
 
 #### Reconstruction and comparative evidence
 
-The inherited noun is the masculine a-stem _\*xámaraz_, reflected in Old English
-citation forms such as _hamor_ and _hamer_ [@Kroonen2013, 206; @Orel2003, 197;
-@ClarkHall1960, 160]. The form followed here, _\*xámaras_, is the genitive singular of that
+The inherited noun is the masculine a-stem [_\*xámaraz_]{.iv lang=pgmc sort=xamaraz role=source_protoform}, reflected in Old English
+citation forms such as [_hamor_]{.iv lang=oe sort=hamor role=comparison_form} and [_hamer_]{.iv lang=oe sort=hamer role=comparison_form} [@Kroonen2013, 206; @Orel2003, 197;
+@ClarkHall1960, 160]. The derivational input [_\*xámaras_]{.iv lang=pgmc sort=xamaras role=selected_input} is the genitive singular of that
 same noun rather than a different lexeme.
 
 The genitive matters because the citation tradition is already mixed in its
@@ -8927,21 +8927,21 @@ This is a cell choice within one paradigm, not a change of stem class.
 
 #### Old English evidence
 
-Bosworth-Toller directly records _hameres_ in an Old English genitival
+Bosworth-Toller directly records [_hameres_]{.iv lang=oe sort=hameres role=target_form} in an Old English genitival
 phrase [@BosworthToller1898, 78]. Clark Hall preserves the simplex headword as
-_hamer_ / _hamor_ [@ClarkHall1960, 160].
+[_hamer_]{.iv lang=oe sort=hamer role=comparison_form} / [_hamor_]{.iv lang=oe sort=hamor role=comparison_form} [@ClarkHall1960, 160].
 
-Sievers-Brunner gives a paradigm line _hamor — hamores_, which shows that the
+Sievers-Brunner gives a paradigm line [_hamor_]{.iv lang=oe sort=hamor role=comparison_form} — [_hamores_]{.iv lang=oe sort=hamores role=comparison_form}, which shows that the
 oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
-relevant comparison form here is the attested genitive singular _hameres_.
+relevant comparison form here is the attested genitive singular [_hameres_]{.iv lang=oe sort=hameres role=target_form}.
 
 #### Development to Old English
 
-From _\*xámaras_, Anglo-Frisian brightening and the subsequent merger of
-unstressed _æ_ with _e_ yield _hameres_. The derivation of that oblique form is
+From [_\*xámaras_]{.iv lang=pgmc sort=xamaras role=selected_input}, Anglo-Frisian brightening and the subsequent merger of
+unstressed _æ_ with _e_ yield [_hameres_]{.iv lang=oe sort=hameres role=target_form}. The derivation of that oblique form is
 straightforward once the genitive singular cell is selected.
 
-The noun as a whole retains a mixed citation tradition in _hamor_ and _hamer_,
+The noun as a whole retains a mixed citation tradition in [_hamor_]{.iv lang=oe sort=hamor role=comparison_form} and [_hamer_]{.iv lang=oe sort=hamer role=comparison_form},
 and the selected oblique cell avoids making that variation carry the argument of
 the entry.
 
@@ -8952,9 +8952,9 @@ from the less stable citation tradition.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *xámaraz | regular citation form _hamer_ / _hamor_ | hamor / hamer | good lexical background, but not the Old English form here |
-| genitive singular | *xámaras | regular output: _hameres_ | hameres | exact match between input, output, and attested cell |
-| later oblique tradition | oblique a-stem forms | _hamores_ type evidence | hamores | attested background variant, but not the chosen comparison form |
+| citation nominative singular | [_\*xámaraz_]{.iv lang=pgmc sort=xamaraz role=source_protoform} | regular citation form [_hamer_]{.iv lang=oe sort=hamer role=comparison_form} / [_hamor_]{.iv lang=oe sort=hamor role=comparison_form} | [_hamor_]{.iv lang=oe sort=hamor role=comparison_form} / [_hamer_]{.iv lang=oe sort=hamer role=comparison_form} | good lexical background, but not the Old English form here |
+| genitive singular | [_\*xámaras_]{.iv lang=pgmc sort=xamaras role=selected_input} | regular output: [_hameres_]{.iv lang=oe sort=hameres role=regular_output} | [_hameres_]{.iv lang=oe sort=hameres role=target_form} | exact match between input, output, and attested cell |
+| later oblique tradition | oblique a-stem forms | [_hamores_]{.iv lang=oe sort=hamores role=comparison_form} type evidence | [_hamores_]{.iv lang=oe sort=hamores role=comparison_form} | attested background variant, but not the chosen comparison form |
 
 ### have — OE hæfeþ
 
@@ -9013,35 +9013,35 @@ Old English form: _hæfeþ_
 #### Reconstruction and comparative evidence
 
 The verb belongs to the inherited class-III weak paradigm usually cited under
-_\*xabēną_ and Old English _habban_ [@Kroonen2013, 237; @RingeTaylor2014, 93]. Within
+[_\*xabēną_]{.iv lang=pgmc sort=xabena role=source_protoform} and Old English [_habban_]{.iv lang=oe sort=habban role=comparison_form} [@Kroonen2013, 237; @RingeTaylor2014, 93]. Within
 that paradigm, however, the infinitive and the singular present indicative do
 not continue the same stem. Ringe and Taylor distinguish a _-ja-_ stem in the
 infinitive from a non-geminating -ai- / _-ē-_ stem in the 2sg and 3sg present
 forms [@RingeTaylor2014, 93].
 
-The form followed here, _\*xábēθi_, is therefore the 3sg present cell rather than a
+The derivational input [_\*xábēθi_]{.iv lang=pgmc sort=xabethi role=selected_input} is therefore the 3sg present cell rather than a
 rephrasing of the infinitive. For the present analysis, that finite cell is the
 cleaner comparator for the inherited non-geminating stem.
 
 #### Old English evidence
 
-The ordinary Old English headword is _habban_ [@ClarkHall1960, 157].
-Campbell's Anglian paradigm includes unsyncopated 3sg forms of the _hæfed_ type,
+The ordinary Old English headword is [_habban_]{.iv lang=oe sort=habban role=comparison_form} [@ClarkHall1960, 157].
+Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [_hæfed_]{.iv lang=oe sort=haefed role=comparison_form} type,
 and the present paradigm therefore shows forms of the _hæf-_ type that support
-the normalized target _hæfeþ_ [@Campbell1959, §762].
+the normalized target [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form} [@Campbell1959, §762].
 
 The target form is therefore a normalized finite cell rather than the ordinary
 dictionary lemma. It represents the inherited non-geminating present stem more
-directly than _habban_ does.
+directly than [_habban_]{.iv lang=oe sort=habban role=comparison_form} does.
 
 #### Development to Old English
 
-From _\*xábēθi_, the finite form yields _hæfeþ_ regularly. Ringe and Taylor
-discuss this non-geminating present stem under _habban_
+From [_\*xábēθi_]{.iv lang=pgmc sort=xabethi role=selected_input}, the finite form yields [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form} regularly. Ringe and Taylor
+discuss this non-geminating present stem under [_habban_]{.iv lang=oe sort=habban role=comparison_form}
 [@RingeTaylor2014, 364]. Campbell's Anglian paradigms include unsyncopated 3sg
-forms of the _hæfeþ_ / _hæfed_ type [@Campbell1959, §762].
+forms of the [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form} / [_hæfed_]{.iv lang=oe sort=haefed role=comparison_form} type [@Campbell1959, §762].
 
-The wider lexeme is less straightforward only because the infinitive _habban_
+The wider lexeme is less straightforward only because the infinitive [_habban_]{.iv lang=oe sort=habban role=comparison_form}
 shows later leveling. That difference in paradigm history is what makes the 3sg
 present cell the more useful comparison form.
 
@@ -9052,9 +9052,9 @@ form from the regular 3sg present line.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | _-ja-_ stem of _\*xabēną_ | citation form _habban_ | habban | important headword, but shaped by later leveling |
-| 3sg present | *xábēθi | regular output: _hæfeþ_ | hæfeþ | exact match between input, output, and finite form compared here |
-| syncopated finite tradition | same present stem | _hæfþ_ type evidence | hæfþ | genuine later OE finite form, but not the normalized target used here |
+| citation infinitive | _-ja-_ stem of [_\*xabēną_]{.iv lang=pgmc sort=xabena role=source_protoform} | citation form [_habban_]{.iv lang=oe sort=habban role=comparison_form} | [_habban_]{.iv lang=oe sort=habban role=comparison_form} | important headword, but shaped by later leveling |
+| 3sg present | [_\*xábēθi_]{.iv lang=pgmc sort=xabethi role=selected_input} | regular output: [_hæfeþ_]{.iv lang=oe sort=haefeth role=regular_output} | [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form} | exact match between input, output, and finite form compared here |
+| syncopated finite tradition | same present stem | [_hæfþ_]{.iv lang=oe sort=haefth role=comparison_form} type evidence | [_hæfþ_]{.iv lang=oe sort=haefth role=comparison_form} | genuine later OE finite form, but not the normalized target used here |
 
 ### heaven — OE heofon
 

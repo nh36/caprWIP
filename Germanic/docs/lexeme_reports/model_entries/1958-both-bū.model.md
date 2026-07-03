@@ -18,12 +18,12 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen treats the Germanic numeral under [`*ba-`]{.iv lang=pgmc sort=ba role=source_protoform} and gives the inherited
+Kroonen treats the Germanic numeral under `*ba-` and gives the inherited
 paradigm `*bai, *bans, *bōz/*bōns, *bō`, with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form}, [`bā`]{.iv lang=oe sort=ba role=comparison_form}, and
 neuter [`bū`]{.iv lang=oe sort=bu role=target_form} [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual [`*bō`]{.iv lang=pgmc sort=bo role=selected_input}.
 
-The older explanation of [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} derives it from [`*bō-jen-`]{.iv lang=pgmc sort=bojen role=source_protoform}, and Orel still
+The older explanation of [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} derives it from `*bō-jen-`, and Orel still
 gives `OE bezen (< *bō-jenō)` beside `ON` [`báðir`]{.iv lang=on sort=badir role=comparison_form}, `OFris` [`bēthe`]{.iv lang=ofris sort=bethe role=comparison_form}, `OS` [`be-thia`]{.iv lang=os sort=bethia role=comparison_form},
 and `OHG` [`bēde`]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a `*bō-þ-` analysis instead

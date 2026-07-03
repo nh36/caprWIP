@@ -698,6 +698,63 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
     return candidates
 
 
+def headings_for_source_path(source_path: str) -> list[tuple[int, str]]:
+    path = Path(source_path)
+    if not path.is_absolute():
+        path = REPO_ROOT / source_path
+    if not path.exists():
+        return []
+    headings: list[tuple[int, str]] = []
+    for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        stripped = line.strip()
+        if stripped.startswith("#"):
+            headings.append((line_no, stripped))
+    return headings
+
+
+def nearest_heading_for_source_line(source_path: str, line_no: int) -> str:
+    current = ""
+    for heading_line, heading in headings_for_source_path(source_path):
+        if heading_line > line_no:
+            break
+        current = heading
+    return current
+
+
+def production_line_occurrences(
+    production_rows: list[ProductionOccurrence],
+) -> dict[str, list[tuple[str, int, str]]]:
+    by_source: dict[str, list[tuple[str, int, str]]] = defaultdict(list)
+    for row in production_rows:
+        ref = row.source_ref
+        if ".md:" not in ref:
+            continue
+        path_part, line_part = ref.rsplit(":", 1)
+        if not line_part.isdigit():
+            continue
+        line_no = int(line_part)
+        by_source[path_part].append((row.form, line_no, nearest_heading_for_source_line(path_part, line_no)))
+    return by_source
+
+
+def is_already_indexed_nearby(
+    candidate: CandidateOccurrence,
+    by_source: dict[str, list[tuple[str, int, str]]],
+    *,
+    line_window: int = 5,
+) -> bool:
+    if candidate.candidate_origin == "table_candidate":
+        return False
+    for form, line_no, heading in by_source.get(candidate.source_path, []):
+        if form != candidate.form:
+            continue
+        if candidate.heading and heading and candidate.heading == heading:
+            return True
+        if abs(candidate.line_no - line_no) <= line_window:
+            return True
+    return False
+
+
 def candidate_category(form: str) -> str:
     if not form or ".md" in form or ".pdf" in form or "/" in form or "<" in form or ">" in form or "\\" in form:
         return "possible_garbage"
@@ -890,6 +947,7 @@ def build_audit_rows(
     ignore_overrides: list[dict[str, str]] | None = None,
 ) -> dict[str, list[dict[str, str]]]:
     production_occurrences = {(row.form, row.source_ref) for row in production_rows}
+    nearby_occurrences = production_line_occurrences(production_rows)
     if ignore_overrides is None:
         _, ignore_overrides = load_overrides()
     buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -909,6 +967,8 @@ def build_audit_rows(
         category = candidate_category(candidate.form)
         if any(override_matches(override, form=candidate.form, source_ref=candidate.source_ref) for override in ignore_overrides):
             category = "ignored_by_override"
+        elif category == "needs_review" and is_already_indexed_nearby(candidate, nearby_occurrences):
+            category = "already_indexed_nearby"
         entry = {
             "form": candidate.form,
             "source_ref": candidate.source_ref,
@@ -1119,6 +1179,7 @@ def write_audit(
         [entry for entry in needs_review_entries if entry.get("candidate_origin") == "table_candidate"],
         columns=("form", "source_ref", "heading", "context"),
     )
+    render_bucket("Already indexed nearby", buckets.get("already_indexed_nearby", []), columns=("form", "source_ref", "heading", "candidate_origin"))
     render_bucket("Ignored fragments or sequences", buckets.get("ignored_fragment", []))
     render_bucket("Ignored by override", buckets.get("ignored_by_override", []))
     render_bucket("Possible extraction garbage", buckets.get("possible_garbage", []))

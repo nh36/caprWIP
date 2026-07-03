@@ -296,6 +296,42 @@ def assert_ordinary_glosses_ignored() -> None:
     assert any(entry["form"] == "friend" for entry in audit.get("ignored_by_override", []))
 
 
+def assert_already_indexed_nearby_bucket() -> None:
+    with tempfile.TemporaryDirectory() as tmpdir:
+        fixture = Path(tmpdir) / "synthetic-nearby.md"
+        fixture.write_text(
+            "### Old English evidence\n"
+            "[cniht]{.iv lang=oe sort=cniht role=target_form}\n"
+            "cniht\n",
+            encoding="utf-8",
+        )
+        tags = explicit_tag_occurrences(paths=[fixture])
+        store = {}
+        for row in tags:
+            add_production(
+                store,
+                language=row["language"],
+                form=row["form"],
+                display=row["display"],
+                sort_key=row["sort_key"],
+                form_role=row["form_role"],
+                source_scope=row["source_scope"],
+                source_ref=row["source_ref"],
+                origin=row["origin"],
+            )
+        synthetic = CandidateOccurrence(
+            form="cniht",
+            source_ref=f"{fixture.as_posix()}:3",
+            source_path=fixture.as_posix(),
+            line_no=3,
+            heading="### Old English evidence",
+            line_text="cniht",
+            candidate_origin="broad_prose_candidate",
+        )
+        audit = build_audit_rows(list(store.values()), candidates=[synthetic], ignore_overrides=[])
+    assert any(entry["form"] == "cniht" for entry in audit.get("already_indexed_nearby", []))
+
+
 def assert_intermediate_trace_forms_excluded() -> None:
     rows = build_production_rows()
     excluded = excluded_intermediate_trace_forms()
@@ -353,6 +389,7 @@ def main() -> None:
     assert_optional_role_support()
     assert_table_audit_scanner()
     assert_ordinary_glosses_ignored()
+    assert_already_indexed_nearby_bucket()
     assert_intermediate_trace_forms_excluded()
     assert_generated_consistency()
     assert_no_derivational_expression_rows()

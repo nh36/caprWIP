@@ -18,9 +18,9 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited noun is the masculine a-stem `*xámaraz`, reflected in Old English
-citation forms such as `hamor` and `hamer` [@Kroonen2013, 206; @Orel2003, 197;
-@ClarkHall1960, 160]. The selected input `*xámaras` is the genitive singular of that
+The inherited noun is the masculine a-stem [`*xámaraz`]{.iv lang=pgmc sort=xamaraz role=source_protoform}, reflected in Old English
+citation forms such as [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} and [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} [@Kroonen2013, 206; @Orel2003, 197;
+@ClarkHall1960, 160]. The selected input [`*xámaras`]{.iv lang=pgmc sort=xamaras role=selected_input} is the genitive singular of that
 same noun rather than a different lexeme.
 
 The genitive matters because the citation tradition is already mixed in its
@@ -29,21 +29,21 @@ This is a cell choice within one paradigm, not a change of stem class.
 
 ### Old English evidence
 
-Bosworth-Toller directly records **`hameres`** in an Old English genitival
+Bosworth-Toller directly records **[`hameres`]{.iv lang=oe sort=hameres role=target_form}** in an Old English genitival
 phrase [@BosworthToller1898, 78]. Clark Hall preserves the simplex headword as
-`hamer` / `hamor` [@ClarkHall1960, 160].
+[`hamer`]{.iv lang=oe sort=hamer role=comparison_form} / [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} [@ClarkHall1960, 160].
 
-Sievers-Brunner gives a paradigm line `hamor — hamores`, which shows that the
+Sievers-Brunner gives a paradigm line [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} — [`hamores`]{.iv lang=oe sort=hamores role=comparison_form}, which shows that the
 oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
-relevant comparison form here is the attested genitive singular `hameres`.
+relevant comparison form here is the attested genitive singular [`hameres`]{.iv lang=oe sort=hameres role=target_form}.
 
 ### Development to Old English
 
-From `*xámaras`, Anglo-Frisian brightening and the subsequent merger of
-unstressed `æ` with `e` yield `hameres`. The derivation of that oblique form is
+From [`*xámaras`]{.iv lang=pgmc sort=xamaras role=selected_input}, Anglo-Frisian brightening and the subsequent merger of
+unstressed `æ` with `e` yield [`hameres`]{.iv lang=oe sort=hameres role=target_form}. The derivation of that oblique form is
 straightforward once the genitive singular cell is selected.
 
-The noun as a whole retains a mixed citation tradition in `hamor` and `hamer`,
+The noun as a whole retains a mixed citation tradition in [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} and [`hamer`]{.iv lang=oe sort=hamer role=comparison_form},
 and the selected oblique cell avoids making that variation carry the argument of
 the entry.
 
@@ -54,6 +54,6 @@ from the less stable citation tradition.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *xámaraz | regular citation form `hamer` / `hamor` | hamor / hamer | good lexical background, but not the selected target |
-| selected genitive singular | *xámaras | compact-trace output: `hameres` | hameres | exact match between input, output, and attested cell |
-| later oblique tradition | oblique a-stem forms | `hamores` type evidence | hamores | attested background variant, but not the chosen comparison form |
+| citation nominative singular | [`*xámaraz`]{.iv lang=pgmc sort=xamaraz role=source_protoform} | regular citation form [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} / [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} | [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} / [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} | good lexical background, but not the selected target |
+| selected genitive singular | [`*xámaras`]{.iv lang=pgmc sort=xamaras role=selected_input} | compact-trace output: [`hameres`]{.iv lang=oe sort=hameres role=regular_output} | [`hameres`]{.iv lang=oe sort=hameres role=target_form} | exact match between input, output, and attested cell |
+| later oblique tradition | oblique a-stem forms | [`hamores`]{.iv lang=oe sort=hamores role=comparison_form} type evidence | [`hamores`]{.iv lang=oe sort=hamores role=comparison_form} | attested background variant, but not the chosen comparison form |
