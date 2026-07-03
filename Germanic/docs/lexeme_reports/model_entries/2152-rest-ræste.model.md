@@ -18,8 +18,8 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen treats the noun as a feminine ō-stem `*rastō-`, continued by Old English
-`ræst` [@Kroonen2013, 445]. The selected input `*rástōz` therefore does not replace
+Kroonen treats the noun as a feminine ō-stem [`*rastō-`]{.iv lang=pgmc sort=rasto role=source_protoform}, continued by Old English
+[`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@Kroonen2013, 445]. The selected input [`*rástōz`]{.iv lang=pgmc sort=rastoz role=selected_input} therefore does not replace
 the lexeme-level headword. It identifies one oblique singular cell on the side of
 the paradigm that yields `ræste`.
 
@@ -30,12 +30,12 @@ to a nominative singular that would remain `rast`.
 
 ### Old English evidence
 
-The ordinary Old English citation form is `ræst` [@Kroonen2013, 445]. Clark
-Hall likewise gives `ræst` [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of `ræste`, including prepositional
+The ordinary Old English citation form is [`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@Kroonen2013, 445]. Clark
+Hall likewise gives [`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [`ræste`]{.iv lang=oe sort=raeste role=target_form}, including prepositional
 examples such as `on ræste` and `tó ræste` [@BosworthToller1898, 121].
 
-The comparison form used here is therefore an attested oblique `ræste`, not a
-reconstructed surrogate. The dictionary headword `ræst` remains an equally real
+The comparison form used here is therefore an attested oblique [`ræste`]{.iv lang=oe sort=raeste role=target_form}, not a
+reconstructed surrogate. The dictionary headword [`ræst`]{.iv lang=oe sort=raest role=comparison_form} remains an equally real
 part of the Old English record.
 
 ### Development to Old English
@@ -56,5 +56,5 @@ from the oblique singular chosen here.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *rastō | expected regular outcome `rast` | ræst | useful background, but not the cell that matches attested oblique `ræste` |
-| selected oblique singular | *rástōz | compact-trace output: `ræste` | ræste | exact match between selected input and attested OE oblique form |
+| citation nominative singular | [`*rastō`]{.iv lang=pgmc sort=rasto role=source_protoform} | expected regular outcome `rast` | [`ræst`]{.iv lang=oe sort=raest role=comparison_form} | useful background, but not the cell that matches attested oblique `ræste` |
+| selected oblique singular | [`*rástōz`]{.iv lang=pgmc sort=rastoz role=selected_input} | compact-trace output: [`ræste`]{.iv lang=oe sort=raeste role=regular_output} | [`ræste`]{.iv lang=oe sort=raeste role=target_form} | exact match between selected input and attested OE oblique form |

@@ -19,10 +19,10 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Ringe and Taylor cite `gen.sg. *nahtiz`, `dat.sg. *nahti`, and `nom.pl.
-*nahtiz` for the high-vowel side of the paradigm, and derive West Saxon `niht`
-from that side [@RingeTaylor2014, 240]. The citation reconstruction `*náxtz`
+*nahtiz` for the high-vowel side of the paradigm, and derive West Saxon [`niht`]{.iv lang=oe sort=niht role=target_form}
+from that side [@RingeTaylor2014, 240]. The citation reconstruction [`*náxtz`]{.iv lang=pgmc sort=naxtz role=source_protoform}
 therefore belongs to the nominative-like headword, while the selected input
-`*náxti` represents the dative-singular cell.
+[`*náxti`]{.iv lang=pgmc sort=naxti role=selected_input} represents the dative-singular cell.
 
 That distinction matters because the word later became the model for endingless
 datives. Ringe and Taylor explicitly explain forms such as `dæg` by analogy
@@ -30,11 +30,11 @@ with `dat. sg. niht < *nahti` [@RingeTaylor2014, 380].
 
 ### Old English evidence
 
-Clark Hall lemmatizes `niht` and cross-references forms such as `neaht`,
-`neht`, and `nieht` [@ClarkHall1960, 215]. Campbell likewise preserves the
-fluctuation between `neaht` and `niht`, giving genitive `nihte, nihtes`,
+Clark Hall lemmatizes [`niht`]{.iv lang=oe sort=niht role=target_form} and cross-references forms such as [`neaht`]{.iv lang=oe sort=neaht role=comparison_form},
+[`neht`]{.iv lang=oe sort=neht role=comparison_form}, and [`nieht`]{.iv lang=oe sort=nieht role=comparison_form} [@ClarkHall1960, 215]. Campbell likewise preserves the
+fluctuation between [`neaht`]{.iv lang=oe sort=neaht role=comparison_form} and [`niht`]{.iv lang=oe sort=niht role=target_form}, giving genitive `nihte, nihtes`,
 dative `niht, nihte`, nominative plural `niht`, and the contrasting
-plural-side forms represented by `neahtas` [@Campbell1959, §628.3].
+plural-side forms represented by [`neahtas`]{.iv lang=oe sort=neahtas role=comparison_form} [@Campbell1959, §628.3].
 
 The comparison form used here is therefore an attested Old English `niht`, not a
 reconstructed substitute. The broader lexical record still preserves the
@@ -57,5 +57,5 @@ attested Old English form.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *náxtz | expected non-umlauted outcome `neaht` | neaht | useful background, but not the selected comparison for `niht` |
-| selected dative singular | *náxti | compact-trace output: `niht` | niht | exact match between input, output, and paradigm cell |
+| citation nominative singular | [`*náxtz`]{.iv lang=pgmc sort=naxtz role=source_protoform} | expected non-umlauted outcome [`neaht`]{.iv lang=oe sort=neaht role=regular_output} | [`neaht`]{.iv lang=oe sort=neaht role=comparison_form} | useful background, but not the selected comparison for `niht` |
+| selected dative singular | [`*náxti`]{.iv lang=pgmc sort=naxti role=selected_input} | compact-trace output: [`niht`]{.iv lang=oe sort=niht role=regular_output} | [`niht`]{.iv lang=oe sort=niht role=target_form} | exact match between input, output, and paradigm cell |

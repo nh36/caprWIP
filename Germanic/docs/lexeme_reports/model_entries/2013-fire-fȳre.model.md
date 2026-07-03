@@ -20,17 +20,17 @@ DERIVATION_CLASS: known_unmodelled
 
 Kroonen places the lexeme in a heteroclitic family `*fōr ~ *fun-` and explains
 the front-mutated West Germanic forms from an oblique form of the
-`*fu(w)eri` type [@Kroonen2013, 151]. The selected input `*fūri` therefore does not
+`*fu(w)eri` type [@Kroonen2013, 151]. The selected input [`*fūri`]{.iv lang=pgmc sort=furi role=selected_input} therefore does not
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 
 That distinction matters because the Old English target combines a regular
-inherited form `fȳr` with an attested analogical surface form `fȳre`.
+inherited form [`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} with an attested analogical surface form [`fȳre`]{.iv lang=oe sort=fyre role=target_form}.
 
 ### Old English evidence
 
-Bosworth-Toller records **`fyr`** as the noun 'fire' and also preserves oblique
-**`fyre`** in the Old English record [@BosworthToller1898, 288]. The first is the
+Bosworth-Toller records **[`fyr`]{.iv lang=oe sort=fyr role=comparison_form}** as the noun 'fire' and also preserves oblique
+**[`fyre`]{.iv lang=oe sort=fyre role=target_form}** in the Old English record [@BosworthToller1898, 288]. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final `-e` within the
 paradigm.
@@ -41,11 +41,11 @@ morphological remodeling.
 
 ### Development to Old English
 
-From `*fūri`, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
-loss of the final high vowel after a heavy syllable yields **`fȳr`**
+From [`*fūri`]{.iv lang=pgmc sort=furi role=selected_input}, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields **[`fȳr`]{.iv lang=oe sort=fyr role=regular_output}**
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 
-`fȳre` is later than that inherited output. Its final `-e` belongs to
+[`fȳre`]{.iv lang=oe sort=fyre role=target_form} is later than that inherited output. Its final `-e` belongs to
 analogical restoration in the Old English paradigm rather than to the original
 Proto-Germanic ending. The form therefore remains a known but unmodelled
 remodelling: the deterministic phonology is regular, but the attested surface
@@ -60,5 +60,5 @@ form and from the later analogical surface result.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level heteroclitic headword | `*fōr ~ *fun-` | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
-| inherited oblique cell | *fūri | compact-trace output: `fȳr` | fȳr | regular inherited output from the selected input |
-| later analogical surface form | — | attested `fȳre` with restored `-e` | fȳre | genuine OE target, but not the direct phonological output |
+| inherited oblique cell | [`*fūri`]{.iv lang=pgmc sort=furi role=selected_input} | compact-trace output: [`fȳr`]{.iv lang=oe sort=fyr role=regular_output} | [`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} | regular inherited output from the selected input |
+| later analogical surface form | — | attested [`fȳre`]{.iv lang=oe sort=fyre role=target_form} with restored `-e` | [`fȳre`]{.iv lang=oe sort=fyre role=target_form} | genuine OE target, but not the direct phonological output |
