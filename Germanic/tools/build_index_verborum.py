@@ -22,6 +22,7 @@ MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
+TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
 UNRESOLVED_BASELINE_PATH = BOOK_DIR / "index_verborum_unresolved_baseline.tsv"
 LANGUAGE_REGISTRY_PATH = BOOK_DIR / "index_verborum_languages.tsv"
 INDEX_HEADER_PATH = ASSEMBLY_DIR / "book_draft_index_registry.tex"
@@ -47,6 +48,20 @@ OVERRIDE_FIELDS = [
     "source_ref",
     "note",
 ]
+TABLE_SUGGESTION_FIELDS = [
+    "source_ref",
+    "nearest_heading",
+    "row_label",
+    "form",
+    "display",
+    "suggested_language",
+    "suggested_role",
+    "confidence",
+    "reason",
+    "context",
+]
+TABLE_SEMANTIC_SOURCE_SCOPE = "table_semantic_auto"
+TABLE_SEMANTIC_ORIGIN = "table_semantic_rule"
 
 
 def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str, str], dict[str, str]]:
@@ -114,6 +129,111 @@ TABLE_STOPWORDS = {
     "inherited",
     "ritual",
 }
+TABLE_SELECTED_PHRASES = (
+    "selected input",
+    "selected dative",
+    "selected genitive",
+    "selected oblique",
+    "selected weak noun",
+    "selected strong",
+    "selected i-stem",
+    "selected a-stem",
+    "selected oe-facing input",
+    "oe-facing input",
+    "modeled input",
+    "form followed here",
+    "selected transponent",
+    "selected weak feminine",
+    "selected class-i",
+    "selected class-ii",
+    "selected class-vi",
+    "selected strong verner-grade input",
+    "selected pre-syncope input",
+    "selected imperative singular",
+    "selected present third singular",
+    "selected 3sg present",
+    "selected derived oe-facing formation",
+    "selected weak masculine noun",
+    "selected e-grade nominative",
+    "selected archaic finite cell",
+    "selected oe-oriented transponent",
+)
+TABLE_OUTPUT_PHRASES = (
+    "regular output",
+    "trace output",
+    "compact-trace output",
+    "documented output",
+    "computed output",
+    "exact match",
+)
+TABLE_SOURCE_PHRASES = (
+    "citation",
+    "citation reconstruction",
+    "comparative headword",
+    "broader family label",
+    "lexeme-level headword",
+    "lexeme-level infinitive",
+    "ordinary lexeme line",
+    "source label",
+    "comparative label",
+    "citation nominative singular",
+    "citation infinitive",
+    "citation in-stem headword",
+    "base noun",
+    "generalized comparative label",
+    "competing citation reconstruction",
+    "earlier etymological headword",
+    "later g-bearing comparative label",
+    "comparative citation",
+    "comparative n-stem line",
+    "comparative i-stem line",
+    "comparative family label",
+    "broader comparative headword",
+)
+TABLE_COMPARISON_PHRASES = (
+    "attested variant",
+    "dictionary headword",
+    "control form",
+    "later analogical",
+    "non-selected",
+    "competing branch",
+    "rejected path",
+    "broader paradigm",
+    "related formation",
+    "variant cluster",
+    "same noun family",
+    "family background",
+    "later oblique tradition",
+    "later reduced",
+    "related finite form",
+    "genuine oe doublet",
+    "companion",
+    "dialectal",
+    "variant line",
+    "background variant",
+    "broader oe variant cluster",
+    "plural control",
+)
+TABLE_NEGATIVE_PHRASES = (
+    "wrong vowel",
+    "wrong ending",
+    "non-match",
+    "does not reach the target",
+    "retained too long",
+    "negative control",
+    "poorer comparison",
+    "does not account cleanly",
+    "not the selected target",
+    "but not the target",
+    "not the direct source",
+    "excluded by",
+)
+TABLE_TARGET_PHRASES = (
+    "selected target",
+    "attested target",
+    "old english target",
+    "selected attested cell",
+)
 BARE_TABLE_CELL_RE = re.compile(r"^\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*(?:/\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*)*$")
 TRANSLIT_MAP = {
     "þ": "th",
@@ -229,8 +349,8 @@ class ProductionOccurrence:
     status: str = "auto"
 
     @property
-    def key(self) -> tuple[str, str, str, str, str]:
-        return (self.language, self.form, self.display, self.source_scope, self.source_ref)
+    def key(self) -> tuple[str, str, str, str, str, str]:
+        return (self.language, self.form, self.display, self.form_role, self.source_scope, self.source_ref)
 
 
 @dataclass(frozen=True)
@@ -242,6 +362,22 @@ class CandidateOccurrence:
     heading: str
     line_text: str
     candidate_origin: str = "broad_prose_candidate"
+
+
+@dataclass(frozen=True)
+class TableFormMention:
+    form: str
+    source_ref: str
+    source_path: str
+    line_no: int
+    heading: str
+    line_text: str
+    row_label: str
+    row_text: str
+    cell_header: str
+    cell_kind: str
+    cell_text: str
+    candidate_origin: str = "table_candidate"
 
 
 def transliterate_sort_key(text: str) -> str:
@@ -267,6 +403,13 @@ def strip_markup(text: str) -> str:
             value = value[len(prefix) : len(value) - len(suffix)]
             break
     return value.strip("`.,;:!?()[]{}“”\"' ")
+
+
+def normalize_semantic_text(text: str) -> str:
+    text = EXPLICIT_TAG_RE.sub(lambda match: strip_markup(match.group("content")), text)
+    text = MARKUP_FORM_RE.sub(lambda match: strip_markup(next(group for group in match.groups() if group)), text)
+    text = re.sub(r"\s+", " ", text)
+    return text.casefold().strip()
 
 
 def oe_target_display(counterpart: str, derivation_class: str) -> str:
@@ -343,7 +486,7 @@ def stage_to_language(label: str, form: str) -> str:
 
 
 def add_production(
-    store: dict[tuple[str, str, str, str, str], ProductionOccurrence],
+    store: dict[tuple[str, str, str, str, str, str], ProductionOccurrence],
     *,
     language: str,
     form: str,
@@ -363,7 +506,7 @@ def add_production(
     if form_role not in ALLOWED_FORM_ROLES:
         raise ValueError(f"Unknown index verborum form role: {form_role}")
     visible = display or cleaned
-    key = (language, cleaned, visible, source_scope, source_ref)
+    key = (language, cleaned, visible, form_role, source_scope, source_ref)
     if key not in store:
         store[key] = ProductionOccurrence(
             language=language,
@@ -559,6 +702,19 @@ def header_supports_table_audit(header: str) -> bool:
     return any(keyword in lowered for keyword in TABLE_AUDIT_HEADER_KEYWORDS)
 
 
+def table_header_kind(header: str) -> str:
+    lowered = normalize_semantic_text(header)
+    if "candidate input" in lowered or "input or form" in lowered:
+        return "input"
+    if "oe comparison form" in lowered:
+        return "comparison"
+    if "outcome" in lowered or "oe output" in lowered or "oe relation" in lowered:
+        return "output"
+    if any(token in lowered for token in ("form", "branch", "label", "notation", "stage")):
+        return "form"
+    return ""
+
+
 def extract_forms_from_markup(text: str) -> list[str]:
     forms: list[str] = []
     seen: set[str] = set()
@@ -584,12 +740,12 @@ def extract_forms_from_markup(text: str) -> list[str]:
     return forms
 
 
-def table_candidates_from_path(path: Path, *, allow_non_model_entry: bool = False) -> list[CandidateOccurrence]:
+def table_form_mentions_from_path(path: Path, *, allow_non_model_entry: bool = False) -> list[TableFormMention]:
     if not allow_non_model_entry and path.parent != MODEL_ENTRIES_DIR:
         return []
     rel = relative_source_path(path)
     lines = path.read_text(encoding="utf-8").splitlines()
-    candidates: list[CandidateOccurrence] = []
+    mentions: list[TableFormMention] = []
     current_heading = ""
     idx = 0
     while idx < len(lines):
@@ -608,30 +764,297 @@ def table_candidates_from_path(path: Path, *, allow_non_model_entry: bool = Fals
         if len(header_cells) != len(delimiter_cells) or not is_markdown_table_delimiter(delimiter_cells):
             idx += 1
             continue
-        relevant_columns = {
-            col_idx for col_idx, header in enumerate(header_cells) if header_supports_table_audit(header)
-        }
+        header_kinds = [table_header_kind(header) for header in header_cells]
         idx += 2
         while idx < len(lines) and lines[idx].strip().startswith("|"):
-            row_line = lines[idx]
-            row_cells = split_markdown_table_row(row_line)
-            for col_idx in relevant_columns:
-                if col_idx >= len(row_cells):
+            row_line = lines[idx].strip()
+            row_cells = split_markdown_table_row(lines[idx])
+            row_label = row_cells[0].strip() if row_cells else ""
+            row_text = " | ".join(row_cells)
+            for col_idx, cell_text in enumerate(row_cells):
+                if col_idx >= len(header_kinds):
                     continue
-                for form in extract_forms_from_markup(row_cells[col_idx]):
-                    candidates.append(
-                        CandidateOccurrence(
+                cell_kind = header_kinds[col_idx]
+                if not cell_kind:
+                    continue
+                cell_header = header_cells[col_idx]
+                for form in extract_forms_from_markup(cell_text):
+                    mentions.append(
+                        TableFormMention(
                             form=form,
                             source_ref=f"{rel}:{idx + 1}",
                             source_path=rel,
                             line_no=idx + 1,
                             heading=current_heading,
-                            line_text=row_line.strip(),
-                            candidate_origin="table_candidate",
+                            line_text=row_line,
+                            row_label=row_label,
+                            row_text=row_text,
+                            cell_header=cell_header,
+                            cell_kind=cell_kind,
+                            cell_text=cell_text,
                         )
                     )
             idx += 1
-    return candidates
+    return mentions
+
+
+def manifest_rows_by_model_entry_path() -> dict[str, dict[str, str]]:
+    return {row["model_entry_path"]: row for row in parse_manifest_rows() if row.get("model_entry_path")}
+
+
+def entry_target_forms(entry_row: dict[str, str] | None) -> set[str]:
+    if not entry_row:
+        return set()
+    counterpart = (entry_row.get("counterpart") or "").strip()
+    if not counterpart:
+        return set()
+    forms = {counterpart}
+    if entry_row.get("derivation_class") == "reconstructed_oe":
+        forms.add(f"*{counterpart}")
+    return forms
+
+
+def contains_phrase(text: str, phrases: tuple[str, ...]) -> bool:
+    return any(phrase in text for phrase in phrases)
+
+
+def explicit_language_hints(text: str) -> set[str]:
+    hints: set[str] = set()
+    patterns = [
+        (r"\bold norse\b|\bon\b", "on"),
+        (r"\bold saxon\b|\bos\b", "os"),
+        (r"\bold high german\b|\bohg\b", "ohg"),
+        (r"\bold frisian\b|\bofri\b|\bofris\b", "ofris"),
+        (r"\bgothic\b|\bgoth\b", "goth"),
+        (r"\bold dutch\b", "odutch"),
+        (r"\bmiddle dutch\b", "mdutch"),
+        (r"\bdutch\b", "dutch"),
+        (r"\bgerman\b", "german"),
+        (r"\bmodern english\b", "modeng"),
+        (r"\bmiddle english\b", "me"),
+        (r"\bold irish\b", "oirish"),
+        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b|\boe\b", "oe"),
+        (r"\bpgmc\b|\bproto-germanic\b", "pgmc"),
+        (r"\bpwgmc\b|\bproto-west germanic\b", "pwgmc"),
+        (r"\bnwgmc\b|\bproto-northwest germanic\b", "nwgmc"),
+        (r"\bpre-oe\b|\bpre-old-english\b", "preoe"),
+    ]
+    for pattern, code in patterns:
+        if re.search(pattern, text):
+            hints.add(code)
+    return hints
+
+
+def infer_table_semantic_language(
+    mention: TableFormMention,
+    role: str,
+    target_forms: set[str],
+) -> tuple[str, bool]:
+    row_text = normalize_semantic_text(mention.row_text)
+    cell_text = normalize_semantic_text(mention.cell_text)
+    hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
+    if mention.form in target_forms:
+        return "oe", True
+    if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
+        for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
+            if code in hints:
+                return code, True
+        return "pgmc", True
+    if role in {"target_form", "regular_output"}:
+        if len(hints - {"oe"}) == 0:
+            return "oe", True
+    if role == "comparison_form":
+        if mention.cell_kind in {"comparison", "output"} and len(hints - {"oe"}) == 0:
+            return "oe", True
+        if len(hints) == 1:
+            return next(iter(hints)), True
+        if mention.form in target_forms:
+            return "oe", True
+    return "", False
+
+
+def collect_table_semantic_results(
+    production_rows: list[ProductionOccurrence],
+) -> dict[str, list[dict[str, str]]]:
+    production_pairs = {(row.form, row.source_ref) for row in production_rows}
+    manifest_map = manifest_rows_by_model_entry_path()
+    auto_rows: list[dict[str, str]] = []
+    suggestions: list[dict[str, str]] = []
+    ignored: list[dict[str, str]] = []
+    seen_auto: set[tuple[str, str, str, str]] = set()
+    seen_suggest: set[tuple[str, str, str, str]] = set()
+    seen_ignored: set[tuple[str, str]] = set()
+
+    for path in sorted(MODEL_ENTRIES_DIR.glob("*.model.md")):
+        source_path = relative_source_path(path)
+        entry_row = manifest_map.get(source_path)
+        target_forms = entry_target_forms(entry_row)
+        for mention in table_form_mentions_from_path(path):
+            pair = (mention.form, mention.source_ref)
+            if pair in production_pairs:
+                continue
+            if mention.form.casefold() in TABLE_STOPWORDS or candidate_category(mention.form) != "needs_review":
+                if pair not in seen_ignored:
+                    seen_ignored.add(pair)
+                    ignored.append(
+                        {
+                            "source_ref": mention.source_ref,
+                            "nearest_heading": mention.heading,
+                            "row_label": mention.row_label,
+                            "form": mention.form,
+                            "display": mention.form,
+                            "suggested_language": "",
+                            "suggested_role": "",
+                            "confidence": "ignore",
+                            "reason": "table stopword or fragment",
+                            "context": mention.line_text,
+                        }
+                    )
+                continue
+
+            semantic_text = normalize_semantic_text(
+                " | ".join([mention.heading, mention.row_label, mention.row_text, mention.cell_header, mention.cell_text])
+            )
+            is_selected = contains_phrase(semantic_text, TABLE_SELECTED_PHRASES)
+            is_source = contains_phrase(semantic_text, TABLE_SOURCE_PHRASES)
+            is_output = contains_phrase(semantic_text, TABLE_OUTPUT_PHRASES)
+            is_comparison = contains_phrase(semantic_text, TABLE_COMPARISON_PHRASES)
+            is_negative = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
+            is_target = contains_phrase(semantic_text, TABLE_TARGET_PHRASES)
+
+            role_candidates: list[tuple[str, str, str]] = []
+            if mention.cell_kind == "input":
+                if is_selected and not is_negative:
+                    role_candidates.append(("selected_input", "auto", "selected-input row"))
+                elif is_source:
+                    role_candidates.append(("source_protoform", "auto", "source-protoform row"))
+                elif is_comparison or is_negative:
+                    role_candidates.append(("comparison_form", "suggest", "comparison/negative row"))
+            elif mention.cell_kind == "output":
+                if is_output:
+                    role_candidates.append(("regular_output", "auto", "output row"))
+                    if mention.form in target_forms or is_target:
+                        role_candidates.append(("target_form", "auto", "output matches target"))
+                elif mention.form in target_forms and is_target:
+                    role_candidates.append(("target_form", "auto", "explicit target row"))
+                elif is_comparison or is_source or is_negative:
+                    role_candidates.append(("comparison_form", "suggest", "output used as comparison"))
+            elif mention.cell_kind == "comparison":
+                if mention.form in target_forms and (is_target or is_output or is_selected):
+                    role_candidates.append(("target_form", "auto", "comparison cell matches target"))
+                elif is_comparison or is_source or is_negative or is_output:
+                    role_candidates.append(("comparison_form", "auto", "comparison cell"))
+            elif mention.cell_kind == "form":
+                if mention.form in target_forms and (is_target or is_selected or is_output):
+                    role_candidates.append(("target_form", "auto", "form row target"))
+                    if is_output:
+                        role_candidates.append(("regular_output", "auto", "form row regular output"))
+                elif mention.form.startswith("*") and is_selected and not is_negative:
+                    role_candidates.append(("selected_input", "auto", "selected form row"))
+                elif mention.form.startswith("*") and is_source:
+                    role_candidates.append(("source_protoform", "auto", "source form row"))
+                elif is_comparison or is_negative or is_source:
+                    role_candidates.append(("comparison_form", "auto", "comparison form row"))
+
+            for role, confidence, reason in role_candidates:
+                language, confident_language = infer_table_semantic_language(mention, role, target_forms)
+                if not language:
+                    key = (mention.form, mention.source_ref, role, "suggest")
+                    auto_key = ("", mention.form, role, mention.source_ref)
+                    if key not in seen_suggest:
+                        seen_suggest.add(key)
+                        suggestions.append(
+                            {
+                                "source_ref": mention.source_ref,
+                                "nearest_heading": mention.heading,
+                                "row_label": mention.row_label,
+                                "form": mention.form,
+                                "display": mention.form,
+                                "suggested_language": "",
+                                "suggested_role": role,
+                                "confidence": "suggest",
+                                "reason": f"{reason}; language unclear",
+                                "context": mention.line_text,
+                            }
+                        )
+                    continue
+                if confidence == "auto" and role == "comparison_form" and mention.cell_kind == "form" and not confident_language:
+                    confidence = "suggest"
+                if confidence == "auto" and role == "comparison_form" and is_negative:
+                    confidence = "suggest"
+                if confidence == "auto":
+                    key = (language, mention.form, role, mention.source_ref)
+                    if key not in seen_auto:
+                        seen_auto.add(key)
+                        auto_rows.append(
+                            {
+                                "language": language,
+                                "form": mention.form,
+                                "display": mention.form,
+                                "sort_key": transliterate_sort_key(mention.form),
+                                "form_role": role,
+                                "source_scope": TABLE_SEMANTIC_SOURCE_SCOPE,
+                                "source_ref": mention.source_ref,
+                                "origin": TABLE_SEMANTIC_ORIGIN,
+                                "status": "auto",
+                            }
+                        )
+                else:
+                    key = (mention.form, mention.source_ref, role, "suggest")
+                    auto_key = (language, mention.form, role, mention.source_ref)
+                    if auto_key not in seen_auto and key not in seen_suggest:
+                        seen_suggest.add(key)
+                        suggestions.append(
+                            {
+                                "source_ref": mention.source_ref,
+                                "nearest_heading": mention.heading,
+                                "row_label": mention.row_label,
+                                "form": mention.form,
+                                "display": mention.form,
+                                "suggested_language": language,
+                                "suggested_role": role,
+                                "confidence": "suggest",
+                                "reason": reason,
+                                "context": mention.line_text,
+                            }
+                        )
+
+    auto_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in auto_rows}
+    suggestions = [
+        row
+        for row in suggestions
+        if (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"]) not in auto_keys
+    ]
+    return {
+        "auto_rows": auto_rows,
+        "suggestions": suggestions,
+        "ignored": ignored,
+        "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in suggestions],
+        "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in ignored],
+    }
+
+
+def write_table_suggestions(path: Path, suggestions: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=TABLE_SUGGESTION_FIELDS)
+        writer.writeheader()
+        for row in sorted(suggestions, key=lambda item: (item["source_ref"], item["form"], item["suggested_role"])):
+            writer.writerow(row)
+
+
+def table_candidates_from_path(path: Path, *, allow_non_model_entry: bool = False) -> list[CandidateOccurrence]:
+    return [
+        CandidateOccurrence(
+            form=mention.form,
+            source_ref=mention.source_ref,
+            source_path=mention.source_path,
+            line_no=mention.line_no,
+            heading=mention.heading,
+            line_text=mention.line_text,
+            candidate_origin=mention.candidate_origin,
+        )
+        for mention in table_form_mentions_from_path(path, allow_non_model_entry=allow_non_model_entry)
+    ]
 
 
 def excluded_intermediate_trace_forms() -> list[dict[str, str]]:
@@ -751,6 +1174,237 @@ def production_line_occurrences(
     return by_source
 
 
+def manifest_rows_by_model_entry_path() -> dict[str, dict[str, str]]:
+    return {row["model_entry_path"]: row for row in parse_manifest_rows() if row.get("model_entry_path")}
+
+
+def entry_target_forms(entry_row: dict[str, str] | None) -> set[str]:
+    if not entry_row:
+        return set()
+    counterpart = (entry_row.get("counterpart") or "").strip()
+    if not counterpart:
+        return set()
+    forms = {counterpart}
+    if entry_row.get("derivation_class") == "reconstructed_oe":
+        forms.add(f"*{counterpart}")
+    return forms
+
+
+def contains_phrase(text: str, phrases: tuple[str, ...]) -> bool:
+    return any(phrase in text for phrase in phrases)
+
+
+def explicit_language_hints(text: str) -> set[str]:
+    hints: set[str] = set()
+    patterns = [
+        (r"\bold norse\b|\bon\b", "on"),
+        (r"\bold saxon\b|\bos\b", "os"),
+        (r"\bold high german\b|\bohg\b", "ohg"),
+        (r"\bold frisian\b|\bofri\b|\bofris\b", "ofris"),
+        (r"\bgothic\b|\bgoth\b", "goth"),
+        (r"\bold dutch\b", "odutch"),
+        (r"\bmiddle dutch\b", "mdutch"),
+        (r"\bdutch\b", "dutch"),
+        (r"\bgerman\b", "german"),
+        (r"\bmodern english\b", "modeng"),
+        (r"\bmiddle english\b", "me"),
+        (r"\bold irish\b", "oirish"),
+        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b|\boe\b", "oe"),
+        (r"\bpgmc\b|\bproto-germanic\b", "pgmc"),
+        (r"\bpwgmc\b|\bproto-west germanic\b", "pwgmc"),
+        (r"\bnwgmc\b|\bproto-northwest germanic\b", "nwgmc"),
+        (r"\bpre-oe\b|\bpre-old-english\b", "preoe"),
+    ]
+    for pattern, code in patterns:
+        if re.search(pattern, text):
+            hints.add(code)
+    return hints
+
+
+def infer_table_semantic_language(
+    mention: TableFormMention,
+    role: str,
+    target_forms: set[str],
+) -> tuple[str, bool]:
+    row_text = normalize_semantic_text(mention.row_text)
+    cell_text = normalize_semantic_text(mention.cell_text)
+    header_text = normalize_semantic_text(mention.cell_header)
+    hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
+    if mention.form in target_forms:
+        return "oe", True
+    if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
+        for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
+            if code in hints:
+                return code, True
+        return "pgmc", True
+    if role in {"target_form", "regular_output"}:
+        if len(hints - {"oe"}) == 0:
+            return "oe", True
+    if role == "comparison_form":
+        if mention.cell_kind in {"comparison", "output"} and len(hints - {"oe"}) == 0:
+            return "oe", True
+        if len(hints) == 1:
+            return next(iter(hints)), True
+        if mention.form in target_forms:
+            return "oe", True
+    return "", False
+
+
+def classify_table_semantic_mentions(
+    production_rows: list[ProductionOccurrence],
+) -> dict[str, list[dict[str, str]]]:
+    production_pairs = {(row.form, row.source_ref) for row in production_rows}
+    manifest_map = manifest_rows_by_model_entry_path()
+    auto_rows: list[dict[str, str]] = []
+    suggestions: list[dict[str, str]] = []
+    ignored: list[dict[str, str]] = []
+    seen_auto: set[tuple[str, str, str, str]] = set()
+    seen_suggest: set[tuple[str, str, str, str]] = set()
+    seen_ignored: set[tuple[str, str]] = set()
+
+    for path in sorted(MODEL_ENTRIES_DIR.glob("*.model.md")):
+        source_path = relative_source_path(path)
+        entry_row = manifest_map.get(source_path)
+        target_forms = entry_target_forms(entry_row)
+        for mention in table_form_mentions_from_path(path):
+            pair = (mention.form, mention.source_ref)
+            if pair in production_pairs:
+                continue
+            if mention.form.casefold() in TABLE_STOPWORDS or candidate_category(mention.form) != "needs_review":
+                if pair not in seen_ignored:
+                    seen_ignored.add(pair)
+                    ignored.append(
+                        {
+                            "source_ref": mention.source_ref,
+                            "nearest_heading": mention.heading,
+                            "row_label": mention.row_label,
+                            "form": mention.form,
+                            "display": mention.form,
+                            "suggested_language": "",
+                            "suggested_role": "",
+                            "confidence": "ignore",
+                            "reason": "table stopword or fragment",
+                            "context": mention.line_text,
+                        }
+                    )
+                continue
+
+            semantic_text = normalize_semantic_text(
+                " | ".join([mention.heading, mention.row_label, mention.row_text, mention.cell_header, mention.cell_text])
+            )
+            is_selected = contains_phrase(semantic_text, TABLE_SELECTED_PHRASES)
+            is_source = contains_phrase(semantic_text, TABLE_SOURCE_PHRASES)
+            is_output = contains_phrase(semantic_text, TABLE_OUTPUT_PHRASES)
+            is_comparison = contains_phrase(semantic_text, TABLE_COMPARISON_PHRASES)
+            is_negative = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
+            is_target = contains_phrase(semantic_text, TABLE_TARGET_PHRASES)
+
+            role_candidates: list[tuple[str, str]] = []
+            if mention.cell_kind == "input":
+                if is_selected and not is_negative:
+                    role_candidates.append(("selected_input", "selected-input row"))
+                elif is_source:
+                    role_candidates.append(("source_protoform", "source-protoform row"))
+                elif is_comparison or is_negative:
+                    role_candidates.append(("comparison_form", "comparison/negative row"))
+            elif mention.cell_kind == "output":
+                if is_output:
+                    role_candidates.append(("regular_output", "output row"))
+                    if mention.form in target_forms or is_target:
+                        role_candidates.append(("target_form", "output matches target"))
+                elif mention.form in target_forms and is_target:
+                    role_candidates.append(("target_form", "explicit target row"))
+                elif is_comparison or is_source or is_negative:
+                    role_candidates.append(("comparison_form", "output used as comparison"))
+            elif mention.cell_kind == "comparison":
+                if mention.form in target_forms and (is_target or is_output or is_selected):
+                    role_candidates.append(("target_form", "comparison cell matches target"))
+                elif is_comparison or is_source or is_negative or is_output:
+                    role_candidates.append(("comparison_form", "comparison cell"))
+            elif mention.cell_kind == "form":
+                if mention.form in target_forms and (is_target or is_selected or is_output):
+                    role_candidates.append(("target_form", "form row target"))
+                    if is_output:
+                        role_candidates.append(("regular_output", "form row regular output"))
+                elif mention.form.startswith("*") and is_selected and not is_negative:
+                    role_candidates.append(("selected_input", "selected form row"))
+                elif mention.form.startswith("*") and is_source:
+                    role_candidates.append(("source_protoform", "source form row"))
+                elif is_comparison or is_negative or is_source:
+                    role_candidates.append(("comparison_form", "comparison form row"))
+
+            for role, reason in role_candidates:
+                language, confident_language = infer_table_semantic_language(mention, role, target_forms)
+                if not language:
+                    if role == "comparison_form":
+                        language = "pgmc" if mention.form.startswith("*") else ""
+                    if not language:
+                        key = (mention.form, mention.source_ref, role, "suggest")
+                        if key not in seen_suggest:
+                            seen_suggest.add(key)
+                            suggestions.append(
+                                {
+                                    "source_ref": mention.source_ref,
+                                    "nearest_heading": mention.heading,
+                                    "row_label": mention.row_label,
+                                    "form": mention.form,
+                                    "display": mention.form,
+                                    "suggested_language": "",
+                                    "suggested_role": role,
+                                    "confidence": "suggest",
+                                    "reason": f"{reason}; language unclear",
+                                    "context": mention.line_text,
+                                }
+                            )
+                        continue
+                confidence = "auto"
+                if role == "comparison_form" and (mention.cell_kind == "form" and not mention.form.startswith("*") and not confident_language):
+                    confidence = "suggest"
+                if role == "comparison_form" and is_negative:
+                    confidence = "suggest"
+                if confidence == "auto":
+                    key = (language, mention.form, role, mention.source_ref)
+                    if key not in seen_auto:
+                        seen_auto.add(key)
+                        auto_rows.append(
+                            {
+                                "language": language,
+                                "form": mention.form,
+                                "display": mention.form,
+                                "sort_key": transliterate_sort_key(mention.form),
+                                "form_role": role,
+                                "source_scope": TABLE_SEMANTIC_SOURCE_SCOPE,
+                                "source_ref": mention.source_ref,
+                                "origin": TABLE_SEMANTIC_ORIGIN,
+                                "status": "auto",
+                            }
+                        )
+                else:
+                    key = (mention.form, mention.source_ref, role, "suggest")
+                    if key not in seen_suggest:
+                        seen_suggest.add(key)
+                        suggestions.append(
+                            {
+                                "source_ref": mention.source_ref,
+                                "nearest_heading": mention.heading,
+                                "row_label": mention.row_label,
+                                "form": mention.form,
+                                "display": mention.form,
+                                "suggested_language": language,
+                                "suggested_role": role,
+                                "confidence": "suggest",
+                                "reason": reason,
+                                "context": mention.line_text,
+                            }
+                        )
+
+    return {
+        "auto_rows": auto_rows,
+        "suggestions": suggestions,
+        "ignored": ignored,
+        "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in suggestions],
+        "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in ignored],
+    }
 def is_already_indexed_nearby(
     candidate: CandidateOccurrence,
     by_source: dict[str, list[tuple[str, int, str]]],
@@ -782,9 +1436,9 @@ def candidate_category(form: str) -> str:
         return "ignored_fragment"
     if re.fullmatch(r"\*?[-]?[aeiouyāēīōūæǣǭǫ]+(?:þ|z|n|m)?", form):
         return "ignored_fragment"
-    if re.fullmatch(r"[a-z]{1,4}", form):
+    if re.fullmatch(r"[a-z]{1,2}", form):
         return "ignored_fragment"
-    if re.fullmatch(r"\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ]{1,2}", form):
+    if re.fullmatch(r"\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ]{1}", form):
         return "ignored_fragment"
     if not looks_formlike(form):
         return "possible_garbage"
@@ -810,13 +1464,19 @@ def override_matches(override: dict[str, str], *, form: str, source_scope: str =
     return True
 
 
-def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ignore_overrides: list[dict[str, str]] | None = None) -> list[ProductionOccurrence]:
+def build_production_rows(
+    add_overrides: list[dict[str, str]] | None = None,
+    ignore_overrides: list[dict[str, str]] | None = None,
+    *,
+    include_table_semantic: bool = True,
+    table_semantic_results: dict[str, list[dict[str, str]]] | None = None,
+) -> list[ProductionOccurrence]:
     manifest_rows = parse_manifest_rows()
     manifest_by_title = {
         (row["lexical_item"], row["counterpart"], row["protoform"]): row
         for row in manifest_rows
     }
-    store: dict[tuple[str, str, str, str, str], ProductionOccurrence] = {}
+    store: dict[tuple[str, str, str, str, str, str], ProductionOccurrence] = {}
     for row in manifest_rows:
         ref = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
         oe_display = oe_target_display(row["counterpart"], row["derivation_class"])
@@ -894,6 +1554,35 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
         )
         if not ignored:
             filtered.append(entry)
+    if include_table_semantic:
+        semantic_results = table_semantic_results or collect_table_semantic_results(filtered)
+        for row in semantic_results["auto_rows"]:
+            add_production(
+                store,
+                language=row["language"],
+                form=row["form"],
+                display=row["display"],
+                sort_key=row["sort_key"],
+                form_role=row["form_role"],
+                source_scope=row["source_scope"],
+                source_ref=row["source_ref"],
+                origin=row["origin"],
+                status=row["status"],
+            )
+        filtered = []
+        for entry in store.values():
+            ignored = any(
+                override_matches(
+                    override,
+                    form=entry.form,
+                    source_scope=entry.source_scope,
+                    source_ref=entry.source_ref,
+                    language=entry.language,
+                )
+                for override in ignore_overrides
+            )
+            if not ignored:
+                filtered.append(entry)
     return sorted(
         filtered,
         key=lambda entry: (
@@ -991,11 +1680,15 @@ def build_audit_rows(
     production_rows: list[ProductionOccurrence],
     candidates: list[CandidateOccurrence] | None = None,
     ignore_overrides: list[dict[str, str]] | None = None,
+    table_semantic_results: dict[str, list[dict[str, str]]] | None = None,
 ) -> dict[str, list[dict[str, str]]]:
     production_occurrences = {(row.form, row.source_ref) for row in production_rows}
     nearby_occurrences = production_line_occurrences(production_rows)
     if ignore_overrides is None:
         _, ignore_overrides = load_overrides()
+    semantic_results = table_semantic_results or collect_table_semantic_results(production_rows)
+    suggest_pairs = {(row["form"], row["source_ref"]) for row in semantic_results["suggest_pairs"]}
+    ignore_pairs = {(row["form"], row["source_ref"]) for row in semantic_results["ignore_pairs"]}
     buckets: dict[str, list[dict[str, str]]] = defaultdict(list)
     seen: set[tuple[str, str]] = set()
     source_candidates = candidates
@@ -1013,6 +1706,10 @@ def build_audit_rows(
         category = candidate_category(candidate.form)
         if any(override_matches(override, form=candidate.form, source_ref=candidate.source_ref) for override in ignore_overrides):
             category = "ignored_by_override"
+        elif (candidate.form, candidate.source_ref) in ignore_pairs:
+            category = "table_semantic_ignored"
+        elif (candidate.form, candidate.source_ref) in suggest_pairs:
+            category = "table_semantic_suggestion"
         elif category == "needs_review" and is_already_indexed_nearby(candidate, nearby_occurrences):
             category = "already_indexed_nearby"
         entry = {
@@ -1112,6 +1809,7 @@ def write_audit(
     rows: list[ProductionOccurrence],
     buckets: dict[str, list[dict[str, str]]],
     baseline: dict[tuple[str, str, str, str, str], dict[str, str]],
+    table_semantic_results: dict[str, list[dict[str, str]]] | None = None,
 ) -> int:
     counts_by_language = Counter(row.language for row in rows)
     unique_by_language = {
@@ -1119,6 +1817,7 @@ def write_audit(
         for language in counts_by_language
     }
     needs_review_entries = buckets.get("needs_review", [])
+    semantic_results = table_semantic_results or {"auto_rows": [], "suggestions": [], "ignored": []}
     excluded_trace_entries = excluded_intermediate_trace_forms()
     new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
     lines = [
@@ -1127,6 +1826,9 @@ def write_audit(
         f"- Production indexed occurrences: {len(rows)}",
         f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
         f"- Audit-only candidates needing review: {len(needs_review_entries)}",
+        f"- Table semantic auto-promoted: {len(semantic_results.get('auto_rows', []))}",
+        f"- Table semantic suggestions: {len(semantic_results.get('suggestions', []))}",
+        f"- Table semantic ignored: {len(semantic_results.get('ignored', []))}",
         f"- Already indexed nearby: {len(buckets.get('already_indexed_nearby', []))}",
         f"- Ignored fragments or sequences: {len(buckets.get('ignored_fragment', [])) + len(buckets.get('ignored_by_override', []))}",
         f"- Possible extraction garbage: {len(buckets.get('possible_garbage', []))}",
@@ -1183,6 +1885,10 @@ def write_audit(
             "heading": "Nearest heading",
             "context": "Context",
             "candidate_origin": "Candidate origin",
+            "suggested_language": "Suggested language",
+            "suggested_role": "Suggested role",
+            "reason": "Reason",
+            "confidence": "Confidence",
         }
         lines.append("| " + " | ".join(label_map[col] for col in columns) + " |")
         lines.append("| " + " | ".join("---" for _ in columns) + " |")
@@ -1225,6 +1931,16 @@ def write_audit(
         "Table-scanned unresolved candidates",
         [entry for entry in needs_review_entries if entry.get("candidate_origin") == "table_candidate"],
         columns=("form", "source_ref", "heading", "context"),
+    )
+    render_bucket(
+        "Table semantic suggestions",
+        semantic_results.get("suggestions", []),
+        columns=("form", "source_ref", "suggested_language", "suggested_role", "reason"),
+    )
+    render_bucket(
+        "Table semantic ignored",
+        semantic_results.get("ignored", []),
+        columns=("form", "source_ref", "reason"),
     )
     render_bucket("Already indexed nearby", buckets.get("already_indexed_nearby", []), columns=("form", "source_ref", "heading", "candidate_origin"))
     render_bucket("Ignored fragments or sequences", buckets.get("ignored_fragment", []))
@@ -1296,16 +2012,19 @@ def main() -> None:
     BOOK_DIR.mkdir(parents=True, exist_ok=True)
     ensure_override_file()
     rewrite_readme_language_block()
-    production_rows = build_production_rows()
+    base_rows = build_production_rows(include_table_semantic=False)
+    table_semantic_results = collect_table_semantic_results(base_rows)
+    write_table_suggestions(TABLE_SUGGESTIONS_PATH, table_semantic_results["suggestions"])
+    production_rows = build_production_rows(table_semantic_results=table_semantic_results)
     write_index_registry_header(production_rows)
     write_forms(production_rows)
-    audit_buckets = build_audit_rows(production_rows)
+    audit_buckets = build_audit_rows(production_rows, table_semantic_results=table_semantic_results)
     baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
     needs_review_entries = audit_buckets.get("needs_review", [])
     if args.write_unresolved_baseline:
         write_unresolved_baseline(args.baseline.expanduser().resolve(), needs_review_entries)
         baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
-    unresolved = write_audit(production_rows, audit_buckets, baseline)
+    unresolved = write_audit(production_rows, audit_buckets, baseline, table_semantic_results=table_semantic_results)
     strict_mode = "all" if args.strict else args.strict_mode
     if strict_mode == "all":
         raise SystemExit(1 if unresolved else 0)

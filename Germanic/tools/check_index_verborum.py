@@ -7,8 +7,10 @@ import re
 from pathlib import Path
 
 from build_index_verborum import (
+    ALLOWED_FORM_ROLES,
     INTRO_PATH,
     LANGUAGE_TITLES,
+    TABLE_STOPWORDS,
     CandidateOccurrence,
     add_production,
     build_audit_rows,
@@ -29,10 +31,16 @@ BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseli
 COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
 REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
+SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
 
 
 def load_forms_rows() -> list[dict[str, str]]:
     with FORMS_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_suggestion_rows() -> list[dict[str, str]]:
+    with SUGGESTIONS_PATH.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
@@ -376,6 +384,30 @@ def assert_no_derivational_expression_rows() -> None:
     assert not any(">" in row["form"] or ">" in row["display"] for row in rows)
 
 
+def assert_table_semantic_rows() -> None:
+    forms_rows = load_forms_rows()
+    suggestion_rows = load_suggestion_rows()
+    table_rows = [row for row in forms_rows if row["source_scope"] == "table_semantic_auto"]
+    assert table_rows
+    for row in table_rows:
+        assert row["form_role"] in ALLOWED_FORM_ROLES
+        assert row["language"]
+        assert row["form_role"]
+        assert row["form"].casefold() not in TABLE_STOPWORDS
+        assert row["display"].casefold() not in TABLE_STOPWORDS
+        assert ">" not in row["form"]
+        assert ">" not in row["display"]
+    scope_map: dict[tuple[str, str, str, str], set[str]] = {}
+    for row in forms_rows:
+        key = (row["language"], row["form"], row["form_role"], row["source_ref"])
+        scope_map.setdefault(key, set()).add(row["source_scope"])
+    assert all(not ({"explicit_tag", "table_semantic_auto"} <= scopes) for scopes in scope_map.values())
+    production_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in forms_rows}
+    for row in suggestion_rows:
+        key = (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"])
+        assert key not in production_keys
+
+
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
@@ -405,6 +437,7 @@ def main() -> None:
     assert_already_indexed_nearby_bucket()
     assert_intermediate_trace_forms_excluded()
     assert_generated_consistency()
+    assert_table_semantic_rows()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")

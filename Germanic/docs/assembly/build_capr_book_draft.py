@@ -47,6 +47,7 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
     commands_by_line_ref: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
     counts = Counter()
     model_entry_heading_map = {}
+    line_injected_scopes = { "table_semantic_auto" }
     with MANIFEST_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:
@@ -66,7 +67,11 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
             command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip())
             if ".md:" in ref:
                 path_part, line_part = ref.rsplit(":", 1)
-                if path_part in model_entry_heading_map:
+                if row.get("source_scope") in line_injected_scopes and line_part.isdigit():
+                    line_no = int(line_part)
+                    if command not in commands_by_line_ref[path_part][line_no]:
+                        commands_by_line_ref[path_part][line_no].append(command)
+                elif path_part in model_entry_heading_map:
                     heading = model_entry_heading_map[path_part]
                     if command not in commands_by_heading_ref[heading]:
                         commands_by_heading_ref[heading].append(command)
