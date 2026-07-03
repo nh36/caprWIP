@@ -7231,15 +7231,16 @@ Old English form: _stæf_
 #### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem _\*staba-_ [@Kroonen2013, 471]. Orel writes _\*stabiz_ ~ _\*stabaz_ [@Orel2003, 368]. That disagreement matters because a direct i-stem input in
+reconstructs an a-stem _\*staba-_ [@Kroonen2013, 471]. Orel writes [_\*stábiz_]{.iv lang=pgmc sort=stabiz role=source_protoform} ~
+[_\*stábaz_]{.iv lang=pgmc sort=stabaz role=selected_input} [@Orel2003, 368]. That disagreement matters because a direct i-stem input in
 _\*-iz_ would predict i-mutation in Old English, whereas the attested noun keeps
 _æ_.
 
 #### Old English evidence
 
-The Old English noun itself is the ordinary citation form _stæf_. Luick lists
-_stæf_ among closed monosyllables with _æ_ [@Luick1914, 176]. Ringe and Taylor
-pair singular _stæf_ with plural _stafas_ [@RingeTaylor2014, 193]. The
+The Old English noun itself is the ordinary citation form [_stæf_]{.iv lang=oe sort=staef role=target_form}. Luick lists
+[_stæf_]{.iv lang=oe sort=staef role=target_form} among closed monosyllables with _æ_ [@Luick1914, 176]. Ringe and Taylor
+pair singular [_stæf_]{.iv lang=oe sort=staef role=target_form} with plural [_stafas_]{.iv lang=oe sort=stafas role=comparison_form} [@RingeTaylor2014, 193]. The
 normalized form here is therefore _stæf_; later English _staff_ with _a_
 belongs to a later stage of the word's history.
 
@@ -7259,9 +7260,9 @@ selected a-stem input.
 
 | Formation / label | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative i-stem line | *stábiz | expected _stefe_ after i-mutation | stæf | wrong vowel for the attested singular |
+| comparative i-stem line | [_\*stábiz_]{.iv lang=pgmc sort=stabiz role=source_protoform} | expected [_stefe_]{.iv lang=oe sort=stefe role=regular_output} after i-mutation | [_stæf_]{.iv lang=oe sort=staef role=target_form} | wrong vowel for the attested singular |
 | mixed comparative notation | Orel _\*stabiz_ ~ _\*stabaz_; Kluge _\*stabi-_/a- | source-level stem-class uncertainty | stæf | useful comparative background, but not a single OE-facing input |
-| selected a-stem input | *stábaz | documented regular output: _stæf_ | stæf | exact match between derivational input and Old English target |
+| selected a-stem input | [_\*stábaz_]{.iv lang=pgmc sort=stabaz role=selected_input} | documented regular output: [_stæf_]{.iv lang=oe sort=staef role=regular_output} | [_stæf_]{.iv lang=oe sort=staef role=target_form} | exact match between derivational input and Old English target |
 
 ### stem — OE stefn
 
@@ -7314,29 +7315,29 @@ Old English form: _stefn_
 
 #### Reconstruction and comparative evidence
 
-The source tradition behind _stefn_ is not the same as the comparative label
-_\*stámnaz_. Ringe and Taylor cite _\*stebnō_ for the noun continued by
-Gothic _stibna_ and Old English _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014,
+The source tradition behind [_stefn_]{.iv lang=oe sort=stefn role=target_form} is not the same as the comparative label
+[_\*stámnaz_]{.iv lang=pgmc sort=stamnaz role=source_protoform}. Ringe and Taylor cite _\*stebnō_ for the noun continued by
+Gothic [_stibna_]{.iv lang=goth sort=stibna role=comparison_form} and Old English _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014,
 330]. Orel likewise gives _\*stebnō_ ~ _\*stemnō_, whereas Kroonen prefers
 _\*stimnō-_, and Fulk describes the etymology of _stefn, stemn_ as insecure
 [@Orel2003, 374; @Kroonen2013, 480; @Fulk2018, §6.11 n. 6].
 
-These forms belong to the Old English noun _stefn_ 'voice, sound'. The
-derivational input _\*stébnō_ is therefore best treated as the OE-facing
+These forms belong to the Old English noun [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'voice, sound'. The
+derivational input [_\*stébnō_]{.iv lang=pgmc sort=stebno role=selected_input} is therefore best treated as the OE-facing
 transponent supported by that source tradition. It does not settle the deeper
-comparative reconstruction implied by the citation label _\*stámnaz_.
+comparative reconstruction implied by the citation label [_\*stámnaz_]{.iv lang=pgmc sort=stamnaz role=source_protoform}.
 
 #### Old English evidence
 
-Clark Hall records _stefn_ as the noun 'voice, sound' and cross-refers
-_stemn_ to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
+Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form} as the noun 'voice, sound' and cross-refers
+[_stemn_]{.iv lang=oe sort=stemn role=comparison_form} to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
 chronology directly as _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014, 330].
 
-Bülbring and Luick treat _stemn_ as a later West Saxon development from
-older _stefn_, produced by _fn_ > _mn_ only after the earlier period of nasal
+Bülbring and Luick treat [_stemn_]{.iv lang=oe sort=stemn role=comparison_form} as a later West Saxon development from
+older [_stefn_]{.iv lang=oe sort=stefn role=target_form}, produced by _fn_ > _mn_ only after the earlier period of nasal
 influence on _e_ [@Bulbring1902, §§62 Anm. 3, 445; @Luick1914, §75 Anm. 1].
-The relevant comparison form is therefore the conservative _stefn_, not the
-later West Saxon doublet _stemn_.
+The relevant comparison form is therefore the conservative [_stefn_]{.iv lang=oe sort=stefn role=target_form}, not the
+later West Saxon doublet [_stemn_]{.iv lang=oe sort=stemn role=comparison_form}.
 
 #### Development to Old English
 
@@ -7353,9 +7354,9 @@ the OE-facing transponent, and the later West Saxon variant history.
 
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| _\*stámnaz_ | comparative citation label for the broader stem/trunk family | does not itself control the _stefn_ derivation discussed here | broader lexical label only |
-| _\*stébnō_ | voice-noun transponent | regular output: _stefn_ | Old English-facing input |
-| _stemn_ | later attested West Saxon doublet | secondary form from _stefn_ by _fn_ > _mn_ | real OE variant, but not the selected comparator |
+| [_\*stámnaz_]{.iv lang=pgmc sort=stamnaz role=source_protoform} | comparative citation label for the broader stem/trunk family | does not itself control the _stefn_ derivation discussed here | broader lexical label only |
+| [_\*stébnō_]{.iv lang=pgmc sort=stebno role=selected_input} | voice-noun transponent | regular output: [_stefn_]{.iv lang=oe sort=stefn role=regular_output} | Old English-facing input |
+| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form} | later attested West Saxon doublet | secondary form from _stefn_ by _fn_ > _mn_ | real OE variant, but not the selected comparator |
 
 ### swan — OE swanes
 
@@ -7849,9 +7850,9 @@ Old English form: _hwæl_
 
 #### Reconstruction and comparative evidence
 
-The comparative sources are not uniform. Orel gives _\*xwalaz_ and notes some
-mixed _\*xwaliz_ evidence [@Orel2003, 197]. Kroonen instead cites
-_\*hwali-_ [@Kroonen2013, 262].
+The comparative sources are not uniform. Orel gives [_\*xwalaz_]{.iv lang=pgmc sort=xwalaz role=source_protoform} and notes some
+mixed [_\*xwaliz_]{.iv lang=pgmc sort=xwaliz role=comparison_form} evidence [@Orel2003, 197]. Kroonen instead cites
+[_\*hwali-_]{.iv lang=pgmc sort=hwali role=comparison_form} [@Kroonen2013, 262].
 
 Both notations agree on inherited initial _hw-/xw-_, but they differ in
 stem label. The a-stem-like input followed here is closer to Orel's notation
@@ -7859,13 +7860,13 @@ than to Kroonen's citation form.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the noun as _hwal_, and Bosworth-Toller preserves the
-plural _hwalas_ [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
-is normalized here as _hwæl_ for the singular citation form with Anglo-
+Clark Hall lemmatizes the noun as [_hwal_]{.iv lang=oe sort=hwal role=comparison_form}, and Bosworth-Toller preserves the
+plural [_hwalas_]{.iv lang=oe sort=hwalas role=comparison_form} [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
+is normalized here as [_hwæl_]{.iv lang=oe sort=hwael role=target_form} for the singular citation form with Anglo-
 Frisian fronting.
 
-The plural _hwalas_ remains important control evidence. It shows the same
-lexeme with _a_ in an open syllable, beside singular _hwæl_ in the
+The plural [_hwalas_]{.iv lang=oe sort=hwalas role=comparison_form} remains important control evidence. It shows the same
+lexeme with _a_ in an open syllable, beside singular [_hwæl_]{.iv lang=oe sort=hwael role=target_form} in the
 closed monosyllable.
 
 #### Development to Old English
@@ -7881,10 +7882,10 @@ notations from the normalized Old English singular.
 
 | Comparative line | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| Orel's citation | _\*xwalaz_ | same stem notation as the modeled singular line | closest comparative support for the derivational input |
-| Kroonen's citation | _\*hwali-_ | same initial cluster, different stem label | important comparative rival, but not the notation followed here |
-| modeled input | _\*xwálaz_ | regular output: _hwæl_ | Old English-facing input |
-| plural control | _hwalas_ | attested open-syllable plural beside singular _hwæl_ | confirms that the lexeme also preserves an _a_-vocalism branch |
+| Orel's citation | [_\*xwalaz_]{.iv lang=pgmc sort=xwalaz role=source_protoform} | same stem notation as the modeled singular line | closest comparative support for the derivational input |
+| Kroonen's citation | [_\*hwali-_]{.iv lang=pgmc sort=hwali role=comparison_form} | same initial cluster, different stem label | important comparative rival, but not the notation followed here |
+| modeled input | [_\*xwálaz_]{.iv lang=pgmc sort=xwalaz role=selected_input} | regular output: [_hwæl_]{.iv lang=oe sort=hwael role=regular_output} | Old English-facing input |
+| plural control | [_hwalas_]{.iv lang=oe sort=hwalas role=comparison_form} | attested open-syllable plural beside singular [_hwæl_]{.iv lang=oe sort=hwael role=target_form} | confirms that the lexeme also preserves an _a_-vocalism branch |
 
 ### whine — OE hwīnan
 
@@ -7937,35 +7938,35 @@ Old English form: _hwīnan_
 #### Reconstruction and comparative evidence
 
 The citation reconstruction preserved in the header belongs to the lament-family
-verb seen in German _weinen_ and Old English _wānian_. Kroonen instead separates
-Old English _hwīnan_ under _\*hwinan-_ [@Kroonen2013, 267]. Orel likewise
-distinguishes strong _\*xwinanan_ from weak _\*wainōjanan_ [@Orel2003, 201]. Ringe and
+verb seen in German [_weinen_]{.iv lang=german sort=weinen role=comparison_form} and Old English [_wānian_]{.iv lang=oe sort=wanian role=comparison_form}. Kroonen instead separates
+Old English [_hwīnan_]{.iv lang=oe sort=hwinan role=target_form} under _\*hwinan-_ [@Kroonen2013, 267]. Orel likewise
+distinguishes strong [_\*xwinanan_]{.iv lang=pgmc sort=xwinanan role=source_protoform} from weak [_\*wainōjanan_]{.iv lang=pgmc sort=wainojanan role=source_protoform} [@Orel2003, 201]. Ringe and
 Taylor make the same split at the Northwest Germanic level, linking Old Norse
-_hvina_ and Old English _hwinan_ to the same strong verb
+[_hvina_]{.iv lang=on sort=hvina role=comparison_form} and Old English [_hwinan_]{.iv lang=oe sort=hwinan role=comparison_form} to the same strong verb
 [@RingeTaylor2014, 130].
 
 The two families also differ phonologically and morphologically. The lament
 family has initial _w-_, diphthongal _ai_, and weak-II morphology, whereas the
 verb behind Old English _hwīnan_ has initial _hw-/xw-_, long _ī_, and
-strong-verb inflection. The form followed here, _\*xwī́naną_, therefore represents a
+strong-verb inflection. The derivational input [_\*xwī́naną_]{.iv lang=pgmc sort=xwinana role=selected_input} therefore represents a
 competing comparative identification rather than a hidden cell of _\*wainōjaną_.
 
 #### Old English evidence
 
-Clark Hall records _hwinan_ with the gloss 'to hiss, whizz, whistle'
+Clark Hall records [_hwinan_]{.iv lang=oe sort=hwinan role=comparison_form} with the gloss 'to hiss, whizz, whistle'
 [@ClarkHall1960, 171]. Seebold keeps the verb among the strong verbs and notes that
 only a present-tense attestation is directly preserved [@Seebold1970, 280].
 
-The Old English form is normalized here as _hwīnan_. That normalization adds the
-usual vowel length marking to the dictionary spelling _hwinan_; it does not turn
+The Old English form is normalized here as [_hwīnan_]{.iv lang=oe sort=hwinan role=target_form}. That normalization adds the
+usual vowel length marking to the dictionary spelling [_hwinan_]{.iv lang=oe sort=hwinan role=comparison_form}; it does not turn
 an unattested verb into a reconstructed one.
 
 #### Development to Old English
 
-Once the strong-verb input _\*xwī́naną_ is selected, the path to Old English is
+Once the strong-verb input [_\*xwī́naną_]{.iv lang=pgmc sort=xwinana role=selected_input} is selected, the path to Old English is
 straightforward. The compact trace shows heavy-syllable nasal apocope,
 secondary nasalization, and weak-tail reduction, after which the form surfaces
-as _hwīnan_.
+as [_hwīnan_]{.iv lang=oe sort=hwinan role=target_form}.
 
 No special paradigm maneuver is needed for this verb. The comparison is between
 two different Germanic verb families: the Old English form belongs with the
@@ -7978,9 +7979,9 @@ that stand behind the inherited Old English forms.
 
 | Verb family / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lament-family weak verb | _\*wainōjaną_ | comparative continuation in OE _wānian_ | wānian | competing citation reconstruction, but not the source of _hwīnan_ |
-| selected strong verb | _\*xwī́naną_ | regular output: _hwīnan_ | hwīnan | exact match between derivational input and OE verb |
-| comparative North Germanic cognate | Northwest Germanic strong verb behind ON _hvina_ / OE _hwinan_ | ON _hvina_ / OE _hwinan_ | hwīnan | supports the strong-verb identification |
+| lament-family weak verb | [_\*wainōjaną_]{.iv lang=pgmc sort=wainojana role=source_protoform} | comparative continuation in OE [_wānian_]{.iv lang=oe sort=wanian role=comparison_form} | [_wānian_]{.iv lang=oe sort=wanian role=comparison_form} | competing citation reconstruction, but not the source of _hwīnan_ |
+| selected strong verb | [_\*xwī́naną_]{.iv lang=pgmc sort=xwinana role=selected_input} | regular output: [_hwīnan_]{.iv lang=oe sort=hwinan role=regular_output} | [_hwīnan_]{.iv lang=oe sort=hwinan role=target_form} | exact match between derivational input and OE verb |
+| comparative North Germanic cognate | Northwest Germanic strong verb behind ON [_hvina_]{.iv lang=on sort=hvina role=comparison_form} / OE [_hwinan_]{.iv lang=oe sort=hwinan role=comparison_form} | ON [_hvina_]{.iv lang=on sort=hvina role=comparison_form} / OE [_hwinan_]{.iv lang=oe sort=hwinan role=comparison_form} | [_hwīnan_]{.iv lang=oe sort=hwinan role=target_form} | supports the strong-verb identification |
 
 ### withy — OE wīþiġ
 
@@ -8142,7 +8143,7 @@ _\*weraldiz_ and its pre-Old-English chain _\*weraldu_ > _\*weruld_
 compound _\*wira-aldō_ and explicitly includes Old English _weorold_
 [@KlugeSeebold2011, 981].
 
-The form followed here, _\*wír-àldu_, therefore differs from the citation label in two
+The derivational input [_\*wír-àldu_]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore differs from the citation label in two
 ways. It keeps the older _\*wir-_ vowel of the comparative headword, but it also
 presupposes the early shift of the compound into the ō-stems that Ringe and
 Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
@@ -8152,12 +8153,12 @@ regularly.
 #### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon _weorold_ ~ _worold_, Mercian _weoruld_, Northumbrian _woruld_, and Kentish
-_wiarald_ [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
-set, including the syncopated _world_ and later rounded _wurold_
+Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form} ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form}, Mercian [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form}, Northumbrian
+[_woruld_]{.iv lang=oe sort=woruld role=comparison_form}, and Kentish [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form} [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
+set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form} and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form}
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
-The Old English form used here is the West Saxon form _weorold_. It is an attested Old
+The Old English form used here is the West Saxon form [_weorold_]{.iv lang=oe sort=weorold role=target_form}. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
 ever shows.
 
@@ -8182,10 +8183,10 @@ OE-facing stage chosen for the derivation.
 
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| comparative compound with older first-element vowel | _\*wíra-àldiz_ | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | _\*weraldiz_ > _\*weraldu_ > _\*weruld_ | Ringe-Taylor background chain to OE _weorold_ ~ _worold_ | explains the older comparative literature cited for the word |
-| Old English-facing input | _\*wír-àldu_ | regular output: _weorold_ | exact match for the West Saxon form used here |
-| broader OE variant cluster | — | _worold_, _weoruld_, _woruld_, _wiarald_, _world_ | real attested comparanda that remain outside that West Saxon line |
+| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
+| literature-stage lowered compound after early stem-class shift | [_\*weraldiz_]{.iv lang=preoe sort=weraldiz role=comparison_form} > [_\*weraldu_]{.iv lang=preoe sort=weraldu role=comparison_form} > [_\*weruld_]{.iv lang=preoe sort=weruld role=comparison_form} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form} ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form} | explains the older comparative literature cited for the word |
+| Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc sort=wiraldu role=selected_input} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output} | exact match for the West Saxon form used here |
+| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form}, [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form}, [_woruld_]{.iv lang=oe sort=woruld role=comparison_form}, [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form}, [_world_]{.iv lang=oe sort=world role=comparison_form} | real attested comparanda that remain outside that West Saxon line |
 
 ### youth — OE ġeoguþ
 
