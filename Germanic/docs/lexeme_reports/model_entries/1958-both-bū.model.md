@@ -29,7 +29,7 @@ and `OHG` [`bēde`]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]
 cautiously and notes Seebold's preference for a `*bō-þ-` analysis instead
 [@Fulk2018, §10.1]. That debate matters for [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} and for the extended forms
 behind Modern English [`both`]{.iv lang=modeng sort=both role=comparison_form}, German [`beide`]{.iv lang=german sort=beide role=comparison_form}, and Dutch [`beide`]{.iv lang=dutch sort=beide role=comparison_form}; it does not
-displace the inherited neuter [`*bō > bū`]{.iv lang=oe display=*bō > bū sort=bo role=selected_input} treated here.
+displace the inherited neuter [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} > [`bū`]{.iv lang=oe sort=bu role=target_form} treated here.
 
 ### Old English evidence
 
@@ -54,7 +54,7 @@ to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: `Auslautendes ō erscheint als û in bū ... cu ... hū, tū`
 [@SieversBrunner1965, §69].
 
-The development is therefore straightforward: [`*bō > bū`]{.iv lang=oe display=*bō > bū sort=bo role=selected_input}.
+The development is therefore straightforward: [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} > [`bū`]{.iv lang=oe sort=bu role=target_form}.
 
 ### Form comparison
 
@@ -63,7 +63,7 @@ other forms that belong to the same broader lexical history.
 
 | Form | Source / stage | Status | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| [`*bō > bū`]{.iv lang=oe display=*bō > bū sort=bo role=selected_input} | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
+| [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} > [`bū`]{.iv lang=oe sort=bu role=target_form} | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
 | [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} | OE masculine dual | attested, but historically contested and at least partly analogical in Kroonen | real OE evidence, not the selected target |
 | [`bā`]{.iv lang=oe sort=ba role=comparison_form} | OE feminine dual; also neuter variant | attested partner form | part of the OE paradigm, but not the chosen monosyllabic comparator |
 | [`báðir`]{.iv lang=on sort=badir role=comparison_form}, German [`beide`]{.iv lang=german sort=beide role=comparison_form}, Dutch [`beide`]{.iv lang=dutch sort=beide role=comparison_form}, Modern English [`both`]{.iv lang=modeng sort=both role=comparison_form} | Norse, continental West Germanic, Modern English extended forms | related but different formation | useful background, not the direct continuation of OE `bū` |

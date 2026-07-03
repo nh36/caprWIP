@@ -18,37 +18,37 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited verb is the strong verb `*fínθaną`, continued by Old English
-`findan` [@RingeTaylor2014, 344]. The form followed here, `*fúnðanǭ`,
+The inherited verb is the strong verb [`*fínθaną`]{.iv lang=pgmc sort=finthana role=source_protoform}, continued by Old English
+[`findan`]{.iv lang=oe sort=findan role=comparison_form} [@RingeTaylor2014, 344]. The form followed here, [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input},
 belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
-That distinction matters because the familiar dictionary form `funden` is not
+That distinction matters because the familiar dictionary form [`funden`]{.iv lang=oe sort=funden role=comparison_form} is not
 the form compared here. The derivational input instead models an attested
 participial form directly, rather than treating the infinitive or the ordinary
-dictionary headword as primary. It therefore reaches `fundene` in the form
+dictionary headword as primary. It therefore reaches [`fundene`]{.iv lang=oe sort=fundene role=target_form} in the form
 where the trace and the attested evidence match directly.
 
 ### Old English evidence
 
-Bosworth-Toller records **`fundene`** under `findan`, citing the form in
+Bosworth-Toller records **[`fundene`]{.iv lang=oe sort=fundene role=target_form}** under [`findan`]{.iv lang=oe sort=findan role=comparison_form}, citing the form in
 `Beón þá herigeata swa fundene` [@BosworthToller1898, 219]. Clark Hall likewise preserves the
-participial stem in forms such as `funden` and `tō-fundennes`
+participial stem in forms such as [`funden`]{.iv lang=oe sort=funden role=comparison_form} and `tō-fundennes`
 [@ClarkHall1960, 124].
 
-The ordinary dictionary headword for the participle is `funden`, but the
-relevant comparison form for this entry is the attested oblique **`fundene`**.
+The ordinary dictionary headword for the participle is [`funden`]{.iv lang=oe sort=funden role=comparison_form}, but the
+relevant comparison form for this entry is the attested oblique **[`fundene`]{.iv lang=oe sort=fundene role=target_form}**.
 It is an Old English form in its own right, not a merely convenient probe.
 
 ### Development to Old English
 
-From `*fúnðanǭ`, the participial oblique develops through regular loss and
-weakening of the final ending, yielding `fundene`. In that cell both the
+From [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input}, the participial oblique develops through regular loss and
+weakening of the final ending, yielding [`fundene`]{.iv lang=oe sort=fundene role=target_form}. In that cell both the
 consonantism and the medial vowel history remain regular.
 
 The broader participial paradigm then matters for interpretation. The more
-familiar nominative `funden` is the ordinary dictionary form, whereas the
-oblique form `fundene` is the attested form compared here.
+familiar nominative [`funden`]{.iv lang=oe sort=funden role=comparison_form} is the ordinary dictionary form, whereas the
+oblique form [`fundene`]{.iv lang=oe sort=fundene role=target_form} is the attested form compared here.
 
 ### Paradigm comparison
 
@@ -58,9 +58,9 @@ cited Old English evidence alongside the regular derivational path.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *fínθaną | inherited verb `findan` | findan | establishes the lexeme, but not the form compared here |
-| nominative participial line | *fúnðanaz | ordinary dictionary `funden` type | funden | important paradigm background, but not the form compared here |
-| oblique participle compared here | *fúnðanǭ | regular output: `fundene` | fundene | exact match between input, output, and attested cell |
+| citation infinitive | [`*fínθaną`]{.iv lang=pgmc sort=finthana role=source_protoform} | inherited verb [`findan`]{.iv lang=oe sort=findan role=comparison_form} | [`findan`]{.iv lang=oe sort=findan role=comparison_form} | establishes the lexeme, but not the form compared here |
+| nominative participial line | [`*fúnðanaz`]{.iv lang=pgmc sort=fundhanaz role=comparison_form} | ordinary dictionary [`funden`]{.iv lang=oe sort=funden role=comparison_form} type | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | important paradigm background, but not the form compared here |
+| oblique participle compared here | [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input} | regular output: [`fundene`]{.iv lang=oe sort=fundene role=regular_output} | [`fundene`]{.iv lang=oe sort=fundene role=target_form} | exact match between input, output, and attested cell |
 
 The oblique participle is the relevant comparison form. It matches the
 derivational input and Old English form directly, while the nominative participial headword remains a

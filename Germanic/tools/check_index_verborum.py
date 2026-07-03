@@ -3,10 +3,12 @@ from __future__ import annotations
 
 import csv
 import tempfile
+import re
 from pathlib import Path
 
 from build_index_verborum import (
     INTRO_PATH,
+    LANGUAGE_TITLES,
     CandidateOccurrence,
     add_production,
     build_audit_rows,
@@ -25,6 +27,54 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseline.tsv"
 COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
+AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
+REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
+
+
+def load_forms_rows() -> list[dict[str, str]]:
+    with FORMS_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def audit_section(title: str) -> str:
+    text = AUDIT_PATH.read_text(encoding="utf-8")
+    marker = f"## {title}\n"
+    assert marker in text, title
+    tail = text.split(marker, 1)[1]
+    return tail.split("\n## ", 1)[0]
+
+
+def parse_audit_language_summary() -> set[str]:
+    section = audit_section("Production indexed forms by language")
+    titles: set[str] = set()
+    for line in section.splitlines():
+        if not line.startswith("|") or line.startswith("| Language |") or line.startswith("| ---"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if parts and parts[0]:
+            titles.add(parts[0])
+    return titles
+
+
+def parse_table_scanned_unresolved_pairs() -> set[tuple[str, str]]:
+    section = audit_section("Table-scanned unresolved candidates")
+    pairs: set[tuple[str, str]] = set()
+    for line in section.splitlines():
+        if not line.startswith("| `"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) >= 2:
+            pairs.add((parts[0].strip("`"), parts[1]))
+    return pairs
+
+
+def parse_registry_codes() -> set[str]:
+    codes: set[str] = set()
+    for line in REGISTRY_TEX_PATH.read_text(encoding="utf-8").splitlines():
+        match = re.search(r"name=([^,]+),title=", line)
+        if match:
+            codes.add(match.group(1))
+    return codes
 
 
 def assert_sort_keys() -> None:
@@ -62,10 +112,11 @@ def assert_production_rows() -> None:
 
 
 def assert_written_table_schema() -> None:
+    rows = load_forms_rows()
     with FORMS_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         assert reader.fieldnames == ["language", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
-        first_rows = list(reader)[:10]
+    first_rows = rows[:10]
     assert all(row["language"] for row in first_rows)
     assert all(row["form_role"] for row in first_rows)
     assert all(row["status"] in {"auto", "override"} for row in first_rows)
@@ -252,6 +303,30 @@ def assert_intermediate_trace_forms_excluded() -> None:
     assert not any(row.form == "*bækaną" and row.source_scope == "trace_stage" for row in rows)
 
 
+def assert_generated_consistency() -> None:
+    forms_rows = load_forms_rows()
+    production_pairs = {(row["form"], row["source_ref"]) for row in forms_rows}
+    table_pairs = parse_table_scanned_unresolved_pairs()
+    assert production_pairs.isdisjoint(table_pairs)
+
+    form_languages = {row["language"] for row in forms_rows}
+    expected_titles = {LANGUAGE_TITLES[code] for code in form_languages}
+    audit_titles = parse_audit_language_summary()
+    assert expected_titles.issubset(audit_titles)
+
+    registry_codes = parse_registry_codes()
+    assert registry_codes == form_languages
+
+    for code in ("dutch", "german", "modeng"):
+        if code in form_languages:
+            assert LANGUAGE_TITLES[code] in audit_titles
+
+
+def assert_no_derivational_expression_rows() -> None:
+    rows = load_forms_rows()
+    assert not any(">" in row["form"] or ">" in row["display"] for row in rows)
+
+
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
@@ -279,6 +354,8 @@ def main() -> None:
     assert_table_audit_scanner()
     assert_ordinary_glosses_ignored()
     assert_intermediate_trace_forms_excluded()
+    assert_generated_consistency()
+    assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")
 

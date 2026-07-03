@@ -40,6 +40,6 @@ The comparison below is manual. It distinguishes the selected imperative cell fr
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | `*burōjaną` | dictionary headword `borian` | borian | family background, but not the selected cell |
-| selected imperative singular | `*búrô` | trace output `bora` | bora | exact match |
-| 3sg present companion | `*búrōθi` | related finite form `boraþ` | boraþ | useful control, but not the target |
+| lexeme-level infinitive | [`*burōjaną`]{.iv lang=pgmc sort=burojana role=source_protoform} | dictionary headword [`borian`]{.iv lang=oe sort=borian role=comparison_form} | [`borian`]{.iv lang=oe sort=borian role=comparison_form} | family background, but not the selected cell |
+| selected imperative singular | [`*búrô`]{.iv lang=pgmc sort=buro role=selected_input} | trace output [`bora`]{.iv lang=oe sort=bora role=regular_output} | [`bora`]{.iv lang=oe sort=bora role=target_form} | exact match |
+| 3sg present companion | [`*búrōθi`]{.iv lang=pgmc sort=burothi role=comparison_form} | related finite form [`boraþ`]{.iv lang=oe sort=borath role=comparison_form} | [`boraþ`]{.iv lang=oe sort=borath role=comparison_form} | useful control, but not the target |

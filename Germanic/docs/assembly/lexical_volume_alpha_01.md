@@ -562,7 +562,7 @@ and _OHG_ [_bēde_]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]
 cautiously and notes Seebold's preference for a _\*bō-þ-_ analysis instead
 [@Fulk2018, §10.1]. That debate matters for [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} and for the extended forms
 behind Modern English [_both_]{.iv lang=modeng sort=both role=comparison_form}, German [_beide_]{.iv lang=german sort=beide role=comparison_form}, and Dutch [_beide_]{.iv lang=dutch sort=beide role=comparison_form}; it does not
-displace the inherited neuter [_\*bō_ > _bū_]{.iv lang=oe display=*bō > bū sort=bo role=selected_input} treated here.
+displace the inherited neuter [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input} > [_bū_]{.iv lang=oe sort=bu role=target_form} treated here.
 
 #### Old English evidence
 
@@ -587,7 +587,7 @@ to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: Auslautendes _ō_ erscheint als û in _bū_ ... cu ... _hū_, _tū_
 [@SieversBrunner1965, §69].
 
-The development is therefore straightforward: [_\*bō_ > _bū_]{.iv lang=oe display=*bō > bū sort=bo role=selected_input}.
+The development is therefore straightforward: [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input} > [_bū_]{.iv lang=oe sort=bu role=target_form}.
 
 #### Form comparison
 
@@ -596,7 +596,7 @@ other forms that belong to the same broader lexical history.
 
 | Form | Source / stage | Status | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| [_\*bō_ > _bū_]{.iv lang=oe display=*bō > bū sort=bo role=selected_input} | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
+| [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input} > [_bū_]{.iv lang=oe sort=bu role=target_form} | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
 | [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} | OE masculine dual | attested, but historically contested and at least partly analogical in Kroonen | real OE evidence, not the Old English form here |
 | [_bā_]{.iv lang=oe sort=ba role=comparison_form} | OE feminine dual; also neuter variant | attested partner form | part of the OE paradigm, but not the chosen monosyllabic comparator |
 | [_báðir_]{.iv lang=on sort=badir role=comparison_form}, German [_beide_]{.iv lang=german sort=beide role=comparison_form}, Dutch [_beide_]{.iv lang=dutch sort=beide role=comparison_form}, Modern English [_both_]{.iv lang=modeng sort=both role=comparison_form} | Norse, continental West Germanic, Modern English extended forms | related but different formation | useful background, not the direct continuation of OE _bū_ |
@@ -4743,25 +4743,25 @@ Old English form: _cwedu_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the resin word as _\*kwedu-2_ and gives Old English
-variants [_cwidu_]{.iv lang=oe sort=cwidu}, [_cweodu_]{.iv lang=oe sort=cweodu}, and _c(w)udu_ [@Kroonen2013, 355]. Orel likewise
-lists [_cwidu_]{.iv lang=oe sort=cwidu} under the cognate set [@Orel2003, 266]. The derivational input
-_\*kwéðuz_
+variants [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form}, [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form}, and [_c(w)udu_]{.iv lang=oe display=c(w)udu sort=cwudu role=comparison_form} [@Kroonen2013, 355]. Orel likewise
+lists [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form} under the cognate set [@Orel2003, 266]. The derivational input
+[_\*kwéðuz_]{.iv lang=pgmc sort=kweduz role=selected_input}
 therefore represents the older e-grade, voiced-dental form behind the chosen
-variant _cwedu_.
+variant [_cwedu_]{.iv lang=oe sort=cwedu role=target_form}.
 
 #### Old English evidence
 
 The Old English word survives in a wider variant set than one dictionary
-headword suggests. Ringe and Taylor discuss [_cwidu_]{.iv lang=oe sort=cwidu} > [_cwudu_]{.iv lang=oe sort=cwudu} > _cudu_ and also
-note late West Saxon [_cweodu_]{.iv lang=oe sort=cweodu}; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu}, [_cweodu_]{.iv lang=oe sort=cweodu}, and _cudu_
+headword suggests. Ringe and Taylor discuss [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form} > [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form} > [_cudu_]{.iv lang=oe sort=cudu role=comparison_form} and also
+note late West Saxon [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form}; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form}, [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form}, and [_cudu_]{.iv lang=oe sort=cudu role=comparison_form}
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested _cwedu_ is treated here
 as the
 conservative variant within that set.
 
 #### Development to Old English
 
-From _\*kwéðuz_, the West Germanic voiced dental hardens in the expected way and
-the regular Old English development yields _cwedu_. The other Old English
+From [_\*kwéðuz_]{.iv lang=pgmc sort=kweduz role=selected_input}, the West Germanic voiced dental hardens in the expected way and
+the regular Old English development yields [_cwedu_]{.iv lang=oe sort=cwedu role=target_form}. The other Old English
 spellings belong to the same lexical family, but reflect later leveling,
 back-umlaut, or further reduction rather than a need to replace the selected
 input.
@@ -4770,10 +4770,10 @@ input.
 
 | Variant type | Old English form | Comment |
 | :--- | :--- | :--- |
-| conservative target | _cwedu_ | selected attested variant represented here |
-| leveled i-grade form | _cwidu_ | common lexical variant in the same family |
-| back-umlauted forms | _cweodu_, _cwudu_ | later developments within the same OE tradition |
-| reduced form | _cudu_ | further reduced member of the same variant set |
+| conservative target | [_cwedu_]{.iv lang=oe sort=cwedu role=target_form} | selected attested variant represented here |
+| leveled i-grade form | [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form} | common lexical variant in the same family |
+| back-umlauted forms | [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form}, [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form} | later developments within the same OE tradition |
+| reduced form | [_cudu_]{.iv lang=oe sort=cudu role=comparison_form} | further reduced member of the same variant set |
 
 ### ten — OE tēon
 
@@ -5562,36 +5562,36 @@ Old English form: _festan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen places the verb within the wider _\*fastu-_ adjective family and its
-derived _\*fasten-_ verbal line, the comparative background behind Old English
+Kroonen places the verb within the wider [_\*fastu-_]{.iv lang=pgmc sort=fastu role=source_protoform} adjective family and its
+derived [_\*fasten-_]{.iv lang=pgmc sort=fasten role=source_protoform} verbal line, the comparative background behind Old English
 'to fast' [@Kroonen2013, 171]. Ringe and Taylor, however, distinguish the Old English verb
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
 later acquired the stative meaning through lexical confusion [@RingeTaylor2014, 110].
 
-The form followed here, _\*fástijaną_, therefore represents the inherited class-I
-formation reflected in Old English, whereas the citation label _\*fastēną_
+The derivational input [_\*fástijaną_]{.iv lang=pgmc sort=fastijana role=selected_input} therefore represents the inherited class-I
+formation reflected in Old English, whereas the citation label [_\*fastēną_]{.iv lang=pgmc sort=fastena role=source_protoform}
 belongs to the broader comparative presentation of the lexeme.
 
 #### Old English evidence
 
-Old English dictionaries record forms such as _festan_, alongside related
-_fæstan_ / _fǣstan_ spellings and meanings [@BosworthToller1898, 213]. The form selected here is _festan_, which fits the regular
+Old English dictionaries record forms such as [_festan_]{.iv lang=oe sort=festan role=target_form}, alongside related
+[_fæstan_]{.iv lang=oe sort=faestan role=comparison_form} / [_fǣstan_]{.iv lang=oe sort=faestan role=comparison_form} spellings and meanings [@BosworthToller1898, 213]. The form selected here is [_festan_]{.iv lang=oe sort=festan role=target_form}, which fits the regular
 class-I phonological development.
 
 The _æ_-forms remain relevant, but they do not control the entry. In the
 present analysis they belong to a later analogical reshaping under the
-adjective _fæst_, whereas _festan_ is the regular inherited class-I comparison
+adjective [_fæst_]{.iv lang=oe sort=faest role=comparison_form}, whereas [_festan_]{.iv lang=oe sort=festan role=target_form} is the regular inherited class-I comparison
 form.
 
 #### Development to Old English
 
-From _\*fástijaną_, Anglo-Frisian brightening and subsequent i-umlaut produce the
-fronted vowel seen in _festan_. The later weak-tail reductions and loss of _j_
+From [_\*fástijaną_]{.iv lang=pgmc sort=fastijana role=selected_input}, Anglo-Frisian brightening and subsequent i-umlaut produce the
+fronted vowel seen in [_festan_]{.iv lang=oe sort=festan role=target_form}. The later weak-tail reductions and loss of _j_
 after a heavy syllable complete the regular Old English outcome.
 
-What makes the entry non-regular is not the phonology of _festan_ itself, but
+What makes the entry non-regular is not the phonology of [_festan_]{.iv lang=oe sort=festan role=target_form} itself, but
 the choice of formation. Old English continues the class-I verb, even though
-the comparative headword is often given under the parallel _\*fastēn-_ family.
+the comparative headword is often given under the parallel [_\*fastēn-_]{.iv lang=pgmc sort=fasten role=source_protoform} family.
 
 #### Class comparison
 
@@ -5600,11 +5600,11 @@ headword from the class-I formation actually reflected in Old English.
 
 | Formation / class | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative class-III headword | *fastēną | class-III type outcome, not _festan_ | wider family context | useful family label, but not the direct source of the target |
-| selected class-I weak verb | *fástijaną | regular output: _festan_ | festan | exact match between formation and attested OE verb |
-| later analogical reshaping | adjective-driven _fæst_ influence | _fæstan_ / _fǣstan_ type spellings | fæstan-type evidence | genuine later OE reshaping, but secondary to the Old English form here |
+| comparative class-III headword | [_\*fastēną_]{.iv lang=pgmc sort=fastena role=source_protoform} | class-III type outcome, not [_festan_]{.iv lang=oe sort=festan role=target_form} | wider family context | useful family label, but not the direct source of the target |
+| selected class-I weak verb | [_\*fástijaną_]{.iv lang=pgmc sort=fastijana role=selected_input} | regular output: [_festan_]{.iv lang=oe sort=festan role=regular_output} | [_festan_]{.iv lang=oe sort=festan role=target_form} | exact match between formation and attested OE verb |
+| later analogical reshaping | adjective-driven [_fæst_]{.iv lang=oe sort=faest role=comparison_form} influence | [_fæstan_]{.iv lang=oe sort=faestan role=comparison_form} / [_fǣstan_]{.iv lang=oe sort=faestan role=comparison_form} type spellings | fæstan-type evidence | genuine later OE reshaping, but secondary to the Old English form here |
 
-The relevant point is the class split. _festan_ is the regular Old English
+The relevant point is the class split. [_festan_]{.iv lang=oe sort=festan role=target_form} is the regular Old English
 outcome of the class-I formation, while the better-known _æ_-forms belong to a
 later analogical layer.
 
@@ -8716,37 +8716,37 @@ Old English form: _fundene_
 
 #### Reconstruction and comparative evidence
 
-The inherited verb is the strong verb _\*fínθaną_, continued by Old English
-_findan_ [@RingeTaylor2014, 344]. The form followed here, _\*fúnðanǭ_,
+The inherited verb is the strong verb [_\*fínθaną_]{.iv lang=pgmc sort=finthana role=source_protoform}, continued by Old English
+[_findan_]{.iv lang=oe sort=findan role=comparison_form} [@RingeTaylor2014, 344]. The form followed here, [_\*fúnðanǭ_]{.iv lang=pgmc sort=fundhano role=selected_input},
 belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
-That distinction matters because the familiar dictionary form _funden_ is not
+That distinction matters because the familiar dictionary form [_funden_]{.iv lang=oe sort=funden role=comparison_form} is not
 the form compared here. The derivational input instead models an attested
 participial form directly, rather than treating the infinitive or the ordinary
-dictionary headword as primary. It therefore reaches _fundene_ in the form
+dictionary headword as primary. It therefore reaches [_fundene_]{.iv lang=oe sort=fundene role=target_form} in the form
 where the trace and the attested evidence match directly.
 
 #### Old English evidence
 
-Bosworth-Toller records _fundene_ under _findan_, citing the form in
+Bosworth-Toller records [_fundene_]{.iv lang=oe sort=fundene role=target_form} under [_findan_]{.iv lang=oe sort=findan role=comparison_form}, citing the form in
 _Beón_ _þá_ herigeata swa fundene [@BosworthToller1898, 219]. Clark Hall likewise preserves the
-participial stem in forms such as _funden_ and _tō-fundennes_
+participial stem in forms such as [_funden_]{.iv lang=oe sort=funden role=comparison_form} and _tō-fundennes_
 [@ClarkHall1960, 124].
 
-The ordinary dictionary headword for the participle is _funden_, but the
-relevant comparison form for this entry is the attested oblique _fundene_.
+The ordinary dictionary headword for the participle is [_funden_]{.iv lang=oe sort=funden role=comparison_form}, but the
+relevant comparison form for this entry is the attested oblique [_fundene_]{.iv lang=oe sort=fundene role=target_form}.
 It is an Old English form in its own right, not a merely convenient probe.
 
 #### Development to Old English
 
-From _\*fúnðanǭ_, the participial oblique develops through regular loss and
-weakening of the final ending, yielding _fundene_. In that cell both the
+From [_\*fúnðanǭ_]{.iv lang=pgmc sort=fundhano role=selected_input}, the participial oblique develops through regular loss and
+weakening of the final ending, yielding [_fundene_]{.iv lang=oe sort=fundene role=target_form}. In that cell both the
 consonantism and the medial vowel history remain regular.
 
 The broader participial paradigm then matters for interpretation. The more
-familiar nominative _funden_ is the ordinary dictionary form, whereas the
-oblique form _fundene_ is the attested form compared here.
+familiar nominative [_funden_]{.iv lang=oe sort=funden role=comparison_form} is the ordinary dictionary form, whereas the
+oblique form [_fundene_]{.iv lang=oe sort=fundene role=target_form} is the attested form compared here.
 
 #### Paradigm comparison
 
@@ -8756,9 +8756,9 @@ cited Old English evidence alongside the regular derivational path.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *fínθaną | inherited verb _findan_ | findan | establishes the lexeme, but not the form compared here |
-| nominative participial line | *fúnðanaz | ordinary dictionary _funden_ type | funden | important paradigm background, but not the form compared here |
-| oblique participle compared here | *fúnðanǭ | regular output: _fundene_ | fundene | exact match between input, output, and attested cell |
+| citation infinitive | [_\*fínθaną_]{.iv lang=pgmc sort=finthana role=source_protoform} | inherited verb [_findan_]{.iv lang=oe sort=findan role=comparison_form} | [_findan_]{.iv lang=oe sort=findan role=comparison_form} | establishes the lexeme, but not the form compared here |
+| nominative participial line | [_\*fúnðanaz_]{.iv lang=pgmc sort=fundhanaz role=comparison_form} | ordinary dictionary [_funden_]{.iv lang=oe sort=funden role=comparison_form} type | [_funden_]{.iv lang=oe sort=funden role=comparison_form} | important paradigm background, but not the form compared here |
+| oblique participle compared here | [_\*fúnðanǭ_]{.iv lang=pgmc sort=fundhano role=selected_input} | regular output: [_fundene_]{.iv lang=oe sort=fundene role=regular_output} | [_fundene_]{.iv lang=oe sort=fundene role=target_form} | exact match between input, output, and attested cell |
 
 The oblique participle is the relevant comparison form. It matches the
 derivational input and Old English form directly, while the nominative participial headword remains a
@@ -10196,9 +10196,9 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*burōjaną_ | dictionary headword _borian_ | borian | family background, but not the cell compared here |
-| imperative singular | _\*búrô_ | regular output _bora_ | bora | exact match |
-| 3sg present companion | _\*búrōθi_ | related finite form _boraþ_ | boraþ | useful control, but not the target |
+| lexeme-level infinitive | [_\*burōjaną_]{.iv lang=pgmc sort=burojana role=source_protoform} | dictionary headword [_borian_]{.iv lang=oe sort=borian role=comparison_form} | [_borian_]{.iv lang=oe sort=borian role=comparison_form} | family background, but not the cell compared here |
+| imperative singular | [_\*búrô_]{.iv lang=pgmc sort=buro role=selected_input} | regular output [_bora_]{.iv lang=oe sort=bora role=regular_output} | [_bora_]{.iv lang=oe sort=bora role=target_form} | exact match |
+| 3sg present companion | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=comparison_form} | related finite form [_boraþ_]{.iv lang=oe sort=borath role=comparison_form} | [_boraþ_]{.iv lang=oe sort=borath role=comparison_form} | useful control, but not the target |
 
 ### bore (3sg) — OE boraþ
 
@@ -10274,9 +10274,9 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*burōjaną_ | dictionary headword _borian_ | borian | family background, but not the cell compared here |
-| 3sg present | _\*búrōθi_ | regular output _boraþ_ | boraþ | exact match |
-| imperative singular companion | _\*búrô_ | related finite form _bora_ | bora | useful control, but not the target |
+| lexeme-level infinitive | [_\*burōjaną_]{.iv lang=pgmc sort=burojana role=source_protoform} | dictionary headword [_borian_]{.iv lang=oe sort=borian role=comparison_form} | [_borian_]{.iv lang=oe sort=borian role=comparison_form} | family background, but not the cell compared here |
+| 3sg present | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=selected_input} | regular output [_boraþ_]{.iv lang=oe sort=borath role=regular_output} | [_boraþ_]{.iv lang=oe sort=borath role=target_form} | exact match |
+| imperative singular companion | [_\*búrô_]{.iv lang=pgmc sort=buro role=comparison_form} | related finite form [_bora_]{.iv lang=oe sort=bora role=comparison_form} | [_bora_]{.iv lang=oe sort=bora role=comparison_form} | useful control, but not the target |
 
 ### learn (iptv.2sg) — OE liorna
 

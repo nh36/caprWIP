@@ -19,25 +19,25 @@ DERIVATION_CLASS: attested_variant
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the resin word as `*kwedu-2` and gives Old English
-variants [`cwidu`]{.iv lang=oe sort=cwidu}, [`cweodu`]{.iv lang=oe sort=cweodu}, and `c(w)udu` [@Kroonen2013, 355]. Orel likewise
-lists [`cwidu`]{.iv lang=oe sort=cwidu} under the cognate set [@Orel2003, 266]. The selected input
-`*kwéðuz`
+variants [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form}, [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}, and [`c(w)udu`]{.iv lang=oe display=c(w)udu sort=cwudu role=comparison_form} [@Kroonen2013, 355]. Orel likewise
+lists [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} under the cognate set [@Orel2003, 266]. The selected input
+[`*kwéðuz`]{.iv lang=pgmc sort=kweduz role=selected_input}
 therefore represents the older e-grade, voiced-dental form behind the chosen
-variant `cwedu`.
+variant [`cwedu`]{.iv lang=oe sort=cwedu role=target_form}.
 
 ### Old English evidence
 
 The Old English word survives in a wider variant set than one dictionary
-headword suggests. Ringe and Taylor discuss [`cwidu`]{.iv lang=oe sort=cwidu} > [`cwudu`]{.iv lang=oe sort=cwudu} > `cudu` and also
-note late West Saxon [`cweodu`]{.iv lang=oe sort=cweodu}; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu}, [`cweodu`]{.iv lang=oe sort=cweodu}, and `cudu`
+headword suggests. Ringe and Taylor discuss [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} > [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} > [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} and also
+note late West Saxon [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form}, [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}, and [`cudu`]{.iv lang=oe sort=cudu role=comparison_form}
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested `cwedu` is treated here
 as the
 conservative variant within that set.
 
 ### Development to Old English
 
-From `*kwéðuz`, the West Germanic voiced dental hardens in the expected way and
-the regular Old English development yields `cwedu`. The other Old English
+From [`*kwéðuz`]{.iv lang=pgmc sort=kweduz role=selected_input}, the West Germanic voiced dental hardens in the expected way and
+the regular Old English development yields [`cwedu`]{.iv lang=oe sort=cwedu role=target_form}. The other Old English
 spellings belong to the same lexical family, but reflect later leveling,
 back-umlaut, or further reduction rather than a need to replace the selected
 input.
@@ -46,7 +46,7 @@ input.
 
 | Variant type | Old English form | Comment |
 | :--- | :--- | :--- |
-| conservative target | `cwedu` | selected attested variant represented here |
-| leveled i-grade form | `cwidu` | common lexical variant in the same family |
-| back-umlauted forms | `cweodu`, `cwudu` | later developments within the same OE tradition |
-| reduced form | `cudu` | further reduced member of the same variant set |
+| conservative target | [`cwedu`]{.iv lang=oe sort=cwedu role=target_form} | selected attested variant represented here |
+| leveled i-grade form | [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} | common lexical variant in the same family |
+| back-umlauted forms | [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}, [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} | later developments within the same OE tradition |
+| reduced form | [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} | further reduced member of the same variant set |
