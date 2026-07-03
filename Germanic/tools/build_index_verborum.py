@@ -31,6 +31,7 @@ PRODUCTION_FIELDS = [
     "form",
     "display",
     "sort_key",
+    "form_role",
     "source_scope",
     "source_ref",
     "origin",
@@ -61,7 +62,8 @@ def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str,
 
 
 LANGUAGE_REGISTRY, LANGUAGE_ORDER, LANGUAGE_TITLES, LANGUAGE_COLUMNS = load_language_registry()
-FORM_RE = re.compile(r"[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./*()-]+")
+KNOWN_LANGUAGE_CODES = {row["code"] for row in LANGUAGE_REGISTRY}
+FORM_RE = re.compile(r"[*A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ'().-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
 EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
 ATTR_RE = re.compile(r"(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?P<value>\"[^\"]*\"|[^\s}]+)")
@@ -87,6 +89,9 @@ NOISE_LINE_PREFIXES = (
     r"\begingroup",
     r"\endgroup",
 )
+TABLE_AUDIT_HEADING_KEYWORDS = ("comparison", "status")
+TABLE_AUDIT_HEADER_KEYWORDS = ("form", "input", "outcome", "comparison", "branch")
+TABLE_AUDIT_HEADER_EXCLUDE = ("result", "status", "relevance")
 TRANSLIT_MAP = {
     "þ": "th",
     "ð": "d",
@@ -194,6 +199,7 @@ class ProductionOccurrence:
     form: str
     display: str
     sort_key: str
+    form_role: str
     source_scope: str
     source_ref: str
     origins: set[str] = field(default_factory=set)
@@ -254,7 +260,7 @@ def looks_formlike(text: str) -> bool:
         return False
     if ".md" in text or ".pdf" in text or ".tsv" in text or "\\" in text or "<" in text or ">" in text:
         return False
-    if len(re.sub(r"[^A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ]+", "", text.lstrip("*"))) < 2:
+    if sum(1 for ch in text.lstrip("*") if unicodedata.category(ch).startswith("L")) < 2:
         return False
     return True
 
@@ -262,6 +268,13 @@ def looks_formlike(text: str) -> bool:
 def normalize_form(text: str) -> str:
     cleaned = strip_markup(text)
     return cleaned if looks_formlike(cleaned) else ""
+
+
+def relative_source_path(path: Path) -> str:
+    try:
+        return path.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
 
 
 def stage_to_language(label: str, form: str) -> str:
@@ -310,6 +323,7 @@ def add_production(
     *,
     language: str,
     form: str,
+    form_role: str,
     source_scope: str,
     source_ref: str,
     origin: str,
@@ -320,6 +334,8 @@ def add_production(
     cleaned = normalize_form(form)
     if not cleaned or not language:
         return
+    if language not in KNOWN_LANGUAGE_CODES:
+        raise ValueError(f"Unknown index verborum language code: {language}")
     visible = display or cleaned
     key = (language, cleaned, visible, source_scope, source_ref)
     if key not in store:
@@ -328,6 +344,7 @@ def add_production(
             form=cleaned,
             display=visible,
             sort_key=sort_key or transliterate_sort_key(visible),
+            form_role=form_role,
             source_scope=source_scope,
             source_ref=source_ref,
             status=status,
@@ -432,10 +449,10 @@ def source_files_for_audit() -> list[Path]:
     return [INTRO_PATH, CHRONOLOGY_PATH, *sorted(MODEL_ENTRIES_DIR.glob("*.model.md"))]
 
 
-def explicit_tag_occurrences() -> list[dict[str, str]]:
+def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, str]]:
     occurrences: list[dict[str, str]] = []
-    for path in source_files_for_tags():
-        rel = path.relative_to(REPO_ROOT).as_posix()
+    for path in paths or source_files_for_tags():
+        rel = relative_source_path(path)
         for tag in iter_explicit_tags(path):
             occurrences.append(
                 {
@@ -443,6 +460,7 @@ def explicit_tag_occurrences() -> list[dict[str, str]]:
                     "form": strip_markup(tag["content"]),
                     "display": tag["display"] or strip_markup(tag["content"]),
                     "sort_key": tag["sort"] or transliterate_sort_key(strip_markup(tag["content"])),
+                    "form_role": "evidence_form",
                     "source_scope": "explicit_tag",
                     "source_ref": f"{rel}:{tag['line_no']}",
                     "origin": rel,
@@ -465,6 +483,7 @@ def reader_facing_failure_occurrences() -> list[dict[str, str]]:
                     "form": input_form,
                     "display": input_form,
                     "sort_key": transliterate_sort_key(input_form),
+                    "form_role": "selected_input",
                     "source_scope": "reader_failure_input",
                     "source_ref": f"{rel}:{line_no}",
                     "origin": rel,
@@ -477,6 +496,7 @@ def reader_facing_failure_occurrences() -> list[dict[str, str]]:
                         "form": form,
                         "display": form,
                         "sort_key": transliterate_sort_key(form),
+                        "form_role": "regular_output" if scope == "reader_failure_output" else "comparison_form",
                         "source_scope": scope,
                         "source_ref": f"{rel}:{line_no}",
                         "origin": rel,
@@ -485,8 +505,131 @@ def reader_facing_failure_occurrences() -> list[dict[str, str]]:
     return occurrences
 
 
+def split_markdown_table_row(line: str) -> list[str]:
+    raw = line.strip()
+    if raw.startswith("|"):
+        raw = raw[1:]
+    if raw.endswith("|"):
+        raw = raw[:-1]
+    return [cell.strip() for cell in raw.split("|")]
+
+
+def is_markdown_table_delimiter(cells: list[str]) -> bool:
+    return bool(cells) and all(re.fullmatch(r":?-{3,}:?", cell.replace(" ", "")) for cell in cells)
+
+
+def heading_supports_table_audit(heading: str) -> bool:
+    lowered = heading.casefold()
+    return any(keyword in lowered for keyword in TABLE_AUDIT_HEADING_KEYWORDS)
+
+
+def header_supports_table_audit(header: str) -> bool:
+    lowered = re.sub(r"\s+", " ", header.casefold())
+    if any(keyword in lowered for keyword in TABLE_AUDIT_HEADER_EXCLUDE):
+        return False
+    if lowered in {"item", "value"}:
+        return False
+    return any(keyword in lowered for keyword in TABLE_AUDIT_HEADER_KEYWORDS)
+
+
+def extract_forms_from_markup(text: str) -> list[str]:
+    forms: list[str] = []
+    seen: set[str] = set()
+    for match in EXPLICIT_TAG_RE.finditer(text):
+        form = normalize_form(match.group("content"))
+        if form and form not in seen:
+            forms.append(form)
+            seen.add(form)
+    scrubbed = EXPLICIT_TAG_RE.sub(" ", text)
+    for match in MARKUP_FORM_RE.finditer(scrubbed):
+        raw = next(group for group in match.groups() if group)
+        form = normalize_form(raw.replace("<br>", " "))
+        if form and form not in seen:
+            forms.append(form)
+            seen.add(form)
+    return forms
+
+
+def table_candidates_from_path(path: Path, *, allow_non_model_entry: bool = False) -> list[CandidateOccurrence]:
+    if not allow_non_model_entry and path.parent != MODEL_ENTRIES_DIR:
+        return []
+    rel = relative_source_path(path)
+    lines = path.read_text(encoding="utf-8").splitlines()
+    candidates: list[CandidateOccurrence] = []
+    current_heading = ""
+    idx = 0
+    while idx < len(lines):
+        stripped = lines[idx].strip()
+        if stripped.startswith("#"):
+            current_heading = stripped
+        if (
+            not heading_supports_table_audit(current_heading)
+            or not stripped.startswith("|")
+            or idx + 1 >= len(lines)
+        ):
+            idx += 1
+            continue
+        header_cells = split_markdown_table_row(lines[idx])
+        delimiter_cells = split_markdown_table_row(lines[idx + 1].strip())
+        if len(header_cells) != len(delimiter_cells) or not is_markdown_table_delimiter(delimiter_cells):
+            idx += 1
+            continue
+        relevant_columns = {
+            col_idx for col_idx, header in enumerate(header_cells) if header_supports_table_audit(header)
+        }
+        idx += 2
+        while idx < len(lines) and lines[idx].strip().startswith("|"):
+            row_line = lines[idx]
+            row_cells = split_markdown_table_row(row_line)
+            for col_idx in relevant_columns:
+                if col_idx >= len(row_cells):
+                    continue
+                for form in extract_forms_from_markup(row_cells[col_idx]):
+                    candidates.append(
+                        CandidateOccurrence(
+                            form=form,
+                            source_ref=f"{rel}:{idx + 1}",
+                            source_path=rel,
+                            line_no=idx + 1,
+                            heading=current_heading,
+                            line_text=row_line.strip(),
+                        )
+                    )
+            idx += 1
+    return candidates
+
+
+def excluded_intermediate_trace_forms() -> list[dict[str, str]]:
+    manifest_rows = parse_manifest_rows()
+    manifest_by_title = {
+        (row["lexical_item"], row["counterpart"], row["protoform"]): row
+        for row in manifest_rows
+    }
+    entries: list[dict[str, str]] = []
+    for entry in parse_compact_entries():
+        manifest_row = manifest_by_title.get((entry["title"], entry["expected"], entry["proto"]))
+        if manifest_row is not None:
+            ref = heading_ref(manifest_row["lexical_item"], manifest_row["counterpart"], manifest_row["derivation_class"])
+        else:
+            ref = heading_ref(str(entry["title"]), str(entry["expected"]))
+        for label, form in entry["stages"]:
+            entries.append(
+                {
+                    "form": form,
+                    "source_ref": ref,
+                    "source_path": COMPACT_PATH.relative_to(REPO_ROOT).as_posix(),
+                    "heading": label,
+                    "category": "intermediate_trace_form",
+                    "context": label,
+                    "sort_key": transliterate_sort_key(form),
+                }
+            )
+    entries.sort(key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"]))
+    return entries
+
+
 def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
-    rel = path.relative_to(REPO_ROOT).as_posix()
+    rel = relative_source_path(path)
     candidates: list[CandidateOccurrence] = []
     in_fence = False
     current_heading = ""
@@ -579,10 +722,10 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
     for row in manifest_rows:
         ref = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
         oe_display = oe_target_display(row["counterpart"], row["derivation_class"])
-        add_production(store, language="oe", form=row["counterpart"], display=oe_display, source_scope="lexical_heading", source_ref=ref, origin="manifest")
-        add_production(store, language="pgmc", form=row["protoform"], source_scope="lexical_protoform", source_ref=ref, origin="manifest")
+        add_production(store, language="oe", form=row["counterpart"], display=oe_display, form_role="target_form", source_scope="lexical_heading", source_ref=ref, origin="manifest")
+        add_production(store, language="pgmc", form=row["protoform"], form_role="source_protoform", source_scope="lexical_protoform", source_ref=ref, origin="manifest")
         if row["proto"] and row["proto"] != row["protoform"]:
-            add_production(store, language="pgmc", form=row["proto"], source_scope="lexical_proto", source_ref=ref, origin="manifest")
+            add_production(store, language="pgmc", form=row["proto"], form_role="source_protoform", source_scope="lexical_proto", source_ref=ref, origin="manifest")
 
     for entry in parse_compact_entries():
         manifest_row = manifest_by_title.get((entry["title"], entry["expected"], entry["proto"]))
@@ -593,20 +736,7 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
             ref = heading_ref(str(entry["title"]), str(entry["expected"]))
             oe_display = str(entry["expected"])
         if entry["proto_input"]:
-            add_production(store, language="pgmc", form=str(entry["proto_input"]), source_scope="trace_proto_input", source_ref=ref, origin="compact")
-        for form in entry["outputs"]:
-            lang = "preoe" if form.startswith("*") else "oe"
-            display = oe_display if manifest_row is not None and lang == "oe" else None
-            add_production(store, language=lang, form=form, display=display, source_scope="trace_output", source_ref=ref, origin="compact")
-        for label, form in entry["stages"]:
-            add_production(
-                store,
-                language=stage_to_language(label, form),
-                form=form,
-                source_scope="trace_stage",
-                source_ref=ref,
-                origin=f"compact:{label}",
-            )
+            add_production(store, language="pgmc", form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
 
     for row in explicit_tag_occurrences():
         if row["language"]:
@@ -616,6 +746,7 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
                 form=row["form"],
                 display=row["display"],
                 sort_key=row["sort_key"],
+                form_role=row["form_role"],
                 source_scope=row["source_scope"],
                 source_ref=row["source_ref"],
                 origin=row["origin"],
@@ -629,6 +760,7 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
                 form=row["form"],
                 display=row["display"],
                 sort_key=row["sort_key"],
+                form_role=row["form_role"],
                 source_scope=row["source_scope"],
                 source_ref=row["source_ref"],
                 origin=row["origin"],
@@ -643,6 +775,7 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
             form=row["form"],
             display=row["display"] or row["form"],
             sort_key=row["sort_key"] or transliterate_sort_key(row["display"] or row["form"]),
+            form_role="comparison_form",
             source_scope=row["source_scope"] or "override",
             source_ref=row["source_ref"] or "override",
             origin="override",
@@ -743,6 +876,7 @@ def build_audit_rows(
         source_candidates = []
         for path in source_files_for_audit():
             source_candidates.extend(broad_candidates_from_path(path))
+            source_candidates.extend(table_candidates_from_path(path))
     for candidate in source_candidates:
         if (candidate.form, candidate.source_ref) in seen:
             continue
@@ -779,6 +913,7 @@ def write_forms(rows: list[ProductionOccurrence]) -> None:
                     "form": row.form,
                     "display": row.display,
                     "sort_key": row.sort_key,
+                    "form_role": row.form_role,
                     "source_scope": row.source_scope,
                     "source_ref": row.source_ref,
                     "origin": "; ".join(sorted(row.origins)),
@@ -854,6 +989,7 @@ def write_audit(
         for language in counts_by_language
     }
     needs_review_entries = buckets.get("needs_review", [])
+    excluded_trace_entries = excluded_intermediate_trace_forms()
     new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
     lines = [
         "# Index verborum audit",
@@ -863,6 +999,7 @@ def write_audit(
         f"- Audit-only candidates needing review: {len(needs_review_entries)}",
         f"- Ignored fragments or sequences: {len(buckets.get('ignored_fragment', [])) + len(buckets.get('ignored_by_override', []))}",
         f"- Possible extraction garbage: {len(buckets.get('possible_garbage', []))}",
+        f"- Excluded intermediate trace forms: {len(excluded_trace_entries)}",
         f"- New unresolved candidates relative to baseline: {len(new_entries)}",
         f"- Baseline candidates now resolved or ignored: {len(resolved_entries)}",
         "",
@@ -884,6 +1021,20 @@ def write_audit(
         for row in sample:
             lines.append(f"- `{row.display}` ({row.source_scope}; {row.source_ref})")
         lines.append("")
+
+    role_counts = Counter(row.form_role for row in rows)
+    lines.extend(["## Production indexed forms by role", "", "| Role | Occurrences |", "| --- | ---: |"])
+    for role in (
+        "target_form",
+        "source_protoform",
+        "selected_input",
+        "comparison_form",
+        "regular_output",
+        "evidence_form",
+    ):
+        if role_counts.get(role):
+            lines.append(f"| {role} | {role_counts[role]} |")
+    lines.append("")
 
     def render_bucket(title: str, entries: list[dict[str, str]], columns: tuple[str, ...] = ("form", "source_ref")) -> None:
         lines.append(f"## {title}")
@@ -941,6 +1092,7 @@ def write_audit(
     render_bucket("Ignored fragments or sequences", buckets.get("ignored_fragment", []))
     render_bucket("Ignored by override", buckets.get("ignored_by_override", []))
     render_bucket("Possible extraction garbage", buckets.get("possible_garbage", []))
+    render_bucket("Excluded intermediate trace forms", excluded_trace_entries[:50], columns=("form", "source_ref", "heading"))
 
     top_forms = Counter(entry["form"] for entry in needs_review_entries)
     render_bucket(

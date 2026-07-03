@@ -173,15 +173,15 @@ Old English form: _bacan_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as _\*bakanan_ and cites Old English _bacan_ beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives _bacan_ as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from _\*bakan_ to Old English _bacan_ [@Campbell1959, 61; @RingeTaylor2014].
+Orel reconstructs the verb as [_\*bakanan_]{.iv lang=pgmc sort=bakanan} and cites Old English [_bacan_]{.iv lang=oe sort=bacan} beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives [_bacan_]{.iv lang=oe sort=bacan} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [_\*bakan_]{.iv lang=preoe sort=bakan} to Old English [_bacan_]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall both record _bacan_ as the ordinary Old English verb 'to bake' [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
+Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan} as the ordinary Old English verb 'to bake' [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
 
 #### Development to Old English
 
-From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield _bacan_ [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: _\*bákaną_ > _bacan_.
+From [_\*bákaną_]{.iv lang=pgmc sort=bakana}, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [_\*bákaną_]{.iv lang=pgmc sort=bakana} > [_bacan_]{.iv lang=oe sort=bacan}.
 
 ### beech — OE bōc
 
@@ -295,11 +295,11 @@ Old English form: _beġinnan_
 
 #### Reconstruction and comparative evidence
 
-The verb is modeled here as inherited _\*bigínnaną_. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists _ginnan_ among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174].
+The verb is modeled here as inherited [_\*bigínnaną_]{.iv lang=pgmc sort=biginnana}. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists [_ginnan_]{.iv lang=oe sort=ginnan} among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall lemmatize the verb as _be-ginnan_ / _beginnan_ [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-_g_ dictionary spellings support the same verb that appears here in normalized form as _beġinnan_.
+Bosworth-Toller and Clark Hall lemmatize the verb as [_be-ginnan_]{.iv lang=oe sort=beginnan} / [_beginnan_]{.iv lang=oe sort=beginnan} [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-_g_ dictionary spellings support the same verb that appears here in normalized form as [_beġinnan_]{.iv lang=oe sort=beginnan}.
 
 #### Development note
 
@@ -307,7 +307,7 @@ The prefix deserves separate notice. Ringe and Taylor explicitly cite _bi- > be-
 
 #### Development to Old English
 
-From _\*bigínnaną_, heavy-syllable nasal apocope yields _\*bigínnan_. Intervocalic _\*g_ between front vowels then palatalizes to _ġ_, and the unstressed prefix reduces _bi-_ to _be-_, giving _beġinnan_.
+From [_\*bigínnaną_]{.iv lang=pgmc sort=biginnana}, heavy-syllable nasal apocope yields _\*bigínnan_. Intervocalic _\*g_ between front vowels then palatalizes to _ġ_, and the unstressed prefix reduces _bi-_ to _be-_, giving [_beġinnan_]{.iv lang=oe sort=beginnan}.
 
 ### bier — OE bǣr
 
@@ -360,19 +360,19 @@ Old English form: _bǣr_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as _\*bērō-_ f. 'bier' and cites Old English _bar_, [_bær_]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The form followed here, _\*bḗrō_, is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as [_\*bērō-_]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [_bar_]{.iv lang=oe sort=bar}, [_bær_]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The derivational input [_\*bḗrō_]{.iv lang=pgmc sort=bero} is the same lexeme in the accent notation used here.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer}, and Kroonen also records _bar_ beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target _bǣr_ is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer}, and Kroonen also records [_bar_]{.iv lang=oe sort=bar} beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [_bǣr_]{.iv lang=oe sort=baer} is therefore a normalized long-vowel spelling of the same noun.
 
 #### Source note
 
-Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer} and _bar_. The normalized target _bǣr_ simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer} and [_bar_]{.iv lang=oe sort=bar}. The normalized target [_bǣr_]{.iv lang=oe sort=baer} simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 #### Development to Old English
 
-From _\*bḗrō_, Northwest Germanic final long _ō_ raises to _u_, long _ē_ lowers to _ǣ_, and high-vowel apocope yields _bǣr_. The resulting noun matches the normalized Old English target.
+From [_\*bḗrō_]{.iv lang=pgmc sort=bero}, Northwest Germanic final long _ō_ raises to _u_, long _ē_ lowers to _ǣ_, and high-vowel apocope yields [_bǣr_]{.iv lang=oe sort=baer}. The resulting noun matches the normalized Old English target.
 
 ### birth — OE byrd
 
@@ -489,19 +489,19 @@ Old English form: _bān_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun as _\*baina-_, and Orel gives the same lexeme under _\*bainan_ [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is _bān_.
+Kroonen cites the noun as [_\*baina-_]{.iv lang=pgmc sort=baina}, and Orel gives the same lexeme under [_\*bainan_]{.iv lang=pgmc sort=bainan} [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [_bān_]{.iv lang=oe sort=ban}.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record _bān_ as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form _bān_ from oblique _bāne_, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
+Clark Hall and Bosworth-Toller record [_bān_]{.iv lang=oe sort=ban} as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [_bān_]{.iv lang=oe sort=ban} from oblique [_bāne_]{.iv lang=oe sort=bane}, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
 
 #### Source note
 
-The comparative headwords _\*baina-_ and _\*bainan_ provide lexeme background. The relevant comparison form here is the nominative-accusative singular _\*báiną_.
+The comparative headwords [_\*baina-_]{.iv lang=pgmc sort=baina} and [_\*bainan_]{.iv lang=pgmc sort=bainan} provide lexeme background. The relevant comparison form here is the nominative-accusative singular [_\*báiną_]{.iv lang=pgmc sort=baina}.
 
 #### Development to Old English
 
-West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields _bān_. The resulting form matches the attested Old English citation noun.
+West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields [_bān_]{.iv lang=oe sort=ban}. The resulting form matches the attested Old English citation noun.
 
 ### both — OE bū
 
@@ -8512,39 +8512,39 @@ Old English form: _bēag_
 
 #### Reconstruction and comparative evidence
 
-The inherited verb belongs to the class-II strong-verb family _\*béuganą_
+The inherited verb belongs to the class-II strong-verb family [_\*béuganą_]{.iv lang=pgmc sort=beugana}
 [@RingeTaylor2014, 55]. Within that paradigm, however, the infinitive and the
-singular preterite continue different ablaut grades. The derivational input _\*báug_
-is the singular preterite cell, whereas the citation form _\*béuganą_ is the
+singular preterite continue different ablaut grades. The derivational input [_\*báug_]{.iv lang=pgmc sort=baug}
+is the singular preterite cell, whereas the citation form [_\*béuganą_]{.iv lang=pgmc sort=beugana} is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
 preterite _au_ > _ēa_ development as regular in this environment
 [@Campbell1959, 53].
-That is the phonological path relevant for _bēag_, whereas the analogical _ū_
-of the present stem belongs to the separate history behind _būgan_
+That is the phonological path relevant for [_bēag_]{.iv lang=oe sort=beag}, whereas the analogical _ū_
+of the present stem belongs to the separate history behind [_būgan_]{.iv lang=oe sort=bugan}
 [@RingeTaylor2014, 55].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall both record _bēag_ as a preterite form of
-_būgan_ [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
+Bosworth-Toller and Clark Hall both record [_bēag_]{.iv lang=oe sort=beag} as a preterite form of
+[_būgan_]{.iv lang=oe sort=bugan} [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
-The ordinary dictionary headword remains _būgan_, but the relevant comparison
-form for this entry is the singular preterite _bēag_. That is the paradigm
+The ordinary dictionary headword remains [_būgan_]{.iv lang=oe sort=bugan}, but the relevant comparison
+form for this entry is the singular preterite [_bēag_]{.iv lang=oe sort=beag}. That is the paradigm
 cell in which the inherited _\*au_ grade is preserved most directly.
 
 #### Development to Old English
 
-From _\*báug_, Anglo-Frisian fronting and the later leveling of the diphthong
-produce _bēag_ [@Campbell1959, 53]. No special analogical repair is needed for that
+From [_\*báug_]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
+produce [_bēag_]{.iv lang=oe sort=beag} [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.
 
 The analogical element in the wider lexeme belongs instead to the present stem
-seen in _būgan_. The derivational input differs from the citation form because the
+seen in [_būgan_]{.iv lang=oe sort=bugan}. The derivational input differs from the citation form because the
 regular inherited pathway survives more transparently in the preterite than in
 the infinitive.
 
@@ -8555,12 +8555,12 @@ preterite from the more familiar infinitival citation form.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *béuganą | inherited present-stem history behind _būgan_ | būgan | establishes the lexeme, but not the Old English form here |
-| singular preterite | *báug | regular output: _bēag_ | bēag | exact match between input, output, and attested cell |
+| citation infinitive | [_\*béuganą_]{.iv lang=pgmc sort=beugana} | inherited present-stem history behind [_būgan_]{.iv lang=oe sort=bugan} | [_būgan_]{.iv lang=oe sort=bugan} | establishes the lexeme, but not the Old English form here |
+| singular preterite | [_\*báug_]{.iv lang=pgmc sort=baug} | regular output: [_bēag_]{.iv lang=oe sort=beag} | [_bēag_]{.iv lang=oe sort=beag} | exact match between input, output, and attested cell |
 | past participial branch | participial _\*bugan-_ type | later participial outcomes | bogen-type evidence | relevant to the paradigm, but not the clearest match for this entry |
 
 The singular preterite is the relevant comparison form. It gives a direct
-lautgesetzlich path to attested _bēag_, while the citation form _būgan_
+lautgesetzlich path to attested [_bēag_]{.iv lang=oe sort=beag}, while the citation form [_būgan_]{.iv lang=oe sort=bugan}
 belongs to a paradigm whose present stem has already undergone later leveling.
 
 ### cow — OE cȳ

@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*baina-`, and Orel gives the same lexeme under `*bainan` [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is `bān`.
+Kroonen cites the noun as [`*baina-`]{.iv lang=pgmc sort=baina}, and Orel gives the same lexeme under [`*bainan`]{.iv lang=pgmc sort=bainan} [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [`bān`]{.iv lang=oe sort=ban}.
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `bān` as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form `bān` from oblique `bāne`, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
+Clark Hall and Bosworth-Toller record [`bān`]{.iv lang=oe sort=ban} as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [`bān`]{.iv lang=oe sort=ban} from oblique [`bāne`]{.iv lang=oe sort=bane}, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
 
 ### Source note
 
-The comparative headwords `*baina-` and `*bainan` provide lexeme background. The relevant comparison form here is the nominative-accusative singular `*báiną`.
+The comparative headwords [`*baina-`]{.iv lang=pgmc sort=baina} and [`*bainan`]{.iv lang=pgmc sort=bainan} provide lexeme background. The relevant comparison form here is the nominative-accusative singular [`*báiną`]{.iv lang=pgmc sort=baina}.
 
 ### Development to Old English
 
-West Germanic monophthongization turns stressed `*ai` into `ā`, giving `*bāną`; heavy-syllable nasal apocope then yields `bān`. The resulting form matches the attested Old English citation noun.
+West Germanic monophthongization turns stressed `*ai` into `ā`, giving `*bāną`; heavy-syllable nasal apocope then yields [`bān`]{.iv lang=oe sort=ban}. The resulting form matches the attested Old English citation noun.

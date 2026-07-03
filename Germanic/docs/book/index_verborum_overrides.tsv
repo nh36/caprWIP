@@ -40,3 +40,6 @@ ignore		family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan
 ignore		beide				Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31	Modern German comparison mentioned in English prose; outside current index scope.
 ignore		learn				Germanic/docs/assembly/capr_book_intro_alpha_01.md:83	English gloss in prose, not a historical-language form.
 ignore		field				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:287	English gloss in prose, not a historical-language form.
+ignore		*bækaną				Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
+ignore		*bigínnan				Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
+ignore		*bāną				Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.

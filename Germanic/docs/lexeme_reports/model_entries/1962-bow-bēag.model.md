@@ -18,39 +18,39 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited verb belongs to the class-II strong-verb family `*béuganą`
+The inherited verb belongs to the class-II strong-verb family [`*béuganą`]{.iv lang=pgmc sort=beugana}
 [@RingeTaylor2014, 55]. Within that paradigm, however, the infinitive and the
-singular preterite continue different ablaut grades. The selected input `*báug`
-is the singular preterite cell, whereas the citation form `*béuganą` is the
+singular preterite continue different ablaut grades. The selected input [`*báug`]{.iv lang=pgmc sort=baug}
+is the singular preterite cell, whereas the citation form [`*béuganą`]{.iv lang=pgmc sort=beugana} is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
 preterite `au > ēa` development as regular in this environment
 [@Campbell1959, 53].
-That is the phonological path relevant for `bēag`, whereas the analogical `ū`
-of the present stem belongs to the separate history behind `būgan`
+That is the phonological path relevant for [`bēag`]{.iv lang=oe sort=beag}, whereas the analogical `ū`
+of the present stem belongs to the separate history behind [`būgan`]{.iv lang=oe sort=bugan}
 [@RingeTaylor2014, 55].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall both record `bēag` as a preterite form of
-`būgan` [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
+Bosworth-Toller and Clark Hall both record [`bēag`]{.iv lang=oe sort=beag} as a preterite form of
+[`būgan`]{.iv lang=oe sort=bugan} [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
-The ordinary dictionary headword remains `būgan`, but the relevant comparison
-form for this entry is the singular preterite **`bēag`**. That is the paradigm
+The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan}, but the relevant comparison
+form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag}**. That is the paradigm
 cell in which the inherited `*au` grade is preserved most directly.
 
 ### Development to Old English
 
-From `*báug`, Anglo-Frisian fronting and the later leveling of the diphthong
-produce `bēag` [@Campbell1959, 53]. No special analogical repair is needed for that
+From [`*báug`]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
+produce [`bēag`]{.iv lang=oe sort=beag} [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.
 
 The analogical element in the wider lexeme belongs instead to the present stem
-seen in `būgan`. The selected input differs from the citation form because the
+seen in [`būgan`]{.iv lang=oe sort=bugan}. The selected input differs from the citation form because the
 regular inherited pathway survives more transparently in the preterite than in
 the infinitive.
 
@@ -61,10 +61,10 @@ preterite from the more familiar infinitival citation form.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *béuganą | inherited present-stem history behind `būgan` | būgan | establishes the lexeme, but not the selected target |
-| singular preterite | *báug | compact-trace output: `bēag` | bēag | exact match between input, output, and attested cell |
+| citation infinitive | [`*béuganą`]{.iv lang=pgmc sort=beugana} | inherited present-stem history behind [`būgan`]{.iv lang=oe sort=bugan} | [`būgan`]{.iv lang=oe sort=bugan} | establishes the lexeme, but not the selected target |
+| singular preterite | [`*báug`]{.iv lang=pgmc sort=baug} | compact-trace output: [`bēag`]{.iv lang=oe sort=beag} | [`bēag`]{.iv lang=oe sort=beag} | exact match between input, output, and attested cell |
 | past participial branch | participial `*bugan-` type | later participial outcomes | bogen-type evidence | relevant to the paradigm, but not the clearest match for this entry |
 
 The singular preterite is the relevant comparison form. It gives a direct
-lautgesetzlich path to attested `bēag`, while the citation form `būgan`
+lautgesetzlich path to attested [`bēag`]{.iv lang=oe sort=beag}, while the citation form [`būgan`]{.iv lang=oe sort=bugan}
 belongs to a paradigm whose present stem has already undergone later leveling.

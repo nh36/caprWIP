@@ -56,14 +56,25 @@ LaTeX `\index[...]` command after the tagged span.
 [*scouwōn*]{.iv lang=ohg sort=scouwon}
 [*lēta*]{.iv lang=ofris sort=leta}
 [*dags*]{.iv lang=goth sort=dags}
+[*λόγος*]{.iv lang=greek sort=logos}
+[śrī]{.iv lang=skt sort=sri}
 ```
 
 ## Production vs audit
 
-- Structured lexical fields, compact derivation traces, generated lexical
-  headings/metadata, and explicit `.iv` tags feed the **production** index.
+- Structured lexical fields, generated lexical headings/metadata, selected
+  derivational inputs, explicit `.iv` tags, and curated overrides feed the
+  **production** index.
+- Automatic compact-trace intermediate stages do **not** feed the production
+  index verborum by default.
+- Mechanical trace outputs do **not** enter production automatically merely
+  because the transducer can generate them. If a regular output matters as
+  evidence, contrast, or comparison, tag it explicitly or add it through a
+  curated source.
 - Broad harvesting of arbitrary marked-up forms feeds only
   `Germanic/docs/book/index_verborum_audit.md`.
+- Markdown comparison/paradigm tables in model entries are audited separately so
+  untagged evidence forms still surface for review.
 - Curated decisions belong in
   `Germanic/docs/book/index_verborum_overrides.tsv`, not in the generated
   `index_verborum_forms.tsv`.
@@ -76,8 +87,16 @@ LaTeX `\index[...]` command after the tagged span.
 - Reconstructed forms are indexed with their asterisks in the printed index.
 - Reconstructed Old English forms belong in the **Old English** index with an
   asterisk, not under Proto-Germanic or generic pre-Old-English.
-- Structured lexical and trace forms are indexed automatically at the lexical
-  entry or trace location that generated them.
+- Production indexing is organized around form roles:
+  1. `source_protoform`
+  2. `selected_input`
+  3. `target_form`
+  4. `comparison_form`
+  5. `regular_output` when explicitly contrasted
+  6. `evidence_form`
+- Mechanical `intermediate_trace_form` rows belong to the derivation apparatus,
+  not to the production index verborum, unless they are explicitly promoted by
+  tagging or another curated source.
 - Significant forms in running prose should be tagged explicitly with `.iv`
   spans when they ought to contribute an occurrence-level index reference.
 - Broad audit candidates are warnings only. They do **not** enter the

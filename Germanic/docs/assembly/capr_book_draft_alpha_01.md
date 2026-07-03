@@ -3068,10 +3068,6 @@ are interpreted.
 
 \index[oe]{naedre@nǣdre}
 \index[pgmc]{nedron@*nḗdrōn}
-\index[nwgmc]{naedro@*nǣdrǭ}
-\index[nwgmc]{nedro@*nḗdrǭ}
-\index[preoe]{naedrae@*nǣdræ}
-\index[preoe]{naedre@*nǣdre}
 
 Derivation: _\*nḗdrōn_ > _nǣdre_ (regular).
 
@@ -3148,10 +3144,6 @@ consonant of _næddre_ is secondary and does not alter the inherited base form.
 
 \index[oe]{bacan@bacan}
 \index[pgmc]{bakana@*bákaną}
-\index[preoe]{baekana@*bækaną}
-\index[preoe]{bakan@*bakan}
-\index[preoe]{bakan@*bakąn}
-\index[preoe]{bakana@*bakaną}
 \index[ohg]{backan@backan}
 \index[ohg]{bahhan@bahhan}
 
@@ -3205,22 +3197,20 @@ Old English form: _bacan_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as _\*bakanan_ and cites Old English _bacan_ beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives _bacan_ as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from _\*bakan_ to Old English _bacan_ [@Campbell1959, 61; @RingeTaylor2014].
+Orel reconstructs the verb as [_\*bakanan_]{.iv lang=pgmc sort=bakanan} and cites Old English [_bacan_]{.iv lang=oe sort=bacan} beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives [_bacan_]{.iv lang=oe sort=bacan} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [_\*bakan_]{.iv lang=preoe sort=bakan} to Old English [_bacan_]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall both record _bacan_ as the ordinary Old English verb 'to bake' [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
+Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan} as the ordinary Old English verb 'to bake' [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
 
 #### Development to Old English
 
-From _\*bákaną_, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield _bacan_ [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: _\*bákaną_ > _bacan_.
+From [_\*bákaną_]{.iv lang=pgmc sort=bakana}, Anglo-Frisian brightening first gives _\*bækaną_. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [_\*bákaną_]{.iv lang=pgmc sort=bakana} > [_bacan_]{.iv lang=oe sort=bacan}.
 
 ### beech — OE bōc
 
 \index[oe]{boc@bōc}
 \index[pgmc]{boko@*bōkō}
-\index[nwgmc]{boku@*bōku}
-\index[preoe]{bok@*bōk}
 
 Derivation: _\*bōkō_ > _bōc_ (regular).
 
@@ -3284,10 +3274,6 @@ With nominative input _\*bōkō_, the development is compact. Northwest Germanic
 
 \index[oe]{beginnan@beġinnan}
 \index[pgmc]{biginnana@*bigínnaną}
-\index[preoe]{be@*bĕ}
-\index[preoe]{bi@*bi}
-\index[preoe]{biginnan@*bigínnan}
-\index[preoe]{biginnan@*bigínnąn}
 
 Derivation: _\*bigínnaną_ > _beġinnan_ (regular).
 
@@ -3339,11 +3325,11 @@ Old English form: _beġinnan_
 
 #### Reconstruction and comparative evidence
 
-The verb is modeled here as inherited _\*bigínnaną_. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists _ginnan_ among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174].
+The verb is modeled here as inherited [_\*bigínnaną_]{.iv lang=pgmc sort=biginnana}. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists [_ginnan_]{.iv lang=oe sort=ginnan} among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall lemmatize the verb as _be-ginnan_ / _beginnan_ [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-_g_ dictionary spellings support the same verb that appears here in normalized form as _beġinnan_.
+Bosworth-Toller and Clark Hall lemmatize the verb as [_be-ginnan_]{.iv lang=oe sort=beginnan} / [_beginnan_]{.iv lang=oe sort=beginnan} [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-_g_ dictionary spellings support the same verb that appears here in normalized form as [_beġinnan_]{.iv lang=oe sort=beginnan}.
 
 #### Development note
 
@@ -3351,15 +3337,12 @@ The prefix deserves separate notice. Ringe and Taylor explicitly cite _bi- > be-
 
 #### Development to Old English
 
-From _\*bigínnaną_, heavy-syllable nasal apocope yields _\*bigínnan_. Intervocalic _\*g_ between front vowels then palatalizes to _ġ_, and the unstressed prefix reduces _bi-_ to _be-_, giving _beġinnan_.
+From [_\*bigínnaną_]{.iv lang=pgmc sort=biginnana}, heavy-syllable nasal apocope yields _\*bigínnan_. Intervocalic _\*g_ between front vowels then palatalizes to _ġ_, and the unstressed prefix reduces _bi-_ to _be-_, giving [_beġinnan_]{.iv lang=oe sort=beginnan}.
 
 ### bier — OE bǣr
 
 \index[oe]{baer@bǣr}
 \index[pgmc]{bero@*bḗrō}
-\index[nwgmc]{baeru@*bǣru}
-\index[nwgmc]{beru@*bḗru}
-\index[preoe]{baer@*bǣr}
 
 Derivation: _\*bḗrō_ > _bǣr_ (regular).
 
@@ -3410,27 +3393,24 @@ Old English form: _bǣr_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as _\*bērō-_ f. 'bier' and cites Old English _bar_, [_bær_]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The form followed here, _\*bḗrō_, is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as [_\*bērō-_]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [_bar_]{.iv lang=oe sort=bar}, [_bær_]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The derivational input [_\*bḗrō_]{.iv lang=pgmc sort=bero} is the same lexeme in the accent notation used here.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer}, and Kroonen also records _bar_ beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target _bǣr_ is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer}, and Kroonen also records [_bar_]{.iv lang=oe sort=bar} beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [_bǣr_]{.iv lang=oe sort=baer} is therefore a normalized long-vowel spelling of the same noun.
 
 #### Source note
 
-Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer} and _bar_. The normalized target _bǣr_ simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer} and [_bar_]{.iv lang=oe sort=bar}. The normalized target [_bǣr_]{.iv lang=oe sort=baer} simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 #### Development to Old English
 
-From _\*bḗrō_, Northwest Germanic final long _ō_ raises to _u_, long _ē_ lowers to _ǣ_, and high-vowel apocope yields _bǣr_. The resulting noun matches the normalized Old English target.
+From [_\*bḗrō_]{.iv lang=pgmc sort=bero}, Northwest Germanic final long _ō_ raises to _u_, long _ē_ lowers to _ǣ_, and high-vowel apocope yields [_bǣr_]{.iv lang=oe sort=baer}. The resulting noun matches the normalized Old English target.
 
 ### birth — OE byrd
 
 \index[oe]{byrd@byrd}
-\index[pgmc]{burdi@*búrdi}
 \index[pgmc]{burdiz@*búrdiz}
-\index[preoe]{byrd@*byrd}
-\index[preoe]{byrdi@*byrdi}
 
 Derivation: _\*búrdiz_ > _byrd_ (regular).
 
@@ -3499,8 +3479,6 @@ From _\*búrdiz_, loss of final _z_ gives _\*búrdi_. I-umlaut fronts _u_ to _y_
 
 \index[oe]{ban@bān}
 \index[pgmc]{baina@*báiną}
-\index[pwgmc]{bana@*bāną}
-\index[preoe]{ban@*bān}
 
 Derivation: _\*báiną_ > _bān_ (regular).
 
@@ -3550,25 +3528,24 @@ Old English form: _bān_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun as _\*baina-_, and Orel gives the same lexeme under _\*bainan_ [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is _bān_.
+Kroonen cites the noun as [_\*baina-_]{.iv lang=pgmc sort=baina}, and Orel gives the same lexeme under [_\*bainan_]{.iv lang=pgmc sort=bainan} [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [_bān_]{.iv lang=oe sort=ban}.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record _bān_ as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form _bān_ from oblique _bāne_, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
+Clark Hall and Bosworth-Toller record [_bān_]{.iv lang=oe sort=ban} as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [_bān_]{.iv lang=oe sort=ban} from oblique [_bāne_]{.iv lang=oe sort=bane}, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
 
 #### Source note
 
-The comparative headwords _\*baina-_ and _\*bainan_ provide lexeme background. The relevant comparison form here is the nominative-accusative singular _\*báiną_.
+The comparative headwords [_\*baina-_]{.iv lang=pgmc sort=baina} and [_\*bainan_]{.iv lang=pgmc sort=bainan} provide lexeme background. The relevant comparison form here is the nominative-accusative singular [_\*báiną_]{.iv lang=pgmc sort=baina}.
 
 #### Development to Old English
 
-West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields _bān_. The resulting form matches the attested Old English citation noun.
+West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bāną_; heavy-syllable nasal apocope then yields [_bān_]{.iv lang=oe sort=ban}. The resulting form matches the attested Old English citation noun.
 
 ### both — OE bū
 
 \index[oe]{bu@bū}
 \index[pgmc]{bo@*bō}
-\index[nwgmc]{bu@*bū}
 \index[on]{badir@báðir}
 \index[ohg]{bede@bēde}
 \index[ofris]{bethe@bēthe}
@@ -3674,12 +3651,6 @@ other forms that belong to the same broader lexical history.
 
 \index[oe]{biegan@bīeġan}
 \index[pgmc]{baugijana@*báugijaną}
-\index[preoe]{baeugijana@*báeugijaną}
-\index[preoe]{bea@*bēa}
-\index[preoe]{beagijan@*bēagijan}
-\index[preoe]{beagijan@*bēagijąn}
-\index[preoe]{beagijana@*bēagijaną}
-\index[preoe]{bie@*bīe}
 
 Derivation: _\*báugijaną_ > _bīeġan_ (regular).
 
@@ -3748,10 +3719,7 @@ From _\*báugijaną_, the stem reaches pre-Old-English _\*bēagjan_, after which
 ### breeches — OE brēċ
 
 \index[oe]{brec@brēċ}
-\index[pgmc]{broki@*brōki}
 \index[pgmc]{brokiz@*brōkiz}
-\index[preoe]{bre@*brē}
-\index[preoe]{bro@*brō}
 
 Derivation: _\*brōkiz_ > _brēċ_ (regular).
 
@@ -3816,12 +3784,7 @@ After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _
 ### calf — OE ċealf
 
 \index[oe]{cealf@ċealf}
-\index[pgmc]{kalba@*kálba}
 \index[pgmc]{kalbaz@*kálbaz}
-\index[pgmc]{keal@*keal}
-\index[pwgmc]{kalb@*kálb}
-\index[preoe]{kaelb@*kælb}
-\index[preoe]{kealb@*kealb}
 
 Derivation: _\*kálbaz_ > _ċealf_ (regular).
 
@@ -3889,8 +3852,6 @@ After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives _\*kælb
 
 \index[oe]{corn@corn}
 \index[pgmc]{kurna@*kúrną}
-\index[nwgmc]{korna@*kórną}
-\index[preoe]{korn@*kórn}
 
 Derivation: _\*kúrną_ > _corn_ (regular).
 
@@ -3953,10 +3914,7 @@ With northwest Germanic lowering, _\*kúrną_ becomes _\*kórną_, and later los
 ### deed — OE dǣd
 
 \index[oe]{daed@dǣd}
-\index[pgmc]{dedi@*dḗdi}
 \index[pgmc]{dediz@*dḗdiz}
-\index[nwgmc]{daedi@*dǣdi}
-\index[preoe]{daed@*dǣd}
 
 Derivation: _\*dḗdiz_ > _dǣd_ (regular).
 
@@ -4021,8 +3979,6 @@ From inherited _\*dēdiz_, loss of final _-z_ and the West Saxon lowering of str
 
 \index[oe]{dor@dor}
 \index[pgmc]{dura@*dúrą}
-\index[nwgmc]{dora@*dórą}
-\index[preoe]{dor@*dór}
 \index[ohg]{tura@tura}
 \index[ofris]{dore@dore}
 
@@ -4088,10 +4044,6 @@ From _\*dúrą_, Northwest Germanic u-lowering gives _\*dórą_, and heavy-sylla
 
 \index[oe]{faran@faran}
 \index[pgmc]{farana@*fáraną}
-\index[preoe]{faerana@*færaną}
-\index[preoe]{faran@*faran}
-\index[preoe]{faran@*farąn}
-\index[preoe]{farana@*faraną}
 
 Derivation: _\*fáraną_ > _faran_ (regular).
 
@@ -4157,7 +4109,6 @@ From _\*fáraną_, Anglo-Frisian brightening first gives _\*færaną_, but A-res
 
 \index[oe]{fell@fell}
 \index[pgmc]{fella@*féllą}
-\index[preoe]{fell@*féll}
 
 Derivation: _\*féllą_ > _fell_ (regular).
 
@@ -4218,11 +4169,7 @@ With _\*féllą_, no special earlier reshaping is needed: heavy-syllable nasal a
 ### fern — OE fearn
 
 \index[oe]{fearn@fearn}
-\index[pgmc]{farna@*fárna}
 \index[pgmc]{farnaz@*fárnaz}
-\index[pwgmc]{farn@*fárn}
-\index[preoe]{faern@*færn}
-\index[preoe]{fearn@*fearn}
 
 Derivation: _\*fárnaz_ > _fearn_ (regular).
 
@@ -4287,10 +4234,7 @@ From _\*fárnaz_, loss of final _-z_ and final _-a_ gives _\*fárn_; Anglo-Frisi
 ### field — OE feld
 
 \index[oe]{feld@feld}
-\index[pgmc]{feldu@*féldu}
 \index[pgmc]{felthuz@*félθuz}
-\index[pwgmc]{felduz@*félduz}
-\index[preoe]{feld@*féld}
 
 Derivation: _\*félθuz_ > _feld_ (regular).
 
@@ -4356,9 +4300,6 @@ In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and hig
 
 \index[oe]{fleogan@flēogan}
 \index[pgmc]{fleugana@*fléuganą}
-\index[preoe]{fleogan@*flēogan}
-\index[preoe]{fleogan@*flēogąn}
-\index[preoe]{fleogana@*flēoganą}
 
 Derivation: _\*fléuganą_ > _flēogan_ (regular).
 
@@ -4427,9 +4368,6 @@ From _\*fléuganą_, Old English diphthong leveling gives _\*flēoganą_; heavy-
 
 \index[oe]{leosan@lēosan}
 \index[pgmc]{leusana@*léusaną}
-\index[preoe]{leosan@*lēosan}
-\index[preoe]{leosan@*lēosąn}
-\index[preoe]{leosana@*lēosaną}
 
 Derivation: _\*léusaną_ > _lēosan_ (regular).
 
@@ -4497,9 +4435,7 @@ From _\*léusaną_, Old English diphthong leveling gives _\*lēosaną_, and late
 ### gang — OE gang
 
 \index[oe]{gang@gang}
-\index[pgmc]{ganga@*gánga}
 \index[pgmc]{gangaz@*gángaz}
-\index[pwgmc]{gang@*gáng}
 \index[on]{gangr@gangr}
 
 Derivation: _\*gángaz_ > _gang_ (regular).
@@ -4567,10 +4503,7 @@ From _\*gángaz_, loss of final _-z_ gives _\*gánga_, and later loss of final b
 ### give — OE ġiefan
 
 \index[oe]{giefan@ġiefan}
-\index[pgmc]{ge@*gé}
 \index[pgmc]{gebana@*gébaną}
-\index[preoe]{geban@*géban}
-\index[preoe]{geban@*gébąn}
 
 Derivation: _\*gébaną_ > _ġiefan_ (regular).
 
@@ -4641,9 +4574,6 @@ From _\*gébaną_, initial _g_ palatalizes before _e_; West Saxon palatal diphth
 
 \index[oe]{gold@gold}
 \index[pgmc]{gultha@*gúlθą}
-\index[pwgmc]{gulda@*gúldą}
-\index[nwgmc]{golda@*góldą}
-\index[preoe]{gold@*góld}
 
 Derivation: _\*gúlθą_ > _gold_ (regular).
 
@@ -4712,13 +4642,7 @@ From _\*gúlθą_, the regular consonant development gives _\*gúldą_; Northwes
 ### grave — OE grafan
 
 \index[oe]{grafan@grafan}
-\index[pgmc]{gra@*gra}
 \index[pgmc]{grabana@*grábaną}
-\index[preoe]{gra@*gra}
-\index[preoe]{graban@*graban}
-\index[preoe]{graban@*grabąn}
-\index[preoe]{grabana@*grabaną}
-\index[preoe]{graebana@*græbaną}
 
 Derivation: _\*grábaną_ > _grafan_ (regular).
 
@@ -4788,9 +4712,7 @@ Noun _græf_ and verbal forms such as _græfð_ or past participial _græfen_ be
 ### guest — OE ġiest
 
 \index[oe]{giest@ġiest}
-\index[pgmc]{gasti@*gásti}
 \index[pgmc]{gastiz@*gástiz}
-\index[preoe]{gaesti@*gæsti}
 
 Derivation: _\*gástiz_ > _ġiest_ (regular).
 
@@ -4862,9 +4784,6 @@ West Saxon _ġiest_ is the Old English form here. Anglian _gest_ and related spe
 
 \index[oe]{haer@hǣr}
 \index[pgmc]{xera@*xḗrą}
-\index[nwgmc]{xaera@*xǣrą}
-\index[preoe]{caer@*çǣr}
-\index[preoe]{caera@*çǣrą}
 
 Derivation: _\*xḗrą_ > _hǣr_ (regular).
 
@@ -4932,13 +4851,7 @@ Older references to _\*xazwăz_ belong to a different lexeme, and the separate _
 ### harvest — OE hierfest
 
 \index[oe]{hierfest@hierfest}
-\index[pgmc]{cear@*çear}
-\index[pgmc]{xarbistu@*xárbistu}
 \index[pgmc]{xarbistuz@*xárbistuz}
-\index[preoe]{cearbistu@*çearbistu}
-\index[preoe]{cier@*çier}
-\index[preoe]{xaerbistu@*xærbistu}
-\index[preoe]{xearbistu@*xearbistu}
 
 Derivation: _\*xárbistuz_ > _hierfest_ (regular).
 
@@ -5011,14 +4924,7 @@ The Old English form here, _hierfest_, represents the regular native West Saxon 
 ### hedge — OE heġġ
 
 \index[oe]{hegg@heġġ}
-\index[pgmc]{xaggja@*xággja}
 \index[pgmc]{xagjaz@*xágjaz}
-\index[pwgmc]{xaggj@*xággj}
-\index[pwgmc]{xaggjaz@*xággjaz}
-\index[preoe]{cae@*çæ}
-\index[preoe]{caeggj@*çæggj}
-\index[preoe]{ce@*çe}
-\index[preoe]{xaeggj@*xæggj}
 
 Derivation: _\*xágjaz_ > _heġġ_ (regular).
 
@@ -5092,10 +4998,7 @@ Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the O
 ### helm — OE helm
 
 \index[oe]{helm@helm}
-\index[pgmc]{xelma@*xélma}
 \index[pgmc]{xelmaz@*xélmaz}
-\index[pwgmc]{xelm@*xélm}
-\index[preoe]{celm@*çélm}
 
 Derivation: _\*xélmaz_ > _helm_ (regular).
 
@@ -5164,9 +5067,6 @@ Comparative _\*helma-_ is headword notation for the helmet cognate set. It shoul
 
 \index[oe]{helpan@helpan}
 \index[pgmc]{xelpana@*xélpaną}
-\index[preoe]{celpan@*çélpan}
-\index[preoe]{celpan@*çélpąn}
-\index[preoe]{celpana@*çélpaną}
 
 Derivation: _\*xélpaną_ > _helpan_ (regular).
 
@@ -5235,11 +5135,6 @@ Noun _help_ belongs to a separate lexical line and should not replace verbal _he
 
 \index[oe]{hind@hind}
 \index[pgmc]{xendjo@*xéndjō}
-\index[nwgmc]{xendju@*xéndju}
-\index[preoe]{cendju@*çéndju}
-\index[preoe]{cind@*çind}
-\index[preoe]{cindj@*çindj}
-\index[preoe]{cindju@*çindju}
 
 Derivation: _\*xéndjō_ > _hind_ (regular).
 
@@ -5310,11 +5205,6 @@ _hindan_ 'from behind, behind' is a different Old English lexeme and does not be
 
 \index[oe]{healdan@healdan}
 \index[pgmc]{xaldana@*xáldaną}
-\index[preoe]{cealdan@*çealdan}
-\index[preoe]{cealdan@*çealdąn}
-\index[preoe]{cealdana@*çealdaną}
-\index[preoe]{xaeldana@*xældaną}
-\index[preoe]{xealdana@*xealdaną}
 
 Derivation: _\*xáldaną_ > _healdan_ (regular).
 
@@ -5385,8 +5275,6 @@ West Saxon _healdan_ is the Old English form here. Anglian and Mercian _haldan_ 
 
 \index[oe]{horn@horn}
 \index[pgmc]{xurna@*xúrną}
-\index[nwgmc]{xorna@*xórną}
-\index[preoe]{xorn@*xórn}
 
 Derivation: _\*xúrną_ > _horn_ (regular).
 
@@ -5454,12 +5342,6 @@ The note's oblique _\*xurnăn_ belongs to comparative stem background only. It d
 
 \index[oe]{laedan@lǣdan}
 \index[pgmc]{laidijana@*láidijaną}
-\index[pwgmc]{ladijana@*lādijaną}
-\index[preoe]{ladijan@*lādijan}
-\index[preoe]{ladijan@*lādijąn}
-\index[preoe]{laedan@*lǣdan}
-\index[preoe]{laedjan@*lǣdjan}
-\index[preoe]{laedjan@*lǣdjąn}
 
 Derivation: _\*láidijaną_ > _lǣdan_ (regular).
 
@@ -5528,14 +5410,6 @@ From _\*láidijaną_, monophthongization of _\*ai_ first gives a _\*lād-_ stage
 
 \index[oe]{liornian@liornian}
 \index[pgmc]{liznojana@*líznōjaną}
-\index[preoe]{liorneian@*líorneian}
-\index[preoe]{liornejan@*líornejan}
-\index[preoe]{liornejan@*líornejąn}
-\index[preoe]{liornejan@*líornējąn}
-\index[preoe]{liornian@*líornian}
-\index[preoe]{liornojan@*líornōjan}
-\index[preoe]{liornojan@*líornōjąn}
-\index[preoe]{liornojana@*líornōjaną}
 
 Derivation: _\*líznōjaną_ > _liornian_ (regular).
 
@@ -5638,7 +5512,6 @@ modeled here from the better-known West Saxon headword.
 
 \index[oe]{hlid@hlid}
 \index[pgmc]{xlida@*xlídą}
-\index[preoe]{xlid@*xlíd}
 \index[on]{hlitho@hliþó}
 
 Derivation: _\*xlídą_ > _hlid_ (regular).
@@ -5705,12 +5578,6 @@ An earlier etymological stage _\*liþuz_ belongs to comparative background only.
 
 \index[oe]{liehtan@līehtan}
 \index[pgmc]{leuxtijana@*léuxtijaną}
-\index[preoe]{leoxtijan@*lēoxtijan}
-\index[preoe]{leoxtijan@*lēoxtijąn}
-\index[preoe]{leoxtijana@*lēoxtijaną}
-\index[preoe]{liextan@*līextan}
-\index[preoe]{liextjan@*līextjan}
-\index[preoe]{liextjan@*līextjąn}
 
 Derivation: _\*léuxtijaną_ > _līehtan_ (regular).
 
@@ -5782,8 +5649,6 @@ Ringe and Taylor and Campbell distinguish West Saxon _liehtan_ from Anglian _lih
 
 \index[oe]{lind@lind}
 \index[pgmc]{lindo@*líndō}
-\index[nwgmc]{lindu@*líndu}
-\index[preoe]{lind@*línd}
 
 Derivation: _\*líndō_ > _lind_ (regular).
 
@@ -5850,10 +5715,7 @@ The Old English noun represented here is _lind_. Clark Hall also has a separate 
 ### milk — OE meoloc
 
 \index[oe]{meoloc@meoloc}
-\index[pgmc]{meluk@*méluk}
 \index[pgmc]{melukz@*mélukz}
-\index[preoe]{melok@*mélok}
-\index[preoe]{meolok@*méolok}
 
 Derivation: _\*mélukz_ > _meoloc_ (regular).
 
@@ -5922,9 +5784,6 @@ Syncopated _meolc_ and Anglian _milc_ belong to the competing leveled tradition 
 
 \index[oe]{moder@mōder}
 \index[pgmc]{moder@*mōdēr}
-\index[nwgmc]{modaer@*mōdǣr}
-\index[preoe]{modaer@*mōdær}
-\index[preoe]{moder@*mōder}
 
 Derivation: _\*mōdēr_ > _mōder_ (regular).
 
@@ -5993,11 +5852,6 @@ The note therefore concerns inherited vocalism rather than a different lexeme: _
 
 \index[oe]{nett@nett}
 \index[pgmc]{natja@*nátją}
-\index[pwgmc]{nattja@*náttją}
-\index[preoe]{naettj@*nættj}
-\index[preoe]{naettja@*nættją}
-\index[preoe]{nett@*nett}
-\index[preoe]{nettj@*nettj}
 
 Derivation: _\*nátją_ > _nett_ (regular).
 
@@ -6068,11 +5922,6 @@ Spellings in _net_ can therefore be graphic simplifications, but the lexical tar
 
 \index[oe]{mare@mare}
 \index[pgmc]{maron@*márōn}
-\index[nwgmc]{maro@*márǭ}
-\index[preoe]{maero@*mærǭ}
-\index[preoe]{marae@*maræ}
-\index[preoe]{mare@*mare}
-\index[preoe]{maro@*marǭ}
 
 Derivation: _\*márōn_ > _mare_ (regular).
 
@@ -6142,10 +5991,7 @@ The concept corresponds to an unattested compound _\*nihtmare_, but the Old Engl
 ### coat — OE rocc
 
 \index[oe]{rocc@rocc}
-\index[pgmc]{rokka@*rókka}
 \index[pgmc]{rukkaz@*rúkkaz}
-\index[pwgmc]{rokk@*rókk}
-\index[nwgmc]{rokkaz@*rókkaz}
 
 Derivation: _\*rúkkaz_ > _rocc_ (regular).
 
@@ -6214,8 +6060,6 @@ This entry concerns the garment noun only. The stone word seen in _stānrocc_ be
 
 \index[oe]{sceap@sċēap}
 \index[pgmc]{skepa@*skḗpą}
-\index[nwgmc]{skaepa@*skǣpą}
-\index[preoe]{skaep@*skǣp}
 
 Derivation: _\*skḗpą_ > _sċēap_ (regular).
 
@@ -6284,9 +6128,7 @@ Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, 
 ### shilling — OE sċilling
 
 \index[oe]{scilling@sċilling}
-\index[pgmc]{skillinga@*skíllinga}
 \index[pgmc]{skillingaz@*skíllingaz}
-\index[pwgmc]{skilling@*skílling}
 
 Derivation: _\*skíllingaz_ > _sċilling_ (regular).
 
@@ -6357,9 +6199,6 @@ Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-lin
 
 \index[oe]{sceawian@sċēawian}
 \index[pgmc]{skawojana@*skáwōjaną}
-\index[preoe]{skeawojan@*skḗawōjan}
-\index[preoe]{skeawojan@*skḗawōjąn}
-\index[preoe]{skeawojana@*skḗawōjaną}
 
 Derivation: _\*skáwōjaną_ > _sċēawian_ (regular).
 
@@ -6433,9 +6272,6 @@ The difference between _scēawian_ and _sċēawian_ is orthographic normalizatio
 
 \index[oe]{slaepan@slǣpan}
 \index[pgmc]{slepana@*slḗpaną}
-\index[nwgmc]{slaepana@*slǣpaną}
-\index[preoe]{slaepan@*slǣpan}
-\index[preoe]{slaepan@*slǣpąn}
 
 Derivation: _\*slḗpaną_ > _slǣpan_ (regular).
 
@@ -6505,12 +6341,6 @@ The note concerns lemma type rather than a special derivational problem: this ro
 
 \index[oe]{smierwan@smierwan}
 \index[pgmc]{smerwijana@*smérwijaną}
-\index[preoe]{smeorwijan@*sméorwijan}
-\index[preoe]{smeorwijan@*sméorwijąn}
-\index[preoe]{smeorwijana@*sméorwijaną}
-\index[preoe]{smierwan@*smíerwan}
-\index[preoe]{smierwjan@*smíerwjan}
-\index[preoe]{smierwjan@*smíerwjąn}
 
 Derivation: _\*smérwijaną_ > _smierwan_ (regular).
 
@@ -6582,8 +6412,6 @@ The entry therefore represents the West Saxon member of a broader OE family: _sm
 
 \index[oe]{spannan@spannan}
 \index[pgmc]{spannana@*spánnaną}
-\index[preoe]{spannan@*spánnan}
-\index[preoe]{spannan@*spánnąn}
 
 Derivation: _\*spánnaną_ > _spannan_ (regular).
 
@@ -6651,9 +6479,6 @@ The note matters because English _span_ can also reach noun _spann_ in local loo
 
 \index[oe]{spearra@spearra}
 \index[pgmc]{sparro@*spárrô}
-\index[preoe]{spaerro@*spærrô}
-\index[preoe]{spearra@*spearra}
-\index[preoe]{spearro@*spearrô}
 
 Derivation: _\*spárrô_ > _spearra_ (regular).
 
@@ -6721,11 +6546,6 @@ This entry concerns the noun _spearra_ only. It should be kept separate from ver
 
 \index[oe]{stillan@stillan}
 \index[pgmc]{stellijana@*stéllijaną}
-\index[preoe]{stellijan@*stéllijan}
-\index[preoe]{stellijan@*stéllijąn}
-\index[preoe]{stillan@*stillan}
-\index[preoe]{stilljan@*stilljan}
-\index[preoe]{stilljan@*stilljąn}
 
 Derivation: _\*stéllijaną_ > _stillan_ (regular).
 
@@ -6795,11 +6615,7 @@ The note concerns lexical framing rather than sound law: _stillan_ is the verb r
 ### summer — OE sumer
 
 \index[oe]{sumer@sumer}
-\index[pgmc]{sumara@*súmara}
 \index[pgmc]{sumaraz@*súmaraz}
-\index[pwgmc]{sumar@*súmar}
-\index[preoe]{sumaer@*súmær}
-\index[preoe]{sumer@*súmer}
 
 Derivation: _\*súmaraz_ > _sumer_ (regular).
 
@@ -6869,13 +6685,6 @@ The entry does not deny _sumor_. It represents _sumer_ as the regular outcome ch
 
 \index[oe]{sundrian@sundrian}
 \index[pgmc]{sundrojana@*súndrōjaną}
-\index[preoe]{sundreian@*súndreian}
-\index[preoe]{sundrejan@*súndrejan}
-\index[preoe]{sundrejan@*súndrejąn}
-\index[preoe]{sundrejan@*súndrējąn}
-\index[preoe]{sundrian@*súndrian}
-\index[preoe]{sundrojan@*súndrōjan}
-\index[preoe]{sundrojan@*súndrōjąn}
 
 Derivation: _\*súndrōjaną_ > _sundrian_ (regular).
 
@@ -6947,11 +6756,6 @@ The earlier confusion was lexical, not phonological: _sundor_ is the separate ad
 
 \index[oe]{swealwe@swealwe}
 \index[pgmc]{swalwon@*swálwōn}
-\index[nwgmc]{swalwo@*swálwǭ}
-\index[preoe]{swaelwo@*swælwǭ}
-\index[preoe]{swealwae@*swealwæ}
-\index[preoe]{swealwe@*swealwe}
-\index[preoe]{swealwo@*swealwǭ}
 
 Derivation: _\*swálwōn_ > _swealwe_ (regular).
 
@@ -7023,7 +6827,6 @@ The final prose keeps the citation form _swealwe_ separate from two different ki
 \index[oe]{swin@swīn}
 \index[pgmc]{swina@*swī́ną}
 \index[pgmc]{swina@*swḯną}
-\index[preoe]{swin@*swḯn}
 
 Derivation: citation reconstruction _\*swī́ną_; form followed here _\*swī́ną_ > _swīn_ (regular).
 
@@ -7227,10 +7030,8 @@ The comparative sources preserve more than one stem formation, but the Old Engli
 ### tide — OE tīd
 
 \index[oe]{tid@tīd}
-\index[pgmc]{tidi@*tḯdi}
 \index[pgmc]{tidiz@*tī́diz}
 \index[pgmc]{tidiz@*tḯdiz}
-\index[preoe]{tid@*tḯd}
 
 Derivation: citation reconstruction _\*tī́diz_; form followed here _\*tī́diz_ > _tīd_ (regular).
 
@@ -7298,8 +7099,6 @@ The note matters only because English *tide* can pull in the separate weak verb 
 
 \index[oe]{tacn@tācn}
 \index[pgmc]{taikna@*táikną}
-\index[pwgmc]{takna@*tākną}
-\index[preoe]{takn@*tākn}
 
 Derivation: _\*táikną_ > _tācn_ (regular).
 
@@ -7367,7 +7166,6 @@ _tācn_ is the attested unbroken citation form selected here. Later West Saxon p
 
 \index[oe]{tun@tūn}
 \index[pgmc]{tuna@*tūną}
-\index[preoe]{tun@*tūn}
 
 Derivation: _\*tūną_ > _tūn_ (regular).
 
@@ -7433,10 +7231,6 @@ The comparative headwords vary, but the Old English target here is the direct ci
 
 \index[oe]{wadan@wadan}
 \index[pgmc]{wadana@*wádaną}
-\index[preoe]{wadan@*wadan}
-\index[preoe]{wadan@*wadąn}
-\index[preoe]{wadana@*wadaną}
-\index[preoe]{waedana@*wædaną}
 
 Derivation: _\*wádaną_ > _wadan_ (regular).
 
@@ -7506,9 +7300,6 @@ The note matters because this infinitive belongs to the A-restoration class. The
 
 \index[oe]{weorpan@weorpan}
 \index[pgmc]{werpana@*wérpaną}
-\index[preoe]{weorpan@*wéorpan}
-\index[preoe]{weorpan@*wéorpąn}
-\index[preoe]{weorpana@*wéorpaną}
 
 Derivation: _\*wérpaną_ > _weorpan_ (regular).
 
@@ -7577,10 +7368,6 @@ The note matters because English *warp* also points to related _wearp_ material.
 
 \index[oe]{wascan@wascan}
 \index[pgmc]{waskana@*wáskaną}
-\index[preoe]{waeskana@*wæskaną}
-\index[preoe]{waskan@*waskan}
-\index[preoe]{waskan@*waskąn}
-\index[preoe]{waskana@*waskaną}
 
 Derivation: _\*wáskaną_ > _wascan_ (regular).
 
@@ -7650,11 +7437,6 @@ The conservative citation form _wascan_ is selected here. Spellings such as _wæ
 
 \index[oe]{weaxan@weaxan}
 \index[pgmc]{waxsana@*wáxsaną}
-\index[preoe]{waexsana@*wæxsaną}
-\index[preoe]{weaxsan@*weaXSan}
-\index[preoe]{weaxsan@*weaxsan}
-\index[preoe]{weaxsan@*weaxsąn}
-\index[preoe]{weaxsana@*weaxsaną}
 
 Derivation: _\*wáxsaną_ > _weaxan_ (regular).
 
@@ -7724,10 +7506,7 @@ The target here is the infinitive _weaxan_. Noun _weax_ and preterite _wax_/_wē
 ### way — OE weġ
 
 \index[oe]{weg@weġ}
-\index[pgmc]{wega@*wéga}
 \index[pgmc]{wegaz@*wégaz}
-\index[pwgmc]{weg@*wég}
-\index[preoe]{we@*wé}
 
 Derivation: _\*wégaz_ > _weġ_ (regular).
 
@@ -7796,8 +7575,6 @@ Normalized _weġ_ and dictionary _weg_ represent the same noun. _wē_ is not sup
 
 \index[oe]{waepn@wǣpn}
 \index[pgmc]{wepna@*wḗpną}
-\index[nwgmc]{waepna@*wǣpną}
-\index[preoe]{waepn@*wǣpn}
 
 Derivation: _\*wḗpną_ > _wǣpn_ (regular).
 
@@ -7874,10 +7651,6 @@ remains the regular unbroken oblique comparator
 
 \index[oe]{willa@willa}
 \index[pgmc]{weljo@*wéljô}
-\index[pwgmc]{welljo@*wélljô}
-\index[preoe]{willa@*willa}
-\index[preoe]{willja@*willja}
-\index[preoe]{willjo@*willjô}
 
 Derivation: _\*wéljô_ > _willa_ (regular).
 
@@ -7947,8 +7720,6 @@ The target here is the noun _willa_ 'will, wish'. Related verb _willan_ belongs 
 
 \index[oe]{windan@windan}
 \index[pgmc]{windana@*wíndaną}
-\index[preoe]{windan@*wíndan}
-\index[preoe]{windan@*wíndąn}
 
 Derivation: _\*wíndaną_ > _windan_ (regular).
 
@@ -8015,12 +7786,7 @@ The note matters because English *wind* also names the noun. This row targets th
 ### wold — OE weald
 
 \index[oe]{weald@weald}
-\index[pgmc]{waldu@*wáldu}
 \index[pgmc]{walthuz@*wálθuz}
-\index[pwgmc]{walduz@*wálduz}
-\index[preoe]{waeldu@*wældu}
-\index[preoe]{weald@*weald}
-\index[preoe]{wealdu@*wealdu}
 
 Derivation: _\*wálθuz_ > _weald_ (regular).
 
@@ -8092,9 +7858,6 @@ The note matters because _wald_ survives as an Anglian-type variant in the same 
 
 \index[oe]{gearn@ġearn}
 \index[pgmc]{garna@*gárną}
-\index[preoe]{gaerna@*gærną}
-\index[preoe]{gearn@*gearn}
-\index[preoe]{gearna@*gearną}
 
 Derivation: _\*gárną_ > _ġearn_ (regular).
 
@@ -8170,10 +7933,8 @@ account for variation rather than for a single unproblematic citation form.
 ### cud — OE cwedu
 
 \index[oe]{cwedu@cwedu}
-\index[pgmc]{kwedu@*kwédu}
 \index[pgmc]{kweduz@*kwéðuz}
 \index[pgmc]{kwithuz@*kwíθuz}
-\index[pwgmc]{kweduz@*kwéduz}
 
 Derivation: citation reconstruction _\*kwíθuz_; form followed here _\*kwéðuz_ > _cwedu_ (attested variant).
 
@@ -8260,10 +8021,6 @@ input.
 
 \index[oe]{teon@tēon}
 \index[pgmc]{texun@*téxun}
-\index[preoe]{teon@*tḗon}
-\index[preoe]{teoon@*téoon}
-\index[preoe]{teoxon@*téoxon}
-\index[preoe]{texon@*téxon}
 
 Derivation: _\*téxun_ > _tēon_ (attested variant).
 
@@ -8457,11 +8214,7 @@ the later reduced form and from the rest of the numeral paradigm.
 ### wasp — OE wæfs
 
 \index[oe]{waefs@wæfs}
-\index[pgmc]{wabsa@*wábsa}
 \index[pgmc]{wabsaz@*wábsaz}
-\index[pgmc]{wae@*wæ}
-\index[pwgmc]{wabs@*wábs}
-\index[preoe]{waebs@*wæbs}
 
 Derivation: _\*wábsaz_ > _wæfs_ (attested variant).
 
@@ -8570,12 +8323,8 @@ history followed here.
 ### bottom — OE botm
 
 \index[oe]{botm@botm}
-\index[pgmc]{bottma@*bóttma}
 \index[pgmc]{budmaz@*búdmaz}
 \index[pgmc]{buttmaz@*búttmaz}
-\index[pwgmc]{bottm@*bóttm}
-\index[nwgmc]{bottmaz@*bóttmaz}
-\index[preoe]{botm@*bótm}
 
 Derivation: citation reconstruction _\*búdmaz_; form followed here _\*búttmaz_ > _botm_ (early analogy).
 
@@ -8656,8 +8405,6 @@ among Old English paradigm cells.
 \index[oe]{brandes@brandes}
 \index[pgmc]{brandas@*brándas}
 \index[pgmc]{brandaz@*brándaz}
-\index[preoe]{brandaes@*brándæs}
-\index[preoe]{brandes@*brándes}
 
 Derivation: citation reconstruction _\*brándaz_; form followed here _\*brándas_ > _brandes_ (early analogy).
 
@@ -8756,8 +8503,6 @@ though the citation lemma remains the nominative singular.
 \index[oe]{breost@brēost}
 \index[pgmc]{breusta@*bréustą}
 \index[pgmc]{brustz@*brústz}
-\index[preoe]{breost@*brēost}
-\index[preoe]{breosta@*brēostą}
 \index[on]{brjost@brjóst}
 \index[goth]{brusts@brusts}
 \index[os]{briost@briost}
@@ -8855,11 +8600,8 @@ outcome of the thematic _\*breusta-_ branch, not of the root noun _\*brust-_.
 ### craft — OE cræft
 
 \index[oe]{craeft@cræft}
-\index[pgmc]{krafta@*kráfta}
 \index[pgmc]{kraftaz@*kráftaz}
 \index[pgmc]{kraftiz@*kráftiz}
-\index[pwgmc]{kraft@*kráft}
-\index[preoe]{kraeft@*kræft}
 
 Derivation: citation reconstruction _\*kráftiz_; form followed here _\*kráftaz_ > _cræft_ (early analogy).
 
@@ -8944,11 +8686,8 @@ the u-stem comparator.
 ### dill — OE dile
 
 \index[oe]{dile@dile}
-\index[pgmc]{deli@*déli}
 \index[pgmc]{deliz@*déliz}
 \index[pgmc]{deljaz@*déljaz}
-\index[preoe]{dile@*dile}
-\index[preoe]{dili@*dili}
 
 Derivation: citation reconstruction _\*déljaz_; form followed here _\*déliz_ > _dile_ (early analogy).
 
@@ -9048,12 +8787,6 @@ formation rather than with the continental ja-stem branch.
 \index[oe]{festan@festan}
 \index[pgmc]{fastena@*fastēną}
 \index[pgmc]{fastijana@*fástijaną}
-\index[preoe]{faestijan@*fæstijan}
-\index[preoe]{faestijan@*fæstijąn}
-\index[preoe]{faestijana@*fæstijaną}
-\index[preoe]{festan@*festan}
-\index[preoe]{festjan@*festjan}
-\index[preoe]{festjan@*festjąn}
 
 Derivation: citation reconstruction _\*fastēną_; form followed here _\*fástijaną_ > _festan_ (early analogy).
 
@@ -9158,11 +8891,6 @@ later analogical layer.
 \index[oe]{flasce@flasce}
 \index[pgmc]{flasko@*flaskō}
 \index[pgmc]{flaskon@*fláskōn}
-\index[nwgmc]{flasko@*fláskǭ}
-\index[preoe]{flaesko@*flæskǭ}
-\index[preoe]{flaskae@*flaskæ}
-\index[preoe]{flaske@*flaske}
-\index[preoe]{flasko@*flaskǭ}
 
 Derivation: citation reconstruction _\*flaskō_; form followed here _\*fláskōn_ > _flasce_ (early analogy).
 
@@ -9264,10 +8992,6 @@ with attested _flasce_ and its supporting paradigm forms.
 \index[oe]{fylgan@fylġan}
 \index[pgmc]{fulgena@*fulgēną}
 \index[pgmc]{fulgijana@*fúlgijaną}
-\index[preoe]{ful@*fúl}
-\index[preoe]{fulgijan@*fúlgijan}
-\index[preoe]{fulgijan@*fúlgijąn}
-\index[preoe]{fyl@*fyl}
 \index[on]{fylgja@fylgja}
 
 Derivation: citation reconstruction _\*fulgēną_; form followed here _\*fúlgijaną_ > _fylġan_ (early analogy).
@@ -9382,8 +9106,6 @@ belongs to the parallel class-II branch.
 \index[oe]{gealla@ġealla}
 \index[pgmc]{galla@*gállą}
 \index[pgmc]{gallo@*gállô}
-\index[preoe]{gaello@*gællô}
-\index[preoe]{geallo@*geallô}
 
 Derivation: citation reconstruction _\*gállą_; form followed here _\*gállô_ > _ġealla_ (early analogy).
 
@@ -9483,12 +9205,8 @@ heading.
 ### knight — OE cniht
 
 \index[oe]{cniht@cniht}
-\index[pgmc]{knexta@*knéxta}
 \index[pgmc]{knextaz@*knéxtaz}
 \index[pgmc]{knixtaz@*kníxtaz}
-\index[pwgmc]{knext@*knéxt}
-\index[preoe]{kneoxt@*knéoxt}
-\index[preoe]{knixt@*knixt}
 
 Derivation: citation reconstruction _\*kníxtaz_; form followed here _\*knéxtaz_ > _cniht_ (early analogy).
 
@@ -9584,11 +9302,6 @@ input from a competing citation reconstruction.
 \index[oe]{hladan@hladan}
 \index[pgmc]{lathojana@*laθōjaną}
 \index[pgmc]{xladana@*xláðaną}
-\index[pwgmc]{xladana@*xládaną}
-\index[preoe]{xladan@*xladan}
-\index[preoe]{xladan@*xladąn}
-\index[preoe]{xladana@*xladaną}
-\index[preoe]{xlaedana@*xlædaną}
 
 Derivation: citation reconstruction _\*laθōjaną_; form followed here _\*xláðaną_ > _hladan_ (early analogy).
 
@@ -9684,9 +9397,6 @@ from the strong verb actually reflected in Old English.
 \index[oe]{lappa@lappa}
 \index[pgmc]{labbaz@*lábbaz}
 \index[pgmc]{lappo@*láppô}
-\index[preoe]{laeppo@*læppô}
-\index[preoe]{lappa@*lappa}
-\index[preoe]{lappo@*lappô}
 
 Derivation: citation reconstruction _\*lábbaz_; form followed here _\*láppô_ > _lappa_ (early analogy).
 
@@ -9781,15 +9491,6 @@ a competing voiced comparative label.
 \index[oe]{hliehhan@hliehhan}
 \index[pgmc]{lakana@*lákaną}
 \index[pgmc]{xlaxjana@*xláxjaną}
-\index[pwgmc]{xlaxxjana@*xláxxjaną}
-\index[preoe]{xlaexxjana@*xlæxxjaną}
-\index[preoe]{xleaxcjan@*xleaxçjan}
-\index[preoe]{xleaxcjan@*xleaxçjąn}
-\index[preoe]{xleaxcjana@*xleaxçjaną}
-\index[preoe]{xleaxxjana@*xleaxxjaną}
-\index[preoe]{xliexcan@*xliexçan}
-\index[preoe]{xliexcjan@*xliexçjan}
-\index[preoe]{xliexcjan@*xliexçjąn}
 
 Derivation: citation reconstruction _\*lákaną_; form followed here _\*xláxjaną_ > _hliehhan_ (early analogy).
 
@@ -9890,8 +9591,6 @@ the j-present branch actually reflected in Old English.
 \index[oe]{lam@lām}
 \index[pgmc]{laima@*láimą}
 \index[pgmc]{laimon@*laimōn}
-\index[pwgmc]{lama@*lāmą}
-\index[preoe]{lam@*lām}
 
 Derivation: citation reconstruction _\*laimōn_; form followed here _\*láimą_ > _lām_ (early analogy).
 
@@ -9980,12 +9679,6 @@ OE-facing stem class used to derive the attested noun.
 \index[oe]{lungen@lungen}
 \index[pgmc]{lunganjo@*lúnganjō}
 \index[pgmc]{lungo@*lungō}
-\index[pwgmc]{lungannjo@*lúngannjō}
-\index[nwgmc]{lungannju@*lúngannju}
-\index[preoe]{lungen@*lúngen}
-\index[preoe]{lungenn@*lúngenn}
-\index[preoe]{lungennj@*lúngennj}
-\index[preoe]{lungennju@*lúngennju}
 
 Derivation: citation reconstruction _\*lungō_; form followed here _\*lúnganjō_ > _lungen_ (early analogy).
 
@@ -10081,13 +9774,8 @@ feminine formation reflected in Old English.
 ### navel — OE nafola
 
 \index[oe]{nafola@nafola}
-\index[pgmc]{na@*na}
 \index[pgmc]{nablo@*nablô}
 \index[pgmc]{nabulo@*nábulô}
-\index[preoe]{na@*na}
-\index[preoe]{nabolo@*nabolô}
-\index[preoe]{nabolo@*nábolô}
-\index[preoe]{naebolo@*næbolô}
 
 Derivation: citation reconstruction _\*nablô_; form followed here _\*nábulô_ > _nafola_ (early analogy).
 
@@ -10187,7 +9875,6 @@ the pre-syncope input and from the later OE spellings.
 \index[oe]{hnecca@hnecca}
 \index[pgmc]{xnakkaz@*xnákkaz}
 \index[pgmc]{xnekko@*xnékkô}
-\index[preoe]{xnekka@*xnékka}
 
 Derivation: citation reconstruction _\*xnákkaz_; form followed here _\*xnékkô_ > _hnecca_ (early analogy).
 
@@ -10280,10 +9967,6 @@ selected e-grade Old English branch.
 \index[oe]{naedl@nǣdl}
 \index[pgmc]{nedlo@*nḗðlō}
 \index[pgmc]{nethlo@*nḗθlō}
-\index[pwgmc]{nedlo@*nḗdlō}
-\index[nwgmc]{naedlu@*nǣdlu}
-\index[nwgmc]{nedlu@*nḗdlu}
-\index[preoe]{naedl@*nǣdl}
 
 Derivation: citation reconstruction _\*nḗθlō_; form followed here _\*nḗðlō_ > _nǣdl_ (early analogy).
 
@@ -10381,8 +10064,6 @@ the voiced alternant used for Old English.
 \index[oe]{nosu@nosu}
 \index[pgmc]{naso@*nasō}
 \index[pgmc]{nuso@*núsō}
-\index[nwgmc]{noso@*nósō}
-\index[nwgmc]{nosu@*nósu}
 
 Derivation: citation reconstruction _\*nasō_; form followed here _\*núsō_ > _nosu_ (early analogy).
 
@@ -10476,8 +10157,6 @@ from the remodeled zero-grade input that yields the Old English form.
 \index[oe]{saep@sæp}
 \index[pgmc]{sapa@*sápą}
 \index[pgmc]{sapon@*sapōn}
-\index[preoe]{saep@*sæp}
-\index[preoe]{saepa@*sæpą}
 
 Derivation: citation reconstruction _\*sapōn_; form followed here _\*sápą_ > _sæp_ (early analogy).
 
@@ -10570,11 +10249,6 @@ from the Old English-facing input.
 \index[oe]{sae@sǣ}
 \index[pgmc]{sai@*sái}
 \index[pgmc]{saiwiz@*sáiwiz}
-\index[pgmc]{sawi@*sāwi}
-\index[pwgmc]{sawiz@*sāwiz}
-\index[preoe]{sae@*sǣ}
-\index[preoe]{saei@*sǣi}
-\index[preoe]{sai@*sāi}
 
 Derivation: citation reconstruction _\*sái_; form followed here _\*sáiwiz_ > _sǣ_ (early analogy).
 
@@ -10665,10 +10339,8 @@ headword from the fuller i-stem input that yields the Old English form.
 ### sieve — OE sife
 
 \index[oe]{sife@sife}
-\index[pgmc]{si@*sí}
 \index[pgmc]{sibaz@*síbaz}
 \index[pgmc]{sibi@*síbi}
-\index[preoe]{si@*sí}
 
 Derivation: citation reconstruction _\*síbaz_; form followed here _\*síbi_ > _sife_ (early analogy).
 
@@ -10758,15 +10430,6 @@ its rejected competitors.
 \index[oe]{sparian@sparian}
 \index[pgmc]{sparena@*sparēną}
 \index[pgmc]{sparojana@*spárōjaną}
-\index[preoe]{spaerojana@*spærōjaną}
-\index[preoe]{spareian@*spareian}
-\index[preoe]{sparejan@*sparejan}
-\index[preoe]{sparejan@*sparejąn}
-\index[preoe]{sparejan@*sparējąn}
-\index[preoe]{sparian@*sparian}
-\index[preoe]{sparojan@*sparōjan}
-\index[preoe]{sparojan@*sparōjąn}
-\index[preoe]{sparojana@*sparōjaną}
 
 Derivation: citation reconstruction _\*sparēną_; form followed here _\*spárōjaną_ > _sparian_ (early analogy).
 
@@ -10865,12 +10528,8 @@ with the refashioned class-II one that yields the citation verb.
 ### staff — OE stæf
 
 \index[oe]{staef@stæf}
-\index[pgmc]{staba@*stába}
 \index[pgmc]{stabaz@*stábaz}
 \index[pgmc]{stabiz@*stábiz}
-\index[pgmc]{stae@*stæ}
-\index[pwgmc]{stab@*stáb}
-\index[preoe]{staeb@*stæb}
 
 Derivation: citation reconstruction _\*stábiz_; form followed here _\*stábaz_ > _stæf_ (early analogy).
 
@@ -10959,10 +10618,7 @@ selected a-stem input.
 
 \index[oe]{stefn@stefn}
 \index[pgmc]{stamnaz@*stámnaz}
-\index[pgmc]{ste@*sté}
 \index[pgmc]{stebno@*stébnō}
-\index[nwgmc]{stebnu@*stébnu}
-\index[preoe]{ste@*sté}
 \index[goth]{stibna@stibna}
 
 Derivation: citation reconstruction _\*stámnaz_; form followed here _\*stébnō_ > _stefn_ (early analogy).
@@ -11062,8 +10718,6 @@ the OE-facing transponent, and the later West Saxon variant history.
 \index[oe]{swanes@swanes}
 \index[pgmc]{swanas@*swánas}
 \index[pgmc]{swanaz@*swánaz}
-\index[preoe]{swanaes@*swánæs}
-\index[preoe]{swanes@*swánes}
 
 Derivation: citation reconstruction _\*swánaz_; form followed here _\*swánas_ > _swanes_ (early analogy).
 
@@ -11254,8 +10908,6 @@ interpretive account of the second-syllable vowel.
 \index[oe]{timber@timber}
 \index[pgmc]{timbra@*tímbrą}
 \index[pgmc]{timra@*tímrą}
-\index[preoe]{timber@*tímber}
-\index[preoe]{timbr@*tímbr}
 
 Derivation: citation reconstruction _\*tímrą_; form followed here _\*tímbrą_ > _timber_ (early analogy).
 
@@ -11344,10 +10996,6 @@ OE-facing consonantal input.
 \index[oe]{wacan@wacan}
 \index[pgmc]{wakana@*wákaną}
 \index[pgmc]{wakena@*wakēną}
-\index[preoe]{waekana@*wækaną}
-\index[preoe]{wakan@*wakan}
-\index[preoe]{wakan@*wakąn}
-\index[preoe]{wakana@*wakaną}
 
 Derivation: citation reconstruction _\*wakēną_; form followed here _\*wákaną_ > _wacan_ (early analogy).
 
@@ -11440,9 +11088,6 @@ The comparison below sets the relevant forms side by side. It separates the stro
 \index[oe]{waeter@wæter}
 \index[pgmc]{watna@*wátną}
 \index[pgmc]{wator@*wátōr}
-\index[pwgmc]{watar@*wátar}
-\index[preoe]{waetaer@*wætær}
-\index[preoe]{waeter@*wæter}
 
 Derivation: citation reconstruction _\*wátną_; form followed here _\*wátōr_ > _wæter_ (early analogy).
 
@@ -11535,10 +11180,7 @@ the singular input that matches the Old English citation form.
 
 \index[oe]{hwael@hwæl}
 \index[pgmc]{walaz@*wálaz}
-\index[pgmc]{xwala@*xwála}
 \index[pgmc]{xwalaz@*xwálaz}
-\index[pwgmc]{xwal@*xwál}
-\index[preoe]{xwael@*xwæl}
 
 Derivation: citation reconstruction _\*wálaz_; form followed here _\*xwálaz_ > _hwæl_ (early analogy).
 
@@ -11631,8 +11273,6 @@ notations from the normalized Old English singular.
 \index[oe]{hwinan@hwīnan}
 \index[pgmc]{wainojana@*wainōjaną}
 \index[pgmc]{xwinana@*xwḯnaną}
-\index[preoe]{xwinan@*xwḯnan}
-\index[preoe]{xwinan@*xwḯnąn}
 
 Derivation: citation reconstruction _\*wainōjaną_; form followed here _\*xwī́naną_ > _hwīnan_ (early analogy).
 
@@ -11733,7 +11373,6 @@ that stand behind the inherited Old English forms.
 \index[oe]{withig@wīþiġ}
 \index[pgmc]{waithiz@*wáiθiz}
 \index[pgmc]{withaga@*wḯθagą}
-\index[preoe]{wi@*wḯ}
 
 Derivation: citation reconstruction _\*wáiθiz_; form followed here _\*wī́θagą_ > _wīþiġ_ (early analogy).
 
@@ -11838,11 +11477,6 @@ the Old English-facing formation that actually yields the attested noun.
 \index[pgmc]{wiraaldiz@*wíra-àldiz}
 \index[pgmc]{wiraldu@*wír-àldu}
 \index[pgmc]{wiraldu@*wíràldu}
-\index[nwgmc]{weraldu@*wéràldu}
-\index[preoe]{weorold@*wéorold}
-\index[preoe]{weoroldu@*wéoroldu}
-\index[preoe]{weroldu@*wéroldu}
-\index[preoe]{weruldu@*wéruldu}
 
 Derivation: citation reconstruction _\*wíra-àldiz_; form followed here _\*wír-àldu_ > _weorold_ (early analogy).
 
@@ -11953,11 +11587,6 @@ OE-facing stage chosen for the derivation.
 \index[oe]{geoguth@ġeoguþ}
 \index[pgmc]{jugunth@*júgunθ}
 \index[pgmc]{jugunthiz@*júgunθiz}
-\index[nwgmc]{jeugu@*jéugū}
-\index[nwgmc]{jeugun@*jéugūn}
-\index[preoe]{jeogu@*jéogu}
-\index[preoe]{jeogu@*jéogū}
-\index[preoe]{jeugun@*jéugun}
 
 Derivation: citation reconstruction _\*júgunθiz_; form followed here _\*júgunθ_ > _ġeoguþ_ (early analogy).
 
@@ -12071,8 +11700,6 @@ form rather than through the citation form alone.
 \index[oe]{bannes@bannes}
 \index[pgmc]{banna@*bánną}
 \index[pgmc]{bannas@*bánnas}
-\index[preoe]{bannaes@*bánnæs}
-\index[preoe]{bannes@*bánnes}
 
 Derivation: citation reconstruction _\*bánną_; form followed here _\*bánnas_ > _bannes_ (late analogy).
 
@@ -12161,9 +11788,6 @@ conservative cell used for the entry.
 \index[oe]{berges@berġes}
 \index[pgmc]{bazja@*bázją}
 \index[pgmc]{bazjas@*bázjas}
-\index[preoe]{baerjaes@*bærjæs}
-\index[preoe]{berjaes@*berjæs}
-\index[preoe]{berjes@*berjes}
 
 Derivation: citation reconstruction _\*bázją_; form followed here _\*bázjas_ > _berġes_ (late analogy).
 
@@ -12251,8 +11875,6 @@ and the genitive singular cell.
 \index[oe]{beag@bēag}
 \index[pgmc]{baug@*báug}
 \index[pgmc]{beugana@*béuganą}
-\index[preoe]{baeug@*báeug}
-\index[preoe]{beag@*bēag}
 
 Derivation: citation reconstruction _\*béuganą_; form followed here _\*báug_ > _bēag_ (late analogy).
 
@@ -12301,39 +11923,39 @@ Old English form: _bēag_
 
 #### Reconstruction and comparative evidence
 
-The inherited verb belongs to the class-II strong-verb family _\*béuganą_
+The inherited verb belongs to the class-II strong-verb family [_\*béuganą_]{.iv lang=pgmc sort=beugana}
 [@RingeTaylor2014, 55]. Within that paradigm, however, the infinitive and the
-singular preterite continue different ablaut grades. The derivational input _\*báug_
-is the singular preterite cell, whereas the citation form _\*béuganą_ is the
+singular preterite continue different ablaut grades. The derivational input [_\*báug_]{.iv lang=pgmc sort=baug}
+is the singular preterite cell, whereas the citation form [_\*béuganą_]{.iv lang=pgmc sort=beugana} is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
 preterite _au_ > _ēa_ development as regular in this environment
 [@Campbell1959, 53].
-That is the phonological path relevant for _bēag_, whereas the analogical _ū_
-of the present stem belongs to the separate history behind _būgan_
+That is the phonological path relevant for [_bēag_]{.iv lang=oe sort=beag}, whereas the analogical _ū_
+of the present stem belongs to the separate history behind [_būgan_]{.iv lang=oe sort=bugan}
 [@RingeTaylor2014, 55].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall both record _bēag_ as a preterite form of
-_būgan_ [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
+Bosworth-Toller and Clark Hall both record [_bēag_]{.iv lang=oe sort=beag} as a preterite form of
+[_būgan_]{.iv lang=oe sort=bugan} [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
-The ordinary dictionary headword remains _būgan_, but the relevant comparison
-form for this entry is the singular preterite _bēag_. That is the paradigm
+The ordinary dictionary headword remains [_būgan_]{.iv lang=oe sort=bugan}, but the relevant comparison
+form for this entry is the singular preterite [_bēag_]{.iv lang=oe sort=beag}. That is the paradigm
 cell in which the inherited _\*au_ grade is preserved most directly.
 
 #### Development to Old English
 
-From _\*báug_, Anglo-Frisian fronting and the later leveling of the diphthong
-produce _bēag_ [@Campbell1959, 53]. No special analogical repair is needed for that
+From [_\*báug_]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
+produce [_bēag_]{.iv lang=oe sort=beag} [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.
 
 The analogical element in the wider lexeme belongs instead to the present stem
-seen in _būgan_. The derivational input differs from the citation form because the
+seen in [_būgan_]{.iv lang=oe sort=bugan}. The derivational input differs from the citation form because the
 regular inherited pathway survives more transparently in the preterite than in
 the infinitive.
 
@@ -12344,12 +11966,12 @@ preterite from the more familiar infinitival citation form.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *béuganą | inherited present-stem history behind _būgan_ | būgan | establishes the lexeme, but not the Old English form here |
-| singular preterite | *báug | regular output: _bēag_ | bēag | exact match between input, output, and attested cell |
+| citation infinitive | [_\*béuganą_]{.iv lang=pgmc sort=beugana} | inherited present-stem history behind [_būgan_]{.iv lang=oe sort=bugan} | [_būgan_]{.iv lang=oe sort=bugan} | establishes the lexeme, but not the Old English form here |
+| singular preterite | [_\*báug_]{.iv lang=pgmc sort=baug} | regular output: [_bēag_]{.iv lang=oe sort=beag} | [_bēag_]{.iv lang=oe sort=beag} | exact match between input, output, and attested cell |
 | past participial branch | participial _\*bugan-_ type | later participial outcomes | bogen-type evidence | relevant to the paradigm, but not the clearest match for this entry |
 
 The singular preterite is the relevant comparison form. It gives a direct
-lautgesetzlich path to attested _bēag_, while the citation form _būgan_
+lautgesetzlich path to attested [_bēag_]{.iv lang=oe sort=beag}, while the citation form [_būgan_]{.iv lang=oe sort=bugan}
 belongs to a paradigm whose present stem has already undergone later leveling.
 
 ### cow — OE cȳ
@@ -12357,8 +11979,6 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 \index[oe]{cy@cȳ}
 \index[pgmc]{koz@*kōz}
 \index[pgmc]{kui@*kūi}
-\index[preoe]{ky@*kȳ}
-\index[preoe]{kyi@*kȳi}
 
 Derivation: citation reconstruction _\*kōz_; form followed here _\*kūi_ > _cȳ_ (late analogy).
 
@@ -12464,10 +12084,6 @@ _\*kū-_ grade spread beyond that one cell.
 \index[oe]{fundene@fundene}
 \index[pgmc]{finthana@*fínθaną}
 \index[pgmc]{fundano@*fúnðanǭ}
-\index[pwgmc]{fundano@*fúndanǭ}
-\index[preoe]{fundaenae@*fúndænæ}
-\index[preoe]{fundaeno@*fúndænǭ}
-\index[preoe]{fundene@*fúndene}
 
 Derivation: citation reconstruction _\*fínθaną_; form followed here _\*fúnðanǭ_ > _fundene_ (late analogy).
 
@@ -12571,13 +12187,7 @@ different presentation cell within the same paradigm.
 
 \index[oe]{fyrhte@fyrhte}
 \index[pgmc]{furxtin@*furxtīn}
-\index[pgmc]{furxtina@*fúrxtīna}
 \index[pgmc]{furxtinaz@*fúrxtīnaz}
-\index[pwgmc]{furxtin@*fúrxtīn}
-\index[nwgmc]{fyrxti@*fyrxtī}
-\index[preoe]{fyrxte@*fyrxte}
-\index[preoe]{fyrxti@*fyrxti}
-\index[preoe]{fyrxtin@*fyrxtīn}
 \index[goth]{faurhtei@faurhtei}
 
 Derivation: citation reconstruction _\*furxtīn_; form followed here _\*fúrxtīnaz_ > _fyrhte_ (late analogy).
@@ -12686,8 +12296,6 @@ analogical layer.
 \index[oe]{hameres@hameres}
 \index[pgmc]{xamaras@*xámaras}
 \index[pgmc]{xamaraz@*xámaraz}
-\index[preoe]{xamaeraes@*xámæræs}
-\index[preoe]{xameres@*xámeres}
 
 Derivation: citation reconstruction _\*xámaraz_; form followed here _\*xámaras_ > _hameres_ (late analogy).
 
@@ -12779,14 +12387,8 @@ from the less stable citation tradition.
 ### have — OE hæfeþ
 
 \index[oe]{haefeth@hæfeþ}
-\index[pgmc]{cae@*çæ}
 \index[pgmc]{xabena@*xabēną}
 \index[pgmc]{xabethi@*xábēθi}
-\index[pwgmc]{xabe@*xábē}
-\index[nwgmc]{xabae@*xábǣ}
-\index[preoe]{cae@*çæ}
-\index[preoe]{caebae@*çæbǣ}
-\index[preoe]{xaebae@*xæbǣ}
 
 Derivation: citation reconstruction _\*xabēną_; form followed here _\*xábēθi_ > _hæfeþ_ (late analogy).
 
@@ -12891,11 +12493,6 @@ form from the regular 3sg present line.
 \index[oe]{heofon@heofon}
 \index[pgmc]{xemenaz@*xémenaz}
 \index[pgmc]{xemonu@*xémonų}
-\index[nwgmc]{xe@*xé}
-\index[nwgmc]{xemunu@*xémunų}
-\index[preoe]{ce@*çé}
-\index[preoe]{ceo@*çéo}
-\index[preoe]{xe@*xé}
 
 Derivation: citation reconstruction _\*xémenaz_; form followed here _\*xémonų_ > _heofon_ (late analogy).
 
@@ -12996,12 +12593,8 @@ line from the oblique stem selected for West Saxon _heofon_.
 ### live — OE lifeþ
 
 \index[oe]{lifeth@lifeþ}
-\index[pgmc]{li@*lí}
 \index[pgmc]{libena@*libēną}
 \index[pgmc]{libethi@*líbēθi}
-\index[pwgmc]{libe@*líbē}
-\index[nwgmc]{libae@*líbǣ}
-\index[preoe]{li@*lí}
 
 Derivation: citation reconstruction _\*libēną_; form followed here _\*líbēθi_ > _lifeþ_ (late analogy).
 
@@ -13099,8 +12692,6 @@ ordinary infinitival and later remodeled lemma lines.
 \index[oe]{mannes@mannes}
 \index[pgmc]{mannas@*mánnas}
 \index[pgmc]{mannaz@*mánnaz}
-\index[preoe]{mannaes@*mánnæs}
-\index[preoe]{mannes@*mánnes}
 
 Derivation: citation reconstruction _\*mánnaz_; form followed here _\*mánnas_ > _mannes_ (late analogy).
 
@@ -13196,10 +12787,6 @@ genitive singular.
 \index[oe]{meorde@meorde}
 \index[pgmc]{mizdai@*mízdai}
 \index[pgmc]{mizdo@*mizdō}
-\index[pwgmc]{mirde@*mírdē}
-\index[nwgmc]{merde@*mérdē}
-\index[preoe]{meorde@*méorde}
-\index[preoe]{meorde@*méordē}
 
 Derivation: citation reconstruction _\*mizdō_; form followed here _\*mízdai_ > _meorde_ (late analogy).
 
@@ -13302,11 +12889,6 @@ the broader lemma history.
 \index[oe]{niht@niht}
 \index[pgmc]{naxti@*náxti}
 \index[pgmc]{naxtz@*náxtz}
-\index[preoe]{naexti@*næxti}
-\index[preoe]{neaxti@*neaxti}
-\index[preoe]{niexti@*niexti}
-\index[preoe]{nixt@*nixt}
-\index[preoe]{nixti@*nixti}
 
 Derivation: citation reconstruction _\*náxtz_; form followed here _\*náxti_ > _niht_ (late analogy).
 
@@ -13402,12 +12984,7 @@ attested Old English form.
 
 \index[oe]{raeste@ræste}
 \index[pgmc]{rasto@*rastō}
-\index[pgmc]{rasto@*rástō}
 \index[pgmc]{rastoz@*rástōz}
-\index[pwgmc]{rasta@*rástā}
-\index[preoe]{raestae@*ræstæ}
-\index[preoe]{raestae@*ræstǣ}
-\index[preoe]{raeste@*ræste}
 
 Derivation: citation reconstruction _\*rastō_; form followed here _\*rástōz_ > _ræste_ (late analogy).
 
@@ -13506,9 +13083,6 @@ from the oblique singular chosen here.
 \index[oe]{sculdrum@sċuldrum}
 \index[pgmc]{skuldramiz@*skúldramiz}
 \index[pgmc]{skuldro@*skuldrō}
-\index[pgmc]{skuldrum@*skúldrum}
-\index[pwgmc]{skuldrumz@*skúldrumz}
-\index[nwgmc]{skuldrumiz@*skúldrumiz}
 
 Derivation: citation reconstruction _\*skuldrō_; form followed here _\*skúldramiz_ > _sċuldrum_ (late analogy).
 
@@ -13598,10 +13172,7 @@ The dative plural line is decisive because it matches both the output and the pa
 
 \index[oe]{sceaf@sċēaf}
 \index[pgmc]{skaub@*skáub}
-\index[pgmc]{skea@*skēa}
 \index[pgmc]{skeubana@*skéubaną}
-\index[preoe]{skaeub@*skáeub}
-\index[preoe]{skeab@*skēab}
 
 Derivation: citation reconstruction _\*skéubaną_; form followed here _\*skáub_ > _sċēaf_ (late analogy).
 
@@ -13690,8 +13261,6 @@ below is manual.
 \index[oe]{spanne@spanne}
 \index[pgmc]{spannai@*spánnai}
 \index[pgmc]{spanno@*spannō}
-\index[pwgmc]{spanne@*spánnē}
-\index[preoe]{spanne@*spánne}
 
 Derivation: citation reconstruction _\*spannō_; form followed here _\*spánnai_ > _spanne_ (late analogy).
 
@@ -13860,9 +13429,6 @@ and the genitive singular cell.
 \index[oe]{maca@maca}
 \index[pgmc]{mako@*mákô}
 \index[pgmc]{makona@*makōną}
-\index[preoe]{maeko@*mækô}
-\index[preoe]{maka@*maka}
-\index[preoe]{mako@*makô}
 
 Derivation: citation reconstruction _\*makōną_; form followed here _\*mákô_ > _maca_ (late analogy).
 
@@ -13961,10 +13527,6 @@ the Old English form chosen here. The comparison below sets the relevant forms s
 \index[oe]{macath@macaþ}
 \index[pgmc]{makona@*makōną}
 \index[pgmc]{makothi@*mákōθi}
-\index[pwgmc]{mako@*mákō}
-\index[preoe]{maeko@*mækō}
-\index[preoe]{maka@*maka}
-\index[preoe]{mako@*makō}
 
 Derivation: citation reconstruction _\*makōną_; form followed here _\*mákōθi_ > _macaþ_ (late analogy).
 
@@ -14047,8 +13609,6 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 \index[oe]{bora@bora}
 \index[pgmc]{buro@*búrô}
 \index[pgmc]{burona@*burōną}
-\index[nwgmc]{boro@*bórô}
-\index[preoe]{bora@*bóra}
 
 Derivation: citation reconstruction _\*burōną_; form followed here _\*búrô_ > _bora_ (late analogy).
 
@@ -14129,9 +13689,6 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 \index[oe]{borath@boraþ}
 \index[pgmc]{burona@*burōną}
 \index[pgmc]{burothi@*búrōθi}
-\index[pwgmc]{buro@*búrō}
-\index[nwgmc]{boro@*bórō}
-\index[preoe]{bora@*bóra}
 
 Derivation: citation reconstruction _\*burōną_; form followed here _\*búrōθi_ > _boraþ_ (late analogy).
 
@@ -14214,8 +13771,6 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 \index[oe]{liorna@liorna}
 \index[pgmc]{lizno@*líznô}
 \index[pgmc]{liznojana@*liznōjaną}
-\index[preoe]{liorna@*líorna}
-\index[preoe]{liorno@*líornô}
 
 Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznô_ > _liorna_ (late analogy).
 
@@ -14295,9 +13850,6 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 \index[oe]{liornath@liornaþ}
 \index[pgmc]{liznojana@*liznōjaną}
 \index[pgmc]{liznothi@*líznōθi}
-\index[pwgmc]{lirno@*lírnō}
-\index[preoe]{liorna@*líorna}
-\index[preoe]{liorno@*líornō}
 
 Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznōθi_ > _liornaþ_ (late analogy).
 
@@ -14379,7 +13931,6 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 \index[oe]{licca@licca}
 \index[pgmc]{likko@*líkkô}
 \index[pgmc]{likkona@*likkōną}
-\index[preoe]{likka@*líkka}
 
 Derivation: citation reconstruction _\*likkōną_; form followed here _\*líkkô_ > _licca_ (late analogy).
 
@@ -14456,8 +14007,6 @@ The comparison below sets the relevant forms side by side.
 \index[oe]{liccath@liccaþ}
 \index[pgmc]{likkona@*likkōną}
 \index[pgmc]{likkothi@*líkkōθi}
-\index[pwgmc]{likko@*líkkō}
-\index[preoe]{likka@*líkka}
 
 Derivation: citation reconstruction _\*likkōną_; form followed here _\*líkkōθi_ > _liccaþ_ (late analogy).
 
@@ -14536,7 +14085,6 @@ The comparison below sets the relevant forms side by side.
 \index[oe]{sceawa@sċēawa}
 \index[pgmc]{skawo@*skáwô}
 \index[pgmc]{skawona@*skawōną}
-\index[preoe]{skeawo@*skḗawô}
 \index[ohg]{scouwon@scouwōn}
 \index[ofris]{skawia@skawia}
 \index[os]{skawon@skawōn}
@@ -14618,8 +14166,6 @@ The comparison below sets the relevant forms side by side.
 \index[oe]{sceawath@sċēawaþ}
 \index[pgmc]{skawona@*skawōną}
 \index[pgmc]{skawothi@*skáwōθi}
-\index[pwgmc]{skawo@*skáwō}
-\index[preoe]{skeawo@*skḗawō}
 
 Derivation: citation reconstruction _\*skawōną_; form followed here _\*skáwōθi_ > _sċēawaþ_ (late analogy).
 
@@ -14708,8 +14254,6 @@ Proto-Germanic citation form but still belongs to the lexical derivation layer.
 \index[oe]{cnobba@*cnobba}
 \index[pgmc]{knubbo@*knúbbô}
 \index[pgmc]{knuppaz@*knúppaz}
-\index[nwgmc]{knobbo@*knóbbô}
-\index[preoe]{knobba@*knóbba}
 
 Derivation: citation reconstruction _\*knúppaz_; form followed here _\*knúbbô_ > _\*cnobba_ (reconstructed Old English comparator).
 
@@ -14811,12 +14355,8 @@ question rather than a settled point of OE attestation.
 ### reek — OE *rēac
 
 \index[oe]{reac@*rēac}
-\index[pgmc]{rauka@*ráuka}
 \index[pgmc]{raukaz@*ráukaz}
 \index[pgmc]{raukiz@*ráukiz}
-\index[pwgmc]{reak@*rēak}
-\index[preoe]{raeuka@*ráeuka}
-\index[preoe]{reaka@*rēaka}
 
 Derivation: citation reconstruction _\*ráukiz_; form followed here _\*ráukaz_ > _\*rēac_ (reconstructed Old English comparator).
 
@@ -14901,14 +14441,6 @@ modelling target, while the former remains philological background.
 
 \index[oe]{striegan@*strīeġan}
 \index[pgmc]{strawjana@*stráwjaną}
-\index[preoe]{straeujana@*stráeujaną}
-\index[preoe]{straujana@*stráujaną}
-\index[preoe]{streajan@*strēajan}
-\index[preoe]{streajan@*strēająn}
-\index[preoe]{streajana@*strēajaną}
-\index[preoe]{strie@*strīe}
-\index[preoe]{striejan@*strīejan}
-\index[preoe]{striejan@*strīejąn}
 
 Derivation: _\*stráwjaną_ > _\*strīeġan_ (reconstructed Old English comparator).
 
@@ -15022,8 +14554,6 @@ reshaping directly.
 
 \index[oe]{fyre@fȳre}
 \index[pgmc]{furi@*fūri}
-\index[preoe]{fyr@*fȳr}
-\index[preoe]{fyri@*fȳri}
 
 Derivation: _\*fūri_ yields regular _fȳr_; the Old English form here is _fȳre_ (known but unmodelled remodelling).
 
@@ -15123,9 +14653,6 @@ form and from the later analogical surface result.
 
 \index[oe]{taeppa@tæppa}
 \index[pgmc]{tappo@*táppô}
-\index[preoe]{taeppo@*tæppô}
-\index[preoe]{tappa@*tappa}
-\index[preoe]{tappo@*tappô}
 
 Derivation: _\*táppô_ yields regular _tappa_; the Old English form here is _tæppa_ (known but unmodelled remodelling).
 
@@ -15217,10 +14744,7 @@ rather than treated as evidence for further sound-change repair.
 ### buck — OE bucc
 
 \index[oe]{bucc@bucc}
-\index[pgmc]{bokka@*bókka}
 \index[pgmc]{bukkaz@*búkkaz}
-\index[pwgmc]{bokk@*bókk}
-\index[nwgmc]{bokkaz@*bókkaz}
 
 Derivation: _\*búkkaz_ yields regular _bocc_; the Old English form here is _bucc_ (unexplained exception).
 
@@ -15310,11 +14834,7 @@ paradigm-cell survival.
 ### fowl — OE fugol
 
 \index[oe]{fugol@fugol}
-\index[pgmc]{fogla@*fógla}
 \index[pgmc]{fuglaz@*fúglaz}
-\index[pwgmc]{fogl@*fógl}
-\index[nwgmc]{foglaz@*fóglaz}
-\index[preoe]{fogol@*fógol}
 \index[on]{fugl@fugl}
 \index[ohg]{fogal@fogal}
 
@@ -15425,9 +14945,6 @@ attested _fugol_.
 
 \index[oe]{rust@rust}
 \index[pgmc]{rusto@*rústō}
-\index[nwgmc]{rosto@*róstō}
-\index[nwgmc]{rostu@*róstu}
-\index[preoe]{rost@*róst}
 
 Derivation: _\*rústō_ yields regular _rost_; the Old English form here is _rust_ (unexplained exception).
 
@@ -15527,10 +15044,7 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 ### wolf — OE wulf
 
 \index[oe]{wulf@wulf}
-\index[pgmc]{wolfa@*wólfa}
 \index[pgmc]{wulfaz@*wúlfaz}
-\index[pwgmc]{wolf@*wólf}
-\index[nwgmc]{wolfaz@*wólfaz}
 
 Derivation: _\*wúlfaz_ yields regular _wolf_; the Old English form here is _wulf_ (unexplained exception).
 
@@ -15634,9 +15148,6 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 \index[oe]{wull@wull}
 \index[pgmc]{wullo@*wúllō}
-\index[nwgmc]{wollo@*wóllō}
-\index[nwgmc]{wollu@*wóllu}
-\index[preoe]{woll@*wóll}
 
 Derivation: _\*wúllō_ yields regular _woll_; the Old English form here is _wull_ (unexplained exception).
 
@@ -15755,10 +15266,6 @@ The comparison below sets the regular result beside the attested lexical excepti
 \printindex[oe]
 
 \printindex[pgmc]
-
-\printindex[pwgmc]
-
-\printindex[nwgmc]
 
 \printindex[preoe]
 

@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as `*bērō-` f. 'bier' and cites Old English `bar`, [`bær`]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The selected input `*bḗrō` is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as [`*bērō-`]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [`bar`]{.iv lang=oe sort=bar}, [`bær`]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The selected input [`*bḗrō`]{.iv lang=pgmc sort=bero} is the same lexeme in the accent notation used here.
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as [`bær`]{.iv lang=oe sort=baer}, and Kroonen also records `bar` beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target `bǣr` is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as [`bær`]{.iv lang=oe sort=baer}, and Kroonen also records [`bar`]{.iv lang=oe sort=bar} beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [`bǣr`]{.iv lang=oe sort=baer} is therefore a normalized long-vowel spelling of the same noun.
 
 ### Source note
 
-Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} and `bar`. The normalized target `bǣr` simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} and [`bar`]{.iv lang=oe sort=bar}. The normalized target [`bǣr`]{.iv lang=oe sort=baer} simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 ### Development to Old English
 
-From `*bḗrō`, Northwest Germanic final long `ō` raises to `u`, long `ē` lowers to `ǣ`, and high-vowel apocope yields `bǣr`. The resulting noun matches the normalized Old English target.
+From [`*bḗrō`]{.iv lang=pgmc sort=bero}, Northwest Germanic final long `ō` raises to `u`, long `ē` lowers to `ǣ`, and high-vowel apocope yields [`bǣr`]{.iv lang=oe sort=baer}. The resulting noun matches the normalized Old English target.

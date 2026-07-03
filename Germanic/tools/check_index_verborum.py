@@ -2,16 +2,20 @@
 from __future__ import annotations
 
 import csv
+import tempfile
 from pathlib import Path
 
 from build_index_verborum import (
     INTRO_PATH,
     CandidateOccurrence,
+    add_production,
     build_audit_rows,
     build_production_rows,
     compare_against_baseline,
+    excluded_intermediate_trace_forms,
     explicit_tag_occurrences,
     load_unresolved_baseline,
+    table_candidates_from_path,
     transliterate_sort_key,
     unresolved_baseline_key,
 )
@@ -42,24 +46,27 @@ def assert_explicit_tags() -> None:
 
 def assert_production_rows() -> None:
     rows = build_production_rows()
-    keys = {(row.display, row.language, row.source_scope, row.source_ref) for row in rows}
-    assert ("bacan", "oe", "lexical_heading", "bake — OE bacan") in keys
-    assert ("*θánkijaną", "pgmc", "lexical_protoform", "think — OE þenċan") in keys
+    keys = {(row.display, row.language, row.source_scope, row.source_ref, row.form_role) for row in rows}
+    assert ("bacan", "oe", "lexical_heading", "bake — OE bacan", "target_form") in keys
+    assert ("*θánkijaną", "pgmc", "lexical_protoform", "think — OE þenċan", "source_protoform") in keys
     rel = INTRO_PATH.relative_to(REPO_ROOT).as_posix() + ":"
     assert any(row.display == "sċuldrum" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith(rel) for row in rows)
-    assert ("báðir", "on", "override", "Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27") in keys
-    assert ("skawōn", "os", "override", "Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22") in keys
-    assert ("*cnobba", "oe", "lexical_heading", "knob — OE *cnobba") in keys
-    assert ("*rēac", "oe", "lexical_heading", "reek — OE *rēac") in keys
-    assert ("*strīeġan", "oe", "lexical_heading", "strew — OE *strīeġan") in keys
+    assert ("báðir", "on", "override", "Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27", "comparison_form") in keys
+    assert ("skawōn", "os", "override", "Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22", "comparison_form") in keys
+    assert ("*cnobba", "oe", "lexical_heading", "knob — OE *cnobba", "target_form") in keys
+    assert ("*rēac", "oe", "lexical_heading", "reek — OE *rēac", "target_form") in keys
+    assert ("*strīeġan", "oe", "lexical_heading", "strew — OE *strīeġan", "target_form") in keys
+    assert any(row.form == "*xémonų" and row.form_role == "selected_input" and row.source_scope == "trace_proto_input" for row in rows)
+    assert not any(row.source_scope in {"trace_stage", "trace_output"} for row in rows)
 
 
 def assert_written_table_schema() -> None:
     with FORMS_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
-        assert reader.fieldnames == ["language", "form", "display", "sort_key", "source_scope", "source_ref", "origin", "status"]
+        assert reader.fieldnames == ["language", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
         first_rows = list(reader)[:10]
     assert all(row["language"] for row in first_rows)
+    assert all(row["form_role"] for row in first_rows)
     assert all(row["status"] in {"auto", "override"} for row in first_rows)
 
 
@@ -141,14 +148,78 @@ def assert_baseline_strictness() -> None:
 
 def assert_table_form_handling() -> None:
     rows = build_production_rows()
-    keys = {(row.display, row.language, row.source_scope, row.source_ref) for row in rows}
-    assert ("cnopp", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:63") in keys
-    assert ("cnoppa", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:63") in keys
-    assert ("cnæp", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:64") in keys
-    assert ("*xémenaz", "pgmc", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61") in keys
-    assert ("hefen", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61") in keys
-    assert ("liccaþ", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:44") in keys
-    assert ("sċēawa", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:43") in keys
+    assert any(row.display == "cnopp" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:") for row in rows)
+    assert any(row.display == "cnoppa" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:") for row in rows)
+    assert any(row.display == "cnæp" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:") for row in rows)
+    assert any(row.display == "*xémenaz" and row.language == "pgmc" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:") for row in rows)
+    assert any(row.display == "hefen" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:") for row in rows)
+    assert any(row.display == "sparen" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:") for row in rows)
+    assert any(row.display == "liccaþ" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:") for row in rows)
+    assert any(row.display == "sċēawa" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:") for row in rows)
+
+
+def assert_greek_and_sanskrit_explicit_tags() -> None:
+    with tempfile.TemporaryDirectory() as tmpdir:
+        fixture = Path(tmpdir) / "synthetic-iv.md"
+        fixture.write_text(
+            "[*λόγος*]{.iv lang=greek sort=logos}\n"
+            "[śrī]{.iv lang=skt sort=sri}\n",
+            encoding="utf-8",
+        )
+        tags = explicit_tag_occurrences(paths=[fixture])
+        store = {}
+        for row in tags:
+            add_production(
+                store,
+                language=row["language"],
+                form=row["form"],
+                display=row["display"],
+                sort_key=row["sort_key"],
+                form_role=row["form_role"],
+                source_scope=row["source_scope"],
+                source_ref=row["source_ref"],
+                origin=row["origin"],
+            )
+        rows = list(store.values())
+    assert any(row.form == "λόγος" and row.language == "greek" and row.sort_key == "logos" for row in rows)
+    assert any(row.form == "śrī" and row.language == "skt" and row.sort_key == "sri" for row in rows)
+
+
+def assert_table_audit_scanner() -> None:
+    with tempfile.TemporaryDirectory() as tmpdir:
+        fixture = Path(tmpdir) / "synthetic-table.model.md"
+        fixture.write_text(
+            "### Paradigm comparison\n\n"
+            "| Candidate input | OE comparison form | Result |\n"
+            "| :--- | :--- | :--- |\n"
+            "| `*bákaną` | `bacan` | mismatch |\n",
+            encoding="utf-8",
+        )
+        candidates = table_candidates_from_path(fixture, allow_non_model_entry=True)
+    forms = {(candidate.form, candidate.heading) for candidate in candidates}
+    assert ("*bákaną", "### Paradigm comparison") in forms
+    assert ("bacan", "### Paradigm comparison") in forms
+
+
+def assert_ordinary_glosses_ignored() -> None:
+    rows = build_production_rows()
+    synthetic = CandidateOccurrence(
+        form="friend",
+        source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:183",
+        source_path="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md",
+        line_no=183,
+        heading="## Synthetic reader-facing heading",
+        line_text="friend",
+    )
+    audit = build_audit_rows(rows, candidates=[synthetic])
+    assert any(entry["form"] == "friend" for entry in audit.get("ignored_by_override", []))
+
+
+def assert_intermediate_trace_forms_excluded() -> None:
+    rows = build_production_rows()
+    excluded = excluded_intermediate_trace_forms()
+    assert any(entry["form"] == "*bækaną" for entry in excluded)
+    assert not any(row.form == "*bækaną" and row.source_scope == "trace_stage" for row in rows)
 
 
 def assert_reconstructed_oe_index_commands() -> None:
@@ -173,6 +244,10 @@ def main() -> None:
     assert_ignore_override_behavior()
     assert_baseline_strictness()
     assert_table_form_handling()
+    assert_greek_and_sanskrit_explicit_tags()
+    assert_table_audit_scanner()
+    assert_ordinary_glosses_ignored()
+    assert_intermediate_trace_forms_excluded()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")
 
