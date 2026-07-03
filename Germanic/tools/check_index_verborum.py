@@ -281,13 +281,16 @@ def assert_table_audit_scanner() -> None:
             "### Paradigm comparison\n\n"
             "| Candidate input | OE comparison form | Result |\n"
             "| :--- | :--- | :--- |\n"
-            "| *bákaną | bacan | mismatch |\n",
+            "| *bákaną | bacan | mismatch |\n"
+            "| attested | Ritual | note |\n",
             encoding="utf-8",
         )
         candidates = table_candidates_from_path(fixture, allow_non_model_entry=True)
     forms = {(candidate.form, candidate.heading, candidate.candidate_origin) for candidate in candidates}
     assert ("*bákaną", "### Paradigm comparison", "table_candidate") in forms
     assert ("bacan", "### Paradigm comparison", "table_candidate") in forms
+    assert ("attested", "### Paradigm comparison", "table_candidate") not in forms
+    assert ("Ritual", "### Paradigm comparison", "table_candidate") not in forms
 
 
 def assert_ordinary_glosses_ignored() -> None:

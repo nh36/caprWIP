@@ -2,12 +2,12 @@
 
 - Production indexed occurrences: 1545
 - Production unique forms: 818
-- Audit-only candidates needing review: 1257
+- Audit-only candidates needing review: 1253
 - Already indexed nearby: 14
 - Ignored fragments or sequences: 1159
 - Possible extraction garbage: 244
 - Excluded intermediate trace forms: 1278
-- New unresolved candidates relative to baseline: 811
+- New unresolved candidates relative to baseline: 807
 - Baseline candidates now resolved or ignored: 242
 
 ## Production indexed forms by language
@@ -1352,13 +1352,10 @@ _None._
 
 | Form | Source | Candidate origin |
 | --- | --- | --- |
-| `attested` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65 | table_candidate |
 | `biegan` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29 | broad_prose_candidate |
 | `Cealf` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21 | broad_prose_candidate |
 | `craft` | Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:37 | broad_prose_candidate |
 | `creft` | Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:36 | broad_prose_candidate |
-| `expected` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:59 | table_candidate |
-| `expected` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:60 | table_candidate |
 | `faran` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:29 | broad_prose_candidate |
 | `fearn` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | broad_prose_candidate |
 | `fogol` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:45 | broad_prose_candidate |
@@ -1417,7 +1414,6 @@ _None._
 | `neaht` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:60 | table_candidate |
 | `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:151 | broad_prose_candidate |
 | `OHG` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28 | broad_prose_candidate |
-| `Ritual` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57 | table_candidate |
 | `scofen` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:52 | table_candidate |
 | `scufon` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:51 | table_candidate |
 | `smierwan` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:29 | broad_prose_candidate |
@@ -1484,9 +1480,6 @@ _None._
 
 | Form | Source | Nearest heading | Context |
 | --- | --- | --- | --- |
-| `attested` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65 | ### Paradigm comparison | | genitive plural control | plural oblique line | attested [`meorda`]{.iv lang=oe sort=meorda role=comparison_form} | [`meorda`]{.iv lang=oe sort=meorda role=co |
-| `expected` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:59 | ### Paradigm comparison | | accusative singular | [`*manną`]{.iv lang=pgmc sort=manna role=comparison_form} | expected [`man`]{.iv lang=oe sort=man role=regular_output} | [`man`]{.iv lan |
-| `expected` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:60 | ### Paradigm comparison | | dative singular | [`*mannăi`]{.iv lang=pgmc sort=mannai role=comparison_form} | expected [`manne`]{.iv lang=oe sort=manne role=regular_output} | [`manne`]{.iv |
 | `fȳr` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63 | ### Paradigm comparison | | inherited oblique cell | *fūri | compact-trace output: `fȳr` | fȳr | regular inherited output from the selected input | |
 | `fȳre` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:64 | ### Paradigm comparison | | later analogical surface form | — | attested `fȳre` with restored `-e` | fȳre | genuine OE target, but not the direct phonological output | |
 | `*gállą` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:59 | ### Stem comparison | | broader family label | *gállą | broader cognate-set headword | wider family context | useful lexeme label, but not the direct source of `ġealla` | |
@@ -1529,7 +1522,6 @@ _None._
 | `ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60 | ### Paradigm comparison | | selected oblique singular | *rástōz | compact-trace output: `ræste` | ræste | exact match between selected input and attested OE oblique form | |
 | `*rastō` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59 | ### Paradigm comparison | | citation nominative singular | *rastō | expected regular outcome `rast` | ræst | useful background, but not the cell that matches attested oblique `ræste` | |
 | `*rástōz` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60 | ### Paradigm comparison | | selected oblique singular | *rástōz | compact-trace output: `ræste` | ræste | exact match between selected input and attested OE oblique form | |
-| `Ritual` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57 | ### Formation comparison | | inherited class-III imperative singular | [`*spárē`]{.iv lang=preoe sort=spare} | manual comparison / probe output: [`spære`]{.iv lang=oe sort=spaere} | Ritua |
 | `sæp` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:58 | ### Stem comparison | | selected a-stem input | *sápą | compact-trace output: `sæp` | sæp | exact match between selected input and attested OE noun | |
 | `*sáiwiz` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:53 | ### Stem and stage comparison | | selected i-stem input | *sáiwiz | documented trace output: `sǣ` | sǣ | exact match between selected input and Old English target | |
 | `*sapiz` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:57 | ### Stem comparison | | inferred i-stem comparator from `*sapi-` | *sapiz | local comparator output: `sepe` | sepe | confirms that an i-triggering stem does not reach the target | |
@@ -3164,7 +3156,6 @@ _None._
 | Form | Source | Category | Nearest heading |
 | --- | --- | --- | --- |
 | `among` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
-| `attested` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65 | likely_false_positive | ### Paradigm comparison |
 | `*bákaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1157 | likely_pgmc | ## SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} |
 | `*bákaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1179 | likely_pgmc | ## SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} |
 | `*bákaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1195 | likely_pgmc | ## SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} |
@@ -3237,8 +3228,6 @@ _None._
 | `ēaw` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | likely_oe | ### Development to Old English |
 | `ēaw` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:864 | likely_german | ## Historical discussion of long \emph{ēaw} |
 | `*érθōn` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2380 | likely_pgmc | ## SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} |
-| `expected` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:59 | likely_false_positive | ### Paradigm comparison |
-| `expected` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:60 | likely_false_positive | ### Paradigm comparison |
 | `*fádēr` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2450 | likely_pgmc | ## SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} |
 | `*fádēr` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2464 | likely_pgmc | ## SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} |
 | `*færaną` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:29 | likely_pgmc | ### Development to Old English |
@@ -3570,7 +3559,6 @@ _None._
 | `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1081 | likely_pgmc | ## SC043. Fronting of low \emph{*a} outside nasal environments (`AngloFrisianBrightening`) {#rule-AngloFrisianBrightening} |
 | `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:491 | likely_pgmc | ## SC019. Raising of final unstressed long \emph{*ō} (`NWGmcFinalLongORaising`) {#rule-NWGmcFinalLongORaising} |
 | `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:509 | likely_pgmc | ## SC020. Deletion of word-final \emph{*z} (`PGmcFinalZDeletion`) {#rule-PGmcFinalZDeletion} |
-| `Ritual` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57 | likely_false_positive | ### Formation comparison |
 | `*rúkkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:29 | likely_german | ### Development to Old English |
 | `*rústō` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:23 | likely_ohg | ### Reconstruction and comparative evidence |
 | `*rústō` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:28 | likely_pgmc | ### Reconstruction and comparative evidence |

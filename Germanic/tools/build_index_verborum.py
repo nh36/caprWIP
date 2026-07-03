@@ -100,6 +100,18 @@ NOISE_LINE_PREFIXES = (
 TABLE_AUDIT_HEADING_KEYWORDS = ("comparison", "status")
 TABLE_AUDIT_HEADER_KEYWORDS = ("form", "input", "outcome", "comparison", "branch")
 TABLE_AUDIT_HEADER_EXCLUDE = ("result", "status", "relevance")
+TABLE_STOPWORDS = {
+    "attested",
+    "expected",
+    "regular",
+    "output",
+    "type",
+    "same",
+    "broader",
+    "selected",
+    "inherited",
+    "ritual",
+}
 BARE_TABLE_CELL_RE = re.compile(r"^\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*(?:/\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*)*$")
 TRANSLIT_MAP = {
     "þ": "th",
@@ -557,14 +569,14 @@ def extract_forms_from_markup(text: str) -> list[str]:
     for match in MARKUP_FORM_RE.finditer(scrubbed):
         raw = next(group for group in match.groups() if group)
         form = normalize_form(raw.replace("<br>", " "))
-        if form and form not in seen:
+        if form and form.casefold() not in TABLE_STOPWORDS and form not in seen:
             forms.append(form)
             seen.add(form)
     bare = scrubbed.strip()
     if BARE_TABLE_CELL_RE.fullmatch(bare):
         for chunk in re.split(r"\s*/\s*", bare):
             form = normalize_form(chunk.strip())
-            if form and form not in seen:
+            if form and form.casefold() not in TABLE_STOPWORDS and form not in seen:
                 forms.append(form)
                 seen.add(form)
     return forms
@@ -904,8 +916,18 @@ FALSE_POSITIVE_FORMS = {
     "evidence",
     "family",
     "lowering",
+    "regular",
+    "output",
     "tradition",
+    "type",
     "voiced",
+    "selected",
+    "expected",
+    "attested",
+    "same",
+    "broader",
+    "inherited",
+    "ritual",
 }
 
 EXACT_FRAGMENT_FORMS = {
