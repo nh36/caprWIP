@@ -18,10 +18,10 @@ DERIVATION_CLASS: reconstructed_oe
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the inherited weak verb as **`*straujan-`** and gives Old English
-**`streowian`** as its dictionary continuation [@Kroonen2013, 483]. Ringe and
+Kroonen cites the inherited weak verb as **[`*straujan-`]{.iv lang=pgmc sort=straujan role=source_protoform}** and gives Old English
+**[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** as its dictionary continuation [@Kroonen2013, 483]. Ringe and
 Taylor make the split within Old English explicit: the inherited class-I verb is
-continued by Anglian **`strēgan`**, while West Saxon **`streowian`** is a
+continued by Anglian **[`strēgan`]{.iv lang=oe sort=stregan role=comparison_form}**, while West Saxon **[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** is a
 remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].
 
 The aw-series comparison is important here. Luick groups `*strauwjan` with the
@@ -37,7 +37,7 @@ attested West Saxon citation forms are **`strewian`**, **`streowian`**, and
 **`strēawian`**, which belong to the remodelled class-II branch
 [@RingeTaylor2014, §6.1 n. 27; @Campbell1959, §753.7].
 
-The target **`*strīeġan`** is therefore a **reconstructed Old English form**, not
+The target **[`*strīeġan`]{.iv lang=oe sort=striegan role=target_form}** is therefore a **reconstructed Old English form**, not
 an attested manuscript lemma. It is the reconstructed West Saxon reflex of the
 inherited class-I verb, chosen to keep the inherited branch distinct from the
 better-attested remodelled West Saxon lemma.
@@ -61,6 +61,6 @@ the attested remodelled branch, and the reconstructed West Saxon comparator.
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `strēgan` | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
-| `*strīeġan` | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
-| `strewian / streowian / strēawian` | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
+| [`strēgan`]{.iv lang=oe sort=stregan role=comparison_form} | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
+| [`*strīeġan`]{.iv lang=oe sort=striegan role=target_form} | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
+| [`strewian`]{.iv lang=oe sort=strewian role=comparison_form} / [`streowian`]{.iv lang=oe sort=streowian role=comparison_form} / [`strēawian`]{.iv lang=oe sort=streawian role=comparison_form} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |

@@ -20,7 +20,7 @@ DERIVATION_CLASS: attested_variant
 
 Kroonen cites the numeral under a broader stem-style reconstruction rather than
 under one Old English-ready paradigm cell [@Kroonen2013, 586]. The input
-**`*θréjez`** is therefore best understood as the inherited masculine
+**[`*θréjez`]{.iv lang=pgmc sort=threjez role=selected_input}** is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
 That distinction matters because the Old English numeral does not have one
@@ -30,9 +30,9 @@ the masculine form.
 
 ### Old English evidence
 
-Campbell gives masculine nominative-accusative **`þrīe`**, feminine and neuter
-nominative-accusative **`þrēo`**, genitive **`þrēora`**, and dative
-**`þrim`**, adding that late West Saxon has **`þry, þri`** for **`þrīe`**
+Campbell gives masculine nominative-accusative **[`þrīe`]{.iv lang=oe sort=thrie role=target_form}**, feminine and neuter
+nominative-accusative **[`þrēo`]{.iv lang=oe sort=threo role=comparison_form}**, genitive **[`þrēora`]{.iv lang=oe sort=threora role=comparison_form}**, and dative
+**[`þrim`]{.iv lang=oe sort=thrim role=comparison_form}**, adding that late West Saxon has **`þry, þri`** for **[`þrīe`]{.iv lang=oe sort=thrie role=target_form}**
 [@Campbell1959, §683]. Fulk presents the same masculine **`þrīe`** beside the
 wider numeral paradigm [@Fulk2018, §10.1].
 
@@ -54,7 +54,7 @@ the later reduced form and from the rest of the numeral paradigm.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| `þrīe` | attested masculine nom./acc.; trace output | selected target |
+| [`þrīe`]{.iv lang=oe sort=thrie role=target_form} | attested masculine nom./acc.; trace output | selected target |
 | `þrī / þry` | later reduced masculine variant | genuine OE variant, but not the conservative comparison form |
-| `þrēo` | attested feminine-neuter nom./acc. | same numeral, different paradigm cell |
-| `þrēora`, `þrim` | attested genitive and dative forms | confirm the wider paradigm, not the selected cell |
+| [`þrēo`]{.iv lang=oe sort=threo role=comparison_form} | attested feminine-neuter nom./acc. | same numeral, different paradigm cell |
+| [`þrēora`]{.iv lang=oe sort=threora role=comparison_form}, [`þrim`]{.iv lang=oe sort=thrim role=comparison_form} | attested genitive and dative forms | confirm the wider paradigm, not the selected cell |

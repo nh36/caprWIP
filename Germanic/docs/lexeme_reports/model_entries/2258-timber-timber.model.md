@@ -18,10 +18,10 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as **`*timbra-`** and cites Old English
-**`timber`** among its continuations [@Kroonen2013, 517]. Ringe and Taylor
+Kroonen reconstructs the noun as **[`*timbra-`]{.iv lang=pgmc sort=timbra role=source_protoform}** and cites Old English
+**[`timber`]{.iv lang=oe sort=timber role=target_form}** among its continuations [@Kroonen2013, 517]. Ringe and Taylor
 instead state the history from **`PGmc *timra`** through West Germanic
-**`*timbr`** to Old English **`timber`** [@RingeTaylor2014, 327].
+**[`*timbr`]{.iv lang=preoe sort=timbr role=comparison_form}** to Old English **[`timber`]{.iv lang=oe sort=timber role=target_form}** [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial **`b`** belongs in the comparative citation form or appears in an
@@ -29,7 +29,7 @@ early pre-Old-English stage of the cluster.
 
 ### Old English evidence
 
-Clark Hall lemmatizes the noun as **`timber`** and also records **`timbor`** as
+Clark Hall lemmatizes the noun as **[`timber`]{.iv lang=oe sort=timber role=target_form}** and also records **[`timbor`]{.iv lang=oe sort=timbor role=comparison_form}** as
 a variant spelling [@ClarkHall1960, 294]. The Old English form is thus an ordinary
 citation noun, not a selected oblique cell or a reconstructed convenience form.
 
@@ -49,6 +49,6 @@ OE-facing consonantal input.
 
 | Formation or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| Kroonen's comparative citation | `*timbra-` | already matches the consonantal frame of OE `timber` | closest comparative support for the selected input |
-| Ringe-Taylor citation line | `*timra > *timbr` | reaches the same OE noun through early cluster expansion | compatible comparative background |
-| modeled input | `*tímbrą` | trace output: `timber` | selected OE-facing input |
+| Kroonen's comparative citation | [`*timbra-`]{.iv lang=pgmc sort=timbra role=source_protoform} | already matches the consonantal frame of OE [`timber`]{.iv lang=oe sort=timber role=target_form} | closest comparative support for the selected input |
+| Ringe-Taylor citation line | [`*timra`]{.iv lang=pgmc sort=timra role=source_protoform} > [`*timbr`]{.iv lang=preoe sort=timbr role=comparison_form} | reaches the same OE noun through early cluster expansion | compatible comparative background |
+| modeled input | [`*tímbrą`]{.iv lang=pgmc sort=timbra role=selected_input} | trace output: [`timber`]{.iv lang=oe sort=timber role=regular_output} | selected OE-facing input |

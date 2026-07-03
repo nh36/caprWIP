@@ -4924,7 +4924,7 @@ Old English form: _þrīe_
 
 Kroonen cites the numeral under a broader stem-style reconstruction rather than
 under one Old English-ready paradigm cell [@Kroonen2013, 586]. The input
-_\*θréjez_ is therefore best understood as the inherited masculine
+[_\*θréjez_]{.iv lang=pgmc sort=threjez role=selected_input} is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
 That distinction matters because the Old English numeral does not have one
@@ -4934,9 +4934,9 @@ the masculine form.
 
 #### Old English evidence
 
-Campbell gives masculine nominative-accusative _þrīe_, feminine and neuter
-nominative-accusative _þrēo_, genitive _þrēora_, and dative
-_þrim_, adding that late West Saxon has _þry_, _þri_ for _þrīe_
+Campbell gives masculine nominative-accusative [_þrīe_]{.iv lang=oe sort=thrie role=target_form}, feminine and neuter
+nominative-accusative [_þrēo_]{.iv lang=oe sort=threo role=comparison_form}, genitive [_þrēora_]{.iv lang=oe sort=threora role=comparison_form}, and dative
+[_þrim_]{.iv lang=oe sort=thrim role=comparison_form}, adding that late West Saxon has _þry_, _þri_ for [_þrīe_]{.iv lang=oe sort=thrie role=target_form}
 [@Campbell1959, §683]. Fulk presents the same masculine _þrīe_ beside the
 wider numeral paradigm [@Fulk2018, §10.1].
 
@@ -4958,10 +4958,10 @@ the later reduced form and from the rest of the numeral paradigm.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _þrīe_ | attested masculine nom./acc.; regular output | Old English form here |
+| [_þrīe_]{.iv lang=oe sort=thrie role=target_form} | attested masculine nom./acc.; regular output | Old English form here |
 | _þrī_ / _þry_ | later reduced masculine variant | genuine OE variant, but not the conservative comparison form |
-| _þrēo_ | attested feminine-neuter nom./acc. | same numeral, different paradigm cell |
-| _þrēora_, _þrim_ | attested genitive and dative forms | confirm the wider paradigm, not the cell compared here |
+| [_þrēo_]{.iv lang=oe sort=threo role=comparison_form} | attested feminine-neuter nom./acc. | same numeral, different paradigm cell |
+| [_þrēora_]{.iv lang=oe sort=threora role=comparison_form}, [_þrim_]{.iv lang=oe sort=thrim role=comparison_form} | attested genitive and dative forms | confirm the wider paradigm, not the cell compared here |
 
 ### wasp — OE wæfs
 
@@ -5015,36 +5015,36 @@ Old English form: _wæfs_
 
 #### Reconstruction and comparative evidence
 
-The Proto-Germanic form _\*wábsaz_ reaches Old English without any special
+The Proto-Germanic form [_\*wábsaz_]{.iv lang=pgmc sort=wabsaz role=selected_input} reaches Old English without any special
 change of stem or paradigm cell. The question in this entry is instead which
 attested Old English member of the variant set should serve as the comparison
 form.
 
-Fulk presents the Old English forms together as _wæfs_ with variants _wæsp_ and
-_wæps_ [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
+Fulk presents the Old English forms together as [_wæfs_]{.iv lang=oe sort=waefs role=target_form} with variants [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form} and
+[_wæps_]{.iv lang=oe sort=waeps role=comparison_form} [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
 explicit by deriving later _wæps_ and late West Saxon _wasp_ from earlier
 _waefs_ / _wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 
 #### Old English evidence
 
-The earliest directly cited Old English form is _wæfs_, written _waefs_ in
+The earliest directly cited Old English form is [_wæfs_]{.iv lang=oe sort=waefs role=target_form}, written [_waefs_]{.iv lang=oe sort=waefs role=comparison_form} in
 the Épinal-Corpus material discussed by Bülbring and Brunner
 [@Bulbring1902, §484 Anm. 3; @SieversBrunner1965, §193]. Later Old English also
-shows _wæps_ and _wæsp_ / _wasp_, and dictionary practice often favors
-_wæps_ or later spellings as headwords [@ClarkHall1960, 341].
+shows [_wæps_]{.iv lang=oe sort=waeps role=comparison_form} and [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form} / [_wasp_]{.iv lang=oe sort=wasp role=comparison_form}, and dictionary practice often favors
+[_wæps_]{.iv lang=oe sort=waeps role=comparison_form} or later spellings as headwords [@ClarkHall1960, 341].
 
 This entry therefore distinguishes chronological priority from headword habit.
-_wæfs_ is not a convenient reconstruction: it is an attested Old English form
+[_wæfs_]{.iv lang=oe sort=waefs role=target_form} is not a convenient reconstruction: it is an attested Old English form
 and also the one that matches the regular development most closely.
 
 #### Development to Old English
 
-From _\*wábsaz_, the regular Old English path passes through loss of final _z_,
+From [_\*wábsaz_]{.iv lang=pgmc sort=wabsaz role=selected_input}, the regular Old English path passes through loss of final _z_,
 Anglo-Frisian fronting, and the allophonic development of _b_ to a fricative
-before _s_, yielding _wæfs_.
+before _s_, yielding [_wæfs_]{.iv lang=oe sort=waefs role=regular_output}.
 
-The later forms _wæps_ and _wæsp_ / _wasp_ belong to subsequent, lexically
+The later forms [_wæps_]{.iv lang=oe sort=waeps role=comparison_form} and [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form} / [_wasp_]{.iv lang=oe sort=wasp role=comparison_form} belong to subsequent, lexically
 restricted metatheses. They are genuine Old English forms, but they are later
 within the variant history.
 
@@ -5055,9 +5055,9 @@ form from the later metathesized doublets.
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _wæfs_ | earliest attested OE form; regular output | Old English form here |
-| _wæps_ | later attested metathesized variant | genuine OE doublet, but secondary |
-| _wæsp_ / _wasp_ | later West Saxon metathesized variant | genuine OE doublet, but not the form compared here |
+| [_wæfs_]{.iv lang=oe sort=waefs role=target_form} | earliest attested OE form; regular output | Old English form here |
+| [_wæps_]{.iv lang=oe sort=waeps role=comparison_form} | later attested metathesized variant | genuine OE doublet, but secondary |
+| [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form} / [_wasp_]{.iv lang=oe sort=wasp role=comparison_form} | later West Saxon metathesized variant | genuine OE doublet, but not the form compared here |
 
 \clearpage
 
@@ -7046,19 +7046,19 @@ Old English form: _sife_
 
 #### Reconstruction and comparative evidence
 
-Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. sife, and Campbell groups _sife_
+Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. sife, and Campbell groups [_sife_]{.iv lang=oe sort=sife role=target_form}
 with short neuter i-stems such as _spere_ [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
-_\*sib-iz_, but the derivational input is the normalized i-stem form _\*síbi_.
+_\*sib-iz_, but the derivational input is the normalized i-stem form [_\*síbi_]{.iv lang=pgmc sort=sibi role=selected_input}.
 
 Kroonen's nearby _\*sebjō-_ entry belongs to the separate kinship lexeme that
-yields Old English _sibb_, not to the sieve word. Orel's _\*sibaz_ ... OE _sife_
+yields Old English [_sibb_]{.iv lang=oe sort=sibb role=comparison_form}, not to the sieve word. Orel's [_\*sibaz_]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [_sife_]{.iv lang=oe sort=sife role=target_form}
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 
 #### Old English evidence
 
-Clark Hall gives _sibi (GL) ... = sife_ and also _sife n. ‘sieve’_
+Clark Hall gives [_sibi_]{.iv lang=oe sort=sibi role=comparison_form} (GL) ... = [_sife_]{.iv lang=oe sort=sife role=target_form} and also [_sife_]{.iv lang=oe sort=sife role=target_form} n. ‘sieve’
 [@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary _sibi_ and
 treats _sife_ as a short neuter i-stem [@Campbell1959, §§444, 609]. The
 normalized Old English target is therefore _sife_, while _sibi_ is an attested
@@ -7066,10 +7066,10 @@ earlier spelling rather than a separate lexeme.
 
 #### Development to Old English
 
-From _\*síbi_, the regular derivation gives _\*síβi_ > _\*síβe_ > _sife_. Medial _b_
+From [_\*síbi_]{.iv lang=pgmc sort=sibi role=selected_input}, the regular derivation gives _\*síβi_ > _\*síβe_ > [_sife_]{.iv lang=oe sort=sife role=regular_output}. Medial _b_
 is realized as a spirant and later written _f_, while the final unstressed _i_
 lowers to _e_. The older s-stem background _\*sib-iz_ explains the morphology,
-but the derivational input _\*síbi_ is the immediate pre-Old-English form.
+but the derivational input [_\*síbi_]{.iv lang=pgmc sort=sibi role=selected_input} is the immediate pre-Old-English form.
 
 #### Stem comparison
 
@@ -7078,9 +7078,9 @@ its rejected competitors.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| ja-stem kinship line | Kroonen _\*sebjō-_ / comparator _\*sibja_ | OE _sibb_ | sibb | separate lexeme, not the target treated here |
-| a-stem handbook line | *síbaz | expected _sif_ | sif | wrong ending for the attested noun |
-| selected i-stem line from older _\*sib-iz_ | *síbi | documented regular output: _sife_ | sife; early spelling _sibi_ | exact match between derivational input and Old English evidence |
+| ja-stem kinship line | Kroonen _\*sebjō-_ / comparator [_\*sibja_]{.iv lang=pgmc sort=sibja role=comparison_form} | OE [_sibb_]{.iv lang=oe sort=sibb role=comparison_form} | [_sibb_]{.iv lang=oe sort=sibb role=comparison_form} | separate lexeme, not the target treated here |
+| a-stem handbook line | [_\*síbaz_]{.iv lang=pgmc sort=sibaz role=source_protoform} | expected [_sif_]{.iv lang=oe sort=sif role=comparison_form} | [_sif_]{.iv lang=oe sort=sif role=comparison_form} | wrong ending for the attested noun |
+| selected i-stem line from older _\*sib-iz_ | [_\*síbi_]{.iv lang=pgmc sort=sibi role=selected_input} | documented regular output: [_sife_]{.iv lang=oe sort=sife role=regular_output} | [_sife_]{.iv lang=oe sort=sife role=target_form}; early spelling [_sibi_]{.iv lang=oe sort=sibi role=comparison_form} | exact match between derivational input and Old English evidence |
 
 ### spare — OE sparian
 
@@ -7407,18 +7407,18 @@ Old English form: _swanes_
 
 #### Reconstruction and comparative evidence
 
-The Germanic noun is ordinarily cited as the masculine a-stem _\*swanaz_
+The Germanic noun is ordinarily cited as the masculine a-stem [_\*swánaz_]{.iv lang=pgmc sort=swanaz role=source_protoform}
 [@Orel2003, 367]. The form followed here, _\*swánas_, is not a competing
-lexeme reconstruction. It is the genitive singular of the same paradigm.
+lexeme reconstruction. It is the genitive singular [_\*swánas_]{.iv lang=pgmc sort=swanas role=selected_input} of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains _\*swanaz_ > _swan_; the comparison form is the
-genitive singular _\*swánas_ > _swanes_.
+The citation form remains [_\*swánaz_]{.iv lang=pgmc sort=swanaz role=source_protoform} > [_swan_]{.iv lang=oe sort=swan role=comparison_form}; the comparison form is the
+genitive singular [_\*swánas_]{.iv lang=pgmc sort=swanas role=selected_input} > [_swanes_]{.iv lang=oe sort=swanes role=target_form}.
 
 #### Old English evidence
 
-Bright's glossary records the ordinary noun as _swan, m._ and also gives the
-exact inflected form _swanes_, citing the phrase _swanes feðre_
+Bright's glossary records the ordinary noun as [_swan_]{.iv lang=oe sort=swan role=comparison_form}, m. and also gives the
+exact inflected form [_swanes_]{.iv lang=oe sort=swanes role=target_form}, citing the phrase _swanes feðre_
 [@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a
@@ -7439,8 +7439,8 @@ selected inflected cell.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *swánaz | OE headword _swan_ | swan | ordinary lexeme line |
-| genitive singular | *swánas | regular output: _swanes_ | swanes | attested cell |
+| citation nominative singular | [_\*swánaz_]{.iv lang=pgmc sort=swanaz role=source_protoform} | OE headword [_swan_]{.iv lang=oe sort=swan role=comparison_form} | [_swan_]{.iv lang=oe sort=swan role=comparison_form} | ordinary lexeme line |
+| genitive singular | [_\*swánas_]{.iv lang=pgmc sort=swanas role=selected_input} | regular output: [_swanes_]{.iv lang=oe sort=swanes role=regular_output} | [_swanes_]{.iv lang=oe sort=swanes role=target_form} | attested cell |
 
 ### thousand — OE þūsend
 
@@ -7492,14 +7492,14 @@ Old English form: _þūsend_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the Germanic numeral as _\*þūsundī-_ and cites Old
-English _þūsend_ among its continuations [@Kroonen2013, 554]. The
-derivational input _\*θūs-èndi_ is not the same claim. It is an OE-oriented
+Kroonen reconstructs the Germanic numeral as [_\*þūsundī-_]{.iv lang=pgmc sort=thusundi role=source_protoform} and cites Old
+English [_þūsend_]{.iv lang=oe sort=thusend role=target_form} among its continuations [@Kroonen2013, 554]. The
+derivational input [_\*θūs-èndi_]{.iv lang=pgmc sort=thusendi role=selected_input} is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to _e_ and the final
 high vowel already shortened for apocope.
 
 The important question is therefore chronological. Why does Old English show
-_þūsend_, while related languages such as Old Saxon and Old High German keep
+[_þūsend_]{.iv lang=oe sort=thusend role=target_form}, while related languages such as Old Saxon and Old High German keep
 _u_ in the second syllable? [@Kroonen2013, 554].
 
 #### Old English evidence
@@ -7512,20 +7512,20 @@ in its lexical status.
 #### Development to Old English
 
 If the old final _-ī_ had remained long enough to trigger ordinary double
-umlaut, Campbell's rule would point toward a form of _\*þȳsend_ type rather
-than attested _þūsend_ [@Campbell1959, §203]. Preserved root _ū_
+umlaut, Campbell's rule would point toward a form of [_\*þȳsend_]{.iv lang=oe sort=thysend role=comparison_form} type rather
+than attested [_þūsend_]{.iv lang=oe sort=thusend role=target_form} [@Campbell1959, §203]. Preserved root _ū_
 therefore argues that the umlaut-triggering vowel was lost or neutralized before
 the ordinary OE umlaut outcome could develop.
 
 That early loss, however, does not by itself explain the medial _e_. Luick
-compares the word with _ærende_ and later groups _thousand_ with forms
+compares the word with [_ærende_]{.iv lang=oe sort=aerende role=comparison_form} and later groups _thousand_ with forms
 reshaped on that pattern [@Luick1914, §§198, 492]. Viredaz is more cautious,
 arguing that Old English _e_ in this weak position may simply write schwa and so
 need not prove a unique _ærende_-type analogy [@GermanicSlavicBaltic2025,
 §2.1.4].
 
-The selected transponent _\*θūs-èndi_ captures the OE-side state from which
-the regular derivation reaches _þūsend_.
+The selected transponent [_\*θūs-èndi_]{.iv lang=pgmc sort=thusendi role=selected_input} captures the OE-side state from which
+the regular derivation reaches [_þūsend_]{.iv lang=oe sort=thusend role=regular_output}.
 
 #### Stage comparison
 
@@ -7534,9 +7534,9 @@ interpretive account of the second-syllable vowel.
 
 | Stage / interpretation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| surviving _-ī_ with ordinary double umlaut | _\*þūsundī-_ treated as still umlaut-active in OE | would point toward _\*þȳsend_ | excluded by preserved _ū_ |
+| surviving _-ī_ with ordinary double umlaut | [_\*þūsundī-_]{.iv lang=pgmc sort=thusundi role=source_protoform} treated as still umlaut-active in OE | would point toward [_\*þȳsend_]{.iv lang=oe sort=thysend role=comparison_form} | excluded by preserved _ū_ |
 | early loss of the trigger without further reshaping | _\*þūsund-_ type | explains _ū_, but not why OE alone has medial _e_ | incomplete account |
-| selected OE-oriented transponent | _\*θūs-èndi_ | regular output: _þūsend_ | selected modeling input |
+| selected OE-oriented transponent | [_\*θūs-èndi_]{.iv lang=pgmc sort=thusendi role=selected_input} | regular output: [_þūsend_]{.iv lang=oe sort=thusend role=regular_output} | selected modeling input |
 
 ### timber — OE timber
 
@@ -7587,10 +7587,10 @@ Old English form: _timber_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as _\*timbra-_ and cites Old English
-_timber_ among its continuations [@Kroonen2013, 517]. Ringe and Taylor
+Kroonen reconstructs the noun as [_\*timbra-_]{.iv lang=pgmc sort=timbra role=source_protoform} and cites Old English
+[_timber_]{.iv lang=oe sort=timber role=target_form} among its continuations [@Kroonen2013, 517]. Ringe and Taylor
 instead state the history from PGmc _\*timra_ through West Germanic
-_\*timbr_ to Old English _timber_ [@RingeTaylor2014, 327].
+[_\*timbr_]{.iv lang=preoe sort=timbr role=comparison_form} to Old English [_timber_]{.iv lang=oe sort=timber role=target_form} [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial _b_ belongs in the comparative citation form or appears in an
@@ -7598,7 +7598,7 @@ early pre-Old-English stage of the cluster.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the noun as _timber_ and also records _timbor_ as
+Clark Hall lemmatizes the noun as [_timber_]{.iv lang=oe sort=timber role=target_form} and also records [_timbor_]{.iv lang=oe sort=timbor role=comparison_form} as
 a variant spelling [@ClarkHall1960, 294]. The Old English form is thus an ordinary
 citation noun, not a selected oblique cell or a reconstructed convenience form.
 
@@ -7618,9 +7618,9 @@ OE-facing consonantal input.
 
 | Formation or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| Kroonen's comparative citation | _\*timbra-_ | already matches the consonantal frame of OE _timber_ | closest comparative support for the derivational input |
-| Ringe-Taylor citation line | _\*timra_ > _\*timbr_ | reaches the same OE noun through early cluster expansion | compatible comparative background |
-| modeled input | _\*tímbrą_ | regular output: _timber_ | Old English-facing input |
+| Kroonen's comparative citation | [_\*timbra-_]{.iv lang=pgmc sort=timbra role=source_protoform} | already matches the consonantal frame of OE [_timber_]{.iv lang=oe sort=timber role=target_form} | closest comparative support for the derivational input |
+| Ringe-Taylor citation line | [_\*timra_]{.iv lang=pgmc sort=timra role=source_protoform} > [_\*timbr_]{.iv lang=preoe sort=timbr role=comparison_form} | reaches the same OE noun through early cluster expansion | compatible comparative background |
+| modeled input | [_\*tímbrą_]{.iv lang=pgmc sort=timbra role=selected_input} | regular output: [_timber_]{.iv lang=oe sort=timber role=regular_output} | Old English-facing input |
 
 ### wake — OE wacan
 
@@ -7675,29 +7675,29 @@ Old English form: _wacan_
 #### Reconstruction and comparative evidence
 
 Kroonen gives the strong verb as _\*wakan-_ with Old English
-_wacan_ [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
-_wacian_ from weak _\*wakai-_ ~ _\*wakja-_ [@RingeTaylor2014, §3.3.2].
+[_wacan_]{.iv lang=oe sort=wacan role=target_form} [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
+[_wacian_]{.iv lang=oe sort=wacian role=comparison_form} from weak _\*wakai-_ ~ _\*wakja-_ [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong
-_wacan_ 'wake up, arise' and weak _wacian_ 'be awake, watch' belong to
+[_wacan_]{.iv lang=oe sort=wacan role=target_form} 'wake up, arise' and weak [_wacian_]{.iv lang=oe sort=wacian role=comparison_form} 'be awake, watch' belong to
 related but distinct histories.
 
 #### Old English evidence
 
-Clark Hall keeps _wacan_ and _wacian_ as separate headwords
+Clark Hall keeps [_wacan_]{.iv lang=oe sort=wacan role=target_form} and [_wacian_]{.iv lang=oe sort=wacian role=comparison_form} as separate headwords
 [@ClarkHall1960, 338]. Bosworth-Toller adds an important caution under
-_wacan_: the simplex infinitive itself does not occur, its place seeming to
-be taken by _wæcnan_ [@BosworthToller1898, 226].
+[_wacan_]{.iv lang=oe sort=wacan role=target_form}: the simplex infinitive itself does not occur, its place seeming to
+be taken by [_wæcnan_]{.iv lang=oe sort=waecnan role=comparison_form} [@BosworthToller1898, 226].
 
-The target _wacan_ is therefore best understood as a normalized strong
+The target [_wacan_]{.iv lang=oe sort=wacan role=target_form} is therefore best understood as a normalized strong
 headword for the verb family, not as a directly quoted simplex infinitive. It
 still remains the correct Old English comparison form for the strong branch.
 
 #### Development to Old English
 
-With strong _\*wákaną_, Anglo-Frisian brightening first gives a form of the
+With strong [_\*wákaną_]{.iv lang=pgmc sort=wakana role=selected_input}, Anglo-Frisian brightening first gives a form of the
 _\*wækaną_ type. A-restoration then returns _a_, and the ordinary tail
-reductions yield _wacan_. The weak verb _wacian_ belongs to a different
+reductions yield [_wacan_]{.iv lang=oe sort=wacan role=regular_output}. The weak verb [_wacian_]{.iv lang=oe sort=wacian role=comparison_form} belongs to a different
 prehistory and is not the expected outcome of this input.
 
 #### Class comparison
@@ -7706,9 +7706,9 @@ The comparison below sets the relevant forms side by side. It separates the stro
 
 | Formation / class | Candidate input | OE outcome or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| weak class-III / class-II branch | _\*wakēną_, _\*wakai-_ ~ _\*wakja-_ | OE _wacian_ and related weak forms | related lexeme, but not the target of this entry |
-| strong class-VI branch | _\*wákaną_ | regular output: _wacan_ | Old English-facing input |
-| strong normalized headword | _wacan_ | dictionary comparison form beside attested strong-family forms | correct Old English comparator, though not a directly quoted simplex infinitive |
+| weak class-III / class-II branch | [_\*wakēną_]{.iv lang=pgmc sort=wakena role=comparison_form}, _\*wakai-_ ~ _\*wakja-_ | OE [_wacian_]{.iv lang=oe sort=wacian role=comparison_form} and related weak forms | related lexeme, but not the target of this entry |
+| strong class-VI branch | [_\*wákaną_]{.iv lang=pgmc sort=wakana role=selected_input} | regular output: [_wacan_]{.iv lang=oe sort=wacan role=regular_output} | Old English-facing input |
+| strong normalized headword | [_wacan_]{.iv lang=oe sort=wacan role=target_form} | dictionary comparison form beside attested strong-family forms | correct Old English comparator, though not a directly quoted simplex infinitive |
 
 ### water — OE wæter
 
@@ -7767,12 +7767,12 @@ the Proto-Germanic material points to _\*watōr_, _\*watenaz_
 _\*wator_ before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular
-form that actually corresponds to Old English _wæter_. The relevant
-comparator is the inherited nominative-accusative singular _\*wátōr_.
+form that actually corresponds to Old English [_wæter_]{.iv lang=oe sort=waeter role=target_form}. The relevant
+comparator is the inherited nominative-accusative singular [_\*wátōr_]{.iv lang=pgmc sort=wator role=selected_input}.
 
 #### Old English evidence
 
-Bright gives the noun as _wæter_ with the regular paradigm
+Bright gives the noun as [_wæter_]{.iv lang=oe sort=waeter role=target_form} with the regular paradigm
 _wæteres_, _wætere_, _wæter(u)_, _wætera_, _wæterum_
 [@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast
 between West Saxon _weeter_ and Mercian _weter_
@@ -7784,9 +7784,9 @@ Old English attestation.
 
 #### Development to Old English
 
-From _\*wátōr_, pre-final _\*ō_ becomes _a_ before final _r_,
+From [_\*wátōr_]{.iv lang=pgmc sort=wator role=selected_input}, pre-final _\*ō_ becomes _a_ before final _r_,
 yielding _\*watar_ [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then
-gives _\*wætær_, and merger of unstressed _æ_/_e_ yields _wæter_.
+gives _\*wætær_, and merger of unstressed _æ_/_e_ yields [_wæter_]{.iv lang=oe sort=waeter role=regular_output}.
 
 #### Stage comparison
 
@@ -7795,9 +7795,9 @@ the singular input that matches the Old English citation form.
 
 | Stage or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| generalized comparative label | _\*wátną_ | broader lexeme shorthand, not the singular that corresponds directly to _wæter_ | useful background only |
+| generalized comparative label | [_\*wátną_]{.iv lang=pgmc sort=watna role=source_protoform} | broader lexeme shorthand, not the singular that corresponds directly to [_wæter_]{.iv lang=oe sort=waeter role=target_form} | useful background only |
 | heteroclitic stem notation | _\*watar-_ ~ _\*watan-_ | source-faithful comparative reconstruction | explains why a singular comparator is needed |
-| inherited singular input | _\*wátōr_ | regular output: _wæter_ | Old English-facing input |
+| inherited singular input | [_\*wátōr_]{.iv lang=pgmc sort=wator role=selected_input} | regular output: [_wæter_]{.iv lang=oe sort=waeter role=regular_output} | Old English-facing input |
 
 ### whale — OE hwæl
 
@@ -8043,28 +8043,28 @@ suffix of _wīþiġ_.
 For Old English, the relevant point is the suffix history. Campbell's account
 of OE _-ig_, including forms such as _hunig_, supports an analysis in which the
 _-iġ_ of _wīþiġ_ continues a derivational _\*-ag-_ sequence rather than a heavy
-ja-stem _\*-ij-_ [@Campbell1959, §§275, 376]. The form followed here, _\*wī́θagą_, is
+ja-stem _\*-ij-_ [@Campbell1959, §§275, 376]. The derivational input [_\*wī́θagą_]{.iv lang=pgmc sort=withaga role=selected_input} is
 thus a formation choice rather than a mere respelling of the comparative
 headword.
 
 #### Old English evidence
 
-Clark Hall records the noun as _wiðig_ [@ClarkHall1960, 358]. The form used here,
-_wīþiġ_, is a normalized Old English spelling with macrons and palatal ġ marked
+Clark Hall records the noun as [_wiðig_]{.iv lang=oe sort=withig role=comparison_form} [@ClarkHall1960, 358]. The form used here,
+[_wīþiġ_]{.iv lang=oe sort=withig role=target_form}, is a normalized Old English spelling with macrons and palatal ġ marked
 explicitly.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
-why the selected Proto-Germanic input is _\*wī́θagą_ rather than a comparative
+why the selected Proto-Germanic input is [_\*wī́θagą_]{.iv lang=pgmc sort=withaga role=selected_input} rather than a comparative
 headword of the _\*wīþja-_ type.
 
 #### Development to Old English
 
-From _\*wī́θagą_, Anglo-Frisian brightening gives a fronted vowel in the suffixal
+From [_\*wī́θagą_]{.iv lang=pgmc sort=withaga role=selected_input}, Anglo-Frisian brightening gives a fronted vowel in the suffixal
 syllable, and, on the Campbell analysis adopted here, the later Old English
 development of _\*-ag-_ yields _-iġ_ [@Campbell1959, §§275, 376].
 Palatalization supplies the final _ġ_, and the full development reaches
-_wīþiġ_.
+[_wīþiġ_]{.iv lang=oe sort=withig role=regular_output}.
 
 This derivation is regular for the form compared here. The central claim of the
 entry is therefore morphological: Old English _wīþiġ_ belongs with an
@@ -8078,9 +8078,9 @@ the Old English-facing formation that actually yields the attested noun.
 
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative family label | *wáiθiz | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of _wīþiġ_ |
-| heavy ja-stem analysis | _\*wīþja-_ type | Campbell/Adamczyk-style heavy ja-stem _-e_ / zero outcome | _wīþiġ_ | does not account cleanly for the OE suffix |
-| _\*-ag-_ derivative followed here | *wī́θagą | regular output: _wīþiġ_ | wīþiġ | exact match between formation and target |
+| comparative family label | [_\*wáiθiz_]{.iv lang=pgmc sort=waithiz role=source_protoform} | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of _wīþiġ_ |
+| heavy ja-stem analysis | _\*wīþja-_ type | Campbell/Adamczyk-style heavy ja-stem _-e_ / zero outcome | [_wīþiġ_]{.iv lang=oe sort=withig role=target_form} | does not account cleanly for the OE suffix |
+| _\*-ag-_ derivative followed here | [_\*wī́θagą_]{.iv lang=pgmc sort=withaga role=selected_input} | regular output: [_wīþiġ_]{.iv lang=oe sort=withig role=regular_output} | [_wīþiġ_]{.iv lang=oe sort=withig role=target_form} | exact match between formation and target |
 
 ### world — OE weorold
 
@@ -8242,9 +8242,9 @@ Old English form: _ġeoguþ_
 #### Reconstruction and comparative evidence
 
 The wider etymological tradition reconstructs an earlier form of the word as
-_\*ju(w)unþi-_ [@Kroonen2013, 316]. The comparative label
-_\*júgunθiz_ already stands at a later Germanic stage with _g_, and the
-derivational input _\*júgunθ_ is later again: it represents the form after final
+[_\*ju(w)unþi-_]{.iv lang=pgmc sort=juwunthi role=source_protoform} [@Kroonen2013, 316]. The comparative label
+[_\*júgunθiz_]{.iv lang=pgmc sort=jugunthiz role=source_protoform} already stands at a later Germanic stage with _g_, and the
+derivational input [_\*júgunθ_]{.iv lang=pgmc sort=jugunth role=selected_input} is later again: it represents the form after final
 _-i_ has been lost.
 
 That staging matters because Ringe and Taylor explicitly give the sequence
@@ -8255,12 +8255,12 @@ because the Old English development must begin after early loss of final _-i_.
 #### Old English evidence
 
 The Old English noun is attested with varying spellings. Ringe and Taylor cite
-_geoguþ_ ~ _iuguþ_ [@RingeTaylor2014, 141]. The form is normalized here as
-_ġeoguþ_: the initial palatal is written with _ġ_, and the attested spelling
+[_geoguþ_]{.iv lang=oe sort=geoguth role=target_form} ~ [_iuguþ_]{.iv lang=oe sort=iuguth role=comparison_form} [@RingeTaylor2014, 141]. The form is normalized here as
+[_ġeoguþ_]{.iv lang=oe sort=geoguth role=target_form}: the initial palatal is written with _ġ_, and the attested spelling
 variation is treated as orthographic rather than lexical.
 
 Nothing in the source stack suggests that a different paradigm cell should be
-chosen. The relevant Old English comparison form is the noun _ġeoguþ_ itself.
+chosen. The relevant Old English comparison form is the noun [_ġeoguþ_]{.iv lang=oe sort=geoguth role=target_form} itself.
 
 #### Development to Old English
 
@@ -8268,11 +8268,11 @@ The decisive early step is the loss of final _-i_ before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 _y_-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From _\*júgunθ_, the later development is regular: palatal
+From the derivational input [_\*júgunθ_]{.iv lang=pgmc sort=jugunth role=selected_input}, the later development is regular: palatal
 fronting yields _\*jéugunθ_; nasal-spirant lengthening and loss give
 _\*jéogūθ_ [@Fulk2018, 109]; unstressed long-vowel shortening then produces
-_\*jéoguθ_, which surfaces as _ġeoguþ_. Campbell preserves _u_ after accented _u_ in forms such
-as _duguþ_ and _munuc_ [@Campbell1959, §374]. Brunner likewise cites _iuzuð_
+_\*jéoguθ_, which surfaces as [_ġeoguþ_]{.iv lang=oe sort=geoguth role=regular_output}. Campbell preserves _u_ after accented _u_ in forms such
+as [_duguþ_]{.iv lang=oe sort=duguth role=comparison_form} and [_munuc_]{.iv lang=oe sort=munuc role=comparison_form} [@Campbell1959, §374]. Brunner likewise cites _iuzuð_
 _Jugend_ and _munuc_ _Mönch_ in the same environment
 [@SieversBrunner1965, §150.3].
 
@@ -8283,10 +8283,10 @@ from the later stages relevant to the Old English noun.
 
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| earlier etymological headword | _\*ju(w)unþi-_ | comparative family background | older comparative reconstruction of the lexeme |
-| later g-bearing comparative label | _\*júgunθiz_ | citation reconstruction / lexeme label | preserves the later Germanic stage behind the selected entry |
-| Old English-facing input | _\*júgunθ_ | regular output: _ġeoguþ_ | exact match for the Old English form used here |
-| full _-i_ stage retained too long | _\*jugunþi_ | expected over-umlauted _y_-type result | negative control showing why early _-i_ loss must precede the OE umlaut stage |
+| earlier etymological headword | [_\*ju(w)unþi-_]{.iv lang=pgmc sort=juwunthi role=source_protoform} | comparative family background | older comparative reconstruction of the lexeme |
+| later g-bearing comparative label | [_\*júgunθiz_]{.iv lang=pgmc sort=jugunthiz role=source_protoform} | citation reconstruction / lexeme label | preserves the later Germanic stage behind the selected entry |
+| Old English-facing input | [_\*júgunθ_]{.iv lang=pgmc sort=jugunth role=selected_input} | regular output: [_ġeoguþ_]{.iv lang=oe sort=geoguth role=regular_output} | exact match for the Old English form used here |
+| full _-i_ stage retained too long | [_\*jugunþi_]{.iv lang=pgmc sort=jugunthi role=comparison_form} | expected over-umlauted _y_-type result | negative control showing why early _-i_ loss must precede the OE umlaut stage |
 
 \clearpage
 
@@ -9761,17 +9761,17 @@ Old English form: _sċēaf_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the strong verb as _\*skeuban-_ ~ _\*skūban-_ and cites Old
-English present forms _scēofan_, _scūfan_ [@Kroonen2013, 444]. Those
+English present forms [_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form}, [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form} [@Kroonen2013, 444]. Those
 present-system forms belong to the same verb family, but the comparison here
-uses the singular preterite _\*skáub_, not the infinitive.
+uses the singular preterite [_\*skáub_]{.iv lang=pgmc sort=skaub role=selected_input}, not the infinitive.
 
 #### Old English evidence
 
-The ordinary dictionary verb is _scūfan_/_scēofan_, but the preterite itself is
-well attested. Bright gives the principal parts _scufan, sceaf, scufon, scofen_
+The ordinary dictionary verb is [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form}/[_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form}, but the preterite itself is
+well attested. Bright gives the principal parts [_scufan_]{.iv lang=oe sort=scufan role=comparison_form}, [_sceaf_]{.iv lang=oe sort=sceaf role=comparison_form}, [_scufon_]{.iv lang=oe sort=scufon role=comparison_form}, [_scofen_]{.iv lang=oe sort=scofen role=comparison_form}
 [@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
-The normalized form here is _sċēaf_,
-regularizing the attested spellings _sceaf_ and prefixed _āsceaf_.
+The normalized form here is [_sċēaf_]{.iv lang=oe sort=sceaf role=target_form},
+regularizing the attested spellings [_sceaf_]{.iv lang=oe sort=sceaf role=comparison_form} and prefixed [_āsceaf_]{.iv lang=oe sort=asceaf role=comparison_form}.
 
 #### Development to Old English
 
@@ -9788,10 +9788,10 @@ below is manual.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *skéubaną | inherited infinitive line _sċēofan_; present system also leveled _scūfan_ | scēofan / scūfan | necessary background, but not the comparison used for _sċēaf_ |
-| 1/3 sg. preterite | *skáub | documented regular output: _sċēaf_ | sċēaf | direct match for the singular preterite |
-| preterite plural | *skúbun | later leveled plural _scufon_ beside expected _sċufun_ under the corrected cascade | scufon | poorer comparison for the singular-preterite target |
-| past participle | *skúbanaz | attested participial line _scofen_ | scofen | valid alternative cell, but not the form compared here |
+| citation infinitive | [_\*skéubaną_]{.iv lang=pgmc sort=skeubana role=source_protoform} | inherited infinitive line [_sċēofan_]{.iv lang=oe sort=sceofan role=comparison_form}; present system also leveled [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form} | [_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form} / [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form} | necessary background, but not the comparison used for _sċēaf_ |
+| 1/3 sg. preterite | [_\*skáub_]{.iv lang=pgmc sort=skaub role=selected_input} | documented regular output: [_sċēaf_]{.iv lang=oe sort=sceaf role=regular_output} | [_sċēaf_]{.iv lang=oe sort=sceaf role=target_form} | direct match for the singular preterite |
+| preterite plural | [_\*skúbun_]{.iv lang=pgmc sort=skubun role=comparison_form} | later leveled plural [_scufon_]{.iv lang=oe sort=scufon role=comparison_form} beside expected [_sċufun_]{.iv lang=oe sort=scufun role=comparison_form} under the corrected cascade | [_scufon_]{.iv lang=oe sort=scufon role=comparison_form} | poorer comparison for the singular-preterite target |
+| past participle | [_\*skúbanaz_]{.iv lang=pgmc sort=skubanaz role=comparison_form} | attested participial line [_scofen_]{.iv lang=oe sort=scofen role=comparison_form} | [_scofen_]{.iv lang=oe sort=scofen role=comparison_form} | valid alternative cell, but not the form compared here |
 
 ### span — OE spanne
 
@@ -9843,23 +9843,23 @@ Old English form: _spanne_
 
 #### Reconstruction and comparative evidence
 
-Seebold gives Old English _spann_ under this noun family [@Seebold1970, 450].
-The form followed here, _\*spánnai_, is therefore not a rival headword, but the
+Seebold gives Old English [_spann_]{.iv lang=oe sort=spann role=comparison_form} under this noun family [@Seebold1970, 450].
+The form followed here, [_\*spánnai_]{.iv lang=pgmc sort=spannai role=selected_input}, is therefore not a rival headword, but the
 specific dative singular form compared on the model of the feminine ō-stem
 paradigm [@SieversBrunner1965, §252; @SieversBrunner1965, §255.2].
 
 #### Old English evidence
 
 The reviewed lexicographic evidence more directly supports the citation noun
-_spann_ than the exact form _spanne_. Clark Hall gives _spann_
-[@ClarkHall1960, 286], and _spanne_ is accordingly treated as the regular
+[_spann_]{.iv lang=oe sort=spann role=comparison_form} than the exact form [_spanne_]{.iv lang=oe sort=spanne role=target_form}. Clark Hall gives [_spann_]{.iv lang=oe sort=spann role=comparison_form}
+[@ClarkHall1960, 286], and [_spanne_]{.iv lang=oe sort=spanne role=target_form} is accordingly treated as the regular
 dative singular form compared here rather than as a dictionary headword.
 
 #### Development to Old English
 
-Citation _\*spannō_ yields _span_. The oblique cell _\*spánnai_ therefore
+Citation [_\*spannō_]{.iv lang=pgmc sort=spanno role=source_protoform} yields [_span_]{.iv lang=oe sort=span role=regular_output}. The oblique cell [_\*spánnai_]{.iv lang=pgmc sort=spannai role=selected_input} therefore
 supplies the conservative comparison form: it preserves the medial geminate and
-yields _spanne_, while citation _\*spannō_ gives the nominative background form.
+yields [_spanne_]{.iv lang=oe sort=spanne role=target_form}, while citation [_\*spannō_]{.iv lang=pgmc sort=spanno role=source_protoform} gives the nominative background form.
 
 #### Paradigm comparison
 
@@ -9868,8 +9868,8 @@ compared here.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *spannō | regular output: _span_ | spann | useful citation-form background, but not the form compared here |
-| dative singular compared here | *spánnai | regular output: _spanne_ | spanne | exact match for that conservative form |
+| citation nominative singular | [_\*spannō_]{.iv lang=pgmc sort=spanno role=source_protoform} | regular output: [_span_]{.iv lang=oe sort=span role=regular_output} | [_spann_]{.iv lang=oe sort=spann role=comparison_form} | useful citation-form background, but not the form compared here |
+| dative singular compared here | [_\*spánnai_]{.iv lang=pgmc sort=spannai role=selected_input} | regular output: [_spanne_]{.iv lang=oe sort=spanne role=regular_output} | [_spanne_]{.iv lang=oe sort=spanne role=target_form} | exact match for that conservative form |
 
 ### thistle — OE þistles
 
@@ -9922,14 +9922,14 @@ Old English form: _þistles_
 #### Reconstruction and comparative evidence
 
 Orel prints _\*þe(x)stilaz_ for the lexeme [@Orel2003, 458]. The comparative
-label _\*θéstilaz_ therefore remains in view as the lexeme-level headword, while
-the derivational input _\*θístilas_ is a specific genitive singular cell.
+label [_\*θéstilaz_]{.iv lang=pgmc sort=thestilaz role=source_protoform} therefore remains in view as the lexeme-level headword, while
+the derivational input [_\*θístilas_]{.iv lang=pgmc sort=thistilas role=selected_input} is a specific genitive singular cell.
 
 #### Old English evidence
 
-The ordinary simplex headword tradition is broken _þistel_ / _ðistel_. Clark
-Hall gives _ðistel_ as the noun headword [@ClarkHall1960, 326]. The Old English form here
-here is the genitive singular _þistles_, which preserves the same stem in an
+The ordinary simplex headword tradition is broken [_þistel_]{.iv lang=oe sort=thistel role=comparison_form} / [_ðistel_]{.iv lang=oe sort=thistel role=comparison_form}. Clark
+Hall gives [_ðistel_]{.iv lang=oe sort=thistel role=comparison_form} as the noun headword [@ClarkHall1960, 326]. The Old English form here
+here is the genitive singular [_þistles_]{.iv lang=oe sort=thistles role=target_form}, which preserves the same stem in an
 oblique form where the cluster is medial.
 
 #### Development to Old English
@@ -9938,10 +9938,10 @@ Campbell's discussion of cluster nouns shows the contrast clearly. Simplex forms
 often develop a parasite vowel in word-final obstruent + sonorant clusters,
 while comparable medial clusters remain unbroken; his examples include _hrefn_,
 _tacn_, _wépn_, and _botm_ beside forms with parasitic vowels elsewhere in the
-same lexical class [@Campbell1959, 151]. The genitive singular _\*θístilas_
+same lexical class [@Campbell1959, 151]. The genitive singular [_\*θístilas_]{.iv lang=pgmc sort=thistilas role=selected_input}
 therefore supplies the conservative comparison form: the cluster is medial and
-the regular development yields _þistles_, while the simplex nominative belongs
-to the broken headword tradition _þistel_.
+the regular development yields [_þistles_]{.iv lang=oe sort=thistles role=regular_output}, while the simplex nominative belongs
+to the broken headword tradition [_þistel_]{.iv lang=oe sort=thistel role=comparison_form}.
 
 #### Paradigm comparison
 
@@ -9950,8 +9950,8 @@ and the genitive singular cell.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *θéstilaz | computed output: _þistl_ | þistel | useful citation-form background, but not the Old English form here |
-| genitive singular | *θístilas | computed output: _þistles_ | þistles | exact match for the conservative cell |
+| citation nominative singular | [_\*θéstilaz_]{.iv lang=pgmc sort=thestilaz role=source_protoform} | computed output: [_þistl_]{.iv lang=oe sort=thistl role=regular_output} | [_þistel_]{.iv lang=oe sort=thistel role=comparison_form} | useful citation-form background, but not the Old English form here |
+| genitive singular | [_\*θístilas_]{.iv lang=pgmc sort=thistilas role=selected_input} | computed output: [_þistles_]{.iv lang=oe sort=thistles role=regular_output} | [_þistles_]{.iv lang=oe sort=thistles role=target_form} | exact match for the conservative cell |
 
 ### make (iptv.2sg) — OE maca
 
@@ -10970,10 +10970,10 @@ Old English form: _\*strīeġan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the inherited weak verb as _\*straujan-_ and gives Old English
-_streowian_ as its dictionary continuation [@Kroonen2013, 483]. Ringe and
+Kroonen cites the inherited weak verb as [_\*straujan-_]{.iv lang=pgmc sort=straujan role=source_protoform} and gives Old English
+[_streowian_]{.iv lang=oe sort=streowian role=comparison_form} as its dictionary continuation [@Kroonen2013, 483]. Ringe and
 Taylor make the split within Old English explicit: the inherited class-I verb is
-continued by Anglian _strēgan_, while West Saxon _streowian_ is a
+continued by Anglian [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form}, while West Saxon [_streowian_]{.iv lang=oe sort=streowian role=comparison_form} is a
 remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].
 
 The aw-series comparison is important here. Luick groups _\*strauwjan_ with the
@@ -10989,7 +10989,7 @@ attested West Saxon citation forms are _strewian_, _streowian_, and
 _strēawian_, which belong to the remodelled class-II branch
 [@RingeTaylor2014, §6.1 n. 27; @Campbell1959, §753.7].
 
-The target _\*strīeġan_ is therefore a **reconstructed Old English form**, not
+The target [_\*strīeġan_]{.iv lang=oe sort=striegan role=target_form} is therefore a **reconstructed Old English form**, not
 an attested manuscript lemma. It is the reconstructed West Saxon reflex of the
 inherited class-I verb, chosen to keep the inherited branch distinct from the
 better-attested remodelled West Saxon lemma.
@@ -11013,9 +11013,9 @@ the attested remodelled branch, and the reconstructed West Saxon comparator.
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| _strēgan_ | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
-| _\*strīeġan_ | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
-| _strewian_ / _streowian_ / _strēawian_ | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
+| [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form} | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
+| [_\*strīeġan_]{.iv lang=oe sort=striegan role=target_form} | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
+| [_strewian_]{.iv lang=oe sort=strewian role=comparison_form} / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form} / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
 
 \clearpage
 
@@ -11174,33 +11174,33 @@ Old English form: _tæppa_
 #### Reconstruction and comparative evidence
 
 Orel gives the noun under _\*tappòn_ and already connects it with Old English
-_tæppa_ [@Orel2003, 402]. The derivational input is therefore the inherited noun itself;
+[_tæppa_]{.iv lang=oe sort=taeppa role=target_form} [@Orel2003, 402]. The derivational input [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input} is therefore the inherited noun itself;
 the entry does not depend on a different lexeme-level proto or a different
 inherited noun cell.
 
 #### Old English evidence
 
-The Old English noun family is well attested. Orel gives _tæppa_, and Clark
-Hall records _tæppa_ together with derivatives _tæppere_ and _tæppestre_
+The Old English noun family is well attested. Orel gives [_tæppa_]{.iv lang=oe sort=taeppa role=target_form}, and Clark
+Hall records [_tæppa_]{.iv lang=oe sort=taeppa role=target_form} together with derivatives _tæppere_ and _tæppestre_
 [@Orel2003, 402; @ClarkHall1960, 305]. The target is therefore a real Old English noun
 form, not a reconstructed convenience spelling.
 
 #### Development to Old English
 
-From _\*táppô_, the regular inherited noun path gives _tappa_. The attested
-target _tæppa_ therefore stands outside that regular phonological development.
+From [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input}, the regular inherited noun path gives [_tappa_]{.iv lang=oe sort=tappa role=regular_output}. The attested
+target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form} therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new
-inherited input. A related j-verb pathway would give _teppan_, not the noun
-target _tæppa_. The entry accordingly remains a known but unmodelled case.
+inherited input. A related j-verb pathway would give [_teppan_]{.iv lang=oe sort=teppan role=comparison_form}, not the noun
+target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form}. The entry accordingly remains a known but unmodelled case.
 
 #### Form comparison
 
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| regular inherited noun path | *táppô | regular output: _tappa_ | regular output, but not the target |
-| attested OE target | — | _tæppa_ | genuine target form, but analogically remodelled in the present classification |
-| related j-verb background | *táppjaną | _teppan_ | related formation, but not the noun target |
+| regular inherited noun path | [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input} | regular output: [_tappa_]{.iv lang=oe sort=tappa role=regular_output} | regular output, but not the target |
+| attested OE target | — | [_tæppa_]{.iv lang=oe sort=taeppa role=target_form} | genuine target form, but analogically remodelled in the present classification |
+| related j-verb background | [_\*táppjaną_]{.iv lang=pgmc sort=tappjana role=comparison_form} | [_teppan_]{.iv lang=oe sort=teppan role=comparison_form} | related formation, but not the noun target |
 
 \clearpage
 

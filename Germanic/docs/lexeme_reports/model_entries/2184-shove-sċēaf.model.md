@@ -19,17 +19,17 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the strong verb as `*skeuban- ~ *skūban-` and cites Old
-English present forms `scēofan, scūfan` [@Kroonen2013, 444]. Those
+English present forms [`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form}, [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} [@Kroonen2013, 444]. Those
 present-system forms belong to the same verb family, but the comparison here
-uses the singular preterite `*skáub`, not the infinitive.
+uses the singular preterite [`*skáub`]{.iv lang=pgmc sort=skaub role=selected_input}, not the infinitive.
 
 ### Old English evidence
 
-The ordinary dictionary verb is `scūfan/scēofan`, but the preterite itself is
-well attested. Bright gives the principal parts `scufan, sceaf, scufon, scofen`
+The ordinary dictionary verb is [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form}/[`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form}, but the preterite itself is
+well attested. Bright gives the principal parts [`scufan`]{.iv lang=oe sort=scufan role=comparison_form}, [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form}, [`scufon`]{.iv lang=oe sort=scufon role=comparison_form}, [`scofen`]{.iv lang=oe sort=scofen role=comparison_form}
 [@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
-The normalized form here is `sċēaf`,
-regularizing the attested spellings `sceaf` and prefixed `āsceaf`.
+The normalized form here is [`sċēaf`]{.iv lang=oe sort=sceaf role=target_form},
+regularizing the attested spellings [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} and prefixed [`āsceaf`]{.iv lang=oe sort=asceaf role=comparison_form}.
 
 ### Development to Old English
 
@@ -46,7 +46,7 @@ below is manual.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | *skéubaną | inherited infinitive line `sċēofan`; present system also leveled `scūfan` | scēofan / scūfan | necessary background, but not the selected comparison for `sċēaf` |
-| 1/3 sg. preterite | *skáub | documented trace output: `sċēaf` | sċēaf | direct match for the singular preterite |
-| preterite plural | *skúbun | later leveled plural `scufon` beside expected `sċufun` under the corrected cascade | scufon | poorer comparison for the singular-preterite target |
-| past participle | *skúbanaz | attested participial line `scofen` | scofen | valid alternative cell, but not the form compared here |
+| citation infinitive | [`*skéubaną`]{.iv lang=pgmc sort=skeubana role=source_protoform} | inherited infinitive line [`sċēofan`]{.iv lang=oe sort=sceofan role=comparison_form}; present system also leveled [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} | [`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form} / [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} | necessary background, but not the selected comparison for `sċēaf` |
+| 1/3 sg. preterite | [`*skáub`]{.iv lang=pgmc sort=skaub role=selected_input} | documented trace output: [`sċēaf`]{.iv lang=oe sort=sceaf role=regular_output} | [`sċēaf`]{.iv lang=oe sort=sceaf role=target_form} | direct match for the singular preterite |
+| preterite plural | [`*skúbun`]{.iv lang=pgmc sort=skubun role=comparison_form} | later leveled plural [`scufon`]{.iv lang=oe sort=scufon role=comparison_form} beside expected [`sċufun`]{.iv lang=oe sort=scufun role=comparison_form} under the corrected cascade | [`scufon`]{.iv lang=oe sort=scufon role=comparison_form} | poorer comparison for the singular-preterite target |
+| past participle | [`*skúbanaz`]{.iv lang=pgmc sort=skubanaz role=comparison_form} | attested participial line [`scofen`]{.iv lang=oe sort=scofen role=comparison_form} | [`scofen`]{.iv lang=oe sort=scofen role=comparison_form} | valid alternative cell, but not the form compared here |
