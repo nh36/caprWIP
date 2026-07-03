@@ -51,6 +51,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       tlmgr install fvextra >/dev/null
     )
     kpsewhich imakeidx.sty >/dev/null 2>&1 || tlmgr install imakeidx >/dev/null
+    kpsewhich morewrites.sty >/dev/null 2>&1 || tlmgr install morewrites >/dev/null
     kpsewhich xkeyval.sty >/dev/null 2>&1 || tlmgr install xkeyval >/dev/null
     pandoc ${intro_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \

@@ -1,11 +1,4 @@
 action	language	form	display	sort_key	source_scope	source_ref	note
-add	on	báðir	báðir	badir	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Norse comparison form.
-add	ofris	bēthe	bēthe	bethe	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Frisian comparison form.
-add	os	be-thia	be-thia	bethia	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Clearly labelled Old Saxon comparison form.
-add	ohg	bēde	bēde	bede	override	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	Clearly labelled Old High German comparison form.
-add	goth	brusts	brusts	brusts	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	Clearly labelled Gothic comparison form.
-add	on	brjóst	brjóst	brjost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Clearly labelled Old Norse comparison form.
-add	os	briost	briost	briost	override	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Clearly labelled Old Saxon comparison form.
 add	ohg	backan	backan	backan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
 add	ohg	bahhan	bahhan	bahhan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
 add	ofris	dore	dore	dore	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old Frisian comparison form.
@@ -37,7 +30,6 @@ ignore		development				Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu
 ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:40	Ordinary English prose false positive.
 ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:40	Ordinary English prose false positive.
 ignore		family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33	Ordinary English prose false positive.
-ignore		beide				Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31	Modern German comparison mentioned in English prose; outside current index scope.
 ignore		learn				Germanic/docs/assembly/capr_book_intro_alpha_01.md:83	English gloss in prose, not a historical-language form.
 ignore		field				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:287	English gloss in prose, not a historical-language form.
 ignore		*bækaną				Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29	Mechanical intermediate trace state in derivational prose, not a cited evidence form.

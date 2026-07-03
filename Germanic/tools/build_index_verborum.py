@@ -1092,28 +1092,28 @@ def write_audit(
         guess_groups[entry["category"]].append(entry)
     for group in guess_groups.values():
         group.sort(key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"]))
-
-    render_bucket("Likely Old English forms", guess_groups.get("likely_oe", []))
-    render_bucket("Likely Proto-Germanic forms", guess_groups.get("likely_pgmc", []))
-    render_bucket("Likely Proto-West Germanic forms", guess_groups.get("likely_pwgmc", []))
-    render_bucket("Likely Proto-Northwest Germanic forms", guess_groups.get("likely_nwgmc", []))
-    render_bucket("Likely pre-Old-English or model-internal forms", guess_groups.get("likely_preoe", []))
-    render_bucket("Likely Old Norse forms", guess_groups.get("likely_on", []))
-    render_bucket("Likely Old Saxon forms", guess_groups.get("likely_os", []))
-    render_bucket("Likely Old High German forms", guess_groups.get("likely_ohg", []))
-    render_bucket("Likely Old Frisian forms", guess_groups.get("likely_ofris", []))
-    render_bucket("Likely Gothic forms", guess_groups.get("likely_goth", []))
-    render_bucket("Likely Old Dutch forms", guess_groups.get("likely_odutch", []))
-    render_bucket("Likely Middle Dutch forms", guess_groups.get("likely_mdutch", []))
-    render_bucket("Likely Dutch forms", guess_groups.get("likely_dutch", []))
-    render_bucket("Likely German forms", guess_groups.get("likely_german", []))
-    render_bucket("Likely Latin forms", guess_groups.get("likely_lat", []))
-    render_bucket("Likely Greek forms", guess_groups.get("likely_greek", []))
-    render_bucket("Likely Sanskrit forms", guess_groups.get("likely_skt", []))
-    render_bucket("Likely Middle English forms", guess_groups.get("likely_me", []))
-    render_bucket("Likely Modern English linguistic forms", guess_groups.get("likely_modeng", []))
-    render_bucket("Likely Old Irish forms", guess_groups.get("likely_oirish", []))
-    render_bucket("Likely ordinary-language false positives", guess_groups.get("likely_false_positive", []))
+    likely_columns = ("form", "source_ref", "candidate_origin")
+    render_bucket("Likely Old English forms", guess_groups.get("likely_oe", []), columns=likely_columns)
+    render_bucket("Likely Proto-Germanic forms", guess_groups.get("likely_pgmc", []), columns=likely_columns)
+    render_bucket("Likely Proto-West Germanic forms", guess_groups.get("likely_pwgmc", []), columns=likely_columns)
+    render_bucket("Likely Proto-Northwest Germanic forms", guess_groups.get("likely_nwgmc", []), columns=likely_columns)
+    render_bucket("Likely pre-Old-English or model-internal forms", guess_groups.get("likely_preoe", []), columns=likely_columns)
+    render_bucket("Likely Old Norse forms", guess_groups.get("likely_on", []), columns=likely_columns)
+    render_bucket("Likely Old Saxon forms", guess_groups.get("likely_os", []), columns=likely_columns)
+    render_bucket("Likely Old High German forms", guess_groups.get("likely_ohg", []), columns=likely_columns)
+    render_bucket("Likely Old Frisian forms", guess_groups.get("likely_ofris", []), columns=likely_columns)
+    render_bucket("Likely Gothic forms", guess_groups.get("likely_goth", []), columns=likely_columns)
+    render_bucket("Likely Old Dutch forms", guess_groups.get("likely_odutch", []), columns=likely_columns)
+    render_bucket("Likely Middle Dutch forms", guess_groups.get("likely_mdutch", []), columns=likely_columns)
+    render_bucket("Likely Dutch forms", guess_groups.get("likely_dutch", []), columns=likely_columns)
+    render_bucket("Likely German forms", guess_groups.get("likely_german", []), columns=likely_columns)
+    render_bucket("Likely Latin forms", guess_groups.get("likely_lat", []), columns=likely_columns)
+    render_bucket("Likely Greek forms", guess_groups.get("likely_greek", []), columns=likely_columns)
+    render_bucket("Likely Sanskrit forms", guess_groups.get("likely_skt", []), columns=likely_columns)
+    render_bucket("Likely Middle English forms", guess_groups.get("likely_me", []), columns=likely_columns)
+    render_bucket("Likely Modern English linguistic forms", guess_groups.get("likely_modeng", []), columns=likely_columns)
+    render_bucket("Likely Old Irish forms", guess_groups.get("likely_oirish", []), columns=likely_columns)
+    render_bucket("Likely ordinary-language false positives", guess_groups.get("likely_false_positive", []), columns=likely_columns)
     render_bucket(
         "Table-scanned unresolved candidates",
         [entry for entry in needs_review_entries if entry.get("candidate_origin") == "table_candidate"],
@@ -1134,6 +1134,16 @@ def write_audit(
     render_bucket(
         "Unresolved forms by source file",
         [{"source_path": source, "count": count} for source, count in by_source.most_common(20)],
+        columns=("source_path", "count"),
+    )
+    table_by_source = Counter(
+        entry["source_path"]
+        for entry in needs_review_entries
+        if entry.get("candidate_origin") == "table_candidate"
+    )
+    render_bucket(
+        "Top unresolved table files",
+        [{"source_path": source, "count": count} for source, count in table_by_source.most_common(20)],
         columns=("source_path", "count"),
     )
     render_bucket("New unresolved candidates relative to baseline", new_entries, columns=("form", "source_ref", "category", "heading"))

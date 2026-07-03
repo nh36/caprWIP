@@ -51,8 +51,9 @@ def assert_production_rows() -> None:
     assert ("*θánkijaną", "pgmc", "lexical_protoform", "think — OE þenċan", "source_protoform") in keys
     rel = INTRO_PATH.relative_to(REPO_ROOT).as_posix() + ":"
     assert any(row.display == "sċuldrum" and row.language == "oe" and row.source_scope == "explicit_tag" and row.source_ref.startswith(rel) for row in rows)
-    assert ("báðir", "on", "override", "Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27", "comparison_form") in keys
+    assert ("báðir", "on", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27", "comparison_form") in keys
     assert ("skawōn", "os", "override", "Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22", "comparison_form") in keys
+    assert ("bocc", "oe", "explicit_tag", "Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md:38", "regular_output") in keys
     assert ("*cnobba", "oe", "lexical_heading", "knob — OE *cnobba", "target_form") in keys
     assert ("*rēac", "oe", "lexical_heading", "reek — OE *rēac", "target_form") in keys
     assert ("*strīeġan", "oe", "lexical_heading", "strew — OE *strīeġan", "target_form") in keys

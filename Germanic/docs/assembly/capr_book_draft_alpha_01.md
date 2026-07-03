@@ -3546,10 +3546,6 @@ West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving _\*bān
 
 \index[oe]{bu@bū}
 \index[pgmc]{bo@*bō}
-\index[on]{badir@báðir}
-\index[ohg]{bede@bēde}
-\index[ofris]{bethe@bēthe}
-\index[os]{bethia@be-thia}
 
 Derivation: _\*bō_ > _bū_ (regular).
 
@@ -3597,43 +3593,43 @@ Old English form: _bū_
 
 #### Reconstruction and comparative evidence
 
-Kroonen treats the Germanic numeral under _\*ba-_ and gives the inherited
-paradigm _\*bai_, _\*bans_, _\*bōz_/_\*bōns_, _\*bō_, with Old English [_bēġen_]{.iv lang=oe sort=begen}, _bā_, and
-neuter _bū_ [@Kroonen2013, 47]. For the present entry, the relevant inherited
-form is the unextended neuter dual _\*bō_.
+Kroonen treats the Germanic numeral under [_\*ba-_]{.iv lang=pgmc sort=ba role=source_protoform} and gives the inherited
+paradigm _\*bai_, _\*bans_, _\*bōz_/_\*bōns_, _\*bō_, with Old English [_bēġen_]{.iv lang=oe sort=begen role=comparison_form}, [_bā_]{.iv lang=oe sort=ba role=comparison_form}, and
+neuter [_bū_]{.iv lang=oe sort=bu role=target_form} [@Kroonen2013, 47]. For the present entry, the relevant inherited
+form is the unextended neuter dual [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input}.
 
-The older explanation of _bēġen_ derives it from _\*bō-jen-_, and Orel still
-gives OE _bezen_ (< _\*bō-jenō)_ beside ON _báðir_, OFris _bēthe_, _OS be-thia_,
-and OHG _bēde_, beide [@Orel2003, 65]. Fulk reports that explanation
+The older explanation of [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} derives it from [_\*bō-jen-_]{.iv lang=pgmc sort=bojen role=source_protoform}, and Orel still
+gives OE _bezen_ (< _\*bō-jenō)_ beside _ON_ [_báðir_]{.iv lang=on sort=badir role=comparison_form}, _OFris_ [_bēthe_]{.iv lang=ofris sort=bethe role=comparison_form}, _OS_ [_be-thia_]{.iv lang=os sort=bethia role=comparison_form},
+and _OHG_ [_bēde_]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a _\*bō-þ-_ analysis instead
-[@Fulk2018, §10.1]. That debate matters for _bēġen_ and for the extended forms
-behind Modern English _both_, German _beide_, and Dutch _beide_; it does not
-displace the inherited neuter _\*bō_ > _bū_ treated here.
+[@Fulk2018, §10.1]. That debate matters for [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} and for the extended forms
+behind Modern English [_both_]{.iv lang=modeng sort=both role=comparison_form}, German [_beide_]{.iv lang=german sort=beide role=comparison_form}, and Dutch [_beide_]{.iv lang=dutch sort=beide role=comparison_form}; it does not
+displace the inherited neuter [_\*bō_ > _bū_]{.iv lang=oe display=*bō > bū sort=bo role=selected_input} treated here.
 
 #### Old English evidence
 
 The Old English dual paradigm is well established. Brunner gives masculine
-[_bēġen_]{.iv lang=oe sort=begen}, feminine _bā_, and neuter _bū_ beside _bā_, with compounds such as
+[_bēġen_]{.iv lang=oe sort=begen role=comparison_form}, feminine [_bā_]{.iv lang=oe sort=ba role=comparison_form}, and neuter [_bū_]{.iv lang=oe sort=bu role=target_form} beside _bā_, with compounds such as
 _bā_ _twā_, _bū_ _tū_, and _bām_ _twām_ [@SieversBrunner1965, §324 Anm. 2].
-Campbell and Fulk present the same basic pattern: masculine [_bēġen_]{.iv lang=oe sort=begen}, feminine
-_bā_, neuter _bā_, _bū_, genitive _bēġra_, _bēġ(e)a_, and dative [_bǣm_]{.iv lang=oe sort=baem}
+Campbell and Fulk present the same basic pattern: masculine [_bēġen_]{.iv lang=oe sort=begen role=comparison_form}, feminine
+_bā_, neuter _bā_, _bū_, genitive _bēġra_, _bēġ(e)a_, and dative [_bǣm_]{.iv lang=oe sort=baem role=comparison_form}
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
-_bū_ is therefore an attested neuter dual form, not a reconstruction. It is the
-cleanest target for this entry because _bēġen_ belongs to the historically more
+[_bū_]{.iv lang=oe sort=bu role=target_form} is therefore an attested neuter dual form, not a reconstruction. It is the
+cleanest target for this entry because [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} belongs to the historically more
 contested _\*bō-jen-_ / analogical zone, while _bā_ remains a partner form
 within the dual paradigm rather than the most straightforward monosyllabic
 comparison.
 
 #### Development to Old English
 
-_\*bō_ is a stressed monosyllabic form. Campbell cites _cū_, _hū_, _tū_, and
-_bū_ as examples of final accented _ō_ > _ū_ in the West Germanic stage leading
+[_\*bō_]{.iv lang=pgmc sort=bo role=selected_input} is a stressed monosyllabic form. Campbell cites _cū_, _hū_, _tū_, and
+[_bū_]{.iv lang=oe sort=bu role=target_form} as examples of final accented _ō_ > _ū_ in the West Germanic stage leading
 to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: Auslautendes _ō_ erscheint als û in _bū_ ... cu ... _hū_, _tū_
 [@SieversBrunner1965, §69].
 
-The development is therefore straightforward: _\*bō_ > _bū_.
+The development is therefore straightforward: [_\*bō_ > _bū_]{.iv lang=oe display=*bō > bū sort=bo role=selected_input}.
 
 #### Form comparison
 
@@ -3642,10 +3638,10 @@ other forms that belong to the same broader lexical history.
 
 | Form | Source / stage | Status | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| _\*bō_ > _bū_ | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
-| _bēġen_ | OE masculine dual | attested, but historically contested and at least partly analogical in Kroonen | real OE evidence, not the Old English form here |
-| _bā_ | OE feminine dual; also neuter variant | attested partner form | part of the OE paradigm, but not the chosen monosyllabic comparator |
-| _báðir_, _beide_, _both_ | Norse, continental West Germanic, Modern English extended forms | related but different formation | useful background, not the direct continuation of OE _bū_ |
+| [_\*bō_ > _bū_]{.iv lang=oe display=*bō > bū sort=bo role=selected_input} | PGmc neuter dual > OE neuter dual | selected regular comparison | main line of the entry |
+| [_bēġen_]{.iv lang=oe sort=begen role=comparison_form} | OE masculine dual | attested, but historically contested and at least partly analogical in Kroonen | real OE evidence, not the Old English form here |
+| [_bā_]{.iv lang=oe sort=ba role=comparison_form} | OE feminine dual; also neuter variant | attested partner form | part of the OE paradigm, but not the chosen monosyllabic comparator |
+| [_báðir_]{.iv lang=on sort=badir role=comparison_form}, German [_beide_]{.iv lang=german sort=beide role=comparison_form}, Dutch [_beide_]{.iv lang=dutch sort=beide role=comparison_form}, Modern English [_both_]{.iv lang=modeng sort=both role=comparison_form} | Norse, continental West Germanic, Modern English extended forms | related but different formation | useful background, not the direct continuation of OE _bū_ |
 
 ### bow — OE bīeġan
 
@@ -8503,9 +8499,6 @@ though the citation lemma remains the nominative singular.
 \index[oe]{breost@brēost}
 \index[pgmc]{breusta@*bréustą}
 \index[pgmc]{brustz@*brústz}
-\index[on]{brjost@brjóst}
-\index[goth]{brusts@brusts}
-\index[os]{briost@briost}
 
 Derivation: citation reconstruction _\*brústz_; form followed here _\*bréustą_ > _brēost_ (early analogy).
 
@@ -8555,29 +8548,29 @@ Old English form: _brēost_
 #### Reconstruction and comparative evidence
 
 The word family shows two related but distinct Proto-Germanic formations. The
-root noun _\*brust-_ lies behind forms such as Gothic _brusts_, whereas Old
-English _brēost_ belongs to a thematic formation _\*breusta-_, alongside Old
-Norse _brjóst_ and Old Saxon _briost_ [@Kroonen2013, 114; @Orel2003, 95;
+root noun [_\*brust-_]{.iv lang=pgmc sort=brust role=source_protoform} lies behind forms such as Gothic [_brusts_]{.iv lang=goth sort=brusts role=comparison_form}, whereas Old
+English [_brēost_]{.iv lang=oe sort=breost role=target_form} belongs to a thematic formation [_\*breusta-_]{.iv lang=pgmc sort=breusta role=source_protoform}, alongside Old
+Norse [_brjóst_]{.iv lang=on sort=brjost role=comparison_form} and Old Saxon [_briost_]{.iv lang=os sort=briost role=comparison_form} [@Kroonen2013, 114; @Orel2003, 95;
 @RingeTaylor2014, 43].
 
-The form followed here, _\*bréustą_, therefore differs from the citation label
-_\*brústz_ because Old English reflects the thematic branch rather than the root
+The derivational input [_\*bréustą_]{.iv lang=pgmc sort=breusta role=selected_input} therefore differs from the citation label
+[_\*brústz_]{.iv lang=pgmc sort=brustz role=source_protoform} because Old English reflects the thematic branch rather than the root
 noun. The morphological choice comes before the Old English sound changes
 themselves.
 
 #### Old English evidence
 
-Clark Hall records the noun as _brēost_ / _breóst_
+Clark Hall records the noun as [_brēost_]{.iv lang=oe sort=breost role=target_form} / [_breóst_]{.iv lang=oe sort=breost role=comparison_form}
 [@ClarkHall1960, 65]. The form is an established Old English
 lexeme, not a reconstructed target assembled from comparative evidence alone.
 
 What requires explanation is not the Old English attestation but the relation
 between that attested noun and the broader Germanic word family. The relevant
-comparison form is therefore the thematic Old English noun _brēost_.
+comparison form is therefore the thematic Old English noun [_brēost_]{.iv lang=oe sort=breost role=target_form}.
 
 #### Development to Old English
 
-From _\*bréustą_, the regular Old English development gives _brēost_, with the
+From [_\*bréustą_]{.iv lang=pgmc sort=breusta role=selected_input}, the regular Old English development gives [_brēost_]{.iv lang=oe sort=breost role=target_form}, with the
 expected _eu_ > _ēo_ vowel history [@Campbell1959, §115]. No special repair is needed
 once the correct thematic formation is chosen.
 
@@ -8591,11 +8584,11 @@ from the thematic formation actually continued in Old English.
 
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| broader root-noun family | *brústz | root-noun type outcomes outside OE | non-OE comparanda | useful family label, but not the direct source of _brēost_ |
-| selected thematic formation | *bréustą | regular output: _brēost_ | brēost | exact match between formation and attested OE noun |
+| broader root-noun family | [_\*brústz_]{.iv lang=pgmc sort=brustz role=source_protoform} | root-noun type outcomes outside OE | non-OE comparanda | useful family label, but not the direct source of _brēost_ |
+| selected thematic formation | [_\*bréustą_]{.iv lang=pgmc sort=breusta role=selected_input} | regular output: _brēost_ | [_brēost_]{.iv lang=oe sort=breost role=target_form} | exact match between formation and attested OE noun |
 
-The relevant point is the formation split. _brēost_ is the regular Old English
-outcome of the thematic _\*breusta-_ branch, not of the root noun _\*brust-_.
+The relevant point is the formation split. [_brēost_]{.iv lang=oe sort=breost role=target_form} is the regular Old English
+outcome of the thematic [_\*breusta-_]{.iv lang=pgmc sort=breusta role=source_protoform} branch, not of the root noun [_\*brust-_]{.iv lang=pgmc sort=brust role=source_protoform}.
 
 ### craft — OE cræft
 
@@ -11748,11 +11741,11 @@ Old English form: _bannes_
 
 #### Reconstruction and comparative evidence
 
-Orel cites a bann-noun under _\*bannan_, while Seebold distinguishes bann-stems
-of both masculine and neuter type and gives Old English _gebann_ as the noun
-reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction _\*bánną_
+Orel cites a bann-noun under [_\*bannan_]{.iv lang=pgmc sort=bannan role=source_protoform}, while Seebold distinguishes bann-stems
+of both masculine and neuter type and gives Old English [_gebann_]{.iv lang=oe sort=gebann role=comparison_form} as the noun
+reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction [_\*bánną_]{.iv lang=pgmc sort=banna role=source_protoform}
 names the lexeme, but the comparison here turns on the genitive singular
-_\*bánnas_.
+[_\*bánnas_]{.iv lang=pgmc sort=bannas role=selected_input}.
 
 That distinction matters because the analysis depends on medial, not final,
 gemination.
@@ -11760,17 +11753,17 @@ gemination.
 #### Old English evidence
 
 Old English lexicographic evidence securely supports the noun itself.
-Bosworth-Toller records the noun under nominative _ge-bann_, with oblique
-usage such as _gebanne_ [@BosworthToller1898, 303]. The exact unprefixed
-genitive _bannes_ is less directly cited in the dictionaries, so it is best
+Bosworth-Toller records the noun under nominative [_ge-bann_]{.iv lang=oe sort=gebann role=comparison_form}, with oblique
+usage such as [_gebanne_]{.iv lang=oe sort=gebanne role=comparison_form} [@BosworthToller1898, 303]. The exact unprefixed
+genitive [_bannes_]{.iv lang=oe sort=bannes role=target_form} is less directly cited in the dictionaries, so it is best
 treated here as the regular genitive form used for comparison rather than as a
 dictionary headword.
 
 #### Development to Old English
 
-From _\*bánnas_, the geminate remains medial before the case ending and the
-unstressed vowel develops regularly to give _bannes_. The paradigm comparison
-therefore sets the genitive against nominative _ban_, the ordinary nominative
+From [_\*bánnas_]{.iv lang=pgmc sort=bannas role=selected_input}, the geminate remains medial before the case ending and the
+unstressed vowel develops regularly to give [_bannes_]{.iv lang=oe sort=bannes role=target_form}. The paradigm comparison
+therefore sets the genitive against nominative [_ban_]{.iv lang=oe sort=ban role=comparison_form}, the ordinary nominative
 form of the same noun, rather than against a directly cited genitive headword.
 
 #### Paradigm comparison
@@ -11780,8 +11773,8 @@ conservative cell used for the entry.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *bánną | regular output: _ban_ | ban | regular nominative outcome, but not the Old English form here |
-| genitive singular | *bánnas | regular output: _bannes_ | bannes | direct match for the conservative genitive |
+| citation nominative singular | [_\*bánną_]{.iv lang=pgmc sort=banna role=source_protoform} | regular output: [_ban_]{.iv lang=oe sort=ban role=regular_output} | ban | regular nominative outcome, but not the Old English form here |
+| genitive singular | [_\*bánnas_]{.iv lang=pgmc sort=bannas role=selected_input} | regular output: _bannes_ | [_bannes_]{.iv lang=oe sort=bannes role=target_form} | direct match for the conservative genitive |
 
 ### berry — OE berġes
 
@@ -11837,27 +11830,27 @@ Old English form: _berġes_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the berry noun as _\*basja-_ ~ _\*bazja-_ [@Kroonen2013, 54]. The
-derivational input _\*bázjas_ is therefore not a rival lexeme headword, but a
+Kroonen reconstructs the berry noun as [_\*basja-_]{.iv lang=pgmc sort=basja role=source_protoform} ~ [_\*bazja-_]{.iv lang=pgmc sort=bazja role=source_protoform} [@Kroonen2013, 54]. The
+derivational input [_\*bázjas_]{.iv lang=pgmc sort=bazjas role=selected_input} is therefore not a rival lexeme headword, but a
 specific genitive singular cell drawn from that paradigm.
 
 The relevant point is that _\*rj_ did not geminate in Proto-West Germanic.
-Ringe and Taylor's _here, herges_ comparison shows the same _rj_ environment in
+Ringe and Taylor's [_here_]{.iv lang=oe sort=here role=comparison_form}, [_herges_]{.iv lang=oe sort=herges role=comparison_form} comparison shows the same _rj_ environment in
 an Old English paradigm without any hidden gemination repair [@RingeTaylor2014, 181].
 
 #### Old English evidence
 
-Campbell cites feminine _berige_ 'berry' and notes that _-j-_ is retained after
+Campbell cites feminine [_berige_]{.iv lang=oe sort=berige role=comparison_form} 'berry' and notes that _-j-_ is retained after
 _r_ in this type [@Campbell1959, 250]. The reviewed evidence therefore supports the
-citation form more directly than the exact genitive _berġes_, which is best read
+citation form more directly than the exact genitive [_berġes_]{.iv lang=oe sort=berges role=target_form}, which is best read
 here as the regular genitive comparison form rather than as a
 dictionary headword.
 
 #### Development to Old English
 
-Citation _\*bázją_ gives _bere_, not the Old English form here. The genitive singular
-_\*bázjas_, however, gives _berġes_, with medial _-rġ-_ preserved in the same
-way that Ringe and Taylor cite _herges_ beside _here_ [@RingeTaylor2014, 181].
+Citation [_\*bázją_]{.iv lang=pgmc sort=bazja role=source_protoform} gives [_bere_]{.iv lang=oe sort=bere role=regular_output}, not the Old English form here. The genitive singular
+[_\*bázjas_]{.iv lang=pgmc sort=bazjas role=selected_input}, however, gives [_berġes_]{.iv lang=oe sort=berges role=target_form}, with medial _-rġ-_ preserved in the same
+way that Ringe and Taylor cite [_herges_]{.iv lang=oe sort=herges role=comparison_form} beside [_here_]{.iv lang=oe sort=here role=comparison_form} [@RingeTaylor2014, 181].
 This points to paradigm choice rather than to an extra phonological rule.
 
 #### Paradigm comparison
@@ -11867,8 +11860,8 @@ and the genitive singular cell.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *bázją | regular output: _bere_ | berige / berġe | useful citation-form background, but not the Old English form here |
-| genitive singular | *bázjas | regular output: _berġes_ | berġes | exact match for the conservative cell |
+| citation nominative singular | [_\*bázją_]{.iv lang=pgmc sort=bazja role=source_protoform} | regular output: [_bere_]{.iv lang=oe sort=bere role=regular_output} | [_berige_]{.iv lang=oe sort=berige role=comparison_form} / [_berġe_]{.iv lang=oe sort=berge role=comparison_form} | useful citation-form background, but not the Old English form here |
+| genitive singular | [_\*bázjas_]{.iv lang=pgmc sort=bazjas role=selected_input} | regular output: _berġes_ | [_berġes_]{.iv lang=oe sort=berges role=target_form} | exact match for the conservative cell |
 
 ### bow — OE bēag
 
@@ -15280,3 +15273,9 @@ The comparison below sets the regular result beside the attested lexical excepti
 \printindex[goth]
 
 \printindex[os]
+
+\printindex[dutch]
+
+\printindex[german]
+
+\printindex[modeng]
