@@ -18,15 +18,15 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English **`liornian ~ leornian`** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. The selected input **`*líznōθi`** is the finite 3sg cell of that family, not the citation form of the verb.
+Ringe and Taylor give Old English **[`liornian`]{.iv lang=oe sort=liornian role=comparison_form} ~ [`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. The selected input **[`*líznōθi`]{.iv lang=pgmc sort=liznothi role=selected_input}** is the finite 3sg cell of that family, not the citation form of the verb.
 
 For the ending, Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the class-II 2sg and 3sg make the non-`j` 3sg cell the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Old English evidence
 
-Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in **`liorn-`**, including **`liorna`** and the 3sg **`liornes`**, beside the West-Saxon-looking **`leornian`** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io`** beside **`leornian`** [@Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in **`liorn-`**, including **[`liorna`]{.iv lang=oe sort=liorna role=comparison_form}** and the 3sg **[`liornes`]{.iv lang=oe sort=liornes role=comparison_form}**, beside the West-Saxon-looking **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io`** beside **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** [@Campbell1959, §123 n. 2].
 
-The relevant comparison form here is the normalized 3sg **`liornaþ`**. The directly cited Old English evidence supports the finite stem **`liorn-`**; the exact **`-aþ`** ending follows the regular class-II 3sg pattern.
+The relevant comparison form here is the normalized 3sg **[`liornaþ`]{.iv lang=oe sort=liornath role=target_form}**. The directly cited Old English evidence supports the finite stem **`liorn-`**; the exact **`-aþ`** ending follows the regular class-II 3sg pattern.
 
 ### Development to Old English
 
@@ -40,6 +40,6 @@ The comparison below is manual. It distinguishes the selected 3sg cell from the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | `*liznōjaną` | Northumbrian `liornian`; dictionary headword often `leornian` | liornian / leornian | family background, but not the selected cell |
-| selected 3sg present | `*líznōθi` | trace output `liornaþ` | liornaþ | exact match |
-| imperative singular companion | `*líznô` | trace output and Brunner's Northumbrian `liorna` | liorna | useful control, but not the target |
+| lexeme-level infinitive | [`*liznōjaną`]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [`liornian`]{.iv lang=oe sort=liornian role=comparison_form}; dictionary headword often [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} | [`liornian`]{.iv lang=oe sort=liornian role=comparison_form} / [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} | family background, but not the selected cell |
+| selected 3sg present | [`*líznōθi`]{.iv lang=pgmc sort=liznothi role=selected_input} | trace output [`liornaþ`]{.iv lang=oe sort=liornath role=regular_output} | [`liornaþ`]{.iv lang=oe sort=liornath role=target_form} | exact match |
+| imperative singular companion | [`*líznô`]{.iv lang=pgmc sort=lizno role=comparison_form} | trace output and Brunner's Northumbrian [`liorna`]{.iv lang=oe sort=liorna role=comparison_form} | [`liorna`]{.iv lang=oe sort=liorna role=comparison_form} | useful control, but not the target |

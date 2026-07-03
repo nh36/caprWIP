@@ -20,8 +20,8 @@ DERIVATION_CLASS: early_analogy
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, citing
 `PGmc *nēþlō, *nēdlō- 'needle' ... > OE nédl` [@RingeTaylor2014, 329]. The
-form followed here, `*nḗðlō`, is the voiced Verner-grade form used for the Old
-English comparison, while the citation form `*nḗθlō` remains the broader
+form followed here, [`*nḗðlō`]{.iv lang=pgmc sort=nedlo role=selected_input}, is the voiced Verner-grade form used for the Old
+English comparison, while the citation form [`*nḗθlō`]{.iv lang=pgmc sort=nethlo role=source_protoform} remains the broader
 lexeme label.
 
 The development discussed here follows the Ringe-Taylor alternant framework.
@@ -54,6 +54,6 @@ the voiced alternant used for Old English.
 
 | Formation / stage | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative voiceless headword | *nḗθlō | broader word-family label rather than the OE-facing alternant | `*nēþlō` line | useful citation form, but not the derivational input for the Old English comparison |
-| voiced Verner alternant followed here | *nḗðlō | regular output: `nǣdl` | nǣdl | exact match between the form followed here and the attested OE noun |
+| comparative voiceless headword | [`*nḗθlō`]{.iv lang=pgmc sort=nethlo role=source_protoform} | broader word-family label rather than the OE-facing alternant | `*nēþlō` line | useful citation form, but not the derivational input for the Old English comparison |
+| voiced Verner alternant followed here | [`*nḗðlō`]{.iv lang=pgmc sort=nedlo role=selected_input} | regular output: [`nǣdl`]{.iv lang=oe sort=naedl role=regular_output} | [`nǣdl`]{.iv lang=oe sort=naedl role=target_form} | exact match between the form followed here and the attested OE noun |
 | later hardening stage | *nḗdlō | intermediate pre-OE stage in the same derivation | nǣdl | genuine stage in the pathway, but not the Proto-Germanic form followed here |

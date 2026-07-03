@@ -19,21 +19,21 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The make-family belongs to the Old English class-II weak verbs. Campbell cites
-`lapian, macian` among verbs with restored `a` [@Campbell1959, §159]. Ringe and
+`lapian,` [`macian`]{.iv lang=oe sort=macian role=comparison_form} among verbs with restored `a` [@Campbell1959, §159]. Ringe and
 Taylor place the Germanic verb in the same class, comparing West Germanic
-continuants such as Old Frisian `makia`, Old Saxon `makon`, and Old High German
-`mahhon` [@RingeTaylor2014, 191].
+continuants such as Old Frisian [`makia`]{.iv lang=ofris sort=makia role=comparison_form}, Old Saxon [`makon`]{.iv lang=os sort=makon role=comparison_form}, and Old High German
+[`mahhon`]{.iv lang=ohg sort=mahhon role=comparison_form} [@RingeTaylor2014, 191].
 
-The selected input `*mákô` is not the citation form of the lexeme but a finite
+The selected input [`*mákô`]{.iv lang=pgmc sort=mako role=selected_input} is not the citation form of the lexeme but a finite
 paradigm cell. Ringe and Taylor give the class-II weak imperative singular as
 `-a < *-ō`, which makes this cell the relevant comparison point for the Old
 English form treated here [@RingeTaylor2014, 314].
 
 ### Old English evidence
 
-The dictionary headword is `macian` [@ClarkHall1960, 193]. The selected form in this
-entry is therefore not the lemma but the imperative singular `maca`, chosen as a
-paradigm form beside the headword `macian` and the related finite form `macaþ`.
+The dictionary headword is [`macian`]{.iv lang=oe sort=macian role=comparison_form} [@ClarkHall1960, 193]. The selected form in this
+entry is therefore not the lemma but the imperative singular [`maca`]{.iv lang=oe sort=maca role=target_form}, chosen as a
+paradigm form beside the headword [`macian`]{.iv lang=oe sort=macian role=comparison_form} and the related finite form [`macaþ`]{.iv lang=oe sort=macath role=comparison_form}.
 
 That distinction matters for the comparison. The lexical history of the verb is
 still the history of `macian`, but the finite cell isolates the regular outcome
@@ -58,6 +58,6 @@ the Old English form chosen here. The comparison below is manual.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | `*mákōjaną` | comparative continuation `macian` | macian | ordinary headword of the verb, but not the selected finite cell |
-| selected imperative singular | `*mákô` | compact-trace output: `maca` | maca | exact match between input, output, and selected paradigm form |
-| present third singular companion | `*mákōθi` | comparative companion `macaþ` | macaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [`*mákōjaną`]{.iv lang=pgmc sort=makojana role=source_protoform} | comparative continuation [`macian`]{.iv lang=oe sort=macian role=comparison_form} | [`macian`]{.iv lang=oe sort=macian role=comparison_form} | ordinary headword of the verb, but not the selected finite cell |
+| selected imperative singular | [`*mákô`]{.iv lang=pgmc sort=mako role=selected_input} | compact-trace output: [`maca`]{.iv lang=oe sort=maca role=regular_output} | [`maca`]{.iv lang=oe sort=maca role=target_form} | exact match between input, output, and selected paradigm form |
+| present third singular companion | [`*mákōθi`]{.iv lang=pgmc sort=makothi role=comparison_form} | comparative companion [`macaþ`]{.iv lang=oe sort=macath role=comparison_form} | [`macaþ`]{.iv lang=oe sort=macath role=comparison_form} | useful family control, but not the target of this entry |

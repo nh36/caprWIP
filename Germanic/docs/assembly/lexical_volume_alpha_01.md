@@ -6508,11 +6508,11 @@ Old English form: _nafola_
 
 #### Reconstruction and comparative evidence
 
-Kroonen instead gives a nasal-suffix navel formation with Old English _nafela_
+Kroonen instead gives a nasal-suffix navel formation with Old English [_nafela_]{.iv lang=oe sort=nafela role=comparison_form}
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
 derivational pathway _\*nabulō_ > _\*næbula_ > _nafola_ [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
-derivational input _\*nábulô_ is the pre-syncope form needed for the Old English
+derivational input [_\*nábulô_]{.iv lang=pgmc sort=nabulo role=selected_input} is the pre-syncope form needed for the Old English
 development.
 
 For the Old English comparison, the crucial point is simply that the pre-OE form
@@ -6520,15 +6520,15 @@ still contains a medial vowel.
 
 #### Old English evidence
 
-Ringe and Taylor note the early West Saxon shift _nafola_ > _nafela_
+Ringe and Taylor note the early West Saxon shift [_nafola_]{.iv lang=oe sort=nafola role=target_form} > [_nafela_]{.iv lang=oe sort=nafela role=comparison_form}
 [@RingeTaylor2014, 336]. Campbell likewise records _nafela_ beside Corpus
-_nabula_ [@Campbell1959, §159]. The target of this entry is the nominative
-singular _nafola_, the form that matches the selected derivational pathway
+[_nabula_]{.iv lang=oe sort=nabula role=comparison_form} [@Campbell1959, §159]. The target of this entry is the nominative
+singular [_nafola_]{.iv lang=oe sort=nafola role=target_form}, the form that matches the selected derivational pathway
 most directly.
 
-_nafela_ is the better-known later West Saxon spelling, while _nabula_ preserves
+[_nafela_]{.iv lang=oe sort=nafela role=comparison_form} is the better-known later West Saxon spelling, while [_nabula_]{.iv lang=oe sort=nabula role=comparison_form} preserves
 a less reduced medial vowel. These forms belong to the same lexical history, but
-this entry is centered on _nafola_.
+this entry is centered on [_nafola_]{.iv lang=oe sort=nafola role=target_form}.
 
 #### Development to Old English
 
@@ -6547,9 +6547,9 @@ the pre-syncope input and from the later OE spellings.
 
 | Formation / stage | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| syncopated comparative headword | *nablô | reduced _næfla_-type outcome rather than _nafola_ | not the Old English form here | useful citation form, but too reduced for the pathway modeled here |
-| selected pre-syncope input | *nábulô | regular output: _nafola_ | nafola | exact match between derivational input and target |
-| later OE reduction stages | same lexical history | attested _nafela_; Corpus _nabula_ | nafela / nabula | related OE spellings, but not the chosen comparator |
+| syncopated comparative headword | [_\*nablô_]{.iv lang=pgmc sort=nablo role=source_protoform} | reduced _næfla_-type outcome rather than [_nafola_]{.iv lang=oe sort=nafola role=target_form} | not the Old English form here | useful citation form, but too reduced for the pathway modeled here |
+| selected pre-syncope input | [_\*nábulô_]{.iv lang=pgmc sort=nabulo role=selected_input} | regular output: [_nafola_]{.iv lang=oe sort=nafola role=regular_output} | [_nafola_]{.iv lang=oe sort=nafola role=target_form} | exact match between derivational input and target |
+| later OE reduction stages | same lexical history | attested [_nafela_]{.iv lang=oe sort=nafela role=comparison_form}; Corpus [_nabula_]{.iv lang=oe sort=nabula role=comparison_form} | [_nafela_]{.iv lang=oe sort=nafela role=comparison_form} / [_nabula_]{.iv lang=oe sort=nabula role=comparison_form} | related OE spellings, but not the chosen comparator |
 
 ### neck — OE hnecca
 
@@ -6605,9 +6605,9 @@ _\*hnakkuns_, and he places Old English _hnecca_ among the e-grade descendants
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies _ae. hnecca_ as an ablaut
 partner of the a-grade _Nacken_ family [@KlugeSeebold2011, 347].
 
-A competing comparative label _\*xnákkaz_ remains useful for the wider family, and
+A competing comparative label [_\*xnákkaz_]{.iv lang=pgmc sort=xnakkaz role=source_protoform} remains useful for the wider family, and
 Orel also gives an a-grade headword line [@Orel2003, 218]. The derivational input
-_\*xnékkô_, however, is the form that matches the Old English branch.
+[_\*xnékkô_]{.iv lang=pgmc sort=xnekko role=selected_input}, however, is the form that matches the Old English branch.
 
 #### Old English evidence
 
@@ -6621,8 +6621,8 @@ a-grade seen in much of the continental material.
 
 #### Development to Old English
 
-From _\*xnékkô_, the derivation is straightforward. The trace shortens the final
-long vowel to _\*xnékka_, and Old English orthography gives _hnecca_.
+From [_\*xnékkô_]{.iv lang=pgmc sort=xnekko role=selected_input}, the derivation is straightforward. The trace shortens the final
+long vowel to _\*xnékka_, and Old English orthography gives [_hnecca_]{.iv lang=oe sort=hnecca role=target_form}.
 
 The derivation depends on the earlier selection of the e-grade weak-noun form
 continued by Old English.
@@ -6634,10 +6634,10 @@ selected e-grade Old English branch.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| competing comparative label | *xnákkaz | broader a-grade family rather than the selected OE source | continental _Nacken_ line | useful family label, but not the input followed for the Old English derivation |
-| weak noun with a-grade | *xnakkô | expected _hnacca_ type outcome | hnacca | fixes the class, but not the vowel grade |
-| selected e-grade nominative | *xnékkô | regular output: _hnecca_ | hnecca | exact match between derivational input and attested OE noun |
-| oblique paradigm background | _\*hnukkaz_, _\*hnakkuns_ | ON/OHG/German a-grade continuation | hnakki / Nacken | shows the wider ablaut family, but not the chosen OE branch |
+| competing comparative label | [_\*xnákkaz_]{.iv lang=pgmc sort=xnakkaz role=source_protoform} | broader a-grade family rather than the selected OE source | continental [_Nacken_]{.iv lang=german sort=nacken role=comparison_form} line | useful family label, but not the input followed for the Old English derivation |
+| weak noun with a-grade | [_\*xnakkô_]{.iv lang=pgmc sort=xnakko role=comparison_form} | expected [_hnacca_]{.iv lang=oe sort=hnacca role=comparison_form} type outcome | [_hnacca_]{.iv lang=oe sort=hnacca role=comparison_form} | fixes the class, but not the vowel grade |
+| selected e-grade nominative | [_\*xnékkô_]{.iv lang=pgmc sort=xnekko role=selected_input} | regular output: [_hnecca_]{.iv lang=oe sort=hnecca role=regular_output} | [_hnecca_]{.iv lang=oe sort=hnecca role=target_form} | exact match between derivational input and attested OE noun |
+| oblique paradigm background | [_\*hnukkaz_]{.iv lang=pgmc sort=hnukkaz role=comparison_form}, [_\*hnakkuns_]{.iv lang=pgmc sort=hnakkuns role=comparison_form} | ON/OHG/German a-grade continuation | [_hnakki_]{.iv lang=on sort=hnakki role=comparison_form} / [_Nacken_]{.iv lang=german sort=nacken role=comparison_form} | shows the wider ablaut family, but not the chosen OE branch |
 
 ### needle — OE nǣdl
 
@@ -6694,8 +6694,8 @@ Old English form: _nǣdl_
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, citing
 PGmc _\*nēþlō_, _\*nēdlō-_ 'needle' ... > OE _nédl_ [@RingeTaylor2014, 329]. The
-form followed here, _\*nḗðlō_, is the voiced Verner-grade form used for the Old
-English comparison, while the citation form _\*nḗθlō_ remains the broader
+form followed here, [_\*nḗðlō_]{.iv lang=pgmc sort=nedlo role=selected_input}, is the voiced Verner-grade form used for the Old
+English comparison, while the citation form [_\*nḗθlō_]{.iv lang=pgmc sort=nethlo role=source_protoform} remains the broader
 lexeme label.
 
 The development discussed here follows the Ringe-Taylor alternant framework.
@@ -6728,8 +6728,8 @@ the voiced alternant used for Old English.
 
 | Formation / stage | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative voiceless headword | *nḗθlō | broader word-family label rather than the OE-facing alternant | _\*nēþlō_ line | useful citation form, but not the derivational input for the Old English comparison |
-| voiced Verner alternant followed here | *nḗðlō | regular output: _nǣdl_ | nǣdl | exact match between the form followed here and the attested OE noun |
+| comparative voiceless headword | [_\*nḗθlō_]{.iv lang=pgmc sort=nethlo role=source_protoform} | broader word-family label rather than the OE-facing alternant | _\*nēþlō_ line | useful citation form, but not the derivational input for the Old English comparison |
+| voiced Verner alternant followed here | [_\*nḗðlō_]{.iv lang=pgmc sort=nedlo role=selected_input} | regular output: [_nǣdl_]{.iv lang=oe sort=naedl role=regular_output} | [_nǣdl_]{.iv lang=oe sort=naedl role=target_form} | exact match between the form followed here and the attested OE noun |
 | later hardening stage | *nḗdlō | intermediate pre-OE stage in the same derivation | nǣdl | genuine stage in the pathway, but not the Proto-Germanic form followed here |
 
 ### nose — OE nosu
@@ -9209,21 +9209,21 @@ Old English form: _lifeþ_
 #### Reconstruction and comparative evidence
 
 The inherited verb belongs to the class-III weak family cited by Kroonen under
-_\*libēn-_, reflected in Old English _libban_ [@Kroonen2013, 336]. Ringe and
+_\*libēn-_, reflected in Old English [_libban_]{.iv lang=oe sort=libban role=comparison_form} [@Kroonen2013, 336]. Ringe and
 Taylor show that the paradigm also contained a separate 3sg present stem,
-continued in late Northumbrian _lifed_, which they treat as an archaism
+continued in late Northumbrian [_lifed_]{.iv lang=oe sort=lifed role=comparison_form}, which they treat as an archaism
 [@RingeTaylor2014, 364].
 
-The form followed here, _\*líbēθi_, therefore represents a finite present cell rather
+The derivational input [_\*líbēθi_]{.iv lang=pgmc sort=libethi role=selected_input} therefore represents a finite present cell rather
 than the citation infinitive. That distinction matters because the ordinary
-later lemma tradition also includes remodeled forms such as _lifian_.
+later lemma tradition also includes remodeled forms such as [_lifian_]{.iv lang=oe sort=lifian role=comparison_form}.
 
 #### Old English evidence
 
-The ordinary lemma tradition centers on _libban_ and, in later remodeling,
-_lifian_. For this entry, however, the relevant comparison form is the archaic
-3sg present attested as _lifed_, here
-normalized as _lifeþ_ [@RingeTaylor2014, 364; @Campbell1959, §762].
+The ordinary lemma tradition centers on [_libban_]{.iv lang=oe sort=libban role=comparison_form} and, in later remodeling,
+[_lifian_]{.iv lang=oe sort=lifian role=comparison_form}. For this entry, however, the relevant comparison form is the archaic
+3sg present attested as [_lifed_]{.iv lang=oe sort=lifed role=comparison_form}, here
+normalized as [_lifeþ_]{.iv lang=oe sort=lifeth role=target_form} [@RingeTaylor2014, 364; @Campbell1959, §762].
 
 The target is thus a normalized finite form, not the ordinary dictionary lemma.
 Its value lies in preserving the older present-stem history more clearly than
@@ -9231,8 +9231,8 @@ the remodeled lemma tradition does.
 
 #### Development to Old English
 
-From _\*líbēθi_, regular reduction of the final syllable and later weakening of
-the unstressed vowel yield _lifeþ_. The attested spelling _lifed_ belongs to the
+From [_\*líbēθi_]{.iv lang=pgmc sort=libethi role=selected_input}, regular reduction of the final syllable and later weakening of
+the unstressed vowel yield [_lifeþ_]{.iv lang=oe sort=lifeth role=regular_output}. The attested spelling [_lifed_]{.iv lang=oe sort=lifed role=comparison_form} belongs to the
 same finite form in late Northumbrian orthography [@Campbell1959, §762;
 @RingeTaylor2014, 364].
 
@@ -9243,9 +9243,9 @@ ordinary infinitival and later remodeled lemma lines.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive line | *libēną | OE _libban_ headword tradition | libban | establishes the lexeme, but not the Old English form here |
-| 3sg present | *líbēθi | regular output: _lifeþ_; attested _lifed_ | lifed, normalized here as lifeþ | selected archaic finite cell |
-| later remodeled present tradition | later class-II-type forms | _lifian_ and related finite remodeling | lifian | genuine OE development, but secondary to the cell compared here |
+| citation infinitive line | [_\*libēną_]{.iv lang=pgmc sort=libena role=source_protoform} | OE [_libban_]{.iv lang=oe sort=libban role=comparison_form} headword tradition | [_libban_]{.iv lang=oe sort=libban role=comparison_form} | establishes the lexeme, but not the Old English form here |
+| 3sg present | [_\*líbēθi_]{.iv lang=pgmc sort=libethi role=selected_input} | regular output: [_lifeþ_]{.iv lang=oe sort=lifeth role=regular_output}; attested [_lifed_]{.iv lang=oe sort=lifed role=comparison_form} | [_lifed_]{.iv lang=oe sort=lifed role=comparison_form}, normalized here as [_lifeþ_]{.iv lang=oe sort=lifeth role=target_form} | selected archaic finite cell |
+| later remodeled present tradition | later class-II-type forms | [_lifian_]{.iv lang=oe sort=lifian role=comparison_form} and related finite remodeling | [_lifian_]{.iv lang=oe sort=lifian role=comparison_form} | genuine OE development, but secondary to the cell compared here |
 
 ### man — OE mannes
 
@@ -9297,7 +9297,7 @@ Old English form: _mannes_
 #### Reconstruction and comparative evidence
 
 The lexeme-level reconstruction is not uniform. Kroonen cites _\*mannan-_, and
-Orel has _\*mannz_ [@Kroonen2013, 354; @Orel2003, 299]. The derivational input _\*mánnas_
+Orel has _\*mannz_ [@Kroonen2013, 354; @Orel2003, 299]. The derivational input [_\*mánnas_]{.iv lang=pgmc sort=mannas role=selected_input}
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 
@@ -9307,15 +9307,15 @@ before the ending.
 
 #### Old English evidence
 
-Campbell gives the paradigm mann, _man_ / _mannes_ / _menn_
+Campbell gives the paradigm [_mann_]{.iv lang=oe sort=mann role=comparison_form}, [_man_]{.iv lang=oe sort=man role=comparison_form} / [_mannes_]{.iv lang=oe sort=mannes role=target_form} / _menn_
 [@Campbell1959, §621].
-Sievers-Brunner likewise cites _man mannes_ [@SieversBrunner1965, §226]. He
-also explains that word-final simplification underlies forms such as _man_
-beside inflected _monnes_ [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under _mann_
+Sievers-Brunner likewise cites [_man_]{.iv lang=oe sort=man role=comparison_form} [_mannes_]{.iv lang=oe sort=mannes role=target_form} [@SieversBrunner1965, §226]. He
+also explains that word-final simplification underlies forms such as [_man_]{.iv lang=oe sort=man role=comparison_form}
+beside inflected [_monnes_]{.iv lang=oe sort=monnes role=comparison_form} [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under [_mann_]{.iv lang=oe sort=mann role=comparison_form}
 [@ClarkHall1960, 197].
 
 The relevant comparison form is therefore the attested genitive singular
-_mannes_, not the citation lemma _mann_.
+[_mannes_]{.iv lang=oe sort=mannes role=target_form}, not the citation lemma [_mann_]{.iv lang=oe sort=mann role=comparison_form}.
 
 #### Development to Old English
 
@@ -9333,10 +9333,10 @@ genitive singular.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *mannăz | expected citation-form outcome _man_ | mann / monn | establishes the lexeme, but not the Old English form here |
-| accusative singular | *manną | expected _man_ | man | same word-final simplification as the nominative |
-| dative singular | *mannăi | expected _manne_ | manne | preserves medial _nn_, but not the chosen cell |
-| genitive singular | *mánnas | regular output: _mannes_ | mannes | exact match between input, output, and attested comparator |
+| citation nominative singular | [_\*mannăz_]{.iv lang=pgmc sort=mannaz role=source_protoform} | expected citation-form outcome [_man_]{.iv lang=oe sort=man role=regular_output} | [_mann_]{.iv lang=oe sort=mann role=comparison_form} / [_monn_]{.iv lang=oe sort=monn role=comparison_form} | establishes the lexeme, but not the Old English form here |
+| accusative singular | [_\*manną_]{.iv lang=pgmc sort=manna role=comparison_form} | expected [_man_]{.iv lang=oe sort=man role=regular_output} | [_man_]{.iv lang=oe sort=man role=comparison_form} | same word-final simplification as the nominative |
+| dative singular | [_\*mannăi_]{.iv lang=pgmc sort=mannai role=comparison_form} | expected [_manne_]{.iv lang=oe sort=manne role=regular_output} | [_manne_]{.iv lang=oe sort=manne role=comparison_form} | preserves medial _nn_, but not the chosen cell |
+| genitive singular | [_\*mánnas_]{.iv lang=pgmc sort=mannas role=selected_input} | regular output: [_mannes_]{.iv lang=oe sort=mannes role=regular_output} | [_mannes_]{.iv lang=oe sort=mannes role=target_form} | exact match between input, output, and attested comparator |
 
 ### meed — OE meorde
 
@@ -9391,7 +9391,7 @@ Old English form: _meorde_
 
 #### Reconstruction and comparative evidence
 
-The lexeme-level reconstruction is _\*mizdō_, but the derivational input _\*mízdai_
+The lexeme-level reconstruction is [_\*mizdō_]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the derivational input [_\*mízdai_]{.iv lang=pgmc sort=mizdai role=selected_input}
 is a dative-singular cell rather than the citation form. That distinction is
 important because the Old English evidence for the _meord_ side is oblique.
 
@@ -9403,14 +9403,14 @@ attested oblique line _meorde_.
 
 #### Old English evidence
 
-The directly attested forms are obliques: _meorde_ as a dative singular and
-_meorda_ as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
-Lexicographers reconstruct a bare nominative _meord_ from those obliques, while
+The directly attested forms are obliques: [_meorde_]{.iv lang=oe sort=meorde role=target_form} as a dative singular and
+[_meorda_]{.iv lang=oe sort=meorda role=comparison_form} as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
+Lexicographers reconstruct a bare nominative [_meord_]{.iv lang=oe sort=meord role=comparison_form} from those obliques, while
 West Saxon prose more commonly shows the competing doublet _mēd_
 [@ClarkHall1960, 214; @BosworthToller1898, 647].
 
-The target of this entry is therefore the attested oblique _meorde_, not the
-reconstructed lemma _meord_ and not the better-known West Saxon citation form
+The target of this entry is therefore the attested oblique [_meorde_]{.iv lang=oe sort=meorde role=target_form}, not the
+reconstructed lemma [_meord_]{.iv lang=oe sort=meord role=comparison_form} and not the better-known West Saxon citation form
 _mēd_.
 
 #### Development to Old English
@@ -9431,10 +9431,10 @@ the broader lemma history.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *mizdō | inferred lemma outcome _meord_ | meord | useful background, but the bare lemma is reconstructed rather than directly attested |
-| selected dative singular | *mízdai | regular output: _meorde_ | meorde | exact match between derivational input and attested target |
-| genitive singular | *mizdōz | regular output: _meorde_ | meorde | converges on the same attested string, but the dat.sg. has the clearest direct support |
-| genitive plural control | plural oblique line | attested _meorda_ | meorda | confirms the broader oblique tradition, but not the chosen singular target |
+| citation nominative singular | [_\*mizdō_]{.iv lang=pgmc sort=mizdo role=source_protoform} | inferred lemma outcome [_meord_]{.iv lang=oe sort=meord role=comparison_form} | [_meord_]{.iv lang=oe sort=meord role=comparison_form} | useful background, but the bare lemma is reconstructed rather than directly attested |
+| selected dative singular | [_\*mízdai_]{.iv lang=pgmc sort=mizdai role=selected_input} | regular output: [_meorde_]{.iv lang=oe sort=meorde role=regular_output} | [_meorde_]{.iv lang=oe sort=meorde role=target_form} | exact match between derivational input and attested target |
+| genitive singular | [_\*mizdōz_]{.iv lang=pgmc sort=mizdoz role=comparison_form} | regular output: [_meorde_]{.iv lang=oe sort=meorde role=regular_output} | [_meorde_]{.iv lang=oe sort=meorde role=target_form} | converges on the same attested string, but the dat.sg. has the clearest direct support |
+| genitive plural control | plural oblique line | attested [_meorda_]{.iv lang=oe sort=meorda role=comparison_form} | [_meorda_]{.iv lang=oe sort=meorda role=comparison_form} | confirms the broader oblique tradition, but not the chosen singular target |
 
 ### night — OE niht
 
@@ -10003,21 +10003,21 @@ Old English form: _maca_
 #### Reconstruction and comparative evidence
 
 The make-family belongs to the Old English class-II weak verbs. Campbell cites
-_lapian, macian_ among verbs with restored _a_ [@Campbell1959, §159]. Ringe and
+_lapian,_ [_macian_]{.iv lang=oe sort=macian role=comparison_form} among verbs with restored _a_ [@Campbell1959, §159]. Ringe and
 Taylor place the Germanic verb in the same class, comparing West Germanic
-continuants such as Old Frisian _makia_, Old Saxon _makon_, and Old High German
-_mahhon_ [@RingeTaylor2014, 191].
+continuants such as Old Frisian [_makia_]{.iv lang=ofris sort=makia role=comparison_form}, Old Saxon [_makon_]{.iv lang=os sort=makon role=comparison_form}, and Old High German
+[_mahhon_]{.iv lang=ohg sort=mahhon role=comparison_form} [@RingeTaylor2014, 191].
 
-The form followed here, _\*mákô_, is not the citation form of the lexeme but a finite
+The derivational input [_\*mákô_]{.iv lang=pgmc sort=mako role=selected_input} is not the citation form of the lexeme but a finite
 paradigm cell. Ringe and Taylor give the class-II weak imperative singular as
 -a < _\*-ō_, which makes this cell the relevant comparison point for the Old
 English form treated here [@RingeTaylor2014, 314].
 
 #### Old English evidence
 
-The dictionary headword is _macian_ [@ClarkHall1960, 193]. The form compared here in this
-entry is therefore not the lemma but the imperative singular _maca_, chosen as a
-paradigm form beside the headword _macian_ and the related finite form _macaþ_.
+The dictionary headword is [_macian_]{.iv lang=oe sort=macian role=comparison_form} [@ClarkHall1960, 193]. The form compared here in this
+entry is therefore not the lemma but the imperative singular [_maca_]{.iv lang=oe sort=maca role=target_form}, chosen as a
+paradigm form beside the headword [_macian_]{.iv lang=oe sort=macian role=comparison_form} and the related finite form [_macaþ_]{.iv lang=oe sort=macath role=comparison_form}.
 
 That distinction matters for the comparison. The lexical history of the verb is
 still the history of _macian_, but the finite cell isolates the regular outcome
@@ -10042,9 +10042,9 @@ the Old English form chosen here. The comparison below sets the relevant forms s
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*mákōjaną_ | comparative continuation _macian_ | macian | ordinary headword of the verb, but not the finite form compared here |
-| imperative singular | _\*mákô_ | regular output: _maca_ | maca | exact match between input, output, and selected paradigm form |
-| present third singular companion | _\*mákōθi_ | comparative companion _macaþ_ | macaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [_\*mákōjaną_]{.iv lang=pgmc sort=makojana role=source_protoform} | comparative continuation [_macian_]{.iv lang=oe sort=macian role=comparison_form} | [_macian_]{.iv lang=oe sort=macian role=comparison_form} | ordinary headword of the verb, but not the finite form compared here |
+| imperative singular | [_\*mákô_]{.iv lang=pgmc sort=mako role=selected_input} | regular output: [_maca_]{.iv lang=oe sort=maca role=regular_output} | [_maca_]{.iv lang=oe sort=maca role=target_form} | exact match between input, output, and selected paradigm form |
+| present third singular companion | [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=comparison_form} | comparative companion [_macaþ_]{.iv lang=oe sort=macath role=comparison_form} | [_macaþ_]{.iv lang=oe sort=macath role=comparison_form} | useful family control, but not the target of this entry |
 
 ### make (3sg) — OE macaþ
 
@@ -10098,13 +10098,13 @@ Old English form: _macaþ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen derives the Old English verb from _\*makōjan-_ on the make-family base _\*maka-_ [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English _macian_ from PWGmc _\*makon_ through _\*mekojan_ [@RingeTaylor2014, 191].
+Kroonen derives the Old English verb from [_\*makōjan-_]{.iv lang=pgmc sort=makojan role=source_protoform} on the make-family base _\*maka-_ [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English [_macian_]{.iv lang=oe sort=macian role=comparison_form} from PWGmc [_\*makon_]{.iv lang=os sort=makon role=comparison_form} through _\*mekojan_ [@RingeTaylor2014, 191].
 
-The form followed here, _\*mákōθi_, is therefore a finite 3sg cell of the same family, not the citation form of the verb.
+The derivational input [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=selected_input} is therefore a finite 3sg cell of the same family, not the citation form of the verb.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the verb as _macian_ [@ClarkHall1960, 193]. The relevant comparison form here is the normalized present-third-singular _macaþ_, set beside the dictionary headword and the related imperative singular _maca_.
+Clark Hall lemmatizes the verb as [_macian_]{.iv lang=oe sort=macian role=comparison_form} [@ClarkHall1960, 193]. The relevant comparison form here is the normalized present-third-singular [_macaþ_]{.iv lang=oe sort=macath role=target_form}, set beside the dictionary headword and the related imperative singular [_maca_]{.iv lang=oe sort=maca role=comparison_form}.
 
 Campbell's class-II paradigm makes the ordinary 3sg ending _-aþ_, while his dialect survey allows secondary _-e-_ spellings in some traditions [@Campbell1959, §356.4; @Campbell1959, §757]. _Macaþ_ is thus the regular comparison form for the non-_j_ 3sg cell.
 
@@ -10120,9 +10120,9 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*makōjaną_ | dictionary headword _macian_ | macian | family background, but not the cell compared here |
-| 3sg present | _\*mákōθi_ | regular output _macaþ_ | macaþ | exact match |
-| imperative singular companion | _\*mákô_ | related finite form _maca_ | maca | useful control, but not the target |
+| lexeme-level infinitive | [_\*makōjaną_]{.iv lang=pgmc sort=makojana role=source_protoform} | dictionary headword [_macian_]{.iv lang=oe sort=macian role=comparison_form} | [_macian_]{.iv lang=oe sort=macian role=comparison_form} | family background, but not the cell compared here |
+| 3sg present | [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=selected_input} | regular output [_macaþ_]{.iv lang=oe sort=macath role=regular_output} | [_macaþ_]{.iv lang=oe sort=macath role=target_form} | exact match |
+| imperative singular companion | [_\*mákô_]{.iv lang=pgmc sort=mako role=comparison_form} | related finite form [_maca_]{.iv lang=oe sort=maca role=comparison_form} | [_maca_]{.iv lang=oe sort=maca role=comparison_form} | useful control, but not the target |
 
 ### bore (iptv.2sg) — OE bora
 
@@ -10327,15 +10327,15 @@ Old English form: _liorna_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English _liornian_ ~ _leornian_ from a learn-family base of the _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@Kroonen2013, 380]. Fulk cites the same Old English family from _\*liznō-_ [@Fulk2018, 127].
+Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} ~ [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} from a learn-family base of the _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@Kroonen2013, 380]. Fulk cites the same Old English family from _\*liznō-_ [@Fulk2018, 127].
 
-The form followed here, _\*líznô_, is a finite imperative cell of that family, not the citation form of the verb.
+The derivational input [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input} is a finite imperative cell of that family, not the citation form of the verb.
 
 #### Old English evidence
 
 Clark Hall gives the ordinary headword as _leornian_ [@ClarkHall1960, 186]. Brunner, however, explicitly records _leornian, nordh. auch liorna_, and Campbell notes that beside _leornian_ Northumbrian forms with _io_ occur where original _eo_ and _io_ remain distinct [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
 
-_Liorna_ can therefore be treated as an attested Northumbrian finite form, while _leornian_ remains the better-known dictionary headword.
+[_Liorna_]{.iv lang=oe sort=liorna role=target_form} can therefore be treated as an attested Northumbrian finite form, while [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} remains the better-known dictionary headword.
 
 #### Development to Old English
 
@@ -10349,9 +10349,9 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*liznōjaną_ | Northumbrian _liornian_; dictionary headword often _leornian_ | liornian / leornian | family background, but not the cell compared here |
-| imperative singular | _\*líznô_ | regular output and Brunner's Northumbrian _liorna_ | liorna | exact match |
-| 3sg present companion | _\*líznōθi_ | related finite form _liornaþ_ | liornaþ | useful control, but not the target |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form}; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} | family background, but not the cell compared here |
+| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=regular_output} | [_liorna_]{.iv lang=oe sort=liorna role=target_form} | exact match |
+| 3sg present companion | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=comparison_form} | related finite form [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form} | [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form} | useful control, but not the target |
 
 ### learn (3sg) — OE liornaþ
 
@@ -10404,15 +10404,15 @@ Old English form: _liornaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English _liornian_ ~ _leornian_ from a learn-family base of the _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@Kroonen2013, 380]. The form followed here, _\*líznōθi_, is the finite 3sg cell of that family, not the citation form of the verb.
+Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} ~ [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} from a learn-family base of the _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as _\*liznōn-_ [@Kroonen2013, 380]. The derivational input [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input} is the finite 3sg cell of that family, not the citation form of the verb.
 
 For the ending, Campbell's lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ and Ringe and Taylor's discussion of stable _a_ in the class-II 2sg and 3sg make the non-_j_ 3sg cell the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 #### Old English evidence
 
-Clark Hall gives the ordinary headword as _leornian_ [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in _liorn-_, including _liorna_ and the 3sg _liornes_, beside the West-Saxon-looking _leornian_ tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with _io_ beside _leornian_ [@Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in _liorn-_, including [_liorna_]{.iv lang=oe sort=liorna role=comparison_form} and the 3sg [_liornes_]{.iv lang=oe sort=liornes role=comparison_form}, beside the West-Saxon-looking [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with _io_ beside [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} [@Campbell1959, §123 n. 2].
 
-The relevant comparison form here is the normalized 3sg _liornaþ_. The directly cited Old English evidence supports the finite stem _liorn-_; the exact _-aþ_ ending follows the regular class-II 3sg pattern.
+The relevant comparison form here is the normalized 3sg [_liornaþ_]{.iv lang=oe sort=liornath role=target_form}. The directly cited Old English evidence supports the finite stem _liorn-_; the exact _-aþ_ ending follows the regular class-II 3sg pattern.
 
 #### Development to Old English
 
@@ -10426,9 +10426,9 @@ The comparison below sets the relevant forms side by side. It distinguishes the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*liznōjaną_ | Northumbrian _liornian_; dictionary headword often _leornian_ | liornian / leornian | family background, but not the cell compared here |
-| 3sg present | _\*líznōθi_ | regular output _liornaþ_ | liornaþ | exact match |
-| imperative singular companion | _\*líznô_ | regular output and Brunner's Northumbrian _liorna_ | liorna | useful control, but not the target |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form}; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} | family background, but not the cell compared here |
+| 3sg present | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input} | regular output [_liornaþ_]{.iv lang=oe sort=liornath role=regular_output} | [_liornaþ_]{.iv lang=oe sort=liornath role=target_form} | exact match |
+| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=comparison_form} | [_liorna_]{.iv lang=oe sort=liorna role=comparison_form} | useful control, but not the target |
 
 ### lick (iptv.2sg) — OE licca
 
@@ -10478,7 +10478,7 @@ Old English form: _licca_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc _\*li_/_ekkōn_ continuing as Old English [_liccian_]{.iv lang=oe sort=liccian role=comparison_form}, Old Saxon [_likkon_]{.iv lang=os sort=likkon role=comparison_form}, and Old High German [_lecchon_]{.iv lang=ohg sort=lecchon role=comparison_form} [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [_\*likkōjanan_]{.iv lang=pgmc sort=likkojanan role=source_protoform} with the same Old English continuation [@Orel2003, 285].
 
 Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The form treated here is therefore not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_.
 
@@ -10486,7 +10486,7 @@ Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (<
 
 Bosworth-Toller lemmatizes the verb as _liccian_ [@BosworthToller1898, 614]. Campbell cites _liccian_ among Old English forms with preserved geminate _cc_ [@Campbell1959, §398.1]. Brunner likewise cites _liccian_ [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
 
-The Old English form here in this entry is the imperative singular _licca_. It is a paradigm form chosen beside the headword _liccian_ and the related present _liccaþ_, not a separately lemmatized citation word.
+The Old English form here in this entry is the imperative singular [_licca_]{.iv lang=oe sort=licca role=target_form}. It is a paradigm form chosen beside the headword [_liccian_]{.iv lang=oe sort=liccian role=comparison_form} and the related present [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form}, not a separately lemmatized citation word.
 
 #### Development to Old English
 
@@ -10498,9 +10498,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*líkkōjaną_ | regular output _liccian_ | liccian | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular | _\*líkkô_ | regular output _licca_ | licca | exact match between the derivational input and the Old English form here |
-| present third singular companion | _\*líkkōθi_ | regular output _liccaþ_ | liccaþ | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana role=source_protoform} | regular output [_liccian_]{.iv lang=oe sort=liccian role=comparison_form} | [_liccian_]{.iv lang=oe sort=liccian role=comparison_form} | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular | [_\*líkkô_]{.iv lang=pgmc sort=likko role=selected_input} | regular output [_licca_]{.iv lang=oe sort=licca role=regular_output} | [_licca_]{.iv lang=oe sort=licca role=target_form} | exact match between the derivational input and the Old English form here |
+| present third singular companion | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=comparison_form} | regular output [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form} | [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form} | useful family control, but not the target of this entry |
 
 ### lick (3sg) — OE liccaþ
 
@@ -10552,7 +10552,7 @@ Old English form: _liccaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give PWGmc _\*li_/_ekkōn_ continuing as Old English _liccian_, Old Saxon _likkon_, and Old High German _lecchon_ [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction _\*likkōjanan_ with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc _\*li_/_ekkōn_ continuing as Old English [_liccian_]{.iv lang=oe sort=liccian role=comparison_form}, Old Saxon [_likkon_]{.iv lang=os sort=likkon role=comparison_form}, and Old High German [_lecchon_]{.iv lang=ohg sort=lecchon role=comparison_form} [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [_\*likkōjanan_]{.iv lang=pgmc sort=likkojanan role=source_protoform} with the same Old English continuation [@Orel2003, 285].
 
 The form compared here in this entry is the non-_j_ present third singular _\*líkkōθi_, not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80].
 
@@ -10560,11 +10560,11 @@ The form compared here in this entry is the non-_j_ present third singular _\*l�
 
 Bosworth-Toller lemmatizes the verb as _liccian_ [@BosworthToller1898, 614]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of _liccian_ [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
 
-The form treated here is the present third singular _liccaþ_. It is a selected paradigm form beside the lemma _liccian_ and the related imperative _licca_, not a separately lemmatized headword.
+The form treated here is the present third singular [_liccaþ_]{.iv lang=oe sort=liccath role=target_form}. It is a selected paradigm form beside the lemma [_liccian_]{.iv lang=oe sort=liccian role=comparison_form} and the related imperative [_licca_]{.iv lang=oe sort=licca role=comparison_form}, not a separately lemmatized headword.
 
 #### Development to Old English
 
-_\*líkkōθi_ first loses final _-i_, giving _\*líkkōθ_. Campbell's class-II present endings lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ support the regular 3sg outcome _-aþ_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note stable _a_ in the class-II 2sg and 3sg [@RingeTaylor2014, 80]. Because this ending never contains _-j-_, the form does not pass through an i-umlauted _-eþ_ stage.
+[_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=selected_input} first loses final _-i_, giving _\*líkkōθ_. Campbell's class-II present endings lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ support the regular 3sg outcome _-aþ_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note stable _a_ in the class-II 2sg and 3sg [@RingeTaylor2014, 80]. Because this ending never contains _-j-_, the form does not pass through an i-umlauted _-eþ_ stage.
 
 #### Paradigm comparison
 
@@ -10572,9 +10572,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana} | regular output [_liccian_]{.iv lang=oe sort=liccian} | [_liccian_]{.iv lang=oe sort=liccian} | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular companion | [_\*líkkô_]{.iv lang=pgmc sort=likko} | regular output [_licca_]{.iv lang=oe sort=licca} | [_licca_]{.iv lang=oe sort=licca} | useful family control, but not the target of this entry |
-| present third singular | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi} | regular output [_liccaþ_]{.iv lang=oe sort=liccath} | [_liccaþ_]{.iv lang=oe sort=liccath} | exact match between the derivational input and the Old English form here |
+| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana role=source_protoform} | regular output [_liccian_]{.iv lang=oe sort=liccian role=comparison_form} | [_liccian_]{.iv lang=oe sort=liccian role=comparison_form} | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | [_\*líkkô_]{.iv lang=pgmc sort=likko role=comparison_form} | regular output [_licca_]{.iv lang=oe sort=licca role=regular_output} | [_licca_]{.iv lang=oe sort=licca role=comparison_form} | useful family control, but not the target of this entry |
+| present third singular | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=selected_input} | regular output [_liccaþ_]{.iv lang=oe sort=liccath role=regular_output} | [_liccaþ_]{.iv lang=oe sort=liccath role=target_form} | exact match between the derivational input and the Old English form here |
 
 ### show (iptv.2sg) — OE sċēawa
 

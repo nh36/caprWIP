@@ -760,9 +760,13 @@ def candidate_category(form: str) -> str:
         return "possible_garbage"
     if " " in form or "," in form or "_" in form:
         return "possible_garbage"
+    if form in EXACT_FRAGMENT_FORMS:
+        return "ignored_fragment"
     if form.startswith("*") and (len(form.lstrip("*")) <= 4 or form.endswith("-")):
         return "ignored_fragment"
     if form.startswith("-") or form.endswith("-") or "(" in form or ")" in form:
+        return "ignored_fragment"
+    if re.fullmatch(r"\*?[-]?[aeiouyāēīōūæǣǭǫ]+(?:þ|z|n|m)?", form):
         return "ignored_fragment"
     if re.fullmatch(r"[a-z]{1,4}", form):
         return "ignored_fragment"
@@ -891,6 +895,7 @@ def build_production_rows(add_overrides: list[dict[str, str]] | None = None, ign
 FALSE_POSITIVE_FORMS = {
     "attestation",
     "attested_variant",
+    "cell",
     "breaking",
     "citation",
     "comparator",
@@ -898,6 +903,21 @@ FALSE_POSITIVE_FORMS = {
     "development",
     "evidence",
     "family",
+    "lowering",
+    "tradition",
+    "voiced",
+}
+
+EXACT_FRAGMENT_FORMS = {
+    "awj",
+    "*awj",
+    "gj",
+    "*gj",
+    "sk",
+    "*sk",
+    "cc",
+    "cn-",
+    "-gj-",
 }
 
 
@@ -1081,6 +1101,7 @@ def write_audit(
         f"- Production indexed occurrences: {len(rows)}",
         f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
         f"- Audit-only candidates needing review: {len(needs_review_entries)}",
+        f"- Already indexed nearby: {len(buckets.get('already_indexed_nearby', []))}",
         f"- Ignored fragments or sequences: {len(buckets.get('ignored_fragment', [])) + len(buckets.get('ignored_by_override', []))}",
         f"- Possible extraction garbage: {len(buckets.get('possible_garbage', []))}",
         f"- Excluded intermediate trace forms: {len(excluded_trace_entries)}",

@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The lexeme-level reconstruction is not uniform. Kroonen cites `*mannan-`, and
-Orel has `*mannz` [@Kroonen2013, 354; @Orel2003, 299]. The selected input `*mánnas`
+Orel has `*mannz` [@Kroonen2013, 354; @Orel2003, 299]. The selected input [`*mánnas`]{.iv lang=pgmc sort=mannas role=selected_input}
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 
@@ -29,15 +29,15 @@ before the ending.
 
 ### Old English evidence
 
-Campbell gives the paradigm `mann, man / mannes / menn`
+Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form}, [`man`]{.iv lang=oe sort=man role=comparison_form} / [`mannes`]{.iv lang=oe sort=mannes role=target_form} / `menn`
 [@Campbell1959, §621].
-Sievers-Brunner likewise cites `man mannes` [@SieversBrunner1965, §226]. He
-also explains that word-final simplification underlies forms such as `man`
-beside inflected `monnes` [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under `mann`
+Sievers-Brunner likewise cites [`man`]{.iv lang=oe sort=man role=comparison_form} [`mannes`]{.iv lang=oe sort=mannes role=target_form} [@SieversBrunner1965, §226]. He
+also explains that word-final simplification underlies forms such as [`man`]{.iv lang=oe sort=man role=comparison_form}
+beside inflected [`monnes`]{.iv lang=oe sort=monnes role=comparison_form} [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under [`mann`]{.iv lang=oe sort=mann role=comparison_form}
 [@ClarkHall1960, 197].
 
 The relevant comparison form is therefore the attested genitive singular
-**`mannes`**, not the citation lemma `mann`.
+**[`mannes`]{.iv lang=oe sort=mannes role=target_form}**, not the citation lemma [`mann`]{.iv lang=oe sort=mann role=comparison_form}.
 
 ### Development to Old English
 
@@ -55,7 +55,7 @@ selected genitive singular.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | *mannăz | expected citation-form outcome `man` | mann / monn | establishes the lexeme, but not the selected target |
-| accusative singular | *manną | expected `man` | man | same word-final simplification as the nominative |
-| dative singular | *mannăi | expected `manne` | manne | preserves medial `nn`, but not the chosen cell |
-| selected genitive singular | *mánnas | compact-trace output: `mannes` | mannes | exact match between input, output, and attested comparator |
+| citation nominative singular | [`*mannăz`]{.iv lang=pgmc sort=mannaz role=source_protoform} | expected citation-form outcome [`man`]{.iv lang=oe sort=man role=regular_output} | [`mann`]{.iv lang=oe sort=mann role=comparison_form} / [`monn`]{.iv lang=oe sort=monn role=comparison_form} | establishes the lexeme, but not the selected target |
+| accusative singular | [`*manną`]{.iv lang=pgmc sort=manna role=comparison_form} | expected [`man`]{.iv lang=oe sort=man role=regular_output} | [`man`]{.iv lang=oe sort=man role=comparison_form} | same word-final simplification as the nominative |
+| dative singular | [`*mannăi`]{.iv lang=pgmc sort=mannai role=comparison_form} | expected [`manne`]{.iv lang=oe sort=manne role=regular_output} | [`manne`]{.iv lang=oe sort=manne role=comparison_form} | preserves medial `nn`, but not the chosen cell |
+| selected genitive singular | [`*mánnas`]{.iv lang=pgmc sort=mannas role=selected_input} | compact-trace output: [`mannes`]{.iv lang=oe sort=mannes role=regular_output} | [`mannes`]{.iv lang=oe sort=mannes role=target_form} | exact match between input, output, and attested comparator |

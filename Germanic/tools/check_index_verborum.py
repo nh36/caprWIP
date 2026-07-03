@@ -56,6 +56,14 @@ def parse_audit_language_summary() -> set[str]:
     return titles
 
 
+def parse_audit_summary_lines() -> set[str]:
+    lines = set()
+    for line in AUDIT_PATH.read_text(encoding="utf-8").splitlines()[1:12]:
+        if line.startswith("- "):
+            lines.add(line)
+    return lines
+
+
 def parse_table_scanned_unresolved_pairs() -> set[tuple[str, str]]:
     section = audit_section("Table-scanned unresolved candidates")
     pairs: set[tuple[str, str]] = set()
@@ -356,6 +364,8 @@ def assert_generated_consistency() -> None:
     for code in ("dutch", "german", "modeng"):
         if code in form_languages:
             assert LANGUAGE_TITLES[code] in audit_titles
+    summary_lines = parse_audit_summary_lines()
+    assert any(line.startswith("- Already indexed nearby: ") for line in summary_lines)
 
 
 def assert_no_derivational_expression_rows() -> None:

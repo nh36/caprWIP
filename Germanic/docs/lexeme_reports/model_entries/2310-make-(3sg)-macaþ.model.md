@@ -18,13 +18,13 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen derives the Old English verb from **`*makōjan-`** on the make-family base **`*maka-`** [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English **`macian`** from PWGmc **`*makon`** through **`*mekojan`** [@RingeTaylor2014, 191].
+Kroonen derives the Old English verb from **[`*makōjan-`]{.iv lang=pgmc sort=makojan role=source_protoform}** on the make-family base **`*maka-`** [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English **[`macian`]{.iv lang=oe sort=macian role=comparison_form}** from PWGmc **[`*makon`]{.iv lang=os sort=makon role=comparison_form}** through **`*mekojan`** [@RingeTaylor2014, 191].
 
-The selected input **`*mákōθi`** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
+The selected input **[`*mákōθi`]{.iv lang=pgmc sort=makothi role=selected_input}** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as **`macian`** [@ClarkHall1960, 193]. The relevant comparison form here is the normalized present-third-singular **`macaþ`**, set beside the dictionary headword and the related imperative singular **`maca`**.
+Clark Hall lemmatizes the verb as **[`macian`]{.iv lang=oe sort=macian role=comparison_form}** [@ClarkHall1960, 193]. The relevant comparison form here is the normalized present-third-singular **[`macaþ`]{.iv lang=oe sort=macath role=target_form}**, set beside the dictionary headword and the related imperative singular **[`maca`]{.iv lang=oe sort=maca role=comparison_form}**.
 
 Campbell's class-II paradigm makes the ordinary 3sg ending **`-aþ`**, while his dialect survey allows secondary **`-e-`** spellings in some traditions [@Campbell1959, §356.4; @Campbell1959, §757]. **`Macaþ`** is thus the regular comparison form for the non-`j` 3sg cell.
 
@@ -40,6 +40,6 @@ The comparison below is manual. It distinguishes the selected 3sg cell from the 
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | `*makōjaną` | dictionary headword `macian` | macian | family background, but not the selected cell |
-| selected 3sg present | `*mákōθi` | trace output `macaþ` | macaþ | exact match |
-| imperative singular companion | `*mákô` | related finite form `maca` | maca | useful control, but not the target |
+| lexeme-level infinitive | [`*makōjaną`]{.iv lang=pgmc sort=makojana role=source_protoform} | dictionary headword [`macian`]{.iv lang=oe sort=macian role=comparison_form} | [`macian`]{.iv lang=oe sort=macian role=comparison_form} | family background, but not the selected cell |
+| selected 3sg present | [`*mákōθi`]{.iv lang=pgmc sort=makothi role=selected_input} | trace output [`macaþ`]{.iv lang=oe sort=macath role=regular_output} | [`macaþ`]{.iv lang=oe sort=macath role=target_form} | exact match |
+| imperative singular companion | [`*mákô`]{.iv lang=pgmc sort=mako role=comparison_form} | related finite form [`maca`]{.iv lang=oe sort=maca role=comparison_form} | [`maca`]{.iv lang=oe sort=maca role=comparison_form} | useful control, but not the target |
