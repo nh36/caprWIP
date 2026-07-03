@@ -100,26 +100,26 @@ Old English form: _nǣdre_
 
 #### Reconstruction and comparative evidence
 
-Kroonen distinguishes the masculine snake word _\*nadra-_ from a feminine
-ablauting formation _\*nēdrōn-_, and gives Old English _nǣdre_, _næddre_ under the
+Kroonen distinguishes the masculine snake word [_\*nadra-_]{.iv lang=pgmc sort=nadra role=source_protoform} from a feminine
+ablauting formation [_\*nēdrōn-_]{.iv lang=pgmc sort=nedron role=source_protoform}, and gives Old English [_nǣdre_]{.iv lang=oe sort=naedre}, [_næddre_]{.iv lang=oe sort=naeddre} under the
 latter [@Kroonen2013, 426]. Orel likewise points from the masculine entry to a
-feminine _\*nēdrōn_ ~ _\*nadrōn_ type [@Orel2003, 325].
+feminine [_\*nēdrōn_]{.iv lang=pgmc sort=nedron role=source_protoform} ~ [_\*nadrōn_]{.iv lang=pgmc sort=nadron role=source_protoform} type [@Orel2003, 325].
 
 The derivational input therefore is not a reshaped convenience form. It is the
 comparative reconstruction that specifically underlies the Old English noun.
 
 #### Old English evidence
 
-The Old English word is securely represented by _nǣdre_, with _næddre_ as a
-secondary variant. Clark Hall cross-references _næddre_ to _nædre_, and Fulk
-treats _næddre_ as the later geminated form beside the older base [@ClarkHall1960,
+The Old English word is securely represented by [_nǣdre_]{.iv lang=oe sort=naedre}, with [_næddre_]{.iv lang=oe sort=naeddre} as a
+secondary variant. Clark Hall cross-references [_næddre_]{.iv lang=oe sort=naeddre} to [_nædre_]{.iv lang=oe sort=naedre}, and Fulk
+treats [_næddre_]{.iv lang=oe sort=naeddre} as the later geminated form beside the older base [@ClarkHall1960,
 225; @Fulk2018, 149].
 
 #### Development to Old English
 
-From _\*nḗdrōn_, the stressed long mid vowel develops to Old English _ǣ_, and
-the weak feminine ending remains as final _-e_, giving _nǣdre_. The doubled
-consonant of _næddre_ is secondary and does not alter the inherited base form.
+From [_\*nḗdrōn_]{.iv lang=pgmc sort=nedron role=selected_input}, the stressed long mid vowel develops to Old English [_nǣdre_]{.iv lang=oe sort=naedre}, and
+the weak feminine ending remains as final _-e_, giving [_nǣdre_]{.iv lang=oe sort=naedre}. The doubled
+consonant of [_næddre_]{.iv lang=oe sort=naeddre} is secondary and does not alter the inherited base form.
 
 ### bake — OE bacan
 
@@ -3090,19 +3090,19 @@ Old English form: _sċēawian_
 
 #### Reconstruction and comparative evidence
 
-Orel and Kroonen cite a Class II verb of the type _\*skawōjan-_, with OE _scēawian_ among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as _scēawian_, _scāwian_, which places this entry in the ordinary show-verb set rather than in a special finite-cell workaround [@SieversBrunner1965].
+Orel and Kroonen cite a Class II verb of the type [_\*skawōjan-_]{.iv lang=pgmc sort=skawojan role=source_protoform}, with OE [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form} among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form}, [_scāwian_]{.iv lang=oe sort=scawian role=comparison_form}, which places this entry in the ordinary show-verb set rather than in a special finite-cell workaround [@SieversBrunner1965].
 
 #### Old English evidence
 
-Bright lists _scēawian_ (W. II.) and also the related form _scēawa_ [@BrightCassidyRingler1971]. The source tradition therefore uses _scēawian_, while the target represented here is the normalized project spelling _sċēawian_.
+Bright lists [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form} (W. II.) and also the related form [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form} [@BrightCassidyRingler1971]. The source tradition therefore uses [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form}, while the target represented here is the normalized project spelling [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form}.
 
 #### Development to Old English
 
-From _\*skáwōjaną_, Old English _aw_ before a following vowel yields _ēaw_, and the Class II suffix keeps _\*ō_ between _\*w_ and _\*j_. The development therefore runs regularly to _sċēawian_, without the direct _\*aw+j_ problem seen in other verb types [@Campbell1959; @Orel2003].
+From [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana role=selected_input}, Old English _aw_ before a following vowel yields _ēaw_, and the Class II suffix keeps _\*ō_ between _\*w_ and _\*j_. The development therefore runs regularly to [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form}, without the direct _\*aw+j_ problem seen in other verb types [@Campbell1959; @Orel2003].
 
 #### Form note
 
-The difference between _scēawian_ and _sċēawian_ is orthographic normalization of initial <_sc_>, not a difference of lexeme or paradigm cell [@Campbell1959; @Hogg1992].
+The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form} and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form} is orthographic normalization of initial <_sc_>, not a difference of lexeme or paradigm cell [@Campbell1959; @Hogg1992].
 
 ### sleep — OE slǣpan
 
@@ -9675,19 +9675,19 @@ Old English form: _sċuldrum_
 
 #### Reconstruction and comparative evidence
 
-The handbooks do not agree on the reconstruction of the Germanic word. Orel gives _\*skuldr(j)ō_, a feminine ō-/jō-stem, and explicitly notes that Old English _sculdor_ is masculine beside OFrisian _skulder_, Middle Low German _schulder_, and Old High German _scultra, scultirra_ [@Orel2003, 345]. Kroonen reconstructs _\*skuldra-_, a masculine a-stem, and derives the Old High German feminine forms from _\*skuldrjōn-_ [@Kroonen2013, 478]. Ringe and Taylor cite PWGmc _\*skuldru_ for the Old English branch [@RingeTaylor2014, 142].
+The handbooks do not agree on the reconstruction of the Germanic word. Orel gives [_\*skuldr(j)ō_]{.iv lang=pgmc sort=skuldrjo role=source_protoform}, a feminine ō-/jō-stem, and explicitly notes that Old English [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} is masculine beside OFrisian [_skulder_]{.iv lang=ofris sort=skulder role=comparison_form}, Middle Low German _schulder_, and Old High German [_scultra_]{.iv lang=ohg sort=scultra role=comparison_form}, [_scultirra_]{.iv lang=ohg sort=scultirra role=comparison_form} [@Orel2003, 345]. Kroonen reconstructs [_\*skuldra-_]{.iv lang=pgmc sort=skuldra role=source_protoform}, a masculine a-stem, and derives the Old High German feminine forms from [_\*skuldrjōn-_]{.iv lang=pgmc sort=skuldrjon role=source_protoform} [@Kroonen2013, 478]. Ringe and Taylor cite PWGmc [_\*skuldru_]{.iv lang=pwgmc sort=skuldru role=comparison_form} for the Old English branch [@RingeTaylor2014, 142].
 
 These forms imply different stem classes and different expectations for the Old English inflection. The question is which inflectional cell best aligns with the Old English evidence.
 
-A dative/instrumental plural form _\*skúldramiz_ aligns with the inherited plural ending that later yields Old English _-um_, and it corresponds directly to the attested dative plural discussed below.
+A dative/instrumental plural form [_\*skúldramiz_]{.iv lang=pgmc sort=skuldramiz role=selected_input} aligns with the inherited plural ending that later yields Old English _-um_, and it corresponds directly to the attested dative plural discussed below.
 
 #### Old English evidence
 
-The ordinary Old English headword is _sculdor_. Clark Hall lemmatizes _sculdor_ as the normal dictionary form [@ClarkHall1960, 257]. Bosworth-Toller also preserves the dative plural _sculdrum_ [@BosworthToller1898, 85].
+The ordinary Old English headword is [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form}. Clark Hall lemmatizes [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} as the normal dictionary form [@ClarkHall1960, 257]. Bosworth-Toller also preserves the dative plural [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form} [@BosworthToller1898, 85].
 
-Bosworth-Toller's Supplement records a weak-feminine _sculdra, an_ [@BosworthToller1898, 699], so _sculdra_ belongs to the Old English record beside the stronger masculine paradigm headed by _sculdor_. Brunner and Luick also record later spellings such as _sceoldor_ and the i-mutated dative plural _scyldrum_, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
+Bosworth-Toller's Supplement records a weak-feminine [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form}, an [@BosworthToller1898, 699], so [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} belongs to the Old English record beside the stronger masculine paradigm headed by [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form}. Brunner and Luick also record later spellings such as [_sceoldor_]{.iv lang=oe sort=sceoldor role=comparison_form} and the i-mutated dative plural [_scyldrum_]{.iv lang=oe sort=scyldrum role=comparison_form}, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
-The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural _sċuldrum_. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
+The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural [_sċuldrum_]{.iv lang=oe sort=sculdrum role=target_form}. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
 
 #### Development to Old English
 
@@ -9701,12 +9701,12 @@ A paradigm comparison identifies the Proto-Germanic inflectional cell that corre
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| singular-oriented citation input | *skúldrō | probe output: _sċoldor_ | sculdor | fails: the singular output has root _o_, not the attested _u_ |
-| serious plural-based singular alternative | *skúldru | probe output: _sċuldor_ | sculdor | close formally, but it compares a plural-stage input with a singular form |
-| dat./inst.pl. input | *skúldramiz | regular output: _sċuldrum_ | sculdrum | matches both the output and the dative plural comparison form |
-| later weak-feminine singular | — | OE _sculdra_ | sculdra | secondary doublet, useful as a control rather than the inherited target |
+| singular-oriented citation input | [_\*skúldrō_]{.iv lang=pgmc sort=skuldro role=comparison_form} | probe output: [_sċoldor_]{.iv lang=oe sort=scoldor role=regular_output} | [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} | fails: the singular output has root _o_, not the attested _u_ |
+| serious plural-based singular alternative | [_\*skúldru_]{.iv lang=pwgmc sort=skuldru role=comparison_form} | probe output: [_sċuldor_]{.iv lang=oe sort=sculdor role=regular_output} | [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} | close formally, but it compares a plural-stage input with a singular form |
+| dat./inst.pl. input | [_\*skúldramiz_]{.iv lang=pgmc sort=skuldramiz role=selected_input} | regular output: [_sċuldrum_]{.iv lang=oe sort=sculdrum role=target_form} | [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form} | matches both the output and the dative plural comparison form |
+| later weak-feminine singular | — | OE [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} | [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} | secondary doublet, useful as a control rather than the inherited target |
 
-The dative plural line is decisive because it matches both the output and the paradigm cell of Old English _sculdrum_. Singular-oriented candidates either lower the root vowel or compare unlike cells.
+The dative plural line is decisive because it matches both the output and the paradigm cell of Old English [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form}. Singular-oriented candidates either lower the root vowel or compare unlike cells.
 
 ### shove — OE sċēaf
 
@@ -10702,19 +10702,19 @@ Old English form: _sċēawaþ_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as _\*skawōjanan_ and cites Old English _sceáwian_ beside Old Frisian _skawia_, Old Saxon _skawōn_, and Old High German _scouwōn_ [@Orel2003, 337]. The derivational input in this entry is the present third singular _\*skáwōθi_, a finite class-II cell with stable _a_ in the 3sg ending [@RingeTaylor2014, 80].
+Orel reconstructs the verb as [_\*skawōjanan_]{.iv lang=pgmc sort=skawojanan role=source_protoform} and cites Old English [_sceáwian_]{.iv lang=oe sort=sceawian role=comparison_form} beside Old Frisian [_skawia_]{.iv lang=ofris sort=skawia role=comparison_form}, Old Saxon [_skawōn_]{.iv lang=os sort=skawon role=comparison_form}, and Old High German [_scouwōn_]{.iv lang=ohg sort=scouwon role=comparison_form} [@Orel2003, 337]. The derivational input in this entry is the present third singular [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi role=selected_input}, a finite class-II cell with stable _a_ in the 3sg ending [@RingeTaylor2014, 80].
 
 Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
 #### Old English evidence
 
-Bright lists the simplex headword _scēawian_ and the imperative _scēawa_, and under _geond-scēawian_ also records a third singular _-sceawað_ [@BrightCassidyRingler1971, 383]. The evidence thus establishes the _scēaw-_ / _-awað_ finite-cell pattern directly.
+Bright lists the simplex headword [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form} and the imperative [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form}, and under _geond-scēawian_ also records a third singular _sceawað_ [@BrightCassidyRingler1971, 383]. The evidence thus establishes the _scēaw-_ / _sceawað_ finite-cell pattern directly.
 
-The form written here as _sċēawaþ_ is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested _scēaw-_ evidence and the directly cited _-sceawað_ ending pattern.
+The form written here as [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form} is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested _scēaw-_ evidence and the directly cited _sceawað_ ending pattern.
 
 #### Development to Old English
 
-Campbell lists _scéawian_ under the same West Germanic _\*auw_ development [@Campbell1959, §120]. _\*skáwōθi_ therefore belongs to the _scēaw-_ family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-_a_ discussion show that the class-II 3sg ending gives _-aþ_, not _-eþ_ [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains _-j-_, no i-umlaut applies.
+Campbell lists [_scéawian_]{.iv lang=oe sort=sceawian role=comparison_form} under the same West Germanic _\*auw_ development [@Campbell1959, §120]. [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi role=selected_input} therefore belongs to the _scēaw-_ family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-_a_ discussion show that the class-II 3sg ending gives _-aþ_, not _-eþ_ [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains _-j-_, no i-umlaut applies.
 
 #### Paradigm comparison
 
@@ -10722,9 +10722,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | _\*skáwōjaną_ | regular output _sċēawian_ | scēawian | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular companion | _\*skáwô_ | regular output _sċēawa_ | scēawa | useful family control, but not the target of this entry |
-| present third singular | _\*skáwōθi_ | regular output _sċēawaþ_ | normalized sċēawaþ; source-side pattern _-sceawað_ | exact match for the finite form compared here |
+| lexeme-level infinitive | [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana role=comparison_form} | regular output [_sċēawian_]{.iv lang=oe sort=sceawian role=regular_output} | [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form} | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | [_\*skáwô_]{.iv lang=pgmc sort=skawo role=comparison_form} | regular output [_sċēawa_]{.iv lang=oe sort=sceawa role=regular_output} | [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form} | useful family control, but not the target of this entry |
+| present third singular | [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi role=selected_input} | regular output [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form} | normalized [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form}; source-side pattern _sceawað_ | exact match for the finite form compared here |
 
 \clearpage
 
@@ -10885,33 +10885,33 @@ Old English form: _\*rēac_
 
 #### Reconstruction and comparative evidence
 
-The wider noun family is represented by _\*ráukiz_ / _\*rauki-_, with Old English
-_rēc_ as the attested noun reflex in the comparative dictionaries
-[@Kroonen2013, 446; @Orel2003, 338]. The form followed here, _\*ráukaz_, is therefore not the
+The wider noun family is represented by [_\*ráukiz_]{.iv lang=pgmc sort=raukiz role=source_protoform} / [_\*rauki-_]{.iv lang=pgmc sort=rauki role=source_protoform}, with Old English
+[_rēc_]{.iv lang=oe sort=rec role=comparison_form} as the attested noun reflex in the comparative dictionaries
+[@Kroonen2013, 446; @Orel2003, 338]. The derivational input [_\*ráukaz_]{.iv lang=pgmc sort=raukaz role=selected_input} is therefore not the
 lexeme-level headword, but the form used here for the Old English derivation.
 
 #### Old English evidence
 
-The attested noun is _rēc_, not _\*rēac_. Clark Hall records _rēc_ as the noun
-and also preserves related forms such as _rēcels_; Kroonen likewise gives OE
-_rēc_ under the noun family [@ClarkHall1960, 255; @Kroonen2013, 446]. Clark
-Hall and Seebold also record verbal _rēac_ as the preterite of _rēocan_, but
+The attested noun is [_rēc_]{.iv lang=oe sort=rec role=comparison_form}, not [_\*rēac_]{.iv lang=oe sort=reac role=target_form}. Clark Hall records [_rēc_]{.iv lang=oe sort=rec role=comparison_form} as the noun
+and also preserves related forms such as [_rēcels_]{.iv lang=oe sort=recels role=comparison_form}; Kroonen likewise gives OE
+[_rēc_]{.iv lang=oe sort=rec role=comparison_form} under the noun family [@ClarkHall1960, 255; @Kroonen2013, 446]. Clark
+Hall and Seebold also record verbal [_rēac_]{.iv lang=oe sort=reac role=comparison_form} as the preterite of [_rēocan_]{.iv lang=oe sort=reocan role=comparison_form}, but
 that verbal form is separate from the noun treated here [@ClarkHall1960, 254;
 @Seebold1970, 380].
 
-The Old English form here, _\*rēac_, is therefore a reconstructed West Saxon noun form,
+The Old English form here [_\*rēac_]{.iv lang=oe sort=reac role=target_form} is therefore a reconstructed West Saxon noun form,
 not a directly attested manuscript headword.
 
 #### Development to Old English
 
-From _\*ráukaz_, the regular West Saxon development gives _\*rēac_. The attested
-noun _rēc_ belongs to the same lexical family, but reflects a later smoothed
+From [_\*ráukaz_]{.iv lang=pgmc sort=raukaz role=selected_input}, the regular West Saxon development gives [_\*rēac_]{.iv lang=oe sort=reac role=target_form}. The attested
+noun [_rēc_]{.iv lang=oe sort=rec role=comparison_form} belongs to the same lexical family, but reflects a later smoothed
 surface form rather than the regular noun target represented here.
 
 #### Form note
 
-The distinction here is between an attested noun headword _rēc_ and a
-reconstructed regular West Saxon target _\*rēac_. The latter is treated as the
+The distinction here is between an attested noun headword [_rēc_]{.iv lang=oe sort=rec role=comparison_form} and a
+reconstructed regular West Saxon target [_\*rēac_]{.iv lang=oe sort=reac role=target_form}. The latter is treated as the
 modelling target, while the former remains philological background.
 
 ### strew — OE *strīeġan
@@ -11262,39 +11262,39 @@ Old English form: _bucc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel both reconstruct the word with a geminate stop, _\*bukkaz_
+Kroonen and Orel both reconstruct the word with a geminate stop, [_\*bukkaz_]{.iv lang=pgmc sort=bukkaz role=source_protoform}
 [@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
-material behind Old English _bucca_ [@Orel2003, 62]. The derivational input
+material behind Old English [_bucca_]{.iv lang=oe sort=bucca role=comparison_form} [@Orel2003, 62]. The derivational input
 therefore remains identical with the lexeme label: no alternative inherited
 cell accounts for the form.
 
 #### Old English evidence
 
-Old English preserves a mixed lexical picture. Campbell cites _bucca_ in the
+Old English preserves a mixed lexical picture. Campbell cites [_bucca_]{.iv lang=oe sort=bucca role=comparison_form} in the
 exception set for this phonological environment [@Campbell1959, §115]. Clark
-Hall and Bosworth-Toller show that Old English has both _bucca_ and _bucc_
-[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form _bucc_
-is the target treated here, with _bucca_ kept as genuine philological
+Hall and Bosworth-Toller show that Old English has both [_bucca_]{.iv lang=oe sort=bucca role=comparison_form} and [_bucc_]{.iv lang=oe sort=bucc role=target_form}
+[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [_bucc_]{.iv lang=oe sort=bucc role=target_form}
+is the target treated here, with [_bucca_]{.iv lang=oe sort=bucca role=comparison_form} kept as genuine philological
 background from the same lexical family.
 
 #### Development to Old English
 
-From _\*búkkaz_, the regular inherited path gives _bocc_. That is the form
-expected under the ordinary lowering pattern in this environment. _bucc_
+From [_\*búkkaz_]{.iv lang=pgmc sort=bukkaz role=selected_input}, the regular inherited path gives [_bocc_]{.iv lang=oe sort=bocc role=regular_output}. That is the form
+expected under the ordinary lowering pattern in this environment. [_bucc_]{.iv lang=oe sort=bucc role=target_form}
 therefore remains outside the deterministic phonology.
 
 No accepted inherited cell repairs the mismatch. A high-vowel alternative would
-introduce i-umlaut and produce a _byċċ_-type form rather than the target.
-_bucc_ is therefore best treated as a documented exception, not as a regular
+introduce i-umlaut and produce a [_byċċ_]{.iv lang=oe sort=bycc role=comparison_form}-type form rather than the target.
+[_bucc_]{.iv lang=oe sort=bucc role=target_form} is therefore best treated as a documented exception, not as a regular
 paradigm-cell survival.
 
 #### Form comparison
 
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| regular inherited noun path | *búkkaz | regular output: _bocc_ | regular output, but not the target |
-| attested OE target | — | _bucc_ | genuine target form, but unexplained in the present classification |
-| parallel OE lexical background | — | _bucca_ | related n-stem form, not the present target |
+| regular inherited noun path | [_\*búkkaz_]{.iv lang=pgmc sort=bukkaz role=selected_input} | regular output: [_bocc_]{.iv lang=oe sort=bocc role=regular_output} | regular output, but not the target |
+| attested OE target | — | [_bucc_]{.iv lang=oe sort=bucc role=target_form} | genuine target form, but unexplained in the present classification |
+| parallel OE lexical background | — | [_bucca_]{.iv lang=oe sort=bucca role=comparison_form} | related n-stem form, not the present target |
 
 ### fowl — OE fugol
 

@@ -18,23 +18,23 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen distinguishes the masculine snake word `*nadra-` from a feminine
-ablauting formation `*nēdrōn-`, and gives Old English `nǣdre, næddre` under the
+Kroonen distinguishes the masculine snake word [`*nadra-`]{.iv lang=pgmc sort=nadra role=source_protoform} from a feminine
+ablauting formation [`*nēdrōn-`]{.iv lang=pgmc sort=nedron role=source_protoform}, and gives Old English [`nǣdre`]{.iv lang=oe sort=naedre}, [`næddre`]{.iv lang=oe sort=naeddre} under the
 latter [@Kroonen2013, 426]. Orel likewise points from the masculine entry to a
-feminine `*nēdrōn ~ *nadrōn` type [@Orel2003, 325].
+feminine [`*nēdrōn`]{.iv lang=pgmc sort=nedron role=source_protoform} ~ [`*nadrōn`]{.iv lang=pgmc sort=nadron role=source_protoform} type [@Orel2003, 325].
 
 The selected input therefore is not a reshaped convenience form. It is the
 comparative reconstruction that specifically underlies the Old English noun.
 
 ### Old English evidence
 
-The Old English word is securely represented by `nǣdre`, with `næddre` as a
-secondary variant. Clark Hall cross-references `næddre` to `nædre`, and Fulk
-treats `næddre` as the later geminated form beside the older base [@ClarkHall1960,
+The Old English word is securely represented by [`nǣdre`]{.iv lang=oe sort=naedre}, with [`næddre`]{.iv lang=oe sort=naeddre} as a
+secondary variant. Clark Hall cross-references [`næddre`]{.iv lang=oe sort=naeddre} to [`nædre`]{.iv lang=oe sort=naedre}, and Fulk
+treats [`næddre`]{.iv lang=oe sort=naeddre} as the later geminated form beside the older base [@ClarkHall1960,
 225; @Fulk2018, 149].
 
 ### Development to Old English
 
-From `*nḗdrōn`, the stressed long mid vowel develops to Old English `ǣ`, and
-the weak feminine ending remains as final `-e`, giving `nǣdre`. The doubled
-consonant of `næddre` is secondary and does not alter the inherited base form.
+From [`*nḗdrōn`]{.iv lang=pgmc sort=nedron role=selected_input}, the stressed long mid vowel develops to Old English [`nǣdre`]{.iv lang=oe sort=naedre}, and
+the weak feminine ending remains as final `-e`, giving [`nǣdre`]{.iv lang=oe sort=naedre}. The doubled
+consonant of [`næddre`]{.iv lang=oe sort=naeddre} is secondary and does not alter the inherited base form.

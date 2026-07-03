@@ -18,19 +18,19 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The handbooks do not agree on the reconstruction of the Germanic word. Orel gives **`*skuldr(j)ō`**, a feminine ō-/jō-stem, and explicitly notes that Old English `sculdor` is masculine beside OFrisian `skulder`, Middle Low German `schulder`, and Old High German `scultra, scultirra` [@Orel2003, 345]. Kroonen reconstructs **`*skuldra-`**, a masculine a-stem, and derives the Old High German feminine forms from **`*skuldrjōn-`** [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc `*skuldru`** for the Old English branch [@RingeTaylor2014, 142].
+The handbooks do not agree on the reconstruction of the Germanic word. Orel gives **[`*skuldr(j)ō`]{.iv lang=pgmc sort=skuldrjo role=source_protoform}**, a feminine ō-/jō-stem, and explicitly notes that Old English [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form} is masculine beside OFrisian [`skulder`]{.iv lang=ofris sort=skulder role=comparison_form}, Middle Low German `schulder`, and Old High German [`scultra`]{.iv lang=ohg sort=scultra role=comparison_form}, [`scultirra`]{.iv lang=ohg sort=scultirra role=comparison_form} [@Orel2003, 345]. Kroonen reconstructs **[`*skuldra-`]{.iv lang=pgmc sort=skuldra role=source_protoform}**, a masculine a-stem, and derives the Old High German feminine forms from **[`*skuldrjōn-`]{.iv lang=pgmc sort=skuldrjon role=source_protoform}** [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [`*skuldru`]{.iv lang=pwgmc sort=skuldru role=comparison_form}** for the Old English branch [@RingeTaylor2014, 142].
 
 These forms imply different stem classes and different expectations for the Old English inflection. The question is which inflectional cell best aligns with the Old English evidence.
 
-A dative/instrumental plural form **`*skúldramiz`** aligns with the inherited plural ending that later yields Old English `-um`, and it corresponds directly to the attested dative plural discussed below.
+A dative/instrumental plural form **[`*skúldramiz`]{.iv lang=pgmc sort=skuldramiz role=selected_input}** aligns with the inherited plural ending that later yields Old English `-um`, and it corresponds directly to the attested dative plural discussed below.
 
 ### Old English evidence
 
-The ordinary Old English headword is **`sculdor`**. Clark Hall lemmatizes `sculdor` as the normal dictionary form [@ClarkHall1960, 257]. Bosworth-Toller also preserves the dative plural **`sculdrum`** [@BosworthToller1898, 85].
+The ordinary Old English headword is **[`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form}**. Clark Hall lemmatizes [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form} as the normal dictionary form [@ClarkHall1960, 257]. Bosworth-Toller also preserves the dative plural **[`sculdrum`]{.iv lang=oe sort=sculdrum role=comparison_form}** [@BosworthToller1898, 85].
 
-Bosworth-Toller's Supplement records a weak-feminine **`sculdra, an`** [@BosworthToller1898, 699], so `sculdra` belongs to the Old English record beside the stronger masculine paradigm headed by `sculdor`. Brunner and Luick also record later spellings such as **`sceoldor`** and the i-mutated dative plural **`scyldrum`**, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
+Bosworth-Toller's Supplement records a weak-feminine **[`sculdra`]{.iv lang=oe sort=sculdra role=comparison_form}, an** [@BosworthToller1898, 699], so [`sculdra`]{.iv lang=oe sort=sculdra role=comparison_form} belongs to the Old English record beside the stronger masculine paradigm headed by [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form}. Brunner and Luick also record later spellings such as **[`sceoldor`]{.iv lang=oe sort=sceoldor role=comparison_form}** and the i-mutated dative plural **[`scyldrum`]{.iv lang=oe sort=scyldrum role=comparison_form}**, which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
-The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural **`sċuldrum`**. The spelling with `sċ-` is a normalized representation of the same Old English initial cluster.
+The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural **[`sċuldrum`]{.iv lang=oe sort=sculdrum role=target_form}**. The spelling with `sċ-` is a normalized representation of the same Old English initial cluster.
 
 ### Development to Old English
 
@@ -44,9 +44,9 @@ A paradigm comparison identifies the Proto-Germanic inflectional cell that corre
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| singular-oriented citation input | *skúldrō | probe output: `sċoldor` | sculdor | fails: the singular output has root `o`, not the attested `u` |
-| serious plural-based singular alternative | *skúldru | probe output: `sċuldor` | sculdor | close formally, but it compares a plural-stage input with a singular form |
-| dat./inst.pl. input | *skúldramiz | compact-trace output: `sċuldrum` | sculdrum | matches both the output and the dative plural comparison form |
-| later weak-feminine singular | — | OE `sculdra` | sculdra | secondary doublet, useful as a control rather than the inherited target |
+| singular-oriented citation input | [`*skúldrō`]{.iv lang=pgmc sort=skuldro role=comparison_form} | probe output: [`sċoldor`]{.iv lang=oe sort=scoldor role=regular_output} | [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form} | fails: the singular output has root `o`, not the attested `u` |
+| serious plural-based singular alternative | [`*skúldru`]{.iv lang=pwgmc sort=skuldru role=comparison_form} | probe output: [`sċuldor`]{.iv lang=oe sort=sculdor role=regular_output} | [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form} | close formally, but it compares a plural-stage input with a singular form |
+| dat./inst.pl. input | [`*skúldramiz`]{.iv lang=pgmc sort=skuldramiz role=selected_input} | compact-trace output: [`sċuldrum`]{.iv lang=oe sort=sculdrum role=target_form} | [`sculdrum`]{.iv lang=oe sort=sculdrum role=comparison_form} | matches both the output and the dative plural comparison form |
+| later weak-feminine singular | — | OE [`sculdra`]{.iv lang=oe sort=sculdra role=comparison_form} | [`sculdra`]{.iv lang=oe sort=sculdra role=comparison_form} | secondary doublet, useful as a control rather than the inherited target |
 
-The dative plural line is decisive because it matches both the output and the paradigm cell of Old English `sculdrum`. Singular-oriented candidates either lower the root vowel or compare unlike cells.
+The dative plural line is decisive because it matches both the output and the paradigm cell of Old English [`sculdrum`]{.iv lang=oe sort=sculdrum role=comparison_form}. Singular-oriented candidates either lower the root vowel or compare unlike cells.

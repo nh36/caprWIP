@@ -63,6 +63,14 @@ def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str,
 
 LANGUAGE_REGISTRY, LANGUAGE_ORDER, LANGUAGE_TITLES, LANGUAGE_COLUMNS = load_language_registry()
 KNOWN_LANGUAGE_CODES = {row["code"] for row in LANGUAGE_REGISTRY}
+ALLOWED_FORM_ROLES = {
+    "evidence_form",
+    "source_protoform",
+    "selected_input",
+    "target_form",
+    "comparison_form",
+    "regular_output",
+}
 FORM_RE = re.compile(r"[*A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ'().-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
 EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
@@ -92,6 +100,7 @@ NOISE_LINE_PREFIXES = (
 TABLE_AUDIT_HEADING_KEYWORDS = ("comparison", "status")
 TABLE_AUDIT_HEADER_KEYWORDS = ("form", "input", "outcome", "comparison", "branch")
 TABLE_AUDIT_HEADER_EXCLUDE = ("result", "status", "relevance")
+BARE_TABLE_CELL_RE = re.compile(r"^\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*(?:/\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*)*$")
 TRANSLIT_MAP = {
     "þ": "th",
     "ð": "d",
@@ -218,6 +227,7 @@ class CandidateOccurrence:
     line_no: int
     heading: str
     line_text: str
+    candidate_origin: str = "broad_prose_candidate"
 
 
 def transliterate_sort_key(text: str) -> str:
@@ -336,6 +346,8 @@ def add_production(
         return
     if language not in KNOWN_LANGUAGE_CODES:
         raise ValueError(f"Unknown index verborum language code: {language}")
+    if form_role not in ALLOWED_FORM_ROLES:
+        raise ValueError(f"Unknown index verborum form role: {form_role}")
     visible = display or cleaned
     key = (language, cleaned, visible, source_scope, source_ref)
     if key not in store:
@@ -436,6 +448,7 @@ def iter_explicit_tags(path: Path) -> list[dict[str, str]]:
                     "lang": attrs.get("lang", "").strip(),
                     "sort": attrs.get("sort", "").strip(),
                     "display": attrs.get("display", "").strip(),
+                    "role": attrs.get("role", "").strip(),
                 }
             )
     return tags
@@ -460,7 +473,7 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
                     "form": strip_markup(tag["content"]),
                     "display": tag["display"] or strip_markup(tag["content"]),
                     "sort_key": tag["sort"] or transliterate_sort_key(strip_markup(tag["content"])),
-                    "form_role": "evidence_form",
+                    "form_role": tag["role"] or "evidence_form",
                     "source_scope": "explicit_tag",
                     "source_ref": f"{rel}:{tag['line_no']}",
                     "origin": rel,
@@ -547,6 +560,13 @@ def extract_forms_from_markup(text: str) -> list[str]:
         if form and form not in seen:
             forms.append(form)
             seen.add(form)
+    bare = scrubbed.strip()
+    if BARE_TABLE_CELL_RE.fullmatch(bare):
+        for chunk in re.split(r"\s*/\s*", bare):
+            form = normalize_form(chunk.strip())
+            if form and form not in seen:
+                forms.append(form)
+                seen.add(form)
     return forms
 
 
@@ -593,6 +613,7 @@ def table_candidates_from_path(path: Path, *, allow_non_model_entry: bool = Fals
                             line_no=idx + 1,
                             heading=current_heading,
                             line_text=row_line.strip(),
+                            candidate_origin="table_candidate",
                         )
                     )
             idx += 1
@@ -657,6 +678,7 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
                         line_no=line_no,
                         heading=current_heading,
                         line_text=stripped,
+                        candidate_origin="broad_prose_candidate",
                     )
                 )
         for match in re.finditer(r"\b(?:PGmc|PWGmc|NWGmc|OE|ON|OHG|OFri|Goth)\s+(\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()\-]+)", scrubbed):
@@ -670,6 +692,7 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
                         line_no=line_no,
                         heading=current_heading,
                         line_text=stripped,
+                        candidate_origin="broad_prose_candidate",
                     )
                 )
     return candidates
@@ -893,6 +916,7 @@ def build_audit_rows(
             "heading": candidate.heading,
             "context": re.sub(r"\s+", " ", candidate.line_text).strip()[:160],
             "sort_key": transliterate_sort_key(candidate.form),
+            "candidate_origin": candidate.candidate_origin,
         }
         if category == "needs_review":
             entry["category"] = guess_unresolved_category(candidate)
@@ -1051,6 +1075,7 @@ def write_audit(
             "source_path": "Source file",
             "heading": "Nearest heading",
             "context": "Context",
+            "candidate_origin": "Candidate origin",
         }
         lines.append("| " + " | ".join(label_map[col] for col in columns) + " |")
         lines.append("| " + " | ".join("---" for _ in columns) + " |")
@@ -1089,6 +1114,11 @@ def write_audit(
     render_bucket("Likely Modern English linguistic forms", guess_groups.get("likely_modeng", []))
     render_bucket("Likely Old Irish forms", guess_groups.get("likely_oirish", []))
     render_bucket("Likely ordinary-language false positives", guess_groups.get("likely_false_positive", []))
+    render_bucket(
+        "Table-scanned unresolved candidates",
+        [entry for entry in needs_review_entries if entry.get("candidate_origin") == "table_candidate"],
+        columns=("form", "source_ref", "heading", "context"),
+    )
     render_bucket("Ignored fragments or sequences", buckets.get("ignored_fragment", []))
     render_bucket("Ignored by override", buckets.get("ignored_by_override", []))
     render_bucket("Possible extraction garbage", buckets.get("possible_garbage", []))

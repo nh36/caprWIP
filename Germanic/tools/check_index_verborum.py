@@ -185,6 +185,35 @@ def assert_greek_and_sanskrit_explicit_tags() -> None:
     assert any(row.form == "śrī" and row.language == "skt" and row.sort_key == "sri" for row in rows)
 
 
+def assert_optional_role_support() -> None:
+    with tempfile.TemporaryDirectory() as tmpdir:
+        fixture = Path(tmpdir) / "synthetic-role-iv.md"
+        fixture.write_text(
+            "[`bocc`]{.iv lang=oe sort=bocc role=regular_output}\n"
+            "[bucca]{.iv lang=oe sort=bucca role=comparison_form}\n"
+            "[`*búkkaz`]{.iv lang=pgmc sort=bukkaz role=selected_input}\n",
+            encoding="utf-8",
+        )
+        tags = explicit_tag_occurrences(paths=[fixture])
+        store = {}
+        for row in tags:
+            add_production(
+                store,
+                language=row["language"],
+                form=row["form"],
+                display=row["display"],
+                sort_key=row["sort_key"],
+                form_role=row["form_role"],
+                source_scope=row["source_scope"],
+                source_ref=row["source_ref"],
+                origin=row["origin"],
+            )
+        rows = list(store.values())
+    assert any(row.form == "bocc" and row.form_role == "regular_output" for row in rows)
+    assert any(row.form == "bucca" and row.form_role == "comparison_form" for row in rows)
+    assert any(row.form == "*búkkaz" and row.form_role == "selected_input" for row in rows)
+
+
 def assert_table_audit_scanner() -> None:
     with tempfile.TemporaryDirectory() as tmpdir:
         fixture = Path(tmpdir) / "synthetic-table.model.md"
@@ -192,13 +221,13 @@ def assert_table_audit_scanner() -> None:
             "### Paradigm comparison\n\n"
             "| Candidate input | OE comparison form | Result |\n"
             "| :--- | :--- | :--- |\n"
-            "| `*bákaną` | `bacan` | mismatch |\n",
+            "| *bákaną | bacan | mismatch |\n",
             encoding="utf-8",
         )
         candidates = table_candidates_from_path(fixture, allow_non_model_entry=True)
-    forms = {(candidate.form, candidate.heading) for candidate in candidates}
-    assert ("*bákaną", "### Paradigm comparison") in forms
-    assert ("bacan", "### Paradigm comparison") in forms
+    forms = {(candidate.form, candidate.heading, candidate.candidate_origin) for candidate in candidates}
+    assert ("*bákaną", "### Paradigm comparison", "table_candidate") in forms
+    assert ("bacan", "### Paradigm comparison", "table_candidate") in forms
 
 
 def assert_ordinary_glosses_ignored() -> None:
@@ -245,6 +274,7 @@ def main() -> None:
     assert_baseline_strictness()
     assert_table_form_handling()
     assert_greek_and_sanskrit_explicit_tags()
+    assert_optional_role_support()
     assert_table_audit_scanner()
     assert_ordinary_glosses_ignored()
     assert_intermediate_trace_forms_excluded()

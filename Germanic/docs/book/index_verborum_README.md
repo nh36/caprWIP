@@ -42,6 +42,7 @@ LaTeX `\index[...]` command after the tagged span.
 ## Optional attributes
 
 - `display` — override the printed index form while preserving the visible text
+- `role` — optional form-role override; defaults to `evidence_form`
 - `source_scope` — optional provenance hint for future tooling; ignored by the
   Lua filter
 
@@ -58,6 +59,9 @@ LaTeX `\index[...]` command after the tagged span.
 [*dags*]{.iv lang=goth sort=dags}
 [*λόγος*]{.iv lang=greek sort=logos}
 [śrī]{.iv lang=skt sort=sri}
+[`bocc`]{.iv lang=oe sort=bocc role=regular_output}
+[bucca]{.iv lang=oe sort=bucca role=comparison_form}
+[`*búkkaz`]{.iv lang=pgmc sort=bukkaz role=selected_input}
 ```
 
 ## Production vs audit
@@ -94,6 +98,8 @@ LaTeX `\index[...]` command after the tagged span.
   4. `comparison_form`
   5. `regular_output` when explicitly contrasted
   6. `evidence_form`
+- Optional `.iv role=...` support exists for cases where an explicit tag should
+  preserve a more specific role than the default `evidence_form`.
 - Mechanical `intermediate_trace_form` rows belong to the derivation apparatus,
   not to the production index verborum, unless they are explicitly promoted by
   tagging or another curated source.
