@@ -63,10 +63,17 @@ oe	berġes	berġes	berges	target_form	explicit_tag	Germanic/docs/lexeme_reports/
 oe	berġes	berġes	berges	target_form	lexical_heading	berry — OE berġes	manifest	auto
 oe	berige	berige	berige	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:31	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md	auto
 oe	berige	berige	berige	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:51	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md	auto
+oe	bezen	bezen	bezen	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	broad_prose_curated	override
+oe	biegan	biegan	biegan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21	broad_prose_curated	override
+oe	biegan	biegan	biegan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29	broad_prose_curated	override
 oe	bīeġan	bīeġan	biegan	target_form	lexical_heading	bow — OE bīeġan	manifest	auto
+oe	bigan	bigan	bigan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:25	broad_prose_curated	override
+oe	boc	boc	boc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21	broad_prose_curated	override
+oe	boc	boc	boc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25	broad_prose_curated	override
 oe	bōc	bōc	boc	target_form	lexical_heading	beech — OE bōc	manifest	auto
 oe	bocc	bocc	bocc	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md:38	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md	auto
 oe	bocc	bocc	bocc	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md:51	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md	auto
+oe	bodan	bodan	bodan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:34	broad_prose_curated	override
 oe	bora	bora	bora	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:44	Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md	auto
 oe	bora	bora	bora	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:44	Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md	auto
 oe	bora	bora	bora	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:45	Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md	auto
@@ -91,6 +98,8 @@ oe	brandes	brandes	brandes	evidence_form	explicit_tag	Germanic/docs/lexeme_repor
 oe	brandes	brandes	brandes	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:63	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
 oe	brandes	brandes	brandes	target_form	lexical_heading	brand — OE brandes	manifest	auto
 oe	brandum	brandum	brandum	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md:35	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md	auto
+oe	bréc	bréc	brec	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	broad_prose_curated	override
+oe	brēc	brēc	brec	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25	broad_prose_curated	override
 oe	brēċ	brēċ	brec	target_form	lexical_heading	breeches — OE brēċ	manifest	auto
 oe	breóst	breóst	breost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:34	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto
 oe	brēost	brēost	breost	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:23	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto
@@ -100,6 +109,9 @@ oe	brēost	brēost	breost	target_form	explicit_tag	Germanic/docs/lexeme_reports/
 oe	brēost	brēost	breost	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:59	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto
 oe	brēost	brēost	breost	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:61	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto
 oe	brēost	brēost	breost	target_form	lexical_heading	breast — OE brēost	manifest	auto
+oe	broc	broc	broc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25	broad_prose_curated	override
+oe	brōc	brōc	broc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	broad_prose_curated	override
+oe	brōc	brōc	broc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25	broad_prose_curated	override
 oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:23	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:32	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
@@ -127,6 +139,7 @@ oe	būgan	būgan	bugan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/m
 oe	būgan	būgan	bugan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md:69	Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md	auto
 oe	byċċ	byċċ	bycc	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md:43	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md	auto
 oe	byrd	byrd	byrd	target_form	lexical_heading	birth — OE byrd	manifest	auto
+oe	calfur	calfur	calfur	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	broad_prose_curated	override
 oe	cealf	cealf	cealf	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md	auto
 oe	ċealf	ċealf	cealf	target_form	lexical_heading	calf — OE ċealf	manifest	auto
 oe	cealfru	cealfru	cealfru	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md	auto
@@ -144,6 +157,7 @@ oe	cnobba	*cnobba	cnobba	target_form	lexical_heading	knob — OE *cnobba	manifes
 oe	cnopp	cnopp	cnopp	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:63	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md	auto
 oe	cnoppa	cnoppa	cnoppa	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:63	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md	auto
 oe	corn	corn	corn	target_form	lexical_heading	corn — OE corn	manifest	auto
+oe	cornes	cornes	cornes	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:25	broad_prose_curated	override
 oe	cræft	cræft	craeft	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 oe	cræft	cræft	craeft	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 oe	cræft	cræft	craeft	target_form	lexical_heading	craft — OE cræft	manifest	auto
@@ -153,6 +167,8 @@ oe	cū	cū	cu	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/m
 oe	cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:31	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe	cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:32	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe	cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:52	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
+oe	cūm	cūm	cum	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:34	broad_prose_curated	override
+oe	cūs	cūs	cus	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	broad_prose_curated	override
 oe	cwedu	cwedu	cwedu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:26	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe	cwedu	cwedu	cwedu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:40	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe	cwedu	cwedu	cwedu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:49	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
@@ -171,7 +187,9 @@ oe	cwudu	cwudu	cwudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/m
 oe	cȳ	cȳ	cy	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	table_semantic_rule	auto
 oe	cȳ	cȳ	cy	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	table_semantic_rule	auto
 oe	cȳ	cȳ	cy	target_form	lexical_heading	cow — OE cȳ	manifest	auto
+oe	dæd	dæd	daed	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	broad_prose_curated	override
 oe	dǣd	dǣd	daed	target_form	lexical_heading	deed — OE dǣd	manifest	auto
+oe	dēd	dēd	ded	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	broad_prose_curated	override
 oe	dile	dile	dile	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:22	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
 oe	dile	dile	dile	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:35	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
 oe	dile	dile	dile	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:41	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
@@ -185,6 +203,10 @@ oe	dill	dill	dill	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mode
 oe	dill	dill	dill	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:59	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
 oe	dor	dor	dor	target_form	lexical_heading	door — OE dor	manifest	auto
 oe	duguþ	duguþ	duguth	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:52	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
+oe	duru	duru	duru	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	broad_prose_curated	override
+oe	duru	duru	duru	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	broad_prose_curated	override
+oe	duru	duru	duru	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	broad_prose_curated	override
+oe	færan	færan	faeran	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	broad_prose_curated	override
 oe	færð	færð	faerd	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md	auto
 oe	fære	fære	faere	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md	auto
 oe	færst	færst	faerst	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md	auto
@@ -301,6 +323,9 @@ oe	ġearn	ġearn	gearn	target_form	lexical_heading	yarn — OE ġearn	manifest	a
 oe	ge-bann	ge-bann	gebann	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md:33	Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md	auto
 oe	gebann	gebann	gebann	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md:22	Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md	auto
 oe	gebanne	gebanne	gebanne	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md:34	Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md	auto
+oe	ge-byrd	ge-byrd	gebyrd	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	broad_prose_curated	override
+oe	gebyrd	gebyrd	gebyrd	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	broad_prose_curated	override
+oe	gebyrdu	gebyrdu	gebyrdu	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	broad_prose_curated	override
 oe	geoguþ	geoguþ	geoguth	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:35	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
 oe	ġeoguþ	ġeoguþ	geoguth	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:36	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
 oe	ġeoguþ	ġeoguþ	geoguth	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:40	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
@@ -1049,6 +1074,7 @@ pgmc	*dáigaz	*dáigaz	daigaz	selected_input	trace_proto_input	dough — OE dāg
 pgmc	*dáiliz	*dáiliz	dailiz	selected_input	trace_proto_input	deal — OE dǣl	compact	auto
 pgmc	*dálaz	*dálaz	dalaz	selected_input	trace_proto_input	dale — OE dæl	compact	auto
 pgmc	*dáwwō	*dáwwō	dawwo	selected_input	trace_proto_input	dew — OE dēaw	compact	auto
+pgmc	*dēdiz	*dēdiz	dediz	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	broad_prose_curated	override
 pgmc	*dḗdiz	*dḗdiz	dediz	source_protoform	lexical_protoform	deed — OE dǣd	manifest	auto
 pgmc	*dḗdiz	*dḗdiz	dediz	selected_input	trace_proto_input	deed — OE dǣd	compact	auto
 pgmc	*déliz	*déliz	deliz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:24	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
@@ -1075,6 +1101,7 @@ pgmc	*fállaną	*fállaną	fallana	selected_input	trace_proto_input	fall — OE 
 pgmc	*fálθaną	*fálθaną	falthana	selected_input	trace_proto_input	fold — OE fealdan	compact	auto
 pgmc	*fáraną	*fáraną	farana	source_protoform	lexical_protoform	fare — OE faran	manifest	auto
 pgmc	*fáraną	*fáraną	farana	selected_input	trace_proto_input	fare — OE faran	compact	auto
+pgmc	*faranan	*faranan	faranan	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:21	broad_prose_curated	override
 pgmc	*fárnaz	*fárnaz	farnaz	source_protoform	lexical_protoform	fern — OE fearn	manifest	auto
 pgmc	*fárnaz	*fárnaz	farnaz	selected_input	trace_proto_input	fern — OE fearn	compact	auto
 pgmc	*fasten-	*fasten-	fasten	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:22	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md	auto
@@ -1231,6 +1258,7 @@ pgmc	*kūi	*kūi	kui	source_protoform	lexical_protoform	cow — OE cȳ	manifest	
 pgmc	*kūi	*kūi	kui	selected_input	trace_proto_input	cow — OE cȳ	compact	auto
 pgmc	*kúrną	*kúrną	kurna	source_protoform	lexical_protoform	corn — OE corn	manifest	auto
 pgmc	*kúrną	*kúrną	kurna	selected_input	trace_proto_input	corn — OE corn	compact	auto
+pgmc	*kwedu-2	*kwedu-2	kwedu2	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:21	broad_prose_curated	override
 pgmc	*kwéðuz	*kwéðuz	kweduz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:24	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 pgmc	*kwéðuz	*kwéðuz	kweduz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:39	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 pgmc	*kwéðuz	*kwéðuz	kweduz	source_protoform	lexical_protoform	cud — OE cwedu	manifest	auto

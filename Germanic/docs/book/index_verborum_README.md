@@ -79,6 +79,8 @@ LaTeX `\index[...]` command after the tagged span.
   `Germanic/docs/book/index_verborum_audit.md`.
 - Broad model-entry prose suggestions are generated into
   `Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv`.
+- Curated broad-prose review decisions belong in
+  `Germanic/docs/book/index_verborum_broad_prose_decisions.tsv`.
 - Markdown comparison/paradigm tables in model entries are audited separately so
   untagged evidence forms still surface for review.
 - Curated table-review decisions belong in
@@ -105,6 +107,9 @@ LaTeX `\index[...]` command after the tagged span.
 - Mechanical `intermediate_trace_form` rows belong to the derivation apparatus,
   not to the production index verborum, unless they are explicitly promoted by
   tagging or another curated source.
+- Reader-facing sound-change examples are currently quarantined in the audit
+  pending a policy decision. They do not enter production automatically unless
+  they are explicitly tagged or otherwise curated.
 - Significant forms in running prose should be tagged explicitly with `.iv`
   spans when they ought to contribute an occurrence-level index reference.
 - Broad audit candidates are warnings only. They do **not** enter the
@@ -112,14 +117,17 @@ LaTeX `\index[...]` command after the tagged span.
   1. tagged in prose,
   2. added through `action=add` overrides, or
   3. accepted through a curated table decision, or
-  4. captured by another structured production source.
+  4. accepted through a curated broad-prose decision, or
+  5. captured by another structured production source.
 - Unresolved audit candidates should eventually be:
   1. tagged,
   2. added by override,
   3. accepted/deferred/ignored through a curated table decision when the source
      is a reviewed comparison table,
-  4. ignored by override, or
-  5. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
+  4. accepted/deferred/ignored through a curated broad-prose decision when the
+     source is running lexical prose,
+  5. ignored by override, or
+  6. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
      backlog is still being worked down.
 
 ## Baseline stability

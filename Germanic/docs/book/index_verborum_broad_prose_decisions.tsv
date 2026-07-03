@@ -1,0 +1,42 @@
+action	source_ref	form	language	form_role	note
+accept	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21	boc	oe	comparison_form	attested OE nominative comparison form cited by Kroonen
+accept	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25	boc	oe	comparison_form	attested OE nominative comparison form in evidence prose
+accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	ge-byrd	oe	comparison_form	attested prefixed OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	gebyrd	oe	comparison_form	attested prefixed OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	gebyrdu	oe	comparison_form	attested prefixed OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	bezen	oe	comparison_form	OE comparison form in extended both-family discussion
+ignore	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	cū	oe	comparison_form	parallel Campbell examples, not lexical evidence for both
+ignore	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	hū	oe	comparison_form	parallel Campbell examples, not lexical evidence for both
+ignore	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	tū	oe	comparison_form	parallel Campbell examples, not lexical evidence for both
+accept	Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:34	bodan	oe	comparison_form	OE cross-reference form in the bottom-family evidence
+defer	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21	*baugijana	pgmc	source_protoform	cited northwest Germanic preform; leave as reviewed suggestion for now
+defer	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21	*béagjan	pgmc	source_protoform	cited pre-Old-English stage; leave as reviewed suggestion for now
+accept	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21	biegan	oe	comparison_form	attested OE weak-verb comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:25	bigan	oe	comparison_form	attested OE comparison spelling in Bosworth-Toller
+defer	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29	*bēagjan	preoe	comparison_form	model-stage pre-Old-English form in the development prose
+accept	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29	biegan	oe	comparison_form	attested OE weak-verb comparison form in development prose
+accept	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	bréc	oe	comparison_form	attested OE plural comparison form cited in the derivational discussion
+accept	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	brōc	oe	comparison_form	attested OE singular comparison form cited in the derivational discussion
+accept	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25	broc	oe	comparison_form	attested OE comparison spelling in dictionary evidence
+accept	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25	brēc	oe	comparison_form	attested OE plural comparison form in dictionary evidence
+accept	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25	brōc	oe	comparison_form	attested OE singular comparison form in dictionary evidence
+defer	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21	*kalbaz	pgmc	selected_input	cited selected citation form; keep as reviewed suggestion until broader stage policy settles
+accept	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25	calfur	oe	comparison_form	attested OE plural comparison form
+defer	Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:21	*kurnan	pgmc	source_protoform	cited PGmc citation form; leave as reviewed suggestion for now
+accept	Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:25	cornes	oe	comparison_form	attested OE genitive singular comparison form
+defer	Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:29	*kurnăn	preoe	comparison_form	model-stage oblique comparator in development prose
+defer	Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:29	*kórną	preoe	comparison_form	model-stage lowered stage in development prose
+accept	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:34	cūm	oe	comparison_form	attested OE dative plural comparison form
+defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	cā	oe	comparison_form	unstable genitive evidence should remain deferred
+accept	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	cūs	oe	comparison_form	attested OE genitive comparison form in dictionary evidence
+accept	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:21	*kwedu-2	pgmc	source_protoform	cited PGmc resin-word headword
+defer	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	*dadiz	preoe	comparison_form	model-stage northwest Germanic form in comparative discussion
+defer	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	*dédiz	pgmc	comparison_form	alternate comparative reconstruction kept as reviewed suggestion
+accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	*dēdiz	pgmc	source_protoform	cited PGmc citation form
+accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	dæd	oe	comparison_form	attested West Saxon comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	dēd	oe	comparison_form	attested non-West-Saxon comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	duru	oe	comparison_form	parallel OE reflex from the separate *durō line
+accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	duru	oe	comparison_form	parallel OE reflex in the Old English evidence section
+accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	duru	oe	comparison_form	parallel OE reflex retained as comparison in the development prose
+accept	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:21	*faranan	pgmc	source_protoform	cited strong-verb headword in comparative discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	færan	oe	comparison_form	attested OE weak-verb contrast form

@@ -25,6 +25,7 @@ AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
 BROAD_PROSE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_broad_prose_suggestions.tsv"
 TABLE_DECISIONS_PATH = BOOK_DIR / "index_verborum_table_decisions.tsv"
+BROAD_PROSE_DECISIONS_PATH = BOOK_DIR / "index_verborum_broad_prose_decisions.tsv"
 UNRESOLVED_BASELINE_PATH = BOOK_DIR / "index_verborum_unresolved_baseline.tsv"
 LANGUAGE_REGISTRY_PATH = BOOK_DIR / "index_verborum_languages.tsv"
 INDEX_HEADER_PATH = ASSEMBLY_DIR / "book_draft_index_registry.tex"
@@ -80,11 +81,22 @@ TABLE_DECISION_FIELDS = [
     "form_role",
     "note",
 ]
+BROAD_PROSE_DECISION_FIELDS = [
+    "action",
+    "source_ref",
+    "form",
+    "language",
+    "form_role",
+    "note",
+]
 TABLE_SEMANTIC_SOURCE_SCOPE = "table_semantic_auto"
 TABLE_SEMANTIC_ORIGIN = "table_semantic_rule"
 TABLE_SEMANTIC_DECISION_SOURCE_SCOPE = "table_semantic_decision"
 TABLE_SEMANTIC_DECISION_ORIGIN = "table_semantic_decision"
 TABLE_DECISION_ACTIONS = {"accept", "defer", "ignore"}
+BROAD_PROSE_DECISION_SOURCE_SCOPE = "broad_prose_decision"
+BROAD_PROSE_DECISION_ORIGIN = "broad_prose_curated"
+BROAD_PROSE_DECISION_ACTIONS = {"accept", "defer", "ignore"}
 
 
 def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str, str], dict[str, str]]:
@@ -348,17 +360,22 @@ PROSE_NORMALIZATION_CUES = (
 PROSE_GLOSS_FORMS = {
     "among",
     "cell",
+    "line",
     "material",
     "noun",
     "ofris",
     "paradigm-cell",
     "regular",
+    "row",
     "sea",
     "shoulder",
     "side",
     "spellings",
     "tail",
     "target",
+    "umlaut",
+    "weak",
+    "weak-tail",
 }
 TABLE_METADATA_LABELS = {
     "oe",
@@ -1261,6 +1278,133 @@ def write_broad_prose_suggestions(path: Path, suggestions: list[dict[str, str]])
             writer.writerow({field: row.get(field, "") for field in BROAD_PROSE_SUGGESTION_FIELDS})
 
 
+def load_broad_prose_decisions() -> list[dict[str, str]]:
+    if not BROAD_PROSE_DECISIONS_PATH.exists():
+        return []
+    with BROAD_PROSE_DECISIONS_PATH.open(encoding="utf-8") as handle:
+        rows = [{key: (value or "").strip() for key, value in row.items()} for row in csv.DictReader(handle, delimiter="\t")]
+    for row in rows:
+        action = row.get("action", "")
+        if action not in BROAD_PROSE_DECISION_ACTIONS:
+            raise ValueError(f"Unknown broad prose decision action: {action or '<blank>'}")
+        if row.get("form"):
+            row["form"] = normalize_form(row["form"])
+        if action in {"accept", "defer"}:
+            if not row.get("language"):
+                raise ValueError(f"Broad prose decision {action} requires language: {row}")
+            if row.get("form_role") not in ALLOWED_FORM_ROLES:
+                raise ValueError(f"Broad prose decision {action} requires a valid form_role: {row}")
+    return rows
+
+
+def apply_broad_prose_decisions(
+    buckets: dict[str, list[dict[str, str]]],
+) -> tuple[dict[str, list[dict[str, str]]], list[dict[str, str]]]:
+    decisions = load_broad_prose_decisions()
+    if not decisions:
+        return buckets, []
+
+    updated = {key: list(value) for key, value in buckets.items()}
+    suggestion_entries = updated.get("broad_prose_suggestion", [])
+    unresolved_entries = updated.get("needs_review", [])
+    decision_rows: list[dict[str, str]] = []
+    deferred_entries: list[dict[str, str]] = []
+    ignored_entries: list[dict[str, str]] = []
+    seen_decision_rows: set[tuple[str, str, str, str]] = set()
+    consume_suggestions: set[int] = set()
+    consume_unresolved: set[int] = set()
+
+    for decision in decisions:
+        match_suggestion_index = next(
+            (
+                idx
+                for idx, row in enumerate(suggestion_entries)
+                if row.get("form") == decision.get("form") and row.get("source_ref") == decision.get("source_ref")
+            ),
+            None,
+        )
+        match_unresolved_index = next(
+            (
+                idx
+                for idx, row in enumerate(unresolved_entries)
+                if row.get("form") == decision.get("form") and row.get("source_ref") == decision.get("source_ref")
+            ),
+            None,
+        )
+        suggestion_row = suggestion_entries[match_suggestion_index] if match_suggestion_index is not None else None
+        unresolved_row = unresolved_entries[match_unresolved_index] if match_unresolved_index is not None else None
+        if suggestion_row is None and unresolved_row is None and decision["action"] != "accept":
+            continue
+        if suggestion_row is None and unresolved_row is None and decision["action"] == "accept":
+            continue
+
+        note = decision.get("note", "")
+        language = decision.get("language") or (suggestion_row or {}).get("suggested_language", "")
+        role = decision.get("form_role") or (suggestion_row or {}).get("suggested_role", "")
+        base_entry = suggestion_row or unresolved_row or {}
+
+        if decision["action"] == "accept":
+            key = (language, decision["form"], role, decision["source_ref"])
+            if key not in seen_decision_rows:
+                seen_decision_rows.add(key)
+                decision_rows.append(
+                    {
+                        "language": language,
+                        "form": decision["form"],
+                        "display": decision["form"],
+                        "sort_key": transliterate_sort_key(decision["form"]),
+                        "form_role": role,
+                        "source_scope": BROAD_PROSE_DECISION_SOURCE_SCOPE,
+                        "source_ref": decision["source_ref"],
+                        "origin": BROAD_PROSE_DECISION_ORIGIN,
+                        "status": "override",
+                    }
+                )
+        elif decision["action"] == "defer":
+            deferred_entries.append(
+                {
+                    "form": decision["form"],
+                    "source_ref": decision["source_ref"],
+                    "suggested_language": language,
+                    "suggested_role": role,
+                    "reason": note or base_entry.get("reason", "curated defer"),
+                }
+            )
+        else:
+            ignored_entries.append(
+                {
+                    "form": decision["form"],
+                    "source_ref": decision["source_ref"],
+                    "reason": note or base_entry.get("reason", "curated ignore"),
+                }
+            )
+
+        if match_suggestion_index is not None:
+            consume_suggestions.add(match_suggestion_index)
+        if match_unresolved_index is not None:
+            consume_unresolved.add(match_unresolved_index)
+
+    if consume_suggestions:
+        updated["broad_prose_suggestion"] = [
+            row for idx, row in enumerate(suggestion_entries) if idx not in consume_suggestions
+        ]
+    if consume_unresolved:
+        updated["needs_review"] = [
+            row for idx, row in enumerate(unresolved_entries) if idx not in consume_unresolved
+        ]
+    if deferred_entries:
+        updated["broad_prose_deferred"] = sorted(
+            deferred_entries,
+            key=lambda item: (item["source_ref"], item["form"], item["suggested_role"]),
+        )
+    if ignored_entries:
+        updated["broad_prose_curated_ignored"] = sorted(
+            ignored_entries,
+            key=lambda item: (item["source_ref"], item["form"]),
+        )
+    return updated, decision_rows
+
+
 def load_table_decisions() -> list[dict[str, str]]:
     if not TABLE_DECISIONS_PATH.exists():
         return []
@@ -1687,11 +1831,40 @@ def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
         return reason
     if any(token in candidate.form for token in (",", "/", ">")):
         return "notation or compound expression"
+    semantic_text = normalize_semantic_text(candidate.line_text)
+    line_forms = extract_forms_from_markup(candidate.line_text)
+    if (
+        candidate.form.startswith("*")
+        and candidate.heading.startswith("### Development")
+        and any(token in semantic_text for token in ("gives", "yields", "produces", "then", "stage", "whence", "via", "surfaces as", "leaves", "type"))
+        and not re.search(rf"\bfrom\b[^.]*{re.escape(candidate.form.casefold())}\b", semantic_text)
+    ):
+        return "intermediate or model-stage form in development chain"
+    if (
+        candidate.form.startswith("*")
+        and candidate.heading.startswith("### Development")
+        and candidate.form in line_forms
+    ):
+        form_index = line_forms.index(candidate.form)
+        if form_index > 0 and (
+            "yields" in semantic_text
+            or "gives" in semantic_text
+            or "produces" in semantic_text
+            or "stage" in semantic_text
+            or "whence" in semantic_text
+            or "then" in semantic_text
+        ):
+            return "intermediate or model-stage form in development chain"
+    if candidate.form.startswith("*") and candidate.heading.startswith("### Development") and "stage" in semantic_text:
+        return "intermediate or model-stage form in development chain"
     return ""
 
 
 def ordinary_prose_gloss_reason(candidate: CandidateOccurrence) -> str:
     lowered = candidate.form.casefold()
+    semantic_text = normalize_semantic_text(candidate.line_text)
+    if lowered == "help" and "separate noun" in semantic_text:
+        return "ordinary prose/gloss word"
     if lowered in PROSE_GLOSS_FORMS or lowered in FALSE_POSITIVE_FORMS:
         return "ordinary prose/gloss word"
     return ""
@@ -1735,10 +1908,37 @@ def inline_labeled_language(candidate: CandidateOccurrence) -> str:
         (rf"\b(?:ohg|old high german)\s+{form}\b", "ohg"),
         (rf"\b(?:ofri|ofris|old frisian)\s+{form}\b", "ofris"),
         (rf"\b(?:goth|gothic)\s+{form}\b", "goth"),
+        (rf"\b(?:german)\s+{form}\b", "german"),
+        (rf"\b(?:dutch)\s+{form}\b", "dutch"),
+        (rf"\b(?:latin|lat\.)\s+{form}\b", "lat"),
+        (rf"\b(?:greek|gk\.)\s+{form}\b", "greek"),
+        (rf"\b(?:sanskrit|skt\.)\s+{form}\b", "skt"),
     ):
         if re.search(pattern, text):
             return code
     return ""
+
+
+def same_entry_old_english_hint(candidate: CandidateOccurrence) -> bool:
+    if not candidate.source_path.endswith(".model.md"):
+        return False
+    path = REPO_ROOT / candidate.source_path
+    if not path.exists():
+        return False
+    current_heading = ""
+    needle = candidate.form.casefold()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if stripped.startswith("#"):
+            current_heading = stripped
+        normalized = normalize_semantic_text(line)
+        if needle not in normalized:
+            continue
+        if current_heading.startswith("### Old English evidence"):
+            return True
+        if re.search(rf"\b(?:old english|oe)\s+{re.escape(needle)}\b", normalized):
+            return True
+    return False
 
 
 def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
@@ -1746,6 +1946,8 @@ def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
     inline_code = inline_labeled_language(candidate)
     if inline_code:
         return inline_code
+    if not candidate.form.startswith("*") and same_entry_old_english_hint(candidate):
+        return "oe"
     hints = explicit_language_hints(text)
     non_oe_hints = hints - {"oe"}
     if candidate.form.startswith("*"):
@@ -1788,11 +1990,32 @@ def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, st
         return None
     if candidate.source_path == CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix():
         return None
-    if not candidate.source_path.endswith(".model.md"):
+    intro_path = INTRO_PATH.relative_to(REPO_ROOT).as_posix()
+    if not candidate.source_path.endswith(".model.md") and candidate.source_path != intro_path:
         return None
     semantic_text = normalize_semantic_text(" ".join([candidate.heading, candidate.line_text]))
+    if candidate.form == "help" and "separate noun" in semantic_text:
+        return None
+    if candidate.source_path == intro_path:
+        language = infer_broad_prose_language(candidate)
+        return broad_prose_suggestion_row(
+            candidate,
+            language=language or ("pgmc" if candidate.form.startswith("*") else "oe"),
+            role="comparison_form" if not candidate.form.startswith("*") else "source_protoform",
+            reason="introductory illustrative example",
+        )
     language = infer_broad_prose_language(candidate)
     if candidate.form.startswith("*"):
+        if (
+            candidate.heading.startswith("### Development")
+            and re.search(rf"\bfrom\b[^.]*{re.escape(candidate.form.casefold())}\b", semantic_text)
+        ):
+            return broad_prose_suggestion_row(
+                candidate,
+                language=language,
+                role="source_protoform",
+                reason="source form in development prose",
+            )
         if contains_phrase(semantic_text, PROSE_SELECTED_PHRASES) or contains_phrase(semantic_text, TABLE_SELECTED_PHRASES):
             return broad_prose_suggestion_row(
                 candidate,
@@ -1800,7 +2023,7 @@ def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, st
                 role="selected_input",
                 reason="selected input described in prose",
             )
-        if contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES) or "background" in semantic_text or "doublet" in semantic_text or "competing" in semantic_text:
+        if contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES) or "background" in semantic_text or "doublet" in semantic_text or "competing" in semantic_text or "such as" in semantic_text or "older references to" in semantic_text or "comparator" in semantic_text:
             return broad_prose_suggestion_row(
                 candidate,
                 language=language,
@@ -1815,6 +2038,36 @@ def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, st
                 reason="citation or reconstructed source form in prose",
             )
         return None
+    if (
+        language == "oe"
+        and candidate.heading.startswith("### Development")
+        and (
+            same_entry_old_english_hint(candidate)
+            or "citation form" in semantic_text
+            or "dictionary" in semantic_text
+            or re.search(rf"\b(?:oe|old english)\s+{re.escape(candidate.form.casefold())}\b", semantic_text)
+            or any(ch in candidate.form for ch in "þðæǣœȳċġǭǫáéíóúāēīōūḗḯ")
+        )
+    ):
+        return broad_prose_suggestion_row(
+            candidate,
+            language="oe",
+            role="comparison_form",
+            reason="attested Old English comparison form in development prose",
+        )
+    if (
+        language == "oe"
+        and same_entry_old_english_hint(candidate)
+        and candidate.heading.startswith(
+            ("### Reconstruction", "### Lexical note", "### Dialect note", "### Development note")
+        )
+    ):
+        return broad_prose_suggestion_row(
+            candidate,
+            language="oe",
+            role="comparison_form",
+            reason="attested Old English comparison form in surrounding prose",
+        )
     if contains_phrase(semantic_text, PROSE_COMPARISON_CUES) or candidate.heading.startswith(
         ("### Old English evidence", "### Form comparison", "### Paradigm comparison", "### Form note")
     ):
@@ -2191,6 +2444,7 @@ def build_production_rows(
     *,
     include_table_semantic: bool = True,
     table_semantic_results: dict[str, list[dict[str, str]]] | None = None,
+    broad_prose_decision_rows: list[dict[str, str]] | None = None,
 ) -> list[ProductionOccurrence]:
     manifest_rows = parse_manifest_rows()
     manifest_by_title = {
@@ -2277,7 +2531,7 @@ def build_production_rows(
             filtered.append(entry)
     if include_table_semantic:
         semantic_results = table_semantic_results or collect_table_semantic_results(filtered)
-        for row in semantic_results["auto_rows"] + semantic_results.get("decision_rows", []):
+        for row in semantic_results["auto_rows"] + semantic_results.get("decision_rows", []) + list(broad_prose_decision_rows or []):
             add_production(
                 store,
                 language=row["language"],
@@ -2333,9 +2587,13 @@ FALSE_POSITIVE_FORMS = {
     "lowering",
     "regular",
     "output",
+    "row",
     "tradition",
     "type",
+    "umlaut",
     "voiced",
+    "weak",
+    "weak-tail",
     "selected",
     "expected",
     "attested",
@@ -2361,29 +2619,30 @@ EXACT_FRAGMENT_FORMS = {
 def guess_unresolved_category(candidate: CandidateOccurrence) -> str:
     text = candidate.line_text
     form = candidate.form
-    label_map = [
-        (("Old Norse", "ON "), "likely_on"),
-        (("Old Saxon", "OS "), "likely_os"),
-        (("Old High German", "OHG "), "likely_ohg"),
-        (("Old Frisian", "OFris", "OFri "), "likely_ofris"),
-        (("Gothic", "Goth."), "likely_goth"),
-        (("Old Dutch",), "likely_odutch"),
-        (("Middle Dutch",), "likely_mdutch"),
-        (("Dutch",), "likely_dutch"),
-        (("German",), "likely_german"),
-        (("Latin", "Lat."), "likely_lat"),
-        (("Greek", "Gk."), "likely_greek"),
-        (("Sanskrit", "Skt."), "likely_skt"),
-        (("Middle English",), "likely_me"),
-        (("Modern English",), "likely_modeng"),
-        (("Old Irish",), "likely_oirish"),
-        (("PGmc", "Proto-Germanic"), "likely_pgmc"),
-        (("PWGmc", "Proto-West Germanic", "Proto-West-Germanic"), "likely_pwgmc"),
-        (("NWGmc", "Proto-Northwest Germanic", "Proto-Northwest-Germanic"), "likely_nwgmc"),
-        (("Old English", "OE "), "likely_oe"),
+    label_patterns = [
+        (r"\bold norse\b|\bon\b", "likely_on"),
+        (r"\bold saxon\b|\bos\b", "likely_os"),
+        (r"\bold high german\b|\bohg\b", "likely_ohg"),
+        (r"\bold frisian\b|\bofri\b|\bofris\b|\bofris\.", "likely_ofris"),
+        (r"\bgothic\b|\bgoth\.", "likely_goth"),
+        (r"\bold dutch\b", "likely_odutch"),
+        (r"\bmiddle dutch\b", "likely_mdutch"),
+        (r"\bdutch\b", "likely_dutch"),
+        (r"\bgerman\b", "likely_german"),
+        (r"\blatin\b|\blat\.", "likely_lat"),
+        (r"\bgreek\b|\bgk\.", "likely_greek"),
+        (r"\bsanskrit\b|\bskt\.", "likely_skt"),
+        (r"\bmiddle english\b", "likely_me"),
+        (r"\bmodern english\b", "likely_modeng"),
+        (r"\bold irish\b", "likely_oirish"),
+        (r"\bpgmc\b|\bproto-germanic\b", "likely_pgmc"),
+        (r"\bpwgmc\b|\bproto-west germanic\b|\bproto-west-germanic\b", "likely_pwgmc"),
+        (r"\bnwgmc\b|\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "likely_nwgmc"),
+        (r"\bold english\b|\boe\b", "likely_oe"),
     ]
-    for needles, category in label_map:
-        if any(needle in text for needle in needles):
+    lowered = text.casefold()
+    for pattern, category in label_patterns:
+        if re.search(pattern, lowered):
             return category
     if form in FALSE_POSITIVE_FORMS:
         return "likely_false_positive"
@@ -2689,6 +2948,16 @@ def write_audit(
         columns=("form", "source_ref", "suggested_language", "suggested_role", "reason"),
     )
     render_bucket(
+        "Curated broad-prose deferred",
+        buckets.get("broad_prose_deferred", []),
+        columns=("form", "source_ref", "suggested_language", "suggested_role", "reason"),
+    )
+    render_bucket(
+        "Curated broad-prose ignored",
+        buckets.get("broad_prose_curated_ignored", []),
+        columns=("form", "source_ref", "reason"),
+    )
+    render_bucket(
         "Reader-facing examples needing policy",
         buckets.get("reader_facing_policy", []),
         columns=("form", "source_ref", "heading", "context"),
@@ -2798,6 +3067,14 @@ def ensure_table_decisions_file() -> None:
         writer.writeheader()
 
 
+def ensure_broad_prose_decisions_file() -> None:
+    if BROAD_PROSE_DECISIONS_PATH.exists():
+        return
+    with BROAD_PROSE_DECISIONS_PATH.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=BROAD_PROSE_DECISION_FIELDS)
+        writer.writeheader()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--strict", action="store_true", help="Alias for --strict-mode=all.")
@@ -2823,14 +3100,22 @@ def main() -> None:
     BOOK_DIR.mkdir(parents=True, exist_ok=True)
     ensure_override_file()
     ensure_table_decisions_file()
+    ensure_broad_prose_decisions_file()
     rewrite_readme_language_block()
     base_rows = build_production_rows(include_table_semantic=False)
     table_semantic_results = collect_table_semantic_results(base_rows)
     write_table_suggestions(TABLE_SUGGESTIONS_PATH, table_semantic_results["suggestions"])
-    production_rows = build_production_rows(table_semantic_results=table_semantic_results)
+    initial_production_rows = build_production_rows(table_semantic_results=table_semantic_results)
+    initial_audit_buckets = build_audit_rows(initial_production_rows, table_semantic_results=table_semantic_results)
+    _, broad_prose_decision_rows = apply_broad_prose_decisions(initial_audit_buckets)
+    production_rows = build_production_rows(
+        table_semantic_results=table_semantic_results,
+        broad_prose_decision_rows=broad_prose_decision_rows,
+    )
     write_index_registry_header(production_rows)
     write_forms(production_rows)
     audit_buckets = build_audit_rows(production_rows, table_semantic_results=table_semantic_results)
+    audit_buckets, _ = apply_broad_prose_decisions(audit_buckets)
     write_broad_prose_suggestions(BROAD_PROSE_SUGGESTIONS_PATH, audit_buckets.get("broad_prose_suggestion", []))
     baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
     needs_review_entries = audit_buckets.get("needs_review", [])

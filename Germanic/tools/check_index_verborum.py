@@ -18,6 +18,8 @@ from build_index_verborum import (
     compare_against_baseline,
     excluded_intermediate_trace_forms,
     explicit_tag_occurrences,
+    infer_broad_prose_language,
+    load_broad_prose_decisions,
     load_table_decisions,
     load_unresolved_baseline,
     table_candidates_from_path,
@@ -35,6 +37,7 @@ REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registr
 SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
 BROAD_SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv"
 DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_decisions.tsv"
+BROAD_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_decisions.tsv"
 
 
 def load_forms_rows() -> list[dict[str, str]]:
@@ -209,15 +212,23 @@ def assert_table_decisions_load() -> None:
     assert any(row["action"] == "ignore" for row in rows)
 
 
+def assert_broad_decisions_load() -> None:
+    assert BROAD_DECISIONS_PATH.exists()
+    rows = load_broad_prose_decisions()
+    assert rows
+    assert any(row["action"] == "accept" for row in rows)
+    assert any(row["action"] == "defer" for row in rows)
+    assert any(row["action"] == "ignore" for row in rows)
+
+
 def assert_broad_suggestions_load() -> None:
     assert BROAD_SUGGESTIONS_PATH.exists()
     rows = load_broad_suggestion_rows()
     assert rows
-    assert any(row["form"] == "boc" and row["suggested_language"] == "oe" for row in rows)
-    assert any(row["form"] == "bodan" and row["suggested_language"] == "oe" for row in rows)
-    assert any(row["form"] == "brōc" and row["suggested_language"] == "oe" for row in rows)
-    assert any(row["form"] == "calfur" and row["suggested_language"] == "oe" for row in rows)
-    assert any(row["form"] == "cūm" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "fearna" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "flégan" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "*rustaz" and row["suggested_language"] == "pgmc" for row in rows)
+    assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29" and row["form"] == "duru" for row in rows)
 
 
 def assert_add_override_behavior() -> None:
@@ -562,6 +573,7 @@ def assert_table_semantic_rows() -> None:
 def assert_broad_prose_buckets() -> None:
     broad_rows = load_broad_suggestion_rows()
     assert not any(row["form"] == "target" for row in broad_rows)
+    assert not any(row["form"].startswith("*") and row["suggested_language"] == "german" for row in broad_rows)
 
     same_entry_pairs = parse_audit_bucket_pairs("Already indexed in same entry")
     assert ("bōc", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25") in same_entry_pairs
@@ -590,6 +602,54 @@ def assert_broad_prose_buckets() -> None:
     assert ("Cealf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21") in variant_pairs
 
 
+def assert_broad_prose_decisions_and_inference() -> None:
+    forms_rows = load_forms_rows()
+    production_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in forms_rows}
+    decision_rows = [row for row in forms_rows if row["source_scope"] == "broad_prose_decision"]
+    assert decision_rows
+    for key in {
+        ("oe", "boc", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21"),
+        ("oe", "boc", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25"),
+        ("oe", "duru", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29"),
+        ("pgmc", "*kwedu-2", "source_protoform", "Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:21"),
+        ("pgmc", "*dēdiz", "source_protoform", "Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21"),
+    }:
+        assert key in production_keys
+
+    scope_map: dict[tuple[str, str, str, str], set[str]] = {}
+    for row in forms_rows:
+        key = (row["language"], row["form"], row["form_role"], row["source_ref"])
+        scope_map.setdefault(key, set()).add(row["source_scope"])
+    assert all(not ({"explicit_tag", "broad_prose_decision"} <= scopes) for scopes in scope_map.values())
+    broad_rows = load_broad_suggestion_rows()
+    for row in broad_rows:
+        key = (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"])
+        assert key not in production_keys
+
+    raw_audit = build_audit_rows(build_production_rows())
+    raw_suggestions = raw_audit.get("broad_prose_suggestion", [])
+    assert any(
+        row["form"] == "duru"
+        and row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29"
+        and row["suggested_language"] == "oe"
+        and row["suggested_role"] == "comparison_form"
+        for row in raw_suggestions
+    )
+    assert not any(
+        row["form"].startswith("*") and row["suggested_language"] == "german"
+        for row in raw_suggestions
+    )
+    synthetic = CandidateOccurrence(
+        form="duru",
+        source_ref="Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29",
+        source_path="Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md",
+        line_no=29,
+        heading="### Development to Old English",
+        line_text="From `*dúrą`, Northwest Germanic u-lowering gives `*dórą`, and heavy-syllable nasal apocope then yields `dor`. The regular development treated in this entry is therefore `*dúrą > dor`; the feminine `duru` belongs to the separate line identified by Kroonen and Ringe-Taylor [@Kroonen2013; @RingeTaylor2014].",
+    )
+    assert infer_broad_prose_language(synthetic) == "oe"
+
+
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
@@ -609,6 +669,7 @@ def main() -> None:
     assert_written_table_schema()
     assert_overrides_load()
     assert_table_decisions_load()
+    assert_broad_decisions_load()
     assert_broad_suggestions_load()
     assert_add_override_behavior()
     assert_ignore_override_behavior()
@@ -623,6 +684,7 @@ def main() -> None:
     assert_generated_consistency()
     assert_table_semantic_rows()
     assert_broad_prose_buckets()
+    assert_broad_prose_decisions_and_inference()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")
