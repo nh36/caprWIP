@@ -147,6 +147,8 @@ oe	corn	corn	corn	target_form	lexical_heading	corn — OE corn	manifest	auto
 oe	cræft	cræft	craeft	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 oe	cræft	cræft	craeft	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 oe	cræft	cræft	craeft	target_form	lexical_heading	craft — OE cræft	manifest	auto
+oe	craft	craft	craft	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:49	table_semantic_decision	override
+oe	creft	creft	creft	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:48	table_semantic_decision	override
 oe	cū	cū	cu	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	table_semantic_rule	auto
 oe	cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:31	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe	cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:32	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
@@ -375,6 +377,8 @@ oe	hind	hind	hind	target_form	lexical_heading	hind — OE hind	manifest	auto
 oe	hladan	hladan	hladan	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56	table_semantic_rule	auto
 oe	hladan	hladan	hladan	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56	table_semantic_rule	auto
 oe	hladan	hladan	hladan	target_form	lexical_heading	lade — OE hladan	manifest	auto
+oe	hlæhhan	hlæhhan	hlaehhan	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	table_semantic_decision	override
+oe	hlehhan	hlehhan	hlehhan	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	table_semantic_decision	override
 oe	hlid	hlid	hlid	target_form	lexical_heading	lid — OE hlid	manifest	auto
 oe	hliehhan	hliehhan	hliehhan	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57	table_semantic_rule	auto
 oe	hliehhan	hliehhan	hliehhan	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57	table_semantic_rule	auto
@@ -415,6 +419,7 @@ oe	lappa	lappa	lappa	regular_output	table_semantic_auto	Germanic/docs/lexeme_rep
 oe	lappa	lappa	lappa	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:58	table_semantic_rule	auto
 oe	lappa	lappa	lappa	target_form	lexical_heading	lap — OE lappa	manifest	auto
 oe	leappan	leappan	leappan	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:59	table_semantic_rule	auto
+oe	leornian	leornian	leornian	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:63	table_semantic_decision	override
 oe	leornian	leornian	leornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:21	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	auto
 oe	leornian	leornian	leornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:29	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	auto
 oe	leornian	leornian	leornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:43	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	auto
@@ -551,6 +556,7 @@ oe	nǣdre	nǣdre	naedre	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/
 oe	nǣdre	nǣdre	naedre	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:38	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md	auto
 oe	nǣdre	nǣdre	naedre	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:39	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md	auto
 oe	nǣdre	nǣdre	naedre	target_form	lexical_heading	adder — OE nǣdre	manifest	auto
+oe	næfla	næfla	naefla	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60	table_semantic_decision	override
 oe	nafela	nafela	nafela	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:21	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
 oe	nafela	nafela	nafela	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:33	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
 oe	nafela	nafela	nafela	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:39	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
@@ -562,6 +568,7 @@ oe	nafola	nafola	nafola	target_form	explicit_tag	Germanic/docs/lexeme_reports/mo
 oe	nafola	nafola	nafola	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
 oe	nafola	nafola	nafola	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
 oe	nafola	nafola	nafola	target_form	lexical_heading	navel — OE nafola	manifest	auto
+oe	nasu	nasu	nasu	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59	table_semantic_decision	override
 oe	neaht	neaht	neaht	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:33	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
 oe	neaht	neaht	neaht	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:35	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
 oe	neaht	neaht	neaht	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:60	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md	auto
@@ -589,6 +596,7 @@ oe	ræste	ræste	raeste	target_form	explicit_tag	Germanic/docs/lexeme_reports/mo
 oe	ræste	ræste	raeste	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	auto
 oe	ræste	ræste	raeste	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	auto
 oe	ræste	ræste	raeste	target_form	lexical_heading	rest — OE ræste	manifest	auto
+oe	rast	rast	rast	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59	table_semantic_decision	override
 oe	*rēac	*rēac	reac	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:28	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md	auto
 oe	*rēac	*rēac	reac	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:35	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md	auto
 oe	*rēac	*rēac	reac	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:40	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md	auto
@@ -1214,6 +1222,7 @@ pgmc	*knúbbô	*knúbbô	knubbo	source_protoform	lexical_protoform	knob — OE *
 pgmc	*knúbbô	*knúbbô	knubbo	selected_input	trace_proto_input	knob — OE *cnobba	compact	auto
 pgmc	*knúppaz	*knúppaz	knuppaz	source_protoform	lexical_proto	knob — OE *cnobba	manifest	auto
 pgmc	*kōz	*kōz	koz	source_protoform	lexical_proto	cow — OE cȳ	manifest	auto
+pgmc	*kráftaz	*kráftaz	kraftaz	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 pgmc	*kráftaz	*kráftaz	kraftaz	source_protoform	lexical_protoform	craft — OE cræft	manifest	auto
 pgmc	*kráftaz	*kráftaz	kraftaz	selected_input	trace_proto_input	craft — OE cræft	compact	auto
 pgmc	*kráftiz	*kráftiz	kraftiz	source_protoform	lexical_proto	craft — OE cræft	manifest	auto
@@ -1846,7 +1855,6 @@ pwgmc	*skúldru	*skúldru	skuldru	comparison_form	explicit_tag	Germanic/docs/lex
 preoe	*bakan	*bakan	bakan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md	auto
 preoe	*hebun	*hebun	hebun	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 preoe	*hebun	*hebun	hebun	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
-preoe	*kráftaz	*kráftaz	kraftaz	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	table_semantic_rule	auto
 preoe	*sparai-	*sparai-	sparai	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto

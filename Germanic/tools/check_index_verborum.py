@@ -18,6 +18,7 @@ from build_index_verborum import (
     compare_against_baseline,
     excluded_intermediate_trace_forms,
     explicit_tag_occurrences,
+    load_table_decisions,
     load_unresolved_baseline,
     table_candidates_from_path,
     transliterate_sort_key,
@@ -32,6 +33,7 @@ COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.
 AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
 REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
 SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
+DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_decisions.tsv"
 
 
 def load_forms_rows() -> list[dict[str, str]]:
@@ -74,6 +76,18 @@ def parse_audit_summary_lines() -> set[str]:
 
 def parse_audit_table_semantic_notation_pairs() -> set[tuple[str, str]]:
     section = audit_section("Table semantic notation / compound expressions")
+    pairs: set[tuple[str, str]] = set()
+    for line in section.splitlines():
+        if not line.startswith("| `"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) >= 2:
+            pairs.add((parts[0].strip("`"), parts[1]))
+    return pairs
+
+
+def parse_audit_table_semantic_ignored_pairs() -> set[tuple[str, str]]:
+    section = audit_section("Table semantic ignored")
     pairs: set[tuple[str, str]] = set()
     for line in section.splitlines():
         if not line.startswith("| `"):
@@ -159,6 +173,15 @@ def assert_overrides_load() -> None:
         reader = csv.DictReader(handle, delimiter="\t")
         rows = list(reader)
     assert any(row["action"] == "add" for row in rows)
+    assert any(row["action"] == "ignore" for row in rows)
+
+
+def assert_table_decisions_load() -> None:
+    assert DECISIONS_PATH.exists()
+    rows = load_table_decisions()
+    assert rows
+    assert any(row["action"] == "accept" for row in rows)
+    assert any(row["action"] == "defer" for row in rows)
     assert any(row["action"] == "ignore" for row in rows)
 
 
@@ -392,6 +415,7 @@ def assert_generated_consistency() -> None:
         if code in form_languages:
             assert LANGUAGE_TITLES[code] in audit_titles
     summary_lines = parse_audit_summary_lines()
+    assert any(line.startswith("- Table-scanned unresolved candidates: ") for line in summary_lines)
     assert any(line.startswith("- Already indexed nearby: ") for line in summary_lines)
 
 
@@ -403,8 +427,11 @@ def assert_no_derivational_expression_rows() -> None:
 def assert_table_semantic_rows() -> None:
     forms_rows = load_forms_rows()
     suggestion_rows = load_suggestion_rows()
-    table_rows = [row for row in forms_rows if row["source_scope"] == "table_semantic_auto"]
-    assert table_rows
+    table_auto_rows = [row for row in forms_rows if row["source_scope"] == "table_semantic_auto"]
+    table_decision_rows = [row for row in forms_rows if row["source_scope"] == "table_semantic_decision"]
+    table_rows = table_auto_rows + table_decision_rows
+    assert table_auto_rows
+    assert table_decision_rows
     for row in table_rows:
         assert row["form_role"] in ALLOWED_FORM_ROLES
         assert row["language"]
@@ -420,6 +447,7 @@ def assert_table_semantic_rows() -> None:
         key = (row["language"], row["form"], row["form_role"], row["source_ref"])
         scope_map.setdefault(key, set()).add(row["source_scope"])
     assert all(not ({"explicit_tag", "table_semantic_auto"} <= scopes) for scopes in scope_map.values())
+    assert all(not ({"explicit_tag", "table_semantic_decision"} <= scopes) for scopes in scope_map.values())
     production_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in forms_rows}
     for row in suggestion_rows:
         key = (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"])
@@ -427,12 +455,31 @@ def assert_table_semantic_rows() -> None:
     assert not any(row["form"] == "*nēþlō" and row["language"] == "oe" for row in table_rows)
     assert not any(row["form"] == "*nḗdlō" for row in table_rows)
     assert not any(row["form"] == "*lákaną" and row["suggested_language"] == "oe" for row in suggestion_rows)
+    assert any(
+        row["form"] == "*kráftaz"
+        and row["language"] == "pgmc"
+        and row["form_role"] == "selected_input"
+        and row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50"
+        for row in table_auto_rows
+    )
+    assert not any(
+        row["form"] == "*kráftaz"
+        and row["language"] == "preoe"
+        and row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50"
+        for row in table_rows
+    )
+    unresolved_pairs = parse_table_scanned_unresolved_pairs()
+    assert unresolved_pairs == set()
     unresolved_forms = parse_table_scanned_unresolved_forms()
     for label in {"OE", "ON", "OHG", "OS", "OFri", "Goth", "PGmc", "PWGmc", "NWGmc", "pre-OE"}:
         assert label not in unresolved_forms
     notation_pairs = parse_audit_table_semantic_notation_pairs()
     assert any(form == "*fōr ~ *fun-" for form, _ in notation_pairs)
     assert any(form == "*watar-~*watan-" for form, _ in notation_pairs)
+    ignored_pairs = parse_audit_table_semantic_ignored_pairs()
+    for form in {"*kōz", "*kūi", "*kūiz", "*nasō", "*núsō"}:
+        assert not any(pair_form == form for pair_form, _ in ignored_pairs)
+    assert ("stefn", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:62") in ignored_pairs
 
     def auto_or_suggest(form: str, role: str) -> bool:
         return (
@@ -443,6 +490,31 @@ def assert_table_semantic_rows() -> None:
     assert auto_or_suggest("*kráftaz", "selected_input")
     assert auto_or_suggest("*lúnganjō", "selected_input")
     assert auto_or_suggest("*xláxjaną", "selected_input")
+    for key in {
+        ("oe", "creft", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:48"),
+        ("oe", "craft", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:49"),
+        ("oe", "leornian", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:63"),
+        ("oe", "næfla", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60"),
+        ("oe", "rast", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59"),
+        ("oe", "hlæhhan", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58"),
+        ("oe", "hlehhan", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58"),
+        ("oe", "nasu", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59"),
+    }:
+        assert key in production_keys
+    for key in {
+        ("oe", "cū", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65"),
+        ("oe", "cā", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67"),
+        ("pgmc", "*kōz", "source_protoform", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64"),
+        ("pgmc", "*kūi", "selected_input", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66"),
+        ("pgmc", "*kūiz", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67"),
+        ("pgmc", "*nasō", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59"),
+        ("pgmc", "*núsō", "selected_input", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:60"),
+        ("preoe", "*nḗdlō", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59"),
+    }:
+        assert key in {
+            (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"])
+            for row in suggestion_rows
+        }
 
 
 def assert_reconstructed_oe_index_commands() -> None:
@@ -463,6 +535,7 @@ def main() -> None:
     assert_production_rows()
     assert_written_table_schema()
     assert_overrides_load()
+    assert_table_decisions_load()
     assert_add_override_behavior()
     assert_ignore_override_behavior()
     assert_baseline_strictness()

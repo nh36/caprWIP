@@ -79,9 +79,9 @@ LaTeX `\index[...]` command after the tagged span.
   `Germanic/docs/book/index_verborum_audit.md`.
 - Markdown comparison/paradigm tables in model entries are audited separately so
   untagged evidence forms still surface for review.
-- Curated decisions belong in
-  `Germanic/docs/book/index_verborum_overrides.tsv`, not in the generated
-  `index_verborum_forms.tsv`.
+- Curated table-review decisions belong in
+  `Germanic/docs/book/index_verborum_table_decisions.tsv`; non-table manual
+  adds/ignores still belong in `Germanic/docs/book/index_verborum_overrides.tsv`.
 
 ## Scholarly policy
 
@@ -109,12 +109,15 @@ LaTeX `\index[...]` command after the tagged span.
   production index unless they are:
   1. tagged in prose,
   2. added through `action=add` overrides, or
-  3. captured by another structured production source.
+  3. accepted through a curated table decision, or
+  4. captured by another structured production source.
 - Unresolved audit candidates should eventually be:
   1. tagged,
   2. added by override,
-  3. ignored by override, or
-  4. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
+  3. accepted/deferred/ignored through a curated table decision when the source
+     is a reviewed comparison table,
+  4. ignored by override, or
+  5. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
      backlog is still being worked down.
 
 ## Baseline stability

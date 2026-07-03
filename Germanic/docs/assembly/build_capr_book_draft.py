@@ -47,7 +47,7 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
     commands_by_line_ref: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
     counts = Counter()
     model_entry_heading_map = {}
-    line_injected_scopes = { "table_semantic_auto" }
+    line_injected_scopes = {"table_semantic_auto", "table_semantic_decision"}
     with MANIFEST_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:

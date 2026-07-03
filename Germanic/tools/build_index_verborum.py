@@ -23,6 +23,7 @@ FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
+TABLE_DECISIONS_PATH = BOOK_DIR / "index_verborum_table_decisions.tsv"
 UNRESOLVED_BASELINE_PATH = BOOK_DIR / "index_verborum_unresolved_baseline.tsv"
 LANGUAGE_REGISTRY_PATH = BOOK_DIR / "index_verborum_languages.tsv"
 INDEX_HEADER_PATH = ASSEMBLY_DIR / "book_draft_index_registry.tex"
@@ -60,8 +61,19 @@ TABLE_SUGGESTION_FIELDS = [
     "reason",
     "context",
 ]
+TABLE_DECISION_FIELDS = [
+    "action",
+    "source_ref",
+    "form",
+    "language",
+    "form_role",
+    "note",
+]
 TABLE_SEMANTIC_SOURCE_SCOPE = "table_semantic_auto"
 TABLE_SEMANTIC_ORIGIN = "table_semantic_rule"
+TABLE_SEMANTIC_DECISION_SOURCE_SCOPE = "table_semantic_decision"
+TABLE_SEMANTIC_DECISION_ORIGIN = "table_semantic_decision"
+TABLE_DECISION_ACTIONS = {"accept", "defer", "ignore"}
 
 
 def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str, str], dict[str, str]]:
@@ -886,7 +898,12 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bpgmc\b|\bproto-germanic\b", "pgmc"),
         (r"\bpwgmc\b|\bproto-west germanic\b", "pwgmc"),
         (r"\bnwgmc\b|\bproto-northwest germanic\b", "nwgmc"),
-        (r"\bpre-oe\b|\bpre-old-english\b", "preoe"),
+        (
+            r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
+            r"later hardening stage|pre-oe stage|pre-old-english stage|"
+            r"model-internal stage|same derivation)\b",
+            "preoe",
+        ),
     ]
     for pattern, code in patterns:
         if re.search(pattern, text):
@@ -949,6 +966,7 @@ def collect_table_semantic_results(
     suggestions: list[dict[str, str]] = []
     ignored: list[dict[str, str]] = []
     notation: list[dict[str, str]] = []
+    mentions_by_pair: dict[tuple[str, str], TableFormMention] = {}
     seen_auto: set[tuple[str, str, str, str]] = set()
     seen_suggest: set[tuple[str, str, str, str]] = set()
     seen_ignored: set[tuple[str, str]] = set()
@@ -960,6 +978,7 @@ def collect_table_semantic_results(
         target_forms = entry_target_forms(entry_row)
         for mention in table_form_mentions_from_path(path):
             pair = (mention.form, mention.source_ref)
+            mentions_by_pair.setdefault(pair, mention)
             if pair in production_pairs:
                 continue
             notation_reason = notation_or_metadata_reason(mention.form)
@@ -1120,14 +1139,14 @@ def collect_table_semantic_results(
         for row in suggestions
         if (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"]) not in auto_keys
     ]
-    return {
+    return apply_table_decisions({
         "auto_rows": auto_rows,
         "suggestions": suggestions,
         "ignored": ignored,
         "notation": notation,
         "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in suggestions],
         "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in ignored],
-    }
+    }, mentions_by_pair)
 
 
 def write_table_suggestions(path: Path, suggestions: list[dict[str, str]]) -> None:
@@ -1136,6 +1155,197 @@ def write_table_suggestions(path: Path, suggestions: list[dict[str, str]]) -> No
         writer.writeheader()
         for row in sorted(suggestions, key=lambda item: (item["source_ref"], item["form"], item["suggested_role"])):
             writer.writerow(row)
+
+
+def load_table_decisions() -> list[dict[str, str]]:
+    if not TABLE_DECISIONS_PATH.exists():
+        return []
+    with TABLE_DECISIONS_PATH.open(encoding="utf-8") as handle:
+        rows = [{key: (value or "").strip() for key, value in row.items()} for row in csv.DictReader(handle, delimiter="\t")]
+    for row in rows:
+        action = row.get("action", "")
+        if action not in TABLE_DECISION_ACTIONS:
+            raise ValueError(f"Unknown table decision action: {action or '<blank>'}")
+        if row.get("form"):
+            row["form"] = normalize_form(row["form"])
+        if action in {"accept", "defer"}:
+            if not row.get("language"):
+                raise ValueError(f"Table decision {action} requires language: {row}")
+            if row.get("form_role") not in ALLOWED_FORM_ROLES:
+                raise ValueError(f"Table decision {action} requires a valid form_role: {row}")
+    return rows
+
+
+def table_semantic_suggestion_row(
+    mention: TableFormMention,
+    *,
+    language: str,
+    role: str,
+    reason: str,
+) -> dict[str, str]:
+    return {
+        "source_ref": mention.source_ref,
+        "nearest_heading": mention.heading,
+        "row_label": mention.row_label,
+        "form": mention.form,
+        "display": mention.form,
+        "suggested_language": language,
+        "suggested_role": role,
+        "confidence": "suggest",
+        "reason": reason,
+        "context": mention.line_text,
+    }
+
+
+def table_semantic_ignored_row(
+    mention: TableFormMention,
+    *,
+    reason: str,
+) -> dict[str, str]:
+    return {
+        "source_ref": mention.source_ref,
+        "nearest_heading": mention.heading,
+        "row_label": mention.row_label,
+        "form": mention.form,
+        "display": mention.form,
+        "suggested_language": "",
+        "suggested_role": "",
+        "confidence": "ignore",
+        "reason": reason,
+        "context": mention.line_text,
+    }
+
+
+def table_decision_matches_result(
+    decision: dict[str, str],
+    row: dict[str, str],
+    *,
+    language_field: str,
+    role_field: str,
+) -> bool:
+    if decision.get("form") != row.get("form") or decision.get("source_ref") != row.get("source_ref"):
+        return False
+    if decision.get("language") and decision["language"] != row.get(language_field, ""):
+        return False
+    if decision.get("form_role") and decision["form_role"] != row.get(role_field, ""):
+        return False
+    return True
+
+
+def apply_table_decisions(
+    raw_results: dict[str, list[dict[str, str]]],
+    mentions_by_pair: dict[tuple[str, str], TableFormMention],
+) -> dict[str, list[dict[str, str]]]:
+    decisions = load_table_decisions()
+    if not decisions:
+        return {
+            **raw_results,
+            "decision_rows": [],
+        }
+
+    consumed_suggestions: set[int] = set()
+    consumed_ignored: set[int] = set()
+    decision_rows: list[dict[str, str]] = []
+    extra_suggestions: list[dict[str, str]] = []
+    extra_ignored: list[dict[str, str]] = []
+    seen_decision_rows: set[tuple[str, str, str, str]] = set()
+    seen_suggestions: set[tuple[str, str, str]] = set()
+    seen_ignored: set[tuple[str, str]] = set()
+
+    suggestions = raw_results["suggestions"]
+    ignored = raw_results["ignored"]
+
+    for decision in decisions:
+        pair = (decision["form"], decision["source_ref"])
+        mention = mentions_by_pair.get(pair)
+        matching_suggestion_indexes = [
+            idx
+            for idx, row in enumerate(suggestions)
+            if table_decision_matches_result(decision, row, language_field="suggested_language", role_field="suggested_role")
+        ]
+        matching_ignored_indexes = [
+            idx
+            for idx, row in enumerate(ignored)
+            if decision.get("form") == row.get("form") and decision.get("source_ref") == row.get("source_ref")
+        ]
+        suggestion_row = suggestions[matching_suggestion_indexes[0]] if matching_suggestion_indexes else None
+        ignored_row = ignored[matching_ignored_indexes[0]] if matching_ignored_indexes else None
+        note = decision.get("note", "")
+
+        if decision["action"] == "accept":
+            if not mention:
+                raise ValueError(f"Table decision accept could not find table mention: {decision}")
+            language = decision.get("language") or (suggestion_row or {}).get("suggested_language", "")
+            role = decision.get("form_role") or (suggestion_row or {}).get("suggested_role", "")
+            if not language or not role:
+                raise ValueError(f"Table decision accept requires language and form_role: {decision}")
+            key = (language, mention.form, role, mention.source_ref)
+            if key not in seen_decision_rows:
+                seen_decision_rows.add(key)
+                decision_rows.append(
+                    {
+                        "language": language,
+                        "form": mention.form,
+                        "display": mention.form,
+                        "sort_key": transliterate_sort_key(mention.form),
+                        "form_role": role,
+                        "source_scope": TABLE_SEMANTIC_DECISION_SOURCE_SCOPE,
+                        "source_ref": mention.source_ref,
+                        "origin": TABLE_SEMANTIC_DECISION_ORIGIN,
+                        "status": "override",
+                    }
+                )
+            consumed_suggestions.update(matching_suggestion_indexes)
+            consumed_ignored.update(matching_ignored_indexes)
+            continue
+
+        if decision["action"] == "defer":
+            if matching_suggestion_indexes:
+                continue
+            if not mention:
+                raise ValueError(f"Table decision defer could not find table mention: {decision}")
+            language = decision.get("language") or (suggestion_row or {}).get("suggested_language", "")
+            role = decision.get("form_role") or (suggestion_row or {}).get("suggested_role", "")
+            if not language or not role:
+                raise ValueError(f"Table decision defer requires language and form_role: {decision}")
+            reason = note or (ignored_row or {}).get("reason") or "curated defer"
+            key = (mention.form, mention.source_ref, role)
+            if key not in seen_suggestions:
+                seen_suggestions.add(key)
+                extra_suggestions.append(
+                    table_semantic_suggestion_row(mention, language=language, role=role, reason=reason)
+                )
+            consumed_ignored.update(matching_ignored_indexes)
+            continue
+
+        if not mention:
+            raise ValueError(f"Table decision ignore could not find table mention: {decision}")
+        reason = note or (suggestion_row or ignored_row or {}).get("reason") or "curated ignore"
+        if pair not in seen_ignored:
+            seen_ignored.add(pair)
+            extra_ignored.append(table_semantic_ignored_row(mention, reason=reason))
+        consumed_suggestions.update(matching_suggestion_indexes)
+        consumed_ignored.update(matching_ignored_indexes)
+
+    final_suggestions = [
+        row for idx, row in enumerate(suggestions)
+        if idx not in consumed_suggestions
+    ] + extra_suggestions
+    final_ignored = [
+        row for idx, row in enumerate(ignored)
+        if idx not in consumed_ignored
+    ] + extra_ignored
+
+    final_suggestions.sort(key=lambda item: (item["source_ref"], item["form"], item["suggested_role"]))
+    final_ignored.sort(key=lambda item: (item["source_ref"], item["form"]))
+    return {
+        **raw_results,
+        "suggestions": final_suggestions,
+        "ignored": final_ignored,
+        "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in final_suggestions],
+        "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in final_ignored],
+        "decision_rows": decision_rows,
+    }
 
 
 def table_candidates_from_path(path: Path, *, allow_non_model_entry: bool = False) -> list[CandidateOccurrence]:
@@ -1309,7 +1519,12 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bpgmc\b|\bproto-germanic\b", "pgmc"),
         (r"\bpwgmc\b|\bproto-west germanic\b", "pwgmc"),
         (r"\bnwgmc\b|\bproto-northwest germanic\b", "nwgmc"),
-        (r"\bpre-oe\b|\bpre-old-english\b", "preoe"),
+        (
+            r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
+            r"later hardening stage|pre-oe stage|pre-old-english stage|"
+            r"model-internal stage|same derivation)\b",
+            "preoe",
+        ),
     ]
     for pattern, code in patterns:
         if re.search(pattern, text):
@@ -1715,7 +1930,7 @@ def build_production_rows(
             filtered.append(entry)
     if include_table_semantic:
         semantic_results = table_semantic_results or collect_table_semantic_results(filtered)
-        for row in semantic_results["auto_rows"]:
+        for row in semantic_results["auto_rows"] + semantic_results.get("decision_rows", []):
             add_production(
                 store,
                 language=row["language"],
@@ -1979,6 +2194,10 @@ def write_audit(
         for language in counts_by_language
     }
     needs_review_entries = buckets.get("needs_review", [])
+    table_needs_review_entries = [
+        entry for entry in needs_review_entries
+        if entry.get("candidate_origin") == "table_candidate"
+    ]
     semantic_results = table_semantic_results or {"auto_rows": [], "suggestions": [], "ignored": [], "notation": []}
     excluded_trace_entries = excluded_intermediate_trace_forms()
     new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
@@ -1988,6 +2207,7 @@ def write_audit(
         f"- Production indexed occurrences: {len(rows)}",
         f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
         f"- Audit-only candidates needing review: {len(needs_review_entries)}",
+        f"- Table-scanned unresolved candidates: {len(table_needs_review_entries)}",
         f"- Table semantic auto-promoted: {len(semantic_results.get('auto_rows', []))}",
         f"- Table semantic suggestions: {len(semantic_results.get('suggestions', []))}",
         f"- Table semantic ignored: {len(semantic_results.get('ignored', []))}",
@@ -2155,6 +2375,14 @@ def ensure_override_file() -> None:
         writer.writeheader()
 
 
+def ensure_table_decisions_file() -> None:
+    if TABLE_DECISIONS_PATH.exists():
+        return
+    with TABLE_DECISIONS_PATH.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=TABLE_DECISION_FIELDS)
+        writer.writeheader()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--strict", action="store_true", help="Alias for --strict-mode=all.")
@@ -2179,6 +2407,7 @@ def main() -> None:
     run_sort_key_assertions()
     BOOK_DIR.mkdir(parents=True, exist_ok=True)
     ensure_override_file()
+    ensure_table_decisions_file()
     rewrite_readme_language_block()
     base_rows = build_production_rows(include_table_semantic=False)
     table_semantic_results = collect_table_semantic_results(base_rows)
