@@ -77,6 +77,8 @@ LaTeX `\index[...]` command after the tagged span.
   curated source.
 - Broad harvesting of arbitrary marked-up forms feeds only
   `Germanic/docs/book/index_verborum_audit.md`.
+- Broad model-entry prose suggestions are generated into
+  `Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv`.
 - Markdown comparison/paradigm tables in model entries are audited separately so
   untagged evidence forms still surface for review.
 - Curated table-review decisions belong in

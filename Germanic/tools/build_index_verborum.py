@@ -23,6 +23,7 @@ FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
+BROAD_PROSE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_broad_prose_suggestions.tsv"
 TABLE_DECISIONS_PATH = BOOK_DIR / "index_verborum_table_decisions.tsv"
 UNRESOLVED_BASELINE_PATH = BOOK_DIR / "index_verborum_unresolved_baseline.tsv"
 LANGUAGE_REGISTRY_PATH = BOOK_DIR / "index_verborum_languages.tsv"
@@ -55,6 +56,16 @@ TABLE_SUGGESTION_FIELDS = [
     "row_label",
     "form",
     "display",
+    "suggested_language",
+    "suggested_role",
+    "confidence",
+    "reason",
+    "context",
+]
+BROAD_PROSE_SUGGESTION_FIELDS = [
+    "source_ref",
+    "nearest_heading",
+    "form",
     "suggested_language",
     "suggested_role",
     "confidence",
@@ -264,6 +275,91 @@ TABLE_TARGET_PHRASES = (
     "old english target",
     "selected attested cell",
 )
+PROSE_SELECTED_PHRASES = (
+    "selected input",
+    "selected form",
+    "selected cell",
+    "selected branch",
+    "selected infinitive",
+    "selected nominative",
+    "selected dative",
+    "selected genitive",
+    "selected oblique",
+    "selected comparison form",
+    "selected input here is",
+    "selected input is",
+    "selected form isolates",
+    "form followed here",
+    "relevant comparison form",
+)
+PROSE_SOURCE_CUES = (
+    "kroonen gives",
+    "kroonen cites",
+    "kroonen treats",
+    "kroonen reconstructs",
+    "orel cites",
+    "orel gives",
+    "bright notes",
+    "bright lists",
+    "bosworth-toller records",
+    "clark hall gives",
+    "clark hall records",
+    "ringe and taylor give",
+    "ringe and taylor treat",
+    "campbell gives",
+    "campbell lists",
+    "campbell states",
+    "fulk presents",
+    "fulk cites",
+    "cross-references",
+    "dictionary headword",
+    "citation form",
+    "headword tradition",
+)
+PROSE_COMPARISON_CUES = (
+    "comparison form",
+    "competing",
+    "doublet",
+    "variant",
+    "plural",
+    "preterite",
+    "oblique",
+    "genitive",
+    "dative",
+    "cross-references",
+    "headword",
+    "dictionary",
+    "reflexes",
+    "attested",
+    "records",
+    "notes",
+    "gives",
+    "lists",
+    "cites",
+)
+PROSE_NORMALIZATION_CUES = (
+    "normalized",
+    "spelling used here",
+    "source spelling",
+    "source spellings",
+    "written here as",
+    "capitalized",
+)
+PROSE_GLOSS_FORMS = {
+    "among",
+    "cell",
+    "material",
+    "noun",
+    "ofris",
+    "paradigm-cell",
+    "regular",
+    "sea",
+    "shoulder",
+    "side",
+    "spellings",
+    "tail",
+    "target",
+}
 TABLE_METADATA_LABELS = {
     "oe",
     "on",
@@ -1157,6 +1253,14 @@ def write_table_suggestions(path: Path, suggestions: list[dict[str, str]]) -> No
             writer.writerow(row)
 
 
+def write_broad_prose_suggestions(path: Path, suggestions: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=BROAD_PROSE_SUGGESTION_FIELDS)
+        writer.writeheader()
+        for row in sorted(suggestions, key=lambda item: (item["source_ref"], item["form"], item["suggested_role"])):
+            writer.writerow({field: row.get(field, "") for field in BROAD_PROSE_SUGGESTION_FIELDS})
+
+
 def load_table_decisions() -> list[dict[str, str]]:
     if not TABLE_DECISIONS_PATH.exists():
         return []
@@ -1478,6 +1582,249 @@ def production_line_occurrences(
         line_no = int(line_part)
         by_source[path_part].append((row.form, line_no, nearest_heading_for_source_line(path_part, line_no)))
     return by_source
+
+
+def orthographic_normalization_key(text: str) -> str:
+    value = text.lstrip("*").casefold()
+    normalized = unicodedata.normalize("NFKD", value)
+    stripped = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    parts: list[str] = []
+    for ch in stripped:
+        if ch in {"þ", "ð"}:
+            parts.append("th")
+        elif ch in {"æ", "ǣ"}:
+            parts.append("ae")
+        elif ch == "œ":
+            parts.append("oe")
+        elif ch in {"ċ", "ġ"}:
+            parts.append(ch.replace("ċ", "c").replace("ġ", "g"))
+        elif ch == "ȳ":
+            parts.append("y")
+        else:
+            parts.append(ch)
+    loose = "".join(parts).replace("ae", "ea")
+    return re.sub(r"[^a-z0-9]+", "", loose)
+
+
+def model_entry_heading_map() -> dict[str, str]:
+    return {
+        heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"]): row["model_entry_path"]
+        for row in parse_manifest_rows()
+        if row.get("model_entry_path")
+    }
+
+
+def build_entry_coverage_index(
+    production_rows: list[ProductionOccurrence],
+) -> dict[str, dict[str, set[str]]]:
+    manifest_map = manifest_rows_by_model_entry_path()
+    heading_map = model_entry_heading_map()
+    coverage_index: dict[str, dict[str, set[str]]] = defaultdict(
+        lambda: {
+            "forms": set(),
+            "displays": set(),
+            "casefold_forms": set(),
+            "casefold_displays": set(),
+            "orth_keys": set(),
+        }
+    )
+    for row in production_rows:
+        entry_path = ""
+        if row.source_ref in heading_map:
+            entry_path = heading_map[row.source_ref]
+        elif ".model.md:" in row.source_ref:
+            path_part = row.source_ref.rsplit(":", 1)[0]
+            if path_part in manifest_map:
+                entry_path = path_part
+        if not entry_path:
+            continue
+        coverage = coverage_index[entry_path]
+        coverage["forms"].add(row.form)
+        coverage["displays"].add(row.display)
+        coverage["casefold_forms"].add(row.form.casefold())
+        coverage["casefold_displays"].add(row.display.casefold())
+        coverage["orth_keys"].add(orthographic_normalization_key(row.form))
+        coverage["orth_keys"].add(orthographic_normalization_key(row.display))
+    return coverage_index
+
+
+def same_entry_coverage_reason(
+    candidate: CandidateOccurrence,
+    coverage_index: dict[str, dict[str, set[str]]],
+) -> str:
+    coverage = coverage_index.get(candidate.source_path)
+    if not coverage:
+        return ""
+    if candidate.form in coverage["forms"] or candidate.form in coverage["displays"]:
+        return "same form already indexed in this entry"
+    return ""
+
+
+def orthographic_variant_reason(
+    candidate: CandidateOccurrence,
+    coverage_index: dict[str, dict[str, set[str]]],
+) -> str:
+    coverage = coverage_index.get(candidate.source_path)
+    if not coverage:
+        return ""
+    if candidate.form in coverage["forms"] or candidate.form in coverage["displays"]:
+        return ""
+    casefold = candidate.form.casefold()
+    loose_key = orthographic_normalization_key(candidate.form)
+    text = normalize_semantic_text(candidate.line_text)
+    if casefold in coverage["casefold_forms"] or casefold in coverage["casefold_displays"]:
+        return "capitalization variant of indexed form"
+    if candidate.form[:1].isupper() and loose_key in coverage["orth_keys"]:
+        return "capitalization variant of indexed form"
+    if loose_key in coverage["orth_keys"] and contains_phrase(text, PROSE_NORMALIZATION_CUES):
+        return "orthographic/normalization variant of indexed form"
+    return ""
+
+
+def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
+    reason = notation_or_metadata_reason(candidate.form)
+    if reason:
+        return reason
+    if any(token in candidate.form for token in (",", "/", ">")):
+        return "notation or compound expression"
+    return ""
+
+
+def ordinary_prose_gloss_reason(candidate: CandidateOccurrence) -> str:
+    lowered = candidate.form.casefold()
+    if lowered in PROSE_GLOSS_FORMS or lowered in FALSE_POSITIVE_FORMS:
+        return "ordinary prose/gloss word"
+    return ""
+
+
+def likely_category_language(category: str) -> str:
+    return {
+        "likely_oe": "oe",
+        "likely_pgmc": "pgmc",
+        "likely_pwgmc": "pwgmc",
+        "likely_nwgmc": "nwgmc",
+        "likely_preoe": "preoe",
+        "likely_on": "on",
+        "likely_os": "os",
+        "likely_ohg": "ohg",
+        "likely_ofris": "ofris",
+        "likely_goth": "goth",
+        "likely_odutch": "odutch",
+        "likely_mdutch": "mdutch",
+        "likely_dutch": "dutch",
+        "likely_german": "german",
+        "likely_lat": "lat",
+        "likely_greek": "greek",
+        "likely_skt": "skt",
+        "likely_me": "me",
+        "likely_modeng": "modeng",
+        "likely_oirish": "oirish",
+    }.get(category, "")
+
+
+def inline_labeled_language(candidate: CandidateOccurrence) -> str:
+    text = normalize_semantic_text(candidate.line_text)
+    form = re.escape(candidate.form.casefold())
+    for pattern, code in (
+        (rf"\b(?:oe|old english)\s+{form}\b", "oe"),
+        (rf"\b(?:pgmc|proto-germanic)\s+{form}\b", "pgmc"),
+        (rf"\b(?:pwgmc|proto-west germanic)\s+{form}\b", "pwgmc"),
+        (rf"\b(?:nwgmc|proto-northwest germanic)\s+{form}\b", "nwgmc"),
+        (rf"\b(?:on|old norse)\s+{form}\b", "on"),
+        (rf"\b(?:os|old saxon)\s+{form}\b", "os"),
+        (rf"\b(?:ohg|old high german)\s+{form}\b", "ohg"),
+        (rf"\b(?:ofri|ofris|old frisian)\s+{form}\b", "ofris"),
+        (rf"\b(?:goth|gothic)\s+{form}\b", "goth"),
+    ):
+        if re.search(pattern, text):
+            return code
+    return ""
+
+
+def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
+    text = normalize_semantic_text(" ".join([candidate.heading, candidate.line_text]))
+    inline_code = inline_labeled_language(candidate)
+    if inline_code:
+        return inline_code
+    hints = explicit_language_hints(text)
+    non_oe_hints = hints - {"oe"}
+    if candidate.form.startswith("*"):
+        for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
+            if code in hints:
+                return code
+        if len(non_oe_hints) == 1:
+            return next(iter(non_oe_hints))
+        return "pgmc"
+    if len(non_oe_hints) == 1:
+        return next(iter(non_oe_hints))
+    if candidate.heading.startswith("### Old English evidence"):
+        return "oe"
+    guessed = likely_category_language(guess_unresolved_category(candidate))
+    return guessed or "oe"
+
+
+def broad_prose_suggestion_row(
+    candidate: CandidateOccurrence,
+    *,
+    language: str,
+    role: str,
+    reason: str,
+    confidence: str = "suggest",
+) -> dict[str, str]:
+    return {
+        "source_ref": candidate.source_ref,
+        "nearest_heading": candidate.heading,
+        "form": candidate.form,
+        "suggested_language": language,
+        "suggested_role": role,
+        "confidence": confidence,
+        "reason": reason,
+        "context": re.sub(r"\s+", " ", candidate.line_text).strip()[:160],
+    }
+
+
+def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, str] | None:
+    if candidate.candidate_origin != "broad_prose_candidate":
+        return None
+    if candidate.source_path == CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix():
+        return None
+    if not candidate.source_path.endswith(".model.md"):
+        return None
+    semantic_text = normalize_semantic_text(" ".join([candidate.heading, candidate.line_text]))
+    language = infer_broad_prose_language(candidate)
+    if candidate.form.startswith("*"):
+        if contains_phrase(semantic_text, PROSE_SELECTED_PHRASES) or contains_phrase(semantic_text, TABLE_SELECTED_PHRASES):
+            return broad_prose_suggestion_row(
+                candidate,
+                language=language,
+                role="selected_input",
+                reason="selected input described in prose",
+            )
+        if contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES) or "background" in semantic_text or "doublet" in semantic_text or "competing" in semantic_text:
+            return broad_prose_suggestion_row(
+                candidate,
+                language=language,
+                role="comparison_form",
+                reason="comparative or background source form in prose",
+            )
+        if contains_phrase(semantic_text, PROSE_SOURCE_CUES) or "reconstruction" in semantic_text or "comparative" in semantic_text:
+            return broad_prose_suggestion_row(
+                candidate,
+                language=language,
+                role="source_protoform",
+                reason="citation or reconstructed source form in prose",
+            )
+        return None
+    if contains_phrase(semantic_text, PROSE_COMPARISON_CUES) or candidate.heading.startswith(
+        ("### Old English evidence", "### Form comparison", "### Paradigm comparison", "### Form note")
+    ):
+        return broad_prose_suggestion_row(
+            candidate,
+            language=language or "oe",
+            role="comparison_form",
+            reason="attested comparison or dictionary form described in prose",
+        )
+    return None
 
 
 def manifest_rows_by_model_entry_path() -> dict[str, dict[str, str]]:
@@ -1982,6 +2329,7 @@ FALSE_POSITIVE_FORMS = {
     "development",
     "evidence",
     "family",
+    "form",
     "lowering",
     "regular",
     "output",
@@ -2058,6 +2406,8 @@ def build_audit_rows(
 ) -> dict[str, list[dict[str, str]]]:
     production_occurrences = {(row.form, row.source_ref) for row in production_rows}
     nearby_occurrences = production_line_occurrences(production_rows)
+    entry_coverage_index = build_entry_coverage_index(production_rows)
+    reader_facing_path = CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix()
     if ignore_overrides is None:
         _, ignore_overrides = load_overrides()
     semantic_results = table_semantic_results or collect_table_semantic_results(production_rows)
@@ -2087,8 +2437,6 @@ def build_audit_rows(
             category = "table_semantic_ignored"
         elif (candidate.form, candidate.source_ref) in suggest_pairs:
             category = "table_semantic_suggestion"
-        elif category == "needs_review" and is_already_indexed_nearby(candidate, nearby_occurrences):
-            category = "already_indexed_nearby"
         entry = {
             "form": candidate.form,
             "source_ref": candidate.source_ref,
@@ -2098,6 +2446,36 @@ def build_audit_rows(
             "sort_key": transliterate_sort_key(candidate.form),
             "candidate_origin": candidate.candidate_origin,
         }
+        if category not in {"ignored_by_override", "table_semantic_notation", "table_semantic_ignored", "table_semantic_suggestion"}:
+            if candidate.candidate_origin == "broad_prose_candidate" and candidate.source_path == reader_facing_path:
+                category = "reader_facing_policy"
+            else:
+                notation_reason = broad_prose_notation_reason(candidate) if candidate.candidate_origin == "broad_prose_candidate" else ""
+                same_entry_reason = same_entry_coverage_reason(candidate, entry_coverage_index) if candidate.candidate_origin == "broad_prose_candidate" else ""
+                orthographic_reason = orthographic_variant_reason(candidate, entry_coverage_index) if candidate.candidate_origin == "broad_prose_candidate" else ""
+                prose_reason = ordinary_prose_gloss_reason(candidate) if candidate.candidate_origin == "broad_prose_candidate" else ""
+                broad_suggestion = (
+                    infer_broad_prose_suggestion(candidate)
+                    if candidate.candidate_origin == "broad_prose_candidate" and category == "needs_review"
+                    else None
+                )
+                if notation_reason:
+                    category = "broad_prose_notation"
+                    entry["reason"] = notation_reason
+                elif same_entry_reason:
+                    category = "same_entry_covered"
+                    entry["reason"] = same_entry_reason
+                elif orthographic_reason:
+                    category = "orthographic_variant"
+                    entry["reason"] = orthographic_reason
+                elif prose_reason:
+                    category = "ordinary_prose_gloss"
+                    entry["reason"] = prose_reason
+                elif broad_suggestion:
+                    category = "broad_prose_suggestion"
+                    entry.update(broad_suggestion)
+                elif category == "needs_review" and is_already_indexed_nearby(candidate, nearby_occurrences):
+                    category = "already_indexed_nearby"
         if category == "needs_review":
             entry["category"] = guess_unresolved_category(candidate)
         buckets[category].append(entry)
@@ -2207,7 +2585,14 @@ def write_audit(
         f"- Production indexed occurrences: {len(rows)}",
         f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
         f"- Audit-only candidates needing review: {len(needs_review_entries)}",
+        f"- True remaining unresolved: {len(needs_review_entries)}",
         f"- Table-scanned unresolved candidates: {len(table_needs_review_entries)}",
+        f"- Already indexed in same entry: {len(buckets.get('same_entry_covered', []))}",
+        f"- Broad-prose notation / compound expressions: {len(buckets.get('broad_prose_notation', []))}",
+        f"- Broad-prose evidence suggestions: {len(buckets.get('broad_prose_suggestion', []))}",
+        f"- Reader-facing examples needing policy: {len(buckets.get('reader_facing_policy', []))}",
+        f"- Ordinary prose/gloss ignored: {len(buckets.get('ordinary_prose_gloss', []))}",
+        f"- Orthographic/normalization variants: {len(buckets.get('orthographic_variant', []))}",
         f"- Table semantic auto-promoted: {len(semantic_results.get('auto_rows', []))}",
         f"- Table semantic suggestions: {len(semantic_results.get('suggestions', []))}",
         f"- Table semantic ignored: {len(semantic_results.get('ignored', []))}",
@@ -2288,6 +2673,36 @@ def write_audit(
         guess_groups[entry["category"]].append(entry)
     for group in guess_groups.values():
         group.sort(key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"]))
+    render_bucket(
+        "Already indexed in same entry",
+        buckets.get("same_entry_covered", []),
+        columns=("form", "source_ref", "heading", "reason"),
+    )
+    render_bucket(
+        "Broad-prose notation / compound expressions",
+        buckets.get("broad_prose_notation", []),
+        columns=("form", "source_ref", "reason"),
+    )
+    render_bucket(
+        "Broad-prose evidence suggestions",
+        buckets.get("broad_prose_suggestion", []),
+        columns=("form", "source_ref", "suggested_language", "suggested_role", "reason"),
+    )
+    render_bucket(
+        "Reader-facing examples needing policy",
+        buckets.get("reader_facing_policy", []),
+        columns=("form", "source_ref", "heading", "context"),
+    )
+    render_bucket(
+        "Ordinary prose/gloss ignored",
+        buckets.get("ordinary_prose_gloss", []),
+        columns=("form", "source_ref", "reason"),
+    )
+    render_bucket(
+        "Orthographic/normalization variant of indexed form",
+        buckets.get("orthographic_variant", []),
+        columns=("form", "source_ref", "reason"),
+    )
     likely_columns = ("form", "source_ref", "candidate_origin")
     render_bucket("Likely Old English forms", guess_groups.get("likely_oe", []), columns=likely_columns)
     render_bucket("Likely Proto-Germanic forms", guess_groups.get("likely_pgmc", []), columns=likely_columns)
@@ -2416,6 +2831,7 @@ def main() -> None:
     write_index_registry_header(production_rows)
     write_forms(production_rows)
     audit_buckets = build_audit_rows(production_rows, table_semantic_results=table_semantic_results)
+    write_broad_prose_suggestions(BROAD_PROSE_SUGGESTIONS_PATH, audit_buckets.get("broad_prose_suggestion", []))
     baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
     needs_review_entries = audit_buckets.get("needs_review", [])
     if args.write_unresolved_baseline:

@@ -33,6 +33,7 @@ COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.
 AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
 REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
 SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
+BROAD_SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv"
 DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_decisions.tsv"
 
 
@@ -43,6 +44,11 @@ def load_forms_rows() -> list[dict[str, str]]:
 
 def load_suggestion_rows() -> list[dict[str, str]]:
     with SUGGESTIONS_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_broad_suggestion_rows() -> list[dict[str, str]]:
+    with BROAD_SUGGESTIONS_PATH.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
@@ -68,8 +74,14 @@ def parse_audit_language_summary() -> set[str]:
 
 def parse_audit_summary_lines() -> set[str]:
     lines = set()
-    for line in AUDIT_PATH.read_text(encoding="utf-8").splitlines()[1:12]:
+    started = False
+    for line in AUDIT_PATH.read_text(encoding="utf-8").splitlines()[1:]:
+        if not line.strip():
+            if started:
+                break
+            continue
         if line.startswith("- "):
+            started = True
             lines.add(line)
     return lines
 
@@ -88,6 +100,18 @@ def parse_audit_table_semantic_notation_pairs() -> set[tuple[str, str]]:
 
 def parse_audit_table_semantic_ignored_pairs() -> set[tuple[str, str]]:
     section = audit_section("Table semantic ignored")
+    pairs: set[tuple[str, str]] = set()
+    for line in section.splitlines():
+        if not line.startswith("| `"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) >= 2:
+            pairs.add((parts[0].strip("`"), parts[1]))
+    return pairs
+
+
+def parse_audit_bucket_pairs(title: str) -> set[tuple[str, str]]:
+    section = audit_section(title)
     pairs: set[tuple[str, str]] = set()
     for line in section.splitlines():
         if not line.startswith("| `"):
@@ -183,6 +207,17 @@ def assert_table_decisions_load() -> None:
     assert any(row["action"] == "accept" for row in rows)
     assert any(row["action"] == "defer" for row in rows)
     assert any(row["action"] == "ignore" for row in rows)
+
+
+def assert_broad_suggestions_load() -> None:
+    assert BROAD_SUGGESTIONS_PATH.exists()
+    rows = load_broad_suggestion_rows()
+    assert rows
+    assert any(row["form"] == "boc" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "bodan" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "brōc" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "calfur" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "cūm" and row["suggested_language"] == "oe" for row in rows)
 
 
 def assert_add_override_behavior() -> None:
@@ -415,7 +450,14 @@ def assert_generated_consistency() -> None:
         if code in form_languages:
             assert LANGUAGE_TITLES[code] in audit_titles
     summary_lines = parse_audit_summary_lines()
+    assert any(line.startswith("- True remaining unresolved: ") for line in summary_lines)
     assert any(line.startswith("- Table-scanned unresolved candidates: ") for line in summary_lines)
+    assert any(line.startswith("- Already indexed in same entry: ") for line in summary_lines)
+    assert any(line.startswith("- Broad-prose notation / compound expressions: ") for line in summary_lines)
+    assert any(line.startswith("- Broad-prose evidence suggestions: ") for line in summary_lines)
+    assert any(line.startswith("- Reader-facing examples needing policy: ") for line in summary_lines)
+    assert any(line.startswith("- Ordinary prose/gloss ignored: ") for line in summary_lines)
+    assert any(line.startswith("- Orthographic/normalization variants: ") for line in summary_lines)
     assert any(line.startswith("- Already indexed nearby: ") for line in summary_lines)
 
 
@@ -517,6 +559,37 @@ def assert_table_semantic_rows() -> None:
         }
 
 
+def assert_broad_prose_buckets() -> None:
+    broad_rows = load_broad_suggestion_rows()
+    assert not any(row["form"] == "target" for row in broad_rows)
+
+    same_entry_pairs = parse_audit_bucket_pairs("Already indexed in same entry")
+    assert ("bōc", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25") in same_entry_pairs
+    assert ("cræft", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:31") in same_entry_pairs
+    assert ("cȳ", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:34") in same_entry_pairs
+    assert ("slǣpan", "Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25") in same_entry_pairs
+
+    notation_pairs = parse_audit_bucket_pairs("Broad-prose notation / compound expressions")
+    assert ("*bōk(j)ō-", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21") in notation_pairs
+    assert ("*budman- ~ *buttman-", "Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:22") in notation_pairs
+    assert ("*kō- ~ *ku-", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:22") in notation_pairs
+    assert ("cū(e), cȳ, cūs", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33") in notation_pairs
+
+    reader_pairs = parse_audit_bucket_pairs("Reader-facing examples needing policy")
+    assert ("*bacan", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1155") in reader_pairs
+    assert ("*fúrxtīnaz", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2224") in reader_pairs
+    assert ("ġeoc", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:378") in reader_pairs
+
+    prose_pairs = parse_audit_bucket_pairs("Ordinary prose/gloss ignored")
+    assert ("shoulder", "Germanic/docs/assembly/capr_book_intro_alpha_01.md:97") in prose_pairs
+    assert ("sea", "Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33") in prose_pairs
+
+    variant_pairs = parse_audit_bucket_pairs("Orthographic/normalization variant of indexed form")
+    assert ("Boraþ", "Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:29") in variant_pairs
+    assert ("Caelf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25") in variant_pairs
+    assert ("Cealf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21") in variant_pairs
+
+
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
@@ -536,6 +609,7 @@ def main() -> None:
     assert_written_table_schema()
     assert_overrides_load()
     assert_table_decisions_load()
+    assert_broad_suggestions_load()
     assert_add_override_behavior()
     assert_ignore_override_behavior()
     assert_baseline_strictness()
@@ -548,6 +622,7 @@ def main() -> None:
     assert_intermediate_trace_forms_excluded()
     assert_generated_consistency()
     assert_table_semantic_rows()
+    assert_broad_prose_buckets()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")
