@@ -225,9 +225,9 @@ def assert_broad_suggestions_load() -> None:
     assert BROAD_SUGGESTIONS_PATH.exists()
     rows = load_broad_suggestion_rows()
     assert rows
-    assert any(row["form"] == "fearna" and row["suggested_language"] == "oe" for row in rows)
-    assert any(row["form"] == "flégan" and row["suggested_language"] == "oe" for row in rows)
-    assert any(row["form"] == "*rustaz" and row["suggested_language"] == "pgmc" for row in rows)
+    # Check for forms that are still in broad suggestions (not yet accepted via curated decisions)
+    assert any(row["form"] == "*gánga" and row["suggested_language"] == "pgmc" for row in rows)
+    assert any(row["form"] == "*flēoganą" and row["suggested_language"] == "pgmc" for row in rows)
     assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29" and row["form"] == "duru" for row in rows)
 
 

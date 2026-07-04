@@ -5,9 +5,9 @@ accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	ge
 accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	gebyrd	oe	comparison_form	attested prefixed OE comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	gebyrdu	oe	comparison_form	attested prefixed OE comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	bezen	oe	comparison_form	OE comparison form in extended both-family discussion
-ignore	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	cū	oe	comparison_form	parallel Campbell examples, not lexical evidence for both
-ignore	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	hū	oe	comparison_form	parallel Campbell examples, not lexical evidence for both
-ignore	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	tū	oe	comparison_form	parallel Campbell examples, not lexical evidence for both
+accept	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	cū	oe	evidence_form	parallel Campbell rule example for final accented ō > ū
+accept	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	hū	oe	evidence_form	parallel Campbell rule example for final accented ō > ū
+accept	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	tū	oe	evidence_form	parallel Campbell rule example for final accented ō > ū
 accept	Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:34	bodan	oe	comparison_form	OE cross-reference form in the bottom-family evidence
 defer	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21	*baugijana	pgmc	source_protoform	cited northwest Germanic preform; leave as reviewed suggestion for now
 defer	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21	*béagjan	pgmc	source_protoform	cited pre-Old-English stage; leave as reviewed suggestion for now
@@ -40,3 +40,69 @@ accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	duru
 accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	duru	oe	comparison_form	parallel OE reflex retained as comparison in the development prose
 accept	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:21	*faranan	pgmc	source_protoform	cited strong-verb headword in comparative discussion
 accept	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	færan	oe	comparison_form	attested OE weak-verb contrast form
+accept	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21	vel	dutch	comparison_form	Dutch cognate cited in the comparative discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25	fel	oe	comparison_form	attested OE accusative singular comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25	fellan	oe	comparison_form	related OE verb kept separate from the noun target
+accept	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25	fellum	oe	comparison_form	attested OE dative plural comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25	feoll	oe	comparison_form	attested OE preterite comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:21	*farnan	pgmc	source_protoform	Orel citation form for the cognate set
+accept	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25	fearna	oe	comparison_form	attested OE inflected comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25	fearne	oe	comparison_form	attested OE inflected comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25	fearnes	oe	comparison_form	attested OE genitive comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25	fern	oe	comparison_form	OE comparative spelling cited by Kroonen
+accept	Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25	felda	oe	comparison_form	attested OE inflected comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25	felde	oe	comparison_form	attested OE inflected comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:36	tō-fundennes	oe	comparison_form	attested prefixed OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21	fléogan	oe	comparison_form	West Saxon OE comparison form cited in the reconstruction discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25	fleogeð	oe	comparison_form	attested OE present comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29	flégan	oe	comparison_form	Anglian OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	for-leósan	oe	comparison_form	OE prefixed comparison form in the forlorn-family discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	for-lēosan	oe	comparison_form	OE prefixed comparison form in the forlorn-family discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	fra-liusan	goth	comparison_form	Gothic cognate cited in the comparison
+accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25	forloren	oe	comparison_form	attested OE participial comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25	forlorn	oe	comparison_form	attested OE/English comparison form in the lexical family
+accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25	forlēosan	oe	comparison_form	attested OE prefixed infinitive comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:35	fugel	oe	comparison_form	attested OE spelling variant in dictionary evidence
+accept	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:45	fogol	oe	regular_output	explicit regular expected output contrasted with attested fugol
+accept	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:36	fyrht	oe	comparison_form	attested OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:36	fyrhtan	oe	comparison_form	attested OE verbal comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	*gangaz	pgmc	selected_input	prose explicitly identifies the selected citation-form input
+accept	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:29	gangan	oe	comparison_form	attested OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21	for-geofan	oe	comparison_form	non-West-Saxon OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21	geafa	oe	comparison_form	Northumbrian OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29	for-geofan	oe	comparison_form	non-West-Saxon OE comparison form in the dialect note
+accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29	geafa	oe	comparison_form	non-West-Saxon OE comparison form in the dialect note
+accept	Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33	*góldą	preoe	comparison_form	model-stage lowered form in the development chain
+accept	Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33	*gúldą	preoe	comparison_form	model-stage voiced pre-Old-English form in the development chain
+accept	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:25	græf	oe	comparison_form	attested OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33	græf	oe	comparison_form	attested OE comparison form in development prose
+accept	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33	græfen	oe	comparison_form	attested OE comparison form in development prose
+accept	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33	græfð	oe	comparison_form	attested OE comparison form in development prose
+accept	Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:21	haldan	oe	comparison_form	Anglian and Mercian OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33	lyhtan	oe	comparison_form	later West Saxon comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md:36	hrefn	oe	evidence_form	Campbell rule example cited as evidence for medial cluster behavior
+accept	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md:37	botm	oe	evidence_form	Campbell rule example cited as evidence for medial cluster behavior
+accept	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:27	hunig	oe	evidence_form	Campbell example cited as evidence for the OE -ig suffix
+accept	Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:33	hycgan	oe	comparison_form	related OE class-III comparison verb
+accept	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:22	lapian	oe	evidence_form	Campbell example cited as evidence for restored a in class-II verbs
+accept	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:23	wolf	ohg	comparison_form	Old High German cognate cited in the comparative evidence
+accept	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:30	bolt	oe	evidence_form	Bülbring comparison example cited as evidence for regular o-vocalism
+accept	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:53	wylf	oe	regular_output	explicit regular control output contrasted with attested wulf
+accept	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24	foll	ohg	comparison_form	Old High German regular comparator in the wool discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24	full	oe	evidence_form	parallel OE rule example in the wool exception discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:30	woll	oe	regular_output	explicit regular expected output contrasted with attested wull
+accept	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:47	woll	oe	regular_output	explicit regular expected output contrasted with attested wull
+accept	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:23	rost	ohg	comparison_form	Old High German cognate cited in the comparative evidence
+accept	Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21	sondern	german	comparison_form	German cognate cited in the comparative discussion
+defer	Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:21	sparro	ohg	comparison_form	shared Old Saxon/Old High German citation form needs finer language disambiguation
+accept	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:22	spere	oe	evidence_form	Campbell example cited as evidence for short neuter i-stems
+accept	Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:33	stānrocc	oe	comparison_form	separate lexical comparator cited in the source note
+accept	Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21	stillen	german	comparison_form	German cognate cited in the comparative discussion
+accept	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:28	strēzan	oe	comparison_form	Anglian OE comparison form
+ignore	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	thousand			ordinary English gloss word in the lexical note
+accept	Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:33	tīdan	oe	comparison_form	separate OE weak-verb comparator in the lexical note
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:46	hleahtor	oe	comparison_form	related OE noun cited as comparison evidence
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:47	*hlahtraz	pgmc	comparison_form	related PGmc noun cited as comparison evidence
+defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46	*neahti	preoe	comparison_form	intermediate model-stage form in the night development chain
+defer	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33	*nihtmare	pgmc	comparison_form	unattested compound label kept for review only
+defer	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:52	*wér-uldu	preoe	comparison_form	intermediate compound stage in the world development chain

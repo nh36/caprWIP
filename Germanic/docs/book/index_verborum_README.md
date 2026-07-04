@@ -110,6 +110,11 @@ LaTeX `\index[...]` command after the tagged span.
 - Reader-facing sound-change examples are currently quarantined in the audit
   pending a policy decision. They do not enter production automatically unless
   they are explicitly tagged or otherwise curated.
+- The live policy options for reader-facing examples are currently:
+  1. exclude them from the index verborum unless explicitly tagged;
+  2. include only reader-facing failure-pair examples; or
+  3. create a separate example-form index instead of mixing them into the main
+     lexical index.
 - Significant forms in running prose should be tagged explicitly with `.iv`
   spans when they ought to contribute an occurrence-level index reference.
 - Broad audit candidates are warnings only. They do **not** enter the

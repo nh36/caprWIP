@@ -1,42 +1,42 @@
 # Index verborum audit
 
-- Production indexed occurrences: 1944
-- Production unique forms: 924
-- Audit-only candidates needing review: 33
-- True remaining unresolved: 33
+- Production indexed occurrences: 2007
+- Production unique forms: 981
+- Audit-only candidates needing review: 1
+- True remaining unresolved: 1
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 504
-- Broad-prose notation / compound expressions: 527
-- Broad-prose evidence suggestions: 271
+- Already indexed in same entry: 512
+- Broad-prose notation / compound expressions: 510
+- Broad-prose evidence suggestions: 243
 - Reader-facing examples needing policy: 628
-- Ordinary prose/gloss ignored: 27
+- Ordinary prose/gloss ignored: 28
 - Orthographic/normalization variants: 17
 - Table semantic auto-promoted: 32
 - Table semantic suggestions: 15
 - Table semantic ignored: 1
 - Table semantic notation / compound expressions: 16
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 293
+- Ignored fragments or sequences: 296
 - Possible extraction garbage: 8
 - Excluded intermediate trace forms: 1278
-- New unresolved candidates relative to baseline: 14
-- Baseline candidates now resolved or ignored: 669
+- New unresolved candidates relative to baseline: 0
+- Baseline candidates now resolved or ignored: 687
 
 ## Production indexed forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English forms | 945 | 361 |
-| Proto-Germanic forms | 934 | 512 |
+| Old English forms | 997 | 407 |
+| Proto-Germanic forms | 937 | 515 |
 | Proto-West Germanic forms | 2 | 2 |
-| Pre-Old-English and model-internal forms | 13 | 10 |
+| Pre-Old-English and model-internal forms | 14 | 11 |
 | Old Norse forms | 10 | 8 |
-| Old High German forms | 13 | 11 |
+| Old High German forms | 16 | 14 |
 | Old Frisian forms | 6 | 5 |
-| Gothic forms | 3 | 3 |
+| Gothic forms | 4 | 4 |
 | Old Saxon forms | 9 | 7 |
-| Dutch forms | 2 | 1 |
-| German forms | 5 | 3 |
+| Dutch forms | 3 | 2 |
+| German forms | 7 | 5 |
 | Modern English linguistic forms | 2 | 1 |
 
 ## Examples of production indexed forms
@@ -65,10 +65,10 @@
 ### Pre-Old-English and model-internal forms
 
 - `*bakan` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
+- `*gúldą` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33)
 - `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
 - `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
 - `*sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
-- `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
 
 ### Old Norse forms
 
@@ -84,7 +84,7 @@
 - `bahhan` (override; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
 - `bēde` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28)
 - `fogal` (override; Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22)
-- `lecchon` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22)
+- `foll` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24)
 
 ### Old Frisian forms
 
@@ -98,6 +98,7 @@
 
 - `brusts` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22)
 - `faurhtei` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22)
+- `fra-liusan` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21)
 - `stibna` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
 
 ### Old Saxon forms
@@ -112,6 +113,7 @@
 
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31)
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
+- `vel` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21)
 
 ### German forms
 
@@ -119,7 +121,7 @@
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
 - `Nacken` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:56)
 - `Nacken` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59)
-- `weinen` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:22)
+- `sondern` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21)
 
 ### Modern English linguistic forms
 
@@ -131,11 +133,11 @@
 | Role | Occurrences |
 | --- | ---: |
 | target_form | 371 |
-| source_protoform | 330 |
-| selected_input | 534 |
-| comparison_form | 463 |
-| regular_output | 87 |
-| evidence_form | 159 |
+| source_protoform | 331 |
+| selected_input | 535 |
+| comparison_form | 510 |
+| regular_output | 91 |
+| evidence_form | 169 |
 
 ## Already indexed in same entry
 
@@ -171,7 +173,9 @@
 | `*búrdiz` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 | ### Development to Old English | same form already indexed in this entry |
 | `*búrô` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:23 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*búrô` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:29 | ### Old English evidence | same form already indexed in this entry |
+| `*búrô` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:33 | ### Development to Old English | same form already indexed in this entry |
 | `*búrōθi` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `*búrōθi` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:33 | ### Development to Old English | same form already indexed in this entry |
 | `*búttmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:24 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*búttmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:41 | ### Development to Old English | same form already indexed in this entry |
 | `byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25 | ### Old English evidence | same form already indexed in this entry |
@@ -235,11 +239,13 @@
 | `*féllą` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*félθuz` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*fláskōn` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:50 | ### Development to Old English | same form already indexed in this entry |
+| `flégan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | ### Form note | same form already indexed in this entry |
 | `flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | ### Development to Old English | same form already indexed in this entry |
 | `*fléuganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*fléuganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | ### Development to Old English | same form already indexed in this entry |
+| `fogol` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:51 | ### Development to Old English | same form already indexed in this entry |
 | `*fúglaz` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*fúglaz` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:45 | ### Development to Old English | same form already indexed in this entry |
 | `*fúglaz` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:69 | ### Expected and attested forms | same form already indexed in this entry |
@@ -277,6 +283,7 @@
 | `hǣr` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `hǣr` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `hǣr` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | ### Form note | same form already indexed in this entry |
+| `haldan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:33 | ### Dialect note | same form already indexed in this entry |
 | `healdan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `healdan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `healdan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:33 | ### Dialect note | same form already indexed in this entry |
@@ -444,6 +451,8 @@
 | `rast` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:48 | ### Development to Old English | same form already indexed in this entry |
 | `rocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `rocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:29 | ### Development to Old English | same form already indexed in this entry |
+| `rost` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:29 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `rost` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:45 | ### Development to Old English | same form already indexed in this entry |
 | `*rúkkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `rust` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:22 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `rust` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:35 | ### Old English evidence | same form already indexed in this entry |
@@ -566,6 +575,7 @@
 | `tīd` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `tīd` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `tīd` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:33 | ### Lexical note | same form already indexed in this entry |
+| `tīdan` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*tḯdiz` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `timber` | Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:40 | ### Development to Old English | same form already indexed in this entry |
 | `timber` | Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:41 | ### Development to Old English | same form already indexed in this entry |
@@ -723,12 +733,9 @@
 | `*budmaz *butmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 | notation or compound expression |
 | `*budmō, gen. *buttaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | notation or compound expression |
 | `*burdi-` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:21 | notation or compound expression |
-| `*búrdi` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 | intermediate or model-stage form in development chain |
-| `*búrô` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:33 | intermediate or model-stage form in development chain |
 | `*burojan-` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:21 | notation or compound expression |
 | `*burojan-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:21 | notation or compound expression |
 | `*búrōθ` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:33 | intermediate or model-stage form in development chain |
-| `*búrōθi` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:33 | intermediate or model-stage form in development chain |
 | `*butt-` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:25 | notation or compound expression |
 | `*butt-` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:40 | notation or compound expression |
 | `bū tū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | notation or compound expression |
@@ -743,7 +750,6 @@
 | `cȳ < *cūi` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36 | notation or compound expression |
 | `dat.sg. *nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:21 | notation or compound expression |
 | `dat. sg. niht < *nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:29 | notation or compound expression |
-| `*dórą` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29 | intermediate or model-stage form in development chain |
 | `*dura-` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21 | notation or compound expression |
 | `*dúrą > dor` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29 | notation or compound expression |
 | `*durō-` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21 | notation or compound expression |
@@ -759,12 +765,10 @@
 | `-eþ` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
 | `-eþ` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34 | notation or compound expression |
 | `eu > ēo` | Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:45 | notation or compound expression |
-| `*færaną` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:29 | intermediate or model-stage form in development chain |
 | `*færn` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | intermediate or model-stage form in development chain |
 | `*faran-` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:21 | notation or compound expression |
 | `*faraną` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:29 | intermediate or model-stage form in development chain |
 | `faren- < *faræn- < *faran-` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:29 | notation or compound expression |
-| `*fárn` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | intermediate or model-stage form in development chain |
 | `*farna-` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:21 | notation or compound expression |
 | `fearn, fern` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:21 | notation or compound expression |
 | `*féll` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:29 | intermediate or model-stage form in development chain |
@@ -774,7 +778,6 @@
 | `-felth` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25 | notation or compound expression |
 | `*felþu- ~ *feldu-` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | notation or compound expression |
 | `flēag, flugon, flogen` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | notation or compound expression |
-| `*flēoganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | intermediate or model-stage form in development chain |
 | `fléoge / flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | notation or compound expression |
 | `fléoge / flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | notation or compound expression |
 | `*fléuganą > flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | notation or compound expression |
@@ -794,7 +797,6 @@
 | `*g` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | intermediate or model-stage form in development chain |
 | `gæst-` | Germanic/docs/lexeme_reports/model_entries/2049-guest-ġiest.model.md:29 | notation or compound expression |
 | `*gallōn-` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:22 | notation or compound expression |
-| `*gánga` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33 | intermediate or model-stage form in development chain |
 | `*gángaz > gang` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33 | notation or compound expression |
 | `gang / gong` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21 | notation or compound expression |
 | `*garna-` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | notation or compound expression |
@@ -809,7 +811,6 @@
 | `-gj-` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | notation or compound expression |
 | `*góldą` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33 | intermediate or model-stage form in development chain |
 | `gong (gang), m., path, course` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:25 | notation or compound expression |
-| `*gúldą` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33 | intermediate or model-stage form in development chain |
 | `*gulþa- / *gulda-` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:21 | notation or compound expression |
 | `*gulþa- / *gulda-` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:29 | notation or compound expression |
 | `haddr / heordan / hād-` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | notation or compound expression |
@@ -896,7 +897,6 @@
 | `*laiman-` | Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:21 | notation or compound expression |
 | `leoht/liht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | notation or compound expression |
 | `leornian, nordh. auch liorna` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27 | notation or compound expression |
-| `*lēosaną` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:33 | intermediate or model-stage form in development chain |
 | `*leusan-` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | notation or compound expression |
 | `*leuxtą` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:29 | intermediate or model-stage form in development chain |
 | `*léuxtijaną` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:29 | intermediate or model-stage form in development chain |
@@ -941,7 +941,6 @@
 | `*lungōn-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:21 | notation or compound expression |
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:22 | notation or compound expression |
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:25 | notation or compound expression |
-| `*mækô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:44 | intermediate or model-stage form in development chain |
 | `*mækōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:33 | intermediate or model-stage form in development chain |
 | `mak-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:33 | notation or compound expression |
 | `*maka-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:21 | notation or compound expression |
@@ -964,7 +963,7 @@
 | `*nabulō > *næbula > nafola` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:23 | notation or compound expression |
 | `*nabulō > *næbula > OE nafola` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 | notation or compound expression |
 | `*nasō- ~ *nusō-` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:21 | notation or compound expression |
-| `*náttją` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:29 | intermediate or model-stage form in development chain |
+| `*nehti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45 | intermediate or model-stage form in development chain |
 | `*nēþlō, *nēdlō- ... > OE nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 | notation or compound expression |
 | `nihte, nihtes` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:35 | notation or compound expression |
 | `niht, nihte` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:36 | notation or compound expression |
@@ -994,6 +993,7 @@
 | `ræst-` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:50 | notation or compound expression |
 | `*rastō` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:48 | intermediate or model-stage form in development chain |
 | `r + C` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:29 | notation or compound expression |
+| `rC` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | phonological environment notation |
 | `r + consonant` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:29 | notation or compound expression |
 | `-rġ-` | Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:40 | notation or compound expression |
 | `rúst (? and rust` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:34 | notation or compound expression |
@@ -1010,6 +1010,7 @@
 | `*sawi > *sei > OE sǣ` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:23 | notation or compound expression |
 | `*sāwiz > *sāwi` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:40 | notation or compound expression |
 | `<sc>` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33 | notation or compound expression |
+| `sC` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 | phonological environment notation |
 | `sċ-` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:33 | notation or compound expression |
 | `sċ-` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 | notation or compound expression |
 | `scēaw-` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:30 | notation or compound expression |
@@ -1020,7 +1021,6 @@
 | `Se ord bīgde upp tō þām hiltum` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:25 | notation or compound expression |
 | `*síβi > *síβe` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:41 | notation or compound expression |
 | `*sk-` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 | notation or compound expression |
-| `*skǣpą` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:29 | intermediate or model-stage form in development chain |
 | `*skap > WS scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:21 | notation or compound expression |
 | `*skáub > *skáeub > *skēab > *skēaβ > sċēaf` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:39 | notation or compound expression |
 | `*skeld-linga-` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | notation or compound expression |
@@ -1033,7 +1033,6 @@
 | `*skúldramiz` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 | intermediate or model-stage form in development chain |
 | `*skúldramiz > *skúldrumiz > *skúldrum > sċuldrum` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 | notation or compound expression |
 | `*skúldrumiz` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 | intermediate or model-stage form in development chain |
-| `*slǣpaną` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | intermediate or model-stage form in development chain |
 | `slæpan (slāpan), slēp slēpon slēpen` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | notation or compound expression |
 | `slāpan/slæpan` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | notation or compound expression |
 | `*slēb-` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:21 | notation or compound expression |
@@ -1041,7 +1040,6 @@
 | `slēp, slēap` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | notation or compound expression |
 | `slēp/slēap` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | notation or compound expression |
 | `*smerwjan-` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21 | notation or compound expression |
-| `*spærrô` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29 | intermediate or model-stage form in development chain |
 | `*spannan-` | Germanic/docs/lexeme_reports/model_entries/2202-span-spannan.model.md:21 | notation or compound expression |
 | `*spar(r)an-` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:21 | notation or compound expression |
 | `*spearrô` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29 | intermediate or model-stage form in development chain |
@@ -1071,7 +1069,6 @@
 | `*sunþrōjanan > sundrian` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 | notation or compound expression |
 | `*swælw-` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | notation or compound expression |
 | `*swalwōn-` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | notation or compound expression |
-| `*swánæs` | Germanic/docs/lexeme_reports/model_entries/2235-swan-swanes.model.md:41 | intermediate or model-stage form in development chain |
 | `*swealw-` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | notation or compound expression |
 | `swealwe (a, o` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | notation or compound expression |
 | `*swina-` | Germanic/docs/lexeme_reports/model_entries/2238-swine-swīn.model.md:21 | notation or compound expression |
@@ -1083,7 +1080,6 @@
 | `*téoon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:46 | intermediate or model-stage form in development chain |
 | `tēo, tēa` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:34 | notation or compound expression |
 | `*téoxon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:46 | intermediate or model-stage form in development chain |
-| `*téxon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:45 | intermediate or model-stage form in development chain |
 | `*þankjan-` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 | notation or compound expression |
 | `*þ ~ *d` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | notation or compound expression |
 | `þencan/geþencan` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:25 | notation or compound expression |
@@ -1110,12 +1106,10 @@
 | `-um` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 | notation or compound expression |
 | `u/w` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33 | notation or compound expression |
 | `w-` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:30 | notation or compound expression |
-| `*wædaną` | Germanic/docs/lexeme_reports/model_entries/2266-wade-wadan.model.md:29 | intermediate or model-stage form in development chain |
 | `waefs / wæfs` | Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:29 | notation or compound expression |
 | `*wækaną` | Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:43 | intermediate or model-stage form in development chain |
 | `wæld-` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:29 | notation or compound expression |
 | `wǣpen/wapen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:27 | notation or compound expression |
-| `*wæskaną` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 | intermediate or model-stage form in development chain |
 | `*wætær` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:46 | intermediate or model-stage form in development chain |
 | `wæteres, wætere, wæter(u), wætera, wæterum` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:33 | notation or compound expression |
 | `*wahs(j)an-` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:21 | notation or compound expression |
@@ -1164,7 +1158,6 @@
 | `*xlídą` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:29 | intermediate or model-stage form in development chain |
 | `*xlídą > hlid` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:33 | notation or compound expression |
 | `*xnékka` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:44 | intermediate or model-stage form in development chain |
-| `*xórną` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:29 | intermediate or model-stage form in development chain |
 | `xs > s` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:29 | notation or compound expression |
 | `*xt` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:29 | intermediate or model-stage form in development chain |
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:39 | notation or compound expression |
@@ -1185,44 +1178,20 @@
 | `ā-sundrian` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bisceoprocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `breóstrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*búrdi` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 | pgmc | source_protoform | source form in development prose |
 | `dæg` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:105 | oe | comparison_form | introductory illustrative example |
 | `dæg` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `ēaw` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*farnan` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `fearna` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fearne` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fearnes` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fel` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `felda` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `felde` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fellan` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fellum` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `feoll` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fern` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*færaną` | Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `filatum` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `flégan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fléogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `fleogeð` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fogol` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:51 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*flēoganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | pgmc | source_protoform | source form in development prose |
 | `folc` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `foma` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:145 | oe | comparison_form | introductory illustrative example |
-| `for-geofan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `for-leósan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `for-lēosan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `forlēosan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `forloren` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `forlorn` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fra-liusan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | goth | comparison_form | attested comparison or dictionary form described in prose |
-| `fugel` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `full` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fyrht` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `fyrhtan` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `gangan` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*gangaz` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*gánga` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33 | pgmc | source_protoform | source form in development prose |
 | `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | pgmc | selected_input | selected input described in prose |
 | `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:33 | pgmc | selected_input | selected input described in prose |
 | `geaf` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `geafa` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `gearn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `gearn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `gefan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1237,14 +1206,9 @@
 | `giefan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:33 | oe | comparison_form | attested Old English comparison form in development prose |
 | `giefen` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `gist` | Germanic/docs/lexeme_reports/model_entries/2049-guest-ġiest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `græf` | Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `græf` | Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `græfð` | Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `græfen` | Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `gyst` | Germanic/docs/lexeme_reports/model_entries/2049-guest-ġiest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hær` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `haldan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1267,6 +1231,7 @@
 | `*laidijaną` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*lappōn` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `lēoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*lēosaną` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:33 | pgmc | source_protoform | source form in development prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1301,26 +1266,21 @@
 | `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45 | pgmc | source_protoform | source form in development prose |
 | `*natjan` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*náttją` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 | oe | comparison_form | attested Old English comparison form in development prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:42 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*nehti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45 | pgmc | source_protoform | source form in development prose |
 | `net` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `nidi` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `nosa` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:151 | oe | comparison_form | introductory illustrative example |
-| `rC` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
-| `rost` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `rost` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:45 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*rukkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:28 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:39 | pgmc | comparison_form | comparative or background source form in prose |
 | `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:47 | pgmc | comparison_form | comparative or background source form in prose |
 | `sæ` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:39 | oe | comparison_form | attested Old English comparison form in development prose |
 | `sap` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `sC` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scēap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1332,12 +1292,14 @@
 | `scilling` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scip` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `sċoldor` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:105 | oe | comparison_form | introductory illustrative example |
-| `sculdor` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:97 | pgmc | comparison_form | introductory illustrative example |
+| `sculdor` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:97 | oe | comparison_form | introductory illustrative example |
 | `sċuldrum` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:105 | oe | comparison_form | introductory illustrative example |
-| `sċuldrum` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:97 | pgmc | comparison_form | introductory illustrative example |
+| `sċuldrum` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:97 | oe | comparison_form | introductory illustrative example |
+| `*skǣpą` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `*skawōjanan` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 | pgmc | selected_input | selected input described in prose |
 | `slǣp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `slǣp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*slǣpaną` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `slēpan` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `smirian` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `smirian` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1350,6 +1312,7 @@
 | `smyrian` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `smyrian` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `smyrode` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*spærrô` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `span` | Germanic/docs/lexeme_reports/model_entries/2202-span-spannan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `spann` | Germanic/docs/lexeme_reports/model_entries/2202-span-spannan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `spann` | Germanic/docs/lexeme_reports/model_entries/2202-span-spannan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1377,6 +1340,7 @@
 | `swaluwe` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*swalwa` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `swalwe` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*swánæs` | Germanic/docs/lexeme_reports/model_entries/2235-swan-swanes.model.md:41 | pgmc | source_protoform | source form in development prose |
 | `swealuwe` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `swelgan` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `swelgan` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1395,20 +1359,19 @@
 | `*tëhun` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:24 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `tēn` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:34 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tēoða` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*téxon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:45 | pgmc | source_protoform | source form in development prose |
 | `*þankaz` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 | pgmc | comparison_form | comparative or background source form in prose |
 | `*þankijaną` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 | pgmc | comparison_form | comparative or background source form in prose |
 | `þencan` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `*θréje` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:45 | pgmc | source_protoform | source form in development prose |
 | `þrī` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tīda` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `tīdan` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tīde` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tien` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `tien` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*tīđiz` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `tō-fundennes` | Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*tūnăn` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:33 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `vel` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21 | dutch | comparison_form | attested comparison or dictionary form described in prose |
+| `*wædaną` | Germanic/docs/lexeme_reports/model_entries/2266-wade-wadan.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `wæden` | Germanic/docs/lexeme_reports/model_entries/2266-wade-wadan.model.md:33 | oe | comparison_form | attested Old English comparison form in development prose |
 | `wǣpen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wæpn` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1416,6 +1379,7 @@
 | `wǣpnes` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wæscan` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wæscan` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*wæskaną` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `wæstm` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `wald` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `wald` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1452,6 +1416,7 @@
 | `wulle` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wylfe` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:54 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*xazwăz` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | pgmc | comparison_form | comparative or background source form in prose |
+| `*xórną` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:29 | pgmc | source_protoform | source form in development prose |
 | `*xurnăn` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:33 | pgmc | selected_input | selected input described in prose |
 
 ## Curated broad-prose deferred
@@ -1466,14 +1431,16 @@
 | `cā` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42 | oe | comparison_form | unstable genitive evidence should remain deferred |
 | `*dadiz` | Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21 | preoe | comparison_form | model-stage northwest Germanic form in comparative discussion |
 | `*dédiz` | Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21 | pgmc | comparison_form | alternate comparative reconstruction kept as reviewed suggestion |
+| `*neahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46 | preoe | comparison_form | intermediate model-stage form in the night development chain |
+| `*nihtmare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | pgmc | comparison_form | unattested compound label kept for review only |
+| `sparro` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:21 | ohg | comparison_form | shared Old Saxon/Old High German citation form needs finer language disambiguation |
+| `*wér-uldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:52 | preoe | comparison_form | intermediate compound stage in the world development chain |
 
 ## Curated broad-prose ignored
 
 | Form | Source | Reason |
 | --- | --- | --- |
-| `cū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51 | parallel Campbell examples, not lexical evidence for both |
-| `hū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51 | parallel Campbell examples, not lexical evidence for both |
-| `tū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51 | parallel Campbell examples, not lexical evidence for both |
+| `thousand` | Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47 | ordinary English gloss word in the lexical note |
 
 ## Reader-facing examples needing policy
 
@@ -2122,6 +2089,7 @@
 | `lowering` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:50 | ordinary prose/gloss word |
 | `material` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:28 | ordinary prose/gloss word |
 | `noun` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:28 | ordinary prose/gloss word |
+| `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:151 | formal rule label |
 | `OFris` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | ordinary prose/gloss word |
 | `paradigm-cell` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:46 | ordinary prose/gloss word |
 | `regular` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:99 | ordinary prose/gloss word |
@@ -2164,26 +2132,11 @@
 
 ## Likely Old English forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `flégan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | broad_prose_candidate |
-| `hunig` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:27 | broad_prose_candidate |
-| `lapian` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:22 | broad_prose_candidate |
-| `*nihtmare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | broad_prose_candidate |
-| `stānrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:33 | broad_prose_candidate |
-| `stillen` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | broad_prose_candidate |
-| `strēzan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:28 | broad_prose_candidate |
-| `thousand` | Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47 | broad_prose_candidate |
-| `tīdan` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:33 | broad_prose_candidate |
-| `*wér-uldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:52 | broad_prose_candidate |
-| `woll` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:30 | broad_prose_candidate |
+_None._
 
 ## Likely Proto-Germanic forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `*hlahtraz` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:47 | broad_prose_candidate |
-| `*neahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46 | broad_prose_candidate |
+_None._
 
 ## Likely Proto-West Germanic forms
 
@@ -2199,24 +2152,15 @@ _None._
 
 ## Likely Old Norse forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `bolt` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:30 | broad_prose_candidate |
+_None._
 
 ## Likely Old Saxon forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `sparro` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:21 | broad_prose_candidate |
+_None._
 
 ## Likely Old High German forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `foll` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24 | broad_prose_candidate |
-| `full` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24 | broad_prose_candidate |
-| `rost` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:23 | broad_prose_candidate |
-| `wolf` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:23 | broad_prose_candidate |
+_None._
 
 ## Likely Old Frisian forms
 
@@ -2240,9 +2184,7 @@ _None._
 
 ## Likely German forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `sondern` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 | broad_prose_candidate |
+_None._
 
 ## Likely Latin forms
 
@@ -2272,19 +2214,7 @@ _None._
 
 | Form | Source | Candidate origin |
 | --- | --- | --- |
-| `botm` | Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md:37 | broad_prose_candidate |
-| `fogol` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:45 | broad_prose_candidate |
-| `for-geofan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29 | broad_prose_candidate |
-| `geafa` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29 | broad_prose_candidate |
-| `haldan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:21 | broad_prose_candidate |
-| `hleahtor` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:46 | broad_prose_candidate |
-| `hrefn` | Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md:36 | broad_prose_candidate |
-| `hycgan` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:33 | broad_prose_candidate |
-| `lyhtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33 | broad_prose_candidate |
 | `Mönch` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53 | broad_prose_candidate |
-| `spere` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:22 | broad_prose_candidate |
-| `woll` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:47 | broad_prose_candidate |
-| `wylf` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:53 | broad_prose_candidate |
 
 ## Table-scanned unresolved candidates
 
@@ -2407,6 +2337,7 @@ _None._
 | `cc` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:34 |
 | `d` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:32 |
 | `d` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:43 |
+| `*dórą` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29 |
 | `e` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:33 |
 | `e` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:43 |
 | `e` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:29 |
@@ -2442,6 +2373,7 @@ _None._
 | `f` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 |
 | `f` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:42 |
 | `f` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:39 |
+| `*fárn` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:21 |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:29 |
 | `g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:21 |
@@ -2520,6 +2452,7 @@ _None._
 | `ll` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:44 |
 | `lw` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 |
 | `m` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 |
+| `*mækô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:44 |
 | `n` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:42 |
 | `n` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:48 |
 | `*ô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:50 |
@@ -2716,51 +2649,13 @@ _None._
 
 | Form | Count |
 | --- | --- |
-| `woll` | 2 |
-| `bolt` | 1 |
-| `botm` | 1 |
-| `flégan` | 1 |
-| `fogol` | 1 |
-| `foll` | 1 |
-| `for-geofan` | 1 |
-| `full` | 1 |
-| `geafa` | 1 |
-| `haldan` | 1 |
-| `*hlahtraz` | 1 |
-| `hleahtor` | 1 |
-| `hrefn` | 1 |
-| `hunig` | 1 |
-| `hycgan` | 1 |
-| `lapian` | 1 |
-| `lyhtan` | 1 |
 | `Mönch` | 1 |
-| `*neahti` | 1 |
-| `*nihtmare` | 1 |
 
 ## Unresolved forms by source file
 
 | Source file | Count |
 | --- | --- |
-| Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md | 4 |
-| Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md | 3 |
-| Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md | 2 |
-| Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md | 2 |
-| Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md | 2 |
-| Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md | 1 |
 | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md | 1 |
 
 ## Top unresolved table files
 
@@ -2768,22 +2663,7 @@ _None._
 
 ## New unresolved candidates relative to baseline
 
-| Form | Source | Category | Nearest heading |
-| --- | --- | --- | --- |
-| `bolt` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:30 | likely_on | ### Reconstruction and comparative evidence |
-| `botm` | Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md:37 | likely_false_positive | ### Development to Old English |
-| `fogol` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:45 | likely_false_positive | ### Development to Old English |
-| `foll` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24 | likely_ohg | ### Reconstruction and comparative evidence |
-| `full` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24 | likely_ohg | ### Reconstruction and comparative evidence |
-| `lapian` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:22 | likely_oe | ### Reconstruction and comparative evidence |
-| `rost` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:23 | likely_ohg | ### Reconstruction and comparative evidence |
-| `sondern` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 | likely_german | ### Reconstruction and comparative evidence |
-| `sparro` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:21 | likely_os | ### Reconstruction and comparative evidence |
-| `thousand` | Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47 | likely_oe | ### Development to Old English |
-| `wolf` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:23 | likely_ohg | ### Reconstruction and comparative evidence |
-| `woll` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:30 | likely_oe | ### Reconstruction and comparative evidence |
-| `woll` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:47 | likely_false_positive | ### Development to Old English |
-| `wylf` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:53 | likely_false_positive | ### Development to Old English |
+_None._
 
 ## Resolved or ignored baseline candidates
 
@@ -2920,6 +2800,7 @@ _None._
 | `flascan` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:45 | likely_false_positive | ### Development to Old English |
 | `*flasce` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1336 | likely_oe | ## SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} |
 | `flaxe` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33 | likely_oe | ### Old English evidence |
+| `flégan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
 | `flégan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | likely_oe | ### Form note |
 | `fléogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
 | `fleogeð` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | likely_oe | ### Old English evidence |
@@ -2928,6 +2809,7 @@ _None._
 | `folgian` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:58 | likely_false_positive | ### Development to Old English |
 | `folgian` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:74 | likely_false_positive | ### Class comparison |
 | `for-geofan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
+| `for-geofan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29 | likely_false_positive | ### Dialect note |
 | `for-leósan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | likely_goth | ### Reconstruction and comparative evidence |
 | `for-lēosan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | likely_goth | ### Reconstruction and comparative evidence |
 | `forlēosan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:25 | likely_oe | ### Old English evidence |
@@ -2962,6 +2844,7 @@ _None._
 | `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
 | `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:33 | likely_pgmc | ### Form note |
 | `geafa` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
+| `geafa` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29 | likely_false_positive | ### Dialect note |
 | `gealla` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:32 | likely_oe | ### Old English evidence |
 | `gealla` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:38 | likely_oe | ### Old English evidence |
 | `geallan` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:33 | likely_oe | ### Old English evidence |
@@ -3004,6 +2887,7 @@ _None._
 | `hæfed` | Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:48 | likely_oe | ### Development to Old English |
 | `hær` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:25 | likely_oe | ### Old English evidence |
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | likely_oe | ### Old English evidence |
+| `haldan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:21 | likely_false_positive | ### Reconstruction and comparative evidence |
 | `haldan` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:33 | likely_false_positive | ### Dialect note |
 | `hamer` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:22 | likely_false_positive | ### Reconstruction and comparative evidence |
 | `hamer` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:34 | likely_oe | ### Old English evidence |
@@ -3029,6 +2913,8 @@ _None._
 | `herges` | Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:41 | likely_false_positive | ### Development to Old English |
 | `hindan` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:33 | likely_oe | ### Form note |
 | `hlæhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:32 | likely_oe | ### Old English evidence |
+| `*hlahtraz` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:47 | likely_pgmc | ### Development to Old English |
+| `hleahtor` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:46 | likely_false_positive | ### Development to Old English |
 | `hlehhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:33 | likely_oe | ### Old English evidence |
 | `hlihhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:31 | likely_oe | ### Old English evidence |
 | `hlihhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:33 | likely_oe | ### Old English evidence |
@@ -3036,13 +2922,16 @@ _None._
 | `*hnakkuns` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:23 | likely_oe | ### Reconstruction and comparative evidence |
 | `*hnekkō` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:22 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `*hnukkaz` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:22 | likely_pgmc | ### Reconstruction and comparative evidence |
+| `hrefn` | Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md:36 | likely_false_positive | ### Development to Old English |
 | `hund-tēon-tig` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:23 | likely_oe | ### Reconstruction and comparative evidence |
+| `hunig` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:27 | likely_oe | ### Reconstruction and comparative evidence |
 | `hvina` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:26 | likely_oe | ### Reconstruction and comparative evidence |
 | `hwalas` | Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:32 | likely_oe | ### Old English evidence |
 | `hwalas` | Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:36 | likely_oe | ### Old English evidence |
 | `hwinan` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:26 | likely_oe | ### Reconstruction and comparative evidence |
 | `hwinan` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:37 | likely_oe | ### Old English evidence |
 | `hwinan` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:42 | likely_oe | ### Old English evidence |
+| `hycgan` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:33 | likely_false_positive | ### Lexical note |
 | `iuzuð` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:52 | likely_oe | ### Development to Old English |
 | `*jéoguθ` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:51 | likely_pgmc | ### Development to Old English |
 | `*jéogūθ` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:50 | likely_pgmc | ### Development to Old English |
@@ -3117,6 +3006,7 @@ _None._
 | `lungenne` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:35 | likely_oe | ### Old English evidence |
 | `lungensealf` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:36 | likely_oe | ### Old English evidence |
 | `lungenwyrt` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:36 | likely_oe | ### Old English evidence |
+| `lyhtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33 | likely_false_positive | ### Dialect note |
 | `Macaþ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:29 | likely_oe | ### Old English evidence |
 | `mæċa` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:49 | likely_oe | ### Development to Old English |
 | `*mækōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:33 | likely_pgmc | ### Development to Old English |
@@ -3166,6 +3056,7 @@ _None._
 | `neaht` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:41 | likely_oe | ### Old English evidence |
 | `neaht` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:47 | likely_false_positive | ### Development to Old English |
 | `neahtas` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:37 | likely_oe | ### Old English evidence |
+| `*neahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46 | likely_pgmc | ### Development to Old English |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:32 | likely_oe | ### Old English evidence |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 | likely_oe | ### Development to Old English |
@@ -3173,6 +3064,7 @@ _None._
 | `*nehti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45 | likely_pgmc | ### Development to Old English |
 | `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `nieht` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:34 | likely_oe | ### Old English evidence |
+| `*nihtmare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | likely_oe | ### Form note |
 | `Nosu` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:34 | likely_oe | ### Old English evidence |
 | `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:151 | likely_false_positive | ## How to read the formal notation |
 | `paradigm-cell` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:46 | likely_oe | ### Development to Old English |
@@ -3285,10 +3177,12 @@ _None._
 | `spearad` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:33 | likely_oe | ### Old English evidence |
 | `spearad` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:36 | likely_oe | ### Old English evidence |
 | `spellings` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:56 | likely_oe | ### Stage comparison |
+| `spere` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:22 | likely_false_positive | ### Reconstruction and comparative evidence |
 | `sperran` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:25 | likely_oe | ### Old English evidence |
 | `sperran` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:33 | likely_false_positive | ### Form note |
 | `stafas` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:31 | likely_oe | ### Old English evidence |
 | `staff` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:32 | likely_oe | ### Old English evidence |
+| `stānrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:33 | likely_oe | ### Source note |
 | `*stebnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:22 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `stefe` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:41 | likely_false_positive | ### Development to Old English |
 | `*stelan` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1195 | likely_pgmc | ## SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} |
@@ -3302,6 +3196,7 @@ _None._
 | `still` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
 | `stille` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:25 | likely_oe | ### Old English evidence |
 | `stille` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:33 | likely_false_positive | ### Form note |
+| `stillen` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
 | `*straujana` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `*straujaną` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:48 | likely_pgmc | ### Development to Old English |
 | `*strauwjan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:27 | likely_pgmc | ### Reconstruction and comparative evidence |
@@ -3315,6 +3210,7 @@ _None._
 | `streowian` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:24 | likely_false_positive | ### Reconstruction and comparative evidence |
 | `streowian` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:36 | likely_oe | ### Old English evidence |
 | `strewian` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:36 | likely_oe | ### Old English evidence |
+| `strēzan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:28 | likely_oe | ### Reconstruction and comparative evidence |
 | `*striegan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `*strīeġan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:40 | likely_oe | ### Old English evidence |
 | `*strīeġan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:50 | likely_pgmc | ### Development to Old English |
@@ -3370,6 +3266,7 @@ _None._
 | `*þȳsend` | Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:41 | likely_pgmc | ### Development to Old English |
 | `tīda` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | likely_oe | ### Old English evidence |
 | `tīdan` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | likely_oe | ### Reconstruction and comparative evidence |
+| `tīdan` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:33 | likely_oe | ### Lexical note |
 | `tīde` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | likely_oe | ### Old English evidence |
 | `*tīđiz` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `tilli` | Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:23 | likely_ohg | ### Reconstruction and comparative evidence |
@@ -3433,6 +3330,7 @@ _None._
 | `*wér-àldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:51 | likely_pgmc | ### Development to Old English |
 | `*werpana` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 | likely_pgmc | ### Reconstruction and comparative evidence |
 | `*weruldu` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:914 | likely_oe | ## Historical discussion of inter-stress raising |
+| `*wér-uldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:52 | likely_oe | ### Development to Old English |
 | `weter` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:35 | likely_oe | ### Old English evidence |
 | `wiarald` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:40 | likely_oe | ### Old English evidence |
 | `wiðig` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:35 | likely_oe | ### Old English evidence |

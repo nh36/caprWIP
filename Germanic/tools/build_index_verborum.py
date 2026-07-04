@@ -1829,6 +1829,8 @@ def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
     reason = notation_or_metadata_reason(candidate.form)
     if reason:
         return reason
+    if re.fullmatch(r"[A-Za-z][A-Z]", candidate.form):
+        return "phonological environment notation"
     if any(token in candidate.form for token in (",", "/", ">")):
         return "notation or compound expression"
     semantic_text = normalize_semantic_text(candidate.line_text)
@@ -1836,7 +1838,7 @@ def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
     if (
         candidate.form.startswith("*")
         and candidate.heading.startswith("### Development")
-        and any(token in semantic_text for token in ("gives", "yields", "produces", "then", "stage", "whence", "via", "surfaces as", "leaves", "type"))
+        and any(token in semantic_text for token in ("gives", "yields", "produces", "producing", "then", "stage", "whence", "via", "surfaces as", "leaves", "yielding", "type"))
         and not re.search(rf"\bfrom\b[^.]*{re.escape(candidate.form.casefold())}\b", semantic_text)
     ):
         return "intermediate or model-stage form in development chain"
@@ -1846,13 +1848,16 @@ def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
         and candidate.form in line_forms
     ):
         form_index = line_forms.index(candidate.form)
-        if form_index > 0 and (
+        if form_index > 1 and (
             "yields" in semantic_text
             or "gives" in semantic_text
             or "produces" in semantic_text
+            or "producing" in semantic_text
             or "stage" in semantic_text
             or "whence" in semantic_text
             or "then" in semantic_text
+            or "via" in semantic_text
+            or "yielding" in semantic_text
         ):
             return "intermediate or model-stage form in development chain"
     if candidate.form.startswith("*") and candidate.heading.startswith("### Development") and "stage" in semantic_text:
@@ -1863,6 +1868,8 @@ def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
 def ordinary_prose_gloss_reason(candidate: CandidateOccurrence) -> str:
     lowered = candidate.form.casefold()
     semantic_text = normalize_semantic_text(candidate.line_text)
+    if candidate.form.startswith("OE") and re.search(r"[A-Z]", candidate.form[2:]):
+        return "formal rule label"
     if lowered == "help" and "separate noun" in semantic_text:
         return "ordinary prose/gloss word"
     if lowered in PROSE_GLOSS_FORMS or lowered in FALSE_POSITIVE_FORMS:
@@ -1997,10 +2004,10 @@ def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, st
     if candidate.form == "help" and "separate noun" in semantic_text:
         return None
     if candidate.source_path == intro_path:
-        language = infer_broad_prose_language(candidate)
+        language = "pgmc" if candidate.form.startswith("*") else "oe"
         return broad_prose_suggestion_row(
             candidate,
-            language=language or ("pgmc" if candidate.form.startswith("*") else "oe"),
+            language=language,
             role="comparison_form" if not candidate.form.startswith("*") else "source_protoform",
             reason="introductory illustrative example",
         )
