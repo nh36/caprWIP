@@ -106,3 +106,5 @@ accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:4
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46	*neahti	preoe	comparison_form	intermediate model-stage form in the night development chain
 defer	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33	*nihtmare	pgmc	comparison_form	unattested compound label kept for review only
 defer	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:52	*wér-uldu	preoe	comparison_form	intermediate compound stage in the world development chain
+ignore	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53	Mönch			German translation gloss in Brunner citation, not a comparison form for this entry
+ignore	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53	Jugend			German translation gloss in Brunner citation, not a comparison form for this entry

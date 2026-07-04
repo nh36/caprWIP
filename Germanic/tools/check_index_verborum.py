@@ -13,12 +13,14 @@ from build_index_verborum import (
     TABLE_STOPWORDS,
     CandidateOccurrence,
     add_production,
+    broad_prose_notation_reason,
     build_audit_rows,
     build_production_rows,
     compare_against_baseline,
     excluded_intermediate_trace_forms,
     explicit_tag_occurrences,
     infer_broad_prose_language,
+    infer_broad_prose_suggestion,
     load_broad_prose_decisions,
     load_table_decisions,
     load_unresolved_baseline,
@@ -225,10 +227,21 @@ def assert_broad_suggestions_load() -> None:
     assert BROAD_SUGGESTIONS_PATH.exists()
     rows = load_broad_suggestion_rows()
     assert rows
-    # Check for forms that are still in broad suggestions (not yet accepted via curated decisions)
-    assert any(row["form"] == "*gánga" and row["suggested_language"] == "pgmc" for row in rows)
-    assert any(row["form"] == "*flēoganą" and row["suggested_language"] == "pgmc" for row in rows)
+    assert any(row["form"] == "dæg" and row["suggested_language"] == "oe" for row in rows)
     assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29" and row["form"] == "duru" for row in rows)
+    assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53" and row["form"] in {"Jugend", "Mönch"} for row in rows)
+    for form, source_ref in {
+        ("*flēoganą", "Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33"),
+        ("*gánga", "Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33"),
+        ("*búrdi", "Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33"),
+    }:
+        assert not any(
+            row["form"] == form
+            and row["source_ref"] == source_ref
+            and row["suggested_language"] == "pgmc"
+            and row["suggested_role"] == "source_protoform"
+            for row in rows
+        )
 
 
 def assert_add_override_behavior() -> None:
@@ -271,7 +284,7 @@ def assert_baseline_strictness() -> None:
     audit = build_audit_rows(rows)
     needs_review = audit.get("needs_review", [])
     repo_baseline = load_unresolved_baseline(BASELINE_PATH)
-    assert repo_baseline
+    assert isinstance(repo_baseline, dict)
 
     # The checked-in baseline may lag deliberate coverage-model broadening, but it must still load
     # and compare cleanly.
@@ -466,9 +479,12 @@ def assert_generated_consistency() -> None:
     assert any(line.startswith("- Already indexed in same entry: ") for line in summary_lines)
     assert any(line.startswith("- Broad-prose notation / compound expressions: ") for line in summary_lines)
     assert any(line.startswith("- Broad-prose evidence suggestions: ") for line in summary_lines)
-    assert any(line.startswith("- Reader-facing examples needing policy: ") for line in summary_lines)
+    assert any(line.startswith("- Curated broad-prose deferred: ") for line in summary_lines)
+    assert any(line.startswith("- Curated broad-prose ignored: ") for line in summary_lines)
+    assert any(line.startswith("- Reader-facing examples quarantined (separate example index policy): ") for line in summary_lines)
     assert any(line.startswith("- Ordinary prose/gloss ignored: ") for line in summary_lines)
     assert any(line.startswith("- Orthographic/normalization variants: ") for line in summary_lines)
+    assert any(line.startswith("- Table semantic deferred decisions: ") for line in summary_lines)
     assert any(line.startswith("- Already indexed nearby: ") for line in summary_lines)
 
 
@@ -587,7 +603,7 @@ def assert_broad_prose_buckets() -> None:
     assert ("*kō- ~ *ku-", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:22") in notation_pairs
     assert ("cū(e), cȳ, cūs", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33") in notation_pairs
 
-    reader_pairs = parse_audit_bucket_pairs("Reader-facing examples needing policy")
+    reader_pairs = parse_audit_bucket_pairs("Reader-facing examples quarantined (separate example index policy)")
     assert ("*bacan", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1155") in reader_pairs
     assert ("*fúrxtīnaz", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2224") in reader_pairs
     assert ("ġeoc", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:378") in reader_pairs
@@ -607,6 +623,7 @@ def assert_broad_prose_decisions_and_inference() -> None:
     production_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in forms_rows}
     decision_rows = [row for row in forms_rows if row["source_scope"] == "broad_prose_decision"]
     assert decision_rows
+    assert not any(row["form"] == "Mönch" for row in forms_rows)
     for key in {
         ("oe", "boc", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21"),
         ("oe", "boc", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25"),
@@ -648,6 +665,35 @@ def assert_broad_prose_decisions_and_inference() -> None:
         line_text="From `*dúrą`, Northwest Germanic u-lowering gives `*dórą`, and heavy-syllable nasal apocope then yields `dor`. The regular development treated in this entry is therefore `*dúrą > dor`; the feminine `duru` belongs to the separate line identified by Kroonen and Ringe-Taylor [@Kroonen2013; @RingeTaylor2014].",
     )
     assert infer_broad_prose_language(synthetic) == "oe"
+
+    chain_line = "From `*fáraną`, Anglo-Frisian brightening first gives `*færaną`, then later yields `faran`."
+    source_candidate = CandidateOccurrence(
+        form="*fáraną",
+        source_ref="synthetic/dev-chain:1",
+        source_path="synthetic/dev-chain.model.md",
+        line_no=1,
+        heading="### Development to Old English",
+        line_text=chain_line,
+        candidate_origin="broad_prose_candidate",
+    )
+    intermediate_candidate = CandidateOccurrence(
+        form="*færaną",
+        source_ref="synthetic/dev-chain:1",
+        source_path="synthetic/dev-chain.model.md",
+        line_no=1,
+        heading="### Development to Old English",
+        line_text=chain_line,
+        candidate_origin="broad_prose_candidate",
+    )
+    source_suggestion = infer_broad_prose_suggestion(source_candidate)
+    assert source_suggestion is not None and source_suggestion["suggested_role"] == "source_protoform"
+    assert infer_broad_prose_suggestion(intermediate_candidate) is None
+    assert broad_prose_notation_reason(intermediate_candidate) == "intermediate or model-stage form in development chain"
+
+    curated_ignored_pairs = parse_audit_bucket_pairs("Curated broad-prose ignored")
+    assert ("Mönch", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") in curated_ignored_pairs
+    unresolved_false_positive_pairs = parse_audit_bucket_pairs("Likely ordinary-language false positives")
+    assert ("Mönch", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") not in unresolved_false_positive_pairs
 
 
 def assert_reconstructed_oe_index_commands() -> None:

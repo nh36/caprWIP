@@ -357,6 +357,20 @@ PROSE_NORMALIZATION_CUES = (
     "written here as",
     "capitalized",
 )
+DEVELOPMENT_CHAIN_CUES = (
+    "gives",
+    "yields",
+    "produces",
+    "producing",
+    "then",
+    "stage",
+    "whence",
+    "via",
+    "surfaces as",
+    "leaves",
+    "yielding",
+    "later",
+)
 PROSE_GLOSS_FORMS = {
     "among",
     "cell",
@@ -1825,6 +1839,23 @@ def orthographic_variant_reason(
     return ""
 
 
+def first_starred_form_after_from(candidate: CandidateOccurrence) -> str:
+    from_match = re.search(r"\bfrom\b", candidate.line_text, flags=re.IGNORECASE)
+    if not from_match:
+        return ""
+    tail = EXPLICIT_TAG_RE.sub(" ", candidate.line_text[from_match.end() :])
+    for match in MARKUP_FORM_RE.finditer(tail):
+        raw = next(group for group in match.groups() if group)
+        form = normalize_form(raw.replace("<br>", " "))
+        if form and form.startswith("*"):
+            return form
+    return ""
+
+
+def has_development_chain_cues(semantic_text: str) -> bool:
+    return any(token in semantic_text for token in DEVELOPMENT_CHAIN_CUES)
+
+
 def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
     reason = notation_or_metadata_reason(candidate.form)
     if reason:
@@ -1834,33 +1865,32 @@ def broad_prose_notation_reason(candidate: CandidateOccurrence) -> str:
     if any(token in candidate.form for token in (",", "/", ">")):
         return "notation or compound expression"
     semantic_text = normalize_semantic_text(candidate.line_text)
-    line_forms = extract_forms_from_markup(candidate.line_text)
-    if (
+    source_form_after_from = first_starred_form_after_from(candidate)
+    chain_like_development = (
         candidate.form.startswith("*")
         and candidate.heading.startswith("### Development")
-        and any(token in semantic_text for token in ("gives", "yields", "produces", "producing", "then", "stage", "whence", "via", "surfaces as", "leaves", "yielding", "type"))
+        and has_development_chain_cues(semantic_text)
+    )
+    line_forms = extract_forms_from_markup(candidate.line_text)
+    starred_line_forms = [form for form in line_forms if form.startswith("*")]
+    if chain_like_development and source_form_after_from and candidate.form != source_form_after_from:
+        return "intermediate or model-stage form in development chain"
+    if chain_like_development and candidate.form in starred_line_forms:
+        starred_form_index = starred_line_forms.index(candidate.form)
+        if starred_form_index > 0:
+            return "intermediate or model-stage form in development chain"
+    if (
+        chain_like_development
+        and not source_form_after_from
         and not re.search(rf"\bfrom\b[^.]*{re.escape(candidate.form.casefold())}\b", semantic_text)
     ):
         return "intermediate or model-stage form in development chain"
     if (
         candidate.form.startswith("*")
         and candidate.heading.startswith("### Development")
-        and candidate.form in line_forms
+        and "stage" in semantic_text
+        and (not source_form_after_from or candidate.form != source_form_after_from)
     ):
-        form_index = line_forms.index(candidate.form)
-        if form_index > 1 and (
-            "yields" in semantic_text
-            or "gives" in semantic_text
-            or "produces" in semantic_text
-            or "producing" in semantic_text
-            or "stage" in semantic_text
-            or "whence" in semantic_text
-            or "then" in semantic_text
-            or "via" in semantic_text
-            or "yielding" in semantic_text
-        ):
-            return "intermediate or model-stage form in development chain"
-    if candidate.form.startswith("*") and candidate.heading.startswith("### Development") and "stage" in semantic_text:
         return "intermediate or model-stage form in development chain"
     return ""
 
@@ -2013,9 +2043,18 @@ def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, st
         )
     language = infer_broad_prose_language(candidate)
     if candidate.form.startswith("*"):
+        source_form_after_from = first_starred_form_after_from(candidate)
         if (
             candidate.heading.startswith("### Development")
-            and re.search(rf"\bfrom\b[^.]*{re.escape(candidate.form.casefold())}\b", semantic_text)
+            and source_form_after_from
+            and candidate.form != source_form_after_from
+            and has_development_chain_cues(semantic_text)
+        ):
+            return None
+        if (
+            candidate.heading.startswith("### Development")
+            and source_form_after_from
+            and candidate.form == source_form_after_from
         ):
             return broad_prose_suggestion_row(
                 candidate,
@@ -2845,6 +2884,7 @@ def write_audit(
     semantic_results = table_semantic_results or {"auto_rows": [], "suggestions": [], "ignored": [], "notation": []}
     excluded_trace_entries = excluded_intermediate_trace_forms()
     new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
+    table_deferred_count = sum(1 for row in load_table_decisions() if row.get("action") == "defer")
     lines = [
         "# Index verborum audit",
         "",
@@ -2856,11 +2896,14 @@ def write_audit(
         f"- Already indexed in same entry: {len(buckets.get('same_entry_covered', []))}",
         f"- Broad-prose notation / compound expressions: {len(buckets.get('broad_prose_notation', []))}",
         f"- Broad-prose evidence suggestions: {len(buckets.get('broad_prose_suggestion', []))}",
-        f"- Reader-facing examples needing policy: {len(buckets.get('reader_facing_policy', []))}",
+        f"- Curated broad-prose deferred: {len(buckets.get('broad_prose_deferred', []))}",
+        f"- Curated broad-prose ignored: {len(buckets.get('broad_prose_curated_ignored', []))}",
+        f"- Reader-facing examples quarantined (separate example index policy): {len(buckets.get('reader_facing_policy', []))}",
         f"- Ordinary prose/gloss ignored: {len(buckets.get('ordinary_prose_gloss', []))}",
         f"- Orthographic/normalization variants: {len(buckets.get('orthographic_variant', []))}",
         f"- Table semantic auto-promoted: {len(semantic_results.get('auto_rows', []))}",
         f"- Table semantic suggestions: {len(semantic_results.get('suggestions', []))}",
+        f"- Table semantic deferred decisions: {table_deferred_count}",
         f"- Table semantic ignored: {len(semantic_results.get('ignored', []))}",
         f"- Table semantic notation / compound expressions: {len(semantic_results.get('notation', []))}",
         f"- Already indexed nearby: {len(buckets.get('already_indexed_nearby', []))}",
@@ -2965,7 +3008,7 @@ def write_audit(
         columns=("form", "source_ref", "reason"),
     )
     render_bucket(
-        "Reader-facing examples needing policy",
+        "Reader-facing examples quarantined (separate example index policy)",
         buckets.get("reader_facing_policy", []),
         columns=("form", "source_ref", "heading", "context"),
     )

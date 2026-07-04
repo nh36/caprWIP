@@ -107,14 +107,14 @@ LaTeX `\index[...]` command after the tagged span.
 - Mechanical `intermediate_trace_form` rows belong to the derivation apparatus,
   not to the production index verborum, unless they are explicitly promoted by
   tagging or another curated source.
-- Reader-facing sound-change examples are currently quarantined in the audit
-  pending a policy decision. They do not enter production automatically unless
-  they are explicitly tagged or otherwise curated.
-- The live policy options for reader-facing examples are currently:
-  1. exclude them from the index verborum unless explicitly tagged;
-  2. include only reader-facing failure-pair examples; or
-  3. create a separate example-form index instead of mixing them into the main
-     lexical index.
+- Reader-facing sound-change examples are quarantined by adopted policy: they
+  are not mixed into the main index verborum by default.
+- The main index remains a lexical/evidential index; reader-facing examples are
+  held for a separate example-form index rather than auto-promoted into
+  production.
+- Explicitly tagged or curated reader-facing forms may still enter the main
+  index when they are used as ordinary linguistic evidence, not merely as
+  pedagogical examples.
 - Significant forms in running prose should be tagged explicitly with `.iv`
   spans when they ought to contribute an occurrence-level index reference.
 - Broad audit candidates are warnings only. They do **not** enter the
