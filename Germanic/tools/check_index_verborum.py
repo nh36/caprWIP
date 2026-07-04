@@ -36,6 +36,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
+PRINT_UNIQUE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_unique.tsv"
+PRINT_ANOMALIES_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_anomalies.tsv"
 PREOE_REVIEW_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_preoe_review.tsv"
 PRINT_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_decisions.tsv"
 READER_FACING_EXAMPLE_PATH = REPO_ROOT / "Germanic/docs/book/reader_facing_example_forms.tsv"
@@ -65,6 +67,16 @@ def load_print_main_rows() -> list[dict[str, str]]:
 
 def load_print_excluded_rows() -> list[dict[str, str]]:
     with PRINT_EXCLUDED_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_print_unique_rows() -> list[dict[str, str]]:
+    with PRINT_UNIQUE_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_print_anomaly_rows() -> list[dict[str, str]]:
+    with PRINT_ANOMALIES_PATH.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
@@ -543,10 +555,15 @@ def assert_generated_consistency() -> None:
     assert any(line.startswith("- Print-excluded occurrences: ") for line in summary_lines)
     assert any(line.startswith("- Print-excluded unique forms: ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (preoe_model_internal_default_exclusion): ") for line in summary_lines)
-    assert any(line.startswith("- Print exclusions (regular_output_without_attested_or_curated_support): ") for line in summary_lines)
+    assert any(line.startswith("- Print exclusions (regular_output_default_exclusion): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (reader_facing_pedagogical_example): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (deferred_by_print_decision): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (excluded_by_print_decision): ") for line in summary_lines)
+    assert any(line.startswith("- Internal-only rows (preoe_model_internal_default_exclusion): ") for line in summary_lines)
+    assert any(line.startswith("- Internal-only rows (regular_output_default_exclusion): ") for line in summary_lines)
+    assert any(line.startswith("- Internal-only rows (reader_facing_pedagogical_example): ") for line in summary_lines)
+    assert any(line.startswith("- Internal-only rows (deferred_by_print_decision): ") for line in summary_lines)
+    assert any(line.startswith("- Internal-only rows (excluded_by_print_decision): ") for line in summary_lines)
     assert any(line.startswith("- Pre-OE review rows: ") for line in summary_lines)
     assert any(line.startswith("- Reader-facing example candidate rows: ") for line in summary_lines)
     assert any(line.startswith("- Reader-facing rows include_in_example_index=yes: ") for line in summary_lines)
@@ -770,6 +787,8 @@ def assert_broad_prose_decisions_and_inference() -> None:
 def assert_print_layer_outputs() -> None:
     assert PRINT_MAIN_PATH.exists()
     assert PRINT_EXCLUDED_PATH.exists()
+    assert PRINT_UNIQUE_PATH.exists()
+    assert PRINT_ANOMALIES_PATH.exists()
     assert PREOE_REVIEW_PATH.exists()
     assert PRINT_DECISIONS_PATH.exists()
     assert READER_FACING_EXAMPLE_PATH.exists()
@@ -796,6 +815,36 @@ def assert_print_layer_outputs() -> None:
             "exclusion_reason",
             "decision_action",
             "decision_note",
+        ]
+
+    with PRINT_UNIQUE_PATH.open(encoding="utf-8") as handle:
+        unique_reader = csv.DictReader(handle, delimiter="\t")
+        unique_rows = list(unique_reader)
+        assert unique_reader.fieldnames == [
+            "language",
+            "display",
+            "sort_key",
+            "occurrence_count",
+            "roles",
+            "source_scopes",
+            "sample_sources",
+        ]
+        assert unique_rows
+
+    with PRINT_ANOMALIES_PATH.open(encoding="utf-8") as handle:
+        anomaly_reader = csv.DictReader(handle, delimiter="\t")
+        anomaly_rows = list(anomaly_reader)
+        assert anomaly_reader.fieldnames == [
+            "language",
+            "form",
+            "display",
+            "sort_key",
+            "form_role",
+            "source_scope",
+            "source_ref",
+            "anomaly_flags",
+            "hard_error",
+            "note",
         ]
 
     with PREOE_REVIEW_PATH.open(encoding="utf-8") as handle:
@@ -835,6 +884,7 @@ def assert_print_layer_outputs() -> None:
     assert "index_verborum_print_main.tsv" in builder_text
     assert "index_verborum_forms.tsv" not in builder_text
     assert "check_book_draft_tex_indexes.py" in docker_build_text
+    assert "check_print_index_ready.py" in docker_build_text
     assert "index_verborum_print_main.tsv" in filter_text
 
     assert not any(row["language"] == "preoe" for row in main_rows)
@@ -859,44 +909,13 @@ def assert_print_layer_outputs() -> None:
         for row in decisions
         if row.get("action") == "include_main" and row.get("form_role") == "regular_output"
     }
-    supporting_roles_by_source_ref_form: dict[tuple[str, str, str], set[str]] = {}
-    for row in forms_rows:
-        key = (row["source_ref"], row["language"], row["form"])
-        supporting_roles_by_source_ref_form.setdefault(key, set()).add(row["form_role"])
     for row in main_rows:
         if row["form_role"] == "regular_output":
             key = (row["language"], row["form"], row["form_role"], row["source_ref"])
-            supported_same_ref = bool(
-                (supporting_roles_by_source_ref_form.get((row["source_ref"], row["language"], row["form"]), set()) - {"regular_output"})
-                & {"target_form", "comparison_form", "evidence_form"}
-            )
-            assert key in include_regular_keys or supported_same_ref
-
-    support_elsewhere_but_not_same_ref = []
-    roles_by_lang_form: dict[tuple[str, str], set[str]] = {}
-    for row in forms_rows:
-        roles_by_lang_form.setdefault((row["language"], row["form"]), set()).add(row["form_role"])
-    for row in forms_rows:
-        if row["form_role"] != "regular_output":
-            continue
-        lang_form = (row["language"], row["form"])
-        if not ((roles_by_lang_form.get(lang_form, set()) - {"regular_output"}) & {"target_form", "comparison_form", "evidence_form"}):
-            continue
-        same_ref_support = (
-            (supporting_roles_by_source_ref_form.get((row["source_ref"], row["language"], row["form"]), set()) - {"regular_output"})
-            & {"target_form", "comparison_form", "evidence_form"}
-        )
-        if not same_ref_support:
-            support_elsewhere_but_not_same_ref.append((row["language"], row["form"], row["source_ref"]))
-    if support_elsewhere_but_not_same_ref:
-        for language, form, source_ref in support_elsewhere_but_not_same_ref[:5]:
-            assert not any(
-                row["language"] == language
-                and row["form"] == form
-                and row["form_role"] == "regular_output"
-                and row["source_ref"] == source_ref
-                for row in main_rows
-            )
+            assert key in include_regular_keys
+    if not include_regular_keys:
+        assert not any(row["form_role"] == "regular_output" for row in main_rows)
+        assert all("regular_output" not in (row.get("roles") or "") for row in unique_rows)
 
     for form in {"fogol", "woll", "wylf"}:
         if not any(decision.get("action") == "include_main" and decision.get("form") == form for decision in decisions):
@@ -904,7 +923,7 @@ def assert_print_layer_outputs() -> None:
             assert any(
                 row["form"] == form
                 and row["form_role"] == "regular_output"
-                and row["exclusion_reason"] == "regular_output_without_attested_or_curated_support"
+                and row["exclusion_reason"] == "regular_output_default_exclusion"
                 for row in excluded_rows
             )
 
@@ -966,10 +985,15 @@ def assert_print_layer_outputs() -> None:
 
     print_audit_text = PRINT_AUDIT_PATH.read_text(encoding="utf-8")
     assert "# Index verborum print audit" in print_audit_text
-    assert "## Excluded rows by reason" in print_audit_text
+    assert "## Print exclusions by reason" in print_audit_text
+    assert "## Printed main-index forms by language" in print_audit_text
+    assert "## Printed main-index forms by role" in print_audit_text
+    assert "## Internal-only rows by reason" in print_audit_text
+    assert "## Print-unique entry audit" in print_audit_text
     assert "## Reader-facing include=yes summary buckets" in print_audit_text
     assert "### Included rows by inferred language" in print_audit_text
     assert "### Included rows by main-index overlap" in print_audit_text
+    assert not any(row["hard_error"] == "yes" for row in anomaly_rows)
 
 
 def assert_reader_failure_pair_roles() -> None:

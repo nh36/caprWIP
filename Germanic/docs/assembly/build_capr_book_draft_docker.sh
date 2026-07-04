@@ -78,6 +78,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   "
 
 python3 Germanic/tools/check_book_draft_tex_indexes.py --tex-path "${combined_tex}"
+python3 Germanic/tools/check_print_index_ready.py --tex-path "${combined_tex}"
 
 echo "Generated ${intro_pdf}"
 echo "Generated ${combined_md}"

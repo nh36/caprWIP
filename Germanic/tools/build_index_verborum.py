@@ -26,6 +26,8 @@ PREOE_REVIEW_PATH = BOOK_DIR / "index_verborum_preoe_review.tsv"
 PRINT_DECISIONS_PATH = BOOK_DIR / "index_verborum_print_decisions.tsv"
 READER_FACING_EXAMPLES_PATH = BOOK_DIR / "reader_facing_example_forms.tsv"
 PRINT_AUDIT_PATH = BOOK_DIR / "index_verborum_print_audit.md"
+PRINT_UNIQUE_PATH = BOOK_DIR / "index_verborum_print_unique.tsv"
+PRINT_ANOMALIES_PATH = BOOK_DIR / "index_verborum_print_anomalies.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
@@ -104,6 +106,27 @@ PRINT_DECISION_FIELDS = [
     "note",
 ]
 PRINT_EXCLUDED_FIELDS = PRODUCTION_FIELDS + ["exclusion_reason", "decision_action", "decision_note"]
+PRINT_UNIQUE_FIELDS = [
+    "language",
+    "display",
+    "sort_key",
+    "occurrence_count",
+    "roles",
+    "source_scopes",
+    "sample_sources",
+]
+PRINT_ANOMALY_FIELDS = [
+    "language",
+    "form",
+    "display",
+    "sort_key",
+    "form_role",
+    "source_scope",
+    "source_ref",
+    "anomaly_flags",
+    "hard_error",
+    "note",
+]
 PREOE_REVIEW_FIELDS = [
     "form",
     "source_ref",
@@ -2745,27 +2768,15 @@ def latest_matching_print_decision(
     return matched
 
 
-def regular_output_has_same_source_attested_support(
-    row: ProductionOccurrence,
-    roles_by_source_ref_form: dict[tuple[str, str, str], set[str]],
-) -> bool:
-    if row.form_role != "regular_output":
-        return True
-    supporting_roles = {"target_form", "comparison_form", "evidence_form"}
-    key = (row.source_ref, row.language, row.form)
-    return bool((roles_by_source_ref_form.get(key, set()) - {"regular_output"}) & supporting_roles)
-
-
 def default_print_exclusion_reason(
     row: ProductionOccurrence,
-    roles_by_source_ref_form: dict[tuple[str, str, str], set[str]],
 ) -> str:
     if row.source_scope.startswith("reader_failure_"):
         return "reader_facing_pedagogical_example"
     if row.language == "preoe":
         return "preoe_model_internal_default_exclusion"
-    if row.form_role == "regular_output" and not regular_output_has_same_source_attested_support(row, roles_by_source_ref_form):
-        return "regular_output_without_attested_or_curated_support"
+    if row.form_role == "regular_output":
+        return "regular_output_default_exclusion"
     return ""
 
 
@@ -2774,9 +2785,6 @@ def split_print_main_rows(
     decisions: list[dict[str, str]] | None = None,
 ) -> tuple[list[ProductionOccurrence], list[dict[str, str]]]:
     print_decisions = decisions or load_print_decisions()
-    roles_by_source_ref_form: dict[tuple[str, str, str], set[str]] = defaultdict(set)
-    for row in production_rows:
-        roles_by_source_ref_form[(row.source_ref, row.language, row.form)].add(row.form_role)
 
     included: list[ProductionOccurrence] = []
     excluded: list[dict[str, str]] = []
@@ -2792,7 +2800,7 @@ def split_print_main_rows(
         elif decision_action == "defer_print":
             exclusion_reason = "deferred_by_print_decision"
         else:
-            exclusion_reason = default_print_exclusion_reason(row, roles_by_source_ref_form)
+            exclusion_reason = default_print_exclusion_reason(row)
         if exclusion_reason:
             excluded.append(
                 {
@@ -2841,6 +2849,163 @@ def write_print_excluded_rows(path: Path, rows: list[dict[str, str]]) -> None:
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in PRINT_EXCLUDED_FIELDS})
+
+
+PRINT_PROSE_RULE_WORDS = {"form", "output", "expected", "stage", "rule"}
+SMALL_PRINT_SAMPLE_LANGUAGES = {"pwgmc", "goth", "dutch", "german", "modeng"}
+
+
+def build_print_unique_rows(rows: list[ProductionOccurrence]) -> list[dict[str, str]]:
+    grouped: dict[tuple[str, str, str], dict[str, object]] = {}
+    for row in rows:
+        key = (row.language, row.display, row.sort_key)
+        bucket = grouped.setdefault(
+            key,
+            {
+                "language": row.language,
+                "display": row.display,
+                "sort_key": row.sort_key,
+                "occurrence_count": 0,
+                "roles": set(),
+                "source_scopes": set(),
+                "sample_sources": [],
+            },
+        )
+        bucket["occurrence_count"] = int(bucket["occurrence_count"]) + 1
+        cast_roles = bucket["roles"]
+        cast_scopes = bucket["source_scopes"]
+        cast_sources = bucket["sample_sources"]
+        assert isinstance(cast_roles, set) and isinstance(cast_scopes, set) and isinstance(cast_sources, list)
+        cast_roles.add(row.form_role)
+        cast_scopes.add(row.source_scope)
+        if row.source_ref not in cast_sources and len(cast_sources) < 5:
+            cast_sources.append(row.source_ref)
+
+    unique_rows: list[dict[str, str]] = []
+    for key in sorted(
+        grouped,
+        key=lambda item: (
+            LANGUAGE_ORDER.index(item[0]) if item[0] in LANGUAGE_ORDER else len(LANGUAGE_ORDER),
+            item[2],
+            item[1],
+        ),
+    ):
+        bucket = grouped[key]
+        roles = sorted(bucket["roles"])  # type: ignore[arg-type]
+        scopes = sorted(bucket["source_scopes"])  # type: ignore[arg-type]
+        sources = bucket["sample_sources"]  # type: ignore[assignment]
+        unique_rows.append(
+            {
+                "language": str(bucket["language"]),
+                "display": str(bucket["display"]),
+                "sort_key": str(bucket["sort_key"]),
+                "occurrence_count": str(bucket["occurrence_count"]),
+                "roles": "; ".join(roles),
+                "source_scopes": "; ".join(scopes),
+                "sample_sources": "; ".join(sources),
+            }
+        )
+    return unique_rows
+
+
+def write_print_unique_rows(path: Path, rows: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_UNIQUE_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row.get(field, "") for field in PRINT_UNIQUE_FIELDS})
+
+
+def build_print_anomaly_rows(
+    print_main_rows: list[ProductionOccurrence],
+    decisions: list[dict[str, str]],
+) -> list[dict[str, str]]:
+    explicit_regular_include_keys = {
+        (
+            (row.get("language") or "").strip(),
+            (row.get("form") or "").strip(),
+            (row.get("form_role") or "").strip(),
+            (row.get("source_ref") or "").strip(),
+        )
+        for row in decisions
+        if (row.get("action") or "").strip() == "include_main"
+        and (row.get("form_role") or "").strip() == "regular_output"
+    }
+    letter_pattern = r"[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ]"
+    rows: list[dict[str, str]] = []
+    for row in print_main_rows:
+        flags: list[str] = []
+        hard = False
+        normalized_display = row.display.casefold().lstrip("*").strip("`.,;:!?()[]{}“”\"' ")
+        normalized_form = row.form.casefold().lstrip("*").strip("`.,;:!?()[]{}“”\"' ")
+        if ">" in row.form or ">" in row.display:
+            flags.append("derivational_expression")
+            hard = True
+        if "~" in row.form or "~" in row.display:
+            flags.append("contains_tilde")
+        if "|" in row.form or "|" in row.display:
+            flags.append("contains_pipe")
+        if "," in row.form or "," in row.display:
+            flags.append("contains_comma")
+        if ("/" in row.form or "/" in row.display) and row.form_role != "comparison_form":
+            flags.append("contains_slash_non_comparison")
+        if " " in row.form.strip() or " " in row.display.strip():
+            flags.append("contains_space")
+        if re.fullmatch(letter_pattern + "{1,2}", row.form.lstrip("*")):
+            flags.append("bare_short_segment")
+        if re.fullmatch(r"SC\d{2,4}", row.display) or re.fullmatch(r"SC\d{2,4}", row.form):
+            flags.append("rule_label_like")
+            hard = True
+        if normalized_display in PRINT_PROSE_RULE_WORDS or normalized_form in PRINT_PROSE_RULE_WORDS:
+            flags.append("prose_or_rule_word")
+            hard = True
+        if row.language == "preoe":
+            flags.append("preoe_language")
+            hard = True
+        if row.source_scope.startswith("reader_failure_"):
+            flags.append("reader_failure_scope")
+            hard = True
+        if row.form_role == "regular_output":
+            key = (row.language, row.form, row.form_role, row.source_ref)
+            if key in explicit_regular_include_keys:
+                flags.append("regular_output_explicit_include")
+            else:
+                flags.append("regular_output_without_explicit_include")
+                hard = True
+        if not row.sort_key:
+            flags.append("empty_sort_key")
+            hard = True
+        if not row.display:
+            flags.append("empty_display")
+            hard = True
+        if row.display.startswith("*") and row.language in {"dutch", "german", "modeng"}:
+            flags.append("starred_display_non_proto_context")
+        if not flags:
+            continue
+        rows.append(
+            {
+                "language": row.language,
+                "form": row.form,
+                "display": row.display,
+                "sort_key": row.sort_key,
+                "form_role": row.form_role,
+                "source_scope": row.source_scope,
+                "source_ref": row.source_ref,
+                "anomaly_flags": "; ".join(sorted(flags)),
+                "hard_error": "yes" if hard else "no",
+                "note": "hard-policy violation" if hard else "soft-review signal",
+            }
+        )
+    rows.sort(key=lambda item: (item["language"], item["sort_key"], item["display"], item["source_ref"]))
+    return rows
+
+
+def write_print_anomaly_rows(path: Path, rows: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_ANOMALY_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row.get(field, "") for field in PRINT_ANOMALY_FIELDS})
 
 
 def reason_for_preoe_inclusion(row: ProductionOccurrence) -> str:
@@ -3093,8 +3258,16 @@ def write_print_audit(
     print_excluded_rows: list[dict[str, str]],
     preoe_review_rows: list[dict[str, str]],
     reader_example_rows: list[dict[str, str]],
+    print_unique_rows: list[dict[str, str]],
+    print_anomaly_rows: list[dict[str, str]],
 ) -> None:
     exclusion_counts = Counter(row.get("exclusion_reason", "") for row in print_excluded_rows if row.get("exclusion_reason"))
+    print_counts_by_language = Counter(row.language for row in print_main_rows)
+    print_unique_by_language = {
+        language: len({row.display for row in print_main_rows if row.language == language})
+        for language in print_counts_by_language
+    }
+    print_role_counts = Counter(row.form_role for row in print_main_rows)
     preoe_status_counts = Counter(row.get("proposed_print_status", "") for row in preoe_review_rows if row.get("proposed_print_status"))
     reader_role_counts = Counter(row.get("example_role", "") for row in reader_example_rows if row.get("example_role"))
     include_yes = sum(1 for row in reader_example_rows if row.get("include_in_example_index") == "yes")
@@ -3119,6 +3292,7 @@ def write_print_audit(
             or bool(re.search(r"[æǣȳþðċġ]", row.get("form", "").casefold()))
         )
     )
+    hard_anomalies = [row for row in print_anomaly_rows if row.get("hard_error") == "yes"]
 
     def sample_main(title: str, entries: list[ProductionOccurrence], *, limit: int = 8) -> list[str]:
         lines = [f"## {title}", ""]
@@ -3146,6 +3320,31 @@ def write_print_audit(
         lines.append("")
         return lines
 
+    def sample_unique(title: str, entries: list[dict[str, str]], *, limit: int | None = None) -> list[str]:
+        lines = [f"## {title}", ""]
+        if not entries:
+            lines.extend(["_None._", ""])
+            return lines
+        rows = entries if limit is None else entries[:limit]
+        lines.append("| Language | Display | Sort key | Occurrences | Roles |")
+        lines.append("| --- | --- | --- | ---: | --- |")
+        for row in rows:
+            lines.append(
+                "| "
+                + " | ".join(
+                    [
+                        row.get("language", ""),
+                        f"`{row.get('display', '')}`",
+                        row.get("sort_key", ""),
+                        row.get("occurrence_count", ""),
+                        row.get("roles", ""),
+                    ]
+                )
+                + " |"
+            )
+        lines.append("")
+        return lines
+
     lines = [
         "# Index verborum print audit",
         "",
@@ -3156,9 +3355,23 @@ def write_print_audit(
         f"- Printed excluded occurrences: {len(print_excluded_rows)}",
         f"- Printed excluded unique forms: {len({(row.get('language', ''), row.get('display', '')) for row in print_excluded_rows})}",
         "",
-        "## Excluded rows by reason",
+        "## Print exclusions by reason",
         "",
     ]
+    if exclusion_counts:
+        for reason, count in sorted(exclusion_counts.items()):
+            lines.append(f"- `{reason}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(["", "## Printed main-index forms by language", "", "| Language | Occurrences | Unique forms |", "| --- | ---: | ---: |"])
+    for language in LANGUAGE_ORDER:
+        if print_counts_by_language.get(language):
+            lines.append(f"| {LANGUAGE_TITLES[language]} | {print_counts_by_language[language]} | {print_unique_by_language[language]} |")
+    lines.extend(["", "## Printed main-index forms by role", "", "| Role | Occurrences |", "| --- | ---: |"])
+    for role in ("target_form", "source_protoform", "selected_input", "comparison_form", "regular_output", "evidence_form"):
+        if print_role_counts.get(role):
+            lines.append(f"| {role} | {print_role_counts[role]} |")
+    lines.extend(["", "## Internal-only rows by reason", ""])
     if exclusion_counts:
         for reason, count in sorted(exclusion_counts.items()):
             lines.append(f"- `{reason}`: {count}")
@@ -3196,6 +3409,22 @@ def write_print_audit(
             "",
         ]
     )
+    lines.extend(
+        [
+            "## Print-unique entry audit",
+            "",
+            f"- Unique printed entries: {len(print_unique_rows)}",
+            f"- Print anomaly rows: {len(print_anomaly_rows)}",
+            f"- Hard print anomalies: {len(hard_anomalies)}",
+            "",
+        ]
+    )
+    unique_oe = [row for row in print_unique_rows if row.get("language") == "oe"]
+    unique_pgmc = [row for row in print_unique_rows if row.get("language") == "pgmc"]
+    unique_small_languages = [row for row in print_unique_rows if row.get("language") in SMALL_PRINT_SAMPLE_LANGUAGES]
+    lines.extend(sample_unique("Unique printed entries: first 20 Old English", unique_oe, limit=20))
+    lines.extend(sample_unique("Unique printed entries: first 20 Proto-Germanic", unique_pgmc, limit=20))
+    lines.extend(sample_unique("Unique printed entries: small language indexes (all)", unique_small_languages, limit=None))
     lines.extend(["## Reader-facing include=yes summary buckets", ""])
     lines.append("### Included rows by role")
     lines.append("")
@@ -3237,6 +3466,12 @@ def write_print_audit(
         sample_excluded(
             "Excluded pre-OE/model-internal rows (sample)",
             [row for row in print_excluded_rows if row.get("language") == "preoe"],
+        )
+    )
+    lines.extend(
+        sample_excluded(
+            "Print anomalies (sample)",
+            print_anomaly_rows,
         )
     )
     lines.extend(["## Reader-facing example rows (sample)", ""])
@@ -3536,7 +3771,7 @@ def write_audit(
     exclusion_counts = Counter(row.get("exclusion_reason", "") for row in print_excluded if row.get("exclusion_reason"))
     required_print_reasons = (
         "preoe_model_internal_default_exclusion",
-        "regular_output_without_attested_or_curated_support",
+        "regular_output_default_exclusion",
         "reader_facing_pedagogical_example",
         "deferred_by_print_decision",
         "excluded_by_print_decision",
@@ -3551,19 +3786,28 @@ def write_audit(
     lines = [
         "# Index verborum audit",
         "",
-        f"- Production indexed occurrences: {len(rows)}",
-        f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
+        f"- Internal production occurrences: {len(rows)}",
+        f"- Internal production unique forms: {len({(row.language, row.display) for row in rows})}",
         f"- Printed main-index occurrences: {len(print_main)}",
         f"- Printed main-index unique forms: {len({(row.language, row.display) for row in print_main})}",
         f"- Print-excluded occurrences: {len(print_excluded)}",
         f"- Print-excluded unique forms: {len({(row.get('language', ''), row.get('display', '')) for row in print_excluded})}",
         f"- Print exclusions (preoe_model_internal_default_exclusion): {exclusion_counts.get('preoe_model_internal_default_exclusion', 0)}",
-        f"- Print exclusions (regular_output_without_attested_or_curated_support): {exclusion_counts.get('regular_output_without_attested_or_curated_support', 0)}",
+        f"- Print exclusions (regular_output_default_exclusion): {exclusion_counts.get('regular_output_default_exclusion', 0)}",
         f"- Print exclusions (reader_facing_pedagogical_example): {exclusion_counts.get('reader_facing_pedagogical_example', 0)}",
         f"- Print exclusions (deferred_by_print_decision): {exclusion_counts.get('deferred_by_print_decision', 0)}",
         f"- Print exclusions (excluded_by_print_decision): {exclusion_counts.get('excluded_by_print_decision', 0)}",
+        f"- Internal-only rows (preoe_model_internal_default_exclusion): {exclusion_counts.get('preoe_model_internal_default_exclusion', 0)}",
+        f"- Internal-only rows (regular_output_default_exclusion): {exclusion_counts.get('regular_output_default_exclusion', 0)}",
+        f"- Internal-only rows (reader_facing_pedagogical_example): {exclusion_counts.get('reader_facing_pedagogical_example', 0)}",
+        f"- Internal-only rows (deferred_by_print_decision): {exclusion_counts.get('deferred_by_print_decision', 0)}",
+        f"- Internal-only rows (excluded_by_print_decision): {exclusion_counts.get('excluded_by_print_decision', 0)}",
         *[
             f"- Print exclusions ({reason}): {exclusion_counts[reason]}"
+            for reason in other_print_reasons
+        ],
+        *[
+            f"- Internal-only rows ({reason}): {exclusion_counts[reason]}"
             for reason in other_print_reasons
         ],
         f"- Pre-OE review rows: {len(preoe_review)}",
@@ -3644,6 +3888,14 @@ def write_audit(
     ):
         if print_role_counts.get(role):
             lines.append(f"| {role} | {print_role_counts[role]} |")
+    lines.append("")
+
+    lines.extend(["## Internal-only rows by reason", "", "| Reason | Occurrences |", "| --- | ---: |"])
+    if exclusion_counts:
+        for reason, count in sorted(exclusion_counts.items()):
+            lines.append(f"| {reason} | {count} |")
+    else:
+        lines.append("| _none_ | 0 |")
     lines.append("")
 
     def render_bucket(title: str, entries: list[dict[str, str]], columns: tuple[str, ...] = ("form", "source_ref")) -> None:
@@ -3873,12 +4125,16 @@ def main() -> None:
     )
     print_decisions = load_print_decisions()
     print_main_rows, print_excluded_rows = split_print_main_rows(production_rows, print_decisions)
+    print_unique_rows = build_print_unique_rows(print_main_rows)
+    print_anomaly_rows = build_print_anomaly_rows(print_main_rows, print_decisions)
     preoe_review_rows = build_preoe_review_rows(production_rows, print_decisions)
     reader_facing_example_rows = build_reader_facing_example_rows(print_main_rows)
     write_index_registry_header(print_main_rows)
     write_forms(production_rows)
     write_print_main_rows(PRINT_MAIN_PATH, print_main_rows)
     write_print_excluded_rows(PRINT_EXCLUDED_PATH, print_excluded_rows)
+    write_print_unique_rows(PRINT_UNIQUE_PATH, print_unique_rows)
+    write_print_anomaly_rows(PRINT_ANOMALIES_PATH, print_anomaly_rows)
     write_preoe_review(PREOE_REVIEW_PATH, preoe_review_rows)
     write_reader_facing_example_rows(READER_FACING_EXAMPLES_PATH, reader_facing_example_rows)
     write_print_audit(
@@ -3887,6 +4143,8 @@ def main() -> None:
         print_excluded_rows,
         preoe_review_rows,
         reader_facing_example_rows,
+        print_unique_rows,
+        print_anomaly_rows,
     )
     audit_buckets = build_audit_rows(production_rows, table_semantic_results=table_semantic_results)
     audit_buckets, _ = apply_broad_prose_decisions(audit_buckets)

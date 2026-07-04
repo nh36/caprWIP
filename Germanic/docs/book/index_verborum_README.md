@@ -73,6 +73,10 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
   printable main Index Verborum view.
 - `Germanic/docs/book/index_verborum_print_excluded.tsv` records production rows
   excluded from the printed main index and the exclusion reason.
+- `Germanic/docs/book/index_verborum_print_unique.tsv` collapses printed
+  occurrences to unique printable entries for final spot-checking.
+- `Germanic/docs/book/index_verborum_print_anomalies.tsv` flags suspicious
+  printed rows and marks hard policy violations.
 - Explicit `.iv` tags are render-gated by the printable main view: excluded
   `preoe` and excluded `regular_output` tags remain visible in prose but do not
   emit printed index commands.
@@ -90,6 +94,8 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
   because the transducer can generate them. If a regular output matters as
   evidence, contrast, or comparison, tag it explicitly or add it through a
   curated source.
+- In the **printed main** index, `regular_output` rows are excluded by default.
+  They print only through an explicit `include_main` decision for the exact row.
 - Broad harvesting of arbitrary marked-up forms feeds only
   `Germanic/docs/book/index_verborum_audit.md`.
 - Broad model-entry prose suggestions are generated into

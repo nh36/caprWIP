@@ -3,13 +3,16 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
 DEFAULT_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.tex"
+PROSE_RULE_WORDS = {"form", "output", "expected", "stage", "rule"}
 
 
 def load_rows(path: Path) -> list[dict[str, str]]:
@@ -44,6 +47,26 @@ def require_row(rows: list[dict[str, str]], predicate, label: str) -> dict[str, 
     raise AssertionError(f"Missing regression row for {label}")
 
 
+def decode_latex_index_value(value: str) -> str:
+    return value.replace(r"\@", "@").replace(r"\!", "!").replace(r"\|", "|")
+
+
+def parse_tex_index_commands(tex_text: str) -> list[tuple[str, str, str]]:
+    commands: list[tuple[str, str, str]] = []
+    for match in re.finditer(r"\\index\[(?P<lang>[^\]]+)\]\{(?P<body>[^}]*)\}", tex_text):
+        body = match.group("body")
+        if "@" in body:
+            sort_key, display = body.split("@", 1)
+        else:
+            sort_key, display = body, body
+        commands.append((match.group("lang"), decode_latex_index_value(sort_key), decode_latex_index_value(display)))
+    return commands
+
+
+def normalized_index_token(value: str) -> str:
+    return value.casefold().lstrip("*").strip("`.,;:!?()[]{}\"' ")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tex-path", type=Path, default=DEFAULT_TEX_PATH)
@@ -51,9 +74,11 @@ def main() -> None:
 
     tex_path = args.tex_path.expanduser().resolve()
     tex_text = tex_path.read_text(encoding="utf-8")
+    form_rows = load_rows(FORMS_PATH)
     main_rows = load_rows(PRINT_MAIN_PATH)
     excluded_rows = load_rows(PRINT_EXCLUDED_PATH)
     main_commands = {index_command(row) for row in main_rows}
+    tex_commands = parse_tex_index_commands(tex_text)
 
     main_explicit_keys = {
         explicit_key(row)
@@ -64,7 +89,7 @@ def main() -> None:
     assert r"\index[preoe]{" not in tex_text, "Generated TeX must not emit preoe index commands."
 
     for row in excluded_rows:
-        if row.get("source_scope") != "explicit_tag" or row.get("form_role") != "regular_output":
+        if row.get("form_role") != "regular_output":
             continue
         if explicit_key(row) in main_explicit_keys:
             continue
@@ -72,6 +97,13 @@ def main() -> None:
         if command in main_commands:
             continue
         assert command not in tex_text, f"Excluded explicit regular_output leaked into TeX: {command}"
+
+    reader_failure_rows = [row for row in form_rows if (row.get("source_scope") or "").startswith("reader_failure_")]
+    for row in reader_failure_rows:
+        command = index_command(row)
+        if command in main_commands:
+            continue
+        assert command not in tex_text, f"Reader-facing failure row leaked into TeX: {command}"
 
     for form in ("fogol", "woll", "wylf", "*bakan"):
         for row in excluded_rows:
@@ -84,9 +116,23 @@ def main() -> None:
                 continue
             assert command not in tex_text, f"Excluded form leaked into TeX index commands: {command}"
 
+    for language, sort_key, display in tex_commands:
+        token_sort = normalized_index_token(sort_key)
+        token_display = normalized_index_token(display)
+        assert token_sort not in {"monch", "jugend"}, f"Unexpected prose index entry leaked into TeX: {sort_key}@{display}"
+        assert token_display not in {"mönch", "jugend"}, f"Unexpected prose index entry leaked into TeX: {sort_key}@{display}"
+        assert token_sort not in PROSE_RULE_WORDS and token_display not in PROSE_RULE_WORDS, (
+            f"Prose/rule-label token leaked into TeX index commands: {sort_key}@{display}"
+        )
+
     included_explicit_rows = [row for row in main_rows if row.get("source_scope") == "explicit_tag"]
     assert included_explicit_rows, "Expected at least one printable explicit-tag row."
     assert any(index_command(row) in tex_text for row in included_explicit_rows), "No printable explicit-tag command found in TeX."
+
+    for language in ("greek", "skt", "lat"):
+        language_rows = [row for row in included_explicit_rows if row.get("language") == language]
+        if language_rows:
+            assert any(index_command(row) in tex_text for row in language_rows), f"Missing explicit {language} index commands in TeX."
 
     ordinary_oe_target = require_row(
         main_rows,

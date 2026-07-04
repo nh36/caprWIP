@@ -1,16 +1,21 @@
 # Index verborum audit
 
-- Production indexed occurrences: 2006
-- Production unique forms: 980
-- Printed main-index occurrences: 1952
+- Internal production occurrences: 2006
+- Internal production unique forms: 980
+- Printed main-index occurrences: 1902
 - Printed main-index unique forms: 958
-- Print-excluded occurrences: 54
-- Print-excluded unique forms: 42
+- Print-excluded occurrences: 104
+- Print-excluded unique forms: 82
 - Print exclusions (preoe_model_internal_default_exclusion): 0
-- Print exclusions (regular_output_without_attested_or_curated_support): 41
+- Print exclusions (regular_output_default_exclusion): 91
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 13
+- Internal-only rows (preoe_model_internal_default_exclusion): 0
+- Internal-only rows (regular_output_default_exclusion): 91
+- Internal-only rows (reader_facing_pedagogical_example): 0
+- Internal-only rows (deferred_by_print_decision): 0
+- Internal-only rows (excluded_by_print_decision): 13
 - Pre-OE review rows: 13
 - Reader-facing example candidate rows: 812
 - Reader-facing rows include_in_example_index=yes: 463
@@ -159,7 +164,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English forms | 956 | 395 |
+| Old English forms | 906 | 395 |
 | Proto-Germanic forms | 937 | 515 |
 | Proto-West Germanic forms | 2 | 2 |
 | Old Norse forms | 10 | 8 |
@@ -179,8 +184,14 @@
 | source_protoform | 331 |
 | selected_input | 535 |
 | comparison_form | 504 |
-| regular_output | 50 |
 | evidence_form | 161 |
+
+## Internal-only rows by reason
+
+| Reason | Occurrences |
+| --- | ---: |
+| excluded_by_print_decision | 13 |
+| regular_output_default_exclusion | 91 |
 
 ## Already indexed in same entry
 
