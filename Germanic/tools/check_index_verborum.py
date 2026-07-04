@@ -22,8 +22,10 @@ from build_index_verborum import (
     infer_broad_prose_language,
     infer_broad_prose_suggestion,
     load_broad_prose_decisions,
+    load_print_decisions,
     load_table_decisions,
     load_unresolved_baseline,
+    split_print_main_rows,
     table_candidates_from_path,
     transliterate_sort_key,
     unresolved_baseline_key,
@@ -32,6 +34,11 @@ from build_index_verborum import (
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
+PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
+PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
+PREOE_REVIEW_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_preoe_review.tsv"
+PRINT_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_decisions.tsv"
+READER_FACING_EXAMPLE_PATH = REPO_ROOT / "Germanic/docs/book/reader_facing_example_forms.tsv"
 BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseline.tsv"
 COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
@@ -44,6 +51,26 @@ BROAD_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_pros
 
 def load_forms_rows() -> list[dict[str, str]]:
     with FORMS_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_print_main_rows() -> list[dict[str, str]]:
+    with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_print_excluded_rows() -> list[dict[str, str]]:
+    with PRINT_EXCLUDED_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_preoe_review_rows() -> list[dict[str, str]]:
+    with PREOE_REVIEW_PATH.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_reader_facing_example_rows() -> list[dict[str, str]]:
+    with READER_FACING_EXAMPLE_PATH.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
@@ -285,6 +312,8 @@ def assert_baseline_strictness() -> None:
     needs_review = audit.get("needs_review", [])
     repo_baseline = load_unresolved_baseline(BASELINE_PATH)
     assert isinstance(repo_baseline, dict)
+    assert repo_baseline == {}
+    assert len(BASELINE_PATH.read_text(encoding="utf-8").splitlines()) == 1
 
     # The checked-in baseline may lag deliberate coverage-model broadening, but it must still load
     # and compare cleanly.
@@ -458,6 +487,7 @@ def assert_intermediate_trace_forms_excluded() -> None:
 
 def assert_generated_consistency() -> None:
     forms_rows = load_forms_rows()
+    print_rows = load_print_main_rows()
     production_pairs = {(row["form"], row["source_ref"]) for row in forms_rows}
     table_pairs = parse_table_scanned_unresolved_pairs()
     assert production_pairs.isdisjoint(table_pairs)
@@ -468,12 +498,15 @@ def assert_generated_consistency() -> None:
     assert expected_titles.issubset(audit_titles)
 
     registry_codes = parse_registry_codes()
-    assert registry_codes == form_languages
+    print_languages = {row["language"] for row in print_rows}
+    assert registry_codes == print_languages
 
     for code in ("dutch", "german", "modeng"):
         if code in form_languages:
             assert LANGUAGE_TITLES[code] in audit_titles
     summary_lines = parse_audit_summary_lines()
+    assert "- True remaining unresolved: 0" in summary_lines
+    assert "- Table-scanned unresolved candidates: 0" in summary_lines
     assert any(line.startswith("- True remaining unresolved: ") for line in summary_lines)
     assert any(line.startswith("- Table-scanned unresolved candidates: ") for line in summary_lines)
     assert any(line.startswith("- Already indexed in same entry: ") for line in summary_lines)
@@ -692,8 +725,154 @@ def assert_broad_prose_decisions_and_inference() -> None:
 
     curated_ignored_pairs = parse_audit_bucket_pairs("Curated broad-prose ignored")
     assert ("Mönch", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") in curated_ignored_pairs
+    assert ("Jugend", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") in curated_ignored_pairs
     unresolved_false_positive_pairs = parse_audit_bucket_pairs("Likely ordinary-language false positives")
     assert ("Mönch", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") not in unresolved_false_positive_pairs
+    assert ("Jugend", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") not in unresolved_false_positive_pairs
+
+
+def assert_print_layer_outputs() -> None:
+    assert PRINT_MAIN_PATH.exists()
+    assert PRINT_EXCLUDED_PATH.exists()
+    assert PREOE_REVIEW_PATH.exists()
+    assert PRINT_DECISIONS_PATH.exists()
+    assert READER_FACING_EXAMPLE_PATH.exists()
+
+    with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
+        main_reader = csv.DictReader(handle, delimiter="\t")
+        main_rows = list(main_reader)
+        assert main_reader.fieldnames == ["language", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
+
+    with PRINT_EXCLUDED_PATH.open(encoding="utf-8") as handle:
+        excluded_reader = csv.DictReader(handle, delimiter="\t")
+        excluded_rows = list(excluded_reader)
+        assert excluded_reader.fieldnames == [
+            "language",
+            "form",
+            "display",
+            "sort_key",
+            "form_role",
+            "source_scope",
+            "source_ref",
+            "origin",
+            "status",
+            "exclusion_reason",
+            "decision_action",
+        ]
+
+    with PREOE_REVIEW_PATH.open(encoding="utf-8") as handle:
+        preoe_reader = csv.DictReader(handle, delimiter="\t")
+        preoe_rows = list(preoe_reader)
+        assert preoe_reader.fieldnames == [
+            "form",
+            "source_ref",
+            "source_scope",
+            "form_role",
+            "reason_for_current_inclusion",
+            "proposed_print_status",
+            "note",
+        ]
+
+    with READER_FACING_EXAMPLE_PATH.open(encoding="utf-8") as handle:
+        reader_examples = csv.DictReader(handle, delimiter="\t")
+        example_rows = list(reader_examples)
+        assert reader_examples.fieldnames == [
+            "source_ref",
+            "nearest_heading",
+            "form",
+            "inferred_language",
+            "example_role",
+            "main_index_overlap",
+            "include_in_example_index",
+            "reason",
+            "context",
+        ]
+
+    forms_rows = load_forms_rows()
+    main_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in main_rows}
+    decisions = load_print_decisions()
+
+    assert not any(row["language"] == "preoe" for row in main_rows)
+    assert preoe_rows
+    assert any(row["exclusion_reason"] == "preoe_model_internal_default_exclusion" for row in excluded_rows)
+    assert not any(row["source_scope"].startswith("reader_failure_") for row in main_rows)
+    assert not any(row["form"] in {"Mönch", "Jugend"} for row in forms_rows)
+    assert not any(row["form"] in {"Mönch", "Jugend"} for row in main_rows)
+
+    include_regular_keys = {
+        (row.get("language", ""), row.get("form", ""), row.get("form_role", ""), row.get("source_ref", ""))
+        for row in decisions
+        if row.get("action") == "include_main" and row.get("form_role") == "regular_output"
+    }
+    supporting_roles_by_form: dict[tuple[str, str], set[str]] = {}
+    for row in forms_rows:
+        key = (row["language"], row["form"])
+        supporting_roles_by_form.setdefault(key, set()).add(row["form_role"])
+    for row in main_rows:
+        if row["form_role"] == "regular_output":
+            key = (row["language"], row["form"], row["form_role"], row["source_ref"])
+            supported_elsewhere = bool(
+                (supporting_roles_by_form.get((row["language"], row["form"]), set()) - {"regular_output"})
+                & {"target_form", "comparison_form", "evidence_form", "selected_input", "source_protoform"}
+            )
+            assert key in include_regular_keys or supported_elsewhere
+
+    for form in {"fogol", "woll", "wylf"}:
+        if not any(decision.get("action") == "include_main" and decision.get("form") == form for decision in decisions):
+            assert not any(row["form"] == form for row in main_rows)
+
+    assert ("pgmc", "*θánkijaną", "source_protoform", "think — OE þenċan") in main_keys
+    for language in ("pgmc", "pwgmc", "nwgmc"):
+        source_like_rows = [
+            row for row in forms_rows
+            if row["language"] == language
+            and row["form_role"] in {"source_protoform", "selected_input"}
+            and not row["source_scope"].startswith("reader_failure_")
+        ]
+        if source_like_rows:
+            assert any(
+                (row["language"], row["form"], row["form_role"], row["source_ref"]) in main_keys
+                for row in source_like_rows
+            )
+
+    assert any(
+        row["language"] == "oe"
+        and row["source_scope"] == "lexical_heading"
+        and row["display"].startswith("*")
+        and row["form_role"] == "target_form"
+        for row in main_rows
+    )
+    assert example_rows
+    assert any(row["include_in_example_index"] == "yes" for row in example_rows)
+    assert any(row["example_role"] == "notation_or_segment" for row in example_rows)
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        fixture = Path(tmpdir) / "synthetic-print-explicit.md"
+        fixture.write_text(
+            "[*λόγος*]{.iv lang=greek sort=logos}\n"
+            "[śrī]{.iv lang=skt sort=sri}\n"
+            "[rōsa]{.iv lang=lat sort=rosa}\n",
+            encoding="utf-8",
+        )
+        tags = explicit_tag_occurrences(paths=[fixture])
+        store = {}
+        for row in tags:
+            add_production(
+                store,
+                language=row["language"],
+                form=row["form"],
+                display=row["display"],
+                sort_key=row["sort_key"],
+                form_role=row["form_role"],
+                source_scope=row["source_scope"],
+                source_ref=row["source_ref"],
+                origin=row["origin"],
+            )
+        synthetic_main, _ = split_print_main_rows(list(store.values()), decisions=[])
+        synthetic_keys = {(row.language, row.form) for row in synthetic_main}
+    assert ("greek", "λόγος") in synthetic_keys
+    assert ("skt", "śrī") in synthetic_keys
+    assert ("lat", "rōsa") in synthetic_keys
 
 
 def assert_reconstructed_oe_index_commands() -> None:
@@ -731,6 +910,7 @@ def main() -> None:
     assert_table_semantic_rows()
     assert_broad_prose_buckets()
     assert_broad_prose_decisions_and_inference()
+    assert_print_layer_outputs()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")

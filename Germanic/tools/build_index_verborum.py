@@ -20,6 +20,11 @@ COMPACT_PATH = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_tr
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
+PRINT_MAIN_PATH = BOOK_DIR / "index_verborum_print_main.tsv"
+PRINT_EXCLUDED_PATH = BOOK_DIR / "index_verborum_print_excluded.tsv"
+PREOE_REVIEW_PATH = BOOK_DIR / "index_verborum_preoe_review.tsv"
+PRINT_DECISIONS_PATH = BOOK_DIR / "index_verborum_print_decisions.tsv"
+READER_FACING_EXAMPLES_PATH = BOOK_DIR / "reader_facing_example_forms.tsv"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
@@ -89,6 +94,35 @@ BROAD_PROSE_DECISION_FIELDS = [
     "form_role",
     "note",
 ]
+PRINT_DECISION_FIELDS = [
+    "action",
+    "language",
+    "form",
+    "source_ref",
+    "form_role",
+    "note",
+]
+PRINT_EXCLUDED_FIELDS = PRODUCTION_FIELDS + ["exclusion_reason", "decision_action"]
+PREOE_REVIEW_FIELDS = [
+    "form",
+    "source_ref",
+    "source_scope",
+    "form_role",
+    "reason_for_current_inclusion",
+    "proposed_print_status",
+    "note",
+]
+READER_FACING_EXAMPLE_FIELDS = [
+    "source_ref",
+    "nearest_heading",
+    "form",
+    "inferred_language",
+    "example_role",
+    "main_index_overlap",
+    "include_in_example_index",
+    "reason",
+    "context",
+]
 TABLE_SEMANTIC_SOURCE_SCOPE = "table_semantic_auto"
 TABLE_SEMANTIC_ORIGIN = "table_semantic_rule"
 TABLE_SEMANTIC_DECISION_SOURCE_SCOPE = "table_semantic_decision"
@@ -97,6 +131,7 @@ TABLE_DECISION_ACTIONS = {"accept", "defer", "ignore"}
 BROAD_PROSE_DECISION_SOURCE_SCOPE = "broad_prose_decision"
 BROAD_PROSE_DECISION_ORIGIN = "broad_prose_curated"
 BROAD_PROSE_DECISION_ACTIONS = {"accept", "defer", "ignore"}
+PRINT_DECISION_ACTIONS = {"include_main", "exclude_main", "defer_print"}
 
 
 def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str, str], dict[str, str]]:
@@ -1309,6 +1344,37 @@ def load_broad_prose_decisions() -> list[dict[str, str]]:
             if row.get("form_role") not in ALLOWED_FORM_ROLES:
                 raise ValueError(f"Broad prose decision {action} requires a valid form_role: {row}")
     return rows
+
+
+def load_print_decisions() -> list[dict[str, str]]:
+    if not PRINT_DECISIONS_PATH.exists():
+        return []
+    with PRINT_DECISIONS_PATH.open(encoding="utf-8") as handle:
+        rows = [{key: (value or "").strip() for key, value in row.items()} for row in csv.DictReader(handle, delimiter="\t")]
+    for row in rows:
+        action = row.get("action", "")
+        if action not in PRINT_DECISION_ACTIONS:
+            raise ValueError(f"Unknown print decision action: {action or '<blank>'}")
+        if row.get("form"):
+            row["form"] = normalize_form(row["form"])
+        if action in {"include_main", "exclude_main"} and not row.get("source_ref") and not row.get("form"):
+            raise ValueError(f"Print decision {action} requires at least form or source_ref: {row}")
+        role = row.get("form_role", "")
+        if role and role not in ALLOWED_FORM_ROLES:
+            raise ValueError(f"Print decision has invalid form_role: {row}")
+    return rows
+
+
+def print_decision_matches_row(decision: dict[str, str], row: ProductionOccurrence) -> bool:
+    if decision.get("language") and decision["language"] != row.language:
+        return False
+    if decision.get("form") and decision["form"] != row.form:
+        return False
+    if decision.get("source_ref") and decision["source_ref"] != row.source_ref:
+        return False
+    if decision.get("form_role") and decision["form_role"] != row.form_role:
+        return False
+    return True
 
 
 def apply_broad_prose_decisions(
@@ -2616,6 +2682,312 @@ def build_production_rows(
     )
 
 
+def latest_matching_print_decision(
+    row: ProductionOccurrence,
+    decisions: list[dict[str, str]],
+) -> dict[str, str] | None:
+    matched: dict[str, str] | None = None
+    for decision in decisions:
+        if print_decision_matches_row(decision, row):
+            matched = decision
+    return matched
+
+
+def regular_output_has_attested_support(
+    row: ProductionOccurrence,
+    roles_by_language_form: dict[tuple[str, str], set[str]],
+) -> bool:
+    if row.form_role != "regular_output":
+        return True
+    supporting_roles = {"target_form", "comparison_form", "evidence_form", "selected_input", "source_protoform"}
+    return bool((roles_by_language_form.get((row.language, row.form), set()) - {"regular_output"}) & supporting_roles)
+
+
+def default_print_exclusion_reason(
+    row: ProductionOccurrence,
+    roles_by_language_form: dict[tuple[str, str], set[str]],
+) -> str:
+    if row.source_scope.startswith("reader_failure_"):
+        return "reader_facing_pedagogical_example"
+    if row.language == "preoe":
+        return "preoe_model_internal_default_exclusion"
+    if row.form_role == "regular_output" and not regular_output_has_attested_support(row, roles_by_language_form):
+        return "regular_output_without_attested_or_curated_support"
+    return ""
+
+
+def split_print_main_rows(
+    production_rows: list[ProductionOccurrence],
+    decisions: list[dict[str, str]] | None = None,
+) -> tuple[list[ProductionOccurrence], list[dict[str, str]]]:
+    print_decisions = decisions or load_print_decisions()
+    roles_by_language_form: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for row in production_rows:
+        roles_by_language_form[(row.language, row.form)].add(row.form_role)
+
+    included: list[ProductionOccurrence] = []
+    excluded: list[dict[str, str]] = []
+    for row in production_rows:
+        matched_decision = latest_matching_print_decision(row, print_decisions)
+        decision_action = (matched_decision or {}).get("action", "")
+        decision_note = (matched_decision or {}).get("note", "")
+        if decision_action == "include_main":
+            included.append(row)
+            continue
+        if decision_action == "exclude_main":
+            exclusion_reason = decision_note or "excluded_by_print_decision"
+        elif decision_action == "defer_print":
+            exclusion_reason = decision_note or "deferred_by_print_decision"
+        else:
+            exclusion_reason = default_print_exclusion_reason(row, roles_by_language_form)
+        if exclusion_reason:
+            excluded.append(
+                {
+                    "language": row.language,
+                    "form": row.form,
+                    "display": row.display,
+                    "sort_key": row.sort_key,
+                    "form_role": row.form_role,
+                    "source_scope": row.source_scope,
+                    "source_ref": row.source_ref,
+                    "origin": "; ".join(sorted(row.origins)),
+                    "status": row.status,
+                    "exclusion_reason": exclusion_reason,
+                    "decision_action": decision_action,
+                }
+            )
+        else:
+            included.append(row)
+    return included, excluded
+
+
+def write_print_main_rows(path: Path, rows: list[ProductionOccurrence]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRODUCTION_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(
+                {
+                    "language": row.language,
+                    "form": row.form,
+                    "display": row.display,
+                    "sort_key": row.sort_key,
+                    "form_role": row.form_role,
+                    "source_scope": row.source_scope,
+                    "source_ref": row.source_ref,
+                    "origin": "; ".join(sorted(row.origins)),
+                    "status": row.status,
+                }
+            )
+
+
+def write_print_excluded_rows(path: Path, rows: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_EXCLUDED_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row.get(field, "") for field in PRINT_EXCLUDED_FIELDS})
+
+
+def reason_for_preoe_inclusion(row: ProductionOccurrence) -> str:
+    if row.source_scope.startswith("reader_failure_"):
+        return "Reader-facing failure-pattern capture."
+    if row.source_scope in {"table_semantic_auto", "table_semantic_decision"}:
+        return "Table semantic production promotion."
+    if row.source_scope == "broad_prose_decision":
+        return "Curated broad-prose production decision."
+    if row.source_scope == "explicit_tag":
+        return "Explicit .iv tag in source prose."
+    if row.source_scope == "override":
+        return "Manual add override."
+    return f"Production source scope {row.source_scope}."
+
+
+def proposed_preoe_print_status(
+    row: ProductionOccurrence,
+    decision: dict[str, str] | None,
+) -> str:
+    if decision is not None:
+        if decision.get("action") == "include_main":
+            return "include_if_source_backed"
+        if decision.get("action") == "defer_print":
+            return "needs_human_review"
+        return "exclude_model_internal"
+    if row.source_scope.startswith("reader_failure_"):
+        return "move_to_example_index"
+    if row.source_scope in {"explicit_tag", "override", "broad_prose_decision"}:
+        return "include_if_source_backed"
+    if row.form_role in {"source_protoform", "selected_input"}:
+        return "needs_human_review"
+    return "exclude_model_internal"
+
+
+def build_preoe_review_rows(
+    production_rows: list[ProductionOccurrence],
+    decisions: list[dict[str, str]] | None = None,
+) -> list[dict[str, str]]:
+    print_decisions = decisions or load_print_decisions()
+    review_rows: list[dict[str, str]] = []
+    for row in production_rows:
+        if row.language != "preoe":
+            continue
+        matched_decision = latest_matching_print_decision(row, print_decisions)
+        review_rows.append(
+            {
+                "form": row.form,
+                "source_ref": row.source_ref,
+                "source_scope": row.source_scope,
+                "form_role": row.form_role,
+                "reason_for_current_inclusion": reason_for_preoe_inclusion(row),
+                "proposed_print_status": proposed_preoe_print_status(row, matched_decision),
+                "note": (matched_decision or {}).get("note", ""),
+            }
+        )
+    review_rows.sort(key=lambda item: (item["source_ref"], item["form"], item["form_role"]))
+    return review_rows
+
+
+def write_preoe_review(path: Path, rows: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PREOE_REVIEW_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row.get(field, "") for field in PREOE_REVIEW_FIELDS})
+
+
+def failure_example_roles_by_ref() -> dict[tuple[str, str], tuple[str, str, str]]:
+    rel = CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix()
+    mapping: dict[tuple[str, str], tuple[str, str, str]] = {}
+    for line_no, line in enumerate(CHRONOLOGY_PATH.read_text(encoding="utf-8").splitlines(), start=1):
+        source_ref = f"{rel}:{line_no}"
+        for match in FAILURE_EXAMPLE_RE.finditer(line):
+            input_form = normalize_form(strip_markup(match.group("input")))
+            yielded = normalize_form(strip_markup(match.group("yield")))
+            expected = normalize_form(strip_markup(match.group("expected")))
+            if input_form and candidate_category(input_form) == "needs_review":
+                mapping[(input_form, source_ref)] = (
+                    "example_input",
+                    stage_to_language(match.group("label"), input_form),
+                    "failure-pattern selected input",
+                )
+            if yielded and candidate_category(yielded) == "needs_review":
+                mapping[(yielded, source_ref)] = (
+                    "yielded_output",
+                    "preoe" if yielded.startswith("*") else "oe",
+                    "failure-pattern yielded output",
+                )
+            if expected and candidate_category(expected) == "needs_review":
+                mapping[(expected, source_ref)] = (
+                    "expected_output",
+                    "preoe" if expected.startswith("*") else "oe",
+                    "failure-pattern expected output",
+                )
+    return mapping
+
+
+def classify_reader_example_role(
+    candidate: CandidateOccurrence,
+    failure_roles: dict[tuple[str, str], tuple[str, str, str]],
+) -> tuple[str, str, str]:
+    failure_key = (candidate.form, candidate.source_ref)
+    if failure_key in failure_roles:
+        role, language, reason = failure_roles[failure_key]
+        return role, language, reason
+    notation_reason = broad_prose_notation_reason(candidate)
+    if candidate_category(candidate.form) != "needs_review" or notation_reason:
+        return (
+            "notation_or_segment",
+            infer_broad_prose_language(candidate),
+            notation_reason or "non-formlike fragment or segment",
+        )
+    semantic_text = normalize_semantic_text(candidate.line_text)
+    if candidate.form.startswith("*") and has_development_chain_cues(semantic_text):
+        return ("model_stage", infer_broad_prose_language(candidate), "development-chain modeled stage")
+    if "rather than expected" in semantic_text or "instead of expected" in semantic_text or "expected" in semantic_text:
+        return ("expected_output", infer_broad_prose_language(candidate), "expected outcome in explanatory prose")
+    if "yield" in semantic_text:
+        return ("yielded_output", infer_broad_prose_language(candidate), "yielded outcome in explanatory prose")
+    if candidate.form.startswith("*") and "from " in semantic_text:
+        return ("example_input", infer_broad_prose_language(candidate), "input stage in explanatory prose")
+    return ("diagnostic_comparator", infer_broad_prose_language(candidate), "diagnostic comparison in reader-facing prose")
+
+
+def build_reader_facing_example_rows(
+    print_main_rows: list[ProductionOccurrence],
+) -> list[dict[str, str]]:
+    rel = CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix()
+    failure_roles = failure_example_roles_by_ref()
+    line_map = {
+        f"{rel}:{line_no}": re.sub(r"\s+", " ", line.strip())[:160]
+        for line_no, line in enumerate(CHRONOLOGY_PATH.read_text(encoding="utf-8").splitlines(), start=1)
+    }
+    print_pairs = {(row.language, row.form) for row in print_main_rows}
+    print_forms = {row.form for row in print_main_rows}
+    rows: list[dict[str, str]] = []
+    seen_pairs: set[tuple[str, str]] = set()
+    for candidate in broad_candidates_from_path(CHRONOLOGY_PATH):
+        key = (candidate.form, candidate.source_ref)
+        if key in seen_pairs:
+            continue
+        seen_pairs.add(key)
+        role, inferred_language, reason = classify_reader_example_role(candidate, failure_roles)
+        if (inferred_language, candidate.form) in print_pairs or candidate.form in print_forms:
+            overlap = "yes"
+        else:
+            overlap = "no"
+        rows.append(
+            {
+                "source_ref": candidate.source_ref,
+                "nearest_heading": candidate.heading,
+                "form": candidate.form,
+                "inferred_language": inferred_language,
+                "example_role": role,
+                "main_index_overlap": overlap,
+                "include_in_example_index": "yes" if role != "notation_or_segment" else "no",
+                "reason": reason,
+                "context": re.sub(r"\s+", " ", candidate.line_text).strip()[:160],
+            }
+        )
+    for (form, source_ref), (role, inferred_language, reason) in sorted(failure_roles.items()):
+        key = (form, source_ref)
+        if key in seen_pairs:
+            continue
+        seen_pairs.add(key)
+        line_no = 0
+        if ":" in source_ref:
+            _, line_part = source_ref.rsplit(":", 1)
+            if line_part.isdigit():
+                line_no = int(line_part)
+        heading = nearest_heading_for_source_line(rel, line_no) if line_no else ""
+        if (inferred_language, form) in print_pairs or form in print_forms:
+            overlap = "yes"
+        else:
+            overlap = "no"
+        rows.append(
+            {
+                "source_ref": source_ref,
+                "nearest_heading": heading,
+                "form": form,
+                "inferred_language": inferred_language,
+                "example_role": role,
+                "main_index_overlap": overlap,
+                "include_in_example_index": "yes",
+                "reason": reason,
+                "context": line_map.get(source_ref, ""),
+            }
+        )
+    rows.sort(key=lambda item: (item["source_ref"], item["form"], item["example_role"]))
+    return rows
+
+
+def write_reader_facing_example_rows(path: Path, rows: list[dict[str, str]]) -> None:
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=READER_FACING_EXAMPLE_FIELDS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({field: row.get(field, "") for field in READER_FACING_EXAMPLE_FIELDS})
+
+
 FALSE_POSITIVE_FORMS = {
     "attestation",
     "attested_variant",
@@ -3125,6 +3497,14 @@ def ensure_broad_prose_decisions_file() -> None:
         writer.writeheader()
 
 
+def ensure_print_decisions_file() -> None:
+    if PRINT_DECISIONS_PATH.exists():
+        return
+    with PRINT_DECISIONS_PATH.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_DECISION_FIELDS)
+        writer.writeheader()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--strict", action="store_true", help="Alias for --strict-mode=all.")
@@ -3151,6 +3531,7 @@ def main() -> None:
     ensure_override_file()
     ensure_table_decisions_file()
     ensure_broad_prose_decisions_file()
+    ensure_print_decisions_file()
     rewrite_readme_language_block()
     base_rows = build_production_rows(include_table_semantic=False)
     table_semantic_results = collect_table_semantic_results(base_rows)
@@ -3162,8 +3543,16 @@ def main() -> None:
         table_semantic_results=table_semantic_results,
         broad_prose_decision_rows=broad_prose_decision_rows,
     )
-    write_index_registry_header(production_rows)
+    print_decisions = load_print_decisions()
+    print_main_rows, print_excluded_rows = split_print_main_rows(production_rows, print_decisions)
+    preoe_review_rows = build_preoe_review_rows(production_rows, print_decisions)
+    reader_facing_example_rows = build_reader_facing_example_rows(print_main_rows)
+    write_index_registry_header(print_main_rows)
     write_forms(production_rows)
+    write_print_main_rows(PRINT_MAIN_PATH, print_main_rows)
+    write_print_excluded_rows(PRINT_EXCLUDED_PATH, print_excluded_rows)
+    write_preoe_review(PREOE_REVIEW_PATH, preoe_review_rows)
+    write_reader_facing_example_rows(READER_FACING_EXAMPLES_PATH, reader_facing_example_rows)
     audit_buckets = build_audit_rows(production_rows, table_semantic_results=table_semantic_results)
     audit_buckets, _ = apply_broad_prose_decisions(audit_buckets)
     write_broad_prose_suggestions(BROAD_PROSE_SUGGESTIONS_PATH, audit_buckets.get("broad_prose_suggestion", []))

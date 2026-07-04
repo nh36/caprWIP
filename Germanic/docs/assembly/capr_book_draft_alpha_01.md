@@ -15260,8 +15260,6 @@ The comparison below sets the regular result beside the attested lexical excepti
 
 \printindex[pwgmc]
 
-\printindex[preoe]
-
 \printindex[on]
 
 \printindex[ohg]

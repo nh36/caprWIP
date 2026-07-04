@@ -12,7 +12,7 @@ REPO_ROOT = SCRIPT_DIR.parents[2]
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
-FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
+PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
@@ -52,7 +52,7 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:
             model_entry_heading_map[row["model_entry_path"]] = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
-    with FORMS_PATH.open(encoding="utf-8") as handle:
+    with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:
             language = (row.get("language") or "").strip()

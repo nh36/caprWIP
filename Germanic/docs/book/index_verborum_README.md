@@ -66,6 +66,17 @@ LaTeX `\index[...]` command after the tagged span.
 
 ## Production vs audit
 
+- `Germanic/docs/book/index_verborum_forms.tsv` is the internal production
+  form database used by the indexing machinery and audit workflow.
+- `Germanic/docs/book/index_verborum_print_main.tsv` is the conservative
+  printable main Index Verborum view.
+- `Germanic/docs/book/index_verborum_print_excluded.tsv` records production rows
+  excluded from the printed main index and the exclusion reason.
+- `Germanic/docs/book/index_verborum_preoe_review.tsv` tracks `preoe` rows for
+  explicit print-policy review without deleting them from production data.
+- `Germanic/docs/book/reader_facing_example_forms.tsv` is a scaffold for a
+  separate reader-facing example-form index and is not mixed into the printed
+  main index by default.
 - Structured lexical fields, generated lexical headings/metadata, selected
   derivational inputs, explicit `.iv` tags, and curated overrides feed the
   **production** index.
@@ -81,6 +92,8 @@ LaTeX `\index[...]` command after the tagged span.
   `Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv`.
 - Curated broad-prose review decisions belong in
   `Germanic/docs/book/index_verborum_broad_prose_decisions.tsv`.
+- Main-print overrides belong in
+  `Germanic/docs/book/index_verborum_print_decisions.tsv`.
 - Markdown comparison/paradigm tables in model entries are audited separately so
   untagged evidence forms still surface for review.
 - Curated table-review decisions belong in
@@ -88,6 +101,11 @@ LaTeX `\index[...]` command after the tagged span.
   adds/ignores still belong in `Germanic/docs/book/index_verborum_overrides.tsv`.
 
 ## Scholarly policy
+
+- The main Index Verborum does not attempt to list every form-like string that
+  CAPR can generate or discuss. It lists forms used as lexical, philological,
+  or comparative evidence. Model-internal stages, counterfactual outputs, and
+  pedagogical rule-ordering examples are recorded elsewhere.
 
 - The index verborum includes every form cited as linguistic evidence,
   irrespective of language.
