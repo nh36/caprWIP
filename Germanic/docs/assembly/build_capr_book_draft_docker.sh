@@ -40,6 +40,7 @@ bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 python3 Germanic/tools/build_index_verborum.py ${strict_flag}
 python3 "${script_dir}/build_capr_book_draft.py"
 python3 Germanic/tools/check_index_verborum.py
+python3 Germanic/tools/check_bibliography_sanity.py
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "

@@ -897,6 +897,7 @@ def assert_print_layer_outputs() -> None:
     assert "index_verborum_forms.tsv" not in builder_text
     assert "check_book_draft_tex_indexes.py" in docker_build_text
     assert "check_sound_change_heading_wrapping.py" in docker_build_text
+    assert "check_bibliography_sanity.py" in docker_build_text
     assert "check_print_index_ready.py" in docker_build_text
     assert "index_verborum_print_main.tsv" in filter_text
     assert r"\indexsetup{level=\section*,noclearpage}" in header_text
