@@ -10,7 +10,8 @@ Use explicit Pandoc spans when a prose passage should contribute a form to the
 
 The visible text stays exactly as written. During the combined-book build, the
 Lua filter `Germanic/tools/index_verborum_filter.lua` appends the matching
-LaTeX `\index[...]` command after the tagged span.
+LaTeX `\index[...]` command after the tagged span **only when that explicit tag
+is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 
 ## Required attributes
 
@@ -44,7 +45,7 @@ LaTeX `\index[...]` command after the tagged span.
 - `display` — override the printed index form while preserving the visible text
 - `role` — optional form-role override; defaults to `evidence_form`
 - `source_scope` — optional provenance hint for future tooling; ignored by the
-  Lua filter
+  Lua filter for rendering, but retained in production data
 
 ## Examples
 
@@ -72,6 +73,9 @@ LaTeX `\index[...]` command after the tagged span.
   printable main Index Verborum view.
 - `Germanic/docs/book/index_verborum_print_excluded.tsv` records production rows
   excluded from the printed main index and the exclusion reason.
+- Explicit `.iv` tags are render-gated by the printable main view: excluded
+  `preoe` and excluded `regular_output` tags remain visible in prose but do not
+  emit printed index commands.
 - `Germanic/docs/book/index_verborum_preoe_review.tsv` tracks `preoe` rows for
   explicit print-policy review without deleting them from production data.
 - `Germanic/docs/book/reader_facing_example_forms.tsv` is a scaffold for a

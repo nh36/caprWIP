@@ -16,6 +16,7 @@ PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
+EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
 
 
 def load_language_order() -> list[str]:
@@ -86,13 +87,38 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
     return commands_by_heading_ref, commands_by_line_ref, nonempty
 
 
+def annotate_explicit_tags_in_line(line: str, rel_path: str, line_no: int) -> str:
+    source_ref = f'{rel_path}:{line_no}'
+
+    def repl(match: re.Match[str]) -> str:
+        attrs = match.group("attrs")
+        if re.search(r'(^|\s)source_ref=', attrs):
+            return match.group(0)
+        attrs_body = attrs.strip()
+        if attrs_body:
+            merged_attrs = f" {attrs_body} source_ref=\"{source_ref}\""
+        else:
+            merged_attrs = f" source_ref=\"{source_ref}\""
+        return f"[{match.group('content')}]{{.iv{merged_attrs}}}"
+
+    return EXPLICIT_TAG_RE.sub(repl, line)
+
+
+def annotate_explicit_tags_with_source_ref(path: Path, text: str) -> str:
+    rel = path.relative_to(REPO_ROOT).as_posix()
+    return "\n".join(
+        annotate_explicit_tags_in_line(line, rel, line_no)
+        for line_no, line in enumerate(text.splitlines(), start=1)
+    )
+
+
 def inject_line_commands(path: Path, line_commands: dict[str, dict[int, list[str]]]) -> str:
     rel = path.relative_to(REPO_ROOT).as_posix()
     commands = line_commands.get(rel, {})
     lines = path.read_text(encoding="utf-8").splitlines()
     out: list[str] = []
     for idx, line in enumerate(lines, start=1):
-        out.append(line)
+        out.append(annotate_explicit_tags_in_line(line, rel, idx))
         if idx in commands:
             out.extend(commands[idx])
     return "\n".join(out).rstrip()
@@ -150,7 +176,10 @@ def build_book_markdown() -> str:
     commands_by_ref, line_commands, nonempty_languages = load_production_rows()
     intro = inject_line_commands(INTRO_PATH, line_commands)
     chronology = transform_chronology(inject_line_commands(CHRONOLOGY_PATH, line_commands))
-    lexical = transform_lexical(LEXICAL_PATH.read_text(encoding="utf-8"), commands_by_ref)
+    lexical = transform_lexical(
+        annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8")),
+        commands_by_ref,
+    )
     index_parts = [rf"\printindex[{language}]" for language in nonempty_languages]
     parts = [
         r"\mainmatter",

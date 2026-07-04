@@ -19,13 +19,41 @@
 ## Reader-facing example rows by role
 
 - `diagnostic_comparator`: 48
-- `expected_output`: 8
-- `model_stage`: 203
-- `notation_or_segment`: 371
-- `yielded_output`: 2
+- `example_input`: 124
+- `expected_output`: 129
+- `model_stage`: 36
+- `notation_or_segment`: 349
+- `yielded_output`: 126
 
-- Reader-facing include_in_example_index=yes: 261
-- Reader-facing include_in_example_index=no: 371
+- Reader-facing include_in_example_index=yes: 463
+- Reader-facing include_in_example_index=no: 349
+
+## Reader-facing include=yes summary buckets
+
+### Included rows by role
+
+- `diagnostic_comparator`: 48
+- `example_input`: 124
+- `expected_output`: 129
+- `model_stage`: 36
+- `yielded_output`: 126
+
+### Included rows by inferred language
+
+- `oe`: 50
+- `pgmc`: 164
+- `preoe`: 245
+- `pwgmc`: 4
+
+### Included rows by main-index overlap
+
+- `no`: 301
+- `yes`: 162
+
+- Included whole-form rows with asterisks: 422
+- Included whole-form rows without asterisks: 41
+- Included rows inferred_language=oe with leading asterisk: 17
+- Included rows inferred_language=pgmc but OE-output-like form shape: 7
 
 ## Included main-index rows (sample)
 
@@ -62,11 +90,11 @@
 
 ## Reader-facing example rows (sample)
 
-- `*júgunθ` (pgmc, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
-- `*wuduwe` (oe, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
-- `*wíduwōn` (pgmc, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
+- `*júgunθ` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
+- `*wudowe` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
+- `*wuduwe` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
+- `*wíduwōn` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
+- `*ġeogoþ` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
+- `*ġeoguþ` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1001)
 - `*a` (pgmc, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1025)
-- `*beard` (oe, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027)
-- `*bárdaz` (pgmc, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027)
-- `*cræft` (oe, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027)
-- `*dágaz` (pgmc, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027)
+- `*beard` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027)

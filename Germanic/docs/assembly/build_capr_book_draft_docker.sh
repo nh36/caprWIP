@@ -77,6 +77,8 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     xelatex -interaction=nonstopmode -halt-on-error capr_book_draft_alpha_01.tex >/dev/null
   "
 
+python3 Germanic/tools/check_book_draft_tex_indexes.py --tex-path "${combined_tex}"
+
 echo "Generated ${intro_pdf}"
 echo "Generated ${combined_md}"
 echo "Generated ${combined_pdf}"

@@ -42,9 +42,11 @@ READER_FACING_EXAMPLE_PATH = REPO_ROOT / "Germanic/docs/book/reader_facing_examp
 BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseline.tsv"
 COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 BUILDER_PATH = REPO_ROOT / "Germanic/docs/assembly/build_capr_book_draft.py"
+BOOK_DRAFT_DOCKER_BUILD_PATH = REPO_ROOT / "Germanic/docs/assembly/build_capr_book_draft_docker.sh"
 AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
 PRINT_AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_audit.md"
 REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
+FILTER_LUA_PATH = REPO_ROOT / "Germanic/tools/index_verborum_filter.lua"
 SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
 BROAD_SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv"
 DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_decisions.tsv"
@@ -95,7 +97,22 @@ def audit_section(title: str) -> str:
 
 
 def parse_audit_language_summary() -> set[str]:
-    section = audit_section("Production indexed forms by language")
+    section_title = "Internal production forms by language"
+    if f"## {section_title}\n" not in AUDIT_PATH.read_text(encoding="utf-8"):
+        section_title = "Production indexed forms by language"
+    section = audit_section(section_title)
+    titles: set[str] = set()
+    for line in section.splitlines():
+        if not line.startswith("|") or line.startswith("| Language |") or line.startswith("| ---"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if parts and parts[0]:
+            titles.add(parts[0])
+    return titles
+
+
+def parse_printed_audit_language_summary() -> set[str]:
+    section = audit_section("Printed main-index forms by language")
     titles: set[str] = set()
     for line in section.splitlines():
         if not line.startswith("|") or line.startswith("| Language |") or line.startswith("| ---"):
@@ -498,9 +515,13 @@ def assert_generated_consistency() -> None:
     expected_titles = {LANGUAGE_TITLES[code] for code in form_languages}
     audit_titles = parse_audit_language_summary()
     assert expected_titles.issubset(audit_titles)
+    print_languages = {row["language"] for row in print_rows}
+    printed_titles = parse_printed_audit_language_summary()
+    expected_printed_titles = {LANGUAGE_TITLES[code] for code in print_languages}
+    assert expected_printed_titles.issubset(printed_titles)
+    assert LANGUAGE_TITLES["preoe"] not in printed_titles
 
     registry_codes = parse_registry_codes()
-    print_languages = {row["language"] for row in print_rows}
     assert registry_codes == print_languages
 
     for code in ("dutch", "german", "modeng"):
@@ -809,15 +830,23 @@ def assert_print_layer_outputs() -> None:
     main_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in main_rows}
     decisions = load_print_decisions()
     builder_text = BUILDER_PATH.read_text(encoding="utf-8")
+    docker_build_text = BOOK_DRAFT_DOCKER_BUILD_PATH.read_text(encoding="utf-8")
+    filter_text = FILTER_LUA_PATH.read_text(encoding="utf-8")
     assert "index_verborum_print_main.tsv" in builder_text
     assert "index_verborum_forms.tsv" not in builder_text
+    assert "check_book_draft_tex_indexes.py" in docker_build_text
+    assert "index_verborum_print_main.tsv" in filter_text
 
     assert not any(row["language"] == "preoe" for row in main_rows)
     assert preoe_rows
     preoe_excluded_rows = [row for row in excluded_rows if row["language"] == "preoe"]
     assert preoe_excluded_rows
     assert all(
-        row["exclusion_reason"] in {"preoe_model_internal_default_exclusion", "excluded_by_print_decision"}
+        row["exclusion_reason"] in {
+            "preoe_model_internal_default_exclusion",
+            "excluded_by_print_decision",
+            "reader_facing_pedagogical_example",
+        }
         for row in preoe_excluded_rows
     )
     assert not any(code == "preoe" for code in parse_registry_codes())
@@ -938,6 +967,35 @@ def assert_print_layer_outputs() -> None:
     print_audit_text = PRINT_AUDIT_PATH.read_text(encoding="utf-8")
     assert "# Index verborum print audit" in print_audit_text
     assert "## Excluded rows by reason" in print_audit_text
+    assert "## Reader-facing include=yes summary buckets" in print_audit_text
+    assert "### Included rows by inferred language" in print_audit_text
+    assert "### Included rows by main-index overlap" in print_audit_text
+
+
+def assert_reader_failure_pair_roles() -> None:
+    rows = load_reader_facing_example_rows()
+    source_ref = "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027"
+    expected_roles = {
+        "*bárdaz": "example_input",
+        "*bearda": "yielded_output",
+        "*beard": "expected_output",
+        "*kámbaz": "example_input",
+        "*camba": "yielded_output",
+        "*camb": "expected_output",
+        "*kráftaz": "example_input",
+        "*craft": "yielded_output",
+        "*cræft": "expected_output",
+        "*dágaz": "example_input",
+        "*dag": "yielded_output",
+        "*dæġ": "expected_output",
+    }
+    row_by_key = {(row["source_ref"], row["form"]): row for row in rows}
+    for form, expected_role in expected_roles.items():
+        key = (source_ref, form)
+        assert key in row_by_key, f"Missing failure-pair example row for {form}"
+        row = row_by_key[key]
+        assert row["example_role"] == expected_role, f"Expected {form} to be {expected_role}, got {row['example_role']}"
+        assert row["include_in_example_index"] == "yes"
 
 
 def assert_reconstructed_oe_index_commands() -> None:
@@ -976,6 +1034,7 @@ def main() -> None:
     assert_broad_prose_buckets()
     assert_broad_prose_decisions_and_inference()
     assert_print_layer_outputs()
+    assert_reader_failure_pair_roles()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     print("index verborum checks passed")

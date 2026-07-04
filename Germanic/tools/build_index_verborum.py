@@ -166,11 +166,17 @@ STAGE_FORM_RE = re.compile(
     r"NWGmc|Proto-Northwest Germanic|Proto-Northwest-Germanic|OE|Old English|"
     r"West Saxon|WS|Anglo Frisian|Anglian)[^:\n<]{0,80}):\s*(?P<form>\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
 )
+FAILURE_FORM_TOKEN_RE = (
+    r"(?:\\emph\{[^}]+\}|\*[^*\n]+\*|`[^`\n]+`|_[^_\n]+_|"
+    r"\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
+)
 FAILURE_EXAMPLE_RE = re.compile(
-    r"(?P<label>PGmc|PWGmc|NWGmc|OE|Old English)\s+\\emph\{(?P<input>[^}]+)\}\s+"
-    r"yields\s+(?P<yield>\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)\s+"
-    r"(?:rather than expected(?: OE)?|instead of(?: expected(?: OE)?)?)\s+"
-    r"(?P<expected>\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
+    r"(?P<label>PGmc|PWGmc|NWGmc|OE|Old English)\s+"
+    r"(?P<input>" + FAILURE_FORM_TOKEN_RE + r")\s+"
+    r"yields\s+"
+    r"(?P<yield>" + FAILURE_FORM_TOKEN_RE + r")\s+"
+    r"(?:rather than expected(?:\s+OE)?|instead of(?:\s+expected(?:\s+OE)?)?)\s+"
+    r"(?P<expected>" + FAILURE_FORM_TOKEN_RE + r")"
 )
 NOISE_LINE_PREFIXES = (
     "#",
@@ -844,17 +850,46 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
     return occurrences
 
 
+def normalize_failure_form(text: str) -> str:
+    token = text.strip()
+    # Markdown italic wrappers like *bearda* represent reconstructed forms in
+    # reader-facing failure prose; keep the leading reconstruction marker.
+    if token.startswith("*") and token.endswith("*") and len(token) > 2:
+        token = "*" + token[1:-1]
+    cleaned = strip_markup(token)
+    return cleaned if looks_formlike(cleaned) else ""
+
+
+def iter_failure_example_matches(line: str) -> list[dict[str, str]]:
+    matches: list[dict[str, str]] = []
+    for match in FAILURE_EXAMPLE_RE.finditer(line):
+        input_form = normalize_failure_form(match.group("input"))
+        yielded = normalize_failure_form(match.group("yield"))
+        expected = normalize_failure_form(match.group("expected"))
+        if not (input_form and yielded and expected):
+            continue
+        matches.append(
+            {
+                "label": match.group("label"),
+                "input": input_form,
+                "yield": yielded,
+                "expected": expected,
+            }
+        )
+    return matches
+
+
 def reader_facing_failure_occurrences() -> list[dict[str, str]]:
     occurrences: list[dict[str, str]] = []
     rel = CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix()
     for line_no, line in enumerate(CHRONOLOGY_PATH.read_text(encoding="utf-8").splitlines(), start=1):
-        for match in FAILURE_EXAMPLE_RE.finditer(line):
-            input_form = strip_markup(match.group("input"))
-            yielded = strip_markup(match.group("yield"))
-            expected = strip_markup(match.group("expected"))
+        for match in iter_failure_example_matches(line):
+            input_form = match["input"]
+            yielded = match["yield"]
+            expected = match["expected"]
             occurrences.append(
                 {
-                    "language": stage_to_language(match.group("label"), input_form),
+                    "language": stage_to_language(match["label"], input_form),
                     "form": input_form,
                     "display": input_form,
                     "sort_key": transliterate_sort_key(input_form),
@@ -2628,20 +2663,6 @@ def build_production_rows(
                 origin=row["origin"],
             )
 
-    for row in reader_facing_failure_occurrences():
-        if row["language"]:
-            add_production(
-                store,
-                language=row["language"],
-                form=row["form"],
-                display=row["display"],
-                sort_key=row["sort_key"],
-                form_role=row["form_role"],
-                source_scope=row["source_scope"],
-                source_ref=row["source_ref"],
-                origin=row["origin"],
-            )
-
     if add_overrides is None or ignore_overrides is None:
         add_overrides, ignore_overrides = load_overrides()
     for row in add_overrides:
@@ -2893,23 +2914,23 @@ def failure_example_roles_by_ref() -> dict[tuple[str, str], tuple[str, str, str]
     mapping: dict[tuple[str, str], tuple[str, str, str]] = {}
     for line_no, line in enumerate(CHRONOLOGY_PATH.read_text(encoding="utf-8").splitlines(), start=1):
         source_ref = f"{rel}:{line_no}"
-        for match in FAILURE_EXAMPLE_RE.finditer(line):
-            input_form = normalize_form(strip_markup(match.group("input")))
-            yielded = normalize_form(strip_markup(match.group("yield")))
-            expected = normalize_form(strip_markup(match.group("expected")))
-            if input_form and is_reader_whole_form(input_form):
+        for match in iter_failure_example_matches(line):
+            input_form = match["input"]
+            yielded = match["yield"]
+            expected = match["expected"]
+            if input_form and is_failure_whole_form(input_form):
                 mapping[(input_form, source_ref)] = (
                     "example_input",
-                    stage_to_language(match.group("label"), input_form),
+                    stage_to_language(match["label"], input_form),
                     "failure-pattern selected input",
                 )
-            if yielded and is_reader_whole_form(yielded):
+            if yielded and is_failure_whole_form(yielded):
                 mapping[(yielded, source_ref)] = (
                     "yielded_output",
                     "preoe" if yielded.startswith("*") else "oe",
                     "failure-pattern yielded output",
                 )
-            if expected and is_reader_whole_form(expected):
+            if expected and is_failure_whole_form(expected):
                 mapping[(expected, source_ref)] = (
                     "expected_output",
                     "preoe" if expected.startswith("*") else "oe",
@@ -2947,6 +2968,19 @@ def is_reader_whole_form(form: str) -> bool:
     if candidate_category(form) != "needs_review":
         return False
     return True
+
+
+def is_failure_whole_form(form: str) -> bool:
+    lowered = form.casefold()
+    if lowered in READER_EXAMPLE_STOPWORDS or lowered in PROSE_GLOSS_FORMS or lowered in FALSE_POSITIVE_FORMS:
+        return False
+    if notation_or_metadata_reason(form):
+        return False
+    if "|" in form:
+        return False
+    if not looks_formlike(form):
+        return False
+    return len(form.lstrip("*")) >= 3
 
 
 def classify_reader_example_role(
@@ -3036,7 +3070,7 @@ def build_reader_facing_example_rows(
                 "inferred_language": inferred_language,
                 "example_role": role,
                 "main_index_overlap": overlap,
-                "include_in_example_index": "yes" if is_reader_whole_form(form) else "no",
+                "include_in_example_index": "yes" if is_failure_whole_form(form) else "no",
                 "reason": reason,
                 "context": line_map.get(source_ref, ""),
             }
@@ -3065,6 +3099,26 @@ def write_print_audit(
     reader_role_counts = Counter(row.get("example_role", "") for row in reader_example_rows if row.get("example_role"))
     include_yes = sum(1 for row in reader_example_rows if row.get("include_in_example_index") == "yes")
     include_no = sum(1 for row in reader_example_rows if row.get("include_in_example_index") == "no")
+    included_rows = [row for row in reader_example_rows if row.get("include_in_example_index") == "yes"]
+    included_role_counts = Counter(row.get("example_role", "") for row in included_rows if row.get("example_role"))
+    included_language_counts = Counter(row.get("inferred_language", "") for row in included_rows)
+    included_overlap_counts = Counter(row.get("main_index_overlap", "") for row in included_rows)
+    included_starred = sum(1 for row in included_rows if row.get("form", "").startswith("*"))
+    included_unstarred = len(included_rows) - included_starred
+    included_oe_starred = sum(
+        1
+        for row in included_rows
+        if row.get("inferred_language") == "oe" and row.get("form", "").startswith("*")
+    )
+    included_pgmc_oe_like = sum(
+        1
+        for row in included_rows
+        if row.get("inferred_language") == "pgmc"
+        and (
+            not row.get("form", "").startswith("*")
+            or bool(re.search(r"[æǣȳþðċġ]", row.get("form", "").casefold()))
+        )
+    )
 
     def sample_main(title: str, entries: list[ProductionOccurrence], *, limit: int = 8) -> list[str]:
         lines = [f"## {title}", ""]
@@ -3139,6 +3193,36 @@ def write_print_audit(
             "",
             f"- Reader-facing include_in_example_index=yes: {include_yes}",
             f"- Reader-facing include_in_example_index=no: {include_no}",
+            "",
+        ]
+    )
+    lines.extend(["## Reader-facing include=yes summary buckets", ""])
+    lines.append("### Included rows by role")
+    lines.append("")
+    if included_role_counts:
+        for role, count in sorted(included_role_counts.items()):
+            lines.append(f"- `{role}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(["", "### Included rows by inferred language", ""])
+    if included_language_counts:
+        for language, count in sorted(included_language_counts.items()):
+            lines.append(f"- `{language or 'unknown'}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(["", "### Included rows by main-index overlap", ""])
+    if included_overlap_counts:
+        for overlap, count in sorted(included_overlap_counts.items()):
+            lines.append(f"- `{overlap or 'unknown'}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(
+        [
+            "",
+            f"- Included whole-form rows with asterisks: {included_starred}",
+            f"- Included whole-form rows without asterisks: {included_unstarred}",
+            f"- Included rows inferred_language=oe with leading asterisk: {included_oe_starred}",
+            f"- Included rows inferred_language=pgmc but OE-output-like form shape: {included_pgmc_oe_like}",
             "",
         ]
     )
@@ -3444,6 +3528,11 @@ def write_audit(
     print_excluded = print_excluded_rows or []
     preoe_review = preoe_review_rows or []
     reader_examples = reader_example_rows or []
+    print_counts_by_language = Counter(row.language for row in print_main)
+    print_unique_by_language = {
+        language: len({row.display for row in print_main if row.language == language})
+        for language in print_counts_by_language
+    }
     exclusion_counts = Counter(row.get("exclusion_reason", "") for row in print_excluded if row.get("exclusion_reason"))
     required_print_reasons = (
         "preoe_model_internal_default_exclusion",
@@ -3504,7 +3593,7 @@ def write_audit(
         f"- New unresolved candidates relative to baseline: {len(new_entries)}",
         f"- Baseline candidates now resolved or ignored: {len(resolved_entries)}",
         "",
-        "## Production indexed forms by language",
+        "## Internal production forms by language",
         "",
         "| Language | Occurrences | Unique forms |",
         "| --- | ---: | ---: |",
@@ -3512,7 +3601,7 @@ def write_audit(
     for language in LANGUAGE_ORDER:
         if counts_by_language.get(language):
             lines.append(f"| {LANGUAGE_TITLES[language]} | {counts_by_language[language]} | {unique_by_language[language]} |")
-    lines.extend(["", "## Examples of production indexed forms", ""])
+    lines.extend(["", "## Examples of internal production forms", ""])
     for language in LANGUAGE_ORDER:
         sample = [row for row in rows if row.language == language][:5]
         if not sample:
@@ -3524,7 +3613,7 @@ def write_audit(
         lines.append("")
 
     role_counts = Counter(row.form_role for row in rows)
-    lines.extend(["## Production indexed forms by role", "", "| Role | Occurrences |", "| --- | ---: |"])
+    lines.extend(["## Internal production forms by role", "", "| Role | Occurrences |", "| --- | ---: |"])
     for role in (
         "target_form",
         "source_protoform",
@@ -3535,6 +3624,26 @@ def write_audit(
     ):
         if role_counts.get(role):
             lines.append(f"| {role} | {role_counts[role]} |")
+    lines.append("")
+
+    lines.extend(["## Printed main-index forms by language", "", "| Language | Occurrences | Unique forms |", "| --- | ---: | ---: |"])
+    for language in LANGUAGE_ORDER:
+        if print_counts_by_language.get(language):
+            lines.append(f"| {LANGUAGE_TITLES[language]} | {print_counts_by_language[language]} | {print_unique_by_language[language]} |")
+    lines.append("")
+
+    print_role_counts = Counter(row.form_role for row in print_main)
+    lines.extend(["## Printed main-index forms by role", "", "| Role | Occurrences |", "| --- | ---: |"])
+    for role in (
+        "target_form",
+        "source_protoform",
+        "selected_input",
+        "comparison_form",
+        "regular_output",
+        "evidence_form",
+    ):
+        if print_role_counts.get(role):
+            lines.append(f"| {role} | {print_role_counts[role]} |")
     lines.append("")
 
     def render_bucket(title: str, entries: list[dict[str, str]], columns: tuple[str, ...] = ("form", "source_ref")) -> None:

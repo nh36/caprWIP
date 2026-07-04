@@ -12,9 +12,9 @@
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 13
 - Pre-OE review rows: 13
-- Reader-facing example candidate rows: 632
-- Reader-facing rows include_in_example_index=yes: 261
-- Reader-facing rows include_in_example_index=no: 371
+- Reader-facing example candidate rows: 812
+- Reader-facing rows include_in_example_index=yes: 463
+- Reader-facing rows include_in_example_index=no: 349
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
@@ -38,7 +38,7 @@
 - New unresolved candidates relative to baseline: 0
 - Baseline candidates now resolved or ignored: 0
 
-## Production indexed forms by language
+## Internal production forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
@@ -55,7 +55,7 @@
 | German forms | 7 | 5 |
 | Modern English linguistic forms | 2 | 1 |
 
-## Examples of production indexed forms
+## Examples of internal production forms
 
 ### Old English forms
 
@@ -144,7 +144,7 @@
 - `both` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31)
 - `both` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
 
-## Production indexed forms by role
+## Internal production forms by role
 
 | Role | Occurrences |
 | --- | ---: |
@@ -154,6 +154,33 @@
 | comparison_form | 509 |
 | regular_output | 91 |
 | evidence_form | 169 |
+
+## Printed main-index forms by language
+
+| Language | Occurrences | Unique forms |
+| --- | ---: | ---: |
+| Old English forms | 956 | 395 |
+| Proto-Germanic forms | 937 | 515 |
+| Proto-West Germanic forms | 2 | 2 |
+| Old Norse forms | 10 | 8 |
+| Old High German forms | 16 | 14 |
+| Old Frisian forms | 6 | 5 |
+| Gothic forms | 4 | 4 |
+| Old Saxon forms | 9 | 7 |
+| Dutch forms | 3 | 2 |
+| German forms | 7 | 5 |
+| Modern English linguistic forms | 2 | 1 |
+
+## Printed main-index forms by role
+
+| Role | Occurrences |
+| --- | ---: |
+| target_form | 371 |
+| source_protoform | 331 |
+| selected_input | 535 |
+| comparison_form | 504 |
+| regular_output | 50 |
+| evidence_form | 161 |
 
 ## Already indexed in same entry
 
