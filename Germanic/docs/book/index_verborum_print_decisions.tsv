@@ -1,1 +1,14 @@
 action	language	form	source_ref	form_role	note
+exclude_main	preoe	*bakan	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	evidence_form	Pre-OE staging form; keep in internal production but exclude from printed main index.
+exclude_main	preoe	*hebun	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	evidence_form	Pre-OE staging form; keep in internal production but exclude from printed main index.
+exclude_main	preoe	*hebun	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	evidence_form	Pre-OE staging form; keep in internal production but exclude from printed main index.
+exclude_main	preoe	*sparai-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	evidence_form	Model-internal pre-OE formation; exclude from printed main index.
+exclude_main	preoe	*sparja-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	evidence_form	Model-internal pre-OE formation; exclude from printed main index.
+exclude_main	preoe	*spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	evidence_form	Model-stage pre-OE output; exclude from printed main index.
+exclude_main	preoe	*spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	evidence_form	Model-stage pre-OE output; exclude from printed main index.
+exclude_main	preoe	*spárēθi	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	evidence_form	Model-stage pre-OE output; exclude from printed main index.
+exclude_main	preoe	*timbr	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24	comparison_form	Pre-OE comparator stage retained internally; exclude from printed main index.
+exclude_main	preoe	*timbr	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:53	comparison_form	Pre-OE comparator stage retained internally; exclude from printed main index.
+exclude_main	preoe	*weraldiz	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70	comparison_form	Pre-OE/model-internal world compound stage; exclude from printed main index.
+exclude_main	preoe	*weraldu	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70	comparison_form	Pre-OE/model-internal world compound stage; exclude from printed main index.
+exclude_main	preoe	*weruld	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70	comparison_form	Pre-OE/model-internal world compound stage; exclude from printed main index.

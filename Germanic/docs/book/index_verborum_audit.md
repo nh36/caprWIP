@@ -2,6 +2,19 @@
 
 - Production indexed occurrences: 2006
 - Production unique forms: 980
+- Printed main-index occurrences: 1952
+- Printed main-index unique forms: 958
+- Print-excluded occurrences: 54
+- Print-excluded unique forms: 42
+- Print exclusions (preoe_model_internal_default_exclusion): 0
+- Print exclusions (regular_output_without_attested_or_curated_support): 41
+- Print exclusions (reader_facing_pedagogical_example): 0
+- Print exclusions (deferred_by_print_decision): 0
+- Print exclusions (excluded_by_print_decision): 13
+- Pre-OE review rows: 13
+- Reader-facing example candidate rows: 632
+- Reader-facing rows include_in_example_index=yes: 261
+- Reader-facing rows include_in_example_index=no: 371
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0

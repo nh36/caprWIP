@@ -25,6 +25,7 @@ PRINT_EXCLUDED_PATH = BOOK_DIR / "index_verborum_print_excluded.tsv"
 PREOE_REVIEW_PATH = BOOK_DIR / "index_verborum_preoe_review.tsv"
 PRINT_DECISIONS_PATH = BOOK_DIR / "index_verborum_print_decisions.tsv"
 READER_FACING_EXAMPLES_PATH = BOOK_DIR / "reader_facing_example_forms.tsv"
+PRINT_AUDIT_PATH = BOOK_DIR / "index_verborum_print_audit.md"
 OVERRIDES_PATH = BOOK_DIR / "index_verborum_overrides.tsv"
 AUDIT_PATH = BOOK_DIR / "index_verborum_audit.md"
 TABLE_SUGGESTIONS_PATH = BOOK_DIR / "index_verborum_table_suggestions.tsv"
@@ -102,7 +103,7 @@ PRINT_DECISION_FIELDS = [
     "form_role",
     "note",
 ]
-PRINT_EXCLUDED_FIELDS = PRODUCTION_FIELDS + ["exclusion_reason", "decision_action"]
+PRINT_EXCLUDED_FIELDS = PRODUCTION_FIELDS + ["exclusion_reason", "decision_action", "decision_note"]
 PREOE_REVIEW_FIELDS = [
     "form",
     "source_ref",
@@ -1043,12 +1044,13 @@ def contains_phrase(text: str, phrases: tuple[str, ...]) -> bool:
 
 def explicit_language_hints(text: str) -> set[str]:
     hints: set[str] = set()
-    patterns = [
-        (r"\bold norse\b|\bon\b", "on"),
-        (r"\bold saxon\b|\bos\b", "os"),
-        (r"\bold high german\b|\bohg\b", "ohg"),
+    lowered = text.casefold()
+    full_patterns = [
+        (r"\bold norse\b", "on"),
+        (r"\bold saxon\b", "os"),
+        (r"\bold high german\b", "ohg"),
         (r"\bold frisian\b|\bofri\b|\bofris\b", "ofris"),
-        (r"\bgothic\b|\bgoth\b", "goth"),
+        (r"\bgothic\b", "goth"),
         (r"\bold dutch\b", "odutch"),
         (r"\bmiddle dutch\b", "mdutch"),
         (r"\bdutch\b", "dutch"),
@@ -1056,10 +1058,10 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bmodern english\b", "modeng"),
         (r"\bmiddle english\b", "me"),
         (r"\bold irish\b", "oirish"),
-        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b|\boe\b", "oe"),
-        (r"\bpgmc\b|\bproto-germanic\b", "pgmc"),
-        (r"\bpwgmc\b|\bproto-west germanic\b", "pwgmc"),
-        (r"\bnwgmc\b|\bproto-northwest germanic\b", "nwgmc"),
+        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b", "oe"),
+        (r"\bproto-germanic\b", "pgmc"),
+        (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
+        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "nwgmc"),
         (
             r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
             r"later hardening stage|pre-oe stage|pre-old-english stage|"
@@ -1067,7 +1069,21 @@ def explicit_language_hints(text: str) -> set[str]:
             "preoe",
         ),
     ]
-    for pattern, code in patterns:
+    for pattern, code in full_patterns:
+        if re.search(pattern, lowered):
+            hints.add(code)
+    code_patterns = [
+        (r"(?<![A-Za-z])OE(?![A-Za-z])", "oe"),
+        (r"(?<![A-Za-z])ON(?![A-Za-z])", "on"),
+        (r"(?<![A-Za-z])OS(?![A-Za-z])", "os"),
+        (r"(?<![A-Za-z])OHG(?![A-Za-z])", "ohg"),
+        (r"(?<![A-Za-z])OFri(?:s)?(?![A-Za-z])", "ofris"),
+        (r"(?<![A-Za-z])Goth(?![A-Za-z])", "goth"),
+        (r"(?<![A-Za-z])PGmc(?![A-Za-z])", "pgmc"),
+        (r"(?<![A-Za-z])PWGmc(?![A-Za-z])", "pwgmc"),
+        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "nwgmc"),
+    ]
+    for pattern, code in code_patterns:
         if re.search(pattern, text):
             hints.add(code)
     return hints
@@ -1078,8 +1094,8 @@ def infer_table_semantic_language(
     role: str,
     target_forms: set[str],
 ) -> tuple[str, bool]:
-    row_text = normalize_semantic_text(mention.row_text)
-    cell_text = normalize_semantic_text(mention.cell_text)
+    row_text = mention.row_text
+    cell_text = mention.cell_text
     hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
     non_oe_hints = hints - {"oe"}
     if mention.form in target_forms:
@@ -2045,7 +2061,7 @@ def same_entry_old_english_hint(candidate: CandidateOccurrence) -> bool:
 
 
 def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
-    text = normalize_semantic_text(" ".join([candidate.heading, candidate.line_text]))
+    text = " ".join([candidate.heading, candidate.line_text])
     inline_code = inline_labeled_language(candidate)
     if inline_code:
         return inline_code
@@ -2214,12 +2230,13 @@ def contains_phrase(text: str, phrases: tuple[str, ...]) -> bool:
 
 def explicit_language_hints(text: str) -> set[str]:
     hints: set[str] = set()
-    patterns = [
-        (r"\bold norse\b|\bon\b", "on"),
-        (r"\bold saxon\b|\bos\b", "os"),
-        (r"\bold high german\b|\bohg\b", "ohg"),
+    lowered = text.casefold()
+    full_patterns = [
+        (r"\bold norse\b", "on"),
+        (r"\bold saxon\b", "os"),
+        (r"\bold high german\b", "ohg"),
         (r"\bold frisian\b|\bofri\b|\bofris\b", "ofris"),
-        (r"\bgothic\b|\bgoth\b", "goth"),
+        (r"\bgothic\b", "goth"),
         (r"\bold dutch\b", "odutch"),
         (r"\bmiddle dutch\b", "mdutch"),
         (r"\bdutch\b", "dutch"),
@@ -2227,10 +2244,10 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bmodern english\b", "modeng"),
         (r"\bmiddle english\b", "me"),
         (r"\bold irish\b", "oirish"),
-        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b|\boe\b", "oe"),
-        (r"\bpgmc\b|\bproto-germanic\b", "pgmc"),
-        (r"\bpwgmc\b|\bproto-west germanic\b", "pwgmc"),
-        (r"\bnwgmc\b|\bproto-northwest germanic\b", "nwgmc"),
+        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b", "oe"),
+        (r"\bproto-germanic\b", "pgmc"),
+        (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
+        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "nwgmc"),
         (
             r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
             r"later hardening stage|pre-oe stage|pre-old-english stage|"
@@ -2238,7 +2255,21 @@ def explicit_language_hints(text: str) -> set[str]:
             "preoe",
         ),
     ]
-    for pattern, code in patterns:
+    for pattern, code in full_patterns:
+        if re.search(pattern, lowered):
+            hints.add(code)
+    code_patterns = [
+        (r"(?<![A-Za-z])OE(?![A-Za-z])", "oe"),
+        (r"(?<![A-Za-z])ON(?![A-Za-z])", "on"),
+        (r"(?<![A-Za-z])OS(?![A-Za-z])", "os"),
+        (r"(?<![A-Za-z])OHG(?![A-Za-z])", "ohg"),
+        (r"(?<![A-Za-z])OFri(?:s)?(?![A-Za-z])", "ofris"),
+        (r"(?<![A-Za-z])Goth(?![A-Za-z])", "goth"),
+        (r"(?<![A-Za-z])PGmc(?![A-Za-z])", "pgmc"),
+        (r"(?<![A-Za-z])PWGmc(?![A-Za-z])", "pwgmc"),
+        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "nwgmc"),
+    ]
+    for pattern, code in code_patterns:
         if re.search(pattern, text):
             hints.add(code)
     return hints
@@ -2252,8 +2283,8 @@ def infer_table_semantic_language(
     derivation_class: str = "",
     caution_intermediate: bool = False,
 ) -> tuple[str, bool]:
-    row_text = normalize_semantic_text(mention.row_text)
-    cell_text = normalize_semantic_text(mention.cell_text)
+    row_text = mention.row_text
+    cell_text = mention.cell_text
     hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
     if mention.form in target_forms:
         if mention.form.startswith("*") and derivation_class != "reconstructed_oe":
@@ -2693,25 +2724,26 @@ def latest_matching_print_decision(
     return matched
 
 
-def regular_output_has_attested_support(
+def regular_output_has_same_source_attested_support(
     row: ProductionOccurrence,
-    roles_by_language_form: dict[tuple[str, str], set[str]],
+    roles_by_source_ref_form: dict[tuple[str, str, str], set[str]],
 ) -> bool:
     if row.form_role != "regular_output":
         return True
-    supporting_roles = {"target_form", "comparison_form", "evidence_form", "selected_input", "source_protoform"}
-    return bool((roles_by_language_form.get((row.language, row.form), set()) - {"regular_output"}) & supporting_roles)
+    supporting_roles = {"target_form", "comparison_form", "evidence_form"}
+    key = (row.source_ref, row.language, row.form)
+    return bool((roles_by_source_ref_form.get(key, set()) - {"regular_output"}) & supporting_roles)
 
 
 def default_print_exclusion_reason(
     row: ProductionOccurrence,
-    roles_by_language_form: dict[tuple[str, str], set[str]],
+    roles_by_source_ref_form: dict[tuple[str, str, str], set[str]],
 ) -> str:
     if row.source_scope.startswith("reader_failure_"):
         return "reader_facing_pedagogical_example"
     if row.language == "preoe":
         return "preoe_model_internal_default_exclusion"
-    if row.form_role == "regular_output" and not regular_output_has_attested_support(row, roles_by_language_form):
+    if row.form_role == "regular_output" and not regular_output_has_same_source_attested_support(row, roles_by_source_ref_form):
         return "regular_output_without_attested_or_curated_support"
     return ""
 
@@ -2721,9 +2753,9 @@ def split_print_main_rows(
     decisions: list[dict[str, str]] | None = None,
 ) -> tuple[list[ProductionOccurrence], list[dict[str, str]]]:
     print_decisions = decisions or load_print_decisions()
-    roles_by_language_form: dict[tuple[str, str], set[str]] = defaultdict(set)
+    roles_by_source_ref_form: dict[tuple[str, str, str], set[str]] = defaultdict(set)
     for row in production_rows:
-        roles_by_language_form[(row.language, row.form)].add(row.form_role)
+        roles_by_source_ref_form[(row.source_ref, row.language, row.form)].add(row.form_role)
 
     included: list[ProductionOccurrence] = []
     excluded: list[dict[str, str]] = []
@@ -2735,11 +2767,11 @@ def split_print_main_rows(
             included.append(row)
             continue
         if decision_action == "exclude_main":
-            exclusion_reason = decision_note or "excluded_by_print_decision"
+            exclusion_reason = "excluded_by_print_decision"
         elif decision_action == "defer_print":
-            exclusion_reason = decision_note or "deferred_by_print_decision"
+            exclusion_reason = "deferred_by_print_decision"
         else:
-            exclusion_reason = default_print_exclusion_reason(row, roles_by_language_form)
+            exclusion_reason = default_print_exclusion_reason(row, roles_by_source_ref_form)
         if exclusion_reason:
             excluded.append(
                 {
@@ -2754,6 +2786,7 @@ def split_print_main_rows(
                     "status": row.status,
                     "exclusion_reason": exclusion_reason,
                     "decision_action": decision_action,
+                    "decision_note": decision_note,
                 }
             )
         else:
@@ -2864,19 +2897,19 @@ def failure_example_roles_by_ref() -> dict[tuple[str, str], tuple[str, str, str]
             input_form = normalize_form(strip_markup(match.group("input")))
             yielded = normalize_form(strip_markup(match.group("yield")))
             expected = normalize_form(strip_markup(match.group("expected")))
-            if input_form and candidate_category(input_form) == "needs_review":
+            if input_form and is_reader_whole_form(input_form):
                 mapping[(input_form, source_ref)] = (
                     "example_input",
                     stage_to_language(match.group("label"), input_form),
                     "failure-pattern selected input",
                 )
-            if yielded and candidate_category(yielded) == "needs_review":
+            if yielded and is_reader_whole_form(yielded):
                 mapping[(yielded, source_ref)] = (
                     "yielded_output",
                     "preoe" if yielded.startswith("*") else "oe",
                     "failure-pattern yielded output",
                 )
-            if expected and candidate_category(expected) == "needs_review":
+            if expected and is_reader_whole_form(expected):
                 mapping[(expected, source_ref)] = (
                     "expected_output",
                     "preoe" if expected.startswith("*") else "oe",
@@ -2885,31 +2918,63 @@ def failure_example_roles_by_ref() -> dict[tuple[str, str], tuple[str, str, str]
     return mapping
 
 
+READER_EXAMPLE_STOPWORDS = {
+    "form",
+    "output",
+    "expected",
+    "stage",
+    "rule",
+    "rules",
+    "input",
+    "example",
+    "examples",
+    "chapter",
+    "left",
+    "right",
+}
+
+
+def is_reader_whole_form(form: str) -> bool:
+    lowered = form.casefold()
+    if lowered in READER_EXAMPLE_STOPWORDS or lowered in PROSE_GLOSS_FORMS or lowered in FALSE_POSITIVE_FORMS:
+        return False
+    if form.startswith("OE") and re.search(r"[A-Z]", form[2:]):
+        return False
+    if notation_or_metadata_reason(form):
+        return False
+    if "|" in form:
+        return False
+    if candidate_category(form) != "needs_review":
+        return False
+    return True
+
+
 def classify_reader_example_role(
     candidate: CandidateOccurrence,
     failure_roles: dict[tuple[str, str], tuple[str, str, str]],
-) -> tuple[str, str, str]:
+) -> tuple[str, str, str, bool]:
     failure_key = (candidate.form, candidate.source_ref)
     if failure_key in failure_roles:
         role, language, reason = failure_roles[failure_key]
-        return role, language, reason
+        return role, language, reason, True
     notation_reason = broad_prose_notation_reason(candidate)
-    if candidate_category(candidate.form) != "needs_review" or notation_reason:
+    if not is_reader_whole_form(candidate.form) or notation_reason:
         return (
             "notation_or_segment",
             infer_broad_prose_language(candidate),
             notation_reason or "non-formlike fragment or segment",
+            False,
         )
     semantic_text = normalize_semantic_text(candidate.line_text)
     if candidate.form.startswith("*") and has_development_chain_cues(semantic_text):
-        return ("model_stage", infer_broad_prose_language(candidate), "development-chain modeled stage")
+        return ("model_stage", infer_broad_prose_language(candidate), "development-chain modeled stage", True)
     if "rather than expected" in semantic_text or "instead of expected" in semantic_text or "expected" in semantic_text:
-        return ("expected_output", infer_broad_prose_language(candidate), "expected outcome in explanatory prose")
+        return ("expected_output", infer_broad_prose_language(candidate), "expected outcome in explanatory prose", True)
     if "yield" in semantic_text:
-        return ("yielded_output", infer_broad_prose_language(candidate), "yielded outcome in explanatory prose")
+        return ("yielded_output", infer_broad_prose_language(candidate), "yielded outcome in explanatory prose", True)
     if candidate.form.startswith("*") and "from " in semantic_text:
-        return ("example_input", infer_broad_prose_language(candidate), "input stage in explanatory prose")
-    return ("diagnostic_comparator", infer_broad_prose_language(candidate), "diagnostic comparison in reader-facing prose")
+        return ("example_input", infer_broad_prose_language(candidate), "input stage in explanatory prose", True)
+    return ("diagnostic_comparator", infer_broad_prose_language(candidate), "diagnostic comparison in reader-facing prose", True)
 
 
 def build_reader_facing_example_rows(
@@ -2930,7 +2995,7 @@ def build_reader_facing_example_rows(
         if key in seen_pairs:
             continue
         seen_pairs.add(key)
-        role, inferred_language, reason = classify_reader_example_role(candidate, failure_roles)
+        role, inferred_language, reason, is_whole_form = classify_reader_example_role(candidate, failure_roles)
         if (inferred_language, candidate.form) in print_pairs or candidate.form in print_forms:
             overlap = "yes"
         else:
@@ -2943,7 +3008,7 @@ def build_reader_facing_example_rows(
                 "inferred_language": inferred_language,
                 "example_role": role,
                 "main_index_overlap": overlap,
-                "include_in_example_index": "yes" if role != "notation_or_segment" else "no",
+                "include_in_example_index": "yes" if is_whole_form and role != "notation_or_segment" else "no",
                 "reason": reason,
                 "context": re.sub(r"\s+", " ", candidate.line_text).strip()[:160],
             }
@@ -2971,7 +3036,7 @@ def build_reader_facing_example_rows(
                 "inferred_language": inferred_language,
                 "example_role": role,
                 "main_index_overlap": overlap,
-                "include_in_example_index": "yes",
+                "include_in_example_index": "yes" if is_reader_whole_form(form) else "no",
                 "reason": reason,
                 "context": line_map.get(source_ref, ""),
             }
@@ -2986,6 +3051,123 @@ def write_reader_facing_example_rows(path: Path, rows: list[dict[str, str]]) -> 
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in READER_FACING_EXAMPLE_FIELDS})
+
+
+def write_print_audit(
+    production_rows: list[ProductionOccurrence],
+    print_main_rows: list[ProductionOccurrence],
+    print_excluded_rows: list[dict[str, str]],
+    preoe_review_rows: list[dict[str, str]],
+    reader_example_rows: list[dict[str, str]],
+) -> None:
+    exclusion_counts = Counter(row.get("exclusion_reason", "") for row in print_excluded_rows if row.get("exclusion_reason"))
+    preoe_status_counts = Counter(row.get("proposed_print_status", "") for row in preoe_review_rows if row.get("proposed_print_status"))
+    reader_role_counts = Counter(row.get("example_role", "") for row in reader_example_rows if row.get("example_role"))
+    include_yes = sum(1 for row in reader_example_rows if row.get("include_in_example_index") == "yes")
+    include_no = sum(1 for row in reader_example_rows if row.get("include_in_example_index") == "no")
+
+    def sample_main(title: str, entries: list[ProductionOccurrence], *, limit: int = 8) -> list[str]:
+        lines = [f"## {title}", ""]
+        if not entries:
+            lines.extend(["_None._", ""])
+            return lines
+        for row in entries[:limit]:
+            lines.append(
+                f"- `{row.display}` ({row.language}, {row.form_role}; {row.source_scope}; {row.source_ref})"
+            )
+        lines.append("")
+        return lines
+
+    def sample_excluded(title: str, rows: list[dict[str, str]], *, limit: int = 8) -> list[str]:
+        lines = [f"## {title}", ""]
+        if not rows:
+            lines.extend(["_None._", ""])
+            return lines
+        for row in rows[:limit]:
+            lines.append(
+                f"- `{row.get('display', row.get('form', ''))}` "
+                f"({row.get('language', '')}, {row.get('form_role', '')}; "
+                f"{row.get('exclusion_reason', '')}; {row.get('source_ref', '')})"
+            )
+        lines.append("")
+        return lines
+
+    lines = [
+        "# Index verborum print audit",
+        "",
+        f"- Internal production occurrences: {len(production_rows)}",
+        f"- Internal production unique forms: {len({(row.language, row.display) for row in production_rows})}",
+        f"- Printed main occurrences: {len(print_main_rows)}",
+        f"- Printed main unique forms: {len({(row.language, row.display) for row in print_main_rows})}",
+        f"- Printed excluded occurrences: {len(print_excluded_rows)}",
+        f"- Printed excluded unique forms: {len({(row.get('language', ''), row.get('display', '')) for row in print_excluded_rows})}",
+        "",
+        "## Excluded rows by reason",
+        "",
+    ]
+    if exclusion_counts:
+        for reason, count in sorted(exclusion_counts.items()):
+            lines.append(f"- `{reason}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(
+        [
+            "",
+            "## Pre-OE review rows by proposed status",
+            "",
+        ]
+    )
+    if preoe_status_counts:
+        for status, count in sorted(preoe_status_counts.items()):
+            lines.append(f"- `{status}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(
+        [
+            "",
+            "## Reader-facing example rows by role",
+            "",
+        ]
+    )
+    if reader_role_counts:
+        for role, count in sorted(reader_role_counts.items()):
+            lines.append(f"- `{role}`: {count}")
+    else:
+        lines.append("_None._")
+    lines.extend(
+        [
+            "",
+            f"- Reader-facing include_in_example_index=yes: {include_yes}",
+            f"- Reader-facing include_in_example_index=no: {include_no}",
+            "",
+        ]
+    )
+    lines.extend(sample_main("Included main-index rows (sample)", print_main_rows))
+    lines.extend(
+        sample_excluded(
+            "Excluded regular-output rows (sample)",
+            [row for row in print_excluded_rows if row.get("form_role") == "regular_output"],
+        )
+    )
+    lines.extend(
+        sample_excluded(
+            "Excluded pre-OE/model-internal rows (sample)",
+            [row for row in print_excluded_rows if row.get("language") == "preoe"],
+        )
+    )
+    lines.extend(["## Reader-facing example rows (sample)", ""])
+    reader_sample = sorted(reader_example_rows, key=lambda item: (item["source_ref"], item["form"]))[:8]
+    if reader_sample:
+        for row in reader_sample:
+            lines.append(
+                f"- `{row.get('form', '')}` "
+                f"({row.get('inferred_language', '')}, {row.get('example_role', '')}; "
+                f"include={row.get('include_in_example_index', '')}; {row.get('source_ref', '')})"
+            )
+    else:
+        lines.append("_None._")
+    lines.append("")
+    PRINT_AUDIT_PATH.write_text("\n".join(lines), encoding="utf-8")
 
 
 FALSE_POSITIVE_FORMS = {
@@ -3038,9 +3220,9 @@ def guess_unresolved_category(candidate: CandidateOccurrence) -> str:
     text = candidate.line_text
     form = candidate.form
     label_patterns = [
-        (r"\bold norse\b|\bon\b", "likely_on"),
-        (r"\bold saxon\b|\bos\b", "likely_os"),
-        (r"\bold high german\b|\bohg\b", "likely_ohg"),
+        (r"\bold norse\b", "likely_on"),
+        (r"\bold saxon\b", "likely_os"),
+        (r"\bold high german\b", "likely_ohg"),
         (r"\bold frisian\b|\bofri\b|\bofris\b|\bofris\.", "likely_ofris"),
         (r"\bgothic\b|\bgoth\.", "likely_goth"),
         (r"\bold dutch\b", "likely_odutch"),
@@ -3056,7 +3238,7 @@ def guess_unresolved_category(candidate: CandidateOccurrence) -> str:
         (r"\bpgmc\b|\bproto-germanic\b", "likely_pgmc"),
         (r"\bpwgmc\b|\bproto-west germanic\b|\bproto-west-germanic\b", "likely_pwgmc"),
         (r"\bnwgmc\b|\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "likely_nwgmc"),
-        (r"\bold english\b|\boe\b", "likely_oe"),
+        (r"\bold english\b", "likely_oe"),
     ]
     lowered = text.casefold()
     for pattern, category in label_patterns:
@@ -3242,6 +3424,10 @@ def write_audit(
     buckets: dict[str, list[dict[str, str]]],
     baseline: dict[tuple[str, str, str, str, str], dict[str, str]],
     table_semantic_results: dict[str, list[dict[str, str]]] | None = None,
+    print_main_rows: list[ProductionOccurrence] | None = None,
+    print_excluded_rows: list[dict[str, str]] | None = None,
+    preoe_review_rows: list[dict[str, str]] | None = None,
+    reader_example_rows: list[dict[str, str]] | None = None,
 ) -> int:
     counts_by_language = Counter(row.language for row in rows)
     unique_by_language = {
@@ -3254,6 +3440,22 @@ def write_audit(
         if entry.get("candidate_origin") == "table_candidate"
     ]
     semantic_results = table_semantic_results or {"auto_rows": [], "suggestions": [], "ignored": [], "notation": []}
+    print_main = print_main_rows or []
+    print_excluded = print_excluded_rows or []
+    preoe_review = preoe_review_rows or []
+    reader_examples = reader_example_rows or []
+    exclusion_counts = Counter(row.get("exclusion_reason", "") for row in print_excluded if row.get("exclusion_reason"))
+    required_print_reasons = (
+        "preoe_model_internal_default_exclusion",
+        "regular_output_without_attested_or_curated_support",
+        "reader_facing_pedagogical_example",
+        "deferred_by_print_decision",
+        "excluded_by_print_decision",
+    )
+    other_print_reasons = sorted(
+        reason for reason in exclusion_counts
+        if reason and reason not in required_print_reasons
+    )
     excluded_trace_entries = excluded_intermediate_trace_forms()
     new_entries, resolved_entries = compare_against_baseline(needs_review_entries, baseline)
     table_deferred_count = sum(1 for row in load_table_decisions() if row.get("action") == "defer")
@@ -3262,6 +3464,23 @@ def write_audit(
         "",
         f"- Production indexed occurrences: {len(rows)}",
         f"- Production unique forms: {len({(row.language, row.display) for row in rows})}",
+        f"- Printed main-index occurrences: {len(print_main)}",
+        f"- Printed main-index unique forms: {len({(row.language, row.display) for row in print_main})}",
+        f"- Print-excluded occurrences: {len(print_excluded)}",
+        f"- Print-excluded unique forms: {len({(row.get('language', ''), row.get('display', '')) for row in print_excluded})}",
+        f"- Print exclusions (preoe_model_internal_default_exclusion): {exclusion_counts.get('preoe_model_internal_default_exclusion', 0)}",
+        f"- Print exclusions (regular_output_without_attested_or_curated_support): {exclusion_counts.get('regular_output_without_attested_or_curated_support', 0)}",
+        f"- Print exclusions (reader_facing_pedagogical_example): {exclusion_counts.get('reader_facing_pedagogical_example', 0)}",
+        f"- Print exclusions (deferred_by_print_decision): {exclusion_counts.get('deferred_by_print_decision', 0)}",
+        f"- Print exclusions (excluded_by_print_decision): {exclusion_counts.get('excluded_by_print_decision', 0)}",
+        *[
+            f"- Print exclusions ({reason}): {exclusion_counts[reason]}"
+            for reason in other_print_reasons
+        ],
+        f"- Pre-OE review rows: {len(preoe_review)}",
+        f"- Reader-facing example candidate rows: {len(reader_examples)}",
+        f"- Reader-facing rows include_in_example_index=yes: {sum(1 for row in reader_examples if row.get('include_in_example_index') == 'yes')}",
+        f"- Reader-facing rows include_in_example_index=no: {sum(1 for row in reader_examples if row.get('include_in_example_index') == 'no')}",
         f"- Audit-only candidates needing review: {len(needs_review_entries)}",
         f"- True remaining unresolved: {len(needs_review_entries)}",
         f"- Table-scanned unresolved candidates: {len(table_needs_review_entries)}",
@@ -3553,6 +3772,13 @@ def main() -> None:
     write_print_excluded_rows(PRINT_EXCLUDED_PATH, print_excluded_rows)
     write_preoe_review(PREOE_REVIEW_PATH, preoe_review_rows)
     write_reader_facing_example_rows(READER_FACING_EXAMPLES_PATH, reader_facing_example_rows)
+    write_print_audit(
+        production_rows,
+        print_main_rows,
+        print_excluded_rows,
+        preoe_review_rows,
+        reader_facing_example_rows,
+    )
     audit_buckets = build_audit_rows(production_rows, table_semantic_results=table_semantic_results)
     audit_buckets, _ = apply_broad_prose_decisions(audit_buckets)
     write_broad_prose_suggestions(BROAD_PROSE_SUGGESTIONS_PATH, audit_buckets.get("broad_prose_suggestion", []))
@@ -3561,7 +3787,16 @@ def main() -> None:
     if args.write_unresolved_baseline:
         write_unresolved_baseline(args.baseline.expanduser().resolve(), needs_review_entries)
         baseline = load_unresolved_baseline(args.baseline.expanduser().resolve())
-    unresolved = write_audit(production_rows, audit_buckets, baseline, table_semantic_results=table_semantic_results)
+    unresolved = write_audit(
+        production_rows,
+        audit_buckets,
+        baseline,
+        table_semantic_results=table_semantic_results,
+        print_main_rows=print_main_rows,
+        print_excluded_rows=print_excluded_rows,
+        preoe_review_rows=preoe_review_rows,
+        reader_example_rows=reader_facing_example_rows,
+    )
     strict_mode = "all" if args.strict else args.strict_mode
     if strict_mode == "all":
         raise SystemExit(1 if unresolved else 0)

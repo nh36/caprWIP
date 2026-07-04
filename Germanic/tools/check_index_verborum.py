@@ -41,7 +41,9 @@ PRINT_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_deci
 READER_FACING_EXAMPLE_PATH = REPO_ROOT / "Germanic/docs/book/reader_facing_example_forms.tsv"
 BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseline.tsv"
 COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
+BUILDER_PATH = REPO_ROOT / "Germanic/docs/assembly/build_capr_book_draft.py"
 AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
+PRINT_AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_audit.md"
 REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
 SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
 BROAD_SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv"
@@ -515,6 +517,19 @@ def assert_generated_consistency() -> None:
     assert any(line.startswith("- Curated broad-prose deferred: ") for line in summary_lines)
     assert any(line.startswith("- Curated broad-prose ignored: ") for line in summary_lines)
     assert any(line.startswith("- Reader-facing examples quarantined (separate example index policy): ") for line in summary_lines)
+    assert any(line.startswith("- Printed main-index occurrences: ") for line in summary_lines)
+    assert any(line.startswith("- Printed main-index unique forms: ") for line in summary_lines)
+    assert any(line.startswith("- Print-excluded occurrences: ") for line in summary_lines)
+    assert any(line.startswith("- Print-excluded unique forms: ") for line in summary_lines)
+    assert any(line.startswith("- Print exclusions (preoe_model_internal_default_exclusion): ") for line in summary_lines)
+    assert any(line.startswith("- Print exclusions (regular_output_without_attested_or_curated_support): ") for line in summary_lines)
+    assert any(line.startswith("- Print exclusions (reader_facing_pedagogical_example): ") for line in summary_lines)
+    assert any(line.startswith("- Print exclusions (deferred_by_print_decision): ") for line in summary_lines)
+    assert any(line.startswith("- Print exclusions (excluded_by_print_decision): ") for line in summary_lines)
+    assert any(line.startswith("- Pre-OE review rows: ") for line in summary_lines)
+    assert any(line.startswith("- Reader-facing example candidate rows: ") for line in summary_lines)
+    assert any(line.startswith("- Reader-facing rows include_in_example_index=yes: ") for line in summary_lines)
+    assert any(line.startswith("- Reader-facing rows include_in_example_index=no: ") for line in summary_lines)
     assert any(line.startswith("- Ordinary prose/gloss ignored: ") for line in summary_lines)
     assert any(line.startswith("- Orthographic/normalization variants: ") for line in summary_lines)
     assert any(line.startswith("- Table semantic deferred decisions: ") for line in summary_lines)
@@ -737,6 +752,7 @@ def assert_print_layer_outputs() -> None:
     assert PREOE_REVIEW_PATH.exists()
     assert PRINT_DECISIONS_PATH.exists()
     assert READER_FACING_EXAMPLE_PATH.exists()
+    assert PRINT_AUDIT_PATH.exists()
 
     with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
         main_reader = csv.DictReader(handle, delimiter="\t")
@@ -758,6 +774,7 @@ def assert_print_layer_outputs() -> None:
             "status",
             "exclusion_reason",
             "decision_action",
+            "decision_note",
         ]
 
     with PREOE_REVIEW_PATH.open(encoding="utf-8") as handle:
@@ -791,10 +808,19 @@ def assert_print_layer_outputs() -> None:
     forms_rows = load_forms_rows()
     main_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in main_rows}
     decisions = load_print_decisions()
+    builder_text = BUILDER_PATH.read_text(encoding="utf-8")
+    assert "index_verborum_print_main.tsv" in builder_text
+    assert "index_verborum_forms.tsv" not in builder_text
 
     assert not any(row["language"] == "preoe" for row in main_rows)
     assert preoe_rows
-    assert any(row["exclusion_reason"] == "preoe_model_internal_default_exclusion" for row in excluded_rows)
+    preoe_excluded_rows = [row for row in excluded_rows if row["language"] == "preoe"]
+    assert preoe_excluded_rows
+    assert all(
+        row["exclusion_reason"] in {"preoe_model_internal_default_exclusion", "excluded_by_print_decision"}
+        for row in preoe_excluded_rows
+    )
+    assert not any(code == "preoe" for code in parse_registry_codes())
     assert not any(row["source_scope"].startswith("reader_failure_") for row in main_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in forms_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in main_rows)
@@ -804,22 +830,54 @@ def assert_print_layer_outputs() -> None:
         for row in decisions
         if row.get("action") == "include_main" and row.get("form_role") == "regular_output"
     }
-    supporting_roles_by_form: dict[tuple[str, str], set[str]] = {}
+    supporting_roles_by_source_ref_form: dict[tuple[str, str, str], set[str]] = {}
     for row in forms_rows:
-        key = (row["language"], row["form"])
-        supporting_roles_by_form.setdefault(key, set()).add(row["form_role"])
+        key = (row["source_ref"], row["language"], row["form"])
+        supporting_roles_by_source_ref_form.setdefault(key, set()).add(row["form_role"])
     for row in main_rows:
         if row["form_role"] == "regular_output":
             key = (row["language"], row["form"], row["form_role"], row["source_ref"])
-            supported_elsewhere = bool(
-                (supporting_roles_by_form.get((row["language"], row["form"]), set()) - {"regular_output"})
-                & {"target_form", "comparison_form", "evidence_form", "selected_input", "source_protoform"}
+            supported_same_ref = bool(
+                (supporting_roles_by_source_ref_form.get((row["source_ref"], row["language"], row["form"]), set()) - {"regular_output"})
+                & {"target_form", "comparison_form", "evidence_form"}
             )
-            assert key in include_regular_keys or supported_elsewhere
+            assert key in include_regular_keys or supported_same_ref
+
+    support_elsewhere_but_not_same_ref = []
+    roles_by_lang_form: dict[tuple[str, str], set[str]] = {}
+    for row in forms_rows:
+        roles_by_lang_form.setdefault((row["language"], row["form"]), set()).add(row["form_role"])
+    for row in forms_rows:
+        if row["form_role"] != "regular_output":
+            continue
+        lang_form = (row["language"], row["form"])
+        if not ((roles_by_lang_form.get(lang_form, set()) - {"regular_output"}) & {"target_form", "comparison_form", "evidence_form"}):
+            continue
+        same_ref_support = (
+            (supporting_roles_by_source_ref_form.get((row["source_ref"], row["language"], row["form"]), set()) - {"regular_output"})
+            & {"target_form", "comparison_form", "evidence_form"}
+        )
+        if not same_ref_support:
+            support_elsewhere_but_not_same_ref.append((row["language"], row["form"], row["source_ref"]))
+    if support_elsewhere_but_not_same_ref:
+        for language, form, source_ref in support_elsewhere_but_not_same_ref[:5]:
+            assert not any(
+                row["language"] == language
+                and row["form"] == form
+                and row["form_role"] == "regular_output"
+                and row["source_ref"] == source_ref
+                for row in main_rows
+            )
 
     for form in {"fogol", "woll", "wylf"}:
         if not any(decision.get("action") == "include_main" and decision.get("form") == form for decision in decisions):
             assert not any(row["form"] == form for row in main_rows)
+            assert any(
+                row["form"] == form
+                and row["form_role"] == "regular_output"
+                and row["exclusion_reason"] == "regular_output_without_attested_or_curated_support"
+                for row in excluded_rows
+            )
 
     assert ("pgmc", "*θánkijaną", "source_protoform", "think — OE þenċan") in main_keys
     for language in ("pgmc", "pwgmc", "nwgmc"):
@@ -845,6 +903,9 @@ def assert_print_layer_outputs() -> None:
     assert example_rows
     assert any(row["include_in_example_index"] == "yes" for row in example_rows)
     assert any(row["example_role"] == "notation_or_segment" for row in example_rows)
+    assert not any(row["form"] == "form" and row["include_in_example_index"] == "yes" for row in example_rows)
+    assert not any(row["form"] == "*ō" and row["inferred_language"] == "on" for row in example_rows)
+    assert not any(row["form"] == "sleaan | slēaan" and row["inferred_language"] == "on" for row in example_rows)
 
     with tempfile.TemporaryDirectory() as tmpdir:
         fixture = Path(tmpdir) / "synthetic-print-explicit.md"
@@ -873,6 +934,10 @@ def assert_print_layer_outputs() -> None:
     assert ("greek", "λόγος") in synthetic_keys
     assert ("skt", "śrī") in synthetic_keys
     assert ("lat", "rōsa") in synthetic_keys
+
+    print_audit_text = PRINT_AUDIT_PATH.read_text(encoding="utf-8")
+    assert "# Index verborum print audit" in print_audit_text
+    assert "## Excluded rows by reason" in print_audit_text
 
 
 def assert_reconstructed_oe_index_commands() -> None:
