@@ -11,6 +11,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
+INDEX_HEADER_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_pdf_header.tex"
 DEFAULT_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.tex"
 PROSE_RULE_WORDS = {"form", "output", "expected", "stage", "rule"}
 
@@ -74,6 +75,7 @@ def main() -> None:
 
     tex_path = args.tex_path.expanduser().resolve()
     tex_text = tex_path.read_text(encoding="utf-8")
+    header_text = INDEX_HEADER_PATH.read_text(encoding="utf-8")
     form_rows = load_rows(FORMS_PATH)
     main_rows = load_rows(PRINT_MAIN_PATH)
     excluded_rows = load_rows(PRINT_EXCLUDED_PATH)
@@ -87,6 +89,8 @@ def main() -> None:
     }
 
     assert r"\index[preoe]{" not in tex_text, "Generated TeX must not emit preoe index commands."
+    assert r"\indexsetup{level=\section*,noclearpage}" in header_text
+    assert r"\indexsetup{level=\chapter*" not in header_text
 
     for row in excluded_rows:
         if row.get("form_role") != "regular_output":
@@ -129,10 +133,19 @@ def main() -> None:
     assert included_explicit_rows, "Expected at least one printable explicit-tag row."
     assert any(index_command(row) in tex_text for row in included_explicit_rows), "No printable explicit-tag command found in TeX."
 
+    print_languages = sorted({row.get("language", "") for row in main_rows if row.get("language")})
+    for code in print_languages:
+        assert rf"\printindex[{code}]" in tex_text, f"Missing printindex command for [{code}] in TeX."
+
     for language in ("greek", "skt", "lat"):
         language_rows = [row for row in included_explicit_rows if row.get("language") == language]
         if language_rows:
             assert any(index_command(row) in tex_text for row in language_rows), f"Missing explicit {language} index commands in TeX."
+
+    assert "Modern English linguistic forms" not in tex_text
+    assert r"\makeindex[name=modeng,title={Modern English},columns=3]" in tex_text
+    assert r"\chapter*{Old English}" not in tex_text
+    assert r"\chapter*{Proto-Germanic}" not in tex_text
 
     ordinary_oe_target = require_row(
         main_rows,

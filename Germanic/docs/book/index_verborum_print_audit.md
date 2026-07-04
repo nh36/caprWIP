@@ -16,17 +16,17 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English forms | 906 | 395 |
-| Proto-Germanic forms | 937 | 515 |
-| Proto-West Germanic forms | 2 | 2 |
-| Old Norse forms | 10 | 8 |
-| Old High German forms | 16 | 14 |
-| Old Frisian forms | 6 | 5 |
-| Gothic forms | 4 | 4 |
-| Old Saxon forms | 9 | 7 |
-| Dutch forms | 3 | 2 |
-| German forms | 7 | 5 |
-| Modern English linguistic forms | 2 | 1 |
+| Old English | 906 | 395 |
+| Proto-Germanic | 937 | 515 |
+| Proto-West Germanic | 2 | 2 |
+| Old Norse | 10 | 8 |
+| Old High German | 16 | 14 |
+| Old Frisian | 6 | 5 |
+| Gothic | 4 | 4 |
+| Old Saxon | 9 | 7 |
+| Dutch | 3 | 2 |
+| German | 7 | 5 |
+| Modern English | 2 | 1 |
 
 ## Printed main-index forms by role
 

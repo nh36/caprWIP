@@ -47,22 +47,22 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English forms | 997 | 407 |
-| Proto-Germanic forms | 937 | 515 |
-| Proto-West Germanic forms | 2 | 2 |
+| Old English | 997 | 407 |
+| Proto-Germanic | 937 | 515 |
+| Proto-West Germanic | 2 | 2 |
 | Pre-Old-English and model-internal forms | 13 | 10 |
-| Old Norse forms | 10 | 8 |
-| Old High German forms | 16 | 14 |
-| Old Frisian forms | 6 | 5 |
-| Gothic forms | 4 | 4 |
-| Old Saxon forms | 9 | 7 |
-| Dutch forms | 3 | 2 |
-| German forms | 7 | 5 |
-| Modern English linguistic forms | 2 | 1 |
+| Old Norse | 10 | 8 |
+| Old High German | 16 | 14 |
+| Old Frisian | 6 | 5 |
+| Gothic | 4 | 4 |
+| Old Saxon | 9 | 7 |
+| Dutch | 3 | 2 |
+| German | 7 | 5 |
+| Modern English | 2 | 1 |
 
 ## Examples of internal production forms
 
-### Old English forms
+### Old English
 
 - `ærende` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47)
 - `ærende` (override; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47)
@@ -70,7 +70,7 @@
 - `āsceaf` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:32)
 - `bā` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22)
 
-### Proto-Germanic forms
+### Proto-Germanic
 
 - `*áinaz` (trace_proto_input; one — OE ān)
 - `*baina-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:21)
@@ -78,7 +78,7 @@
 - `*báiną` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:29)
 - `*báiną` (lexical_protoform; bone — OE bān)
 
-### Proto-West Germanic forms
+### Proto-West Germanic
 
 - `*skuldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21)
 - `*skúldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48)
@@ -91,7 +91,7 @@
 - `*sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 - `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
 
-### Old Norse forms
+### Old Norse
 
 - `báðir` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27)
 - `báðir` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
@@ -99,7 +99,7 @@
 - `fugl` (override; Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22)
 - `fylgja` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22)
 
-### Old High German forms
+### Old High German
 
 - `backan` (override; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
 - `bahhan` (override; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
@@ -107,7 +107,7 @@
 - `fogal` (override; Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22)
 - `foll` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24)
 
-### Old Frisian forms
+### Old Frisian
 
 - `bēthe` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27)
 - `dore` (override; Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21)
@@ -115,14 +115,14 @@
 - `skawia` (override; Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22)
 - `skawia` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22)
 
-### Gothic forms
+### Gothic
 
 - `brusts` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22)
 - `faurhtei` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22)
 - `fra-liusan` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21)
 - `stibna` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
 
-### Old Saxon forms
+### Old Saxon
 
 - `be-thia` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27)
 - `briost` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24)
@@ -130,13 +130,13 @@
 - `likkon` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22)
 - `likkon` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:22)
 
-### Dutch forms
+### Dutch
 
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31)
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
 - `vel` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21)
 
-### German forms
+### German
 
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31)
 - `beide` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
@@ -144,7 +144,7 @@
 - `Nacken` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59)
 - `sondern` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21)
 
-### Modern English linguistic forms
+### Modern English
 
 - `both` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31)
 - `both` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
@@ -164,17 +164,17 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English forms | 906 | 395 |
-| Proto-Germanic forms | 937 | 515 |
-| Proto-West Germanic forms | 2 | 2 |
-| Old Norse forms | 10 | 8 |
-| Old High German forms | 16 | 14 |
-| Old Frisian forms | 6 | 5 |
-| Gothic forms | 4 | 4 |
-| Old Saxon forms | 9 | 7 |
-| Dutch forms | 3 | 2 |
-| German forms | 7 | 5 |
-| Modern English linguistic forms | 2 | 1 |
+| Old English | 906 | 395 |
+| Proto-Germanic | 937 | 515 |
+| Proto-West Germanic | 2 | 2 |
+| Old Norse | 10 | 8 |
+| Old High German | 16 | 14 |
+| Old Frisian | 6 | 5 |
+| Gothic | 4 | 4 |
+| Old Saxon | 9 | 7 |
+| Dutch | 3 | 2 |
+| German | 7 | 5 |
+| Modern English | 2 | 1 |
 
 ## Printed main-index forms by role
 

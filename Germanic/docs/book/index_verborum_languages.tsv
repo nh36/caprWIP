@@ -1,21 +1,21 @@
 code	title	columns	active	notes
-oe	Old English forms	3	1	Includes attested and reconstructed Old English forms; reconstructed OE retains its asterisk in display.
-pgmc	Proto-Germanic forms	3	1	Comparative proto-language and selected PGmc input-stage forms.
-pwgmc	Proto-West Germanic forms	3	1	Intermediate West Germanic reconstructed stages.
-nwgmc	Proto-Northwest Germanic forms	3	1	Intermediate Northwest Germanic reconstructed stages.
+oe	Old English	3	1	Includes attested and reconstructed Old English forms; reconstructed OE retains its asterisk in display.
+pgmc	Proto-Germanic	3	1	Comparative proto-language and selected PGmc input-stage forms.
+pwgmc	Proto-West Germanic	3	1	Intermediate West Germanic reconstructed stages.
+nwgmc	Proto-Northwest Germanic	3	1	Intermediate Northwest Germanic reconstructed stages.
 preoe	Pre-Old-English and model-internal forms	3	1	Pre-OE and model-internal trace stages not filed under Proto-Germanic or Old English.
-on	Old Norse forms	3	1	Comparison-language evidence.
-ohg	Old High German forms	3	1	Comparison-language evidence.
-ofris	Old Frisian forms	3	1	Comparison-language evidence.
-goth	Gothic forms	3	1	Comparison-language evidence.
-os	Old Saxon forms	3	1	Comparison-language evidence.
-odutch	Old Dutch forms	3	1	Comparison-language evidence when present.
-mdutch	Middle Dutch forms	3	1	Comparison-language evidence when present.
-dutch	Dutch forms	3	1	Comparison-language evidence when present.
-german	German forms	3	1	Modern German evidence when cited as linguistic data.
-lat	Latin forms	3	1	Non-Germanic comparison evidence.
-greek	Greek forms	3	1	Non-Germanic comparison evidence.
-skt	Sanskrit forms	3	1	Non-Germanic comparison evidence.
-me	Middle English forms	3	1	Historical English evidence when cited as a form, not a gloss.
-modeng	Modern English linguistic forms	3	1	Modern English forms only when cited as linguistic evidence, not as ordinary gloss prose.
-oirish	Old Irish forms	3	1	Comparison-language evidence when present.
+on	Old Norse	3	1	Comparison-language evidence.
+ohg	Old High German	3	1	Comparison-language evidence.
+ofris	Old Frisian	3	1	Comparison-language evidence.
+goth	Gothic	3	1	Comparison-language evidence.
+os	Old Saxon	3	1	Comparison-language evidence.
+odutch	Old Dutch	3	1	Comparison-language evidence when present.
+mdutch	Middle Dutch	3	1	Comparison-language evidence when present.
+dutch	Dutch	3	1	Comparison-language evidence when present.
+german	German	3	1	Modern German evidence when cited as linguistic data.
+lat	Latin	3	1	Non-Germanic comparison evidence.
+greek	Greek	3	1	Non-Germanic comparison evidence.
+skt	Sanskrit	3	1	Non-Germanic comparison evidence.
+me	Middle English	3	1	Historical English evidence when cited as a form, not a gloss.
+modeng	Modern English	3	1	Modern English forms only when cited as linguistic evidence, not as ordinary gloss prose.
+oirish	Old Irish	3	1	Comparison-language evidence when present.

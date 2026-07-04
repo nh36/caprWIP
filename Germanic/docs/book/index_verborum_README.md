@@ -17,26 +17,26 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 
 - `lang` — one of:
 <!-- BEGIN AUTO-LANGUAGE-LIST -->
-- `oe` — Old English forms
-- `pgmc` — Proto-Germanic forms
-- `pwgmc` — Proto-West Germanic forms
-- `nwgmc` — Proto-Northwest Germanic forms
+- `oe` — Old English
+- `pgmc` — Proto-Germanic
+- `pwgmc` — Proto-West Germanic
+- `nwgmc` — Proto-Northwest Germanic
 - `preoe` — Pre-Old-English and model-internal forms
-- `on` — Old Norse forms
-- `ohg` — Old High German forms
-- `ofris` — Old Frisian forms
-- `goth` — Gothic forms
-- `os` — Old Saxon forms
-- `odutch` — Old Dutch forms
-- `mdutch` — Middle Dutch forms
-- `dutch` — Dutch forms
-- `german` — German forms
-- `lat` — Latin forms
-- `greek` — Greek forms
-- `skt` — Sanskrit forms
-- `me` — Middle English forms
-- `modeng` — Modern English linguistic forms
-- `oirish` — Old Irish forms
+- `on` — Old Norse
+- `ohg` — Old High German
+- `ofris` — Old Frisian
+- `goth` — Gothic
+- `os` — Old Saxon
+- `odutch` — Old Dutch
+- `mdutch` — Middle Dutch
+- `dutch` — Dutch
+- `german` — German
+- `lat` — Latin
+- `greek` — Greek
+- `skt` — Sanskrit
+- `me` — Middle English
+- `modeng` — Modern English
+- `oirish` — Old Irish
 <!-- END AUTO-LANGUAGE-LIST -->
 - `sort` — ASCII sort key used in the printed index
 

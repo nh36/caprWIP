@@ -49,6 +49,7 @@ AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_audit.md"
 PRINT_AUDIT_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_audit.md"
 REGISTRY_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_index_registry.tex"
 FILTER_LUA_PATH = REPO_ROOT / "Germanic/tools/index_verborum_filter.lua"
+PDF_HEADER_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_pdf_header.tex"
 SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggestions.tsv"
 BROAD_SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv"
 DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_decisions.tsv"
@@ -208,6 +209,15 @@ def parse_registry_codes() -> set[str]:
         if match:
             codes.add(match.group(1))
     return codes
+
+
+def parse_registry_titles() -> dict[str, str]:
+    titles: dict[str, str] = {}
+    for line in REGISTRY_TEX_PATH.read_text(encoding="utf-8").splitlines():
+        match = re.search(r"name=([^,]+),title=\{([^}]*)\}", line)
+        if match:
+            titles[match.group(1)] = match.group(2)
+    return titles
 
 
 def assert_sort_keys() -> None:
@@ -881,11 +891,20 @@ def assert_print_layer_outputs() -> None:
     builder_text = BUILDER_PATH.read_text(encoding="utf-8")
     docker_build_text = BOOK_DRAFT_DOCKER_BUILD_PATH.read_text(encoding="utf-8")
     filter_text = FILTER_LUA_PATH.read_text(encoding="utf-8")
+    header_text = PDF_HEADER_PATH.read_text(encoding="utf-8")
+    registry_titles = parse_registry_titles()
     assert "index_verborum_print_main.tsv" in builder_text
     assert "index_verborum_forms.tsv" not in builder_text
     assert "check_book_draft_tex_indexes.py" in docker_build_text
     assert "check_print_index_ready.py" in docker_build_text
     assert "index_verborum_print_main.tsv" in filter_text
+    assert r"\indexsetup{level=\section*,noclearpage}" in header_text
+    assert "toclevel" not in header_text
+    assert "Old English forms" not in REGISTRY_TEX_PATH.read_text(encoding="utf-8")
+    assert "Proto-Germanic forms" not in REGISTRY_TEX_PATH.read_text(encoding="utf-8")
+    assert "Modern English linguistic forms" not in REGISTRY_TEX_PATH.read_text(encoding="utf-8")
+    if "modeng" in registry_titles:
+        assert registry_titles["modeng"] == "Modern English"
 
     assert not any(row["language"] == "preoe" for row in main_rows)
     assert preoe_rows

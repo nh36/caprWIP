@@ -15,14 +15,29 @@ BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseli
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_decisions.tsv"
 PRINT_ANOMALIES_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_anomalies.tsv"
+LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 TEX_CHECK_SCRIPT_PATH = REPO_ROOT / "Germanic/tools/check_book_draft_tex_indexes.py"
 DEFAULT_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.tex"
+DEFAULT_TOC_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.toc"
 PROSE_RULE_WORDS = {"form", "output", "expected", "stage", "rule"}
 
 
 def load_rows(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def load_language_titles() -> dict[str, str]:
+    rows = load_rows(LANGUAGE_REGISTRY_PATH)
+    return {(row.get("code") or "").strip(): (row.get("title") or "").strip() for row in rows}
+
+
+def parse_toc_titles(toc_text: str) -> list[str]:
+    titles: list[str] = []
+    pattern = re.compile(r"\\contentsline\s*\{[^}]+\}\{\s*(?:\\numberline\s*\{[^}]*\})?([^}]*)\}\{[^}]*\}")
+    for match in pattern.finditer(toc_text):
+        titles.append(match.group(1).strip())
+    return titles
 
 
 def normalized_token(value: str) -> str:
@@ -40,6 +55,7 @@ def audit_summary_value(label: str) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tex-path", type=Path, default=DEFAULT_TEX_PATH)
+    parser.add_argument("--toc-path", type=Path, default=DEFAULT_TOC_PATH)
     args = parser.parse_args()
 
     assert audit_summary_value("True remaining unresolved") == 0
@@ -52,6 +68,7 @@ def main() -> None:
     print_main_rows = load_rows(PRINT_MAIN_PATH)
     print_decisions = load_rows(PRINT_DECISIONS_PATH)
     print_anomaly_rows = load_rows(PRINT_ANOMALIES_PATH)
+    language_titles = load_language_titles()
 
     explicit_regular_include_keys = {
         (
@@ -80,6 +97,18 @@ def main() -> None:
 
     hard_anomalies = [row for row in print_anomaly_rows if (row.get("hard_error") or "").strip() == "yes"]
     assert not hard_anomalies, f"Hard print anomalies remain: {len(hard_anomalies)}"
+
+    toc_path = args.toc_path.expanduser().resolve()
+    if toc_path.exists():
+        toc_text = toc_path.read_text(encoding="utf-8")
+        toc_titles = parse_toc_titles(toc_text)
+        assert "Index verborum" in toc_titles, "Expected Index verborum entry in ToC."
+        print_languages = sorted({(row.get("language") or "").strip() for row in print_main_rows if (row.get("language") or "").strip()})
+        for code in print_languages:
+            title = language_titles.get(code, "")
+            if not title:
+                continue
+            assert title not in toc_titles, f"Per-language index heading leaked into ToC: {title}"
 
     tex_path = args.tex_path.expanduser().resolve()
     if not tex_path.exists():
