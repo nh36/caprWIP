@@ -90,6 +90,7 @@ chapter_files = [
 ]
 rule_heading_re = re.compile(r"^##\s+(SC\d{3})\.\s+(.*?)\s+\(`([^`]+)`\)\s+\{#(rule-[^}]+)\}\s*$")
 link_re = re.compile(r"\[([^\]]+)\]\((#rule-[^)]+)\)")
+long_rule_heading_threshold = 80
 
 parts: list[str] = [
     "# A sequence from early West Germanic consonant and vowel shifts to Old English r-metathesis",
@@ -136,10 +137,37 @@ def resolve_links(text: str) -> str:
     return link_re.sub(lambda match: match.group(0) if match.group(2) in active_anchors else match.group(1), text)
 
 
+def heading_visible_text(sc_number: str, title: str, rule_name: str) -> str:
+    visible = title
+    visible = re.sub(r"\\[A-Za-z]+\{([^{}]*)\}", r"\1", visible)
+    visible = visible.replace("{", "").replace("}", "")
+    visible = re.sub(r"\\[A-Za-z]+", "", visible)
+    visible = re.sub(r"\s+", " ", visible).strip()
+    return f"{sc_number}. {visible} ({rule_name})"
+
+
+def wrap_long_rule_headings(text: str) -> str:
+    wrapped: list[str] = []
+    for line in text.splitlines():
+        match = rule_heading_re.match(line.strip())
+        if not match:
+            wrapped.append(line)
+            continue
+        sc_number, title, rule_name, anchor = match.groups()
+        if len(heading_visible_text(sc_number, title, rule_name)) <= long_rule_heading_threshold:
+            wrapped.append(line)
+            continue
+        wrapped.append(
+            f"## \\CAPRRuleHeading{{{sc_number}. {title}}}{{{rule_name}}} {{#{anchor}}}"
+        )
+    return "\n".join(wrapped)
+
+
 for idx, name in enumerate(chapter_files):
     if idx:
         parts.extend(["", r"\newpage", ""])
-    parts.append(resolve_links((root / name).read_text(encoding="utf-8").rstrip()))
+    chapter_text = resolve_links((root / name).read_text(encoding="utf-8").rstrip())
+    parts.append(wrap_long_rule_headings(chapter_text))
 
 parts.extend([
     "",
@@ -344,6 +372,8 @@ else:
 
 coverage_out.write_text("\n".join(coverage_parts) + "\n", encoding="utf-8")
 PY
+
+python3 Germanic/tools/check_sound_change_heading_wrapping.py --markdown-path "${assembled_md}"
 
 if ! command -v docker >/dev/null 2>&1; then
   echo "docker not found; cannot run Docker-based render." >&2

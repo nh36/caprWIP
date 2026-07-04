@@ -1,4 +1,8 @@
 \usepackage{fvextra}
+\providecommand{\texorpdfstring}[2]{#1}
+\DeclareRobustCommand{\CAPRRuleHeading}[2]{%
+  #1\texorpdfstring{\\\normalfont\small\texttt{(#2)}}{ (#2)}%
+}
 \DefineVerbatimEnvironment{ReaderFacingFoma}{Verbatim}{
   breaklines=true,
   breakanywhere=true,

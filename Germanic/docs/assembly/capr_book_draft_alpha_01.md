@@ -581,7 +581,7 @@ These two rules stand at the start of the current sequence. One removes the rema
 
 Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e} [@RingeTaylor2014, pp. 37--41]. That is enough to make [SC014 NWGmcUnstressedAiMonophthongization](#rule-NWGmcUnstressedAiMonophthongization) historically recognizable even though the order test does not by itself determine a closer relative position.
 
-### SC014. Monophthongization of unstressed \emph{*ai} (`NWGmcUnstressedAiMonophthongization`) {#rule-NWGmcUnstressedAiMonophthongization}
+### \CAPRRuleHeading{SC014. Monophthongization of unstressed \emph{*ai}}{NWGmcUnstressedAiMonophthongization} {#rule-NWGmcUnstressedAiMonophthongization}
 
 The implementation keeps the monophthongization step explicit.
 
@@ -697,7 +697,7 @@ Campbell treats the development of final accented \emph{ō} to \emph{ū} in stre
 
 That is enough for a short note. The change is historically legible, but the tested forms do not by themselves determine a closer position for it.
 
-### SC018. Raising of final stressed monosyllabic \emph{*ō} (`NWGmcStressedMonosyllableORaising`) {#rule-NWGmcStressedMonosyllableORaising}
+### \CAPRRuleHeading{SC018. Raising of final stressed monosyllabic \emph{*ō}}{NWGmcStressedMonosyllableORaising} {#rule-NWGmcStressedMonosyllableORaising}
 
 The implementation keeps the monosyllabic raising step explicit.
 
@@ -1361,7 +1361,7 @@ Its chronology is concrete on both sides. If the rule is moved before [SC043 Ang
 
 That two-sided local seam is why [SC044 OEBreaking](#rule-OEBreaking) works so well as the main center of the pair.
 
-### SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization}
+### \CAPRRuleHeading{SC045. Palatalization of velar fricatives beside front vowels}{OEVelarFricativePalatalization} {#rule-OEVelarFricativePalatalization}
 
 The following rule handles the local fricative palatalization.
 
@@ -1659,7 +1659,7 @@ change belongs to a larger palatalizing environment, and it must be kept
 distinct from neighboring processes if the sequence of developments is to be
 described accurately.
 
-### SC052. Palatalization of \emph{*k} before front vowels and \emph{*j} (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront}
+### \CAPRRuleHeading{SC052. Palatalization of \emph{*k} before front vowels and \emph{*j}}{OEVelarPalatalizationKFront} {#rule-OEVelarPalatalizationKFront}
 
 The first part of the implementation isolates the `k`-side environments of the
 change.
@@ -2425,7 +2425,7 @@ By this point in the sequence the main palatal and umlautal changes are already 
 
 The rule matters because it makes many familiar Old English forms look abruptly shorter than their earlier stages. It is also a good place to show how finite-state chronology works. The derivation can say exactly which forms fail if apocope is moved too early or too late, so the late weak-tail sequence becomes visible through concrete lexical breakpoints and explicit ordering statements.
 
-### SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope}
+### \CAPRRuleHeading{SC063. High-vowel apocope after heavy syllables and in trisyllables}{OEHighVowelApocope} {#rule-OEHighVowelApocope}
 
 The implementation keeps the whole apocope system in one explicit rule.
 
@@ -2585,7 +2585,7 @@ If the rule is moved earlier or later within the tested sequence, no checked for
 
 That makes the rule best read as a narrow intermediate step inside the late syncope sequence. It is useful in the derivation, but the present evidence does not justify treating it as a stronger chronology anchor than it is. The handbooks support the broader pattern of syncope followed by cluster simplification, while CAPR states this dental simplification as a separate step. The placement is therefore historically plausible but approximate, not a tightly fixed local ordering.
 
-### SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
+### \CAPRRuleHeading{SC068. Preconsonantal degemination before sonorants}{OEPreconsonantalDegemination} {#rule-OEPreconsonantalDegemination}
 
 The final degemination rule is written as one composed definition.
 
@@ -2744,7 +2744,7 @@ Its chronology is explicit on both sides. If the rule is moved before [SC072 OEU
 
 The evidence is narrow on each side, but it is still real. The rule belongs between the stronger shortening/merger chapter and the more specific \emph{*ng} preservation that follows it.
 
-### SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering}
+### \CAPRRuleHeading{SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng}}{OEMedUnstressedILowering} {#rule-OEMedUnstressedILowering}
 
 The following rule gives the local \emph{*ng} restriction its own explicit step.
 
@@ -2863,7 +2863,7 @@ The middle closing sequence is technically tighter than the opening pair, but it
 
 That hierarchy is historically meaningful. The three rules form one local chain because the output of each immediately conditions the next, but the chain is not flat. [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) is the strongest member because it has the clearest local evidence on both sides, while [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) is the broad earlier flank and [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) is the one-sided follower on the right.
 
-### SC081. Strengthening of \emph{*j} after front diphthongs (`OEJStrengtheningAfterFrontDiphthong`) {#rule-OEJStrengtheningAfterFrontDiphthong}
+### \CAPRRuleHeading{SC081. Strengthening of \emph{*j} after front diphthongs}{OEJStrengtheningAfterFrontDiphthong} {#rule-OEJStrengtheningAfterFrontDiphthong}
 
 The implementation keeps the strengthening step as one explicit rule.
 
