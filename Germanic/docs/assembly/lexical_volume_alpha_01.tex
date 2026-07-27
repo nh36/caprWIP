@@ -105,6 +105,10 @@
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
 \hypersetup{
   pdflang={en-GB},
   hidelinks,
@@ -124,19 +128,15 @@ prose, citations, locators, or transducer logic.}
 
 \subsection{Introduction}\label{introduction}
 
-The lexical catalogue is organized by derivation class rather than as a
-single undifferentiated list. This makes the interpretive burden of each
-entry explicit. Regular derivations establish the baseline relation
-between earlier Germanic forms and Old English reflexes under the sound
-history followed here. The variant, analogy, reconstructed-comparator,
-and exception classes then show where that baseline does not by itself
-explain the attested form.
+The catalogue groups words by the kind of historical explanation they
+require. Regular derivations establish the reach of the sound laws. The
+remaining classes mark, without concealment, the places where
+attestation, morphology, analogy, or an unresolved mismatch intervenes.
 
-This lexical catalogue is a word-centered volume. It traces individual
-earlier Germanic forms to Old English reflexes and groups them by the
-kind of comparison each entry requires. A separate sound-change study
-would remain rule-centered, treating chronology, rule interaction, and
-broader exception patterns.
+The catalogue proceeds from words; the preceding part proceeds from
+rules. Together they allow each proposed sound law to be tested against
+its lexical witnesses and each etymology against the complete ordered
+history.
 
 \subsection{Data and sources}\label{data-and-sources}
 
@@ -152,13 +152,11 @@ citation method or trace machinery.
 \subsection{Transducer and derivation
 method}\label{transducer-and-derivation-method}
 
-Each lexical entry keeps the pilot structure: a generated derivation
-summary, a boxed derivation trace split into Earlier Germanic changes
-and Old English changes, and the current entry prose. The summary
-distinguishes citation reconstruction, selected input, transducer
-outcome, and selected target where those differ, and the boxed trace
-remains a compact PDF-oriented rendering of the current compact trace
-data.
+Four objects must be distinguished in every derivation: the citation
+reconstruction, the selected input, the transducer outcome, and the Old
+English target. The summary identifies them where they differ; the boxed
+trace then divides the changes into Earlier Germanic and Old English
+stages.
 
 \subsection{Derivation classes}\label{derivation-classes}
 
@@ -188,12 +186,12 @@ current manifest. Counts in this alpha are:
 \subsection{Part I. Regular
 derivations}\label{part-i.-regular-derivations}
 
-Regular derivations are entries where the earlier Germanic form and the
-Old English reflex stand in a straightforward relation under the sound
-history followed here. These entries form the baseline against which the
-analogy and exception classes are interpreted.
+In these entries the selected Germanic input yields the Old English
+reflex by regular sound change. They establish the standard against
+which the following analogical and exceptional histories must be judged.
 
-\subsubsection{adder --- OE nǣdre}\label{adder-oe-nux1e3dre}
+\subsubsection{\texorpdfstring{adder --- OE
+\emph{nǣdre}}{adder --- OE nǣdre}}\label{adder-oe-nux1e3dre}
 
 Derivation: \emph{*nḗdrōn} \textgreater{} \emph{nǣdre} (regular).
 
@@ -274,7 +272,8 @@ English {\emph{nǣdre}}, and the weak feminine ending remains as final
 \emph{-e}, giving {\emph{nǣdre}}. The doubled consonant of
 {\emph{næddre}} is secondary and does not alter the inherited base form.
 
-\subsubsection{bake --- OE bacan}\label{bake-oe-bacan}
+\subsubsection{\texorpdfstring{bake --- OE
+\emph{bacan}}{bake --- OE bacan}}\label{bake-oe-bacan}
 
 Derivation: \emph{*bákaną} \textgreater{} \emph{bacan} (regular).
 
@@ -357,7 +356,8 @@ later apocope and weak-tail reduction yield {\emph{bacan}}
 is therefore straightforward: {\emph{*bákaną}} \textgreater{}
 {\emph{bacan}}.
 
-\subsubsection{beech --- OE bōc}\label{beech-oe-bux14dc}
+\subsubsection{\texorpdfstring{beech --- OE
+\emph{bōc}}{beech --- OE bōc}}\label{beech-oe-bux14dc}
 
 Derivation: \emph{*bōkō} \textgreater{} \emph{bōc} (regular).
 
@@ -430,7 +430,8 @@ Northwest Germanic final long \emph{ō} raises to \emph{u}, and later
 high-vowel apocope leaves \emph{bōc}. The regular comparison is
 therefore \emph{*bōkō} \textgreater{} \emph{bōc}.
 
-\subsubsection{begin --- OE beġinnan}\label{begin-oe-beux121innan}
+\subsubsection{\texorpdfstring{begin --- OE
+\emph{beġinnan}}{begin --- OE beġinnan}}\label{begin-oe-beux121innan}
 
 Derivation: \emph{*bigínnaną} \textgreater{} \emph{beġinnan} (regular).
 
@@ -512,7 +513,8 @@ From {\emph{*bigínnaną}}, heavy-syllable nasal apocope yields
 palatalizes to \emph{ġ}, and the unstressed prefix reduces \emph{bi-} to
 \emph{be-}, giving {\emph{beġinnan}}.
 
-\subsubsection{bier --- OE bǣr}\label{bier-oe-bux1e3r}
+\subsubsection{\texorpdfstring{bier --- OE
+\emph{bǣr}}{bier --- OE bǣr}}\label{bier-oe-bux1e3r}
 
 Derivation: \emph{*bḗrō} \textgreater{} \emph{bǣr} (regular).
 
@@ -581,8 +583,8 @@ is therefore a normalized long-vowel spelling of the same noun.
 \paragraph{Source note}\label{source-note}
 
 Lexicographic spellings vary between {\emph{bær}} and {\emph{bar}}. The
-normalized target {\emph{bǣr}} simply marks the same long vowel
-explicitly (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+normalized target {\emph{bǣr}} represents the same long vowel
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 73};
 \citeproc{ref-Kroonen2013}{Kroonen 2013, 717}).
 
@@ -594,7 +596,8 @@ From {\emph{*bḗrō}}, Northwest Germanic final long \emph{ō} raises to
 yields {\emph{bǣr}}. The resulting noun matches the normalized Old
 English target.
 
-\subsubsection{birth --- OE byrd}\label{birth-oe-byrd}
+\subsubsection{\texorpdfstring{birth --- OE
+\emph{byrd}}{birth --- OE byrd}}\label{birth-oe-byrd}
 
 Derivation: \emph{*búrdiz} \textgreater{} \emph{byrd} (regular).
 
@@ -679,7 +682,8 @@ From \emph{*búrdiz}, loss of final \emph{z} gives \emph{*búrdi}.
 I-umlaut fronts \emph{u} to \emph{y}, and high-vowel apocope then yields
 \emph{byrd}. The result is the ordinary simplex Old English noun.
 
-\subsubsection{bone --- OE bān}\label{bone-oe-bux101n}
+\subsubsection{\texorpdfstring{bone --- OE
+\emph{bān}}{bone --- OE bān}}\label{bone-oe-bux101n}
 
 Derivation: \emph{*báiną} \textgreater{} \emph{bān} (regular).
 
@@ -742,9 +746,7 @@ Clark Hall and Bosworth-Toller record {\emph{bān}} as the ordinary Old
 English noun (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898}). Bright's
 glossary also distinguishes citation-form {\emph{bān}} from oblique
-{\emph{bāne}}, which keeps the nominative-accusative singular separate
-from the rest of the paradigm
-(\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}).
+{\emph{bāne}} (\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}).
 
 \paragraph{Source note}\label{source-note-1}
 
@@ -760,7 +762,8 @@ West Germanic monophthongization turns stressed \emph{*ai} into
 {\emph{bān}}. The resulting form matches the attested Old English
 citation noun.
 
-\subsubsection{both --- OE bū}\label{both-oe-bux16b}
+\subsubsection{\texorpdfstring{both --- OE
+\emph{bū}}{both --- OE bū}}\label{both-oe-bux16b}
 
 Derivation: \emph{*bō} \textgreater{} \emph{bū} (regular).
 
@@ -823,9 +826,9 @@ beside \emph{ON} {\emph{báðir}}, \emph{OFris} {\emph{bēthe}}, \emph{OS}
 (\citeproc{ref-Orel2003}{Orel 2003, 65}). Fulk reports that explanation
 cautiously and notes Seebold's preference for a \emph{*bō-þ-} analysis
 instead (\citeproc{ref-Fulk2018}{Fulk 2018, sect. 10.1}). That debate
-matters for {\emph{bēġen}} and for the extended forms behind Modern
-English {\emph{both}}, German {\emph{beide}}, and Dutch {\emph{beide}};
-it does not displace the inherited neuter {\emph{*bō}} \textgreater{}
+concerns {\emph{bēġen}} and the extended forms behind Modern English
+{\emph{both}}, German {\emph{beide}}, and Dutch {\emph{beide}}; it does
+not displace the inherited neuter {\emph{*bō}} \textgreater{}
 {\emph{bū}} treated here.
 
 \paragraph{Old English evidence}\label{old-english-evidence-7}
@@ -904,7 +907,8 @@ not the direct continuation of OE \emph{bū} \\
 \end{longtable}
 }
 
-\subsubsection{bow --- OE bīeġan}\label{bow-oe-bux12beux121an}
+\subsubsection{\texorpdfstring{bow --- OE
+\emph{bīeġan}}{bow --- OE bīeġan}}\label{bow-oe-bux12beux121an}
 
 Derivation: \emph{*báugijaną} \textgreater{} \emph{bīeġan} (regular).
 
@@ -992,7 +996,8 @@ regular \emph{ie} outcomes of \emph{*éa} under i-umlaut
 therefore straightforward: \emph{*báugijaną} \textgreater{}
 \emph{bīeġan}.
 
-\subsubsection{breeches --- OE brēċ}\label{breeches-oe-brux113ux10b}
+\subsubsection{\texorpdfstring{breeches --- OE
+\emph{brēċ}}{breeches --- OE brēċ}}\label{breeches-oe-brux113ux10b}
 
 Derivation: \emph{*brōkiz} \textgreater{} \emph{brēċ} (regular).
 
@@ -1060,9 +1065,8 @@ Bright notes \emph{brōc} with plural \emph{brēc}, and Clark Hall gives
 \emph{brēc} fp. breeches while also listing \emph{broc} as a feminine
 noun probably represented chiefly in the plural
 (\citeproc{ref-BrightCassidyRingler1971}{Bright 1971};
-\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 64}). The spelling
-\emph{brēċ} used here makes the long vowel and palatal consonant
-explicit; the Old English evidence itself is the attested plural
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 64}). I write \emph{brēċ}
+for the long vowel and palatal consonant; the attested plural is
 \emph{brēc}.
 
 \paragraph{Development to Old
@@ -1074,7 +1078,8 @@ high-vowel apocope then yields \emph{brēċ}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The development
 is therefore regular: \emph{*brōkiz} \textgreater{} \emph{brēċ}.
 
-\subsubsection{calf --- OE ċealf}\label{calf-oe-ux10bealf}
+\subsubsection{\texorpdfstring{calf --- OE
+\emph{ċealf}}{calf --- OE ċealf}}\label{calf-oe-ux10bealf}
 
 Derivation: \emph{*kálbaz} \textgreater{} \emph{ċealf} (regular).
 
@@ -1147,9 +1152,8 @@ plural forms such as \emph{calfur} and {\emph{cealfru}}
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 131}).
 Campbell and Fulk show the same singular-plus-\emph{-r-} plural pattern
 (\citeproc{ref-Campbell1959}{Campbell 1959};
-\citeproc{ref-Fulk2018}{Fulk 2018, 193}). The spelling \emph{ċealf} used
-here makes the palatalized initial explicit; the ordinary attested
-dictionary headword is {\emph{cealf}}.
+\citeproc{ref-Fulk2018}{Fulk 2018, 193}). I write \emph{ċealf} for the
+palatalized initial; the attested dictionary headword is {\emph{cealf}}.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-10}
@@ -1162,7 +1166,8 @@ support the West Saxon palatalized onset represented here as \emph{ċ-},
 so \emph{*kálbaz} develops regularly to \emph{ċealf}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 220}).
 
-\subsubsection{corn --- OE corn}\label{corn-oe-corn}
+\subsubsection{\texorpdfstring{corn --- OE
+\emph{corn}}{corn --- OE corn}}\label{corn-oe-corn}
 
 Derivation: \emph{*kúrną} \textgreater{} \emph{corn} (regular).
 
@@ -1240,7 +1245,8 @@ and later loss of final nasal after a heavy syllable yields
 belongs to comparative background rather than to the derivational input
 of this entry.
 
-\subsubsection{deed --- OE dǣd}\label{deed-oe-dux1e3d}
+\subsubsection{\texorpdfstring{deed --- OE
+\emph{dǣd}}{deed --- OE dǣd}}\label{deed-oe-dux1e3d}
 
 Derivation: \emph{*dḗdiz} \textgreater{} \emph{dǣd} (regular).
 
@@ -1295,9 +1301,8 @@ evidence}\label{reconstruction-and-comparative-evidence-12}
 Orel reconstructs the noun as \emph{*dēdiz}, and Ringe and Taylor derive
 the same inherited i-stem from Proto-Germanic \emph{*dédiz} through
 northwest Germanic \emph{*dadiz} (\citeproc{ref-Orel2003}{Orel 2003};
-\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The
-stress-marked form \emph{*dḗdiz} represents that same inherited noun in
-a notation that keeps the stressed long vowel explicit.
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The acute accent
+in \emph{*dḗdiz} marks stress on the same reconstructed long vowel.
 
 \paragraph{Old English evidence}\label{old-english-evidence-12}
 
@@ -1321,7 +1326,8 @@ preserves the non-West-Saxon outcome
 \citeproc{ref-SieversBrunner1965}{Brunner 1965}). The development
 treated here is therefore the regular West Saxon line.
 
-\subsubsection{door --- OE dor}\label{door-oe-dor}
+\subsubsection{\texorpdfstring{door --- OE
+\emph{dor}}{door --- OE dor}}\label{door-oe-dor}
 
 Derivation: \emph{*dúrą} \textgreater{} \emph{dor} (regular).
 
@@ -1400,7 +1406,8 @@ separate line identified by Kroonen and Ringe-Taylor
 (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{fare --- OE faran}\label{fare-oe-faran}
+\subsubsection{\texorpdfstring{fare --- OE
+\emph{faran}}{fare --- OE faran}}\label{fare-oe-faran}
 
 Derivation: \emph{*fáraną} \textgreater{} \emph{faran} (regular).
 
@@ -1482,7 +1489,8 @@ participial faren- \textless{} \emph{*faræn-} \textless{} \emph{*faran-}
 shows why fronting elsewhere in the paradigm does not alter the
 infinitive headword (\citeproc{ref-Fulk2018}{Fulk 2018}).
 
-\subsubsection{fell --- OE fell}\label{fell-oe-fell}
+\subsubsection{\texorpdfstring{fell --- OE
+\emph{fell}}{fell --- OE fell}}\label{fell-oe-fell}
 
 Derivation: \emph{*féllą} \textgreater{} \emph{fell} (regular).
 
@@ -1555,7 +1563,8 @@ heavy-syllable nasal apocope yields \emph{*féll}, surfacing as
 \emph{fell}. The regular development treated here is therefore
 \emph{*féllą} \textgreater{} \emph{fell}.
 
-\subsubsection{fern --- OE fearn}\label{fern-oe-fearn}
+\subsubsection{\texorpdfstring{fern --- OE
+\emph{fearn}}{fern --- OE fearn}}\label{fern-oe-fearn}
 
 Derivation: \emph{*fárnaz} \textgreater{} \emph{fearn} (regular).
 
@@ -1623,9 +1632,9 @@ Bosworth-Toller records \emph{fearn} with inflected forms such as
 \emph{fearnes}, \emph{fearna}, and \emph{fearne}
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 219}).
-Kroonen's additional \emph{fern} remains useful comparative background,
-but the best-supported citation target in the local lexical sources is
-\emph{fearn} (\citeproc{ref-Kroonen2013}{Kroonen 2013}).
+Kroonen also records \emph{fern}, but the local lexical sources give
+stronger support to \emph{fearn} as the citation target
+(\citeproc{ref-Kroonen2013}{Kroonen 2013}).
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-16}
@@ -1637,7 +1646,8 @@ breaking before \emph{r} plus consonant gives \emph{fearn}
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The development
 treated here is therefore the regular \emph{rC}-breaking line.
 
-\subsubsection{field --- OE feld}\label{field-oe-feld}
+\subsubsection{\texorpdfstring{field --- OE
+\emph{feld}}{field --- OE feld}}\label{field-oe-feld}
 
 Derivation: \emph{*félθuz} \textgreater{} \emph{feld} (regular).
 
@@ -1720,7 +1730,8 @@ the regular \emph{*lþ} \textgreater{} \emph{ld} development, both
 accounts converge on the same Old English form
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 170}).
 
-\subsubsection{fly --- OE flēogan}\label{fly-oe-flux113ogan}
+\subsubsection{\texorpdfstring{fly --- OE
+\emph{flēogan}}{fly --- OE flēogan}}\label{fly-oe-flux113ogan}
 
 Derivation: \emph{*fléuganą} \textgreater{} \emph{flēogan} (regular).
 
@@ -1805,7 +1816,8 @@ then yield \emph{flēogan} (\citeproc{ref-RingeTaylor2014}{Ringe and
 Taylor 2014}). The development is therefore regular: \emph{*fléuganą}
 \textgreater{} \emph{flēogan}.
 
-\subsubsection{forlorn --- OE lēosan}\label{forlorn-oe-lux113osan}
+\subsubsection{\texorpdfstring{forlorn --- OE
+\emph{lēosan}}{forlorn --- OE lēosan}}\label{forlorn-oe-lux113osan}
 
 Derivation: \emph{*léusaną} \textgreater{} \emph{lēosan} (regular).
 
@@ -1889,7 +1901,8 @@ From \emph{*léusaną}, Old English diphthong leveling gives
 \emph{lēosan} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 The prefixed forms follow the same verbal base with added \emph{for-}.
 
-\subsubsection{gang --- OE gang}\label{gang-oe-gang}
+\subsubsection{\texorpdfstring{gang --- OE
+\emph{gang}}{gang --- OE gang}}\label{gang-oe-gang}
 
 Derivation: \emph{*gángaz} \textgreater{} \emph{gang} (regular).
 
@@ -1968,7 +1981,8 @@ From \emph{*gángaz}, loss of final \emph{-z} gives \emph{*gánga}, and
 later loss of final bare \emph{-a} yields \emph{gang}. The development
 is therefore regular: \emph{*gángaz} \textgreater{} \emph{gang}.
 
-\subsubsection{give --- OE ġiefan}\label{give-oe-ux121iefan}
+\subsubsection{\texorpdfstring{give --- OE
+\emph{ġiefan}}{give --- OE ġiefan}}\label{give-oe-ux121iefan}
 
 Derivation: \emph{*gébaną} \textgreater{} \emph{ġiefan} (regular).
 
@@ -2036,8 +2050,8 @@ Campbell gives \emph{gefan} (W-S \emph{giefan}) among examples of
 initial palatalization, and Clark Hall records the verb under plain
 \emph{giefan} with forms such as \emph{geaf} and \emph{giefen}
 (\citeproc{ref-Campbell1959}{Campbell 1959};
-\citeproc{ref-ClarkHall1960}{Clark Hall 1960}). The spelling
-\emph{ġiefan} used here makes the palatal initial explicit.
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960}). I write \emph{ġiefan}
+for the palatal initial.
 
 \paragraph{Dialect note}\label{dialect-note}
 
@@ -2055,7 +2069,8 @@ reduction gives \emph{giefan} (\citeproc{ref-Campbell1959}{Campbell
 1959}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}). The
 result is therefore the regular West Saxon infinitive.
 
-\subsubsection{gold --- OE gold}\label{gold-oe-gold}
+\subsubsection{\texorpdfstring{gold --- OE
+\emph{gold}}{gold --- OE gold}}\label{gold-oe-gold}
 
 Derivation: \emph{*gúlθą} \textgreater{} \emph{gold} (regular).
 
@@ -2139,7 +2154,8 @@ From \emph{*gúlθą}, the regular consonant development gives
 (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 42}).
 
-\subsubsection{grave --- OE grafan}\label{grave-oe-grafan}
+\subsubsection{\texorpdfstring{grave --- OE
+\emph{grafan}}{grave --- OE grafan}}\label{grave-oe-grafan}
 
 Derivation: \emph{*grábaną} \textgreater{} \emph{grafan} (regular).
 
@@ -2222,7 +2238,8 @@ participial \emph{græfen} belong to other lexical or paradigm positions
 and do not replace the infinitive \emph{grafan} as the target here
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{guest --- OE ġiest}\label{guest-oe-ux121iest}
+\subsubsection{\texorpdfstring{guest --- OE
+\emph{ġiest}}{guest --- OE ġiest}}\label{guest-oe-ux121iest}
 
 Derivation: \emph{*gástiz} \textgreater{} \emph{ġiest} (regular).
 
@@ -2310,7 +2327,8 @@ rather than corrections to that choice
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898}).
 
-\subsubsection{hair --- OE hǣr}\label{hair-oe-hux1e3r}
+\subsubsection{\texorpdfstring{hair --- OE
+\emph{hǣr}}{hair --- OE hǣr}}\label{hair-oe-hux1e3r}
 
 Derivation: \emph{*xḗrą} \textgreater{} \emph{hǣr} (regular).
 
@@ -2390,7 +2408,8 @@ displace the ordinary simplex \emph{hǣr} treated here
 (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 158}).
 
-\subsubsection{harvest --- OE hierfest}\label{harvest-oe-hierfest}
+\subsubsection{\texorpdfstring{harvest --- OE
+\emph{hierfest}}{harvest --- OE hierfest}}\label{harvest-oe-hierfest}
 
 Derivation: \emph{*xárbistuz} \textgreater{} \emph{hierfest} (regular).
 
@@ -2481,7 +2500,8 @@ Anglian material in West Saxon transmission
 (\citeproc{ref-Bammesberger1997}{Bammesberger 1997};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{hedge --- OE heġġ}\label{hedge-oe-heux121ux121}
+\subsubsection{\texorpdfstring{hedge --- OE
+\emph{heġġ}}{hedge --- OE heġġ}}\label{hedge-oe-heux121ux121}
 
 Derivation: \emph{*xágjaz} \textgreater{} \emph{heġġ} (regular).
 
@@ -2568,7 +2588,8 @@ lexicographic forms remain the main Old English citation evidence
 (\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{helm --- OE helm}\label{helm-oe-helm}
+\subsubsection{\texorpdfstring{helm --- OE
+\emph{helm}}{helm --- OE helm}}\label{helm-oe-helm}
 
 Derivation: \emph{*xélmaz} \textgreater{} \emph{helm} (regular).
 
@@ -2648,7 +2669,8 @@ different noun meaning `helm, rudder'
 (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{help --- OE helpan}\label{help-oe-helpan}
+\subsubsection{\texorpdfstring{help --- OE
+\emph{helpan}}{help --- OE helpan}}\label{help-oe-helpan}
 
 Derivation: \emph{*xélpaną} \textgreater{} \emph{helpan} (regular).
 
@@ -2726,7 +2748,8 @@ replace verbal \emph{helpan} as the target here
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 542}).
 
-\subsubsection{hind --- OE hind}\label{hind-oe-hind}
+\subsubsection{\texorpdfstring{hind --- OE
+\emph{hind}}{hind --- OE hind}}\label{hind-oe-hind}
 
 Derivation: \emph{*xéndjō} \textgreater{} \emph{hind} (regular).
 
@@ -2805,7 +2828,8 @@ and does not belong to the noun history of \emph{hind}
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 554}).
 
-\subsubsection{hold --- OE healdan}\label{hold-oe-healdan}
+\subsubsection{\texorpdfstring{hold --- OE
+\emph{healdan}}{hold --- OE healdan}}\label{hold-oe-healdan}
 
 Derivation: \emph{*xáldaną} \textgreater{} \emph{healdan} (regular).
 
@@ -2887,7 +2911,8 @@ Mercian \emph{haldan} are genuine non-West-Saxon doublets rather than
 corrections to that choice (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{horn --- OE horn}\label{horn-oe-horn}
+\subsubsection{\texorpdfstring{horn --- OE
+\emph{horn}}{horn --- OE horn}}\label{horn-oe-horn}
 
 Derivation: \emph{*xúrną} \textgreater{} \emph{horn} (regular).
 
@@ -2966,7 +2991,8 @@ only. It does not replace the derivational input \emph{*xúrną} as the
 derivational form used here (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-Orel2003}{Orel 2003, 234}).
 
-\subsubsection{lead --- OE lǣdan}\label{lead-oe-lux1e3dan}
+\subsubsection{\texorpdfstring{lead --- OE
+\emph{lǣdan}}{lead --- OE lǣdan}}\label{lead-oe-lux1e3dan}
 
 Derivation: \emph{*láidijaną} \textgreater{} \emph{lǣdan} (regular).
 
@@ -3043,7 +3069,8 @@ loss of \emph{j} after a heavy stem yield \emph{lǣdan}, so the
 development represented here is fully regular
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{learn --- OE liornian}\label{learn-oe-liornian}
+\subsubsection{\texorpdfstring{learn --- OE
+\emph{liornian}}{learn --- OE liornian}}\label{learn-oe-liornian}
 
 Derivation: \emph{*líznōjaną} \textgreater{} \emph{liornian} (regular).
 
@@ -3171,7 +3198,8 @@ output; attested Northumbrian comparison form & selected comparison \\
 \end{longtable}
 }
 
-\subsubsection{lid --- OE hlid}\label{lid-oe-hlid}
+\subsubsection{\texorpdfstring{lid --- OE
+\emph{hlid}}{lid --- OE hlid}}\label{lid-oe-hlid}
 
 Derivation: \emph{*xlídą} \textgreater{} \emph{hlid} (regular).
 
@@ -3249,7 +3277,8 @@ background only. The form represented here is the later \emph{*xlídą}
 noun (\citeproc{ref-Orel2003}{Orel 2003}; \citeproc{ref-Lloyd1966}{Lloyd
 1966}).
 
-\subsubsection{light --- OE līehtan}\label{light-oe-lux12behtan}
+\subsubsection{\texorpdfstring{light --- OE
+\emph{līehtan}}{light --- OE līehtan}}\label{light-oe-lux12behtan}
 
 Derivation: \emph{*léuxtijaną} \textgreater{} \emph{līehtan} (regular).
 
@@ -3335,7 +3364,8 @@ Anglian \emph{lihtan}, while later West Saxon also shows \emph{lyhtan}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
 \citeproc{ref-Campbell1959}{Campbell 1959}).
 
-\subsubsection{linden --- OE lind}\label{linden-oe-lind}
+\subsubsection{\texorpdfstring{linden --- OE
+\emph{lind}}{linden --- OE lind}}\label{linden-oe-lind}
 
 Derivation: \emph{*líndō} \textgreater{} \emph{lind} (regular).
 
@@ -3410,7 +3440,8 @@ has a separate adjectival \emph{linden} `made of linden-wood', but that
 is not the noun counterpart for this entry
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{milk --- OE meoloc}\label{milk-oe-meoloc}
+\subsubsection{\texorpdfstring{milk --- OE
+\emph{meoloc}}{milk --- OE meoloc}}\label{milk-oe-meoloc}
 
 Derivation: \emph{*mélukz} \textgreater{} \emph{meoloc} (regular).
 
@@ -3492,7 +3523,8 @@ leveled tradition associated with oblique forms, whereas \emph{meoloc} /
 (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{mother --- OE mōder}\label{mother-oe-mux14dder}
+\subsubsection{\texorpdfstring{mother --- OE
+\emph{mōder}}{mother --- OE mōder}}\label{mother-oe-mux14dder}
 
 Derivation: \emph{*mōdēr} \textgreater{} \emph{mōder} (regular).
 
@@ -3575,7 +3607,8 @@ dictionaries usually print \emph{mōdor} / \emph{modor}, and the oblique
 evidence survives in \emph{mēder} (\citeproc{ref-ClarkHall1960}{Clark
 Hall 1960}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{net --- OE nett}\label{net-oe-nett}
+\subsubsection{\texorpdfstring{net --- OE
+\emph{nett}}{net --- OE nett}}\label{net-oe-nett}
 
 Derivation: \emph{*nátją} \textgreater{} \emph{nett} (regular).
 
@@ -3657,7 +3690,8 @@ the lexical target supported by the dictionary evidence is \emph{nett}
 (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-Orel2003}{Orel 2003}).
 
-\subsubsection{nightmare --- OE mare}\label{nightmare-oe-mare}
+\subsubsection{\texorpdfstring{nightmare --- OE
+\emph{mare}}{nightmare --- OE mare}}\label{nightmare-oe-mare}
 
 Derivation: \emph{*márōn} \textgreater{} \emph{mare} (regular).
 
@@ -3741,7 +3775,8 @@ oblique \emph{maran} and variant \emph{mere} / \emph{mera}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 213}).
 
-\subsubsection{coat --- OE rocc}\label{coat-oe-rocc}
+\subsubsection{\texorpdfstring{coat --- OE
+\emph{rocc}}{coat --- OE rocc}}\label{coat-oe-rocc}
 
 Derivation: \emph{*rúkkaz} \textgreater{} \emph{rocc} (regular).
 
@@ -3819,7 +3854,8 @@ This entry concerns the garment noun only. The stone word seen in
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898}).
 
-\subsubsection{sheep --- OE sċēap}\label{sheep-oe-sux10bux113ap}
+\subsubsection{\texorpdfstring{sheep --- OE
+\emph{sċēap}}{sheep --- OE sċēap}}\label{sheep-oe-sux10bux113ap}
 
 Derivation: \emph{*skḗpą} \textgreater{} \emph{sċēap} (regular).
 
@@ -3901,7 +3937,8 @@ The form represented here is the West Saxon headword
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
 \citeproc{ref-Campbell1959}{Campbell 1959}).
 
-\subsubsection{shilling --- OE sċilling}\label{shilling-oe-sux10billing}
+\subsubsection{\texorpdfstring{shilling --- OE
+\emph{sċilling}}{shilling --- OE sċilling}}\label{shilling-oe-sux10billing}
 
 Derivation: \emph{*skíllingaz} \textgreater{} \emph{sċilling} (regular).
 
@@ -3965,21 +4002,20 @@ that inherited \emph{*-ing-} derivative.
 
 \paragraph{Old English evidence}\label{old-english-evidence-44}
 
-Clark Hall records \emph{scilling}, and Campbell cites \emph{scilling}
-among nouns whose derivational \emph{-ing} keeps \emph{i} in unstressed
-syllables (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
-\citeproc{ref-Campbell1959}{Campbell 1959}). The target represented here
-is the ordinary OE citation form, normalized as \emph{sċilling}.
+Clark Hall records \emph{scilling}, and Campbell cites it among nouns
+with unstressed \emph{i} in derivational \emph{-ing}
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-Campbell1959}{Campbell 1959}). The target is the ordinary
+OE citation form, normalized as \emph{sċilling}.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-44}
 
 From \emph{*skíllingaz}, loss of final \emph{-az} yields
 \emph{*skílling}. Old English palatalization of initial \emph{sk} before
-front vocalism then gives \emph{sċilling}. The note matters because
-derivational \emph{-ing-} keeps \emph{i}, so the regular outcome is
-\emph{sċilling}, not \emph{*sċilleng}
-(\citeproc{ref-Campbell1959}{Campbell 1959};
+front vocalism then gives \emph{sċilling}. The \emph{i} of derivational
+\emph{-ing-} remains, so the regular outcome is \emph{sċilling}, not
+\emph{*sċilleng} (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-Hogg1992}{Hogg 1992}).
 
 \paragraph{Form note}\label{form-note-15}
@@ -3990,7 +4026,8 @@ background of the cognate set. The form followed here,
 \emph{*skíllingaz}, is the specific form used for the derivation
 represented here (\citeproc{ref-Kroonen2013}{Kroonen 2013}).
 
-\subsubsection{show --- OE sċēawian}\label{show-oe-sux10bux113awian}
+\subsubsection{\texorpdfstring{show --- OE
+\emph{sċēawian}}{show --- OE sċēawian}}\label{show-oe-sux10bux113awian}
 
 Derivation: \emph{*skáwōjaną} \textgreater{} \emph{sċēawian} (regular).
 
@@ -4051,25 +4088,25 @@ Orel and Kroonen cite a Class II verb of the type {\emph{*skawōjan-}},
 with OE {\emph{scēawian}} among the reflexes
 (\citeproc{ref-Orel2003}{Orel 2003}; \citeproc{ref-Kroonen2013}{Kroonen
 2013, 482}). Brunner likewise records the Old English family as
-{\emph{scēawian}}, {\emph{scāwian}}, which places this entry in the
-ordinary show-verb set rather than in a special finite-cell workaround
+{\emph{scēawian}}, {\emph{scāwian}}, confirming that it belongs to the
+ordinary show-verb set rather than to a special finite-cell formation
 (\citeproc{ref-SieversBrunner1965}{Brunner 1965}).
 
 \paragraph{Old English evidence}\label{old-english-evidence-45}
 
 Bright lists {\emph{scēawian}} (W. II.) and also the related form
 {\emph{scēawa}} (\citeproc{ref-BrightCassidyRingler1971}{Bright 1971}).
-The source tradition therefore uses {\emph{scēawian}}, while the target
-represented here is the normalized project spelling {\emph{sċēawian}}.
+The sources therefore use {\emph{scēawian}}, while {\emph{sċēawian}}
+supplies a normalized spelling.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-45}
 
 From {\emph{*skáwōjaną}}, Old English \emph{aw} before a following vowel
-yields \emph{ēaw}, and the Class II suffix keeps \emph{*ō} between
-\emph{*w} and \emph{*j}. The development therefore runs regularly to
-{\emph{sċēawian}}, without the direct \emph{*aw+j} problem seen in other
-verb types (\citeproc{ref-Campbell1959}{Campbell 1959};
+yields \emph{ēaw}, and \emph{*ō} survives between \emph{*w} and
+\emph{*j} in the Class II suffix. The development therefore runs
+regularly to {\emph{sċēawian}}, without the direct \emph{*aw+j} problem
+seen in other verb types (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-Orel2003}{Orel 2003}).
 
 \paragraph{Form note}\label{form-note-16}
@@ -4080,7 +4117,8 @@ not a difference of lexeme or paradigm cell
 (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-Hogg1992}{Hogg 1992}).
 
-\subsubsection{sleep --- OE slǣpan}\label{sleep-oe-slux1e3pan}
+\subsubsection{\texorpdfstring{sleep --- OE
+\emph{slǣpan}}{sleep --- OE slǣpan}}\label{sleep-oe-slux1e3pan}
 
 Derivation: \emph{*slḗpaną} \textgreater{} \emph{slǣpan} (regular).
 
@@ -4168,7 +4206,8 @@ to noun or lookup background and \emph{slēp}/\emph{slēap} are preterite
 forms (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 435}).
 
-\subsubsection{smear --- OE smierwan}\label{smear-oe-smierwan}
+\subsubsection{\texorpdfstring{smear --- OE
+\emph{smierwan}}{smear --- OE smierwan}}\label{smear-oe-smierwan}
 
 Derivation: \emph{*smérwijaną} \textgreater{} \emph{smierwan} (regular).
 
@@ -4263,7 +4302,8 @@ Mercian, and related later class-II forms such as \emph{smirian} or
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{span --- OE spannan}\label{span-oe-spannan}
+\subsubsection{\texorpdfstring{span --- OE
+\emph{spannan}}{span --- OE spannan}}\label{span-oe-spannan}
 
 Derivation: \emph{*spánnaną} \textgreater{} \emph{spannan} (regular).
 
@@ -4321,11 +4361,11 @@ infinitive-style form used here for that same verbal lexeme.
 
 \paragraph{Old English evidence}\label{old-english-evidence-48}
 
-Clark Hall keeps noun \emph{spann} and verb \emph{spannan} separate, and
-Brunner likewise records \emph{sponnan, spannan stv.}
+Clark Hall lists noun \emph{spann} and verb \emph{spannan} as separate
+headwords, and Brunner likewise records \emph{sponnan, spannan stv.}
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
-\citeproc{ref-SieversBrunner1965}{Brunner 1965}). This entry treats the
-strong-verb infinitive, not the separate noun.
+\citeproc{ref-SieversBrunner1965}{Brunner 1965}). The target is the
+strong-verb infinitive, not the noun.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-48}
@@ -4336,12 +4376,12 @@ needed: the current derivation already lands on the infinitive directly.
 
 \paragraph{Form note}\label{form-note-18}
 
-The note matters because English \emph{span} can also reach noun
-\emph{spann} in local lookup material. The entry represented here is the
-verb \emph{spannan}, with the noun treated elsewhere
-(\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
+English \emph{span} can also reach the noun \emph{spann} in local lookup
+material. The form represented here is the verb \emph{spannan}, with the
+noun treated elsewhere (\citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{spar --- OE spearra}\label{spar-oe-spearra}
+\subsubsection{\texorpdfstring{spar --- OE
+\emph{spearra}}{spar --- OE spearra}}\label{spar-oe-spearra}
 
 Derivation: \emph{*spárrô} \textgreater{} \emph{spearra} (regular).
 
@@ -4401,9 +4441,9 @@ lexeme.
 
 \paragraph{Old English evidence}\label{old-english-evidence-49}
 
-The noun represented here is \emph{spearra}. The important lexical point
-is negative: English gloss overlap also reaches the unrelated verb
-\emph{sperran} `to bar', but that verb does not belong to this row.
+The noun is \emph{spearra}. English gloss overlap also reaches the
+unrelated verb \emph{sperran} `to bar', which does not belong to this
+row.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-49}
@@ -4421,7 +4461,8 @@ separate from verb \emph{sperran}, even though the Modern English
 glosses overlap (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-Orel2003}{Orel 2003}).
 
-\subsubsection{still --- OE stillan}\label{still-oe-stillan}
+\subsubsection{\texorpdfstring{still --- OE
+\emph{stillan}}{still --- OE stillan}}\label{still-oe-stillan}
 
 Derivation: \emph{*stéllijaną} \textgreater{} \emph{stillan} (regular).
 
@@ -4503,7 +4544,8 @@ is the verb represented here, while \emph{stille} belongs to the related
 adjectival branch of the family (\citeproc{ref-ClarkHall1960}{Clark Hall
 1960}; \citeproc{ref-KlugeSeebold2011}{Kluge 2011}).
 
-\subsubsection{summer --- OE sumer}\label{summer-oe-sumer}
+\subsubsection{\texorpdfstring{summer --- OE
+\emph{sumer}}{summer --- OE sumer}}\label{summer-oe-sumer}
 
 Derivation: \emph{*súmaraz} \textgreater{} \emph{sumer} (regular).
 
@@ -4591,7 +4633,8 @@ headword spelling and \emph{sumeres}/\emph{sumere} show that the
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 \citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 440}).
 
-\subsubsection{sunder --- OE sundrian}\label{sunder-oe-sundrian}
+\subsubsection{\texorpdfstring{sunder --- OE
+\emph{sundrian}}{sunder --- OE sundrian}}\label{sunder-oe-sundrian}
 
 Derivation: \emph{*súndrōjaną} \textgreater{} \emph{sundrian} (regular).
 
@@ -4656,12 +4699,11 @@ adverb (\citeproc{ref-KlugeSeebold2011}{Kluge 2011}).
 
 \paragraph{Old English evidence}\label{old-english-evidence-52}
 
-Clark Hall and Bosworth-Toller keep \emph{sundrian} and \emph{syndrian}
-separate from adverbial \emph{sundor}, and both preserve the prefixed
+Clark Hall and Bosworth-Toller list \emph{sundrian} and \emph{syndrian}
+separately from adverbial \emph{sundor}; both also record the prefixed
 verbal family \emph{ā-sundrian} (\citeproc{ref-ClarkHall1960}{Clark Hall
 1960, 296}; \citeproc{ref-BosworthToller1898}{Bosworth and Toller
-1898}). The target represented here is therefore the weak verb
-\emph{sundrian}.
+1898}). The target is therefore the weak verb \emph{sundrian}.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-52}
@@ -4680,7 +4722,8 @@ verb. The verb treated here is the Class II verb \emph{sundrian}
 (\citeproc{ref-Orel2003}{Orel 2003}; \citeproc{ref-ClarkHall1960}{Clark
 Hall 1960, 296}).
 
-\subsubsection{swallow --- OE swealwe}\label{swallow-oe-swealwe}
+\subsubsection{\texorpdfstring{swallow --- OE
+\emph{swealwe}}{swallow --- OE swealwe}}\label{swallow-oe-swealwe}
 
 Derivation: \emph{*swálwōn} \textgreater{} \emph{swealwe} (regular).
 
@@ -4762,15 +4805,8 @@ has no inherited \emph{*g}: that consonant belongs to the separate verb
 \emph{swelgan} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
 200}; \citeproc{ref-Kroonen2013}{Kroonen 2013, 535}).
 
-\paragraph{Form note}\label{form-note-23}
-
-The final prose keeps the citation form \emph{swealwe} separate from two
-different kinds of background material: the unrelated verb
-\emph{swelgan}, and later or oblique spellings such as \emph{swaluwe} or
-\emph{swalewan} (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
-\citeproc{ref-Campbell1959}{Campbell 1959}).
-
-\subsubsection{swine --- OE swīn}\label{swine-oe-swux12bn}
+\subsubsection{\texorpdfstring{swine --- OE
+\emph{swīn}}{swine --- OE swīn}}\label{swine-oe-swux12bn}
 
 Derivation: citation reconstruction \emph{*swī́ną}; form followed here
 \emph{*swī́ną} \textgreater{} \emph{swīn} (regular).
@@ -4846,7 +4882,8 @@ The derivational input writes stressed long \emph{ī} as \emph{*ī́}, so
 comparative \emph{*swī́ną} and derivational \emph{*swī́ną} represent the
 same lexical form.
 
-\subsubsection{think --- OE þenċan}\label{think-oe-uxfeenux10ban}
+\subsubsection{\texorpdfstring{think --- OE
+\emph{þenċan}}{think --- OE þenċan}}\label{think-oe-uxfeenux10ban}
 
 Derivation: \emph{*θánkijaną} \textgreater{} \emph{þenċan} (regular).
 
@@ -4927,7 +4964,8 @@ class-III relic \emph{hycgan} is a different lexeme
 (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-Hogg1992}{Hogg 1992}).
 
-\subsubsection{thorn --- OE þorn}\label{thorn-oe-uxfeorn}
+\subsubsection{\texorpdfstring{thorn --- OE
+\emph{þorn}}{thorn --- OE þorn}}\label{thorn-oe-uxfeorn}
 
 Derivation: \emph{*θúrnaz} \textgreater{} \emph{þorn} (regular).
 
@@ -5004,7 +5042,8 @@ regular Old English continuation of the Proto-Germanic thorn-family.
 The comparative sources preserve more than one stem formation, but the
 Old English target itself is simply the citation form \emph{þorn}.
 
-\subsubsection{tide --- OE tīd}\label{tide-oe-tux12bd}
+\subsubsection{\texorpdfstring{tide --- OE
+\emph{tīd}}{tide --- OE tīd}}\label{tide-oe-tux12bd}
 
 Derivation: citation reconstruction \emph{*tī́diz}; form followed here
 \emph{*tī́diz} \textgreater{} \emph{tīd} (regular).
@@ -5077,10 +5116,11 @@ feminine i-stem.
 
 \paragraph{Lexical note}\label{lexical-note-1}
 
-The note matters only because English \emph{tide} can pull in the
-separate weak verb \emph{tīdan}; the noun targeted here is \emph{tīd}.
+English \emph{tide} can also lead to the separate weak verb
+\emph{tīdan}; the noun is \emph{tīd}.
 
-\subsubsection{token --- OE tācn}\label{token-oe-tux101cn}
+\subsubsection{\texorpdfstring{token --- OE
+\emph{tācn}}{token --- OE tācn}}\label{token-oe-tux101cn}
 
 Derivation: \emph{*táikną} \textgreater{} \emph{tācn} (regular).
 
@@ -5151,14 +5191,15 @@ Monophthongization of \emph{ai} yields \emph{ā}, and loss of the final
 nasal vowel leaves \emph{tācn}. The unbroken form is therefore a regular
 Old English outcome.
 
-\paragraph{Form note}\label{form-note-24}
+\paragraph{Form note}\label{form-note-23}
 
 \emph{tācn} is the attested unbroken citation form selected here. Later
 West Saxon prose often prefers \emph{tācen}, but that does not displace
 the older unbroken form (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-SieversBrunner1965}{Brunner 1965}).
 
-\subsubsection{town --- OE tūn}\label{town-oe-tux16bn}
+\subsubsection{\texorpdfstring{town --- OE
+\emph{tūn}}{town --- OE tūn}}\label{town-oe-tux16bn}
 
 Derivation: \emph{*tūną} \textgreater{} \emph{tūn} (regular).
 
@@ -5230,7 +5271,8 @@ vowel yields \emph{tūn} regularly
 The comparative headwords vary, but the Old English target here is the
 direct citation form \emph{tūn}, not an oblique \emph{*tūnăn}.
 
-\subsubsection{wade --- OE wadan}\label{wade-oe-wadan}
+\subsubsection{\texorpdfstring{wade --- OE
+\emph{wadan}}{wade --- OE wadan}}\label{wade-oe-wadan}
 
 Derivation: \emph{*wádaną} \textgreater{} \emph{wadan} (regular).
 
@@ -5307,11 +5349,11 @@ then returns \emph{a}, and later reduction yields \emph{wadan}
 
 \paragraph{Development note}\label{development-note-2}
 
-The note matters because this infinitive belongs to the A-restoration
-class. The citation form is therefore \emph{wadan}, not a fronted
-\emph{wæden}-type output.
+The infinitive belongs to the A-restoration class. The citation form is
+therefore \emph{wadan}, not a fronted \emph{wæden}-type output.
 
-\subsubsection{warp --- OE weorpan}\label{warp-oe-weorpan}
+\subsubsection{\texorpdfstring{warp --- OE
+\emph{weorpan}}{warp --- OE weorpan}}\label{warp-oe-weorpan}
 
 Derivation: \emph{*wérpaną} \textgreater{} \emph{weorpan} (regular).
 
@@ -5385,11 +5427,11 @@ develops regularly to \emph{weorpan}
 
 \paragraph{Lexical note}\label{lexical-note-2}
 
-The note matters because English \emph{warp} also points to related
-\emph{wearp} material. Here the target is specifically the infinitive
-\emph{weorpan}.
+English \emph{warp} also points to related \emph{wearp} material. The
+target is the infinitive \emph{weorpan}.
 
-\subsubsection{wash --- OE wascan}\label{wash-oe-wascan}
+\subsubsection{\texorpdfstring{wash --- OE
+\emph{wascan}}{wash --- OE wascan}}\label{wash-oe-wascan}
 
 Derivation: \emph{*wáskaną} \textgreater{} \emph{wascan} (regular).
 
@@ -5463,13 +5505,14 @@ remains unpalatalized before the following back vowel, yielding
 \emph{wascan} (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 142}).
 
-\paragraph{Form note}\label{form-note-25}
+\paragraph{Form note}\label{form-note-24}
 
 The conservative citation form \emph{wascan} is selected here. Spellings
 such as \emph{wæscan} or \emph{wasċan} belong to variant or normalized
 background rather than to the target of this entry.
 
-\subsubsection{wax --- OE weaxan}\label{wax-oe-weaxan}
+\subsubsection{\texorpdfstring{wax --- OE
+\emph{weaxan}}{wax --- OE weaxan}}\label{wax-oe-weaxan}
 
 Derivation: \emph{*wáxsaną} \textgreater{} \emph{weaxan} (regular).
 
@@ -5552,7 +5595,8 @@ The target here is the infinitive \emph{weaxan}. Noun \emph{weax} and
 preterite \emph{wax}/\emph{wēox} belong to different lexical or paradigm
 slots.
 
-\subsubsection{way --- OE weġ}\label{way-oe-weux121}
+\subsubsection{\texorpdfstring{way --- OE
+\emph{weġ}}{way --- OE weġ}}\label{way-oe-weux121}
 
 Derivation: \emph{*wégaz} \textgreater{} \emph{weġ} (regular).
 
@@ -5632,13 +5676,14 @@ same outcome (\citeproc{ref-Campbell1959}{Campbell 1959};
 \citeproc{ref-Hogg1992}{Hogg 1992}; \citeproc{ref-RingeTaylor2014}{Ringe
 and Taylor 2014, 341}).
 
-\paragraph{Form note}\label{form-note-26}
+\paragraph{Form note}\label{form-note-25}
 
 Normalized \emph{weġ} and dictionary \emph{weg} represent the same noun.
 \emph{wē} is not supported in the checked Old English evidence for
 `way'.
 
-\subsubsection{weapon --- OE wǣpn}\label{weapon-oe-wux1e3pn}
+\subsubsection{\texorpdfstring{weapon --- OE
+\emph{wǣpn}}{weapon --- OE wǣpn}}\label{weapon-oe-wux1e3pn}
 
 Derivation: \emph{*wḗpną} \textgreater{} \emph{wǣpn} (regular).
 
@@ -5713,7 +5758,7 @@ Northwest Germanic lowering gives \emph{wǣpn}, and loss of the final
 nasal vowel leaves the unbroken cluster word-finally. The Old English
 form here is the attested unbroken form \emph{wǣpn}.
 
-\paragraph{Form note}\label{form-note-27}
+\paragraph{Form note}\label{form-note-26}
 
 The ordinary late West Saxon simplex headword is \emph{wǣpen}, but
 Campbell's noun-class discussion also preserves unbroken \emph{wépn}
@@ -5724,7 +5769,8 @@ regular unbroken oblique comparator
 (\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 29};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 355}).
 
-\subsubsection{will --- OE willa}\label{will-oe-willa}
+\subsubsection{\texorpdfstring{will --- OE
+\emph{willa}}{will --- OE willa}}\label{will-oe-willa}
 
 Derivation: \emph{*wéljô} \textgreater{} \emph{willa} (regular).
 
@@ -5804,7 +5850,8 @@ The target here is the noun \emph{willa} `will, wish'. Related verb
 for the noun row (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 368}).
 
-\subsubsection{wind --- OE windan}\label{wind-oe-windan}
+\subsubsection{\texorpdfstring{wind --- OE
+\emph{windan}}{wind --- OE windan}}\label{wind-oe-windan}
 
 Derivation: \emph{*wíndaną} \textgreater{} \emph{windan} (regular).
 
@@ -5857,9 +5904,10 @@ evidence}\label{reconstruction-and-comparative-evidence-67}
 
 Kroonen distinguishes noun \emph{*winda-} from verb \emph{*windan-}, and
 the present row belongs to the verb (\citeproc{ref-Kroonen2013}{Kroonen
-2013}). Later handbook discussion keeps the dental original from PIE
-\emph{*wendh-}, not a Verner alternant (\citeproc{ref-Fulk2018}{Fulk
-2018}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+2013}). Fulk and Ringe and Taylor derive the dental directly from PIE
+\emph{*wendh-}, not from a Verner alternant
+(\citeproc{ref-Fulk2018}{Fulk 2018};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
 \paragraph{Old English evidence}\label{old-english-evidence-67}
 
@@ -5877,12 +5925,12 @@ reduction. The form is therefore a straightforward strong-verb outcome.
 
 \paragraph{Lexical note}\label{lexical-note-5}
 
-The note matters because English \emph{wind} also names the noun. This
-row targets the class-III verb, not the noun
-(\citeproc{ref-Kroonen2013}{Kroonen 2013};
+English \emph{wind} also names the noun. This row represents the
+class-III verb, not the noun (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960}).
 
-\subsubsection{wold --- OE weald}\label{wold-oe-weald}
+\subsubsection{\texorpdfstring{wold --- OE
+\emph{weald}}{wold --- OE weald}}\label{wold-oe-weald}
 
 Derivation: \emph{*wálθuz} \textgreater{} \emph{weald} (regular).
 
@@ -5959,12 +6007,13 @@ breaking outcome.
 
 \paragraph{Dialect note}\label{dialect-note-6}
 
-The note matters because \emph{wald} survives as an Anglian-type variant
-in the same family. The Old English form here is normalized
-\emph{weald}, not the variant form (\citeproc{ref-ClarkHall1960}{Clark
-Hall 1960}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
+\emph{wald} survives as an Anglian-type variant in the same family. The
+Old English form here is normalized \emph{weald}, not the variant form
+(\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014}).
 
-\subsubsection{yarn --- OE ġearn}\label{yarn-oe-ux121earn}
+\subsubsection{\texorpdfstring{yarn --- OE
+\emph{ġearn}}{yarn --- OE ġearn}}\label{yarn-oe-ux121earn}
 
 Derivation: \emph{*gárną} \textgreater{} \emph{ġearn} (regular).
 
@@ -6039,7 +6088,7 @@ From \emph{*gárną}, brightening and breaking before \emph{rn} yield
 front-vocalic sequence gives normalized \emph{ġearn}. The derivation is
 regular.
 
-\paragraph{Form note}\label{form-note-28}
+\paragraph{Form note}\label{form-note-27}
 
 Dictionary \emph{gearn} and normalized \emph{ġearn} refer to the same
 noun. The comparative stem \emph{*garna-} and oblique \emph{*garnăn} do
@@ -6050,12 +6099,12 @@ not replace the derivational input \emph{*gárną}.
 \subsection{Part II. Attested variants and comparison
 forms}\label{part-ii.-attested-variants-and-comparison-forms}
 
-These entries treat the attested Old English form as one member of an
-attested or historically documented variant set. The lexical comparison
-must therefore account for variation rather than for a single
-unproblematic citation form.
+Here the Old English comparator belongs to a documented set of variants.
+The variation is part of the evidence and not an inconvenience to be
+normalized away.
 
-\subsubsection{cud --- OE cwedu}\label{cud-oe-cwedu}
+\subsubsection{\texorpdfstring{cud --- OE
+\emph{cwedu}}{cud --- OE cwedu}}\label{cud-oe-cwedu}
 
 Derivation: citation reconstruction \emph{*kwíθuz}; form followed here
 \emph{*kwéðuz} \textgreater{} \emph{cwedu} (attested variant).
@@ -6165,7 +6214,8 @@ variant set \\
 \end{longtable}
 }
 
-\subsubsection{ten --- OE tēon}\label{ten-oe-tux113on}
+\subsubsection{\texorpdfstring{ten --- OE
+\emph{tēon}}{ten --- OE tēon}}\label{ten-oe-tux113on}
 
 Derivation: \emph{*téxun} \textgreater{} \emph{tēon} (attested variant).
 
@@ -6292,7 +6342,8 @@ form \\
 \end{longtable}
 }
 
-\subsubsection{three --- OE þrīe}\label{three-oe-uxferux12be}
+\subsubsection{\texorpdfstring{three --- OE
+\emph{þrīe}}{three --- OE þrīe}}\label{three-oe-uxferux12be}
 
 Derivation: \emph{*θréjez} \textgreater{} \emph{þrīe} (attested
 variant).
@@ -6352,10 +6403,10 @@ rather than under one Old English-ready paradigm cell
 {\emph{*θréjez}} is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
-That distinction matters because the Old English numeral does not have
-one uniform citation form across the paradigm. The masculine singular
-line must be kept apart from feminine-neuter \emph{þrēo} and from later
-reduced spellings of the masculine form.
+The Old English numeral has no uniform citation form across the
+paradigm. The masculine singular line must be kept apart from
+feminine-neuter \emph{þrēo} and from later reduced spellings of the
+masculine form.
 
 \paragraph{Old English evidence}\label{old-english-evidence-72}
 
@@ -6415,7 +6466,8 @@ confirm the wider paradigm, not the cell compared here \\
 \end{longtable}
 }
 
-\subsubsection{wasp --- OE wæfs}\label{wasp-oe-wuxe6fs}
+\subsubsection{\texorpdfstring{wasp --- OE
+\emph{wæfs}}{wasp --- OE wæfs}}\label{wasp-oe-wuxe6fs}
 
 Derivation: \emph{*wábsaz} \textgreater{} \emph{wæfs} (attested
 variant).
@@ -6546,13 +6598,13 @@ genuine OE doublet, but not the form compared here \\
 \subsection{Part III. Early analogy and pre-Old-English input
 selection}\label{part-iii.-early-analogy-and-pre-old-english-input-selection}
 
-These entries involve a distinction between the lexeme-level citation
-reconstruction and the earlier form carried through the Old English
-derivation. The issue is upstream of Old English: the form compared here
-is the pre-Old-English shape that yields the attested target under the
-sound history followed here.
+Here an analogical change already separates the transducer input from
+the lexeme's citation reconstruction before the specifically Old English
+changes apply. Each entry must therefore justify the remodeled input
+independently of the successful output.
 
-\subsubsection{bottom --- OE botm}\label{bottom-oe-botm}
+\subsubsection{\texorpdfstring{bottom --- OE
+\emph{botm}}{bottom --- OE botm}}\label{bottom-oe-botm}
 
 Derivation: citation reconstruction \emph{*búdmaz}; form followed here
 \emph{*búttmaz} \textgreater{} \emph{botm} (early analogy).
@@ -6636,7 +6688,8 @@ The analogical step is therefore early: it belongs to pre-Old-English
 stem formation rather than to a later choice among Old English paradigm
 cells.
 
-\subsubsection{brand --- OE brandes}\label{brand-oe-brandes}
+\subsubsection{\texorpdfstring{brand --- OE
+\emph{brandes}}{brand --- OE brandes}}\label{brand-oe-brandes}
 
 Derivation: citation reconstruction \emph{*brándaz}; form followed here
 \emph{*brándas} \textgreater{} \emph{brandes} (early analogy).
@@ -6693,10 +6746,9 @@ by Old English {\emph{brand}} and its continental cognates
 {\emph{*brándas}} is not a different lexeme but the genitive singular of
 that same a-stem noun.
 
-What matters here is therefore not a stem-class disagreement but the
-difference between the citation form and a specific inherited
-inflectional cell. The derivational input preserves the same root and
-declension as the headword while making the oblique ending explicit.
+Both forms belong to the same root and stem class but occupy different
+inherited inflectional cells. The derivational input is the oblique
+cell.
 
 \paragraph{Old English evidence}\label{old-english-evidence-75}
 
@@ -6766,7 +6818,8 @@ entry is that {\emph{brandes}} belongs to the same regular a-stem
 paradigm as {\emph{brand}}, even though the citation lemma remains the
 nominative singular.
 
-\subsubsection{breast --- OE brēost}\label{breast-oe-brux113ost}
+\subsubsection{\texorpdfstring{breast --- OE
+\emph{brēost}}{breast --- OE brēost}}\label{breast-oe-brux113ost}
 
 Derivation: citation reconstruction \emph{*brústz}; form followed here
 \emph{*bréustą} \textgreater{} \emph{brēost} (early analogy).
@@ -6898,7 +6951,8 @@ The relevant point is the formation split. {\emph{brēost}} is the
 regular Old English outcome of the thematic {\emph{*breusta-}} branch,
 not of the root noun {\emph{*brust-}}.
 
-\subsubsection{craft --- OE cræft}\label{craft-oe-cruxe6ft}
+\subsubsection{\texorpdfstring{craft --- OE
+\emph{cræft}}{craft --- OE cræft}}\label{craft-oe-cruxe6ft}
 
 Derivation: citation reconstruction \emph{*kráftiz}; form followed here
 \emph{*kráftaz} \textgreater{} \emph{cræft} (early analogy).
@@ -6995,7 +7049,8 @@ Candidate input & OE output & Result \\
 \end{longtable}
 }
 
-\subsubsection{dill --- OE dile}\label{dill-oe-dile}
+\subsubsection{\texorpdfstring{dill --- OE
+\emph{dile}}{dill --- OE dile}}\label{dill-oe-dile}
 
 Derivation: citation reconstruction \emph{*déljaz}; form followed here
 \emph{*déliz} \textgreater{} \emph{dile} (early analogy).
@@ -7056,10 +7111,10 @@ Old Saxon {\emph{dilli}} and Old High German {\emph{tilli}} on the other
 whereas the citation label {\emph{*déljaz}} is a broader comparative
 headword.
 
-That stem-class distinction matters for the Old English consonant shape.
-A ja-stem with \emph{*-lj-} would be expected to produce gemination, but
-the Old English noun shows a single \emph{l}. Fulk's discussion of
-ja-stems transferred to the i-stems provides the relevant morphological
+The stem class determines the Old English consonant shape. A ja-stem
+with \emph{*-lj-} would be expected to produce gemination, but the Old
+English noun shows a single \emph{l}. Fulk's discussion of ja-stems
+transferred to the i-stems provides the relevant morphological
 background for the OE side (\citeproc{ref-Fulk2018}{Fulk 2018, 170}).
 
 \paragraph{Old English evidence}\label{old-english-evidence-78}
@@ -7082,10 +7137,10 @@ From {\emph{*déliz}}, regular loss of final \emph{z} and the later
 lowering of unstressed \emph{i} yield {\emph{dile}}. The stem itself
 remains ungeminated throughout that path.
 
-The important contrast is negative rather than phonological. If the word
-were forced through a ja-stem \emph{*-lj-} pathway, the expected result
-would show \emph{ll}. The attested Old English noun instead matches the
-i-stem development.
+The contrast is morphological rather than phonological. If the word were
+forced through a ja-stem \emph{*-lj-} pathway, the expected result would
+show \emph{ll}. The attested Old English noun instead matches the i-stem
+development.
 
 \paragraph{Formation comparison}\label{formation-comparison-1}
 
@@ -7129,7 +7184,8 @@ The single \emph{l} is the decisive diagnostic. It identifies
 {\emph{dile}} with the i-stem formation rather than with the continental
 ja-stem branch.
 
-\subsubsection{fast --- OE festan}\label{fast-oe-festan}
+\subsubsection{\texorpdfstring{fast --- OE
+\emph{festan}}{fast --- OE festan}}\label{fast-oe-festan}
 
 Derivation: citation reconstruction \emph{*fastēną}; form followed here
 \emph{*fástijaną} \textgreater{} \emph{festan} (early analogy).
@@ -7271,7 +7327,8 @@ The relevant point is the class split. {\emph{festan}} is the regular
 Old English outcome of the class-I formation, while the better-known
 \emph{æ}-forms belong to a later analogical layer.
 
-\subsubsection{flask --- OE flasce}\label{flask-oe-flasce}
+\subsubsection{\texorpdfstring{flask --- OE
+\emph{flasce}}{flask --- OE flasce}}\label{flask-oe-flasce}
 
 Derivation: citation reconstruction \emph{*flaskō}; form followed here
 \emph{*fláskōn} \textgreater{} \emph{flasce} (early analogy).
@@ -7346,9 +7403,8 @@ Saxon {\emph{flaxe}} is also noted as a secondary variant
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 121}).
 
 The relevant comparison form is therefore the weak feminine noun
-{\emph{flasce}}. The plural and oblique evidence matters because it
-helps explain why the vowel and ending are preserved as they are in the
-singular.
+{\emph{flasce}}. The plural and oblique evidence helps explain why the
+vowel and ending are preserved as they are in the singular.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-80}
@@ -7406,7 +7462,8 @@ attested OE noun \\
 The weak feminine suffix is the relevant point. It aligns the inherited
 form with attested {\emph{flasce}} and its supporting paradigm forms.
 
-\subsubsection{follow --- OE fylġan}\label{follow-oe-fylux121an}
+\subsubsection{\texorpdfstring{follow --- OE
+\emph{fylġan}}{follow --- OE fylġan}}\label{follow-oe-fylux121an}
 
 Derivation: citation reconstruction \emph{*fulgēną}; form followed here
 \emph{*fúlgijaną} \textgreater{} \emph{fylġan} (early analogy).
@@ -7462,23 +7519,22 @@ Old English form: \emph{fylġan}
 \paragraph{Reconstruction and comparative
 evidence}\label{reconstruction-and-comparative-evidence-81}
 
-Kroonen keeps the verb under \emph{*fulgen-} and gives Old English
+Kroonen reconstructs the verb as \emph{*fulgen-} and gives Old English
 {\emph{fylgan}}, {\emph{folgian}}, adding that Old Norse {\emph{fylgja}}
 and Old English {\emph{fylg(e)an}} continue a formation \emph{*fulgjan-}
 (\citeproc{ref-Kroonen2013}{Kroonen 2013, 159}). The comparative
 headword and the class-I formation are therefore related but not
 identical.
 
-Ringe and Taylor make the split explicit as PNWGmc \emph{*fulgija-}
-\textasciitilde{} \emph{*fulgai-} \textgreater{} OE \emph{fylgan}
-\textasciitilde{} \emph{folgian} and describe it as a dual formation
-that probably reflects an older alternation between j-present and
-e-stative (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
-293--94}). This is a stem-class choice, not a spelling choice. The
-derivational input {\emph{*fúlgijaną}} belongs to the class-I
-\emph{*fulgija-} / \emph{*fulgjan-} branch; the citation form
-{\emph{*fulgēną}} belongs to the parallel class-II history behind
-{\emph{folgian}}.
+Ringe and Taylor distinguish PNWGmc \emph{*fulgija-} \textasciitilde{}
+\emph{*fulgai-} \textgreater{} OE \emph{fylgan} \textasciitilde{}
+\emph{folgian} and describe it as a dual formation that probably
+reflects an older alternation between j-present and e-stative
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 293--94}). This
+is a stem-class choice, not a spelling choice. The derivational input
+{\emph{*fúlgijaną}} belongs to the class-I \emph{*fulgija-} /
+\emph{*fulgjan-} branch; the citation form {\emph{*fulgēną}} belongs to
+the parallel class-II history behind {\emph{folgian}}.
 
 \paragraph{Old English evidence}\label{old-english-evidence-81}
 
@@ -7560,7 +7616,8 @@ Old English outcome of the class-I \emph{*fulgija-} / \emph{*fulgjan-}
 formation, whereas {\emph{folgian}} belongs to the parallel class-II
 branch.
 
-\subsubsection{gall --- OE ġealla}\label{gall-oe-ux121ealla}
+\subsubsection{\texorpdfstring{gall --- OE
+\emph{ġealla}}{gall --- OE ġealla}}\label{gall-oe-ux121ealla}
 
 Derivation: citation reconstruction \emph{*gállą}; form followed here
 \emph{*gállô} \textgreater{} \emph{ġealla} (early analogy).
@@ -7619,10 +7676,10 @@ noun \emph{*gallōn-}, cited here as {\emph{*gállô}}
 (\citeproc{ref-Kroonen2013}{Kroonen 2013, 165}). The derivational input
 therefore differs from the broader comparative headword in stem class.
 
-That stem-class distinction matters directly for the Old English shape.
-The weak masculine pathway preserves the ending needed for
-\emph{ġealla}, whereas a simple strong-noun headword does not align as
-closely with the attested OE noun.
+The stem class determines the Old English shape. The weak masculine
+pathway preserves the ending needed for \emph{ġealla}, whereas a simple
+strong-noun headword does not align as closely with the attested OE
+noun.
 
 \paragraph{Old English evidence}\label{old-english-evidence-82}
 
@@ -7630,9 +7687,8 @@ Old English dictionaries record the noun as {\emph{gealla}}, and Bright
 also gives the dative {\emph{geallan}}, confirming a weak-noun paradigm
 (\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 297};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 145};
-\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 372}). The form
-used here, {\emph{ġealla}}, is a normalized spelling with macrons
-omitted and palatal ġ made explicit.
+\citeproc{ref-BrightCassidyRingler1971}{Bright 1971, 372}). The
+normalized spelling {\emph{ġealla}} uses ġ for the palatal consonant.
 
 Campbell also notes dialectal variation, contrasting West Saxon or
 Kentish {\emph{gealla}} with Anglian {\emph{galla}}
@@ -7697,7 +7753,8 @@ The weak-noun stem class is the relevant point. It gives a direct route
 to attested \emph{ġealla}, while the broader comparative label serves
 only as a family heading.
 
-\subsubsection{knight --- OE cniht}\label{knight-oe-cniht}
+\subsubsection{\texorpdfstring{knight --- OE
+\emph{cniht}}{knight --- OE cniht}}\label{knight-oe-cniht}
 
 Derivation: citation reconstruction \emph{*kníxtaz}; form followed here
 \emph{*knéxtaz} \textgreater{} \emph{cniht} (early analogy).
@@ -7830,7 +7887,8 @@ but not the Old English form here cell \\
 \end{longtable}
 }
 
-\subsubsection{lade --- OE hladan}\label{lade-oe-hladan}
+\subsubsection{\texorpdfstring{lade --- OE
+\emph{hladan}}{lade --- OE hladan}}\label{lade-oe-hladan}
 
 Derivation: citation reconstruction \emph{*laθōjaną}; form followed here
 \emph{*xláðaną} \textgreater{} \emph{hladan} (early analogy).
@@ -7953,12 +8011,13 @@ comparative weak-verb label & *laθōjaną & wider family background &
 broader family context & useful family label, but not the direct source
 of \emph{hladan} \\
 selected strong Verner-grade input & *xláðaną & regular output:
-\emph{hladan} & hladan & exact match between formation and attested OE
-infinitive \\
+\emph{hladan} & \emph{hladan} & exact match between formation and
+attested OE infinitive \\
 \end{longtable}
 }
 
-\subsubsection{lap --- OE lappa}\label{lap-oe-lappa}
+\subsubsection{\texorpdfstring{lap --- OE
+\emph{lappa}}{lap --- OE lappa}}\label{lap-oe-lappa}
 
 Derivation: citation reconstruction \emph{*lábbaz}; form followed here
 \emph{*láppô} \textgreater{} \emph{lappa} (early analogy).
@@ -8043,7 +8102,7 @@ Campbell explicitly lists \emph{lappa} among the forms with restored
 Sievers-Brunner records \emph{lappa} beside variant \emph{læppa} at the
 same Old English stage (\citeproc{ref-SieversBrunner1965}{Brunner 1965,
 sect. 10}). With the weak masculine input chosen, the selected
-\emph{lappa} outcome is therefore the regular project comparison.
+\emph{lappa} outcome is therefore the regular Old English comparison.
 
 \paragraph{Stem comparison}\label{stem-comparison-2}
 
@@ -8077,14 +8136,15 @@ competing voiced comparative label & *lábbaz & not the form followed for
 the OE weak-noun derivation & broader comparative background & useful as
 a competing label, but not the source-based choice used here \\
 selected weak masculine noun & *láppô & regular output: \emph{lappa} &
-lappa & exact match between formation and attested OE noun \\
+\emph{lappa} & exact match between formation and attested OE noun \\
 attested OE variant line & same noun family & \emph{læppa},
-\emph{leappan} & læppa / leappan & useful control forms within the same
-OE tradition \\
+\emph{leappan} & \emph{læppa} / \emph{leappan} & useful control forms
+within the same OE tradition \\
 \end{longtable}
 }
 
-\subsubsection{laugh --- OE hliehhan}\label{laugh-oe-hliehhan}
+\subsubsection{\texorpdfstring{laugh --- OE
+\emph{hliehhan}}{laugh --- OE hliehhan}}\label{laugh-oe-hliehhan}
 
 Derivation: citation reconstruction \emph{*lákaną}; form followed here
 \emph{*xláxjaną} \textgreater{} \emph{hliehhan} (early analogy).
@@ -8148,10 +8208,9 @@ the citation label \emph{*lákaną}, while the derivational input
 \emph{*xláxjaną} reflects the j-present line behind Old English
 \emph{hliehhan}.
 
-This branch choice matters because it brings with it the geminate
-fricative and the vowel development characteristic of the Old English
-verb. The comparative family label and the OE-facing input are therefore
-related but not identical.
+This branch supplies the geminate fricative and the vowel development
+characteristic of the Old English verb. The comparative family label and
+the OE-facing input are therefore related but not identical.
 
 \paragraph{Old English evidence}\label{old-english-evidence-86}
 
@@ -8163,8 +8222,8 @@ Hall 1960, 160--61}). Bright's glossary likewise gives \emph{hlihhan
 (hliehhan, hlyhhan)} (\citeproc{ref-BrightCassidyRingler1971}{Bright
 1971, 315}). The target of this entry is the West Saxon \emph{hliehhan}.
 
-The variant set matters as background, but the argument of the entry
-rests on the attested lemma \emph{hliehhan} itself.
+The variants belong to the same background, but the attested lemma
+\emph{hliehhan} supplies the evidence followed here.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-86}
@@ -8211,14 +8270,15 @@ wider non-j family & *lákaną & comparative background outside the
 selected OE line & wider family context & useful family label, but not
 the direct source of \emph{hliehhan} \\
 selected j-present branch & *xláxjaną & regular output: \emph{hliehhan}
-& hliehhan & exact match between branch and attested OE lemma \\
+& \emph{hliehhan} & exact match between branch and attested OE lemma \\
 attested OE variants & same OE verb line & \emph{hlæhhan},
-\emph{hlehhan} & hlæhhan / hlehhan & genuine variant evidence, but
-secondary to the form compared here \\
+\emph{hlehhan} & \emph{hlæhhan} / \emph{hlehhan} & genuine variant
+evidence, but secondary to the form compared here \\
 \end{longtable}
 }
 
-\subsubsection{loam --- OE lām}\label{loam-oe-lux101m}
+\subsubsection{\texorpdfstring{loam --- OE
+\emph{lām}}{loam --- OE lām}}\label{loam-oe-lux101m}
 
 Derivation: citation reconstruction \emph{*laimōn}; form followed here
 \emph{*láimą} \textgreater{} \emph{lām} (early analogy).
@@ -8332,12 +8392,13 @@ inherited comparative noun & *laimōn & comparative family background &
 wider family context & useful headword, but not the direct OE-facing
 input \\
 OE-facing stem class followed here & *láimą & regular output: \emph{lām}
-& lām & exact match between the form followed here and the attested OE
-noun \\
+& \emph{lām} & exact match between the form followed here and the
+attested OE noun \\
 \end{longtable}
 }
 
-\subsubsection{lung --- OE lungen}\label{lung-oe-lungen}
+\subsubsection{\texorpdfstring{lung --- OE
+\emph{lungen}}{lung --- OE lungen}}\label{lung-oe-lungen}
 
 Derivation: citation reconstruction \emph{*lungō}; form followed here
 \emph{*lúnganjō} \textgreater{} \emph{lungen} (early analogy).
@@ -8459,16 +8520,17 @@ base noun & *lungō & base-noun outcome without the OE derivative suffix
 & broader family context & useful headword, but not the direct source of
 \emph{lungen} \\
 derived OE-facing formation & *lúnganjō & regular output: \emph{lungen}
-& lungen & exact match between the derived formation and the attested OE
-noun \\
+& \emph{lungen} & exact match between the derived formation and the
+attested OE noun \\
 Kroonen's cited derivative & \emph{*lungunjō-} & comparative support for
-the same OE-facing formation & lungen and cognate set & supports the
-derived feminine formation, with notation differing from the normalized
-input form used here \\
+the same OE-facing formation & \emph{lungen} and cognate set & supports
+the derived feminine formation, with notation differing from the
+normalized input form used here \\
 \end{longtable}
 }
 
-\subsubsection{navel --- OE nafola}\label{navel-oe-nafola}
+\subsubsection{\texorpdfstring{navel --- OE
+\emph{nafola}}{navel --- OE nafola}}\label{navel-oe-nafola}
 
 Derivation: citation reconstruction \emph{*nablô}; form followed here
 \emph{*nábulô} \textgreater{} \emph{nafola} (early analogy).
@@ -8605,7 +8667,8 @@ later OE reduction stages & same lexical history & attested
 \end{longtable}
 }
 
-\subsubsection{neck --- OE hnecca}\label{neck-oe-hnecca}
+\subsubsection{\texorpdfstring{neck --- OE
+\emph{hnecca}}{neck --- OE hnecca}}\label{neck-oe-hnecca}
 
 Derivation: citation reconstruction \emph{*xnákkaz}; form followed here
 \emph{*xnékkô} \textgreater{} \emph{hnecca} (early analogy).
@@ -8663,8 +8726,8 @@ accusative plural \emph{*hnakkuns}, and he places Old English
 identifies \emph{ae. hnecca} as an ablaut partner of the a-grade
 \emph{Nacken} family (\citeproc{ref-KlugeSeebold2011}{Kluge 2011, 347}).
 
-A competing comparative label {\emph{*xnákkaz}} remains useful for the
-wider family, and Orel also gives an a-grade headword line
+A competing comparative label {\emph{*xnákkaz}} belongs to the wider
+family, and Orel also gives an a-grade headword line
 (\citeproc{ref-Orel2003}{Orel 2003, 218}). The derivational input
 {\emph{*xnékkô}}, however, is the form that matches the Old English
 branch.
@@ -8736,7 +8799,8 @@ shows the wider ablaut family, but not the chosen OE branch \\
 \end{longtable}
 }
 
-\subsubsection{needle --- OE nǣdl}\label{needle-oe-nux1e3dl}
+\subsubsection{\texorpdfstring{needle --- OE
+\emph{nǣdl}}{needle --- OE nǣdl}}\label{needle-oe-nux1e3dl}
 
 Derivation: citation reconstruction \emph{*nḗθlō}; form followed here
 \emph{*nḗðlō} \textgreater{} \emph{nǣdl} (early analogy).
@@ -8865,12 +8929,13 @@ voiced Verner alternant followed here & {\emph{*nḗðlō}} & regular
 output: {\emph{nǣdl}} & {\emph{nǣdl}} & exact match between the form
 followed here and the attested OE noun \\
 later hardening stage & *nḗdlō & intermediate pre-OE stage in the same
-derivation & nǣdl & genuine stage in the pathway, but not the
+derivation & \emph{nǣdl} & genuine stage in the pathway, but not the
 Proto-Germanic form followed here \\
 \end{longtable}
 }
 
-\subsubsection{nose --- OE nosu}\label{nose-oe-nosu}
+\subsubsection{\texorpdfstring{nose --- OE
+\emph{nosu}}{nose --- OE nosu}}\label{nose-oe-nosu}
 
 Derivation: citation reconstruction \emph{*nasō}; form followed here
 \emph{*núsō} \textgreater{} \emph{nosu} (early analogy).
@@ -8946,10 +9011,9 @@ likewise gives \emph{nosu f.}, with genitive-dative singular
 \emph{nosa}, and cross-refers \emph{nasu} to \emph{nosu}
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 810}).
 
-The selected OE target is therefore an attested \emph{nosu}, not a
-reconstructed placeholder. At the same time, the lexicographical record
-keeps \emph{nasu} visible as a parallel notation belonging to the
-full-grade side of the tradition.
+The selected OE target is therefore attested \emph{nosu}, not a
+reconstructed placeholder. The lexicographical record also gives
+\emph{nasu} for the full-grade side of the tradition.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-92}
@@ -8993,14 +9057,16 @@ Result
 \bottomrule\noalign{}
 \endlastfoot
 full-grade comparative line & *nasō & expected full-grade continuation
-\emph{nasu} & nasu & useful comparative background, but not the Old
-English-facing input \\
-remodeled zero-grade line & *núsō & regular output: \emph{nosu} & nosu &
-exact match between derivational input and attested OE noun \\
+\emph{nasu} & \emph{nasu} & useful comparative background, but not the
+Old English-facing input \\
+remodeled zero-grade line & *núsō & regular output: \emph{nosu} &
+\emph{nosu} & exact match between derivational input and attested OE
+noun \\
 \end{longtable}
 }
 
-\subsubsection{sap --- OE sæp}\label{sap-oe-suxe6p}
+\subsubsection{\texorpdfstring{sap --- OE
+\emph{sæp}}{sap --- OE sæp}}\label{sap-oe-suxe6p}
 
 Derivation: citation reconstruction \emph{*sapōn}; form followed here
 \emph{*sápą} \textgreater{} \emph{sæp} (early analogy).
@@ -9124,7 +9190,8 @@ noun \\
 \end{longtable}
 }
 
-\subsubsection{sea --- OE sǣ}\label{sea-oe-sux1e3}
+\subsubsection{\texorpdfstring{sea --- OE
+\emph{sǣ}}{sea --- OE sǣ}}\label{sea-oe-sux1e3}
 
 Derivation: citation reconstruction \emph{*sái}; form followed here
 \emph{*sáiwiz} \textgreater{} \emph{sǣ} (early analogy).
@@ -9253,7 +9320,8 @@ Old English target \\
 \end{longtable}
 }
 
-\subsubsection{sieve --- OE sife}\label{sieve-oe-sife}
+\subsubsection{\texorpdfstring{sieve --- OE
+\emph{sife}}{sieve --- OE sife}}\label{sieve-oe-sife}
 
 Derivation: citation reconstruction \emph{*síbaz}; form followed here
 \emph{*síbi} \textgreater{} \emph{sife} (early analogy).
@@ -9304,9 +9372,9 @@ Old English form: \emph{sife}
 \paragraph{Reconstruction and comparative
 evidence}\label{reconstruction-and-comparative-evidence-95}
 
-Kluge-Seebold gives wg. \emph{*sibi-} n.~\ldots{} ae. sife, and Campbell
-groups {\emph{sife}} with short neuter i-stems such as \emph{spere}
-(\citeproc{ref-KlugeSeebold2011}{Kluge 2011, 847};
+Kluge-Seebold gives wg. \emph{*sibi-} n.~\ldots{} ae. \emph{sife}, and
+Campbell groups {\emph{sife}} with short neuter i-stems such as
+\emph{spere} (\citeproc{ref-KlugeSeebold2011}{Kluge 2011, 847};
 \citeproc{ref-Campbell1959}{Campbell 1959, sect. 609}). The older
 morphological background is the s-stem \emph{*sib-iz}, but the
 derivational input is the normalized i-stem form {\emph{*síbi}}.
@@ -9378,7 +9446,8 @@ evidence \\
 \end{longtable}
 }
 
-\subsubsection{spare --- OE sparian}\label{spare-oe-sparian}
+\subsubsection{\texorpdfstring{spare --- OE
+\emph{sparian}}{spare --- OE sparian}}\label{spare-oe-sparian}
 
 Derivation: citation reconstruction \emph{*sparēną}; form followed here
 \emph{*spárōjaną} \textgreater{} \emph{sparian} (early analogy).
@@ -9520,7 +9589,8 @@ derivational input and Old English citation form \\
 \end{longtable}
 }
 
-\subsubsection{staff --- OE stæf}\label{staff-oe-stuxe6f}
+\subsubsection{\texorpdfstring{staff --- OE
+\emph{stæf}}{staff --- OE stæf}}\label{staff-oe-stuxe6f}
 
 Derivation: citation reconstruction \emph{*stábiz}; form followed here
 \emph{*stábaz} \textgreater{} \emph{stæf} (early analogy).
@@ -9578,9 +9648,9 @@ The comparative dictionaries do not give one uniform stem class. Kroonen
 reconstructs an a-stem \emph{*staba-}
 (\citeproc{ref-Kroonen2013}{Kroonen 2013, 471}). Orel writes
 {\emph{*stábiz}} \textasciitilde{} {\emph{*stábaz}}
-(\citeproc{ref-Orel2003}{Orel 2003, 368}). That disagreement matters
-because a direct i-stem input in \emph{*-iz} would predict i-mutation in
-Old English, whereas the attested noun keeps \emph{æ}.
+(\citeproc{ref-Orel2003}{Orel 2003, 368}). A direct i-stem input in
+\emph{*-iz} would predict i-mutation in Old English, whereas the
+attested noun keeps \emph{æ}.
 
 \paragraph{Old English evidence}\label{old-english-evidence-97}
 
@@ -9638,15 +9708,16 @@ after i-mutation & {\emph{stæf}} & wrong vowel for the attested
 singular \\
 mixed comparative notation & Orel \emph{*stabiz} \textasciitilde{}
 \emph{*stabaz}; Kluge \emph{*stabi-}/a- & source-level stem-class
-uncertainty & stæf & useful comparative background, but not a single
-OE-facing input \\
+uncertainty & \emph{stæf} & useful comparative background, but not a
+single OE-facing input \\
 selected a-stem input & {\emph{*stábaz}} & documented regular output:
 {\emph{stæf}} & {\emph{stæf}} & exact match between derivational input
 and Old English target \\
 \end{longtable}
 }
 
-\subsubsection{stem --- OE stefn}\label{stem-oe-stefn}
+\subsubsection{\texorpdfstring{stem --- OE
+\emph{stefn}}{stem --- OE stefn}}\label{stem-oe-stefn}
 
 Derivation: citation reconstruction \emph{*stámnaz}; form followed here
 \emph{*stébnō} \textgreater{} \emph{stefn} (early analogy).
@@ -9747,10 +9818,6 @@ this stage (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 330};
 
 \paragraph{Source comparison}\label{source-comparison}
 
-The comparison below sets the relevant forms side by side. It keeps
-apart the broader comparative label, the OE-facing transponent, and the
-later West Saxon variant history.
-
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
@@ -9782,7 +9849,8 @@ but not the selected comparator \\
 \end{longtable}
 }
 
-\subsubsection{swan --- OE swanes}\label{swan-oe-swanes}
+\subsubsection{\texorpdfstring{swan --- OE
+\emph{swanes}}{swan --- OE swanes}}\label{swan-oe-swanes}
 
 Derivation: citation reconstruction \emph{*swánaz}; form followed here
 \emph{*swánas} \textgreater{} \emph{swanes} (early analogy).
@@ -9851,8 +9919,7 @@ also gives the exact inflected form {\emph{swanes}}, citing the phrase
 1971, 441}).
 
 The target is therefore an attested Old English genitive singular, not a
-reconstruction. It is also not the ordinary citation lemma. The entry
-must keep those two facts distinct.
+reconstruction or the ordinary citation lemma.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-99}
@@ -9897,7 +9964,8 @@ genitive singular & {\emph{*swánas}} & regular output: {\emph{swanes}} &
 \end{longtable}
 }
 
-\subsubsection{thousand --- OE þūsend}\label{thousand-oe-uxfeux16bsend}
+\subsubsection{\texorpdfstring{thousand --- OE
+\emph{þūsend}}{thousand --- OE þūsend}}\label{thousand-oe-uxfeux16bsend}
 
 Derivation: citation reconstruction \emph{*θūs-undī}; form followed here
 \emph{*θūs-èndi} \textgreater{} \emph{þūsend} (early analogy).
@@ -9956,10 +10024,9 @@ cites Old English {\emph{þūsend}} among its continuations
 transponent with the second-member vowel already resolved to \emph{e}
 and the final high vowel already shortened for apocope.
 
-The important question is therefore chronological. Why does Old English
-show {\emph{þūsend}}, while related languages such as Old Saxon and Old
-High German keep \emph{u} in the second syllable?
-(\citeproc{ref-Kroonen2013}{Kroonen 2013, 554}).
+The chronology must explain why Old English shows {\emph{þūsend}} while
+related languages such as Old Saxon and Old High German keep \emph{u} in
+the second syllable? (\citeproc{ref-Kroonen2013}{Kroonen 2013, 554}).
 
 \paragraph{Old English evidence}\label{old-english-evidence-100}
 
@@ -10028,7 +10095,8 @@ selected OE-oriented transponent & {\emph{*θūs-èndi}} & regular output:
 \end{longtable}
 }
 
-\subsubsection{timber --- OE timber}\label{timber-oe-timber}
+\subsubsection{\texorpdfstring{timber --- OE
+\emph{timber}}{timber --- OE timber}}\label{timber-oe-timber}
 
 Derivation: citation reconstruction \emph{*tímrą}; form followed here
 \emph{*tímbrą} \textgreater{} \emph{timber} (early analogy).
@@ -10146,7 +10214,8 @@ English-facing input \\
 \end{longtable}
 }
 
-\subsubsection{wake --- OE wacan}\label{wake-oe-wacan}
+\subsubsection{\texorpdfstring{wake --- OE
+\emph{wacan}}{wake --- OE wacan}}\label{wake-oe-wacan}
 
 Derivation: citation reconstruction \emph{*wakēną}; form followed here
 \emph{*wákaną} \textgreater{} \emph{wacan} (early analogy).
@@ -10212,12 +10281,11 @@ watch' belong to related but distinct histories.
 
 \paragraph{Old English evidence}\label{old-english-evidence-102}
 
-Clark Hall keeps {\emph{wacan}} and {\emph{wacian}} as separate
+Clark Hall lists {\emph{wacan}} and {\emph{wacian}} as separate
 headwords (\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 338}).
-Bosworth-Toller adds an important caution under {\emph{wacan}}: the
-simplex infinitive itself does not occur, its place seeming to be taken
-by {\emph{wæcnan}} (\citeproc{ref-BosworthToller1898}{Bosworth and
-Toller 1898, 226}).
+Bosworth-Toller cautions under {\emph{wacan}}: the simplex infinitive
+itself does not occur, its place seeming to be taken by {\emph{wæcnan}}
+(\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 226}).
 
 The target {\emph{wacan}} is therefore best understood as a normalized
 strong headword for the verb family, not as a directly quoted simplex
@@ -10269,7 +10337,8 @@ though not a directly quoted simplex infinitive \\
 \end{longtable}
 }
 
-\subsubsection{water --- OE wæter}\label{water-oe-wuxe6ter}
+\subsubsection{\texorpdfstring{water --- OE
+\emph{wæter}}{water --- OE wæter}}\label{water-oe-wuxe6ter}
 
 Derivation: citation reconstruction \emph{*wátną}; form followed here
 \emph{*wátōr} \textgreater{} \emph{wæter} (early analogy).
@@ -10393,7 +10462,8 @@ inherited singular input & {\emph{*wátōr}} & regular output:
 \end{longtable}
 }
 
-\subsubsection{whale --- OE hwæl}\label{whale-oe-hwuxe6l}
+\subsubsection{\texorpdfstring{whale --- OE
+\emph{hwæl}}{whale --- OE hwæl}}\label{whale-oe-hwuxe6l}
 
 Derivation: citation reconstruction \emph{*wálaz}; form followed here
 \emph{*xwálaz} \textgreater{} \emph{hwæl} (early analogy).
@@ -10463,9 +10533,9 @@ Hall 1960, 170}; \citeproc{ref-BosworthToller1898}{Bosworth and Toller
 1898, 326}). The comparison form is normalized here as {\emph{hwæl}} for
 the singular citation form with Anglo- Frisian fronting.
 
-The plural {\emph{hwalas}} remains important control evidence. It shows
-the same lexeme with \emph{a} in an open syllable, beside singular
-{\emph{hwæl}} in the closed monosyllable.
+The plural {\emph{hwalas}} supplies control evidence. It shows the same
+lexeme with \emph{a} in an open syllable, beside singular {\emph{hwæl}}
+in the closed monosyllable.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-104}
@@ -10514,7 +10584,8 @@ singular {\emph{hwæl}} & confirms that the lexeme also preserves an
 \end{longtable}
 }
 
-\subsubsection{whine --- OE hwīnan}\label{whine-oe-hwux12bnan}
+\subsubsection{\texorpdfstring{whine --- OE
+\emph{hwīnan}}{whine --- OE hwīnan}}\label{whine-oe-hwux12bnan}
 
 Derivation: citation reconstruction \emph{*wainōjaną}; form followed
 here \emph{*xwī́naną} \textgreater{} \emph{hwīnan} (early analogy).
@@ -10653,7 +10724,8 @@ identification \\
 \end{longtable}
 }
 
-\subsubsection{withy --- OE wīþiġ}\label{withy-oe-wux12buxfeiux121}
+\subsubsection{\texorpdfstring{withy --- OE
+\emph{wīþiġ}}{withy --- OE wīþiġ}}\label{withy-oe-wux12buxfeiux121}
 
 Derivation: citation reconstruction \emph{*wáiθiz}; form followed here
 \emph{*wī́θagą} \textgreater{} \emph{wīþiġ} (early analogy).
@@ -10709,9 +10781,9 @@ evidence}\label{reconstruction-and-comparative-evidence-106}
 
 The comparative evidence groups the word with Germanic forms of the
 \emph{*wīþja}/\emph{ō-} or \emph{*wiþ-} type
-(\citeproc{ref-Orel2003}{Orel 2003, 503}). That material is useful for
-the cognate set, but it does not by itself explain the Old English
-suffix of \emph{wīþiġ}.
+(\citeproc{ref-Orel2003}{Orel 2003, 503}). These forms establish the
+cognate set but do not by themselves explain the Old English suffix of
+\emph{wīþiġ}.
 
 For Old English, the relevant point is the suffix history. Campbell's
 account of OE \emph{-ig}, including forms such as \emph{hunig}, supports
@@ -10790,7 +10862,8 @@ and target \\
 \end{longtable}
 }
 
-\subsubsection{world --- OE weorold}\label{world-oe-weorold}
+\subsubsection{\texorpdfstring{world --- OE
+\emph{weorold}}{world --- OE weorold}}\label{world-oe-weorold}
 
 Derivation: citation reconstruction \emph{*wíra-àldiz}; form followed
 here \emph{*wír-àldu} \textgreater{} \emph{weorold} (early analogy).
@@ -10845,21 +10918,19 @@ Old English form: \emph{weorold}
 \paragraph{Reconstruction and comparative
 evidence}\label{reconstruction-and-comparative-evidence-107}
 
-The word is the old compound `age of men'. Comparative sources preserve
-two slightly different views of its first element. Orel and the
-\emph{*wira-} tradition keep the older \emph{i}-vocalism, while Ringe
-and Taylor discuss the lowered form \emph{*weraldiz} and its
-pre-Old-English chain \emph{*weraldu} \textgreater{} \emph{*weruld}
+The word is the old compound `age of men'. Orel and the \emph{*wira-}
+tradition reconstruct the older \emph{i}-vocalism, while Ringe and
+Taylor discuss the lowered form \emph{*weraldiz} and its pre-Old-English
+chain \emph{*weraldu} \textgreater{} \emph{*weruld}
 (\citeproc{ref-Orel2003}{Orel 2003, 501};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 341}).
 Kluge-Seebold likewise gives the compound \emph{*wira-aldō} and
 explicitly includes Old English \emph{weorold}
 (\citeproc{ref-KlugeSeebold2011}{Kluge 2011, 981}).
 
-The derivational input {\emph{*wír-àldu}} therefore differs from the
-citation label in two ways. It keeps the older \emph{*wir-} vowel of the
-comparative headword, but it also presupposes the early shift of the
-compound into the ō-stems that Ringe and Taylor note for this lexeme
+The derivational input {\emph{*wír-àldu}} therefore combines the older
+\emph{*wir-} vowel of the comparative headword with the early shift of
+the compound into the ō-stems that Ringe and Taylor note for this lexeme
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 341}). The early
 analogical step lies in that stem-class reassignment; the later
 phonological developments can then run regularly.
@@ -10937,7 +11008,8 @@ comparanda that remain outside that West Saxon line \\
 \end{longtable}
 }
 
-\subsubsection{youth --- OE ġeoguþ}\label{youth-oe-ux121eoguuxfe}
+\subsubsection{\texorpdfstring{youth --- OE
+\emph{ġeoguþ}}{youth --- OE ġeoguþ}}\label{youth-oe-ux121eoguuxfe}
 
 Derivation: citation reconstruction \emph{*júgunθiz}; form followed here
 \emph{*júgunθ} \textgreater{} \emph{ġeoguþ} (early analogy).
@@ -10999,13 +11071,12 @@ later Germanic stage with \emph{g}, and the derivational input
 {\emph{*júgunθ}} is later again: it represents the form after final
 \emph{-i} has been lost.
 
-That staging matters because Ringe and Taylor explicitly give the
-sequence \emph{*jugunþi} \textgreater{} \emph{*juguþ} \textgreater{} OE
-\emph{geoguþ} \textasciitilde{} \emph{iuguþ}
-(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 141}). The
-derivational input therefore differs from the broader comparative
-headword because the Old English development must begin after early loss
-of final \emph{-i}.
+Ringe and Taylor explicitly give the sequence \emph{*jugunþi}
+\textgreater{} \emph{*juguþ} \textgreater{} OE \emph{geoguþ}
+\textasciitilde{} \emph{iuguþ} (\citeproc{ref-RingeTaylor2014}{Ringe and
+Taylor 2014, 141}). The derivational input therefore differs from the
+broader comparative headword because the Old English development must
+begin after early loss of final \emph{-i}.
 
 \paragraph{Old English evidence}\label{old-english-evidence-108}
 
@@ -11083,13 +11154,13 @@ over-umlauted \emph{y}-type result & negative control showing why early
 \subsection{Part IV. Late analogy and paradigm-cell
 selection}\label{part-iv.-late-analogy-and-paradigm-cell-selection}
 
-These entries involve a later paradigm-cell or analogical comparison.
-The citation reconstruction remains relevant to the lexeme, but the
-attested Old English form is best explained through a particular
-inflectional or analogical form rather than through the citation form
-alone.
+These Old English forms continue a particular paradigm cell or a later
+analogical remodeling, not the unaltered citation form. The phonology
+may be regular once the proper morphological history has been
+identified.
 
-\subsubsection{ban --- OE bannes}\label{ban-oe-bannes}
+\subsubsection{\texorpdfstring{ban --- OE
+\emph{bannes}}{ban --- OE bannes}}\label{ban-oe-bannes}
 
 Derivation: citation reconstruction \emph{*bánną}; form followed here
 \emph{*bánnas} \textgreater{} \emph{bannes} (late analogy).
@@ -11147,8 +11218,7 @@ English {\emph{gebann}} as the noun reflex (\citeproc{ref-Orel2003}{Orel
 reconstruction {\emph{*bánną}} names the lexeme, but the comparison here
 turns on the genitive singular {\emph{*bánnas}}.
 
-That distinction matters because the analysis depends on medial, not
-final, gemination.
+The analysis therefore depends on medial, not final, gemination.
 
 \paragraph{Old English evidence}\label{old-english-evidence-109}
 
@@ -11205,7 +11275,8 @@ genitive singular & {\emph{*bánnas}} & regular output: \emph{bannes} &
 \end{longtable}
 }
 
-\subsubsection{berry --- OE berġes}\label{berry-oe-berux121es}
+\subsubsection{\texorpdfstring{berry --- OE
+\emph{berġes}}{berry --- OE berġes}}\label{berry-oe-berux121es}
 
 Derivation: citation reconstruction \emph{*bázją}; form followed here
 \emph{*bázjas} \textgreater{} \emph{berġes} (late analogy).
@@ -11324,7 +11395,8 @@ genitive singular & {\emph{*bázjas}} & regular output: \emph{berġes} &
 \end{longtable}
 }
 
-\subsubsection{bow --- OE bēag}\label{bow-oe-bux113ag}
+\subsubsection{\texorpdfstring{bow --- OE
+\emph{bēag}}{bow --- OE bēag}}\label{bow-oe-bux113ag}
 
 Derivation: citation reconstruction \emph{*béuganą}; form followed here
 \emph{*báug} \textgreater{} \emph{bēag} (late analogy).
@@ -11462,7 +11534,8 @@ direct lautgesetzlich path to attested {\emph{bēag}}, while the citation
 form {\emph{būgan}} belongs to a paradigm whose present stem has already
 undergone later leveling.
 
-\subsubsection{cow --- OE cȳ}\label{cow-oe-cux233}
+\subsubsection{\texorpdfstring{cow --- OE
+\emph{cȳ}}{cow --- OE cȳ}}\label{cow-oe-cux233}
 
 Derivation: citation reconstruction \emph{*kōz}; form followed here
 \emph{*kūi} \textgreater{} \emph{cȳ} (late analogy).
@@ -11522,8 +11595,9 @@ derivational input \emph{*kūi} belongs to the oblique stem.
 Ringe and Taylor also posit a later PNWGmc nominative \emph{*kūaz}
 \textgreater{} \emph{*kūz} behind Old English \emph{cū}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sect. 3.1.3}).
-That nominative history matters for the headword, but the form \emph{cȳ}
-depends on the oblique \emph{*kū-} stem and a following \emph{*i}.
+That nominative history accounts for the headword, whereas the form
+\emph{cȳ} depends on the oblique \emph{*kū-} stem and a following
+\emph{*i}.
 
 \paragraph{Old English evidence}\label{old-english-evidence-112}
 
@@ -11588,13 +11662,13 @@ Result
 \bottomrule\noalign{}
 \endlastfoot
 citation nominative singular & *kōz & OE headword \emph{cū} belongs to
-the nominative history of the lexeme & cū & useful background, but not
-the chosen comparison for \emph{cȳ} \\
+the nominative history of the lexeme & \emph{cū} & useful background,
+but not the chosen comparison for \emph{cȳ} \\
 later generalized nominative & PNWGmc \emph{kūaz \textgreater{} }kūz &
-inferred nominative \emph{cū} & cū & explains the leveled headword, not
-the oblique target \\
-dative singular oblique & *kūi & regular output: \emph{cȳ} & cȳ & exact
-match between input, output, and paradigm cell \\
+inferred nominative \emph{cū} & \emph{cū} & explains the leveled
+headword, not the oblique target \\
+dative singular oblique & *kūi & regular output: \emph{cȳ} & \emph{cȳ} &
+exact match between input, output, and paradigm cell \\
 genitive singular oblique & *kūiz & Ringe-Taylor: apparently \emph{cā};
 Hall: \emph{cū(e)}, \emph{cȳ}, \emph{cūs} & gen.sg. variable & too
 unstable to control the entry \\
@@ -11605,7 +11679,8 @@ The dative singular is the relevant comparison form. It gives a regular
 path to attested \emph{cȳ}, while the broader Old English paradigm shows
 how far the oblique \emph{*kū-} grade spread beyond that one cell.
 
-\subsubsection{find --- OE fundene}\label{find-oe-fundene}
+\subsubsection{\texorpdfstring{find --- OE
+\emph{fundene}}{find --- OE fundene}}\label{find-oe-fundene}
 
 Derivation: citation reconstruction \emph{*fínθaną}; form followed here
 \emph{*fúnðanǭ} \textgreater{} \emph{fundene} (late analogy).
@@ -11665,17 +11740,16 @@ Taylor 2014, 344}). The form followed here, {\emph{*fúnðanǭ}}, belongs
 to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
-That distinction matters because the familiar dictionary form
-{\emph{funden}} is not the form compared here. The derivational input
-instead models an attested participial form directly, rather than
-treating the infinitive or the ordinary dictionary headword as primary.
-It therefore reaches {\emph{fundene}} in the form where the trace and
-the attested evidence match directly.
+The familiar dictionary form {\emph{funden}} is not the form compared
+here. The derivational input instead models an attested participial form
+directly, rather than treating the infinitive or the ordinary dictionary
+headword as primary. It therefore reaches {\emph{fundene}} in the form
+where the trace and the attested evidence match directly.
 
 \paragraph{Old English evidence}\label{old-english-evidence-113}
 
 Bosworth-Toller records {\emph{fundene}} under {\emph{findan}}, citing
-the form in \emph{Beón} \emph{þá} herigeata swa fundene
+the form in \emph{Beón þá herigeata swa fundene}
 (\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 219}).
 Clark Hall likewise preserves the participial stem in forms such as
 {\emph{funden}} and \emph{tō-fundennes}
@@ -11694,17 +11768,12 @@ loss and weakening of the final ending, yielding {\emph{fundene}}. In
 that cell both the consonantism and the medial vowel history remain
 regular.
 
-The broader participial paradigm then matters for interpretation. The
-more familiar nominative {\emph{funden}} is the ordinary dictionary
-form, whereas the oblique form {\emph{fundene}} is the attested form
-compared here.
+The broader participial paradigm fixes the interpretation. The more
+familiar nominative {\emph{funden}} is the ordinary dictionary form,
+whereas the oblique form {\emph{fundene}} is the attested form compared
+here.
 
 \paragraph{Paradigm comparison}\label{paradigm-comparison-4}
-
-The comparison below sets the relevant forms side by side. It
-distinguishes the attested oblique participle from the more familiar
-nominative participial forms and keeps the cited Old English evidence
-alongside the regular derivational path.
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
@@ -11746,7 +11815,8 @@ derivational input and Old English form directly, while the nominative
 participial headword remains a different presentation cell within the
 same paradigm.
 
-\subsubsection{fright --- OE fyrhte}\label{fright-oe-fyrhte}
+\subsubsection{\texorpdfstring{fright --- OE
+\emph{fyrhte}}{fright --- OE fyrhte}}\label{fright-oe-fyrhte}
 
 Derivation: citation reconstruction \emph{*furxtīn}; form followed here
 \emph{*fúrxtīnaz} \textgreater{} \emph{fyrhte} (late analogy).
@@ -11810,20 +11880,18 @@ cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with \emph{-u} or
 \emph{-o} as analogically remodeled
-(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 395--96}). The
-oblique in-stem forms therefore preserve the older history more
-directly. The comparison here uses that oblique line because it keeps
-the inherited pathway clearer than the better-known lemma forms do.
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 395--96}). I
+therefore use the oblique in-stem form, which continues the older
+formation rather than the remodeled nominative.
 
 \paragraph{Old English evidence}\label{old-english-evidence-114}
 
 Bosworth-Toller records {\emph{fyrhte}} with textual attestation, and it
 also records nominative forms such as {\emph{fyrhtu}} and
 {\emph{fyrhto}} (\citeproc{ref-BosworthToller1898}{Bosworth and Toller
-1898, 160}). Clark Hall separately preserves adjective and verb material
-under \emph{fyrht} / \emph{fyrhtan}, which helps keep the noun distinct
-from the adjectival family (\citeproc{ref-ClarkHall1960}{Clark Hall
-1960, 141}).
+1898, 160}). Clark Hall lists adjective and verb material separately
+under \emph{fyrht} / \emph{fyrhtan} (\citeproc{ref-ClarkHall1960}{Clark
+Hall 1960, 141}).
 
 The relevant comparison form is therefore the attested oblique
 {\emph{fyrhte}}. The nominative lemma forms remain part of the Old
@@ -11887,7 +11955,8 @@ The oblique in-stem form is the relevant comparison form. It yields
 attested {\emph{fyrhte}} directly, while the more familiar nominative
 forms belong to a later analogical layer.
 
-\subsubsection{hammer --- OE hameres}\label{hammer-oe-hameres}
+\subsubsection{\texorpdfstring{hammer --- OE
+\emph{hameres}}{hammer --- OE hameres}}\label{hammer-oe-hameres}
 
 Derivation: citation reconstruction \emph{*xámaraz}; form followed here
 \emph{*xámaras} \textgreater{} \emph{hameres} (late analogy).
@@ -11946,10 +12015,9 @@ in Old English citation forms such as {\emph{hamor}} and {\emph{hamer}}
 input {\emph{*xámaras}} is the genitive singular of that same noun
 rather than a different lexeme.
 
-The genitive matters because the citation tradition is already mixed in
-its unstressed vowel, while the oblique singular gives a cleaner
-comparison form. This is a cell choice within one paradigm, not a change
-of stem class.
+The citation tradition is already mixed in its unstressed vowel, while
+the genitive singular gives a closer comparison form. This is a cell
+choice within one paradigm, not a change of stem class.
 
 \paragraph{Old English evidence}\label{old-english-evidence-115}
 
@@ -12016,7 +12084,8 @@ chosen comparison form \\
 \end{longtable}
 }
 
-\subsubsection{have --- OE hæfeþ}\label{have-oe-huxe6feuxfe}
+\subsubsection{\texorpdfstring{have --- OE
+\emph{hæfeþ}}{have --- OE hæfeþ}}\label{have-oe-huxe6feuxfe}
 
 Derivation: citation reconstruction \emph{*xabēną}; form followed here
 \emph{*xábēθi} \textgreater{} \emph{hæfeþ} (late analogy).
@@ -12113,9 +12182,8 @@ the {\emph{hæfeþ}} / {\emph{hæfed}} type
 (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 762}).
 
 The wider lexeme is less straightforward only because the infinitive
-{\emph{habban}} shows later leveling. That difference in paradigm
-history is what makes the 3sg present cell the more useful comparison
-form.
+{\emph{habban}} shows later leveling. The 3sg present cell is therefore
+the closer comparison form.
 
 \paragraph{Paradigm comparison}\label{paradigm-comparison-7}
 
@@ -12158,7 +12226,8 @@ normalized target used here \\
 \end{longtable}
 }
 
-\subsubsection{heaven --- OE heofon}\label{heaven-oe-heofon}
+\subsubsection{\texorpdfstring{heaven --- OE
+\emph{heofon}}{heaven --- OE heofon}}\label{heaven-oe-heofon}
 
 Derivation: citation reconstruction \emph{*xémenaz}; form followed here
 \emph{*xémonų} \textgreater{} \emph{heofon} (late analogy).
@@ -12220,9 +12289,9 @@ The inherited noun belongs to the mn-stem family cited by Kroonen as
 {\emph{*xémonų}} is an oblique singular form within that paradigm rather
 than the lexeme-level citation form {\emph{*xémenaz}}.
 
-That difference matters for the West Saxon target. Ringe and Taylor give
-northern WGmc {\emph{*hebun}} \textgreater{} West Saxon and Northumbrian
-{\emph{heofon}}, Mercian {\emph{heofen}}
+The back-vocalic oblique stem accounts for the West Saxon target. Ringe
+and Taylor give northern WGmc {\emph{*hebun}} \textgreater{} West Saxon
+and Northumbrian {\emph{heofon}}, Mercian {\emph{heofen}}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 324}). Campbell
 likewise gives {\emph{heofon}} beside {\emph{hefen}} in the same
 West-Saxon \emph{u}-umlaut environment
@@ -12252,10 +12321,9 @@ the later West-Saxon back-mutation and suffix reshaping behind
 {\emph{heofon}} (\citeproc{ref-Campbell1959}{Campbell 1959, sect.
 210.1}; \citeproc{ref-Campbell1959}{1959, sect. 381}).
 
-The front-vocalic nominative line remains important as background
-because it explains the dialectal {\emph{hefen}} type. West Saxon
-{\emph{heofon}} reflects the oblique stem that was generalized into the
-nominative position.
+The front-vocalic nominative line explains the dialectal {\emph{hefen}}
+type. West Saxon {\emph{heofon}} reflects the oblique stem that was
+generalized into the nominative position.
 
 \paragraph{Paradigm comparison}\label{paradigm-comparison-8}
 
@@ -12298,7 +12366,8 @@ development \\
 \end{longtable}
 }
 
-\subsubsection{live --- OE lifeþ}\label{live-oe-lifeuxfe}
+\subsubsection{\texorpdfstring{live --- OE
+\emph{lifeþ}}{live --- OE lifeþ}}\label{live-oe-lifeuxfe}
 
 Derivation: citation reconstruction \emph{*libēną}; form followed here
 \emph{*líbēθi} \textgreater{} \emph{lifeþ} (late analogy).
@@ -12362,9 +12431,8 @@ in late Northumbrian {\emph{lifed}}, which they treat as an archaism
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 364}).
 
 The derivational input {\emph{*líbēθi}} therefore represents a finite
-present cell rather than the citation infinitive. That distinction
-matters because the ordinary later lemma tradition also includes
-remodeled forms such as {\emph{lifian}}.
+present cell rather than the citation infinitive. The later lemma
+tradition also includes remodeled forms such as {\emph{lifian}}.
 
 \paragraph{Old English evidence}\label{old-english-evidence-118}
 
@@ -12376,8 +12444,8 @@ and Taylor 2014, 364}; \citeproc{ref-Campbell1959}{Campbell 1959, sect.
 762}).
 
 The target is thus a normalized finite form, not the ordinary dictionary
-lemma. Its value lies in preserving the older present-stem history more
-clearly than the remodeled lemma tradition does.
+lemma. It preserves the older present-stem history more clearly than the
+remodeled lemma tradition does.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-118}
@@ -12429,7 +12497,8 @@ genuine OE development, but secondary to the cell compared here \\
 \end{longtable}
 }
 
-\subsubsection{man --- OE mannes}\label{man-oe-mannes}
+\subsubsection{\texorpdfstring{man --- OE
+\emph{mannes}}{man --- OE mannes}}\label{man-oe-mannes}
 
 Derivation: citation reconstruction \emph{*mánnaz}; form followed here
 \emph{*mánnas} \textgreater{} \emph{mannes} (late analogy).
@@ -12487,9 +12556,8 @@ The lexeme-level reconstruction is not uniform. Kroonen cites
 {\emph{*mánnas}} belongs to a different level: it is the
 genitive-singular cell chosen for the Old English comparison.
 
-That distinction matters because the target of this entry is not the
-ordinary citation form. The cell compared here is the one that keeps the
-geminate medial before the ending.
+The target is not the ordinary citation form. Its medial geminate
+precedes the genitive ending.
 
 \paragraph{Old English evidence}\label{old-english-evidence-119}
 
@@ -12509,8 +12577,8 @@ The relevant comparison form is therefore the attested genitive singular
 \paragraph{Development to Old
 English}\label{development-to-old-english-119}
 
-Campbell's paradigm mann, \emph{man} / \emph{mannes} / \emph{menn}
-confirms the selected genitive singular \emph{mannes}
+Campbell's paradigm \emph{mann}, \emph{man} / \emph{mannes} /
+\emph{menn} confirms the selected genitive singular \emph{mannes}
 (\citeproc{ref-Campbell1959}{Campbell 1959, sect. 621}). In the present
 analysis, \emph{*mánnas} develops through Anglo-Frisian brightening and
 later unstressed merger to \emph{mannes}. In this cell the geminate
@@ -12559,7 +12627,8 @@ comparator \\
 \end{longtable}
 }
 
-\subsubsection{meed --- OE meorde}\label{meed-oe-meorde}
+\subsubsection{\texorpdfstring{meed --- OE
+\emph{meorde}}{meed --- OE meorde}}\label{meed-oe-meorde}
 
 Derivation: citation reconstruction \emph{*mizdō}; form followed here
 \emph{*mízdai} \textgreater{} \emph{meorde} (late analogy).
@@ -12616,8 +12685,8 @@ evidence}\label{reconstruction-and-comparative-evidence-120}
 
 The lexeme-level reconstruction is {\emph{*mizdō}}, but the derivational
 input {\emph{*mízdai}} is a dative-singular cell rather than the
-citation form. That distinction is important because the Old English
-evidence for the \emph{meord} side is oblique.
+citation form. The Old English evidence for the \emph{meord} side is
+oblique.
 
 The wider history of competing \emph{mēd} remains disputed. Kroonen and
 Fulk explain it through some form of \emph{z}-loss and compensatory
@@ -12700,7 +12769,8 @@ chosen singular target \\
 \end{longtable}
 }
 
-\subsubsection{night --- OE niht}\label{night-oe-niht}
+\subsubsection{\texorpdfstring{night --- OE
+\emph{niht}}{night --- OE niht}}\label{night-oe-niht}
 
 Derivation: citation reconstruction \emph{*náxtz}; form followed here
 \emph{*náxti} \textgreater{} \emph{niht} (late analogy).
@@ -12762,11 +12832,10 @@ citation reconstruction {\emph{*náxtz}} therefore belongs to the
 nominative-like headword, while the derivational input {\emph{*náxti}}
 represents the dative-singular cell.
 
-That distinction matters because the word later became the model for
-endingless datives. Ringe and Taylor explicitly explain forms such as
-\emph{dæg} by analogy with dat. sg. \emph{niht} \textless{}
-\emph{*nahti} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
-380}).
+The word later became the model for endingless datives. Ringe and Taylor
+explicitly explain forms such as {\emph{dæg}} by analogy with dat. sg.
+\emph{niht} \textless{} \emph{*nahti}
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 380}).
 
 \paragraph{Old English evidence}\label{old-english-evidence-121}
 
@@ -12835,7 +12904,8 @@ paradigm cell \\
 \end{longtable}
 }
 
-\subsubsection{rest --- OE ræste}\label{rest-oe-ruxe6ste}
+\subsubsection{\texorpdfstring{rest --- OE
+\emph{ræste}}{rest --- OE ræste}}\label{rest-oe-ruxe6ste}
 
 Derivation: citation reconstruction \emph{*rastō}; form followed here
 \emph{*rástōz} \textgreater{} \emph{ræste} (late analogy).
@@ -12968,7 +13038,8 @@ and attested OE oblique form \\
 \end{longtable}
 }
 
-\subsubsection{shoulder --- OE sċuldrum}\label{shoulder-oe-sux10buldrum}
+\subsubsection{\texorpdfstring{shoulder --- OE
+\emph{sċuldrum}}{shoulder --- OE sċuldrum}}\label{shoulder-oe-sux10buldrum}
 
 Derivation: citation reconstruction \emph{*skuldrō}; form followed here
 \emph{*skúldramiz} \textgreater{} \emph{sċuldrum} (late analogy).
@@ -13135,7 +13206,8 @@ and the paradigm cell of Old English {\emph{sculdrum}}.
 Singular-oriented candidates either lower the root vowel or compare
 unlike cells.
 
-\subsubsection{shove --- OE sċēaf}\label{shove-oe-sux10bux113af}
+\subsubsection{\texorpdfstring{shove --- OE
+\emph{sċēaf}}{shove --- OE sċēaf}}\label{shove-oe-sux10bux113af}
 
 Derivation: citation reconstruction \emph{*skéubaną}; form followed here
 \emph{*skáub} \textgreater{} \emph{sċēaf} (late analogy).
@@ -13262,7 +13334,8 @@ form compared here \\
 \end{longtable}
 }
 
-\subsubsection{span --- OE spanne}\label{span-oe-spanne}
+\subsubsection{\texorpdfstring{span --- OE
+\emph{spanne}}{span --- OE spanne}}\label{span-oe-spanne}
 
 Derivation: citation reconstruction \emph{*spannō}; form followed here
 \emph{*spánnai} \textgreater{} \emph{spanne} (late analogy).
@@ -13374,7 +13447,8 @@ form \\
 \end{longtable}
 }
 
-\subsubsection{thistle --- OE þistles}\label{thistle-oe-uxfeistles}
+\subsubsection{\texorpdfstring{thistle --- OE
+\emph{þistles}}{thistle --- OE þistles}}\label{thistle-oe-uxfeistles}
 
 Derivation: citation reconstruction \emph{*θéstilaz}; form followed here
 \emph{*θístilas} \textgreater{} \emph{þistles} (late analogy).
@@ -13491,7 +13565,8 @@ cell \\
 \end{longtable}
 }
 
-\subsubsection{make (iptv.2sg) --- OE maca}\label{make-iptv.2sg-oe-maca}
+\subsubsection{\texorpdfstring{make (iptv.2sg) --- OE
+\emph{maca}}{make (iptv.2sg) --- OE maca}}\label{make-iptv.2sg-oe-maca}
 
 Derivation: citation reconstruction \emph{*makōną}; form followed here
 \emph{*mákô} \textgreater{} \emph{maca} (late analogy).
@@ -13565,10 +13640,9 @@ here in this entry is therefore not the lemma but the imperative
 singular {\emph{maca}}, chosen as a paradigm form beside the headword
 {\emph{macian}} and the related finite form {\emph{macaþ}}.
 
-That distinction matters for the comparison. The lexical history of the
-verb is still the history of \emph{macian}, but the finite cell isolates
-the regular outcome of trimoric \emph{*ō} more cleanly than the citation
-form does.
+The lexical history is still that of \emph{macian}, but the finite cell
+isolates the regular outcome of trimoric \emph{*ō} more cleanly than the
+citation form does.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-127}
@@ -13626,7 +13700,8 @@ not the target of this entry \\
 \end{longtable}
 }
 
-\subsubsection{make (3sg) --- OE macaþ}\label{make-3sg-oe-macauxfe}
+\subsubsection{\texorpdfstring{make (3sg) --- OE
+\emph{macaþ}}{make (3sg) --- OE macaþ}}\label{make-3sg-oe-macauxfe}
 
 Derivation: citation reconstruction \emph{*makōną}; form followed here
 \emph{*mákōθi} \textgreater{} \emph{macaþ} (late analogy).
@@ -13759,7 +13834,8 @@ imperative singular companion & {\emph{*mákô}} & related finite form
 \end{longtable}
 }
 
-\subsubsection{bore (iptv.2sg) --- OE bora}\label{bore-iptv.2sg-oe-bora}
+\subsubsection{\texorpdfstring{bore (iptv.2sg) --- OE
+\emph{bora}}{bore (iptv.2sg) --- OE bora}}\label{bore-iptv.2sg-oe-bora}
 
 Derivation: citation reconstruction \emph{*burōną}; form followed here
 \emph{*búrô} \textgreater{} \emph{bora} (late analogy).
@@ -13883,7 +13959,8 @@ imperative singular & {\emph{*búrô}} & regular output {\emph{bora}} &
 \end{longtable}
 }
 
-\subsubsection{bore (3sg) --- OE boraþ}\label{bore-3sg-oe-borauxfe}
+\subsubsection{\texorpdfstring{bore (3sg) --- OE
+\emph{boraþ}}{bore (3sg) --- OE boraþ}}\label{bore-3sg-oe-borauxfe}
 
 Derivation: citation reconstruction \emph{*burōną}; form followed here
 \emph{*búrōθi} \textgreater{} \emph{boraþ} (late analogy).
@@ -14014,8 +14091,8 @@ imperative singular companion & {\emph{*búrô}} & related finite form
 \end{longtable}
 }
 
-\subsubsection{learn (iptv.2sg) --- OE
-liorna}\label{learn-iptv.2sg-oe-liorna}
+\subsubsection{\texorpdfstring{learn (iptv.2sg) --- OE
+\emph{liorna}}{learn (iptv.2sg) --- OE liorna}}\label{learn-iptv.2sg-oe-liorna}
 
 Derivation: citation reconstruction \emph{*liznōjaną}; form followed
 here \emph{*líznô} \textgreater{} \emph{liorna} (late analogy).
@@ -14148,8 +14225,8 @@ target \\
 \end{longtable}
 }
 
-\subsubsection{learn (3sg) --- OE
-liornaþ}\label{learn-3sg-oe-liornauxfe}
+\subsubsection{\texorpdfstring{learn (3sg) --- OE
+\emph{liornaþ}}{learn (3sg) --- OE liornaþ}}\label{learn-3sg-oe-liornauxfe}
 
 Derivation: citation reconstruction \emph{*liznōjaną}; form followed
 here \emph{*líznōθi} \textgreater{} \emph{liornaþ} (late analogy).
@@ -14289,8 +14366,8 @@ control, but not the target \\
 \end{longtable}
 }
 
-\subsubsection{lick (iptv.2sg) --- OE
-licca}\label{lick-iptv.2sg-oe-licca}
+\subsubsection{\texorpdfstring{lick (iptv.2sg) --- OE
+\emph{licca}}{lick (iptv.2sg) --- OE licca}}\label{lick-iptv.2sg-oe-licca}
 
 Derivation: citation reconstruction \emph{*likkōną}; form followed here
 \emph{*líkkô} \textgreater{} \emph{licca} (late analogy).
@@ -14423,7 +14500,8 @@ target of this entry \\
 \end{longtable}
 }
 
-\subsubsection{lick (3sg) --- OE liccaþ}\label{lick-3sg-oe-liccauxfe}
+\subsubsection{\texorpdfstring{lick (3sg) --- OE
+\emph{liccaþ}}{lick (3sg) --- OE liccaþ}}\label{lick-3sg-oe-liccauxfe}
 
 Derivation: citation reconstruction \emph{*likkōną}; form followed here
 \emph{*líkkōθi} \textgreater{} \emph{liccaþ} (late analogy).
@@ -14555,8 +14633,8 @@ input and the Old English form here \\
 \end{longtable}
 }
 
-\subsubsection{show (iptv.2sg) --- OE
-sċēawa}\label{show-iptv.2sg-oe-sux10bux113awa}
+\subsubsection{\texorpdfstring{show (iptv.2sg) --- OE
+\emph{sċēawa}}{show (iptv.2sg) --- OE sċēawa}}\label{show-iptv.2sg-oe-sux10bux113awa}
 
 Derivation: citation reconstruction \emph{*skawōną}; form followed here
 \emph{*skáwô} \textgreater{} \emph{sċēawa} (late analogy).
@@ -14616,11 +14694,10 @@ this entry is not that infinitive but the imperative singular
 \emph{*skáwô}, a finite class-II cell with imperative -a \textless{}
 \emph{*-ō} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 314}).
 
-That distinction matters because the imperative singular provides the
-direct comparison for the Old English form treated here. The lexical
-history still belongs to the \emph{sceáwian} verb, but the cell compared
-here isolates the finite \emph{-a} outcome more clearly than the
-citation form does.
+The imperative singular provides the direct comparison with the Old
+English form. The lexical history still belongs to the \emph{sceáwian}
+verb, but the cell compared here isolates the finite \emph{-a} outcome
+more clearly than the citation form does.
 
 \paragraph{Old English evidence}\label{old-english-evidence-135}
 
@@ -14685,8 +14762,8 @@ target of this entry \\
 \end{longtable}
 }
 
-\subsubsection{show (3sg) --- OE
-sċēawaþ}\label{show-3sg-oe-sux10bux113awauxfe}
+\subsubsection{\texorpdfstring{show (3sg) --- OE
+\emph{sċēawaþ}}{show (3sg) --- OE sċēawaþ}}\label{show-3sg-oe-sux10bux113awauxfe}
 
 Derivation: citation reconstruction \emph{*skawōną}; form followed here
 \emph{*skáwōθi} \textgreater{} \emph{sċēawaþ} (late analogy).
@@ -14828,12 +14905,12 @@ present third singular & {\emph{*skáwōθi}} & regular output
 \subsection{Part V. Reconstructed Old English
 comparators}\label{part-v.-reconstructed-old-english-comparators}
 
-These entries use an explicitly reconstructed Old English-stage
-comparator for the branch being modelled. The relevant comparison is
-therefore later than the Proto-Germanic citation form but still belongs
-to the lexical derivation layer.
+Direct attestation does not supply the required comparator in these
+entries. The target is an explicitly reconstructed Old English form and
+carries the corresponding evidential burden.
 
-\subsubsection{knob --- OE *cnobba}\label{knob-oe-cnobba}
+\subsubsection{\texorpdfstring{knob --- OE
+\emph{*cnobba}}{knob --- OE *cnobba}}\label{knob-oe-cnobba}
 
 Derivation: citation reconstruction \emph{*knúppaz}; form followed here
 \emph{*knúbbô} \textgreater{} \emph{*cnobba} (reconstructed Old English
@@ -14893,10 +14970,10 @@ reconstruction \emph{*knúppaz} represents the broader cognate-set
 headword, while the form followed here, \emph{*knúbbô}, represents the
 voiced weak-noun branch treated here.
 
-That distinction matters because the Old English record is uneven. The
-better attested OE material belongs to the voiceless branch, but the
-present entry represents the reconstructed OE form that would continue
-the voiced branch behind later English knob.
+The Old English record is uneven. The better attested OE material
+belongs to the voiceless branch, but the present entry represents the
+reconstructed OE form that would continue the voiced branch behind later
+English knob.
 
 \paragraph{Old English evidence}\label{old-english-evidence-137}
 
@@ -14905,13 +14982,10 @@ Clark Hall preserves Old English evidence of the \emph{cnoppa} type
 genuine Old English evidence, but they belong to the voiceless branch of
 the family.
 
-The target \emph{*cnobba} is different in status. It is a
-\textbf{reconstructed Old English form}, not a directly attested one.
-The point of using it here is to give the voiced branch an explicit
-OE-stage representation instead of allowing the attested \emph{cnoppa}
-branch to stand in for a different prehistory. The choice of
-\emph{*cnobba} is therefore a modeling and comparative decision rather
-than a settled point of Old English philology.
+The target \emph{*cnobba} is a \textbf{reconstructed Old English form},
+not a directly attested one. I use it for the voiced branch because
+attested \emph{cnoppa} continues the voiceless branch and therefore
+represents a different prehistory.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-137}
@@ -14927,9 +15001,6 @@ represented, then \emph{*cnobba} is the regular Old English form
 corresponding to that branch.
 
 \paragraph{Reconstruction status}\label{reconstruction-status}
-
-The comparison below keeps apart the reconstructed target and the
-better-attested neighboring forms.
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
@@ -14962,7 +15033,8 @@ between reconstructed \emph{*cnobba} and attested \emph{cnoppa} is still
 a comparator-policy question rather than a settled point of OE
 attestation.
 
-\subsubsection{reek --- OE *rēac}\label{reek-oe-rux113ac}
+\subsubsection{\texorpdfstring{reek --- OE
+\emph{*rēac}}{reek --- OE *rēac}}\label{reek-oe-rux113ac}
 
 Derivation: citation reconstruction \emph{*ráukiz}; form followed here
 \emph{*ráukaz} \textgreater{} \emph{*rēac} (reconstructed Old English
@@ -15048,14 +15120,15 @@ From {\emph{*ráukaz}}, the regular West Saxon development gives
 lexical family, but reflects a later smoothed surface form rather than
 the regular noun target represented here.
 
-\paragraph{Form note}\label{form-note-29}
+\paragraph{Form note}\label{form-note-28}
 
 The distinction here is between an attested noun headword {\emph{rēc}}
 and a reconstructed regular West Saxon target {\emph{*rēac}}. The latter
 is treated as the modelling target, while the former remains
 philological background.
 
-\subsubsection{strew --- OE *strīeġan}\label{strew-oe-strux12beux121an}
+\subsubsection{\texorpdfstring{strew --- OE
+\emph{*strīeġan}}{strew --- OE *strīeġan}}\label{strew-oe-strux12beux121an}
 
 Derivation: \emph{*stráwjaną} \textgreater{} \emph{*strīeġan}
 (reconstructed Old English comparator).
@@ -15114,15 +15187,14 @@ evidence}\label{reconstruction-and-comparative-evidence-139}
 
 Kroonen cites the inherited weak verb as {\emph{*straujan-}} and gives
 Old English {\emph{streowian}} as its dictionary continuation
-(\citeproc{ref-Kroonen2013}{Kroonen 2013, 483}). Ringe and Taylor make
-the split within Old English explicit: the inherited class-I verb is
-continued by Anglian {\emph{strēgan}}, while West Saxon
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 483}). Ringe and Taylor
+distinguish the two Old English formations: the inherited class-I verb
+is continued by Anglian {\emph{strēgan}}, while West Saxon
 {\emph{streowian}} is a remodelled class-II verb
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, sect. 6.1}
 n.~27).
 
-The aw-series comparison is important here. Luick groups
-\emph{*strauwjan} with the same set as \emph{*hauwja-} and
+Luick groups \emph{*strauwjan} with the same set as \emph{*hauwja-} and
 \emph{*kauwjan}, yielding Anglian \emph{strēzan} beside West Saxon forms
 of the \emph{hīez}, ciezan type (\citeproc{ref-Luick1914}{Luick
 1914-\/-1940, sect. 98}). Fulk likewise allows an early West Saxon
@@ -15139,10 +15211,9 @@ sect. 6.1} n.~27; \citeproc{ref-Campbell1959}{Campbell 1959, sect.
 753.7}).
 
 The target {\emph{*strīeġan}} is therefore a \textbf{reconstructed Old
-English form}, not an attested manuscript lemma. It is the reconstructed
-West Saxon reflex of the inherited class-I verb, chosen to keep the
-inherited branch distinct from the better-attested remodelled West Saxon
-lemma.
+English form}, not an attested manuscript lemma. It is the inferred West
+Saxon reflex of the inherited class-I verb; the attested West Saxon
+lemma belongs to the remodelled class-II formation.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-139}
@@ -15160,10 +15231,6 @@ remodelled into class II (\citeproc{ref-Fulk2018}{Fulk 2018, sect. 4.10}
 n.~1; \citeproc{ref-Campbell1959}{Campbell 1959, sect. 753.7}).
 
 \paragraph{Reconstruction status}\label{reconstruction-status-1}
-
-The comparison below sets the relevant forms side by side. It keeps
-apart the attested inherited branch, the attested remodelled branch, and
-the reconstructed West Saxon comparator.
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
@@ -15197,11 +15264,12 @@ inherited branch modeled here \\
 \subsection{Part VI. Known but unmodelled
 remodellings}\label{part-vi.-known-but-unmodelled-remodellings}
 
-These entries preserve cases where the historical remodelling is broadly
-understood, but the current deterministic transducer does not model that
-later reshaping directly.
+The historical remodeling is known, but it cannot be derived by sound
+change alone. Naming the process explains the mismatch without
+pretending that the attested form is phonologically regular.
 
-\subsubsection{fire --- OE fȳre}\label{fire-oe-fux233re}
+\subsubsection{\texorpdfstring{fire --- OE
+\emph{fȳre}}{fire --- OE fȳre}}\label{fire-oe-fux233re}
 
 Derivation: \emph{*fūri} yields regular \emph{fȳr}; the Old English form
 here is \emph{fȳre} (known but unmodelled remodelling).
@@ -15262,9 +15330,8 @@ Germanic forms from an oblique form of the \emph{*fu(w)eri} type
 for the headword: it represents the specific inherited cell that
 supplies the \emph{i} needed for i-umlaut.
 
-That distinction matters because the Old English target combines a
-regular inherited form {\emph{fȳr}} with an attested analogical surface
-form {\emph{fȳre}}.
+The Old English target combines a regular inherited form {\emph{fȳr}}
+with an attested analogical surface form {\emph{fȳre}}.
 
 \paragraph{Old English evidence}\label{old-english-evidence-140}
 
@@ -15336,7 +15403,8 @@ direct phonological output \\
 \end{longtable}
 }
 
-\subsubsection{tap --- OE tæppa}\label{tap-oe-tuxe6ppa}
+\subsubsection{\texorpdfstring{tap --- OE
+\emph{tæppa}}{tap --- OE tæppa}}\label{tap-oe-tuxe6ppa}
 
 Derivation: \emph{*táppô} yields regular \emph{tappa}; the Old English
 form here is \emph{tæppa} (known but unmodelled remodelling).
@@ -15453,12 +15521,12 @@ related formation, but not the noun target \\
 \subsection{Part VII. Unexplained or deliberately unmodelled
 exceptions}\label{part-vii.-unexplained-or-deliberately-unmodelled-exceptions}
 
-These entries preserve a mismatch between the regular transducer output
-and the attested Old English form. They are retained as documented
-lexical exceptions rather than treated as evidence for further
-sound-change repair.
+No sufficiently supported account yet reconciles the regular output with
+the Old English form. An ad hoc sound law would conceal rather than
+explain the mismatch.
 
-\subsubsection{buck --- OE bucc}\label{buck-oe-bucc}
+\subsubsection{\texorpdfstring{buck --- OE
+\emph{bucc}}{buck --- OE bucc}}\label{buck-oe-bucc}
 
 Derivation: \emph{*búkkaz} yields regular \emph{bocc}; the Old English
 form here is \emph{bucc} (unexplained exception).
@@ -15529,8 +15597,8 @@ Old English preserves a mixed lexical picture. Campbell cites
 Bosworth-Toller show that Old English has both {\emph{bucca}} and
 {\emph{bucc}} (\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 53};
 \citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 122}). The
-a-stem citation form {\emph{bucc}} is the target treated here, with
-{\emph{bucca}} kept as genuine philological background from the same
+a-stem citation form {\emph{bucc}} is the target treated here;
+{\emph{bucca}} supplies genuine philological background from the same
 lexical family.
 
 \paragraph{Development to Old
@@ -15577,7 +15645,8 @@ form, not the present target \\
 \end{longtable}
 }
 
-\subsubsection{fowl --- OE fugol}\label{fowl-oe-fugol}
+\subsubsection{\texorpdfstring{fowl --- OE
+\emph{fugol}}{fowl --- OE fugol}}\label{fowl-oe-fugol}
 
 Derivation: \emph{*fúglaz} yields regular \emph{fogol}; the Old English
 form here is \emph{fugol} (unexplained exception).
@@ -15716,7 +15785,8 @@ The unresolved point lies only in the root vowel. The medial \emph{-o-}
 is regular, but no accepted lautgesetzlich pathway has been found from
 \emph{*fúglaz} to attested \emph{fugol}.
 
-\subsubsection{rust --- OE rust}\label{rust-oe-rust}
+\subsubsection{\texorpdfstring{rust --- OE
+\emph{rust}}{rust --- OE rust}}\label{rust-oe-rust}
 
 Derivation: \emph{*rústō} yields regular \emph{rost}; the Old English
 form here is \emph{rust} (unexplained exception).
@@ -15791,9 +15861,9 @@ Bosworth-Toller records \emph{rúst} (? and rust)
 (\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 677}). The
 form is normalized here as \emph{rust} from that attested record.
 
-Those dictionary entries also matter morphologically. They support a
-masculine noun, which aligns better with Orel's \emph{*rustaz} than with
-the competing \emph{*rústō} preserved in the header.
+Those dictionary entries identify a masculine noun, which aligns better
+with Orel's \emph{*rustaz} than with the competing \emph{*rústō}
+preserved in the header.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-144}
@@ -15847,7 +15917,8 @@ development remains unexplained \\
 \end{longtable}
 }
 
-\subsubsection{wolf --- OE wulf}\label{wolf-oe-wulf}
+\subsubsection{\texorpdfstring{wolf --- OE
+\emph{wulf}}{wolf --- OE wulf}}\label{wolf-oe-wulf}
 
 Derivation: \emph{*wúlfaz} yields regular \emph{wolf}; the Old English
 form here is \emph{wulf} (unexplained exception).
@@ -15928,10 +15999,9 @@ notes that oblique \emph{wulfe} continues \emph{wulfi} or older
 \emph{wulfai} (\citeproc{ref-SieversBrunner1965}{Brunner 1965, sect.
 160}).
 
-That warning matters because the surviving oblique forms do not supply a
-clean regular route back to bare \emph{wulf}. They belong to the same
-lexeme, but they do not remove the explanatory problem presented by the
-citation form.
+The surviving oblique forms do not supply a regular route back to bare
+\emph{wulf}. They belong to the same lexeme, but they do not remove the
+explanatory problem presented by the citation form.
 
 \paragraph{Development to Old
 English}\label{development-to-old-english-145}
@@ -15985,7 +16055,8 @@ preservation of \emph{u} remains unexplained \\
 \end{longtable}
 }
 
-\subsubsection{wool --- OE wull}\label{wool-oe-wull}
+\subsubsection{\texorpdfstring{wool --- OE
+\emph{wull}}{wool --- OE wull}}\label{wool-oe-wull}
 
 Derivation: \emph{*wúllō} yields regular \emph{woll}; the Old English
 form here is \emph{wull} (unexplained exception).
