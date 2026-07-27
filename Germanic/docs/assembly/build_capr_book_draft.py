@@ -170,7 +170,9 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
             ref = line[4:].strip()
             if " — OE _" in ref and ref.endswith("_"):
                 lexical_item, target = ref.split(" — OE ", 1)
-                ref = f"{lexical_item} — OE {target[1:-1].replace(r'\*', '*')}"
+                # perform the replacement before interpolating into the f-string to avoid backslashes inside f-string expressions
+                cleaned_target = target[1:-1].replace('\\*', '*')
+                ref = f"{lexical_item} — OE {cleaned_target}"
             commands = commands_by_ref.get(ref, [])
             if commands:
                 out.append("")
