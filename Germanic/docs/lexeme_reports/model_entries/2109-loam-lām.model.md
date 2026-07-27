@@ -50,4 +50,4 @@ OE-facing stem class used to derive the attested noun.
 | Formation / class | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | inherited comparative noun | *laimōn | comparative family background | wider family context | useful headword, but not the direct OE-facing input |
-| OE-facing stem class followed here | *láimą | regular output: `lām` | lām | exact match between the form followed here and the attested OE noun |
+| OE-facing stem class followed here | *láimą | regular output: `lām` | _lām_ | exact match between the form followed here and the attested OE noun |

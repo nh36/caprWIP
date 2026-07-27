@@ -56,4 +56,4 @@ the voiced alternant used for Old English.
 | :--- | :--- | :--- | :--- | :--- |
 | comparative voiceless headword | [`*nḗθlō`]{.iv lang=pgmc sort=nethlo role=source_protoform} | broader word-family label rather than the OE-facing alternant | `*nēþlō` line | useful citation form, but not the derivational input for the Old English comparison |
 | voiced Verner alternant followed here | [`*nḗðlō`]{.iv lang=pgmc sort=nedlo role=selected_input} | regular output: [`nǣdl`]{.iv lang=oe sort=naedl role=regular_output} | [`nǣdl`]{.iv lang=oe sort=naedl role=target_form} | exact match between the form followed here and the attested OE noun |
-| later hardening stage | *nḗdlō | intermediate pre-OE stage in the same derivation | nǣdl | genuine stage in the pathway, but not the Proto-Germanic form followed here |
+| later hardening stage | *nḗdlō | intermediate pre-OE stage in the same derivation | _nǣdl_ | genuine stage in the pathway, but not the Proto-Germanic form followed here |

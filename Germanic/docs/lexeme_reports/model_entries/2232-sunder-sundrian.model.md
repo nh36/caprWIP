@@ -22,7 +22,7 @@ Orel distinguishes three related formations: adverbial `*sunþraz > sundor`, Cla
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller keep `sundrian` and `syndrian` separate from adverbial `sundor`, and both preserve the prefixed verbal family `ā-sundrian` [@ClarkHall1960, 296; @BosworthToller1898]. The target represented here is therefore the weak verb `sundrian`.
+Clark Hall and Bosworth-Toller list `sundrian` and `syndrian` separately from adverbial `sundor`; both also record the prefixed verbal family `ā-sundrian` [@ClarkHall1960, 296; @BosworthToller1898]. The target is therefore the weak verb `sundrian`.
 
 ### Development to Old English
 

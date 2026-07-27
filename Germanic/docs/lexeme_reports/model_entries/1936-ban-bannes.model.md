@@ -24,8 +24,7 @@ reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction [`*bánną
 names the lexeme, but the comparison here turns on the genitive singular
 [`*bánnas`]{.iv lang=pgmc sort=bannas role=selected_input}.
 
-That distinction matters because the analysis depends on medial, not final,
-gemination.
+The analysis therefore depends on medial, not final, gemination.
 
 ### Old English evidence
 

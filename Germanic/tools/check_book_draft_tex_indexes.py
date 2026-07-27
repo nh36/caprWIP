@@ -29,7 +29,10 @@ def index_command(row: dict[str, str]) -> str:
     language = row.get("language", "")
     sort_key = row.get("sort_key", "")
     display = row.get("display", "")
-    return rf"\index[{language}]{{{latex_escape(sort_key)}@{latex_escape(display)}}}"
+    index_display = latex_escape(display)
+    if language == "oe":
+        index_display = rf"\emph{{{index_display}}}"
+    return rf"\index[{language}]{{{latex_escape(sort_key)}@{index_display}}}"
 
 
 def explicit_key(row: dict[str, str]) -> tuple[str, str, str, str]:

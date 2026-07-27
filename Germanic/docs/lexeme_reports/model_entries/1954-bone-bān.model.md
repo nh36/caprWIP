@@ -22,7 +22,7 @@ Kroonen cites the noun as [`*baina-`]{.iv lang=pgmc sort=baina}, and Orel gives 
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record [`bān`]{.iv lang=oe sort=ban} as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [`bān`]{.iv lang=oe sort=ban} from oblique [`bāne`]{.iv lang=oe sort=bane}, which keeps the nominative-accusative singular separate from the rest of the paradigm [@BrightCassidyRingler1971].
+Clark Hall and Bosworth-Toller record [`bān`]{.iv lang=oe sort=ban} as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [`bān`]{.iv lang=oe sort=ban} from oblique [`bāne`]{.iv lang=oe sort=bane} [@BrightCassidyRingler1971].
 
 ### Source note
 

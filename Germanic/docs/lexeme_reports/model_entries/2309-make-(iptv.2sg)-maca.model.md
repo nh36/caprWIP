@@ -35,8 +35,7 @@ The dictionary headword is [`macian`]{.iv lang=oe sort=macian role=comparison_fo
 entry is therefore not the lemma but the imperative singular [`maca`]{.iv lang=oe sort=maca role=target_form}, chosen as a
 paradigm form beside the headword [`macian`]{.iv lang=oe sort=macian role=comparison_form} and the related finite form [`macaþ`]{.iv lang=oe sort=macath role=comparison_form}.
 
-That distinction matters for the comparison. The lexical history of the verb is
-still the history of `macian`, but the finite cell isolates the regular outcome
+The lexical history is still that of `macian`, but the finite cell isolates the regular outcome
 of trimoric `*ō` more cleanly than the citation form does.
 
 ### Development to Old English

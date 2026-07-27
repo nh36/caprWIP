@@ -295,7 +295,7 @@ def assert_broad_suggestions_load() -> None:
     assert BROAD_SUGGESTIONS_PATH.exists()
     rows = load_broad_suggestion_rows()
     assert rows
-    assert any(row["form"] == "dæg" and row["suggested_language"] == "oe" for row in rows)
+    assert any(row["form"] == "giefan" and row["suggested_language"] == "oe" for row in rows)
     assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29" and row["form"] == "duru" for row in rows)
     assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53" and row["form"] in {"Jugend", "Mönch"} for row in rows)
     for form, source_ref in {
@@ -700,12 +700,13 @@ def assert_broad_prose_buckets() -> None:
     assert ("cū(e), cȳ, cūs", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33") in notation_pairs
 
     reader_pairs = parse_audit_bucket_pairs("Reader-facing examples quarantined (separate example index policy)")
-    assert ("*bacan", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1155") in reader_pairs
-    assert ("*fúrxtīnaz", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2224") in reader_pairs
-    assert ("ġeoc", "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:378") in reader_pairs
+    reader_source = "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:"
+    for form in {"*bacan", "*fúrxtīnaz", "ġeoc"}:
+        assert any(item_form == form and source_ref.startswith(reader_source) for item_form, source_ref in reader_pairs)
 
     prose_pairs = parse_audit_bucket_pairs("Ordinary prose/gloss ignored")
-    assert ("shoulder", "Germanic/docs/assembly/capr_book_intro_alpha_01.md:97") in prose_pairs
+    intro_source = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:"
+    assert any(item_form == "OEIUmlaut" and source_ref.startswith(intro_source) for item_form, source_ref in prose_pairs)
     assert ("sea", "Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33") in prose_pairs
 
     variant_pairs = parse_audit_bucket_pairs("Orthographic/normalization variant of indexed form")
@@ -1019,7 +1020,6 @@ def assert_print_layer_outputs() -> None:
 
 def assert_reader_failure_pair_roles() -> None:
     rows = load_reader_facing_example_rows()
-    source_ref = "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1027"
     expected_roles = {
         "*bárdaz": "example_input",
         "*bearda": "yielded_output",
@@ -1035,10 +1035,18 @@ def assert_reader_failure_pair_roles() -> None:
         "*dæġ": "expected_output",
     }
     row_by_key = {(row["source_ref"], row["form"]): row for row in rows}
+    source_refs = {row["source_ref"] for row in rows if row["form"] == "*bárdaz"}
+    source_ref = next(
+        (
+            ref
+            for ref in source_refs
+            if all((ref, form) in row_by_key for form in expected_roles)
+        ),
+        None,
+    )
+    assert source_ref is not None, "Missing reader-facing failure-pair example group"
     for form, expected_role in expected_roles.items():
-        key = (source_ref, form)
-        assert key in row_by_key, f"Missing failure-pair example row for {form}"
-        row = row_by_key[key]
+        row = row_by_key[(source_ref, form)]
         assert row["example_role"] == expected_role, f"Expected {form} to be {expected_role}, got {row['example_role']}"
         assert row["include_in_example_index"] == "yes"
 
@@ -1046,9 +1054,9 @@ def assert_reader_failure_pair_roles() -> None:
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
-        ("### knob — OE *cnobba", r"\index[oe]{cnobba@*cnobba}"),
-        ("### reek — OE *rēac", r"\index[oe]{reac@*rēac}"),
-        ("### strew — OE *strīeġan", r"\index[oe]{striegan@*strīeġan}"),
+        ("### knob — OE _\\*cnobba_", r"\index[oe]{cnobba@\emph{*cnobba}}"),
+        ("### reek — OE _\\*rēac_", r"\index[oe]{reac@\emph{*rēac}}"),
+        ("### strew — OE _\\*strīeġan_", r"\index[oe]{striegan@\emph{*strīeġan}}"),
     ):
         start = text.index(heading)
         window = text[start : start + 400]

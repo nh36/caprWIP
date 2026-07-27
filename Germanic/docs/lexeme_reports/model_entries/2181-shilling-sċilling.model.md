@@ -22,11 +22,11 @@ Kroonen treats the cognate set under `*skellinga- ~ *skillinga-` and connects it
 
 ### Old English evidence
 
-Clark Hall records `scilling`, and Campbell cites `scilling` among nouns whose derivational `-ing` keeps `i` in unstressed syllables [@ClarkHall1960; @Campbell1959]. The target represented here is the ordinary OE citation form, normalized as `sċilling`.
+Clark Hall records `scilling`, and Campbell cites it among nouns with unstressed `i` in derivational `-ing` [@ClarkHall1960; @Campbell1959]. The target is the ordinary OE citation form, normalized as `sċilling`.
 
 ### Development to Old English
 
-From `*skíllingaz`, loss of final `-az` yields `*skílling`. Old English palatalization of initial `sk` before front vocalism then gives `sċilling`. The note matters because derivational `-ing-` keeps `i`, so the regular outcome is `sċilling`, not `*sċilleng` [@Campbell1959; @Hogg1992].
+From `*skíllingaz`, loss of final `-az` yields `*skílling`. Old English palatalization of initial `sk` before front vocalism then gives `sċilling`. The `i` of derivational `-ing-` remains, so the regular outcome is `sċilling`, not `*sċilleng` [@Campbell1959; @Hogg1992].
 
 ### Form note
 

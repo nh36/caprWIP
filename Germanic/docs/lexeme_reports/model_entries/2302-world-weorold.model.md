@@ -18,20 +18,20 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The word is the old compound 'age of men'. Comparative sources preserve two
-slightly different views of its first element. Orel and the `*wira-` tradition
-keep the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
+The word is the old compound 'age of men'. Orel and the `*wira-` tradition
+reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
 `*weraldiz` and its pre-Old-English chain `*weraldu > *weruld`
 [@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
 compound `*wira-aldō` and explicitly includes Old English `weorold`
 [@KlugeSeebold2011, 981].
 
-The selected input [`*wír-àldu`]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore differs from the citation label in two
-ways. It keeps the older `*wir-` vowel of the comparative headword, but it also
-presupposes the early shift of the compound into the ō-stems that Ringe and
+
+The selected input [`*wír-àldu`]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore combines the older `*wir-` vowel of the comparative headword with
+the early shift of the compound into the ō-stems that Ringe and
 Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
 regularly.
+
 
 ### Old English evidence
 

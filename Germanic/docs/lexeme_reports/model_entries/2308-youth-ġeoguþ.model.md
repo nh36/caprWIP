@@ -24,7 +24,7 @@ The wider etymological tradition reconstructs an earlier form of the word as
 derivational input [`*júgunθ`]{.iv lang=pgmc sort=jugunth role=selected_input} is later again: it represents the form after final
 `-i` has been lost.
 
-That staging matters because Ringe and Taylor explicitly give the sequence
+Ringe and Taylor explicitly give the sequence
 `*jugunþi > *juguþ > OE geoguþ ~ iuguþ` [@RingeTaylor2014, 141]. The
 derivational input therefore differs from the broader comparative headword
 because the Old English development must begin after early loss of final `-i`.

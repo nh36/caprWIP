@@ -868,8 +868,15 @@ def demote_model_heading(heading: str) -> str:
     return "#### " + heading.removeprefix("### ").strip()
 
 
+def format_entry_title(title: str) -> str:
+    lexical_item, separator, target = title.partition(" — OE ")
+    if not separator:
+        return title
+    return f"{lexical_item}{separator}{italicize_form(target)}"
+
+
 def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
-    out: list[str] = [f"### {model['title']}", "", derivation_summary(model, trace_entry)]
+    out: list[str] = [f"### {format_entry_title(str(model['title']))}", "", derivation_summary(model, trace_entry)]
 
     if trace_entry is not None:
         out.extend(
@@ -908,7 +915,7 @@ def book_prose_path(entry_path: Path, prose_dir: Path) -> Path:
 
 
 def rewrite_book_prose_entry(model: dict[str, object], trace_entry: dict[str, str] | None, body: str) -> str:
-    out: list[str] = [f"### {model['title']}", "", derivation_summary(model, trace_entry)]
+    out: list[str] = [f"### {format_entry_title(str(model['title']))}", "", derivation_summary(model, trace_entry)]
     if trace_entry is not None:
         out.extend(["", *render_trace_table(trace_entry)])
     if body.strip():
@@ -967,7 +974,7 @@ def build_front_matter(
     method_paragraph = (
         "Regular entries use the compact book-prose layer, while the remaining derivation classes retain their fuller entry prose. Each entry keeps a derivational summary and a boxed trace divided between Earlier Germanic and Old English developments."
         if compact_regular_active
-        else "Each lexical entry keeps the pilot structure: a generated derivation summary, a boxed derivation trace split into Earlier Germanic changes and Old English changes, and the current entry prose. The summary distinguishes citation reconstruction, selected input, transducer outcome, and selected target where those differ, and the boxed trace remains a compact PDF-oriented rendering of the current compact trace data."
+        else "Four objects must be distinguished in every derivation: the citation reconstruction, the selected input, the transducer outcome, and the Old English target. The summary identifies them where they differ; the boxed trace then divides the changes into Earlier Germanic and Old English stages."
     )
     lines = [
         "# Germanic Lexeme Reports: Lexical Derivation Volume",
@@ -1026,7 +1033,7 @@ def assert_print_regressions(text: str) -> None:
         "PNWGmc _\\*brokiz_ > _\\*breeci_ > OE _bréc_",
         "northwest Germanic _\\*brokiz_ > _\\*breeci_ > OE _bréc_",
     )
-    if "### breeches — OE brēċ" in text and not any(
+    if "### breeches — OE _brēċ_" in text and not any(
         phrase in text for phrase in expected_breeches_phrases
     ):
         raise ValueError("reader-facing output is missing the normalized breeches stage phrase")

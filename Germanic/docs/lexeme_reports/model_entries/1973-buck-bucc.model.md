@@ -30,7 +30,7 @@ Old English preserves a mixed lexical picture. Campbell cites [`bucca`]{.iv lang
 exception set for this phonological environment [@Campbell1959, §115]. Clark
 Hall and Bosworth-Toller show that Old English has both [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} and [`bucc`]{.iv lang=oe sort=bucc role=target_form}
 [@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [`bucc`]{.iv lang=oe sort=bucc role=target_form}
-is the target treated here, with [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} kept as genuine philological
+is the target treated here; [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} supplies genuine philological
 background from the same lexical family.
 
 ### Development to Old English

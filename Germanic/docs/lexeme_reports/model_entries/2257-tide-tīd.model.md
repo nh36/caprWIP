@@ -30,4 +30,4 @@ From `*tḯdiz`, final `z` is lost and the high final vowel drops, leaving `tīd
 
 ### Lexical note
 
-The note matters only because English *tide* can pull in the separate weak verb `tīdan`; the noun targeted here is `tīd`.
+English *tide* can also lead to the separate weak verb `tīdan`; the noun is `tīd`.

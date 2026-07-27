@@ -53,4 +53,4 @@ from the strong verb actually reflected in Old English.
 | Formation / class | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | comparative weak-verb label | *laθōjaną | wider family background | broader family context | useful family label, but not the direct source of `hladan` |
-| selected strong Verner-grade input | *xláðaną | compact-trace output: `hladan` | hladan | exact match between formation and attested OE infinitive |
+| selected strong Verner-grade input | *xláðaną | compact-trace output: `hladan` | _hladan_ | exact match between formation and attested OE infinitive |

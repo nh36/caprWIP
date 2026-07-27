@@ -30,4 +30,4 @@ Breaking before `r + C` yields `weor-`, and the infinitive develops regularly to
 
 ### Lexical note
 
-The note matters because English *warp* also points to related `wearp` material. Here the target is specifically the infinitive `weorpan`.
+English *warp* also points to related `wearp` material. The target is the infinitive `weorpan`.

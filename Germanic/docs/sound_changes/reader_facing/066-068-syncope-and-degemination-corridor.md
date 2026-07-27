@@ -2,13 +2,18 @@
 
 ## Historical discussion of late syncope and degemination
 
-Once later medial syncope begins to bite, the language inherits new consonant clusters that do not always remain stable. Hogg and Ringe and Taylor both describe this connection between vowel loss and later consonant simplification, while Brunner's discussion of *netle* ‘nettle’ beside later *netele* keeps the syncope evidence tied to a concrete lexical type [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2; @SieversBrunner1965, pp. 144--145, §§158--159]. Fulk is especially useful for the larger timing, because he places this syncope after i-umlaut [@Fulk2018, p. 91, §5.6].
+Vowel loss creates the clusters upon which later assimilation and degemination
+operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
+*netle* ‘nettle’ beside later *netele* supplies a concrete lexical type
+[@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
+@SieversBrunner1965, pp. 144--145, §§158--159]. Fulk places this syncope after
+i-umlaut [@Fulk2018, p. 91, §5.6].
 
-The resulting chapter has an uneven center of gravity. Syncope itself is well motivated, one downstream degemination rule has a clear lexical breakpoint, and the dental assimilation step between them is plausible without yet being independently well anchored. That imbalance is part of the point. The sequence shows how the transducer can make a narrow chain of consequences explicit without pretending that every member has the same evidential weight.
+The three relations are not equally secure. Lexical evidence orders syncope
+and degemination; the intervening dental assimilation has no independent
+ordering witness.
 
 ## SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
-
-The syncope rule is stated directly.
 
 ```foma
 define OELAdjacentSyncope [
@@ -18,23 +23,19 @@ define OELAdjacentSyncope [
 ];
 ```
 
-In prose, it deletes medial \emph{*i} before \emph{*l}, creating forms such as *netle* ‘nettle’ and *spinl* ‘spindle’.
+The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
+earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
 
-Its chronology is explicit on both sides. If the rule is moved before
-[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*nátilōn} yields *nætle* rather
-than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl*
-rather than expected *spinl* ‘spindle’. If the rule is delayed until after
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields *spinnl* rather than expected *spinl*. This shows that
-[SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), and that
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination).
-
-The checked forms therefore place the rule in a wider late-syncope interval. The later relation to [SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination) is the nearer local result; the earlier boundary at [SC055 OEIUmlaut](#rule-OEIUmlaut) mainly shows that this syncope belongs after the umlautal phase described in the handbooks. CAPR keeps it here as the opening step in the syncope-and-cluster-simplification sequence.
+Placed before i-umlaut, PGmc \emph{*nátilōn} yields *nætle* rather than
+expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl* rather
+than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
+\emph{*spénnilō} yields *spinnl* rather than expected *spinl*. The witnesses
+therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
+degemination. The first relation separates two historical phases; the second is
+a direct feeding relation, since syncope creates the cluster that degemination
+simplifies.
 
 ## SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation}
-
-The dental repair step is formally very short.
 
 ```foma
 define OEDentalAssimilation [
@@ -42,31 +43,25 @@ define OEDentalAssimilation [
 ];
 ```
 
-In prose, it removes \emph{*θ} after \emph{*t} when syncope has created an over-heavy dental cluster. That kind of cluster simplification is historically plausible as part of the same late sequence that follows syncope [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
-
-If the rule is moved earlier or later within the tested sequence, no checked form yields a form different from the expected one. The tested forms therefore do not place [SC067 OEDentalAssimilation](#rule-OEDentalAssimilation) before or after any specific neighboring change.
-
-That makes the rule best read as a narrow intermediate step inside the late syncope sequence. It is useful in the derivation, but the present evidence does not justify treating it as a stronger chronology anchor than it is. The handbooks support the broader pattern of syncope followed by cluster simplification, while CAPR states this dental simplification as a separate step. The placement is therefore historically plausible but approximate, not a tightly fixed local ordering.
+Loss of \emph{*θ} after \emph{*t} resolves a dental cluster produced by syncope
+[@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
+No witness distinguishes its position: moving dental assimilation across every
+tested neighbor leaves the outputs unchanged. I nevertheless place it after
+syncope, which supplies its input, and before the more general cluster
+simplification described in the handbooks. This order is phonologically
+motivated, not established by a lexical contrast.
 
 ## SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
-
-The final degemination rule is written as one composed definition.
 
 ```foma
 define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN;
 ```
 
-In prose, it simplifies doubled \emph{*tt} or \emph{*nn} before a following sonorant. The historical logic is straightforward enough. Once syncope has created a cluster such as the one behind *spinl* ‘spindle’, the doubled consonant does not remain [@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
+Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has
+created a following sonorant cluster, as in *spinl* ‘spindle’
+[@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
-Its positive evidence is one-sided but exact. If the rule is moved before
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō}
-yields *spinnl* rather than expected OE *spinl* ‘spindle’. This shows that
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination). If the
-rule is moved later within the tested sequence, no checked form yields a form
-different from the expected one.
-
-That one-sided profile is still meaningful. The checked forms fix the earlier
-relation but do not identify a corresponding later constraint. CAPR keeps the
-rule here because the sources treat this simplification as a follower to the
-syncope-created cluster sequence.
+Placed before l-adjacent syncope, PGmc \emph{*spénnilō} yields *spinnl* rather
+than expected OE *spinl* ‘spindle’. Syncope must therefore create the cluster
+before degemination simplifies it. Reordering degemination against any tested
+later change leaves the witness unchanged, so no terminus ante quem is known.

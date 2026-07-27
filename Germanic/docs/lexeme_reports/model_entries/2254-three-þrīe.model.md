@@ -23,8 +23,8 @@ under one Old English-ready paradigm cell [@Kroonen2013, 586]. The input
 **[`*θréjez`]{.iv lang=pgmc sort=threjez role=selected_input}** is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
-That distinction matters because the Old English numeral does not have one
-uniform citation form across the paradigm. The masculine singular line must be
+The Old English numeral has no uniform citation form across the paradigm. The
+masculine singular line must be
 kept apart from feminine-neuter **`þrēo`** and from later reduced spellings of
 the masculine form.
 

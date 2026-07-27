@@ -20,12 +20,12 @@ DERIVATION_CLASS: reconstructed_oe
 
 Kroonen cites the inherited weak verb as **[`*straujan-`]{.iv lang=pgmc sort=straujan role=source_protoform}** and gives Old English
 **[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** as its dictionary continuation [@Kroonen2013, 483]. Ringe and
-Taylor make the split within Old English explicit: the inherited class-I verb is
+Taylor distinguish the two Old English formations: the inherited class-I verb is
 continued by Anglian **[`strēgan`]{.iv lang=oe sort=stregan role=comparison_form}**, while West Saxon **[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** is a
 remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].
 
-The aw-series comparison is important here. Luick groups `*strauwjan` with the
-same set as `*hauwja-` and `*kauwjan`, yielding Anglian `strēzan` beside West
+Luick groups `*strauwjan` with the same set as `*hauwja-` and `*kauwjan`,
+yielding Anglian `strēzan` beside West
 Saxon forms of the `hīez, ciezan` type [@Luick1914, §98]. Fulk likewise allows
 an early West Saxon **`*striegan`** directly from Proto-Germanic `*straujana`
 [@Fulk2018, §4.10 n. 1].
@@ -38,9 +38,9 @@ attested West Saxon citation forms are **`strewian`**, **`streowian`**, and
 [@RingeTaylor2014, §6.1 n. 27; @Campbell1959, §753.7].
 
 The target **[`*strīeġan`]{.iv lang=oe sort=striegan role=target_form}** is therefore a **reconstructed Old English form**, not
-an attested manuscript lemma. It is the reconstructed West Saxon reflex of the
-inherited class-I verb, chosen to keep the inherited branch distinct from the
-better-attested remodelled West Saxon lemma.
+an attested manuscript lemma. It is the inferred West Saxon reflex of the
+inherited class-I verb; the attested West Saxon lemma belongs to the remodelled
+class-II formation.
 
 ### Development to Old English
 
@@ -56,8 +56,8 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 ### Reconstruction status
 
-The comparison below is manual. It keeps apart the attested inherited branch,
-the attested remodelled branch, and the reconstructed West Saxon comparator.
+
+
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |

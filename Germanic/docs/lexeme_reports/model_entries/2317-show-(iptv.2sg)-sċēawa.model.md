@@ -21,7 +21,7 @@ DERIVATION_CLASS: late_analogy
 
 Orel reconstructs the verb as `*skawōjanan` and cites Old English `sceáwian` beside Old Frisian `skawia`, Old Saxon `skawōn`, and Old High German `scouwōn` [@Orel2003, 337]. The selected input in this entry is not that infinitive but the imperative singular `*skáwô`, a finite class-II cell with imperative `-a < *-ō` [@RingeTaylor2014, 314].
 
-That distinction matters because the imperative singular provides the direct comparison for the Old English form treated here. The lexical history still belongs to the `sceáwian` verb, but the selected cell isolates the finite `-a` outcome more clearly than the citation form does.
+The imperative singular provides the direct comparison with the Old English form. The lexical history still belongs to the `sceáwian` verb, but the selected cell isolates the finite `-a` outcome more clearly than the citation form does.
 
 ### Old English evidence
 

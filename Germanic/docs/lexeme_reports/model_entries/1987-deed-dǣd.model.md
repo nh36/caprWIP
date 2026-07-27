@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the noun as `*dēdiz`, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic `*dédiz` through northwest Germanic `*dadiz` [@Orel2003; @RingeTaylor2014]. The stress-marked form `*dḗdiz` represents that same inherited noun in a notation that keeps the stressed long vowel explicit.
+Orel reconstructs the noun as `*dēdiz`, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic `*dédiz` through northwest Germanic `*dadiz` [@Orel2003; @RingeTaylor2014]. The acute accent in `*dḗdiz` marks stress on the same reconstructed long vowel.
 
 ### Old English evidence
 

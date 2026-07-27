@@ -35,8 +35,8 @@ The Old English noun is attested, not reconstructed. Clark Hall gives `rūst m.`
 [@BosworthToller1898, 677]. The form is normalized here as `rust` from that attested
 record.
 
-Those dictionary entries also matter morphologically. They support a masculine
-noun, which aligns better with Orel's `*rustaz` than with the competing `*rústō`
+Those dictionary entries identify a masculine noun, which aligns better with
+Orel's `*rustaz` than with the competing `*rústō`
 preserved in the header.
 
 ### Development to Old English

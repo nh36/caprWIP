@@ -24,8 +24,8 @@ selected input **[`*θūs-èndi`]{.iv lang=pgmc sort=thusendi role=selected_inpu
 transponent with the second-member vowel already resolved to `e` and the final
 high vowel already shortened for apocope.
 
-The important question is therefore chronological. Why does Old English show
-**[`þūsend`]{.iv lang=oe sort=thusend role=target_form}**, while related languages such as Old Saxon and Old High German keep
+The chronology must explain why Old English shows
+**[`þūsend`]{.iv lang=oe sort=thusend role=target_form}** while related languages such as Old Saxon and Old High German keep
 `u` in the second syllable? [@Kroonen2013, 554].
 
 ### Old English evidence

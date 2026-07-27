@@ -27,7 +27,3 @@ Clark Hall records `swealwe (a, o)` as the noun headword [@ClarkHall1960]. Campb
 ### Development to Old English
 
 From `*swálwōn`, brightening yields `*swælw-`, and breaking before `lw` gives `*swealw-`. The later noun ending develops regularly to `swealwe`. The relevant point is that the bird name has no inherited `*g`: that consonant belongs to the separate verb `swelgan` [@RingeTaylor2014, 200; @Kroonen2013, 535].
-
-### Form note
-
-The final prose keeps the citation form `swealwe` separate from two different kinds of background material: the unrelated verb `swelgan`, and later or oblique spellings such as `swaluwe` or `swalewan` [@ClarkHall1960; @Campbell1959].

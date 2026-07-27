@@ -52,8 +52,8 @@ this stage [@RingeTaylor2014, 330; @Bulbring1902, §445].
 
 ### Source comparison
 
-The comparison below is manual. It keeps apart the broader comparative label,
-the OE-facing transponent, and the later West Saxon variant history.
+
+
 
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |

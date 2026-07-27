@@ -37,8 +37,8 @@ Campbell treats `wulf` as part of the exceptional `u` set
 [@Campbell1959, §115]. Sievers-Brunner notes that oblique `wulfe` continues
 `wulfi` or older `wulfai` [@SieversBrunner1965, §160].
 
-That warning matters because the surviving oblique forms do not supply a clean
-regular route back to bare `wulf`. They belong to the same lexeme, but they do
+The surviving oblique forms do not supply a regular route back to bare `wulf`.
+They belong to the same lexeme, but they do
 not remove the explanatory problem presented by the citation form.
 
 ### Development to Old English

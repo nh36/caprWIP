@@ -33,8 +33,8 @@ exact inflected form [`swanes`]{.iv lang=oe sort=swanes role=target_form}, citin
 [@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a
-reconstruction. It is also not the ordinary citation lemma. The entry must keep
-those two facts distinct.
+reconstruction or the ordinary citation lemma.
+
 
 ### Development to Old English
 

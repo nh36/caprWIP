@@ -2,19 +2,17 @@
 
 ## Historical discussion of awj glide formation and au-fronting
 
-These two rules belong together because the same *hay* and *strew* material passes through both of them. [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) reshapes the older \emph{awj} sequence, and [SC030 OEAuFronting](#rule-OEAuFronting) then fronts the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence in ordinary historical terms [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
+The *hay* and *strew* material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
 
-That relation is close enough to justify one paired chapter, but the two rules still need separate historical discussions and separate chronology paragraphs. The first rule prepares the sequence; the second carries it forward into [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling).
+Glide formation creates the input to fronting; diphthong leveling follows both.
 
 ## Historical discussion of awj glide formation
 
 Older \emph{awj} sequences are the source of forms such as *hīeġ* ‘hay’ and *strīeġan* ‘strew’. Campbell treats the relevant developments directly, and Ringe and Taylor likewise trace the same material through intermediate \emph{auj}-type stages [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
 
-This makes [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) historically clear even though its current order evidence is one-sided.
+The sources establish glide formation, while the witness forms supply only a later boundary.
 
 ## SC029. Glide formation in \emph{*awj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation}
-
-The implementation keeps the glide-formation step explicit.
 
 ```foma
 define OEAwjGlideFormation [
@@ -25,21 +23,17 @@ define OEAwjGlideFormation [
 ];
 ```
 
-In prose, the rule turns older \emph{awj} material into the glide sequence that the following fronting rule can read. This is the step behind forms such as *hīeġ* and *strīeġan*.
-
-Its ordinary historical chronology is one-sided. If the rule is delayed until after [SC030 OEAuFronting](#rule-OEAuFronting), PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. This shows that [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) must come before [SC030 OEAuFronting](#rule-OEAuFronting). If the rule is moved earlier within the tested sequence, no checked form yields a form different from the expected one.
-
-The checked forms therefore fix only that later relation. They do not identify a corresponding earlier constraint, and CAPR keeps the rule here because the sources treat `awj` reshaping as the preparatory step before the fronted diphthongal outcomes develop.
+The *hīeġ* and *strīeġan* derivations show that \emph{awj} reshaping prepared the input to fronting. If fronting is applied first, PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. Earlier placement of glide formation changes no checked output, so these forms supply an upper boundary without a corresponding lower one.
 
 ## Historical discussion of au-fronting
 
-Once the glide sequence is in place, \emph{au}-fronting produces the fronted diphthongal outcomes that carry this material into the broader West Saxon vowel history. Campbell's account of \emph{au} > \emph{ēa} keeps that larger setting in view [@Campbell1959, pp. 53--54, §135].
+Once the glide sequence is in place, \emph{au}-fronting produces the fronted
+diphthongal outcomes of the broader West Saxon vowel history. Campbell
+describes \emph{au} > \emph{ēa} [@Campbell1959, pp. 53--54, §135].
 
-That is why [SC030 OEAuFronting](#rule-OEAuFronting) matters beyond the immediate pair: it reciprocates [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) and then passes a wider set of derivations forward into [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling).
+Fronting must follow glide formation and precede diphthong leveling, which applies to a wider set of derivations.
 
 ## SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting}
-
-The implementation states the fronting step directly.
 
 ```foma
 define OEAuFronting [
@@ -48,8 +42,7 @@ define OEAuFronting [
 ];
 ```
 
-In prose, the rule fronts \emph{au} so that later Old English diphthongal outcomes can develop in the expected way. It is the step that connects the *hay* / *strew* material to the wider diphthongal region that follows.
+Two distinct failure sets confine fronting. Placed before glide formation, it produces the wrong forms: PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. Placed after diphthong leveling, PGmc \emph{*galáubijaną}, \emph{*bráudą}, and \emph{*dráugmaz}, together with sixteen other derivations, fail to produce output at all (\emph{+?}) instead of yielding expected OE *ġelīefan* ‘believe’, *brēad* ‘bread’, and *drēam* ‘dream’. The lexical errors require fronting to follow glide formation, while the failed derivations require it to precede diphthong leveling.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation), PGmc \emph{*xáwwją} yields *hauġ* rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields *strauian* rather than expected *strīeġan* ‘strew’. If it is delayed until after [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), PGmc \emph{*galáubijaną}, \emph{*bráudą}, and \emph{*dráugmaz}, together with sixteen other derivations, fail to produce output at all (\emph{+?}) instead of yielding expected OE *ġelīefan* ‘believe’, *brēad* ‘bread’, and *drēam* ‘dream’. This shows that [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) must come before [SC030 OEAuFronting](#rule-OEAuFronting), and that [SC030 OEAuFronting](#rule-OEAuFronting) must come before [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling).
-
-The later failure set is broad and is best read as failed derivations. It does not present a competing set of Old English surface forms.
+The later failure set consists of failed derivations, not competing Old English
+surface forms.

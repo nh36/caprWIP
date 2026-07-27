@@ -19,9 +19,9 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative evidence groups the word with Germanic forms of the
-`*wīþja/ō-` or `*wiþ-` type [@Orel2003, 503]. That material is
-useful for the cognate set, but it does not by itself explain the Old English
-suffix of `wīþiġ`.
+`*wīþja/ō-` or `*wiþ-` type [@Orel2003, 503]. These forms establish the
+cognate set but do not by themselves explain the Old English suffix of
+`wīþiġ`.
 
 For Old English, the relevant point is the suffix history. Campbell's account
 of OE `-ig`, including forms such as `hunig`, supports an analysis in which the

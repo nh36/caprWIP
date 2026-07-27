@@ -4,11 +4,9 @@
 
 Fulk treats West Germanic consonant gemination before `*j` after a short vowel as a regular development and illustrates it with forms such as OE *settan* 'set' and *lecgan* 'lay' [@Fulk2018, p. 127, §6.15].
 
-That historical support is good, but the environment must stay explicit. This is not a general chapter on doubled consonants. The relevant setting is a short vowel before \emph{*j}.
+The change applies specifically after a short vowel before \emph{*j}, not to geminate consonants generally.
 
 ## SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination}
-
-The implementation keeps the j-gemination step explicit.
 
 ```foma
 define PWGmcJGemination [
@@ -28,6 +26,6 @@ define PWGmcJGemination [
 ];
 ```
 
-In prose, the rule doubles consonants before \emph{*j} after a short vowel. It preserves one of the steps behind OE *nett* 'net' and related West Germanic outcomes in this narrow environment.
+OE *nett* 'net' fixes the order because the syllabic-\emph{j} development would remove the glide that conditions gemination. If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) precedes [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc \emph{*nátją} yields *nete* rather than expected OE *nett* 'net'. Earlier movement of gemination changes no checked output.
 
-Its chronology is useful but asymmetric. If the rule is moved earlier within the tested range, no checked form yields a form different from the expected one. If [SC010 PWGmcJGemination](#rule-PWGmcJGemination) is delayed past [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), PGmc \emph{*nátją} yields *nete* rather than expected OE *nett* 'net'. This shows that [SC010 PWGmcJGemination](#rule-PWGmcJGemination) must come before [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ). The checked forms therefore fix the close relation between [SC010 PWGmcJGemination](#rule-PWGmcJGemination) and [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ), but do not identify a corresponding earlier constraint. CAPR keeps the rule here because the sources treat West Germanic j-gemination as the consonantal step that must already be in place before the following syllabic-\emph{j} development.
+The chronology is phonologically transparent: the consonant must geminate before \emph{*j} ceases to be consonantal. The witness establishes no earlier boundary.

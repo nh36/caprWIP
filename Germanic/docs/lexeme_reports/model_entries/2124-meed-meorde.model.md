@@ -19,8 +19,8 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The lexeme-level reconstruction is [`*mizdō`]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the selected input [`*mízdai`]{.iv lang=pgmc sort=mizdai role=selected_input}
-is a dative-singular cell rather than the citation form. That distinction is
-important because the Old English evidence for the `meord` side is oblique.
+is a dative-singular cell rather than the citation form. The Old English
+evidence for the `meord` side is oblique.
 
 The wider history of competing `mēd` remains disputed. Kroonen and Fulk
 explain it through some form of `z`-loss and compensatory lengthening

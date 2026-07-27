@@ -26,9 +26,8 @@ into one process [@Campbell1959, pp. 69--72, 89, §§170, 190--191].
 Hogg makes the conditioning sharper still. He states that the change takes place
 when the velar consonant is adjacent to and in the same syllable as a front
 vowel or the palatal consonant `j` [@Hogg1992, pp. 103--104]. This formulation
-is important because it moves the discussion from a broad list of palatal
-outcomes to a more precise phonological environment involving adjacency and
-syllable structure.
+replaces a broad list of palatal outcomes with a phonological environment
+defined by adjacency and syllable structure.
 
 Ringe and Taylor make the chronological relation still clearer. When they write
 that “after initial velars and \emph{*sk} had been palatalized” West-Saxon
@@ -41,20 +40,13 @@ such as \emph{weccan} ‘wake’, \emph{licgan} ‘lie’, \emph{lecgan} ‘lay�
 vowels and `j` create the palatal environment in which plain `k` and `g` cease
 to behave as plain velars [@RingeTaylor2014, pp. 213--214, §6.4.1].
 
-Taken together, these accounts show a gradual tightening of focus. Luick treats
-palatalization as a broad early movement. Campbell distinguishes more sharply
-between plain velars and the `sk` complex. Hogg specifies the adjacency and
-syllable conditions more directly. Ringe and Taylor then place the plain velar
-change in an explicit sequence that leads forward to later West-Saxon
-diphthongization. The literature therefore supports two claims at once: the
-change belongs to a larger palatalizing environment, and it must be kept
-distinct from neighboring processes if the sequence of developments is to be
-described accurately.
+Luick describes a broad early movement; Campbell distinguishes plain velars
+from the `sk` complex; Hogg specifies the adjacency and syllable conditions;
+and Ringe and Taylor order the plain-velar change before West-Saxon
+diphthongization. Plain-velar palatalization thus forms part of a wider
+palatalizing environment without being identical to its neighboring changes.
 
 ## SC052. Palatalization of \emph{*k} before front vowels and \emph{*j} (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront}
-
-The first part of the implementation isolates the `k`-side environments of the
-change.
 
 ```foma
 define OEVelarPalatalizationKFront [
@@ -72,32 +64,11 @@ define OEVelarPalatalizationKFront [
 ] ;
 ```
 
-In prose, the rule turns plain `k` into a palatal outcome before front vowels
-and `j`, including the geminated environment before `j`.
+The *weccan* ‘wake’, *licgan* ‘lie’, and *lecgan* ‘lay’ set identifies front vowels and `j` as the environment for palatalization of `k` [@RingeTaylor2014, pp. 213--214, §6.4.1]. These forms establish the conditioning; different witnesses establish the chronology.
 
-Historically, this section corresponds to the core of the older discussion of
-palatalized velars. It captures the environments behind forms such as *weccan*
-‘wake’, *licgan* ‘lie’, and *lecgan* ‘lay’, where front vowels or `j` trigger
-the palatal outcome in the first place [@RingeTaylor2014, pp. 213--214,
-§6.4.1]. It is also the part of the process that prepares forms later assumed by
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and, farther on, by
-[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting).
-
-Within the present implementation, this helper rule is not ordered separately
-from the broader velar-palatalization rule below. Its chronology is therefore
-that of the larger rule it feeds. If the palatalization complex is moved before
-Sievers-law syncope, PGmc \emph{*strákkijaną} yields *strecċan* ‘stretch’ rather
-than expected OE *streċċan* ‘stretch’. If it is delayed beyond the umlautal
-core, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen*
-‘lungs’ rather than expected OE *cȳ* and *lungen*. The shared boundary pattern
-is therefore clear. [SC050 SieversLawSyncope](#rule-SieversLawSyncope) must
-come before [SC052 OEVelarPalatalizationKFront](#rule-OEVelarPalatalizationKFront), and the
-palatalization complex must in turn come before [SC055 OEIUmlautFronting](#rule-OEIUmlautFronting).
+Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields *strecċan* rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen* ‘lungs’ rather than expected OE *cȳ* and *lungen*. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
 
 ## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
-
-The broader rule adds the `g` environments and composes them with the `k`
-palatalization rule above.
 
 ```foma
 define OEVelarPalatalization [
@@ -113,45 +84,8 @@ define OEVelarPalatalization [
 ];
 ```
 
-In prose, the rule palatalizes plain `k` and `g` in front-vocalic and
-`j`-adjacent environments. Writing it as a separate rule clarifies the relative
-order of plain-velar palatalization, `sk`-palatalization, and umlautal
-developments.
+Plain `k` and `g` palatalization in front-vocalic and `j`-adjacent environments follows `sk`-palatalization and occupies a sharply defined pre-umlaut interval. Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields *strecċan* rather than expected OE *streċċan* ‘stretch’. Applied after general i-umlaut, PGmc \emph{*kūi} yields *ċȳ* rather than expected *cȳ* ‘cows’, and PGmc \emph{*lúnganjō} yields *lunġen* rather than expected *lungen* ‘lungs’. These witnesses place velar palatalization after Sievers-law syncope and before umlaut.
 
-The rule belongs after the earlier syncope that prepares forms like *streċċan*
-‘stretch’ and before the later umlautal rules that would otherwise
-over-palatalize forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’. See
-[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting) and
-[SC055 OEIUmlaut](#rule-OEIUmlaut) below.
+Luick, Campbell, and Ringe and Taylor place *cild* ‘child’ and *dæg* ‘day’ in a consonantal palatalization that precedes later vowel fronting [@Luick1914, p. 157, §168; @Campbell1959, p. 278, §440; @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1]. The umlautal developments therefore receive plain `k` and `g` already reshaped beside front vowels and `j`.
 
-If the rule is moved too early, before the syncope that prepares the consonant
-cluster, it breaks the derivation that should yield *streċċan* ‘stretch’. With
-PGmc \emph{*strákkijaną} in the wrong order, the model produces *strecċan*
-‘stretch’; the expected Old English form is *streċċan* ‘stretch’.
-
-If it is moved too late, after i-umlaut, it over-palatalizes forms such as
-*cȳ* ‘cows’ and *lungen* ‘lungs’. PGmc \emph{*kūi} then yields *ċȳ* ‘cows’;
-the expected form is *cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen*
-‘lungs’; the expected form is *lungen* ‘lungs’.
-
-These lexical failures show that [SC050 SieversLawSyncope](#rule-SieversLawSyncope)
-must come before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
-and that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) must come
-before [SC055 OEIUmlaut](#rule-OEIUmlaut).
-
-Once the rule is in place, plain velars before front vowels and `j` no longer
-remain plain. They become the palatal outcomes presupposed by later
-developments, including the umlautal rules discussed in
-[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting). That matters for
-dictionary-like forms such as *cild* ‘child’ or *dæg* ‘day’ and for the broader
-relation between consonantal palatalization and later vowel-fronting processes
-[@Luick1914, p. 157, §168; @Campbell1959, p. 278, §440; @RingeTaylor2014,
-pp. 203--215, §§6.4.1, 6.5.1].
-
-The evidence places the rule within a wider palatalizing environment, but it
-does not require every neighboring palatal process to be merged with it. `sk`
-belongs to a related but distinct development, and the later umlautal material
-poses a different historical problem. The relation to the earlier syncope rule
-is likewise specific and limited: the *streċċan* ‘stretch’ evidence shows a real
-dependency without turning the feeder process into a coequal sound law of the
-same scope.
+The `sk` change belongs to the same palatalizing region with a separate scope. The *streċċan* ‘stretch’ evidence establishes a specific dependency on earlier syncope; it does not merge the two changes into one process.

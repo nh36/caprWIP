@@ -28,8 +28,8 @@ related but distinct histories.
 
 ### Old English evidence
 
-Clark Hall keeps **[`wacan`]{.iv lang=oe sort=wacan role=target_form}** and **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form}** as separate headwords
-[@ClarkHall1960, 338]. Bosworth-Toller adds an important caution under
+Clark Hall lists **[`wacan`]{.iv lang=oe sort=wacan role=target_form}** and **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form}** as separate headwords
+[@ClarkHall1960, 338]. Bosworth-Toller cautions under
 **[`wacan`]{.iv lang=oe sort=wacan role=target_form}**: the simplex infinitive itself does not occur, its place seeming to
 be taken by **[`wæcnan`]{.iv lang=oe sort=waecnan role=comparison_form}** [@BosworthToller1898, 226].
 

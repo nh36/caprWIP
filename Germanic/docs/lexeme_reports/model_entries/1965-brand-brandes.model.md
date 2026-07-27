@@ -23,10 +23,9 @@ The inherited noun is the masculine a-stem [`*brándaz`]{.iv lang=pgmc sort=bran
 input [`*brándas`]{.iv lang=pgmc sort=brandas} is not a different lexeme but the genitive singular of that
 same a-stem noun.
 
-What matters here is therefore not a stem-class disagreement but the difference
-between the citation form and a specific inherited inflectional cell. The
-selected input preserves the same root and declension as the headword while
-making the oblique ending explicit.
+Both forms belong to the same root and stem class but occupy different inherited
+inflectional cells. The selected input is the oblique cell.
+
 
 ### Old English evidence
 

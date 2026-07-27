@@ -24,7 +24,7 @@ n-stems points to related voiced and voiceless branches within this group
 cognate-set headword, while the form followed here, `*knúbbô`, represents the voiced
 weak-noun branch treated here.
 
-That distinction matters because the Old English record is uneven. The better
+The Old English record is uneven. The better
 attested OE material belongs to the voiceless branch, but the present entry
 represents the reconstructed OE form that would continue the voiced branch
 behind later English knob.
@@ -35,12 +35,12 @@ Clark Hall preserves Old English evidence of the `cnoppa` type
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
-The target **`*cnobba`** is different in status. It is a **reconstructed Old
-English form**, not a directly attested one. The point of using it here is to
-give the voiced branch an explicit OE-stage representation instead of allowing
-the attested `cnoppa` branch to stand in for a different prehistory. The choice
-of `*cnobba` is therefore a modeling and comparative decision rather than a
-settled point of Old English philology.
+The target **`*cnobba`** is a **reconstructed Old English form**, not a directly
+attested one. I use it for the voiced branch because attested `cnoppa` continues
+the voiceless branch and therefore represents a different prehistory.
+
+
+
 
 ### Development to Old English
 
@@ -54,8 +54,8 @@ different: if the voiced weak-noun branch is the one to be represented, then
 
 ### Reconstruction status
 
-The comparison below keeps apart the reconstructed target and the
-better-attested neighboring forms.
+
+
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |

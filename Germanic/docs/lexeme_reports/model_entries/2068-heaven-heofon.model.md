@@ -23,7 +23,7 @@ The inherited noun belongs to the mn-stem family cited by Kroonen as
 oblique singular form within that paradigm rather than the lexeme-level
 citation form [`*xémenaz`]{.iv lang=pgmc sort=xemenaz}.
 
-That difference matters for the West Saxon target. Ringe and Taylor give
+The back-vocalic oblique stem accounts for the West Saxon target. Ringe and Taylor give
 northern WGmc [`*hebun`]{.iv lang=preoe sort=hebun} > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon}, Mercian
 [`heofen`]{.iv lang=oe sort=heofen} [@RingeTaylor2014, 324]. Campbell likewise gives [`heofon`]{.iv lang=oe sort=heofon} beside
 [`hefen`]{.iv lang=oe sort=hefen} in the same West-Saxon `u`-umlaut environment [@Campbell1959, §210.1].
@@ -47,8 +47,8 @@ reflected in northern WGmc [`*hebun`]{.iv lang=preoe sort=hebun} [@RingeTaylor20
 back-mutation and suffix reshaping behind [`heofon`]{.iv lang=oe sort=heofon}
 [@Campbell1959, §210.1; @Campbell1959, §381].
 
-The front-vocalic nominative line remains important as background because it
-explains the dialectal [`hefen`]{.iv lang=oe sort=hefen} type. West Saxon [`heofon`]{.iv lang=oe sort=heofon} reflects the oblique
+The front-vocalic nominative line explains the dialectal [`hefen`]{.iv lang=oe sort=hefen}
+type. West Saxon [`heofon`]{.iv lang=oe sort=heofon} reflects the oblique
 stem that was generalized into the nominative position.
 
 ### Paradigm comparison

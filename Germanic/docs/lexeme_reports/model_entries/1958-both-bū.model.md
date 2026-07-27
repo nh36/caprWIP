@@ -27,7 +27,7 @@ The older explanation of [`bēġen`]{.iv lang=oe sort=begen role=comparison_form
 gives `OE bezen (< *bō-jenō)` beside `ON` [`báðir`]{.iv lang=on sort=badir role=comparison_form}, `OFris` [`bēthe`]{.iv lang=ofris sort=bethe role=comparison_form}, `OS` [`be-thia`]{.iv lang=os sort=bethia role=comparison_form},
 and `OHG` [`bēde`]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a `*bō-þ-` analysis instead
-[@Fulk2018, §10.1]. That debate matters for [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} and for the extended forms
+[@Fulk2018, §10.1]. That debate concerns [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} and the extended forms
 behind Modern English [`both`]{.iv lang=modeng sort=both role=comparison_form}, German [`beide`]{.iv lang=german sort=beide role=comparison_form}, and Dutch [`beide`]{.iv lang=dutch sort=beide role=comparison_form}; it does not
 displace the inherited neuter [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} > [`bū`]{.iv lang=oe sort=bu role=target_form} treated here.
 

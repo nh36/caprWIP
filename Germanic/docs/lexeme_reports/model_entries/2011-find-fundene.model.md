@@ -23,7 +23,7 @@ The inherited verb is the strong verb [`*fínθaną`]{.iv lang=pgmc sort=finthan
 belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
-That distinction matters because the familiar dictionary form [`funden`]{.iv lang=oe sort=funden role=comparison_form} is not
+The familiar dictionary form [`funden`]{.iv lang=oe sort=funden role=comparison_form} is not
 the form compared here. The derivational input instead models an attested
 participial form directly, rather than treating the infinitive or the ordinary
 dictionary headword as primary. It therefore reaches [`fundene`]{.iv lang=oe sort=fundene role=target_form} in the form
@@ -32,7 +32,7 @@ where the trace and the attested evidence match directly.
 ### Old English evidence
 
 Bosworth-Toller records **[`fundene`]{.iv lang=oe sort=fundene role=target_form}** under [`findan`]{.iv lang=oe sort=findan role=comparison_form}, citing the form in
-`Beón þá herigeata swa fundene` [@BosworthToller1898, 219]. Clark Hall likewise preserves the
+_Beón þá herigeata swa fundene_ [@BosworthToller1898, 219]. Clark Hall likewise preserves the
 participial stem in forms such as [`funden`]{.iv lang=oe sort=funden role=comparison_form} and `tō-fundennes`
 [@ClarkHall1960, 124].
 
@@ -46,15 +46,15 @@ From [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input}, the parti
 weakening of the final ending, yielding [`fundene`]{.iv lang=oe sort=fundene role=target_form}. In that cell both the
 consonantism and the medial vowel history remain regular.
 
-The broader participial paradigm then matters for interpretation. The more
+The broader participial paradigm fixes the interpretation. The more
 familiar nominative [`funden`]{.iv lang=oe sort=funden role=comparison_form} is the ordinary dictionary form, whereas the
 oblique form [`fundene`]{.iv lang=oe sort=fundene role=target_form} is the attested form compared here.
 
 ### Paradigm comparison
 
-The comparison below is manual. It distinguishes the attested oblique
-participle from the more familiar nominative participial forms and keeps the
-cited Old English evidence alongside the regular derivational path.
+
+
+
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |

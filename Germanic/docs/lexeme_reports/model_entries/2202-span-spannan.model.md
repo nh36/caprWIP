@@ -22,7 +22,7 @@ Kroonen cites the inherited verb as `*spannan-`, with OE `spannan` among the ref
 
 ### Old English evidence
 
-Clark Hall keeps noun `spann` and verb `spannan` separate, and Brunner likewise records `sponnan, spannan stv.` [@ClarkHall1960; @SieversBrunner1965]. This entry treats the strong-verb infinitive, not the separate noun.
+Clark Hall lists noun `spann` and verb `spannan` as separate headwords, and Brunner likewise records `sponnan, spannan stv.` [@ClarkHall1960; @SieversBrunner1965]. The target is the strong-verb infinitive, not the noun.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From `*spánnaną`, the final nasal ending is lost and the regular OE weak-tail 
 
 ### Form note
 
-The note matters because English `span` can also reach noun `spann` in local lookup material. The entry represented here is the verb `spannan`, with the noun treated elsewhere [@ClarkHall1960].
+English `span` can also reach the noun `spann` in local lookup material. The form represented here is the verb `spannan`, with the noun treated elsewhere [@ClarkHall1960].

@@ -22,7 +22,7 @@ Kroonen cites the noun under `*brōk-`, with Old English `brōc` and plural 'bre
 
 ### Old English evidence
 
-Bright notes `brōc` with plural `brēc`, and Clark Hall gives `brēc fp. breeches` while also listing `broc` as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. The spelling `brēċ` used here makes the long vowel and palatal consonant explicit; the Old English evidence itself is the attested plural `brēc`.
+Bright notes `brōc` with plural `brēc`, and Clark Hall gives `brēc fp. breeches` while also listing `broc` as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. I write `brēċ` for the long vowel and palatal consonant; the attested plural is `brēc`.
 
 ### Development to Old English
 

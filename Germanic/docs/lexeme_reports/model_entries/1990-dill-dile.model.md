@@ -24,7 +24,7 @@ Old High German [`tilli`]{.iv lang=ohg sort=tilli role=comparison_form} on the o
 [`*déliz`]{.iv lang=pgmc sort=deliz role=selected_input} therefore represents the i-stem side of the paradigm,
 whereas the citation label [`*déljaz`]{.iv lang=pgmc sort=deljaz role=source_protoform} is a broader comparative headword.
 
-That stem-class distinction matters for the Old English consonant shape. A
+The stem class determines the Old English consonant shape. A
 ja-stem with `*-lj-` would be expected to produce gemination, but the Old
 English noun shows a single `l`. Fulk's discussion of ja-stems transferred to
 the i-stems provides the relevant morphological background for the OE side
@@ -45,7 +45,7 @@ i-stem type **[`dile`]{.iv lang=oe sort=dile role=target_form}**, not a geminate
 From [`*déliz`]{.iv lang=pgmc sort=deliz role=selected_input}, regular loss of final `z` and the later lowering of unstressed
 `i` yield [`dile`]{.iv lang=oe sort=dile role=target_form}. The stem itself remains ungeminated throughout that path.
 
-The important contrast is negative rather than phonological. If the word were
+The contrast is morphological rather than phonological. If the word were
 forced through a ja-stem `*-lj-` pathway, the expected result would show `ll`.
 The attested Old English noun instead matches the i-stem development.
 

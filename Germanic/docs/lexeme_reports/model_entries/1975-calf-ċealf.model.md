@@ -22,7 +22,7 @@ Kroonen treats the noun under `*kalbiz-` and notes an older s-stem `*kalbaz, pl.
 
 ### Old English evidence
 
-Clark Hall gives [`cealf`]{.iv lang=oe sort=cealf} I. (æ, e) nm. (nap. [`cealfru`]{.iv lang=oe sort=cealfru}), and Bosworth-Toller likewise records `Caelf` / `Cealf` beside plural forms such as `calfur` and [`cealfru`]{.iv lang=oe sort=cealfru} [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-`-r-` plural pattern [@Campbell1959; @Fulk2018, 193]. The spelling `ċealf` used here makes the palatalized initial explicit; the ordinary attested dictionary headword is [`cealf`]{.iv lang=oe sort=cealf}.
+Clark Hall gives [`cealf`]{.iv lang=oe sort=cealf} I. (æ, e) nm. (nap. [`cealfru`]{.iv lang=oe sort=cealfru}), and Bosworth-Toller likewise records `Caelf` / `Cealf` beside plural forms such as `calfur` and [`cealfru`]{.iv lang=oe sort=cealfru} [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-`-r-` plural pattern [@Campbell1959; @Fulk2018, 193]. I write `ċealf` for the palatalized initial; the attested dictionary headword is [`cealf`]{.iv lang=oe sort=cealf}.
 
 ### Development to Old English
 

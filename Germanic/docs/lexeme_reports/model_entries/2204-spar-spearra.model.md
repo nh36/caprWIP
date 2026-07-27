@@ -22,7 +22,7 @@ Kroonen and Orel place this noun in the beam or rafter set `*spar(r)an-`, with c
 
 ### Old English evidence
 
-The noun represented here is `spearra`. The important lexical point is negative: English gloss overlap also reaches the unrelated verb `sperran` 'to bar', but that verb does not belong to this row.
+The noun is `spearra`. English gloss overlap also reaches the unrelated verb `sperran` 'to bar', which does not belong to this row.
 
 ### Development to Old English
 

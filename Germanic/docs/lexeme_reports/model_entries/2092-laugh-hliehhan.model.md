@@ -22,7 +22,7 @@ The wider Germanic family includes a non-j branch represented here by the
 citation label `*lákaną`, while the selected input `*xláxjaną` reflects the
 j-present line behind Old English `hliehhan`.
 
-This branch choice matters because it brings with it the geminate fricative and
+This branch supplies the geminate fricative and
 the vowel development characteristic of the Old English verb. The comparative
 family label and the OE-facing input are therefore related but not identical.
 
@@ -35,8 +35,8 @@ glossary likewise gives `hlihhan (hliehhan, hlyhhan)`
 [@BrightCassidyRingler1971, 315]. The target of this entry is the West Saxon
 `hliehhan`.
 
-The variant set matters as background, but the argument of the entry rests on
-the attested lemma `hliehhan` itself.
+The variants belong to the same background, but the attested lemma `hliehhan`
+supplies the evidence followed here.
 
 ### Development to Old English
 
@@ -54,5 +54,5 @@ the j-present branch actually reflected in Old English.
 | Formation / branch | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | wider non-j family | *lákaną | comparative background outside the selected OE line | wider family context | useful family label, but not the direct source of `hliehhan` |
-| selected j-present branch | *xláxjaną | compact-trace output: `hliehhan` | hliehhan | exact match between branch and attested OE lemma |
-| attested OE variants | same OE verb line | `hlæhhan`, `hlehhan` | hlæhhan / hlehhan | genuine variant evidence, but secondary to the selected form |
+| selected j-present branch | *xláxjaną | compact-trace output: `hliehhan` | _hliehhan_ | exact match between branch and attested OE lemma |
+| attested OE variants | same OE verb line | `hlæhhan`, `hlehhan` | _hlæhhan_ / _hlehhan_ | genuine variant evidence, but secondary to the selected form |

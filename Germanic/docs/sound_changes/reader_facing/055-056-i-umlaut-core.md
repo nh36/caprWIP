@@ -1,6 +1,6 @@
 # The Old English i-umlaut and West Saxon palatal diphthongization
 
-## Historical discussion of i-umlaut and West Saxon palatal diphthongization
+## Historical discussion of i-umlaut \CAPRHeadingBreak and West Saxon palatal diphthongization
 
 Luick gives the change its traditional scale:
 
@@ -34,18 +34,12 @@ palatal consonants (which precedes front umlaut but not breaking)”
 triggered by already palatal consonants and leads to specifically West-Saxon
 diphthongal outputs [@RingeTaylor2014, pp. 215--216, §6.5.1].
 
-The sequence of discussion is fairly clear. Luick, Campbell, and Hogg all give
-i-umlaut primary importance. Ringe and Taylor and Fulk then help separate that
-major change from the narrower West-Saxon diphthongization that stands beside
-it. The literature therefore establishes a large, system-wide umlautal change
-and a narrower adjoining process affecting words after initial palatals. That
-distinction matters because the two processes act in different environments and
+Luick, Campbell, and Hogg treat i-umlaut as a system-wide change. Ringe and
+Taylor and Fulk distinguish from it a narrower West-Saxon process affecting
+words after initial palatals. The two changes act in different environments and
 produce different lexical consequences.
 
 ## SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
-
-The first component of the implementation handles the broad fronting of vowels
-under the influence of following `i` or `j`.
 
 ```foma
 define OEIUmlautFronting [
@@ -63,39 +57,13 @@ define OEIUmlautFronting [
 ];
 ```
 
-In prose, the rule fronts and raises the relevant simple vowels when a following
-`i` or `j` provides the trigger.
+The breadth of i-umlaut appears in lexical classes that share only a following high front vocoid. The forms *fylgan* ‘follow’, *gylden* ‘golden’, *wyrm* ‘worm’, and *giest* ‘guest’ exemplify the same `i`- or `j`-conditioned fronting across different vowels [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72, §§190--191].
 
-Historically, this is the most central part of the umlautal development
-described by Luick, Campbell, Hogg, Ringe and Taylor, and Fulk. Within the
-present implementation it stands after [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and before the narrower
-West-Saxon palatal-diphthongization rule discussed below.
+The cow and lung forms establish the lower boundary. If fronting precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* ‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen* ‘lungs’ rather than expected OE *lungen*. The consonantal change must therefore precede fronting.
 
-The handbooks describe the same conditioning environment in different ways but
-with the same phonological consequence: a following high front vocoid triggers
-the fronting of earlier back vowels. That is why forms such as *fylgan*
-‘follow’, *gylden* ‘golden’, *wyrm* ‘worm’, and *giest* ‘guest’ can all be
-treated inside the same formal rule even though they belong to different lexical
-classes [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72,
-§§190--191].
-
-The same ordering logic that governs the umlaut complex governs this component.
-If the umlautal rule set is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc \emph{*kūi} yields *ċȳ*
-‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen*
-‘lungs’ rather than expected OE *lungen*. At the other edge, the later
-West-Saxon diphthongization must follow the umlautal rule set: if that later
-rule is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than
-expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than
-expected *sċēaþ*. This shows that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
-must come before [SC055 OEIUmlautFronting](#rule-OEIUmlautFronting), and that
-[SC055 OEIUmlautFronting](#rule-OEIUmlautFronting) must come before
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
-
-As a component rule, it shares the chronology of [SC055 OEIUmlaut](#rule-OEIUmlaut).
+The gift and sheath forms establish the upper boundary. If West Saxon palatal diphthongization precedes fronting, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. Fronting consequently follows velar palatalization and precedes the West Saxon change; the other components of i-umlaut share those bounds.
 
 ## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
-
-The second component handles the raising of umlauted `æ` to `e`.
 
 ```foma
 define OEIUmlautRaising [
@@ -103,37 +71,17 @@ define OEIUmlautRaising [
 ];
 ```
 
-In plain language, this rule takes the fronted low vowel created by the earlier
-fronting rule and raises it further where the same umlaut trigger still holds.
+Raising of umlauted `æ` to `e` continues the same assimilatory event as fronting and therefore shares the chronology of general i-umlaut.
 
-Historically, this belongs inside the same broad i-umlaut development. It is
-part of the same chronological development and shares the evidence base of
-[SC055 OEIUmlaut](#rule-OEIUmlaut).
+The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields *ċȳ* instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of expected *lungen*. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz} yields *sċǣþ* rather than expected *sċēaþ*. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
 
-Like the fronting component, this raising rule falls between
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). If the umlaut complex is moved before
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), \emph{*kūi} yields *ċȳ*
-instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
-expected *lungen*. If the later West-Saxon diphthongization is moved too early,
-\emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
-yields *sċǣþ* rather than expected *sċēaþ*.
-
-These outcomes show that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
-must come before [SC055 OEIUmlautRaising](#rule-OEIUmlautRaising), and that
-[SC055 OEIUmlautRaising](#rule-OEIUmlautRaising) must come before
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
-
-This narrower subrule matters because the sources do not describe umlaut as
-simple fronting alone. Campbell explicitly notes that the low front vowel
+The sources do not describe umlaut as simple fronting alone. Campbell notes that
+the low front vowel
 changes again before `m` and `n` in most dialects [@Campbell1959, p. 69, §190],
 and Hogg likewise treats short front vowels as part of the same assimilatory
 system [@Hogg1992, p. 112].
 
 ## SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
-
-The third component handles the diphthongal outcomes that also undergo
-i-umlaut.
 
 ```foma
 define OEIUmlautDiphthong [
@@ -149,40 +97,18 @@ define OEIUmlautDiphthong [
 ];
 ```
 
-In prose, the rule states that diphthongal inputs are subject to umlaut as well:
-the vowel change is not confined to simple vowels.
-
-This matters historically because the handbooks describe i-umlaut as a
-system-wide assimilatory development. The rule therefore stands inside the same
-chronological bracket as [SC055 OEIUmlautFronting](#rule-OEIUmlautFronting) and
-[SC055 OEIUmlautRaising](#rule-OEIUmlautRaising), even though its outputs are
-shaped differently.
+Diphthongal outcomes belong to the same system-wide assimilation as simple-vowel fronting and raising. All three therefore belong to a single historical event.
 
 The relevant examples are the recurring West-Saxon `ie` forms cited in the
 handbooks, including *giest* ‘guest’, *giefan* ‘give’, and *hierde*
 ‘shepherd’ in Campbell and *ciest* ‘chest’ in Hogg
 [@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @Hogg1992,
-pp. 112--114]. The present formalization keeps those diphthongal outcomes
-visible as a distinct part of the general umlautal development and does not
-leave them implicit under the broad description of fronting.
+pp. 112--114]. These diphthongal outcomes form a distinct part of the general
+umlautal development alongside simple fronting.
 
-Chronologically, this component also shares the same evidence as the umlaut
-complex as a whole. If the umlaut complex is moved before
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), it
-over-palatalizes
-\emph{*kūi} and \emph{*lúnganjō}; too-early West-Saxon diphthongization yields
-*ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. The rule therefore
-belongs between [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). This places
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) before
-[SC055 OEIUmlautDiphthong](#rule-OEIUmlautDiphthong), and it places
-[SC055 OEIUmlautDiphthong](#rule-OEIUmlautDiphthong) before
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
+The chronology comes from the cow/lung and gift/sheath contrasts. Placed before velar palatalization, diphthongal mutation over-palatalizes \emph{*kūi} and \emph{*lúnganjō}; placed after West Saxon palatal diphthongization, it yields *ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. These failures place diphthongal mutation after velar palatalization and before West Saxon palatal diphthongization.
 
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
-
-The implementation also defines a composite rule that composes the three
-preceding parts.
 
 ```foma
 define OEIUmlaut OEIUmlautFronting
@@ -190,37 +116,13 @@ define OEIUmlaut OEIUmlautFronting
     .o. OEIUmlautDiphthong;
 ```
 
-In prose, this says that the implementation treats the umlaut as a sequence of
-fronting, raising, and diphthongal adjustments composed in order.
+The literature presents fronting, raising, and diphthongal mutation as effects of one historical development. They consequently occupy a single place in the Old English chronology.
 
-Chronologically, the composite rule must follow
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization). If it is
-moved too early, forms such as *cȳ* ‘cows’ and *lungen* ‘lungs’ become
-over-palatalized. PGmc \emph{*kūi} yields *ċȳ* ‘cows’; the expected form is
-*cȳ* ‘cows’. PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’; the expected form
-is *lungen* ‘lungs’.
+The lower boundary is consonantal. If general umlaut precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* ‘cows’ rather than expected *cȳ*, and PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’ rather than expected *lungen*. These over-palatalized forms place general umlaut after velar palatalization.
 
-The same local network gives the later boundary. If West-Saxon palatal
-diphthongization is moved too early, PGmc \emph{*géftiz} yields *ġieft* ‘gift’
-rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’
-rather than expected *sċēaþ*. The composite umlaut rule therefore must apply
-after [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and before
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
-
-Those failures show that the broad umlautal rule needs an earlier terminus post
-quem in the palatalization sequence, even though it remains the main vowel
-change within the present chapter.
-
-The composite rule is important because the literature presents the umlaut as a
-single historical development even while the implementation decomposes it into
-formal parts. The composite definition is the point at which the separate
-fronting, raising, and diphthongal effects are treated as one chronological
-event in the Old English sequence.
+The upper boundary separates general umlaut from the narrower West Saxon process. If West Saxon palatal diphthongization precedes umlaut, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. Together the two witness pairs place general umlaut after velar palatalization and before the West Saxon process.
 
 ## SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
-
-The narrower West-Saxon rule is treated separately from the broader umlautal
-complex.
 
 ```foma
 define OEWsPalatalDiphthongization [
@@ -233,35 +135,10 @@ define OEWsPalatalDiphthongization [
 ];
 ```
 
-In prose, this rule diphthongizes certain vowels after already palatal
-consonants in West Saxon. It therefore has a narrower dialectal and
-chronological scope than the broader umlaut rule.
+West Saxon *gieldan* ‘pay’, *scield* ‘shield’, and *scieppan* ‘create’ show diphthongization after an already palatal consonant [@RingeTaylor2014, pp. 215--216, §6.5.1]. Their dialectal and phonological restriction separates this development from system-wide i-umlaut.
 
-The historical evidence for that narrower scope is concrete. Ringe and Taylor
-illustrate the rule with forms such as *gieldan* ‘pay’, *scield* ‘shield’, and
-*scieppan* ‘create’, where an already palatal consonant triggers the diphthongal
-outcome [@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg’s *giefan* ‘give’ and
-*sceap* ‘sheep’ material belongs to the same phonological zone
-[@Hogg1992, pp. 108--109], while Fulk distinguishes this
-palatal-consonant-triggered diphthongization from the broad front-mutation
-process [@Fulk2018, p. 74, §4.13].
+Hogg's *giefan* ‘give’ and *sceap* ‘sheep’ belong to the same palatal-consonant environment [@Hogg1992, pp. 108--109]. Fulk likewise assigns this diphthongization a place before front mutation and distinguishes the two processes [@Fulk2018, p. 74, §4.13].
 
-Its place is later than [SC055 OEIUmlaut](#rule-OEIUmlaut).
-If this rule is moved too early, the later ordering is constrained by forms such
-as *ġift* ‘gift’ and *sċēaþ* ‘sheath’. PGmc \emph{*géftiz} then yields
-*ġieft* ‘gift’; the expected form is *ġift* ‘gift’. PGmc \emph{*skáiθiz}
-yields *sċǣþ* ‘sheath’; the expected form is *sċēaþ* ‘sheath’.
+The forms *ġift* ‘gift’ and *sċēaþ* ‘sheath’ fix the lower boundary. If West Saxon palatal diphthongization precedes general i-umlaut, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected *ġift*, and PGmc \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. These witnesses place West Saxon palatal diphthongization after general umlaut; no tested lexical item supplies a later terminus ante quem.
 
-This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). No
-comparably sharp later boundary is available.
-
-No tested lexical item provides a comparably precise later terminus ante quem.
-The available evidence therefore establishes the rule’s relation to the earlier
-umlautal process much more clearly than it fixes a later point by which it must
-already have applied.
-
-The two rules should accordingly be kept distinct. The broad umlautal rule
-accounts for a system-wide assimilatory change; the West-Saxon rule accounts for
-a narrower palatal-consonant-conditioned diphthongization whose chronological
-and dialectal scope is more restricted.
+The one-sided chronology reflects the difference in scale. General umlaut reorganizes the vowel system, whereas West Saxon palatal diphthongization affects a narrower dialectal class after palatal consonants. Its exact later placement remains undemonstrated by the present lexicon.

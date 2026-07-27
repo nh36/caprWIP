@@ -25,8 +25,8 @@ continued in late Northumbrian [`lifed`]{.iv lang=oe sort=lifed role=comparison_
 [@RingeTaylor2014, 364].
 
 The selected input [`*líbēθi`]{.iv lang=pgmc sort=libethi role=selected_input} therefore represents a finite present cell rather
-than the citation infinitive. That distinction matters because the ordinary
-later lemma tradition also includes remodeled forms such as [`lifian`]{.iv lang=oe sort=lifian role=comparison_form}.
+than the citation infinitive. The later lemma tradition also includes remodeled
+forms such as [`lifian`]{.iv lang=oe sort=lifian role=comparison_form}.
 
 ### Old English evidence
 
@@ -36,8 +36,8 @@ The ordinary lemma tradition centers on [`libban`]{.iv lang=oe sort=libban role=
 normalized as **[`lifeþ`]{.iv lang=oe sort=lifeth role=target_form}** [@RingeTaylor2014, 364; @Campbell1959, §762].
 
 The target is thus a normalized finite form, not the ordinary dictionary lemma.
-Its value lies in preserving the older present-stem history more clearly than
-the remodeled lemma tradition does.
+It preserves the older present-stem history more clearly than the remodeled
+lemma tradition does.
 
 ### Development to Old English
 

@@ -4,11 +4,10 @@
 
 Campbell treats the development of final accented \emph{ō} to \emph{ū} in stressed monosyllables directly, with the familiar outcomes behind *cū* ‘cow’, *hū* ‘how’, *tū* ‘two’, and *bū* ‘both’ [@Campbell1959, p. 47, §122].
 
-That is enough for a short note. The change is historically legible, but the tested forms do not by themselves determine a closer position for it.
+The change is historically secure, but the tested forms determine no close relative position for it.
+Its input is final \emph{*ō} in a stressed monosyllable.
 
 ## SC018. Raising of final stressed monosyllabic \emph{*ō} (`NWGmcStressedMonosyllableORaising`) {#rule-NWGmcStressedMonosyllableORaising}
-
-The implementation keeps the monosyllabic raising step explicit.
 
 ```foma
 define NWGmcStressedMonosyllableORaising [
@@ -16,6 +15,6 @@ define NWGmcStressedMonosyllableORaising [
 ];
 ```
 
-In prose, the rule raises final stressed monosyllabic \emph{*ō} to \emph{*ū}. It preserves a historically recognizable step behind forms such as *cū*, *hū*, and *tū*.
+Campbell's *cū*, *hū*, and *tū* establish final stressed monosyllabic \emph{*ō} > \emph{*ū}.
 
-If the rule is moved earlier or later within the tested sequence, no checked form yields a form different from the expected one. The tested forms therefore do not place [SC018 NWGmcStressedMonosyllableORaising](#rule-NWGmcStressedMonosyllableORaising) before or after any specific neighboring change. The handbooks document the raising of stressed monosyllabic \emph{*ō} as part of the early history of long vowels, and CAPR accordingly keeps it in this early vowel section. The placement should be read as approximate, not as a local ordering forced by the tested forms.
+Reversing [SC018 NWGmcStressedMonosyllableORaising](#rule-NWGmcStressedMonosyllableORaising) with neighboring changes leaves every checked output unchanged. The sound change is secure, but its exact position in the early history of long vowels rests on the handbooks.

@@ -30,4 +30,4 @@ From `*wádaną`, Anglo-Frisian brightening first gives `*wædaną`. A-restorati
 
 ### Development note
 
-The note matters because this infinitive belongs to the A-restoration class. The citation form is therefore `wadan`, not a fronted `wæden`-type output.
+The infinitive belongs to the A-restoration class. The citation form is therefore `wadan`, not a fronted `wæden`-type output.

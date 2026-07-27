@@ -107,6 +107,9 @@ MOVE_PATTERNS = [
     re.compile(r"when [^.]*moved", re.I),
     re.compile(r"if [^.]*delayed", re.I),
     re.compile(r"if [^.]*applied", re.I),
+    re.compile(r"\bmoving\b[^.]{0,240}\b(?:before|after|earlier|later)\b", re.I),
+    re.compile(r"\bdelaying\b[^.]{0,240}\b(?:until|past|before|after)\b", re.I),
+    re.compile(r"\bwith\b[^.]{0,160}\b(?:before|after)\b", re.I),
 ]
 BOUNDARY_PATTERNS = [
     re.compile(r"must\s+(?:\w+\s+){0,4}come\s+before", re.I),
@@ -118,6 +121,11 @@ BOUNDARY_PATTERNS = [
     re.compile(r"comes\s+after", re.I),
     re.compile(r"must\s+apply\s+after", re.I),
     re.compile(r"places?[\s\S]{0,160}\bafter\b", re.I),
+    re.compile(r"\brequires?[\s\S]{0,240}\bto\s+(?:precede|follow)\b", re.I),
+    re.compile(r"\btake[\s\S]{0,240}\bto\s+(?:precede|follow)\b", re.I),
+    re.compile(r"\brequires?[\s\S]{0,160}\b(?:before|after)\b", re.I),
+    re.compile(r"\bmust\b[^.]{0,160}\b(?:before|after)\b", re.I),
+    re.compile(r"\bSC\d{3}\b[^.]{0,120}\b(?:precedes|follows)\b", re.I),
 ]
 OUTPUT_PATTERNS = [
     re.compile(r"\byields?\b", re.I),

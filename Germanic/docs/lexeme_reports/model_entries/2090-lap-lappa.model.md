@@ -45,7 +45,7 @@ Campbell explicitly lists `lappa` among the forms with restored `a`
 [@Campbell1959, §158]. Sievers-Brunner records `lappa` beside variant `læppa`
 at the same Old English stage [@SieversBrunner1965, §10]. With the weak
 masculine input chosen, the selected `lappa` outcome is therefore the regular
-project comparison.
+Old English comparison.
 
 ### Stem comparison
 
@@ -55,5 +55,5 @@ a competing voiced comparative label.
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | competing voiced comparative label | *lábbaz | not the form followed for the OE weak-noun derivation | broader comparative background | useful as a competing label, but not the source-based choice used here |
-| selected weak masculine noun | *láppô | compact-trace output: `lappa` | lappa | exact match between formation and attested OE noun |
-| attested OE variant line | same noun family | `læppa`, `leappan` | læppa / leappan | useful control forms within the same OE tradition |
+| selected weak masculine noun | *láppô | compact-trace output: `lappa` | _lappa_ | exact match between formation and attested OE noun |
+| attested OE variant line | same noun family | `læppa`, `leappan` | _læppa_ / _leappan_ | useful control forms within the same OE tradition |

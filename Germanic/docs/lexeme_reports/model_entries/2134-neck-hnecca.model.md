@@ -24,8 +24,8 @@ with nominative `*hnekkō`, genitive `*hnukkaz`, and accusative plural
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
 partner of the a-grade `Nacken` family [@KlugeSeebold2011, 347].
 
-A competing comparative label [`*xnákkaz`]{.iv lang=pgmc sort=xnakkaz role=source_protoform} remains useful for the wider family, and
-Orel also gives an a-grade headword line [@Orel2003, 218]. The selected input
+A competing comparative label [`*xnákkaz`]{.iv lang=pgmc sort=xnakkaz role=source_protoform} belongs to the wider family, and Orel
+also gives an a-grade headword line [@Orel2003, 218]. The selected input
 [`*xnékkô`]{.iv lang=pgmc sort=xnekko role=selected_input}, however, is the form that matches the Old English branch.
 
 ### Old English evidence

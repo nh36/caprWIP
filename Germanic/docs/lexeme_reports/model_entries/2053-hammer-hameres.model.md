@@ -23,8 +23,8 @@ citation forms such as [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} an
 @ClarkHall1960, 160]. The selected input [`*xámaras`]{.iv lang=pgmc sort=xamaras role=selected_input} is the genitive singular of that
 same noun rather than a different lexeme.
 
-The genitive matters because the citation tradition is already mixed in its
-unstressed vowel, while the oblique singular gives a cleaner comparison form.
+The citation tradition is already mixed in its unstressed vowel, while the
+genitive singular gives a closer comparison form.
 This is a cell choice within one paradigm, not a change of stem class.
 
 ### Old English evidence

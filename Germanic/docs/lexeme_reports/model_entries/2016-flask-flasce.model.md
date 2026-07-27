@@ -34,7 +34,7 @@ from forms such as [`flascan`]{.iv lang=oe sort=flascan role=comparison_form}; a
 secondary variant [@BosworthToller1898, 235; @ClarkHall1960, 121].
 
 The relevant comparison form is therefore the weak feminine noun **[`flasce`]{.iv lang=oe sort=flasce role=target_form}**.
-The plural and oblique evidence matters because it helps explain why the vowel
+The plural and oblique evidence helps explain why the vowel
 and ending are preserved as they are in the singular.
 
 ### Development to Old English

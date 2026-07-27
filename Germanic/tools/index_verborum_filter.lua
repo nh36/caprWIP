@@ -95,6 +95,17 @@ local function latex_escape(value)
   return value:gsub("([@!|])", "\\%1")
 end
 
+local function italicize_oe_content(content)
+  if #content == 1 and content[1].t == "Emph" then
+    return content
+  end
+  local visible = {}
+  for _, inline in ipairs(content) do
+    table.insert(visible, inline.t == "Code" and pandoc.Str(inline.text) or inline)
+  end
+  return { pandoc.Emph(visible) }
+end
+
 local function visible_span(span)
   local filtered_classes = {}
   for _, class in ipairs(span.classes) do
@@ -108,7 +119,11 @@ local function visible_span(span)
       filtered_attrs[key] = value
     end
   end
-  return pandoc.Span(span.content, pandoc.Attr(span.identifier, filtered_classes, filtered_attrs))
+  local content = span.content
+  if trim(span.attributes["lang"] or "") == "oe" then
+    content = italicize_oe_content(content)
+  end
+  return pandoc.Span(content, pandoc.Attr(span.identifier, filtered_classes, filtered_attrs))
 end
 
 local function explicit_tag_is_printable(language, role, form, display, source_ref)
@@ -148,7 +163,11 @@ local function span_to_index(span)
   if not explicit_tag_is_printable(lang, role, form, display, source_ref) then
     return visible
   end
-  local raw = pandoc.RawInline("latex", "\\index[" .. lang .. "]{" .. latex_escape(sort) .. "@" .. latex_escape(display) .. "}")
+  local index_display = latex_escape(display)
+  if lang == "oe" then
+    index_display = "\\emph{" .. index_display .. "}"
+  end
+  local raw = pandoc.RawInline("latex", "\\index[" .. lang .. "]{" .. latex_escape(sort) .. "@" .. index_display .. "}")
   return { visible, raw }
 end
 

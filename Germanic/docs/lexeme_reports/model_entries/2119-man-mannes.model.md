@@ -23,13 +23,12 @@ Orel has `*mannz` [@Kroonen2013, 354; @Orel2003, 299]. The selected input [`*má
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 
-That distinction matters because the target of this entry is not the ordinary
-citation form. The selected cell is the one that keeps the geminate medial
-before the ending.
+The target is not the ordinary citation form. Its medial geminate precedes the
+genitive ending.
 
 ### Old English evidence
 
-Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form}, [`man`]{.iv lang=oe sort=man role=comparison_form} / [`mannes`]{.iv lang=oe sort=mannes role=target_form} / `menn`
+Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form}, [`man`]{.iv lang=oe sort=man role=comparison_form} / [`mannes`]{.iv lang=oe sort=mannes role=target_form} / _menn_
 [@Campbell1959, §621].
 Sievers-Brunner likewise cites [`man`]{.iv lang=oe sort=man role=comparison_form} [`mannes`]{.iv lang=oe sort=mannes role=target_form} [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as [`man`]{.iv lang=oe sort=man role=comparison_form}
@@ -41,8 +40,8 @@ The relevant comparison form is therefore the attested genitive singular
 
 ### Development to Old English
 
-Campbell's paradigm `mann, man / mannes / menn` confirms the selected genitive
-singular `mannes` [@Campbell1959, §621]. In the present analysis, `*mánnas`
+Campbell's paradigm _mann_, _man_ / _mannes_ / _menn_ confirms the selected genitive
+singular _mannes_ [@Campbell1959, §621]. In the present analysis, `*mánnas`
 develops through Anglo-Frisian brightening and later unstressed merger to
 `mannes`. In this cell the geminate remains medial before `-es`. The citation
 form behaves differently because word-final gemination was simplified in Old

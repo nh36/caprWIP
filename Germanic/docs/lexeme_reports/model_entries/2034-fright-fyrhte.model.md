@@ -23,18 +23,18 @@ as Gothic [`faurhtei`]{.iv lang=goth sort=faurhtei role=comparison_form} [@Orel2
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with `-u` or `-o` as
-analogically remodeled [@RingeTaylor2014, 395-396]. The oblique in-stem forms
-therefore preserve the older history more directly. The comparison here uses
-that oblique line because it keeps the inherited pathway clearer than the
-better-known lemma forms do.
+analogically remodeled [@RingeTaylor2014, 395-396]. I therefore use the oblique
+in-stem form, which continues the older formation rather than the remodeled
+nominative.
+
 
 ### Old English evidence
 
 Bosworth-Toller records **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}** with textual attestation, and it also
 records nominative forms such as [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} and [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form}
-[@BosworthToller1898, 160]. Clark Hall separately preserves adjective and verb
-material under `fyrht` / `fyrhtan`, which helps keep the noun distinct from the
-adjectival family [@ClarkHall1960, 141].
+[@BosworthToller1898, 160]. Clark Hall lists adjective and verb material
+separately under `fyrht` / `fyrhtan` [@ClarkHall1960, 141].
+
 
 The relevant comparison form is therefore the attested oblique **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}**.
 The nominative lemma forms remain part of the Old English evidence, but the

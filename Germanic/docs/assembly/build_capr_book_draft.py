@@ -32,7 +32,10 @@ def latex_escape(value: str) -> str:
 
 
 def index_command(language: str, sort_key: str, display: str) -> str:
-    return rf"\index[{language}]{{{latex_escape(sort_key)}@{latex_escape(display)}}}"
+    index_display = latex_escape(display)
+    if language == "oe":
+        index_display = rf"\emph{{{index_display}}}"
+    return rf"\index[{language}]{{{latex_escape(sort_key)}@{index_display}}}"
 
 
 def oe_target_display(counterpart: str, derivation_class: str) -> str:
@@ -165,6 +168,9 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
         out.append(line)
         if line.startswith("### "):
             ref = line[4:].strip()
+            if " — OE _" in ref and ref.endswith("_"):
+                lexical_item, target = ref.split(" — OE ", 1)
+                ref = f"{lexical_item} — OE {target[1:-1].replace(r'\*', '*')}"
             commands = commands_by_ref.get(ref, [])
             if commands:
                 out.append("")

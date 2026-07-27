@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen distinguishes noun `*winda-` from verb `*windan-`, and the present row belongs to the verb [@Kroonen2013]. Later handbook discussion keeps the dental original from PIE `*wendh-`, not a Verner alternant [@Fulk2018; @RingeTaylor2014].
+Kroonen distinguishes noun `*winda-` from verb `*windan-`, and the present row belongs to the verb [@Kroonen2013]. Fulk and Ringe and Taylor derive the dental directly from PIE `*wendh-`, not from a Verner alternant [@Fulk2018; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ The selected input `*wíndaną` yields the regular infinitive `windan` by ordina
 
 ### Lexical note
 
-The note matters because English *wind* also names the noun. This row targets the class-III verb, not the noun [@Kroonen2013; @ClarkHall1960].
+English *wind* also names the noun. This row represents the class-III verb, not the noun [@Kroonen2013; @ClarkHall1960].

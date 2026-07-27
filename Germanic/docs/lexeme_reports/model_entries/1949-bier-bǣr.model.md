@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller lemmatize the noun as [`bær`]{.iv lang=oe sort=b
 
 ### Source note
 
-Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} and [`bar`]{.iv lang=oe sort=bar}. The normalized target [`bǣr`]{.iv lang=oe sort=baer} simply marks the same long vowel explicitly [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} and [`bar`]{.iv lang=oe sort=bar}. The normalized target [`bǣr`]{.iv lang=oe sort=baer} represents the same long vowel [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 ### Development to Old English
 

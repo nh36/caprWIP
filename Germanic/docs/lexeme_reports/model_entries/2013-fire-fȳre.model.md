@@ -24,8 +24,8 @@ the front-mutated West Germanic forms from an oblique form of the
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 
-That distinction matters because the Old English target combines a regular
-inherited form [`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} with an attested analogical surface form [`fȳre`]{.iv lang=oe sort=fyre role=target_form}.
+The Old English target combines a regular inherited form
+[`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} with an attested analogical surface form [`fȳre`]{.iv lang=oe sort=fyre role=target_form}.
 
 ### Old English evidence
 

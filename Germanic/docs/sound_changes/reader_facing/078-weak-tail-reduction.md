@@ -2,20 +2,33 @@
 
 ## Historical discussion
 
-The last rule in the present late weak-tail cluster is stronger than the small prefix note that precedes it. Campbell, Hogg, Ringe and Taylor, and Fulk all support a late region in which apocope, shortening, contraction, and further weak-tail reductions continue to reshape final syllables [@Campbell1959, p. 148, §355; @Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3; @Fulk2018, pp. 90--91, §5.6]. What makes the present rule stand out is that the finite-state chronology gives it a real boundary on both sides.
-
-That does not make it a license to absorb later material. The later relation to [SC086 OEContraction](#rule-OEContraction) is meaningful, but it remains a cross-reference to the next cluster, not a reason to pull that cluster into the present chapter.
+Campbell, Hogg, Ringe and Taylor, and Fulk describe a late history in which
+apocope, shortening, contraction, and further weak-tail reductions reshape
+final syllables [@Campbell1959, p. 148, §355; @Hogg1992, pp. 120--121;
+@RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
+@Fulk2018, pp. 90--91, §5.6]. Lexical failures place the remaining weak-tail
+reduction after unstressed fronting and before contraction.
 
 ## SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction}
-
-The implementation keeps the last weak-tail reduction as one explicit step.
 
 ```foma
 define OEWeakTailReduction OEWeakTailReduction1;
 ```
 
-In prose, the rule carries the remaining weak-tail reductions that prevent a broad class of spurious \emph{-en} or extra-vowel outcomes from surviving too late in the derivation.
+The rule reduces the remaining weak-tail vowels, preventing a broad class of
+\emph{-en} and extra-vowel outcomes.
 
-Its chronology is real on both sides, though the two sides are not equally local. If the rule is moved before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc \emph{*bákaną} yields *bacen* rather than expected OE *bacan* ‘bake’, and PGmc \emph{*bíndaną} yields *binden* rather than expected *bindan* ‘bind’, alongside a much wider set of comparable \emph{-en} failures. If the rule is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields *flēoan* rather than expected OE *flēon* ‘flee’, and PGmc \emph{*sláxaną} yields *sleaan* rather than expected *slēan* ‘slay’. This shows that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), and that [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) must come before [SC086 OEContraction](#rule-OEContraction).
+I place the change after [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly)
+and before [SC086 OEContraction](#rule-OEContraction). Moving it before
+[SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc
+\emph{*bákaną} yields *bacen* rather than expected OE *bacan* ‘bake’, and PGmc
+\emph{*bíndaną} yields *binden* rather than expected *bindan* ‘bind’, alongside
+a much wider set of comparable \emph{-en} failures. If the rule is delayed until
+after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields
+*flēoan* rather than expected OE *flēon* ‘flee’, and PGmc \emph{*sláxaną}
+yields *sleaan* rather than expected *slēan* ‘slay’.
 
-The asymmetry of those two boundaries is important. The earlier side covers a very wide interval and should be read as a broad diagnostic range, not as a close neighboring constraint. The later side is narrower and more directly interpretable. Together they make [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) substantial enough for its own chapter, but still not a reason to merge the next cluster into the present section.
+The earlier boundary spans a wide interval and does not establish a close
+neighboring relation. The later boundary is narrower:
+[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) precedes
+[SC086 OEContraction](#rule-OEContraction).

@@ -48,8 +48,8 @@ discuss this non-geminating present stem under [`habban`]{.iv lang=oe sort=habba
 forms of the [`hæfeþ`]{.iv lang=oe sort=haefeth role=target_form} / [`hæfed`]{.iv lang=oe sort=haefed role=comparison_form} type [@Campbell1959, §762].
 
 The wider lexeme is less straightforward only because the infinitive [`habban`]{.iv lang=oe sort=habban role=comparison_form}
-shows later leveling. That difference in paradigm history is what makes the 3sg
-present cell the more useful comparison form.
+shows later leveling. The 3sg present cell is therefore the closer comparison
+form.
 
 ### Paradigm comparison
 

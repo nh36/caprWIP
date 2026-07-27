@@ -30,4 +30,4 @@ Clark Hall makes `weald` the main noun headword and cross-refers `wald` and `wol
 
 ### Dialect note
 
-The note matters because `wald` survives as an Anglian-type variant in the same family. The selected target is normalized `weald`, not the variant form [@ClarkHall1960; @RingeTaylor2014].
+`wald` survives as an Anglian-type variant in the same family. The selected target is normalized `weald`, not the variant form [@ClarkHall1960; @RingeTaylor2014].

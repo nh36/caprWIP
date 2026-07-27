@@ -18,12 +18,12 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen keeps the verb under `*fulgen-` and gives Old English [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form}, [`folgian`]{.iv lang=oe sort=folgian role=comparison_form},
+Kroonen reconstructs the verb as `*fulgen-` and gives Old English [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form}, [`folgian`]{.iv lang=oe sort=folgian role=comparison_form},
 adding that Old Norse [`fylgja`]{.iv lang=on sort=fylgja role=comparison_form} and Old English [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} continue a formation
 `*fulgjan-` [@Kroonen2013, 159]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
-Ringe and Taylor make the split explicit as `PNWGmc *fulgija- ~ *fulgai- > OE
+Ringe and Taylor distinguish `PNWGmc *fulgija- ~ *fulgai- > OE
 fylgan ~ folgian` and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The selected input

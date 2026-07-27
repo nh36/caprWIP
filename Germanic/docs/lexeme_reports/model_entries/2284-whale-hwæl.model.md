@@ -33,7 +33,7 @@ plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** [@ClarkHall1
 is normalized here as **[`hwæl`]{.iv lang=oe sort=hwael role=target_form}** for the singular citation form with Anglo-
 Frisian fronting.
 
-The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** remains important control evidence. It shows the same
+The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** supplies control evidence. It shows the same
 lexeme with **`a`** in an open syllable, beside singular **[`hwæl`]{.iv lang=oe sort=hwael role=target_form}** in the
 closed monosyllable.
 

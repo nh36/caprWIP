@@ -36,9 +36,9 @@ surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives `nosu f.`, with genitive-dative singular `nosa`, and cross-refers
 `nasu` to `nosu` [@ClarkHall1960, 810].
 
-The selected OE target is therefore an attested `nosu`, not a reconstructed
-placeholder. At the same time, the lexicographical record keeps `nasu` visible as
-a parallel notation belonging to the full-grade side of the tradition.
+The selected OE target is therefore attested `nosu`, not a reconstructed
+placeholder. The lexicographical record also gives `nasu` for the full-grade
+side of the tradition.
 
 ### Development to Old English
 
@@ -56,5 +56,5 @@ from the remodeled zero-grade input that yields the Old English form.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| full-grade comparative line | *nasō | expected full-grade continuation `nasu` | nasu | useful comparative background, but not the selected OE-facing input |
-| remodeled zero-grade line | *núsō | compact-trace output: `nosu` | nosu | exact match between selected input and attested OE noun |
+| full-grade comparative line | *nasō | expected full-grade continuation `nasu` | _nasu_ | useful comparative background, but not the selected OE-facing input |
+| remodeled zero-grade line | *núsō | compact-trace output: `nosu` | _nosu_ | exact match between selected input and attested OE noun |

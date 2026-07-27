@@ -24,8 +24,8 @@ from that side [@RingeTaylor2014, 240]. The citation reconstruction [`*náxtz`]{
 therefore belongs to the nominative-like headword, while the selected input
 [`*náxti`]{.iv lang=pgmc sort=naxti role=selected_input} represents the dative-singular cell.
 
-That distinction matters because the word later became the model for endingless
-datives. Ringe and Taylor explicitly explain forms such as `dæg` by analogy
+The word later became the model for endingless datives. Ringe and Taylor
+explicitly explain forms such as [`dæg`]{.iv lang=oe sort=daeg role=comparison_form} by analogy
 with `dat. sg. niht < *nahti` [@RingeTaylor2014, 380].
 
 ### Old English evidence
