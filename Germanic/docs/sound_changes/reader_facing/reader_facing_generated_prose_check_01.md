@@ -4,7 +4,7 @@ _Generated from the introduction prose embedded in the active reader-facing buil
 
 ## Summary
 
-- Build script: `/workspace/scratch/feeb126824f4/caprWIP/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh`.
+- Build script: `/Users/nathanhill/Code/caprWIP/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh`.
 - Introduction paragraphs checked: 5.
 - Issues found: 0.
 
