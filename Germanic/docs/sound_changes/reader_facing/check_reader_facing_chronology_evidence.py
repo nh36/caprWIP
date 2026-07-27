@@ -126,6 +126,9 @@ BOUNDARY_PATTERNS = [
     re.compile(r"\brequires?[\s\S]{0,160}\b(?:before|after)\b", re.I),
     re.compile(r"\bmust\b[^.]{0,160}\b(?:before|after)\b", re.I),
     re.compile(r"\bSC\d{3}\b[^.]{0,120}\b(?:precedes|follows)\b", re.I),
+    # Accept natural scholarly formulations indicating relative order
+    re.compile(r"\bprecede(?:d|s)?\b", re.I),
+    re.compile(r"\bfollow(?:ed|s)?\b", re.I),
 ]
 OUTPUT_PATTERNS = [
     re.compile(r"\byields?\b", re.I),
@@ -141,6 +144,12 @@ LIMITATION_PATTERNS = [
     re.compile(r"boundary-limited", re.I),
     re.compile(r"one-sided", re.I),
     re.compile(r"no decisive wrong form", re.I),
+    # natural formulations indicating lack of ordering or neutral results
+    re.compile(r"leav(?:es|e)\s+[\s\S]{0,120}\sunchanged", re.I),
+    re.compile(r"remains?\s+unchanged", re.I),
+    re.compile(r"does not determine", re.I),
+    re.compile(r"does not establish", re.I),
+    re.compile(r"no\s+ordering(\s|$)", re.I),
 ]
 
 
