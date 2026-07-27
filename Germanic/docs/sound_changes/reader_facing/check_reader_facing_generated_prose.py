@@ -74,8 +74,9 @@ def render(build_script: Path, paragraphs: list[str], issues: list[GeneratedPros
     lines.extend(["", "## Issues", "", "| Paragraph | Issue | Text |", "| --- | --- | --- |"])
     if issues:
         for issue in issues:
+            safe_par = issue.paragraph.replace('|', '\\|')
             lines.append(
-                f"| {issue.paragraph_number} | {issue.label} | {issue.paragraph.replace('|', '\\|')} |"
+                f"| {issue.paragraph_number} | {issue.label} | {safe_par} |"
             )
     else:
         lines.append("| — | — | No generated-prose issues found. |")

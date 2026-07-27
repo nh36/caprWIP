@@ -213,8 +213,9 @@ def render_report(
     ]
     if issues:
         for issue in issues:
+            safe_detail = issue.detail.replace('|', '\\|')
             lines.append(
-                f"| {issue.file_name} | {issue.line_number} | {issue.issue_type} | {issue.detail.replace('|', '\\|')} |"
+                f"| {issue.file_name} | {issue.line_number} | {issue.issue_type} | {safe_detail} |"
             )
     else:
         lines.append("| — | — | — | No cross-reference issues found. |")
