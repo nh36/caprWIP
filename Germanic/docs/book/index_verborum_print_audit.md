@@ -1,23 +1,24 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2002
-- Internal production unique forms: 979
-- Printed main occurrences: 1898
-- Printed main unique forms: 957
-- Printed excluded occurrences: 104
+- Internal production occurrences: 1992
+- Internal production unique forms: 977
+- Printed main occurrences: 1890
+- Printed main unique forms: 955
+- Printed excluded occurrences: 102
 - Printed excluded unique forms: 82
 
 ## Print exclusions by reason
 
-- `excluded_by_print_decision`: 13
-- `regular_output_default_exclusion`: 91
+- `excluded_by_print_decision`: 4
+- `preoe_model_internal_default_exclusion`: 8
+- `regular_output_default_exclusion`: 90
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 902 | 394 |
-| Proto-Germanic | 937 | 515 |
+| Old English | 895 | 392 |
+| Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
 | Old High German | 16 | 14 |
@@ -32,36 +33,38 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 369 |
+| target_form | 367 |
 | source_protoform | 331 |
-| selected_input | 535 |
-| comparison_form | 502 |
+| selected_input | 534 |
+| comparison_form | 497 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason
 
-- `excluded_by_print_decision`: 13
-- `regular_output_default_exclusion`: 91
+- `excluded_by_print_decision`: 4
+- `preoe_model_internal_default_exclusion`: 8
+- `regular_output_default_exclusion`: 90
 
 ## Pre-OE review rows by proposed status
 
-- `exclude_model_internal`: 13
+- `exclude_model_internal`: 4
+- `include_if_source_backed`: 8
 
 ## Reader-facing example rows by role
 
 - `diagnostic_comparator`: 30
 - `example_input`: 105
-- `expected_output`: 111
+- `expected_output`: 112
 - `model_stage`: 69
 - `notation_or_segment`: 322
 - `yielded_output`: 101
 
-- Reader-facing include_in_example_index=yes: 416
+- Reader-facing include_in_example_index=yes: 417
 - Reader-facing include_in_example_index=no: 322
 
 ## Print-unique entry audit
 
-- Unique printed entries: 958
+- Unique printed entries: 956
 - Print anomaly rows: 29
 - Hard print anomalies: 0
 
@@ -69,7 +72,7 @@
 
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
-| oe | `ærende` | aerende | 3 | comparison_form |
+| oe | `ærende` | aerende | 2 | comparison_form |
 | oe | `āsceaf` | asceaf | 1 | comparison_form |
 | oe | `bā` | ba | 3 | comparison_form |
 | oe | `bacan` | bacan | 4 | evidence_form; target_form |
@@ -140,30 +143,29 @@
 
 - `diagnostic_comparator`: 30
 - `example_input`: 105
-- `expected_output`: 111
+- `expected_output`: 112
 - `model_stage`: 69
 - `yielded_output`: 101
 
 ### Included rows by inferred language
 
 - `oe`: 42
-- `pgmc`: 169
+- `pgmc`: 170
 - `preoe`: 201
 - `pwgmc`: 4
 
 ### Included rows by main-index overlap
 
-- `no`: 254
-- `yes`: 162
+- `no`: 259
+- `yes`: 158
 
 - Included whole-form rows with asterisks: 388
-- Included whole-form rows without asterisks: 28
+- Included whole-form rows without asterisks: 29
 - Included rows inferred_language=oe with leading asterisk: 25
-- Included rows inferred_language=pgmc but OE-output-like form shape: 9
+- Included rows inferred_language=pgmc but OE-output-like form shape: 10
 
 ## Included main-index rows (sample)
 
-- `ærende` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47)
 - `ærende` (oe, comparison_form; override; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47)
 - `ærende` (oe, comparison_form; override; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50)
 - `āsceaf` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:32)
@@ -171,6 +173,7 @@
 - `bā` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37)
 - `bā` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:68)
 - `bacan` (oe, evidence_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
+- `bacan` (oe, evidence_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:25)
 
 ## Excluded regular-output rows (sample)
 
@@ -185,11 +188,11 @@
 
 ## Excluded pre-OE/model-internal rows (sample)
 
-- `*bakan` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
-- `*hebun` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
-- `*hebun` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
+- `*bakan` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
+- `*hebun` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
+- `*hebun` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
 - `*sparai-` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
-- `*spárē` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
+- `*spárē` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
 - `*spárē` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57)
 - `*spárēθi` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58)
 - `*sparja-` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
