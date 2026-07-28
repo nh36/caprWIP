@@ -3,7 +3,7 @@
 ## Historical discussion
 
 West Saxon *giefan* ‘give’ and *wefan* ‘weave’ stand against non-West-Saxon
-*geofad* and *weofan*. Ringe and Taylor use this contrast to define the
+*geofad* 'gave' and *weofan* 'weave'. Ringe and Taylor use this contrast to define the
 dialectal profile of back mutation [@RingeTaylor2014, p. 319, §6.9.4].
 Campbell's treatment of diphthongization before following back vowels includes
 *heofon* ‘heaven’ [@Campbell1959, p. 86, §207], while Hogg draws the instructive

@@ -24,7 +24,7 @@ The same proto-form fixes both edges. Before
 \emph{*fúrxtīnaz} yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’.
 After [SC072
 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc
-\emph{*fúrxtīnaz} again yields [*fyrhten*]{.pred} rather than expected *fyrhte*. I
+\emph{*fúrxtīnaz} again yields [*fyrhten*]{.pred} rather than expected *fyrhte* 'fright'. I
 therefore order final bare-a loss, stem-final n-loss, and unstressed long-vowel
 shortening in that sequence. Both boundaries are firm within the derivation,
 but depend upon one lexical family.

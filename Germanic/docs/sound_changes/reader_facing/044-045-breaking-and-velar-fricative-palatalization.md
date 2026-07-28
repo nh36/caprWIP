@@ -10,7 +10,7 @@ conditioned [@Campbell1959, pp. 54, 166, §§139, 405--406;
 @RingeTaylor2014, pp. 168--169, 213--214, §§6.2.1--6.2.3, 6.4.1--6.4.2;
 @Fulk2018, pp. 73--74, §4.13].
 
-Breaking has the fuller handbook treatment, while velar-fricative palatalization follows it locally in the *feoh* and *feohtan* type derivations.
+Breaking has the fuller handbook treatment, while velar-fricative palatalization follows it locally in the *feoh* 'cattle' and *feohtan* 'fight' type derivations.
 
 ## SC044. Breaking before \emph{h}, \emph{rC}, and \emph{lC} (`OEBreaking`) {#rule-OEBreaking}
 
@@ -36,4 +36,4 @@ define OEVelarFricativePalatalization [
     .o. EnglishStarAlphabet*;
 ```
 
-The local chronology comes from *feoh* and *feohtan*. Before [SC044 OEBreaking](#rule-OEBreaking), palatalization of \emph{*x} and \emph{*ɣ} beside front vowels or \emph{*j} makes PGmc \emph{*féxu} yield [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc \emph{*féxtaną} yield [*fehtan*]{.pred} rather than expected *feohtan*. The distant upper limit comes from *six*: after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut), PGmc \emph{*séxs} yields [*sihs*]{.pred} rather than expected OE *six*. Breaking therefore feeds velar-fricative palatalization directly, while palatal umlaut supplies only the broader upper limit.
+The local chronology comes from *feoh* 'cattle' and *feohtan* 'fight'. Before [SC044 OEBreaking](#rule-OEBreaking), palatalization of \emph{*x} and \emph{*ɣ} beside front vowels or \emph{*j} makes PGmc \emph{*féxu} yield [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc \emph{*féxtaną} yield [*fehtan*]{.pred} rather than expected *feohtan*. The distant upper limit comes from *six* 'six': after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut), PGmc \emph{*séxs} yields [*sihs*]{.pred} rather than expected OE *six*. Breaking therefore feeds velar-fricative palatalization directly, while palatal umlaut supplies only the broader upper limit.

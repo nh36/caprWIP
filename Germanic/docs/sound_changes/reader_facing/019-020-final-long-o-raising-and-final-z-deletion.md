@@ -10,8 +10,8 @@ The derivation of *ræste* ‘rest’ fixes their order: [SC019 NWGmcFinalLongOR
 
 The first change in the pair is the Northwest Germanic raising of unstressed final long \emph{*ō} to \emph{*u}. Ringe and Taylor state that development directly in comparative terms [@RingeTaylor2014, p. 30].
 
-The change supplies the final vowel of forms such as *nosu*, *sċofl*, and
-*sorg*.
+The change supplies the final vowel of forms such as *nosu* 'nose', *sċofl* 'shovel', and
+*sorg* 'sorrow'.
 
 ## SC019. Raising of final unstressed long \emph{*ō} (`NWGmcFinalLongORaising`) {#rule-NWGmcFinalLongORaising}
 
@@ -40,7 +40,7 @@ syllables.
 define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
 ```
 
-The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* supplies its early boundary, while later weak syllables supply its late boundary.
+The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
 
 Before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc \emph{*rástōz} yields [*rast*]{.pred} rather than expected OE *ræste* ‘rest’. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*bébruz} yields [*befro*]{.pred} rather than expected *befer* ‘beaver’, PGmc \emph{*kwéðuz} yields [*cwedo*]{.pred} rather than expected *cwedu* ‘cud’, and PGmc \emph{*félθuz} yields [*feldo*]{.pred} rather than expected *feld* ‘field’, alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 

@@ -19,4 +19,4 @@ define PWGmcSyllabicJ [
 
 The same PGmc \emph{*nátją} witness supplies the only firm boundary. Placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} rather than expected OE *nett* 'net'; moving it later changes no checked output.
 
-Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* and *rice* as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.
+Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.

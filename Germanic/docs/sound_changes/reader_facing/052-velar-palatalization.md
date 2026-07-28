@@ -66,7 +66,7 @@ define OEVelarPalatalizationKFront [
 
 The *weccan* ‘wake’, *licgan* ‘lie’, and *lecgan* ‘lay’ set identifies front vowels and `j` as the environment for palatalization of `k` [@RingeTaylor2014, pp. 213--214, §6.4.1]. These forms establish the conditioning; different witnesses establish the chronology.
 
-Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen* ‘lungs’ rather than expected OE *cȳ* and *lungen*. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
+Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* 'cows' and *lunġen* 'lungs' rather than expected OE *cȳ* 'cows' and *lungen* 'lungs'. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
 
 ## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 

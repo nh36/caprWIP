@@ -45,4 +45,4 @@ The rule shortens the remaining unstressed long \emph{*ō} after fronting,
 producing the later “stable a” endings in OE *boraþ* ‘bears’ and *liornaþ*
 ‘learns’.
 
-Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc \emph{*búrōθi} yield [*boreþ*]{.pred} rather than expected OE *boraþ*, and PGmc \emph{*líznōθi} yield [*liorneþ*]{.pred} rather than expected *liornaþ*. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly). Moving it later within the tested range creates no equally sharp failure.
+Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc \emph{*búrōθi} yield [*boreþ*]{.pred} rather than expected OE *boraþ* 'bears', and PGmc \emph{*líznōθi} yield [*liorneþ*]{.pred} rather than expected *liornaþ* 'learns'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly). Moving it later within the tested range creates no equally sharp failure.

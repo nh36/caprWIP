@@ -32,7 +32,7 @@ I compare a selected earlier Germanic form with a selected Old English target. N
 
 I therefore distinguish the citation reconstruction from the transducer input. The former identifies the etymon; the latter represents the paradigm cell or remodeled stem whose history is at issue. Where the two differ, the lexical entry states the difference and argues for it. This prevents a convenient input from masquerading as a received reconstruction. An unmotivated alteration made solely to secure the desired output would empty the exercise of historical meaning.
 
-The distinction is concrete in Old English [*sċuldrum*]{.iv lang=oe sort=sculdrum source_ref="Germanic/docs/assembly/capr_book_intro_alpha_01.md:33"} ‘shoulders, dative plural’. Its inflectional history requires an input of the type [*skúldramiz*]{.iv lang=pgmc display=*skúldramiz sort=skuldramiz source_ref="Germanic/docs/assembly/capr_book_intro_alpha_01.md:33"}; the singular headword represents a different paradigm cell.
+The distinction is concrete in Old English [*sċuldrum*]{.iv lang=oe sort=sculdrum source_ref="Germanic/docs/assembly/capr_book_intro_alpha_01.md:33"} ‘shoulders, dative plural’. Its inflectional history requires an input of the type [*skúldramiz*]{.iv lang=pgmc display=*skúldramiz sort=skuldramiz source_ref="Germanic/docs/assembly/capr_book_intro_alpha_01.md:33"} ‘shoulders, reconstructed dative-plural input’; the singular headword represents a different paradigm cell.
 
 The target also requires judgment. Old English spelling varies by date, dialect, manuscript, and editorial practice. The cascade may produce an internal phonological symbol that an orthographic transducer then maps to a normalized written form. A string match at this final stage cannot by itself establish an etymology; conversely, a superficial spelling mismatch need not disprove one. I treat phonological development and orthographic normalization as separate operations so that exact computation does not confuse notation with history.
 
@@ -112,7 +112,7 @@ define PGmcRhotacism [
 ];
 ```
 
-Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*líznōjaną} yields [*lirnian*]{.pred} rather than expected OE *liornian* ‘learn’, PGmc \emph{*líznōθi} yields [*lirnaþ*]{.pred} rather than expected *liornaþ*, PGmc \emph{*líznô} yields [*lirna*]{.pred} rather than expected *liorna*, and PGmc \emph{*mízdai} yields [*merde*]{.pred} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes none of the checked forms.
+Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*líznōjaną} yields [*lirnian*]{.pred} rather than expected OE *liornian* ‘learn’, PGmc \emph{*líznōθi} yields [*lirnaþ*]{.pred} rather than expected *liornaþ* 'learns', PGmc \emph{*líznô} yields [*lirna*]{.pred} rather than expected *liorna* 'learn', and PGmc \emph{*mízdai} yields [*merde*]{.pred} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes none of the checked forms.
 
 The lexical evidence thus supplies a terminus ante quem but no terminus post quem. Its placement after the earlier loss of final \emph{*z} rests on the historical analyses cited above.
 
@@ -162,7 +162,7 @@ define NWGmcAToUBeforeM [
 ];
 ```
 
-Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*skúldramiz} yields [*sċoldrum*]{.pred} rather than expected OE *sċuldrum*; earlier placements converge on the expected output. The `shoulder` family therefore tests the chronology, while the inflectional endings justify restricting the change to noninitial unstressed material before \emph{*m}.
+Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*skúldramiz} yields [*sċoldrum*]{.pred} rather than expected OE *sċuldrum* 'shoulders'; earlier placements converge on the expected output. The `shoulder` family therefore tests the chronology, while the inflectional endings justify restricting the change to noninitial unstressed material before \emph{*m}.
 
 The evidence is confined to inflectional
 material.
@@ -173,7 +173,7 @@ material.
 
 ### Historical discussion
 
-Sievers/Brunner treats the early loss of final \emph{*i} after unstressed syllables as established by the fact that these endings no longer trigger later i-umlaut in Old English, and Ringe and Taylor make the same point through the pathway to *geoguþ* ‘youth’ [@SieversBrunner1965, §§145--146; @RingeTaylor2014, p. 141]. Campbell's *dugup* and *geogup* examples belong to the same pattern [@Campbell1959, §332].
+Sievers/Brunner treats the early loss of final \emph{*i} after unstressed syllables as established by the fact that these endings no longer trigger later i-umlaut in Old English, and Ringe and Taylor make the same point through the pathway to *geoguþ* ‘youth’ [@SieversBrunner1965, §§145--146; @RingeTaylor2014, p. 141]. Campbell's *dugup* 'troop' and *geogup* 'youth' examples belong to the same pattern [@Campbell1959, §332].
 
 The ending vowel disappears in a weak suffixal environment early enough to block later umlaut. This anti-umlaut chronology distinguishes the change from later final-vowel losses.
 
@@ -186,7 +186,7 @@ define PWGmcEarlyIApocope [
 ];
 ```
 
-The absence of umlaut in *geoguþ* ‘youth’ provides the historical argument for early deletion. The ordered derivation supplies a different test: if apocope is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*skáwōθi} yields [*sċēaweþ*]{.pred} rather than expected OE *sċēawaþ*.
+The absence of umlaut in *geoguþ* ‘youth’ provides the historical argument for early deletion. The ordered derivation supplies a different test: if apocope is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*skáwōθi} yields [*sċēaweþ*]{.pred} rather than expected OE *sċēawaþ* 'shows'.
 
 Early i-apocope must therefore precede the long-diphthong development. Moving it earlier within the tested range leaves every checked output unchanged; its early date rests on the anti-umlaut evidence, not on a lower boundary supplied by the witness words.
 
@@ -318,7 +318,7 @@ define PWGmcSyllabicJ [
 
 The same PGmc \emph{*nátją} witness supplies the only firm boundary. Placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} rather than expected OE *nett* 'net'; moving it later changes no checked output.
 
-Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* and *rice* as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.
+Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.
 
 \newpage
 
@@ -326,7 +326,7 @@ Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i}
 
 ### Historical discussion
 
-Ringe and Taylor treat word-internal \emph{*lþ} > \emph{*ld} as a regular sound change in northern West Germanic and illustrate it with forms such as *fealdan*, *beald*, *wuldor*, and *gylden* [@RingeTaylor2014, pp. 170--171]. Campbell gives a similar West-Germanic-facing formulation with examples such as *fealdan*, *wuldor*, *beald*, *gold* 'gold', and *feld* [@Campbell1959, p. 169, §414].
+Ringe and Taylor treat word-internal \emph{*lþ} > \emph{*ld} as a regular sound change in northern West Germanic and illustrate it with forms such as *fealdan* 'fold', *beald* 'bold', *wuldor* 'glory', and *gylden* 'golden' [@RingeTaylor2014, pp. 170--171]. Campbell gives a similar West-Germanic-facing formulation with examples such as *fealdan*, *wuldor*, *beald*, *gold* 'gold', and *feld* 'field' [@Campbell1959, p. 169, §414].
 
 The comparative evidence supports \emph{lþ > ld} most clearly in northern West
 Germanic, not as an unqualified pan-PWGmc development.
@@ -392,7 +392,7 @@ Ringe and Taylor's merger of unstressed \emph{*ai} with \emph{*e} establishes th
 
 ### Historical discussion of early unstressed front-vowel leveling
 
-Campbell treats the merger of unstressed front vowels directly and also records the variation of *weorold* and *weoruld* [@Campbell1959, pp. 141--142, 154--155]. These forms supply [SC015 NWGmcILowering](#rule-NWGmcILowering) with a firmer lexical basis than the preceding change.
+Campbell treats the merger of unstressed front vowels directly and also records the variation of *weorold* 'world' and *weoruld* 'world' [@Campbell1959, pp. 141--142, 154--155]. These forms supply [SC015 NWGmcILowering](#rule-NWGmcILowering) with a firmer lexical basis than the preceding change.
 
 ### SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering}
 
@@ -407,7 +407,7 @@ define NWGmcILowering [
 ];
 ```
 
-The *weorold* and *weoruld* variants turn the general source claim into an ordering test. If [SC015 NWGmcILowering](#rule-NWGmcILowering) is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields [*wuruld*]{.pred} rather than expected OE *weorold* ‘world’; earlier movement changes no checked output.
+The *weorold* 'world' and *weoruld* 'world' variants turn the general source claim into an ordering test. If [SC015 NWGmcILowering](#rule-NWGmcILowering) is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields [*wuruld*]{.pred} rather than expected OE *weorold* ‘world’; earlier movement changes no checked output.
 
 The derivation thus fixes front-vowel leveling before interstress raising while leaving its earlier boundary open.
 
@@ -451,7 +451,7 @@ define OEWsPalatalGlide [
 
 OE *ġeoc* ‘yoke’ fixes the close relation between glide insertion before back-vocalic \emph{u} and the following change.
 
-If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc*, *ġeong*, and *ġeoguþ* material establishes the lexical scope of the West Saxon development.
+If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ* 'youth' material establishes the lexical scope of the West Saxon development.
 
 ### Historical discussion of u-lowering
 
@@ -497,7 +497,7 @@ define NWGmcStressedMonosyllableORaising [
 ];
 ```
 
-Campbell's *cū*, *hū*, and *tū* establish final stressed monosyllabic \emph{*ō} > \emph{*ū}.
+Campbell's *cū* 'cow', *hū* 'how', and *tū* 'two' establish final stressed monosyllabic \emph{*ō} > \emph{*ū}.
 
 Reversing [SC018 NWGmcStressedMonosyllableORaising](#rule-NWGmcStressedMonosyllableORaising) with neighboring changes leaves every checked output unchanged. The sound change is secure, but its exact position in the early history of long vowels rests on the handbooks.
 
@@ -515,8 +515,8 @@ The derivation of *ræste* ‘rest’ fixes their order: [SC019 NWGmcFinalLongOR
 
 The first change in the pair is the Northwest Germanic raising of unstressed final long \emph{*ō} to \emph{*u}. Ringe and Taylor state that development directly in comparative terms [@RingeTaylor2014, p. 30].
 
-The change supplies the final vowel of forms such as *nosu*, *sċofl*, and
-*sorg*.
+The change supplies the final vowel of forms such as *nosu* 'nose', *sċofl* 'shovel', and
+*sorg* 'sorrow'.
 
 ### \CAPRRuleHeading{SC019. Raising of final unstressed long \emph{*ō}}{NWGmcFinalLongORaising} {#rule-NWGmcFinalLongORaising}
 
@@ -545,7 +545,7 @@ syllables.
 define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
 ```
 
-The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* supplies its early boundary, while later weak syllables supply its late boundary.
+The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
 
 Before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc \emph{*rástōz} yields [*rast*]{.pred} rather than expected OE *ræste* ‘rest’. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*bébruz} yields [*befro*]{.pred} rather than expected *befer* ‘beaver’, PGmc \emph{*kwéðuz} yields [*cwedo*]{.pred} rather than expected *cwedu* ‘cud’, and PGmc \emph{*félθuz} yields [*feldo*]{.pred} rather than expected *feld* ‘field’, alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
@@ -582,7 +582,7 @@ Nothing in the present lexicon supplies the corresponding earlier boundary.
 The handbooks describe the history of \emph{mn} sequences as a limited
 descriptive pattern. Campbell discusses both loss of unstressed material and
 later assimilation in forms of this type, including the special status of
-*month*-type evidence [@Campbell1959, pp. 189, 195, §§470, 484].
+*mōnaþ* 'month'-type evidence [@Campbell1959, pp. 189, 195, §§470, 484].
 
 The pattern is historically established, but the checked forms do not constrain its position.
 
@@ -596,7 +596,7 @@ define NWGmcMnDissimilation [
 ];
 ```
 
-Campbell's *heofon* and *month* material supports early \emph{m} > \emph{β}
+Campbell's *heofon* 'heaven' and *mōnaþ* 'month' material supports early \emph{m} > \emph{β}
 before a later nasal, but supplies no ordering witness.
 
 Moving [SC022 NWGmcMnDissimilation](#rule-NWGmcMnDissimilation) earlier or later leaves every checked output unchanged. Its place among the early consonantal changes rests on the handbook account of \emph{mn}-dissimilation.
@@ -652,7 +652,7 @@ Its lower boundary remains a matter of handbook chronology.
 
 ### Historical discussion
 
-Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* ‘month’ and *mōna* / *mōn*-type material. Campbell treats this split directly in his discussion of Germanic long \emph{ē} before nasal consonants [@Campbell1959, p. 53, §129].
+Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* 'month' and *mōna* / *mōn* 'moon'-type material. Campbell treats this split directly in his discussion of Germanic long \emph{ē} before nasal consonants [@Campbell1959, p. 53, §129].
 
 The change is historically recognizable, but the tested forms supply no close relative chronology.
 
@@ -737,7 +737,7 @@ No witness word dates preconsonantal \emph{*x}-loss before \emph{*s} plus anothe
 
 ### Historical discussion of awj glide formation and au-fronting
 
-The *hay* and *strew* 'strew' material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
+The *hīeġ* 'hay' and *strīeġan* 'strew' material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
 
 Glide formation creates the input to fronting; diphthong leveling follows both.
 
@@ -758,7 +758,7 @@ define OEAwjGlideFormation [
 ];
 ```
 
-The *hīeġ* and *strīeġan* derivations show that \emph{awj} reshaping prepared the input to fronting. If fronting is applied first, PGmc \emph{*xáwwją} yields [*hauġ*]{.pred} rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields [*strauian*]{.pred} rather than expected *strīeġan* ‘strew’. Earlier placement of glide formation changes no checked output, so these forms supply an upper boundary without a corresponding lower one.
+The *hīeġ* 'hay' and *strīeġan* 'strew' derivations show that \emph{awj} reshaping prepared the input to fronting. If fronting is applied first, PGmc \emph{*xáwwją} yields [*hauġ*]{.pred} rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields [*strauian*]{.pred} rather than expected *strīeġan* ‘strew’. Earlier placement of glide formation changes no checked output, so these forms supply an upper boundary without a corresponding lower one.
 
 ### Historical discussion of au-fronting
 
@@ -812,7 +812,7 @@ define OEWWSimplification [
 ];
 ```
 
-The *dēaw* and *hēawan* derivations establish that doubled \emph{w} was simplified before the long \emph{ēaw} development. If [SC031 OEWWSimplification](#rule-OEWWSimplification) follows [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*dáwwō} yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. Earlier placement changes no checked output. The witnesses require simplification before the long-diphthong change and leave the lower boundary to the broader West Saxon chronology.
+The *dēaw* 'dew' and *hēawan* 'hew' derivations establish that doubled \emph{w} was simplified before the long \emph{ēaw} development. If [SC031 OEWWSimplification](#rule-OEWWSimplification) follows [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc \emph{*dáwwō} yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. Earlier placement changes no checked output. The witnesses require simplification before the long-diphthong change and leave the lower boundary to the broader West Saxon chronology.
 
 ### Historical discussion of diphthong leveling
 
@@ -822,7 +822,7 @@ later monophthongization, although the rule below is more narrowly conditioned
 than any single textbook label [@Campbell1959, pp. 95--96, §§223--227].
 
 The evidence for [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling) is less
-self-contained than that for the *dēaw* / *hēawan* developments.
+self-contained than that for the *dēaw* 'dew' / *hēawan* 'hew' developments.
 
 ### SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling}
 
@@ -847,8 +847,8 @@ The two edges of this interval fail differently. Before [SC030 OEAuFronting](#ru
 The long \emph{ēow} forms of *ċēowan* ‘chew’, *fēower* ‘four’, and *cnēow*
 ‘knee’ form part of the West Saxon vowel history, although their clearest
 ordering relation points forward. Campbell describes early \emph{eu} in Old
-English, and Ringe and Taylor give the corresponding examples from *chew*,
-*four*, and *knee* [@Campbell1959, pp. 53--54, §136;
+English, and Ringe and Taylor give the corresponding examples from chew,
+four, and knee [@Campbell1959, pp. 53--54, §136;
 @RingeTaylor2014, pp. 188, 202].
 
 The only checked boundary for
@@ -866,11 +866,11 @@ define OEEwLongDiphthong [
 ];
 ```
 
-The long \emph{ēow} of *ċēowan*, *fēower*, and *cnēow* supplies only a terminus ante quem. If [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) follows [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*kéwwaną} yields [*ċeowan*]{.pred} rather than expected OE *ċēowan* ‘chew’, PGmc \emph{*fédwōr} yields [*feower*]{.pred} rather than expected *fēower* ‘four’, and PGmc \emph{*knéwą} yields [*cneow*]{.pred} rather than expected *cnēow* ‘knee’. Earlier placement changes no checked output. The sources associate \emph{ew} and \emph{iw} with the same diphthongal history but furnish no lower boundary.
+The long \emph{ēow} of *ċēowan* 'chew', *fēower* 'four', and *cnēow* 'knee' supplies only a terminus ante quem. If [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) follows [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*kéwwaną} yields [*ċeowan*]{.pred} rather than expected OE *ċēowan* ‘chew’, PGmc \emph{*fédwōr} yields [*feower*]{.pred} rather than expected *fēower* ‘four’, and PGmc \emph{*knéwą} yields [*cneow*]{.pred} rather than expected *cnēow* ‘knee’. Earlier placement changes no checked output. The sources associate \emph{ew} and \emph{iw} with the same diphthongal history but furnish no lower boundary.
 
 ### Historical discussion of long \emph{ēaw}
 
-After [SC031 OEWWSimplification](#rule-OEWWSimplification) has reduced \emph{ww} to single \emph{w}, the remaining \emph{aw} sequence can develop into the long \emph{ēaw} seen in *dēaw* and *hēawan*. Campbell treats these outputs in the early diphthong history of West Germanic and Old English [@Campbell1959, pp. 46, 53--54, §§120, 135--136].
+After [SC031 OEWWSimplification](#rule-OEWWSimplification) has reduced \emph{ww} to single \emph{w}, the remaining \emph{aw} sequence can develop into the long \emph{ēaw} seen in *dēaw* 'dew' and *hēawan* 'hew'. Campbell treats these outputs in the early diphthong history of West Germanic and Old English [@Campbell1959, pp. 46, 53--54, §§120, 135--136].
 The resulting long diphthong is \emph{ēaw}.
 
 [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) follows [SC031 OEWWSimplification](#rule-OEWWSimplification) locally and must also precede [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening).
@@ -884,7 +884,7 @@ define OEAwLongDiphthong [
 ];
 ```
 
-A local feeding relation and a later vowel change confine \emph{aw} > \emph{ēaw}. Before [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc \emph{*dáwwō} yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. After [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*skáwōjaną} yields [*sċawian*]{.pred} rather than expected OE *sċēawian* ‘show’, PGmc \emph{*skáwōθi} yields [*sċawaþ*]{.pred} rather than expected *sċēawaþ*, and PGmc \emph{*stráwą} yields [*stræw*]{.pred} rather than expected *strēaw* ‘straw’. The *dēaw* and *hēawan* forms require long-diphthong formation after simplification, while *sċēawian* requires it before brightening; the handbooks assign the same interval to the West Saxon development.
+A local feeding relation and a later vowel change confine \emph{aw} > \emph{ēaw}. Before [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc \emph{*dáwwō} yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc \emph{*xáwwaną} yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. After [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*skáwōjaną} yields [*sċawian*]{.pred} rather than expected OE *sċēawian* ‘show’, PGmc \emph{*skáwōθi} yields [*sċawaþ*]{.pred} rather than expected *sċēawaþ* 'shows', and PGmc \emph{*stráwą} yields [*stræw*]{.pred} rather than expected *strēaw* ‘straw’. The *dēaw* and *hēawan* forms require long-diphthong formation after simplification, while *sċēawian* requires it before brightening; the handbooks assign the same interval to the West Saxon development.
 
 \newpage
 
@@ -913,11 +913,11 @@ define OEPrefixAReduction [
 ];
 ```
 
-The prefix of *ġelīefan* supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*galáubijaną} yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. Earlier placement changes no checked output, so the witness dates prefix reduction before brightening without locating its beginning.
+The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*galáubijaną} yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. Earlier placement changes no checked output, so the witness dates prefix reduction before brightening without locating its beginning.
 
 ### Historical discussion of inter-stress raising
 
-[SC036 OEInterStressRaising](#rule-OEInterStressRaising) has the strongest evidence of the three. Campbell's discussion of *weorold* / *weoruld* and Ringe and Taylor's derivation of \emph{*weraldu} > \emph{*weruldu} > OE *weorold* place the rule squarely in the history of low-stress medial vowels [@Campbell1959, pp. 141--142, §§338--339; @RingeTaylor2014, p. 322, §6.3.3].
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising) has the strongest evidence of the three. Campbell's discussion of *weorold* 'world' / *weoruld* 'world' and Ringe and Taylor's derivation of \emph{*weraldu} > \emph{*weruldu} > OE *weorold* place the rule squarely in the history of low-stress medial vowels [@Campbell1959, pp. 141--142, §§338--339; @RingeTaylor2014, p. 322, §6.3.3].
 
 The rule changes the vowel between stronger stress peaks, and its witnesses consequently constrain the relative chronology.
 
@@ -953,7 +953,7 @@ define OECompoundLinkingSyncope [
 ];
 ```
 
-The *reġnboga* test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc \emph{*régna-bùgô} yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc \emph{*régna-bùgô} yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
 
 \newpage
 
@@ -963,7 +963,7 @@ The *reġnboga* test exposes a bookkeeping dependency rather than a historical s
 
 The history of *wuduwe* ‘widow’ orders these two changes within the same
 low-stress vocalic development. Campbell discusses both the
-\emph{w}-conditioned \emph{u} forms and the later *weorold* / *weoruld*
+\emph{w}-conditioned \emph{u} forms and the later *weorold* 'world' / *weoruld* 'world'
 alternation, while Ringe and Taylor give the same connection comparatively in
 \emph{*widuwon-}, \emph{*weraldu}, and \emph{*jugunþi}
 [@Campbell1959, p. 92, §218; @Campbell1959, p. 140, §332;
@@ -997,7 +997,7 @@ define OEMedUnstressedULowering [
 ];
 ```
 
-The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different scales. Before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc \emph{*wíduwōn} yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’; after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*júgunθ} yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. The local *weorold* ‘world’ and *widow* evidence places lowering after combinative u-umlaut, while the youth form supplies only the distant requirement that lowering precede unstressed long-vowel shortening.
+The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different scales. Before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc \emph{*wíduwōn} yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’; after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*júgunθ} yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. The local *weorold* 'world' and widow evidence places lowering after combinative u-umlaut, while the youth form supplies only the distant requirement that lowering precede unstressed long-vowel shortening.
 
 \newpage
 
@@ -1083,7 +1083,7 @@ conditioned [@Campbell1959, pp. 54, 166, §§139, 405--406;
 @RingeTaylor2014, pp. 168--169, 213--214, §§6.2.1--6.2.3, 6.4.1--6.4.2;
 @Fulk2018, pp. 73--74, §4.13].
 
-Breaking has the fuller handbook treatment, while velar-fricative palatalization follows it locally in the *feoh* and *feohtan* type derivations.
+Breaking has the fuller handbook treatment, while velar-fricative palatalization follows it locally in the *feoh* 'cattle' and *feohtan* 'fight' type derivations.
 
 ### SC044. Breaking before \emph{h}, \emph{rC}, and \emph{lC} (`OEBreaking`) {#rule-OEBreaking}
 
@@ -1109,7 +1109,7 @@ define OEVelarFricativePalatalization [
     .o. EnglishStarAlphabet*;
 ```
 
-The local chronology comes from *feoh* and *feohtan*. Before [SC044 OEBreaking](#rule-OEBreaking), palatalization of \emph{*x} and \emph{*ɣ} beside front vowels or \emph{*j} makes PGmc \emph{*féxu} yield [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc \emph{*féxtaną} yield [*fehtan*]{.pred} rather than expected *feohtan*. The distant upper limit comes from *six*: after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut), PGmc \emph{*séxs} yields [*sihs*]{.pred} rather than expected OE *six*. Breaking therefore feeds velar-fricative palatalization directly, while palatal umlaut supplies only the broader upper limit.
+The local chronology comes from *feoh* 'cattle' and *feohtan* 'fight'. Before [SC044 OEBreaking](#rule-OEBreaking), palatalization of \emph{*x} and \emph{*ɣ} beside front vowels or \emph{*j} makes PGmc \emph{*féxu} yield [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc \emph{*féxtaną} yield [*fehtan*]{.pred} rather than expected *feohtan*. The distant upper limit comes from *six* 'six': after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut), PGmc \emph{*séxs} yields [*sihs*]{.pred} rather than expected OE *six*. Breaking therefore feeds velar-fricative palatalization directly, while palatal umlaut supplies only the broader upper limit.
 
 \newpage
 
@@ -1165,7 +1165,7 @@ define OESecondaryNasalization [
 ];
 ```
 
-The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc \emph{*bákaną} yields [*bacen*]{.pred} rather than expected OE *bacan*, and PGmc \emph{*bíndaną} yields [*binden*]{.pred} rather than expected *bindan*. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc \emph{*stélaną} yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc \emph{*wébaną} yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
+The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc \emph{*bákaną} yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc \emph{*bíndaną} yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc \emph{*stélaną} yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc \emph{*wébaną} yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
 
 \newpage
 
@@ -1196,7 +1196,7 @@ define PGmcBAllophony [
 ];
 ```
 
-The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* ‘rainbow’ develops as *reġnfoga* rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
+The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
 
 ### Historical discussion of Sievers-law syncope
 
@@ -1337,7 +1337,7 @@ define OEVelarPalatalizationKFront [
 
 The *weccan* ‘wake’, *licgan* ‘lie’, and *lecgan* ‘lay’ set identifies front vowels and `j` as the environment for palatalization of `k` [@RingeTaylor2014, pp. 213--214, §6.4.1]. These forms establish the conditioning; different witnesses establish the chronology.
 
-Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen* ‘lungs’ rather than expected OE *cȳ* and *lungen*. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
+Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* 'cows' and *lunġen* 'lungs' rather than expected OE *cȳ* 'cows' and *lungen* 'lungs'. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
 
 ### \CAPRRuleHeading{SC052. Velar palatalization before front vowels}{OEVelarPalatalization} {#rule-OEVelarPalatalization}
 
@@ -1401,7 +1401,7 @@ define OEWLossBeforeI [
 
 The history of *sǣ* ‘sea’ explains why non-initial \emph{*w} disappeared before final unstressed \emph{*i}. Campbell describes the loss, Ringe and Taylor derive the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel trajectory [@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. Loss of the glide allowed the preceding vowel to undergo the later fronting and lengthening.
 
-The same witness supplies two distant limits. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields *sǣw* ‘sea’ rather than expected OE *sǣ*. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
+The same witness supplies two distant limits. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields *sǣw* 'sea' rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
 
 \newpage
 
@@ -1466,9 +1466,9 @@ define OEIUmlautFronting [
 
 The breadth of i-umlaut appears in lexical classes that share only a following high front vocoid. The forms *fylgan* ‘follow’, *gylden* ‘golden’, *wyrm* ‘worm’, and *giest* ‘guest’ exemplify the same `i`- or `j`-conditioned fronting across different vowels [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72, §§190--191].
 
-The cow and lung forms establish the lower boundary. If fronting precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* ‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen* ‘lungs’ rather than expected OE *lungen*. The consonantal change must therefore precede fronting.
+The cow and lung forms establish the lower boundary. If fronting precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* 'cows' rather than expected OE *cȳ* 'cows', and \emph{*lúnganjō} yields *lunġen* 'lungs' rather than expected OE *lungen* 'lungs'. The consonantal change must therefore precede fronting.
 
-The gift and sheath forms establish the upper boundary. If West Saxon palatal diphthongization precedes fronting, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. Fronting consequently follows velar palatalization and precedes the West Saxon change; the other components of i-umlaut share those bounds.
+The gift and sheath forms establish the upper boundary. If West Saxon palatal diphthongization precedes fronting, PGmc \emph{*géftiz} yields *ġieft* 'gift' rather than expected OE *ġift* 'gift', and \emph{*skáiθiz} yields *sċǣþ* 'sheath' rather than expected *sċēaþ* 'sheath'. Fronting consequently follows velar palatalization and precedes the West Saxon change; the other components of i-umlaut share those bounds.
 
 ### SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
@@ -1480,7 +1480,7 @@ define OEIUmlautRaising [
 
 Raising of umlauted `æ` to `e` continues the same assimilatory event as fronting and therefore shares the chronology of general i-umlaut.
 
-The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields [*ċȳ*]{.pred} instead of expected *cȳ* and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of expected *lungen*. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift*, and \emph{*skáiθiz} yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
+The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields [*ċȳ*]{.pred} instead of expected *cȳ* 'cows' and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of expected *lungen* 'lungs'. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift* 'gift', and \emph{*skáiθiz} yields [*sċǣþ*]{.pred} rather than expected *sċēaþ* 'sheath'. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
 
 The sources do not describe umlaut as simple fronting alone. Campbell notes that
 the low front vowel
@@ -1513,7 +1513,7 @@ handbooks, including *giest* ‘guest’, *giefan* ‘give’, and *hierde*
 pp. 112--114]. These diphthongal outcomes form a distinct part of the general
 umlautal development alongside simple fronting.
 
-The chronology comes from the cow/lung and gift/sheath contrasts. Placed before velar palatalization, diphthongal mutation over-palatalizes \emph{*kūi} and \emph{*lúnganjō}; placed after West Saxon palatal diphthongization, it yields *ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. These failures place diphthongal mutation after velar palatalization and before West Saxon palatal diphthongization.
+The chronology comes from the cow/lung and gift/sheath contrasts. Placed before velar palatalization, diphthongal mutation over-palatalizes \emph{*kūi} and \emph{*lúnganjō}; placed after West Saxon palatal diphthongization, it yields *ġieft* 'gift' and *sċǣþ* 'sheath' instead of expected *ġift* 'gift' and *sċēaþ* 'sheath'. These failures place diphthongal mutation after velar palatalization and before West Saxon palatal diphthongization.
 
 ### SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
@@ -1525,9 +1525,9 @@ define OEIUmlaut OEIUmlautFronting
 
 The literature presents fronting, raising, and diphthongal mutation as effects of one historical development. They consequently occupy a single place in the Old English chronology.
 
-The lower boundary is consonantal. If general umlaut precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* ‘cows’ rather than expected *cȳ*, and PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’ rather than expected *lungen*. These over-palatalized forms place general umlaut after velar palatalization.
+The lower boundary is consonantal. If general umlaut precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* 'cows' rather than expected *cȳ* 'cows', and PGmc \emph{*lúnganjō} yields *lunġen* 'lungs' rather than expected *lungen* 'lungs'. These over-palatalized forms place general umlaut after velar palatalization.
 
-The upper boundary separates general umlaut from the narrower West Saxon process. If West Saxon palatal diphthongization precedes umlaut, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. Together the two witness pairs place general umlaut after velar palatalization and before the West Saxon process.
+The upper boundary separates general umlaut from the narrower West Saxon process. If West Saxon palatal diphthongization precedes umlaut, PGmc \emph{*géftiz} yields *ġieft* 'gift' rather than expected OE *ġift* 'gift', and \emph{*skáiθiz} yields *sċǣþ* 'sheath' rather than expected *sċēaþ* 'sheath'. Together the two witness pairs place general umlaut after velar palatalization and before the West Saxon process.
 
 ### \CAPRRuleHeading{SC056. West Saxon palatal diphthongization}{OEWsPalatalDiphthongization} {#rule-OEWsPalatalDiphthongization}
 
@@ -1593,7 +1593,7 @@ present lexicon supplies a terminus ante quem.
 
 Most accounts introduce nasal dissimilation to explain individual forms rather
 than as a regular sound law. Luick records *enetre* ‘yearling’ (spelled
-*enitre* in his text) [@Luick1914, p. 166]; Campbell discusses *heofon*
+*enitre* 'yearling' in his text) [@Luick1914, p. 166]; Campbell discusses *heofon*
 ‘heaven’ with suffixal variation [@Campbell1959, p. 155]; and Hogg encounters
 the same form while treating back mutation [@Hogg1992, p. 112].
 
@@ -1638,7 +1638,7 @@ require lexical evidence not represented here.
 ### Historical discussion
 
 West Saxon *giefan* ‘give’ and *wefan* ‘weave’ stand against non-West-Saxon
-*geofad* and *weofan*. Ringe and Taylor use this contrast to define the
+*geofad* 'gave' and *weofan* 'weave'. Ringe and Taylor use this contrast to define the
 dialectal profile of back mutation [@RingeTaylor2014, p. 319, §6.9.4].
 Campbell's treatment of diphthongization before following back vowels includes
 *heofon* ‘heaven’ [@Campbell1959, p. 86, §207], while Hogg draws the instructive
@@ -1702,7 +1702,7 @@ The change to \emph{*i} before \emph{*h}-clusters can be ordered only on its
 earlier side. If palatal umlaut precedes
 [SC055 OEIUmlaut](#rule-OEIUmlaut),
 the forms behind *miht* ‘might’ and *niht* ‘night’ remain at the overdeveloped
-stage *mieht* and *nieht* rather than expected OE *miht* and *niht*.
+stage [*mieht*]{.pred} and [*nieht*]{.pred} rather than expected OE *miht* and *niht*.
 Consequently, i-umlaut precedes palatal umlaut. Reordering the latter against
 any tested later change leaves both witness forms unchanged.
 
@@ -1829,7 +1829,7 @@ The same proto-form fixes both edges. Before
 \emph{*fúrxtīnaz} yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’.
 After [SC072
 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc
-\emph{*fúrxtīnaz} again yields [*fyrhten*]{.pred} rather than expected *fyrhte*. I
+\emph{*fúrxtīnaz} again yields [*fyrhten*]{.pred} rather than expected *fyrhte* 'fright'. I
 therefore order final bare-a loss, stem-final n-loss, and unstressed long-vowel
 shortening in that sequence. Both boundaries are firm within the derivation,
 but depend upon one lexical family.
@@ -1862,7 +1862,7 @@ therefore remains preferable, but the present lexicon cannot demonstrate it.
 
 Vowel loss creates the clusters upon which later assimilation and degemination
 operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
-*netle* ‘nettle’ beside later *netele* supplies a concrete lexical type
+*netle* 'nettle' beside later *netele* 'nettle' supplies a concrete lexical type
 [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
 @SieversBrunner1965, pp. 144--145, §§158--159]. Fulk places this syncope after
 i-umlaut [@Fulk2018, p. 91, §5.6].
@@ -1885,7 +1885,7 @@ The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
 earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
 
 Placed before i-umlaut, PGmc \emph{*nátilōn} yields [*nætle*]{.pred} rather than
-expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl* rather
+expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields [*spenl*]{.pred} rather
 than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
 \emph{*spénnilō} yields [*spinnl*]{.pred} rather than expected *spinl*. The witnesses
 therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
@@ -1919,7 +1919,7 @@ Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has
 created a following sonorant cluster, as in *spinl* ‘spindle’
 [@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
-Placed before l-adjacent syncope, PGmc \emph{*spénnilō} yields *spinnl* rather
+Placed before l-adjacent syncope, PGmc \emph{*spénnilō} yields [*spinnl*]{.pred} rather
 than expected OE *spinl* ‘spindle’. Syncope must therefore create the cluster
 before degemination simplifies it. Reordering degemination against any tested
 later change leaves the witness unchanged, so no terminus ante quem is known.
@@ -2017,7 +2017,7 @@ The rule shortens the remaining unstressed long \emph{*ō} after fronting,
 producing the later “stable a” endings in OE *boraþ* ‘bears’ and *liornaþ*
 ‘learns’.
 
-Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc \emph{*búrōθi} yield [*boreþ*]{.pred} rather than expected OE *boraþ*, and PGmc \emph{*líznōθi} yield [*liorneþ*]{.pred} rather than expected *liornaþ*. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly). Moving it later within the tested range creates no equally sharp failure.
+Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc \emph{*búrōθi} yield [*boreþ*]{.pred} rather than expected OE *boraþ* 'bears', and PGmc \emph{*líznōθi} yield [*liorneþ*]{.pred} rather than expected *liornaþ* 'learns'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly). Moving it later within the tested range creates no equally sharp failure.
 
 \newpage
 
@@ -2070,7 +2070,7 @@ define OEUnstressedAEMerger OEWeakTailReduction3;
 The rule merges unstressed \emph{*æ} with \emph{*e} after shortening has
 produced the weak final vowels, yielding the ordinary OE \emph{-e} spellings.
 
-Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*nḗdrōn} yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre*, and PGmc \emph{*fádēr} yields [*fædær*]{.pred} rather than expected *fæder*. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc \emph{*táixōn} yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. These failures show that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
+Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*nḗdrōn} yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc \emph{*fádēr} yields [*fædær*]{.pred} rather than expected *fæder* 'father'. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc \emph{*táixōn} yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. These failures show that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
 
 The checked forms fix the local order after
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening)
@@ -2124,7 +2124,7 @@ define OEMedUnstressedILowering [
 
 The rule restores \emph{*i} before \emph{*ng}, preventing the broader lowering from producing the wrong medial vowel in forms such as *sċilling* ‘shilling’.
 
-Moving the rule before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) makes PGmc \emph{*skíllingaz} yield [*sċilleng*]{.pred} rather than expected OE *sċilling*. On this evidence, I take [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering) to follow [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1). Moving it later within the tested range creates no equally sharp failure.
+Moving the rule before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) makes PGmc \emph{*skíllingaz} yield [*sċilleng*]{.pred} rather than expected OE *sċilling* 'shilling'. On this evidence, I take [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering) to follow [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1). Moving it later within the tested range creates no equally sharp failure.
 
 \newpage
 
@@ -2243,7 +2243,7 @@ define OEFinalGeminateSimplification [
 
 The rule removes the extra final nasal in forms where the preceding derivation has already created a final geminate.
 
-Moving the rule before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) makes PGmc \emph{*lúnganjō} yield [*lungenn*]{.pred} rather than expected OE *lungen*. These failures require [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification) to follow [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving the rule before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) makes PGmc \emph{*lúnganjō} yield [*lungenn*]{.pred} rather than expected OE *lungen* 'lungs'. These failures require [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification) to follow [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 
 \newpage
 
@@ -2279,7 +2279,7 @@ After the relevant front diphthongs, \emph{*j} first strengthened to a consonant
 If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*stráwjaną} yields [*strēaġan*]{.pred} rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields [*strīeian*]{.pred} rather than *strīeġan*. The order test requires [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) to follow [SC055 OEIUmlaut](#rule-OEIUmlaut) and precede [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
 The earlier constraint reaches back to [SC055 OEIUmlaut](#rule-OEIUmlaut) and
-therefore defines a wide interval. The *strīeġan* derivation fixes the local
+therefore defines a wide interval. The *strīeġan* 'strew' derivation fixes the local
 relation to [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
 ### \CAPRRuleHeading{SC082. Intervocalic vocalization of \emph{*j}}{OEIntervocalicJVocalization} {#rule-OEIntervocalicJVocalization}
@@ -2312,7 +2312,7 @@ define OEUnstressedEIContraction [
 
 The rule contracts the unstressed \emph{ei}-like sequence that the preceding vocalization would otherwise leave behind in forms such as *borian* ‘bore’ and *liccian* ‘lick’.
 
-Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc \emph{*búrōjaną} yield [*boreian*]{.pred} rather than expected OE *borian*, PGmc \emph{*líznōjaną} yield [*liorneian*]{.pred} rather than expected *liornian*, and PGmc \emph{*líkkōjaną} yield [*licceian*]{.pred} rather than expected *liccian*. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc \emph{*búrōjaną} yield [*boreian*]{.pred} rather than expected OE *borian* 'bore', PGmc \emph{*líznōjaną} yield [*liorneian*]{.pred} rather than expected *liornian* 'learn', and PGmc \emph{*líkkōjaną} yield [*licceian*]{.pred} rather than expected *liccian* 'lick'. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 
 \newpage
 
@@ -2383,7 +2383,7 @@ define OEContraction [
 The rule contracts the vowel sequences created after \emph{h}-loss, producing
 *flēon* ‘flee’, *slēan* ‘slay’, and *tēon* ‘draw’.
 
-Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc \emph{*fléuxaną} yield [*flēoan*]{.pred} rather than expected OE *flēon*, PGmc \emph{*sláxaną} yield [*sleaan*]{.pred} rather than expected *slēan*, PGmc \emph{*téxun} yield [*teoon*]{.pred} rather than expected *tēon*, and PGmc \emph{*táixōn} yield [*tāe*]{.pred} rather than expected *tā*. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc \emph{*fléuxaną} yield [*flēoan*]{.pred} rather than expected OE *flēon* 'flee', PGmc \emph{*sláxaną} yield [*sleaan*]{.pred} rather than expected *slēan* 'slay', PGmc \emph{*téxun} yield [*teoon*]{.pred} rather than expected *tēon* 'draw', and PGmc \emph{*táixōn} yield [*tāe*]{.pred} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 The more distant [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
 relation establishes only that weak-tail reduction precedes contraction.
 

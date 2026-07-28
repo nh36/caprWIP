@@ -4,7 +4,7 @@
 
 The history of *wuduwe* ‘widow’ orders these two changes within the same
 low-stress vocalic development. Campbell discusses both the
-\emph{w}-conditioned \emph{u} forms and the later *weorold* / *weoruld*
+\emph{w}-conditioned \emph{u} forms and the later *weorold* 'world' / *weoruld* 'world'
 alternation, while Ringe and Taylor give the same connection comparatively in
 \emph{*widuwon-}, \emph{*weraldu}, and \emph{*jugunþi}
 [@Campbell1959, p. 92, §218; @Campbell1959, p. 140, §332;
@@ -38,4 +38,4 @@ define OEMedUnstressedULowering [
 ];
 ```
 
-The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different scales. Before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc \emph{*wíduwōn} yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’; after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*júgunθ} yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. The local *weorold* ‘world’ and *widow* evidence places lowering after combinative u-umlaut, while the youth form supplies only the distant requirement that lowering precede unstressed long-vowel shortening.
+The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different scales. Before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc \emph{*wíduwōn} yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’; after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*júgunθ} yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. The local *weorold* 'world' and widow evidence places lowering after combinative u-umlaut, while the youth form supplies only the distant requirement that lowering precede unstressed long-vowel shortening.

@@ -59,9 +59,9 @@ define OEIUmlautFronting [
 
 The breadth of i-umlaut appears in lexical classes that share only a following high front vocoid. The forms *fylgan* ‘follow’, *gylden* ‘golden’, *wyrm* ‘worm’, and *giest* ‘guest’ exemplify the same `i`- or `j`-conditioned fronting across different vowels [@RingeTaylor2014, p. 222, §6.6.1; @Campbell1959, pp. 69--72, §§190--191].
 
-The cow and lung forms establish the lower boundary. If fronting precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* ‘cows’ rather than expected OE *cȳ*, and \emph{*lúnganjō} yields *lunġen* ‘lungs’ rather than expected OE *lungen*. The consonantal change must therefore precede fronting.
+The cow and lung forms establish the lower boundary. If fronting precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* 'cows' rather than expected OE *cȳ* 'cows', and \emph{*lúnganjō} yields *lunġen* 'lungs' rather than expected OE *lungen* 'lungs'. The consonantal change must therefore precede fronting.
 
-The gift and sheath forms establish the upper boundary. If West Saxon palatal diphthongization precedes fronting, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. Fronting consequently follows velar palatalization and precedes the West Saxon change; the other components of i-umlaut share those bounds.
+The gift and sheath forms establish the upper boundary. If West Saxon palatal diphthongization precedes fronting, PGmc \emph{*géftiz} yields *ġieft* 'gift' rather than expected OE *ġift* 'gift', and \emph{*skáiθiz} yields *sċǣþ* 'sheath' rather than expected *sċēaþ* 'sheath'. Fronting consequently follows velar palatalization and precedes the West Saxon change; the other components of i-umlaut share those bounds.
 
 ## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
@@ -73,7 +73,7 @@ define OEIUmlautRaising [
 
 Raising of umlauted `æ` to `e` continues the same assimilatory event as fronting and therefore shares the chronology of general i-umlaut.
 
-The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields [*ċȳ*]{.pred} instead of expected *cȳ* and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of expected *lungen*. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift*, and \emph{*skáiθiz} yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
+The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields [*ċȳ*]{.pred} instead of expected *cȳ* 'cows' and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of expected *lungen* 'lungs'. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift* 'gift', and \emph{*skáiθiz} yields [*sċǣþ*]{.pred} rather than expected *sċēaþ* 'sheath'. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
 
 The sources do not describe umlaut as simple fronting alone. Campbell notes that
 the low front vowel
@@ -106,7 +106,7 @@ handbooks, including *giest* ‘guest’, *giefan* ‘give’, and *hierde*
 pp. 112--114]. These diphthongal outcomes form a distinct part of the general
 umlautal development alongside simple fronting.
 
-The chronology comes from the cow/lung and gift/sheath contrasts. Placed before velar palatalization, diphthongal mutation over-palatalizes \emph{*kūi} and \emph{*lúnganjō}; placed after West Saxon palatal diphthongization, it yields *ġieft* and *sċǣþ* instead of expected *ġift* and *sċēaþ*. These failures place diphthongal mutation after velar palatalization and before West Saxon palatal diphthongization.
+The chronology comes from the cow/lung and gift/sheath contrasts. Placed before velar palatalization, diphthongal mutation over-palatalizes \emph{*kūi} and \emph{*lúnganjō}; placed after West Saxon palatal diphthongization, it yields *ġieft* 'gift' and *sċǣþ* 'sheath' instead of expected *ġift* 'gift' and *sċēaþ* 'sheath'. These failures place diphthongal mutation after velar palatalization and before West Saxon palatal diphthongization.
 
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
@@ -118,9 +118,9 @@ define OEIUmlaut OEIUmlautFronting
 
 The literature presents fronting, raising, and diphthongal mutation as effects of one historical development. They consequently occupy a single place in the Old English chronology.
 
-The lower boundary is consonantal. If general umlaut precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* ‘cows’ rather than expected *cȳ*, and PGmc \emph{*lúnganjō} yields *lunġen* ‘lungs’ rather than expected *lungen*. These over-palatalized forms place general umlaut after velar palatalization.
+The lower boundary is consonantal. If general umlaut precedes velar palatalization, PGmc \emph{*kūi} yields *ċȳ* 'cows' rather than expected *cȳ* 'cows', and PGmc \emph{*lúnganjō} yields *lunġen* 'lungs' rather than expected *lungen* 'lungs'. These over-palatalized forms place general umlaut after velar palatalization.
 
-The upper boundary separates general umlaut from the narrower West Saxon process. If West Saxon palatal diphthongization precedes umlaut, PGmc \emph{*géftiz} yields *ġieft* ‘gift’ rather than expected OE *ġift*, and \emph{*skáiθiz} yields *sċǣþ* ‘sheath’ rather than expected *sċēaþ*. Together the two witness pairs place general umlaut after velar palatalization and before the West Saxon process.
+The upper boundary separates general umlaut from the narrower West Saxon process. If West Saxon palatal diphthongization precedes umlaut, PGmc \emph{*géftiz} yields *ġieft* 'gift' rather than expected OE *ġift* 'gift', and \emph{*skáiθiz} yields *sċǣþ* 'sheath' rather than expected *sċēaþ* 'sheath'. Together the two witness pairs place general umlaut after velar palatalization and before the West Saxon process.
 
 ## SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization}
 

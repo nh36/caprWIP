@@ -34,7 +34,7 @@ define OEWsPalatalGlide [
 
 OE *ġeoc* ‘yoke’ fixes the close relation between glide insertion before back-vocalic \emph{u} and the following change.
 
-If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc*, *ġeong*, and *ġeoguþ* material establishes the lexical scope of the West Saxon development.
+If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ* 'youth' material establishes the lexical scope of the West Saxon development.
 
 ## Historical discussion of u-lowering
 

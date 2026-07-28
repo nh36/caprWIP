@@ -65,6 +65,6 @@ define OEContraction [
 The rule contracts the vowel sequences created after \emph{h}-loss, producing
 *flēon* ‘flee’, *slēan* ‘slay’, and *tēon* ‘draw’.
 
-Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc \emph{*fléuxaną} yield [*flēoan*]{.pred} rather than expected OE *flēon*, PGmc \emph{*sláxaną} yield [*sleaan*]{.pred} rather than expected *slēan*, PGmc \emph{*téxun} yield [*teoon*]{.pred} rather than expected *tēon*, and PGmc \emph{*táixōn} yield [*tāe*]{.pred} rather than expected *tā*. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc \emph{*fléuxaną} yield [*flēoan*]{.pred} rather than expected OE *flēon* 'flee', PGmc \emph{*sláxaną} yield [*sleaan*]{.pred} rather than expected *slēan* 'slay', PGmc \emph{*téxun} yield [*teoon*]{.pred} rather than expected *tēon* 'draw', and PGmc \emph{*táixōn} yield [*tāe*]{.pred} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 The more distant [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
 relation establishes only that weak-tail reduction precedes contraction.

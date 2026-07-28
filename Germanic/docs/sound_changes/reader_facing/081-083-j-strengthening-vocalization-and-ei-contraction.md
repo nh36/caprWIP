@@ -30,7 +30,7 @@ After the relevant front diphthongs, \emph{*j} first strengthened to a consonant
 If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*stráwjaną} yields [*strēaġan*]{.pred} rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields [*strīeian*]{.pred} rather than *strīeġan*. The order test requires [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) to follow [SC055 OEIUmlaut](#rule-OEIUmlaut) and precede [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
 The earlier constraint reaches back to [SC055 OEIUmlaut](#rule-OEIUmlaut) and
-therefore defines a wide interval. The *strīeġan* derivation fixes the local
+therefore defines a wide interval. The *strīeġan* 'strew' derivation fixes the local
 relation to [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
 ## SC082. Intervocalic vocalization of \emph{*j} (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization}
@@ -63,4 +63,4 @@ define OEUnstressedEIContraction [
 
 The rule contracts the unstressed \emph{ei}-like sequence that the preceding vocalization would otherwise leave behind in forms such as *borian* ‘bore’ and *liccian* ‘lick’.
 
-Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc \emph{*búrōjaną} yield [*boreian*]{.pred} rather than expected OE *borian*, PGmc \emph{*líznōjaną} yield [*liorneian*]{.pred} rather than expected *liornian*, and PGmc \emph{*líkkōjaną} yield [*licceian*]{.pred} rather than expected *liccian*. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc \emph{*búrōjaną} yield [*boreian*]{.pred} rather than expected OE *borian* 'bore', PGmc \emph{*líznōjaną} yield [*liorneian*]{.pred} rather than expected *liornian* 'learn', and PGmc \emph{*líkkōjaną} yield [*licceian*]{.pred} rather than expected *liccian* 'lick'. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
