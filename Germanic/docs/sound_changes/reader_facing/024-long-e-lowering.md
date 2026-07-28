@@ -15,6 +15,6 @@ define NWGmcLongELowering [
 ];
 ```
 
-After [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), long \emph{ē} > \emph{ǣ} can no longer produce the expected West Saxon forms: PGmc \emph{*skḗpą} yields [*sċīep*]{.pred} rather than OE *sċēap* ‘sheep’, and PGmc \emph{*jḗrą} yields [*ġīer*]{.pred} rather than *ġēar* ‘year’. Earlier placement changes no checked output, so [SC024 NWGmcLongELowering](#rule-NWGmcLongELowering) has a secure upper boundary.
+After [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), long \emph{ē} > \emph{ǣ} can no longer produce the expected West Saxon forms: PGmc [skḗpą]{.recon} ‘sheep’ yields [*sċīep*]{.pred} rather than OE *sċēap* ‘sheep’, and PGmc [jḗrą]{.recon} ‘year’ yields [*ġīer*]{.pred} rather than *ġēar* ‘year’. Earlier placement changes no checked output, so [SC024 NWGmcLongELowering](#rule-NWGmcLongELowering) has a secure upper boundary.
 
 Its lower boundary remains a matter of handbook chronology.

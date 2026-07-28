@@ -14,6 +14,6 @@ define NWGmcUnstressedORaising [
 ];
 ```
 
-After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*xémonų} yields [*heofun*]{.pred} rather than expected OE *heofon* ‘heaven’; earlier placement changes no checked output. The witness therefore places [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) before medial unstressed-\emph{u} lowering.
+After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [xémonų]{.recon} ‘heaven’ yields [*heofun*]{.pred} rather than expected OE *heofon* ‘heaven’; earlier placement changes no checked output. The witness therefore places [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) before medial unstressed-\emph{u} lowering.
 
 Nothing in the present lexicon supplies the corresponding earlier boundary.

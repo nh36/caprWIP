@@ -66,7 +66,7 @@ define OEVelarPalatalizationKFront [
 
 The *weccan* ‘wake’, *licgan* ‘lie’, and *lecgan* ‘lay’ set identifies front vowels and `j` as the environment for palatalization of `k` [@RingeTaylor2014, pp. 213--214, §6.4.1]. These forms establish the conditioning; different witnesses establish the chronology.
 
-Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc \emph{*kūi} and \emph{*lúnganjō} yield *ċȳ* ‘cows’ and *lunġen* ‘lungs’ rather than expected OE *cȳ* and *lungen*. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
+Applied before Sievers-law syncope, PGmc [strákkijaną]{.recon} ‘stretch’ yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after i-umlaut fronting, PGmc [kūi]{.recon} ‘cow’ and [lúnganjō]{.recon} ‘lungs’ yield *ċȳ* 'cows' and *lunġen* 'lungs' rather than expected OE *cȳ* 'cows' and *lungen* 'lungs'. The front-vowel `k` change therefore follows Sievers-law syncope and precedes i-umlaut fronting.
 
 ## SC052. Velar palatalization before front vowels (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
@@ -84,7 +84,7 @@ define OEVelarPalatalization [
 ];
 ```
 
-Plain `k` and `g` palatalization in front-vocalic and `j`-adjacent environments follows `sk`-palatalization and occupies a sharply defined pre-umlaut interval. Applied before Sievers-law syncope, PGmc \emph{*strákkijaną} yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after general i-umlaut, PGmc \emph{*kūi} yields [*ċȳ*]{.pred} rather than expected *cȳ* ‘cows’, and PGmc \emph{*lúnganjō} yields [*lunġen*]{.pred} rather than expected *lungen* ‘lungs’. These witnesses place velar palatalization after Sievers-law syncope and before umlaut.
+Plain `k` and `g` palatalization in front-vocalic and `j`-adjacent environments follows `sk`-palatalization and occupies a sharply defined pre-umlaut interval. Applied before Sievers-law syncope, PGmc [strákkijaną]{.recon} ‘stretch’ yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’. Applied after general i-umlaut, PGmc [kūi]{.recon} ‘cow’ yields [*ċȳ*]{.pred} rather than expected *cȳ* ‘cows’, and PGmc [lúnganjō]{.recon} ‘lungs’ yields [*lunġen*]{.pred} rather than expected *lungen* ‘lungs’. These witnesses place velar palatalization after Sievers-law syncope and before umlaut.
 
 Luick, Campbell, and Ringe and Taylor place *cild* ‘child’ and *dæg* ‘day’ in a consonantal palatalization that precedes later vowel fronting [@Luick1914, p. 157, §168; @Campbell1959, p. 278, §440; @RingeTaylor2014, pp. 203--215, §§6.4.1, 6.5.1]. The umlautal developments therefore receive plain `k` and `g` already reshaped beside front vowels and `j`.
 

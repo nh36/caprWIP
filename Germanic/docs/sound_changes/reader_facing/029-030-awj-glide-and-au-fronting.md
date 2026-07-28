@@ -2,7 +2,7 @@
 
 ## Historical discussion of awj glide formation and au-fronting
 
-The *hay* and *strew* 'strew' material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
+The *hīeġ* 'hay' and *strīeġan* 'strew' material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
 
 Glide formation creates the input to fronting; diphthong leveling follows both.
 
@@ -23,7 +23,7 @@ define OEAwjGlideFormation [
 ];
 ```
 
-The *hīeġ* and *strīeġan* derivations show that \emph{awj} reshaping prepared the input to fronting. If fronting is applied first, PGmc \emph{*xáwwją} yields [*hauġ*]{.pred} rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields [*strauian*]{.pred} rather than expected *strīeġan* ‘strew’. Earlier placement of glide formation changes no checked output, so these forms supply an upper boundary without a corresponding lower one.
+The *hīeġ* 'hay' and *strīeġan* 'strew' derivations show that \emph{awj} reshaping prepared the input to fronting. If fronting is applied first, PGmc [xáwwją]{.recon} ‘hay’ yields [*hauġ*]{.pred} rather than expected OE *hīeġ* ‘hay’, and PGmc [stráwjaną]{.recon} ‘strew’ yields [*strauian*]{.pred} rather than expected *strīeġan* ‘strew’. Earlier placement of glide formation changes no checked output, so these forms supply an upper boundary without a corresponding lower one.
 
 ## Historical discussion of au-fronting
 
@@ -42,7 +42,7 @@ define OEAuFronting [
 ];
 ```
 
-Two distinct failure sets confine fronting. Placed before glide formation, it produces the wrong forms: PGmc \emph{*xáwwją} yields [*hauġ*]{.pred} rather than expected OE *hīeġ* ‘hay’, and PGmc \emph{*stráwjaną} yields [*strauian*]{.pred} rather than expected *strīeġan* ‘strew’. Placed after diphthong leveling, PGmc \emph{*galáubijaną}, \emph{*bráudą}, and \emph{*dráugmaz}, together with sixteen other derivations, fail to produce output at all (\emph{+?}) instead of yielding expected OE *ġelīefan* ‘believe’, *brēad* ‘bread’, and *drēam* ‘dream’. The lexical errors require fronting to follow glide formation, while the failed derivations require it to precede diphthong leveling.
+Two distinct failure sets confine fronting. Placed before glide formation, it produces the wrong forms: PGmc [xáwwją]{.recon} ‘hay’ yields [*hauġ*]{.pred} rather than expected OE *hīeġ* ‘hay’, and PGmc [stráwjaną]{.recon} ‘strew’ yields [*strauian*]{.pred} rather than expected *strīeġan* ‘strew’. Placed after diphthong leveling, PGmc [galáubijaną]{.recon} ‘believe’, [bráudą]{.recon} ‘bread’, and [dráugmaz]{.recon} ‘dream’, together with sixteen other derivations, fail to produce output at all (\emph{+?}) instead of yielding expected OE *ġelīefan* ‘believe’, *brēad* ‘bread’, and *drēam* ‘dream’. The lexical errors require fronting to follow glide formation, while the failed derivations require it to precede diphthong leveling.
 
 The later failure set consists of failed derivations, not competing Old English
 surface forms.

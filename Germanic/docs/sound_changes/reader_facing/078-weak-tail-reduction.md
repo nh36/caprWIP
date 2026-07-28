@@ -21,11 +21,11 @@ The rule reduces the remaining weak-tail vowels, preventing a broad class of
 I place the change after [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly)
 and before [SC086 OEContraction](#rule-OEContraction). Moving it before
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc
-\emph{*bákaną} yields [*bacen*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc
-\emph{*bíndaną} yields [*binden*]{.pred} rather than expected *bindan* ‘bind’, alongside
+[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc
+[bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* ‘bind’, alongside
 a much wider set of comparable \emph{-en} failures. If the rule is delayed until
-after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields
-[*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, and PGmc \emph{*sláxaną}
+after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields
+[*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, and PGmc [sláxaną]{.recon} ‘slay’
 yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’.
 
 The earlier boundary spans a wide interval and does not establish a close

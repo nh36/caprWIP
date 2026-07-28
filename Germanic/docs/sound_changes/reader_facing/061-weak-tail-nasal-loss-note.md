@@ -2,7 +2,7 @@
 
 ## Historical discussion
 
-The pathway from \emph{*dōną} to *dōn* ‘do’ supplies the sole lexical thread
+The pathway from [dōną]{.recon} ‘do’ to *dōn* ‘do’ supplies the sole lexical thread
 through this reduction. Campbell, Hogg, and Fulk place such weak-tail losses
 among apocope and related late reductions [@Campbell1959, pp. 144--145,
 §§345--349; @Hogg1992, pp. 120--121; @Fulk2018, p. 91, §5.6]. The witness,

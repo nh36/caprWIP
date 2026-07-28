@@ -34,7 +34,7 @@ define OEWsPalatalGlide [
 
 OE *ġeoc* ‘yoke’ fixes the close relation between glide insertion before back-vocalic \emph{u} and the following change.
 
-If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*júką} yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc*, *ġeong*, and *ġeoguþ* material establishes the lexical scope of the West Saxon development.
+If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [júką]{.recon} ‘yoke’ yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ* 'youth' material establishes the lexical scope of the West Saxon development.
 
 ## Historical discussion of u-lowering
 
@@ -59,4 +59,4 @@ define NWGmcULowering [
 
 Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* ‘yoke’, *nosu* ‘nose’, *sċofl* ‘shovel’, and *sorg* ‘sorrow’.
 
-Before [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), PGmc \emph{*júką} yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’. After [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc \emph{*núsō} yields [*nusu*]{.pred} rather than expected *nosu* ‘nose’, PGmc \emph{*skúflō} yields [*sċufl*]{.pred} rather than expected *sċofl* ‘shovel’, and PGmc \emph{*súrgō} yields [*surg*]{.pred} rather than expected *sorg* ‘sorrow’. The two witness sets place [SC017 NWGmcULowering](#rule-NWGmcULowering) after glide formation and before final long-\emph{o} raising.
+Before [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), PGmc [júką]{.recon} ‘yoke’ yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’. After [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [núsō]{.recon} ‘nose’ yields [*nusu*]{.pred} rather than expected *nosu* ‘nose’, PGmc [skúflō]{.recon} ‘shovel’ yields [*sċufl*]{.pred} rather than expected *sċofl* ‘shovel’, and PGmc [súrgō]{.recon} ‘sorrow’ yields [*surg*]{.pred} rather than expected *sorg* ‘sorrow’. The two witness sets place [SC017 NWGmcULowering](#rule-NWGmcULowering) after glide formation and before final long-\emph{o} raising.

@@ -15,7 +15,7 @@ define NWGmcAToUBeforeM [
 ];
 ```
 
-Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc \emph{*skúldramiz} yields [*sċoldrum*]{.pred} rather than expected OE *sċuldrum*; earlier placements converge on the expected output. The `shoulder` family therefore tests the chronology, while the inflectional endings justify restricting the change to noninitial unstressed material before \emph{*m}.
+Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [skúldramiz]{.recon} ‘shoulders’ yields [*sċoldrum*]{.pred} rather than expected OE *sċuldrum* 'shoulders'; earlier placements converge on the expected output. The `shoulder` family therefore tests the chronology, while the inflectional endings justify restricting the change to noninitial unstressed material before \emph{*m}.
 
 The evidence is confined to inflectional
 material.

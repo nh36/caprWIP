@@ -3,7 +3,7 @@
 ## Historical discussion
 
 West Saxon *giefan* ‘give’ and *wefan* ‘weave’ stand against non-West-Saxon
-*geofad* and *weofan*. Ringe and Taylor use this contrast to define the
+*geofad* 'gave' and *weofan* 'weave'. Ringe and Taylor use this contrast to define the
 dialectal profile of back mutation [@RingeTaylor2014, p. 319, §6.9.4].
 Campbell's treatment of diphthongization before following back vowels includes
 *heofon* ‘heaven’ [@Campbell1959, p. 86, §207], while Hogg draws the instructive
@@ -22,11 +22,11 @@ define OEBackMutation [
 
 Three witness forms bracket the chronology. If back mutation precedes
 [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), forms such as
-\emph{*gébaną} produce *ġeofan* ‘give’; the
-expected form is *ġiefan* ‘give’. \emph{*stélaną} likewise produces *steolan*
+[gébaną]{.recon} ‘give’ produce *ġeofan* ‘give’; the
+expected form is *ġiefan* ‘give’. [stélaną]{.recon} ‘steal’ likewise produces *steolan*
 ‘steal’; the expected form is *stelan* ‘steal’. At the other edge, delaying
 back mutation until after
 [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) makes
-\emph{*wébaną} yield *weofan* ‘weave’; the expected form is *wefan* ‘weave’.
+[wébaną]{.recon} ‘weave’ yield *weofan* ‘weave’; the expected form is *wefan* ‘weave’.
 Thus back mutation follows secondary nasalization but precedes the weak-tail
 reductions.

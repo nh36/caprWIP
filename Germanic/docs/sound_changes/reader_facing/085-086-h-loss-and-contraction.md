@@ -21,7 +21,7 @@ define OEHLoss [
 
 The rule removes intervocalic \emph{*h}, creating the hiatus that later contraction must resolve.
 
-If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc \emph{*táixōn} yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc \emph{*sláxaną} yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc \emph{*téxun} yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc \emph{*táixōn} yields [*tāe*]{.pred} rather than expected *tā*. These outputs require [SC085 OEHLoss](#rule-OEHLoss) to follow [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) and precede [SC086 OEContraction](#rule-OEContraction).
+If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} yields [*tāe*]{.pred} rather than expected *tā*. These outputs require [SC085 OEHLoss](#rule-OEHLoss) to follow [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) and precede [SC086 OEContraction](#rule-OEContraction).
 
 The earlier boundary rests on one witness; the four later witnesses establish
 the immediate relation to contraction.
@@ -65,6 +65,6 @@ define OEContraction [
 The rule contracts the vowel sequences created after \emph{h}-loss, producing
 *flēon* ‘flee’, *slēan* ‘slay’, and *tēon* ‘draw’.
 
-Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc \emph{*fléuxaną} yield [*flēoan*]{.pred} rather than expected OE *flēon*, PGmc \emph{*sláxaną} yield [*sleaan*]{.pred} rather than expected *slēan*, PGmc \emph{*téxun} yield [*teoon*]{.pred} rather than expected *tēon*, and PGmc \emph{*táixōn} yield [*tāe*]{.pred} rather than expected *tā*. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred} rather than expected OE *flēon* 'flee', PGmc [sláxaną]{.recon} ‘slay’ yield [*sleaan*]{.pred} rather than expected *slēan* 'slay', PGmc [téxun]{.recon} ‘draw’ yield [*teoon*]{.pred} rather than expected *tēon* 'draw', and PGmc [táixōn]{.recon} ‘toe’ yield [*tāe*]{.pred} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 The more distant [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
 relation establishes only that weak-tail reduction precedes contraction.

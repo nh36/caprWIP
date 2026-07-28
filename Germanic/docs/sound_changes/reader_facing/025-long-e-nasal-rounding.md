@@ -2,7 +2,7 @@
 
 ## Historical discussion
 
-Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* ‘month’ and *mōna* / *mōn*-type material. Campbell treats this split directly in his discussion of Germanic long \emph{ē} before nasal consonants [@Campbell1959, p. 53, §129].
+Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* 'month' and *mōna* / *mōn* 'moon'-type material. Campbell treats this split directly in his discussion of Germanic long \emph{ē} before nasal consonants [@Campbell1959, p. 53, §129].
 
 The change is historically recognizable, but the tested forms supply no close relative chronology.
 

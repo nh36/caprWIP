@@ -22,7 +22,7 @@ Ringe and Taylor's merger of unstressed \emph{*ai} with \emph{*e} establishes th
 
 ## Historical discussion of early unstressed front-vowel leveling
 
-Campbell treats the merger of unstressed front vowels directly and also records the variation of *weorold* and *weoruld* [@Campbell1959, pp. 141--142, 154--155]. These forms supply [SC015 NWGmcILowering](#rule-NWGmcILowering) with a firmer lexical basis than the preceding change.
+Campbell treats the merger of unstressed front vowels directly and also records the variation of *weorold* 'world' and *weoruld* 'world' [@Campbell1959, pp. 141--142, 154--155]. These forms supply [SC015 NWGmcILowering](#rule-NWGmcILowering) with a firmer lexical basis than the preceding change.
 
 ## SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering}
 
@@ -37,7 +37,7 @@ define NWGmcILowering [
 ];
 ```
 
-The *weorold* and *weoruld* variants turn the general source claim into an ordering test. If [SC015 NWGmcILowering](#rule-NWGmcILowering) is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields [*wuruld*]{.pred} rather than expected OE *weorold* ‘world’; earlier movement changes no checked output.
+The *weorold* 'world' and *weoruld* 'world' variants turn the general source claim into an ordering test. If [SC015 NWGmcILowering](#rule-NWGmcILowering) is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc [wír-àldu]{.recon} ‘world’ yields [*wuruld*]{.pred} rather than expected OE *weorold* ‘world’; earlier movement changes no checked output.
 
 The derivation thus fixes front-vowel leveling before interstress raising while leaving its earlier boundary open.
 

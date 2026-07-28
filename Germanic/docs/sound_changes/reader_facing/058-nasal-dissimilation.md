@@ -4,7 +4,7 @@
 
 Most accounts introduce nasal dissimilation to explain individual forms rather
 than as a regular sound law. Luick records *enetre* ‘yearling’ (spelled
-*enitre* in his text) [@Luick1914, p. 166]; Campbell discusses *heofon*
+*enitre* 'yearling' in his text) [@Luick1914, p. 166]; Campbell discusses *heofon*
 ‘heaven’ with suffixal variation [@Campbell1959, p. 155]; and Hogg encounters
 the same form while treating back mutation [@Hogg1992, p. 112].
 

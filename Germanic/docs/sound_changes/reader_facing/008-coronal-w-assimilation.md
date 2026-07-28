@@ -17,6 +17,6 @@ define PWGmcCoronalWAssimilation [
 ];
 ```
 
-OE *fēower* ‘four’ exposes a feeding relation: coronal assimilation must create \emph{*ww} while simplification can still reduce it. If [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) is delayed until after [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc \emph{*fédwōr} yields [*fēowwer*]{.pred} rather than expected OE *fēower* ‘four’. Earlier placements alter no checked output.
+OE *fēower* ‘four’ exposes a feeding relation: coronal assimilation must create \emph{*ww} while simplification can still reduce it. If [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) is delayed until after [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc [fédwōr]{.recon} ‘four’ yields [*fēowwer*]{.pred} rather than expected OE *fēower* ‘four’. Earlier placements alter no checked output.
 
 The numeral fixes that relative order. The pronouns extend both input clusters beyond `four`; the earlier boundary remains undetermined.
