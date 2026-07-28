@@ -397,6 +397,8 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md \
       --standalone \
       --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/tools/predicted_form_filter.lua \
+      --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --number-sections \

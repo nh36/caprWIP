@@ -182,7 +182,8 @@ ALLOWED_FORM_ROLES = {
 }
 FORM_RE = re.compile(r"[*A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ'().-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
-EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
+RECON_SPAN_RE = re.compile(r"\[([^\]]+)\]\{\.recon(?:[^}]*)?\}")
+EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.(?:iv|pred)(?P<attrs>[^}]*)\}")
 ATTR_RE = re.compile(r"(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?P<value>\"[^\"]*\"|[^\s}]+)")
 STAGE_FORM_RE = re.compile(
     r"(?P<label>(?:PGmc|Proto-Germanic|PWGmc|Proto-West Germanic|Proto-West-Germanic|"
@@ -190,14 +191,15 @@ STAGE_FORM_RE = re.compile(
     r"West Saxon|WS|Anglo Frisian|Anglian)[^:\n<]{0,80}):\s*(?P<form>\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
 )
 FAILURE_FORM_TOKEN_RE = (
-    r"(?:\\emph\{[^}]+\}|\*[^*\n]+\*|`[^`\n]+`|_[^_\n]+_|"
+    r"(?:\[(?:[^\]]+)\]\{(?:\.[^}]+)\}|\\emph\{[^}]+\}|\*[^*\n]+\*|`[^`\n]+`|_[^_\n]+_|"
     r"\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
 )
+_GLOSS_OPT = r"""(?:\s*[\u2018\u2019'"\u201c\u201d][^\u2019'"\u201d\n]{1,40}[\u2019'"\u201d])?"""
 FAILURE_EXAMPLE_RE = re.compile(
     r"(?P<label>PGmc|PWGmc|NWGmc|OE|Old English)\s+"
-    r"(?P<input>" + FAILURE_FORM_TOKEN_RE + r")\s+"
+    r"(?P<input>" + FAILURE_FORM_TOKEN_RE + r")" + _GLOSS_OPT + r"\s+"
     r"yields\s+"
-    r"(?P<yield>" + FAILURE_FORM_TOKEN_RE + r")\s+"
+    r"(?P<yield>" + FAILURE_FORM_TOKEN_RE + r")" + _GLOSS_OPT + r"\s+"
     r"(?:rather than expected(?:\s+OE)?|instead of(?:\s+expected(?:\s+OE)?)?)\s+"
     r"(?P<expected>" + FAILURE_FORM_TOKEN_RE + r")"
 )
@@ -875,6 +877,15 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
 
 def normalize_failure_form(text: str) -> str:
     token = text.strip()
+    # Handle .recon spans (reconstructed lexical forms): strip to bare form with * prefix.
+    m_recon = RECON_SPAN_RE.match(token)
+    if m_recon:
+        token = "*" + m_recon.group(1)
+    # If the token is an explicit tagged span like [*bearda*]{.pred} or {.iv},
+    # extract the inner content first.
+    m = EXPLICIT_TAG_RE.match(token)
+    if m:
+        token = m.group('content').strip()
     # Markdown italic wrappers like *bearda* represent reconstructed forms in
     # reader-facing failure prose; keep the leading reconstruction marker.
     if token.startswith("*") and token.endswith("*") and len(token) > 2:
@@ -1811,6 +1822,21 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
         if stripped.startswith("|") or stripped.startswith("define "):
             continue
         scrubbed = EXPLICIT_TAG_RE.sub("", line)
+        # .recon spans represent reconstructed lexical forms; extract with asterisk prefix.
+        for match in RECON_SPAN_RE.finditer(line):
+            form = strip_markup("*" + match.group(1))
+            if form:
+                candidates.append(
+                    CandidateOccurrence(
+                        form=form,
+                        source_ref=f"{rel}:{line_no}",
+                        source_path=rel,
+                        line_no=line_no,
+                        heading=current_heading,
+                        line_text=stripped,
+                        candidate_origin="broad_prose_candidate",
+                    )
+                )
         for match in MARKUP_FORM_RE.finditer(scrubbed):
             raw = next(group for group in match.groups() if group)
             form = strip_markup(raw)
