@@ -19,9 +19,9 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
-reconstructs an a-stem `*staba-` [@Kroonen2013, 471]. Orel writes [`*stábiz`]{.iv lang=pgmc sort=stabiz role=source_protoform} ~
-[`*stábaz`]{.iv lang=pgmc sort=stabaz role=selected_input} [@Orel2003, 368]. A direct i-stem input in
-`*-iz` would predict i-mutation in Old English, whereas the attested noun keeps
+reconstructs an a-stem `*staba-` [@Kroonen2013, 471]. Orel writes [[stábiz]{.recon} ‘staff’]{.iv lang=pgmc sort=stabiz role=source_protoform} ~
+[[stábaz]{.recon} ‘staff’]{.iv lang=pgmc sort=stabaz role=selected_input} [@Orel2003, 368]. A direct i-stem input in
+[-iz]{.recon} ‘staff’ would predict i-mutation in Old English, whereas the attested noun keeps
 `æ`.
 
 ### Old English evidence
@@ -38,7 +38,7 @@ With the selected a-stem input, the development is regular. Final `*-z`
 disappears, bare final `-a` is lost, Anglo-Frisian brightening gives `æ` in the
 closed monosyllable, and medial `b` surfaces as a fricative written `f`. The
 documented chain is `*stábaz > *stába > *stáb > *stæb > stæf`. A direct
-continuation of `*stábiz`, by contrast, would produce i-mutated `stefe` rather
+continuation of [stábiz]{.recon} ‘staff’, by contrast, would produce i-mutated `stefe` rather
 than the attested singular.
 
 ### Formation comparison

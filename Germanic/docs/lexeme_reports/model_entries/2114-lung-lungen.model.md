@@ -20,14 +20,14 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen treats the basic noun as `*lungōn-` and also cites an OE-facing
 derivative `*lungunjō-`, continued by Old English `lungen` and close West
-Germanic cognates [@Kroonen2013, 384]. The selected input `*lúnganjō` models that
+Germanic cognates [@Kroonen2013, 384]. The selected input [lúnganjō]{.recon} ‘lung’ models that
 derived feminine formation rather than the base noun. The notation differs
 slightly from Kroonen's `*lungunjō-`, but both point to the same derived
 feminine line.
 
 The difference between the citation label and the selected input is therefore
 derivational. Old English `lungen` is not a direct reflex of the bare base noun
-`*lungō`; it belongs to an expanded feminine formation.
+[lungō]{.recon} ‘lung’; it belongs to an expanded feminine formation.
 
 ### Old English evidence
 

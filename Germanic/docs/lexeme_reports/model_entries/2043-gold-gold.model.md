@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor cite the noun as `*gulþa- / *gulda-`, and Kroonen gives the same pair [@RingeTaylor2014, 42; @Kroonen2013]. The selected input `*gúlθą` preserves the older consonantal form while leaving open whether the medial stop reflects inherited alternation or regular West Germanic development.
+Ringe and Taylor cite the noun as `*gulþa- / *gulda-`, and Kroonen gives the same pair [@RingeTaylor2014, 42; @Kroonen2013]. The selected input [gúlθą]{.recon} ‘gold’ preserves the older consonantal form while leaving open whether the medial stop reflects inherited alternation or regular West Germanic development.
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ Ringe and Taylor note that the medial stop can be understood either as alternati
 
 ### Development to Old English
 
-From `*gúlθą`, the regular consonant development gives `*gúldą`; Northwest Germanic / Old English lowering then yields `*góldą`, and apocope gives `gold` [@Campbell1959; @RingeTaylor2014, 42].
+From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gúldą]{.recon} ‘gold’; Northwest Germanic / Old English lowering then yields [góldą]{.recon} ‘gold’, and apocope gives `gold` [@Campbell1959; @RingeTaylor2014, 42].

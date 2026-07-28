@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*kurna-`, and Orel gives the citation form `*kurnan`, both with Old English `corn` among the reflexes [@Kroonen2013; @Orel2003, 264]. The singular form `*kúrną` is the nominative-accusative singular appropriate to the citation noun.
+Kroonen cites the noun as `*kurna-`, and Orel gives the citation form [kurnan]{.recon} ‘corn’, both with Old English `corn` among the reflexes [@Kroonen2013; @Orel2003, 264]. The singular form [kúrną]{.recon} ‘corn’ is the nominative-accusative singular appropriate to the citation noun.
 
 ### Old English evidence
 
@@ -26,4 +26,4 @@ Clark Hall gives `corn n. 'corn,' grain`, Bright's glossary lists `corn, n.` wit
 
 ### Development to Old English
 
-With northwest Germanic lowering, `*kúrną` becomes `*kórną`, and later loss of final nasal after a heavy syllable yields `*kórn`, whence `corn`. The oblique form `*kurnăn` belongs to comparative background rather than to the derivational input of this entry.
+With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]{.recon} ‘corn’, and later loss of final nasal after a heavy syllable yields [kórn]{.recon} ‘corn’, whence `corn`. The oblique form [kurnăn]{.recon} ‘corn’ belongs to comparative background rather than to the derivational input of this entry.

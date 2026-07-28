@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the verb as a regular `*a + lC` breaking case, with West Saxon `healdan` opposed to Anglian and Mercian `haldan` [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the verb as a regular [a + lC]{.recon} ‘hold’ breaking case, with West Saxon `healdan` opposed to Anglian and Mercian `haldan` [@Campbell1959; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Bright gives the ordinary strong-verb citation form and principal parts `healdan
 
 ### Development to Old English
 
-From `*xáldaną`, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces `ea` before `ld`. Later reduction of the infinitive ending gives `healdan` [@Campbell1959; @RingeTaylor2014].
+From [xáldaną]{.recon} ‘hold’, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces `ea` before `ld`. Later reduction of the infinitive ending gives `healdan` [@Campbell1959; @RingeTaylor2014].
 
 ### Dialect note
 

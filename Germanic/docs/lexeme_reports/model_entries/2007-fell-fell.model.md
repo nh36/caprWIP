@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as `*fella-` 'membrane, skin, hide' and cites Old English `fell` beside Dutch `vel` and German `Fell` [@Kroonen2013]. The selected input `*féllą` is the derivable singular form of that same inherited noun.
+Kroonen reconstructs the noun as `*fella-` 'membrane, skin, hide' and cites Old English `fell` beside Dutch `vel` and German `Fell` [@Kroonen2013]. The selected input [féllą]{.recon} ‘fell’ is the derivable singular form of that same inherited noun.
 
 ### Old English evidence
 
@@ -26,4 +26,4 @@ Clark Hall records `fell` as the noun 'fell, skin, hide', and Bright's glossary 
 
 ### Development to Old English
 
-With `*féllą`, no special earlier reshaping is needed: heavy-syllable nasal apocope yields `*féll`, surfacing as `fell`. The regular development treated here is therefore `*féllą > fell`.
+With [féllą]{.recon} ‘fell’, no special earlier reshaping is needed: heavy-syllable nasal apocope yields [féll]{.recon} ‘fell’, surfacing as `fell`. The regular development treated here is therefore `*féllą > fell`.

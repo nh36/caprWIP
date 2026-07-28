@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the berry noun as [`*basja-`]{.iv lang=pgmc sort=basja role=source_protoform} ~ [`*bazja-`]{.iv lang=pgmc sort=bazja role=source_protoform} [@Kroonen2013, 54]. The
-selected input [`*bázjas`]{.iv lang=pgmc sort=bazjas role=selected_input} is therefore not a rival lexeme headword, but a
+selected input [[bázjas]{.recon} ‘berry’]{.iv lang=pgmc sort=bazjas role=selected_input} is therefore not a rival lexeme headword, but a
 specific genitive singular cell drawn from that paradigm.
 
 The relevant point is that `*rj` did not geminate in Proto-West Germanic.
@@ -36,8 +36,8 @@ dictionary headword.
 
 ### Development to Old English
 
-Citation [`*bázją`]{.iv lang=pgmc sort=bazja role=source_protoform} gives [`bere`]{.iv lang=oe sort=bere role=regular_output}, not the selected target. The genitive singular
-[`*bázjas`]{.iv lang=pgmc sort=bazjas role=selected_input}, however, gives [`berġes`]{.iv lang=oe sort=berges role=target_form}, with medial `-rġ-` preserved in the same
+Citation [[bázją]{.recon} ‘berry’]{.iv lang=pgmc sort=bazja role=source_protoform} gives [`bere`]{.iv lang=oe sort=bere role=regular_output}, not the selected target. The genitive singular
+[[bázjas]{.recon} ‘berry’]{.iv lang=pgmc sort=bazjas role=selected_input}, however, gives [`berġes`]{.iv lang=oe sort=berges role=target_form}, with medial `-rġ-` preserved in the same
 way that Ringe and Taylor cite [`herges`]{.iv lang=oe sort=herges role=comparison_form} beside [`here`]{.iv lang=oe sort=here role=comparison_form} [@RingeTaylor2014, 181].
 This points to paradigm choice rather than to an extra phonological rule.
 

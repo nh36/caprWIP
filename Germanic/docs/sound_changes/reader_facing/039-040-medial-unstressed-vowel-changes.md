@@ -6,7 +6,7 @@ The history of *wuduwe* ‘widow’ orders these two changes within the same
 low-stress vocalic development. Campbell discusses both the
 \emph{w}-conditioned \emph{u} forms and the later *weorold* 'world' / *weoruld* 'world'
 alternation, while Ringe and Taylor give the same connection comparatively in
-\emph{*widuwon-}, \emph{*weraldu}, and [jugunþi]{.recon} ‘youth’
+\emph{*widuwon-}, [weraldu]{.recon} 'world', and [jugunþi]{.recon} 'youth'
 [@Campbell1959, p. 92, §218; @Campbell1959, p. 140, §332;
 @Campbell1959, pp. 141--142, §§338--339; @RingeTaylor2014, p. 267;
 @RingeTaylor2014, p. 322, §6.3.3].

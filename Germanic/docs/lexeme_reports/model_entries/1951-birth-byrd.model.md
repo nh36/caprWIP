@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun under stem-level `*burdi-` and gives Old English `(ge-)byrd` among the reflexes [@Kroonen2013]. The selected input `*búrdiz` is the nominative-style form that stands behind that stem label.
+Kroonen cites the noun under stem-level `*burdi-` and gives Old English `(ge-)byrd` among the reflexes [@Kroonen2013]. The selected input [búrdiz]{.recon} ‘birth’ is the nominative-style form that stands behind that stem label.
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ The relevant comparator here is the simplex noun `byrd`. The prefixed forms rema
 
 ### Development to Old English
 
-From `*búrdiz`, loss of final `z` gives `*búrdi`. I-umlaut fronts `u` to `y`, and high-vowel apocope then yields `byrd`. The result is the ordinary simplex Old English noun.
+From [búrdiz]{.recon} ‘birth’, loss of final `z` gives [búrdi]{.recon} ‘birth’. I-umlaut fronts `u` to `y`, and high-vowel apocope then yields `byrd`. The result is the ordinary simplex Old English noun.

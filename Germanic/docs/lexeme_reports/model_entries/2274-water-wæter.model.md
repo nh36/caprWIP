@@ -19,20 +19,20 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs a heteroclitic noun **`*watar-~*watan-`** and states that
-the Proto-Germanic material points to **`*watōr, *watenaz`**
+the Proto-Germanic material points to **[watōr, *watenaz]{.recon} ‘water’**
 [@Kroonen2013, 616]. Ringe and Taylor likewise start from singular
-**`*wator`** before the Old English branch [@RingeTaylor2014, §3.1.4].
+**[wator]{.recon} ‘water’** before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular
 form that actually corresponds to Old English **[`wæter`]{.iv lang=oe sort=waeter role=target_form}**. The relevant
-comparator is the inherited nominative-accusative singular **[`*wátōr`]{.iv lang=pgmc sort=wator role=selected_input}**.
+comparator is the inherited nominative-accusative singular **[[wátōr]{.recon} ‘water’]{.iv lang=pgmc sort=wator role=selected_input}**.
 
 ### Old English evidence
 
 Bright gives the noun as **[`wæter`]{.iv lang=oe sort=waeter role=target_form}** with the regular paradigm
-**`wæteres, wætere, wæter(u), wætera, wæterum`**
+**`wæteres, wætere, wæter(u), wætera, wæterum[*
 [@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast
-between West Saxon **`weeter`** and Mercian **`weter`**
+between West Saxon **]{.recon} ‘water’weeter[* and Mercian **]{.recon} ‘water’weter`**
 [@RingeTaylor2014, §6.5.2].
 
 The target is therefore an attested Old English citation form within a normal
@@ -41,9 +41,7 @@ Old English attestation.
 
 ### Development to Old English
 
-From **[`*wátōr`]{.iv lang=pgmc sort=wator role=selected_input}**, pre-final **`*ō`** becomes **`a`** before final **`r`**,
-yielding **`*watar`** [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then
-gives **`*wætær`**, and merger of unstressed **`æ/e`** yields **[`wæter`]{.iv lang=oe sort=waeter role=regular_output}**.
+From [wátōr]{.recon} ‘water’, pre-final `ō` becomes `a`, yielding [watar]{.recon} ‘water’ [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then gives [wætær]{.recon} ‘water’, and merger of unstressed `æ/e` yields [wæter]{.iv lang=oe sort=waeter role=regular_output}.
 
 ### Stage comparison
 

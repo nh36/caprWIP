@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites `*tūna-` 'fenced area', while Orel gives `*tūnan ~ *tūnaz` [@Kroonen2013; @Orel2003, 452]. The selected input `*tūną` is the simple citation-form noun used in the derivation.
+Kroonen cites `*tūna-` 'fenced area', while Orel gives [tūnan ~ *tūnaz]{.recon} ‘town’ [@Kroonen2013; @Orel2003, 452]. The selected input [tūną]{.recon} ‘town’ is the simple citation-form noun used in the derivation.
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ The inherited long `ū` is preserved, and loss of the final nasal vowel yields `
 
 ### Source note
 
-The comparative headwords vary, but the Old English target here is the direct citation form `tūn`, not an oblique `*tūnăn`.
+The comparative headwords vary, but the Old English target here is the direct citation form `tūn`, not an oblique [tūnăn]{.recon} ‘town’.

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor distinguish preterite `*warp` from infinitive `*werpana`, and the selected input here is the verbal form `*wérpaną` [@RingeTaylor2014].
+Ringe and Taylor distinguish preterite [warp]{.recon} ‘warp’ from infinitive [werpana]{.recon} ‘warp’, and the selected input here is the verbal form [wérpaną]{.recon} ‘warp’ [@RingeTaylor2014].
 
 ### Old English evidence
 

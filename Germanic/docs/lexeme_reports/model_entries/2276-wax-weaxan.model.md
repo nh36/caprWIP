@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the verb as `*wahs(j)an-`, Orel as `*waxsanan`, and Ringe and Taylor discuss the prehistory of Old English `weaxan` within the same verbal family [@Kroonen2013; @Orel2003, 478; @RingeTaylor2014].
+Kroonen cites the verb as `*wahs(j)an-`, Orel as [waxsanan]{.recon} ‘wax’, and Ringe and Taylor discuss the prehistory of Old English `weaxan` within the same verbal family [@Kroonen2013; @Orel2003, 478; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall gives `weaxan` as the verb headword and separately records bare `wax`
 
 ### Development to Old English
 
-From `*wáxsaną`, brightening and breaking yield `weax-`, and the infinitive develops regularly to `weaxan`. The cluster is preserved here, since `xs > s` belongs to forms where another consonant follows, such as `wæstm`, not to the infinitive itself [@Campbell1959; @SieversBrunner1965].
+From [wáxsaną]{.recon} ‘wax’, brightening and breaking yield `weax-`, and the infinitive develops regularly to `weaxan`. The cluster is preserved here, since `xs > s` belongs to forms where another consonant follows, such as `wæstm`, not to the infinitive itself [@Campbell1959; @SieversBrunner1965].
 
 ### Lexical note
 

@@ -42,3 +42,4 @@ Implementation notes
 - Use [*form*]{.pred} for counterfactual model outputs (dagger supplied by renderer).
 - Use [*form*]{.iv ...} for indexed attested/normalised Old English forms.
 - Use plain *form* Markdown italic for attested Old English forms in prose that need no index entry.
+- `.iv` (indexing) and `.recon` (reconstruction) are orthogonal and may coexist: [form]{.recon .iv lang=pgmc display=*form sort=...} produces the asterisk via \Recon and an index entry via .iv, with no duplication.

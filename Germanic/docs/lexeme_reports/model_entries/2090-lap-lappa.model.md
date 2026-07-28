@@ -18,15 +18,15 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The comparative sources point to a weak noun with `pp`: Orel gives `*lappōn`,
+The comparative sources point to a weak noun with `pp`: Orel gives [lappōn]{.recon} ‘lap’,
 and the Old English dictionary tradition preserves variant `læppa`
-[@Orel2003, 236; @ClarkHall1960, 180]. The selected input `*láppô`
+[@Orel2003, 236; @ClarkHall1960, 180]. The selected input [láppô]{.recon} ‘lap’
 follows that evidence.
 
-A competing comparative label `*lábbaz` has also circulated for the word
+A competing comparative label [lábbaz]{.recon} ‘lap’ has also circulated for the word
 family, but the cited handbooks do not make it the direct source of the Old
 English weak noun. The form relevant to the OE development is the weak
-masculine input `*láppô`.
+masculine input [láppô]{.recon} ‘lap’.
 
 ### Old English evidence
 

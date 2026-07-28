@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the animal name as `*hindō-` f. 'hind' [@Kroonen2013]. The selected input `*xéndjō` represents that same noun in the present derivation.
+Kroonen cites the animal name as `*hindō-` f. 'hind' [@Kroonen2013]. The selected input [xéndjō]{.recon} ‘hind’ represents that same noun in the present derivation.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller record `hind` as the noun 'hind, female deer' [@C
 
 ### Development to Old English
 
-From `*xéndjō`, i-mutation produces the front-vocalic Old English stem, and later apocope plus loss of final `j` yield `hind`. The outcome is therefore a regular citation-form derivation.
+From [xéndjō]{.recon} ‘hind’, i-mutation produces the front-vocalic Old English stem, and later apocope plus loss of final `j` yield `hind`. The outcome is therefore a regular citation-form derivation.
 
 ### Form note
 

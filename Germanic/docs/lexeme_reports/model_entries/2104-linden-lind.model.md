@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller both record `lind` as the noun 'lime-tree, linden
 
 ### Development to Old English
 
-From `*líndō`, Northwest Germanic final `*ō` raising first gives a `*líndu` stage, and later high-vowel apocope yields `lind`. The development is therefore straightforward and regular.
+From [líndō]{.recon} ‘linden’, Northwest Germanic final `*ō` raising first gives a [líndu]{.recon} ‘linden’ stage, and later high-vowel apocope yields `lind`. The development is therefore straightforward and regular.
 
 ### Form note
 

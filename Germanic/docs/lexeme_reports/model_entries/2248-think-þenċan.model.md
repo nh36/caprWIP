@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the verb as `*þankjan-` 'to think', and Ringe and Taylor cite fully inflected `*þankijaną` beside OE `þenċan` [@Kroonen2013; @RingeTaylor2014]. The noun `*þankaz` belongs only to the wider derivational background.
+Kroonen gives the verb as `*þankjan-` 'to think', and Ringe and Taylor cite fully inflected [þankijaną]{.recon} ‘think’ beside OE `þenċan` [@Kroonen2013; @RingeTaylor2014]. The noun [þankaz]{.recon} ‘think’ belongs only to the wider derivational background.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Bosworth-Toller preserves the verb under `þencan/geþencan`, and the citation f
 
 ### Development to Old English
 
-From `*θánkijaną`, palatalization before `*j` and i-umlaut produce `þenċan`. The infinitive is therefore a straightforward weak-verb outcome.
+From [θánkijaną]{.recon} ‘think’, palatalization before `*j` and i-umlaut produce `þenċan`. The infinitive is therefore a straightforward weak-verb outcome.
 
 ### Lexical note
 

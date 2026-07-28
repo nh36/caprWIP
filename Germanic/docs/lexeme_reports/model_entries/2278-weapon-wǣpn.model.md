@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs a double-stem noun `*wēbna- ~ *wēpna-` and cites OE `wæpn` among its reflexes [@Kroonen2013, 617]. The selected input `*wḗpną` represents the unbroken citation-form noun rather than the later broken simplex.
+Kroonen reconstructs a double-stem noun `*wēbna- ~ *wēpna-` and cites OE `wæpn` among its reflexes [@Kroonen2013, 617]. The selected input [wḗpną]{.recon} ‘weapon’ represents the unbroken citation-form noun rather than the later broken simplex.
 
 ### Old English evidence
 

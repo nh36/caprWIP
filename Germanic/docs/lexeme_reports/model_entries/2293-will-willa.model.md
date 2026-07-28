@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen separates noun `*weljan- 2` 'will, wish' from verb `*weljan- 1` 'to want', while Orel and Kluge represent the noun as `*weljōn` [@Kroonen2013; @Orel2003; @KlugeSeebold2011]. The selected derivational form `*wéljô` is the noun-side input used for this row.
+Kroonen separates noun [weljan- 2]{.recon} 'will, wish' from verb [weljan- 1]{.recon} 'to want', while Orel and Kluge represent the noun as [weljōn]{.recon} ‘will’ [@Kroonen2013; @Orel2003; @KlugeSeebold2011]. The selected derivational form [wéljô]{.recon} ‘will’ is the noun-side input used for this row.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall lemmatizes noun `willa m.` separately from verb `willan` [@ClarkHall1
 
 ### Development to Old English
 
-From `*wéljô`, j-gemination yields a heavy stem, i-umlaut gives `will-`, and later shortening plus j-loss produce `willa`. The noun is therefore a regular weak masculine outcome.
+From [wéljô]{.recon} ‘will’, j-gemination yields a heavy stem, i-umlaut gives `will-`, and later shortening plus j-loss produce `willa`. The noun is therefore a regular weak masculine outcome.
 
 ### Lexical note
 

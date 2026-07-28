@@ -26,7 +26,7 @@ Clark Hall gives `wadan` as the verb 'to go, move, stride, advance', and Bright 
 
 ### Development to Old English
 
-From `*wádaną`, Anglo-Frisian brightening first gives `*wædaną`. A-restoration before the back-vocalic infinitive ending then returns `a`, and later reduction yields `wadan` [@Campbell1959; @RingeTaylor2014].
+From [wádaną]{.recon} ‘wade’, Anglo-Frisian brightening first gives [wædaną]{.recon} ‘wade’. A-restoration before the back-vocalic infinitive ending then returns `a`, and later reduction yields `wadan` [@Campbell1959; @RingeTaylor2014].
 
 ### Development note
 

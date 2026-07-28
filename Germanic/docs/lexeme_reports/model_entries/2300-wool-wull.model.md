@@ -18,7 +18,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 ### Reconstruction and comparative evidence
 
-The inherited form is a feminine ō-stem `*wúllō`. In the ordinary phonological
+The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
 history of West Germanic, stressed `u` lowers before a following non-high vowel,
 so the regular Old English outcome is an `o`-form. Campbell's discussion of the
 parallel adjective `full`, with OHG `foll` as the regular comparator, shows that
@@ -32,17 +32,14 @@ has a lexical exception of the `wull / wulle` type.
 
 ### Old English evidence
 
-The Old English target is given here as **`wull`**, a normalized lexeme form.
-Handbook discussion often cites **`wulle`**, the feminine weak form of the noun
-[@Bulbring1902, §116]. Both point to the same lexical item and to the same
-exceptional preservation of root `u`.
+The Old English target is given here as `wull`, a normalized lexeme form. Handbook discussion often cites `wulle`, the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root `u`.
 
 The OE evidence therefore does not remove the problem. It confirms that the
 language has a `u`-form where the regular phonology would have produced `o`.
 
 ### Development to Old English
 
-From `*wúllō`, the regular sequence is lowering of stressed `u` before a
+From [wúllō]{.recon} ‘wool’, the regular sequence is lowering of stressed `u` before a
 non-high vowel, followed by the ordinary later reductions of the ending. The
 regular outcome is therefore **`woll`**.
 

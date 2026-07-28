@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the noun as `*dēdiz`, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic `*dédiz` through northwest Germanic `*dadiz` [@Orel2003; @RingeTaylor2014]. The acute accent in `*dḗdiz` marks stress on the same reconstructed long vowel.
+Orel reconstructs the noun as [dēdiz]{.recon} ‘deed’, and Ringe and Taylor derive the same inherited i-stem from Proto-Germanic [dédiz]{.recon} ‘deed’ through northwest Germanic [dadiz]{.recon} ‘deed’ [@Orel2003; @RingeTaylor2014]. The acute accent in [dḗdiz]{.recon} ‘deed’ marks stress on the same reconstructed long vowel.
 
 ### Old English evidence
 
@@ -26,4 +26,4 @@ Campbell states that Primitive Germanic `ē` appears as West Saxon `ǣ` but in o
 
 ### Development to Old English
 
-From inherited `*dēdiz`, loss of final `-z` and the West Saxon lowering of stressed long `ē` yield `dǣd`; Anglian `dēd` preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965]. The development treated here is therefore the regular West Saxon line.
+From inherited [dēdiz]{.recon} ‘deed’, loss of final `-z` and the West Saxon lowering of stressed long `ē` yield `dǣd`; Anglian `dēd` preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965]. The development treated here is therefore the regular West Saxon line.

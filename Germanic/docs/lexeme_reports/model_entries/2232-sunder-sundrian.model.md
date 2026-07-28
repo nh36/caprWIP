@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller list `sundrian` and `syndrian` separately from ad
 
 ### Development to Old English
 
-From `*súndrōjaną`, the Class II weak-verb suffix yields regular OE `-ian`, producing `sundrian`. Because this is the `*-ōjan-` verb and not the Class I `*-jan-` formation, the form represented here does not belong to the umlauted `syndrian` branch.
+From [súndrōjaną]{.recon} ‘sunder’, the Class II weak-verb suffix yields regular OE `-ian`, producing `sundrian`. Because this is the `*-ōjan-` verb and not the Class I `*-jan-` formation, the form represented here does not belong to the umlauted `syndrian` branch.
 
 ### Form note
 

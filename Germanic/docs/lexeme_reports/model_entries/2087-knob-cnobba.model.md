@@ -20,8 +20,8 @@ DERIVATION_CLASS: reconstructed_oe
 
 The wider knob-family is not uniform. Kroonen's discussion of the Germanic
 n-stems points to related voiced and voiceless branches within this group
-[@Kroonen2011, 297]. The citation reconstruction `*knúppaz` represents the broader
-cognate-set headword, while the form followed here, `*knúbbô`, represents the voiced
+[@Kroonen2011, 297]. The citation reconstruction [knúppaz]{.recon} ‘knob’ represents the broader
+cognate-set headword, while the form followed here, [knúbbô]{.recon} ‘knob’, represents the voiced
 weak-noun branch treated here.
 
 The Old English record is uneven. The better
@@ -35,27 +35,21 @@ Clark Hall preserves Old English evidence of the `cnoppa` type
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
-The target **`*cnobba`** is a **reconstructed Old English form**, not a directly
+The target **[cnobba]{.recon} ‘knob’** is a **reconstructed Old English form**, not a directly
 attested one. I use it for the voiced branch because attested `cnoppa` continues
 the voiceless branch and therefore represents a different prehistory.
 
-
-
-
 ### Development to Old English
 
-From the weak-noun form followed here, `*knúbbô`, the regular Old English outcome is
-`*cnobba`, with Proto-Germanic `kn-` represented in Old English as `cn-` and
+From the weak-noun form followed here, [knúbbô]{.recon} ‘knob’, the regular Old English outcome is
+[cnobba]{.recon} ‘knob’, with Proto-Germanic `kn-` represented in Old English as `cn-` and
 with the expected weak-noun ending.
 
-The entry therefore does not claim that `*cnobba` is attested. Its claim is
+The entry therefore does not claim that [cnobba]{.recon} ‘knob’ is attested. Its claim is
 different: if the voiced weak-noun branch is the one to be represented, then
-`*cnobba` is the regular Old English form corresponding to that branch.
+[cnobba]{.recon} is the regular Old English form corresponding to that branch.
 
 ### Reconstruction status
-
-
-
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
@@ -64,5 +58,5 @@ different: if the voiced weak-noun branch is the one to be represented, then
 | [`cnæp`]{.iv lang=oe sort=cnaep} | attested OE form from another family | not part of the present lexeme line |
 
 This remains the most review-sensitive item here, because the choice between
-reconstructed `*cnobba` and attested `cnoppa` is still a comparator-policy
+reconstructed [cnobba]{.recon} ‘knob’ and attested `cnoppa` is still a comparator-policy
 question rather than a settled point of OE attestation.

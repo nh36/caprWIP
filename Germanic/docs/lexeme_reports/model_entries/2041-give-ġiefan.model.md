@@ -30,4 +30,4 @@ West Saxon `ie` here reflects palatal diphthongization after initial palatalizat
 
 ### Development to Old English
 
-From `*gébaną`, initial `g` palatalizes before `e`; West Saxon palatal diphthongization then yields `ie`, and later tail reduction gives `giefan` [@Campbell1959; @RingeTaylor2014]. The result is therefore the regular West Saxon infinitive.
+From [gébaną]{.recon} ‘give’, initial `g` palatalizes before `e`; West Saxon palatal diphthongization then yields `ie`, and later tail reduction gives `giefan` [@Campbell1959; @RingeTaylor2014]. The result is therefore the regular West Saxon infinitive.

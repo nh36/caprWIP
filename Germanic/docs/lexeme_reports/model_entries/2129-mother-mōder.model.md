@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as `*mōder- / *mōdēr` [@Kroonen2013; @Orel2003].
+Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as [mōder- / *mōdēr]{.recon} ‘mother’ [@Kroonen2013; @Orel2003].
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ The transmitted Old English headword tradition is `mōdor / modor`, with oblique
 
 ### Development to Old English
 
-From `*mōdēr`, the regular suffixal development yields `mōder`. That regular nominative reflex is the form represented here, while the more familiar citation form `mōdor` reflects later levelling within the r-stem paradigm [@Campbell1959; @RingeTaylor2014].
+From [mōdēr]{.recon} ‘mother’, the regular suffixal development yields `mōder`. That regular nominative reflex is the form represented here, while the more familiar citation form `mōdor` reflects later levelling within the r-stem paradigm [@Campbell1959; @RingeTaylor2014].
 
 ### Form comparison
 

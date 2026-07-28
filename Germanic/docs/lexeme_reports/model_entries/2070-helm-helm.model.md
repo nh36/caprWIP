@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the helmet noun as `*helma-` and separately distinguishes a different lexeme `*helman-` 'rudder' [@Kroonen2013]. The selected input `*xélmaz` is the nominative-style form used for the helmet noun itself.
+Kroonen cites the helmet noun as `*helma-` and separately distinguishes a different lexeme `*helman-` 'rudder' [@Kroonen2013]. The selected input [xélmaz]{.recon} ‘helm’ is the nominative-style form used for the helmet noun itself.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller record `helm` as the ordinary Old English noun fo
 
 ### Development to Old English
 
-From `*xélmaz`, loss of final `z` and later loss of the short final vowel yield `helm`. The development is therefore a straightforward citation-form match.
+From [xélmaz]{.recon} ‘helm’, loss of final `z` and later loss of the short final vowel yield `helm`. The development is therefore a straightforward citation-form match.
 
 ### Form note
 

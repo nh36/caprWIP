@@ -30,11 +30,7 @@ remain distinct [@Campbell1959, §123 n. 2].
 
 ### Old English evidence
 
-The form modeled here is **`liornian`**, the Northumbrian member of the Old
-English family. Dictionary practice more often privileges **`leornian`** as the
-ordinary headword [@ClarkHall1960; @BrightCassidyRingler1971], but Campbell's
-dialect evidence shows that `liornian` is a genuine Old English form
-[@Campbell1959, §123 n. 2].
+[liornian]{.recon} ‘learn’ is the Northumbrian member of the Old English family. Dictionary practice more often privileges `leornian` as the ordinary headword [@ClarkHall1960; @BrightCassidyRingler1971], but Campbell's dialect evidence shows that `liornian` is a genuine Old English form [@Campbell1959, §123 n. 2].
 
 This entry therefore remains compact. The point is to state clearly that the
 selected target belongs to the Northumbrian side of the OE evidence rather than
@@ -42,7 +38,7 @@ to the leveled `leornian` headword tradition.
 
 ### Development to Old English
 
-From `*líznōjaną`, the expected Old English developments include rhotacism of
+From [líznōjaną]{.recon} ‘learn’, the expected Old English developments include rhotacism of
 `z`, followed by breaking before `r` plus consonant, and the ordinary reduction
 of the weak verbal ending. The result is `liornian`, preserving the `io`
 spelling that Campbell associates with Northumbrian where original `eo` and

@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Ringe and Taylor cite the strong verb `hladan` directly [@RingeTaylor2014, 248].
-The citation label `*laθōjaną` is used here only as a broader family heading,
+The citation label [laθōjaną]{.recon} ‘lade’ is used here only as a broader family heading,
 not as the direct source of the OE derivation.
 
 The selected input therefore marks an early stem choice. The entry follows the
@@ -38,7 +38,7 @@ family.
 
 ### Development to Old English
 
-From `*xláðaną`, the verb passes through the expected early voiced stop stage,
+From [xláðaną]{.recon} ‘lade’, the verb passes through the expected early voiced stop stage,
 Anglo-Frisian brightening, and the later A-restoration that returns the root
 vowel to `a` before the full infinitival ending. Campbell treats verbs such as
 `hladan` as showing restored `a` in the present system [@Campbell1959, §744].

@@ -22,7 +22,7 @@ Kroonen instead gives a nasal-suffix navel formation with Old English [`nafela`]
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
 derivational pathway `*nabulō > *næbula > nafola` [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
-selected input [`*nábulô`]{.iv lang=pgmc sort=nabulo role=selected_input} is the pre-syncope form needed for the Old English
+selected input [[nábulô]{.recon} ‘navel’]{.iv lang=pgmc sort=nabulo role=selected_input} is the pre-syncope form needed for the Old English
 development.
 
 For the Old English comparison, the crucial point is simply that the pre-OE form

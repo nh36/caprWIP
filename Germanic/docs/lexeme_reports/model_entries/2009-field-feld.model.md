@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor treat Old English `feld` as one of the cases where earlier `*felþu- ~ *feldu-` may reflect either inherited `*þ ~ *d` alternation or the regular West Germanic development `*lþ > ld` [@RingeTaylor2014, 170]. The broader proto label `*félθuz` can remain as comparative background, while that narrower historical ambiguity does not affect the regular classification.
+Ringe and Taylor treat Old English `feld` as one of the cases where earlier `*felþu- ~ *feldu-` may reflect either inherited [þ ~ *d]{.recon} ‘field’ alternation or the regular West Germanic development `*lþ > ld` [@RingeTaylor2014, 170]. The broader proto label [félθuz]{.recon} ‘field’ can remain as comparative background, while that narrower historical ambiguity does not affect the regular classification.
 
 ### Old English evidence
 

@@ -18,13 +18,13 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The Germanic noun is ordinarily cited as the masculine a-stem [`*swánaz`]{.iv lang=pgmc sort=swanaz role=source_protoform}
-[@Orel2003, 367]. The selected input `*swánas` is not a competing
-lexeme reconstruction. It is the genitive singular [`*swánas`]{.iv lang=pgmc sort=swanas role=selected_input} of the same paradigm.
+The Germanic noun is ordinarily cited as the masculine a-stem [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform}
+[@Orel2003, 367]. The selected input [swánas]{.recon} ‘swan’ is not a competing
+lexeme reconstruction. It is the genitive singular [[swánas]{.recon}]{.iv lang=pgmc sort=swanas role=selected_input} of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains [`*swánaz`]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan`]{.iv lang=oe sort=swan role=comparison_form}; the selected comparison form is the
-genitive singular [`*swánas`]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes`]{.iv lang=oe sort=swanes role=target_form}.
+The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan`]{.iv lang=oe sort=swan role=comparison_form}; the selected comparison form is the
+genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes`]{.iv lang=oe sort=swanes role=target_form}.
 
 ### Old English evidence
 
@@ -35,10 +35,9 @@ exact inflected form [`swanes`]{.iv lang=oe sort=swanes role=target_form}, citin
 The target is therefore an attested Old English genitive singular, not a
 reconstruction or the ordinary citation lemma.
 
-
 ### Development to Old English
 
-From `*swánas`, Anglo-Frisian brightening gives `*swánæs`, and
+From [swánas]{.recon} ‘swan’, Anglo-Frisian brightening gives [swánæs]{.recon} ‘swan’, and
 subsequent merger of unstressed `æ` with `e` yields `swanes`. The
 comparison is straightforward once the genitive singular is chosen as the
 relevant cell.

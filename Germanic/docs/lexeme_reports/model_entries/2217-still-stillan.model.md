@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-The wider West Germanic family includes adjective `still` and verb `stillen` [@KlugeSeebold2011]. The selected input `*stéllijaną` represents the verbal j-formation used for the OE row.
+The wider West Germanic family includes adjective `still` and verb `stillen` [@KlugeSeebold2011]. The selected input [stéllijaną]{.recon} ‘still’ represents the verbal j-formation used for the OE row.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall gives `stillan` as the verb and separately `stille` as the adjective 
 
 ### Development to Old English
 
-As a heavy-stem Class I weak verb, `*stéllijaną` undergoes the expected syncope and i-umlaut, and later loss of `j` after a heavy stem yields `stillan`. The development represented here is regular.
+As a heavy-stem Class I weak verb, [stéllijaną]{.recon} ‘still’ undergoes the expected syncope and i-umlaut, and later loss of `j` after a heavy stem yields `stillan`. The development represented here is regular.
 
 ### Form note
 

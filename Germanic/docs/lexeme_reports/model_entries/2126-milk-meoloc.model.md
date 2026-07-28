@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel reconstruct the noun as `*meluk- / *melukz`, and the nominative-style input used here is `*mélukz` [@Kroonen2013; @Orel2003, 306].
+Kroonen and Orel reconstruct the noun as [meluk- / *melukz]{.recon} ‘milk’, and the nominative-style input used here is [mélukz]{.recon} ‘milk’ [@Kroonen2013; @Orel2003, 306].
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Old English preserves a mixed dossier for this noun. Ringe and Taylor describe W
 
 ### Development to Old English
 
-The unsyncopated line from `*mélukz` loses final `*z`, lowers unstressed `u` to `o`, and with back mutation yields `meoloc`. That fuller unsyncopated outcome is the form represented here [@RingeTaylor2014].
+The unsyncopated line from [mélukz]{.recon} ‘milk’ loses final `*z`, lowers unstressed `u` to `o`, and with back mutation yields `meoloc`. That fuller unsyncopated outcome is the form represented here [@RingeTaylor2014].
 
 ### Form comparison
 

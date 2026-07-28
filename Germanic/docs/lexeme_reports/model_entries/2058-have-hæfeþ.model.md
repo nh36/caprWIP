@@ -19,13 +19,13 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The verb belongs to the inherited class-III weak paradigm usually cited under
-[`*xabēną`]{.iv lang=pgmc sort=xabena role=source_protoform} and Old English [`habban`]{.iv lang=oe sort=habban role=comparison_form} [@Kroonen2013, 237; @RingeTaylor2014, 93]. Within
+[[xabēną]{.recon} ‘have’]{.iv lang=pgmc sort=xabena role=source_protoform} and Old English [`habban`]{.iv lang=oe sort=habban role=comparison_form} [@Kroonen2013, 237; @RingeTaylor2014, 93]. Within
 that paradigm, however, the infinitive and the singular present indicative do
 not continue the same stem. Ringe and Taylor distinguish a `-ja-` stem in the
 infinitive from a non-geminating `-ai- / -ē-` stem in the 2sg and 3sg present
 forms [@RingeTaylor2014, 93].
 
-The selected input [`*xábēθi`]{.iv lang=pgmc sort=xabethi role=selected_input} is therefore the 3sg present cell rather than a
+The selected input [[xábēθi]{.recon} ‘have’]{.iv lang=pgmc sort=xabethi role=selected_input} is therefore the 3sg present cell rather than a
 rephrasing of the infinitive. For the present analysis, that finite cell is the
 cleaner comparator for the inherited non-geminating stem.
 
@@ -42,7 +42,7 @@ directly than [`habban`]{.iv lang=oe sort=habban role=comparison_form} does.
 
 ### Development to Old English
 
-From [`*xábēθi`]{.iv lang=pgmc sort=xabethi role=selected_input}, the finite form yields [`hæfeþ`]{.iv lang=oe sort=haefeth role=target_form} regularly. Ringe and Taylor
+From [[xábēθi]{.recon} ‘have’]{.iv lang=pgmc sort=xabethi role=selected_input}, the finite form yields [`hæfeþ`]{.iv lang=oe sort=haefeth role=target_form} regularly. Ringe and Taylor
 discuss this non-geminating present stem under [`habban`]{.iv lang=oe sort=habban role=comparison_form}
 [@RingeTaylor2014, 364]. Campbell's Anglian paradigms include unsyncopated 3sg
 forms of the [`hæfeþ`]{.iv lang=oe sort=haefeth role=target_form} / [`hæfed`]{.iv lang=oe sort=haefed role=comparison_form} type [@Campbell1959, §762].

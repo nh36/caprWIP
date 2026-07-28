@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen preserves the comparative verb as `*slēpan-`, and Fulk cites the same family under root `*slēb-` [@Kroonen2013; @Fulk2018, 120]. The selected input `*slḗpaną` is the infinitive-style form used here for that inherited sleep-verb.
+Kroonen preserves the comparative verb as `*slēpan-`, and Fulk cites the same family under root `*slēb-` [@Kroonen2013; @Fulk2018, 120]. The selected input [slḗpaną]{.recon} ‘sleep’ is the infinitive-style form used here for that inherited sleep-verb.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall gives `slæpan` with preterite `slēp, slēap`, and Bright likewise l
 
 ### Development to Old English
 
-From `*slḗpaną`, Northwest Germanic lowering gives `*slǣpaną`. The later OE tail developments then yield `slǣpan` regularly. Brunner and Bülbring show that the OE tradition also has variant spellings such as West Saxon `slāpan/slæpan` and Anglian or Kentish `slēpan`, but those do not displace the infinitive chosen here [@SieversBrunner1965; @Bulbring1902].
+From [slḗpaną]{.recon} ‘sleep’, Northwest Germanic lowering gives [slǣpaną]{.recon} ‘sleep’. The later OE tail developments then yield `slǣpan` regularly. Brunner and Bülbring show that the OE tradition also has variant spellings such as West Saxon `slāpan/slæpan` and Anglian or Kentish `slēpan`, but those do not displace the infinitive chosen here [@SieversBrunner1965; @Bulbring1902].
 
 ### Form note
 

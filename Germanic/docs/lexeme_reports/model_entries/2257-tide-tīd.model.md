@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives `*tīdi-` 'time', and Orel's `*tīđiz` points to the same feminine noun [@Kroonen2013; @Orel2003]. The related verb `tīdan` is separate.
+Kroonen gives `*tīdi-` 'time', and Orel's [tīđiz]{.recon} ‘tide’ points to the same feminine noun [@Kroonen2013; @Orel2003]. The related verb `tīdan` is separate.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Bright records `tīd` with singular `tīde` and plural `tīda`, and Clark Hall t
 
 ### Development to Old English
 
-From `*tḯdiz`, final `z` is lost and the high final vowel drops, leaving `tīd`. The development is straightforward for a feminine i-stem.
+From [tḯdiz]{.recon} ‘tide’, final `z` is lost and the high final vowel drops, leaving `tīd`. The development is straightforward for a feminine i-stem.
 
 ### Lexical note
 

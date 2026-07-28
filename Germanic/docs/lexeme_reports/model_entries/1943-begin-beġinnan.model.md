@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-The verb is modeled here as inherited [`*bigínnaną`]{.iv lang=pgmc sort=biginnana}. Ringe and Taylor state that intervocalic `*g` is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists [`ginnan`]{.iv lang=oe sort=ginnan} among familiar examples of palatal `g` in this verb family [@Campbell1959, 174].
+The verb is modeled here as inherited [[bigínnaną]{.recon} ‘begin’]{.iv lang=pgmc sort=biginnana}. Ringe and Taylor state that intervocalic `*g` is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists [`ginnan`]{.iv lang=oe sort=ginnan} among familiar examples of palatal `g` in this verb family [@Campbell1959, 174].
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ The prefix deserves separate notice. Ringe and Taylor explicitly cite `bi- > be-
 
 ### Development to Old English
 
-From [`*bigínnaną`]{.iv lang=pgmc sort=biginnana}, heavy-syllable nasal apocope yields `*bigínnan`. Intervocalic `*g` between front vowels then palatalizes to `ġ`, and the unstressed prefix reduces `bi-` to `be-`, giving [`beġinnan`]{.iv lang=oe sort=beginnan}.
+From [[bigínnaną]{.recon} ‘begin’]{.iv lang=pgmc sort=biginnana}, heavy-syllable nasal apocope yields [bigínnan]{.recon} ‘begin’. Intervocalic `*g` between front vowels then palatalizes to `ġ`, and the unstressed prefix reduces `bi-` to `be-`, giving [`beġinnan`]{.iv lang=oe sort=beginnan}.

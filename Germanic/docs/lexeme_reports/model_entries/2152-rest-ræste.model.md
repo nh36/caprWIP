@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen treats the noun as a feminine ō-stem [`*rastō-`]{.iv lang=pgmc sort=rasto role=source_protoform}, continued by Old English
-[`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@Kroonen2013, 445]. The selected input [`*rástōz`]{.iv lang=pgmc sort=rastoz role=selected_input} therefore does not replace
+[`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@Kroonen2013, 445]. The selected input [[rástōz]{.recon} ‘rest’]{.iv lang=pgmc sort=rastoz role=selected_input} therefore does not replace
 the lexeme-level headword. It identifies one oblique singular cell on the side of
 the paradigm that yields `ræste`.
 
@@ -45,7 +45,7 @@ oblique side of the paradigm rather than the back-vocalic nominative side. In
 the modeled derivation, the surviving final long vowel is first exposed,
 unrounded, fronted, shortened, and then reduced to the final `-e` of `ræste`.
 
-The key point is the paradigm split. Nominative `*rastō` yields a regular `rast`,
+The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular `rast`,
 whereas the selected oblique input yields `ræste`. The later citation form `ræst`
 is best explained as leveling from that oblique `ræst-` stem.
 

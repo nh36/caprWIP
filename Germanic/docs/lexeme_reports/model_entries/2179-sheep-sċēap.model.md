@@ -26,7 +26,7 @@ Clark Hall records `scēap` with spelling variation, and Campbell likewise lists
 
 ### Development to Old English
 
-From `*skḗpą`, Northwest Germanic lowering gives `*skǣpą`; after apocope and palatalization the West Saxon branch diphthongizes to `sċēap`. The development represented here is therefore fully regular.
+From [skḗpą]{.recon} ‘sheep’, Northwest Germanic lowering gives [skǣpą]{.recon} ‘sheep’; after apocope and palatalization the West Saxon branch diphthongizes to `sċēap`. The development represented here is therefore fully regular.
 
 ### Dialect note
 

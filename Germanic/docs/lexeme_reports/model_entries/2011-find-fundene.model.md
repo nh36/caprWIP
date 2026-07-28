@@ -18,8 +18,8 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited verb is the strong verb [`*fínθaną`]{.iv lang=pgmc sort=finthana role=source_protoform}, continued by Old English
-[`findan`]{.iv lang=oe sort=findan role=comparison_form} [@RingeTaylor2014, 344]. The form followed here, [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input},
+The inherited verb is the strong verb [[fínθaną]{.recon} ‘find’]{.iv lang=pgmc sort=finthana role=source_protoform}, continued by Old English
+[`findan`]{.iv lang=oe sort=findan role=comparison_form} [@RingeTaylor2014, 344]. The form followed here, [[fúnðanǭ]{.recon} ‘find’]{.iv lang=pgmc sort=fundhano role=selected_input},
 belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
@@ -42,7 +42,7 @@ It is an Old English form in its own right, not a merely convenient probe.
 
 ### Development to Old English
 
-From [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input}, the participial oblique develops through regular loss and
+From [[fúnðanǭ]{.recon} ‘find’]{.iv lang=pgmc sort=fundhano role=selected_input}, the participial oblique develops through regular loss and
 weakening of the final ending, yielding [`fundene`]{.iv lang=oe sort=fundene role=target_form}. In that cell both the
 consonantism and the medial vowel history remain regular.
 

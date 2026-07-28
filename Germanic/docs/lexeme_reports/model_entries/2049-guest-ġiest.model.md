@@ -26,7 +26,7 @@ Bosworth-Toller and Clark Hall record the word under forms such as `gist`, `gest
 
 ### Development to Old English
 
-From `*gástiz`, Anglo-Frisian brightening gives a `gæst-` stage, and i-mutation affects the front vowel before the lost high-vocalic ending. In West Saxon the initial palatal environment then produces `ie`, so the regular outcome is `ġiest` [@Campbell1959; @RingeTaylor2014].
+From [gástiz]{.recon} ‘guest’, Anglo-Frisian brightening gives a `gæst-` stage, and i-mutation affects the front vowel before the lost high-vocalic ending. In West Saxon the initial palatal environment then produces `ie`, so the regular outcome is `ġiest` [@Campbell1959; @RingeTaylor2014].
 
 ### Dialect note
 

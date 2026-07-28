@@ -20,16 +20,16 @@ DERIVATION_CLASS: early_analogy
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, citing
 `PGmc *nēþlō, *nēdlō- 'needle' ... > OE nédl` [@RingeTaylor2014, 329]. The
-form followed here, [`*nḗðlō`]{.iv lang=pgmc sort=nedlo role=selected_input}, is the voiced Verner-grade form used for the Old
-English comparison, while the citation form [`*nḗθlō`]{.iv lang=pgmc sort=nethlo role=source_protoform} remains the broader
+form followed here, [[nḗðlō]{.recon} ‘needle’]{.iv lang=pgmc sort=nedlo role=selected_input}, is the voiced Verner-grade form used for the Old
+English comparison, while the citation form [[nḗθlō]{.recon} ‘needle’]{.iv lang=pgmc sort=nethlo role=source_protoform} remains the broader
 lexeme label.
 
 The development discussed here follows the Ringe-Taylor alternant framework.
 
 ### Old English evidence
 
-Clark Hall records the attested citation form **`nǣdl`** [@ClarkHall1960, 210].
-Campbell lists `nédl` among the expected unbroken forms after `t` and `d`
+Clark Hall records the attested citation form **`nǣdl[* [@ClarkHall1960, 210].
+Campbell lists ]{.recon} ‘needle’nédl` among the expected unbroken forms after `t` and `d`
 [@Campbell1959, §367]. Hogg also includes `nidi` / `nǣdl` in the same broader
 cluster history [@Hogg1992, 95].
 

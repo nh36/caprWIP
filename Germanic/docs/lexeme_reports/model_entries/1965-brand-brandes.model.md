@@ -18,14 +18,13 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited noun is the masculine a-stem [`*brándaz`]{.iv lang=pgmc sort=brandaz}, continued by Old English
+The inherited noun is the masculine a-stem [[brándaz]{.recon} ‘brand’]{.iv lang=pgmc sort=brandaz}, continued by Old English
 [`brand`]{.iv lang=oe sort=brand} and its continental cognates [@Orel2003, 53]. The selected
-input [`*brándas`]{.iv lang=pgmc sort=brandas} is not a different lexeme but the genitive singular of that
+input [[brándas]{.recon} ‘brand’]{.iv lang=pgmc sort=brandas} is not a different lexeme but the genitive singular of that
 same a-stem noun.
 
 Both forms belong to the same root and stem class but occupy different inherited
 inflectional cells. The selected input is the oblique cell.
-
 
 ### Old English evidence
 
@@ -39,7 +38,7 @@ paradigm form rather than the ordinary dictionary headword.
 
 ### Development to Old English
 
-From [`*brándas`]{.iv lang=pgmc sort=brandas}, the regular Old English development passes through the usual
+From [[brándas]{.recon} ‘brand’]{.iv lang=pgmc sort=brandas}, the regular Old English development passes through the usual
 unstressed-vowel weakening of the inflectional ending, yielding [`brandes`]{.iv lang=oe sort=brandes}.
 Nothing in the stem itself requires a special repair. The root consonants and
 the stressed vowel are the same as in the citation lemma [`brand`]{.iv lang=oe sort=brand}.

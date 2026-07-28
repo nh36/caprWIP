@@ -24,7 +24,7 @@ Taylor show that the paradigm also contained a separate 3sg present stem,
 continued in late Northumbrian [`lifed`]{.iv lang=oe sort=lifed role=comparison_form}, which they treat as an archaism
 [@RingeTaylor2014, 364].
 
-The selected input [`*líbēθi`]{.iv lang=pgmc sort=libethi role=selected_input} therefore represents a finite present cell rather
+The selected input [[líbēθi]{.recon} ‘live’]{.iv lang=pgmc sort=libethi role=selected_input} therefore represents a finite present cell rather
 than the citation infinitive. The later lemma tradition also includes remodeled
 forms such as [`lifian`]{.iv lang=oe sort=lifian role=comparison_form}.
 
@@ -41,7 +41,7 @@ lemma tradition does.
 
 ### Development to Old English
 
-From [`*líbēθi`]{.iv lang=pgmc sort=libethi role=selected_input}, regular reduction of the final syllable and later weakening of
+From [[líbēθi]{.recon} ‘live’]{.iv lang=pgmc sort=libethi role=selected_input}, regular reduction of the final syllable and later weakening of
 the unstressed vowel yield [`lifeþ`]{.iv lang=oe sort=lifeth role=regular_output}. The attested spelling [`lifed`]{.iv lang=oe sort=lifed role=comparison_form} belongs to the
 same finite form in late Northumbrian orthography [@Campbell1959, §762;
 @RingeTaylor2014, 364].

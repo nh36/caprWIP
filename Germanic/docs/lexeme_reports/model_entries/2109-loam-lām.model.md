@@ -18,9 +18,9 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited comparative noun is given as `*laimōn` or `*laiman-`, and both
+The inherited comparative noun is given as [laimōn]{.recon} ‘loam’ or `*laiman-`, and both
 Orel and Kroonen identify Old English `lām` as a neuter reflex of that family
-[@Orel2003, 272; @Kroonen2013, 363]. The form followed here, `*láimą`, differs from the
+[@Orel2003, 272; @Kroonen2013, 363]. The form followed here, [láimą]{.recon} ‘loam’, differs from the
 comparative headword because it represents the stem class that matches the Old
 English noun most directly.
 
@@ -38,7 +38,7 @@ formation best accounts for that attested neuter noun.
 
 ### Development to Old English
 
-From `*láimą`, regular monophthongization of `ai` and the later loss of the
+From [láimą]{.recon} ‘loam’, regular monophthongization of `ai` and the later loss of the
 final nasal syllable yield `lām`. With that OE-facing input, the phonological
 development is straightforward.
 

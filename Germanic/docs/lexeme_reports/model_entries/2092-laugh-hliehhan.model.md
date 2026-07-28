@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The wider Germanic family includes a non-j branch represented here by the
-citation label `*lákaną`, while the selected input `*xláxjaną` reflects the
+citation label [lákaną]{.recon} ‘laugh’, while the selected input [xláxjaną]{.recon} ‘laugh’ reflects the
 j-present line behind Old English `hliehhan`.
 
 This branch supplies the geminate fricative and
@@ -40,11 +40,11 @@ supplies the evidence followed here.
 
 ### Development to Old English
 
-From `*xláxjaną`, West Germanic j-gemination yields the doubled consonant
+From [xláxjaną]{.recon} ‘laugh’, West Germanic j-gemination yields the doubled consonant
 [@Campbell1959, §407]. Ringe and Taylor derive Old English `hliehhan` from the
 j-present branch via breaking before the palatalized geminate
 [@RingeTaylor2014, 240]. They separately compare the related noun `hleahtor`
-as the outcome of `*hlahtraz` [@RingeTaylor2014, 328].
+as the outcome of [hlahtraz]{.recon} ‘laugh’ [@RingeTaylor2014, 328].
 
 ### Branch comparison
 

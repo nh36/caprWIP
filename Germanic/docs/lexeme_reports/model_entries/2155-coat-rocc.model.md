@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel cites a masculine `*rukkaz` for the garment word, while Kroonen gives `*hrukka-`. Both treat this as the garment lexeme and not as the separate stone word [@Orel2003; @Kroonen2013, 290].
+Orel cites a masculine [rukkaz]{.recon} ‘coat’ for the garment word, while Kroonen gives `*hrukka-`. Both treat this as the garment lexeme and not as the separate stone word [@Orel2003; @Kroonen2013, 290].
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller record `rocc` as an over-garment or tunic and pre
 
 ### Development to Old English
 
-With `*rúkkaz` as the selected input, Northwest Germanic u-lowering and later loss of final `-a` yield `rocc` as a regular outcome.
+With [rúkkaz]{.recon} ‘coat’ as the selected input, Northwest Germanic u-lowering and later loss of final `-a` yield `rocc` as a regular outcome.
 
 ### Source note
 

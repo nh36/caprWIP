@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The lexeme-level reconstruction is [`*mizdō`]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the selected input [`*mízdai`]{.iv lang=pgmc sort=mizdai role=selected_input}
+The lexeme-level reconstruction is [[mizdō]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the selected input [[mízdai]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdai role=selected_input}
 is a dative-singular cell rather than the citation form. The Old English
 evidence for the `meord` side is oblique.
 

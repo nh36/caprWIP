@@ -26,4 +26,4 @@ Clark Hall records `dor` as a neuter noun and separately records feminine `duru`
 
 ### Development to Old English
 
-From `*dúrą`, Northwest Germanic u-lowering gives `*dórą`, and heavy-syllable nasal apocope then yields `dor`. The regular development treated in this entry is therefore `*dúrą > dor`; the feminine `duru` belongs to the separate line identified by Kroonen and Ringe-Taylor [@Kroonen2013; @RingeTaylor2014].
+From [dúrą]{.recon} ‘door’, Northwest Germanic u-lowering gives [dórą]{.recon} ‘door’, and heavy-syllable nasal apocope then yields `dor`. The regular development treated in this entry is therefore `*dúrą > dor`; the feminine `duru` belongs to the separate line identified by Kroonen and Ringe-Taylor [@Kroonen2013; @RingeTaylor2014].

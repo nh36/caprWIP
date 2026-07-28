@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the inherited verb as `*spannan-`, with OE `spannan` among the reflexes [@Kroonen2013]. The selected input `*spánnaną` is the infinitive-style form used here for that same verbal lexeme.
+Kroonen cites the inherited verb as `*spannan-`, with OE `spannan` among the reflexes [@Kroonen2013]. The selected input [spánnaną]{.recon} ‘span’ is the infinitive-style form used here for that same verbal lexeme.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall lists noun `spann` and verb `spannan` as separate headwords, and Brun
 
 ### Development to Old English
 
-From `*spánnaną`, the final nasal ending is lost and the regular OE weak-tail steps surface `spannan`. No paradigm-cell substitution is needed: the current derivation already lands on the infinitive directly.
+From [spánnaną]{.recon} ‘span’, the final nasal ending is lost and the regular OE weak-tail steps surface `spannan`. No paradigm-cell substitution is needed: the current derivation already lands on the infinitive directly.
 
 ### Form note
 

@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The lexeme-level reconstruction is not uniform. Kroonen cites `*mannan-`, and
-Orel has `*mannz` [@Kroonen2013, 354; @Orel2003, 299]. The selected input [`*mánnas`]{.iv lang=pgmc sort=mannas role=selected_input}
+Orel has [mannz]{.recon} ‘man’ [@Kroonen2013, 354; @Orel2003, 299]. The selected input [[mánnas]{.recon} ‘man’]{.iv lang=pgmc sort=mannas role=selected_input}
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 
@@ -41,7 +41,7 @@ The relevant comparison form is therefore the attested genitive singular
 ### Development to Old English
 
 Campbell's paradigm _mann_, _man_ / _mannes_ / _menn_ confirms the selected genitive
-singular _mannes_ [@Campbell1959, §621]. In the present analysis, `*mánnas`
+singular _mannes_ [@Campbell1959, §621]. In the present analysis, [mánnas]{.recon} ‘man’
 develops through Anglo-Frisian brightening and later unstressed merger to
 `mannes`. In this cell the geminate remains medial before `-es`. The citation
 form behaves differently because word-final gemination was simplified in Old

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the inherited strong verb as `*faran-`, and Orel gives the same lexeme as `*faranan`, both with Old English `faran` among the reflexes [@Kroonen2013; @Orel2003, 132]. Campbell also uses `faran` as a standard example of Old English A-restoration [@Campbell1959, 61].
+Kroonen gives the inherited strong verb as `*faran-`, and Orel gives the same lexeme as [faranan]{.recon} ‘fare’, both with Old English `faran` among the reflexes [@Kroonen2013; @Orel2003, 132]. Campbell also uses `faran` as a standard example of Old English A-restoration [@Campbell1959, 61].
 
 ### Old English evidence
 
@@ -26,4 +26,4 @@ Clark Hall lemmatizes the strong verb as `faran` and separately records weak `f�
 
 ### Development to Old English
 
-From `*fáraną`, Anglo-Frisian brightening first gives `*færaną`, but A-restoration before single `r` returns `*faraną`; later apocope and weak-tail reduction yield `faran` [@Campbell1959, 61]. Fulk's contrast with participial `faren- < *faræn- < *faran-` shows why fronting elsewhere in the paradigm does not alter the infinitive headword [@Fulk2018].
+From [fáraną]{.recon} ‘fare’, Anglo-Frisian brightening first gives [færaną]{.recon} ‘fare’, but A-restoration before single `r` returns [faraną]{.recon} ‘fare’; later apocope and weak-tail reduction yield `faran` [@Campbell1959, 61]. Fulk's contrast with participial `faren- < *faræn- < *faran-` shows why fronting elsewhere in the paradigm does not alter the infinitive headword [@Fulk2018].

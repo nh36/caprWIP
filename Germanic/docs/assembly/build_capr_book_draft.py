@@ -16,7 +16,12 @@ PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
-EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
+NESTED_RECON_IV_RE = re.compile(r"\[\[(?P<form>[^\]]+)\]\{\.recon\}(?P<tail>.*?)\]\{(?P<attrs>[^}]*)\}")
+EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
+
+
+def has_tag_class(raw_attrs: str, cls: str) -> bool:
+    return re.search(rf"(^|\s)\.{re.escape(cls)}(?=\s|$)", raw_attrs) is not None
 
 
 def load_language_order() -> list[str]:
@@ -95,15 +100,21 @@ def annotate_explicit_tags_in_line(line: str, rel_path: str, line_no: int) -> st
 
     def repl(match: re.Match[str]) -> str:
         attrs = match.group("attrs")
+        if not (has_tag_class(attrs, "iv") or has_tag_class(attrs, "pred")):
+            return match.group(0)
         if re.search(r'(^|\s)source_ref=', attrs):
             return match.group(0)
         attrs_body = attrs.strip()
         if attrs_body:
-            merged_attrs = f" {attrs_body} source_ref=\"{source_ref}\""
-        else:
-            merged_attrs = f" source_ref=\"{source_ref}\""
-        return f"[{match.group('content')}]{{.iv{merged_attrs}}}"
+            return f"[{match.group('content')}]{{{attrs_body} source_ref=\"{source_ref}\"}}"
+        return f"[{match.group('content')}]{{source_ref=\"{source_ref}\"}}"
 
+    line = NESTED_RECON_IV_RE.sub(
+        lambda match: f"[[{match.group('form')}]{{.recon}}{match.group('tail')}]{{{match.group('attrs')} source_ref=\"{source_ref}\"}}"
+        if not re.search(r'(^|\s)source_ref=', match.group("attrs"))
+        else match.group(0),
+        line,
+    )
     return EXPLICIT_TAG_RE.sub(repl, line)
 
 

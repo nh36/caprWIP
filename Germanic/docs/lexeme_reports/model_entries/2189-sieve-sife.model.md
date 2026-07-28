@@ -21,10 +21,10 @@ DERIVATION_CLASS: early_analogy
 Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [`sife`]{.iv lang=oe sort=sife role=target_form}
 with short neuter i-stems such as `spere` [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
-`*sib-iz`, but the selected input is the normalized i-stem form [`*síbi`]{.iv lang=pgmc sort=sibi role=selected_input}.
+[sib-iz]{.recon} ‘sieve’, but the selected input is the normalized i-stem form [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}.
 
 Kroonen's nearby `*sebjō-` entry belongs to the separate kinship lexeme that
-yields Old English [`sibb`]{.iv lang=oe sort=sibb role=comparison_form}, not to the sieve word. Orel's [`*sibaz`]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [`sife`]{.iv lang=oe sort=sife role=target_form}
+yields Old English [`sibb`]{.iv lang=oe sort=sibb role=comparison_form}, not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [`sife`]{.iv lang=oe sort=sife role=target_form}
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 
@@ -38,10 +38,10 @@ earlier spelling rather than a separate lexeme.
 
 ### Development to Old English
 
-From [`*síbi`]{.iv lang=pgmc sort=sibi role=selected_input}, the documented trace gives `*síβi > *síβe` > [`sife`]{.iv lang=oe sort=sife role=regular_output}. Medial `b`
+From [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}, the documented trace gives `*síβi > *síβe` > [`sife`]{.iv lang=oe sort=sife role=regular_output}. Medial `b`
 is realized as a spirant and later written `f`, while the final unstressed `i`
-lowers to `e`. The older s-stem background `*sib-iz` explains the morphology,
-but the selected input [`*síbi`]{.iv lang=pgmc sort=sibi role=selected_input} is the immediate pre-Old-English form.
+lowers to `e`. The older s-stem background [sib-iz]{.recon} ‘sieve’ explains the morphology,
+but the selected input [[síbi]{.recon}]{.iv lang=pgmc sort=sibi role=selected_input} is the immediate pre-Old-English form.
 
 ### Stem comparison
 

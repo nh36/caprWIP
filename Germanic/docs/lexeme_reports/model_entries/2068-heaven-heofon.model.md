@@ -19,12 +19,12 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun belongs to the mn-stem family cited by Kroonen as
-[`*hemina-*`]{.iv lang=pgmc sort=hemina} ~ [`*hemna-*`]{.iv lang=pgmc sort=hemna} [@Kroonen2013, 220]. The selected input [`*xémonų`]{.iv lang=pgmc sort=xemonu} is an
+[[hemina-*]{.recon} ‘heaven’]{.iv lang=pgmc sort=hemina} ~ [[hemna-*]{.recon} ‘heaven’]{.iv lang=pgmc sort=hemna} [@Kroonen2013, 220]. The selected input [[xémonų]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemonu} is an
 oblique singular form within that paradigm rather than the lexeme-level
-citation form [`*xémenaz`]{.iv lang=pgmc sort=xemenaz}.
+citation form [[xémenaz]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemenaz}.
 
 The back-vocalic oblique stem accounts for the West Saxon target. Ringe and Taylor give
-northern WGmc [`*hebun`]{.iv lang=preoe sort=hebun} > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon}, Mercian
+northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=preoe sort=hebun} > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon}, Mercian
 [`heofen`]{.iv lang=oe sort=heofen} [@RingeTaylor2014, 324]. Campbell likewise gives [`heofon`]{.iv lang=oe sort=heofon} beside
 [`hefen`]{.iv lang=oe sort=hefen} in the same West-Saxon `u`-umlaut environment [@Campbell1959, §210.1].
 
@@ -41,8 +41,8 @@ line.
 
 ### Development to Old English
 
-From [`*xémonų`]{.iv lang=pgmc sort=xemonu}, the West Saxon line passes through the oblique-stem type
-reflected in northern WGmc [`*hebun`]{.iv lang=preoe sort=hebun} [@RingeTaylor2014, 324]. Campbell's
+From [[xémonų]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemonu}, the West Saxon line passes through the oblique-stem type
+reflected in northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=preoe sort=hebun} [@RingeTaylor2014, 324]. Campbell's
 [`heofon`]{.iv lang=oe sort=heofon} beside [`hefen`]{.iv lang=oe sort=hefen} and earlier [`hefzen`]{.iv lang=oe sort=hefzen} show the later West-Saxon
 back-mutation and suffix reshaping behind [`heofon`]{.iv lang=oe sort=heofon}
 [@Campbell1959, §210.1; @Campbell1959, §381].

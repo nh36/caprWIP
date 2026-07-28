@@ -27,8 +27,8 @@ Ringe and Taylor distinguish `PNWGmc *fulgija- ~ *fulgai- > OE
 fylgan ~ folgian` and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
-[`*fúlgijaną`]{.iv lang=pgmc sort=fulgijana role=selected_input} belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
-form [`*fulgēną`]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form}.
+[[fúlgijaną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgijana role=selected_input} belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
+form [[fulgēną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form}.
 
 ### Old English evidence
 
@@ -46,7 +46,7 @@ environment.
 
 ### Development to Old English
 
-[`*fúlgijaną`]{.iv lang=pgmc sort=fulgijana role=selected_input} is a class-I weak-verb formation. In the class-I branch the `*j`
+[[fúlgijaną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgijana role=selected_input} is a class-I weak-verb formation. In the class-I branch the `*j`
 blocks NWGmc lowering of `u` to `o`, since Ringe and Taylor formulate that
 lowering for environments in which no `*j` intervened [@RingeTaylor2014, 96].
 The same front-vocalic environment then triggers i-umlaut, so `u` becomes `y`

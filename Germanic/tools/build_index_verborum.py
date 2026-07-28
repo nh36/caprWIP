@@ -183,7 +183,8 @@ ALLOWED_FORM_ROLES = {
 FORM_RE = re.compile(r"[*A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ'().-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
 RECON_SPAN_RE = re.compile(r"\[([^\]]+)\]\{\.recon(?:[^}]*)?\}")
-EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.(?:iv|pred)(?P<attrs>[^}]*)\}")
+NESTED_RECON_IV_RE = re.compile(r"\[\[(?P<form>[^\]]+)\]\{\.recon\}(?P<tail>.*?)\]\{(?P<attrs>[^}]*)\}")
+EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
 ATTR_RE = re.compile(r"(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?P<value>\"[^\"]*\"|[^\s}]+)")
 STAGE_FORM_RE = re.compile(
     r"(?P<label>(?:PGmc|Proto-Germanic|PWGmc|Proto-West Germanic|Proto-West-Germanic|"
@@ -642,6 +643,7 @@ def strip_markup(text: str) -> str:
 
 
 def normalize_semantic_text(text: str) -> str:
+    text = NESTED_RECON_IV_RE.sub(lambda match: f"{strip_markup(match.group('form'))} {strip_markup(match.group('tail'))}".strip(), text)
     text = EXPLICIT_TAG_RE.sub(lambda match: strip_markup(match.group("content")), text)
     text = MARKUP_FORM_RE.sub(lambda match: strip_markup(next(group for group in match.groups() if group)), text)
     text = re.sub(r"\s+", " ", text)
@@ -829,11 +831,41 @@ def parse_attr_string(raw: str) -> dict[str, str]:
     return attrs
 
 
+def has_tag_class(raw_attrs: str, cls: str) -> bool:
+    return re.search(rf"(^|\s)\.{re.escape(cls)}(?=\s|$)", raw_attrs) is not None
+
+
+def strip_explicit_markup(text: str) -> str:
+    text = NESTED_RECON_IV_RE.sub("", text)
+    return EXPLICIT_TAG_RE.sub("", text)
+
+
 def iter_explicit_tags(path: Path) -> list[dict[str, str]]:
     tags: list[dict[str, str]] = []
     for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-        for match in EXPLICIT_TAG_RE.finditer(line):
+        nested_spans = [(m.start(), m.end()) for m in NESTED_RECON_IV_RE.finditer(line)]
+        for match in NESTED_RECON_IV_RE.finditer(line):
             attrs = parse_attr_string(match.group("attrs"))
+            tags.append(
+                {
+                    "content": match.group("form"),
+                    "line_no": str(line_no),
+                    "lang": attrs.get("lang", "").strip(),
+                    "sort": attrs.get("sort", "").strip(),
+                    "display": attrs.get("display", "").strip() or f"*{strip_markup(match.group('form'))}",
+                    "role": attrs.get("role", "").strip(),
+                }
+            )
+        scrubbed = list(line)
+        for start, end in nested_spans:
+            for idx in range(start, end):
+                scrubbed[idx] = " "
+        scrubbed_line = "".join(scrubbed)
+        for match in EXPLICIT_TAG_RE.finditer(scrubbed_line):
+            raw_attrs = match.group("attrs")
+            if not (has_tag_class(raw_attrs, "iv") or has_tag_class(raw_attrs, "pred")):
+                continue
+            attrs = parse_attr_string(raw_attrs)
             tags.append(
                 {
                     "content": match.group("content"),
@@ -1011,12 +1043,19 @@ def notation_or_metadata_reason(form: str) -> str:
 def extract_forms_from_markup(text: str) -> list[str]:
     forms: list[str] = []
     seen: set[str] = set()
-    for match in EXPLICIT_TAG_RE.finditer(text):
+    nested_text = text
+    for match in NESTED_RECON_IV_RE.finditer(text):
+        form = normalize_form(match.group("form"))
+        if form and form not in seen:
+            forms.append(form)
+            seen.add(form)
+    nested_text = NESTED_RECON_IV_RE.sub("", nested_text)
+    for match in EXPLICIT_TAG_RE.finditer(nested_text):
         form = normalize_form(match.group("content"))
         if form and form not in seen:
             forms.append(form)
             seen.add(form)
-    scrubbed = EXPLICIT_TAG_RE.sub(" ", text)
+    scrubbed = EXPLICIT_TAG_RE.sub(" ", nested_text)
     for match in MARKUP_FORM_RE.finditer(scrubbed):
         raw = next(group for group in match.groups() if group)
         form = normalize_form(raw.replace("<br>", " "))
@@ -1821,9 +1860,10 @@ def broad_candidates_from_path(path: Path) -> list[CandidateOccurrence]:
             continue
         if stripped.startswith("|") or stripped.startswith("define "):
             continue
-        scrubbed = EXPLICIT_TAG_RE.sub("", line)
+        scan_line = NESTED_RECON_IV_RE.sub("", line)
+        scrubbed = strip_explicit_markup(scan_line)
         # .recon spans represent reconstructed lexical forms; extract with asterisk prefix.
-        for match in RECON_SPAN_RE.finditer(line):
+        for match in RECON_SPAN_RE.finditer(scan_line):
             form = strip_markup("*" + match.group(1))
             if form:
                 candidates.append(
@@ -2009,11 +2049,17 @@ def first_starred_form_after_from(candidate: CandidateOccurrence) -> str:
     from_match = re.search(r"\bfrom\b", candidate.line_text, flags=re.IGNORECASE)
     if not from_match:
         return ""
-    tail = EXPLICIT_TAG_RE.sub(" ", candidate.line_text[from_match.end() :])
-    for match in MARKUP_FORM_RE.finditer(tail):
-        raw = next(group for group in match.groups() if group)
-        form = normalize_form(raw.replace("<br>", " "))
-        if form and form.startswith("*"):
+    tail = candidate.line_text[from_match.end() :]
+    for match in NESTED_RECON_IV_RE.finditer(tail):
+        form = strip_markup(match.group("form"))
+        if form:
+            return "*" + form
+    for match in RECON_SPAN_RE.finditer(tail):
+        form = strip_markup(match.group(1))
+        if form:
+            return "*" + form
+    for form in extract_forms_from_markup(tail):
+        if form.startswith("*"):
             return form
     return ""
 

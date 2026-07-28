@@ -18,11 +18,11 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The handbooks do not agree on the reconstruction of the Germanic word. Orel gives **[`*skuldr(j)ō`]{.iv lang=pgmc sort=skuldrjo role=source_protoform}**, a feminine ō-/jō-stem, and explicitly notes that Old English [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form} is masculine beside OFrisian [`skulder`]{.iv lang=ofris sort=skulder role=comparison_form}, Middle Low German `schulder`, and Old High German [`scultra`]{.iv lang=ohg sort=scultra role=comparison_form}, [`scultirra`]{.iv lang=ohg sort=scultirra role=comparison_form} [@Orel2003, 345]. Kroonen reconstructs **[`*skuldra-`]{.iv lang=pgmc sort=skuldra role=source_protoform}**, a masculine a-stem, and derives the Old High German feminine forms from **[`*skuldrjōn-`]{.iv lang=pgmc sort=skuldrjon role=source_protoform}** [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [`*skuldru`]{.iv lang=pwgmc sort=skuldru role=comparison_form}** for the Old English branch [@RingeTaylor2014, 142].
+The handbooks do not agree on the reconstruction of the Germanic word. Orel gives **[[skuldr(j)ō]{.recon} ‘shoulder’]{.iv lang=pgmc sort=skuldrjo role=source_protoform}**, a feminine ō-/jō-stem, and explicitly notes that Old English [`sculdor`]{.iv lang=oe sort=sculdor role=comparison_form} is masculine beside OFrisian [`skulder`]{.iv lang=ofris sort=skulder role=comparison_form}, Middle Low German `schulder`, and Old High German [`scultra`]{.iv lang=ohg sort=scultra role=comparison_form}, [`scultirra`]{.iv lang=ohg sort=scultirra role=comparison_form} [@Orel2003, 345]. Kroonen reconstructs **[`*skuldra-`]{.iv lang=pgmc sort=skuldra role=source_protoform}**, a masculine a-stem, and derives the Old High German feminine forms from **[`*skuldrjōn-`]{.iv lang=pgmc sort=skuldrjon role=source_protoform}** [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [[skuldru]{.recon} ‘shoulder’]{.iv lang=pwgmc sort=skuldru role=comparison_form}** for the Old English branch [@RingeTaylor2014, 142].
 
 These forms imply different stem classes and different expectations for the Old English inflection. The question is which inflectional cell best aligns with the Old English evidence.
 
-A dative/instrumental plural form **[`*skúldramiz`]{.iv lang=pgmc sort=skuldramiz role=selected_input}** aligns with the inherited plural ending that later yields Old English `-um`, and it corresponds directly to the attested dative plural discussed below.
+A dative/instrumental plural form **[[skúldramiz]{.recon} ‘shoulder’]{.iv lang=pgmc sort=skuldramiz role=selected_input}** aligns with the inherited plural ending that later yields Old English `-um`, and it corresponds directly to the attested dative plural discussed below.
 
 ### Old English evidence
 
@@ -34,9 +34,9 @@ The singular and plural evidence point to different parts of the paradigm. The r
 
 ### Development to Old English
 
-Proto-Germanic **`*skúldramiz`** can be interpreted as a dative/instrumental plural form. In this environment the post-tonic `a` before `m` is raised to `u`, giving a form of the **`*skúldrumiz`** type. Unstressed `u` is regularly preserved before `m`, especially in the dative plural ending `-um`: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @Hogg1992, §3.3.1.3]. Brunner points in the same direction by excluding `m` from the environments in which medial `o` became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
+Proto-Germanic **[skúldramiz]{.recon} ‘shoulder’** can be interpreted as a dative/instrumental plural form. In this environment the post-tonic `a` before `m` is raised to `u`, giving a form of the **[skúldrumiz]{.recon} ‘shoulder’** type. Unstressed `u` is regularly preserved before `m`, especially in the dative plural ending `-um`: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @Hogg1992, §3.3.1.3]. Brunner points in the same direction by excluding `m` from the environments in which medial `o` became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
 
-Subsequent reduction of the ending removes the final `*i` and `*z`, so that the inflectional ending appears in Old English as **`-um`**. The initial cluster is written here as **`sċ-`**, and the development is `*skúldramiz > *skúldrumiz > *skúldrum > sċuldrum`.
+Subsequent reduction of the ending removes the final `*i` and `*z`, so that the inflectional ending appears in Old English as `-um`. The initial cluster is written here as `sċ-`, and the development is `*skúldramiz > *skúldrumiz > *skúldrum > sċuldrum`.
 
 ### Paradigm comparison
 

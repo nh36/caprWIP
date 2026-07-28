@@ -15,6 +15,7 @@ add	ohg	scouwōn	scouwōn	scouwon	override	Germanic/docs/lexeme_reports/model_en
 ignore		attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
 ignore		attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:101	Derivation-class label, not a lexical form.
 ignore		breaking				Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29	Process label, not an indexed form.
+ignore		*liornian				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:33	Northumbrian discussion-only form; the indexed control is leornian.
 ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:183	English gloss/family label, not a historical form.
 ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:185	English gloss/family label, not a historical form.
 ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:202	English gloss/family label, not a historical form.
@@ -32,3 +33,4 @@ ignore		field				Germanic/docs/sound_changes/reader_facing/reader_facing_local_s
 ignore		*bækaną				Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
 ignore		*bigínnan				Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
 ignore		*bāną				Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
+ignore		*wér-uldu				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:50	Intermediate developmental stage in derivational prose, not a cited evidence form.

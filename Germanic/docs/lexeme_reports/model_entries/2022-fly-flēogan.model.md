@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor derive the verb as `*fleugana > OE fléogan` and elsewhere contrast West Saxon `fléogan` with Anglian `flégan`, alongside related forms `fléoge / flége` [@RingeTaylor2014]. The selected input `*fléuganą` represents that inherited strong verb in the notation used here.
+Ringe and Taylor derive the verb as `*fleugana > OE fléogan` and elsewhere contrast West Saxon `fléogan` with Anglian `flégan`, alongside related forms `fléoge / flége` [@RingeTaylor2014]. The selected input [fléuganą]{.recon} ‘fly’ represents that inherited strong verb in the notation used here.
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ Ringe and Taylor also list related `fléoge / flége` and Anglian `flégan`, whi
 
 ### Development to Old English
 
-From `*fléuganą`, Old English diphthong leveling gives `*flēoganą`; heavy-syllable nasal apocope and weak-tail reduction then yield `flēogan` [@RingeTaylor2014]. The development is therefore regular: `*fléuganą > flēogan`.
+From [fléuganą]{.recon} ‘fly’, Old English diphthong leveling gives [flēoganą]{.recon} ‘fly’; heavy-syllable nasal apocope and weak-tail reduction then yield `flēogan` [@RingeTaylor2014]. The development is therefore regular: `*fléuganą > flēogan`.

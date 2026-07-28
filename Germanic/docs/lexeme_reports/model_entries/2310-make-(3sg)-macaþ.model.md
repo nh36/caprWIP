@@ -18,21 +18,21 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen derives the Old English verb from **[`*makōjan-`]{.iv lang=pgmc sort=makojan role=source_protoform}** on the make-family base **`*maka-`** [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English **[`macian`]{.iv lang=oe sort=macian role=comparison_form}** from PWGmc **[`*makon`]{.iv lang=os sort=makon role=comparison_form}** through **`*mekojan`** [@RingeTaylor2014, 191].
+Kroonen derives the Old English verb from **[`*makōjan-`]{.iv lang=pgmc sort=makojan role=source_protoform}** on the make-family base **`*maka-`** [@Kroonen2013, 350]. Ringe and Taylor likewise derive Old English **[`macian`]{.iv lang=oe sort=macian role=comparison_form}** from PWGmc **[[makon]{.recon} ‘make (3sg)’]{.iv lang=os sort=makon role=comparison_form}** through **[mekojan]{.recon} ‘make (3sg)’** [@RingeTaylor2014, 191].
 
-The selected input **[`*mákōθi`]{.iv lang=pgmc sort=makothi role=selected_input}** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
+The selected input **[[mákōθi]{.recon} ‘make (3sg)’]{.iv lang=pgmc sort=makothi role=selected_input}** is therefore a finite 3sg cell of the same family, not the citation form of the verb.
 
 ### Old English evidence
 
 Clark Hall lemmatizes the verb as **[`macian`]{.iv lang=oe sort=macian role=comparison_form}** [@ClarkHall1960, 193]. The relevant comparison form here is the normalized present-third-singular **[`macaþ`]{.iv lang=oe sort=macath role=target_form}**, set beside the dictionary headword and the related imperative singular **[`maca`]{.iv lang=oe sort=maca role=comparison_form}**.
 
-Campbell's class-II paradigm makes the ordinary 3sg ending **`-aþ`**, while his dialect survey allows secondary **`-e-`** spellings in some traditions [@Campbell1959, §356.4; @Campbell1959, §757]. **`Macaþ`** is thus the regular comparison form for the non-`j` 3sg cell.
+Campbell's class-II paradigm makes the ordinary 3sg ending **`-aþ[*, while his dialect survey allows secondary **]{.recon} ‘make (3sg)’-e-[* spellings in some traditions [@Campbell1959, §356.4; @Campbell1959, §757]. **]{.recon} ‘make (3sg)’Macaþ`** is thus the regular comparison form for the non-`j` 3sg cell.
 
 ### Development to Old English
 
-After early loss of final **`-i`**, **`*mákōθi`** yields **`*mákōθ`**. Anglo-Frisian brightening gives **`*mækōθ`**, but Campbell lists **`macian`** among the class-II verbs with restored **`a`**, so the stem returns to **`mak-`** before the ending is reduced [@Campbell1959, §159].
+After early loss of final **`-i[*, **]{.recon} ‘make (3sg)’*mákōθi[* yields **]{.recon} ‘make (3sg)’*mákōθ[*. Anglo-Frisian brightening gives **]{.recon} ‘make (3sg)’*mækōθ[*, but Campbell lists **]{.recon} ‘make (3sg)’macian[* among the class-II verbs with restored **]{.recon} ‘make (3sg)’a[*, so the stem returns to **]{.recon} ‘make (3sg)’mak-`** before the ending is reduced [@Campbell1959, §159].
 
-The ending then follows the ordinary class-II 3sg development. Campbell's **`lufas, -aþ (< -ōsi, -ōþi)`** and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells point to **`*makōθ > *makaθ > macaþ`** [@Campbell1959, §356.4; @RingeTaylor2014, 80].
+The ending then follows the ordinary class-II 3sg development. Campbell's **`lufas, -aþ (< -ōsi, -ōþi)[* and Ringe and Taylor's discussion of stable **]{.recon} ‘make (3sg)’a`** in the finite non-`j` cells point to **`*makōθ > *makaθ > macaþ`** [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Paradigm comparison
 

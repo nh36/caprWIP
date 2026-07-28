@@ -21,8 +21,8 @@ DERIVATION_CLASS: early_analogy
 Comparative evidence preserves both an i-stem and a ja-stem formation, with Old
 English [`dile`]{.iv lang=oe sort=dile role=target_form} on one side and continental forms such as Old Saxon [`dilli`]{.iv lang=os sort=dilli role=comparison_form} and
 Old High German [`tilli`]{.iv lang=ohg sort=tilli role=comparison_form} on the other [@Fulk2018, 170]. The selected input
-[`*déliz`]{.iv lang=pgmc sort=deliz role=selected_input} therefore represents the i-stem side of the paradigm,
-whereas the citation label [`*déljaz`]{.iv lang=pgmc sort=deljaz role=source_protoform} is a broader comparative headword.
+[[déliz]{.recon} ‘dill’]{.iv lang=pgmc sort=deliz role=selected_input} therefore represents the i-stem side of the paradigm,
+whereas the citation label [[déljaz]{.recon} ‘dill’]{.iv lang=pgmc sort=deljaz role=source_protoform} is a broader comparative headword.
 
 The stem class determines the Old English consonant shape. A
 ja-stem with `*-lj-` would be expected to produce gemination, but the Old
@@ -42,7 +42,7 @@ i-stem type **[`dile`]{.iv lang=oe sort=dile role=target_form}**, not a geminate
 
 ### Development to Old English
 
-From [`*déliz`]{.iv lang=pgmc sort=deliz role=selected_input}, regular loss of final `z` and the later lowering of unstressed
+From [[déliz]{.recon} ‘dill’]{.iv lang=pgmc sort=deliz role=selected_input}, regular loss of final `z` and the later lowering of unstressed
 `i` yield [`dile`]{.iv lang=oe sort=dile role=target_form}. The stem itself remains ungeminated throughout that path.
 
 The contrast is morphological rather than phonological. If the word were

@@ -20,18 +20,16 @@ DERIVATION_CLASS: early_analogy
 
 The word is the old compound 'age of men'. Orel and the `*wira-` tradition
 reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
-`*weraldiz` and its pre-Old-English chain `*weraldu > *weruld`
+[weraldiz]{.recon} ‘world’ and its pre-Old-English chain `*weraldu > *weruld`
 [@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
-compound `*wira-aldō` and explicitly includes Old English `weorold`
+compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold`
 [@KlugeSeebold2011, 981].
 
-
-The selected input [`*wír-àldu`]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore combines the older `*wir-` vowel of the comparative headword with
+The selected input [[wír-àldu]{.recon} ‘world’]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore combines the older `*wir-` vowel of the comparative headword with
 the early shift of the compound into the ō-stems that Ringe and
 Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
 regularly.
-
 
 ### Old English evidence
 
@@ -47,10 +45,10 @@ ever shows.
 
 ### Development to Old English
 
-From the selected input `*wír-àldu`, Northwest Germanic `i`-lowering gives
-`*wér-àldu`. Inter-stress raising then changes the medial `a` to `u`, producing
-`*wér-uldu`. In the Old English branch that unstressed `u` lowers to `o`, and
-back mutation yields `*wéor-oldu`; final high-vowel apocope then gives
+From the selected input [wír-àldu]{.recon} ‘world’, Northwest Germanic `i`-lowering gives
+[wér-àldu]{.recon} ‘world’. Inter-stress raising then changes the medial `a` to `u`, producing
+[wér-uldu]{.recon} ‘world’. In the Old English branch that unstressed `u` lowers to `o`, and
+back mutation yields [wéor-oldu]{.recon} ‘world’; final high-vowel apocope then gives
 `weorold`.
 
 This sequence matches the comparative background in Ringe and Taylor's

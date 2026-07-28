@@ -24,8 +24,8 @@ derived [`*fasten-`]{.iv lang=pgmc sort=fasten role=source_protoform} verbal lin
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
 later acquired the stative meaning through lexical confusion [@RingeTaylor2014, 110].
 
-The selected input [`*fástijaną`]{.iv lang=pgmc sort=fastijana role=selected_input} therefore represents the inherited class-I
-formation reflected in Old English, whereas the citation label [`*fastēną`]{.iv lang=pgmc sort=fastena role=source_protoform}
+The selected input [[fástijaną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastijana role=selected_input} therefore represents the inherited class-I
+formation reflected in Old English, whereas the citation label [[fastēną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastena role=source_protoform}
 belongs to the broader comparative presentation of the lexeme.
 
 ### Old English evidence
@@ -41,7 +41,7 @@ form.
 
 ### Development to Old English
 
-From [`*fástijaną`]{.iv lang=pgmc sort=fastijana role=selected_input}, Anglo-Frisian brightening and subsequent i-umlaut produce the
+From [[fástijaną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastijana role=selected_input}, Anglo-Frisian brightening and subsequent i-umlaut produce the
 fronted vowel seen in [`festan`]{.iv lang=oe sort=festan role=target_form}. The later weak-tail reductions and loss of `j`
 after a heavy syllable complete the regular Old English outcome.
 

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as `*walþu-` and gives OE `weald` beside other West Germanic `wald` forms [@Kroonen2013]. The selected input `*wálθuz` is the nominative singular used for the derivation.
+Kroonen reconstructs the noun as `*walþu-` and gives OE `weald` beside other West Germanic `wald` forms [@Kroonen2013]. The selected input [wálθuz]{.recon} ‘wold’ is the nominative singular used for the derivation.
 
 ### Old English evidence
 

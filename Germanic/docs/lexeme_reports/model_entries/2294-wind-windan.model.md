@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller record `windan` as the verb headword [@ClarkHall1
 
 ### Development to Old English
 
-The selected input `*wíndaną` yields the regular infinitive `windan` by ordinary heavy-syllable apocope and weak-tail reduction. The form is therefore a straightforward strong-verb outcome.
+The selected input [wíndaną]{.recon} ‘wind’ yields the regular infinitive `windan` by ordinary heavy-syllable apocope and weak-tail reduction. The form is therefore a straightforward strong-verb outcome.
 
 ### Lexical note
 

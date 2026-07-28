@@ -21,7 +21,7 @@ DERIVATION_CLASS: regular
 Kroonen distinguishes the masculine snake word [`*nadra-`]{.iv lang=pgmc sort=nadra role=source_protoform} from a feminine
 ablauting formation [`*nēdrōn-`]{.iv lang=pgmc sort=nedron role=source_protoform}, and gives Old English [`nǣdre`]{.iv lang=oe sort=naedre}, [`næddre`]{.iv lang=oe sort=naeddre} under the
 latter [@Kroonen2013, 426]. Orel likewise points from the masculine entry to a
-feminine [`*nēdrōn`]{.iv lang=pgmc sort=nedron role=source_protoform} ~ [`*nadrōn`]{.iv lang=pgmc sort=nadron role=source_protoform} type [@Orel2003, 325].
+feminine [[nēdrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nedron role=source_protoform} ~ [[nadrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nadron role=source_protoform} type [@Orel2003, 325].
 
 The selected input therefore is not a reshaped convenience form. It is the
 comparative reconstruction that specifically underlies the Old English noun.
@@ -35,6 +35,6 @@ treats [`næddre`]{.iv lang=oe sort=naeddre} as the later geminated form beside 
 
 ### Development to Old English
 
-From [`*nḗdrōn`]{.iv lang=pgmc sort=nedron role=selected_input}, the stressed long mid vowel develops to Old English [`nǣdre`]{.iv lang=oe sort=naedre}, and
+From [[nḗdrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nedron role=selected_input}, the stressed long mid vowel develops to Old English [`nǣdre`]{.iv lang=oe sort=naedre}, and
 the weak feminine ending remains as final `-e`, giving [`nǣdre`]{.iv lang=oe sort=naedre}. The doubled
 consonant of [`næddre`]{.iv lang=oe sort=naeddre} is secondary and does not alter the inherited base form.

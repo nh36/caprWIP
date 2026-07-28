@@ -26,7 +26,7 @@ Bright lists [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} (W. I
 
 ### Development to Old English
 
-From [`*skáwōjaną`]{.iv lang=pgmc sort=skawojana role=selected_input}, Old English `aw` before a following vowel yields `ēaw`, and `*ō` survives between `*w` and `*j` in the Class II suffix. The development therefore runs regularly to [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form}, without the direct `*aw+j` problem seen in other verb types [@Campbell1959; @Orel2003].
+From [[skáwōjaną]{.recon} ‘show’]{.iv lang=pgmc sort=skawojana role=selected_input}, Old English `aw` before a following vowel yields `ēaw`, and `*ō` survives between `*w` and `*j` in the Class II suffix. The development therefore runs regularly to [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form}, without the direct [aw+j]{.recon} ‘show’ problem seen in other verb types [@Campbell1959; @Orel2003].
 
 ### Form note
 

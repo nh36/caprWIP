@@ -18,10 +18,10 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited verb belongs to the class-II strong-verb family [`*béuganą`]{.iv lang=pgmc sort=beugana}
+The inherited verb belongs to the class-II strong-verb family [[béuganą]{.recon} ‘bow’]{.iv lang=pgmc sort=beugana}
 [@RingeTaylor2014, 55]. Within that paradigm, however, the infinitive and the
-singular preterite continue different ablaut grades. The selected input [`*báug`]{.iv lang=pgmc sort=baug}
-is the singular preterite cell, whereas the citation form [`*béuganą`]{.iv lang=pgmc sort=beugana} is the
+singular preterite continue different ablaut grades. The selected input [[báug]{.recon} ‘bow’]{.iv lang=pgmc sort=baug}
+is the singular preterite cell, whereas the citation form [[béuganą]{.recon}]{.iv lang=pgmc sort=beugana} is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
@@ -44,7 +44,7 @@ cell in which the inherited `*au` grade is preserved most directly.
 
 ### Development to Old English
 
-From [`*báug`]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
+From [[báug]{.recon} ‘bow’]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
 produce [`bēag`]{.iv lang=oe sort=beag} [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.

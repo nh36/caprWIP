@@ -20,19 +20,19 @@ DERIVATION_CLASS: late_analogy
 
 Ringe and Taylor give Old English **[`liornian`]{.iv lang=oe sort=liornian role=comparison_form} ~ [`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. Fulk cites the same Old English family from **`*liznō-`** [@Fulk2018, 127].
 
-The selected input **[`*líznô`]{.iv lang=pgmc sort=lizno role=selected_input}** is a finite imperative cell of that family, not the citation form of the verb.
+The selected input **[[líznô]{.recon} ‘learn (iptv.2sg)’]{.iv lang=pgmc sort=lizno role=selected_input}** is a finite imperative cell of that family, not the citation form of the verb.
 
 ### Old English evidence
 
-Clark Hall gives the ordinary headword as **`leornian`** [@ClarkHall1960, 186]. Brunner, however, explicitly records **`leornian, nordh. auch liorna`**, and Campbell notes that beside **`leornian`** Northumbrian forms with **`io`** occur where original **`eo`** and **`io`** remain distinct [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as **`leornian[* [@ClarkHall1960, 186]. Brunner, however, explicitly records **]{.recon} ‘learn (iptv.2sg)’leornian, nordh. auch liorna[*, and Campbell notes that beside **]{.recon} ‘learn (iptv.2sg)’leornian[* Northumbrian forms with **]{.recon} ‘learn (iptv.2sg)’io[* occur where original **]{.recon} ‘learn (iptv.2sg)’eo[* and **]{.recon} ‘learn (iptv.2sg)’io`** remain distinct [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
 
 **[`Liorna`]{.iv lang=oe sort=liorna role=target_form}** can therefore be treated as an attested Northumbrian finite form, while **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** remains the better-known dictionary headword.
 
 ### Development to Old English
 
-The selected form develops regularly as **`*líznô > *lírnô`** by rhotacism, then **`*líornô`** by breaking before **`rn`**, and finally **`*líorna`** by late shortening of the unstressed long vowel.
+The selected form develops regularly as **`*líznô > *lírnô`** by rhotacism, then **[líornô]{.recon} ‘learn (iptv.2sg)’** by breaking before **`rn[*, and finally **]{.recon} ‘learn (iptv.2sg)’*líorna`** by late shortening of the unstressed long vowel.
 
-Campbell's Northumbrian **`io`** evidence and Ringe and Taylor's explicit statement that no form of **`liornian`** stood in an i-umlauting environment support this stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014, 247]. The West-Saxon-looking **`eo`** forms belong to a different dialectal presentation of the same family.
+Campbell's Northumbrian **`io[* evidence and Ringe and Taylor's explicit statement that no form of **]{.recon} ‘learn (iptv.2sg)’liornian[* stood in an i-umlauting environment support this stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014, 247]. The West-Saxon-looking **]{.recon} ‘learn (iptv.2sg)’eo`** forms belong to a different dialectal presentation of the same family.
 
 ### Paradigm comparison
 

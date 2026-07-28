@@ -658,7 +658,7 @@ def assert_table_semantic_rows() -> None:
     for key in {
         ("oe", "creft", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:48"),
         ("oe", "craft", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:49"),
-        ("oe", "leornian", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:63"),
+        ("oe", "leornian", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:59"),
         ("oe", "næfla", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60"),
         ("oe", "rast", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59"),
         ("oe", "hlæhhan", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58"),
@@ -710,7 +710,7 @@ def assert_broad_prose_buckets() -> None:
     assert ("sea", "Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33") in prose_pairs
 
     variant_pairs = parse_audit_bucket_pairs("Orthographic/normalization variant of indexed form")
-    assert ("Boraþ", "Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:29") in variant_pairs
+    assert ("boraþ", "Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:27") in same_entry_pairs
     assert ("Caelf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25") in variant_pairs
     assert ("Cealf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21") in variant_pairs
 

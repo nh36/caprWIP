@@ -18,9 +18,9 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The wider cognate family can be presented under a form such as [`*gállą`]{.iv lang=pgmc sort=galla role=source_protoform}, but
+The wider cognate family can be presented under a form such as [[gállą]{.recon} ‘gall’]{.iv lang=pgmc sort=galla role=source_protoform}, but
 the Old English noun itself belongs with a weak noun `*gallōn-`, cited here as
-[`*gállô`]{.iv lang=pgmc sort=gallo role=selected_input} [@Kroonen2013, 165]. The selected input therefore differs from the broader
+[[gállô]{.recon} ‘gall’]{.iv lang=pgmc sort=gallo role=selected_input} [@Kroonen2013, 165]. The selected input therefore differs from the broader
 comparative headword in stem class.
 
 The stem class determines the Old English shape. The weak
@@ -40,7 +40,7 @@ West Saxon type [`ġealla`]{.iv lang=oe sort=gealla role=target_form}.
 
 ### Development to Old English
 
-From [`*gállô`]{.iv lang=pgmc sort=gallo role=selected_input}, the weak noun develops through the expected Old English history
+From [[gállô]{.recon} ‘gall’]{.iv lang=pgmc sort=gallo role=selected_input}, the weak noun develops through the expected Old English history
 of the suffix and the regular breaking environment before `ll`, yielding
 [`ġealla`]{.iv lang=oe sort=gealla role=regular_output} [@Campbell1959, §486]. Once the weak masculine input is chosen, the noun
 follows a regular path to its attested Old English form.

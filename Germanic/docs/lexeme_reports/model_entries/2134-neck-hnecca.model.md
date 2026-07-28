@@ -19,14 +19,14 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
-with nominative `*hnekkō`, genitive `*hnukkaz`, and accusative plural
-`*hnakkuns`, and he places Old English `hnecca` among the e-grade descendants
+with nominative [hnekkō]{.recon} ‘neck’, genitive [hnukkaz]{.recon} ‘neck’, and accusative plural
+[hnakkuns]{.recon} ‘neck’, and he places Old English `hnecca` among the e-grade descendants
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
 partner of the a-grade `Nacken` family [@KlugeSeebold2011, 347].
 
-A competing comparative label [`*xnákkaz`]{.iv lang=pgmc sort=xnakkaz role=source_protoform} belongs to the wider family, and Orel
+A competing comparative label [[xnákkaz]{.recon} ‘neck’]{.iv lang=pgmc sort=xnakkaz role=source_protoform} belongs to the wider family, and Orel
 also gives an a-grade headword line [@Orel2003, 218]. The selected input
-[`*xnékkô`]{.iv lang=pgmc sort=xnekko role=selected_input}, however, is the form that matches the Old English branch.
+[[xnékkô]{.recon} ‘neck’]{.iv lang=pgmc sort=xnekko role=selected_input}, however, is the form that matches the Old English branch.
 
 ### Old English evidence
 
@@ -40,8 +40,8 @@ a-grade seen in much of the continental material.
 
 ### Development to Old English
 
-From [`*xnékkô`]{.iv lang=pgmc sort=xnekko role=selected_input}, the derivation is straightforward. The trace shortens the final
-long vowel to `*xnékka`, and Old English orthography gives [`hnecca`]{.iv lang=oe sort=hnecca role=target_form}.
+From [[xnékkô]{.recon} ‘neck’]{.iv lang=pgmc sort=xnekko role=selected_input}, the derivation is straightforward. The trace shortens the final
+long vowel to [xnékka]{.recon} ‘neck’, and Old English orthography gives [`hnecca`]{.iv lang=oe sort=hnecca role=target_form}.
 
 The derivation depends on the earlier selection of the e-grade weak-noun form
 continued by Old English.

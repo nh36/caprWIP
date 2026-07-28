@@ -19,16 +19,16 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The source tradition behind **[`stefn`]{.iv lang=oe sort=stefn role=target_form}** is not the same as the comparative label
-**[`*stámnaz`]{.iv lang=pgmc sort=stamnaz role=source_protoform}**. Ringe and Taylor cite **`*stebnō`** for the noun continued by
+**[[stámnaz]{.recon} ‘stem’]{.iv lang=pgmc sort=stamnaz role=source_protoform}**. Ringe and Taylor cite **[stebnō]{.recon} ‘stem’** for the noun continued by
 Gothic [`stibna`]{.iv lang=goth sort=stibna role=comparison_form} and Old English `stebn > stefn > stemn` [@RingeTaylor2014,
-330]. Orel likewise gives **`*stebnō ~ *stemnō`**, whereas Kroonen prefers
+330]. Orel likewise gives **[stebnō ~ *stemnō]{.recon} ‘stem’**, whereas Kroonen prefers
 **`*stimnō-`**, and Fulk describes the etymology of `stefn, stemn` as insecure
 [@Orel2003, 374; @Kroonen2013, 480; @Fulk2018, §6.11 n. 6].
 
 These forms belong to the Old English noun **[`stefn`]{.iv lang=oe sort=stefn role=target_form}** 'voice, sound'. The
-selected input **[`*stébnō`]{.iv lang=pgmc sort=stebno role=selected_input}** is therefore best treated as the OE-facing
+selected input **[[stébnō]{.recon} ‘stem’]{.iv lang=pgmc sort=stebno role=selected_input}** is therefore best treated as the OE-facing
 transponent supported by that source tradition. It does not settle the deeper
-comparative reconstruction implied by the citation label **[`*stámnaz`]{.iv lang=pgmc sort=stamnaz role=source_protoform}**.
+comparative reconstruction implied by the citation label **[[stámnaz]{.recon} ‘stem’]{.iv lang=pgmc sort=stamnaz role=source_protoform}**.
 
 ### Old English evidence
 
@@ -44,10 +44,10 @@ later West Saxon doublet **[`stemn`]{.iv lang=oe sort=stemn role=comparison_form
 
 ### Development to Old English
 
-From **`*stébnō`**, raising of final long `ō` gives a **`*stébnu`** stage.
-Regular fricativization of `b` before `n` then yields **`*stéβnu`**, and loss
-of the final high vowel leaves **`*stéβn`**, written **`stefn`** in Old English.
-The later form **`stemn`** belongs to a separate West Saxon assimilation after
+From **[stébnō]{.recon} ‘stem’**, raising of final long `ō` gives a **[stébnu]{.recon} ‘stem’** stage.
+Regular fricativization of `b` before `n` then yields **[stéβnu]{.recon} ‘stem’**, and loss
+of the final high vowel leaves **[stéβn]{.recon} ‘stem’**, written **`stefn[* in Old English.
+The later form **]{.recon} ‘stem’stemn`** belongs to a separate West Saxon assimilation after
 this stage [@RingeTaylor2014, 330; @Bulbring1902, §445].
 
 ### Source comparison

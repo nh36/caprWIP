@@ -26,7 +26,7 @@ Bosworth-Toller and Clark Hall record `hærfest`, with `herfest` as a variant in
 
 ### Development to Old English
 
-From `*xárbistuz`, Anglo-Frisian brightening, breaking, and i-mutation produce a `hierbist-` stage, and later lowering of unstressed medial `i` to `e` gives `hierfest`. That is the regular West Saxon development treated here [@RingeTaylor2014; @Campbell1959].
+From [xárbistuz]{.recon} ‘harvest’, Anglo-Frisian brightening, breaking, and i-mutation produce a `hierbist-` stage, and later lowering of unstressed medial `i` to `e` gives `hierfest`. That is the regular West Saxon development treated here [@RingeTaylor2014; @Campbell1959].
 
 ### Source note
 

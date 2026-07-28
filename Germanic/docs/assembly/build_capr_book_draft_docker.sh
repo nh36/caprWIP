@@ -67,6 +67,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     kpsewhich xkeyval.sty >/dev/null 2>&1 || tlmgr install xkeyval >/dev/null
     pandoc ${intro_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
+      --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${intro_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \

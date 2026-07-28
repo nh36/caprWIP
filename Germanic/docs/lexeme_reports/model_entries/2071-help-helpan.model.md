@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller record `helpan` as the verbal headword 'to help' 
 
 ### Development to Old English
 
-From `*xélpaną`, no special repair is needed beyond the ordinary reduction of the infinitive ending. The derivation therefore reaches `helpan` directly.
+From [xélpaną]{.recon} ‘help’, no special repair is needed beyond the ordinary reduction of the infinitive ending. The derivation therefore reaches `helpan` directly.
 
 ### Form note
 
