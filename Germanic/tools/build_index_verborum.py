@@ -182,7 +182,7 @@ ALLOWED_FORM_ROLES = {
 }
 FORM_RE = re.compile(r"[*A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ'().-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
-EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.iv(?P<attrs>[^}]*)\}")
+EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{\.(?:iv|pred)(?P<attrs>[^}]*)\}")
 ATTR_RE = re.compile(r"(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?P<value>\"[^\"]*\"|[^\s}]+)")
 STAGE_FORM_RE = re.compile(
     r"(?P<label>(?:PGmc|Proto-Germanic|PWGmc|Proto-West Germanic|Proto-West-Germanic|"
@@ -190,7 +190,7 @@ STAGE_FORM_RE = re.compile(
     r"West Saxon|WS|Anglo Frisian|Anglian)[^:\n<]{0,80}):\s*(?P<form>\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
 )
 FAILURE_FORM_TOKEN_RE = (
-    r"(?:\\emph\{[^}]+\}|\*[^*\n]+\*|`[^`\n]+`|_[^_\n]+_|"
+    r"(?:\[(?:[^\]]+)\]\{(?:\.[^}]+)\}|\\emph\{[^}]+\}|\*[^*\n]+\*|`[^`\n]+`|_[^_\n]+_|"
     r"\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
 )
 FAILURE_EXAMPLE_RE = re.compile(
@@ -875,6 +875,11 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
 
 def normalize_failure_form(text: str) -> str:
     token = text.strip()
+    # If the token is an explicit tagged span like [*bearda*]{.pred} or {.iv},
+    # extract the inner content first.
+    m = EXPLICIT_TAG_RE.match(token)
+    if m:
+        token = m.group('content').strip()
     # Markdown italic wrappers like *bearda* represent reconstructed forms in
     # reader-facing failure prose; keep the leading reconstruction marker.
     if token.startswith("*") and token.endswith("*") and len(token) > 2:

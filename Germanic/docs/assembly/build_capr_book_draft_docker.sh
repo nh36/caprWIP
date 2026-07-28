@@ -17,6 +17,7 @@ intro_metadata="${script_dir}/full_volume_metadata.yaml"
 book_metadata="${script_dir}/book_draft_metadata.yaml"
 refs_bib="${repo_root}/docs/refs.bib"
 strict_flag=""
+keep_debug_tex="${ASSEMBLY_KEEP_DEBUG_TEX:-0}"
 
 if [[ "${INDEX_VERBORUM_STRICT:-0}" == "1" ]]; then
   strict_flag="--strict-mode baseline"
@@ -41,17 +42,21 @@ python3 Germanic/tools/build_index_verborum.py ${strict_flag}
 python3 "${script_dir}/build_capr_book_draft.py"
 # source-level bibliographic locator check: flags literal 'sect'/'sects' in Markdown sources
 python3 Germanic/tools/check_bibliographic_section_locators.py
-# assembled-markdown checks: predicted-form markers and paragraph-level glosses
-# run them but don't hard-fail here; docker LaTeX stage will enforce post-render checks
-python3 Germanic/tools/check_predicted_forms.py || true
-python3 Germanic/tools/check_paragraph_glosses.py || true
+# assembled-markdown check: predicted-form markers
+# Prefer running check locally when pandoc is available; otherwise defer to Docker where pandoc exists.
+if command -v pandoc >/dev/null 2>&1; then
+  python3 Germanic/tools/check_predicted_forms.py
+else
+  echo "pandoc not found locally; running predicted-form check inside Docker."
+  docker run --rm --platform "${platform}" --entrypoint /bin/sh -v "${repo_root}":/data -w /data "${image}" -c "apk add --no-cache python3 >/dev/null && python3 Germanic/tools/check_predicted_forms.py"
+fi
 python3 Germanic/tools/check_index_verborum.py
 python3 Germanic/tools/check_bibliography_sanity.py
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "
     set -e
-    apk add --no-cache ${font_package} >/dev/null
+    apk add --no-cache ${font_package} python3 >/dev/null
     kpsewhich fvextra.sty >/dev/null 2>&1 || (
       tlmgr option repository ${tlmgr_repo} >/dev/null &&
       tlmgr update --self >/dev/null &&
@@ -68,6 +73,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --pdf-engine=xelatex -o ${intro_pdf#${repo_root}/}
     pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
       --top-level-division=chapter --number-sections --table-of-contents --toc-depth=1 \
+      --lua-filter=Germanic/tools/paragraph_gloss_validator.lua \
       --lua-filter=Germanic/tools/index_verborum_filter.lua \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
@@ -76,13 +82,10 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${book_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
       -o ${combined_tex#${repo_root}/}
-    # post-process generated LaTeX to replace citeproc 'sect'/'sects' labels with §/§§
-    sed -E -i "s/\\bsects?\\.?\\s+([0-9]+)/§§ \1/g" ${combined_tex#${repo_root}/} || true
-    sed -E -i "s/§§\s+§§/§§ /g" ${combined_tex#${repo_root}/} || true
-    sed -E -i "s/\bsect\.\s+/§ /g" ${combined_tex#${repo_root}/} || true
-    sed -E -i "s/\bsect\s+([0-9]+)/§ \1/g" ${combined_tex#${repo_root}/} || true
-    # post-render predicted-form sanity check: ensure patterns like "yields ... \emph{FORM} ... rather than" have a \Pred macro before the predicted form
-    perl -0777 -ne 'while(/yields[^{]*\\emph\{([^}]+)\}[^}]*?rather than/sgi){ my $s=$&; if($s !~ /\\\Pred/){ print "UNMARKED PREDICTED FORM: $1\n"; exit 2 } }' ${combined_tex#${repo_root}/}
+    if [ \"${keep_debug_tex}\" = \"1\" ]; then
+      cp ${combined_tex#${repo_root}/} ${combined_tex#${repo_root}/}.pre_locator.tex
+    fi
+    python3 Germanic/tools/normalize_citeproc_section_locators.py --tex-path ${combined_tex#${repo_root}/}
     cd Germanic/docs/assembly
     xelatex -interaction=nonstopmode -halt-on-error capr_book_draft_alpha_01.tex >/dev/null
     for idx in capr_book_draft_alpha_01*.idx; do
@@ -98,13 +101,18 @@ python3 Germanic/tools/check_sound_change_heading_wrapping.py \
   --markdown-path "${repo_root}/Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md" \
   --tex-path "${combined_tex}"
 python3 Germanic/tools/check_print_index_ready.py --tex-path "${combined_tex}"
+python3 Germanic/tools/check_bibliographic_locator_render.py \
+  --tex-path "${combined_tex}" \
+  --pdf-path "${combined_pdf}"
 
 echo "Generated ${intro_pdf}"
 echo "Generated ${combined_md}"
 echo "Generated ${combined_pdf}"
 
-rm -f "${combined_tex}" \
-  "${script_dir}/capr_book_draft_alpha_01.aux" \
+if [[ "${keep_debug_tex}" != "1" ]]; then
+  rm -f "${combined_tex}"
+fi
+rm -f "${script_dir}/capr_book_draft_alpha_01.aux" \
   "${script_dir}/capr_book_draft_alpha_01.log" \
   "${script_dir}/capr_book_draft_alpha_01.toc" \
   "${script_dir}"/*.idx "${script_dir}"/*.ind "${script_dir}"/*.ilg
