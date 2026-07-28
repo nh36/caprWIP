@@ -37,7 +37,7 @@ define NWGmcILowering [
 ];
 ```
 
-The *weorold* and *weoruld* variants turn the general source claim into an ordering test. If [SC015 NWGmcILowering](#rule-NWGmcILowering) is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields *wuruld* rather than expected OE *weorold* ‘world’; earlier movement changes no checked output.
+The *weorold* and *weoruld* variants turn the general source claim into an ordering test. If [SC015 NWGmcILowering](#rule-NWGmcILowering) is delayed until after [SC036 OEInterStressRaising](#rule-OEInterStressRaising), PGmc \emph{*wír-àldu} yields [*wuruld*]{.pred} rather than expected OE *weorold* ‘world’; earlier movement changes no checked output.
 
 The derivation thus fixes front-vowel leveling before interstress raising while leaving its earlier boundary open.
 

@@ -37,7 +37,7 @@
 1. The earlier side is boundary-only at order `4` after moving safely across [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), plain-text SC005 NWGmcAToUBeforeM, and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization).
 2. The later side gives a real one-sided historical boundary at [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening).
 3. That later boundary is broad and distant rather than local.
-4. The chapter keeps the exact validated diagnostic: PGmc \emph{*wátōr} yields *water* instead of expected OE *wæter* ‘water’ if [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed too far.
+4. The chapter keeps the exact validated diagnostic: PGmc \emph{*wátōr} yields [*water*]{.pred} instead of expected OE *wæter* ‘water’ if [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed too far.
 5. The rule stays narrow and environment-specific rather than expanding into a broad long-vowel discussion.
 
 ## Chronology evidence summary for SC008
@@ -45,7 +45,7 @@
 1. The earlier side is boundary-only at order `4` after moving safely across [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering), [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope), plain-text SC005 NWGmcAToUBeforeM, and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization).
 2. The later side gives a real one-sided historical boundary at [SC031 OEWWSimplification](#rule-OEWWSimplification).
 3. That later boundary is broad and distant rather than local.
-4. The chapter keeps the exact validated diagnostic: PGmc \emph{*fédwōr} yields *fēowwer* instead of expected OE *fēower* ‘four’ if [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) is delayed too far.
+4. The chapter keeps the exact validated diagnostic: PGmc \emph{*fédwōr} yields [*fēowwer*]{.pred} instead of expected OE *fēower* ‘four’ if [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) is delayed too far.
 5. The lexical and pronominal witness set stays explicit rather than being flattened into a generic formal rule note.
 
 ## Exact chapter order

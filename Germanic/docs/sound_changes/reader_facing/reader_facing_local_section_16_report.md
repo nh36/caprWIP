@@ -35,7 +35,7 @@
 1. The earlier side is boundary-only at order `4`, the beginning of the current expanded-PWGmc test range.
 2. The later side gives a real one-sided historical boundary at [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
 3. That later boundary is broad and distant rather than local.
-4. The chapter keeps the exact validated diagnostic: PGmc \emph{*sáiwalō} yields *sāwel* instead of expected OE *sāwol* ‘soul’ if [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) is delayed too far.
+4. The chapter keeps the exact validated diagnostic: PGmc \emph{*sáiwalō} yields [*sāwel*]{.pred} instead of expected OE *sāwol* ‘soul’ if [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization) is delayed too far.
 5. The source caution remains visible: the historical support is strongest for the unstressed and word-final side of the change, while CAPR packages a wider inherited \emph{*ai} treatment in one modeled rule.
 
 ## Chronology evidence summary for SC006
@@ -43,7 +43,7 @@
 1. The earlier side is boundary-only at order `4` after moving safely across plain-text SC005 NWGmcAToUBeforeM and [SC004 PWGmcAiMonophthongization](#rule-PWGmcAiMonophthongization).
 2. The later side gives a real one-sided historical boundary at [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong).
 3. That later boundary is broad and distant rather than local.
-4. The chapter keeps the exact validated diagnostic: PGmc \emph{*skáwōθi} yields *sċēaweþ* instead of expected OE *sċēawaþ* if [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope) is delayed too far.
+4. The chapter keeps the exact validated diagnostic: PGmc \emph{*skáwōθi} yields [*sċēaweþ*]{.pred} instead of expected OE *sċēawaþ* if [SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope) is delayed too far.
 5. The suffixal anti-umlaut argument remains the center of the chapter rather than being flattened into a generic final-vowel deletion note.
 
 ## Exact chapter order

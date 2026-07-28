@@ -27,9 +27,9 @@ The rule shortens unstressed long \emph{*ō} before a following nasal. Because t
 
 Moving the rule before
 [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss), PGmc \emph{*nḗdrōn} yields
-*nǣdran* rather than expected OE *nǣdre* ‘adder’, PGmc \emph{*érθōn} yields
-*eorþan* rather than expected *eorþe* ‘earth’, and PGmc \emph{*fláskōn} yields
-*flascan* rather than expected *flasce* ‘flask’. The same earlier shift also
+[*nǣdran*]{.pred} rather than expected OE *nǣdre* ‘adder’, PGmc \emph{*érθōn} yields
+[*eorþan*]{.pred} rather than expected *eorþe* ‘earth’, and PGmc \emph{*fláskōn} yields
+[*flascan*]{.pred} rather than expected *flasce* ‘flask’. The same earlier shift also
 disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of
 failures requires [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) to follow
 [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss).

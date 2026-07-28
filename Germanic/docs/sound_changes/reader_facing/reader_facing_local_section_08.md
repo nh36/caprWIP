@@ -29,7 +29,7 @@ define OEPrefixAReduction [
 
 In prose, the rule reduces prefixal \emph{*ga-} to unstressed \emph{*ge-}. This is the step that gives forms such as *ġelīefan* ‘believe’ their expected prefix vowel.
 
-Its chronology is one-sided but concrete. If the rule is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*galáubijaną} yields *ġealīefan* rather than expected OE *ġelīefan* ‘believe’. This shows that [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). The earlier direction remains boundary-limited in current testing: the search reaches bundled earlier material without finding an ordinary historical break, so the card does not yet show what this rule must follow.
+Its chronology is one-sided but concrete. If the rule is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*galáubijaną} yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. This shows that [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). The earlier direction remains boundary-limited in current testing: the search reaches bundled earlier material without finding an ordinary historical break, so the card does not yet show what this rule must follow.
 
 ## Historical discussion of inter-stress raising
 
@@ -52,7 +52,7 @@ define OEInterStressRaising [
 
 In prose, the rule raises medial unstressed \emph{*a} to \emph{*u} in the low-stress position between stronger syllables. This is the stage behind forms such as *sāwol* ‘soul’ and *weorold* ‘world’.
 
-Its chronology is explicit on both sides. If the rule is moved before SC019 NWGmcFinalLongORaising, PGmc \emph{*sáiwalō} yields *sāwel* rather than expected OE *sāwol* ‘soul’. If it is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*sáiwalō} yields *sāwul* rather than expected *sāwol*, and PGmc \emph{*wír-àldu} yields *weoruld* rather than expected *weorold* ‘world’. This shows that SC019 NWGmcFinalLongORaising must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising), and that [SC036 OEInterStressRaising](#rule-OEInterStressRaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
+Its chronology is explicit on both sides. If the rule is moved before SC019 NWGmcFinalLongORaising, PGmc \emph{*sáiwalō} yields [*sāwel*]{.pred} rather than expected OE *sāwol* ‘soul’. If it is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*sáiwalō} yields [*sāwul*]{.pred} rather than expected *sāwol*, and PGmc \emph{*wír-àldu} yields [*weoruld*]{.pred} rather than expected *weorold* ‘world’. This shows that SC019 NWGmcFinalLongORaising must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising), and that [SC036 OEInterStressRaising](#rule-OEInterStressRaising) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
 The earlier boundary is real, but it reaches farther back than the immediate neighborhood. The later boundary is the more local result inside this part of the sequence.
 
@@ -76,7 +76,7 @@ define OECompoundLinkingSyncope [
 
 In prose, the rule removes a weak linking vowel inside compounds before a following grave-stressed member. This is the step that yields forms such as *reġnboga* ‘rainbow’.
 
-Its chronology is boundary-limited. If the rule is delayed until after SC038 OEStripSecondaryStress, PGmc \emph{*régna-bùgô} yields *reġnefoga* rather than expected OE *reġnboga* ‘rainbow’. This shows that [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) must come before SC038 OEStripSecondaryStress, but that conclusion is technical rather than ordinary-historical because SC038 OEStripSecondaryStress is not an ordinary sound change. The earlier direction also reaches bundled earlier material without finding a historical break, so the present evidence remains one-sided and boundary-limited.
+Its chronology is boundary-limited. If the rule is delayed until after SC038 OEStripSecondaryStress, PGmc \emph{*régna-bùgô} yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’. This shows that [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) must come before SC038 OEStripSecondaryStress, but that conclusion is technical rather than ordinary-historical because SC038 OEStripSecondaryStress is not an ordinary sound change. The earlier direction also reaches bundled earlier material without finding a historical break, so the present evidence remains one-sided and boundary-limited.
 
 \newpage
 
@@ -101,7 +101,7 @@ define OEWICombinativeUUmlaut [
 
 In prose, the rule changes the first vowel of \emph{wi}-forms under the following back-vowel conditions. This is the step that helps produce OE *wuduwe* ‘widow’.
 
-Its chronology is clear on the later side. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*wíduwōn} yields *wudowe* rather than expected OE *wuduwe* ‘widow’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). The earlier direction remains one-sided in current testing: the search reaches bundled earlier material without producing an ordinary historical break.
+Its chronology is clear on the later side. If the rule is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc \emph{*wíduwōn} yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering). The earlier direction remains one-sided in current testing: the search reaches bundled earlier material without producing an ordinary historical break.
 
 ## SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering}
 
@@ -118,7 +118,7 @@ define OEMedUnstressedULowering [
 
 In prose, the rule lowers medial unstressed \emph{*u} to \emph{*o} in the relevant consonantal environment. This is the stage behind forms such as *weorold* ‘world’.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc \emph{*wíduwōn} yields *wudowe* rather than expected OE *wuduwe* ‘widow’. If it is delayed until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*júgunθ} yields *ġeogoþ* rather than expected *ġeoguþ* ‘youth’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), and that [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
+Its chronology is explicit on both sides. If the rule is moved before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc \emph{*wíduwōn} yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’. If it is delayed until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*júgunθ} yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. This shows that [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) must come before [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), and that [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
 
 The later relation to [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) is real, but it is much broader than the local *widow* pair. The closest chronological result inside this chapter is still the reciprocal relation between [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) and [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
@@ -144,7 +144,7 @@ define PWGmcFinalBareALoss [
 
 In prose, the rule deletes a surviving final bare \emph{*a}. This is the step that prevents a large class of words from carrying a spurious final vowel into Old English.
 
-Its chronology is broad on the left and sharper on the right. If the rule is moved before SC020 PGmcFinalZDeletion, PGmc \emph{*bárdaz} yields *bearda* rather than expected OE *beard* ‘beard’, and PGmc \emph{*kámbaz} yields *camba* rather than expected *camb* ‘comb’. If it is delayed until after [SC046 OEARestoration](#rule-OEARestoration), PGmc \emph{*kráftaz} yields *craft* rather than expected OE *cræft* ‘craft’, and PGmc \emph{*dágaz} yields *dag* rather than expected *dæġ* ‘day’. This shows that SC020 PGmcFinalZDeletion must come before [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), and that [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss) must come before [SC046 OEARestoration](#rule-OEARestoration).
+Its chronology is broad on the left and sharper on the right. If the rule is moved before SC020 PGmcFinalZDeletion, PGmc \emph{*bárdaz} yields [*bearda*]{.pred} rather than expected OE *beard* ‘beard’, and PGmc \emph{*kámbaz} yields [*camba*]{.pred} rather than expected *camb* ‘comb’. If it is delayed until after [SC046 OEARestoration](#rule-OEARestoration), PGmc \emph{*kráftaz} yields [*craft*]{.pred} rather than expected OE *cræft* ‘craft’, and PGmc \emph{*dágaz} yields [*dag*]{.pred} rather than expected *dæġ* ‘day’. This shows that SC020 PGmcFinalZDeletion must come before [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), and that [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss) must come before [SC046 OEARestoration](#rule-OEARestoration).
 
 The earlier boundary reaches across a wide stretch of the cascade and is best read as a broad limit, not a local pair. The later boundary is the nearer result: restoration needs final bare-\emph{a} loss to have happened already.
 
@@ -170,9 +170,9 @@ define PWGmcSurvivingBimoricOUnrounding [
 
 In prose, the rule unrounds a surviving bimoric \emph{*ō} to \emph{*ā} in the environment that later feeds the fronted and restored outcome in forms such as *ræste* ‘rest’.
 
-Its chronology is exact on both sides, but the witness base is very narrow. If the rule is moved before SC020 PGmcFinalZDeletion, PGmc \emph{*rástōz} yields *rasta* rather than expected OE *ræste* ‘rest’. If the rule is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), the same PGmc form again yields *rasta* instead of *ræste*. This shows that SC020 PGmcFinalZDeletion must come before [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding), and that [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening).
+Its chronology is exact on both sides, but the witness base is very narrow. If the rule is moved before SC020 PGmcFinalZDeletion, PGmc \emph{*rástōz} yields [*rasta*]{.pred} rather than expected OE *ræste* ‘rest’. If the rule is delayed until after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), the same PGmc form again yields [*rasta*]{.pred} instead of *ræste*. This shows that SC020 PGmcFinalZDeletion must come before [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding), and that [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening).
 
-The rule is therefore real, but still best treated as a short feeder note. Its entire chronology is carried by the single *rest* derivation.
+The rule is therefore real, but still best treated as a short feeder note. Its entire chronology is carried by the single *rest* 'rest' derivation.
 
 \newpage
 
@@ -198,7 +198,7 @@ define AngloFrisianBrightening [
 
 In prose, the rule fronts low \emph{*a} to \emph{*æ}-type outcomes outside nasal environments. The composed definition reflects the fact that the transducer handles stressed, unstressed, and long-final branches separately even though the historical rule is normally discussed more compactly.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding), PGmc \emph{*rástōz} yields *rasta* rather than expected OE *ræste* ‘rest’. If it is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*sláxaną} yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. This shows that [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), and that [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) must come before [SC044 OEBreaking](#rule-OEBreaking).
+Its chronology is explicit on both sides. If the rule is moved before [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding), PGmc \emph{*rástōz} yields [*rasta*]{.pred} rather than expected OE *ræste* ‘rest’. If it is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*sláxaną} yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. This shows that [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding) must come before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), and that [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) must come before [SC044 OEBreaking](#rule-OEBreaking).
 
 That position is historically apt. The rule is early enough to feed later breaking, but not so early that the surviving-bimoric \emph{*ō} pathway on its left can be ignored. It is one of the main vocalic pivots of this part of the sequence.
 
@@ -224,7 +224,7 @@ define OEBreaking OEBreakingA
 
 In prose, the rule breaks front vowels into diphthongal outcomes before the relevant consonantal environments. This is the step that yields forms such as *feoh* ‘fee’ and *feohtan* ‘fight’.
 
-Its chronology is concrete on both sides. If the rule is moved before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*sláxaną} yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. If it is delayed until after [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), PGmc \emph{*féxu} yields *fehu* rather than expected OE *feoh* ‘fee’, and PGmc \emph{*féxtaną} yields *fehtan* rather than expected *feohtan* ‘fight’. This shows that [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) must come before [SC044 OEBreaking](#rule-OEBreaking), and that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization).
+Its chronology is concrete on both sides. If the rule is moved before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*sláxaną} yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. If it is delayed until after [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), PGmc \emph{*féxu} yields [*fehu*]{.pred} rather than expected OE *feoh* ‘fee’, and PGmc \emph{*féxtaną} yields [*fehtan*]{.pred} rather than expected *feohtan* ‘fight’. This shows that [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) must come before [SC044 OEBreaking](#rule-OEBreaking), and that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization).
 
 That two-sided local seam is why [SC044 OEBreaking](#rule-OEBreaking) works so well as the main center of the pair.
 
@@ -246,7 +246,7 @@ define OEVelarFricativePalatalization [
 
 In prose, the rule palatalizes \emph{*x} and \emph{*ɣ} beside front vowels or before \emph{*j}. In this chapter it is the local follower to breaking, not a general article on all Old English palatalization.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*féxu} yields *fehu* rather than expected OE *feoh*, and PGmc \emph{*féxtaną} yields *fehtan* rather than expected *feohtan*. If it is delayed until after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut), PGmc \emph{*séxs} yields *sihs* rather than expected OE *six*. This shows that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), and that [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization) must come before [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut).
+Its chronology is explicit on both sides. If the rule is moved before [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*féxu} yields [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc \emph{*féxtaną} yields [*fehtan*]{.pred} rather than expected *feohtan*. If it is delayed until after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut), PGmc \emph{*séxs} yields [*sihs*]{.pred} rather than expected OE *six*. This shows that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), and that [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization) must come before [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut).
 
 The later relation to [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut) remains a cross-reference, not a reason to enlarge the chapter. The core local pair is still [SC044 OEBreaking](#rule-OEBreaking) and [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization).
 
@@ -274,7 +274,7 @@ define OEARestoration (
 
 In prose, the rule changes earlier fronted \emph{*æ} back to \emph{*a} before the relevant following back-vowel environments. This is the step that turns fronted forms such as *bæcan* back into the attested OE *bacan* ‘bake’.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*bákaną} yields *bæcan* rather than expected OE *bacan* ‘bake’, and PGmc \emph{*fáraną} yields *færan* rather than expected *faran* ‘fare’. If it is delayed until after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc \emph{*bákaną} again yields *bæcan* instead of *bacan*, and PGmc \emph{*wádaną} yields *wædan* instead of *wadan* ‘wade’. This shows that [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) must come before [SC046 OEARestoration](#rule-OEARestoration), and that [SC046 OEARestoration](#rule-OEARestoration) must come before [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
+Its chronology is explicit on both sides. If the rule is moved before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc \emph{*bákaną} yields [*bæcan*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc \emph{*fáraną} yields [*færan*]{.pred} rather than expected *faran* ‘fare’. If it is delayed until after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc \emph{*bákaną} again yields [*bæcan*]{.pred} instead of *bacan*, and PGmc \emph{*wádaną} yields [*wædan*]{.pred} instead of *wadan* ‘wade’. This shows that [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening) must come before [SC046 OEARestoration](#rule-OEARestoration), and that [SC046 OEARestoration](#rule-OEARestoration) must come before [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
 
 The rule is therefore not a decorative aftereffect of brightening. It is a real restoration hinge with a positive local window on both sides.
 
@@ -296,7 +296,7 @@ define OEHeavySyllableNasalApocope [
 
 In prose, the rule deletes final nasalized \emph{*ą} after a heavy syllable. This is the step that prevents a large class of forms from retaining spurious weak final vowels.
 
-Its chronology is real on both sides, though not equally local. If the rule is moved before SC034 OEAwLongDiphthong, PGmc \emph{*stráwą} yields *stræw* rather than expected OE *strēaw* ‘straw’. If it is delayed until after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc \emph{*bákaną} yields *bacen* rather than expected OE *bacan* ‘bake’, and PGmc \emph{*bíndaną} yields *binden* rather than expected *bindan* ‘bind’, alongside a very broad \emph{-en} failure set. This shows that SC034 OEAwLongDiphthong must come before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), and that [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) must come before [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
+Its chronology is real on both sides, though not equally local. If the rule is moved before SC034 OEAwLongDiphthong, PGmc \emph{*stráwą} yields [*stræw*]{.pred} rather than expected OE *strēaw* ‘straw’. If it is delayed until after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc \emph{*bákaną} yields [*bacen*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc \emph{*bíndaną} yields [*binden*]{.pred} rather than expected *bindan* ‘bind’, alongside a very broad \emph{-en} failure set. This shows that SC034 OEAwLongDiphthong must come before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), and that [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) must come before [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
 
 The earlier side is narrow, but the later side is one of the broadest reciprocal failure sets in this part of the model.
 
@@ -312,7 +312,7 @@ define OESecondaryNasalization [
 
 In prose, the rule nasalizes \emph{*a} before final \emph{n}. This is the step that helps keep the live \emph{-an} outcomes distinct from the spurious \emph{-en} forms that appear if the late nasal rules are misordered.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc \emph{*bákaną} yields *bacen* rather than expected OE *bacan*, and PGmc \emph{*bíndaną} yields *binden* rather than expected *bindan*, representing the same broad reciprocal failure set. If it is delayed until after [SC059 OEBackMutation](#rule-OEBackMutation), PGmc \emph{*stélaną} yields *steolan* rather than expected OE *stelan* ‘steal’, and PGmc \emph{*wébaną} yields *weofan* rather than expected *wefan* ‘weave’. This shows that [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) must come before [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), and that [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization) must come before [SC059 OEBackMutation](#rule-OEBackMutation).
+Its chronology is explicit on both sides. If the rule is moved before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc \emph{*bákaną} yields [*bacen*]{.pred} rather than expected OE *bacan*, and PGmc \emph{*bíndaną} yields [*binden*]{.pred} rather than expected *bindan*, representing the same broad reciprocal failure set. If it is delayed until after [SC059 OEBackMutation](#rule-OEBackMutation), PGmc \emph{*stélaną} yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc \emph{*wébaną} yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. This shows that [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) must come before [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), and that [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization) must come before [SC059 OEBackMutation](#rule-OEBackMutation).
 
 That combination explains the chapter’s internal hierarchy. [SC046 OEARestoration](#rule-OEARestoration) is the clearest historical hinge, while [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) and [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization) form the stronger reciprocal nasal core.
 
@@ -461,7 +461,7 @@ West-Saxon diphthongal outcomes that appear in *sċeaft* ‘shaft’, *sċēar*
 the rule sits naturally beside [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
 
 No single later wrong form is isolated for the whole group of
-\emph{*sċea-*} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
+\emph{*sċea-* 'sea'} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
 must already be palatalized before the later West-Saxon diphthongal rule
 applies. This places [SC051 OESkPalatalization](#rule-OESkPalatalization)
 before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
@@ -699,7 +699,7 @@ retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before
 SC020 PGmcFinalZDeletion, the same witness yields *sǣw* ‘sea’ rather than
 expected OE *sǣ*. This shows that SC020 PGmcFinalZDeletion must come before
 [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI). If the rule is delayed until after
-[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the same witness again yields *sǣw*
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the same witness again yields [*sǣw*]{.pred}
 rather than expected *sǣ*. This places [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI)
 before [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
 
@@ -825,11 +825,11 @@ part of the same chronological development and shares the evidence base of
 Like the fronting component, this raising rule falls between
 [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
 [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). If the umlaut complex is moved before
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), \emph{*kūi} yields *ċȳ*
-instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), \emph{*kūi} yields [*ċȳ*]{.pred}
+instead of expected *cȳ* and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of
 expected *lungen*. If the later West-Saxon diphthongization is moved too early,
-\emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
-yields *sċǣþ* rather than expected *sċēaþ*.
+\emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift*, and \emph{*skáiθiz}
+yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*.
 
 These outcomes show that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
 must come before [SC055 OEIUmlautRaising](#rule-OEIUmlautRaising), and that
@@ -1329,10 +1329,10 @@ define OEHighVowelApocope [
 In prose, the rule deletes final \emph{*i}, \emph{*u}, and \emph{*ų} when the preceding structure is heavy enough, or when a trisyllabic form behaves as equivalent to a heavy environment. The longer code box makes visible how many separate environments the transducer has to distinguish in order to realize what the handbooks describe more compactly.
 
 Its chronology is explicit on both sides. If the rule is moved before
-[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*kūi} yields *cū* rather than
-expected OE *cȳ* ‘cow’, and PGmc \emph{*brūdiz} yields *brūd* rather than
+[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*kūi} yields [*cū*]{.pred} rather than
+expected OE *cȳ* ‘cow’, and PGmc \emph{*brūdiz} yields [*brūd*]{.pred} rather than
 expected OE *brȳd* ‘bride’. If the rule is delayed until after
-[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*fúrxtīnaz} yields *fyrht*
+[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*fúrxtīnaz} yields [*fyrht*]{.pred}
 rather than expected OE *fyrhte* ‘fright’. This means that
 [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
 [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), and that
@@ -1363,9 +1363,9 @@ In prose, it removes a final \emph{*n} after long \emph{*ī}. That looks tiny on
 
 The chronology is two-sided even though the witness base is not broad. If the
 rule is moved before [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), PGmc \emph{*fúrxtīnaz} yields
-*fyrhten* rather than expected OE *fyrhte* ‘fright’. If the rule is delayed
+[*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed
 until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the same PGmc form again
-yields *fyrhten* rather than expected *fyrhte*. This shows that
+yields [*fyrhten*]{.pred} rather than expected *fyrhte*. This shows that
 [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss) must come before
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), and it places
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) before
@@ -1417,9 +1417,9 @@ In prose, it deletes medial \emph{*i} before \emph{*l}, creating forms such as *
 
 Its chronology is explicit on both sides. If the rule is moved before
 [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*nátilōn} yields *nætle* rather
-than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl*
+than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields [*spenl*]{.pred}
 rather than expected *spinl* ‘spindle’. If the rule is delayed until after
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields *spinnl* rather than expected *spinl*. This shows that
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields [*spinnl*]{.pred} rather than expected *spinl*. This shows that
 [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), and that
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
@@ -1455,7 +1455,7 @@ In prose, it simplifies doubled \emph{*tt} or \emph{*nn} before a following sono
 
 Its positive evidence is one-sided but exact. If the rule is moved before
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō}
-yields *spinnl* rather than expected OE *spinl* ‘spindle’. No later real break
+yields [*spinnl*]{.pred} rather than expected OE *spinl* ‘spindle’. No later real break
 is currently available before the current search boundary. This places
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) before
 [SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination),
@@ -1485,7 +1485,7 @@ define OEEarlyOShortening [
 
 In prose, the rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.
 
-Its chronology is real, but it is broad and one-sided. If the rule is moved before SC023 NWGmcNStemNLoss, PGmc \emph{*nḗdrōn} yields *nǣdran* rather than expected OE *nǣdre* ‘adder’, PGmc \emph{*érθōn} yields *eorþan* rather than expected *eorþe* ‘earth’, and PGmc \emph{*fláskōn} yields *flascan* rather than expected *flasce* ‘flask’. The same earlier shift also disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of failures shows that SC023 NWGmcNStemNLoss must come before [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening).
+Its chronology is real, but it is broad and one-sided. If the rule is moved before SC023 NWGmcNStemNLoss, PGmc \emph{*nḗdrōn} yields [*nǣdran*]{.pred} rather than expected OE *nǣdre* ‘adder’, PGmc \emph{*érθōn} yields [*eorþan*]{.pred} rather than expected *eorþe* ‘earth’, and PGmc \emph{*fláskōn} yields [*flascan*]{.pred} rather than expected *flasce* ‘flask’. The same earlier shift also disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of failures shows that SC023 NWGmcNStemNLoss must come before [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening).
 
 No equally sharp later breakpoint appears within the tested range. The current search reaches its later boundary without a real break, so the rule should not be given a spurious later limit. Early o-shortening is therefore best read as an opening adjustment in the late weak tail, not as the central chronology seam of the region.
 
@@ -1509,7 +1509,7 @@ define OEUnstressedFrontingEarly OEUnstressedAFronting;
 
 In prose, the rule fronts unstressed \emph{*a} to \emph{*æ} at the point where the earlier shortening has already created a frontable vowel, but the later shortening of unstressed \emph{*ō} has not yet happened. This is the step that makes endings such as OE \emph{-en} possible in forms like *lungen* ‘lungs’.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc \emph{*lúnganjō} yields *lunġen* rather than expected OE *lungen* ‘lungs’. If the rule is delayed until after [SC071 OELateOShortening](#rule-OELateOShortening), PGmc \emph{*búrōθi} yields *boreþ* rather than expected OE *boraþ* ‘bears’, and PGmc \emph{*mḗnōθz} yields *mōneþ* rather than expected *mōnaþ* ‘month’. This shows that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) must come before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), and that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC071 OELateOShortening](#rule-OELateOShortening).
+Its chronology is explicit on both sides. If the rule is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc \emph{*lúnganjō} yields [*lunġen*]{.pred} rather than expected OE *lungen* ‘lungs’. If the rule is delayed until after [SC071 OELateOShortening](#rule-OELateOShortening), PGmc \emph{*búrōθi} yields [*boreþ*]{.pred} rather than expected OE *boraþ* ‘bears’, and PGmc \emph{*mḗnōθz} yields [*mōneþ*]{.pred} rather than expected *mōnaþ* ‘month’. This shows that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) must come before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), and that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC071 OELateOShortening](#rule-OELateOShortening).
 
 That two-sided pattern is why [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) serves as the real hinge of the pair. The earlier side is narrow, but the later side produces a coherent set of wrong unstressed vowels across several verbal and nominal endings.
 
@@ -1525,7 +1525,7 @@ define OELateOShortening [
 
 In prose, the rule shortens the remaining unstressed long \emph{*ō} after the earlier fronting stage has already done its work. This is the stage that leaves the later “stable a” endings behind forms such as OE *boraþ* ‘bears’ and *liornaþ* ‘learns’.
 
-Its earlier boundary is the reciprocal side of the [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) relation. If the rule is moved before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc \emph{*búrōθi} yields *boreþ* rather than expected OE *boraþ*, and PGmc \emph{*líznōθi} yields *liorneþ* rather than expected *liornaþ*. No equally sharp later breakpoint appears within the tested range, so the available evidence shows only that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC071 OELateOShortening](#rule-OELateOShortening).
+Its earlier boundary is the reciprocal side of the [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) relation. If the rule is moved before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc \emph{*búrōθi} yields [*boreþ*]{.pred} rather than expected OE *boraþ*, and PGmc \emph{*líznōθi} yields [*liorneþ*]{.pred} rather than expected *liornaþ*. No equally sharp later breakpoint appears within the tested range, so the available evidence shows only that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC071 OELateOShortening](#rule-OELateOShortening).
 
 This one-sided profile is appropriate to the chapter. [SC071 OELateOShortening](#rule-OELateOShortening) is a real follower in the same pair, but it does not need to carry more chronology than the evidence supports.
 
@@ -1555,7 +1555,7 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 
 In prose, the rule shortens the remaining unstressed long vowels before the weak final outcomes settle into their later forms. The broad effect is visible in many weak endings, but the chronology can still be pinned down by a few particularly clear witnesses.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), PGmc \emph{*fúrxtīnaz} yields *fyrhten* rather than expected OE *fyrhte* ‘fright’. If the rule is delayed until after [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc \emph{*nḗdrōn} yields *nǣdræ* rather than expected OE *nǣdre* ‘adder’, and PGmc \emph{*fádēr} yields *fædær* rather than expected *fæder* ‘father’. This shows that [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), and that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
+Its chronology is explicit on both sides. If the rule is moved before [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), PGmc \emph{*fúrxtīnaz} yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed until after [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc \emph{*nḗdrōn} yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* ‘adder’, and PGmc \emph{*fádēr} yields [*fædær*]{.pred} rather than expected *fæder* ‘father’. This shows that [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), and that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 
 That two-sided relation makes [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) the historical center of the pair. It still depends on earlier weak-tail preparation to the left, but within the local chapter it is the shortening stage that creates the strongest seam.
 
@@ -1569,7 +1569,7 @@ define OEUnstressedAEMerger OEWeakTailReduction3;
 
 In prose, the rule merges unstressed \emph{*æ} with \emph{*e} after shortening has already produced the vulnerable weak final vowels. This is the stage that turns a broad set of final outcomes toward the ordinary OE \emph{-e} spellings.
 
-Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*nḗdrōn} yields *nǣdræ* rather than expected OE *nǣdre*, and PGmc \emph{*fádēr} yields *fædær* rather than expected *fæder*. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc \emph{*táixōn} yields *tāæ* rather than expected OE *tā* ‘toe’. This means that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
+Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*nḗdrōn} yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre*, and PGmc \emph{*fádēr} yields [*fædær*]{.pred} rather than expected *fæder*. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc \emph{*táixōn} yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. This means that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
 
 The earlier side is broader than the later side, but both are real. That is why this pair works as the strongest local core in the late weak tail. Shortening and merger are adjacent, reciprocal, and still open to meaningful outward cross-reference without having to absorb later material into the chapter.
 
@@ -1595,7 +1595,7 @@ define OEMedUnstressedILowering1 [
 
 In prose, the rule lowers medial unstressed \emph{*i} to \emph{*e} after a preceding vocalic syllable. This is the broader step that would spread the \emph{e}-outcome through the late weak tail if it were left uncorrected.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*fúrxtīnaz} yields *fyrhti* rather than expected OE *fyrhte* ‘fright’. If it is delayed until after [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering), PGmc \emph{*skíllingaz} yields *sċilleng* rather than expected *sċilling* ‘shilling’. This shows that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1), and that [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) must come before [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering).
+Its chronology is explicit on both sides. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc \emph{*fúrxtīnaz} yields [*fyrhti*]{.pred} rather than expected OE *fyrhte* ‘fright’. If it is delayed until after [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering), PGmc \emph{*skíllingaz} yields [*sċilleng*]{.pred} rather than expected *sċilling* ‘shilling’. This shows that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1), and that [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) must come before [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering).
 
 The evidence is narrow on each side, but it is still real. The rule belongs between the stronger shortening/merger chapter and the more specific \emph{*ng} preservation that follows it.
 
@@ -1611,7 +1611,7 @@ define OEMedUnstressedILowering [
 
 In prose, the rule restores \emph{*i} before \emph{*ng}, preventing the broader lowering from producing the wrong medial vowel in forms such as *sċilling* ‘shilling’.
 
-Its earlier boundary is the reciprocal side of the [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) relation. If the rule is moved before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1), PGmc \emph{*skíllingaz} yields *sċilleng* rather than expected OE *sċilling*. No equally sharp later breakpoint appears within the tested range, so the available evidence shows only that [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) must come before [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering).
+Its earlier boundary is the reciprocal side of the [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) relation. If the rule is moved before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1), PGmc \emph{*skíllingaz} yields [*sċilleng*]{.pred} rather than expected OE *sċilling*. No equally sharp later breakpoint appears within the tested range, so the available evidence shows only that [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) must come before [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering).
 
 That one-sided profile is enough for a follower rule of this kind. It is historically useful because it keeps the \emph{*ng} forms from being swallowed by the broader lowering, but it does not need to carry more chronology than the evidence supplies.
 
@@ -1661,7 +1661,7 @@ define OEWeakTailReduction OEWeakTailReduction1;
 
 In prose, the rule carries the remaining weak-tail reductions that prevent a broad class of spurious \emph{-en} or extra-vowel outcomes from surviving too late in the derivation.
 
-Its chronology is real on both sides, though the two sides are not equally local. If the rule is moved before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc \emph{*bákaną} yields *bacen* rather than expected OE *bacan* ‘bake’, and PGmc \emph{*bíndaną} yields *binden* rather than expected *bindan* ‘bind’, alongside a much wider set of comparable \emph{-en} failures. If the rule is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields *flēoan* rather than expected OE *flēon* ‘flee’, and PGmc \emph{*sláxaną} yields *sleaan* rather than expected *slēan* ‘slay’. This shows that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), and that [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) must come before [SC086 OEContraction](#rule-OEContraction).
+Its chronology is real on both sides, though the two sides are not equally local. If the rule is moved before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc \emph{*bákaną} yields [*bacen*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc \emph{*bíndaną} yields [*binden*]{.pred} rather than expected *bindan* ‘bind’, alongside a much wider set of comparable \emph{-en} failures. If the rule is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, and PGmc \emph{*sláxaną} yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’. This shows that [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) must come before [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), and that [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) must come before [SC086 OEContraction](#rule-OEContraction).
 
 The asymmetry of those two boundaries is important. The earlier side is broad and should be read as a large computational limit, not a tight local adjacency claim. The later side is narrower and more directly interpretable. Together they make [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) substantial enough for its own chapter, but still not a reason to merge the next cluster into the present section.
 
@@ -1688,7 +1688,7 @@ define OEJLossAfterHeavy [
 
 In prose, the rule removes \emph{*j} after the relevant heavy-syllable configurations. This is the step that lets a broad set of late verbal forms move beyond earlier umlaut-sensitive vocalism.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*galáubijaną} yields *ġelēafan* rather than expected OE *ġelīefan* ‘believe’, PGmc \emph{*báugijaną} yields *bēaġan* rather than expected *bīeġan* ‘bow’, and PGmc \emph{*fúlgijaną} yields *fulġan* rather than expected *fylġan* ‘follow’. If it is delayed until after [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification), PGmc \emph{*lúnganjō} yields *lungenn* rather than expected OE *lungen* ‘lungs’. This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy), and that [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) must come before [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification).
+Its chronology is explicit on both sides. If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*galáubijaną} yields [*ġelēafan*]{.pred} rather than expected OE *ġelīefan* ‘believe’, PGmc \emph{*báugijaną} yields [*bēaġan*]{.pred} rather than expected *bīeġan* ‘bow’, and PGmc \emph{*fúlgijaną} yields [*fulġan*]{.pred} rather than expected *fylġan* ‘follow’. If it is delayed until after [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification), PGmc \emph{*lúnganjō} yields [*lungenn*]{.pred} rather than expected OE *lungen* ‘lungs’. This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy), and that [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) must come before [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification).
 
 The left side is broad, but the right side is sharply local. Together they explain why [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) is the stronger member of the pair.
 
@@ -1704,7 +1704,7 @@ define OEFinalGeminateSimplification [
 
 In prose, the rule removes the extra final nasal in forms where the preceding derivation has already created a final geminate.
 
-Its earlier boundary is the reciprocal side of the [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) relation. If the rule is moved before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy), PGmc \emph{*lúnganjō} yields *lungenn* rather than expected OE *lungen*. No later real break appears within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis), so the available evidence shows only that [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) must come before [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification).
+Its earlier boundary is the reciprocal side of the [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) relation. If the rule is moved before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy), PGmc \emph{*lúnganjō} yields [*lungenn*]{.pred} rather than expected OE *lungen*. No later real break appears within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis), so the available evidence shows only that [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) must come before [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification).
 
 That is enough for a follower rule of this kind. It is historically useful because it prevents the unwanted final geminate from surviving, but it does not need to carry more chronology than the evidence supplies.
 
@@ -1730,7 +1730,7 @@ define OEJStrengtheningAfterFrontDiphthong [
 
 In prose, the rule keeps \emph{*j} as a strengthened consonantal outcome after the relevant front diphthongs and so prevents too-early vocalization.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*stráwjaną} yields *strēaġan* rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields *strīeian* rather than *strīeġan*. This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong), and that [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) must come before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
+Its chronology is explicit on both sides. If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*stráwjaną} yields [*strēaġan*]{.pred} rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields [*strīeian*]{.pred} rather than *strīeġan*. This shows that [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong), and that [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) must come before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
 The left side is broad and far, but the right side is a sharp local seam in the *strīeġan* derivation.
 
@@ -1746,7 +1746,7 @@ define OEIntervocalicJVocalization [
 
 In prose, the rule vocalizes intervocalic \emph{*j} to \emph{*i}. This is the step that creates the extra \emph{ei}-like sequence later removed by [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) in many weak verb forms.
 
-Its chronology is concrete on both sides. If the rule is moved before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong), PGmc \emph{*stráwjaną} yields *strīeian* rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction), PGmc \emph{*búrōjaną} yields *boreian* rather than expected OE *borian* ‘bore’, PGmc \emph{*xándlōjaną} yields *handleian* rather than expected *handlian* ‘handle’, and PGmc \emph{*mákōjaną} yields *maceian* rather than expected *macian* ‘make’. This shows that [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) must come before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), and that [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) must come before [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction).
+Its chronology is concrete on both sides. If the rule is moved before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong), PGmc \emph{*stráwjaną} yields [*strīeian*]{.pred} rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction), PGmc \emph{*búrōjaną} yields [*boreian*]{.pred} rather than expected OE *borian* ‘bore’, PGmc \emph{*xándlōjaną} yields [*handleian*]{.pred} rather than expected *handlian* ‘handle’, and PGmc \emph{*mákōjaną} yields [*maceian*]{.pred} rather than expected *macian* ‘make’. This shows that [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) must come before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), and that [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) must come before [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction).
 
 That two-sided local seam is why [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) is the center of the three-rule chain.
 
@@ -1762,7 +1762,7 @@ define OEUnstressedEIContraction [
 
 In prose, the rule contracts the unstressed \emph{ei}-like sequence that the preceding vocalization would otherwise leave behind in forms such as *borian* ‘bore’ and *liccian* ‘lick’.
 
-Its earlier boundary is the reciprocal side of the [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) relation. If the rule is moved before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), PGmc \emph{*búrōjaną} yields *boreian* rather than expected OE *borian*, PGmc \emph{*líznōjaną} yields *liorneian* rather than expected *liornian*, and PGmc \emph{*líkkōjaną} yields *licceian* rather than expected *liccian*. No later real break appears within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis), so the available evidence shows only that [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) must come before [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction).
+Its earlier boundary is the reciprocal side of the [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) relation. If the rule is moved before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), PGmc \emph{*búrōjaną} yields [*boreian*]{.pred} rather than expected OE *borian*, PGmc \emph{*líznōjaną} yields [*liorneian*]{.pred} rather than expected *liornian*, and PGmc \emph{*líkkōjaną} yields [*licceian*]{.pred} rather than expected *liccian*. No later real break appears within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis), so the available evidence shows only that [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) must come before [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction).
 
 That one-sided profile is appropriate to the right follower in this chain. The rule is historically real, but it does not need to carry a stronger later boundary than the evidence provides.
 
@@ -1788,7 +1788,7 @@ define OEHLoss [
 
 In prose, the rule removes intervocalic \emph{*h}, creating the hiatus that later contraction must resolve.
 
-Its chronology is explicit on both sides. If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc \emph{*táixōn} yields *tāæ* rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields *flēoan* rather than expected OE *flēon* ‘flee’, PGmc \emph{*sláxaną} yields *sleaan* rather than expected *slēan* ‘slay’, PGmc \emph{*téxun} yields *teoon* rather than expected *tēon* ‘draw’, and PGmc \emph{*táixōn} yields *tāe* rather than expected *tā*. This shows that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss), and that [SC085 OEHLoss](#rule-OEHLoss) must come before [SC086 OEContraction](#rule-OEContraction).
+Its chronology is explicit on both sides. If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc \emph{*táixōn} yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc \emph{*fléuxaną} yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc \emph{*sláxaną} yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc \emph{*téxun} yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc \emph{*táixōn} yields [*tāe*]{.pred} rather than expected *tā*. This shows that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss), and that [SC085 OEHLoss](#rule-OEHLoss) must come before [SC086 OEContraction](#rule-OEContraction).
 
 The earlier side is narrow, but the later side is a tight four-row reciprocal seam that clearly feeds the following contraction rule.
 
@@ -1830,7 +1830,7 @@ define OEContraction [
 
 In prose, the rule contracts the vowel sequences created after \emph{h}-loss. This is the step that turns over-long transitional forms into outcomes such as *flēon* ‘flee’, *slēan* ‘slay’, and *tēon* ‘draw’.
 
-Its earlier boundary is the reciprocal side of the [SC085 OEHLoss](#rule-OEHLoss) relation. If the rule is moved before [SC085 OEHLoss](#rule-OEHLoss), PGmc \emph{*fléuxaną} yields *flēoan* rather than expected OE *flēon*, PGmc \emph{*sláxaną} yields *sleaan* rather than expected *slēan*, PGmc \emph{*téxun} yields *teoon* rather than expected *tēon*, and PGmc \emph{*táixōn} yields *tāe* rather than expected *tā*. No later real break appears within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis), so the available evidence shows only that [SC085 OEHLoss](#rule-OEHLoss) must come before [SC086 OEContraction](#rule-OEContraction).
+Its earlier boundary is the reciprocal side of the [SC085 OEHLoss](#rule-OEHLoss) relation. If the rule is moved before [SC085 OEHLoss](#rule-OEHLoss), PGmc \emph{*fléuxaną} yields [*flēoan*]{.pred} rather than expected OE *flēon*, PGmc \emph{*sláxaną} yields [*sleaan*]{.pred} rather than expected *slēan*, PGmc \emph{*téxun} yields [*teoon*]{.pred} rather than expected *tēon*, and PGmc \emph{*táixōn} yields [*tāe*]{.pred} rather than expected *tā*. No later real break appears within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis), so the available evidence shows only that [SC085 OEHLoss](#rule-OEHLoss) must come before [SC086 OEContraction](#rule-OEContraction).
 
 That one-sided profile is still substantial because the earlier reciprocal seam is so clear. The already visible [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) relation also points here, but it remains a cross-reference, not a reason to absorb [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) into the same chapter.
 
@@ -1863,7 +1863,7 @@ define OERMetathesis [
 
 In prose, the rule moves \emph{*r} across a following short vowel in the relevant late clusters, producing forms such as *berstan* ‘burst’ where an earlier order would still show a broken vowel sequence.
 
-Its chronology is one-sided and broad. If the rule is moved before [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*bréstaną} yields *beorstan* rather than expected OE *berstan* ‘burst’. That shows that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC087 OERMetathesis](#rule-OERMetathesis). The later side is different: the current tests find no real break beyond the current order before the search limit, so the available evidence does not identify any later historical boundary for [SC087 OERMetathesis](#rule-OERMetathesis).
+Its chronology is one-sided and broad. If the rule is moved before [SC044 OEBreaking](#rule-OEBreaking), PGmc \emph{*bréstaną} yields [*beorstan*]{.pred} rather than expected OE *berstan* ‘burst’. That shows that [SC044 OEBreaking](#rule-OEBreaking) must come before [SC087 OERMetathesis](#rule-OERMetathesis). The later side is different: the current tests find no real break beyond the current order before the search limit, so the available evidence does not identify any later historical boundary for [SC087 OERMetathesis](#rule-OERMetathesis).
 
 That profile is exactly why the chapter remains modest. The earlier relation is historically real, but it is broad and far away. The right side remains boundary-limited. R-metathesis therefore works best as a short closing note, not as the capstone of a tighter adjacent pair.
 

@@ -144,7 +144,7 @@ West-Saxon diphthongal outcomes that appear in *sċeaft* ‘shaft’, *sċēar*
 the rule sits naturally beside [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
 
 No single later wrong form is isolated for the whole group of
-\emph{*sċea-*} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
+\emph{*sċea-* 'sea'} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
 must already be palatalized before the later West-Saxon diphthongal rule
 applies. This places [SC051 OESkPalatalization](#rule-OESkPalatalization)
 before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization).
@@ -382,7 +382,7 @@ retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before
 SC020 PGmcFinalZDeletion, the same witness yields *sǣw* ‘sea’ rather than
 expected OE *sǣ*. This shows that SC020 PGmcFinalZDeletion must come before
 [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI). If the rule is delayed until after
-[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the same witness again yields *sǣw*
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the same witness again yields [*sǣw*]{.pred}
 rather than expected *sǣ*. This places [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI)
 before [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
 
@@ -508,11 +508,11 @@ part of the same chronological development and shares the evidence base of
 Like the fronting component, this raising rule falls between
 [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
 [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). If the umlaut complex is moved before
-[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), \emph{*kūi} yields *ċȳ*
-instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
+[SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), \emph{*kūi} yields [*ċȳ*]{.pred}
+instead of expected *cȳ* and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of
 expected *lungen*. If the later West-Saxon diphthongization is moved too early,
-\emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
-yields *sċǣþ* rather than expected *sċēaþ*.
+\emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift*, and \emph{*skáiθiz}
+yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*.
 
 These outcomes show that [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
 must come before [SC055 OEIUmlautRaising](#rule-OEIUmlautRaising), and that
@@ -1012,10 +1012,10 @@ define OEHighVowelApocope [
 In prose, the rule deletes final \emph{*i}, \emph{*u}, and \emph{*ų} when the preceding structure is heavy enough, or when a trisyllabic form behaves as equivalent to a heavy environment. The longer code box makes visible how many separate environments the transducer has to distinguish in order to realize what the handbooks describe more compactly.
 
 Its chronology is explicit on both sides. If the rule is moved before
-[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*kūi} yields *cū* rather than
-expected OE *cȳ* ‘cow’, and PGmc \emph{*brūdiz} yields *brūd* rather than
+[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*kūi} yields [*cū*]{.pred} rather than
+expected OE *cȳ* ‘cow’, and PGmc \emph{*brūdiz} yields [*brūd*]{.pred} rather than
 expected OE *brȳd* ‘bride’. If the rule is delayed until after
-SC072 OEUnstressedLongVowelShortening, PGmc \emph{*fúrxtīnaz} yields *fyrht*
+SC072 OEUnstressedLongVowelShortening, PGmc \emph{*fúrxtīnaz} yields [*fyrht*]{.pred}
 rather than expected OE *fyrhte* ‘fright’. This means that
 [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
 [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), and that
@@ -1046,9 +1046,9 @@ In prose, it removes a final \emph{*n} after long \emph{*ī}. That looks tiny on
 
 The chronology is two-sided even though the witness base is not broad. If the
 rule is moved before SC041 PWGmcFinalBareALoss, PGmc \emph{*fúrxtīnaz} yields
-*fyrhten* rather than expected OE *fyrhte* ‘fright’. If the rule is delayed
+[*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed
 until after SC072 OEUnstressedLongVowelShortening, the same PGmc form again
-yields *fyrhten* rather than expected *fyrhte*. This shows that
+yields [*fyrhten*]{.pred} rather than expected *fyrhte*. This shows that
 SC041 PWGmcFinalBareALoss must come before
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), and it places
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) before
@@ -1100,9 +1100,9 @@ In prose, it deletes medial \emph{*i} before \emph{*l}, creating forms such as *
 
 Its chronology is explicit on both sides. If the rule is moved before
 [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc \emph{*nátilōn} yields *nætle* rather
-than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl*
+than expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields [*spenl*]{.pred}
 rather than expected *spinl* ‘spindle’. If the rule is delayed until after
-[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields *spinnl* rather than expected *spinl*. This shows that
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination), PGmc \emph{*spénnilō} yields [*spinnl*]{.pred} rather than expected *spinl*. This shows that
 [SC055 OEIUmlaut](#rule-OEIUmlaut) must come before
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), and that
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) must come before
@@ -1138,7 +1138,7 @@ In prose, it simplifies doubled \emph{*tt} or \emph{*nn} before a following sono
 
 Its positive evidence is one-sided but exact. If the rule is moved before
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), PGmc \emph{*spénnilō}
-yields *spinnl* rather than expected OE *spinl* ‘spindle’. No later real break
+yields [*spinnl*]{.pred} rather than expected OE *spinl* ‘spindle’. No later real break
 is currently available before the current search boundary. This places
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) before
 [SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination),

@@ -39,6 +39,12 @@ bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 
 python3 Germanic/tools/build_index_verborum.py ${strict_flag}
 python3 "${script_dir}/build_capr_book_draft.py"
+# source-level bibliographic locator check: flags literal 'sect'/'sects' in Markdown sources
+python3 Germanic/tools/check_bibliographic_section_locators.py
+# assembled-markdown checks: predicted-form markers and paragraph-level glosses
+# run them but don't hard-fail here; docker LaTeX stage will enforce post-render checks
+python3 Germanic/tools/check_predicted_forms.py || true
+python3 Germanic/tools/check_paragraph_glosses.py || true
 python3 Germanic/tools/check_index_verborum.py
 python3 Germanic/tools/check_bibliography_sanity.py
 
@@ -55,6 +61,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     kpsewhich morewrites.sty >/dev/null 2>&1 || tlmgr install morewrites >/dev/null
     kpsewhich xkeyval.sty >/dev/null 2>&1 || tlmgr install xkeyval >/dev/null
     pandoc ${intro_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${intro_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
@@ -62,12 +69,20 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
       --top-level-division=chapter --number-sections --table-of-contents --toc-depth=1 \
       --lua-filter=Germanic/tools/index_verborum_filter.lua \
+      --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/assembly/book_draft_pdf_header.tex \
       --include-in-header=Germanic/docs/assembly/book_draft_index_registry.tex \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${book_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
       -o ${combined_tex#${repo_root}/}
+    # post-process generated LaTeX to replace citeproc 'sect'/'sects' labels with §/§§
+    sed -E -i "s/\\bsects?\\.?\\s+([0-9]+)/§§ \1/g" ${combined_tex#${repo_root}/} || true
+    sed -E -i "s/§§\s+§§/§§ /g" ${combined_tex#${repo_root}/} || true
+    sed -E -i "s/\bsect\.\s+/§ /g" ${combined_tex#${repo_root}/} || true
+    sed -E -i "s/\bsect\s+([0-9]+)/§ \1/g" ${combined_tex#${repo_root}/} || true
+    # post-render predicted-form sanity check: ensure patterns like "yields ... \emph{FORM} ... rather than" have a \Pred macro before the predicted form
+    perl -0777 -ne 'while(/yields[^{]*\\emph\{([^}]+)\}[^}]*?rather than/sgi){ my $s=$&; if($s !~ /\\\Pred/){ print "UNMARKED PREDICTED FORM: $1\n"; exit 2 } }' ${combined_tex#${repo_root}/}
     cd Germanic/docs/assembly
     xelatex -interaction=nonstopmode -halt-on-error capr_book_draft_alpha_01.tex >/dev/null
     for idx in capr_book_draft_alpha_01*.idx; do

@@ -73,7 +73,7 @@ define OEIUmlautRaising [
 
 Raising of umlauted `æ` to `e` continues the same assimilatory event as fronting and therefore shares the chronology of general i-umlaut.
 
-The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields *ċȳ* instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of expected *lungen*. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz} yields *sċǣþ* rather than expected *sċēaþ*. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
+The same four forms fix both boundaries. If raising precedes velar palatalization, \emph{*kūi} yields [*ċȳ*]{.pred} instead of expected *cȳ* and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of expected *lungen*. If West Saxon palatal diphthongization precedes raising, \emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift*, and \emph{*skáiθiz} yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*. These forms place raising after velar palatalization and before West Saxon palatal diphthongization.
 
 The sources do not describe umlaut as simple fronting alone. Campbell notes that
 the low front vowel

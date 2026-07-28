@@ -71,7 +71,7 @@
 
 1. `SC028` has no positive historical first-break boundary in either tested direction. The earlier search reaches bundled earlier material with no real break, and the later search reaches the present search limit with no real break.
 2. `SC029` uses *hīeġ* ‘hay’ and *strīeġan* ‘strew’ and places [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) before [SC030 OEAuFronting](#rule-OEAuFronting). Its earlier side remains boundary-limited.
-3. `SC030` uses the same *hay* / *strew* pair on the earlier side and a broader no-output later set including *ġelīefan* ‘believe’, *brēad* ‘bread’, and *drēam* ‘dream’. It places [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) before [SC030 OEAuFronting](#rule-OEAuFronting) and [SC030 OEAuFronting](#rule-OEAuFronting) before [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling).
+3. `SC030` uses the same *hay* / *strew* 'strew' pair on the earlier side and a broader no-output later set including *ġelīefan* ‘believe’, *brēad* ‘bread’, and *drēam* ‘dream’. It places [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) before [SC030 OEAuFronting](#rule-OEAuFronting) and [SC030 OEAuFronting](#rule-OEAuFronting) before [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling).
 
 ## Wrong-output diagnostics included, where available
 
@@ -87,7 +87,7 @@
 
 ## Grouped-chapter justification for SC029-SC030
 
-1. The paired chapter is justified because the same *hay* / *strew* material passes through both rules.
+1. The paired chapter is justified because the same *hay* / *strew* 'strew' material passes through both rules.
 2. [SC029 OEAwjGlideFormation](#rule-OEAwjGlideFormation) reshapes the older \emph{awj} sequence, and [SC030 OEAuFronting](#rule-OEAuFronting) then fronts the resulting \emph{au}.
 3. The internal discussion is still split: one short orientation section introduces the pair, followed by separate historical discussions and separate SC-numbered rule sections for `SC029` and `SC030`.
 4. `SC028` remains separate because its history is legible but its current chronology is negative.

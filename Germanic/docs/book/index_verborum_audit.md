@@ -2093,7 +2093,7 @@
 | `lowering` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:50 | ordinary prose/gloss word |
 | `material` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:28 | ordinary prose/gloss word |
 | `noun` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:28 | ordinary prose/gloss word |
-| `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:57 | formal rule label |
+| `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:59 | formal rule label |
 | `OFris` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | ordinary prose/gloss word |
 | `paradigm-cell` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:46 | ordinary prose/gloss word |
 | `row` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | ordinary prose/gloss word |

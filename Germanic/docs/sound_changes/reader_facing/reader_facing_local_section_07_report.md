@@ -116,7 +116,7 @@
 
 ## One-sided, broad/far, or boundary-limited cases
 
-1. `SC042` is two-sided but entirely witness-limited to *rest*.
+1. `SC042` is two-sided but entirely witness-limited to *rest* 'rest'.
 2. `SC043` is two-sided and narrow, with one later real failure and many
    changed-still-passing rows in the broader neighborhood.
 3. `SC045` is two-sided but its later side is narrow and centered on *six*.

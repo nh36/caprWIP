@@ -107,7 +107,7 @@ Chronology-specific revisions were made in:
 3. **SC059 / give, steal, weave**
    - Earlier boundary: `SC048 < SC059`
    - Later boundary: `SC059 < SC078`
-   - Expected forms: *ġiefan* ‘give’, *stelan* ‘steal’, *wefan* ‘weave’
+   - Expected forms: *ġiefan* ‘give’, * 'give'stelan* ‘steal’, *wefan* ‘weave’
    - Wrong outputs: *ġeofan*, *steolan*, *weofan*
 
 4. **SC060 / might, night**
@@ -151,7 +151,7 @@ Result:
 
 ## Remaining places where exact wrong outputs were not available
 
-- `SC051` later boundary: the notes show loss of the `*sċea-* / *sċie-*` outputs,
+- `SC051` later boundary: the notes show loss of the `*sċea-* 'sea' / *sċie-*` outputs,
   but they do not isolate one single uniform later wrong form for the entire
   witness set
 - `SC053`: no decisive wrong early or late output is currently available

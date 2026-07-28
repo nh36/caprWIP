@@ -26,10 +26,10 @@ define OELAdjacentSyncope [
 The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
 earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
 
-Placed before i-umlaut, PGmc \emph{*nátilōn} yields *nætle* rather than
+Placed before i-umlaut, PGmc \emph{*nátilōn} yields [*nætle*]{.pred} rather than
 expected OE *netle* ‘nettle’, and PGmc \emph{*spénnilō} yields *spenl* rather
 than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
-\emph{*spénnilō} yields *spinnl* rather than expected *spinl*. The witnesses
+\emph{*spénnilō} yields [*spinnl*]{.pred} rather than expected *spinl*. The witnesses
 therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
 degemination. The first relation separates two historical phases; the second is
 a direct feeding relation, since syncope creates the cluster that degemination

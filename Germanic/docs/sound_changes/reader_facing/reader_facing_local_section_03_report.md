@@ -55,12 +55,12 @@ No reader-facing `SC062` unit was added. The ordinary manifest sequence for this
 
 ## Chronology evidence added for SC063-SC068
 
-1. `SC063` now states a two-sided weak-tail chronology: earlier than `SC072` because delayed apocope yields *fyrht* instead of expected OE *fyrhte* ‘fright’, and later than `SC055` because early apocope yields *cū* and *brūd* instead of expected *cȳ* ‘cow’ and *brȳd* ‘bride’.
-2. `SC064` now states a two-sided but narrow chronology: PGmc \emph{*fúrxtīnaz} yields *fyrhten* instead of expected OE *fyrhte* ‘fright’ if the rule is moved before `SC041` or delayed until after `SC072`.
+1. `SC063` now states a two-sided weak-tail chronology: earlier than `SC072` because delayed apocope yields [*fyrht*]{.pred} instead of expected OE *fyrhte* ‘fright’, and later than `SC055` because early apocope yields *cū* and *brūd* instead of expected *cȳ* ‘cow’ and *brȳd* ‘bride’.
+2. `SC064` now states a two-sided but narrow chronology: PGmc \emph{*fúrxtīnaz} yields [*fyrhten*]{.pred} instead of expected OE *fyrhte* ‘fright’ if the rule is moved before `SC041` or delayed until after `SC072`.
 3. `SC065` is stated honestly as boundary-limited. The chapter explains the historical setting of late medial syncope but says plainly that the current first-break tests do not provide a positive earlier boundary, a positive later boundary, or an exact wrong output for this specific rule.
-4. `SC066` now gives the clearest local chain in the new batch: \emph{*nátilōn} yields *nætle* instead of expected OE *netle* ‘nettle’, and \emph{*spénnilō} yields *spenl* instead of *spinl* ‘spindle’ if the rule is moved before `SC055`; the same \emph{*spénnilō} yields *spinnl* if the rule is delayed until after `SC068`.
+4. `SC066` now gives the clearest local chain in the new batch: \emph{*nátilōn} yields [*nætle*]{.pred} instead of expected OE *netle* ‘nettle’, and \emph{*spénnilō} yields [*spenl*]{.pred} instead of *spinl* ‘spindle’ if the rule is moved before `SC055`; the same \emph{*spénnilō} yields *spinnl* if the rule is delayed until after `SC068`.
 5. `SC067` is also stated as boundary-limited. The prose makes clear that the dental cleanup is historically plausible inside the sequence but presently lacks a positive first-break diagnostic of its own.
-6. `SC068` now has an explicit earlier boundary: if the rule is moved before `SC066`, \emph{*spénnilō} yields *spinnl* instead of expected OE *spinl* ‘spindle’. The later side remains one-sided, and the chapter says so directly.
+6. `SC068` now has an explicit earlier boundary: if the rule is moved before `SC066`, \emph{*spénnilō} yields [*spinnl*]{.pred} instead of expected OE *spinl* ‘spindle’. The later side remains one-sided, and the chapter says so directly.
 
 ## Exact wrong-output diagnostics included
 

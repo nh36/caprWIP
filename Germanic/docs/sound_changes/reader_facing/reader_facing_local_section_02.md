@@ -144,7 +144,7 @@ the rule sits naturally beside [velar palatalization before front vowels
 palatal diphthongization (`OEWsPalatalDiphthongization`)](#rule-OEWsPalatalDiphthongization).
 
 No single later wrong form is isolated for the whole group of
-\emph{*sċea-*} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
+\emph{*sċea-* 'sea'} / \emph{*sċie-*} witnesses, but the current notes do show that the cluster
 must already be palatalized before the later West-Saxon diphthongal rule
 applies. This gives the later boundary `SC051 < SC056`.
 
@@ -377,7 +377,7 @@ fronted and lengthened outcome. If the glide survives too long, the derivation
 retains \emph{*w} and misses *sǣ* ‘sea’. If the rule is moved before SC020, the
 same witness yields *sǣw* ‘sea’ rather than expected OE *sǣ*. This gives the
 earlier boundary `SC020 < SC054`. If the rule is delayed until after SC063, the
-same witness again yields *sǣw* rather than expected *sǣ*. This gives the later
+same witness again yields [*sǣw*]{.pred} rather than expected *sǣ*. This gives the later
 boundary `SC054 < SC063`.
 
 This is why the chapter belongs immediately before the broader umlautal
@@ -500,11 +500,11 @@ part of the same chronological development and shares the evidence base of [the
 composite i-umlaut rule (`OEIUmlaut`)](#rule-OEIUmlaut).
 
 Like the fronting component, this raising rule belongs inside `SC052 < SC055 <
-SC056`. If the umlaut complex is moved before SC052, \emph{*kūi} yields *ċȳ*
-instead of expected *cȳ* and \emph{*lúnganjō} yields *lunġen* instead of
+SC056`. If the umlaut complex is moved before SC052, \emph{*kūi} yields [*ċȳ*]{.pred}
+instead of expected *cȳ* and \emph{*lúnganjō} yields [*lunġen*]{.pred} instead of
 expected *lungen*. If the later West-Saxon diphthongization is moved too early,
-\emph{*géftiz} yields *ġieft* rather than expected *ġift*, and \emph{*skáiθiz}
-yields *sċǣþ* rather than expected *sċēaþ*.
+\emph{*géftiz} yields [*ġieft*]{.pred} rather than expected *ġift*, and \emph{*skáiθiz}
+yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*.
 
 This narrower subrule matters because the sources do not describe umlaut as
 simple fronting alone. Campbell explicitly notes that the low front vowel
