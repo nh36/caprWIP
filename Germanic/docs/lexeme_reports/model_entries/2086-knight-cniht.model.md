@@ -42,7 +42,7 @@ OE comparator is needed here.
 
 From [[knéxtaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knextaz role=selected_input}, the relevant Old English changes include breaking before the
 velar cluster and then the later reduction that yields [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight'. Campbell later
-notes the early West-Saxon alternation [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight' beside plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form}
+notes the early West-Saxon alternation [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight' beside plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} 'knights'
 [@Campbell1959, §305]. Sievers-Brunner gives the same contrast as `cniht ...
 cneohtas` [@SieversBrunner1965, §122]. With that corrected input, the
 derivation is straightforward.
@@ -55,5 +55,5 @@ input from a competing citation reconstruction.
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | competing citation reconstruction | [`*kníxtaz`]{.iv lang=pgmc sort=knixtaz role=source_protoform} | not the reconstruction followed here | broader citation tradition | useful as a competing label, but not the source-based choice used for the OE derivation |
-| handbook-supported reconstruction | [`*knéxtaz`]{.iv lang=pgmc sort=knextaz role=selected_input} | compact-trace output: [`cniht`]{.iv lang=oe sort=cniht role=regular_output} | [`cniht`]{.iv lang=oe sort=cniht role=target_form} | exact match between comparative reconstruction and attested OE noun |
-| related plural evidence | same stem family | plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} type background | [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} | supports the vowel environment, but not the selected target cell |
+| handbook-supported reconstruction | [`*knéxtaz`]{.iv lang=pgmc sort=knextaz role=selected_input} | compact-trace output: [`cniht`]{.iv lang=oe sort=cniht role=regular_output} 'knight' | [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight' | exact match between comparative reconstruction and attested OE noun |
+| related plural evidence | same stem family | plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} 'knights' type background | [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} 'knights' | supports the vowel environment, but not the selected target cell |

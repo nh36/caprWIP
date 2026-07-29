@@ -18,27 +18,27 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [`sife` 'sieve']{.iv lang=oe sort=sife role=target_form}
+Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve'
 with short neuter i-stems such as `spere` [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
 [sib-iz]{.recon} ‘sieve’, but the selected input is the normalized i-stem form [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}.
 
 Kroonen's nearby `*sebjō-` entry belongs to the separate kinship lexeme that
-yields Old English [`sibb` 'sieve']{.iv lang=oe sort=sibb role=comparison_form}, not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve'
+yields Old English [`sibb`]{.iv lang=oe sort=sibb role=comparison_form} 'sieve', not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve'
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 
 ### Old English evidence
 
-Clark Hall gives [`sibi` 'sieve']{.iv lang=oe sort=sibi role=comparison_form} (GL) ... = [`sife`]{.iv lang=oe sort=sife role=target_form} and also [`sife`]{.iv lang=oe sort=sife role=target_form} n. ‘sieve’
-[@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary `sibi` and
-treats `sife` as a short neuter i-stem [@Campbell1959, §§444, 609]. The
-normalized Old English target is therefore `sife`, while `sibi` is an attested
+Clark Hall gives [`sibi`]{.iv lang=oe sort=sibi role=comparison_form} 'sieve' (GL) ... = [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve' and also [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve' n. ‘sieve’
+[@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary `sibi` 'sieve' and
+treats `sife` 'sieve' as a short neuter i-stem [@Campbell1959, §§444, 609]. The
+normalized Old English target is therefore `sife` 'sieve', while `sibi` 'sieve' is an attested
 earlier spelling rather than a separate lexeme.
 
 ### Development to Old English
 
-From [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}, the documented trace gives `*síβi > *síβe` > [`sife`]{.iv lang=oe sort=sife role=regular_output}. Medial `b`
+From [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}, the documented trace gives `*síβi > *síβe` > [`sife`]{.iv lang=oe sort=sife role=regular_output} 'sieve'. Medial `b`
 is realized as a spirant and later written `f`, while the final unstressed `i`
 lowers to `e`. The older s-stem background [sib-iz]{.recon} ‘sieve’ explains the morphology,
 but the selected input [[síbi]{.recon}]{.iv lang=pgmc sort=sibi role=selected_input} is the immediate pre-Old-English form.
@@ -50,6 +50,6 @@ its rejected competitors.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| ja-stem kinship line | Kroonen `*sebjō-` / comparator [`*sibja`]{.iv lang=pgmc sort=sibja role=comparison_form} | OE [`sibb`]{.iv lang=oe sort=sibb role=comparison_form} | [`sibb`]{.iv lang=oe sort=sibb role=comparison_form} | separate lexeme, not the target treated here |
+| ja-stem kinship line | Kroonen `*sebjō-` / comparator [`*sibja`]{.iv lang=pgmc sort=sibja role=comparison_form} | OE [`sibb`]{.iv lang=oe sort=sibb role=comparison_form} 'sieve' | [`sibb`]{.iv lang=oe sort=sibb role=comparison_form} 'sieve' | separate lexeme, not the target treated here |
 | a-stem handbook line | [`*síbaz`]{.iv lang=pgmc sort=sibaz role=source_protoform} | expected [`sif`]{.iv lang=oe sort=sif role=comparison_form} | [`sif`]{.iv lang=oe sort=sif role=comparison_form} | wrong ending for the attested noun |
-| selected i-stem line from older `*sib-iz` | [`*síbi`]{.iv lang=pgmc sort=sibi role=selected_input} | documented trace output: [`sife`]{.iv lang=oe sort=sife role=regular_output} | [`sife`]{.iv lang=oe sort=sife role=target_form}; early spelling [`sibi`]{.iv lang=oe sort=sibi role=comparison_form} | exact match between selected input and Old English evidence |
+| selected i-stem line from older `*sib-iz` | [`*síbi`]{.iv lang=pgmc sort=sibi role=selected_input} | documented trace output: [`sife`]{.iv lang=oe sort=sife role=regular_output} 'sieve' | [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve'; early spelling [`sibi`]{.iv lang=oe sort=sibi role=comparison_form} 'sieve' | exact match between selected input and Old English evidence |

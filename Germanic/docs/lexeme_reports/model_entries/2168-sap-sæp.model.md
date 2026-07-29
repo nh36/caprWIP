@@ -29,8 +29,8 @@ here.
 
 ### Old English evidence
 
-Clark Hall records [`sæp` 'sap']{.iv lang=oe sort=saep role=target_form} (e) n. [@ClarkHall1960, 247]. The target is therefore
-an attested neuter Old English noun. Orel's plain `sap` 'sap' notation belongs to
+Clark Hall records [`sæp`]{.iv lang=oe sort=saep role=target_form} 'sap' (e) n. [@ClarkHall1960, 247]. The target is therefore
+an attested neuter Old English noun. Orel's plain `sap` notation belongs to
 comparative normalization, not to the spelling adopted here for the Old English
 form [@Orel2003, 319].
 
@@ -41,8 +41,8 @@ apocope then produces [`sæp`]{.iv lang=oe sort=saep role=regular_output} 'sap'.
 trace.
 
 The competing comparative lines do not give the same result. The inherited
-n-stem notation [[sapōn]{.recon} ‘sap’]{.iv lang=pgmc sort=sapon role=source_protoform} yields [`sape` 'sap']{.iv lang=oe sort=sape role=comparison_form}, while an i-stem continuation from the
-[`*sapi-`]{.iv lang=pgmc sort=sapi role=comparison_form} line leads to [`sep` 'sap']{.iv lang=oe sort=sep role=comparison_form} / [`sepe` 'sap']{.iv lang=oe sort=sepe role=comparison_form} rather than to [`sæp`]{.iv lang=oe sort=saep role=target_form}. The special step in
+n-stem notation [[sapōn]{.recon} ‘sap’]{.iv lang=pgmc sort=sapon role=source_protoform} yields [`sape`]{.iv lang=oe sort=sape role=comparison_form} 'sap', while an i-stem continuation from the
+[`*sapi-`]{.iv lang=pgmc sort=sapi role=comparison_form} line leads to [`sep`]{.iv lang=oe sort=sep role=comparison_form} 'sap' / [`sepe`]{.iv lang=oe sort=sepe role=comparison_form} 'sap' rather than to [`sæp`]{.iv lang=oe sort=saep role=target_form} 'sap'. The special step in
 this entry is therefore the early stem choice, not a late OE paradigm-cell
 selection.
 
@@ -53,6 +53,6 @@ from the selected OE-facing input.
 
 | Formation / label | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| comparative n-stem line | [`*sapōn`]{.iv lang=pgmc sort=sapon role=source_protoform} | local comparator output: [`sape`]{.iv lang=oe sort=sape role=comparison_form} | [`sape`]{.iv lang=oe sort=sape role=comparison_form} | useful comparative background, but not the source of attested `sæp` |
-| inferred i-stem comparator from `*sapi-` | [`*sapiz`]{.iv lang=pgmc sort=sapiz role=comparison_form} | local comparator output: [`sepe`]{.iv lang=oe sort=sepe role=comparison_form} | [`sepe`]{.iv lang=oe sort=sepe role=comparison_form} | confirms that an i-triggering stem does not reach the target |
-| selected a-stem input | [`*sápą`]{.iv lang=pgmc sort=sapa role=selected_input} | compact-trace output: [`sæp`]{.iv lang=oe sort=saep role=regular_output} | [`sæp`]{.iv lang=oe sort=saep role=target_form} | exact match between selected input and attested OE noun |
+| comparative n-stem line | [`*sapōn`]{.iv lang=pgmc sort=sapon role=source_protoform} | local comparator output: [`sape`]{.iv lang=oe sort=sape role=comparison_form} 'sap' | [`sape`]{.iv lang=oe sort=sape role=comparison_form} 'sap' | useful comparative background, but not the source of attested `sæp` |
+| inferred i-stem comparator from `*sapi-` | [`*sapiz`]{.iv lang=pgmc sort=sapiz role=comparison_form} | local comparator output: [`sepe`]{.iv lang=oe sort=sepe role=comparison_form} 'sap' | [`sepe`]{.iv lang=oe sort=sepe role=comparison_form} 'sap' | confirms that an i-triggering stem does not reach the target |
+| selected a-stem input | [`*sápą`]{.iv lang=pgmc sort=sapa role=selected_input} | compact-trace output: [`sæp`]{.iv lang=oe sort=saep role=regular_output} 'sap' | [`sæp`]{.iv lang=oe sort=saep role=target_form} 'sap' | exact match between selected input and attested OE noun |

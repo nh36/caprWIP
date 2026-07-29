@@ -23,8 +23,8 @@ The Germanic noun is ordinarily cited as the masculine a-stem [[swánaz]{.recon}
 lexeme reconstruction. It is the genitive singular [[swánas]{.recon}]{.iv lang=pgmc sort=swanas role=selected_input} of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan` 'swan']{.iv lang=oe sort=swan role=comparison_form}; the selected comparison form is the
-genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes` 'swan']{.iv lang=oe sort=swanes role=target_form}.
+The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan`]{.iv lang=oe sort=swan role=comparison_form} 'swan'; the selected comparison form is the
+genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes`]{.iv lang=oe sort=swanes role=target_form} 'swan'.
 
 ### Old English evidence
 
@@ -38,7 +38,7 @@ reconstruction or the ordinary citation lemma.
 ### Development to Old English
 
 From [swánas]{.recon} ‘swan’, Anglo-Frisian brightening gives [swánæs]{.recon} ‘swan’, and
-subsequent merger of unstressed `æ` with `e` yields `swanes`. The
+subsequent merger of unstressed `æ` with `e` yields `swanes` 'swan'. The
 comparison is straightforward once the genitive singular is chosen as the
 relevant cell.
 
@@ -49,5 +49,5 @@ selected inflected cell.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [`*swánaz`]{.iv lang=pgmc sort=swanaz role=source_protoform} | OE headword [`swan`]{.iv lang=oe sort=swan role=comparison_form} | [`swan`]{.iv lang=oe sort=swan role=comparison_form} | ordinary lexeme line |
-| selected genitive singular | [`*swánas`]{.iv lang=pgmc sort=swanas role=selected_input} | trace output: [`swanes`]{.iv lang=oe sort=swanes role=regular_output} | [`swanes`]{.iv lang=oe sort=swanes role=target_form} | selected attested cell |
+| citation nominative singular | [`*swánaz`]{.iv lang=pgmc sort=swanaz role=source_protoform} | OE headword [`swan`]{.iv lang=oe sort=swan role=comparison_form} 'swan' | [`swan`]{.iv lang=oe sort=swan role=comparison_form} 'swan' | ordinary lexeme line |
+| selected genitive singular | [`*swánas`]{.iv lang=pgmc sort=swanas role=selected_input} | trace output: [`swanes`]{.iv lang=oe sort=swanes role=regular_output} 'swan' | [`swanes`]{.iv lang=oe sort=swanes role=target_form} 'swan' | selected attested cell |

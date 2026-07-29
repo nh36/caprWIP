@@ -1,9 +1,9 @@
 # Index verborum audit
 
 - Internal production occurrences: 1996
-- Internal production unique forms: 1001
+- Internal production unique forms: 977
 - Printed main-index occurrences: 1894
-- Printed main-index unique forms: 979
+- Printed main-index unique forms: 955
 - Print-excluded occurrences: 102
 - Print-excluded unique forms: 82
 - Print exclusions (preoe_model_internal_default_exclusion): 8
@@ -29,7 +29,7 @@
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
-- Ordinary prose/gloss ignored: 26
+- Ordinary prose/gloss ignored: 27
 - Orthographic/normalization variants: 15
 - Table semantic auto-promoted: 27
 - Table semantic suggestions: 18
@@ -47,7 +47,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 989 | 428 |
+| Old English | 989 | 404 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Pre-Old-English and model-internal forms | 12 | 10 |
@@ -120,7 +120,7 @@
 - `brusts` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22)
 - `faurhtei` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22)
 - `fra-liusan` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21)
-- `stibna` 'stem` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
+- `stibna` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
 
 ### Old Saxon
 
@@ -164,7 +164,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 899 | 416 |
+| Old English | 899 | 392 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
@@ -2135,6 +2135,7 @@
 | `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:59 | formal rule label |
 | `paradigm-cell` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:46 | ordinary prose/gloss word |
 | `row` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | ordinary prose/gloss word |
+| `sea` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:22 | ordinary prose/gloss word |
 | `sea` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33 | ordinary prose/gloss word |
 | `side` | Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:30 | ordinary prose/gloss word |
 | `spellings` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:56 | ordinary prose/gloss word |

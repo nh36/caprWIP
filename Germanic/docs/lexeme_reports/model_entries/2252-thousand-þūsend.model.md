@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the Germanic numeral as **[`*þūsundī-`]{.iv lang=pgmc sort=thusundi role=source_protoform}** and cites Old
-English **[`þūsend` 'thousand']{.iv lang=oe sort=thusend role=target_form}** among its continuations [@Kroonen2013, 554]. The
+English **[`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'** among its continuations [@Kroonen2013, 554]. The
 selected input **[[θūs-èndi]{.recon} ‘thousand’]{.iv lang=pgmc sort=thusendi role=selected_input}** is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to `e` and the final
 high vowel already shortened for apocope.
@@ -30,7 +30,7 @@ The chronology must explain why Old English shows
 
 ### Old English evidence
 
-Old English **`þūsend`** is an ordinary citation form, not a selected oblique or
+Old English **`þūsend` 'thousand'** is an ordinary citation form, not a selected oblique or
 paradigm cell. Campbell treats it as a neuter noun with normal case forms
 [@Campbell1959, §689]. The problem lies in the internal history of the word, not
 in its lexical status.
@@ -39,7 +39,7 @@ in its lexical status.
 
 If the old final **`-ī[* had remained long enough to trigger ordinary double
 umlaut, Campbell's rule would point toward a form of **[]{.recon} ‘thousand’*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form}** type rather
-than attested **[`þūsend`]{.iv lang=oe sort=thusend role=target_form}** [@Campbell1959, §203]. Preserved root **`ū`**
+than attested **[`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'** [@Campbell1959, §203]. Preserved root **`ū`**
 therefore argues that the umlaut-triggering vowel was lost or neutralized before
 the ordinary OE umlaut outcome could develop.
 
@@ -51,7 +51,7 @@ need not prove a unique `ærende` 'message'-type analogy [@GermanicSlavicBaltic2
 §2.1.4].
 
 The selected transponent **[[θūs-èndi]{.recon} ‘thousand’]{.iv lang=pgmc sort=thusendi role=selected_input}** captures the OE-side state from which
-the documented trace reaches **[`þūsend`]{.iv lang=oe sort=thusend role=regular_output}**.
+the documented trace reaches **[`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand'**.
 
 ### Stage comparison
 
@@ -62,4 +62,4 @@ interpretive account of the second-syllable vowel.
 | :--- | :--- | :--- | :--- |
 | surviving `-ī` with ordinary double umlaut | [`*þūsundī-`]{.iv lang=pgmc sort=thusundi role=source_protoform} treated as still umlaut-active in OE | would point toward [`*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form} | excluded by preserved `ū` |
 | early loss of the trigger without further reshaping | `*þūsund-` type | explains `ū`, but not why OE alone has medial `e` | incomplete account |
-| selected OE-oriented transponent | [`*θūs-èndi`]{.iv lang=pgmc sort=thusendi role=selected_input} | trace output: [`þūsend`]{.iv lang=oe sort=thusend role=regular_output} | selected modeling input |
+| selected OE-oriented transponent | [`*θūs-èndi`]{.iv lang=pgmc sort=thusendi role=selected_input} | trace output: [`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand' | selected modeling input |

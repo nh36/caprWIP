@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The inherited comparative noun is given as [laimōn]{.recon} ‘loam’ or `*laiman-`, and both
-Orel and Kroonen identify Old English `lām` as a neuter reflex of that family
+Orel and Kroonen identify Old English `lām` 'loam' as a neuter reflex of that family
 [@Orel2003, 272; @Kroonen2013, 363]. The form followed here, [láimą]{.recon} ‘loam’, differs from the
 comparative headword because it represents the stem class that matches the Old
 English noun most directly.

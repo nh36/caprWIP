@@ -36,7 +36,7 @@ surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives `nosu f.`, with genitive-dative singular `nosa`, and cross-refers
 `nasu` to `nosu` 'nose' [@ClarkHall1960, 810].
 
-The selected OE target is therefore attested `nosu`, not a reconstructed
+The selected OE target is therefore attested `nosu` 'nose', not a reconstructed
 placeholder. The lexicographical record also gives `nasu` for the full-grade
 side of the tradition.
 

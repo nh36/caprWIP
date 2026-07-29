@@ -18,8 +18,8 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the verb as `*fulgen-` and gives Old English [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form}, [`folgian`]{.iv lang=oe sort=folgian role=comparison_form},
-adding that Old Norse [`fylgja`]{.iv lang=on sort=fylgja role=comparison_form} and Old English [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} continue a formation
+Kroonen reconstructs the verb as `*fulgen-` and gives Old English [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow', [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow',
+adding that Old Norse [`fylgja`]{.iv lang=on sort=fylgja role=comparison_form} 'follow' and Old English [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} continue a formation
 `*fulgjan-` [@Kroonen2013, 159]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
@@ -27,7 +27,7 @@ Ringe and Taylor distinguish PNWGmc [fulgija-]{.recon} 'follow' ~ [fulgai-]{.rec
 older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
 [[fúlgijaną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgijana role=selected_input} belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
-form [[fulgēną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form}.
+form [[fulgēną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow'.
 
 ### Old English evidence
 
@@ -39,7 +39,7 @@ Bosworth-Toller likewise has a separate [`fylgean`]{.iv lang=oe sort=fylgean rol
 Bright notes traces of the older conjugation in [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} 'follow'
 [@BrightCassidyRingler1971, 77] and lists [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' ([`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form} 'follow') in the glossary
 [@BrightCassidyRingler1971, 364]. The relevant comparison form in this entry is
-therefore the class-I verb [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} / [`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form}, here normalized as [`fylġan`]{.iv lang=oe sort=fylgan role=target_form}.
+therefore the class-I verb [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow' / [`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form}, here normalized as [`fylġan`]{.iv lang=oe sort=fylgan role=target_form} 'follow'.
 The spelling with ġ represents the palatalized velar before a front-vocalic
 environment.
 
@@ -65,9 +65,9 @@ no full automatic class probe is presented here.
 
 | Formation / class | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation class-II formation | [`*fulgēną`]{.iv lang=pgmc sort=fulgena role=source_protoform} | probe output: [`folgon`]{.iv lang=oe sort=folgon role=regular_output} | [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} | mismatch: the regular output is not the remodeled infinitive `folgian` |
-| parallel class-II branch | PNWGmc `*fulgai-` | Ringe-Taylor: OE [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} | [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} | documents the separate class-II branch, but not the target of this entry |
-| selected class-I formation | [`*fúlgijaną`]{.iv lang=pgmc sort=fulgijana role=selected_input} | compact-trace output: [`fylġan`]{.iv lang=oe sort=fylgan role=regular_output} | [`fylġan`]{.iv lang=oe sort=fylgan role=target_form} / [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} | exact match between input, output, and class |
+| citation class-II formation | [`*fulgēną`]{.iv lang=pgmc sort=fulgena role=source_protoform} | probe output: [`folgon`]{.iv lang=oe sort=folgon role=regular_output} | [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' | mismatch: the regular output is not the remodeled infinitive `folgian` |
+| parallel class-II branch | PNWGmc `*fulgai-` | Ringe-Taylor: OE [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' | [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' | documents the separate class-II branch, but not the target of this entry |
+| selected class-I formation | [`*fúlgijaną`]{.iv lang=pgmc sort=fulgijana role=selected_input} | compact-trace output: [`fylġan`]{.iv lang=oe sort=fylgan role=regular_output} 'follow' | [`fylġan`]{.iv lang=oe sort=fylgan role=target_form} 'follow' / [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow' | exact match between input, output, and class |
 
 The relevant point is the class split. [`fylġan`]{.iv lang=oe sort=fylgan role=target_form} 'follow' is the regular Old English
 outcome of the class-I `*fulgija- / *fulgjan-` formation, whereas [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow'

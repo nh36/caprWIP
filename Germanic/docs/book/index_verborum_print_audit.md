@@ -1,9 +1,9 @@
 # Index verborum print audit
 
 - Internal production occurrences: 1996
-- Internal production unique forms: 1001
+- Internal production unique forms: 977
 - Printed main occurrences: 1894
-- Printed main unique forms: 979
+- Printed main unique forms: 955
 - Printed excluded occurrences: 102
 - Printed excluded unique forms: 82
 
@@ -17,7 +17,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 899 | 416 |
+| Old English | 899 | 392 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
@@ -64,8 +64,8 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 980
-- Print anomaly rows: 58
+- Unique printed entries: 956
+- Print anomaly rows: 29
 - Hard print anomalies: 0
 
 ## Unique printed entries: first 20 Old English
@@ -127,7 +127,7 @@
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
-| goth | `stibna` 'stem` | stibna | 1 | comparison_form |
+| goth | `stibna` | stibna | 1 | comparison_form |
 | dutch | `beide` | beide | 2 | comparison_form |
 | dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
@@ -199,7 +199,6 @@
 
 ## Print anomalies (sample)
 
-- `stibna` 'stem` (goth, comparison_form; ; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
 - `bā` (oe, comparison_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22)
 - `bā` (oe, comparison_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37)
 - `bā` (oe, comparison_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:68)
@@ -207,6 +206,7 @@
 - `bū` (oe, target_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:32)
 - `bū` (oe, target_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37)
 - `bū` (oe, target_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:43)
+- `bū` (oe, target_form; ; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52)
 
 ## Reader-facing example rows (sample)
 

@@ -35,16 +35,16 @@ Campbell cites `lappa` 'lap' as a case of restored `a`
 [@SieversBrunner1965, §10]. The dictionary tradition also preserves `læppa` 'lap'
 [@ClarkHall1960, 180; @BosworthToller1898, 613].
 
-The target of this entry is the restored singular `lappa`. The variant `læppa`
+The target of this entry is the restored singular `lappa` 'lap'. The variant `læppa` 'lap'
 and the oblique or plural `leappan` remain part of the Old English record and
 help frame the noun's vowel history.
 
 ### Development to Old English
 
-Campbell explicitly lists `lappa` among the forms with restored `a`
+Campbell explicitly lists `lappa` 'lap' among the forms with restored `a`
 [@Campbell1959, §158]. Sievers-Brunner records `lappa` 'lap' beside variant `læppa` 'lap'
 at the same Old English stage [@SieversBrunner1965, §10]. With the weak
-masculine input chosen, the selected `lappa` outcome is therefore the regular
+masculine input chosen, the selected `lappa` 'lap' outcome is therefore the regular
 Old English comparison.
 
 ### Stem comparison
