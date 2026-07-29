@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen instead gives a nasal-suffix navel formation with Old English [`nafela`]{.iv lang=oe sort=nafela role=comparison_form} 'navel'
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
-derivational pathway `*nabulō > *næbula > nafola` [@RingeTaylor2014, 270]. The
+derivational pathway [nabulō]{.recon} 'navel' > [næbula]{.recon} 'navel' > `nafola` 'navel' [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
 selected input [[nábulô]{.recon} ‘navel’]{.iv lang=pgmc sort=nabulo role=selected_input} is the pre-syncope form needed for the Old English
 development.
@@ -42,7 +42,7 @@ this entry is centered on [`nafola`]{.iv lang=oe sort=nafola role=target_form} '
 
 ### Development to Old English
 
-Ringe and Taylor give the pre-OE line `*nabulō > *næbula > OE nafola`
+Ringe and Taylor give the pre-OE line [nabulō]{.recon} 'navel' > [næbula]{.recon} 'navel' > OE `nafola` 'navel'
 [@RingeTaylor2014, 270]. The trace represents that same development with
 stress-marked notation and explicit intermediate weakening. Intervocalic `b`
 then surfaces as `f`, and final weak-tail shortening gives `nafola` 'navel'.

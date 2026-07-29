@@ -30,7 +30,7 @@ points toward `rost` 'rust', not toward the attested Old English noun.
 
 ### Old English evidence
 
-The Old English noun is attested, not reconstructed. Clark Hall gives `rūst m.`
+The Old English noun is attested, not reconstructed. Clark Hall gives `rūst m.` 'rust'
 [@ClarkHall1960, 245], and Bosworth-Toller records `rúst (? and rust)`
 [@BosworthToller1898, 677]. The form is normalized here as `rust` from that attested
 record.

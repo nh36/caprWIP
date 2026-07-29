@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The word is the old compound 'age of men'. Orel and the `*wira-` tradition
 reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
-[weraldiz]{.recon} 'world' ‘world’ and its pre-Old-English chain `*weraldu > *weruld`
+[weraldiz]{.recon} 'world' and its pre-Old-English chain `*weraldu > *weruld`
 [@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold` 'world'
 [@KlugeSeebold2011, 981].
@@ -48,7 +48,7 @@ ever shows.
 From the selected input [wír-àldu]{.recon} ‘world’, Northwest Germanic `i`-lowering gives
 [wér-àldu]{.recon} ‘world’. Inter-stress raising then changes the medial `a` to `u`, producing
 [wér-uldu]{.recon} ‘world’. In the Old English branch that unstressed `u` lowers to `o`, and
-back mutation yields [wéor-oldu]{.recon} ‘world’; final high-vowel apocope then gives
+back mutation yields [wéor-oldu]{.recon} ‘world'; final high-vowel apocope then gives
 `weorold` 'world'.
 
 This sequence matches the comparative background in Ringe and Taylor's

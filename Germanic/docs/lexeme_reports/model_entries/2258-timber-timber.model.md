@@ -35,7 +35,7 @@ citation noun, not a selected oblique cell or a reconstructed convenience form.
 
 ### Development to Old English
 
-With the consonantal frame [timbr-]{.recon} ‘timber’ in place, the rest of the development is straightforward. Loss of final `-ą` leaves [tímbr]{.recon} ‘timber’, and epenthetic `e` in the final cluster yields [timber]{.iv lang=oe sort=timber role=regular_output}. Ringe and Taylor's `timra > timbr > OE timber` and the handbook treatment of this epenthetic vowel point to the same Old English result [@RingeTaylor2014, 327; @Campbell1959, §§463-464].
+With the consonantal frame [timbr-]{.recon} ‘timber’ in place, the rest of the development is straightforward. Loss of final `-ą` leaves [tímbr]{.recon} ‘timber’, and epenthetic `e` in the final cluster yields [timber]{.iv lang=oe sort=timber role=regular_output} 'timber'. Ringe and Taylor's `timra > timbr > OE timber` and the handbook treatment of this epenthetic vowel point to the same Old English result [@RingeTaylor2014, 327; @Campbell1959, §§463-464].
 
 ### Formation comparison
 

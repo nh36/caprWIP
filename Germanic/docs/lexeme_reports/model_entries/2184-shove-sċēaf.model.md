@@ -29,7 +29,7 @@ The ordinary dictionary verb is [`scūfan`]{.iv lang=oe sort=scufan role=compari
 well attested. Bright gives the principal parts [`scufan`]{.iv lang=oe sort=scufan role=comparison_form} 'shove', [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} 'shove', [`scufon`]{.iv lang=oe sort=scufon role=comparison_form} 'shove', [`scofen`]{.iv lang=oe sort=scofen role=comparison_form} 'shove'
 [@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
 The normalized form here is [`sċēaf`]{.iv lang=oe sort=sceaf role=target_form} 'shove',
-regularizing the attested spellings [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} 'shove' and prefixed [`āsceaf`]{.iv lang=oe sort=asceaf role=comparison_form}.
+regularizing the attested spellings [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} 'shove' and prefixed [`āsceaf`]{.iv lang=oe sort=asceaf role=comparison_form} 'shove'.
 
 ### Development to Old English
 

@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 Kroonen reconstructs a Germanic ablaut pair `*nasō- ~ *nusō-` and adds that the
 root `*nus-` is likely to have arisen as a secondary zero grade after a
 remodeling of the older paradigm [@Kroonen2013, 423]. Campbell is more specific for
-Old English, citing `nosu < *nusō` [@Campbell1959, 44].
+Old English, citing `nosu` 'nose' < [nusō]{.recon} 'nose' [@Campbell1959, 44].
 
 The citation reconstruction [nasō]{.recon} ‘nose’ is therefore best treated as the full-grade
 comparative headword, while the selected input [núsō]{.recon} ‘nose’ represents the remodeled
@@ -31,9 +31,9 @@ lines should not be collapsed without comment [@Orel2003, 320].
 
 ### Old English evidence
 
-`Nosu` is an attested Old English noun. Ringe and Taylor list it among the few
+`Nosu` 'nose' is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
-likewise gives `nosu f.`, with genitive-dative singular `nosa`, and cross-refers
+likewise gives `nosu f.` 'nose', with genitive-dative singular `nosa`, and cross-refers
 `nasu` to `nosu` 'nose' [@ClarkHall1960, 810].
 
 The selected OE target is therefore attested `nosu` 'nose', not a reconstructed
@@ -43,7 +43,7 @@ side of the tradition.
 ### Development to Old English
 
 From [núsō]{.recon} ‘nose’, the regular path is the one documented by the current trace:
-`*núsō > *nósō > *nósu > nosu`. The early special step lies in the choice of the
+[núsō]{.recon} 'nose' > [nósō]{.recon} 'nose' > [nósu]{.recon} 'nose' > `nosu` 'nose'. The early special step lies in the choice of the
 zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade

@@ -38,7 +38,7 @@ earlier spelling rather than a separate lexeme.
 
 ### Development to Old English
 
-From [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}, the documented trace gives `*síβi > *síβe` > [`sife`]{.iv lang=oe sort=sife role=regular_output} 'sieve'. Medial `b`
+From [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}, the documented trace gives [síβi]{.recon} 'sieve' > [síβe]{.recon} 'sieve' > [`sife`]{.iv lang=oe sort=sife role=regular_output} 'sieve'. Medial `b`
 is realized as a spirant and later written `f`, while the final unstressed `i`
 lowers to `e`. The older s-stem background [sib-iz]{.recon} ‘sieve’ explains the morphology,
 but the selected input [[síbi]{.recon}]{.iv lang=pgmc sort=sibi role=selected_input} is the immediate pre-Old-English form.

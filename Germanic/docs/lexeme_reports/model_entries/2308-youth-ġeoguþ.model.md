@@ -19,9 +19,9 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The wider etymological tradition reconstructs an earlier form of the word as
-[`*ju(w)unþi-`]{.iv lang=pgmc sort=juwunthi role=source_protoform} [@Kroonen2013, 316]. The comparative label
-[[júgunθiz]{.recon} 'youth' ‘youth’]{.iv lang=pgmc sort=jugunthiz role=source_protoform} already stands at a later Germanic stage with `g`, and the
-derivational input [[júgunθ]{.recon} 'youth' ‘youth’]{.iv lang=pgmc sort=jugunth role=selected_input} is later again: it represents the form after final
+[`*ju(w)unþi-`]{.iv lang=pgmc sort=juwunthi role=source_protoform}. The comparative label
+[[júgunθiz]{.recon} 'youth']{.iv lang=pgmc sort=jugunthiz role=source_protoform} already stands at a later Germanic stage with `g`, and the
+derivational input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugunth role=selected_input} is later again: it represents the form after final
 `-i` has been lost.
 
 Ringe and Taylor explicitly give the sequence
@@ -33,7 +33,7 @@ because the Old English development must begin after early loss of final `-i`.
 
 The Old English noun is attested with varying spellings. Ringe and Taylor cite
 [`geoguþ`]{.iv lang=oe sort=geoguth role=target_form} 'youth' ~ [`iuguþ`]{.iv lang=oe sort=iuguth role=comparison_form} 'youth' [@RingeTaylor2014, 141]. The form is normalized here as
-[`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form}: the initial palatal is written with `ġ`, and the attested spelling
+[`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form} 'youth': the initial palatal is written with `ġ`, and the attested spelling
 variation is treated as orthographic rather than lexical.
 
 Nothing in the source stack suggests that a different paradigm cell should be
@@ -45,10 +45,10 @@ The decisive early step is the loss of final `-i` before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 `y`-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From the selected input [[júgunθ]{.recon} 'youth' ‘youth’]{.iv lang=pgmc sort=jugunth role=selected_input}, the later development is regular: palatal
-fronting yields [jéugunθ]{.recon} 'youth' ‘youth’; nasal-spirant lengthening and loss give
-[jéogūθ]{.recon} 'youth' ‘youth’ [@Fulk2018, 109]; unstressed long-vowel shortening then produces
-[jéoguθ]{.recon} 'youth' ‘youth’, which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output}. Campbell preserves `u` after accented `u` in forms such
+From the selected input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugunth role=selected_input}, the later development is regular: palatal
+fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
+[jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
+[jéoguθ]{.recon} 'youth', which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves `u` after accented `u` in forms such
 as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} [@Campbell1959, §374]. Brunner likewise cites `iuzuð`
 `Jugend` and `munuc` `Mönch` in the same environment
 [@SieversBrunner1965, §150.3].

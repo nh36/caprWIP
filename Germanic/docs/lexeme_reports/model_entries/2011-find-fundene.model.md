@@ -19,11 +19,11 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited verb is the strong verb [[fínθaną]{.recon} ‘find’]{.iv lang=pgmc sort=finthana role=source_protoform}, continued by Old English
-[`findan`]{.iv lang=oe sort=findan role=comparison_form} [@RingeTaylor2014, 344]. The form followed here, [[fúnðanǭ]{.recon} ‘find’]{.iv lang=pgmc sort=fundhano role=selected_input},
+[`findan`]{.iv lang=oe sort=findan role=comparison_form} 'find' [@RingeTaylor2014, 344]. The form followed here, [[fúnðanǭ]{.recon} ‘find’]{.iv lang=pgmc sort=fundhano role=selected_input},
 belongs to the past-participial paradigm rather than to the infinitive. It
 represents an oblique singular form of the participle.
 
-The familiar dictionary form [`funden`]{.iv lang=oe sort=funden role=comparison_form} is not
+The familiar dictionary form [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found' is not
 the form compared here. The derivational input instead models an attested
 participial form directly, rather than treating the infinitive or the ordinary
 dictionary headword as primary. It therefore reaches [`fundene`]{.iv lang=oe sort=fundene role=target_form} in the form
@@ -31,13 +31,13 @@ where the trace and the attested evidence match directly.
 
 ### Old English evidence
 
-Bosworth-Toller records **[`fundene`]{.iv lang=oe sort=fundene role=target_form}** under [`findan`]{.iv lang=oe sort=findan role=comparison_form}, citing the form in
+Bosworth-Toller records **[`fundene`]{.iv lang=oe sort=fundene role=target_form}** 'found' under [`findan`]{.iv lang=oe sort=findan role=comparison_form} 'find', citing the form in
 _Beón þá herigeata swa fundene_ [@BosworthToller1898, 219]. Clark Hall likewise preserves the
-participial stem in forms such as [`funden`]{.iv lang=oe sort=funden role=comparison_form} and `tō-fundennes`
+participial stem in forms such as [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found' and `tō-fundennes` 'finding'
 [@ClarkHall1960, 124].
 
-The ordinary dictionary headword for the participle is [`funden`]{.iv lang=oe sort=funden role=comparison_form}, but the
-relevant comparison form for this entry is the attested oblique **[`fundene`]{.iv lang=oe sort=fundene role=target_form}**.
+The ordinary dictionary headword for the participle is [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found', but the
+relevant comparison form for this entry is the attested oblique **[`fundene`]{.iv lang=oe sort=fundene role=target_form}** 'found'.
 It is an Old English form in its own right, not a merely convenient probe.
 
 ### Development to Old English

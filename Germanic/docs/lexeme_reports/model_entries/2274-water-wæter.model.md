@@ -41,7 +41,7 @@ Old English attestation.
 
 ### Development to Old English
 
-From [wátōr]{.recon} ‘water’, pre-final `ō` becomes `a`, yielding [watar]{.recon} ‘water’ [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then gives [wætær]{.recon} ‘water’, and merger of unstressed `æ/e` yields [wæter]{.iv lang=oe sort=waeter role=regular_output}.
+From [wátōr]{.recon} ‘water’, pre-final `ō` becomes `a`, yielding [watar]{.recon} ‘water' [@RingeTaylor2014, §3.1.4]. Anglo-Frisian brightening then gives [wætær]{.recon} ‘water’, and merger of unstressed `æ/e` yields [wæter]{.iv lang=oe sort=waeter role=regular_output} 'water'.
 
 ### Stage comparison
 

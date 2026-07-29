@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources do not give one uniform inherited stem. Kroonen
-preserves the word family as `*saf/ppan-`, with Old English `sæp m.`
+preserves the word family as `*saf/ppan-` 'sap', with Old English `sæp` 'sap'
 [@Kroonen2013, 420]. Orel preserves the comparative notation [sapōn ~ *sapan]{.recon} ‘sap’
 [@Orel2003, 319].
 

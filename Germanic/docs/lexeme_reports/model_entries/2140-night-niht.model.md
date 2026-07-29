@@ -42,8 +42,8 @@ non-umlauted side of the paradigm in `neaht`-type forms.
 
 ### Development to Old English
 
-Ringe and Taylor derive West Saxon `niht` 'night' from [nahti]{.recon} 'night' ‘night’ via [nehti]{.recon} ‘night’ and
-[neahti]{.recon} ‘night’ [@RingeTaylor2014, 240]. Campbell and Brunner preserve the
+Ringe and Taylor derive West Saxon `niht` 'night' From [nahti]{.recon} 'night' ‘night' via [nehti]{.recon} ‘night' and
+[neahti]{.recon} ‘night' [@RingeTaylor2014, 240]. Campbell and Brunner preserve the
 contrasting non-umlauted `neaht`-type forms elsewhere in the paradigm
 [@Campbell1959, §628.3; @SieversBrunner1965, §284].
 

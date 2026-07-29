@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun is the masculine a-stem [[xámaraz]{.recon} ‘hammer’]{.iv lang=pgmc sort=xamaraz role=source_protoform}, reflected in Old English
-citation forms such as [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} and [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} [@Kroonen2013, 206; @Orel2003, 197;
+citation forms such as [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} 'hammer' and [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} 'hammer' [@Kroonen2013, 206; @Orel2003, 197;
 @ClarkHall1960, 160]. The selected input [[xámaras]{.recon} ‘hammer’]{.iv lang=pgmc sort=xamaras role=selected_input} is the genitive singular of that
 same noun rather than a different lexeme.
 
@@ -29,18 +29,18 @@ This is a cell choice within one paradigm, not a change of stem class.
 
 ### Old English evidence
 
-Bosworth-Toller directly records **[`hameres`]{.iv lang=oe sort=hameres role=target_form}** in an Old English genitival
+Bosworth-Toller directly records **[`hameres`]{.iv lang=oe sort=hameres role=target_form}** 'hammer' in an Old English genitival
 phrase [@BosworthToller1898, 78]. Clark Hall preserves the simplex headword as
-[`hamer`]{.iv lang=oe sort=hamer role=comparison_form} / [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} [@ClarkHall1960, 160].
+[`hamer`]{.iv lang=oe sort=hamer role=comparison_form} 'hammer' / [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} 'hammer' [@ClarkHall1960, 160].
 
-Sievers-Brunner gives a paradigm line [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} — [`hamores`]{.iv lang=oe sort=hamores role=comparison_form}, which shows that the
+Sievers-Brunner gives a paradigm line [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} 'hammer' — [`hamores`]{.iv lang=oe sort=hamores role=comparison_form} 'hammer', which shows that the
 oblique tradition itself was not entirely uniform [@SieversBrunner1965, §245]. The
 relevant comparison form here is the attested genitive singular [`hameres`]{.iv lang=oe sort=hameres role=target_form}.
 
 ### Development to Old English
 
 From [[xámaras]{.recon} ‘hammer’]{.iv lang=pgmc sort=xamaras role=selected_input}, Anglo-Frisian brightening and the subsequent merger of
-unstressed `æ` with `e` yield [`hameres`]{.iv lang=oe sort=hameres role=target_form}. The derivation of that oblique form is
+unstressed `æ` with `e` yield [`hameres`]{.iv lang=oe sort=hameres role=target_form} 'hammer'. The derivation of that oblique form is
 straightforward once the genitive singular cell is selected.
 
 The noun as a whole retains a mixed citation tradition in [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} and [`hamer`]{.iv lang=oe sort=hamer role=comparison_form},

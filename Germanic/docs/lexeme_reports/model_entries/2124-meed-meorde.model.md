@@ -30,15 +30,15 @@ attested oblique line `meorde`.
 
 ### Old English evidence
 
-The directly attested forms are obliques: [`meorde`]{.iv lang=oe sort=meorde role=target_form} as a dative singular and
-[`meorda`]{.iv lang=oe sort=meorda role=comparison_form} as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
-Lexicographers reconstruct a bare nominative [`meord`]{.iv lang=oe sort=meord role=comparison_form} from those obliques, while
-West Saxon prose more commonly shows the competing doublet `mēd`
+The directly attested forms are obliques: [`meorde`]{.iv lang=oe sort=meorde role=target_form} 'meed' as a dative singular and
+[`meorda`]{.iv lang=oe sort=meorda role=comparison_form} 'meed' as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
+Lexicographers reconstruct a bare nominative [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' from those obliques, while
+West Saxon prose more commonly shows the competing doublet `mēd` 'meed'
 [@ClarkHall1960, 214; @BosworthToller1898, 647].
 
-The target of this entry is therefore the attested oblique **[`meorde`]{.iv lang=oe sort=meorde role=target_form}**, not the
-reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} and not the better-known West Saxon citation form
-`mēd`.
+The target of this entry is therefore the attested oblique **[`meorde`]{.iv lang=oe sort=meorde role=target_form}** 'meed', not the
+reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' and not the better-known West Saxon citation form
+`mēd` 'meed'.
 
 ### Development to Old English
 
@@ -59,7 +59,7 @@ the broader lemma history.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [`*mizdō`]{.iv lang=pgmc sort=mizdo role=source_protoform} | inferred lemma outcome [`meord`]{.iv lang=oe sort=meord role=comparison_form} | [`meord`]{.iv lang=oe sort=meord role=comparison_form} | useful background, but the bare lemma is reconstructed rather than directly attested |
-| selected dative singular | [`*mízdai`]{.iv lang=pgmc sort=mizdai role=selected_input} | compact-trace output: [`meorde`]{.iv lang=oe sort=meorde role=regular_output} | [`meorde`]{.iv lang=oe sort=meorde role=target_form} | exact match between selected input and attested target |
-| genitive singular | [`*mizdōz`]{.iv lang=pgmc sort=mizdoz role=comparison_form} | compact-trace output: [`meorde`]{.iv lang=oe sort=meorde role=regular_output} | [`meorde`]{.iv lang=oe sort=meorde role=target_form} | converges on the same attested string, but the dat.sg. has the clearest direct support |
-| genitive plural control | plural oblique line | attested [`meorda`]{.iv lang=oe sort=meorda role=comparison_form} | [`meorda`]{.iv lang=oe sort=meorda role=comparison_form} | confirms the broader oblique tradition, but not the chosen singular target |
+| citation nominative singular | [`*mizdō`]{.iv lang=pgmc sort=mizdo role=source_protoform} | inferred lemma outcome [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' | [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' | useful background, but the bare lemma is reconstructed rather than directly attested |
+| selected dative singular | [`*mízdai`]{.iv lang=pgmc sort=mizdai role=selected_input} | compact-trace output: [`meorde`]{.iv lang=oe sort=meorde role=regular_output} 'meed' | [`meorde`]{.iv lang=oe sort=meorde role=target_form} 'meed' | exact match between selected input and attested target |
+| genitive singular | [`*mizdōz`]{.iv lang=pgmc sort=mizdoz role=comparison_form} | compact-trace output: [`meorde`]{.iv lang=oe sort=meorde role=regular_output} 'meed' | [`meorde`]{.iv lang=oe sort=meorde role=target_form} 'meed' | converges on the same attested string, but the dat.sg. has the clearest direct support |
+| genitive plural control | plural oblique line | attested [`meorda`]{.iv lang=oe sort=meorda role=comparison_form} 'meed' | [`meorda`]{.iv lang=oe sort=meorda role=comparison_form} 'meed' | confirms the broader oblique tradition, but not the chosen singular target |

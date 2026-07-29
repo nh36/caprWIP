@@ -27,19 +27,19 @@ infinitive.
 Campbell's account of Old English class-II strong verbs treats the singular
 preterite `au > ēa` development as regular in this environment
 [@Campbell1959, 53].
-That is the phonological path relevant for [`bēag`]{.iv lang=oe sort=beag}, whereas the analogical `ū`
-of the present stem belongs to the separate history behind [`būgan`]{.iv lang=oe sort=bugan}
+That is the phonological path relevant for [`bēag`]{.iv lang=oe sort=beag} 'bowed', whereas the analogical `ū`
+of the present stem belongs to the separate history behind [`būgan`]{.iv lang=oe sort=bugan} 'to bow'
 [@RingeTaylor2014, 55].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall both record [`bēag`]{.iv lang=oe sort=beag} as a preterite form of
-[`būgan`]{.iv lang=oe sort=bugan} [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
+Bosworth-Toller and Clark Hall both record [`bēag`]{.iv lang=oe sort=beag} 'bowed' as a preterite form of
+[`būgan`]{.iv lang=oe sort=bugan} 'to bow' [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
-The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan}, but the relevant comparison
-form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag}**. That is the paradigm
+The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan} 'to bow', but the relevant comparison
+form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag}** 'bowed'. That is the paradigm
 cell in which the inherited `*au` grade is preserved most directly.
 
 ### Development to Old English
