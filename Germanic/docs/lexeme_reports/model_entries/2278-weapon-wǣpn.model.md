@@ -18,25 +18,25 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs a double-stem noun `*wēbna- ~ *wēpna-` and cites OE `wæpn` among its reflexes [@Kroonen2013, 617]. The selected input [wḗpną]{.recon} ‘weapon’ represents the unbroken citation-form noun rather than the later broken simplex.
+Kroonen reconstructs a double-stem noun `*wēbna- ~ *wēpna-` and cites OE `wæpn` 'weapon' among its reflexes [@Kroonen2013, 617]. The selected input [wḗpną]{.recon} ‘weapon’ represents the unbroken citation-form noun rather than the later broken simplex.
 
 ### Old English evidence
 
-Campbell's cluster-noun discussion preserves unbroken `wépn` beside broken
-`wépen`-type forms [@Campbell1959, 150; @Campbell1959, 226–227]. Bright
-contrasts broken nominative `wǣpen/wapen` with unbroken oblique `wǣpnes`,
-while Clark Hall lemmatizes the noun under `wapen` and also preserves unbroken
+Campbell's cluster-noun discussion preserves unbroken `wépn` 'weapon' beside broken
+`wépen` 'weapon'-type forms [@Campbell1959, 150; @Campbell1959, 226–227]. Bright
+contrasts broken nominative `wǣpen` 'weapon' / `wapen` 'weapon' with unbroken oblique `wǣpnes` 'weapon',
+while Clark Hall lemmatizes the noun under `wapen` 'weapon' and also preserves unbroken
 forms in compounds and related spellings
 [@BrightCassidyRingler1971, 29; @ClarkHall1960, 355].
 
 ### Development to Old English
 
-Northwest Germanic lowering gives `wǣpn`, and loss of the final nasal vowel leaves the unbroken cluster word-finally. The selected target is the attested unbroken form `wǣpn`.
+Northwest Germanic lowering gives `wǣpn` 'weapon', and loss of the final nasal vowel leaves the unbroken cluster word-finally. The selected target is the attested unbroken form `wǣpn` 'weapon'.
 
 ### Form note
 
-The ordinary late West Saxon simplex headword is `wǣpen`, but Campbell's
-noun-class discussion also preserves unbroken `wépn` beside broken
-`wépen`-type forms [@Campbell1959, 150; @Campbell1959, 226–227]. `wǣpnes`
+The ordinary late West Saxon simplex headword is `wǣpen` 'weapon', but Campbell's
+noun-class discussion also preserves unbroken `wépn` 'weapon' beside broken
+`wépen` 'weapon'-type forms [@Campbell1959, 150; @Campbell1959, 226–227]. `wǣpnes` 'weapon'
 remains the regular unbroken oblique comparator
 [@BrightCassidyRingler1971, 29; @ClarkHall1960, 355].

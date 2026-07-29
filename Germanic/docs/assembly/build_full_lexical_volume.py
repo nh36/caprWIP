@@ -1032,6 +1032,9 @@ def assert_print_regressions(text: str) -> None:
     expected_breeches_phrases = (
         "PNWGmc _\\*brokiz_ > _\\*breeci_ > OE _bréc_",
         "northwest Germanic _\\*brokiz_ > _\\*breeci_ > OE _bréc_",
+        # Accepted .recon-based rendering (accented, macron ō):
+        "PNWGmc [brōkiz]{.recon}",
+        "PNWGmc [brokiz]{.recon}",
     )
     if "### breeches — OE _brēċ_" in text and not any(
         phrase in text for phrase in expected_breeches_phrases

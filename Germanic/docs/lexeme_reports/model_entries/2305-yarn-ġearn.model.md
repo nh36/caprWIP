@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain `*garna > *geern > *gearn > OE gearn` [@Kroonen2013; @RingeTaylor2014, 220]. The selected input [gárną]{.recon} ‘yarn’ is the nominal citation form used here, while oblique [garnăn]{.recon} ‘yarn’ belongs only to comparative background.
+Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain [garna]{.recon} 'yarn' > [geern]{.recon} 'yarn' > [gearn]{.recon} 'yarn' > OE `gearn` 'yarn' [@Kroonen2013; @RingeTaylor2014, 220]. The selected input [gárną]{.recon} ‘yarn’ is the nominal citation form used here, while oblique [garnăn]{.recon} ‘yarn’ belongs only to comparative background.
 
 ### Old English evidence
 
@@ -26,8 +26,8 @@ Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses
 
 ### Development to Old English
 
-From [gárną]{.recon} ‘yarn’, brightening and breaking before `rn` yield `gearn`; palatalization of initial `g` before the resulting front-vocalic sequence gives normalized `ġearn`. The derivation is regular.
+From [gárną]{.recon} ‘yarn’, brightening and breaking before `rn` yield `gearn` 'yarn'; palatalization of initial `g` before the resulting front-vocalic sequence gives normalized `ġearn` 'yarn'. The derivation is regular.
 
 ### Form note
 
-Dictionary `gearn` and normalized `ġearn` refer to the same noun. The comparative stem `*garna-` and oblique [garnăn]{.recon} ‘yarn’ do not replace the selected input [gárną]{.recon} ‘yarn’.
+Dictionary `gearn` 'yarn' and normalized `ġearn` 'yarn' refer to the same noun. The comparative stem `*garna-` and oblique [garnăn]{.recon} ‘yarn’ do not replace the selected input [gárną]{.recon} ‘yarn’.

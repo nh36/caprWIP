@@ -30,14 +30,14 @@ the masculine form.
 
 ### Old English evidence
 
-Campbell gives masculine nominative-accusative **[`þrīe`]{.iv lang=oe sort=thrie role=target_form}**, feminine and neuter
-nominative-accusative **[`þrēo`]{.iv lang=oe sort=threo role=comparison_form}**, genitive **[`þrēora`]{.iv lang=oe sort=threora role=comparison_form}**, and dative
-**[`þrim`]{.iv lang=oe sort=thrim role=comparison_form}**, adding that late West Saxon has **`þry, þri[* for **[]{.recon} ‘three’þrīe`]{.iv lang=oe sort=thrie role=target_form}**
-[@Campbell1959, §683]. Fulk presents the same masculine **`þrīe`** beside the
+Campbell gives masculine nominative-accusative [`þrīe`]{.iv lang=oe sort=thrie role=target_form} 'three', feminine and neuter
+nominative-accusative [`þrēo`]{.iv lang=oe sort=threo role=comparison_form} 'three', genitive [`þrēora`]{.iv lang=oe sort=threora role=comparison_form} 'three', and dative
+[`þrim`]{.iv lang=oe sort=thrim role=comparison_form} 'three', adding that late West Saxon has `þry` 'three' / `þri` 'three' for masculine nominative-accusative beside
+[`þrīe`]{.iv lang=oe sort=thrie role=target_form} 'three' [@Campbell1959, §683]. Fulk presents the same masculine `þrīe` 'three' beside the
 wider numeral paradigm [@Fulk2018, §10.1].
 
-The target is therefore an attested Old English paradigm cell. **`þrī[*
-belongs to later reduction or headword-style citation, whereas **]{.recon} ‘three’þrīe`** is
+The target is therefore an attested Old English paradigm cell. `þrī` 'three' /
+`þry` 'three' belongs to later reduction or headword-style citation, whereas [`þrīe`]{.iv lang=oe sort=thrie role=target_form} 'three' is
 the conservative masculine nominative-accusative form.
 
 ### Development to Old English

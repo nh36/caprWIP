@@ -19,7 +19,7 @@ DERIVATION_CLASS: attested_variant
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the resin word as [kwedu-2]{.recon} ‘cud’ and gives Old English
-variants [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form}, [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}, and [`c(w)udu`]{.iv lang=oe display=c(w)udu sort=cwudu role=comparison_form} [@Kroonen2013, 355]. Orel likewise
+variants [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} 'cud', [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud', and [`c(w)udu`]{.iv lang=oe display=c(w)udu sort=cwudu role=comparison_form} 'cud' [@Kroonen2013, 355]. Orel likewise
 lists [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} under the cognate set [@Orel2003, 266]. The selected input
 [[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input}
 therefore represents the older e-grade, voiced-dental form behind the chosen
@@ -28,8 +28,8 @@ variant [`cwedu`]{.iv lang=oe sort=cwedu role=target_form}.
 ### Old English evidence
 
 The Old English word survives in a wider variant set than one dictionary
-headword suggests. Ringe and Taylor discuss [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} > [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} > [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} and also
-note late West Saxon [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form}, [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form}, and [`cudu`]{.iv lang=oe sort=cudu role=comparison_form}
+headword suggests. Ringe and Taylor discuss [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} 'cud' > [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud' > [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud' and also
+note late West Saxon [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud'; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud', [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud', and [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud'
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested `cwedu` is treated here
 as the
 conservative variant within that set.

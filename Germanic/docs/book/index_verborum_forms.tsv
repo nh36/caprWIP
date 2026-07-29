@@ -882,6 +882,8 @@ oe	þrēo	þrēo	threo	comparison_form	explicit_tag	Germanic/docs/lexeme_reports
 oe	þrēora	þrēora	threora	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:34	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
 oe	þrēora	þrēora	threora	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:57	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
 oe	þrīe	þrīe	thrie	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:33	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
+oe	þrīe	þrīe	thrie	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:36	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
+oe	þrīe	þrīe	thrie	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:40	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
 oe	þrīe	þrīe	thrie	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:54	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
 oe	þrīe	þrīe	thrie	target_form	lexical_heading	three — OE þrīe	manifest	auto
 oe	þrim	þrim	thrim	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:35	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
@@ -1986,7 +1988,7 @@ german	beide	beide	beide	comparison_form	explicit_tag	Germanic/docs/lexeme_repor
 german	beide	beide	beide	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 german	Nacken	Nacken	nacken	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:56	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md	auto
 german	Nacken	Nacken	nacken	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md	auto
-german	sondern	sondern	sondern	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21	broad_prose_curated	override
+german	sondern	sondern	sondern	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:23	broad_prose_curated	override
 german	stillen	stillen	stillen	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21	broad_prose_curated	override
 german	weinen	weinen	weinen	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:22	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
 modeng	both	both	both	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto

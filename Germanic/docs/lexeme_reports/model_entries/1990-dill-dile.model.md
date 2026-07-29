@@ -19,8 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Comparative evidence preserves both an i-stem and a ja-stem formation, with Old
-English [`dile`]{.iv lang=oe sort=dile role=target_form} on one side and continental forms such as Old Saxon [`dilli`]{.iv lang=os sort=dilli role=comparison_form} and
-Old High German [`tilli`]{.iv lang=ohg sort=tilli role=comparison_form} on the other [@Fulk2018, 170]. The selected input
+English [`dile`]{.iv lang=oe sort=dile role=target_form} 'dill' on one side and continental forms such as Old Saxon [`dilli`]{.iv lang=os sort=dilli role=comparison_form} 'dill' and
+Old High German [`tilli`]{.iv lang=ohg sort=tilli role=comparison_form} 'dill' on the other [@Fulk2018, 170]. The selected input
 [[déliz]{.recon} ‘dill’]{.iv lang=pgmc sort=deliz role=selected_input} therefore represents the i-stem side of the paradigm,
 whereas the citation label [[déljaz]{.recon} ‘dill’]{.iv lang=pgmc sort=deljaz role=source_protoform} is a broader comparative headword.
 

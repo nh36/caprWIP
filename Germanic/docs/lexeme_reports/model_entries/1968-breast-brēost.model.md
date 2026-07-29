@@ -19,9 +19,9 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The word family shows two related but distinct Proto-Germanic formations. The
-root noun [`*brust-`]{.iv lang=pgmc sort=brust role=source_protoform} lies behind forms such as Gothic [`brusts`]{.iv lang=goth sort=brusts role=comparison_form}, whereas Old
-English [`brēost`]{.iv lang=oe sort=breost role=target_form} belongs to a thematic formation [`*breusta-`]{.iv lang=pgmc sort=breusta role=source_protoform}, alongside Old
-Norse [`brjóst`]{.iv lang=on sort=brjost role=comparison_form} and Old Saxon [`briost`]{.iv lang=os sort=briost role=comparison_form} [@Kroonen2013, 114; @Orel2003, 95;
+root noun [`*brust-`]{.iv lang=pgmc sort=brust role=source_protoform} lies behind forms such as Gothic [`brusts`]{.iv lang=goth sort=brusts role=comparison_form} 'breast', whereas Old
+English [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast' belongs to a thematic formation [`*breusta-`]{.iv lang=pgmc sort=breusta role=source_protoform}, alongside Old
+Norse [`brjóst`]{.iv lang=on sort=brjost role=comparison_form} 'breast' and Old Saxon [`briost`]{.iv lang=os sort=briost role=comparison_form} 'breast' [@Kroonen2013, 114; @Orel2003, 95;
 @RingeTaylor2014, 43].
 
 The selected input [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input} therefore differs from the citation label
@@ -31,7 +31,7 @@ themselves.
 
 ### Old English evidence
 
-Clark Hall records the noun as [`brēost`]{.iv lang=oe sort=breost role=target_form} / [`breóst`]{.iv lang=oe sort=breost role=comparison_form}
+Clark Hall records the noun as [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast' / [`breóst`]{.iv lang=oe sort=breost role=comparison_form} 'breast'
 [@ClarkHall1960, 65]. The form is an established Old English
 lexeme, not a reconstructed target assembled from comparative evidence alone.
 

@@ -28,13 +28,13 @@ derivation.
 ### Old English evidence
 
 The Old English noun itself is secure. Clark Hall and Bosworth-Toller both give
-`cræft` as the headword [@ClarkHall1960, 19; @BosworthToller1898, 145].
+`cræft` 'craft' as the headword [@ClarkHall1960, 19; @BosworthToller1898, 145].
 
 ### Development to Old English
 
 The comparison is between possible pre-Old-English inputs. The i-stem
 comparator [kráftiz]{.recon} ‘craft’ gives `creft`, while the u-stem comparator [kráftuz]{.recon} ‘craft’
-gives `craft`. The a-stem-shaped input [kráftaz]{.recon} ‘craft’ yields `cræft` and is
+gives `craft`. The a-stem-shaped input [kráftaz]{.recon} 'craft' yields `cræft` 'craft' and is
 therefore the form used for the Old English derivation. This does not require
 treating the comparative dictionaries as identical; it shows the narrower point
 that the Old English derivation needs a pre-Old-English form without the
