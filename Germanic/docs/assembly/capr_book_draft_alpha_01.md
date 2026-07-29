@@ -2530,7 +2530,7 @@ Old English form: _nǣdre_
 #### Reconstruction and comparative evidence
 
 Kroonen distinguishes the masculine snake word [_\*nadra-_]{.iv lang=pgmc sort=nadra role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:98"} from a feminine
-ablauting formation [_\*nēdrōn-_]{.iv lang=pgmc sort=nedron role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:99"}, and gives Old English [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:99"}, [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:99"} under the
+ablauting formation [_\*nēdrōn-_]{.iv lang=pgmc sort=nedron role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:99"}, and gives Old English [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:99"} 'adder', [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:99"} 'adder' under the
 latter [@Kroonen2013, 426]. Orel likewise points from the masculine entry to a
 feminine [[nēdrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nedron role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:101"} ~ [[nadrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nadron role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:101"} type [@Orel2003, 325].
 
@@ -2539,16 +2539,16 @@ comparative reconstruction that specifically underlies the Old English noun.
 
 #### Old English evidence
 
-The Old English word is securely represented by [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:108"}, with [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:108"} as a
+The Old English word is securely represented by [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:108"} 'adder', with [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:108"} 'adder' as a
 secondary variant. Clark Hall cross-references [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:109"} to [_nædre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:109"}, and Fulk
 treats [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:110"} as the later geminated form beside the older base [@ClarkHall1960,
 225; @Fulk2018, 149].
 
 #### Development to Old English
 
-From [[nḗdrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nedron role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:115"}, the stressed long mid vowel develops to Old English [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:115"}, and
+From [[nḗdrōn]{.recon} 'adder']{.iv lang=pgmc sort=nedron role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:115"}, the stressed long mid vowel develops to Old English [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:115"} 'adder', and
 the weak feminine ending remains as final _-e_, giving [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:116"}. The doubled
-consonant of [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:117"} is secondary and does not alter the inherited base form.
+consonant of [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:117"} 'adder' is secondary and does not alter the inherited base form.
 
 ### bake — OE _bacan_
 
@@ -2670,15 +2670,15 @@ Old English form: _bōc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the beech noun as _\*bōk(j)ō-_ and cites Old English _boc_, [_bēce_]{.iv lang=oe sort=bece source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:231"} among its reflexes [@Kroonen2013]. The derivational input [bōkō]{.recon} ‘beech’ is the nominative-singular shape of that family, which is the relevant comparison form here.
+Kroonen gives the beech noun as _\*bōk(j)ō-_ and cites Old English _boc_ 'beech', [_bēce_]{.iv lang=oe sort=bece source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:231"} 'beech' among its reflexes [@Kroonen2013]. The derivational input [bōkō]{.recon} ‘beech’ is the nominative-singular shape of that family, which is the relevant comparison form here.
 
 #### Old English evidence
 
-Kroonen's Old English evidence already separates the paradigm material: _boc_ as the nominative form and [_bēce_]{.iv lang=oe sort=bece source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:235"} as an oblique form [@Kroonen2013]. The relevant comparator is therefore _bōc_; [_bēċe_]{.iv lang=oe sort=bece source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:235"} remains related paradigm evidence rather than the form chosen for this comparison.
+Kroonen's Old English evidence already separates the paradigm material: _boc_ 'beech' as the nominative form and [_bēce_]{.iv lang=oe sort=bece source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:235"} 'beech' as an oblique form [@Kroonen2013]. The relevant comparator is therefore _bōc_ 'beech'; [_bēċe_]{.iv lang=oe sort=bece source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:235"} 'beech' remains related paradigm evidence rather than the form chosen for this comparison.
 
 #### Development to Old English
 
-With nominative input [bōkō]{.recon} ‘beech’, the development is compact. Northwest Germanic final long _ō_ raises to _u_, and later high-vowel apocope leaves _bōc_. The regular comparison is therefore _\*bōkō_ > _bōc_.
+With nominative input [bōkō]{.recon} 'beech', the development is compact. Northwest Germanic final long _ō_ raises to _u_, and later high-vowel apocope leaves _bōc_ 'beech'. The regular comparison is therefore _\*bōkō_ > _bōc_.
 
 ### begin — OE _beġinnan_
 
@@ -2739,7 +2739,7 @@ The verb is modeled here as inherited [[bigínnaną]{.recon} ‘begin’]{.iv la
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall lemmatize the verb as [_be-ginnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:297"} / [_beginnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:297"} [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-_g_ dictionary spellings support the same verb that appears here in normalized form as [_beġinnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:297"}.
+Bosworth-Toller and Clark Hall lemmatize the verb as [_be-ginnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:297"} 'begin' / [_beginnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:297"} 'begin' [@BosworthToller1898, 84; @ClarkHall1960]. Those plain-_g_ dictionary spellings support the same verb that appears here in normalized form as [_beġinnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:297"} 'begin'.
 
 #### Development note
 
@@ -2747,7 +2747,7 @@ The prefix deserves separate notice. Ringe and Taylor explicitly cite _bi- > be-
 
 #### Development to Old English
 
-From [[bigínnaną]{.recon} ‘begin’]{.iv lang=pgmc sort=biginnana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:305"}, heavy-syllable nasal apocope yields [bigínnan]{.recon} ‘begin’. Intervocalic _\*g_ between front vowels then palatalizes to _ġ_, and the unstressed prefix reduces _bi-_ to _be-_, giving [_beġinnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:305"}.
+From [[bigínnaną]{.recon} 'begin']{.iv lang=pgmc sort=biginnana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:305"}, heavy-syllable nasal apocope yields [bigínnan]{.recon} 'begin'. Intervocalic _\*g_ between front vowels then palatalizes to _ġ_, and the unstressed prefix reduces _bi-_ to _be-_, giving [_beġinnan_]{.iv lang=oe sort=beginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:305"} 'begin'.
 
 ### bier — OE _bǣr_
 
@@ -2803,15 +2803,15 @@ Old English form: _bǣr_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as [_\*bērō-_]{.iv lang=pgmc sort=bero source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} f. 'bier' and cites Old English [_bar_]{.iv lang=oe sort=bar source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"}, [_bær_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} among the reflexes [@Kroonen2013, 717]. The derivational input [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as [_\*bērō-_]{.iv lang=pgmc sort=bero source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} f. 'bier' and cites Old English [_bar_]{.iv lang=oe sort=bar source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} 'bier', [_bær_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} 'bier' among the reflexes [@Kroonen2013, 717]. The derivational input [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:358"} is the same lexeme in the accent notation used here.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:362"}, and Kroonen also records [_bar_]{.iv lang=oe sort=bar source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:362"} beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [_bǣr_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:362"} is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as [_bær_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:362"} 'bier', and Kroonen also records [_bar_]{.iv lang=oe sort=bar source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:362"} 'bier' beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [_bǣr_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:362"} is therefore a normalized long-vowel spelling of the same noun.
 
 #### Source note
 
-Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:366"} and [_bar_]{.iv lang=oe sort=bar source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:366"}. The normalized target [_bǣr_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:366"} represents the same long vowel [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:366"} 'bier' and [_bar_]{.iv lang=oe sort=bar source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:366"} 'bier'. The normalized target [_bǣr_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:366"} represents the same long vowel [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 #### Development to Old English
 
@@ -2875,7 +2875,7 @@ Kroonen cites the noun under stem-level _\*burdi-_ and gives Old English _(ge-)b
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form _gebyrd_ is also well established in the tradition: Kroonen lists _(ge-)byrd_, Bosworth-Toller has a separate _ge-byrd_ entry, and Campbell cites _gebyrd_ and _gebyrdu_ in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
+Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form _gebyrd_ 'birth' is also well established in the tradition: Kroonen lists _(ge-)byrd_, Bosworth-Toller has a separate _ge-byrd_ entry, and Campbell cites _gebyrd_ and _gebyrdu_ in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
 
 #### Form note
 
@@ -2938,11 +2938,11 @@ Old English form: _bān_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun as [_\*baina-_]{.iv lang=pgmc sort=baina source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:487"}, and Orel gives the same lexeme under [[bainan]{.recon} ‘bone’]{.iv lang=pgmc sort=bainan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:487"} [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:487"}.
+Kroonen cites the noun as [_\*baina-_]{.iv lang=pgmc sort=baina source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:487"}, and Orel gives the same lexeme under [[bainan]{.recon} ‘bone’]{.iv lang=pgmc sort=bainan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:487"} [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:487"} 'bone'.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:491"} as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:491"} from oblique [_bāne_]{.iv lang=oe sort=bane source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:491"} [@BrightCassidyRingler1971].
+Clark Hall and Bosworth-Toller record [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:491"} 'bone' as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898]. Bright's glossary also distinguishes citation-form [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:491"} 'bone' from oblique [_bāne_]{.iv lang=oe sort=bane source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:491"} 'bone' [@BrightCassidyRingler1971].
 
 #### Source note
 
@@ -3004,37 +3004,37 @@ Old English form: _bū_
 #### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under _\*ba-_ and gives the inherited
-paradigm [bai, *bans, *bōz/*bōns, *bō]{.recon} ‘both’, with Old English [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:550"}, [_bā_]{.iv lang=oe sort=ba role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:550"}, and
-neuter [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:551"} [@Kroonen2013, 47]. For the present entry, the relevant inherited
-form is the unextended neuter dual [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:552"}.
+paradigm [bai, *bans, *bōz/*bōns, *bō]{.recon} 'both', with Old English [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:550"} 'both', [_bā_]{.iv lang=oe sort=ba role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:550"} 'both', and
+neuter [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:551"} 'both' [@Kroonen2013, 47]. For the present entry, the relevant inherited
+form is the unextended neuter dual [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:552"} 'both'.
 
-The older explanation of [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:554"} derives it from _\*bō-jen-_, and Orel still
-gives OE _bezen_ (< _\*bō-jenō)_ beside _ON_ [_báðir_]{.iv lang=on sort=badir role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:555"}, _OFris_ [_bēthe_]{.iv lang=ofris sort=bethe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:555"}, _OS_ [_be-thia_]{.iv lang=os sort=bethia role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:555"},
-and _OHG_ [_bēde_]{.iv lang=ohg sort=bede role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:556"} [@Orel2003, 65]. Fulk reports that explanation
+The older explanation of [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:554"} 'both' derives it from _\*bō-jen-_, and Orel still
+gives OE _bezen_ (< _\*bō-jenō)_ beside ON [_báðir_]{.iv lang=on sort=badir role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:555"} 'both', OFris [_bēthe_]{.iv lang=ofris sort=bethe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:555"} 'both', OS [_be-thia_]{.iv lang=os sort=bethia role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:555"} 'both',
+and OHG [_bēde_]{.iv lang=ohg sort=bede role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:556"} 'both' [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a _\*bō-þ-_ analysis instead
 [@Fulk2018, §10.1]. That debate concerns [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:558"} and the extended forms
-behind Modern English [_both_]{.iv lang=modeng sort=both role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:559"}, German [_beide_]{.iv lang=german sort=beide role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:559"}, and Dutch [_beide_]{.iv lang=dutch sort=beide role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:559"}; it does not
-displace the inherited neuter [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:560"} > [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:560"} treated here.
+behind Modern English [_both_]{.iv lang=modeng sort=both role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:559"} 'both', German [_beide_]{.iv lang=german sort=beide role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:559"} 'both', and Dutch [_beide_]{.iv lang=dutch sort=beide role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:559"} 'both'; it does not
+displace the inherited neuter [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:560"} 'both' > [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:560"} 'both' treated here.
 
 #### Old English evidence
 
 The Old English dual paradigm is well established. Brunner gives masculine
-[_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"}, feminine [_bā_]{.iv lang=oe sort=ba role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"}, and neuter [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} beside _bā_, with compounds such as
-_bā_ _twā_, _bū_ _tū_, and _bām_ _twām_ [@SieversBrunner1965, §324 Anm. 2].
+[_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} 'both', feminine [_bā_]{.iv lang=oe sort=ba role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} 'both', and neuter [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} 'both' beside _bā_, with compounds such as
+_bā_ _twā_ 'both', _bū_ _tū_ 'both', and _bām_ _twām_ 'both' [@SieversBrunner1965, §324 Anm. 2].
 Campbell and Fulk present the same basic pattern: masculine [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:567"}, feminine
-_bā_, neuter _bā_, _bū_, genitive _bēġra_, _bēġ(e)a_, and dative [_bǣm_]{.iv lang=oe sort=baem role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:568"}
+_bā_, neuter _bā_, _bū_, genitive _bēġra_ 'both', _bēġ(e)a_, and dative [_bǣm_]{.iv lang=oe sort=baem role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:568"} 'both'
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
-[_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:571"} is therefore an attested neuter dual form, not a reconstruction. It is the
-cleanest target for this entry because [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:572"} belongs to the historically more
-contested _\*bō-jen-_ / analogical zone, while _bā_ remains a partner form
+[_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:571"} 'both' is therefore an attested neuter dual form, not a reconstruction. It is the
+cleanest target for this entry because [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:572"} 'both' belongs to the historically more
+contested _\*bō-jen-_ / analogical zone, while _bā_ 'both' remains a partner form
 within the dual paradigm rather than the most straightforward monosyllabic
 comparison.
 
 #### Development to Old English
 
-[_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:579"} is a stressed monosyllabic form. Campbell cites _cū_, _hū_, _tū_, and
-[_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:580"} as examples of final accented _ō_ > _ū_ in the West Germanic stage leading
+[_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:579"} 'both' is a stressed monosyllabic form. Campbell cites _cū_ 'cow', _hū_ 'how', _tū_ 'two', and
+[_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:580"} 'both' as examples of final accented _ō_ > _ū_ in the West Germanic stage leading
 to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: Auslautendes _ō_ erscheint als û in _bū_ ... cu ... _hū_, _tū_
 [@SieversBrunner1965, §69].
@@ -3836,7 +3836,7 @@ As a base-form comparison, the simplex infinitive is _lēosan_, while the Englis
 
 #### Development to Old English
 
-From [léusaną]{.recon} ‘forlorn’, Old English diphthong leveling gives [lēosaną]{.recon} ‘forlorn’, and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014]. The prefixed forms follow the same verbal base with added _for-_.
+From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną]{.recon} 'lose', and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014]. The prefixed forms follow the same verbal base with added _for-_.
 
 ### gang — OE _gang_
 

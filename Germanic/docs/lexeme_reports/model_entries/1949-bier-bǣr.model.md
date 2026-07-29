@@ -18,15 +18,15 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as [`*bērō-`]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [`bar`]{.iv lang=oe sort=bar}, [`bær`]{.iv lang=oe sort=baer} among the reflexes [@Kroonen2013, 717]. The selected input [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero} is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as [`*bērō-`]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [`bar`]{.iv lang=oe sort=bar} 'bier', [`bær`]{.iv lang=oe sort=baer} 'bier' among the reflexes [@Kroonen2013, 717]. The selected input [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero} is the same lexeme in the accent notation used here.
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller lemmatize the noun as [`bær`]{.iv lang=oe sort=baer}, and Kroonen also records [`bar`]{.iv lang=oe sort=bar} beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [`bǣr`]{.iv lang=oe sort=baer} is therefore a normalized long-vowel spelling of the same noun.
+Clark Hall and Bosworth-Toller lemmatize the noun as [`bær`]{.iv lang=oe sort=baer} 'bier', and Kroonen also records [`bar`]{.iv lang=oe sort=bar} 'bier' beside it [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717]. The target [`bǣr`]{.iv lang=oe sort=baer} is therefore a normalized long-vowel spelling of the same noun.
 
 ### Source note
 
-Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} and [`bar`]{.iv lang=oe sort=bar}. The normalized target [`bǣr`]{.iv lang=oe sort=baer} represents the same long vowel [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
+Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} 'bier' and [`bar`]{.iv lang=oe sort=bar} 'bier'. The normalized target [`bǣr`]{.iv lang=oe sort=baer} represents the same long vowel [@ClarkHall1960; @BosworthToller1898, 73; @Kroonen2013, 717].
 
 ### Development to Old English
 

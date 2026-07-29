@@ -18,12 +18,12 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the beech noun as `*bōk(j)ō-` and cites Old English `boc`, [`bēce`]{.iv lang=oe sort=bece} among its reflexes [@Kroonen2013]. The selected input [bōkō]{.recon} ‘beech’ is the nominative-singular shape of that family, which is the relevant comparison form here.
+Kroonen gives the beech noun as `*bōk(j)ō-` and cites Old English `boc` 'beech', [`bēce`]{.iv lang=oe sort=bece} 'beech' among its reflexes [@Kroonen2013]. The selected input [bōkō]{.recon} ‘beech’ is the nominative-singular shape of that family, which is the relevant comparison form here.
 
 ### Old English evidence
 
-Kroonen's Old English evidence already separates the paradigm material: `boc` as the nominative form and [`bēce`]{.iv lang=oe sort=bece} as an oblique form [@Kroonen2013]. The relevant comparator is therefore `bōc`; [`bēċe`]{.iv lang=oe sort=bece} remains related paradigm evidence rather than the form chosen for this comparison.
+Kroonen's Old English evidence already separates the paradigm material: `boc` 'beech' as the nominative form and [`bēce`]{.iv lang=oe sort=bece} 'beech' as an oblique form [@Kroonen2013]. The relevant comparator is therefore `bōc` 'beech'; [`bēċe`]{.iv lang=oe sort=bece} 'beech' remains related paradigm evidence rather than the form chosen for this comparison.
 
 ### Development to Old English
 
-With nominative input [bōkō]{.recon} ‘beech’, the development is compact. Northwest Germanic final long `ō` raises to `u`, and later high-vowel apocope leaves `bōc`. The regular comparison is therefore `*bōkō > bōc`.
+With nominative input [bōkō]{.recon} 'beech', the development is compact. Northwest Germanic final long `ō` raises to `u`, and later high-vowel apocope leaves `bōc` 'beech'. The regular comparison is therefore `*bōkō > bōc`.

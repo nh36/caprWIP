@@ -23,13 +23,13 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 481
-- Broad-prose notation / compound expressions: 548
-- Broad-prose evidence suggestions: 232
+- Already indexed in same entry: 483
+- Broad-prose notation / compound expressions: 545
+- Broad-prose evidence suggestions: 233
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
-- Ordinary prose/gloss ignored: 28
+- Ordinary prose/gloss ignored: 27
 - Orthographic/normalization variants: 15
 - Table semantic auto-promoted: 27
 - Table semantic suggestions: 18
@@ -210,6 +210,8 @@
 | `bora` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:27 | ### Old English evidence | same form already indexed in this entry |
 | `boraþ` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:27 | ### Old English evidence | same form already indexed in this entry |
 | `borian` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:27 | ### Old English evidence | same form already indexed in this entry |
+| `both` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `both` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `botm` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:22 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `botm` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:33 | ### Old English evidence | same form already indexed in this entry |
 | `botm` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:34 | ### Old English evidence | same form already indexed in this entry |
@@ -747,7 +749,7 @@
 | `*báugijaną > bīeġan` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29 | notation or compound expression |
 | `*baugjan-` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21 | notation or compound expression |
 | `be-` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 | notation or compound expression |
-| `bēġra, bēġ(e)a` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | notation or compound expression |
+| `bēġ(e)a` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | notation or compound expression |
 | `** beside **` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:27 | notation or compound expression |
 | `bi-` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 | notation or compound expression |
 | `bi- > be-` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:29 | notation or compound expression |
@@ -1032,11 +1034,8 @@
 | `-o-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:29 | notation or compound expression |
 | `* occur where original *` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27 | notation or compound expression |
 | `OE bezen (< *bō-jenō` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | notation or compound expression |
-| `OHG` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28 | table metadata label |
 | `*-ōjan-` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:29 | notation or compound expression |
-| `ON` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | table metadata label |
 | `on ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:35 | notation or compound expression |
-| `OS` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | table metadata label |
 | `ō > ū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52 | notation or compound expression |
 | `PGmc *nēþlō, *nēdlō- 'needle' ... > OE nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | notation or compound expression |
 | `PNWGmc *brokiz > *breeci > OE bréc` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | notation or compound expression |
@@ -1239,6 +1238,7 @@
 | --- | --- | --- | --- | --- |
 | `and` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `ā-sundrian` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `bēġra` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bisceoprocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `breóstrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `cū` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:27 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -2111,7 +2111,6 @@
 | `material` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:28 | ordinary prose/gloss word |
 | `noun` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:28 | ordinary prose/gloss word |
 | `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:59 | formal rule label |
-| `OFris` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | ordinary prose/gloss word |
 | `paradigm-cell` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:46 | ordinary prose/gloss word |
 | `row` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | ordinary prose/gloss word |
 | `sea` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33 | ordinary prose/gloss word |

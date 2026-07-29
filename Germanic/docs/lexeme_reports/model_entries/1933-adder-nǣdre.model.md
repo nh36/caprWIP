@@ -19,7 +19,7 @@ DERIVATION_CLASS: regular
 ### Reconstruction and comparative evidence
 
 Kroonen distinguishes the masculine snake word [`*nadra-`]{.iv lang=pgmc sort=nadra role=source_protoform} from a feminine
-ablauting formation [`*nēdrōn-`]{.iv lang=pgmc sort=nedron role=source_protoform}, and gives Old English [`nǣdre`]{.iv lang=oe sort=naedre}, [`næddre`]{.iv lang=oe sort=naeddre} under the
+ablauting formation [`*nēdrōn-`]{.iv lang=pgmc sort=nedron role=source_protoform}, and gives Old English [`nǣdre`]{.iv lang=oe sort=naedre} 'adder', [`næddre`]{.iv lang=oe sort=naeddre} 'adder' under the
 latter [@Kroonen2013, 426]. Orel likewise points from the masculine entry to a
 feminine [[nēdrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nedron role=source_protoform} ~ [[nadrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nadron role=source_protoform} type [@Orel2003, 325].
 
@@ -28,13 +28,13 @@ comparative reconstruction that specifically underlies the Old English noun.
 
 ### Old English evidence
 
-The Old English word is securely represented by [`nǣdre`]{.iv lang=oe sort=naedre}, with [`næddre`]{.iv lang=oe sort=naeddre} as a
+The Old English word is securely represented by [`nǣdre`]{.iv lang=oe sort=naedre} 'adder', with [`næddre`]{.iv lang=oe sort=naeddre} 'adder' as a
 secondary variant. Clark Hall cross-references [`næddre`]{.iv lang=oe sort=naeddre} to [`nædre`]{.iv lang=oe sort=naedre}, and Fulk
 treats [`næddre`]{.iv lang=oe sort=naeddre} as the later geminated form beside the older base [@ClarkHall1960,
 225; @Fulk2018, 149].
 
 ### Development to Old English
 
-From [[nḗdrōn]{.recon} ‘adder’]{.iv lang=pgmc sort=nedron role=selected_input}, the stressed long mid vowel develops to Old English [`nǣdre`]{.iv lang=oe sort=naedre}, and
+From [[nḗdrōn]{.recon} 'adder']{.iv lang=pgmc sort=nedron role=selected_input}, the stressed long mid vowel develops to Old English [`nǣdre`]{.iv lang=oe sort=naedre} 'adder', and
 the weak feminine ending remains as final `-e`, giving [`nǣdre`]{.iv lang=oe sort=naedre}. The doubled
-consonant of [`næddre`]{.iv lang=oe sort=naeddre} is secondary and does not alter the inherited base form.
+consonant of [`næddre`]{.iv lang=oe sort=naeddre} 'adder' is secondary and does not alter the inherited base form.

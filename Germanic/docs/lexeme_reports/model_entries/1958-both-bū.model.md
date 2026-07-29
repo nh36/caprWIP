@@ -19,37 +19,37 @@ DERIVATION_CLASS: regular
 ### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under `*ba-` and gives the inherited
-paradigm [bai, *bans, *bōz/*bōns, *bō]{.recon} ‘both’, with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form}, [`bā`]{.iv lang=oe sort=ba role=comparison_form}, and
-neuter [`bū`]{.iv lang=oe sort=bu role=target_form} [@Kroonen2013, 47]. For the present entry, the relevant inherited
-form is the unextended neuter dual [`*bō`]{.iv lang=pgmc sort=bo role=selected_input}.
+paradigm [bai, *bans, *bōz/*bōns, *bō]{.recon} 'both', with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and
+neuter [`bū`]{.iv lang=oe sort=bu role=target_form} 'both' [@Kroonen2013, 47]. For the present entry, the relevant inherited
+form is the unextended neuter dual [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} 'both'.
 
-The older explanation of [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} derives it from `*bō-jen-`, and Orel still
-gives `OE bezen (< *bō-jenō)` beside `ON` [`báðir`]{.iv lang=on sort=badir role=comparison_form}, `OFris` [`bēthe`]{.iv lang=ofris sort=bethe role=comparison_form}, `OS` [`be-thia`]{.iv lang=os sort=bethia role=comparison_form},
-and `OHG` [`bēde`]{.iv lang=ohg sort=bede role=comparison_form} [@Orel2003, 65]. Fulk reports that explanation
+The older explanation of [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both' derives it from `*bō-jen-`, and Orel still
+gives `OE bezen (< *bō-jenō)` beside ON [`báðir`]{.iv lang=on sort=badir role=comparison_form} 'both', OFris [`bēthe`]{.iv lang=ofris sort=bethe role=comparison_form} 'both', OS [`be-thia`]{.iv lang=os sort=bethia role=comparison_form} 'both',
+and OHG [`bēde`]{.iv lang=ohg sort=bede role=comparison_form} 'both' [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a `*bō-þ-` analysis instead
 [@Fulk2018, §10.1]. That debate concerns [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} and the extended forms
-behind Modern English [`both`]{.iv lang=modeng sort=both role=comparison_form}, German [`beide`]{.iv lang=german sort=beide role=comparison_form}, and Dutch [`beide`]{.iv lang=dutch sort=beide role=comparison_form}; it does not
-displace the inherited neuter [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} > [`bū`]{.iv lang=oe sort=bu role=target_form} treated here.
+behind Modern English [`both`]{.iv lang=modeng sort=both role=comparison_form} 'both', German [`beide`]{.iv lang=german sort=beide role=comparison_form} 'both', and Dutch [`beide`]{.iv lang=dutch sort=beide role=comparison_form} 'both'; it does not
+displace the inherited neuter [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} 'both' > [`bū`]{.iv lang=oe sort=bu role=target_form} 'both' treated here.
 
 ### Old English evidence
 
 The Old English dual paradigm is well established. Brunner gives masculine
-[`bēġen`]{.iv lang=oe sort=begen role=comparison_form}, feminine [`bā`]{.iv lang=oe sort=ba role=comparison_form}, and neuter [`bū`]{.iv lang=oe sort=bu role=target_form} beside `bā`, with compounds such as
-`bā twā`, `bū tū`, and `bām twām` [@SieversBrunner1965, §324 Anm. 2].
+[`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', feminine [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and neuter [`bū`]{.iv lang=oe sort=bu role=target_form} 'both' beside `bā`, with compounds such as
+`bā twā` 'both', `bū tū` 'both', and `bām twām` 'both' [@SieversBrunner1965, §324 Anm. 2].
 Campbell and Fulk present the same basic pattern: masculine [`bēġen`]{.iv lang=oe sort=begen role=comparison_form}, feminine
-`bā`, neuter `bā, bū`, genitive `bēġra, bēġ(e)a`, and dative [`bǣm`]{.iv lang=oe sort=baem role=comparison_form}
+`bā`, neuter `bā, bū`, genitive `bēġra` 'both', `bēġ(e)a`, and dative [`bǣm`]{.iv lang=oe sort=baem role=comparison_form} 'both'
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
-[`bū`]{.iv lang=oe sort=bu role=target_form} is therefore an attested neuter dual form, not a reconstruction. It is the
-cleanest target for this entry because [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} belongs to the historically more
-contested `*bō-jen-` / analogical zone, while `bā` remains a partner form
+[`bū`]{.iv lang=oe sort=bu role=target_form} 'both' is therefore an attested neuter dual form, not a reconstruction. It is the
+cleanest target for this entry because [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both' belongs to the historically more
+contested `*bō-jen-` / analogical zone, while `bā` 'both' remains a partner form
 within the dual paradigm rather than the most straightforward monosyllabic
 comparison.
 
 ### Development to Old English
 
-[`*bō`]{.iv lang=pgmc sort=bo role=selected_input} is a stressed monosyllabic form. Campbell cites `cū`, `hū`, `tū`, and
-[`bū`]{.iv lang=oe sort=bu role=target_form} as examples of final accented `ō > ū` in the West Germanic stage leading
+[`*bō`]{.iv lang=pgmc sort=bo role=selected_input} 'both' is a stressed monosyllabic form. Campbell cites `cū` 'cow', `hū` 'how', `tū` 'two', and
+[`bū`]{.iv lang=oe sort=bu role=target_form} 'both' as examples of final accented `ō > ū` in the West Germanic stage leading
 to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: `Auslautendes ō erscheint als û in bū ... cu ... hū, tū`
 [@SieversBrunner1965, §69].
