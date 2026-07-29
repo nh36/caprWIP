@@ -29,8 +29,8 @@ family label and the OE-facing input are therefore related but not identical.
 ### Old English evidence
 
 Bosworth-Toller records `hlihhan` as the verb 'to laugh'
-[@BosworthToller1898, 551]. Clark Hall cross-references `hlæhan`,
-`hlehhan`, and `hlihhan` to `hliehhan` [@ClarkHall1960, 160-161]. Bright's
+[@BosworthToller1898, 551]. Clark Hall cross-references `hlæhan` 'laugh',
+`hlehhan` 'laugh', and `hlihhan` 'laugh' to `hliehhan` [@ClarkHall1960, 160-161]. Bright's
 glossary likewise gives `hlihhan (hliehhan, hlyhhan)`
 [@BrightCassidyRingler1971, 315]. The target of this entry is the West Saxon
 `hliehhan`.

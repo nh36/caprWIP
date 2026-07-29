@@ -1,8 +1,8 @@
 # Index verborum audit
 
-- Internal production occurrences: 1994
+- Internal production occurrences: 1996
 - Internal production unique forms: 977
-- Printed main-index occurrences: 1892
+- Printed main-index occurrences: 1894
 - Printed main-index unique forms: 955
 - Print-excluded occurrences: 102
 - Print-excluded unique forms: 82
@@ -24,8 +24,8 @@
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 488
-- Broad-prose notation / compound expressions: 507
-- Broad-prose evidence suggestions: 284
+- Broad-prose notation / compound expressions: 508
+- Broad-prose evidence suggestions: 287
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
@@ -47,7 +47,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 987 | 404 |
+| Old English | 989 | 404 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Pre-Old-English and model-internal forms | 12 | 10 |
@@ -156,7 +156,7 @@
 | target_form | 369 |
 | source_protoform | 331 |
 | selected_input | 534 |
-| comparison_form | 501 |
+| comparison_form | 503 |
 | regular_output | 90 |
 | evidence_form | 169 |
 
@@ -164,7 +164,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 897 | 392 |
+| Old English | 899 | 392 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
@@ -183,7 +183,7 @@
 | target_form | 369 |
 | source_protoform | 331 |
 | selected_input | 534 |
-| comparison_form | 497 |
+| comparison_form | 499 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason
@@ -807,7 +807,7 @@
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:46 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:46 | notation or compound expression |
 | `-e-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:29 | notation or compound expression |
-| `*-ē- / *-ai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:58 | notation or compound expression |
+| `*-ē- / *-ai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:57 | notation or compound expression |
 | `-es` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:46 | notation or compound expression |
 | `-eþ` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
 | `-eþ` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34 | notation or compound expression |
@@ -835,9 +835,11 @@
 | `for-` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:33 | notation or compound expression |
 | `*fōr ~ *fun-` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:21 | notation or compound expression |
 | `fu-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:40 | notation or compound expression |
+| `*fulgai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:26 | notation or compound expression |
 | `*fulgen-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:21 | notation or compound expression |
-| `*fulgija- / *fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:30 | notation or compound expression |
-| `*fulgija- / *fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:74 | notation or compound expression |
+| `*fulgija-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:26 | notation or compound expression |
+| `*fulgija- / *fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:29 | notation or compound expression |
+| `*fulgija- / *fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:73 | notation or compound expression |
 | `*fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:23 | notation or compound expression |
 | `*fu(w)eri` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23 | notation or compound expression |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 | intermediate or model-stage form in development chain |
@@ -946,7 +948,6 @@
 | `*lād-` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:29 | notation or compound expression |
 | `*laidjan-` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:21 | notation or compound expression |
 | `*laiman-` | Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:21 | notation or compound expression |
-| `leoht/liht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | notation or compound expression |
 | `leornian[* [@ClarkHall1960, 186]. Brunner, however, explicitly records **]{.recon} ‘learn (iptv.2sg)’leornian, nordh. auch liorna ‘learn (iptv.2sg)’leornian ‘learn (iptv.2sg)’io ‘learn (iptv.2sg)’eo ‘learn (iptv.2sg)’io` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27 | notation or compound expression |
 | `*lēosaną` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:33 | intermediate or model-stage form in development chain |
 | `*leusan-` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21 | notation or compound expression |
@@ -1224,6 +1225,7 @@
 | `flogen` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `flugon` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `folc` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `follow` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:26 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `full` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `fyrht` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `fyrhtan` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1279,10 +1281,12 @@
 | `*laidijaną` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*lappōn` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `leappan` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `leoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `lēoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
+| `liht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `lihtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `lihtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `līhtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -2124,7 +2128,7 @@
 | `form` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:28 | ordinary prose/gloss word |
 | `help` | Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:21 | ordinary prose/gloss word |
 | `line` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 | ordinary prose/gloss word |
-| `lowering` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:50 | ordinary prose/gloss word |
+| `lowering` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:49 | ordinary prose/gloss word |
 | `material` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:28 | ordinary prose/gloss word |
 | `noun` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:28 | ordinary prose/gloss word |
 | `OEIUmlaut` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:59 | formal rule label |
@@ -2287,7 +2291,7 @@ _None._
 | `*bugan-` | Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md:66 | notation or compound expression |
 | `cū(e), cȳ, cūs` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67 | notation or compound expression |
 | `*fōr ~ *fun-` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:62 | notation or compound expression |
-| `*fulgai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:70 | notation or compound expression |
+| `*fulgai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:69 | notation or compound expression |
 | `-ja-` | Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:61 | notation or compound expression |
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:57 | notation or compound expression |
 | `*sapi-` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:57 | notation or compound expression |
@@ -2435,12 +2439,12 @@ _None._
 | `io` | Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:43 |
 | `io` | Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:45 |
 | `is` | Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:40 |
-| `*j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:49 |
-| `*j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:51 |
+| `*j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:48 |
+| `*j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:50 |
 | `*j` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 |
 | `*j` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:45 |
-| `j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:56 |
+| `j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:55 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:29 |
@@ -2473,7 +2477,7 @@ _None._
 | `*ô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:49 |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:39 |
-| `o` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:50 |
+| `o` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:49 |
 | `o` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:29 |
 | `o` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:29 |
 | `o` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 |
@@ -2512,8 +2516,8 @@ _None._
 | `u` | Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:29 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md:33 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 |
-| `u` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:50 |
-| `u` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:52 |
+| `u` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:49 |
+| `u` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:51 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:28 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:41 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:52 |
@@ -2547,7 +2551,7 @@ _None._
 | `*w` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 |
 | `*warp` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 |
 | `y` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 |
-| `y` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:52 |
+| `y` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:51 |
 | `y` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:46 |
 | `ȳ` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:48 |
 | `ȳ` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44 |

@@ -29,17 +29,17 @@ than a dispute about the OE target itself.
 
 ### Old English evidence
 
-Old English dictionaries record the noun as `lām`, a neuter word for 'loam,
+Old English dictionaries record the noun as `lām` 'loam', a neuter word for 'loam,
 clay, mud' [@BosworthToller1898, 604; @ClarkHall1960, 196]. The target is an attested
 citation form rather than a reconstructed comparator.
 
-The relevant question is not whether `lām` is Old English, but which inherited
+The relevant question is not whether `lām` 'loam' is Old English, but which inherited
 formation best accounts for that attested neuter noun.
 
 ### Development to Old English
 
 From [láimą]{.recon} ‘loam’, regular monophthongization of `ai` and the later loss of the
-final nasal syllable yield `lām`. With that OE-facing input, the phonological
+final nasal syllable yield `lām` 'loam'. With that OE-facing input, the phonological
 development is straightforward.
 
 ### Class comparison

@@ -1,8 +1,8 @@
 # Index verborum print audit
 
-- Internal production occurrences: 1994
+- Internal production occurrences: 1996
 - Internal production unique forms: 977
-- Printed main occurrences: 1892
+- Printed main occurrences: 1894
 - Printed main unique forms: 955
 - Printed excluded occurrences: 102
 - Printed excluded unique forms: 82
@@ -17,7 +17,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 897 | 392 |
+| Old English | 899 | 392 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
@@ -36,7 +36,7 @@
 | target_form | 369 |
 | source_protoform | 331 |
 | selected_input | 534 |
-| comparison_form | 497 |
+| comparison_form | 499 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason

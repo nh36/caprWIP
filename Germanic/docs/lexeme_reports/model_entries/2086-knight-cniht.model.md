@@ -30,8 +30,8 @@ English development discussed below is based on [[knéxtaz]{.recon} ‘knight’
 
 ### Old English evidence
 
-Old English dictionaries record the noun as [`cniht`]{.iv lang=oe sort=cniht role=target_form} [@ClarkHall1960, 63;
-@BosworthToller1898, 71]. Campbell cites plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} among the broken
+Old English dictionaries record the noun as [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight' [@ClarkHall1960, 63;
+@BosworthToller1898, 71]. Campbell cites plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} 'knights' among the broken
 forms, showing the same vowel environment from another point in the paradigm
 [@Campbell1959, §146].
 
@@ -41,8 +41,8 @@ OE comparator is needed here.
 ### Development to Old English
 
 From [[knéxtaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knextaz role=selected_input}, the relevant Old English changes include breaking before the
-velar cluster and then the later reduction that yields [`cniht`]{.iv lang=oe sort=cniht role=target_form}. Campbell later
-notes the early West-Saxon alternation [`cniht`]{.iv lang=oe sort=cniht role=target_form} beside plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form}
+velar cluster and then the later reduction that yields [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight'. Campbell later
+notes the early West-Saxon alternation [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight' beside plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form}
 [@Campbell1959, §305]. Sievers-Brunner gives the same contrast as `cniht ...
 cneohtas` [@SieversBrunner1965, §122]. With that corrected input, the
 derivation is straightforward.

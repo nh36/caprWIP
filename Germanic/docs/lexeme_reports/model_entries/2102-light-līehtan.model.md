@@ -22,11 +22,11 @@ Fulk gives Proto-Germanic [liuxtijanan]{.recon} ‘light’ with Old English `l�
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller preserve the verb family under spellings such as `liehtan`, `lihtan`, and `līhtan`, distinct from the related noun `lēoht` and adjective `leoht/liht` [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller preserve the verb family under spellings such as `liehtan` 'illuminate', `lihtan` 'illuminate', and `līhtan` 'illuminate', distinct from the related noun `lēoht` 'light' and adjective `leoht` / `liht` 'light' [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 
-From [léuxtijaną]{.recon} ‘light’, the regular verbal line preserves `*xt`, passes through a West Saxon `liehtan` stage, and is represented here by normalized `līehtan`. The word treated in this entry is therefore the verb 'to light, illuminate', not the related noun from [leuxtą]{.recon} ‘light’ [@Fulk2018; @RingeTaylor2014].
+From [léuxtijaną]{.recon} 'light', the regular verbal line preserves `*xt`, passes through a West Saxon `liehtan` 'illuminate' stage, and is represented here by normalized `līehtan` 'illuminate'. The word treated in this entry is therefore the verb 'to light, illuminate', not the related noun from [leuxtą]{.recon} 'light' [@Fulk2018; @RingeTaylor2014].
 
 ### Dialect note
 

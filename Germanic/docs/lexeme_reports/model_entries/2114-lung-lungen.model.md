@@ -33,7 +33,7 @@ derivational. Old English `lungen` is not a direct reflex of the bare base noun
 
 Old English dictionaries record the noun as `lungen`, with inflected forms such
 as `lungenne` and `lungena` [@BosworthToller1898, 634]. Clark Hall also preserves a
-small family of compounds such as `lungenādl`, `lungensealf`, and `lungenwyrt`
+small family of compounds such as `lungenādl` 'lung-disease', `lungensealf`, and `lungenwyrt`
 [@ClarkHall1960, 191].
 
 The target is an attested Old English lexeme with its own paradigm, not a
