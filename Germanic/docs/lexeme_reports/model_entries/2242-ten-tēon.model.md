@@ -20,7 +20,7 @@ DERIVATION_CLASS: attested_variant
 
 [tēon]{.recon} ‘ten’ is the bare cardinal form. Fulk states that Old English `tien` 'ten' shows umlaut from the inflected forms, whereas the uninflected form without umlaut is reflected in `tēon` 'ten' [@Fulk2018, §10.2]. Brunner gives the same contrast more broadly: [tēon]{.recon} 'ten' develops from [tëhun]{.recon} 'ten', while West Saxon `tien` 'ten', `tȳn` 'ten' belong to a different, umlauted branch of the numeral history [@SieversBrunner1965, §§129.2, 129 Anm. 6, 234].
 
-The selected comparison form `tēon` therefore represents the bare cardinal's un-umlauted line, not the later umlauted simplex tradition.
+The selected comparison form `tēon` 'ten' therefore represents the bare cardinal's un-umlauted line, not the later umlauted simplex tradition.
 
 ### Old English evidence
 

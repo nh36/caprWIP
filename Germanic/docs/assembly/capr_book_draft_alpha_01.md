@@ -4974,7 +4974,7 @@ The derivational input already represents the later Germanic _hliđ-_ stage used
 
 #### Form note
 
-An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later _\*xlídą_ > _hlid_ 'lid' line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
+An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later [xlídą]{.recon} 'lid' > _hlid_ 'lid' line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
 
 ### light — OE _līehtan_
 
@@ -5664,7 +5664,7 @@ Bright lists [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source
 
 #### Development to Old English
 
-From [[skáwōjaną]{.recon} ‘show’]{.iv lang=pgmc sort=skawojana role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"}, Old English _aw_ before a following vowel yields _ēaw_, and _\*ō_ survives between _\*w_ and _\*j_ in the Class II suffix. The development therefore runs regularly to [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"} 'show', without the direct [aw+j]{.recon} 'show' problem seen in other verb types [@Campbell1959; @Orel2003].
+From [[skáwōjaną]{.recon} 'show']{.iv lang=pgmc sort=skawojana role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"}, the inherited _aw_ sequence before a following vowel develops into the _ēaw_ diphthong, and _\*ō_ survives between _\*w_ and _\*j_ in the Class II suffix. The development therefore runs regularly to [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"} 'show', without the direct [aw+j]{.recon} 'show' problem seen in other verb types [@Campbell1959; @Orel2003].
 
 #### Form note
 
@@ -6417,7 +6417,7 @@ Kroonen gives _\*þurna-_ 'thorn, briar', while Orel preserves the masculine pai
 
 #### Old English evidence
 
-Bright lists _þorn_, m. 'thorn', and Clark Hall likewise treats _þorn_ 'thorn' as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
+Bright lists _þorn_ 'thorn' (m.) and Clark Hall likewise treats _þorn_ 'thorn' as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
 
 #### Development to Old English
 
@@ -6969,7 +6969,7 @@ From [wégaz]{.recon} ‘way’, final _\*z_ is lost and the weak tail apocopate
 
 #### Form note
 
-Normalized _weġ_ 'way' and dictionary _weg_ 'way' represent the same noun. No Old English form _wē_ is supported in the checked evidence for 'way'.
+Normalized _weġ_ 'way' and dictionary _weg_ 'way' represent the same noun. No Old English form _wē_ 'we' is supported in the checked evidence for 'way'.
 
 ### weapon — OE _wǣpn_
 
@@ -7389,21 +7389,21 @@ variants [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form source_ref="Germa
 lists [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4736"} under the cognate set [@Orel2003, 266]. The derivational input
 [[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4737"}
 therefore represents the older e-grade, voiced-dental form behind the chosen
-variant [_cwedu_]{.iv lang=oe sort=cwedu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4739"}.
+variant [_cwedu_]{.iv lang=oe sort=cwedu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4739"} 'cud'.
 
 #### Old English evidence
 
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4744"} 'cud' > [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4744"} 'cud' > [_cudu_]{.iv lang=oe sort=cudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4744"} 'cud' and also
 note late West Saxon [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4745"} 'cud'; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4745"} 'cud', [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4745"} 'cud', and [_cudu_]{.iv lang=oe sort=cudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4745"} 'cud'
-[@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested _cwedu_ is treated here
+[@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested _cwedu_ 'cud' is treated here
 as the
 conservative variant within that set.
 
 #### Development to Old English
 
 From [[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4752"}, the West Germanic voiced dental hardens in the expected way and
-the regular Old English development yields [_cwedu_]{.iv lang=oe sort=cwedu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4753"}. The other Old English
+the regular Old English development yields [_cwedu_]{.iv lang=oe sort=cwedu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4753"} 'cud'. The other Old English
 spellings belong to the same lexical family, but reflect later leveling,
 back-umlaut, or further reduction rather than a need to replace the selected
 input.
@@ -7473,7 +7473,7 @@ Old English form: _tēon_
 
 [tēon]{.recon} ‘ten’ is the bare cardinal form. Fulk states that Old English _tien_ 'ten' shows umlaut from the inflected forms, whereas the uninflected form without umlaut is reflected in _tēon_ 'ten' [@Fulk2018, §10.2]. Brunner gives the same contrast more broadly: [tēon]{.recon} 'ten' develops from [tëhun]{.recon} 'ten', while West Saxon _tien_ 'ten', _tȳn_ 'ten' belong to a different, umlauted branch of the numeral history [@SieversBrunner1965, §§129.2, 129 Anm. 6, 234].
 
-The comparison form _tēon_ therefore represents the bare cardinal's un-umlauted line, not the later umlauted simplex tradition.
+The comparison form _tēon_ 'ten' therefore represents the bare cardinal's un-umlauted line, not the later umlauted simplex tradition.
 
 #### Old English evidence
 
@@ -7565,7 +7565,7 @@ nominative-accusative singular.
 
 The Old English numeral has no uniform citation form across the paradigm. The
 masculine singular line must be
-kept apart from feminine-neuter _þrēo_ and from later reduced spellings of
+kept apart from feminine-neuter _þrēo_ 'three' and from later reduced spellings of
 the masculine form.
 
 #### Old English evidence
@@ -7671,14 +7671,14 @@ shows [_wæps_]{.iv lang=oe sort=waeps role=comparison_form source_ref="Germanic
 [_wæps_]{.iv lang=oe sort=waeps role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5009"} or later spellings as headwords [@ClarkHall1960, 341].
 
 This entry therefore distinguishes chronological priority from headword habit.
-[_wæfs_]{.iv lang=oe sort=waefs role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5012"} is not a convenient reconstruction: it is an attested Old English form
+[_wæfs_]{.iv lang=oe sort=waefs role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5012"} 'wasp' is not a convenient reconstruction: it is an attested Old English form
 and also the one that matches the regular development most closely.
 
 #### Development to Old English
 
 From [[wábsaz]{.recon} ‘wasp’]{.iv lang=pgmc sort=wabsaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5017"}, the regular Old English path passes through loss of final _z_,
 Anglo-Frisian fronting, and the allophonic development of _b_ to a fricative
-before _s_, yielding [_wæfs_]{.iv lang=oe sort=waefs role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5019"}.
+before _s_, yielding [_wæfs_]{.iv lang=oe sort=waefs role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5019"} 'wasp'.
 
 The later forms [_wæps_]{.iv lang=oe sort=waeps role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5021"} 'wasp' and [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5021"} 'wasp' / [_wasp_]{.iv lang=oe sort=wasp role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5021"} 'wasp' belong to subsequent, lexically
 restricted metatheses. They are genuine Old English forms, but they are later
@@ -7952,11 +7952,11 @@ lexeme, not a reconstructed target assembled from comparative evidence alone.
 
 What requires explanation is not the Old English attestation but the relation
 between that attested noun and the broader Germanic word family. The relevant
-comparison form is therefore the thematic Old English noun [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5281"}.
+comparison form is therefore the thematic Old English noun [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5281"} 'breast'.
 
 #### Development to Old English
 
-From [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5285"}, the regular Old English development gives [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5285"}, with the
+From [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5285"}, the regular Old English development gives [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5285"} 'breast', with the
 expected _eu_ > _ēo_ vowel history [@Campbell1959, §115]. No special repair is needed
 once the correct thematic formation is chosen.
 
@@ -7973,7 +7973,7 @@ from the thematic formation actually continued in Old English.
 | broader root-noun family | [_\*brústz_]{.iv lang=pgmc sort=brustz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5299"} | root-noun type outcomes outside OE | non-OE comparanda | useful family label, but not the direct source of _brēost_ |
 | selected thematic formation | [_\*bréustą_]{.iv lang=pgmc sort=breusta role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5300"} | regular output: _brēost_ | [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5300"} | exact match between formation and attested OE noun |
 
-The relevant point is the formation split. [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5302"} is the regular Old English
+The relevant point is the formation split. [_brēost_]{.iv lang=oe sort=breost role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5302"} 'breast' is the regular Old English
 outcome of the thematic [_\*breusta-_]{.iv lang=pgmc sort=breusta role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5303"} branch, not of the root noun [_\*brust-_]{.iv lang=pgmc sort=brust role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5303"}.
 
 ### craft — OE _cræft_
@@ -8131,18 +8131,18 @@ the i-stems provides the relevant morphological background for the OE side
 
 #### Old English evidence
 
-Old English dictionaries record the plant name as [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5452"}, alongside the variant
-[_dili_]{.iv lang=oe sort=dili role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5453"} [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
+Old English dictionaries record the plant name as [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5452"} 'dill', alongside the variant
+[_dili_]{.iv lang=oe sort=dili role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5453"} 'dill' [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
 therefore an attested Old English noun with single _l_.
 
 The Old English evidence is the relevant point. Whatever broader comparative
 headword is chosen for the family, the inherited form reflected in OE is the
-i-stem type [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5458"}, not a geminated [_dill_]{.iv lang=oe sort=dill role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5458"} outcome.
+i-stem type [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5458"} 'dill', not a geminated [_dill_]{.iv lang=oe sort=dill role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5458"} 'dill' outcome.
 
 #### Development to Old English
 
 From [[déliz]{.recon} ‘dill’]{.iv lang=pgmc sort=deliz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5462"}, regular loss of final _z_ and the later lowering of unstressed
-_i_ yield [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5463"}. The stem itself remains ungeminated throughout that path.
+_i_ yield [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5463"} 'dill'. The stem itself remains ungeminated throughout that path.
 
 The contrast is morphological rather than phonological. If the word were
 forced through a ja-stem _\*-lj-_ pathway, the expected result would show _ll_.
@@ -8158,7 +8158,7 @@ from the stem class actually reflected in Old English.
 | comparative ja-stem label | [_\*déljaz_]{.iv lang=pgmc sort=deljaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5476"} | ja-stem type outcome with gemination | [_dill_]{.iv lang=oe sort=dill role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5476"}-type comparison | useful comparative label, but not the OE form |
 | selected i-stem formation | [_\*déliz_]{.iv lang=pgmc sort=deliz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5477"} | regular output: [_dile_]{.iv lang=oe sort=dile role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5477"} | [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5477"} | exact match between formation and attested OE noun |
 
-The single _l_ is the decisive diagnostic. It identifies [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5479"} with the i-stem
+The single _l_ is the decisive diagnostic. It identifies [_dile_]{.iv lang=oe sort=dile role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5479"} 'dill' with the i-stem
 formation rather than with the continental ja-stem branch.
 
 ### fast — OE _festan_

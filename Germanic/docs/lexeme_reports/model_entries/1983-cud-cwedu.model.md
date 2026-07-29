@@ -23,21 +23,21 @@ variants [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} 'cud', [`cweodu`
 lists [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} under the cognate set [@Orel2003, 266]. The selected input
 [[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input}
 therefore represents the older e-grade, voiced-dental form behind the chosen
-variant [`cwedu`]{.iv lang=oe sort=cwedu role=target_form}.
+variant [`cwedu`]{.iv lang=oe sort=cwedu role=target_form} 'cud'.
 
 ### Old English evidence
 
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} 'cud' > [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud' > [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud' and also
 note late West Saxon [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud'; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud', [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud', and [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud'
-[@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested `cwedu` is treated here
+[@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested `cwedu` 'cud' is treated here
 as the
 conservative variant within that set.
 
 ### Development to Old English
 
 From [[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input}, the West Germanic voiced dental hardens in the expected way and
-the regular Old English development yields [`cwedu`]{.iv lang=oe sort=cwedu role=target_form}. The other Old English
+the regular Old English development yields [`cwedu`]{.iv lang=oe sort=cwedu role=target_form} 'cud'. The other Old English
 spellings belong to the same lexical family, but reflect later leveling,
 back-umlaut, or further reduction rather than a need to replace the selected
 input.

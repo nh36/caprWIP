@@ -25,7 +25,7 @@ nominative-accusative singular.
 
 The Old English numeral has no uniform citation form across the paradigm. The
 masculine singular line must be
-kept apart from feminine-neuter **`þrēo`** and from later reduced spellings of
+kept apart from feminine-neuter **`þrēo`** 'three' and from later reduced spellings of
 the masculine form.
 
 ### Old English evidence

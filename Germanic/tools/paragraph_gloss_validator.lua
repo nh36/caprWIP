@@ -91,7 +91,14 @@ local function has_gloss_after(content, idx)
     local nxt = content[j]
     if nxt.t == 'Space' or nxt.t == 'SoftBreak' then
       j = j + 1
-    elseif nxt.t == 'Str'    then return starts_with_opening_quote(nxt.text)
+    elseif nxt.t == 'Str' then
+      -- Skip a leading comma or semicolon so that "form, 'gloss'" patterns
+      -- (mechanically introduced by the volume builder) satisfy the check.
+      if nxt.text == "," or nxt.text == ";" then
+        j = j + 1
+      else
+        return starts_with_opening_quote(nxt.text)
+      end
     elseif nxt.t == 'Quoted' then return true
     else                          return false
     end

@@ -30,4 +30,4 @@ The selected input already represents the later Germanic `hliđ-` stage used for
 
 ### Form note
 
-An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later `*xlídą > hlid` 'lid' line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
+An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later [xlídą]{.recon} 'lid' > `hlid` 'lid' line that matches the attested Old English noun [@Orel2003; @Lloyd1966].

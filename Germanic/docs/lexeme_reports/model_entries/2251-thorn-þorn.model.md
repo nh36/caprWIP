@@ -22,7 +22,7 @@ Kroonen gives `*þurna-` 'thorn, briar', while Orel preserves the masculine pair
 
 ### Old English evidence
 
-Bright lists `þorn, m.` 'thorn', and Clark Hall likewise treats `þorn` 'thorn' as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
+Bright lists `þorn` 'thorn' (m.) and Clark Hall likewise treats `þorn` 'thorn' as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
 
 ### Development to Old English
 

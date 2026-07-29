@@ -37,11 +37,11 @@ lexeme, not a reconstructed target assembled from comparative evidence alone.
 
 What requires explanation is not the Old English attestation but the relation
 between that attested noun and the broader Germanic word family. The relevant
-comparison form is therefore the thematic Old English noun **[`brēost`]{.iv lang=oe sort=breost role=target_form}**.
+comparison form is therefore the thematic Old English noun [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast'.
 
 ### Development to Old English
 
-From [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input}, the regular Old English development gives [`brēost`]{.iv lang=oe sort=breost role=target_form}, with the
+From [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input}, the regular Old English development gives [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast', with the
 expected `eu > ēo` vowel history [@Campbell1959, §115]. No special repair is needed
 once the correct thematic formation is chosen.
 
@@ -58,5 +58,5 @@ from the thematic formation actually continued in Old English.
 | broader root-noun family | [`*brústz`]{.iv lang=pgmc sort=brustz role=source_protoform} | root-noun type outcomes outside OE | non-OE comparanda | useful family label, but not the direct source of `brēost` |
 | selected thematic formation | [`*bréustą`]{.iv lang=pgmc sort=breusta role=selected_input} | compact-trace output: `brēost` | [`brēost`]{.iv lang=oe sort=breost role=target_form} | exact match between formation and attested OE noun |
 
-The relevant point is the formation split. [`brēost`]{.iv lang=oe sort=breost role=target_form} is the regular Old English
+The relevant point is the formation split. [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast' is the regular Old English
 outcome of the thematic [`*breusta-`]{.iv lang=pgmc sort=breusta role=source_protoform} branch, not of the root noun [`*brust-`]{.iv lang=pgmc sort=brust role=source_protoform}.
