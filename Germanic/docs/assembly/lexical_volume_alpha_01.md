@@ -7237,53 +7237,88 @@ selected a-stem input.
 | mixed comparative notation | Orel _\*stabiz_ ~ _\*stabaz_; Kluge _\*stabi-_/a- | source-level stem-class uncertainty | _stæf_ | useful comparative background, but not a single OE-facing input |
 | selected a-stem input | [_\*stábaz_]{.iv lang=pgmc sort=stabaz role=selected_input} | documented regular output: [_stæf_]{.iv lang=oe sort=staef role=regular_output} | [_stæf_]{.iv lang=oe sort=staef role=target_form} | exact match between derivational input and Old English target |
 
-### voice/sound — OE _stefn (legacy row label: stem)_
+### stem — OE _stefn_
 
-Derivation: form followed here _\*stébnō_; Old English form _stefn_; no regular trace was confidently matched for this entry.
+Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regular trace was confidently matched for this entry.
 
 #### Reconstruction and comparative evidence
 
-The source tradition behind [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'voice, sound'
-is not the same lexical item as the comparative label [stámnaz]{.recon} 'stem', which
-belongs to a different semantic family. Ringe and Taylor cite [stebnō]{.recon}
-'voice, sound' for the noun continued by Gothic [_stibna_]{.iv lang=goth sort=stibna role=comparison_form}
-'voice, sound' and Old English _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014, 330].
-Orel likewise cites [stebnō]{.recon} 'voice, sound' and [stemnō]{.recon} 'voice, sound',
-while Kroonen gives _\*stimnō-_; Fulk describes the etymology of _stefn, stemn_
-as insecure [@Orel2003, 374; @Kroonen2013, 480; @Fulk2018, §6.11 n. 6].
+Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform}
+'stem, trunk' (also variant [stamniz]{.recon}), citing Old Norse
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship',
+Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form} fem. 'id.',
+and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form} 'stem' as its
+main continuants [@Orel2003, 371].
 
-The selected OE-facing transponent is therefore [[stébnō]{.recon} 'voice, sound']{.iv lang=pgmc sort=stebno role=selected_input}. The comparative
-label [stámnaz]{.recon} 'stem' remains background metadata from the legacy row
-heading and should not control the lexical gloss of the OE evidence line.
+This word is etymologically unrelated to the Old English homonym _stefn_/_stemn_ 'voice,
+sound', which descends from a distinct Proto-Germanic _\*stebnō_/_\*stemnō_-type noun.
+The two OE lexemes are distinguished in Clark Hall, Bosworth-Toller, Brunner, and
+Luick; they collide on the surface forms _stefn_ and _stemn_ through historically
+independent developments.
+
+Kroonen relates the 'stem' family to the _stam(m)_ 'stem, trunk' group attested in
+Old High German, Dutch, and German, without reconstructing a separate 'prow'
+proto-form [@Kroonen2013, 479–480].
 
 #### Old English evidence
 
-Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'voice, sound' and cross-refers
-[_stemn_]{.iv lang=oe sort=stemn role=comparison_form} 'voice, sound' to the same noun
-[@ClarkHall1960, 276]. Ringe and Taylor give the chronology directly as
-_stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014, 330].
+Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form} III m. 'stem, trunk,
+root, prow, foundation', the weak n-stem
+[_stefna_]{.iv lang=oe sort=stefna role=comparison_form} m. 'prow or stern of a ship',
+and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form} m. 'trunk, stem,
+branch, shoot' [@ClarkHall1960, 276, 341].
 
-Bülbring and Luick treat [_stemn_]{.iv lang=oe sort=stemn role=comparison_form} 'voice, sound' as a later
-West Saxon development from older [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'voice, sound',
-produced by _fn_ > _mn_ after the earlier period of nasal influence on _e_
-[@Bulbring1902, §§62 Anm. 3, 445; @Luick1914, §75 Anm. 1].
+Luick §211 explicitly distinguishes _stefn_/_stemn_ 'Stamm (trunk)' — noting cognates with
+Old Saxon _stamn_ and Middle English _stam_ — from the _stefn_/_stemn_ 'voice' word treated
+in §75 [@Luick1914, §211]. Brunner §205 lists _stefn, stemn Stamm_ among words showing
+the _fn_/_mn_ alternation [@SieversBrunner1965, §205].
+
+The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form}
+III m. 'stem, trunk, root, prow', the form attested most directly in the semantic range
+relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form}
+'prow/stern' is a closely related but more narrowly attested nautical specialization.
 
 #### Development to Old English
 
-From [stébnō]{.recon} 'voice, sound', raising of final long _ō_ gives [stébnu]{.recon}
-'voice, sound'. Regular fricativization of _b_ before _n_ then yields [stéβnu]{.recon}
-'voice, sound', and loss of the final high vowel leaves [stéβn]{.recon} 'voice, sound',
-written _stefn_ 'voice, sound' in Old English. The later form _stemn_ 'voice, sound'
-belongs to a separate West Saxon assimilation after this stage
-[@RingeTaylor2014, 330; @Bulbring1902, §445].
+The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=regular_output} 'stem, trunk'
+from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk'
+involves a cluster change _mn → fn_ that is attested comparatively: Old Norse
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form} and Old Saxon
+[_stamn_]{.iv lang=os sort=stamn role=comparison_form} preserve the _fn_/_mn_ variants
+expected from this family. The precise phonological dating and domain of this change —
+whether it belongs to a North-West Germanic stage, an early West Germanic stage, or is
+reconstructed separately in each branch — is not definitively resolved by the cited
+scholarship. The handbooks treat it as a pre-Old-English development (Luick §211;
+Brunner §205), but the term "North-West Germanic coda dissimilation" should be taken
+as descriptive rather than technically established. This coda environment
+(_[C]mn → [C]fn_) is distinct from the cross-syllable m → _β_ change (as in
+_\*heβonų_ → heofon) handled by the _NWGmcMnDissimilation_ rule; it is currently
+not modeled in the FST.
+
+The correct OE-facing transponent has not yet been established for the FST pipeline.
+The classification _early_analogy_ reflects that the derivation requires an intermediate
+stage whose modeling is pending. The derivation is real and well-attested; the FST
+work remains to be done.
+
+#### Homonym note
+
+Old English _stefn_/_stemn_ is a surface homonym for two etymologically unrelated words:
+
+1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving _stefn_. This is a **different row** from 2216.
+2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. **This is row 2216.**
+
+The form followed here, _\*stébnō_, used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
 
 #### Source comparison
 
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| [_\*stámnaz_]{.iv lang=pgmc sort=stamnaz role=source_protoform} | comparative citation label for the stem/trunk family | does not itself control the _stefn_ derivation discussed here | legacy comparative background only |
-| [_\*stébnō_]{.iv lang=pgmc sort=stebno role=selected_input} | voice/sound noun transponent | regular output: [_stefn_]{.iv lang=oe sort=stefn role=regular_output} 'voice, sound' | Old English-facing input |
-| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form} 'voice, sound' | later attested West Saxon doublet | secondary form from _stefn_ by _fn_ > _mn_ | real OE variant, not the conservative comparison anchor |
+| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
+| [_stefn_]{.iv lang=oe sort=stefn role=target_form} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
+| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
+| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
+| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
+| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not appear in this entry** |
 
 ### swan — OE _swanes_
 
@@ -7437,12 +7472,17 @@ in its lexical status.
 
 #### Development to Old English
 
-If the old final **_-ī[\*_ had remained long enough to trigger ordinary double umlaut, Campbell's rule would point toward a form of _\*\*[]{.recon}_ _‘thousand’\*þȳsend_]{.iv lang=oe sort=thysend role=comparison_form}** type rather
-than attested [_þūsend_]{.iv lang=oe sort=thusend role=target_form} 'thousand' [@Campbell1959, §203]. Preserved root _ū_
-therefore argues that the umlaut-triggering vowel was lost or neutralized before
-the ordinary OE umlaut outcome could develop.
+If the old final _-ī_ had remained long enough to trigger ordinary double
+umlaut, Campbell's rule would point toward a form of the
+[_\*þȳsend_]{.iv lang=oe sort=thysend role=comparison_form} type rather
+than attested [_þūsend_]{.iv lang=oe sort=thusend role=target_form} 'thousand'
+[@Campbell1959, §203]. Preserved root _ū_ therefore argues that the
+umlaut-triggering vowel was lost or neutralized before the ordinary OE umlaut
+could develop.
 
-That early loss, however, does not by itself explain the medial **e[*. Luick compares the word with _\*\*[]{.recon}_ _‘thousand’ærende_]{.iv lang=oe sort=aerende role=comparison_form}** and later groups _thousand_ with forms
+That early loss, however, does not by itself explain the medial _e_. Luick
+compares the word with [_ærende_]{.iv lang=oe sort=aerende role=comparison_form}
+'errand/message' and later groups _thousand_ with forms
 reshaped on that pattern [@Luick1914, §§198, 492]. Viredaz is more cautious,
 arguing that Old English _e_ in this weak position may simply write schwa and so
 need not prove a unique _ærende_ 'message'-type analogy [@GermanicSlavicBaltic2025,
@@ -7513,7 +7553,8 @@ Old English form: _timber_
 
 Kroonen reconstructs the noun as [_\*timbra-_]{.iv lang=pgmc sort=timbra role=source_protoform} and cites Old English
 [_timber_]{.iv lang=oe sort=timber role=target_form} 'timber' among its continuations [@Kroonen2013, 517]. Ringe and Taylor
-instead state the history from **PGmc _\*timra[\*_ through West Germanic _\*\*[]{.recon}_ ‘timber’*timbr]{.iv lang=preoe sort=timbr role=comparison_form}** to Old English [_timber_]{.iv lang=oe sort=timber role=target_form} 'timber' [@RingeTaylor2014, 327].
+instead state the history from PGmc _\*timra_ through West Germanic
+[_\*timbr_]{.iv lang=preoe sort=timbr role=comparison_form} to Old English [_timber_]{.iv lang=oe sort=timber role=target_form} 'timber' [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial _b_ belongs in the comparative citation form or appears in an
@@ -7614,7 +7655,8 @@ still remains the correct Old English comparison form for the strong branch.
 #### Development to Old English
 
 With strong **[[wákaną]{.recon} ‘wake’]{.iv lang=pgmc sort=wakana role=selected_input}**, Anglo-Frisian brightening first gives a form of the
-**[wækaną]{.recon} ‘wake’** type. A-restoration then returns **a[*, and the ordinary tail reductions yield _\*\*[]{.recon}_ ‘wake’wacan]{.iv lang=oe sort=wacan role=regular_output}**. The weak verb [_wacian_]{.iv lang=oe sort=wacian role=comparison_form} 'wake' belongs to a different
+**[wækaną]{.recon} ‘wake’** type. A-restoration then returns _a_, and the ordinary tail
+reductions yield [_wacan_]{.iv lang=oe sort=wacan role=regular_output} 'wake'. The weak verb [_wacian_]{.iv lang=oe sort=wacian role=comparison_form} 'wake' belongs to a different
 prehistory and is not the expected outcome of this input.
 
 #### Class comparison
@@ -8188,8 +8230,8 @@ From the derivational input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugu
 fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
 [jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
 [jéoguθ]{.recon} 'youth', which surfaces as [_ġeoguþ_]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves _u_ after accented _u_ in forms such
-as [_duguþ_]{.iv lang=oe sort=duguth role=comparison_form} and [_munuc_]{.iv lang=oe sort=munuc role=comparison_form} [@Campbell1959, §374]. Brunner likewise cites _iuzuð_
-_Jugend_ and _munuc_ _Mönch_ in the same environment
+as [_duguþ_]{.iv lang=oe sort=duguth role=comparison_form} 'troop' and [_munuc_]{.iv lang=oe sort=munuc role=comparison_form} 'monk' [@Campbell1959, §374]. Brunner likewise cites
+[_iuzuð_]{.iv lang=oe sort=iuzuth role=comparison_form} 'youth' and [_munuc_]{.iv lang=oe sort=munuc role=comparison_form} 'monk' under the same development
 [@SieversBrunner1965, §150.3].
 
 #### Stage comparison
@@ -9503,7 +9545,7 @@ to a nominative singular that would remain _rast_ 'rest'.
 
 The ordinary Old English citation form is [_ræst_]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. Clark
 Hall likewise gives [_ræst_]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [_ræste_]{.iv lang=oe sort=raeste role=target_form} 'rest', including prepositional
-examples such as on _ræste_ and _tó_ _ræste_ [@BosworthToller1898, 121].
+examples such as [on ræste]{.ex} 'at rest' and [tó ræste]{.ex} 'to rest' [@BosworthToller1898, 121].
 
 The comparison form used here is therefore an attested oblique [_ræste_]{.iv lang=oe sort=raeste role=target_form} 'rest', not a
 reconstructed surrogate. The dictionary headword [_ræst_]{.iv lang=oe sort=raest role=comparison_form} 'rest' remains an equally real

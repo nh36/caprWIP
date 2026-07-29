@@ -1,30 +1,30 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2005
+- Internal production occurrences: 2004
 - Internal production unique forms: 980
 - Printed main occurrences: 1900
 - Printed main unique forms: 958
-- Printed excluded occurrences: 105
+- Printed excluded occurrences: 104
 - Printed excluded unique forms: 82
 
 ## Print exclusions by reason
 
 - `excluded_by_print_decision`: 5
 - `preoe_model_internal_default_exclusion`: 8
-- `regular_output_default_exclusion`: 92
+- `regular_output_default_exclusion`: 91
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 905 | 394 |
-| Proto-Germanic | 935 | 515 |
+| Proto-Germanic | 933 | 515 |
 | Proto-West Germanic | 2 | 2 |
-| Old Norse | 11 | 9 |
+| Old Norse | 12 | 9 |
 | Old High German | 16 | 14 |
 | Old Frisian | 7 | 6 |
 | Gothic | 3 | 3 |
-| Old Saxon | 9 | 7 |
+| Old Saxon | 10 | 7 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Modern English | 2 | 1 |
@@ -34,16 +34,16 @@
 | Role | Occurrences |
 | --- | ---: |
 | target_form | 368 |
-| source_protoform | 332 |
+| source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 507 |
+| comparison_form | 509 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason
 
 - `excluded_by_print_decision`: 5
 - `preoe_model_internal_default_exclusion`: 8
-- `regular_output_default_exclusion`: 92
+- `regular_output_default_exclusion`: 91
 
 ## Pre-OE review rows by proposed status
 

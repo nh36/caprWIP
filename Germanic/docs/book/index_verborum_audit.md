@@ -1,18 +1,18 @@
 # Index verborum audit
 
-- Internal production occurrences: 2005
+- Internal production occurrences: 2004
 - Internal production unique forms: 980
 - Printed main-index occurrences: 1900
 - Printed main-index unique forms: 958
-- Print-excluded occurrences: 105
+- Print-excluded occurrences: 104
 - Print-excluded unique forms: 82
 - Print exclusions (preoe_model_internal_default_exclusion): 8
-- Print exclusions (regular_output_default_exclusion): 92
+- Print exclusions (regular_output_default_exclusion): 91
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 5
 - Internal-only rows (preoe_model_internal_default_exclusion): 8
-- Internal-only rows (regular_output_default_exclusion): 92
+- Internal-only rows (regular_output_default_exclusion): 91
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 5
@@ -23,11 +23,11 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 530
+- Already indexed in same entry: 531
 - Broad-prose notation / compound expressions: 463
-- Broad-prose evidence suggestions: 321
-- Curated broad-prose deferred: 22
-- Curated broad-prose ignored: 4
+- Broad-prose evidence suggestions: 322
+- Curated broad-prose deferred: 19
+- Curated broad-prose ignored: 3
 - Reader-facing examples quarantined (separate example index policy): 596
 - Ordinary prose/gloss ignored: 27
 - Orthographic/normalization variants: 17
@@ -37,7 +37,7 @@
 - Table semantic ignored: 1
 - Table semantic notation / compound expressions: 16
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 292
+- Ignored fragments or sequences: 293
 - Possible extraction garbage: 1
 - Excluded intermediate trace forms: 1278
 - New unresolved candidates relative to baseline: 0
@@ -47,15 +47,15 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 997 | 406 |
-| Proto-Germanic | 935 | 515 |
+| Old English | 996 | 406 |
+| Proto-Germanic | 933 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Pre-Old-English and model-internal forms | 13 | 10 |
-| Old Norse | 11 | 9 |
+| Old Norse | 12 | 9 |
 | Old High German | 16 | 14 |
 | Old Frisian | 7 | 6 |
 | Gothic | 3 | 3 |
-| Old Saxon | 9 | 7 |
+| Old Saxon | 10 | 7 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Modern English | 2 | 1 |
@@ -153,10 +153,10 @@
 | Role | Occurrences |
 | --- | ---: |
 | target_form | 368 |
-| source_protoform | 332 |
+| source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 512 |
-| regular_output | 92 |
+| comparison_form | 514 |
+| regular_output | 91 |
 | evidence_form | 169 |
 
 ## Printed main-index forms by language
@@ -164,13 +164,13 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 905 | 394 |
-| Proto-Germanic | 935 | 515 |
+| Proto-Germanic | 933 | 515 |
 | Proto-West Germanic | 2 | 2 |
-| Old Norse | 11 | 9 |
+| Old Norse | 12 | 9 |
 | Old High German | 16 | 14 |
 | Old Frisian | 7 | 6 |
 | Gothic | 3 | 3 |
-| Old Saxon | 9 | 7 |
+| Old Saxon | 10 | 7 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Modern English | 2 | 1 |
@@ -180,9 +180,9 @@
 | Role | Occurrences |
 | --- | ---: |
 | target_form | 368 |
-| source_protoform | 332 |
+| source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 507 |
+| comparison_form | 509 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason
@@ -191,7 +191,7 @@
 | --- | ---: |
 | excluded_by_print_decision | 5 |
 | preoe_model_internal_default_exclusion | 8 |
-| regular_output_default_exclusion | 92 |
+| regular_output_default_exclusion | 91 |
 
 ## Already indexed in same entry
 
@@ -578,15 +578,16 @@
 | `stæf` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:32 | ### Old English evidence | same form already indexed in this entry |
 | `stæf` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:40 | ### Development to Old English | same form already indexed in this entry |
 | `stamn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47 | ### Old English evidence | same form already indexed in this entry |
+| `*stámnaz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `*stámnaz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:59 | ### Development to Old English | same form already indexed in this entry |
+| `*stámnaz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | ### Homonym note | same form already indexed in this entry |
 | `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:85 | ### Homonym note | same form already indexed in this entry |
 | `stefe` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:41 | ### Development to Old English | same form already indexed in this entry |
-| `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:30 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:39 | ### Old English evidence | same form already indexed in this entry |
+| `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:80 | ### Homonym note | same form already indexed in this entry |
 | `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82 | ### Homonym note | same form already indexed in this entry |
 | `*stéllijaną` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:30 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | ### Old English evidence | same form already indexed in this entry |
+| `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:80 | ### Homonym note | same form already indexed in this entry |
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
@@ -812,7 +813,7 @@
 | `bū tū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | notation or compound expression |
 | `ċ-` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:29 | notation or compound expression |
 | `cā < *cūiz` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36 | notation or compound expression |
-| `Cmn → Cfn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:63 | notation or compound expression |
+| `C]mn → [C]fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69 | notation or compound expression |
 | `cn-` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:45 | notation or compound expression |
 | `corn, n` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:25 | notation or compound expression |
 | `corn n. 'corn,' grain` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:25 | notation or compound expression |
@@ -854,7 +855,6 @@
 | `*felþu- ~ *feldu-` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | notation or compound expression |
 | `*flēoganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | intermediate or model-stage form in development chain |
 | `*fléuganą > flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | notation or compound expression |
-| `fn → mn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:68 | notation or compound expression |
 | `fn/mn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:49 | notation or compound expression |
 | `fo-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:41 | notation or compound expression |
 | `for-` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:33 | notation or compound expression |
@@ -893,7 +893,7 @@
 | `*harbist-` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:21 | notation or compound expression |
 | `*hauwja-` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 | notation or compound expression |
 | `healdan, heold, heoldon, healden` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:25 | notation or compound expression |
-| `*heβonų → heofon` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:62 | notation or compound expression |
+| `*heβonų → heofon` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:70 | notation or compound expression |
 | `*helma-` | Germanic/docs/lexeme_reports/model_entries/2070-helm-helm.model.md:21 | notation or compound expression |
 | `*helma-` | Germanic/docs/lexeme_reports/model_entries/2070-helm-helm.model.md:33 | notation or compound expression |
 | `*helman-` | Germanic/docs/lexeme_reports/model_entries/2070-helm-helm.model.md:21 | notation or compound expression |
@@ -1016,13 +1016,12 @@
 | `mare, maran` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
 | `*marōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
 | `*márōn` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:29 | intermediate or model-stage form in development chain |
-| `m → β` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:62 | notation or compound expression |
+| `m → β` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69 | notation or compound expression |
 | `*meluk-` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 | notation or compound expression |
 | `meoloc / meoluc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | notation or compound expression |
 | `mera / mere` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:25 | notation or compound expression |
 | `mere / mera` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | notation or compound expression |
-| `mn → fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:61 | notation or compound expression |
-| `mn → fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67 | notation or compound expression |
+| `mn → fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60 | notation or compound expression |
 | `mn → fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | notation or compound expression |
 | `*mōder-` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:21 | notation or compound expression |
 | `*nasō- ~ *nusō-` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:21 | notation or compound expression |
@@ -1044,7 +1043,6 @@
 | `*-ōjan-` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:31 | notation or compound expression |
 | `ō > ū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52 | notation or compound expression |
 | `PGmc *timra` | Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:23 | notation or compound expression |
-| `prow/stern` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:59 | notation or compound expression |
 | `-r-` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25 | notation or compound expression |
 | `ræst-` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:50 | notation or compound expression |
 | `*rastō` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:48 | intermediate or model-stage form in development chain |
@@ -1092,12 +1090,15 @@
 | `sponnan, spannan stv` | Germanic/docs/lexeme_reports/model_entries/2202-span-spannan.model.md:25 | notation or compound expression |
 | `*staba-` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:22 | notation or compound expression |
 | `stam(m` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:34 | notation or compound expression |
-| `*stebnō/*stemnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:28 | notation or compound expression |
-| `stefna/stefn/stofn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | notation or compound expression |
-| `stefn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:27 | notation or compound expression |
+| `*stebnō/*stemnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:29 | notation or compound expression |
+| `stefn/stefna/stofn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | notation or compound expression |
+| `stefn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:28 | notation or compound expression |
+| `stefn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | notation or compound expression |
+| `stefn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47 | notation or compound expression |
 | `stefn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82 | notation or compound expression |
 | `stefn, stemn Stamm` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:48 | notation or compound expression |
 | `*stéllijaną` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:29 | intermediate or model-stage form in development chain |
+| `stem/trunk` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | notation or compound expression |
 | `*straujaną` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:50 | intermediate or model-stage form in development chain |
 | `*strēajan-` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:50 | notation or compound expression |
 | `strewian / streowian / strēawian` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:55 | notation or compound expression |
@@ -1285,8 +1286,7 @@
 | `leappan` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `leoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `lēoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `lexemes` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:29 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `lexemes` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `lexemes` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:30 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `liehtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1396,8 +1396,10 @@
 | `sperran` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `sperran` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `staff` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `stage` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:54 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `stam` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*stamniz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:22 | on | source_protoform | citation or reconstructed source form in prose |
+| `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:53 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58 | oe | comparison_form | attested Old English comparison form in development prose |
 | `still` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `stille` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `stille` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1542,9 +1544,6 @@
 | `*sāwiz` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:42 | pwgmc | comparison_form | intermediate development stage in the sea derivation chain |
 | `sparro` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:21 | ohg | comparison_form | shared Old Saxon/Old High German citation form needs finer language disambiguation |
 | `*stába` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:40 | preoe | comparison_form | intermediate development stage in the staff derivation chain |
-| `*stofn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | pgmc | source_protoform | Luick proto-form for OE stofn trunk; deferred pending full dossier |
-| `*stáfnaz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67 | pgmc | source_protoform | Proposed NWGmc intermediate for prow/stem etymology; deferred pending full dossier |
-| `*stéfnô` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67 | pgmc | source_protoform | Pre-OE transponent candidate for prow word; deferred pending full dossier |
 | `strēzan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:31 | oe | comparison_form | Anglian comparative form retained as contextual evidence, not promoted to main index. |
 | `*líornô` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:44 | preoe | comparison_form | Intermediate reconstructed stage retained for derivational exposition. |
 | `*líornōθ` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:52 | preoe | comparison_form | Intermediate reconstructed stage retained for derivational exposition. |
@@ -1553,10 +1552,9 @@
 
 | Form | Source | Reason |
 | --- | --- | --- |
-| `NWGmcMnDissimilation` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:63 | FST rule name; not a lexical form |
-| `coda` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67 | English linguistic term 'coda' (syllabic position); not a Germanic lexical form |
+| `NWGmcMnDissimilation` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:70 | FST rule name; not a lexical form (updated line reference) |
 | `*stebnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82 | Wrong homonym (voice word); explicitly excluded from stem/prow row 2216 |
-| `Orel` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | Author name (dictionary citation); not a lexical form |
+| `cluster` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83 | English linguistic term 'cluster' (phonological position); not a Germanic lexical form |
 
 ## Reader-facing examples quarantined (separate example index policy)
 
@@ -1685,7 +1683,7 @@
 | `e` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2223 | ## SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | The final rule removes the extra unstressed \emph{e} before \emph{i}. |
 | `ē` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:550 | ## Historical discussion | The later West Saxon forms *sċēap* ‘sheep’ and *ġēar* ‘year’ imply an earlier lowering of long \emph{ē} before the palatal diphthongal outcomes described more f |
 | `ē` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:563 | ## \CAPRRuleHeading{SC024. Lowering of long \emph{ē} before non-nasal consonants}{NWGmcLongELowering} {#rule-NWGmcLongELowering} | After [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), long \emph{ē} > \emph{ǣ} can no longer produce the expected West Saxon forms: PGmc |
-| `ē` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:573 | ## Historical discussion | Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* 'month' and *mōna* / *mōn* 'moon'-type material. Campbell treats |
+| `ē` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:573 | ## Historical discussion | Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* 'month' and *mōna* 'moon' / *mōn* 'moon'-type material. Campbell |
 | `ē` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:586 | ## SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | Reversing [SC025 NWGmcLongENasalRounding](#rule-NWGmcLongENasalRounding) with neighboring changes leaves every checked output unchanged. Its position beside the |
 | `ēa` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:685 | ## Historical discussion of au-fronting | describes \emph{au} > \emph{ēa} [@Campbell1959, pp. 53--54, §135]. |
 | `ēaw` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:733 | ## SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | The *dēaw* 'dew' and *hēawan* 'hew' derivations establish that doubled \emph{w} was simplified before the long \emph{ēaw} development. If [SC031 OEWWSimplificat |
@@ -1962,7 +1960,7 @@
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:397 | ## \CAPRRuleHeading{SC017. Lowering of \emph{*u} before following non-high vowels}{NWGmcULowering} {#rule-NWGmcULowering} | Before [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), PGmc [júką]{.recon} ‘yoke’ yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’. After [SC019 NW |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:853 | ## \CAPRRuleHeading{SC036. Raising of medial \emph{*a} between stress peaks}{OEInterStressRaising} {#rule-OEInterStressRaising} | The two boundaries have unequal force. Before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [sáiwalō]{.recon} ‘soul’ yields [*sāwel*]{.pred |
 | `ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:405 | ## Historical discussion | Campbell treats the development of final accented \emph{ō} to \emph{ū} in stressed monosyllables directly, with the familiar outcomes behind *cū* ‘cow’, *hū* ‘h |
-| `ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:573 | ## Historical discussion | Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* 'month' and *mōna* / *mōn* 'moon'-type material. Campbell treats |
+| `ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:573 | ## Historical discussion | Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen later in *mōnaþ* 'month' and *mōna* 'moon' / *mōn* 'moon'-type material. Campbell |
 | `*r` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:117 | ## Historical discussion | Ringe and Taylor treat the West Germanic lowering of final bimoric \emph{*ō} before word-final \emph{*r} as a specific inherited development and illustrate it a |
 | `*r` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:119 | ## Historical discussion | The rule is historically secure but narrow: final or pre-final \emph{*ō} before word-final \emph{*r}. The clearest evidence remains concentrated in the `four` a |
 | `*r` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:132 | ## \CAPRRuleHeading{SC007. Lowering of final bimoric \emph{*ō} before \emph{*r}}{PWGmcFinalOrLowering} {#rule-PWGmcFinalOrLowering} | The witness thus supplies a terminus ante quem at brightening but no earlier boundary. The *fēower* ‘four’ and *wæter* ‘water’ families support the narrow envir |
@@ -2327,7 +2325,7 @@ _None._
 
 | Form | Source | Reason |
 | --- | --- | --- |
-| `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95 | wrong homonym noted in table; must not be indexed from stem/prow row 2216 |
+| `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:96 | wrong homonym noted in table; must not be indexed from stem/prow row 2216 |
 
 ## Table semantic notation / compound expressions
 
@@ -2453,6 +2451,7 @@ _None._
 | `f` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 |
 | `f` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:42 |
 | `f` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:39 |
+| `fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:62 |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:21 |
 | `g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:21 |
 | `g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:25 |
@@ -2529,11 +2528,11 @@ _None._
 | `ll` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:44 |
 | `lw` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 |
 | `m` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 |
+| `mn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:62 |
 | `n` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:42 |
 | `*nósō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:46 |
 | `*nósu` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:46 |
 | `*nusō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:24 |
-| `*o` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:54 |
 | `*ô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:49 |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:39 |

@@ -75,6 +75,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc ${intro_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
+      --lua-filter=Germanic/tools/lex_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${intro_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
@@ -85,6 +86,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --lua-filter=Germanic/tools/index_verborum_filter.lua \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
+      --lua-filter=Germanic/tools/lex_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/assembly/book_draft_pdf_header.tex \
       --include-in-header=Germanic/docs/assembly/book_draft_index_registry.tex \

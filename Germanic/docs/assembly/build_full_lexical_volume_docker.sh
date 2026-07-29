@@ -30,6 +30,9 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --standalone \
       --from=markdown+raw_tex+citations \
       --to=latex \
+      --lua-filter=Germanic/tools/predicted_form_filter.lua \
+      --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
+      --lua-filter=Germanic/tools/lex_form_filter.lua \
       --metadata-file=Germanic/docs/assembly/full_volume_metadata.yaml \
       --bibliography=docs/refs.bib \
       --citeproc \
@@ -37,6 +40,9 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc Germanic/docs/assembly/lexical_volume_alpha_01.md \
       --standalone \
       --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/tools/predicted_form_filter.lua \
+      --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
+      --lua-filter=Germanic/tools/lex_form_filter.lua \
       --metadata-file=Germanic/docs/assembly/full_volume_metadata.yaml \
       --bibliography=docs/refs.bib \
       --citeproc \

@@ -644,7 +644,7 @@ def assert_table_semantic_rows() -> None:
     ignored_pairs = parse_audit_table_semantic_ignored_pairs()
     for form in {"*kōz", "*kūi", "*kūiz", "*nasō", "*núsō"}:
         assert not any(pair_form == form for pair_form, _ in ignored_pairs)
-    assert ("*stébnō", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95") in ignored_pairs
+    assert ("*stébnō", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:96") in ignored_pairs
 
     def auto_or_suggest(form: str, role: str) -> bool:
         return (

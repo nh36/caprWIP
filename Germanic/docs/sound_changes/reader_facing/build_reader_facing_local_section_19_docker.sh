@@ -399,6 +399,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --from=markdown+raw_tex+citations \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
+      --lua-filter=Germanic/tools/lex_form_filter.lua \
       --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --number-sections \

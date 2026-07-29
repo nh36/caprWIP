@@ -73,8 +73,8 @@
 11. **Thin bibliography entries for Adamczyk and Bammesberger**
     - **Source location:** `docs/refs.bib`
     - **Upstream file edited:** `docs/refs.bib`
-    - **Correction made:**  
-      - `Adamczyk2001`: added journal title, volume, page range, ISSN, and stable URL from the Adam Mickiewicz University repository page.  
+    - **Correction made:**
+      - `Adamczyk2001`: added journal title, volume, page range, ISSN, and stable URL from the Adam Mickiewicz University repository page.
       - `Bammesberger1997`: corrected the title to the locally verified article title `Die Vorform von altenglisch hærfest` and added the page range `223--230` from the local scan.
     - **Verification result:** Adamczyk now renders as a normal journal article in the bibliography; Bammesberger now renders with corrected title and pages, but the journal/volume could not be verified safely from local or lookup evidence and were left unset.
 

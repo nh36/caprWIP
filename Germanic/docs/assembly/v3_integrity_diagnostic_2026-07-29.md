@@ -1,8 +1,8 @@
 # V3 Integrity Diagnostic Report
 
-**Date:** 2026-07-29  
-**Branch:** `reader-facing-gloss-audit-v3`  
-**Tip SHA (remote):** `918dc2a4aac39effad23c78141f4b8c9fadd53b3`  
+**Date:** 2026-07-29
+**Branch:** `reader-facing-gloss-audit-v3`
+**Tip SHA (remote):** `918dc2a4aac39effad23c78141f4b8c9fadd53b3`
 **Baseline (v2 checkpoint):** `0ecf63da65d82773e6d4f0bf77461c2d001337a0`
 
 ---
@@ -35,7 +35,7 @@ Gateway results:
 918dc2a4  wip: add integrity layer and regression tests for Part I/II gloss validation v3
 ```
 
-Files changed: 63 files, +2695 / -2005 lines.  
+Files changed: 63 files, +2695 / -2005 lines.
 New files: `Germanic/tools/check_reader_facing_semantics.py`,
 `Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv`.
 
@@ -43,8 +43,8 @@ New files: `Germanic/tools/check_reader_facing_semantics.py`,
 
 ## 3. Part I violation — the single new case
 
-**Form:** `*mōna*`  
-**File:** `Germanic/docs/sound_changes/reader_facing/025-long-e-nasal-rounding.md`  
+**Form:** `*mōna*`
+**File:** `Germanic/docs/sound_changes/reader_facing/025-long-e-nasal-rounding.md`
 **Paragraph 127 of 339 Part I prose paragraphs.**
 
 Context:
