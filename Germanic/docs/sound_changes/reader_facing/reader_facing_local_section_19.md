@@ -1498,8 +1498,8 @@ OEVelarPalatalization](#rule-OEVelarPalatalization),
 the developments behind *bīeġan* ‘bend’ and *sēċan* ‘seek’ are lost. Related
 forms such as *fylġan* ‘follow’,
 *heċġ* ‘hedge’, and *sengan* ‘singe’ fail in the same broader palatalization
-zone. PGmc `*báugijaną` yields *bēaġan* ‘bend’ rather than expected OE *bīeġan*,
-and PGmc `*sōkijaną` yields *sōċan* ‘seek’ rather than expected *sēċan*. This
+zone. PGmc [báugijaną]{.recon} 'bow' yields *bēaġan* 'bend' rather than expected OE *bīeġan*,
+and PGmc [sōkijaną]{.recon} 'seek' yields *sōċan* 'seek' rather than expected *sēċan*. This
 demonstrates that velar palatalization preceded coalescence. Nothing in the
 present lexicon supplies a terminus ante quem.
 

@@ -30,4 +30,4 @@ As a base-form comparison, the simplex infinitive is `lēosan`, while the Englis
 
 ### Development to Old English
 
-From [léusaną]{.recon} ‘forlorn’, Old English diphthong leveling gives [lēosaną]{.recon} ‘forlorn’, and later nasal apocope and weak-tail reduction yield `lēosan` [@RingeTaylor2014]. The prefixed forms follow the same verbal base with added `for-`.
+From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną]{.recon} 'lose', and later nasal apocope and weak-tail reduction yield `lēosan` [@RingeTaylor2014]. The prefixed forms follow the same verbal base with added `for-`.
