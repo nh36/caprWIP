@@ -36,7 +36,7 @@ form [@Orel2003, 319].
 
 ### Development to Old English
 
-From [[sápą]{.recon} ‘sap’]{.iv lang=pgmc sort=sapa role=selected_input}, Anglo-Frisian brightening yields `sæ`, and heavy-syllable nasal
+From [[sápą]{.recon} ‘sap’]{.iv lang=pgmc sort=sapa role=selected_input}, Anglo-Frisian brightening yields `sæ` 'sap', and heavy-syllable nasal
 apocope then produces [`sæp`]{.iv lang=oe sort=saep role=regular_output} 'sap'. That is the regular path documented by the current
 trace.
 

@@ -24,7 +24,7 @@ Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)[* and Ringe and Tay
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as `borian`, and the imperative singular `bora` and present-third-singular `boraþ` are the relevant comparison forms [@ClarkHall1960, 48].
+Clark Hall lemmatizes the verb as `borian`, and the imperative singular `bora` 'bore' and present-third-singular `boraþ` 'bores' are the relevant comparison forms [@ClarkHall1960, 48].
 
 Campbell's dialect survey allows secondary `-e-` and `-o-` spellings in 2sg and 3sg class-II forms, but the basic ending remains `-aþ` [@Campbell1959, §757]. The regular comparison form for this non-`j` 3sg cell is Boraþ.
 
@@ -41,5 +41,5 @@ The comparison below is manual. It distinguishes the selected 3sg cell from the 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level infinitive | [`*burōjaną`]{.iv lang=pgmc sort=burojana role=source_protoform} | dictionary headword [`borian`]{.iv lang=oe sort=borian role=comparison_form} | [`borian`]{.iv lang=oe sort=borian role=comparison_form} | family background, but not the selected cell |
-| selected 3sg present | [`*búrōθi`]{.iv lang=pgmc sort=burothi role=selected_input} | trace output [`boraþ`]{.iv lang=oe sort=borath role=regular_output} | [`boraþ`]{.iv lang=oe sort=borath role=target_form} | exact match |
-| imperative singular companion | [`*búrô`]{.iv lang=pgmc sort=buro role=comparison_form} | related finite form [`bora`]{.iv lang=oe sort=bora role=comparison_form} | [`bora`]{.iv lang=oe sort=bora role=comparison_form} | useful control, but not the target |
+| selected 3sg present | [`*búrōθi`]{.iv lang=pgmc sort=burothi role=selected_input} | trace output [`boraþ`]{.iv lang=oe sort=borath role=regular_output} 'bores' | [`boraþ`]{.iv lang=oe sort=borath role=target_form} 'bores' | exact match |
+| imperative singular companion | [`*búrô`]{.iv lang=pgmc sort=buro role=comparison_form} | related finite form [`bora`]{.iv lang=oe sort=bora role=comparison_form} 'bore' | [`bora`]{.iv lang=oe sort=bora role=comparison_form} 'bore' | useful control, but not the target |

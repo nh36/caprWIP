@@ -20,13 +20,13 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 The comparative dictionaries do not support a single citation reconstruction
 uniformly. Orel cites [rustaz sb.m./f.]{.recon} ‘rust’ with Old English `rust` and Old Saxon
-and Old High German `rost` [@Orel2003, 308]. The form [rústō]{.recon} ‘rust’ therefore stands here
+and Old High German `rost` 'rust' [@Orel2003, 308]. The form [rústō]{.recon} ‘rust’ therefore stands here
 as a competing citation reconstruction rather than as the best-supported
 inherited headword.
 
 That disagreement does not remove the central problem. Whether one starts from
 [rústō]{.recon} ‘rust’ or from source-supported [rustaz]{.recon} ‘rust’, the regular citation-form history
-points toward `rost`, not toward the attested Old English noun.
+points toward `rost` 'rust', not toward the attested Old English noun.
 
 ### Old English evidence
 
@@ -42,7 +42,7 @@ preserved in the header.
 ### Development to Old English
 
 Under Campbell's regular lowering of stressed `u` before a following mid or low
-vowel, the citation-form input gives `rost`, not `rust` [@Campbell1959, §115].
+vowel, the citation-form input gives `rost` 'rust', not `rust` [@Campbell1959, §115].
 The same lowering would also affect comparative citation-form reconstructions
 such as [rustaz]{.recon} ‘rust’.
 

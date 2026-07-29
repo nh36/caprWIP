@@ -28,12 +28,12 @@ than to Kroonen's citation form.
 
 ### Old English evidence
 
-Clark Hall lemmatizes the noun as **[`hwal`]{.iv lang=oe sort=hwal role=comparison_form}**, and Bosworth-Toller preserves the
-plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
-is normalized here as **[`hwæl`]{.iv lang=oe sort=hwael role=target_form}** for the singular citation form with Anglo-
+Clark Hall lemmatizes the noun as **[`hwal`]{.iv lang=oe sort=hwal role=comparison_form} 'whale'**, and Bosworth-Toller preserves the
+plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales'** [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
+is normalized here as **[`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale'** for the singular citation form with Anglo-
 Frisian fronting.
 
-The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** supplies control evidence. It shows the same
+The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales'** supplies control evidence. It shows the same
 lexeme with **`a[* in an open syllable, beside singular **[]{.recon} ‘whale’hwæl`]{.iv lang=oe sort=hwael role=target_form}** in the
 closed monosyllable.
 
@@ -52,5 +52,5 @@ notations from the normalized Old English singular.
 | :--- | :--- | :--- | :--- |
 | Orel's citation | [`*xwalaz`]{.iv lang=pgmc sort=xwalaz role=source_protoform} | same stem notation as the modeled singular line | closest comparative support for the selected input |
 | Kroonen's citation | [`*hwali-`]{.iv lang=pgmc sort=hwali role=comparison_form} | same initial cluster, different stem label | important comparative rival, but not the notation followed here |
-| modeled input | [`*xwálaz`]{.iv lang=pgmc sort=xwalaz role=selected_input} | trace output: [`hwæl`]{.iv lang=oe sort=hwael role=regular_output} | selected OE-facing input |
-| plural control | [`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} | attested open-syllable plural beside singular [`hwæl`]{.iv lang=oe sort=hwael role=target_form} | confirms that the lexeme also preserves an `a`-vocalism branch |
+| modeled input | [`*xwálaz`]{.iv lang=pgmc sort=xwalaz role=selected_input} | trace output: [`hwæl`]{.iv lang=oe sort=hwael role=regular_output} 'whale' | selected OE-facing input |
+| plural control | [`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales' | attested open-syllable plural beside singular [`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale' | confirms that the lexeme also preserves an `a`-vocalism branch |

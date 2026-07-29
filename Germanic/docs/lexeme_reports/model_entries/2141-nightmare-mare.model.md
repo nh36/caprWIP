@@ -26,8 +26,8 @@ Clark Hall records `mare` 'nightmare, monster' and also preserves related varian
 
 ### Development to Old English
 
-The selected simplex input [márōn]{.recon} ‘nightmare’ regularly gives `mare` after brightening, A-restoration before the n-stem ending, and later reduction of the final vowel. The word represented here is the attested simplex noun, not an attested compound [@RingeTaylor2014].
+The selected simplex input [márōn]{.recon} ‘nightmare’ regularly gives `mare` 'nightmare' after brightening, A-restoration before the n-stem ending, and later reduction of the final vowel. The word represented here is the attested simplex noun, not an attested compound [@RingeTaylor2014].
 
 ### Form note
 
-The concept corresponds to an unattested compound [nihtmare]{.recon} ‘nightmare’, but the Old English lexical evidence is for simplex `mare`, with oblique `maran` and variant `mere / mera` [@RingeTaylor2014; @ClarkHall1960, 213].
+The concept corresponds to an unattested compound [nihtmare]{.recon} ‘nightmare’, but the Old English lexical evidence is for simplex `mare` 'nightmare', with oblique `maran` and variant `mere / mera` [@RingeTaylor2014; @ClarkHall1960, 213].

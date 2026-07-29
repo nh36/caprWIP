@@ -29,19 +29,19 @@ nominative.
 
 ### Old English evidence
 
-Bosworth-Toller records **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}** with textual attestation, and it also
-records nominative forms such as [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} and [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form}
+Bosworth-Toller records **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'** with textual attestation, and it also
+records nominative forms such as [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} 'fright' and [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form} 'fright'
 [@BosworthToller1898, 160]. Clark Hall lists adjective and verb material
 separately under `fyrht` / `fyrhtan` [@ClarkHall1960, 141].
 
-The relevant comparison form is therefore the attested oblique **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}**.
+The relevant comparison form is therefore the attested oblique **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'**.
 The nominative lemma forms remain part of the Old English evidence, but the
 selected target of this entry is the oblique cell.
 
 ### Development to Old English
 
 From [[fúrxtīnaz]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtinaz role=selected_input}, the oblique in-stem develops through the loss and weakening
-of the final ending, yielding [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}. The form compared here therefore
+of the final ending, yielding [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
 paradigm.
 
@@ -58,9 +58,9 @@ later remodeled nominative line.
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation in-stem headword | [`*furxtīn`]{.iv lang=pgmc sort=furxtin role=source_protoform} | broader noun-class label | wider family context | useful lexeme label, but not the selected cell |
-| remodeled nominative line | nominative in-stem forms | [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} / [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form} type lemma forms | [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} / [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form} | genuine OE evidence, but later remodeled |
-| selected oblique singular | [`*fúrxtīnaz`]{.iv lang=pgmc sort=furxtinaz role=selected_input} | compact-trace output: [`fyrhte`]{.iv lang=oe sort=fyrhte role=regular_output} | [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} | exact match between input, output, and attested cell |
+| remodeled nominative line | nominative in-stem forms | [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} 'fright' / [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form} 'fright' type lemma forms | [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} 'fright' / [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form} 'fright' | genuine OE evidence, but later remodeled |
+| selected oblique singular | [`*fúrxtīnaz`]{.iv lang=pgmc sort=furxtinaz role=selected_input} | compact-trace output: [`fyrhte`]{.iv lang=oe sort=fyrhte role=regular_output} 'fright' | [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright' | exact match between input, output, and attested cell |
 
 The oblique in-stem form is the relevant comparison form. It yields attested
-[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} directly, while the more familiar nominative forms belong to a later
+[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright' directly, while the more familiar nominative forms belong to a later
 analogical layer.

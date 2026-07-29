@@ -116,7 +116,7 @@ oe	flégan	flegan	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_re
 oe	fléogan	fleogan	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21
 oe	flēogan	fleogan	1	target_form	lexical_heading	fly — OE flēogan
 oe	fleogeð	fleoged	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25
-oe	folgian	folgian	7	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:21; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:31; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:41; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:58; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:69
+oe	folgian	folgian	8	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:21; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:26; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:30; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:40; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:57
 oe	for-geofan	forgeofan	2	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21; Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29
 oe	for-leósan	forleosan	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21
 oe	for-lēosan	forleosan	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21
@@ -128,12 +128,12 @@ oe	fugol	fugol	1	target_form	lexical_heading	fowl — OE fugol
 oe	full	full	1	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24
 oe	funden	funden	5	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:26; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:36; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:39; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:50; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:62
 oe	fundene	fundene	7	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:29; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:34; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:40; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:46; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:51
-oe	fylgan	fylgan	4	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:21; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:35; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:43; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:71
-oe	fylġan	fylgan	5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:43; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:57; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:71; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:73; follow — OE fylġan
-oe	fylg(e)an	fylgean	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:40
-oe	fylgean	fylgean	3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:37; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:41; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:43
-oe	fylgian	fylgian	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:36
-oe	fyligan	fyligan	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:36
+oe	fylgan	fylgan	5	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:21; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:26; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:34; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:42; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:70
+oe	fylġan	fylgan	5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:42; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:56; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:70; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:72; follow — OE fylġan
+oe	fylg(e)an	fylgean	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:39
+oe	fylgean	fylgean	3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:36; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:40; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:42
+oe	fylgian	fylgian	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:35
+oe	fyligan	fyligan	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:35
 oe	fyr	fyr	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32
 oe	fȳr	fyr	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28; Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63
 oe	fyre	fyre	1	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33
@@ -350,7 +350,7 @@ oe	þistles	thistles	3	target_form	explicit_tag; lexical_heading	Germanic/docs/l
 oe	þorn	thorn	1	target_form	lexical_heading	thorn — OE þorn
 oe	þrēo	threo	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:34; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:56
 oe	þrēora	threora	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:34; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:57
-oe	þrīe	thrie	3	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:33; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:54; three — OE þrīe
+oe	þrīe	thrie	5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:33; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:36; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:40; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:54; three — OE þrīe
 oe	þrim	thrim	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:35; Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:57
 oe	þūsend	thusend	4	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:22; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:28; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:42; thousand — OE þūsend
 oe	*þȳsend	thysend	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:63
@@ -502,8 +502,8 @@ pgmc	*fréusaną	freusana	1	selected_input	trace_proto_input	freeze — OE frēo
 pgmc	*fríjōndz	frijondz	1	selected_input	trace_proto_input	friend — OE frēond
 pgmc	*frústą	frusta	1	selected_input	trace_proto_input	frost — OE forst
 pgmc	*fúglaz	fuglaz	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	fowl — OE fugol
-pgmc	*fulgēną	fulgena	3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:31; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:69; follow — OE fylġan
-pgmc	*fúlgijaną	fulgijana	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:30; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:49; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:71; follow — OE fylġan
+pgmc	*fulgēną	fulgena	3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:30; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:68; follow — OE fylġan
+pgmc	*fúlgijaną	fulgijana	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:29; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:48; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:70; follow — OE fylġan
 pgmc	*fúlką	fulka	1	selected_input	trace_proto_input	folk — OE folc
 pgmc	*fúlô	fulo	1	selected_input	trace_proto_input	foal — OE fola
 pgmc	*fúnðanǭ	fundano	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	find — OE fundene
@@ -951,7 +951,7 @@ dutch	beide	beide	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mo
 dutch	vel	vel	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21
 german	beide	beide	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69
 german	Nacken	nacken	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:56; Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59
-german	sondern	sondern	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21
+german	sondern	sondern	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:23
 german	stillen	stillen	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21
 german	weinen	weinen	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:22
 modeng	both	both	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69
