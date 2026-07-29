@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel cites a neuter lexeme of the `*xliđ-` type with Old English `hlid`, and Lloyd includes OE `hlid` beside ON `hliþó` and OHG `(h)lit` among forms that retain `i` [@Orel2003; @Lloyd1966].
+Orel cites a neuter lexeme of the `*xliđ-` type with Old English `hlid` 'lid', and Lloyd includes OE `hlid` 'lid' beside ON `hliþó` 'lid' and OHG `(h)lit` 'lid' among forms that retain `i` [@Orel2003; @Lloyd1966].
 
 ### Old English evidence
 
@@ -26,8 +26,8 @@ Clark Hall and Bosworth-Toller record `hlid` as the noun 'lid, cover, door, gate
 
 ### Development to Old English
 
-The selected input already represents the later Germanic `hliđ-` stage used for the derivation here. From [xlídą]{.recon} ‘lid’, heavy-syllable apocope yields `hlid`, and the form belongs to the retained-`i` set noted by Lloyd rather than to the lowered `e` type [@Lloyd1966].
+The selected input already represents the later Germanic `hliđ-` stage used for the derivation here. From [xlídą]{.recon} ‘lid’, heavy-syllable apocope yields `hlid` 'lid', and the form belongs to the retained-`i` set noted by Lloyd rather than to the lowered `e` type [@Lloyd1966].
 
 ### Form note
 
-An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later `*xlídą > hlid` line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
+An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later `*xlídą > hlid` 'lid' line that matches the attested Old English noun [@Orel2003; @Lloyd1966].

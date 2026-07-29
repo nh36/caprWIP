@@ -22,7 +22,7 @@ Kroonen preserves the comparative verb as `*slēpan-`, and Fulk cites the same f
 
 ### Old English evidence
 
-Clark Hall gives `slæpan` with preterite `slēp, slēap`, and Bright likewise lists `slæpan (slāpan), slēp slēpon slēpen` [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive `slǣpan`, not the preterite forms and not the separate noun `slǣp`.
+Clark Hall gives `slæpan` 'sleep' with preterite `slēp` 'slept', `slēap` 'slept', and Bright likewise lists `slæpan` (`slāpan`), `slēp` 'slept', `slēpon` 'slept', `slēpen` 'slept' [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive `slǣpan` 'sleep', not the preterite forms and not the separate noun `slǣp` 'sleep'.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From [slḗpaną]{.recon} ‘sleep’, Northwest Germanic lowering gives [slǣpa
 
 ### Form note
 
-The note concerns lemma type rather than a special derivational problem: this row represents the verb `slǣpan`, whereas `slǣp` belongs to noun or lookup background and `slēp/slēap` are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].
+The note concerns lemma type rather than a special derivational problem: this row represents the verb `slǣpan` 'sleep', whereas `slǣp` 'sleep' belongs to noun or lookup background and `slēp` 'slept' / `slēap` 'slept' are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].

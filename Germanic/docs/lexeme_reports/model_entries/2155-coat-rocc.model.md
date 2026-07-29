@@ -22,7 +22,7 @@ Orel cites a masculine [rukkaz]{.recon} ‘coat’ for the garment word, while K
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `rocc` as an over-garment or tunic and preserve compounds such as `bisceoprocc` and `breóstrocc` [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller record `rocc` 'coat' as an over-garment or tunic and preserve compounds such as `bisceoprocc` and `breóstrocc` 'breast-coat' [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ With [rúkkaz]{.recon} ‘coat’ as the selected input, Northwest Germanic u-lo
 
 ### Source note
 
-This entry concerns the garment noun only. The stone word seen in `stānrocc` belongs to a different lexical history [@ClarkHall1960; @BosworthToller1898].
+This entry concerns the garment noun only. The stone word seen in `stānrocc` 'stone-coat' belongs to a different lexical history [@ClarkHall1960; @BosworthToller1898].

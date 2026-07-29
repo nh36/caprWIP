@@ -23,13 +23,13 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 485
-- Broad-prose notation / compound expressions: 535
-- Broad-prose evidence suggestions: 245
+- Already indexed in same entry: 486
+- Broad-prose notation / compound expressions: 528
+- Broad-prose evidence suggestions: 259
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
-- Ordinary prose/gloss ignored: 27
+- Ordinary prose/gloss ignored: 26
 - Orthographic/normalization variants: 15
 - Table semantic auto-promoted: 27
 - Table semantic suggestions: 18
@@ -37,7 +37,7 @@
 - Table semantic ignored: 1
 - Table semantic notation / compound expressions: 16
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 262
+- Ignored fragments or sequences: 263
 - Possible extraction garbage: 0
 - Excluded intermediate trace forms: 1278
 - New unresolved candidates relative to baseline: 0
@@ -443,6 +443,7 @@
 | `mare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `mare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | ### Form note | same form already indexed in this entry |
 | `*mélukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `*mélukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `*mélukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `meoloc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `meoloc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:29 | ### Development to Old English | same form already indexed in this entry |
@@ -997,13 +998,10 @@
 | `*marōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
 | `*márōn` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:29 | intermediate or model-stage form in development chain |
 | `*meluk- / *melukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 | notation or compound expression |
-| `meolc < meoluc < *meluk` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | notation or compound expression |
 | `meoloc / meoluc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | notation or compound expression |
 | `mera / mere` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:25 | notation or compound expression |
 | `mere / mera` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | notation or compound expression |
 | `*mōder- / *mōdēr` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:21 | notation or compound expression |
-| `mōdor / modor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | notation or compound expression |
-| `mōdor / modor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | notation or compound expression |
 | `*nabulō > *næbula > nafola` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:23 | notation or compound expression |
 | `*nabulō > *næbula > OE nafola` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 | notation or compound expression |
 | `*nasō- ~ *nusō-` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:21 | notation or compound expression |
@@ -1065,7 +1063,6 @@
 | `*síβi > *síβe` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:41 | notation or compound expression |
 | `*sk-` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 | notation or compound expression |
 | `*skǣpą` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:29 | intermediate or model-stage form in development chain |
-| `*skap > WS scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:21 | notation or compound expression |
 | `*skáub > *skáeub > *skēab > *skēaβ > sċēaf` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:39 | notation or compound expression |
 | `*skeld-linga-` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | notation or compound expression |
 | `*skeld-linga-` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:33 | notation or compound expression |
@@ -1076,12 +1073,9 @@
 | `*skílling` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:29 | intermediate or model-stage form in development chain |
 | `*skúldramiz > *skúldrumiz > *skúldrum > sċuldrum` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 | notation or compound expression |
 | `*slǣpaną` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | intermediate or model-stage form in development chain |
-| `slæpan (slāpan), slēp slēpon slēpen` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | notation or compound expression |
 | `slāpan/slæpan` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | notation or compound expression |
 | `*slēb-` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:21 | notation or compound expression |
 | `*slēpan-` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:21 | notation or compound expression |
-| `slēp, slēap` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | notation or compound expression |
-| `slēp/slēap` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | notation or compound expression |
 | `*smerwjan-` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21 | notation or compound expression |
 | `*, so the stem returns to *` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:33 | notation or compound expression |
 | `*spærrô` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29 | intermediate or model-stage form in development chain |
@@ -1326,13 +1320,18 @@
 | `mēder` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mēder` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*mekojan` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:21 | pwgmc | source_protoform | citation or reconstructed source form in prose |
+| `meolc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `meolc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `meoluc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mere` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `milc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `milc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*mizdo` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:45 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `modor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `modor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
+| `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45 | pgmc | source_protoform | source form in development prose |
 | `*natjan` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1349,6 +1348,7 @@
 | `*rústu` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:49 | pgmc | comparison_form | comparative or background source form in prose |
 | `sæ` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:39 | oe | comparison_form | attested Old English comparison form in development prose |
 | `sap` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scēap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1359,12 +1359,20 @@
 | `schulder` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21 | german | comparison_form | attested comparison or dictionary form described in prose |
 | `scilling` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scip` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `show` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `*skawōjanan` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 | pgmc | selected_input | selected input described in prose |
 | `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 | pgmc | source_protoform | introductory illustrative example |
 | `*skúldrumiz` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `slǣp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `slǣp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `slāpan` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `slēap` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `slēap` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `slēp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `slēp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `slēpan` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
+| `slēpen` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `slēpon` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `smirian` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `smirian` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `smiriga` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21 | pgmc | comparison_form | attested comparison or dictionary form described in prose |
@@ -2102,7 +2110,6 @@
 
 | Form | Source | Reason |
 | --- | --- | --- |
-| `among` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21 | ordinary prose/gloss word |
 | `attestation` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:62 | ordinary prose/gloss word |
 | `cell` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:50 | ordinary prose/gloss word |
 | `evidence` | Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:36 | ordinary prose/gloss word |
@@ -2488,6 +2495,7 @@ _None._
 | `s` | Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:48 |
 | `sc` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 |
 | `sk` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:29 |
+| `*skap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:21 |
 | `t` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:43 |
 | `*tēon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:21 |
 | `to` | Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:24 |

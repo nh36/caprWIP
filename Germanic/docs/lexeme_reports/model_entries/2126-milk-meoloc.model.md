@@ -22,7 +22,7 @@ Kroonen and Orel reconstruct the noun as [meluk- / *melukz]{.recon} ‘milk’, 
 
 ### Old English evidence
 
-Old English preserves a mixed dossier for this noun. Ringe and Taylor describe West Saxon `meolc < meoluc < *meluk`, Campbell likewise discusses `meoluc` and `meoloc`, and Anglian shows `milc` [@RingeTaylor2014; @Campbell1959].
+Old English preserves a mixed dossier for this noun. Ringe and Taylor describe West Saxon `meolc` 'milk' < `meoluc` 'milk' < [mélukz]{.recon} 'milk', Campbell likewise discusses `meoluc` 'milk' and `meoloc` 'milk', and Anglian shows `milc` 'milk' [@RingeTaylor2014; @Campbell1959].
 
 ### Development to Old English
 

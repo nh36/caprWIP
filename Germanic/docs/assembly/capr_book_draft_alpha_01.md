@@ -4962,7 +4962,7 @@ Old English form: _hlid_
 
 #### Reconstruction and comparative evidence
 
-Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_, and Lloyd includes OE _hlid_ beside ON _hliþó_ and OHG _(h)lit_ among forms that retain _i_ [@Orel2003; @Lloyd1966].
+Orel cites a neuter lexeme of the _\*xliđ-_ type with Old English _hlid_ 'lid', and Lloyd includes OE _hlid_ 'lid' beside ON _hliþó_ 'lid' and OHG _(h)lit_ 'lid' among forms that retain _i_ [@Orel2003; @Lloyd1966].
 
 #### Old English evidence
 
@@ -4970,11 +4970,11 @@ Clark Hall and Bosworth-Toller record _hlid_ as the noun 'lid, cover, door, gate
 
 #### Development to Old English
 
-The derivational input already represents the later Germanic _hliđ-_ stage used for the derivation here. From [xlídą]{.recon} ‘lid’, heavy-syllable apocope yields _hlid_, and the form belongs to the retained-_i_ set noted by Lloyd rather than to the lowered _e_ type [@Lloyd1966].
+The derivational input already represents the later Germanic _hliđ-_ stage used for the derivation here. From [xlídą]{.recon} ‘lid’, heavy-syllable apocope yields _hlid_ 'lid', and the form belongs to the retained-_i_ set noted by Lloyd rather than to the lowered _e_ type [@Lloyd1966].
 
 #### Form note
 
-An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later _\*xlídą_ > _hlid_ line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
+An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative background only. The form represented here is the later _\*xlídą_ > _hlid_ 'lid' line that matches the attested Old English noun [@Orel2003; @Lloyd1966].
 
 ### light — OE _līehtan_
 
@@ -5172,7 +5172,7 @@ Kroonen and Orel reconstruct the noun as [meluk- / *melukz]{.recon} ‘milk’, 
 
 #### Old English evidence
 
-Old English preserves a mixed dossier for this noun. Ringe and Taylor describe West Saxon _meolc_ < _meoluc_ < _\*meluk_, Campbell likewise discusses _meoluc_ and _meoloc_, and Anglian shows _milc_ [@RingeTaylor2014; @Campbell1959].
+Old English preserves a mixed dossier for this noun. Ringe and Taylor describe West Saxon _meolc_ 'milk' < _meoluc_ 'milk' < [mélukz]{.recon} 'milk', Campbell likewise discusses _meoluc_ 'milk' and _meoloc_ 'milk', and Anglian shows _milc_ 'milk' [@RingeTaylor2014; @Campbell1959].
 
 #### Development to Old English
 
@@ -5240,15 +5240,15 @@ Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as [mōder- / *mōd
 
 #### Old English evidence
 
-The transmitted Old English headword tradition is _mōdor_ / _modor_, with oblique _mēder_ in the paradigm. Clark Hall, Campbell, and Ringe and Taylor all preserve that contrast [@ClarkHall1960; @Campbell1959; @RingeTaylor2014].
+The transmitted Old English headword tradition is _mōdor_ 'mother' / _modor_ 'mother', with oblique _mēder_ 'mother' in the paradigm. Clark Hall, Campbell, and Ringe and Taylor all preserve that contrast [@ClarkHall1960; @Campbell1959; @RingeTaylor2014].
 
 #### Development to Old English
 
-From [mōdēr]{.recon} ‘mother’, the regular suffixal development yields _mōder_. That regular nominative reflex is the form represented here, while the more familiar citation form _mōdor_ reflects later levelling within the r-stem paradigm [@Campbell1959; @RingeTaylor2014].
+From [mōdēr]{.recon} ‘mother’, the regular suffixal development yields _mōder_ 'mother'. That regular nominative reflex is the form represented here, while the more familiar citation form _mōdor_ 'mother' reflects later levelling within the r-stem paradigm [@Campbell1959; @RingeTaylor2014].
 
 #### Form comparison
 
-The note therefore concerns inherited vocalism rather than a different lexeme: _mōder_ is the regularized nominative represented here, but dictionaries usually print _mōdor_ / _modor_, and the oblique evidence survives in _mēder_ [@ClarkHall1960; @RingeTaylor2014].
+The note therefore concerns inherited vocalism rather than a different lexeme: _mōder_ 'mother' is the regularized nominative represented here, but dictionaries usually print _mōdor_ / _modor_ 'mother', and the oblique evidence survives in _mēder_ 'mother' [@ClarkHall1960; @RingeTaylor2014].
 
 ### net — OE _nett_
 
@@ -5448,7 +5448,7 @@ Orel cites a masculine [rukkaz]{.recon} ‘coat’ for the garment word, while K
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record _rocc_ as an over-garment or tunic and preserve compounds such as _bisceoprocc_ and _breóstrocc_ [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller record _rocc_ 'coat' as an over-garment or tunic and preserve compounds such as _bisceoprocc_ and _breóstrocc_ 'breast-coat' [@ClarkHall1960; @BosworthToller1898].
 
 #### Development to Old English
 
@@ -5456,7 +5456,7 @@ With [rúkkaz]{.recon} ‘coat’ as the derivational input, Northwest Germanic 
 
 #### Source note
 
-This entry concerns the garment noun only. The stone word seen in _stānrocc_ belongs to a different lexical history [@ClarkHall1960; @BosworthToller1898].
+This entry concerns the garment noun only. The stone word seen in _stānrocc_ 'stone-coat' belongs to a different lexical history [@ClarkHall1960; @BosworthToller1898].
 
 ### sheep — OE _sċēap_
 
@@ -5513,19 +5513,19 @@ Old English form: _sċēap_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor cite a later West Germanic _\*skap_ > WS _scéap_, while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003].
+Ringe and Taylor cite a later West Germanic _\*skap_ 'sheep' > WS _scéap_ 'sheep', while Orel preserves a Proto-Germanic noun of the _\*skēp-_ type for the same lexeme [@RingeTaylor2014; @Orel2003].
 
 #### Old English evidence
 
-Clark Hall records _scēap_ with spelling variation, and Campbell likewise lists West Saxon _scéap_ among the palatal-diphthongized forms [@ClarkHall1960; @Campbell1959].
+Clark Hall records _scēap_ 'sheep' with spelling variation, and Campbell likewise lists West Saxon _scéap_ 'sheep' among the palatal-diphthongized forms [@ClarkHall1960; @Campbell1959].
 
 #### Development to Old English
 
-From [skḗpą]{.recon} ‘sheep’, Northwest Germanic lowering gives [skǣpą]{.recon} ‘sheep’; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_. The development represented here is therefore fully regular.
+From [skḗpą]{.recon} ‘sheep’, Northwest Germanic lowering gives [skǣpą]{.recon} ‘sheep’; after apocope and palatalization the West Saxon branch diphthongizes to _sċēap_ 'sheep'. The development represented here is therefore fully regular.
 
 #### Dialect note
 
-Ringe and Taylor contrast West Saxon _scéap_ with Mercian and Kentish _scép_, and Campbell also notes Northumbrian _scip_. The form represented here is the West Saxon headword [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor contrast West Saxon _scéap_ 'sheep' with Mercian and Kentish _scép_ 'sheep', and Campbell also notes Northumbrian _scip_ 'sheep'. The form represented here is the West Saxon headword [@RingeTaylor2014; @Campbell1959].
 
 ### shilling — OE _sċilling_
 
@@ -5587,11 +5587,11 @@ Kroonen treats the cognate set under _\*skellinga-_ ~ _\*skillinga-_ and connect
 
 #### Old English evidence
 
-Clark Hall records _scilling_, and Campbell cites it among nouns with unstressed _i_ in derivational _-ing_ [@ClarkHall1960; @Campbell1959]. The target is the ordinary OE citation form, normalized as _sċilling_.
+Clark Hall records _scilling_ 'shilling', and Campbell cites it among nouns with unstressed _i_ in derivational _-ing_ [@ClarkHall1960; @Campbell1959]. The target is the ordinary OE citation form, normalized as _sċilling_ 'shilling'.
 
 #### Development to Old English
 
-From [skíllingaz]{.recon} ‘shilling’, loss of final _-az_ yields [skílling]{.recon} ‘shilling’. Old English palatalization of initial _sk_ before front vocalism then gives _sċilling_. The _i_ of derivational _-ing-_ remains, so the regular outcome is _sċilling_, not [sċilleng]{.recon} ‘shilling’ [@Campbell1959; @Hogg1992].
+From [skíllingaz]{.recon} ‘shilling’, loss of final _-az_ yields [skílling]{.recon} ‘shilling’. Old English palatalization of initial _sk_ before front vocalism then gives _sċilling_ 'shilling'. The _i_ of derivational _-ing-_ remains, so the regular outcome is _sċilling_ 'shilling', not [sċilleng]{.recon} 'shilling' [@Campbell1959; @Hogg1992].
 
 #### Form note
 
@@ -5656,19 +5656,19 @@ Old English form: _sċēawian_
 
 #### Reconstruction and comparative evidence
 
-Orel and Kroonen cite a Class II verb of the type [_\*skawōjan-_]{.iv lang=pgmc sort=skawojan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"}, with OE [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"} among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"}, [_scāwian_]{.iv lang=oe sort=scawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"}, confirming that it belongs to the ordinary show-verb set rather than to a special finite-cell formation [@SieversBrunner1965].
+Orel and Kroonen cite a Class II verb of the type [_\*skawōjan-_]{.iv lang=pgmc sort=skawojan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"}, with OE [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"} 'show' among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"} 'show', [_scāwian_]{.iv lang=oe sort=scawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3084"} 'show', confirming that it belongs to the ordinary show-verb set rather than to a special finite-cell formation [@SieversBrunner1965].
 
 #### Old English evidence
 
-Bright lists [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} (W. II.) and also the related form [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} [@BrightCassidyRingler1971]. The sources therefore use [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"}, while [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} supplies a normalized spelling.
+Bright lists [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} 'show' (W. II.) and also the related form [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} 'show' [@BrightCassidyRingler1971]. The sources therefore use [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} 'show', while [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3088"} 'show' supplies a normalized spelling.
 
 #### Development to Old English
 
-From [[skáwōjaną]{.recon} ‘show’]{.iv lang=pgmc sort=skawojana role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"}, Old English _aw_ before a following vowel yields _ēaw_, and _\*ō_ survives between _\*w_ and _\*j_ in the Class II suffix. The development therefore runs regularly to [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"}, without the direct [aw+j]{.recon} ‘show’ problem seen in other verb types [@Campbell1959; @Orel2003].
+From [[skáwōjaną]{.recon} ‘show’]{.iv lang=pgmc sort=skawojana role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"}, Old English _aw_ before a following vowel yields _ēaw_, and _\*ō_ survives between _\*w_ and _\*j_ in the Class II suffix. The development therefore runs regularly to [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3092"} 'show', without the direct [aw+j]{.recon} 'show' problem seen in other verb types [@Campbell1959; @Orel2003].
 
 #### Form note
 
-The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3096"} and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3096"} is orthographic normalization of initial <_sc_>, not a difference of lexeme or paradigm cell [@Campbell1959; @Hogg1992].
+The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3096"} 'show' and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3096"} 'show' is orthographic normalization of initial <_sc_>, not a difference of lexeme or paradigm cell [@Campbell1959; @Hogg1992].
 
 ### sleep — OE _slǣpan_
 
@@ -5729,7 +5729,7 @@ Kroonen preserves the comparative verb as _\*slēpan-_, and Fulk cites the same 
 
 #### Old English evidence
 
-Clark Hall gives _slæpan_ with preterite _slēp_, _slēap_, and Bright likewise lists _slæpan_ _(slāpan)_, _slēp_ _slēpon_ _slēpen_ [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive _slǣpan_, not the preterite forms and not the separate noun _slǣp_.
+Clark Hall gives _slæpan_ 'sleep' with preterite _slēp_ 'slept', _slēap_ 'slept', and Bright likewise lists _slæpan_ (_slāpan_), _slēp_ 'slept', _slēpon_ 'slept', _slēpen_ 'slept' [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive _slǣpan_ 'sleep', not the preterite forms and not the separate noun _slǣp_ 'sleep'.
 
 #### Development to Old English
 
@@ -5737,7 +5737,7 @@ From [slḗpaną]{.recon} ‘sleep’, Northwest Germanic lowering gives [slǣpa
 
 #### Form note
 
-The note concerns lemma type rather than a special derivational problem: this row represents the verb _slǣpan_, whereas _slǣp_ belongs to noun or lookup background and _slēp_/_slēap_ are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].
+The note concerns lemma type rather than a special derivational problem: this row represents the verb _slǣpan_ 'sleep', whereas _slǣp_ 'sleep' belongs to noun or lookup background and _slēp_ 'slept' / _slēap_ 'slept' are preterite forms [@ClarkHall1960; @BrightCassidyRingler1971, 435].
 
 ### smear — OE _smierwan_
 
