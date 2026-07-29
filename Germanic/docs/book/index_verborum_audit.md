@@ -23,9 +23,9 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 483
-- Broad-prose notation / compound expressions: 545
-- Broad-prose evidence suggestions: 233
+- Already indexed in same entry: 485
+- Broad-prose notation / compound expressions: 541
+- Broad-prose evidence suggestions: 235
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
@@ -290,6 +290,8 @@
 | `*fléuganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*fléuganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | ### Development to Old English | same form already indexed in this entry |
 | `fogol` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:51 | ### Development to Old English | same form already indexed in this entry |
+| `forlēosan` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:29 | ### Form note | same form already indexed in this entry |
+| `forloren` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:29 | ### Form note | same form already indexed in this entry |
 | `*fúglaz` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*fúglaz` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:45 | ### Development to Old English | same form already indexed in this entry |
 | `*fúglaz` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:69 | ### Expected and attested forms | same form already indexed in this entry |
@@ -744,7 +746,6 @@
 | `bā, bū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | notation or compound expression |
 | `backan, bahhan` | Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21 | notation or compound expression |
 | `*bai, *bans, *bōz/*bōns, *bō` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22 | notation or compound expression |
-| `bām twām` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | notation or compound expression |
 | `bā twā` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | notation or compound expression |
 | `*báugijaną > bīeġan` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29 | notation or compound expression |
 | `*baugjan-` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:21 | notation or compound expression |
@@ -768,7 +769,7 @@
 | `*bō-þ-` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:29 | notation or compound expression |
 | `brēc fp. breeches` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:25 | notation or compound expression |
 | `*brōk-` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | notation or compound expression |
-| `*brōkiz > brēċ` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:29 | notation or compound expression |
+| `*brōkiz` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:29 | intermediate or model-stage form in development chain |
 | `*budman- ~ *buttman-` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:22 | notation or compound expression |
 | `*budmaz *butmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 | notation or compound expression |
 | `*budmō, gen. *buttaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | notation or compound expression |
@@ -836,7 +837,6 @@
 | `** for **` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:35 | notation or compound expression |
 | `for-` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:33 | notation or compound expression |
 | `*fōr ~ *fun-` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:21 | notation or compound expression |
-| `forlēosan / forloren` | Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:29 | notation or compound expression |
 | `fu-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:40 | notation or compound expression |
 | `*fulgen-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:21 | notation or compound expression |
 | `*fulgija- / *fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:30 | notation or compound expression |
@@ -897,7 +897,6 @@
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:33 | notation or compound expression |
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
 | `-ian` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:29 | notation or compound expression |
-| `Ic bēge mīne cneówa` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:25 | notation or compound expression |
 | `-ig` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:27 | notation or compound expression |
 | `-iġ` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:28 | notation or compound expression |
 | `-iġ` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:48 | notation or compound expression |
@@ -1069,7 +1068,6 @@
 | `scēaw- / sceawað` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:28 | notation or compound expression |
 | `*sċilleng` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:29 | intermediate or model-stage form in development chain |
 | `*sebjō-` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:26 | notation or compound expression |
-| `Se ord bīgde upp tō þām hiltum` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:25 | notation or compound expression |
 | `*síβi > *síβe` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:41 | notation or compound expression |
 | `*sk-` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 | notation or compound expression |
 | `*skǣpą` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:29 | intermediate or model-stage form in development chain |
@@ -1238,6 +1236,7 @@
 | --- | --- | --- | --- | --- |
 | `and` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `ā-sundrian` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `bām` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bēġra` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bisceoprocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `breóstrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1427,6 +1426,7 @@
 | `tien` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*tīđiz` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*tūnăn` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:33 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `twām` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wæden` | Germanic/docs/lexeme_reports/model_entries/2266-wade-wadan.model.md:33 | oe | comparison_form | attested Old English comparison form in development prose |
 | `wǣpen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wæpn` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |

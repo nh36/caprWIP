@@ -35,8 +35,8 @@ displace the inherited neuter [`*bō`]{.iv lang=pgmc sort=bo role=selected_input
 
 The Old English dual paradigm is well established. Brunner gives masculine
 [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', feminine [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and neuter [`bū`]{.iv lang=oe sort=bu role=target_form} 'both' beside `bā`, with compounds such as
-`bā twā` 'both', `bū tū` 'both', and `bām twām` 'both' [@SieversBrunner1965, §324 Anm. 2].
-Campbell and Fulk present the same basic pattern: masculine [`bēġen`]{.iv lang=oe sort=begen role=comparison_form}, feminine
+`bā twā` 'both (two)', `bū tū` 'both (two, neut.)', and `bām` 'both' `twām` 'two' [@SieversBrunner1965, §324 Anm. 2].
+Campbell and Fulk present the same basic pattern: masculine [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', feminine
 `bā`, neuter `bā, bū`, genitive `bēġra` 'both', `bēġ(e)a`, and dative [`bǣm`]{.iv lang=oe sort=baem role=comparison_form} 'both'
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
@@ -54,7 +54,7 @@ to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: `Auslautendes ō erscheint als û in bū ... cu ... hū, tū`
 [@SieversBrunner1965, §69].
 
-The development is therefore straightforward: [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} > [`bū`]{.iv lang=oe sort=bu role=target_form}.
+The development is therefore straightforward: [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} 'both' > [`bū`]{.iv lang=oe sort=bu role=target_form} 'both'.
 
 ### Form comparison
 

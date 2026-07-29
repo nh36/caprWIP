@@ -22,8 +22,8 @@ Kroonen reconstructs the weak verb as `*baugjan-` 'to (make) bend' and cites Old
 
 ### Old English evidence
 
-Clark Hall lemmatizes `biegan`, and Bosworth-Toller records `bigan` with examples such as `Ic bēge mīne cneówa` and `Se ord bīgde upp tō þām hiltum` [@ClarkHall1960; @BosworthToller1898, 102]. The form `bīeġan` used here is a normalized spelling of that attested Old English weak verb.
+Clark Hall lemmatizes `biegan` 'bow, bend' as an Old English weak verb, and Bosworth-Toller records `bigan` 'bow, bend' as an attested form [@ClarkHall1960; @BosworthToller1898, 102]. The form `bīeġan` 'bow, bend' used here is a normalized spelling of that attested Old English weak verb.
 
 ### Development to Old English
 
-From [báugijaną]{.recon} ‘bow’, the stem reaches pre-Old-English [bēagjan]{.recon} ‘bow’, after which palatalization of `*gj` and i-umlaut yield West Saxon `biegan`; Campbell lists `biegan` among the regular `ie` outcomes of `*éa` under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: `*báugijaną > bīeġan`.
+From [báugijaną]{.recon} 'bow', the stem reaches pre-Old-English [bēagjan]{.recon} 'bow', after which palatalization of `*gj` and i-umlaut yield West Saxon `biegan` 'bow'; Campbell lists `biegan` 'bow' among the regular `ie` outcomes of `*éa` under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: `*báugijaną > bīeġan` 'bow'.

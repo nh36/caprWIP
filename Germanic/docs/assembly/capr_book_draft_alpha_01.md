@@ -2607,15 +2607,15 @@ Old English form: _bacan_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as [[bakanan]{.recon} ‘bake’]{.iv lang=pgmc sort=bakanan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} and cites Old English [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [[bakan]{.recon} ‘bake’]{.iv lang=preoe sort=bakan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} to Old English [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} [@Campbell1959, 61; @RingeTaylor2014].
+Orel reconstructs the verb as [[bakanan]{.recon} 'bake']{.iv lang=pgmc sort=bakanan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} and cites Old English [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} 'bake' beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [[bakan]{.recon} ‘bake’]{.iv lang=preoe sort=bakan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} to Old English [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:171"} [@Campbell1959, 61; @RingeTaylor2014].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:175"} as the ordinary Old English verb 'to bake' [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
+Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:175"} 'bake' as the ordinary Old English verb [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
 
 #### Development to Old English
 
-From [[bákaną]{.recon} ‘bake’]{.iv lang=pgmc sort=bakana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"}, Anglo-Frisian brightening first gives [bækaną]{.recon} ‘bake’. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"} [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [[bákaną]{.recon}]{.iv lang=pgmc sort=bakana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"} > [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"}.
+From [[bákaną]{.recon} 'bake']{.iv lang=pgmc sort=bakana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"}, Anglo-Frisian brightening first gives [bækaną]{.recon} 'bake'. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"} 'bake' [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [[bákaną]{.recon}]{.iv lang=pgmc sort=bakana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"} > [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:179"}.
 
 ### beech — OE _bōc_
 
@@ -2735,7 +2735,7 @@ Old English form: _beġinnan_
 
 #### Reconstruction and comparative evidence
 
-The verb is modeled here as inherited [[bigínnaną]{.recon} ‘begin’]{.iv lang=pgmc sort=biginnana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:293"}. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists [_ginnan_]{.iv lang=oe sort=ginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:293"} among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174].
+The verb is modeled here as inherited [[bigínnaną]{.recon} ‘begin’]{.iv lang=pgmc sort=biginnana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:293"}. Ringe and Taylor state that intervocalic _\*g_ is palatalized between front vowels in Old English [@RingeTaylor2014], and Campbell lists [_ginnan_]{.iv lang=oe sort=ginnan source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:293"} 'begin' among familiar examples of palatal _g_ in this verb family [@Campbell1959, 174].
 
 #### Old English evidence
 
@@ -3020,8 +3020,8 @@ displace the inherited neuter [_\*bō_]{.iv lang=pgmc sort=bo role=selected_inpu
 
 The Old English dual paradigm is well established. Brunner gives masculine
 [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} 'both', feminine [_bā_]{.iv lang=oe sort=ba role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} 'both', and neuter [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:565"} 'both' beside _bā_, with compounds such as
-_bā_ _twā_ 'both', _bū_ _tū_ 'both', and _bām_ _twām_ 'both' [@SieversBrunner1965, §324 Anm. 2].
-Campbell and Fulk present the same basic pattern: masculine [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:567"}, feminine
+_bā_ _twā_ 'both (two)', _bū_ _tū_ 'both (two, neut.)', and _bām_ 'both' _twām_ 'two' [@SieversBrunner1965, §324 Anm. 2].
+Campbell and Fulk present the same basic pattern: masculine [_bēġen_]{.iv lang=oe sort=begen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:567"} 'both', feminine
 _bā_, neuter _bā_, _bū_, genitive _bēġra_ 'both', _bēġ(e)a_, and dative [_bǣm_]{.iv lang=oe sort=baem role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:568"} 'both'
 [@Campbell1959, §683; @Fulk2018, §10.1].
 
@@ -3039,7 +3039,7 @@ to Old English [@Campbell1959, §122]. Brunner states the same development more
 directly: Auslautendes _ō_ erscheint als û in _bū_ ... cu ... _hū_, _tū_
 [@SieversBrunner1965, §69].
 
-The development is therefore straightforward: [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:585"} > [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:585"}.
+The development is therefore straightforward: [_\*bō_]{.iv lang=pgmc sort=bo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:585"} 'both' > [_bū_]{.iv lang=oe sort=bu role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:585"} 'both'.
 
 #### Form comparison
 
@@ -3116,11 +3116,11 @@ Kroonen reconstructs the weak verb as _\*baugjan-_ 'to (make) bend' and cites Ol
 
 #### Old English evidence
 
-Clark Hall lemmatizes _biegan_, and Bosworth-Toller records _bigan_ with examples such as Ic _bēge_ _mīne_ _cneówa_ and Se ord _bīgde_ upp _tō_ _þām_ hiltum [@ClarkHall1960; @BosworthToller1898, 102]. The form _bīeġan_ used here is a normalized spelling of that attested Old English weak verb.
+Clark Hall lemmatizes _biegan_ 'bow, bend' as an Old English weak verb, and Bosworth-Toller records _bigan_ 'bow, bend' as an attested form [@ClarkHall1960; @BosworthToller1898, 102]. The form _bīeġan_ 'bow, bend' used here is a normalized spelling of that attested Old English weak verb.
 
 #### Development to Old English
 
-From [báugijaną]{.recon} ‘bow’, the stem reaches pre-Old-English [bēagjan]{.recon} ‘bow’, after which palatalization of _\*gj_ and i-umlaut yield West Saxon _biegan_; Campbell lists _biegan_ among the regular _ie_ outcomes of _\*éa_ under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: _\*báugijaną_ > _bīeġan_.
+From [báugijaną]{.recon} 'bow', the stem reaches pre-Old-English [bēagjan]{.recon} 'bow', after which palatalization of _\*gj_ and i-umlaut yield West Saxon _biegan_ 'bow'; Campbell lists _biegan_ 'bow' among the regular _ie_ outcomes of _\*éa_ under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: _\*báugijaną_ > _bīeġan_ 'bow'.
 
 ### breeches — OE _brēċ_
 
@@ -3177,15 +3177,15 @@ Old English form: _brēċ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the derivational input here is the plural noun form [brōkiz]{.recon} ‘breeches’.
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the derivational input here is the plural noun form [brōkiz]{.recon} ‘breeches’.
 
 #### Old English evidence
 
-Bright notes _brōc_ with plural _brēc_, and Clark Hall gives _brēc_ fp. breeches while also listing _broc_ as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. I write _brēċ_ for the long vowel and palatal consonant; the attested plural is _brēc_.
+Bright notes _brōc_ 'breeches' with plural _brēc_ 'breeches', and Clark Hall gives _brēc_ fp. breeches while also listing _broc_ 'breeches' as a feminine noun probably represented chiefly in the plural [@BrightCassidyRingler1971; @ClarkHall1960, 64]. I write _brēċ_ 'breeches' for the long vowel and palatal consonant; the attested plural is _brēc_.
 
 #### Development to Old English
 
-After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ undergoes i-umlaut to _ē_; final high-vowel apocope then yields _brēċ_ [@RingeTaylor2014]. The development is therefore regular: _\*brōkiz_ > _brēċ_.
+After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _ō_ 'breeches' undergoes i-umlaut to _ē_ 'breeches'; final high-vowel apocope then yields _brēċ_ 'breeches' [@RingeTaylor2014]. The development is therefore regular: [brōkiz]{.recon} 'breeches' > _brēċ_ 'breeches'.
 
 ### calf — OE _ċealf_
 
@@ -3248,11 +3248,11 @@ Kroonen treats the noun under _\*kalbiz-_ and notes an older s-stem [kalbaz, pl.
 
 #### Old English evidence
 
-Clark Hall gives [_cealf_]{.iv lang=oe sort=cealf source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"} I. (æ, e) nm. (nap. [_cealfru_]{.iv lang=oe sort=cealfru source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"}), and Bosworth-Toller likewise records _Caelf_ / _Cealf_ beside plural forms such as _calfur_ and [_cealfru_]{.iv lang=oe sort=cealfru source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"} [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-_-r-_ plural pattern [@Campbell1959; @Fulk2018, 193]. I write _ċealf_ for the palatalized initial; the attested dictionary headword is [_cealf_]{.iv lang=oe sort=cealf source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"}.
+Clark Hall gives [_cealf_]{.iv lang=oe sort=cealf source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"} 'calf' I. (æ, e) nm. (nap. [_cealfru_]{.iv lang=oe sort=cealfru source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"} 'calves'), and Bosworth-Toller likewise records _Caelf_ / _Cealf_ 'calf' beside plural forms such as _calfur_ and [_cealfru_]{.iv lang=oe sort=cealfru source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"} 'calves' [@ClarkHall1960; @BosworthToller1898, 131]. Campbell and Fulk show the same singular-plus-_-r-_ plural pattern [@Campbell1959; @Fulk2018, 193]. I write _ċealf_ 'calf' for the palatalized initial; the attested dictionary headword is [_cealf_]{.iv lang=oe sort=cealf source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:785"} 'calf'.
 
 #### Development to Old English
 
-After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives [kælb]{.recon} ‘calf’, and breaking before _l_ plus consonant yields [kealb]{.recon} ‘calf’. Ringe and Taylor's account of the lexeme and their rule for initial _k_ in front-vocalic environments support the West Saxon palatalized onset represented here as _ċ-_, so [kálbaz]{.recon} ‘calf’ develops regularly to _ċealf_ [@RingeTaylor2014, 220].
+After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives [kælb]{.recon} ‘calf’, and breaking before _l_ plus consonant yields [kealb]{.recon} ‘calf’. Ringe and Taylor's account of the lexeme and their rule for initial _k_ in front-vocalic environments support the West Saxon palatalized onset represented here as _ċ-_, so [kálbaz]{.recon} 'calf' develops regularly to _ċealf_ 'calf' [@RingeTaylor2014, 220].
 
 ### corn — OE _corn_
 
@@ -3375,11 +3375,11 @@ Orel reconstructs the noun as [dēdiz]{.recon} ‘deed’, and Ringe and Taylor 
 
 #### Old English evidence
 
-Campbell states that Primitive Germanic _ē_ appears as West Saxon _ǣ_ but in other Old English dialects mostly as _ē_, and Brunner gives the contrast explicitly as West Saxon _dǣd_ beside non-West-Saxon _dēd_ [@Campbell1959; @SieversBrunner1965]. Clark Hall likewise lists _dæd_ and cross-refers Anglian _dēd_ to it [@ClarkHall1960]. West Saxon _dǣd_ is therefore the relevant Old English form here, with Anglian _dēd_ as a dialectal doublet.
+Campbell states that Primitive Germanic _ē_ appears as West Saxon _ǣ_ but in other Old English dialects mostly as _ē_, and Brunner gives the contrast explicitly as West Saxon _dǣd_ 'deed' beside non-West-Saxon _dēd_ 'deed' [@Campbell1959; @SieversBrunner1965]. Clark Hall likewise lists _dæd_ 'deed' and cross-refers Anglian _dēd_ to it [@ClarkHall1960]. West Saxon _dǣd_ is therefore the relevant Old English form here, with Anglian _dēd_ as a dialectal doublet.
 
 #### Development to Old English
 
-From inherited [dēdiz]{.recon} ‘deed’, loss of final _-z_ and the West Saxon lowering of stressed long _ē_ yield _dǣd_; Anglian _dēd_ preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965]. The development treated here is therefore the regular West Saxon line.
+From inherited [dēdiz]{.recon} 'deed', loss of final _-z_ and the West Saxon lowering of stressed long _ē_ yield _dǣd_ 'deed'; Anglian _dēd_ 'deed' preserves the non-West-Saxon outcome [@Campbell1959; @SieversBrunner1965]. The development treated here is therefore the regular West Saxon line.
 
 ### door — OE _dor_
 
@@ -3501,15 +3501,15 @@ Old English form: _faran_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the inherited strong verb as _\*faran-_, and Orel gives the same lexeme as [faranan]{.recon} ‘fare’, both with Old English _faran_ among the reflexes [@Kroonen2013; @Orel2003, 132]. Campbell also uses _faran_ as a standard example of Old English A-restoration [@Campbell1959, 61].
+Kroonen gives the inherited strong verb as _\*faran-_, and Orel gives the same lexeme as [faranan]{.recon} 'fare', both with Old English _faran_ 'fare' among the reflexes [@Kroonen2013; @Orel2003, 132]. Campbell also uses _faran_ 'fare' as a standard example of Old English A-restoration [@Campbell1959, 61].
 
 #### Old English evidence
 
-Clark Hall lemmatizes the strong verb as _faran_ and separately records weak _færan_ 'to frighten'; [_fære_]{.iv lang=oe sort=faere source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:1028"}, [_færst_]{.iv lang=oe sort=faerst source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:1028"}, and [_færð_]{.iv lang=oe sort=faerd source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:1028"} belong to present-tense forms of _faran_ rather than to the infinitive itself [@ClarkHall1960]. Bosworth-Toller preserves the same distinction [@BosworthToller1898, 108]. The Old English form here is therefore the attested citation infinitive _faran_.
+Clark Hall lemmatizes the strong verb as _faran_ 'fare' and separately records weak _færan_ 'to frighten'; [_fære_]{.iv lang=oe sort=faere source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:1028"} 'fare', [_færst_]{.iv lang=oe sort=faerst source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:1028"} 'fare', and [_færð_]{.iv lang=oe sort=faerd source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:1028"} 'fare' belong to present-tense forms of _faran_ rather than to the infinitive itself [@ClarkHall1960]. Bosworth-Toller preserves the same distinction [@BosworthToller1898, 108]. The Old English form here is therefore the attested citation infinitive _faran_ 'fare'.
 
 #### Development to Old English
 
-From [fáraną]{.recon} ‘fare’, Anglo-Frisian brightening first gives [færaną]{.recon} ‘fare’, but A-restoration before single _r_ returns [faraną]{.recon} ‘fare’; later apocope and weak-tail reduction yield _faran_ [@Campbell1959, 61]. Fulk's contrast with participial faren- < _\*faræn-_ < _\*faran-_ shows why fronting elsewhere in the paradigm does not alter the infinitive headword [@Fulk2018].
+From [fáraną]{.recon} ‘fare’, Anglo-Frisian brightening first gives [færaną]{.recon} ‘fare’, but A-restoration before single _r_ returns [faraną]{.recon} ‘fare’; later apocope and weak-tail reduction yield _faran_ 'fare' [@Campbell1959, 61]. Fulk's contrast with participial faren- < _\*faræn-_ < _\*faran-_ shows why fronting elsewhere in the paradigm does not alter the infinitive headword [@Fulk2018].
 
 ### fell — OE _fell_
 
@@ -3824,19 +3824,19 @@ Old English form: _lēosan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ and Old English _for-lēosan_; Orel likewise gives Old English _for-leósan_ [@Kroonen2013; @Orel2003]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix.
+Kroonen reconstructs the verb under _\*leusan-_ and cites prefixed daughters such as Gothic _fra-liusan_ 'lose' and Old English _for-lēosan_ 'lose, forlorn'; Orel likewise gives Old English _for-leósan_ 'lose' [@Kroonen2013; @Orel2003]. The inherited verbal base is therefore clear, though the daughter set often appears with the prefix.
 
 #### Old English evidence
 
-The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ and especially in the participle _forloren_, recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014; @ClarkHall1960; @BosworthToller1898]. The simplex infinitive _lēosan_ represents the verbal base itself.
+The direct Old English evidence behind English _forlorn_ lies in the prefixed verb _forlēosan_ 'lose, forlorn' and especially in the participle _forloren_ 'forlorn', recorded by Ringe and Taylor and in the dictionaries [@RingeTaylor2014; @ClarkHall1960; @BosworthToller1898]. The simplex infinitive _lēosan_ 'lose' represents the verbal base itself.
 
 #### Form note
 
-As a base-form comparison, the simplex infinitive is _lēosan_, while the English adjective continues the prefixed Old English family _forlēosan_ / _forloren_ [@RingeTaylor2014].
+As a base-form comparison, the simplex infinitive is _lēosan_ 'lose', while the English adjective continues the prefixed Old English family _forlēosan_ 'lose' / _forloren_ 'forlorn' [@RingeTaylor2014].
 
 #### Development to Old English
 
-From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną]{.recon} 'lose', and later nasal apocope and weak-tail reduction yield _lēosan_ [@RingeTaylor2014]. The prefixed forms follow the same verbal base with added _for-_.
+From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną]{.recon} 'lose', and later nasal apocope and weak-tail reduction yield _lēosan_ 'lose' [@RingeTaylor2014]. The prefixed forms follow the same verbal base with added _for-_.
 
 ### gang — OE _gang_
 
