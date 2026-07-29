@@ -18,13 +18,13 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the word as a stem complex [budmō, gen. *buttaz]{.recon} ‘bottom’,
+Kroonen reconstructs the word as a stem complex [budmō]{.recon} 'bottom' with genitive [buttaz]{.recon} 'bottom',
 summarized as `*budman- ~ *buttman-`, and gives Old English `botm` as the reflex
-[@Kroonen2013, 120]. The comparative label [búdmaz]{.recon} ‘bottom’ names the lexeme-level stem
-complex, while the selected input [búttmaz]{.recon} ‘bottom’ represents the pre-Old-English
+[@Kroonen2013, 120]. The comparative label [búdmaz]{.recon} 'bottom' names the lexeme-level stem
+complex, while the selected input [búttmaz]{.recon} 'bottom' represents the pre-Old-English
 form with oblique `*butt-` generalized into the nominative formation.
 
-Orel likewise preserves both sides of the comparison under [budmaz *butmaz]{.recon} ‘bottom’
+Orel likewise preserves both sides of the comparison under [budmaz]{.recon} 'bottom' and [butmaz]{.recon} 'bottom'
 [@Orel2003, 100]. The selected input is thus a historical stem choice, not an
 arbitrary respelling.
 
@@ -38,6 +38,6 @@ showing the wider reflex family without weakening the attested lemma
 ### Development to Old English
 
 Once the oblique `*butt-` stem has been generalized, the selected input
-[búttmaz]{.recon} ‘bottom’ develops regularly to `botm`. The analogical step is therefore early:
+[búttmaz]{.recon} 'bottom' develops regularly to `botm`. The analogical step is therefore early:
 it belongs to pre-Old-English stem formation rather than to a later choice
 among Old English paradigm cells.

@@ -18,30 +18,33 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The comparative sources are not uniform. Orel gives **[[xwalaz]{.recon} ‘whale’]{.iv lang=pgmc sort=xwalaz role=source_protoform}** and notes some
-mixed **[[xwaliz]{.recon} ‘whale’]{.iv lang=pgmc sort=xwaliz role=comparison_form}** evidence [@Orel2003, 197]. Kroonen instead cites
-**[`*hwali-`]{.iv lang=pgmc sort=hwali role=comparison_form}** [@Kroonen2013, 262].
+The comparative sources are not uniform. Orel gives
+[[xwalaz]{.recon} 'whale']{.iv lang=pgmc sort=xwalaz role=source_protoform} and notes some mixed
+[[xwaliz]{.recon} 'whale']{.iv lang=pgmc sort=xwaliz role=comparison_form} evidence
+[@Orel2003, 197]. Kroonen instead cites
+[`*hwali-`]{.iv lang=pgmc sort=hwali role=comparison_form} [@Kroonen2013, 262].
 
-Both notations agree on inherited initial **`hw-/xw-`**, but they differ in
-stem label. The a-stem-like input followed here is closer to Orel's notation
-than to Kroonen's citation form.
+Both notations agree on inherited initial `hw-/xw-`, but they differ in stem
+label. The a-stem-like input followed here is closer to Orel's notation than
+to Kroonen's citation form.
 
 ### Old English evidence
 
-Clark Hall lemmatizes the noun as **[`hwal`]{.iv lang=oe sort=hwal role=comparison_form} 'whale'**, and Bosworth-Toller preserves the
-plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales'** [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
-is normalized here as **[`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale'** for the singular citation form with Anglo-
-Frisian fronting.
+Clark Hall lemmatizes the noun as [`hwal`]{.iv lang=oe sort=hwal role=comparison_form} 'whale',
+and Bosworth-Toller preserves plural [`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}
+'whales' [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
+is normalized here as [`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale' for the
+singular citation form with Anglo-Frisian fronting.
 
-The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales'** supplies control evidence. It shows the same
-lexeme with **`a[* in an open syllable, beside singular **[]{.recon} ‘whale’hwæl`]{.iv lang=oe sort=hwael role=target_form}** in the
-closed monosyllable.
+The plural [`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales' supplies control
+evidence. It shows the same lexeme with `a` in an open syllable beside
+singular [`hwæl`]{.iv lang=oe sort=hwael role=target_form} in a closed monosyllable.
 
 ### Development to Old English
 
-From **[xwálaz]{.recon} ‘whale’**, final **`-z[* disappears and bare final **]{.recon} ‘whale’-a[* is lost.
-Anglo-Frisian fronting then yields **]{.recon} ‘whale’æ[* in the closed monosyllable, and Old
-English orthography writes **]{.recon} ‘whale’hwæl`**.
+From [xwálaz]{.recon} 'whale', final `-z` disappears and bare final `-a` is lost.
+Anglo-Frisian fronting then yields `æ` in the closed monosyllable, and Old
+English orthography writes `hwæl`.
 
 ### Formation comparison
 

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel cite lemma-style Proto-Germanic headwords of the [hurna- / *xurnan]{.recon} ‘horn’ type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input [xúrną]{.recon} ‘horn’ is the nominative-style form used in the derivation here.
+Kroonen and Orel cite lemma-style Proto-Germanic headwords of the `*hurna-` / [xurnan]{.recon} 'horn' type for this noun [@Kroonen2013; @Orel2003, 234]. The selected input [xúrną]{.recon} 'horn' is the nominative-style form used in the derivation here.
 
 ### Old English evidence
 
@@ -26,8 +26,8 @@ Clark Hall, Bosworth-Toller, and Bright all record `horn` as the ordinary Old En
 
 ### Development to Old English
 
-From [xúrną]{.recon} ‘horn’, Northwest Germanic u-lowering gives [xórną]{.recon} ‘horn’, and later loss of the final nasal leaves `horn`. The development treated here is fully regular.
+From [xúrną]{.recon} 'horn', Northwest Germanic u-lowering gives [xórną]{.recon} 'horn', and later loss of the final nasal leaves `horn`. The development treated here is fully regular.
 
 ### Form note
 
-The note's oblique [xurnăn]{.recon} ‘horn’ belongs to comparative stem background only. It does not replace the selected input [xúrną]{.recon} ‘horn’ as the derivational form used here [@Kroonen2013; @Orel2003, 234].
+The note's oblique [xurnăn]{.recon} 'horn' belongs to comparative stem background only. It does not replace the selected input [xúrną]{.recon} 'horn' as the derivational form used here [@Kroonen2013; @Orel2003, 234].

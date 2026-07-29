@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel reconstruct the noun as [meluk- / *melukz]{.recon} ‘milk’, and the nominative-style input used here is [mélukz]{.recon} ‘milk’ [@Kroonen2013; @Orel2003, 306].
+Kroonen and Orel reconstruct the noun with stem notation `*meluk-` and nominative [melukz]{.recon} 'milk', and the nominative-style input used here is [mélukz]{.recon} 'milk' [@Kroonen2013; @Orel2003, 306].
 
 ### Old English evidence
 

@@ -18,7 +18,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 ### Reconstruction and comparative evidence
 
-The noun is the ordinary Germanic a-stem [fúglaz]{.recon} 'fowl' ‘fowl’, continued by forms such as
+The noun is the ordinary Germanic a-stem [fúglaz]{.recon} 'fowl', continued by forms such as
 Old Norse `fugl` and Old High German `fogal` [@Kroonen2013, 197; @Orel2003,
 155]. There
 is no stem-class or paradigm-cell dispute behind this entry. The comparative
@@ -42,7 +42,7 @@ retains `u` where the regular history predicts `fo-` [@Campbell1959, 150].
 
 ### Development to Old English
 
-From [fúglaz]{.recon} 'fowl' ‘fowl’, the regular cascade yields `fogol` 'fowl': the root vowel lowers before
+From [fúglaz]{.recon} 'fowl', the regular cascade yields `fogol` 'fowl': the root vowel lowers before
 the following non-high vowel [@RingeTaylor2014, 42–43; @Campbell1959, 43],
 final `z` is lost, and the cluster is resolved by the usual medial vowel
 [@RingeTaylor2014, 345; @Campbell1959, 150]. That is the expected inherited

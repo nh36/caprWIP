@@ -1,0 +1,369 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import csv
+import re
+import subprocess
+import sys
+import tempfile
+from dataclasses import dataclass
+from pathlib import Path
+
+from check_predicted_forms import find_predicted_issues
+
+ROOT = Path(__file__).resolve().parent.parent
+TOOLS_DIR = ROOT / "tools"
+VALIDATOR = TOOLS_DIR / "paragraph_gloss_validator.lua"
+FORMS_TSV = ROOT / "docs" / "book" / "index_verborum_forms.tsv"
+ALLOWLIST_TSV = ROOT / "docs" / "book" / "index_semantic_fingerprint_allowlist.tsv"
+ASSEMBLED = ROOT / "docs" / "assembly" / "capr_book_draft_alpha_01.md"
+MODEL_ENTRIES = ROOT / "docs" / "lexeme_reports" / "model_entries"
+NIGHT_PATH = MODEL_ENTRIES / "2140-night-niht.model.md"
+FOWL_PATH = MODEL_ENTRIES / "2030-fowl-fugol.model.md"
+WATER_PATH = MODEL_ENTRIES / "2274-water-wæter.model.md"
+NOSE_PATH = MODEL_ENTRIES / "2143-nose-nosu.model.md"
+STEM_PATH = MODEL_ENTRIES / "2216-stem-stefn.model.md"
+SLEEP_PATH = "Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md"
+BASELINE_COMMIT = "0ecf63da65d82773e6d4f0bf77461c2d001337a0"
+
+RECON_SPAN_RE = re.compile(r"\[(?P<content>[^\[\]\n]+)\]\{\.recon(?:[^}]*)\}")
+RECON_BAD_LANG_RE = re.compile(r"\bOE\b|\bPGmc\b|\.{3}|>|<|~|,|/|\(|\)|`")
+RECON_MULTI_WS_RE = re.compile(r"\s")
+PRED_GLOSS_RE = re.compile(r"\[\*[^*\n]+\*\]\{[^}]*\bpred\b[^}]*\}\s*[,;]?\s*(?:'|‘|“)")
+DUP_GLOSS_RE = re.compile(
+    r"(?P<form>\[[^\]]+\]\{[^}]+\}|`[^`]+`|\*[^*]+\*|[A-Za-zÀ-ȳāēīōūȳǣæþðġċƀβ\-‑–]+)\s*"
+    r"(?P<q1>'[^']+'|‘[^’]+’)\s*(?P<q2>'[^']+'|‘[^’]+’)"
+)
+
+
+@dataclass(frozen=True)
+class ReconIssue:
+    source: str
+    span: str
+    reason: str
+
+
+def _inner_quote_text(q: str) -> str:
+    return q.strip()[1:-1].strip().lower()
+
+
+def find_recon_span_issues(text: str, source: str) -> list[ReconIssue]:
+    issues: list[ReconIssue] = []
+    for m in RECON_SPAN_RE.finditer(text):
+        content = m.group("content").strip()
+        span = m.group(0)
+        if content.startswith("*"):
+            issues.append(ReconIssue(source, span, "leading literal '*' inside .recon span"))
+        if "'" in content or "‘" in content or "’" in content:
+            issues.append(ReconIssue(source, span, "gloss text inside .recon span"))
+        if RECON_BAD_LANG_RE.search(content):
+            issues.append(ReconIssue(source, span, "multiple forms/chain/prose inside .recon span"))
+        if RECON_MULTI_WS_RE.search(content):
+            issues.append(ReconIssue(source, span, "whitespace indicates multiple lexical items or prose"))
+    return issues
+
+
+def find_duplicate_glosses(text: str, source: str) -> list[str]:
+    out: list[str] = []
+    for m in DUP_GLOSS_RE.finditer(text):
+        q1 = _inner_quote_text(m.group("q1"))
+        q2 = _inner_quote_text(m.group("q2"))
+        if q1 == q2:
+            line_no = text[: m.start()].count("\n") + 1
+            out.append(f"{source}:{line_no}: adjacent duplicate glosses for {m.group('form')}")
+    return out
+
+
+def run_validator(markdown_text: str) -> tuple[int, str]:
+    with tempfile.TemporaryDirectory() as tmp:
+        md_path = Path(tmp) / "fixture.md"
+        md_path.write_text(markdown_text, encoding="utf-8")
+        proc = subprocess.run(
+            ["pandoc", str(md_path), "--from=markdown+raw_tex", "--to=json", "--lua-filter", str(VALIDATOR)],
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        return proc.returncode, proc.stderr
+
+
+def assert_true(cond: bool, msg: str) -> None:
+    if not cond:
+        raise AssertionError(msg)
+
+
+def paragraph_fixture(title: str, body: str) -> str:
+    return (
+        "# Sound changes\n\n"
+        "## Placeholder\n\n"
+        "Non-lexical paragraph.\n\n"
+        "# Word-by-word derivations\n\n"
+        f"### {title}\n\n"
+        f"{body}\n"
+    )
+
+
+def run_predicted_fixtures() -> None:
+    tests = [
+        ("yields *wrong* rather than expected *right*", True),
+        ("yields *wrong* 'gloss' rather than expected *right*", True),
+        ("yields [*wrong*]{.pred} rather than expected *right*", False),
+        ("yields [*wrong*]{.pred} 'gloss' rather than expected *right*", True),
+        ("historical input *form* is cited in evidence", False),
+        ("yields *wrong+?* rather than expected *right*", False),
+    ]
+    for text, should_fail in tests:
+        issues = find_predicted_issues(text)
+        assert_true((len(issues) > 0) == should_fail, f"pred fixture failed: {text}")
+
+
+def run_unicode_ascii_fixtures() -> None:
+    # 1. cū then cȳ in same paragraph: second requires gloss.
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Old English evidence",
+            "OE *cū* 'cow' appears first, but OE *cȳ* appears later without gloss.",
+        )
+    )
+    assert_true(code == 2, "expected cȳ to fail after cū in same paragraph")
+
+    # 2. nǣdl and nædl must remain distinct.
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Old English evidence",
+            "OE *nǣdl* 'needle' is attested, and OE *nædl* appears again without gloss.",
+        )
+    )
+    assert_true(code == 2, "expected nædl to fail as distinct form")
+
+    # 3. exact same cū twice in same paragraph: pass.
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Old English evidence",
+            "OE *cū* 'cow' appears here and OE *cū* appears later.",
+        )
+    )
+    assert_true(code == 0, "same lexical form should not require a second gloss in paragraph")
+
+    # 4. same cū in a new paragraph: fail.
+    code, _ = run_validator(
+        (
+            "# Sound changes\n\nA stub.\n\n"
+            "# Word-by-word derivations\n\n"
+            "### Old English evidence\n\n"
+            "OE *cū* 'cow' appears.\n\n"
+            "OE *cū* appears again in a new paragraph.\n"
+        )
+    )
+    assert_true(code == 2, "same form in new paragraph must be glossed again")
+
+    # 5. .recon repeated in same paragraph: pass.
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Reconstruction and comparative evidence",
+            "[júką]{.recon} 'yoke' is cited and [júką]{.recon} appears again.",
+        )
+    )
+    assert_true(code == 0, ".recon repeated in same paragraph should not re-require gloss")
+
+    # ASCII lexical coverage
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "OE *faran* appears without gloss.")
+    )
+    assert_true(code == 2, "ASCII lexical form faran should be checked")
+
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "OE *faran* 'fare' appears with gloss.")
+    )
+    assert_true(code == 0, "ASCII lexical form with gloss should pass")
+
+    code, _ = run_validator(
+        paragraph_fixture("Reconstruction and comparative evidence", "German *fell* appears without gloss.")
+    )
+    assert_true(code == 2, "ASCII comparator form should be checked")
+
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "This is *important* evidence for chronology.")
+    )
+    assert_true(code == 0, "ordinary English emphasis should not be lexical candidate")
+
+
+def run_recon_duplicate_fixtures() -> None:
+    bad_recon_cases = [
+        "[nasō ... OE nasu]{.recon}",
+        "[*júką]{.recon}",
+        "[náxti > niht]{.recon}",
+        "[júką 'yoke']{.recon}",
+    ]
+    for case in bad_recon_cases:
+        assert_true(find_recon_span_issues(case, "fixture"), f"expected recon failure: {case}")
+
+    good_recon_cases = [
+        "[júką]{.recon} 'yoke'",
+        "[wír-àldu]{.recon} 'world'",
+    ]
+    for case in good_recon_cases:
+        assert_true(not find_recon_span_issues(case, "fixture"), f"expected recon pass: {case}")
+
+    assert_true(find_duplicate_glosses("form 'night' ‘night’", "fixture"), "expected duplicate gloss failure")
+    assert_true(find_duplicate_glosses("form ‘night’ 'night'", "fixture"), "expected duplicate gloss failure")
+    assert_true(not find_duplicate_glosses("form 'night'", "fixture"), "single gloss should pass")
+    assert_true(
+        not find_duplicate_glosses("form 'night' and then explanation ‘by extension’", "fixture"),
+        "distinct quoted prose should pass",
+    )
+
+
+def _load_forms_rows_from_text(text: str) -> list[dict[str, str]]:
+    lines = [line for line in text.splitlines() if line.strip()]
+    if not lines:
+        return []
+    return list(csv.DictReader(lines, delimiter="\t"))
+
+
+def _read_tsv(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def _semantic_key(row: dict[str, str]) -> tuple[str, str, str, str, str]:
+    source_path = (row.get("source_ref", "") or "").split(":", 1)[0]
+    return (
+        row.get("language", ""),
+        row.get("form", ""),
+        row.get("form_role", ""),
+        row.get("source_scope", ""),
+        source_path,
+    )
+
+
+def _load_allowlist() -> set[tuple[str, str, str, str, str]]:
+    if not ALLOWLIST_TSV.exists():
+        return set()
+    return {_semantic_key(row) for row in _read_tsv(ALLOWLIST_TSV)}
+
+
+def run_index_fingerprint_checks() -> None:
+    current_rows = _read_tsv(FORMS_TSV)
+    baseline_text = subprocess.check_output(
+        ["git", "show", f"{BASELINE_COMMIT}:Germanic/docs/book/index_verborum_forms.tsv"],
+        text=True,
+    )
+    baseline_rows = _load_forms_rows_from_text(baseline_text)
+    current_fp = {_semantic_key(row) for row in current_rows}
+    baseline_fp = {_semantic_key(row) for row in baseline_rows}
+
+    allowlist = _load_allowlist()
+    added = {row for row in (current_fp - baseline_fp) if row not in allowlist}
+    removed = {row for row in (baseline_fp - current_fp) if row not in allowlist}
+    assert_true(not added and not removed, f"unexpected semantic index fingerprint drift: +{len(added)} -{len(removed)}")
+
+    # Line-number changes do not matter.
+    a = {"language": "oe", "form": "slǣpan", "form_role": "target_form", "source_scope": "explicit_tag", "source_ref": "x.md:10"}
+    b = {"language": "oe", "form": "slǣpan", "form_role": "target_form", "source_scope": "explicit_tag", "source_ref": "x.md:50"}
+    assert_true(_semantic_key(a) == _semantic_key(b), "fingerprint must ignore source line numbers")
+
+    # slǣpan must remain represented in sleep entry semantics.
+    sleep_rows = [
+        row
+        for row in current_rows
+        if (row.get("source_ref", "") or "").startswith(SLEEP_PATH)
+        or row.get("source_ref", "") == "sleep — OE slǣpan"
+    ]
+    assert_true(
+        any(row.get("form") in {"slǣpan", "slaepan"} for row in sleep_rows),
+        "slǣpan missing from sleep entry index semantics",
+    )
+
+    # Adding .iv should change semantic index membership.
+    base = {"language": "oe", "form": "faran", "form_role": "comparison_form", "source_scope": "broad_prose_decision", "source_ref": "a.md:1"}
+    tagged = dict(base)
+    tagged["source_scope"] = "explicit_tag"
+    assert_true(_semantic_key(base) != _semantic_key(tagged), ".iv scope shift must change index semantics")
+
+
+def run_stats_regression() -> None:
+    md = (
+        "# Sound changes\n\nA plain paragraph.\n\n"
+        "# Word-by-word derivations\n\n"
+        "### Transducer input and output\n\n"
+        "[júką]{.recon} 'yoke' appears.\n\n"
+        "### Old English evidence\n\n"
+        "OE *faran* 'fare' appears.\n"
+    )
+    code, stderr = run_validator(md)
+    assert_true(code == 0, "stats fixture should pass validation")
+    assert_true("top-level paragraphs visited" in stderr, "Part II top-level paragraph count missing")
+    assert_true("prose paragraphs in ordinary-form scope" in stderr, "Part II prose scope count missing")
+    assert_true(".recon-only paragraphs outside ordinary scope" in stderr, "Part II recon-only count missing")
+
+
+def run_known_entry_checks() -> None:
+    night = NIGHT_PATH.read_text(encoding="utf-8")
+    fowl = FOWL_PATH.read_text(encoding="utf-8")
+    water = WATER_PATH.read_text(encoding="utf-8")
+    nose = NOSE_PATH.read_text(encoding="utf-8")
+    stem = STEM_PATH.read_text(encoding="utf-8")
+
+    assert_true("'night' ‘night’" not in night and "‘night' 'night'" not in night, "night still has duplicate glosses")
+    assert_true("'fowl' ‘fowl’" not in fowl and "‘fowl’ 'fowl'" not in fowl, "fowl still has duplicate glosses")
+    assert_true("[nasō ... OE nasu]{.recon}" not in nose, "nose still has overbroad .recon span")
+    assert_true("[*" not in water, "water still contains stray [* fragment")
+    assert_true("]{.recon} ‘water’weeter[*" not in water, "water retains malformed recon span fragment")
+    assert_true("]{.recon} ‘water’weter" not in water, "water retains malformed recon span fragment")
+    assert_true("voice, sound" in stem or "voice / sound" in stem, "stem entry semantic relabel not applied")
+
+    # enforce corpus-wide .pred no-gloss policy
+    pred_gloss_hits = []
+    for path in (ROOT / "docs" / "sound_changes" / "reader_facing").glob("*.md"):
+        text = path.read_text(encoding="utf-8")
+        for m in PRED_GLOSS_RE.finditer(text):
+            line_no = text[: m.start()].count("\n") + 1
+            pred_gloss_hits.append(f"{path}:{line_no}")
+    assert_true(not pred_gloss_hits, ".pred gloss policy violated:\n" + "\n".join(pred_gloss_hits[:20]))
+
+
+def run_corpus_lints() -> None:
+    recon_issues: list[ReconIssue] = []
+    duplicate_issues: list[str] = []
+    for path in MODEL_ENTRIES.glob("*.model.md"):
+        text = path.read_text(encoding="utf-8")
+        recon_issues.extend(find_recon_span_issues(text, str(path)))
+        duplicate_issues.extend(find_duplicate_glosses(text, str(path)))
+
+    assert_true(not recon_issues, "malformed .recon spans:\n" + "\n".join(f"{x.source}: {x.reason} :: {x.span}" for x in recon_issues[:40]))
+    assert_true(not duplicate_issues, "adjacent duplicate glosses:\n" + "\n".join(duplicate_issues[:40]))
+
+
+def main() -> int:
+    if not VALIDATOR.exists():
+        print(f"Missing validator: {VALIDATOR}", file=sys.stderr)
+        return 2
+    if not FORMS_TSV.exists():
+        print(f"Missing index forms TSV: {FORMS_TSV}", file=sys.stderr)
+        return 2
+    if not ASSEMBLED.exists():
+        print(f"Missing assembled markdown: {ASSEMBLED}", file=sys.stderr)
+        return 2
+
+    try:
+        run_predicted_fixtures()
+        run_unicode_ascii_fixtures()
+        run_recon_duplicate_fixtures()
+        run_stats_regression()
+        run_known_entry_checks()
+        run_corpus_lints()
+        run_index_fingerprint_checks()
+    except AssertionError as exc:
+        print(f"Reader-facing semantic regression failure: {exc}", file=sys.stderr)
+        return 2
+    except subprocess.CalledProcessError as exc:
+        print(f"Reader-facing semantic regression command failed: {exc}", file=sys.stderr)
+        return 2
+
+    print("Reader-facing semantic regression suite passed.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -19,7 +19,7 @@ DERIVATION_CLASS: regular
 ### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under `*ba-` and gives the inherited
-paradigm [bai, *bans, *bōz/*bōns, *bō]{.recon} 'both', with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and
+paradigm `*bai, *bans, *bōz/*bōns, *bō`, with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and
 neuter [`bū`]{.iv lang=oe sort=bu role=target_form} 'both' [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} 'both'.
 

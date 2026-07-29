@@ -30,7 +30,7 @@ remain distinct [@Campbell1959, §123 n. 2].
 
 ### Old English evidence
 
-[liornian]{.recon} 'learn' ‘learn’ is the Northumbrian member of the Old English family. Dictionary practice more often privileges `leornian` 'learn' as the ordinary headword [@ClarkHall1960; @BrightCassidyRingler1971], but Campbell's dialect evidence shows that `liornian` 'learn' is a genuine Old English form [@Campbell1959, §123 n. 2].
+[liornian]{.recon} 'learn' is the Northumbrian member of the Old English family. Dictionary practice more often privileges `leornian` 'learn' as the ordinary headword [@ClarkHall1960; @BrightCassidyRingler1971], but Campbell's dialect evidence shows that `liornian` 'learn' is a genuine Old English form [@Campbell1959, §123 n. 2].
 
 This entry therefore remains compact. The point is to state clearly that the
 selected target belongs to the Northumbrian side of the OE evidence rather than

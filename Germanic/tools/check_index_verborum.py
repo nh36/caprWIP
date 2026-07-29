@@ -644,7 +644,7 @@ def assert_table_semantic_rows() -> None:
     ignored_pairs = parse_audit_table_semantic_ignored_pairs()
     for form in {"*kōz", "*kūi", "*kūiz", "*nasō", "*núsō"}:
         assert not any(pair_form == form for pair_form, _ in ignored_pairs)
-    assert ("stefn", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:62") in ignored_pairs
+    assert ("stefn", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:61") in ignored_pairs
 
     def auto_or_suggest(form: str, role: str) -> bool:
         return (
@@ -729,7 +729,11 @@ def assert_broad_prose_buckets() -> None:
     assert ("sea", "Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33") in prose_pairs
 
     variant_pairs = parse_audit_bucket_pairs("Orthographic/normalization variant of indexed form")
-    assert ("boraþ", "Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:27") in same_entry_pairs
+    assert any(
+        form == "boraþ"
+        and source_ref.startswith("Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md")
+        for form, source_ref in same_entry_pairs
+    )
     assert ("Caelf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25") in variant_pairs
     assert ("Cealf", "Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21") in variant_pairs
 

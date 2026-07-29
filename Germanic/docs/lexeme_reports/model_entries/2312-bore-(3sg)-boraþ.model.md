@@ -18,25 +18,39 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the bore-family verb as **`*burojan-`** and cites Old English **`borian[* among its reflexes [@Kroonen2013, 85]. The selected form isolates the finite 3sg cell **]{.recon} ‘bore (3sg)’*búrōθi`** rather than the infinitive.
+Kroonen reconstructs the bore-family verb as `*burojan-` and cites Old English
+`borian` among its reflexes [@Kroonen2013, 85]. The selected form isolates the
+finite 3sg cell [búrōθi]{.recon} 'bores' rather than the infinitive.
 
-Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)[* and Ringe and Taylor's account of stable **]{.recon} ‘bore (3sg)’a`** in the class-II 2sg and 3sg make this finite cell the relevant comparison form for the ending [@Campbell1959, §356.4; @RingeTaylor2014, 80].
+Campbell's class-II pattern `lufas, -aþ (< -ōsi, -ōþi)` and Ringe and Taylor's
+account of stable class-II `a` in finite forms make this 3sg cell the relevant
+comparison form for the ending [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as `borian`, and the imperative singular `bora` 'bore' and present-third-singular `boraþ` 'bores' are the relevant comparison forms [@ClarkHall1960, 48].
+Clark Hall lemmatizes the verb as `borian`; the imperative singular `bora` and
+present-third-singular `boraþ` are the relevant comparison forms
+[@ClarkHall1960, 48].
 
-Campbell's dialect survey allows secondary `-e-` and `-o-` spellings in 2sg and 3sg class-II forms, but the basic ending remains `-aþ` [@Campbell1959, §757]. The regular comparison form for this non-`j` 3sg cell is Boraþ.
+Campbell's dialect survey allows secondary `-e-` and `-o-` spellings in 2sg and
+3sg class-II forms, but the basic ending remains `-aþ` [@Campbell1959, §757].
+The regular comparison form for this non-`j` 3sg cell is `boraþ`.
 
 ### Development to Old English
 
-From [búrōθi]{.recon} ‘bore (3sg)’, loss of final `-i` first gives [búrōθ]{.recon} ‘bore (3sg)’. Northwest Germanic lowering then produces [bórōθ]{.recon} ‘bore (3sg)’, and late shortening of unstressed `ō` yields [bóraθ]{.recon} ‘bore (3sg)’. Boraþ is therefore the regular comparison form for this non-`j` 3sg cell.
+From [búrōθi]{.recon} 'bores', loss of final `-i` first gives [búrōθ]{.recon}
+'bores'. Northwest Germanic lowering then produces [bórōθ]{.recon} 'bores', and
+late shortening of unstressed `ō` yields [bóraθ]{.recon} 'bores'. `Boraþ` is
+therefore the regular comparison form for this non-`j` 3sg cell.
 
-Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells support exactly this sequence [@Campbell1959, §356.4; @RingeTaylor2014, 80].
+Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable
+`a` in finite non-`j` cells support this sequence [@Campbell1959, §356.4;
+@RingeTaylor2014, 80].
 
 ### Paradigm comparison
 
-The comparison below is manual. It distinguishes the selected 3sg cell from the bore-family lemma and from the companion imperative form.
+The comparison below is manual. It distinguishes the selected 3sg cell from the
+bore-family lemma and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |

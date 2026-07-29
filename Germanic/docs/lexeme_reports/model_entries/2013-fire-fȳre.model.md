@@ -20,7 +20,7 @@ DERIVATION_CLASS: known_unmodelled
 
 Kroonen places the lexeme in a heteroclitic family `*fōr ~ *fun-` and explains
 the front-mutated West Germanic forms from an oblique form of the
-[fu(w)eri]{.recon} ‘fire’ type [@Kroonen2013, 151]. The selected input [[fūri]{.recon} ‘fire’]{.iv lang=pgmc sort=furi role=selected_input} therefore does not
+`*fu(w)eri` type [@Kroonen2013, 151]. The selected input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input} therefore does not
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 
@@ -41,7 +41,7 @@ morphological remodeling.
 
 ### Development to Old English
 
-From [[fūri]{.recon} ‘fire’]{.iv lang=pgmc sort=furi role=selected_input}, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
+From [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input}, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
 loss of the final high vowel after a heavy syllable yields **[`fȳr`]{.iv lang=oe sort=fyr role=regular_output} 'fire'**
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 

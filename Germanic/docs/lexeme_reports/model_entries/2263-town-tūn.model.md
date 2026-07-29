@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites `*tūna-` 'fenced area', while Orel gives [tūnan ~ *tūnaz]{.recon} ‘town’ [@Kroonen2013; @Orel2003, 452]. The selected input [tūną]{.recon} ‘town’ is the simple citation-form noun used in the derivation.
+Kroonen cites `*tūna-` 'fenced area', while Orel gives [tūnan]{.recon} 'town' and [tūnaz]{.recon} 'town' [@Kroonen2013; @Orel2003, 452]. The selected input [tūną]{.recon} 'town' is the simple citation-form noun used in the derivation.
 
 ### Old English evidence
 

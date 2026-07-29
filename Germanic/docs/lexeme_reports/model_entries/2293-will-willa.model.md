@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen separates noun [weljan- 2]{.recon} 'will, wish' from verb [weljan- 1]{.recon} 'to want', while Orel and Kluge represent the noun as [weljōn]{.recon} ‘will’ [@Kroonen2013; @Orel2003; @KlugeSeebold2011]. The selected derivational form [wéljô]{.recon} ‘will’ is the noun-side input used for this row.
+Kroonen separates noun [weljan]{.recon} 'will, wish' from verb [weljan]{.recon} 'to want', while Orel and Kluge represent the noun as [weljōn]{.recon} 'will' [@Kroonen2013; @Orel2003; @KlugeSeebold2011]. The selected derivational form [wéljô]{.recon} 'will' is the noun-side input used for this row.
 
 ### Old English evidence
 

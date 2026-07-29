@@ -19,7 +19,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 ### Reconstruction and comparative evidence
 
 The comparative dictionaries do not support a single citation reconstruction
-uniformly. Orel cites [rustaz sb.m./f.]{.recon} ‘rust’ with Old English `rust` and Old Saxon
+uniformly. Orel cites [rustaz]{.recon} 'rust' (sb.m./f.) with Old English `rust` and Old Saxon
 and Old High German `rost` 'rust' [@Orel2003, 308]. The form [rústō]{.recon} ‘rust’ therefore stands here
 as a competing citation reconstruction rather than as the best-supported
 inherited headword.

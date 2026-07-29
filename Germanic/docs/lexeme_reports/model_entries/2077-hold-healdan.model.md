@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the verb as a regular [a + lC]{.recon} ‘hold’ breaking case, with West Saxon `healdan` opposed to Anglian and Mercian `haldan` [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the verb as a regular `a + lC` breaking case, with West Saxon `healdan` opposed to Anglian and Mercian `haldan` [@Campbell1959; @RingeTaylor2014].
 
 ### Old English evidence
 

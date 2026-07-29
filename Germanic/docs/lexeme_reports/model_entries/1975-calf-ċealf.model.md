@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen treats the noun under `*kalbiz-` and notes an older s-stem [kalbaz, pl. *kalbizō]{.recon} ‘calf’, while Orel cites [kalbaz]{.recon} ‘calf’ as the citation form and Ringe and Taylor derive West Saxon `Cealf` from `*kalbaz, *kalbiz-` [@Kroonen2013; @Orel2003, 248; @RingeTaylor2014, 220]. The selected input here is the singular [kálbaz]{.recon} ‘calf’, since the entry concerns the citation-form noun.
+Kroonen treats the noun under `*kalbiz-` and notes an older s-stem [kalbaz]{.recon} 'calf' with plural [kalbizō]{.recon} 'calves', while Orel cites [kalbaz]{.recon} 'calf' as the citation form and Ringe and Taylor derive West Saxon `Cealf` from `*kalbaz, *kalbiz-` [@Kroonen2013; @Orel2003, 248; @RingeTaylor2014, 220]. The selected input here is the singular [kálbaz]{.recon} 'calf', since the entry concerns the citation-form noun.
 
 ### Old English evidence
 

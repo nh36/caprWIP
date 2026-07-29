@@ -23,7 +23,10 @@ local utils  = pandoc.utils
 local failures_p1 = {}
 local failures_p2 = {}
 
-local paras_p1     = 0;  local paras_p2       = 0
+local paras_p1     = 0
+local paras_p2_total = 0
+local paras_p2_prose = 0
+local paras_p2_recon_only = 0
 -- Part I counters
 local emph_p1      = 0;  local cands_p1       = 0
 -- Part II counters (by category)
@@ -69,7 +72,15 @@ local PROSE_SECTIONS = {
 -- ── helpers ───────────────────────────────────────────────────────────────────
 
 local function normalize(s)
-  return (string.lower(s):gsub("[^%w]", ""))
+  if not s then return "" end
+  local out = s
+  out = out:gsub("^%s+", ""):gsub("%s+$", "")
+  -- Treat optional leading reconstruction stars as orthographic wrappers for
+  -- paragraph-repeat identity while preserving true Unicode distinctions.
+  out = out:gsub("^%*+", "")
+  out = out:gsub("[%.,;:!?]+$", "")
+  out = out:gsub("%s+", " ")
+  return out
 end
 
 local function starts_with_opening_quote(text)
@@ -138,6 +149,47 @@ end
 local function has_non_ascii(s)
   for i = 1, #s do
     if s:byte(i) > 127 then return true end
+  end
+  return false
+end
+
+local function is_ascii_alpha_form(s)
+  if not s or s == "" then return false end
+  return s:match("^[A-Za-z][A-Za-z%-']*[A-Za-z]$") ~= nil
+      or s:match("^[A-Za-z]$") ~= nil
+end
+
+local function lower_ascii(s)
+  return (s:gsub("%u", function(c) return string.char(c:byte() + 32) end))
+end
+
+local LANGUAGE_CUES = {
+  "oe", "pgmc", "on", "ohg", "os", "ofris", "goth", "gothic",
+  "old english", "old norse", "old high german", "old saxon", "old frisian",
+  "proto-germanic", "west saxon", "mercian", "anglian", "dutch", "german",
+}
+
+local function contains_language_cue(text)
+  if not text or text == "" then return false end
+  local t = lower_ascii(text)
+  for _, cue in ipairs(LANGUAGE_CUES) do
+    if t:find(cue, 1, true) then return true end
+  end
+  return false
+end
+
+local function has_language_cue_near(content, idx)
+  local left = math.max(1, idx - 8)
+  local right = math.min(#content, idx + 2)
+  for j = left, right do
+    if j ~= idx then
+      local inl = content[j]
+      if inl.t == "Str" or inl.t == "Code" or inl.t == "Emph" or inl.t == "Span" then
+        if contains_language_cue(utils.stringify(inl)) then
+          return true
+        end
+      end
+    end
   end
   return false
 end
@@ -212,7 +264,13 @@ end
 -- ── paragraph checker ─────────────────────────────────────────────────────────
 
 local function check_para(el, is_p2, in_prose_section)
-  if is_p2 then paras_p2 = paras_p2 + 1 else paras_p1 = paras_p1 + 1 end
+  if is_p2 then
+    paras_p2_total = paras_p2_total + 1
+    if in_prose_section then paras_p2_prose = paras_p2_prose + 1
+    else paras_p2_recon_only = paras_p2_recon_only + 1 end
+  else
+    paras_p1 = paras_p1 + 1
+  end
 
   local seen = {}
 
@@ -232,7 +290,10 @@ local function check_para(el, is_p2, in_prose_section)
       elseif in_prose_section then
         -- Part II prose sections: check plain italic
         local f = utils.stringify(inline)
-        if looks_like_linguistic_form(f) and not is_notation_only(f) then
+        local lexical =
+          (looks_like_linguistic_form(f) and not is_notation_only(f))
+          or (is_ascii_alpha_form(f) and has_language_cue_near(el.content, i))
+        if lexical and not is_notation_only(f) then
           plain_p2 = plain_p2 + 1
           form = f
           category = "emph"
@@ -366,10 +427,10 @@ function Pandoc(doc)
   io.stderr:write(string.format(
     'Paragraph gloss validator:\n'
     ..'  Part I:  %d prose paragraphs, %d Emph/iv/recon occurrences, %d first-occurrence candidates, %d violation(s)\n'
-    ..'  Part II: %d prose paragraphs in scope, %d .recon, %d .iv, %d plain-italic, %d code occurrences, %d first-occurrence candidates, %d violation(s)\n'
+    ..'  Part II: %d top-level paragraphs visited; %d prose paragraphs in ordinary-form scope; %d .recon-only paragraphs outside ordinary scope; %d .recon, %d .iv, %d plain-italic, %d code occurrences, %d first-occurrence candidates, %d violation(s)\n'
     ..'  Total violations: %d\n',
     paras_p1, emph_p1, cands_p1, #failures_p1,
-    paras_p2, recon_p2, iv_p2, plain_p2, code_p2, cands_p2, #failures_p2,
+    paras_p2_total, paras_p2_prose, paras_p2_recon_only, recon_p2, iv_p2, plain_p2, code_p2, cands_p2, #failures_p2,
     total))
   if total > 0 then
     if #failures_p1 > 0 then

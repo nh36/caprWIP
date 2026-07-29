@@ -23,10 +23,10 @@ root `*nus-` is likely to have arisen as a secondary zero grade after a
 remodeling of the older paradigm [@Kroonen2013, 423]. Campbell is more specific for
 Old English, citing `nosu` 'nose' < [nusō]{.recon} 'nose' [@Campbell1959, 44].
 
-The citation reconstruction [nasō]{.recon} ‘nose’ is therefore best treated as the full-grade
-comparative headword, while the selected input [núsō]{.recon} ‘nose’ represents the remodeled
-zero-grade line continued by the Old English form discussed here. Orel's [nasō
-... OE nasu]{.recon} ‘nose’ preserves the competing full-grade notation and shows that the two
+The citation reconstruction [nasō]{.recon} 'nose' is therefore best treated as the full-grade
+comparative headword, while the selected input [núsō]{.recon} 'nose' represents the remodeled
+zero-grade line continued by the Old English form discussed here. Orel's [nasō]{.recon} 'nose'
+alongside OE `nasu` 'nose' preserves the competing full-grade notation and shows that the two
 lines should not be collapsed without comment [@Orel2003, 320].
 
 ### Old English evidence
@@ -42,12 +42,12 @@ side of the tradition.
 
 ### Development to Old English
 
-From [núsō]{.recon} ‘nose’, the regular path is the one documented by the current trace:
+From [núsō]{.recon} 'nose', the regular path is the one documented by the current trace:
 [núsō]{.recon} 'nose' > [nósō]{.recon} 'nose' > [nósu]{.recon} 'nose' > `nosu` 'nose'. The early special step lies in the choice of the
 zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade
-line behind [nasō]{.recon} ‘nose’ instead points toward `nasu`, not to the form treated here.
+line behind [nasō]{.recon} 'nose' instead points toward `nasu`, not to the form treated here.
 
 ### Stem comparison
 

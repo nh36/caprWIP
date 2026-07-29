@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives `*þurna-` 'thorn, briar', while Orel preserves the masculine pair [þurnuz ~ *þurnaz]{.recon} ‘thorn’ [@Kroonen2013; @Orel2003]. The selected input [θúrnaz]{.recon} ‘thorn’ belongs to that same comparative family.
+Kroonen gives `*þurna-` 'thorn, briar', while Orel preserves the masculine pair [þurnuz]{.recon} 'thorn' and [þurnaz]{.recon} 'thorn' [@Kroonen2013; @Orel2003]. The selected input [θúrnaz]{.recon} 'thorn' belongs to that same comparative family.
 
 ### Old English evidence
 

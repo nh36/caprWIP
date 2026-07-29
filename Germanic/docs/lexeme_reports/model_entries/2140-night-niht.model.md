@@ -22,7 +22,7 @@ Ringe and Taylor cite `gen.sg. *nahtiz`, `dat.sg. *nahti`, and `nom.pl.
 *nahtiz` for the high-vowel side of the paradigm, and derive West Saxon [`niht`]{.iv lang=oe sort=niht role=target_form} 'night'
 from that side [@RingeTaylor2014, 240]. The citation reconstruction [[náxtz]{.recon} ‘night’]{.iv lang=pgmc sort=naxtz role=source_protoform}
 therefore belongs to the nominative-like headword, while the selected input
-[[náxti]{.recon} 'night' ‘night’]{.iv lang=pgmc sort=naxti role=selected_input} represents the dative-singular cell.
+[[náxti]{.recon} 'night']{.iv lang=pgmc sort=naxti role=selected_input} represents the dative-singular cell.
 
 The word later became the model for endingless datives. Ringe and Taylor
 explicitly explain forms such as [`dæg`]{.iv lang=oe sort=daeg role=comparison_form} by analogy
@@ -42,8 +42,8 @@ non-umlauted side of the paradigm in `neaht`-type forms.
 
 ### Development to Old English
 
-Ringe and Taylor derive West Saxon `niht` 'night' From [nahti]{.recon} 'night' ‘night' via [nehti]{.recon} ‘night' and
-[neahti]{.recon} ‘night' [@RingeTaylor2014, 240]. Campbell and Brunner preserve the
+Ringe and Taylor derive West Saxon `niht` 'night' from [nahti]{.recon} 'night' via [nehti]{.recon} 'night' and
+[neahti]{.recon} 'night' [@RingeTaylor2014, 240]. Campbell and Brunner preserve the
 contrasting non-umlauted `neaht`-type forms elsewhere in the paradigm
 [@Campbell1959, §628.3; @SieversBrunner1965, §284].
 

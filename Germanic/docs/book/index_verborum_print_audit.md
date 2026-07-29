@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 1996
-- Internal production unique forms: 977
-- Printed main occurrences: 1894
-- Printed main unique forms: 955
+- Internal production occurrences: 1991
+- Internal production unique forms: 974
+- Printed main occurrences: 1889
+- Printed main unique forms: 952
 - Printed excluded occurrences: 102
 - Printed excluded unique forms: 82
 
@@ -17,14 +17,14 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 899 | 392 |
-| Proto-Germanic | 936 | 515 |
+| Old English | 898 | 391 |
+| Proto-Germanic | 933 | 514 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
 | Old High German | 16 | 14 |
 | Old Frisian | 6 | 5 |
 | Gothic | 4 | 4 |
-| Old Saxon | 9 | 7 |
+| Old Saxon | 8 | 6 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Modern English | 2 | 1 |
@@ -33,10 +33,10 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 369 |
-| source_protoform | 331 |
+| target_form | 368 |
+| source_protoform | 328 |
 | selected_input | 534 |
-| comparison_form | 499 |
+| comparison_form | 498 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason
@@ -64,7 +64,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 956
+- Unique printed entries: 953
 - Print anomaly rows: 29
 - Hard print anomalies: 0
 
@@ -182,8 +182,8 @@
 - `bere` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:51)
 - `bocc` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md:38)
 - `bocc` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md:51)
-- `bora` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:44)
-- `boraþ` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:44)
+- `bora` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:58)
+- `boraþ` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58)
 - `cniht` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:58)
 
 ## Excluded pre-OE/model-internal rows (sample)

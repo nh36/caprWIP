@@ -40,6 +40,13 @@ bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
 
 python3 Germanic/tools/build_index_verborum.py ${strict_flag}
 python3 "${script_dir}/build_capr_book_draft.py"
+# semantic regression suite (fixtures + corpus integrity checks)
+if command -v pandoc >/dev/null 2>&1; then
+  python3 Germanic/tools/check_reader_facing_semantics.py
+else
+  echo "pandoc not found locally; running semantic regression suite inside Docker."
+  docker run --rm --platform "${platform}" --entrypoint /bin/sh -v "${repo_root}":/data -w /data "${image}" -c "apk add --no-cache python3 git >/dev/null && python3 Germanic/tools/check_reader_facing_semantics.py"
+fi
 # source-level bibliographic locator check: flags literal 'sect'/'sects' in Markdown sources
 python3 Germanic/tools/check_bibliographic_section_locators.py
 # assembled-markdown check: predicted-form markers

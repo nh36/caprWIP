@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as [mōder- / *mōdēr]{.recon} ‘mother’ [@Kroonen2013; @Orel2003].
+Kroonen and Orel cite the Proto-Germanic r-stem kinship noun as `*mōder-` with citation [mōdēr]{.recon} 'mother' [@Kroonen2013; @Orel2003].
 
 ### Old English evidence
 

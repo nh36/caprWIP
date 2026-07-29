@@ -20,10 +20,11 @@ DERIVATION_CLASS: early_analogy
 
 The comparative sources do not give one uniform inherited stem. Kroonen
 preserves the word family as `*saf/ppan-` 'sap', with Old English `sæp` 'sap'
-[@Kroonen2013, 420]. Orel preserves the comparative notation [sapōn ~ *sapan]{.recon} ‘sap’
+[@Kroonen2013, 420]. Orel preserves the comparative notation [sapōn]{.recon} 'sap'
+and [sapan]{.recon} 'sap'
 [@Orel2003, 319].
 
-The selected input [[sápą]{.recon} ‘sap’]{.iv lang=pgmc sort=sapa role=selected_input} therefore does not replace those comparative labels.
+The selected input [[sápą]{.recon} 'sap']{.iv lang=pgmc sort=sapa role=selected_input} therefore does not replace those comparative labels.
 It identifies the OE-facing stem shape that yields the attested noun treated
 here.
 
@@ -36,12 +37,12 @@ form [@Orel2003, 319].
 
 ### Development to Old English
 
-From [[sápą]{.recon} ‘sap’]{.iv lang=pgmc sort=sapa role=selected_input}, Anglo-Frisian brightening yields `sæ` 'sap', and heavy-syllable nasal
+From [[sápą]{.recon} 'sap']{.iv lang=pgmc sort=sapa role=selected_input}, Anglo-Frisian brightening yields `sæ` 'sap', and heavy-syllable nasal
 apocope then produces [`sæp`]{.iv lang=oe sort=saep role=regular_output} 'sap'. That is the regular path documented by the current
 trace.
 
 The competing comparative lines do not give the same result. The inherited
-n-stem notation [[sapōn]{.recon} ‘sap’]{.iv lang=pgmc sort=sapon role=source_protoform} yields [`sape`]{.iv lang=oe sort=sape role=comparison_form} 'sap', while an i-stem continuation from the
+n-stem notation [[sapōn]{.recon} 'sap']{.iv lang=pgmc sort=sapon role=source_protoform} yields [`sape`]{.iv lang=oe sort=sape role=comparison_form} 'sap', while an i-stem continuation from the
 [`*sapi-`]{.iv lang=pgmc sort=sapi role=comparison_form} line leads to [`sep`]{.iv lang=oe sort=sep role=comparison_form} 'sap' / [`sepe`]{.iv lang=oe sort=sepe role=comparison_form} 'sap' rather than to [`sæp`]{.iv lang=oe sort=saep role=target_form} 'sap'. The special step in
 this entry is therefore the early stem choice, not a late OE paradigm-cell
 selection.

@@ -1,0 +1,5 @@
+language	form	form_role	source_scope	source_ref	note
+oe	strēzan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	Entry rewrite removed obsolete broad-prose candidate.
+os	makon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md	Corrupt source markup rewritten; stale explicit-tag form removed.
+pgmc	skuldr(j)ō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md	Uncertain parenthesized notation moved out of .recon/.iv lexical span.
+pgmc	stámnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Stem/voice conflation corrected; lexical source_protoform semantics revised.
