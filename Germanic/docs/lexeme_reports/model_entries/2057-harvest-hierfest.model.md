@@ -22,12 +22,12 @@ Bammesberger and Ringe-Taylor treat `*harbist-` as the inherited base and explai
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall record `hærfest`, with `herfest` as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960]. Those attested forms remain the main dictionary evidence for the noun.
+Bosworth-Toller and Clark Hall record `hærfest` 'harvest', with `herfest` 'harvest' as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960]. Those attested forms remain the main dictionary evidence for the noun.
 
 ### Development to Old English
 
-From [xárbistuz]{.recon} ‘harvest’, Anglo-Frisian brightening, breaking, and i-mutation produce a `hierbist-` stage, and later lowering of unstressed medial `i` to `e` gives `hierfest`. That is the regular West Saxon development treated here [@RingeTaylor2014; @Campbell1959].
+From [xárbistuz]{.recon} ‘harvest’, Anglo-Frisian brightening, breaking, and i-mutation produce a `hierbist-` stage, and later lowering of unstressed medial `i` to `e` gives `hierfest` 'harvest'. That is the regular West Saxon development treated here [@RingeTaylor2014; @Campbell1959].
 
 ### Source note
 
-The selected target `hierfest` represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly `hærfest / herfest`, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
+The selected target `hierfest` represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly `hærfest` 'harvest' / `herfest` 'harvest', commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].

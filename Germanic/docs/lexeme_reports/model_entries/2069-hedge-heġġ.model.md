@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-The selected input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the `heġġ` type [@Campbell1959].
+The selected input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the `heġġ` 'hedge' type [@Campbell1959].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall record the noun under standard spellings `hecg` / `heċġ` [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the selected form is normalized.
+Bosworth-Toller and Clark Hall record the noun under standard spellings `hecg` 'hedge' / `heċġ` 'hedge' [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the selected form is normalized.
 
 ### Development to Old English
 
-From [xágjaz]{.recon} ‘hedge’, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final `j` produce `heġġ`. The development is treated as regular rather than exceptional.
+From [xágjaz]{.recon} ‘hedge’, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final `j` produce `heġġ` 'hedge'. The development is treated as regular rather than exceptional.
 
 ### Form note
 
-Standard dictionary spelling is `heċġ` or `hecg`. Normalized `heġġ` is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
+Standard dictionary spelling is `heċġ` 'hedge' or `hecg` 'hedge'. Normalized `heġġ` 'hedge' is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].

@@ -2815,7 +2815,7 @@ Lexicographic spellings vary between [_bær_]{.iv lang=oe sort=baer source_ref="
 
 #### Development to Old English
 
-From [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:370"}, Northwest Germanic final long _ō_ raises to _u_, long _ē_ lowers to _ǣ_, and high-vowel apocope yields [_bǣr_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:370"}. The resulting noun matches the normalized Old English target.
+From [[bḗrō]{.recon} 'bier']{.iv lang=pgmc sort=bero source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:370"}, Northwest Germanic final long _ō_ raises to _u_, long _ē_ lowers to _ǣ_, and high-vowel apocope yields [_bǣr_]{.iv lang=oe sort=baer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:370"} 'bier'. The resulting noun matches the normalized Old English target.
 
 ### birth — OE _byrd_
 
@@ -2875,7 +2875,7 @@ Kroonen cites the noun under stem-level _\*burdi-_ and gives Old English _(ge-)b
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form _gebyrd_ 'birth' is also well established in the tradition: Kroonen lists _(ge-)byrd_, Bosworth-Toller has a separate _ge-byrd_ entry, and Campbell cites _gebyrd_ and _gebyrdu_ in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
+Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form _gebyrd_ 'birth' is also well established in the tradition: Kroonen lists _(ge-)byrd_, Bosworth-Toller has a separate _ge-byrd_ 'birth' entry, and Campbell cites _gebyrd_ and _gebyrdu_ in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
 
 #### Form note
 
@@ -3177,7 +3177,7 @@ Old English form: _brēċ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_ [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the derivational input here is the plural noun form [brōkiz]{.recon} ‘breeches’.
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc [brōkiz]{.recon} 'breeches' > [breeci]{.recon} 'breeches' > OE _bréc_ 'breeches' (PNWGmc _\*brokiz_ > _\*breeci_ > OE _bréc_) [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the derivational input here is the plural noun form [brōkiz]{.recon} 'breeches'.
 
 #### Old English evidence
 
@@ -3756,19 +3756,19 @@ Old English form: _flēogan_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor derive the verb as _\*fleugana_ > OE _fléogan_ and elsewhere contrast West Saxon _fléogan_ with Anglian _flégan_, alongside related forms _fléoge_ / _flége_ [@RingeTaylor2014]. The derivational input [fléuganą]{.recon} ‘fly’ represents that inherited strong verb in the notation used here.
+Ringe and Taylor derive the verb as _\*fleugana_ 'fly' > OE _fléogan_ 'fly' and elsewhere contrast West Saxon _fléogan_ 'fly' with Anglian _flégan_ 'fly', alongside related forms noted in the form note below [@RingeTaylor2014]. The derivational input [fléuganą]{.recon} ‘fly’ represents that inherited strong verb in the notation used here.
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record _flēogan_ as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_, flugon, flogen with present _fleogeð_ [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971]. The target in this entry is therefore the attested verbal infinitive itself.
+Clark Hall and Bosworth-Toller record _flēogan_ 'fly' as the ordinary Old English strong verb, and Bright gives the familiar paradigm _flēag_ 'flew', _flugon_ 'flew', _flogen_ 'flown' with present _fleogeð_ 'flies' [@ClarkHall1960; @BosworthToller1898; @BrightCassidyRingler1971]. The target in this entry is therefore the attested verbal infinitive itself.
 
 #### Form note
 
-Ringe and Taylor also list related _fléoge_ / _flége_ and Anglian _flégan_, which belong to the same family but do not replace the infinitive _flēogan_ treated here [@RingeTaylor2014].
+Ringe and Taylor also list related _fléoge_ 'fly' / _flége_ 'fly' and Anglian _flégan_ 'fly', which belong to the same family but do not replace the infinitive _flēogan_ 'fly' treated here [@RingeTaylor2014].
 
 #### Development to Old English
 
-From [fléuganą]{.recon} ‘fly’, Old English diphthong leveling gives [flēoganą]{.recon} ‘fly’; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ [@RingeTaylor2014]. The development is therefore regular: _\*fléuganą_ > _flēogan_.
+From [fléuganą]{.recon} ‘fly’, Old English diphthong leveling gives [flēoganą]{.recon} ‘fly’; heavy-syllable nasal apocope and weak-tail reduction then yield _flēogan_ 'fly' [@RingeTaylor2014]. The development is therefore regular: _\*fléuganą_ > _flēogan_ 'fly'.
 
 ### forlorn — OE _lēosan_
 
@@ -3962,15 +3962,15 @@ Old English form: _ġiefan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ among its reflexes [@Kroonen2013]. Ringe and Taylor contrast West Saxon _giefan_ with Mercian _for-geofan_ and Northumbrian _geafa_, showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014].
+Kroonen reconstructs the strong verb as _\*geban-_ and cites Old English _giefan_ 'give' among its reflexes [@Kroonen2013]. Ringe and Taylor contrast West Saxon _giefan_ 'give' with Mercian _for-geofan_ 'give' and Northumbrian _geafa_ 'give', showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014].
 
 #### Old English evidence
 
-Campbell gives _gefan_ (W-S _giefan_) among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ with forms such as _geaf_ and _giefen_ [@Campbell1959; @ClarkHall1960]. I write _ġiefan_ for the palatal initial.
+Campbell gives _gefan_ (W-S _giefan_ 'give') among examples of initial palatalization, and Clark Hall records the verb under plain _giefan_ 'give' with forms such as _geaf_ and _giefen_ [@Campbell1959; @ClarkHall1960]. I write _ġiefan_ 'give' for the palatal initial.
 
 #### Dialect note
 
-West Saxon _ie_ here reflects palatal diphthongization after initial palatalization; non-West-Saxon forms such as _geafa_ or _for-geofan_ continue the same verb without the West Saxon vocalism [@RingeTaylor2014].
+West Saxon _ie_ here reflects palatal diphthongization after initial palatalization; non-West-Saxon forms such as _geafa_ 'give' or _for-geofan_ 'give' continue the same verb without the West Saxon vocalism [@RingeTaylor2014].
 
 #### Development to Old English
 
@@ -4113,7 +4113,7 @@ From [grábaną]{.recon} ‘grave’, Anglo-Frisian brightening first gives a fr
 
 #### Form note
 
-Noun _græf_ and verbal forms such as _græfð_ or past participial _græfen_ belong to other lexical or paradigm positions and do not replace the infinitive _grafan_ as the target here [@ClarkHall1960].
+Noun _græf_ 'grave' and verbal forms such as _græfð_ 'graves' or past participial _græfen_ 'graven' belong to other lexical or paradigm positions and do not replace the infinitive _grafan_ 'grave' as the target here [@ClarkHall1960].
 
 ### guest — OE _ġiest_
 
@@ -4172,19 +4172,19 @@ Old English form: _ġiest_
 
 #### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the noun as an ordinary i-stem whose West Saxon development shows palatal diphthongization, while non-West-Saxon evidence preserves forms of the _gest_ type [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the noun as an ordinary i-stem whose West Saxon development shows palatal diphthongization, while non-West-Saxon evidence preserves forms of the _gest_ 'guest' type [@Campbell1959; @RingeTaylor2014].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall record the word under forms such as _gist_, _gest_, _giest_, and _gyst_ [@BosworthToller1898; @ClarkHall1960]. The Old English form here, _ġiest_, is the normalized West Saxon form within that attested family.
+Bosworth-Toller and Clark Hall record the word under forms such as _gist_ 'guest', _gest_ 'guest', _giest_ 'guest', and _gyst_ 'guest' [@BosworthToller1898; @ClarkHall1960]. The Old English form here, _ġiest_, 'guest' is the normalized West Saxon form within that attested family.
 
 #### Development to Old English
 
-From [gástiz]{.recon} ‘guest’, Anglo-Frisian brightening gives a _gæst-_ stage, and i-mutation affects the front vowel before the lost high-vocalic ending. In West Saxon the initial palatal environment then produces _ie_, so the regular outcome is _ġiest_ [@Campbell1959; @RingeTaylor2014].
+From [gástiz]{.recon} ‘guest’, Anglo-Frisian brightening gives a _gæst-_ stage, and i-mutation affects the front vowel before the lost high-vocalic ending. In West Saxon the initial palatal environment then produces _ie_, so the regular outcome is _ġiest_ 'guest' [@Campbell1959; @RingeTaylor2014].
 
 #### Dialect note
 
-West Saxon _ġiest_ is the Old English form here. Anglian _gest_ and related spellings remain real Old English comparators rather than corrections to that choice [@RingeTaylor2014; @BosworthToller1898].
+West Saxon _ġiest_ 'guest' is the Old English form here. Anglian _gest_ 'guest' and related spellings remain real Old English comparators rather than corrections to that choice [@RingeTaylor2014; @BosworthToller1898].
 
 ### hair — OE _hǣr_
 
@@ -4244,15 +4244,15 @@ Kroonen cites the ordinary Proto-Germanic hair word as _\*hēra-_ [@Kroonen2013]
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record _hær_ / _hǣr_ as the ordinary Old English noun 'hair' [@ClarkHall1960, 158; @BosworthToller1898, 510]. The target is therefore the attested headword itself.
+Clark Hall and Bosworth-Toller record _hær_ 'hair' / _hǣr_ 'hair' as the ordinary Old English noun [@ClarkHall1960, 158; @BosworthToller1898, 510]. The target is therefore the attested headword itself.
 
 #### Development to Old English
 
-From [xḗrą]{.recon} ‘hair’, Northwest Germanic lowering gives a long front vowel, and later loss of the final nasal leaves the Old English form _hǣr_. The development treated here is straightforward and does not require any special paradigm choice.
+From [xḗrą]{.recon} ‘hair’, Northwest Germanic lowering gives a long front vowel, and later loss of the final nasal leaves the Old English form _hǣr_ 'hair'. The development treated here is straightforward and does not require any special paradigm choice.
 
 #### Form note
 
-Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, and the separate _haddr_ / _heordan_ / _hād-_ material does not displace the ordinary simplex _hǣr_ treated here [@Kroonen2013; @ClarkHall1960, 158].
+Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, and the separate _haddr_ / _heordan_ / _hād-_ material does not displace the ordinary simplex _hǣr_ 'hair' treated here [@Kroonen2013; @ClarkHall1960, 158].
 
 ### harvest — OE _hierfest_
 
@@ -4317,15 +4317,15 @@ Bammesberger and Ringe-Taylor treat _\*harbist-_ as the inherited base and expla
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall record _hærfest_, with _herfest_ as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960]. Those attested forms remain the main dictionary evidence for the noun.
+Bosworth-Toller and Clark Hall record _hærfest_ 'harvest', with _herfest_ 'harvest' as a variant in the lexical tradition [@BosworthToller1898; @ClarkHall1960]. Those attested forms remain the main dictionary evidence for the noun.
 
 #### Development to Old English
 
-From [xárbistuz]{.recon} ‘harvest’, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_. That is the regular West Saxon development treated here [@RingeTaylor2014; @Campbell1959].
+From [xárbistuz]{.recon} ‘harvest’, Anglo-Frisian brightening, breaking, and i-mutation produce a _hierbist-_ stage, and later lowering of unstressed medial _i_ to _e_ gives _hierfest_ 'harvest'. That is the regular West Saxon development treated here [@RingeTaylor2014; @Campbell1959].
 
 #### Source note
 
-The Old English form here, _hierfest_, represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ / _herfest_, commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
+The Old English form here, _hierfest_, represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ 'harvest' / _herfest_ 'harvest', commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
 
 ### hedge — OE _heġġ_
 
@@ -4387,19 +4387,19 @@ Old English form: _heġġ_
 
 #### Reconstruction and comparative evidence
 
-The derivational input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ type [@Campbell1959].
+The derivational input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ 'hedge' type [@Campbell1959].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ / _heċġ_ [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the form compared here is normalized.
+Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ 'hedge' / _heċġ_ 'hedge' [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the form compared here is normalized.
 
 #### Development to Old English
 
-From [xágjaz]{.recon} ‘hedge’, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_. The development is treated as regular rather than exceptional.
+From [xágjaz]{.recon} ‘hedge’, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final _j_ produce _heġġ_ 'hedge'. The development is treated as regular rather than exceptional.
 
 #### Form note
 
-Standard dictionary spelling is _heċġ_ or _hecg_. Normalized _heġġ_ is the Old English form here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
+Standard dictionary spelling is _heċġ_ 'hedge' or _hecg_ 'hedge'. Normalized _heġġ_ 'hedge' is the Old English form here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
 
 ### helm — OE _helm_
 
@@ -4802,15 +4802,15 @@ Old English form: _lǣdan_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor derive Old English _lǣdan_ from Proto-Germanic [laidijaną]{.recon} ‘lead’, and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014; @Kroonen2013, 363].
+Ringe and Taylor derive Old English _lǣdan_ 'lead' from Proto-Germanic [laidijaną]{.recon} 'lead', and Kroonen likewise cites a weak verb of the _\*laidjan-_ type for 'lead' [@RingeTaylor2014; @Kroonen2013, 363].
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller both record _lædan_ / _lǣdan_ as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller both record _lædan_ 'lead' / _lǣdan_ 'lead' as the ordinary Old English verb 'to lead, guide, conduct' [@ClarkHall1960; @BosworthToller1898].
 
 #### Development to Old English
 
-From [láidijaną]{.recon} ‘lead’, monophthongization of _\*ai_ first gives a _\*lād-_ stage. Later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_, so the development represented here is fully regular [@RingeTaylor2014].
+From [láidijaną]{.recon} ‘lead’, monophthongization of _\*ai_ first gives a _\*lād-_ stage. Later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ 'lead', so the development represented here is fully regular [@RingeTaylor2014].
 
 ### learn — OE _liornian_
 

@@ -30,4 +30,4 @@ From [grábaną]{.recon} ‘grave’, Anglo-Frisian brightening first gives a fr
 
 ### Form note
 
-Noun `græf` and verbal forms such as `græfð` or past participial `græfen` belong to other lexical or paradigm positions and do not replace the infinitive `grafan` as the target here [@ClarkHall1960].
+Noun `græf` 'grave' and verbal forms such as `græfð` 'graves' or past participial `græfen` 'graven' belong to other lexical or paradigm positions and do not replace the infinitive `grafan` 'grave' as the target here [@ClarkHall1960].

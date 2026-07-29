@@ -30,4 +30,4 @@ Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} 'bier' and 
 
 ### Development to Old English
 
-From [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero}, Northwest Germanic final long `ō` raises to `u`, long `ē` lowers to `ǣ`, and high-vowel apocope yields [`bǣr`]{.iv lang=oe sort=baer}. The resulting noun matches the normalized Old English target.
+From [[bḗrō]{.recon} 'bier']{.iv lang=pgmc sort=bero}, Northwest Germanic final long `ō` raises to `u`, long `ē` lowers to `ǣ`, and high-vowel apocope yields [`bǣr`]{.iv lang=oe sort=baer} 'bier'. The resulting noun matches the normalized Old English target.

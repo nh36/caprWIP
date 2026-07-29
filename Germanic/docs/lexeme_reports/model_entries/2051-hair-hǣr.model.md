@@ -22,12 +22,12 @@ Kroonen cites the ordinary Proto-Germanic hair word as `*hēra-` [@Kroonen2013].
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `hær` / `hǣr` as the ordinary Old English noun 'hair' [@ClarkHall1960, 158; @BosworthToller1898, 510]. The target is therefore the attested headword itself.
+Clark Hall and Bosworth-Toller record `hær` 'hair' / `hǣr` 'hair' as the ordinary Old English noun [@ClarkHall1960, 158; @BosworthToller1898, 510]. The target is therefore the attested headword itself.
 
 ### Development to Old English
 
-From [xḗrą]{.recon} ‘hair’, Northwest Germanic lowering gives a long front vowel, and later loss of the final nasal leaves the Old English form `hǣr`. The development treated here is straightforward and does not require any special paradigm choice.
+From [xḗrą]{.recon} ‘hair’, Northwest Germanic lowering gives a long front vowel, and later loss of the final nasal leaves the Old English form `hǣr` 'hair'. The development treated here is straightforward and does not require any special paradigm choice.
 
 ### Form note
 
-Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, and the separate `haddr / heordan / hād-` material does not displace the ordinary simplex `hǣr` treated here [@Kroonen2013; @ClarkHall1960, 158].
+Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, and the separate `haddr / heordan / hād-` material does not displace the ordinary simplex `hǣr` 'hair' treated here [@Kroonen2013; @ClarkHall1960, 158].

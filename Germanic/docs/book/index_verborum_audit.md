@@ -24,8 +24,8 @@
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 485
-- Broad-prose notation / compound expressions: 541
-- Broad-prose evidence suggestions: 235
+- Broad-prose notation / compound expressions: 535
+- Broad-prose evidence suggestions: 245
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
@@ -826,12 +826,8 @@
 | `*féllą > fell` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:29 | notation or compound expression |
 | `-felth` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25 | notation or compound expression |
 | `*felþu- ~ *feldu-` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | notation or compound expression |
-| `flēag, flugon, flogen` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | notation or compound expression |
 | `*flēoganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | intermediate or model-stage form in development chain |
-| `fléoge / flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | notation or compound expression |
-| `fléoge / flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | notation or compound expression |
 | `*fléuganą > flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | notation or compound expression |
-| `*fleugana > OE fléogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | notation or compound expression |
 | `fn > mn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:40 | notation or compound expression |
 | `fo-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:41 | notation or compound expression |
 | `** for **` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:35 | notation or compound expression |
@@ -868,7 +864,6 @@
 | `*gulþa- / *gulda-` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:29 | notation or compound expression |
 | `haddr / heordan / hād-` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | notation or compound expression |
 | `hæf-` | Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:36 | notation or compound expression |
-| `hærfest / herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | notation or compound expression |
 | `*harbist-` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:21 | notation or compound expression |
 | `*hauwja-` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:27 | notation or compound expression |
 | `healdan, heold, heoldon, healden` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:25 | notation or compound expression |
@@ -1037,7 +1032,6 @@
 | `on ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:35 | notation or compound expression |
 | `ō > ū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52 | notation or compound expression |
 | `PGmc *nēþlō, *nēdlō- 'needle' ... > OE nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | notation or compound expression |
-| `PNWGmc *brokiz > *breeci > OE bréc` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | notation or compound expression |
 | `-r-` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25 | notation or compound expression |
 | `ræst-` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:50 | notation or compound expression |
 | `*rastō` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:48 | intermediate or model-stage form in development chain |
@@ -1239,7 +1233,9 @@
 | `bām` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bēġra` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bisceoprocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*breeci` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | pgmc | selected_input | selected input described in prose |
 | `breóstrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*brokiz` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | pgmc | selected_input | selected input described in prose |
 | `cū` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:27 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `cū` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `cū` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1247,6 +1243,12 @@
 | `cū` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:54 | oe | comparison_form | attested Old English comparison form in development prose |
 | `ēaw` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `filatum` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `flēag` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `fléoge` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*fleugana` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `flogen` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `flugon` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `folc` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `full` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `fyrht` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1272,6 +1274,7 @@
 | `gyst` | Germanic/docs/lexeme_reports/model_entries/2049-guest-ġiest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hær` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1280,6 +1283,7 @@
 | `helma` | Germanic/docs/lexeme_reports/model_entries/2070-helm-helm.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `help` | Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hindan` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hlæhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hlihhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:31 | oe | comparison_form | attested comparison or dictionary form described in prose |
