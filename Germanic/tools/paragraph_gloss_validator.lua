@@ -2,18 +2,25 @@
 -- Validation-only Pandoc Lua filter.
 --
 -- Part I (sound-change chapters):
---   Checks plain Emph, .iv spans, and .recon spans.
+--   Checks plain Emph, .iv, .lex, and .recon spans.
 --   First occurrence of each lexical form in a Para must have an immediate gloss.
---   .pred spans are exempt.
+--   .pred and .ex spans are always exempt.
 --
 -- Part II (lexical derivations):
 --   Walks TOP-LEVEL blocks only (not table-cell Para elements).
 --   Within reader-facing prose subsections (see PROSE_SECTIONS below):
---     checks Emph, Code, .iv, and .recon spans.
+--     checks Emph, Code, .iv, .lex, and .recon spans.
 --   Outside those sections: checks .recon only.
---   .pred spans are always exempt.
+--   .pred and .ex spans are always exempt.
 --
 -- Backmatter (references, indexes): skipped entirely.
+--
+-- Semantic span classes:
+--   .recon  reconstructed lexical form (checked everywhere)
+--   .iv     index-verborum member (checked in prose scope)
+--   .lex    ordinary lexical form, no index semantics (checked in prose scope)
+--   .pred   counterfactual output — NEVER glossed, always exempt
+--   .ex     example phrase — always exempt from paragraph gloss rule
 
 local pandoc = require 'pandoc'
 local utils  = pandoc.utils
@@ -30,11 +37,12 @@ local paras_p2_recon_only = 0
 -- Part I counters
 local emph_p1      = 0;  local cands_p1       = 0
 -- Part II counters (by category)
-local recon_p2     = 0;  local iv_p2          = 0;  local plain_p2 = 0; local code_p2 = 0
+local recon_p2     = 0;  local iv_p2          = 0;  local plain_p2 = 0; local lex_p2 = 0; local code_p2 = 0
 local cands_p2     = 0
 
 local current_part    = "part1"
 local p2_section      = ""    -- current Part II subsection heading text
+local p2_entry        = ""    -- current Part II entry heading (for failure reporting)
 
 -- ── Part II prose section allowlist ──────────────────────────────────────────
 -- Only check Emph / .iv / .recon in these Part II subsections.
@@ -80,6 +88,11 @@ local function normalize(s)
   out = out:gsub("^%*+", "")
   out = out:gsub("[%.,;:!?]+$", "")
   out = out:gsub("%s+", " ")
+  -- Unicode-safe case folding: Lua string.lower only operates on ASCII bytes
+  -- (bytes 0x41–0x5A → 0x61–0x7A), leaving all multibyte UTF-8 sequences
+  -- (diacritics, non-Latin letters) intact. This means Macaþ → macaþ but
+  -- cū vs cȳ remain distinct — the desired behaviour.
+  out = string.lower(out)
   return out
 end
 
@@ -324,12 +337,29 @@ local function check_para(el, is_p2, in_prose_section)
     elseif inline.t == 'Span' then
       if span_has_class(inline, 'pred') then
         -- always exempt
+      elseif span_has_class(inline, 'ex') then
+        -- .ex (example phrase) is always exempt from paragraph gloss rule
       elseif span_has_class(inline, 'recon') then
         -- .recon: check in all sections (Part I and Part II)
         if is_p2 then recon_p2 = recon_p2 + 1 else emph_p1 = emph_p1 + 1 end
         local f = form_from_span(inline)
         if not is_notation_only(f) then
           form = f; category = "recon"
+        end
+      elseif span_has_class(inline, 'lex') then
+        -- .lex: ordinary lexical form, no index semantics; checked like plain italic
+        if not is_p2 then
+          local f = form_from_span(inline)
+          if looks_like_linguistic_form(f) or f ~= "" then
+            emph_p1 = emph_p1 + 1
+            form = f; category = "lex"
+          end
+        elseif in_prose_section then
+          lex_p2 = lex_p2 + 1
+          local f = form_from_span(inline)
+          if not is_notation_only(f) then
+            form = f; category = "lex"
+          end
         end
       elseif span_has_class(inline, 'iv') then
         if not is_p2 then
@@ -363,7 +393,8 @@ local function check_para(el, is_p2, in_prose_section)
         if is_p2 then cands_p2 = cands_p2 + 1 else cands_p1 = cands_p1 + 1 end
         if not has_gloss_after(el.content, i) then
           local entry = {
-            para    = (is_p2 and paras_p2 or paras_p1),
+            para    = (is_p2 and paras_p2_total or paras_p1),
+            entry   = p2_entry,
             form    = form,
             cat     = category,
             section = p2_section,
@@ -388,12 +419,26 @@ local function process_blocks(blocks)
       if t == 'Word-by-word derivations' then
         current_part = "part2"
         p2_section   = ""
+        p2_entry     = ""
       elseif t == 'References' or t == 'Index verborum' then
         current_part = "back"
         p2_section   = ""
-      elseif current_part == "part2" and block.level >= 3 then
-        -- Level-4 headings name the subsections within each entry
-        p2_section = t
+        p2_entry     = ""
+      elseif current_part == "part2" then
+        if block.level >= 4 then
+          -- Level-4+ headings name the subsections within each entry
+          p2_section = t
+        elseif block.level == 3 then
+          -- Level-3 = individual entry heading in the assembled book
+          -- (per-entry runs with prefix also have level-1 entry headings
+          --  that fall through to the else below, but those are handled separately)
+          p2_entry   = t
+          p2_section = ""
+        else
+          -- Level-1 or 2 within Part II = section group heading;
+          -- reset section but preserve p2_entry from previous if any
+          p2_section = ""
+        end
       end
 
     elseif block.t == 'Para' then
@@ -426,11 +471,11 @@ function Pandoc(doc)
   local total = #failures_p1 + #failures_p2
   io.stderr:write(string.format(
     'Paragraph gloss validator:\n'
-    ..'  Part I:  %d prose paragraphs, %d Emph/iv/recon occurrences, %d first-occurrence candidates, %d violation(s)\n'
-    ..'  Part II: %d top-level paragraphs visited; %d prose paragraphs in ordinary-form scope; %d .recon-only paragraphs outside ordinary scope; %d .recon, %d .iv, %d plain-italic, %d code occurrences, %d first-occurrence candidates, %d violation(s)\n'
+    ..'  Part I:  %d prose paragraphs, %d Emph/iv/recon/lex occurrences, %d first-occurrence candidates, %d violation(s)\n'
+    ..'  Part II: %d top-level paragraphs visited; %d prose paragraphs in ordinary-form scope; %d .recon-only paragraphs outside ordinary scope; %d .recon, %d .iv, %d .lex, %d plain-italic, %d code occurrences, %d first-occurrence candidates, %d violation(s)\n'
     ..'  Total violations: %d\n',
     paras_p1, emph_p1, cands_p1, #failures_p1,
-    paras_p2_total, paras_p2_prose, paras_p2_recon_only, recon_p2, iv_p2, plain_p2, code_p2, cands_p2, #failures_p2,
+    paras_p2_total, paras_p2_prose, paras_p2_recon_only, recon_p2, iv_p2, lex_p2, plain_p2, code_p2, cands_p2, #failures_p2,
     total))
   if total > 0 then
     if #failures_p1 > 0 then
@@ -442,8 +487,9 @@ function Pandoc(doc)
     if #failures_p2 > 0 then
       io.stderr:write('  Part II violations:\n')
       for _, f in ipairs(failures_p2) do
-        io.stderr:write(string.format('    Para %d [%s]: missing gloss for *%s* (%s)\n',
-          f.para, f.section, f.form, f.cat))
+        local loc = f.entry ~= "" and f.entry or ("Para " .. f.para)
+        io.stderr:write(string.format('    [%s] [%s]: missing gloss for *%s* (%s)\n',
+          loc, f.section, f.form, f.cat))
       end
     end
     os.exit(2)

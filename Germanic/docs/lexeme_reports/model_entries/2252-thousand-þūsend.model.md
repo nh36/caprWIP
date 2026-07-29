@@ -37,14 +37,17 @@ in its lexical status.
 
 ### Development to Old English
 
-If the old final **`-ī[* had remained long enough to trigger ordinary double
-umlaut, Campbell's rule would point toward a form of **[]{.recon} ‘thousand’*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form}** type rather
-than attested **[`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'** [@Campbell1959, §203]. Preserved root **`ū`**
-therefore argues that the umlaut-triggering vowel was lost or neutralized before
-the ordinary OE umlaut outcome could develop.
+If the old final `-ī` had remained long enough to trigger ordinary double
+umlaut, Campbell's rule would point toward a form of the
+[`*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form} type rather
+than attested [`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'
+[@Campbell1959, §203]. Preserved root `ū` therefore argues that the
+umlaut-triggering vowel was lost or neutralized before the ordinary OE umlaut
+could develop.
 
-That early loss, however, does not by itself explain the medial **`e[*. Luick
-compares the word with **[]{.recon} ‘thousand’ærende`]{.iv lang=oe sort=aerende role=comparison_form}** and later groups `thousand` with forms
+That early loss, however, does not by itself explain the medial `e`. Luick
+compares the word with [`ærende`]{.iv lang=oe sort=aerende role=comparison_form}
+'errand/message' and later groups `thousand` with forms
 reshaped on that pattern [@Luick1914, §§198, 492]. Viredaz is more cautious,
 arguing that Old English `e` in this weak position may simply write schwa and so
 need not prove a unique `ærende` 'message'-type analogy [@GermanicSlavicBaltic2025,

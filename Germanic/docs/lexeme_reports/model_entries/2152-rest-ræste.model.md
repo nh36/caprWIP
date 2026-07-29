@@ -32,7 +32,7 @@ to a nominative singular that would remain `rast` 'rest'.
 
 The ordinary Old English citation form is [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. Clark
 Hall likewise gives [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest', including prepositional
-examples such as `on ræste` and `tó ræste` [@BosworthToller1898, 121].
+examples such as [on ræste]{.ex} 'at rest' and [tó ræste]{.ex} 'to rest' [@BosworthToller1898, 121].
 
 The comparison form used here is therefore an attested oblique [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest', not a
 reconstructed surrogate. The dictionary headword [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' remains an equally real

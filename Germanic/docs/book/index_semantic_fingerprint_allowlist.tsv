@@ -2,4 +2,19 @@ language	form	form_role	source_scope	source_ref	note
 oe	strēzan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	Entry rewrite removed obsolete broad-prose candidate.
 os	makon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md	Corrupt source markup rewritten; stale explicit-tag form removed.
 pgmc	skuldr(j)ō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md	Uncertain parenthesized notation moved out of .recon/.iv lexical span.
-pgmc	stámnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Stem/voice conflation corrected; lexical source_protoform semantics revised.
+pgmc	*stébnō	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Voice-word protoform removed; entry corrected to stem/prow lexeme
+pgmc	stébnō	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Voice-word protoform (alternate key) removed from stem/prow row
+pgmc	stámnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Old unasterisked key; replaced by *stamnaz with stem/prow semantic correction
+oe	stefn	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Voice-word target; stem/prow entry now uses stefna as primary target
+oe	stefn	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Voice-word regular_output; removed with voice-entry cleanup
+goth	stibna	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Gothic voice-word comparator; removed with voice-entry cleanup
+oe	stefna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Prow/stern noun; stem/prow entry now correctly uses stefna as target
+oe	stefna	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	Prow/stern regular output; new stem/prow derivation entry
+oe	stofn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	OE trunk form; correctly added to stem/prow entry
+oe	stefn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	OE prow/stem form as comparison; new in stem/prow entry
+on	stafn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	ON prow comparator; correctly added to stem/prow entry
+os	stamn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	OS prow comparator; correctly added to stem/prow entry
+ofris	stevene	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	OFris prow comparator; correctly added to stem/prow entry
+pgmc	*stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	PGmc prow citation form; correctly added as source_protoform for stem/prow entry
+oe	iuzuð	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	Added .iv to iuzuð when removing Mönch Brunner-gloss false positive
+oe	ærende	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	Repaired v2 corruption; ærende restored to .iv span as OE comparator

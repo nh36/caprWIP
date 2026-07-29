@@ -1,5 +1,6 @@
 language	form	display	sort_key	form_role	source_scope	source_ref	origin	status
 oe	ærende	ærende	aerende	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	override	override
+oe	ærende	ærende	aerende	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:49	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 oe	ærende	ærende	aerende	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	override	override
 oe	āsceaf	āsceaf	asceaf	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:32	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md	auto
 oe	bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
@@ -475,6 +476,7 @@ oe	hwīnan	hwīnan	hwinan	target_form	explicit_tag	Germanic/docs/lexeme_reports/
 oe	hwīnan	hwīnan	hwinan	target_form	lexical_heading	whine — OE hwīnan	manifest	auto
 oe	hycgan	hycgan	hycgan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:33	broad_prose_curated	override
 oe	iuguþ	iuguþ	iuguth	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:35	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
+oe	iuzuð	iuzuð	iuzuth	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
 oe	lǣdan	lǣdan	laedan	target_form	lexical_heading	lead — OE lǣdan	manifest	auto
 oe	lām	lām	lam	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53	table_semantic_rule	auto
 oe	lām	lām	lam	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53	table_semantic_rule	auto
@@ -604,6 +606,7 @@ oe	mōder	mōder	moder	target_form	lexical_heading	mother — OE mōder	manifest
 oe	monn	monn	monn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:57	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 oe	monnes	monnes	monnes	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:35	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 oe	munuc	munuc	munuc	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:52	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
+oe	munuc	munuc	munuc	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
 oe	nabula	nabula	nabula	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:35	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
 oe	nabula	nabula	nabula	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:39	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
 oe	nabula	nabula	nabula	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md	auto
@@ -820,15 +823,19 @@ oe	stæf	stæf	staef	target_form	lexical_heading	staff — OE stæf	manifest	aut
 oe	stafas	stafas	stafas	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:31	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md	auto
 oe	stānrocc	stānrocc	stanrocc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:33	broad_prose_curated	override
 oe	stefe	stefe	stefe	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:51	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md	auto
-oe	stefn	stefn	stefn	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
-oe	stefn	stefn	stefn	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:36	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
-oe	stefn	stefn	stefn	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:42	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
-oe	stefn	stefn	stefn	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stefn	stefn	stefn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:41	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 oe	stefn	stefn	stefn	target_form	lexical_heading	stem — OE stefn	manifest	auto
-oe	stemn	stemn	stemn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:37	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
-oe	stemn	stemn	stemn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:41	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
-oe	stemn	stemn	stemn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:61	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stefna	stefna	stefna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:40	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stefna	stefna	stefna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:51	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stefna	stefna	stefna	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:59	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stefna	stefna	stefna	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:68	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stefna	stefna	stefna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:92	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stemn	stemn	stemn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:70	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stemn	stemn	stemn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:94	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 oe	stillan	stillan	stillan	target_form	lexical_heading	still — OE stillan	manifest	auto
+oe	stofn	stofn	stofn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:43	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stofn	stofn	stofn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:53	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+oe	stofn	stofn	stofn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:93	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 oe	strēawian	strēawian	streawian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:65	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	auto
 oe	strēgan	strēgan	stregan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:26	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	auto
 oe	strēgan	strēgan	stregan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:63	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	auto
@@ -891,11 +898,12 @@ oe	þrim	þrim	thrim	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/m
 oe	þrim	þrim	thrim	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:57	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md	auto
 oe	þūsend	þūsend	thusend	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:22	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 oe	þūsend	þūsend	thusend	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:28	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
-oe	þūsend	þūsend	thusend	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:42	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
-oe	þūsend	þūsend	thusend	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:54	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
-oe	þūsend	þūsend	thusend	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:65	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+oe	þūsend	þūsend	thusend	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:43	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+oe	þūsend	þūsend	thusend	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:57	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+oe	þūsend	þūsend	thusend	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 oe	þūsend	þūsend	thusend	target_form	lexical_heading	thousand — OE þūsend	manifest	auto
-oe	*þȳsend	*þȳsend	thysend	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:63	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+oe	*þȳsend	*þȳsend	thysend	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:42	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+oe	*þȳsend	*þȳsend	thysend	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 oe	tīd	tīd	tid	target_form	lexical_heading	tide — OE tīd	manifest	auto
 oe	tīdan	tīdan	tidan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:33	broad_prose_curated	override
 oe	timber	timber	timber	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:22	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
@@ -914,6 +922,7 @@ oe	wacan	wacan	wacan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model
 oe	wacan	wacan	wacan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:31	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md	auto
 oe	wacan	wacan	wacan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:33	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md	auto
 oe	wacan	wacan	wacan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:36	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md	auto
+oe	wacan	wacan	wacan	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:44	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md	auto
 oe	wacan	wacan	wacan	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:54	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md	auto
 oe	wacan	wacan	wacan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:55	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md	auto
 oe	wacan	wacan	wacan	target_form	lexical_heading	wake — OE wacan	manifest	auto
@@ -1640,10 +1649,12 @@ pgmc	stábiz	*stábiz	stabiz	source_protoform	explicit_tag	Germanic/docs/lexeme_
 pgmc	*stábiz	*stábiz	stabiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:51	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md	auto
 pgmc	*stábiz	*stábiz	stabiz	source_protoform	lexical_proto	staff — OE stæf	manifest	auto
 pgmc	*stáinaz	*stáinaz	stainaz	selected_input	trace_proto_input	stone — OE stān	compact	auto
-pgmc	*stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:59	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+pgmc	*stamnaz	*stamnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+pgmc	*stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+pgmc	*stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:66	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+pgmc	*stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
+pgmc	*stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:91	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 pgmc	*stámnaz	*stámnaz	stamnaz	source_protoform	lexical_proto	stem — OE stefn	manifest	auto
-pgmc	stébnō	*stébnō	stebno	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:30	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
-pgmc	*stébnō	*stébnō	stebno	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 pgmc	*stébnō	*stébnō	stebno	source_protoform	lexical_protoform	stem — OE stefn	manifest	auto
 pgmc	*stébnō	*stébnō	stebno	selected_input	trace_proto_input	stem — OE stefn	compact	auto
 pgmc	*stélaną	*stélaną	stelana	selected_input	trace_proto_input	steal — OE stelan	compact	auto
@@ -1725,12 +1736,12 @@ pgmc	*θúrnaz	*θúrnaz	thurnaz	source_protoform	lexical_protoform	thorn — OE
 pgmc	*θúrnaz	*θúrnaz	thurnaz	selected_input	trace_proto_input	thorn — OE þorn	compact	auto
 pgmc	*θúrstuz	*θúrstuz	thurstuz	selected_input	trace_proto_input	thirst — OE þurst	compact	auto
 pgmc	θūs-èndi	*θūs-èndi	thusendi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
-pgmc	θūs-èndi	*θūs-èndi	thusendi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:53	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
-pgmc	*θūs-èndi	*θūs-èndi	thusendi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:65	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+pgmc	θūs-èndi	*θūs-èndi	thusendi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+pgmc	*θūs-èndi	*θūs-èndi	thusendi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 pgmc	*θūs-èndi	*θūs-èndi	thusendi	source_protoform	lexical_protoform	thousand — OE þūsend	manifest	auto
 pgmc	*θūsèndi	*θūsèndi	thusendi	selected_input	trace_proto_input	thousand — OE þūsend	compact	auto
 pgmc	*þūsundī-	*þūsundī-	thusundi	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:21	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
-pgmc	*þūsundī-	*þūsundī-	thusundi	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:63	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
+pgmc	*þūsundī-	*þūsundī-	thusundi	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 pgmc	*θūs-undī	*θūs-undī	thusundi	source_protoform	lexical_proto	thousand — OE þūsend	manifest	auto
 pgmc	*tī́diz	*tī́diz	tidiz	source_protoform	lexical_proto	tide — OE tīd	manifest	auto
 pgmc	*tḯdiz	*tḯdiz	tidiz	source_protoform	lexical_protoform	tide — OE tīd	manifest	auto
@@ -1930,6 +1941,7 @@ preoe	spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_rep
 preoe	*spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*spárēθi	*spárēθi	sparethi	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
 preoe	*sparja-	*sparja-	sparja	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+preoe	*timbr	*timbr	timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
 preoe	*timbr	*timbr	timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
 preoe	*weraldiz	*weraldiz	weraldiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
 preoe	*weraldu	*weraldu	weraldu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
@@ -1944,6 +1956,7 @@ on	hliþó	hliþó	hlitho	comparison_form	override	Germanic/docs/lexeme_reports/
 on	hnakki	hnakki	hnakki	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md	auto
 on	hvina	hvina	hvina	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:26	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
 on	hvina	hvina	hvina	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:65	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
+on	stafn	stafn	stafn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:22	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 ohg	backan	backan	backan	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	override	override
 ohg	bahhan	bahhan	bahhan	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	override	override
 ohg	bēde	bēde	bede	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
@@ -1966,10 +1979,10 @@ ofris	makia	makia	makia	comparison_form	explicit_tag	Germanic/docs/lexeme_report
 ofris	skawia	skawia	skawia	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	override	override
 ofris	skawia	skawia	skawia	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md	auto
 ofris	skulder	skulder	skulder	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md	auto
+ofris	stevene	stevene	stevene	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 goth	brusts	brusts	brusts	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto
 goth	faurhtei	faurhtei	faurhtei	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md	auto
 goth	fra-liusan	fra-liusan	fraliusan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	broad_prose_curated	override
-goth	stibna	stibna	stibna	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 os	be-thia	be-thia	bethia	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 os	briost	briost	briost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto
 os	dilli	dilli	dilli	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:22	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
@@ -1978,6 +1991,7 @@ os	likkon	likkon	likkon	comparison_form	explicit_tag	Germanic/docs/lexeme_report
 os	makon	makon	makon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:24	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md	auto
 os	skawōn	skawōn	skawon	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	override	override
 os	skawōn	skawōn	skawon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md	auto
+os	stamn	stamn	stamn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 dutch	beide	beide	beide	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:31	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 dutch	beide	beide	beide	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 dutch	vel	vel	vel	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21	broad_prose_curated	override

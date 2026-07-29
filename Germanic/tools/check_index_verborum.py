@@ -644,7 +644,7 @@ def assert_table_semantic_rows() -> None:
     ignored_pairs = parse_audit_table_semantic_ignored_pairs()
     for form in {"*kōz", "*kūi", "*kūiz", "*nasō", "*núsō"}:
         assert not any(pair_form == form for pair_form, _ in ignored_pairs)
-    assert ("stefn", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:61") in ignored_pairs
+    assert ("*stébnō", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95") in ignored_pairs
 
     def auto_or_suggest(form: str, role: str) -> bool:
         return (
@@ -811,11 +811,14 @@ def assert_broad_prose_decisions_and_inference() -> None:
     assert broad_prose_notation_reason(intermediate_candidate) == "intermediate or model-stage form in development chain"
 
     curated_ignored_pairs = parse_audit_bucket_pairs("Curated broad-prose ignored")
-    assert ("Mönch", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") in curated_ignored_pairs
-    assert ("Jugend", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") in curated_ignored_pairs
+    # Mönch and Jugend were removed from the youth entry source (v3 integrity pass).
+    # They must not appear as unresolved false positives or as candidates in the index.
+    youth_path = "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md"
+    youth_text = (REPO_ROOT / youth_path).read_text(encoding="utf-8")
+    assert "Mönch" not in youth_text, "Mönch (German translation) must not appear in youth entry after cleanup"
+    assert "Jugend" not in youth_text, "Jugend (German translation) must not appear in youth entry after cleanup"
     unresolved_false_positive_pairs = parse_audit_bucket_pairs("Likely ordinary-language false positives")
-    assert ("Mönch", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") not in unresolved_false_positive_pairs
-    assert ("Jugend", "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53") not in unresolved_false_positive_pairs
+    assert not any(pair_form in {"Mönch", "Jugend"} for pair_form, _ in unresolved_false_positive_pairs), "Mönch/Jugend must not appear as unresolved candidates"
 
 
 def assert_print_layer_outputs() -> None:

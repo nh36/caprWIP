@@ -49,8 +49,8 @@ From the selected input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugunth 
 fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
 [jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
 [jéoguθ]{.recon} 'youth', which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves `u` after accented `u` in forms such
-as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} [@Campbell1959, §374]. Brunner likewise cites `iuzuð`
-`Jugend` and `munuc` `Mönch` in the same environment
+as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} 'troop' and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'monk' [@Campbell1959, §374]. Brunner likewise cites
+[`iuzuð`]{.iv lang=oe sort=iuzuth role=comparison_form} 'youth' and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'monk' under the same development
 [@SieversBrunner1965, §150.3].
 
 ### Stage comparison

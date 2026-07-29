@@ -92,13 +92,21 @@ def assert_true(cond: bool, msg: str) -> None:
         raise AssertionError(msg)
 
 
-def paragraph_fixture(title: str, body: str) -> str:
+def paragraph_fixture(section: str, body: str) -> str:
+    """Build a minimal Part II fixture with the given prose section and body.
+
+    The heading hierarchy matches the assembled book:
+      # Word-by-word derivations  (switches to Part II)
+      ### Fixture entry            (level-3 = p2_entry in validator)
+      #### {section}               (level-4 = p2_section in validator)
+    """
     return (
         "# Sound changes\n\n"
         "## Placeholder\n\n"
         "Non-lexical paragraph.\n\n"
         "# Word-by-word derivations\n\n"
-        f"### {title}\n\n"
+        "### Fixture entry\n\n"
+        f"#### {section}\n\n"
         f"{body}\n"
     )
 
@@ -150,7 +158,8 @@ def run_unicode_ascii_fixtures() -> None:
         (
             "# Sound changes\n\nA stub.\n\n"
             "# Word-by-word derivations\n\n"
-            "### Old English evidence\n\n"
+            "### Fixture entry\n\n"
+            "#### Old English evidence\n\n"
             "OE *cū* 'cow' appears.\n\n"
             "OE *cū* appears again in a new paragraph.\n"
         )
@@ -286,9 +295,10 @@ def run_stats_regression() -> None:
     md = (
         "# Sound changes\n\nA plain paragraph.\n\n"
         "# Word-by-word derivations\n\n"
-        "### Transducer input and output\n\n"
+        "### Stats test entry\n\n"
+        "#### Transducer input and output\n\n"
         "[júką]{.recon} 'yoke' appears.\n\n"
-        "### Old English evidence\n\n"
+        "#### Old English evidence\n\n"
         "OE *faran* 'fare' appears.\n"
     )
     code, stderr = run_validator(md)
@@ -298,6 +308,115 @@ def run_stats_regression() -> None:
     assert_true(".recon-only paragraphs outside ordinary scope" in stderr, "Part II recon-only count missing")
 
 
+def run_notation_fixtures() -> None:
+    """Phonological notation sequences must never become lexical candidates."""
+    # ēo, ēa, *ai must be ignored (notation, not words)
+    for seq in ["ēo", "ēa", "*ai"]:
+        code, _ = run_validator(
+            paragraph_fixture("Old English evidence", f"The sequence *{seq}* is phonological notation.")
+        )
+        assert_true(code == 0, f"phonological sequence {seq!r} must not be treated as a lexical candidate")
+
+    # A genuine two-character OE word must still be checked
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "OE *cū* appears without gloss.")
+    )
+    assert_true(code == 2, "genuine short OE word cū must require a gloss")
+
+    # SC025 mōna regression: both alternant forms require their own gloss
+    code, _ = run_validator(
+        "# Sound changes\n\n"
+        "The *mōnaþ* 'month' and *mōna* / *mōn* material.\n"
+    )
+    assert_true(code == 2, "SC025 regression: *mōna* must require a gloss when *mōn* carries the gloss")
+
+    # SC025 fixed form: mōna has its own gloss
+    code, _ = run_validator(
+        "# Sound changes\n\n"
+        "The *mōnaþ* 'month' and *mōna* 'moon' / *mōn* 'moon' material.\n"
+    )
+    assert_true(code == 0, "SC025 fixed: mōna 'moon' satisfies the gloss rule")
+
+
+def run_lex_ex_fixtures() -> None:
+    """.lex and .ex semantic markup fixtures."""
+    # .lex without gloss fails
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "[faran]{.lex lang=oe} appears without gloss.")
+    )
+    assert_true(code == 2, ".lex without gloss should fail")
+
+    # .lex with gloss passes
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "[faran]{.lex lang=oe} 'fare' appears.")
+    )
+    assert_true(code == 0, ".lex with gloss should pass")
+
+    # .lex repeated same paragraph does not require re-gloss
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "[faran]{.lex lang=oe} 'fare' cited and [faran]{.lex lang=oe} again.")
+    )
+    assert_true(code == 0, ".lex repeated same paragraph should not re-require gloss")
+
+    # .lex in new paragraph requires gloss again
+    code, _ = run_validator(
+        "# Sound changes\n\nA stub.\n\n"
+        "# Word-by-word derivations\n\n"
+        "### Fixture entry\n\n"
+        "#### Old English evidence\n\n"
+        "[faran]{.lex lang=oe} 'fare' first occurrence.\n\n"
+        "[faran]{.lex lang=oe} second paragraph, no gloss.\n"
+    )
+    assert_true(code == 2, ".lex in new paragraph must be glossed again")
+
+    # .ex (example phrase) always exempt
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "Cited as [tó ræste]{.ex} in Bosworth-Toller.")
+    )
+    assert_true(code == 0, ".ex example phrase must be exempt from gloss rule")
+
+    # tó ræste regression: tó within .ex phrase must not require gloss
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Old English evidence",
+            "Oblique uses include [tó ræste]{.ex} 'to rest' and [on ræste]{.ex} 'at rest'.",
+        )
+    )
+    assert_true(code == 0, "tó ræste regression: example phrases exempt from word-by-word gloss rule")
+
+
+def run_case_normalization_fixtures() -> None:
+    """Sentence-initial capitals must not create a new lexical identity."""
+    # macaþ then Macaþ in same paragraph = one identity
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Old English evidence",
+            "The form *macaþ* 'makes' is the 3sg. *Macaþ* appears sentence-initially.",
+        )
+    )
+    assert_true(code == 0, "Macaþ after macaþ 'makes' must not require a second gloss")
+
+    # cū and cȳ remain distinct despite case-folding
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Old English evidence",
+            "OE *cū* 'cow' appears first, but OE *cȳ* appears without gloss.",
+        )
+    )
+    assert_true(code == 2, "cū and cȳ must remain distinct even after case folding")
+
+    # Mönch regression: Brunner citation translation must not be a lexical candidate
+    code, _ = run_validator(
+        paragraph_fixture(
+            "Development to Old English",
+            "Campbell cites [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'monk' "
+            "and [`iuzuð`]{.iv lang=oe sort=iuzuth role=comparison_form} 'youth' in the "
+            "same environment [@SieversBrunner1965, §150.3].",
+        )
+    )
+    assert_true(code == 0, "Mönch regression: Brunner citation without German translations must pass")
+
+
 def run_known_entry_checks() -> None:
     night = NIGHT_PATH.read_text(encoding="utf-8")
     fowl = FOWL_PATH.read_text(encoding="utf-8")
@@ -305,13 +424,21 @@ def run_known_entry_checks() -> None:
     nose = NOSE_PATH.read_text(encoding="utf-8")
     stem = STEM_PATH.read_text(encoding="utf-8")
 
-    assert_true("'night' ‘night’" not in night and "‘night' 'night'" not in night, "night still has duplicate glosses")
-    assert_true("'fowl' ‘fowl’" not in fowl and "‘fowl’ 'fowl'" not in fowl, "fowl still has duplicate glosses")
+    assert_true("'night' 'night'" not in night and "\u2018night\u2019 \u2018night\u2019" not in night, "night still has duplicate glosses")
+    assert_true("'fowl' 'fowl'" not in fowl and "\u2018fowl\u2019 \u2018fowl\u2019" not in fowl, "fowl still has duplicate glosses")
     assert_true("[nasō ... OE nasu]{.recon}" not in nose, "nose still has overbroad .recon span")
     assert_true("[*" not in water, "water still contains stray [* fragment")
-    assert_true("]{.recon} ‘water’weeter[*" not in water, "water retains malformed recon span fragment")
-    assert_true("]{.recon} ‘water’weter" not in water, "water retains malformed recon span fragment")
-    assert_true("voice, sound" in stem or "voice / sound" in stem, "stem entry semantic relabel not applied")
+    assert_true("]{.recon} 'water'weeter[*" not in water, "water retains malformed recon span fragment")
+    assert_true("]{.recon} 'water'weter" not in water, "water retains malformed recon span fragment")
+    assert_true("voice, sound" in stem or "stem, trunk" in stem or "prow" in stem, "stem entry missing expected stem/trunk/prow content")
+    assert_true("*stébnō" not in stem or "wrong homonym" in stem, "stem entry still contains voice-word protoform without clear repudiation")
+
+    # Residual v2 corruption guard: empty .recon spans must not exist in these entries
+    for label, path in [("thousand", ROOT / "docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md"),
+                         ("timber", ROOT / "docs/lexeme_reports/model_entries/2258-timber-timber.model.md"),
+                         ("wake", ROOT / "docs/lexeme_reports/model_entries/2268-wake-wacan.model.md")]:
+        text = path.read_text(encoding="utf-8")
+        assert_true("[]{.recon}" not in text, f"{label} entry still contains empty []{{}}.recon span (v2 corruption)")
 
     # enforce corpus-wide .pred no-gloss policy
     pred_gloss_hits = []
@@ -326,13 +453,20 @@ def run_known_entry_checks() -> None:
 def run_corpus_lints() -> None:
     recon_issues: list[ReconIssue] = []
     duplicate_issues: list[str] = []
+    empty_recon_hits: list[str] = []
+
     for path in MODEL_ENTRIES.glob("*.model.md"):
         text = path.read_text(encoding="utf-8")
         recon_issues.extend(find_recon_span_issues(text, str(path)))
         duplicate_issues.extend(find_duplicate_glosses(text, str(path)))
+        if "[]{.recon}" in text:
+            line_no = text.find("[]{.recon}")
+            lnum = text[:line_no].count("\n") + 1
+            empty_recon_hits.append(f"{path}:{lnum}: empty []{{}}.recon span")
 
     assert_true(not recon_issues, "malformed .recon spans:\n" + "\n".join(f"{x.source}: {x.reason} :: {x.span}" for x in recon_issues[:40]))
     assert_true(not duplicate_issues, "adjacent duplicate glosses:\n" + "\n".join(duplicate_issues[:40]))
+    assert_true(not empty_recon_hits, "empty .recon spans found:\n" + "\n".join(empty_recon_hits[:20]))
 
 
 def main() -> int:
@@ -348,7 +482,10 @@ def main() -> int:
 
     try:
         run_predicted_fixtures()
+        run_notation_fixtures()
         run_unicode_ascii_fixtures()
+        run_lex_ex_fixtures()
+        run_case_normalization_fixtures()
         run_recon_duplicate_fixtures()
         run_stats_regression()
         run_known_entry_checks()

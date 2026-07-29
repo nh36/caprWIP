@@ -29,8 +29,9 @@ Style conventions for the CAPR Germanic reader-facing materials
 - On first mention in each prose paragraph, every lexical linguistic form must include a brief English gloss immediately following it. A paragraph reset requires repeating glosses.
 - Gloss form example: *ġeoc* 'yoke' or [júką]{.recon} 'yoke'.
 - This rule applies to reader-facing prose paragraphs (Part I sound-change chapters and Part II lexical derivation prose). It does not apply to tables, code blocks, headings, index entries, bibliography entries, or derivation traces.
-- Explicitly recognised lexical markup types: .iv spans, .recon spans, plain Markdown *italic* in prose.
-- .pred forms are exempt from this rule and must remain unglossed.
+- Explicitly recognised lexical markup types: `.iv` spans, `.recon` spans, `.lex` spans, and plain Markdown *italic* in prose.
+- `.pred` forms are exempt from this rule and must remain unglossed.
+- `.ex` (example phrase) spans are always exempt from the paragraph gloss rule — see below.
 
 Enforcement
 
@@ -40,6 +41,10 @@ Implementation notes
 
 - Use [form]{.recon} for reconstructed lexical forms (asterisk supplied by renderer).
 - Use [*form*]{.pred} for counterfactual model outputs (dagger supplied by renderer).
-- Use [*form*]{.iv ...} for indexed attested/normalised Old English forms.
-- Use plain *form* Markdown italic for attested Old English forms in prose that need no index entry.
+- Use [`form`]{.iv lang=XX sort=YY role=ZZ} for indexed attested/normalised forms.
+- Use [form]{.lex lang=XX} for ordinary lexical linguistic forms that do not require index membership.
+- Use [phrase]{.ex} for literal example phrases or quoted expressions exempt from word-by-word glossing.
+- Use plain *form* Markdown italic ONLY as a last resort where explicit markup would be disproportionate; prefer `.lex` for semantic clarity.
 - `.iv` (indexing) and `.recon` (reconstruction) are orthogonal and may coexist: [form]{.recon .iv lang=pgmc display=*form sort=...} produces the asterisk via \Recon and an index entry via .iv, with no duplication.
+- `.lex` has **no Index verborum side effect**. Adding `.lex` to a form does not add it to the print index. Use `.iv` explicitly when index membership is intended.
+- `.ex` has **no lexical-validation semantics**. It marks a phrase as a quotation or example and suppresses the paragraph gloss requirement for every word inside it.

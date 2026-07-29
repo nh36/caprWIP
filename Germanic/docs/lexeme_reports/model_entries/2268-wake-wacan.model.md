@@ -40,8 +40,8 @@ still remains the correct Old English comparison form for the strong branch.
 ### Development to Old English
 
 With strong **[[wákaną]{.recon} ‘wake’]{.iv lang=pgmc sort=wakana role=selected_input}**, Anglo-Frisian brightening first gives a form of the
-**[wækaną]{.recon} ‘wake’** type. A-restoration then returns **`a[*, and the ordinary tail
-reductions yield **[]{.recon} ‘wake’wacan`]{.iv lang=oe sort=wacan role=regular_output}**. The weak verb **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form} 'wake'** belongs to a different
+**[wækaną]{.recon} ‘wake’** type. A-restoration then returns `a`, and the ordinary tail
+reductions yield [`wacan`]{.iv lang=oe sort=wacan role=regular_output} 'wake'. The weak verb **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form} 'wake'** belongs to a different
 prehistory and is not the expected outcome of this input.
 
 ### Class comparison

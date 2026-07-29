@@ -1,30 +1,30 @@
 # Index verborum print audit
 
-- Internal production occurrences: 1991
-- Internal production unique forms: 974
-- Printed main occurrences: 1889
-- Printed main unique forms: 952
-- Printed excluded occurrences: 102
+- Internal production occurrences: 2005
+- Internal production unique forms: 980
+- Printed main occurrences: 1900
+- Printed main unique forms: 958
+- Printed excluded occurrences: 105
 - Printed excluded unique forms: 82
 
 ## Print exclusions by reason
 
-- `excluded_by_print_decision`: 4
+- `excluded_by_print_decision`: 5
 - `preoe_model_internal_default_exclusion`: 8
-- `regular_output_default_exclusion`: 90
+- `regular_output_default_exclusion`: 92
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 898 | 391 |
-| Proto-Germanic | 933 | 514 |
+| Old English | 905 | 394 |
+| Proto-Germanic | 935 | 515 |
 | Proto-West Germanic | 2 | 2 |
-| Old Norse | 10 | 8 |
+| Old Norse | 11 | 9 |
 | Old High German | 16 | 14 |
-| Old Frisian | 6 | 5 |
-| Gothic | 4 | 4 |
-| Old Saxon | 8 | 6 |
+| Old Frisian | 7 | 6 |
+| Gothic | 3 | 3 |
+| Old Saxon | 9 | 7 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Modern English | 2 | 1 |
@@ -34,20 +34,20 @@
 | Role | Occurrences |
 | --- | ---: |
 | target_form | 368 |
-| source_protoform | 328 |
-| selected_input | 534 |
-| comparison_form | 498 |
+| source_protoform | 332 |
+| selected_input | 532 |
+| comparison_form | 507 |
 | evidence_form | 161 |
 
 ## Internal-only rows by reason
 
-- `excluded_by_print_decision`: 4
+- `excluded_by_print_decision`: 5
 - `preoe_model_internal_default_exclusion`: 8
-- `regular_output_default_exclusion`: 90
+- `regular_output_default_exclusion`: 92
 
 ## Pre-OE review rows by proposed status
 
-- `exclude_model_internal`: 4
+- `exclude_model_internal`: 5
 - `include_if_source_backed`: 8
 
 ## Reader-facing example rows by role
@@ -64,7 +64,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 953
+- Unique printed entries: 959
 - Print anomaly rows: 29
 - Hard print anomalies: 0
 
@@ -72,7 +72,7 @@
 
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
-| oe | `ærende` | aerende | 2 | comparison_form |
+| oe | `ærende` | aerende | 3 | comparison_form |
 | oe | `āsceaf` | asceaf | 1 | comparison_form |
 | oe | `bā` | ba | 3 | comparison_form |
 | oe | `bacan` | bacan | 4 | evidence_form; target_form |
@@ -127,7 +127,6 @@
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
-| goth | `stibna` | stibna | 1 | comparison_form |
 | dutch | `beide` | beide | 2 | comparison_form |
 | dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
@@ -167,13 +166,13 @@
 ## Included main-index rows (sample)
 
 - `ærende` (oe, comparison_form; override; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47)
+- `ærende` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:49)
 - `ærende` (oe, comparison_form; override; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50)
 - `āsceaf` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:32)
 - `bā` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22)
 - `bā` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37)
 - `bā` (oe, comparison_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:68)
 - `bacan` (oe, evidence_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
-- `bacan` (oe, evidence_form; explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:25)
 
 ## Excluded regular-output rows (sample)
 

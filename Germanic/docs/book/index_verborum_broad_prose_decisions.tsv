@@ -116,3 +116,10 @@ defer	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:39	*sāwi
 defer	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:40	*sāwiz	pwgmc	comparison_form	intermediate development stage in the sea derivation chain
 defer	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:42	*sāwiz	pwgmc	comparison_form	intermediate development stage in the sea derivation chain
 defer	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:40	*stába	preoe	comparison_form	intermediate development stage in the staff derivation chain
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67	coda			English linguistic term 'coda' (syllabic position); not a Germanic lexical form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:63	NWGmcMnDissimilation			FST rule name; not a lexical form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83	Orel			Author name (dictionary citation); not a lexical form
+defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67	*stáfnaz	pgmc	source_protoform	Proposed NWGmc intermediate for prow/stem etymology; deferred pending full dossier
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82	*stebnō	pgmc	source_protoform	Wrong homonym (voice word); explicitly excluded from stem/prow row 2216
+defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67	*stéfnô	pgmc	source_protoform	Pre-OE transponent candidate for prow word; deferred pending full dossier
+defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46	*stofn	pgmc	source_protoform	Luick proto-form for OE stofn trunk; deferred pending full dossier

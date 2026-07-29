@@ -20,8 +20,8 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs the noun as **[`*timbra-`]{.iv lang=pgmc sort=timbra role=source_protoform}** and cites Old English
 **[`timber`]{.iv lang=oe sort=timber role=target_form} 'timber'** among its continuations [@Kroonen2013, 517]. Ringe and Taylor
-instead state the history from **`PGmc *timra[* through West Germanic
-**[]{.recon} ‘timber’*timbr`]{.iv lang=preoe sort=timbr role=comparison_form}** to Old English **[`timber`]{.iv lang=oe sort=timber role=target_form} 'timber'** [@RingeTaylor2014, 327].
+instead state the history from `PGmc *timra` through West Germanic
+[`*timbr`]{.iv lang=preoe sort=timbr role=comparison_form} to Old English [`timber`]{.iv lang=oe sort=timber role=target_form} 'timber' [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial **`b`** belongs in the comparative citation form or appears in an
