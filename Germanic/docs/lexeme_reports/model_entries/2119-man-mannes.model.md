@@ -28,22 +28,22 @@ genitive ending.
 
 ### Old English evidence
 
-Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form}, [`man`]{.iv lang=oe sort=man role=comparison_form} / [`mannes`]{.iv lang=oe sort=mannes role=target_form} / _menn_
+Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form} 'man', [`man`]{.iv lang=oe sort=man role=comparison_form} 'man' / [`mannes`]{.iv lang=oe sort=mannes role=target_form} 'man' / _menn_
 [@Campbell1959, §621].
 Sievers-Brunner likewise cites [`man`]{.iv lang=oe sort=man role=comparison_form} [`mannes`]{.iv lang=oe sort=mannes role=target_form} [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as [`man`]{.iv lang=oe sort=man role=comparison_form}
-beside inflected [`monnes`]{.iv lang=oe sort=monnes role=comparison_form} [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under [`mann`]{.iv lang=oe sort=mann role=comparison_form}
+beside inflected [`monnes`]{.iv lang=oe sort=monnes role=comparison_form} 'man' [@SieversBrunner1965, §231]. Clark Hall keeps the dictionary headword under [`mann`]{.iv lang=oe sort=mann role=comparison_form}
 [@ClarkHall1960, 197].
 
 The relevant comparison form is therefore the attested genitive singular
-**[`mannes`]{.iv lang=oe sort=mannes role=target_form}**, not the citation lemma [`mann`]{.iv lang=oe sort=mann role=comparison_form}.
+**[`mannes`]{.iv lang=oe sort=mannes role=target_form} 'man'**, not the citation lemma [`mann`]{.iv lang=oe sort=mann role=comparison_form} 'man'.
 
 ### Development to Old English
 
 Campbell's paradigm _mann_, _man_ / _mannes_ / _menn_ confirms the selected genitive
 singular _mannes_ [@Campbell1959, §621]. In the present analysis, [mánnas]{.recon} ‘man’
 develops through Anglo-Frisian brightening and later unstressed merger to
-`mannes`. In this cell the geminate remains medial before `-es`. The citation
+`mannes` 'man'. In this cell the geminate remains medial before `-es`. The citation
 form behaves differently because word-final gemination was simplified in Old
 English [@SieversBrunner1965, §231].
 

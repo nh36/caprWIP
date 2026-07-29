@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Fulk gives Proto-Germanic [liuxtijanan]{.recon} ‘light’ with Old English `līehtan` 'illuminate', and Ringe and Taylor likewise derive West Saxon `liehtan` from the same weak-verb formation [@Fulk2018; @RingeTaylor2014].
+Fulk gives Proto-Germanic [liuxtijanan]{.recon} ‘light’ with Old English `līehtan` 'illuminate', and Ringe and Taylor likewise derive West Saxon `liehtan` 'light' from the same weak-verb formation [@Fulk2018; @RingeTaylor2014].
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller preserve the verb family under spellings such as `liehtan`, `lihtan`, and `līhtan`, distinct from the related noun `lēoht` and adjective `leoht/liht` [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller preserve the verb family under spellings such as `liehtan` 'light', `lihtan` 'light', and `līhtan` 'light', distinct from the related noun `lēoht` 'light' and adjective `leoht/liht` [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 
-From [léuxtijaną]{.recon} ‘light’, the regular verbal line preserves `*xt`, passes through a West Saxon `liehtan` stage, and is represented here by normalized `līehtan`. The word treated in this entry is therefore the verb 'to light, illuminate', not the related noun from [leuxtą]{.recon} ‘light’ [@Fulk2018; @RingeTaylor2014].
+From [léuxtijaną]{.recon} ‘light’, the regular verbal line preserves `*xt`, passes through a West Saxon `liehtan` 'light' stage, and is represented here by normalized `līehtan` 'light'. The word treated in this entry is therefore the verb 'to light, illuminate', not the related noun from [leuxtą]{.recon} ‘light’ [@Fulk2018; @RingeTaylor2014].
 
 ### Dialect note
 
-Ringe and Taylor and Campbell distinguish West Saxon `liehtan` from Anglian `lihtan`, while later West Saxon also shows `lyhtan` [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor and Campbell distinguish West Saxon `liehtan` 'light' from Anglian `lihtan` 'light', while later West Saxon also shows `lyhtan` 'light' [@RingeTaylor2014; @Campbell1959].

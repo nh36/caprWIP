@@ -19,19 +19,19 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as [[skawōjanan]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawojanan role=source_protoform} and cites Old English [`sceáwian`]{.iv lang=oe sort=sceawian role=comparison_form} beside Old Frisian [`skawia`]{.iv lang=ofris sort=skawia role=comparison_form}, Old Saxon [`skawōn`]{.iv lang=os sort=skawon role=comparison_form}, and Old High German [`scouwōn`]{.iv lang=ohg sort=scouwon role=comparison_form} [@Orel2003, 337]. The derivational input in this entry is the present third singular [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input}, a finite class-II cell with stable `a` in the 3sg ending [@RingeTaylor2014, 80].
+Orel reconstructs the verb as [[skawōjanan]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawojanan role=source_protoform} and cites Old English [`sceáwian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' beside Old Frisian [`skawia`]{.iv lang=ofris sort=skawia role=comparison_form} 'show', Old Saxon [`skawōn`]{.iv lang=os sort=skawon role=comparison_form} 'show', and Old High German [`scouwōn`]{.iv lang=ohg sort=scouwon role=comparison_form} 'show' [@Orel2003, 337]. The derivational input in this entry is the present third singular [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input}, a finite class-II cell with stable `a` in the 3sg ending [@RingeTaylor2014, 80].
 
 Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)` [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. `-as(t)` and 3sg. `-aþ` have stable `a` [@RingeTaylor2014, 80]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
 ### Old English evidence
 
-Bright lists the simplex headword [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} and the imperative [`scēawa`]{.iv lang=oe sort=sceawa role=comparison_form}, and under `geond-scēawian` also records a third singular `sceawað` [@BrightCassidyRingler1971, 383]. The evidence thus establishes the `scēaw- / sceawað` finite-cell pattern directly.
+Bright lists the simplex headword [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' and the imperative [`scēawa`]{.iv lang=oe sort=sceawa role=comparison_form} 'show', and under `geond-scēawian` 'show' also records a third singular `sceawað` 'show' [@BrightCassidyRingler1971, 383]. The evidence thus establishes the `scēaw- / sceawað` finite-cell pattern directly.
 
-The form written here as [`sċēawaþ`]{.iv lang=oe sort=sceawath role=target_form} is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested `scēaw-` evidence and the directly cited `sceawað` ending pattern.
+The form written here as [`sċēawaþ`]{.iv lang=oe sort=sceawath role=target_form} 'show' is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested `scēaw-` evidence and the directly cited `sceawað` 'show' ending pattern.
 
 ### Development to Old English
 
-Campbell lists [`scéawian`]{.iv lang=oe sort=sceawian role=comparison_form} under the same West Germanic [auw]{.recon} ‘show (3sg)’ development [@Campbell1959, §120]. [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input} therefore belongs to the `scēaw-` family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-`a` discussion show that the class-II 3sg ending gives `-aþ`, not `-eþ` [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains `-j-`, no i-umlaut applies.
+Campbell lists [`scéawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' under the same West Germanic [auw]{.recon} ‘show (3sg)’ development [@Campbell1959, §120]. [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input} therefore belongs to the `scēaw-` family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-`a` discussion show that the class-II 3sg ending gives `-aþ`, not `-eþ` [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains `-j-`, no i-umlaut applies.
 
 ### Paradigm comparison
 

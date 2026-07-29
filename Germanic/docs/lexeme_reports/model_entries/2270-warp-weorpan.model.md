@@ -22,12 +22,12 @@ Ringe and Taylor distinguish preterite [warp]{.recon} ‘warp’ from infinitive
 
 ### Old English evidence
 
-Clark Hall records `weorpan` as the strong verb headword and separately lists `wearp` as both noun and preterite. Bright gives the paradigm `weorpan, wearp, wurpon, worpen` [@ClarkHall1960; @BrightCassidyRingler1971].
+Clark Hall records `weorpan` 'warp' as the strong verb headword and separately lists `wearp` 'warp' as both noun and preterite. Bright gives the paradigm `weorpan, wearp, wurpon, worpen` [@ClarkHall1960; @BrightCassidyRingler1971].
 
 ### Development to Old English
 
-Breaking before `r + C` yields `weor-`, and the infinitive develops regularly to `weorpan` [@Campbell1959; @Hogg1992].
+Breaking before `r + C` 'warp' yields `weor-`, and the infinitive develops regularly to `weorpan` 'warp' [@Campbell1959; @Hogg1992].
 
 ### Lexical note
 
-English *warp* also points to related `wearp` material. The target is the infinitive `weorpan`.
+English *warp* also points to related `wearp` 'warp' material. The target is the infinitive `weorpan` 'warp'.

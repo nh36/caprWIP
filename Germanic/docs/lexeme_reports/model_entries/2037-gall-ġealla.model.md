@@ -24,25 +24,25 @@ the Old English noun itself belongs with a weak noun `*gallōn-`, cited here as
 comparative headword in stem class.
 
 The stem class determines the Old English shape. The weak
-masculine pathway preserves the ending needed for `ġealla`, whereas a simple
+masculine pathway preserves the ending needed for `ġealla` 'gall', whereas a simple
 strong-noun headword does not align as closely with the attested OE noun.
 
 ### Old English evidence
 
-Old English dictionaries record the noun as [`gealla`]{.iv lang=oe sort=gealla role=target_form}, and Bright also gives the
-dative [`geallan`]{.iv lang=oe sort=geallan role=comparison_form}, confirming a weak-noun paradigm [@BosworthToller1898, 297;
+Old English dictionaries record the noun as [`gealla`]{.iv lang=oe sort=gealla role=target_form} 'gall', and Bright also gives the
+dative [`geallan`]{.iv lang=oe sort=geallan role=comparison_form} 'gall', confirming a weak-noun paradigm [@BosworthToller1898, 297;
 @ClarkHall1960, 145; @BrightCassidyRingler1971, 372]. The normalized spelling
-[`ġealla`]{.iv lang=oe sort=gealla role=target_form} uses ġ for the palatal consonant.
+[`ġealla`]{.iv lang=oe sort=gealla role=target_form} 'gall' uses ġ for the palatal consonant.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
-[`gealla`]{.iv lang=oe sort=gealla role=target_form} with Anglian [`galla`]{.iv lang=oe sort=galla role=comparison_form} [@Campbell1959, §486]. The target of this entry is the
-West Saxon type [`ġealla`]{.iv lang=oe sort=gealla role=target_form}.
+[`gealla`]{.iv lang=oe sort=gealla role=target_form} 'gall' with Anglian [`galla`]{.iv lang=oe sort=galla role=comparison_form} 'gall' [@Campbell1959, §486]. The target of this entry is the
+West Saxon type [`ġealla`]{.iv lang=oe sort=gealla role=target_form} 'gall'.
 
 ### Development to Old English
 
 From [[gállô]{.recon} ‘gall’]{.iv lang=pgmc sort=gallo role=selected_input}, the weak noun develops through the expected Old English history
 of the suffix and the regular breaking environment before `ll`, yielding
-[`ġealla`]{.iv lang=oe sort=gealla role=regular_output} [@Campbell1959, §486]. Once the weak masculine input is chosen, the noun
+[`ġealla`]{.iv lang=oe sort=gealla role=regular_output} 'gall' [@Campbell1959, §486]. Once the weak masculine input is chosen, the noun
 follows a regular path to its attested Old English form.
 
 The decisive issue is therefore morphological. Old English reflects the weak

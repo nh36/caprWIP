@@ -25,14 +25,14 @@ nominative-accusative singular.
 
 The Old English numeral has no uniform citation form across the paradigm. The
 masculine singular line must be
-kept apart from feminine-neuter **`þrēo`** and from later reduced spellings of
+kept apart from feminine-neuter **`þrēo` 'three'** and from later reduced spellings of
 the masculine form.
 
 ### Old English evidence
 
-Campbell gives masculine nominative-accusative **[`þrīe`]{.iv lang=oe sort=thrie role=target_form}**, feminine and neuter
-nominative-accusative **[`þrēo`]{.iv lang=oe sort=threo role=comparison_form}**, genitive **[`þrēora`]{.iv lang=oe sort=threora role=comparison_form}**, and dative
-**[`þrim`]{.iv lang=oe sort=thrim role=comparison_form}**, adding that late West Saxon has **`þry, þri[* for **[]{.recon} ‘three’þrīe`]{.iv lang=oe sort=thrie role=target_form}**
+Campbell gives masculine nominative-accusative **[`þrīe`]{.iv lang=oe sort=thrie role=target_form} 'three'**, feminine and neuter
+nominative-accusative **[`þrēo`]{.iv lang=oe sort=threo role=comparison_form} 'three'**, genitive **[`þrēora`]{.iv lang=oe sort=threora role=comparison_form} 'three'**, and dative
+**[`þrim`]{.iv lang=oe sort=thrim role=comparison_form} 'three'**, adding that late West Saxon has **`þry, þri[* for **[]{.recon} ‘three’þrīe`]{.iv lang=oe sort=thrie role=target_form}**
 [@Campbell1959, §683]. Fulk presents the same masculine **`þrīe`** beside the
 wider numeral paradigm [@Fulk2018, §10.1].
 

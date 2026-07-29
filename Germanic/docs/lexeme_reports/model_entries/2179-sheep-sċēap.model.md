@@ -22,12 +22,12 @@ Ringe and Taylor cite a later West Germanic `*skap > WS scéap`, while Orel pres
 
 ### Old English evidence
 
-Clark Hall records `scēap` with spelling variation, and Campbell likewise lists West Saxon `scéap` among the palatal-diphthongized forms [@ClarkHall1960; @Campbell1959].
+Clark Hall records `scēap` 'sheep' with spelling variation, and Campbell likewise lists West Saxon `scéap` 'sheep' among the palatal-diphthongized forms [@ClarkHall1960; @Campbell1959].
 
 ### Development to Old English
 
-From [skḗpą]{.recon} ‘sheep’, Northwest Germanic lowering gives [skǣpą]{.recon} ‘sheep’; after apocope and palatalization the West Saxon branch diphthongizes to `sċēap`. The development represented here is therefore fully regular.
+From [skḗpą]{.recon} ‘sheep’, Northwest Germanic lowering gives [skǣpą]{.recon} ‘sheep’; after apocope and palatalization the West Saxon branch diphthongizes to `sċēap` 'sheep'. The development represented here is therefore fully regular.
 
 ### Dialect note
 
-Ringe and Taylor contrast West Saxon `scéap` with Mercian and Kentish `scép`, and Campbell also notes Northumbrian `scip`. The form represented here is the West Saxon headword [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor contrast West Saxon `scéap` 'sheep' with Mercian and Kentish `scép` 'sheep', and Campbell also notes Northumbrian `scip` 'sheep'. The form represented here is the West Saxon headword [@RingeTaylor2014; @Campbell1959].

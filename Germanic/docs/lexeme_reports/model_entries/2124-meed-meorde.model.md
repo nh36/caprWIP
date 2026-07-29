@@ -20,25 +20,25 @@ DERIVATION_CLASS: late_analogy
 
 The lexeme-level reconstruction is [[mizdō]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the selected input [[mízdai]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdai role=selected_input}
 is a dative-singular cell rather than the citation form. The Old English
-evidence for the `meord` side is oblique.
+evidence for the `meord` 'meed' side is oblique.
 
-The wider history of competing `mēd` remains disputed. Kroonen and Fulk
+The wider history of competing `mēd` 'meed' remains disputed. Kroonen and Fulk
 explain it through some form of `z`-loss and compensatory lengthening
 [@Kroonen2013, 410; @Fulk2018, 69], while Orel keeps
 a doublet analysis [@Orel2003, 311]. The comparison here concerns the
-attested oblique line `meorde`.
+attested oblique line `meorde` 'meed'.
 
 ### Old English evidence
 
-The directly attested forms are obliques: [`meorde`]{.iv lang=oe sort=meorde role=target_form} as a dative singular and
-[`meorda`]{.iv lang=oe sort=meorda role=comparison_form} as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
-Lexicographers reconstruct a bare nominative [`meord`]{.iv lang=oe sort=meord role=comparison_form} from those obliques, while
-West Saxon prose more commonly shows the competing doublet `mēd`
+The directly attested forms are obliques: [`meorde`]{.iv lang=oe sort=meorde role=target_form} 'meed' as a dative singular and
+[`meorda`]{.iv lang=oe sort=meorda role=comparison_form} 'meed' as a genitive plural [@BrightCassidyRingler1971, 328; @BosworthToller1898, 647].
+Lexicographers reconstruct a bare nominative [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' from those obliques, while
+West Saxon prose more commonly shows the competing doublet `mēd` 'meed'
 [@ClarkHall1960, 214; @BosworthToller1898, 647].
 
-The target of this entry is therefore the attested oblique **[`meorde`]{.iv lang=oe sort=meorde role=target_form}**, not the
-reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} and not the better-known West Saxon citation form
-`mēd`.
+The target of this entry is therefore the attested oblique **[`meorde`]{.iv lang=oe sort=meorde role=target_form} 'meed'**, not the
+reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' and not the better-known West Saxon citation form
+`mēd` 'meed'.
 
 ### Development to Old English
 
@@ -50,7 +50,7 @@ comparison.
 
 This entry therefore follows the attested oblique line within the broader
 development. It does not depend on a full decision about the history of the
-competing `mēd` tradition.
+competing `mēd` 'meed' tradition.
 
 ### Paradigm comparison
 

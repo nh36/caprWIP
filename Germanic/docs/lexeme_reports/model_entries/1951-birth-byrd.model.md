@@ -22,12 +22,12 @@ Kroonen cites the noun under stem-level `*burdi-` and gives Old English `(ge-)by
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller both attest simplex `byrd` as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form `gebyrd` is also well established in the tradition: Kroonen lists `(ge-)byrd`, Bosworth-Toller has a separate `ge-byrd` entry, and Campbell cites `gebyrd` and `gebyrdu` in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
+Clark Hall and Bosworth-Toller both attest simplex `byrd` 'birth' as an Old English noun meaning 'birth' [@ClarkHall1960; @BosworthToller1898, 125]. The prefixed form `gebyrd` 'birth' is also well established in the tradition: Kroonen lists `(ge-)byrd`, Bosworth-Toller has a separate `ge-byrd` 'birth' entry, and Campbell cites `gebyrd` and `gebyrdu` 'birth' in his grammatical discussion [@Kroonen2013; @BosworthToller1898, 125; @Campbell1959].
 
 ### Form note
 
-The relevant comparator here is the simplex noun `byrd`. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Hogg1992].
+The relevant comparator here is the simplex noun `byrd` 'birth'. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Hogg1992].
 
 ### Development to Old English
 
-From [búrdiz]{.recon} ‘birth’, loss of final `z` gives [búrdi]{.recon} ‘birth’. I-umlaut fronts `u` to `y`, and high-vowel apocope then yields `byrd`. The result is the ordinary simplex Old English noun.
+From [búrdiz]{.recon} ‘birth’, loss of final `z` gives [búrdi]{.recon} ‘birth’. I-umlaut fronts `u` to `y`, and high-vowel apocope then yields `byrd` 'birth'. The result is the ordinary simplex Old English noun.

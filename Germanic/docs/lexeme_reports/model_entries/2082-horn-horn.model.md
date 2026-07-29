@@ -22,11 +22,11 @@ Kroonen and Orel cite lemma-style Proto-Germanic headwords of the [hurna- / *xur
 
 ### Old English evidence
 
-Clark Hall, Bosworth-Toller, and Bright all record `horn` as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898, 108; @BrightCassidyRingler1971]. The target is therefore the attested citation form.
+Clark Hall, Bosworth-Toller, and Bright all record `horn` 'horn' as the ordinary Old English noun [@ClarkHall1960; @BosworthToller1898, 108; @BrightCassidyRingler1971]. The target is therefore the attested citation form.
 
 ### Development to Old English
 
-From [xúrną]{.recon} ‘horn’, Northwest Germanic u-lowering gives [xórną]{.recon} ‘horn’, and later loss of the final nasal leaves `horn`. The development treated here is fully regular.
+From [xúrną]{.recon} ‘horn’, Northwest Germanic u-lowering gives [xórną]{.recon} ‘horn’, and later loss of the final nasal leaves `horn` 'horn'. The development treated here is fully regular.
 
 ### Form note
 

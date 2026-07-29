@@ -30,7 +30,7 @@ The imperative is thus a paradigm form rather than a replacement for the diction
 
 ### Development to Old English
 
-Northwest Germanic lowering first gives **[bórô]{.recon} ‘bore (iptv.2sg)’** from **[búrô]{.recon} ‘bore (iptv.2sg)’**, and late shortening of the unstressed long vowel then yields **[bóra]{.recon} ‘bore (iptv.2sg)’**, whence **`bora`**.
+Northwest Germanic lowering first gives **[bórô]{.recon} ‘bore (iptv.2sg)’** from **[búrô]{.recon} ‘bore (iptv.2sg)’**, and late shortening of the unstressed long vowel then yields **[bóra]{.recon} ‘bore (iptv.2sg)’**, whence **`bora` 'bore'**.
 
 Ringe and Taylor's class-II imperative singular **`-a < *-ō`** points to exactly this type of outcome [@RingeTaylor2014, 314]. The selected form therefore isolates the regular finite-cell development more cleanly than the remodelled infinitive does.
 

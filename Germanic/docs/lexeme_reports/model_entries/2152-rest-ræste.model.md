@@ -19,23 +19,23 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen treats the noun as a feminine ō-stem [`*rastō-`]{.iv lang=pgmc sort=rasto role=source_protoform}, continued by Old English
-[`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@Kroonen2013, 445]. The selected input [[rástōz]{.recon} ‘rest’]{.iv lang=pgmc sort=rastoz role=selected_input} therefore does not replace
+[`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. The selected input [[rástōz]{.recon} ‘rest’]{.iv lang=pgmc sort=rastoz role=selected_input} therefore does not replace
 the lexeme-level headword. It identifies one oblique singular cell on the side of
-the paradigm that yields `ræste`.
+the paradigm that yields `ræste` 'rest'.
 
 The source tradition used here labels that cell specifically as genitive
 singular, but the broader local synthesis of the ō-stem paradigm shows that the
-oblique singulars converge on the same front-vocalic `ræste` side, in contrast
-to a nominative singular that would remain `rast`.
+oblique singulars converge on the same front-vocalic `ræste` 'rest' side, in contrast
+to a nominative singular that would remain `rast` 'rest'.
 
 ### Old English evidence
 
-The ordinary Old English citation form is [`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@Kroonen2013, 445]. Clark
-Hall likewise gives [`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [`ræste`]{.iv lang=oe sort=raeste role=target_form}, including prepositional
-examples such as `on ræste` and `tó ræste` [@BosworthToller1898, 121].
+The ordinary Old English citation form is [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. Clark
+Hall likewise gives [`ræst`]{.iv lang=oe sort=raest role=comparison_form} [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest', including prepositional
+examples such as `on ræste` 'rest' and `tó ræste` 'rest' [@BosworthToller1898, 121].
 
-The comparison form used here is therefore an attested oblique [`ræste`]{.iv lang=oe sort=raeste role=target_form}, not a
-reconstructed surrogate. The dictionary headword [`ræst`]{.iv lang=oe sort=raest role=comparison_form} remains an equally real
+The comparison form used here is therefore an attested oblique [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest', not a
+reconstructed surrogate. The dictionary headword [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' remains an equally real
 part of the Old English record.
 
 ### Development to Old English
@@ -43,10 +43,10 @@ part of the Old English record.
 Once final `*z` is lost, the selected input moves through the front-vocalic
 oblique side of the paradigm rather than the back-vocalic nominative side. In
 the modeled derivation, the surviving final long vowel is first exposed,
-unrounded, fronted, shortened, and then reduced to the final `-e` of `ræste`.
+unrounded, fronted, shortened, and then reduced to the final `-e` of `ræste` 'rest'.
 
-The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular `rast`,
-whereas the selected oblique input yields `ræste`. The later citation form `ræst`
+The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular `rast` 'rest',
+whereas the selected oblique input yields `ræste` 'rest'. The later citation form `ræst` 'rest'
 is best explained as leveling from that oblique `ræst-` stem.
 
 ### Paradigm comparison

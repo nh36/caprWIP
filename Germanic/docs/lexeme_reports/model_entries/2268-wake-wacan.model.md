@@ -19,21 +19,21 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen gives the strong verb as **`*wakan-`** with Old English
-**[`wacan`]{.iv lang=oe sort=wacan role=target_form}** [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
-**[`wacian`]{.iv lang=oe sort=wacian role=comparison_form}** from weak **`*wakai- ~ *wakja-`** [@RingeTaylor2014, §3.3.2].
+**[`wacan`]{.iv lang=oe sort=wacan role=target_form} 'wake'** [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
+**[`wacian`]{.iv lang=oe sort=wacian role=comparison_form} 'wake'** from weak **`*wakai- ~ *wakja-`** [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong
-**[`wacan`]{.iv lang=oe sort=wacan role=target_form}** 'wake up, arise' and weak **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form}** 'be awake, watch' belong to
+**[`wacan`]{.iv lang=oe sort=wacan role=target_form} 'wake'** 'wake up, arise' and weak **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form} 'wake'** 'be awake, watch' belong to
 related but distinct histories.
 
 ### Old English evidence
 
-Clark Hall lists **[`wacan`]{.iv lang=oe sort=wacan role=target_form}** and **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form}** as separate headwords
+Clark Hall lists **[`wacan`]{.iv lang=oe sort=wacan role=target_form} 'wake'** and **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form} 'wake'** as separate headwords
 [@ClarkHall1960, 338]. Bosworth-Toller cautions under
 **[`wacan`]{.iv lang=oe sort=wacan role=target_form}**: the simplex infinitive itself does not occur, its place seeming to
-be taken by **[`wæcnan`]{.iv lang=oe sort=waecnan role=comparison_form}** [@BosworthToller1898, 226].
+be taken by **[`wæcnan`]{.iv lang=oe sort=waecnan role=comparison_form} 'wake'** [@BosworthToller1898, 226].
 
-The target **[`wacan`]{.iv lang=oe sort=wacan role=target_form}** is therefore best understood as a normalized strong
+The target **[`wacan`]{.iv lang=oe sort=wacan role=target_form} 'wake'** is therefore best understood as a normalized strong
 headword for the verb family, not as a directly quoted simplex infinitive. It
 still remains the correct Old English comparison form for the strong branch.
 
@@ -41,7 +41,7 @@ still remains the correct Old English comparison form for the strong branch.
 
 With strong **[[wákaną]{.recon} ‘wake’]{.iv lang=pgmc sort=wakana role=selected_input}**, Anglo-Frisian brightening first gives a form of the
 **[wækaną]{.recon} ‘wake’** type. A-restoration then returns **`a[*, and the ordinary tail
-reductions yield **[]{.recon} ‘wake’wacan`]{.iv lang=oe sort=wacan role=regular_output}**. The weak verb **[`wacian`]{.iv lang=oe sort=wacian role=comparison_form}** belongs to a different
+reductions yield **[]{.recon} ‘wake’wacan`]{.iv lang=oe sort=wacan role=regular_output}**. The weak verb **[` 'wake'wacian`]{.iv lang=oe sort=wacian role=comparison_form} 'wake'** belongs to a different
 prehistory and is not the expected outcome of this input.
 
 ### Class comparison

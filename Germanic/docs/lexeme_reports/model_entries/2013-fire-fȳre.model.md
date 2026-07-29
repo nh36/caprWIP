@@ -25,12 +25,12 @@ function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 
 The Old English target combines a regular inherited form
-[`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} with an attested analogical surface form [`fȳre`]{.iv lang=oe sort=fyre role=target_form}.
+[`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire' with an attested analogical surface form [`fȳre`]{.iv lang=oe sort=fyre role=target_form} 'fire'.
 
 ### Old English evidence
 
-Bosworth-Toller records **[`fyr`]{.iv lang=oe sort=fyr role=comparison_form}** as the noun 'fire' and also preserves oblique
-**[`fyre`]{.iv lang=oe sort=fyre role=target_form}** in the Old English record [@BosworthToller1898, 288]. The first is the
+Bosworth-Toller records **[`fyr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire'** as the noun 'fire' and also preserves oblique
+**[`fyre`]{.iv lang=oe sort=fyre role=target_form} 'fire'** in the Old English record [@BosworthToller1898, 288]. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final `-e` within the
 paradigm.
@@ -41,11 +41,11 @@ morphological remodeling.
 
 ### Development to Old English
 
-From [[fūri]{.recon} ‘fire’]{.iv lang=pgmc sort=furi role=selected_input}, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
-loss of the final high vowel after a heavy syllable yields **[`fȳr`]{.iv lang=oe sort=fyr role=regular_output}**
+From [[fūri]{.recon} ‘fire’]{.iv lang=pgmc sort=furi role=selected_input}, i-umlaut changes `ū` 'fire' to `ȳ` 'fire' [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields **[`fȳr`]{.iv lang=oe sort=fyr role=regular_output} 'fire'**
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 
-[`fȳre`]{.iv lang=oe sort=fyre role=target_form} is later than that inherited output. Its final `-e` belongs to
+[`fȳre`]{.iv lang=oe sort=fyre role=target_form} 'fire' is later than that inherited output. Its final `-e` belongs to
 analogical restoration in the Old English paradigm rather than to the original
 Proto-Germanic ending. The form therefore remains a known but unmodelled
 remodelling: the deterministic phonology is regular, but the attested surface

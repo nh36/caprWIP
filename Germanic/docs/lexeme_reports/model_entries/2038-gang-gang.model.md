@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the noun as [gangaz]{.recon} ‘gang’ and cites Old English `gang` beside Old Norse `gangr`, Old Frisian `gang / gong`, Old Saxon `gang`, and Old High German `gang` [@Orel2003]. The selected input [gángaz]{.recon} ‘gang’ is the same lexeme in the accent notation used here.
+Orel reconstructs the noun as [gangaz]{.recon} ‘gang’ and cites Old English `gang` 'gang' beside Old Norse `gangr` 'gang', Old Frisian `gang / gong`, Old Saxon `gang`, and Old High German `gang` [@Orel2003]. The selected input [gángaz]{.recon} ‘gang’ is the same lexeme in the accent notation used here.
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller both record `gang` as the noun 'going, journey, way', and Bright's glossary gives `gong (gang), m., path, course` [@ClarkHall1960; @BosworthToller1898, 159; @BrightCassidyRingler1971, 392]. The target is therefore the attested noun headword itself.
+Clark Hall and Bosworth-Toller both record `gang` 'gang' as the noun 'going, journey, way', and Bright's glossary gives `gong (gang), m., path, course` [@ClarkHall1960; @BosworthToller1898, 159; @BrightCassidyRingler1971, 392]. The target is therefore the attested noun headword itself.
 
 ### Form note
 
-This entry concerns the noun `gang`, not the separate verb `gangan` [@ClarkHall1960; @BosworthToller1898, 159].
+This entry concerns the noun `gang` 'gang', not the separate verb `gangan` 'gang' [@ClarkHall1960; @BosworthToller1898, 159].
 
 ### Development to Old English
 
-From [gángaz]{.recon} ‘gang’, loss of final `-z` gives [gánga]{.recon} ‘gang’, and later loss of final bare `-a` yields `gang`. The development is therefore regular: `*gángaz > gang`.
+From [gángaz]{.recon} ‘gang’, loss of final `-z` gives [gánga]{.recon} ‘gang’, and later loss of final bare `-a` yields `gang` 'gang'. The development is therefore regular: `*gángaz > gang`.

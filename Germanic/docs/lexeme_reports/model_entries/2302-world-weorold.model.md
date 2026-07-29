@@ -22,7 +22,7 @@ The word is the old compound 'age of men'. Orel and the `*wira-` tradition
 reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
 [weraldiz]{.recon} ‘world’ and its pre-Old-English chain `*weraldu > *weruld`
 [@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
-compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold`
+compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold` 'world'
 [@KlugeSeebold2011, 981].
 
 The selected input [[wír-àldu]{.recon} ‘world’]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore combines the older `*wir-` vowel of the comparative headword with
@@ -34,12 +34,12 @@ regularly.
 ### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon [`weorold`]{.iv lang=oe sort=weorold role=target_form} ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form}, Mercian [`weoruld`]{.iv lang=oe sort=weoruld role=comparison_form}, Northumbrian
-[`woruld`]{.iv lang=oe sort=woruld role=comparison_form}, and Kentish [`wiarald`]{.iv lang=oe sort=wiarald role=comparison_form} [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
-set, including the syncopated [`world`]{.iv lang=oe sort=world role=comparison_form} and later rounded [`wurold`]{.iv lang=oe sort=wurold role=comparison_form}
+Saxon [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world', Mercian [`weoruld`]{.iv lang=oe sort=weoruld role=comparison_form} 'world', Northumbrian
+[`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [`wiarald`]{.iv lang=oe sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
+set, including the syncopated [`world`]{.iv lang=oe sort=world role=comparison_form} 'world' and later rounded [`wurold`]{.iv lang=oe sort=wurold role=comparison_form} 'world'
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
-The Old English form used here is the West Saxon form [`weorold`]{.iv lang=oe sort=weorold role=target_form}. It is an attested Old
+The Old English form used here is the West Saxon form [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world'. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
 ever shows.
 
@@ -49,7 +49,7 @@ From the selected input [wír-àldu]{.recon} ‘world’, Northwest Germanic `i`
 [wér-àldu]{.recon} ‘world’. Inter-stress raising then changes the medial `a` to `u`, producing
 [wér-uldu]{.recon} ‘world’. In the Old English branch that unstressed `u` lowers to `o`, and
 back mutation yields [wéor-oldu]{.recon} ‘world’; final high-vowel apocope then gives
-`weorold`.
+`weorold` 'world'.
 
 This sequence matches the comparative background in Ringe and Taylor's
 `*weraldiz > *weraldu > *weruld` chain while preserving the `*wir-` notation of

@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources point to a weak noun with `pp`: Orel gives [lappōn]{.recon} ‘lap’,
-and the Old English dictionary tradition preserves variant `læppa`
+and the Old English dictionary tradition preserves variant `læppa` 'lap'
 [@Orel2003, 236; @ClarkHall1960, 180]. The selected input [láppô]{.recon} ‘lap’
 follows that evidence.
 
@@ -30,19 +30,19 @@ masculine input [láppô]{.recon} ‘lap’.
 
 ### Old English evidence
 
-Campbell cites `lappa` as a case of restored `a`
-[@Campbell1959, §158]. Sievers-Brunner records `lappa` beside variant `læppa`
+Campbell cites `lappa` 'lap' as a case of restored `a`
+[@Campbell1959, §158]. Sievers-Brunner records `lappa` beside variant `læppa` 'lap'
 [@SieversBrunner1965, §10]. The dictionary tradition also preserves `læppa`
 [@ClarkHall1960, 180; @BosworthToller1898, 613].
 
-The target of this entry is the restored singular `lappa`. The variant `læppa`
-and the oblique or plural `leappan` remain part of the Old English record and
+The target of this entry is the restored singular `lappa` 'lap'. The variant `læppa` 'lap'
+and the oblique or plural `leappan` 'lap' remain part of the Old English record and
 help frame the noun's vowel history.
 
 ### Development to Old English
 
-Campbell explicitly lists `lappa` among the forms with restored `a`
-[@Campbell1959, §158]. Sievers-Brunner records `lappa` beside variant `læppa`
+Campbell explicitly lists `lappa` 'lap' among the forms with restored `a`
+[@Campbell1959, §158]. Sievers-Brunner records `lappa` beside variant `læppa` 'lap'
 at the same Old English stage [@SieversBrunner1965, §10]. With the weak
 masculine input chosen, the selected `lappa` outcome is therefore the regular
 Old English comparison.

@@ -22,12 +22,12 @@ Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain `
 
 ### Old English evidence
 
-Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses `gearn` as `filatum` [@ClarkHall1960; @BosworthToller1898].
+Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses `gearn` 'yarn' as `filatum` 'yarn' [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 
-From [gárną]{.recon} ‘yarn’, brightening and breaking before `rn` yield `gearn`; palatalization of initial `g` before the resulting front-vocalic sequence gives normalized `ġearn`. The derivation is regular.
+From [gárną]{.recon} ‘yarn’, brightening and breaking before `rn` yield `gearn` 'yarn'; palatalization of initial `g` before the resulting front-vocalic sequence gives normalized `ġearn` 'yarn'. The derivation is regular.
 
 ### Form note
 
-Dictionary `gearn` and normalized `ġearn` refer to the same noun. The comparative stem `*garna-` and oblique [garnăn]{.recon} ‘yarn’ do not replace the selected input [gárną]{.recon} ‘yarn’.
+Dictionary `gearn` 'yarn' and normalized `ġearn` 'yarn' refer to the same noun. The comparative stem `*garna-` and oblique [garnăn]{.recon} ‘yarn’ do not replace the selected input [gárną]{.recon} ‘yarn’.

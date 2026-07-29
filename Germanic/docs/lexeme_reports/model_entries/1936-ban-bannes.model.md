@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Orel cites a bann-noun under [[bannan]{.recon} ‘ban’]{.iv lang=pgmc sort=bannan role=source_protoform}, while Seebold distinguishes bann-stems
-of both masculine and neuter type and gives Old English [`gebann`]{.iv lang=oe sort=gebann role=comparison_form} as the noun
+of both masculine and neuter type and gives Old English [`gebann`]{.iv lang=oe sort=gebann role=comparison_form} 'ban' as the noun
 reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction [[bánną]{.recon} ‘ban’]{.iv lang=pgmc sort=banna role=source_protoform}
 names the lexeme, but the comparison here turns on the genitive singular
 [[bánnas]{.recon} ‘ban’]{.iv lang=pgmc sort=bannas role=selected_input}.
@@ -29,17 +29,17 @@ The analysis therefore depends on medial, not final, gemination.
 ### Old English evidence
 
 Old English lexicographic evidence securely supports the noun itself.
-Bosworth-Toller records the noun under nominative [`ge-bann`]{.iv lang=oe sort=gebann role=comparison_form}, with oblique
-usage such as [`gebanne`]{.iv lang=oe sort=gebanne role=comparison_form} [@BosworthToller1898, 303]. The exact unprefixed
-genitive [`bannes`]{.iv lang=oe sort=bannes role=target_form} is less directly cited in the dictionaries, so it is best
+Bosworth-Toller records the noun under nominative [`ge-bann`]{.iv lang=oe sort=gebann role=comparison_form} 'ban', with oblique
+usage such as [`gebanne`]{.iv lang=oe sort=gebanne role=comparison_form} 'ban' [@BosworthToller1898, 303]. The exact unprefixed
+genitive [`bannes`]{.iv lang=oe sort=bannes role=target_form} 'ban' is less directly cited in the dictionaries, so it is best
 treated here as the regular genitive form used for comparison rather than as a
 dictionary headword.
 
 ### Development to Old English
 
 From [[bánnas]{.recon} ‘ban’]{.iv lang=pgmc sort=bannas role=selected_input}, the geminate remains medial before the case ending and the
-unstressed vowel develops regularly to give [`bannes`]{.iv lang=oe sort=bannes role=target_form}. The paradigm comparison
-therefore sets the genitive against nominative [`ban`]{.iv lang=oe sort=ban role=comparison_form}, the ordinary nominative
+unstressed vowel develops regularly to give [`bannes`]{.iv lang=oe sort=bannes role=target_form} 'ban'. The paradigm comparison
+therefore sets the genitive against nominative [`ban`]{.iv lang=oe sort=ban role=comparison_form} 'ban', the ordinary nominative
 form of the same noun, rather than against a directly cited genitive headword.
 
 ### Paradigm comparison

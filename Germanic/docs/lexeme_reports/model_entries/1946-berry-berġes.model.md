@@ -23,22 +23,22 @@ selected input [[bázjas]{.recon} ‘berry’]{.iv lang=pgmc sort=bazjas role=se
 specific genitive singular cell drawn from that paradigm.
 
 The relevant point is that `*rj` did not geminate in Proto-West Germanic.
-Ringe and Taylor's [`here`]{.iv lang=oe sort=here role=comparison_form}, [`herges`]{.iv lang=oe sort=herges role=comparison_form} comparison shows the same `rj` environment in
+Ringe and Taylor's [`here`]{.iv lang=oe sort=here role=comparison_form} 'berry', [`herges`]{.iv lang=oe sort=herges role=comparison_form} 'berry' comparison shows the same `rj` environment in
 an Old English paradigm without any hidden gemination repair [@RingeTaylor2014, 181].
 
 ### Old English evidence
 
 Campbell cites feminine [`berige`]{.iv lang=oe sort=berige role=comparison_form} 'berry' and notes that `-j-` is retained after
 `r` in this type [@Campbell1959, 250]. The reviewed evidence therefore supports the
-citation form more directly than the exact genitive [`berġes`]{.iv lang=oe sort=berges role=target_form}, which is best read
+citation form more directly than the exact genitive [`berġes`]{.iv lang=oe sort=berges role=target_form} 'berry', which is best read
 here as the selected regular genitive comparison form rather than as a
 dictionary headword.
 
 ### Development to Old English
 
-Citation [[bázją]{.recon} ‘berry’]{.iv lang=pgmc sort=bazja role=source_protoform} gives [`bere`]{.iv lang=oe sort=bere role=regular_output}, not the selected target. The genitive singular
-[[bázjas]{.recon} ‘berry’]{.iv lang=pgmc sort=bazjas role=selected_input}, however, gives [`berġes`]{.iv lang=oe sort=berges role=target_form}, with medial `-rġ-` preserved in the same
-way that Ringe and Taylor cite [`herges`]{.iv lang=oe sort=herges role=comparison_form} beside [`here`]{.iv lang=oe sort=here role=comparison_form} [@RingeTaylor2014, 181].
+Citation [[bázją]{.recon} ‘berry’]{.iv lang=pgmc sort=bazja role=source_protoform} gives [`bere`]{.iv lang=oe sort=bere role=regular_output} 'berry', not the selected target. The genitive singular
+[[bázjas]{.recon} ‘berry’]{.iv lang=pgmc sort=bazjas role=selected_input}, however, gives [`berġes`]{.iv lang=oe sort=berges role=target_form} 'berry', with medial `-rġ-` preserved in the same
+way that Ringe and Taylor cite [`herges`]{.iv lang=oe sort=herges role=comparison_form} 'berry' beside [`here`]{.iv lang=oe sort=here role=comparison_form} 'berry' [@RingeTaylor2014, 181].
 This points to paradigm choice rather than to an extra phonological rule.
 
 ### Paradigm comparison

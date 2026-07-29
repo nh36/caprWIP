@@ -18,15 +18,15 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English **[`liornian`]{.iv lang=oe sort=liornian role=comparison_form} ~ [`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. The selected input **[[líznōθi]{.recon} ‘learn (3sg)’]{.iv lang=pgmc sort=liznothi role=selected_input}** is the finite 3sg cell of that family, not the citation form of the verb.
+Ringe and Taylor give Old English **[`liornian`]{.iv lang=oe sort=liornian role=comparison_form} 'learn' ~ [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn'** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. The selected input **[[líznōθi]{.recon} ‘learn (3sg)’]{.iv lang=pgmc sort=liznothi role=selected_input}** is the finite 3sg cell of that family, not the citation form of the verb.
 
 For the ending, Campbell's **`lufas, -aþ (< -ōsi, -ōþi)[* and Ringe and Taylor's discussion of stable **]{.recon} ‘learn (3sg)’a`** in the class-II 2sg and 3sg make the non-`j` 3sg cell the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Old English evidence
 
-Clark Hall gives the ordinary headword as **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in **`liorn-[*, including **[]{.recon} ‘learn (3sg)’liorna`]{.iv lang=oe sort=liorna role=comparison_form}** and the 3sg **[`liornes`]{.iv lang=oe sort=liornes role=comparison_form}**, beside the West-Saxon-looking **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io[* beside **[]{.recon} ‘learn (3sg)’leornian`]{.iv lang=oe sort=leornian role=comparison_form}** [@Campbell1959, §123 n. 2].
+Clark Hall gives the ordinary headword as **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn'** [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in **`liorn-[*, including **[]{.recon} ‘learn (3sg)’liorna`]{.iv lang=oe sort=liorna role=comparison_form}** and the 3sg **[`liornes`]{.iv lang=oe sort=liornes role=comparison_form} 'learn'**, beside the West-Saxon-looking **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** tradition [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian forms with **`io[* beside **[]{.recon} ‘learn (3sg)’leornian`]{.iv lang=oe sort=leornian role=comparison_form}** [@Campbell1959, §123 n. 2].
 
-The relevant comparison form here is the normalized 3sg **[`liornaþ`]{.iv lang=oe sort=liornath role=target_form}**. The directly cited Old English evidence supports the finite stem **`liorn-[*; the exact **]{.recon} ‘learn (3sg)’-aþ`** ending follows the regular class-II 3sg pattern.
+The relevant comparison form here is the normalized 3sg **[`liornaþ`]{.iv lang=oe sort=liornath role=target_form} 'learn'**. The directly cited Old English evidence supports the finite stem **`liorn-[*; the exact **]{.recon} ‘learn (3sg)’-aþ`** ending follows the regular class-II 3sg pattern.
 
 ### Development to Old English
 

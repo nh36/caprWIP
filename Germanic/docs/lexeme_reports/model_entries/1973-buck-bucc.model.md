@@ -20,28 +20,28 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 Kroonen and Orel both reconstruct the word with a geminate stop, [[bukkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=source_protoform}
 [@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
-material behind Old English [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} [@Orel2003, 62]. The selected input
+material behind Old English [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} 'buck' [@Orel2003, 62]. The selected input
 therefore remains identical with the lexeme label: no alternative inherited
 cell accounts for the form.
 
 ### Old English evidence
 
-Old English preserves a mixed lexical picture. Campbell cites [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} in the
+Old English preserves a mixed lexical picture. Campbell cites [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} 'buck' in the
 exception set for this phonological environment [@Campbell1959, §115]. Clark
-Hall and Bosworth-Toller show that Old English has both [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} and [`bucc`]{.iv lang=oe sort=bucc role=target_form}
+Hall and Bosworth-Toller show that Old English has both [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} and [`bucc`]{.iv lang=oe sort=bucc role=target_form} 'buck'
 [@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [`bucc`]{.iv lang=oe sort=bucc role=target_form}
 is the target treated here; [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} supplies genuine philological
 background from the same lexical family.
 
 ### Development to Old English
 
-From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input}, the regular inherited path gives [`bocc`]{.iv lang=oe sort=bocc role=regular_output}. That is the form
-expected under the ordinary lowering pattern in this environment. [`bucc`]{.iv lang=oe sort=bucc role=target_form}
+From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input}, the regular inherited path gives [`bocc`]{.iv lang=oe sort=bocc role=regular_output} 'buck'. That is the form
+expected under the ordinary lowering pattern in this environment. [`bucc`]{.iv lang=oe sort=bucc role=target_form} 'buck'
 therefore remains outside the deterministic phonology.
 
 No accepted inherited cell repairs the mismatch. A high-vowel alternative would
-introduce i-umlaut and produce a [`byċċ`]{.iv lang=oe sort=bycc role=comparison_form}-type form rather than the target.
-[`bucc`]{.iv lang=oe sort=bucc role=target_form} is therefore best treated as a documented exception, not as a regular
+introduce i-umlaut and produce a [`byċċ`]{.iv lang=oe sort=bycc role=comparison_form} 'buck'-type form rather than the target.
+[`bucc`]{.iv lang=oe sort=bucc role=target_form} 'buck' is therefore best treated as a documented exception, not as a regular
 paradigm-cell survival.
 
 ### Form comparison

@@ -19,7 +19,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 ### Reconstruction and comparative evidence
 
 The noun is the ordinary Germanic a-stem [fúglaz]{.recon} ‘fowl’, continued by forms such as
-Old Norse `fugl` and Old High German `fogal` [@Kroonen2013, 197; @Orel2003,
+Old Norse `fugl` 'fowl' and Old High German `fogal` 'fowl' [@Kroonen2013, 197; @Orel2003,
 155]. There
 is no stem-class or paradigm-cell dispute behind this entry. The comparative
 headword and the selected input are the same.
@@ -31,8 +31,8 @@ non-high vowel, yielding an `o`-vocalism
 
 ### Old English evidence
 
-Old English dictionaries record the noun as `fugol`, with variant spelling
-`fugel` [@BosworthToller1898, 282; @ClarkHall1960, 138]. The target is therefore an
+Old English dictionaries record the noun as `fugol` 'fowl', with variant spelling
+`fugel` 'fowl' [@BosworthToller1898, 282; @ClarkHall1960, 138]. The target is therefore an
 attested ordinary Old English noun, not a reconstructed or selectively chosen
 paradigm form.
 
@@ -42,13 +42,13 @@ retains `u` where the regular history predicts `fo-` [@Campbell1959, 150].
 
 ### Development to Old English
 
-From [fúglaz]{.recon} ‘fowl’, the regular cascade yields `fogol`: the root vowel lowers before
+From [fúglaz]{.recon} ‘fowl’, the regular cascade yields `fogol` 'fowl': the root vowel lowers before
 the following non-high vowel [@RingeTaylor2014, 42–43; @Campbell1959, 43],
 final `z` is lost, and the cluster is resolved by the usual medial vowel
 [@RingeTaylor2014, 345; @Campbell1959, 150]. That is the expected inherited
 outcome.
 
-The attested Old English noun is `fugol`, not `fogol`. Luick and later
+The attested Old English noun is `fugol` 'fowl', not `fogol` 'fowl'. Luick and later
 handbooks treat this preservation of `u` as a small inherited residue, not as a
 categorical sound law [@Luick1914, 148; @RingeTaylor2014, 47]. The item
 therefore remains a genuine lexical exception rather than

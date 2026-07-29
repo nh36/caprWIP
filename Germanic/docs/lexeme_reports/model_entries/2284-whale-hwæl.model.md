@@ -28,12 +28,12 @@ than to Kroonen's citation form.
 
 ### Old English evidence
 
-Clark Hall lemmatizes the noun as **[`hwal`]{.iv lang=oe sort=hwal role=comparison_form}**, and Bosworth-Toller preserves the
-plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
-is normalized here as **[`hwæl`]{.iv lang=oe sort=hwael role=target_form}** for the singular citation form with Anglo-
+Clark Hall lemmatizes the noun as **[`hwal`]{.iv lang=oe sort=hwal role=comparison_form} 'whale'**, and Bosworth-Toller preserves the
+plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whale'** [@ClarkHall1960, 170; @BosworthToller1898, 326]. The comparison form
+is normalized here as **[`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale'** for the singular citation form with Anglo-
 Frisian fronting.
 
-The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form}** supplies control evidence. It shows the same
+The plural **[`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whale'** supplies control evidence. It shows the same
 lexeme with **`a[* in an open syllable, beside singular **[]{.recon} ‘whale’hwæl`]{.iv lang=oe sort=hwael role=target_form}** in the
 closed monosyllable.
 

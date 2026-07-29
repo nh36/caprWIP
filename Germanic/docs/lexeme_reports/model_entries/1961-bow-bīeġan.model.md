@@ -18,12 +18,12 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the weak verb as `*baugjan-` 'to (make) bend' and cites Old English `biegan` among its reflexes [@Kroonen2013]. Ringe and Taylor give the northwest Germanic preform [baugijana]{.recon} ‘bow’, with later [béagjan]{.recon} ‘bow’ behind West Saxon Old English `biegan` [@RingeTaylor2014]. The entry therefore concerns the weak causative member of the bend-family, alongside the related strong verb and noun.
+Kroonen reconstructs the weak verb as `*baugjan-` 'to (make) bend' and cites Old English [`biegan`]{.iv lang=oe sort=biegan role=comparison_form} 'bow' among its reflexes [@Kroonen2013]. Ringe and Taylor give the northwest Germanic preform [baugijana]{.recon} ‘bow’, with later [béagjan]{.recon} ‘bow’ behind West Saxon Old English [`biegan`]{.iv lang=oe sort=biegan role=comparison_form} 'bow' [@RingeTaylor2014]. The entry therefore concerns the weak causative member of the bend-family, alongside the related strong verb and noun.
 
 ### Old English evidence
 
-Clark Hall lemmatizes `biegan`, and Bosworth-Toller records `bigan` with examples such as `Ic bēge mīne cneówa` and `Se ord bīgde upp tō þām hiltum` [@ClarkHall1960; @BosworthToller1898, 102]. The form `bīeġan` used here is a normalized spelling of that attested Old English weak verb.
+Clark Hall lemmatizes [`biegan`]{.iv lang=oe sort=biegan role=comparison_form} 'bow, bend' as an Old English weak verb, and Bosworth-Toller records [`bigan`]{.iv lang=oe sort=bigan role=comparison_form} 'bow, bend' as an attested form [@ClarkHall1960; @BosworthToller1898, 102]. The form [`bīeġan`]{.iv lang=oe sort=biegan role=target_form} 'bow, bend' used here is a normalized spelling of that attested verb.
 
 ### Development to Old English
 
-From [báugijaną]{.recon} ‘bow’, the stem reaches pre-Old-English [bēagjan]{.recon} ‘bow’, after which palatalization of `*gj` and i-umlaut yield West Saxon `biegan`; Campbell lists `biegan` among the regular `ie` outcomes of `*éa` under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: `*báugijaną > bīeġan`.
+From [báugijaną]{.recon} ‘bow’, the stem reaches pre-Old-English [bēagjan]{.recon} ‘bow’, after which palatalization of `*gj` and i-umlaut yield West Saxon [`biegan`]{.iv lang=oe sort=biegan role=comparison_form} 'bow'; Campbell lists [`biegan`]{.iv lang=oe sort=biegan role=comparison_form} 'bow' among the regular `ie` outcomes of `*éa` under i-umlaut [@RingeTaylor2014; @Campbell1959, 80]. The development is therefore straightforward: `*báugijaną > [bīeġan]{.iv lang=oe sort=biegan role=target_form} 'bow'`.

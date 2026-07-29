@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the inherited verb as `*spannan-`, with OE `spannan` among the reflexes [@Kroonen2013]. The selected input [spánnaną]{.recon} ‘span’ is the infinitive-style form used here for that same verbal lexeme.
+Kroonen cites the inherited verb as `*spannan-`, with OE `spannan` 'span' among the reflexes [@Kroonen2013]. The selected input [spánnaną]{.recon} ‘span’ is the infinitive-style form used here for that same verbal lexeme.
 
 ### Old English evidence
 
-Clark Hall lists noun `spann` and verb `spannan` as separate headwords, and Brunner likewise records `sponnan, spannan stv.` [@ClarkHall1960; @SieversBrunner1965]. The target is the strong-verb infinitive, not the noun.
+Clark Hall lists noun `spann` 'span' and verb `spannan` 'span' as separate headwords, and Brunner likewise records `sponnan, spannan stv.` [@ClarkHall1960; @SieversBrunner1965]. The target is the strong-verb infinitive, not the noun.
 
 ### Development to Old English
 
-From [spánnaną]{.recon} ‘span’, the final nasal ending is lost and the regular OE weak-tail steps surface `spannan`. No paradigm-cell substitution is needed: the current derivation already lands on the infinitive directly.
+From [spánnaną]{.recon} ‘span’, the final nasal ending is lost and the regular OE weak-tail steps surface `spannan` 'span'. No paradigm-cell substitution is needed: the current derivation already lands on the infinitive directly.
 
 ### Form note
 
-English `span` can also reach the noun `spann` in local lookup material. The form represented here is the verb `spannan`, with the noun treated elsewhere [@ClarkHall1960].
+English `span` 'span' can also reach the noun `spann` 'span' in local lookup material. The form represented here is the verb `spannan` 'span', with the noun treated elsewhere [@ClarkHall1960].

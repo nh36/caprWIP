@@ -30,22 +30,22 @@ belongs to the broader comparative presentation of the lexeme.
 
 ### Old English evidence
 
-Old English dictionaries record forms such as [`festan`]{.iv lang=oe sort=festan role=target_form}, alongside related
-[`fæstan`]{.iv lang=oe sort=faestan role=comparison_form} / [`fǣstan`]{.iv lang=oe sort=faestan role=comparison_form} spellings and meanings [@BosworthToller1898, 213]. The form selected here is **[`festan`]{.iv lang=oe sort=festan role=target_form}**, which fits the regular
+Old English dictionaries record forms such as [`festan`]{.iv lang=oe sort=festan role=target_form} 'fast', alongside related
+[`fæstan`]{.iv lang=oe sort=faestan role=comparison_form} 'fast' / [`fǣstan`]{.iv lang=oe sort=faestan role=comparison_form} 'fast' spellings and meanings [@BosworthToller1898, 213]. The form selected here is **[`festan`]{.iv lang=oe sort=festan role=target_form}**, which fits the regular
 class-I phonological development.
 
-The `æ`-forms remain relevant, but they do not control the entry. In the
+The `æ` 'fast'-forms remain relevant, but they do not control the entry. In the
 present analysis they belong to a later analogical reshaping under the
-adjective [`fæst`]{.iv lang=oe sort=faest role=comparison_form}, whereas [`festan`]{.iv lang=oe sort=festan role=target_form} is the regular inherited class-I comparison
+adjective [`fæst`]{.iv lang=oe sort=faest role=comparison_form} 'fast', whereas [`festan`]{.iv lang=oe sort=festan role=target_form} 'fast' is the regular inherited class-I comparison
 form.
 
 ### Development to Old English
 
 From [[fástijaną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastijana role=selected_input}, Anglo-Frisian brightening and subsequent i-umlaut produce the
-fronted vowel seen in [`festan`]{.iv lang=oe sort=festan role=target_form}. The later weak-tail reductions and loss of `j`
+fronted vowel seen in [`festan`]{.iv lang=oe sort=festan role=target_form} 'fast'. The later weak-tail reductions and loss of `j`
 after a heavy syllable complete the regular Old English outcome.
 
-What makes the entry non-regular is not the phonology of [`festan`]{.iv lang=oe sort=festan role=target_form} itself, but
+What makes the entry non-regular is not the phonology of [`festan`]{.iv lang=oe sort=festan role=target_form} 'fast' itself, but
 the choice of formation. Old English continues the class-I verb, even though
 the comparative headword is often given under the parallel [`*fastēn-`]{.iv lang=pgmc sort=fasten role=source_protoform} family.
 

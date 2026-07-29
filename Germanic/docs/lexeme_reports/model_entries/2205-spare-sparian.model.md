@@ -23,14 +23,14 @@ Kroonen keeps the inherited verb under class-III [`*sparēn-`]{.iv lang=pgmc sor
 and Taylor, however, reconstruct [`*sparai-`]{.iv lang=preoe sort=sparai} ~ [`*sparja-`]{.iv lang=preoe sort=sparja} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
 The selected input [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparojana} therefore represents the refashioned class-II
-formation behind Old English [`sparian`]{.iv lang=oe sort=sparian}, while the citation reconstruction
+formation behind Old English [`sparian`]{.iv lang=oe sort=sparian} 'spare', while the citation reconstruction
 [[sparēną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparena} remains the inherited comparative headword.
 
 ### Old English evidence
 
-Campbell says that [`sparian`]{.iv lang=oe sort=sparian} does not show the ordinary class-III
-characteristics, but the Ritual forms, normalized here as [`spæria`]{.iv lang=oe sort=spaeria}, [`spær`]{.iv lang=oe sort=spaer}, and
-[`spærede`]{.iv lang=oe sort=spaerede}, together with Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad}, point to primitive Old
+Campbell says that [`sparian`]{.iv lang=oe sort=sparian} 'spare' does not show the ordinary class-III
+characteristics, but the Ritual forms, normalized here as [`spæria`]{.iv lang=oe sort=spaeria} 'spare', [`spær`]{.iv lang=oe sort=spaer} 'spare', and
+[`spærede`]{.iv lang=oe sort=spaerede} 'spare', together with Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad} 'spare', point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
 Northumbrian [`spæria`]{.iv lang=oe sort=spaeria}, [`spærede`]{.iv lang=oe sort=spaerede} beside common Old English [`sparian`]{.iv lang=oe sort=sparian} and
 Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad} [@SieversBrunner1965, §364 Anm. 11]. The citation
@@ -42,8 +42,8 @@ formation, not alternative headwords of equal status.
 Once the class-II formation [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparojana} is chosen, the remaining development is
 regular. The documented trace shows brightening, restoration of `a` before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
-reduction, and contraction to [`sparian`]{.iv lang=oe sort=sparian}. By contrast, Brunner's rule against
-further apocope of final `-e` explains why Ritual [`spær`]{.iv lang=oe sort=spaer} cannot be the regular
+reduction, and contraction to [`sparian`]{.iv lang=oe sort=sparian} 'spare'. By contrast, Brunner's rule against
+further apocope of final `-e` explains why Ritual [`spær`]{.iv lang=oe sort=spaer} 'spare' cannot be the regular
 continuation of inherited [[spárē]{.recon} ‘spare’]{.iv lang=preoe sort=spare} [@SieversBrunner1965, §150].
 
 ### Formation comparison

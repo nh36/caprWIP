@@ -31,13 +31,13 @@ lines should not be collapsed without comment [@Orel2003, 320].
 
 ### Old English evidence
 
-`Nosu` is an attested Old English noun. Ringe and Taylor list it among the few
+`Nosu` 'nose' is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
-likewise gives `nosu f.`, with genitive-dative singular `nosa`, and cross-refers
-`nasu` to `nosu` [@ClarkHall1960, 810].
+likewise gives `nosu f.` 'nose', with genitive-dative singular `nosa` 'nose', and cross-refers
+`nasu` 'nose' to `nosu` [@ClarkHall1960, 810].
 
-The selected OE target is therefore attested `nosu`, not a reconstructed
-placeholder. The lexicographical record also gives `nasu` for the full-grade
+The selected OE target is therefore attested `nosu` 'nose', not a reconstructed
+placeholder. The lexicographical record also gives `nasu` 'nose' for the full-grade
 side of the tradition.
 
 ### Development to Old English
@@ -47,7 +47,7 @@ From [núsō]{.recon} ‘nose’, the regular path is the one documented by the 
 zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade
-line behind [nasō]{.recon} ‘nose’ instead points toward `nasu`, not to the form treated here.
+line behind [nasō]{.recon} ‘nose’ instead points toward `nasu` 'nose', not to the form treated here.
 
 ### Stem comparison
 

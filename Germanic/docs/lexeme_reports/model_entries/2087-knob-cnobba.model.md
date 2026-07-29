@@ -31,12 +31,12 @@ behind later English knob.
 
 ### Old English evidence
 
-Clark Hall preserves Old English evidence of the `cnoppa` type
+Clark Hall preserves Old English evidence of the `cnoppa` 'knob' type
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
 The target **[cnobba]{.recon} ‘knob’** is a **reconstructed Old English form**, not a directly
-attested one. I use it for the voiced branch because attested `cnoppa` continues
+attested one. I use it for the voiced branch because attested `cnoppa` 'knob' continues
 the voiceless branch and therefore represents a different prehistory.
 
 ### Development to Old English

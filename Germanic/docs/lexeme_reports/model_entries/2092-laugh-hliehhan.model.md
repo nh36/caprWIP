@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The wider Germanic family includes a non-j branch represented here by the
 citation label [lákaną]{.recon} ‘laugh’, while the selected input [xláxjaną]{.recon} ‘laugh’ reflects the
-j-present line behind Old English `hliehhan`.
+j-present line behind Old English `hliehhan` 'laugh'.
 
 This branch supplies the geminate fricative and
 the vowel development characteristic of the Old English verb. The comparative
@@ -28,22 +28,22 @@ family label and the OE-facing input are therefore related but not identical.
 
 ### Old English evidence
 
-Bosworth-Toller records `hlihhan` as the verb 'to laugh'
-[@BosworthToller1898, 551]. Clark Hall cross-references `hlæhan`,
-`hlehhan`, and `hlihhan` to `hliehhan` [@ClarkHall1960, 160-161]. Bright's
+Bosworth-Toller records `hlihhan` 'laugh' as the verb 'to laugh'
+[@BosworthToller1898, 551]. Clark Hall cross-references `hlæhan` 'laugh',
+`hlehhan` 'laugh', and `hlihhan` to `hliehhan` 'laugh' [@ClarkHall1960, 160-161]. Bright's
 glossary likewise gives `hlihhan (hliehhan, hlyhhan)`
 [@BrightCassidyRingler1971, 315]. The target of this entry is the West Saxon
 `hliehhan`.
 
-The variants belong to the same background, but the attested lemma `hliehhan`
+The variants belong to the same background, but the attested lemma `hliehhan` 'laugh'
 supplies the evidence followed here.
 
 ### Development to Old English
 
 From [xláxjaną]{.recon} ‘laugh’, West Germanic j-gemination yields the doubled consonant
-[@Campbell1959, §407]. Ringe and Taylor derive Old English `hliehhan` from the
+[@Campbell1959, §407]. Ringe and Taylor derive Old English `hliehhan` 'laugh' from the
 j-present branch via breaking before the palatalized geminate
-[@RingeTaylor2014, 240]. They separately compare the related noun `hleahtor`
+[@RingeTaylor2014, 240]. They separately compare the related noun `hleahtor` 'laugh'
 as the outcome of [hlahtraz]{.recon} ‘laugh’ [@RingeTaylor2014, 328].
 
 ### Branch comparison

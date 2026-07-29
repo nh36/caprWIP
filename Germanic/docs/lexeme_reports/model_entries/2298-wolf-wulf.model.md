@@ -20,24 +20,24 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 The inherited noun is an a-stem: Kroonen gives `*wulfa-`, and Ringe and Taylor
 list PGmc [wulfaz]{.recon} ‘wolf’ among the inherited words that preserve `u` in Old English
-beside Old High German `wolf` [@Kroonen2013, 638; @RingeTaylor2014, 47]. Campbell
-accordingly names Old English `wulf` as an exception to the regular lowering of
+beside Old High German `wolf` 'wolf' [@Kroonen2013, 638; @RingeTaylor2014, 47]. Campbell
+accordingly names Old English `wulf` 'wolf' as an exception to the regular lowering of
 stressed `u` before a following non-high vowel [@Campbell1959, §115].
 
 The older literature often notices that the exceptional words cluster near
-labials. Bülbring lists `full`, `wulle`, and `wulf` together, but he also says
-that the ordinary rule still gives `o` in comparable forms such as `folc` and
-`bolt` [@Bulbring1902, §116]. Luick rejects a categorical labial blocker on the
+labials. Bülbring lists `full` 'wolf', `wulle` 'wolf', and `wulf` 'wolf' together, but he also says
+that the ordinary rule still gives `o` in comparable forms such as `folc` 'wolf' and
+`bolt` 'wolf' [@Bulbring1902, §116]. Luick rejects a categorical labial blocker on the
 same grounds and prefers a lexical or analogical account instead
 [@Luick1914, 148].
 
 ### Old English evidence
 
-Campbell treats `wulf` as part of the exceptional `u` set
-[@Campbell1959, §115]. Sievers-Brunner notes that oblique `wulfe` continues
-`wulfi` or older `wulfai` [@SieversBrunner1965, §160].
+Campbell treats `wulf` 'wolf' as part of the exceptional `u` set
+[@Campbell1959, §115]. Sievers-Brunner notes that oblique `wulfe` 'wolf' continues
+`wulfi` 'wolf' or older `wulfai` 'wolf' [@SieversBrunner1965, §160].
 
-The surviving oblique forms do not supply a regular route back to bare `wulf`.
+The surviving oblique forms do not supply a regular route back to bare `wulf` 'wolf'.
 They belong to the same lexeme, but they do
 not remove the explanatory problem presented by the citation form.
 
@@ -50,8 +50,8 @@ path: `*wúlfaz > *wólfaz > *wólfa > wolf`.
 
 A high-vowel oblique input would behave differently. There the following high
 vowel would block the lowering of `u`, but the same environment
-would also trigger i-umlaut, so the regular control result would be `wylf` or
-`wylfe`, not bare `wulf`. The attested noun therefore remains unexplained at
+would also trigger i-umlaut, so the regular control result would be `wylf` 'wolf' or
+`wylfe` 'wolf', not bare `wulf` 'wolf'. The attested noun therefore remains unexplained at
 the citation-form level.
 
 ### Expected and attested forms

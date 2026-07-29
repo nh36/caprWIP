@@ -19,15 +19,15 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give PWGmc [li/ekkōn]{.recon} ‘lick (3sg)’ continuing as Old English [`liccian`]{.iv lang=oe sort=liccian role=comparison_form}, Old Saxon [`likkon`]{.iv lang=os sort=likkon role=comparison_form}, and Old High German [`lecchon`]{.iv lang=ohg sort=lecchon role=comparison_form} [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} ‘lick (3sg)’]{.iv lang=pgmc sort=likkojanan role=source_protoform} with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc [li/ekkōn]{.recon} ‘lick (3sg)’ continuing as Old English [`liccian`]{.iv lang=oe sort=liccian role=comparison_form} 'lick', Old Saxon [`likkon`]{.iv lang=os sort=likkon role=comparison_form} 'lick', and Old High German [`lecchon`]{.iv lang=ohg sort=lecchon role=comparison_form} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} ‘lick (3sg)’]{.iv lang=pgmc sort=likkojanan role=source_protoform} with the same Old English continuation [@Orel2003, 285].
 
 The selected form in this entry is the non-`j` present third singular [líkkōθi]{.recon} ‘lick (3sg)’, not the remodeled infinitive. Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)` [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. `-as(t)` and 3sg. `-aþ` have stable `a` [@RingeTaylor2014, 80].
 
 ### Old English evidence
 
-Bosworth-Toller lemmatizes the verb as `liccian` [@BosworthToller1898, 614]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of `liccian` [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
+Bosworth-Toller lemmatizes the verb as `liccian` 'lick' [@BosworthToller1898, 614]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of `liccian` [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
 
-The form treated here is the present third singular [`liccaþ`]{.iv lang=oe sort=liccath role=target_form}. It is a selected paradigm form beside the lemma [`liccian`]{.iv lang=oe sort=liccian role=comparison_form} and the related imperative [`licca`]{.iv lang=oe sort=licca role=comparison_form}, not a separately lemmatized headword.
+The form treated here is the present third singular [`liccaþ`]{.iv lang=oe sort=liccath role=target_form} 'lick'. It is a selected paradigm form beside the lemma [`liccian`]{.iv lang=oe sort=liccian role=comparison_form} 'lick' and the related imperative [`licca`]{.iv lang=oe sort=licca role=comparison_form} 'lick', not a separately lemmatized headword.
 
 ### Development to Old English
 

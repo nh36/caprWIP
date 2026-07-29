@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the verb as `*wahs(j)an-`, Orel as [waxsanan]{.recon} ‘wax’, and Ringe and Taylor discuss the prehistory of Old English `weaxan` within the same verbal family [@Kroonen2013; @Orel2003, 478; @RingeTaylor2014].
+Kroonen cites the verb as `*wahs(j)an-`, Orel as [waxsanan]{.recon} ‘wax’, and Ringe and Taylor discuss the prehistory of Old English `weaxan` 'wax' within the same verbal family [@Kroonen2013; @Orel2003, 478; @RingeTaylor2014].
 
 ### Old English evidence
 
-Clark Hall gives `weaxan` as the verb headword and separately records bare `wax` as a preterite form; Bright likewise treats `weaxan` as the infinitive [@ClarkHall1960; @BrightCassidyRingler1971].
+Clark Hall gives `weaxan` 'wax' as the verb headword and separately records bare `wax` 'wax' as a preterite form; Bright likewise treats `weaxan` as the infinitive [@ClarkHall1960; @BrightCassidyRingler1971].
 
 ### Development to Old English
 
-From [wáxsaną]{.recon} ‘wax’, brightening and breaking yield `weax-`, and the infinitive develops regularly to `weaxan`. The cluster is preserved here, since `xs > s` belongs to forms where another consonant follows, such as `wæstm`, not to the infinitive itself [@Campbell1959; @SieversBrunner1965].
+From [wáxsaną]{.recon} ‘wax’, brightening and breaking yield `weax-`, and the infinitive develops regularly to `weaxan` 'wax'. The cluster is preserved here, since `xs > s` belongs to forms where another consonant follows, such as `wæstm` 'wax', not to the infinitive itself [@Campbell1959; @SieversBrunner1965].
 
 ### Lexical note
 
-The target here is the infinitive `weaxan`. Noun `weax` and preterite `wax/wēox` belong to different lexical or paradigm slots.
+The target here is the infinitive `weaxan` 'wax'. Noun `weax` 'wax' and preterite `wax/wēox` belong to different lexical or paradigm slots.

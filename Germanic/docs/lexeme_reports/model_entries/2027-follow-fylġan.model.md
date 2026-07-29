@@ -18,8 +18,8 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the verb as `*fulgen-` and gives Old English [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form}, [`folgian`]{.iv lang=oe sort=folgian role=comparison_form},
-adding that Old Norse [`fylgja`]{.iv lang=on sort=fylgja role=comparison_form} and Old English [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} continue a formation
+Kroonen reconstructs the verb as `*fulgen-` and gives Old English [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow', [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow',
+adding that Old Norse [`fylgja`]{.iv lang=on sort=fylgja role=comparison_form} 'follow' and Old English [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form} continue a formation
 `*fulgjan-` [@Kroonen2013, 159]. The comparative headword and the class-I formation
 are therefore related but not identical.
 
@@ -28,19 +28,19 @@ fylgan ~ folgian` and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
 [[fúlgijaną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgijana role=selected_input} belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
-form [[fulgēną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form}.
+form [[fulgēną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow'.
 
 ### Old English evidence
 
-The Old English evidence preserves both formations. Clark Hall lists [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form}
-with variant spellings [`fylgian`]{.iv lang=oe sort=fylgian role=comparison_form} and [`fyligan`]{.iv lang=oe sort=fyligan role=comparison_form} [@ClarkHall1960, 125].
-Bosworth-Toller likewise has a separate [`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form} entry
+The Old English evidence preserves both formations. Clark Hall lists [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow'
+with variant spellings [`fylgian`]{.iv lang=oe sort=fylgian role=comparison_form} 'follow' and [`fyligan`]{.iv lang=oe sort=fyligan role=comparison_form} 'follow' [@ClarkHall1960, 125].
+Bosworth-Toller likewise has a separate [`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form} 'follow' entry
 [@BosworthToller1898, 275].
 
 Bright notes traces of the older conjugation in [`fylg(e)an`]{.iv lang=oe display=fylg(e)an sort=fylgean role=comparison_form}
-[@BrightCassidyRingler1971, 77] and lists [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} ([`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form}) in the glossary
+[@BrightCassidyRingler1971, 77] and lists [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' ([`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form} 'follow') in the glossary
 [@BrightCassidyRingler1971, 364]. The relevant comparison form in this entry is
-therefore the class-I verb [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} / [`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form}, here normalized as [`fylġan`]{.iv lang=oe sort=fylgan role=target_form}.
+therefore the class-I verb [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow' / [`fylgean`]{.iv lang=oe sort=fylgean role=comparison_form}, here normalized as [`fylġan`]{.iv lang=oe sort=fylgan role=target_form} 'follow'.
 The spelling with ġ represents the palatalized velar before a front-vocalic
 environment.
 
@@ -54,8 +54,8 @@ The same front-vocalic environment then triggers i-umlaut, so `u` becomes `y`
 
 The subsequent Old English developments are palatalization of the velar,
 weak-tail reduction, and loss of `j` after a heavy syllable, yielding
-[`fylġan`]{.iv lang=oe sort=fylgan role=target_form}. This is the regular outcome of the class-I formation. The class-II
-form [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} belongs to the parallel `*-ē- / *-ai-` branch and is not the
+[`fylġan`]{.iv lang=oe sort=fylgan role=target_form} 'follow'. This is the regular outcome of the class-I formation. The class-II
+form [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' belongs to the parallel `*-ē- / *-ai-` branch and is not the
 form modeled here.
 
 ### Class comparison

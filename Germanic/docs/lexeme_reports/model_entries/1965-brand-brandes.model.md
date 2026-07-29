@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The inherited noun is the masculine a-stem [[brándaz]{.recon} ‘brand’]{.iv lang=pgmc sort=brandaz}, continued by Old English
-[`brand`]{.iv lang=oe sort=brand} and its continental cognates [@Orel2003, 53]. The selected
+[`brand`]{.iv lang=oe sort=brand} 'brand' and its continental cognates [@Orel2003, 53]. The selected
 input [[brándas]{.recon} ‘brand’]{.iv lang=pgmc sort=brandas} is not a different lexeme but the genitive singular of that
 same a-stem noun.
 
@@ -28,20 +28,20 @@ inflectional cells. The selected input is the oblique cell.
 
 ### Old English evidence
 
-Old English dictionaries lemmatize the noun as [`brand`]{.iv lang=oe sort=brand} [@ClarkHall1960, 49;
+Old English dictionaries lemmatize the noun as [`brand`]{.iv lang=oe sort=brand} 'brand' [@ClarkHall1960, 49;
 @BosworthToller1898, 116]. Bosworth-Toller also records inflectional forms such as
-[`brandas`]{.iv lang=oe sort=brandas}, [`branda`]{.iv lang=oe sort=branda}, and [`brandum`]{.iv lang=oe sort=brandum} under the same entry [@BosworthToller1898, 116].
+[`brandas`]{.iv lang=oe sort=brandas} 'brand', [`branda`]{.iv lang=oe sort=branda} 'brand', and [`brandum`]{.iv lang=oe sort=brandum} 'brand' under the same entry [@BosworthToller1898, 116].
 
-The specific comparison form in this entry, **[`brandes`]{.iv lang=oe sort=brandes}**, is the expected
+The specific comparison form in this entry, **[`brandes`]{.iv lang=oe sort=brandes} 'brand'**, is the expected
 genitive singular of that a-stem noun. It is therefore an inferred Old English
 paradigm form rather than the ordinary dictionary headword.
 
 ### Development to Old English
 
 From [[brándas]{.recon} ‘brand’]{.iv lang=pgmc sort=brandas}, the regular Old English development passes through the usual
-unstressed-vowel weakening of the inflectional ending, yielding [`brandes`]{.iv lang=oe sort=brandes}.
+unstressed-vowel weakening of the inflectional ending, yielding [`brandes`]{.iv lang=oe sort=brandes} 'brand'.
 Nothing in the stem itself requires a special repair. The root consonants and
-the stressed vowel are the same as in the citation lemma [`brand`]{.iv lang=oe sort=brand}.
+the stressed vowel are the same as in the citation lemma [`brand`]{.iv lang=oe sort=brand} 'brand'.
 
 The analytical weight of the entry lies in the ending. By choosing the oblique
 singular rather than the nominative citation form, the entry presents the same

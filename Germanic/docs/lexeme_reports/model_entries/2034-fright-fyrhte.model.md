@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The noun belongs to the inherited in-stem abstract [[furxtīn]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtin role=source_protoform}, the same family
-as Gothic [`faurhtei`]{.iv lang=goth sort=faurhtei role=comparison_form} [@Orel2003, 120]. The selected input [[fúrxtīnaz]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtinaz role=selected_input} is not a
+as Gothic [`faurhtei`]{.iv lang=goth sort=faurhtei role=comparison_form} 'fright' [@Orel2003, 120]. The selected input [[fúrxtīnaz]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtinaz role=selected_input} is not a
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with `-u` or `-o` as
@@ -29,19 +29,19 @@ nominative.
 
 ### Old English evidence
 
-Bosworth-Toller records **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}** with textual attestation, and it also
-records nominative forms such as [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} and [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form}
+Bosworth-Toller records **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'** with textual attestation, and it also
+records nominative forms such as [`fyrhtu`]{.iv lang=oe sort=fyrhtu role=comparison_form} 'fright' and [`fyrhto`]{.iv lang=oe sort=fyrhto role=comparison_form} 'fright'
 [@BosworthToller1898, 160]. Clark Hall lists adjective and verb material
-separately under `fyrht` / `fyrhtan` [@ClarkHall1960, 141].
+separately under `fyrht` 'fright' / `fyrhtan` 'fright' [@ClarkHall1960, 141].
 
-The relevant comparison form is therefore the attested oblique **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}**.
+The relevant comparison form is therefore the attested oblique **[`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'**.
 The nominative lemma forms remain part of the Old English evidence, but the
 selected target of this entry is the oblique cell.
 
 ### Development to Old English
 
 From [[fúrxtīnaz]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtinaz role=selected_input}, the oblique in-stem develops through the loss and weakening
-of the final ending, yielding [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form}. The form compared here therefore
+of the final ending, yielding [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
 paradigm.
 

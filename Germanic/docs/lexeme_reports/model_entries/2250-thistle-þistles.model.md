@@ -24,21 +24,21 @@ the selected input [[θístilas]{.recon} ‘thistle’]{.iv lang=pgmc sort=thist
 
 ### Old English evidence
 
-The ordinary simplex headword tradition is broken [`þistel`]{.iv lang=oe sort=thistel role=comparison_form} / [`ðistel`]{.iv lang=oe sort=thistel role=comparison_form}. Clark
+The ordinary simplex headword tradition is broken [`þistel`]{.iv lang=oe sort=thistel role=comparison_form} 'thistle' / [`ðistel`]{.iv lang=oe sort=thistel role=comparison_form} 'thistle'. Clark
 Hall gives [`ðistel`]{.iv lang=oe sort=thistel role=comparison_form} as the noun headword [@ClarkHall1960, 326]. The selected target
-here is the genitive singular [`þistles`]{.iv lang=oe sort=thistles role=target_form}, which preserves the same stem in an
+here is the genitive singular [`þistles`]{.iv lang=oe sort=thistles role=target_form} 'thistle', which preserves the same stem in an
 oblique form where the cluster is medial.
 
 ### Development to Old English
 
 Campbell's discussion of cluster nouns shows the contrast clearly. Simplex forms
 often develop a parasite vowel in word-final obstruent + sonorant clusters,
-while comparable medial clusters remain unbroken; his examples include `hrefn`,
-`tacn`, `wépn`, and `botm` beside forms with parasitic vowels elsewhere in the
+while comparable medial clusters remain unbroken; his examples include `hrefn` 'thistle',
+`tacn` 'thistle', `wépn` 'thistle', and `botm` 'thistle' beside forms with parasitic vowels elsewhere in the
 same lexical class [@Campbell1959, 151]. The selected genitive singular [[θístilas]{.recon} ‘thistle’]{.iv lang=pgmc sort=thistilas role=selected_input}
 therefore supplies the conservative comparison form: the cluster is medial and
-the regular development yields [`þistles`]{.iv lang=oe sort=thistles role=regular_output}, while the simplex nominative belongs
-to the broken headword tradition [`þistel`]{.iv lang=oe sort=thistel role=comparison_form}.
+the regular development yields [`þistles`]{.iv lang=oe sort=thistles role=regular_output} 'thistle', while the simplex nominative belongs
+to the broken headword tradition [`þistel`]{.iv lang=oe sort=thistel role=comparison_form} 'thistle'.
 
 ### Paradigm comparison
 

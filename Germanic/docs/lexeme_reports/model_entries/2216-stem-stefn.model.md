@@ -18,33 +18,33 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The source tradition behind **[`stefn`]{.iv lang=oe sort=stefn role=target_form}** is not the same as the comparative label
+The source tradition behind **[`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem'** is not the same as the comparative label
 **[[stámnaz]{.recon} ‘stem’]{.iv lang=pgmc sort=stamnaz role=source_protoform}**. Ringe and Taylor cite **[stebnō]{.recon} ‘stem’** for the noun continued by
-Gothic [`stibna`]{.iv lang=goth sort=stibna role=comparison_form} and Old English `stebn > stefn > stemn` [@RingeTaylor2014,
+Gothic [`stibna`]{.iv lang=goth sort=stibna role=comparison_form} 'stem' and Old English `stebn > stefn > stemn` [@RingeTaylor2014,
 330]. Orel likewise gives **[stebnō ~ *stemnō]{.recon} ‘stem’**, whereas Kroonen prefers
 **`*stimnō-`**, and Fulk describes the etymology of `stefn, stemn` as insecure
 [@Orel2003, 374; @Kroonen2013, 480; @Fulk2018, §6.11 n. 6].
 
-These forms belong to the Old English noun **[`stefn`]{.iv lang=oe sort=stefn role=target_form}** 'voice, sound'. The
+These forms belong to the Old English noun **[`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem'** 'voice, sound'. The
 selected input **[[stébnō]{.recon} ‘stem’]{.iv lang=pgmc sort=stebno role=selected_input}** is therefore best treated as the OE-facing
 transponent supported by that source tradition. It does not settle the deeper
 comparative reconstruction implied by the citation label **[[stámnaz]{.recon} ‘stem’]{.iv lang=pgmc sort=stamnaz role=source_protoform}**.
 
 ### Old English evidence
 
-Clark Hall records **[`stefn`]{.iv lang=oe sort=stefn role=target_form}** as the noun 'voice, sound' and cross-refers
-**[`stemn`]{.iv lang=oe sort=stemn role=comparison_form}** to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
+Clark Hall records **[`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem'** as the noun 'voice, sound' and cross-refers
+**[`stemn`]{.iv lang=oe sort=stemn role=comparison_form} 'stem'** to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
 chronology directly as **`stebn > stefn > stemn`** [@RingeTaylor2014, 330].
 
-Bülbring and Luick treat **[`stemn`]{.iv lang=oe sort=stemn role=comparison_form}** as a later West Saxon development from
-older **[`stefn`]{.iv lang=oe sort=stefn role=target_form}**, produced by `fn > mn` only after the earlier period of nasal
+Bülbring and Luick treat **[`stemn`]{.iv lang=oe sort=stemn role=comparison_form} 'stem'** as a later West Saxon development from
+older **[`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem'**, produced by `fn > mn` only after the earlier period of nasal
 influence on `e` [@Bulbring1902, §§62 Anm. 3, 445; @Luick1914, §75 Anm. 1].
 The relevant comparison form is therefore the conservative **[`stefn`]{.iv lang=oe sort=stefn role=target_form}**, not the
 later West Saxon doublet **[`stemn`]{.iv lang=oe sort=stemn role=comparison_form}**.
 
 ### Development to Old English
 
-From **[stébnō]{.recon} ‘stem’**, raising of final long `ō` gives a **[stébnu]{.recon} ‘stem’** stage.
+From **[stébnō]{.recon} ‘stem’**, raising of final long `ō` 'stem' gives a **[stébnu]{.recon} ‘stem’** stage.
 Regular fricativization of `b` before `n` then yields **[stéβnu]{.recon} ‘stem’**, and loss
 of the final high vowel leaves **[stéβn]{.recon} ‘stem’**, written **`stefn[* in Old English.
 The later form **]{.recon} ‘stem’stemn`** belongs to a separate West Saxon assimilation after

@@ -22,12 +22,12 @@ Kroonen separates noun [weljan- 2]{.recon} 'will, wish' from verb [weljan- 1]{.r
 
 ### Old English evidence
 
-Clark Hall lemmatizes noun `willa m.` separately from verb `willan` [@ClarkHall1960, 368]. The selected target is the noun citation form, not the related verb.
+Clark Hall lemmatizes noun `willa m.` 'will' separately from verb `willan` 'will' [@ClarkHall1960, 368]. The selected target is the noun citation form, not the related verb.
 
 ### Development to Old English
 
-From [wéljô]{.recon} ‘will’, j-gemination yields a heavy stem, i-umlaut gives `will-`, and later shortening plus j-loss produce `willa`. The noun is therefore a regular weak masculine outcome.
+From [wéljô]{.recon} ‘will’, j-gemination yields a heavy stem, i-umlaut gives `will-`, and later shortening plus j-loss produce `willa` 'will'. The noun is therefore a regular weak masculine outcome.
 
 ### Lexical note
 
-The target here is the noun `willa` 'will, wish'. Related verb `willan` belongs to a separate lexeme and should not be substituted for the noun row [@Kroonen2013; @ClarkHall1960, 368].
+The target here is the noun `willa` 'will, wish'. Related verb `willan` 'will' belongs to a separate lexeme and should not be substituted for the noun row [@Kroonen2013; @ClarkHall1960, 368].

@@ -22,12 +22,12 @@ Kroonen cites the helmet noun as `*helma-` and separately distinguishes a differ
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `helm` as the ordinary Old English noun for 'helmet', while `helma` belongs to a separate rudder lexeme [@ClarkHall1960; @BosworthToller1898, 542].
+Clark Hall and Bosworth-Toller record `helm` 'helm' as the ordinary Old English noun for 'helmet', while `helma` 'helm' belongs to a separate rudder lexeme [@ClarkHall1960; @BosworthToller1898, 542].
 
 ### Development to Old English
 
-From [xélmaz]{.recon} ‘helm’, loss of final `z` and later loss of the short final vowel yield `helm`. The development is therefore a straightforward citation-form match.
+From [xélmaz]{.recon} ‘helm’, loss of final `z` and later loss of the short final vowel yield `helm` 'helm'. The development is therefore a straightforward citation-form match.
 
 ### Form note
 
-Comparative `*helma-` is headword notation for the helmet cognate set. It should not be confused with Old English `helma`, which is a different noun meaning 'helm, rudder' [@Kroonen2013; @ClarkHall1960].
+Comparative `*helma-` is headword notation for the helmet cognate set. It should not be confused with Old English `helma` 'helm', which is a different noun meaning 'helm, rudder' [@Kroonen2013; @ClarkHall1960].

@@ -22,7 +22,7 @@ Ringe and Taylor cite the noun as `*gulþa- / *gulda-`, and Kroonen gives the sa
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall both record `gold` as the ordinary Old English neuter noun [@BosworthToller1898, 121; @ClarkHall1960, 152]. The target is therefore the attested citation form itself.
+Bosworth-Toller and Clark Hall both record `gold` 'gold' as the ordinary Old English neuter noun [@BosworthToller1898, 121; @ClarkHall1960, 152]. The target is therefore the attested citation form itself.
 
 ### Development note
 
@@ -30,4 +30,4 @@ Ringe and Taylor note that the medial stop can be understood either as alternati
 
 ### Development to Old English
 
-From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gúldą]{.recon} ‘gold’; Northwest Germanic / Old English lowering then yields [góldą]{.recon} ‘gold’, and apocope gives `gold` [@Campbell1959; @RingeTaylor2014, 42].
+From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gúldą]{.recon} ‘gold’; Northwest Germanic / Old English lowering then yields [góldą]{.recon} ‘gold’, and apocope gives `gold` 'gold' [@Campbell1959; @RingeTaylor2014, 42].

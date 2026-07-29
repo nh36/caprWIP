@@ -22,11 +22,11 @@ Kroonen distinguishes noun `*winda-` from verb `*windan-`, and the present row b
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `windan` as the verb headword [@ClarkHall1960; @BosworthToller1898, 101]. The selected target is the ordinary infinitive of the strong verb.
+Clark Hall and Bosworth-Toller record `windan` 'wind' as the verb headword [@ClarkHall1960; @BosworthToller1898, 101]. The selected target is the ordinary infinitive of the strong verb.
 
 ### Development to Old English
 
-The selected input [wíndaną]{.recon} ‘wind’ yields the regular infinitive `windan` by ordinary heavy-syllable apocope and weak-tail reduction. The form is therefore a straightforward strong-verb outcome.
+The selected input [wíndaną]{.recon} ‘wind’ yields the regular infinitive `windan` 'wind' by ordinary heavy-syllable apocope and weak-tail reduction. The form is therefore a straightforward strong-verb outcome.
 
 ### Lexical note
 

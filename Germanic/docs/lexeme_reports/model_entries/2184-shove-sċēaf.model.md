@@ -19,22 +19,22 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the strong verb as `*skeuban- ~ *skūban-` and cites Old
-English present forms [`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form}, [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} [@Kroonen2013, 444]. Those
+English present forms [`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form} 'shove', [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} 'shove' [@Kroonen2013, 444]. Those
 present-system forms belong to the same verb family, but the comparison here
 uses the singular preterite [[skáub]{.recon} ‘shove’]{.iv lang=pgmc sort=skaub role=selected_input}, not the infinitive.
 
 ### Old English evidence
 
-The ordinary dictionary verb is [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form}/[`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form}, but the preterite itself is
-well attested. Bright gives the principal parts [`scufan`]{.iv lang=oe sort=scufan role=comparison_form}, [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form}, [`scufon`]{.iv lang=oe sort=scufon role=comparison_form}, [`scofen`]{.iv lang=oe sort=scofen role=comparison_form}
+The ordinary dictionary verb is [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} 'shove'/[`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form} 'shove', but the preterite itself is
+well attested. Bright gives the principal parts [`scufan`]{.iv lang=oe sort=scufan role=comparison_form} 'shove', [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} 'shove', [`scufon`]{.iv lang=oe sort=scufon role=comparison_form} 'shove', [`scofen`]{.iv lang=oe sort=scofen role=comparison_form} 'shove'
 [@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
-The normalized form here is [`sċēaf`]{.iv lang=oe sort=sceaf role=target_form},
-regularizing the attested spellings [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} and prefixed [`āsceaf`]{.iv lang=oe sort=asceaf role=comparison_form}.
+The normalized form here is [`sċēaf`]{.iv lang=oe sort=sceaf role=target_form} 'shove',
+regularizing the attested spellings [`sceaf`]{.iv lang=oe sort=sceaf role=comparison_form} and prefixed [`āsceaf`]{.iv lang=oe sort=asceaf role=comparison_form} 'shove'.
 
 ### Development to Old English
 
 From [skáub]{.recon} ‘shove’, the development is straightforward. `*au` fronts and levels to
-`ēa`, final `*b` becomes a fricative and is written `f`, and initial `*sk-`
+`ēa` 'shove', final `*b` becomes a fricative and is written `f`, and initial `*sk-`
 undergoes the usual Old English palatalized spelling in this environment. The
 derivation therefore gives `*skáub > *skáeub > *skēab > *skēaβ > sċēaf`.
 

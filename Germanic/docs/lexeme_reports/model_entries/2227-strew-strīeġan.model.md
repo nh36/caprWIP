@@ -19,13 +19,13 @@ DERIVATION_CLASS: reconstructed_oe
 ### Reconstruction and comparative evidence
 
 Kroonen cites the inherited weak verb as **[`*straujan-`]{.iv lang=pgmc sort=straujan role=source_protoform}** and gives Old English
-**[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** as its dictionary continuation [@Kroonen2013, 483]. Ringe and
+**[`streowian`]{.iv lang=oe sort=streowian role=comparison_form} 'strew'** as its dictionary continuation [@Kroonen2013, 483]. Ringe and
 Taylor distinguish the two Old English formations: the inherited class-I verb is
-continued by Anglian **[`strēgan`]{.iv lang=oe sort=stregan role=comparison_form}**, while West Saxon **[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** is a
+continued by Anglian **[`strēgan`]{.iv lang=oe sort=stregan role=comparison_form} 'strew'**, while West Saxon **[`streowian`]{.iv lang=oe sort=streowian role=comparison_form}** is a
 remodelled class-II verb [@RingeTaylor2014, §6.1 n. 27].
 
 Luick groups [strauwjan]{.recon} ‘strew’ with the same set as `*hauwja-` and [kauwjan]{.recon} ‘strew’,
-yielding Anglian `strēzan` beside West
+yielding Anglian `strēzan` 'strew' beside West
 Saxon forms of the `hīez, ciezan` type [@Luick1914, §98]. Fulk likewise allows
 an early West Saxon **[striegan]{.recon} ‘strew’** directly from Proto-Germanic [straujana]{.recon} ‘strew’
 [@Fulk2018, §4.10 n. 1].
@@ -47,7 +47,7 @@ class-II formation.
 From **[stráwjaną]{.recon} ‘strew’**, the inherited West Saxon development passes through
 [straujaną]{.recon} ‘strew’, fronting and leveling to a **`*strēajan-`** stage, i-umlaut to
 **[strīejan]{.recon} ‘strew’**, and retention or strengthening of the glide after the front
-diphthong, written here as **`ġ[*. The resulting form is **]{.recon} ‘strew’*strīeġan`**.
+diphthong, written here as **`ġ[*. The resulting form is **]{.recon} ‘strew’*strīeġan` 'strew'**.
 
 This differs from Anglian **`strēgan[*, where smoothing removes the diphthongal
 sequence, and from West Saxon **]{.recon} ‘strew’strewian / streowian / strēawian`**, where the

@@ -32,12 +32,12 @@ because the Old English development must begin after early loss of final `-i`.
 ### Old English evidence
 
 The Old English noun is attested with varying spellings. Ringe and Taylor cite
-[`geoguþ`]{.iv lang=oe sort=geoguth role=target_form} ~ [`iuguþ`]{.iv lang=oe sort=iuguth role=comparison_form} [@RingeTaylor2014, 141]. The form is normalized here as
-[`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form}: the initial palatal is written with `ġ`, and the attested spelling
+[`geoguþ`]{.iv lang=oe sort=geoguth role=target_form} 'youth' ~ [`iuguþ`]{.iv lang=oe sort=iuguth role=comparison_form} 'youth' [@RingeTaylor2014, 141]. The form is normalized here as
+[`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form} 'youth': the initial palatal is written with `ġ` 'youth', and the attested spelling
 variation is treated as orthographic rather than lexical.
 
 Nothing in the source stack suggests that a different paradigm cell should be
-chosen. The relevant Old English comparison form is the noun [`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form} itself.
+chosen. The relevant Old English comparison form is the noun [`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form} 'youth' itself.
 
 ### Development to Old English
 
@@ -48,9 +48,9 @@ stage. If that high vowel remained, the word would develop an over-umlauted
 From the selected input [[júgunθ]{.recon} ‘youth’]{.iv lang=pgmc sort=jugunth role=selected_input}, the later development is regular: palatal
 fronting yields [jéugunθ]{.recon} ‘youth’; nasal-spirant lengthening and loss give
 [jéogūθ]{.recon} ‘youth’ [@Fulk2018, 109]; unstressed long-vowel shortening then produces
-[jéoguθ]{.recon} ‘youth’, which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output}. Campbell preserves `u` after accented `u` in forms such
-as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} [@Campbell1959, §374]. Brunner likewise cites `iuzuð`
-`Jugend` and `munuc` `Mönch` in the same environment
+[jéoguθ]{.recon} ‘youth’, which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves `u` after accented `u` in forms such
+as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} 'youth' and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'youth' [@Campbell1959, §374]. Brunner likewise cites `iuzuð` 'youth'
+`Jugend` 'youth' and `munuc` `Mönch` 'youth' in the same environment
 [@SieversBrunner1965, §150.3].
 
 ### Stage comparison

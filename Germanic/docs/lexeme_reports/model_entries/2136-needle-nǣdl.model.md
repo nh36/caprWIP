@@ -29,8 +29,8 @@ The development discussed here follows the Ringe-Taylor alternant framework.
 ### Old English evidence
 
 Clark Hall records the attested citation form **`nǣdl[* [@ClarkHall1960, 210].
-Campbell lists ]{.recon} ‘needle’nédl` among the expected unbroken forms after `t` and `d`
-[@Campbell1959, §367]. Hogg also includes `nidi` / `nǣdl` in the same broader
+Campbell lists ]{.recon} ‘needle’nédl` among the expected unbroken forms after ` 'needle't` and ` 'needle'd`
+[@Campbell1959, §367]. Hogg also includes `nidi` 'needle' / `nǣdl` 'needle' in the same broader
 cluster history [@Hogg1992, 95].
 
 The target is therefore an attested citation form. No oblique-cell substitution
@@ -39,7 +39,7 @@ is involved in this entry.
 ### Development to Old English
 
 Ringe and Taylor give the historical line `*nēþlō, *nēdlō- ... > OE nédl`
-[@RingeTaylor2014, 329]. Campbell likewise lists `nédl` among the expected
+[@RingeTaylor2014, 329]. Campbell likewise lists `nédl` 'needle' among the expected
 unbroken forms after `t` and `d` [@Campbell1959, §367]. The trace expresses the
 same pathway with the voiced alternant followed here for the Old English comparison.
 

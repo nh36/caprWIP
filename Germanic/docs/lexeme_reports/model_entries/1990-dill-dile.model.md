@@ -19,8 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Comparative evidence preserves both an i-stem and a ja-stem formation, with Old
-English [`dile`]{.iv lang=oe sort=dile role=target_form} on one side and continental forms such as Old Saxon [`dilli`]{.iv lang=os sort=dilli role=comparison_form} and
-Old High German [`tilli`]{.iv lang=ohg sort=tilli role=comparison_form} on the other [@Fulk2018, 170]. The selected input
+English [`dile`]{.iv lang=oe sort=dile role=target_form} 'dill' on one side and continental forms such as Old Saxon [`dilli`]{.iv lang=os sort=dilli role=comparison_form} 'dill' and
+Old High German [`tilli`]{.iv lang=ohg sort=tilli role=comparison_form} 'dill' on the other [@Fulk2018, 170]. The selected input
 [[déliz]{.recon} ‘dill’]{.iv lang=pgmc sort=deliz role=selected_input} therefore represents the i-stem side of the paradigm,
 whereas the citation label [[déljaz]{.recon} ‘dill’]{.iv lang=pgmc sort=deljaz role=source_protoform} is a broader comparative headword.
 
@@ -32,18 +32,18 @@ the i-stems provides the relevant morphological background for the OE side
 
 ### Old English evidence
 
-Old English dictionaries record the plant name as [`dile`]{.iv lang=oe sort=dile role=target_form}, alongside the variant
-[`dili`]{.iv lang=oe sort=dili role=comparison_form} [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
+Old English dictionaries record the plant name as [`dile`]{.iv lang=oe sort=dile role=target_form} 'dill', alongside the variant
+[`dili`]{.iv lang=oe sort=dili role=comparison_form} 'dill' [@BosworthToller1898, 164; @ClarkHall1960, 95]. The form discussed here is
 therefore an attested Old English noun with single `l`.
 
 The Old English evidence is the relevant point. Whatever broader comparative
 headword is chosen for the family, the inherited form reflected in OE is the
-i-stem type **[`dile`]{.iv lang=oe sort=dile role=target_form}**, not a geminated [`dill`]{.iv lang=oe sort=dill role=comparison_form} outcome.
+i-stem type **[`dile`]{.iv lang=oe sort=dile role=target_form} 'dill'**, not a geminated [`dill`]{.iv lang=oe sort=dill role=comparison_form} 'dill' outcome.
 
 ### Development to Old English
 
 From [[déliz]{.recon} ‘dill’]{.iv lang=pgmc sort=deliz role=selected_input}, regular loss of final `z` and the later lowering of unstressed
-`i` yield [`dile`]{.iv lang=oe sort=dile role=target_form}. The stem itself remains ungeminated throughout that path.
+`i` yield [`dile`]{.iv lang=oe sort=dile role=target_form} 'dill'. The stem itself remains ungeminated throughout that path.
 
 The contrast is morphological rather than phonological. If the word were
 forced through a ja-stem `*-lj-` pathway, the expected result would show `ll`.

@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English **[`liornian`]{.iv lang=oe sort=liornian role=comparison_form} ~ [`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. Fulk cites the same Old English family from **`*liznō-`** [@Fulk2018, 127].
+Ringe and Taylor give Old English **[`liornian`]{.iv lang=oe sort=liornian role=comparison_form} 'learn' ~ [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn'** from a learn-family base of the **`*lizn-`** type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb as **`*liznōn-`** [@Kroonen2013, 380]. Fulk cites the same Old English family from **`*liznō-`** [@Fulk2018, 127].
 
 The selected input **[[líznô]{.recon} ‘learn (iptv.2sg)’]{.iv lang=pgmc sort=lizno role=selected_input}** is a finite imperative cell of that family, not the citation form of the verb.
 
@@ -26,7 +26,7 @@ The selected input **[[líznô]{.recon} ‘learn (iptv.2sg)’]{.iv lang=pgmc so
 
 Clark Hall gives the ordinary headword as **`leornian[* [@ClarkHall1960, 186]. Brunner, however, explicitly records **]{.recon} ‘learn (iptv.2sg)’leornian, nordh. auch liorna[*, and Campbell notes that beside **]{.recon} ‘learn (iptv.2sg)’leornian[* Northumbrian forms with **]{.recon} ‘learn (iptv.2sg)’io[* occur where original **]{.recon} ‘learn (iptv.2sg)’eo[* and **]{.recon} ‘learn (iptv.2sg)’io`** remain distinct [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
 
-**[`Liorna`]{.iv lang=oe sort=liorna role=target_form}** can therefore be treated as an attested Northumbrian finite form, while **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form}** remains the better-known dictionary headword.
+**[`Liorna`]{.iv lang=oe sort=liorna role=target_form} 'learn'** can therefore be treated as an attested Northumbrian finite form, while **[`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn'** remains the better-known dictionary headword.
 
 ### Development to Old English
 

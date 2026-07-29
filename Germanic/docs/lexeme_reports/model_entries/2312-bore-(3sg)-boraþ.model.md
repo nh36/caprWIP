@@ -24,13 +24,13 @@ Campbell's class-II pattern **`lufas, -aþ (< -ōsi, -ōþi)[* and Ringe and Tay
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as `borian`, and the imperative singular `bora` and present-third-singular `boraþ` are the relevant comparison forms [@ClarkHall1960, 48].
+Clark Hall lemmatizes the verb as `borian` 'bore', and the imperative singular `bora` 'bore' and present-third-singular `boraþ` 'bore' are the relevant comparison forms [@ClarkHall1960, 48].
 
 Campbell's dialect survey allows secondary `-e-` and `-o-` spellings in 2sg and 3sg class-II forms, but the basic ending remains `-aþ` [@Campbell1959, §757]. The regular comparison form for this non-`j` 3sg cell is Boraþ.
 
 ### Development to Old English
 
-From [búrōθi]{.recon} ‘bore (3sg)’, loss of final `-i` first gives [búrōθ]{.recon} ‘bore (3sg)’. Northwest Germanic lowering then produces [bórōθ]{.recon} ‘bore (3sg)’, and late shortening of unstressed `ō` yields [bóraθ]{.recon} ‘bore (3sg)’. Boraþ is therefore the regular comparison form for this non-`j` 3sg cell.
+From [búrōθi]{.recon} ‘bore (3sg)’, loss of final `-i` first gives [búrōθ]{.recon} ‘bore (3sg)’. Northwest Germanic lowering then produces [bórōθ]{.recon} ‘bore (3sg)’, and late shortening of unstressed `ō` 'bore' yields [bóraθ]{.recon} ‘bore (3sg)’. Boraþ is therefore the regular comparison form for this non-`j` 3sg cell.
 
 Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable **`a`** in the finite non-`j` cells support exactly this sequence [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 

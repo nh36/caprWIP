@@ -27,30 +27,30 @@ infinitive.
 Campbell's account of Old English class-II strong verbs treats the singular
 preterite `au > ēa` development as regular in this environment
 [@Campbell1959, 53].
-That is the phonological path relevant for [`bēag`]{.iv lang=oe sort=beag}, whereas the analogical `ū`
-of the present stem belongs to the separate history behind [`būgan`]{.iv lang=oe sort=bugan}
+That is the phonological path relevant for [`bēag`]{.iv lang=oe sort=beag} 'bow', whereas the analogical `ū` 'bow'
+of the present stem belongs to the separate history behind [`būgan`]{.iv lang=oe sort=bugan} 'bow'
 [@RingeTaylor2014, 55].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall both record [`bēag`]{.iv lang=oe sort=beag} as a preterite form of
-[`būgan`]{.iv lang=oe sort=bugan} [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
+Bosworth-Toller and Clark Hall both record [`bēag`]{.iv lang=oe sort=beag} 'bow' as a preterite form of
+[`būgan`]{.iv lang=oe sort=bugan} 'bow' [@BosworthToller1898, 122; @ClarkHall1960, 45]. The form discussed here is
 therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
-The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan}, but the relevant comparison
-form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag}**. That is the paradigm
+The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan} 'bow', but the relevant comparison
+form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag} 'bow'**. That is the paradigm
 cell in which the inherited `*au` grade is preserved most directly.
 
 ### Development to Old English
 
 From [[báug]{.recon} ‘bow’]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
-produce [`bēag`]{.iv lang=oe sort=beag} [@Campbell1959, 53]. No special analogical repair is needed for that
+produce [`bēag`]{.iv lang=oe sort=beag} 'bow' [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.
 
 The analogical element in the wider lexeme belongs instead to the present stem
-seen in [`būgan`]{.iv lang=oe sort=bugan}. The selected input differs from the citation form because the
+seen in [`būgan`]{.iv lang=oe sort=bugan} 'bow'. The selected input differs from the citation form because the
 regular inherited pathway survives more transparently in the preterite than in
 the infinitive.
 
