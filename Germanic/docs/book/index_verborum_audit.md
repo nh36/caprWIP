@@ -1,9 +1,9 @@
 # Index verborum audit
 
 - Internal production occurrences: 1996
-- Internal production unique forms: 977
+- Internal production unique forms: 1001
 - Printed main-index occurrences: 1894
-- Printed main-index unique forms: 955
+- Printed main-index unique forms: 979
 - Print-excluded occurrences: 102
 - Print-excluded unique forms: 82
 - Print exclusions (preoe_model_internal_default_exclusion): 8
@@ -25,7 +25,7 @@
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 488
 - Broad-prose notation / compound expressions: 508
-- Broad-prose evidence suggestions: 287
+- Broad-prose evidence suggestions: 288
 - Curated broad-prose deferred: 11
 - Curated broad-prose ignored: 2
 - Reader-facing examples quarantined (separate example index policy): 596
@@ -47,7 +47,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 989 | 404 |
+| Old English | 989 | 428 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Pre-Old-English and model-internal forms | 12 | 10 |
@@ -120,7 +120,7 @@
 - `brusts` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22)
 - `faurhtei` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22)
 - `fra-liusan` (broad_prose_decision; Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21)
-- `stibna` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
+- `stibna` 'stem` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23)
 
 ### Old Saxon
 
@@ -164,7 +164,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 899 | 392 |
+| Old English | 899 | 416 |
 | Proto-Germanic | 936 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 10 | 8 |
@@ -1348,6 +1348,7 @@
 | `scilling` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scip` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `show` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
+| `sieve` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:27 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `*skawōjanan` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 | pgmc | selected_input | selected input described in prose |
 | `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 | pgmc | source_protoform | introductory illustrative example |
 | `*skúldrumiz` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 | pgmc | source_protoform | citation or reconstructed source form in prose |

@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
 with nominative [hnekkō]{.recon} ‘neck’, genitive [hnukkaz]{.recon} ‘neck’, and accusative plural
-[hnakkuns]{.recon} ‘neck’, and he places Old English `hnecca` among the e-grade descendants
+[hnakkuns]{.recon} ‘neck’, and he places Old English `hnecca` 'neck' among the e-grade descendants
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
 partner of the a-grade `Nacken` family [@KlugeSeebold2011, 347].
 
@@ -41,7 +41,7 @@ a-grade seen in much of the continental material.
 ### Development to Old English
 
 From [[xnékkô]{.recon} ‘neck’]{.iv lang=pgmc sort=xnekko role=selected_input}, the derivation is straightforward. The trace shortens the final
-long vowel to [xnékka]{.recon} ‘neck’, and Old English orthography gives [`hnecca`]{.iv lang=oe sort=hnecca role=target_form}.
+long vowel to [xnékka]{.recon} ‘neck’, and Old English orthography gives [`hnecca`]{.iv lang=oe sort=hnecca role=target_form} 'neck'.
 
 The derivation depends on the earlier selection of the e-grade weak-noun form
 continued by Old English.

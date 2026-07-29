@@ -23,13 +23,13 @@ The Germanic noun is ordinarily cited as the masculine a-stem [[swánaz]{.recon}
 lexeme reconstruction. It is the genitive singular [[swánas]{.recon}]{.iv lang=pgmc sort=swanas role=selected_input} of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan`]{.iv lang=oe sort=swan role=comparison_form}; the selected comparison form is the
-genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes`]{.iv lang=oe sort=swanes role=target_form}.
+The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan` 'swan']{.iv lang=oe sort=swan role=comparison_form}; the selected comparison form is the
+genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes` 'swan']{.iv lang=oe sort=swanes role=target_form}.
 
 ### Old English evidence
 
-Bright's glossary records the ordinary noun as [`swan`]{.iv lang=oe sort=swan role=comparison_form}, m. and also gives the
-exact inflected form [`swanes`]{.iv lang=oe sort=swanes role=target_form}, citing the phrase _swanes feðre_
+Bright's glossary records the ordinary noun as [`swan`]{.iv lang=oe sort=swan role=comparison_form} 'swan', m. and also gives the
+exact inflected form [`swanes`]{.iv lang=oe sort=swanes role=target_form} 'swan', citing the phrase _swanes feðre_
 [@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a

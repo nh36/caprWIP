@@ -9205,7 +9205,7 @@ Old English form: _nafola_
 
 #### Reconstruction and comparative evidence
 
-Kroonen instead gives a nasal-suffix navel formation with Old English [_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6482"}
+Kroonen instead gives a nasal-suffix navel formation with Old English [_nafela_ 'navel']{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6482"}
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
 derivational pathway _\*nabulō_ > _\*næbula_ > _nafola_ [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
@@ -9217,13 +9217,13 @@ still contains a medial vowel.
 
 #### Old English evidence
 
-Ringe and Taylor note the early West Saxon shift [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6494"} > [_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6494"}
+Ringe and Taylor note the early West Saxon shift [_nafola_ 'navel']{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6494"} > [_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6494"} 'navel'
 [@RingeTaylor2014, 336]. Campbell likewise records _nafela_ beside Corpus
-[_nabula_]{.iv lang=oe sort=nabula role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6496"} [@Campbell1959, §159]. The target of this entry is the nominative
-singular [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6497"}, the form that matches the selected derivational pathway
+[_nabula_ 'navel']{.iv lang=oe sort=nabula role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6496"} [@Campbell1959, §159]. The target of this entry is the nominative
+singular [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6497"} 'navel', the form that matches the selected derivational pathway
 most directly.
 
-[_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6500"} is the better-known later West Saxon spelling, while [_nabula_]{.iv lang=oe sort=nabula role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6500"} preserves
+[_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6500"} is the better-known later West Saxon spelling, while [_nabula_]{.iv lang=oe sort=nabula role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6500"} 'navel' preserves
 a less reduced medial vowel. These forms belong to the same lexical history, but
 this entry is centered on [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6502"}.
 
@@ -9302,7 +9302,7 @@ Old English form: _hnecca_
 
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
 with nominative [hnekkō]{.recon} ‘neck’, genitive [hnukkaz]{.recon} ‘neck’, and accusative plural
-[hnakkuns]{.recon} ‘neck’, and he places Old English _hnecca_ among the e-grade descendants
+[hnakkuns]{.recon} ‘neck’, and he places Old English _hnecca_ 'neck' among the e-grade descendants
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies _ae. hnecca_ as an ablaut
 partner of the a-grade _Nacken_ family [@KlugeSeebold2011, 347].
 
@@ -9323,7 +9323,7 @@ a-grade seen in much of the continental material.
 #### Development to Old English
 
 From [[xnékkô]{.recon} ‘neck’]{.iv lang=pgmc sort=xnekko role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6595"}, the derivation is straightforward. The trace shortens the final
-long vowel to [xnékka]{.recon} ‘neck’, and Old English orthography gives [_hnecca_]{.iv lang=oe sort=hnecca role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6596"}.
+long vowel to [xnékka]{.recon} ‘neck’, and Old English orthography gives [_hnecca_]{.iv lang=oe sort=hnecca role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6596"} 'neck'.
 
 The derivation depends on the earlier selection of the e-grade weak-noun form
 continued by Old English.
@@ -9408,7 +9408,7 @@ The development discussed here follows the Ringe-Taylor alternant framework.
 #### Old English evidence
 
 Clark Hall records the attested citation form **_nǣdl[\*_ [@ClarkHall1960, 210]. Campbell lists ]{.recon} _‘needle’nédl_ among the expected unbroken forms after _t_ and _d_
-[@Campbell1959, §367]. Hogg also includes _nidi_ / _nǣdl_ in the same broader
+[@Campbell1959, §367]. Hogg also includes _nidi_ / _nǣdl_ 'needle' in the same broader
 cluster history [@Hogg1992, 95].
 
 The target is therefore an attested citation form. No oblique-cell substitution
@@ -9417,7 +9417,7 @@ is involved in this entry.
 #### Development to Old English
 
 Ringe and Taylor give the historical line _\*nēþlō_, _\*nēdlō-_ ... > OE _nédl_
-[@RingeTaylor2014, 329]. Campbell likewise lists _nédl_ among the expected
+[@RingeTaylor2014, 329]. Campbell likewise lists _nédl_ 'needle' among the expected
 unbroken forms after _t_ and _d_ [@Campbell1959, §367]. The trace expresses the
 same pathway with the voiced alternant followed here for the Old English comparison.
 
@@ -9505,7 +9505,7 @@ lines should not be collapsed without comment [@Orel2003, 320].
 _Nosu_ is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives _nosu f._, with genitive-dative singular _nosa_, and cross-refers
-_nasu_ to _nosu_ [@ClarkHall1960, 810].
+_nasu_ to _nosu_ 'nose' [@ClarkHall1960, 810].
 
 The selected OE target is therefore attested _nosu_, not a reconstructed
 placeholder. The lexicographical record also gives _nasu_ for the full-grade
@@ -9594,20 +9594,20 @@ here.
 
 #### Old English evidence
 
-Clark Hall records [_sæp_]{.iv lang=oe sort=saep role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6855"} (e) n. [@ClarkHall1960, 247]. The target is therefore
-an attested neuter Old English noun. Orel's plain _sap_ notation belongs to
+Clark Hall records [_sæp_ 'sap']{.iv lang=oe sort=saep role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6855"} (e) n. [@ClarkHall1960, 247]. The target is therefore
+an attested neuter Old English noun. Orel's plain _sap_ 'sap' notation belongs to
 comparative normalization, not to the spelling adopted here for the Old English
 form [@Orel2003, 319].
 
 #### Development to Old English
 
 From [[sápą]{.recon} ‘sap’]{.iv lang=pgmc sort=sapa role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6862"}, Anglo-Frisian brightening yields _sæ_, and heavy-syllable nasal
-apocope then produces [_sæp_]{.iv lang=oe sort=saep role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6863"}. That is the regular path documented by the current
+apocope then produces [_sæp_]{.iv lang=oe sort=saep role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6863"} 'sap'. That is the regular path documented by the current
 trace.
 
 The competing comparative lines do not give the same result. The inherited
-n-stem notation [[sapōn]{.recon} ‘sap’]{.iv lang=pgmc sort=sapon role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6867"} yields [_sape_]{.iv lang=oe sort=sape role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6867"}, while an i-stem continuation from the
-[_\*sapi-_]{.iv lang=pgmc sort=sapi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"} line leads to [_sep_]{.iv lang=oe sort=sep role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"} / [_sepe_]{.iv lang=oe sort=sepe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"} rather than to [_sæp_]{.iv lang=oe sort=saep role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"}. The special step in
+n-stem notation [[sapōn]{.recon} ‘sap’]{.iv lang=pgmc sort=sapon role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6867"} yields [_sape_ 'sap']{.iv lang=oe sort=sape role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6867"}, while an i-stem continuation from the
+[_\*sapi-_]{.iv lang=pgmc sort=sapi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"} line leads to [_sep_ 'sap']{.iv lang=oe sort=sep role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"} / [_sepe_ 'sap']{.iv lang=oe sort=sepe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"} rather than to [_sæp_]{.iv lang=oe sort=saep role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:6868"}. The special step in
 this entry is therefore the early stem choice, not a late OE paradigm-cell
 selection.
 
@@ -9767,19 +9767,19 @@ Old English form: _sife_
 
 #### Reconstruction and comparative evidence
 
-Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7020"}
+Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [_sife_ 'sieve']{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7020"}
 with short neuter i-stems such as _spere_ [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
 [sib-iz]{.recon} ‘sieve’, but the derivational input is the normalized i-stem form [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7023"}.
 
 Kroonen's nearby _\*sebjō-_ entry belongs to the separate kinship lexeme that
-yields Old English [_sibb_]{.iv lang=oe sort=sibb role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7026"}, not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7026"} ... OE [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7026"}
+yields Old English [_sibb_ 'sieve']{.iv lang=oe sort=sibb role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7026"}, not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7026"} ... OE [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7026"} 'sieve'
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 
 #### Old English evidence
 
-Clark Hall gives [_sibi_]{.iv lang=oe sort=sibi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} (GL) ... = [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} and also [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} n. ‘sieve’
+Clark Hall gives [_sibi_ 'sieve']{.iv lang=oe sort=sibi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} (GL) ... = [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} and also [_sife_]{.iv lang=oe sort=sife role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} n. ‘sieve’
 [@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary _sibi_ and
 treats _sife_ as a short neuter i-stem [@Campbell1959, §§444, 609]. The
 normalized Old English target is therefore _sife_, while _sibi_ is an attested
@@ -9868,17 +9868,17 @@ Kroonen keeps the inherited verb under class-III [_\*sparēn-_]{.iv lang=pgmc so
 and Taylor, however, reconstruct [_\*sparai-_]{.iv lang=preoe sort=sparai source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7114"} ~ [_\*sparja-_]{.iv lang=preoe sort=sparja source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7114"} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
 The derivational input [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparojana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7116"} therefore represents the refashioned class-II
-formation behind Old English [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7117"}, while the citation reconstruction
+formation behind Old English [_sparian_ 'spare']{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7117"}, while the citation reconstruction
 [[sparēną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparena source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7118"} remains the inherited comparative headword.
 
 #### Old English evidence
 
-Campbell says that [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7122"} does not show the ordinary class-III
-characteristics, but the Ritual forms, normalized here as [_spæria_]{.iv lang=oe sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7123"}, [_spær_]{.iv lang=oe sort=spaer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7123"}, and
-[_spærede_]{.iv lang=oe sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7124"}, together with Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7124"}, point to primitive Old
+Campbell says that [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7122"} 'spare' does not show the ordinary class-III
+characteristics, but the Ritual forms, normalized here as [_spæria_ 'spare']{.iv lang=oe sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7123"}, [_spær_ 'spare']{.iv lang=oe sort=spaer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7123"}, and
+[_spærede_ 'spare']{.iv lang=oe sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7124"}, together with Vespasian Psalter [_spearad_ 'spare']{.iv lang=oe sort=spearad source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7124"}, point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
-Northumbrian [_spæria_]{.iv lang=oe sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7126"}, [_spærede_]{.iv lang=oe sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7126"} beside common Old English [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7126"} and
-Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7127"} [@SieversBrunner1965, §364 Anm. 11]. The citation
+Northumbrian [_spæria_]{.iv lang=oe sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7126"} 'spare', [_spærede_]{.iv lang=oe sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7126"} 'spare' beside common Old English [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7126"} and
+Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7127"} 'spare' [@SieversBrunner1965, §364 Anm. 11]. The citation
 form treated here is [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7128"}; the Anglian forms are relics of the older
 formation, not alternative headwords of equal status.
 
@@ -9888,7 +9888,7 @@ Once the class-II formation [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc s
 regular. The regular derivation shows brightening, restoration of _a_ before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
 reduction, and contraction to [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7136"}. By contrast, Brunner's rule against
-further apocope of final _-e_ explains why Ritual [_spær_]{.iv lang=oe sort=spaer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7137"} cannot be the regular
+further apocope of final _-e_ explains why Ritual [_spær_]{.iv lang=oe sort=spaer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7137"} 'spare' cannot be the regular
 continuation of inherited [[spárē]{.recon} ‘spare’]{.iv lang=preoe sort=spare source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7138"} [@SieversBrunner1965, §150].
 
 #### Formation comparison
@@ -9967,9 +9967,9 @@ _æ_.
 
 #### Old English evidence
 
-The Old English noun itself is the ordinary citation form [_stæf_]{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7212"}. Luick lists
-[_stæf_]{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7213"} among closed monosyllables with _æ_ [@Luick1914, 176]. Ringe and Taylor
-pair singular [_stæf_]{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7214"} with plural [_stafas_]{.iv lang=oe sort=stafas role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7214"} [@RingeTaylor2014, 193]. The
+The Old English noun itself is the ordinary citation form [_stæf_ 'staff']{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7212"}. Luick lists
+[_stæf_]{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7213"} 'staff' among closed monosyllables with _æ_ [@Luick1914, 176]. Ringe and Taylor
+pair singular [_stæf_]{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7214"} with plural [_stafas_ 'staves']{.iv lang=oe sort=stafas role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7214"} [@RingeTaylor2014, 193]. The
 normalized form here is therefore _stæf_; later English _staff_ with _a_
 belongs to a later stage of the word's history.
 
@@ -10048,14 +10048,14 @@ Old English form: _stefn_
 
 #### Reconstruction and comparative evidence
 
-The source tradition behind [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7289"} is not the same as the comparative label
+The source tradition behind [_stefn_ 'stem']{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7289"} is not the same as the comparative label
 **[[stámnaz]{.recon} ‘stem’]{.iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7290"}**. Ringe and Taylor cite **[stebnō]{.recon} ‘stem’** for the noun continued by
-Gothic [_stibna_]{.iv lang=goth sort=stibna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7291"} and Old English _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014,
+Gothic [_stibna_ 'stem']{.iv lang=goth sort=stibna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7291"} and Old English _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014,
 330]. Orel likewise gives **[stebnō ~ *stemnō]{.recon} ‘stem’**, whereas Kroonen prefers
 _\*stimnō-_, and Fulk describes the etymology of _stefn, stemn_ as insecure
 [@Orel2003, 374; @Kroonen2013, 480; @Fulk2018, §6.11 n. 6].
 
-These forms belong to the Old English noun [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7296"} 'voice, sound'. The
+These forms belong to the Old English noun [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7296"} 'stem' 'voice, sound'. The
 derivational input **[[stébnō]{.recon} ‘stem’]{.iv lang=pgmc sort=stebno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7297"}** is therefore best treated as the OE-facing
 transponent supported by that source tradition. It does not settle the deeper
 comparative reconstruction implied by the citation label **[[stámnaz]{.recon} ‘stem’]{.iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7299"}**.
@@ -10063,10 +10063,10 @@ comparative reconstruction implied by the citation label **[[stámnaz]{.recon} �
 #### Old English evidence
 
 Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7303"} as the noun 'voice, sound' and cross-refers
-[_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7304"} to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
+[_stemn_ 'stem']{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7304"} to the same word [@ClarkHall1960, 276]. Ringe and Taylor give the OE
 chronology directly as _stebn_ > _stefn_ > _stemn_ [@RingeTaylor2014, 330].
 
-Bülbring and Luick treat [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7307"} as a later West Saxon development from
+Bülbring and Luick treat [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7307"} 'stem' as a later West Saxon development from
 older [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7308"}, produced by _fn_ > _mn_ only after the earlier period of nasal
 influence on _e_ [@Bulbring1902, §§62 Anm. 3, 445; @Luick1914, §75 Anm. 1].
 The relevant comparison form is therefore the conservative [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7310"}, not the
@@ -10145,13 +10145,13 @@ The Germanic noun is ordinarily cited as the masculine a-stem [[swánaz]{.recon}
 lexeme reconstruction. It is the genitive singular [[swánas]{.recon}]{.iv lang=pgmc sort=swanas role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7379"} of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7382"} > [_swan_]{.iv lang=oe sort=swan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7382"}; the comparison form is the
-genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7383"} > [_swanes_]{.iv lang=oe sort=swanes role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7383"}.
+The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7382"} > [_swan_ 'swan']{.iv lang=oe sort=swan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7382"}; the comparison form is the
+genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7383"} > [_swanes_ 'swan']{.iv lang=oe sort=swanes role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7383"}.
 
 #### Old English evidence
 
-Bright's glossary records the ordinary noun as [_swan_]{.iv lang=oe sort=swan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7387"}, m. and also gives the
-exact inflected form [_swanes_]{.iv lang=oe sort=swanes role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7388"}, citing the phrase _swanes feðre_
+Bright's glossary records the ordinary noun as [_swan_]{.iv lang=oe sort=swan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7387"} 'swan', m. and also gives the
+exact inflected form [_swanes_]{.iv lang=oe sort=swanes role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7388"} 'swan', citing the phrase _swanes feðre_
 [@BrightCassidyRingler1971, 441].
 
 The target is therefore an attested Old English genitive singular, not a
@@ -10231,13 +10231,13 @@ Old English form: _þūsend_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the Germanic numeral as [_\*þūsundī-_]{.iv lang=pgmc sort=thusundi role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7461"} and cites Old
-English [_þūsend_]{.iv lang=oe sort=thusend role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7462"} among its continuations [@Kroonen2013, 554]. The
+English [_þūsend_ 'thousand']{.iv lang=oe sort=thusend role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7462"} among its continuations [@Kroonen2013, 554]. The
 derivational input **[[θūs-èndi]{.recon} ‘thousand’]{.iv lang=pgmc sort=thusendi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7463"}** is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to _e_ and the final
 high vowel already shortened for apocope.
 
 The chronology must explain why Old English shows
-[_þūsend_]{.iv lang=oe sort=thusend role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7468"} while related languages such as Old Saxon and Old High German keep
+[_þūsend_]{.iv lang=oe sort=thusend role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7468"} 'thousand' while related languages such as Old Saxon and Old High German keep
 _u_ in the second syllable? [@Kroonen2013, 554].
 
 #### Old English evidence
@@ -10257,7 +10257,7 @@ the ordinary OE umlaut outcome could develop.
 That early loss, however, does not by itself explain the medial **e[*. Luick compares the word with _\*\*[]{.recon}_ _‘thousand’ærende_]{.iv lang=oe sort=aerende role=comparison_form}** and later groups _thousand_ with forms
 reshaped on that pattern [@Luick1914, §§198, 492]. Viredaz is more cautious,
 arguing that Old English _e_ in this weak position may simply write schwa and so
-need not prove a unique _ærende_-type analogy [@GermanicSlavicBaltic2025,
+need not prove a unique _ærende_ 'message'-type analogy [@GermanicSlavicBaltic2025,
 §2.1.4].
 
 The selected transponent **[[θūs-èndi]{.recon} ‘thousand’]{.iv lang=pgmc sort=thusendi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7491"}** captures the OE-side state from which
@@ -10328,8 +10328,8 @@ Old English form: _timber_
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the noun as [_\*timbra-_]{.iv lang=pgmc sort=timbra role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7554"} and cites Old English
-[_timber_]{.iv lang=oe sort=timber role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7555"} among its continuations [@Kroonen2013, 517]. Ringe and Taylor
-instead state the history from **PGmc _\*timra[\*_ through West Germanic _\*\*[]{.recon}_ ‘timber’*timbr]{.iv lang=preoe sort=timbr role=comparison_form}** to Old English [_timber_]{.iv lang=oe sort=timber role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7556"} [@RingeTaylor2014, 327].
+[_timber_ 'timber']{.iv lang=oe sort=timber role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7555"} among its continuations [@Kroonen2013, 517]. Ringe and Taylor
+instead state the history from **PGmc _\*timra[\*_ through West Germanic _\*\*[]{.recon}_ ‘timber’*timbr]{.iv lang=preoe sort=timbr role=comparison_form}** to Old English [_timber_]{.iv lang=oe sort=timber role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7556"} 'timber' [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial _b_ belongs in the comparative citation form or appears in an
@@ -10337,7 +10337,7 @@ early pre-Old-English stage of the cluster.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the noun as [_timber_]{.iv lang=oe sort=timber role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7564"} and also records [_timbor_]{.iv lang=oe sort=timbor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7564"} as
+Clark Hall lemmatizes the noun as [_timber_]{.iv lang=oe sort=timber role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7564"} and also records [_timbor_ 'timber']{.iv lang=oe sort=timbor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7564"} as
 a variant spelling [@ClarkHall1960, 294]. The Old English form is thus an ordinary
 citation noun, not a selected oblique cell or a reconstructed convenience form.
 
@@ -10413,11 +10413,11 @@ Old English form: _wacan_
 #### Reconstruction and comparative evidence
 
 Kroonen gives the strong verb as _\*wakan-_ with Old English
-[_wacan_]{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7636"} [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
-[_wacian_]{.iv lang=oe sort=wacian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7637"} from weak _\*wakai-_ ~ _\*wakja-_ [@RingeTaylor2014, §3.3.2].
+[_wacan_ 'wake']{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7636"} [@Kroonen2013, 568]. Ringe and Taylor separately derive Old English
+[_wacian_ 'wake']{.iv lang=oe sort=wacian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7637"} from weak _\*wakai-_ ~ _\*wakja-_ [@RingeTaylor2014, §3.3.2].
 
 The difference is therefore lexical and class-based, not graphic. Strong
-[_wacan_]{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7640"} 'wake up, arise' and weak [_wacian_]{.iv lang=oe sort=wacian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7640"} 'be awake, watch' belong to
+[_wacan_]{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7640"} 'wake' 'wake up, arise' and weak [_wacian_]{.iv lang=oe sort=wacian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7640"} 'wake' 'be awake, watch' belong to
 related but distinct histories.
 
 #### Old English evidence
@@ -10425,7 +10425,7 @@ related but distinct histories.
 Clark Hall lists [_wacan_]{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7645"} and [_wacian_]{.iv lang=oe sort=wacian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7645"} as separate headwords
 [@ClarkHall1960, 338]. Bosworth-Toller cautions under
 [_wacan_]{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7647"}: the simplex infinitive itself does not occur, its place seeming to
-be taken by [_wæcnan_]{.iv lang=oe sort=waecnan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7648"} [@BosworthToller1898, 226].
+be taken by [_wæcnan_ 'wake']{.iv lang=oe sort=waecnan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7648"} [@BosworthToller1898, 226].
 
 The target [_wacan_]{.iv lang=oe sort=wacan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7650"} is therefore best understood as a normalized strong
 headword for the verb family, not as a directly quoted simplex infinitive. It
@@ -10508,12 +10508,12 @@ the Proto-Germanic material points to **[watōr, *watenaz]{.recon} ‘water’**
 **[wator]{.recon} ‘water’** before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular
-form that actually corresponds to Old English [_wæter_]{.iv lang=oe sort=waeter role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7727"}. The relevant
+form that actually corresponds to Old English [_wæter_ 'water']{.iv lang=oe sort=waeter role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7727"}. The relevant
 comparator is the inherited nominative-accusative singular **[[wátōr]{.recon} ‘water’]{.iv lang=pgmc sort=wator role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7728"}**.
 
 #### Old English evidence
 
-Bright gives the noun as [_wæter_]{.iv lang=oe sort=waeter role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7732"} with the regular paradigm
+Bright gives the noun as [_wæter_]{.iv lang=oe sort=waeter role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7732"} 'water' with the regular paradigm
 **_wæteres_, _wætere_, _wæter(u)_, _wætera_, _wæterum[\*_ [@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast between West Saxon _\*\*]{.recon}_ ‘water’weeter[* and Mercian _\*\*]{.recon}_ ‘water’weter**
 [@RingeTaylor2014, §6.5.2].
 

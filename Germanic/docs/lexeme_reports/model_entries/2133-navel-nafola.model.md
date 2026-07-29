@@ -18,7 +18,7 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen instead gives a nasal-suffix navel formation with Old English [`nafela`]{.iv lang=oe sort=nafela role=comparison_form}
+Kroonen instead gives a nasal-suffix navel formation with Old English [`nafela` 'navel']{.iv lang=oe sort=nafela role=comparison_form}
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
 derivational pathway `*nabulō > *næbula > nafola` [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
@@ -30,13 +30,13 @@ still contains a medial vowel.
 
 ### Old English evidence
 
-Ringe and Taylor note the early West Saxon shift [`nafola`]{.iv lang=oe sort=nafola role=target_form} > [`nafela`]{.iv lang=oe sort=nafela role=comparison_form}
+Ringe and Taylor note the early West Saxon shift [`nafola` 'navel']{.iv lang=oe sort=nafola role=target_form} > [`nafela`]{.iv lang=oe sort=nafela role=comparison_form} 'navel'
 [@RingeTaylor2014, 336]. Campbell likewise records `nafela` beside Corpus
-[`nabula`]{.iv lang=oe sort=nabula role=comparison_form} [@Campbell1959, §159]. The target of this entry is the nominative
-singular **[`nafola`]{.iv lang=oe sort=nafola role=target_form}**, the form that matches the selected derivational pathway
+[`nabula` 'navel']{.iv lang=oe sort=nabula role=comparison_form} [@Campbell1959, §159]. The target of this entry is the nominative
+singular **[`nafola`]{.iv lang=oe sort=nafola role=target_form} 'navel'**, the form that matches the selected derivational pathway
 most directly.
 
-[`nafela`]{.iv lang=oe sort=nafela role=comparison_form} is the better-known later West Saxon spelling, while [`nabula`]{.iv lang=oe sort=nabula role=comparison_form} preserves
+[`nafela`]{.iv lang=oe sort=nafela role=comparison_form} is the better-known later West Saxon spelling, while [`nabula`]{.iv lang=oe sort=nabula role=comparison_form} 'navel' preserves
 a less reduced medial vowel. These forms belong to the same lexical history, but
 this entry is centered on [`nafola`]{.iv lang=oe sort=nafola role=target_form}.
 

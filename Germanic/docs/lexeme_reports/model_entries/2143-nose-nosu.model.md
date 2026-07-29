@@ -34,7 +34,7 @@ lines should not be collapsed without comment [@Orel2003, 320].
 `Nosu` is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives `nosu f.`, with genitive-dative singular `nosa`, and cross-refers
-`nasu` to `nosu` [@ClarkHall1960, 810].
+`nasu` to `nosu` 'nose' [@ClarkHall1960, 810].
 
 The selected OE target is therefore attested `nosu`, not a reconstructed
 placeholder. The lexicographical record also gives `nasu` for the full-grade

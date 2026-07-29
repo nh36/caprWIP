@@ -24,12 +24,12 @@ the Proto-Germanic material points to **[watōr, *watenaz]{.recon} ‘water’**
 **[wator]{.recon} ‘water’** before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular
-form that actually corresponds to Old English **[`wæter`]{.iv lang=oe sort=waeter role=target_form}**. The relevant
+form that actually corresponds to Old English **[`wæter` 'water']{.iv lang=oe sort=waeter role=target_form}**. The relevant
 comparator is the inherited nominative-accusative singular **[[wátōr]{.recon} ‘water’]{.iv lang=pgmc sort=wator role=selected_input}**.
 
 ### Old English evidence
 
-Bright gives the noun as **[`wæter`]{.iv lang=oe sort=waeter role=target_form}** with the regular paradigm
+Bright gives the noun as **[`wæter`]{.iv lang=oe sort=waeter role=target_form} 'water'** with the regular paradigm
 **`wæteres, wætere, wæter(u), wætera, wæterum[*
 [@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast
 between West Saxon **]{.recon} ‘water’weeter[* and Mercian **]{.recon} ‘water’weter`**

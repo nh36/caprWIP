@@ -18,19 +18,19 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [`sife`]{.iv lang=oe sort=sife role=target_form}
+Kluge-Seebold gives wg. _\*sibi-_ n. ... ae. _sife_, and Campbell groups [`sife` 'sieve']{.iv lang=oe sort=sife role=target_form}
 with short neuter i-stems such as `spere` [@KlugeSeebold2011, 847;
 @Campbell1959, §609]. The older morphological background is the s-stem
 [sib-iz]{.recon} ‘sieve’, but the selected input is the normalized i-stem form [[síbi]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibi role=selected_input}.
 
 Kroonen's nearby `*sebjō-` entry belongs to the separate kinship lexeme that
-yields Old English [`sibb`]{.iv lang=oe sort=sibb role=comparison_form}, not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [`sife`]{.iv lang=oe sort=sife role=target_form}
+yields Old English [`sibb` 'sieve']{.iv lang=oe sort=sibb role=comparison_form}, not to the sieve word. Orel's [[sibaz]{.recon} ‘sieve’]{.iv lang=pgmc sort=sibaz role=source_protoform} ... OE [`sife`]{.iv lang=oe sort=sife role=target_form} 'sieve'
 preserves a broader handbook notation, but that a-stem shape does not fit the
 Old English form treated here [@Orel2003, 328].
 
 ### Old English evidence
 
-Clark Hall gives [`sibi`]{.iv lang=oe sort=sibi role=comparison_form} (GL) ... = [`sife`]{.iv lang=oe sort=sife role=target_form} and also [`sife`]{.iv lang=oe sort=sife role=target_form} n. ‘sieve’
+Clark Hall gives [`sibi` 'sieve']{.iv lang=oe sort=sibi role=comparison_form} (GL) ... = [`sife`]{.iv lang=oe sort=sife role=target_form} and also [`sife`]{.iv lang=oe sort=sife role=target_form} n. ‘sieve’
 [@ClarkHall1960, 263]. Campbell likewise cites Corpus Glossary `sibi` and
 treats `sife` as a short neuter i-stem [@Campbell1959, §§444, 609]. The
 normalized Old English target is therefore `sife`, while `sibi` is an attested
