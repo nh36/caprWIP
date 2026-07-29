@@ -22,12 +22,12 @@ Kroonen cites `*tūna-` 'fenced area', while Orel gives [tūnan ~ *tūnaz]{.reco
 
 ### Old English evidence
 
-Clark Hall records `tūn` as the ordinary headword 'enclosure, yard, village, town' [@ClarkHall1960].
+Clark Hall records `tūn` 'town' as the ordinary headword 'enclosure, yard, village, town' [@ClarkHall1960].
 
 ### Development to Old English
 
-The inherited long `ū` is preserved, and loss of the final nasal vowel yields `tūn` regularly [@SieversBrunner1965].
+The inherited long `ū` is preserved, and loss of the final nasal vowel yields `tūn` 'town' regularly [@SieversBrunner1965].
 
 ### Source note
 
-The comparative headwords vary, but the Old English target here is the direct citation form `tūn`, not an oblique [tūnăn]{.recon} ‘town’.
+The comparative headwords vary, but the Old English target here is the direct citation form `tūn` 'town', not an oblique [tūnăn]{.recon} 'town'.

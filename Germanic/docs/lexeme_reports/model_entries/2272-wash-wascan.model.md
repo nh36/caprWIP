@@ -22,7 +22,7 @@ Kroonen cites `*waskan-`, Orel [waskanan]{.recon} ‘wash’, and Ringe and Tayl
 
 ### Old English evidence
 
-Clark Hall heads the verb as `wascan`, while Sievers-Brunner also notes the variant `wæscan` [@ClarkHall1960; @SieversBrunner1965].
+Clark Hall heads the verb as `wascan` 'wash', while Sievers-Brunner also notes the variant `wæscan` 'wash' [@ClarkHall1960; @SieversBrunner1965].
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From [wáskaną]{.recon} ‘wash’, brightening gives [wæskaną]{.recon} ‘wa
 
 ### Form note
 
-The conservative citation form `wascan` is selected here. Spellings such as `wæscan` or `wasċan` belong to variant or normalized background rather than to the target of this entry.
+The conservative citation form `wascan` 'wash' is selected here. Spellings such as `wæscan` 'wash' or `wasċan` 'wash' belong to variant or normalized background rather than to the target of this entry.

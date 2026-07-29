@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the verb as `*þankjan-` 'to think', and Ringe and Taylor cite fully inflected [þankijaną]{.recon} ‘think’ beside OE `þenċan` [@Kroonen2013; @RingeTaylor2014]. The noun [þankaz]{.recon} ‘think’ belongs only to the wider derivational background.
+Kroonen gives the verb as `*þankjan-` 'to think', and Ringe and Taylor cite fully inflected [þankijaną]{.recon} 'think' beside OE `þenċan` 'think' [@Kroonen2013; @RingeTaylor2014]. The noun [þankaz]{.recon} ‘think’ belongs only to the wider derivational background.
 
 ### Old English evidence
 
-Bosworth-Toller preserves the verb under `þencan/geþencan`, and the citation form here is the ordinary infinitive `þenċan` [@BosworthToller1898].
+Bosworth-Toller preserves the verb under `þencan` 'think' / `geþencan` 'think', and the citation form here is the ordinary infinitive `þenċan` 'think' [@BosworthToller1898].
 
 ### Development to Old English
 
-From [θánkijaną]{.recon} ‘think’, palatalization before `*j` and i-umlaut produce `þenċan`. The infinitive is therefore a straightforward weak-verb outcome.
+From [θánkijaną]{.recon} ‘think’, palatalization before `*j` and i-umlaut produce `þenċan` 'think'. The infinitive is therefore a straightforward weak-verb outcome.
 
 ### Lexical note
 
-Campbell's assibilation discussion uses the same verb `þencan`; the class-III relic `hycgan` is a different lexeme [@Campbell1959; @Hogg1992].
+Campbell's assibilation discussion uses the same verb `þencan` 'think'; the class-III relic `hycgan` is a different lexeme [@Campbell1959; @Hogg1992].

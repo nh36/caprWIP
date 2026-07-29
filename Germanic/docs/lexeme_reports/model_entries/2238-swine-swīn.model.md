@@ -22,7 +22,7 @@ Kroonen cites the noun as `*swina-` 'pig' [@Kroonen2013]. The selected comparati
 
 ### Old English evidence
 
-Clark Hall records `swin (y)` as the ordinary noun headword [@ClarkHall1960]. The target here is that singular citation form `swīn`, not a plural glossed in Modern English as *swine*.
+Clark Hall records `swin (y)` as the ordinary noun headword [@ClarkHall1960]. The target here is that singular citation form `swīn` 'swine', not a plural glossed in Modern English as *swine*.
 
 ### Development to Old English
 

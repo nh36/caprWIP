@@ -22,12 +22,12 @@ Kroonen gives `*þurna-` 'thorn, briar', while Orel preserves the masculine pair
 
 ### Old English evidence
 
-Bright lists `þorn, m.`, and Clark Hall likewise treats `þorn` as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
+Bright lists `þorn, m.` 'thorn', and Clark Hall likewise treats `þorn` 'thorn' as the ordinary noun headword [@BrightCassidyRingler1971; @ClarkHall1960].
 
 ### Development to Old English
 
-The inherited stem shows regular lowering of `u` to `o` before `r`, and final loss yields `þorn`. The noun is therefore a regular Old English continuation of the Proto-Germanic thorn-family.
+The inherited stem shows regular lowering of `u` to `o` before `r`, and final loss yields `þorn` 'thorn'. The noun is therefore a regular Old English continuation of the Proto-Germanic thorn-family.
 
 ### Source note
 
-The comparative sources preserve more than one stem formation, but the Old English target itself is simply the citation form `þorn`.
+The comparative sources preserve more than one stem formation, but the Old English target itself is simply the citation form `þorn` 'thorn'.

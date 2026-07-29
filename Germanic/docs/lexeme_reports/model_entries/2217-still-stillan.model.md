@@ -22,7 +22,7 @@ The wider West Germanic family includes adjective `still` and verb `stillen` [@K
 
 ### Old English evidence
 
-Clark Hall gives `stillan` as the verb and separately `stille` as the adjective [@ClarkHall1960]. Bosworth-Toller likewise preserves a substantial prefixed verbal family under `ge-stillan` and related forms [@BosworthToller1898, 724]. The selected target is the verb `stillan`, not the adjective.
+Clark Hall gives `stillan` as the verb and separately `stille` as the adjective [@ClarkHall1960]. Bosworth-Toller likewise preserves a substantial prefixed verbal family under `ge-stillan` 'still, stop' and related forms [@BosworthToller1898, 724]. The selected target is the verb `stillan`, not the adjective.
 
 ### Development to Old English
 
