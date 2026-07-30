@@ -959,7 +959,7 @@ Old English form: _dor_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a neuter _\*dura-_ 'gate, (single) door' and cites Old English [dor]{.lex lang=oe} 'door' among its reflexes. In the same entry he separates Old English [duru]{.lex lang=oe} 'door', Old Frisian _dore_, and Old High German [tura]{.lex lang=la} 'door' as reflexes of _\*durō-_ instead [@Kroonen2013].
+Kroonen reconstructs a neuter _\*dura-_ 'gate, (single) door' and cites Old English [dor]{.lex lang=oe} 'door' among its reflexes. In the same entry he separates Old English [duru]{.lex lang=oe} 'door', Old Frisian _dore_, and Old High German [tura]{.lex lang=ohg} 'door' as reflexes of _\*durō-_ instead [@Kroonen2013].
 
 #### Old English evidence
 
@@ -3546,7 +3546,7 @@ Old English form: _sundrian_
 
 Orel distinguishes three related formations: adverbial [sunþraz]{.recon} 'asunder' > [sundor]{.lex lang=oe} 'apart, asunder', Class I verbal [sunþrjanan]{.recon} 'sunder' > [syndrian]{.lex lang=oe} 'separate, sunder', and Class II verbal [sunþrōjanan]{.recon} 'sunder' > _sundrian_ 'sunder' [@Orel2003].
 
-Kluge-Seebold aligns the cognate set with German [sondern]{.lex lang=german} 'separate' and OE [gesundrian]{.lex lang=ohg} 'separate', so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
+Kluge-Seebold aligns the cognate set with German [sondern]{.lex lang=german} 'separate' and OE [gesundrian]{.lex lang=oe} 'separate', so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
 
 #### Old English evidence
 
@@ -4663,7 +4663,7 @@ Kroonen cites the noun as _\*garna-_, and Ringe and Taylor give the early chain 
 
 #### Old English evidence
 
-Clark Hall records _gearn (e) n._ 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' as [filatum]{.lex lang=la} 'spun thread' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall records _gearn (e) n._ 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' with Latin *filatum* 'spun thread' [@ClarkHall1960; @BosworthToller1898].
 
 #### Development to Old English
 
@@ -4996,7 +4996,7 @@ form.
 
 Fulk presents the Old English forms together as [_wæfs_]{.iv lang=oe sort=waefs role=target_form} 'wasp' with variants [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form} 'wasp' and
 [_wæps_]{.iv lang=oe sort=waeps role=comparison_form} 'wasp' [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
-explicit by deriving later _wæps_ and late West Saxon [wasp]{.lex lang=english} 'wasp' from earlier
+explicit by deriving later _wæps_ and late West Saxon [wasp]{.lex lang=oe} 'wasp' from earlier
 _waefs_ / _wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 
@@ -5207,7 +5207,7 @@ selected oblique singular.
 | genitive singular | [_\*brándas_]{.iv lang=pgmc sort=brandas} | regular output: [_brandes_]{.iv lang=oe sort=brandes} | [_brandes_]{.iv lang=oe sort=brandes} | exact match for the oblique cell |
 
 The noun itself is straightforwardly inherited. The main point of the entry is
-that [_brandes_]{.iv lang=oe sort=brandes} belongs to the same regular a-stem paradigm as [_brand_]{.iv lang=oe sort=brand}, even
+that [_brandes_]{.iv lang=oe sort=brandes} 'brand (gen.)' belongs to the same regular a-stem paradigm as [_brand_]{.iv lang=oe sort=brand} 'brand', even
 though the citation lemma remains the nominative singular.
 
 ### breast — OE _brēost_
@@ -10968,9 +10968,10 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 ## Part VI. Known but unmodelled developments
 
-The historical remodeling is known, but it cannot be derived by sound change
-alone. Naming the process explains the mismatch without pretending that the
-attested form is phonologically regular.
+The historical development is sufficiently supported by comparative and philological
+evidence, but the current transducer cascade does not yet implement the phonological
+or morphological process required to derive the target. Naming the gap explains the
+status without pretending that no historical account exists.
 
 ### stem — OE _stefn_
 
@@ -10981,7 +10982,7 @@ Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regula
 Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform}
 'stem, trunk' (also variant [stamniz]{.recon} 'stem, trunk'), citing Old Norse
 [_stafn_]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship',
-Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form} 'stem of a ship' fem. 'stem of a ship',
+Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form} 'stem of a ship' (fem.),
 and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form} 'stem' as its
 main continuants [@Orel2003, 371].
 
@@ -10990,7 +10991,7 @@ This word is etymologically unrelated to the Old English homonym
 which descends from a distinct Proto-Germanic
 [stebnō]{.recon} 'voice, sound' / [stemnō]{.recon} 'voice, sound' etymon.
 The two OE lexemes are distinguished in Clark Hall, Bosworth-Toller, Brunner, and
-Luick; they collide on the surface forms [stefn]{.lex lang=oe} 'stem, trunk' and _stemn_ through historically
+Luick; they collide on the surface forms _stefn_ and _stemn_ through historically
 independent developments.
 
 Kroonen relates the 'stem' family to the _stam(m)_ 'stem, trunk' group attested in
@@ -10999,25 +11000,22 @@ proto-form [@Kroonen2013, 479–480].
 
 #### Old English evidence
 
-Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk' III m. 'stem, trunk,
-root, prow, foundation', the weak n-stem
-[_stefna_]{.iv lang=oe sort=stefna role=comparison_form} 'prow/stern' m. 'prow or stern of a ship',
-and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form} 'trunk, stem' m. 'trunk, stem,
-branch, shoot' [@ClarkHall1960, 276, 341].
+Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk, root, prow, foundation', the weak n-stem
+[_stefna_]{.iv lang=oe sort=stefna role=comparison_form} 'prow or stern of a ship',
+and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
 
-Luick §211 explicitly distinguishes [stefn]{.lex lang=oe} 'stem, trunk'/_stemn_ 'Stamm (trunk)' — noting cognates with
+Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
 Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form} 'stem' and Middle English _stam_ — from the
-[stefn]{.lex lang=oe} 'stem, trunk'/_stemn_ 'voice' word treated in §75 [@Luick1914, §211]. Brunner §205 lists
+separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
 _stefn, stemn Stamm_ among words showing the _fn_/_mn_ alternation [@SieversBrunner1965, §205].
 
-The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk'
-III m. 'stem, trunk, root, prow', the form attested most directly in the semantic range
+The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk, root, prow', the form attested most directly in the semantic range
 relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form}
 'prow/stern' is a closely related but more narrowly attested nautical specialization.
 
 #### Development to Old English
 
-The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=regular_output} 'stem, trunk'
+The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=comparison_form} 'stem, trunk'
 from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk'
 involves a cluster change _mn → fn_ that is attested comparatively: Old Norse
 [_stafn_]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship' and Old Saxon
@@ -11039,9 +11037,9 @@ comparatively; the FST work remains to be done.
 
 #### Homonym note
 
-Old English [stefn]{.lex lang=oe} 'stem, trunk'/_stemn_ is a surface homonym for two etymologically unrelated words:
+Old English _stefn_/_stemn_ is a surface homonym for two etymologically unrelated words:
 
-1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'stem, trunk'. This is a **different row** from 2216.
+1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a **different row** from 2216.
 2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. **This is row 2216.**
 
 The form followed here, _\*stébnō_, used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.

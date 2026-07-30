@@ -429,7 +429,7 @@ oe	spæreþ	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entrie
 oe	spæria	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
 oe	stafas	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md
 oe	stefe	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md
-oe	stefn	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md
+oe	stefn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md
 oe	stefn	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md
 oe	stefn	target_form	lexical_heading	stem — OE stefn
 oe	stefna	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md
@@ -1114,7 +1114,6 @@ pgmc	*stábiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc	*stábiz	source_protoform	lexical_proto	staff — OE stæf
 pgmc	*stáinaz	selected_input	trace_proto_input	stone — OE stān
 pgmc	*stámnaz	source_protoform	lexical_protoform	stem — OE stefn
-pgmc	*stébnō	selected_input	trace_proto_input	stem — OE stefn
 pgmc	*stélaną	selected_input	trace_proto_input	steal — OE stelan
 pgmc	*stéllijaną	selected_input	trace_proto_input	still — OE stillan
 pgmc	*stéllijaną	source_protoform	lexical_protoform	still — OE stillan

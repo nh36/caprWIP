@@ -22,7 +22,7 @@ Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain [
 
 ### Old English evidence
 
-Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' as [filatum]{.lex lang=la} 'spun thread' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' with Latin *filatum* 'spun thread' [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 

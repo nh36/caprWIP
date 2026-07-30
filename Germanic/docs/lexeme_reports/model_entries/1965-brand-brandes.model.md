@@ -58,5 +58,5 @@ selected oblique singular.
 | selected genitive singular | [`*brándas`]{.iv lang=pgmc sort=brandas} | compact-trace output: [`brandes`]{.iv lang=oe sort=brandes} | [`brandes`]{.iv lang=oe sort=brandes} | exact match for the chosen oblique cell |
 
 The noun itself is straightforwardly inherited. The main point of the entry is
-that [`brandes`]{.iv lang=oe sort=brandes} belongs to the same regular a-stem paradigm as [`brand`]{.iv lang=oe sort=brand}, even
+that [`brandes`]{.iv lang=oe sort=brandes} 'brand (gen.)' belongs to the same regular a-stem paradigm as [`brand`]{.iv lang=oe sort=brand} 'brand', even
 though the citation lemma remains the nominative singular.

@@ -1,4 +1,1 @@
 action	language	form	form_role	source_scope	source_ref	note
-remove	oe	strēzan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md	Anglian OE strew form cited in prose; not .iv-tagged; broad-prose candidate removed intentionally. If index membership is desired, add .iv explicitly.
-remove	os	makon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md	Old OS/explicit_tag classification was v2 corruption artefact. Form now treated as PWGmc .recon in corrected entry. OS index entry correctly removed.
-remove	pgmc	skuldr(j)ō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md	Parenthesized alternate-segment notation skuldr(j)ō is not a single stable lexical index form. Removal confirmed.

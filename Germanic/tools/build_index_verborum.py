@@ -2733,12 +2733,27 @@ def build_production_rows(
         if row["proto"] and row["proto"] != row["protoform"]:
             add_production(store, language="pgmc", form=row["proto"], form_role="source_protoform", source_scope="lexical_proto", source_ref=ref, origin="manifest")
 
+    # Also build a lookup by (title, expected) only — used to detect obsolete compact traces
+    manifest_by_title_counterpart = {
+        (row["lexical_item"], row["counterpart"]): row
+        for row in manifest_rows
+    }
+
     for entry in parse_compact_entries():
         manifest_row = manifest_by_title.get((entry["title"], entry["expected"], entry["proto"]))
         if manifest_row is not None:
             ref = heading_ref(manifest_row["lexical_item"], manifest_row["counterpart"], manifest_row["derivation_class"])
             oe_display = oe_target_display(manifest_row["counterpart"], manifest_row["derivation_class"])
         else:
+            # Check whether a manifest row exists for the same title+counterpart but DIFFERENT protoform.
+            # If so, the compact trace uses an obsolete proto (e.g., a corrected row where the active
+            # manifest protoform has been updated). Do NOT add the obsolete trace_proto_input to
+            # production; quarantine it by not adding it at all.
+            active_row = manifest_by_title_counterpart.get((entry["title"], entry["expected"]))
+            if active_row is not None:
+                # Obsolete compact trace: title/counterpart exists in manifest but proto doesn't match.
+                # This trace_proto_input is stale and must not pollute the active entry's index.
+                continue
             ref = heading_ref(str(entry["title"]), str(entry["expected"]))
             oe_display = str(entry["expected"])
         if entry["proto_input"]:

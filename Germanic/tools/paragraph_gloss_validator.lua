@@ -349,14 +349,17 @@ local function check_para(el, is_p2, in_prose_section)
           form = f; category = "recon"
         end
       elseif span_has_class(inline, 'lex') then
-        -- .lex: ordinary lexical form, no index semantics; checked like plain italic
+        -- .lex: ordinary lexical form, no index semantics.
+        -- Checked in ALL Part II paragraphs (not just prose sections).
+        -- The subsection allowlist controls only plain-italic heuristic detection.
         if not is_p2 then
           local f = form_from_span(inline)
           if looks_like_linguistic_form(f) or f ~= "" then
             emph_p1 = emph_p1 + 1
             form = f; category = "lex"
           end
-        elseif in_prose_section then
+        else
+          -- Part II: always check .lex regardless of subsection
           lex_p2 = lex_p2 + 1
           local f = form_from_span(inline)
           if not is_notation_only(f) then
@@ -368,9 +371,10 @@ local function check_para(el, is_p2, in_prose_section)
           -- Part I: check .iv
           emph_p1 = emph_p1 + 1
           form = form_from_span(inline); category = "iv"
-        elseif in_prose_section then
-          -- Part II prose sections: check .iv
-          -- Skip combined .recon+.iv spans — the gloss is inside the span itself
+        else
+          -- Part II: always check .iv regardless of subsection.
+          -- The subsection allowlist controls only plain-italic heuristic detection.
+          -- Skip combined .recon+.iv spans — the gloss is inside the span itself.
           local has_inner_recon = false
           for _, ch in ipairs(inline.content) do
             if ch.t == 'Span' and span_has_class(ch, 'recon') then

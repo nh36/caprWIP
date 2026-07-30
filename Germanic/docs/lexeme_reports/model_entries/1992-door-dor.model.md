@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs a neuter `*dura-` 'gate, (single) door' and cites Old English [dor]{.lex lang=oe} 'door' among its reflexes. In the same entry he separates Old English [duru]{.lex lang=oe} 'door', Old Frisian `dore`, and Old High German [tura]{.lex lang=la} 'door' as reflexes of `*durō-` instead [@Kroonen2013].
+Kroonen reconstructs a neuter `*dura-` 'gate, (single) door' and cites Old English [dor]{.lex lang=oe} 'door' among its reflexes. In the same entry he separates Old English [duru]{.lex lang=oe} 'door', Old Frisian `dore`, and Old High German [tura]{.lex lang=ohg} 'door' as reflexes of `*durō-` instead [@Kroonen2013].
 
 ### Old English evidence
 

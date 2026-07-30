@@ -20,7 +20,7 @@ DERIVATION_CLASS: regular
 
 Orel distinguishes three related formations: adverbial [sunþraz]{.recon} 'asunder' > [sundor]{.lex lang=oe} 'apart, asunder', Class I verbal [sunþrjanan]{.recon} 'sunder' > [syndrian]{.lex lang=oe} 'separate, sunder', and Class II verbal [sunþrōjanan]{.recon} 'sunder' > `sundrian` 'sunder' [@Orel2003].
 
-Kluge-Seebold aligns the cognate set with German [sondern]{.lex lang=german} 'separate' and OE [gesundrian]{.lex lang=ohg} 'separate', so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
+Kluge-Seebold aligns the cognate set with German [sondern]{.lex lang=german} 'separate' and OE [gesundrian]{.lex lang=oe} 'separate', so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
 
 ### Old English evidence
 

@@ -6,10 +6,10 @@ Current manifest counts from the live `.model.md` corpus:
 
 - regular: **70**
 - attested variant: **4**
-- early analogy: **35**
+- early analogy: **34**
 - late analogy: **28**
 - reconstructed Old English comparator: **3**
-- known unmodelled remodelling: **2**
+- known unmodelled development: **3**
 - unexplained / deliberately unmodelled: **5**
 
 ## Introduction to the lexical catalogue
@@ -52,9 +52,10 @@ corresponding evidential burden.
 
 ## Known but unmodelled phonological and morphological developments
 
-The historical remodeling is known, but it cannot be derived by sound change
-alone. Naming the process explains the mismatch without pretending that the
-attested form is phonologically regular.
+The historical development is sufficiently supported by comparative and philological
+evidence, but the current transducer cascade does not yet implement the phonological
+or morphological process required to derive the target. Naming the gap explains the
+status without pretending that no historical account exists.
 
 ## Unexplained or deliberately unmodelled exceptions
 

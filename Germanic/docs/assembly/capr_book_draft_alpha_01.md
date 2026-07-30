@@ -3436,7 +3436,7 @@ Old English form: _dor_
 
 #### Reconstruction and comparative evidence
 
-Kroonen reconstructs a neuter _\*dura-_ 'gate, (single) door' and cites Old English [dor]{.lex lang=oe} 'door' among its reflexes. In the same entry he separates Old English [duru]{.lex lang=oe} 'door', Old Frisian _dore_, and Old High German [tura]{.lex lang=la} 'door' as reflexes of _\*durō-_ instead [@Kroonen2013].
+Kroonen reconstructs a neuter _\*dura-_ 'gate, (single) door' and cites Old English [dor]{.lex lang=oe} 'door' among its reflexes. In the same entry he separates Old English [duru]{.lex lang=oe} 'door', Old Frisian _dore_, and Old High German [tura]{.lex lang=ohg} 'door' as reflexes of _\*durō-_ instead [@Kroonen2013].
 
 #### Old English evidence
 
@@ -6142,7 +6142,7 @@ Old English form: _sundrian_
 
 Orel distinguishes three related formations: adverbial [sunþraz]{.recon} 'asunder' > [sundor]{.lex lang=oe} 'apart, asunder', Class I verbal [sunþrjanan]{.recon} 'sunder' > [syndrian]{.lex lang=oe} 'separate, sunder', and Class II verbal [sunþrōjanan]{.recon} 'sunder' > _sundrian_ 'sunder' [@Orel2003].
 
-Kluge-Seebold aligns the cognate set with German [sondern]{.lex lang=german} 'separate' and OE [gesundrian]{.lex lang=ohg} 'separate', so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
+Kluge-Seebold aligns the cognate set with German [sondern]{.lex lang=german} 'separate' and OE [gesundrian]{.lex lang=oe} 'separate', so this entry belongs with the Class II verb, not the adverb [@KlugeSeebold2011].
 
 #### Old English evidence
 
@@ -7312,7 +7312,7 @@ Kroonen cites the noun as _\*garna-_, and Ringe and Taylor give the early chain 
 
 #### Old English evidence
 
-Clark Hall records _gearn (e) n._ 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' as [filatum]{.lex lang=la} 'spun thread' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall records _gearn (e) n._ 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' with Latin *filatum* 'spun thread' [@ClarkHall1960; @BosworthToller1898].
 
 #### Development to Old English
 
@@ -7658,7 +7658,7 @@ form.
 
 Fulk presents the Old English forms together as [_wæfs_]{.iv lang=oe sort=waefs role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4997"} 'wasp' with variants [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4997"} 'wasp' and
 [_wæps_]{.iv lang=oe sort=waeps role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4998"} 'wasp' [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
-explicit by deriving later _wæps_ and late West Saxon [wasp]{.lex lang=english} 'wasp' from earlier
+explicit by deriving later _wæps_ and late West Saxon [wasp]{.lex lang=oe} 'wasp' from earlier
 _waefs_ / _wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 
@@ -7877,7 +7877,7 @@ selected oblique singular.
 | genitive singular | [_\*brándas_]{.iv lang=pgmc sort=brandas source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5207"} | regular output: [_brandes_]{.iv lang=oe sort=brandes source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5207"} | [_brandes_]{.iv lang=oe sort=brandes source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5207"} | exact match for the oblique cell |
 
 The noun itself is straightforwardly inherited. The main point of the entry is
-that [_brandes_]{.iv lang=oe sort=brandes source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5210"} belongs to the same regular a-stem paradigm as [_brand_]{.iv lang=oe sort=brand source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5210"}, even
+that [_brandes_]{.iv lang=oe sort=brandes source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5210"} 'brand (gen.)' belongs to the same regular a-stem paradigm as [_brand_]{.iv lang=oe sort=brand source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5210"} 'brand', even
 though the citation lemma remains the nominative singular.
 
 ### breast — OE _brēost_
@@ -13895,25 +13895,25 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 ## Known but unmodelled developments
 
-The historical remodeling is known, but it cannot be derived by sound change
-alone. Naming the process explains the mismatch without pretending that the
-attested form is phonologically regular.
+The historical development is sufficiently supported by comparative and philological
+evidence, but the current transducer cascade does not yet implement the phonological
+or morphological process required to derive the target. Naming the gap explains the
+status without pretending that no historical account exists.
 
 ### stem — OE _stefn_
 
 \index[oe]{stefn@\emph{stefn}}
 \index[pgmc]{stamnaz@*stámnaz}
-\index[pgmc]{stebno@*stébnō}
 
 Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regular trace was confidently matched for this entry.
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10981"}
+Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10982"}
 'stem, trunk' (also variant [stamniz]{.recon} 'stem, trunk'), citing Old Norse
-[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10983"} 'stem of a ship',
-Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10984"} 'stem of a ship' fem. 'stem of a ship',
-and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10985"} 'stem' as its
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10984"} 'stem of a ship',
+Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10985"} 'stem of a ship' (fem.),
+and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10986"} 'stem' as its
 main continuants [@Orel2003, 371].
 
 This word is etymologically unrelated to the Old English homonym
@@ -13921,7 +13921,7 @@ This word is etymologically unrelated to the Old English homonym
 which descends from a distinct Proto-Germanic
 [stebnō]{.recon} 'voice, sound' / [stemnō]{.recon} 'voice, sound' etymon.
 The two OE lexemes are distinguished in Clark Hall, Bosworth-Toller, Brunner, and
-Luick; they collide on the surface forms [stefn]{.lex lang=oe} 'stem, trunk' and _stemn_ through historically
+Luick; they collide on the surface forms _stefn_ and _stemn_ through historically
 independent developments.
 
 Kroonen relates the 'stem' family to the _stam(m)_ 'stem, trunk' group attested in
@@ -13930,29 +13930,26 @@ proto-form [@Kroonen2013, 479–480].
 
 #### Old English evidence
 
-Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11002"} 'stem, trunk' III m. 'stem, trunk,
-root, prow, foundation', the weak n-stem
-[_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11004"} 'prow/stern' m. 'prow or stern of a ship',
-and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11005"} 'trunk, stem' m. 'trunk, stem,
-branch, shoot' [@ClarkHall1960, 276, 341].
+Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11003"} 'stem, trunk, root, prow, foundation', the weak n-stem
+[_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11004"} 'prow or stern of a ship',
+and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11005"} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
 
-Luick §211 explicitly distinguishes [stefn]{.lex lang=oe} 'stem, trunk'/_stemn_ 'Stamm (trunk)' — noting cognates with
-Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11009"} 'stem' and Middle English _stam_ — from the
-[stefn]{.lex lang=oe} 'stem, trunk'/_stemn_ 'voice' word treated in §75 [@Luick1914, §211]. Brunner §205 lists
+Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
+Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11008"} 'stem' and Middle English _stam_ — from the
+separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
 _stefn, stemn Stamm_ among words showing the _fn_/_mn_ alternation [@SieversBrunner1965, §205].
 
-The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11013"} 'stem, trunk'
-III m. 'stem, trunk, root, prow', the form attested most directly in the semantic range
-relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11015"}
+The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11012"} 'stem, trunk, root, prow', the form attested most directly in the semantic range
+relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11013"}
 'prow/stern' is a closely related but more narrowly attested nautical specialization.
 
 #### Development to Old English
 
-The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11020"} 'stem, trunk'
-from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11021"} 'stem, trunk'
+The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11018"} 'stem, trunk'
+from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11019"} 'stem, trunk'
 involves a cluster change _mn → fn_ that is attested comparatively: Old Norse
-[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11023"} 'stem of a ship' and Old Saxon
-[_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11024"} 'stem' preserve the _fn_/_mn_ variants
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11021"} 'stem of a ship' and Old Saxon
+[_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11022"} 'stem' preserve the _fn_/_mn_ variants
 expected from this family. The precise phonological dating and domain of this change —
 whether it belongs to a North-West Germanic stage, an early West Germanic stage, or is
 reconstructed separately in each branch — is not definitively resolved by the cited
@@ -13970,10 +13967,10 @@ comparatively; the FST work remains to be done.
 
 #### Homonym note
 
-Old English [stefn]{.lex lang=oe} 'stem, trunk'/_stemn_ is a surface homonym for two etymologically unrelated words:
+Old English _stefn_/_stemn_ is a surface homonym for two etymologically unrelated words:
 
-1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'stem, trunk'. This is a **different row** from 2216.
-2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11045"} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. **This is row 2216.**
+1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a **different row** from 2216.
+2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11043"} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. **This is row 2216.**
 
 The form followed here, _\*stébnō_, used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
 
@@ -13981,11 +13978,11 @@ The form followed here, _\*stébnō_, used in earlier versions of this entry was
 
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11053"} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
-| [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11054"} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
-| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11055"} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
-| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11056"} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
-| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11057"} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
+| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11051"} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
+| [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11052"} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
+| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11053"} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
+| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11054"} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
+| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11055"} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
 | _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not appear in this entry** |
 
 ### fire — OE _fȳre_
@@ -14044,17 +14041,17 @@ Old English form: _fȳre_
 
 Kroonen places the lexeme in a heteroclitic family [fōr]{.recon} 'fire' ~ _\*fun-_ and explains
 the front-mutated West Germanic forms from an oblique form of the
-_\*fu(w)eri_ type [@Kroonen2013, 151]. The derivational input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11113"} therefore does not
+_\*fu(w)eri_ type [@Kroonen2013, 151]. The derivational input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11111"} therefore does not
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the _i_ needed for i-umlaut.
 
 The Old English target combines a regular inherited form
-[_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11118"} 'fire' with an attested analogical surface form [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11118"} 'fire'.
+[_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11116"} 'fire' with an attested analogical surface form [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11116"} 'fire'.
 
 #### Old English evidence
 
-Bosworth-Toller records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11122"} 'fire' as the noun 'fire' and also preserves oblique
-[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11123"} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
+Bosworth-Toller records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11120"} 'fire' as the noun 'fire' and also preserves oblique
+[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11121"} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final _-e_ within the
 paradigm.
@@ -14065,11 +14062,11 @@ morphological remodeling.
 
 #### Development to Old English
 
-From [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11134"}, i-umlaut changes _ū_ to _ȳ_ [@Hogg1992, §3.3.3.1]. Subsequent
-loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11135"} 'fire'
+From [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11132"}, i-umlaut changes _ū_ to _ȳ_ [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11133"} 'fire'
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 
-[_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11138"} 'fire' is later than that inherited output. Its final _-e_ belongs to
+[_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11136"} 'fire' is later than that inherited output. Its final _-e_ belongs to
 analogical restoration in the Old English paradigm rather than to the original
 Proto-Germanic ending. The form therefore remains a known but unmodelled
 remodelling: the deterministic phonology is regular, but the attested surface
@@ -14084,8 +14081,8 @@ form and from the later analogical surface result.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level heteroclitic headword | [fōr]{.recon} 'fire' ~ _\*fun-_ | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
-| inherited oblique cell | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11153"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11153"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11153"} 'fire' | regular inherited output from the derivational input |
-| later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11154"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11154"} 'fire' | genuine OE target, but not the direct phonological output |
+| inherited oblique cell | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} 'fire' | regular inherited output from the derivational input |
+| later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11152"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11152"} 'fire' | genuine OE target, but not the direct phonological output |
 
 ### tap — OE _tæppa_
 
@@ -14143,33 +14140,33 @@ Old English form: _tæppa_
 #### Reconstruction and comparative evidence
 
 Orel gives the noun under [tappòn]{.recon} ‘tap’ and already connects it with Old English
-[_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11209"} 'tap' [@Orel2003, 402]. The derivational input [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11209"} is therefore the inherited noun itself;
+[_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11207"} 'tap' [@Orel2003, 402]. The derivational input [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11207"} is therefore the inherited noun itself;
 the entry does not depend on a different lexeme-level proto or a different
 inherited noun cell.
 
 #### Old English evidence
 
-The Old English noun family is well attested. Orel gives [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11215"} 'tap', and Clark
-Hall records [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11216"} 'tap' together with derivatives _tæppere_ 'tapster' and _tæppestre_ 'tapster'
+The Old English noun family is well attested. Orel gives [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11213"} 'tap', and Clark
+Hall records [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11214"} 'tap' together with derivatives _tæppere_ 'tapster' and _tæppestre_ 'tapster'
 [@Orel2003, 402; @ClarkHall1960, 305]. The target is therefore a real Old English noun
 form, not a reconstructed convenience spelling.
 
 #### Development to Old English
 
-From [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11222"}, the regular inherited noun path gives [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11222"} 'tap'. The attested
-target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11223"} 'tap' therefore stands outside that regular phonological development.
+From [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11220"}, the regular inherited noun path gives [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11220"} 'tap'. The attested
+target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11221"} 'tap' therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new
-inherited input. A related j-verb pathway would give [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11226"} 'tap', not the noun
-target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11227"} 'tap'. The entry accordingly remains a known but unmodelled case.
+inherited input. A related j-verb pathway would give [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11224"} 'tap', not the noun
+target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11225"} 'tap'. The entry accordingly remains a known but unmodelled case.
 
 #### Form comparison
 
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| regular inherited noun path | [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11233"} | regular output: [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11233"} 'tap' | regular output, but not the target |
-| attested OE target | — | [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11234"} 'tap' | genuine target form, but analogically remodelled in the present classification |
-| related j-verb background | [_\*táppjaną_]{.iv lang=pgmc sort=tappjana role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11235"} | [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11235"} 'tap' | related formation, but not the noun target |
+| regular inherited noun path | [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11231"} | regular output: [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11231"} 'tap' | regular output, but not the target |
+| attested OE target | — | [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11232"} 'tap' | genuine target form, but analogically remodelled in the present classification |
+| related j-verb background | [_\*táppjaną_]{.iv lang=pgmc sort=tappjana role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11233"} | [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11233"} 'tap' | related formation, but not the noun target |
 
 \clearpage
 
@@ -14235,39 +14232,39 @@ Old English form: _bucc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel both reconstruct the word with a geminate stop, [[bukkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11298"}
+Kroonen and Orel both reconstruct the word with a geminate stop, [[bukkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11296"}
 [@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
-material behind Old English [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11300"} 'buck' [@Orel2003, 62]. The derivational input
+material behind Old English [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11298"} 'buck' [@Orel2003, 62]. The derivational input
 therefore remains identical with the lexeme label: no alternative inherited
 cell accounts for the form.
 
 #### Old English evidence
 
-Old English preserves a mixed lexical picture. Campbell cites [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11306"} 'buck' in the
+Old English preserves a mixed lexical picture. Campbell cites [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11304"} 'buck' in the
 exception set for this phonological environment [@Campbell1959, §115]. Clark
-Hall and Bosworth-Toller show that Old English has both [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11308"} 'buck' and [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11308"} 'buck'
-[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11309"} 'buck'
-is the target treated here; [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11310"} 'buck' supplies genuine philological
+Hall and Bosworth-Toller show that Old English has both [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11306"} 'buck' and [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11306"} 'buck'
+[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11307"} 'buck'
+is the target treated here; [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11308"} 'buck' supplies genuine philological
 background from the same lexical family.
 
 #### Development to Old English
 
-From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11315"}, the regular inherited path gives [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11315"} 'buck'. That is the form
-expected under the ordinary lowering pattern in this environment. [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11316"} 'buck'
+From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11313"}, the regular inherited path gives [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11313"} 'buck'. That is the form
+expected under the ordinary lowering pattern in this environment. [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11314"} 'buck'
 therefore remains outside the deterministic phonology.
 
 No accepted inherited cell repairs the mismatch. A high-vowel alternative would
-introduce i-umlaut and produce a [_byċċ_]{.iv lang=oe sort=bycc role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11320"} 'buck'-type form rather than the target.
-[_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11321"} 'buck' is therefore best treated as a documented exception, not as a regular
+introduce i-umlaut and produce a [_byċċ_]{.iv lang=oe sort=bycc role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11318"} 'buck'-type form rather than the target.
+[_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11319"} 'buck' is therefore best treated as a documented exception, not as a regular
 paradigm-cell survival.
 
 #### Form comparison
 
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| regular inherited noun path | [_\*búkkaz_]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11328"} | regular output: [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11328"} 'buck' | regular output, but not the target |
-| attested OE target | — | [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11329"} 'buck' | genuine target form, but unexplained in the present classification |
-| parallel OE lexical background | — | [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11330"} 'buck' | related n-stem form, not the present target |
+| regular inherited noun path | [_\*búkkaz_]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11326"} | regular output: [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11326"} 'buck' | regular output, but not the target |
+| attested OE target | — | [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11327"} 'buck' | genuine target form, but unexplained in the present classification |
+| parallel OE lexical background | — | [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11328"} 'buck' | related n-stem form, not the present target |
 
 ### fowl — OE _fugol_
 

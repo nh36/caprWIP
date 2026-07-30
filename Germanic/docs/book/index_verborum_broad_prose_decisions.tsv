@@ -123,8 +123,8 @@ defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67	*st
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82	*stebnō	pgmc	source_protoform	Wrong homonym (voice word); explicitly excluded from stem/prow row 2216
 defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67	*stéfnô	pgmc	source_protoform	Pre-OE transponent candidate for prow word; deferred pending full dossier
 defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46	*stofn	pgmc	source_protoform	Luick proto-form for OE stofn trunk; deferred pending full dossier
-ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83	cluster			English linguistic term 'cluster' (phonological position); not a Germanic lexical form
-ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:70	NWGmcMnDissimilation			FST rule name; not a lexical form (updated line reference)
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82	cluster			English linguistic term 'cluster' (phonological position); not a Germanic lexical form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69	NWGmcMnDissimilation			FST rule name; not a lexical form (updated line reference)
 ignore	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29	aw+j			Phonological cluster notation (aw+j); not a lexical form
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:85	cluster			English linguistic term 'cluster' (phonological); not Germanic lexical form
 defer	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:45	*líorna	pgmc	source_protoform	Pre-OE development stage for learn iptv; deferred
@@ -135,11 +135,11 @@ defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45	*ne
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*neaxti	pgmc	source_protoform	Intermediate night dev stage; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*niexti	pgmc	source_protoform	Intermediate night dev stage; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*nixti	pgmc	source_protoform	Intermediate night dev stage; deferred
-ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:72	NWGmcMnDissimilation			FST rule name; not a lexical form (updated line)
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69	NWGmcMnDissimilation			FST rule name; not a lexical form (updated line)
 defer	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39	*skúldrum	pgmc	source_protoform	Intermediate shoulder dev stage; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39	*skúldrumiz	pgmc	source_protoform	Intermediate shoulder dev stage; deferred
-ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:84	*stebnō			Wrong-homonym voice form mentioned in homonym note; must not be indexed
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:81	*stebnō			Wrong-homonym voice form mentioned in homonym note; must not be indexed
 defer	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:42	*wīþja	pgmc	source_protoform	PGmc withy proto form; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49	*wólfa	pgmc	source_protoform	Intermediate wolf dev stage; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49	*wólfaz	pgmc	source_protoform	Intermediate wolf dev stage; deferred
-ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:72	*xémonų	pgmc	source_protoform	Heaven PGmc form used as cross-reference comparison in stem/prow dev note
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69	*xémonų	pgmc	source_protoform	Heaven PGmc form used as cross-reference comparison in stem/prow dev note

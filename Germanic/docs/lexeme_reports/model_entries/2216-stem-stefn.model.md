@@ -21,7 +21,7 @@ DERIVATION_CLASS: known_unmodelled
 Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform}
 'stem, trunk' (also variant [stamniz]{.recon} 'stem, trunk'), citing Old Norse
 [`stafn`]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship',
-Old Frisian [`stevene`]{.iv lang=ofris sort=stevene role=comparison_form} 'stem of a ship' fem. 'stem of a ship',
+Old Frisian [`stevene`]{.iv lang=ofris sort=stevene role=comparison_form} 'stem of a ship' (fem.),
 and Old Saxon [`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' as its
 main continuants [@Orel2003, 371].
 
@@ -30,7 +30,7 @@ This word is etymologically unrelated to the Old English homonym
 which descends from a distinct Proto-Germanic
 [stebnō]{.recon} 'voice, sound' / [stemnō]{.recon} 'voice, sound' etymon.
 The two OE lexemes are distinguished in Clark Hall, Bosworth-Toller, Brunner, and
-Luick; they collide on the surface forms [stefn]{.lex lang=oe} 'stem, trunk' and `stemn` through historically
+Luick; they collide on the surface forms `stefn` and `stemn` through historically
 independent developments.
 
 Kroonen relates the 'stem' family to the `stam(m)` 'stem, trunk' group attested in
@@ -39,25 +39,22 @@ proto-form [@Kroonen2013, 479–480].
 
 ### Old English evidence
 
-Clark Hall records [`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk' III m. 'stem, trunk,
-root, prow, foundation', the weak n-stem
-[`stefna`]{.iv lang=oe sort=stefna role=comparison_form} 'prow/stern' m. 'prow or stern of a ship',
-and the related [`stofn`]{.iv lang=oe sort=stofn role=comparison_form} 'trunk, stem' m. 'trunk, stem,
-branch, shoot' [@ClarkHall1960, 276, 341].
+Clark Hall records [`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk, root, prow, foundation', the weak n-stem
+[`stefna`]{.iv lang=oe sort=stefna role=comparison_form} 'prow or stern of a ship',
+and the related [`stofn`]{.iv lang=oe sort=stofn role=comparison_form} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
 
-Luick §211 explicitly distinguishes [stefn]{.lex lang=oe} 'stem, trunk'/`stemn` 'Stamm (trunk)' — noting cognates with
+Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
 Old Saxon [`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' and Middle English `stam` — from the
-[stefn]{.lex lang=oe} 'stem, trunk'/`stemn` 'voice' word treated in §75 [@Luick1914, §211]. Brunner §205 lists
+separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
 `stefn, stemn Stamm` among words showing the `fn`/`mn` alternation [@SieversBrunner1965, §205].
 
-The primary comparison form used here is [`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk'
-III m. 'stem, trunk, root, prow', the form attested most directly in the semantic range
+The primary comparison form used here is [`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem, trunk, root, prow', the form attested most directly in the semantic range
 relevant to English `stem`. The n-stem [`stefna`]{.iv lang=oe sort=stefna role=comparison_form}
 'prow/stern' is a closely related but more narrowly attested nautical specialization.
 
 ### Development to Old English
 
-The derivation of OE [`stefn`]{.iv lang=oe sort=stefn role=regular_output} 'stem, trunk'
+The derivation of OE [`stefn`]{.iv lang=oe sort=stefn role=comparison_form} 'stem, trunk'
 from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk'
 involves a cluster change `mn → fn` that is attested comparatively: Old Norse
 [`stafn`]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship' and Old Saxon
@@ -79,9 +76,9 @@ comparatively; the FST work remains to be done.
 
 ### Homonym note
 
-Old English [stefn]{.lex lang=oe} 'stem, trunk'/`stemn` is a surface homonym for two etymologically unrelated words:
+Old English `stefn`/`stemn` is a surface homonym for two etymologically unrelated words:
 
-1. **`stefn/stemn` 'voice, sound'**: from PGmc `*stebnō` (Ringe-Taylor, Orel); via `bn → fn` (b-allophony), giving [stefn]{.lex lang=oe} 'stem, trunk'. This is a **different row** from 2216.
+1. **`stefn/stemn` 'voice, sound'**: from PGmc `*stebnō` (Ringe-Taylor, Orel); via `bn → fn` (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a **different row** from 2216.
 2. **`stefn/stefna/stofn/stemn` 'stem, trunk, prow'**: from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem/trunk' (Orel); via the pre-OE cluster change `mn → fn`. **This is row 2216.**
 
 The selected input `*stébnō` used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
