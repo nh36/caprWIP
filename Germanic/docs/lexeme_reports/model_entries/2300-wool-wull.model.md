@@ -32,7 +32,7 @@ has a lexical exception of the [`wull`]{.iv lang=oe sort=wull role=comparison_fo
 
 ### Old English evidence
 
-The Old English target is given here as [`wull`]{.iv lang=oe sort=wull role=comparison_form} 'wool', a normalized lexeme form. Handbook discussion often cites [`wulle`]{.iv lang=oe sort=wulle role=comparison_form} 'wool', the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root `u`.
+The Old English target is given here as [`wull`]{.iv lang=oe sort=wull role=target_form} 'wool', a normalized lexeme form. Handbook discussion often cites [`wulle`]{.iv lang=oe sort=wulle role=comparison_form} 'wool', the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root `u`.
 
 The OE evidence therefore does not remove the problem. It confirms that the
 language has a `u`-form where the regular phonology would have produced `o`.

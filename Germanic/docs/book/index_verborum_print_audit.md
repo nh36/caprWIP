@@ -1,26 +1,25 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2228
+- Internal production occurrences: 2229
 - Internal production unique forms: 1029
-- Printed main occurrences: 2138
-- Printed main unique forms: 1018
-- Printed excluded occurrences: 90
-- Printed excluded unique forms: 70
+- Printed main occurrences: 2141
+- Printed main unique forms: 1019
+- Printed excluded occurrences: 88
+- Printed excluded unique forms: 69
 
 ## Print exclusions by reason
 
-- `preoe_model_internal_default_exclusion`: 2
 - `regular_output_default_exclusion`: 88
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1127 | 443 |
+| Old English | 1128 | 443 |
 | Proto-Germanic | 932 | 514 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
-| Pre-Old English / prehistoric English | 6 | 6 |
+| Pre-Old English / prehistoric English | 8 | 7 |
 | Old Norse | 12 | 9 |
 | Old High German | 18 | 14 |
 | Old Frisian | 7 | 6 |
@@ -36,7 +35,7 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 367 |
+| target_form | 370 |
 | source_protoform | 330 |
 | selected_input | 532 |
 | comparison_form | 749 |
@@ -44,7 +43,6 @@
 
 ## Internal-only rows by reason
 
-- `preoe_model_internal_default_exclusion`: 2
 - `regular_output_default_exclusion`: 88
 
 ## Pre-OE review rows by proposed status
@@ -65,8 +63,8 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1019
-- Print anomaly rows: 54
+- Unique printed entries: 1020
+- Print anomaly rows: 48
 - Hard print anomalies: 0
 
 ## Unique printed entries: first 20 Old English
@@ -188,10 +186,9 @@
 - `boraþ` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58)
 - `cniht` (oe, regular_output; regular_output_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:58)
 
-## Excluded pre-OE/model-internal rows (sample)
+## Excluded pre-OE rows (sample)
 
-- `*hebun` (preoe, comparison_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
-- `*hebun` (preoe, comparison_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
+_None._
 
 ## Print anomalies (sample)
 

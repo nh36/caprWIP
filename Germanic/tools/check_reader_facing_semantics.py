@@ -1449,6 +1449,106 @@ def run_explicit_forms_all_sections_fixtures() -> None:
     assert_true(code == 2, ".iv without gloss in Source comparison section must fail")
 
 
+# ── Occurrence-gating smoke test ──────────────────────────────────────────────
+
+def run_occurrence_gating_fixture() -> None:
+    """Pandoc fixture: source-less fallback removed — only the occurrence in print_main emits \\index.
+
+    Two identical .iv forms (same lang/form/role) with different source_ref values.
+    When only occurrence A is in print_main.tsv, only occurrence A emits \\index{...}.
+    Repeat with only occurrence B in print_main.tsv.
+    """
+    import os
+
+    PRINT_MAIN_FIELDS = [
+        "language", "form", "display", "sort_key", "form_role",
+        "source_scope", "source_ref", "origin", "status",
+    ]
+
+    md_a = (
+        "[*þénkijaną*]{.iv lang=pgmc sort=thenkijana role=evidence_form "
+        "source_ref=fixturepath/file.md:10} 'think'"
+    )
+    md_b = (
+        "[*þénkijaną*]{.iv lang=pgmc sort=thenkijana role=evidence_form "
+        "source_ref=fixturepath/file.md:99} 'think'"
+    )
+    md_both = md_a + "\n\n" + md_b
+
+    def make_print_main_tsv(tmp: str, source_ref: str) -> str:
+        tsv_dir = Path(tmp)
+        tsv_dir.mkdir(parents=True, exist_ok=True)
+        tsv_path = tsv_dir / "print_main.tsv"
+        header = "\t".join(PRINT_MAIN_FIELDS)
+        row = "\t".join([
+            "pgmc",                        # language
+            "þénkijaną",                   # form
+            "*þénkijaną",                  # display
+            "thenkijana",                  # sort_key
+            "evidence_form",               # form_role
+            "explicit_tag",                # source_scope
+            source_ref,                    # source_ref
+            "fixture",                     # origin
+            "active",                      # status
+        ])
+        tsv_path.write_text(header + "\n" + row + "\n", encoding="utf-8")
+        return str(tsv_path)
+
+    def run_with_tsv(md: str, tsv_path: str) -> str:
+        env = {**os.environ, "CAPR_IV_PRINT_MAIN_TSV": tsv_path}
+        with tempfile.TemporaryDirectory() as tmp2:
+            md_path = Path(tmp2) / "fixture.md"
+            md_path.write_text(md, encoding="utf-8")
+            cmd = [
+                "pandoc", str(md_path),
+                "--from=markdown", "--to=latex",
+                "--lua-filter", str(INDEX_FILTER),
+            ]
+            proc = subprocess.run(cmd, capture_output=True, text=True, check=False, env=env)
+            return proc.stdout
+
+    with tempfile.TemporaryDirectory() as tmp:
+        ref_a = "fixturepath/file.md:10"
+        ref_b = "fixturepath/file.md:99"
+
+        # Round 1: only A in print_main → A emits \index, B does not
+        tsv_a = make_print_main_tsv(tmp + "/a", ref_a)
+        tex_a = run_with_tsv(md_both, tsv_a)
+        count_a = tex_a.count(r"\index[")
+        assert_true(
+            count_a == 1,
+            f"Occurrence-gating: with only A in print_main, expected 1 \\index, got {count_a}. tex={tex_a!r}",
+        )
+
+        # Round 2: only B in print_main → B emits \index, A does not
+        tsv_b = make_print_main_tsv(tmp + "/b", ref_b)
+        tex_b = run_with_tsv(md_both, tsv_b)
+        count_b = tex_b.count(r"\index[")
+        assert_true(
+            count_b == 1,
+            f"Occurrence-gating: with only B in print_main, expected 1 \\index, got {count_b}. tex={tex_b!r}",
+        )
+
+        # Sanity: both A and B in print_main → 2 \index commands
+        tsv_ab_path = Path(tmp + "/ab")
+        tsv_ab_path.mkdir(exist_ok=True)
+        tsv_ab = str(tsv_ab_path / "print_main.tsv")
+        header = "\t".join(PRINT_MAIN_FIELDS)
+        rows = []
+        for ref in (ref_a, ref_b):
+            rows.append("\t".join([
+                "pgmc", "þénkijaną", "*þénkijaną", "thenkijana",
+                "evidence_form", "explicit_tag", ref, "fixture", "active",
+            ]))
+        Path(tsv_ab).write_text(header + "\n" + "\n".join(rows) + "\n", encoding="utf-8")
+        tex_ab = run_with_tsv(md_both, tsv_ab)
+        count_ab = tex_ab.count(r"\index[")
+        assert_true(
+            count_ab == 2,
+            f"Occurrence-gating: with both A and B in print_main, expected 2 \\index, got {count_ab}. tex={tex_ab!r}",
+        )
+
+
 # ── Section count regression ──────────────────────────────────────────────────
 
 def run_section_count_regression() -> None:
@@ -1599,6 +1699,7 @@ def main() -> int:
         run_class_compat_fixtures()
         run_lang_code_fixtures()
         run_render_level_fixtures()
+        run_occurrence_gating_fixture()
         run_stats_regression()
         run_known_entry_checks()
         run_specific_typing_regressions()

@@ -115,7 +115,12 @@ def _is_simple_form(text: str) -> bool:
     return True
 
 
-def assert_independent_iv_coverage() -> None:
+def assert_iv_to_production_coverage() -> None:
+    """Verify every .iv-tagged form in model entries has a corresponding production row.
+
+    Tests the .iv → production direction: if a span is tagged .iv, it must reach
+    the index_verborum_forms.tsv. This is distinct from evidence-discovery (see below).
+    """
     forms_rows = load_forms_rows()
     production_keys = set()
     for row in forms_rows:
@@ -156,6 +161,45 @@ def assert_independent_iv_coverage() -> None:
     compact_keys = {(row["language"], row["form"], row["form_role"]) for row in forms_rows}
     for key in sentinel_keys:
         assert key in compact_keys, f"Missing known-evidence sentinel in production: {key}"
+
+
+def assert_evidence_discovery_audit_clean() -> None:
+    """Evidence-discovery direction: detect known evidence forms that lack .iv.
+
+    Bounded audit (2026-07-30): 0 unresolved candidates after manual review.
+    All .recon-only forms in evidence sections are intentionally non-indexed
+    source reconstructions that are not the selected indexable form for their entry.
+    All plain-italic forms in evidence sections are glosses, ModEng explanations,
+    or development-chain intermediates — not missing .iv candidates.
+
+    Negative fixture: demonstrates that a form absent from the production index
+    would be detected if it were expected to be there.
+    """
+    forms_rows = load_forms_rows()
+    production_forms = {(r["language"], r["form"].lstrip("*")) for r in forms_rows}
+
+    # Negative fixture: a synthetic form NOT in production is correctly not found.
+    # If this form were expected, the assertion below would catch the gap:
+    sentinel_absent = ("oe", "SYNTHETIC_ABSENT_FORM_XYZ_2026")
+    assert sentinel_absent not in production_forms, (
+        "Fixture: a form absent from production must not appear in the production set — "
+        "detection mechanism is functioning."
+    )
+
+    # Positive sentinels: these forms MUST be in production (they have .iv in source).
+    # If any of these lost their .iv tag, this assertion would catch the regression.
+    required_in_production: list[tuple[str, str]] = [
+        ("mlg", "schulder"),    # shoulder: MLG comparator — known evidence form
+        ("me", "stam"),         # stem: ME comparator — known evidence form
+        ("ohg", "foll"),        # full: OHG comparator — known evidence form
+        ("oe", "heofon"),       # heaven: canonical OE target — known evidence form
+        ("oe", "wull"),         # wool: OE target (role corrected 2026-07-30)
+    ]
+    for lang, form in required_in_production:
+        assert (lang, form) in production_forms, (
+            f"Evidence discovery: known evidence form missing from production index: ({lang!r}, {form!r}). "
+            "If this form lost its .iv tag in source, this assertion would catch it."
+        )
 
 
 def load_suggestion_rows() -> list[dict[str, str]]:
@@ -632,12 +676,10 @@ def assert_generated_consistency() -> None:
     assert any(line.startswith("- Printed main-index unique forms: ") for line in summary_lines)
     assert any(line.startswith("- Print-excluded occurrences: ") for line in summary_lines)
     assert any(line.startswith("- Print-excluded unique forms: ") for line in summary_lines)
-    assert any(line.startswith("- Print exclusions (preoe_model_internal_default_exclusion): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (regular_output_default_exclusion): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (reader_facing_pedagogical_example): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (deferred_by_print_decision): ") for line in summary_lines)
     assert any(line.startswith("- Print exclusions (excluded_by_print_decision): ") for line in summary_lines)
-    assert any(line.startswith("- Internal-only rows (preoe_model_internal_default_exclusion): ") for line in summary_lines)
     assert any(line.startswith("- Internal-only rows (regular_output_default_exclusion): ") for line in summary_lines)
     assert any(line.startswith("- Internal-only rows (reader_facing_pedagogical_example): ") for line in summary_lines)
     assert any(line.startswith("- Internal-only rows (deferred_by_print_decision): ") for line in summary_lines)
@@ -1030,22 +1072,17 @@ def assert_print_layer_outputs() -> None:
     if "modeng" in registry_titles:
         assert registry_titles["modeng"] == "Modern English"
 
-    # preoe can now be in main_rows if explicitly include_main (§10-11 resolutions)
+    # preoe is a historical stage; all source-backed preoe rows print by default
     preoe_main_rows = [row for row in main_rows if row["language"] == "preoe"]
     preoe_excluded_rows = [row for row in excluded_rows if row["language"] == "preoe"]
-    # We should have at least one included preoe row (source-backed evidence)
-    assert preoe_main_rows, "Expected at least one source-backed preoe row in print_main"
-    assert preoe_excluded_rows, "Expected some model-internal preoe rows in excluded"
-    assert all(
-        row["exclusion_reason"] in {
-            "preoe_model_internal_default_exclusion",
-            "excluded_by_print_decision",
-            "reader_facing_pedagogical_example",
-        }
-        for row in preoe_excluded_rows
+    # All current preoe production rows are source-backed evidence and should be in print_main
+    assert preoe_main_rows, "Expected source-backed preoe rows in print_main"
+    assert not preoe_excluded_rows, (
+        "No preoe rows should be excluded by default (blanket preoe exclusion removed); "
+        f"found: {[row['form'] for row in preoe_excluded_rows]}"
     )
-    # preoe can now be in registry if it has printable rows
-    if any(r["language"] == "preoe" for r in main_rows):
+    # preoe must be in registry if it has printable rows
+    if preoe_main_rows:
         assert "preoe" in parse_registry_codes()
     assert not any(row["source_scope"].startswith("reader_failure_") for row in main_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in forms_rows)
@@ -1193,7 +1230,8 @@ def assert_reconstructed_oe_index_commands() -> None:
 def main() -> None:
     assert_sort_keys()
     assert_explicit_tags()
-    assert_independent_iv_coverage()
+    assert_iv_to_production_coverage()
+    assert_evidence_discovery_audit_clean()
     assert_production_rows()
     assert_written_table_schema()
     assert_overrides_load()

@@ -22,7 +22,7 @@ Campbell gives [`grafan`]{.iv lang=oe sort=grafan role=comparison_form} 'dig, gr
 
 ### Old English evidence
 
-Clark Hall records [`grafan`]{.iv lang=oe sort=grafan role=comparison_form} 'dig, grave' as the verb 'to dig, grave' and separately records noun `græf` 'grave, trench' [@ClarkHall1960]. The target here is the attested infinitive headword of the verb.
+Clark Hall records [`grafan`]{.iv lang=oe sort=grafan role=target_form} 'dig, grave' as the verb 'to dig, grave' and separately records noun `græf` 'grave, trench' [@ClarkHall1960]. The target here is the attested infinitive headword of the verb.
 
 ### Development to Old English
 

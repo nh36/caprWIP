@@ -1,0 +1,12 @@
+% Minimal shared semantic-form macro definitions.
+% Included by every canonical render path that uses the reconstructed_form_filter.lua
+% or predicted_form_filter.lua Lua filters.
+%
+% Table support packages used by the lexical volume and book draft.
+\usepackage{array}
+\usepackage{tabularx}
+% The \Recon macro renders a reconstructed form: asterisk + italic.
+% The asterisk is supplied here so source markup does not include a literal *.
+\providecommand{\Recon}[1]{\emph{*#1}}
+% The \Pred macro renders a counterfactual/predicted form: dagger + italic.
+\providecommand{\Pred}[1]{\textsuperscript{\dag}\emph{#1}}

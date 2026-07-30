@@ -54,7 +54,8 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 
 ```markdown
 [*sċuldrum*]{.iv lang=oe sort=sculdrum}
-[*skúldramiz*]{.iv lang=pgmc display=*skúldramiz sort=skuldramiz}
+[skúldramiz]{.recon .iv lang=pgmc sort=skuldramiz}
+[búkkaz]{.recon .iv lang=pgmc sort=bukkaz}
 [*nǣdrǭ*]{.iv lang=pnwgmc sort=naedro}
 [*bækaną*]{.iv lang=preoe sort=baekana}
 [*brjóst*]{.iv lang=on sort=brjost}
@@ -63,10 +64,34 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 [*dags*]{.iv lang=goth sort=dags}
 [*λόγος*]{.iv lang=greek sort=logos}
 [śrī]{.iv lang=skt sort=sri}
-[`bocc`]{.iv lang=oe sort=bocc role=regular_output}
+[bocc]{.iv lang=oe sort=bocc role=regular_output}
 [bucca]{.iv lang=oe sort=bucca role=comparison_form}
-[`*búkkaz`]{.iv lang=pgmc sort=bukkaz role=selected_input}
+[skúldramaz]{.recon}
 ```
+
+## Stage ontology
+
+The historical stages recognized for Index Verborum purposes follow the standard comparative-Germanic cascade:
+
+```
+PIE → PGmc → PNWGmc → PWGmc → Pre-OE → OE
+```
+
+Proto-Anglo-Frisian (`paf`) is an optional analytical stage used between PWGmc and Pre-OE when a source or adopted analysis reconstructs an Anglo-Frisian common stage. Language/stage codes and computational provenance are **independent**: a form may be tagged `lang=preoe` because it belongs to the historical Pre-OE stage, not because the transducer predicted it.
+
+## Semantic markup classes
+
+Each class classifies **how the form is used**, not its linguistic properties:
+
+| Class | Meaning | Indexed? |
+| :--- | :--- | :---: |
+| `.iv` | Index-worthy lexical, philological, or comparative evidence | yes |
+| `.recon` | Proposed historical reconstructed form (use `.recon .iv` to index) | only with `.iv` |
+| `.pred` | Counterfactual / model-predicted output; not attested evidence | never |
+| `.lex` | Lexical mention for semantic/gloss context; not phonological evidence | never |
+| `.ex` | Pedagogical example in reader-facing rule illustration | never |
+
+`.recon` and `.iv` are **orthogonal**: use `.recon .iv` for a reconstructed form that is cited as comparative evidence; use `.recon` alone for a model-internal stage form that is not indexed.
 
 ## Production vs audit
 
@@ -81,8 +106,9 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 - `Germanic/docs/book/index_verborum_print_anomalies.tsv` flags suspicious
   printed rows and marks hard policy violations.
 - Explicit `.iv` tags are render-gated by the printable main view: excluded
-  `preoe` and excluded `regular_output` tags remain visible in prose but do not
-  emit printed index commands.
+  `regular_output` tags remain visible in prose but do not emit printed index
+  commands. Pre-OE (`preoe`) tags print by default since `preoe` is a
+  historical stage, not a model-internal provenance category.
 - `Germanic/docs/book/index_verborum_preoe_review.tsv` tracks `preoe` rows for
   explicit print-policy review without deleting them from production data.
 - `Germanic/docs/book/reader_facing_example_forms.tsv` is a scaffold for a
@@ -206,8 +232,8 @@ linguistic evidence; `.recon` alone marks a reconstructed form that is
 **not** being indexed (usually a model-internal stage).
 
 ```markdown
-[*búkkaz]{.recon .iv lang=pgmc sort=bukkaz}  % indexed reconstruction
-[*skúldramaz]{.recon}                        % model stage, not indexed
+[búkkaz]{.recon .iv lang=pgmc sort=bukkaz}  % indexed reconstruction
+[skúldramaz]{.recon}                        % model stage, not indexed
 ```
 
 ### `.pred` — Counterfactual or predicted form

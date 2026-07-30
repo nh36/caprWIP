@@ -54,6 +54,6 @@ with the refashioned class-II one that yields the citation verb.
 | Formation / comparison | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | inherited class-III infinitive | [`*spárēną`]{.iv lang=pgmc sort=sparena} | manual comparison / probe output: [`sparen`]{.iv lang=oe sort=sparen} | [`sparian`]{.iv lang=oe sort=sparian} 'spare' | wrong class and wrong ending for the citation verb |
-| inherited class-III imperative singular | `*spárē` | manual comparison / probe output: [`spære`]{.iv lang=oe sort=spaere} | Ritual [`spær`]{.iv lang=oe sort=spaer} 'spare' | loss of final `-e` is not regular, so the relic form cannot control the entry |
-| inherited class-III finite present | `*spárēθi` | manual comparison / probe output: [`spæreþ`]{.iv lang=oe sort=spaereth} | [`spearad`]{.iv lang=oe sort=spearad} 'spare' | attested form is mixed, not a direct continuation of the inherited cell |
+| inherited class-III imperative singular | [spárē]{.recon} | manual comparison / probe output: [`spære`]{.iv lang=oe sort=spaere} | Ritual [`spær`]{.iv lang=oe sort=spaer} 'spare' | loss of final `-e` is not regular, so the relic form cannot control the entry |
+| inherited class-III finite present | [spárēθi]{.recon} | manual comparison / probe output: [`spæreþ`]{.iv lang=oe sort=spaereth} | [`spearad`]{.iv lang=oe sort=spearad} 'spare' | attested form is mixed, not a direct continuation of the inherited cell |
 | selected class-II formation | [`*spárōjaną`]{.iv lang=pgmc sort=sparojana} | documented trace output: [`sparian`]{.iv lang=oe sort=sparian} 'spare' | [`sparian`]{.iv lang=oe sort=sparian} 'spare' | exact match between selected input and Old English citation form |

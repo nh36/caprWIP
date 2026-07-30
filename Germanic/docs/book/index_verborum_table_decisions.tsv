@@ -16,5 +16,5 @@ accept	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59	nas
 defer	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:60	*núsō	pgmc	selected_input	short remodeled zero-grade input; keep manual review
 accept	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59	rast	oe	comparison_form	OE nominative comparison form
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95	*stébnō			wrong homonym noted in table; must not be indexed from stem/prow row 2216
-ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	*spárē			probe/comparison helper in table, not a standalone index occurrence
-ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	*spárēθi			probe/comparison helper in table, not a standalone index occurrence
+ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	spárē			probe/comparison helper in table, not a standalone index occurrence
+ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	spárēθi			probe/comparison helper in table, not a standalone index occurrence

@@ -1,4 +1,4 @@
-local PRINT_MAIN_TSV = "Germanic/docs/book/index_verborum_print_main.tsv"
+local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
 local explicit_allow = nil
 
 local function trim(value)

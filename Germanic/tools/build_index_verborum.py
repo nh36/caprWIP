@@ -2890,8 +2890,6 @@ def default_print_exclusion_reason(
 ) -> str:
     if row.source_scope.startswith("reader_failure_"):
         return "reader_facing_pedagogical_example"
-    if row.language == "preoe":
-        return "preoe_model_internal_default_exclusion"
     if row.form_role == "regular_output":
         return "regular_output_default_exclusion"
     return ""
@@ -3086,10 +3084,7 @@ def build_print_anomaly_rows(
         if normalized_display in PRINT_PROSE_RULE_WORDS or normalized_form in PRINT_PROSE_RULE_WORDS:
             flags.append("prose_or_rule_word")
             hard = True
-        # preoe rows in print_main are deliberate include_main decisions; don't flag as hard error
-        if row.language == "preoe":
-            flags.append("preoe_language")
-            # hard = True  -- removed; source-backed preoe (§10-11) is allowed in print_main
+        # preoe rows in print_main are accepted historical-stage evidence; do not flag
         if row.source_scope.startswith("reader_failure_"):
             flags.append("reader_failure_scope")
             hard = True
@@ -3592,7 +3587,7 @@ def write_print_audit(
     )
     lines.extend(
         sample_excluded(
-            "Excluded pre-OE/model-internal rows (sample)",
+            "Excluded pre-OE rows (sample)",
             [row for row in print_excluded_rows if row.get("language") == "preoe"],
         )
     )
@@ -3898,7 +3893,6 @@ def write_audit(
     }
     exclusion_counts = Counter(row.get("exclusion_reason", "") for row in print_excluded if row.get("exclusion_reason"))
     required_print_reasons = (
-        "preoe_model_internal_default_exclusion",
         "regular_output_default_exclusion",
         "reader_facing_pedagogical_example",
         "deferred_by_print_decision",
@@ -3920,12 +3914,10 @@ def write_audit(
         f"- Printed main-index unique forms: {len({(row.language, row.display) for row in print_main})}",
         f"- Print-excluded occurrences: {len(print_excluded)}",
         f"- Print-excluded unique forms: {len({(row.get('language', ''), row.get('display', '')) for row in print_excluded})}",
-        f"- Print exclusions (preoe_model_internal_default_exclusion): {exclusion_counts.get('preoe_model_internal_default_exclusion', 0)}",
         f"- Print exclusions (regular_output_default_exclusion): {exclusion_counts.get('regular_output_default_exclusion', 0)}",
         f"- Print exclusions (reader_facing_pedagogical_example): {exclusion_counts.get('reader_facing_pedagogical_example', 0)}",
         f"- Print exclusions (deferred_by_print_decision): {exclusion_counts.get('deferred_by_print_decision', 0)}",
         f"- Print exclusions (excluded_by_print_decision): {exclusion_counts.get('excluded_by_print_decision', 0)}",
-        f"- Internal-only rows (preoe_model_internal_default_exclusion): {exclusion_counts.get('preoe_model_internal_default_exclusion', 0)}",
         f"- Internal-only rows (regular_output_default_exclusion): {exclusion_counts.get('regular_output_default_exclusion', 0)}",
         f"- Internal-only rows (reader_facing_pedagogical_example): {exclusion_counts.get('reader_facing_pedagogical_example', 0)}",
         f"- Internal-only rows (deferred_by_print_decision): {exclusion_counts.get('deferred_by_print_decision', 0)}",

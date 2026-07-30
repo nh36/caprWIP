@@ -244,6 +244,7 @@ oe	dill	dill	dill	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mode
 oe	dill	dill	dill	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:59	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
 oe	dor	dor	dor	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe	dor	dor	dor	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
+oe	dor	dor	dor	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe	dor	dor	dor	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe	dor	dor	dor	target_form	lexical_heading	door — OE dor	manifest	auto
 oe	duguþ	duguþ	duguth	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:52	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md	auto
@@ -431,7 +432,7 @@ oe	græf	græf	graef	comparison_form	broad_prose_decision	Germanic/docs/lexeme_r
 oe	græfð	græfð	graefd	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33	broad_prose_curated	override
 oe	græfen	græfen	graefen	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33	broad_prose_curated	override
 oe	grafan	grafan	grafan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:21	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md	auto
-oe	grafan	grafan	grafan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:25	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md	auto
+oe	grafan	grafan	grafan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:25	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md	auto
 oe	grafan	grafan	grafan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:29	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md	auto
 oe	grafan	grafan	grafan	target_form	lexical_heading	grave — OE grafan	manifest	auto
 oe	habban	habban	habban	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:22	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md	auto
@@ -1206,7 +1207,7 @@ oe	wulfai	wulfai	wulfai	comparison_form	explicit_tag	Germanic/docs/lexeme_report
 oe	wulfe	wulfe	wulfe	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:37	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md	auto
 oe	wulfi	wulfi	wulfi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:38	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md	auto
 oe	wull	wull	wull	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:31	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	auto
-oe	wull	wull	wull	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:35	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	auto
+oe	wull	wull	wull	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:35	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	auto
 oe	wull	wull	wull	target_form	lexical_heading	wool — OE wull	manifest	auto
 oe	wulle	wulle	wulle	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:28	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	auto
 oe	wulle	wulle	wulle	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:31	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	auto

@@ -1,17 +1,15 @@
 # Index verborum audit
 
-- Internal production occurrences: 2228
+- Internal production occurrences: 2229
 - Internal production unique forms: 1029
-- Printed main-index occurrences: 2138
-- Printed main-index unique forms: 1018
-- Print-excluded occurrences: 90
-- Print-excluded unique forms: 70
-- Print exclusions (preoe_model_internal_default_exclusion): 2
+- Printed main-index occurrences: 2141
+- Printed main-index unique forms: 1019
+- Print-excluded occurrences: 88
+- Print-excluded unique forms: 69
 - Print exclusions (regular_output_default_exclusion): 88
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 0
-- Internal-only rows (preoe_model_internal_default_exclusion): 2
 - Internal-only rows (regular_output_default_exclusion): 88
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
@@ -47,7 +45,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1215 | 453 |
+| Old English | 1216 | 453 |
 | Proto-Germanic | 932 | 514 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
@@ -171,10 +169,10 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 367 |
+| target_form | 370 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 751 |
+| comparison_form | 749 |
 | regular_output | 88 |
 | evidence_form | 160 |
 
@@ -182,11 +180,11 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1127 | 443 |
+| Old English | 1128 | 443 |
 | Proto-Germanic | 932 | 514 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
-| Pre-Old English / prehistoric English | 6 | 6 |
+| Pre-Old English / prehistoric English | 8 | 7 |
 | Old Norse | 12 | 9 |
 | Old High German | 18 | 14 |
 | Old Frisian | 7 | 6 |
@@ -202,7 +200,7 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 367 |
+| target_form | 370 |
 | source_protoform | 330 |
 | selected_input | 532 |
 | comparison_form | 749 |
@@ -212,7 +210,6 @@
 
 | Reason | Occurrences |
 | --- | ---: |
-| preoe_model_internal_default_exclusion | 2 |
 | regular_output_default_exclusion | 88 |
 
 ## Already indexed in same entry
@@ -2176,8 +2173,8 @@ _None._
 
 | Form | Source | Reason |
 | --- | --- | --- |
-| `*spárē` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57 | probe/comparison helper in table, not a standalone index occurrence |
-| `*spárēθi` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58 | probe/comparison helper in table, not a standalone index occurrence |
+| `spárē` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57 | probe/comparison helper in table, not a standalone index occurrence |
+| `spárēθi` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58 | probe/comparison helper in table, not a standalone index occurrence |
 | `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95 | wrong homonym noted in table; must not be indexed from stem/prow row 2216 |
 
 ## Table semantic notation / compound expressions

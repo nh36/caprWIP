@@ -22,7 +22,7 @@ Kroonen reconstructs a neuter `*dura-` 'gate, (single) door' and cites Old Engli
 
 ### Old English evidence
 
-Clark Hall records [`dor`]{.iv lang=oe sort=dor role=comparison_form} 'door' as a neuter noun and separately records feminine [duru]{.iv lang=oe sort=duru role=comparison_form} 'door' with its own inflection [@ClarkHall1960]. Ringe and Taylor likewise treat [duru]{.iv lang=oe sort=duru role=comparison_form} 'door' as an early Old English u-stem, originally a root noun shifted into that class [@RingeTaylor2014]. The selected target here is therefore the attested neuter [`dor`]{.iv lang=oe sort=dor role=comparison_form} 'door', while [duru]{.iv lang=oe sort=duru role=comparison_form} 'door' remains a parallel Old English reflex from another stem history.
+Clark Hall records [`dor`]{.iv lang=oe sort=dor role=comparison_form} 'door' as a neuter noun and separately records feminine [duru]{.iv lang=oe sort=duru role=comparison_form} 'door' with its own inflection [@ClarkHall1960]. Ringe and Taylor likewise treat [duru]{.iv lang=oe sort=duru role=comparison_form} 'door' as an early Old English u-stem, originally a root noun shifted into that class [@RingeTaylor2014]. The selected target here is therefore the attested neuter [`dor`]{.iv lang=oe sort=dor role=target_form} 'door', while [duru]{.iv lang=oe sort=duru role=comparison_form} 'door' remains a parallel Old English reflex from another stem history.
 
 ### Development to Old English
 

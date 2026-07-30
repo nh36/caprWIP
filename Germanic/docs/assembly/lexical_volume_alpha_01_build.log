@@ -1,7 +1,12 @@
 pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
 pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
 pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
-Error producing PDF.
-! Undefined control sequence.
-l.251 ...the masculine entry to a feminine {\Recon
-
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Regular/OT:script=
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Italic/OT:script=l
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Italic/OT:script=l
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Regular/OT:script=
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Regular/OT:script=
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Italic/OT:script=l
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Italic/OT:script=l
+[WARNING] Missing character: There is no → (U+2192) (U+2192) in font Noto Serif Italic/OT:script=l
