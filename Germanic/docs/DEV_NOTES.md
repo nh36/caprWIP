@@ -43996,3 +43996,23 @@ is in place, the medial-*u harmony exclusion is in place, and the
 two transient regressions exposed by the second of those changes
 have been resolved by retargeting to a cell where the FST's
 Lautgesetzlich output and the OE corpus form coincide.
+
+---
+
+## Compact trace display order: chronology audit required (2026-07-30)
+
+**Status:** open — do not address in index verborum branch
+
+The compact trace report (`compact_trace_report.py`) currently presents:
+
+```
+| **Proto-West Germanic** … (top) / **Northwest Germanic** … (below) | **Old English** |
+```
+
+The broadly accepted Germanic cascade is `PGmc → PNWGmc → PWGmc → Pre-OE → OE`. Displaying PWGmc before NWGmc inverts the historical order.
+
+**Possible explanations:** (1) display-label/ordering defect only; (2) legacy rule-family grouping with wrong panel order; (3) actual historical-phase misclassification. **Warning:** do not reorder FST rules without a dedicated chronology audit and full derivation regression run (current baseline: 7 mismatches / 386 OE lexemes).
+
+**Scope for a separate branch:** audit `compact_trace_report.py` label/ordering logic; determine whether FST rule groupings match PNWGmc → PWGmc sequence; decide whether display labels, rule groupings, or historical assignments need changing; run regression suite before merging.
+
+**Related:** `Germanic/tools/compact_trace_report.py`, `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md`.
