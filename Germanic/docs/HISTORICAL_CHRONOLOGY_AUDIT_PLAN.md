@@ -34,6 +34,84 @@ not automatically the complete historical chronology.
 
 ---
 
+## Existing CAPR research archive
+
+CAPR already contains **very extensive historical and chronological research**.
+Do not begin any audit as though the literature review needs to be rebuilt from
+scratch.
+
+**The repository itself is the primary research archive for this audit.**
+
+Relevant existing research layers include, but are not limited to:
+
+* `Germanic/docs/sound_changes/change_reports/full/` — per-rule change reports
+* `Germanic/docs/sound_changes/literature_dossiers/` — source-based dossiers
+* `Germanic/docs/sound_changes/book_dossiers/` — book-chapter dossiers
+* individual `reader_facing/*.md` sound-change discussions
+* `reader_facing_one_direction_chronology_review_01.md`
+* `reader_facing_chronology_evidence_audit_01.md`
+* `reader_facing_chronology_evidence_qc_01_report.md`
+* chronology cards and chronology-control material
+* lexical model-entry evidence and derivational witnesses
+* existing source-specific notes elsewhere in the repository
+* bibliography records and already cited page/section references
+
+The existing work already records substantial information about:
+
+* historical classification;
+* source attribution;
+* relative chronology;
+* one-sided vs two-sided chronology constraints;
+* lexical witnesses;
+* wrong-early and wrong-late outputs;
+* FST dependencies;
+* places where literature rather than corpus interaction motivates current
+  placement.
+
+Do **not** duplicate this work into a new parallel research system.
+
+### Dossier workflow: inventory first
+
+For each rule, the dossier workflow must begin:
+
+1. **Inventory existing CAPR research.** Locate all repository artifacts
+   relevant to the rule.
+2. **Reconcile the existing research layers with one another.** Where layers
+   agree, treat the claim as established. Where they disagree, report the
+   disagreement before deciding which is right.
+3. **Identify genuine gaps.** Contradictions, outdated conclusions, or questions
+   the existing work leaves genuinely open.
+4. **Only then consult external sources**, and only to resolve a specific
+   open question.
+
+New literature research must be **gap-driven**, not comprehensive by default.
+If the repository already contains adequate source research for a point, cite
+and reuse that work rather than repeating the search.
+
+### Dossier section structure
+
+Every sound-change dossier must include an opening section:
+
+**§ Existing CAPR research** — list the relevant repository artifacts and
+summarize what has already been established.
+
+Then separate:
+
+**§ Already established** — claims supported sufficiently by existing CAPR
+research.
+
+**§ Open questions** — questions that remain unresolved after reconciling
+existing CAPR material.
+
+**§ Additional research required** — external source work needed specifically
+for those open questions.
+
+The purpose of the historical-chronology phase is primarily to **synthesize,
+reconcile, stage, and where necessary correct the substantial research already
+done**, not to restart the research.
+
+---
+
 ## Provisional historical backbone
 
 For the English line, use the following broad staging framework:
@@ -108,6 +186,10 @@ For each sound change, record:
 * relative chronology;
 * qualifications or competing analyses;
 * exact citation/page/section.
+
+Many of these records will already exist in CAPR research files. Always check
+for existing citations and notes before generating new ones. Add to existing
+records rather than replacing them.
 
 The reader-facing historical discussion should eventually be able to say
 explicitly that different authors analyse a development differently, rather than
@@ -218,7 +300,20 @@ because the present reader-facing text creates a possible historical contradicti
   raising → final-*z* deletion, but does not by itself fix the absolute
   placement of *z*-loss within the whole early cascade.
 
-The pilot must first determine what historical development(s) the current
+**Begin by inventorying existing CAPR research** on:
+
+* SC020 `PGmcFinalZDeletion`;
+* SC003 rhotacism insofar as it presupposes earlier *z*-loss;
+* SC019 final long-*ō* raising;
+* any change reports, dossiers, chronology reviews, lexical witnesses, and
+  source notes involving final *z*.
+
+Produce an inventory of what CAPR already knows before doing any new literature
+search. Use the first pilot partly to determine how much of the future
+chronology audit can be accomplished by synthesizing existing research rather
+than generating new research.
+
+The pilot must then determine what historical development(s) the current
 broad rule:
 
 ```
