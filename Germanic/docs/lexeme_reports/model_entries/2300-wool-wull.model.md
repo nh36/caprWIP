@@ -21,7 +21,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
 history of West Germanic, stressed `u` lowers before a following non-high vowel,
 so the regular Old English outcome is an `o`-form. Campbell's discussion of the
-parallel adjective `full`, with OHG [foll]{.lex lang=dutch} 'full' as the regular comparator, shows that
+parallel adjective `full`, with OHG [foll]{.lex lang=ohg} 'full' as the regular comparator, shows that
 the handbooks treat this as a genuine exception cluster rather than as a place
 where the rule itself is doubtful [@Campbell1959, §115].
 

@@ -9543,7 +9543,7 @@ Old English form: _sċuldrum_
 
 #### Reconstruction and comparative evidence
 
-The handbooks do not agree on the reconstruction of the Germanic word. Orel gives _\*skuldr(j)ō_ as a feminine ō-/jō-stem and explicitly notes that Old English [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} 'shoulder' is masculine beside OFrisian [_skulder_]{.iv lang=ofris sort=skulder role=comparison_form} 'shoulder', Middle Low German [schulder]{.lex lang=german} 'shoulder', and Old High German [_scultra_]{.iv lang=ohg sort=scultra role=comparison_form} 'shoulder', [_scultirra_]{.iv lang=ohg sort=scultirra role=comparison_form} 'shoulder' [@Orel2003, 345]. Kroonen reconstructs [_\*skuldra-_]{.iv lang=pgmc sort=skuldra role=source_protoform}, a masculine a-stem, and derives the Old High German feminine forms from [_\*skuldrjōn-_]{.iv lang=pgmc sort=skuldrjon role=source_protoform} [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [[skuldru]{.recon} 'shoulder']{.iv lang=pwgmc sort=skuldru role=comparison_form}** for the Old English branch [@RingeTaylor2014, 142].
+The handbooks do not agree on the reconstruction of the Germanic word. Orel gives _\*skuldr(j)ō_ as a feminine ō-/jō-stem and explicitly notes that Old English [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} 'shoulder' is masculine beside OFrisian [_skulder_]{.iv lang=ofris sort=skulder role=comparison_form} 'shoulder', Middle Low German [schulder]{.lex lang=mlg} 'shoulder', and Old High German [_scultra_]{.iv lang=ohg sort=scultra role=comparison_form} 'shoulder', [_scultirra_]{.iv lang=ohg sort=scultirra role=comparison_form} 'shoulder' [@Orel2003, 345]. Kroonen reconstructs [_\*skuldra-_]{.iv lang=pgmc sort=skuldra role=source_protoform}, a masculine a-stem, and derives the Old High German feminine forms from [_\*skuldrjōn-_]{.iv lang=pgmc sort=skuldrjon role=source_protoform} [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [[skuldru]{.recon} 'shoulder']{.iv lang=pwgmc sort=skuldru role=comparison_form}** for the Old English branch [@RingeTaylor2014, 142].
 
 These forms imply different stem classes and different expectations for the Old English inflection. The question is which inflectional cell best aligns with the Old English evidence.
 
@@ -9555,7 +9555,7 @@ The ordinary Old English headword is [_sculdor_]{.iv lang=oe sort=sculdor role=c
 
 Bosworth-Toller's Supplement records a weak-feminine [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} 'shoulder', an [@BosworthToller1898, 699], so [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} 'shoulder' belongs to the Old English record beside the stronger masculine paradigm headed by [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} 'shoulder'. Brunner and Luick also record later spellings such as [_sceoldor_]{.iv lang=oe sort=sceoldor role=comparison_form} 'shoulder' and the i-mutated dative plural [_scyldrum_]{.iv lang=oe sort=scyldrum role=comparison_form} 'shoulder', which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
-The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural **[[sċuldrum]{.lex lang=oe} 'shoulder (dat.pl.)']{.iv lang=oe sort=sculdrum role=target_form} 'shoulder'**. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
+The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural [_sċuldrum_]{.iv lang=oe sort=sculdrum role=target_form} 'shoulder (dat.pl.)'. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
 
 #### Development to Old English
 
@@ -9571,7 +9571,7 @@ A paradigm comparison identifies the Proto-Germanic inflectional cell that corre
 | :--- | :--- | :--- | :--- | :--- |
 | singular-oriented citation input | [_\*skúldrō_]{.iv lang=pgmc sort=skuldro role=comparison_form} | probe output: [_sċoldor_]{.iv lang=oe sort=scoldor role=regular_output} | [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} 'shoulder' | fails: the singular output has root _o_, not the attested _u_ |
 | serious plural-based singular alternative | [_\*skúldru_]{.iv lang=pwgmc sort=skuldru role=comparison_form} | probe output: [_sċuldor_]{.iv lang=oe sort=sculdor role=regular_output} | [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form} 'shoulder' | close formally, but it compares a plural-stage input with a singular form |
-| dat./inst.pl. input | [[skúldramiz]{.recon} 'shoulder']{.iv lang=pgmc sort=skuldramiz role=selected_input} | regular output: [[sċuldrum]{.lex lang=oe} 'shoulder (dat.pl.)']{.iv lang=oe sort=sculdrum role=target_form} 'shoulder' | [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form} 'shoulder' | matches both the output and the dative plural comparison form |
+| dat./inst.pl. input | [[skúldramiz]{.recon} 'shoulder']{.iv lang=pgmc sort=skuldramiz role=selected_input} | regular output: [_sċuldrum_]{.iv lang=oe sort=sculdrum role=target_form} 'shoulder (dat.pl.)' | [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form} 'shoulder' | matches both the output and the dative plural comparison form |
 | later weak-feminine singular | — | OE [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} 'shoulder' | [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form} 'shoulder' | secondary doublet, useful as a control rather than the inherited target |
 
 The dative plural line is decisive because it matches both the output and the paradigm cell of Old English [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form} 'shoulder'. Singular-oriented candidates either lower the root vowel or compare unlike cells.
@@ -9637,7 +9637,7 @@ uses the singular preterite [[skáub]{.recon} ‘shove’]{.iv lang=pgmc sort=sk
 The ordinary dictionary verb is [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form} 'shove'/[_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form} 'shove', but the preterite itself is
 well attested. Bright gives the principal parts [_scufan_]{.iv lang=oe sort=scufan role=comparison_form} 'shove', [_sceaf_]{.iv lang=oe sort=sceaf role=comparison_form} 'shove', [_scufon_]{.iv lang=oe sort=scufon role=comparison_form} 'shove', [_scofen_]{.iv lang=oe sort=scofen role=comparison_form} 'shove'
 [@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
-The normalized form here is [[sċēaf]{.lex lang=oe} 'sheaf']{.iv lang=oe sort=sceaf role=target_form} 'shove',
+The normalized form here is [sċēaf]{.iv lang=oe sort=sceaf role=target_form} 'sheaf',
 regularizing the attested spellings [_sceaf_]{.iv lang=oe sort=sceaf role=comparison_form} 'shove' and prefixed [_āsceaf_]{.iv lang=oe sort=asceaf role=comparison_form} 'shove'.
 
 #### Development to Old English
@@ -9656,7 +9656,7 @@ below is manual.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | [_\*skéubaną_]{.iv lang=pgmc sort=skeubana role=source_protoform} | inherited infinitive line [_sċēofan_]{.iv lang=oe sort=sceofan role=comparison_form}; present system also leveled [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form} 'shove' | [_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form} 'shove' / [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form} 'shove' | necessary background, but not the comparison used for [sċēaf]{.lex lang=oe} 'sheaf' |
-| 1/3 sg. preterite | [_\*skáub_]{.iv lang=pgmc sort=skaub role=selected_input} | documented regular output: [[sċēaf]{.lex lang=oe} 'sheaf']{.iv lang=oe sort=sceaf role=regular_output} 'shove' | [[sċēaf]{.lex lang=oe} 'sheaf']{.iv lang=oe sort=sceaf role=target_form} 'shove' | direct match for the singular preterite |
+| 1/3 sg. preterite | [_\*skáub_]{.iv lang=pgmc sort=skaub role=selected_input} | documented regular output: [sċēaf]{.iv lang=oe sort=sceaf role=regular_output} 'sheaf' | [sċēaf]{.iv lang=oe sort=sceaf role=target_form} 'sheaf' | direct match for the singular preterite |
 | preterite plural | [_\*skúbun_]{.iv lang=pgmc sort=skubun role=comparison_form} | later leveled plural [_scufon_]{.iv lang=oe sort=scufon role=comparison_form} 'shove' beside expected [_sċufun_]{.iv lang=oe sort=scufun role=comparison_form} under the corrected cascade | [_scufon_]{.iv lang=oe sort=scufon role=comparison_form} 'shove' | poorer comparison for the singular-preterite target |
 | past participle | [_\*skúbanaz_]{.iv lang=pgmc sort=skubanaz role=comparison_form} | attested participial line [_scofen_]{.iv lang=oe sort=scofen role=comparison_form} 'shove' | [_scofen_]{.iv lang=oe sort=scofen role=comparison_form} 'shove' | valid alternative cell, but not the form compared here |
 
@@ -9968,7 +9968,7 @@ Old English form: _macaþ_
 Kroonen derives the Old English verb from
 [_\*makōjan-_]{.iv lang=pgmc sort=makojan role=source_protoform} on the
 make-family base _\*maka-_ [@Kroonen2013, 350]. Ringe and Taylor likewise derive
-Old English [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form} 'make' from
+Old English [macian]{.iv lang=oe sort=macian role=comparison_form} 'make' from
 PWGmc [makon]{.recon} 'make' through [mekojan]{.recon} 'make'
 [@RingeTaylor2014, 191].
 
@@ -9977,9 +9977,8 @@ same family, not the citation form of the verb.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the verb as [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form}
-'make' [@ClarkHall1960, 193]. The relevant comparison form here is normalized
-present-third-singular [[macaþ]{.lex lang=oe} 'makes']{.iv lang=oe sort=macath role=target_form} 'makes',
+Clark Hall lemmatizes the verb as [macian]{.iv lang=oe sort=macian role=comparison_form} 'make' [@ClarkHall1960, 193]. The relevant comparison form here is normalized
+present-third-singular [macaþ]{.iv lang=oe sort=macath role=target_form} 'makes',
 set beside the dictionary headword and the related imperative singular
 [_maca_]{.iv lang=oe sort=maca role=comparison_form} 'make'.
 
@@ -10006,8 +10005,8 @@ make-family lemma and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*makōjaną_]{.iv lang=pgmc sort=makojana role=source_protoform} | dictionary headword [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form} 'make' | [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form} 'make' | family background, but not the cell compared here |
-| 3sg present | [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=selected_input} | regular output [[macaþ]{.lex lang=oe} 'makes']{.iv lang=oe sort=macath role=regular_output} 'makes' | [[macaþ]{.lex lang=oe} 'makes']{.iv lang=oe sort=macath role=target_form} 'makes' | exact match |
+| lexeme-level infinitive | [_\*makōjaną_]{.iv lang=pgmc sort=makojana role=source_protoform} | dictionary headword [macian]{.iv lang=oe sort=macian role=comparison_form} 'make' | [macian]{.iv lang=oe sort=macian role=comparison_form} 'make' | family background, but not the cell compared here |
+| 3sg present | [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=selected_input} | regular output [macaþ]{.iv lang=oe sort=macath role=regular_output} 'makes' | [macaþ]{.iv lang=oe sort=macath role=target_form} 'makes' | exact match |
 | imperative singular companion | [_\*mákô_]{.iv lang=pgmc sort=mako role=comparison_form} | related finite form [_maca_]{.iv lang=oe sort=maca role=comparison_form} 'make' | [_maca_]{.iv lang=oe sort=maca role=comparison_form} 'make' | useful control, but not the target |
 
 ### bore (iptv.2sg) — OE _bora_
@@ -11053,7 +11052,7 @@ The form followed here, _\*stébnō_, used in earlier versions of this entry was
 | [_stefna_]{.iv lang=oe sort=stefna role=comparison_form} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
 | [_stofn_]{.iv lang=oe sort=stofn role=comparison_form} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
 | [_stemn_]{.iv lang=oe sort=stemn role=comparison_form} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
-| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not appear in this entry** |
+| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not be used as row 2216's derivational input** |
 
 ### fire — OE _fȳre_
 
@@ -11685,7 +11684,7 @@ Old English form: _wull_
 The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
 history of West Germanic, stressed _u_ lowers before a following non-high vowel,
 so the regular Old English outcome is an _o_-form. Campbell's discussion of the
-parallel adjective _full_, with OHG [foll]{.lex lang=dutch} 'full' as the regular comparator, shows that
+parallel adjective _full_, with OHG [foll]{.lex lang=ohg} 'full' as the regular comparator, shows that
 the handbooks treat this as a genuine exception cluster rather than as a place
 where the rule itself is doubtful [@Campbell1959, §115].
 

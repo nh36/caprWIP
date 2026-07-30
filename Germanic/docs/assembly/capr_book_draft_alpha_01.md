@@ -42,7 +42,7 @@ Within these limits a successful derivation has three senses. It succeeds formal
 
 Regular sound change makes irregularity legible. If an inherited form refuses to pass through an otherwise successful cascade, the mismatch demands a name. Analogy may have replaced the expected reflex with a form drawn from another paradigm cell. Borrowing may have introduced the word after the relevant changes. A dialectal form may lie outside the modeled West Saxon path. The target may be late, corrupt, or normalized beyond what the manuscript evidence warrants. Finally, either the reconstruction or the rule may be wrong.
 
-These possibilities should not be suppressed by narrow, lexeme-specific “sound laws.” A system that derives every target by multiplying exceptions has only encoded its answers. I instead distinguish several classes of non-regular result: attested variants, early and late analogy, reconstructed Old English comparators, known but unmodeled remodeling, and unexplained exceptions. The categories are claims, not housekeeping labels. They identify where regular phonology ends and what additional history the evidence requires.
+These possibilities should not be suppressed by narrow, lexeme-specific “sound laws.” A system that derives every target by multiplying exceptions has only encoded its answers. I instead distinguish several classes of non-regular result: attested variants, early and late analogy, reconstructed Old English comparators, known but unmodelled phonological and morphological developments, and unexplained exceptions. The categories are claims, not housekeeping labels. They identify where regular phonology ends and what additional history the evidence requires.
 
 This treatment follows the original Burmish CAPR work, in which resistant forms often disclosed loans or mistaken cognate assignments. Old English shifts the balance toward morphology and analogy, but the methodological advantage remains the same. Failure concentrates inquiry. It tells us which assumption—input, target, environment, order, or lexical history—must bear the explanation.
 
@@ -12404,7 +12404,7 @@ Old English form: _sċuldrum_
 
 #### Reconstruction and comparative evidence
 
-The handbooks do not agree on the reconstruction of the Germanic word. Orel gives _\*skuldr(j)ō_ as a feminine ō-/jō-stem and explicitly notes that Old English [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder' is masculine beside OFrisian [_skulder_]{.iv lang=ofris sort=skulder role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder', Middle Low German [schulder]{.lex lang=german} 'shoulder', and Old High German [_scultra_]{.iv lang=ohg sort=scultra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder', [_scultirra_]{.iv lang=ohg sort=scultirra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder' [@Orel2003, 345]. Kroonen reconstructs [_\*skuldra-_]{.iv lang=pgmc sort=skuldra role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"}, a masculine a-stem, and derives the Old High German feminine forms from [_\*skuldrjōn-_]{.iv lang=pgmc sort=skuldrjon role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [[skuldru]{.recon} 'shoulder']{.iv lang=pwgmc sort=skuldru role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"}** for the Old English branch [@RingeTaylor2014, 142].
+The handbooks do not agree on the reconstruction of the Germanic word. Orel gives _\*skuldr(j)ō_ as a feminine ō-/jō-stem and explicitly notes that Old English [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder' is masculine beside OFrisian [_skulder_]{.iv lang=ofris sort=skulder role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder', Middle Low German [schulder]{.lex lang=mlg} 'shoulder', and Old High German [_scultra_]{.iv lang=ohg sort=scultra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder', [_scultirra_]{.iv lang=ohg sort=scultirra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} 'shoulder' [@Orel2003, 345]. Kroonen reconstructs [_\*skuldra-_]{.iv lang=pgmc sort=skuldra role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"}, a masculine a-stem, and derives the Old High German feminine forms from [_\*skuldrjōn-_]{.iv lang=pgmc sort=skuldrjon role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"} [@Kroonen2013, 478]. Ringe and Taylor cite **PWGmc [[skuldru]{.recon} 'shoulder']{.iv lang=pwgmc sort=skuldru role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9546"}** for the Old English branch [@RingeTaylor2014, 142].
 
 These forms imply different stem classes and different expectations for the Old English inflection. The question is which inflectional cell best aligns with the Old English evidence.
 
@@ -12416,7 +12416,7 @@ The ordinary Old English headword is [_sculdor_]{.iv lang=oe sort=sculdor role=c
 
 Bosworth-Toller's Supplement records a weak-feminine [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9556"} 'shoulder', an [@BosworthToller1898, 699], so [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9556"} 'shoulder' belongs to the Old English record beside the stronger masculine paradigm headed by [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9556"} 'shoulder'. Brunner and Luick also record later spellings such as [_sceoldor_]{.iv lang=oe sort=sceoldor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9556"} 'shoulder' and the i-mutated dative plural [_scyldrum_]{.iv lang=oe sort=scyldrum role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9556"} 'shoulder', which reflect secondary phonological and analogical reshaping within Old English [@SieversBrunner1965, §92.2.a; @Luick1914, 230].
 
-The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural **[[sċuldrum]{.lex lang=oe} 'shoulder (dat.pl.)']{.iv lang=oe sort=sculdrum role=target_form} 'shoulder'**. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
+The singular and plural evidence point to different parts of the paradigm. The relevant comparison form here is the attested dative plural [_sċuldrum_]{.iv lang=oe sort=sculdrum role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9558"} 'shoulder (dat.pl.)'. The spelling with _sċ-_ is a normalized representation of the same Old English initial cluster.
 
 #### Development to Old English
 
@@ -12432,7 +12432,7 @@ A paradigm comparison identifies the Proto-Germanic inflectional cell that corre
 | :--- | :--- | :--- | :--- | :--- |
 | singular-oriented citation input | [_\*skúldrō_]{.iv lang=pgmc sort=skuldro role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9572"} | probe output: [_sċoldor_]{.iv lang=oe sort=scoldor role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9572"} | [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9572"} 'shoulder' | fails: the singular output has root _o_, not the attested _u_ |
 | serious plural-based singular alternative | [_\*skúldru_]{.iv lang=pwgmc sort=skuldru role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9573"} | probe output: [_sċuldor_]{.iv lang=oe sort=sculdor role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9573"} | [_sculdor_]{.iv lang=oe sort=sculdor role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9573"} 'shoulder' | close formally, but it compares a plural-stage input with a singular form |
-| dat./inst.pl. input | [[skúldramiz]{.recon} 'shoulder']{.iv lang=pgmc sort=skuldramiz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9574"} | regular output: [[sċuldrum]{.lex lang=oe} 'shoulder (dat.pl.)']{.iv lang=oe sort=sculdrum role=target_form} 'shoulder' | [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9574"} 'shoulder' | matches both the output and the dative plural comparison form |
+| dat./inst.pl. input | [[skúldramiz]{.recon} 'shoulder']{.iv lang=pgmc sort=skuldramiz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9574"} | regular output: [_sċuldrum_]{.iv lang=oe sort=sculdrum role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9574"} 'shoulder (dat.pl.)' | [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9574"} 'shoulder' | matches both the output and the dative plural comparison form |
 | later weak-feminine singular | — | OE [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9575"} 'shoulder' | [_sculdra_]{.iv lang=oe sort=sculdra role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9575"} 'shoulder' | secondary doublet, useful as a control rather than the inherited target |
 
 The dative plural line is decisive because it matches both the output and the paradigm cell of Old English [_sculdrum_]{.iv lang=oe sort=sculdrum role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9577"} 'shoulder'. Singular-oriented candidates either lower the root vowel or compare unlike cells.
@@ -12502,7 +12502,7 @@ uses the singular preterite [[skáub]{.recon} ‘shove’]{.iv lang=pgmc sort=sk
 The ordinary dictionary verb is [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9637"} 'shove'/[_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9637"} 'shove', but the preterite itself is
 well attested. Bright gives the principal parts [_scufan_]{.iv lang=oe sort=scufan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9638"} 'shove', [_sceaf_]{.iv lang=oe sort=sceaf role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9638"} 'shove', [_scufon_]{.iv lang=oe sort=scufon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9638"} 'shove', [_scofen_]{.iv lang=oe sort=scofen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9638"} 'shove'
 [@BrightCassidyRingler1971, 347]. Sweet gives the same paradigm [@Sweet1953, 29].
-The normalized form here is [[sċēaf]{.lex lang=oe} 'sheaf']{.iv lang=oe sort=sceaf role=target_form} 'shove',
+The normalized form here is [sċēaf]{.iv lang=oe sort=sceaf role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9640"} 'sheaf',
 regularizing the attested spellings [_sceaf_]{.iv lang=oe sort=sceaf role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9641"} 'shove' and prefixed [_āsceaf_]{.iv lang=oe sort=asceaf role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9641"} 'shove'.
 
 #### Development to Old English
@@ -12521,7 +12521,7 @@ below is manual.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | citation infinitive | [_\*skéubaną_]{.iv lang=pgmc sort=skeubana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9658"} | inherited infinitive line [_sċēofan_]{.iv lang=oe sort=sceofan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9658"}; present system also leveled [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9658"} 'shove' | [_scēofan_]{.iv lang=oe sort=sceofan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9658"} 'shove' / [_scūfan_]{.iv lang=oe sort=scufan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9658"} 'shove' | necessary background, but not the comparison used for [sċēaf]{.lex lang=oe} 'sheaf' |
-| 1/3 sg. preterite | [_\*skáub_]{.iv lang=pgmc sort=skaub role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9659"} | documented regular output: [[sċēaf]{.lex lang=oe} 'sheaf']{.iv lang=oe sort=sceaf role=regular_output} 'shove' | [[sċēaf]{.lex lang=oe} 'sheaf']{.iv lang=oe sort=sceaf role=target_form} 'shove' | direct match for the singular preterite |
+| 1/3 sg. preterite | [_\*skáub_]{.iv lang=pgmc sort=skaub role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9659"} | documented regular output: [sċēaf]{.iv lang=oe sort=sceaf role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9659"} 'sheaf' | [sċēaf]{.iv lang=oe sort=sceaf role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9659"} 'sheaf' | direct match for the singular preterite |
 | preterite plural | [_\*skúbun_]{.iv lang=pgmc sort=skubun role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9660"} | later leveled plural [_scufon_]{.iv lang=oe sort=scufon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9660"} 'shove' beside expected [_sċufun_]{.iv lang=oe sort=scufun role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9660"} under the corrected cascade | [_scufon_]{.iv lang=oe sort=scufon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9660"} 'shove' | poorer comparison for the singular-preterite target |
 | past participle | [_\*skúbanaz_]{.iv lang=pgmc sort=skubanaz role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9661"} | attested participial line [_scofen_]{.iv lang=oe sort=scofen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9661"} 'shove' | [_scofen_]{.iv lang=oe sort=scofen role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9661"} 'shove' | valid alternative cell, but not the form compared here |
 
@@ -12849,7 +12849,7 @@ Old English form: _macaþ_
 Kroonen derives the Old English verb from
 [_\*makōjan-_]{.iv lang=pgmc sort=makojan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9969"} on the
 make-family base _\*maka-_ [@Kroonen2013, 350]. Ringe and Taylor likewise derive
-Old English [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form} 'make' from
+Old English [macian]{.iv lang=oe sort=macian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9971"} 'make' from
 PWGmc [makon]{.recon} 'make' through [mekojan]{.recon} 'make'
 [@RingeTaylor2014, 191].
 
@@ -12858,11 +12858,10 @@ same family, not the citation form of the verb.
 
 #### Old English evidence
 
-Clark Hall lemmatizes the verb as [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form}
-'make' [@ClarkHall1960, 193]. The relevant comparison form here is normalized
-present-third-singular [[macaþ]{.lex lang=oe} 'makes']{.iv lang=oe sort=macath role=target_form} 'makes',
+Clark Hall lemmatizes the verb as [macian]{.iv lang=oe sort=macian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9980"} 'make' [@ClarkHall1960, 193]. The relevant comparison form here is normalized
+present-third-singular [macaþ]{.iv lang=oe sort=macath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9981"} 'makes',
 set beside the dictionary headword and the related imperative singular
-[_maca_]{.iv lang=oe sort=maca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9984"} 'make'.
+[_maca_]{.iv lang=oe sort=maca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:9983"} 'make'.
 
 Campbell's class-II paradigm gives ordinary 3sg ending _-aþ_, while his
 dialect survey allows secondary _-e-_ spellings in some traditions
@@ -12887,9 +12886,9 @@ make-family lemma and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*makōjaną_]{.iv lang=pgmc sort=makojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10009"} | dictionary headword [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form} 'make' | [[macian]{.lex lang=oe} 'make']{.iv lang=oe sort=macian role=comparison_form} 'make' | family background, but not the cell compared here |
-| 3sg present | [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10010"} | regular output [[macaþ]{.lex lang=oe} 'makes']{.iv lang=oe sort=macath role=regular_output} 'makes' | [[macaþ]{.lex lang=oe} 'makes']{.iv lang=oe sort=macath role=target_form} 'makes' | exact match |
-| imperative singular companion | [_\*mákô_]{.iv lang=pgmc sort=mako role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10011"} | related finite form [_maca_]{.iv lang=oe sort=maca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10011"} 'make' | [_maca_]{.iv lang=oe sort=maca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10011"} 'make' | useful control, but not the target |
+| lexeme-level infinitive | [_\*makōjaną_]{.iv lang=pgmc sort=makojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10008"} | dictionary headword [macian]{.iv lang=oe sort=macian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10008"} 'make' | [macian]{.iv lang=oe sort=macian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10008"} 'make' | family background, but not the cell compared here |
+| 3sg present | [_\*mákōθi_]{.iv lang=pgmc sort=makothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10009"} | regular output [macaþ]{.iv lang=oe sort=macath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10009"} 'makes' | [macaþ]{.iv lang=oe sort=macath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10009"} 'makes' | exact match |
+| imperative singular companion | [_\*mákô_]{.iv lang=pgmc sort=mako role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10010"} | related finite form [_maca_]{.iv lang=oe sort=maca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10010"} 'make' | [_maca_]{.iv lang=oe sort=maca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10010"} 'make' | useful control, but not the target |
 
 ### bore (iptv.2sg) — OE _bora_
 
@@ -12981,9 +12980,9 @@ from the bore-family lemma and from the companion 3sg form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*burōjaną_]{.iv lang=pgmc sort=burojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10099"} | dictionary headword [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10099"} | [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10099"} | family background, but not the cell compared here |
-| imperative singular | [_\*búrô_]{.iv lang=pgmc sort=buro role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10100"} | regular output [_bora_]{.iv lang=oe sort=bora role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10100"} 'bore' | [_bora_]{.iv lang=oe sort=bora role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10100"} 'bore' | exact match |
-| 3sg present companion | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10101"} | related finite form [_boraþ_]{.iv lang=oe sort=borath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10101"} 'bores' | [_boraþ_]{.iv lang=oe sort=borath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10101"} 'bores' | useful control, but not the target |
+| lexeme-level infinitive | [_\*burōjaną_]{.iv lang=pgmc sort=burojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10098"} | dictionary headword [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10098"} | [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10098"} | family background, but not the cell compared here |
+| imperative singular | [_\*búrô_]{.iv lang=pgmc sort=buro role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10099"} | regular output [_bora_]{.iv lang=oe sort=bora role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10099"} 'bore' | [_bora_]{.iv lang=oe sort=bora role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10099"} 'bore' | exact match |
+| 3sg present companion | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10100"} | related finite form [_boraþ_]{.iv lang=oe sort=borath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10100"} 'bores' | [_boraþ_]{.iv lang=oe sort=borath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10100"} 'bores' | useful control, but not the target |
 
 ### bore (3sg) — OE _boraþ_
 
@@ -13077,9 +13076,9 @@ bore-family lemma and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*burōjaną_]{.iv lang=pgmc sort=burojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10191"} | dictionary headword [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10191"} | [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10191"} | family background, but not the cell compared here |
-| 3sg present | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10192"} | regular output [_boraþ_]{.iv lang=oe sort=borath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10192"} 'bores' | [_boraþ_]{.iv lang=oe sort=borath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10192"} 'bores' | exact match |
-| imperative singular companion | [_\*búrô_]{.iv lang=pgmc sort=buro role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10193"} | related finite form [_bora_]{.iv lang=oe sort=bora role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10193"} 'bore' | [_bora_]{.iv lang=oe sort=bora role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10193"} 'bore' | useful control, but not the target |
+| lexeme-level infinitive | [_\*burōjaną_]{.iv lang=pgmc sort=burojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10190"} | dictionary headword [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10190"} | [_borian_]{.iv lang=oe sort=borian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10190"} | family background, but not the cell compared here |
+| 3sg present | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10191"} | regular output [_boraþ_]{.iv lang=oe sort=borath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10191"} 'bores' | [_boraþ_]{.iv lang=oe sort=borath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10191"} 'bores' | exact match |
+| imperative singular companion | [_\*búrô_]{.iv lang=pgmc sort=buro role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10192"} | related finite form [_bora_]{.iv lang=oe sort=bora role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10192"} 'bore' | [_bora_]{.iv lang=oe sort=bora role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10192"} 'bore' | useful control, but not the target |
 
 ### learn (iptv.2sg) — OE _liorna_
 
@@ -13134,13 +13133,13 @@ Old English form: _liorna_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' and
-[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10245"} 'learn' from a learn-family base of the
+Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10243"} 'learn' and
+[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' from a learn-family base of the
 _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb
 as _\*liznōn-_ [@Kroonen2013, 380]. Fulk cites the same Old English family from
 _\*liznō-_ [@Fulk2018, 127].
 
-The derivational input [[líznô]{.recon} 'learn (iptv.2sg)']{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10250"} is a finite imperative
+The derivational input [[líznô]{.recon} 'learn (iptv.2sg)']{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10249"} is a finite imperative
 cell of that family, not the citation form of the verb.
 
 #### Old English evidence
@@ -13150,8 +13149,8 @@ Brunner explicitly records _leornian, nordh. auch liorna_, and Campbell notes
 Northumbrian forms with _io_ beside _leornian_
 [@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
 
-[_Liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10260"} can therefore be treated as an
-attested Northumbrian finite form, while [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10261"}
+[_Liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10259"} can therefore be treated as an
+attested Northumbrian finite form, while [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10260"}
 'learn' remains the better-known dictionary headword.
 
 #### Development to Old English
@@ -13173,9 +13172,9 @@ from the learn-family infinitive and from the companion 3sg form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} 'learn' | family background, but not the cell compared here |
-| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10284"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10284"} | [_liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10284"} | exact match |
-| 3sg present companion | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10285"} | related finite form [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10285"} | [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10285"} | useful control, but not the target |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10282"} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10282"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10282"} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10282"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10282"} 'learn' | family background, but not the cell compared here |
+| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} | [_liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10283"} | exact match |
+| 3sg present companion | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10284"} | related finite form [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10284"} | [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10284"} | useful control, but not the target |
 
 ### learn (3sg) — OE _liornaþ_
 
@@ -13232,11 +13231,11 @@ Old English form: _liornaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10338"} 'learn' and
-[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10339"} 'learn' from a learn-family base of the
+Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10337"} 'learn' and
+[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10338"} 'learn' from a learn-family base of the
 _\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb
 as _\*liznōn-_ [@Kroonen2013, 380]. The derivational input
-[[líznōθi]{.recon} 'learns']{.iv lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10342"} is the finite 3sg cell
+[[líznōθi]{.recon} 'learns']{.iv lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10341"} is the finite 3sg cell
 of that family, not the citation form of the verb.
 
 For the ending, Campbell's class-II _-aþ_ (< _-ōþi)_ and Ringe and Taylor's
@@ -13246,16 +13245,16 @@ the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 #### Old English evidence
 
 Clark Hall gives the ordinary headword as
-[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10352"} 'learn'
+[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10351"} 'learn'
 [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in _liorn-_,
-including [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10354"} 'learn' and
-[_liornes_]{.iv lang=oe sort=liornes role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10355"} 'learning', beside the
-West-Saxon-oriented [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10356"} tradition
+including [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10353"} 'learn' and
+[_liornes_]{.iv lang=oe sort=liornes role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10354"} 'learning', beside the
+West-Saxon-oriented [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10355"} tradition
 [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian
 forms with _io_ beside _leornian_ [@Campbell1959, §123 n. 2].
 
 The relevant comparison form here is the normalized 3sg
-[_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10361"} 'learns'. The directly cited
+[_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10360"} 'learns'. The directly cited
 Old English evidence supports the finite stem _liorn-_; the _-aþ_ ending
 follows the regular class-II 3sg pattern.
 
@@ -13278,9 +13277,9 @@ the learn-family infinitive and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} 'learn' | family background, but not the cell compared here |
-| 3sg present | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10385"} | regular output [_liornaþ_]{.iv lang=oe sort=liornath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10385"} 'learns' | [_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10385"} 'learns' | exact match |
-| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10386"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10386"} | [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10386"} | useful control, but not the target |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10383"} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10383"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10383"} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10383"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10383"} 'learn' | family background, but not the cell compared here |
+| 3sg present | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} | regular output [_liornaþ_]{.iv lang=oe sort=liornath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} 'learns' | [_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10384"} 'learns' | exact match |
+| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10385"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10385"} | [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10385"} | useful control, but not the target |
 
 ### lick (iptv.2sg) — OE _licca_
 
@@ -13334,7 +13333,7 @@ Old English form: _licca_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give PWGmc [ekkōn]{.recon} 'lick (3sg.)' continuing as Old English [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10436"} 'lick', Old Saxon [_likkon_]{.iv lang=os sort=likkon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10436"} 'lick', and Old High German [_lecchon_]{.iv lang=ohg sort=lecchon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10436"} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} 'lick']{.iv lang=pgmc sort=likkojanan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10436"} with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc [ekkōn]{.recon} 'lick (3sg.)' continuing as Old English [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10435"} 'lick', Old Saxon [_likkon_]{.iv lang=os sort=likkon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10435"} 'lick', and Old High German [_lecchon_]{.iv lang=ohg sort=lecchon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10435"} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} 'lick']{.iv lang=pgmc sort=likkojanan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10435"} with the same Old English continuation [@Orel2003, 285].
 
 Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The form treated here is therefore not that remodeled infinitive but a finite cell in bare trimoric _\*-ō_.
 
@@ -13342,7 +13341,7 @@ Campbell's weak class-II discussion gives present forms such as lufas, _-aþ_ (<
 
 Bosworth-Toller lemmatizes the verb as _liccian_ 'lick' [@BosworthToller1898, 614]. Campbell cites _liccian_ 'lick' among Old English forms with preserved geminate _cc_ [@Campbell1959, §398.1]. Brunner likewise cites _liccian_ 'lick' [@SieversBrunner1965, §45 Anm. 3]. The Old English evidence therefore establishes the verbal headword and its consonantal frame securely.
 
-The Old English form here in this entry is the imperative singular [_licca_]{.iv lang=oe sort=licca role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10444"} 'lick'. It is a paradigm form chosen beside the headword [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10444"} 'lick' and the related present [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10444"} 'licks', not a separately lemmatized citation word.
+The Old English form here in this entry is the imperative singular [_licca_]{.iv lang=oe sort=licca role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10443"} 'lick'. It is a paradigm form chosen beside the headword [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10443"} 'lick' and the related present [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10443"} 'licks', not a separately lemmatized citation word.
 
 #### Development to Old English
 
@@ -13354,9 +13353,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10456"} | regular output [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10456"} 'lick' | [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10456"} 'lick' | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular | [_\*líkkô_]{.iv lang=pgmc sort=likko role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10457"} | regular output [_licca_]{.iv lang=oe sort=licca role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10457"} 'lick' | [_licca_]{.iv lang=oe sort=licca role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10457"} 'lick' | exact match between the derivational input and the Old English form here |
-| present third singular companion | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10458"} | regular output [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10458"} | [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10458"} | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10455"} | regular output [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10455"} 'lick' | [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10455"} 'lick' | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular | [_\*líkkô_]{.iv lang=pgmc sort=likko role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10456"} | regular output [_licca_]{.iv lang=oe sort=licca role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10456"} 'lick' | [_licca_]{.iv lang=oe sort=licca role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10456"} 'lick' | exact match between the derivational input and the Old English form here |
+| present third singular companion | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10457"} | regular output [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10457"} | [_liccaþ_]{.iv lang=oe sort=liccath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10457"} | useful family control, but not the target of this entry |
 
 ### lick (3sg) — OE _liccaþ_
 
@@ -13412,7 +13411,7 @@ Old English form: _liccaþ_
 
 #### Reconstruction and comparative evidence
 
-Ringe and Taylor give PWGmc [ekkōn]{.recon} 'lick (3sg.)' continuing as Old English [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10510"} 'lick', Old Saxon [_likkon_]{.iv lang=os sort=likkon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10510"} 'lick', and Old High German [_lecchon_]{.iv lang=ohg sort=lecchon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10510"} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} 'lick']{.iv lang=pgmc sort=likkojanan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10510"} with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc [ekkōn]{.recon} 'lick (3sg.)' continuing as Old English [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10509"} 'lick', Old Saxon [_likkon_]{.iv lang=os sort=likkon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10509"} 'lick', and Old High German [_lecchon_]{.iv lang=ohg sort=lecchon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10509"} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} 'lick']{.iv lang=pgmc sort=likkojanan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10509"} with the same Old English continuation [@Orel2003, 285].
 
 The form compared here in this entry is the non-_j_ present third singular [líkkōθi]{.recon} 'licks', not the remodeled infinitive. Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80].
 
@@ -13420,11 +13419,11 @@ The form compared here in this entry is the non-_j_ present third singular [lík
 
 Bosworth-Toller lemmatizes the verb as _liccian_ 'lick' [@BosworthToller1898, 614]. The same consonantal frame appears in Campbell's and Brunner's grammatical citations of _liccian_ 'lick' [@Campbell1959, §398.1; @SieversBrunner1965, §45 Anm. 3]. The Old English headword is therefore clear even though the entry here is not about the citation form.
 
-The form treated here is the present third singular [_liccaþ_]{.iv lang=oe sort=liccath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10518"} 'licks'. It is a selected paradigm form beside the lemma [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10518"} 'lick' and the related imperative [_licca_]{.iv lang=oe sort=licca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10518"} 'lick', not a separately lemmatized headword.
+The form treated here is the present third singular [_liccaþ_]{.iv lang=oe sort=liccath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10517"} 'licks'. It is a selected paradigm form beside the lemma [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10517"} 'lick' and the related imperative [_licca_]{.iv lang=oe sort=licca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10517"} 'lick', not a separately lemmatized headword.
 
 #### Development to Old English
 
-[[líkkōθi]{.recon} 'licks']{.iv lang=pgmc sort=likkothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10522"} first loses final _-i_, giving [líkkōθ]{.recon} 'licks'. Campbell's class-II present endings lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ support the regular 3sg outcome _-aþ_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note stable _a_ in the class-II 2sg and 3sg [@RingeTaylor2014, 80]. Because this ending never contains _-j-_, the form does not pass through an i-umlauted _-eþ_ stage.
+[[líkkōθi]{.recon} 'licks']{.iv lang=pgmc sort=likkothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10521"} first loses final _-i_, giving [líkkōθ]{.recon} 'licks'. Campbell's class-II present endings lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ support the regular 3sg outcome _-aþ_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note stable _a_ in the class-II 2sg and 3sg [@RingeTaylor2014, 80]. Because this ending never contains _-j-_, the form does not pass through an i-umlauted _-eþ_ stage.
 
 #### Paradigm comparison
 
@@ -13432,9 +13431,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10530"} | regular output [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10530"} 'lick' | [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10530"} 'lick' | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular companion | [_\*líkkô_]{.iv lang=pgmc sort=likko role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10531"} | regular output [_licca_]{.iv lang=oe sort=licca role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10531"} 'lick' | [_licca_]{.iv lang=oe sort=licca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10531"} 'lick' | useful family control, but not the target of this entry |
-| present third singular | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10532"} | regular output [_liccaþ_]{.iv lang=oe sort=liccath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10532"} 'licks' | [_liccaþ_]{.iv lang=oe sort=liccath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10532"} 'licks' | exact match between the derivational input and the Old English form here |
+| lexeme-level infinitive | [_\*líkkōjaną_]{.iv lang=pgmc sort=likkojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10529"} | regular output [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10529"} 'lick' | [_liccian_]{.iv lang=oe sort=liccian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10529"} 'lick' | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | [_\*líkkô_]{.iv lang=pgmc sort=likko role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10530"} | regular output [_licca_]{.iv lang=oe sort=licca role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10530"} 'lick' | [_licca_]{.iv lang=oe sort=licca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10530"} 'lick' | useful family control, but not the target of this entry |
+| present third singular | [_\*líkkōθi_]{.iv lang=pgmc sort=likkothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10531"} | regular output [_liccaþ_]{.iv lang=oe sort=liccath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10531"} 'licks' | [_liccaþ_]{.iv lang=oe sort=liccath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10531"} 'licks' | exact match between the derivational input and the Old English form here |
 
 ### show (iptv.2sg) — OE _sċēawa_
 
@@ -13513,9 +13512,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} | regular output [_sċēawian_]{.iv lang=oe sort=sceawian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} | [_scēawian_]{.iv lang=oe sort=sceawian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} 'show' | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular | [_\*skáwô_]{.iv lang=pgmc sort=skawo source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} | regular output [_sċēawa_]{.iv lang=oe sort=sceawa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} 'show' | [_scēawa_]{.iv lang=oe sort=sceawa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} 'show' / normalized [_sċēawa_]{.iv lang=oe sort=sceawa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} 'show' | exact match between the derivational input and the Old English form here |
-| present third singular companion | [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10606"} | regular output [_sċēawaþ_]{.iv lang=oe sort=sceawath source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10606"} 'show' | [_sċēawaþ_]{.iv lang=oe sort=sceawath source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10606"} 'show' | useful family control, but not the target of this entry |
+| lexeme-level infinitive | [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10603"} | regular output [_sċēawian_]{.iv lang=oe sort=sceawian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10603"} | [_scēawian_]{.iv lang=oe sort=sceawian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10603"} 'show' | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular | [_\*skáwô_]{.iv lang=pgmc sort=skawo source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} | regular output [_sċēawa_]{.iv lang=oe sort=sceawa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} 'show' | [_scēawa_]{.iv lang=oe sort=sceawa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} 'show' / normalized [_sċēawa_]{.iv lang=oe sort=sceawa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10604"} 'show' | exact match between the derivational input and the Old English form here |
+| present third singular companion | [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} | regular output [_sċēawaþ_]{.iv lang=oe sort=sceawath source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} 'show' | [_sċēawaþ_]{.iv lang=oe sort=sceawath source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10605"} 'show' | useful family control, but not the target of this entry |
 
 ### show (3sg) — OE _sċēawaþ_
 
@@ -13573,19 +13572,19 @@ Old English form: _sċēawaþ_
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as [[skawōjanan]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawojanan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10660"} and cites Old English [_sceáwian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10660"} 'show' beside Old Frisian [_skawia_]{.iv lang=ofris sort=skawia role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10660"} 'show', Old Saxon [_skawōn_]{.iv lang=os sort=skawon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10660"} 'show', and Old High German [_scouwōn_]{.iv lang=ohg sort=scouwon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10660"} 'show' [@Orel2003, 337]. The derivational input in this entry is the present third singular [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10660"}, a finite class-II cell with stable _a_ in the 3sg ending [@RingeTaylor2014, 80].
+Orel reconstructs the verb as [[skawōjanan]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawojanan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10659"} and cites Old English [_sceáwian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10659"} 'show' beside Old Frisian [_skawia_]{.iv lang=ofris sort=skawia role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10659"} 'show', Old Saxon [_skawōn_]{.iv lang=os sort=skawon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10659"} 'show', and Old High German [_scouwōn_]{.iv lang=ohg sort=scouwon role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10659"} 'show' [@Orel2003, 337]. The derivational input in this entry is the present third singular [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10659"}, a finite class-II cell with stable _a_ in the 3sg ending [@RingeTaylor2014, 80].
 
 Campbell states the class-II present endings as lufas, _-aþ_ (< _-ōsi_, _-ōþi)_ [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. _-as(t)_ and 3sg. _-aþ_ have stable _a_ [@RingeTaylor2014, 80]. The relevant comparison is therefore the 3sg cell itself, not an i-umlauted alternative.
 
 #### Old English evidence
 
-Bright lists the simplex headword [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10666"} 'show' and the imperative [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10666"} 'show', and under _geond-scēawian_ 'survey' also records a third singular _sceawað_ 'show' [@BrightCassidyRingler1971, 383]. The evidence thus establishes the _scēaw-_ / _sceawað_ finite-cell pattern directly.
+Bright lists the simplex headword [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10665"} 'show' and the imperative [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10665"} 'show', and under _geond-scēawian_ 'survey' also records a third singular _sceawað_ 'show' [@BrightCassidyRingler1971, 383]. The evidence thus establishes the _scēaw-_ / _sceawað_ finite-cell pattern directly.
 
-The form written here as [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10668"} 'shows' is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested _scēaw-_ evidence and the directly cited _sceawað_ 'show' ending pattern.
+The form written here as [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10667"} 'shows' is the normalized simplex comparison form for that weak class-II pattern. It is therefore not a dictionary headword but a finite comparison form aligned with the attested _scēaw-_ evidence and the directly cited _sceawað_ 'show' ending pattern.
 
 #### Development to Old English
 
-Campbell lists [_scéawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10672"} 'show' under the same West Germanic [auw]{.recon} ‘show (3sg)’ development [@Campbell1959, §120]. [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10672"} therefore belongs to the _scēaw-_ family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-_a_ discussion show that the class-II 3sg ending gives _-aþ_, not _-eþ_ [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains _-j-_, no i-umlaut applies.
+Campbell lists [_scéawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10671"} 'show' under the same West Germanic [auw]{.recon} ‘show (3sg)’ development [@Campbell1959, §120]. [[skáwōθi]{.recon} ‘show (3sg)’]{.iv lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10671"} therefore belongs to the _scēaw-_ family before the class-II 3sg ending is applied. Campbell's chronology and Ringe and Taylor's stable-_a_ discussion show that the class-II 3sg ending gives _-aþ_, not _-eþ_ [@Campbell1959, §356.4; @RingeTaylor2014, 80]. Because the ending never contains _-j-_, no i-umlaut applies.
 
 #### Paradigm comparison
 
@@ -13593,9 +13592,9 @@ The comparison below sets the relevant forms side by side.
 
 | PGmc cell / interpretation | Candidate input | Old English outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10680"} | regular output [_sċēawian_]{.iv lang=oe sort=sceawian role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10680"} | [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10680"} 'show' | ordinary dictionary headword of the verb, but not the finite form compared here |
-| imperative singular companion | [_\*skáwô_]{.iv lang=pgmc sort=skawo role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10681"} | regular output [_sċēawa_]{.iv lang=oe sort=sceawa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10681"} 'show' | [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10681"} 'show' | useful family control, but not the target of this entry |
-| present third singular | [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10682"} | regular output [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10682"} 'shows' | normalized [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10682"} 'shows'; source-side pattern _sceawað_ | exact match for the finite form compared here |
+| lexeme-level infinitive | [_\*skáwōjaną_]{.iv lang=pgmc sort=skawojana role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10679"} | regular output [_sċēawian_]{.iv lang=oe sort=sceawian role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10679"} | [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10679"} 'show' | ordinary dictionary headword of the verb, but not the finite form compared here |
+| imperative singular companion | [_\*skáwô_]{.iv lang=pgmc sort=skawo role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10680"} | regular output [_sċēawa_]{.iv lang=oe sort=sceawa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10680"} 'show' | [_scēawa_]{.iv lang=oe sort=sceawa role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10680"} 'show' | useful family control, but not the target of this entry |
+| present third singular | [_\*skáwōθi_]{.iv lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10681"} | regular output [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10681"} 'shows' | normalized [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10681"} 'shows'; source-side pattern _sceawað_ | exact match for the finite form compared here |
 
 \clearpage
 
@@ -13694,9 +13693,9 @@ different: if the voiced weak-noun branch is the one to be represented, then
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [_\*knúbbô_ > _\*cnobba_]{.iv lang=oe display=*cnobba sort=cnobba source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10777"} | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
-| [_cnopp_]{.iv lang=oe sort=cnopp source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10778"} / [_cnoppa_]{.iv lang=oe sort=cnoppa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10778"} | attested OE branch | important control form, but belongs to the voiceless branch |
-| [_cnæp_]{.iv lang=oe sort=cnaep source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10779"} | attested OE form from another family | not part of the present lexeme line |
+| [_\*knúbbô_ > _\*cnobba_]{.iv lang=oe display=*cnobba sort=cnobba source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10776"} | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
+| [_cnopp_]{.iv lang=oe sort=cnopp source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10777"} / [_cnoppa_]{.iv lang=oe sort=cnoppa source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10777"} | attested OE branch | important control form, but belongs to the voiceless branch |
+| [_cnæp_]{.iv lang=oe sort=cnaep source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10778"} | attested OE form from another family | not part of the present lexeme line |
 
 This remains the most review-sensitive item here, because the choice between
 reconstructed [cnobba]{.recon} ‘knob’ and attested [cnoppa]{.lex lang=oe} 'knob' is still a comparator-policy
@@ -13758,33 +13757,33 @@ Old English form: _\*rēac_
 
 #### Reconstruction and comparative evidence
 
-The wider noun family is represented by [[ráukiz]{.recon} ‘reek’]{.iv lang=pgmc sort=raukiz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10837"} / [_\*rauki-_]{.iv lang=pgmc sort=rauki role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10837"}, with Old English
-[_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10838"} 'reek' as the attested noun reflex in the comparative dictionaries
-[@Kroonen2013, 446; @Orel2003, 338]. The derivational input [[ráukaz]{.recon} ‘reek’]{.iv lang=pgmc sort=raukaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10839"} is therefore not the
+The wider noun family is represented by [[ráukiz]{.recon} ‘reek’]{.iv lang=pgmc sort=raukiz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10836"} / [_\*rauki-_]{.iv lang=pgmc sort=rauki role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10836"}, with Old English
+[_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10837"} 'reek' as the attested noun reflex in the comparative dictionaries
+[@Kroonen2013, 446; @Orel2003, 338]. The derivational input [[ráukaz]{.recon} ‘reek’]{.iv lang=pgmc sort=raukaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10838"} is therefore not the
 lexeme-level headword, but the form used here for the Old English derivation.
 
 #### Old English evidence
 
-The attested noun is [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10844"} 'reek', not [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10844"}. Clark Hall records [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10844"} 'reek' as the noun
-and also preserves related forms such as [_rēcels_]{.iv lang=oe sort=recels role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10845"} 'incense'; Kroonen likewise gives OE
-[_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10846"} 'reek' under the noun family [@ClarkHall1960, 255; @Kroonen2013, 446]. Clark
-Hall and Seebold also record verbal [_rēac_]{.iv lang=oe sort=reac role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10847"} 'reek' as the preterite of [_rēocan_]{.iv lang=oe sort=reocan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10847"} 'reek', but
+The attested noun is [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10843"} 'reek', not [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10843"}. Clark Hall records [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10843"} 'reek' as the noun
+and also preserves related forms such as [_rēcels_]{.iv lang=oe sort=recels role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10844"} 'incense'; Kroonen likewise gives OE
+[_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10845"} 'reek' under the noun family [@ClarkHall1960, 255; @Kroonen2013, 446]. Clark
+Hall and Seebold also record verbal [_rēac_]{.iv lang=oe sort=reac role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10846"} 'reek' as the preterite of [_rēocan_]{.iv lang=oe sort=reocan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10846"} 'reek', but
 that verbal form is separate from the noun treated here [@ClarkHall1960, 254;
 @Seebold1970, 380].
 
-The Old English form here [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10851"} is therefore a reconstructed West Saxon noun form,
+The Old English form here [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10850"} is therefore a reconstructed West Saxon noun form,
 not a directly attested manuscript headword.
 
 #### Development to Old English
 
-From [[ráukaz]{.recon} 'reek']{.iv lang=pgmc sort=raukaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10856"}, the regular West Saxon development gives [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10856"}. The attested
-noun [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10857"} 'reek' belongs to the same lexical family, but reflects a later smoothed
+From [[ráukaz]{.recon} 'reek']{.iv lang=pgmc sort=raukaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10855"}, the regular West Saxon development gives [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10855"}. The attested
+noun [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10856"} 'reek' belongs to the same lexical family, but reflects a later smoothed
 surface form rather than the regular noun target represented here.
 
 #### Form note
 
-The distinction here is between an attested noun headword [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10862"} 'reek' and a
-reconstructed regular West Saxon target [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10863"}. The latter is treated as the
+The distinction here is between an attested noun headword [_rēc_]{.iv lang=oe sort=rec role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10861"} 'reek' and a
+reconstructed regular West Saxon target [[rēac]{.recon} 'reek']{.iv lang=oe sort=reac role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10862"}. The latter is treated as the
 modelling target, while the former remains philological background.
 
 ### strew — OE _\*strīeġan_
@@ -13846,12 +13845,12 @@ Old English form: _\*strīeġan_
 #### Reconstruction and comparative evidence
 
 Kroonen cites the inherited weak verb as
-[_\*straujan-_]{.iv lang=pgmc sort=straujan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10922"} and gives Old
-English [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10923"} 'strew'
+[_\*straujan-_]{.iv lang=pgmc sort=straujan role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10921"} and gives Old
+English [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10922"} 'strew'
 as its dictionary continuation [@Kroonen2013, 483]. Ringe and Taylor separate
 the inherited class-I branch from the remodelled class-II branch: Anglian
-[_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10926"} 'strew' continues the
-inherited verb, while West Saxon [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10927"}
+[_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10925"} 'strew' continues the
+inherited verb, while West Saxon [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10926"}
 'strew' is remodelled [@RingeTaylor2014, §6.1 n. 27].
 
 Luick groups [strauwjan]{.recon} 'strew' with the same set as _\*hauwja-_ and
@@ -13867,7 +13866,7 @@ West Saxon citation forms are [strewian]{.lex lang=oe} 'strew', [streowian]{.lex
 belong to the remodelled class-II branch [@RingeTaylor2014, §6.1 n. 27;
 @Campbell1959, §753.7].
 
-The target [[strīeġan]{.recon} 'strew']{.iv lang=oe sort=striegan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10943"} is therefore a reconstructed Old English form, not
+The target [[strīeġan]{.recon} 'strew']{.iv lang=oe sort=striegan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10942"} is therefore a reconstructed Old English form, not
 an attested manuscript lemma. It represents the inferred West Saxon reflex of
 the inherited class-I branch.
 
@@ -13887,9 +13886,9 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10963"} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
-| [[strīeġan]{.recon} 'strew']{.iv lang=oe sort=striegan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10964"} | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
-| [_strewian_]{.iv lang=oe sort=strewian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10965"} / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10965"} 'strew' / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10965"} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
+| [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10962"} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
+| [[strīeġan]{.recon} 'strew']{.iv lang=oe sort=striegan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10963"} | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
+| [_strewian_]{.iv lang=oe sort=strewian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10964"} / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10964"} 'strew' / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10964"} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
 
 \clearpage
 
@@ -13909,11 +13908,11 @@ Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regula
 
 #### Reconstruction and comparative evidence
 
-Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10982"}
+Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10981"}
 'stem, trunk' (also variant [stamniz]{.recon} 'stem, trunk'), citing Old Norse
-[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10984"} 'stem of a ship',
-Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10985"} 'stem of a ship' (fem.),
-and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10986"} 'stem' as its
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10983"} 'stem of a ship',
+Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10984"} 'stem of a ship' (fem.),
+and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10985"} 'stem' as its
 main continuants [@Orel2003, 371].
 
 This word is etymologically unrelated to the Old English homonym
@@ -13930,26 +13929,26 @@ proto-form [@Kroonen2013, 479–480].
 
 #### Old English evidence
 
-Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11003"} 'stem, trunk, root, prow, foundation', the weak n-stem
-[_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11004"} 'prow or stern of a ship',
-and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11005"} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
+Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11002"} 'stem, trunk, root, prow, foundation', the weak n-stem
+[_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11003"} 'prow or stern of a ship',
+and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11004"} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
 
 Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
-Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11008"} 'stem' and Middle English _stam_ — from the
+Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11007"} 'stem' and Middle English _stam_ — from the
 separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
 _stefn, stemn Stamm_ among words showing the _fn_/_mn_ alternation [@SieversBrunner1965, §205].
 
-The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11012"} 'stem, trunk, root, prow', the form attested most directly in the semantic range
-relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11013"}
+The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11011"} 'stem, trunk, root, prow', the form attested most directly in the semantic range
+relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11012"}
 'prow/stern' is a closely related but more narrowly attested nautical specialization.
 
 #### Development to Old English
 
-The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11018"} 'stem, trunk'
-from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11019"} 'stem, trunk'
+The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11017"} 'stem, trunk'
+from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11018"} 'stem, trunk'
 involves a cluster change _mn → fn_ that is attested comparatively: Old Norse
-[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11021"} 'stem of a ship' and Old Saxon
-[_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11022"} 'stem' preserve the _fn_/_mn_ variants
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11020"} 'stem of a ship' and Old Saxon
+[_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11021"} 'stem' preserve the _fn_/_mn_ variants
 expected from this family. The precise phonological dating and domain of this change —
 whether it belongs to a North-West Germanic stage, an early West Germanic stage, or is
 reconstructed separately in each branch — is not definitively resolved by the cited
@@ -13970,7 +13969,7 @@ comparatively; the FST work remains to be done.
 Old English _stefn_/_stemn_ is a surface homonym for two etymologically unrelated words:
 
 1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a **different row** from 2216.
-2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11043"} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. **This is row 2216.**
+2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11042"} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. **This is row 2216.**
 
 The form followed here, _\*stébnō_, used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
 
@@ -13978,12 +13977,12 @@ The form followed here, _\*stébnō_, used in earlier versions of this entry was
 
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11051"} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
-| [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11052"} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
-| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11053"} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
-| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11054"} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
-| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11055"} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
-| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not appear in this entry** |
+| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11050"} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
+| [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11051"} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
+| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11052"} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
+| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11053"} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
+| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11054"} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
+| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not be used as row 2216's derivational input** |
 
 ### fire — OE _fȳre_
 
@@ -14041,17 +14040,17 @@ Old English form: _fȳre_
 
 Kroonen places the lexeme in a heteroclitic family [fōr]{.recon} 'fire' ~ _\*fun-_ and explains
 the front-mutated West Germanic forms from an oblique form of the
-_\*fu(w)eri_ type [@Kroonen2013, 151]. The derivational input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11111"} therefore does not
+_\*fu(w)eri_ type [@Kroonen2013, 151]. The derivational input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11110"} therefore does not
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the _i_ needed for i-umlaut.
 
 The Old English target combines a regular inherited form
-[_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11116"} 'fire' with an attested analogical surface form [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11116"} 'fire'.
+[_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11115"} 'fire' with an attested analogical surface form [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11115"} 'fire'.
 
 #### Old English evidence
 
-Bosworth-Toller records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11120"} 'fire' as the noun 'fire' and also preserves oblique
-[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11121"} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
+Bosworth-Toller records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11119"} 'fire' as the noun 'fire' and also preserves oblique
+[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11120"} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final _-e_ within the
 paradigm.
@@ -14062,11 +14061,11 @@ morphological remodeling.
 
 #### Development to Old English
 
-From [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11132"}, i-umlaut changes _ū_ to _ȳ_ [@Hogg1992, §3.3.3.1]. Subsequent
-loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11133"} 'fire'
+From [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11131"}, i-umlaut changes _ū_ to _ȳ_ [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11132"} 'fire'
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 
-[_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11136"} 'fire' is later than that inherited output. Its final _-e_ belongs to
+[_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11135"} 'fire' is later than that inherited output. Its final _-e_ belongs to
 analogical restoration in the Old English paradigm rather than to the original
 Proto-Germanic ending. The form therefore remains a known but unmodelled
 remodelling: the deterministic phonology is regular, but the attested surface
@@ -14081,8 +14080,8 @@ form and from the later analogical surface result.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level heteroclitic headword | [fōr]{.recon} 'fire' ~ _\*fun-_ | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
-| inherited oblique cell | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} 'fire' | regular inherited output from the derivational input |
-| later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11152"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11152"} 'fire' | genuine OE target, but not the direct phonological output |
+| inherited oblique cell | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11150"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11150"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11150"} 'fire' | regular inherited output from the derivational input |
+| later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11151"} 'fire' | genuine OE target, but not the direct phonological output |
 
 ### tap — OE _tæppa_
 
@@ -14140,33 +14139,33 @@ Old English form: _tæppa_
 #### Reconstruction and comparative evidence
 
 Orel gives the noun under [tappòn]{.recon} ‘tap’ and already connects it with Old English
-[_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11207"} 'tap' [@Orel2003, 402]. The derivational input [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11207"} is therefore the inherited noun itself;
+[_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11206"} 'tap' [@Orel2003, 402]. The derivational input [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11206"} is therefore the inherited noun itself;
 the entry does not depend on a different lexeme-level proto or a different
 inherited noun cell.
 
 #### Old English evidence
 
-The Old English noun family is well attested. Orel gives [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11213"} 'tap', and Clark
-Hall records [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11214"} 'tap' together with derivatives _tæppere_ 'tapster' and _tæppestre_ 'tapster'
+The Old English noun family is well attested. Orel gives [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11212"} 'tap', and Clark
+Hall records [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11213"} 'tap' together with derivatives _tæppere_ 'tapster' and _tæppestre_ 'tapster'
 [@Orel2003, 402; @ClarkHall1960, 305]. The target is therefore a real Old English noun
 form, not a reconstructed convenience spelling.
 
 #### Development to Old English
 
-From [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11220"}, the regular inherited noun path gives [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11220"} 'tap'. The attested
-target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11221"} 'tap' therefore stands outside that regular phonological development.
+From [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11219"}, the regular inherited noun path gives [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11219"} 'tap'. The attested
+target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11220"} 'tap' therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new
-inherited input. A related j-verb pathway would give [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11224"} 'tap', not the noun
-target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11225"} 'tap'. The entry accordingly remains a known but unmodelled case.
+inherited input. A related j-verb pathway would give [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11223"} 'tap', not the noun
+target [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11224"} 'tap'. The entry accordingly remains a known but unmodelled case.
 
 #### Form comparison
 
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| regular inherited noun path | [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11231"} | regular output: [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11231"} 'tap' | regular output, but not the target |
-| attested OE target | — | [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11232"} 'tap' | genuine target form, but analogically remodelled in the present classification |
-| related j-verb background | [_\*táppjaną_]{.iv lang=pgmc sort=tappjana role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11233"} | [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11233"} 'tap' | related formation, but not the noun target |
+| regular inherited noun path | [_\*táppô_]{.iv lang=pgmc sort=tappo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11230"} | regular output: [_tappa_]{.iv lang=oe sort=tappa role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11230"} 'tap' | regular output, but not the target |
+| attested OE target | — | [_tæppa_]{.iv lang=oe sort=taeppa role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11231"} 'tap' | genuine target form, but analogically remodelled in the present classification |
+| related j-verb background | [_\*táppjaną_]{.iv lang=pgmc sort=tappjana role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11232"} | [_teppan_]{.iv lang=oe sort=teppan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11232"} 'tap' | related formation, but not the noun target |
 
 \clearpage
 
@@ -14232,39 +14231,39 @@ Old English form: _bucc_
 
 #### Reconstruction and comparative evidence
 
-Kroonen and Orel both reconstruct the word with a geminate stop, [[bukkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11296"}
+Kroonen and Orel both reconstruct the word with a geminate stop, [[bukkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11295"}
 [@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
-material behind Old English [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11298"} 'buck' [@Orel2003, 62]. The derivational input
+material behind Old English [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11297"} 'buck' [@Orel2003, 62]. The derivational input
 therefore remains identical with the lexeme label: no alternative inherited
 cell accounts for the form.
 
 #### Old English evidence
 
-Old English preserves a mixed lexical picture. Campbell cites [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11304"} 'buck' in the
+Old English preserves a mixed lexical picture. Campbell cites [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11303"} 'buck' in the
 exception set for this phonological environment [@Campbell1959, §115]. Clark
-Hall and Bosworth-Toller show that Old English has both [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11306"} 'buck' and [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11306"} 'buck'
-[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11307"} 'buck'
-is the target treated here; [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11308"} 'buck' supplies genuine philological
+Hall and Bosworth-Toller show that Old English has both [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11305"} 'buck' and [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11305"} 'buck'
+[@ClarkHall1960, 53; @BosworthToller1898, 122]. The a-stem citation form [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11306"} 'buck'
+is the target treated here; [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11307"} 'buck' supplies genuine philological
 background from the same lexical family.
 
 #### Development to Old English
 
-From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11313"}, the regular inherited path gives [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11313"} 'buck'. That is the form
-expected under the ordinary lowering pattern in this environment. [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11314"} 'buck'
+From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11312"}, the regular inherited path gives [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11312"} 'buck'. That is the form
+expected under the ordinary lowering pattern in this environment. [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11313"} 'buck'
 therefore remains outside the deterministic phonology.
 
 No accepted inherited cell repairs the mismatch. A high-vowel alternative would
-introduce i-umlaut and produce a [_byċċ_]{.iv lang=oe sort=bycc role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11318"} 'buck'-type form rather than the target.
-[_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11319"} 'buck' is therefore best treated as a documented exception, not as a regular
+introduce i-umlaut and produce a [_byċċ_]{.iv lang=oe sort=bycc role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11317"} 'buck'-type form rather than the target.
+[_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11318"} 'buck' is therefore best treated as a documented exception, not as a regular
 paradigm-cell survival.
 
 #### Form comparison
 
 | Form type | Input or form | OE output or comparison | Result |
 | :--- | :--- | :--- | :--- |
-| regular inherited noun path | [_\*búkkaz_]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11326"} | regular output: [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11326"} 'buck' | regular output, but not the target |
-| attested OE target | — | [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11327"} 'buck' | genuine target form, but unexplained in the present classification |
-| parallel OE lexical background | — | [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11328"} 'buck' | related n-stem form, not the present target |
+| regular inherited noun path | [_\*búkkaz_]{.iv lang=pgmc sort=bukkaz role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11325"} | regular output: [_bocc_]{.iv lang=oe sort=bocc role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11325"} 'buck' | regular output, but not the target |
+| attested OE target | — | [_bucc_]{.iv lang=oe sort=bucc role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11326"} 'buck' | genuine target form, but unexplained in the present classification |
+| parallel OE lexical background | — | [_bucca_]{.iv lang=oe sort=bucca role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:11327"} 'buck' | related n-stem form, not the present target |
 
 ### fowl — OE _fugol_
 
@@ -14638,7 +14637,7 @@ Old English form: _wull_
 The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
 history of West Germanic, stressed _u_ lowers before a following non-high vowel,
 so the regular Old English outcome is an _o_-form. Campbell's discussion of the
-parallel adjective _full_, with OHG [foll]{.lex lang=dutch} 'full' as the regular comparator, shows that
+parallel adjective _full_, with OHG [foll]{.lex lang=ohg} 'full' as the regular comparator, shows that
 the handbooks treat this as a genuine exception cluster rather than as a place
 where the rule itself is doubtful [@Campbell1959, §115].
 

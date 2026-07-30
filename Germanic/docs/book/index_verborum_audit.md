@@ -1,18 +1,18 @@
 # Index verborum audit
 
-- Internal production occurrences: 1986
+- Internal production occurrences: 1990
 - Internal production unique forms: 968
-- Printed main-index occurrences: 1883
+- Printed main-index occurrences: 1888
 - Printed main-index unique forms: 947
-- Print-excluded occurrences: 103
-- Print-excluded unique forms: 81
+- Print-excluded occurrences: 102
+- Print-excluded unique forms: 80
 - Print exclusions (preoe_model_internal_default_exclusion): 9
-- Print exclusions (regular_output_default_exclusion): 90
+- Print exclusions (regular_output_default_exclusion): 89
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 4
 - Internal-only rows (preoe_model_internal_default_exclusion): 9
-- Internal-only rows (regular_output_default_exclusion): 90
+- Internal-only rows (regular_output_default_exclusion): 89
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 4
@@ -23,15 +23,15 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 421
-- Broad-prose notation / compound expressions: 432
-- Broad-prose evidence suggestions: 287
+- Already indexed in same entry: 417
+- Broad-prose notation / compound expressions: 433
+- Broad-prose evidence suggestions: 288
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 6
 - Reader-facing examples quarantined (separate example index policy): 596
 - Ordinary prose/gloss ignored: 26
 - Orthographic/normalization variants: 14
-- Table semantic auto-promoted: 34
+- Table semantic auto-promoted: 27
 - Table semantic suggestions: 19
 - Table semantic deferred decisions: 8
 - Table semantic ignored: 1
@@ -47,7 +47,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 981 | 398 |
+| Old English | 985 | 398 |
 | Proto-Germanic | 932 | 514 |
 | Proto-West Germanic | 2 | 2 |
 | Pre-Old-English and model-internal forms | 13 | 10 |
@@ -151,18 +151,18 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 365 |
+| target_form | 368 |
 | source_protoform | 330 |
 | selected_input | 531 |
-| comparison_form | 502 |
-| regular_output | 90 |
+| comparison_form | 504 |
+| regular_output | 89 |
 | evidence_form | 168 |
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 891 | 387 |
+| Old English | 896 | 387 |
 | Proto-Germanic | 932 | 514 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 12 | 9 |
@@ -178,10 +178,10 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 365 |
+| target_form | 368 |
 | source_protoform | 330 |
 | selected_input | 531 |
-| comparison_form | 497 |
+| comparison_form | 499 |
 | evidence_form | 160 |
 
 ## Internal-only rows by reason
@@ -190,7 +190,7 @@
 | --- | ---: |
 | excluded_by_print_decision | 4 |
 | preoe_model_internal_default_exclusion | 9 |
-| regular_output_default_exclusion | 90 |
+| regular_output_default_exclusion | 89 |
 
 ## Already indexed in same entry
 
@@ -382,7 +382,7 @@
 | `macian` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:44 | ### Development to Old English | same form already indexed in this entry |
 | `macian` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:51 | ### Development to Old English | same form already indexed in this entry |
 | `*mákô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:43 | ### Development to Old English | same form already indexed in this entry |
-| `*mákōθi` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46 | ### Development to Old English | same form already indexed in this entry |
+| `*mákōθi` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:45 | ### Development to Old English | same form already indexed in this entry |
 | `*mánnas` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:44 | ### Development to Old English | same form already indexed in this entry |
 | `mannes` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:46 | ### Development to Old English | same form already indexed in this entry |
 | `mare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:25 | ### Old English evidence | same form already indexed in this entry |
@@ -485,13 +485,9 @@
 | `*stámnaz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58 | ### Development to Old English | same form already indexed in this entry |
 | `*stámnaz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82 | ### Homonym note | same form already indexed in this entry |
 | `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:33 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | ### Old English evidence | same form already indexed in this entry |
-| `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:48 | ### Old English evidence | same form already indexed in this entry |
 | `stefn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:79 | ### Homonym note | same form already indexed in this entry |
 | `*stéllijaną` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:33 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | ### Old English evidence | same form already indexed in this entry |
-| `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:48 | ### Old English evidence | same form already indexed in this entry |
 | `stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:79 | ### Homonym note | same form already indexed in this entry |
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
@@ -649,7 +645,7 @@
 | `-as(t` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
 | `-as(t` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:24 | notation or compound expression |
 | `-as(t` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:24 | notation or compound expression |
-| `-aþ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:39 | notation or compound expression |
+| `-aþ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:38 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:36 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:45 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:57 | notation or compound expression |
@@ -715,7 +711,7 @@
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:48 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:46 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:46 | notation or compound expression |
-| `-e-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:40 | notation or compound expression |
+| `-e-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:39 | notation or compound expression |
 | `-e-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:35 | notation or compound expression |
 | `*-ē- / *-ai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:57 | notation or compound expression |
 | `-es` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:46 | notation or compound expression |
@@ -795,7 +791,7 @@
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:25 | notation or compound expression |
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:30 | notation or compound expression |
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:44 | notation or compound expression |
-| `-i` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46 | notation or compound expression |
+| `-i` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:45 | notation or compound expression |
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:41 | notation or compound expression |
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:51 | notation or compound expression |
 | `-i` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
@@ -881,11 +877,11 @@
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:22 | notation or compound expression |
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:25 | notation or compound expression |
 | `*mækô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:43 | intermediate or model-stage form in development chain |
-| `*mækōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:47 | intermediate or model-stage form in development chain |
-| `mak-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:48 | notation or compound expression |
+| `*mækōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46 | intermediate or model-stage form in development chain |
+| `mak-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:47 | notation or compound expression |
 | `*maka-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:23 | notation or compound expression |
-| `*makaθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:51 | intermediate or model-stage form in development chain |
-| `*makōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:51 | intermediate or model-stage form in development chain |
+| `*makaθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:50 | intermediate or model-stage form in development chain |
+| `*makōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:50 | intermediate or model-stage form in development chain |
 | `*mannan-` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:21 | notation or compound expression |
 | `mare, maran` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
 | `*marōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
@@ -1002,6 +998,7 @@
 | `-um` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 | notation or compound expression |
 | `-um` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 | notation or compound expression |
 | `u/w` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33 | notation or compound expression |
+| `voice/sound` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:48 | notation or compound expression |
 | `w-` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:30 | notation or compound expression |
 | `*wædaną` | Germanic/docs/lexeme_reports/model_entries/2266-wade-wadan.model.md:29 | intermediate or model-stage form in development chain |
 | `waefs / wæfs` | Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:29 | notation or compound expression |
@@ -1070,7 +1067,7 @@
 | `*budmō` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*butmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*buttaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `Campbell's` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:52 | oe | comparison_form | attested Old English comparison form in development prose |
+| `Campbell's` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:51 | oe | comparison_form | attested Old English comparison form in development prose |
 | `ēaw` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
@@ -1243,6 +1240,7 @@
 | `*stamniz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:22 | on | source_protoform | citation or reconstructed source form in prose |
 | `*stebnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:84 | pgmc | selected_input | selected input described in prose |
+| `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:52 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:57 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*stemnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 | pgmc | source_protoform | citation or reconstructed source form in prose |
@@ -1374,7 +1372,7 @@
 | `*wīþja` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:42 | pgmc | source_protoform | PGmc withy proto form; deferred |
 | `*wólfa` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49 | pgmc | source_protoform | Intermediate wolf dev stage; deferred |
 | `*wólfaz` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49 | pgmc | source_protoform | Intermediate wolf dev stage; deferred |
-| `*mákōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46 | pgmc | source_protoform | Pre-OE development stage for make 3sg; deferred |
+| `*mákōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:45 | pgmc | source_protoform | Intermediate make 3sg development stage; deferred |
 | `*líornô` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:44 | preoe | comparison_form | Intermediate reconstructed stage retained for derivational exposition. |
 | `*líorna` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:45 | pgmc | source_protoform | Pre-OE development stage for learn iptv; deferred |
 | `*líornōθ` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:52 | preoe | comparison_form | Intermediate reconstructed stage retained for derivational exposition. |
@@ -2208,8 +2206,8 @@ _None._
 | `a` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:49 |
 | `a` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:22 |
 | `a` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:44 |
-| `a` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:48 |
-| `a` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:53 |
+| `a` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:47 |
+| `a` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:52 |
 | `a` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:26 |
 | `a` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:47 |
 | `a` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:29 |
@@ -2346,8 +2344,8 @@ _None._
 | `j` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:21 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:29 |
-| `j` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:42 |
-| `j` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:53 |
+| `j` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:41 |
+| `j` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:52 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:36 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:37 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:44 |

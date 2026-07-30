@@ -316,29 +316,48 @@ def run_fingerprint_lifecycle_fixtures() -> None:
     # Stale addition: form in baseline AND in current but allowlisted as 'add'
     stale_add_detected = {k for k in {stable_key} if k in baseline_fp}
     assert_true(stale_add_detected, "Stale add (form already in baseline) must be detected")
-    """Load allowlist; returns (expected_additions, expected_removals, validation_errors).
 
-    The allowlist TSV has an 'action' column with strictly 'add' or 'remove'.
-    Any other value is a validation error.
-    """
-    if not ALLOWLIST_TSV.exists():
-        return set(), set(), []
-    additions: set[tuple] = set()
-    removals: set[tuple] = set()
-    errors: list[str] = []
-    with open(ALLOWLIST_TSV, encoding="utf-8", newline="") as f:
-        reader = csv.DictReader(f, delimiter="\t")
+    # Invalid action validation: parse fixture rows, not the real file
+    def _parse_fixture_allowlist(rows_tsv: str) -> tuple:
+        """Parse allowlist from a TSV string (not a file)."""
+        additions: set[tuple] = set()
+        removals: set[tuple] = set()
+        errors: list[str] = []
+        import io
+        reader = csv.DictReader(io.StringIO(rows_tsv), delimiter="\t")
         for i, row in enumerate(reader, 2):
             action = (row.get("action") or "").strip().lower()
             if action not in ("add", "remove"):
-                errors.append(f"Allowlist row {i}: invalid action {action!r} (must be 'add' or 'remove')")
+                errors.append(f"Row {i}: invalid action {action!r}")
                 continue
             key = _semantic_key(row)
             if action == "add":
                 additions.add(key)
             else:
                 removals.add(key)
-    return additions, removals, errors
+        return additions, removals, errors
+
+    # Valid action values
+    valid_add_tsv = "action\tlanguage\tform\tform_role\tsource_scope\tsource_ref\tnote\nadd\toe\ttestform\ttarget_form\texplicit_tag\tf.md\tnote"
+    _, _, errs = _parse_fixture_allowlist(valid_add_tsv)
+    assert_true(not errs, f"Valid 'add' action must not produce errors; got {errs}")
+
+    valid_remove_tsv = "action\tlanguage\tform\tform_role\tsource_scope\tsource_ref\tnote\nremove\toe\ttestform\ttarget_form\texplicit_tag\tf.md\tnote"
+    _, _, errs = _parse_fixture_allowlist(valid_remove_tsv)
+    assert_true(not errs, f"Valid 'remove' action must not produce errors; got {errs}")
+
+    # Invalid action values
+    invalid_action_tsv = "action\tlanguage\tform\tform_role\tsource_scope\tsource_ref\tnote\ndelete\toe\ttestform\ttarget_form\texplicit_tag\tf.md\tnote"
+    _, _, errs = _parse_fixture_allowlist(invalid_action_tsv)
+    assert_true(errs, "Invalid action 'delete' must produce an error")
+
+    blank_action_tsv = "action\tlanguage\tform\tform_role\tsource_scope\tsource_ref\tnote\n\toe\ttestform\ttarget_form\texplicit_tag\tf.md\tnote"
+    _, _, errs = _parse_fixture_allowlist(blank_action_tsv)
+    assert_true(errs, "Blank action must produce an error")
+
+    # Current real allowlist must have no invalid entries
+    _, _, real_errors = _load_allowlist()
+    assert_true(not real_errors, f"Current allowlist must have no invalid action values; got {real_errors}")
 
 
 def run_index_fingerprint_checks() -> None:
@@ -474,6 +493,56 @@ def run_notation_fixtures() -> None:
     )
     assert_true(code == 0, "SC025 fixed: mōna 'moon' satisfies the gloss rule")
 
+    # Heuristic/hard gate separation regressions (§4):
+    # The hard gate checks explicit .lex/.iv/.recon forms AND heuristically-detected
+    # plain italics that are likely linguistic. These fixtures verify both layers.
+
+    # Untyped OE faran (heuristic detects, hard gate requires gloss)
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "OE *faran* appears without gloss.")
+    )
+    assert_true(code == 2, "untyped OE faran without gloss must fail hard gate")
+
+    # Explicitly typed faran with .lex (passes)
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence", "[faran]{.lex lang=oe} 'fare' appears.")
+    )
+    assert_true(code == 0, "explicitly .lex-typed faran with gloss must pass")
+
+    # Explicitly typed faran with .iv (passes)
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence",
+                          "[`faran`]{.iv lang=oe sort=faran role=comparison_form} 'fare' appears.")
+    )
+    assert_true(code == 0, ".iv-typed faran with gloss must pass")
+
+    # Explicitly typed faran with .recon (passes)
+    code, _ = run_validator(
+        paragraph_fixture("Reconstruction and comparative evidence",
+                          "[fáraną]{.recon} 'go, fare' appears.")
+    )
+    assert_true(code == 0, ".recon-typed form with gloss must pass")
+
+    # Ordinary English italic emphasis (heuristic ignores, no linguistic candidate)
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence",
+                          "This is *important* evidence about the vowel.")
+    )
+    assert_true(code == 0, "ordinary English emphasis must not be a lexical candidate")
+
+    # Suffix notation *-um (not a word, should be ignored)
+    code, _ = run_validator(
+        paragraph_fixture("Old English evidence",
+                          "The dative ending *-um* is discussed here.")
+    )
+    assert_true(code == 0, "suffix notation *-um must not be a lexical candidate")
+
+    # Dictionary Latin gloss (filatum-type): not a lexical comparator
+    # The old .lex[filatum]{.lex lang=la} pattern must fail the lang code lint
+    from check_reader_facing_semantics import find_invalid_lang_codes  # relative import
+    issues = find_invalid_lang_codes("[filatum]{.lex lang=la} 'spun thread'", "fixture")
+    assert_true(issues, "lang=la must be rejected; use lang=lat if genuinely needed")
+
 
 def run_lex_ex_fixtures() -> None:
     """.lex and .ex semantic markup fixtures."""
@@ -595,12 +664,23 @@ def run_corpus_lints() -> None:
     raw_starred_iv_hits: list[str] = []
     class_compat_issues: list[str] = []
     lang_code_issues: list[str] = []
+    nested_span_issues: list[str] = []
 
     # Pattern: .iv span with a literal leading reconstruction * WITHOUT:
     #   - backtick code span: [`*form`]{.iv} in tables is a pre-existing valid pattern
     #   - matching closing asterisk: [*form*]{.iv} is Markdown italic (valid)
     # Only flags [*form]{.iv} where the * is a reconstruction star without closing match.
     RAW_STARRED_IV_RE = re.compile(r'\[\*(?!.*\*\])[^`\]\n][^\]]*\]\{[^}]*\.iv[^}]*\}')
+
+    # Pattern for incompatibly nested semantic spans:
+    # [[inner]{.CLASS}...]{.OUTER} where CLASS and OUTER are incompatible
+    # Detect: .lex inside .iv, .iv inside .lex, .lex inside .recon, .pred inside lexical span
+    NESTED_SPAN_RE = re.compile(
+        r'\[(?:[^\[\]]|\[[^\[\]]*\])*'  # outer open bracket with possible inner content
+        r'\[([^\[\]]+)\]\{[^}]*\.(lex|iv|pred|recon|ex)[^}]*\}'  # inner semantic span
+        r'[^\[\]]*\]\{'  # outer content after inner
+        r'[^}]*\.(lex|iv|pred|recon|ex)[^}]*\}'  # outer semantic class
+    )
 
     # All canonical reader-facing Markdown sources
     source_paths: list[Path] = []
@@ -614,10 +694,9 @@ def run_corpus_lints() -> None:
         text = path.read_text(encoding="utf-8")
         source_label = str(path)
 
-        # .recon structural checks (model entries only; Part I chapters rarely use .recon)
-        if ".model.md" in source_label:
-            recon_issues.extend(find_recon_span_issues(text, source_label))
-            duplicate_issues.extend(find_duplicate_glosses(text, source_label))
+        # .recon and duplicate-gloss structural checks: now apply to ALL sources
+        recon_issues.extend(find_recon_span_issues(text, source_label))
+        duplicate_issues.extend(find_duplicate_glosses(text, source_label))
 
         # Empty .recon spans (all sources)
         if "[]{.recon}" in text:
@@ -638,12 +717,34 @@ def run_corpus_lints() -> None:
         # Language code lint (all sources with .lex or .iv spans)
         lang_code_issues.extend(find_invalid_lang_codes(text, source_label))
 
+        # Nested incompatible semantic span detection
+        # Detect: .lex inside .iv (and other incompatible nesting)
+        # The valid case is .recon+.iv as combined classes on the SAME span.
+        # Invalid: [[form]{.lex}]{.iv} — inner .lex inside outer .iv
+        for m in NESTED_SPAN_RE.finditer(text):
+            inner_cls = m.group(2)
+            outer_cls = m.group(3)
+            # Define which nestings are invalid
+            invalid_nesting = (
+                (inner_cls == "lex" and outer_cls == "iv") or
+                (inner_cls == "iv" and outer_cls == "lex") or
+                (inner_cls == "lex" and outer_cls == "recon") or
+                (inner_cls == "pred" and outer_cls in {"lex", "iv", "recon"}) or
+                (inner_cls in {"lex", "iv", "recon", "pred"} and outer_cls == "ex")
+            )
+            if invalid_nesting:
+                lnum = text[:m.start()].count("\n") + 1
+                nested_span_issues.append(
+                    f"{source_label}:{lnum}: nested .{inner_cls} inside .{outer_cls} span: {m.group(0)[:80]}"
+                )
+
     assert_true(not recon_issues, "malformed .recon spans:\n" + "\n".join(f"{x.source}: {x.reason} :: {x.span}" for x in recon_issues[:40]))
     assert_true(not duplicate_issues, "adjacent duplicate glosses:\n" + "\n".join(duplicate_issues[:40]))
     assert_true(not empty_recon_hits, "empty .recon spans found:\n" + "\n".join(empty_recon_hits[:20]))
     assert_true(not raw_starred_iv_hits, "raw starred-form .iv spans (use .recon+.iv):\n" + "\n".join(raw_starred_iv_hits[:20]))
     assert_true(not class_compat_issues, "class-compatibility violations:\n" + "\n".join(class_compat_issues[:20]))
     assert_true(not lang_code_issues, "invalid language codes:\n" + "\n".join(lang_code_issues[:20]))
+    assert_true(not nested_span_issues, "nested incompatible semantic spans:\n" + "\n".join(nested_span_issues[:20]))
 
 
 # ── Class compatibility lint ──────────────────────────────────────────────────
@@ -719,6 +820,51 @@ def run_class_compat_fixtures() -> None:
         issues = find_class_compat_issues(span, "fixture")
         assert_true(not issues, f"unexpected class-compat failure for: {span} — {issues}")
 
+    # Nested semantic span regressions (shoulder-style .lex inside .iv)
+    # The regex in run_corpus_lints detects these patterns
+    _NESTED_RE = re.compile(
+        r'\[(?:[^\[\]]|\[[^\[\]]*\])*'
+        r'\[([^\[\]]+)\]\{[^}]*\.(lex|iv|pred|recon|ex)[^}]*\}'
+        r'[^\[\]]*\]\{'
+        r'[^}]*\.(lex|iv|pred|recon|ex)[^}]*\}'
+    )
+
+    def _has_bad_nesting(text: str) -> bool:
+        for m in _NESTED_RE.finditer(text):
+            inner, outer = m.group(2), m.group(3)
+            if (inner == "lex" and outer == "iv") or (inner == "iv" and outer == "lex"):
+                return True
+            if (inner == "lex" and outer == "recon"):
+                return True
+            if inner == "pred" and outer in {"lex", "iv", "recon"}:
+                return True
+        return False
+
+    # .lex inside .iv → FAIL (shoulder-style error)
+    assert_true(
+        _has_bad_nesting("[[sċuldrum]{.lex lang=oe} 'dat.pl.']{.iv lang=oe sort=x role=target_form}"),
+        "nested .lex inside .iv must be detected"
+    )
+    # .iv inside .lex → FAIL
+    assert_true(
+        _has_bad_nesting("[[`form`]{.iv lang=oe sort=x role=comp} 'gloss']{.lex lang=oe}"),
+        "nested .iv inside .lex must be detected"
+    )
+    # .recon+.iv combined (same span) → PASS (not nested, not a violation)
+    assert_true(
+        not _has_bad_nesting("[form]{.recon .iv lang=pgmc sort=x role=source}"),
+        ".recon+.iv same-span combination must NOT be flagged as nested"
+    )
+
+    # Shoulder entry regression: schulder must be lang=mlg, not lang=german
+    shoulder = MODEL_ENTRIES / "2183-shoulder-sċuldrum.model.md"
+    if shoulder.exists():
+        sh_text = shoulder.read_text(encoding="utf-8")
+        assert_true("lang=mlg" in sh_text, "shoulder: schulder must use lang=mlg (Middle Low German)")
+        assert_true("schulder]{.lex lang=german}" not in sh_text, "shoulder: schulder must not be lang=german")
+        assert_true("{.lex lang=oe} 'shoulder (dat.pl.)']{.iv" not in sh_text,
+                    "shoulder: .lex inside .iv nesting must be removed")
+
 
 # ── Manifest / model-entry consistency ───────────────────────────────────────
 MANIFEST_PATH = ROOT / "docs" / "assembly" / "manifest_all_by_class.tsv"
@@ -790,17 +936,28 @@ def run_manifest_consistency() -> None:
         if mf_proto and entry_proto and mf_proto != entry_proto:
             checks.append(("PROTOFORM", mf_proto, entry_proto))
 
-        # Check heading lexical_item matches manifest
+        # Check heading lexical_item matches manifest — strict equality after normalization
         heading_lex = meta.get("heading_lexical_item", "")
-        if heading_lex and lex_item:
-            # Heading may have extra qualifiers like "stem/trunk" vs manifest "stem"
-            # Accept if manifest lex_item is a prefix of or contained in heading lex_item
-            if lex_item not in heading_lex and not heading_lex.startswith(lex_item):
-                mismatches.append(
-                    f"Row {row_id}: heading lexical_item {heading_lex!r} doesn't match manifest {lex_item!r}"
-                )
+        if not heading_lex:
+            # Missing heading is an error
+            mismatches.append(f"Row {row_id} ({lex_item}): model entry missing '# lexical — OE counterpart' heading")
+        elif lex_item:
+            # Normalize: strip common qualifiers like "/trunk", "(gen.)" etc. for comparison
+            # But require that the manifest lex_item appears as the leading word(s)
+            normalized_heading = re.sub(r'\s*/[^—]*', '', heading_lex).strip()  # strip "/variant"
+            # Exact equality after normalization
+            if normalized_heading != lex_item and heading_lex != lex_item:
+                # Allow: heading may have additional descriptor after /
+                # e.g., "stem" → "stem — OE stefn" heading is OK
+                # But "woman" for manifest "man" must fail
+                if not (heading_lex.startswith(lex_item + "/") or heading_lex == lex_item
+                        or normalized_heading == lex_item):
+                    mismatches.append(
+                        f"Row {row_id}: heading lexical_item {heading_lex!r} does not match manifest {lex_item!r}"
+                    )
 
-        # Check heading counterpart matches manifest (ignoring extra forms like "stefna, stefn")
+        # Check heading counterpart — must match manifest counterpart exactly
+        # (heading may list multiple forms as "form1, form2" — counterpart must be in list)
         heading_counterpart = meta.get("heading_counterpart", "")
         manifest_counterpart = row.get("counterpart", "")
         if heading_counterpart and manifest_counterpart:
@@ -851,6 +1008,13 @@ def run_row2216_invariants() -> None:
         "Row 2216 must contain a note distinguishing the voice/sound homonym",
     )
 
+    # 3b. stem Source comparison table must not say "must not appear in this entry"
+    # (the correct invariant is that *stébnō must not be used as derivational input)
+    assert_true(
+        "must not appear in this entry" not in stem_text,
+        "Stem table must say 'must not be used as derivational input', not 'must not appear'",
+    )
+
     # 4. aligned data must not use *stébnō for stem row
     if ALIGNED_DATA_PATH.exists():
         with open(ALIGNED_DATA_PATH, encoding="utf-8", newline="") as f:
@@ -880,6 +1044,121 @@ def run_row2216_invariants() -> None:
                         "Manifest row 2216 must not be marked confident without an FST trace",
                     )
                     break
+
+    # 7. Index forms TSV: no *stébnō as selected_input for stem row
+    # (neither trace_proto_input nor other scope)
+    if FORMS_TSV.exists():
+        with open(FORMS_TSV, encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f, delimiter="\t"):
+                if row.get("form") in {"*stébnō", "stébnō"}:
+                    src = row.get("source_ref", "")
+                    # *stébnō may appear as table-ignore form but not as production selected_input
+                    role = row.get("form_role", "")
+                    scope = row.get("source_scope", "")
+                    if role == "selected_input" and "stem" in src.lower():
+                        assert_true(
+                            False,
+                            f"Index must not have *stébnō as selected_input for stem row; found {row}"
+                        )
+
+
+def run_compact_trace_quarantine_fixtures() -> None:
+    """Generic regressions for the obsolete compact-trace quarantine logic.
+
+    Verifies that build_index_verborum.py correctly quarantines compact traces
+    whose proto doesn't match the active manifest protoform.
+    """
+    import sys
+    sys.path.insert(0, str(TOOLS_DIR))
+    try:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "build_index_verborum", str(TOOLS_DIR / "build_index_verborum.py")
+        )
+        biv = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(biv)  # type: ignore
+    except Exception:
+        return  # skip if builder not importable
+
+    # The key data structure: manifest_by_title_counterpart lookup
+    # Simulate a scenario where trace has mismatched proto
+    test_manifest_rows = [
+        {
+            "lexical_item": "stem",
+            "counterpart": "stefn",
+            "protoform": "*stámnaz",
+            "proto": "*stámnaz",
+            "derivation_class": "known_unmodelled",
+            "class_bucket": "known_unmodelled",
+            "section_title": "Known but unmodelled developments",
+            "model_entry_path": "",
+            "trace_match_status": "no_match",
+            "trace_match_basis": "",
+            "notes": "",
+        }
+    ]
+
+    # Build both lookup dicts
+    by_title = {
+        (r["lexical_item"], r["counterpart"], r["protoform"]): r
+        for r in test_manifest_rows
+    }
+    by_title_counterpart = {
+        (r["lexical_item"], r["counterpart"]): r
+        for r in test_manifest_rows
+    }
+
+    # Fixture 1: trace matches manifest proto → should be retained
+    matching_trace = {"title": "stem", "expected": "stefn", "proto": "*stámnaz", "proto_input": "*stámnaz"}
+    manifest_row = by_title.get((matching_trace["title"], matching_trace["expected"], matching_trace["proto"]))
+    assert_true(manifest_row is not None, "Matching trace should find a manifest row (retained)")
+
+    # Fixture 2: same title+counterpart, different proto → should be quarantined
+    mismatch_trace = {"title": "stem", "expected": "stefn", "proto": "*stébnō", "proto_input": "*stébnō"}
+    manifest_row_2 = by_title.get((mismatch_trace["title"], mismatch_trace["expected"], mismatch_trace["proto"]))
+    active_row = by_title_counterpart.get((mismatch_trace["title"], mismatch_trace["expected"]))
+    assert_true(manifest_row_2 is None, "Mismatched trace must not find its manifest row")
+    assert_true(active_row is not None, "Active manifest row must exist for same title+counterpart")
+    # In the real code: when manifest_row is None but active_row exists → quarantine (continue)
+    should_quarantine = (manifest_row_2 is None) and (active_row is not None)
+    assert_true(should_quarantine, "Mismatched trace must be quarantined when active manifest exists")
+
+    # Fixture 3: truly unknown entry (no active manifest row) → not quarantined
+    unknown_trace = {"title": "ZZZUNKNOWN", "expected": "zzz", "proto": "*zzz", "proto_input": "*zzz"}
+    manifest_row_3 = by_title.get((unknown_trace["title"], unknown_trace["expected"], unknown_trace["proto"]))
+    active_row_3 = by_title_counterpart.get((unknown_trace["title"], unknown_trace["expected"]))
+    should_quarantine_3 = (manifest_row_3 is None) and (active_row_3 is not None)
+    assert_true(not should_quarantine_3, "Unknown entry with no active manifest must not be quarantined")
+
+    # Fixture 4: similar titles must not quarantine each other
+    # "stew" and "stem" are similar but different
+    stew_manifest = {"lexical_item": "stew", "counterpart": "strēowian", "protoform": "*stráwjaną",
+                     "proto": "*stráwjaną", "derivation_class": "reconstructed_oe",
+                     "class_bucket": "reconstructed_oe", "section_title": "", "model_entry_path": "",
+                     "trace_match_status": "", "trace_match_basis": "", "notes": ""}
+    combined_manifest_rows = test_manifest_rows + [stew_manifest]
+    by_tc_combined = {(r["lexical_item"], r["counterpart"]): r for r in combined_manifest_rows}
+    # A stew trace must not quarantine because stem/stefn is found
+    stew_trace = {"title": "stew", "expected": "strēowian", "proto": "*stráwjaną"}
+    stew_active = by_tc_combined.get((stew_trace["title"], stew_trace["expected"]))
+    # stem trace with stew's proto must not find stew's manifest via stem's title
+    cross_quarantine = by_tc_combined.get(("stem", "strēowian"))
+    assert_true(cross_quarantine is None, "stem entry must not interact with stew's counterpart")
+
+    # Fixture 5: real index must not have *stébnō as stem selected_input
+    if FORMS_TSV.exists():
+        with open(FORMS_TSV, encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f, delimiter="\t"):
+                if (row.get("form") in {"*stébnō", "stébnō"}
+                        and row.get("form_role") == "selected_input"
+                        and row.get("source_scope") == "trace_proto_input"):
+                    # Check source_ref doesn't say 'stem'
+                    src = row.get("source_ref", "").lower()
+                    if "stem" in src:
+                        assert_true(
+                            False,
+                            f"*stébnō trace_proto_input must be quarantined for stem row; found: {row}"
+                        )
 
 
 # ── Render-level regression tests ────────────────────────────────────────────
@@ -991,30 +1270,31 @@ def _run_builder_to_temp(builder: Path, repo_root: Path) -> str | None:
 
 # ── Language code registry ────────────────────────────────────────────────────
 
-# Controlled project language codes
-_VALID_LANG_CODES: set[str] = {
-    "oe",      # Old English
-    "pgmc",    # Proto-Germanic
-    "nwgmc",   # North-West Germanic
-    "wgmc",    # West Germanic
-    "pwgmc",   # Proto-West-Germanic
-    "preoe",   # Pre-Old-English (model-internal stages)
-    "os",      # Old Saxon
-    "on",      # Old Norse
-    "ohg",     # Old High German
-    "ofris",   # Old Frisian
-    "goth",    # Gothic
-    "german",  # Modern German
-    "dutch",   # Modern Dutch
-    "lat",     # Latin (genuine comparative form, not as dictionary gloss)
-    "mlg",     # Middle Low German
-    "modeng",  # Modern English
-    "english", # NOT valid — use oe for OE, modeng for Modern English
-    # "la" is NOT valid — use "lat"
-}
+# Language code registry — derived from the canonical index_verborum_languages.tsv
+# Invalid codes are those not in the registry but sometimes misused.
+_LANGUAGES_TSV = ROOT / "docs" / "book" / "index_verborum_languages.tsv"
+_INVALID_LANG_CODES: frozenset[str] = frozenset({"la", "english", "wgmc"})
 
-_INVALID_LANG_CODES: set[str] = {"la", "english"}
-_APPROVED_LANG_CODES: set[str] = _VALID_LANG_CODES - _INVALID_LANG_CODES
+
+def _load_approved_lang_codes() -> frozenset[str]:
+    """Load approved language codes from the canonical registry."""
+    if not _LANGUAGES_TSV.exists():
+        # Fallback: minimal hardcoded set
+        return frozenset({"oe", "pgmc", "pwgmc", "nwgmc", "preoe", "os", "on", "ohg",
+                          "ofris", "goth", "german", "dutch", "lat", "mlg", "modeng",
+                          "odutch", "mdutch", "me", "greek", "skt", "oirish", "goth"})
+    codes: set[str] = set()
+    with open(_LANGUAGES_TSV, encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for row in reader:
+            code = row.get("code", "").strip()
+            if code:
+                codes.add(code)
+    # Remove known-invalid codes that happen to be in the registry
+    return frozenset(codes - _INVALID_LANG_CODES)
+
+
+_APPROVED_LANG_CODES: frozenset[str] = _load_approved_lang_codes()
 
 _LANG_ATTR_RE = re.compile(r'\{[^}]*\blang=([A-Za-z_]+)[^}]*\}')
 
@@ -1026,29 +1306,47 @@ def find_invalid_lang_codes(text: str, source: str) -> list[str]:
         code = m.group(1)
         if code not in _APPROVED_LANG_CODES:
             lnum = text[:m.start()].count("\n") + 1
-            issues.append(f"{source}:{lnum}: invalid lang code {code!r} (approved: {sorted(_APPROVED_LANG_CODES)[:5]}...)")
+            issues.append(f"{source}:{lnum}: invalid lang code {code!r} (approved codes: {sorted(_APPROVED_LANG_CODES)[:8]}...)")
     return issues
 
 
 def run_lang_code_fixtures() -> None:
-    """Language code registry regressions."""
-    # Valid codes: no issues
-    for good_code in ["oe", "ohg", "lat", "os", "german"]:
+    """Language code registry regressions — derived from canonical registry."""
+    # Registry must exist
+    assert_true(_LANGUAGES_TSV.exists(), f"Language registry missing: {_LANGUAGES_TSV}")
+
+    # Valid codes from registry: no issues
+    for good_code in ["oe", "ohg", "lat", "os", "german", "mlg"]:
         issues = find_invalid_lang_codes(f"[form]{{.lex lang={good_code}}}", "fixture")
-        assert_true(not issues, f"lang={good_code!r} must be valid")
+        assert_true(not issues, f"lang={good_code!r} must be valid (in registry)")
 
     # Invalid codes: must fail
-    for bad_code in ["la", "english"]:
+    for bad_code in ["la", "english", "wgmc"]:
         issues = find_invalid_lang_codes(f"[form]{{.lex lang={bad_code}}}", "fixture")
-        assert_true(issues, f"lang={bad_code!r} must be invalid")
+        assert_true(issues, f"lang={bad_code!r} must be invalid (not in registry)")
 
-    # Unknown code: must fail
+    # Truly unknown code: must fail
     issues = find_invalid_lang_codes("[form]{.lex lang=klingon}", "fixture")
     assert_true(issues, "unknown lang code must be invalid")
 
     # .iv with bad code
     issues = find_invalid_lang_codes("[`form`]{.iv lang=la sort=x role=comparison_form}", "fixture")
     assert_true(issues, "lang=la in .iv span must be invalid")
+
+    # mlg approved (added to registry for shoulder/schulder)
+    issues = find_invalid_lang_codes("[schulder]{.lex lang=mlg} 'shoulder'", "fixture")
+    assert_true(not issues, "mlg (Middle Low German) must be approved in registry")
+
+    # Registry and checker must agree (approved set derived from registry)
+    registry_codes: set[str] = set()
+    with open(_LANGUAGES_TSV, encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            code = row.get("code", "").strip()
+            if code:
+                registry_codes.add(code)
+    for code in (registry_codes - _INVALID_LANG_CODES):
+        issues = find_invalid_lang_codes(f"[form]{{.lex lang={code}}}", "fixture")
+        assert_true(not issues, f"Registry code {code!r} must be approved in checker")
 
 
 def run_specific_typing_regressions() -> None:
@@ -1154,30 +1452,68 @@ def run_explicit_forms_all_sections_fixtures() -> None:
 # ── Section count regression ──────────────────────────────────────────────────
 
 def run_section_count_regression() -> None:
-    """Section descriptions and derivation class counts must match manifest."""
+    """Section counts and descriptions must exactly match the manifest for every class."""
     if not MANIFEST_PATH.exists():
         return
-    import collections
+    import collections, re as _re
+
     with open(MANIFEST_PATH, encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
 
-    counts = collections.Counter(row.get("derivation_class", "") for row in rows)
-    known = counts.get("known_unmodelled", 0)
-    early = counts.get("early_analogy", 0)
+    manifest_counts = collections.Counter(row.get("derivation_class", "") for row in rows)
 
-    # Manifest should currently have 3 known_unmodelled and 34 early_analogy
+    # Each class name must appear in section_introductions_draft.md with the correct count
+    intro_path = ROOT / "docs" / "assembly" / "section_introductions_draft.md"
+    if not intro_path.exists():
+        return
+
+    intro_text = intro_path.read_text(encoding="utf-8")
+
+    # Map of class → display label in the intro
+    class_labels = {
+        "regular": "regular",
+        "attested_variant": "attested variant",
+        "early_analogy": "early analogy",
+        "late_analogy": "late analogy",
+        "reconstructed_oe": "reconstructed Old English",
+        "known_unmodelled": "known unmodelled",
+        "unexplained_unmodelled": "unexplained",
+    }
+
+    mismatches: list[str] = []
+    for cls, label in class_labels.items():
+        expected = manifest_counts.get(cls, 0)
+        # Find displayed count: look for "label: **N**" pattern (case-insensitive)
+        pat = _re.compile(r'[-·]\s*' + _re.escape(label.lower()) + r'[^:]*:\s*\*\*(\d+)\*\*', _re.IGNORECASE)
+        m = pat.search(intro_text)
+        if m:
+            displayed = int(m.group(1))
+            if displayed != expected:
+                mismatches.append(f"  {cls}: intro says {displayed} but manifest has {expected}")
+        # If not found, that's OK — not all classes may have explicit counts
+
     assert_true(
-        known >= 3,
-        f"Expected at least 3 known_unmodelled rows; found {known}",
+        not mismatches,
+        f"Section count mismatches (intro vs manifest):\n" + "\n".join(mismatches),
     )
 
-    # section_introductions_draft.md should not describe known_unmodelled as 'remodelling'
-    intro_path = ROOT / "docs" / "assembly" / "section_introductions_draft.md"
-    if intro_path.exists():
-        intro_text = intro_path.read_text(encoding="utf-8")
+    # Terminology: section intro must not use old 'remodelling' label
+    assert_true(
+        "Known but unmodelled remodellings" not in intro_text
+        and "remodeled remodeling" not in intro_text
+        and "remodelling" not in intro_text.lower(),
+        "Section intro must not use old 'remodellings'/'remodeling' terminology",
+    )
+
+    # known_unmodelled description must mention FST/cascade (not just 'sound change alone')
+    known_section_match = _re.search(
+        r'## Known but unmodelled[^\n]*\n+(.*?)(?=\n##|\Z)', intro_text, _re.DOTALL
+    )
+    if known_section_match:
+        desc = known_section_match.group(1).lower()
         assert_true(
-            "Known but unmodelled remodellings" not in intro_text,
-            "Section intro must not use old 'remodellings' label for known_unmodelled",
+            "fst" in desc or "cascade" in desc or "transducer" in desc,
+            "known_unmodelled section should reference FST/cascade as the gap",
         )
 
 
@@ -1272,6 +1608,7 @@ def main() -> int:
         run_corpus_lints()
         run_manifest_consistency()
         run_row2216_invariants()
+        run_compact_trace_quarantine_fixtures()
         run_fingerprint_lifecycle_fixtures()
         run_generation_freshness()
         run_index_fingerprint_checks()

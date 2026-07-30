@@ -92,4 +92,4 @@ The selected input `*stébnō` used in earlier versions of this entry was the wr
 | [`stefna`]{.iv lang=oe sort=stefna role=comparison_form} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
 | [`stofn`]{.iv lang=oe sort=stofn role=comparison_form} 'trunk' | OE `o`-grade variant or earlier stage | trunk/stem sense | comparison form |
 | [`stemn`]{.iv lang=oe sort=stemn role=comparison_form} 'trunk' | late West Saxon `fn → mn` doublet | secondary form | comparison form |
-| `*stébnō` (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not appear in this entry** |
+| `*stébnō` (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not be used as row 2216's derivational input** |

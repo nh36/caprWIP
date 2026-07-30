@@ -315,11 +315,11 @@ oe	maca	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2
 oe	maca	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
 oe	maca	target_form	lexical_heading	make (iptv.2sg) — OE maca
 oe	macaþ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
-oe	macaþ	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
+oe	macaþ	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
+oe	macaþ	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 oe	macaþ	target_form	lexical_heading	make (3sg) — OE macaþ
-oe	macaþ	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 oe	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
-oe	macian	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
+oe	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 oe	man	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
 oe	man	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
 oe	mann	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
@@ -463,12 +463,11 @@ oe	sċoldor	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entri
 oe	sċufun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 oe	sċuldor	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 oe	sċuldrum	evidence_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md
-oe	sċuldrum	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
+oe	sċuldrum	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 oe	sċuldrum	target_form	lexical_heading	shoulder — OE sċuldrum
-oe	sċuldrum	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
-oe	sċēaf	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
+oe	sċēaf	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
+oe	sċēaf	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 oe	sċēaf	target_form	lexical_heading	shove — OE sċēaf
-oe	sċēaf	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 oe	sċēap	target_form	lexical_heading	sheep — OE sċēap
 oe	sċēawa	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md
 oe	sċēawa	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md

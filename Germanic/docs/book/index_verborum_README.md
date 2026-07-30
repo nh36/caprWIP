@@ -37,6 +37,7 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 - `me` — Middle English
 - `modeng` — Modern English
 - `oirish` — Old Irish
+- `mlg` — Middle Low German
 <!-- END AUTO-LANGUAGE-LIST -->
 - `sort` — ASCII sort key used in the printed index
 
