@@ -164,6 +164,71 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
   6. left in `index_verborum_unresolved_baseline.tsv` with a reason while the
      backlog is still being worked down.
 
+## Semantic markup types
+
+CAPR model entries use specialized Pandoc span markup to classify linguistic
+forms and control their treatment in output and indexing:
+
+### `.iv` — Index-worthy linguistic evidence
+
+Use `.iv` to mark forms that are cited as lexical, philological, comparative, or
+attested linguistic evidence. These forms **will** contribute to the Index
+Verborum (subject to print-policy decisions in `print_main.tsv`).
+
+```markdown
+[*sċuldrum*]{.iv lang=oe sort=sculdrum}                    % OE attested form
+[*skúldramiz*]{.iv lang=pgmc sort=skuldramiz}             % PGmc reconstruction
+[schulder]{.iv lang=mlg sort=schulder role=comparison_form} % MLG comparator
+```
+
+### `.lex` — Lexical mention, intentionally non-indexed
+
+Use `.lex` to mark forms that are discussed for their semantic/lexical content
+**but are not being used as linguistic evidence** for the main derivation or
+comparative argument. These forms will appear in prose glosses and semantic
+discussions but will **not** enter the Index Verborum.
+
+`.lex` does **not** mean "unimportant form"; it means the form is cited for its
+lexical/gloss meaning rather than as phonological or morphological evidence.
+
+```markdown
+[*brunaz*]{.lex lang=pgmc}     % mentioned only for semantic context
+[voice]{.lex}                   % English homonym, not linguistic evidence
+```
+
+### `.recon` — Reconstructed form (may or may not be indexed)
+
+Use `.recon` to mark reconstructed or hypothetical forms. `.recon` and `.iv`
+are **orthogonal**: `.recon .iv` marks a reconstructed form that **is**
+linguistic evidence; `.recon` alone marks a reconstructed form that is
+**not** being indexed (usually a model-internal stage).
+
+```markdown
+[*búkkaz]{.recon .iv lang=pgmc sort=bukkaz}  % indexed reconstruction
+[*skúldramaz]{.recon}                        % model stage, not indexed
+```
+
+### `.pred` — Counterfactual or predicted form
+
+Use `.pred` to mark forms that are counterfactual outputs from the transducer
+or predicted forms that are **not** attested or used as linguistic evidence.
+These forms are **never** indexed and never receive glosses.
+
+```markdown
+[*sċuldrum-x]{.pred}  % hypothetical variant, not attested
+```
+
+### `.ex` — Example or pedagogical form
+
+Use `.ex` to mark forms that appear in pedagogical sound-change examples or
+reader-facing rule ordering illustrations. These forms are **not** indexed
+automatically; they serve to illustrate derivational processes rather than as
+standalone evidence.
+
+```markdown
+[*g-*]{.ex} becomes [*j-*]{.ex} before front vowels
+```
+
 ## Baseline stability
 
 - `index_verborum_unresolved_baseline.tsv` is the current guardrail for
