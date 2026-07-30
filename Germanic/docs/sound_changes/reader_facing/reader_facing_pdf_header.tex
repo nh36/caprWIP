@@ -17,3 +17,6 @@
 \providecommand{\Pred}[1]{\textsuperscript{\dag}\emph{#1}}
 % Reconstructed lexical form: asterisk + italic (asterisk supplied by macro)
 \providecommand{\Recon}[1]{\emph{*#1}}
+% U+2192 RIGHTWARDS ARROW — Noto Serif lacks this glyph; remap to math-mode arrow
+{\catcode`→=\active \global\def→{\ensuremath{\rightarrow}}}
+\catcode`→=\active

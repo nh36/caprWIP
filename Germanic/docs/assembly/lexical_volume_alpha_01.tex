@@ -107,6 +107,11 @@
 % Table support packages used by the lexical volume and book draft.
 \usepackage{array}
 \usepackage{tabularx}
+% U+2192 RIGHTWARDS ARROW — Noto Serif lacks this glyph.
+% Make the character active and expand it to the standard math-mode arrow.
+% This requires no extra package and works in XeLaTeX.
+{\catcode`→=\active \global\def→{\ensuremath{\rightarrow}}}
+\catcode`→=\active
 % The \Recon macro renders a reconstructed form: asterisk + italic.
 % The asterisk is supplied here so source markup does not include a literal *.
 \providecommand{\Recon}[1]{\emph{*#1}}

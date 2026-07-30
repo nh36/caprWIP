@@ -1452,11 +1452,15 @@ def run_explicit_forms_all_sections_fixtures() -> None:
 # ── Occurrence-gating smoke test ──────────────────────────────────────────────
 
 def run_occurrence_gating_fixture() -> None:
-    """Pandoc fixture: source-less fallback removed — only the occurrence in print_main emits \\index.
+    """Pandoc fixture: occurrence-specific gating — only the occurrence whose source_ref
+    is in print_main.tsv emits an \\index command.
 
-    Two identical .iv forms (same lang/form/role) with different source_ref values.
-    When only occurrence A is in print_main.tsv, only occurrence A emits \\index{...}.
-    Repeat with only occurrence B in print_main.tsv.
+    Two .iv forms share the same lang, form, and role but have different source_ref
+    values and different sort= keys so their emitted \\index commands are distinguishable.
+    When only occurrence A is in print_main.tsv, only A's sort key appears in the TeX.
+    When only B is in print_main.tsv, only B's sort key appears.
+    This would fail if the filter fell back to source-less matching or always
+    emitted the first / second occurrence regardless of source_ref.
     """
     import os
 
@@ -1465,31 +1469,32 @@ def run_occurrence_gating_fixture() -> None:
         "source_scope", "source_ref", "origin", "status",
     ]
 
+    # Occurrences A and B: same lang/form/role, different source_ref AND sort key.
+    # Different sort keys make the emitted \index commands distinguishable.
+    ref_a = "fixturepath/file.md:10"
+    ref_b = "fixturepath/file.md:99"
+    sort_a = "fixtthenkijana_occ_A"
+    sort_b = "fixtthenkijana_occ_B"
+    FORM = "þénkijaną"
+
     md_a = (
-        "[*þénkijaną*]{.iv lang=pgmc sort=thenkijana role=evidence_form "
-        "source_ref=fixturepath/file.md:10} 'think'"
+        f"[{FORM}]{{.iv lang=pgmc sort={sort_a} role=evidence_form "
+        f"source_ref={ref_a}}} 'think A'"
     )
     md_b = (
-        "[*þénkijaną*]{.iv lang=pgmc sort=thenkijana role=evidence_form "
-        "source_ref=fixturepath/file.md:99} 'think'"
+        f"[{FORM}]{{.iv lang=pgmc sort={sort_b} role=evidence_form "
+        f"source_ref={ref_b}}} 'think B'"
     )
     md_both = md_a + "\n\n" + md_b
 
-    def make_print_main_tsv(tmp: str, source_ref: str) -> str:
-        tsv_dir = Path(tmp)
+    def make_print_main_tsv(directory: str, source_ref: str) -> str:
+        tsv_dir = Path(directory)
         tsv_dir.mkdir(parents=True, exist_ok=True)
         tsv_path = tsv_dir / "print_main.tsv"
         header = "\t".join(PRINT_MAIN_FIELDS)
         row = "\t".join([
-            "pgmc",                        # language
-            "þénkijaną",                   # form
-            "*þénkijaną",                  # display
-            "thenkijana",                  # sort_key
-            "evidence_form",               # form_role
-            "explicit_tag",                # source_scope
-            source_ref,                    # source_ref
-            "fixture",                     # origin
-            "active",                      # status
+            "pgmc", FORM, f"*{FORM}", "thenkijana", "evidence_form",
+            "explicit_tag", source_ref, "fixture", "active",
         ])
         tsv_path.write_text(header + "\n" + row + "\n", encoding="utf-8")
         return str(tsv_path)
@@ -1499,53 +1504,51 @@ def run_occurrence_gating_fixture() -> None:
         with tempfile.TemporaryDirectory() as tmp2:
             md_path = Path(tmp2) / "fixture.md"
             md_path.write_text(md, encoding="utf-8")
-            cmd = [
-                "pandoc", str(md_path),
-                "--from=markdown", "--to=latex",
-                "--lua-filter", str(INDEX_FILTER),
-            ]
-            proc = subprocess.run(cmd, capture_output=True, text=True, check=False, env=env)
-            return proc.stdout
+            cmd = ["pandoc", str(md_path), "--from=markdown", "--to=latex",
+                   "--lua-filter", str(INDEX_FILTER)]
+            return subprocess.run(cmd, capture_output=True, text=True, check=False, env=env).stdout
 
     with tempfile.TemporaryDirectory() as tmp:
-        ref_a = "fixturepath/file.md:10"
-        ref_b = "fixturepath/file.md:99"
-
-        # Round 1: only A in print_main → A emits \index, B does not
+        # Round 1: only A in print_main → A's sort key present, B's absent
         tsv_a = make_print_main_tsv(tmp + "/a", ref_a)
         tex_a = run_with_tsv(md_both, tsv_a)
-        count_a = tex_a.count(r"\index[")
         assert_true(
-            count_a == 1,
-            f"Occurrence-gating: with only A in print_main, expected 1 \\index, got {count_a}. tex={tex_a!r}",
+            sort_a in tex_a,
+            f"Occurrence-gating: with only A, expected sort key {sort_a!r} in TeX. tex={tex_a!r}",
+        )
+        assert_true(
+            sort_b not in tex_a,
+            f"Occurrence-gating: with only A, sort key {sort_b!r} must NOT appear. tex={tex_a!r}",
         )
 
-        # Round 2: only B in print_main → B emits \index, A does not
+        # Round 2: only B in print_main → B's sort key present, A's absent
         tsv_b = make_print_main_tsv(tmp + "/b", ref_b)
         tex_b = run_with_tsv(md_both, tsv_b)
-        count_b = tex_b.count(r"\index[")
         assert_true(
-            count_b == 1,
-            f"Occurrence-gating: with only B in print_main, expected 1 \\index, got {count_b}. tex={tex_b!r}",
+            sort_b in tex_b,
+            f"Occurrence-gating: with only B, expected sort key {sort_b!r} in TeX. tex={tex_b!r}",
+        )
+        assert_true(
+            sort_a not in tex_b,
+            f"Occurrence-gating: with only B, sort key {sort_a!r} must NOT appear. tex={tex_b!r}",
         )
 
-        # Sanity: both A and B in print_main → 2 \index commands
+        # Sanity: both A and B in print_main → both sort keys present
         tsv_ab_path = Path(tmp + "/ab")
         tsv_ab_path.mkdir(exist_ok=True)
         tsv_ab = str(tsv_ab_path / "print_main.tsv")
         header = "\t".join(PRINT_MAIN_FIELDS)
-        rows = []
-        for ref in (ref_a, ref_b):
-            rows.append("\t".join([
-                "pgmc", "þénkijaną", "*þénkijaną", "thenkijana",
-                "evidence_form", "explicit_tag", ref, "fixture", "active",
-            ]))
-        Path(tsv_ab).write_text(header + "\n" + "\n".join(rows) + "\n", encoding="utf-8")
+        ab_rows = [
+            "\t".join(["pgmc", FORM, f"*{FORM}", "thenkijana", "evidence_form",
+                        "explicit_tag", ref_a, "fixture", "active"]),
+            "\t".join(["pgmc", FORM, f"*{FORM}", "thenkijana", "evidence_form",
+                        "explicit_tag", ref_b, "fixture", "active"]),
+        ]
+        Path(tsv_ab).write_text(header + "\n" + "\n".join(ab_rows) + "\n", encoding="utf-8")
         tex_ab = run_with_tsv(md_both, tsv_ab)
-        count_ab = tex_ab.count(r"\index[")
         assert_true(
-            count_ab == 2,
-            f"Occurrence-gating: with both A and B in print_main, expected 2 \\index, got {count_ab}. tex={tex_ab!r}",
+            sort_a in tex_ab and sort_b in tex_ab,
+            f"Occurrence-gating: with both, expected both sort keys in TeX. tex={tex_ab!r}",
         )
 
 

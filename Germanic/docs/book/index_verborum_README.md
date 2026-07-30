@@ -56,8 +56,8 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 [*sċuldrum*]{.iv lang=oe sort=sculdrum}
 [skúldramiz]{.recon .iv lang=pgmc sort=skuldramiz}
 [búkkaz]{.recon .iv lang=pgmc sort=bukkaz}
-[*nǣdrǭ*]{.iv lang=pnwgmc sort=naedro}
-[*bækaną*]{.iv lang=preoe sort=baekana}
+[nǣdrǭ]{.recon .iv lang=pnwgmc sort=naedro}
+[bækaną]{.recon .iv lang=preoe sort=baekana}
 [*brjóst*]{.iv lang=on sort=brjost}
 [*scouwōn*]{.iv lang=ohg sort=scouwon}
 [*lēta*]{.iv lang=ofris sort=leta}
@@ -67,6 +67,7 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 [bocc]{.iv lang=oe sort=bocc role=regular_output}
 [bucca]{.iv lang=oe sort=bucca role=comparison_form}
 [skúldramaz]{.recon}
+[voice]{.lex}
 ```
 
 ## Stage ontology
@@ -204,9 +205,9 @@ attested linguistic evidence. These forms **will** contribute to the Index
 Verborum (subject to print-policy decisions in `print_main.tsv`).
 
 ```markdown
-[*sċuldrum*]{.iv lang=oe sort=sculdrum}                    % OE attested form
-[*skúldramiz*]{.iv lang=pgmc sort=skuldramiz}             % PGmc reconstruction
-[schulder]{.iv lang=mlg sort=schulder role=comparison_form} % MLG comparator
+[*sċuldrum*]{.iv lang=oe sort=sculdrum}                        % OE attested form
+[skúldramiz]{.recon .iv lang=pgmc sort=skuldramiz}             % PGmc reconstruction
+[schulder]{.iv lang=mlg sort=schulder role=comparison_form}    % MLG comparator
 ```
 
 ### `.lex` — Lexical mention, intentionally non-indexed
@@ -218,18 +219,21 @@ discussions but will **not** enter the Index Verborum.
 
 `.lex` does **not** mean "unimportant form"; it means the form is cited for its
 lexical/gloss meaning rather than as phonological or morphological evidence.
+Use `.lex` only for attested or ordinary forms; do not use it for reconstructed
+proto-forms (use `.recon` for those).
 
 ```markdown
-[*brunaz*]{.lex lang=pgmc}     % mentioned only for semantic context
 [voice]{.lex}                   % English homonym, not linguistic evidence
+[weard]{.lex lang=oe}           % OE word cited for its meaning, not as phonological evidence
 ```
 
-### `.recon` — Reconstructed form (may or may not be indexed)
+### `.recon` — Proposed historical reconstructed lexical form (may or may not be indexed)
 
-Use `.recon` to mark reconstructed or hypothetical forms. `.recon` and `.iv`
+Use `.recon` to mark proposed historical reconstructed forms. `.recon` and `.iv`
 are **orthogonal**: `.recon .iv` marks a reconstructed form that **is**
 linguistic evidence; `.recon` alone marks a reconstructed form that is
-**not** being indexed (usually a model-internal stage).
+**not** being indexed (typically a model-internal derivation stage or a
+secondary reconstruction not nominated as index evidence).
 
 ```markdown
 [búkkaz]{.recon .iv lang=pgmc sort=bukkaz}  % indexed reconstruction

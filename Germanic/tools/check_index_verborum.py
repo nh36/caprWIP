@@ -163,42 +163,48 @@ def assert_iv_to_production_coverage() -> None:
         assert key in compact_keys, f"Missing known-evidence sentinel in production: {key}"
 
 
-def assert_evidence_discovery_audit_clean() -> None:
-    """Evidence-discovery direction: detect known evidence forms that lack .iv.
+def assert_evidence_audit_sentinels() -> None:
+    """Regression protection for the completed manual evidence audit (2026-07-30).
 
-    Bounded audit (2026-07-30): 0 unresolved candidates after manual review.
-    All .recon-only forms in evidence sections are intentionally non-indexed
-    source reconstructions that are not the selected indexable form for their entry.
+    The bounded audit reviewed all plain-italic forms and .recon-without-.iv spans
+    in evidence sections of every model entry. Finding: 0 unresolved candidates.
+    All .recon-only forms are intentionally non-indexed secondary source reconstructions.
     All plain-italic forms in evidence sections are glosses, ModEng explanations,
-    or development-chain intermediates — not missing .iv candidates.
+    or development-chain intermediates — none required .iv promotion.
 
-    Negative fixture: demonstrates that a form absent from the production index
-    would be detected if it were expected to be there.
+    This function does NOT perform independent corpus-wide evidence discovery.
+    It provides regression sentinels: if a known evidence form loses its .iv
+    tag in source, the positive-sentinel assertion below catches the regression.
+    The negative sentinel demonstrates the detection mechanism is exercised.
+
+    For the audit artifact, see:
+      Germanic/docs/book/index_verborum_preoe_disposition.tsv  (Pre-OE forms)
+      Germanic/docs/book/index_verborum_lex_disposition.tsv    (.lex migration log)
+      Germanic/docs/book/index_verborum_print_decision_matches.tsv
     """
     forms_rows = load_forms_rows()
     production_forms = {(r["language"], r["form"].lstrip("*")) for r in forms_rows}
 
-    # Negative fixture: a synthetic form NOT in production is correctly not found.
-    # If this form were expected, the assertion below would catch the gap:
+    # Negative sentinel: a fabricated form absent from production is correctly not found.
+    # If this form were in the required list, its absence would trigger an assertion error.
     sentinel_absent = ("oe", "SYNTHETIC_ABSENT_FORM_XYZ_2026")
     assert sentinel_absent not in production_forms, (
-        "Fixture: a form absent from production must not appear in the production set — "
-        "detection mechanism is functioning."
+        "Sentinel: a form absent from production must not appear in the production set"
     )
 
-    # Positive sentinels: these forms MUST be in production (they have .iv in source).
-    # If any of these lost their .iv tag, this assertion would catch the regression.
+    # Positive sentinels: known evidence forms that must remain in production.
+    # If any of these lose their .iv tag in source, this assertion catches the regression.
     required_in_production: list[tuple[str, str]] = [
-        ("mlg", "schulder"),    # shoulder: MLG comparator — known evidence form
-        ("me", "stam"),         # stem: ME comparator — known evidence form
-        ("ohg", "foll"),        # full: OHG comparator — known evidence form
-        ("oe", "heofon"),       # heaven: canonical OE target — known evidence form
+        ("mlg", "schulder"),    # shoulder: MLG comparator
+        ("me", "stam"),         # stem: ME comparator
+        ("ohg", "foll"),        # full: OHG comparator
+        ("oe", "heofon"),       # heaven: canonical OE target
         ("oe", "wull"),         # wool: OE target (role corrected 2026-07-30)
     ]
     for lang, form in required_in_production:
         assert (lang, form) in production_forms, (
-            f"Evidence discovery: known evidence form missing from production index: ({lang!r}, {form!r}). "
-            "If this form lost its .iv tag in source, this assertion would catch it."
+            f"Evidence sentinel: known evidence form missing from production index: "
+            f"({lang!r}, {form!r}). Check that its .iv tag is still present in source."
         )
 
 
@@ -1231,7 +1237,7 @@ def main() -> None:
     assert_sort_keys()
     assert_explicit_tags()
     assert_iv_to_production_coverage()
-    assert_evidence_discovery_audit_clean()
+    assert_evidence_audit_sentinels()
     assert_production_rows()
     assert_written_table_schema()
     assert_overrides_load()
