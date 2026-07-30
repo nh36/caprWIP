@@ -83,7 +83,7 @@ def main() -> None:
     }
 
     for row in print_main_rows:
-        assert row.get("language") != "preoe", f"preoe row leaked into print_main: {row}"
+        # preoe rows are allowed when explicitly curated into print_main.
         assert not (row.get("source_scope") or "").startswith("reader_failure_"), f"reader_failure row leaked into print_main: {row}"
         if row.get("form_role") == "regular_output":
             key = (row.get("language", ""), row.get("form", ""), row.get("form_role", ""), row.get("source_ref", ""))

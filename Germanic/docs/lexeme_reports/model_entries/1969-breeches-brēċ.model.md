@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun under `*brōk-`, with Old English `brōc` 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc [brōkiz]{.recon .iv lang=nwgmc sort=brokiz role=comparison_form} 'breeches' > [breeci]{.recon} 'breeches' > OE `bréc` 'breeches' [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the selected input here is the plural noun form [brōkiz]{.recon .iv lang=nwgmc sort=brokiz role=selected_input} 'breeches'.
+Kroonen cites the noun under `*brōk-`, with Old English `brōc` 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc [brōkiz]{.recon .iv lang=pnwgmc sort=brokiz role=comparison_form} 'breeches' > [breeci]{.recon} 'breeches' > OE `bréc` 'breeches' [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the selected input here is the plural noun form [brōkiz]{.recon .iv lang=pnwgmc sort=brokiz role=selected_input} 'breeches'.
 
 ### Old English evidence
 

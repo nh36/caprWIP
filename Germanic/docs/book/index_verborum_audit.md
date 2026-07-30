@@ -1,21 +1,21 @@
 # Index verborum audit
 
-- Internal production occurrences: 2230
-- Internal production unique forms: 1030
+- Internal production occurrences: 2228
+- Internal production unique forms: 1029
 - Printed main-index occurrences: 2138
-- Printed main-index unique forms: 1017
-- Print-excluded occurrences: 92
-- Print-excluded unique forms: 73
-- Print exclusions (preoe_model_internal_default_exclusion): 0
+- Printed main-index unique forms: 1018
+- Print-excluded occurrences: 90
+- Print-excluded unique forms: 70
+- Print exclusions (preoe_model_internal_default_exclusion): 2
 - Print exclusions (regular_output_default_exclusion): 88
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
-- Print exclusions (excluded_by_print_decision): 4
-- Internal-only rows (preoe_model_internal_default_exclusion): 0
+- Print exclusions (excluded_by_print_decision): 0
+- Internal-only rows (preoe_model_internal_default_exclusion): 2
 - Internal-only rows (regular_output_default_exclusion): 88
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
-- Internal-only rows (excluded_by_print_decision): 4
+- Internal-only rows (excluded_by_print_decision): 0
 - Pre-OE review rows: 8
 - Reader-facing example candidate rows: 741
 - Reader-facing rows include_in_example_index=yes: 419
@@ -34,7 +34,7 @@
 - Table semantic auto-promoted: 25
 - Table semantic suggestions: 18
 - Table semantic deferred decisions: 8
-- Table semantic ignored: 1
+- Table semantic ignored: 3
 - Table semantic notation / compound expressions: 15
 - Already indexed nearby: 0
 - Ignored fragments or sequences: 306
@@ -49,9 +49,9 @@
 | --- | ---: | ---: |
 | Old English | 1215 | 453 |
 | Proto-Germanic | 932 | 514 |
+| Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
-| Proto-Northwest Germanic | 4 | 2 |
-| Pre-Old-English and model-internal forms | 8 | 7 |
+| Pre-Old English / prehistoric English | 8 | 7 |
 | Old Norse | 12 | 9 |
 | Old High German | 18 | 14 |
 | Old Frisian | 7 | 6 |
@@ -81,6 +81,11 @@
 - `*báiną` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:29)
 - `*báiną` (lexical_protoform; bone — OE bān)
 
+### Proto-Northwest Germanic
+
+- `brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
+- `brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
+
 ### Proto-West Germanic
 
 - `*bakan` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
@@ -89,19 +94,12 @@
 - `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24)
 - `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48)
 
-### Proto-Northwest Germanic
+### Pre-Old English / prehistoric English
 
-- `brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
-- `brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
 - `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
 - `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
-
-### Pre-Old-English and model-internal forms
-
 - `*sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 - `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
-- `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57)
-- `*spárēθi` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58)
 - `*sparja-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 
 ### Old Norse
@@ -176,9 +174,9 @@
 | target_form | 367 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 748 |
+| comparison_form | 751 |
 | regular_output | 88 |
-| evidence_form | 165 |
+| evidence_form | 160 |
 
 ## Printed main-index forms by language
 
@@ -186,9 +184,9 @@
 | --- | ---: | ---: |
 | Old English | 1127 | 443 |
 | Proto-Germanic | 932 | 514 |
+| Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
-| Proto-Northwest Germanic | 4 | 2 |
-| Pre-Old-English and model-internal forms | 4 | 4 |
+| Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 12 | 9 |
 | Old High German | 18 | 14 |
 | Old Frisian | 7 | 6 |
@@ -207,14 +205,14 @@
 | target_form | 367 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 748 |
-| evidence_form | 161 |
+| comparison_form | 749 |
+| evidence_form | 160 |
 
 ## Internal-only rows by reason
 
 | Reason | Occurrences |
 | --- | ---: |
-| excluded_by_print_decision | 4 |
+| preoe_model_internal_default_exclusion | 2 |
 | regular_output_default_exclusion | 88 |
 
 ## Already indexed in same entry
@@ -1097,7 +1095,7 @@
 | `bēġra` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bisceoprocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*bō-jenō` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*breeci` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*breeci` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | pnwgmc | selected_input | selected input described in prose |
 | `breóstrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*budmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*budmō` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
@@ -2178,6 +2176,8 @@ _None._
 
 | Form | Source | Reason |
 | --- | --- | --- |
+| `*spárē` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57 | probe/comparison helper in table, not a standalone index occurrence |
+| `*spárēθi` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58 | probe/comparison helper in table, not a standalone index occurrence |
 | `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95 | wrong homonym noted in table; must not be indexed from stem/prow row 2216 |
 
 ## Table semantic notation / compound expressions

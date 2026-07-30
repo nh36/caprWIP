@@ -1,12 +1,7 @@
 action	language	form	source_ref	form_role	note
-include_main	pwgmc	bakan	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md	evidence_form	Source-backed (Ringe-Taylor) WGmc development stage; include in printed main index.
-include_main	nwgmc	hebun	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	evidence_form	Source-backed (Ringe-Taylor) northern WGmc form; include in printed main index.
-include_main	pwgmc	timbr	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	comparison_form	Source-backed (Ringe-Taylor) West Germanic comparison form; include in printed main index.
-include_main	preoe	spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	evidence_form	Source-backed (Sievers-Brunner) pre-OE continuation; include in printed main index.
-exclude_main	preoe	*sparai-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	evidence_form	Model-internal pre-OE formation; exclude from printed main index.
-exclude_main	preoe	*sparja-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	evidence_form	Model-internal pre-OE formation; exclude from printed main index.
-exclude_main	preoe	*spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	evidence_form	Model-stage pre-OE output; exclude from printed main index.
-exclude_main	preoe	*spárēθi	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	evidence_form	Model-stage pre-OE output; exclude from printed main index.
-include_main	preoe	*weraldiz	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	comparison_form	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
-include_main	preoe	*weraldu	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	comparison_form	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
-include_main	preoe	*weruld	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	comparison_form	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
+include_main	preoe	spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	comparison_form	Source-backed (Sievers-Brunner) pre-OE continuation; include in printed main index.
+include_main	preoe	sparai-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	comparison_form	Source-backed Ringe-Taylor English-branch comparative reconstruction; include in printed main index.
+include_main	preoe	sparja-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	comparison_form	Source-backed Ringe-Taylor English-branch comparative reconstruction; include in printed main index.
+include_main	preoe	weraldiz	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	comparison_form	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
+include_main	preoe	weraldu	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	comparison_form	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
+include_main	preoe	weruld	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	comparison_form	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.

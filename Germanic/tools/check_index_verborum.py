@@ -23,6 +23,7 @@ from build_index_verborum import (
     infer_broad_prose_suggestion,
     load_broad_prose_decisions,
     load_print_decisions,
+    print_decision_matches_row,
     load_table_decisions,
     load_unresolved_baseline,
     split_print_main_rows,
@@ -54,6 +55,7 @@ SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_suggesti
 BROAD_SUGGESTIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_suggestions.tsv"
 DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_table_decisions.tsv"
 BROAD_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_broad_prose_decisions.tsv"
+MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 
 
 def load_forms_rows() -> list[dict[str, str]]:
@@ -89,6 +91,71 @@ def load_preoe_review_rows() -> list[dict[str, str]]:
 def load_reader_facing_example_rows() -> list[dict[str, str]]:
     with READER_FACING_EXAMPLE_PATH.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
+
+
+_IV_SPAN_RE = re.compile(r"\[([^\]]+)\]\{([^}]*\biv\b[^}]*)\}")
+_LANG_ATTR_RE = re.compile(r"\blang=([a-z]+)\b")
+_ROLE_ATTR_RE = re.compile(r"\brole=([a-z_]+)\b")
+
+
+def _normalize_iv_form(content: str) -> str:
+    cleaned = content.strip()
+    if cleaned.startswith("`") and cleaned.endswith("`"):
+        cleaned = cleaned[1:-1]
+    if cleaned.startswith("*") and cleaned.endswith("*") and len(cleaned) > 2:
+        cleaned = cleaned[1:-1]
+    return cleaned.strip().lstrip("*")
+
+
+def _is_simple_form(text: str) -> bool:
+    if not text:
+        return False
+    if any(token in text for token in (" ", ">", "<", "(", ")", ",", ";", " / ")):
+        return False
+    return True
+
+
+def assert_independent_iv_coverage() -> None:
+    forms_rows = load_forms_rows()
+    production_keys = set()
+    for row in forms_rows:
+        source_ref = row["source_ref"]
+        source_path = source_ref.rsplit(":", 1)[0] if ":" in source_ref else source_ref
+        production_keys.add((row["language"], row["form"].lstrip("*"), row["form_role"], source_path))
+
+    missing: list[tuple[str, str, str, str]] = []
+    for model_path in sorted(MODEL_ENTRIES_DIR.glob("*.model.md")):
+        text = model_path.read_text(encoding="utf-8")
+        source_path = model_path.relative_to(REPO_ROOT).as_posix()
+        for match in _IV_SPAN_RE.finditer(text):
+            attrs = match.group(2)
+            lang_m = _LANG_ATTR_RE.search(attrs)
+            if not lang_m:
+                continue
+            lang = lang_m.group(1)
+            role_m = _ROLE_ATTR_RE.search(attrs)
+            role = role_m.group(1) if role_m else "evidence_form"
+            form = _normalize_iv_form(match.group(1))
+            if not _is_simple_form(form):
+                continue
+            if (lang, form, role, source_path) not in production_keys:
+                missing.append((lang, form, role, source_path))
+
+    assert not missing, (
+        "Independent .iv coverage audit found missing production rows:\n"
+        + "\n".join(f"{lang}\t{form}\t{role}\t{src}" for lang, form, role, src in missing[:25])
+    )
+
+    sentinel_keys = {
+        ("mlg", "schulder", "comparison_form"),
+        ("me", "stam", "comparison_form"),
+        ("ohg", "foll", "comparison_form"),
+        ("oe", "duru", "comparison_form"),
+        ("pnwgmc", "brōkiz", "comparison_form"),
+    }
+    compact_keys = {(row["language"], row["form"], row["form_role"]) for row in forms_rows}
+    for key in sentinel_keys:
+        assert key in compact_keys, f"Missing known-evidence sentinel in production: {key}"
 
 
 def load_suggestion_rows() -> list[dict[str, str]]:
@@ -936,6 +1003,13 @@ def assert_print_layer_outputs() -> None:
     forms_rows = load_forms_rows()
     main_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in main_rows}
     decisions = load_print_decisions()
+    production_occurrences = build_production_rows()
+    # Every print decision must map to exactly one production occurrence.
+    # This prevents stale decisions and accidental multi-occurrence leakage.
+    for decision in decisions:
+        matches = [row for row in production_occurrences if print_decision_matches_row(decision, row)]
+        assert matches, f"Stale print decision (0 matches): {decision}"
+        assert len(matches) == 1, f"Ambiguous print decision ({len(matches)} matches): {decision}"
     builder_text = BUILDER_PATH.read_text(encoding="utf-8")
     docker_build_text = BOOK_DRAFT_DOCKER_BUILD_PATH.read_text(encoding="utf-8")
     filter_text = FILTER_LUA_PATH.read_text(encoding="utf-8")
@@ -1003,7 +1077,7 @@ def assert_print_layer_outputs() -> None:
             ), f"{form} should be in excluded as regular_output_default_exclusion"
 
     assert ("pgmc", "*θánkijaną", "source_protoform", "think — OE þenċan") in main_keys
-    for language in ("pgmc", "pwgmc", "nwgmc"):
+    for language in ("pie", "pgmc", "pnwgmc", "pwgmc", "paf"):
         source_like_rows = [
             row for row in forms_rows
             if row["language"] == language
@@ -1119,6 +1193,7 @@ def assert_reconstructed_oe_index_commands() -> None:
 def main() -> None:
     assert_sort_keys()
     assert_explicit_tags()
+    assert_independent_iv_coverage()
     assert_production_rows()
     assert_written_table_schema()
     assert_overrides_load()

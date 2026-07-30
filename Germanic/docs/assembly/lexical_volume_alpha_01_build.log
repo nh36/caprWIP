@@ -1,4 +1,7 @@
 pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
 pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
 pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
-pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+Error producing PDF.
+! Undefined control sequence.
+l.251 ...the masculine entry to a feminine {\Recon
+

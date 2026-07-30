@@ -714,7 +714,7 @@ Old English form: _brēċ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc [brōkiz]{.recon .iv lang=nwgmc sort=brokiz role=comparison_form} 'breeches' > [breeci]{.recon} 'breeches' > OE _bréc_ 'breeches' [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the derivational input here is the plural noun form [brōkiz]{.recon .iv lang=nwgmc sort=brokiz role=selected_input} 'breeches'.
+Kroonen cites the noun under _\*brōk-_, with Old English _brōc_ 'breeches' and plural 'breeches' among its reflexes [@Kroonen2013]. Ringe and Taylor give the plural development directly as PNWGmc [brōkiz]{.recon .iv lang=pnwgmc sort=brokiz role=comparison_form} 'breeches' > [breeci]{.recon} 'breeches' > OE _bréc_ 'breeches' [@RingeTaylor2014]. The deeper verbal base belongs to the noun's etymological background, while the derivational input here is the plural noun form [brōkiz]{.recon .iv lang=pnwgmc sort=brokiz role=selected_input} 'breeches'.
 
 #### Old English evidence
 
@@ -7113,7 +7113,7 @@ Old English form: _sparian_
 
 Kroonen keeps the inherited verb under class-III [_\*sparēn-_]{.iv lang=pgmc sort=sparen}
 [@Kroonen2013, 465]. Orel similarly preserves [[sparēnan]{.recon} ‘spare’]{.iv lang=pgmc sort=sparenan} [@Orel2003, 362]. Ringe
-and Taylor, however, reconstruct [_\*sparai-_]{.iv lang=preoe sort=sparai} ~ [_\*sparja-_]{.iv lang=preoe sort=sparja} for the English branch
+and Taylor, however, reconstruct [[sparai-]{.recon}]{.iv lang=preoe sort=sparai role=comparison_form} ~ [[sparja-]{.recon}]{.iv lang=preoe sort=sparja role=comparison_form} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
 The derivational input [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparojana} therefore represents the refashioned class-II
 formation behind Old English [_sparian_]{.iv lang=oe sort=sparian} 'spare', while the citation reconstruction
@@ -7137,7 +7137,7 @@ regular. The regular derivation shows brightening, restoration of _a_ before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
 reduction, and contraction to [_sparian_]{.iv lang=oe sort=sparian} 'spare'. By contrast, Brunner's rule against
 further apocope of final _-e_ explains why Ritual [_spær_]{.iv lang=oe sort=spaer} 'spare' cannot be the regular
-continuation of inherited [[spárē]{.recon} ‘spare’]{.iv lang=preoe sort=spare} [@SieversBrunner1965, §150].
+continuation of inherited [[spárē]{.recon} ‘spare’]{.iv lang=preoe sort=spare role=comparison_form} [@SieversBrunner1965, §150].
 
 #### Formation comparison
 
@@ -7147,8 +7147,8 @@ with the refashioned class-II one that yields the citation verb.
 | Formation / comparison | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | inherited class-III infinitive | [_\*spárēną_]{.iv lang=pgmc sort=sparena} | paradigm comparison / probe output: [_sparen_]{.iv lang=oe sort=sparen} | [_sparian_]{.iv lang=oe sort=sparian} 'spare' | wrong class and wrong ending for the citation verb |
-| inherited class-III imperative singular | [_\*spárē_]{.iv lang=preoe sort=spare} | paradigm comparison / probe output: [_spære_]{.iv lang=oe sort=spaere} | Ritual [_spær_]{.iv lang=oe sort=spaer} 'spare' | loss of final _-e_ is not regular, so the relic form cannot control the entry |
-| inherited class-III finite present | [_\*spárēθi_]{.iv lang=preoe sort=sparethi} | paradigm comparison / probe output: [_spæreþ_]{.iv lang=oe sort=spaereth} | [_spearad_]{.iv lang=oe sort=spearad} 'spare' | attested form is mixed, not a direct continuation of the inherited cell |
+| inherited class-III imperative singular | _\*spárē_ | paradigm comparison / probe output: [_spære_]{.iv lang=oe sort=spaere} | Ritual [_spær_]{.iv lang=oe sort=spaer} 'spare' | loss of final _-e_ is not regular, so the relic form cannot control the entry |
+| inherited class-III finite present | _\*spárēθi_ | paradigm comparison / probe output: [_spæreþ_]{.iv lang=oe sort=spaereth} | [_spearad_]{.iv lang=oe sort=spearad} 'spare' | attested form is mixed, not a direct continuation of the inherited cell |
 | selected class-II formation | [_\*spárōjaną_]{.iv lang=pgmc sort=sparojana} | documented regular output: [_sparian_]{.iv lang=oe sort=sparian} 'spare' | [_sparian_]{.iv lang=oe sort=sparian} 'spare' | exact match between derivational input and Old English citation form |
 
 ### staff — OE _stæf_
@@ -8059,7 +8059,7 @@ OE-facing stage chosen for the derivation.
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | [_\*weraldiz_]{.iv lang=preoe sort=weraldiz role=comparison_form} > [_\*weraldu_]{.iv lang=preoe sort=weraldu role=comparison_form} > [_\*weruld_]{.iv lang=preoe sort=weruld role=comparison_form} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form} 'world' | explains the older comparative literature cited for the word |
+| literature-stage lowered compound after early stem-class shift | [[weraldiz]{.recon}]{.iv lang=preoe sort=weraldiz role=comparison_form} > [[weraldu]{.recon}]{.iv lang=preoe sort=weraldu role=comparison_form} > [[weruld]{.recon}]{.iv lang=preoe sort=weruld role=comparison_form} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form} 'world' | explains the older comparative literature cited for the word |
 | Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc sort=wiraldu role=selected_input} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output} 'world' | exact match for the West Saxon form used here |
 | broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form} 'world' | real attested comparanda that remain outside that West Saxon line |
 
@@ -8984,13 +8984,13 @@ oblique singular form within that paradigm rather than the lexeme-level
 citation form [[xémenaz]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemenaz}.
 
 The back-vocalic oblique stem accounts for the West Saxon target. Ringe and Taylor give
-northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=nwgmc sort=hebun role=comparison_form} > West Saxon and Northumbrian [_heofon_]{.iv lang=oe sort=heofon} 'heaven', Mercian
+northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=preoe sort=hebun role=comparison_form} > West Saxon and Northumbrian [_heofon_]{.iv lang=oe sort=heofon} 'heaven', Mercian
 [_heofen_]{.iv lang=oe sort=heofen} 'heaven' [@RingeTaylor2014, 324]. Campbell likewise gives [_heofon_]{.iv lang=oe sort=heofon} 'heaven' beside
 [_hefen_]{.iv lang=oe sort=hefen} 'heaven' in the same West-Saxon _u_-umlaut environment [@Campbell1959, §210.1].
 
 #### Old English evidence
 
-Old English dictionaries record the standard West Saxon noun as [_heofon_]{.iv lang=oe sort=heofon} 'heaven' 'heaven',
+Old English dictionaries record the standard West Saxon noun as [_heofon_]{.iv lang=oe sort=heofon} 'heaven',
 alongside Anglian or Mercian [_hefen_]{.iv lang=oe sort=hefen} 'heaven' material [@ClarkHall1960, 188;
 @BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' in the
 history of the word [@Campbell1959, §381].
@@ -9002,7 +9002,7 @@ line.
 #### Development to Old English
 
 From [[xémonų]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemonu}, the West Saxon line passes through the oblique-stem type
-reflected in northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=nwgmc sort=hebun role=comparison_form} [@RingeTaylor2014, 324]. Campbell's
+reflected in northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=preoe sort=hebun role=comparison_form} [@RingeTaylor2014, 324]. Campbell's
 [_heofon_]{.iv lang=oe sort=heofon} 'heaven' beside [_hefen_]{.iv lang=oe sort=hefen} 'heaven' and earlier [_hefzen_]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
 back-mutation and suffix reshaping behind [_heofon_]{.iv lang=oe sort=heofon} 'heaven'
 [@Campbell1959, §210.1; @Campbell1959, §381].

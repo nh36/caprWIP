@@ -71,10 +71,6 @@ local function ensure_print_main_loaded()
         end
         explicit_allow[explicit_key(language, role, form, source_ref)] = true
         explicit_allow[explicit_key(language, role, display, source_ref)] = true
-        if role ~= "regular_output" then
-          explicit_allow[explicit_key(language, role, form, "")] = true
-          explicit_allow[explicit_key(language, role, display, "")] = true
-        end
       end
     end
   end
@@ -133,16 +129,10 @@ local function explicit_tag_is_printable(language, role, form, display, source_r
   -- Note: preoe forms are now allowed to print if they appear in print_main.
   -- The blanket preoe exclusion was removed (§11 fix); use print_main as the authority.
   local allow = ensure_print_main_loaded()
-  if role == "regular_output" then
-    if source_ref == "" then
-      return false
-    end
-    return allow[explicit_key(language, role, form, source_ref)] or allow[explicit_key(language, role, display, source_ref)] or false
+  if source_ref == "" then
+    return false
   end
-  if source_ref ~= "" and (allow[explicit_key(language, role, form, source_ref)] or allow[explicit_key(language, role, display, source_ref)]) then
-    return true
-  end
-  return allow[explicit_key(language, role, form, "")] or allow[explicit_key(language, role, display, "")] or false
+  return allow[explicit_key(language, role, form, source_ref)] or allow[explicit_key(language, role, display, source_ref)] or false
 end
 
 local function span_to_index(span)

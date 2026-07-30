@@ -957,13 +957,14 @@ pgmc	*xwaliz	xwaliz	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/
 pgmc	*xwḯlō	xwilo	1	selected_input	trace_proto_input	while — OE hwīl
 pgmc	*xwḯnaną	xwinana	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:32; Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:47; Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:64; whine — OE hwīnan
 pgmc	*xwinanan	xwinanan	1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:24
+pnwgmc	brōkiz	brokiz	2	comparison_form; selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21
 pwgmc	*bakan	bakan	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21
 pwgmc	*skuldru	skuldru	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21
 pwgmc	*skúldru	skuldru	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48
 pwgmc	*timbr	timbr	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48
-nwgmc	brōkiz	brokiz	2	comparison_form; selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21
-nwgmc	*hebun	hebun	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45
-preoe	*spárē	spare	1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47
+preoe	*sparai-	sparai	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
+preoe	*spárē	spare	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47
+preoe	*sparja-	sparja	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
 preoe	*weraldiz	weraldiz	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
 preoe	*weraldu	weraldu	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
 preoe	*weruld	weruld	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68

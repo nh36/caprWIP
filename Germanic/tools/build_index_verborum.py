@@ -239,7 +239,7 @@ TABLE_STOPWORDS = {
     "goth",
     "pgmc",
     "pwgmc",
-    "nwgmc",
+    "pnwgmc",
     "pre-oe",
 }
 TABLE_SELECTED_PHRASES = (
@@ -468,7 +468,7 @@ TABLE_METADATA_LABELS = {
     "goth",
     "pgmc",
     "pwgmc",
-    "nwgmc",
+    "pnwgmc",
     "pre-oe",
 }
 BARE_TABLE_CELL_RE = re.compile(r"^\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*(?:/\s*\*?[A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ.-]+\s*)*$")
@@ -675,6 +675,13 @@ def normalize_form(text: str) -> str:
     return cleaned if looks_formlike(cleaned) else ""
 
 
+def normalize_decision_form(text: str) -> str:
+    value = text.strip()
+    if value.startswith("`") and value.endswith("`"):
+        value = value[1:-1]
+    return value.strip("`.,;:!?()[]{}“”\"' ")
+
+
 def relative_source_path(path: Path) -> str:
     try:
         return path.relative_to(REPO_ROOT).as_posix()
@@ -688,8 +695,8 @@ def stage_to_language(label: str, form: str) -> str:
         return "pgmc"
     if compact.startswith(("PWGmc", "Proto-West Germanic", "Proto-West-Germanic")):
         return "pwgmc"
-    if compact.startswith(("NWGmc", "Proto-Northwest Germanic", "Proto-Northwest-Germanic")):
-        return "nwgmc"
+    if compact.startswith(("PNWGmc", "NWGmc", "Proto-Northwest Germanic", "Proto-Northwest-Germanic")):
+        return "pnwgmc"
     if compact.startswith(("Old Norse", "ON")):
         return "on"
     if compact.startswith(("Old Saxon", "OS")):
@@ -1169,7 +1176,9 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b", "oe"),
         (r"\bproto-germanic\b", "pgmc"),
         (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
-        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "nwgmc"),
+        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "pnwgmc"),
+        (r"\bproto-anglo-frisian\b|\bproto-anglofrisian\b", "paf"),
+        (r"\bproto-indo-european\b|\bproto-indo-european\b|\bpie\b", "pie"),
         (
             r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
             r"later hardening stage|pre-oe stage|pre-old-english stage|"
@@ -1189,7 +1198,10 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"(?<![A-Za-z])Goth(?![A-Za-z])", "goth"),
         (r"(?<![A-Za-z])PGmc(?![A-Za-z])", "pgmc"),
         (r"(?<![A-Za-z])PWGmc(?![A-Za-z])", "pwgmc"),
-        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "nwgmc"),
+        (r"(?<![A-Za-z])PNWGmc(?![A-Za-z])", "pnwgmc"),
+        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "pnwgmc"),
+        (r"(?<![A-Za-z])PAF(?![A-Za-z])", "paf"),
+        (r"(?<![A-Za-z])PIE(?![A-Za-z])", "pie"),
     ]
     for pattern, code in code_patterns:
         if re.search(pattern, text):
@@ -1465,6 +1477,8 @@ def load_broad_prose_decisions() -> list[dict[str, str]]:
         if action in {"accept", "defer"}:
             if not row.get("language"):
                 raise ValueError(f"Broad prose decision {action} requires language: {row}")
+            if row["language"] not in KNOWN_LANGUAGE_CODES:
+                raise ValueError(f"Broad prose decision has unknown language code: {row}")
             if row.get("form_role") not in ALLOWED_FORM_ROLES:
                 raise ValueError(f"Broad prose decision {action} requires a valid form_role: {row}")
     return rows
@@ -1480,12 +1494,15 @@ def load_print_decisions() -> list[dict[str, str]]:
         if action not in PRINT_DECISION_ACTIONS:
             raise ValueError(f"Unknown print decision action: {action or '<blank>'}")
         if row.get("form"):
-            row["form"] = normalize_form(row["form"])
+            row["form"] = normalize_decision_form(row["form"])
         if action in {"include_main", "exclude_main"} and not row.get("source_ref") and not row.get("form"):
             raise ValueError(f"Print decision {action} requires at least form or source_ref: {row}")
         role = row.get("form_role", "")
         if role and role not in ALLOWED_FORM_ROLES:
             raise ValueError(f"Print decision has invalid form_role: {row}")
+        language = row.get("language", "")
+        if language and language not in KNOWN_LANGUAGE_CODES:
+            raise ValueError(f"Print decision has unknown language code: {row}")
     return rows
 
 
@@ -1626,6 +1643,8 @@ def load_table_decisions() -> list[dict[str, str]]:
         if action in {"accept", "defer"}:
             if not row.get("language"):
                 raise ValueError(f"Table decision {action} requires language: {row}")
+            if row["language"] not in KNOWN_LANGUAGE_CODES:
+                raise ValueError(f"Table decision has unknown language code: {row}")
             if row.get("form_role") not in ALLOWED_FORM_ROLES:
                 raise ValueError(f"Table decision {action} requires a valid form_role: {row}")
     return rows
@@ -2127,7 +2146,8 @@ def likely_category_language(category: str) -> str:
         "likely_oe": "oe",
         "likely_pgmc": "pgmc",
         "likely_pwgmc": "pwgmc",
-        "likely_nwgmc": "nwgmc",
+        "likely_nwgmc": "pnwgmc",
+        "likely_pnwgmc": "pnwgmc",
         "likely_preoe": "preoe",
         "likely_on": "on",
         "likely_os": "os",
@@ -2154,7 +2174,9 @@ def inline_labeled_language(candidate: CandidateOccurrence) -> str:
         (rf"\b(?:oe|old english)\s+{form}\b", "oe"),
         (rf"\b(?:pgmc|proto-germanic)\s+{form}\b", "pgmc"),
         (rf"\b(?:pwgmc|proto-west germanic)\s+{form}\b", "pwgmc"),
-        (rf"\b(?:nwgmc|proto-northwest germanic)\s+{form}\b", "nwgmc"),
+        (rf"\b(?:pnwgmc|nwgmc|proto-northwest germanic)\s+{form}\b", "pnwgmc"),
+        (rf"\b(?:paf|proto-anglo-frisian)\s+{form}\b", "paf"),
+        (rf"\b(?:pie|proto-indo-european)\s+{form}\b", "pie"),
         (rf"\b(?:on|old norse)\s+{form}\b", "on"),
         (rf"\b(?:os|old saxon)\s+{form}\b", "os"),
         (rf"\b(?:ohg|old high german)\s+{form}\b", "ohg"),
@@ -2203,7 +2225,7 @@ def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
     hints = explicit_language_hints(text)
     non_oe_hints = hints - {"oe"}
     if candidate.form.startswith("*"):
-        for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
+        for code in ("preoe", "paf", "pwgmc", "pnwgmc", "pgmc", "pie"):
             if code in hints:
                 return code
         if len(non_oe_hints) == 1:
@@ -2380,7 +2402,9 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b", "oe"),
         (r"\bproto-germanic\b", "pgmc"),
         (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
-        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "nwgmc"),
+        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "pnwgmc"),
+        (r"\bproto-anglo-frisian\b|\bproto-anglofrisian\b", "paf"),
+        (r"\bproto-indo-european\b|\bproto-indo-european\b|\bpie\b", "pie"),
         (
             r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
             r"later hardening stage|pre-oe stage|pre-old-english stage|"
@@ -2400,7 +2424,10 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"(?<![A-Za-z])Goth(?![A-Za-z])", "goth"),
         (r"(?<![A-Za-z])PGmc(?![A-Za-z])", "pgmc"),
         (r"(?<![A-Za-z])PWGmc(?![A-Za-z])", "pwgmc"),
-        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "nwgmc"),
+        (r"(?<![A-Za-z])PNWGmc(?![A-Za-z])", "pnwgmc"),
+        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "pnwgmc"),
+        (r"(?<![A-Za-z])PAF(?![A-Za-z])", "paf"),
+        (r"(?<![A-Za-z])PIE(?![A-Za-z])", "pie"),
     ]
     for pattern, code in code_patterns:
         if re.search(pattern, text):
@@ -2444,7 +2471,7 @@ def infer_table_semantic_language(
                 return "", False
             return "pgmc", False
     if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
-        for code in ("preoe", "pwgmc", "nwgmc", "pgmc"):
+        for code in ("preoe", "paf", "pwgmc", "pnwgmc", "pgmc", "pie"):
             if code in hints:
                 return code, True
         return "pgmc", True
@@ -2874,7 +2901,17 @@ def split_print_main_rows(
     production_rows: list[ProductionOccurrence],
     decisions: list[dict[str, str]] | None = None,
 ) -> tuple[list[ProductionOccurrence], list[dict[str, str]]]:
-    print_decisions = decisions or load_print_decisions()
+    print_decisions = decisions if decisions is not None else load_print_decisions()
+    for decision in print_decisions:
+        matches = [row for row in production_rows if print_decision_matches_row(decision, row)]
+        if not matches:
+            raise ValueError(f"Stale print decision matches 0 production rows: {decision}")
+        if len(matches) > 1:
+            refs = sorted({row.source_ref for row in matches})
+            raise ValueError(
+                "Ambiguous print decision matches multiple production rows "
+                f"({len(matches)}): {decision} -- matched source_refs={refs[:5]}"
+            )
 
     included: list[ProductionOccurrence] = []
     excluded: list[dict[str, str]] = []

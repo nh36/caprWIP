@@ -1,15 +1,15 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2230
-- Internal production unique forms: 1030
+- Internal production occurrences: 2228
+- Internal production unique forms: 1029
 - Printed main occurrences: 2138
-- Printed main unique forms: 1017
-- Printed excluded occurrences: 92
-- Printed excluded unique forms: 73
+- Printed main unique forms: 1018
+- Printed excluded occurrences: 90
+- Printed excluded unique forms: 70
 
 ## Print exclusions by reason
 
-- `excluded_by_print_decision`: 4
+- `preoe_model_internal_default_exclusion`: 2
 - `regular_output_default_exclusion`: 88
 
 ## Printed main-index forms by language
@@ -18,9 +18,9 @@
 | --- | ---: | ---: |
 | Old English | 1127 | 443 |
 | Proto-Germanic | 932 | 514 |
+| Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
-| Proto-Northwest Germanic | 4 | 2 |
-| Pre-Old-English and model-internal forms | 4 | 4 |
+| Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 12 | 9 |
 | Old High German | 18 | 14 |
 | Old Frisian | 7 | 6 |
@@ -39,18 +39,17 @@
 | target_form | 367 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 748 |
-| evidence_form | 161 |
+| comparison_form | 749 |
+| evidence_form | 160 |
 
 ## Internal-only rows by reason
 
-- `excluded_by_print_decision`: 4
+- `preoe_model_internal_default_exclusion`: 2
 - `regular_output_default_exclusion`: 88
 
 ## Pre-OE review rows by proposed status
 
-- `exclude_model_internal`: 4
-- `include_if_source_backed`: 4
+- `include_if_source_backed`: 8
 
 ## Reader-facing example rows by role
 
@@ -66,8 +65,8 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1018
-- Print anomaly rows: 52
+- Unique printed entries: 1019
+- Print anomaly rows: 54
 - Hard print anomalies: 0
 
 ## Unique printed entries: first 20 Old English
@@ -159,8 +158,8 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 259
-- `yes`: 160
+- `no`: 260
+- `yes`: 159
 
 - Included whole-form rows with asterisks: 388
 - Included whole-form rows without asterisks: 31
@@ -191,10 +190,8 @@
 
 ## Excluded pre-OE/model-internal rows (sample)
 
-- `*sparai-` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
-- `*spárē` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57)
-- `*spárēθi` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58)
-- `*sparja-` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
+- `*hebun` (preoe, comparison_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
+- `*hebun` (preoe, comparison_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
 
 ## Print anomalies (sample)
 

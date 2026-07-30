@@ -1273,14 +1273,14 @@ def _run_builder_to_temp(builder: Path, repo_root: Path) -> str | None:
 # Language code registry — derived from the canonical index_verborum_languages.tsv
 # Invalid codes are those not in the registry but sometimes misused.
 _LANGUAGES_TSV = ROOT / "docs" / "book" / "index_verborum_languages.tsv"
-_INVALID_LANG_CODES: frozenset[str] = frozenset({"la", "english", "wgmc"})
+_INVALID_LANG_CODES: frozenset[str] = frozenset({"la", "english", "wgmc", "nwgmc"})
 
 
 def _load_approved_lang_codes() -> frozenset[str]:
     """Load approved language codes from the canonical registry."""
     if not _LANGUAGES_TSV.exists():
         # Fallback: minimal hardcoded set
-        return frozenset({"oe", "pgmc", "pwgmc", "nwgmc", "preoe", "os", "on", "ohg",
+        return frozenset({"pie", "oe", "pgmc", "pnwgmc", "pwgmc", "paf", "preoe", "os", "on", "ohg",
                           "ofris", "goth", "german", "dutch", "lat", "mlg", "modeng",
                           "odutch", "mdutch", "me", "greek", "skt", "oirish", "goth"})
     codes: set[str] = set()
@@ -1321,7 +1321,7 @@ def run_lang_code_fixtures() -> None:
         assert_true(not issues, f"lang={good_code!r} must be valid (in registry)")
 
     # Invalid codes: must fail
-    for bad_code in ["la", "english", "wgmc"]:
+    for bad_code in ["la", "english", "wgmc", "nwgmc"]:
         issues = find_invalid_lang_codes(f"[form]{{.lex lang={bad_code}}}", "fixture")
         assert_true(issues, f"lang={bad_code!r} must be invalid (not in registry)")
 

@@ -1,9 +1,11 @@
 code	title	columns	active	notes
+pie	Proto-Indo-European	3	1	Deep comparative reconstruction stage; may be unused in current lexical volume.
 oe	Old English	3	1	Includes attested and reconstructed Old English forms; reconstructed OE retains its asterisk in display.
 pgmc	Proto-Germanic	3	1	Comparative proto-language and selected PGmc input-stage forms.
+pnwgmc	Proto-Northwest Germanic	3	1	Intermediate Northwest Germanic reconstructed stages where a Proto-Northwest analysis is explicitly used.
 pwgmc	Proto-West Germanic	3	1	Intermediate West Germanic reconstructed stages.
-nwgmc	Proto-Northwest Germanic	3	1	Intermediate Northwest Germanic reconstructed stages.
-preoe	Pre-Old-English and model-internal forms	3	1	Pre-OE and model-internal trace stages not filed under Proto-Germanic or Old English.
+paf	Proto-Anglo-Frisian	3	1	Optional intermediate stage used when a source or adopted analysis reconstructs an Anglo-Frisian common stage.
+preoe	Pre-Old English / prehistoric English	3	1	Historical English-branch stage between common Germanic stages and attested Old English; not a model-internal label.
 on	Old Norse	3	1	Comparison-language evidence.
 ohg	Old High German	3	1	Comparison-language evidence.
 ofris	Old Frisian	3	1	Comparison-language evidence.

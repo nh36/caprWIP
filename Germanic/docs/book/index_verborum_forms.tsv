@@ -2146,23 +2146,21 @@ pgmc	*xwḯnaną	*xwḯnaną	xwinana	selected_input	explicit_tag	Germanic/docs/l
 pgmc	*xwḯnaną	*xwḯnaną	xwinana	source_protoform	lexical_protoform	whine — OE hwīnan	manifest	auto
 pgmc	*xwḯnaną	*xwḯnaną	xwinana	selected_input	trace_proto_input	whine — OE hwīnan	compact	auto
 pgmc	xwinanan	*xwinanan	xwinanan	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:24	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
+pnwgmc	brōkiz	brōkiz	brokiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md	auto
+pnwgmc	brōkiz	brōkiz	brokiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md	auto
 pwgmc	bakan	*bakan	bakan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md	auto
 pwgmc	skuldru	*skuldru	skuldru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md	auto
 pwgmc	*skúldru	*skúldru	skuldru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md	auto
 pwgmc	timbr	*timbr	timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
 pwgmc	timbr	*timbr	timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
-nwgmc	brōkiz	brōkiz	brokiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md	auto
-nwgmc	brōkiz	brōkiz	brokiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md	auto
-nwgmc	hebun	*hebun	hebun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
-nwgmc	hebun	*hebun	hebun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
-preoe	*sparai-	*sparai-	sparai	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
-preoe	spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
-preoe	*spárē	*spárē	spare	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
-preoe	*spárēθi	*spárēθi	sparethi	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
-preoe	*sparja-	*sparja-	sparja	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
-preoe	*weraldiz	*weraldiz	weraldiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
-preoe	*weraldu	*weraldu	weraldu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
-preoe	*weruld	*weruld	weruld	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
+preoe	hebun	*hebun	hebun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+preoe	hebun	*hebun	hebun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+preoe	sparai-	*sparai-	sparai	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+preoe	spárē	*spárē	spare	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+preoe	sparja-	*sparja-	sparja	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md	auto
+preoe	weraldiz	*weraldiz	weraldiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
+preoe	weraldu	*weraldu	weraldu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
+preoe	weruld	*weruld	weruld	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
 on	báðir	báðir	badir	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 on	báðir	báðir	badir	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md	auto
 on	brjóst	brjóst	brjost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md	auto

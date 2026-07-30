@@ -17,11 +17,13 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 
 - `lang` — one of:
 <!-- BEGIN AUTO-LANGUAGE-LIST -->
+- `pie` — Proto-Indo-European
 - `oe` — Old English
 - `pgmc` — Proto-Germanic
+- `pnwgmc` — Proto-Northwest Germanic
 - `pwgmc` — Proto-West Germanic
-- `nwgmc` — Proto-Northwest Germanic
-- `preoe` — Pre-Old-English and model-internal forms
+- `paf` — Proto-Anglo-Frisian
+- `preoe` — Pre-Old English / prehistoric English
 - `on` — Old Norse
 - `ohg` — Old High German
 - `ofris` — Old Frisian
@@ -53,7 +55,7 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 ```markdown
 [*sċuldrum*]{.iv lang=oe sort=sculdrum}
 [*skúldramiz*]{.iv lang=pgmc display=*skúldramiz sort=skuldramiz}
-[*nǣdrǭ*]{.iv lang=nwgmc sort=naedro}
+[*nǣdrǭ*]{.iv lang=pnwgmc sort=naedro}
 [*bækaną*]{.iv lang=preoe sort=baekana}
 [*brjóst*]{.iv lang=on sort=brjost}
 [*scouwōn*]{.iv lang=ohg sort=scouwon}

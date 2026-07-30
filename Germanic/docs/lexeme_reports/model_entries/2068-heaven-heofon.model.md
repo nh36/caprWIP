@@ -24,13 +24,13 @@ oblique singular form within that paradigm rather than the lexeme-level
 citation form [[xémenaz]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemenaz}.
 
 The back-vocalic oblique stem accounts for the West Saxon target. Ringe and Taylor give
-northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=nwgmc sort=hebun role=comparison_form} > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon} 'heaven', Mercian
+northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=preoe sort=hebun role=comparison_form} > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon} 'heaven', Mercian
 [`heofen`]{.iv lang=oe sort=heofen} 'heaven' [@RingeTaylor2014, 324]. Campbell likewise gives [`heofon`]{.iv lang=oe sort=heofon} 'heaven' beside
 [`hefen`]{.iv lang=oe sort=hefen} 'heaven' in the same West-Saxon `u`-umlaut environment [@Campbell1959, §210.1].
 
 ### Old English evidence
 
-Old English dictionaries record the standard West Saxon noun as **[`heofon`]{.iv lang=oe sort=heofon} 'heaven'** 'heaven',
+Old English dictionaries record the standard West Saxon noun as **[`heofon`]{.iv lang=oe sort=heofon} 'heaven'**,
 alongside Anglian or Mercian [`hefen`]{.iv lang=oe sort=hefen} 'heaven' material [@ClarkHall1960, 188;
 @BosworthToller1898, 43]. Campbell also cites an earlier stage [`hefzen`]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' in the
 history of the word [@Campbell1959, §381].
@@ -42,7 +42,7 @@ line.
 ### Development to Old English
 
 From [[xémonų]{.recon} ‘heaven’]{.iv lang=pgmc sort=xemonu}, the West Saxon line passes through the oblique-stem type
-reflected in northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=nwgmc sort=hebun role=comparison_form} [@RingeTaylor2014, 324]. Campbell's
+reflected in northern WGmc [[hebun]{.recon} ‘heaven’]{.iv lang=preoe sort=hebun role=comparison_form} [@RingeTaylor2014, 324]. Campbell's
 [`heofon`]{.iv lang=oe sort=heofon} 'heaven' beside [`hefen`]{.iv lang=oe sort=hefen} 'heaven' and earlier [`hefzen`]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
 back-mutation and suffix reshaping behind [`heofon`]{.iv lang=oe sort=heofon} 'heaven'
 [@Campbell1959, §210.1; @Campbell1959, §381].

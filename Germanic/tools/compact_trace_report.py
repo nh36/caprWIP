@@ -6,8 +6,8 @@ oe_derivation_class_trace_report.py and:
   1. Drops every stage line tagged ``[no-change]``.
   2. Rewrites starred forms so only the leading star survives, e.g.
      ``*n*ḗ*d*r*ō*n`` → ``*nḗdrōn``.
-  3. Reflows the three development subsections (Proto-West Germanic,
-     Northwest Germanic, Old English) into a two-column Markdown table.
+  3. Reflows the three development subsections (Proto-Northwest Germanic,
+     Proto-West Germanic, Old English) into a two-column Markdown table.
   4. Moves NOTE fields to the end of each lexical entry.
 
 Pure post-processing: takes a report path in, writes a new report out.
@@ -139,9 +139,9 @@ def rewrite_entry_development_sections(lines: List[str]) -> tuple[List[str], boo
         return lines, False
 
     left_cell = (
-        format_table_cell("Proto-West Germanic", pwgmc_body)
+        format_table_cell("Proto-Northwest Germanic", nwgmc_body)
         + "<br><br>"
-        + format_table_cell("Northwest Germanic", nwgmc_body)
+        + format_table_cell("Proto-West Germanic", pwgmc_body)
     )
     right_cell = format_table_cell("Old English", old_english_body)
 
