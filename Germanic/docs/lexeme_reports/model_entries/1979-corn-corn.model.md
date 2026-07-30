@@ -18,12 +18,12 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*kurna-`, and Orel gives the citation form [kurnan]{.recon} ‘corn’, both with Old English [corn]{.lex lang=oe} 'corn, grain' among the reflexes [@Kroonen2013; @Orel2003, 264]. The singular form [kúrną]{.recon} ‘corn’ is the nominative-accusative singular appropriate to the citation noun.
+Kroonen cites the noun as `*kurna-`, and Orel gives the citation form [kurnan]{.recon} ‘corn’, both with Old English [`corn`]{.iv lang=oe sort=corn role=comparison_form} 'corn, grain' among the reflexes [@Kroonen2013; @Orel2003, 264]. The singular form [kúrną]{.recon} ‘corn’ is the nominative-accusative singular appropriate to the citation noun.
 
 ### Old English evidence
 
-Clark Hall gives `corn n. 'corn,' grain`, Bright's glossary lists `corn, n.` with genitive singular `cornes`, and Bosworth-Toller treats [corn]{.lex lang=oe} 'corn, grain' as an ordinary noun headword [@ClarkHall1960; @BrightCassidyRingler1971, 347; @BosworthToller1898, 144]. The target is therefore an attested citation form, while forms such as `cornes` simply provide paradigm background.
+Clark Hall gives `corn n. 'corn,' grain`, Bright's glossary lists `corn, n.` with genitive singular `cornes`, and Bosworth-Toller treats [`corn`]{.iv lang=oe sort=corn role=comparison_form} 'corn, grain' as an ordinary noun headword [@ClarkHall1960; @BrightCassidyRingler1971, 347; @BosworthToller1898, 144]. The target is therefore an attested citation form, while forms such as `cornes` simply provide paradigm background.
 
 ### Development to Old English
 
-With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]{.recon} ‘corn’, and later loss of final nasal after a heavy syllable yields [kórn]{.recon} ‘corn’, whence [corn]{.lex lang=oe} 'corn, grain'. The oblique form [kurnăn]{.recon} ‘corn’ belongs to comparative background rather than to the derivational input of this entry.
+With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]{.recon} ‘corn’, and later loss of final nasal after a heavy syllable yields [kórn]{.recon} ‘corn’, whence [`corn`]{.iv lang=oe sort=corn role=comparison_form} 'corn, grain'. The oblique form [kurnăn]{.recon} ‘corn’ belongs to comparative background rather than to the derivational input of this entry.

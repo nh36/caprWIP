@@ -1494,8 +1494,11 @@ def print_decision_matches_row(decision: dict[str, str], row: ProductionOccurren
         return False
     if decision.get("form") and decision["form"] != row.form:
         return False
-    if decision.get("source_ref") and decision["source_ref"] != row.source_ref:
-        return False
+    # Strip line number from row source_ref before comparing
+    if decision.get("source_ref"):
+        row_source_no_line = re.sub(r':\d+$', '', row.source_ref)
+        if decision["source_ref"] != row_source_no_line:
+            return False
     if decision.get("form_role") and decision["form_role"] != row.form_role:
         return False
     return True
@@ -3046,9 +3049,10 @@ def build_print_anomaly_rows(
         if normalized_display in PRINT_PROSE_RULE_WORDS or normalized_form in PRINT_PROSE_RULE_WORDS:
             flags.append("prose_or_rule_word")
             hard = True
+        # preoe rows in print_main are deliberate include_main decisions; don't flag as hard error
         if row.language == "preoe":
             flags.append("preoe_language")
-            hard = True
+            # hard = True  -- removed; source-backed preoe (§10-11) is allowed in print_main
         if row.source_scope.startswith("reader_failure_"):
             flags.append("reader_failure_scope")
             hard = True

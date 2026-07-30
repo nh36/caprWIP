@@ -295,7 +295,8 @@ def assert_broad_suggestions_load() -> None:
     assert BROAD_SUGGESTIONS_PATH.exists()
     rows = load_broad_suggestion_rows()
     assert rows
-    assert any(row["form"] == "giefan" and row["suggested_language"] == "oe" for row in rows)
+    # giefan was explicitly tagged .iv and is no longer a broad suggestion; use another OE form
+    assert any(row["suggested_language"] == "oe" for row in rows)
     assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29" and row["form"] == "duru" for row in rows)
     assert not any(row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53" and row["form"] in {"Jugend", "Mönch"} for row in rows)
     for form, source_ref in {
@@ -541,7 +542,7 @@ def assert_generated_consistency() -> None:
     printed_titles = parse_printed_audit_language_summary()
     expected_printed_titles = {LANGUAGE_TITLES[code] for code in print_languages}
     assert expected_printed_titles.issubset(printed_titles)
-    assert LANGUAGE_TITLES["preoe"] not in printed_titles
+    # preoe can now be printed if it has include_main rows (removed blanket ban from §11)
 
     registry_codes = parse_registry_codes()
     assert registry_codes == print_languages
@@ -614,9 +615,16 @@ def assert_table_semantic_rows() -> None:
     assert all(not ({"explicit_tag", "table_semantic_auto"} <= scopes) for scopes in scope_map.values())
     assert all(not ({"explicit_tag", "table_semantic_decision"} <= scopes) for scopes in scope_map.values())
     production_keys = {(row["language"], row["form"], row["form_role"], row["source_ref"]) for row in forms_rows}
+    # explicit_tag rows may coexist with a table suggestion at the same source_ref
+    # (table scanner sees .iv-tagged content inside table cells; explicit tag is the resolution)
+    non_explicit_production_keys = {
+        (row["language"], row["form"], row["form_role"], row["source_ref"])
+        for row in forms_rows
+        if row["source_scope"] != "explicit_tag"
+    }
     for row in suggestion_rows:
         key = (row["suggested_language"], row["form"], row["suggested_role"], row["source_ref"])
-        assert key not in production_keys
+        assert key not in non_explicit_production_keys
     assert not any(row["form"] == "*nēþlō" and row["language"] == "oe" for row in table_rows)
     assert not any(row["form"] == "*nḗdlō" for row in table_rows)
     assert not any(row["form"] == "*lákaną" and row["suggested_language"] == "oe" for row in suggestion_rows)
@@ -948,10 +956,12 @@ def assert_print_layer_outputs() -> None:
     if "modeng" in registry_titles:
         assert registry_titles["modeng"] == "Modern English"
 
-    assert not any(row["language"] == "preoe" for row in main_rows)
-    assert preoe_rows
+    # preoe can now be in main_rows if explicitly include_main (§10-11 resolutions)
+    preoe_main_rows = [row for row in main_rows if row["language"] == "preoe"]
     preoe_excluded_rows = [row for row in excluded_rows if row["language"] == "preoe"]
-    assert preoe_excluded_rows
+    # We should have at least one included preoe row (source-backed evidence)
+    assert preoe_main_rows, "Expected at least one source-backed preoe row in print_main"
+    assert preoe_excluded_rows, "Expected some model-internal preoe rows in excluded"
     assert all(
         row["exclusion_reason"] in {
             "preoe_model_internal_default_exclusion",
@@ -960,7 +970,9 @@ def assert_print_layer_outputs() -> None:
         }
         for row in preoe_excluded_rows
     )
-    assert not any(code == "preoe" for code in parse_registry_codes())
+    # preoe can now be in registry if it has printable rows
+    if any(r["language"] == "preoe" for r in main_rows):
+        assert "preoe" in parse_registry_codes()
     assert not any(row["source_scope"].startswith("reader_failure_") for row in main_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in forms_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in main_rows)

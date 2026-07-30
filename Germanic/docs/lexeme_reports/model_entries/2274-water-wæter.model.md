@@ -30,7 +30,7 @@ comparator is the inherited nominative-accusative singular [[wátōr]{.recon} 'w
 ### Old English evidence
 
 Bright gives the noun as [`wæter`]{.iv lang=oe sort=waeter role=target_form} 'water' with the regular paradigm
-[wæteres]{.lex lang=oe} 'water (gen.)', [wætere]{.lex lang=oe} 'water (dat.)', `wæter(u)`, [wætera]{.lex lang=oe} 'water (gen.pl.)', [wæterum]{.lex lang=oe} 'water (dat.pl.)'
+[`wæteres`]{.iv lang=oe sort=waeteres role=comparison_form} 'water (gen.)', [`wætere`]{.iv lang=oe sort=waetere role=comparison_form} 'water (dat.)', `wæter(u)`, [`wætera`]{.iv lang=oe sort=waetera role=comparison_form} 'water (gen.pl.)', [`wæterum`]{.iv lang=oe sort=waeterum role=comparison_form} 'water (dat.pl.)'
 [@BrightCassidyRingler1971, 29]. Ringe and Taylor add the dialectal contrast
 between West Saxon `weeter` 'water' and Mercian `weter` 'water'
 [@RingeTaylor2014, §6.5.2].

@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel gives [natjan]{.recon} ‘net’ with Old English [nett]{.lex lang=oe} 'net', and Fulk's account of West Germanic gemination before `j` explains the geminate outcome after a short vowel [@Orel2003; @Fulk2018].
+Orel gives [natjan]{.recon} ‘net’ with Old English [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net', and Fulk's account of West Germanic gemination before `j` explains the geminate outcome after a short vowel [@Orel2003; @Fulk2018].
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record [nett]{.lex lang=oe} 'net' as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959].
+Clark Hall and Bosworth-Toller record [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net' as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959].
 
 ### Development to Old English
 
-From [nátją]{.recon} ‘net’, West Germanic j-gemination first gives [náttją]{.recon} ‘net’. Later brightening, loss of the weak ending, and loss of final `j` after a heavy stem yield [nett]{.lex lang=oe} 'net', so the development represented here is regular [@Fulk2018].
+From [nátją]{.recon} ‘net’, West Germanic j-gemination first gives [náttją]{.recon} ‘net’. Later brightening, loss of the weak ending, and loss of final `j` after a heavy stem yield [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net', so the development represented here is regular [@Fulk2018].
 
 ### Form note
 
-Spellings in `net` can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is [nett]{.lex lang=oe} 'net' [@Campbell1959; @Orel2003].
+Spellings in `net` can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net' [@Campbell1959; @Orel2003].

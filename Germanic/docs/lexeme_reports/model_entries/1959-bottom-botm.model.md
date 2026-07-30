@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the word as a stem complex [budmō]{.recon} 'bottom' with genitive [buttaz]{.recon} 'bottom',
-summarized as `*budman- ~ *buttman-`, and gives Old English [botm]{.lex lang=oe} 'bottom' as the reflex
+summarized as `*budman- ~ *buttman-`, and gives Old English [`botm`]{.iv lang=oe sort=botm role=comparison_form} 'bottom' as the reflex
 [@Kroonen2013, 120]. The comparative label [búdmaz]{.recon} 'bottom' names the lexeme-level stem
 complex, while the selected input [búttmaz]{.recon} 'bottom' represents the pre-Old-English
 form with oblique `*butt-` generalized into the nominative formation.
@@ -30,14 +30,14 @@ arbitrary respelling.
 
 ### Old English evidence
 
-The Old English noun itself is secure. Clark Hall gives [botm]{.lex lang=oe} 'bottom'
-[@ClarkHall1960, 63]. Bosworth-Toller cross-references [bodan]{.lex lang=oe} 'bottom, floor' to [botm]{.lex lang=oe} 'bottom',
+The Old English noun itself is secure. Clark Hall gives [`botm`]{.iv lang=oe sort=botm role=comparison_form} 'bottom'
+[@ClarkHall1960, 63]. Bosworth-Toller cross-references [`bodan`]{.iv lang=oe sort=bodan role=comparison_form} 'bottom, floor' to [`botm`]{.iv lang=oe sort=botm role=comparison_form} 'bottom',
 showing the wider reflex family without weakening the attested lemma
 [@BosworthToller1898, 112].
 
 ### Development to Old English
 
 Once the oblique `*butt-` stem has been generalized, the selected input
-[búttmaz]{.recon} 'bottom' develops regularly to [botm]{.lex lang=oe} 'bottom'. The analogical step is therefore early:
+[búttmaz]{.recon} 'bottom' develops regularly to [`botm`]{.iv lang=oe sort=botm role=comparison_form} 'bottom'. The analogical step is therefore early:
 it belongs to pre-Old-English stem formation rather than to a later choice
 among Old English paradigm cells.

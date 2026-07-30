@@ -1356,16 +1356,16 @@ def run_specific_typing_regressions() -> None:
     wasp = (MODEL_ENTRIES / "2273-wasp-wæfs.model.md").read_text(encoding="utf-8")
     yarn = (MODEL_ENTRIES / "2305-yarn-ġearn.model.md").read_text(encoding="utf-8")
 
-    # Door: tura must be OHG, not Latin
-    assert_true("tura]{.lex lang=ohg}" in door, "door: tura must be lang=ohg (Old High German)")
+    # Door: tura must be OHG, not Latin (converted from .lex to .iv; display uses backtick)
+    assert_true("`tura`]{.iv lang=ohg" in door, "door: tura must be lang=ohg (Old High German)")
     assert_true("tura]{.lex lang=la}" not in door, "door: tura must not be lang=la (Latin)")
 
-    # Sunder: gesundrian must be OE, not OHG
-    assert_true("gesundrian]{.lex lang=oe}" in sunder, "sunder: gesundrian must be lang=oe (Old English)")
+    # Sunder: gesundrian must be OE, not OHG (converted from .lex to .iv; display uses backtick)
+    assert_true("`gesundrian`]{.iv lang=oe" in sunder, "sunder: gesundrian must be lang=oe (Old English)")
     assert_true("gesundrian]{.lex lang=ohg}" not in sunder, "sunder: gesundrian must not be lang=ohg")
 
-    # Wasp: wasp must be OE (late West Saxon), not modern English
-    assert_true("wasp]{.lex lang=oe}" in wasp, "wasp: 'wasp' must be lang=oe (Old English)")
+    # Wasp: wasp must be OE (late West Saxon), not modern English (converted from .lex to .iv)
+    assert_true("wasp`]{.iv lang=oe" in wasp, "wasp: 'wasp' must be lang=oe (Old English)")
     assert_true("lang=english" not in wasp, "wasp: no lang=english in wasp entry")
 
     # Yarn: filatum must not be .lex comparative evidence

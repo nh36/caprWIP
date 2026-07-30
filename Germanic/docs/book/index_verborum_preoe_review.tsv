@@ -1,14 +1,9 @@
 form	source_ref	source_scope	form_role	reason_for_current_inclusion	proposed_print_status	note
-bakan	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	explicit_tag	evidence_form	Explicit .iv tag in source prose.	include_if_source_backed
-hebun	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27	explicit_tag	evidence_form	Explicit .iv tag in source prose.	include_if_source_backed
-hebun	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45	explicit_tag	evidence_form	Explicit .iv tag in source prose.	include_if_source_backed
 *sparai-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	explicit_tag	evidence_form	Explicit .iv tag in source prose.	exclude_model_internal	Model-internal pre-OE formation; exclude from printed main index.
 *sparja-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	explicit_tag	evidence_form	Explicit .iv tag in source prose.	exclude_model_internal	Model-internal pre-OE formation; exclude from printed main index.
-spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	explicit_tag	evidence_form	Explicit .iv tag in source prose.	include_if_source_backed
+spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	explicit_tag	evidence_form	Explicit .iv tag in source prose.	include_if_source_backed	Source-backed (Sievers-Brunner) pre-OE continuation; include in printed main index.
 *spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	explicit_tag	evidence_form	Explicit .iv tag in source prose.	exclude_model_internal	Model-stage pre-OE output; exclude from printed main index.
 *spárēθi	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	explicit_tag	evidence_form	Explicit .iv tag in source prose.	exclude_model_internal	Model-stage pre-OE output; exclude from printed main index.
-timbr	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed
-timbr	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed
-*weraldiz	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed
-*weraldu	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed
-*weruld	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed
+*weraldiz	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
+*weraldu	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.
+*weruld	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	Source-backed (Ringe-Taylor) pre-OE compound stage; include in printed main index.

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the bird name as `*swalwōn-`, and Ringe and Taylor cite the later West Germanic stage [swalwa]{.recon} ‘swallow’, from which West Saxon [swealwe]{.lex lang=oe} 'swallow' and Mercian [swalwe]{.lex lang=oe} 'swallow' develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb `swelgan`.
+Kroonen gives the bird name as `*swalwōn-`, and Ringe and Taylor cite the later West Germanic stage [swalwa]{.recon} ‘swallow’, from which West Saxon [`swealwe`]{.iv lang=oe sort=swealwe role=comparison_form} 'swallow' and Mercian [`swalwe`]{.iv lang=oe sort=swalwe role=comparison_form} 'swallow' develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb `swelgan`.
 
 ### Old English evidence
 

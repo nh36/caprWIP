@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the bore-family verb as `*burojan-` and cites Old English
-[borian]{.lex lang=oe} 'bore' among its continuants [@Kroonen2013, 85]. Ringe and Taylor give the
+[`borian`]{.iv lang=oe sort=borian role=comparison_form} 'bore' among its continuants [@Kroonen2013, 85]. Ringe and Taylor give the
 class-II weak imperative singular ending as `-a < *-ō`
 [@RingeTaylor2014, 314].
 
@@ -28,7 +28,7 @@ cell of the same family, not the citation form of the verb.
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as [borian]{.lex lang=oe} 'bore' [@ClarkHall1960, 48]. The comparison
+Clark Hall lemmatizes the verb as [`borian`]{.iv lang=oe sort=borian role=comparison_form} 'bore' [@ClarkHall1960, 48]. The comparison
 form here is the normalized imperative singular `bora` 'bore (iptv.2sg)', used
 beside the headword and the related 3sg form `boraþ` 'bores'.
 

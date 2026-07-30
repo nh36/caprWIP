@@ -37,13 +37,13 @@ plural-side forms represented by [`neahtas`]{.iv lang=oe sort=neahtas role=compa
 
 The comparison form used here is therefore an attested Old English `niht` 'night', not a
 reconstructed substitute. The broader lexical record still preserves the
-non-umlauted side of the paradigm in [neaht]{.lex lang=oe} 'night'-type forms.
+non-umlauted side of the paradigm in [`neaht`]{.iv lang=oe sort=neaht role=comparison_form} 'night'-type forms.
 
 ### Development to Old English
 
 Ringe and Taylor derive West Saxon `niht` 'night' from [nahti]{.recon} 'night' via [nehti]{.recon} 'night' and
 [neahti]{.recon} 'night' [@RingeTaylor2014, 240]. Campbell and Brunner preserve the
-contrasting non-umlauted [neaht]{.lex lang=oe} 'night'-type forms elsewhere in the paradigm
+contrasting non-umlauted [`neaht`]{.iv lang=oe sort=neaht role=comparison_form} 'night'-type forms elsewhere in the paradigm
 [@Campbell1959, §628.3; @SieversBrunner1965, §284].
 
 The modeled path is therefore [náxti]{.recon} 'night' > [næxti]{.recon} 'night' > [neaxti]{.recon} 'night' > [niexti]{.recon} 'night' > [nixti]{.recon} 'night' > niht.

@@ -34,8 +34,8 @@ same grounds and prefers a lexical or analogical account instead
 ### Old English evidence
 
 Campbell treats `wulf` 'wolf' as part of the exceptional `u` set
-[@Campbell1959, §115]. Sievers-Brunner notes that oblique [wulfe]{.lex lang=oe} 'wolf (dat.)' continues
-[wulfi]{.lex lang=oe} 'wolf (dat.)' or older [wulfai]{.lex lang=oe} 'wolf (dat.)' [@SieversBrunner1965, §160].
+[@Campbell1959, §115]. Sievers-Brunner notes that oblique [`wulfe`]{.iv lang=oe sort=wulfe role=comparison_form} 'wolf (dat.)' continues
+[`wulfi`]{.iv lang=oe sort=wulfi role=comparison_form} 'wolf (dat.)' or older [`wulfai`]{.iv lang=oe sort=wulfai role=comparison_form} 'wolf (dat.)' [@SieversBrunner1965, §160].
 
 The surviving oblique forms do not supply a regular route back to bare `wulf` 'wolf'.
 They belong to the same lexeme, but they do
@@ -50,7 +50,7 @@ path: [wúlfaz]{.recon} 'wolf' > [wólfaz]{.recon} 'wolf' > [wólfa]{.recon} 'wo
 
 A high-vowel oblique input would behave differently. There the following high
 vowel would block the lowering of `u`, but the same environment
-would also trigger i-umlaut, so the regular control result would be [wylf]{.lex lang=oe} 'wolf' or
+would also trigger i-umlaut, so the regular control result would be [`wylf`]{.iv lang=oe sort=wylf role=comparison_form} 'wolf' or
 `wylfe`, not bare `wulf`. The attested noun therefore remains unexplained at
 the citation-form level.
 

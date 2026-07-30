@@ -31,7 +31,7 @@ here.
 ### Old English evidence
 
 Clark Hall records [`sæp`]{.iv lang=oe sort=saep role=target_form} 'sap' (e) n. [@ClarkHall1960, 247]. The target is therefore
-an attested neuter Old English noun. Orel's plain [sap]{.lex lang=oe} 'sap, juice' notation belongs to
+an attested neuter Old English noun. Orel's plain [`sap`]{.iv lang=oe sort=sap role=comparison_form} 'sap, juice' notation belongs to
 comparative normalization, not to the spelling adopted here for the Old English
 form [@Orel2003, 319].
 

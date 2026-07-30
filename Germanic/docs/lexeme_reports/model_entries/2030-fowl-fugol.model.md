@@ -19,7 +19,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 ### Reconstruction and comparative evidence
 
 The noun is the ordinary Germanic a-stem [fúglaz]{.recon} 'fowl', continued by forms such as
-Old Norse `fugl` and Old High German [fogal]{.lex lang=ohg} 'bird, fowl' [@Kroonen2013, 197; @Orel2003,
+Old Norse `fugl` and Old High German [`fogal`]{.iv lang=ohg sort=fogal role=comparison_form} 'bird, fowl' [@Kroonen2013, 197; @Orel2003,
 155]. There
 is no stem-class or paradigm-cell dispute behind this entry. The comparative
 headword and the selected input are the same.

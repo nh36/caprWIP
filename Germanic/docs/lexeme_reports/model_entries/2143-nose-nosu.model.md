@@ -34,10 +34,10 @@ lines should not be collapsed without comment [@Orel2003, 320].
 `Nosu` 'nose' is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives `nosu f.` 'nose', with genitive-dative singular `nosa`, and cross-refers
-[nasu]{.lex lang=oe} 'nose' to `nosu` 'nose' [@ClarkHall1960, 810].
+[`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose' to `nosu` 'nose' [@ClarkHall1960, 810].
 
 The selected OE target is therefore attested `nosu` 'nose', not a reconstructed
-placeholder. The lexicographical record also gives [nasu]{.lex lang=oe} 'nose' for the full-grade
+placeholder. The lexicographical record also gives [`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose' for the full-grade
 side of the tradition.
 
 ### Development to Old English
@@ -47,7 +47,7 @@ From [núsō]{.recon} 'nose', the regular path is the one documented by the curr
 zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade
-line behind [nasō]{.recon} 'nose' instead points toward [nasu]{.lex lang=oe} 'nose', not to the form treated here.
+line behind [nasō]{.recon} 'nose' instead points toward [`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose', not to the form treated here.
 
 ### Stem comparison
 

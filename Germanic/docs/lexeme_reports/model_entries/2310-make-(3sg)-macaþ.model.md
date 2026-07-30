@@ -37,14 +37,14 @@ set beside the dictionary headword and the related imperative singular
 
 Campbell's class-II paradigm gives ordinary 3sg ending `-aþ`, while his
 dialect survey allows secondary `-e-` spellings in some traditions
-[@Campbell1959, §356.4; @Campbell1959, §757]. [Macaþ]{.lex lang=oe} 'makes' is thus the regular
+[@Campbell1959, §356.4; @Campbell1959, §757]. [`Macaþ`]{.iv lang=oe sort=macath role=comparison_form} 'makes' is thus the regular
 comparison form for the non-`j` 3sg cell.
 
 ### Development to Old English
 
 After early loss of final `-i`, [mákōθi]{.recon} 'makes' → [mákōθ]{.recon} 'makes' after loss of final -i.
 Anglo-Frisian brightening gives [mækōθ]{.recon} 'makes', but Campbell lists
-[macian]{.lex lang=oe} 'make' among class-II verbs with restored `a`, so the stem returns to `mak-`
+[`macian`]{.iv lang=oe sort=macian role=comparison_form} 'make' among class-II verbs with restored `a`, so the stem returns to `mak-`
 before the ending is reduced [@Campbell1959, §159].
 
 The ending then follows ordinary class-II 3sg development: [makōθ]{.recon} 'makes' > [makaθ]{.recon} 'makes' >

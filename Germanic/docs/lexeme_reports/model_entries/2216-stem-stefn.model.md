@@ -44,7 +44,7 @@ Clark Hall records [`stefn`]{.iv lang=oe sort=stefn role=target_form} 'stem, tru
 and the related [`stofn`]{.iv lang=oe sort=stofn role=comparison_form} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
 
 Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
-Old Saxon [`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' and Middle English `stam` — from the
+Old Saxon [`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' and Middle English [`stam`]{.iv lang=me sort=stam role=comparison_form} 'stem' — from the
 separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
 `stefn, stemn Stamm` among words showing the `fn`/`mn` alternation [@SieversBrunner1965, §205].
 
@@ -66,7 +66,7 @@ scholarship. The handbooks treat it as a pre-Old-English development (Luick §21
 Brunner §205), but the term "North-West Germanic coda dissimilation" should be taken
 as descriptive rather than technically established. This coda environment
 (`[C]mn → [C]fn`) is distinct from the cross-syllable `m → β` change (as in
-[xémonų]{.recon} 'heaven' → [heofon]{.lex lang=oe} 'heaven') handled by the `NWGmcMnDissimilation` rule;
+[xémonų]{.recon} 'heaven' → [`heofon`]{.iv lang=oe sort=heofon role=comparison_form} 'heaven') handled by the `NWGmcMnDissimilation` rule;
 it is currently not modeled in the FST.
 
 The correct OE-facing transponent has not yet been established for the FST pipeline.

@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as [[bakanan]{.recon} 'bake']{.iv lang=pgmc sort=bakanan} and cites Old English [`bacan`]{.iv lang=oe sort=bacan} 'bake' beside Old High German `backan, bahhan` [@Orel2003]. Campbell gives [`bacan`]{.iv lang=oe sort=bacan} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [[bakan]{.recon} ‘bake’]{.iv lang=preoe sort=bakan} to Old English [`bacan`]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014].
+Orel reconstructs the verb as [[bakanan]{.recon} 'bake']{.iv lang=pgmc sort=bakanan} and cites Old English [`bacan`]{.iv lang=oe sort=bacan} 'bake' beside Old High German `backan, bahhan` [@Orel2003]. Campbell gives [`bacan`]{.iv lang=oe sort=bacan} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [[bakan]{.recon} ‘bake’]{.iv lang=pwgmc sort=bakan role=comparison_form} to Old English [`bacan`]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014].
 
 ### Old English evidence
 

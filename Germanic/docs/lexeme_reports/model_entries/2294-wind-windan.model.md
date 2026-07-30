@@ -22,7 +22,7 @@ Kroonen distinguishes noun `*winda-` from verb `*windan-`, and the present row b
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record [windan]{.lex lang=oe} 'wind, coil' as the verb headword [@ClarkHall1960; @BosworthToller1898, 101]. The selected target is the ordinary infinitive of the strong verb.
+Clark Hall and Bosworth-Toller record [`windan`]{.iv lang=oe sort=windan role=comparison_form} 'wind, coil' as the verb headword [@ClarkHall1960; @BosworthToller1898, 101]. The selected target is the ordinary infinitive of the strong verb.
 
 ### Development to Old English
 

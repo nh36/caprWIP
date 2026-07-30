@@ -1035,6 +1035,9 @@ def assert_print_regressions(text: str) -> None:
         # Accepted .recon-based rendering (accented, macron ō):
         "PNWGmc [brōkiz]{.recon}",
         "PNWGmc [brokiz]{.recon}",
+        # .recon .iv with lang/sort attributes:
+        "PNWGmc [brōkiz]{.recon .iv",
+        "PNWGmc [brokiz]{.recon .iv",
     )
     if "### breeches — OE _brēċ_" in text and not any(
         phrase in text for phrase in expected_breeches_phrases

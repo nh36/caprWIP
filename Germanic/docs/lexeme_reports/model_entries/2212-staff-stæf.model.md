@@ -38,7 +38,7 @@ With the selected a-stem input, the development is regular. Final `*-z`
 disappears, bare final `-a` is lost, Anglo-Frisian brightening gives `æ` in the
 closed monosyllable, and medial `b` surfaces as a fricative written `f`. The
 documented chain is [stábaz]{.recon} 'staff' > [stába]{.recon} 'staff' > [stáb]{.recon} 'staff' > *stæb* 'staff' > `stæf` 'staff'. A direct
-continuation of [stábiz]{.recon} ‘staff’, by contrast, would produce i-mutated [stefe]{.lex lang=oe} 'stave, staff' rather
+continuation of [stábiz]{.recon} ‘staff’, by contrast, would produce i-mutated [`stefe`]{.iv lang=oe sort=stefe role=comparison_form} 'stave, staff' rather
 than the attested singular.
 
 ### Formation comparison

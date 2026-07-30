@@ -19,19 +19,19 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen treats the basic noun as `*lungōn-` and also cites an OE-facing
-derivative `*lungunjō-`, continued by Old English [lungen]{.lex lang=oe} 'lung' and close West
+derivative `*lungunjō-`, continued by Old English [`lungen`]{.iv lang=oe sort=lungen role=comparison_form} 'lung' and close West
 Germanic cognates [@Kroonen2013, 384]. The selected input [lúnganjō]{.recon} ‘lung’ models that
 derived feminine formation rather than the base noun. The notation differs
 slightly from Kroonen's `*lungunjō-`, but both point to the same derived
 feminine line.
 
 The difference between the citation label and the selected input is therefore
-derivational. Old English [lungen]{.lex lang=oe} 'lung' is not a direct reflex of the bare base noun
+derivational. Old English [`lungen`]{.iv lang=oe sort=lungen role=comparison_form} 'lung' is not a direct reflex of the bare base noun
 [lungō]{.recon} ‘lung’; it belongs to an expanded feminine formation.
 
 ### Old English evidence
 
-Old English dictionaries record the noun as [lungen]{.lex lang=oe} 'lung', with inflected forms such
+Old English dictionaries record the noun as [`lungen`]{.iv lang=oe sort=lungen role=comparison_form} 'lung', with inflected forms such
 as `lungenne` and `lungena` [@BosworthToller1898, 634]. Clark Hall also preserves a
 small family of compounds such as `lungenādl` 'lung-disease', `lungensealf`, and `lungenwyrt`
 [@ClarkHall1960, 191].
@@ -42,7 +42,7 @@ rescued inflectional cell.
 ### Development to Old English
 
 From the selected derived input, the expected derivational consonant and vowel
-adjustments lead to [lungen]{.lex lang=oe} 'lung'. Once the expanded feminine formation is chosen,
+adjustments lead to [`lungen`]{.iv lang=oe sort=lungen role=comparison_form} 'lung'. Once the expanded feminine formation is chosen,
 the Old English outcome is regular.
 
 ### Formation comparison

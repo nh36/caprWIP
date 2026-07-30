@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen reconstructs the bore-family verb as `*burojan-` and cites Old English
-[borian]{.lex lang=oe} 'bore' among its reflexes [@Kroonen2013, 85]. The selected form isolates the
+[`borian`]{.iv lang=oe sort=borian role=comparison_form} 'bore' among its reflexes [@Kroonen2013, 85]. The selected form isolates the
 finite 3sg cell [búrōθi]{.recon} 'bores' rather than the infinitive.
 
 Campbell's class-II pattern `lufas, -aþ (< -ōsi, -ōþi)` and Ringe and Taylor's
@@ -28,19 +28,19 @@ comparison form for the ending [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 
 ### Old English evidence
 
-Clark Hall lemmatizes the verb as [borian]{.lex lang=oe} 'bore'; the imperative singular `bora` and
-present-third-singular [boraþ]{.lex lang=oe} 'bores' are the relevant comparison forms
+Clark Hall lemmatizes the verb as [`borian`]{.iv lang=oe sort=borian role=comparison_form} 'bore'; the imperative singular `bora` and
+present-third-singular [`boraþ`]{.iv lang=oe sort=borath role=comparison_form} 'bores' are the relevant comparison forms
 [@ClarkHall1960, 48].
 
 Campbell's dialect survey allows secondary `-e-` and `-o-` spellings in 2sg and
 3sg class-II forms, but the basic ending remains `-aþ` [@Campbell1959, §757].
-The regular comparison form for this non-`j` 3sg cell is [boraþ]{.lex lang=oe} 'bores'.
+The regular comparison form for this non-`j` 3sg cell is [`boraþ`]{.iv lang=oe sort=borath role=comparison_form} 'bores'.
 
 ### Development to Old English
 
 From [búrōθi]{.recon} 'bores', loss of final `-i` first gives [búrōθ]{.recon}
 'bores'. Northwest Germanic lowering then produces [bórōθ]{.recon} 'bores', and
-late shortening of unstressed `ō` yields [bóraθ]{.recon} 'bores'. [Boraþ]{.lex lang=oe} 'bores' is
+late shortening of unstressed `ō` yields [bóraθ]{.recon} 'bores'. [`Boraþ`]{.iv lang=oe sort=borath role=comparison_form} 'bores' is
 therefore the regular comparison form for this non-`j` 3sg cell.
 
 Campbell's class-II ending evidence and Ringe and Taylor's discussion of stable

@@ -22,11 +22,11 @@ Kroonen preserves the comparative verb as `*slēpan-`, and Fulk cites the same f
 
 ### Old English evidence
 
-Clark Hall gives [slæpan]{.lex lang=oe} 'sleep' with preterite `slēp` 'slept', `slēap` 'slept', and Bright likewise lists [slæpan]{.lex lang=oe} 'sleep' ([slāpan]{.lex lang=oe} 'sleep'), `slēp` 'slept', `slēpon` 'slept', `slēpen` 'slept' [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive `slǣpan` 'sleep', not the preterite forms and not the separate noun `slǣp` 'sleep'.
+Clark Hall gives [`slæpan`]{.iv lang=oe sort=slaepan role=comparison_form} 'sleep' with preterite `slēp` 'slept', `slēap` 'slept', and Bright likewise lists [`slæpan`]{.iv lang=oe sort=slaepan role=comparison_form} 'sleep' ([`slāpan`]{.iv lang=oe sort=slapan role=comparison_form} 'sleep'), `slēp` 'slept', `slēpon` 'slept', `slēpen` 'slept' [@ClarkHall1960; @BrightCassidyRingler1971, 435]. The target represented here is therefore the normalized infinitive `slǣpan` 'sleep', not the preterite forms and not the separate noun `slǣp` 'sleep'.
 
 ### Development to Old English
 
-From [slḗpaną]{.recon} ‘sleep’, Northwest Germanic lowering gives [slǣpaną]{.recon} ‘sleep’. The later OE tail developments then yield [slǣpan]{.lex lang=oe} 'sleep' regularly. Brunner and Bülbring show that the OE tradition also has variant spellings such as West Saxon [slāpan]{.lex lang=oe} 'sleep' / [slæpan]{.lex lang=oe} 'sleep' and Anglian or Kentish [slēpan]{.lex lang=oe} 'sleep', but those do not displace the infinitive chosen here [@SieversBrunner1965; @Bulbring1902].
+From [slḗpaną]{.recon} ‘sleep’, Northwest Germanic lowering gives [slǣpaną]{.recon} ‘sleep’. The later OE tail developments then yield [`slǣpan`]{.iv lang=oe sort=slaepan role=comparison_form} 'sleep' regularly. Brunner and Bülbring show that the OE tradition also has variant spellings such as West Saxon [`slāpan`]{.iv lang=oe sort=slapan role=comparison_form} 'sleep' / [`slæpan`]{.iv lang=oe sort=slaepan role=comparison_form} 'sleep' and Anglian or Kentish [`slēpan`]{.iv lang=oe sort=slepan role=comparison_form} 'sleep', but those do not displace the infinitive chosen here [@SieversBrunner1965; @Bulbring1902].
 
 ### Form note
 

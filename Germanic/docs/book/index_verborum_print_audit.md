@@ -1,54 +1,56 @@
 # Index verborum print audit
 
-- Internal production occurrences: 1990
-- Internal production unique forms: 968
-- Printed main occurrences: 1888
-- Printed main unique forms: 947
-- Printed excluded occurrences: 102
-- Printed excluded unique forms: 80
+- Internal production occurrences: 2230
+- Internal production unique forms: 1030
+- Printed main occurrences: 2138
+- Printed main unique forms: 1017
+- Printed excluded occurrences: 92
+- Printed excluded unique forms: 73
 
 ## Print exclusions by reason
 
 - `excluded_by_print_decision`: 4
-- `preoe_model_internal_default_exclusion`: 9
-- `regular_output_default_exclusion`: 89
+- `regular_output_default_exclusion`: 88
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 896 | 387 |
+| Old English | 1127 | 443 |
 | Proto-Germanic | 932 | 514 |
-| Proto-West Germanic | 2 | 2 |
+| Proto-West Germanic | 5 | 4 |
+| Proto-Northwest Germanic | 4 | 2 |
+| Pre-Old-English and model-internal forms | 4 | 4 |
 | Old Norse | 12 | 9 |
-| Old High German | 15 | 13 |
+| Old High German | 18 | 14 |
 | Old Frisian | 7 | 6 |
 | Gothic | 3 | 3 |
-| Old Saxon | 11 | 7 |
-| Dutch | 2 | 1 |
-| German | 6 | 4 |
+| Old Saxon | 12 | 8 |
+| Dutch | 3 | 2 |
+| German | 7 | 5 |
+| Middle English | 1 | 1 |
 | Modern English | 2 | 1 |
+| Middle Low German | 1 | 1 |
 
 ## Printed main-index forms by role
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 368 |
+| target_form | 367 |
 | source_protoform | 330 |
-| selected_input | 531 |
-| comparison_form | 499 |
-| evidence_form | 160 |
+| selected_input | 532 |
+| comparison_form | 748 |
+| evidence_form | 161 |
 
 ## Internal-only rows by reason
 
 - `excluded_by_print_decision`: 4
-- `preoe_model_internal_default_exclusion`: 9
-- `regular_output_default_exclusion`: 89
+- `regular_output_default_exclusion`: 88
 
 ## Pre-OE review rows by proposed status
 
 - `exclude_model_internal`: 4
-- `include_if_source_backed`: 9
+- `include_if_source_backed`: 4
 
 ## Reader-facing example rows by role
 
@@ -64,8 +66,8 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 948
-- Print anomaly rows: 29
+- Unique printed entries: 1018
+- Print anomaly rows: 52
 - Hard print anomalies: 0
 
 ## Unique printed entries: first 20 Old English
@@ -122,14 +124,18 @@
 
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
+| pwgmc | `*bakan` | bakan | 1 | comparison_form |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
+| pwgmc | `*timbr` | timbr | 2 | comparison_form |
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
 | dutch | `beide` | beide | 2 | comparison_form |
+| dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
 | german | `Nacken` | nacken | 2 | comparison_form |
+| german | `sondern` | sondern | 1 | comparison_form |
 | german | `stillen` | stillen | 1 | comparison_form |
 | german | `weinen` | weinen | 1 | comparison_form |
 | modeng | `both` | both | 2 | comparison_form |
@@ -153,8 +159,8 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 261
-- `yes`: 158
+- `no`: 259
+- `yes`: 160
 
 - Included whole-form rows with asterisks: 388
 - Included whole-form rows without asterisks: 31
@@ -185,11 +191,7 @@
 
 ## Excluded pre-OE/model-internal rows (sample)
 
-- `*bakan` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
-- `*hebun` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
-- `*hebun` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
 - `*sparai-` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
-- `*spárē` (preoe, evidence_form; preoe_model_internal_default_exclusion; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
 - `*spárē` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57)
 - `*spárēθi` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58)
 - `*sparja-` (preoe, evidence_form; excluded_by_print_decision; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)

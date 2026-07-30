@@ -50,7 +50,7 @@ follows the regular class-II 3sg pattern.
 The selected form develops as [líznōθi]{.recon} 'learns' > [lírnōθi]{.recon} 'learns' by rhotacism, then
 [lírnōθ]{.recon} 'learns' after early apocope of final `-i`, then
 [líornōθ]{.recon} 'learns' by breaking before `rn`, and finally
-[líornaθ]{.recon} 'learns' > [liornaþ]{.lex lang=oe} 'learns' by late shortening of the unstressed long vowel.
+[líornaθ]{.recon} 'learns' > [`liornaþ`]{.iv lang=oe sort=liornath role=comparison_form} 'learns' by late shortening of the unstressed long vowel.
 
 Campbell's Northumbrian `io` evidence and Ringe and Taylor's statement that no
 form of `liornian` stood in an i-umlauting environment support the stem, while

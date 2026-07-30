@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Fulk gives Proto-Germanic [liuxtijanan]{.recon} ‘light’ with Old English `līehtan` 'illuminate', and Ringe and Taylor likewise derive West Saxon [liehtan]{.lex lang=oe} 'light, illuminate' from the same weak-verb formation [@Fulk2018; @RingeTaylor2014].
+Fulk gives Proto-Germanic [liuxtijanan]{.recon} ‘light’ with Old English `līehtan` 'illuminate', and Ringe and Taylor likewise derive West Saxon [`liehtan`]{.iv lang=oe sort=liehtan role=comparison_form} 'light, illuminate' from the same weak-verb formation [@Fulk2018; @RingeTaylor2014].
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller preserve the verb family under spellings such as `liehtan` 'illuminate', [lihtan]{.lex lang=oe} 'light, illuminate', and `līhtan` 'illuminate', distinct from the related noun `lēoht` 'light' and adjective `leoht` / `liht` 'light' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall and Bosworth-Toller preserve the verb family under spellings such as `liehtan` 'illuminate', [`lihtan`]{.iv lang=oe sort=lihtan role=comparison_form} 'light, illuminate', and `līhtan` 'illuminate', distinct from the related noun `lēoht` 'light' and adjective `leoht` / `liht` 'light' [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ From [léuxtijaną]{.recon} 'light', the regular verbal line preserves `*xt`, pa
 
 ### Dialect note
 
-Ringe and Taylor and Campbell distinguish West Saxon [liehtan]{.lex lang=oe} 'light, illuminate' from Anglian [lihtan]{.lex lang=oe} 'light, illuminate', while later West Saxon also shows [lyhtan]{.lex lang=oe} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor and Campbell distinguish West Saxon [`liehtan`]{.iv lang=oe sort=liehtan role=comparison_form} 'light, illuminate' from Anglian [`lihtan`]{.iv lang=oe sort=lihtan role=comparison_form} 'light, illuminate', while later West Saxon also shows [`lyhtan`]{.iv lang=oe sort=lyhtan role=comparison_form} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].

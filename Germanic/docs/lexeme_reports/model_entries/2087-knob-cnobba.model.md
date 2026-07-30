@@ -31,12 +31,12 @@ behind later English knob.
 
 ### Old English evidence
 
-Clark Hall preserves Old English evidence of the [cnoppa]{.lex lang=oe} 'knob' type
+Clark Hall preserves Old English evidence of the [`cnoppa`]{.iv lang=oe sort=cnoppa role=comparison_form} 'knob' type
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
 The target **[cnobba]{.recon} ‘knob’** is a **reconstructed Old English form**, not a directly
-attested one. I use it for the voiced branch because attested [cnoppa]{.lex lang=oe} 'knob' continues
+attested one. I use it for the voiced branch because attested [`cnoppa`]{.iv lang=oe sort=cnoppa role=comparison_form} 'knob' continues
 the voiceless branch and therefore represents a different prehistory.
 
 ### Development to Old English
@@ -58,5 +58,5 @@ different: if the voiced weak-noun branch is the one to be represented, then
 | [`cnæp`]{.iv lang=oe sort=cnaep} | attested OE form from another family | not part of the present lexeme line |
 
 This remains the most review-sensitive item here, because the choice between
-reconstructed [cnobba]{.recon} ‘knob’ and attested [cnoppa]{.lex lang=oe} 'knob' is still a comparator-policy
+reconstructed [cnobba]{.recon} ‘knob’ and attested [`cnoppa`]{.iv lang=oe sort=cnoppa role=comparison_form} 'knob' is still a comparator-policy
 question rather than a settled point of OE attestation.

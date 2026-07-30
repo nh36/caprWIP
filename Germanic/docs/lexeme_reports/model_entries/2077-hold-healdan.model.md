@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the verb as a regular `a + lC` breaking case, with West Saxon [healdan]{.lex lang=oe} 'hold' opposed to Anglian and Mercian [haldan]{.lex lang=oe} 'hold' [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the verb as a regular `a + lC` breaking case, with West Saxon [`healdan`]{.iv lang=oe sort=healdan role=comparison_form} 'hold' opposed to Anglian and Mercian [`haldan`]{.iv lang=oe sort=haldan role=comparison_form} 'hold' [@Campbell1959; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -26,8 +26,8 @@ Bright gives the ordinary strong-verb citation form and principal parts `healdan
 
 ### Development to Old English
 
-From [xáldaną]{.recon} ‘hold’, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces `ea` before `ld`. Later reduction of the infinitive ending gives [healdan]{.lex lang=oe} 'hold' [@Campbell1959; @RingeTaylor2014].
+From [xáldaną]{.recon} ‘hold’, Anglo-Frisian brightening first yields a fronted vowel, and West Saxon breaking then produces `ea` before `ld`. Later reduction of the infinitive ending gives [`healdan`]{.iv lang=oe sort=healdan role=comparison_form} 'hold' [@Campbell1959; @RingeTaylor2014].
 
 ### Dialect note
 
-West Saxon [healdan]{.lex lang=oe} 'hold' is the selected target here. Anglian and Mercian [haldan]{.lex lang=oe} 'hold' are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
+West Saxon [`healdan`]{.iv lang=oe sort=healdan role=comparison_form} 'hold' is the selected target here. Anglian and Mercian [`haldan`]{.iv lang=oe sort=haldan role=comparison_form} 'hold' are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].

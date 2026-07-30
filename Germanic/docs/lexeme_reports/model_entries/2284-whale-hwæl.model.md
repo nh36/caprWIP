@@ -44,7 +44,7 @@ singular [`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale' in a closed 
 
 From [xwálaz]{.recon} 'whale', final `-z` disappears and bare final `-a` is lost.
 Anglo-Frisian fronting then yields `æ` in the closed monosyllable, and Old
-English orthography writes [hwæl]{.lex lang=oe} 'whale'.
+English orthography writes [`hwæl`]{.iv lang=oe sort=hwael role=comparison_form} 'whale'.
 
 ### Formation comparison
 

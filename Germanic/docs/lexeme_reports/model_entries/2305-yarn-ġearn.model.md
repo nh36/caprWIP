@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain [garna]{.recon} 'yarn' > [geern]{.recon} 'yarn' > [gearn]{.recon} 'yarn' > OE [gearn]{.lex lang=oe} 'yarn' [@Kroonen2013; @RingeTaylor2014, 220]. The selected input [gárną]{.recon} ‘yarn’ is the nominal citation form used here, while oblique [garnăn]{.recon} ‘yarn’ belongs only to comparative background.
+Kroonen cites the noun as `*garna-`, and Ringe and Taylor give the early chain [garna]{.recon} 'yarn' > [geern]{.recon} 'yarn' > [gearn]{.recon} 'yarn' > OE [`gearn`]{.iv lang=oe sort=gearn role=comparison_form} 'yarn' [@Kroonen2013; @RingeTaylor2014, 220]. The selected input [gárną]{.recon} ‘yarn’ is the nominal citation form used here, while oblique [garnăn]{.recon} ‘yarn’ belongs only to comparative background.
 
 ### Old English evidence
 
-Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses [gearn]{.lex lang=oe} 'yarn' with Latin *filatum* 'spun thread' [@ClarkHall1960; @BosworthToller1898].
+Clark Hall records `gearn (e) n.` 'yarn, spun wool', and Bosworth-Toller glosses [`gearn`]{.iv lang=oe sort=gearn role=comparison_form} 'yarn' with Latin *filatum* 'spun thread' [@ClarkHall1960; @BosworthToller1898].
 
 ### Development to Old English
 

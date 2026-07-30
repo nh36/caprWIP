@@ -127,9 +127,11 @@ local function visible_span(span)
 end
 
 local function explicit_tag_is_printable(language, role, form, display, source_ref)
-  if language == "" or language == "preoe" then
+  if language == "" then
     return false
   end
+  -- Note: preoe forms are now allowed to print if they appear in print_main.
+  -- The blanket preoe exclusion was removed (§11 fix); use print_main as the authority.
   local allow = ensure_print_main_loaded()
   if role == "regular_output" then
     if source_ref == "" then
