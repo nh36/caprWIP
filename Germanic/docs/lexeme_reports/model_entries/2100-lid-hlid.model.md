@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel cites a neuter lexeme of the `*xliđ-` type with Old English `hlid` 'lid', and Lloyd includes OE `hlid` 'lid' beside ON `hliþó` 'lid' and OHG `(h)lit` 'lid' among forms that retain `i` [@Orel2003; @Lloyd1966].
+Orel cites a neuter lexeme of the `*xliđ-` type with Old English [hlid]{.lex lang=oe} 'lid, cover', and Lloyd includes OE `hlid` 'lid' beside ON `hliþó` 'lid' and OHG `(h)lit` 'lid' among forms that retain `i` [@Orel2003; @Lloyd1966].
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `hlid` as the noun 'lid, cover, door, gate' [@ClarkHall1960; @BosworthToller1898, 563].
+Clark Hall and Bosworth-Toller record [hlid]{.lex lang=oe} 'lid, cover' as the noun 'lid, cover, door, gate' [@ClarkHall1960; @BosworthToller1898, 563].
 
 ### Development to Old English
 

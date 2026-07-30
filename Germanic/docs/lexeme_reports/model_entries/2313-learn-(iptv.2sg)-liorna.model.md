@@ -40,9 +40,9 @@ attested Northumbrian finite form, while [`leornian`]{.iv lang=oe sort=leornian 
 
 ### Development to Old English
 
-The selected form develops regularly as `*líznô > *lírnô` by rhotacism, then
+The selected form develops regularly as [líznô]{.recon} 'learn' > [lírnô]{.recon} 'learn' by rhotacism, then
 [líornô]{.recon} 'learn (iptv.2sg)' by breaking before `rn`, and finally
-`*líorna > liorna` by late shortening of the unstressed long vowel.
+[líorna]{.recon} 'learn' > `liorna` by late shortening of the unstressed long vowel.
 
 Campbell's Northumbrian `io` evidence and Ringe and Taylor's explicit statement
 that no form of `liornian` stood in an i-umlauting environment support this

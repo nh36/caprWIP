@@ -50,7 +50,7 @@ Direct attestation does not supply the required comparator in these entries.
 The target is an explicitly reconstructed Old English form and carries the
 corresponding evidential burden.
 
-## Known but unmodelled remodellings
+## Known but unmodelled phonological and morphological developments
 
 The historical remodeling is known, but it cannot be derived by sound change
 alone. Naming the process explains the mismatch without pretending that the

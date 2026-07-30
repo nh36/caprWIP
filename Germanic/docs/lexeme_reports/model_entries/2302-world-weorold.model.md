@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The word is the old compound 'age of men'. Orel and the `*wira-` tradition
 reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
-[weraldiz]{.recon} 'world' and its pre-Old-English chain `*weraldu > *weruld`
+[weraldiz]{.recon} 'world' and its pre-Old-English chain [weraldu]{.recon} 'world' > [weruld]{.recon} 'world'
 [@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold` 'world'
 [@KlugeSeebold2011, 981].
@@ -52,7 +52,7 @@ back mutation yields [wéor-oldu]{.recon} ‘world'; final high-vowel apocope th
 `weorold` 'world'.
 
 This sequence matches the comparative background in Ringe and Taylor's
-`*weraldiz > *weraldu > *weruld` chain while preserving the `*wir-` notation of
+[weraldiz]{.recon} 'world' > [weraldu]{.recon} 'world' > [weruld]{.recon} 'world' chain while preserving the `*wir-` notation of
 the comparative label [@RingeTaylor2014, 341]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.

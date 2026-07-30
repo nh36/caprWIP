@@ -38,7 +38,7 @@ the normalized target **[`hæfeþ`]{.iv lang=oe sort=haefeth role=target_form}**
 
 The target form is therefore a normalized finite cell rather than the ordinary
 dictionary lemma. It represents the inherited non-geminating present stem more
-directly than [`habban`]{.iv lang=oe sort=habban role=comparison_form} does.
+directly than [`habban`]{.iv lang=oe sort=habban role=comparison_form} 'have' does.
 
 ### Development to Old English
 

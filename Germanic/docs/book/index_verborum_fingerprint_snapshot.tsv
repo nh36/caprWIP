@@ -1,9 +1,7 @@
 language	form	form_role	source_scope	source_ref_no_line
 dutch	beide	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md
-dutch	vel	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md
 german	Nacken	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md
 german	beide	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md
-german	sondern	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md
 german	stillen	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md
 german	weinen	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
 goth	brusts	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md
@@ -26,14 +24,12 @@ oe	berige	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entrie
 oe	berġe	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md
 oe	berġes	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md
 oe	berġes	target_form	lexical_heading	berry — OE berġes
-oe	bezen	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md
 oe	beġinnan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md
 oe	beġinnan	target_form	lexical_heading	begin — OE beġinnan
 oe	biegan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md
 oe	bigan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md
 oe	boc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md
 oe	bocc	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md
-oe	bodan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md
 oe	bolt	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md
 oe	bora	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md
 oe	bora	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md
@@ -45,7 +41,6 @@ oe	boraþ	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/23
 oe	boraþ	target_form	lexical_heading	bore (3sg) — OE boraþ
 oe	borian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md
 oe	borian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md
-oe	botm	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md
 oe	botm	target_form	lexical_heading	bottom — OE botm
 oe	brand	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md
 oe	branda	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1965-brand-brandes.model.md
@@ -64,6 +59,7 @@ oe	brōc	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model
 oe	bucc	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md
 oe	bucc	target_form	lexical_heading	buck — OE bucc
 oe	bucca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md
+oe	byrd	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md
 oe	byrd	target_form	lexical_heading	birth — OE byrd
 oe	byċċ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md
 oe	bær	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md
@@ -111,7 +107,6 @@ oe	cwidu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries
 oe	cwudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md
 oe	cū	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md
 oe	cūm	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
-oe	cūs	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe	cȳ	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe	cȳ	target_form	lexical_heading	cow — OE cȳ
 oe	cȳ	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
@@ -122,7 +117,6 @@ oe	dili	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/
 oe	dill	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md
 oe	dor	target_form	lexical_heading	door — OE dor
 oe	duguþ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
-oe	duru	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md
 oe	dæd	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md
 oe	dæg	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md
 oe	dēd	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md
@@ -140,7 +134,6 @@ oe	fell	target_form	lexical_heading	fell — OE fell
 oe	fellan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md
 oe	fellum	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md
 oe	feoll	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md
-oe	fern	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md
 oe	festan	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md
 oe	festan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md
 oe	festan	target_form	lexical_heading	fast — OE festan
@@ -216,7 +209,6 @@ oe	græf	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model
 oe	græfen	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md
 oe	græfð	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md
 oe	habban	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md
-oe	haldan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md
 oe	hamer	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md
 oe	hameres	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md
 oe	hameres	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md
@@ -312,7 +304,6 @@ oe	liornian	target_form	lexical_heading	learn — OE liornian
 oe	lungen	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md
 oe	lungen	target_form	lexical_heading	lung — OE lungen
 oe	lungen	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md
-oe	lyhtan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md
 oe	lām	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md
 oe	lām	target_form	lexical_heading	loam — OE lām
 oe	lām	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md
@@ -324,11 +315,11 @@ oe	maca	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2
 oe	maca	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
 oe	maca	target_form	lexical_heading	make (iptv.2sg) — OE maca
 oe	macaþ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
-oe	macaþ	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
-oe	macaþ	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
+oe	macaþ	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 oe	macaþ	target_form	lexical_heading	make (3sg) — OE macaþ
+oe	macaþ	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 oe	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
-oe	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
+oe	macian	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 oe	man	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
 oe	man	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
 oe	mann	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
@@ -472,11 +463,12 @@ oe	sċoldor	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entri
 oe	sċufun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 oe	sċuldor	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 oe	sċuldrum	evidence_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md
-oe	sċuldrum	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
+oe	sċuldrum	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 oe	sċuldrum	target_form	lexical_heading	shoulder — OE sċuldrum
-oe	sċēaf	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
-oe	sċēaf	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
+oe	sċuldrum	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
+oe	sċēaf	regular_output	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 oe	sċēaf	target_form	lexical_heading	shove — OE sċēaf
+oe	sċēaf	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 oe	sċēap	target_form	lexical_heading	sheep — OE sċēap
 oe	sċēawa	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md
 oe	sċēawa	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md
@@ -535,7 +527,6 @@ oe	woruld	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entrie
 oe	wulf	target_form	lexical_heading	wolf — OE wulf
 oe	wull	target_form	lexical_heading	wool — OE wull
 oe	wurold	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
-oe	wylf	regular_output	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md
 oe	wæcnan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md
 oe	wæfs	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md
 oe	wæfs	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md
@@ -590,7 +581,6 @@ ohg	backan	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1
 ohg	bahhan	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md
 ohg	bēde	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md
 ohg	fogal	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md
-ohg	foll	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md
 ohg	lecchon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md
 ohg	lecchon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md
 ohg	mahhon	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
@@ -1075,7 +1065,6 @@ pgmc	*skíllingaz	source_protoform	lexical_protoform	shilling — OE sċilling
 pgmc	*skúbanaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 pgmc	*skúbun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md
 pgmc	*skúflō	selected_input	trace_proto_input	shovel — OE sċofl
-pgmc	*skúldramiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 pgmc	*skúldramiz	selected_input	trace_proto_input	shoulder — OE sċuldrum
 pgmc	*skúldramiz	source_protoform	lexical_protoform	shoulder — OE sċuldrum
 pgmc	*skúldrō	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
@@ -1500,12 +1489,12 @@ preoe	*sparai-	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_ent
 preoe	*sparja-	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
 preoe	*spárē	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
 preoe	*spárēθi	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
-preoe	*timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md
 preoe	*weraldiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 preoe	*weraldu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 preoe	*weruld	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 preoe	bakan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md
 preoe	hebun	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md
 preoe	spárē	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
+preoe	timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md
 pwgmc	*skúldru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 pwgmc	skuldru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md

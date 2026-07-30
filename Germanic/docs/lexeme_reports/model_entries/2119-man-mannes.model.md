@@ -28,7 +28,7 @@ genitive ending.
 
 ### Old English evidence
 
-Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form} 'man', [`man`]{.iv lang=oe sort=man role=comparison_form} 'man' / [`mannes`]{.iv lang=oe sort=mannes role=target_form} 'man's / _menn_
+Campbell gives the paradigm [`mann`]{.iv lang=oe sort=mann role=comparison_form} 'man', [`man`]{.iv lang=oe sort=man role=comparison_form} 'man' / [`mannes`]{.iv lang=oe sort=mannes role=target_form} 'man's / [menn]{.lex lang=oe} 'men'
 [@Campbell1959, §621].
 Sievers-Brunner likewise cites [`man`]{.iv lang=oe sort=man role=comparison_form} 'man' [`mannes`]{.iv lang=oe sort=mannes role=target_form} 'man's [@SieversBrunner1965, §226]. He
 also explains that word-final simplification underlies forms such as [`man`]{.iv lang=oe sort=man role=comparison_form} 'man'
@@ -40,7 +40,7 @@ The relevant comparison form is therefore the attested genitive singular
 
 ### Development to Old English
 
-Campbell's paradigm _mann_, _man_ / _mannes_ / _menn_ confirms the selected genitive
+Campbell's paradigm _mann_, _man_ / _mannes_ / [menn]{.lex lang=oe} 'men' confirms the selected genitive
 singular _mannes_ [@Campbell1959, §621]. In the present analysis, [mánnas]{.recon} ‘man’
 develops through Anglo-Frisian brightening and later unstressed merger to
 `mannes`. In this cell the geminate remains medial before `-es`. The citation

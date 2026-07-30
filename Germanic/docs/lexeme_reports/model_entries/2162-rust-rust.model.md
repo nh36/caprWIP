@@ -19,7 +19,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 ### Reconstruction and comparative evidence
 
 The comparative dictionaries do not support a single citation reconstruction
-uniformly. Orel cites [rustaz]{.recon} 'rust' (sb.m./f.) with Old English `rust` and Old Saxon
+uniformly. Orel cites [rustaz]{.recon} 'rust' (sb.m./f.) with Old English [rust]{.lex lang=oe} 'rust' and Old Saxon
 and Old High German `rost` 'rust' [@Orel2003, 308]. The form [rústō]{.recon} ‘rust’ therefore stands here
 as a competing citation reconstruction rather than as the best-supported
 inherited headword.
@@ -30,9 +30,9 @@ points toward `rost` 'rust', not toward the attested Old English noun.
 
 ### Old English evidence
 
-The Old English noun is attested, not reconstructed. Clark Hall gives `rūst m.` 'rust'
-[@ClarkHall1960, 245], and Bosworth-Toller records `rúst (? and rust)`
-[@BosworthToller1898, 677]. The form is normalized here as `rust` from that attested
+The Old English noun is attested, not reconstructed. Clark Hall gives [rūst]{.lex lang=oe} 'rust' (m.)
+[@ClarkHall1960, 245], and Bosworth-Toller records [rúst]{.lex lang=oe} 'rust' (also `rust`)
+[@BosworthToller1898, 677]. The form is normalized here as [rust]{.lex lang=oe} 'rust' from that attested
 record.
 
 Those dictionary entries identify a masculine noun, which aligns better with
@@ -42,13 +42,13 @@ preserved in the header.
 ### Development to Old English
 
 Under Campbell's regular lowering of stressed `u` before a following mid or low
-vowel, the citation-form input gives `rost` 'rust', not `rust` [@Campbell1959, §115].
+vowel, the citation-form input gives `rost` 'rust', not [rust]{.lex lang=oe} 'rust' [@Campbell1959, §115].
 The same lowering would also affect comparative citation-form reconstructions
 such as [rustaz]{.recon} ‘rust’.
 
-A high-vowel comparator such as instrumental-type [rústu]{.recon} ‘rust’ would yield `rust`
+A high-vowel comparator such as instrumental-type [rústu]{.recon} ‘rust’ would yield [rust]{.lex lang=oe} 'rust'
 regularly, but that does not explain the attested citation form of the noun. No
-accepted regular pathway from the citation form to attested `rust` has been
+accepted regular pathway from the citation form to attested [rust]{.lex lang=oe} 'rust' has been
 established.
 
 ### Expected and attested forms

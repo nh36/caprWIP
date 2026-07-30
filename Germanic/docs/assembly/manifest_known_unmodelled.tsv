@@ -1,3 +1,4 @@
 global_order	class_order	row_id	lexical_item	counterpart	proto	protoform	derivation_class	class_bucket	section_title	model_entry_path	trace_match_status	trace_match_basis	notes
 141	1	2013	fire	fȳre	*fūri	*fūri	known_unmodelled	known_unmodelled	Known but unmodelled remodellings	Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED
 142	2	2240	tap	tæppa	*táppô	*táppô	known_unmodelled	known_unmodelled	Known but unmodelled remodellings	Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED
+99	25	2216	stem	stefn	*stámnaz	*stámnaz	known_unmodelled	known_unmodelled	Known but unmodelled developments	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	no_match	protoform pending; FST derivation not available

@@ -39,7 +39,7 @@ dictionary headword.
 
 From [[bánnas]{.recon} ‘ban’]{.iv lang=pgmc sort=bannas role=selected_input}, the geminate remains medial before the case ending and the
 unstressed vowel develops regularly to give [`bannes`]{.iv lang=oe sort=bannes role=target_form} 'ban'. The paradigm comparison
-therefore sets the genitive against nominative [`ban`]{.iv lang=oe sort=ban role=comparison_form}, the ordinary nominative
+therefore sets the genitive against nominative [`ban`]{.iv lang=oe sort=ban role=comparison_form} 'ban', the ordinary nominative
 form of the same noun, rather than against a directly cited genitive headword.
 
 ### Paradigm comparison

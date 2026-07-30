@@ -25,7 +25,7 @@ derivational input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugunth role=
 `-i` has been lost.
 
 Ringe and Taylor explicitly give the sequence
-`*jugunþi > *juguþ > OE geoguþ ~ iuguþ` [@RingeTaylor2014, 141]. The
+[jugunþi]{.recon} 'youth' > [juguþ]{.recon} 'youth' > OE geoguþ ~ iuguþ [@RingeTaylor2014, 141]. The
 derivational input therefore differs from the broader comparative headword
 because the Old English development must begin after early loss of final `-i`.
 
@@ -37,7 +37,7 @@ The Old English noun is attested with varying spellings. Ringe and Taylor cite
 variation is treated as orthographic rather than lexical.
 
 Nothing in the source stack suggests that a different paradigm cell should be
-chosen. The relevant Old English comparison form is the noun [`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form} itself.
+chosen. The relevant Old English comparison form is the noun [`ġeoguþ`]{.iv lang=oe sort=geoguth role=target_form} 'youth' itself.
 
 ### Development to Old English
 

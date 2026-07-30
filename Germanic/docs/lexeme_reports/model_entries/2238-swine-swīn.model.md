@@ -26,7 +26,7 @@ Clark Hall records `swin (y)` as the ordinary noun headword [@ClarkHall1960]. Th
 
 ### Development to Old English
 
-From selected input [swḯną]{.recon} ‘swine’, loss of the final nasal vowel yields `swīn`. The outcome is therefore the regular monosyllabic noun with preserved long root `ī`.
+From selected input [swḯną]{.recon} ‘swine’, loss of the final nasal vowel yields [swīn]{.lex lang=oe} 'swine, pig'. The outcome is therefore the regular monosyllabic noun with preserved long root `ī`.
 
 ### Source note
 

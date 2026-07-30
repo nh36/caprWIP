@@ -39,18 +39,18 @@ therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
 The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan} 'to bow', but the relevant comparison
-form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag}** 'bowed'. That is the paradigm
+form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag} 'bow, ring'** 'bowed'. That is the paradigm
 cell in which the inherited `*au` grade is preserved most directly.
 
 ### Development to Old English
 
 From [[báug]{.recon} ‘bow’]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
-produce [`bēag`]{.iv lang=oe sort=beag} [@Campbell1959, 53]. No special analogical repair is needed for that
+produce [`bēag`]{.iv lang=oe sort=beag} 'bow, ring' [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.
 
 The analogical element in the wider lexeme belongs instead to the present stem
-seen in [`būgan`]{.iv lang=oe sort=bugan}. The selected input differs from the citation form because the
+seen in [`būgan`]{.iv lang=oe sort=bugan} 'bow, bend'. The selected input differs from the citation form because the
 regular inherited pathway survives more transparently in the preterite than in
 the infinitive.
 
@@ -66,5 +66,5 @@ preterite from the more familiar infinitival citation form.
 | past participial branch | participial `*bugan-` type | later participial outcomes | bogen-type evidence | relevant to the paradigm, but not the clearest match for this entry |
 
 The singular preterite is the relevant comparison form. It gives a direct
-lautgesetzlich path to attested [`bēag`]{.iv lang=oe sort=beag}, while the citation form [`būgan`]{.iv lang=oe sort=bugan}
+lautgesetzlich path to attested [`bēag`]{.iv lang=oe sort=beag} 'bow, ring', while the citation form [`būgan`]{.iv lang=oe sort=bugan} 'bow, bend'
 belongs to a paradigm whose present stem has already undergone later leveling.

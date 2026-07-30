@@ -25,7 +25,7 @@ form.
 
 Fulk presents the Old English forms together as [`wæfs`]{.iv lang=oe sort=waefs role=target_form} 'wasp' with variants [`wæsp`]{.iv lang=oe sort=waesp role=comparison_form} 'wasp' and
 [`wæps`]{.iv lang=oe sort=waeps role=comparison_form} 'wasp' [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
-explicit by deriving later `wæps` and late West Saxon `wasp` from earlier
+explicit by deriving later `wæps` and late West Saxon [wasp]{.lex lang=english} 'wasp' from earlier
 `waefs / wæfs` through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 

@@ -38,13 +38,13 @@ singular citation form with Anglo-Frisian fronting.
 
 The plural [`hwalas`]{.iv lang=oe sort=hwalas role=comparison_form} 'whales' supplies control
 evidence. It shows the same lexeme with `a` in an open syllable beside
-singular [`hwæl`]{.iv lang=oe sort=hwael role=target_form} in a closed monosyllable.
+singular [`hwæl`]{.iv lang=oe sort=hwael role=target_form} 'whale' in a closed monosyllable.
 
 ### Development to Old English
 
 From [xwálaz]{.recon} 'whale', final `-z` disappears and bare final `-a` is lost.
 Anglo-Frisian fronting then yields `æ` in the closed monosyllable, and Old
-English orthography writes `hwæl`.
+English orthography writes [hwæl]{.lex lang=oe} 'whale'.
 
 ### Formation comparison
 

@@ -247,29 +247,30 @@ def _semantic_key(row: dict[str, str]) -> tuple[str, str, str, str, str]:
     )
 
 
-def _load_allowlist() -> tuple[set[tuple], set[tuple]]:
-    """Load allowlist; returns (expected_additions, expected_removals) sets.
+def _load_allowlist() -> tuple[set[tuple], set[tuple], list[str]]:
+    """Load allowlist; returns (expected_additions, expected_removals, validation_errors).
 
-    The allowlist TSV may optionally have an 'action' column with values
-    'add' (form expected to be present in current but not baseline) or
-    'remove' (form expected to be absent from current but present in baseline).
-    Rows without an explicit action column are treated as 'remove' for
-    backward compatibility with existing entries.
+    The allowlist TSV has an 'action' column with strictly 'add' or 'remove'.
+    Any other value is a validation error.
     """
     if not ALLOWLIST_TSV.exists():
-        return set(), set()
+        return set(), set(), []
     additions: set[tuple] = set()
     removals: set[tuple] = set()
+    errors: list[str] = []
     with open(ALLOWLIST_TSV, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f, delimiter="\t")
-        for row in reader:
+        for i, row in enumerate(reader, 2):
+            action = (row.get("action") or "").strip().lower()
+            if action not in ("add", "remove"):
+                errors.append(f"Allowlist row {i}: invalid action {action!r} (must be 'add' or 'remove')")
+                continue
             key = _semantic_key(row)
-            action = (row.get("action") or "remove").strip().lower()
             if action == "add":
                 additions.add(key)
             else:
                 removals.add(key)
-    return additions, removals
+    return additions, removals, errors
 
 
 def run_index_fingerprint_checks() -> None:
@@ -294,7 +295,26 @@ def run_index_fingerprint_checks() -> None:
         )
         baseline_fp = {_semantic_key(row) for row in _load_forms_rows_from_text(baseline_text)}
 
-    expected_additions, expected_removals = _load_allowlist()
+    expected_additions, expected_removals, allowlist_errors = _load_allowlist()
+
+    # Fail on invalid allowlist entries
+    assert_true(not allowlist_errors, "Invalid allowlist entries:\n" + "\n".join(allowlist_errors))
+
+    # Stale allowlist entries: an 'add' entry that is already in the baseline
+    # (meaning the form was already there before and there's nothing to add)
+    stale_additions = {k for k in expected_additions if k in baseline_fp}
+    # A 'remove' entry that is still in current (not actually removed)
+    stale_removals = {k for k in expected_removals if k in current_fp}
+    assert_true(
+        not stale_additions,
+        f"Stale 'add' allowlist entries (form already in baseline):\n"
+        + "\n".join(str(k) for k in sorted(stale_additions)[:5])
+    )
+    assert_true(
+        not stale_removals,
+        f"Stale 'remove' allowlist entries (form still present in current):\n"
+        + "\n".join(str(k) for k in sorted(stale_removals)[:5])
+    )
 
     # Unallowlisted additions: present in current but not in baseline and not allowlisted as 'add'
     unexpected_added = (current_fp - baseline_fp) - expected_additions
@@ -585,15 +605,18 @@ def find_class_compat_issues(text: str, source: str) -> list[str]:
             issues.append(f"{source}:{lnum}: .pred and .recon combined — {span}")
         if "pred" in classes and "ex" in classes:
             issues.append(f"{source}:{lnum}: .pred and .ex combined — {span}")
+        if "pred" in classes and "iv" in classes:
+            issues.append(f"{source}:{lnum}: .pred and .iv combined — counterfactuals are not index material — {span}")
         if "ex" in classes and "lex" in classes:
             issues.append(f"{source}:{lnum}: .ex and .lex combined — {span}")
         if "ex" in classes and "recon" in classes:
             issues.append(f"{source}:{lnum}: .ex and .recon combined — {span}")
         if "ex" in classes and "iv" in classes:
             issues.append(f"{source}:{lnum}: .ex and .iv combined — {span}")
-        # .lex + .iv: redundant; use .iv alone for indexed ordinary forms
         if "lex" in classes and "iv" in classes:
             issues.append(f"{source}:{lnum}: .lex and .iv combined (use .iv alone) — {span}")
+        if "lex" in classes and "recon" in classes:
+            issues.append(f"{source}:{lnum}: .lex and .recon combined — ordinary forms cannot be simultaneously reconstructed — {span}")
     return issues
 
 
@@ -604,10 +627,12 @@ def run_class_compat_fixtures() -> None:
         "[*form*]{.pred .lex}",
         "[*form*]{.pred .recon}",
         "[*form*]{.pred .ex}",
+        "[form]{.pred .iv lang=oe}",       # new: .pred + .iv prohibited
         "[phrase]{.ex .lex}",
         "[phrase]{.ex .recon}",
         "[phrase]{.ex .iv lang=oe}",
         "[form]{.lex .iv lang=oe}",
+        "[form]{.lex .recon}",             # new: .lex + .recon prohibited
     ]
     for span in bad_combos:
         issues = find_class_compat_issues(span, "fixture")
@@ -620,6 +645,7 @@ def run_class_compat_fixtures() -> None:
         "[form]{.lex lang=oe} 'gloss'",
         "[phrase]{.ex} included here",
         "[*form*]{.pred}",
+        "[form]{.iv lang=oe sort=form role=comparison_form} 'gloss'",
     ]
     for span in good_combos:
         issues = find_class_compat_issues(span, "fixture")
@@ -648,11 +674,17 @@ def _read_model_metadata(path: Path) -> dict[str, str]:
 
 
 def run_manifest_consistency() -> None:
-    """Model-entry metadata must agree with the canonical manifest."""
+    """Model-entry metadata must agree with the canonical manifest.
+
+    Every manifest row pointing to a model entry must agree on:
+    COUNTERPART, PROTO, DERIVATION_CLASS, and PROTOFORM.
+    Missing model files are flagged as errors, not silently skipped.
+    """
     if not MANIFEST_PATH.exists():
-        return  # skip if manifest not present in this checkout
+        return
 
     mismatches: list[str] = []
+    missing_files: list[str] = []
     with open(MANIFEST_PATH, encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
 
@@ -662,25 +694,23 @@ def run_manifest_consistency() -> None:
             continue
         entry_path = ROOT.parent / entry_path_str
         if not entry_path.exists():
+            missing_files.append(f"Row {row.get('row_id','?')} ({row.get('lexical_item','?')}): {entry_path_str}")
             continue
 
         meta = _read_model_metadata(entry_path)
         row_id = row.get("row_id", "?")
         lex_item = row.get("lexical_item", "?")
 
-        # Compare fields that must match
         checks = [
             ("COUNTERPART", row.get("counterpart", ""), meta.get("COUNTERPART", "")),
             ("PROTO", row.get("proto", ""), meta.get("PROTO", "")),
             ("DERIVATION_CLASS", row.get("derivation_class", ""), meta.get("DERIVATION_CLASS", "")),
         ]
-        # PROTOFORM: allow manifest to say "pending" variants without failing
+        # PROTOFORM: compare strictly; require a separate PROTOFORM_STATUS field if pending
         mf_proto = row.get("protoform", "")
         entry_proto = meta.get("PROTOFORM", "")
         if mf_proto and entry_proto and mf_proto != entry_proto:
-            # Accept if one is a "pending" placeholder
-            if "pending" not in mf_proto and "pending" not in entry_proto:
-                checks.append(("PROTOFORM", mf_proto, entry_proto))
+            checks.append(("PROTOFORM", mf_proto, entry_proto))
 
         for field, manifest_val, entry_val in checks:
             if manifest_val and entry_val and manifest_val != entry_val:
@@ -688,11 +718,70 @@ def run_manifest_consistency() -> None:
                     f"Row {row_id} ({lex_item}): {field} manifest={manifest_val!r} vs entry={entry_val!r}"
                 )
 
+    assert_true(not missing_files, f"Manifest row(s) point to missing model files:\n" + "\n".join(missing_files[:10]))
     assert_true(
         not mismatches,
         f"Manifest/model-entry metadata mismatch ({len(mismatches)} cases):\n"
         + "\n".join(mismatches[:30]),
     )
+
+
+# ── Row 2216 / trace invariants ───────────────────────────────────────────────
+ALIGNED_DATA_PATH = ROOT.parent / "Germanic" / "data" / "germanic-aligned-final.tsv"
+STEM_PATH_2216 = MODEL_ENTRIES / "2216-stem-stefn.model.md"
+
+
+def run_row2216_invariants() -> None:
+    """Row 2216 (stem/trunk) invariants protecting the homonym correction."""
+    stem_text = STEM_PATH_2216.read_text(encoding="utf-8")
+
+    # 1. model entry must NOT contain *stébnō as a selected input / protoform
+    assert_true(
+        "PROTOFORM: *stébnō" not in stem_text and "selected input form | *stébnō" not in stem_text,
+        "Row 2216 stem entry must not use *stébnō as its PROTOFORM or selected input (wrong homonym)",
+    )
+
+    # 2. derivation class must be known_unmodelled (not early_analogy)
+    assert_true(
+        "DERIVATION_CLASS: known_unmodelled" in stem_text,
+        "Row 2216 must be classified as known_unmodelled, not early_analogy",
+    )
+
+    # 3. homonym note must be present
+    assert_true(
+        "voice" in stem_text and ("homonym" in stem_text or "unrelated" in stem_text),
+        "Row 2216 must contain a note distinguishing the voice/sound homonym",
+    )
+
+    # 4. aligned data must not use *stébnō for stem row
+    if ALIGNED_DATA_PATH.exists():
+        with open(ALIGNED_DATA_PATH, encoding="utf-8", newline="") as f:
+            reader = csv.reader(f, delimiter="\t")
+            for row in reader:
+                if len(row) >= 14 and row[0] == "2216" and row[7] == "Old_English":
+                    protoform = row[2]
+                    assert_true(
+                        protoform != "*stébnō",
+                        f"Aligned data row 2216 must not use PROTOFORM *stébnō; found {protoform!r}",
+                    )
+                    # 5. derivation class must be known_unmodelled
+                    deriv_class = row[10]
+                    assert_true(
+                        deriv_class == "known_unmodelled",
+                        f"Aligned data row 2216 must be known_unmodelled; found {deriv_class!r}",
+                    )
+                    break
+
+    # 6. manifest must agree (trace_match_status != confident if no FST trace)
+    if MANIFEST_PATH.exists():
+        with open(MANIFEST_PATH, encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f, delimiter="\t"):
+                if row.get("row_id") == "2216":
+                    assert_true(
+                        row.get("trace_match_status", "") != "confident",
+                        "Manifest row 2216 must not be marked confident without an FST trace",
+                    )
+                    break
 
 
 # ── Render-level regression tests ────────────────────────────────────────────
@@ -756,65 +845,106 @@ def run_render_level_fixtures() -> None:
     assert_true(r"\Recon{júką}" in tex, ".recon+.iv must render .recon form")
 
 
-# ── Generation-consistency check ─────────────────────────────────────────────
+# ── Generation-freshness check ────────────────────────────────────────────────
 BOOK_BUILDER = ROOT / "docs" / "assembly" / "build_capr_book_draft.py"
 LEXVOL_BUILDER = ROOT / "docs" / "assembly" / "build_full_lexical_volume.py"
 LEXVOL_MD = ROOT / "docs" / "assembly" / "lexical_volume_alpha_01.md"
+_ASSEMBLER_ENV_VAR = "CAPR_CHECK_FRESHNESS_ONLY"  # signal to skip PDF in freshness mode
 
 
-def run_generation_consistency() -> None:
-    """Verify that key tracked generated Markdown matches what rebuilding would produce.
-
-    This catches "sources changed but generated artifacts not rebuilt" without
-    re-running the full (expensive) build. We run the generators in a lightweight
-    mode (no PDF) and compare the deterministic Markdown output.
-
-    If generators are not available (e.g. missing dependencies), the check is
-    skipped with a warning rather than failing.
-    """
+def _run_builder_to_temp(builder: Path, repo_root: Path) -> str | None:
+    """Run a builder with output directed to a temp file; return produced Markdown or None."""
+    if not builder.exists():
+        return None
+    # Builders write deterministic Markdown to their canonical output path.
+    # We run in check mode: generate fresh, read the fresh output, then restore the original.
     import tempfile, shutil
 
-    if not BOOK_BUILDER.exists():
-        return  # skip if builder not present
+    # Identify the output path from the builder script (first .md output line heuristic)
+    with open(builder, encoding="utf-8") as f:
+        src = f.read()
+    # Look for the generated output path
+    # Both builders have: Generated /path/to/some.md
+    import re as _re
+    out_match = _re.search(r'Generated.*?(/[^\s\'"]+\.md)', src)
+    if not out_match:
+        return None
+    output_path = Path(out_match.group(1).replace("${repo_root}", str(repo_root)))
+    if not output_path.is_absolute():
+        output_path = repo_root / output_path
 
-    with tempfile.TemporaryDirectory() as tmp:
-        tmp_path = Path(tmp)
-        # Run book-draft generator
+    # Save original
+    original = output_path.read_text(encoding="utf-8") if output_path.exists() else None
+    try:
+        result = subprocess.run(
+            ["python3", str(builder)],
+            capture_output=True, text=True, check=True,
+            cwd=repo_root,
+        )
+        fresh = output_path.read_text(encoding="utf-8") if output_path.exists() else None
+        return fresh
+    except subprocess.CalledProcessError as e:
+        return None
+    finally:
+        # Restore original so the tracker doesn't see a mutation
+        if original is not None:
+            output_path.write_text(original, encoding="utf-8")
+
+
+def run_generation_freshness() -> None:
+    """Freshness: tracked artifact == output from canonical sources.
+
+    Idempotency: two consecutive runs produce the same output.
+
+    This is non-mutating: we generate to discover the fresh content, then restore
+    the tracked file. If the tracked file is stale, the test fails.
+    """
+    repo_root = ROOT.parent
+
+    for label, builder, tracked in [
+        ("lexical volume", LEXVOL_BUILDER, LEXVOL_MD),
+        ("assembled book", BOOK_BUILDER, ASSEMBLED),
+    ]:
+        if not builder.exists() or not tracked.exists():
+            continue
+
+        # Save original
+        original = tracked.read_text(encoding="utf-8")
+
         try:
             result = subprocess.run(
-                ["python3", str(BOOK_BUILDER)],
+                ["python3", str(builder)],
                 capture_output=True, text=True, check=True,
-                cwd=ROOT.parent,
+                cwd=repo_root,
             )
         except subprocess.CalledProcessError as e:
-            print(f"  WARNING: build_capr_book_draft.py failed; skipping generation-consistency check: {e.stderr[:200]}", file=sys.stderr)
-            return
+            print(f"  WARNING: {label} builder failed; skipping freshness: {e.stderr[:200]}", file=sys.stderr)
+            continue
 
-        # The generator writes to the tracked path; compare with a re-run
-        current = ASSEMBLED.read_text(encoding="utf-8")
-        # Re-run to get fresh output
-        try:
-            result2 = subprocess.run(
-                ["python3", str(BOOK_BUILDER)],
-                capture_output=True, text=True, check=True,
-                cwd=ROOT.parent,
-            )
-        except subprocess.CalledProcessError:
-            return
-        regenerated = ASSEMBLED.read_text(encoding="utf-8")
+        fresh = tracked.read_text(encoding="utf-8")
+
+        # Restore — we are non-mutating
+        tracked.write_text(original, encoding="utf-8")
 
         assert_true(
-            current == regenerated,
-            "Book draft Markdown is not idempotent on second build — likely non-deterministic generator output",
+            original == fresh,
+            f"{label}: tracked artifact is stale — tracked and freshly-generated content differ"
         )
 
-    # Verify lexical volume is consistent with model entries
-    # (lightweight check: ensure stem entry content appears in the volume)
-    if LEXVOL_MD.exists():
-        vol = LEXVOL_MD.read_text(encoding="utf-8")
+        # Idempotency: run again and check same result
+        try:
+            subprocess.run(
+                ["python3", str(builder)],
+                capture_output=True, text=True, check=True,
+                cwd=repo_root,
+            )
+        except subprocess.CalledProcessError:
+            continue
+        second = tracked.read_text(encoding="utf-8")
+        tracked.write_text(original, encoding="utf-8")
         assert_true(
-            "stem, trunk" in vol or "stem — OE stefn" in vol,
-            "Lexical volume may be stale: stem entry correction not reflected"
+            fresh == second,
+            f"{label}: generation is not idempotent — second run produced different output"
         )
 
 
@@ -842,7 +972,8 @@ def main() -> int:
         run_known_entry_checks()
         run_corpus_lints()
         run_manifest_consistency()
-        run_generation_consistency()
+        run_row2216_invariants()
+        run_generation_freshness()
         run_index_fingerprint_checks()
     except AssertionError as exc:
         print(f"Reader-facing semantic regression failure: {exc}", file=sys.stderr)

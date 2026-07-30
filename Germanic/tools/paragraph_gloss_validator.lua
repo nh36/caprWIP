@@ -226,6 +226,8 @@ do
     -- OE vowel quality / diphthong notation (plain and long-vowel variants)
     "eo", "ea", "ie", "io", "ia", "oe",
     "ēo", "ēa", "īe", "ōe",
+    -- OE diphthong-plus-w sequences used in phonological description
+    "eaw", "ēaw", "eow", "ēow",
     -- PGmc/NWGmc diphthong source sequences
     "ai", "au", "ei", "eu", "iu", "ui", "oi", "ou",
     "āi", "āu", "ēi", "ēu",

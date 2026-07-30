@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources do not give one uniform inherited stem. Kroonen
-preserves the word family as `*saf/ppan-` 'sap', with Old English `sæp` 'sap'
+preserves the word family as [saf]{.recon} 'sap' / `*ppan-`, with Old English `sæp` 'sap'
 [@Kroonen2013, 420]. Orel preserves the comparative notation [sapōn]{.recon} 'sap'
 and [sapan]{.recon} 'sap'
 [@Orel2003, 319].
@@ -31,7 +31,7 @@ here.
 ### Old English evidence
 
 Clark Hall records [`sæp`]{.iv lang=oe sort=saep role=target_form} 'sap' (e) n. [@ClarkHall1960, 247]. The target is therefore
-an attested neuter Old English noun. Orel's plain `sap` notation belongs to
+an attested neuter Old English noun. Orel's plain [sap]{.lex lang=oe} 'sap, juice' notation belongs to
 comparative normalization, not to the spelling adopted here for the Old English
 form [@Orel2003, 319].
 

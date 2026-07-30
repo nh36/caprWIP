@@ -56,7 +56,7 @@ SECTION_ORDER = [
     ("early_analogy", "Part III. Early analogy and pre-Old-English input selection", "Early analogy and pre-Old-English input selection"),
     ("late_analogy", "Part IV. Late analogy and paradigm-cell selection", "Late analogy and paradigm-cell selection"),
     ("reconstructed_oe", "Part V. Reconstructed Old English comparators", "Reconstructed Old English comparators"),
-    ("known_unmodelled", "Part VI. Known but unmodelled remodellings", "Known but unmodelled remodellings"),
+    ("known_unmodelled", "Part VI. Known but unmodelled developments", "Known but unmodelled phonological and morphological developments"),
     ("unexplained_unmodelled", "Part VII. Unexplained or deliberately unmodelled exceptions", "Unexplained or deliberately unmodelled exceptions"),
 ]
 
@@ -393,7 +393,7 @@ def clean_reader_facing_prose(text: str) -> str:
     cleaned = re.sub(r"\bselected target\b", "Old English form here", cleaned)
     cleaned = re.sub(r"\bselected form\b", "form compared here", cleaned)
     cleaned = re.sub(r"\bselected cell\b", "cell compared here", cleaned)
-    cleaned = re.sub(r"\bknown_unmodelled\b", "known but unmodelled remodelling", cleaned)
+    cleaned = re.sub(r"\bknown_unmodelled\b", "known but unmodelled development", cleaned)
     cleaned = re.sub(r"\bunexplained_exception\b", "unexplained exception", cleaned)
     cleaned = cleaned.replace("Old English form here here", "Old English form here")
     cleaned = cleaned.replace("form compared hereation", "form compared here")
@@ -476,7 +476,7 @@ def humanize_derivation_class(label: str) -> str:
         "early_analogy": "early analogy",
         "late_analogy": "late analogy",
         "reconstructed_oe": "reconstructed Old English comparator",
-        "known_unmodelled": "known but unmodelled remodelling",
+        "known_unmodelled": "known but unmodelled development",
         "unexplained_unmodelled": "unexplained exception",
     }
     return mapping.get(label, label.replace("_", " "))
@@ -1012,7 +1012,7 @@ def build_front_matter(
         f"- Early analogy: **{counts['early_analogy']}**",
         f"- Late analogy: **{counts['late_analogy']}**",
         f"- Reconstructed Old English comparators: **{counts['reconstructed_oe']}**",
-        f"- Known but unmodelled remodellings: **{counts['known_unmodelled']}**",
+        f"- Known but unmodelled developments: **{counts['known_unmodelled']}**",
         f"- Unexplained or deliberately unmodelled exceptions: **{counts['unexplained_unmodelled']}**",
     ]
     return lines

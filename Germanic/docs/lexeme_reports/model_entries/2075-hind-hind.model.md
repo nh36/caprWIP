@@ -22,7 +22,7 @@ Kroonen cites the animal name as `*hindō-` f. 'hind' [@Kroonen2013]. The select
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record `hind` as the noun 'hind, female deer' [@ClarkHall1960; @BosworthToller1898, 554]. The target is therefore the attested lexical item itself.
+Clark Hall and Bosworth-Toller record [hind]{.lex lang=oe} 'hind, doe' as the noun 'hind, female deer' [@ClarkHall1960; @BosworthToller1898, 554]. The target is therefore the attested lexical item itself.
 
 ### Development to Old English
 

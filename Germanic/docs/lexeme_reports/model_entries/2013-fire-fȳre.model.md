@@ -18,7 +18,7 @@ DERIVATION_CLASS: known_unmodelled
 
 ### Reconstruction and comparative evidence
 
-Kroonen places the lexeme in a heteroclitic family `*fōr ~ *fun-` and explains
+Kroonen places the lexeme in a heteroclitic family [fōr]{.recon} 'fire' ~ `*fun-` and explains
 the front-mutated West Germanic forms from an oblique form of the
 `*fu(w)eri` type [@Kroonen2013, 151]. The selected input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input} therefore does not
 function as an arbitrary substitute for the headword: it represents the
@@ -59,6 +59,6 @@ form and from the later analogical surface result.
 
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level heteroclitic headword | `*fōr ~ *fun-` | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
+| lexeme-level heteroclitic headword | [fōr]{.recon} 'fire' ~ `*fun-` | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
 | inherited oblique cell | [`*fūri`]{.iv lang=pgmc sort=furi role=selected_input} | compact-trace output: [`fȳr`]{.iv lang=oe sort=fyr role=regular_output} 'fire' | [`fȳr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire' | regular inherited output from the selected input |
 | later analogical surface form | — | attested [`fȳre`]{.iv lang=oe sort=fyre role=target_form} 'fire' with restored `-e` | [`fȳre`]{.iv lang=oe sort=fyre role=target_form} 'fire' | genuine OE target, but not the direct phonological output |

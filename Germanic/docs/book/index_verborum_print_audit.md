@@ -1,54 +1,54 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2004
-- Internal production unique forms: 980
-- Printed main occurrences: 1900
-- Printed main unique forms: 958
+- Internal production occurrences: 1987
+- Internal production unique forms: 969
+- Printed main occurrences: 1883
+- Printed main unique forms: 948
 - Printed excluded occurrences: 104
 - Printed excluded unique forms: 82
 
 ## Print exclusions by reason
 
-- `excluded_by_print_decision`: 5
-- `preoe_model_internal_default_exclusion`: 8
+- `excluded_by_print_decision`: 4
+- `preoe_model_internal_default_exclusion`: 9
 - `regular_output_default_exclusion`: 91
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 905 | 394 |
+| Old English | 890 | 387 |
 | Proto-Germanic | 933 | 515 |
 | Proto-West Germanic | 2 | 2 |
 | Old Norse | 12 | 9 |
-| Old High German | 16 | 14 |
+| Old High German | 15 | 13 |
 | Old Frisian | 7 | 6 |
 | Gothic | 3 | 3 |
-| Old Saxon | 10 | 7 |
-| Dutch | 3 | 2 |
-| German | 7 | 5 |
+| Old Saxon | 11 | 7 |
+| Dutch | 2 | 1 |
+| German | 6 | 4 |
 | Modern English | 2 | 1 |
 
 ## Printed main-index forms by role
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 368 |
+| target_form | 365 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 509 |
-| evidence_form | 161 |
+| comparison_form | 496 |
+| evidence_form | 160 |
 
 ## Internal-only rows by reason
 
-- `excluded_by_print_decision`: 5
-- `preoe_model_internal_default_exclusion`: 8
+- `excluded_by_print_decision`: 4
+- `preoe_model_internal_default_exclusion`: 9
 - `regular_output_default_exclusion`: 91
 
 ## Pre-OE review rows by proposed status
 
-- `exclude_model_internal`: 5
-- `include_if_source_backed`: 8
+- `exclude_model_internal`: 4
+- `include_if_source_backed`: 9
 
 ## Reader-facing example rows by role
 
@@ -64,7 +64,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 959
+- Unique printed entries: 949
 - Print anomaly rows: 29
 - Hard print anomalies: 0
 
@@ -128,10 +128,8 @@
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
 | dutch | `beide` | beide | 2 | comparison_form |
-| dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
 | german | `Nacken` | nacken | 2 | comparison_form |
-| german | `sondern` | sondern | 1 | comparison_form |
 | german | `stillen` | stillen | 1 | comparison_form |
 | german | `weinen` | weinen | 1 | comparison_form |
 | modeng | `both` | both | 2 | comparison_form |

@@ -1107,7 +1107,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 458	ʃ t eː l ə n	*stélaną	ʃ t eː l ə n ( - - )	ʃteːlən	stehlen	126	German						steal	*stélaną	253
 1627	s t ɑ m	*stámnaz	s t ɑ m ( - - - )	stɑm	stam	446	Dutch						stem	*stámnaz	254
 1626	s t ɛ m	*stámnaz	s t ɛ m ( - - - )	stɛm	stem	446	English						stem	*stámnaz	254
-2216	s t e f n	*stébnō	s t e f n	stefn	stefn	446	Old_English	Pre-OE transponent *stebn- (citation form *stebnō per R/T p.330) > OE stefn. The form stemn is a later WS variant (fn > mn assimilation, Bülbring §445: 'erst in Alfreds Zeit'). The deeper PGmc reconstruction remains disputed (see DEV_NOTES); this entry uses the local pre-OE transponent and defers cross-branch analysis.		early_analogy			stem	*stámnaz	254
+2216	s t e f n	*stámnaz	s t e f n	stefn	stefn	446	Old_English	Stem/trunk lexeme: PGmc *stámnaz (stem/trunk/prow family, Orel 2003:371). The *stébnō PROTOFORM previously assigned belongs to the unrelated OE homonym stefn/stemn "voice/sound" and has been removed. The coda mn→fn development (yielding OE stefn/stefna for stem/prow) is attested comparatively (ON stafn, OS stamn) but not yet modeled in the FST; derivation pending. Classified known_unmodelled until the relevant FST rule is implemented.		known_unmodelled			stem	*stámnaz	254
 1625	ʃ t a m	*stámnaz	ʃ t a m ( - - - )	ʃtam	Stamm	446	German						stem	*stámnaz	254
 1397	s t ɪ l ə	*stéllijaną	s t ɪ l - ə - ( - - )	stɪlə	stillen	382	Dutch						still	*stéllijaną	255
 1396	s t ɪ l	*stéllijaną	s t ɪ l - - - ( - - )	stɪl	still	382	English						still	*stéllijaną	255

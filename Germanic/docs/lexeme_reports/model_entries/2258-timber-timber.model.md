@@ -20,8 +20,8 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs the noun as **[`*timbra-`]{.iv lang=pgmc sort=timbra role=source_protoform}** and cites Old English
 **[`timber`]{.iv lang=oe sort=timber role=target_form} 'timber'** among its continuations [@Kroonen2013, 517]. Ringe and Taylor
-instead state the history from `PGmc *timra` through West Germanic
-[`*timbr`]{.iv lang=preoe sort=timbr role=comparison_form} to Old English [`timber`]{.iv lang=oe sort=timber role=target_form} 'timber' [@RingeTaylor2014, 327].
+instead state the history from [timra]{.recon} 'timber' through West Germanic
+[[timbr]{.recon} 'timber']{.iv lang=preoe sort=timbr role=comparison_form} to Old English [`timber`]{.iv lang=oe sort=timber role=target_form} 'timber' [@RingeTaylor2014, 327].
 
 The difference is therefore not over the Old English noun itself. It concerns
 whether medial **`b`** belongs in the comparative citation form or appears in an
@@ -45,5 +45,5 @@ OE-facing consonantal input.
 | Formation or notation | Candidate form | OE relation | Result |
 | :--- | :--- | :--- | :--- |
 | Kroonen's comparative citation | [`*timbra-`]{.iv lang=pgmc sort=timbra role=source_protoform} | already matches the consonantal frame of OE [`timber`]{.iv lang=oe sort=timber role=target_form} 'timber' | closest comparative support for the selected input |
-| Ringe-Taylor citation line | [`*timra`]{.iv lang=pgmc sort=timra role=source_protoform} > [`*timbr`]{.iv lang=preoe sort=timbr role=comparison_form} | reaches the same OE noun through early cluster expansion | compatible comparative background |
+| Ringe-Taylor citation line | [`*timra`]{.iv lang=pgmc sort=timra role=source_protoform} > [[timbr]{.recon} 'timber']{.iv lang=preoe sort=timbr role=comparison_form} | reaches the same OE noun through early cluster expansion | compatible comparative background |
 | modeled input | [`*tímbrą`]{.iv lang=pgmc sort=timbra role=selected_input} | trace output: [`timber`]{.iv lang=oe sort=timber role=regular_output} 'timber' | selected OE-facing input |

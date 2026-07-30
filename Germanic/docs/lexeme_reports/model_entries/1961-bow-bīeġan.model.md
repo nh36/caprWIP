@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the weak verb as `*baugjan-` 'to (make) bend' and cites Old English `biegan` among its reflexes [@Kroonen2013]. Ringe and Taylor give the northwest Germanic preform [baugijana]{.recon} ‘bow’, with later [béagjan]{.recon} ‘bow’ behind West Saxon Old English `biegan` [@RingeTaylor2014]. The entry therefore concerns the weak causative member of the bend-family, alongside the related strong verb and noun.
+Kroonen reconstructs the weak verb as `*baugjan-` 'to (make) bend' and cites Old English [biegan]{.lex lang=oe} 'bow, bend' among its reflexes [@Kroonen2013]. Ringe and Taylor give the northwest Germanic preform [baugijana]{.recon} ‘bow’, with later [béagjan]{.recon} ‘bow’ behind West Saxon Old English [biegan]{.lex lang=oe} 'bow, bend' [@RingeTaylor2014]. The entry therefore concerns the weak causative member of the bend-family, alongside the related strong verb and noun.
 
 ### Old English evidence
 

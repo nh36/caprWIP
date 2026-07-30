@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen treats the cognate set under `*skellinga- ~ *skillinga-` and connects it with `*skeld-linga-`, while Orel likewise gives the coin word with OE `scilling` among the reflexes [@Kroonen2013; @Orel2003]. The selected input [skíllingaz]{.recon} ‘shilling’ is the nominative-style form used here to represent that inherited `*-ing-` derivative.
+Kroonen treats the cognate set under `*skellinga- ~ *skillinga-` and connects it with `*skeld-linga-`, while Orel likewise gives the coin word with OE [scilling]{.lex lang=oe} 'shilling' among the reflexes [@Kroonen2013; @Orel2003]. The selected input [skíllingaz]{.recon} ‘shilling’ is the nominative-style form used here to represent that inherited `*-ing-` derivative.
 
 ### Old English evidence
 

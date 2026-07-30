@@ -34,8 +34,8 @@ the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
 Clark Hall gives the ordinary headword as
 [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn'
 [@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in `liorn-`,
-including [`liorna`]{.iv lang=oe sort=liorna role=comparison_form} and
-[`liornes`]{.iv lang=oe sort=liornes role=comparison_form}, beside the
+including [`liorna`]{.iv lang=oe sort=liorna role=comparison_form} 'learn' and
+[`liornes`]{.iv lang=oe sort=liornes role=comparison_form} 'learning', beside the
 West-Saxon-oriented [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} tradition
 [@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian
 forms with `io` beside `leornian` [@Campbell1959, §123 n. 2].
@@ -47,10 +47,10 @@ follows the regular class-II 3sg pattern.
 
 ### Development to Old English
 
-The selected form develops as `*líznōθi > *lírnōθi` by rhotacism, then
+The selected form develops as [líznōθi]{.recon} 'learns' > [lírnōθi]{.recon} 'learns' by rhotacism, then
 [lírnōθ]{.recon} 'learns' after early apocope of final `-i`, then
 [líornōθ]{.recon} 'learns' by breaking before `rn`, and finally
-`*líornaθ > liornaþ` by late shortening of the unstressed long vowel.
+[líornaθ]{.recon} 'learns' > [liornaþ]{.lex lang=oe} 'learns' by late shortening of the unstressed long vowel.
 
 Campbell's Northumbrian `io` evidence and Ringe and Taylor's statement that no
 form of `liornian` stood in an i-umlauting environment support the stem, while

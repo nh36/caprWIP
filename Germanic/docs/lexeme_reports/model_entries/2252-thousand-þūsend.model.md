@@ -39,7 +39,7 @@ in its lexical status.
 
 If the old final `-ī` had remained long enough to trigger ordinary double
 umlaut, Campbell's rule would point toward a form of the
-[`*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form} type rather
+[`*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form} 'thousand' type rather
 than attested [`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'
 [@Campbell1959, §203]. Preserved root `ū` therefore argues that the
 umlaut-triggering vowel was lost or neutralized before the ordinary OE umlaut

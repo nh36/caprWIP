@@ -21,18 +21,18 @@ DERIVATION_CLASS: unexplained_unmodelled
 The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
 history of West Germanic, stressed `u` lowers before a following non-high vowel,
 so the regular Old English outcome is an `o`-form. Campbell's discussion of the
-parallel adjective `full`, with OHG `foll` as the regular comparator, shows that
+parallel adjective `full`, with OHG [foll]{.lex lang=dutch} 'full' as the regular comparator, shows that
 the handbooks treat this as a genuine exception cluster rather than as a place
 where the rule itself is doubtful [@Campbell1959, §115].
 
-Bülbring likewise lists `wulle` among the traditional `u`-preserving
+Bülbring likewise lists [wulle]{.lex lang=oe} 'wool' among the traditional `u`-preserving
 exceptions [@Bulbring1902, §116]. The comparative evidence therefore establishes
 two things at once: the regular result should be `woll`, and Old English still
-has a lexical exception of the `wull / wulle` type.
+has a lexical exception of the [wull]{.lex lang=oe} 'wool' / [wulle]{.lex lang=oe} 'wool' type.
 
 ### Old English evidence
 
-The Old English target is given here as `wull`, a normalized lexeme form. Handbook discussion often cites `wulle`, the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root `u`.
+The Old English target is given here as [wull]{.lex lang=oe} 'wool', a normalized lexeme form. Handbook discussion often cites [wulle]{.lex lang=oe} 'wool', the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root `u`.
 
 The OE evidence therefore does not remove the problem. It confirms that the
 language has a `u`-form where the regular phonology would have produced `o`.

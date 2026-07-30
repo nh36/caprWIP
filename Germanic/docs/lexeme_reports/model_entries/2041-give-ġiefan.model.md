@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the strong verb as `*geban-` and cites Old English `giefan` 'give' among its reflexes [@Kroonen2013]. Ringe and Taylor contrast West Saxon `giefan` 'give' with Mercian `for-geofan` 'give' and Northumbrian `geafa` 'give', showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014].
+Kroonen reconstructs the strong verb as `*geban-` and cites Old English [giefan]{.lex lang=oe} 'give' among its reflexes [@Kroonen2013]. Ringe and Taylor contrast West Saxon `giefan` 'give' with Mercian `for-geofan` 'give' and Northumbrian `geafa` 'give', showing that the inherited verb takes different later dialectal shapes [@RingeTaylor2014].
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ West Saxon `ie` here reflects palatal diphthongization after initial palatalizat
 
 ### Development to Old English
 
-From [gébaną]{.recon} ‘give’, initial `g` palatalizes before `e`; West Saxon palatal diphthongization then yields `ie`, and later tail reduction gives `giefan` [@Campbell1959; @RingeTaylor2014]. The result is therefore the regular West Saxon infinitive.
+From [gébaną]{.recon} ‘give’, initial `g` palatalizes before `e`; West Saxon palatal diphthongization then yields `ie`, and later tail reduction gives [giefan]{.lex lang=oe} 'give' [@Campbell1959; @RingeTaylor2014]. The result is therefore the regular West Saxon infinitive.

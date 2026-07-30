@@ -33,7 +33,7 @@ English form treated here [@RingeTaylor2014, 314].
 
 The dictionary headword is [`macian`]{.iv lang=oe sort=macian role=comparison_form} 'make' [@ClarkHall1960, 193]. The selected form in this
 entry is therefore not the lemma but the imperative singular [`maca`]{.iv lang=oe sort=maca role=target_form} 'make', chosen as a
-paradigm form beside the headword [`macian`]{.iv lang=oe sort=macian role=comparison_form} 'make' and the related finite form [`macaþ`]{.iv lang=oe sort=macath role=comparison_form}.
+paradigm form beside the headword [`macian`]{.iv lang=oe sort=macian role=comparison_form} 'make' and the related finite form [`macaþ`]{.iv lang=oe sort=macath role=comparison_form} 'makes'.
 
 The lexical history is still that of `macian` 'make', but the finite cell isolates the regular outcome
 of trimoric `*ō` more cleanly than the citation form does.

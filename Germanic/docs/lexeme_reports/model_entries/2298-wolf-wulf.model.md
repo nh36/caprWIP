@@ -34,8 +34,8 @@ same grounds and prefers a lexical or analogical account instead
 ### Old English evidence
 
 Campbell treats `wulf` 'wolf' as part of the exceptional `u` set
-[@Campbell1959, §115]. Sievers-Brunner notes that oblique `wulfe` continues
-`wulfi` or older `wulfai` [@SieversBrunner1965, §160].
+[@Campbell1959, §115]. Sievers-Brunner notes that oblique [wulfe]{.lex lang=oe} 'wolf (dat.)' continues
+[wulfi]{.lex lang=oe} 'wolf (dat.)' or older [wulfai]{.lex lang=oe} 'wolf (dat.)' [@SieversBrunner1965, §160].
 
 The surviving oblique forms do not supply a regular route back to bare `wulf` 'wolf'.
 They belong to the same lexeme, but they do
@@ -46,11 +46,11 @@ not remove the explanatory problem presented by the citation form.
 Under the ordinary Northwest Germanic lowering of stressed `u` before a
 following non-high vowel, the citation-form input would point toward
 `o`-vocalism [@RingeTaylor2014, 42-44]. The compact trace shows exactly that
-path: `*wúlfaz > *wólfaz > *wólfa > wolf`.
+path: [wúlfaz]{.recon} 'wolf' > [wólfaz]{.recon} 'wolf' > [wólfa]{.recon} 'wolf' > wolf.
 
 A high-vowel oblique input would behave differently. There the following high
 vowel would block the lowering of `u`, but the same environment
-would also trigger i-umlaut, so the regular control result would be `wylf` or
+would also trigger i-umlaut, so the regular control result would be [wylf]{.lex lang=oe} 'wolf' or
 `wylfe`, not bare `wulf`. The attested noun therefore remains unexplained at
 the citation-form level.
 

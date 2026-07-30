@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a paradigm
 with nominative [hnekkō]{.recon} ‘neck’, genitive [hnukkaz]{.recon} ‘neck’, and accusative plural
-[hnakkuns]{.recon} ‘neck’, and he places Old English `hnecca` 'neck' among the e-grade descendants
+[hnakkuns]{.recon} ‘neck’, and he places Old English [hnecca]{.lex lang=oe} 'neck, nape' among the e-grade descendants
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
 partner of the a-grade `Nacken` family [@KlugeSeebold2011, 347].
 
@@ -30,8 +30,8 @@ also gives an a-grade headword line [@Orel2003, 218]. The selected input
 
 ### Old English evidence
 
-Clark Hall records the weak masculine noun `hnecca` [@ClarkHall1960, 162].
-Bosworth-Toller likewise records `hnecca` [@BosworthToller1898, 567]. The target is therefore an attested
+Clark Hall records the weak masculine noun [hnecca]{.lex lang=oe} 'neck, nape' [@ClarkHall1960, 162].
+Bosworth-Toller likewise records [hnecca]{.lex lang=oe} 'neck, nape' [@BosworthToller1898, 567]. The target is therefore an attested
 citation form, not an oblique cell or a reconstructed lemma.
 
 The phonological question is upstream of the Old English evidence. The attested

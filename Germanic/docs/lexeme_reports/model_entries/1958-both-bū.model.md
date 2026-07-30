@@ -19,12 +19,12 @@ DERIVATION_CLASS: regular
 ### Reconstruction and comparative evidence
 
 Kroonen treats the Germanic numeral under `*ba-` and gives the inherited
-paradigm `*bai, *bans, *bōz/*bōns, *bō`, with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and
+paradigm [bai]{.recon} 'both', [bans]{.recon} 'both (pl.)', [bōz]{.recon} 'both'/ [bōns]{.recon} 'both', [bō]{.recon} 'both', with Old English [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both', [`bā`]{.iv lang=oe sort=ba role=comparison_form} 'both', and
 neuter [`bū`]{.iv lang=oe sort=bu role=target_form} 'both' [@Kroonen2013, 47]. For the present entry, the relevant inherited
 form is the unextended neuter dual [`*bō`]{.iv lang=pgmc sort=bo role=selected_input} 'both'.
 
 The older explanation of [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} 'both' derives it from `*bō-jen-`, and Orel still
-gives `OE bezen (< *bō-jenō)` beside ON [`báðir`]{.iv lang=on sort=badir role=comparison_form} 'both', OFris [`bēthe`]{.iv lang=ofris sort=bethe role=comparison_form} 'both', OS [`be-thia`]{.iv lang=os sort=bethia role=comparison_form} 'both',
+gives OE [bezen]{.lex lang=oe} 'both' (< [bō-jenō]{.recon} 'both') beside ON [`báðir`]{.iv lang=on sort=badir role=comparison_form} 'both', OFris [`bēthe`]{.iv lang=ofris sort=bethe role=comparison_form} 'both', OS [`be-thia`]{.iv lang=os sort=bethia role=comparison_form} 'both',
 and OHG [`bēde`]{.iv lang=ohg sort=bede role=comparison_form} 'both' [@Orel2003, 65]. Fulk reports that explanation
 cautiously and notes Seebold's preference for a `*bō-þ-` analysis instead
 [@Fulk2018, §10.1]. That debate concerns [`bēġen`]{.iv lang=oe sort=begen role=comparison_form} and the extended forms

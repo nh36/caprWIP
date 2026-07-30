@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor give PWGmc `li/ekkōn` continuing as Old English [`liccian`]{.iv lang=oe sort=liccian role=comparison_form} 'lick', Old Saxon [`likkon`]{.iv lang=os sort=likkon role=comparison_form} 'lick', and Old High German [`lecchon`]{.iv lang=ohg sort=lecchon role=comparison_form} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} 'lick']{.iv lang=pgmc sort=likkojanan role=source_protoform} with the same Old English continuation [@Orel2003, 285].
+Ringe and Taylor give PWGmc [ekkōn]{.recon} 'lick (3sg.)' continuing as Old English [`liccian`]{.iv lang=oe sort=liccian role=comparison_form} 'lick', Old Saxon [`likkon`]{.iv lang=os sort=likkon role=comparison_form} 'lick', and Old High German [`lecchon`]{.iv lang=ohg sort=lecchon role=comparison_form} 'lick' [@RingeTaylor2014, 50]. Orel gives the fuller weak-verb reconstruction [[likkōjanan]{.recon} 'lick']{.iv lang=pgmc sort=likkojanan role=source_protoform} with the same Old English continuation [@Orel2003, 285].
 
 The selected form in this entry is the non-`j` present third singular [líkkōθi]{.recon} 'licks', not the remodeled infinitive. Campbell states the class-II present endings as `lufas, -aþ (< -ōsi, -ōþi)` [@Campbell1959, §356.4]. Ringe and Taylor likewise note that class-II weak present 2sg. `-as(t)` and 3sg. `-aþ` have stable `a` [@RingeTaylor2014, 80].
 

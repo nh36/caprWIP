@@ -20,9 +20,9 @@ DERIVATION_CLASS: late_analogy
 
 The lexeme-level reconstruction is [[mizdō]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the selected input [[mízdai]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdai role=selected_input}
 is a dative-singular cell rather than the citation form. The Old English
-evidence for the `meord` side is oblique.
+evidence for the [meord]{.lex lang=oe} 'meed, reward' side is oblique.
 
-The wider history of competing `mēd` remains disputed. Kroonen and Fulk
+The wider history of competing [mēd]{.lex lang=oe} 'meed, reward' remains disputed. Kroonen and Fulk
 explain it through some form of `z`-loss and compensatory lengthening
 [@Kroonen2013, 410; @Fulk2018, 69], while Orel keeps
 a doublet analysis [@Orel2003, 311]. The comparison here concerns the
@@ -42,7 +42,7 @@ reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed
 
 ### Development to Old English
 
-Ringe and Taylor give the broader noun history as `PGmc *mizdo > PWGmce *mizdu
+Ringe and Taylor give the broader noun history as [mizdo]{.recon} 'reward' > [mizdu]{.recon} 'reward'
 > OE meord ~ méd` [@RingeTaylor2014, 99]. The fuller oblique-cell path modeled
 here spells out the intermediate rhotacism, monophthongization, lowering,
 breaking, and unstressed-shortening steps needed for the selected dative-singular
@@ -50,7 +50,7 @@ comparison.
 
 This entry therefore follows the attested oblique line within the broader
 development. It does not depend on a full decision about the history of the
-competing `mēd` tradition.
+competing [mēd]{.lex lang=oe} 'meed, reward' tradition.
 
 ### Paradigm comparison
 

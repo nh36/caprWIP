@@ -18,7 +18,7 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Ringe and Taylor cite the strong verb `hladan` directly [@RingeTaylor2014, 248].
+Ringe and Taylor cite the strong verb [hladan]{.lex lang=oe} 'lade, load' directly [@RingeTaylor2014, 248].
 The citation label [laθōjaną]{.recon} ‘lade’ is used here only as a broader family heading,
 not as the direct source of the OE derivation.
 

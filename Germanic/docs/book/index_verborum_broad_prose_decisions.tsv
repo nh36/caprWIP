@@ -125,3 +125,21 @@ defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:67	*st
 defer	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46	*stofn	pgmc	source_protoform	Luick proto-form for OE stofn trunk; deferred pending full dossier
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:83	cluster			English linguistic term 'cluster' (phonological position); not a Germanic lexical form
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:70	NWGmcMnDissimilation			FST rule name; not a lexical form (updated line reference)
+ignore	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29	aw+j			Phonological cluster notation (aw+j); not a lexical form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:85	cluster			English linguistic term 'cluster' (phonological); not Germanic lexical form
+defer	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:45	*líorna	pgmc	source_protoform	Pre-OE development stage for learn iptv; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:53	*líornaθ	pgmc	source_protoform	Pre-OE development stage for learn 3sg; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46	*mákōθ	pgmc	source_protoform	Pre-OE development stage for make 3sg; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*næxti	pgmc	source_protoform	Intermediate night dev stage; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45	*neahti	pgmc	source_protoform	Intermediate night dev stage; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*neaxti	pgmc	source_protoform	Intermediate night dev stage; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*niexti	pgmc	source_protoform	Intermediate night dev stage; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*nixti	pgmc	source_protoform	Intermediate night dev stage; deferred
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:72	NWGmcMnDissimilation			FST rule name; not a lexical form (updated line)
+defer	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39	*skúldrum	pgmc	source_protoform	Intermediate shoulder dev stage; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39	*skúldrumiz	pgmc	source_protoform	Intermediate shoulder dev stage; deferred
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:84	*stebnō			Wrong-homonym voice form mentioned in homonym note; must not be indexed
+defer	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:42	*wīþja	pgmc	source_protoform	PGmc withy proto form; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49	*wólfa	pgmc	source_protoform	Intermediate wolf dev stage; deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49	*wólfaz	pgmc	source_protoform	Intermediate wolf dev stage; deferred
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:72	*xémonų	pgmc	source_protoform	Heaven PGmc form used as cross-reference comparison in stem/prow dev note

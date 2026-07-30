@@ -18,15 +18,15 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes `wadan` among the standard open-syllable examples [@Campbell1959; @RingeTaylor2014; @Luick1914, 239].
+Campbell and Ringe and Taylor describe A-restoration before a following back vowel, and Luick explicitly includes [wadan]{.lex lang=oe} 'wade, go through' among the standard open-syllable examples [@Campbell1959; @RingeTaylor2014; @Luick1914, 239].
 
 ### Old English evidence
 
-Clark Hall gives `wadan` as the verb 'to go, move, stride, advance', and Bright lists the same infinitive in the strong-verb paradigm [@ClarkHall1960; @BrightCassidyRingler1971].
+Clark Hall gives [wadan]{.lex lang=oe} 'wade, go through' as the verb 'to go, move, stride, advance', and Bright lists the same infinitive in the strong-verb paradigm [@ClarkHall1960; @BrightCassidyRingler1971].
 
 ### Development to Old English
 
-From [wádaną]{.recon} ‘wade’, Anglo-Frisian brightening first gives [wædaną]{.recon} ‘wade’. A-restoration before the back-vocalic infinitive ending then returns `a`, and later reduction yields `wadan` [@Campbell1959; @RingeTaylor2014].
+From [wádaną]{.recon} ‘wade’, Anglo-Frisian brightening first gives [wædaną]{.recon} ‘wade’. A-restoration before the back-vocalic infinitive ending then returns `a`, and later reduction yields [wadan]{.lex lang=oe} 'wade, go through' [@Campbell1959; @RingeTaylor2014].
 
 ### Development note
 

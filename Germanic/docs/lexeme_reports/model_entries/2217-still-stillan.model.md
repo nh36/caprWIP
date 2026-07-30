@@ -18,11 +18,11 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-The wider West Germanic family includes adjective `still` and verb `stillen` [@KlugeSeebold2011]. The selected input [stéllijaną]{.recon} ‘still’ represents the verbal j-formation used for the OE row.
+The wider West Germanic family includes adjective [still]{.lex lang=oe} 'still, quiet' and verb `stillen` [@KlugeSeebold2011]. The selected input [stéllijaną]{.recon} ‘still’ represents the verbal j-formation used for the OE row.
 
 ### Old English evidence
 
-Clark Hall gives `stillan` as the verb and separately `stille` as the adjective [@ClarkHall1960]. Bosworth-Toller likewise preserves a substantial prefixed verbal family under `ge-stillan` 'still, stop' and related forms [@BosworthToller1898, 724]. The selected target is the verb `stillan`, not the adjective.
+Clark Hall gives `stillan` as the verb and separately [stille]{.lex lang=oe} 'still, quiet' as the adjective [@ClarkHall1960]. Bosworth-Toller likewise preserves a substantial prefixed verbal family under `ge-stillan` 'still, stop' and related forms [@BosworthToller1898, 724]. The selected target is the verb `stillan`, not the adjective.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ As a heavy-stem Class I weak verb, [stéllijaną]{.recon} ‘still’ undergoes 
 
 ### Form note
 
-The note concerns lexical framing rather than sound law: `stillan` is the verb represented here, while `stille` belongs to the related adjectival branch of the family [@ClarkHall1960; @KlugeSeebold2011].
+The note concerns lexical framing rather than sound law: `stillan` is the verb represented here, while [stille]{.lex lang=oe} 'still, quiet' belongs to the related adjectival branch of the family [@ClarkHall1960; @KlugeSeebold2011].

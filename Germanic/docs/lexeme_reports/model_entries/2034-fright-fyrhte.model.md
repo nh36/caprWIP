@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The noun belongs to the inherited in-stem abstract [[furxtīn]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtin role=source_protoform}, the same family
-as Gothic [`faurhtei`]{.iv lang=goth sort=faurhtei role=comparison_form} [@Orel2003, 120]. The selected input [[fúrxtīnaz]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtinaz role=selected_input} is not a
+as Gothic [`faurhtei`]{.iv lang=goth sort=faurhtei role=comparison_form} 'fear, fright' [@Orel2003, 120]. The selected input [[fúrxtīnaz]{.recon} ‘fright’]{.iv lang=pgmc sort=furxtinaz role=selected_input} is not a
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with `-u` or `-o` as

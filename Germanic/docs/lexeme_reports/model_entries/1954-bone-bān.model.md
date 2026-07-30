@@ -30,4 +30,4 @@ The comparative headwords [`*baina-`]{.iv lang=pgmc sort=baina} and [[bainan]{.r
 
 ### Development to Old English
 
-West Germanic monophthongization turns stressed `*ai` into `ā`, giving [bāną]{.recon} ‘bone’; heavy-syllable nasal apocope then yields [`bān`]{.iv lang=oe sort=ban}. The resulting form matches the attested Old English citation noun.
+West Germanic monophthongization turns stressed `*ai` into `ā`, giving [bāną]{.recon} ‘bone’; heavy-syllable nasal apocope then yields [`bān`]{.iv lang=oe sort=ban} 'bone'. The resulting form matches the attested Old English citation noun.

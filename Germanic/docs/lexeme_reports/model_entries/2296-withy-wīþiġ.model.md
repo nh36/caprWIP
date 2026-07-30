@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative evidence groups the word with Germanic forms of the
-`*wīþja/ō-` or `*wiþ-` type [@Orel2003, 503]. These forms establish the
+[wīþja]{.recon} 'withy' (or `*wīþjō-` variant) or `*wiþ-` type [@Orel2003, 503]. These forms establish the
 cognate set but do not by themselves explain the Old English suffix of
 `wīþiġ` 'withy'.
 
@@ -39,7 +39,7 @@ explicitly.
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
 why the selected Proto-Germanic input is [[wḯθagą]{.recon} ‘withy’]{.iv lang=pgmc sort=withaga role=selected_input} rather than a comparative
-headword of the `*wīþja-` type.
+headword of the [wīþja]{.recon} 'withy' type.
 
 ### Development to Old English
 
@@ -51,7 +51,7 @@ Palatalization supplies the final `ġ`, and the full development reaches
 
 This derivation is regular for the form compared here. The central claim of the
 entry is therefore morphological: Old English `wīþiġ` 'withy' belongs with an
-`*-ag-` derivative, whereas the comparative `*wīþja-` label belongs to a
+`*-ag-` derivative, whereas the comparative [wīþja]{.recon} 'withy' label belongs to a
 different way of presenting the cognate family.
 
 ### Formation comparison
@@ -62,5 +62,5 @@ the Old English-facing formation that actually yields the attested noun.
 | Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | comparative family label | [`*wáiθiz`]{.iv lang=pgmc sort=waithiz role=source_protoform} | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of `wīþiġ` |
-| heavy ja-stem analysis | `*wīþja-` type | Campbell/Adamczyk-style heavy ja-stem `-e` / zero outcome | [`wīþiġ`]{.iv lang=oe sort=withig role=target_form} 'withy' | does not account cleanly for the OE suffix |
+| heavy ja-stem analysis | [wīþja]{.recon} 'withy' type | Campbell/Adamczyk-style heavy ja-stem `-e` / zero outcome | [`wīþiġ`]{.iv lang=oe sort=withig role=target_form} 'withy' | does not account cleanly for the OE suffix |
 | `*-ag-` derivative followed here | [`*wḯθagą`]{.iv lang=pgmc sort=withaga role=selected_input} | compact-trace output: [`wīþiġ`]{.iv lang=oe sort=withig role=regular_output} 'withy' | [`wīþiġ`]{.iv lang=oe sort=withig role=target_form} 'withy' | exact match between formation and target |
