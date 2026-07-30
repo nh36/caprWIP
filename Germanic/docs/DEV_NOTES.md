@@ -44016,3 +44016,19 @@ The broadly accepted Germanic cascade is `PGmc → PNWGmc → PWGmc → Pre-OE �
 **Scope for a separate branch:** audit `compact_trace_report.py` label/ordering logic; determine whether FST rule groupings match PNWGmc → PWGmc sequence; decide whether display labels, rule groupings, or historical assignments need changing; run regression suite before merging.
 
 **Related:** `Germanic/tools/compact_trace_report.py`, `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md`.
+
+---
+
+## Historical chronology audit (2026-07-31)
+
+The next development phase reviews the historical organization of the sound
+changes and the structure of Version 1 of the book.
+
+Full plan: [`Germanic/docs/HISTORICAL_CHRONOLOGY_AUDIT_PLAN.md`](HISTORICAL_CHRONOLOGY_AUDIT_PLAN.md)
+
+**First pilot:** `PGmcFinalZDeletion` / SC020 — dossier only, no rule changes.
+**Then:** SC003 rhotacism, then SC004 *ai*-monophthongization.
+
+**Key constraint:** FST regression evidence establishes necessary computational
+orderings, not automatically the complete historical chronology. Do not reorder
+rules in bulk. One change at a time, full corpus regression after each move.
