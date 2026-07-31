@@ -45,8 +45,8 @@ ID	DOCULECT	CONCEPT	COGIDS	GLOSSID	IPA	TOKENS	PROTOSTEM	PROTOFORM	COUNTERPART	NO
 44	Middle_Breton	alive	11	14	biu	b i u	*biwo	*biwos	beu
 45	Old_Cornish	alive	11	14	biu	b i u	*biwo	*biwos	biu
 46	Gaulish	alive	11	15	biu	b i u 	*biwo	*biwos	biu	Only attested as Personal Name Biuonia
-47	Old_Irish	year	12	16	blīaðan	b l ī a ð a n	*bleidanī	*bleidanī	blíadain	
-48	Old_Welsh	year	12	16	bloiðin	b l o i ð i n	*bleidanī	*bleidanī	bloidin	
+47	Old_Irish	year	12	16	blīaðan	b l ī a ð a n	*bleidanī	*bleidanī	blíadain
+48	Old_Welsh	year	12	16	bloiðin	b l o i ð i n	*bleidanī	*bleidanī	bloidin
 49	Old_Breton	year	12	16	bliðan	b l i ð a n	*bleidanī	*bleidanī	blidan
 50	Old_Cornish	year	12	16	bliθen	b l i θ e n	*bleidanī	*bleidanī	bliþen
 51	Old_Irish	sack, stomach	13	17	bolg	b o l g	*bolgo-	*bolgos	bolg
@@ -115,7 +115,7 @@ ID	DOCULECT	CONCEPT	COGIDS	GLOSSID	IPA	TOKENS	PROTOSTEM	PROTOFORM	COUNTERPART	NO
 114	Old_Irish	person	28	42	dune	d u n e	*gdony-	*gdonyos	duine
 115	Middle_Welsh	person	28	42	din	d i n	*gdony-	*gdonyos	dyn
 116	Old_Breton	person	28	42	den	d e n 	*gdony-	*gdonyos	den
-117	Old_Cornish	person	28	42	den	d e n 	*gdony-	*gdonyos	den 
+117	Old_Cornish	person	28	42	den	d e n 	*gdony-	*gdonyos	den
 118	Gaulish	person	28	43	kstonio	k s t o n i o 	*gdony-	*gdonyos 	-xtonio
 119	Old_Irish	grain	29	44	grān	g r ā n	*grāno-	*grānom	grán
 120	Middle_Welsh	grain	29	44	graun	g r a u n	*grāno-	*grānom	grawn
@@ -188,7 +188,7 @@ ID	DOCULECT	CONCEPT	COGIDS	GLOSSID	IPA	TOKENS	PROTOSTEM	PROTOFORM	COUNTERPART	NO
 187	Old_Irish	noble, chief	47	73	māl	m ā l	*maglo-	*maglos	mál
 188	Middle_Welsh	chief, lord	47	73	mail	m a i l	*maglo-	*maglos	mael
 189	Middle_Breton	noble (suffix)	47	74	mail	m a i l	*maglo-	*maglos	mael	suffix in personal names
-190	Gaulish	noble	47	7	magalos	m a g a l o s	*maglo-	*maglos	magalos	Only attested as deity name 
+190	Gaulish	noble	47	7	magalos	m a g a l o s	*maglo-	*maglos	magalos	Only attested as deity name
 191	Old_Irish	son	48	76	mak	m a k	*makʷo-	*makʷos	macc
 192	Old_Welsh	son	48	76	map	m a p	*makʷo-	*makʷos	map
 193	Old_Breton	son	48	76	mab	m a b	*makʷo-	*makʷos	mab
@@ -347,7 +347,7 @@ ID	DOCULECT	CONCEPT	COGIDS	GLOSSID	IPA	TOKENS	PROTOSTEM	PROTOFORM	COUNTERPART	NO
 346	Old_Irish	tongue	93	130	teŋge	t e ŋ g e	*tangʷāt-	*tangʷāts	tengae
 347	Old_Welsh	tongue	93	130	tauaūt	t a u a ū t	*tangʷāt-	*tangʷāts	tauawt
 348	Middle_Breton	tongue	93	130	teuot	t e u o t	*tangʷāt-	*tangʷāts	teaut
-349	Old_Irish	poet	94	131	taðg	t a ð g	*tasko-	*taskos	Tadg	
+349	Old_Irish	poet	94	131	taðg	t a ð g	*tasko-	*taskos	Tadg
 350	Gaulish	badger	94	132	taskos	t a s k o s	*tasko-	*taskos	Tascos
 351	Old_Irish	house	96	133	tex	t e x	*tegos-	*tegos	tech
 352	Old_Welsh	house	96	133	tig	t i g	*tegos-	*tegos	tig

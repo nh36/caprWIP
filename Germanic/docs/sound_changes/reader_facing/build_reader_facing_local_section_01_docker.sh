@@ -18,7 +18,8 @@ from pathlib import Path
 root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_01.md"
 chapter_files = [
-    "049-050-b-allophony-and-sievers-law-syncope.md",
+    "049-pgmc-b-allophony.md",
+    "050-pwgmc-sievers-law-syncope.md",
     "051-sk-palatalization.md",
     "052-velar-palatalization.md",
     "053-054-pre-umlaut-bridge-and-w-loss.md",
