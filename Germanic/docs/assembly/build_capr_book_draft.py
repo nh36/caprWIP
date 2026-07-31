@@ -152,17 +152,81 @@ def strip_references(text: str) -> str:
     return text.split(marker, 1)[0].rstrip() if marker in text else text.rstrip()
 
 
+_HIST_CHAPTER_RE = re.compile(r"^# Chapter \d+\. (.+)$")
+
+
 def transform_chronology(text: str) -> str:
+    """Emit the reader-facing chronology at correct heading levels for the book.
+
+    The preamble before the first historical chapter (Scope and orientation,
+    Numbering note) becomes an unnumbered chapter so it consumes no chapter
+    number.  Its sections become unnumbered sections.
+
+    Each ``# Chapter N. TITLE`` heading in the source becomes a real numbered
+    book chapter at ``#`` level (``# TITLE``, dropping the ``Chapter N.`` prefix).
+
+    Individual sound-change entries (``# Name``) are demoted to ``##`` sections
+    within their historical chapter.
+
+    Headings that appear directly under a historical chapter introduction
+    (``## ...``) stay at ``##`` level.  Headings that appear inside a
+    sound-change entry (``## Historical discussion``, ``## SC049. ...``) are
+    demoted to ``###`` subsections.  This is tracked via the ``in_intro`` flag
+    which is True after a ``# Chapter N.`` heading and False after the first
+    plain ``# SoundChange`` heading within a chapter.
+
+    ``###`` headings in chapter introductions (e.g. ``### West Germanic rhotacism
+    (SC003)`` in the Chapter 3 intro) stay at ``###``.
+    """
     out: list[str] = []
+    preamble: list[str] = []
+    seen_chapter = False
+    in_intro = False          # True = inside historical chapter intro
+                              # False = inside a sound-change entry
+
     for line in strip_title_block(strip_references(text)).splitlines():
-        if line == "## Introduction":
-            out.append("## Scope and orientation")
+        m = _HIST_CHAPTER_RE.match(line)
+        if m:
+            # Historical chapter heading
+            if not seen_chapter and preamble:
+                # Emit accumulated preamble as an unnumbered chapter so it
+                # sits visibly between the \part heading and Chapter 2
+                # without consuming a chapter counter number.
+                out.append("# Sound-change overview {.unnumbered}")
+                for p in preamble:
+                    if p.startswith("## ") and not p.rstrip().endswith("{.unnumbered}"):
+                        out.append(p.rstrip() + " {.unnumbered}")
+                    else:
+                        out.append(p)
+                preamble = []
+                out.append("")
+            seen_chapter = True
+            in_intro = True
+            out.append("# " + m.group(1))
+        elif not seen_chapter:
+            # Still accumulating preamble
+            preamble.append(line)
         elif line.startswith("# "):
+            # Sound-change entry (not a historical chapter heading)
+            in_intro = False
             out.append("## " + line[2:])
         elif line.startswith("## "):
-            out.append("### " + line[3:])
+            if in_intro:
+                # Chapter-introduction section → stays at ## (section in chapter)
+                out.append(line)
+            else:
+                # Sound-change subsection → ### (subsection of sound-change section)
+                out.append("### " + line[3:])
+        elif line.startswith("### "):
+            if in_intro:
+                # Chapter-introduction sub-section (e.g. SC list in chap3 intro)
+                out.append(line)
+            else:
+                # Deeper nesting inside a sound-change entry → ####
+                out.append("#### " + line[4:])
         else:
             out.append(line)
+
     return "\n".join(out).rstrip()
 
 
@@ -204,7 +268,6 @@ def build_book_markdown() -> str:
         r"\mainmatter",
         intro,
         r"\part{Sound changes, formalization, and relative chronology}",
-        "# The ordered sound-change sequence",
         chronology,
         r"\part{Lexical derivations}",
         "# Word-by-word derivations",

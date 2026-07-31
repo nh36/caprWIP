@@ -80,9 +80,8 @@ The sound-change chapters ask how tightly the lexical evidence constrains the ca
 
 \part{Sound changes, formalization, and relative chronology}
 
-# The ordered sound-change sequence
-
-### Scope and orientation
+# Sound-change overview {.unnumbered}
+## Scope and orientation {.unnumbered}
 
 The sequence begins with early West Germanic consonant and vowel changes and ends with Old English r-metathesis.
 
@@ -90,7 +89,7 @@ Rhotacism, brightening, breaking, umlaut, and apocope alternate with narrowly co
 
 The evidence ranges from broadly attested sound laws to lexical constraints that establish only one chronological boundary.
 
-### Numbering note
+## Numbering note {.unnumbered}
 
 SC numbers remain the established legacy identifiers. The Version 1 book presents the changes in historical chapter order, which differs from the computational cascade order for several rules.
 
@@ -99,10 +98,11 @@ SC038, SC062, and SC084 mark technical or prosodic stages rather than sound chan
 
 \newpage
 
-## Chapter 1. From Proto-Germanic to Proto-Northwest Germanic
+
+# From Proto-Germanic to Proto-Northwest Germanic
 
 
-### Historical interval
+## Historical interval
 
 This chapter covers developments that took place within the Proto-Germanic
 period, from the inherited consonant system to the first changes that separate
@@ -116,7 +116,7 @@ Norse and its relatives) and West Germanic (Old English, Old High German, Old
 Saxon, and Old Frisian among others), to the exclusion of Gothic and the other
 East Germanic varieties.
 
-### What this chapter contains
+## What this chapter contains
 
 Chapter 1 contains one reader-facing sound-change section: the positional
 allophony of Proto-Germanic \emph{*b}, implemented as `SC049 PGmcBAllophony`.
@@ -138,7 +138,7 @@ families: [*draugma-]{.recon .iv lang=pgmc sort=draugma source_ref="Germanic/doc
 A reader-facing section for SC002 awaits a stronger explanatory source base
 and is not yet assembled in the reader-facing sequence.
 
-### Scope and genealogical context
+## Scope and genealogical context
 
 Changes in this chapter are pan-Germanic in scope: they apply to ancestral forms
 that feed both the North Germanic and West Germanic descendants, or they represent
@@ -154,7 +154,7 @@ primarily because it separates the features inherited uniformly from all Germani
 from those shared selectively by North and West Germanic to the exclusion of
 Gothic.
 
-### A note on the rule names
+## A note on the rule names
 
 The CAPR rules implemented in this chapter carry names beginning with `PGmc`.
 Those names are intended as stable internal identifiers, not as claims about
@@ -196,10 +196,10 @@ The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within t
 
 \newpage
 
-## Chapter 2. From Proto-Northwest Germanic to Proto-West Germanic
+# From Proto-Northwest Germanic to Proto-West Germanic
 
 
-### Historical interval
+## Historical interval
 
 This chapter covers the sound changes that took place in the proto-language shared
 by the West Germanic languages — Old English, Old Frisian, Old Saxon, Old High
@@ -209,7 +209,7 @@ ancestor of North Germanic and West Germanic together; the ending reconstruction
 is Proto-West Germanic (PWGmc), the immediate common ancestor of the West Germanic
 languages specifically.
 
-### Scope and internal diversity
+## Scope and internal diversity
 
 Changes in this chapter are not all equally pan-West-Germanic in scope. They
 may be grouped broadly as follows:
@@ -227,7 +227,7 @@ Norse. Changes labelled `PWGmc` in the CAPR rule names generally fall here.
 They include early apocope rules, certain consonant assimilations, and the
 West Germanic gemination of consonants before `*j`.
 
-### Major changes
+## Major changes
 
 The `*ai` monophthongization (SC004) represents one of the most pervasive
 shared NW–West Germanic vowel shifts, turning unstressed endings such as the
@@ -259,7 +259,7 @@ computational reasons. Their chapter assignment here reflects their historical
 stage, not their cascade position; the individual sound-change sections note
 the divergence.
 
-### A note on source terminology and subgrouping
+## A note on source terminology and subgrouping
 
 The literature uses several partly overlapping stage labels for this period:
 
@@ -284,7 +284,7 @@ English–to-Proto-Germanic derivation chain are treated here as late expression
 of the same West Germanic developmental period unless existing CAPR dossier
 research specifically argues for Anglo-Frisian or English-specific placement.
 
-### Rule names
+## Rule names
 
 The CAPR rules in this chapter carry names beginning with `NWGmc` or `PWGmc`.
 These names are stable internal identifiers. A name beginning with `NWGmc` does
@@ -937,10 +937,10 @@ The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \e
 
 \newpage
 
-## Chapter 3. From Proto-West Germanic to Anglo-Frisian
+# From Proto-West Germanic to Anglo-Frisian
 
 
-### Historical interval
+## Historical interval
 
 This chapter covers the sound changes that occurred after the Proto-West Germanic
 period and before, or during the emergence of, the specifically English line. The
@@ -948,7 +948,7 @@ starting reconstruction is Proto-West Germanic; the end point is the
 Proto-Anglo-Frisian stage — or more precisely, the cluster of innovations that
 define the English and Frisian branch within West Germanic.
 
-### A necessary terminological caution
+## A necessary terminological caution
 
 The title of this chapter uses "Anglo-Frisian" as an organizing historical
 concept. That choice requires an explicit qualification.
@@ -980,7 +980,7 @@ change passed through a single genealogical PAF stage. Some changes may be
 West Germanic broadly; others may reflect areal diffusion. The existing CAPR
 dossiers record the source-by-source picture where these distinctions matter.
 
-### Major changes and their historical basis
+## Major changes and their historical basis
 
 ### West Germanic rhotacism (SC003)
 
@@ -1044,7 +1044,7 @@ The current CAPR inventory has this change labeled "Old English" in the pipeline
 taxonomy (no separate Anglo-Frisian bucket previously existed). The historical
 staging map now places it in Chapter 3, correcting that provisional label.
 
-### Cascade vs. historical order in this chapter
+## Cascade vs. historical order in this chapter
 
 The three changes in this chapter currently occur at cascade positions 3, 19–20,
 and 43 respectively. These cascade positions reflect computational dependencies,
@@ -1127,10 +1127,10 @@ Two derivations place low \emph{*a} > \emph{*æ} between unrounding and breaking
 
 \newpage
 
-## Chapter 4. From Anglo-Frisian to Old English
+# From Anglo-Frisian to Old English
 
 
-### Historical interval
+## Historical interval
 
 This chapter covers the sound changes that occurred within the Old English period:
 the changes that produced attested Old English from the prehistoric English forms
@@ -1138,7 +1138,7 @@ that emerged from the Anglo-Frisian stage. The starting point is the end of the
 Anglo-Frisian changes of Chapter 3; the ending point is attested West Saxon Old
 English, the primary dialect of the CAPR corpus.
 
-### Scope and dialect variation
+## Scope and dialect variation
 
 Not every change in this chapter has pan-Old-English scope. Some changes — most
 notably the West Saxon palatal-glide effects (SC016) and West Saxon palatal
@@ -1155,7 +1155,7 @@ The existing reader-facing sound-change sections record which changes have
 pan-Old-English scope and which are specifically West Saxon or Anglian
 [@Campbell1959, §§ 1--10; @Hogg1992, §§ 1.1--1.15].
 
-### Chapter structure
+## Chapter structure
 
 The changes in this chapter fall into several natural historical subgroups,
 though the boundaries between them are not always sharp:
@@ -1186,7 +1186,7 @@ late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
 English phonological history, when the syllabic structure of the language
 began to shift toward the more reduced profile of Middle English.
 
-### Cascade positions and historical order
+## Cascade positions and historical order
 
 The cascade positions of changes in this chapter broadly follow historical
 sequence within the Old English period. Some divergences exist and are documented
@@ -1201,7 +1201,7 @@ in the individual sound-change sections:
 * SC049 (PGmc B Allophony) is assigned to Chapter 1 historically but appears
   in the cascade here; its section cross-references Chapter 1.
 
-### Sources
+## Sources
 
 Campbell's *Old English Grammar* is the primary source for the dating and
 scope of individual changes in this chapter [@Campbell1959].
