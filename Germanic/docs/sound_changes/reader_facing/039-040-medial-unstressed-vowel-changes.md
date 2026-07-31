@@ -1,6 +1,6 @@
 # Medial unstressed vowel changes
 
-## Historical discussion of medial unstressed vowel changes
+## Historical discussion
 
 The history of *wuduwe* ‘widow’ orders these two changes within the same
 low-stress vocalic development. Campbell discusses both the

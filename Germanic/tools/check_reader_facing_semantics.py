@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import importlib.util
 import re
 import subprocess
 import sys
@@ -13,6 +14,7 @@ from check_predicted_forms import find_predicted_issues
 
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS_DIR = ROOT / "tools"
+LEXVOL_BUILDER = ROOT / "docs" / "assembly" / "build_full_lexical_volume.py"
 VALIDATOR = TOOLS_DIR / "paragraph_gloss_validator.lua"
 FORMS_TSV = ROOT / "docs" / "book" / "index_verborum_forms.tsv"
 ALLOWLIST_TSV = ROOT / "docs" / "book" / "index_semantic_fingerprint_allowlist.tsv"
@@ -92,6 +94,15 @@ def run_validator(markdown_text: str) -> tuple[int, str]:
 def assert_true(cond: bool, msg: str) -> None:
     if not cond:
         raise AssertionError(msg)
+
+
+def load_lexical_volume_module():
+    spec = importlib.util.spec_from_file_location("build_full_lexical_volume", LEXVOL_BUILDER)
+    if spec is None or spec.loader is None:
+        raise AssertionError(f"Unable to load lexical volume builder module: {LEXVOL_BUILDER}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def paragraph_fixture(section: str, body: str) -> str:
@@ -1309,7 +1320,6 @@ def run_recon_star_render_fixtures() -> None:
 
 # ── Generation-freshness check ────────────────────────────────────────────────
 BOOK_BUILDER = ROOT / "docs" / "assembly" / "build_capr_book_draft.py"
-LEXVOL_BUILDER = ROOT / "docs" / "assembly" / "build_full_lexical_volume.py"
 LEXVOL_MD = ROOT / "docs" / "assembly" / "lexical_volume_alpha_01.md"
 _ASSEMBLER_ENV_VAR = "CAPR_CHECK_FRESHNESS_ONLY"  # signal to skip PDF in freshness mode
 
@@ -1766,6 +1776,47 @@ def run_generation_freshness() -> None:
         )
 
 
+def run_trace_render_fixtures() -> None:
+    module = load_lexical_volume_module()
+
+    # Single-star and double-star stage markers should both parse as stage headings.
+    single_star = module.parse_trace_cell("*Proto-West Germanic*<br/>PWGmc Final Bare A Loss: bucc")
+    assert_true(single_star and single_star[0][0] == "Proto-West Germanic", "single-star Proto-West Germanic must parse as stage")
+
+    northwest = module.parse_trace_cell("*Northwest Germanic*<br/>[no change]")
+    assert_true(northwest and northwest[0][0] == "Northwest Germanic", "single-star Northwest Germanic must parse as stage")
+
+    old_english = module.parse_trace_cell("*Old English*<br/>[no change]")
+    assert_true(old_english and old_english[0][0] == "Old English", "single-star Old English must parse as stage")
+
+    double_star = module.parse_trace_cell("**Old English**<br/>[no change]")
+    assert_true(double_star and double_star[0][0] == "Old English", "double-star Old English should remain accepted")
+
+    # Representative fixture for rendering semantics and width allocation.
+    trace_entry = {
+        "table": (
+            "| Earlier Germanic developments | Old English developments |\n"
+            "| --- | --- |\n"
+            "| *Proto-West Germanic*<br/>[no change] | *Northwest Germanic*<br/>PWGmc Final Bare A Loss: bucc<br/>*Old English*<br/>[no change] |"
+        )
+    }
+    tex = "\n".join(module.render_trace_table(trace_entry))
+
+    assert_true(r"\textbf{Proto-West Germanic}" in tex, "Proto-West Germanic stage heading must render in bold")
+    assert_true(r"\textbf{Northwest Germanic}" in tex, "Northwest Germanic stage heading must render in bold")
+    old_english_panel = "\n".join(
+        module.render_trace_panel([("Old English", [("[no change]", "")])], suppress_old_english_stage=False)
+    )
+    assert_true(r"\textbf{Old English}" in old_english_panel, "Old English stage heading must render in bold")
+    assert_true(r"\textbf{West Germanic}" not in tex, "Proto-West Germanic label must not be silently renamed")
+    assert_true("*Proto-West Germanic*" not in tex and "*Northwest Germanic*" not in tex and "*Old English*" not in tex,
+                "literal stage-marker asterisks must not survive into trace TeX")
+
+    assert_true(">{\\centering\\arraybackslash}X" not in tex, "outer trace table must not include empty stretchable middle X column")
+    assert_true("\n&\n&\n" not in tex, "outer trace table must not include an intentionally empty middle cell")
+    assert_true(r"\mbox{PWGmc Final Bare A Loss}" in tex, "representative ordinary label should be kept on one line")
+
+
 def main() -> int:
     if not VALIDATOR.exists():
         print(f"Missing validator: {VALIDATOR}", file=sys.stderr)
@@ -1799,6 +1850,7 @@ def main() -> int:
         run_manifest_consistency()
         run_row2216_invariants()
         run_compact_trace_quarantine_fixtures()
+        run_trace_render_fixtures()
         run_fingerprint_lifecycle_fixtures()
         run_generation_freshness()
         run_index_fingerprint_checks()

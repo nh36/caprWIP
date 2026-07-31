@@ -81,7 +81,7 @@ local function ensure_lang_meta_loaded()
         local order_str = string.format("%02d", order)
         -- escape @ and ! in title for MakeIndex
         local escaped = title:gsub("@", "\\@"):gsub("!", "\\!")
-        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\textbf{" .. escaped .. "}"}
+        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\ivlangheader{" .. escaped .. "}"}
       end
     end
   end
@@ -219,7 +219,7 @@ local function span_to_index(span)
   local meta = ensure_lang_meta_loaded()
   local lm = meta[lang]
   local lang_sort = lm and lm.order_str or ("99" .. lang)
-  local lang_display = lm and lm.escaped_title or ("\\textbf{" .. lang .. "}")
+  local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. lang .. "}")
   local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. latex_escape(sort) .. "@" .. index_display .. "}")
   return { visible, raw }
 end

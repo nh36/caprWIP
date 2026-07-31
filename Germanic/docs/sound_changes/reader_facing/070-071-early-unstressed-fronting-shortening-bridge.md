@@ -1,6 +1,6 @@
 # Early unstressed fronting and later o-shortening
 
-## Historical discussion of early unstressed fronting and later o-shortening
+## Historical discussion
 
 Campbell distinguishes the shortening of unaccented long vowels, while Hogg,
 Ringe and Taylor, and Fulk place fronting and shortening within a later history

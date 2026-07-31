@@ -718,7 +718,7 @@ Reversing [SC025 NWGmcLongENasalRounding](#rule-NWGmcLongENasalRounding) with ne
 
 # Nasal spirant changes
 
-## Historical discussion of nasal loss before spirants and compensatory lengthening
+## Historical discussion
 
 The two rules state successive phases of a single development. Campbell
 describes nasal loss before voiceless spirants with compensatory lengthening and
@@ -1395,7 +1395,7 @@ The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a hi
 
 # Medial unstressed vowel changes
 
-## Historical discussion of medial unstressed vowel changes
+## Historical discussion
 
 The history of *wuduwe* ‘widow’ orders these two changes within the same
 low-stress vocalic development. Campbell discusses both the
@@ -1439,7 +1439,7 @@ The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different
 
 # Breaking and velar-fricative palatalization
 
-## Historical discussion of breaking and velar-fricative palatalization
+## Historical discussion
 
 Breaking creates \emph{eo}-type outputs before \emph{h}, \emph{rC}, and
 \emph{lC}; velar-fricative palatalization then operates in that reshaped
@@ -1676,7 +1676,7 @@ The `sk` change belongs to the same palatalizing region with a separate scope. T
 
 # Post-velar \emph{*w}-loss and loss of \emph{*w} before final \emph{*i}
 
-## Historical discussion of early \emph{*w}-loss before umlaut
+## Historical discussion
 
 The first rule is a narrow loss of \emph{*w} after velars in the \emph{*ngw}
 sequence. Ringe and Taylor derive PGmc [singwan]{.recon} ‘sing’ to Old English *singan*
@@ -1718,7 +1718,7 @@ The same witness supplies two distant limits. Before [SC020 PGmcFinalZDeletion](
 
 # The Old English i-umlaut and West Saxon palatal diphthongization
 
-## Historical discussion of i-umlaut \CAPRHeadingBreak and West Saxon palatal diphthongization
+## Historical discussion
 
 Luick gives the change its traditional scale:
 
@@ -2116,7 +2116,7 @@ apocope, unstressed long-vowel shortening.
 
 # Post-apocope \emph{*n}-loss and medial syncope
 
-## Historical discussion of post-apocope \emph{*n}-loss and medial syncope
+## Historical discussion
 
 Evidence for post-apocope reduction is strikingly uneven. The inherited
 \emph{*furht-} family makes the survival of one nasal diagnostic and fixes both
@@ -2169,7 +2169,7 @@ therefore remains preferable, but the present lexicon cannot demonstrate it.
 
 # Late syncope and degemination
 
-## Historical discussion of late syncope and degemination
+## Historical discussion
 
 Vowel loss creates the clusters upon which later assimilation and degemination
 operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
@@ -2283,7 +2283,7 @@ local order.
 
 # Early unstressed fronting and later o-shortening
 
-## Historical discussion of early unstressed fronting and later o-shortening
+## Historical discussion
 
 Campbell distinguishes the shortening of unaccented long vowels, while Hogg,
 Ringe and Taylor, and Fulk place fronting and shortening within a later history
@@ -2334,7 +2334,7 @@ Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFront
 
 # Unstressed long-vowel shortening and ae-merger
 
-## Historical discussion of unstressed long-vowel shortening and ae-merger
+## Historical discussion
 
 Campbell describes the shortening of unaccented long vowels, and Ringe and
 Taylor place it among the last prehistoric Old English changes before the
@@ -2391,7 +2391,7 @@ and place the merger before the later h-loss and contraction.
 
 # Medial unstressed-i lowering
 
-## Historical discussion of medial unstressed-i lowering and \emph{*ng} retention
+## Historical discussion
 
 Hogg and Ringe and Taylor treat the late weakening and merger of unstressed
 vowels as a continuing history [@Hogg1992, pp. 120--121;
@@ -2512,7 +2512,7 @@ neighboring relation. The later boundary is narrower:
 
 # Final-j loss and final geminate simplification
 
-## Historical discussion of final-j loss and final geminate simplification
+## Historical discussion
 
 After [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) removes \emph{*j} in
 heavy environments, forms such as *lungen* ‘lungs’ acquire a final geminate.
@@ -2560,7 +2560,7 @@ Moving the rule before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) makes 
 
 # J-strengthening, vocalization, and ei-contraction
 
-## Historical discussion of j-strengthening, vocalization, and ei-contraction
+## Historical discussion
 
 [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong)
 preserves a consonantal outcome after front diphthongs.
@@ -2629,7 +2629,7 @@ Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJ
 
 # H-loss and contraction
 
-## Historical discussion of h-loss and contraction
+## Historical discussion
 
 When [SC085 OEHLoss](#rule-OEHLoss) removes intervocalic \emph{*h}, it creates
 hiatus. [SC086 OEContraction](#rule-OEContraction) immediately resolves the

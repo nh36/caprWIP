@@ -6,6 +6,16 @@
 \setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{1}
 \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\newif\ifivfirstlangheader
+\ivfirstlangheadertrue
+\providecommand{\ivlangheader}[1]{%
+  \ifivfirstlangheader
+    \global\ivfirstlangheaderfalse
+  \else
+    \addvspace{0.9\baselineskip}%
+  \fi
+  \nopagebreak[3]\textbf{#1}\par\nobreak\vspace{0.2\baselineskip}\nopagebreak[3]%
+}
 % Predicted (counterfactual) form marker: superscript dagger immediately before the form
 \providecommand{\Pred}[1]{\textsuperscript{\dag}\emph{#1}}
 % Reconstructed lexical form: asterisk + italic (asterisk supplied by macro)

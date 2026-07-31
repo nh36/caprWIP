@@ -1,6 +1,6 @@
 # Breaking and velar-fricative palatalization
 
-## Historical discussion of breaking and velar-fricative palatalization
+## Historical discussion
 
 Breaking creates \emph{eo}-type outputs before \emph{h}, \emph{rC}, and
 \emph{lC}; velar-fricative palatalization then operates in that reshaped

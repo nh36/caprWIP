@@ -1,6 +1,6 @@
 # H-loss and contraction
 
-## Historical discussion of h-loss and contraction
+## Historical discussion
 
 When [SC085 OEHLoss](#rule-OEHLoss) removes intervocalic \emph{*h}, it creates
 hiatus. [SC086 OEContraction](#rule-OEContraction) immediately resolves the

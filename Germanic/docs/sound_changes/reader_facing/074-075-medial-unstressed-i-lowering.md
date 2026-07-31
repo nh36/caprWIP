@@ -1,6 +1,6 @@
 # Medial unstressed-i lowering
 
-## Historical discussion of medial unstressed-i lowering and \emph{*ng} retention
+## Historical discussion
 
 Hogg and Ringe and Taylor treat the late weakening and merger of unstressed
 vowels as a continuing history [@Hogg1992, pp. 120--121;

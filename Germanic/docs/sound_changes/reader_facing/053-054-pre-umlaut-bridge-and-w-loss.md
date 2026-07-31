@@ -1,6 +1,6 @@
 # Post-velar \emph{*w}-loss and loss of \emph{*w} before final \emph{*i}
 
-## Historical discussion of early \emph{*w}-loss before umlaut
+## Historical discussion
 
 The first rule is a narrow loss of \emph{*w} after velars in the \emph{*ngw}
 sequence. Ringe and Taylor derive PGmc [singwan]{.recon} ‘sing’ to Old English *singan*

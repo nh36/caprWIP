@@ -66,7 +66,7 @@ def index_command(language: str, sort_key: str, display: str) -> str:
     lang_order = get_lang_order()
     lang_prefix, lang_title = lang_order.get(language, (f"99{language}", language))
     lang_title_escaped = lang_title.replace("@", r"\@").replace("!", r"\!")
-    lang_header = rf"\textbf{{{lang_title_escaped}}}"
+    lang_header = rf"\ivlangheader{{{lang_title_escaped}}}"
     return rf"\index[iv]{{{lang_prefix}@{lang_header}!{latex_escape(sort_key)}@{index_display}}}"
 
 

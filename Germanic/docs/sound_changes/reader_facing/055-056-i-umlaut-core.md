@@ -1,6 +1,6 @@
 # The Old English i-umlaut and West Saxon palatal diphthongization
 
-## Historical discussion of i-umlaut \CAPRHeadingBreak and West Saxon palatal diphthongization
+## Historical discussion
 
 Luick gives the change its traditional scale:
 

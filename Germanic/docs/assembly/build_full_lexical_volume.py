@@ -39,16 +39,9 @@ INLINE_SEPARATOR_CHARS = "<>,~/;:"
 LONG_TRACE_FORM_LENGTH = 9
 VERY_LONG_TRACE_FORM_LENGTH = 10
 DENSE_TRACE_PANEL_ROWS = 6
-LONG_TRACE_LABELS = {
-    "OE High Vowel Apocope",
-    "OE Unstressed Long Vowel Shortening",
-    "OE Heavy Syllable Nasal Apocope",
-    "NWGmc Final Long O Raising",
-    "NWGmc Long E Lowering",
-    "NWGmc Stressed Monosyllable O Raising",
-    "PGmc Final Z Deletion",
-    "NWGmc U Lowering",
-}
+LONG_TRACE_LABEL_LENGTH = 24
+NO_WRAP_TRACE_LABEL_MAX_LENGTH = 28
+STAGE_MARKER_RE = re.compile(r"(?P<stars>\*{1,2})(?P<label>[^*\n][^*\n]*?)\1")
 
 SECTION_ORDER = [
     ("regular", "Part I. Regular derivations", "Regular derivations"),
@@ -402,8 +395,6 @@ def clean_reader_facing_prose(text: str) -> str:
 
 
 def display_stage_name(stage: str) -> str:
-    if stage == "Proto-West Germanic":
-        return "West Germanic"
     return stage
 
 
@@ -417,11 +408,11 @@ def parse_trace_cell(cell: str) -> list[tuple[str, list[tuple[str, str]]]]:
     current_items: list[str] = []
 
     for piece in pieces:
-        stage_match = re.fullmatch(r"\*\*([^*]+)\*\*", piece)
+        stage_match = STAGE_MARKER_RE.fullmatch(piece.strip())
         if stage_match:
             if current_stage or current_items:
                 stages.append((current_stage, current_items))
-            current_stage = stage_match.group(1).strip()
+            current_stage = stage_match.group("label").strip()
             current_items = []
             continue
         current_items.append(piece)
@@ -548,7 +539,7 @@ def panel_complexity(stage_blocks: list[tuple[str, list[tuple[str, str]]]]) -> d
             change_length = len(change)
             total_change_length += change_length
             max_change_length = max(max_change_length, change_length)
-            if change in LONG_TRACE_LABELS:
+            if change_length >= LONG_TRACE_LABEL_LENGTH:
                 long_label_count += 1
             if form:
                 form_count += 1
@@ -581,69 +572,69 @@ def choose_trace_widths(
         left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
         and right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
     ):
-        return 0.47, 0.47
+        return 0.50, 0.50
     if left["long_label_count"] > 0 and right["long_label_count"] > 0:
-        return 0.46, 0.46
+        return 0.50, 0.50
     if left["rows"] <= 1 and (
         right["long_label_count"] > 0
         or right["max_change_length"] >= 24
         or right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
     ):
         if right["rows"] >= DENSE_TRACE_PANEL_ROWS or right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
-            return 0.28, 0.56
-        return 0.30, 0.54
+            return 0.35, 0.65
+        return 0.37, 0.63
     if left["rows"] <= 2 and (
         right["total_change_length"] >= left["total_change_length"] + 30
         or right["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
     ):
-        return 0.32, 0.52
+        return 0.40, 0.60
     if right["rows"] <= 1 and (
         left["long_label_count"] > 0
         or left["max_change_length"] >= 24
         or left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
     ):
         if left["rows"] >= DENSE_TRACE_PANEL_ROWS or left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
-            return 0.56, 0.28
-        return 0.54, 0.30
+            return 0.65, 0.35
+        return 0.63, 0.37
     if right["rows"] <= 2 and (
         left["total_change_length"] >= right["total_change_length"] + 30
         or left["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH
     ):
-        return 0.52, 0.32
-    return 0.44, 0.44
+        return 0.60, 0.40
+    return 0.50, 0.50
 
 
 def choose_panel_column_widths(panel_width: float, stats: dict[str, int]) -> tuple[float, float]:
-    usable_width = 0.90
-    min_label_width = 0.56 if panel_width > 0.36 else 0.52
+    usable_width = 0.98
+    min_label_width = 0.62 if panel_width > 0.40 else 0.58
 
     if stats["rows"] == 0:
-        return 0.68, 0.18
+        return 0.80, 0.18
 
-    form_width = 0.16
+    form_width = 0.14
     if stats["max_form_length"] >= 11:
-        form_width = 0.26
-    elif stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
         form_width = 0.24
-    elif stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
+    elif stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
         form_width = 0.22
-    elif stats["max_form_length"] >= 8:
+    elif stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
         form_width = 0.20
+    elif stats["max_form_length"] >= 8:
+        form_width = 0.18
 
     if stats["rows"] >= DENSE_TRACE_PANEL_ROWS and stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
-        form_width = min(form_width + 0.02, 0.28)
+        form_width = min(form_width + 0.02, 0.26)
     elif stats["rows"] >= 4 and stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
-        form_width = min(form_width + 0.02, 0.28)
+        form_width = min(form_width + 0.02, 0.26)
 
-    desired_label_width = 0.68
+    desired_label_width = 0.78
     if stats["long_label_count"] > 0:
-        desired_label_width = 0.76 if stats["max_change_length"] >= 30 else 0.74
+        desired_label_width = 0.82 if stats["max_change_length"] >= 30 else 0.80
     elif stats["max_change_length"] >= 28:
-        desired_label_width = 0.74
+        desired_label_width = 0.80
     elif stats["max_change_length"] >= 22:
-        desired_label_width = 0.70
+        desired_label_width = 0.78
     elif panel_width <= 0.36 and stats["rows"] <= 1:
-        desired_label_width = 0.64
+        desired_label_width = 0.72
 
     if stats["long_form_count"] > 0:
         desired_label_width -= 0.04
@@ -673,7 +664,7 @@ def choose_trace_font_size(left_stats: dict[str, int], right_stats: dict[str, in
 def format_trace_change_label(change: str, *, label_column_width: float) -> str:
     change = normalize_print_text(change)
     escaped = latex_escape(change)
-    if change in LONG_TRACE_LABELS and len(change) <= 28 and label_column_width >= 0.70:
+    if len(change) <= NO_WRAP_TRACE_LABEL_MAX_LENGTH and label_column_width >= 0.64:
         return rf"\mbox{{{escaped}}}"
     return escaped
 
@@ -710,7 +701,7 @@ def render_trace_panel(
             continue
 
         lines.append(
-            rf"\begin{{tabular}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{label_column_width:.2f}\linewidth}}@{{\hspace{{0.55em}}}}>{{\raggedright\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{\hspace{{0.25em}}}}}}"
+            rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}>{{\raggedright\arraybackslash}}X@{{\hspace{{0.55em}}}}>{{\raggedright\arraybackslash}}p{{{form_column_width:.2f}\linewidth}}@{{\hspace{{0.25em}}}}}}"
         )
         for change, form in items:
             if change == "[no change]" and not form:
@@ -723,7 +714,7 @@ def render_trace_panel(
                 lines.append(
                     rf"\multicolumn{{2}}{{@{{}}l@{{}}}}{{{format_trace_change_label(change, label_column_width=label_column_width)}}} \\"
                 )
-        lines.append(r"\end{tabular}")
+        lines.append(r"\end{tabularx}")
 
     return lines
 
@@ -739,7 +730,17 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
 
     left_blocks = parse_trace_cell(row_parts[0])
     right_blocks = parse_trace_cell(row_parts[1])
-    left_width, right_width = choose_trace_widths(left_blocks, right_blocks)
+    left_share, right_share = choose_trace_widths(left_blocks, right_blocks)
+    share_total = left_share + right_share
+    if share_total <= 0:
+        left_share = right_share = 0.5
+    else:
+        left_share /= share_total
+        right_share /= share_total
+    gutter_width = 0.03
+    panel_width_total = 1.0 - gutter_width
+    left_width = panel_width_total * left_share
+    right_width = panel_width_total * right_share
     left_stats = panel_complexity(left_blocks)
     right_stats = panel_complexity(right_blocks)
     left_label_width, left_form_width = choose_panel_column_widths(left_width, left_stats)
@@ -763,13 +764,12 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
         r"\noindent\fbox{%",
         r"\begin{minipage}{0.97\linewidth}",
         trace_font_size,
-        rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{left_width:.3f}\linewidth}}>{{\centering\arraybackslash}}X>{{\raggedright\arraybackslash}}p{{{right_width:.3f}\linewidth}}@{{}}}}",
+        rf"\begin{{tabular}}{{@{{}}>{{\raggedright\arraybackslash}}p{{{left_width:.3f}\linewidth}}@{{\hspace{{{gutter_width:.3f}\linewidth}}}}>{{\raggedright\arraybackslash}}p{{{right_width:.3f}\linewidth}}@{{}}}}",
         r"\begin{minipage}[t]{\linewidth}",
         r"\centering\textbf{Earlier Germanic changes}\par",
         r"\vspace{0.35em}",
         *left_panel,
         r"\end{minipage}",
-        r"&",
         r"&",
         r"\begin{minipage}[t]{\linewidth}",
         r"\centering\textbf{Old English changes}\par",
@@ -777,7 +777,7 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
         *right_panel,
         r"\end{minipage}",
         r"\\",
-        r"\end{tabularx}",
+        r"\end{tabular}",
         r"\end{minipage}%",
         r"}",
         r"\endgroup",

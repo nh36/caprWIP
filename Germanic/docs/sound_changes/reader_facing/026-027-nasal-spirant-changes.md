@@ -1,6 +1,6 @@
 # Nasal spirant changes
 
-## Historical discussion of nasal loss before spirants and compensatory lengthening
+## Historical discussion
 
 The two rules state successive phases of a single development. Campbell
 describes nasal loss before voiceless spirants with compensatory lengthening and

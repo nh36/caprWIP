@@ -545,7 +545,7 @@ def write_index_registry_header(production_rows: list[ProductionOccurrence]) -> 
     the flow rather than independently balanced per-language column sets.
     """
     lines = [
-        r"\newcommand{\ivlangheader}[1]{}",
+        r"\providecommand{\ivlangheader}[1]{\textbf{#1}}",
         r"\makeindex[name=iv,title={},columns=3]",
     ]
     INDEX_HEADER_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")

@@ -1237,9 +1237,9 @@ def assert_reader_failure_pair_roles() -> None:
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
-        ("## knob — OE _\\*cnobba_", r"\index[iv]{02oe@\textbf{Old English}!cnobba@\emph{*cnobba}}"),
-        ("## reek — OE _\\*rēac_", r"\index[iv]{02oe@\textbf{Old English}!reac@\emph{*rēac}}"),
-        ("## strew — OE _\\*strīeġan_", r"\index[iv]{02oe@\textbf{Old English}!striegan@\emph{*strīeġan}}"),
+        ("## knob — OE _\\*cnobba_", r"\index[iv]{02oe@\ivlangheader{Old English}!cnobba@\emph{*cnobba}}"),
+        ("## reek — OE _\\*rēac_", r"\index[iv]{02oe@\ivlangheader{Old English}!reac@\emph{*rēac}}"),
+        ("## strew — OE _\\*strīeġan_", r"\index[iv]{02oe@\ivlangheader{Old English}!striegan@\emph{*strīeġan}}"),
     ):
         start = text.index(heading)
         window = text[start : start + 400]

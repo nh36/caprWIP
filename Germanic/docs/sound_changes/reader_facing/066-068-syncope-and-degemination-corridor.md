@@ -1,6 +1,6 @@
 # Late syncope and degemination
 
-## Historical discussion of late syncope and degemination
+## Historical discussion
 
 Vowel loss creates the clusters upon which later assimilation and degemination
 operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's

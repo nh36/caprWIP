@@ -1,6 +1,6 @@
 # J-strengthening, vocalization, and ei-contraction
 
-## Historical discussion of j-strengthening, vocalization, and ei-contraction
+## Historical discussion
 
 [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong)
 preserves a consonantal outcome after front diphthongs.

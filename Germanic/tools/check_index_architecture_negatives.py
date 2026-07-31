@@ -180,8 +180,8 @@ def test_duplicate_makeindex_declarations_rejected() -> None:
 
 def test_occurrence_multiset_missing_entry() -> None:
     """Missing detection fixture: the 'no extra commands' check correctly passes when no extras exist."""
-    cmd_a = r"\index[iv]{02oe@\textbf{Old English}!sculdrum@\emph{sċuldrum}}"
-    cmd_b = r"\index[iv]{02oe@\textbf{Old English}!heofon@\emph{heofon}}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!sculdrum@\emph{sċuldrum}}"
+    cmd_b = r"\index[iv]{02oe@\ivlangheader{Old English}!heofon@\emph{heofon}}"
     expected_set = {cmd_a, cmd_b}
     # TeX contains only cmd_a — that is fine (expected ⊇ actual, no spurious entries)
     actual_in_tex = [cmd_a]
@@ -191,8 +191,8 @@ def test_occurrence_multiset_missing_entry() -> None:
 
 def test_occurrence_multiset_extra_entry() -> None:
     """An unexpected index command NOT in the expected set must be detected."""
-    cmd_a = r"\index[iv]{02oe@\textbf{Old English}!sculdrum@\emph{sċuldrum}}"
-    cmd_spurious = r"\index[iv]{02oe@\textbf{Old English}!unexpected_xyz_form@\emph{unexpected}}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!sculdrum@\emph{sċuldrum}}"
+    cmd_spurious = r"\index[iv]{02oe@\ivlangheader{Old English}!unexpected_xyz_form@\emph{unexpected}}"
     expected_set = {cmd_a}
     actual_in_tex = [cmd_a, cmd_spurious]  # cmd_spurious is NOT in expected_set
     spurious = [c for c in actual_in_tex if c not in expected_set]
@@ -206,8 +206,8 @@ def test_valid_unified_architecture_accepted() -> None:
     good_tex = textwrap.dedent(r"""
         \makeindex[name=iv,title={},columns=3]
         \printindex[iv]
-        \index[iv]{02oe@\textbf{Old English}!sculdrum@\emph{sċuldrum}}
-        \index[iv]{03pgmc@\textbf{Proto-Germanic}!skuldramiz@*skúldramiz}
+        \index[iv]{02oe@\ivlangheader{Old English}!sculdrum@\emph{sċuldrum}}
+        \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}!skuldramiz@*skúldramiz}
     """)
     _assert_unified_architecture(good_tex)  # must not raise
 

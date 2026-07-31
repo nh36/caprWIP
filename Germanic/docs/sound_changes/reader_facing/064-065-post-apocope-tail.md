@@ -1,6 +1,6 @@
 # Post-apocope \emph{*n}-loss and medial syncope
 
-## Historical discussion of post-apocope \emph{*n}-loss and medial syncope
+## Historical discussion
 
 Evidence for post-apocope reduction is strikingly uneven. The inherited
 \emph{*furht-} family makes the survival of one nasal diagnostic and fixes both

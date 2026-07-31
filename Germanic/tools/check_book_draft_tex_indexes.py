@@ -12,8 +12,11 @@ FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
+MANIFEST_PATH = REPO_ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
 INDEX_HEADER_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_pdf_header.tex"
 DEFAULT_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.tex"
+INTRO_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_intro_alpha_01.md"
+CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 PROSE_RULE_WORDS = {"form", "output", "expected", "stage", "rule"}
 
 
@@ -58,7 +61,7 @@ def index_command(row: dict[str, str]) -> str:
     lang_order = check_get_lang_order()
     lang_prefix, lang_title = lang_order.get(language, (f"99{language}", language))
     lang_title_escaped = lang_title.replace("@", r"\@").replace("!", r"\!")
-    lang_header = rf"\textbf{{{lang_title_escaped}}}"
+    lang_header = rf"\ivlangheader{{{lang_title_escaped}}}"
     return rf"\index[iv]{{{lang_prefix}@{lang_header}!{latex_escape(sort_key)}@{index_display}}}"
 
 
@@ -209,16 +212,66 @@ def main() -> None:
         f"Print main contains languages not in active registry (would use fallback 99xx prefix): {unknown_langs}"
     )
 
-    # ── Index occurrence containment check ────────────────────────────────────
-    # The assembled TeX contains \index[iv]{...} commands from two sources:
-    #   1. The Lua filter (for explicit_tag .iv spans in the assembled text)
-    #   2. The Python assembler (for non-explicit-tag forms injected at lexical headings)
-    # Not every print_main row necessarily appears in the assembled text (some forms
-    # come from reader-facing sections that use explicit .iv tags but may be in
-    # multiple sources). The correct invariant is: every TeX command must be in the
-    # expected set from print_main. Extra (unregistered) commands are forbidden.
+    # ── Index occurrence two-sided coverage check ─────────────────────────────
+    # Derive required command multiplicities for non-explicit injection semantics:
+    # - non-explicit rows are deduplicated per heading/line injection site
+    # Explicit-tag commands are validated as a strict subset via expected_command_set
+    # (spurious commands forbidden), while the required-multiplicity converse check
+    # below ensures injected printable material is not silently omitted.
     from collections import Counter
     expected_command_set: set[str] = {index_command(row) for row in main_rows}
+
+    model_entry_heading_map: dict[str, str] = {}
+    with MANIFEST_PATH.open(encoding="utf-8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            model_path = (row.get("model_entry_path") or "").strip()
+            lexical_item = (row.get("lexical_item") or "").strip()
+            counterpart = (row.get("counterpart") or "").strip()
+            derivation_class = (row.get("derivation_class") or "").strip()
+            if not model_path or not lexical_item:
+                continue
+            display_counterpart = f"*{counterpart}" if derivation_class == "reconstructed_oe" else counterpart
+            model_entry_heading_map[model_path] = f"{lexical_item} — OE {display_counterpart}"
+
+    line_injected_scopes = {"table_semantic_auto", "table_semantic_decision", "broad_prose_decision"}
+    allowed_line_paths = {
+        INTRO_PATH.relative_to(REPO_ROOT).as_posix(),
+        CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix(),
+    }
+    allowed_heading_refs = set(model_entry_heading_map.values())
+    collapsed_non_explicit_sites: set[tuple[str, str, str]] = set()
+
+    for row in main_rows:
+        command = index_command(row)
+        source_scope = (row.get("source_scope") or "").strip()
+        source_ref = (row.get("source_ref") or "").strip()
+
+        if source_scope == "explicit_tag":
+            continue
+
+        if not source_ref:
+            continue
+
+        if ".md:" in source_ref:
+            path_part, line_part = source_ref.rsplit(":", 1)
+            line_is_int = line_part.isdigit()
+            if source_scope in line_injected_scopes:
+                if line_is_int and path_part in allowed_line_paths:
+                    collapsed_non_explicit_sites.add(("line", f"{path_part}:{line_part}", command))
+                continue
+            if path_part in model_entry_heading_map:
+                collapsed_non_explicit_sites.add(("heading", model_entry_heading_map[path_part], command))
+            elif line_is_int and path_part in allowed_line_paths:
+                collapsed_non_explicit_sites.add(("line", f"{path_part}:{line_part}", command))
+            elif source_ref in allowed_heading_refs:
+                collapsed_non_explicit_sites.add(("heading", source_ref, command))
+        elif source_ref in allowed_heading_refs:
+            collapsed_non_explicit_sites.add(("heading", source_ref, command))
+
+    expected_counter: Counter[str] = Counter()
+    for _, _, command in collapsed_non_explicit_sites:
+        expected_counter[command] += 1
+
     actual_counter: Counter[str] = Counter()
     for body in all_iv_bodies:
         full_cmd = r"\index[iv]{" + body + "}"
@@ -234,6 +287,17 @@ def main() -> None:
 
     # Sanity: at least some commands must be present
     assert actual_counter, "Generated TeX contains no \\index[iv] commands."
+
+    # Converse coverage: every required non-explicit printable command occurrence
+    # must appear in generated TeX at least as many times as injection semantics demand.
+    missing = [cmd for cmd, count in expected_counter.items() if count > actual_counter.get(cmd, 0)]
+    assert not missing, (
+        "Required printable index commands are missing from generated TeX:\n"
+        + "\n".join(
+            f"{cmd} (expected={expected_counter[cmd]}, actual={actual_counter.get(cmd, 0)})"
+            for cmd in missing[:5]
+        )
+    )
 
     # ── Excluded rows must not appear ─────────────────────────────────────────
     for row in excluded_rows:

@@ -103,6 +103,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       [ -e \"\$idx\" ] || continue
       makeindex -o \"\${idx%.idx}.ind\" \"\$idx\" >/dev/null
     done
+    python3 /data/Germanic/tools/check_book_draft_ind_structure.py --assembly-dir /data/Germanic/docs/assembly
     xelatex -interaction=nonstopmode -halt-on-error capr_book_draft_alpha_01.tex >/dev/null
     xelatex -interaction=nonstopmode -halt-on-error capr_book_draft_alpha_01.tex >/dev/null
   "

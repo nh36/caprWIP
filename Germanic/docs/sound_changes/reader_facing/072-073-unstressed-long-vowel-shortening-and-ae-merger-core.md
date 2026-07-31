@@ -1,6 +1,6 @@
 # Unstressed long-vowel shortening and ae-merger
 
-## Historical discussion of unstressed long-vowel shortening and ae-merger
+## Historical discussion
 
 Campbell describes the shortening of unaccented long vowels, and Ringe and
 Taylor place it among the last prehistoric Old English changes before the

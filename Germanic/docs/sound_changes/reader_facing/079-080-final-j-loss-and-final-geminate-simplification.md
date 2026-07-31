@@ -1,6 +1,6 @@
 # Final-j loss and final geminate simplification
 
-## Historical discussion of final-j loss and final geminate simplification
+## Historical discussion
 
 After [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) removes \emph{*j} in
 heavy environments, forms such as *lungen* ‘lungs’ acquire a final geminate.
