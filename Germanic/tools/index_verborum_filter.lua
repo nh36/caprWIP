@@ -207,7 +207,11 @@ local function span_to_index(span)
   end
   local source_ref = trim(span.attributes["source_ref"] or "")
   local form = trim(pandoc.utils.stringify(span.content))
-  local display = trim(span.attributes["display"] or form)
+  local display_attr = trim(span.attributes["display"] or "")
+  -- A combined .recon .iv span carries reconstruction semantics; derive the starred
+  -- display automatically when no explicit display= attribute is provided.
+  local is_recon = has_class(span, "recon")
+  local display = display_attr ~= "" and display_attr or (is_recon and ("*" .. form) or form)
   local sort = trim(span.attributes["sort"] or display)
   if not explicit_tag_is_printable(lang, role, form, display, source_ref) then
     return visible

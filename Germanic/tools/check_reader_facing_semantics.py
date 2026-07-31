@@ -640,30 +640,66 @@ def run_case_normalization_fixtures() -> None:
 def run_references_structure_check() -> None:
     """Check the assembled book has exactly one # References heading and no ## References."""
     text = ASSEMBLED.read_text(encoding="utf-8")
+    issues = find_references_structure_issues(text)
+    assert_true(not issues, "References structure issues in assembled book:\n" + "\n".join(issues))
+
+
+def find_references_structure_issues(text: str) -> list[str]:
+    """Return a list of issues with the References section structure in text."""
+    issues: list[str] = []
     ref_headings = re.findall(r'^#{1,6}\s+References\s*$', text, re.MULTILINE)
-    assert_true(len(ref_headings) == 1, f"Expected exactly 1 References heading, found {len(ref_headings)}: {ref_headings}")
-    assert_true(ref_headings[0].startswith('# References'), f"References heading must be level 1, got: {ref_headings[0]!r}")
-    refs_div = text.count('{#refs}')
-    assert_true(refs_div == 1, f"Expected exactly 1 {{#refs}} div, found {refs_div}")
+    if len(ref_headings) != 1:
+        issues.append(f"Expected exactly 1 References heading, found {len(ref_headings)}: {ref_headings}")
+    if ref_headings and not ref_headings[0].strip().startswith('# References'):
+        issues.append(f"References heading must be level 1, got: {ref_headings[0]!r}")
+    refs_div_count = text.count('{#refs}')
+    if refs_div_count != 1:
+        issues.append(f"Expected exactly 1 {{#refs}} div, found {refs_div_count}")
     bad = re.findall(r'^#{2,}\s+References\s*$', text, re.MULTILINE)
-    assert_true(len(bad) == 0, f"Found nested References headings: {bad}")
+    if bad:
+        issues.append(f"Found nested References headings: {bad}")
+    # Ordering: \backmatter must precede # References, which must precede Index Verborum
+    backmatter_pos = text.find(r'\backmatter')
+    refs_pos = text.find('\n# References\n')
+    index_pos = text.find(r'\part*{Index verborum}')
+    if backmatter_pos != -1 and refs_pos != -1 and backmatter_pos > refs_pos:
+        issues.append("\\backmatter must appear before # References")
+    if refs_pos != -1 and index_pos != -1 and refs_pos > index_pos:
+        issues.append("# References must appear before Index Verborum")
+    return issues
 
 
 def run_references_negative_fixture() -> None:
-    """Reject text with two References headings or a ## References."""
-    fixture = (
+    """The production validator must reject text with a duplicate or nested ## References."""
+    bad_fixture = (
+        "\\backmatter\n\n"
+        "# Word-by-word derivations\n\n"
         "## Part VII. Unexplained exceptions\n\n"
         "Some text.\n\n"
         "\\clearpage\n\n"
         "## References\n\n"
         "# References\n\n"
         "::: {#refs}\n"
-        ":::\n"
+        ":::\n\n"
+        "\\part*{Index verborum}\n"
     )
-    ref_headings = re.findall(r'^#{1,6}\s+References\s*$', fixture, re.MULTILINE)
+    issues = find_references_structure_issues(bad_fixture)
     assert_true(
-        len(ref_headings) > 1 or any(h.startswith('##') for h in ref_headings),
-        "Negative fixture should have been rejected but was not",
+        bool(issues),
+        "Negative fixture should have been rejected by find_references_structure_issues but was not",
+    )
+
+    good_fixture = (
+        "\\backmatter\n\n"
+        "# References\n\n"
+        "::: {#refs}\n"
+        ":::\n\n"
+        "\\part*{Index verborum}\n"
+    )
+    good_issues = find_references_structure_issues(good_fixture)
+    assert_true(
+        not good_issues,
+        f"Good fixture should have no issues but got: {good_issues}",
     )
 
 
@@ -715,21 +751,120 @@ def run_gloss_inside_span_check() -> None:
         offending = repr(match.group(0)) if match else ''
         assert_true(match is None, f"Assembled book contains {name}: {offending}")
 
+    # Emph+gloss check: check the assembled book for _form 'gloss'_ patterns.
+    # In the assembled book, attribute strings (role=comparison_form etc.) are
+    # processed by pandoc and do not appear as raw text, eliminating false positives.
+    # We find italic spans (_..._) then check if the content has both a linguistic
+    # form character AND a quote-delimited gloss.
+    ITALIC_SPAN_RE = re.compile(r'(?<!\w)_([^\n_]{1,80})_(?!\w)')
+    SPECIAL_FORM_CHAR_RE = re.compile(r'[ǣæþðġċȳīāēōūǭǫáéíóú]|(?<![a-z])\*(?=[a-z\*])')
+    GLOSS_QUOTE_RE = re.compile(r'(?:\'[^\'\n]{1,40}\'|\u2018[^\u2019\n]{1,40}\u2019)')
+
+    def _has_emph_gloss(content: str) -> bool:
+        return bool(SPECIAL_FORM_CHAR_RE.search(content) and GLOSS_QUOTE_RE.search(content))
+
+    # Fixtures
+    assert_true(_has_emph_gloss("rēc 'reek'"), "emph+gloss bad fixture not detected")
+    assert_true(not _has_emph_gloss("rēc"), "emph+gloss good-form-no-gloss incorrectly flagged")
+    assert_true(not _has_emph_gloss("a good analysis"), "emph+gloss plain text incorrectly flagged")
+    assert_true(_has_emph_gloss("rēc \u2018reek\u2019"), "emph+gloss curly-quote bad fixture not detected")
+
+    # Scan assembled book (pre-bibliography section)
+    refs_marker = '\n# References\n'
+    pre_refs = text.split(refs_marker)[0] if refs_marker in text else text
+    emph_hits: list[str] = []
+    for m in ITALIC_SPAN_RE.finditer(pre_refs):
+        if _has_emph_gloss(m.group(1)):
+            line_no = pre_refs[:m.start()].count('\n') + 1
+            emph_hits.append(f"line {line_no}: {m.group(0)[:80]}")
+    assert_true(not emph_hits, "Italic+gloss (emph swallowing meaning) found in assembled book:\n" + "\n".join(emph_hits[:5]))
+
 
 def run_bold_prose_check() -> None:
-    """Check that bold (**...**) does not appear in running prose paragraphs."""
-    text = ASSEMBLED.read_text(encoding="utf-8")
-    issues = []
-    for i, line in enumerate(text.splitlines(), 1):
-        if '|' in line:
-            continue
-        if line.startswith('#'):
-            continue
-        if not line.strip() or line.strip().startswith('\\'):
-            continue
-        if '**' in line:
-            issues.append(f"line {i}: {line[:100]}")
-    assert_true(len(issues) == 0, "Bold found in prose in assembled book:\n" + "\n".join(issues[:5]))
+    """Check that Strong (bold) nodes do not appear in running prose in the assembled book.
+
+    Uses the Pandoc JSON AST rather than a line scanner, so it correctly handles
+    multi-line spans, lines containing literal ``|``, and other edge cases that
+    defeat a simple regex.  Strong is permitted inside Table cells; it is forbidden
+    in Para, Plain, BulletList/OrderedList list items, and BlockQuote.
+    """
+    import json as _json
+
+    def _walk_inlines_strong(inlines: list) -> list[str]:
+        """Return stringified previews of any Strong nodes found in inlines."""
+        found: list[str] = []
+        for node in inlines:
+            if not isinstance(node, dict):
+                continue
+            if node.get("t") == "Strong":
+                parts = []
+                for child in node.get("c", []):
+                    if isinstance(child, dict) and child.get("t") == "Str":
+                        parts.append(child.get("c", ""))
+                found.append(" ".join(parts)[:60])
+            elif "c" in node and isinstance(node["c"], list):
+                found.extend(_walk_inlines_strong(node["c"]))
+        return found
+
+    def _walk_blocks_prose_strong(blocks: list) -> list[str]:
+        """Walk blocks, collecting Strong nodes from prose contexts (not Tables)."""
+        found: list[str] = []
+        for block in blocks:
+            if not isinstance(block, dict):
+                continue
+            t = block.get("t")
+            if t == "Table":
+                continue  # table cells are exempt
+            elif t in ("Para", "Plain"):
+                found.extend(_walk_inlines_strong(block.get("c", [])))
+            elif t == "BulletList":
+                for item in block.get("c", []):
+                    if isinstance(item, list):
+                        found.extend(_walk_blocks_prose_strong(item))
+            elif t == "OrderedList":
+                list_data = block.get("c", [])
+                items = list_data[1] if len(list_data) > 1 else []
+                for item in items:
+                    if isinstance(item, list):
+                        found.extend(_walk_blocks_prose_strong(item))
+            elif t == "BlockQuote":
+                found.extend(_walk_blocks_prose_strong(block.get("c", [])))
+        return found
+
+    # Negative fixture check: the logic must reject Strong in a Para
+    fixture_bad = "The target **form** is reconstructed.\n\nThis is a **reconstructed Old English form**."
+    proc_f = subprocess.run(
+        ["pandoc", "--from=markdown", "--to=json"],
+        input=fixture_bad, capture_output=True, text=True, check=False,
+    )
+    if proc_f.returncode == 0:
+        fixture_doc = _json.loads(proc_f.stdout)
+        fixture_strong = _walk_blocks_prose_strong(fixture_doc.get("blocks", []))
+        assert_true(bool(fixture_strong), "Bold prose AST fixture: Strong not detected in Para (test logic failure)")
+
+    # Positive fixture: table bold must not be flagged
+    fixture_table = "| Header | Value |\n| :--- | :--- |\n| **bold cell** | plain |\n"
+    proc_t = subprocess.run(
+        ["pandoc", "--from=markdown", "--to=json"],
+        input=fixture_table, capture_output=True, text=True, check=False,
+    )
+    if proc_t.returncode == 0:
+        table_doc = _json.loads(proc_t.stdout)
+        table_strong = _walk_blocks_prose_strong(table_doc.get("blocks", []))
+        assert_true(not table_strong, "Bold prose AST fixture: table Strong incorrectly flagged")
+
+    # Production check: parse the assembled book
+    proc = subprocess.run(
+        ["pandoc", str(ASSEMBLED), "--from=markdown+raw_tex", "--to=json"],
+        capture_output=True, text=True, check=False,
+    )
+    if proc.returncode != 0:
+        assert_true(False, f"pandoc failed to parse assembled book for bold check: {proc.stderr[:300]}")
+        return
+
+    doc = _json.loads(proc.stdout)
+    issues = _walk_blocks_prose_strong(doc.get("blocks", []))
+    assert_true(not issues, "Strong (bold) found in prose paragraphs in assembled book:\n" + "\n".join(repr(s) for s in issues[:5]))
 
 
 def run_known_entry_checks() -> None:
@@ -1753,7 +1888,12 @@ def run_occurrence_gating_fixture() -> None:
 # ── Section count regression ──────────────────────────────────────────────────
 
 def run_section_count_regression() -> None:
-    """Section counts and descriptions must exactly match the manifest for every class."""
+    """Section counts displayed in the generated lexical volume must match the manifest.
+
+    The count list is generated by build_full_lexical_volume.py and appears without bold
+    in the generated output. This check reads the generated lexical_volume_alpha_01.md
+    and requires every class count to be present and correct.
+    """
     if not MANIFEST_PATH.exists():
         return
     import collections, re as _re
@@ -1763,59 +1903,60 @@ def run_section_count_regression() -> None:
 
     manifest_counts = collections.Counter(row.get("derivation_class", "") for row in rows)
 
-    # Each class name must appear in section_introductions_draft.md with the correct count
-    intro_path = ROOT / "docs" / "assembly" / "section_introductions_draft.md"
-    if not intro_path.exists():
-        return
-
-    intro_text = intro_path.read_text(encoding="utf-8")
-
-    # Map of class → display label in the intro
-    class_labels = {
-        "regular": "regular",
-        "attested_variant": "attested variant",
-        "early_analogy": "early analogy",
-        "late_analogy": "late analogy",
-        "reconstructed_oe": "reconstructed Old English",
-        "known_unmodelled": "known unmodelled",
-        "unexplained_unmodelled": "unexplained",
+    # Generated label: matches the output of build_front_matter() in build_full_lexical_volume.py.
+    # Labels are plain text without bold; the pattern must not require ** markers.
+    class_generated_labels = {
+        "regular": "Regular derivations",
+        "attested_variant": "Attested variants",
+        "early_analogy": "Early analogy",
+        "late_analogy": "Late analogy",
+        "reconstructed_oe": "Reconstructed Old English comparators",
+        "known_unmodelled": "Known but unmodelled developments",
+        "unexplained_unmodelled": "Unexplained or deliberately unmodelled exceptions",
     }
 
+    lexvol_path = ROOT / "docs" / "assembly" / "lexical_volume_alpha_01.md"
+    if not lexvol_path.exists():
+        assert_true(False, f"Generated lexical volume not found: {lexvol_path}")
+        return
+
+    lexvol_text = lexvol_path.read_text(encoding="utf-8")
     mismatches: list[str] = []
-    for cls, label in class_labels.items():
+
+    for cls, label in class_generated_labels.items():
         expected = manifest_counts.get(cls, 0)
-        # Find displayed count: look for "label: **N**" pattern (case-insensitive)
-        pat = _re.compile(r'[-·]\s*' + _re.escape(label.lower()) + r'[^:]*:\s*\*\*(\d+)\*\*', _re.IGNORECASE)
-        m = pat.search(intro_text)
-        if m:
+        # Plain-number pattern (no bold markers): "- Label: N"
+        pat = _re.compile(r'^- ' + _re.escape(label) + r':\s*(\d+)\s*$', _re.MULTILINE)
+        m = pat.search(lexvol_text)
+        if not m:
+            mismatches.append(f"  {cls}: count line not found in lexical_volume_alpha_01.md (expected {expected})")
+        else:
             displayed = int(m.group(1))
             if displayed != expected:
-                mismatches.append(f"  {cls}: intro says {displayed} but manifest has {expected}")
-        # If not found, that's OK — not all classes may have explicit counts
+                mismatches.append(f"  {cls}: displayed {displayed} but manifest has {expected}")
 
     assert_true(
         not mismatches,
-        f"Section count mismatches (intro vs manifest):\n" + "\n".join(mismatches),
+        "Section count mismatches (generated volume vs manifest):\n" + "\n".join(mismatches),
     )
 
-    # Terminology: section intro must not use old 'remodelling' label
-    assert_true(
-        "Known but unmodelled remodellings" not in intro_text
-        and "remodeled remodeling" not in intro_text
-        and "remodelling" not in intro_text.lower(),
-        "Section intro must not use old 'remodellings'/'remodeling' terminology",
-    )
-
-    # known_unmodelled description must mention FST/cascade (not just 'sound change alone')
-    known_section_match = _re.search(
-        r'## Known but unmodelled[^\n]*\n+(.*?)(?=\n##|\Z)', intro_text, _re.DOTALL
-    )
-    if known_section_match:
-        desc = known_section_match.group(1).lower()
+    # Secondary: check section_introductions_draft.md for terminology hygiene
+    intro_path = ROOT / "docs" / "assembly" / "section_introductions_draft.md"
+    if intro_path.exists():
+        intro_text = intro_path.read_text(encoding="utf-8")
         assert_true(
-            "fst" in desc or "cascade" in desc or "transducer" in desc,
-            "known_unmodelled section should reference FST/cascade as the gap",
+            "remodelling" not in intro_text.lower(),
+            "Section intro must not use old 'remodellings'/'remodeling' terminology",
         )
+        known_section_match = _re.search(
+            r'## Known but unmodelled[^\n]*\n+(.*?)(?=\n##|\Z)', intro_text, _re.DOTALL
+        )
+        if known_section_match:
+            desc = known_section_match.group(1).lower()
+            assert_true(
+                "fst" in desc or "cascade" in desc or "transducer" in desc,
+                "known_unmodelled section should reference FST/cascade as the gap",
+            )
 
 
 # ── Freshness fail-closed ─────────────────────────────────────────────────────
@@ -1920,6 +2061,89 @@ def run_trace_render_fixtures() -> None:
     assert_true(r"\mbox{PWGmc Final Bare A Loss}" in tex, "representative ordinary label should be kept on one line")
 
 
+def run_recon_iv_index_display_check() -> None:
+    """Every explicit_tag row from a .recon .iv span must carry the reconstruction asterisk.
+
+    A .recon .iv span like [bákaną]{.recon .iv lang=pgmc sort=bakana} must produce
+    display *bákaną, never bare bákaną. This check walks canonical source files, finds
+    spans with both .recon and .iv classes, and verifies their derived display has the
+    reconstruction asterisk.
+    """
+    # Self-contained helpers (mirrors build_index_verborum logic without the import)
+    EXPLICIT_SPAN_RE = re.compile(r'\[(?P<content>[^\[\]]+)\]\{(?P<attrs>[^}]+)\}')
+    ATTR_VAL_RE = re.compile(r'(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?:"(?P<qval>[^"]*?)"|(?P<val>\S+?)(?=[\s}]|$))')
+    MARKUP_STRIP_RE = re.compile(r'\[[^\[\]]+\]\{[^}]*\}|`[^`]+`|_([^_]+)_|\*([^*]+)\*|[\[\]]|\{[^}]*\}')
+
+    def parse_attrs(raw: str) -> dict[str, str]:
+        result: dict[str, str] = {}
+        for m in ATTR_VAL_RE.finditer(raw):
+            result[m.group('key')] = m.group('qval') if m.group('qval') is not None else (m.group('val') or '')
+        return result
+
+    def has_cls(raw: str, cls: str) -> bool:
+        return bool(re.search(rf'(^|\s)\.{re.escape(cls)}(?=\s|$)', raw))
+
+    def strip_markup(text: str) -> str:
+        return MARKUP_STRIP_RE.sub(lambda m: m.group(1) or m.group(2) or '', text).strip()
+
+    source_paths = [
+        TOOLS_DIR.parent / "docs" / "assembly" / "capr_book_intro_alpha_01.md",
+        TOOLS_DIR.parent / "docs" / "sound_changes" / "reader_facing" / "reader_facing_local_section_19.md",
+        *sorted((TOOLS_DIR.parent / "docs" / "lexeme_reports" / "model_entries").glob("*.model.md")),
+    ]
+
+    unstarred_recon: list[str] = []
+    for src in source_paths:
+        if not src.exists():
+            continue
+        src_lines = src.read_text(encoding="utf-8").splitlines()
+        for line_no, line in enumerate(src_lines, 1):
+            for span_m in EXPLICIT_SPAN_RE.finditer(line):
+                raw_attrs = span_m.group("attrs")
+                if not (has_cls(raw_attrs, "iv") and has_cls(raw_attrs, "recon")):
+                    continue
+                attrs = parse_attrs(raw_attrs)
+                content = span_m.group("content")
+                bare_form = strip_markup(content)
+                explicit_display = attrs.get("display", "").strip()
+                # Derive expected display (mirrors iter_explicit_tags fix)
+                expected_display = explicit_display if explicit_display else f"*{bare_form}"
+                if not expected_display.startswith("*"):
+                    rel = src.relative_to(ROOT.parent)
+                    unstarred_recon.append(
+                        f"  {rel}:{line_no}: content={content!r} expected_display={expected_display!r} "
+                        f"— .recon .iv span must produce a starred display"
+                    )
+
+    assert_true(
+        not unstarred_recon,
+        "Explicit_tag rows from .recon .iv spans have unstarred display (regression):\n"
+        + "\n".join(unstarred_recon[:10]),
+    )
+
+    # Fixture: detection logic must catch a bad case
+    bad_line = "[bákaną]{.recon .iv lang=pgmc sort=bakana} 'bake'"
+    fixture_hits: list[str] = []
+    for span_m in EXPLICIT_SPAN_RE.finditer(bad_line):
+        raw_attrs = span_m.group("attrs")
+        if has_cls(raw_attrs, "iv") and has_cls(raw_attrs, "recon"):
+            attrs = parse_attrs(raw_attrs)
+            disp = attrs.get("display", "").strip()
+            bare = strip_markup(span_m.group("content"))
+            derived = disp if disp else f"*{bare}"
+            if derived.startswith("*"):
+                fixture_hits.append(derived)
+    assert_true(bool(fixture_hits), "Recon .iv display fixture: starred display not derived for .recon .iv span")
+
+    good_line = "[`bákaną`]{.iv lang=pgmc sort=bakana} 'bake'"
+    good_hits: list[str] = []
+    for span_m in EXPLICIT_SPAN_RE.finditer(good_line):
+        raw_attrs = span_m.group("attrs")
+        if has_cls(raw_attrs, "iv") and has_cls(raw_attrs, "recon"):
+            good_hits.append(span_m.group(0))
+    assert_true(not good_hits, "Recon .iv display fixture: plain .iv (no .recon) incorrectly flagged")
+
+
 def main() -> int:
     if not VALIDATOR.exists():
         print(f"Missing validator: {VALIDATOR}", file=sys.stderr)
@@ -1957,6 +2181,7 @@ def main() -> int:
         run_fingerprint_lifecycle_fixtures()
         run_generation_freshness()
         run_index_fingerprint_checks()
+        run_recon_iv_index_display_check()
         run_references_structure_check()
         run_references_negative_fixture()
         run_gloss_inside_span_check()

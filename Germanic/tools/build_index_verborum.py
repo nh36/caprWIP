@@ -876,13 +876,18 @@ def iter_explicit_tags(path: Path) -> list[dict[str, str]]:
             if not (has_tag_class(raw_attrs, "iv") or has_tag_class(raw_attrs, "pred")):
                 continue
             attrs = parse_attr_string(raw_attrs)
+            explicit_display = attrs.get("display", "").strip()
+            # A combined .recon .iv span carries reconstruction semantics; derive
+            # the starred display automatically when no explicit display= is provided.
+            if has_tag_class(raw_attrs, "recon") and not explicit_display:
+                explicit_display = f"*{strip_markup(match.group('content'))}"
             tags.append(
                 {
                     "content": match.group("content"),
                     "line_no": str(line_no),
                     "lang": attrs.get("lang", "").strip(),
                     "sort": attrs.get("sort", "").strip(),
-                    "display": attrs.get("display", "").strip(),
+                    "display": explicit_display,
                     "role": attrs.get("role", "").strip(),
                 }
             )

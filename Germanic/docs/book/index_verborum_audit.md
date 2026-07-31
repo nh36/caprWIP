@@ -1,9 +1,9 @@
 # Index verborum audit
 
 - Internal production occurrences: 2235
-- Internal production unique forms: 1125
+- Internal production unique forms: 1032
 - Printed main-index occurrences: 2147
-- Printed main-index unique forms: 1115
+- Printed main-index unique forms: 1022
 - Print-excluded occurrences: 88
 - Print-excluded unique forms: 69
 - Print exclusions (regular_output_default_exclusion): 88
@@ -21,9 +21,9 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 422
+- Already indexed in same entry: 425
 - Broad-prose notation / compound expressions: 432
-- Broad-prose evidence suggestions: 282
+- Broad-prose evidence suggestions: 279
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 6
 - Reader-facing examples quarantined (separate example index policy): 670
@@ -45,8 +45,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1216 | 454 |
-| Proto-Germanic | 938 | 609 |
+| Old English | 1216 | 453 |
+| Proto-Germanic | 938 | 517 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
 | Pre-Old English / prehistoric English | 8 | 7 |
@@ -76,29 +76,29 @@
 - `*áinaz` (trace_proto_input; one — OE ān)
 - `*baina-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:21)
 - `*baina-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:29)
+- `*báiną` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:29)
 - `*báiną` (lexical_protoform; bone — OE bān)
-- `*báiną` (trace_proto_input; bone — OE bān)
 
 ### Proto-Northwest Germanic
 
-- `brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
-- `brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
+- `*brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
+- `*brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
 
 ### Proto-West Germanic
 
-- `bakan` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
+- `*bakan` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
+- `*skuldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21)
 - `*skúldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48)
-- `skuldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21)
-- `timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24)
-- `timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48)
+- `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24)
+- `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48)
 
 ### Pre-Old English / prehistoric English
 
-- `hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
-- `hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
-- `sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
-- `spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
-- `sparja-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
+- `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
+- `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
+- `*sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
+- `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
+- `*sparja-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 
 ### Old Norse
 
@@ -180,8 +180,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1128 | 444 |
-| Proto-Germanic | 938 | 609 |
+| Old English | 1128 | 443 |
+| Proto-Germanic | 938 | 517 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
 | Pre-Old English / prehistoric English | 8 | 7 |
@@ -603,7 +603,10 @@
 | `weorpan` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `weorpan` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:33 | ### Lexical note | same form already indexed in this entry |
 | `*wḗpną` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `*weraldiz` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:23 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `*weraldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:23 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*wérpaną` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
+| `*weruld` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:23 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `willa` | Germanic/docs/lexeme_reports/model_entries/2293-will-willa.model.md:33 | ### Lexical note | same form already indexed in this entry |
 | `windan` | Germanic/docs/lexeme_reports/model_entries/2294-wind-windan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `*wír-àldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:48 | ### Development to Old English | same form already indexed in this entry |
@@ -1347,10 +1350,7 @@
 | `wépen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wépn` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wépn` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*weraldiz` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:23 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*weraldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:23 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*werpana` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*weruld` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:23 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `weter` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*wira-aldō` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:25 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `*wīþja` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
