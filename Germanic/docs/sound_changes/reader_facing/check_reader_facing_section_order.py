@@ -24,21 +24,26 @@ def load_inventory_order() -> dict[str, int]:
 
 
 def load_staging_order(staging_map: Path) -> dict[str, tuple[int, int]]:
-    """Return {reader_facing_file: (v1_chapter, v1_reader_position)} from the staging map."""
+    """Return {reader_facing_file: (v1_chapter, v1_reader_position)} from the staging map.
+
+    Supports both the old file-level map (column: reader_facing_file) and the
+    new SC-level map (column: source_reader_facing_file).  Uses the minimum
+    (v1_chapter, v1_reader_position) for each file so that the first SC in the
+    file determines the file's chapter boundary position.
+    """
     result: dict[str, tuple[int, int]] = {}
     with staging_map.open(encoding="utf-8") as handle:
-        for line in handle:
-            if line.startswith("#"):
-                continue
-            break  # reached header
         handle.seek(0)
-        rows = csv.DictReader((l for l in handle if not l.startswith("#")), delimiter="\t")
-        for row in rows:
-            fname = (row.get("reader_facing_file") or "").strip()
+        rows_iter = csv.DictReader((l for l in handle if not l.startswith("#")), delimiter="\t")
+        for row in rows_iter:
+            # Support both column names
+            fname = (row.get("source_reader_facing_file") or row.get("reader_facing_file") or "").strip()
             chap = (row.get("v1_chapter") or "").strip()
             pos = (row.get("v1_reader_position") or "").strip()
             if fname and chap and pos:
-                result[fname] = (int(chap), int(pos))
+                key = (int(chap), int(pos))
+                if fname not in result or key < result[fname]:
+                    result[fname] = key
     return result
 
 

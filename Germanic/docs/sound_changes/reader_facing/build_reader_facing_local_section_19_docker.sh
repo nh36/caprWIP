@@ -34,6 +34,8 @@ root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_19.md"
 coverage_out = root / "reader_facing_manifest_coverage_07.md"
 chapter_files = [
+    # ── Chapter 1: Proto-Germanic → Proto-Northwest Germanic ───────────────
+    "049-pgmc-b-allophony.md",
     # ── Chapter 2: Proto-Northwest Germanic → Proto-West Germanic ──────────
     "004-pwgmc-ai-monophthongization.md",
     "005-unstressed-a-raising-before-final-m.md",
@@ -46,9 +48,9 @@ chapter_files = [
     "012-lth-voicing.md",
     "013-dental-hardening.md",
     "014-015-opening-vowel-prelude.md",
-    "016-017-west-saxon-palatal-glide-and-u-lowering.md",
+    "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
-    "019-020-final-long-o-raising-and-final-z-deletion.md",
+    "019-nwgmc-final-long-o-raising.md",
     "021-unstressed-o-raising.md",
     "022-mn-dissimilation.md",
     "023-n-stem-n-loss.md",
@@ -58,11 +60,13 @@ chapter_files = [
     "028-preconsonantal-x-loss.md",
     "041-final-bare-a-loss.md",
     "042-surviving-bimoric-o-unrounding.md",
-    "049-050-b-allophony-and-sievers-law-syncope.md",
+    "050-pwgmc-sievers-law-syncope.md",
     # ── Chapter 3: Proto-West Germanic → Anglo-Frisian ─────────────────────
     "003-west-germanic-rhotacism.md",
+    "020-wgmc-final-z-deletion.md",
     "043-anglo-frisian-brightening.md",
     # ── Chapter 4: Anglo-Frisian → Old English ─────────────────────────────
+    "016-west-saxon-palatal-glide.md",
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",
@@ -102,26 +106,27 @@ CHAPTER_INTRO_ROOT = root
 # Chapter heading configuration: maps first filename of each chapter to
 # (chapter_number, title, intro_file_in_reader_facing_dir)
 CHAPTER_BOUNDARIES: dict[str, tuple[int, str, str]] = {
-    "004-pwgmc-ai-monophthongization.md": (
+    "049-pgmc-b-allophony.md": (
         1,
         "From Proto-Germanic to Proto-Northwest Germanic",
         "chap1-pgmc-to-pnwgmc-intro.md",
+    ),
+    "004-pwgmc-ai-monophthongization.md": (
+        2,
+        "From Proto-Northwest Germanic to Proto-West Germanic",
+        "chap2-pnwgmc-to-pwgmc-intro.md",
     ),
     "003-west-germanic-rhotacism.md": (
         3,
         "From Proto-West Germanic to Anglo-Frisian",
         "chap3-pwgmc-to-af-intro.md",
     ),
-    "029-030-awj-glide-and-au-fronting.md": (
+    "016-west-saxon-palatal-glide.md": (
         4,
         "From Anglo-Frisian to Old English",
         "chap4-af-to-oe-intro.md",
     ),
 }
-# Chapter 2 boundary is injected after Chapter 1 standalone (no sound-change files)
-CHAPTER2_BEFORE_FILE = "004-pwgmc-ai-monophthongization.md"
-CHAPTER2_TITLE = "From Proto-Northwest Germanic to Proto-West Germanic"
-CHAPTER2_INTRO_FILE = "chap2-pnwgmc-to-pwgmc-intro.md"
 
 parts: list[str] = [
     "# The ordered sound-change sequence",
@@ -223,17 +228,12 @@ def inject_chapter_block(chapter_num: int, title: str, intro_file: str) -> list[
 
 first_file_seen = False
 for idx, name in enumerate(chapter_files):
-    # Inject chapter headings before the designated boundary files
-    if name == CHAPTER2_BEFORE_FILE:
-        # Chapter 1 standalone (no sound-change files, intro only)
-        if not first_file_seen:
-            parts.extend(inject_chapter_block(1, "From Proto-Germanic to Proto-Northwest Germanic", "chap1-pgmc-to-pnwgmc-intro.md"))
-        # Chapter 2 heading + intro
-        parts.extend(inject_chapter_block(2, CHAPTER2_TITLE, CHAPTER2_INTRO_FILE))
-    elif name in CHAPTER_BOUNDARIES and name != CHAPTER2_BEFORE_FILE:
+    if name in CHAPTER_BOUNDARIES:
+        # Inject chapter heading + intro before this file
         chap_num, chap_title, intro_file = CHAPTER_BOUNDARIES[name]
         parts.extend(inject_chapter_block(chap_num, chap_title, intro_file))
-    if first_file_seen or name == CHAPTER2_BEFORE_FILE:
+    elif first_file_seen:
+        # Non-boundary file: add page break before it
         parts.extend(["", r"\newpage", ""])
     first_file_seen = True
     chapter_text = resolve_links((root / name).read_text(encoding="utf-8").rstrip())

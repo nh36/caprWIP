@@ -16,25 +16,25 @@ East Germanic varieties.
 
 ## What this chapter contains
 
-The changes implemented in CAPR that belong historically to this stage are few.
-The current lexical corpus witnesses only one well-supported change in the
-CAPR rule set that is unambiguously Proto-Germanic internal: the simplification
-of the cluster [*gm]{.recon} 'consonant group' in the families behind
-[*draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and [*taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'
-[@Kroonen2013, pp. 101, 511].
+Chapter 1 contains one reader-facing sound-change section: the positional
+allophony of Proto-Germanic \emph{*b}, implemented as `SC049 PGmcBAllophony`.
+The rule governs the distribution of \emph{*b} as a stop versus a voiced
+bilabial fricative \emph{*β} depending on syllabic environment. Hogg, Ringe
+and Taylor, and Luick all identify this distribution as a Proto-Germanic
+feature [@Hogg1992, pp. 101--102; @RingeTaylor2014, p. 121; @Luick1914, p. 107].
 
-A second change with a Proto-Germanic historical label in the CAPR implementation,
-the allophony of initial labial stops (SC049), belongs here historically but is
-checkpointed later in the transducer cascade for computational reasons. Its
-chapter placement therefore diverges from its cascade position; the historical
-account is given here, and the reader-facing section cross-references this chapter.
+CAPR implements this rule late in the computational cascade because the
+alternation interacts with environments shaped by intermediate rule
+applications. The cascade placement therefore diverges from the historical
+stage; the reader-facing section notes this divergence explicitly.
 
-The thinness of Chapter 1 is real: the CAPR corpus does not yet have strong
-lexical witnesses that establish the relative chronology of early Proto-Germanic
-consonant changes. Most of the changes that traditional comparative grammars
-treat as Proto-Germanic-stage developments are either not represented in the CAPR
-corpus or are implemented as part of the input proto-forms rather than as explicit
-rule steps.
+One other historically Proto-Germanic change, Gm-simplification
+(`SC002 PGmcGmSimplification`), is documented in the book-entry plan and
+its literature dossier confirms the source base is narrow (two lexical
+families: [*draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
+[*taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'; [@Kroonen2013, pp. 101, 511]).
+A reader-facing section for SC002 awaits a stronger explanatory source base
+and is not yet assembled in the reader-facing sequence.
 
 ## Scope and genealogical context
 
