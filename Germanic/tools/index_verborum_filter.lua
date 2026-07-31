@@ -212,7 +212,9 @@ local function span_to_index(span)
   -- display automatically when no explicit display= attribute is provided.
   local is_recon = has_class(span, "recon")
   local display = display_attr ~= "" and display_attr or (is_recon and ("*" .. form) or form)
-  local sort = trim(span.attributes["sort"] or display)
+  -- Sort key must always derive from the bare (unstarred) form, not from the display.
+  -- A starred display would otherwise propagate a leading asterisk into the sort key.
+  local sort = trim(span.attributes["sort"] or form)
   if not explicit_tag_is_printable(lang, role, form, display, source_ref) then
     return visible
   end

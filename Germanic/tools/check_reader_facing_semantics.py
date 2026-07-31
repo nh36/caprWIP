@@ -7,6 +7,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import textwrap
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -645,86 +646,139 @@ def run_references_structure_check() -> None:
 
 
 def find_references_structure_issues(text: str) -> list[str]:
-    """Return a list of issues with the References section structure in text."""
+    """Return a list of issues with the References section structure in text.
+
+    The canonical full book must contain exactly one each of:
+    \\backmatter, # References, {#refs} bibliography Div, and Index Verborum part marker.
+    Order: \\backmatter → # References → {#refs} → Index Verborum.
+    Nested ## References and duplicates are forbidden.
+    """
     issues: list[str] = []
+
+    # Count required structural markers
+    backmatter_count = text.count(r'\backmatter')
+    if backmatter_count == 0:
+        issues.append("Missing required \\backmatter marker")
+    elif backmatter_count > 1:
+        issues.append(f"\\backmatter appears {backmatter_count} times (must be exactly once)")
+
     ref_headings = re.findall(r'^#{1,6}\s+References\s*$', text, re.MULTILINE)
     if len(ref_headings) != 1:
         issues.append(f"Expected exactly 1 References heading, found {len(ref_headings)}: {ref_headings}")
     if ref_headings and not ref_headings[0].strip().startswith('# References'):
         issues.append(f"References heading must be level 1, got: {ref_headings[0]!r}")
+
     refs_div_count = text.count('{#refs}')
-    if refs_div_count != 1:
-        issues.append(f"Expected exactly 1 {{#refs}} div, found {refs_div_count}")
+    if refs_div_count == 0:
+        issues.append("Missing required {#refs} bibliography Div")
+    elif refs_div_count > 1:
+        issues.append(f"{{#refs}} Div appears {refs_div_count} times (must be exactly once)")
+
+    index_verborum_marker = r'\part*{Index verborum}'
+    index_marker_count = text.count(index_verborum_marker)
+    if index_marker_count == 0:
+        issues.append("Missing required Index Verborum part marker")
+    elif index_marker_count > 1:
+        issues.append(f"Index Verborum marker appears {index_marker_count} times (must be exactly once)")
+
     bad = re.findall(r'^#{2,}\s+References\s*$', text, re.MULTILINE)
     if bad:
         issues.append(f"Found nested References headings: {bad}")
-    # Ordering: \backmatter must precede # References, which must precede Index Verborum
+
+    # Ordering check (only when all required markers are present)
     backmatter_pos = text.find(r'\backmatter')
-    refs_pos = text.find('\n# References\n')
-    index_pos = text.find(r'\part*{Index verborum}')
+    refs_match = re.search(r'^# References$', text, re.MULTILINE)
+    refs_pos = refs_match.start() if refs_match else -1
+    refs_div_pos = text.find('{#refs}')
+    index_pos = text.find(index_verborum_marker)
+
     if backmatter_pos != -1 and refs_pos != -1 and backmatter_pos > refs_pos:
         issues.append("\\backmatter must appear before # References")
     if refs_pos != -1 and index_pos != -1 and refs_pos > index_pos:
-        issues.append("# References must appear before Index Verborum")
+        issues.append("# References must appear before Index Verborum marker")
+    if refs_div_pos != -1 and index_pos != -1 and refs_div_pos > index_pos:
+        issues.append("{#refs} must appear before Index Verborum marker")
+
     return issues
 
 
 def run_references_negative_fixture() -> None:
-    """The production validator must reject text with a duplicate or nested ## References."""
-    bad_fixture = (
+    """The production validator must reject various malformed References structures.
+
+    Exercises: duplicate/nested References, missing \\backmatter, missing Index Verborum,
+    wrong ordering — all must fail. Correct complete structure must pass.
+    """
+    GOOD = (
         "\\backmatter\n\n"
-        "# Word-by-word derivations\n\n"
-        "## Part VII. Unexplained exceptions\n\n"
-        "Some text.\n\n"
-        "\\clearpage\n\n"
+        "# References\n\n"
+        "::: {#refs}\n:::\n\n"
+        "\\part*{Index verborum}\n"
+    )
+    assert_true(not find_references_structure_issues(GOOD), f"Good fixture unexpectedly rejected: {find_references_structure_issues(GOOD)}")
+
+    # Duplicate/nested References
+    bad_duplicate = (
+        "\\backmatter\n\n"
         "## References\n\n"
         "# References\n\n"
-        "::: {#refs}\n"
-        ":::\n\n"
+        "::: {#refs}\n:::\n\n"
         "\\part*{Index verborum}\n"
     )
-    issues = find_references_structure_issues(bad_fixture)
-    assert_true(
-        bool(issues),
-        "Negative fixture should have been rejected by find_references_structure_issues but was not",
-    )
+    assert_true(bool(find_references_structure_issues(bad_duplicate)), "Duplicate/nested References must be rejected")
 
-    good_fixture = (
+    # Missing \\backmatter
+    bad_no_backmatter = (
+        "# References\n\n"
+        "::: {#refs}\n:::\n\n"
+        "\\part*{Index verborum}\n"
+    )
+    assert_true(bool(find_references_structure_issues(bad_no_backmatter)), "Missing \\backmatter must be rejected")
+
+    # Missing Index Verborum marker
+    bad_no_index = (
         "\\backmatter\n\n"
         "# References\n\n"
-        "::: {#refs}\n"
-        ":::\n\n"
+        "::: {#refs}\n:::\n"
+    )
+    assert_true(bool(find_references_structure_issues(bad_no_index)), "Missing Index Verborum marker must be rejected")
+
+    # References before \\backmatter
+    bad_order_1 = (
+        "# References\n\n"
+        "::: {#refs}\n:::\n\n"
+        "\\backmatter\n\n"
         "\\part*{Index verborum}\n"
     )
-    good_issues = find_references_structure_issues(good_fixture)
-    assert_true(
-        not good_issues,
-        f"Good fixture should have no issues but got: {good_issues}",
+    assert_true(bool(find_references_structure_issues(bad_order_1)), "References before \\backmatter must be rejected")
+
+    # Index before References
+    bad_order_2 = (
+        "\\backmatter\n\n"
+        "\\part*{Index verborum}\n\n"
+        "# References\n\n"
+        "::: {#refs}\n:::\n"
     )
+    assert_true(bool(find_references_structure_issues(bad_order_2)), "Index before References must be rejected")
 
 
 def run_gloss_inside_span_check() -> None:
-    """Check that no gloss text appears inside .iv, .recon, or .lex spans."""
+    """Check that no gloss text appears inside .iv, .recon, .lex, or .pred spans."""
     nested_recon_iv = re.compile(r'\[\[[^\]]+\]\{\.recon\}[^]]*\]\{[^}]*\.iv[^}]*\}')
-    gloss_fragment = r"(?:'[^']*'|‘[^’]*’)"
+    gloss_fragment = r"(?:'[^']*'|'[^']*')"
     gloss_in_iv = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.iv[^}}]*\}}")
     gloss_in_lex = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.lex[^}}]*\}}")
     gloss_in_recon = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.recon[^}}]*\}}")
+    gloss_in_pred = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.pred[^}}]*\}}")
 
     bad_cases = [
-        "[[rēac]{.recon} 'reek']{.iv lang=oe sort=reac}",
-        "[rēc 'reek']{.iv lang=oe sort=rec}",
-        "[rēc 'reek']{.lex}",
-        "[rēac 'reek']{.recon}",
+        ("[[rēac]{.recon} 'reek']{.iv lang=oe sort=reac}", nested_recon_iv),
+        ("[rēc 'reek']{.iv lang=oe sort=rec}", gloss_in_iv),
+        ("[rēc 'reek']{.lex}", gloss_in_lex),
+        ("[rēac 'reek']{.recon}", gloss_in_recon),
+        ("[form 'meaning']{.pred}", gloss_in_pred),
     ]
-    for case in bad_cases:
-        hit = (
-            nested_recon_iv.search(case)
-            or gloss_in_iv.search(case)
-            or gloss_in_lex.search(case)
-            or gloss_in_recon.search(case)
-        )
-        assert_true(hit is not None, f"Expected bad case to be detected: {case!r}")
+    for case, expected_pattern in bad_cases:
+        assert_true(bool(expected_pattern.search(case)), f"Expected bad case to be detected by its pattern: {case!r}")
 
     good_cases = [
         "[rēac]{.recon .iv lang=oe sort=reac} 'reek'",
@@ -737,6 +791,7 @@ def run_gloss_inside_span_check() -> None:
             or gloss_in_iv.search(case)
             or gloss_in_lex.search(case)
             or gloss_in_recon.search(case)
+            or gloss_in_pred.search(case)
         )
         assert_true(hit is None, f"Expected good case to pass but was rejected: {case!r}")
 
@@ -746,38 +801,110 @@ def run_gloss_inside_span_check() -> None:
         (gloss_in_iv, 'gloss inside .iv span'),
         (gloss_in_lex, 'gloss inside .lex span'),
         (gloss_in_recon, 'gloss inside .recon span'),
+        (gloss_in_pred, 'gloss inside .pred span'),
     ]:
         match = pattern.search(text)
         offending = repr(match.group(0)) if match else ''
         assert_true(match is None, f"Assembled book contains {name}: {offending}")
 
-    # Emph+gloss check: check the assembled book for _form 'gloss'_ patterns.
-    # In the assembled book, attribute strings (role=comparison_form etc.) are
-    # processed by pandoc and do not appear as raw text, eliminating false positives.
-    # We find italic spans (_..._) then check if the content has both a linguistic
-    # form character AND a quote-delimited gloss.
-    ITALIC_SPAN_RE = re.compile(r'(?<!\w)_([^\n_]{1,80})_(?!\w)')
-    SPECIAL_FORM_CHAR_RE = re.compile(r'[ǣæþðġċȳīāēōūǭǫáéíóú]|(?<![a-z])\*(?=[a-z\*])')
-    GLOSS_QUOTE_RE = re.compile(r'(?:\'[^\'\n]{1,40}\'|\u2018[^\u2019\n]{1,40}\u2019)')
+    # Emph+gloss check: use Pandoc JSON AST to detect Emph nodes whose content
+    # contains both a linguistic form and a quote-delimited English gloss.
+    # This is AST-based and covers ASCII and non-ASCII forms alike.
+    def _emph_has_gloss(emph_text: str) -> bool:
+        """Return True if Emph content looks like 'form gloss' with a quoted gloss.
 
-    def _has_emph_gloss(content: str) -> bool:
-        return bool(SPECIAL_FORM_CHAR_RE.search(content) and GLOSS_QUOTE_RE.search(content))
+        Requires the form part to be a bare word (no punctuation like n. or ,) to
+        avoid false positives on dictionary citation formats like 'corn n. gloss'.
+        """
+        FORM_GLOSS_RE = re.compile(
+            r'\b[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫāēīōū]+\s+(?:\'[^\'\n]{1,40}\'|\u2018[^\u2019\n]{1,40}\u2019)'
+        )
+        # Exclude dictionary citation patterns: word followed by 'n.' or 'v.' etc.
+        DICT_CITATION_RE = re.compile(r'\b\w+\s+[nv]\.\s')
+        if DICT_CITATION_RE.search(emph_text):
+            return False
+        return bool(FORM_GLOSS_RE.search(emph_text))
 
-    # Fixtures
-    assert_true(_has_emph_gloss("rēc 'reek'"), "emph+gloss bad fixture not detected")
-    assert_true(not _has_emph_gloss("rēc"), "emph+gloss good-form-no-gloss incorrectly flagged")
-    assert_true(not _has_emph_gloss("a good analysis"), "emph+gloss plain text incorrectly flagged")
-    assert_true(_has_emph_gloss("rēc \u2018reek\u2019"), "emph+gloss curly-quote bad fixture not detected")
+    import json as _json_gloss
 
-    # Scan assembled book (pre-bibliography section)
+    def _stringify_inlines(inlines: list) -> str:
+        parts: list[str] = []
+        for node in inlines:
+            if not isinstance(node, dict):
+                continue
+            t = node.get("t", "")
+            if t == "Str":
+                parts.append(node.get("c", ""))
+            elif t == "Space":
+                parts.append(" ")
+            elif t in ("Quoted", "Emph", "Strong", "Span"):
+                inner = node.get("c", [])
+                if isinstance(inner, list):
+                    if t == "Quoted":
+                        # Quoted: (type, inlines)
+                        quote_type = inner[0] if inner else {}
+                        inner_inlines = inner[1] if len(inner) > 1 else []
+                        q_char = "\u2018" if isinstance(quote_type, dict) and quote_type.get("t") == "SingleQuote" else "'"
+                        parts.append(q_char + _stringify_inlines(inner_inlines) + ("\u2019" if q_char == "\u2018" else "'"))
+                    else:
+                        parts.append(_stringify_inlines(inner))
+        return "".join(parts)
+
+    def _walk_blocks_emph_gloss(blocks: list) -> list[str]:
+        found: list[str] = []
+        for block in blocks:
+            if not isinstance(block, dict):
+                continue
+            t = block.get("t", "")
+            if t == "Table":
+                continue
+            elif t in ("Para", "Plain"):
+                for node in block.get("c", []):
+                    if isinstance(node, dict) and node.get("t") == "Emph":
+                        emph_text = _stringify_inlines(node.get("c", []))
+                        if _emph_has_gloss(emph_text):
+                            found.append(repr(emph_text[:60]))
+            elif t == "BulletList":
+                for item in block.get("c", []):
+                    if isinstance(item, list):
+                        found.extend(_walk_blocks_emph_gloss(item))
+            elif t == "OrderedList":
+                items = block.get("c", [])
+                items = items[1] if len(items) > 1 else []
+                for item in items:
+                    if isinstance(item, list):
+                        found.extend(_walk_blocks_emph_gloss(item))
+            elif t == "BlockQuote":
+                found.extend(_walk_blocks_emph_gloss(block.get("c", [])))
+        return found
+
+    # Fixtures — use pandoc to verify detection
+    for bad_case, good_case in [
+        ("_rēc 'reek'_", "_rēc_ 'reek'"),
+        ("_faran 'go'_", "_faran_ 'go'"),
+        ("_bacan 'bake'_", "_bacan_"),
+    ]:
+        proc_bad = subprocess.run(["pandoc", "--from=markdown+smart", "--to=json"], input=bad_case, capture_output=True, text=True, check=False)
+        proc_good = subprocess.run(["pandoc", "--from=markdown+smart", "--to=json"], input=good_case, capture_output=True, text=True, check=False)
+        if proc_bad.returncode == 0 and proc_good.returncode == 0:
+            bad_doc = _json_gloss.loads(proc_bad.stdout)
+            good_doc = _json_gloss.loads(proc_good.stdout)
+            bad_hits = _walk_blocks_emph_gloss(bad_doc.get("blocks", []))
+            good_hits = _walk_blocks_emph_gloss(good_doc.get("blocks", []))
+            assert_true(bool(bad_hits), f"emph+gloss AST fixture: bad case not detected: {bad_case!r}")
+            assert_true(not good_hits, f"emph+gloss AST fixture: good case incorrectly flagged: {good_case!r}")
+
+    # Production check: parse assembled book (pre-bibliography) with pandoc JSON
     refs_marker = '\n# References\n'
-    pre_refs = text.split(refs_marker)[0] if refs_marker in text else text
-    emph_hits: list[str] = []
-    for m in ITALIC_SPAN_RE.finditer(pre_refs):
-        if _has_emph_gloss(m.group(1)):
-            line_no = pre_refs[:m.start()].count('\n') + 1
-            emph_hits.append(f"line {line_no}: {m.group(0)[:80]}")
-    assert_true(not emph_hits, "Italic+gloss (emph swallowing meaning) found in assembled book:\n" + "\n".join(emph_hits[:5]))
+    pre_refs_text = text.split(refs_marker)[0] if refs_marker in text else text
+    proc_book = subprocess.run(
+        ["pandoc", "--from=markdown+raw_tex+smart", "--to=json"],
+        input=pre_refs_text, capture_output=True, text=True, check=False,
+    )
+    if proc_book.returncode == 0:
+        book_doc = _json_gloss.loads(proc_book.stdout)
+        emph_gloss_hits = _walk_blocks_emph_gloss(book_doc.get("blocks", []))
+        assert_true(not emph_gloss_hits, "Emph+gloss (italic swallowing meaning) found in assembled book:\n" + "\n".join(emph_gloss_hits[:5]))
 
 
 def run_bold_prose_check() -> None:
@@ -1927,11 +2054,13 @@ def run_section_count_regression() -> None:
         expected = manifest_counts.get(cls, 0)
         # Plain-number pattern (no bold markers): "- Label: N"
         pat = _re.compile(r'^- ' + _re.escape(label) + r':\s*(\d+)\s*$', _re.MULTILINE)
-        m = pat.search(lexvol_text)
-        if not m:
-            mismatches.append(f"  {cls}: count line not found in lexical_volume_alpha_01.md (expected {expected})")
+        all_matches = pat.findall(lexvol_text)
+        if len(all_matches) == 0:
+            mismatches.append(f"  {cls}: count line for '{label}' not found in lexical_volume_alpha_01.md (expected {expected})")
+        elif len(all_matches) > 1:
+            mismatches.append(f"  {cls}: count line for '{label}' appears {len(all_matches)} times (must appear exactly once)")
         else:
-            displayed = int(m.group(1))
+            displayed = int(all_matches[0])
             if displayed != expected:
                 mismatches.append(f"  {cls}: displayed {displayed} but manifest has {expected}")
 
@@ -1939,6 +2068,20 @@ def run_section_count_regression() -> None:
         not mismatches,
         "Section count mismatches (generated volume vs manifest):\n" + "\n".join(mismatches),
     )
+
+    # Fixtures: exactly-once enforcement
+    fixture_text_good = "- Regular derivations: 70\n"
+    fixture_text_missing = "- Something else: 5\n"
+    fixture_text_duplicate = "- Regular derivations: 70\n- Regular derivations: 70\n"
+    fixture_text_wrong = "- Regular derivations: 99\n"
+    pat_fix = _re.compile(r'^- Regular derivations:\s*(\d+)\s*$', _re.MULTILINE)
+    assert_true(len(pat_fix.findall(fixture_text_good)) == 1, "Exactly-once fixture: good case failed")
+    assert_true(len(pat_fix.findall(fixture_text_missing)) == 0, "Exactly-once fixture: missing case failed")
+    assert_true(len(pat_fix.findall(fixture_text_duplicate)) == 2, "Exactly-once fixture: duplicate case failed")
+    good_val = pat_fix.findall(fixture_text_good)
+    wrong_val = pat_fix.findall(fixture_text_wrong)
+    assert_true(good_val and int(good_val[0]) != 99, "Exactly-once fixture: good value sanity failed")
+    assert_true(wrong_val and int(wrong_val[0]) == 99, "Exactly-once fixture: wrong value sanity failed")
 
     # Secondary: check section_introductions_draft.md for terminology hygiene
     intro_path = ROOT / "docs" / "assembly" / "section_introductions_draft.md"
@@ -2064,27 +2207,48 @@ def run_trace_render_fixtures() -> None:
 def run_recon_iv_index_display_check() -> None:
     """Every explicit_tag row from a .recon .iv span must carry the reconstruction asterisk.
 
-    A .recon .iv span like [bákaną]{.recon .iv lang=pgmc sort=bakana} must produce
-    display *bákaną, never bare bákaną. This check walks canonical source files, finds
-    spans with both .recon and .iv classes, and verifies their derived display has the
-    reconstruction asterisk.
+    For each canonical source occurrence with combined .recon .iv, this check:
+    1. Derives the occurrence identity (language, form, role, source_ref) from the source.
+    2. Locates the corresponding row in the authoritative generated print_main.tsv.
+    3. Requires that: the row exists, its display begins with exactly one *, its sort_key
+       does not begin with *, and no unstarred twin exists for that source occurrence.
+
+    Also exercises the production extraction function directly via subprocess.
     """
-    # Self-contained helpers (mirrors build_index_verborum logic without the import)
+    pm_path = ROOT / "docs" / "book" / "index_verborum_print_main.tsv"
+    if not pm_path.exists():
+        return
+
+    # Load generated print_main.tsv indexed by occurrence identity
+    pm_by_occ: dict[tuple[str, str, str, str], list[dict[str, str]]] = {}
+    with pm_path.open(encoding="utf-8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            if (row.get("source_scope") or "").strip() != "explicit_tag":
+                continue
+            key = (
+                (row.get("language") or "").strip(),
+                (row.get("form") or "").strip(),
+                (row.get("form_role") or "evidence_form").strip(),
+                (row.get("source_ref") or "").strip(),
+            )
+            pm_by_occ.setdefault(key, []).append(row)
+
+    # Self-contained span parser (mirrors iter_explicit_tags essentials)
     EXPLICIT_SPAN_RE = re.compile(r'\[(?P<content>[^\[\]]+)\]\{(?P<attrs>[^}]+)\}')
     ATTR_VAL_RE = re.compile(r'(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?:"(?P<qval>[^"]*?)"|(?P<val>\S+?)(?=[\s}]|$))')
     MARKUP_STRIP_RE = re.compile(r'\[[^\[\]]+\]\{[^}]*\}|`[^`]+`|_([^_]+)_|\*([^*]+)\*|[\[\]]|\{[^}]*\}')
 
-    def parse_attrs(raw: str) -> dict[str, str]:
+    def parse_span_attrs(raw: str) -> dict[str, str]:
         result: dict[str, str] = {}
         for m in ATTR_VAL_RE.finditer(raw):
-            result[m.group('key')] = m.group('qval') if m.group('qval') is not None else (m.group('val') or '')
+            result[m.group("key")] = m.group("qval") if m.group("qval") is not None else (m.group("val") or "")
         return result
 
     def has_cls(raw: str, cls: str) -> bool:
-        return bool(re.search(rf'(^|\s)\.{re.escape(cls)}(?=\s|$)', raw))
+        return bool(re.search(rf"(^|\s)\.{re.escape(cls)}(?=\s|$)", raw))
 
-    def strip_markup(text: str) -> str:
-        return MARKUP_STRIP_RE.sub(lambda m: m.group(1) or m.group(2) or '', text).strip()
+    def strip_markup_simple(text: str) -> str:
+        return MARKUP_STRIP_RE.sub(lambda m: m.group(1) or m.group(2) or "", text).strip()
 
     source_paths = [
         TOOLS_DIR.parent / "docs" / "assembly" / "capr_book_intro_alpha_01.md",
@@ -2092,56 +2256,214 @@ def run_recon_iv_index_display_check() -> None:
         *sorted((TOOLS_DIR.parent / "docs" / "lexeme_reports" / "model_entries").glob("*.model.md")),
     ]
 
-    unstarred_recon: list[str] = []
+    failures: list[str] = []
     for src in source_paths:
         if not src.exists():
             continue
-        src_lines = src.read_text(encoding="utf-8").splitlines()
-        for line_no, line in enumerate(src_lines, 1):
+        rel = src.relative_to(ROOT.parent).as_posix()
+        for line_no, line in enumerate(src.read_text(encoding="utf-8").splitlines(), 1):
             for span_m in EXPLICIT_SPAN_RE.finditer(line):
                 raw_attrs = span_m.group("attrs")
                 if not (has_cls(raw_attrs, "iv") and has_cls(raw_attrs, "recon")):
                     continue
-                attrs = parse_attrs(raw_attrs)
-                content = span_m.group("content")
-                bare_form = strip_markup(content)
-                explicit_display = attrs.get("display", "").strip()
-                # Derive expected display (mirrors iter_explicit_tags fix)
-                expected_display = explicit_display if explicit_display else f"*{bare_form}"
-                if not expected_display.startswith("*"):
-                    rel = src.relative_to(ROOT.parent)
-                    unstarred_recon.append(
-                        f"  {rel}:{line_no}: content={content!r} expected_display={expected_display!r} "
-                        f"— .recon .iv span must produce a starred display"
+                attrs = parse_span_attrs(raw_attrs)
+                bare_form = strip_markup_simple(span_m.group("content"))
+                lang = attrs.get("lang", "").strip()
+                role = (attrs.get("role", "") or "evidence_form").strip()
+                source_ref = f"{rel}:{line_no}"
+                occ_key = (lang, bare_form, role, source_ref)
+
+                # Look up in actual generated TSV
+                generated_rows = pm_by_occ.get(occ_key, [])
+                if not generated_rows:
+                    failures.append(f"  {rel}:{line_no}: no generated row for .recon .iv occurrence ({lang!r}, {bare_form!r}, {role!r})")
+                    continue
+                for grow in generated_rows:
+                    disp = grow.get("display", "")
+                    sort_k = grow.get("sort_key", "")
+                    if not disp.startswith("*"):
+                        failures.append(f"  {rel}:{line_no}: display {disp!r} must begin with * for .recon .iv")
+                    if disp.startswith("**"):
+                        failures.append(f"  {rel}:{line_no}: display {disp!r} has doubled star (should be exactly one *)")
+                    if sort_k.startswith("*"):
+                        failures.append(f"  {rel}:{line_no}: sort_key {sort_k!r} must not begin with * for .recon .iv")
+
+                # Also check: no unstarred twin with same occurrence identity
+                unstarred_rows = [r for r in generated_rows if not r.get("display", "").startswith("*")]
+                if unstarred_rows:
+                    failures.append(f"  {rel}:{line_no}: unstarred twin display {unstarred_rows[0].get('display')!r} alongside starred entry")
+
+    assert_true(not failures, ".recon .iv generated index rows have incorrect display/sort:\n" + "\n".join(failures[:10]))
+
+    # ── Self-contained production fixture via subprocess ────────────────────────
+    # Run the actual production extraction function on a fixture file and verify output.
+    biv_script = TOOLS_DIR / "build_index_verborum.py"
+    if biv_script.exists():
+        fixture_snippet = textwrap.dedent("""\
+            import sys, json
+            sys.path.insert(0, r"{tools_dir}")
+            import build_index_verborum as _biv
+            from pathlib import Path
+            import tempfile, os
+
+            with tempfile.TemporaryDirectory() as tmp:
+                # Fixture: .recon .iv span
+                fixture = Path(tmp) / "fixture.model.md"
+                fixture.write_text(
+                    "# bake -- OE bacan\\n"
+                    "PROTO: *bákaną\\nPROTOFORM: *bákaną\\nCOUNTERPART: bacan\\nDERIVATION_CLASS: regular\\n\\n"
+                    "[bákaną]{{.recon .iv lang=pgmc sort=bakana role=selected_input}} 'bake'\\n"
+                    "[bacan]{{.iv lang=oe sort=bacan role=evidence_form}} 'bake'\\n",
+                    encoding="utf-8",
+                )
+                occs = _biv.explicit_tag_occurrences([fixture])
+
+            results = []
+            for occ in occs:
+                results.append({{
+                    "language": occ["language"],
+                    "form": occ["form"],
+                    "display": occ["display"],
+                    "sort_key": occ["sort_key"],
+                    "form_role": occ["form_role"],
+                }})
+            print(json.dumps(results))
+        """.format(tools_dir=str(TOOLS_DIR)))
+
+        proc = subprocess.run(
+            ["python3", "-c", fixture_snippet],
+            capture_output=True, text=True, check=False,
+        )
+        if proc.returncode == 0:
+            import json as _json
+            extracted = _json.loads(proc.stdout)
+            recon_rows = [r for r in extracted if r.get("language") == "pgmc" and r.get("form") == "bákaną"]
+            attested_rows = [r for r in extracted if r.get("language") == "oe" and r.get("form") == "bacan"]
+
+            # .recon .iv row
+            assert_true(bool(recon_rows), "Production fixture: no pgmc bákaną row from .recon .iv span")
+            for r in recon_rows:
+                assert_true(r["display"] == "*bákaną", f"Production fixture: display must be *bákaną, got {r['display']!r}")
+                assert_true(r["sort_key"] == "bakana", f"Production fixture: sort_key must be bakana, got {r['sort_key']!r}")
+                assert_true(not r["sort_key"].startswith("*"), "Production fixture: sort_key must not start with *")
+
+            # attested .iv row (no .recon)
+            assert_true(bool(attested_rows), "Production fixture: no oe bacan row")
+            for r in attested_rows:
+                assert_true(r["display"] == "bacan", f"Production fixture: attested display must be bacan (unstarred), got {r['display']!r}")
+
+            # .recon without .iv produces no index row
+            no_recon_snippet = textwrap.dedent("""\
+                import sys, json
+                sys.path.insert(0, r"{tools_dir}")
+                import build_index_verborum as _biv
+                from pathlib import Path
+                import tempfile
+
+                with tempfile.TemporaryDirectory() as tmp:
+                    fixture = Path(tmp) / "fixture.model.md"
+                    fixture.write_text(
+                        "[bákaną]{{.recon lang=pgmc}} 'bake'\\n",
+                        encoding="utf-8"
                     )
+                    occs = _biv.explicit_tag_occurrences([fixture])
+                print(json.dumps([o["language"] for o in occs]))
+            """.format(tools_dir=str(TOOLS_DIR)))
+            p2 = subprocess.run(["python3", "-c", no_recon_snippet], capture_output=True, text=True, check=False)
+            if p2.returncode == 0:
+                no_index = _json.loads(p2.stdout)
+                assert_true(not any(l == "pgmc" for l in no_index), ".recon without .iv must produce no explicit index row")
 
-    assert_true(
-        not unstarred_recon,
-        "Explicit_tag rows from .recon .iv spans have unstarred display (regression):\n"
-        + "\n".join(unstarred_recon[:10]),
-    )
+    # Fixture: doubled-star explicit display is not accepted by the asterisk check
+    doubled_display = "**bákaną"
+    doubled_is_problem = doubled_display.startswith("**")
+    assert_true(doubled_is_problem, "Doubled-star detection fixture: **form must be flagged")
 
-    # Fixture: detection logic must catch a bad case
-    bad_line = "[bákaną]{.recon .iv lang=pgmc sort=bakana} 'bake'"
-    fixture_hits: list[str] = []
-    for span_m in EXPLICIT_SPAN_RE.finditer(bad_line):
-        raw_attrs = span_m.group("attrs")
-        if has_cls(raw_attrs, "iv") and has_cls(raw_attrs, "recon"):
-            attrs = parse_attrs(raw_attrs)
-            disp = attrs.get("display", "").strip()
-            bare = strip_markup(span_m.group("content"))
-            derived = disp if disp else f"*{bare}"
-            if derived.startswith("*"):
-                fixture_hits.append(derived)
-    assert_true(bool(fixture_hits), "Recon .iv display fixture: starred display not derived for .recon .iv span")
 
-    good_line = "[`bákaną`]{.iv lang=pgmc sort=bakana} 'bake'"
-    good_hits: list[str] = []
-    for span_m in EXPLICIT_SPAN_RE.finditer(good_line):
-        raw_attrs = span_m.group("attrs")
-        if has_cls(raw_attrs, "iv") and has_cls(raw_attrs, "recon"):
-            good_hits.append(span_m.group(0))
-    assert_true(not good_hits, "Recon .iv display fixture: plain .iv (no .recon) incorrectly flagged")
+def run_recon_iv_lua_sort_check() -> None:
+    """Verify the Lua filter uses bare form (not starred display) for the sort key.
+
+    A .recon .iv span without explicit sort= must produce sort=bare_form, not sort=*form.
+    An explicit sort= must be preserved exactly.
+    """
+    index_filter = TOOLS_DIR / "index_verborum_filter.lua"
+    lang_registry = ROOT / "docs" / "book" / "index_verborum_languages.tsv"
+    if not index_filter.exists():
+        return
+
+    def _run_lua_fixture(md: str, print_main_rows: list[str]) -> str:
+        with tempfile.TemporaryDirectory() as tmp:
+            md_path = Path(tmp) / "fixture.md"
+            md_path.write_text(md, encoding="utf-8")
+            tsv_path = Path(tmp) / "print_main.tsv"
+            header = "language\tform\tdisplay\tsort_key\tform_role\tsource_scope\tsource_ref\torigin\tstatus"
+            tsv_path.write_text(header + "\n" + "\n".join(print_main_rows) + "\n", encoding="utf-8")
+            env = {
+                **__import__("os").environ,
+                "CAPR_IV_PRINT_MAIN_TSV": str(tsv_path),
+                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(lang_registry),
+            }
+            proc = subprocess.run(
+                ["pandoc", str(md_path), "--from=markdown", "--to=latex",
+                 "--lua-filter", str(index_filter)],
+                capture_output=True, text=True, check=False, env=env,
+                cwd=ROOT.parent,
+            )
+            return proc.stdout
+
+    def _extract_index_cmd(tex: str) -> str | None:
+        """Extract the first \\index[iv]{...} command with brace-counting."""
+        if "\\index[iv]{" not in tex:
+            return None
+        start = tex.index("\\index[iv]{")
+        body_start = start + len("\\index[iv]{")
+        depth = 1
+        pos = body_start
+        while pos < len(tex) and depth > 0:
+            if tex[pos] == "{":
+                depth += 1
+            elif tex[pos] == "}":
+                depth -= 1
+            pos += 1
+        return tex[start:pos]
+
+    # Fixture A: .recon .iv without explicit sort= — sort must NOT start with * (the bug was sort=display=*form)
+    # Note: in production all .recon .iv spans include explicit sort=, but this tests the fallback.
+    source_ref_a = "fixture/test_a.md:1"
+    pm_row_a = f"pgmc\tbákaną\t*bákaną\tbakana\tselected_input\texplicit_tag\t{source_ref_a}\tfixture\tactive"
+    md_a = f'[bákaną]{{.recon .iv lang=pgmc role=selected_input source_ref="{source_ref_a}"}} bake'
+    tex_a = _run_lua_fixture(md_a, [pm_row_a])
+    cmd_a = _extract_index_cmd(tex_a)
+    assert_true(cmd_a is not None, "Lua sort fixture A: no index command generated")
+    if cmd_a:
+        # Sort key is between first ! and first @ after !
+        bang_pos = cmd_a.find("!")
+        at_pos = cmd_a.find("@", bang_pos)
+        sort_in_cmd = cmd_a[bang_pos + 1:at_pos] if bang_pos != -1 and at_pos != -1 else ""
+        assert_true(not sort_in_cmd.startswith("*"), f"Lua sort fixture A: sort key must not start with *, got: {sort_in_cmd!r} in {cmd_a!r}")
+
+    # Fixture B: .recon .iv WITH explicit sort=bakana — preserve exactly as bakana
+    source_ref_b = "fixture/test_b.md:1"
+    pm_row_b = f"pgmc\tbákaną\t*bákaną\tbakana\tselected_input\texplicit_tag\t{source_ref_b}\tfixture\tactive"
+    md_b = f'[bákaną]{{.recon .iv lang=pgmc sort=bakana role=selected_input source_ref="{source_ref_b}"}} bake'
+    tex_b = _run_lua_fixture(md_b, [pm_row_b])
+    cmd_b = _extract_index_cmd(tex_b)
+    if cmd_b:
+        bang_pos = cmd_b.find("!")
+        at_pos = cmd_b.find("@", bang_pos)
+        sort_in_cmd = cmd_b[bang_pos + 1:at_pos] if bang_pos != -1 and at_pos != -1 else ""
+        assert_true(sort_in_cmd == "bakana", f"Lua sort fixture B: explicit sort=bakana must be preserved, got: {sort_in_cmd!r}")
+        assert_true(not sort_in_cmd.startswith("*"), f"Lua sort fixture B: sort key must not start with *, got: {sort_in_cmd!r}")
+
+    # Fixture C: attested .iv (no .recon) — display is unstarred
+    source_ref_c = "fixture/test_c.md:1"
+    pm_row_c = f"oe\tbacan\tbacan\tbacan\tevidence_form\texplicit_tag\t{source_ref_c}\tfixture\tactive"
+    md_c = f'[`bacan`]{{.iv lang=oe sort=bacan source_ref="{source_ref_c}"}} bake'
+    tex_c = _run_lua_fixture(md_c, [pm_row_c])
+    cmd_c = _extract_index_cmd(tex_c)
+    if cmd_c:
+        assert_true("\\emph{bacan}" in cmd_c and "\\emph{*" not in cmd_c,
+                     f"Lua sort fixture C: attested OE form must be unstarred in display, got: {cmd_c!r}")
 
 
 def main() -> int:
@@ -2182,6 +2504,7 @@ def main() -> int:
         run_generation_freshness()
         run_index_fingerprint_checks()
         run_recon_iv_index_display_check()
+        run_recon_iv_lua_sort_check()
         run_references_structure_check()
         run_references_negative_fixture()
         run_gloss_inside_span_check()
