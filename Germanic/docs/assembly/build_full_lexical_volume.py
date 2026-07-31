@@ -1007,13 +1007,13 @@ def build_front_matter(
             "The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:"
         ),
         "",
-        f"- Regular derivations: **{counts['regular']}**",
-        f"- Attested variants: **{counts['attested_variant']}**",
-        f"- Early analogy: **{counts['early_analogy']}**",
-        f"- Late analogy: **{counts['late_analogy']}**",
-        f"- Reconstructed Old English comparators: **{counts['reconstructed_oe']}**",
-        f"- Known but unmodelled developments: **{counts['known_unmodelled']}**",
-        f"- Unexplained or deliberately unmodelled exceptions: **{counts['unexplained_unmodelled']}**",
+        f"- Regular derivations: {counts['regular']}",
+        f"- Attested variants: {counts['attested_variant']}",
+        f"- Early analogy: {counts['early_analogy']}",
+        f"- Late analogy: {counts['late_analogy']}",
+        f"- Reconstructed Old English comparators: {counts['reconstructed_oe']}",
+        f"- Known but unmodelled developments: {counts['known_unmodelled']}",
+        f"- Unexplained or deliberately unmodelled exceptions: {counts['unexplained_unmodelled']}",
     ]
     return lines
 

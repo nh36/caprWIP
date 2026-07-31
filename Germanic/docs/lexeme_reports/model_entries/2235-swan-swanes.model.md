@@ -18,13 +18,13 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The Germanic noun is ordinarily cited as the masculine a-stem [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform}
+The Germanic noun is ordinarily cited as the masculine a-stem [swánaz]{.iv .recon lang=pgmc sort=swanaz role=source_protoform} ‘swan’
 [@Orel2003, 367]. The selected input [swánas]{.recon} ‘swan’ is not a competing
-lexeme reconstruction. It is the genitive singular [[swánas]{.recon}]{.iv lang=pgmc sort=swanas role=selected_input} of the same paradigm.
+lexeme reconstruction. It is the genitive singular [swánas]{.iv .recon lang=pgmc sort=swanas role=selected_input} of the same paradigm.
 
 The question here is therefore one of paradigm cell rather than stem history.
-The citation form remains [[swánaz]{.recon} ‘swan’]{.iv lang=pgmc sort=swanaz role=source_protoform} > [`swan`]{.iv lang=oe sort=swan role=comparison_form} 'swan'; the selected comparison form is the
-genitive singular [[swánas]{.recon} ‘swan’]{.iv lang=pgmc sort=swanas role=selected_input} > [`swanes`]{.iv lang=oe sort=swanes role=target_form} 'swan'.
+The citation form remains [swánaz]{.iv .recon lang=pgmc sort=swanaz role=source_protoform} ‘swan’ > [`swan`]{.iv lang=oe sort=swan role=comparison_form} 'swan'; the selected comparison form is the
+genitive singular [swánas]{.iv .recon lang=pgmc sort=swanas role=selected_input} ‘swan’ > [`swanes`]{.iv lang=oe sort=swanes role=target_form} 'swan'.
 
 ### Old English evidence
 

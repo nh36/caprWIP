@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the noun as [`*bērō-`]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [`bar`]{.iv lang=oe sort=bar} 'bier', [`bær`]{.iv lang=oe sort=baer} 'bier' among the reflexes [@Kroonen2013, 717]. The selected input [[bḗrō]{.recon} ‘bier’]{.iv lang=pgmc sort=bero} is the same lexeme in the accent notation used here.
+Kroonen reconstructs the noun as [`*bērō-`]{.iv lang=pgmc sort=bero} f. 'bier' and cites Old English [`bar`]{.iv lang=oe sort=bar} 'bier', [`bær`]{.iv lang=oe sort=baer} 'bier' among the reflexes [@Kroonen2013, 717]. The selected input [bḗrō]{.iv .recon lang=pgmc sort=bero} ‘bier’ is the same lexeme in the accent notation used here.
 
 ### Old English evidence
 
@@ -30,4 +30,4 @@ Lexicographic spellings vary between [`bær`]{.iv lang=oe sort=baer} 'bier' and 
 
 ### Development to Old English
 
-From [[bḗrō]{.recon} 'bier']{.iv lang=pgmc sort=bero}, Northwest Germanic final long `ō` raises to `u`, long `ē` lowers to `ǣ`, and high-vowel apocope yields [`bǣr`]{.iv lang=oe sort=baer} 'bier'. The resulting noun matches the normalized Old English target.
+From [bḗrō]{.iv .recon lang=pgmc sort=bero} 'bier', Northwest Germanic final long `ō` raises to `u`, long `ē` lowers to `ǣ`, and high-vowel apocope yields [`bǣr`]{.iv lang=oe sort=baer} 'bier'. The resulting noun matches the normalized Old English target.

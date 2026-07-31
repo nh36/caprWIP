@@ -18,11 +18,11 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Orel cites a bann-noun under [[bannan]{.recon} ‘ban’]{.iv lang=pgmc sort=bannan role=source_protoform}, while Seebold distinguishes bann-stems
+Orel cites a bann-noun under [bannan]{.iv .recon lang=pgmc sort=bannan role=source_protoform} ‘ban’, while Seebold distinguishes bann-stems
 of both masculine and neuter type and gives Old English [`gebann`]{.iv lang=oe sort=gebann role=comparison_form} 'ban' as the noun
-reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction [[bánną]{.recon} ‘ban’]{.iv lang=pgmc sort=banna role=source_protoform}
+reflex [@Orel2003, 35; @Seebold1970, 89]. The citation reconstruction [bánną]{.iv .recon lang=pgmc sort=banna role=source_protoform} ‘ban’
 names the lexeme, but the comparison here turns on the genitive singular
-[[bánnas]{.recon} ‘ban’]{.iv lang=pgmc sort=bannas role=selected_input}.
+[bánnas]{.iv .recon lang=pgmc sort=bannas role=selected_input} ‘ban’.
 
 The analysis therefore depends on medial, not final, gemination.
 
@@ -37,7 +37,7 @@ dictionary headword.
 
 ### Development to Old English
 
-From [[bánnas]{.recon} ‘ban’]{.iv lang=pgmc sort=bannas role=selected_input}, the geminate remains medial before the case ending and the
+From [bánnas]{.iv .recon lang=pgmc sort=bannas role=selected_input} ‘ban’, the geminate remains medial before the case ending and the
 unstressed vowel develops regularly to give [`bannes`]{.iv lang=oe sort=bannes role=target_form} 'ban'. The paradigm comparison
 therefore sets the genitive against nominative [`ban`]{.iv lang=oe sort=ban role=comparison_form} 'ban', the ordinary nominative
 form of the same noun, rather than against a directly cited genitive headword.

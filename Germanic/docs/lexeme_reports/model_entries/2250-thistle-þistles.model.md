@@ -19,8 +19,8 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Orel prints `*þe(x)stilaz` 'thistle' for the lexeme [@Orel2003, 458]. The comparative
-label [[θéstilaz]{.recon} 'thistle']{.iv lang=pgmc sort=thestilaz role=source_protoform} therefore remains in view as the lexeme-level headword, while
-the selected input [[θístilas]{.recon} 'thistle']{.iv lang=pgmc sort=thistilas role=selected_input} is a specific genitive singular cell.
+label [θéstilaz]{.iv .recon lang=pgmc sort=thestilaz role=source_protoform} 'thistle' therefore remains in view as the lexeme-level headword, while
+the selected input [θístilas]{.iv .recon lang=pgmc sort=thistilas role=selected_input} 'thistle' is a specific genitive singular cell.
 
 ### Old English evidence
 
@@ -35,7 +35,7 @@ Campbell's discussion of cluster nouns shows the contrast clearly. Simplex forms
 often develop a parasite vowel in word-final obstruent + sonorant clusters,
 while comparable medial clusters remain unbroken; his examples include `hrefn`,
 [`tacn`]{.iv lang=oe sort=tacn role=comparison_form} 'token, sign', [`wépn`]{.iv lang=oe sort=wépn role=comparison_form} 'weapon', and [`botm`]{.iv lang=oe sort=botm role=comparison_form} 'bottom' beside forms with parasitic vowels elsewhere in the
-same lexical class [@Campbell1959, 151]. The selected genitive singular [[θístilas]{.recon} 'thistle']{.iv lang=pgmc sort=thistilas role=selected_input}
+same lexical class [@Campbell1959, 151]. The selected genitive singular [θístilas]{.iv .recon lang=pgmc sort=thistilas role=selected_input} 'thistle'
 therefore supplies the conservative comparison form: the cluster is medial and
 the regular development yields [`þistles`]{.iv lang=oe sort=thistles role=regular_output} 'thistle', while the simplex nominative belongs
 to the broken headword tradition [`þistel`]{.iv lang=oe sort=thistel role=comparison_form} 'thistle'.

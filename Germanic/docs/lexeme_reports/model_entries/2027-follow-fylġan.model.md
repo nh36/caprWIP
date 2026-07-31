@@ -26,8 +26,8 @@ are therefore related but not identical.
 Ringe and Taylor distinguish PNWGmc [fulgija-]{.recon} 'follow' ~ [fulgai-]{.recon} 'follow' > OE [`fylgan`]{.iv lang=oe sort=fylgan role=comparison_form} 'follow' ~ [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow' and describe it as a dual formation that probably reflects an
 older alternation between j-present and e-stative [@RingeTaylor2014, 293-294].
 This is a stem-class choice, not a spelling choice. The selected input
-[[fúlgijaną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgijana role=selected_input} belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
-form [[fulgēną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgena role=source_protoform} belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow'.
+[fúlgijaną]{.iv .recon lang=pgmc sort=fulgijana role=selected_input} ‘follow’ belongs to the class-I `*fulgija- / *fulgjan-` branch; the citation
+form [fulgēną]{.iv .recon lang=pgmc sort=fulgena role=source_protoform} ‘follow’ belongs to the parallel class-II history behind [`folgian`]{.iv lang=oe sort=folgian role=comparison_form} 'follow'.
 
 ### Old English evidence
 
@@ -45,7 +45,7 @@ environment.
 
 ### Development to Old English
 
-[[fúlgijaną]{.recon} ‘follow’]{.iv lang=pgmc sort=fulgijana role=selected_input} is a class-I weak-verb formation. In the class-I branch the `*j`
+[fúlgijaną]{.iv .recon lang=pgmc sort=fulgijana role=selected_input} ‘follow’ is a class-I weak-verb formation. In the class-I branch the `*j`
 blocks NWGmc lowering of `u` to `o`, since Ringe and Taylor formulate that
 lowering for environments in which no `*j` intervened [@RingeTaylor2014, 96].
 The same front-vocalic environment then triggers i-umlaut, so `u` becomes `y`

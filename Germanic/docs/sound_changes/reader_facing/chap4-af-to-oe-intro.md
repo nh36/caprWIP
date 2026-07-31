@@ -30,27 +30,27 @@ pan-Old-English scope and which are specifically West Saxon or Anglian
 The changes in this chapter fall into several natural historical subgroups,
 though the boundaries between them are not always sharp:
 
-**Early Old English changes linked to the Anglo-Frisian inheritance**:
+Early Old English changes linked to the Anglo-Frisian inheritance:
 Changes that feed directly on, or are closely related to, the brightening of
 Chapter 3. The `*awj` glide formation (SC029), `*au` fronting (SC030), and
 the West Saxon diphthong chain (SC031–SC034) all operate on the vowel inventory
 shaped by Anglo-Frisian brightening. OE Breaking (SC044) and
 a-Restoration (SC046) similarly presuppose the fronted `*æ` input.
 
-**Old English consonantal changes**:
+Old English consonantal changes:
 Velar palatalization (SC052), palatalization of `*sk` (SC051), j-cluster
 coalescence (SC057), and related changes produce the characteristically
 Old English consonant phonemes. Hogg discusses these as OE consonant changes
 that are not broadly West Germanic [@Hogg1992, §§ 7.18--7.23].
 
-**Old English i-umlaut and its context**:
+Old English i-umlaut and its context:
 The i-umlaut (SC055) is one of the most productive changes in the Old English
 nominal and verbal morphology. Its relative chronology in relation to breaking,
 palatalization, and back-mutation is carefully documented in the existing
 CAPR chronology evidence audit and individual dossiers
 [@Campbell1959, §§ 193--204; @Hogg1992, §§ 5.62--5.68].
 
-**Late Old English syllabic reduction and apocope**:
+Late Old English syllabic reduction and apocope:
 High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
 late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
 English phonological history, when the syllabic structure of the language

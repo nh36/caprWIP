@@ -24,14 +24,14 @@ derived [`*fasten-`]{.iv lang=pgmc sort=fasten role=source_protoform} verbal lin
 more closely: they treat OE 'to fast' as originally a class-I weak verb that
 later acquired the stative meaning through lexical confusion [@RingeTaylor2014, 110].
 
-The selected input [[fástijaną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastijana role=selected_input} therefore represents the inherited class-I
-formation reflected in Old English, whereas the citation label [[fastēną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastena role=source_protoform}
+The selected input [fástijaną]{.iv .recon lang=pgmc sort=fastijana role=selected_input} ‘fast’ therefore represents the inherited class-I
+formation reflected in Old English, whereas the citation label [fastēną]{.iv .recon lang=pgmc sort=fastena role=source_protoform} ‘fast’
 belongs to the broader comparative presentation of the lexeme.
 
 ### Old English evidence
 
 Old English dictionaries record forms such as [`festan`]{.iv lang=oe sort=festan role=target_form} 'fast', alongside related
-[`fæstan`]{.iv lang=oe sort=faestan role=comparison_form} 'fast' / [`fǣstan`]{.iv lang=oe sort=faestan role=comparison_form} 'fast' spellings and meanings [@BosworthToller1898, 213]. The form selected here is **[`festan`]{.iv lang=oe sort=festan role=target_form}**, which fits the regular
+[`fæstan`]{.iv lang=oe sort=faestan role=comparison_form} 'fast' / [`fǣstan`]{.iv lang=oe sort=faestan role=comparison_form} 'fast' spellings and meanings [@BosworthToller1898, 213]. The form selected here is [`festan`]{.iv lang=oe sort=festan role=target_form}, which fits the regular
 class-I phonological development.
 
 The `æ`-forms remain relevant, but they do not control the entry. In the
@@ -41,7 +41,7 @@ form.
 
 ### Development to Old English
 
-From [[fástijaną]{.recon} ‘fast’]{.iv lang=pgmc sort=fastijana role=selected_input}, Anglo-Frisian brightening and subsequent i-umlaut produce the
+From [fástijaną]{.iv .recon lang=pgmc sort=fastijana role=selected_input} ‘fast’, Anglo-Frisian brightening and subsequent i-umlaut produce the
 fronted vowel seen in [`festan`]{.iv lang=oe sort=festan role=target_form} 'fast'. The later weak-tail reductions and loss of `j`
 after a heavy syllable complete the regular Old English outcome.
 

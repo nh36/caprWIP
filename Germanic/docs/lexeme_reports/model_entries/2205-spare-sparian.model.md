@@ -19,12 +19,12 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen keeps the inherited verb under class-III [`*sparēn-`]{.iv lang=pgmc sort=sparen}
-[@Kroonen2013, 465]. Orel similarly preserves [[sparēnan]{.recon} ‘spare’]{.iv lang=pgmc sort=sparenan} [@Orel2003, 362]. Ringe
-and Taylor, however, reconstruct [[sparai-]{.recon}]{.iv lang=preoe sort=sparai role=comparison_form} ~ [[sparja-]{.recon}]{.iv lang=preoe sort=sparja role=comparison_form} for the English branch
+[@Kroonen2013, 465]. Orel similarly preserves [sparēnan]{.iv .recon lang=pgmc sort=sparenan} ‘spare’ [@Orel2003, 362]. Ringe
+and Taylor, however, reconstruct [sparai-]{.iv .recon lang=preoe sort=sparai role=comparison_form} ~ [sparja-]{.iv .recon lang=preoe sort=sparja role=comparison_form} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
-The selected input [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparojana} therefore represents the refashioned class-II
+The selected input [spárōjaną]{.iv .recon lang=pgmc sort=sparojana} ‘spare’ therefore represents the refashioned class-II
 formation behind Old English [`sparian`]{.iv lang=oe sort=sparian} 'spare', while the citation reconstruction
-[[sparēną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparena} remains the inherited comparative headword.
+[sparēną]{.iv .recon lang=pgmc sort=sparena} ‘spare’ remains the inherited comparative headword.
 
 ### Old English evidence
 
@@ -39,12 +39,12 @@ formation, not alternative headwords of equal status.
 
 ### Development to Old English
 
-Once the class-II formation [[spárōjaną]{.recon} ‘spare’]{.iv lang=pgmc sort=sparojana} is chosen, the remaining development is
+Once the class-II formation [spárōjaną]{.iv .recon lang=pgmc sort=sparojana} ‘spare’ is chosen, the remaining development is
 regular. The documented trace shows brightening, restoration of `a` before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
 reduction, and contraction to [`sparian`]{.iv lang=oe sort=sparian} 'spare'. By contrast, Brunner's rule against
 further apocope of final `-e` explains why Ritual [`spær`]{.iv lang=oe sort=spaer} 'spare' cannot be the regular
-continuation of inherited [[spárē]{.recon} ‘spare’]{.iv lang=preoe sort=spare role=comparison_form} [@SieversBrunner1965, §150].
+continuation of inherited [spárē]{.iv .recon lang=preoe sort=spare role=comparison_form} ‘spare’ [@SieversBrunner1965, §150].
 
 ### Formation comparison
 

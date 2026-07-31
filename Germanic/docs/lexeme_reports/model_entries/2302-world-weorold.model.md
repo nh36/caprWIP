@@ -25,7 +25,7 @@ reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered f
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold` 'world'
 [@KlugeSeebold2011, 981].
 
-The selected input [[wír-àldu]{.recon} ‘world’]{.iv lang=pgmc sort=wiraldu role=selected_input} therefore combines the older `*wir-` vowel of the comparative headword with
+The selected input [wír-àldu]{.iv .recon lang=pgmc sort=wiraldu role=selected_input} ‘world’ therefore combines the older `*wir-` vowel of the comparative headword with
 the early shift of the compound into the ō-stems that Ringe and
 Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
@@ -52,7 +52,7 @@ back mutation yields [wéor-oldu]{.recon} ‘world'; final high-vowel apocope th
 `weorold` 'world'.
 
 This sequence matches the comparative background in Ringe and Taylor's
-[weraldiz]{.recon} 'world' > [weraldu]{.recon} 'world' > [weruld]{.recon} 'world' chain while preserving the `*wir-` notation of
+literature-stage chain for the word while preserving the `*wir-` notation of
 the comparative label [@RingeTaylor2014, 341]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
@@ -65,6 +65,6 @@ OE-facing stage chosen for the derivation.
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | [`*wíra-àldiz`]{.iv lang=pgmc sort=wiraaldiz role=source_protoform} | citation reconstruction / lexeme label | preserves the older `*wir-` tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | [[weraldiz]{.recon}]{.iv lang=preoe sort=weraldiz role=comparison_form} > [[weraldu]{.recon}]{.iv lang=preoe sort=weraldu role=comparison_form} > [[weruld]{.recon}]{.iv lang=preoe sort=weruld role=comparison_form} | Ringe-Taylor background chain to OE [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world' | explains the older comparative literature cited for the word |
+| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form} | Ringe-Taylor background chain to OE [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world' | explains the older comparative literature cited for the word |
 | Old English-facing input | [`*wír-àldu`]{.iv lang=pgmc sort=wiraldu role=selected_input} | compact-trace output: [`weorold`]{.iv lang=oe sort=weorold role=regular_output} 'world' | exact match for the West Saxon form used here |
 | broader OE variant cluster | — | [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world', [`weoruld`]{.iv lang=oe sort=weoruld role=comparison_form} 'world', [`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', [`wiarald`]{.iv lang=oe sort=wiarald role=comparison_form} 'world', [`world`]{.iv lang=oe sort=world role=comparison_form} 'world' | real attested comparanda that remain outside that West Saxon line |

@@ -15,13 +15,13 @@ languages specifically.
 Changes in this chapter are not all equally pan-West-Germanic in scope. They
 may be grouped broadly as follows:
 
-**Northwest Germanic innovations** (shared by both North and West Germanic):
+Northwest Germanic innovations (shared by both North and West Germanic):
 innovations in the unstressed vowel system, certain final-syllable vowel changes,
 and selected consonant cluster simplifications. Changes labelled `NWGmc` in the
 CAPR rule names fall here, though rule prefixes are not always reliable guides to
 historical scope.
 
-**Proto-West-Germanic innovations** (shared within West Germanic but not in
+Proto-West-Germanic innovations (shared within West Germanic but not in
 North Germanic): the cluster of morphological and phonological changes that
 distinguish Old English, Old High German, Old Saxon, and Old Frisian from Old
 Norse. Changes labelled `PWGmc` in the CAPR rule names generally fall here.
@@ -64,12 +64,12 @@ the divergence.
 
 The literature uses several partly overlapping stage labels for this period:
 
-* **Northwest Germanic**: the node uniting North and West Germanic.
-* **Proto-West Germanic**: the node uniting only the West Germanic languages.
-* **North Sea Germanic** or **Ingvaeonic**: a proposed subgroup within West
+* Northwest Germanic: the node uniting North and West Germanic.
+* Proto-West Germanic: the node uniting only the West Germanic languages.
+* North Sea Germanic or Ingvaeonic: a proposed subgroup within West
   Germanic covering Old English, Old Frisian, and Old Saxon (and sometimes Old
   Low Franconian), sharing certain innovations over a broader area.
-* **Anglo-Frisian**: a narrower proposed subgroup linking only Old English
+* Anglo-Frisian: a narrower proposed subgroup linking only Old English
   and Old Frisian.
 
 These labels are not always used consistently across sources. Ringe and Taylor

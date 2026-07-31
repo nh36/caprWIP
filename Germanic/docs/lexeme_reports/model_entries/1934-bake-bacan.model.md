@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as [[bakanan]{.recon} 'bake']{.iv lang=pgmc sort=bakanan} and cites Old English [`bacan`]{.iv lang=oe sort=bacan} 'bake' beside Old High German `backan, bahhan` [@Orel2003]. Campbell gives [`bacan`]{.iv lang=oe sort=bacan} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [[bakan]{.recon} ‘bake’]{.iv lang=pwgmc sort=bakan role=comparison_form} to Old English [`bacan`]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014].
+Orel reconstructs the verb as [bakanan]{.iv .recon lang=pgmc sort=bakanan} 'bake' and cites Old English [`bacan`]{.iv lang=oe sort=bacan} 'bake' beside Old High German `backan, bahhan` [@Orel2003]. Campbell gives [`bacan`]{.iv lang=oe sort=bacan} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [bakan]{.iv .recon lang=pwgmc sort=bakan role=comparison_form} ‘bake’ to Old English [`bacan`]{.iv lang=oe sort=bacan} [@Campbell1959, 61; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -26,4 +26,4 @@ Bosworth-Toller and Clark Hall both record [`bacan`]{.iv lang=oe sort=bacan} 'ba
 
 ### Development to Old English
 
-From [[bákaną]{.recon} 'bake']{.iv lang=pgmc sort=bakana}, Anglo-Frisian brightening first gives [bækaną]{.recon} 'bake'. A-restoration then returns the stem vowel to `a` before single `k` plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [`bacan`]{.iv lang=oe sort=bacan} 'bake' [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [[bákaną]{.recon}]{.iv lang=pgmc sort=bakana} > [`bacan`]{.iv lang=oe sort=bacan}.
+From [bákaną]{.iv .recon lang=pgmc sort=bakana} 'bake', Anglo-Frisian brightening first gives [bækaną]{.recon} 'bake'. A-restoration then returns the stem vowel to `a` before single `k` plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [`bacan`]{.iv lang=oe sort=bacan} 'bake' [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [bákaną]{.iv .recon lang=pgmc sort=bakana} > [`bacan`]{.iv lang=oe sort=bacan}.

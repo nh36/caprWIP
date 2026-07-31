@@ -19,7 +19,7 @@ DERIVATION_CLASS: known_unmodelled
 ### Reconstruction and comparative evidence
 
 Orel gives the noun under [tappòn]{.recon} ‘tap’ and already connects it with Old English
-[`tæppa`]{.iv lang=oe sort=taeppa role=target_form} 'tap' [@Orel2003, 402]. The selected input [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input} is therefore the inherited noun itself;
+[`tæppa`]{.iv lang=oe sort=taeppa role=target_form} 'tap' [@Orel2003, 402]. The selected input [táppô]{.iv .recon lang=pgmc sort=tappo role=selected_input} ‘tap’ is therefore the inherited noun itself;
 the entry does not depend on a different lexeme-level proto or a different
 inherited noun cell.
 
@@ -32,7 +32,7 @@ form, not a reconstructed convenience spelling.
 
 ### Development to Old English
 
-From [[táppô]{.recon} ‘tap’]{.iv lang=pgmc sort=tappo role=selected_input}, the regular inherited noun path gives [`tappa`]{.iv lang=oe sort=tappa role=regular_output} 'tap'. The attested
+From [táppô]{.iv .recon lang=pgmc sort=tappo role=selected_input} ‘tap’, the regular inherited noun path gives [`tappa`]{.iv lang=oe sort=tappa role=regular_output} 'tap'. The attested
 target [`tæppa`]{.iv lang=oe sort=taeppa role=target_form} 'tap' therefore stands outside that regular phonological development.
 
 The mismatch is historically intelligible, but it is not solved here by a new

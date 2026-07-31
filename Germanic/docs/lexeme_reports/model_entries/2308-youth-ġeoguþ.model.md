@@ -20,8 +20,8 @@ DERIVATION_CLASS: early_analogy
 
 The wider etymological tradition reconstructs an earlier form of the word as
 [`*ju(w)unþi-`]{.iv lang=pgmc sort=juwunthi role=source_protoform}. The comparative label
-[[júgunθiz]{.recon} 'youth']{.iv lang=pgmc sort=jugunthiz role=source_protoform} already stands at a later Germanic stage with `g`, and the
-derivational input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugunth role=selected_input} is later again: it represents the form after final
+[júgunθiz]{.iv .recon lang=pgmc sort=jugunthiz role=source_protoform} 'youth' already stands at a later Germanic stage with `g`, and the
+derivational input [júgunθ]{.iv .recon lang=pgmc sort=jugunth role=selected_input} 'youth' is later again: it represents the form after final
 `-i` has been lost.
 
 Ringe and Taylor explicitly give the sequence
@@ -45,7 +45,7 @@ The decisive early step is the loss of final `-i` before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 `y`-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From the selected input [[júgunθ]{.recon} 'youth']{.iv lang=pgmc sort=jugunth role=selected_input}, the later development is regular: palatal
+From the selected input [júgunθ]{.iv .recon lang=pgmc sort=jugunth role=selected_input} 'youth', the later development is regular: palatal
 fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
 [jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
 [jéoguθ]{.recon} 'youth', which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves `u` after accented `u` in forms such

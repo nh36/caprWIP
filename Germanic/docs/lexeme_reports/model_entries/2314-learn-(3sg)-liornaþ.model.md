@@ -22,7 +22,7 @@ Ringe and Taylor give Old English [`liornian`]{.iv lang=oe sort=liornian role=co
 [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn' from a learn-family base of the
 `*lizn-` type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb
 as `*liznōn-` [@Kroonen2013, 380]. The selected input
-[[líznōθi]{.recon} 'learns']{.iv lang=pgmc sort=liznothi role=selected_input} is the finite 3sg cell
+[líznōθi]{.iv .recon lang=pgmc sort=liznothi role=selected_input} 'learns' is the finite 3sg cell
 of that family, not the citation form of the verb.
 
 For the ending, Campbell's class-II `-aþ (< -ōþi)` and Ringe and Taylor's

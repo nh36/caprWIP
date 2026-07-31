@@ -20,8 +20,8 @@ DERIVATION_CLASS: early_analogy
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, citing
 [nēþlō]{.recon} 'needle' ~ [nēdlō]{.recon} 'needle' > OE `nédl` 'needle' [@RingeTaylor2014, 329]. The
-form followed here, [[nḗðlō]{.recon} ‘needle’]{.iv lang=pgmc sort=nedlo role=selected_input}, is the voiced Verner-grade form used for the Old
-English comparison, while the citation form [[nḗθlō]{.recon} ‘needle’]{.iv lang=pgmc sort=nethlo role=source_protoform} remains the broader
+form followed here, [nḗðlō]{.iv .recon lang=pgmc sort=nedlo role=selected_input} ‘needle’, is the voiced Verner-grade form used for the Old
+English comparison, while the citation form [nḗθlō]{.iv .recon lang=pgmc sort=nethlo role=source_protoform} ‘needle’ remains the broader
 lexeme label.
 
 The development discussed here follows the Ringe-Taylor alternant framework.

@@ -18,19 +18,19 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs the Germanic numeral as **[`*þūsundī-`]{.iv lang=pgmc sort=thusundi role=source_protoform}** and cites Old
-English **[`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'** among its continuations [@Kroonen2013, 554]. The
-selected input **[[θūs-èndi]{.recon} ‘thousand’]{.iv lang=pgmc sort=thusendi role=selected_input}** is not the same claim. It is an OE-oriented
+Kroonen reconstructs the Germanic numeral as [`*þūsundī-`]{.iv lang=pgmc sort=thusundi role=source_protoform} and cites Old
+English [`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand' among its continuations [@Kroonen2013, 554]. The
+selected input [θūs-èndi]{.iv .recon lang=pgmc sort=thusendi role=selected_input} ‘thousand’ is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to `e` and the final
 high vowel already shortened for apocope.
 
 The chronology must explain why Old English shows
-**[`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand'** while related languages such as Old Saxon and Old High German keep
+[`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand' while related languages such as Old Saxon and Old High German keep
 `u` in the second syllable? [@Kroonen2013, 554].
 
 ### Old English evidence
 
-Old English **`þūsend` 'thousand'** is an ordinary citation form, not a selected oblique or
+Old English `þūsend` 'thousand' is an ordinary citation form, not a selected oblique or
 paradigm cell. Campbell treats it as a neuter noun with normal case forms
 [@Campbell1959, §689]. The problem lies in the internal history of the word, not
 in its lexical status.
@@ -53,8 +53,8 @@ arguing that Old English `e` in this weak position may simply write schwa and so
 need not prove a unique `ærende` 'message'-type analogy [@GermanicSlavicBaltic2025,
 §2.1.4].
 
-The selected transponent **[[θūs-èndi]{.recon} ‘thousand’]{.iv lang=pgmc sort=thusendi role=selected_input}** captures the OE-side state from which
-the documented trace reaches **[`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand'**.
+The selected transponent [θūs-èndi]{.iv .recon lang=pgmc sort=thusendi role=selected_input} ‘thousand’ captures the OE-side state from which
+the documented trace reaches [`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand'.
 
 ### Stage comparison
 

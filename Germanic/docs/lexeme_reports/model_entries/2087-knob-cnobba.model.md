@@ -35,7 +35,7 @@ Clark Hall preserves Old English evidence of the [`cnoppa`]{.iv lang=oe sort=cno
 [@ClarkHall1960, 79]. Those forms are genuine Old English evidence, but they
 belong to the voiceless branch of the family.
 
-The target **[cnobba]{.recon} ‘knob’** is a **reconstructed Old English form**, not a directly
+The target [cnobba]{.recon} ‘knob’ is a reconstructed Old English form, not a directly
 attested one. I use it for the voiced branch because attested [`cnoppa`]{.iv lang=oe sort=cnoppa role=comparison_form} 'knob' continues
 the voiceless branch and therefore represents a different prehistory.
 

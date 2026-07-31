@@ -20,7 +20,7 @@ DERIVATION_CLASS: known_unmodelled
 
 Kroonen places the lexeme in a heteroclitic family [fōr]{.recon} 'fire' ~ `*fun-` and explains
 the front-mutated West Germanic forms from an oblique form of the
-`*fu(w)eri` type [@Kroonen2013, 151]. The selected input [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input} therefore does not
+`*fu(w)eri` type [@Kroonen2013, 151]. The selected input [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input} 'fire' therefore does not
 function as an arbitrary substitute for the headword: it represents the
 specific inherited cell that supplies the `i` needed for i-umlaut.
 
@@ -29,8 +29,8 @@ The Old English target combines a regular inherited form
 
 ### Old English evidence
 
-Bosworth-Toller records **[`fyr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire'** as the noun 'fire' and also preserves oblique
-**[`fyre`]{.iv lang=oe sort=fyre role=target_form} 'fire'** in the Old English record [@BosworthToller1898, 288]. The first is the
+Bosworth-Toller records [`fyr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire' as the noun 'fire' and also preserves oblique
+[`fyre`]{.iv lang=oe sort=fyre role=target_form} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final `-e` within the
 paradigm.
@@ -41,8 +41,8 @@ morphological remodeling.
 
 ### Development to Old English
 
-From [[fūri]{.recon} 'fire']{.iv lang=pgmc sort=furi role=selected_input}, i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
-loss of the final high vowel after a heavy syllable yields **[`fȳr`]{.iv lang=oe sort=fyr role=regular_output} 'fire'**
+From [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input} 'fire', i-umlaut changes `ū` to `ȳ` [@Hogg1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields [`fȳr`]{.iv lang=oe sort=fyr role=regular_output} 'fire'
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 
 [`fȳre`]{.iv lang=oe sort=fyre role=target_form} 'fire' is later than that inherited output. Its final `-e` belongs to

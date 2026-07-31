@@ -40,7 +40,7 @@ West Saxon citation forms are [`strewian`]{.iv lang=oe sort=strewian role=compar
 belong to the remodelled class-II branch [@RingeTaylor2014, §6.1 n. 27;
 @Campbell1959, §753.7].
 
-The target [[strīeġan]{.recon} 'strew']{.iv lang=oe sort=striegan role=target_form} is therefore a reconstructed Old English form, not
+The target [strīeġan]{.iv .recon lang=oe sort=striegan role=target_form} 'strew' is therefore a reconstructed Old English form, not
 an attested manuscript lemma. It represents the inferred West Saxon reflex of
 the inherited class-I branch.
 
@@ -61,5 +61,5 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
 | [`strēgan`]{.iv lang=oe sort=stregan role=comparison_form} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
-| [[strīeġan]{.recon} 'strew']{.iv lang=oe sort=striegan role=target_form} | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
+| [strīeġan]{.iv .recon lang=oe sort=striegan role=target_form} 'strew' | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
 | [`strewian`]{.iv lang=oe sort=strewian role=comparison_form} / [`streowian`]{.iv lang=oe sort=streowian role=comparison_form} 'strew' / [`strēawian`]{.iv lang=oe sort=streawian role=comparison_form} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |

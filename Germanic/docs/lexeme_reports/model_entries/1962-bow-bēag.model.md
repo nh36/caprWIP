@@ -18,10 +18,10 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited verb belongs to the class-II strong-verb family [[béuganą]{.recon} ‘bow’]{.iv lang=pgmc sort=beugana}
+The inherited verb belongs to the class-II strong-verb family [béuganą]{.iv .recon lang=pgmc sort=beugana} ‘bow’
 [@RingeTaylor2014, 55]. Within that paradigm, however, the infinitive and the
-singular preterite continue different ablaut grades. The selected input [[báug]{.recon} ‘bow’]{.iv lang=pgmc sort=baug}
-is the singular preterite cell, whereas the citation form [[béuganą]{.recon}]{.iv lang=pgmc sort=beugana} is the
+singular preterite continue different ablaut grades. The selected input [báug]{.iv .recon lang=pgmc sort=baug} ‘bow’
+is the singular preterite cell, whereas the citation form [béuganą]{.iv .recon lang=pgmc sort=beugana} is the
 infinitive.
 
 Campbell's account of Old English class-II strong verbs treats the singular
@@ -39,12 +39,12 @@ therefore an attested Old English verbal form, not a reconstructed substitute
 for the infinitive.
 
 The ordinary dictionary headword remains [`būgan`]{.iv lang=oe sort=bugan} 'to bow', but the relevant comparison
-form for this entry is the singular preterite **[`bēag`]{.iv lang=oe sort=beag} 'bow, ring'** 'bowed'. That is the paradigm
+form for this entry is the singular preterite [`bēag`]{.iv lang=oe sort=beag} 'bow, ring' 'bowed'. That is the paradigm
 cell in which the inherited `*au` grade is preserved most directly.
 
 ### Development to Old English
 
-From [[báug]{.recon} ‘bow’]{.iv lang=pgmc sort=baug}, Anglo-Frisian fronting and the later leveling of the diphthong
+From [báug]{.iv .recon lang=pgmc sort=baug} ‘bow’, Anglo-Frisian fronting and the later leveling of the diphthong
 produce [`bēag`]{.iv lang=oe sort=beag} 'bow, ring' [@Campbell1959, 53]. No special analogical repair is needed for that
 cell. The form is the regular Old English outcome of the singular-preterite
 grade.

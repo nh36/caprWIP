@@ -24,7 +24,7 @@ Taylor place the Germanic verb in the same class, comparing West Germanic
 continuants such as Old Frisian [`makia`]{.iv lang=ofris sort=makia role=comparison_form} 'make', Old Saxon [`makon`]{.iv lang=os sort=makon role=comparison_form} 'make', and Old High German
 [`mahhon`]{.iv lang=ohg sort=mahhon role=comparison_form} 'make' [@RingeTaylor2014, 191].
 
-The selected input [[mákô]{.recon} ‘make (iptv.2sg)’]{.iv lang=pgmc sort=mako role=selected_input} is not the citation form of the lexeme but a finite
+The selected input [mákô]{.iv .recon lang=pgmc sort=mako role=selected_input} ‘make (iptv.2sg)’ is not the citation form of the lexeme but a finite
 paradigm cell. Ringe and Taylor give the class-II weak imperative singular as
 `-a < *-ō`, which makes this cell the relevant comparison point for the Old
 English form treated here [@RingeTaylor2014, 314].

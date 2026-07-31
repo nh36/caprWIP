@@ -26,7 +26,7 @@ cognate set but do not by themselves explain the Old English suffix of
 For Old English, the relevant point is the suffix history. Campbell's account
 of OE `-ig`, including forms such as `hunig`, supports an analysis in which the
 `-iġ` of `wīþiġ` 'withy' continues a derivational `*-ag-` sequence rather than a heavy
-ja-stem `*-ij-` [@Campbell1959, §§275, 376]. The selected input [[wḯθagą]{.recon} ‘withy’]{.iv lang=pgmc sort=withaga role=selected_input} is
+ja-stem `*-ij-` [@Campbell1959, §§275, 376]. The selected input [wḯθagą]{.iv .recon lang=pgmc sort=withaga role=selected_input} ‘withy’ is
 thus a formation choice rather than a mere respelling of the comparative
 headword.
 
@@ -38,12 +38,12 @@ explicitly.
 
 The relevant comparison form is therefore not a reconstructed dictionary
 convenience but an established Old English noun. What requires explanation is
-why the selected Proto-Germanic input is [[wḯθagą]{.recon} ‘withy’]{.iv lang=pgmc sort=withaga role=selected_input} rather than a comparative
+why the selected Proto-Germanic input is [wḯθagą]{.iv .recon lang=pgmc sort=withaga role=selected_input} ‘withy’ rather than a comparative
 headword of the [wīþja]{.recon} 'withy' type.
 
 ### Development to Old English
 
-From [[wḯθagą]{.recon} ‘withy’]{.iv lang=pgmc sort=withaga role=selected_input}, Anglo-Frisian brightening gives a fronted vowel in the suffixal
+From [wḯθagą]{.iv .recon lang=pgmc sort=withaga role=selected_input} ‘withy’, Anglo-Frisian brightening gives a fronted vowel in the suffixal
 syllable, and, on the Campbell analysis adopted here, the later Old English
 development of `*-ag-` yields `-iġ` [@Campbell1959, §§275, 376].
 Palatalization supplies the final `ġ`, and the full development reaches

@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 The citation reconstruction preserved in the header belongs to the lament-family
 verb seen in German [`weinen`]{.iv lang=german sort=weinen role=comparison_form} 'whine' and Old English [`wānian`]{.iv lang=oe sort=wanian role=comparison_form} 'wane'. Kroonen instead separates
 Old English [`hwīnan`]{.iv lang=oe sort=hwinan role=target_form} 'whine' under `*hwinan-` [@Kroonen2013, 267]. Orel likewise
-distinguishes strong [[xwinanan]{.recon} ‘whine’]{.iv lang=pgmc sort=xwinanan role=source_protoform} from weak [[wainōjanan]{.recon} ‘whine’]{.iv lang=pgmc sort=wainojanan role=source_protoform} [@Orel2003, 201]. Ringe and
+distinguishes strong [xwinanan]{.iv .recon lang=pgmc sort=xwinanan role=source_protoform} ‘whine’ from weak [wainōjanan]{.iv .recon lang=pgmc sort=wainojanan role=source_protoform} ‘whine’ [@Orel2003, 201]. Ringe and
 Taylor make the same split at the Northwest Germanic level, linking Old Norse
 [`hvina`]{.iv lang=on sort=hvina role=comparison_form} 'whine' and Old English [`hwinan`]{.iv lang=oe sort=hwinan role=comparison_form} 'whine' to the same strong verb
 [@RingeTaylor2014, 130].
@@ -29,7 +29,7 @@ Taylor make the same split at the Northwest Germanic level, linking Old Norse
 The two families also differ phonologically and morphologically. The lament
 family has initial `w-`, diphthongal `ai`, and weak-II morphology, whereas the
 verb behind Old English `hwīnan` 'whine' has initial `hw-/xw-`, long `ī`, and
-strong-verb inflection. The selected input [[xwḯnaną]{.recon} ‘whine’]{.iv lang=pgmc sort=xwinana role=selected_input} therefore represents a
+strong-verb inflection. The selected input [xwḯnaną]{.iv .recon lang=pgmc sort=xwinana role=selected_input} ‘whine’ therefore represents a
 competing comparative identification rather than a hidden cell of [wainōjaną]{.recon} ‘whine’.
 
 ### Old English evidence
@@ -44,7 +44,7 @@ an unattested verb into a reconstructed one.
 
 ### Development to Old English
 
-Once the strong-verb input [[xwḯnaną]{.recon} ‘whine’]{.iv lang=pgmc sort=xwinana role=selected_input} is selected, the path to Old English is
+Once the strong-verb input [xwḯnaną]{.iv .recon lang=pgmc sort=xwinana role=selected_input} ‘whine’ is selected, the path to Old English is
 straightforward. The compact trace shows heavy-syllable nasal apocope,
 secondary nasalization, and weak-tail reduction, after which the form surfaces
 as [`hwīnan`]{.iv lang=oe sort=hwinan role=target_form} 'whine'.

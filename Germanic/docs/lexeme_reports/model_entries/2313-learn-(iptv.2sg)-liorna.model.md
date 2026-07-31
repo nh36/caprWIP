@@ -24,7 +24,7 @@ Ringe and Taylor give Old English [`liornian`]{.iv lang=oe sort=liornian role=co
 as `*liznōn-` [@Kroonen2013, 380]. Fulk cites the same Old English family from
 `*liznō-` [@Fulk2018, 127].
 
-The selected input [[líznô]{.recon} 'learn (iptv.2sg)']{.iv lang=pgmc sort=lizno role=selected_input} is a finite imperative
+The selected input [líznô]{.iv .recon lang=pgmc sort=lizno role=selected_input} 'learn (iptv.2sg)' is a finite imperative
 cell of that family, not the citation form of the verb.
 
 ### Old English evidence

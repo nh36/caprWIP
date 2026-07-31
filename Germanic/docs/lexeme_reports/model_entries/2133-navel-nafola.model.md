@@ -22,7 +22,7 @@ Kroonen instead gives a nasal-suffix navel formation with Old English [`nafela`]
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
 derivational pathway [nabulō]{.recon} 'navel' > [næbula]{.recon} 'navel' > `nafola` 'navel' [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
-selected input [[nábulô]{.recon} ‘navel’]{.iv lang=pgmc sort=nabulo role=selected_input} is the pre-syncope form needed for the Old English
+selected input [nábulô]{.iv .recon lang=pgmc sort=nabulo role=selected_input} ‘navel’ is the pre-syncope form needed for the Old English
 development.
 
 For the Old English comparison, the crucial point is simply that the pre-OE form
@@ -33,7 +33,7 @@ still contains a medial vowel.
 Ringe and Taylor note the early West Saxon shift [`nafola`]{.iv lang=oe sort=nafola role=target_form} 'navel' > [`nafela`]{.iv lang=oe sort=nafela role=comparison_form} 'navel'
 [@RingeTaylor2014, 336]. Campbell likewise records `nafela` 'navel' beside Corpus
 [`nabula`]{.iv lang=oe sort=nabula role=comparison_form} 'navel' [@Campbell1959, §159]. The target of this entry is the nominative
-singular **[`nafola`]{.iv lang=oe sort=nafola role=target_form} 'navel'**, the form that matches the selected derivational pathway
+singular [`nafola`]{.iv lang=oe sort=nafola role=target_form} 'navel', the form that matches the selected derivational pathway
 most directly.
 
 [`nafela`]{.iv lang=oe sort=nafela role=comparison_form} 'navel' is the better-known later West Saxon spelling, while [`nabula`]{.iv lang=oe sort=nabula role=comparison_form} 'navel' preserves

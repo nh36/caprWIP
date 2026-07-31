@@ -179,6 +179,12 @@ def strip_references(text: str) -> str:
     return text.split(marker, 1)[0].rstrip() if marker in text else text.rstrip()
 
 
+def strip_lexical_terminal_references(text: str) -> str:
+    """Remove trailing \clearpage + ## References that terminates the standalone lexical volume."""
+    text = re.sub(r'\s*\\clearpage\s*\n\s*## References.*$', '', text, flags=re.DOTALL)
+    return text
+
+
 _HIST_CHAPTER_RE = re.compile(r"^# Chapter \d+\. (.+)$")
 
 
@@ -328,8 +334,9 @@ def build_book_markdown() -> str:
     commands_by_ref, line_commands, nonempty_languages = load_production_rows()
     intro = inject_line_commands(INTRO_PATH, line_commands)
     chronology = transform_chronology(inject_line_commands(CHRONOLOGY_PATH, line_commands))
+    lexical_text = annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8"))
     lexical = transform_lexical(
-        annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8")),
+        strip_lexical_terminal_references(lexical_text),
         commands_by_ref,
     )
     index_parts = [r"\printindex[iv]"]

@@ -26,7 +26,7 @@ Bright lists [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show
 
 ### Development to Old English
 
-From [[skáwōjaną]{.recon} 'show']{.iv lang=pgmc sort=skawojana role=selected_input}, the inherited `aw` sequence before a following vowel develops into the `ēaw` diphthong, and `*ō` survives between `*w` and `*j` in the Class II suffix. The development therefore runs regularly to [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show', without the direct `aw+j` problem seen in other verb types [@Campbell1959; @Orel2003].
+From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input} 'show', the inherited `aw` sequence before a following vowel develops into the `ēaw` diphthong, and `*ō` survives between `*w` and `*j` in the Class II suffix. The development therefore runs regularly to [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show', without the direct `aw+j` problem seen in other verb types [@Campbell1959; @Orel2003].
 
 ### Form note
 

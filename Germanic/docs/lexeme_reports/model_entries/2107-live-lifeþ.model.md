@@ -24,7 +24,7 @@ Taylor show that the paradigm also contained a separate 3sg present stem,
 continued in late Northumbrian [`lifed`]{.iv lang=oe sort=lifed role=comparison_form} 'lives', which they treat as an archaism
 [@RingeTaylor2014, 364].
 
-The selected input [[líbēθi]{.recon} ‘live’]{.iv lang=pgmc sort=libethi role=selected_input} therefore represents a finite present cell rather
+The selected input [líbēθi]{.iv .recon lang=pgmc sort=libethi role=selected_input} ‘live’ therefore represents a finite present cell rather
 than the citation infinitive. The later lemma tradition also includes remodeled
 forms such as [`lifian`]{.iv lang=oe sort=lifian role=comparison_form} 'live'.
 
@@ -33,7 +33,7 @@ forms such as [`lifian`]{.iv lang=oe sort=lifian role=comparison_form} 'live'.
 The ordinary lemma tradition centers on [`libban`]{.iv lang=oe sort=libban role=comparison_form} 'live' and, in later remodeling,
 [`lifian`]{.iv lang=oe sort=lifian role=comparison_form} 'live'. For this entry, however, the relevant comparison form is the archaic
 3sg present attested as [`lifed`]{.iv lang=oe sort=lifed role=comparison_form} 'lives', here
-normalized as **[`lifeþ`]{.iv lang=oe sort=lifeth role=target_form}** 'lives' [@RingeTaylor2014, 364; @Campbell1959, §762].
+normalized as [`lifeþ`]{.iv lang=oe sort=lifeth role=target_form} 'lives' [@RingeTaylor2014, 364; @Campbell1959, §762].
 
 The target is thus a normalized finite form, not the ordinary dictionary lemma.
 It preserves the older present-stem history more clearly than the remodeled
@@ -41,7 +41,7 @@ lemma tradition does.
 
 ### Development to Old English
 
-From [[líbēθi]{.recon} ‘live’]{.iv lang=pgmc sort=libethi role=selected_input}, regular reduction of the final syllable and later weakening of
+From [líbēθi]{.iv .recon lang=pgmc sort=libethi role=selected_input} ‘live’, regular reduction of the final syllable and later weakening of
 the unstressed vowel yield [`lifeþ`]{.iv lang=oe sort=lifeth role=regular_output} 'lives'. The attested spelling [`lifed`]{.iv lang=oe sort=lifed role=comparison_form} 'lives' belongs to the
 same finite form in late Northumbrian orthography [@Campbell1959, §762;
 @RingeTaylor2014, 364].

@@ -18,9 +18,9 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The inherited noun is the masculine a-stem [[xámaraz]{.recon} ‘hammer’]{.iv lang=pgmc sort=xamaraz role=source_protoform}, reflected in Old English
+The inherited noun is the masculine a-stem [xámaraz]{.iv .recon lang=pgmc sort=xamaraz role=source_protoform} ‘hammer’, reflected in Old English
 citation forms such as [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} 'hammer' and [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} 'hammer' [@Kroonen2013, 206; @Orel2003, 197;
-@ClarkHall1960, 160]. The selected input [[xámaras]{.recon} ‘hammer’]{.iv lang=pgmc sort=xamaras role=selected_input} is the genitive singular of that
+@ClarkHall1960, 160]. The selected input [xámaras]{.iv .recon lang=pgmc sort=xamaras role=selected_input} ‘hammer’ is the genitive singular of that
 same noun rather than a different lexeme.
 
 The citation tradition is already mixed in its unstressed vowel, while the
@@ -29,7 +29,7 @@ This is a cell choice within one paradigm, not a change of stem class.
 
 ### Old English evidence
 
-Bosworth-Toller directly records **[`hameres`]{.iv lang=oe sort=hameres role=target_form} 'hammer'** 'hammer' in an Old English genitival
+Bosworth-Toller directly records [`hameres`]{.iv lang=oe sort=hameres role=target_form} 'hammer' in an Old English genitival
 phrase [@BosworthToller1898, 78]. Clark Hall preserves the simplex headword as
 [`hamer`]{.iv lang=oe sort=hamer role=comparison_form} 'hammer' / [`hamor`]{.iv lang=oe sort=hamor role=comparison_form} 'hammer' [@ClarkHall1960, 160].
 
@@ -39,7 +39,7 @@ relevant comparison form here is the attested genitive singular [`hameres`]{.iv 
 
 ### Development to Old English
 
-From [[xámaras]{.recon} ‘hammer’]{.iv lang=pgmc sort=xamaras role=selected_input}, Anglo-Frisian brightening and the subsequent merger of
+From [xámaras]{.iv .recon lang=pgmc sort=xamaras role=selected_input} ‘hammer’, Anglo-Frisian brightening and the subsequent merger of
 unstressed `æ` with `e` yield [`hameres`]{.iv lang=oe sort=hameres role=target_form} 'hammer'. The derivation of that oblique form is
 straightforward once the genitive singular cell is selected.
 

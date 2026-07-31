@@ -19,14 +19,14 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources align on an `e`-grade reconstruction for this noun.
-Ringe and Taylor cite [kneht]{.recon} ‘knight’, and Orel gives [[knextaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knextaz role=selected_input}
+Ringe and Taylor cite [kneht]{.recon} ‘knight’, and Orel gives [knextaz]{.iv .recon lang=pgmc sort=knextaz role=selected_input} ‘knight’
 [@RingeTaylor2014, 142; @Orel2003, 256]. Kluge-Seebold likewise points to
-`*knehta-` [@KlugeSeebold2011, 506]. The selected input [[knéxtaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knextaz role=selected_input} follows that
+`*knehta-` [@KlugeSeebold2011, 506]. The selected input [knéxtaz]{.iv .recon lang=pgmc sort=knextaz role=selected_input} ‘knight’ follows that
 comparative evidence.
 
-A competing citation reconstruction [[kníxtaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knixtaz role=source_protoform} remains possible as a label for
+A competing citation reconstruction [kníxtaz]{.iv .recon lang=pgmc sort=knixtaz role=source_protoform} ‘knight’ remains possible as a label for
 the word family, but it is not the reconstruction followed here. The Old
-English development discussed below is based on [[knéxtaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knextaz role=selected_input}.
+English development discussed below is based on [knéxtaz]{.iv .recon lang=pgmc sort=knextaz role=selected_input} ‘knight’.
 
 ### Old English evidence
 
@@ -40,7 +40,7 @@ OE comparator is needed here.
 
 ### Development to Old English
 
-From [[knéxtaz]{.recon} ‘knight’]{.iv lang=pgmc sort=knextaz role=selected_input}, the relevant Old English changes include breaking before the
+From [knéxtaz]{.iv .recon lang=pgmc sort=knextaz role=selected_input} ‘knight’, the relevant Old English changes include breaking before the
 velar cluster and then the later reduction that yields [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight'. Campbell later
 notes the early West-Saxon alternation [`cniht`]{.iv lang=oe sort=cniht role=target_form} 'knight' beside plural [`cneohtas`]{.iv lang=oe sort=cneohtas role=comparison_form} 'knights'
 [@Campbell1959, §305]. Sievers-Brunner gives the same contrast as `cniht ...

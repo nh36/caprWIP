@@ -18,14 +18,14 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-Kroonen reconstructs a heteroclitic noun **`*watar-~*watan-`** and states that
+Kroonen reconstructs a heteroclitic noun `*watar-~*watan-` and states that
 the Proto-Germanic material points to [watōr]{.recon} 'water' and [watenaz]{.recon} 'water'
 [@Kroonen2013, 616]. Ringe and Taylor likewise start from singular
 [wator]{.recon} 'water' before the Old English branch [@RingeTaylor2014, §3.1.4].
 
 The generalized comparative label is therefore broader than the singular
-form that actually corresponds to Old English **[`wæter`]{.iv lang=oe sort=waeter role=target_form} 'water'**. The relevant
-comparator is the inherited nominative-accusative singular [[wátōr]{.recon} 'water']{.iv lang=pgmc sort=wator role=selected_input}.
+form that actually corresponds to Old English [`wæter`]{.iv lang=oe sort=waeter role=target_form} 'water'. The relevant
+comparator is the inherited nominative-accusative singular [wátōr]{.iv .recon lang=pgmc sort=wator role=selected_input} 'water'.
 
 ### Old English evidence
 

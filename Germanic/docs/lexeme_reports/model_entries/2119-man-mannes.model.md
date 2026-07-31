@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 The lexeme-level reconstruction is not uniform. Kroonen cites `*mannan-`, and
-Orel has [mannz]{.recon} ‘man’ [@Kroonen2013, 354; @Orel2003, 299]. The selected input [[mánnas]{.recon} ‘man’]{.iv lang=pgmc sort=mannas role=selected_input}
+Orel has [mannz]{.recon} ‘man’ [@Kroonen2013, 354; @Orel2003, 299]. The selected input [mánnas]{.iv .recon lang=pgmc sort=mannas role=selected_input} ‘man’
 belongs to a different level: it is the genitive-singular cell chosen for the
 Old English comparison.
 
@@ -36,7 +36,7 @@ beside inflected [`monnes`]{.iv lang=oe sort=monnes role=comparison_form} 'man's
 [@ClarkHall1960, 197].
 
 The relevant comparison form is therefore the attested genitive singular
-**[`mannes`]{.iv lang=oe sort=mannes role=target_form}** 'man's, not the citation lemma [`mann`]{.iv lang=oe sort=mann role=comparison_form} 'man'.
+[`mannes`]{.iv lang=oe sort=mannes role=target_form} 'man's, not the citation lemma [`mann`]{.iv lang=oe sort=mann role=comparison_form} 'man'.
 
 ### Development to Old English
 

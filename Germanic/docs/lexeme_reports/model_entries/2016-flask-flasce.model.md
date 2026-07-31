@@ -18,9 +18,9 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The wider Germanic family is often cited under a form such as [[flaskō]{.recon} ‘flask’]{.iv lang=pgmc sort=flasko role=source_protoform}, but
+The wider Germanic family is often cited under a form such as [flaskō]{.iv .recon lang=pgmc sort=flasko role=source_protoform} ‘flask’, but
 the evidence relevant for Old English points instead to a weak feminine
-formation [[fláskōn]{.recon} ‘flask’]{.iv lang=pgmc sort=flaskon role=selected_input} / [[flaskǭ]{.recon} ‘flask’]{.iv lang=pgmc sort=flasko role=source_protoform} [@Orel2003, 104]. That distinction is
+formation [fláskōn]{.iv .recon lang=pgmc sort=flaskon role=selected_input} ‘flask’ / [flaskǭ]{.iv .recon lang=pgmc sort=flasko role=source_protoform} ‘flask’ [@Orel2003, 104]. That distinction is
 crucial for the suffixal history of the noun.
 
 The selected input therefore differs from the citation label in stem class. Old
@@ -39,7 +39,7 @@ and ending are preserved as they are in the singular.
 
 ### Development to Old English
 
-From [[fláskōn]{.recon} ‘flask’]{.iv lang=pgmc sort=flaskon role=selected_input}, the weak feminine passes through the expected loss of `n` and
+From [fláskōn]{.iv .recon lang=pgmc sort=flaskon role=selected_input} ‘flask’, the weak feminine passes through the expected loss of `n` and
 the later Old English development of the unstressed ending, reaching [`flasce`]{.iv lang=oe sort=flasce role=target_form} 'flask'.
 Campbell cites restored `a` in exactly this environment, including [`flasce`]{.iv lang=oe sort=flasce role=target_form} 'flask'
 after inflected [`flascan`]{.iv lang=oe sort=flascan role=comparison_form} 'flask' [@Campbell1959, §158]. Once the weak feminine

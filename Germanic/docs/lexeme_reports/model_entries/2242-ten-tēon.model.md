@@ -30,12 +30,12 @@ Exact simplex `tēon` 'ten' is weaker as a directly cited headword than those sp
 
 ### Development to Old English
 
-From **[téxun]{.recon} ‘ten’**, lowering of medial unstressed `u` gives **[téxon]{.recon} ‘ten’**,
-breaking gives **[téoxon]{.recon} ‘ten’**, loss of intervocalic `h/x` yields **[téoon]{.recon} ‘ten’**,
-and contraction produces **[tḗon]{.recon} 'ten'**, written **`tēon` 'ten'**. This is the regular
+From [téxun]{.recon} ‘ten’, lowering of medial unstressed `u` gives [téxon]{.recon} ‘ten’,
+breaking gives [téoxon]{.recon} ‘ten’, loss of intervocalic `h/x` yields [téoon]{.recon} ‘ten’,
+and contraction produces [tḗon]{.recon} 'ten', written `tēon` 'ten'. This is the regular
 bare-cardinal path.
 
-The umlauted forms **`tien` / `tīen` 'ten'** belong to a different branch, created when
+The umlauted forms `tien` / `tīen` 'ten' belong to a different branch, created when
 the numeral was levelled from inflected forms with a front-vocalic trigger
 [@Fulk2018, §10.2; @SieversBrunner1965, §129 Anm. 6].
 

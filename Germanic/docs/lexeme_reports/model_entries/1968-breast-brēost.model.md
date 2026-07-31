@@ -24,8 +24,8 @@ English [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast' belongs t
 Norse [`brjóst`]{.iv lang=on sort=brjost role=comparison_form} 'breast' and Old Saxon [`briost`]{.iv lang=os sort=briost role=comparison_form} 'breast' [@Kroonen2013, 114; @Orel2003, 95;
 @RingeTaylor2014, 43].
 
-The selected input [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input} therefore differs from the citation label
-[[brústz]{.recon} ‘breast’]{.iv lang=pgmc sort=brustz role=source_protoform} because Old English reflects the thematic branch rather than the root
+The selected input [bréustą]{.iv .recon lang=pgmc sort=breusta role=selected_input} ‘breast’ therefore differs from the citation label
+[brústz]{.iv .recon lang=pgmc sort=brustz role=source_protoform} ‘breast’ because Old English reflects the thematic branch rather than the root
 noun. The morphological choice comes before the Old English sound changes
 themselves.
 
@@ -41,7 +41,7 @@ comparison form is therefore the thematic Old English noun [`brēost`]{.iv lang=
 
 ### Development to Old English
 
-From [[bréustą]{.recon} ‘breast’]{.iv lang=pgmc sort=breusta role=selected_input}, the regular Old English development gives [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast', with the
+From [bréustą]{.iv .recon lang=pgmc sort=breusta role=selected_input} ‘breast’, the regular Old English development gives [`brēost`]{.iv lang=oe sort=breost role=target_form} 'breast', with the
 expected `eu > ēo` vowel history [@Campbell1959, §115]. No special repair is needed
 once the correct thematic formation is chosen.
 

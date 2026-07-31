@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Seebold gives Old English [`spann`]{.iv lang=oe sort=spann role=comparison_form} 'span' under this noun family [@Seebold1970, 450].
-The form followed here, [[spánnai]{.recon} ‘span’]{.iv lang=pgmc sort=spannai role=selected_input}, is therefore not a rival headword, but the
+The form followed here, [spánnai]{.iv .recon lang=pgmc sort=spannai role=selected_input} ‘span’, is therefore not a rival headword, but the
 specific dative singular form compared on the model of the feminine ō-stem
 paradigm [@SieversBrunner1965, §252; @SieversBrunner1965, §255.2].
 
@@ -32,9 +32,9 @@ dative singular form compared here rather than as a dictionary headword.
 
 ### Development to Old English
 
-Citation [[spannō]{.recon} ‘span’]{.iv lang=pgmc sort=spanno role=source_protoform} yields [`span`]{.iv lang=oe sort=span role=regular_output} 'span'. The oblique cell [[spánnai]{.recon} ‘span’]{.iv lang=pgmc sort=spannai role=selected_input} therefore
+Citation [spannō]{.iv .recon lang=pgmc sort=spanno role=source_protoform} ‘span’ yields [`span`]{.iv lang=oe sort=span role=regular_output} 'span'. The oblique cell [spánnai]{.iv .recon lang=pgmc sort=spannai role=selected_input} ‘span’ therefore
 supplies the conservative comparison form: it preserves the medial geminate and
-yields [`spanne`]{.iv lang=oe sort=spanne role=target_form} 'span', while citation [[spannō]{.recon}]{.iv lang=pgmc sort=spanno role=source_protoform} gives the nominative background form.
+yields [`spanne`]{.iv lang=oe sort=spanne role=target_form} 'span', while citation [spannō]{.iv .recon lang=pgmc sort=spanno role=source_protoform} gives the nominative background form.
 
 ### Paradigm comparison
 

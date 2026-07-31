@@ -24,9 +24,9 @@ with nominative [hnekkō]{.recon} ‘neck’, genitive [hnukkaz]{.recon} ‘neck
 [@Kroonen2011, 167]. Kluge-Seebold likewise identifies `ae. hnecca` as an ablaut
 partner of the a-grade `Nacken` family [@KlugeSeebold2011, 347].
 
-A competing comparative label [[xnákkaz]{.recon} ‘neck’]{.iv lang=pgmc sort=xnakkaz role=source_protoform} belongs to the wider family, and Orel
+A competing comparative label [xnákkaz]{.iv .recon lang=pgmc sort=xnakkaz role=source_protoform} ‘neck’ belongs to the wider family, and Orel
 also gives an a-grade headword line [@Orel2003, 218]. The selected input
-[[xnékkô]{.recon} ‘neck’]{.iv lang=pgmc sort=xnekko role=selected_input}, however, is the form that matches the Old English branch.
+[xnékkô]{.iv .recon lang=pgmc sort=xnekko role=selected_input} ‘neck’, however, is the form that matches the Old English branch.
 
 ### Old English evidence
 
@@ -40,7 +40,7 @@ a-grade seen in much of the continental material.
 
 ### Development to Old English
 
-From [[xnékkô]{.recon} ‘neck’]{.iv lang=pgmc sort=xnekko role=selected_input}, the derivation is straightforward. The trace shortens the final
+From [xnékkô]{.iv .recon lang=pgmc sort=xnekko role=selected_input} ‘neck’, the derivation is straightforward. The trace shortens the final
 long vowel to [xnékka]{.recon} ‘neck’, and Old English orthography gives [`hnecca`]{.iv lang=oe sort=hnecca role=target_form} 'neck'.
 
 The derivation depends on the earlier selection of the e-grade weak-noun form

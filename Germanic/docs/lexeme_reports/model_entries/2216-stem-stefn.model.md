@@ -78,8 +78,8 @@ comparatively; the FST work remains to be done.
 
 Old English `stefn`/`stemn` is a surface homonym for two etymologically unrelated words:
 
-1. **`stefn/stemn` 'voice, sound'**: from PGmc `*stebnō` (Ringe-Taylor, Orel); via `bn → fn` (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a **different row** from 2216.
-2. **`stefn/stefna/stofn/stemn` 'stem, trunk, prow'**: from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem/trunk' (Orel); via the pre-OE cluster change `mn → fn`. **This is row 2216.**
+1. `stefn/stemn` 'voice, sound': from PGmc `*stebnō` (Ringe-Taylor, Orel); via `bn → fn` (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a different row from 2216.
+2. `stefn/stefna/stofn/stemn` 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem/trunk' (Orel); via the pre-OE cluster change `mn → fn`. This is row 2216.
 
 The selected input `*stébnō` used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
 

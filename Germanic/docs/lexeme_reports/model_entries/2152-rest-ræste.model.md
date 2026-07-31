@@ -19,7 +19,7 @@ DERIVATION_CLASS: late_analogy
 ### Reconstruction and comparative evidence
 
 Kroonen treats the noun as a feminine ō-stem [`*rastō-`]{.iv lang=pgmc sort=rasto role=source_protoform}, continued by Old English
-[`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. The selected input [[rástōz]{.recon} ‘rest’]{.iv lang=pgmc sort=rastoz role=selected_input} therefore does not replace
+[`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. The selected input [rástōz]{.iv .recon lang=pgmc sort=rastoz role=selected_input} ‘rest’ therefore does not replace
 the lexeme-level headword. It identifies one oblique singular cell on the side of
 the paradigm that yields `ræste` 'rest'.
 

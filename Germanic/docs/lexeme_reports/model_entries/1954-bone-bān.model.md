@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen cites the noun as [`*baina-`]{.iv lang=pgmc sort=baina}, and Orel gives the same lexeme under [[bainan]{.recon} ‘bone’]{.iv lang=pgmc sort=bainan} [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [`bān`]{.iv lang=oe sort=ban} 'bone'.
+Kroonen cites the noun as [`*baina-`]{.iv lang=pgmc sort=baina}, and Orel gives the same lexeme under [bainan]{.iv .recon lang=pgmc sort=bainan} ‘bone’ [@Kroonen2013; @Orel2003]. Both are comparative headword conventions for the same neuter noun whose Old English reflex is [`bān`]{.iv lang=oe sort=ban} 'bone'.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ Clark Hall and Bosworth-Toller record [`bān`]{.iv lang=oe sort=ban} 'bone' as t
 
 ### Source note
 
-The comparative headwords [`*baina-`]{.iv lang=pgmc sort=baina} and [[bainan]{.recon} ‘bone’]{.iv lang=pgmc sort=bainan} provide lexeme background. The relevant comparison form here is the nominative-accusative singular [[báiną]{.recon} ‘bone’]{.iv lang=pgmc sort=baina}.
+The comparative headwords [`*baina-`]{.iv lang=pgmc sort=baina} and [bainan]{.iv .recon lang=pgmc sort=bainan} ‘bone’ provide lexeme background. The relevant comparison form here is the nominative-accusative singular [báiną]{.iv .recon lang=pgmc sort=baina} ‘bone’.
 
 ### Development to Old English
 

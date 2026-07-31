@@ -16,22 +16,22 @@ concept. That choice requires an explicit qualification.
 The scholarly literature uses several overlapping terms for this developmental
 period:
 
-* **North Sea Germanic** and **Ingvaeonic**: labels used by some scholars for a
+* North Sea Germanic and Ingvaeonic: labels used by some scholars for a
   proposed subgroup comprising Old English, Old Frisian, and Old Saxon (or more
   narrowly, Old English and Old Frisian only). The innovations associated with
   this label — especially the nasal spirant changes and certain vowel
   developments — are sometimes described as diffusion rather than shared
   inheritance [@Campbell1959, §§ 1--3].
-* **Anglo-Frisian**: a label used specifically for the Old English / Old Frisian
+* Anglo-Frisian: a label used specifically for the Old English / Old Frisian
   branch, or for innovations shared between the two languages. Its use presupposes
   a tighter relationship between English and Frisian than between either and
   Old Saxon.
-* **Proto-Anglo-Frisian** (PAF): the strongest interpretation, positing a discrete
+* Proto-Anglo-Frisian (PAF): the strongest interpretation, positing a discrete
   reconstructed common ancestor for Old English and Old Frisian specifically.
   This is the position of Ringe and Taylor, who reconstruct a PAF stage between
   Proto-West Germanic and Proto-Old-English [@RingeTaylor2014, pp. 54--68].
 
-**CAPR does not commit to a universally accepted discrete PAF node.** The chapter
+CAPR does not commit to a universally accepted discrete PAF node. The chapter
 title uses "Anglo-Frisian" because the key changes of this period — especially
 West Germanic rhotacism (SC003), word-final `*z` deletion (SC020), and
 Anglo-Frisian brightening (SC043) — are most prominently associated with that

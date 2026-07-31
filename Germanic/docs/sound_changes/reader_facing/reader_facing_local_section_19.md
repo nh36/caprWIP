@@ -132,13 +132,13 @@ languages specifically.
 Changes in this chapter are not all equally pan-West-Germanic in scope. They
 may be grouped broadly as follows:
 
-**Northwest Germanic innovations** (shared by both North and West Germanic):
+Northwest Germanic innovations (shared by both North and West Germanic):
 innovations in the unstressed vowel system, certain final-syllable vowel changes,
 and selected consonant cluster simplifications. Changes labelled `NWGmc` in the
 CAPR rule names fall here, though rule prefixes are not always reliable guides to
 historical scope.
 
-**Proto-West-Germanic innovations** (shared within West Germanic but not in
+Proto-West-Germanic innovations (shared within West Germanic but not in
 North Germanic): the cluster of morphological and phonological changes that
 distinguish Old English, Old High German, Old Saxon, and Old Frisian from Old
 Norse. Changes labelled `PWGmc` in the CAPR rule names generally fall here.
@@ -181,12 +181,12 @@ the divergence.
 
 The literature uses several partly overlapping stage labels for this period:
 
-* **Northwest Germanic**: the node uniting North and West Germanic.
-* **Proto-West Germanic**: the node uniting only the West Germanic languages.
-* **North Sea Germanic** or **Ingvaeonic**: a proposed subgroup within West
+* Northwest Germanic: the node uniting North and West Germanic.
+* Proto-West Germanic: the node uniting only the West Germanic languages.
+* North Sea Germanic or Ingvaeonic: a proposed subgroup within West
   Germanic covering Old English, Old Frisian, and Old Saxon (and sometimes Old
   Low Franconian), sharing certain innovations over a broader area.
-* **Anglo-Frisian**: a narrower proposed subgroup linking only Old English
+* Anglo-Frisian: a narrower proposed subgroup linking only Old English
   and Old Frisian.
 
 These labels are not always used consistently across sources. Ringe and Taylor
@@ -874,22 +874,22 @@ concept. That choice requires an explicit qualification.
 The scholarly literature uses several overlapping terms for this developmental
 period:
 
-* **North Sea Germanic** and **Ingvaeonic**: labels used by some scholars for a
+* North Sea Germanic and Ingvaeonic: labels used by some scholars for a
   proposed subgroup comprising Old English, Old Frisian, and Old Saxon (or more
   narrowly, Old English and Old Frisian only). The innovations associated with
   this label — especially the nasal spirant changes and certain vowel
   developments — are sometimes described as diffusion rather than shared
   inheritance [@Campbell1959, §§ 1--3].
-* **Anglo-Frisian**: a label used specifically for the Old English / Old Frisian
+* Anglo-Frisian: a label used specifically for the Old English / Old Frisian
   branch, or for innovations shared between the two languages. Its use presupposes
   a tighter relationship between English and Frisian than between either and
   Old Saxon.
-* **Proto-Anglo-Frisian** (PAF): the strongest interpretation, positing a discrete
+* Proto-Anglo-Frisian (PAF): the strongest interpretation, positing a discrete
   reconstructed common ancestor for Old English and Old Frisian specifically.
   This is the position of Ringe and Taylor, who reconstruct a PAF stage between
   Proto-West Germanic and Proto-Old-English [@RingeTaylor2014, pp. 54--68].
 
-**CAPR does not commit to a universally accepted discrete PAF node.** The chapter
+CAPR does not commit to a universally accepted discrete PAF node. The chapter
 title uses "Anglo-Frisian" because the key changes of this period — especially
 West Germanic rhotacism (SC003), word-final `*z` deletion (SC020), and
 Anglo-Frisian brightening (SC043) — are most prominently associated with that
@@ -1078,27 +1078,27 @@ pan-Old-English scope and which are specifically West Saxon or Anglian
 The changes in this chapter fall into several natural historical subgroups,
 though the boundaries between them are not always sharp:
 
-**Early Old English changes linked to the Anglo-Frisian inheritance**:
+Early Old English changes linked to the Anglo-Frisian inheritance:
 Changes that feed directly on, or are closely related to, the brightening of
 Chapter 3. The `*awj` glide formation (SC029), `*au` fronting (SC030), and
 the West Saxon diphthong chain (SC031–SC034) all operate on the vowel inventory
 shaped by Anglo-Frisian brightening. OE Breaking (SC044) and
 a-Restoration (SC046) similarly presuppose the fronted `*æ` input.
 
-**Old English consonantal changes**:
+Old English consonantal changes:
 Velar palatalization (SC052), palatalization of `*sk` (SC051), j-cluster
 coalescence (SC057), and related changes produce the characteristically
 Old English consonant phonemes. Hogg discusses these as OE consonant changes
 that are not broadly West Germanic [@Hogg1992, §§ 7.18--7.23].
 
-**Old English i-umlaut and its context**:
+Old English i-umlaut and its context:
 The i-umlaut (SC055) is one of the most productive changes in the Old English
 nominal and verbal morphology. Its relative chronology in relation to breaking,
 palatalization, and back-mutation is carefully documented in the existing
 CAPR chronology evidence audit and individual dossiers
 [@Campbell1959, §§ 193--204; @Hogg1992, §§ 5.62--5.68].
 
-**Late Old English syllabic reduction and apocope**:
+Late Old English syllabic reduction and apocope:
 High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
 late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
 English phonological history, when the syllabic structure of the language

@@ -637,6 +637,101 @@ def run_case_normalization_fixtures() -> None:
     assert_true(code == 0, "Mönch regression: Brunner citation without German translations must pass")
 
 
+def run_references_structure_check() -> None:
+    """Check the assembled book has exactly one # References heading and no ## References."""
+    text = ASSEMBLED.read_text(encoding="utf-8")
+    ref_headings = re.findall(r'^#{1,6}\s+References\s*$', text, re.MULTILINE)
+    assert_true(len(ref_headings) == 1, f"Expected exactly 1 References heading, found {len(ref_headings)}: {ref_headings}")
+    assert_true(ref_headings[0].startswith('# References'), f"References heading must be level 1, got: {ref_headings[0]!r}")
+    refs_div = text.count('{#refs}')
+    assert_true(refs_div == 1, f"Expected exactly 1 {{#refs}} div, found {refs_div}")
+    bad = re.findall(r'^#{2,}\s+References\s*$', text, re.MULTILINE)
+    assert_true(len(bad) == 0, f"Found nested References headings: {bad}")
+
+
+def run_references_negative_fixture() -> None:
+    """Reject text with two References headings or a ## References."""
+    fixture = (
+        "## Part VII. Unexplained exceptions\n\n"
+        "Some text.\n\n"
+        "\\clearpage\n\n"
+        "## References\n\n"
+        "# References\n\n"
+        "::: {#refs}\n"
+        ":::\n"
+    )
+    ref_headings = re.findall(r'^#{1,6}\s+References\s*$', fixture, re.MULTILINE)
+    assert_true(
+        len(ref_headings) > 1 or any(h.startswith('##') for h in ref_headings),
+        "Negative fixture should have been rejected but was not",
+    )
+
+
+def run_gloss_inside_span_check() -> None:
+    """Check that no gloss text appears inside .iv, .recon, or .lex spans."""
+    nested_recon_iv = re.compile(r'\[\[[^\]]+\]\{\.recon\}[^]]*\]\{[^}]*\.iv[^}]*\}')
+    gloss_fragment = r"(?:'[^']*'|‘[^’]*’)"
+    gloss_in_iv = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.iv[^}}]*\}}")
+    gloss_in_lex = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.lex[^}}]*\}}")
+    gloss_in_recon = re.compile(rf"\[[^\]]*{gloss_fragment}[^\]]*\]\{{[^}}]*\.recon[^}}]*\}}")
+
+    bad_cases = [
+        "[[rēac]{.recon} 'reek']{.iv lang=oe sort=reac}",
+        "[rēc 'reek']{.iv lang=oe sort=rec}",
+        "[rēc 'reek']{.lex}",
+        "[rēac 'reek']{.recon}",
+    ]
+    for case in bad_cases:
+        hit = (
+            nested_recon_iv.search(case)
+            or gloss_in_iv.search(case)
+            or gloss_in_lex.search(case)
+            or gloss_in_recon.search(case)
+        )
+        assert_true(hit is not None, f"Expected bad case to be detected: {case!r}")
+
+    good_cases = [
+        "[rēac]{.recon .iv lang=oe sort=reac} 'reek'",
+        "[rēc]{.iv lang=oe sort=rec} 'reek'",
+        "[rēc]{.lex} 'reek'",
+    ]
+    for case in good_cases:
+        hit = (
+            nested_recon_iv.search(case)
+            or gloss_in_iv.search(case)
+            or gloss_in_lex.search(case)
+            or gloss_in_recon.search(case)
+        )
+        assert_true(hit is None, f"Expected good case to pass but was rejected: {case!r}")
+
+    text = ASSEMBLED.read_text(encoding="utf-8")
+    for pattern, name in [
+        (nested_recon_iv, 'nested .recon inside .iv span'),
+        (gloss_in_iv, 'gloss inside .iv span'),
+        (gloss_in_lex, 'gloss inside .lex span'),
+        (gloss_in_recon, 'gloss inside .recon span'),
+    ]:
+        match = pattern.search(text)
+        offending = repr(match.group(0)) if match else ''
+        assert_true(match is None, f"Assembled book contains {name}: {offending}")
+
+
+def run_bold_prose_check() -> None:
+    """Check that bold (**...**) does not appear in running prose paragraphs."""
+    text = ASSEMBLED.read_text(encoding="utf-8")
+    issues = []
+    for i, line in enumerate(text.splitlines(), 1):
+        if '|' in line:
+            continue
+        if line.startswith('#'):
+            continue
+        if not line.strip() or line.strip().startswith('\\'):
+            continue
+        if '**' in line:
+            issues.append(f"line {i}: {line[:100]}")
+    assert_true(len(issues) == 0, "Bold found in prose in assembled book:\n" + "\n".join(issues[:5]))
+
+
 def run_known_entry_checks() -> None:
     night = NIGHT_PATH.read_text(encoding="utf-8")
     fowl = FOWL_PATH.read_text(encoding="utf-8")
@@ -1595,13 +1690,21 @@ def run_occurrence_gating_fixture() -> None:
         return str(tsv_path)
 
     def run_with_tsv(md: str, tsv_path: str) -> str:
-        env = {**os.environ, "CAPR_IV_PRINT_MAIN_TSV": tsv_path}
+        env = {
+            **os.environ,
+            "CAPR_IV_PRINT_MAIN_TSV": tsv_path,
+            "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(ROOT / "docs" / "book" / "index_verborum_languages.tsv"),
+        }
         with tempfile.TemporaryDirectory() as tmp2:
             md_path = Path(tmp2) / "fixture.md"
             md_path.write_text(md, encoding="utf-8")
             cmd = ["pandoc", str(md_path), "--from=markdown", "--to=latex",
                    "--lua-filter", str(INDEX_FILTER)]
-            return subprocess.run(cmd, capture_output=True, text=True, check=False, env=env).stdout
+            proc = subprocess.run(
+                cmd, capture_output=True, text=True, check=False, env=env, cwd=ROOT.parent
+            )
+            assert_true(proc.returncode == 0, f"Occurrence-gating pandoc run failed: {proc.stderr}")
+            return proc.stdout
 
     with tempfile.TemporaryDirectory() as tmp:
         # Round 1: only A in print_main → A's sort key present, B's absent
@@ -1854,6 +1957,10 @@ def main() -> int:
         run_fingerprint_lifecycle_fixtures()
         run_generation_freshness()
         run_index_fingerprint_checks()
+        run_references_structure_check()
+        run_references_negative_fixture()
+        run_gloss_inside_span_check()
+        run_bold_prose_check()
     except AssertionError as exc:
         print(f"Reader-facing semantic regression failure: {exc}", file=sys.stderr)
         return 2

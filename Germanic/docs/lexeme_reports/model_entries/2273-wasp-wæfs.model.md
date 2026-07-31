@@ -18,7 +18,7 @@ DERIVATION_CLASS: attested_variant
 
 ### Reconstruction and comparative evidence
 
-The Proto-Germanic form [[wábsaz]{.recon} ‘wasp’]{.iv lang=pgmc sort=wabsaz role=selected_input} reaches Old English without any special
+The Proto-Germanic form [wábsaz]{.iv .recon lang=pgmc sort=wabsaz role=selected_input} ‘wasp’ reaches Old English without any special
 change of stem or paradigm cell. The question in this entry is instead which
 attested Old English member of the variant set should serve as the comparison
 form.
@@ -43,7 +43,7 @@ and also the one that matches the regular development most closely.
 
 ### Development to Old English
 
-From [[wábsaz]{.recon} ‘wasp’]{.iv lang=pgmc sort=wabsaz role=selected_input}, the regular Old English path passes through loss of final `z`,
+From [wábsaz]{.iv .recon lang=pgmc sort=wabsaz role=selected_input} ‘wasp’, the regular Old English path passes through loss of final `z`,
 Anglo-Frisian fronting, and the allophonic development of `b` to a fricative
 before `s`, yielding [`wæfs`]{.iv lang=oe sort=waefs role=regular_output} 'wasp'.
 

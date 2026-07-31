@@ -18,7 +18,7 @@ DERIVATION_CLASS: unexplained_unmodelled
 
 ### Reconstruction and comparative evidence
 
-Kroonen and Orel both reconstruct the word with a geminate stop, [[bukkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=source_protoform}
+Kroonen and Orel both reconstruct the word with a geminate stop, [bukkaz]{.iv .recon lang=pgmc sort=bukkaz role=source_protoform} ‘buck’
 [@Kroonen2013, 121; @Orel2003, 61]. Orel also preserves parallel n-stem
 material behind Old English [`bucca`]{.iv lang=oe sort=bucca role=comparison_form} 'buck' [@Orel2003, 62]. The selected input
 therefore remains identical with the lexeme label: no alternative inherited
@@ -35,7 +35,7 @@ background from the same lexical family.
 
 ### Development to Old English
 
-From [[búkkaz]{.recon} ‘buck’]{.iv lang=pgmc sort=bukkaz role=selected_input}, the regular inherited path gives [`bocc`]{.iv lang=oe sort=bocc role=regular_output} 'buck'. That is the form
+From [búkkaz]{.iv .recon lang=pgmc sort=bukkaz role=selected_input} ‘buck’, the regular inherited path gives [`bocc`]{.iv lang=oe sort=bocc role=regular_output} 'buck'. That is the form
 expected under the ordinary lowering pattern in this environment. [`bucc`]{.iv lang=oe sort=bucc role=target_form} 'buck'
 therefore remains outside the deterministic phonology.
 

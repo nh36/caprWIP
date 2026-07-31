@@ -21,7 +21,7 @@ DERIVATION_CLASS: attested_variant
 Kroonen reconstructs the resin word as [kwedu-2]{.recon} ‘cud’ and gives Old English
 variants [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} 'cud', [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud', and [`c(w)udu`]{.iv lang=oe display=c(w)udu sort=cwudu role=comparison_form} 'cud' [@Kroonen2013, 355]. Orel likewise
 lists [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} under the cognate set [@Orel2003, 266]. The selected input
-[[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input}
+[kwéðuz]{.iv .recon lang=pgmc sort=kweduz role=selected_input} ‘cud’
 therefore represents the older e-grade, voiced-dental form behind the chosen
 variant [`cwedu`]{.iv lang=oe sort=cwedu role=target_form} 'cud'.
 
@@ -36,7 +36,7 @@ conservative variant within that set.
 
 ### Development to Old English
 
-From [[kwéðuz]{.recon} ‘cud’]{.iv lang=pgmc sort=kweduz role=selected_input}, the West Germanic voiced dental hardens in the expected way and
+From [kwéðuz]{.iv .recon lang=pgmc sort=kweduz role=selected_input} ‘cud’, the West Germanic voiced dental hardens in the expected way and
 the regular Old English development yields [`cwedu`]{.iv lang=oe sort=cwedu role=target_form} 'cud'. The other Old English
 spellings belong to the same lexical family, but reflect later leveling,
 back-umlaut, or further reduction rather than a need to replace the selected

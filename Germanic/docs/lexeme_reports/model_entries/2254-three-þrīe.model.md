@@ -20,12 +20,12 @@ DERIVATION_CLASS: attested_variant
 
 Kroonen cites the numeral under a broader stem-style reconstruction rather than
 under one Old English-ready paradigm cell [@Kroonen2013, 586]. The input
-**[[θréjez]{.recon} ‘three’]{.iv lang=pgmc sort=threjez role=selected_input}** is therefore best understood as the inherited masculine
+[θréjez]{.iv .recon lang=pgmc sort=threjez role=selected_input} ‘three’ is therefore best understood as the inherited masculine
 nominative-accusative singular.
 
 The Old English numeral has no uniform citation form across the paradigm. The
 masculine singular line must be
-kept apart from feminine-neuter **`þrēo`** 'three' and from later reduced spellings of
+kept apart from feminine-neuter `þrēo` 'three' and from later reduced spellings of
 the masculine form.
 
 ### Old English evidence

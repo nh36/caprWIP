@@ -1,9 +1,9 @@
 # Index verborum print audit
 
 - Internal production occurrences: 2235
-- Internal production unique forms: 1035
+- Internal production unique forms: 1125
 - Printed main occurrences: 2147
-- Printed main unique forms: 1025
+- Printed main unique forms: 1115
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -15,8 +15,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1128 | 443 |
-| Proto-Germanic | 938 | 520 |
+| Old English | 1128 | 444 |
+| Proto-Germanic | 938 | 609 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 5 | 4 |
 | Pre-Old English / prehistoric English | 8 | 7 |
@@ -63,7 +63,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1026
+- Unique printed entries: 1116
 - Print anomaly rows: 48
 - Hard print anomalies: 0
 
@@ -98,33 +98,33 @@
 | --- | --- | --- | ---: | --- |
 | pgmc | `*áinaz` | ainaz | 1 | selected_input |
 | pgmc | `*baina-` | baina | 2 | evidence_form |
-| pgmc | `*báiną` | baina | 3 | evidence_form; selected_input; source_protoform |
-| pgmc | `*bainan` | bainan | 2 | evidence_form |
-| pgmc | `*bákaną` | bakana | 3 | evidence_form; selected_input; source_protoform |
-| pgmc | `*bakanan` | bakanan | 1 | evidence_form |
+| pgmc | `*báiną` | baina | 2 | selected_input; source_protoform |
+| pgmc | `báiną` | baina | 1 | evidence_form |
+| pgmc | `bainan` | bainan | 2 | evidence_form |
+| pgmc | `*bákaną` | bakana | 2 | selected_input; source_protoform |
+| pgmc | `bákaną` | bakana | 1 | evidence_form |
+| pgmc | `bakanan` | bakanan | 1 | evidence_form |
 | pgmc | `*bálgiz` | balgiz | 1 | selected_input |
-| pgmc | `*bánną` | banna | 3 | source_protoform |
-| pgmc | `*bannan` | bannan | 1 | source_protoform |
-| pgmc | `*bánnas` | bannas | 5 | selected_input; source_protoform |
+| pgmc | `*bánną` | banna | 2 | source_protoform |
+| pgmc | `bánną` | banna | 1 | source_protoform |
+| pgmc | `bannan` | bannan | 1 | source_protoform |
+| pgmc | `*bánnas` | bannas | 3 | selected_input; source_protoform |
+| pgmc | `bánnas` | bannas | 2 | selected_input |
 | pgmc | `*bárdaz` | bardaz | 1 | selected_input |
 | pgmc | `*basja-` | basja | 1 | source_protoform |
 | pgmc | `*bástą` | basta | 1 | selected_input |
 | pgmc | `*báθą` | batha | 1 | selected_input |
-| pgmc | `*báug` | baug | 5 | evidence_form; selected_input; source_protoform |
-| pgmc | `*báugijaną` | baugijana | 2 | selected_input; source_protoform |
-| pgmc | `*bazja-` | bazja | 1 | source_protoform |
-| pgmc | `*bázją` | bazja | 3 | source_protoform |
-| pgmc | `*bázjas` | bazjas | 5 | selected_input; source_protoform |
-| pgmc | `*bébruz` | bebruz | 1 | selected_input |
+| pgmc | `*báug` | baug | 3 | evidence_form; selected_input; source_protoform |
+| pgmc | `báug` | baug | 2 | evidence_form |
 
 ## Unique printed entries: small language indexes (all)
 
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
-| pwgmc | `*bakan` | bakan | 1 | comparison_form |
-| pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
+| pwgmc | `bakan` | bakan | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
-| pwgmc | `*timbr` | timbr | 2 | comparison_form |
+| pwgmc | `skuldru` | skuldru | 1 | comparison_form |
+| pwgmc | `timbr` | timbr | 2 | comparison_form |
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |

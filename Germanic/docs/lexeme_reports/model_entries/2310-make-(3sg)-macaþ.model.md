@@ -25,7 +25,7 @@ Old English [macian]{.iv lang=oe sort=macian role=comparison_form} 'make' from
 PWGmc [makon]{.recon} 'make' through [mekojan]{.recon} 'make'
 [@RingeTaylor2014, 191].
 
-The selected input [[mákōθi]{.recon} 'makes']{.iv lang=pgmc sort=makothi role=selected_input} is therefore a finite 3sg cell of the
+The selected input [mákōθi]{.iv .recon lang=pgmc sort=makothi role=selected_input} 'makes' is therefore a finite 3sg cell of the
 same family, not the citation form of the verb.
 
 ### Old English evidence

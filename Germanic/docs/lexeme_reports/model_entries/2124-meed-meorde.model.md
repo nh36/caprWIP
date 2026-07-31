@@ -18,7 +18,7 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-The lexeme-level reconstruction is [[mizdō]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdo role=source_protoform}, but the selected input [[mízdai]{.recon} ‘meed’]{.iv lang=pgmc sort=mizdai role=selected_input}
+The lexeme-level reconstruction is [mizdō]{.iv .recon lang=pgmc sort=mizdo role=source_protoform} ‘meed’, but the selected input [mízdai]{.iv .recon lang=pgmc sort=mizdai role=selected_input} ‘meed’
 is a dative-singular cell rather than the citation form. The Old English
 evidence for the [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed, reward' side is oblique.
 
@@ -36,7 +36,7 @@ Lexicographers reconstruct a bare nominative [`meord`]{.iv lang=oe sort=meord ro
 West Saxon prose more commonly shows the competing doublet `mēd` 'meed'
 [@ClarkHall1960, 214; @BosworthToller1898, 647].
 
-The target of this entry is therefore the attested oblique **[`meorde`]{.iv lang=oe sort=meorde role=target_form}** 'meed', not the
+The target of this entry is therefore the attested oblique [`meorde`]{.iv lang=oe sort=meorde role=target_form} 'meed', not the
 reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed' and not the better-known West Saxon citation form
 `mēd` 'meed'.
 

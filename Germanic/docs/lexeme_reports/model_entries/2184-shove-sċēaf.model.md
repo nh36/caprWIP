@@ -21,7 +21,7 @@ DERIVATION_CLASS: late_analogy
 Kroonen reconstructs the strong verb as `*skeuban- ~ *skūban-` and cites Old
 English present forms [`scēofan`]{.iv lang=oe sort=sceofan role=comparison_form} 'shove', [`scūfan`]{.iv lang=oe sort=scufan role=comparison_form} 'shove' [@Kroonen2013, 444]. Those
 present-system forms belong to the same verb family, but the comparison here
-uses the singular preterite [[skáub]{.recon} ‘shove’]{.iv lang=pgmc sort=skaub role=selected_input}, not the infinitive.
+uses the singular preterite [skáub]{.iv .recon lang=pgmc sort=skaub role=selected_input} ‘shove’, not the infinitive.
 
 ### Old English evidence
 

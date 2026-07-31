@@ -19,8 +19,8 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The comparative sources are not uniform. Orel gives
-[[xwalaz]{.recon} 'whale']{.iv lang=pgmc sort=xwalaz role=source_protoform} and notes some mixed
-[[xwaliz]{.recon} 'whale']{.iv lang=pgmc sort=xwaliz role=comparison_form} evidence
+[xwalaz]{.iv .recon lang=pgmc sort=xwalaz role=source_protoform} 'whale' and notes some mixed
+[xwaliz]{.iv .recon lang=pgmc sort=xwaliz role=comparison_form} 'whale' evidence
 [@Orel2003, 197]. Kroonen instead cites
 [`*hwali-`]{.iv lang=pgmc sort=hwali role=comparison_form} [@Kroonen2013, 262].
 
