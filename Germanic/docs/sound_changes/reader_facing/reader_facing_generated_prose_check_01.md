@@ -13,7 +13,7 @@ _Generated from the introduction prose embedded in the active reader-facing buil
 1. The sequence begins with early West Germanic consonant and vowel changes and ends with Old English r-metathesis.
 2. Rhotacism, brightening, breaking, umlaut, and apocope alternate with narrowly conditioned changes whose relative order rests on particular witness words.
 3. The evidence ranges from broadly attested sound laws to lexical constraints that establish only one chronological boundary.
-4. The sequence follows the established rule numbering.
+4. SC numbers remain the established legacy identifiers. The Version 1 book presents the changes in historical chapter order, which differs from the computational cascade order for several rules.
 5. SC038, SC062, and SC084 mark technical or prosodic stages rather than sound changes; SC077 is unused.
 
 ## Issues

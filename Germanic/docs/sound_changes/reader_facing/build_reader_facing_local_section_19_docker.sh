@@ -17,7 +17,8 @@ python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_citations.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_foma_width.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_section_order.py \
-  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh \
+  --staging-map Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_generated_prose.py \
   --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_crossrefs.py \
@@ -33,7 +34,7 @@ root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_19.md"
 coverage_out = root / "reader_facing_manifest_coverage_07.md"
 chapter_files = [
-    "003-west-germanic-rhotacism.md",
+    # ── Chapter 2: Proto-Northwest Germanic → Proto-West Germanic ──────────
     "004-pwgmc-ai-monophthongization.md",
     "005-unstressed-a-raising-before-final-m.md",
     "006-early-i-apocope.md",
@@ -55,16 +56,19 @@ chapter_files = [
     "025-long-e-nasal-rounding.md",
     "026-027-nasal-spirant-changes.md",
     "028-preconsonantal-x-loss.md",
+    "041-final-bare-a-loss.md",
+    "042-surviving-bimoric-o-unrounding.md",
+    "049-050-b-allophony-and-sievers-law-syncope.md",
+    # ── Chapter 3: Proto-West Germanic → Anglo-Frisian ─────────────────────
+    "003-west-germanic-rhotacism.md",
+    "043-anglo-frisian-brightening.md",
+    # ── Chapter 4: Anglo-Frisian → Old English ─────────────────────────────
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",
     "039-040-medial-unstressed-vowel-changes.md",
-    "041-final-bare-a-loss.md",
-    "042-surviving-bimoric-o-unrounding.md",
-    "043-anglo-frisian-brightening.md",
     "044-045-breaking-and-velar-fricative-palatalization.md",
     "046-048-restoration-and-nasal-tail-changes.md",
-    "049-050-b-allophony-and-sievers-law-syncope.md",
     "051-sk-palatalization.md",
     "052-velar-palatalization.md",
     "053-054-pre-umlaut-bridge-and-w-loss.md",
@@ -92,22 +96,55 @@ rule_heading_re = re.compile(r"^##\s+(SC\d{3})\.\s+(.*?)\s+\(`([^`]+)`\)\s+\{#(r
 link_re = re.compile(r"\[([^\]]+)\]\((#rule-[^)]+)\)")
 long_rule_heading_threshold = 65
 
+STAGING_MAP_PATH = Path("Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv")
+CHAPTER_INTRO_ROOT = root
+
+# Chapter heading configuration: maps first filename of each chapter to
+# (chapter_number, title, intro_file_in_reader_facing_dir)
+CHAPTER_BOUNDARIES: dict[str, tuple[int, str, str]] = {
+    "004-pwgmc-ai-monophthongization.md": (
+        1,
+        "From Proto-Germanic to Proto-Northwest Germanic",
+        "chap1-pgmc-to-pnwgmc-intro.md",
+    ),
+    "003-west-germanic-rhotacism.md": (
+        3,
+        "From Proto-West Germanic to Anglo-Frisian",
+        "chap3-pwgmc-to-af-intro.md",
+    ),
+    "029-030-awj-glide-and-au-fronting.md": (
+        4,
+        "From Anglo-Frisian to Old English",
+        "chap4-af-to-oe-intro.md",
+    ),
+}
+# Chapter 2 boundary is injected after Chapter 1 standalone (no sound-change files)
+CHAPTER2_BEFORE_FILE = "004-pwgmc-ai-monophthongization.md"
+CHAPTER2_TITLE = "From Proto-Northwest Germanic to Proto-West Germanic"
+CHAPTER2_INTRO_FILE = "chap2-pnwgmc-to-pwgmc-intro.md"
+
 parts: list[str] = [
-    "# A sequence from early West Germanic consonant and vowel shifts to Old English r-metathesis",
+    "# The ordered sound-change sequence",
     "",
-    "## Introduction",
+    "## Scope and orientation",
     "",
-    "The sequence begins with early West Germanic consonant and vowel changes and ends with Old English r-metathesis.",
+    "The sequence begins with early West Germanic consonant and vowel changes"
+    " and ends with Old English r-metathesis.",
     "",
-    "Rhotacism, brightening, breaking, umlaut, and apocope alternate with narrowly conditioned changes whose relative order rests on particular witness words.",
+    "Rhotacism, brightening, breaking, umlaut, and apocope alternate with narrowly"
+    " conditioned changes whose relative order rests on particular witness words.",
     "",
-    "The evidence ranges from broadly attested sound laws to lexical constraints that establish only one chronological boundary.",
+    "The evidence ranges from broadly attested sound laws to lexical constraints"
+    " that establish only one chronological boundary.",
     "",
     "## Numbering note",
     "",
-    "The sequence follows the established rule numbering.",
+    "SC numbers remain the established legacy identifiers. The Version 1 book"
+    " presents the changes in historical chapter order, which differs from the"
+    " computational cascade order for several rules.",
     "",
-    "SC038, SC062, and SC084 mark technical or prosodic stages rather than sound changes; SC077 is unused.",
+    "SC038, SC062, and SC084 mark technical or prosodic stages rather than sound"
+    " changes; SC077 is unused.",
     "",
 ]
 
@@ -163,9 +200,42 @@ def wrap_long_rule_headings(text: str) -> str:
     return "\n".join(wrapped)
 
 
+def inject_chapter_block(chapter_num: int, title: str, intro_file: str) -> list[str]:
+    """Return markdown lines for a chapter heading and intro, or empty if intro file missing."""
+    block: list[str] = [
+        "",
+        r"\newpage",
+        "",
+        f"# Chapter {chapter_num}. {title}",
+        "",
+    ]
+    intro_path = CHAPTER_INTRO_ROOT / intro_file
+    if intro_path.exists():
+        intro_text = intro_path.read_text(encoding="utf-8").strip()
+        # Drop the top-level # heading from the intro file (already rendered as chapter title)
+        intro_lines = intro_text.splitlines()
+        if intro_lines and intro_lines[0].startswith("# "):
+            intro_lines = intro_lines[1:]
+        block.extend(intro_lines)
+        block.append("")
+    return block
+
+
+first_file_seen = False
 for idx, name in enumerate(chapter_files):
-    if idx:
+    # Inject chapter headings before the designated boundary files
+    if name == CHAPTER2_BEFORE_FILE:
+        # Chapter 1 standalone (no sound-change files, intro only)
+        if not first_file_seen:
+            parts.extend(inject_chapter_block(1, "From Proto-Germanic to Proto-Northwest Germanic", "chap1-pgmc-to-pnwgmc-intro.md"))
+        # Chapter 2 heading + intro
+        parts.extend(inject_chapter_block(2, CHAPTER2_TITLE, CHAPTER2_INTRO_FILE))
+    elif name in CHAPTER_BOUNDARIES and name != CHAPTER2_BEFORE_FILE:
+        chap_num, chap_title, intro_file = CHAPTER_BOUNDARIES[name]
+        parts.extend(inject_chapter_block(chap_num, chap_title, intro_file))
+    if first_file_seen or name == CHAPTER2_BEFORE_FILE:
         parts.extend(["", r"\newpage", ""])
+    first_file_seen = True
     chapter_text = resolve_links((root / name).read_text(encoding="utf-8").rstrip())
     parts.append(wrap_long_rule_headings(chapter_text))
 

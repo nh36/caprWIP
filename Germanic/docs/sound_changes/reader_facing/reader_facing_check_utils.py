@@ -55,9 +55,15 @@ def parse_chapter_files(build_script: Path) -> list[str]:
 
 def parse_intro_parts(build_script: Path) -> list[str]:
     parts = parse_python_list_assignment(build_script, "parts")
-    if "## Introduction" not in parts:
-        raise ValueError(f"Could not find ## Introduction marker in {build_script}")
-    start = parts.index("## Introduction") + 1
+    # Support both legacy "## Introduction" and current "## Scope and orientation" markers
+    marker = None
+    for candidate in ("## Scope and orientation", "## Introduction"):
+        if candidate in parts:
+            marker = candidate
+            break
+    if marker is None:
+        raise ValueError(f"Could not find ## Introduction or ## Scope and orientation marker in {build_script}")
+    start = parts.index(marker) + 1
     return [part for part in parts[start:] if part.strip() and not part.startswith("#")]
 
 

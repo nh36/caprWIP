@@ -185,7 +185,13 @@ def iter_target_files(include_all: bool) -> list[Path]:
     files = sorted(ROOT.glob("*.md"))
     if include_all:
         return files
-    return [path for path in files if path.name not in DEFAULT_SKIP]
+    return [
+        path for path in files
+        if path.name not in DEFAULT_SKIP
+        # Chapter introduction files are not individual sound-change sections;
+        # skip them from the sound-change style checks.
+        and not path.name.startswith("chap") and not path.name.endswith("-intro.md")
+    ]
 
 
 def bare_star_matches(line: str) -> list[str]:

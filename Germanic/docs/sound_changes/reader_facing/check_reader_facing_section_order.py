@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 INVENTORY_PATH = ROOT.parent / "sound_change_inventory.tsv"
+DEFAULT_STAGING_MAP = ROOT.parent / "sound_change_historical_staging_map.tsv"
 
 
 def load_inventory_order() -> dict[str, int]:
@@ -20,6 +21,25 @@ def load_inventory_order() -> dict[str, int]:
             for row in rows
             if (row.get("change_id") or "").strip() and (row.get("current_order") or "").strip()
         }
+
+
+def load_staging_order(staging_map: Path) -> dict[str, tuple[int, int]]:
+    """Return {reader_facing_file: (v1_chapter, v1_reader_position)} from the staging map."""
+    result: dict[str, tuple[int, int]] = {}
+    with staging_map.open(encoding="utf-8") as handle:
+        for line in handle:
+            if line.startswith("#"):
+                continue
+            break  # reached header
+        handle.seek(0)
+        rows = csv.DictReader((l for l in handle if not l.startswith("#")), delimiter="\t")
+        for row in rows:
+            fname = (row.get("reader_facing_file") or "").strip()
+            chap = (row.get("v1_chapter") or "").strip()
+            pos = (row.get("v1_reader_position") or "").strip()
+            if fname and chap and pos:
+                result[fname] = (int(chap), int(pos))
+    return result
 
 
 def parse_chapter_files(build_script: Path) -> list[str]:
@@ -41,9 +61,16 @@ def chapter_sc_numbers(path: Path) -> list[str]:
     return numbers
 
 
-def verify(build_script: Path) -> tuple[list[str], list[str], list[str]]:
+def verify(
+    build_script: Path,
+    staging_map: Path | None = None,
+) -> tuple[list[str], list[str], list[str]]:
     inventory_order = load_inventory_order()
     chapter_files = parse_chapter_files(build_script)
+    staging_order: dict[str, tuple[int, int]] = {}
+    if staging_map is not None and staging_map.exists():
+        staging_order = load_staging_order(staging_map)
+    use_historical = bool(staging_order)
     flattened: list[str] = []
 
     for name in chapter_files:
@@ -54,14 +81,42 @@ def verify(build_script: Path) -> tuple[list[str], list[str], list[str]]:
         missing = [change_id for change_id in numbers if change_id not in inventory_order]
         if missing:
             raise ValueError(f"Unknown SC id(s) in {name}: {missing}")
+        # Internal SC order within each file is always validated against cascade order
         chapter_expected = sorted(numbers, key=lambda change_id: inventory_order[change_id])
         if numbers != chapter_expected:
             raise ValueError(f"Internal SC order mismatch in {name}: {numbers} vs {chapter_expected}")
         flattened.extend(numbers)
 
-    current_orders = [inventory_order[change_id] for change_id in flattened]
-    if current_orders != sorted(current_orders):
-        raise ValueError(f"Chapter order mismatch: {flattened} vs nondecreasing current_order expectation")
+    if use_historical:
+        # Historical mode: validate that files appear in (v1_chapter, v1_reader_position) order
+        file_positions: list[tuple[int, int, str]] = []
+        for name in chapter_files:
+            if name not in staging_order:
+                raise ValueError(
+                    f"File {name!r} in chapter_files is missing from staging map {staging_map}. "
+                    "Add it to the staging map before using historical ordering."
+                )
+            chap, pos = staging_order[name]
+            file_positions.append((chap, pos, name))
+        sorted_positions = sorted(file_positions, key=lambda t: (t[0], t[1]))
+        if [(c, p) for c, p, _ in file_positions] != [(c, p) for c, p, _ in sorted_positions]:
+            bad = [
+                f"{name!r} (v1_chapter={c}, v1_reader_position={p})"
+                for c, p, name in file_positions
+                if (c, p, name) != sorted_positions[file_positions.index((c, p, name))]
+            ][:5]
+            raise ValueError(
+                f"Historical chapter order mismatch in chapter_files. "
+                f"Files must appear in (v1_chapter, v1_reader_position) order per {staging_map}. "
+                f"First mismatches: {bad}"
+            )
+    else:
+        # Legacy mode: validate non-decreasing cascade order
+        current_orders = [inventory_order[change_id] for change_id in flattened]
+        if current_orders != sorted(current_orders):
+            raise ValueError(
+                f"Chapter order mismatch: {flattened} vs nondecreasing current_order expectation"
+            )
 
     unique_flattened: list[str] = []
     seen_nonadjacent: set[str] = set()
@@ -73,25 +128,42 @@ def verify(build_script: Path) -> tuple[list[str], list[str], list[str]]:
         unique_flattened.append(change_id)
         seen_nonadjacent.add(change_id)
 
-    unique_orders = [inventory_order[change_id] for change_id in unique_flattened]
-    if unique_orders != sorted(unique_orders):
-        raise ValueError(f"Unique SC order mismatch: {unique_flattened} vs sorted current_order expectation")
+    if not use_historical:
+        unique_orders = [inventory_order[change_id] for change_id in unique_flattened]
+        if unique_orders != sorted(unique_orders):
+            raise ValueError(
+                f"Unique SC order mismatch: {unique_flattened} vs sorted current_order expectation"
+            )
 
     return chapter_files, flattened, unique_flattened
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Verify reader-facing chapter order against the canonical sound-change inventory.")
+    parser = argparse.ArgumentParser(
+        description="Verify reader-facing chapter order against the canonical sound-change inventory."
+    )
     parser.add_argument(
         "--build-script",
         type=Path,
         default=ROOT / "build_reader_facing_local_section_02_docker.sh",
         help="Build script whose chapter_files list should be checked.",
     )
+    parser.add_argument(
+        "--staging-map",
+        type=Path,
+        default=None,
+        help=(
+            "Path to sound_change_historical_staging_map.tsv. When provided, validates "
+            "chapter_files order against (v1_chapter, v1_reader_position) instead of "
+            "cascade order. Use for the Version 1 historically-ordered build."
+        ),
+    )
     args = parser.parse_args()
 
-    chapter_files, flattened, unique_flattened = verify(args.build_script.resolve())
-    print(f"Verified reader-facing order for {args.build_script}")
+    staging_map = args.staging_map
+    chapter_files, flattened, unique_flattened = verify(args.build_script.resolve(), staging_map)
+    order_mode = "historical (staging map)" if staging_map else "cascade"
+    print(f"Verified reader-facing order for {args.build_script} [{order_mode}]")
     print("Chapters:")
     for chapter in chapter_files:
         print(f"  - {chapter}")

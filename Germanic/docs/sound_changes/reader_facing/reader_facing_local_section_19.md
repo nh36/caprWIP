@@ -1,6 +1,6 @@
-# A sequence from early West Germanic consonant and vowel shifts to Old English r-metathesis
+# The ordered sound-change sequence
 
-## Introduction
+## Scope and orientation
 
 The sequence begins with early West Germanic consonant and vowel changes and ends with Old English r-metathesis.
 
@@ -10,29 +10,177 @@ The evidence ranges from broadly attested sound laws to lexical constraints that
 
 ## Numbering note
 
-The sequence follows the established rule numbering.
+SC numbers remain the established legacy identifiers. The Version 1 book presents the changes in historical chapter order, which differs from the computational cascade order for several rules.
 
 SC038, SC062, and SC084 mark technical or prosodic stages rather than sound changes; SC077 is unused.
 
-# West Germanic rhotacism
 
-## Historical discussion
+\newpage
 
-Hogg states that Germanic \emph{*z} yielded \emph{*r} in intervocalic position in Old English, while final \emph{*z} was generally lost [@Hogg1992, p. 37]. Ringe and Taylor argue that this merger of \emph{*z} with \emph{*r} was independent in Norse and West Germanic and belongs after the Proto-West-Germanic stage [@RingeTaylor2014, pp. 52, 98, 102]. Crist likewise places rhotacism after earlier West Germanic \emph{*z}-deletion rules and rejects treating it as an inherited Proto-Northwest-Germanic innovation [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
+# Chapter 1. From Proto-Germanic to Proto-Northwest Germanic
 
-The label [SC003 PGmcRhotacism](#rule-PGmcRhotacism) is historically misleading: the change is a later West Germanic rhotacism, not a Proto-Germanic one. It is also distinct from [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
 
-## SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism}
+## Historical interval
 
-```foma
-define PGmcRhotacism [
-    {*z} -> {*r} || EnglishStarVocalic _ ?
-];
-```
+This chapter covers developments that took place within the Proto-Germanic
+period, from the inherited consonant system to the first changes that separate
+the Northwest Germanic line from the rest of the Germanic family.
 
-Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc [líznōjaną]{.recon} ‘learn’ yields [*lirnian*]{.pred} rather than expected OE *liornian* ‘learn’, PGmc [líznōθi]{.recon} ‘learns’ yields [*lirnaþ*]{.pred} rather than expected *liornaþ* 'learns', PGmc [líznô]{.recon} ‘learn’ yields [*lirna*]{.pred} rather than expected *liorna* 'learn', and PGmc [mízdai]{.recon} ‘meed’ yields [*merde*]{.pred} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes none of the checked forms.
+The reconstruction labelled Proto-Germanic here is the common ancestor of Gothic,
+North Germanic, and West Germanic, reconstructed through the classical comparative
+method from attested descendant languages. The label Proto-Northwest Germanic
+designates the hypothetical node linking the ancestors of North Germanic (Old
+Norse and its relatives) and West Germanic (Old English, Old High German, Old
+Saxon, and Old Frisian among others), to the exclusion of Gothic and the other
+East Germanic varieties.
 
-The lexical evidence thus supplies a terminus ante quem but no terminus post quem. Its placement after the earlier loss of final \emph{*z} rests on the historical analyses cited above.
+## What this chapter contains
+
+The changes implemented in CAPR that belong historically to this stage are few.
+The current lexical corpus witnesses only one well-supported change in the
+CAPR rule set that is unambiguously Proto-Germanic internal: the simplification
+of the cluster [*gm]{.recon} 'consonant group' in the families behind
+[*draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and [*taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'
+[@Kroonen2013, pp. 101, 511].
+
+A second change with a Proto-Germanic historical label in the CAPR implementation,
+the allophony of initial labial stops (SC049), belongs here historically but is
+checkpointed later in the transducer cascade for computational reasons. Its
+chapter placement therefore diverges from its cascade position; the historical
+account is given here, and the reader-facing section cross-references this chapter.
+
+The thinness of Chapter 1 is real: the CAPR corpus does not yet have strong
+lexical witnesses that establish the relative chronology of early Proto-Germanic
+consonant changes. Most of the changes that traditional comparative grammars
+treat as Proto-Germanic-stage developments are either not represented in the CAPR
+corpus or are implemented as part of the input proto-forms rather than as explicit
+rule steps.
+
+## Scope and genealogical context
+
+Changes in this chapter are pan-Germanic in scope: they apply to ancestral forms
+that feed both the North Germanic and West Germanic descendants, or they represent
+internal Proto-Germanic processes visible across the Germanic family.
+
+The boundary between Proto-Germanic and Proto-Northwest Germanic is not sharp in
+the textbook literature. Ringe and Taylor treat many of the traditionally
+"Proto-Germanic" changes as part of a shared innovation package that is
+diagnostically older than North–West Germanic divergence but not necessarily
+earlier than the separation of the East Germanic line
+[@RingeTaylor2014, pp. 1--30]. For book purposes, the distinction matters
+primarily because it separates the features inherited uniformly from all Germanic
+from those shared selectively by North and West Germanic to the exclusion of
+Gothic.
+
+## A note on the rule names
+
+The CAPR rules implemented in this chapter carry names beginning with `PGmc`.
+Those names are intended as stable internal identifiers, not as claims about
+the precise historical stage of every rule so labelled. A rule named `PGmcX`
+may in some cases be a later development that affects only the West Germanic
+or Northwest Germanic branch; the chapter assignment in this staging map takes
+priority over the rule-name prefix for historical organization purposes.
+
+
+\newpage
+
+# Chapter 2. From Proto-Northwest Germanic to Proto-West Germanic
+
+
+## Historical interval
+
+This chapter covers the sound changes that took place in the proto-language shared
+by the West Germanic languages — Old English, Old Frisian, Old Saxon, Old High
+German, and Old Dutch — before the individual languages diverged. The starting
+reconstruction is Proto-Northwest Germanic (PNWGmc), the hypothetical common
+ancestor of North Germanic and West Germanic together; the ending reconstruction
+is Proto-West Germanic (PWGmc), the immediate common ancestor of the West Germanic
+languages specifically.
+
+## Scope and internal diversity
+
+Changes in this chapter are not all equally pan-West-Germanic in scope. They
+may be grouped broadly as follows:
+
+**Northwest Germanic innovations** (shared by both North and West Germanic):
+innovations in the unstressed vowel system, certain final-syllable vowel changes,
+and selected consonant cluster simplifications. Changes labelled `NWGmc` in the
+CAPR rule names fall here, though rule prefixes are not always reliable guides to
+historical scope.
+
+**Proto-West-Germanic innovations** (shared within West Germanic but not in
+North Germanic): the cluster of morphological and phonological changes that
+distinguish Old English, Old High German, Old Saxon, and Old Frisian from Old
+Norse. Changes labelled `PWGmc` in the CAPR rule names generally fall here.
+They include early apocope rules, certain consonant assimilations, and the
+West Germanic gemination of consonants before `*j`.
+
+## Major changes
+
+The `*ai` monophthongization (SC004) represents one of the most pervasive
+shared NW–West Germanic vowel shifts, turning unstressed endings such as the
+dative singular and strong-adjective plural to longer vowels. Ringe and Taylor
+treat this as one of the clearest post-PNWGmc shared developments
+[@RingeTaylor2014, pp. 40--41]; Fulk groups it among the North/West-Germanic
+shared innovations that distinguish the period from Gothic [@Fulk2018, §5.2].
+
+The West Germanic consonant changes of this chapter — j-gemination (SC010),
+early i-apocope (SC006), coronal-w assimilation (SC008), and related rules —
+represent the most productive phonological territory for the CAPR derivations.
+They feed a large proportion of the distinctive consonant clusters of Old
+English. Handbooks vary in exactly how they group and name these changes
+[@Campbell1959, §§ 404, 406; @Hogg1992, §7.1].
+
+The nasal spirant corridor (SC026–SC027) illustrates a type of change common
+in historical grammars of the "Ingvaeonic" or "North Sea Germanic" area:
+nasals disappear before voiceless fricatives, with compensatory vowel
+lengthening [@Campbell1959, §§ 462--463; @Hogg1992, §7.77]. The CAPR model
+splits this into two ordered steps to make the vowel effect computationally
+tractable; the book prose explains that split against the handbook tradition,
+which typically presents the change as a single process.
+
+Several changes in this chapter carry `PWGmc` labels in the CAPR implementation
+but appear later in the computational cascade than their historical stage would
+suggest: final bare-`*a` loss (SC041), surviving bimoric `*ō` unrounding
+(SC042), and Sievers-law syncope (SC050) are placed late in the transducer for
+computational reasons. Their chapter assignment here reflects their historical
+stage, not their cascade position; the individual sound-change sections note
+the divergence.
+
+## A note on source terminology and subgrouping
+
+The literature uses several partly overlapping stage labels for this period:
+
+* **Northwest Germanic**: the node uniting North and West Germanic.
+* **Proto-West Germanic**: the node uniting only the West Germanic languages.
+* **North Sea Germanic** or **Ingvaeonic**: a proposed subgroup within West
+  Germanic covering Old English, Old Frisian, and Old Saxon (and sometimes Old
+  Low Franconian), sharing certain innovations over a broader area.
+* **Anglo-Frisian**: a narrower proposed subgroup linking only Old English
+  and Old Frisian.
+
+These labels are not always used consistently across sources. Ringe and Taylor
+are cautious about reconstructing a discrete Proto-West-Germanic node
+[@RingeTaylor2014, pp. 50--55]. Campbell notes that many of the
+"West Germanic" shared features could alternatively be treated as parallel
+developments rather than common inheritance [@Campbell1959, §§ 1--5].
+
+CAPR uses `PWGmc` and `NWGmc` as organizing labels for this chapter without
+claiming to have settled all questions about West Germanic subgrouping. Changes
+that appear in the literature under "Ingvaeonic" labels but affect the Old
+English–to-Proto-Germanic derivation chain are treated here as late expressions
+of the same West Germanic developmental period unless existing CAPR dossier
+research specifically argues for Anglo-Frisian or English-specific placement.
+
+## Rule names
+
+The CAPR rules in this chapter carry names beginning with `NWGmc` or `PWGmc`.
+These names are stable internal identifiers. A name beginning with `NWGmc` does
+not guarantee that the change is exclusive to Northwest Germanic, and a name
+beginning with `PWGmc` does not guarantee that it is absent from North Germanic.
+The historical analysis in each sound-change section takes priority over the
+name prefix.
+
 
 \newpage
 
@@ -651,6 +799,366 @@ No witness word dates preconsonantal \emph{*x}-loss before \emph{*s} plus anothe
 
 \newpage
 
+# Final bare-\emph{a} loss
+
+## Historical discussion
+
+I isolate the loss of final short low vowels within the broader erosion of final syllables described by the handbooks [@Campbell1959, p. 143, §341; @RingeTaylor2014, pp. 60--61].
+
+Final bare-a loss follows the medial unstressed vowel changes and
+precedes restoration, which depends on the environment left by the loss.
+
+## SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss}
+
+```foma
+define PWGmcFinalBareALoss [
+    {*a} -> 0 || _ .#.
+];
+```
+
+The two sides of final bare-\emph{a} loss rest on different evidence. Applied before final \emph{z}-deletion, the change gives the wrong outputs: PGmc [bárdaz]{.recon} ‘beard’ yields [*bearda*]{.pred} rather than expected OE *beard* ‘beard’, and PGmc [kámbaz]{.recon} ‘comb’ yields [*camba*]{.pred} rather than expected *camb* ‘comb’. Applied after restoration, PGmc [kráftaz]{.recon} ‘craft’ yields [*craft*]{.pred} rather than expected OE *cræft* ‘craft’, and PGmc [dágaz]{.recon} ‘day’ yields [*dag*]{.pred} rather than expected *dæġ* ‘day’. The distant lower limit follows final \emph{z}-loss; the local feeding relation precedes restoration, which requires the environment created by the vowel loss.
+
+\newpage
+
+# Surviving bimoric \emph{*ō} unrounding
+
+## Historical discussion
+
+The handbooks do not isolate a large independent sound change under this label.
+The surviving bimoric \emph{*ō} in the pathway to *ræste* ‘rest’ nevertheless
+undergoes unrounding before
+[SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). Campbell, Hogg,
+and Ringe and Taylor describe the surrounding fronting and restoration history
+without naming this feeder separately [@Campbell1959, pp. 52, 60,
+§§131, 157--158; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158,
+189--190].
+
+The sole witness establishes a local relation to brightening but supports no broader generalization.
+
+## \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding}
+
+```foma
+define PWGmcSurvivingBimoricOUnrounding [
+    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
+];
+```
+
+The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
+
+\newpage
+
+# B allophony and Sievers-law syncope
+
+## Historical discussion of B allophony
+
+The first change is the positional alternation of Germanic \emph{*b}. Hogg
+states the Old English distribution clearly: /b/ is a stop initially, after
+nasals, and in gemination, while the same segment is otherwise realized as a
+voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
+the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
+segment whose stop and fricative values depend on position
+[@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
+fricative pattern in Old English [@Luick1914, p. 107].
+
+The distribution is narrow, but later changes presuppose the stop-fricative
+alternation.
+
+## \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
+
+```foma
+define PGmcBAllophony [
+    {*b} -> {*β} || PGmcStarVocalic _,
+    {*b} -> {*β} || [{*l} | {*r}] _
+] .o. [
+    {*β} -> {*b} || _ {*b}
+];
+```
+
+The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
+
+## Historical discussion of Sievers-law syncope
+
+Sievers' Law concerns a different historical problem. It is a prosodic and
+morphological adjustment in heavy stems, not a distributional allophone of a
+stop consonant. Adamczyk treats the Old English reflexes of the law as
+historical evidence from weak verbs and related formations
+[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through
+familiar forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
+[@Fulk2018, p. 127, §6.15].
+
+Sievers-law syncope is narrow in scope, but its relation to the following
+palatalization is lexically secure. Its earlier limit is less sharply defined
+than that of the preceding allophony rule.
+
+## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
+
+```foma
+define SieversLawSyncope [
+    {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
+];
+```
+
+The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} ‘stretch’ yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
+
+\newpage
+
+# Chapter 3. From Proto-West Germanic to Anglo-Frisian
+
+
+## Historical interval
+
+This chapter covers the sound changes that occurred after the Proto-West Germanic
+period and before, or during the emergence of, the specifically English line. The
+starting reconstruction is Proto-West Germanic; the end point is the
+Proto-Anglo-Frisian stage — or more precisely, the cluster of innovations that
+define the English and Frisian branch within West Germanic.
+
+## A necessary terminological caution
+
+The title of this chapter uses "Anglo-Frisian" as an organizing historical
+concept. That choice requires an explicit qualification.
+
+The scholarly literature uses several overlapping terms for this developmental
+period:
+
+* **North Sea Germanic** and **Ingvaeonic**: labels used by some scholars for a
+  proposed subgroup comprising Old English, Old Frisian, and Old Saxon (or more
+  narrowly, Old English and Old Frisian only). The innovations associated with
+  this label — especially the nasal spirant changes and certain vowel
+  developments — are sometimes described as diffusion rather than shared
+  inheritance [@Campbell1959, §§ 1--3].
+* **Anglo-Frisian**: a label used specifically for the Old English / Old Frisian
+  branch, or for innovations shared between the two languages. Its use presupposes
+  a tighter relationship between English and Frisian than between either and
+  Old Saxon.
+* **Proto-Anglo-Frisian** (PAF): the strongest interpretation, positing a discrete
+  reconstructed common ancestor for Old English and Old Frisian specifically.
+  This is the position of Ringe and Taylor, who reconstruct a PAF stage between
+  Proto-West Germanic and Proto-Old-English [@RingeTaylor2014, pp. 54--68].
+
+**CAPR does not commit to a universally accepted discrete PAF node.** The chapter
+title uses "Anglo-Frisian" because the key changes of this period — especially
+West Germanic rhotacism (SC003), word-final `*z` deletion (SC020), and
+Anglo-Frisian brightening (SC043) — are most prominently associated with that
+label in the handbook literature. But the analysis does not require that every
+change passed through a single genealogical PAF stage. Some changes may be
+West Germanic broadly; others may reflect areal diffusion. The existing CAPR
+dossiers record the source-by-source picture where these distinctions matter.
+
+## Major changes and their historical basis
+
+### West Germanic rhotacism (SC003)
+
+The medial change of `*z` to `*r` in environments such as [*déuzaz]{.recon .iv lang=pgmc sort=deuzaz} 'deer',
+[*xúrdaz]{.recon .iv lang=pgmc sort=xurdaz} 'hoard', and
+[*líznōjaną]{.recon .iv lang=pgmc sort=liznojana} 'learn' is historically a
+post-Proto-West-Germanic development. Ringe and Taylor argue that rhotacism was
+not inherited from Proto-Northwest Germanic and was not uniform within West
+Germanic [@RingeTaylor2014, pp. 52, 98, 102]. Crist separates this change
+explicitly from the deletion of word-final `*z` and argues that rhotacism must
+follow the deletion rules [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
+Hogg gives the standard Old English–facing summary: `*z` yielded `*r` in
+intervocalic position but was generally lost in final position
+[@Hogg1992, p. 37].
+
+The CAPR rule is named `PGmcRhotacism`, which is historically misleading: the
+change is not Proto-Germanic. The internal rule name is a stable identifier that
+will not be changed during this phase; the reader-facing chapter label corrects
+the historical description.
+
+### Word-final `*z` deletion (SC020)
+
+The deletion of word-final `*z` in forms such as [*rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest (nom.sg.)'
+is placed here on the basis of Crist's analysis, which distinguishes
+a pan-West-Germanic loss of `*z` after unstressed vowels from the earlier
+NWGmc changes and from the later narrower Ingvaeonic deletion rules
+[@Crist2002, pp. 1, 4]. The standard handbooks confirm a West Germanic
+deletion: Campbell notes that `*z` is "later lost or changed to `r`"
+[@Campbell1959]; Hogg gives a clean statement that Germanic `*z` is generally
+lost in final position [@Hogg1992, p. 37].
+
+The CAPR rule is named `PGmcFinalZDeletion`, which is historically misleading.
+The existing reader-facing prose already notes this: the current assembled
+section correctly describes SC003 as presupposing an earlier loss of final `*z`,
+creating a presentational tension with SC020's place at cascade position 20.
+This tension is a targeted audit item for the next phase of the chronology work.
+
+### Anglo-Frisian brightening (SC043)
+
+The fronting of low `*a` to `*æ` outside nasal environments is the defining
+Anglo-Frisian change and the central event of this chapter. Campbell gives the
+classical statement: "By a very early change Prim. Gmc. `a > æ` in OE and OFris.
+when not followed by a nasal consonant" [@Campbell1959, §§ 163--165].
+Hogg gives the most familiar modern label pair: "This vowel normally fronted
+to /ae/ by the sound change of Anglo-Frisian Brightening (or First Fronting)"
+[@Hogg1992, §5.8].
+
+The change is notable for what follows it: OE Breaking presupposes the fronted
+input; OE a-Restoration partially undoes it in back-vowel environments. The
+three-change sequence (brightening, breaking, restoration) is one of the clearest
+relative-chronology chains in the Old English historical grammar.
+
+Campbell notes that English and Frisian may not simply reflect one
+undifferentiated shared prehistoric event, and Ringe and Taylor leave open
+whether the wider spread of fronted outcomes happened mainly on the continent
+or in Britain [@RingeTaylor2014, pp. 60--62]. CAPR's implementation treats the
+change as a single rule; the book prose acknowledges the uncertainty about its
+exact geographical scope.
+
+The current CAPR inventory has this change labeled "Old English" in the pipeline
+taxonomy (no separate Anglo-Frisian bucket previously existed). The historical
+staging map now places it in Chapter 3, correcting that provisional label.
+
+## Cascade vs. historical order in this chapter
+
+The three changes in this chapter currently occur at cascade positions 3, 19–20,
+and 43 respectively. These cascade positions reflect computational dependencies,
+not historical sequence. The reader-facing book order in this chapter places
+rhotacism first (as the post-PWGmc WGmc change), then word-final `*z` deletion
+(SC020, closely related to rhotacism and discussed in the same reader-facing
+section as SC019), then Anglo-Frisian brightening as the culminating change of
+the pre-OE period.
+
+The divergence between cascade order and book order in this chapter is one of
+the clearest illustrations of the principle that FST dependency does not
+automatically equal historical sequence.
+
+
+\newpage
+
+# West Germanic rhotacism
+
+## Historical discussion
+
+Hogg states that Germanic \emph{*z} yielded \emph{*r} in intervocalic position in Old English, while final \emph{*z} was generally lost [@Hogg1992, p. 37]. Ringe and Taylor argue that this merger of \emph{*z} with \emph{*r} was independent in Norse and West Germanic and belongs after the Proto-West-Germanic stage [@RingeTaylor2014, pp. 52, 98, 102]. Crist likewise places rhotacism after earlier West Germanic \emph{*z}-deletion rules and rejects treating it as an inherited Proto-Northwest-Germanic innovation [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
+
+The label [SC003 PGmcRhotacism](#rule-PGmcRhotacism) is historically misleading: the change is a later West Germanic rhotacism, not a Proto-Germanic one. It is also distinct from [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
+
+## SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism}
+
+```foma
+define PGmcRhotacism [
+    {*z} -> {*r} || EnglishStarVocalic _ ?
+];
+```
+
+Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc [líznōjaną]{.recon} ‘learn’ yields [*lirnian*]{.pred} rather than expected OE *liornian* ‘learn’, PGmc [líznōθi]{.recon} ‘learns’ yields [*lirnaþ*]{.pred} rather than expected *liornaþ* 'learns', PGmc [líznô]{.recon} ‘learn’ yields [*lirna*]{.pred} rather than expected *liorna* 'learn', and PGmc [mízdai]{.recon} ‘meed’ yields [*merde*]{.pred} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes none of the checked forms.
+
+The lexical evidence thus supplies a terminus ante quem but no terminus post quem. Its placement after the earlier loss of final \emph{*z} rests on the historical analyses cited above.
+
+\newpage
+
+# Anglo-Frisian brightening
+
+## Historical discussion
+
+Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \emph{*æ}-type outcomes outside nasal environments. Later Old English developments presuppose this fronted stage even where they partly conceal it. Campbell gives the classical statement of the change, Hogg supplies the standard modern labels, and Ringe and Taylor establish its local chronology with breaking and restoration [@Campbell1959, p. 52, §131; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158, 189--190; @Fulk2018, pp. 73--74, §§4.12--4.13].
+
+Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
+
+## \CAPRRuleHeading{SC043. Fronting of low \emph{*a} outside nasal environments}{AngloFrisianBrightening} {#rule-AngloFrisianBrightening}
+
+```foma
+define AngloFrisianBrightening [
+    AngloFrisianBrighteningUnstressed .o.
+    AngloFrisianBrighteningStressed .o.
+    AngloFrisianBrighteningLongFinal
+];
+```
+
+Two derivations place low \emph{*a} > \emph{*æ} between unrounding and breaking. Before [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste* ‘rest’. After [SC044 OEBreaking](#rule-OEBreaking), PGmc [sláxaną]{.recon} ‘slay’ yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. The first witness requires brightening to receive the outcome of the surviving-bimoric \emph{*ō} development; the second requires breaking to receive the fronted vowel.
+
+\newpage
+
+# Chapter 4. From Anglo-Frisian to Old English
+
+
+## Historical interval
+
+This chapter covers the sound changes that occurred within the Old English period:
+the changes that produced attested Old English from the prehistoric English forms
+that emerged from the Anglo-Frisian stage. The starting point is the end of the
+Anglo-Frisian changes of Chapter 3; the ending point is attested West Saxon Old
+English, the primary dialect of the CAPR corpus.
+
+## Scope and dialect variation
+
+Not every change in this chapter has pan-Old-English scope. Some changes — most
+notably the West Saxon palatal-glide effects (SC016) and West Saxon palatal
+umlaut (SC060), the back-mutation rules (SC059), and the West Saxon diphthong
+chain (SC031–SC034) — are specifically West Saxon or more broadly southern Old
+English phenomena.
+
+The CAPR derivations target West Saxon Old English citation forms as the default
+comparator. Changes that belong to other dialects, or that are absent from West
+Saxon, may appear in lexical entries as comparanda rather than as derivational
+steps.
+
+The existing reader-facing sound-change sections record which changes have
+pan-Old-English scope and which are specifically West Saxon or Anglian
+[@Campbell1959, §§ 1--10; @Hogg1992, §§ 1.1--1.15].
+
+## Chapter structure
+
+The changes in this chapter fall into several natural historical subgroups,
+though the boundaries between them are not always sharp:
+
+**Early Old English changes linked to the Anglo-Frisian inheritance**:
+Changes that feed directly on, or are closely related to, the brightening of
+Chapter 3. The `*awj` glide formation (SC029), `*au` fronting (SC030), and
+the West Saxon diphthong chain (SC031–SC034) all operate on the vowel inventory
+shaped by Anglo-Frisian brightening. OE Breaking (SC044) and
+a-Restoration (SC046) similarly presuppose the fronted `*æ` input.
+
+**Old English consonantal changes**:
+Velar palatalization (SC052), palatalization of `*sk` (SC051), j-cluster
+coalescence (SC057), and related changes produce the characteristically
+Old English consonant phonemes. Hogg discusses these as OE consonant changes
+that are not broadly West Germanic [@Hogg1992, §§ 7.18--7.23].
+
+**Old English i-umlaut and its context**:
+The i-umlaut (SC055) is one of the most productive changes in the Old English
+nominal and verbal morphology. Its relative chronology in relation to breaking,
+palatalization, and back-mutation is carefully documented in the existing
+CAPR chronology evidence audit and individual dossiers
+[@Campbell1959, §§ 193--204; @Hogg1992, §§ 5.62--5.68].
+
+**Late Old English syllabic reduction and apocope**:
+High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
+late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
+English phonological history, when the syllabic structure of the language
+began to shift toward the more reduced profile of Middle English.
+
+## Cascade positions and historical order
+
+The cascade positions of changes in this chapter broadly follow historical
+sequence within the Old English period. Some divergences exist and are documented
+in the individual sound-change sections:
+
+* SC041 (PWGmc Final Bare-`*a` Loss) and SC042 (Surviving Bimoric `*ō`
+  Unrounding) appear late in the cascade but are assigned to Chapter 2
+  (Proto-West Germanic) for historical reasons; their sections appear there.
+* SC064 (NWGmc `*-n` Stem `*n` Loss) carries a Northwest Germanic label and is
+  assigned to Chapter 2 historically, but appears in the cascade after OE
+  High-Vowel Apocope (SC063). Its section cross-references this divergence.
+* SC049 (PGmc B Allophony) is assigned to Chapter 1 historically but appears
+  in the cascade here; its section cross-references Chapter 1.
+
+## Sources
+
+Campbell's *Old English Grammar* is the primary source for the dating and
+scope of individual changes in this chapter [@Campbell1959].
+Hogg's *Grammar of Old English* provides modern reassessments and additional
+relative-chronology evidence [@Hogg1992]. Ringe and Taylor supply the most
+detailed relative-chronology analysis for the earlier portion of the chapter,
+through back-mutation [@RingeTaylor2014, pp. 70--160]. Fulk's *Comparative
+Grammar* provides additional coverage for morphological conditioning
+[@Fulk2018]. For individual changes, source-specific citations appear in the
+relevant sound-change sections.
+
+
+\newpage
+
 # Awj glide formation and au-fronting
 
 ## Historical discussion of awj glide formation and au-fronting
@@ -919,76 +1427,6 @@ The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different
 
 \newpage
 
-# Final bare-\emph{a} loss
-
-## Historical discussion
-
-I isolate the loss of final short low vowels within the broader erosion of final syllables described by the handbooks [@Campbell1959, p. 143, §341; @RingeTaylor2014, pp. 60--61].
-
-Final bare-a loss follows the medial unstressed vowel changes and
-precedes restoration, which depends on the environment left by the loss.
-
-## SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss}
-
-```foma
-define PWGmcFinalBareALoss [
-    {*a} -> 0 || _ .#.
-];
-```
-
-The two sides of final bare-\emph{a} loss rest on different evidence. Applied before final \emph{z}-deletion, the change gives the wrong outputs: PGmc [bárdaz]{.recon} ‘beard’ yields [*bearda*]{.pred} rather than expected OE *beard* ‘beard’, and PGmc [kámbaz]{.recon} ‘comb’ yields [*camba*]{.pred} rather than expected *camb* ‘comb’. Applied after restoration, PGmc [kráftaz]{.recon} ‘craft’ yields [*craft*]{.pred} rather than expected OE *cræft* ‘craft’, and PGmc [dágaz]{.recon} ‘day’ yields [*dag*]{.pred} rather than expected *dæġ* ‘day’. The distant lower limit follows final \emph{z}-loss; the local feeding relation precedes restoration, which requires the environment created by the vowel loss.
-
-\newpage
-
-# Surviving bimoric \emph{*ō} unrounding
-
-## Historical discussion
-
-The handbooks do not isolate a large independent sound change under this label.
-The surviving bimoric \emph{*ō} in the pathway to *ræste* ‘rest’ nevertheless
-undergoes unrounding before
-[SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). Campbell, Hogg,
-and Ringe and Taylor describe the surrounding fronting and restoration history
-without naming this feeder separately [@Campbell1959, pp. 52, 60,
-§§131, 157--158; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158,
-189--190].
-
-The sole witness establishes a local relation to brightening but supports no broader generalization.
-
-## \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding}
-
-```foma
-define PWGmcSurvivingBimoricOUnrounding [
-    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
-];
-```
-
-The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
-
-\newpage
-
-# Anglo-Frisian brightening
-
-## Historical discussion
-
-Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \emph{*æ}-type outcomes outside nasal environments. Later Old English developments presuppose this fronted stage even where they partly conceal it. Campbell gives the classical statement of the change, Hogg supplies the standard modern labels, and Ringe and Taylor establish its local chronology with breaking and restoration [@Campbell1959, p. 52, §131; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158, 189--190; @Fulk2018, pp. 73--74, §§4.12--4.13].
-
-Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
-
-## \CAPRRuleHeading{SC043. Fronting of low \emph{*a} outside nasal environments}{AngloFrisianBrightening} {#rule-AngloFrisianBrightening}
-
-```foma
-define AngloFrisianBrightening [
-    AngloFrisianBrighteningUnstressed .o.
-    AngloFrisianBrighteningStressed .o.
-    AngloFrisianBrighteningLongFinal
-];
-```
-
-Two derivations place low \emph{*a} > \emph{*æ} between unrounding and breaking. Before [SC042 PWGmcSurvivingBimoricOUnrounding](#rule-PWGmcSurvivingBimoricOUnrounding), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste* ‘rest’. After [SC044 OEBreaking](#rule-OEBreaking), PGmc [sláxaną]{.recon} ‘slay’ yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. The first witness requires brightening to receive the outcome of the surviving-bimoric \emph{*ō} development; the second requires breaking to receive the fronted vowel.
-
-\newpage
-
 # Breaking and velar-fricative palatalization
 
 ## Historical discussion of breaking and velar-fricative palatalization
@@ -1084,61 +1522,6 @@ define OESecondaryNasalization [
 ```
 
 The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
-
-\newpage
-
-# B allophony and Sievers-law syncope
-
-## Historical discussion of B allophony
-
-The first change is the positional alternation of Germanic \emph{*b}. Hogg
-states the Old English distribution clearly: /b/ is a stop initially, after
-nasals, and in gemination, while the same segment is otherwise realized as a
-voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
-the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
-segment whose stop and fricative values depend on position
-[@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
-fricative pattern in Old English [@Luick1914, p. 107].
-
-The distribution is narrow, but later changes presuppose the stop-fricative
-alternation.
-
-## \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
-
-```foma
-define PGmcBAllophony [
-    {*b} -> {*β} || PGmcStarVocalic _,
-    {*b} -> {*β} || [{*l} | {*r}] _
-] .o. [
-    {*β} -> {*b} || _ {*b}
-];
-```
-
-The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
-
-## Historical discussion of Sievers-law syncope
-
-Sievers' Law concerns a different historical problem. It is a prosodic and
-morphological adjustment in heavy stems, not a distributional allophone of a
-stop consonant. Adamczyk treats the Old English reflexes of the law as
-historical evidence from weak verbs and related formations
-[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through
-familiar forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
-[@Fulk2018, p. 127, §6.15].
-
-Sievers-law syncope is narrow in scope, but its relation to the following
-palatalization is lexically secure. Its earlier limit is less sharply defined
-than that of the preceding allophony rule.
-
-## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
-
-```foma
-define SieversLawSyncope [
-    {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
-];
-```
-
-The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} ‘stretch’ yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
 
 \newpage
 
