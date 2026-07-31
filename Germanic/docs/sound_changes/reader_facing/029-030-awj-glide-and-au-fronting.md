@@ -1,6 +1,6 @@
 # Awj glide formation and au-fronting
 
-## Historical discussion of awj glide formation and au-fronting
+## Historical discussion
 
 The *hīeġ* 'hay' and *strīeġan* 'strew' material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
 

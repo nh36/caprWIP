@@ -299,6 +299,51 @@ def main() -> None:
         )
     )
 
+    # ── Explicit-occurrence two-sided coverage check ──────────────────────────
+    # Every printable explicit_tag occurrence in canonical assembled sources must
+    # produce its \\index[iv]{...} command in generated TeX, and the generated count
+    # for each explicit command must not exceed the expected count.
+    #
+    # Only intro and chronology sources are assembled with their ORIGINAL source_refs
+    # preserved (via inject_line_commands). Model-entry explicit tags get source_refs
+    # pointing to the lexical volume path after assembly, which don't match the
+    # print_main model-entry source_refs; those entries are covered by the heading-level
+    # injection already checked above. The Lua filter therefore only emits explicit index
+    # commands for intro and chronology occurrences.
+    #
+    # Occurrence identity: (language, form_role, form, display, source_ref).
+    # Multiple rows with the same command but different occurrences are counted separately.
+    lua_filter_source_paths = {
+        INTRO_PATH.relative_to(REPO_ROOT).as_posix(),
+        CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix(),
+    }
+    explicit_expected_counter: Counter[str] = Counter()
+    for row in main_rows:
+        if (row.get("source_scope") or "").strip() != "explicit_tag":
+            continue
+        source_ref = (row.get("source_ref") or "").strip()
+        path_part = source_ref.rsplit(":", 1)[0] if ":" in source_ref else source_ref
+        if path_part not in lua_filter_source_paths:
+            continue
+        explicit_expected_counter[index_command(row)] += 1
+
+    # Explicit commands: actual count must match expected count exactly.
+    # Lower bound: every expected explicit occurrence must be present.
+    explicit_missing = [
+        cmd for cmd, exp_count in explicit_expected_counter.items()
+        if actual_counter.get(cmd, 0) < exp_count
+    ]
+    assert not explicit_missing, (
+        "Expected explicit .iv occurrences are missing from generated TeX:\n"
+        + "\n".join(
+            f"{cmd} (expected_explicit={explicit_expected_counter[cmd]}, actual={actual_counter.get(cmd, 0)})"
+            for cmd in explicit_missing[:5]
+        )
+    )
+
+    # Sanity: at least some explicit commands should have been expected
+    assert explicit_expected_counter, "No printable explicit_tag occurrences found in intro/chronology sources — index may be empty."
+
     # ── Excluded rows must not appear ─────────────────────────────────────────
     for row in excluded_rows:
         if row.get("form_role") != "regular_output":

@@ -1,6 +1,6 @@
 # Early unstressed vowel changes
 
-## Historical discussion of the earliest unstressed vowel changes
+## Historical discussion
 
 The first change removes the remaining diphthongal quality of unstressed \emph{*ai}; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* ‘world’. Their chronological evidence differs: monophthongization is historically clear but not closely dated by the witness forms, whereas \emph{*i}-lowering has a diagnostic later boundary.
 

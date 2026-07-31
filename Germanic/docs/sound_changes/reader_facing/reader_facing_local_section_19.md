@@ -463,7 +463,7 @@ Comparative evidence establishes the sound law; the present lexicon leaves its e
 
 # Early unstressed vowel changes
 
-## Historical discussion of the earliest unstressed vowel changes
+## Historical discussion
 
 The first change removes the remaining diphthongal quality of unstressed \emph{*ai}; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* ‘world’. Their chronological evidence differs: monophthongization is historically clear but not closely dated by the witness forms, whereas \emph{*i}-lowering has a diagnostic later boundary.
 
@@ -1171,7 +1171,7 @@ If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [j
 
 # Awj glide formation and au-fronting
 
-## Historical discussion of awj glide formation and au-fronting
+## Historical discussion
 
 The *hīeġ* 'hay' and *strīeġan* 'strew' material undergoes both changes. Glide formation reshapes the older \emph{awj} sequence, and fronting then affects the resulting \emph{au}. Campbell's discussion of these outcomes and Ringe and Taylor's derivations of *hīeġ* and *strīeġan* describe the same sequence [@Campbell1959, p. 46, §120; @RingeTaylor2014, p. 188].
 
@@ -1222,7 +1222,7 @@ surface forms.
 
 # West Saxon diphthong sequence
 
-## Historical discussion of the West Saxon diphthong sequence
+## Historical discussion
 
 Four distinct developments shape the West Saxon diphthongal field. Campbell
 discusses inherited \emph{aw}/\emph{ew} outcomes, palatal-triggered

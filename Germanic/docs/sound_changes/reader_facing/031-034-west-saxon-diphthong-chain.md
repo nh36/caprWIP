@@ -1,6 +1,6 @@
 # West Saxon diphthong sequence
 
-## Historical discussion of the West Saxon diphthong sequence
+## Historical discussion
 
 Four distinct developments shape the West Saxon diphthongal field. Campbell
 discusses inherited \emph{aw}/\emph{ew} outcomes, palatal-triggered

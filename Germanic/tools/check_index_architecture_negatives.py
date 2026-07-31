@@ -199,6 +199,70 @@ def test_occurrence_multiset_extra_entry() -> None:
     assert spurious, "Spurious extra command must be detected"
 
 
+def _check_explicit_converse(
+    explicit_expected: Counter,
+    actual_counter: Counter,
+) -> None:
+    """The check used in check_book_draft_tex_indexes: raise AssertionError if any explicit
+    expected command count exceeds the actual generated count."""
+    explicit_missing = [
+        cmd for cmd, exp_count in explicit_expected.items()
+        if actual_counter.get(cmd, 0) < exp_count
+    ]
+    assert not explicit_missing, (
+        "Expected explicit .iv occurrences are missing from generated TeX:\n"
+        + "\n".join(
+            f"{cmd} (expected_explicit={explicit_expected[cmd]}, actual={actual_counter.get(cmd, 0)})"
+            for cmd in explicit_missing[:5]
+        )
+    )
+
+
+def test_explicit_converse_all_present_passes() -> None:
+    """All expected explicit occurrences present → check must pass."""
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!naedre@\emph{nǣdre}}"
+    cmd_b = r"\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}!nedron@*nḗdrōn}"
+    explicit_expected: Counter = Counter({cmd_a: 1, cmd_b: 1})
+    actual_counter: Counter = Counter({cmd_a: 1, cmd_b: 1})
+    _check_explicit_converse(explicit_expected, actual_counter)  # must not raise
+
+
+def test_explicit_converse_missing_one_fails() -> None:
+    """One expected explicit occurrence omitted from generated TeX → check must fail."""
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!naedre@\emph{nǣdre}}"
+    cmd_b = r"\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}!nedron@*nḗdrōn}"
+    explicit_expected: Counter = Counter({cmd_a: 1, cmd_b: 1})
+    actual_counter: Counter = Counter({cmd_a: 1})  # cmd_b missing
+    try:
+        _check_explicit_converse(explicit_expected, actual_counter)
+        raise AssertionError("Should have raised — cmd_b was missing")
+    except AssertionError as exc:
+        if "Should have raised" in str(exc):
+            raise
+        # Correctly raised — test passes.
+
+
+def test_explicit_converse_wrong_count_fails() -> None:
+    """Actual count below expected explicit count → check must fail."""
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!heofon@\emph{heofon}}"
+    explicit_expected: Counter = Counter({cmd_a: 3})
+    actual_counter: Counter = Counter({cmd_a: 2})  # one fewer than expected
+    try:
+        _check_explicit_converse(explicit_expected, actual_counter)
+        raise AssertionError("Should have raised — count too low")
+    except AssertionError as exc:
+        if "Should have raised" in str(exc):
+            raise
+
+
+def test_explicit_converse_extra_does_not_fail() -> None:
+    """Extra occurrences above explicit expected count are allowed (non-explicit can add more)."""
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!heofon@\emph{heofon}}"
+    explicit_expected: Counter = Counter({cmd_a: 2})
+    actual_counter: Counter = Counter({cmd_a: 5})  # extra is fine — non-explicit adds more
+    _check_explicit_converse(explicit_expected, actual_counter)  # must not raise
+
+
 # ── Positive fixtures (good inputs must be accepted) ─────────────────────────
 
 def test_valid_unified_architecture_accepted() -> None:
@@ -231,6 +295,12 @@ def main() -> int:
     expect_pass("duplicate \\makeindex count != 1 is detected by helper", test_duplicate_makeindex_declarations_rejected)
     expect_pass("missing index entry detected by multiset comparison", test_occurrence_multiset_missing_entry)
     expect_pass("extra index entry detected by multiset comparison", test_occurrence_multiset_extra_entry)
+
+    # Explicit-occurrence converse coverage fixtures
+    expect_pass("all explicit occurrences present → converse check passes", test_explicit_converse_all_present_passes)
+    expect_pass("missing explicit occurrence → converse check correctly fails", lambda: test_explicit_converse_missing_one_fails())
+    expect_pass("count below expected explicit count → converse check correctly fails", lambda: test_explicit_converse_wrong_count_fails())
+    expect_pass("extra occurrences above explicit expected allowed", test_explicit_converse_extra_does_not_fail)
 
     # Full architecture check: _assert_unified_architecture must RAISE on bad inputs.
     # The bad input is deliberate; the function should raise AssertionError, so expect_fail.
