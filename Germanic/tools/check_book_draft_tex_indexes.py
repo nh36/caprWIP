@@ -125,8 +125,6 @@ def main() -> None:
     form_rows = load_rows(FORMS_PATH)
     main_rows = load_rows(PRINT_MAIN_PATH)
     excluded_rows = load_rows(PRINT_EXCLUDED_PATH)
-    main_commands = {index_command(row) for row in main_rows}
-    tex_commands = parse_tex_index_commands(tex_text)
 
     main_explicit_keys = {
         explicit_key(row)
@@ -134,61 +132,139 @@ def main() -> None:
         if row.get("source_scope") == "explicit_tag"
     }
 
-    # With unified index, all commands go through \index[iv]{...}; no per-language \index[lang] should appear
-    assert r"\index[preoe]{" not in tex_text, "Direct preoe index command must not appear; use unified iv index."
-    assert r"\indexsetup{level=\section*,noclearpage}" in header_text, "Expected indexsetup with level=\\section* for index layout."
-    assert r"\indexsetup{level=\chapter*" not in header_text
+    # ── Registry architecture: exactly one unified 'iv' index ──────────────────
+    # Any per-language \makeindex[name=oe,...] declaration is a hard failure.
+    makeindex_names = re.findall(r"\\makeindex\[name=([^,\]]+)", tex_text)
+    assert len(makeindex_names) == 1, (
+        f"Expected exactly one \\makeindex declaration (name=iv); found: {makeindex_names}. "
+        "Per-language index declarations are forbidden in the canonical book."
+    )
+    assert makeindex_names[0] == "iv", (
+        f"The single \\makeindex must use name=iv, not name={makeindex_names[0]}."
+    )
+    assert r"\makeindex[name=iv,title={},columns=3]" in tex_text, (
+        "Unified index must declare columns=3: \\makeindex[name=iv,title={},columns=3]"
+    )
 
+    # ── Print call: exactly one unified printindex ─────────────────────────────
+    printindex_calls = re.findall(r"\\printindex\[([^\]]+)\]", tex_text)
+    assert len(printindex_calls) == 1, (
+        f"Expected exactly one \\printindex call (\\printindex[iv]); found: {printindex_calls}"
+    )
+    assert printindex_calls[0] == "iv", (
+        f"The single \\printindex must use [iv], not [{printindex_calls[0]}]."
+    )
+
+    # ── All index commands must use \index[iv]{...} ────────────────────────────
+    # Any per-language \index[oe]{...}, \index[pgmc]{...}, etc. is a hard failure.
+    per_lang_index_pattern = re.compile(r"\\index\[(?!iv\])([^\]]+)\]\{")
+    per_lang_hits = per_lang_index_pattern.findall(tex_text)
+    assert not per_lang_hits, (
+        f"Per-language index commands found in TeX (must all use \\index[iv]{{...}}): "
+        f"{per_lang_hits[:10]}. "
+        "Legacy per-language index streams are forbidden."
+    )
+
+    # ── No doubled-star reconstruction in generated TeX ────────────────────────
+    doubled_star_pattern = re.compile(r"\\Recon\{[\\]?\*")
+    doubled_star_hits = doubled_star_pattern.findall(tex_text)
+    assert not doubled_star_hits, (
+        f"Generated TeX contains doubled-star reconstruction (\\Recon{{*...}}): "
+        f"{doubled_star_hits[:5]}. "
+        "The \\Recon{{}} macro supplies the asterisk; fix source markup to remove leading *."
+    )
+
+    # ── Extract all \index[iv]{...} commands (nested-brace aware) ─────────────
+    def _extract_iv_bodies(text: str) -> list[str]:
+        """Extract the body of every \\index[iv]{...} command, handling nested braces."""
+        bodies: list[str] = []
+        for m in re.finditer(r"\\index\[iv\]\{", text):
+            pos = m.end()
+            depth = 1
+            end = pos
+            while end < len(text) and depth > 0:
+                if text[end] == "{":
+                    depth += 1
+                elif text[end] == "}":
+                    depth -= 1
+                end += 1
+            bodies.append(text[m.end():end - 1])
+        return bodies
+
+    all_iv_bodies = _extract_iv_bodies(tex_text)
+
+    # ── Two-level structure: every \index[iv] body must contain '!' ───────────
+    malformed_iv = [b for b in all_iv_bodies if "!" not in b]
+    assert not malformed_iv, (
+        f"\\index[iv] entries missing two-level language!form structure "
+        f"({len(malformed_iv)} total): {malformed_iv[:5]}"
+    )
+
+    # ── Language registry: every active language has a unique order prefix ──────
+    lang_order = check_get_lang_order()
+    registry_codes = set(lang_order.keys())
+    print_languages = {(row.get("language") or "").strip() for row in main_rows if (row.get("language") or "").strip()}
+    unknown_langs = print_languages - registry_codes
+    assert not unknown_langs, (
+        f"Print main contains languages not in active registry (would use fallback 99xx prefix): {unknown_langs}"
+    )
+
+    # ── Index occurrence containment check ────────────────────────────────────
+    # The assembled TeX contains \index[iv]{...} commands from two sources:
+    #   1. The Lua filter (for explicit_tag .iv spans in the assembled text)
+    #   2. The Python assembler (for non-explicit-tag forms injected at lexical headings)
+    # Not every print_main row necessarily appears in the assembled text (some forms
+    # come from reader-facing sections that use explicit .iv tags but may be in
+    # multiple sources). The correct invariant is: every TeX command must be in the
+    # expected set from print_main. Extra (unregistered) commands are forbidden.
+    from collections import Counter
+    expected_command_set: set[str] = {index_command(row) for row in main_rows}
+    actual_counter: Counter[str] = Counter()
+    for body in all_iv_bodies:
+        full_cmd = r"\index[iv]{" + body + "}"
+        actual_counter[full_cmd] += 1
+
+    # Every actual command must be in the expected set
+    spurious_cmds = [cmd for cmd in actual_counter if cmd not in expected_command_set]
+    assert not spurious_cmds, (
+        f"TeX contains \\index[iv]{{...}} commands NOT in print_main.tsv "
+        f"({len(spurious_cmds)} total); first examples:\n"
+        + "\n".join(spurious_cmds[:3])
+    )
+
+    # Sanity: at least some commands must be present
+    assert actual_counter, "Generated TeX contains no \\index[iv] commands."
+
+    # ── Excluded rows must not appear ─────────────────────────────────────────
     for row in excluded_rows:
         if row.get("form_role") != "regular_output":
             continue
         if explicit_key(row) in main_explicit_keys:
             continue
         command = index_command(row)
-        if command in main_commands:
+        if command in expected_command_set:
             continue
         assert command not in tex_text, f"Excluded explicit regular_output leaked into TeX: {command}"
 
     reader_failure_rows = [row for row in form_rows if (row.get("source_scope") or "").startswith("reader_failure_")]
     for row in reader_failure_rows:
         command = index_command(row)
-        if command in main_commands:
+        if command in expected_command_set:
             continue
         assert command not in tex_text, f"Reader-facing failure row leaked into TeX: {command}"
 
-    for form in ("fogol", "woll", "wylf", "*bakan"):
-        for row in excluded_rows:
-            if row.get("form") != form:
-                continue
-            if row.get("source_scope") == "explicit_tag" and explicit_key(row) in main_explicit_keys:
-                continue
-            command = index_command(row)
-            if command in main_commands:
-                continue
-            assert command not in tex_text, f"Excluded form leaked into TeX index commands: {command}"
-
-    for language, sort_key, display in tex_commands:
+    # ── Prose/rule-word contamination ─────────────────────────────────────────
+    for _, sort_key, display in parse_tex_index_commands(tex_text):
         token_sort = normalized_index_token(sort_key)
         token_display = normalized_index_token(display)
-        assert token_sort not in {"monch", "jugend"}, f"Unexpected prose index entry leaked into TeX: {sort_key}@{display}"
-        assert token_display not in {"mönch", "jugend"}, f"Unexpected prose index entry leaked into TeX: {sort_key}@{display}"
+        assert token_sort not in {"monch", "jugend"}, f"Unexpected prose index entry: {sort_key}@{display}"
+        assert token_display not in {"mönch", "jugend"}, f"Unexpected prose index entry: {sort_key}@{display}"
         assert token_sort not in PROSE_RULE_WORDS and token_display not in PROSE_RULE_WORDS, (
-            f"Prose/rule-label token leaked into TeX index commands: {sort_key}@{display}"
+            f"Prose/rule-label token leaked into index: {sort_key}@{display}"
         )
 
-    included_explicit_rows = [row for row in main_rows if row.get("source_scope") == "explicit_tag"]
-    assert included_explicit_rows, "Expected at least one printable explicit-tag row."
-    assert any(index_command(row) in tex_text for row in included_explicit_rows), "No printable explicit-tag command found in TeX."
-
-    assert r"\printindex[iv]" in tex_text, "Missing unified \\printindex[iv] command in TeX."
-
-    for language in ("greek", "skt", "lat"):
-        language_rows = [row for row in included_explicit_rows if row.get("language") == language]
-        if language_rows:
-            assert any(index_command(row) in tex_text for row in language_rows), f"Missing explicit {language} index commands in TeX."
-
+    # ── Spot-check specific known entries ─────────────────────────────────────
     assert "Modern English linguistic forms" not in tex_text
-    assert r"\makeindex[name=iv,title={},columns=3]" in tex_text, "Missing unified \\makeindex[name=iv] declaration in TeX."
     assert r"\chapter*{Old English}" not in tex_text
     assert r"\chapter*{Proto-Germanic}" not in tex_text
 
@@ -222,6 +298,16 @@ def main() -> None:
     ):
         command = index_command(row)
         assert command in tex_text, f"Missing expected TeX index command for {label}: {command}"
+
+    # ── Architecture invariant assertions (negative fixtures) ──────────────────
+    # These should ALWAYS hold and serve as negative fixtures:
+    assert r"\index[preoe]{" not in tex_text, (
+        "Direct per-language preoe index command must not appear; all commands must use \\index[iv]{...}."
+    )
+    assert r"\indexsetup{level=\section*,noclearpage}" in header_text, (
+        "Expected indexsetup with level=\\section* in book_draft_pdf_header.tex."
+    )
+    assert r"\indexsetup{level=\chapter*" not in header_text
 
     print("book draft tex index policy checks passed")
 

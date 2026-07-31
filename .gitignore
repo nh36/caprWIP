@@ -27,3 +27,15 @@ docs/references/*.pdf
 
 # OCR cache
 .cache/
+
+# LaTeX/XeLaTeX build artifacts — not canonical tracked outputs
+texput.log
+*.aux
+*.log
+*.toc
+# .idx/.ind/.ilg are intermediate MakeIndex files deleted by build_capr_book_draft_docker.sh
+# Allowing them here is belt-and-suspenders for dev environments
+Germanic/docs/assembly/*.idx
+Germanic/docs/assembly/*.ind
+Germanic/docs/assembly/*.ilg
+Germanic/docs/assembly/*.pre_locator.tex

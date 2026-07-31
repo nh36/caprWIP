@@ -115,6 +115,8 @@ python3 Germanic/tools/check_print_index_ready.py --tex-path "${combined_tex}"
 python3 Germanic/tools/check_bibliographic_locator_render.py \
   --tex-path "${combined_tex}" \
   --pdf-path "${combined_pdf}"
+# Negative-fixture regression: each known-bad pattern must still be rejected
+python3 Germanic/tools/check_index_architecture_negatives.py
 
 echo "Generated ${intro_pdf}"
 echo "Generated ${combined_md}"

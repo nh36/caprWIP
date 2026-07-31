@@ -685,15 +685,58 @@ def run_corpus_lints() -> None:
         r'[^}]*\.(lex|iv|pred|recon|ex)[^}]*\}'  # outer semantic class
     )
 
-    # All canonical reader-facing Markdown sources
+    # Canonical book Markdown sources, derived from the actual build architecture.
+    # The canonical build assembles:
+    #   - capr_book_intro_alpha_01.md (Part 0 / Introduction)
+    #   - reader_facing_local_section_19.md (Part I), assembled from:
+    #       * individual chapter files from the build script's chapter_files list
+    #       * chapter intro files (chap*-*.md)
+    #   - lexical_volume_alpha_01.md (Part II), assembled from model entries
+    #
+    # We scan the individual sources rather than the assembled artifacts so that
+    # file and line-number diagnostics point to the canonical edit locations.
+
+    reader_facing_root = ROOT / "docs" / "sound_changes" / "reader_facing"
+    build_script = reader_facing_root / "build_reader_facing_local_section_19_docker.sh"
+
     source_paths: list[Path] = []
-    source_paths.extend(MODEL_ENTRIES.glob("*.model.md"))
-    source_paths.extend((ROOT / "docs" / "sound_changes" / "reader_facing").glob("0[0-9][0-9]-*.md"))
-    # Chapter introduction files (chap*.md) in the reader_facing directory
-    source_paths.extend((ROOT / "docs" / "sound_changes" / "reader_facing").glob("chap*-*.md"))
+
+    # Book introduction
     intro_path = ROOT / "docs" / "assembly" / "capr_book_intro_alpha_01.md"
     if intro_path.exists():
         source_paths.append(intro_path)
+
+    # Part I: individual sound-change files (derived from the build script chapter_files list)
+    if build_script.exists():
+        try:
+            import ast as _ast
+            text_bs = build_script.read_text(encoding="utf-8")
+            m = __import__("re").search(r"chapter_files\s*=\s*(\[[^\]]*\])", text_bs, __import__("re").S)
+            if m:
+                chapter_fnames = list(_ast.literal_eval(m.group(1)))
+                source_paths.extend(reader_facing_root / fn for fn in chapter_fnames if (reader_facing_root / fn).exists())
+        except Exception:
+            # Fallback to glob if parsing fails
+            source_paths.extend(reader_facing_root.glob("0[0-9][0-9]-*.md"))
+            source_paths.extend(reader_facing_root.glob("[0-9][0-9][0-9]-*.md"))
+    else:
+        source_paths.extend(reader_facing_root.glob("0[0-9][0-9]-*.md"))
+
+    # Part I: chapter introduction files
+    source_paths.extend(reader_facing_root.glob("chap*-*.md"))
+
+    # Part II: model entry files (feed the lexical volume)
+    source_paths.extend(MODEL_ENTRIES.glob("*.model.md"))
+
+    # Deduplicate preserving first-seen order
+    seen_paths: set[Path] = set()
+    deduped: list[Path] = []
+    for p in source_paths:
+        rp = p.resolve()
+        if rp not in seen_paths:
+            seen_paths.add(rp)
+            deduped.append(p)
+    source_paths = [p for p in deduped if p.exists()]
 
     for path in source_paths:
         text = path.read_text(encoding="utf-8")
@@ -1227,6 +1270,43 @@ def run_render_level_fixtures() -> None:
     assert_true(r"\Recon{júką}" in tex, ".recon+.iv must render .recon form")
 
 
+def run_recon_star_render_fixtures() -> None:
+    """Fail-closed renderer validation: starred .recon spans must cause hard render failure.
+
+    This exercises the production reconstructed_form_filter.lua directly.
+    The Python source lint catches bad markup at source time; this ensures the
+    *renderer* also refuses to generate **form even if a future source path is
+    missed by the Python glob.
+    """
+    # Valid .recon renders successfully — star supplied by \\Recon macro
+    code, tex = run_pandoc_render("[júką]{.recon} 'yoke'", filters=[RECON_FILTER], fmt="latex")
+    assert_true(code == 0, "Valid [júką]{.recon} must render successfully (exit 0)")
+    assert_true(r"\Recon{júką}" in tex, "Valid .recon must render as \\Recon{júką}")
+    assert_true(r"\Recon{*" not in tex, "Valid .recon must not produce doubled-star \\Recon{*...}")
+
+    # .recon with leading literal * must cause render failure (exit non-zero)
+    bad_literal, _ = run_pandoc_render("[*júką]{.recon}", filters=[RECON_FILTER], fmt="latex")
+    assert_true(bad_literal != 0, "[*júką]{.recon} must cause render failure — doubled star would result")
+
+    # .recon with leading escaped \\* must also cause render failure
+    bad_escaped, _ = run_pandoc_render("[\\*júką]{.recon}", filters=[RECON_FILTER], fmt="latex")
+    assert_true(bad_escaped != 0, "[\\*júką]{.recon} must cause render failure")
+
+    # .recon .iv combined: same star invariant applies
+    bad_combined, _ = run_pandoc_render(
+        "[*júką]{.recon .iv lang=pgmc sort=juką}",
+        filters=[RECON_FILTER], fmt="latex"
+    )
+    assert_true(bad_combined != 0, "[*júką]{.recon .iv} must also fail at the renderer")
+
+    # Literal * outside a .recon span is allowed (e.g. backtick notation, pred, plain text)
+    ok_outside, _ = run_pandoc_render("`*form` outside recon", filters=[RECON_FILTER], fmt="latex")
+    assert_true(ok_outside == 0, "Literal * outside .recon must not be blocked by the filter")
+
+    ok_pred, _ = run_pandoc_render("[*ġoc*]{.pred}", filters=[RECON_FILTER, PRED_FILTER], fmt="latex")
+    assert_true(ok_pred == 0, ".pred with * is allowed — .pred is not .recon")
+
+
 # ── Generation-freshness check ────────────────────────────────────────────────
 BOOK_BUILDER = ROOT / "docs" / "assembly" / "build_capr_book_draft.py"
 LEXVOL_BUILDER = ROOT / "docs" / "assembly" / "build_full_lexical_volume.py"
@@ -1707,6 +1787,7 @@ def main() -> int:
         run_class_compat_fixtures()
         run_lang_code_fixtures()
         run_render_level_fixtures()
+        run_recon_star_render_fixtures()
         run_occurrence_gating_fixture()
         run_stats_regression()
         run_known_entry_checks()
