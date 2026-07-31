@@ -31,8 +31,8 @@ stage; the reader-facing section notes this divergence explicitly.
 One other historically Proto-Germanic change, Gm-simplification
 (`SC002 PGmcGmSimplification`), is documented in the book-entry plan and
 its literature dossier confirms the source base is narrow (two lexical
-families: [*draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
-[*taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'; [@Kroonen2013, pp. 101, 511]).
+families: [draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
+[taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'; [@Kroonen2013, pp. 101, 511]).
 A reader-facing section for SC002 awaits a stronger explanatory source base
 and is not yet assembled in the reader-facing sequence.
 

@@ -537,14 +537,17 @@ TRANSLIT_MAP = {
 
 
 def write_index_registry_header(production_rows: list[ProductionOccurrence]) -> None:
-    languages_in_use = {row.language for row in production_rows}
-    lines = []
-    for row in LANGUAGE_REGISTRY:
-        if row["code"] not in languages_in_use:
-            continue
-        lines.append(
-            rf"\makeindex[name={row['code']},title={{{row['title']}}},columns={row['columns']}]"
-        )
+    """Write the book_draft_index_registry.tex with a single unified index declaration.
+
+    All languages are indexed under the single 'iv' index stream using two-level
+    MakeIndex entries (language-group@title!form-sort@form-display). This produces
+    one continuous three-column index where language names are group headings within
+    the flow rather than independently balanced per-language column sets.
+    """
+    lines = [
+        r"\newcommand{\ivlangheader}[1]{}",
+        r"\makeindex[name=iv,title={},columns=3]",
+    ]
     INDEX_HEADER_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

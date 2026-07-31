@@ -662,7 +662,16 @@ def assert_generated_consistency() -> None:
     # preoe can now be printed if it has include_main rows (removed blanket ban from §11)
 
     registry_codes = parse_registry_codes()
-    assert registry_codes == print_languages
+    # With unified index (name=iv), registry contains only 'iv'; every print language is covered.
+    # With per-language indexes (legacy), registry must exactly match print languages.
+    if registry_codes == {"iv"}:
+        # Unified index: all print languages are indexed under the single 'iv' stream.
+        assert print_languages, "Expected at least one printable language with the unified index."
+    else:
+        assert registry_codes == print_languages, (
+            f"Registry codes do not match print languages: registry={sorted(registry_codes)}, "
+            f"print={sorted(print_languages)}"
+        )
 
     for code in ("dutch", "german", "modeng"):
         if code in form_languages:
@@ -1071,6 +1080,7 @@ def assert_print_layer_outputs() -> None:
     assert "check_print_index_ready.py" in docker_build_text
     assert "index_verborum_print_main.tsv" in filter_text
     assert r"\indexsetup{level=\section*,noclearpage}" in header_text
+    assert r"\indexsetup{level=\chapter*" not in header_text
     assert "toclevel" not in header_text
     assert "Old English forms" not in REGISTRY_TEX_PATH.read_text(encoding="utf-8")
     assert "Proto-Germanic forms" not in REGISTRY_TEX_PATH.read_text(encoding="utf-8")
@@ -1087,9 +1097,12 @@ def assert_print_layer_outputs() -> None:
         "No preoe rows should be excluded by default (blanket preoe exclusion removed); "
         f"found: {[row['form'] for row in preoe_excluded_rows]}"
     )
-    # preoe must be in registry if it has printable rows
+    # preoe must be in registry (or covered by unified index) if it has printable rows
     if preoe_main_rows:
-        assert "preoe" in parse_registry_codes()
+        registry_codes_now = parse_registry_codes()
+        assert "preoe" in registry_codes_now or "iv" in registry_codes_now, (
+            "preoe rows are printable but neither 'preoe' nor the unified 'iv' index is in the registry"
+        )
     assert not any(row["source_scope"].startswith("reader_failure_") for row in main_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in forms_rows)
     assert not any(row["form"] in {"Mönch", "Jugend"} for row in main_rows)
@@ -1224,13 +1237,13 @@ def assert_reader_failure_pair_roles() -> None:
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
-        ("### knob — OE _\\*cnobba_", r"\index[oe]{cnobba@\emph{*cnobba}}"),
-        ("### reek — OE _\\*rēac_", r"\index[oe]{reac@\emph{*rēac}}"),
-        ("### strew — OE _\\*strīeġan_", r"\index[oe]{striegan@\emph{*strīeġan}}"),
+        ("## knob — OE _\\*cnobba_", r"\index[iv]{02oe@\textbf{Old English}!cnobba@\emph{*cnobba}}"),
+        ("## reek — OE _\\*rēac_", r"\index[iv]{02oe@\textbf{Old English}!reac@\emph{*rēac}}"),
+        ("## strew — OE _\\*strīeġan_", r"\index[iv]{02oe@\textbf{Old English}!striegan@\emph{*strīeġan}}"),
     ):
         start = text.index(heading)
         window = text[start : start + 400]
-        assert needle in window
+        assert needle in window, f"Missing expected index command near {heading!r}: {needle!r}"
 
 
 def main() -> None:

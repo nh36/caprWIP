@@ -808,7 +808,6 @@ pgmc	*bōsmaz	selected_input	trace_proto_input	bosom — OE bōsm
 pgmc	*būrą	selected_input	trace_proto_input	bower — OE būr
 pgmc	*bḗrō	selected_input	trace_proto_input	bier — OE bǣr
 pgmc	*bḗrō	source_protoform	lexical_protoform	bier — OE bǣr
-pgmc	*draugma-	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	*dránkiz	selected_input	trace_proto_input	drench — OE drenċ
 pgmc	*dráugmaz	selected_input	trace_proto_input	dream — OE drēam
 pgmc	*drínkaną	selected_input	trace_proto_input	drink — OE drincan
@@ -823,7 +822,6 @@ pgmc	*déliz	selected_input	trace_proto_input	dill — OE dile
 pgmc	*déliz	source_protoform	lexical_protoform	dill — OE dile
 pgmc	*déljaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md
 pgmc	*déljaz	source_protoform	lexical_proto	dill — OE dile
-pgmc	*déuzaz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	*déuzą	selected_input	trace_proto_input	deer — OE dēor
 pgmc	*dúrą	selected_input	trace_proto_input	door — OE dor
 pgmc	*dúrą	source_protoform	lexical_protoform	door — OE dor
@@ -1022,7 +1020,6 @@ pgmc	*líznô	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_en
 pgmc	*líznô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md
 pgmc	*líznô	selected_input	trace_proto_input	learn (iptv.2sg) — OE liorna
 pgmc	*líznô	source_protoform	lexical_protoform	learn (iptv.2sg) — OE liorna
-pgmc	*líznōjaną	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	*líznōjaną	selected_input	trace_proto_input	learn — OE liornian
 pgmc	*líznōjaną	source_protoform	lexical_protoform	learn — OE liornian
 pgmc	*líznōθi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md
@@ -1118,7 +1115,6 @@ pgmc	*rastō	source_protoform	lexical_proto	rest — OE ræste
 pgmc	*rastō-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md
 pgmc	*rauki-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md
 pgmc	*ráipą	selected_input	trace_proto_input	rope — OE rāp
-pgmc	*rástōz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	*rástōz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md
 pgmc	*rástōz	selected_input	trace_proto_input	rest — OE ræste
 pgmc	*rástōz	source_protoform	lexical_protoform	rest — OE ræste
@@ -1286,7 +1282,6 @@ pgmc	*súrgō	selected_input	trace_proto_input	sorrow — OE sorg
 pgmc	*sōkijaną	selected_input	trace_proto_input	seek — OE sēċan
 pgmc	*sūpaną	selected_input	trace_proto_input	sup — OE sūpan
 pgmc	*sḯdōn	selected_input	trace_proto_input	side — OE sīde
-pgmc	*taugma-	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	*timbra-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md
 pgmc	*timra	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md
 pgmc	*trédaną	selected_input	trace_proto_input	tread — OE tredan
@@ -1449,7 +1444,6 @@ pgmc	*xértōn	selected_input	trace_proto_input	heart — OE heorte
 pgmc	*xérθaz	selected_input	trace_proto_input	hearth — OE heorþ
 pgmc	*xúnagą	selected_input	trace_proto_input	honey — OE huniġ
 pgmc	*xúndaz	selected_input	trace_proto_input	hound — OE hund
-pgmc	*xúrdaz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	*xúrną	selected_input	trace_proto_input	horn — OE horn
 pgmc	*xúrną	source_protoform	lexical_protoform	horn — OE horn
 pgmc	*xúzdą	selected_input	trace_proto_input	hoard — OE hord
@@ -1507,8 +1501,10 @@ pgmc	bázją	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_en
 pgmc	béuganą	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md
 pgmc	búkkaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1973-buck-bucc.model.md
 pgmc	bḗrō	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md
+pgmc	draugma-	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	déliz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md
 pgmc	déljaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md
+pgmc	déuzaz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	fastēną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md
 pgmc	flaskō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md
 pgmc	flaskǭ	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md
@@ -1536,6 +1532,7 @@ pgmc	likkōjanan	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/mode
 pgmc	líbēθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2107-live-lifeþ.model.md
 pgmc	líkkōθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md
 pgmc	líznô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md
+pgmc	líznōjaną	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	líznōθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md
 pgmc	mizdō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md
 pgmc	mákô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md
@@ -1550,6 +1547,7 @@ pgmc	nēdrōn	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc	nḗdrōn	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md
 pgmc	nḗðlō	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md
 pgmc	nḗθlō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md
+pgmc	rástōz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	rástōz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md
 pgmc	ráukaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md
 pgmc	ráukiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md
@@ -1576,6 +1574,7 @@ pgmc	sái	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entri
 pgmc	sáiwiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md
 pgmc	sápą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md
 pgmc	síbi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md
+pgmc	taugma-	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	táppô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md
 pgmc	wainōjanan	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
 pgmc	wábsaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md
@@ -1595,6 +1594,7 @@ pgmc	xámaras	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_ent
 pgmc	xámaraz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md
 pgmc	xémenaz	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md
 pgmc	xémonų	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md
+pgmc	xúrdaz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md
 pgmc	θréjez	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md
 pgmc	θéstilaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md
 pgmc	θístilas	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md

@@ -54,7 +54,7 @@ def find_recon_span_issues(text: str, source: str) -> list[ReconIssue]:
     for m in RECON_SPAN_RE.finditer(text):
         content = m.group("content").strip()
         span = m.group(0)
-        if content.startswith("*"):
+        if content.startswith("*") or content.startswith("\\*"):
             issues.append(ReconIssue(source, span, "leading literal '*' inside .recon span"))
         if "'" in content or "‘" in content or "’" in content:
             issues.append(ReconIssue(source, span, "gloss text inside .recon span"))
@@ -203,6 +203,7 @@ def run_recon_duplicate_fixtures() -> None:
     bad_recon_cases = [
         "[nasō ... OE nasu]{.recon}",
         "[*júką]{.recon}",
+        "[\\*júką]{.recon}",          # escaped asterisk inside .recon also wrong
         "[náxti > niht]{.recon}",
         "[júką 'yoke']{.recon}",
     ]
@@ -212,6 +213,8 @@ def run_recon_duplicate_fixtures() -> None:
     good_recon_cases = [
         "[júką]{.recon} 'yoke'",
         "[wír-àldu]{.recon} 'world'",
+        # Literal * outside a .recon span (e.g. notation in prose) must not be flagged:
+        "[draugma-]{.recon .iv lang=pgmc sort=draugma} `*gm` cluster",
     ]
     for case in good_recon_cases:
         assert_true(not find_recon_span_issues(case, "fixture"), f"expected recon pass: {case}")
@@ -686,6 +689,8 @@ def run_corpus_lints() -> None:
     source_paths: list[Path] = []
     source_paths.extend(MODEL_ENTRIES.glob("*.model.md"))
     source_paths.extend((ROOT / "docs" / "sound_changes" / "reader_facing").glob("0[0-9][0-9]-*.md"))
+    # Chapter introduction files (chap*.md) in the reader_facing directory
+    source_paths.extend((ROOT / "docs" / "sound_changes" / "reader_facing").glob("chap*-*.md"))
     intro_path = ROOT / "docs" / "assembly" / "capr_book_intro_alpha_01.md"
     if intro_path.exists():
         source_paths.append(intro_path)

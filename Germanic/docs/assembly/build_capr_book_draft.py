@@ -36,11 +36,38 @@ def latex_escape(value: str) -> str:
     return value.replace("@", r"\@").replace("!", r"\!").replace("|", r"\|")
 
 
+def _build_lang_order() -> dict[str, tuple[str, str]]:
+    """Return {code: (order_prefix_str, title)} from the language registry."""
+    result: dict[str, tuple[str, str]] = {}
+    with LANGUAGE_REGISTRY_PATH.open(encoding="utf-8") as handle:
+        for order, row in enumerate(csv.DictReader(handle, delimiter="\t"), start=1):
+            code = (row.get("code") or "").strip()
+            title = (row.get("title") or "").strip()
+            active = (row.get("active") or "").strip()
+            if code and active == "1":
+                result[code] = (f"{order:02d}{code}", title)
+    return result
+
+
+_LANG_ORDER: dict[str, tuple[str, str]] | None = None
+
+
+def get_lang_order() -> dict[str, tuple[str, str]]:
+    global _LANG_ORDER
+    if _LANG_ORDER is None:
+        _LANG_ORDER = _build_lang_order()
+    return _LANG_ORDER
+
+
 def index_command(language: str, sort_key: str, display: str) -> str:
     index_display = latex_escape(display)
     if language == "oe":
         index_display = rf"\emph{{{index_display}}}"
-    return rf"\index[{language}]{{{latex_escape(sort_key)}@{index_display}}}"
+    lang_order = get_lang_order()
+    lang_prefix, lang_title = lang_order.get(language, (f"99{language}", language))
+    lang_title_escaped = lang_title.replace("@", r"\@").replace("!", r"\!")
+    lang_header = rf"\textbf{{{lang_title_escaped}}}"
+    return rf"\index[iv]{{{lang_prefix}@{lang_header}!{latex_escape(sort_key)}@{index_display}}}"
 
 
 def oe_target_display(counterpart: str, derivation_class: str) -> str:
@@ -230,28 +257,70 @@ def transform_chronology(text: str) -> str:
     return "\n".join(out).rstrip()
 
 
+_PART_HEADING_RE = re.compile(r"^## Part [IVX]+\.\s+(.+)$")
+
+
 def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
+    """Emit lexical material at correct heading levels for the book.
+
+    Front matter (Introduction, Data and sources, Transducer and derivation
+    method, Derivation classes) becomes an unnumbered ``# Word-by-word
+    derivations {.unnumbered}`` chapter so it consumes no chapter number,
+    analogous to the Part I Sound-change overview.
+
+    Each ``## Part N. TITLE`` heading becomes a real book chapter (``# TITLE``).
+    Lexical entries (``### word — OE form``) become sections (``## word — OE form``).
+    Entry subsections (``#### Derivation trace`` etc.) become subsections (``###``).
+    """
     out: list[str] = []
+    preamble: list[str] = []
+    seen_part = False
+
     lines = strip_title_block(text).splitlines()
     if lines and lines[0].startswith("_Alpha 01"):
         lines = lines[1:]
         while lines and not lines[0].strip():
             lines = lines[1:]
+
     for line in lines:
-        if line.startswith("## Part "):
-            line = re.sub(r"^## Part [IVX]+\.\s+", "## ", line)
-        out.append(line)
-        if line.startswith("### "):
+        m_part = _PART_HEADING_RE.match(line)
+        if m_part:
+            if not seen_part and preamble:
+                # Emit front matter as unnumbered chapter with unnumbered sections
+                out.append("# Word-by-word derivations {.unnumbered}")
+                for p in preamble:
+                    if p.startswith("## ") and not p.rstrip().endswith("{.unnumbered}"):
+                        out.append(p.rstrip() + " {.unnumbered}")
+                    else:
+                        out.append(p)
+                preamble = []
+                out.append("")
+            seen_part = True
+            out.append("# " + m_part.group(1))
+        elif not seen_part:
+            preamble.append(line)
+        elif line.startswith("### "):
+            # Lexical entry heading: demote to ## (section within derivation-class chapter)
+            entry_text = line[3:]  # keep the leading space from "### "
+            out.append("##" + entry_text)
+            # Inject index commands after each entry heading
             ref = line[4:].strip()
             if " — OE _" in ref and ref.endswith("_"):
                 lexical_item, target = ref.split(" — OE ", 1)
-                # perform the replacement before interpolating into the f-string to avoid backslashes inside f-string expressions
                 cleaned_target = target[1:-1].replace('\\*', '*')
                 ref = f"{lexical_item} — OE {cleaned_target}"
             commands = commands_by_ref.get(ref, [])
             if commands:
                 out.append("")
                 out.extend(commands)
+        elif line.startswith("#### "):
+            # Entry subsection (Derivation trace, Reconstruction...) → ###
+            out.append("###" + line[4:])
+        elif line.startswith("##### "):
+            out.append("####" + line[5:])
+        else:
+            out.append(line)
+
     return "\n".join(out).rstrip()
 
 
@@ -263,14 +332,13 @@ def build_book_markdown() -> str:
         annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8")),
         commands_by_ref,
     )
-    index_parts = [rf"\printindex[{language}]" for language in nonempty_languages]
+    index_parts = [r"\printindex[iv]"]
     parts = [
         r"\mainmatter",
         intro,
         r"\part{Sound changes, formalization, and relative chronology}",
         chronology,
         r"\part{Lexical derivations}",
-        "# Word-by-word derivations",
         lexical,
         r"\backmatter",
         "# References",

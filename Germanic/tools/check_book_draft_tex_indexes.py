@@ -11,6 +11,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
+LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 INDEX_HEADER_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_pdf_header.tex"
 DEFAULT_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.tex"
 PROSE_RULE_WORDS = {"form", "output", "expected", "stage", "rule"}
@@ -25,6 +26,28 @@ def latex_escape(value: str) -> str:
     return value.replace("@", r"\@").replace("!", r"\!").replace("|", r"\|")
 
 
+def _check_build_lang_order() -> dict[str, tuple[str, str]]:
+    result: dict[str, tuple[str, str]] = {}
+    with LANGUAGE_REGISTRY_PATH.open(encoding="utf-8") as handle:
+        for order, row in enumerate(csv.DictReader(handle, delimiter="\t"), start=1):
+            code = (row.get("code") or "").strip()
+            title = (row.get("title") or "").strip()
+            active = (row.get("active") or "").strip()
+            if code and active == "1":
+                result[code] = (f"{order:02d}{code}", title)
+    return result
+
+
+_CHECK_LANG_ORDER: dict[str, tuple[str, str]] | None = None
+
+
+def check_get_lang_order() -> dict[str, tuple[str, str]]:
+    global _CHECK_LANG_ORDER
+    if _CHECK_LANG_ORDER is None:
+        _CHECK_LANG_ORDER = _check_build_lang_order()
+    return _CHECK_LANG_ORDER
+
+
 def index_command(row: dict[str, str]) -> str:
     language = row.get("language", "")
     sort_key = row.get("sort_key", "")
@@ -32,7 +55,11 @@ def index_command(row: dict[str, str]) -> str:
     index_display = latex_escape(display)
     if language == "oe":
         index_display = rf"\emph{{{index_display}}}"
-    return rf"\index[{language}]{{{latex_escape(sort_key)}@{index_display}}}"
+    lang_order = check_get_lang_order()
+    lang_prefix, lang_title = lang_order.get(language, (f"99{language}", language))
+    lang_title_escaped = lang_title.replace("@", r"\@").replace("!", r"\!")
+    lang_header = rf"\textbf{{{lang_title_escaped}}}"
+    return rf"\index[iv]{{{lang_prefix}@{lang_header}!{latex_escape(sort_key)}@{index_display}}}"
 
 
 def explicit_key(row: dict[str, str]) -> tuple[str, str, str, str]:
@@ -56,14 +83,30 @@ def decode_latex_index_value(value: str) -> str:
 
 
 def parse_tex_index_commands(tex_text: str) -> list[tuple[str, str, str]]:
+    """Parse \\index[iv]{LANGPREFIX@TITLE!sort@display} into (lang_prefix, sort, display) tuples."""
     commands: list[tuple[str, str, str]] = []
+    # Match both legacy per-language and new unified format
     for match in re.finditer(r"\\index\[(?P<lang>[^\]]+)\]\{(?P<body>[^}]*)\}", tex_text):
+        lang = match.group("lang")
         body = match.group("body")
-        if "@" in body:
-            sort_key, display = body.split("@", 1)
+        if lang == "iv" and "!" in body:
+            # Unified two-level: LANGPREFIX@TITLE!sort@display
+            # Split on first un-escaped !
+            parts = re.split(r"(?<!\\)!", body, maxsplit=1)
+            if len(parts) == 2:
+                lang_part, form_part = parts
+                if "@" in form_part:
+                    sort_key, display = form_part.split("@", 1)
+                else:
+                    sort_key, display = form_part, form_part
+                commands.append((lang, decode_latex_index_value(sort_key), decode_latex_index_value(display)))
         else:
-            sort_key, display = body, body
-        commands.append((match.group("lang"), decode_latex_index_value(sort_key), decode_latex_index_value(display)))
+            # Legacy or non-iv format
+            if "@" in body:
+                sort_key, display = body.split("@", 1)
+            else:
+                sort_key, display = body, body
+            commands.append((lang, decode_latex_index_value(sort_key), decode_latex_index_value(display)))
     return commands
 
 
@@ -91,8 +134,9 @@ def main() -> None:
         if row.get("source_scope") == "explicit_tag"
     }
 
-    assert r"\index[preoe]{" not in tex_text, "Generated TeX must not emit preoe index commands."
-    assert r"\indexsetup{level=\section*,noclearpage}" in header_text
+    # With unified index, all commands go through \index[iv]{...}; no per-language \index[lang] should appear
+    assert r"\index[preoe]{" not in tex_text, "Direct preoe index command must not appear; use unified iv index."
+    assert r"\indexsetup{level=\section*,noclearpage}" in header_text, "Expected indexsetup with level=\\section* for index layout."
     assert r"\indexsetup{level=\chapter*" not in header_text
 
     for row in excluded_rows:
@@ -136,9 +180,7 @@ def main() -> None:
     assert included_explicit_rows, "Expected at least one printable explicit-tag row."
     assert any(index_command(row) in tex_text for row in included_explicit_rows), "No printable explicit-tag command found in TeX."
 
-    print_languages = sorted({row.get("language", "") for row in main_rows if row.get("language")})
-    for code in print_languages:
-        assert rf"\printindex[{code}]" in tex_text, f"Missing printindex command for [{code}] in TeX."
+    assert r"\printindex[iv]" in tex_text, "Missing unified \\printindex[iv] command in TeX."
 
     for language in ("greek", "skt", "lat"):
         language_rows = [row for row in included_explicit_rows if row.get("language") == language]
@@ -146,7 +188,7 @@ def main() -> None:
             assert any(index_command(row) in tex_text for row in language_rows), f"Missing explicit {language} index commands in TeX."
 
     assert "Modern English linguistic forms" not in tex_text
-    assert r"\makeindex[name=modeng,title={Modern English},columns=3]" in tex_text
+    assert r"\makeindex[name=iv,title={},columns=3]" in tex_text, "Missing unified \\makeindex[name=iv] declaration in TeX."
     assert r"\chapter*{Old English}" not in tex_text
     assert r"\chapter*{Proto-Germanic}" not in tex_text
 

@@ -44,9 +44,9 @@ dossiers record the source-by-source picture where these distinctions matter.
 
 ### West Germanic rhotacism (SC003)
 
-The medial change of `*z` to `*r` in environments such as [*déuzaz]{.recon .iv lang=pgmc sort=deuzaz} 'deer',
-[*xúrdaz]{.recon .iv lang=pgmc sort=xurdaz} 'hoard', and
-[*líznōjaną]{.recon .iv lang=pgmc sort=liznojana} 'learn' is historically a
+The medial change of `*z` to `*r` in environments such as [déuzaz]{.recon .iv lang=pgmc sort=deuzaz} 'deer',
+[xúrdaz]{.recon .iv lang=pgmc sort=xurdaz} 'hoard', and
+[líznōjaną]{.recon .iv lang=pgmc sort=liznojana} 'learn' is historically a
 post-Proto-West-Germanic development. Ringe and Taylor argue that rhotacism was
 not inherited from Proto-Northwest Germanic and was not uniform within West
 Germanic [@RingeTaylor2014, pp. 52, 98, 102]. Crist separates this change
@@ -63,7 +63,7 @@ the historical description.
 
 ### Word-final `*z` deletion (SC020)
 
-The deletion of word-final `*z` in forms such as [*rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest (nom.sg.)'
+The deletion of word-final `*z` in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest (nom.sg.)'
 is placed here on the basis of Crist's analysis, which distinguishes
 a pan-West-Germanic loss of `*z` after unstressed vowels from the earlier
 NWGmc changes and from the later narrower Ingvaeonic deletion rules

@@ -1,4 +1,6 @@
 local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
+local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
+local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local explicit_allow = nil
 
 local function trim(value)
@@ -30,6 +32,61 @@ end
 
 local function explicit_key(language, role, value, source_ref)
   return (language or "") .. "\t" .. (role or "") .. "\t" .. (value or "") .. "\t" .. (source_ref or "")
+end
+
+local function ensure_lang_meta_loaded()
+  if lang_meta ~= nil then return lang_meta end
+  lang_meta = {}
+  local order = 0
+  local handle = io.open(LANGUAGE_REGISTRY_TSV, "r")
+  if not handle then
+    error("index_verborum_filter.lua: cannot read " .. LANGUAGE_REGISTRY_TSV)
+  end
+  local header_line = handle:read("*l")
+  if not header_line then handle:close(); return lang_meta end
+  -- parse header to find column indices
+  local headers = {}
+  local start_at = 1
+  while true do
+    local tab = header_line:find("\t", start_at, true)
+    if tab then
+      table.insert(headers, header_line:sub(start_at, tab-1))
+      start_at = tab + 1
+    else
+      table.insert(headers, header_line:sub(start_at))
+      break
+    end
+  end
+  local code_idx, title_idx, active_idx = nil, nil, nil
+  for i, h in ipairs(headers) do
+    if h == "code" then code_idx = i
+    elseif h == "title" then title_idx = i
+    elseif h == "active" then active_idx = i
+    end
+  end
+  for line in handle:lines() do
+    if line ~= "" then
+      local cells = {}
+      local s = 1
+      while true do
+        local t = line:find("\t", s, true)
+        if t then table.insert(cells, line:sub(s, t-1)); s = t+1
+        else table.insert(cells, line:sub(s)); break end
+      end
+      local code = trim(cells[code_idx] or "")
+      local title = trim(cells[title_idx] or "")
+      local active = trim(cells[active_idx] or "")
+      if code ~= "" and active == "1" then
+        order = order + 1
+        local order_str = string.format("%02d", order)
+        -- escape @ and ! in title for MakeIndex
+        local escaped = title:gsub("@", "\\@"):gsub("!", "\\!")
+        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\textbf{" .. escaped .. "}"}
+      end
+    end
+  end
+  handle:close()
+  return lang_meta
 end
 
 local function ensure_print_main_loaded()
@@ -159,7 +216,11 @@ local function span_to_index(span)
   if lang == "oe" then
     index_display = "\\emph{" .. index_display .. "}"
   end
-  local raw = pandoc.RawInline("latex", "\\index[" .. lang .. "]{" .. latex_escape(sort) .. "@" .. index_display .. "}")
+  local meta = ensure_lang_meta_loaded()
+  local lm = meta[lang]
+  local lang_sort = lm and lm.order_str or ("99" .. lang)
+  local lang_display = lm and lm.escaped_title or ("\\textbf{" .. lang .. "}")
+  local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. latex_escape(sort) .. "@" .. index_display .. "}")
   return { visible, raw }
 end
 
