@@ -21,7 +21,7 @@
 | `012` Lþ-voicing note | `SC012` | `012-lth-voicing.md` | yes |
 | `013` Dental hardening note | `SC013` | `013-dental-hardening.md` | yes |
 | `014-015` Opening vowel prelude | `SC014;SC015` | `014-015-opening-vowel-prelude.md` | yes |
-| `016-020` Early vocalic/final corridor | `SC016;SC017;SC019;SC020` | `016-017-west-saxon-palatal-glide-and-u-lowering.md`, `019-020-final-long-o-raising-and-final-z-deletion.md` | yes |
+| `016-020` Early vocalic/final corridor | `SC016;SC017;SC019;SC020` | `017-nwgmc-u-lowering.md`, `019-nwgmc-final-long-o-raising.md`, `020-wgmc-final-z-deletion.md`, `016-west-saxon-palatal-glide.md` | yes |
 | `018` Stressed monosyllable o-raising note | `SC018` | `018-stressed-monosyllable-o-raising.md` | yes |
 | `021` Unstressed o-raising note | `SC021` | `021-unstressed-o-raising.md` | yes |
 | `022` Mn dissimilation note | `SC022` | `022-mn-dissimilation.md` | yes |
@@ -39,7 +39,7 @@
 | `043` Anglo-Frisian brightening | `SC043` | `043-anglo-frisian-brightening.md` | yes |
 | `044-045` Breaking and velar-fricative palatalization | `SC044;SC045` | `044-045-breaking-and-velar-fricative-palatalization.md` | yes |
 | `046-048` Restoration and nasal-tail corridor | `SC046;SC047;SC048` | `046-048-restoration-and-nasal-tail-changes.md` | yes |
-| `049-050` Onset allophony and Sievers-law bridge | `SC049;SC050` | `049-050-b-allophony-and-sievers-law-syncope.md` | yes |
+| `049-050` Onset allophony and Sievers-law bridge | `SC049;SC050` | `049-pgmc-b-allophony.md`, `050-pwgmc-sievers-law-syncope.md` | yes |
 | `051` OE Sk Palatalization | `SC051` | `051-sk-palatalization.md` | yes |
 | `052` Velar palatalization hinge | `SC052` | `052-velar-palatalization.md` | yes |
 | `053-054` Pre-umlaut bridge and W-loss | `SC053;SC054` | `053-054-pre-umlaut-bridge-and-w-loss.md` | yes |
@@ -65,7 +65,7 @@
 
 ## SC numbers covered by reader-facing rule sections
 
-`SC003`, `SC004`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, `SC013`, `SC014`, `SC015`, `SC016`, `SC017`, `SC018`, `SC019`, `SC020`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`, `SC041`, `SC042`, `SC043`, `SC044`, `SC045`, `SC046`, `SC047`, `SC048`, `SC049`, `SC050`, `SC051`, `SC052`, `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, `SC058`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`, `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
+`SC049`, `SC004`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, `SC013`, `SC014`, `SC015`, `SC017`, `SC018`, `SC019`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC041`, `SC042`, `SC050`, `SC003`, `SC020`, `SC043`, `SC016`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`, `SC044`, `SC045`, `SC046`, `SC047`, `SC048`, `SC051`, `SC052`, `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, `SC058`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`, `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
 
 ## Manifest rows not yet covered
 

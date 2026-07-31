@@ -36,25 +36,25 @@ East Germanic varieties.
 
 ## What this chapter contains
 
-The changes implemented in CAPR that belong historically to this stage are few.
-The current lexical corpus witnesses only one well-supported change in the
-CAPR rule set that is unambiguously Proto-Germanic internal: the simplification
-of the cluster [*gm]{.recon} 'consonant group' in the families behind
-[*draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and [*taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'
-[@Kroonen2013, pp. 101, 511].
+Chapter 1 contains one reader-facing sound-change section: the positional
+allophony of Proto-Germanic \emph{*b}, implemented as `SC049 PGmcBAllophony`.
+The rule governs the distribution of \emph{*b} as a stop versus a voiced
+bilabial fricative \emph{*β} depending on syllabic environment. Hogg, Ringe
+and Taylor, and Luick all identify this distribution as a Proto-Germanic
+feature [@Hogg1992, pp. 101--102; @RingeTaylor2014, p. 121; @Luick1914, p. 107].
 
-A second change with a Proto-Germanic historical label in the CAPR implementation,
-the allophony of initial labial stops (SC049), belongs here historically but is
-checkpointed later in the transducer cascade for computational reasons. Its
-chapter placement therefore diverges from its cascade position; the historical
-account is given here, and the reader-facing section cross-references this chapter.
+CAPR implements this rule late in the computational cascade because the
+alternation interacts with environments shaped by intermediate rule
+applications. The cascade placement therefore diverges from the historical
+stage; the reader-facing section notes this divergence explicitly.
 
-The thinness of Chapter 1 is real: the CAPR corpus does not yet have strong
-lexical witnesses that establish the relative chronology of early Proto-Germanic
-consonant changes. Most of the changes that traditional comparative grammars
-treat as Proto-Germanic-stage developments are either not represented in the CAPR
-corpus or are implemented as part of the input proto-forms rather than as explicit
-rule steps.
+One other historically Proto-Germanic change, Gm-simplification
+(`SC002 PGmcGmSimplification`), is documented in the book-entry plan and
+its literature dossier confirms the source base is narrow (two lexical
+families: [*draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
+[*taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'; [@Kroonen2013, pp. 101, 511]).
+A reader-facing section for SC002 awaits a stronger explanatory source base
+and is not yet assembled in the reader-facing sequence.
 
 ## Scope and genealogical context
 
@@ -81,6 +81,36 @@ may in some cases be a later development that affects only the West Germanic
 or Northwest Germanic branch; the chapter assignment in this staging map takes
 priority over the rule-name prefix for historical organization purposes.
 
+# B allophony
+
+## Historical discussion
+
+The positional alternation of Germanic \emph{*b} is a Proto-Germanic distributional feature. Hogg
+states the Old English distribution clearly: /b/ is a stop initially, after
+nasals, and in gemination, while the same segment is otherwise realized as a
+voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
+the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
+segment whose stop and fricative values depend on position
+[@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
+fricative pattern in Old English [@Luick1914, p. 107].
+
+The distribution is narrow, but later changes presuppose the stop-fricative
+alternation. CAPR implements the rule at a late cascade position for computational
+reasons: the alternation must interact with consonant environments shaped by
+intermediate rule applications. Its historical stage is Proto-Germanic.
+
+## \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
+
+```foma
+define PGmcBAllophony [
+    {*b} -> {*β} || PGmcStarVocalic _,
+    {*b} -> {*β} || [{*l} | {*r}] _
+] .o. [
+    {*β} -> {*b} || _ {*b}
+];
+```
+
+The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
 
 \newpage
 
@@ -180,9 +210,6 @@ not guarantee that the change is exclusive to Northwest Germanic, and a name
 beginning with `PWGmc` does not guarantee that it is absent from North Germanic.
 The historical analysis in each sound-change section takes priority over the
 name prefix.
-
-
-\newpage
 
 # Proto-West-Germanic ai-monophthongization
 
@@ -481,45 +508,18 @@ The derivation thus fixes front-vowel leveling before interstress raising while 
 
 \newpage
 
-# West Saxon palatal glide and u-lowering
+# Northwest Germanic u-lowering
 
-## Historical discussion of West Saxon palatal glide and u-lowering
+## Historical discussion
 
-The derivation of *ġeoc* ‘yoke’ passes through both rules. Campbell treats the West Saxon rising-diphthong spellings before back vowels, while the same handbook tradition describes the lowering of \emph{u} before a following non-high vowel separately [@Campbell1959, p. 17, §44; @Campbell1959, pp. 42--43, §115; @Fulk2018, p. 56, §4.3].
-
-The first change creates the West Saxon \emph{ġeoc} type; the second carries the same material into the subsequent vowel history.
-
-## Historical discussion of West Saxon palatal glide
-
-West Saxon spellings such as *ġeoc* ‘yoke’, *ġeong* ‘young’, and *ġeoguþ*
-‘youth’ reflect an early development before back vowels. Campbell gives the
-most direct handbook statement of the phenomenon [@Campbell1959, p. 17, §44].
-
-The sources establish [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), although the checked forms provide only a later boundary.
-
-## \CAPRRuleHeading{SC016. West Saxon palatal glide before back vowels}{OEWsPalatalGlide} {#rule-OEWsPalatalGlide}
-
-```foma
-define OEWsPalatalGlide [
-    {*j} {*u} -> {*j} {*e} {*u} || .#. _,
-    {*j} {*ú} -> {*j} {*é} {*u} || .#. _
-] .o. [
-    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _,
-    {*ʤ} {*ú} -> {*ʤ} {*é} {*u} || .#. _
-] .o. [
-    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _,
-    {*ʧ} {*ú} -> {*ʧ} {*é} {*u} || .#. _
-] .o. [
-    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _,
-    {*ʃ} {*ú} -> {*ʃ} {*é} {*u} || .#. _
-];
-```
-
-OE *ġeoc* ‘yoke’ fixes the close relation between glide insertion before back-vocalic \emph{u} and the following change.
-
-If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [júką]{.recon} ‘yoke’ yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ* 'youth' material establishes the lexical scope of the West Saxon development.
-
-## Historical discussion of u-lowering
+The derivation of *ġeoc* 'yoke' passes through both this change and the
+preceding West Saxon palatal glide ([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)).
+Campbell treats the West Saxon rising-diphthong spellings before back vowels,
+while the same handbook tradition describes the lowering of \emph{u} before a
+following non-high vowel separately [@Campbell1959, p. 17, §44;
+@Campbell1959, pp. 42--43, §115; @Fulk2018, p. 56, §4.3].
+The first change creates the West Saxon \emph{ġeoc} type; u-lowering then
+carries the same material into the subsequent vowel history.
 
 After the glide-conditioned West Saxon spellings are in place, the broader Northwest Germanic lowering of \emph{u} to \emph{o} before a following non-high vowel provides the clearest standard sound change in this small region. Campbell and Fulk both describe that change directly [@Campbell1959, pp. 42--43, §115; @Fulk2018, p. 56, §4.3].
 
@@ -540,9 +540,9 @@ define NWGmcULowering [
 ];
 ```
 
-Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* ‘yoke’, *nosu* ‘nose’, *sċofl* ‘shovel’, and *sorg* ‘sorrow’.
+Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* 'yoke', *nosu* 'nose', *sċofl* 'shovel', and *sorg* 'sorrow'.
 
-Before [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), PGmc [júką]{.recon} ‘yoke’ yields [*ġoc*]{.pred} rather than expected OE *ġeoc* ‘yoke’. After [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [núsō]{.recon} ‘nose’ yields [*nusu*]{.pred} rather than expected *nosu* ‘nose’, PGmc [skúflō]{.recon} ‘shovel’ yields [*sċufl*]{.pred} rather than expected *sċofl* ‘shovel’, and PGmc [súrgō]{.recon} ‘sorrow’ yields [*surg*]{.pred} rather than expected *sorg* ‘sorrow’. The two witness sets place [SC017 NWGmcULowering](#rule-NWGmcULowering) after glide formation and before final long-\emph{o} raising.
+Before [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), PGmc [júką]{.recon} 'yoke' yields [*ġoc*]{.pred} rather than expected OE *ġeoc* 'yoke'. After [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected *nosu* 'nose', PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected *sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather than expected *sorg* 'sorrow'. The two witness sets place [SC017 NWGmcULowering](#rule-NWGmcULowering) after glide formation and before final long-\emph{o} raising.
 
 \newpage
 
@@ -569,20 +569,20 @@ Reversing [SC018 NWGmcStressedMonosyllableORaising](#rule-NWGmcStressedMonosylla
 
 \newpage
 
-# Final long-\emph{o} raising and final \emph{z}-deletion
+# Raising of final unstressed long \emph{*ō}
 
-## Historical discussion of final long-\emph{o} raising and final \emph{z}-deletion
+## Historical discussion
 
-The same final-syllable structure undergoes both changes. Ringe and Taylor describe the change of unstressed final non-nasalized long \emph{*ō} to short \emph{*u}, while Hogg and Crist treat word-final \emph{*z} loss as a separate later step in West Germanic [@RingeTaylor2014, p. 30; @Hogg1992, p. 37; @Crist2002, p. 1].
+Ringe and Taylor describe the change of unstressed final non-nasalized long
+\emph{*ō} to short \emph{*u} as a Northwest Germanic development
+[@RingeTaylor2014, p. 30]. It applies in the same final-syllable environment
+as the subsequent loss of word-final \emph{*z}. The derivation of *ræste*
+'rest' fixes their local order: [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising)
+must still see final \emph{*ō}, and word-final \emph{*z}-deletion removes the following
+\emph{*z} only afterward.
 
-The derivation of *ræste* ‘rest’ fixes their order: [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) must still see final \emph{*ō}, and [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) removes final \emph{*z} only afterward.
-
-## Historical discussion of final long-\emph{o} raising
-
-The first change in the pair is the Northwest Germanic raising of unstressed final long \emph{*ō} to \emph{*u}. Ringe and Taylor state that development directly in comparative terms [@RingeTaylor2014, p. 30].
-
-The change supplies the final vowel of forms such as *nosu* 'nose', *sċofl* 'shovel', and
-*sorg* 'sorrow'.
+The change supplies the final vowel of forms such as *nosu* 'nose', *sċofl*
+'shovel', and *sorg* 'sorrow'.
 
 ## \CAPRRuleHeading{SC019. Raising of final unstressed long \emph{*ō}}{NWGmcFinalLongORaising} {#rule-NWGmcFinalLongORaising}
 
@@ -594,28 +594,9 @@ define NWGmcFinalLongORaising [
 ];
 ```
 
-Two groups of witnesses confine final unstressed long \emph{*ō} > \emph{*u}. The forms *nosu* ‘nose’, *sċofl* ‘shovel’, and *sorg* ‘sorrow’ fix its lower boundary.
+Two groups of witnesses confine final unstressed long \emph{*ō} > \emph{*u}. The forms *nosu* 'nose', *sċofl* 'shovel', and *sorg* 'sorrow' fix its lower boundary.
 
-Before [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [núsō]{.recon} ‘nose’ yields [*nusu*]{.pred} rather than expected OE *nosu* ‘nose’, PGmc [skúflō]{.recon} ‘shovel’ yields [*sċufl*]{.pred} rather than expected *sċofl* ‘shovel’, and PGmc [súrgō]{.recon} ‘sorrow’ yields [*surg*]{.pred} rather than expected *sorg* ‘sorrow’. After [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), PGmc [rástōz]{.recon} ‘rest’ yields [*rast*]{.pred} rather than expected *ræste* ‘rest’. These failures place [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) after u-lowering and before final \emph{z}-loss.
-
-## Historical discussion of final \emph{z}-deletion
-
-The second change is the loss of word-final \emph{*z}. Standard handbook tradition and Crist's West Germanic discussion establish the development within broader accounts of inflectional morphology [@Hogg1992, p. 37; @Crist2002, p. 1].
-
-Final z-loss follows long-o raising and precedes the later changes in weak
-syllables.
-
-## SC020. Deletion of word-final \emph{*z} (`PGmcFinalZDeletion`) {#rule-PGmcFinalZDeletion}
-
-```foma
-define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
-```
-
-The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
-
-Before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [rástōz]{.recon} ‘rest’ yields [*rast*]{.pred} rather than expected OE *ræste* ‘rest’. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} ‘beaver’ yields [*befro*]{.pred} rather than expected *befer* ‘beaver’, PGmc [kwéðuz]{.recon} ‘cud’ yields [*cwedo*]{.pred} rather than expected *cwedu* ‘cud’, and PGmc [félθuz]{.recon} ‘field’ yields [*feldo*]{.pred} rather than expected *feld* ‘field’, alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
-
-The [rástōz]{.recon} ‘rest’ derivation fixes the local relation to [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising). The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
+Before [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected OE *nosu* 'nose', PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected *sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather than expected *sorg* 'sorrow'. After word-final \emph{*z}-deletion ([SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion)), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected *ræste* 'rest'. These failures place [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) after u-lowering and before final \emph{z}-loss.
 
 \newpage
 
@@ -847,44 +828,16 @@ The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emp
 
 \newpage
 
-# B allophony and Sievers-law syncope
+# Sievers-law syncope
 
-## Historical discussion of B allophony
+## Historical discussion
 
-The first change is the positional alternation of Germanic \emph{*b}. Hogg
-states the Old English distribution clearly: /b/ is a stop initially, after
-nasals, and in gemination, while the same segment is otherwise realized as a
-voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
-the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
-segment whose stop and fricative values depend on position
-[@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
-fricative pattern in Old English [@Luick1914, p. 107].
-
-The distribution is narrow, but later changes presuppose the stop-fricative
-alternation.
-
-## \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
-
-```foma
-define PGmcBAllophony [
-    {*b} -> {*β} || PGmcStarVocalic _,
-    {*b} -> {*β} || [{*l} | {*r}] _
-] .o. [
-    {*β} -> {*b} || _ {*b}
-];
-```
-
-The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
-
-## Historical discussion of Sievers-law syncope
-
-Sievers' Law concerns a different historical problem. It is a prosodic and
-morphological adjustment in heavy stems, not a distributional allophone of a
-stop consonant. Adamczyk treats the Old English reflexes of the law as
-historical evidence from weak verbs and related formations
-[@Adamczyk2001, pp. 61--72]. Fulk gives the compact comparative summary through
-familiar forms such as *biddan* ‘ask’, *sellan* ‘give’, and *nerian* ‘save’
-[@Fulk2018, p. 127, §6.15].
+Sievers' Law concerns a prosodic and morphological adjustment in heavy stems.
+It is a distributional rule distinct from b-allophony ([SC049 PGmcBAllophony](#rule-PGmcBAllophony)). Adamczyk treats
+the Old English reflexes of the law as historical evidence from weak verbs and
+related formations [@Adamczyk2001, pp. 61--72]. Fulk gives the compact
+comparative summary through familiar forms such as *biddan* 'ask', *sellan*
+'give', and *nerian* 'save' [@Fulk2018, p. 127, §6.15].
 
 Sievers-law syncope is narrow in scope, but its relation to the following
 palatalization is lexically secure. Its earlier limit is less sharply defined
@@ -898,7 +851,7 @@ define SieversLawSyncope [
 ];
 ```
 
-The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} ‘stretch’ yields [*strecċan*]{.pred} rather than expected OE *streċċan* ‘stretch’; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
+The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} 'stretch' yields [*strecċan*]{.pred} rather than expected OE *streċċan* 'stretch'; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
 
 \newpage
 
@@ -1023,9 +976,6 @@ The divergence between cascade order and book order in this chapter is one of
 the clearest illustrations of the principle that FST dependency does not
 automatically equal historical sequence.
 
-
-\newpage
-
 # West Germanic rhotacism
 
 ## Historical discussion
@@ -1045,6 +995,31 @@ define PGmcRhotacism [
 Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc [líznōjaną]{.recon} ‘learn’ yields [*lirnian*]{.pred} rather than expected OE *liornian* ‘learn’, PGmc [líznōθi]{.recon} ‘learns’ yields [*lirnaþ*]{.pred} rather than expected *liornaþ* 'learns', PGmc [líznô]{.recon} ‘learn’ yields [*lirna*]{.pred} rather than expected *liorna* 'learn', and PGmc [mízdai]{.recon} ‘meed’ yields [*merde*]{.pred} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes none of the checked forms.
 
 The lexical evidence thus supplies a terminus ante quem but no terminus post quem. Its placement after the earlier loss of final \emph{*z} rests on the historical analyses cited above.
+
+\newpage
+
+# Deletion of word-final \emph{*z}
+
+## Historical discussion
+
+The loss of word-final \emph{*z} is a West Germanic development. Standard handbook tradition and Crist's West Germanic discussion establish the development within broader accounts of inflectional morphology [@Hogg1992, p. 37; @Crist2002, p. 1]. The derivation of *ræste* 'rest' demonstrates the local order: final \emph{*ō}-raising ([SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), Chapter 2) must precede final \emph{*z}-loss.
+
+The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 PGmcRhotacism](#rule-PGmcRhotacism)) remain flagged for targeted chronology audit.
+
+Final z-loss follows long-o raising and precedes the later changes in weak
+syllables.
+
+## SC020. Deletion of word-final \emph{*z} (`PGmcFinalZDeletion`) {#rule-PGmcFinalZDeletion}
+
+```foma
+define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
+```
+
+The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
+
+Before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected OE *ræste* 'rest'. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} 'beaver' yields [*befro*]{.pred} rather than expected *befer* 'beaver', PGmc [kwéðuz]{.recon} 'cud' yields [*cwedo*]{.pred} rather than expected *cwedu* 'cud', and PGmc [félθuz]{.recon} 'field' yields [*feldo*]{.pred} rather than expected *feld* 'field', alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
+
+The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising). The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
 
 \newpage
 
@@ -1156,6 +1131,41 @@ Grammar* provides additional coverage for morphological conditioning
 [@Fulk2018]. For individual changes, source-specific citations appear in the
 relevant sound-change sections.
 
+# West Saxon palatal glide before back vowels
+
+## Historical discussion
+
+West Saxon spellings such as *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ*
+'youth' reflect an early Old English development before back vowels. Campbell gives the
+most direct handbook statement of the phenomenon [@Campbell1959, p. 17, §44].
+
+The sources establish [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), although the checked forms provide only a later boundary. The rule is computationally
+positioned before [SC017 NWGmcULowering](#rule-NWGmcULowering) because the
+derivation of *ġeoc* 'yoke' requires glide insertion before u-lowering applies. That
+computational dependency places [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) in the Old English section of the cascade
+even though the cascade position precedes many Northwest Germanic changes.
+
+## \CAPRRuleHeading{SC016. West Saxon palatal glide before back vowels}{OEWsPalatalGlide} {#rule-OEWsPalatalGlide}
+
+```foma
+define OEWsPalatalGlide [
+    {*j} {*u} -> {*j} {*e} {*u} || .#. _,
+    {*j} {*ú} -> {*j} {*é} {*u} || .#. _
+] .o. [
+    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _,
+    {*ʤ} {*ú} -> {*ʤ} {*é} {*u} || .#. _
+] .o. [
+    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _,
+    {*ʧ} {*ú} -> {*ʧ} {*é} {*u} || .#. _
+] .o. [
+    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _,
+    {*ʃ} {*ú} -> {*ʃ} {*é} {*u} || .#. _
+];
+```
+
+OE *ġeoc* 'yoke' fixes the close relation between glide insertion before back-vocalic \emph{u} and the following change.
+
+If glide insertion follows [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [júką]{.recon} 'yoke' yields [*ġoc*]{.pred} rather than expected OE *ġeoc* 'yoke'; earlier placement changes no checked output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ* 'youth' material establishes the lexical scope of the West Saxon development.
 
 \newpage
 

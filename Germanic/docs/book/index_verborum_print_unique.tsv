@@ -510,10 +510,10 @@ pgmc	*dḗdiz	dediz	2	selected_input; source_protoform	lexical_protoform; trace_
 pgmc	*déliz	deliz	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:24; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:45; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:60; dill — OE dile
 pgmc	*déljaz	deljaz	3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:25; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:59; dill — OE dile
 pgmc	*déuzą	deuza	1	selected_input	trace_proto_input	deer — OE dēor
-pgmc	*déuzaz	deuzaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:952
+pgmc	*déuzaz	deuzaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:905
 pgmc	*dōną	dona	1	selected_input	trace_proto_input	do — OE dōn
 pgmc	*dránkiz	drankiz	1	selected_input	trace_proto_input	drench — OE drenċ
-pgmc	*draugma-	draugma	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:43
+pgmc	*draugma-	draugma	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:54
 pgmc	*dráugmaz	draugmaz	1	selected_input	trace_proto_input	dream — OE drēam
 pgmc	*drḯbaną	dribana	1	selected_input	trace_proto_input	drive — OE drīfan
 pgmc	*drínkaną	drinkana	1	selected_input	trace_proto_input	drink — OE drincan
@@ -649,7 +649,7 @@ pgmc	*lḯnōn	linon	1	selected_input	trace_proto_input	line — OE līne
 pgmc	*lḯstōn	liston	1	selected_input	trace_proto_input	list — OE līste
 pgmc	*líznô	lizno	5	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27; Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69; learn (iptv.2sg) — OE liorna
 pgmc	*liznōjaną	liznojana	4	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67; learn (3sg) — OE liornaþ; learn (iptv.2sg) — OE liorna
-pgmc	*líznōjaną	liznojana	3	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:954; learn — OE liornian
+pgmc	*líznōjaną	liznojana	3	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:907; learn — OE liornian
 pgmc	*líznōθi	liznothi	5	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:25; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68; learn (3sg) — OE liornaþ
 pgmc	*lúką	luka	1	selected_input	trace_proto_input	lock — OE loc
 pgmc	*lúkkaz	lukkaz	1	selected_input	trace_proto_input	lock — OE locc
@@ -706,7 +706,7 @@ pgmc	*núsō	nuso	2	selected_input; source_protoform	lexical_protoform; trace_pr
 pgmc	*ráipą	raipa	1	selected_input	trace_proto_input	rope — OE rāp
 pgmc	*rastō	rasto	2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59; rest — OE ræste
 pgmc	*rastō-	rasto	1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21
-pgmc	*rástōz	rastoz	5	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:971; rest — OE ræste
+pgmc	*rástōz	rastoz	5	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:924; rest — OE ræste
 pgmc	*ráukaz	raukaz	4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:23; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:40; reek — OE *rēac
 pgmc	*rauki-	rauki	1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:21
 pgmc	*ráukiz	raukiz	2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:21; reek — OE *rēac
@@ -833,7 +833,7 @@ pgmc	*táixōn	taixon	1	selected_input	trace_proto_input	toe — OE tā
 pgmc	*tángō	tango	1	selected_input	trace_proto_input	tongs — OE tang
 pgmc	*táppjaną	tappjana	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:48
 pgmc	*táppô	tappo	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:22; Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:35; Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:46; tap — OE tæppa
-pgmc	*taugma-	taugma	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:43
+pgmc	*taugma-	taugma	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:55
 pgmc	*táugmaz	taugmaz	1	selected_input	trace_proto_input	team — OE tēam
 pgmc	*téxun	texun	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	ten — OE tēon
 pgmc	*θáką	thaka	1	selected_input	trace_proto_input	thatch — OE þæc
@@ -952,7 +952,7 @@ pgmc	*xōrōn	xoron	1	selected_input	trace_proto_input	whore — OE hōre
 pgmc	*xrábnaz	xrabnaz	1	selected_input	trace_proto_input	raven — OE hræfn
 pgmc	*xúnagą	xunaga	1	selected_input	trace_proto_input	honey — OE huniġ
 pgmc	*xúndaz	xundaz	1	selected_input	trace_proto_input	hound — OE hund
-pgmc	*xúrdaz	xurdaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:953
+pgmc	*xúrdaz	xurdaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:906
 pgmc	*xúrną	xurna	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	horn — OE horn
 pgmc	*xúzdą	xuzda	1	selected_input	trace_proto_input	hoard — OE hord
 pgmc	*xwalaz	xwalaz	2	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:22; Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:56

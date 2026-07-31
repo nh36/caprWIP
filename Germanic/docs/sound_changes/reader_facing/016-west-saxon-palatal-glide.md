@@ -9,7 +9,7 @@ most direct handbook statement of the phenomenon [@Campbell1959, p. 17, §44].
 The sources establish [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), although the checked forms provide only a later boundary. The rule is computationally
 positioned before [SC017 NWGmcULowering](#rule-NWGmcULowering) because the
 derivation of *ġeoc* 'yoke' requires glide insertion before u-lowering applies. That
-computational dependency places SC016 in the Old English section of the cascade
+computational dependency places [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) in the Old English section of the cascade
 even though the cascade position precedes many Northwest Germanic changes.
 
 ## SC016. West Saxon palatal glide before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide}

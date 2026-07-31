@@ -3,7 +3,7 @@
 ## Historical discussion
 
 Sievers' Law concerns a prosodic and morphological adjustment in heavy stems.
-It is a distributional rule distinct from b-allophony (SC049). Adamczyk treats
+It is a distributional rule distinct from b-allophony ([SC049 PGmcBAllophony](#rule-PGmcBAllophony)). Adamczyk treats
 the Old English reflexes of the law as historical evidence from weak verbs and
 related formations [@Adamczyk2001, pp. 61--72]. Fulk gives the compact
 comparative summary through familiar forms such as *biddan* 'ask', *sellan*
