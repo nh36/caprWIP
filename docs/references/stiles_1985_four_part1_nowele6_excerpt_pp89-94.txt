@@ -1,0 +1,285 @@
+BIBLIOGRAPHIC REFERENCE
+=======================
+Stiles, Patrick V. "The Fate of the Numeral '4' in Germanic (1)."
+NOWELE: North-Western European Language Evolution 6 (1985): 81–104.
+DOI: 10.1075/nowele.6.06sti
+
+ORIGINAL PDF PATH: docs/references/stiles_1985_four_part1_nowele6.pdf
+HISTORICAL COMMIT: 11c205298c4da983996ca2143d722b8252c95bce
+  (added in that commit; untracked in 971d1d88b8f569fd22d9bdf8ee5098c44e5a2ab3
+   together with all other reference PDFs; no tracked text extract previously existed)
+
+PAGE CORRESPONDENCE
+===================
+Journal pages 81–104 = PDF pages 1–24 (24-page PDF)
+This excerpt: journal pp. 89–94 = PDF pages 9–14
+
+EXTRACTION METHOD
+=================
+pdftotext -f 9 -l 14 stiles_1985_four_part1_nowele6.pdf
+(historical blob extracted from git show 11c205298c4da983996ca2143d722b8252c95bce:docs/references/stiles_1985_four_part1_nowele6.pdf)
+
+OCR QUALITY NOTE
+================
+The PDF is a scanned image with character-level OCR; spacing between characters
+is imperfect but consistent. Reconstructed forms with special characters (ð, þ, ō,
+ū, etc.) are reproduced here verbatim from pdftotext output. Non-ASCII glyphs
+that could not be resolved by pdftotext are noted as [?]. The OCR occasionally
+splits words across spaces or joins tokens. No silent normalization has been applied.
+Obvious OCR word-splitting (e.g. "pre - forms" for "pre-forms", "Ingvaeoni c" for
+"Ingvaeonic") is preserved as-is. PGmc/WGmc reconstructions use + for impossible
+reconstructions and * for standard ones (Stiles's notation).
+
+SCOPE NOTE
+==========
+This excerpt covers §§1.3.0–1.3.4 of the article. These sections contain:
+- Stiles's derivation of WGmc *fewwar from PGmc *feðwor (the *dw > *ww argument)
+- The parallel *zw > *ww evidence from the second-person plural pronoun
+- The apparent wa/wo-stem counterexamples and their tentative explanations
+
+The preceding sections (§§1.1–1.2, pp. 81–88) concern other aspects of the
+numeral; they are not excerpted here.
+
+================================================================================
+JOURNAL PAGE 89 (PDF PAGE 9)
+================================================================================
+
+The Fat e o f th e Numera l '4 ' in Germani c
+1.3. The development of the medial consonantism in West Germanic
+1.3.0. Th e Proto-Germanic medial cluste r *-áw- (< PI E *-tu- b y
+Verner's Law ) i s retaine d i n Go . fidwor. Th e relatio n betwee n thi s
+reflex an d th e form s o f Nort h an d Wes t Germani c ha s bee n th e subjec t
+of dispute . I n m y view , th e problem s o f bot h th e Nort h an d th e Wes t
+Germanic correspondent s wer e largel y solved , departin g fro m pre forms wit h a dental , a s i n Gothic , alread y a t th e beginnin g o f thi s
+century (se e §§1.3.2. , an d 1.4 . 1.-1.4.3.). Regrettably , thes e explana tions hav e ofte n bee n unjustl y dismissed .
+1.3.1. I n so fa r a s th e phonologica l developmen t o f th e Wes t Germani c
+forms o f th e numera l i s discusse d a t al l i n th e recen t literature , th e
+explanation generall y give n i s on e firs t tentativel y pu t forwar d b y
+Kluge i n a footnot e o f hi s dissertation , 1879a : 102-103 [footnote] . Thi s
+presumes a Germani c pre-for m +*feywor, usuall y derive d fro m a pre Germanic +*k ek - , supposedl y assimilate d fro m PI E *k etu-.
+I thin k tha t th e reconstructio n o f thi s pre-for m i s untenable . I n
+the firs t place , th e Germani c dat a a t ou r disposa l onl y evidenc e a pre form wit h initia l *p - (*f-) , cf. §1.1. above . Thi s mean s tha t th e
+assimilation woul d hav e t o hav e take n plac e befor e th e replacemen t o f
+*kw-.
+Yet th e propose d assimilatio n canno t hav e affecte d al l part s o f
+the (pre- ) Germani c speec h community , becaus e w e nee d *feðw- to
+account fo r th e Gothi c form . ( A denta l i s als o neede d fo r th e pan Germanic combining-form , cf. §2.) Th e chronologica l an d dialecta l
+complications whic h thi s theor y entail s ar e fa r fro m plausible . Fo r
+criticism o f Kluge' s suggestion, cf. also Schmid t 1880:123-124 .
+REMARK 1 . Kluge himself confesse d o f hi s explanation : 'wenn di e
+got. Formen mi t d fehlten , würd e si e meh r Wahrscheinlichkei t haben '
+(1879a: 102-103) - an d thi s th e form , whic h i s mos t clearl y th e direc t
+
+================================================================================
+JOURNAL PAGE 90 (PDF PAGE 10)
+================================================================================
+
+Patrick V. Stiles
+continuant of th e Proto-Indo-Europea n etymon ! W e ma y not e t h a t
+Kluge modestly followe d th e expositio n o f hi s explanatio n wit h th e
+words: 'Ich stell e mein e Annahm e nu r i n de r Hoffnun g auf , dass sie
+bald durc h ein e schlichtere , einfacher e e r s e t z t werde n möge ' (1879a :
+102-103). Unfortunately , thi s di d no t happen .
+What i s more , w e canno t eve n arriv e a t th e Wes t Germani c form s fro m
+the propose d starting-point . I t i s generall y agree d tha t a PGmc .
++*feywor woul d develo p t o eithe r WGmc . +*feyar o r +*fewar (cf.
+most recentl y Cubbi n 1979 , wit h references) , ye t Ol d Saxo n fiuuuar,
+with it s tripl e <u> , mus t descen d fro m a precurso r wit h th e sequenc e
+*-uw- < *-ww- (cf. Gallée-Lochne r 1910: §106 A.2) . Likewise , th e Ol d
+English an d Ol d Frisia n forms , feower an d fiuwer, ar e mos t straight-
+forwardly derive d fro m suc h a pre-form .
+Old Englis h forms , suc h a s Rushwort h 2 <feower> , requir e a
+preceding *-e- . W e ca n thu s establis h a sequenc e *-eww- fo r Wes t
+Germanic (beside s havin g n o etymologica l justification , +*-eww- wa s a
+non-occurring sequenc e o f sounds) . O n th e Ol d Englis h developmen t o f
+*-ww- , cf. Campbell 1959:§§120(2) , 275 . (W e ma y not e t h a t , i n
+keeping wit h hi s view , Kluge [1879b : 395 fnl ] denie d th e lengt h o f th e
+diphthong i n O E <feower> ; thi s woul d necessitat e derivin g th e shor t
+diphthong b y breaking. ) O n th e numera l i n Ol d Frisian , cf. van Helten
+1890: §§36, 234 , 236 ; Steller 1928: §27 A. 2 [p.2 2 base ] - Steller' s
+t r e a t m e n t o f th e numera l lack s consistency , however ; compar e th e
+contents o f §§9.2 , 20.b , 2 7 A. 2 [p.2 2 b a s e ] .
+REMARK 2 . Th e i-vocalis m o f th e Ol d Frisia n an d Ol d Saxo n form s i s
+clearly secondary . Siebs (1901:1233) operate s wit h a raisin g o f WGmc .
+*eu t o *iu befor e w (s o als o Steller 1928:§20.b , Sjölin 1969:22), whic h
+would accoun t fo r th e Ol d Frisia n form . Thi s developmen t seem s
+doubtful, however , i n vie w o f suc h form s a s treuwe i n th e Rüstringer
+Recht, cf. Siebs 1901:1236-1237. Wha t i s more , earlie r e-vocalis m
+
+================================================================================
+JOURNAL PAGE 91 (PDF PAGE 11)
+================================================================================
+
+The Fat e o f th e Numera l '4 ' in Germani c
+would appea r t o b e reflecte d i n th e (secondary ) combining-for m fior-
+(cf. §2).
+It seem s conceivabl e t o m e tha t th e i-inflectio n o f th e numeral s
+has bee n responsibl e fo r thi s replacemen t o f *e b y i in thes e form s o f
+'4'. Th e -a- o f th e media l syllabl e o f inflecte d form s ma y hav e
+assimilated t o -i-, whic h will hav e change d -eu- to -iu- i n th e initia l
+syllable.
+Kluge, i n a slightl y late r contributio n (1882:517-519 , essentiall y re-
+peated 1913:252) , va n Helten (1905-1906:84) an d Hamp (1976:1) hav e
+all derive d th e sam e suppose d PGmc . pre-for m +*feywor a s Kluge
+originally advocated , b y othe r equally , o r eve n mor e implausibl e
+means.
+1.3.2. Th e Ingvaeoni c evidenc e thu s assure s *fewwar a s th e Wes t
+Germanic pre-form . Compariso n wit h PGmc . *feðwor argue s strongl y
+for a regula r developmen t *-ðw- > *-ww- i n Wes t Germanic . Thi s wa s
+hinted a t b y Leskie n 1876:155-156 , bu t firs t state d clearl y b y Hartmann
+1900:304, apparently independently .
+Jansson (1936:285) too k issu e wit h Hartmann over OH G fior,
+which h e di d no t believ e coul d com e fro m *feww-. Instead , h e
+preferred a development : WGmc . -*feuor ( < +*feywor, a s discusse d
+above) > feor > fior, by los s o f intervocali c -u- . However , los s o f
+intervocalic -w- occur s sporadicall y afte r LON G vowe l i n Ol d Hig h
+German, bu t no t afte r short . On e COUL D argue , therefore , fo r a
+derivation o f OH G fior from WGmc . *feuwar vi a los s o f -w- afte r
+(reflex of ) th e diphthon g -eu- and subsequen t contractio n o f *feuär. I n
+my view , however , th e Ol d Hig h Germa n cardina l i s bes t explaine d a s
+being secondaril y extracte d fro m th e ordinal , OH G feordo, fiordo (<
+PGmc. *feurþan-, cf. §3, below). Thi s als o explain s th e eo-vocalism o f
+early form s (se e Althochdeutsches Wörterbuch s.v . fior), cf. Braune-
+Eggers 1975: §48 A.5; according t o thei r §30 A. 2 (cf. §113.2), w e migh t
+
+================================================================================
+JOURNAL PAGE 92 (PDF PAGE 12)
+================================================================================
+
+Patrick V. Stiles
+expect OH G +fiuwar a s th e Ol d Hig h Germa n refle x o f WGmc . *feuwar.
+(Th e numera l late r undergoe s independen t contractio n i n th e other Wes t
+Germanic languages , losin g th e reflexe s o f WGmc . *-wa- , thus lOE feor,
+OFr . fior (*feor, cf. §2), O S fior, i n so fa r a s thi s las t i s not t o b e
+identifie d wit h th e Ol d Hig h Germa n form. )
+Jansson continues: 'På samm a sät t [som ght . fior fsachs . fior - PVS]
+kan uppfattas', and goe s o n (lik e Kluge, above §1.3.1. ) t o clai m t h a t
+O E feower ha s breaking , an d mysteriousl y adds : 'På samm a sät t som
+ags . feower måste vä l äve n ffris. fiuwer, fsachs . fiuwer förklaras'
+(1936:285), despit e th e fac t tha t thes e dialect s hav e n o soundchang e
+equivalent t o Ol d Englis h breakin g o f e before w !
+1.3.3. No t onl y doe s confrontatio n o f th e Wes t Germani c an d Proto-
+Germanic pre-forms sugges t th e correspondenc e WGmc . *-ww- :
+PGmc. *-ðw- is regula r (thoug h se e below , §1.3.4.) , bu t ther e i s als o
+the supportin g evidenc e o f th e paralle l developmen t o f th e sequenc e
+*-zw-, whic h i s generall y acknowledge d t o yiel d WGmc . *-ww- i n th e
+oblique case s o f th e secon d perso n plura l pronoun . Thi s developmen t
+was firs t explicitl y propose d b y Kluge 1908-1909:65, cf. also Trautmann
+1912:107; th e implici t equatio n wa s alread y mad e b y Kögel 1884:536-537.
+Accordingly , correspondin g t o Go . acc. , dat. izwis, we have O E eow,
+OFr . iu, O S iu, OH G iu; t o Go . gen . izwara, O E eower, OFr . iuwer,
+O S euwar, OH G iuwer (wit h secondar y ending) .
+Thus, th e tw o Proto-Germani c voiced denta l spirant s ar e assimi-
+lated t o a followin g *-w- i n Wes t Germanic . Thi s soundchang e mus t b e
+very early , fo r i t precede s bot h th e occlusio n o f PGmc . *ð, an d th e
+rhotacism o f PGm c *z . I t i s ironi c tha t Hartmann' s soundla w *ðw- >
+*-ww- wa s se t up , an d rejected , fo r Ol d Hig h German , whe n i t i s th e
+Ingvaeoni c form s whic h ar e mos t elegantl y explaine d b y it . T o b e fair ,
+however, i t mus t b e pointe d ou t t h a t Hartmann was awar e o f th e
+difficulties connecte d wit h th e cardina l '4 ' i n Ol d Hig h German ,
+(1900:304):
+  zw und ðw scheinen westg . z u ww assimiliert worden z u sein ;
+  got. izwara ahd . euuuer, iuuuer, got fidwor, fidur ahd . uëor,
+  fior (ausgleichung aus fiuuuor und fidur), doch bieten namentlich
+  die formen des Zahlworts grosse Schwierigkeiten.
+[PARAGRAPH BREAK]
+The abov e developmen t o f PGmc . *-ðw- > WGmc . *-ww- i n medial
+positio n i s onl y evidence d i n th e cardina l '4' , thoug h a numbe r o f
+othe r word s provide d th e requisit e environment . Thes e apparen t
+counter-examples ar e al l wa- o r wo-ste m noun s (o r thei r derivatives) ;
+there d o no t see m t o hav e bee n an y wa/o-ste m adjectives wit h root-
+final *ð. The example s I hav e note d ar e th e following : th e wa-stem s
+*gaiðwa- nt . 'lack' , *skaðwa- nt./masc . 'shade ' (i n Ol d Englis h als o a
+feminine), and , possibly , *[k]wiðwa- nt. 'cud, mastic' ; th e wo-stem s
+*mēðwo- 'meadow' , *baðwo- 'war, battle' . T o th e latter , th e precur-
+sors o f O E freod 'good-will ; peace' , hid 'hid e (o f land) ' ar e possibl y t o
+be added , i f th e etymologies propose d b y Bammesberge r (1979:54-55 ,
+74-76) are accepted .
+
+================================================================================
+JOURNAL PAGE 93 (PDF PAGE 13)
+================================================================================
+
+Patrick V. Stiles
+This materia l wil l bea r som e winnowing . Firstly , th e wor d fo r 'cud '
+is probabl y a n origina l u-stem. Onl y Ol d Englis h ha s wa-ste m forms ,
+and accordin g t o Ros s 1954:94-96 thes e ar e analogical . PGmc .
+*frijaðwo and *himðwa/o hav e becom e simpl e a-(o-)stem s i n Ol d
+English. I f th e rebuildin g o f thes e tw o coul d legitimatel y b e place d
+before th e soundchange , the y coul d b e remove d a s counter-examples .
+*gaiðwa- (cf . Go. acc. pl . gaidwa Col 1/24 ) migh t possibl y b e explaine d
+in th e sam e way : Old English gad (1x gœd Gen B 236, cf. Bammesberger
+1979:58) i s foun d onl y i n poetr y an d i s atteste d onl y i n th e nominativ e
+singular; Ol d Saxo n onl y ha s th e wor d a s th e secon d elemen t o f a
+compound, gen . pl . -gedeono Hel M 4331 (-gēdono), apparently a jo-
+stem form, cf. Ilkow 1968:292; Ol d Frisia n ha s los t th e wa- an d wo-
+stem categories , th e relevan t lexeme s havin g becom e stron g nouns .
+One canno t b e certai n o f th e chronology , however ; i n fac t th e chang e
+of inflectiona l clas s o f thes e thre e noun s ca n perhap s b e mos t neatl y
+explained a s a resul t o f th e (post-Wes t Germanic ) los s o f -u afte r
+heavy syllables . Besides , acceptanc e o f thi s explanatio n woul d stil l
+leave th e othe r items t o b e accounted for .
+One migh t suppos e tha t sufficien t case-form s regularl y develope d
+the sequenc e *-ðu(-) before th e assimilatio n too k place , an d conse-
+quently di d no t underg o it , t o caus e th e assimilation-produc t t o hav e
+been levelle d ou t o f th e paradigm . Thi s doe s no t see m t o work ,
+however. Assumin g tha t th e assimilation s o f *zw an d *ðw t o *ww
+were simultaneou s (indee d th e sam e change , §1.3.3.) , the y mus t hav e
+taken plac e befor e th e rhotacis m o f media l *-z- , and thi s precede d th e
+loss o f fina l *-a# (a s show n by , e.g . OE deor, OH G tior, beside Go .
+dius*, < PGmc. *deuzan). Thi s mean s tha t *-ðwa(z)#-sequences will
+have bee n stil l intac t a t th e tim e o f th e assimilation , s o th e onl y case-
+forms wit h -ðu(-) tha t ca n b e produce d ar e thos e whic h los t w befor e
+following u : Th e masc./nt . dat. pl. *-um, an d th e nt . nom./acc. pl .
+ending *-u (an d possibl y a n instr . sg . i n *-u) fo r th e wa-stems , an d th e
+nom. sg . *-u i n th e wō-stems. Thi s seem s a n inadequat e basi s fo r
+analogical eliminatio n o f th e change .
+
+================================================================================
+JOURNAL PAGE 94 (PDF PAGE 14)
+================================================================================
+
+Patrick V. Stiles
+I mus t confess , therefore , tha t I a m no t wholl y sur e ho w thes e
+exceptions ar e t o b e explained , thoug h I am sur e tha t th e developmen t
+posited fo r '4' i s phonological . A t present , I wil l onl y offe r th e
+following tentativ e suggestion s a s t o wh y th e wa- an d wo-ste m noun s
+should hav e escape d th e change . I t i s possibl e tha t th e developmen t o f
+'4' i s connecte d wit h th e fac t tha t i t ha d a fina l -r# , whic h migh t hav e
+triggered som e kin d o f 'similatory ' chang e o f th e precedin g *-ð- to
+*-z-, whic h the n regularl y assimilate d t o th e followin g -w- . Alterna-
+tively, i t i s possibl e that , i n th e heavy-syllable d forms , th e effect s o f
+Sievers' La w a s i t applie s t o u an d uw playe d a rol e i n inhibitin g th e
+change i n th e substantive s (th e isolate d light-syllable d for m *feð-wōr,
+on the othe r hand , wa s unabl e t o escap e it) .
+
+================================================================================
+END OF EXCERPT
+================================================================================
+
+KEY FINDINGS FOR SC008 AUDIT
+=============================
+1. STILES'S OWN NOTATION:
+   - *dw cluster: "Go. fidwor" → WGmc *fewwar / *feuwar (§1.3.2)
+   - *zw cluster (§1.3.3): "Go. acc., dat. izwis" → "OE eow, OFr. iu, OS iu, OHG iu"
+                            "Go. gen. izwara" → "OE eower, OFr. iuwer, OS euwar, OHG iuwer"
+     NOTE: Stiles prints "izwara" (not "izweraz" as in R&T); R&T's form "izweraz" is a
+     different reconstruction of the same Gothic word; both refer to the same Gothic form.
+
+2. STILES'S CHARACTERIZATION OF THE *zw EVIDENCE:
+   "the parallel development of the sequence *-zw-, which is generally acknowledged
+   to yield WGmc. *-ww- in the oblique cases of the second person plural pronoun"
+   — §1.3.3 (journal p. 92)
+   This is one pronoun with multiple case forms, not two independent etyma.
+
+3. *dw COUNTER-EXAMPLES (§1.3.3, pp. 92–94):
+   Stiles explicitly lists: *gaiðwa- 'lack', *skaðwa- 'shade', possibly *[k]wiðwa- 'cud';
+   *mēðwo- 'meadow', *baðwo- 'battle'. He discusses why each probably or possibly
+   did not undergo the assimilation. His explicit conclusion (p. 94):
+   "I must confess, therefore, that I am not wholly sure how these exceptions are
+   to be explained, though I am sure that the development posited for '4' is phonological."
+
+4. DEGREE OF CERTAINTY: Stiles is confident *-ðw- > *-ww- is phonological (for '4')
+   but explicitly acknowledges the wa/wo-stem counterexamples are NOT fully resolved.
+   The overall change is "generally acknowledged" and the basic parallel is sound,
+   but the exceptional nouns remain "tentatively" explained.

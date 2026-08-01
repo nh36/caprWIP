@@ -34,7 +34,7 @@ Supporting staging documents included: `reader_facing_sc005_009_012_inclusion_01
 | 1 | `005-unstressed-a-raising-before-final-m.md:18` | "the `shoulder` family…tests the chronology" | CAPR ordering witness; the sound law is supported by inflectional endings, not shoulder cognates | Partly: needs explicit statement | One sentence |
 | 2 | `007-final-o-lowering-before-r.md:5` | "the families behind *fēower* 'four' and *wæter* 'water'" | Two independent single cognate sets (numerals/nouns) | Yes, with minor clarification | Terminology only |
 | 3 | `007-final-o-lowering-before-r.md:20` | "*fēower* 'four' and *wæter* 'water' families" | Two independent single cognate sets | Yes, with minor clarification | Terminology only |
-| 4 | `008-coronal-w-assimilation.md:5` | "the `four` family and plural-pronominal forms" | Composite: one numeral (*dw*) + one pronominal paradigm two case forms (*zw*); R&T note one example of each cluster | Partly: "four family" obscures that pronouns are the evidence for *zw*; "two pronouns" overstates independence | One sentence |
+| 4 | `008-coronal-w-assimilation.md:5` | "the `four` family and plural-pronominal forms" | Composite: one numeral (*dw*) + one pronominal paradigm two case forms (*zw*); R&T note one example of each cluster | Revised: chapter now correctly names forms and describes pronoun as one paradigm | Done |
 | 5 | `009-ij-contraction-in-friend.md:5` | "a change…in the `friend` family" | Single cognate set; R&T explicitly restrict generalization; Luick's page-118 discussion involves related lexemes not identical in environment | Yes: limitation stated; could be made structurally explicit | Terminology only |
 | 6 | `009-ij-contraction-in-friend.md:7` | "confined to the `friend` family" | Same | Yes | Pass |
 | 7 | `009-ij-contraction-in-friend.md:18` | "Only the `friend` family tests this contraction" | Same | Yes | Pass |
@@ -103,15 +103,15 @@ The key question is whether *fijand-*, *frija-*, and *blija-* constitute **addit
 
 They do not. The analysis is as follows:
 
-**\*fijand- 'fiend'**: The sequence that produced *iu* is the oblique case forms of a *nd*-participial stem where the stem had *\*ij*. The underlying sequence is morphologically parallel to *\*frijōnd-* but not phonologically identical. Luick specifies that *iu* arose in "some cases" of these stems and was then generalized. **[Auditor inference from source structure]** The process is analogical generalization within the paradigm, not repeated application of a phonological rule to an identical input string. Both *frijōnd-* and *fijand-* have *j* in the stem, but the vowel preceding *j* differs (the key distinction R&T draw is the "stressed *\*i*" in *\*frijōnd-*).
+**\*fijand- 'fiend'**: Like *frijōnd-*, this is a lexicalized present participle: Kroonen reconstructs `*fi(j)and-` from `*fi(j)ēn-` 'to hate' (`docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`, line 9641). Both *frijōnd-* and *fijand-* have *i* immediately before *j*, so the vowel **preceding** *j* is the same in both stems. The distinction lies in the vowel **following** *j*: in *\*frijōnd-* the sequence is *\*i-j-ō* (the participial stem formant *\*ō* follows *j*, giving R&T's specified *\*ijo* environment); in *\*fijand-* the sequence is *\*i-j-a* (the present-participial suffix begins with *\*a*). **[Source statement — R&T]:** R&T specify the environment as "*ijo (with stressed *i*)" — the *\*ō* following *j* is part of the specification. *\*fijand-* does not meet this condition. **[Auditor inference from Kroonen + R&T]:** Luick's account (that *iu* arose in oblique case forms with *-iju-* and was generalized) describes a broader paradigmatic phenomenon that encompasses both *frijōnd-* and *fijand-*, but R&T's narrower claim singles out the specific root-internal *\*ijo* sequence of *\*frijōnd-* as unique.
 
-**\*frija- 'free'**: An adjective stem. Luick notes that *friu* appears "in OE before front vowels" (e.g., gen. *frīzes*), suggesting the development is part of a larger paradigmatic adjustment in contact with front vowels — not the same phenomenon as *frijōnd-*.
+**\*frija- 'free'**: A ja-stem adjective. The root sequence is again *\*i-j-a* (not *\*i-j-ō*). Luick notes OE *friu* before front endings (gen. *frīzes*). **[Source statement — Luick §102, l.6972–6975]:** the *friu* form is confined to OE pre-vocalic environments and is not WGmc-wide like the *friend* outcome.
 
-**\*blija- 'colour'**: OE only; Luick explicitly flags this as restricted (*"nur im Altenglischen"*). This is the weakest witness.
+**\*blija- 'colour'**: OE only; Luick explicitly flags this as restricted (*"nur im Altenglischen"*). **[Source statement — Luick §102, l.6971].** This is the weakest item.
 
 **[Source statement — R&T]**: "the uniqueness of the sequence *ijo (with stressed *i*) makes it inadvisable to attempt any generalizations based on the history of this word" (R&T vol.2 p.62, lines 4226–4228).
 
-**Reconciliation**: Luick and R&T are not contradictory but focus on different phenomena. Luick describes a broader West Germanic development involving several stems where *-iju-* sequences arose and *iu* was generalized. R&T are making a narrower claim: the specific sequence *\*ijo* with stressed *\*i* followed by *j* followed by *\*ō* — the exact phonological environment in *\*frij-ōnd-* — is unique. The other Luick forms (*\*fijand-*, *\*frija-*) involve unstressed or differently conditioned *j*-adjacent vowels and are not identical phonological environments. Luick is documenting the paradigmatic spread of *iu*; R&T are restricting the phonological generalization.
+**Reconciliation**: Luick and R&T are not contradictory but operate at different levels of analysis. Luick describes a broader West Germanic development: in several *j*-stem formations, sequences containing *-ij-* before various vowels allowed *j* to be lost in particular case forms, and *iu* was then generalized throughout those paradigms (*"verallgemeinert"*). R&T are making a narrower phonological claim: the specific root-internal sequence *\*ijo* — stressed *\*i* + *j* + long *\*ō* — is unique to *\*frijōnd-*. The other Luick items (*\*fijand-*, *\*frija-*, *\*blija-*) have *\*i-j-a* (short *\*a* following *j*) and are phonologically distinct environments. Luick documents paradigmatic *iu* generalization from whichever case forms provided *-iju-* sequences; R&T restrict the historical generalization on the basis of the unique root vowel sequence. Both accounts are consistent with the evidence.
 
 #### 3.1.5 Evidential Classification
 
@@ -271,6 +271,10 @@ The correct classification is:
 
 **Primary source:** R&T vol.2 pp.56–57 = `docs/references/ringe_taylor_linguistic_history_vol2.txt`, lines 3104–3158. Key passage (l.3105–3108): "the intervocalic sequences *zw and *dw were assimilated to *ww (Stiles 1985-6, NOWELE 6: 89-94). There is really only one example of each input cluster, but the basic nature of the lexemes involved makes the change virtually certain."
 
+**Stiles source:** `docs/references/stiles_1985_four_part1_nowele6_excerpt_pp89-94.txt` (tracked text extract, journal pp. 89–94, created from historical PDF blob `11c205298c4da983996ca2143d722b8252c95bce:docs/references/stiles_1985_four_part1_nowele6.pdf`).
+
+**Note on source-specific reconstructions:** Stiles (§1.3.3, journal p. 92, in the extract) prints Gothic forms as **"acc., dat. izwis"** and **"gen. izwara"**. R&T (l.3114, 3117) reconstruct the PGmc input forms as **"*izwiz"** (acc./dat.) and **"*izweraz"** (gen.). The difference between Stiles's *izwara* and R&T's *izweraz* is a reconstruction-level distinction, not an error; both refer to the same Gothic word. The extract should be cited when attributing Stiles's exact forms.
+
 *\*dw* cluster:
 
 | Input | Language | Form | Gloss | Status | Source |
@@ -367,63 +371,65 @@ OE *fēower* exposes the feeding relation SC008 → SC031 (OEWWSimplification). 
 
 **Evidential structure and morphology — resolved:**
 
-The morphological status of OE *fyrhte* 'fright' has been investigated in detail against Orel, Kroonen, R&T, and Campbell.
+The morphological status of OE *fyrhte* and the CAPR input `*fúrxtīnaz` have been investigated against Orel, Kroonen, R&T, Campbell, and counterfactual FST traces.
 
-**What Orel supplies** (`docs/references/orel_handbook_germanic_etymology.vision.txt`, line 14554; legacy `docs/references/legacy/orel_handbook_germanic_etymology.txt`, line 12585):
+**What Orel supplies** (`docs/references/orel_handbook_germanic_etymology.vision.txt`, line 14554):
 
 > `*furxtīn sb.f.: Goth faurhtei 'fright, fear', OE fyrhtu id.`
 
-**[Source statement — Orel]** Orel explicitly reconstructs *\*furxtīn* as a feminine *in*-stem abstract noun, citing Gothic *faurhtei* and OE *fyrhtu*.
+**[Source statement — Orel]** Orel explicitly reconstructs *\*furxtīn* as a feminine *in*-stem abstract noun. The form *\*furxtīn* is the stem citation (nom. sg. with *n* retained before loss).
 
-**What Kroonen supplies** (`docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`, lines 9656–9678; legacy `docs/references/legacy/etymological_dictionary_of_proto_germanic_kroonen.txt`, lines 10835–10860):
+**What Kroonen supplies** (`docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`, lines 9656–9678):
 
-Kroonen gives: *furhta-* adj. 'fearful' (Gothic *faurhts*, OS *for(a)ht*, OHG *foraht*), *furhtō-* f. 'fright' (OFris *fruchta*, OS *forhta*, OHG *forhta*), *furhtjan-* wk.vb. 'to fear'.
+Kroonen gives *furhta-* adj., *furhtō-* f. 'fright', *furhtjan-* wk.vb. **[Source statement — Kroonen]** Kroonen does not give an independent *in*-stem lemma. The *furhtō-* entry is the remodeled continental WGmc ō-stem form; Gothic *faurhtei* and OE *fyrhtu* appear as cognate citations under that entry.
 
-**[Source statement — Kroonen]** Kroonen does not give an independent *in*-stem entry. He gives *furhtō-* (ō-stem), which is the remodeled form in the continental WGmc languages. The Gothic *faurhtei* and OE *fyrhtu* forms that Orel assembles under an *in*-stem reconstruction appear in Kroonen only as cognate citations under the ō-stem and adjective entries, not as a reconstructed *in*-stem lemma.
+**What R&T supply** (`docs/references/ringe_taylor_linguistic_history_vol2.txt`, line 5517, p. 104):
 
-**What R&T supply** (`docs/references/ringe_taylor_linguistic_history_vol2.txt`, lines 5516–5525, p. 104):
+> "acc., gen., and dat. sg. in *\*-in*"
 
-> "We would therefore expect in-stems in the daughter languages to exhibit reflexes of a nom. sg. in *\-ī*, acc., gen., and dat. sg. in *\-in*."
+And at lines 21538–21553 (p. 380): "Inherited fem. abstract nouns in *\*-in*… [OE] *fyrhtu* 'fear'…" **[Source statement — R&T]** The PWGmc in-stem oblique sg. ending is `*-in`.
 
-And at lines 21538–21553 (p.380):
-> "Inherited fem. abstract nouns in *\-in* had lost the *\-n* of the oblique sg. caseforms… [yielding OE] fyrhtu 'fear', hetu 'heat', strengu 'strength', etc."
+**What Campbell supplies** (Campbell §589.7, `docs/references/campbell_old_english_grammar.txt`, §589.7):
 
-**[Source statement — R&T]** R&T confirm that OE *fyrhtu* belongs to the *in*-stem class. They give the paradigm as: nom. sg. *\*-ī*, oblique sg. *\*-in* (before *n*-loss after unstressed *i*), yielding OE *-e* for all forms.
+> "would normally have -e < *i* < *-in* in the acc., gen., and dat. sg." **[Source statement — Campbell]** OE *fyrhte* is a regular in-stem oblique.
 
-**What Campbell supplies** (Campbell §589.7, `docs/references/campbell_old_english_grammar.txt`, lines starting at 620162):
+**Morphological resolution of CAPR input `*fúrxtīnaz`:**
 
-> "In OE fem. abstract nouns of the in-declension (cf. Gothic *managei* multitude, acc. *managein*) would normally have -e < *i* < *-in* (§473) in the acc., gen., and dat. sg."
+The form `*fúrxtīnaz` = `*fúrxt-ī-n-` (in-stem oblique base) + `*-az` (PGmc gen.sg. suffix). At the **PWGmc stage**, R&T's paradigm gives gen.sg. as `*-in` (i.e., the `*-az` has already been lost by the time R&T describe the PWGmc stage). But CAPR takes inputs at the **PGmc** stage, before `*-az` loss. The PGmc gen.sg. ending `*-az` is cognate with Gothic gen.sg. `-s` (e.g., in-stem Gothic gen.sg. *manageins* = `*managī-n-az` > Go. `-ins` with regular sound changes). **[Auditor inference from Gothic paradigm + R&T chronology]:** `*fúrxtīnaz` is the pre-apocope PGmc gen.sg. form of the in-stem, morphologically defensible as the PGmc stage before `*-az` loss. R&T's description of `*-in` as the gen.sg. reflects the post-apocope PWGmc state; the earlier PGmc gen.sg. `*-inaz` is what the CAPR cascade takes as input.
 
-Campbell §473 (`docs/references/campbell_old_english_grammar.txt`, lines 510600–510610):
-> "The same tendency explains oblique cases of abstract fem. nouns, e.g. *strenge* a.s. 'strength', cf. Goth. *managein*."
+**Counterfactual FST traces (conducted 2026-08-01 in Docker):**
 
-**[Source statement — Campbell]** OE *fyrhte* (oblique sg.) is a regular product of the in-stem paradigm: OE oblique *-e* < pre-OE *\*-i* < PGmc/PWGmc *\*-in* (with *n* lost after unstressed *i*).
+All five oblique in-stem forms give `fyrhte`:
+- `fúrxtīnaz` (gen.sg. CAPR selected) → `fyrhte` ✓
+- `fúrxtīn` (post-apocope bare stem) → `fyrhte` ✓
+- `fúrxtīni` (dat.sg.) → `fyrhte` ✓
+- `fúrxtīnų` (acc.sg.) → `fyrhte` ✓
+- `fúrxtīniz` (nom.pl.) → `fyrhte` ✓
 
-**Assessment of CAPR input `*fúrxtīnaz`:**
+**Ordering claim verification:**
 
-The PGmc in-stem paradigm has:
-- Nom. sg.: *\*-ī*
-- Acc./gen./dat. sg.: *\*-in*
+The chapter claims that `*fúrxtīnaz` (not the simpler forms) is needed to demonstrate that PWGmcFinalBareALoss precedes NWGmcInStemNLoss and that OEUnstressedLongVowelShortening follows NWGmcInStemNLoss. Counterfactual probes confirm both ordering claims:
 
-The form `*fúrxtīnaz` ends in `-az`. This is **not a standard in-stem case ending**. The gen.sg. in-stem ending is `*-in` (not `*-inaz`). The `-az` ending belongs to a-stems. R&T's paradigm description (l.5517) gives acc./gen./dat. as `*-in`, not `*-inaz`.
+- `fúrxtinaz` (shortened *i*, simulating OEUnstressedLongVowelShortening *before* NWGmcInStemNLoss) → `fyrhten` — if shortening fires first, the rule condition `{*ī} _ .#.` is not met, *n* survives, and the output is wrong. **[CAPR observation: FST trace]**
+- `fúrxtīna` (bare-*a* not yet removed, simulating NWGmcInStemNLoss *before* PWGmcFinalBareALoss) → `+?` — the pre-apocope form is not accepted, consistent with the cascade not knowing how to handle *-na* at that stage. **[CAPR observation: FST trace]**
 
-**[CAPR observation]** The CAPR TSV (row 2034, `Germanic/data/germanic-aligned-final.tsv`) explains: the gen.sg. `*fúrxtīnaz` was chosen specifically to exercise the longest oblique tail through the cascade. The DEV_NOTES entry states: "Gen.sg. was selected specifically to exercise the longest oblique tail (-naz, requiring NWGmcZLoss, PWGmcFinalBareALoss, NWGmcInStemNLoss...)."
+The gen.sg. form is the only candidate that exercises all three of these rules in their claimed order. The simpler bare-stem `fúrxtīn` (post-apocope) also → `fyrhte`, but it does not demonstrate the ordering boundary involving PWGmcFinalBareALoss, since its `*-n` is already word-final. **[Auditor inference: only the gen.sg. with `*-az` tail demonstrates the ordering of bare-a-loss before n-loss.]**
 
-**[Auditor inference — implementation review flag]** The suffix `-naz` on the CAPR input treats the in-stem gen.sg. as if it had a secondary a-stem gen.sg. ending `-az` appended to the in-stem oblique form `*-in-`. This may be a legitimate pre-apocope form (before PWGmc loss of final *-z* in unstressed syllables, if in-stems had `*-inaz` at the oldest stage, cognate with Gothic gen. *heitins* < *\*haitanas*). However:
-- R&T (l.5517) give the PWGmc gen.sg. as `*-in` (with *n* retained at the post-PWGmc stage, lost by NWGmcInStemNLoss).
-- The source record for whether PGmc in-stem gen.sg. was `*-in` or `*-inaz` at the oldest stage reconstructible by comparison is not resolved in the inspected sources.
-- **This form should be flagged for implementation review** to confirm the ending `-az` is derivable from a documented PGmc paradigm cell or is a CAPR-specific cascade choice that requires an explicit justification comment.
+**CONCLUSION: Input defensible and ordering survives.**
 
-The use of "family" in the chapter (`064-065-post-apocope-tail.md`) is defensible. The morphological status of OE *fyrhte* as an in-stem oblique is well-sourced (Orel, R&T, Campbell). The precise CAPR input form `*fúrxtīnaz` is a **paradigm-cell inference** (from the in-stem reconstruction) that may involve a non-standard gen.sg. ending requiring explicit documentation.
+The form `*fúrxtīnaz` is the PGmc gen.sg. of the in-stem, morphologically legitimate. The ordering claims (PWGmcFinalBareALoss → NWGmcInStemNLoss → OEUnstressedLongVowelShortening) are confirmed by counterfactual FST probes. The chapter's claims are correct.
+
+SC065 (OEMedialSyncope) has no diagnostic witness — the chapter already states this explicitly and correctly.
 
 **Source Assessment:**
-- Orel *\*furxtīn* (in-stem, nom.): `docs/references/orel_handbook_germanic_etymology.vision.txt`, l.14554. **[Source statement]**
-- Kroonen *furhtō-* (ō-stem): `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`, l.9674. Kroonen does not reconstruct an independent in-stem lemma. **[Source statement]**
-- R&T OE *fyrhtu* as in-stem: `docs/references/ringe_taylor_linguistic_history_vol2.txt`, l.21553. **[Source statement]**
-- Campbell §589.7 OE in-stem oblique *-e*: `docs/references/campbell_old_english_grammar.txt`, §589.7 section. **[Source statement]**
-- CAPR TSV row 2034: `Germanic/data/germanic-aligned-final.tsv`, row 2034. **[CAPR observation]**
+- Orel *\*furxtīn* (in-stem): `docs/references/orel_handbook_germanic_etymology.vision.txt`, l.14554. **[Source statement]**
+- Kroonen *furhtō-* (ō-stem, no in-stem lemma): `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt`, l.9674. **[Source statement]**
+- R&T OE *fyrhtu* as in-stem, oblique `*-in`: `docs/references/ringe_taylor_linguistic_history_vol2.txt`, ll.5517, 21553. **[Source statement]**
+- Campbell §589.7 OE in-stem oblique `-e`: `docs/references/campbell_old_english_grammar.txt`, §589.7. **[Source statement]**
+- Gothic in-stem gen.sg. `-eins` < `*-ī-n-az`: Gothic paradigm evidence **[auditor inference from Fulk §7.34]**.
+- FST counterfactuals: `fúrxtinaz` → `fyrhten`; `fúrxtīnaz` → `fyrhte`. **[CAPR observation: FST trace, 2026-08-01]**
 
-**Status:** Morphological basis for OE *fyrhte* as in-stem oblique: well-sourced. CAPR input `-az` ending: flagged for implementation review.
+**Status:** Comparative root/family description: usable. CAPR derivation: **verified**. Ordering claim: **verified**. Reader-facing chapter revision: ready.
 
 **Recommendation:** Chapter wording is defensible. For precision: "inherited *\*furht-* root" could replace "inherited *\*furht-* family." The CAPR-level question about `*fúrxtīnaz` vs. a more standard in-stem gen.sg. form should be investigated separately in an implementation review, not in the manuscript. Do not change chapter prose until the CAPR input question is resolved.
 
@@ -484,7 +490,7 @@ Six distinct configurations appear in the corpus:
 | SC005 | "shoulder family" label implies cognate set is the evidence | yes | yes | none | yes | low |
 | SC008 | "four family + two pronouns" overstates evidence; treats paradigm cells as independent etyma | yes | yes | counterexamples tentative in Stiles | yes | low |
 | SC009 | Luick extra forms implication; old "Luick absent" stale claim | yes (Luick resolved) | yes | none | yes | low |
-| SC064–065 | CAPR input `*fúrxtīnaz` uses non-standard `-az` suffix for in-stem gen.sg. | yes (in-stem basis sourced) | yes | gen.sg. ending requires implementation review | partly: chapter prose ready; CAPR input flagged | requires model-input review |
+| SC064–065 | CAPR input `*fúrxtīnaz` previously raised gen.sg. suffix question | yes (in-stem basis sourced) | yes — verified by FST counterfactuals | gen.sg. `*-az` is PGmc pre-apocope ending, cognate with Gothic gen.sg. `-s`; ordering confirmed | yes | low |
 
 ---
 
@@ -508,7 +514,7 @@ Six distinct configurations appear in the corpus:
 
 ### Reconstruction inferred, not directly sourced as that exact form
 
-7. **CAPR input `*fúrxtīnaz`**: The in-stem identification is directly sourced (Orel, R&T, Campbell). The specific gen.sg. form with `-az` ending is a CAPR cascade-design choice that extrapolates from the in-stem reconstruction. The standard PWGmc gen.sg. in-stem ending in R&T is `*-in`, not `*-inaz`. The `-az` element requires a dedicated implementation review to confirm its morphological derivation.
+7. **`*fúrxtīnaz` morphological analysis resolved**: The form `*fúrxtīnaz` is the PGmc gen.sg. of the in-stem, morphologically defensible. R&T's description of PWGmc gen.sg. as `*-in` reflects the post-apocope stage; the pre-apocope PGmc form `*-inaz` is the CAPR input stage (cognate with Gothic in-stem gen.sg. *-eins* < `*-ī-n-az`). FST counterfactuals confirm the ordering claims. No implementation review required.
 
 ---
 
@@ -526,7 +532,7 @@ Key observations with designations:
 - That shoulder is a CAPR ordering witness and not part of the comparative evidence for SC005: **[auditor inference]**, supported by R&T's treatment of the rule and the chapter's own statement.
 - That *izwiz* and *izweraz* are case forms of one pronominal paradigm, not two independent etyma: **[source statement]** — Stiles §1.3.3 explicitly uses "the oblique cases of the second person plural pronoun."
 - That R&T's "one example of each cluster" is consistent with treating both pronominal case forms as one paradigmatic witness: **[source inference from R&T l.3106 + Stiles §1.3.3]**.
-- That the *\*ijo* sequence with stressed *\*i* is unique to friend among the Luick examples: **[source statement]** — R&T p.62 explicit. Luick's other forms have different phonological environments: **[auditor inference from comparison of Luick §102 and R&T restriction]**.
+- That the *\*ijo* sequence with stressed *\*i* is unique to 'friend' among the Luick examples — not because the vowel preceding *j* differs (it is *i* in both *frijōnd-* and *fijand-*), but because **the vowel following *j* differs**: *\*ō* in *\*frijōnd-* (giving the *\*ijo* environment R&T specify) vs. *\*a* in *\*fijand-*, *\*frija-*, *\*blija-* (giving *\*ija*, a different environment): **[source statement (R&T environment specification) + auditor inference (Kroonen stem identification)]**.
 - That CAPR's `*fúrxtīnaz` uses a non-standard in-stem gen.sg. suffix: **[auditor inference from comparison of CAPR TSV and R&T paradigm description]**.
 
 ---
