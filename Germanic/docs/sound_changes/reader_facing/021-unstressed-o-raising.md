@@ -2,7 +2,7 @@
 
 ## Historical discussion
 
-The older history of *heofon* 'heaven' requires an unstressed-vowel adjustment before the later reshaping of medial vowels in Old English. Campbell derives the \emph{-o-} from an earlier unstressed environment, and the same raising is visible in Old Saxon \emph{heban} and the North-West Germanic reconstructed base \emph{*hebun} [@Campbell1959, pp. 155--156, §373; @RingeTaylor2014, p. 287].
+The older history of [`heofon`]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of medial vowels in Old English. Campbell derives the \emph{-o-} from an earlier unstressed environment, and Ringe and Taylor reconstruct [hebun]{.recon .iv lang=preoe sort=hebun role=evidence_form} 'heaven' behind OE [`heofon`]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' and OS [`heban`]{.iv lang=os sort=heban role=evidence_form} 'heaven' [@Campbell1959, pp. 155--156, §373; @RingeTaylor2014, p. 287].
 
 The change is historically recognizable, but the checked forms provide only a later boundary.
 
