@@ -255,7 +255,7 @@ define NWGmcAToUBeforeM [
 ];
 ```
 
-Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [skúldramiz]{.recon} ‘shoulders’ yields [*sċoldrum*]{.pred} rather than expected OE *sċuldrum* 'shoulders'; earlier placements converge on the expected output. The scope of the change is established by inflectional evidence: the a-stem dat.pl. ending *-um* 'dative plural', the strong-adjective dat.sg., and the 1pl. present indicative all show *-um* consistently across Old Norse, Old English, Old Saxon, and Old High German, while Gothic preserves the conservative *-am-* 'unstressed -am sequence' forms. The derivation of *sċuldrum* 'shoulders' supplies a CAPR ordering witness for the relative chronology, but the cognate set for 'shoulder' does not contribute comparative evidence for the rule's historical scope.
+Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [skúldramiz]{.recon} 'shoulders' yields [*sċoldrum*]{.pred} rather than expected OE *sċuldrum* 'shoulders'; earlier placements converge on the expected output. The scope of the change is established by inflectional evidence across multiple paradigm types: a-stem dative plural ON [dogum]{.ex} 'days', OE [dagum]{.ex} 'days', OS [dagun]{.ex} 'days', OHG [tagum]{.ex} 'days' beside Gothic [*-am-*]{.ex}; strong-adjective dative singular ON/OE/OS [godum]{.ex} 'good' beside Gothic [*-amma*]{.ex}; and first-plural present ON [berum]{.ex} 'we carry', OHG [berumés]{.ex} 'we carry' — all showing [*-um*]{.ex} where Gothic preserves [*-am-*]{.ex} [@RingeTaylor2014, p. 17]. The derivation of *sċuldrum* 'shoulders' supplies a CAPR ordering witness for the relative chronology, but the cognate set for 'shoulder' does not contribute comparative evidence for the rule's historical scope.
 
 \newpage
 
@@ -286,7 +286,7 @@ Early i-apocope must therefore precede the long-diphthong development. Moving it
 
 ## Historical discussion
 
-Ringe and Taylor treat the West Germanic lowering of final bimoric \emph{*ō} before word-final \emph{*r} as a specific inherited development and illustrate it above all with the families behind *fēower* ‘four’ and *wæter* ‘water’ [@RingeTaylor2014, pp. 58--59].
+Ringe and Taylor treat the West Germanic lowering of final bimoric \emph{*ō} before word-final \emph{*r} as a specific inherited development [@RingeTaylor2014, pp. 58--59]. The primary comparative evidence comes from kinship-term \emph{*r}-stems: PGmc \emph{*fadér} 'father' (OHG \emph{fater}, OE \emph{fæder}) and comparable \emph{*r}-stem nouns show a short vowel in the final syllable before \emph{*r}, demonstrating the lowering across noun paradigms. PGmc \emph{*fedwōr} 'four' (OE \emph{fēower}, OFris \emph{fiuwer}) and \emph{*watōr} 'water' (OE \emph{wæter}) each provide an independent etymon with final \emph{*ō} before \emph{*r}.
 
 The rule is historically secure but narrow: final or pre-final \emph{*ō} before word-final \emph{*r}. The clearest evidence remains concentrated in the `four` and `water` material.
 No broader environment for \emph{*ō} is attested.
@@ -301,7 +301,7 @@ define PWGmcFinalOrLowering [
 
 OE *wæter* ‘water’ reveals why lowering must precede [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). If [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed until afterwards, PGmc [wátōr]{.recon} ‘water’ yields [*water*]{.pred} rather than expected OE *wæter* ‘water’: brightening can affect the vowel only after lowering has created its input. Moving the change earlier within the tested range alters no checked output.
 
-The witness thus supplies a terminus ante quem at brightening but no earlier boundary. The *fēower* ‘four’ and *wæter* ‘water’ families support the narrow environment before word-final \emph{*r}; no broader lowering of \emph{*ō} is attested.
+The witness thus supplies a terminus ante quem at brightening but no earlier boundary. The \emph{*r}-stem kinship nouns (PGmc \emph{*fadér} 'father', OE \emph{fæder}; and related \emph{*r}-stems) support the change's occurrence; the numeral \emph{*fedwōr} 'four' (OE \emph{fēower}) and the \emph{*watōr} 'water' etymon (OE \emph{wæter}) each independently demonstrate the same lowering environment, with \emph{wæter} additionally supplying the ordering constraint before brightening. No broader lowering of \emph{*ō} is attested.
 
 \newpage
 
@@ -599,7 +599,7 @@ Before [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [núsō]{.recon} 'nose
 
 ## Historical discussion
 
-The older history of *heofon* ‘heaven’ requires an unstressed-vowel adjustment before the later reshaping of medial vowels in Old English. Campbell derives the \emph{-o-} from an earlier unstressed environment, and Ringe and Taylor place the same family within the wider West Germanic record [@Campbell1959, pp. 155--156, §373; @RingeTaylor2014, p. 287].
+The older history of *heofon* 'heaven' requires an unstressed-vowel adjustment before the later reshaping of medial vowels in Old English. Campbell derives the \emph{-o-} from an earlier unstressed environment, and the same raising is visible in Old Saxon \emph{heban} and the North-West Germanic reconstructed base \emph{*hebun} [@Campbell1959, pp. 155--156, §373; @RingeTaylor2014, p. 287].
 
 The change is historically recognizable, but the checked forms provide only a later boundary.
 
