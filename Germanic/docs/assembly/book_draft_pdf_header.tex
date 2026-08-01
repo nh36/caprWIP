@@ -8,13 +8,21 @@
 \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
 \newif\ifivfirstlangheader
 \ivfirstlangheadertrue
-\providecommand{\ivlangheader}[1]{%
+\providecommand{\ivlangheader}[2]{%
   \ifivfirstlangheader
     \global\ivfirstlangheaderfalse
   \else
     \addvspace{0.9\baselineskip}%
   \fi
-  \nopagebreak[3]\textbf{#1}\par\nobreak\vspace{0.2\baselineskip}\nopagebreak[3]%
+  \nopagebreak[3]\textbf{#1}%
+  \if\relax\detokenize{#2}\relax\else\ \textit{(#2)}\fi
+  \par\nobreak\vspace{0.2\baselineskip}\nopagebreak[3]%
+}
+% Old English index entry: italic form plus optional roman variety label.
+% A blank second argument renders identically to \emph{#1}.
+\providecommand{\ivoeentry}[2]{%
+  \emph{#1}%
+  \if\relax\detokenize{#2}\relax\else\nobreakspace\textnormal{(#2)}\fi
 }
 % Predicted (counterfactual) form marker: superscript dagger immediately before the form
 \providecommand{\Pred}[1]{\textsuperscript{\dag}\emph{#1}}

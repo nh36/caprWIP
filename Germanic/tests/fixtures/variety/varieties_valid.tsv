@@ -1,0 +1,8 @@
+language	code	title	printed_label	parent	display_order	suppress_label	assignable	active	notes
+oe	ws	West Saxon			1	1	0	1	Non-assignable taxonomy parent; ordinary West Saxon remains unmarked.
+oe	ews	Early West Saxon	EWS	ws	2	0	1	1	
+oe	lws	Late West Saxon	LWS	ws	3	0	1	1	
+oe	angl	Anglian	Angl.		4	0	1	1	
+oe	merc	Mercian	Merc.	angl	5	0	1	1	
+oe	north	Northumbrian	North.	angl	6	0	1	1	
+oe	kent	Kentish	Kent.		7	0	1	1	

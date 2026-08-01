@@ -4,10 +4,13 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import sys
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
+import index_verborum_render as ivr
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
@@ -26,51 +29,31 @@ def load_rows(path: Path) -> list[dict[str, str]]:
 
 
 def latex_escape(value: str) -> str:
-    return value.replace("@", r"\@").replace("!", r"\!").replace("|", r"\|")
+    return ivr.latex_escape(value)
 
 
-def _check_build_lang_order() -> dict[str, tuple[str, str]]:
-    result: dict[str, tuple[str, str]] = {}
-    with LANGUAGE_REGISTRY_PATH.open(encoding="utf-8") as handle:
-        for order, row in enumerate(csv.DictReader(handle, delimiter="\t"), start=1):
-            code = (row.get("code") or "").strip()
-            title = (row.get("title") or "").strip()
-            active = (row.get("active") or "").strip()
-            if code and active == "1":
-                result[code] = (f"{order:02d}{code}", title)
-    return result
-
-
-_CHECK_LANG_ORDER: dict[str, tuple[str, str]] | None = None
-
-
-def check_get_lang_order() -> dict[str, tuple[str, str]]:
-    global _CHECK_LANG_ORDER
-    if _CHECK_LANG_ORDER is None:
-        _CHECK_LANG_ORDER = _check_build_lang_order()
-    return _CHECK_LANG_ORDER
+_CHECK_LANG_META = ivr.load_language_registry()
+_CHECK_VAR_REGISTRY = ivr.load_variety_registry()
 
 
 def index_command(row: dict[str, str]) -> str:
-    language = row.get("language", "")
-    sort_key = row.get("sort_key", "")
-    display = row.get("display", "")
-    index_display = latex_escape(display)
-    if language == "oe":
-        index_display = rf"\emph{{{index_display}}}"
-    lang_order = check_get_lang_order()
-    lang_prefix, lang_title = lang_order.get(language, (f"99{language}", language))
-    lang_title_escaped = lang_title.replace("@", r"\@").replace("!", r"\!")
-    lang_header = rf"\ivlangheader{{{lang_title_escaped}}}"
-    return rf"\index[iv]{{{lang_prefix}@{lang_header}!{latex_escape(sort_key)}@{index_display}}}"
+    return ivr.index_command(
+        row.get("language", ""),
+        row.get("sort_key", ""),
+        row.get("display", ""),
+        (row.get("variety") or "").strip(),
+        lang_meta=_CHECK_LANG_META,
+        var_registry=_CHECK_VAR_REGISTRY,
+    )
 
 
-def explicit_key(row: dict[str, str]) -> tuple[str, str, str, str]:
+def explicit_key(row: dict[str, str]) -> tuple[str, str, str, str, str]:
     return (
         row.get("language", ""),
         row.get("sort_key", ""),
         row.get("display", ""),
         row.get("form_role", "") or "evidence_form",
+        (row.get("variety") or "").strip(),
     )
 
 
@@ -204,7 +187,7 @@ def main() -> None:
     )
 
     # ── Language registry: every active language has a unique order prefix ──────
-    lang_order = check_get_lang_order()
+    lang_order = _CHECK_LANG_META
     registry_codes = set(lang_order.keys())
     print_languages = {(row.get("language") or "").strip() for row in main_rows if (row.get("language") or "").strip()}
     unknown_langs = print_languages - registry_codes

@@ -1,5 +1,79 @@
 # Index verborum tagging
 
+## Old English variety metadata (`variety=`)
+
+Old English index entries may carry optional, **source-backed** dialectal,
+chronological, or textual-variety metadata via an orthogonal `variety=`
+attribute. Every Old English form stays under `language=oe`; there are **no**
+separate `mercian`/`northumbrian`/`oe_ews` language codes.
+
+Controlled variety codes live in the sole source of truth
+`Germanic/docs/book/index_verborum_varieties.tsv`:
+
+| code    | printed label | parent | assignable |
+| :------ | :------------ | :----- | :--------- |
+| `ws`    | *(none)*      | —      | **no** (taxonomy parent only) |
+| `ews`   | `(EWS)`       | `ws`   | yes |
+| `lws`   | `(LWS)`       | `ws`   | yes |
+| `angl`  | `(Angl.)`     | —      | yes |
+| `merc`  | `(Merc.)`     | `angl` | yes |
+| `north` | `(North.)`    | `angl` | yes |
+| `kent`  | `(Kent.)`     | —      | yes |
+
+Rules:
+
+- **Ordinary West Saxon remains unmarked.** Use a **blank** `variety` for
+  ordinary unlabelled Old English, ordinary West Saxon, West Saxon-normalized
+  forms, and any form whose narrower variety has not been structurally encoded.
+- `ws` is an **active but non-assignable** taxonomy parent for the qualified
+  West Saxon subdivisions (`ews`, `lws`). `variety=ws` **fails validation**, no
+  production row may carry it, and no `(WS)` label can ever print.
+- `ews` and `lws` are assignable qualified West Saxon varieties.
+- `merc` and `north` are subdivisions of Anglian (`angl`).
+- **One scalar variety per occurrence.** No comma-separated values, no synthetic
+  combined codes (`merc_north`), no combined labels (`(Merc./North.)`).
+- The hierarchy is **classificatory metadata only**: a Mercian occurrence prints
+  only `(Merc.)` — it is **not** automatically expanded to also emit `(Angl.)`.
+- Variety assignments must be **source-backed**. Never infer variety from
+  spelling, sound-change rules, FST/transducer behaviour, selected-target
+  normalization, or manuscript location alone.
+- `variety` is an **indexing-control** attribute: it is stripped from the
+  visible prose span and never appended automatically to the running text. The
+  label appears **only** in the Index Verborum entry.
+
+Synthetic examples:
+
+```markdown
+[strēgan]{.iv lang=oe variety=angl sort=stregan role=comparison_form}
+[for-geofan]{.iv lang=oe variety=merc sort=forgeofan role=comparison_form}
+[geafa]{.iv lang=oe variety=north sort=geafa role=comparison_form}
+[stīeran]{.iv lang=oe variety=ews sort=stieran role=comparison_form}
+[styrian]{.iv lang=oe variety=lws sort=styrian role=comparison_form}
+[strīeġan]{.recon .iv lang=oe variety=angl sort=striegan role=comparison_form}
+```
+
+In the printed index the form is italic and the variety label is roman, e.g.
+`\emph{strēgan}\nobreakspace\textnormal{(Angl.)}`; reconstructed forms keep
+exactly one asterisk, e.g. `\emph{*strīeġan}\nobreakspace\textnormal{(Angl.)}`.
+A blank variety produces no suffix.
+
+### Reader-facing Old English heading (deferred)
+
+The language registry supports an optional reader-facing `index_note` field,
+rendered as a subordinate italic note after the bold language title:
+
+```
+Old English (West Saxon normalization unmarked)
+```
+
+That note is **intentionally left blank in the canonical registry** during the
+infrastructure pass, because the corpus still contains Old English occurrences
+described in prose as Mercian, Northumbrian, Anglian, or Kentish that have not
+yet received structural `variety` metadata. Activating the heading note belongs
+to the later source-backed annotation task, once those forms have been reviewed.
+
+## Explicit `.iv` spans
+
 Use explicit Pandoc spans when a prose passage should contribute a form to the
 `index verborum`:
 

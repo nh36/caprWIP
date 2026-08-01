@@ -1,6 +1,8 @@
 local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
 local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
+local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
+local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
 
 local function trim(value)
@@ -30,8 +32,73 @@ local function column(cells, idx)
   return trim(cells[idx] or "")
 end
 
-local function explicit_key(language, role, value, source_ref)
-  return (language or "") .. "\t" .. (role or "") .. "\t" .. (value or "") .. "\t" .. (source_ref or "")
+local function explicit_key(language, role, value, source_ref, variety)
+  return (language or "") .. "\t" .. (role or "") .. "\t" .. (value or "") .. "\t" .. (source_ref or "") .. "\t" .. (variety or "")
+end
+
+local function ensure_variety_meta_loaded()
+  if variety_meta ~= nil then return variety_meta end
+  variety_meta = {}
+  local handle = io.open(VARIETY_REGISTRY_TSV, "r")
+  if not handle then
+    error("index_verborum_filter.lua: cannot read " .. VARIETY_REGISTRY_TSV)
+  end
+  local header_line = handle:read("*l")
+  if not header_line then handle:close(); return variety_meta end
+  local headers = {}
+  local s = 1
+  while true do
+    local t = header_line:find("\t", s, true)
+    if t then table.insert(headers, header_line:sub(s, t-1)); s = t+1
+    else table.insert(headers, header_line:sub(s)); break end
+  end
+  local idx = {}
+  for i, h in ipairs(headers) do idx[trim(h)] = i end
+  for line in handle:lines() do
+    if line ~= "" then
+      local cells = {}
+      local c = 1
+      while true do
+        local t = line:find("\t", c, true)
+        if t then table.insert(cells, line:sub(c, t-1)); c = t+1
+        else table.insert(cells, line:sub(c)); break end
+      end
+      local code = trim(cells[idx["code"]] or "")
+      if code ~= "" then
+        variety_meta[code] = {
+          language = trim(cells[idx["language"]] or ""),
+          printed_label = trim(cells[idx["printed_label"]] or ""),
+          display_order = tonumber((trim(cells[idx["display_order"]] or "0"))) or 0,
+          suppress = trim(cells[idx["suppress_label"]] or "") == "1",
+          assignable = trim(cells[idx["assignable"]] or "") == "1",
+          active = trim(cells[idx["active"]] or "") == "1",
+        }
+      end
+    end
+  end
+  handle:close()
+  return variety_meta
+end
+
+-- Fail-closed validation of a nonblank occurrence variety; returns printed label.
+local function validate_variety(language, variety)
+  if variety == "" then return "" end
+  local meta = ensure_variety_meta_loaded()
+  local entry = meta[variety]
+  if not entry then
+    error("index_verborum_filter.lua: unknown variety '" .. variety .. "'")
+  end
+  if not entry.active then
+    error("index_verborum_filter.lua: inactive variety '" .. variety .. "'")
+  end
+  if not entry.assignable then
+    error("index_verborum_filter.lua: non-assignable variety '" .. variety .. "' (e.g. 'ws')")
+  end
+  if entry.language ~= language then
+    error("index_verborum_filter.lua: variety '" .. variety .. "' not valid for language '" .. (language or "") .. "'")
+  end
+  if entry.suppress then return "" end
+  return entry.printed_label
 end
 
 local function ensure_lang_meta_loaded()
@@ -81,7 +148,7 @@ local function ensure_lang_meta_loaded()
         local order_str = string.format("%02d", order)
         -- escape @ and ! in title for MakeIndex
         local escaped = title:gsub("@", "\\@"):gsub("!", "\\!")
-        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\ivlangheader{" .. escaped .. "}"}
+        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\ivlangheader{" .. escaped .. "}{}"}
       end
     end
   end
@@ -123,11 +190,12 @@ local function ensure_print_main_loaded()
         local form = column(cells, indices["form"])
         local display = column(cells, indices["display"])
         local source_ref = column(cells, indices["source_ref"])
+        local variety = column(cells, indices["variety"])
         if role == "" then
           role = "evidence_form"
         end
-        explicit_allow[explicit_key(language, role, form, source_ref)] = true
-        explicit_allow[explicit_key(language, role, display, source_ref)] = true
+        explicit_allow[explicit_key(language, role, form, source_ref, variety)] = true
+        explicit_allow[explicit_key(language, role, display, source_ref, variety)] = true
       end
     end
   end
@@ -168,7 +236,7 @@ local function visible_span(span)
   end
   local filtered_attrs = {}
   for key, value in pairs(span.attributes) do
-    if key ~= "lang" and key ~= "sort" and key ~= "display" and key ~= "source_scope" and key ~= "source_ref" and key ~= "role" then
+    if key ~= "lang" and key ~= "sort" and key ~= "display" and key ~= "source_scope" and key ~= "source_ref" and key ~= "role" and key ~= "variety" then
       filtered_attrs[key] = value
     end
   end
@@ -179,7 +247,7 @@ local function visible_span(span)
   return pandoc.Span(content, pandoc.Attr(span.identifier, filtered_classes, filtered_attrs))
 end
 
-local function explicit_tag_is_printable(language, role, form, display, source_ref)
+local function explicit_tag_is_printable(language, role, form, display, source_ref, variety)
   if language == "" then
     return false
   end
@@ -189,7 +257,9 @@ local function explicit_tag_is_printable(language, role, form, display, source_r
   if source_ref == "" then
     return false
   end
-  return allow[explicit_key(language, role, form, source_ref)] or allow[explicit_key(language, role, display, source_ref)] or false
+  return allow[explicit_key(language, role, form, source_ref, variety)]
+      or allow[explicit_key(language, role, display, source_ref, variety)]
+      or false
 end
 
 local function span_to_index(span)
@@ -206,6 +276,9 @@ local function span_to_index(span)
     role = "evidence_form"
   end
   local source_ref = trim(span.attributes["source_ref"] or "")
+  local variety = trim(span.attributes["variety"] or "")
+  -- Fail-closed validation; also yields the printed label (blank => no suffix).
+  local variety_label = validate_variety(lang, variety)
   local form = trim(pandoc.utils.stringify(span.content))
   local display_attr = trim(span.attributes["display"] or "")
   -- A combined .recon .iv span carries reconstruction semantics; derive the starred
@@ -215,18 +288,30 @@ local function span_to_index(span)
   -- Sort key must always derive from the bare (unstarred) form, not from the display.
   -- A starred display would otherwise propagate a leading asterisk into the sort key.
   local sort = trim(span.attributes["sort"] or form)
-  if not explicit_tag_is_printable(lang, role, form, display, source_ref) then
+  if not explicit_tag_is_printable(lang, role, form, display, source_ref, variety) then
     return visible
   end
-  local index_display = latex_escape(display)
+  local index_display
   if lang == "oe" then
-    index_display = "\\emph{" .. index_display .. "}"
+    index_display = "\\ivoeentry{" .. latex_escape(display) .. "}{" .. variety_label .. "}"
+  else
+    index_display = latex_escape(display)
+  end
+  -- Hidden MakeIndex discriminator (from display_order) keeps same-form variety
+  -- entries adjacent and ordered; blank variety appends nothing and sorts first.
+  local disc = ""
+  if variety ~= "" then
+    local vmeta = ensure_variety_meta_loaded()
+    local ventry = vmeta[variety]
+    if ventry then
+      disc = string.format("%02d", ventry.display_order)
+    end
   end
   local meta = ensure_lang_meta_loaded()
   local lm = meta[lang]
   local lang_sort = lm and lm.order_str or ("99" .. lang)
-  local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. lang .. "}")
-  local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. latex_escape(sort) .. "@" .. index_display .. "}")
+  local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. lang .. "}{}")
+  local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. latex_escape(sort) .. disc .. "@" .. index_display .. "}")
   return { visible, raw }
 end
 

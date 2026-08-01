@@ -1,20 +1,20 @@
-action	source_ref	form	language	form_role	note
-accept	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:48	creft	oe	comparison_form	clear OE i-stem comparator
-accept	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:49	craft	oe	comparison_form	clear OE u-stem comparator
-defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	*kōz	pgmc	source_protoform	citation nominative background only
-defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65	cū	oe	comparison_form	later generalized nominative only
-defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	*kūi	pgmc	selected_input	short dative-cell input; keep manual review
-defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	*kūiz	pgmc	comparison_form	unstable genitive comparator
-defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	cā	oe	comparison_form	unstable genitive evidence only
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	hlæhhan	oe	comparison_form	attested OE variant in the same verb line
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	hlehhan	oe	comparison_form	attested OE variant in the same verb line
-accept	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:59	leornian	oe	comparison_form	attested OE dictionary headword
-accept	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60	næfla	oe	comparison_form	reduced OE comparative citation form
-defer	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59	*nḗdlō	preoe	comparison_form	intermediate pre-OE stage; keep deferred
-defer	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59	*nasō	pgmc	comparison_form	full-grade comparative background only
-accept	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59	nasu	oe	comparison_form	OE full-grade comparison form
-defer	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:60	*núsō	pgmc	selected_input	short remodeled zero-grade input; keep manual review
-accept	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59	rast	oe	comparison_form	OE nominative comparison form
-ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95	*stébnō			wrong homonym noted in table; must not be indexed from stem/prow row 2216
-ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	spárē			probe/comparison helper in table, not a standalone index occurrence
-ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	spárēθi			probe/comparison helper in table, not a standalone index occurrence
+action	source_ref	form	language	variety	form_role	note
+accept	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:48	creft	oe		comparison_form	clear OE i-stem comparator
+accept	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:49	craft	oe		comparison_form	clear OE u-stem comparator
+defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	*kōz	pgmc		source_protoform	citation nominative background only
+defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65	cū	oe		comparison_form	later generalized nominative only
+defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	*kūi	pgmc		selected_input	short dative-cell input; keep manual review
+defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	*kūiz	pgmc		comparison_form	unstable genitive comparator
+defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	cā	oe		comparison_form	unstable genitive evidence only
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	hlæhhan	oe		comparison_form	attested OE variant in the same verb line
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	hlehhan	oe		comparison_form	attested OE variant in the same verb line
+accept	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:59	leornian	oe		comparison_form	attested OE dictionary headword
+accept	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60	næfla	oe		comparison_form	reduced OE comparative citation form
+defer	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59	*nḗdlō	preoe		comparison_form	intermediate pre-OE stage; keep deferred
+defer	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59	*nasō	pgmc		comparison_form	full-grade comparative background only
+accept	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59	nasu	oe		comparison_form	OE full-grade comparison form
+defer	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:60	*núsō	pgmc		selected_input	short remodeled zero-grade input; keep manual review
+accept	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59	rast	oe		comparison_form	OE nominative comparison form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95	*stébnō				wrong homonym noted in table; must not be indexed from stem/prow row 2216
+ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	spárē				probe/comparison helper in table, not a standalone index occurrence
+ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	spárēθi				probe/comparison helper in table, not a standalone index occurrence

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import sys
 import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
@@ -11,6 +12,8 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
+import index_verborum_render as ivr
 BOOK_DIR = REPO_ROOT / "Germanic/docs/book"
 ASSEMBLY_DIR = REPO_ROOT / "Germanic/docs/assembly"
 INTRO_PATH = ASSEMBLY_DIR / "capr_book_intro_alpha_01.md"
@@ -40,6 +43,7 @@ INDEX_HEADER_PATH = ASSEMBLY_DIR / "book_draft_index_registry.tex"
 
 PRODUCTION_FIELDS = [
     "language",
+    "variety",
     "form",
     "display",
     "sort_key",
@@ -52,6 +56,7 @@ PRODUCTION_FIELDS = [
 OVERRIDE_FIELDS = [
     "action",
     "language",
+    "variety",
     "form",
     "display",
     "sort_key",
@@ -86,6 +91,7 @@ TABLE_DECISION_FIELDS = [
     "source_ref",
     "form",
     "language",
+    "variety",
     "form_role",
     "note",
 ]
@@ -94,12 +100,14 @@ BROAD_PROSE_DECISION_FIELDS = [
     "source_ref",
     "form",
     "language",
+    "variety",
     "form_role",
     "note",
 ]
 PRINT_DECISION_FIELDS = [
     "action",
     "language",
+    "variety",
     "form",
     "source_ref",
     "form_role",
@@ -110,6 +118,8 @@ PRINT_UNIQUE_FIELDS = [
     "language",
     "display",
     "sort_key",
+    "printed_variety",
+    "source_varieties",
     "occurrence_count",
     "roles",
     "source_scopes",
@@ -117,6 +127,7 @@ PRINT_UNIQUE_FIELDS = [
 ]
 PRINT_ANOMALY_FIELDS = [
     "language",
+    "variety",
     "form",
     "display",
     "sort_key",
@@ -172,6 +183,8 @@ def load_language_registry() -> tuple[list[dict[str, str]], list[str], dict[str,
 
 LANGUAGE_REGISTRY, LANGUAGE_ORDER, LANGUAGE_TITLES, LANGUAGE_COLUMNS = load_language_registry()
 KNOWN_LANGUAGE_CODES = {row["code"] for row in LANGUAGE_REGISTRY}
+LANG_META = ivr.load_language_registry()
+VARIETY_REGISTRY = ivr.load_variety_registry()
 ALLOWED_FORM_ROLES = {
     "evidence_form",
     "source_protoform",
@@ -545,7 +558,8 @@ def write_index_registry_header(production_rows: list[ProductionOccurrence]) -> 
     the flow rather than independently balanced per-language column sets.
     """
     lines = [
-        r"\providecommand{\ivlangheader}[1]{\textbf{#1}}",
+        r"\providecommand{\ivlangheader}[2]{\textbf{#1}\if\relax\detokenize{#2}\relax\else\ \textit{(#2)}\fi}",
+        r"\providecommand{\ivoeentry}[2]{\emph{#1}\if\relax\detokenize{#2}\relax\else\nobreakspace\textnormal{(#2)}\fi}",
         r"\makeindex[name=iv,title={},columns=3]",
     ]
     INDEX_HEADER_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -587,10 +601,11 @@ class ProductionOccurrence:
     source_ref: str
     origins: set[str] = field(default_factory=set)
     status: str = "auto"
+    variety: str = ""
 
     @property
-    def key(self) -> tuple[str, str, str, str, str, str]:
-        return (self.language, self.form, self.display, self.form_role, self.source_scope, self.source_ref)
+    def key(self) -> tuple[str, str, str, str, str, str, str]:
+        return (self.language, self.variety, self.form, self.display, self.form_role, self.source_scope, self.source_ref)
 
 
 @dataclass(frozen=True)
@@ -734,7 +749,7 @@ def stage_to_language(label: str, form: str) -> str:
 
 
 def add_production(
-    store: dict[tuple[str, str, str, str, str, str], ProductionOccurrence],
+    store: dict[tuple[str, str, str, str, str, str, str], ProductionOccurrence],
     *,
     language: str,
     form: str,
@@ -745,6 +760,7 @@ def add_production(
     display: str | None = None,
     sort_key: str | None = None,
     status: str = "auto",
+    variety: str = "",
 ) -> None:
     cleaned = normalize_form(form)
     if not cleaned or not language:
@@ -753,8 +769,10 @@ def add_production(
         raise ValueError(f"Unknown index verborum language code: {language}")
     if form_role not in ALLOWED_FORM_ROLES:
         raise ValueError(f"Unknown index verborum form role: {form_role}")
+    variety = (variety or "").strip()
+    VARIETY_REGISTRY.validate_occurrence(language, variety)
     visible = display or cleaned
-    key = (language, cleaned, visible, form_role, source_scope, source_ref)
+    key = (language, variety, cleaned, visible, form_role, source_scope, source_ref)
     if key not in store:
         store[key] = ProductionOccurrence(
             language=language,
@@ -765,6 +783,7 @@ def add_production(
             source_scope=source_scope,
             source_ref=source_ref,
             status=status,
+            variety=variety,
         )
     store[key].origins.add(origin)
     if status == "override":
@@ -1457,7 +1476,7 @@ def collect_table_semantic_results(
 
 def write_table_suggestions(path: Path, suggestions: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=TABLE_SUGGESTION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=TABLE_SUGGESTION_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in sorted(suggestions, key=lambda item: (item["source_ref"], item["form"], item["suggested_role"])):
             writer.writerow(row)
@@ -1465,7 +1484,7 @@ def write_table_suggestions(path: Path, suggestions: list[dict[str, str]]) -> No
 
 def write_broad_prose_suggestions(path: Path, suggestions: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=BROAD_PROSE_SUGGESTION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=BROAD_PROSE_SUGGESTION_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in sorted(suggestions, key=lambda item: (item["source_ref"], item["form"], item["suggested_role"])):
             writer.writerow({field: row.get(field, "") for field in BROAD_PROSE_SUGGESTION_FIELDS})
@@ -1525,6 +1544,9 @@ def print_decision_matches_row(decision: dict[str, str], row: ProductionOccurren
         if decision["source_ref"] != row_source_no_line:
             return False
     if decision.get("form_role") and decision["form_role"] != row.form_role:
+        return False
+    # Variety is matched exactly and fail-closed (blank matches only blank).
+    if (decision.get("variety", "") or "").strip() != (row.variety or "").strip():
         return False
     return True
 
@@ -2741,11 +2763,16 @@ def load_overrides() -> tuple[list[dict[str, str]], list[dict[str, str]]]:
     return adds, ignores
 
 
-def override_matches(override: dict[str, str], *, form: str, source_scope: str = "", source_ref: str = "", language: str = "") -> bool:
+def override_matches(override: dict[str, str], *, form: str, source_scope: str = "", source_ref: str = "", language: str = "", variety: str = "") -> bool:
     for key, value in (("form", form), ("source_scope", source_scope), ("source_ref", source_ref), ("language", language)):
         expected = override.get(key, "")
         if expected and expected != value:
             return False
+    # Variety is matched exactly and fail-closed: a blank decision variety
+    # matches ONLY a blank occurrence variety; it never acts as a wildcard, and
+    # a parent variety never matches a child variety.
+    if (override.get("variety", "") or "").strip() != (variety or "").strip():
+        return False
     return True
 
 
@@ -2762,7 +2789,7 @@ def build_production_rows(
         (row["lexical_item"], row["counterpart"], row["protoform"]): row
         for row in manifest_rows
     }
-    store: dict[tuple[str, str, str, str, str, str], ProductionOccurrence] = {}
+    store: dict[tuple[str, str, str, str, str, str, str], ProductionOccurrence] = {}
     for row in manifest_rows:
         ref = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
         oe_display = oe_target_display(row["counterpart"], row["derivation_class"])
@@ -2817,6 +2844,7 @@ def build_production_rows(
         add_production(
             store,
             language=row["language"],
+            variety=(row.get("variety") or "").strip(),
             form=row["form"],
             display=row["display"] or row["form"],
             sort_key=row["sort_key"] or transliterate_sort_key(row["display"] or row["form"]),
@@ -2836,6 +2864,7 @@ def build_production_rows(
                 source_scope=entry.source_scope,
                 source_ref=entry.source_ref,
                 language=entry.language,
+                variety=entry.variety,
             )
             for override in ignore_overrides
         )
@@ -2865,6 +2894,7 @@ def build_production_rows(
                     source_scope=entry.source_scope,
                     source_ref=entry.source_ref,
                     language=entry.language,
+                    variety=entry.variety,
                 )
                 for override in ignore_overrides
             )
@@ -2938,6 +2968,7 @@ def split_print_main_rows(
             excluded.append(
                 {
                     "language": row.language,
+                    "variety": row.variety,
                     "form": row.form,
                     "display": row.display,
                     "sort_key": row.sort_key,
@@ -2958,12 +2989,13 @@ def split_print_main_rows(
 
 def write_print_main_rows(path: Path, rows: list[ProductionOccurrence]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRODUCTION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRODUCTION_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow(
                 {
                     "language": row.language,
+                    "variety": row.variety,
                     "form": row.form,
                     "display": row.display,
                     "sort_key": row.sort_key,
@@ -2978,7 +3010,7 @@ def write_print_main_rows(path: Path, rows: list[ProductionOccurrence]) -> None:
 
 def write_print_excluded_rows(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_EXCLUDED_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_EXCLUDED_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in PRINT_EXCLUDED_FIELDS})
@@ -2989,15 +3021,18 @@ SMALL_PRINT_SAMPLE_LANGUAGES = {"pwgmc", "goth", "dutch", "german", "modeng"}
 
 
 def build_print_unique_rows(rows: list[ProductionOccurrence]) -> list[dict[str, str]]:
-    grouped: dict[tuple[str, str, str], dict[str, object]] = {}
+    grouped: dict[tuple[str, str, str, str], dict[str, object]] = {}
     for row in rows:
-        key = (row.language, row.display, row.sort_key)
+        printed_variety = VARIETY_REGISTRY.printed_label(row.variety) if row.variety else ""
+        key = (row.language, row.display, row.sort_key, printed_variety)
         bucket = grouped.setdefault(
             key,
             {
                 "language": row.language,
                 "display": row.display,
                 "sort_key": row.sort_key,
+                "printed_variety": printed_variety,
+                "source_varieties": set(),
                 "occurrence_count": 0,
                 "roles": set(),
                 "source_scopes": set(),
@@ -3008,9 +3043,13 @@ def build_print_unique_rows(rows: list[ProductionOccurrence]) -> list[dict[str, 
         cast_roles = bucket["roles"]
         cast_scopes = bucket["source_scopes"]
         cast_sources = bucket["sample_sources"]
+        cast_varieties = bucket["source_varieties"]
         assert isinstance(cast_roles, set) and isinstance(cast_scopes, set) and isinstance(cast_sources, list)
+        assert isinstance(cast_varieties, set)
         cast_roles.add(row.form_role)
         cast_scopes.add(row.source_scope)
+        if row.variety:
+            cast_varieties.add(row.variety)
         if row.source_ref not in cast_sources and len(cast_sources) < 5:
             cast_sources.append(row.source_ref)
 
@@ -3021,17 +3060,21 @@ def build_print_unique_rows(rows: list[ProductionOccurrence]) -> list[dict[str, 
             LANGUAGE_ORDER.index(item[0]) if item[0] in LANGUAGE_ORDER else len(LANGUAGE_ORDER),
             item[2],
             item[1],
+            item[3],
         ),
     ):
         bucket = grouped[key]
         roles = sorted(bucket["roles"])  # type: ignore[arg-type]
         scopes = sorted(bucket["source_scopes"])  # type: ignore[arg-type]
         sources = bucket["sample_sources"]  # type: ignore[assignment]
+        varieties = sorted(bucket["source_varieties"])  # type: ignore[arg-type]
         unique_rows.append(
             {
                 "language": str(bucket["language"]),
                 "display": str(bucket["display"]),
                 "sort_key": str(bucket["sort_key"]),
+                "printed_variety": str(bucket["printed_variety"]),
+                "source_varieties": "; ".join(varieties),
                 "occurrence_count": str(bucket["occurrence_count"]),
                 "roles": "; ".join(roles),
                 "source_scopes": "; ".join(scopes),
@@ -3043,7 +3086,7 @@ def build_print_unique_rows(rows: list[ProductionOccurrence]) -> list[dict[str, 
 
 def write_print_unique_rows(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_UNIQUE_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_UNIQUE_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in PRINT_UNIQUE_FIELDS})
@@ -3116,6 +3159,7 @@ def build_print_anomaly_rows(
         rows.append(
             {
                 "language": row.language,
+                "variety": row.variety,
                 "form": row.form,
                 "display": row.display,
                 "sort_key": row.sort_key,
@@ -3133,7 +3177,7 @@ def build_print_anomaly_rows(
 
 def write_print_anomaly_rows(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_ANOMALY_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_ANOMALY_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in PRINT_ANOMALY_FIELDS})
@@ -3199,7 +3243,7 @@ def build_preoe_review_rows(
 
 def write_preoe_review(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PREOE_REVIEW_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PREOE_REVIEW_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in PREOE_REVIEW_FIELDS})
@@ -3377,7 +3421,7 @@ def build_reader_facing_example_rows(
 
 def write_reader_facing_example_rows(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=READER_FACING_EXAMPLE_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=READER_FACING_EXAMPLE_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({field: row.get(field, "") for field in READER_FACING_EXAMPLE_FIELDS})
@@ -3795,12 +3839,13 @@ def build_audit_rows(
 
 def write_forms(rows: list[ProductionOccurrence]) -> None:
     with FORMS_PATH.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRODUCTION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRODUCTION_FIELDS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow(
                 {
                     "language": row.language,
+                    "variety": row.variety,
                     "form": row.form,
                     "display": row.display,
                     "sort_key": row.sort_key,
@@ -3840,6 +3885,7 @@ def write_unresolved_baseline(path: Path, entries: list[dict[str, str]]) -> None
             handle,
             delimiter="\t",
             fieldnames=["form", "source_path", "source_ref", "heading", "category", "sort_key", "context", "note"],
+            lineterminator="\n",
         )
         writer.writeheader()
         for entry in sorted(entries, key=lambda row: (row.get("sort_key", ""), row["form"], row["source_ref"])):
@@ -4185,7 +4231,7 @@ def ensure_override_file() -> None:
     if OVERRIDES_PATH.exists():
         return
     with OVERRIDES_PATH.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=OVERRIDE_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=OVERRIDE_FIELDS, lineterminator="\n")
         writer.writeheader()
 
 
@@ -4193,7 +4239,7 @@ def ensure_table_decisions_file() -> None:
     if TABLE_DECISIONS_PATH.exists():
         return
     with TABLE_DECISIONS_PATH.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=TABLE_DECISION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=TABLE_DECISION_FIELDS, lineterminator="\n")
         writer.writeheader()
 
 
@@ -4201,7 +4247,7 @@ def ensure_broad_prose_decisions_file() -> None:
     if BROAD_PROSE_DECISIONS_PATH.exists():
         return
     with BROAD_PROSE_DECISIONS_PATH.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=BROAD_PROSE_DECISION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=BROAD_PROSE_DECISION_FIELDS, lineterminator="\n")
         writer.writeheader()
 
 
@@ -4209,7 +4255,7 @@ def ensure_print_decisions_file() -> None:
     if PRINT_DECISIONS_PATH.exists():
         return
     with PRINT_DECISIONS_PATH.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_DECISION_FIELDS)
+        writer = csv.DictWriter(handle, delimiter="\t", fieldnames=PRINT_DECISION_FIELDS, lineterminator="\n")
         writer.writeheader()
 
 

@@ -3,12 +3,15 @@ from __future__ import annotations
 
 import csv
 import re
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[2]
+sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
+import index_verborum_render as ivr
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
@@ -31,43 +34,23 @@ def load_language_order() -> list[str]:
 
 LANGUAGE_ORDER = load_language_order()
 
+_LANG_META = ivr.load_language_registry()
+_VAR_REGISTRY = ivr.load_variety_registry()
+
 
 def latex_escape(value: str) -> str:
-    return value.replace("@", r"\@").replace("!", r"\!").replace("|", r"\|")
+    return ivr.latex_escape(value)
 
 
-def _build_lang_order() -> dict[str, tuple[str, str]]:
-    """Return {code: (order_prefix_str, title)} from the language registry."""
-    result: dict[str, tuple[str, str]] = {}
-    with LANGUAGE_REGISTRY_PATH.open(encoding="utf-8") as handle:
-        for order, row in enumerate(csv.DictReader(handle, delimiter="\t"), start=1):
-            code = (row.get("code") or "").strip()
-            title = (row.get("title") or "").strip()
-            active = (row.get("active") or "").strip()
-            if code and active == "1":
-                result[code] = (f"{order:02d}{code}", title)
-    return result
-
-
-_LANG_ORDER: dict[str, tuple[str, str]] | None = None
-
-
-def get_lang_order() -> dict[str, tuple[str, str]]:
-    global _LANG_ORDER
-    if _LANG_ORDER is None:
-        _LANG_ORDER = _build_lang_order()
-    return _LANG_ORDER
-
-
-def index_command(language: str, sort_key: str, display: str) -> str:
-    index_display = latex_escape(display)
-    if language == "oe":
-        index_display = rf"\emph{{{index_display}}}"
-    lang_order = get_lang_order()
-    lang_prefix, lang_title = lang_order.get(language, (f"99{language}", language))
-    lang_title_escaped = lang_title.replace("@", r"\@").replace("!", r"\!")
-    lang_header = rf"\ivlangheader{{{lang_title_escaped}}}"
-    return rf"\index[iv]{{{lang_prefix}@{lang_header}!{latex_escape(sort_key)}@{index_display}}}"
+def index_command(language: str, sort_key: str, display: str, variety: str = "") -> str:
+    return ivr.index_command(
+        language,
+        sort_key,
+        display,
+        variety,
+        lang_meta=_LANG_META,
+        var_registry=_VAR_REGISTRY,
+    )
 
 
 def oe_target_display(counterpart: str, derivation_class: str) -> str:
@@ -100,7 +83,7 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
             ref = (row.get("source_ref") or "").strip()
             if not ref:
                 continue
-            command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip())
+            command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip(), (row.get("variety") or "").strip())
             if ".md:" in ref:
                 path_part, line_part = ref.rsplit(":", 1)
                 if row.get("source_scope") in line_injected_scopes and line_part.isdigit():

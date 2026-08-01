@@ -33,7 +33,7 @@ def main() -> None:
     idx_path = assembly_dir / "iv.idx"
     assert idx_path.exists(), f"Missing iv.idx source stream for unified index: {idx_path.name}"
     idx_text = idx_path.read_text(encoding="utf-8")
-    idx_groups = re.findall(r"([0-9]{2}[a-z0-9_]+)@\\ivlangheader\{([^}]+)\}!", idx_text)
+    idx_groups = re.findall(r"([0-9]{2}[a-z0-9_]+)@\\ivlangheader\{([^}]+)\}\{[^}]*\}!", idx_text)
     assert idx_groups, "iv.idx contains no unified language-group index entries."
 
     prefix_to_title: dict[str, str] = {}

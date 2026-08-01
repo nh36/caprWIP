@@ -1,49 +1,49 @@
-language	form	display	sort_key	form_role	source_scope	source_ref	anomaly_flags	hard_error	note
-oe	bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22	bare_short_segment	no	soft-review signal
-oe	bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37	bare_short_segment	no	soft-review signal
-oe	bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:68	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:23	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:32	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:43	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:57	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:66	bare_short_segment	no	soft-review signal
-oe	bū	bū	bu	target_form	lexical_heading	both — OE bū	bare_short_segment	no	soft-review signal
-oe	cā	cā	ca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36	bare_short_segment	no	soft-review signal
-oe	cā	cā	ca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	bare_short_segment	no	soft-review signal
-oe	cā	cā	ca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:27	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:35	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:39	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:54	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	bare_short_segment	no	soft-review signal
-oe	cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:34	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:39	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:49	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:52	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:70	bare_short_segment	no	soft-review signal
-oe	cȳ	cȳ	cy	target_form	lexical_heading	cow — OE cȳ	bare_short_segment	no	soft-review signal
-oe	hū	hū	hu	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
-oe	sæ	sæ	sae	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:22	bare_short_segment	no	soft-review signal
-oe	sæ	sæ	sae	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:31	bare_short_segment	no	soft-review signal
-oe	sǣ	sǣ	sae	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:32	bare_short_segment	no	soft-review signal
-oe	sǣ	sǣ	sae	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:52	bare_short_segment	no	soft-review signal
-oe	sǣ	sǣ	sae	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:53	bare_short_segment	no	soft-review signal
-oe	sǣ	sǣ	sae	target_form	lexical_heading	sea — OE sǣ	bare_short_segment	no	soft-review signal
-oe	tū	tū	tu	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:24	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:32	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:57	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:66	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	source_protoform	lexical_protoform	both — OE bū	bare_short_segment	no	soft-review signal
-pgmc	*bō	*bō	bo	selected_input	trace_proto_input	both — OE bū	bare_short_segment	no	soft-review signal
+language	variety	form	display	sort_key	form_role	source_scope	source_ref	anomaly_flags	hard_error	note
+oe		bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:22	bare_short_segment	no	soft-review signal
+oe		bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37	bare_short_segment	no	soft-review signal
+oe		bā	bā	ba	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:68	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:23	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:32	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:37	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:43	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:57	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:66	bare_short_segment	no	soft-review signal
+oe		bū	bū	bu	target_form	lexical_heading	both — OE bū	bare_short_segment	no	soft-review signal
+oe		cā	cā	ca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36	bare_short_segment	no	soft-review signal
+oe		cā	cā	ca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	bare_short_segment	no	soft-review signal
+oe		cā	cā	ca	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:27	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:35	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:39	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:54	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	bare_short_segment	no	soft-review signal
+oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:34	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:39	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:49	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:52	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:70	bare_short_segment	no	soft-review signal
+oe		cȳ	cȳ	cy	target_form	lexical_heading	cow — OE cȳ	bare_short_segment	no	soft-review signal
+oe		hū	hū	hu	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
+oe		sæ	sæ	sae	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:22	bare_short_segment	no	soft-review signal
+oe		sæ	sæ	sae	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:31	bare_short_segment	no	soft-review signal
+oe		sǣ	sǣ	sae	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:32	bare_short_segment	no	soft-review signal
+oe		sǣ	sǣ	sae	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:52	bare_short_segment	no	soft-review signal
+oe		sǣ	sǣ	sae	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:53	bare_short_segment	no	soft-review signal
+oe		sǣ	sǣ	sae	target_form	lexical_heading	sea — OE sǣ	bare_short_segment	no	soft-review signal
+oe		tū	tū	tu	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:24	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:32	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:51	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:57	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:66	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	source_protoform	lexical_protoform	both — OE bū	bare_short_segment	no	soft-review signal
+pgmc		*bō	*bō	bo	selected_input	trace_proto_input	both — OE bū	bare_short_segment	no	soft-review signal

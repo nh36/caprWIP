@@ -252,10 +252,11 @@ def _read_tsv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
-def _semantic_key(row: dict[str, str]) -> tuple[str, str, str, str, str]:
+def _semantic_key(row: dict[str, str]) -> tuple[str, str, str, str, str, str]:
     source_path = (row.get("source_ref", "") or "").split(":", 1)[0]
     return (
         row.get("language", ""),
+        (row.get("variety", "") or ""),
         row.get("form", ""),
         row.get("form_role", ""),
         row.get("source_scope", ""),
@@ -386,7 +387,7 @@ def run_index_fingerprint_checks() -> None:
             reader = csv.DictReader(f, delimiter="\t")
             for row in reader:
                 baseline_fp.add((
-                    row.get("language", ""), row.get("form", ""), row.get("form_role", ""),
+                    row.get("language", ""), (row.get("variety", "") or ""), row.get("form", ""), row.get("form_role", ""),
                     row.get("source_scope", ""), row.get("source_ref_no_line", "")
                 ))
     else:
@@ -2462,7 +2463,7 @@ def run_recon_iv_lua_sort_check() -> None:
     tex_c = _run_lua_fixture(md_c, [pm_row_c])
     cmd_c = _extract_index_cmd(tex_c)
     if cmd_c:
-        assert_true("\\emph{bacan}" in cmd_c and "\\emph{*" not in cmd_c,
+        assert_true("\\ivoeentry{bacan}{}" in cmd_c and "\\ivoeentry{*" not in cmd_c,
                      f"Lua sort fixture C: attested OE form must be unstarred in display, got: {cmd_c!r}")
 
 

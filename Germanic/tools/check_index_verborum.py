@@ -375,7 +375,7 @@ def assert_written_table_schema() -> None:
     rows = load_forms_rows()
     with FORMS_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
-        assert reader.fieldnames == ["language", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
+        assert reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
     first_rows = rows[:10]
     assert all(row["language"] for row in first_rows)
     assert all(row["form_role"] for row in first_rows)
@@ -979,13 +979,14 @@ def assert_print_layer_outputs() -> None:
     with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
         main_reader = csv.DictReader(handle, delimiter="\t")
         main_rows = list(main_reader)
-        assert main_reader.fieldnames == ["language", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
+        assert main_reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
 
     with PRINT_EXCLUDED_PATH.open(encoding="utf-8") as handle:
         excluded_reader = csv.DictReader(handle, delimiter="\t")
         excluded_rows = list(excluded_reader)
         assert excluded_reader.fieldnames == [
             "language",
+            "variety",
             "form",
             "display",
             "sort_key",
@@ -1006,6 +1007,8 @@ def assert_print_layer_outputs() -> None:
             "language",
             "display",
             "sort_key",
+            "printed_variety",
+            "source_varieties",
             "occurrence_count",
             "roles",
             "source_scopes",
@@ -1018,6 +1021,7 @@ def assert_print_layer_outputs() -> None:
         anomaly_rows = list(anomaly_reader)
         assert anomaly_reader.fieldnames == [
             "language",
+            "variety",
             "form",
             "display",
             "sort_key",
@@ -1237,9 +1241,9 @@ def assert_reader_failure_pair_roles() -> None:
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
-        ("## knob — OE _\\*cnobba_", r"\index[iv]{02oe@\ivlangheader{Old English}!cnobba@\emph{*cnobba}}"),
-        ("## reek — OE _\\*rēac_", r"\index[iv]{02oe@\ivlangheader{Old English}!reac@\emph{*rēac}}"),
-        ("## strew — OE _\\*strīeġan_", r"\index[iv]{02oe@\ivlangheader{Old English}!striegan@\emph{*strīeġan}}"),
+        ("## knob — OE _\\*cnobba_", r"\index[iv]{02oe@\ivlangheader{Old English}{}!cnobba@\ivoeentry{*cnobba}{}}"),
+        ("## reek — OE _\\*rēac_", r"\index[iv]{02oe@\ivlangheader{Old English}{}!reac@\ivoeentry{*rēac}{}}"),
+        ("## strew — OE _\\*strīeġan_", r"\index[iv]{02oe@\ivlangheader{Old English}{}!striegan@\ivoeentry{*strīeġan}{}}"),
     ):
         start = text.index(heading)
         window = text[start : start + 400]

@@ -1,36 +1,36 @@
-action	language	form	display	sort_key	source_scope	source_ref	note
-add	ohg	backan	backan	backan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
-add	ohg	bahhan	bahhan	bahhan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
-add	ofris	dore	dore	dore	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old Frisian comparison form.
-add	ohg	tura	tura	tura	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old High German comparison form.
-add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	Old English comparison form discussed explicitly in prose.
-add	oe	ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	Old English comparison form discussed explicitly in prose.
-add	on	gangr	gangr	gangr	override	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	Clearly labelled Old Norse comparison form.
-add	on	hliþó	hliþó	hlitho	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21	Clearly labelled Old Norse comparison form.
-add	on	fugl	fugl	fugl	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	Clearly labelled Old Norse comparison form.
-add	ohg	fogal	fogal	fogal	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	Clearly labelled Old High German comparison form.
-add	ofris	skawia	skawia	skawia	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old Frisian comparison form.
-add	os	skawōn	skawōn	skawon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old Saxon comparison form.
-add	ohg	scouwōn	scouwōn	scouwon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old High German comparison form.
-ignore		attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
-ignore		attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:101	Derivation-class label, not a lexical form.
-ignore		breaking				Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29	Process label, not an indexed form.
-ignore		*liornian				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:33	Northumbrian discussion-only form; the indexed control is leornian.
-ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:183	English gloss/family label, not a historical form.
-ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:185	English gloss/family label, not a historical form.
-ignore		friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:202	English gloss/family label, not a historical form.
-ignore		layer				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21	Ordinary English prose false positive.
-ignore		citation				Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:25	Ordinary English prose false positive.
-ignore		comparator				Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:39	Ordinary English prose false positive.
-ignore		derivation				Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:23	Ordinary English prose false positive.
-ignore		development				Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:28	Ordinary English prose false positive.
-ignore		development				Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:49	Ordinary English prose false positive.
-ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:40	Ordinary English prose false positive.
-ignore		evidence				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:40	Ordinary English prose false positive.
-ignore		family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33	Ordinary English prose false positive.
-ignore		learn				Germanic/docs/assembly/capr_book_intro_alpha_01.md:83	English gloss in prose, not a historical-language form.
-ignore		field				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:287	English gloss in prose, not a historical-language form.
-ignore		*bækaną				Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
-ignore		*bigínnan				Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
-ignore		*bāną				Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
-ignore		*wér-uldu				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:50	Intermediate developmental stage in derivational prose, not a cited evidence form.
+action	language	variety	form	display	sort_key	source_scope	source_ref	note
+add	ohg		backan	backan	backan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
+add	ohg		bahhan	bahhan	bahhan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
+add	ofris		dore	dore	dore	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old Frisian comparison form.
+add	ohg		tura	tura	tura	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old High German comparison form.
+add	oe		ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	Old English comparison form discussed explicitly in prose.
+add	oe		ærende	ærende	aerende	override	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50	Old English comparison form discussed explicitly in prose.
+add	on		gangr	gangr	gangr	override	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	Clearly labelled Old Norse comparison form.
+add	on		hliþó	hliþó	hlitho	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21	Clearly labelled Old Norse comparison form.
+add	on		fugl	fugl	fugl	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	Clearly labelled Old Norse comparison form.
+add	ohg		fogal	fogal	fogal	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22	Clearly labelled Old High German comparison form.
+add	ofris		skawia	skawia	skawia	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old Frisian comparison form.
+add	os		skawōn	skawōn	skawon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old Saxon comparison form.
+add	ohg		scouwōn	scouwōn	scouwon	override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22	Clearly labelled Old High German comparison form.
+ignore			attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
+ignore			attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:101	Derivation-class label, not a lexical form.
+ignore			breaking				Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29	Process label, not an indexed form.
+ignore			*liornian				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:33	Northumbrian discussion-only form; the indexed control is leornian.
+ignore			friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:183	English gloss/family label, not a historical form.
+ignore			friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:185	English gloss/family label, not a historical form.
+ignore			friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:202	English gloss/family label, not a historical form.
+ignore			layer				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21	Ordinary English prose false positive.
+ignore			citation				Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:25	Ordinary English prose false positive.
+ignore			comparator				Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:39	Ordinary English prose false positive.
+ignore			derivation				Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:23	Ordinary English prose false positive.
+ignore			development				Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:28	Ordinary English prose false positive.
+ignore			development				Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:49	Ordinary English prose false positive.
+ignore			evidence				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:40	Ordinary English prose false positive.
+ignore			evidence				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:40	Ordinary English prose false positive.
+ignore			family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33	Ordinary English prose false positive.
+ignore			learn				Germanic/docs/assembly/capr_book_intro_alpha_01.md:83	English gloss in prose, not a historical-language form.
+ignore			field				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:287	English gloss in prose, not a historical-language form.
+ignore			*bækaną				Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
+ignore			*bigínnan				Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
+ignore			*bāną				Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
+ignore			*wér-uldu				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:50	Intermediate developmental stage in derivational prose, not a cited evidence form.
