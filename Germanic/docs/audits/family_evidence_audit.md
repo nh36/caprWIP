@@ -445,17 +445,34 @@ Listed by priority (1 = most important):
 
 ---
 
-## 7. Source Gaps Requiring Later Research
+## 7. Source Status Reconciliation (Luick, Stiles, *fyrhte*)
 
-The following questions cannot be answered from repository sources alone:
+### Source present and inspected
 
-1. **Any second etymon for *\*ijo > \*iu* (SC009)?** R&T assert the *\*ijo* sequence (with stressed *\*i*) is unique to *friend*. The repository contains no independent survey of this question in Luick 1914-40 §118 (the source R&T cite), which is not held in `docs/references/`. External verification of Luick's discussion would confirm or deny whether he proposed any broader environment.
+1. **Luick is present in the repository** at `docs/references/luick_historische_grammatik.txt`.
+   - The OCR's `§118` (marker `--- PAGE 178 ---`) discusses Anglo-Frisian brightening of *a*/*ā* and is not about *ijo*.
+   - The relevant passage for SC009 is `§102` (`--- PAGE 167 ---`, lines around 6965-6995 in this OCR): Luick derives WGmc *iu* via loss of *j* in `-iju-` and explicitly cites forms beyond the friend etymon (*frijōnd-*, *fijand-*, *frija-*, *blija-*; outcomes including *friund*, *fiund*).
+   - **Qualification needed:** SC009 should no longer treat Luick as missing; it should note that this repository Luick witness broadens the lexical comparison beyond 'friend', while not by itself proving broad productivity of stressed *\*ijo*.
 
-2. **Full Stiles (1985–6) discussion of SC008.** R&T reference Stiles (NOWELE 6: 89–94) for the detailed discussion of *\*dw/*\*zw* assimilation. This source is not in the repository. It would clarify the status of the apparent counterexamples (*\*badwō* 'battle', *\*skadwa-* 'shadow', OE *cwidu* 'cud') and strengthen or qualify the claim that only one example of each cluster exists.
+2. **Stiles 1985 NOWELE 6 article is present in repository history** at path `docs/references/stiles_1985_four_part1_nowele6.pdf` (added in commit `11c20529`, later untracked in `971d1d88`).
+   - Journal pp. 89-94 are available in that file as PDF pp. 9-14 and were inspected.
+   - Those pages explicitly argue WGmc assimilation `*\-ðw- > *\-ww-` from 'four' and parallel `*\-zw- > *\-ww-` from pronoun forms (Go. *izwis* vs OE/OFris/OS/OHG *eow/iu/iu/iu*), then discuss apparent wa/wo-stem counterexamples (*gaiðwa-*, *skaðwa-*, *mēðwo-*, *baðwo-*, possible *kcwiðwa-*), leaving their full explanation tentative.
+   - **Qualification needed:** the prior "Stiles missing" claim is incorrect for repository history; the evidential summary should distinguish "not in current checkout" from "present in Git history and inspectable."
 
-3. **Kroonen's derivation of OE *fyrhte* as an *in*-stem** for SC064–065. The repository has the Kroonen entry for *\*furhtō-* and *\*furhta-* but the specific *\*furhtin-az* reconstruction underlying OE *fyrhte* would benefit from direct confirmation in Kroonen or an OE grammar.
+### Source present but not yet conclusive
 
-4. **R&T or Campbell discussion of the kinship-term evidence for SC007.** R&T reference Stiles 1985-6 and 1988 for the r-stem shortening. While the Stiles sources are not required for the audit's main conclusions, fuller coverage would strengthen the SC007 account.
+3. **Luick citation alignment remains imperfect:** R&T cite Luick `§118` for the SC009 claim, but in this OCR the directly relevant *-iju-* material is in `§102`. This supports a cautious qualifier until citation alignment is independently verified against the printed pagination.
+
+### Source genuinely absent after exhaustive search
+
+4. **No additional currently tracked copy** of Stiles NOWELE 6 (or a differently named duplicate PDF) was found in this checkout after path-name, full-tree text, PDF-metadata/PDF-text, and Git-history filename searches. The usable witness is the historical blob above.
+
+### Reconstruction inferred rather than explicitly sourced
+
+5. **`\*furhtin-az` is not explicitly reconstructed in the inspected dictionary sources.**
+   - Kroonen (`legacy/etymological_dictionary_of_proto_germanic_kroonen.txt` and `kroonen_etymological_dictionary_pgmc.vision.txt`) gives *furhta-*, *furhtō-*, *furhtjan-* but not `*furhtin-az`.
+   - Orel (`legacy/orel_handbook_germanic_etymology.txt`, `orel_handbook_germanic_etymology.vision.txt`) explicitly gives *furxtīn* (in-stem abstract) with Goth *faurhtei* and OE *fyrhtu*.
+   - Therefore CAPR's selected input `*fúrxtīnaz` for OE *fyrhte* is best treated as a **transparent paradigm-cell inference** from an in-stem reconstruction plus OE oblique attestation, not as a directly cited lemma in the inspected sources.
 
 ---
 
