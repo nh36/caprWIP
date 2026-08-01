@@ -83,6 +83,7 @@ oe	cȳ	cy	11	comparison_form; target_form	explicit_tag; lexical_heading	Germanic
 oe	dæd	daed	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25
 oe	dǣd	daed	1	target_form	lexical_heading	deed — OE dǣd
 oe	dæg	daeg	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:27
+oe	dagum	dagum	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 oe	dēd	ded	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25
 oe	dile	dile	7	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:22; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:35; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:41; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:46; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:60
 oe	dili	dili	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:36
@@ -110,6 +111,7 @@ oe	fell	fell	4	comparison_form; target_form	explicit_tag; lexical_heading	German
 oe	fellan	fellan	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25
 oe	fellum	fellum	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25
 oe	feoll	feoll	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:25
+oe	fēower	feower	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:289
 oe	fern	fern	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:25
 oe	festan	festan	9	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:33; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:34; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:39; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:45; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:48
 oe	findan	findan	3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:22; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:34; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:61
@@ -167,6 +169,7 @@ oe	giefan	giefan	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mod
 oe	ġiefan	giefan	1	target_form	lexical_heading	give — OE ġiefan
 oe	ġiest	giest	1	target_form	lexical_heading	guest — OE ġiest
 oe	ginnan	ginnan	1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:21
+oe	godum	godum	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 oe	gold	gold	1	target_form	lexical_heading	gold — OE gold
 oe	græf	graef	2	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:25; Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33
 oe	græfð	graefd	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:33
@@ -191,7 +194,7 @@ oe	helma	helma	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model
 oe	help	help	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:21; Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:33
 oe	helpan	helpan	4	comparison_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:25; Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:29; Germanic/docs/lexeme_reports/model_entries/2071-help-helpan.model.md:33; help — OE helpan
 oe	heofen	heofen	2	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61
-oe	heofon	heofon	11	comparison_form; evidence_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:33; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:38; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46
+oe	heofon	heofon	12	comparison_form; evidence_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:33; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:38; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46
 oe	here	here	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:26; Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:41
 oe	herges	herges	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:26; Germanic/docs/lexeme_reports/model_entries/1946-berry-berġes.model.md:41
 oe	hierfest	hierfest	1	target_form	lexical_heading	harvest — OE hierfest
@@ -408,7 +411,7 @@ oe	wæfs	waefs	5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_
 oe	wǣpn	waepn	1	target_form	lexical_heading	weapon — OE wǣpn
 oe	wæps	waeps	5	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:27; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:37; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:38; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:50; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:62
 oe	wæsp	waesp	4	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:26; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:37; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:50; Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md:63
-oe	wæter	waeter	4	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:27; Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:32; Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:53; water — OE wæter
+oe	wæter	waeter	6	evidence_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:27; Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:32; Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:53; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:289; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:304
 oe	wætera	waetera	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:33
 oe	wætere	waetere	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:33
 oe	wæteres	waeteres	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:33
@@ -510,7 +513,7 @@ pgmc	*dḗdiz	dediz	2	selected_input; source_protoform	lexical_protoform; trace_
 pgmc	*déliz	deliz	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:24; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:45; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:60; dill — OE dile
 pgmc	*déljaz	deljaz	3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:25; Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:59; dill — OE dile
 pgmc	*déuzą	deuza	1	selected_input	trace_proto_input	deer — OE dēor
-pgmc	*déuzaz	deuzaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:905
+pgmc	*déuzaz	deuzaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:900
 pgmc	*dōną	dona	1	selected_input	trace_proto_input	do — OE dōn
 pgmc	*dránkiz	drankiz	1	selected_input	trace_proto_input	drench — OE drenċ
 pgmc	*draugma-	draugma	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:54
@@ -533,6 +536,7 @@ pgmc	*fastēn-	fasten	1	source_protoform	explicit_tag	Germanic/docs/lexeme_repor
 pgmc	*fastēną	fastena	3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:28; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:59; fast — OE festan
 pgmc	*fástijaną	fastijana	5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:27; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:44; Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:60; fast — OE festan
 pgmc	*fastu-	fastu	1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:21
+pgmc	*fedwōr	fedwor	2	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:289; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:304
 pgmc	*fédwōr	fedwor	1	selected_input	trace_proto_input	four — OE fēower
 pgmc	*féllą	fella	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	fell — OE fell
 pgmc	*félθuz	felthuz	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	field — OE feld
@@ -649,7 +653,7 @@ pgmc	*lḯnōn	linon	1	selected_input	trace_proto_input	line — OE līne
 pgmc	*lḯstōn	liston	1	selected_input	trace_proto_input	list — OE līste
 pgmc	*líznô	lizno	5	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27; Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69; learn (iptv.2sg) — OE liorna
 pgmc	*liznōjaną	liznojana	4	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67; learn (3sg) — OE liornaþ; learn (iptv.2sg) — OE liorna
-pgmc	*líznōjaną	liznojana	3	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:907; learn — OE liornian
+pgmc	*líznōjaną	liznojana	3	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:902; learn — OE liornian
 pgmc	*líznōθi	liznothi	5	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:25; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68; learn (3sg) — OE liornaþ
 pgmc	*lúką	luka	1	selected_input	trace_proto_input	lock — OE loc
 pgmc	*lúkkaz	lukkaz	1	selected_input	trace_proto_input	lock — OE locc
@@ -706,7 +710,7 @@ pgmc	*núsō	nuso	2	selected_input; source_protoform	lexical_protoform; trace_pr
 pgmc	*ráipą	raipa	1	selected_input	trace_proto_input	rope — OE rāp
 pgmc	*rastō	rasto	2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59; rest — OE ræste
 pgmc	*rastō-	rasto	1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21
-pgmc	*rástōz	rastoz	5	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:924; rest — OE ræste
+pgmc	*rástōz	rastoz	5	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:919; rest — OE ræste
 pgmc	*ráukaz	raukaz	4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:23; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:40; reek — OE *rēac
 pgmc	*rauki-	rauki	1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:21
 pgmc	*ráukiz	raukiz	2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:21; reek — OE *rēac
@@ -880,6 +884,7 @@ pgmc	*wárpą	warpa	1	selected_input	trace_proto_input	warp — OE wearp
 pgmc	*wártōn	warton	1	selected_input	trace_proto_input	wart — OE wearte
 pgmc	*wáskaną	waskana	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	wash — OE wascan
 pgmc	*wátną	watna	2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:53; water — OE wæter
+pgmc	*watōr	wator	2	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:289; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:304
 pgmc	*wátōr	wator	4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:28; Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:55; water — OE wæter
 pgmc	*wáxsą	waxsa	1	selected_input	trace_proto_input	wax — OE weax
 pgmc	*wáxsaną	waxsana	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	wax — OE weaxan
@@ -951,7 +956,7 @@ pgmc	*xōrōn	xoron	1	selected_input	trace_proto_input	whore — OE hōre
 pgmc	*xrábnaz	xrabnaz	1	selected_input	trace_proto_input	raven — OE hræfn
 pgmc	*xúnagą	xunaga	1	selected_input	trace_proto_input	honey — OE huniġ
 pgmc	*xúndaz	xundaz	1	selected_input	trace_proto_input	hound — OE hund
-pgmc	*xúrdaz	xurdaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:906
+pgmc	*xúrdaz	xurdaz	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:901
 pgmc	*xúrną	xurna	2	selected_input; source_protoform	lexical_protoform; trace_proto_input	horn — OE horn
 pgmc	*xúzdą	xuzda	1	selected_input	trace_proto_input	hoard — OE hord
 pgmc	*xwalaz	xwalaz	2	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:22; Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:56
@@ -965,7 +970,7 @@ pwgmc	*bakan	bakan	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/m
 pwgmc	*skuldru	skuldru	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21
 pwgmc	*skúldru	skuldru	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48
 pwgmc	*timbr	timbr	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48
-preoe	*hebun	hebun	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45
+preoe	*hebun	hebun	3	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602
 preoe	*sparai-	sparai	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
 preoe	*spárē	spare	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47
 preoe	*sparja-	sparja	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
@@ -973,10 +978,13 @@ preoe	*weraldiz	weraldiz	1	comparison_form	explicit_tag	Germanic/docs/lexeme_rep
 preoe	*weraldu	weraldu	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
 preoe	*weruld	weruld	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
 on	báðir	badir	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69
+on	berum	berum	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 on	brjóst	brjost	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24
+on	dogum	dogum	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 on	fugl	fugl	1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22
 on	fylgja	fylgja	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:22
 on	gangr	gangr	1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21
+on	gddum	gddum	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 on	hliþó	hlitho	1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21
 on	hnakki	hnakki	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59
 on	hvina	hvina	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:26; Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:65
@@ -984,6 +992,7 @@ on	stafn	stafn	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model
 ohg	backan	backan	1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21
 ohg	bahhan	bahhan	1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21
 ohg	bēde	bede	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28
+ohg	berumeés	berumees	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 ohg	fogal	fogal	2	comparison_form	explicit_tag; override	Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22
 ohg	foll	foll	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24
 ohg	lecchon	lecchon	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22; Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:22
@@ -992,21 +1001,30 @@ ohg	rost	rost	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_report
 ohg	scouwōn	scouwon	2	comparison_form	explicit_tag; override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22
 ohg	scultirra	scultirra	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21
 ohg	scultra	scultra	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21
+ohg	tagum	tagum	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 ohg	tilli	tilli	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:23
 ohg	tura	tura	2	comparison_form	explicit_tag; override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21
 ohg	wolf	wolf	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:23
 ofris	bēthe	bethe	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27
 ofris	dore	dore	1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21
+ofris	fiuwer	fiuwer	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:289
 ofris	makia	makia	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:24
 ofris	skawia	skawia	2	comparison_form	explicit_tag; override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22
 ofris	skulder	skulder	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21
 ofris	stevene	stevene	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24
+goth	bairam	bairam	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 goth	brusts	brusts	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22
+goth	dagam	dagam	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 goth	faurhtei	faurhtei	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22
 goth	fra-liusan	fraliusan	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21
+goth	godamma	godamma	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 os	be-thia	bethia	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27
 os	briost	briost	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24
+os	dagun	dagun	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
 os	dilli	dilli	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:22
+os	fiuwar	fiuwar	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:289
+os	godumu	godumu	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258
+os	heban	heban	1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602
 os	likkon	likkon	2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22; Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:22
 os	makon	makon	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:24
 os	skawōn	skawon	2	comparison_form	explicit_tag; override	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22
