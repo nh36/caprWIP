@@ -24,7 +24,7 @@ oblique singular form within that paradigm rather than the lexeme-level
 citation form [xémenaz]{.iv .recon lang=pgmc sort=xemenaz} ‘heaven’.
 
 The back-vocalic oblique stem accounts for the West Saxon target. Ringe and Taylor give
-northern WGmc [hebun]{.iv .recon lang=preoe sort=hebun role=comparison_form} ‘heaven’ > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon} 'heaven', Mercian
+northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} ‘heaven’ > West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon} 'heaven', Mercian
 [`heofen`]{.iv lang=oe sort=heofen} 'heaven' [@RingeTaylor2014, 324]. Campbell likewise gives [`heofon`]{.iv lang=oe sort=heofon} 'heaven' beside
 [`hefen`]{.iv lang=oe sort=hefen} 'heaven' in the same West-Saxon `u`-umlaut environment [@Campbell1959, §210.1].
 
@@ -42,7 +42,7 @@ line.
 ### Development to Old English
 
 From [xémonų]{.iv .recon lang=pgmc sort=xemonu} ‘heaven’, the West Saxon line passes through the oblique-stem type
-reflected in northern WGmc [hebun]{.iv .recon lang=preoe sort=hebun role=comparison_form} ‘heaven’ [@RingeTaylor2014, 324]. Campbell's
+reflected in northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} ‘heaven’ [@RingeTaylor2014, 324]. Campbell's
 [`heofon`]{.iv lang=oe sort=heofon} 'heaven' beside [`hefen`]{.iv lang=oe sort=hefen} 'heaven' and earlier [`hefzen`]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
 back-mutation and suffix reshaping behind [`heofon`]{.iv lang=oe sort=heofon} 'heaven'
 [@Campbell1959, §210.1; @Campbell1959, §381].
