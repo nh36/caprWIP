@@ -15,7 +15,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`NWGmcAToUBeforeM`) {#rule-NWGmcAToUBeforeM} | 12 | 87 | no |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | 11 | 103 | yes |
 | 007-final-o-lowering-before-r.md | SC007. Lowering of final bimoric \emph{*ō} before \emph{*r} (`PWGmcFinalOrLowering`) {#rule-PWGmcFinalOrLowering} | 12 | 30 | no |
-| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | 13 | 34 | no |
+| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | 11 | 34 | no |
 | 009-ij-contraction-in-friend.md | SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction} | 11 | 54 | no |
 | 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | 11 | 54 | no |
 | 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | 13 | 74 | no |
