@@ -34,6 +34,13 @@ _DEFAULT_VARIETY_REGISTRY = REPO_ROOT / "Germanic/docs/book/index_verborum_varie
 
 BOOL_VALUES = {"0", "1"}
 
+# Separator used only inside the hidden MakeIndex sort field to attach a
+# per-variety discriminator. It is deliberately a character that can never
+# appear in a scholarly sort key (which is [a-z0-9] only), which is what makes
+# the (sort_key, variety) -> sort-field mapping injective / collision-proof.
+# Its MakeIndex sorting behaviour is exercised by the real makeindex fixture.
+DISCRIMINATOR_SEP = "~"
+
 
 def language_registry_path() -> Path:
     return Path(os.environ.get("CAPR_IV_LANGUAGE_REGISTRY_TSV") or _DEFAULT_LANGUAGE_REGISTRY)
@@ -191,6 +198,17 @@ def _validate_variety_rows(rows: list[dict[str, str]]) -> VarietyRegistry:
             raise ValueError(f"Variety {code!r}: unknown active language {language!r}")
         if assignable and not active:
             raise ValueError(f"Variety {code!r}: assignable variety must be active")
+        # An assignable variety must be visibly printable: it needs a real label
+        # and must not be suppressed, or an occurrence could be silently invisible.
+        printed_label = row.get("printed_label", "")
+        if assignable and not printed_label.strip():
+            raise ValueError(f"Variety {code!r}: assignable variety must have a nonblank printed_label")
+        if assignable and suppress:
+            raise ValueError(f"Variety {code!r}: assignable variety must not set suppress_label=1")
+        # A suppressed variety carries no printable label and therefore must be a
+        # non-assignable taxonomy parent (e.g. 'ws'), never a directly usable code.
+        if suppress and assignable:
+            raise ValueError(f"Variety {code!r}: suppressed variety must be non-assignable")
 
         entries[code] = VarietyEntry(
             language=language,
@@ -267,10 +285,28 @@ def index_command(
     """Construct a complete ``\\index[iv]{...}`` command.
 
     The MakeIndex two-level body is ``LANGPREFIX@LANGHEADER!SORT<disc>@FORM``.
-    ``disc`` is a hidden per-variety discriminator (from display_order) present
-    only in the sort field; blank variety appends nothing and therefore sorts
-    first while remaining adjacent under the same lexical form.
+
+    Fail-closed: the occurrence variety is validated here (not only in callers),
+    so an unknown, inactive, non-assignable, or wrong-language variety — and in
+    particular ``variety=ws`` — raises before any label or discriminator is
+    produced.
+
+    Hidden discriminator (collision-proof encoding). Scholarly sort keys are
+    lowercase ``[a-z0-9]`` only (see ``transliterate_sort_key``); they never
+    contain :data:`DISCRIMINATOR_SEP`. A blank variety appends nothing; a
+    labelled variety appends ``SEP + <two-digit display_order>``. Because the
+    separator can never occur inside a sort key, the map
+    ``(sort_key, variety) -> sort field`` is injective: a labelled key always
+    contains the separator while a blank key never does, and two labelled keys
+    with the same prefix must share both the separator position and the fixed
+    two-digit order. This removes the earlier ambiguity where a blank sort key
+    ``form02`` could collide with an EWS occurrence of ``form``. The blank entry
+    remains a strict prefix of every labelled sibling, so it still sorts first
+    and all variants of one lexical form stay contiguous.
     """
+    # Fail closed regardless of caller discipline (validates nonblank varieties).
+    var_registry.validate_occurrence(language, variety)
+
     entry = lang_meta.get(language)
     if entry is not None:
         lang_prefix = language_prefix(entry)
@@ -279,8 +315,19 @@ def index_command(
         lang_prefix = f"99{language}"
         lang_header = rf"\ivlangheader{{{latex_escape(language)}}}{{}}"
 
-    variety_label = var_registry.printed_label(variety) if variety else ""
-    disc = "" if not variety else f"{var_registry.display_order(variety):02d}"
-    level2_sort = latex_escape(sort_key) + disc
+    escaped_sort = latex_escape(sort_key)
+    if variety:
+        if DISCRIMINATOR_SEP in escaped_sort:
+            raise ValueError(
+                f"Sort key {sort_key!r} contains the reserved variety "
+                f"discriminator separator {DISCRIMINATOR_SEP!r}; sort keys must "
+                f"be [a-z0-9] only so hidden discriminators stay collision-proof"
+            )
+        variety_label = var_registry.printed_label(variety)
+        disc = f"{DISCRIMINATOR_SEP}{var_registry.display_order(variety):02d}"
+    else:
+        variety_label = ""
+        disc = ""
+    level2_sort = escaped_sort + disc
     form_part = render_form_part(language, display, variety_label)
     return rf"\index[iv]{{{lang_prefix}@{lang_header}!{level2_sort}@{form_part}}}"

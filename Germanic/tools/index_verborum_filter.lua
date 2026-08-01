@@ -297,21 +297,28 @@ local function span_to_index(span)
   else
     index_display = latex_escape(display)
   end
-  -- Hidden MakeIndex discriminator (from display_order) keeps same-form variety
-  -- entries adjacent and ordered; blank variety appends nothing and sorts first.
+  -- Hidden MakeIndex discriminator (collision-proof): a labelled variety appends
+  -- "~" + two-digit display_order to the sort field only. "~" can never appear
+  -- in a scholarly sort key ([a-z0-9]), so the mapping stays injective and blank
+  -- (real corpus) entries sort first as strict prefixes. Mirrors the Python
+  -- DISCRIMINATOR_SEP in index_verborum_render.py.
+  local escaped_sort = latex_escape(sort)
   local disc = ""
   if variety ~= "" then
+    if escaped_sort:find("~", 1, true) then
+      error("index_verborum_filter.lua: sort key '" .. sort .. "' contains reserved discriminator separator '~'")
+    end
     local vmeta = ensure_variety_meta_loaded()
     local ventry = vmeta[variety]
     if ventry then
-      disc = string.format("%02d", ventry.display_order)
+      disc = "~" .. string.format("%02d", ventry.display_order)
     end
   end
   local meta = ensure_lang_meta_loaded()
   local lm = meta[lang]
   local lang_sort = lm and lm.order_str or ("99" .. lang)
   local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. lang .. "}{}")
-  local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. latex_escape(sort) .. disc .. "@" .. index_display .. "}")
+  local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. escaped_sort .. disc .. "@" .. index_display .. "}")
   return { visible, raw }
 end
 

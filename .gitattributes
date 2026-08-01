@@ -1,0 +1,5 @@
+# Enforce LF line endings for generated tab-separated data (e.g. the Index
+# Verborum artifacts). This backstops the explicit lineterminator="\n" writer
+# conventions and the LF-ending tests so TSVs are stored with LF regardless of
+# platform or how they are regenerated.
+*.tsv text eol=lf

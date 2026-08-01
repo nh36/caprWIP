@@ -36,18 +36,40 @@ SORT = "daeg"
 VARIETIES = ["", "ews", "lws", "angl", "merc", "north", "kent"]
 EXPECTED_LABEL_ORDER = ["", "EWS", "LWS", "Angl.", "Merc.", "North.", "Kent."]
 
+# Collision probe: under the OLD scheme (bare 2-digit suffix) a BLANK occurrence
+# whose lexical sort key is "col05" would produce the same MakeIndex sort field
+# ("col05") as a MERCIAN occurrence (display_order 5) of lexical form "col". The
+# "~" separator makes these "col05" vs "col~05" — provably distinct.
+COLLISION_SPELLING = "col"
+COLLISION_ENTRIES = [
+    ("col05", ""),      # blank occurrence, lexical sort key literally "col05"
+    ("col", "merc"),    # Mercian occurrence of "col" -> col~05 under new scheme
+]
+
 
 def build_idx_lines() -> list[str]:
     lang_meta = ivr.load_language_registry()
     var_registry = ivr.load_variety_registry()
     lines: list[str] = []
-    for page, variety in enumerate(VARIETIES, start=1):
+    page = 0
+    for variety in VARIETIES:
+        page += 1
         cmd = ivr.index_command(
             "oe", SORT, SPELLING, variety, lang_meta=lang_meta, var_registry=var_registry
         )
         body = cmd[len(r"\index[iv]{"):-1]
         lines.append(rf"\indexentry{{{body}}}{{{page}}}")
+    for sort_key, variety in COLLISION_ENTRIES:
+        page += 1
+        cmd = ivr.index_command(
+            "oe", sort_key, COLLISION_SPELLING, variety, lang_meta=lang_meta, var_registry=var_registry
+        )
+        body = cmd[len(r"\index[iv]{"):-1]
+        lines.append(rf"\indexentry{{{body}}}{{{page}}}")
     return lines
+
+
+TOTAL_ENTRIES = len(VARIETIES) + len(COLLISION_ENTRIES)
 
 
 def run_makeindex(workdir: Path) -> tuple[int, str, str]:
@@ -96,7 +118,7 @@ def main() -> int:
 
     assert code == 0, f"makeindex failed with exit {code}: {ilg}"
     assert rejected == 0, f"makeindex rejected {rejected} entries: {ilg}"
-    assert accepted == len(VARIETIES), f"expected {len(VARIETIES)} accepted, got {accepted}"
+    assert accepted == TOTAL_ENTRIES, f"expected {TOTAL_ENTRIES} accepted, got {accepted}"
     # Labels appear inside the second \ivoeentry argument; the parentheses are
     # added by the LaTeX macro at render time, so check the raw label token.
     assert r"{WS}" not in ind, "no (WS) label may appear"
@@ -118,9 +140,19 @@ def main() -> int:
         "blank-variety entry must sort before labelled varieties"
     )
 
-    # Hidden discriminator digits (e.g. the '02'..'07' appended to the sort key)
-    # must not leak into printed output as a standalone token next to the form.
-    assert not re.search(r"dæg0\d", ind), "hidden discriminator leaked into printed output"
+    # Collision probe: the blank "col05" and the Mercian "col" survived as two
+    # DISTINCT accepted entries (no merge, no rejection). Their printed forms are
+    # the bare lexical spelling "col"; the discriminator lives only in the hidden
+    # sort field (col05 vs col~05), so both variants appear separately.
+    assert r"\ivoeentry{col}{}" in ind, "blank col entry missing (collision not preserved)"
+    assert r"\ivoeentry{col}{Merc.}" in ind, "Mercian col entry missing (collision not preserved)"
+    assert ind.count(r"\subitem \ivoeentry{col}") == 2, (
+        "collision probe must yield two distinct 'col' subitems, not a merged entry"
+    )
+
+    # Hidden discriminator digits and separator must not leak into printed output.
+    assert not re.search(r"dæg[~0]\d", ind), "hidden discriminator leaked into printed output"
+    assert "~" not in ind, "discriminator separator leaked into printed output"
 
     print("MakeIndex variety fixture passed.")
     return 0

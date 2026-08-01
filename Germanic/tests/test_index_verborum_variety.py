@@ -150,6 +150,32 @@ class VarietyRegistryTests(unittest.TestCase):
         # Registry is a flat mapping; parents are metadata, never duplicated as entries.
         self.assertEqual(len([c for c in reg.entries if c == "angl"]), 1)
 
+    def test_assignable_requires_printed_label(self):
+        rows = [r[:] for r in CANON_ROWS]
+        rows[3][3] = ""  # angl: assignable but blank printed_label
+        with self.assertRaises(ValueError):
+            load_variety(rows)
+
+    def test_assignable_must_not_suppress_label(self):
+        rows = [r[:] for r in CANON_ROWS]
+        rows[3][6] = "1"  # angl: assignable with suppress_label=1
+        with self.assertRaises(ValueError):
+            load_variety(rows)
+
+    def test_suppressed_must_be_nonassignable(self):
+        rows = [r[:] for r in CANON_ROWS]
+        # A suppressed + assignable row is contradictory (invisible-yet-usable).
+        rows.append(["oe", "sx", "SX", "SX.", "", "8", "1", "1", "1", ""])
+        with self.assertRaises(ValueError):
+            load_variety(rows)
+
+    def test_canonical_registry_still_valid(self):
+        # The canonical on-disk registry must continue to pass unchanged.
+        reg = ivr.load_variety_registry()
+        self.assertEqual(reg.printed_label("ws"), "")
+        self.assertFalse(reg.get("ws").assignable)
+        self.assertTrue(reg.get("ws").active)
+
 
 class RenderingTests(unittest.TestCase):
     def setUp(self):
@@ -184,9 +210,46 @@ class RenderingTests(unittest.TestCase):
 
     def test_hidden_discriminator_in_sort_only(self):
         out = self.render("strēgan", "merc")
-        # display_order for merc is 5 -> disc '05' appended to sort side, not display
-        self.assertIn("stregan05@", out)
+        # display_order for merc is 5 -> disc '~05' appended to sort side, not display
+        self.assertIn("stregan~05@", out)
+        self.assertNotIn("strēgan~05", out)
         self.assertNotIn("strēgan05", out)
+
+    def test_index_command_fail_closed_ws(self):
+        # index_command() must reject variety=ws itself, not rely on callers.
+        with self.assertRaises(ValueError):
+            self.render("strēgan", "ws")
+
+    def test_index_command_fail_closed_unknown(self):
+        with self.assertRaises(ValueError):
+            self.render("strēgan", "zzz")
+
+    def test_index_command_fail_closed_inactive(self):
+        rows = [r[:] for r in CANON_ROWS]
+        rows.append(["oe", "old", "Old", "Old.", "", "8", "0", "0", "0", ""])  # inactive
+        var = load_variety(rows)
+        with self.assertRaises(ValueError):
+            ivr.index_command("oe", "sort", "form", "old", lang_meta=self.lang, var_registry=var)
+
+    def test_index_command_fail_closed_wrong_language(self):
+        # An Old English variety must not be usable on another language.
+        with self.assertRaises(ValueError):
+            ivr.index_command("pgmc", "sort", "form", "merc", lang_meta=self.lang, var_registry=self.var)
+
+    def test_index_command_rejects_separator_in_sort_key(self):
+        with self.assertRaises(ValueError):
+            ivr.index_command("oe", "so~rt", "form", "merc", lang_meta=self.lang, var_registry=self.var)
+
+    def test_collision_proof_sort_fields_distinct(self):
+        # Old scheme: blank "col05" and merc "col" both -> "col05". New scheme
+        # separates them, so the two hidden sort fields must differ.
+        blank = ivr.index_command("oe", "col05", "col05", "", lang_meta=self.lang, var_registry=self.var)
+        merc = ivr.index_command("oe", "col", "col", "merc", lang_meta=self.lang, var_registry=self.var)
+        blank_sort = blank.split("!", 1)[1].split("@", 1)[0]
+        merc_sort = merc.split("!", 1)[1].split("@", 1)[0]
+        self.assertNotEqual(blank_sort, merc_sort)
+        self.assertEqual(blank_sort, "col05")
+        self.assertEqual(merc_sort, "col~05")
 
 
 class LanguageHeaderTests(unittest.TestCase):
@@ -250,16 +313,70 @@ class RealCorpusInvariantTests(unittest.TestCase):
             for r in self._rows(name):
                 self.assertNotEqual((r.get("variety", "") or ""), "ws")
 
-    def test_membership_invariants(self):
+    def test_permanent_membership_invariants(self):
+        """Relational invariants that must hold BEFORE AND AFTER variety annotation.
+
+        These do not hard-code corpus sizes. They protect against accidental
+        addition/removal/reclassification while remaining valid once source-backed
+        varieties are later assigned (which may split one lexical form into several
+        printed entries but must not change production occurrence membership).
+        """
         forms = self._rows("index_verborum_forms.tsv")
         pm = self._rows("index_verborum_print_main.tsv")
         pu = self._rows("index_verborum_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
-        self.assertEqual(len(forms), 2259)
-        self.assertEqual(len({(r["language"], r["form"]) for r in forms}), 1141)
-        self.assertEqual(len(pm), 2171)
-        self.assertEqual(len(pu), 1041)
-        self.assertEqual(len(pe), 88)
+
+        # print_main and print_excluded partition the production forms exactly.
+        self.assertEqual(len(pm) + len(pe), len(forms),
+                         "print_main + print_excluded must partition production occurrences")
+        # Every printed/excluded occurrence is a real production occurrence.
+        forms_ident = {(r["language"], r.get("variety", ""), r["form"], r["display"],
+                        r["form_role"], r["source_scope"], r["source_ref"]) for r in forms}
+        for label, rows in (("print_main", pm), ("print_excluded", pe)):
+            for r in rows:
+                ident = (r["language"], r.get("variety", ""), r["form"], r["display"],
+                         r["form_role"], r["source_scope"], r["source_ref"])
+                self.assertIn(ident, forms_ident, f"{label} row absent from production forms: {ident}")
+        # Unique printed entries never exceed printed occurrences, and one printed
+        # entry exists per (language, display, sort_key, printed_variety) group of
+        # print_main (this is exactly the collapsing key used by the generator).
+        expected_unique = {(r["language"], r["display"], r["sort_key"],
+                            self._printed_variety(r.get("variety", ""))) for r in pm}
+        self.assertEqual(len(pu), len(expected_unique),
+                         "unique printed entries must equal distinct (language, display, sort_key, printed_variety) of print_main")
+
+    def _printed_variety(self, variety):
+        variety = (variety or "").strip()
+        if not variety:
+            return ""
+        return ivr.load_variety_registry().printed_label(variety)
+
+    def test_pre_annotation_baseline_snapshot(self):
+        """Task-specific baseline for THIS infrastructure pass only.
+
+        These exact counts prove the infrastructure pass did not alter corpus
+        membership. They are expected to change legitimately once source-backed
+        varieties are assigned (a form may then yield multiple printed entries),
+        at which point this single snapshot test — and not the permanent
+        invariants above — should be updated deliberately.
+        """
+        PRE_ANNOTATION_BASELINE = {
+            "production_occurrences": 2259,
+            "production_unique_forms": 1141,
+            "print_main_occurrences": 2171,
+            "unique_printed_entries": 1041,
+            "print_excluded_occurrences": 88,
+        }
+        forms = self._rows("index_verborum_forms.tsv")
+        pm = self._rows("index_verborum_print_main.tsv")
+        pu = self._rows("index_verborum_print_unique.tsv")
+        pe = self._rows("index_verborum_print_excluded.tsv")
+        self.assertEqual(len(forms), PRE_ANNOTATION_BASELINE["production_occurrences"])
+        self.assertEqual(len({(r["language"], r["form"]) for r in forms}),
+                         PRE_ANNOTATION_BASELINE["production_unique_forms"])
+        self.assertEqual(len(pm), PRE_ANNOTATION_BASELINE["print_main_occurrences"])
+        self.assertEqual(len(pu), PRE_ANNOTATION_BASELINE["unique_printed_entries"])
+        self.assertEqual(len(pe), PRE_ANNOTATION_BASELINE["print_excluded_occurrences"])
 
     def test_canonical_language_note_blank(self):
         with (BOOK / "index_verborum_languages.tsv").open(encoding="utf-8", newline="") as h:
