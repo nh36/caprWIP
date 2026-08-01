@@ -18,8 +18,8 @@
 | Old English | 1134 | 446 |
 | Proto-Germanic | 942 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 5 | 4 |
-| Pre-Old English / prehistoric English | 9 | 7 |
+| Proto-West Germanic | 8 | 5 |
+| Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 15 | 12 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
@@ -47,7 +47,7 @@
 
 ## Pre-OE review rows by proposed status
 
-- `include_if_source_backed`: 9
+- `include_if_source_backed`: 6
 
 ## Reader-facing example rows by role
 
@@ -122,10 +122,11 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
+| pwgmc | `*hebun` | hebun | 3 | comparison_form; evidence_form |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*timbr` | timbr | 2 | comparison_form |
-| goth | `bairam` | bairam | 1 | evidence_form |
+| goth | `baíram` | bairam | 1 | evidence_form |
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `dagam` | dagam | 1 | evidence_form |
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |

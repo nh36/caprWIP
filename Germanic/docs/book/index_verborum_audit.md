@@ -14,7 +14,7 @@
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
-- Pre-OE review rows: 9
+- Pre-OE review rows: 6
 - Reader-facing example candidate rows: 857
 - Reader-facing rows include_in_example_index=yes: 480
 - Reader-facing rows include_in_example_index=no: 377
@@ -48,8 +48,8 @@
 | Old English | 1222 | 456 |
 | Proto-Germanic | 942 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 5 | 4 |
-| Pre-Old English / prehistoric English | 9 | 7 |
+| Proto-West Germanic | 8 | 5 |
+| Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 15 | 12 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
@@ -87,18 +87,18 @@
 ### Proto-West Germanic
 
 - `*bakan` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
-- `*skuldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21)
-- `*skúldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48)
-- `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24)
-- `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48)
-
-### Pre-Old English / prehistoric English
-
 - `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27)
 - `*hebun` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45)
 - `*hebun` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602)
+- `*skuldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21)
+
+### Pre-Old English / prehistoric English
+
 - `*sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 - `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
+- `*sparja-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
+- `*weraldiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68)
+- `*weraldu` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68)
 
 ### Old Norse
 
@@ -106,14 +106,14 @@
 - `báðir` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:69)
 - `berum` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
 - `brjóst` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:24)
-- `dogum` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
+- `dǫgum` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
 
 ### Old High German
 
 - `backan` (override; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
 - `bahhan` (override; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
 - `bēde` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:28)
-- `berumeés` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
+- `berumēs` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
 - `fogal` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:22)
 
 ### Old Frisian
@@ -126,7 +126,7 @@
 
 ### Gothic
 
-- `bairam` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
+- `baíram` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
 - `brusts` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1968-breast-brēost.model.md:22)
 - `dagam` (explicit_tag; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:258)
 - `faurhtei` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:22)
@@ -185,8 +185,8 @@
 | Old English | 1134 | 446 |
 | Proto-Germanic | 942 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 5 | 4 |
-| Pre-Old English / prehistoric English | 9 | 7 |
+| Proto-West Germanic | 8 | 5 |
+| Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 15 | 12 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
@@ -1690,8 +1690,8 @@
 | `h` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1439 | ## Historical discussion | Breaking creates \emph{eo}-type outputs before \emph{h}, \emph{rC}, and |
 | `h` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2638 | ## Historical discussion | Ringe and Taylor describe this late sequence of \emph{h}-loss and contraction |
 | `h` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:2694 | ## SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | The rule contracts the vowel sequences created after \emph{h}-loss, producing |
-| `heaven` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602 | ## Historical discussion | The older history of [`heofon`]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of media |
-| `*hebun` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602 | ## Historical discussion | The older history of [`heofon`]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of media |
+| `heaven` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602 | ## Historical discussion | The older history of [*heofon*]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of media |
+| `*hebun` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602 | ## Historical discussion | The older history of [*heofon*]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of media |
 | `*hefon > heofon` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1930 | ## \CAPRRuleHeading{SC058. Nasal dissimilation in short-vowel environments}{OENasalDissimilation} {#rule-OENasalDissimilation} | older *hefzen*” and Hogg’s sequence \emph{*hefon > heofon} preserve outcomes |
 | `*heofon` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:614 | ## \CAPRRuleHeading{SC021. Raising of unstressed \emph{*o} before later \emph{*u}}{NWGmcUnstressedORaising} {#rule-NWGmcUnstressedORaising} | After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [xémonų]{.recon} ‘heaven’ yields [*heofun*]{.pred} rather than expected OE *heofon* |
 | `*here` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:392 | ## Historical discussion | Ringe and Taylor state directly that after final unstressed `*a` and `*ą` were lost, postconsonantal `*j` became syllabic `*i`, with outcomes behind OE *here* ' |
@@ -1880,7 +1880,7 @@
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:592 | ## \CAPRRuleHeading{SC019. Raising of final unstressed long \emph{*ō}}{NWGmcFinalLongORaising} {#rule-NWGmcFinalLongORaising} | Two groups of witnesses confine final unstressed long \emph{*ō} > \emph{*u}. The forms *nosu* 'nose', *sċofl* 'shovel', and *sorg* 'sorrow' fix its lower bounda |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:804 | ## Historical discussion | The surviving bimoric \emph{*ō} in the pathway to *ræste* ‘rest’ nevertheless |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:822 | ## \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or aft |
-| `-o-` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602 | ## Historical discussion | The older history of [`heofon`]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of media |
+| `-o-` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:602 | ## Historical discussion | The older history of [*heofon*]{.iv lang=oe sort=heofon role=evidence_form} 'heaven' requires an unstressed-vowel adjustment before the later reshaping of media |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1366 | ## \CAPRRuleHeading{SC036. Raising of medial \emph{*a} between stress peaks}{OEInterStressRaising} {#rule-OEInterStressRaising} | The two boundaries have unequal force. Before [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), PGmc [sáiwalō]{.recon} ‘soul’ yields [*sāwel*]{.pred |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:519 | ## Historical discussion | After the glide-conditioned West Saxon spellings are in place, the broader Northwest Germanic lowering of \emph{u} to \emph{o} before a following non-high vowel |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:538 | ## \CAPRRuleHeading{SC017. Lowering of \emph{*u} before following non-high vowels}{NWGmcULowering} {#rule-NWGmcULowering} | Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* 'yoke', *nosu* 'nose', *sċofl* 'shovel', and *sorg* 'sorrow'. |
