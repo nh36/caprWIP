@@ -3010,6 +3010,7 @@ From [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexem
 
 ## beech — OE _bōc_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!boc@\iventry{boc}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!boc@\iventry{bōc}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!boko@\iventry{*bōkō}{}}
 
@@ -3208,6 +3209,9 @@ From [bḗrō]{.iv .recon lang=pgmc sort=bero source_ref="Germanic/docs/lexeme_r
 ## birth — OE _byrd_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!byrd@\iventry{byrd}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gebyrd@\iventry{ge-byrd}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gebyrd@\iventry{gebyrd}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gebyrdu@\iventry{gebyrdu}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burdiz@\iventry{*búrdiz}{}}
 
 Derivation: _\*búrdiz_ > _byrd_ (regular).
@@ -3341,6 +3345,9 @@ West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving [bāną
 ## both — OE _bū_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bu@\iventry{bū}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cu@\iventry{cū}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hu@\iventry{hū}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tu@\iventry{tū}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bo@\iventry{*bō}{}}
 
 Derivation: _\*bō_ > _bū_ (regular).
@@ -3441,6 +3448,7 @@ other forms that belong to the same broader lexical history.
 ## bow — OE _bīeġan_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!biegan@\iventry{bīeġan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bigan@\iventry{bigan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baugijana@\iventry{*báugijaną}{}}
 
 Derivation: _\*báugijaną_ > _bīeġan_ (regular).
@@ -3508,7 +3516,11 @@ From [báugijaną]{.recon} 'bow', the stem reaches pre-Old-English [bēagjan]{.r
 
 ## breeches — OE _brēċ_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{bréc}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{brēc}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{brēċ}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!broc@\iventry{broc}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!broc@\iventry{brōc}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brokiz@\iventry{*brōkiz}{}}
 
 Derivation: _\*brōkiz_ > _brēċ_ (regular).
@@ -3572,6 +3584,7 @@ After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _
 
 ## calf — OE _ċealf_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!calfur@\iventry{calfur}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cealf@\iventry{ċealf}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kalbaz@\iventry{*kálbaz}{}}
 
@@ -3639,6 +3652,7 @@ After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives [kælb]{
 ## corn — OE _corn_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!corn@\iventry{corn}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cornes@\iventry{cornes}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kurna@\iventry{*kúrną}{}}
 
 Derivation: _\*kúrną_ > _corn_ (regular).
@@ -3700,7 +3714,10 @@ With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]
 
 ## deed — OE _dǣd_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!daed@\iventry{dæd}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!daed@\iventry{dǣd}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!ded~04@\iventry{dēd}{Angl.}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dediz@\iventry{*dēdiz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dediz@\iventry{*dḗdiz}{}}
 
 Derivation: _\*dḗdiz_ > _dǣd_ (regular).
@@ -3827,8 +3844,10 @@ From [dúrą]{.recon} ‘door’, Northwest Germanic u-lowering gives [dórą]{.
 
 ## fare — OE _faran_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!faeran@\iventry{færan}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!faran@\iventry{faran}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farana@\iventry{*fáraną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!faranan@\iventry{*faranan}{}}
 
 Derivation: _\*fáraną_ > _faran_ (regular).
 
@@ -3891,7 +3910,11 @@ From [fáraną]{.recon} ‘fare’, Anglo-Frisian brightening first gives [færa
 
 ## fell — OE _fell_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fel@\iventry{fel}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fell@\iventry{fell}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fellan@\iventry{fellan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fellum@\iventry{fellum}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feoll@\iventry{feoll}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fella@\iventry{*féllą}{}}
 
 Derivation: _\*féllą_ > _fell_ (regular).
@@ -3952,6 +3975,10 @@ With [féllą]{.recon} ‘fell’, no special earlier reshaping is needed: heavy
 ## fern — OE _fearn_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearn@\iventry{fearn}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearna@\iventry{fearna}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearne@\iventry{fearne}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearnes@\iventry{fearnes}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farnan@\iventry{*farnan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farnaz@\iventry{*fárnaz}{}}
 
 Derivation: _\*fárnaz_ > _fearn_ (regular).
@@ -4016,6 +4043,8 @@ From [fárnaz]{.recon} ‘fern’, loss of final _-z_ and final _-a_ gives [fár
 ## field — OE _feld_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feld@\iventry{feld}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!felda@\iventry{felda}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!felde@\iventry{felde}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!felthuz@\iventry{*félθuz}{}}
 
 Derivation: _\*félθuz_ > _feld_ (regular).
@@ -4079,7 +4108,10 @@ In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and hig
 
 ## fly — OE _flēogan_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flegan~04@\iventry{flégan}{Angl.}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleogan@\iventry{fléogan}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleogan@\iventry{flēogan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleoged@\iventry{fleogeð}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fleugana@\iventry{*fléuganą}{}}
 
 Derivation: _\*fléuganą_ > _flēogan_ (regular).
@@ -4146,8 +4178,14 @@ From [fléuganą]{.recon} ‘fly’, Old English diphthong leveling gives [flēo
 
 ## forlorn — OE _lēosan_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forleosan@\iventry{for-leósan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forleosan@\iventry{for-lēosan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forleosan@\iventry{forlēosan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forloren@\iventry{forloren}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forlorn@\iventry{forlorn}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!leosan@\iventry{lēosan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leusana@\iventry{*léusaną}{}}
+\index[iv]{11goth@\ivlangheader{Gothic}{}!fraliusan@\iventry{fra-liusan}{}}
 
 Derivation: _\*léusaną_ > _lēosan_ (regular).
 
@@ -4214,6 +4252,8 @@ From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną
 ## gang — OE _gang_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gang@\iventry{gang}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gangan@\iventry{gangan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gangaz@\iventry{*gangaz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gangaz@\iventry{*gángaz}{}}
 \index[iv]{08on@\ivlangheader{Old Norse}{}!gangr@\iventry{gangr}{}}
 
@@ -4280,6 +4320,10 @@ From [gángaz]{.recon} ‘gang’, loss of final _-z_ gives [gánga]{.recon} ‘
 
 ## give — OE _ġiefan_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forgeofan~05@\iventry{for-geofan}{Merc.}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forgeofan@\iventry{for-geofan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geafa~06@\iventry{geafa}{North.}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geafa@\iventry{geafa}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!giefan@\iventry{ġiefan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gebana@\iventry{*gébaną}{}}
 
@@ -4417,6 +4461,9 @@ From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gú
 
 ## grave — OE _grafan_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!graef@\iventry{græf}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!graefd@\iventry{græfð}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!graefen@\iventry{græfen}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!grafan@\iventry{grafan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!grabana@\iventry{*grábaną}{}}
 
@@ -5173,6 +5220,7 @@ From [láidijaną]{.recon} ‘lead’, monophthongization of _\*ai_ first gives 
 
 ## learn — OE _liornian_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!leornian@\iventry{leornian}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liornian@\iventry{liornian}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*líznōjaną}{}}
 
@@ -5744,6 +5792,7 @@ The concept corresponds to an unattested compound [nihtmare]{.recon} ‘nightmar
 ## coat — OE _rocc_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rocc@\iventry{rocc}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stanrocc@\iventry{stānrocc}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rukkaz@\iventry{*rúkkaz}{}}
 
 Derivation: _\*rúkkaz_ > _rocc_ (regular).
@@ -6291,6 +6340,7 @@ This entry concerns the noun [_spearra_]{.iv lang=oe sort=spearra role=compariso
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stillan@\iventry{stillan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stellijana@\iventry{*stéllijaną}{}}
+\index[iv]{16german@\ivlangheader{German}{}!stillen@\iventry{stillen}{}}
 
 Derivation: _\*stéllijaną_ > _stillan_ (regular).
 
@@ -6627,6 +6677,7 @@ The derivational input writes stressed long _ī_ as _\*ī́_, so comparative [sw
 
 ## think — OE _þenċan_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hycgan@\iventry{hycgan}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thencan@\iventry{þenċan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thankijana@\iventry{*θánkijaną}{}}
 
@@ -6765,6 +6816,7 @@ The comparative sources preserve more than one stem formation, but the Old Engli
 ## tide — OE _tīd_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tid@\iventry{tīd}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tidan@\iventry{tīdan}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tidiz@\iventry{*tī́diz}{}}
 
 Derivation: citation reconstruction _\*tī́diz_; form followed here _\*tī́diz_ > _tīd_ (regular).
@@ -7654,6 +7706,7 @@ away.
 ## cud — OE _cwedu_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cwedu@\iventry{cwedu}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kwedu2@\iventry{*kwedu-2}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kweduz@\iventry{*kwéðuz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kwithuz@\iventry{*kwíθuz}{}}
 
@@ -8293,6 +8346,8 @@ outcome of the thematic [_\*breusta-_]{.iv lang=pgmc sort=breusta role=source_pr
 ## craft — OE _cræft_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!craeft@\iventry{cræft}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!craft@\iventry{craft}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!creft@\iventry{creft}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftaz@\iventry{*kráftaz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftiz@\iventry{*kráftiz}{}}
 
@@ -9171,7 +9226,11 @@ a competing voiced comparative label.
 
 ## laugh — OE _hliehhan_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlaehhan@\iventry{hlæhhan}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hleahtor@\iventry{hleahtor}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlehhan@\iventry{hlehhan}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hliehhan@\iventry{hliehhan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!hlahtraz@\iventry{*hlahtraz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lakana@\iventry{*lákaną}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlaxjana@\iventry{*xláxjaną}{}}
 
@@ -9453,6 +9512,7 @@ feminine formation reflected in Old English.
 
 ## navel — OE _nafola_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naefla@\iventry{næfla}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nafola@\iventry{nafola}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nablo@\iventry{*nablô}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nabulo@\iventry{*nábulô}{}}
@@ -9738,6 +9798,7 @@ the voiced alternant used for Old English.
 
 ## nose — OE _nosu_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nasu@\iventry{nasu}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nosu@\iventry{nosu}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naso@\iventry{*nasō}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nuso@\iventry{*núsō}{}}
@@ -10015,8 +10076,10 @@ headword from the fuller i-stem input that yields the Old English form.
 ## sieve — OE _sife_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sife@\iventry{sife}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spere@\iventry{spere}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibaz@\iventry{*síbaz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibi@\iventry{*síbi}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibiz@\iventry{*sib-iz}{}}
 
 Derivation: citation reconstruction _\*síbaz_; form followed here _\*síbi_ > _sife_ (early analogy).
 
@@ -10936,6 +10999,7 @@ that stand behind the inherited Old English forms.
 
 ## withy — OE _wīþiġ_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hunig@\iventry{hunig}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!withig@\iventry{wīþiġ}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waithiz@\iventry{*wáiθiz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!withaga@\iventry{*wī́θagą}{}}
@@ -11532,6 +11596,7 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 ## cow — OE _cȳ_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cum@\iventry{cūm}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cy@\iventry{cȳ}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!koz@\iventry{*kōz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kui@\iventry{*kūi}{}}
@@ -11637,6 +11702,7 @@ _\*kū-_ grade spread beyond that one cell.
 ## find — OE _fundene_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fundene@\iventry{fundene}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tofundennes@\iventry{tō-fundennes}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!finthana@\iventry{*fínθaną}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fundano@\iventry{*fúnðanǭ}{}}
 
@@ -12522,6 +12588,7 @@ attested Old English form.
 ## rest — OE _ræste_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!raeste@\iventry{ræste}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rast@\iventry{rast}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@\iventry{*rastō}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rastoz@\iventry{*rástōz}{}}
 
@@ -12875,6 +12942,7 @@ compared here.
 
 ## thistle — OE _þistles_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hrefn@\iventry{hrefn}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thistles@\iventry{þistles}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thestilaz@\iventry{*θéstilaz}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thistilas@\iventry{*θístilas}{}}
@@ -12960,6 +13028,7 @@ and the genitive singular cell.
 
 ## make (iptv.2sg) — OE _maca_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lapian@\iventry{lapian}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!maca@\iventry{maca}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mako@\iventry{*mákô}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@\iventry{*makōną}{}}
@@ -13774,6 +13843,7 @@ The comparison below sets the relevant forms side by side.
 
 ## show (3sg) — OE _sċēawaþ_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawad@\iventry{sceawað}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawath@\iventry{sċēawaþ}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@\iventry{*skawōną}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawothi@\iventry{*skáwōθi}{}}
@@ -14516,6 +14586,7 @@ paradigm-cell survival.
 
 ## fowl — OE _fugol_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fugel@\iventry{fugel}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fugol@\iventry{fugol}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fuglaz@\iventry{*fúglaz}{}}
 \index[iv]{08on@\ivlangheader{Old Norse}{}!fugl@\iventry{fugl}{}}
@@ -14627,6 +14698,7 @@ attested _fugol_ 'fowl'.
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rust@\iventry{rust}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rusto@\iventry{*rústō}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!rost@\iventry{rost}{}}
 
 Derivation: _\*rústō_ yields regular _rost_; the Old English form here is _rust_ (unexplained exception).
 
@@ -14724,8 +14796,10 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 ## wolf — OE _wulf_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bolt@\iventry{bolt}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wulf@\iventry{wulf}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wulfaz@\iventry{*wúlfaz}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!wolf@\iventry{wolf}{}}
 
 Derivation: _\*wúlfaz_ yields regular _wolf_; the Old English form here is _wulf_ (unexplained exception).
 
@@ -14826,6 +14900,7 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 ## wool — OE _wull_
 
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!full@\iventry{full}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wull@\iventry{wull}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wullo@\iventry{*wúllō}{}}
 
