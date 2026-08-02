@@ -86,7 +86,10 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
             command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip(), (row.get("variety") or "").strip())
             if ".md:" in ref:
                 path_part, line_part = ref.rsplit(":", 1)
-                if row.get("source_scope") in line_injected_scopes and line_part.isdigit():
+                scope = row.get("source_scope", "")
+                if scope in line_injected_scopes and line_part.isdigit() and path_part not in model_entry_heading_map:
+                    # Line-inject only for intro/chronology sources; model-entry paths
+                    # must go to heading injection so transform_lexical can emit them.
                     line_no = int(line_part)
                     if command not in commands_by_line_ref[path_part][line_no]:
                         commands_by_line_ref[path_part][line_no].append(command)
