@@ -15,6 +15,6 @@ define PWGmcDentalHardening [
 ];
 ```
 
-Dental hardening has systemic scope: voiced fricative \emph{*ð} became stop \emph{*d} throughout early West Germanic. Moving [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) earlier or later changes no checked output.
+Dental hardening has systemic scope: voiced fricative \emph{*ð} became stop \emph{*d} throughout early West Germanic. Moving [SC013 PWGmcDentalHardening](#rule-PWGmcDentalHardening) earlier or later changes no output.
 
 Comparative evidence establishes the sound law; the present lexicon leaves its exact position approximate.

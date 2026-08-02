@@ -34,8 +34,8 @@ disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad s
 failures requires [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) to follow
 [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss).
 
-If the rule is moved later within the tested sequence, no checked form yields a
-form different from the expected one. The checked forms therefore do not
+If the rule is moved later within the tested sequence, no output differs from the
+expected one. The lexical evidence therefore does not
 identify a corresponding later constraint. The sources place early
 \emph{*ō}-shortening before the later weak-tail changes without fixing a closer
 local order.

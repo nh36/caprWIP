@@ -28,7 +28,7 @@ define NWGmcNasalSpirantLengthening [
 ];
 ```
 
-All three witnesses require the vowel adjustment while the nasal is still present. If [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) follows [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss), PGmc [fúnxstiz]{.recon} ‘fist’ yields [*fyst*]{.pred} rather than expected OE *fȳst* ‘fist’, PGmc [gánsz]{.recon} ‘goose’ yields [*ġeas*]{.pred} rather than expected *gōs* ‘goose’, and PGmc [júgunθ]{.recon} ‘youth’ yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. Earlier placement changes no checked output. The evidence requires lengthening to precede nasal loss without supplying a lower boundary, in agreement with the handbook treatment of the two as successive phases.
+All three witnesses require the vowel adjustment while the nasal is still present. If [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) follows [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss), PGmc [fúnxstiz]{.recon} ‘fist’ yields [*fyst*]{.pred} rather than expected OE *fȳst* ‘fist’, PGmc [gánsz]{.recon} ‘goose’ yields [*ġeas*]{.pred} rather than expected *gōs* ‘goose’, and PGmc [júgunθ]{.recon} ‘youth’ yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. Earlier placement changes no output. The evidence requires lengthening to precede nasal loss without supplying a lower boundary, in agreement with the handbook treatment of the two as successive phases.
 
 ## SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss}
 
@@ -38,4 +38,4 @@ define NWGmcNasalSpirantLoss [
 ];
 ```
 
-The converse test fixes the same boundary: placing [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss) before [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) produces the same errors in *fȳst* ‘fist’, *gōs* ‘goose’, and *ġeoguþ* ‘youth’. Later placement changes no checked output. These forms prove that the vowel was adjusted before the nasal disappeared; they provide no upper boundary for the loss.
+The converse test fixes the same boundary: placing [SC027 NWGmcNasalSpirantLoss](#rule-NWGmcNasalSpirantLoss) before [SC026 NWGmcNasalSpirantLengthening](#rule-NWGmcNasalSpirantLengthening) produces the same errors in *fȳst* ‘fist’, *gōs* ‘goose’, and *ġeoguþ* ‘youth’. Later placement changes no output. These forms prove that the vowel was adjusted before the nasal disappeared; they provide no upper boundary for the loss.

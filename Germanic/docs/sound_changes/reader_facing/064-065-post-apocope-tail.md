@@ -50,6 +50,6 @@ define OEMedialSyncope [
 ```
 
 No diagnostic word establishes a local chronology. Moving medial syncope to
-either end of the tested range leaves every checked output unchanged. Its
+either end of the tested range leaves every output unchanged. Its
 handbook placement after apocope and before later cluster simplification
 therefore remains preferable, but the present lexicon cannot demonstrate it.

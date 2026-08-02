@@ -73,8 +73,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | 14 | 56 | no |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | 14 | 31 | no |
 | 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 14 | 118 | yes |
-| 064-065-post-apocope-tail.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | 15 | 50 | no |
-| 064-065-post-apocope-tail.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 39 | 93 | yes |
+| 064-065-post-apocope-tail.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | 16 | 50 | no |
+| 064-065-post-apocope-tail.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 44 | 93 | yes |
 | 066-068-syncope-and-degemination-corridor.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 62 | no |
 | 066-068-syncope-and-degemination-corridor.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | 40 | 29 | no |
 | 066-068-syncope-and-degemination-corridor.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | 56 | 88 | no |
@@ -141,7 +141,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `114` chars — `    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `114` chars — `    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 
-### 064-065-post-apocope-tail.md:39 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
+### 064-065-post-apocope-tail.md:44 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 - `93` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]`
 

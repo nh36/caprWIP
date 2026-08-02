@@ -30,5 +30,5 @@ From [wégaz]{.recon} ‘way’, final `*z` is lost and the weak tail apocopates
 
 ### Form note
 
-Normalized `weġ` 'way' and dictionary `weg` 'way' represent the same noun. No Old English form `wē` 'we' is supported in the checked evidence for 'way'.
+Normalized `weġ` 'way' and dictionary `weg` 'way' represent the same noun. No Old English form `wē` 'we' is supported by the evidence for 'way'.
 

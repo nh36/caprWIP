@@ -5,7 +5,7 @@
 The first rule is a narrow loss of \emph{*w} after velars in the \emph{*ngw}
 sequence. Ringe and Taylor derive PGmc [singwan]{.recon} ‘sing’ to Old English *singan*
 ‘sing’ [@RingeTaylor2014, p. 214, §6.4.2]. This comparative evidence establishes
-the change, although no checked form fixes its order relative to a neighboring
+the change, although no lexical evidence fixes its order relative to a neighboring
 rule.
 
 The second rule is historically more legible. Campbell notes the recurring loss
@@ -24,7 +24,7 @@ define OEPostVelarWLoss [
 ];
 ```
 
-The comparative development `*singwan > singan` establishes narrow post-velar \emph{*w}-loss in the \emph{*ngw} sequence, yielding *singan* ‘sing’. Moving [SC053 OEPostVelarWLoss](#rule-OEPostVelarWLoss) earlier or later leaves every checked output unchanged. Its pre-umlaut position therefore rests on comparative evidence, while the present lexicon supplies no neighboring boundary.
+The comparative development `*singwan > singan` establishes narrow post-velar \emph{*w}-loss in the \emph{*ngw} sequence, yielding *singan* ‘sing’. Moving [SC053 OEPostVelarWLoss](#rule-OEPostVelarWLoss) earlier or later leaves every output unchanged. Its pre-umlaut position therefore rests on comparative evidence, while the present lexicon supplies no neighboring boundary.
 
 ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 

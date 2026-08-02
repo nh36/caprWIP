@@ -4270,7 +4270,7 @@ From [wégaz]{.recon} ‘way’, final _\*z_ is lost and the weak tail apocopate
 
 #### Form note
 
-Normalized _weġ_ 'way' and dictionary _weg_ 'way' represent the same noun. No Old English form _wē_ 'we' is supported in the checked evidence for 'way'.
+Normalized _weġ_ 'way' and dictionary _weg_ 'way' represent the same noun. No Old English form _wē_ 'we' is supported by the evidence for 'way'.
 
 ### weapon — OE _wǣpn_
 

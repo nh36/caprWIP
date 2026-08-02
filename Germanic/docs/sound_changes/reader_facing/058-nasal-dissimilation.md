@@ -39,5 +39,5 @@ subset of these outcomes, not every dissimilatory development involving nasals.
 
 No witness word fixes the position of nasal dissimilation within the Old
 English sequence. Reversing its order with any tested neighbor leaves every
-checked output unchanged. A more precise relative chronology would therefore
+output unchanged. A more precise relative chronology would therefore
 require lexical evidence not represented here.

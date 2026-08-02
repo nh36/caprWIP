@@ -25,7 +25,7 @@ The rule reduces unstressed prefixal \emph{*i} to a weaker vowel in the
 vowel. The development accounts for later prefix spellings such as OE
 \emph{*be-} and \emph{*ne-}.
 
-If the rule is moved earlier or later within the tested sequence, no checked form yields a form different from the expected one. The tested forms therefore do not place [SC076 OEPrefixIReduction](#rule-OEPrefixIReduction) before or after any specific neighboring change.
+If the rule is moved earlier or later within the tested sequence, no output differs from the expected one. The lexical evidence therefore does not place [SC076 OEPrefixIReduction](#rule-OEPrefixIReduction) before or after any specific neighboring change.
 
 The handbooks attest late prefix-vowel weakening, but the precise placement
 remains approximate. No lexical failure fixes it.

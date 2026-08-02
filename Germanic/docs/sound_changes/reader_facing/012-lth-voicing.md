@@ -15,6 +15,6 @@ define PWGmcLThVoicing [
 ];
 ```
 
-The `field`, `fold`, `gold`, and `wold` families preserve \emph{*lþ} to \emph{*ld}, but none dates the change against a neighboring rule. Every checked output remains unchanged when the voicing is moved in either direction.
+The `field`, `fold`, `gold`, and `wold` families preserve \emph{*lþ} to \emph{*ld}, but none dates the change against a neighboring rule. Every output remains unchanged when the voicing is moved in either direction.
 
 Comparative reconstruction therefore establishes northern West Germanic \emph{lþ > ld}, but the witness forms fix no date. Neither a pan-PWGmc attribution nor an exact local placement follows from the evidence presented here.

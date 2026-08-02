@@ -26,7 +26,7 @@ define OEWWSimplification [
 ];
 ```
 
-The *dēaw* 'dew' and *hēawan* 'hew' derivations establish that doubled \emph{w} was simplified before the long \emph{ēaw} development. If [SC031 OEWWSimplification](#rule-OEWWSimplification) follows [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc [dáwwō]{.recon} ‘dew’ yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc [xáwwaną]{.recon} ‘hew’ yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. Earlier placement changes no checked output. The witnesses require simplification before the long-diphthong change and leave the lower boundary to the broader West Saxon chronology.
+The *dēaw* 'dew' and *hēawan* 'hew' derivations establish that doubled \emph{w} was simplified before the long \emph{ēaw} development. If [SC031 OEWWSimplification](#rule-OEWWSimplification) follows [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc [dáwwō]{.recon} ‘dew’ yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc [xáwwaną]{.recon} ‘hew’ yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. Earlier placement changes no output. The witnesses require simplification before the long-diphthong change and leave the lower boundary to the broader West Saxon chronology.
 
 ## Historical discussion of diphthong leveling
 
@@ -65,7 +65,7 @@ English, and Ringe and Taylor give the corresponding examples from chew,
 four, and knee [@Campbell1959, pp. 53--54, §136;
 @RingeTaylor2014, pp. 188, 202].
 
-The only checked boundary for
+The only boundary established by the lexical evidence for
 [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) lies ahead at
 [SC044 OEBreaking](#rule-OEBreaking).
 
@@ -80,7 +80,7 @@ define OEEwLongDiphthong [
 ];
 ```
 
-The long \emph{ēow} of *ċēowan* 'chew', *fēower* 'four', and *cnēow* 'knee' supplies only a terminus ante quem. If [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) follows [SC044 OEBreaking](#rule-OEBreaking), PGmc [kéwwaną]{.recon} ‘chew’ yields [*ċeowan*]{.pred} rather than expected OE *ċēowan* ‘chew’, PGmc [fédwōr]{.recon} ‘four’ yields [*feower*]{.pred} rather than expected *fēower* ‘four’, and PGmc [knéwą]{.recon} ‘knee’ yields [*cneow*]{.pred} rather than expected *cnēow* ‘knee’. Earlier placement changes no checked output. The sources associate \emph{ew} and \emph{iw} with the same diphthongal history but furnish no lower boundary.
+The long \emph{ēow} of *ċēowan* 'chew', *fēower* 'four', and *cnēow* 'knee' supplies only a terminus ante quem. If [SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong) follows [SC044 OEBreaking](#rule-OEBreaking), PGmc [kéwwaną]{.recon} ‘chew’ yields [*ċeowan*]{.pred} rather than expected OE *ċēowan* ‘chew’, PGmc [fédwōr]{.recon} ‘four’ yields [*feower*]{.pred} rather than expected *fēower* ‘four’, and PGmc [knéwą]{.recon} ‘knee’ yields [*cneow*]{.pred} rather than expected *cnēow* ‘knee’. Earlier placement changes no output. The sources associate \emph{ew} and \emph{iw} with the same diphthongal history but furnish no lower boundary.
 
 ## Historical discussion of long \emph{ēaw}
 
