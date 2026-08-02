@@ -2869,8 +2869,8 @@ analogical and exceptional histories must be judged.
 
 ## adder — OE _nǣdre_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!naedre@\ivoeentry{nǣdre}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedron@*nḗdrōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naedre@\iventry{nǣdre}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedron@\iventry{*nḗdrōn}{}}
 
 Derivation: _\*nḗdrōn_ > _nǣdre_ (regular).
 
@@ -2944,10 +2944,10 @@ consonant of [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/asse
 
 ## bake — OE _bacan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!bacan@\ivoeentry{bacan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bakana@*bákaną}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!backan@backan}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!bahhan@bahhan}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bacan@\iventry{bacan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bakana@\iventry{*bákaną}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!backan@\iventry{backan}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!bahhan@\iventry{bahhan}{}}
 
 Derivation: _\*bákaną_ > _bacan_ (regular).
 
@@ -3010,8 +3010,8 @@ From [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/assem
 
 ## beech — OE _bōc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!boc@\ivoeentry{bōc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!boko@*bōkō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!boc@\iventry{bōc}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!boko@\iventry{*bōkō}{}}
 
 Derivation: _\*bōkō_ > _bōc_ (regular).
 
@@ -3072,8 +3072,8 @@ With nominative input [bōkō]{.recon} 'beech', the development is compact. Nort
 
 ## begin — OE _beġinnan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!beginnan@\ivoeentry{beġinnan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!biginnana@*bigínnaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!beginnan@\iventry{beġinnan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!biginnana@\iventry{*bigínnaną}{}}
 
 Derivation: _\*bigínnaną_ > _beġinnan_ (regular).
 
@@ -3140,8 +3140,8 @@ From [bigínnaną]{.iv .recon lang=pgmc sort=biginnana source_ref="Germanic/docs
 
 ## bier — OE _bǣr_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!baer@\ivoeentry{bǣr}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bero@*bḗrō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!baer@\iventry{bǣr}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bero@\iventry{*bḗrō}{}}
 
 Derivation: _\*bḗrō_ > _bǣr_ (regular).
 
@@ -3207,8 +3207,8 @@ From [bḗrō]{.iv .recon lang=pgmc sort=bero source_ref="Germanic/docs/assembly
 
 ## birth — OE _byrd_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!byrd@\ivoeentry{byrd}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burdiz@*búrdiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!byrd@\iventry{byrd}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burdiz@\iventry{*búrdiz}{}}
 
 Derivation: _\*búrdiz_ > _byrd_ (regular).
 
@@ -3274,8 +3274,8 @@ From [búrdiz]{.recon} ‘birth’, loss of final _z_ gives [búrdi]{.recon} ‘
 
 ## bone — OE _bān_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!ban@\ivoeentry{bān}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baina@*báiną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!ban@\iventry{bān}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baina@\iventry{*báiną}{}}
 
 Derivation: _\*báiną_ > _bān_ (regular).
 
@@ -3340,8 +3340,8 @@ West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving [bāną
 
 ## both — OE _bū_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!bu@\ivoeentry{bū}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bo@*bō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bu@\iventry{bū}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bo@\iventry{*bō}{}}
 
 Derivation: _\*bō_ > _bū_ (regular).
 
@@ -3440,8 +3440,8 @@ other forms that belong to the same broader lexical history.
 
 ## bow — OE _bīeġan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!biegan@\ivoeentry{bīeġan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baugijana@*báugijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!biegan@\iventry{bīeġan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baugijana@\iventry{*báugijaną}{}}
 
 Derivation: _\*báugijaną_ > _bīeġan_ (regular).
 
@@ -3508,8 +3508,8 @@ From [báugijaną]{.recon} 'bow', the stem reaches pre-Old-English [bēagjan]{.r
 
 ## breeches — OE _brēċ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!brec@\ivoeentry{brēċ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brokiz@*brōkiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{brēċ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brokiz@\iventry{*brōkiz}{}}
 
 Derivation: _\*brōkiz_ > _brēċ_ (regular).
 
@@ -3572,8 +3572,8 @@ After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _
 
 ## calf — OE _ċealf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!cealf@\ivoeentry{ċealf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kalbaz@*kálbaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cealf@\iventry{ċealf}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kalbaz@\iventry{*kálbaz}{}}
 
 Derivation: _\*kálbaz_ > _ċealf_ (regular).
 
@@ -3638,8 +3638,8 @@ After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives [kælb]{
 
 ## corn — OE _corn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!corn@\ivoeentry{corn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kurna@*kúrną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!corn@\iventry{corn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kurna@\iventry{*kúrną}{}}
 
 Derivation: _\*kúrną_ > _corn_ (regular).
 
@@ -3700,8 +3700,8 @@ With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]
 
 ## deed — OE _dǣd_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!daed@\ivoeentry{dǣd}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dediz@*dḗdiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!daed@\iventry{dǣd}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dediz@\iventry{*dḗdiz}{}}
 
 Derivation: _\*dḗdiz_ > _dǣd_ (regular).
 
@@ -3763,10 +3763,10 @@ From inherited [dēdiz]{.recon} 'deed', loss of final _-z_ and the West Saxon lo
 
 ## door — OE _dor_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!dor@\ivoeentry{dor}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dura@*dúrą}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!tura@tura}
-\index[iv]{10ofris@\ivlangheader{Old Frisian}{}!dore@dore}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!dor@\iventry{dor}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dura@\iventry{*dúrą}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!tura@\iventry{tura}{}}
+\index[iv]{10ofris@\ivlangheader{Old Frisian}{}!dore@\iventry{dore}{}}
 
 Derivation: _\*dúrą_ > _dor_ (regular).
 
@@ -3827,8 +3827,8 @@ From [dúrą]{.recon} ‘door’, Northwest Germanic u-lowering gives [dórą]{.
 
 ## fare — OE _faran_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!faran@\ivoeentry{faran}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farana@*fáraną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!faran@\iventry{faran}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farana@\iventry{*fáraną}{}}
 
 Derivation: _\*fáraną_ > _faran_ (regular).
 
@@ -3891,8 +3891,8 @@ From [fáraną]{.recon} ‘fare’, Anglo-Frisian brightening first gives [færa
 
 ## fell — OE _fell_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fell@\ivoeentry{fell}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fella@*féllą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fell@\iventry{fell}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fella@\iventry{*féllą}{}}
 
 Derivation: _\*féllą_ > _fell_ (regular).
 
@@ -3951,8 +3951,8 @@ With [féllą]{.recon} ‘fell’, no special earlier reshaping is needed: heavy
 
 ## fern — OE _fearn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fearn@\ivoeentry{fearn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farnaz@*fárnaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearn@\iventry{fearn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farnaz@\iventry{*fárnaz}{}}
 
 Derivation: _\*fárnaz_ > _fearn_ (regular).
 
@@ -4015,8 +4015,8 @@ From [fárnaz]{.recon} ‘fern’, loss of final _-z_ and final _-a_ gives [fár
 
 ## field — OE _feld_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!feld@\ivoeentry{feld}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!felthuz@*félθuz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feld@\iventry{feld}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!felthuz@\iventry{*félθuz}{}}
 
 Derivation: _\*félθuz_ > _feld_ (regular).
 
@@ -4079,8 +4079,8 @@ In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and hig
 
 ## fly — OE _flēogan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fleogan@\ivoeentry{flēogan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fleugana@*fléuganą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleogan@\iventry{flēogan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fleugana@\iventry{*fléuganą}{}}
 
 Derivation: _\*fléuganą_ > _flēogan_ (regular).
 
@@ -4146,8 +4146,8 @@ From [fléuganą]{.recon} ‘fly’, Old English diphthong leveling gives [flēo
 
 ## forlorn — OE _lēosan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!leosan@\ivoeentry{lēosan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leusana@*léusaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!leosan@\iventry{lēosan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leusana@\iventry{*léusaną}{}}
 
 Derivation: _\*léusaną_ > _lēosan_ (regular).
 
@@ -4213,9 +4213,9 @@ From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną
 
 ## gang — OE _gang_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!gang@\ivoeentry{gang}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gangaz@*gángaz}
-\index[iv]{08on@\ivlangheader{Old Norse}{}!gangr@gangr}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gang@\iventry{gang}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gangaz@\iventry{*gángaz}{}}
+\index[iv]{08on@\ivlangheader{Old Norse}{}!gangr@\iventry{gangr}{}}
 
 Derivation: _\*gángaz_ > _gang_ (regular).
 
@@ -4280,8 +4280,8 @@ From [gángaz]{.recon} ‘gang’, loss of final _-z_ gives [gánga]{.recon} ‘
 
 ## give — OE _ġiefan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!giefan@\ivoeentry{ġiefan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gebana@*gébaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!giefan@\iventry{ġiefan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gebana@\iventry{*gébaną}{}}
 
 Derivation: _\*gébaną_ > _ġiefan_ (regular).
 
@@ -4349,8 +4349,8 @@ From [gébaną]{.recon} ‘give’, initial _g_ palatalizes before _e_; West Sax
 
 ## gold — OE _gold_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!gold@\ivoeentry{gold}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gultha@*gúlθą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gold@\iventry{gold}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gultha@\iventry{*gúlθą}{}}
 
 Derivation: _\*gúlθą_ > _gold_ (regular).
 
@@ -4417,8 +4417,8 @@ From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gú
 
 ## grave — OE _grafan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!grafan@\ivoeentry{grafan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!grabana@*grábaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!grafan@\iventry{grafan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!grabana@\iventry{*grábaną}{}}
 
 Derivation: _\*grábaną_ > _grafan_ (regular).
 
@@ -4486,8 +4486,8 @@ Noun _græf_ 'grave' and verbal forms such as _græfð_ 'graves' or past partici
 
 ## guest — OE _ġiest_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!giest@\ivoeentry{ġiest}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gastiz@*gástiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!giest@\iventry{ġiest}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gastiz@\iventry{*gástiz}{}}
 
 Derivation: _\*gástiz_ > _ġiest_ (regular).
 
@@ -4556,8 +4556,8 @@ West Saxon _ġiest_ 'guest' is the Old English form here. Anglian _gest_ 'guest'
 
 ## hair — OE _hǣr_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!haer@\ivoeentry{hǣr}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xera@*xḗrą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!haer@\iventry{hǣr}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xera@\iventry{*xḗrą}{}}
 
 Derivation: _\*xḗrą_ > _hǣr_ (regular).
 
@@ -4623,8 +4623,8 @@ Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, a
 
 ## harvest — OE _hierfest_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hierfest@\ivoeentry{hierfest}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xarbistuz@*xárbistuz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hierfest@\iventry{hierfest}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xarbistuz@\iventry{*xárbistuz}{}}
 
 Derivation: _\*xárbistuz_ > _hierfest_ (regular).
 
@@ -4695,8 +4695,8 @@ The Old English form here, _hierfest_, represents the regular native West Saxon 
 
 ## hedge — OE _heġġ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hegg@\ivoeentry{heġġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xagjaz@*xágjaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hegg@\iventry{heġġ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xagjaz@\iventry{*xágjaz}{}}
 
 Derivation: _\*xágjaz_ > _heġġ_ (regular).
 
@@ -4768,8 +4768,8 @@ Standard dictionary spelling is _heċġ_ 'hedge' or _hecg_ 'hedge'. Normalized _
 
 ## helm — OE _helm_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!helm@\ivoeentry{helm}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xelmaz@*xélmaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!helm@\iventry{helm}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xelmaz@\iventry{*xélmaz}{}}
 
 Derivation: _\*xélmaz_ > _helm_ (regular).
 
@@ -4835,8 +4835,8 @@ Comparative _\*helma-_ is headword notation for the helmet cognate set. It shoul
 
 ## help — OE _helpan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!helpan@\ivoeentry{helpan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xelpana@*xélpaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!helpan@\iventry{helpan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xelpana@\iventry{*xélpaną}{}}
 
 Derivation: _\*xélpaną_ > _helpan_ (regular).
 
@@ -4902,8 +4902,8 @@ Noun [_help_]{.iv lang=oe sort=help role=comparison_form source_ref="Germanic/do
 
 ## hind — OE _hind_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hind@\ivoeentry{hind}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xendjo@*xéndjō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hind@\iventry{hind}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xendjo@\iventry{*xéndjō}{}}
 
 Derivation: _\*xéndjō_ > _hind_ (regular).
 
@@ -4971,8 +4971,8 @@ _hindan_ 'from behind, behind' is a different Old English lexeme and does not be
 
 ## hold — OE _healdan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!healdan@\ivoeentry{healdan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xaldana@*xáldaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!healdan@\iventry{healdan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xaldana@\iventry{*xáldaną}{}}
 
 Derivation: _\*xáldaną_ > _healdan_ (regular).
 
@@ -5024,7 +5024,7 @@ Old English form: _healdan_
 
 ### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the verb as a regular _a + lC_ breaking case, with West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2102"} 'hold' opposed to Anglian and Mercian [_haldan_]{.iv lang=oe sort=haldan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2102"} 'hold' [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the verb as a regular _a + lC_ breaking case, with West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2102"} 'hold' opposed to Anglian and Mercian [_haldan_]{.iv lang=oe variety=angl sort=haldan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2102"} 'hold' [@Campbell1959; @RingeTaylor2014].
 
 ### Old English evidence
 
@@ -5036,12 +5036,12 @@ From [xáldaną]{.recon} ‘hold’, Anglo-Frisian brightening first yields a fr
 
 ### Dialect note
 
-West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2114"} 'hold' is the Old English form here. Anglian and Mercian [_haldan_]{.iv lang=oe sort=haldan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2114"} 'hold' are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
+West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2114"} 'hold' is the Old English form here. Anglian and Mercian [_haldan_]{.iv lang=oe variety=angl sort=haldan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2114"} 'hold' are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
 
 ## horn — OE _horn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!horn@\ivoeentry{horn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xurna@*xúrną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!horn@\iventry{horn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xurna@\iventry{*xúrną}{}}
 
 Derivation: _\*xúrną_ > _horn_ (regular).
 
@@ -5106,8 +5106,8 @@ The note's oblique [xurnăn]{.recon} 'horn' belongs to comparative stem backgrou
 
 ## lead — OE _lǣdan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!laedan@\ivoeentry{lǣdan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laidijana@*láidijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!laedan@\iventry{lǣdan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laidijana@\iventry{*láidijaną}{}}
 
 Derivation: _\*láidijaną_ > _lǣdan_ (regular).
 
@@ -5173,8 +5173,8 @@ From [láidijaną]{.recon} ‘lead’, monophthongization of _\*ai_ first gives 
 
 ## learn — OE _liornian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!liornian@\ivoeentry{liornian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@*líznōjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liornian@\iventry{liornian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*líznōjaną}{}}
 
 Derivation: _\*líznōjaną_ > _liornian_ (regular).
 
@@ -5270,9 +5270,9 @@ modeled here from the better-known West Saxon headword.
 
 ## lid — OE _hlid_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hlid@\ivoeentry{hlid}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlida@*xlídą}
-\index[iv]{08on@\ivlangheader{Old Norse}{}!hlitho@hliþó}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlid@\iventry{hlid}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlida@\iventry{*xlídą}{}}
+\index[iv]{08on@\ivlangheader{Old Norse}{}!hlitho@\iventry{hliþó}{}}
 
 Derivation: _\*xlídą_ > _hlid_ (regular).
 
@@ -5335,8 +5335,8 @@ An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative 
 
 ## light — OE _līehtan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!liehtan@\ivoeentry{līehtan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leuxtijana@*léuxtijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liehtan@\iventry{līehtan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leuxtijana@\iventry{*léuxtijaną}{}}
 
 Derivation: _\*léuxtijaną_ > _līehtan_ (regular).
 
@@ -5401,12 +5401,12 @@ From [léuxtijaną]{.recon} 'light', the regular verbal line preserves _\*xt_, p
 
 ### Dialect note
 
-Ringe and Taylor and Campbell distinguish West Saxon [_liehtan_]{.iv lang=oe sort=liehtan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2463"} 'light, illuminate' from Anglian [_lihtan_]{.iv lang=oe sort=lihtan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2463"} 'light, illuminate', while later West Saxon also shows [_lyhtan_]{.iv lang=oe sort=lyhtan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2463"} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor and Campbell distinguish West Saxon [_liehtan_]{.iv lang=oe sort=liehtan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2463"} 'light, illuminate' from Anglian [_lihtan_]{.iv lang=oe variety=angl sort=lihtan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2463"} 'light, illuminate', while later West Saxon also shows [_lyhtan_]{.iv lang=oe variety=lws sort=lyhtan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:2463"} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].
 
 ## linden — OE _lind_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!lind@\ivoeentry{lind}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lindo@*líndō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lind@\iventry{lind}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lindo@\iventry{*líndō}{}}
 
 Derivation: _\*líndō_ > _lind_ (regular).
 
@@ -5471,8 +5471,8 @@ The Old English noun represented here is [_lind_]{.iv lang=oe sort=lind role=com
 
 ## milk — OE _meoloc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!meoloc@\ivoeentry{meoloc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!melukz@*mélukz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!meoloc@\iventry{meoloc}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!melukz@\iventry{*mélukz}{}}
 
 Derivation: _\*mélukz_ > _meoloc_ (regular).
 
@@ -5538,8 +5538,8 @@ Syncopated _meolc_ and Anglian _milc_ belong to the competing leveled tradition 
 
 ## mother — OE _mōder_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!moder@\ivoeentry{mōder}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!moder@*mōdēr}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!moder@\iventry{mōder}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!moder@\iventry{*mōdēr}{}}
 
 Derivation: _\*mōdēr_ > _mōder_ (regular).
 
@@ -5605,8 +5605,8 @@ The note therefore concerns inherited vocalism rather than a different lexeme: _
 
 ## net — OE _nett_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!nett@\ivoeentry{nett}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!natja@*nátją}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nett@\iventry{nett}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!natja@\iventry{*nátją}{}}
 
 Derivation: _\*nátją_ > _nett_ (regular).
 
@@ -5674,8 +5674,8 @@ Spellings in _net_ can therefore be graphic simplifications, but the lexical tar
 
 ## nightmare — OE _mare_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!mare@\ivoeentry{mare}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!maron@*márōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!mare@\iventry{mare}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!maron@\iventry{*márōn}{}}
 
 Derivation: _\*márōn_ > _mare_ (regular).
 
@@ -5743,8 +5743,8 @@ The concept corresponds to an unattested compound [nihtmare]{.recon} ‘nightmar
 
 ## coat — OE _rocc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!rocc@\ivoeentry{rocc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rukkaz@*rúkkaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rocc@\iventry{rocc}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rukkaz@\iventry{*rúkkaz}{}}
 
 Derivation: _\*rúkkaz_ > _rocc_ (regular).
 
@@ -5810,8 +5810,8 @@ This entry concerns the garment noun only. The stone word seen in _stānrocc_ 's
 
 ## sheep — OE _sċēap_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sceap@\ivoeentry{sċēap}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skepa@*skḗpą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceap@\iventry{sċēap}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skepa@\iventry{*skḗpą}{}}
 
 Derivation: _\*skḗpą_ > _sċēap_ (regular).
 
@@ -5878,8 +5878,8 @@ Ringe and Taylor contrast West Saxon _scéap_ 'sheep' with Mercian and Kentish _
 
 ## shilling — OE _sċilling_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!scilling@\ivoeentry{sċilling}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skillingaz@*skíllingaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!scilling@\iventry{sċilling}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skillingaz@\iventry{*skíllingaz}{}}
 
 Derivation: _\*skíllingaz_ > _sċilling_ (regular).
 
@@ -5947,8 +5947,8 @@ Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-lin
 
 ## show — OE _sċēawian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sceawian@\ivoeentry{sċēawian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawojana@*skáwōjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawian@\iventry{sċēawian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawojana@\iventry{*skáwōjaną}{}}
 
 Derivation: _\*skáwōjaną_ > _sċēawian_ (regular).
 
@@ -6019,8 +6019,8 @@ The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_f
 
 ## sleep — OE _slǣpan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!slaepan@\ivoeentry{slǣpan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!slepana@*slḗpaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!slaepan@\iventry{slǣpan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!slepana@\iventry{*slḗpaną}{}}
 
 Derivation: _\*slḗpaną_ > _slǣpan_ (regular).
 
@@ -6087,8 +6087,8 @@ The note concerns lemma type rather than a special derivational problem: this ro
 
 ## smear — OE _smierwan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!smierwan@\ivoeentry{smierwan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!smerwijana@*smérwijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!smierwan@\iventry{smierwan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!smerwijana@\iventry{*smérwijaną}{}}
 
 Derivation: _\*smérwijaną_ > _smierwan_ (regular).
 
@@ -6141,7 +6141,7 @@ Old English form: _smierwan_
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage [smirwijana]{.recon} ‘smear’, from which they derive West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3170"} 'smear', Mercian [_smirwan_]{.iv lang=oe sort=smirwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3170"} 'smear', and Northumbrian _smiriga_ [@RingeTaylor2014]. The derivational input [smérwijaną]{.recon} ‘smear’ therefore represents the Kroonen-aligned PGmc layer, while the later-stage dialect split belongs to a different chronological level.
+Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage [smirwijana]{.recon} ‘smear’, from which they derive West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3170"} 'smear', Mercian [_smirwan_]{.iv lang=oe variety=merc sort=smirwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3170"} 'smear', and Northumbrian _smiriga_ [@RingeTaylor2014]. The derivational input [smérwijaną]{.recon} ‘smear’ therefore represents the Kroonen-aligned PGmc layer, while the later-stage dialect split belongs to a different chronological level.
 
 ### Old English evidence
 
@@ -6149,7 +6149,7 @@ The target represented here is the West Saxon citation form [_smierwan_]{.iv lan
 
 ### Development to Old English
 
-From [smérwijaną]{.recon} ‘smear’, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_. The result is West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3178"} 'smear'. Anglian [_smirwan_]{.iv lang=oe sort=smirwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3178"} 'smear' reflects the well-known failure of breaking in this environment, not a different lexeme [@Campbell1959; @RingeTaylor2014].
+From [smérwijaną]{.recon} ‘smear’, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_. The result is West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3178"} 'smear'. Anglian [_smirwan_]{.iv lang=oe variety=angl sort=smirwan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3178"} 'smear' reflects the well-known failure of breaking in this environment, not a different lexeme [@Campbell1959; @RingeTaylor2014].
 
 ### Dialect note
 
@@ -6157,8 +6157,8 @@ The entry therefore represents the West Saxon member of a broader OE family: [_s
 
 ## span — OE _spannan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!spannan@\ivoeentry{spannan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spannana@*spánnaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spannan@\iventry{spannan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spannana@\iventry{*spánnaną}{}}
 
 Derivation: _\*spánnaną_ > _spannan_ (regular).
 
@@ -6223,8 +6223,8 @@ English _span_ can also reach the noun _spann_ in local lookup material. The for
 
 ## spar — OE _spearra_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!spearra@\ivoeentry{spearra}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparro@*spárrô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spearra@\iventry{spearra}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparro@\iventry{*spárrô}{}}
 
 Derivation: _\*spárrô_ > _spearra_ (regular).
 
@@ -6289,8 +6289,8 @@ This entry concerns the noun [_spearra_]{.iv lang=oe sort=spearra role=compariso
 
 ## still — OE _stillan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!stillan@\ivoeentry{stillan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stellijana@*stéllijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stillan@\iventry{stillan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stellijana@\iventry{*stéllijaną}{}}
 
 Derivation: _\*stéllijaną_ > _stillan_ (regular).
 
@@ -6358,8 +6358,8 @@ The note concerns lexical framing rather than sound law: _stillan_ is the verb r
 
 ## summer — OE _sumer_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sumer@\ivoeentry{sumer}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sumaraz@*súmaraz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sumer@\iventry{sumer}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sumaraz@\iventry{*súmaraz}{}}
 
 Derivation: _\*súmaraz_ > _sumer_ (regular).
 
@@ -6426,8 +6426,8 @@ The entry does not deny [_sumor_]{.iv lang=oe sort=sumor role=comparison_form so
 
 ## sunder — OE _sundrian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sundrian@\ivoeentry{sundrian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sundrojana@*súndrōjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sundrian@\iventry{sundrian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sundrojana@\iventry{*súndrōjaną}{}}
 
 Derivation: _\*súndrōjaną_ > _sundrian_ (regular).
 
@@ -6498,8 +6498,8 @@ The earlier confusion was lexical, not phonological: [_sundor_]{.iv lang=oe sort
 
 ## swallow — OE _swealwe_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!swealwe@\ivoeentry{swealwe}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swalwon@*swálwōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swealwe@\iventry{swealwe}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swalwon@\iventry{*swálwōn}{}}
 
 Derivation: _\*swálwōn_ > _swealwe_ (regular).
 
@@ -6551,7 +6551,7 @@ Old English form: _swealwe_
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the bird name as _\*swalwōn-_, and Ringe and Taylor cite the later West Germanic stage [swalwa]{.recon} ‘swallow’, from which West Saxon [_swealwe_]{.iv lang=oe sort=swealwe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3562"} 'swallow' and Mercian [_swalwe_]{.iv lang=oe sort=swalwe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3562"} 'swallow' develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb _swelgan_.
+Kroonen gives the bird name as _\*swalwōn-_, and Ringe and Taylor cite the later West Germanic stage [swalwa]{.recon} ‘swallow’, from which West Saxon [_swealwe_]{.iv lang=oe sort=swealwe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3562"} 'swallow' and Mercian [_swalwe_]{.iv lang=oe variety=merc sort=swalwe role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:3562"} 'swallow' develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb _swelgan_.
 
 ### Old English evidence
 
@@ -6563,9 +6563,9 @@ From [swálwōn]{.recon} ‘swallow’, brightening yields _\*swælw-_, and brea
 
 ## swine — OE _swīn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!swin@\ivoeentry{swīn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swina@*swī́ną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swina@*swḯną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swin@\iventry{swīn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swina@\iventry{*swī́ną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swina@\iventry{*swḯną}{}}
 
 Derivation: citation reconstruction _\*swī́ną_; form followed here _\*swī́ną_ > _swīn_ (regular).
 
@@ -6628,8 +6628,8 @@ The derivational input writes stressed long _ī_ as _\*ī́_, so comparative [sw
 
 ## think — OE _þenċan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!thencan@\ivoeentry{þenċan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thankijana@*θánkijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thencan@\iventry{þenċan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thankijana@\iventry{*θánkijaną}{}}
 
 Derivation: _\*θánkijaną_ > _þenċan_ (regular).
 
@@ -6698,8 +6698,8 @@ Campbell's assibilation discussion uses the same verb _þencan_ 'think'; the cla
 
 ## thorn — OE _þorn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!thorn@\ivoeentry{þorn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thurnaz@*θúrnaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thorn@\iventry{þorn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thurnaz@\iventry{*θúrnaz}{}}
 
 Derivation: _\*θúrnaz_ > _þorn_ (regular).
 
@@ -6765,9 +6765,9 @@ The comparative sources preserve more than one stem formation, but the Old Engli
 
 ## tide — OE _tīd_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!tid@\ivoeentry{tīd}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tidiz@*tī́diz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tidiz@*tḯdiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tid@\iventry{tīd}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tidiz@\iventry{*tī́diz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tidiz@\iventry{*tḯdiz}{}}
 
 Derivation: citation reconstruction _\*tī́diz_; form followed here _\*tī́diz_ > _tīd_ (regular).
 
@@ -6832,8 +6832,8 @@ English *tide* can also lead to the separate weak verb _tīdan_ 'happen'; the no
 
 ## token — OE _tācn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!tacn@\ivoeentry{tācn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!taikna@*táikną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tacn@\iventry{tācn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!taikna@\iventry{*táikną}{}}
 
 Derivation: _\*táikną_ > _tācn_ (regular).
 
@@ -6898,8 +6898,8 @@ _tācn_ 'token' is the attested unbroken citation form selected here. Later West
 
 ## town — OE _tūn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!tun@\ivoeentry{tūn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tuna@*tūną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tun@\iventry{tūn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tuna@\iventry{*tūną}{}}
 
 Derivation: _\*tūną_ > _tūn_ (regular).
 
@@ -6962,8 +6962,8 @@ The comparative headwords vary, but the Old English target here is the direct ci
 
 ## wade — OE _wadan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!wadan@\ivoeentry{wadan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wadana@*wádaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wadan@\iventry{wadan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wadana@\iventry{*wádaną}{}}
 
 Derivation: _\*wádaną_ > _wadan_ (regular).
 
@@ -7030,8 +7030,8 @@ The infinitive belongs to the A-restoration class. The citation form is therefor
 
 ## warp — OE _weorpan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!weorpan@\ivoeentry{weorpan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!werpana@*wérpaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weorpan@\iventry{weorpan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!werpana@\iventry{*wérpaną}{}}
 
 Derivation: _\*wérpaną_ > _weorpan_ (regular).
 
@@ -7097,8 +7097,8 @@ English *warp* also points to related _wearp_ material. The target is the infini
 
 ## wash — OE _wascan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!wascan@\ivoeentry{wascan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waskana@*wáskaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wascan@\iventry{wascan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waskana@\iventry{*wáskaną}{}}
 
 Derivation: _\*wáskaną_ > _wascan_ (regular).
 
@@ -7165,8 +7165,8 @@ The conservative citation form _wascan_ 'wash' is selected here. Spellings such 
 
 ## wax — OE _weaxan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!weaxan@\ivoeentry{weaxan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waxsana@*wáxsaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weaxan@\iventry{weaxan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waxsana@\iventry{*wáxsaną}{}}
 
 Derivation: _\*wáxsaną_ > _weaxan_ (regular).
 
@@ -7234,8 +7234,8 @@ The target here is the infinitive _weaxan_ 'wax'. Noun _weax_ 'wax' and preterit
 
 ## way — OE _weġ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!weg@\ivoeentry{weġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wegaz@*wégaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weg@\iventry{weġ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wegaz@\iventry{*wégaz}{}}
 
 Derivation: _\*wégaz_ > _weġ_ (regular).
 
@@ -7301,8 +7301,8 @@ Normalized _weġ_ 'way' and dictionary _weg_ 'way' represent the same noun. No O
 
 ## weapon — OE _wǣpn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!waepn@\ivoeentry{wǣpn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wepna@*wḗpną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waepn@\iventry{wǣpn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wepna@\iventry{*wḗpną}{}}
 
 Derivation: _\*wḗpną_ > _wǣpn_ (regular).
 
@@ -7376,8 +7376,8 @@ remains the regular unbroken oblique comparator
 
 ## will — OE _willa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!willa@\ivoeentry{willa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!weljo@*wéljô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!willa@\iventry{willa}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!weljo@\iventry{*wéljô}{}}
 
 Derivation: _\*wéljô_ > _willa_ (regular).
 
@@ -7444,8 +7444,8 @@ The target here is the noun _willa_ 'will, wish'. Related verb [_willan_]{.iv la
 
 ## wind — OE _windan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!windan@\ivoeentry{windan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!windana@*wíndaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!windan@\iventry{windan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!windana@\iventry{*wíndaną}{}}
 
 Derivation: _\*wíndaną_ > _windan_ (regular).
 
@@ -7510,8 +7510,8 @@ English *wind* also names the noun. This row represents the class-III verb, not 
 
 ## wold — OE _weald_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!weald@\ivoeentry{weald}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!walthuz@*wálθuz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weald@\iventry{weald}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!walthuz@\iventry{*wálθuz}{}}
 
 Derivation: _\*wálθuz_ > _weald_ (regular).
 
@@ -7568,7 +7568,7 @@ Kroonen reconstructs the noun as _\*walþu-_ and gives OE [_weald_]{.iv lang=oe 
 
 ### Old English evidence
 
-Clark Hall makes [_weald_]{.iv lang=oe sort=weald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'forest, woodland' the main noun headword and cross-refers [_wald_]{.iv lang=oe sort=wald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'forest' and [_wold_]{.iv lang=oe sort=wold role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'plain, open country' to it [@ClarkHall1960]. The Anglian-looking [_wald_]{.iv lang=oe sort=wald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'forest' therefore remains variant background rather than the main target.
+Clark Hall makes [_weald_]{.iv lang=oe sort=weald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'forest, woodland' the main noun headword and cross-refers [_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'forest' and [_wold_]{.iv lang=oe sort=wold role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'plain, open country' to it [@ClarkHall1960]. The Anglian-looking [_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4532"} 'forest' therefore remains variant background rather than the main target.
 
 ### Development to Old English
 
@@ -7576,12 +7576,12 @@ _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking 
 
 ### Dialect note
 
-[_wald_]{.iv lang=oe sort=wald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4540"} 'forest' survives as an Anglian-type variant in the same family. The Old English form here is normalized [_weald_]{.iv lang=oe sort=weald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4540"} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].
+[_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4540"} 'forest' survives as an Anglian-type variant in the same family. The Old English form here is normalized [_weald_]{.iv lang=oe sort=weald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4540"} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].
 
 ## yarn — OE _ġearn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!gearn@\ivoeentry{ġearn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!garna@*gárną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gearn@\iventry{ġearn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!garna@\iventry{*gárną}{}}
 
 Derivation: _\*gárną_ > _ġearn_ (regular).
 
@@ -7655,9 +7655,9 @@ away.
 
 ## cud — OE _cwedu_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!cwedu@\ivoeentry{cwedu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kweduz@*kwéðuz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kwithuz@*kwíθuz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cwedu@\iventry{cwedu}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kweduz@\iventry{*kwéðuz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kwithuz@\iventry{*kwíθuz}{}}
 
 Derivation: citation reconstruction _\*kwíθuz_; form followed here _\*kwéðuz_ > _cwedu_ (attested variant).
 
@@ -7717,7 +7717,7 @@ variant [_cwedu_]{.iv lang=oe sort=cwedu role=target_form source_ref="Germanic/d
 
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4673"} 'cud' > [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4673"} 'cud' > [_cudu_]{.iv lang=oe sort=cudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4673"} 'cud' and also
-note late West Saxon [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud'; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud', [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud', and [_cudu_]{.iv lang=oe sort=cudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud'
+note late West Saxon [_cweodu_]{.iv lang=oe variety=lws sort=cweodu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud'; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud', [_cweodu_]{.iv lang=oe variety=lws sort=cweodu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud', and [_cudu_]{.iv lang=oe sort=cudu role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4674"} 'cud'
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested _cwedu_ 'cud' is treated here
 as the
 conservative variant within that set.
@@ -7741,8 +7741,8 @@ input.
 
 ## ten — OE _tēon_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!teon@\ivoeentry{tēon}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!texun@*téxun}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!teon@\iventry{tēon}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!texun@\iventry{*téxun}{}}
 
 Derivation: _\*téxun_ > _tēon_ (attested variant).
 
@@ -7826,8 +7826,8 @@ from the attested simplex variants.
 
 ## three — OE _þrīe_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!thrie@\ivoeentry{þrīe}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!threjez@*θréjez}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thrie@\iventry{þrīe}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!threjez@\iventry{*θréjez}{}}
 
 Derivation: _\*θréjez_ > _þrīe_ (attested variant).
 
@@ -7918,8 +7918,8 @@ the later reduced form and from the rest of the numeral paradigm.
 
 ## wasp — OE _wæfs_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!waefs@\ivoeentry{wæfs}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wabsaz@*wábsaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waefs@\iventry{wæfs}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wabsaz@\iventry{*wábsaz}{}}
 
 Derivation: _\*wábsaz_ > _wæfs_ (attested variant).
 
@@ -7977,7 +7977,7 @@ form.
 
 Fulk presents the Old English forms together as [_wæfs_]{.iv lang=oe sort=waefs role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4923"} 'wasp' with variants [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4923"} 'wasp' and
 [_wæps_]{.iv lang=oe sort=waeps role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4924"} 'wasp' [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
-explicit by deriving later _wæps_ and late West Saxon [_wasp_]{.iv lang=oe sort=wasp role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4925"} 'wasp' from earlier
+explicit by deriving later _wæps_ and late West Saxon [_wasp_]{.iv lang=oe variety=lws sort=wasp role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:4925"} 'wasp' from earlier
 _waefs_ / _wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 
@@ -8025,9 +8025,9 @@ the successful output.
 
 ## bottom — OE _botm_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!botm@\ivoeentry{botm}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!budmaz@*búdmaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!buttmaz@*búttmaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!botm@\iventry{botm}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!budmaz@\iventry{*búdmaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!buttmaz@\iventry{*búttmaz}{}}
 
 Derivation: citation reconstruction _\*búdmaz_; form followed here _\*búttmaz_ > _botm_ (early analogy).
 
@@ -8104,9 +8104,9 @@ among Old English paradigm cells.
 
 ## brand — OE _brandes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!brandes@\ivoeentry{brandes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brandas@*brándas}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brandaz@*brándaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brandes@\iventry{brandes}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brandas@\iventry{*brándas}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brandaz@\iventry{*brándaz}{}}
 
 Derivation: citation reconstruction _\*brándaz_; form followed here _\*brándas_ > _brandes_ (early analogy).
 
@@ -8199,9 +8199,9 @@ though the citation lemma remains the nominative singular.
 
 ## breast — OE _brēost_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!breost@\ivoeentry{brēost}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!breusta@*bréustą}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brustz@*brústz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!breost@\iventry{brēost}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!breusta@\iventry{*bréustą}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brustz@\iventry{*brústz}{}}
 
 Derivation: citation reconstruction _\*brústz_; form followed here _\*bréustą_ > _brēost_ (early analogy).
 
@@ -8294,9 +8294,9 @@ outcome of the thematic [_\*breusta-_]{.iv lang=pgmc sort=breusta role=source_pr
 
 ## craft — OE _cræft_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!craeft@\ivoeentry{cræft}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftaz@*kráftaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftiz@*kráftiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!craeft@\iventry{cræft}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftaz@\iventry{*kráftaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftiz@\iventry{*kráftiz}{}}
 
 Derivation: citation reconstruction _\*kráftiz_; form followed here _\*kráftaz_ > _cræft_ (early analogy).
 
@@ -8379,9 +8379,9 @@ the u-stem comparator.
 
 ## dill — OE _dile_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!dile@\ivoeentry{dile}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!deliz@*déliz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!deljaz@*déljaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!dile@\iventry{dile}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!deliz@\iventry{*déliz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!deljaz@\iventry{*déljaz}{}}
 
 Derivation: citation reconstruction _\*déljaz_; form followed here _\*déliz_ > _dile_ (early analogy).
 
@@ -8477,9 +8477,9 @@ formation rather than with the continental ja-stem branch.
 
 ## fast — OE _festan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!festan@\ivoeentry{festan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fastena@*fastēną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fastijana@*fástijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!festan@\iventry{festan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fastena@\iventry{*fastēną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fastijana@\iventry{*fástijaną}{}}
 
 Derivation: citation reconstruction _\*fastēną_; form followed here _\*fástijaną_ > _festan_ (early analogy).
 
@@ -8580,9 +8580,9 @@ later analogical layer.
 
 ## flask — OE _flasce_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!flasce@\ivoeentry{flasce}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@*flaskō}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@*fláskōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@\iventry{*flaskō}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
 
 Derivation: citation reconstruction _\*flaskō_; form followed here _\*fláskōn_ > _flasce_ (early analogy).
 
@@ -8680,9 +8680,9 @@ with attested [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Ge
 
 ## follow — OE _fylġan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fylgan@\ivoeentry{fylġan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgena@*fulgēną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgijana@*fúlgijaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fylgan@\iventry{fylġan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgena@\iventry{*fulgēną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgijana@\iventry{*fúlgijaną}{}}
 
 Derivation: citation reconstruction _\*fulgēną_; form followed here _\*fúlgijaną_ > _fylġan_ (early analogy).
 
@@ -8792,9 +8792,9 @@ belongs to the parallel class-II branch.
 
 ## gall — OE _ġealla_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!gealla@\ivoeentry{ġealla}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!galla@*gállą}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gallo@*gállô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gealla@\iventry{ġealla}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!galla@\iventry{*gállą}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gallo@\iventry{*gállô}{}}
 
 Derivation: citation reconstruction _\*gállą_; form followed here _\*gállô_ > _ġealla_ (early analogy).
 
@@ -8861,7 +8861,7 @@ dative [_geallan_]{.iv lang=oe sort=geallan role=comparison_form source_ref="Ger
 [_ġealla_]{.iv lang=oe sort=gealla role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5770"} 'gall' uses ġ for the palatal consonant.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
-[_gealla_]{.iv lang=oe sort=gealla role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5773"} 'gall' with Anglian [_galla_]{.iv lang=oe sort=galla role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5773"} 'gall' [@Campbell1959, §486]. The target of this entry is the
+[_gealla_]{.iv lang=oe sort=gealla role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5773"} 'gall' with Anglian [_galla_]{.iv lang=oe variety=angl sort=galla role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5773"} 'gall' [@Campbell1959, §486]. The target of this entry is the
 West Saxon type [_ġealla_]{.iv lang=oe sort=gealla role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5774"} 'gall'.
 
 ### Development to Old English
@@ -8884,7 +8884,7 @@ from the weak noun formation actually reflected in Old English.
 | :--- | :--- | :--- | :--- | :--- |
 | broader family label | [_\*gállą_]{.iv lang=pgmc sort=galla role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5794"} | broader cognate-set headword | wider family context | useful lexeme label, but not the direct source of _ġealla_ |
 | selected weak noun | [_\*gállô_]{.iv lang=pgmc sort=gallo role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5795"} | regular output: [_ġealla_]{.iv lang=oe sort=gealla role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5795"} 'gall' | [_ġealla_]{.iv lang=oe sort=gealla role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5795"} 'gall' | exact match between formation and attested OE noun |
-| dialectal Anglian continuation | weak noun branch | Anglian [_galla_]{.iv lang=oe sort=galla role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5796"} 'gall' type | [_galla_]{.iv lang=oe sort=galla role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5796"} 'gall' | genuine OE variant, but not the West Saxon form used here |
+| dialectal Anglian continuation | weak noun branch | Anglian [_galla_]{.iv lang=oe variety=angl sort=galla role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5796"} 'gall' type | [_galla_]{.iv lang=oe variety=angl sort=galla role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:5796"} 'gall' | genuine OE variant, but not the West Saxon form used here |
 
 The weak-noun stem class is the relevant point. It gives a direct route to
 attested _ġealla_ 'gall', while the broader comparative label serves only as a family
@@ -8892,9 +8892,9 @@ heading.
 
 ## knight — OE _cniht_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!cniht@\ivoeentry{cniht}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knextaz@*knéxtaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knixtaz@*kníxtaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cniht@\iventry{cniht}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knextaz@\iventry{*knéxtaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knixtaz@\iventry{*kníxtaz}{}}
 
 Derivation: citation reconstruction _\*kníxtaz_; form followed here _\*knéxtaz_ > _cniht_ (early analogy).
 
@@ -8986,9 +8986,9 @@ input from a competing citation reconstruction.
 
 ## lade — OE _hladan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hladan@\ivoeentry{hladan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lathojana@*laθōjaną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xladana@*xláðaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hladan@\iventry{hladan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lathojana@\iventry{*laθōjaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xladana@\iventry{*xláðaną}{}}
 
 Derivation: citation reconstruction _\*laθōjaną_; form followed here _\*xláðaną_ > _hladan_ (early analogy).
 
@@ -9080,9 +9080,9 @@ from the strong verb actually reflected in Old English.
 
 ## lap — OE _lappa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!lappa@\ivoeentry{lappa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!labbaz@*lábbaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lappo@*láppô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lappa@\iventry{lappa}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!labbaz@\iventry{*lábbaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lappo@\iventry{*láppô}{}}
 
 Derivation: citation reconstruction _\*lábbaz_; form followed here _\*láppô_ > _lappa_ (early analogy).
 
@@ -9173,9 +9173,9 @@ a competing voiced comparative label.
 
 ## laugh — OE _hliehhan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hliehhan@\ivoeentry{hliehhan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lakana@*lákaną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlaxjana@*xláxjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hliehhan@\iventry{hliehhan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lakana@\iventry{*lákaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlaxjana@\iventry{*xláxjaną}{}}
 
 Derivation: citation reconstruction _\*lákaną_; form followed here _\*xláxjaną_ > _hliehhan_ (early analogy).
 
@@ -9272,9 +9272,9 @@ the j-present branch actually reflected in Old English.
 
 ## loam — OE _lām_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!lam@\ivoeentry{lām}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laima@*láimą}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laimon@*laimōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lam@\iventry{lām}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laima@\iventry{*láimą}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laimon@\iventry{*laimōn}{}}
 
 Derivation: citation reconstruction _\*laimōn_; form followed here _\*láimą_ > _lām_ (early analogy).
 
@@ -9359,9 +9359,9 @@ OE-facing stem class used to derive the attested noun.
 
 ## lung — OE _lungen_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!lungen@\ivoeentry{lungen}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lunganjo@*lúnganjō}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lungo@*lungō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lungen@\iventry{lungen}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lunganjo@\iventry{*lúnganjō}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lungo@\iventry{*lungō}{}}
 
 Derivation: citation reconstruction _\*lungō_; form followed here _\*lúnganjō_ > _lungen_ (early analogy).
 
@@ -9455,9 +9455,9 @@ feminine formation reflected in Old English.
 
 ## navel — OE _nafola_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!nafola@\ivoeentry{nafola}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nablo@*nablô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nabulo@*nábulô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nafola@\iventry{nafola}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nablo@\iventry{*nablô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nabulo@\iventry{*nábulô}{}}
 
 Derivation: citation reconstruction _\*nablô_; form followed here _\*nábulô_ > _nafola_ (early analogy).
 
@@ -9553,9 +9553,9 @@ the pre-syncope input and from the later OE spellings.
 
 ## neck — OE _hnecca_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hnecca@\ivoeentry{hnecca}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnakkaz@*xnákkaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnekko@*xnékkô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hnecca@\iventry{hnecca}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnakkaz@\iventry{*xnákkaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnekko@\iventry{*xnékkô}{}}
 
 Derivation: citation reconstruction _\*xnákkaz_; form followed here _\*xnékkô_ > _hnecca_ (early analogy).
 
@@ -9644,9 +9644,9 @@ selected e-grade Old English branch.
 
 ## needle — OE _nǣdl_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!naedl@\ivoeentry{nǣdl}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedlo@*nḗðlō}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nethlo@*nḗθlō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naedl@\iventry{nǣdl}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedlo@\iventry{*nḗðlō}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nethlo@\iventry{*nḗθlō}{}}
 
 Derivation: citation reconstruction _\*nḗθlō_; form followed here _\*nḗðlō_ > _nǣdl_ (early analogy).
 
@@ -9740,9 +9740,9 @@ the voiced alternant used for Old English.
 
 ## nose — OE _nosu_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!nosu@\ivoeentry{nosu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naso@*nasō}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nuso@*núsō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nosu@\iventry{nosu}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naso@\iventry{*nasō}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nuso@\iventry{*núsō}{}}
 
 Derivation: citation reconstruction _\*nasō_; form followed here _\*núsō_ > _nosu_ (early analogy).
 
@@ -9833,9 +9833,9 @@ from the remodeled zero-grade input that yields the Old English form.
 
 ## sap — OE _sæp_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!saep@\ivoeentry{sæp}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapa@*sápą}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapon@*sapōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!saep@\iventry{sæp}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapa@\iventry{*sápą}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapon@\iventry{*sapōn}{}}
 
 Derivation: citation reconstruction _\*sapōn_; form followed here _\*sápą_ > _sæp_ (early analogy).
 
@@ -9925,9 +9925,9 @@ from the Old English-facing input.
 
 ## sea — OE _sǣ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sae@\ivoeentry{sǣ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sai@*sái}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!saiwiz@*sáiwiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sae@\iventry{sǣ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sai@\iventry{*sái}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!saiwiz@\iventry{*sáiwiz}{}}
 
 Derivation: citation reconstruction _\*sái_; form followed here _\*sáiwiz_ > _sǣ_ (early analogy).
 
@@ -10016,9 +10016,9 @@ headword from the fuller i-stem input that yields the Old English form.
 
 ## sieve — OE _sife_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sife@\ivoeentry{sife}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibaz@*síbaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibi@*síbi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sife@\iventry{sife}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibaz@\iventry{*síbaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibi@\iventry{*síbi}{}}
 
 Derivation: citation reconstruction _\*síbaz_; form followed here _\*síbi_ > _sife_ (early analogy).
 
@@ -10104,9 +10104,9 @@ its rejected competitors.
 
 ## spare — OE _sparian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sparian@\ivoeentry{sparian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparena@*sparēną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparojana@*spárōjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sparian@\iventry{sparian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparena@\iventry{*sparēną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparojana@\iventry{*spárōjaną}{}}
 
 Derivation: citation reconstruction _\*sparēną_; form followed here _\*spárōjaną_ > _sparian_ (early analogy).
 
@@ -10175,7 +10175,7 @@ Campbell says that [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/doc
 characteristics, but the Ritual forms, normalized here as [_spæria_]{.iv lang=oe sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7028"} 'spare', [_spær_]{.iv lang=oe sort=spaer source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7028"} 'spare', and
 [_spærede_]{.iv lang=oe sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7029"} 'spare', together with Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7029"} 'spare', point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
-Northumbrian [_spæria_]{.iv lang=oe sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7031"} 'spare', [_spærede_]{.iv lang=oe sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7031"} 'spare' beside common Old English [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7031"} 'spare' and
+Northumbrian [_spæria_]{.iv lang=oe variety=north sort=spaeria source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7031"} 'spare', [_spærede_]{.iv lang=oe variety=north sort=spaerede source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7031"} 'spare' beside common Old English [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7031"} 'spare' and
 Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7032"} 'spare' [@SieversBrunner1965, §364 Anm. 11]. The citation
 form treated here is [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7033"} 'spare'; the Anglian forms are relics of the older
 formation, not alternative headwords of equal status.
@@ -10203,9 +10203,9 @@ with the refashioned class-II one that yields the citation verb.
 
 ## staff — OE _stæf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!staef@\ivoeentry{stæf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stabaz@*stábaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stabiz@*stábiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!staef@\iventry{stæf}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stabaz@\iventry{*stábaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stabiz@\iventry{*stábiz}{}}
 
 Derivation: citation reconstruction _\*stábiz_; form followed here _\*stábaz_ > _stæf_ (early analogy).
 
@@ -10292,9 +10292,9 @@ selected a-stem input.
 
 ## swan — OE _swanes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!swanes@\ivoeentry{swanes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanas@*swánas}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanaz@*swánaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swanes@\iventry{swanes}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanas@\iventry{*swánas}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanaz@\iventry{*swánaz}{}}
 
 Derivation: citation reconstruction _\*swánaz_; form followed here _\*swánas_ > _swanes_ (early analogy).
 
@@ -10378,11 +10378,11 @@ selected inflected cell.
 
 ## thousand — OE _þūsend_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!aerende@\ivoeentry{ærende}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{}!thusend@\ivoeentry{þūsend}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@*θūs-èndi}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@*θūsèndi}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusundi@*θūs-undī}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!aerende@\iventry{ærende}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thusend@\iventry{þūsend}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@\iventry{*θūs-èndi}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@\iventry{*θūsèndi}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusundi@\iventry{*θūs-undī}{}}
 
 Derivation: citation reconstruction _\*θūs-undī_; form followed here _\*θūs-èndi_ > _þūsend_ (early analogy).
 
@@ -10482,9 +10482,9 @@ interpretive account of the second-syllable vowel.
 
 ## timber — OE _timber_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!timber@\ivoeentry{timber}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timbra@*tímbrą}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timra@*tímrą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!timber@\iventry{timber}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timbra@\iventry{*tímbrą}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timra@\iventry{*tímrą}{}}
 
 Derivation: citation reconstruction _\*tímrą_; form followed here _\*tímbrą_ > _timber_ (early analogy).
 
@@ -10564,9 +10564,9 @@ OE-facing consonantal input.
 
 ## wake — OE _wacan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!wacan@\ivoeentry{wacan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakana@*wákaną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakena@*wakēną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wacan@\iventry{wacan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakana@\iventry{*wákaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakena@\iventry{*wakēną}{}}
 
 Derivation: citation reconstruction _\*wakēną_; form followed here _\*wákaną_ > _wacan_ (early analogy).
 
@@ -10655,9 +10655,9 @@ The comparison below sets the relevant forms side by side. It separates the stro
 
 ## water — OE _wæter_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!waeter@\ivoeentry{wæter}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!watna@*wátną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wator@*wátōr}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waeter@\iventry{wæter}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!watna@\iventry{*wátną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wator@\iventry{*wátōr}{}}
 
 Derivation: citation reconstruction _\*wátną_; form followed here _\*wátōr_ > _wæter_ (early analogy).
 
@@ -10745,9 +10745,9 @@ the singular input that matches the Old English citation form.
 
 ## whale — OE _hwæl_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hwael@\ivoeentry{hwæl}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!walaz@*wálaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwalaz@*xwálaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwael@\iventry{hwæl}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!walaz@\iventry{*wálaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwalaz@\iventry{*xwálaz}{}}
 
 Derivation: citation reconstruction _\*wálaz_; form followed here _\*xwálaz_ > _hwæl_ (early analogy).
 
@@ -10839,9 +10839,9 @@ notations from the normalized Old English singular.
 
 ## whine — OE _hwīnan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hwinan@\ivoeentry{hwīnan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wainojana@*wainōjaną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwinana@*xwḯnaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwinan@\iventry{hwīnan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wainojana@\iventry{*wainōjaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwinana@\iventry{*xwḯnaną}{}}
 
 Derivation: citation reconstruction _\*wainōjaną_; form followed here _\*xwī́naną_ > _hwīnan_ (early analogy).
 
@@ -10938,9 +10938,9 @@ that stand behind the inherited Old English forms.
 
 ## withy — OE _wīþiġ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!withig@\ivoeentry{wīþiġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waithiz@*wáiθiz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!withaga@*wḯθagą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!withig@\iventry{wīþiġ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waithiz@\iventry{*wáiθiz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!withaga@\iventry{*wḯθagą}{}}
 
 Derivation: citation reconstruction _\*wáiθiz_; form followed here _\*wī́θagą_ > _wīþiġ_ (early analogy).
 
@@ -11040,10 +11040,10 @@ the Old English-facing formation that actually yields the attested noun.
 
 ## world — OE _weorold_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!weorold@\ivoeentry{weorold}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraaldiz@*wíra-àldiz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@*wír-àldu}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@*wíràldu}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weorold@\iventry{weorold}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraaldiz@\iventry{*wíra-àldiz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@\iventry{*wír-àldu}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@\iventry{*wíràldu}{}}
 
 Derivation: citation reconstruction _\*wíra-àldiz_; form followed here _\*wír-àldu_ > _weorold_ (early analogy).
 
@@ -11111,8 +11111,8 @@ regularly.
 ### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7924"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7924"} 'world', Mercian [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7924"} 'world', Northumbrian
-[_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7925"} 'world', and Kentish [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7925"} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
+Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7924"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7924"} 'world', Mercian [_weoruld_]{.iv lang=oe variety=merc sort=weoruld role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7924"} 'world', Northumbrian
+[_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7925"} 'world', and Kentish [_wiarald_]{.iv lang=oe variety=kent sort=wiarald role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7925"} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7926"} 'world' and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:7926"} 'world'
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
@@ -11148,9 +11148,9 @@ OE-facing stage chosen for the derivation.
 
 ## youth — OE _ġeoguþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!geoguth@\ivoeentry{ġeoguþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunth@*júgunθ}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunthiz@*júgunθiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geoguth@\iventry{ġeoguþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunth@\iventry{*júgunθ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunthiz@\iventry{*júgunθiz}{}}
 
 Derivation: citation reconstruction _\*júgunθiz_; form followed here _\*júgunθ_ > _ġeoguþ_ (early analogy).
 
@@ -11259,9 +11259,9 @@ regular once the proper morphological history has been identified.
 
 ## ban — OE _bannes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!bannes@\ivoeentry{bannes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!banna@*bánną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bannas@*bánnas}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bannes@\iventry{bannes}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!banna@\iventry{*bánną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bannas@\iventry{*bánnas}{}}
 
 Derivation: citation reconstruction _\*bánną_; form followed here _\*bánnas_ > _bannes_ (late analogy).
 
@@ -11345,9 +11345,9 @@ conservative cell used for the entry.
 
 ## berry — OE _berġes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!berges@\ivoeentry{berġes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazja@*bázją}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazjas@*bázjas}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!berges@\iventry{berġes}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazja@\iventry{*bázją}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazjas@\iventry{*bázjas}{}}
 
 Derivation: citation reconstruction _\*bázją_; form followed here _\*bázjas_ > _berġes_ (late analogy).
 
@@ -11431,9 +11431,9 @@ and the genitive singular cell.
 
 ## bow — OE _bēag_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!beag@\ivoeentry{bēag}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baug@*báug}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!beugana@*béuganą}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!beag@\iventry{bēag}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baug@\iventry{*báug}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!beugana@\iventry{*béuganą}{}}
 
 Derivation: citation reconstruction _\*béuganą_; form followed here _\*báug_ > _bēag_ (late analogy).
 
@@ -11534,9 +11534,9 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 ## cow — OE _cȳ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!cy@\ivoeentry{cȳ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!koz@*kōz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kui@*kūi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cy@\iventry{cȳ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!koz@\iventry{*kōz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kui@\iventry{*kūi}{}}
 
 Derivation: citation reconstruction _\*kōz_; form followed here _\*kūi_ > _cȳ_ (late analogy).
 
@@ -11638,9 +11638,9 @@ _\*kū-_ grade spread beyond that one cell.
 
 ## find — OE _fundene_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fundene@\ivoeentry{fundene}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!finthana@*fínθaną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fundano@*fúnðanǭ}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fundene@\iventry{fundene}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!finthana@\iventry{*fínθaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fundano@\iventry{*fúnðanǭ}{}}
 
 Derivation: citation reconstruction _\*fínθaną_; form followed here _\*fúnðanǭ_ > _fundene_ (late analogy).
 
@@ -11737,9 +11737,9 @@ different presentation cell within the same paradigm.
 
 ## fright — OE _fyrhte_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fyrhte@\ivoeentry{fyrhte}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtin@*furxtīn}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtinaz@*fúrxtīnaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyrhte@\iventry{fyrhte}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtin@\iventry{*furxtīn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtinaz@\iventry{*fúrxtīnaz}{}}
 
 Derivation: citation reconstruction _\*furxtīn_; form followed here _\*fúrxtīnaz_ > _fyrhte_ (late analogy).
 
@@ -11841,9 +11841,9 @@ analogical layer.
 
 ## hammer — OE _hameres_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!hameres@\ivoeentry{hameres}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xamaras@*xámaras}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xamaraz@*xámaraz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hameres@\iventry{hameres}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xamaras@\iventry{*xámaras}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xamaraz@\iventry{*xámaraz}{}}
 
 Derivation: citation reconstruction _\*xámaraz_; form followed here _\*xámaras_ > _hameres_ (late analogy).
 
@@ -11933,9 +11933,9 @@ from the less stable citation tradition.
 
 ## have — OE _hæfeþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!haefeth@\ivoeentry{hæfeþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabena@*xabēną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabethi@*xábēθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!haefeth@\iventry{hæfeþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabena@\iventry{*xabēną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabethi@\iventry{*xábēθi}{}}
 
 Derivation: citation reconstruction _\*xabēną_; form followed here _\*xábēθi_ > _hæfeþ_ (late analogy).
 
@@ -12004,7 +12004,7 @@ cleaner comparator for the inherited non-geminating stem.
 ### Old English evidence
 
 The ordinary Old English headword is [_habban_]{.iv lang=oe sort=habban role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8780"} 'have' [@ClarkHall1960, 157].
-Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [_hæfed_]{.iv lang=oe sort=haefed role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8781"} 'has' type,
+Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [_hæfed_]{.iv lang=oe variety=angl sort=haefed role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8781"} 'has' type,
 and the present paradigm therefore shows forms of the _hæf-_ type that support
 the normalized target [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8783"} 'has' [@Campbell1959, §762].
 
@@ -12036,9 +12036,9 @@ form from the regular 3sg present line.
 
 ## heaven — OE _heofon_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!heofon@\ivoeentry{heofon}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemenaz@*xémenaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemonu@*xémonų}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemenaz@\iventry{*xémenaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemonu@\iventry{*xémonų}{}}
 
 Derivation: citation reconstruction _\*xémenaz_; form followed here _\*xémonų_ > _heofon_ (late analogy).
 
@@ -12104,8 +12104,8 @@ northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form sour
 ### Old English evidence
 
 Old English dictionaries record the standard West Saxon noun as [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8876"} 'heaven',
-alongside Anglian or Mercian [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8877"} 'heaven' material [@ClarkHall1960, 188;
-@BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe sort=hefzen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8878"} 'heaven (Mercian)' in the
+alongside Anglian or Mercian [_hefen_]{.iv lang=oe variety=angl sort=hefen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8877"} 'heaven' material [@ClarkHall1960, 188;
+@BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe variety=merc sort=hefzen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8878"} 'heaven (Mercian)' in the
 history of the word [@Campbell1959, §381].
 
 The target of this entry is the West Saxon citation form [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8881"} 'heaven'. Its vowel
@@ -12116,11 +12116,11 @@ line.
 
 From [xémonų]{.iv .recon lang=pgmc sort=xemonu source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8887"} ‘heaven’, the West Saxon line passes through the oblique-stem type
 reflected in northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8888"} ‘heaven’ [@RingeTaylor2014, 324]. Campbell's
-[_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8889"} 'heaven' beside [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8889"} 'heaven' and earlier [_hefzen_]{.iv lang=oe sort=hefzen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8889"} 'heaven (Mercian)' show the later West-Saxon
+[_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8889"} 'heaven' beside [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8889"} 'heaven' and earlier [_hefzen_]{.iv lang=oe variety=merc sort=hefzen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8889"} 'heaven (Mercian)' show the later West-Saxon
 back-mutation and suffix reshaping behind [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8890"} 'heaven'
 [@Campbell1959, §210.1; @Campbell1959, §381].
 
-The front-vocalic nominative line explains the dialectal [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8893"} 'heaven (Mercian)'
+The front-vocalic nominative line explains the dialectal [_hefen_]{.iv lang=oe variety=merc sort=hefen source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8893"} 'heaven (Mercian)'
 type. West Saxon [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8894"} 'heaven' reflects the oblique
 stem that was generalized into the nominative position.
 
@@ -12137,9 +12137,9 @@ line from the oblique stem selected for West Saxon [_heofon_]{.iv lang=oe sort=h
 
 ## live — OE _lifeþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!lifeth@\ivoeentry{lifeþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libena@*libēną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libethi@*líbēθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lifeth@\iventry{lifeþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libena@\iventry{*libēną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libethi@\iventry{*líbēθi}{}}
 
 Derivation: citation reconstruction _\*libēną_; form followed here _\*líbēθi_ > _lifeþ_ (late analogy).
 
@@ -12195,7 +12195,7 @@ Old English form: _lifeþ_
 The inherited verb belongs to the class-III weak family cited by Kroonen under
 _\*libēn-_, reflected in Old English [_libban_]{.iv lang=oe sort=libban role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8962"} 'live' [@Kroonen2013, 336]. Ringe and
 Taylor show that the paradigm also contained a separate 3sg present stem,
-continued in late Northumbrian [_lifed_]{.iv lang=oe sort=lifed role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8964"} 'lives', which they treat as an archaism
+continued in late Northumbrian [_lifed_]{.iv lang=oe variety=north sort=lifed role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8964"} 'lives', which they treat as an archaism
 [@RingeTaylor2014, 364].
 
 The derivational input [líbēθi]{.iv .recon lang=pgmc sort=libethi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:8967"} ‘live’ therefore represents a finite present cell rather
@@ -12233,9 +12233,9 @@ ordinary infinitival and later remodeled lemma lines.
 
 ## man — OE _mannes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!mannes@\ivoeentry{mannes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mannas@*mánnas}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mannaz@*mánnaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!mannes@\iventry{mannes}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mannas@\iventry{*mánnas}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mannaz@\iventry{*mánnaz}{}}
 
 Derivation: citation reconstruction _\*mánnaz_; form followed here _\*mánnas_ > _mannes_ (late analogy).
 
@@ -12326,9 +12326,9 @@ genitive singular.
 
 ## meed — OE _meorde_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!meorde@\ivoeentry{meorde}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdai@*mízdai}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdo@*mizdō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!meorde@\iventry{meorde}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdai@\iventry{*mízdai}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdo@\iventry{*mizdō}{}}
 
 Derivation: citation reconstruction _\*mizdō_; form followed here _\*mízdai_ > _meorde_ (late analogy).
 
@@ -12421,9 +12421,9 @@ the broader lemma history.
 
 ## night — OE _niht_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!niht@\ivoeentry{niht}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naxti@*náxti}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naxtz@*náxtz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!niht@\iventry{niht}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naxti@\iventry{*náxti}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naxtz@\iventry{*náxtz}{}}
 
 Derivation: citation reconstruction _\*náxtz_; form followed here _\*náxti_ > _niht_ (late analogy).
 
@@ -12516,9 +12516,9 @@ attested Old English form.
 
 ## rest — OE _ræste_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!raeste@\ivoeentry{ræste}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@*rastō}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rastoz@*rástōz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!raeste@\iventry{ræste}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@\iventry{*rastō}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rastoz@\iventry{*rástōz}{}}
 
 Derivation: citation reconstruction _\*rastō_; form followed here _\*rástōz_ > _ræste_ (late analogy).
 
@@ -12613,9 +12613,9 @@ from the oblique singular chosen here.
 
 ## shoulder — OE _sċuldrum_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sculdrum@\ivoeentry{sċuldrum}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldramiz@*skúldramiz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldro@*skuldrō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sculdrum@\iventry{sċuldrum}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldramiz@\iventry{*skúldramiz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldro@\iventry{*skuldrō}{}}
 
 Derivation: citation reconstruction _\*skuldrō_; form followed here _\*skúldramiz_ > _sċuldrum_ (late analogy).
 
@@ -12702,9 +12702,9 @@ The dative plural line is decisive because it matches both the output and the pa
 
 ## shove — OE _sċēaf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sceaf@\ivoeentry{sċēaf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skaub@*skáub}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skeubana@*skéubaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceaf@\iventry{sċēaf}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skaub@\iventry{*skáub}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skeubana@\iventry{*skéubaną}{}}
 
 Derivation: citation reconstruction _\*skéubaną_; form followed here _\*skáub_ > _sċēaf_ (late analogy).
 
@@ -12789,9 +12789,9 @@ below is manual.
 
 ## span — OE _spanne_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!spanne@\ivoeentry{spanne}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spannai@*spánnai}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spanno@*spannō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spanne@\iventry{spanne}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spannai@\iventry{*spánnai}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spanno@\iventry{*spannō}{}}
 
 Derivation: citation reconstruction _\*spannō_; form followed here _\*spánnai_ > _spanne_ (late analogy).
 
@@ -12870,9 +12870,9 @@ compared here.
 
 ## thistle — OE _þistles_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!thistles@\ivoeentry{þistles}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thestilaz@*θéstilaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thistilas@*θístilas}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thistles@\iventry{þistles}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thestilaz@\iventry{*θéstilaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thistilas@\iventry{*θístilas}{}}
 
 Derivation: citation reconstruction _\*θéstilaz_; form followed here _\*θístilas_ > _þistles_ (late analogy).
 
@@ -12955,9 +12955,9 @@ and the genitive singular cell.
 
 ## make (iptv.2sg) — OE _maca_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!maca@\ivoeentry{maca}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mako@*mákô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@*makōną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!maca@\iventry{maca}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mako@\iventry{*mákô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@\iventry{*makōną}{}}
 
 Derivation: citation reconstruction _\*makōną_; form followed here _\*mákô_ > _maca_ (late analogy).
 
@@ -13051,9 +13051,9 @@ the Old English form chosen here. The comparison below sets the relevant forms s
 
 ## make (3sg) — OE _macaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!macath@\ivoeentry{macaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@*makōną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makothi@*mákōθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!macath@\iventry{macaþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@\iventry{*makōną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makothi@\iventry{*mákōθi}{}}
 
 Derivation: citation reconstruction _\*makōną_; form followed here _\*mákōθi_ > _macaþ_ (late analogy).
 
@@ -13150,9 +13150,9 @@ make-family lemma and from the companion imperative form.
 
 ## bore (iptv.2sg) — OE _bora_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!bora@\ivoeentry{bora}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!buro@*búrô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burona@*burōną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bora@\iventry{bora}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!buro@\iventry{*búrô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burona@\iventry{*burōną}{}}
 
 Derivation: citation reconstruction _\*burōną_; form followed here _\*búrô_ > _bora_ (late analogy).
 
@@ -13243,9 +13243,9 @@ from the bore-family lemma and from the companion 3sg form.
 
 ## bore (3sg) — OE _boraþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!borath@\ivoeentry{boraþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burona@*burōną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burothi@*búrōθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!borath@\iventry{boraþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burona@\iventry{*burōną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burothi@\iventry{*búrōθi}{}}
 
 Derivation: citation reconstruction _\*burōną_; form followed here _\*búrōθi_ > _boraþ_ (late analogy).
 
@@ -13338,9 +13338,9 @@ bore-family lemma and from the companion imperative form.
 
 ## learn (iptv.2sg) — OE _liorna_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!liorna@\ivoeentry{liorna}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lizno@*líznô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@*liznōjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liorna@\iventry{liorna}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lizno@\iventry{*líznô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*liznōjaną}{}}
 
 Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznô_ > _liorna_ (late analogy).
 
@@ -13427,15 +13427,15 @@ from the learn-family infinitive and from the companion 3sg form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn' | family background, but not the cell compared here |
-| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10145"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10145"} | [_liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10145"} | exact match |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} | Northumbrian [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn' | [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10144"} 'learn' | family background, but not the cell compared here |
+| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10145"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe variety=north sort=liorna role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10145"} | [_liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10145"} | exact match |
 | 3sg present companion | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10146"} | related finite form [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10146"} | [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10146"} | useful control, but not the target |
 
 ## learn (3sg) — OE _liornaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!liornath@\ivoeentry{liornaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@*liznōjaną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznothi@*líznōθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liornath@\iventry{liornaþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*liznōjaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznothi@\iventry{*líznōθi}{}}
 
 Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznōθi_ > _liornaþ_ (late analogy).
 
@@ -13531,15 +13531,15 @@ the learn-family infinitive and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' | family background, but not the cell compared here |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} | Northumbrian [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' | [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10244"} 'learn' | family background, but not the cell compared here |
 | 3sg present | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10245"} | regular output [_liornaþ_]{.iv lang=oe sort=liornath role=regular_output source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10245"} 'learns' | [_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10245"} 'learns' | exact match |
-| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10246"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10246"} | [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10246"} | useful control, but not the target |
+| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10246"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe variety=north sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10246"} | [_liorna_]{.iv lang=oe variety=north sort=liorna role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10246"} | useful control, but not the target |
 
 ## lick (iptv.2sg) — OE _licca_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!licca@\ivoeentry{licca}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likko@*líkkô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkona@*likkōną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!licca@\iventry{licca}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likko@\iventry{*líkkô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkona@\iventry{*likkōną}{}}
 
 Derivation: citation reconstruction _\*likkōną_; form followed here _\*líkkô_ > _licca_ (late analogy).
 
@@ -13612,9 +13612,9 @@ The comparison below sets the relevant forms side by side.
 
 ## lick (3sg) — OE _liccaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!liccath@\ivoeentry{liccaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkona@*likkōną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkothi@*líkkōθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liccath@\iventry{liccaþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkona@\iventry{*likkōną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkothi@\iventry{*líkkōθi}{}}
 
 Derivation: citation reconstruction _\*likkōną_; form followed here _\*líkkōθi_ > _liccaþ_ (late analogy).
 
@@ -13689,12 +13689,12 @@ The comparison below sets the relevant forms side by side.
 
 ## show (iptv.2sg) — OE _sċēawa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sceawa@\ivoeentry{sċēawa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawo@*skáwô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@*skawōną}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!scouwon@scouwōn}
-\index[iv]{10ofris@\ivlangheader{Old Frisian}{}!skawia@skawia}
-\index[iv]{12os@\ivlangheader{Old Saxon}{}!skawon@skawōn}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawa@\iventry{sċēawa}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawo@\iventry{*skáwô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@\iventry{*skawōną}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!scouwon@\iventry{scouwōn}{}}
+\index[iv]{10ofris@\ivlangheader{Old Frisian}{}!skawia@\iventry{skawia}{}}
+\index[iv]{12os@\ivlangheader{Old Saxon}{}!skawon@\iventry{skawōn}{}}
 
 Derivation: citation reconstruction _\*skawōną_; form followed here _\*skáwô_ > _sċēawa_ (late analogy).
 
@@ -13769,9 +13769,9 @@ The comparison below sets the relevant forms side by side.
 
 ## show (3sg) — OE _sċēawaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!sceawath@\ivoeentry{sċēawaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@*skawōną}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawothi@*skáwōθi}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawath@\iventry{sċēawaþ}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@\iventry{*skawōną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawothi@\iventry{*skáwōθi}{}}
 
 Derivation: citation reconstruction _\*skawōną_; form followed here _\*skáwōθi_ > _sċēawaþ_ (late analogy).
 
@@ -13856,9 +13856,9 @@ corresponding evidential burden.
 
 ## knob — OE _\*cnobba_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!cnobba@\ivoeentry{*cnobba}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knubbo@*knúbbô}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knuppaz@*knúppaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cnobba@\iventry{*cnobba}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knubbo@\iventry{*knúbbô}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knuppaz@\iventry{*knúppaz}{}}
 
 Derivation: citation reconstruction _\*knúppaz_; form followed here _\*knúbbô_ > _\*cnobba_ (reconstructed Old English comparator).
 
@@ -13952,9 +13952,9 @@ question rather than a settled point of OE attestation.
 
 ## reek — OE _\*rēac_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!reac@\ivoeentry{*rēac}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukaz@*ráukaz}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukiz@*ráukiz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!reac@\iventry{*rēac}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukaz@\iventry{*ráukaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukiz@\iventry{*ráukiz}{}}
 
 Derivation: citation reconstruction _\*ráukiz_; form followed here _\*ráukaz_ > _\*rēac_ (reconstructed Old English comparator).
 
@@ -14036,8 +14036,8 @@ modelling target, while the former remains philological background.
 
 ## strew — OE _\*strīeġan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!striegan@\ivoeentry{*strīeġan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!strawjana@*stráwjaną}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!striegan@\iventry{*strīeġan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!strawjana@\iventry{*stráwjaną}{}}
 
 Derivation: _\*stráwjaną_ > _\*strīeġan_ (reconstructed Old English comparator).
 
@@ -14101,14 +14101,14 @@ inherited verb, while West Saxon [_streowian_]{.iv lang=oe sort=streowian role=c
 'strew' is remodelled [@RingeTaylor2014, §6.1 n. 27].
 
 Luick groups [strauwjan]{.recon} 'strew' with the same set as _\*hauwja-_ and
-[kauwjan]{.recon} 'chew', yielding Anglian [_strēzan_]{.iv lang=oe sort=strezan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10784"} 'strew' beside West Saxon forms of
+[kauwjan]{.recon} 'chew', yielding Anglian [_strēzan_]{.iv lang=oe variety=angl sort=strezan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10784"} 'strew' beside West Saxon forms of
 the [_hīez_]{.iv lang=oe sort=hiez role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10785"} 'hew', [_ciezan_]{.iv lang=oe sort=ciezan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10785"} 'choose' type [@Luick1914, §98]. Fulk likewise allows an early West
 Saxon [striegan]{.recon} 'strew' directly from Proto-Germanic [straujana]{.recon}
 'strew' [@Fulk2018, §4.10 n. 1].
 
 ### Old English evidence
 
-The attested inherited Old English form is [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10791"} 'strew' in Anglian. The attested
+The attested inherited Old English form is [_strēgan_]{.iv lang=oe variety=angl sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10791"} 'strew' in Anglian. The attested
 West Saxon citation forms are [_strewian_]{.iv lang=oe sort=strewian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10792"} 'strew', [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10792"} 'strew', and [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10792"} 'strew', which
 belong to the remodelled class-II branch [@RingeTaylor2014, §6.1 n. 27;
 @Campbell1959, §753.7].
@@ -14124,7 +14124,7 @@ From [stráwjaną]{.recon} 'strew', the inherited West Saxon line passes through
 [strīejan]{.recon} 'strew' by i-umlaut, with retained/strengthened glide after
 the front diphthong to yield reconstructed [strīeġan]{.recon} 'strew'.
 
-This differs from Anglian [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10807"} 'strew', where smoothing removes the diphthongal
+This differs from Anglian [_strēgan_]{.iv lang=oe variety=angl sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10807"} 'strew', where smoothing removes the diphthongal
 sequence, and from West Saxon [_strewian_]{.iv lang=oe sort=strewian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10808"} 'strew' / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10808"} 'strew' / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10808"} 'strew', where the
 verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 @Campbell1959, §753.7].
@@ -14133,7 +14133,7 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10816"} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
+| [_strēgan_]{.iv lang=oe variety=angl sort=stregan role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10816"} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
 | [strīeġan]{.iv .recon lang=oe sort=striegan role=target_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10817"} 'strew' | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
 | [_strewian_]{.iv lang=oe sort=strewian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10818"} / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10818"} 'strew' / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form source_ref="Germanic/docs/assembly/lexical_volume_alpha_01.md:10818"} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
 
@@ -14148,8 +14148,8 @@ status without pretending that no historical account exists.
 
 ## stem — OE _stefn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!stefn@\ivoeentry{stefn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamnaz@*stámnaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefn@\iventry{stefn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamnaz@\iventry{*stámnaz}{}}
 
 Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regular trace was confidently matched for this entry.
 
@@ -14233,8 +14233,8 @@ The form followed here, _\*stébnō_, used in earlier versions of this entry was
 
 ## fire — OE _fȳre_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fyre@\ivoeentry{fȳre}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furi@*fūri}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyre@\iventry{fȳre}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furi@\iventry{*fūri}{}}
 
 Derivation: _\*fūri_ yields regular _fȳr_; the Old English form here is _fȳre_ (known but unmodelled development).
 
@@ -14331,8 +14331,8 @@ form and from the later analogical surface result.
 
 ## tap — OE _tæppa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!taeppa@\ivoeentry{tæppa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tappo@*táppô}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!taeppa@\iventry{tæppa}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tappo@\iventry{*táppô}{}}
 
 Derivation: _\*táppô_ yields regular _tappa_; the Old English form here is _tæppa_ (known but unmodelled development).
 
@@ -14422,8 +14422,8 @@ mismatch.
 
 ## buck — OE _bucc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!bucc@\ivoeentry{bucc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bukkaz@*búkkaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bucc@\iventry{bucc}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bukkaz@\iventry{*búkkaz}{}}
 
 Derivation: _\*búkkaz_ yields regular _bocc_; the Old English form here is _bucc_ (unexplained exception).
 
@@ -14511,10 +14511,10 @@ paradigm-cell survival.
 
 ## fowl — OE _fugol_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!fugol@\ivoeentry{fugol}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fuglaz@*fúglaz}
-\index[iv]{08on@\ivlangheader{Old Norse}{}!fugl@fugl}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!fogal@fogal}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fugol@\iventry{fugol}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fuglaz@\iventry{*fúglaz}{}}
+\index[iv]{08on@\ivlangheader{Old Norse}{}!fugl@\iventry{fugl}{}}
+\index[iv]{09ohg@\ivlangheader{Old High German}{}!fogal@\iventry{fogal}{}}
 
 Derivation: _\*fúglaz_ yields regular _fogol_; the Old English form here is _fugol_ (unexplained exception).
 
@@ -14620,8 +14620,8 @@ attested _fugol_ 'fowl'.
 
 ## rust — OE _rust_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!rust@\ivoeentry{rust}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rusto@*rústō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rust@\iventry{rust}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rusto@\iventry{*rústō}{}}
 
 Derivation: _\*rústō_ yields regular _rost_; the Old English form here is _rust_ (unexplained exception).
 
@@ -14719,8 +14719,8 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 ## wolf — OE _wulf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!wulf@\ivoeentry{wulf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wulfaz@*wúlfaz}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wulf@\iventry{wulf}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wulfaz@\iventry{*wúlfaz}{}}
 
 Derivation: _\*wúlfaz_ yields regular _wolf_; the Old English form here is _wulf_ (unexplained exception).
 
@@ -14821,8 +14821,8 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 ## wool — OE _wull_
 
-\index[iv]{02oe@\ivlangheader{Old English}{}!wull@\ivoeentry{wull}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wullo@*wúllō}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wull@\iventry{wull}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wullo@\iventry{*wúllō}{}}
 
 Derivation: _\*wúllō_ yields regular _woll_; the Old English form here is _wull_ (unexplained exception).
 

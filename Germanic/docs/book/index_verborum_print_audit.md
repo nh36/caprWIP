@@ -63,7 +63,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1041
+- Unique printed entries: 1061
 - Print anomaly rows: 48
 - Hard print anomalies: 0
 

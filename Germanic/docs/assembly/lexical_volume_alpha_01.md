@@ -2099,7 +2099,7 @@ Old English form: _healdan_
 
 #### Reconstruction and comparative evidence
 
-Campbell and Ringe-Taylor treat the verb as a regular _a + lC_ breaking case, with West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form} 'hold' opposed to Anglian and Mercian [_haldan_]{.iv lang=oe sort=haldan role=comparison_form} 'hold' [@Campbell1959; @RingeTaylor2014].
+Campbell and Ringe-Taylor treat the verb as a regular _a + lC_ breaking case, with West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form} 'hold' opposed to Anglian and Mercian [_haldan_]{.iv lang=oe variety=angl sort=haldan role=comparison_form} 'hold' [@Campbell1959; @RingeTaylor2014].
 
 #### Old English evidence
 
@@ -2111,7 +2111,7 @@ From [xáldaną]{.recon} ‘hold’, Anglo-Frisian brightening first yields a fr
 
 #### Dialect note
 
-West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form} 'hold' is the Old English form here. Anglian and Mercian [_haldan_]{.iv lang=oe sort=haldan role=comparison_form} 'hold' are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
+West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form} 'hold' is the Old English form here. Anglian and Mercian [_haldan_]{.iv lang=oe variety=angl sort=haldan role=comparison_form} 'hold' are genuine non-West-Saxon doublets rather than corrections to that choice [@Campbell1959; @RingeTaylor2014].
 
 ### horn — OE _horn_
 
@@ -2460,7 +2460,7 @@ From [léuxtijaną]{.recon} 'light', the regular verbal line preserves _\*xt_, p
 
 #### Dialect note
 
-Ringe and Taylor and Campbell distinguish West Saxon [_liehtan_]{.iv lang=oe sort=liehtan role=comparison_form} 'light, illuminate' from Anglian [_lihtan_]{.iv lang=oe sort=lihtan role=comparison_form} 'light, illuminate', while later West Saxon also shows [_lyhtan_]{.iv lang=oe sort=lyhtan role=comparison_form} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor and Campbell distinguish West Saxon [_liehtan_]{.iv lang=oe sort=liehtan role=comparison_form} 'light, illuminate' from Anglian [_lihtan_]{.iv lang=oe variety=angl sort=lihtan role=comparison_form} 'light, illuminate', while later West Saxon also shows [_lyhtan_]{.iv lang=oe variety=lws sort=lyhtan role=comparison_form} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].
 
 ### linden — OE _lind_
 
@@ -3167,7 +3167,7 @@ Old English form: _smierwan_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage [smirwijana]{.recon} ‘smear’, from which they derive West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form} 'smear', Mercian [_smirwan_]{.iv lang=oe sort=smirwan role=comparison_form} 'smear', and Northumbrian _smiriga_ [@RingeTaylor2014]. The derivational input [smérwijaną]{.recon} ‘smear’ therefore represents the Kroonen-aligned PGmc layer, while the later-stage dialect split belongs to a different chronological level.
+Kroonen gives the comparative headword as _\*smerwjan-_ [@Kroonen2013]. Ringe and Taylor instead cite a later-stage [smirwijana]{.recon} ‘smear’, from which they derive West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form} 'smear', Mercian [_smirwan_]{.iv lang=oe variety=merc sort=smirwan role=comparison_form} 'smear', and Northumbrian _smiriga_ [@RingeTaylor2014]. The derivational input [smérwijaną]{.recon} ‘smear’ therefore represents the Kroonen-aligned PGmc layer, while the later-stage dialect split belongs to a different chronological level.
 
 #### Old English evidence
 
@@ -3175,7 +3175,7 @@ The target represented here is the West Saxon citation form [_smierwan_]{.iv lan
 
 #### Development to Old English
 
-From [smérwijaną]{.recon} ‘smear’, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_. The result is West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form} 'smear'. Anglian [_smirwan_]{.iv lang=oe sort=smirwan role=comparison_form} 'smear' reflects the well-known failure of breaking in this environment, not a different lexeme [@Campbell1959; @RingeTaylor2014].
+From [smérwijaną]{.recon} ‘smear’, breaking before _r + consonant_ yields _eo_, and later i-umlaut produces _ie_. The result is West Saxon [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form} 'smear'. Anglian [_smirwan_]{.iv lang=oe variety=angl sort=smirwan role=comparison_form} 'smear' reflects the well-known failure of breaking in this environment, not a different lexeme [@Campbell1959; @RingeTaylor2014].
 
 #### Dialect note
 
@@ -3559,7 +3559,7 @@ Old English form: _swealwe_
 
 #### Reconstruction and comparative evidence
 
-Kroonen gives the bird name as _\*swalwōn-_, and Ringe and Taylor cite the later West Germanic stage [swalwa]{.recon} ‘swallow’, from which West Saxon [_swealwe_]{.iv lang=oe sort=swealwe role=comparison_form} 'swallow' and Mercian [_swalwe_]{.iv lang=oe sort=swalwe role=comparison_form} 'swallow' develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb _swelgan_.
+Kroonen gives the bird name as _\*swalwōn-_, and Ringe and Taylor cite the later West Germanic stage [swalwa]{.recon} ‘swallow’, from which West Saxon [_swealwe_]{.iv lang=oe sort=swealwe role=comparison_form} 'swallow' and Mercian [_swalwe_]{.iv lang=oe variety=merc sort=swalwe role=comparison_form} 'swallow' develop [@Kroonen2013, 535; @RingeTaylor2014, 200]. The selected etymological comparison belongs to the swallow-bird family, not to the verb _swelgan_.
 
 #### Old English evidence
 
@@ -4529,7 +4529,7 @@ Kroonen reconstructs the noun as _\*walþu-_ and gives OE [_weald_]{.iv lang=oe 
 
 #### Old English evidence
 
-Clark Hall makes [_weald_]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland' the main noun headword and cross-refers [_wald_]{.iv lang=oe sort=wald role=comparison_form} 'forest' and [_wold_]{.iv lang=oe sort=wold role=comparison_form} 'plain, open country' to it [@ClarkHall1960]. The Anglian-looking [_wald_]{.iv lang=oe sort=wald role=comparison_form} 'forest' therefore remains variant background rather than the main target.
+Clark Hall makes [_weald_]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland' the main noun headword and cross-refers [_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' and [_wold_]{.iv lang=oe sort=wold role=comparison_form} 'plain, open country' to it [@ClarkHall1960]. The Anglian-looking [_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' therefore remains variant background rather than the main target.
 
 #### Development to Old English
 
@@ -4537,7 +4537,7 @@ _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking 
 
 #### Dialect note
 
-[_wald_]{.iv lang=oe sort=wald role=comparison_form} 'forest' survives as an Anglian-type variant in the same family. The Old English form here is normalized [_weald_]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].
+[_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' survives as an Anglian-type variant in the same family. The Old English form here is normalized [_weald_]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].
 
 ### yarn — OE _ġearn_
 
@@ -4671,7 +4671,7 @@ variant [_cwedu_]{.iv lang=oe sort=cwedu role=target_form} 'cud'.
 
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss [_cwidu_]{.iv lang=oe sort=cwidu role=comparison_form} 'cud' > [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form} 'cud' > [_cudu_]{.iv lang=oe sort=cudu role=comparison_form} 'cud' and also
-note late West Saxon [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form} 'cud'; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form} 'cud', [_cweodu_]{.iv lang=oe sort=cweodu role=comparison_form} 'cud', and [_cudu_]{.iv lang=oe sort=cudu role=comparison_form} 'cud'
+note late West Saxon [_cweodu_]{.iv lang=oe variety=lws sort=cweodu role=comparison_form} 'cud'; Clark Hall gives [_cwudu_]{.iv lang=oe sort=cwudu role=comparison_form} 'cud', [_cweodu_]{.iv lang=oe variety=lws sort=cweodu role=comparison_form} 'cud', and [_cudu_]{.iv lang=oe sort=cudu role=comparison_form} 'cud'
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested _cwedu_ 'cud' is treated here
 as the
 conservative variant within that set.
@@ -4922,7 +4922,7 @@ form.
 
 Fulk presents the Old English forms together as [_wæfs_]{.iv lang=oe sort=waefs role=target_form} 'wasp' with variants [_wæsp_]{.iv lang=oe sort=waesp role=comparison_form} 'wasp' and
 [_wæps_]{.iv lang=oe sort=waeps role=comparison_form} 'wasp' [@Fulk2018, §6.5]. Bülbring and Brunner then make the chronology more
-explicit by deriving later _wæps_ and late West Saxon [_wasp_]{.iv lang=oe sort=wasp role=comparison_form} 'wasp' from earlier
+explicit by deriving later _wæps_ and late West Saxon [_wasp_]{.iv lang=oe variety=lws sort=wasp role=comparison_form} 'wasp' from earlier
 _waefs_ / _wæfs_ through restricted metatheses [@Bulbring1902, §484 Anm. 3;
 @SieversBrunner1965, §§193, 204].
 
@@ -5770,7 +5770,7 @@ dative [_geallan_]{.iv lang=oe sort=geallan role=comparison_form} 'gall', confir
 [_ġealla_]{.iv lang=oe sort=gealla role=target_form} 'gall' uses ġ for the palatal consonant.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
-[_gealla_]{.iv lang=oe sort=gealla role=target_form} 'gall' with Anglian [_galla_]{.iv lang=oe sort=galla role=comparison_form} 'gall' [@Campbell1959, §486]. The target of this entry is the
+[_gealla_]{.iv lang=oe sort=gealla role=target_form} 'gall' with Anglian [_galla_]{.iv lang=oe variety=angl sort=galla role=comparison_form} 'gall' [@Campbell1959, §486]. The target of this entry is the
 West Saxon type [_ġealla_]{.iv lang=oe sort=gealla role=target_form} 'gall'.
 
 #### Development to Old English
@@ -5793,7 +5793,7 @@ from the weak noun formation actually reflected in Old English.
 | :--- | :--- | :--- | :--- | :--- |
 | broader family label | [_\*gállą_]{.iv lang=pgmc sort=galla role=source_protoform} | broader cognate-set headword | wider family context | useful lexeme label, but not the direct source of _ġealla_ |
 | selected weak noun | [_\*gállô_]{.iv lang=pgmc sort=gallo role=selected_input} | regular output: [_ġealla_]{.iv lang=oe sort=gealla role=regular_output} 'gall' | [_ġealla_]{.iv lang=oe sort=gealla role=target_form} 'gall' | exact match between formation and attested OE noun |
-| dialectal Anglian continuation | weak noun branch | Anglian [_galla_]{.iv lang=oe sort=galla role=comparison_form} 'gall' type | [_galla_]{.iv lang=oe sort=galla role=comparison_form} 'gall' | genuine OE variant, but not the West Saxon form used here |
+| dialectal Anglian continuation | weak noun branch | Anglian [_galla_]{.iv lang=oe variety=angl sort=galla role=comparison_form} 'gall' type | [_galla_]{.iv lang=oe variety=angl sort=galla role=comparison_form} 'gall' | genuine OE variant, but not the West Saxon form used here |
 
 The weak-noun stem class is the relevant point. It gives a direct route to
 attested _ġealla_ 'gall', while the broader comparative label serves only as a family
@@ -7028,7 +7028,7 @@ Campbell says that [_sparian_]{.iv lang=oe sort=sparian} 'spare' does not show t
 characteristics, but the Ritual forms, normalized here as [_spæria_]{.iv lang=oe sort=spaeria} 'spare', [_spær_]{.iv lang=oe sort=spaer} 'spare', and
 [_spærede_]{.iv lang=oe sort=spaerede} 'spare', together with Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad} 'spare', point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
-Northumbrian [_spæria_]{.iv lang=oe sort=spaeria} 'spare', [_spærede_]{.iv lang=oe sort=spaerede} 'spare' beside common Old English [_sparian_]{.iv lang=oe sort=sparian} 'spare' and
+Northumbrian [_spæria_]{.iv lang=oe variety=north sort=spaeria} 'spare', [_spærede_]{.iv lang=oe variety=north sort=spaerede} 'spare' beside common Old English [_sparian_]{.iv lang=oe sort=sparian} 'spare' and
 Vespasian Psalter [_spearad_]{.iv lang=oe sort=spearad} 'spare' [@SieversBrunner1965, §364 Anm. 11]. The citation
 form treated here is [_sparian_]{.iv lang=oe sort=sparian} 'spare'; the Anglian forms are relics of the older
 formation, not alternative headwords of equal status.
@@ -7921,8 +7921,8 @@ regularly.
 #### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form} 'world', Mercian [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form} 'world', Northumbrian
-[_woruld_]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
+Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form} 'world', Mercian [_weoruld_]{.iv lang=oe variety=merc sort=weoruld role=comparison_form} 'world', Northumbrian
+[_woruld_]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [_wiarald_]{.iv lang=oe variety=kent sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form} 'world' and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form} 'world'
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
@@ -8778,7 +8778,7 @@ cleaner comparator for the inherited non-geminating stem.
 #### Old English evidence
 
 The ordinary Old English headword is [_habban_]{.iv lang=oe sort=habban role=comparison_form} 'have' [@ClarkHall1960, 157].
-Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [_hæfed_]{.iv lang=oe sort=haefed role=comparison_form} 'has' type,
+Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [_hæfed_]{.iv lang=oe variety=angl sort=haefed role=comparison_form} 'has' type,
 and the present paradigm therefore shows forms of the _hæf-_ type that support
 the normalized target [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form} 'has' [@Campbell1959, §762].
 
@@ -8874,8 +8874,8 @@ northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} ‘
 #### Old English evidence
 
 Old English dictionaries record the standard West Saxon noun as [_heofon_]{.iv lang=oe sort=heofon} 'heaven',
-alongside Anglian or Mercian [_hefen_]{.iv lang=oe sort=hefen} 'heaven' material [@ClarkHall1960, 188;
-@BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' in the
+alongside Anglian or Mercian [_hefen_]{.iv lang=oe variety=angl sort=hefen} 'heaven' material [@ClarkHall1960, 188;
+@BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe variety=merc sort=hefzen} 'heaven (Mercian)' in the
 history of the word [@Campbell1959, §381].
 
 The target of this entry is the West Saxon citation form [_heofon_]{.iv lang=oe sort=heofon} 'heaven'. Its vowel
@@ -8886,11 +8886,11 @@ line.
 
 From [xémonų]{.iv .recon lang=pgmc sort=xemonu} ‘heaven’, the West Saxon line passes through the oblique-stem type
 reflected in northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} ‘heaven’ [@RingeTaylor2014, 324]. Campbell's
-[_heofon_]{.iv lang=oe sort=heofon} 'heaven' beside [_hefen_]{.iv lang=oe sort=hefen} 'heaven' and earlier [_hefzen_]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
+[_heofon_]{.iv lang=oe sort=heofon} 'heaven' beside [_hefen_]{.iv lang=oe sort=hefen} 'heaven' and earlier [_hefzen_]{.iv lang=oe variety=merc sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
 back-mutation and suffix reshaping behind [_heofon_]{.iv lang=oe sort=heofon} 'heaven'
 [@Campbell1959, §210.1; @Campbell1959, §381].
 
-The front-vocalic nominative line explains the dialectal [_hefen_]{.iv lang=oe sort=hefen} 'heaven (Mercian)'
+The front-vocalic nominative line explains the dialectal [_hefen_]{.iv lang=oe variety=merc sort=hefen} 'heaven (Mercian)'
 type. West Saxon [_heofon_]{.iv lang=oe sort=heofon} 'heaven' reflects the oblique
 stem that was generalized into the nominative position.
 
@@ -8961,7 +8961,7 @@ Old English form: _lifeþ_
 The inherited verb belongs to the class-III weak family cited by Kroonen under
 _\*libēn-_, reflected in Old English [_libban_]{.iv lang=oe sort=libban role=comparison_form} 'live' [@Kroonen2013, 336]. Ringe and
 Taylor show that the paradigm also contained a separate 3sg present stem,
-continued in late Northumbrian [_lifed_]{.iv lang=oe sort=lifed role=comparison_form} 'lives', which they treat as an archaism
+continued in late Northumbrian [_lifed_]{.iv lang=oe variety=north sort=lifed role=comparison_form} 'lives', which they treat as an archaism
 [@RingeTaylor2014, 364].
 
 The derivational input [líbēθi]{.iv .recon lang=pgmc sort=libethi role=selected_input} ‘live’ therefore represents a finite present cell rather
@@ -10141,8 +10141,8 @@ from the learn-family infinitive and from the companion 3sg form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | family background, but not the cell compared here |
-| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=regular_output} | [_liorna_]{.iv lang=oe sort=liorna role=target_form} | exact match |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | family background, but not the cell compared here |
+| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe variety=north sort=liorna role=regular_output} | [_liorna_]{.iv lang=oe sort=liorna role=target_form} | exact match |
 | 3sg present companion | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=comparison_form} | related finite form [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form} | [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form} | useful control, but not the target |
 
 ### learn (3sg) — OE _liornaþ_
@@ -10241,9 +10241,9 @@ the learn-family infinitive and from the companion imperative form.
 
 | PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | [_liornian_]{.iv lang=oe sort=liornian role=comparison_form} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | family background, but not the cell compared here |
+| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | family background, but not the cell compared here |
 | 3sg present | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input} | regular output [_liornaþ_]{.iv lang=oe sort=liornath role=regular_output} 'learns' | [_liornaþ_]{.iv lang=oe sort=liornath role=target_form} 'learns' | exact match |
-| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe sort=liorna role=comparison_form} | [_liorna_]{.iv lang=oe sort=liorna role=comparison_form} | useful control, but not the target |
+| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe variety=north sort=liorna role=comparison_form} | [_liorna_]{.iv lang=oe variety=north sort=liorna role=comparison_form} | useful control, but not the target |
 
 ### lick (iptv.2sg) — OE _licca_
 
@@ -10781,14 +10781,14 @@ inherited verb, while West Saxon [_streowian_]{.iv lang=oe sort=streowian role=c
 'strew' is remodelled [@RingeTaylor2014, §6.1 n. 27].
 
 Luick groups [strauwjan]{.recon} 'strew' with the same set as _\*hauwja-_ and
-[kauwjan]{.recon} 'chew', yielding Anglian [_strēzan_]{.iv lang=oe sort=strezan role=comparison_form} 'strew' beside West Saxon forms of
+[kauwjan]{.recon} 'chew', yielding Anglian [_strēzan_]{.iv lang=oe variety=angl sort=strezan role=comparison_form} 'strew' beside West Saxon forms of
 the [_hīez_]{.iv lang=oe sort=hiez role=comparison_form} 'hew', [_ciezan_]{.iv lang=oe sort=ciezan role=comparison_form} 'choose' type [@Luick1914, §98]. Fulk likewise allows an early West
 Saxon [striegan]{.recon} 'strew' directly from Proto-Germanic [straujana]{.recon}
 'strew' [@Fulk2018, §4.10 n. 1].
 
 #### Old English evidence
 
-The attested inherited Old English form is [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form} 'strew' in Anglian. The attested
+The attested inherited Old English form is [_strēgan_]{.iv lang=oe variety=angl sort=stregan role=comparison_form} 'strew' in Anglian. The attested
 West Saxon citation forms are [_strewian_]{.iv lang=oe sort=strewian role=comparison_form} 'strew', [_streowian_]{.iv lang=oe sort=streowian role=comparison_form} 'strew', and [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form} 'strew', which
 belong to the remodelled class-II branch [@RingeTaylor2014, §6.1 n. 27;
 @Campbell1959, §753.7].
@@ -10804,7 +10804,7 @@ From [stráwjaną]{.recon} 'strew', the inherited West Saxon line passes through
 [strīejan]{.recon} 'strew' by i-umlaut, with retained/strengthened glide after
 the front diphthong to yield reconstructed [strīeġan]{.recon} 'strew'.
 
-This differs from Anglian [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form} 'strew', where smoothing removes the diphthongal
+This differs from Anglian [_strēgan_]{.iv lang=oe variety=angl sort=stregan role=comparison_form} 'strew', where smoothing removes the diphthongal
 sequence, and from West Saxon [_strewian_]{.iv lang=oe sort=strewian role=comparison_form} 'strew' / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form} 'strew' / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form} 'strew', where the
 verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 @Campbell1959, §753.7].
@@ -10813,7 +10813,7 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [_strēgan_]{.iv lang=oe sort=stregan role=comparison_form} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
+| [_strēgan_]{.iv lang=oe variety=angl sort=stregan role=comparison_form} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
 | [strīeġan]{.iv .recon lang=oe sort=striegan role=target_form} 'strew' | reconstructed West Saxon inherited class-I form; trace-supported | Old English form here |
 | [_strewian_]{.iv lang=oe sort=strewian role=comparison_form} / [_streowian_]{.iv lang=oe sort=streowian role=comparison_form} 'strew' / [_strēawian_]{.iv lang=oe sort=streawian role=comparison_form} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |
 
