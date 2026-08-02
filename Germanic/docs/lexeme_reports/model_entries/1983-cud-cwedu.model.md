@@ -29,7 +29,7 @@ variant [`cwedu`]{.iv lang=oe sort=cwedu role=target_form} 'cud'.
 
 The Old English word survives in a wider variant set than one dictionary
 headword suggests. Ringe and Taylor discuss [`cwidu`]{.iv lang=oe sort=cwidu role=comparison_form} 'cud' > [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud' > [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud' and also
-note late West Saxon [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud'; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud', [`cweodu`]{.iv lang=oe sort=cweodu role=comparison_form} 'cud', and [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud'
+note late West Saxon [`cweodu`]{.iv lang=oe variety=lws sort=cweodu role=comparison_form} 'cud'; Clark Hall gives [`cwudu`]{.iv lang=oe sort=cwudu role=comparison_form} 'cud', [`cweodu`]{.iv lang=oe variety=lws sort=cweodu role=comparison_form} 'cud', and [`cudu`]{.iv lang=oe sort=cudu role=comparison_form} 'cud'
 [@RingeTaylor2014, 338; @ClarkHall1960, 84]. Attested `cwedu` 'cud' is treated here
 as the
 conservative variant within that set.

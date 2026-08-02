@@ -35,7 +35,7 @@ dative [`geallan`]{.iv lang=oe sort=geallan role=comparison_form} 'gall', confir
 [`ġealla`]{.iv lang=oe sort=gealla role=target_form} 'gall' uses ġ for the palatal consonant.
 
 Campbell also notes dialectal variation, contrasting West Saxon or Kentish
-[`gealla`]{.iv lang=oe sort=gealla role=target_form} 'gall' with Anglian [`galla`]{.iv lang=oe sort=galla role=comparison_form} 'gall' [@Campbell1959, §486]. The target of this entry is the
+[`gealla`]{.iv lang=oe sort=gealla role=target_form} 'gall' with Anglian [`galla`]{.iv lang=oe variety=angl sort=galla role=comparison_form} 'gall' [@Campbell1959, §486]. The target of this entry is the
 West Saxon type [`ġealla`]{.iv lang=oe sort=gealla role=target_form} 'gall'.
 
 ### Development to Old English
@@ -58,7 +58,7 @@ from the weak noun formation actually reflected in Old English.
 | :--- | :--- | :--- | :--- | :--- |
 | broader family label | [`*gállą`]{.iv lang=pgmc sort=galla role=source_protoform} | broader cognate-set headword | wider family context | useful lexeme label, but not the direct source of `ġealla` |
 | selected weak noun | [`*gállô`]{.iv lang=pgmc sort=gallo role=selected_input} | compact-trace output: [`ġealla`]{.iv lang=oe sort=gealla role=regular_output} 'gall' | [`ġealla`]{.iv lang=oe sort=gealla role=target_form} 'gall' | exact match between formation and attested OE noun |
-| dialectal Anglian continuation | weak noun branch | Anglian [`galla`]{.iv lang=oe sort=galla role=comparison_form} 'gall' type | [`galla`]{.iv lang=oe sort=galla role=comparison_form} 'gall' | genuine OE variant, but not the selected West Saxon target |
+| dialectal Anglian continuation | weak noun branch | Anglian [`galla`]{.iv lang=oe variety=angl sort=galla role=comparison_form} 'gall' type | [`galla`]{.iv lang=oe variety=angl sort=galla role=comparison_form} 'gall' | genuine OE variant, but not the selected West Saxon target |
 
 The weak-noun stem class is the relevant point. It gives a direct route to
 attested `ġealla` 'gall', while the broader comparative label serves only as a family

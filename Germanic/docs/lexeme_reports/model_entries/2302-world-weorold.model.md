@@ -34,8 +34,8 @@ regularly.
 ### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world', Mercian [`weoruld`]{.iv lang=oe sort=weoruld role=comparison_form} 'world', Northumbrian
-[`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [`wiarald`]{.iv lang=oe sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
+Saxon [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world', Mercian [`weoruld`]{.iv lang=oe variety=merc sort=weoruld role=comparison_form} 'world', Northumbrian
+[`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [`wiarald`]{.iv lang=oe variety=kent sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated [`world`]{.iv lang=oe sort=world role=comparison_form} 'world' and later rounded [`wurold`]{.iv lang=oe sort=wurold role=comparison_form} 'world'
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 

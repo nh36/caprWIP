@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen gives the comparative headword as `*smerwjan-` [@Kroonen2013]. Ringe and Taylor instead cite a later-stage [smirwijana]{.recon} ‘smear’, from which they derive West Saxon [`smierwan`]{.iv lang=oe sort=smierwan role=comparison_form} 'smear', Mercian [`smirwan`]{.iv lang=oe sort=smirwan role=comparison_form} 'smear', and Northumbrian `smiriga` [@RingeTaylor2014]. The selected input [smérwijaną]{.recon} ‘smear’ therefore represents the Kroonen-aligned PGmc layer, while the later-stage dialect split belongs to a different chronological level.
+Kroonen gives the comparative headword as `*smerwjan-` [@Kroonen2013]. Ringe and Taylor instead cite a later-stage [smirwijana]{.recon} ‘smear’, from which they derive West Saxon [`smierwan`]{.iv lang=oe sort=smierwan role=comparison_form} 'smear', Mercian [`smirwan`]{.iv lang=oe variety=merc sort=smirwan role=comparison_form} 'smear', and Northumbrian `smiriga` [@RingeTaylor2014]. The selected input [smérwijaną]{.recon} ‘smear’ therefore represents the Kroonen-aligned PGmc layer, while the later-stage dialect split belongs to a different chronological level.
 
 ### Old English evidence
 
@@ -26,7 +26,7 @@ The target represented here is the West Saxon citation form [`smierwan`]{.iv lan
 
 ### Development to Old English
 
-From [smérwijaną]{.recon} ‘smear’, breaking before `r + consonant` yields `eo`, and later i-umlaut produces `ie`. The result is West Saxon [`smierwan`]{.iv lang=oe sort=smierwan role=comparison_form} 'smear'. Anglian [`smirwan`]{.iv lang=oe sort=smirwan role=comparison_form} 'smear' reflects the well-known failure of breaking in this environment, not a different lexeme [@Campbell1959; @RingeTaylor2014].
+From [smérwijaną]{.recon} ‘smear’, breaking before `r + consonant` yields `eo`, and later i-umlaut produces `ie`. The result is West Saxon [`smierwan`]{.iv lang=oe sort=smierwan role=comparison_form} 'smear'. Anglian [`smirwan`]{.iv lang=oe variety=angl sort=smirwan role=comparison_form} 'smear' reflects the well-known failure of breaking in this environment, not a different lexeme [@Campbell1959; @RingeTaylor2014].
 
 ### Dialect note
 

@@ -30,4 +30,4 @@ From [léuxtijaną]{.recon} 'light', the regular verbal line preserves `*xt`, pa
 
 ### Dialect note
 
-Ringe and Taylor and Campbell distinguish West Saxon [`liehtan`]{.iv lang=oe sort=liehtan role=comparison_form} 'light, illuminate' from Anglian [`lihtan`]{.iv lang=oe sort=lihtan role=comparison_form} 'light, illuminate', while later West Saxon also shows [`lyhtan`]{.iv lang=oe sort=lyhtan role=comparison_form} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].
+Ringe and Taylor and Campbell distinguish West Saxon [`liehtan`]{.iv lang=oe sort=liehtan role=comparison_form} 'light, illuminate' from Anglian [`lihtan`]{.iv lang=oe variety=angl sort=lihtan role=comparison_form} 'light, illuminate', while later West Saxon also shows [`lyhtan`]{.iv lang=oe variety=lws sort=lyhtan role=comparison_form} 'light, illuminate' [@RingeTaylor2014; @Campbell1959].

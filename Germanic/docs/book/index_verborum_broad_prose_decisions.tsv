@@ -34,7 +34,7 @@ defer	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	*dad
 defer	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	*dédiz	pgmc		comparison_form	alternate comparative reconstruction kept as reviewed suggestion
 accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21	*dēdiz	pgmc		source_protoform	cited PGmc citation form
 accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	dæd	oe		comparison_form	attested West Saxon comparison form
-accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	dēd	oe		comparison_form	attested non-West-Saxon comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:25	dēd	oe	angl	comparison_form	attested non-West-Saxon comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	duru	oe		comparison_form	parallel OE reflex from the separate *durō line
 accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	duru	oe		comparison_form	parallel OE reflex in the Old English evidence section
 accept	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	duru	oe		comparison_form	parallel OE reflex retained as comparison in the development prose
@@ -55,7 +55,7 @@ accept	Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25	fe
 accept	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:36	tō-fundennes	oe		comparison_form	attested prefixed OE comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21	fléogan	oe		comparison_form	West Saxon OE comparison form cited in the reconstruction discussion
 accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25	fleogeð	oe		comparison_form	attested OE present comparison form
-accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29	flégan	oe		comparison_form	Anglian OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29	flégan	oe	angl	comparison_form	Anglian OE comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	for-leósan	oe		comparison_form	OE prefixed comparison form in the forlorn-family discussion
 accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	for-lēosan	oe		comparison_form	OE prefixed comparison form in the forlorn-family discussion
 accept	Germanic/docs/lexeme_reports/model_entries/2028-forlorn-lēosan.model.md:21	fra-liusan	goth		comparison_form	Gothic cognate cited in the comparison
@@ -68,8 +68,8 @@ accept	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:36
 accept	Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:36	fyrhtan	oe		comparison_form	attested OE verbal comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:21	*gangaz	pgmc		selected_input	prose explicitly identifies the selected citation-form input
 accept	Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:29	gangan	oe		comparison_form	attested OE comparison form
-accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21	for-geofan	oe		comparison_form	non-West-Saxon OE comparison form
-accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21	geafa	oe		comparison_form	Northumbrian OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21	for-geofan	oe	merc	comparison_form	non-West-Saxon OE comparison form
+accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21	geafa	oe	north	comparison_form	Northumbrian OE comparison form
 accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29	for-geofan	oe		comparison_form	non-West-Saxon OE comparison form in the dialect note
 accept	Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:29	geafa	oe		comparison_form	non-West-Saxon OE comparison form in the dialect note
 accept	Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33	*góldą	preoe		comparison_form	model-stage lowered form in the development chain

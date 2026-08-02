@@ -31,8 +31,8 @@ northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} ‘
 ### Old English evidence
 
 Old English dictionaries record the standard West Saxon noun as [`heofon`]{.iv lang=oe sort=heofon} 'heaven',
-alongside Anglian or Mercian [`hefen`]{.iv lang=oe sort=hefen} 'heaven' material [@ClarkHall1960, 188;
-@BosworthToller1898, 43]. Campbell also cites an earlier stage [`hefzen`]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' in the
+alongside Anglian or Mercian [`hefen`]{.iv lang=oe variety=angl sort=hefen} 'heaven' material [@ClarkHall1960, 188;
+@BosworthToller1898, 43]. Campbell also cites an earlier stage [`hefzen`]{.iv lang=oe variety=merc sort=hefzen} 'heaven (Mercian)' in the
 history of the word [@Campbell1959, §381].
 
 The target of this entry is the West Saxon citation form [`heofon`]{.iv lang=oe sort=heofon} 'heaven'. Its vowel
@@ -43,11 +43,11 @@ line.
 
 From [xémonų]{.iv .recon lang=pgmc sort=xemonu} ‘heaven’, the West Saxon line passes through the oblique-stem type
 reflected in northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} ‘heaven’ [@RingeTaylor2014, 324]. Campbell's
-[`heofon`]{.iv lang=oe sort=heofon} 'heaven' beside [`hefen`]{.iv lang=oe sort=hefen} 'heaven' and earlier [`hefzen`]{.iv lang=oe sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
+[`heofon`]{.iv lang=oe sort=heofon} 'heaven' beside [`hefen`]{.iv lang=oe sort=hefen} 'heaven' and earlier [`hefzen`]{.iv lang=oe variety=merc sort=hefzen} 'heaven (Mercian)' show the later West-Saxon
 back-mutation and suffix reshaping behind [`heofon`]{.iv lang=oe sort=heofon} 'heaven'
 [@Campbell1959, §210.1; @Campbell1959, §381].
 
-The front-vocalic nominative line explains the dialectal [`hefen`]{.iv lang=oe sort=hefen} 'heaven (Mercian)'
+The front-vocalic nominative line explains the dialectal [`hefen`]{.iv lang=oe variety=merc sort=hefen} 'heaven (Mercian)'
 type. West Saxon [`heofon`]{.iv lang=oe sort=heofon} 'heaven' reflects the oblique
 stem that was generalized into the nominative position.
 

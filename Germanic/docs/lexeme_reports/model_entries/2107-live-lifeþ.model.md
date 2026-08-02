@@ -21,7 +21,7 @@ DERIVATION_CLASS: late_analogy
 The inherited verb belongs to the class-III weak family cited by Kroonen under
 `*libēn-`, reflected in Old English [`libban`]{.iv lang=oe sort=libban role=comparison_form} 'live' [@Kroonen2013, 336]. Ringe and
 Taylor show that the paradigm also contained a separate 3sg present stem,
-continued in late Northumbrian [`lifed`]{.iv lang=oe sort=lifed role=comparison_form} 'lives', which they treat as an archaism
+continued in late Northumbrian [`lifed`]{.iv lang=oe variety=north sort=lifed role=comparison_form} 'lives', which they treat as an archaism
 [@RingeTaylor2014, 364].
 
 The selected input [líbēθi]{.iv .recon lang=pgmc sort=libethi role=selected_input} ‘live’ therefore represents a finite present cell rather

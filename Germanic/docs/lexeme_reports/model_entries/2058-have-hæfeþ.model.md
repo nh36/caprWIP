@@ -32,7 +32,7 @@ cleaner comparator for the inherited non-geminating stem.
 ### Old English evidence
 
 The ordinary Old English headword is [`habban`]{.iv lang=oe sort=habban role=comparison_form} 'have' [@ClarkHall1960, 157].
-Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [`hæfed`]{.iv lang=oe sort=haefed role=comparison_form} 'has' type,
+Campbell's Anglian paradigm includes unsyncopated 3sg forms of the [`hæfed`]{.iv lang=oe variety=angl sort=haefed role=comparison_form} 'has' type,
 and the present paradigm therefore shows forms of the `hæf-` type that support
 the normalized target [`hæfeþ`]{.iv lang=oe sort=haefeth role=target_form} 'has' [@Campbell1959, §762].
 

@@ -28,14 +28,14 @@ inherited verb, while West Saxon [`streowian`]{.iv lang=oe sort=streowian role=c
 'strew' is remodelled [@RingeTaylor2014, §6.1 n. 27].
 
 Luick groups [strauwjan]{.recon} 'strew' with the same set as `*hauwja-` and
-[kauwjan]{.recon} 'chew', yielding Anglian [`strēzan`]{.iv lang=oe sort=strezan role=comparison_form} 'strew' beside West Saxon forms of
+[kauwjan]{.recon} 'chew', yielding Anglian [`strēzan`]{.iv lang=oe variety=angl sort=strezan role=comparison_form} 'strew' beside West Saxon forms of
 the [`hīez`]{.iv lang=oe sort=hiez role=comparison_form} 'hew', [`ciezan`]{.iv lang=oe sort=ciezan role=comparison_form} 'choose' type [@Luick1914, §98]. Fulk likewise allows an early West
 Saxon [striegan]{.recon} 'strew' directly from Proto-Germanic [straujana]{.recon}
 'strew' [@Fulk2018, §4.10 n. 1].
 
 ### Old English evidence
 
-The attested inherited Old English form is [`strēgan`]{.iv lang=oe sort=stregan role=comparison_form} 'strew' in Anglian. The attested
+The attested inherited Old English form is [`strēgan`]{.iv lang=oe variety=angl sort=stregan role=comparison_form} 'strew' in Anglian. The attested
 West Saxon citation forms are [`strewian`]{.iv lang=oe sort=strewian role=comparison_form} 'strew', [`streowian`]{.iv lang=oe sort=streowian role=comparison_form} 'strew', and [`strēawian`]{.iv lang=oe sort=streawian role=comparison_form} 'strew', which
 belong to the remodelled class-II branch [@RingeTaylor2014, §6.1 n. 27;
 @Campbell1959, §753.7].
@@ -51,7 +51,7 @@ From [stráwjaną]{.recon} 'strew', the inherited West Saxon line passes through
 [strīejan]{.recon} 'strew' by i-umlaut, with retained/strengthened glide after
 the front diphthong to yield reconstructed [strīeġan]{.recon} 'strew'.
 
-This differs from Anglian [`strēgan`]{.iv lang=oe sort=stregan role=comparison_form} 'strew', where smoothing removes the diphthongal
+This differs from Anglian [`strēgan`]{.iv lang=oe variety=angl sort=stregan role=comparison_form} 'strew', where smoothing removes the diphthongal
 sequence, and from West Saxon [`strewian`]{.iv lang=oe sort=strewian role=comparison_form} 'strew' / [`streowian`]{.iv lang=oe sort=streowian role=comparison_form} 'strew' / [`strēawian`]{.iv lang=oe sort=streawian role=comparison_form} 'strew', where the
 verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 @Campbell1959, §753.7].
@@ -60,6 +60,6 @@ verb has already been remodelled into class II [@Fulk2018, §4.10 n. 1;
 
 | Form or branch | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [`strēgan`]{.iv lang=oe sort=stregan role=comparison_form} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
+| [`strēgan`]{.iv lang=oe variety=angl sort=stregan role=comparison_form} 'strew' | attested Anglian inherited class-I form | proves that the inherited verb survived into Old English |
 | [strīeġan]{.iv .recon lang=oe sort=striegan role=target_form} 'strew' | reconstructed West Saxon inherited class-I form; trace-supported | selected target |
 | [`strewian`]{.iv lang=oe sort=strewian role=comparison_form} / [`streowian`]{.iv lang=oe sort=streowian role=comparison_form} 'strew' / [`strēawian`]{.iv lang=oe sort=streawian role=comparison_form} | attested remodelled West Saxon class-II forms | genuine OE evidence, but not the inherited branch modeled here |

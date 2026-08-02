@@ -32,7 +32,7 @@ Campbell says that [`sparian`]{.iv lang=oe sort=sparian} 'spare' does not show t
 characteristics, but the Ritual forms, normalized here as [`spæria`]{.iv lang=oe sort=spaeria} 'spare', [`spær`]{.iv lang=oe sort=spaer} 'spare', and
 [`spærede`]{.iv lang=oe sort=spaerede} 'spare', together with Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad} 'spare', point to primitive Old
 English forms both with and without back vowels [@Campbell1959, §764]. Brunner likewise records
-Northumbrian [`spæria`]{.iv lang=oe sort=spaeria} 'spare', [`spærede`]{.iv lang=oe sort=spaerede} 'spare' beside common Old English [`sparian`]{.iv lang=oe sort=sparian} 'spare' and
+Northumbrian [`spæria`]{.iv lang=oe variety=north sort=spaeria} 'spare', [`spærede`]{.iv lang=oe variety=north sort=spaerede} 'spare' beside common Old English [`sparian`]{.iv lang=oe sort=sparian} 'spare' and
 Vespasian Psalter [`spearad`]{.iv lang=oe sort=spearad} 'spare' [@SieversBrunner1965, §364 Anm. 11]. The citation
 form treated here is [`sparian`]{.iv lang=oe sort=sparian} 'spare'; the Anglian forms are relics of the older
 formation, not alternative headwords of equal status.
