@@ -279,9 +279,12 @@ local function ensure_sortkey_allow_loaded()
       local language = column(cells, indices["language"])
       local role = column(cells, indices["form_role"])
       local sort_key = column(cells, indices["sort_key"])
-      local source_ref = column(cells, indices["source_ref"])
+      -- The allowlist now uses occurrence_id (unique per span) for disambiguation.
+      -- Fall back to source_ref for older allowlist files without the column.
+      local occ_id = column(cells, indices["occurrence_id"]) ~= "" and column(cells, indices["occurrence_id"])
+                     or column(cells, indices["source_ref"])
       local variety = column(cells, indices["variety"])
-      explicit_allow_sortkey[explicit_key(language, role, sort_key, source_ref, variety)] = true
+      explicit_allow_sortkey[explicit_key(language, role, sort_key, occ_id, variety)] = true
     end
   end
   handle:close()
@@ -322,6 +325,7 @@ local function span_to_index(span)
     role = "evidence_form"
   end
   local source_ref = trim(span.attributes["source_ref"] or "")
+  local occ_id = trim(span.attributes["occ_id"] or "")
   local variety = trim(span.attributes["variety"] or "")
   -- Fail-closed validation; also yields the printed label (blank => no suffix).
   local variety_label = validate_variety(lang, variety)
@@ -343,7 +347,10 @@ local function span_to_index(span)
   local printable = explicit_tag_is_printable(lang, role, form, display, source_ref, variety)
   if not printable then
     local sortkey_allow = ensure_sortkey_allow_loaded()
-    printable = sortkey_allow[explicit_key(lang, role, sort, source_ref, variety)] or false
+    -- Use occ_id for the fallback when available (handles same-line duplicates);
+    -- fall back to source_ref for spans without occ_id.
+    local ref_for_fallback = occ_id ~= "" and occ_id or source_ref
+    printable = sortkey_allow[explicit_key(lang, role, sort, ref_for_fallback, variety)] or false
   end
   if not printable then
     return visible

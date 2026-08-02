@@ -793,11 +793,17 @@ def _lex_has_tag_class(raw_attrs: str, cls: str) -> bool:
 
 
 def annotate_model_entry_spans(lines: list[str], path: Path) -> list[str]:
-    """Add source_ref="<model-entry-rel-path>:<line>" to each .iv/.pred span.
+    """Add source_ref and occ_id to each .iv/.pred span.
 
-    Spans that already declare a source_ref are left untouched. Line numbers are
-    the 1-based positions in the original model entry, so the reference matches
-    index_verborum_print_main.tsv exactly.
+    source_ref = "<rel-path>:<line>" — canonical source location.
+    occ_id     = "<rel-path>:<line>:<ordinal>" — stable occurrence identity.
+
+    Ordinal counts ALL .iv/.pred spans on the line (regardless of semantic
+    identity), giving each span a globally unique occ_id. This matches the
+    ordinal assignment in explicit_tag_occurrences() in build_index_verborum.py.
+
+    Spans that already declare a source_ref are left untouched (provenance was
+    set upstream).
     """
     try:
         rel = path.relative_to(REPO_ROOT).as_posix()
@@ -807,24 +813,30 @@ def annotate_model_entry_spans(lines: list[str], path: Path) -> list[str]:
     annotated: list[str] = []
     for line_no, line in enumerate(lines, start=1):
         source_ref = f'{rel}:{line_no}'
+        # Count spans emitted on this line to assign ordinals.
+        span_counter_on_line = [0]  # mutable for closure
 
-        def add_ref(attrs: str) -> str:
+        def add_ref_and_occ(attrs: str) -> str:
             if re.search(r'(^|\s)source_ref=', attrs):
                 return attrs
+            span_counter_on_line[0] += 1
+            ordinal = span_counter_on_line[0]
+            occ_id = f'{source_ref}:{ordinal}'
             body = attrs.strip()
-            return f'{body} source_ref="{source_ref}"' if body else f'source_ref="{source_ref}"'
+            new_attrs = f'source_ref="{source_ref}" occ_id="{occ_id}"'
+            return f'{body} {new_attrs}' if body else new_attrs
 
         def nested_repl(match: re.Match[str]) -> str:
             attrs = match.group("attrs")
             if not (_lex_has_tag_class(attrs, "iv") or _lex_has_tag_class(attrs, "pred")):
                 return match.group(0)
-            return f'[[{match.group("form")}]{{.recon}}{match.group("tail")}]{{{add_ref(attrs)}}}'
+            return f'[[{match.group("form")}]{{.recon}}{match.group("tail")}]{{{add_ref_and_occ(attrs)}}}'
 
         def repl(match: re.Match[str]) -> str:
             attrs = match.group("attrs")
             if not (_lex_has_tag_class(attrs, "iv") or _lex_has_tag_class(attrs, "pred")):
                 return match.group(0)
-            return f'[{match.group("content")}]{{{add_ref(attrs)}}}'
+            return f'[{match.group("content")}]{{{add_ref_and_occ(attrs)}}}'
 
         line = _LEX_NESTED_RECON_IV_RE.sub(nested_repl, line)
         line = _LEX_EXPLICIT_TAG_RE.sub(repl, line)

@@ -110,27 +110,37 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
 
 def annotate_explicit_tags_in_line(line: str, rel_path: str, line_no: int) -> str:
     source_ref = f'{rel_path}:{line_no}'
+    span_counter = [0]  # mutable for closure; counts ALL .iv/.pred spans on this line
+
+    def _make_attrs_with_provenance(existing_attrs: str) -> str | None:
+        """Return augmented attrs string or None if span already has source_ref."""
+        if re.search(r'(^|\s)source_ref=', existing_attrs):
+            return None  # already annotated by upstream (model-entry builder)
+        span_counter[0] += 1
+        occ_id = f'{source_ref}:{span_counter[0]}'
+        body = existing_attrs.strip()
+        new_attrs = f'source_ref="{source_ref}" occ_id="{occ_id}"'
+        return f'{body} {new_attrs}' if body else new_attrs
+
+    def repl_nested(match: re.Match[str]) -> str:
+        attrs = match.group("attrs")
+        if not (has_tag_class(attrs, "iv") or has_tag_class(attrs, "pred")):
+            return match.group(0)
+        new_attrs = _make_attrs_with_provenance(attrs)
+        if new_attrs is None:
+            return match.group(0)
+        return f"[[{match.group('form')}]{{.recon}}{match.group('tail')}]{{{new_attrs}}}"
 
     def repl(match: re.Match[str]) -> str:
         attrs = match.group("attrs")
         if not (has_tag_class(attrs, "iv") or has_tag_class(attrs, "pred")):
             return match.group(0)
-        attrs_body = attrs.strip()
-        # Preserve an already-original source_ref if one exists. The lexical
-        # volume builder now carries the model-entry provenance forward, and the
-        # assembled book must not replace it with the assembled-file ref.
-        if re.search(r'(^|\s)source_ref=', attrs_body):
+        new_attrs = _make_attrs_with_provenance(attrs)
+        if new_attrs is None:
             return match.group(0)
-        if attrs_body:
-            return f"[{match.group('content')}]{{{attrs_body} source_ref=\"{source_ref}\"}}"
-        return f"[{match.group('content')}]{{source_ref=\"{source_ref}\"}}"
+        return f"[{match.group('content')}]{{{new_attrs}}}"
 
-    line = NESTED_RECON_IV_RE.sub(
-        lambda match: f"[[{match.group('form')}]{{.recon}}{match.group('tail')}]{{{match.group('attrs')} source_ref=\"{source_ref}\"}}"
-        if not re.search(r'(^|\s)source_ref=', match.group("attrs"))
-        else match.group(0),
-        line,
-    )
+    line = NESTED_RECON_IV_RE.sub(repl_nested, line)
     return EXPLICIT_TAG_RE.sub(repl, line)
 
 

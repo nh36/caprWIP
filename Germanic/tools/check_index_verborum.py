@@ -379,7 +379,7 @@ def assert_written_table_schema() -> None:
     rows = load_forms_rows()
     with FORMS_PATH.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
-        assert reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
+        assert reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "occurrence_id", "origin", "status"]
     first_rows = rows[:10]
     assert all(row["language"] for row in first_rows)
     assert all(row["form_role"] for row in first_rows)
@@ -983,7 +983,7 @@ def assert_print_layer_outputs() -> None:
     with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
         main_reader = csv.DictReader(handle, delimiter="\t")
         main_rows = list(main_reader)
-        assert main_reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
+        assert main_reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "occurrence_id", "origin", "status"]
 
     with PRINT_EXCLUDED_PATH.open(encoding="utf-8") as handle:
         excluded_reader = csv.DictReader(handle, delimiter="\t")
@@ -997,6 +997,7 @@ def assert_print_layer_outputs() -> None:
             "form_role",
             "source_scope",
             "source_ref",
+            "occurrence_id",
             "origin",
             "status",
             "exclusion_reason",
@@ -1302,18 +1303,20 @@ def assert_sortkey_allow_no_collisions() -> None:
     key_counter: Counter[tuple[str, str, str, str, str]] = Counter()
     with EXPLICIT_ALLOW_SORTKEY_PATH.open(encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
+            # The sortkey allowlist now uses occurrence_id (unique per span) instead
+            # of source_ref (shared by same-line spans). Each key must be unique.
             key = (
                 (row.get("language") or "").strip(),
                 (row.get("form_role") or "").strip(),
                 (row.get("sort_key") or "").strip(),
-                (row.get("source_ref") or "").strip(),
+                (row.get("occurrence_id") or row.get("source_ref") or "").strip(),
                 (row.get("variety") or "").strip(),
             )
             key_counter[key] += 1
     collisions = {k: v for k, v in key_counter.items() if v > 1}
     assert not collisions, (
         f"Sort-key allowlist has {len(collisions)} collision(s) "
-        f"(distinct forms sharing same language+role+sort_key+source_ref+variety); "
+        f"(distinct forms sharing same language+role+sort_key+occurrence_id+variety); "
         f"the fallback would admit the wrong occurrence.\n"
         + "\n".join(f"  {k}: {v} rows" for k, v in sorted(collisions.items())[:5])
     )

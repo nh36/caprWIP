@@ -61,6 +61,7 @@ PRODUCTION_FIELDS = [
     "form_role",
     "source_scope",
     "source_ref",
+    "occurrence_id",
     "origin",
     "status",
 ]
@@ -613,10 +614,18 @@ class ProductionOccurrence:
     origins: set[str] = field(default_factory=set)
     status: str = "auto"
     variety: str = ""
+    # Stable occurrence identity: source_ref:ordinal (ordinal=1 for the common
+    # case of one occurrence per source location; ordinal=2,3... for same-line
+    # same-semantic duplicate spans).  Assigned during explicit_tag harvesting;
+    # non-explicit rows use source_ref as their identity.
+    occurrence_id: str = ""
 
     @property
     def key(self) -> tuple[str, str, str, str, str, str, str]:
-        return (self.language, self.variety, self.form, self.display, self.form_role, self.source_scope, self.source_ref)
+        # Use occurrence_id as the uniqueness discriminator when present (explicit_tag);
+        # fall back to source_ref for injected non-explicit rows.
+        identity = self.occurrence_id if self.occurrence_id else self.source_ref
+        return (self.language, self.variety, self.form, self.display, self.form_role, self.source_scope, identity)
 
 
 @dataclass(frozen=True)
@@ -773,6 +782,7 @@ def add_production(
     sort_key: str | None = None,
     status: str = "auto",
     variety: str = "",
+    occurrence_id: str = "",
 ) -> None:
     cleaned = normalize_form(form)
     if not cleaned or not language:
@@ -784,9 +794,12 @@ def add_production(
     variety = (variety or "").strip()
     VARIETY_REGISTRY.validate_occurrence(language, variety)
     visible = display or cleaned
-    key = (language, variety, cleaned, visible, form_role, source_scope, source_ref)
+    # Use occurrence_id as dedup key when provided (explicit_tag occurrences);
+    # fall back to source_ref for injected rows where dedup by site is intended.
+    identity = occurrence_id if occurrence_id else source_ref
+    key = (language, variety, cleaned, visible, form_role, source_scope, identity)
     if key not in store:
-        store[key] = ProductionOccurrence(
+        new_occ = ProductionOccurrence(
             language=language,
             form=cleaned,
             display=visible,
@@ -796,7 +809,9 @@ def add_production(
             source_ref=source_ref,
             status=status,
             variety=variety,
+            occurrence_id=occurrence_id,
         )
+        store[key] = new_occ
     store[key].origins.add(origin)
     if status == "override":
         store[key].status = "override"
@@ -939,7 +954,15 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
     occurrences: list[dict[str, str]] = []
     for path in paths or source_files_for_tags():
         rel = relative_source_path(path)
+        # Track ordinals: count ALL occurrences at each source_ref.
+        # This gives globally unique occurrence_ids for same-line spans.
+        from collections import Counter as _Counter
+        ref_counter: "_Counter[str]" = _Counter()
         for tag in iter_explicit_tags(path):
+            source_ref = f"{rel}:{tag['line_no']}"
+            ref_counter[source_ref] += 1
+            ordinal = ref_counter[source_ref]
+            occurrence_id = f"{source_ref}:{ordinal}"
             occurrences.append(
                 {
                     "language": tag["lang"],
@@ -948,7 +971,8 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
                     "sort_key": tag["sort"] or transliterate_sort_key(strip_markup(tag["content"])),
                     "form_role": tag["role"] or "evidence_form",
                     "source_scope": "explicit_tag",
-                    "source_ref": f"{rel}:{tag['line_no']}",
+                    "source_ref": source_ref,
+                    "occurrence_id": occurrence_id,
                     "origin": rel,
                     "variety": tag.get("variety", ""),
                 }
@@ -2855,6 +2879,7 @@ def build_production_rows(
                 form_role=row["form_role"],
                 source_scope=row["source_scope"],
                 source_ref=row["source_ref"],
+                occurrence_id=row.get("occurrence_id", ""),
                 origin=row["origin"],
             )
 
@@ -3023,6 +3048,7 @@ def write_print_main_rows(path: Path, rows: list[ProductionOccurrence]) -> None:
                     "form_role": row.form_role,
                     "source_scope": row.source_scope,
                     "source_ref": row.source_ref,
+                    "occurrence_id": row.occurrence_id,
                     "origin": "; ".join(sorted(row.origins)),
                     "status": row.status,
                 }
@@ -3034,15 +3060,16 @@ def write_explicit_allow_sortkey(path: Path, rows: list[ProductionOccurrence]) -
 
     The form-based allowlist in print_main.tsv can fail Lua matching when Pandoc
     stringifies span content as NFD but the TSV stores NFC. This file keys on
-    (language, form_role, sort_key, source_ref, variety) where sort_key is always
-    plain ASCII, so normalization never matters. The Lua filter uses this as a
-    secondary allowlist that bypasses the form/display Unicode comparison.
+    (language, form_role, sort_key, occurrence_id, variety) where sort_key is always
+    plain ASCII and occurrence_id is globally unique, so normalization never matters.
+    The Lua filter uses this as a secondary allowlist that bypasses the form/display
+    Unicode comparison.
     """
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             delimiter="\t",
-            fieldnames=["language", "form_role", "sort_key", "source_ref", "variety"],
+            fieldnames=["language", "form_role", "sort_key", "occurrence_id", "variety"],
             lineterminator="\n",
         )
         writer.writeheader()
@@ -3050,7 +3077,9 @@ def write_explicit_allow_sortkey(path: Path, rows: list[ProductionOccurrence]) -
         for row in rows:
             if row.source_scope != "explicit_tag":
                 continue
-            key = (row.language, row.form_role, row.sort_key, row.source_ref, row.variety)
+            # Use occurrence_id for unique key (handles same-line duplicates)
+            occ_id = row.occurrence_id if row.occurrence_id else row.source_ref
+            key = (row.language, row.form_role, row.sort_key, occ_id, row.variety)
             if key in seen:
                 continue
             seen.add(key)
@@ -3058,7 +3087,7 @@ def write_explicit_allow_sortkey(path: Path, rows: list[ProductionOccurrence]) -
                 "language": row.language,
                 "form_role": row.form_role,
                 "sort_key": row.sort_key,
-                "source_ref": row.source_ref,
+                "occurrence_id": occ_id,
                 "variety": row.variety,
             })
 
@@ -3907,6 +3936,7 @@ def write_forms(rows: list[ProductionOccurrence]) -> None:
                     "form_role": row.form_role,
                     "source_scope": row.source_scope,
                     "source_ref": row.source_ref,
+                    "occurrence_id": row.occurrence_id,
                     "origin": "; ".join(sorted(row.origins)),
                     "status": row.status,
                 }

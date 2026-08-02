@@ -58,6 +58,7 @@ else
   docker run --rm --platform "${platform}" --entrypoint /bin/sh -v "${repo_root}":/data -w /data "${image}" -c "apk add --no-cache python3 >/dev/null && python3 Germanic/tools/check_predicted_forms.py"
 fi
 python3 Germanic/tools/check_index_verborum.py
+python3 Germanic/tools/check_book_occ_id_parity.py
 python3 Germanic/tools/check_bibliography_sanity.py
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
