@@ -15,6 +15,8 @@ Dispositions:
   missing_from_assembly — expected to fire but not found in actual TeX
   duplicate_emission   — appears more times than expected (upper-bound breach)
   unresolved           — could not classify
+
+Exit nonzero if any invariant fails.
 """
 from __future__ import annotations
 
@@ -50,6 +52,88 @@ def extract_iv_bodies(text: str) -> list[str]:
     return bodies
 
 
+def validate_audit(
+    main_rows: list[dict[str, str]],
+    audit_rows: list[dict[str, str]],
+    emission_rows: list[dict[str, str]],
+) -> None:
+    """Fail-closed runtime validation of the generated audit.
+
+    Raises AssertionError on any invariant violation.
+    """
+    errors: list[str] = []
+
+    # 1. Exact occurrence coverage: audit must contain every print_main occurrence.
+    pm_ids = Counter((r.get("occurrence_id") or "").strip() for r in main_rows)
+    audit_ids = Counter((r.get("occurrence_id") or "").strip() for r in audit_rows)
+    if "" in pm_ids:
+        errors.append(f"print_main has {pm_ids['']} rows with blank occurrence_id")
+    if "" in audit_ids:
+        errors.append(f"audit has {audit_ids['']} rows with blank occurrence_id")
+    pm_ids.pop("", None)
+    audit_ids.pop("", None)
+    if pm_ids != audit_ids:
+        missing = sorted(k for k in pm_ids if pm_ids[k] != audit_ids.get(k, 0))
+        extra = sorted(k for k in audit_ids if audit_ids[k] != pm_ids.get(k, 0))
+        errors.append(
+            f"Audit occurrence_id coverage mismatch: "
+            f"{len(missing)} missing, {len(extra)} extra"
+            + (f"\n  missing examples: {missing[:3]}" if missing else "")
+            + (f"\n  extra examples: {extra[:3]}" if extra else "")
+        )
+
+    # 2. Book/emission consistency
+    for r in audit_rows:
+        in_bk = (r.get("in_book") or "").strip()
+        eid = (r.get("emission_id") or "").strip()
+        ci = (r.get("collapsed_into") or "").strip()
+        dispo = (r.get("disposition") or "").strip()
+        if in_bk == "1" and not eid:
+            errors.append(f"in_book row has blank emission_id: {r.get('occurrence_id')}")
+        if in_bk != "1" and dispo != "source_not_in_book":
+            errors.append(f"non-book row has wrong disposition {dispo!r}: {r.get('occurrence_id')}")
+        if dispo == "source_not_in_book" and in_bk == "1":
+            errors.append(f"source_not_in_book row claims in_book=1: {r.get('occurrence_id')}")
+        if ci and dispo != "collapsed_same_site":
+            errors.append(f"collapsed row has wrong disposition {dispo!r}: {r.get('occurrence_id')}")
+        if dispo == "collapsed_same_site" and not ci:
+            errors.append(f"collapsed_same_site row has blank collapsed_into: {r.get('occurrence_id')}")
+        if ci and eid and ci != eid:
+            errors.append(f"collapsed_into != emission_id for {r.get('occurrence_id')}: {ci!r} != {eid!r}")
+
+    # 3. Representative consistency
+    # Build representative set from emission table (blank collapsed_into + in_book)
+    representatives: set[str] = {
+        r["occurrence_id"] for r in emission_rows
+        if r["in_book"] == "1" and not (r.get("collapsed_into") or "").strip()
+    }
+    for r in audit_rows:
+        ci = (r.get("collapsed_into") or "").strip()
+        eid = (r.get("emission_id") or "").strip()
+        dispo = (r.get("disposition") or "").strip()
+        if not ci or dispo != "collapsed_same_site":
+            continue
+        if eid not in {r2["emission_id"] for r2 in emission_rows if not (r2.get("collapsed_into") or "").strip() and r2["in_book"] == "1"}:
+            errors.append(f"collapsed row points to nonexistent representative emission {eid!r}")
+
+    # 4. No forbidden dispositions
+    BAD_DISPOSITIONS = {"missing_from_assembly", "unresolved", "duplicate_emission"}
+    bad = [(r.get("occurrence_id"), r.get("disposition")) for r in audit_rows
+           if (r.get("disposition") or "") in BAD_DISPOSITIONS]
+    if bad:
+        errors.append(
+            f"Audit contains {len(bad)} forbidden disposition(s) "
+            f"({sorted({d for _, d in bad})}):\n  "
+            + "\n  ".join(f"{occ}: {dispo}" for occ, dispo in bad[:5])
+        )
+
+    if errors:
+        print("AUDIT VALIDATION FAILED:", file=sys.stderr)
+        for e in errors:
+            print(f"  {e}", file=sys.stderr)
+        raise AssertionError(f"Audit validation failed with {len(errors)} error(s)")
+
+
 def main() -> None:
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
@@ -79,10 +163,6 @@ def main() -> None:
     # Second pass: assign dispositions.
     audit_rows: list[dict[str, str]] = []
     seen_emission_ids: set[str] = set()
-    emission_representative: set[str] = set()
-    for row in emission_rows:
-        if row["in_book"] == "1" and row["emission_id"] not in emission_representative:
-            emission_representative.add(row["emission_id"])
 
     for row, (path, site, cmd, in_book, emission_id, collapsed_into) in zip(main_rows, row_classifications):
         actual_count = actual.get(cmd, 0)
@@ -144,6 +224,12 @@ def main() -> None:
                 "reason": reason,
             }
         )
+
+    # Fail-closed validation before writing.
+    try:
+        validate_audit(main_rows, audit_rows, emission_rows)
+    except AssertionError as e:
+        sys.exit(str(e))
 
     # Write audit TSV.
     FIELDS = [

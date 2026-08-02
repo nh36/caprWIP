@@ -12,6 +12,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+import unicodedata
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -668,23 +669,49 @@ class LuaParityTests(unittest.TestCase):
             self.assertEqual(proc.returncode, 0, proc.stderr)
             self.assertNotIn("occ_id=", proc.stdout)
 
-    def test_unicode_primary_matching_without_fallback(self):
-        """Prove primary form/display matching works for a standard OE form.
+    def test_unicode_primary_matching_nfc_nfd_mismatch(self):
+        """Primary eligibility matches even with NFC/NFD normalization mismatch.
 
-        The sort-key fallback was measured at zero uses in production and has
-        been removed. This test verifies that primary form-based matching
-        succeeds for a typical OE form — the fallback is not needed.
+        Scenario:
+          * The print_main fixture has the form and display stored as NFC.
+          * The Markdown span content uses the canonically equivalent NFD form,
+            but carries the NFC value in its explicit display= attribute.
+          * The two strings are bytewise different but canonically equivalent.
+          * The Lua filter must emit \\index[iv] via the display-attribute match
+            without any sort-key fallback.
+
+        This replicates the production pipeline where the display= attribute always
+        carries the NFC-normalised value set programmatically by the Python
+        annotation layer, making the filter robust to Pandoc's preservation of
+        source-file normalization in stringified content.
         """
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             pm = tmp / "pm.tsv"
-            header = ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "occurrence_id", "origin", "status"]
             ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
-            form = "strēgan"  # standard OE form with combining characters
+
+            # Use OE 'āsceaf' (a + combining macron vs precomposed ā)
+            form_nfc = unicodedata.normalize("NFC", "\u0101sceaf")
+            form_nfd = unicodedata.normalize("NFD", "\u0101sceaf")
+
+            # Regression assertion: the two strings genuinely differ bytewise.
+            self.assertNotEqual(form_nfc.encode(), form_nfd.encode(),
+                                "NFC and NFD encodings must differ for this test to be meaningful")
+            # ...but are canonically equivalent.
+            self.assertEqual(
+                unicodedata.normalize("NFC", form_nfd), form_nfc,
+                "NFD form must normalize back to NFC form"
+            )
+
+            header = ["language", "variety", "form", "display", "sort_key", "form_role",
+                      "source_scope", "source_ref", "occurrence_id", "origin", "status"]
             with pm.open("w", encoding="utf-8", newline="") as h:
                 w = csv.writer(h, delimiter="\t", lineterminator="\n")
                 w.writerow(header)
-                w.writerow(["oe", "", form, form, "stregan", "comparison_form", "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+                # TSV stores NFC form and NFC display
+                w.writerow(["oe", "", form_nfc, form_nfc, "asceaf", "target_form",
+                            "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+
             env = dict(os.environ)
             env.update({
                 "CAPR_IV_PRINT_MAIN_TSV": str(pm),
@@ -692,13 +719,24 @@ class LuaParityTests(unittest.TestCase):
                 "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
             })
             src = tmp / "in.md"
-            src.write_text(f"[{form}]{{.iv lang=oe sort=stregan role=comparison_form source_ref=\"{ref}\" occ_id=\"{ref}:1\"}}\n", encoding="utf-8")
+            # Span content is NFD; display= attribute carries the NFC value.
+            # This is what the production pipeline produces: source files use NFC,
+            # the display= attribute is set from NFC-normalised data.
+            span = (
+                "[" + form_nfd + "]{.iv lang=oe sort=asceaf role=target_form"
+                + ' display="' + form_nfc + '"'
+                + ' source_ref="' + ref + '"'
+                + ' occ_id="' + ref + ':1"}'
+            )
+            src.write_text(span + "\n", encoding="utf-8")
             proc = subprocess.run(
-                ["pandoc", "--from", "markdown", "--to", "latex", "--lua-filter", str(FILTER_LUA), str(src)],
+                ["pandoc", "--from", "markdown", "--to", "latex",
+                 "--lua-filter", str(FILTER_LUA), str(src)],
                 capture_output=True, text=True, env=env,
             )
             self.assertEqual(proc.returncode, 0, proc.stderr)
-            self.assertIn(r"\index[iv]", proc.stdout)
+            self.assertIn(r"\index[iv]", proc.stdout,
+                          "Lua filter must emit command when display attr carries NFC form")
 
 
 class OccurrenceModelHardeningTests(unittest.TestCase):
@@ -812,6 +850,67 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
             all((r.get("occurrence_id") or "").strip() for r in pe if (r.get("source_scope") or "") == "explicit_tag"),
             "every excluded explicit must retain occurrence_id"
         )
+
+    def test_book_emissions_representative_selection(self):
+        """Every book emission has exactly one non-collapsed representative.
+
+        Requirements:
+        - Every emission_id has exactly one row with blank collapsed_into.
+        - representative_occurrence_id points to that row's occurrence_id.
+        - Every collapsed row points to the representative's emission_id.
+        - No representative_occurrence_id belongs to a collapsed row.
+        - source_occurrence_count and source_occurrence_ids reconcile with book_occurrences.
+        """
+        et = self._rows("index_verborum_emission_table.tsv")
+        be = self._rows("index_verborum_book_emissions.tsv")
+        bo = self._rows("index_verborum_book_occurrences.tsv")
+
+        # Build ground truth from emission table
+        by_emission: dict[str, list[dict]] = {}
+        for row in et:
+            if (row.get("in_book") or "") == "1":
+                by_emission.setdefault(row["emission_id"], []).append(row)
+
+        self.assertEqual(len(be), len(by_emission), "book_emissions row count must equal unique emission_ids in emission table")
+
+        # Build index of representatives from emission table
+        et_reps: dict[str, str] = {}  # emission_id -> representative occurrence_id
+        for eid, rows in by_emission.items():
+            reps = [r for r in rows if not (r.get("collapsed_into") or "").strip()]
+            self.assertEqual(len(reps), 1, f"emission {eid} must have exactly one representative; got {len(reps)}")
+            et_reps[eid] = reps[0]["occurrence_id"]
+
+        # Verify each book_emissions row
+        bo_occ_ids = {r["occurrence_id"] for r in bo}
+        for row in be:
+            eid = row["emission_id"]
+            rep_occ_id = row["representative_occurrence_id"]
+            # Representative occurrence_id matches the emission table's representative
+            self.assertEqual(rep_occ_id, et_reps[eid],
+                             f"representative_occurrence_id for emission {eid} must match emission table representative")
+            # representative_occurrence_id must exist in book_occurrences
+            self.assertIn(rep_occ_id, bo_occ_ids,
+                          f"representative_occurrence_id {rep_occ_id} must be in book_occurrences")
+            # The representative itself must have blank collapsed_into in emission table
+            et_row = next(r for r in et if r["occurrence_id"] == rep_occ_id)
+            self.assertEqual((et_row.get("collapsed_into") or "").strip(), "",
+                             f"representative {rep_occ_id} must have blank collapsed_into in emission table")
+
+        # Algebraic: sum of source_occurrence_count == book_occurrences count
+        self.assertEqual(
+            sum(int(r["source_occurrence_count"]) for r in be),
+            len(bo),
+            "sum(source_occurrence_count) must equal book_occurrences count"
+        )
+
+        # source_occurrence_ids contains all mapped occurrence IDs
+        all_mapped = set()
+        for row in be:
+            ids = row["source_occurrence_ids"].split("|")
+            self.assertEqual(len(ids), int(row["source_occurrence_count"]))
+            all_mapped.update(ids)
+        self.assertEqual(all_mapped, bo_occ_ids,
+                         "source_occurrence_ids must collectively cover all book_occurrences")
 
     def test_no_fallback_allowlist(self):
         """Assert the fallback allowlist file does not exist.

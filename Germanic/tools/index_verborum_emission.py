@@ -267,8 +267,18 @@ def build_book_emissions_rows(emission_rows: list[dict[str, str]]) -> list[dict[
             grouped[row["emission_id"]].append(row)
     out: list[dict[str, str]] = []
     for emission_id, items in grouped.items():
-        items.sort(key=lambda r: (r["occurrence_id"], r["source_ref"]))
-        representative = items[0]
+        # The representative is the unique row with blank collapsed_into.
+        # For explicit emissions there is exactly one member with blank collapsed_into.
+        # For shared non-explicit groups the first-processed row carries blank collapsed_into.
+        representatives = [
+            r for r in items
+            if not (r.get("collapsed_into") or "").strip()
+        ]
+        assert len(representatives) == 1, (
+            f"Emission {emission_id} must have exactly one representative "
+            f"(blank collapsed_into); got {len(representatives)}"
+        )
+        representative = representatives[0]
         out.append(
             {
                 "emission_id": emission_id,
@@ -284,7 +294,9 @@ def build_book_emissions_rows(emission_rows: list[dict[str, str]]) -> list[dict[
                 "source_scope": representative["source_scope"],
                 "source_ref": representative["source_ref"],
                 "source_occurrence_count": str(len(items)),
-                "source_occurrence_ids": "|".join(r["occurrence_id"] for r in items),
+                "source_occurrence_ids": "|".join(
+                    r["occurrence_id"] for r in sorted(items, key=lambda r: r["occurrence_id"])
+                ),
             }
         )
     out.sort(key=lambda r: (r["emission_path"], r["site"], r["sort_key"], r["display"], r["emission_id"]))
