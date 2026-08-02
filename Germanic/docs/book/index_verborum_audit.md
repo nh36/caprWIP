@@ -1,8 +1,8 @@
 # Index verborum audit
 
-- Internal production occurrences: 2259
+- Internal production occurrences: 2352
 - Internal production unique forms: 1050
-- Printed main-index occurrences: 2171
+- Printed main-index occurrences: 2264
 - Printed main-index unique forms: 1040
 - Print-excluded occurrences: 88
 - Print-excluded unique forms: 69
@@ -45,12 +45,12 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1222 | 456 |
-| Proto-Germanic | 942 | 519 |
+| Old English | 1313 | 456 |
+| Proto-Germanic | 943 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 8 | 5 |
 | Pre-Old English / prehistoric English | 6 | 6 |
-| Old Norse | 15 | 12 |
+| Old Norse | 16 | 12 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
 | Gothic | 6 | 6 |
@@ -171,23 +171,23 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 370 |
+| target_form | 373 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 749 |
+| comparison_form | 821 |
 | regular_output | 88 |
-| evidence_form | 190 |
+| evidence_form | 208 |
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1134 | 446 |
-| Proto-Germanic | 942 | 519 |
+| Old English | 1225 | 446 |
+| Proto-Germanic | 943 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 8 | 5 |
 | Pre-Old English / prehistoric English | 6 | 6 |
-| Old Norse | 15 | 12 |
+| Old Norse | 16 | 12 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
 | Gothic | 6 | 6 |
@@ -202,11 +202,11 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 370 |
+| target_form | 373 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 749 |
-| evidence_form | 190 |
+| comparison_form | 821 |
+| evidence_form | 208 |
 
 ## Internal-only rows by reason
 
