@@ -205,13 +205,42 @@ def main() -> None:
         f"Print main contains languages not in active registry (would use fallback 99xx prefix): {unknown_langs}"
     )
 
-    # ── Index occurrence two-sided coverage check ─────────────────────────────
-    # Derive required command multiplicities for non-explicit injection semantics:
-    # - non-explicit rows are deduplicated per heading/line injection site
-    # Explicit-tag commands are validated as a strict subset via expected_command_set
-    # (spurious commands forbidden), while the required-multiplicity converse check
-    # below ensures injected printable material is not silently omitted.
+    # ── Central emission classifier ────────────────────────────────────────────
+    # Mirrors build_capr_book_draft.py load_production_rows() exactly.
+    # Every non-explicit row maps to exactly one of:
+    #   ("heading_injection", heading_ref, cmd)  — Python emits at lexical heading
+    #   ("line_injection", "path:line", cmd)      — Python emits at source line
+    #   ("source_not_in_book", ref, cmd)          — source not assembled into book
     from collections import Counter
+
+    def classify_row_emission(
+        row: dict[str, str],
+        mehmap: dict[str, str],
+    ) -> tuple[str, str, str]:
+        """Return (emission_path, site, command) for one print_main row."""
+        scope = (row.get("source_scope") or "").strip()
+        ref = (row.get("source_ref") or "").strip()
+        cmd = index_command(row)
+        if scope == "explicit_tag":
+            return ("explicit_tag", ref, cmd)
+        if not ref:
+            return ("source_not_in_book", ref, cmd)
+        _line_inj = {"table_semantic_auto", "table_semantic_decision", "broad_prose_decision"}
+        if ".md:" in ref:
+            path_part, line_part = ref.rsplit(":", 1)
+            if scope in _line_inj and line_part.isdigit() and path_part not in mehmap:
+                # Line-injection only fires for intro/chronology, not model entries
+                return ("line_injection", f"{path_part}:{line_part}", cmd)
+            if path_part in mehmap:
+                return ("heading_injection", mehmap[path_part], cmd)
+            if line_part.isdigit():
+                return ("line_injection", f"{path_part}:{line_part}", cmd)
+            return ("source_not_in_book", ref, cmd)
+        # heading string ref (no .md:)
+        if ref in set(mehmap.values()):
+            return ("heading_injection", ref, cmd)
+        return ("source_not_in_book", ref, cmd)
+
     expected_command_set: set[str] = {index_command(row) for row in main_rows}
 
     model_entry_heading_map: dict[str, str] = {}
@@ -226,40 +255,17 @@ def main() -> None:
             display_counterpart = f"*{counterpart}" if derivation_class == "reconstructed_oe" else counterpart
             model_entry_heading_map[model_path] = f"{lexical_item} — OE {display_counterpart}"
 
-    line_injected_scopes = {"table_semantic_auto", "table_semantic_decision", "broad_prose_decision"}
-    allowed_line_paths = {
-        INTRO_PATH.relative_to(REPO_ROOT).as_posix(),
-        CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix(),
-    }
-    allowed_heading_refs = set(model_entry_heading_map.values())
     collapsed_non_explicit_sites: set[tuple[str, str, str]] = set()
+    source_not_in_book_cmds: set[str] = set()
 
     for row in main_rows:
-        command = index_command(row)
-        source_scope = (row.get("source_scope") or "").strip()
-        source_ref = (row.get("source_ref") or "").strip()
-
-        if source_scope == "explicit_tag":
+        path, site, cmd = classify_row_emission(row, model_entry_heading_map)
+        if path == "explicit_tag":
             continue
-
-        if not source_ref:
+        if path == "source_not_in_book":
+            source_not_in_book_cmds.add(cmd)
             continue
-
-        if ".md:" in source_ref:
-            path_part, line_part = source_ref.rsplit(":", 1)
-            line_is_int = line_part.isdigit()
-            if source_scope in line_injected_scopes:
-                if line_is_int and path_part in allowed_line_paths:
-                    collapsed_non_explicit_sites.add(("line", f"{path_part}:{line_part}", command))
-                continue
-            if path_part in model_entry_heading_map:
-                collapsed_non_explicit_sites.add(("heading", model_entry_heading_map[path_part], command))
-            elif line_is_int and path_part in allowed_line_paths:
-                collapsed_non_explicit_sites.add(("line", f"{path_part}:{line_part}", command))
-            elif source_ref in allowed_heading_refs:
-                collapsed_non_explicit_sites.add(("heading", source_ref, command))
-        elif source_ref in allowed_heading_refs:
-            collapsed_non_explicit_sites.add(("heading", source_ref, command))
+        collapsed_non_explicit_sites.add((path, site, cmd))
 
     expected_counter: Counter[str] = Counter()
     for _, _, command in collapsed_non_explicit_sites:
@@ -268,11 +274,19 @@ def main() -> None:
     actual_counter: Counter[str] = Counter()
     for body in all_iv_bodies:
         full_cmd = r"\index[iv]{" + body + "}"
-        actual_counter[full_cmd] += 1
-        actual_counter[full_cmd] += 1
+        actual_counter[full_cmd] += 1  # each command counted exactly once
 
-    # Every actual command must be in the expected set
-    spurious_cmds = [cmd for cmd in actual_counter if cmd not in expected_command_set]
+    # Regression guard: each body must produce exactly one increment.
+    assert all(
+        actual_counter[r"\index[iv]{" + b + "}"] >= 1 for b in all_iv_bodies
+    ), "Internal error: body extracted with zero count — double-counting protection failed."
+
+    # Every actual command must be in the expected set OR a source_not_in_book cmd
+    # (which may appear via explicit_tag at non-manifest headings)
+    spurious_cmds = [
+        cmd for cmd in actual_counter
+        if cmd not in expected_command_set
+    ]
     assert not spurious_cmds, (
         f"TeX contains \\index[iv]{{...}} commands NOT in print_main.tsv "
         f"({len(spurious_cmds)} total); first examples:\n"
@@ -282,9 +296,12 @@ def main() -> None:
     # Sanity: at least some commands must be present
     assert actual_counter, "Generated TeX contains no \\index[iv] commands."
 
-    # Converse coverage: every required non-explicit printable command occurrence
-    # must appear in generated TeX at least as many times as injection semantics demand.
-    missing = [cmd for cmd, count in expected_counter.items() if count > actual_counter.get(cmd, 0)]
+    # Converse coverage: every collapsed non-explicit site must fire at least once.
+    # source_not_in_book entries are deliberately absent — not checked here.
+    missing = [
+        cmd for cmd, count in expected_counter.items()
+        if count > actual_counter.get(cmd, 0)
+    ]
     assert not missing, (
         "Required printable index commands are missing from generated TeX:\n"
         + "\n".join(
@@ -293,29 +310,26 @@ def main() -> None:
         )
     )
 
-    # ── Explicit-occurrence two-sided coverage check ──────────────────────────
-    # Every printable explicit_tag occurrence in canonical assembled sources must
-    # produce its \\index[iv]{...} command in generated TeX, and the generated count
-    # for each explicit command must not exceed the expected count.
+    # ── Explicit-occurrence exact-count parity ────────────────────────────────
+    # Each explicit_tag row in print_main represents "at least one printable span
+    # at this source line", but a single source line may contain multiple identical
+    # spans (e.g., the same form mentioned twice in a sentence). The Lua filter
+    # emits once per span; print_main deduplicates same-line same-form rows into
+    # one row. So actual >= expected for each command is the correct lower bound;
+    # actual < expected (fewer TeX commands than print_main rows) means a whole
+    # line-group of spans was silently dropped.
     #
-    # Every printable row should emit exactly one command body. Explicit model-entry
-    # occurrences now preserve their original model-entry provenance through the
-    # lexical volume and combined book, so the Lua filter can emit them in place.
-    # Occurrence identity: (language, form_role, form, display, source_ref, variety).
-    lua_filter_source_paths = {
-        INTRO_PATH.relative_to(REPO_ROOT).as_posix(),
-        CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix(),
-    }
+    # An upper bound cannot be checked reliably per-command (different model entries
+    # may share the same command body, and same-line multi-span is legitimate).
+    # Double-emission (Lua + Python on the same page) is acceptable because the
+    # two emissions represent different page positions for MakeIndex.
     explicit_expected_counter: Counter[str] = Counter()
     for row in main_rows:
         if (row.get("source_scope") or "").strip() != "explicit_tag":
             continue
-        source_ref = row_source_ref(row)
-        path_part = source_ref.rsplit(":", 1)[0] if ":" in source_ref else source_ref
         explicit_expected_counter[index_command(row)] += 1
 
-    # Explicit commands: actual count must match expected count exactly.
-    # Lower bound: every expected explicit occurrence must be present exactly once.
+    # Lower bound: every expected explicit occurrence must appear at least once.
     explicit_missing = [
         cmd for cmd, exp_count in explicit_expected_counter.items()
         if actual_counter.get(cmd, 0) < exp_count

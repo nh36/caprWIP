@@ -43,6 +43,7 @@ PREOE_REVIEW_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_preoe_review.
 PRINT_DECISIONS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_decisions.tsv"
 READER_FACING_EXAMPLE_PATH = REPO_ROOT / "Germanic/docs/book/reader_facing_example_forms.tsv"
 BASELINE_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_unresolved_baseline.tsv"
+EXPLICIT_ALLOW_SORTKEY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_explicit_allow_sortkey.tsv"
 COMBINED_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 BUILDER_PATH = REPO_ROOT / "Germanic/docs/assembly/build_capr_book_draft.py"
 BOOK_DRAFT_DOCKER_BUILD_PATH = REPO_ROOT / "Germanic/docs/assembly/build_capr_book_draft_docker.sh"
@@ -1282,7 +1283,41 @@ def main() -> None:
     assert_reader_failure_pair_roles()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
+    assert_sortkey_allow_no_collisions()
     print("index verborum checks passed")
+
+
+def assert_sortkey_allow_no_collisions() -> None:
+    """No two eligible rows may share the sort-key allowlist identity.
+
+    The sort-key allowlist (index_verborum_explicit_allow_sortkey.tsv) is used as
+    a Unicode-normalization-safe fallback for Lua eligibility matching.  Its key is
+    (language, form_role, sort_key, source_ref, variety).  If two distinct eligible
+    forms at the same source reference and role produce the same sort key, the
+    fallback would admit the wrong occurrence.  This must not happen.
+    """
+    if not EXPLICIT_ALLOW_SORTKEY_PATH.exists():
+        return
+    from collections import Counter
+    key_counter: Counter[tuple[str, str, str, str, str]] = Counter()
+    with EXPLICIT_ALLOW_SORTKEY_PATH.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            key = (
+                (row.get("language") or "").strip(),
+                (row.get("form_role") or "").strip(),
+                (row.get("sort_key") or "").strip(),
+                (row.get("source_ref") or "").strip(),
+                (row.get("variety") or "").strip(),
+            )
+            key_counter[key] += 1
+    collisions = {k: v for k, v in key_counter.items() if v > 1}
+    assert not collisions, (
+        f"Sort-key allowlist has {len(collisions)} collision(s) "
+        f"(distinct forms sharing same language+role+sort_key+source_ref+variety); "
+        f"the fallback would admit the wrong occurrence.\n"
+        + "\n".join(f"  {k}: {v} rows" for k, v in sorted(collisions.items())[:5])
+    )
+
 
 
 if __name__ == "__main__":
