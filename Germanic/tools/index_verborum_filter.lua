@@ -5,6 +5,60 @@ local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
 
+-- ── Unicode NFC normalization ──────────────────────────────────────────────────
+-- Contract: both the values loaded from print_main.tsv and the form/display values
+-- derived from the Pandoc span are normalized to NFC before the eligibility
+-- comparison. This makes primary matching robust to source-file normalization
+-- differences (e.g. NFD form content from Pandoc stringify vs NFC TSV storage).
+--
+-- All production spans are NFC (the Python pipeline normalizes output). This
+-- function handles the edge case and ensures the test suite can prove the contract.
+--
+-- Implementation: targeted table-driven composition for the OE diacritic set
+-- (combining macron U+0304 and combining dot above U+0307). Wider combining
+-- characters not used in the corpus are not listed and pass through unchanged.
+-- Multi-byte-base sequences (æ, Æ) are applied before single-byte-base sequences
+-- to prevent partial replacements.
+local NFC_WIDE = {
+  -- æ/Æ + combining macron  (4-byte NFD → 2-byte NFC)
+  ["\xc3\xa6\xcc\x84"] = "\xc7\xa3",  -- ǣ U+01E3
+  ["\xc3\x86\xcc\x84"] = "\xc7\xa2",  -- Ǣ U+01E2
+}
+local NFC_NARROW = {
+  -- vowel + combining macron (3-byte NFD → 2-byte NFC)
+  ["\x61\xcc\x84"] = "\xc4\x81",  -- ā U+0101
+  ["\x65\xcc\x84"] = "\xc4\x93",  -- ē U+0113
+  ["\x69\xcc\x84"] = "\xc4\xab",  -- ī U+012B
+  ["\x6f\xcc\x84"] = "\xc5\x8d",  -- ō U+014D
+  ["\x75\xcc\x84"] = "\xc5\xab",  -- ū U+016B
+  ["\x41\xcc\x84"] = "\xc4\x80",  -- Ā U+0100
+  ["\x45\xcc\x84"] = "\xc4\x92",  -- Ē U+0112
+  ["\x49\xcc\x84"] = "\xc4\xaa",  -- Ī U+012A
+  ["\x4f\xcc\x84"] = "\xc5\x8c",  -- Ō U+014C
+  ["\x55\xcc\x84"] = "\xc5\xaa",  -- Ū U+016A
+  -- consonant + combining dot above (3-byte NFD → 2/3-byte NFC)
+  ["\x63\xcc\x87"] = "\xc4\x8b",      -- ċ U+010B
+  ["\x67\xcc\x87"] = "\xc4\xa1",      -- ġ U+0121
+  ["\x43\xcc\x87"] = "\xc4\x8a",      -- Ċ U+010A
+  ["\x47\xcc\x87"] = "\xc4\xa0",      -- Ġ U+0120
+  ["\x73\xcc\x87"] = "\xe1\xb9\xa1",  -- ṡ U+1E61
+  ["\x77\xcc\x87"] = "\xe1\xba\x87",  -- ẇ U+1E87
+  ["\x53\xcc\x87"] = "\xe1\xb9\xa0",  -- Ṡ U+1E60
+  ["\x57\xcc\x87"] = "\xe1\xba\x86",  -- Ẇ U+1E86
+}
+
+local function nfc_normalize(s)
+  -- Apply multi-byte-base patterns first (æ/Æ+macron) to avoid partial replacement
+  -- of their ASCII tail bytes by the narrow table.
+  for nfd, nfc in pairs(NFC_WIDE) do
+    s = s:gsub(nfd, nfc)
+  end
+  for nfd, nfc in pairs(NFC_NARROW) do
+    s = s:gsub(nfd, nfc)
+  end
+  return s
+end
+
 local function trim(value)
   return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
 end
@@ -191,8 +245,8 @@ local function ensure_print_main_loaded()
       if column(cells, indices["source_scope"]) == "explicit_tag" then
         local language = column(cells, indices["language"])
         local role = column(cells, indices["form_role"])
-        local form = column(cells, indices["form"])
-        local display = column(cells, indices["display"])
+        local form = nfc_normalize(column(cells, indices["form"]))
+        local display = nfc_normalize(column(cells, indices["display"]))
         local source_ref = column(cells, indices["source_ref"])
         local variety = column(cells, indices["variety"])
         if role == "" then
@@ -287,8 +341,8 @@ local function span_to_index(span)
   local variety = trim(span.attributes["variety"] or "")
   -- Fail-closed validation; also yields the printed label (blank => no suffix).
   local variety_label = validate_variety(lang, variety)
-  local form = trim(pandoc.utils.stringify(span.content))
-  local display_attr = trim(span.attributes["display"] or "")
+  local form = nfc_normalize(trim(pandoc.utils.stringify(span.content)))
+  local display_attr = nfc_normalize(trim(span.attributes["display"] or ""))
   -- A combined .recon .iv span carries reconstruction semantics; derive the starred
   -- display automatically when no explicit display= attribute is provided.
   local is_recon = has_class(span, "recon")

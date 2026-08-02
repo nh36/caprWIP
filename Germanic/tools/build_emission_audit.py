@@ -52,10 +52,60 @@ def extract_iv_bodies(text: str) -> list[str]:
     return bodies
 
 
+def validate_command_counts(
+    emission_rows: list[dict[str, str]],
+    actual: Counter[str],
+) -> list[str]:
+    """Validate that every in-book emission fires the expected number of times.
+
+    Constructs expected_commands from canonical in-book emission plan:
+      expected_commands[cmd] = count of distinct in-book emission_ids with that cmd
+
+    Compares with actual TeX commands extracted from the final build.
+
+    Returns a list of error messages. Empty list means all counts match.
+    """
+    # Unique in-book emission_ids and their command
+    seen: set[str] = set()
+    expected: Counter[str] = Counter()
+    rep_by_cmd: defaultdict[str, list[str]] = defaultdict(list)
+    for row in emission_rows:
+        if row["in_book"] != "1":
+            continue
+        eid = row["emission_id"]
+        if eid in seen:
+            continue
+        seen.add(eid)
+        cmd = row["index_command"]
+        expected[cmd] += 1
+        rep_occ = row["occurrence_id"] if not (row.get("collapsed_into") or "").strip() else None
+        if rep_occ:
+            rep_by_cmd[cmd].append(f"emission={eid[:20]},rep={rep_occ[:40]}")
+
+    errors: list[str] = []
+    all_cmds = set(expected) | set(actual)
+    for cmd in all_cmds:
+        exp = expected.get(cmd, 0)
+        act = actual.get(cmd, 0)
+        if act < exp:
+            errors.append(
+                f"MISSING emission: expected={exp} actual={act}\n"
+                f"  cmd: {cmd[:120]}\n"
+                f"  sources: {rep_by_cmd.get(cmd, [])[:3]}"
+            )
+        elif act > exp:
+            errors.append(
+                f"DUPLICATE emission: expected={exp} actual={act}\n"
+                f"  cmd: {cmd[:120]}"
+            )
+    return errors
+
+
 def validate_audit(
     main_rows: list[dict[str, str]],
     audit_rows: list[dict[str, str]],
     emission_rows: list[dict[str, str]],
+    actual: Counter[str] | None = None,
 ) -> None:
     """Fail-closed runtime validation of the generated audit.
 
@@ -63,7 +113,7 @@ def validate_audit(
     """
     errors: list[str] = []
 
-    # 1. Exact occurrence coverage: audit must contain every print_main occurrence.
+    # 1. Exact occurrence coverage.
     pm_ids = Counter((r.get("occurrence_id") or "").strip() for r in main_rows)
     audit_ids = Counter((r.get("occurrence_id") or "").strip() for r in audit_rows)
     if "" in pm_ids:
@@ -82,41 +132,122 @@ def validate_audit(
             + (f"\n  extra examples: {extra[:3]}" if extra else "")
         )
 
-    # 2. Book/emission consistency
+    # 2. Build exact structures for representative and emission validation.
+    in_book_by_emission: defaultdict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in emission_rows:
+        if row["in_book"] == "1":
+            in_book_by_emission[row["emission_id"]].append(row)
+
+    representatives_by_emission: dict[str, list[dict[str, str]]] = {
+        eid: [r for r in rows if not (r.get("collapsed_into") or "").strip()]
+        for eid, rows in in_book_by_emission.items()
+    }
+
+    audit_by_emission: defaultdict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in audit_rows:
+        if (row.get("in_book") or "").strip() == "1":
+            audit_by_emission[(row.get("emission_id") or "").strip()].append(row)
+
+    # 3. Per-emission invariants.
+    for eid, et_rows in in_book_by_emission.items():
+        reps = representatives_by_emission[eid]
+        is_explicit = all(r.get("source_scope") == "explicit_tag" for r in et_rows)
+        is_shared = len(et_rows) > 1
+
+        # Every emission must have exactly one representative.
+        if len(reps) != 1:
+            errors.append(
+                f"Emission {eid[:30]}: expected 1 representative, "
+                f"got {len(reps)} (collapsed_into=='' rows)"
+            )
+
+        # Explicit emissions must have exactly one occurrence and no collapse.
+        if is_explicit and len(et_rows) != 1:
+            errors.append(f"Explicit emission {eid[:30]} has {len(et_rows)} occurrences; expected 1")
+        if is_explicit and et_rows and (et_rows[0].get("collapsed_into") or "").strip():
+            errors.append(f"Explicit emission {eid[:30]} has nonblank collapsed_into")
+
+        # Non-explicit collapsing: all non-representative rows must point to emission_id.
+        for row in et_rows:
+            ci = (row.get("collapsed_into") or "").strip()
+            is_rep = not ci
+            if not is_rep and ci != eid:
+                errors.append(
+                    f"Emission {eid[:30]}: collapsed occurrence {row['occurrence_id'][:40]} "
+                    f"has collapsed_into={ci!r} != emission_id={eid[:30]!r}"
+                )
+
+        # Audit disposition pattern for shared non-explicit emissions.
+        if is_shared and not is_explicit:
+            a_rows = audit_by_emission.get(eid, [])
+            injected = [r for r in a_rows if r.get("disposition") in ("heading_injected", "line_injected")]
+            collapsed = [r for r in a_rows if r.get("disposition") == "collapsed_same_site"]
+            expected_path = et_rows[0].get("emission_path", "")
+            expected_dispo = "heading_injected" if expected_path == "heading_injection" else "line_injected"
+            if len(injected) != 1:
+                errors.append(
+                    f"Shared emission {eid[:30]}: expected 1 injected audit row, "
+                    f"got {len(injected)}"
+                )
+            if len(collapsed) != len(et_rows) - 1:
+                errors.append(
+                    f"Shared emission {eid[:30]}: expected {len(et_rows)-1} collapsed rows, "
+                    f"got {len(collapsed)}"
+                )
+            for r in injected:
+                if r.get("disposition") != expected_dispo:
+                    errors.append(
+                        f"Shared emission {eid[:30]}: injected row has disposition "
+                        f"{r.get('disposition')!r}, expected {expected_dispo!r}"
+                    )
+
+        # Audit disposition pattern for singleton non-explicit emissions.
+        if not is_shared and not is_explicit:
+            a_rows = audit_by_emission.get(eid, [])
+            if len(a_rows) != 1:
+                errors.append(f"Singleton emission {eid[:30]} has {len(a_rows)} audit rows; expected 1")
+            for r in a_rows:
+                if r.get("disposition") not in ("heading_injected", "line_injected"):
+                    errors.append(
+                        f"Singleton emission {eid[:30]}: wrong disposition {r.get('disposition')!r}"
+                    )
+                if (r.get("collapsed_into") or "").strip():
+                    errors.append(f"Singleton emission {eid[:30]}: nonblank collapsed_into")
+
+    # 4. Collapsed audit rows point to existing emissions with one representative.
+    for row in audit_rows:
+        ci = (row.get("collapsed_into") or "").strip()
+        eid = (row.get("emission_id") or "").strip()
+        dispo = (row.get("disposition") or "").strip()
+        if not ci:
+            continue
+        if dispo != "collapsed_same_site":
+            errors.append(f"collapsed row has wrong disposition {dispo!r}: {row.get('occurrence_id')}")
+        if eid not in representatives_by_emission:
+            errors.append(f"collapsed row points to nonexistent emission {eid!r}: {row.get('occurrence_id')}")
+        elif len(representatives_by_emission.get(eid, [])) != 1:
+            errors.append(f"collapsed row's emission {eid!r} has multiple representatives")
+        if ci != eid:
+            errors.append(f"collapsed_into={ci!r} != emission_id={eid!r}: {row.get('occurrence_id')}")
+
+    # 5. Book/emission consistency for non-book rows.
     for r in audit_rows:
         in_bk = (r.get("in_book") or "").strip()
-        eid = (r.get("emission_id") or "").strip()
-        ci = (r.get("collapsed_into") or "").strip()
         dispo = (r.get("disposition") or "").strip()
+        eid = (r.get("emission_id") or "").strip()
         if in_bk == "1" and not eid:
-            errors.append(f"in_book row has blank emission_id: {r.get('occurrence_id')}")
+            errors.append(f"in_book audit row has blank emission_id: {r.get('occurrence_id')}")
         if in_bk != "1" and dispo != "source_not_in_book":
             errors.append(f"non-book row has wrong disposition {dispo!r}: {r.get('occurrence_id')}")
         if dispo == "source_not_in_book" and in_bk == "1":
             errors.append(f"source_not_in_book row claims in_book=1: {r.get('occurrence_id')}")
-        if ci and dispo != "collapsed_same_site":
-            errors.append(f"collapsed row has wrong disposition {dispo!r}: {r.get('occurrence_id')}")
-        if dispo == "collapsed_same_site" and not ci:
-            errors.append(f"collapsed_same_site row has blank collapsed_into: {r.get('occurrence_id')}")
-        if ci and eid and ci != eid:
-            errors.append(f"collapsed_into != emission_id for {r.get('occurrence_id')}: {ci!r} != {eid!r}")
 
-    # 3. Representative consistency
-    # Build representative set from emission table (blank collapsed_into + in_book)
-    representatives: set[str] = {
-        r["occurrence_id"] for r in emission_rows
-        if r["in_book"] == "1" and not (r.get("collapsed_into") or "").strip()
-    }
-    for r in audit_rows:
-        ci = (r.get("collapsed_into") or "").strip()
-        eid = (r.get("emission_id") or "").strip()
-        dispo = (r.get("disposition") or "").strip()
-        if not ci or dispo != "collapsed_same_site":
-            continue
-        if eid not in {r2["emission_id"] for r2 in emission_rows if not (r2.get("collapsed_into") or "").strip() and r2["in_book"] == "1"}:
-            errors.append(f"collapsed row points to nonexistent representative emission {eid!r}")
+    # 6. Command-count validation (if actual TeX commands provided).
+    if actual is not None:
+        cmd_errors = validate_command_counts(emission_rows, actual)
+        errors.extend(cmd_errors)
 
-    # 4. No forbidden dispositions
+    # 7. No forbidden dispositions.
     BAD_DISPOSITIONS = {"missing_from_assembly", "unresolved", "duplicate_emission"}
     bad = [(r.get("occurrence_id"), r.get("disposition")) for r in audit_rows
            if (r.get("disposition") or "") in BAD_DISPOSITIONS]
@@ -227,7 +358,7 @@ def main() -> None:
 
     # Fail-closed validation before writing.
     try:
-        validate_audit(main_rows, audit_rows, emission_rows)
+        validate_audit(main_rows, audit_rows, emission_rows, actual)
     except AssertionError as e:
         sys.exit(str(e))
 

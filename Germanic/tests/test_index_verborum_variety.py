@@ -670,38 +670,38 @@ class LuaParityTests(unittest.TestCase):
             self.assertNotIn("occ_id=", proc.stdout)
 
     def test_unicode_primary_matching_nfc_nfd_mismatch(self):
-        """Primary eligibility matches even with NFC/NFD normalization mismatch.
+        """Primary form-matching normalizes both TSV and span content to NFC.
 
-        Scenario:
-          * The print_main fixture has the form and display stored as NFC.
-          * The Markdown span content uses the canonically equivalent NFD form,
-            but carries the NFC value in its explicit display= attribute.
-          * The two strings are bytewise different but canonically equivalent.
-          * The Lua filter must emit \\index[iv] via the display-attribute match
-            without any sort-key fallback.
+        Contract: the Lua filter applies targeted NFC composition (covering OE
+        diacritics: combining macron U+0304 and combining dot above U+0307) to
+        both the values loaded from print_main.tsv and the visible form derived from
+        pandoc.utils.stringify(span.content). This makes eligibility matching robust
+        to source-file normalization form.
 
-        This replicates the production pipeline where the display= attribute always
-        carries the NFC-normalised value set programmatically by the Python
-        annotation layer, making the filter robust to Pandoc's preservation of
-        source-file normalization in stringified content.
+        Test setup:
+          * print_main.tsv stores NFC form and NFC display.
+          * Markdown span carries NFD visible content.
+          * No display= attribute — the form from stringify is the only match candidate.
+          * The NFC normalizer must compose both sides so the lookup succeeds.
+          * No sort-key fallback is involved.
+
+        This is a real production-path test: ordinary corpus spans do not carry
+        an explicit display= attribute, and the filter must still match them.
         """
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             pm = tmp / "pm.tsv"
             ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
 
-            # Use OE 'āsceaf' (a + combining macron vs precomposed ā)
+            # OE 'āsceaf': a (U+0061) + combining macron (U+0304) vs precomposed ā (U+0101)
             form_nfc = unicodedata.normalize("NFC", "\u0101sceaf")
             form_nfd = unicodedata.normalize("NFD", "\u0101sceaf")
 
-            # Regression assertion: the two strings genuinely differ bytewise.
-            self.assertNotEqual(form_nfc.encode(), form_nfd.encode(),
+            # Regression: the two strings must differ bytewise but be canonically equivalent.
+            self.assertNotEqual(form_nfc.encode("utf-8"), form_nfd.encode("utf-8"),
                                 "NFC and NFD encodings must differ for this test to be meaningful")
-            # ...but are canonically equivalent.
-            self.assertEqual(
-                unicodedata.normalize("NFC", form_nfd), form_nfc,
-                "NFD form must normalize back to NFC form"
-            )
+            self.assertEqual(unicodedata.normalize("NFC", form_nfd), form_nfc,
+                             "NFD form must normalize back to NFC form")
 
             header = ["language", "variety", "form", "display", "sort_key", "form_role",
                       "source_scope", "source_ref", "occurrence_id", "origin", "status"]
@@ -719,12 +719,11 @@ class LuaParityTests(unittest.TestCase):
                 "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
             })
             src = tmp / "in.md"
-            # Span content is NFD; display= attribute carries the NFC value.
-            # This is what the production pipeline produces: source files use NFC,
-            # the display= attribute is set from NFC-normalised data.
+            # Span has NFD visible content. Critically: no display= attribute.
+            # The Lua filter must normalize the form from stringify to NFC and match
+            # the NFC TSV entry via the primary form-based eligibility check.
             span = (
                 "[" + form_nfd + "]{.iv lang=oe sort=asceaf role=target_form"
-                + ' display="' + form_nfc + '"'
                 + ' source_ref="' + ref + '"'
                 + ' occ_id="' + ref + ':1"}'
             )
@@ -736,7 +735,8 @@ class LuaParityTests(unittest.TestCase):
             )
             self.assertEqual(proc.returncode, 0, proc.stderr)
             self.assertIn(r"\index[iv]", proc.stdout,
-                          "Lua filter must emit command when display attr carries NFC form")
+                          "Lua NFC normalizer must emit command via primary form match "
+                          "(no display= attribute, no fallback)")
 
 
 class OccurrenceModelHardeningTests(unittest.TestCase):
@@ -927,6 +927,168 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         if p.exists():
             rows = list(csv.DictReader(p.open(encoding="utf-8")))
             self.assertEqual(len(rows), 0, "fallback uses must be zero")
+
+
+class AuditValidationTests(unittest.TestCase):
+    """Direct negative tests for validate_audit() using synthetic row sets.
+
+    Each test proves that validate_audit() raises AssertionError when a specific
+    invariant is violated. One positive test proves it accepts a valid set.
+    """
+
+    @staticmethod
+    def _import_validate():
+        import sys
+        sys.path.insert(0, str(TOOLS))
+        from build_emission_audit import validate_audit, validate_command_counts
+        return validate_audit, validate_command_counts
+
+    def _make_rows(self, n=1, explicit=True, shared=False):
+        """Build minimal synthetic main_rows, audit_rows, and emission_rows."""
+        rows = []
+        emission_rows = []
+        audit_rows = []
+        for i in range(1, n + 1):
+            occ = f"occ{i}"
+            eid = "emit001" if shared else f"emit{i:03d}"
+            cmd = "\\index[iv]{01oe@\\ivlangheader{OE}{}!form@\\iventry{form}{}}"
+            scope = "explicit_tag" if explicit else "heading_injection"
+            rows.append({"occurrence_id": occ, "source_scope": scope,
+                         "language": "oe", "form": "form", "display": "form", "sort_key": "form",
+                         "form_role": "target_form", "source_ref": f"src.md:{i}", "variety": "",
+                         "origin": "x", "status": "auto"})
+            collapsed = "" if i == 1 else eid
+            emission_rows.append({
+                "occurrence_id": occ, "emission_id": eid,
+                "source_scope": scope, "emission_path": "explicit_tag" if explicit else "heading_injection",
+                "site": "heading", "index_command": cmd, "in_book": "1", "collapsed_into": collapsed,
+                "language": "oe", "variety": "", "form": "form", "display": "form",
+                "sort_key": "form", "form_role": "target_form", "source_ref": f"src.md:{i}",
+            })
+            dispo = "emitted_once" if explicit else ("heading_injected" if i == 1 else "collapsed_same_site")
+            audit_rows.append({
+                "occurrence_id": occ, "emission_id": eid, "collapsed_into": collapsed,
+                "in_book": "1", "disposition": dispo, "expected_emission_path": scope,
+                "expected_site": "heading", "emitted_count": "1",
+                "language": "oe", "form": "form", "display": "form", "sort_key": "form",
+                "form_role": "target_form", "source_scope": scope, "source_ref": f"src.md:{i}",
+                "variety": "", "reason": "ok",
+            })
+        return rows, audit_rows, emission_rows
+
+    def test_positive_valid_set(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(1, explicit=True)
+        va(main, audit, et)  # must not raise
+
+    def test_positive_shared_emission(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(3, explicit=False, shared=True)
+        va(main, audit, et)  # must not raise
+
+    def test_missing_occurrence(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(2, explicit=True)
+        audit_short = [audit[0]]  # drop second occurrence
+        with self.assertRaises(AssertionError):
+            va(main, audit_short, et)
+
+    def test_duplicate_occurrence_id(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(1, explicit=True)
+        audit_dup = audit + audit  # duplicate
+        with self.assertRaises(AssertionError):
+            va(main, audit_dup, et)
+
+    def test_in_book_row_blank_emission_id(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(1, explicit=True)
+        audit[0]["emission_id"] = ""
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_shared_emission_zero_representatives(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(2, explicit=False, shared=True)
+        # Make both rows collapsed — no representative
+        et[0]["collapsed_into"] = "emit001"
+        audit[0]["collapsed_into"] = "emit001"
+        audit[0]["disposition"] = "collapsed_same_site"
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_shared_emission_two_representatives(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(2, explicit=False, shared=True)
+        # Both rows have blank collapsed_into → two representatives
+        et[1]["collapsed_into"] = ""
+        audit[1]["collapsed_into"] = ""
+        audit[1]["disposition"] = "heading_injected"
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_collapsed_row_nonexistent_emission(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(2, explicit=False, shared=True)
+        audit[1]["collapsed_into"] = "nonexistent_emission"
+        audit[1]["emission_id"] = "nonexistent_emission"
+        et[1]["collapsed_into"] = "nonexistent_emission"
+        et[1]["emission_id"] = "nonexistent_emission"
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_collapsed_row_wrong_disposition(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(2, explicit=False, shared=True)
+        audit[1]["disposition"] = "heading_injected"  # should be collapsed_same_site
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_shared_emission_two_injected_rows(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(3, explicit=False, shared=True)
+        # Two rows have representative disposition
+        audit[1]["disposition"] = "heading_injected"
+        audit[1]["collapsed_into"] = ""
+        et[1]["collapsed_into"] = ""
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_forbidden_disposition_missing_from_assembly(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(1, explicit=True)
+        audit[0]["disposition"] = "missing_from_assembly"
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_forbidden_disposition_unresolved(self):
+        va, _ = self._import_validate()
+        main, audit, et = self._make_rows(1, explicit=True)
+        audit[0]["disposition"] = "unresolved"
+        with self.assertRaises(AssertionError):
+            va(main, audit, et)
+
+    def test_command_count_below_expected(self):
+        _, vcc = self._import_validate()
+        et = [{"occurrence_id": "occ1", "emission_id": "emit001",
+               "index_command": "\\index[iv]{cmd1}", "in_book": "1",
+               "collapsed_into": "", "emission_path": "explicit_tag",
+               "source_scope": "explicit_tag"}]
+        actual = Counter()  # zero occurrences — command missing
+        errors = vcc(et, actual)
+        self.assertTrue(errors, "missing command should produce errors")
+        self.assertTrue(any("MISSING" in e for e in errors))
+
+    def test_command_count_above_expected(self):
+        _, vcc = self._import_validate()
+        et = [{"occurrence_id": "occ1", "emission_id": "emit001",
+               "index_command": "\\index[iv]{cmd1}", "in_book": "1",
+               "collapsed_into": "", "emission_path": "explicit_tag",
+               "source_scope": "explicit_tag"}]
+        actual = Counter({"\\index[iv]{cmd1}": 3})  # 3 > expected 1
+        errors = vcc(et, actual)
+        self.assertTrue(errors, "duplicate command should produce errors")
+        self.assertTrue(any("DUPLICATE" in e for e in errors))
 
 
 if __name__ == "__main__":
