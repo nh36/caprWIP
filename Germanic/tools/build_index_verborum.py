@@ -15,6 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "docs" / "assembly"))
 import index_verborum_render as ivr
+from index_verborum_emission import make_non_explicit_occurrence_id, write_emission_views
 
 # Import the print normalization function from the lexical volume builder so
 # that index form/display fields use the same encoding as assembled prose.
@@ -614,17 +615,14 @@ class ProductionOccurrence:
     origins: set[str] = field(default_factory=set)
     status: str = "auto"
     variety: str = ""
-    # Stable occurrence identity: source_ref:ordinal (ordinal=1 for the common
-    # case of one occurrence per source location; ordinal=2,3... for same-line
-    # same-semantic duplicate spans).  Assigned during explicit_tag harvesting;
-    # non-explicit rows use source_ref as their identity.
+    # Deterministic source-locator occurrence identity.
+    # explicit_tag rows use canonical source_ref:ordinal IDs.
+    # non-explicit rows use scope-aware deterministic IDs.
     occurrence_id: str = ""
 
     @property
     def key(self) -> tuple[str, str, str, str, str, str, str]:
-        # Use occurrence_id as the uniqueness discriminator when present (explicit_tag);
-        # fall back to source_ref for injected non-explicit rows.
-        identity = self.occurrence_id if self.occurrence_id else self.source_ref
+        identity = self.occurrence_id
         return (self.language, self.variety, self.form, self.display, self.form_role, self.source_scope, identity)
 
 
@@ -794,9 +792,22 @@ def add_production(
     variety = (variety or "").strip()
     VARIETY_REGISTRY.validate_occurrence(language, variety)
     visible = display or cleaned
-    # Use occurrence_id as dedup key when provided (explicit_tag occurrences);
-    # fall back to source_ref for injected rows where dedup by site is intended.
-    identity = occurrence_id if occurrence_id else source_ref
+    if source_scope == "explicit_tag" and not occurrence_id:
+        occurrence_id = f"{source_ref}:1"
+    if source_scope != "explicit_tag" and not occurrence_id:
+        occurrence_id = make_non_explicit_occurrence_id(
+            {
+                "source_scope": source_scope,
+                "source_ref": source_ref,
+                "language": language,
+                "variety": variety,
+                "form": cleaned,
+                "display": visible,
+                "form_role": form_role,
+                "sort_key": sort_key or transliterate_sort_key(visible),
+            }
+        )
+    identity = occurrence_id
     key = (language, variety, cleaned, visible, form_role, source_scope, identity)
     if key not in store:
         new_occ = ProductionOccurrence(
@@ -3021,6 +3032,7 @@ def split_print_main_rows(
                     "form_role": row.form_role,
                     "source_scope": row.source_scope,
                     "source_ref": row.source_ref,
+                    "occurrence_id": row.occurrence_id,
                     "origin": "; ".join(sorted(row.origins)),
                     "status": row.status,
                     "exclusion_reason": exclusion_reason,
@@ -3077,8 +3089,9 @@ def write_explicit_allow_sortkey(path: Path, rows: list[ProductionOccurrence]) -
         for row in rows:
             if row.source_scope != "explicit_tag":
                 continue
-            # Use occurrence_id for unique key (handles same-line duplicates)
-            occ_id = row.occurrence_id if row.occurrence_id else row.source_ref
+            occ_id = row.occurrence_id
+            if not occ_id:
+                raise ValueError(f"explicit_tag row missing occurrence_id: {row.source_ref}")
             key = (row.language, row.form_role, row.sort_key, occ_id, row.variety)
             if key in seen:
                 continue
@@ -4391,8 +4404,10 @@ def main() -> None:
     write_index_registry_header(print_main_rows)
     write_forms(production_rows)
     write_print_main_rows(PRINT_MAIN_PATH, print_main_rows)
-    write_explicit_allow_sortkey(EXPLICIT_ALLOW_SORTKEY_PATH, print_main_rows)
+    if EXPLICIT_ALLOW_SORTKEY_PATH.exists():
+        EXPLICIT_ALLOW_SORTKEY_PATH.unlink()
     write_print_excluded_rows(PRINT_EXCLUDED_PATH, print_excluded_rows)
+    write_emission_views()
     write_print_unique_rows(PRINT_UNIQUE_PATH, print_unique_rows)
     write_print_anomaly_rows(PRINT_ANOMALIES_PATH, print_anomaly_rows)
     write_preoe_review(PREOE_REVIEW_PATH, preoe_review_rows)

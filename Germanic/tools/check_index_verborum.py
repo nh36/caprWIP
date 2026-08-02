@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 import tempfile
 import re
+from collections import Counter, defaultdict
 from pathlib import Path
 
 from build_index_verborum import (
@@ -985,6 +986,10 @@ def assert_print_layer_outputs() -> None:
         main_rows = list(main_reader)
         assert main_reader.fieldnames == ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "occurrence_id", "origin", "status"]
 
+    with FORMS_PATH.open(encoding="utf-8") as handle:
+        forms_reader = csv.DictReader(handle, delimiter="\t")
+        forms_rows = list(forms_reader)
+
     with PRINT_EXCLUDED_PATH.open(encoding="utf-8") as handle:
         excluded_reader = csv.DictReader(handle, delimiter="\t")
         excluded_rows = list(excluded_reader)
@@ -1004,6 +1009,30 @@ def assert_print_layer_outputs() -> None:
             "decision_action",
             "decision_note",
         ]
+    # Exact occurrence-identity partition:
+    # forms == print_main ⊎ print_excluded, with disjoint occurrence_id sets.
+    def occ_identity(row: dict[str, str]) -> tuple[str, str, str, str, str, str, str, str]:
+        return (
+            (row.get("occurrence_id") or "").strip(),
+            (row.get("language") or "").strip(),
+            (row.get("variety") or "").strip(),
+            (row.get("form") or "").strip(),
+            (row.get("display") or "").strip(),
+            (row.get("sort_key") or "").strip(),
+            (row.get("form_role") or "").strip(),
+            (row.get("source_scope") or "").strip(),
+        )
+
+    forms_counter = Counter(occ_identity(r) for r in forms_rows)
+    partition_counter = Counter(occ_identity(r) for r in main_rows)
+    partition_counter.update(occ_identity(r) for r in excluded_rows)
+    assert forms_counter == partition_counter, (
+        "forms occurrence identities must equal print_main + print_excluded "
+        "occurrence identities exactly"
+    )
+    main_occ_ids = {(r.get("occurrence_id") or "").strip() for r in main_rows if (r.get("occurrence_id") or "").strip()}
+    excl_occ_ids = {(r.get("occurrence_id") or "").strip() for r in excluded_rows if (r.get("occurrence_id") or "").strip()}
+    assert main_occ_ids.isdisjoint(excl_occ_ids), "print_main and print_excluded occurrence_id sets must be disjoint"
 
     with PRINT_UNIQUE_PATH.open(encoding="utf-8") as handle:
         unique_reader = csv.DictReader(handle, delimiter="\t")
@@ -1299,26 +1328,50 @@ def assert_sortkey_allow_no_collisions() -> None:
     """
     if not EXPLICIT_ALLOW_SORTKEY_PATH.exists():
         return
-    from collections import Counter
-    key_counter: Counter[tuple[str, str, str, str, str]] = Counter()
+    forms_rows = load_forms_rows()
+    explicit_by_occ: dict[str, list[dict[str, str]]] = {}
+    for row in forms_rows:
+        if (row.get("source_scope") or "").strip() != "explicit_tag":
+            continue
+        occ_id = (row.get("occurrence_id") or "").strip()
+        if not occ_id:
+            continue
+        explicit_by_occ.setdefault(occ_id, []).append(row)
+
+    key_to_forms: dict[tuple[str, str, str, str, str], set[tuple[str, str]]] = defaultdict(set)
+    seen_occ: set[str] = set()
     with EXPLICIT_ALLOW_SORTKEY_PATH.open(encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
-            # The sortkey allowlist now uses occurrence_id (unique per span) instead
-            # of source_ref (shared by same-line spans). Each key must be unique.
+            occ_id = (row.get("occurrence_id") or "").strip()
+            assert occ_id, "sort-key fallback row has blank occurrence_id"
+            matches = explicit_by_occ.get(occ_id, [])
+            assert len(matches) == 1, f"sort-key fallback occurrence_id must match exactly one explicit production row: {occ_id}"
+            prod = matches[0]
+            assert (prod.get("source_scope") or "").strip() == "explicit_tag"
+            assert (prod.get("language") or "").strip() == (row.get("language") or "").strip()
+            assert (prod.get("form_role") or "").strip() == (row.get("form_role") or "").strip()
+            assert (prod.get("sort_key") or "").strip() == (row.get("sort_key") or "").strip()
+            assert (prod.get("variety") or "").strip() == (row.get("variety") or "").strip()
+            seen_occ.add(occ_id)
             key = (
                 (row.get("language") or "").strip(),
                 (row.get("form_role") or "").strip(),
                 (row.get("sort_key") or "").strip(),
-                (row.get("occurrence_id") or row.get("source_ref") or "").strip(),
+                occ_id,
                 (row.get("variety") or "").strip(),
             )
-            key_counter[key] += 1
-    collisions = {k: v for k, v in key_counter.items() if v > 1}
+            key_to_forms[key].add(
+                (
+                    (prod.get("form") or "").strip(),
+                    (prod.get("display") or "").strip(),
+                )
+            )
+    collisions = {k: v for k, v in key_to_forms.items() if len(v) > 1}
     assert not collisions, (
         f"Sort-key allowlist has {len(collisions)} collision(s) "
-        f"(distinct forms sharing same language+role+sort_key+occurrence_id+variety); "
+        f"(same fallback key maps to multiple distinct form/display identities); "
         f"the fallback would admit the wrong occurrence.\n"
-        + "\n".join(f"  {k}: {v} rows" for k, v in sorted(collisions.items())[:5])
+        + "\n".join(f"  {k}: {sorted(v)}" for k, v in sorted(collisions.items())[:5])
     )
 
 

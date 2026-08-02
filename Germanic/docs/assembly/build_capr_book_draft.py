@@ -11,7 +11,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
-import index_verborum_render as ivr
+from index_verborum_emission import build_emission_table, load_model_entry_headings, load_print_main
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
@@ -34,25 +34,6 @@ def load_language_order() -> list[str]:
 
 LANGUAGE_ORDER = load_language_order()
 
-_LANG_META = ivr.load_language_registry()
-_VAR_REGISTRY = ivr.load_variety_registry()
-
-
-def latex_escape(value: str) -> str:
-    return ivr.latex_escape(value)
-
-
-def index_command(language: str, sort_key: str, display: str, variety: str = "") -> str:
-    return ivr.index_command(
-        language,
-        sort_key,
-        display,
-        variety,
-        lang_meta=_LANG_META,
-        var_registry=_VAR_REGISTRY,
-    )
-
-
 def oe_target_display(counterpart: str, derivation_class: str) -> str:
     return f"*{counterpart}" if derivation_class == "reconstructed_oe" else counterpart
 
@@ -64,48 +45,34 @@ def heading_ref(lexical_item: str, counterpart: str, derivation_class: str = "")
 def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, list[str]]], list[str]]:
     commands_by_heading_ref: dict[str, list[str]] = defaultdict(list)
     commands_by_line_ref: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
-    counts = Counter()
-    model_entry_heading_map = {}
-    line_injected_scopes = {"table_semantic_auto", "table_semantic_decision", "broad_prose_decision"}
-    with MANIFEST_PATH.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        for row in reader:
-            model_entry_heading_map[row["model_entry_path"]] = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
-    with PRINT_MAIN_PATH.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        for row in reader:
-            language = (row.get("language") or "").strip()
-            if not language:
+    main_rows = load_print_main()
+    emission_rows = build_emission_table(main_rows, load_model_entry_headings())
+    seen_emission_ids: set[str] = set()
+    for row in emission_rows:
+        if row.get("in_book") != "1":
+            continue
+        emission_id = row.get("emission_id", "")
+        if emission_id in seen_emission_ids:
+            continue
+        seen_emission_ids.add(emission_id)
+        path = row.get("emission_path", "")
+        if path == "explicit_tag":
+            continue
+        cmd = row.get("index_command", "")
+        site = row.get("site", "")
+        if path == "heading_injection":
+            if cmd not in commands_by_heading_ref[site]:
+                commands_by_heading_ref[site].append(cmd)
+        elif path == "line_injection":
+            if ".md:" not in site:
                 continue
-            counts[language] += 1
-            if row.get("source_scope") == "explicit_tag":
+            path_part, line_part = site.rsplit(":", 1)
+            if not line_part.isdigit():
                 continue
-            ref = (row.get("source_ref") or "").strip()
-            if not ref:
-                continue
-            command = index_command(language, (row.get("sort_key") or "").strip(), (row.get("display") or "").strip(), (row.get("variety") or "").strip())
-            if ".md:" in ref:
-                path_part, line_part = ref.rsplit(":", 1)
-                scope = row.get("source_scope", "")
-                if scope in line_injected_scopes and line_part.isdigit() and path_part not in model_entry_heading_map:
-                    # Line-inject only for intro/chronology sources; model-entry paths
-                    # must go to heading injection so transform_lexical can emit them.
-                    line_no = int(line_part)
-                    if command not in commands_by_line_ref[path_part][line_no]:
-                        commands_by_line_ref[path_part][line_no].append(command)
-                elif path_part in model_entry_heading_map:
-                    heading = model_entry_heading_map[path_part]
-                    if command not in commands_by_heading_ref[heading]:
-                        commands_by_heading_ref[heading].append(command)
-                elif line_part.isdigit():
-                    line_no = int(line_part)
-                    if command not in commands_by_line_ref[path_part][line_no]:
-                        commands_by_line_ref[path_part][line_no].append(command)
-            else:
-                if command not in commands_by_heading_ref[ref]:
-                    commands_by_heading_ref[ref].append(command)
-    nonempty = [language for language in LANGUAGE_ORDER if counts.get(language)]
-    return commands_by_heading_ref, commands_by_line_ref, nonempty
+            line_no = int(line_part)
+            if cmd not in commands_by_line_ref[path_part][line_no]:
+                commands_by_line_ref[path_part][line_no].append(cmd)
+    return commands_by_heading_ref, commands_by_line_ref, []
 
 
 def annotate_explicit_tags_in_line(line: str, rel_path: str, line_no: int) -> str:

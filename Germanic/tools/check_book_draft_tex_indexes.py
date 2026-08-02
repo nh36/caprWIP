@@ -11,11 +11,11 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
 import index_verborum_render as ivr
+from index_verborum_emission import build_emission_table, load_model_entry_headings, load_print_main
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
-MANIFEST_PATH = REPO_ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
 INDEX_HEADER_PATH = REPO_ROOT / "Germanic/docs/assembly/book_draft_pdf_header.tex"
 DEFAULT_TEX_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.tex"
 INTRO_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_intro_alpha_01.md"
@@ -205,71 +205,24 @@ def main() -> None:
         f"Print main contains languages not in active registry (would use fallback 99xx prefix): {unknown_langs}"
     )
 
-    # ── Central emission classifier ────────────────────────────────────────────
-    # Mirrors build_capr_book_draft.py load_production_rows() exactly.
-    # Every non-explicit row maps to exactly one of:
-    #   ("heading_injection", heading_ref, cmd)  — Python emits at lexical heading
-    #   ("line_injection", "path:line", cmd)      — Python emits at source line
-    #   ("source_not_in_book", ref, cmd)          — source not assembled into book
+    # ── Shared emission planner (single source of policy) ─────────────────────
     from collections import Counter
 
-    def classify_row_emission(
-        row: dict[str, str],
-        mehmap: dict[str, str],
-    ) -> tuple[str, str, str]:
-        """Return (emission_path, site, command) for one print_main row."""
-        scope = (row.get("source_scope") or "").strip()
-        ref = (row.get("source_ref") or "").strip()
-        cmd = index_command(row)
-        if scope == "explicit_tag":
-            return ("explicit_tag", ref, cmd)
-        if not ref:
-            return ("source_not_in_book", ref, cmd)
-        _line_inj = {"table_semantic_auto", "table_semantic_decision", "broad_prose_decision"}
-        if ".md:" in ref:
-            path_part, line_part = ref.rsplit(":", 1)
-            if scope in _line_inj and line_part.isdigit() and path_part not in mehmap:
-                # Line-injection only fires for intro/chronology, not model entries
-                return ("line_injection", f"{path_part}:{line_part}", cmd)
-            if path_part in mehmap:
-                return ("heading_injection", mehmap[path_part], cmd)
-            if line_part.isdigit():
-                return ("line_injection", f"{path_part}:{line_part}", cmd)
-            return ("source_not_in_book", ref, cmd)
-        # heading string ref (no .md:)
-        if ref in set(mehmap.values()):
-            return ("heading_injection", ref, cmd)
-        return ("source_not_in_book", ref, cmd)
-
-    expected_command_set: set[str] = {index_command(row) for row in main_rows}
-
-    model_entry_heading_map: dict[str, str] = {}
-    with MANIFEST_PATH.open(encoding="utf-8") as handle:
-        for row in csv.DictReader(handle, delimiter="\t"):
-            model_path = (row.get("model_entry_path") or "").strip()
-            lexical_item = (row.get("lexical_item") or "").strip()
-            counterpart = (row.get("counterpart") or "").strip()
-            derivation_class = (row.get("derivation_class") or "").strip()
-            if not model_path or not lexical_item:
-                continue
-            display_counterpart = f"*{counterpart}" if derivation_class == "reconstructed_oe" else counterpart
-            model_entry_heading_map[model_path] = f"{lexical_item} — OE {display_counterpart}"
-
-    collapsed_non_explicit_sites: set[tuple[str, str, str]] = set()
-    source_not_in_book_cmds: set[str] = set()
-
-    for row in main_rows:
-        path, site, cmd = classify_row_emission(row, model_entry_heading_map)
-        if path == "explicit_tag":
-            continue
-        if path == "source_not_in_book":
-            source_not_in_book_cmds.add(cmd)
-            continue
-        collapsed_non_explicit_sites.add((path, site, cmd))
-
+    planner_main_rows = load_print_main()
+    emission_rows = build_emission_table(planner_main_rows, load_model_entry_headings())
+    expected_command_set: set[str] = {row["index_command"] for row in emission_rows}
     expected_counter: Counter[str] = Counter()
-    for _, _, command in collapsed_non_explicit_sites:
-        expected_counter[command] += 1
+    seen_emission_ids: set[str] = set()
+    for row in emission_rows:
+        if row["in_book"] != "1":
+            continue
+        if row["emission_path"] == "explicit_tag":
+            continue
+        eid = row["emission_id"]
+        if eid in seen_emission_ids:
+            continue
+        seen_emission_ids.add(eid)
+        expected_counter[row["index_command"]] += 1
 
     actual_counter: Counter[str] = Counter()
     for body in all_iv_bodies:
@@ -281,8 +234,7 @@ def main() -> None:
         actual_counter[r"\index[iv]{" + b + "}"] >= 1 for b in all_iv_bodies
     ), "Internal error: body extracted with zero count — double-counting protection failed."
 
-    # Every actual command must be in the expected set OR a source_not_in_book cmd
-    # (which may appear via explicit_tag at non-manifest headings)
+    # Every actual command must be in the expected planner command set.
     spurious_cmds = [
         cmd for cmd in actual_counter
         if cmd not in expected_command_set

@@ -1,11 +1,11 @@
 local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
-local EXPLICIT_ALLOW_SORTKEY_TSV = os.getenv("CAPR_IV_EXPLICIT_ALLOW_SORTKEY_TSV") or "Germanic/docs/book/index_verborum_explicit_allow_sortkey.tsv"
 local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
 local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
+local FALLBACK_LOG_TSV = os.getenv("CAPR_IV_FALLBACK_LOG_TSV") or ""
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
-local explicit_allow_sortkey = nil  -- sort-key-based allowlist (bypasses Unicode normalization)
+local fallback_used_ids = {}
 
 local function trim(value)
   return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
@@ -242,7 +242,7 @@ local function visible_span(span)
   end
   local filtered_attrs = {}
   for key, value in pairs(span.attributes) do
-    if key ~= "lang" and key ~= "sort" and key ~= "display" and key ~= "source_scope" and key ~= "source_ref" and key ~= "role" and key ~= "variety" then
+    if key ~= "lang" and key ~= "sort" and key ~= "display" and key ~= "source_scope" and key ~= "source_ref" and key ~= "role" and key ~= "variety" and key ~= "occ_id" then
       filtered_attrs[key] = value
     end
   end
@@ -251,44 +251,6 @@ local function visible_span(span)
     content = italicize_oe_content(content)
   end
   return pandoc.Span(content, pandoc.Attr(span.identifier, filtered_classes, filtered_attrs))
-end
-
-local function ensure_sortkey_allow_loaded()
-  if explicit_allow_sortkey ~= nil then
-    return explicit_allow_sortkey
-  end
-  explicit_allow_sortkey = {}
-  local handle = io.open(EXPLICIT_ALLOW_SORTKEY_TSV, "r")
-  if not handle then
-    -- File may not exist in older checkouts; fall back to form-based matching only.
-    explicit_allow_sortkey = {}
-    return explicit_allow_sortkey
-  end
-  local header_line = handle:read("*l")
-  if not header_line then
-    handle:close()
-    explicit_allow_sortkey = {}
-    return explicit_allow_sortkey
-  end
-  local headers = split_tsv(header_line)
-  local indices = {}
-  for i, name in ipairs(headers) do indices[name] = i end
-  for line in handle:lines() do
-    if line ~= "" then
-      local cells = split_tsv(line)
-      local language = column(cells, indices["language"])
-      local role = column(cells, indices["form_role"])
-      local sort_key = column(cells, indices["sort_key"])
-      -- The allowlist now uses occurrence_id (unique per span) for disambiguation.
-      -- Fall back to source_ref for older allowlist files without the column.
-      local occ_id = column(cells, indices["occurrence_id"]) ~= "" and column(cells, indices["occurrence_id"])
-                     or column(cells, indices["source_ref"])
-      local variety = column(cells, indices["variety"])
-      explicit_allow_sortkey[explicit_key(language, role, sort_key, occ_id, variety)] = true
-    end
-  end
-  handle:close()
-  return explicit_allow_sortkey
 end
 
 local function explicit_tag_is_printable(language, role, form, display, source_ref, variety)
@@ -301,14 +263,12 @@ local function explicit_tag_is_printable(language, role, form, display, source_r
   if source_ref == "" then
     return false
   end
-  -- Primary check: form/display-based (may fail for NFC vs NFD Unicode mismatch)
+  -- Primary check: form/display-based
   if allow[explicit_key(language, role, form, source_ref, variety)]
       or allow[explicit_key(language, role, display, source_ref, variety)] then
     return true
   end
-  -- Fallback: sort-key-based allowlist (always ASCII, normalization-immune).
-  -- Used when Pandoc stringifies a span to NFD but the TSV stores NFC.
-  return false  -- sort-key check is done at call site where sort is available
+  return false
 end
 
 local function span_to_index(span)
@@ -342,16 +302,8 @@ local function span_to_index(span)
   -- Sort key must always derive from the bare (unstarred) form, not from the display.
   -- A starred display would otherwise propagate a leading asterisk into the sort key.
   local sort = trim(span.attributes["sort"] or form)
-  -- Check printability: primary form/display check, then sort-key fallback to
-  -- handle Pandoc NFD vs TSV NFC normalization mismatches.
+  -- Check printability by canonical explicit allowlist.
   local printable = explicit_tag_is_printable(lang, role, form, display, source_ref, variety)
-  if not printable then
-    local sortkey_allow = ensure_sortkey_allow_loaded()
-    -- Use occ_id for the fallback when available (handles same-line duplicates);
-    -- fall back to source_ref for spans without occ_id.
-    local ref_for_fallback = occ_id ~= "" and occ_id or source_ref
-    printable = sortkey_allow[explicit_key(lang, role, sort, ref_for_fallback, variety)] or false
-  end
   if not printable then
     return visible
   end
@@ -390,6 +342,21 @@ function Pandoc(doc)
       table.insert(blocks, block)
     else
       table.insert(blocks, block:walk({ Span = span_to_index }))
+    end
+  end
+  if FALLBACK_LOG_TSV ~= "" then
+    local ids = {}
+    for occ_id, _ in pairs(fallback_used_ids) do
+      table.insert(ids, occ_id)
+    end
+    table.sort(ids)
+    local h = io.open(FALLBACK_LOG_TSV, "w")
+    if h then
+      h:write("occurrence_id\n")
+      for _, occ_id in ipairs(ids) do
+        h:write(occ_id .. "\n")
+      end
+      h:close()
     end
   end
   return pandoc.Pandoc(blocks, doc.meta)
