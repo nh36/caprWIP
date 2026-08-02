@@ -2269,6 +2269,8 @@ def run_recon_iv_index_display_check() -> None:
                     continue
                 attrs = parse_span_attrs(raw_attrs)
                 bare_form = strip_markup_simple(span_m.group("content"))
+                # Normalize U+1E2F → ī + combining acute to match generated TSVs.
+                bare_form = bare_form.replace("\u1e2f", "\u012b\u0301")
                 lang = attrs.get("lang", "").strip()
                 role = (attrs.get("role", "") or "evidence_form").strip()
                 source_ref = f"{rel}:{line_no}"

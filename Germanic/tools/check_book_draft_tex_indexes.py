@@ -57,6 +57,16 @@ def explicit_key(row: dict[str, str]) -> tuple[str, str, str, str, str]:
     )
 
 
+def row_source_ref(row: dict[str, str]) -> str:
+    """Return the stable provenance key used by the printable index.
+
+    The book pipeline now preserves original model-entry source refs for
+    explicit-tag material. For book-assembled intro/chronology rows, the source
+    remains the assembled-file line reference.
+    """
+    return (row.get("source_ref") or "").strip()
+
+
 def require_row(rows: list[dict[str, str]], predicate, label: str) -> dict[str, str]:
     for row in rows:
         if predicate(row):
@@ -259,6 +269,7 @@ def main() -> None:
     for body in all_iv_bodies:
         full_cmd = r"\index[iv]{" + body + "}"
         actual_counter[full_cmd] += 1
+        actual_counter[full_cmd] += 1
 
     # Every actual command must be in the expected set
     spurious_cmds = [cmd for cmd in actual_counter if cmd not in expected_command_set]
@@ -287,15 +298,10 @@ def main() -> None:
     # produce its \\index[iv]{...} command in generated TeX, and the generated count
     # for each explicit command must not exceed the expected count.
     #
-    # Only intro and chronology sources are assembled with their ORIGINAL source_refs
-    # preserved (via inject_line_commands). Model-entry explicit tags get source_refs
-    # pointing to the lexical volume path after assembly, which don't match the
-    # print_main model-entry source_refs; those entries are covered by the heading-level
-    # injection already checked above. The Lua filter therefore only emits explicit index
-    # commands for intro and chronology occurrences.
-    #
-    # Occurrence identity: (language, form_role, form, display, source_ref).
-    # Multiple rows with the same command but different occurrences are counted separately.
+    # Every printable row should emit exactly one command body. Explicit model-entry
+    # occurrences now preserve their original model-entry provenance through the
+    # lexical volume and combined book, so the Lua filter can emit them in place.
+    # Occurrence identity: (language, form_role, form, display, source_ref, variety).
     lua_filter_source_paths = {
         INTRO_PATH.relative_to(REPO_ROOT).as_posix(),
         CHRONOLOGY_PATH.relative_to(REPO_ROOT).as_posix(),
@@ -304,14 +310,12 @@ def main() -> None:
     for row in main_rows:
         if (row.get("source_scope") or "").strip() != "explicit_tag":
             continue
-        source_ref = (row.get("source_ref") or "").strip()
+        source_ref = row_source_ref(row)
         path_part = source_ref.rsplit(":", 1)[0] if ":" in source_ref else source_ref
-        if path_part not in lua_filter_source_paths:
-            continue
         explicit_expected_counter[index_command(row)] += 1
 
     # Explicit commands: actual count must match expected count exactly.
-    # Lower bound: every expected explicit occurrence must be present.
+    # Lower bound: every expected explicit occurrence must be present exactly once.
     explicit_missing = [
         cmd for cmd, exp_count in explicit_expected_counter.items()
         if actual_counter.get(cmd, 0) < exp_count
@@ -325,7 +329,7 @@ def main() -> None:
     )
 
     # Sanity: at least some explicit commands should have been expected
-    assert explicit_expected_counter, "No printable explicit_tag occurrences found in intro/chronology sources — index may be empty."
+    assert explicit_expected_counter, "No printable explicit_tag occurrences found — index may be empty."
 
     # ── Excluded rows must not appear ─────────────────────────────────────────
     for row in excluded_rows:

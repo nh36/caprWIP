@@ -22,7 +22,7 @@ Kroonen reconstructs the noun as `*walþu-` and gives OE [`weald`]{.iv lang=oe s
 
 ### Old English evidence
 
-Clark Hall makes [`weald`]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland' the main noun headword and cross-refers [`wald`]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' and [`wold`]{.iv lang=oe sort=wold role=comparison_form} 'plain, open country' to it [@ClarkHall1960]. The Anglian-looking [`wald`]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' therefore remains variant background rather than the main target.
+Clark Hall makes [`weald`]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland' the main noun headword and cross-refers [`wald`]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' and [`wold`]{.iv lang=oe sort=wold role=comparison_form} 'plain, open country' to it [@ClarkHall1960]. Clark Hall glosses `wald` as `(N,VPs)` — Northumbrian and Vespasian Psalter (Mercian) — making this an explicitly dialect-labelled Anglian form.
 
 ### Development to Old English
 
@@ -30,4 +30,4 @@ Clark Hall makes [`weald`]{.iv lang=oe sort=weald role=comparison_form} 'forest,
 
 ### Dialect note
 
-[`wald`]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' survives as an Anglian-type variant in the same family. The selected target is normalized [`weald`]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].
+[`wald`]{.iv lang=oe variety=angl sort=wald role=comparison_form} 'forest' survives as an Anglian variant in the same family (Clark Hall `wald (N,VPs)`: Northumbrian and Vespasian Psalter). The selected target is normalized [`weald`]{.iv lang=oe sort=weald role=comparison_form} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].

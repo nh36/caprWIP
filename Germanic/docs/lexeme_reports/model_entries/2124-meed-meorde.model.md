@@ -43,7 +43,7 @@ reconstructed lemma [`meord`]{.iv lang=oe sort=meord role=comparison_form} 'meed
 ### Development to Old English
 
 Ringe and Taylor give the broader noun history as [mizdo]{.recon} 'reward' > [mizdu]{.recon} 'reward'
-> OE meord ~ méd` [@RingeTaylor2014, 99]. The fuller oblique-cell path modeled
+> OE meord ~ méd [@RingeTaylor2014, 99]. The fuller oblique-cell path modeled
 here spells out the intermediate rhotacism, monophthongization, lowering,
 breaking, and unstressed-shortening steps needed for the selected dative-singular
 comparison.

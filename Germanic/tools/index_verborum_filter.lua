@@ -1,9 +1,11 @@
 local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
+local EXPLICIT_ALLOW_SORTKEY_TSV = os.getenv("CAPR_IV_EXPLICIT_ALLOW_SORTKEY_TSV") or "Germanic/docs/book/index_verborum_explicit_allow_sortkey.tsv"
 local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
 local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
+local explicit_allow_sortkey = nil  -- sort-key-based allowlist (bypasses Unicode normalization)
 
 local function trim(value)
   return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
@@ -251,6 +253,41 @@ local function visible_span(span)
   return pandoc.Span(content, pandoc.Attr(span.identifier, filtered_classes, filtered_attrs))
 end
 
+local function ensure_sortkey_allow_loaded()
+  if explicit_allow_sortkey ~= nil then
+    return explicit_allow_sortkey
+  end
+  explicit_allow_sortkey = {}
+  local handle = io.open(EXPLICIT_ALLOW_SORTKEY_TSV, "r")
+  if not handle then
+    -- File may not exist in older checkouts; fall back to form-based matching only.
+    explicit_allow_sortkey = {}
+    return explicit_allow_sortkey
+  end
+  local header_line = handle:read("*l")
+  if not header_line then
+    handle:close()
+    explicit_allow_sortkey = {}
+    return explicit_allow_sortkey
+  end
+  local headers = split_tsv(header_line)
+  local indices = {}
+  for i, name in ipairs(headers) do indices[name] = i end
+  for line in handle:lines() do
+    if line ~= "" then
+      local cells = split_tsv(line)
+      local language = column(cells, indices["language"])
+      local role = column(cells, indices["form_role"])
+      local sort_key = column(cells, indices["sort_key"])
+      local source_ref = column(cells, indices["source_ref"])
+      local variety = column(cells, indices["variety"])
+      explicit_allow_sortkey[explicit_key(language, role, sort_key, source_ref, variety)] = true
+    end
+  end
+  handle:close()
+  return explicit_allow_sortkey
+end
+
 local function explicit_tag_is_printable(language, role, form, display, source_ref, variety)
   if language == "" then
     return false
@@ -261,9 +298,14 @@ local function explicit_tag_is_printable(language, role, form, display, source_r
   if source_ref == "" then
     return false
   end
-  return allow[explicit_key(language, role, form, source_ref, variety)]
-      or allow[explicit_key(language, role, display, source_ref, variety)]
-      or false
+  -- Primary check: form/display-based (may fail for NFC vs NFD Unicode mismatch)
+  if allow[explicit_key(language, role, form, source_ref, variety)]
+      or allow[explicit_key(language, role, display, source_ref, variety)] then
+    return true
+  end
+  -- Fallback: sort-key-based allowlist (always ASCII, normalization-immune).
+  -- Used when Pandoc stringifies a span to NFD but the TSV stores NFC.
+  return false  -- sort-key check is done at call site where sort is available
 end
 
 local function span_to_index(span)
@@ -289,10 +331,21 @@ local function span_to_index(span)
   -- display automatically when no explicit display= attribute is provided.
   local is_recon = has_class(span, "recon")
   local display = display_attr ~= "" and display_attr or (is_recon and ("*" .. form) or form)
+  -- Strip trailing reconstruction asterisk after a stem hyphen (e.g. *hemina-* → *hemina-).
+  -- This matches the normalize_print_text stripping applied on the Python side so that
+  -- Kroonen-style stem entries (marked *stem-*) display consistently without the trailing *.
+  display = display:gsub("(%*[^%s`|<>]-%-?)%*$", "%1"):gsub("(%*[^%s`|<>]-%-?)%*([`_%.,%s;:!?)/%]%}>~])", "%1%2")
   -- Sort key must always derive from the bare (unstarred) form, not from the display.
   -- A starred display would otherwise propagate a leading asterisk into the sort key.
   local sort = trim(span.attributes["sort"] or form)
-  if not explicit_tag_is_printable(lang, role, form, display, source_ref, variety) then
+  -- Check printability: primary form/display check, then sort-key fallback to
+  -- handle Pandoc NFD vs TSV NFC normalization mismatches.
+  local printable = explicit_tag_is_printable(lang, role, form, display, source_ref, variety)
+  if not printable then
+    local sortkey_allow = ensure_sortkey_allow_loaded()
+    printable = sortkey_allow[explicit_key(lang, role, sort, source_ref, variety)] or false
+  end
+  if not printable then
     return visible
   end
   -- Every language's form is italicized through the general \iventry macro; the

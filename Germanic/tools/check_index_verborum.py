@@ -104,6 +104,9 @@ def _normalize_iv_form(content: str) -> str:
         cleaned = cleaned[1:-1]
     if cleaned.startswith("*") and cleaned.endswith("*") and len(cleaned) > 2:
         cleaned = cleaned[1:-1]
+    # Normalize U+1E2F (ḯ, used in transducer sources) to ī + combining acute
+    # (the print form used in all assembled outputs and index TSVs).
+    cleaned = cleaned.replace("\u1e2f", "\u012b\u0301")
     return cleaned.strip().lstrip("*")
 
 

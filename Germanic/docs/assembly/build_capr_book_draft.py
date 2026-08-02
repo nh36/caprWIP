@@ -112,9 +112,12 @@ def annotate_explicit_tags_in_line(line: str, rel_path: str, line_no: int) -> st
         attrs = match.group("attrs")
         if not (has_tag_class(attrs, "iv") or has_tag_class(attrs, "pred")):
             return match.group(0)
-        if re.search(r'(^|\s)source_ref=', attrs):
-            return match.group(0)
         attrs_body = attrs.strip()
+        # Preserve an already-original source_ref if one exists. The lexical
+        # volume builder now carries the model-entry provenance forward, and the
+        # assembled book must not replace it with the assembled-file ref.
+        if re.search(r'(^|\s)source_ref=', attrs_body):
+            return match.group(0)
         if attrs_body:
             return f"[{match.group('content')}]{{{attrs_body} source_ref=\"{source_ref}\"}}"
         return f"[{match.group('content')}]{{source_ref=\"{source_ref}\"}}"

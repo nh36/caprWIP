@@ -180,8 +180,8 @@ def test_duplicate_makeindex_declarations_rejected() -> None:
 
 def test_occurrence_multiset_missing_entry() -> None:
     """Missing detection fixture: the 'no extra commands' check correctly passes when no extras exist."""
-    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!sculdrum@\emph{sċuldrum}}"
-    cmd_b = r"\index[iv]{02oe@\ivlangheader{Old English}!heofon@\emph{heofon}}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sculdrum@\iventry{sċuldrum}{}}"
+    cmd_b = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}"
     expected_set = {cmd_a, cmd_b}
     # TeX contains only cmd_a — that is fine (expected ⊇ actual, no spurious entries)
     actual_in_tex = [cmd_a]
@@ -191,8 +191,8 @@ def test_occurrence_multiset_missing_entry() -> None:
 
 def test_occurrence_multiset_extra_entry() -> None:
     """An unexpected index command NOT in the expected set must be detected."""
-    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!sculdrum@\emph{sċuldrum}}"
-    cmd_spurious = r"\index[iv]{02oe@\ivlangheader{Old English}!unexpected_xyz_form@\emph{unexpected}}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sculdrum@\iventry{sċuldrum}{}}"
+    cmd_spurious = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!unexpected_xyz_form@\iventry{unexpected}{}}"
     expected_set = {cmd_a}
     actual_in_tex = [cmd_a, cmd_spurious]  # cmd_spurious is NOT in expected_set
     spurious = [c for c in actual_in_tex if c not in expected_set]
@@ -220,8 +220,8 @@ def _check_explicit_converse(
 
 def test_explicit_converse_all_present_passes() -> None:
     """All expected explicit occurrences present → check must pass."""
-    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!naedre@\emph{nǣdre}}"
-    cmd_b = r"\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}!nedron@*nḗdrōn}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naedre@\iventry{nǣdre}{}}"
+    cmd_b = r"\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedron@\iventry{*nḗdrōn}{}}"
     explicit_expected: Counter = Counter({cmd_a: 1, cmd_b: 1})
     actual_counter: Counter = Counter({cmd_a: 1, cmd_b: 1})
     _check_explicit_converse(explicit_expected, actual_counter)  # must not raise
@@ -229,8 +229,8 @@ def test_explicit_converse_all_present_passes() -> None:
 
 def test_explicit_converse_missing_one_fails() -> None:
     """One expected explicit occurrence omitted from generated TeX → check must fail."""
-    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!naedre@\emph{nǣdre}}"
-    cmd_b = r"\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}!nedron@*nḗdrōn}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naedre@\iventry{nǣdre}{}}"
+    cmd_b = r"\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedron@\iventry{*nḗdrōn}{}}"
     explicit_expected: Counter = Counter({cmd_a: 1, cmd_b: 1})
     actual_counter: Counter = Counter({cmd_a: 1})  # cmd_b missing
     try:
@@ -244,7 +244,7 @@ def test_explicit_converse_missing_one_fails() -> None:
 
 def test_explicit_converse_wrong_count_fails() -> None:
     """Actual count below expected explicit count → check must fail."""
-    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!heofon@\emph{heofon}}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}"
     explicit_expected: Counter = Counter({cmd_a: 3})
     actual_counter: Counter = Counter({cmd_a: 2})  # one fewer than expected
     try:
@@ -257,7 +257,7 @@ def test_explicit_converse_wrong_count_fails() -> None:
 
 def test_explicit_converse_extra_does_not_fail() -> None:
     """Extra occurrences above explicit expected count are allowed (non-explicit can add more)."""
-    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}!heofon@\emph{heofon}}"
+    cmd_a = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}"
     explicit_expected: Counter = Counter({cmd_a: 2})
     actual_counter: Counter = Counter({cmd_a: 5})  # extra is fine — non-explicit adds more
     _check_explicit_converse(explicit_expected, actual_counter)  # must not raise
@@ -270,8 +270,8 @@ def test_valid_unified_architecture_accepted() -> None:
     good_tex = textwrap.dedent(r"""
         \makeindex[name=iv,title={},columns=3]
         \printindex[iv]
-        \index[iv]{02oe@\ivlangheader{Old English}!sculdrum@\emph{sċuldrum}}
-        \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}!skuldramiz@*skúldramiz}
+        \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sculdrum@\iventry{sċuldrum}{}}
+        \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldramiz@\iventry{*skúldramiz}{}}
     """)
     _assert_unified_architecture(good_tex)  # must not raise
 

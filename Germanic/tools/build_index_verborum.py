@@ -13,7 +13,17 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
+sys.path.insert(0, str(REPO_ROOT / "Germanic" / "docs" / "assembly"))
 import index_verborum_render as ivr
+
+# Import the print normalization function from the lexical volume builder so
+# that index form/display fields use the same encoding as assembled prose.
+# This ensures U+1E2F (ḯ) → ī + combining acute, matching Pandoc's output.
+try:
+    from build_full_lexical_volume import normalize_print_text as _normalize_iv_form
+except ImportError:
+    def _normalize_iv_form(text: str) -> str:  # type: ignore[misc]
+        return text.replace("\u1e2f", "\u012b\u0301")
 BOOK_DIR = REPO_ROOT / "Germanic/docs/book"
 ASSEMBLY_DIR = REPO_ROOT / "Germanic/docs/assembly"
 INTRO_PATH = ASSEMBLY_DIR / "capr_book_intro_alpha_01.md"
@@ -24,6 +34,7 @@ CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_
 MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 PRINT_MAIN_PATH = BOOK_DIR / "index_verborum_print_main.tsv"
+EXPLICIT_ALLOW_SORTKEY_PATH = BOOK_DIR / "index_verborum_explicit_allow_sortkey.tsv"
 PRINT_EXCLUDED_PATH = BOOK_DIR / "index_verborum_print_excluded.tsv"
 PREOE_REVIEW_PATH = BOOK_DIR / "index_verborum_preoe_review.tsv"
 PRINT_DECISIONS_PATH = BOOK_DIR / "index_verborum_print_decisions.tsv"
@@ -657,7 +668,8 @@ def strip_markup(text: str) -> str:
         if value.startswith(prefix) and value.endswith(suffix):
             value = value[len(prefix) : len(value) - len(suffix)]
             break
-    return value.strip("`.,;:!?()[]{}“”\"' ")
+    # Do not strip () — parentheses are part of forms like cū(e).
+    return value.strip("`.,;:!?[]{}""\"' ")
 
 
 def normalize_semantic_text(text: str) -> str:
@@ -3005,8 +3017,8 @@ def write_print_main_rows(path: Path, rows: list[ProductionOccurrence]) -> None:
                 {
                     "language": row.language,
                     "variety": row.variety,
-                    "form": row.form,
-                    "display": row.display,
+                    "form": _normalize_iv_form(row.form),
+                    "display": _normalize_iv_form(row.display),
                     "sort_key": row.sort_key,
                     "form_role": row.form_role,
                     "source_scope": row.source_scope,
@@ -3015,6 +3027,40 @@ def write_print_main_rows(path: Path, rows: list[ProductionOccurrence]) -> None:
                     "status": row.status,
                 }
             )
+
+
+def write_explicit_allow_sortkey(path: Path, rows: list[ProductionOccurrence]) -> None:
+    """Write a sort-key-based allowlist for the Lua filter.
+
+    The form-based allowlist in print_main.tsv can fail Lua matching when Pandoc
+    stringifies span content as NFD but the TSV stores NFC. This file keys on
+    (language, form_role, sort_key, source_ref, variety) where sort_key is always
+    plain ASCII, so normalization never matters. The Lua filter uses this as a
+    secondary allowlist that bypasses the form/display Unicode comparison.
+    """
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(
+            handle,
+            delimiter="\t",
+            fieldnames=["language", "form_role", "sort_key", "source_ref", "variety"],
+            lineterminator="\n",
+        )
+        writer.writeheader()
+        seen: set[tuple[str, str, str, str, str]] = set()
+        for row in rows:
+            if row.source_scope != "explicit_tag":
+                continue
+            key = (row.language, row.form_role, row.sort_key, row.source_ref, row.variety)
+            if key in seen:
+                continue
+            seen.add(key)
+            writer.writerow({
+                "language": row.language,
+                "form_role": row.form_role,
+                "sort_key": row.sort_key,
+                "source_ref": row.source_ref,
+                "variety": row.variety,
+            })
 
 
 def write_print_excluded_rows(path: Path, rows: list[dict[str, str]]) -> None:
@@ -3855,8 +3901,8 @@ def write_forms(rows: list[ProductionOccurrence]) -> None:
                 {
                     "language": row.language,
                     "variety": row.variety,
-                    "form": row.form,
-                    "display": row.display,
+                    "form": _normalize_iv_form(row.form),
+                    "display": _normalize_iv_form(row.display),
                     "sort_key": row.sort_key,
                     "form_role": row.form_role,
                     "source_scope": row.source_scope,
@@ -4315,6 +4361,7 @@ def main() -> None:
     write_index_registry_header(print_main_rows)
     write_forms(production_rows)
     write_print_main_rows(PRINT_MAIN_PATH, print_main_rows)
+    write_explicit_allow_sortkey(EXPLICIT_ALLOW_SORTKEY_PATH, print_main_rows)
     write_print_excluded_rows(PRINT_EXCLUDED_PATH, print_excluded_rows)
     write_print_unique_rows(PRINT_UNIQUE_PATH, print_unique_rows)
     write_print_anomaly_rows(PRINT_ANOMALIES_PATH, print_anomaly_rows)

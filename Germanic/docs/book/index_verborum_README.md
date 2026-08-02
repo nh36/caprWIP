@@ -81,8 +81,9 @@ variety label is roman, e.g. `\iventry{strēgan}{Angl.}` renders as
 `\iventry{*strīeġan}{Angl.}`. A blank variety produces no suffix.
 
 **Language headings are not form entries.** They are set by the separate
-`\ivlangheader` heading macro (bold title, optional roman note) and follow the
-heading style; only `\iventry` form entries are italicized.
+`\ivlangheader` heading macro (bold title, optional **italic** note, rendered
+via `\textit`) and follow the heading style; only `\iventry` form entries are
+italicized. (The variety *labels* inside `\iventry`, by contrast, are roman.)
 
 ### Reader-facing Old English heading (deferred)
 

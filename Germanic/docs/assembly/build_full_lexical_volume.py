@@ -784,10 +784,66 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     ]
 
 
+_LEX_NESTED_RECON_IV_RE = re.compile(r"\[\[(?P<form>[^\]]+)\]\{\.recon\}(?P<tail>.*?)\]\{(?P<attrs>[^}]*)\}")
+_LEX_EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
+
+
+def _lex_has_tag_class(raw_attrs: str, cls: str) -> bool:
+    return re.search(rf"(^|\s)\.{re.escape(cls)}(?=\s|$)", raw_attrs) is not None
+
+
+def annotate_model_entry_spans(lines: list[str], path: Path) -> list[str]:
+    """Add source_ref="<model-entry-rel-path>:<line>" to each .iv/.pred span.
+
+    Spans that already declare a source_ref are left untouched. Line numbers are
+    the 1-based positions in the original model entry, so the reference matches
+    index_verborum_print_main.tsv exactly.
+    """
+    try:
+        rel = path.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        rel = path.as_posix()
+
+    annotated: list[str] = []
+    for line_no, line in enumerate(lines, start=1):
+        source_ref = f'{rel}:{line_no}'
+
+        def add_ref(attrs: str) -> str:
+            if re.search(r'(^|\s)source_ref=', attrs):
+                return attrs
+            body = attrs.strip()
+            return f'{body} source_ref="{source_ref}"' if body else f'source_ref="{source_ref}"'
+
+        def nested_repl(match: re.Match[str]) -> str:
+            attrs = match.group("attrs")
+            if not (_lex_has_tag_class(attrs, "iv") or _lex_has_tag_class(attrs, "pred")):
+                return match.group(0)
+            return f'[[{match.group("form")}]{{.recon}}{match.group("tail")}]{{{add_ref(attrs)}}}'
+
+        def repl(match: re.Match[str]) -> str:
+            attrs = match.group("attrs")
+            if not (_lex_has_tag_class(attrs, "iv") or _lex_has_tag_class(attrs, "pred")):
+                return match.group(0)
+            return f'[{match.group("content")}]{{{add_ref(attrs)}}}'
+
+        line = _LEX_NESTED_RECON_IV_RE.sub(nested_repl, line)
+        line = _LEX_EXPLICIT_TAG_RE.sub(repl, line)
+        annotated.append(line)
+    return annotated
+
+
 def parse_model_entry(path: Path) -> dict[str, object]:
     lines = path.read_text(encoding="utf-8").splitlines()
     if not lines:
         raise ValueError(f"empty model entry: {path}")
+
+    # Attach the ORIGINAL model-entry provenance (path:line) to every .iv/.pred
+    # span BEFORE the sections are assembled and the original line numbers are
+    # lost. This lets the combined-book Lua filter match these occurrences against
+    # index_verborum_print_main.tsv (which is keyed by the model-entry source_ref)
+    # and emit them at their true position, instead of receiving an
+    # assembled-lexical-volume reference that fails eligibility matching.
+    lines = annotate_model_entry_spans(lines, path)
 
     title_line = next((line.strip() for line in lines if line.strip()), "")
     if not title_line.startswith("# "):
