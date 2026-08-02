@@ -188,7 +188,7 @@ oe		cū	cū	cu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_e
 oe		cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:31	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe		cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:32	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
 oe		cudu	cudu	cudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:52	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	auto
-oe		cū(e	cū(e	cue	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md	auto
+oe		cū(e)	cū(e)	cue	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md	auto
 oe		cūm	cūm	cum	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:34	broad_prose_curated	override
 oe		cūs	cūs	cus	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:33	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md	auto
 oe		cūs	cūs	cus	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md	auto
@@ -1280,7 +1280,7 @@ pgmc		*dōną	*dōną	dona	selected_input	trace_proto_input	do — OE dōn	compa
 pgmc		*dránkiz	*dránkiz	drankiz	selected_input	trace_proto_input	drench — OE drenċ	compact	auto
 pgmc		draugma-	*draugma-	draugma	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:54	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md	auto
 pgmc		*dráugmaz	*dráugmaz	draugmaz	selected_input	trace_proto_input	dream — OE drēam	compact	auto
-pgmc		*drḯbaną	*drḯbaną	dribana	selected_input	trace_proto_input	drive — OE drīfan	compact	auto
+pgmc		*drī́baną	*drī́baną	dribana	selected_input	trace_proto_input	drive — OE drīfan	compact	auto
 pgmc		*drínkaną	*drínkaną	drinkana	selected_input	trace_proto_input	drink — OE drincan	compact	auto
 pgmc		*dúrą	*dúrą	dura	source_protoform	lexical_protoform	door — OE dor	manifest	auto
 pgmc		*dúrą	*dúrą	dura	selected_input	trace_proto_input	door — OE dor	compact	auto
@@ -1399,13 +1399,13 @@ pgmc		*géftiz	*géftiz	geftiz	selected_input	trace_proto_input	gift — OE ġif
 pgmc		*grábaną	*grábaną	grabana	source_protoform	lexical_protoform	grave — OE grafan	manifest	auto
 pgmc		*grábaną	*grábaną	grabana	selected_input	trace_proto_input	grave — OE grafan	compact	auto
 pgmc		*grásą	*grásą	grasa	selected_input	trace_proto_input	grass — OE græs	compact	auto
-pgmc		*grḯpaną	*grḯpaną	gripana	selected_input	trace_proto_input	gripe — OE grīpan	compact	auto
+pgmc		*grī́paną	*grī́paną	gripana	selected_input	trace_proto_input	gripe — OE grīpan	compact	auto
 pgmc		*grúnduz	*grúnduz	grunduz	selected_input	trace_proto_input	ground — OE grund	compact	auto
 pgmc		*gúdą	*gúdą	guda	selected_input	trace_proto_input	god — OE god	compact	auto
 pgmc		*gúlθą	*gúlθą	gultha	source_protoform	lexical_protoform	gold — OE gold	manifest	auto
 pgmc		*gúlθą	*gúlθą	gultha	selected_input	trace_proto_input	gold — OE gold	compact	auto
-pgmc		hemina-*	*hemina-*	hemina	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
-pgmc		hemna-*	*hemna-*	hemna	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+pgmc		hemina-*	*hemina-	hemina	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
+pgmc		hemna-*	*hemna-	hemna	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md	auto
 pgmc		*hlahtraz	*hlahtraz	hlahtraz	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:47	broad_prose_curated	override
 pgmc		*hnakkuns	*hnakkuns	hnakkuns	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md	auto
 pgmc		*hnukkaz	*hnukkaz	hnukkaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:59	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md	auto
@@ -1486,7 +1486,7 @@ pgmc		*léusaną	*léusaną	leusana	source_protoform	lexical_protoform	forlorn �
 pgmc		*léusaną	*léusaną	leusana	selected_input	trace_proto_input	forlorn — OE lēosan	compact	auto
 pgmc		*léuxtijaną	*léuxtijaną	leuxtijana	source_protoform	lexical_protoform	light — OE līehtan	manifest	auto
 pgmc		*léuxtijaną	*léuxtijaną	leuxtijana	selected_input	trace_proto_input	light — OE līehtan	compact	auto
-pgmc		*lḯbą	*lḯbą	liba	selected_input	trace_proto_input	life — OE līf	compact	auto
+pgmc		*lī́bą	*lī́bą	liba	selected_input	trace_proto_input	life — OE līf	compact	auto
 pgmc		*libēną	*libēną	libena	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2107-live-lifeþ.model.md:56	Germanic/docs/lexeme_reports/model_entries/2107-live-lifeþ.model.md	auto
 pgmc		*libēną	*libēną	libena	source_protoform	lexical_proto	live — OE lifeþ	manifest	auto
 pgmc		líbēθi	*líbēθi	libethi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2107-live-lifeþ.model.md:27	Germanic/docs/lexeme_reports/model_entries/2107-live-lifeþ.model.md	auto
@@ -1511,11 +1511,11 @@ pgmc		líkkōθi	*líkkōθi	likkothi	selected_input	explicit_tag	Germanic/docs/
 pgmc		*líkkōθi	*líkkōθi	likkothi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:44	Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md	auto
 pgmc		*líkkōθi	*líkkōθi	likkothi	source_protoform	lexical_protoform	lick (3sg) — OE liccaþ	manifest	auto
 pgmc		*líkkōθi	*líkkōθi	likkothi	selected_input	trace_proto_input	lick (3sg) — OE liccaþ	compact	auto
-pgmc		*lḯmą	*lḯmą	lima	selected_input	trace_proto_input	lime — OE līm	compact	auto
+pgmc		*lī́mą	*lī́mą	lima	selected_input	trace_proto_input	lime — OE līm	compact	auto
 pgmc		*líndō	*líndō	lindo	source_protoform	lexical_protoform	linden — OE lind	manifest	auto
 pgmc		*líndō	*líndō	lindo	selected_input	trace_proto_input	linden — OE lind	compact	auto
-pgmc		*lḯnōn	*lḯnōn	linon	selected_input	trace_proto_input	line — OE līne	compact	auto
-pgmc		*lḯstōn	*lḯstōn	liston	selected_input	trace_proto_input	list — OE līste	compact	auto
+pgmc		*lī́nōn	*lī́nōn	linon	selected_input	trace_proto_input	line — OE līne	compact	auto
+pgmc		*lī́stōn	*lī́stōn	liston	selected_input	trace_proto_input	list — OE līste	compact	auto
 pgmc		líznô	*líznô	lizno	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	auto
 pgmc		*líznô	*líznô	lizno	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	auto
 pgmc		*líznô	*líznô	lizno	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	auto
@@ -1645,7 +1645,7 @@ pgmc		*ráukiz	*ráukiz	raukiz	source_protoform	lexical_proto	reek — OE *rēac
 pgmc		*rḗdaną	*rḗdaną	redana	selected_input	trace_proto_input	read — OE rǣdan	compact	auto
 pgmc		*régną	*régną	regna	selected_input	trace_proto_input	rain — OE reġn	compact	auto
 pgmc		*régnabùgô	*régnabùgô	regnabugo	selected_input	trace_proto_input	rainbow — OE reġnboga	compact	auto
-pgmc		*rḯdaną	*rḯdaną	ridana	selected_input	trace_proto_input	ride — OE rīdan	compact	auto
+pgmc		*rī́daną	*rī́daną	ridana	selected_input	trace_proto_input	ride — OE rīdan	compact	auto
 pgmc		*ríndō	*ríndō	rindo	selected_input	trace_proto_input	rind — OE rind	compact	auto
 pgmc		*rínnaną	*rínnaną	rinnana	selected_input	trace_proto_input	run — OE rinnan	compact	auto
 pgmc		*rōdō	*rōdō	rodo	selected_input	trace_proto_input	rood — OE rōd	compact	auto
@@ -1697,7 +1697,7 @@ pgmc		*síbi	*síbi	sibi	source_protoform	lexical_protoform	sieve — OE sife	ma
 pgmc		*síbi	*síbi	sibi	selected_input	trace_proto_input	sieve — OE sife	compact	auto
 pgmc		*sib-iz	*sib-iz	sibiz	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:55	table_semantic_rule	auto
 pgmc		*sibja	*sibja	sibja	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:53	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md	auto
-pgmc		*sḯdōn	*sḯdōn	sidon	selected_input	trace_proto_input	side — OE sīde	compact	auto
+pgmc		*sī́dōn	*sī́dōn	sidon	selected_input	trace_proto_input	side — OE sīde	compact	auto
 pgmc		*síngwaną	*síngwaną	singwana	selected_input	trace_proto_input	sing — OE singan	compact	auto
 pgmc		*skáftą	*skáftą	skafta	selected_input	trace_proto_input	shaft — OE sċeaft	compact	auto
 pgmc		*skáiθiz	*skáiθiz	skaithiz	selected_input	trace_proto_input	sheath — OE sċēaþ	compact	auto
@@ -1733,7 +1733,7 @@ pgmc		*skéubaną	*skéubaną	skeubana	source_protoform	explicit_tag	Germanic/do
 pgmc		*skéubaną	*skéubaną	skeubana	source_protoform	lexical_proto	shove — OE sċēaf	manifest	auto
 pgmc		*skíllingaz	*skíllingaz	skillingaz	source_protoform	lexical_protoform	shilling — OE sċilling	manifest	auto
 pgmc		*skíllingaz	*skíllingaz	skillingaz	selected_input	trace_proto_input	shilling — OE sċilling	compact	auto
-pgmc		*skḯnaną	*skḯnaną	skinana	selected_input	trace_proto_input	shine — OE sċīnan	compact	auto
+pgmc		*skī́naną	*skī́naną	skinana	selected_input	trace_proto_input	shine — OE sċīnan	compact	auto
 pgmc		*skúbanaz	*skúbanaz	skubanaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:52	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md	auto
 pgmc		*skúbun	*skúbun	skubun	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:51	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md	auto
 pgmc		*skúflō	*skúflō	skuflo	selected_input	trace_proto_input	shovel — OE sċofl	compact	auto
@@ -1750,7 +1750,7 @@ pgmc		*skūrō	*skūrō	skuro	selected_input	trace_proto_input	shower — OE sċ
 pgmc		*sláxaną	*sláxaną	slaxana	selected_input	trace_proto_input	slay — OE slēan	compact	auto
 pgmc		*slḗpaną	*slḗpaną	slepana	source_protoform	lexical_protoform	sleep — OE slǣpan	manifest	auto
 pgmc		*slḗpaną	*slḗpaną	slepana	selected_input	trace_proto_input	sleep — OE slǣpan	compact	auto
-pgmc		*slḯmą	*slḯmą	slima	selected_input	trace_proto_input	slime — OE slīm	compact	auto
+pgmc		*slī́mą	*slī́mą	slima	selected_input	trace_proto_input	slime — OE slīm	compact	auto
 pgmc		*smérwijaną	*smérwijaną	smerwijana	source_protoform	lexical_protoform	smear — OE smierwan	manifest	auto
 pgmc		*smérwijaną	*smérwijaną	smerwijana	selected_input	trace_proto_input	smear — OE smierwan	compact	auto
 pgmc		*snáiwaz	*snáiwaz	snaiwaz	selected_input	trace_proto_input	snow — OE snāw	compact	auto
@@ -1837,8 +1837,8 @@ pgmc		*swérdą	*swérdą	swerda	selected_input	trace_proto_input	sword — OE s
 pgmc		*swéstēr	*swéstēr	swester	selected_input	trace_proto_input	sister — OE swester	compact	auto
 pgmc		*swímmaną	*swímmaną	swimmana	selected_input	trace_proto_input	swim — OE swimman	compact	auto
 pgmc		*swī́ną	*swī́ną	swina	source_protoform	lexical_proto	swine — OE swīn	manifest	auto
-pgmc		*swḯną	*swḯną	swina	source_protoform	lexical_protoform	swine — OE swīn	manifest	auto
-pgmc		*swḯną	*swḯną	swina	selected_input	trace_proto_input	swine — OE swīn	compact	auto
+pgmc		*swī́ną	*swī́ną	swina	source_protoform	lexical_protoform	swine — OE swīn	manifest	auto
+pgmc		*swī́ną	*swī́ną	swina	selected_input	trace_proto_input	swine — OE swīn	compact	auto
 pgmc		*táikną	*táikną	taikna	source_protoform	lexical_protoform	token — OE tācn	manifest	auto
 pgmc		*táikną	*táikną	taikna	selected_input	trace_proto_input	token — OE tācn	compact	auto
 pgmc		*táixōn	*táixōn	taixon	selected_input	trace_proto_input	toe — OE tā	compact	auto
@@ -1885,8 +1885,8 @@ pgmc		*þūsundī-	*þūsundī-	thusundi	source_protoform	explicit_tag	Germanic/
 pgmc		*þūsundī-	*þūsundī-	thusundi	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md	auto
 pgmc		*θūs-undī	*θūs-undī	thusundi	source_protoform	lexical_proto	thousand — OE þūsend	manifest	auto
 pgmc		*tī́diz	*tī́diz	tidiz	source_protoform	lexical_proto	tide — OE tīd	manifest	auto
-pgmc		*tḯdiz	*tḯdiz	tidiz	source_protoform	lexical_protoform	tide — OE tīd	manifest	auto
-pgmc		*tḯdiz	*tḯdiz	tidiz	selected_input	trace_proto_input	tide — OE tīd	compact	auto
+pgmc		*tī́diz	*tī́diz	tidiz	source_protoform	lexical_protoform	tide — OE tīd	manifest	auto
+pgmc		*tī́diz	*tī́diz	tidiz	selected_input	trace_proto_input	tide — OE tīd	compact	auto
 pgmc		*tíkkô	*tíkkô	tikko	selected_input	trace_proto_input	tick — OE ticca	compact	auto
 pgmc		*timbra-	*timbra-	timbra	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:21	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
 pgmc		*timbra-	*timbra-	timbra	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:47	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md	auto
@@ -1953,7 +1953,7 @@ pgmc		*wérpaną	*wérpaną	werpana	selected_input	trace_proto_input	warp — OE
 pgmc		*wéslōn	*wéslōn	weslon	selected_input	trace_proto_input	weasel — OE wesle	compact	auto
 pgmc		*wéstanē	*wéstanē	westane	selected_input	trace_proto_input	west — OE westene	compact	auto
 pgmc		*wéxtiz	*wéxtiz	wextiz	selected_input	trace_proto_input	wight — OE wiht	compact	auto
-pgmc		*wḯbą	*wḯbą	wiba	selected_input	trace_proto_input	wife — OE wīf	compact	auto
+pgmc		*wī́bą	*wī́bą	wiba	selected_input	trace_proto_input	wife — OE wīf	compact	auto
 pgmc		*wíduwōn	*wíduwōn	widuwon	selected_input	trace_proto_input	widow — OE wuduwe	compact	auto
 pgmc		*wíndaną	*wíndaną	windana	source_protoform	lexical_protoform	wind — OE windan	manifest	auto
 pgmc		*wíndaną	*wíndaną	windana	selected_input	trace_proto_input	wind — OE windan	compact	auto
@@ -1964,12 +1964,12 @@ pgmc		wír-àldu	*wír-àldu	wiraldu	selected_input	explicit_tag	Germanic/docs/l
 pgmc		*wír-àldu	*wír-àldu	wiraldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	auto
 pgmc		*wír-àldu	*wír-àldu	wiraldu	source_protoform	lexical_protoform	world — OE weorold	manifest	auto
 pgmc		*wíràldu	*wíràldu	wiraldu	selected_input	trace_proto_input	world — OE weorold	compact	auto
-pgmc		wḯθagą	*wḯθagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:29	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
-pgmc		wḯθagą	*wḯθagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:41	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
-pgmc		wḯθagą	*wḯθagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:46	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
-pgmc		*wḯθagą	*wḯθagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:66	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
-pgmc		*wḯθagą	*wḯθagą	withaga	source_protoform	lexical_protoform	withy — OE wīþiġ	manifest	auto
-pgmc		*wḯθagą	*wḯθagą	withaga	selected_input	trace_proto_input	withy — OE wīþiġ	compact	auto
+pgmc		wī́θagą	*wī́θagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:29	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
+pgmc		wī́θagą	*wī́θagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:41	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
+pgmc		wī́θagą	*wī́θagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:46	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
+pgmc		*wī́θagą	*wī́θagą	withaga	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:66	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md	auto
+pgmc		*wī́θagą	*wī́θagą	withaga	source_protoform	lexical_protoform	withy — OE wīþiġ	manifest	auto
+pgmc		*wī́θagą	*wī́θagą	withaga	selected_input	trace_proto_input	withy — OE wīþiġ	compact	auto
 pgmc		*wíθrą	*wíθrą	withra	selected_input	trace_proto_input	wether — OE weþer	compact	auto
 pgmc		*wrínganą	*wrínganą	wringana	selected_input	trace_proto_input	wring — OE wringan	compact	auto
 pgmc		*wúlfaz	*wúlfaz	wulfaz	source_protoform	lexical_protoform	wolf — OE wulf	manifest	auto
@@ -2068,12 +2068,12 @@ pgmc		*xwálaz	*xwálaz	xwalaz	selected_input	explicit_tag	Germanic/docs/lexeme_
 pgmc		*xwálaz	*xwálaz	xwalaz	source_protoform	lexical_protoform	whale — OE hwæl	manifest	auto
 pgmc		*xwálaz	*xwálaz	xwalaz	selected_input	trace_proto_input	whale — OE hwæl	compact	auto
 pgmc		xwaliz	*xwaliz	xwaliz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:23	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md	auto
-pgmc		*xwḯlō	*xwḯlō	xwilo	selected_input	trace_proto_input	while — OE hwīl	compact	auto
-pgmc		xwḯnaną	*xwḯnaną	xwinana	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:32	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
-pgmc		xwḯnaną	*xwḯnaną	xwinana	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:47	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
-pgmc		*xwḯnaną	*xwḯnaną	xwinana	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:64	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
-pgmc		*xwḯnaną	*xwḯnaną	xwinana	source_protoform	lexical_protoform	whine — OE hwīnan	manifest	auto
-pgmc		*xwḯnaną	*xwḯnaną	xwinana	selected_input	trace_proto_input	whine — OE hwīnan	compact	auto
+pgmc		*xwī́lō	*xwī́lō	xwilo	selected_input	trace_proto_input	while — OE hwīl	compact	auto
+pgmc		xwī́naną	*xwī́naną	xwinana	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:32	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
+pgmc		xwī́naną	*xwī́naną	xwinana	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:47	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
+pgmc		*xwī́naną	*xwī́naną	xwinana	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:64	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
+pgmc		*xwī́naną	*xwī́naną	xwinana	source_protoform	lexical_protoform	whine — OE hwīnan	manifest	auto
+pgmc		*xwī́naną	*xwī́naną	xwinana	selected_input	trace_proto_input	whine — OE hwīnan	compact	auto
 pgmc		xwinanan	*xwinanan	xwinanan	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:24	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md	auto
 pnwgmc		brōkiz	*brōkiz	brokiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md	auto
 pnwgmc		brōkiz	*brōkiz	brokiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md	auto

@@ -125,7 +125,7 @@ oe		cwudu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entrie
 oe		cā	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe		cū	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe		cū	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md
-oe		cū(e	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
+oe		cū(e)	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe		cūm	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe		cūs	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
 oe		cȳ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md
@@ -850,7 +850,7 @@ pgmc		*bḗrō	source_protoform	lexical_protoform	bier — OE bǣr
 pgmc		*dránkiz	selected_input	trace_proto_input	drench — OE drenċ
 pgmc		*dráugmaz	selected_input	trace_proto_input	dream — OE drēam
 pgmc		*drínkaną	selected_input	trace_proto_input	drink — OE drincan
-pgmc		*drḯbaną	selected_input	trace_proto_input	drive — OE drīfan
+pgmc		*drī́baną	selected_input	trace_proto_input	drive — OE drīfan
 pgmc		*dágaz	selected_input	trace_proto_input	day — OE dæġ
 pgmc		*dáigaz	selected_input	trace_proto_input	dough — OE dāg
 pgmc		*dáiliz	selected_input	trace_proto_input	deal — OE dǣl
@@ -942,7 +942,7 @@ pgmc		*grábaną	selected_input	trace_proto_input	grave — OE grafan
 pgmc		*grábaną	source_protoform	lexical_protoform	grave — OE grafan
 pgmc		*grásą	selected_input	trace_proto_input	grass — OE græs
 pgmc		*grúnduz	selected_input	trace_proto_input	ground — OE grund
-pgmc		*grḯpaną	selected_input	trace_proto_input	gripe — OE grīpan
+pgmc		*grī́paną	selected_input	trace_proto_input	gripe — OE grīpan
 pgmc		*gáistaz	selected_input	trace_proto_input	ghost — OE gāst
 pgmc		*gállô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md
 pgmc		*gállô	selected_input	trace_proto_input	gall — OE ġealla
@@ -1071,12 +1071,12 @@ pgmc		*lúnganjō	selected_input	table_semantic_auto	Germanic/docs/lexeme_report
 pgmc		*lúnganjō	selected_input	trace_proto_input	lung — OE lungen
 pgmc		*lúnganjō	source_protoform	lexical_protoform	lung — OE lungen
 pgmc		*lústuz	selected_input	trace_proto_input	lust — OE lust
+pgmc		*lī́bą	selected_input	trace_proto_input	life — OE līf
+pgmc		*lī́mą	selected_input	trace_proto_input	lime — OE līm
+pgmc		*lī́nōn	selected_input	trace_proto_input	line — OE līne
+pgmc		*lī́stōn	selected_input	trace_proto_input	list — OE līste
 pgmc		*lūsz	selected_input	trace_proto_input	louse — OE lūs
 pgmc		*lḗtaną	selected_input	trace_proto_input	let — OE lǣtan
-pgmc		*lḯbą	selected_input	trace_proto_input	life — OE līf
-pgmc		*lḯmą	selected_input	trace_proto_input	lime — OE līm
-pgmc		*lḯnōn	selected_input	trace_proto_input	line — OE līne
-pgmc		*lḯstōn	selected_input	trace_proto_input	list — OE līste
 pgmc		*makōjan-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 pgmc		*makōjaną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md
 pgmc		*makōną	source_protoform	lexical_proto	make (3sg) — OE macaþ
@@ -1169,11 +1169,11 @@ pgmc		*rúkkaz	selected_input	trace_proto_input	coat — OE rocc
 pgmc		*rúkkaz	source_protoform	lexical_protoform	coat — OE rocc
 pgmc		*rústō	selected_input	trace_proto_input	rust — OE rust
 pgmc		*rústō	source_protoform	lexical_protoform	rust — OE rust
+pgmc		*rī́daną	selected_input	trace_proto_input	ride — OE rīdan
 pgmc		*rōdō	selected_input	trace_proto_input	rood — OE rōd
 pgmc		*rōθraz	selected_input	trace_proto_input	rudder — OE rōþor
 pgmc		*rūmą	selected_input	trace_proto_input	room — OE rūm
 pgmc		*rḗdaną	selected_input	trace_proto_input	read — OE rǣdan
-pgmc		*rḯdaną	selected_input	trace_proto_input	ride — OE rīdan
 pgmc		*sapi-	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md
 pgmc		*sapiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md
 pgmc		*sapōn	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md
@@ -1216,14 +1216,14 @@ pgmc		*skúflō	selected_input	trace_proto_input	shovel — OE sċofl
 pgmc		*skúldramiz	selected_input	trace_proto_input	shoulder — OE sċuldrum
 pgmc		*skúldramiz	source_protoform	lexical_protoform	shoulder — OE sċuldrum
 pgmc		*skúldrō	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
+pgmc		*skī́naną	selected_input	trace_proto_input	shine — OE sċīnan
 pgmc		*skūrō	selected_input	trace_proto_input	shower — OE sċūr
 pgmc		*skḗpą	selected_input	trace_proto_input	sheep — OE sċēap
 pgmc		*skḗpą	source_protoform	lexical_protoform	sheep — OE sċēap
-pgmc		*skḯnaną	selected_input	trace_proto_input	shine — OE sċīnan
 pgmc		*sláxaną	selected_input	trace_proto_input	slay — OE slēan
+pgmc		*slī́mą	selected_input	trace_proto_input	slime — OE slīm
 pgmc		*slḗpaną	selected_input	trace_proto_input	sleep — OE slǣpan
 pgmc		*slḗpaną	source_protoform	lexical_protoform	sleep — OE slǣpan
-pgmc		*slḯmą	selected_input	trace_proto_input	slime — OE slīm
 pgmc		*smérwijaną	selected_input	trace_proto_input	smear — OE smierwan
 pgmc		*smérwijaną	source_protoform	lexical_protoform	smear — OE smierwan
 pgmc		*snáiwaz	selected_input	trace_proto_input	snow — OE snāw
@@ -1283,9 +1283,9 @@ pgmc		*swéllaną	selected_input	trace_proto_input	swell — OE swellan
 pgmc		*swérdą	selected_input	trace_proto_input	sword — OE sweord
 pgmc		*swéstēr	selected_input	trace_proto_input	sister — OE swester
 pgmc		*swímmaną	selected_input	trace_proto_input	swim — OE swimman
+pgmc		*swī́ną	selected_input	trace_proto_input	swine — OE swīn
 pgmc		*swī́ną	source_protoform	lexical_proto	swine — OE swīn
-pgmc		*swḯną	selected_input	trace_proto_input	swine — OE swīn
-pgmc		*swḯną	source_protoform	lexical_protoform	swine — OE swīn
+pgmc		*swī́ną	source_protoform	lexical_protoform	swine — OE swīn
 pgmc		*sái	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md
 pgmc		*sái	source_protoform	lexical_proto	sea — OE sǣ
 pgmc		*sáiwalō	selected_input	trace_proto_input	soul — OE sāwol
@@ -1318,9 +1318,9 @@ pgmc		*súndrōjaną	selected_input	trace_proto_input	sunder — OE sundrian
 pgmc		*súndrōjaną	source_protoform	lexical_protoform	sunder — OE sundrian
 pgmc		*súnnōn	selected_input	trace_proto_input	sun — OE sunne
 pgmc		*súrgō	selected_input	trace_proto_input	sorrow — OE sorg
+pgmc		*sī́dōn	selected_input	trace_proto_input	side — OE sīde
 pgmc		*sōkijaną	selected_input	trace_proto_input	seek — OE sēċan
 pgmc		*sūpaną	selected_input	trace_proto_input	sup — OE sūpan
-pgmc		*sḯdōn	selected_input	trace_proto_input	side — OE sīde
 pgmc		*timbra-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md
 pgmc		*timra	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md
 pgmc		*trédaną	selected_input	trace_proto_input	tread — OE tredan
@@ -1342,11 +1342,11 @@ pgmc		*tímbrą	selected_input	trace_proto_input	timber — OE timber
 pgmc		*tímbrą	source_protoform	lexical_protoform	timber — OE timber
 pgmc		*tímrą	source_protoform	lexical_proto	timber — OE timber
 pgmc		*túngōn	selected_input	trace_proto_input	tongue — OE tunge
+pgmc		*tī́diz	selected_input	trace_proto_input	tide — OE tīd
 pgmc		*tī́diz	source_protoform	lexical_proto	tide — OE tīd
+pgmc		*tī́diz	source_protoform	lexical_protoform	tide — OE tīd
 pgmc		*tūną	selected_input	trace_proto_input	town — OE tūn
 pgmc		*tūną	source_protoform	lexical_protoform	town — OE tūn
-pgmc		*tḯdiz	selected_input	trace_proto_input	tide — OE tīd
-pgmc		*tḯdiz	source_protoform	lexical_protoform	tide — OE tīd
 pgmc		*wainōjaną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
 pgmc		*wainōjaną	source_protoform	lexical_proto	whine — OE hwīnan
 pgmc		*wakēną	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md
@@ -1407,12 +1407,12 @@ pgmc		*wúllō	source_protoform	lexical_protoform	wool — OE wull
 pgmc		*wúndrą	selected_input	trace_proto_input	wonder — OE wundor
 pgmc		*wúrdą	selected_input	trace_proto_input	word — OE word
 pgmc		*wúrmiz	selected_input	trace_proto_input	worm — OE wyrm
+pgmc		*wī́bą	selected_input	trace_proto_input	wife — OE wīf
+pgmc		*wī́θagą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md
+pgmc		*wī́θagą	selected_input	trace_proto_input	withy — OE wīþiġ
+pgmc		*wī́θagą	source_protoform	lexical_protoform	withy — OE wīþiġ
 pgmc		*wḗpną	selected_input	trace_proto_input	weapon — OE wǣpn
 pgmc		*wḗpną	source_protoform	lexical_protoform	weapon — OE wǣpn
-pgmc		*wḯbą	selected_input	trace_proto_input	wife — OE wīf
-pgmc		*wḯθagą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md
-pgmc		*wḯθagą	selected_input	trace_proto_input	withy — OE wīþiġ
-pgmc		*wḯθagą	source_protoform	lexical_protoform	withy — OE wīþiġ
 pgmc		*xabēną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md
 pgmc		*xabēną	source_protoform	lexical_proto	have — OE hæfeþ
 pgmc		*xláxjaną	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md
@@ -1434,10 +1434,10 @@ pgmc		*xwalaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc		*xwálaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md
 pgmc		*xwálaz	selected_input	trace_proto_input	whale — OE hwæl
 pgmc		*xwálaz	source_protoform	lexical_protoform	whale — OE hwæl
-pgmc		*xwḯlō	selected_input	trace_proto_input	while — OE hwīl
-pgmc		*xwḯnaną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
-pgmc		*xwḯnaną	selected_input	trace_proto_input	whine — OE hwīnan
-pgmc		*xwḯnaną	source_protoform	lexical_protoform	whine — OE hwīnan
+pgmc		*xwī́lō	selected_input	trace_proto_input	while — OE hwīl
+pgmc		*xwī́naną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
+pgmc		*xwī́naną	selected_input	trace_proto_input	whine — OE hwīnan
+pgmc		*xwī́naną	source_protoform	lexical_protoform	whine — OE hwīnan
 pgmc		*xábukaz	selected_input	trace_proto_input	hawk — OE hafoc
 pgmc		*xábēθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md
 pgmc		*xábēθi	selected_input	trace_proto_input	have — OE hæfeþ
@@ -1622,14 +1622,14 @@ pgmc		wábsaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_ent
 pgmc		wákaną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md
 pgmc		wátōr	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md
 pgmc		wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
-pgmc		wḯθagą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md
+pgmc		wī́θagą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md
 pgmc		xabēną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md
 pgmc		xnákkaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md
 pgmc		xnékkô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md
 pgmc		xwalaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md
 pgmc		xwaliz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md
 pgmc		xwinanan	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
-pgmc		xwḯnaną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
+pgmc		xwī́naną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md
 pgmc		xábēθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md
 pgmc		xámaras	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md
 pgmc		xámaraz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md

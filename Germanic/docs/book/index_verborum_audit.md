@@ -22,7 +22,7 @@
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 425
-- Broad-prose notation / compound expressions: 432
+- Broad-prose notation / compound expressions: 434
 - Broad-prose evidence suggestions: 279
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 6
@@ -672,9 +672,9 @@
 | `-a < *-ō` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:45 | notation or compound expression |
 | `-a < *-ō` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 | notation or compound expression |
 | `-a < *-ō` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:34 | notation or compound expression |
-| `-as(t` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
-| `-as(t` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:24 | notation or compound expression |
-| `-as(t` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:24 | notation or compound expression |
+| `-as(t)` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
+| `-as(t)` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:24 | notation or compound expression |
+| `-as(t)` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:24 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:38 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:36 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:45 | notation or compound expression |
@@ -684,7 +684,7 @@
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:24 | notation or compound expression |
 | `-aþ` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34 | notation or compound expression |
-| `-aþ (< -ōþi` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:28 | notation or compound expression |
+| `-aþ (< -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:28 | notation or compound expression |
 | `au > ēa` | Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md:28 | notation or compound expression |
 | `Auslautendes ō erscheint als û in bū ... cu ... hū, tū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:54 | notation or compound expression |
 | `Ausnahmslosigkeit der Lautgesetze` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:9 | notation or compound expression |
@@ -730,7 +730,7 @@
 | `cn-` | Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:45 | notation or compound expression |
 | `corn, n` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:25 | notation or compound expression |
 | `corn n. 'corn,' grain` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:25 | notation or compound expression |
-| `cū(e` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42 | notation or compound expression |
+| `cū(e)` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:42 | notation or compound expression |
 | `cūm < *cūm` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:36 | notation or compound expression |
 | `*dórą` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29 | intermediate or model-stage form in development chain |
 | `*dura-` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21 | notation or compound expression |
@@ -787,8 +787,8 @@
 | `*garna-` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:33 | notation or compound expression |
 | `gearn (e) n` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:25 | notation or compound expression |
 | `*geban-` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:21 | notation or compound expression |
-| `ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:21 | notation or compound expression |
-| `ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25 | notation or compound expression |
+| `(ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:21 | notation or compound expression |
+| `(ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25 | notation or compound expression |
 | `-gj-` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | notation or compound expression |
 | `*góldą` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33 | intermediate or model-stage form in development chain |
 | `gong (gang), m., path, course` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:25 | notation or compound expression |
@@ -809,8 +809,8 @@
 | `hierfest / hyrfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:21 | notation or compound expression |
 | `*hindō-` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:21 | notation or compound expression |
 | `hliđ-` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:29 | notation or compound expression |
-| `hlihhan (hliehhan, hlyhhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:34 | notation or compound expression |
-| `h)lit` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21 | notation or compound expression |
+| `hlihhan (hliehhan, hlyhhan)` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:34 | notation or compound expression |
+| `(h)lit` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:21 | notation or compound expression |
 | `*hrukka-` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:21 | notation or compound expression |
 | `*hurna-` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:21 | notation or compound expression |
 | `*hwinan-` | Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:23 | notation or compound expression |
@@ -897,12 +897,12 @@
 | `*lþ > ld` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | notation or compound expression |
 | `*lþ > ld` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29 | notation or compound expression |
 | `*lþ > ld` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:29 | notation or compound expression |
-| `lufas, -aþ (< -ōsi, -ōþi` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:25 | notation or compound expression |
-| `lufas, -aþ (< -ōsi, -ōþi` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
-| `lufas, -aþ (< -ōsi, -ōþi` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:34 | notation or compound expression |
-| `lufas, -aþ (< -ōsi, -ōþi` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:24 | notation or compound expression |
-| `lufas, -aþ (< -ōsi, -ōþi` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
-| `lufas, -aþ (< -ōsi, -ōþi` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:24 | notation or compound expression |
+| `lufas, -aþ (< -ōsi, -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:25 | notation or compound expression |
+| `lufas, -aþ (< -ōsi, -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
+| `lufas, -aþ (< -ōsi, -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:34 | notation or compound expression |
+| `lufas, -aþ (< -ōsi, -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:24 | notation or compound expression |
+| `lufas, -aþ (< -ōsi, -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
+| `lufas, -aþ (< -ōsi, -ōþi)` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:24 | notation or compound expression |
 | `*lungōn-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:21 | notation or compound expression |
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:22 | notation or compound expression |
 | `*lungunjō-` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:25 | notation or compound expression |
@@ -932,6 +932,7 @@
 | `nom.  'cow', obl. *kū-` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:22 | notation or compound expression |
 | `nosu f` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:36 | notation or compound expression |
 | `*nus-` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:22 | notation or compound expression |
+| `(N,VPs)` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:25 | notation or compound expression |
 | `*-ō` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2104-linden-lind.model.md:29 | intermediate or model-stage form in development chain |
 | `-o` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:25 | notation or compound expression |
@@ -985,7 +986,7 @@
 | `*spearrô` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29 | intermediate or model-stage form in development chain |
 | `sponnan, spannan stv` | Germanic/docs/lexeme_reports/model_entries/2202-span-spannan.model.md:25 | notation or compound expression |
 | `*staba-` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:22 | notation or compound expression |
-| `stam(m` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:36 | notation or compound expression |
+| `stam(m)` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:36 | notation or compound expression |
 | `stefn/stefna/stofn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82 | notation or compound expression |
 | `stefn/stemn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:81 | notation or compound expression |
 | `stefn, stemn Stamm` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:49 | notation or compound expression |
@@ -995,14 +996,14 @@
 | `*strēajan-` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:50 | notation or compound expression |
 | `*strīejan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:51 | intermediate or model-stage form in development chain |
 | `*sumara-` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:21 | notation or compound expression |
-| `sumor (sumer` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:25 | notation or compound expression |
+| `sumor (sumer)` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:25 | notation or compound expression |
 | `*swælw-` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | notation or compound expression |
 | `*swalwōn-` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | notation or compound expression |
 | `*swánæs` | Germanic/docs/lexeme_reports/model_entries/2235-swan-swanes.model.md:40 | intermediate or model-stage form in development chain |
 | `*swealw-` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | notation or compound expression |
-| `swealwe (a, o` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | notation or compound expression |
+| `swealwe (a, o)` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | notation or compound expression |
 | `*swina-` | Germanic/docs/lexeme_reports/model_entries/2238-swine-swīn.model.md:21 | notation or compound expression |
-| `swin (y` | Germanic/docs/lexeme_reports/model_entries/2238-swine-swīn.model.md:25 | notation or compound expression |
+| `swin (y)` | Germanic/docs/lexeme_reports/model_entries/2238-swine-swīn.model.md:25 | notation or compound expression |
 | `*taikna-` | Germanic/docs/lexeme_reports/model_entries/2260-token-tācn.model.md:21 | notation or compound expression |
 | `*tḗon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:35 | intermediate or model-stage form in development chain |
 | `*téoon` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:34 | intermediate or model-stage form in development chain |
@@ -1035,10 +1036,11 @@
 | `wæld-` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:29 | notation or compound expression |
 | `*wæskaną` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 | intermediate or model-stage form in development chain |
 | `*wætær` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:44 | intermediate or model-stage form in development chain |
-| `wæter(u` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:33 | notation or compound expression |
+| `wæter(u)` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:33 | notation or compound expression |
 | `*wahs(j)an-` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:21 | notation or compound expression |
 | `*wakai- ~ *wakja-` | Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:23 | notation or compound expression |
 | `*wakan-` | Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md:21 | notation or compound expression |
+| `wald (N,VPs)` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:33 | notation or compound expression |
 | `*walþu-` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:21 | notation or compound expression |
 | `*waskan-` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:21 | notation or compound expression |
 | `*watar` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:44 | intermediate or model-stage form in development chain |
