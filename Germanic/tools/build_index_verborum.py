@@ -559,7 +559,7 @@ def write_index_registry_header(production_rows: list[ProductionOccurrence]) -> 
     """
     lines = [
         r"\providecommand{\ivlangheader}[2]{\textbf{#1}\if\relax\detokenize{#2}\relax\else\ \textit{(#2)}\fi}",
-        r"\providecommand{\ivoeentry}[2]{\emph{#1}\if\relax\detokenize{#2}\relax\else\nobreakspace\textnormal{(#2)}\fi}",
+        r"\providecommand{\iventry}[2]{\emph{#1}\if\relax\detokenize{#2}\relax\else\nobreakspace\textnormal{(#2)}\fi}",
         r"\makeindex[name=iv,title={},columns=3]",
     ]
     INDEX_HEADER_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -883,6 +883,7 @@ def iter_explicit_tags(path: Path) -> list[dict[str, str]]:
                     "sort": attrs.get("sort", "").strip(),
                     "display": attrs.get("display", "").strip() or f"*{strip_markup(match.group('form'))}",
                     "role": attrs.get("role", "").strip(),
+                    "variety": attrs.get("variety", "").strip(),
                 }
             )
         scrubbed = list(line)
@@ -908,6 +909,7 @@ def iter_explicit_tags(path: Path) -> list[dict[str, str]]:
                     "sort": attrs.get("sort", "").strip(),
                     "display": explicit_display,
                     "role": attrs.get("role", "").strip(),
+                    "variety": attrs.get("variety", "").strip(),
                 }
             )
     return tags
@@ -936,6 +938,7 @@ def explicit_tag_occurrences(paths: list[Path] | None = None) -> list[dict[str, 
                     "source_scope": "explicit_tag",
                     "source_ref": f"{rel}:{tag['line_no']}",
                     "origin": rel,
+                    "variety": tag.get("variety", ""),
                 }
             )
     return occurrences
@@ -1598,12 +1601,14 @@ def apply_broad_prose_decisions(
         base_entry = suggestion_row or unresolved_row or {}
 
         if decision["action"] == "accept":
-            key = (language, decision["form"], role, decision["source_ref"])
+            variety = (decision.get("variety") or "").strip()
+            key = (language, variety, decision["form"], role, decision["source_ref"])
             if key not in seen_decision_rows:
                 seen_decision_rows.add(key)
                 decision_rows.append(
                     {
                         "language": language,
+                        "variety": variety,
                         "form": decision["form"],
                         "display": decision["form"],
                         "sort_key": transliterate_sort_key(decision["form"]),
@@ -1783,12 +1788,14 @@ def apply_table_decisions(
             role = decision.get("form_role") or (suggestion_row or {}).get("suggested_role", "")
             if not language or not role:
                 raise ValueError(f"Table decision accept requires language and form_role: {decision}")
-            key = (language, mention.form, role, mention.source_ref)
+            variety = (decision.get("variety") or "").strip()
+            key = (language, variety, mention.form, role, mention.source_ref)
             if key not in seen_decision_rows:
                 seen_decision_rows.add(key)
                 decision_rows.append(
                     {
                         "language": language,
+                        "variety": variety,
                         "form": mention.form,
                         "display": mention.form,
                         "sort_key": transliterate_sort_key(mention.form),
@@ -2829,6 +2836,7 @@ def build_production_rows(
             add_production(
                 store,
                 language=row["language"],
+                variety=(row.get("variety") or "").strip(),
                 form=row["form"],
                 display=row["display"],
                 sort_key=row["sort_key"],
@@ -2876,6 +2884,7 @@ def build_production_rows(
             add_production(
                 store,
                 language=row["language"],
+                variety=(row.get("variety") or "").strip(),
                 form=row["form"],
                 display=row["display"],
                 sort_key=row["sort_key"],

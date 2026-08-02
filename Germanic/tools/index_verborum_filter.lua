@@ -124,11 +124,12 @@ local function ensure_lang_meta_loaded()
       break
     end
   end
-  local code_idx, title_idx, active_idx = nil, nil, nil
+  local code_idx, title_idx, active_idx, note_idx = nil, nil, nil, nil
   for i, h in ipairs(headers) do
     if h == "code" then code_idx = i
     elseif h == "title" then title_idx = i
     elseif h == "active" then active_idx = i
+    elseif h == "index_note" then note_idx = i
     end
   end
   for line in handle:lines() do
@@ -143,12 +144,15 @@ local function ensure_lang_meta_loaded()
       local code = trim(cells[code_idx] or "")
       local title = trim(cells[title_idx] or "")
       local active = trim(cells[active_idx] or "")
+      local note = note_idx and trim(cells[note_idx] or "") or ""
       if code ~= "" and active == "1" then
         order = order + 1
         local order_str = string.format("%02d", order)
-        -- escape @ and ! in title for MakeIndex
+        -- escape @ and ! for MakeIndex; include the optional reader-facing note
+        -- as the second \ivlangheader argument so Python and Lua stay equivalent.
         local escaped = title:gsub("@", "\\@"):gsub("!", "\\!")
-        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\ivlangheader{" .. escaped .. "}{}"}
+        local escaped_note = note:gsub("@", "\\@"):gsub("!", "\\!")
+        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\ivlangheader{" .. escaped .. "}{" .. escaped_note .. "}"}
       end
     end
   end
@@ -291,12 +295,9 @@ local function span_to_index(span)
   if not explicit_tag_is_printable(lang, role, form, display, source_ref, variety) then
     return visible
   end
-  local index_display
-  if lang == "oe" then
-    index_display = "\\ivoeentry{" .. latex_escape(display) .. "}{" .. variety_label .. "}"
-  else
-    index_display = latex_escape(display)
-  end
+  -- Every language's form is italicized through the general \iventry macro; the
+  -- optional variety label (Old English only, at present) is printed in roman.
+  local index_display = "\\iventry{" .. latex_escape(display) .. "}{" .. variety_label .. "}"
   -- Hidden MakeIndex discriminator (collision-proof): a labelled variety appends
   -- "~" + two-digit display_order to the sort field only. "~" can never appear
   -- in a scholarly sort key ([a-z0-9]), so the mapping stays injective and blank

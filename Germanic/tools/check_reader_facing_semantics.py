@@ -2463,7 +2463,7 @@ def run_recon_iv_lua_sort_check() -> None:
     tex_c = _run_lua_fixture(md_c, [pm_row_c])
     cmd_c = _extract_index_cmd(tex_c)
     if cmd_c:
-        assert_true("\\ivoeentry{bacan}{}" in cmd_c and "\\ivoeentry{*" not in cmd_c,
+        assert_true("\\iventry{bacan}{}" in cmd_c and "\\iventry{*" not in cmd_c,
                      f"Lua sort fixture C: attested OE form must be unstarred in display, got: {cmd_c!r}")
 
 

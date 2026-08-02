@@ -18,9 +18,10 @@
   \if\relax\detokenize{#2}\relax\else\ \textit{(#2)}\fi
   \par\nobreak\vspace{0.2\baselineskip}\nopagebreak[3]%
 }
-% Old English index entry: italic form plus optional roman variety label.
+% Index Verborum form entry (all languages): italicize the form (including any
+% single reconstruction asterisk) plus an optional roman variety label.
 % A blank second argument renders identically to \emph{#1}.
-\providecommand{\ivoeentry}[2]{%
+\providecommand{\iventry}[2]{%
   \emph{#1}%
   \if\relax\detokenize{#2}\relax\else\nobreakspace\textnormal{(#2)}\fi
 }

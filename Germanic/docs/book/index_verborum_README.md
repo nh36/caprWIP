@@ -52,10 +52,37 @@ Synthetic examples:
 [strīeġan]{.recon .iv lang=oe variety=angl sort=striegan role=comparison_form}
 ```
 
-In the printed index the form is italic and the variety label is roman, e.g.
-`\emph{strēgan}\nobreakspace\textnormal{(Angl.)}`; reconstructed forms keep
-exactly one asterisk, e.g. `\emph{*strīeġan}\nobreakspace\textnormal{(Angl.)}`.
-A blank variety produces no suffix.
+### Index Verborum form rendering (all languages)
+
+Every linguistic form printed in the Index Verborum is italicized — in **every**
+registered language or historical stage (Old English, Old Norse, Old Frisian,
+Old High German, Old Saxon, Gothic, Latin, Greek, Sanskrit, Modern English,
+Proto-Germanic, …), whether the form is **attested or reconstructed**, and
+whether it is emitted by the Python builder or the Lua filter. Formatting is
+never inferred from whether a form begins with `*`: the asterisk marks
+reconstruction, italics do not.
+
+A single general macro renders every form entry:
+
+```tex
+\iventry{FORM}{OPTIONAL-LABEL}
+```
+
+- `FORM` is italicized (a reconstruction asterisk stays inside the italics, and
+  exactly one asterisk is printed);
+- `OPTIONAL-LABEL` is an Old English variety label (`EWS`, `LWS`, `Angl.`,
+  `Merc.`, `North.`, `Kent.`), printed in **roman** after a nonbreaking space;
+- a blank label produces no suffix, no extra space, and no empty parentheses.
+
+At present only Old English entries use the label argument; all other languages
+pass a blank second argument. In the printed index the form is italic and any
+variety label is roman, e.g. `\iventry{strēgan}{Angl.}` renders as
+*strēgan* (Angl.); reconstructed forms keep exactly one italic asterisk, e.g.
+`\iventry{*strīeġan}{Angl.}`. A blank variety produces no suffix.
+
+**Language headings are not form entries.** They are set by the separate
+`\ivlangheader` heading macro (bold title, optional roman note) and follow the
+heading style; only `\iventry` form entries are italicized.
 
 ### Reader-facing Old English heading (deferred)
 

@@ -46,6 +46,16 @@ COLLISION_ENTRIES = [
     ("col", "merc"),    # Mercian occurrence of "col" -> col~05 under new scheme
 ]
 
+# Cross-language entries: prove non-Old-English forms ALSO use the italicizing
+# \iventry macro, and that a reconstructed form keeps exactly one asterisk.
+CROSS_LANGUAGE_ENTRIES = [
+    # (language, sort, display)
+    ("on", "brjost", "brjóst"),      # Old Norse, attested
+    ("ohg", "scouwon", "scouwōn"),   # Old High German, attested
+    ("pgmc", "nedron", "*nḗdrōn"),   # Proto-Germanic, reconstructed
+    ("lat", "aqua", "aqua"),         # Latin, attested
+]
+
 
 def build_idx_lines() -> list[str]:
     lang_meta = ivr.load_language_registry()
@@ -66,10 +76,17 @@ def build_idx_lines() -> list[str]:
         )
         body = cmd[len(r"\index[iv]{"):-1]
         lines.append(rf"\indexentry{{{body}}}{{{page}}}")
+    for language, sort_key, display in CROSS_LANGUAGE_ENTRIES:
+        page += 1
+        cmd = ivr.index_command(
+            language, sort_key, display, "", lang_meta=lang_meta, var_registry=var_registry
+        )
+        body = cmd[len(r"\index[iv]{"):-1]
+        lines.append(rf"\indexentry{{{body}}}{{{page}}}")
     return lines
 
 
-TOTAL_ENTRIES = len(VARIETIES) + len(COLLISION_ENTRIES)
+TOTAL_ENTRIES = len(VARIETIES) + len(COLLISION_ENTRIES) + len(CROSS_LANGUAGE_ENTRIES)
 
 
 def run_makeindex(workdir: Path) -> tuple[int, str, str]:
@@ -119,16 +136,16 @@ def main() -> int:
     assert code == 0, f"makeindex failed with exit {code}: {ilg}"
     assert rejected == 0, f"makeindex rejected {rejected} entries: {ilg}"
     assert accepted == TOTAL_ENTRIES, f"expected {TOTAL_ENTRIES} accepted, got {accepted}"
-    # Labels appear inside the second \ivoeentry argument; the parentheses are
+    # Labels appear inside the second \iventry argument; the parentheses are
     # added by the LaTeX macro at render time, so check the raw label token.
     assert r"{WS}" not in ind, "no (WS) label may appear"
-    assert r"\ivoeentry{dæg}{}" in ind, "blank variety must render with an empty label group"
+    assert r"\iventry{dæg}{}" in ind, "blank variety must render with an empty label group"
 
     positions = []
     for label in EXPECTED_LABEL_ORDER:
         if label == "":
             continue
-        needle = rf"\ivoeentry{{dæg}}{{{label}}}"
+        needle = rf"\iventry{{dæg}}{{{label}}}"
         assert needle in ind, f"missing printed label {label!r}"
         positions.append((label, ind.index(needle)))
     assert positions == sorted(positions, key=lambda x: x[1]), (
@@ -136,7 +153,7 @@ def main() -> int:
     )
 
     # Blank must sort first.
-    assert ind.index(r"\ivoeentry{dæg}{}") < ind.index(r"\ivoeentry{dæg}{EWS}"), (
+    assert ind.index(r"\iventry{dæg}{}") < ind.index(r"\iventry{dæg}{EWS}"), (
         "blank-variety entry must sort before labelled varieties"
     )
 
@@ -144,15 +161,30 @@ def main() -> int:
     # DISTINCT accepted entries (no merge, no rejection). Their printed forms are
     # the bare lexical spelling "col"; the discriminator lives only in the hidden
     # sort field (col05 vs col~05), so both variants appear separately.
-    assert r"\ivoeentry{col}{}" in ind, "blank col entry missing (collision not preserved)"
-    assert r"\ivoeentry{col}{Merc.}" in ind, "Mercian col entry missing (collision not preserved)"
-    assert ind.count(r"\subitem \ivoeentry{col}") == 2, (
+    assert r"\iventry{col}{}" in ind, "blank col entry missing (collision not preserved)"
+    assert r"\iventry{col}{Merc.}" in ind, "Mercian col entry missing (collision not preserved)"
+    assert ind.count(r"\subitem \iventry{col}") == 2, (
         "collision probe must yield two distinct 'col' subitems, not a merged entry"
     )
 
     # Hidden discriminator digits and separator must not leak into printed output.
     assert not re.search(r"dæg[~0]\d", ind), "hidden discriminator leaked into printed output"
     assert "~" not in ind, "discriminator separator leaked into printed output"
+
+    # Cross-language: every non-Old-English form is italicized through \iventry
+    # too, reconstructed forms keep exactly one asterisk, and headings remain
+    # structurally distinct from form entries (\item vs \subitem).
+    for language, sort_key, display in CROSS_LANGUAGE_ENTRIES:
+        needle = rf"\iventry{{{display}}}{{}}"
+        assert needle in ind, f"{language} form not italicized via \\iventry: expected {needle!r}"
+    assert ind.count(r"*nḗdrōn") == 1, "reconstructed PGmc form must keep exactly one asterisk"
+    assert "**" not in ind, "no doubled asterisk permitted"
+    # Headings use \item \ivlangheader{...}; form entries use \subitem \iventry{...}.
+    assert r"\item \ivlangheader" in ind, "language headings must remain \\item \\ivlangheader"
+    assert r"\subitem \iventry" in ind, "form entries must remain \\subitem \\iventry"
+    assert r"\iventry" not in ind.split(r"\subitem", 1)[0], (
+        "no \\iventry form entry should precede the first \\subitem (headings are not forms)"
+    )
 
     print("MakeIndex variety fixture passed.")
     return 0

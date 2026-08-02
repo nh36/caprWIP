@@ -260,17 +260,18 @@ def _validate_variety_rows(rows: list[dict[str, str]]) -> VarietyRegistry:
 
 
 # ── Rendered entry construction ──────────────────────────────────────────────
-def render_form_part(language: str, display: str, variety_label: str) -> str:
+def render_index_form(language: str, display: str, variety_label: str) -> str:
     """Return the LaTeX form portion of an index entry.
 
-    Old English forms use ``\\ivoeentry{form}{label}`` so the form is italic and
-    the (optional) variety label is roman. A blank label renders identically to
-    ``\\emph{form}``. Other languages render the escaped display verbatim.
+    Every linguistic form — in any language or historical stage, attested or
+    reconstructed — is italicized via ``\\iventry{form}{label}``. The macro
+    italicizes the form (including any reconstruction asterisk, which stays a
+    single asterisk inside the italics) and prints the optional variety label in
+    roman after a nonbreaking space; a blank label yields no suffix. Formatting
+    never depends on whether the display begins with ``*``.
     """
     escaped = latex_escape(display)
-    if language == "oe":
-        return rf"\ivoeentry{{{escaped}}}{{{variety_label}}}"
-    return escaped
+    return rf"\iventry{{{escaped}}}{{{variety_label}}}"
 
 
 def index_command(
@@ -329,5 +330,5 @@ def index_command(
         variety_label = ""
         disc = ""
     level2_sort = escaped_sort + disc
-    form_part = render_form_part(language, display, variety_label)
+    form_part = render_index_form(language, display, variety_label)
     return rf"\index[iv]{{{lang_prefix}@{lang_header}!{level2_sort}@{form_part}}}"
