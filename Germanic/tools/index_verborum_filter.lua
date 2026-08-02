@@ -1,11 +1,9 @@
 local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
 local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
 local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
-local FALLBACK_LOG_TSV = os.getenv("CAPR_IV_FALLBACK_LOG_TSV") or ""
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
-local fallback_used_ids = {}
 
 local function trim(value)
   return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
@@ -304,9 +302,7 @@ local function span_to_index(span)
   local sort = trim(span.attributes["sort"] or form)
   -- Check printability by canonical explicit allowlist.
   local printable = explicit_tag_is_printable(lang, role, form, display, source_ref, variety)
-  if not printable then
-    return visible
-  end
+  if not printable then return visible end
   -- Every language's form is italicized through the general \iventry macro; the
   -- optional variety label (Old English only, at present) is printed in roman.
   local index_display = "\\iventry{" .. latex_escape(display) .. "}{" .. variety_label .. "}"
@@ -342,21 +338,6 @@ function Pandoc(doc)
       table.insert(blocks, block)
     else
       table.insert(blocks, block:walk({ Span = span_to_index }))
-    end
-  end
-  if FALLBACK_LOG_TSV ~= "" then
-    local ids = {}
-    for occ_id, _ in pairs(fallback_used_ids) do
-      table.insert(ids, occ_id)
-    end
-    table.sort(ids)
-    local h = io.open(FALLBACK_LOG_TSV, "w")
-    if h then
-      h:write("occurrence_id\n")
-      for _, occ_id in ipairs(ids) do
-        h:write(occ_id .. "\n")
-      end
-      h:close()
     end
   end
   return pandoc.Pandoc(blocks, doc.meta)

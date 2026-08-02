@@ -1318,61 +1318,16 @@ def main() -> None:
 
 
 def assert_sortkey_allow_no_collisions() -> None:
-    """No two eligible rows may share the sort-key allowlist identity.
+    """The sort-key allowlist has been removed (zero fallback uses measured).
 
-    The sort-key allowlist (index_verborum_explicit_allow_sortkey.tsv) is used as
-    a Unicode-normalization-safe fallback for Lua eligibility matching.  Its key is
-    (language, form_role, sort_key, source_ref, variety).  If two distinct eligible
-    forms at the same source reference and role produce the same sort key, the
-    fallback would admit the wrong occurrence.  This must not happen.
+    This check now passes trivially. The TSV no longer exists. If it reappears,
+    fail immediately to catch accidental regeneration.
     """
-    if not EXPLICIT_ALLOW_SORTKEY_PATH.exists():
-        return
-    forms_rows = load_forms_rows()
-    explicit_by_occ: dict[str, list[dict[str, str]]] = {}
-    for row in forms_rows:
-        if (row.get("source_scope") or "").strip() != "explicit_tag":
-            continue
-        occ_id = (row.get("occurrence_id") or "").strip()
-        if not occ_id:
-            continue
-        explicit_by_occ.setdefault(occ_id, []).append(row)
-
-    key_to_forms: dict[tuple[str, str, str, str, str], set[tuple[str, str]]] = defaultdict(set)
-    seen_occ: set[str] = set()
-    with EXPLICIT_ALLOW_SORTKEY_PATH.open(encoding="utf-8") as f:
-        for row in csv.DictReader(f, delimiter="\t"):
-            occ_id = (row.get("occurrence_id") or "").strip()
-            assert occ_id, "sort-key fallback row has blank occurrence_id"
-            matches = explicit_by_occ.get(occ_id, [])
-            assert len(matches) == 1, f"sort-key fallback occurrence_id must match exactly one explicit production row: {occ_id}"
-            prod = matches[0]
-            assert (prod.get("source_scope") or "").strip() == "explicit_tag"
-            assert (prod.get("language") or "").strip() == (row.get("language") or "").strip()
-            assert (prod.get("form_role") or "").strip() == (row.get("form_role") or "").strip()
-            assert (prod.get("sort_key") or "").strip() == (row.get("sort_key") or "").strip()
-            assert (prod.get("variety") or "").strip() == (row.get("variety") or "").strip()
-            seen_occ.add(occ_id)
-            key = (
-                (row.get("language") or "").strip(),
-                (row.get("form_role") or "").strip(),
-                (row.get("sort_key") or "").strip(),
-                occ_id,
-                (row.get("variety") or "").strip(),
-            )
-            key_to_forms[key].add(
-                (
-                    (prod.get("form") or "").strip(),
-                    (prod.get("display") or "").strip(),
-                )
-            )
-    collisions = {k: v for k, v in key_to_forms.items() if len(v) > 1}
-    assert not collisions, (
-        f"Sort-key allowlist has {len(collisions)} collision(s) "
-        f"(same fallback key maps to multiple distinct form/display identities); "
-        f"the fallback would admit the wrong occurrence.\n"
-        + "\n".join(f"  {k}: {sorted(v)}" for k, v in sorted(collisions.items())[:5])
-    )
+    if EXPLICIT_ALLOW_SORTKEY_PATH.exists():
+        raise AssertionError(
+            f"Sort-key allowlist {EXPLICIT_ALLOW_SORTKEY_PATH} exists but should have been removed. "
+            "The Lua fallback path is no longer needed (zero uses measured). Delete the file."
+        )
 
 
 

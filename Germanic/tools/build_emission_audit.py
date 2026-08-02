@@ -2,7 +2,8 @@
 """Generate index_verborum_book_emission_audit.tsv.
 
 Accounts for every row in index_verborum_print_main.tsv with a controlled
-disposition. Run after build_index_verborum.py and build_capr_book_draft.py.
+disposition and canonical occurrence/emission identities. Run after
+build_index_verborum.py and build_capr_book_draft.py.
 
 Dispositions:
   emitted_once         — explicit_tag span emitted exactly once by Lua filter
@@ -66,21 +67,28 @@ def main() -> None:
 
     # First pass: classify every row and build expected emission structures.
     explicit_expected: Counter[str] = Counter()
-    row_classifications: list[tuple[str, str, str, str, str]] = []
+    row_classifications: list[tuple[str, str, str, str, str, str]] = []
     for row in emission_rows:
         path = row["emission_path"]
         site = row["site"]
         cmd = row["index_command"]
-        row_classifications.append((path, site, cmd, row["in_book"], row["emission_id"]))
+        row_classifications.append((path, site, cmd, row["in_book"], row["emission_id"], row.get("collapsed_into", "")))
         if path == "explicit_tag" and row["in_book"] == "1":
             explicit_expected[cmd] += 1
 
     # Second pass: assign dispositions.
     audit_rows: list[dict[str, str]] = []
     seen_emission_ids: set[str] = set()
+    emission_representative: set[str] = set()
+    for row in emission_rows:
+        if row["in_book"] == "1" and row["emission_id"] not in emission_representative:
+            emission_representative.add(row["emission_id"])
 
-    for row, (path, site, cmd, in_book, emission_id) in zip(main_rows, row_classifications):
+    for row, (path, site, cmd, in_book, emission_id, collapsed_into) in zip(main_rows, row_classifications):
         actual_count = actual.get(cmd, 0)
+
+        collapsed_into = (collapsed_into or "").strip()
+        occ_id = (row.get("occurrence_id") or "").strip()
 
         if path == "explicit_tag":
             exp = explicit_expected.get(cmd, 0)
@@ -99,7 +107,7 @@ def main() -> None:
             reason = "source material not included in assembled lexical volume"
 
         elif path in ("heading_injection", "line_injection"):
-            if emission_id in seen_emission_ids:
+            if collapsed_into:
                 dispo = "collapsed_same_site"
                 reason = "duplicate occurrence collapsed into shared book emission"
             else:
@@ -125,6 +133,10 @@ def main() -> None:
                 "form_role": row.get("form_role", ""),
                 "source_scope": row.get("source_scope", ""),
                 "source_ref": row.get("source_ref", ""),
+                "occurrence_id": occ_id,
+                "emission_id": emission_id,
+                "collapsed_into": collapsed_into,
+                "in_book": in_book,
                 "expected_emission_path": path,
                 "expected_site": site,
                 "emitted_count": str(actual_count),
@@ -136,7 +148,7 @@ def main() -> None:
     # Write audit TSV.
     FIELDS = [
         "language", "variety", "form", "display", "sort_key", "form_role",
-        "source_scope", "source_ref",
+        "source_scope", "source_ref", "occurrence_id", "emission_id", "collapsed_into", "in_book",
         "expected_emission_path", "expected_site", "emitted_count",
         "disposition", "reason",
     ]

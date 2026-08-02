@@ -247,7 +247,30 @@ occurrence whose source is represented in `capr_book_draft_alpha_01`.
 
 **Book emissions** (`book_emissions.tsv`): one row per actual planned
 `\index[iv]{...}` emission after legitimate site+command collapsing for
-non-explicit rows.
+non-explicit rows. Schema: `emission_id`, `representative_occurrence_id`,
+`emission_path`, `site`, `index_command`, `language`, `variety`, `display`,
+`sort_key`, `form_role`, `source_scope`, `source_ref`, `source_occurrence_count`,
+`source_occurrence_ids`. `source_occurrence_count > 1` indicates collapsed
+non-explicit occurrences. The algebraic invariant:
+`sum(source_occurrence_count) == len(book_occurrences.tsv)`.
+
+**Collapsed occurrences**: when multiple non-explicit occurrences map to the
+same emission site and command, the first has blank `collapsed_into` and the
+others have `collapsed_into` set to the shared `emission_id`. All retain their
+distinct `occurrence_id`. Explicit (`explicit_tag`) occurrences are never
+collapsed.
+
+### Build determinism and page numbers
+
+The assembled `capr_book_draft_alpha_01.md` is the canonical deterministic
+Markdown input. Its byte content is fixed for a given source snapshot.
+
+The 3-pass LaTeX build converges in the 3rd pass. The first-pass `.ind` may
+differ from the final `.ind` (this is normal LaTeX/MakeIndex behaviour —
+cross-references are not fully settled after one pass). The final 3rd-pass
+`.ind` is deterministic for a given Markdown input. Page-list differences
+between separately-regenerated builds of the same commit reflect this
+expected 3-pass convergence, not content changes.
 
 - `Germanic/docs/book/index_verborum_forms.tsv` is the internal production
   form database used by the indexing machinery and audit workflow.

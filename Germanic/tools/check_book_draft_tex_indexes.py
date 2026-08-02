@@ -263,18 +263,14 @@ def main() -> None:
     )
 
     # ── Explicit-occurrence exact-count parity ────────────────────────────────
-    # Each explicit_tag row in print_main represents "at least one printable span
-    # at this source line", but a single source line may contain multiple identical
-    # spans (e.g., the same form mentioned twice in a sentence). The Lua filter
-    # emits once per span; print_main deduplicates same-line same-form rows into
-    # one row. So actual >= expected for each command is the correct lower bound;
-    # actual < expected (fewer TeX commands than print_main rows) means a whole
-    # line-group of spans was silently dropped.
+    # Each explicit_tag occurrence in print_main represents one distinct visible
+    # source span with its own occurrence_id. Same-line spans receive distinct
+    # ordinals and are never collapsed. Command bodies may be identical when two
+    # different entries have the same form; that is expected and allowed.
     #
-    # An upper bound cannot be checked reliably per-command (different model entries
-    # may share the same command body, and same-line multi-span is legitimate).
-    # Double-emission (Lua + Python on the same page) is acceptable because the
-    # two emissions represent different page positions for MakeIndex.
+    # Semantic occurrence parity (occurrence_id parity) is handled by
+    # check_book_occ_id_parity.py. This check verifies that every expected
+    # command body (aggregated by identity) appears in the generated TeX.
     explicit_expected_counter: Counter[str] = Counter()
     for row in main_rows:
         if (row.get("source_scope") or "").strip() != "explicit_tag":

@@ -249,7 +249,8 @@ def build_emission_table(
         if path in _NON_EXPLICIT_COLLAPSE_PATHS and rec["in_book"] == "1":
             if key not in first_by_key:
                 first_by_key[key] = rec["emission_id"]
-            if rec["emission_id"] != first_by_key[key]:
+                rec["collapsed_into"] = ""
+            else:
                 rec["collapsed_into"] = first_by_key[key]
                 rec["emission_id"] = first_by_key[key]
     return enriched
@@ -260,24 +261,33 @@ def build_book_occurrences_rows(emission_rows: list[dict[str, str]]) -> list[dic
 
 
 def build_book_emissions_rows(emission_rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    seen: set[str] = set()
-    out: list[dict[str, str]] = []
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in emission_rows:
-        if row["in_book"] != "1":
-            continue
-        eid = row["emission_id"]
-        if eid in seen:
-            continue
-        seen.add(eid)
+        if row["in_book"] == "1":
+            grouped[row["emission_id"]].append(row)
+    out: list[dict[str, str]] = []
+    for emission_id, items in grouped.items():
+        items.sort(key=lambda r: (r["occurrence_id"], r["source_ref"]))
+        representative = items[0]
         out.append(
             {
-                "occurrence_id": row["occurrence_id"],
-                "emission_id": row["emission_id"],
-                "emission_path": row["emission_path"],
-                "site": row["site"],
-                "index_command": row["index_command"],
+                "emission_id": emission_id,
+                "representative_occurrence_id": representative["occurrence_id"],
+                "emission_path": representative["emission_path"],
+                "site": representative["site"],
+                "index_command": representative["index_command"],
+                "language": representative["language"],
+                "variety": representative["variety"],
+                "display": representative["display"],
+                "sort_key": representative["sort_key"],
+                "form_role": representative["form_role"],
+                "source_scope": representative["source_scope"],
+                "source_ref": representative["source_ref"],
+                "source_occurrence_count": str(len(items)),
+                "source_occurrence_ids": "|".join(r["occurrence_id"] for r in items),
             }
         )
+    out.sort(key=lambda r: (r["emission_path"], r["site"], r["sort_key"], r["display"], r["emission_id"]))
     return out
 
 
@@ -304,15 +314,52 @@ def write_emission_views(
     fields = list(main_rows[0].keys()) if main_rows else []
     by_occ_id = {r["occurrence_id"]: r for r in main_rows}
     book_occ_print_rows = [by_occ_id[r["occurrence_id"]] for r in book_occ_rows if r["occurrence_id"] in by_occ_id]
-    book_em_print_rows = [by_occ_id[r["occurrence_id"]] for r in book_em_rows if r["occurrence_id"] in by_occ_id]
 
     write_tsv(EMISSION_TABLE_PATH, emission_rows, _EMISSION_TABLE_FIELDS)
     write_tsv(BOOK_OCCURRENCES_PATH, book_occ_print_rows, fields)
-    write_tsv(BOOK_EMISSIONS_PATH, book_em_print_rows, fields)
-    write_tsv(BOOK_MAIN_PATH, book_em_print_rows, fields)
+    write_tsv(
+        BOOK_EMISSIONS_PATH,
+        book_em_rows,
+        [
+            "emission_id",
+            "representative_occurrence_id",
+            "emission_path",
+            "site",
+            "index_command",
+            "language",
+            "variety",
+            "display",
+            "sort_key",
+            "form_role",
+            "source_scope",
+            "source_ref",
+            "source_occurrence_count",
+            "source_occurrence_ids",
+        ],
+    )
+    write_tsv(
+        BOOK_MAIN_PATH,
+        book_em_rows,
+        [
+            "emission_id",
+            "representative_occurrence_id",
+            "emission_path",
+            "site",
+            "index_command",
+            "language",
+            "variety",
+            "display",
+            "sort_key",
+            "form_role",
+            "source_scope",
+            "source_ref",
+            "source_occurrence_count",
+            "source_occurrence_ids",
+        ],
+    )
     write_tsv(
         BOOK_PRINT_UNIQUE_PATH,
-        build_print_unique_rows(book_em_print_rows),
+        build_print_unique_rows(book_occ_print_rows),
         [
             "language",
             "display",

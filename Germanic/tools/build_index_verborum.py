@@ -4404,8 +4404,6 @@ def main() -> None:
     write_index_registry_header(print_main_rows)
     write_forms(production_rows)
     write_print_main_rows(PRINT_MAIN_PATH, print_main_rows)
-    if EXPLICIT_ALLOW_SORTKEY_PATH.exists():
-        EXPLICIT_ALLOW_SORTKEY_PATH.unlink()
     write_print_excluded_rows(PRINT_EXCLUDED_PATH, print_excluded_rows)
     write_emission_views()
     write_print_unique_rows(PRINT_UNIQUE_PATH, print_unique_rows)

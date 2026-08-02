@@ -668,6 +668,38 @@ class LuaParityTests(unittest.TestCase):
             self.assertEqual(proc.returncode, 0, proc.stderr)
             self.assertNotIn("occ_id=", proc.stdout)
 
+    def test_unicode_primary_matching_without_fallback(self):
+        """Prove primary form/display matching works for a standard OE form.
+
+        The sort-key fallback was measured at zero uses in production and has
+        been removed. This test verifies that primary form-based matching
+        succeeds for a typical OE form — the fallback is not needed.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            pm = tmp / "pm.tsv"
+            header = ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "occurrence_id", "origin", "status"]
+            ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
+            form = "strēgan"  # standard OE form with combining characters
+            with pm.open("w", encoding="utf-8", newline="") as h:
+                w = csv.writer(h, delimiter="\t", lineterminator="\n")
+                w.writerow(header)
+                w.writerow(["oe", "", form, form, "stregan", "comparison_form", "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+            env = dict(os.environ)
+            env.update({
+                "CAPR_IV_PRINT_MAIN_TSV": str(pm),
+                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
+                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+            })
+            src = tmp / "in.md"
+            src.write_text(f"[{form}]{{.iv lang=oe sort=stregan role=comparison_form source_ref=\"{ref}\" occ_id=\"{ref}:1\"}}\n", encoding="utf-8")
+            proc = subprocess.run(
+                ["pandoc", "--from", "markdown", "--to", "latex", "--lua-filter", str(FILTER_LUA), str(src)],
+                capture_output=True, text=True, env=env,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            self.assertIn(r"\index[iv]", proc.stdout)
+
 
 class OccurrenceModelHardeningTests(unittest.TestCase):
     def _rows(self, name):
@@ -711,6 +743,13 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
         self.assertEqual(len(bo), 2031)
         self.assertEqual(len(be), 1865)
+        self.assertTrue(all("collapsed_into" in r for r in et))
+        self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
+        self.assertEqual(
+            sum(int(r["source_occurrence_count"]) for r in be),
+            len(bo),
+        )
+        self.assertTrue(all("|" in r["source_occurrence_ids"] or int(r["source_occurrence_count"]) == 1 for r in be))
 
         pm_ids = Counter((r.get("occurrence_id") or "").strip() for r in pm)
         et_ids = Counter((r.get("occurrence_id") or "").strip() for r in et)
@@ -718,11 +757,77 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
 
     def test_collapsed_many_occurrences_to_one_emission(self):
         et = self._rows("index_verborum_emission_table.tsv")
-        grouped = Counter(
-            r["emission_id"] for r in et
-            if (r.get("in_book") or "") == "1" and (r.get("source_scope") or "") != "explicit_tag"
+        grouped = {}
+        for row in et:
+            if (row.get("in_book") or "") != "1" or (row.get("source_scope") or "") == "explicit_tag":
+                continue
+            grouped.setdefault(row["emission_id"], []).append(row)
+        self.assertTrue(any(len(rows) > 1 for rows in grouped.values()))
+        for rows in grouped.values():
+            if len(rows) == 1:
+                continue
+            self.assertEqual(rows[0]["collapsed_into"], "")
+            for later in rows[1:]:
+                self.assertEqual(later["collapsed_into"], rows[0]["emission_id"])
+                self.assertEqual(later["emission_id"], rows[0]["emission_id"])
+                self.assertNotEqual(later["occurrence_id"], rows[0]["occurrence_id"])
+        self.assertTrue(all((r.get("collapsed_into") or "").strip() == "" for r in et if (r.get("source_scope") or "") == "explicit_tag"))
+
+    def test_corpus_metric_assertions(self):
+        """Permanent assertions for the corpus/book occurrence/emission counts.
+
+        These assert exact algebraic reconciliation without asserting individual
+        data rows, so they catch accidental regression without over-specifying.
+        """
+        pm = self._rows("index_verborum_print_main.tsv")
+        bo = self._rows("index_verborum_book_occurrences.tsv")
+        be = self._rows("index_verborum_book_emissions.tsv")
+        pu = self._rows("index_verborum_print_unique.tsv")
+        bu = self._rows("index_verborum_book_print_unique.tsv")
+        pe = self._rows("index_verborum_print_excluded.tsv")
+
+        self.assertEqual(len(pm), 2264, "corpus occurrence count")
+        source_not_in_book = 2264 - 2031
+        self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
+        self.assertEqual(len(be), 1865, "book emission count")
+        self.assertEqual(len(pu), 1061, "unique corpus entries")
+        self.assertEqual(len(bu), 828, "unique book entries")
+
+        # Algebraic reconciliations
+        self.assertEqual(len(pm), len(bo) + source_not_in_book)
+        total_occurrences = sum(int(r["source_occurrence_count"]) for r in be)
+        self.assertEqual(total_occurrences, len(bo), "book_occurrences == sum(source_occurrence_count)")
+
+        variety_labelled_unique = sum(1 for r in bu if (r.get("printed_variety") or "").strip())
+        self.assertEqual(variety_labelled_unique, 27, "variety-labelled unique book entries")
+
+        printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
+        self.assertEqual(printable_explicit, 1417, "printable explicit occurrences")
+
+        excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
+        self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")
+
+        # Every excluded explicit must retain its occurrence_id
+        self.assertTrue(
+            all((r.get("occurrence_id") or "").strip() for r in pe if (r.get("source_scope") or "") == "explicit_tag"),
+            "every excluded explicit must retain occurrence_id"
         )
-        self.assertTrue(any(v > 1 for v in grouped.values()))
+
+    def test_no_fallback_allowlist(self):
+        """Assert the fallback allowlist file does not exist.
+
+        Zero fallback uses were measured, and the file has been intentionally
+        deleted. Its reappearance would indicate accidental regeneration.
+        """
+        p = BOOK / "index_verborum_explicit_allow_sortkey.tsv"
+        self.assertFalse(p.exists(), f"Fallback allowlist should not exist: {p}")
+
+    def test_fallback_uses_zero(self):
+        """Assert the fallback log is empty or absent."""
+        p = BOOK / "index_verborum_fallback_used.tsv"
+        if p.exists():
+            rows = list(csv.DictReader(p.open(encoding="utf-8")))
+            self.assertEqual(len(rows), 0, "fallback uses must be zero")
 
 
 if __name__ == "__main__":

@@ -13,7 +13,6 @@ intro_pdf="${script_dir}/capr_book_intro_alpha_01.pdf"
 combined_md="${script_dir}/capr_book_draft_alpha_01.md"
 combined_tex="${script_dir}/capr_book_draft_alpha_01.tex"
 combined_pdf="${script_dir}/capr_book_draft_alpha_01.pdf"
-fallback_log_tsv="${repo_root}/Germanic/docs/book/index_verborum_fallback_used.tsv"
 intro_metadata="${script_dir}/full_volume_metadata.yaml"
 book_metadata="${script_dir}/book_draft_metadata.yaml"
 refs_bib="${repo_root}/docs/refs.bib"
@@ -25,7 +24,6 @@ if [[ "${INDEX_VERBORUM_STRICT:-0}" == "1" ]]; then
 fi
 
 cd "${repo_root}"
-rm -f "${fallback_log_tsv}"
 
 if ! command -v docker >/dev/null 2>&1; then
   echo "docker not found; cannot run Docker-based render." >&2
@@ -83,7 +81,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${intro_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
       --pdf-engine=xelatex -o ${intro_pdf#${repo_root}/}
-    CAPR_IV_FALLBACK_LOG_TSV=${fallback_log_tsv#${repo_root}/} pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
+    pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
       --top-level-division=chapter --number-sections --table-of-contents --toc-depth=1 \
       --lua-filter=Germanic/tools/paragraph_gloss_validator.lua \
       --lua-filter=Germanic/tools/index_verborum_filter.lua \
