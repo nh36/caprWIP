@@ -1,8 +1,8 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2259
+- Internal production occurrences: 2352
 - Internal production unique forms: 1050
-- Printed main occurrences: 2171
+- Printed main occurrences: 2264
 - Printed main unique forms: 1040
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
@@ -15,12 +15,12 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1134 | 446 |
-| Proto-Germanic | 942 | 519 |
+| Old English | 1225 | 446 |
+| Proto-Germanic | 943 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 8 | 5 |
 | Pre-Old English / prehistoric English | 6 | 6 |
-| Old Norse | 15 | 12 |
+| Old Norse | 16 | 12 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
 | Gothic | 6 | 6 |
@@ -35,11 +35,11 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 370 |
+| target_form | 373 |
 | source_protoform | 330 |
 | selected_input | 532 |
-| comparison_form | 749 |
-| evidence_form | 190 |
+| comparison_form | 821 |
+| evidence_form | 208 |
 
 ## Internal-only rows by reason
 
@@ -64,7 +64,7 @@
 ## Print-unique entry audit
 
 - Unique printed entries: 1061
-- Print anomaly rows: 48
+- Print anomaly rows: 50
 - Hard print anomalies: 0
 
 ## Unique printed entries: first 20 Old English
@@ -74,16 +74,16 @@
 | oe | `ærende` | aerende | 3 | comparison_form |
 | oe | `āsceaf` | asceaf | 1 | comparison_form |
 | oe | `bā` | ba | 3 | comparison_form |
-| oe | `bacan` | bacan | 4 | evidence_form; target_form |
+| oe | `bacan` | bacan | 7 | evidence_form; target_form |
 | oe | `bǣm` | baem | 1 | comparison_form |
 | oe | `bær` | baer | 3 | evidence_form |
 | oe | `bǣr` | baer | 4 | evidence_form; target_form |
 | oe | `ban` | ban | 1 | comparison_form |
-| oe | `bān` | ban | 4 | evidence_form; target_form |
+| oe | `bān` | ban | 5 | evidence_form; target_form |
 | oe | `bāne` | bane | 1 | evidence_form |
 | oe | `bannes` | bannes | 4 | target_form |
 | oe | `bar` | bar | 3 | evidence_form |
-| oe | `bēag` | beag | 7 | evidence_form; target_form |
+| oe | `bēag` | beag | 8 | evidence_form; target_form |
 | oe | `bēce` | bece | 2 | evidence_form |
 | oe | `bēċe` | bece | 1 | evidence_form |
 | oe | `bēġen` | begen | 7 | comparison_form |
@@ -100,7 +100,7 @@
 | pgmc | `*baina-` | baina | 2 | evidence_form |
 | pgmc | `*báiną` | baina | 3 | evidence_form; selected_input; source_protoform |
 | pgmc | `*bainan` | bainan | 2 | evidence_form |
-| pgmc | `*bákaną` | bakana | 3 | evidence_form; selected_input; source_protoform |
+| pgmc | `*bákaną` | bakana | 4 | evidence_form; selected_input; source_protoform |
 | pgmc | `*bakanan` | bakanan | 1 | evidence_form |
 | pgmc | `*bálgiz` | balgiz | 1 | selected_input |
 | pgmc | `*bánną` | banna | 3 | source_protoform |
