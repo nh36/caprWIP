@@ -1143,5 +1143,145 @@ class AuditValidationTests(unittest.TestCase):
         self.assertTrue(any("DUPLICATE" in e for e in errors))
 
 
+@unittest.skipIf(shutil.which("pandoc") is None, "pandoc not available")
+class IvAnchorShadowTests(unittest.TestCase):
+    """Tests for the .iv-anchor shadow-mode infrastructure.
+
+    Shadow mode proves that the plan-driven anchor emission path produces
+    exactly the same \\index[iv] commands as the production Python-injection
+    path, without altering the production build.
+    """
+
+    def _run_pandoc(self, md_text: str, env_extra: dict | None = None) -> subprocess.CompletedProcess:
+        import os, tempfile
+        env = dict(os.environ)
+        env.update({
+            "CAPR_IV_PRINT_MAIN_TSV": str(BOOK / "index_verborum_print_main.tsv"),
+            "CAPR_IV_BOOK_EMISSIONS_TSV": str(BOOK / "index_verborum_book_emissions.tsv"),
+            "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
+            "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+        })
+        if env_extra:
+            env.update(env_extra)
+        with tempfile.TemporaryDirectory() as tmp:
+            src = Path(tmp) / "in.md"
+            src.write_text(md_text, encoding="utf-8")
+            return subprocess.run(
+                ["pandoc", str(src), "--from", "markdown+raw_tex", "--to", "latex",
+                 "--lua-filter", str(FILTER_LUA)],
+                capture_output=True, text=True, env=env,
+                cwd=str(REPO_ROOT),
+            )
+
+    def _anchor_span(self, emission_id: str) -> str:
+        return f'[{{}}]{{.iv-anchor emission_id="{emission_id}"}}\n'
+
+    def _anchor_div(self, emission_id: str) -> str:
+        return f'::: {{.iv-anchor emission_id="{emission_id}"}}\n:::\n'
+
+    def test_anchor_span_emits_precomputed_command(self):
+        """An inline .iv-anchor span emits the precomputed index_command verbatim."""
+        # Use the first explicit-tag emission from the canonical plan
+        rows = list(csv.DictReader(open(BOOK / "index_verborum_book_emissions.tsv"), delimiter="\t"))
+        sample = rows[0]
+        emission_id = sample["emission_id"]
+        expected_cmd = sample["index_command"]
+
+        proc = self._run_pandoc(self._anchor_span(emission_id))
+        self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+        self.assertIn(expected_cmd, proc.stdout,
+                      f"anchor span must emit precomputed command verbatim for {emission_id}")
+
+    def test_anchor_div_emits_precomputed_command(self):
+        """A block .iv-anchor div emits the precomputed index_command verbatim."""
+        rows = list(csv.DictReader(open(BOOK / "index_verborum_book_emissions.tsv"), delimiter="\t"))
+        sample = next(r for r in rows if r["emission_path"] == "heading_injection")
+        emission_id = sample["emission_id"]
+        expected_cmd = sample["index_command"]
+
+        proc = self._run_pandoc(self._anchor_div(emission_id))
+        self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+        self.assertIn(expected_cmd, proc.stdout,
+                      f"anchor div must emit precomputed command verbatim for {emission_id}")
+
+    def test_anchor_span_no_visible_output(self):
+        """An .iv-anchor span produces no visible output — only the TeX command."""
+        rows = list(csv.DictReader(open(BOOK / "index_verborum_book_emissions.tsv"), delimiter="\t"))
+        emission_id = rows[0]["emission_id"]
+        proc = self._run_pandoc(self._anchor_span(emission_id))
+        self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+        visible = proc.stdout.replace(rows[0]["index_command"], "").strip()
+        self.assertEqual(visible, "", f"Anchor span must have no visible output, got: {visible[:100]!r}")
+
+    def test_anchor_fails_on_unknown_emission_id(self):
+        """Lua must fail closed when the emission_id is unknown."""
+        md = '[{}]{.iv-anchor emission_id="emit:unknown_nonexistent_id"}\n'
+        proc = self._run_pandoc(md)
+        self.assertNotEqual(proc.returncode, 0, "Unknown emission_id must cause Lua to fail closed")
+        self.assertIn("not found in emission plan", proc.stderr)
+
+    def test_anchor_fails_on_blank_emission_id(self):
+        """Lua must fail closed when emission_id is blank."""
+        md = '[{}]{.iv-anchor emission_id=""}\n'
+        proc = self._run_pandoc(md)
+        self.assertNotEqual(proc.returncode, 0, "Blank emission_id must cause failure")
+
+    def test_lua_plan_loader_rejects_duplicate_emission_id(self):
+        """Emission plan loader fails closed on duplicate emission_id."""
+        import os, tempfile, csv as _csv
+        rows = list(_csv.DictReader(open(BOOK / "index_verborum_book_emissions.tsv"), delimiter="\t"))
+        # Write a TSV with a duplicate emission_id
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            bad_tsv = tmp / "bad_emissions.tsv"
+            with bad_tsv.open("w", newline="") as f:
+                w = _csv.writer(f, delimiter="\t", lineterminator="\n")
+                w.writerow(list(rows[0].keys()))
+                w.writerow(list(rows[0].values()))
+                w.writerow(list(rows[0].values()))  # duplicate
+            md = f'[{{}}]{{.iv-anchor emission_id="{rows[0]["emission_id"]}"}}\n'
+            env = {
+                "CAPR_IV_PRINT_MAIN_TSV": str(BOOK / "index_verborum_print_main.tsv"),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(bad_tsv),
+                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
+                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+            }
+            proc = self._run_pandoc(md, env_extra=env)
+            self.assertNotEqual(proc.returncode, 0, "Duplicate emission_id must be rejected")
+            self.assertIn("duplicate emission_id", proc.stderr)
+
+    def test_production_md_has_no_anchor_markers(self):
+        """The production capr_book_draft_alpha_01.md must not contain .iv-anchor markers."""
+        prod_md = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
+        if not prod_md.exists():
+            self.skipTest("Production Markdown not present")
+        content = prod_md.read_text(encoding="utf-8")
+        self.assertNotIn(".iv-anchor", content,
+                         "Production MD must not contain .iv-anchor markers (shadow mode only)")
+
+    def test_shadow_md_has_anchors_not_raw_commands(self):
+        """The shadow MD uses .iv-anchor markers, not raw \\index[iv]{} commands."""
+        shadow_md = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_shadow.md"
+        if not shadow_md.exists():
+            self.skipTest("Shadow MD not built; run build_capr_book_draft_shadow.py first")
+        content = shadow_md.read_text(encoding="utf-8")
+        self.assertIn(".iv-anchor", content)
+        idx_idx_raw = content.count(r"\index[iv]")
+        # Shadow MD should have no raw injection commands (only the \printindex[iv] call)
+        self.assertEqual(idx_idx_raw, 0,
+                         "Shadow MD must use .iv-anchor markers instead of raw \\index[iv] injection")
+
+    def test_shadow_check_passes(self):
+        """Shadow check: anchor path produces exactly the same commands as canonical plan."""
+        import sys as _sys
+        _sys.path.insert(0, str(TOOLS))
+        from check_anchor_shadow import check
+        shadow_md = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_shadow.md"
+        if not shadow_md.exists():
+            self.skipTest("Shadow MD not built; run build_capr_book_draft_shadow.py first")
+        ok = check(shadow_md)
+        self.assertTrue(ok, "Shadow anchor check must pass: anchor path must equal canonical plan")
+
+
 if __name__ == "__main__":
     unittest.main()

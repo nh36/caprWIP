@@ -1,9 +1,15 @@
 local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
 local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
 local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
+local BOOK_EMISSIONS_TSV = os.getenv("CAPR_IV_BOOK_EMISSIONS_TSV") or "Germanic/docs/book/index_verborum_book_emissions.tsv"
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
+-- ── Emission plan (for .iv-anchor path) ───────────────────────────────────────
+-- emission_plan[emission_id] = precomputed_index_command
+-- Loaded lazily when the first .iv-anchor span or div is encountered.
+local emission_plan = nil        -- emission_id → index_command
+local occurrence_to_emission = nil  -- occurrence_id → emission_id
 
 -- ── Targeted canonical composition for Index Verborum matching ────────────────
 -- This helper performs targeted canonical composition for the OE diacritic
@@ -389,13 +395,276 @@ local function span_to_index(span)
   return { visible, raw }
 end
 
+-- ── Emission-plan loader ──────────────────────────────────────────────────────
+-- Loads index_verborum_book_emissions.tsv and validates the data fail-closed.
+-- Called lazily the first time an .iv-anchor span or div is encountered.
+--
+-- Accepted emission_path values:
+--   explicit_tag
+--   heading_injection
+--   line_injection
+--
+-- The precomputed index_command is stored verbatim; Lua does NOT reconstruct it.
+local ACCEPTED_EMISSION_PATHS = {
+  explicit_tag = true,
+  heading_injection = true,
+  line_injection = true,
+}
+
+local function ensure_emission_plan_loaded()
+  if emission_plan ~= nil then
+    return emission_plan
+  end
+  emission_plan = {}
+  occurrence_to_emission = {}
+
+  local handle = io.open(BOOK_EMISSIONS_TSV, "r")
+  if not handle then
+    error("index_verborum_filter.lua: cannot read " .. BOOK_EMISSIONS_TSV
+          .. "; run build_index_verborum.py and index_verborum_emission.py first.")
+  end
+
+  local header_line = handle:read("*l")
+  if not header_line then
+    handle:close()
+    error("index_verborum_filter.lua: " .. BOOK_EMISSIONS_TSV .. " is empty (no header).")
+  end
+
+  -- Parse header
+  local headers = split_tsv(header_line)
+  local idx = {}
+  for i, h in ipairs(headers) do idx[trim(h)] = i end
+
+  local required_columns = {
+    "emission_id", "representative_occurrence_id", "emission_path",
+    "index_command", "source_occurrence_count", "source_occurrence_ids",
+  }
+  for _, col in ipairs(required_columns) do
+    if not idx[col] then
+      handle:close()
+      error("index_verborum_filter.lua: " .. BOOK_EMISSIONS_TSV
+            .. " missing required column '" .. col .. "'")
+    end
+  end
+
+  local all_occurrence_ids = {}  -- occurrence_id → emission_id, for duplicate detection
+  local row_num = 1
+
+  for line in handle:lines() do
+    row_num = row_num + 1
+    if line == "" then goto continue end
+    local cells = split_tsv(line)
+
+    local emission_id    = column(cells, idx["emission_id"])
+    local rep_occ_id     = column(cells, idx["representative_occurrence_id"])
+    local epath          = column(cells, idx["emission_path"])
+    local index_command  = column(cells, idx["index_command"])
+    local count_str      = column(cells, idx["source_occurrence_count"])
+    local occ_ids_str    = column(cells, idx["source_occurrence_ids"])
+
+    -- 1. Blank emission_id
+    if emission_id == "" then
+      handle:close()
+      error("index_verborum_filter.lua: row " .. row_num
+            .. " in " .. BOOK_EMISSIONS_TSV .. " has blank emission_id")
+    end
+
+    -- 2. Duplicate emission_id
+    if emission_plan[emission_id] then
+      handle:close()
+      error("index_verborum_filter.lua: duplicate emission_id '" .. emission_id
+            .. "' in " .. BOOK_EMISSIONS_TSV)
+    end
+
+    -- 3. Blank index_command
+    if index_command == "" then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' has blank index_command in " .. BOOK_EMISSIONS_TSV)
+    end
+
+    -- 4. Blank representative_occurrence_id
+    if rep_occ_id == "" then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' has blank representative_occurrence_id in " .. BOOK_EMISSIONS_TSV)
+    end
+
+    -- 5. Blank source_occurrence_ids
+    if occ_ids_str == "" then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' has blank source_occurrence_ids in " .. BOOK_EMISSIONS_TSV)
+    end
+
+    -- 6. Invalid or non-integer source_occurrence_count
+    local count = tonumber(count_str)
+    if not count or count ~= math.floor(count) or count < 1 then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' has invalid source_occurrence_count '" .. count_str
+            .. "' (must be positive integer) in " .. BOOK_EMISSIONS_TSV)
+    end
+
+    -- 7. Unsupported or blank emission_path
+    if epath == "" or not ACCEPTED_EMISSION_PATHS[epath] then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' has unsupported emission_path '" .. epath
+            .. "' in " .. BOOK_EMISSIONS_TSV
+            .. " (accepted: explicit_tag, heading_injection, line_injection)")
+    end
+
+    -- 8. Parse and validate occurrence IDs
+    local occ_ids = {}
+    local start_pos = 1
+    while true do
+      local pipe_pos = occ_ids_str:find("|", start_pos, true)
+      if pipe_pos then
+        local oid = (trim(occ_ids_str:sub(start_pos, pipe_pos - 1)))
+        occ_ids[#occ_ids + 1] = oid
+        start_pos = pipe_pos + 1
+      else
+        local oid = (trim(occ_ids_str:sub(start_pos)))
+        occ_ids[#occ_ids + 1] = oid
+        break
+      end
+    end
+
+    -- 9. Count mismatch between source_occurrence_count and pipe-separated IDs
+    if #occ_ids ~= count then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' source_occurrence_count=" .. count_str
+            .. " but found " .. #occ_ids
+            .. " occurrence_ids in source_occurrence_ids (in " .. BOOK_EMISSIONS_TSV .. ")")
+    end
+
+    -- 10. Duplicate occurrence IDs within one emission
+    local seen_within = {}
+    for _, oid in ipairs(occ_ids) do
+      if oid == "" then
+        handle:close()
+        error("index_verborum_filter.lua: emission_id '" .. emission_id
+              .. "' has blank occurrence_id in source_occurrence_ids")
+      end
+      if seen_within[oid] then
+        handle:close()
+        error("index_verborum_filter.lua: emission_id '" .. emission_id
+              .. "' has duplicate occurrence_id '" .. oid
+              .. "' in source_occurrence_ids")
+      end
+      seen_within[oid] = true
+    end
+
+    -- 11. Representative must appear in source_occurrence_ids
+    if not seen_within[rep_occ_id] then
+      handle:close()
+      error("index_verborum_filter.lua: emission_id '" .. emission_id
+            .. "' representative_occurrence_id '" .. rep_occ_id
+            .. "' does not appear in source_occurrence_ids")
+    end
+
+    -- 12. One occurrence_id must not map to more than one emission
+    for _, oid in ipairs(occ_ids) do
+      if all_occurrence_ids[oid] then
+        handle:close()
+        error("index_verborum_filter.lua: occurrence_id '" .. oid
+              .. "' appears in both emission '" .. all_occurrence_ids[oid]
+              .. "' and emission '" .. emission_id
+              .. "' in " .. BOOK_EMISSIONS_TSV)
+      end
+      all_occurrence_ids[oid] = emission_id
+    end
+
+    -- Store validated entry
+    emission_plan[emission_id] = index_command
+    for _, oid in ipairs(occ_ids) do
+      occurrence_to_emission[oid] = emission_id
+    end
+
+    ::continue::
+  end
+  handle:close()
+  return emission_plan
+end
+
+-- ── .iv-anchor handler ────────────────────────────────────────────────────────
+-- An .iv-anchor is a planned-emission anchor marker. It carries an emission_id
+-- attribute that maps to a precomputed index_command in the emission plan.
+--
+-- Supported Pandoc forms:
+--
+--   Inline: []{.iv-anchor emission_id="emit:xxx"}
+--   Block:  ::: {.iv-anchor emission_id="emit:xxx"}
+--           :::
+--
+-- Both forms produce no visible output and emit the exact precomputed command.
+-- The index_command is stored verbatim from the TSV; Lua does NOT reconstruct
+-- it. This enforces the architectural contract that Python owns command
+-- construction.
+--
+-- Fail-closed on unknown emission_id — a missing plan entry is a build error.
+
+local function anchor_to_index_command(emission_id)
+  if emission_id == nil or emission_id == "" then
+    error("index_verborum_filter.lua: .iv-anchor span has blank emission_id")
+  end
+  local plan = ensure_emission_plan_loaded()
+  local cmd = plan[emission_id]
+  if cmd == nil then
+    error("index_verborum_filter.lua: .iv-anchor emission_id '" .. emission_id
+          .. "' not found in emission plan (" .. BOOK_EMISSIONS_TSV .. ")")
+  end
+  return pandoc.RawInline("latex", cmd)
+end
+
+local function span_is_anchor(span)
+  for _, cls in ipairs(span.classes) do
+    if cls == "iv-anchor" then return true end
+  end
+  return false
+end
+
+local function handle_anchor_span(span)
+  if not span_is_anchor(span) then return nil end
+  local emission_id = trim(span.attributes["emission_id"] or "")
+  return { anchor_to_index_command(emission_id) }
+end
+
+local function div_is_anchor(div)
+  for _, cls in ipairs(div.classes) do
+    if cls == "iv-anchor" then return true end
+  end
+  return false
+end
+
+local function handle_anchor_div(div)
+  if not div_is_anchor(div) then return nil end
+  local emission_id = trim(div.attributes["emission_id"] or "")
+  -- Block anchor emits as a paragraph containing the RawInline command,
+  -- followed by no visible content.
+  return pandoc.Plain({ anchor_to_index_command(emission_id) })
+end
+
 function Pandoc(doc)
   local blocks = {}
   for _, block in ipairs(doc.blocks) do
     if block.t == "Div" and block.identifier == "refs" then
       table.insert(blocks, block)
+    elseif block.t == "Div" and div_is_anchor(block) then
+      -- Block-level .iv-anchor: emit precomputed command, no visible output.
+      table.insert(blocks, handle_anchor_div(block))
     else
-      table.insert(blocks, block:walk({ Span = span_to_index }))
+      -- Walk sub-tree for both .iv spans and inline .iv-anchor spans.
+      table.insert(blocks, block:walk({
+        Span = function(span)
+          if span_is_anchor(span) then
+            return handle_anchor_span(span)
+          end
+          return span_to_index(span)
+        end
+      }))
     end
   end
   return pandoc.Pandoc(blocks, doc.meta)
