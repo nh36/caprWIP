@@ -9,8 +9,8 @@ Dispositions:
   emitted_once         — explicit_tag span emitted exactly once by Lua filter
   emitted_explicit_N   — explicit_tag command appears N times (N > 1 rows share cmd)
   collapsed_same_site  — non-explicit row whose cmd+site was already counted
-  heading_injected     — Python heading injection fired
-  line_injected        — Python line injection fired
+  heading_injected     — planned non-explicit emission fired at heading site
+  line_injected        — planned non-explicit emission fired at line site
   source_not_in_book   — source material not included in the assembled book
   missing_from_assembly — expected to fire but not found in actual TeX
   duplicate_emission   — appears more times than expected (upper-bound breach)
@@ -323,7 +323,7 @@ def main() -> None:
             else:
                 if actual_count > 0:
                     dispo = "heading_injected" if path == "heading_injection" else "line_injected"
-                    reason = f"Python injection fired at site {site[:60]!r}"
+                    reason = f"Planned non-explicit emission fired at site {site[:60]!r}"
                 else:
                     dispo = "missing_from_assembly"
                     reason = f"{path}: site {site[:60]!r} not found in assembled book"

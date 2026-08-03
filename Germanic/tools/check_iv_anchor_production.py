@@ -28,6 +28,7 @@ BOOK_EMISSIONS_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_book_emissio
 PRINT_MAIN_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 VARIETY_REGISTRY_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_varieties.tsv"
+EXPLICIT_PLAN_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_book_explicit_plan.tsv"
 CANONICAL_MD = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 
 EXPECTED_NON_EXPLICIT = 448
@@ -64,6 +65,8 @@ def _run_pandoc(md_text: str, tmp_dir: Path, label: str) -> str:
     env.update({
         "CAPR_IV_PRINT_MAIN_TSV": str(PRINT_MAIN_TSV),
         "CAPR_IV_BOOK_EMISSIONS_TSV": str(BOOK_EMISSIONS_TSV),
+        "CAPR_IV_EXPLICIT_PLAN_TSV": str(EXPLICIT_PLAN_TSV),
+        "CAPR_IV_EXPLICIT_MODE": "legacy",
         "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(LANGUAGE_REGISTRY_TSV),
         "CAPR_IV_VARIETY_REGISTRY_TSV": str(VARIETY_REGISTRY_TSV),
     })

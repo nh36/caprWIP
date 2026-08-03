@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
-import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -12,130 +10,17 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
 
-from index_verborum_emission import classify_emission, load_model_entry_headings
+from index_verborum_explicit_plan import (
+    explicit_in_book,
+    load_rows,
+    book_source_paths,
+    scan_explicit_spans,
+)
 
 FORMS_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_forms.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 PRINT_EXCLUDED_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_excluded.tsv"
 DEFAULT_BOOK_MD = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
-
-EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
-NESTED_RECON_IV_RE = re.compile(r"\[\[(?P<form>[^\]]+)\]\{\.recon\}(?P<tail>.*?)\]\{(?P<attrs>[^}]*)\}")
-
-
-def parse_attr_string(raw: str) -> dict[str, str]:
-    attrs: dict[str, str] = {}
-    for key, value in re.findall(r'([A-Za-z0-9_:-]+)\s*=\s*"([^"]*)"', raw):
-        attrs[key] = value
-    for key, value in re.findall(r"([A-Za-z0-9_:-]+)\s*=\s*([^\s}]+)", raw):
-        attrs.setdefault(key, value)
-    return attrs
-
-
-def has_tag_class(raw_attrs: str, cls: str) -> bool:
-    return re.search(rf"(^|\s)\.{re.escape(cls)}(?=\s|$)", raw_attrs) is not None
-
-
-def normalize_form(text: str) -> str:
-    value = text.strip()
-    if value.startswith("`") and value.endswith("`"):
-        value = value[1:-1]
-    if value.startswith("_") and value.endswith("_") and len(value) > 2:
-        value = value[1:-1]
-    value = value.replace(r"\*", "*")
-    if value.startswith("*") and value.endswith("*") and len(value) > 2:
-        value = value[1:-1]
-    return value.strip()
-
-
-def normalize_display(text: str) -> str:
-    value = text.strip()
-    if value.startswith("_") and value.endswith("_") and len(value) > 2:
-        value = value[1:-1]
-    if value.startswith("`") and value.endswith("`") and len(value) > 2:
-        value = value[1:-1]
-    value = re.sub(r"(\*[^`\s|<>]*-?)\*$", r"\1", value)
-    return value.strip()
-
-
-def extract_spans_from_book(book_md: Path) -> list[dict[str, str]]:
-    rows: list[dict[str, str]] = []
-    for line_no, line in enumerate(book_md.read_text(encoding="utf-8").splitlines(), start=1):
-        line_counter = 0
-        nested_spans = [(m.start(), m.end()) for m in NESTED_RECON_IV_RE.finditer(line)]
-        for m in NESTED_RECON_IV_RE.finditer(line):
-            attrs_raw = m.group("attrs")
-            if not (has_tag_class(attrs_raw, "iv") or has_tag_class(attrs_raw, "pred")):
-                continue
-            line_counter += 1
-            attrs = parse_attr_string(attrs_raw)
-            rows.append(
-                {
-                    "occurrence_id": (attrs.get("occ_id") or "").strip(),
-                    "source_ref": (attrs.get("source_ref") or "").strip(),
-                    "language": (attrs.get("lang") or "").strip(),
-                    "form_role": (attrs.get("role") or "evidence_form").strip(),
-                    "variety": (attrs.get("variety") or "").strip(),
-                    "sort_key": (attrs.get("sort") or normalize_form(m.group("form"))).strip(),
-                    "display": normalize_display((attrs.get("display") or f"*{normalize_form(m.group('form'))}").strip()),
-                    "normalized_visible_form": normalize_form(m.group("form")),
-                    "reconstruction_status": "1",
-                    "span_class": "pred" if has_tag_class(attrs_raw, "pred") else "iv",
-                    "line_span_ordinal": str(line_counter),
-                    "line_no": str(line_no),
-                }
-            )
-        scrubbed = list(line)
-        for s, e in nested_spans:
-            for i in range(s, e):
-                scrubbed[i] = " "
-        scrubbed_line = "".join(scrubbed)
-        for m in EXPLICIT_TAG_RE.finditer(scrubbed_line):
-            attrs_raw = m.group("attrs")
-            if not (has_tag_class(attrs_raw, "iv") or has_tag_class(attrs_raw, "pred")):
-                continue
-            line_counter += 1
-            attrs = parse_attr_string(attrs_raw)
-            content = normalize_form(m.group("content"))
-            is_recon = has_tag_class(attrs_raw, "recon")
-            rows.append(
-                {
-                    "occurrence_id": (attrs.get("occ_id") or "").strip(),
-                    "source_ref": (attrs.get("source_ref") or "").strip(),
-                    "language": (attrs.get("lang") or "").strip(),
-                    "form_role": (attrs.get("role") or "evidence_form").strip(),
-                    "variety": (attrs.get("variety") or "").strip(),
-                    "sort_key": (attrs.get("sort") or content).strip(),
-                    "display": normalize_display((attrs.get("display") or (f"*{content}" if is_recon else content)).strip()),
-                    "normalized_visible_form": content,
-                    "reconstruction_status": "1" if is_recon else "0",
-                    "span_class": "pred" if has_tag_class(attrs_raw, "pred") else "iv",
-                    "line_span_ordinal": str(line_counter),
-                    "line_no": str(line_no),
-                }
-            )
-    return rows
-
-
-def load_rows(path: Path) -> list[dict[str, str]]:
-    with path.open(encoding="utf-8") as f:
-        return list(csv.DictReader(f, delimiter="\t"))
-
-
-def explicit_in_book(rows: list[dict[str, str]]) -> dict[str, dict[str, str]]:
-    headings = load_model_entry_headings()
-    out: dict[str, dict[str, str]] = {}
-    for row in rows:
-        if (row.get("source_scope") or "").strip() != "explicit_tag":
-            continue
-        occ_id = (row.get("occurrence_id") or "").strip()
-        if not occ_id:
-            continue
-        if not classify_emission(row, headings).in_book:
-            continue
-        out[occ_id] = row
-    return out
-
 
 def _suffix_ordinal(occ_id: str) -> str:
     if ":" not in occ_id:
@@ -149,9 +34,10 @@ def check_parity(book_md: Path) -> None:
     main = load_rows(PRINT_MAIN_PATH)
     excluded = load_rows(PRINT_EXCLUDED_PATH)
 
-    in_book_forms = explicit_in_book(forms)
-    in_book_main = explicit_in_book(main)
-    in_book_excluded = explicit_in_book(excluded)
+    source_paths = book_source_paths()
+    in_book_forms = explicit_in_book(forms, source_paths)
+    in_book_main = explicit_in_book(main, source_paths)
+    in_book_excluded = explicit_in_book(excluded, source_paths)
 
     expected_all = set(in_book_forms)
     expected_printable = set(in_book_main)
@@ -163,7 +49,7 @@ def check_parity(book_md: Path) -> None:
         raise AssertionError("printable/excluded in-book explicit ID sets overlap")
 
     spans = [
-        s for s in extract_spans_from_book(book_md)
+        s for s in scan_explicit_spans(book_md.read_text(encoding="utf-8"))
         if s["span_class"] in {"iv", "pred"}
         and (s.get("language") or "").strip()
         and ">" not in (s.get("normalized_visible_form") or "")

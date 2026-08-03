@@ -248,7 +248,7 @@ def main() -> None:
     # Sanity: at least some commands must be present
     assert actual_counter, "Generated TeX contains no \\index[iv] commands."
 
-    # Converse coverage: every collapsed non-explicit site must fire at least once.
+    # Converse coverage: every planned non-explicit emission must fire at least once.
     # source_not_in_book entries are deliberately absent — not checked here.
     missing = [
         cmd for cmd, count in expected_counter.items()

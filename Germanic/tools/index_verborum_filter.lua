@@ -2,6 +2,9 @@ local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/boo
 local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
 local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
 local BOOK_EMISSIONS_TSV = os.getenv("CAPR_IV_BOOK_EMISSIONS_TSV") or "Germanic/docs/book/index_verborum_book_emissions.tsv"
+local EXPLICIT_PLAN_TSV = os.getenv("CAPR_IV_EXPLICIT_PLAN_TSV") or "Germanic/docs/book/index_verborum_book_explicit_plan.tsv"
+local EXPLICIT_MODE = os.getenv("CAPR_IV_EXPLICIT_MODE") or "legacy"
+local EXPLICIT_COMPARE_LOG = os.getenv("CAPR_IV_EXPLICIT_COMPARE_LOG")
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
@@ -10,6 +13,9 @@ local explicit_allow = nil
 -- Loaded lazily when the first .iv-anchor span or div is encountered.
 local emission_plan = nil        -- emission_id → index_command
 local occurrence_to_emission = nil  -- occurrence_id → emission_id
+local explicit_plan = nil -- occurrence_id -> explicit plan row
+local explicit_compare_rows = {}
+local ensure_explicit_plan_loaded
 
 -- ── Targeted canonical composition for Index Verborum matching ────────────────
 -- This helper performs targeted canonical composition for the OE diacritic
@@ -71,6 +77,16 @@ end
 
 local function trim(value)
   return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
+end
+
+local function explicit_mode()
+  local mode = trim(EXPLICIT_MODE)
+  if mode == "" then mode = "legacy" end
+  if mode ~= "legacy" and mode ~= "plan" and mode ~= "compare" then
+    error("index_verborum_filter.lua: unsupported CAPR_IV_EXPLICIT_MODE '" .. mode
+      .. "' (allowed: legacy, plan, compare)")
+  end
+  return mode
 end
 
 local function split_tsv(line)
@@ -333,66 +349,168 @@ local function explicit_tag_is_printable(language, role, form, display, source_r
   return false
 end
 
-local function span_to_index(span)
-  if not has_class(span, "iv") then
-    return span
-  end
-  local visible = visible_span(span)
+local function explicit_span_semantics(span)
   local lang = trim(span.attributes["lang"] or "")
-  if lang == "" then
-    return visible
-  end
   local role = trim(span.attributes["role"] or "")
-  if role == "" then
-    role = "evidence_form"
-  end
+  if role == "" then role = "evidence_form" end
   local source_ref = trim(span.attributes["source_ref"] or "")
   local occ_id = trim(span.attributes["occ_id"] or "")
   local variety = trim(span.attributes["variety"] or "")
-  -- Fail-closed validation; also yields the printed label (blank => no suffix).
-  local variety_label = validate_variety(lang, variety)
+  local variety_label = ""
+  if lang ~= "" then
+    variety_label = validate_variety(lang, variety)
+  end
   local form = normalize_iv_match_text(trim(pandoc.utils.stringify(span.content)))
   local display_attr = normalize_iv_match_text(trim(span.attributes["display"] or ""))
-  -- A combined .recon .iv span carries reconstruction semantics; derive the starred
-  -- display automatically when no explicit display= attribute is provided.
   local is_recon = has_class(span, "recon")
   local display = display_attr ~= "" and display_attr or (is_recon and ("*" .. form) or form)
-  -- Strip trailing reconstruction asterisk after a stem hyphen (e.g. *hemina-* → *hemina-).
-  -- This matches the normalize_print_text stripping applied on the Python side so that
-  -- Kroonen-style stem entries (marked *stem-*) display consistently without the trailing *.
   display = display:gsub("(%*[^%s`|<>]-%-?)%*$", "%1"):gsub("(%*[^%s`|<>]-%-?)%*([`_%.,%s;:!?)/%]%}>~])", "%1%2")
-  -- Sort key must always derive from the bare (unstarred) form, not from the display.
-  -- A starred display would otherwise propagate a leading asterisk into the sort key.
   local sort = trim(span.attributes["sort"] or form)
-  -- Check printability by canonical explicit allowlist.
-  local printable = explicit_tag_is_printable(lang, role, form, display, source_ref, variety)
-  if not printable then return visible end
-  -- Every language's form is italicized through the general \iventry macro; the
-  -- optional variety label (Old English only, at present) is printed in roman.
-  local index_display = "\\iventry{" .. latex_escape(display) .. "}{" .. variety_label .. "}"
-  -- Hidden MakeIndex discriminator (collision-proof): a labelled variety appends
-  -- "~" + two-digit display_order to the sort field only. "~" can never appear
-  -- in a scholarly sort key ([a-z0-9]), so the mapping stays injective and blank
-  -- (real corpus) entries sort first as strict prefixes. Mirrors the Python
-  -- DISCRIMINATOR_SEP in index_verborum_render.py.
-  local escaped_sort = latex_escape(sort)
+  return {
+    lang = lang,
+    role = role,
+    source_ref = source_ref,
+    occurrence_id = occ_id,
+    variety = variety,
+    variety_label = variety_label,
+    form = form,
+    display = display,
+    sort = sort,
+  }
+end
+
+local function legacy_explicit_decision(sem)
+  local decision = {
+    disposition = "suppress",
+    index_command = "",
+    occurrence_id = sem.occurrence_id,
+    source_ref = sem.source_ref,
+    reason = "not_printable",
+  }
+  if sem.lang == "" then
+    decision.reason = "blank_language"
+    return decision
+  end
+  if not explicit_tag_is_printable(sem.lang, sem.role, sem.form, sem.display, sem.source_ref, sem.variety) then
+    return decision
+  end
+  local index_display = "\\iventry{" .. latex_escape(sem.display) .. "}{" .. sem.variety_label .. "}"
+  local escaped_sort = latex_escape(sem.sort)
   local disc = ""
-  if variety ~= "" then
+  if sem.variety ~= "" then
     if escaped_sort:find("~", 1, true) then
-      error("index_verborum_filter.lua: sort key '" .. sort .. "' contains reserved discriminator separator '~'")
+      error("index_verborum_filter.lua: sort key '" .. sem.sort .. "' contains reserved discriminator separator '~'")
     end
     local vmeta = ensure_variety_meta_loaded()
-    local ventry = vmeta[variety]
+    local ventry = vmeta[sem.variety]
     if ventry then
       disc = "~" .. string.format("%02d", ventry.display_order)
     end
   end
   local meta = ensure_lang_meta_loaded()
-  local lm = meta[lang]
-  local lang_sort = lm and lm.order_str or ("99" .. lang)
-  local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. lang .. "}{}")
-  local raw = pandoc.RawInline("latex", "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. escaped_sort .. disc .. "@" .. index_display .. "}")
-  return { visible, raw }
+  local lm = meta[sem.lang]
+  local lang_sort = lm and lm.order_str or ("99" .. sem.lang)
+  local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. sem.lang .. "}{}")
+  decision.disposition = "emit"
+  decision.index_command = "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. escaped_sort .. disc .. "@" .. index_display .. "}"
+  decision.reason = "printable"
+  return decision
+end
+
+local function plan_explicit_decision(sem)
+  if sem.occurrence_id == "" then
+    error("index_verborum_filter.lua: explicit plan mode requires nonblank occ_id (source_ref='" .. sem.source_ref .. "')")
+  end
+  local plan = ensure_explicit_plan_loaded()
+  local row = plan[sem.occurrence_id]
+  if not row then
+    error("index_verborum_filter.lua: explicit occurrence_id '" .. sem.occurrence_id
+      .. "' not found in explicit plan (" .. EXPLICIT_PLAN_TSV .. ")")
+  end
+  if row.language ~= sem.lang or row.variety ~= sem.variety
+      or row.form ~= sem.form or row.display ~= sem.display
+      or row.sort_key ~= sem.sort or row.form_role ~= sem.role
+      or row.source_ref ~= sem.source_ref then
+    error("index_verborum_filter.lua: explicit plan semantic mismatch for occ_id '"
+      .. sem.occurrence_id .. "' source_ref='" .. sem.source_ref .. "'")
+  end
+  return {
+    disposition = row.disposition,
+    index_command = row.index_command,
+    occurrence_id = sem.occurrence_id,
+    source_ref = sem.source_ref,
+    emission_id = row.emission_id,
+    exclusion_reason = row.exclusion_reason,
+  }
+end
+
+local function record_compare_result(sem, legacy_decision, plan_decision, result)
+  if not EXPLICIT_COMPARE_LOG or EXPLICIT_COMPARE_LOG == "" then
+    return
+  end
+  explicit_compare_rows[#explicit_compare_rows + 1] = {
+    occurrence_id = sem.occurrence_id,
+    source_ref = sem.source_ref,
+    legacy_disposition = legacy_decision.disposition,
+    plan_disposition = plan_decision.disposition,
+    emission_id = plan_decision.emission_id or "",
+    index_command = plan_decision.index_command or "",
+    comparison_result = result,
+  }
+end
+
+local function compare_explicit_decisions(sem, legacy_decision, plan_decision)
+  if legacy_decision.disposition ~= plan_decision.disposition then
+    record_compare_result(sem, legacy_decision, plan_decision, "mismatch_disposition")
+    error("index_verborum_filter.lua: explicit compare mismatch at occ_id '" .. sem.occurrence_id
+      .. "' source_ref='" .. sem.source_ref
+      .. "' legacy=" .. legacy_decision.disposition
+      .. " plan=" .. plan_decision.disposition)
+  end
+  if legacy_decision.disposition == "emit" and legacy_decision.index_command ~= plan_decision.index_command then
+    record_compare_result(sem, legacy_decision, plan_decision, "mismatch_command")
+    local l = legacy_decision.index_command or ""
+    local p = plan_decision.index_command or ""
+    local first_diff = 1
+    while first_diff <= #l and first_diff <= #p and l:sub(first_diff, first_diff) == p:sub(first_diff, first_diff) do
+      first_diff = first_diff + 1
+    end
+    error("index_verborum_filter.lua: explicit compare command mismatch at occ_id '" .. sem.occurrence_id
+      .. "' source_ref='" .. sem.source_ref .. "' first_diff_char=" .. first_diff)
+  end
+  record_compare_result(sem, legacy_decision, plan_decision, "ok")
+end
+
+local function render_explicit_decision(visible, decision)
+  if decision.disposition == "suppress" then
+    return visible
+  end
+  return { visible, pandoc.RawInline("latex", decision.index_command) }
+end
+
+local function span_to_index(span)
+  if not has_class(span, "iv") then
+    return span
+  end
+  local visible = visible_span(span)
+  local sem = explicit_span_semantics(span)
+  if sem.lang == "" then
+    return visible
+  end
+  if sem.form:find(">", 1, true) then
+    return visible
+  end
+  local mode = explicit_mode()
+  if mode == "legacy" then
+    return render_explicit_decision(visible, legacy_explicit_decision(sem))
+  end
+  local plan_decision = plan_explicit_decision(sem)
+  if mode == "plan" then
+    return render_explicit_decision(visible, plan_decision)
+  end
+  local legacy_decision = legacy_explicit_decision(sem)
+  compare_explicit_decisions(sem, legacy_decision, plan_decision)
+  return render_explicit_decision(visible, plan_decision)
 end
 
 -- ── Emission-plan loader ──────────────────────────────────────────────────────
@@ -596,6 +714,131 @@ local function ensure_emission_plan_loaded()
   return emission_plan
 end
 
+ensure_explicit_plan_loaded = function()
+  if explicit_plan ~= nil then
+    return explicit_plan
+  end
+  explicit_plan = {}
+  local handle = io.open(EXPLICIT_PLAN_TSV, "r")
+  if not handle then
+    error("index_verborum_filter.lua: cannot read " .. EXPLICIT_PLAN_TSV
+          .. "; run build_index_verborum.py first.")
+  end
+  local header_line = handle:read("*l")
+  if not header_line then
+    handle:close()
+    error("index_verborum_filter.lua: " .. EXPLICIT_PLAN_TSV .. " is empty (no header).")
+  end
+  local headers = split_tsv(header_line)
+  local idx = {}
+  for i, h in ipairs(headers) do idx[trim(h)] = i end
+  local required = {
+    "occurrence_id", "disposition", "emission_id", "index_command", "exclusion_reason",
+    "language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref",
+  }
+  for _, col in ipairs(required) do
+    if not idx[col] then
+      handle:close()
+      error("index_verborum_filter.lua: " .. EXPLICIT_PLAN_TSV
+            .. " missing required column '" .. col .. "'")
+    end
+  end
+  local row_num = 1
+  for line in handle:lines() do
+    row_num = row_num + 1
+    if line == "" then goto continue end
+    local cells = split_tsv(line)
+    local occ_id = column(cells, idx["occurrence_id"])
+    local disposition = column(cells, idx["disposition"])
+    local emission_id = column(cells, idx["emission_id"])
+    local index_command = column(cells, idx["index_command"])
+    local exclusion_reason = column(cells, idx["exclusion_reason"])
+    local language = column(cells, idx["language"])
+    local variety = column(cells, idx["variety"])
+    local form = normalize_iv_match_text(column(cells, idx["form"]))
+    local display = normalize_iv_match_text(column(cells, idx["display"]))
+    local sort_key = column(cells, idx["sort_key"])
+    local form_role = column(cells, idx["form_role"])
+    local source_scope = column(cells, idx["source_scope"])
+    local source_ref = column(cells, idx["source_ref"])
+
+    if occ_id == "" then
+      handle:close()
+      error("index_verborum_filter.lua: explicit plan row " .. row_num .. " has blank occurrence_id")
+    end
+    if explicit_plan[occ_id] then
+      handle:close()
+      error("index_verborum_filter.lua: explicit plan duplicate occurrence_id '" .. occ_id .. "'")
+    end
+    if disposition == "" then
+      handle:close()
+      error("index_verborum_filter.lua: explicit plan occurrence '" .. occ_id .. "' has blank disposition")
+    end
+    if disposition ~= "emit" and disposition ~= "suppress" then
+      handle:close()
+      error("index_verborum_filter.lua: explicit plan occurrence '" .. occ_id
+            .. "' has unsupported disposition '" .. disposition .. "'")
+    end
+    if source_scope ~= "explicit_tag" then
+      handle:close()
+      error("index_verborum_filter.lua: explicit plan occurrence '" .. occ_id
+            .. "' has source_scope '" .. source_scope .. "' (expected explicit_tag)")
+    end
+    if language == "" or form == "" or display == "" or sort_key == "" or form_role == "" or source_ref == "" then
+      handle:close()
+      error("index_verborum_filter.lua: explicit plan occurrence '" .. occ_id
+            .. "' has blank semantic identity field")
+    end
+
+    if disposition == "emit" then
+      if emission_id == "" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id .. "' has blank emission_id")
+      end
+      if index_command == "" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id .. "' has blank index_command")
+      end
+      if exclusion_reason ~= "" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id .. "' has nonblank exclusion_reason")
+      end
+    else
+      if emission_id ~= "" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan suppress occurrence '" .. occ_id .. "' has nonblank emission_id")
+      end
+      if index_command ~= "" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan suppress occurrence '" .. occ_id .. "' has nonblank index_command")
+      end
+      if exclusion_reason == "" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan suppress occurrence '" .. occ_id .. "' has blank exclusion_reason")
+      end
+    end
+
+    explicit_plan[occ_id] = {
+      occurrence_id = occ_id,
+      disposition = disposition,
+      emission_id = emission_id,
+      index_command = index_command,
+      exclusion_reason = exclusion_reason,
+      language = language,
+      variety = variety,
+      form = form,
+      display = display,
+      sort_key = sort_key,
+      form_role = form_role,
+      source_scope = source_scope,
+      source_ref = source_ref,
+    }
+    ::continue::
+  end
+  handle:close()
+  return explicit_plan
+end
+
 -- ── .iv-anchor handler ────────────────────────────────────────────────────────
 -- An .iv-anchor is a generated planned-emission anchor marker. It is not
 -- hand-authored scholarly markup; it carries only emission_id, which the
@@ -728,6 +971,7 @@ end
 function Pandoc(doc)
   -- Reset per-document duplicate-anchor tracking.
   emitted_anchor_ids = {}
+  explicit_compare_rows = {}
   local blocks = {}
   for _, block in ipairs(doc.blocks) do
     if block.t == "Div" and block.identifier == "refs" then
@@ -746,6 +990,24 @@ function Pandoc(doc)
         end
       }))
     end
+  end
+  if explicit_mode() == "compare" and EXPLICIT_COMPARE_LOG and EXPLICIT_COMPARE_LOG ~= "" then
+    local fh = io.open(EXPLICIT_COMPARE_LOG, "w")
+    if not fh then
+      error("index_verborum_filter.lua: cannot write CAPR_IV_EXPLICIT_COMPARE_LOG at " .. EXPLICIT_COMPARE_LOG)
+    end
+    fh:write("occurrence_id\tsource_ref\tlegacy_disposition\tplan_disposition\temission_id\tindex_command\tcomparison_result\n")
+    for _, row in ipairs(explicit_compare_rows) do
+      local cmd = (row.index_command or ""):gsub("\t", " "):gsub("\n", " ")
+      fh:write((row.occurrence_id or "") .. "\t"
+        .. (row.source_ref or "") .. "\t"
+        .. (row.legacy_disposition or "") .. "\t"
+        .. (row.plan_disposition or "") .. "\t"
+        .. (row.emission_id or "") .. "\t"
+        .. cmd .. "\t"
+        .. (row.comparison_result or "") .. "\n")
+    end
+    fh:close()
   end
   return pandoc.Pandoc(blocks, doc.meta)
 end

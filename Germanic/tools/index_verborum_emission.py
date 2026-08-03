@@ -29,6 +29,14 @@ sys.path.insert(0, str(REPO_ROOT / "Germanic" / "docs" / "assembly"))
 
 import index_verborum_render as ivr
 from build_full_lexical_volume import normalize_print_text as npt
+from index_verborum_explicit_plan import (
+    DEFAULT_EXPLICIT_PLAN_PATH,
+    EXPLICIT_PLAN_FIELDS,
+    build_explicit_plan,
+    load_rows,
+    render_explicit_plan_tsv,
+    validate_explicit_plan,
+)
 
 BOOK_DIR = REPO_ROOT / "Germanic/docs/book"
 ASSEMBLY_DIR = REPO_ROOT / "Germanic/docs/assembly"
@@ -39,6 +47,7 @@ BOOK_OCCURRENCES_PATH = BOOK_DIR / "index_verborum_book_occurrences.tsv"
 BOOK_EMISSIONS_PATH = BOOK_DIR / "index_verborum_book_emissions.tsv"
 BOOK_PRINT_UNIQUE_PATH = BOOK_DIR / "index_verborum_book_print_unique.tsv"
 EMISSION_TABLE_PATH = BOOK_DIR / "index_verborum_emission_table.tsv"
+EXPLICIT_PLAN_PATH = DEFAULT_EXPLICIT_PLAN_PATH
 INTRO_PATH = ASSEMBLY_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = (
     REPO_ROOT
@@ -384,6 +393,14 @@ def write_emission_views(
             "sample_sources",
         ],
     )
+    explicit_plan_rows = build_explicit_plan(
+        forms_rows=load_rows(BOOK_DIR / "index_verborum_forms.tsv"),
+        print_main_rows=main_rows,
+        print_excluded_rows=load_rows(BOOK_DIR / "index_verborum_print_excluded.tsv"),
+        book_emission_rows=book_em_rows,
+        book_markdown_text=(ASSEMBLY_DIR / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8"),
+    )
+    write_tsv(EXPLICIT_PLAN_PATH, explicit_plan_rows, EXPLICIT_PLAN_FIELDS)
 
     return emission_rows, book_occ_rows, book_em_rows
 
@@ -463,6 +480,36 @@ def check_emission_table_assertions(
     assert not empty, f"book emission IDs without source occurrences: {empty[:5]}"
 
 
+def check_explicit_plan_assertions(
+    main_rows: list[dict[str, str]],
+    book_em_rows: list[dict[str, str]],
+) -> None:
+    forms_rows = load_rows(BOOK_DIR / "index_verborum_forms.tsv")
+    excluded_rows = load_rows(BOOK_DIR / "index_verborum_print_excluded.tsv")
+    book_md_text = (ASSEMBLY_DIR / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
+    generated_rows = build_explicit_plan(
+        forms_rows=forms_rows,
+        print_main_rows=main_rows,
+        print_excluded_rows=excluded_rows,
+        book_emission_rows=book_em_rows,
+        book_markdown_text=book_md_text,
+    )
+    validate_explicit_plan(
+        generated_rows,
+        forms_rows=forms_rows,
+        print_main_rows=main_rows,
+        print_excluded_rows=excluded_rows,
+        book_emission_rows=book_em_rows,
+        book_markdown_text=book_md_text,
+    )
+    if not EXPLICIT_PLAN_PATH.exists():
+        raise AssertionError(f"explicit plan missing: {EXPLICIT_PLAN_PATH}")
+    tracked_text = EXPLICIT_PLAN_PATH.read_text(encoding="utf-8")
+    generated_text = render_explicit_plan_tsv(generated_rows)
+    if tracked_text != generated_text:
+        raise AssertionError(f"explicit plan stale or mismatched: {EXPLICIT_PLAN_PATH}")
+
+
 def main() -> None:
     import argparse
 
@@ -484,6 +531,7 @@ def main() -> None:
     if args.check:
         check_no_occurrence_id_collisions(emission_rows)
         check_emission_table_assertions(main_rows, emission_rows)
+        check_explicit_plan_assertions(main_rows, build_book_emissions_rows(emission_rows))
         print("Emission planner checks passed.")
 
 

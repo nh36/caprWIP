@@ -328,8 +328,8 @@ The production build uses a **dual-emitter** architecture:
 1. Explicit visible `.iv` spans emit through the Lua filter (`span_to_index`
    path in `index_verborum_filter.lua`).
 2. Non-explicit structured occurrences (lexical heading and line injections)
-   emit via Python, which inserts precomputed raw `\index[iv]{...}` commands
-   directly into the assembled Markdown.
+   emit via generated `.iv-anchor` markers resolved by Lua against
+   `book_emissions.tsv`.
 
 ### `.iv-anchor` marker syntax
 
@@ -365,9 +365,26 @@ for all non-explicit `heading_injection` and `line_injection` emissions.
 and command-sequence parity. Production canonical Markdown no longer carries
 raw non-explicit `\index[iv]{...}` commands.
 
-**Stage 3 (deferred)**
-- Make explicit visible `.iv` spans plan-driven through `occ_id` so Lua no
-  longer independently reconstructs their index commands.
+**Stage 3A (complete, shadow mode only for explicit spans)**
+- Generated explicit plan:
+  `Germanic/docs/book/index_verborum_book_explicit_plan.tsv`.
+- Partition is first-class and explicit:
+  1496 visible explicit spans = 1417 `emit` + 79 `suppress`.
+- Suppression is recorded by disposition and `exclusion_reason`; suppression is
+  **not** inferred from absence in an emission table.
+- `occ_id` is the sole explicit-plan lookup identity.
+- Lua supports explicit modes:
+  - `legacy` (production default in Stage 3A),
+  - `plan`,
+  - `compare`.
+- `plan` emits precomputed `index_command` verbatim from the explicit plan.
+- `compare` proves per-occurrence parity by comparing legacy and plan decisions
+  for every explicit occurrence.
+
+**Stage 3B (deferred)**
+- Switch production explicit spans from `legacy` to `plan`.
+- Remove legacy Lua explicit printability and command reconstruction paths.
+- Remove explicit print-main allowlist policy logic from Lua.
 
 **Stage 4 (deferred)**
 - Move accepted broad-prose emissions from approximate heading sites to
@@ -376,16 +393,15 @@ raw non-explicit `\index[iv]{...}` commands.
 **Stage 5 (deferred)**
 - Add TeX-level occurrence-ID and emission-ID logging.
 
-At the end of Stage 2:
+At the end of Stage 3A:
 - anchors are generated infrastructure, not hand-authored scholarly markup;
 - `book_emissions.tsv` is authoritative for non-explicit command text;
 - Python owns modelling/policy/collapse/representatives/command construction;
 - Lua places the precomputed non-explicit command by `emission_id`;
 - production defaults to anchor-mode assembly;
 - legacy raw mode remains test-only for parity and regression;
-- explicit visible `.iv` spans still run through the legacy semantic path and
-  are not yet plan-driven via `occ_id` (full command-construction unification
-  is deferred to Stage 3).
+- explicit visible `.iv` spans are fully plan-modelled and parity-checked, but
+  production still runs them in `legacy` mode until Stage 3B.
 - Structured lexical fields, generated lexical headings/metadata, selected
   derivational inputs, explicit `.iv` tags, and curated overrides feed the
   **production** index.

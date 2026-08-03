@@ -62,9 +62,10 @@ python3 Germanic/tools/check_book_occ_id_parity.py
 python3 Germanic/tools/index_verborum_emission.py --check
 if command -v pandoc >/dev/null 2>&1; then
   python3 Germanic/tools/check_iv_anchor_production.py
+  python3 Germanic/tools/check_iv_explicit_plan_shadow.py
 else
   echo "pandoc not found locally; running production anchor checker inside Docker."
-  docker run --rm --platform "${platform}" --entrypoint /bin/sh -v "${repo_root}":/data -w /data "${image}" -c "apk add --no-cache python3 >/dev/null && python3 Germanic/tools/check_iv_anchor_production.py"
+  docker run --rm --platform "${platform}" --entrypoint /bin/sh -v "${repo_root}":/data -w /data "${image}" -c "apk add --no-cache python3 >/dev/null && python3 Germanic/tools/check_iv_anchor_production.py && python3 Germanic/tools/check_iv_explicit_plan_shadow.py"
 fi
 python3 Germanic/tools/check_bibliography_sanity.py
 
@@ -90,6 +91,8 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --pdf-engine=xelatex -o ${intro_pdf#${repo_root}/}
     CAPR_IV_PRINT_MAIN_TSV=Germanic/docs/book/index_verborum_print_main.tsv \
     CAPR_IV_BOOK_EMISSIONS_TSV=Germanic/docs/book/index_verborum_book_emissions.tsv \
+    CAPR_IV_EXPLICIT_PLAN_TSV=Germanic/docs/book/index_verborum_book_explicit_plan.tsv \
+    CAPR_IV_EXPLICIT_MODE=legacy \
     CAPR_IV_LANGUAGE_REGISTRY_TSV=Germanic/docs/book/index_verborum_languages.tsv \
     CAPR_IV_VARIETY_REGISTRY_TSV=Germanic/docs/book/index_verborum_varieties.tsv \
     pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
