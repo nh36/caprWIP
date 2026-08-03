@@ -43,17 +43,24 @@ def _write_tsv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> Non
         w.writerows(rows)
 
 
-def _run_pandoc(md_text: str, *, explicit_mode: str, explicit_plan_tsv: Path, print_main_tsv: Path, book_emissions_tsv: Path, require_completeness: bool = False) -> subprocess.CompletedProcess:
+def _run_pandoc(
+    md_text: str,
+    *,
+    explicit_mode: str,
+    explicit_plan_tsv: Path,
+    print_main_tsv: Path,
+    book_emissions_tsv: Path,
+    require_completeness: bool = False,
+    completeness_value: str | None = None,
+) -> subprocess.CompletedProcess:
     env = dict(os.environ)
     env.update(
         {
-            "CAPR_IV_EXPLICIT_MODE": explicit_mode,
             "CAPR_IV_EXPLICIT_PLAN_TSV": str(explicit_plan_tsv),
-            "CAPR_IV_PRINT_MAIN_TSV": str(print_main_tsv),
             "CAPR_IV_BOOK_EMISSIONS_TSV": str(book_emissions_tsv),
-            "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
-            "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
-            "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "1" if require_completeness else "0",
+            "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": (
+                completeness_value if completeness_value is not None else ("1" if require_completeness else "0")
+            ),
         }
     )
     with tempfile.TemporaryDirectory() as tmp:
@@ -83,7 +90,7 @@ class ExplicitPlanGenerationTests(unittest.TestCase):
         md = (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
         spans = [
             s for s in scan_explicit_spans(md)
-            if s["span_class"] in {"iv", "pred"} and (s.get("language") or "").strip() and ">" not in (s.get("normalized_visible_form") or "")
+            if s["span_class"] == "iv"
         ]
         self.assertEqual([r["occurrence_id"] for r in rows], [s["occurrence_id"] for s in spans])
 
@@ -218,10 +225,43 @@ class ExplicitPlanLuaModeTests(unittest.TestCase):
             self.assertNotEqual(proc.returncode, 0)
             self.assertIn("requires nonblank occ_id", proc.stderr)
 
+    def test_plan_mode_blank_lang_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            plan, main, em = self._write_fixture_files(tmp, [self._base_row()], self._print_main(), self._book_emissions())
+            md = '[āsceaf]{.iv sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
+            proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em)
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertIn("semantic mismatch", proc.stderr)
+
+    def test_plan_mode_blank_source_ref_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            plan, main, em = self._write_fixture_files(tmp, [self._base_row()], self._print_main(), self._book_emissions())
+            md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form occ_id="occ:1"}\n'
+            proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em)
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertIn("semantic mismatch", proc.stderr)
+
     def test_plan_mode_unknown_occ_id_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
             plan, main, em = self._write_fixture_files(tmp, [self._base_row()], self._print_main(), self._book_emissions())
             md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:unknown"}\n'
+            proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em)
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertIn("not found in explicit plan", proc.stderr)
+
+    def test_plan_mode_derivational_chain_without_iv_stays_visible(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            plan, main, em = self._write_fixture_files(tmp, [self._base_row()], self._print_main(), self._book_emissions())
+            md = "`*knúbbô > *cnobba`\n"
+            proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em)
+            self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+            self.assertNotIn(r"\index[iv]{", proc.stdout)
+            self.assertIn(r"\texttt{*knúbbô", proc.stdout)
+
+    def test_plan_mode_iv_with_derivational_chain_still_uses_plan(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            plan, main, em = self._write_fixture_files(tmp, [self._base_row()], self._print_main(), self._book_emissions())
+            md = '[*knúbbô > *cnobba]{.iv lang=oe sort=cnobba role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:unknown"}\n'
             proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em)
             self.assertNotEqual(proc.returncode, 0)
             self.assertIn("not found in explicit plan", proc.stderr)
@@ -326,6 +366,22 @@ class ExplicitPlanProductionCheckerTests(unittest.TestCase):
         target["emission_id"] = ""
         target["index_command"] = ""
         target["exclusion_reason"] = "forced_test_mismatch"
+        with self.assertRaises(SystemExit):
+            check(plan_rows_override=rows)
+
+    def test_checker_fails_if_emit_emission_id_differs_from_occurrence_id(self):
+        from check_iv_explicit_plan_production import check
+        rows = _load_tsv(BOOK / "index_verborum_book_explicit_plan.tsv")
+        target = next(r for r in rows if r["disposition"] == "emit")
+        target["emission_id"] = "occ:wrong"
+        with self.assertRaises(SystemExit):
+            check(plan_rows_override=rows)
+
+    def test_checker_fails_if_duplicate_emit_emission_id(self):
+        from check_iv_explicit_plan_production import check
+        rows = _load_tsv(BOOK / "index_verborum_book_explicit_plan.tsv")
+        emit_rows = [r for r in rows if r["disposition"] == "emit"]
+        emit_rows[1]["emission_id"] = emit_rows[0]["emission_id"]
         with self.assertRaises(SystemExit):
             check(plan_rows_override=rows)
 
@@ -543,6 +599,66 @@ class ExplicitPlanCompletenessTests(unittest.TestCase):
                                book_emissions_tsv=em, require_completeness=False)
             self.assertEqual(proc.returncode, 0, proc.stderr[:400])
 
+    def test_completeness_fails_with_zero_document_iv_spans(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            plan, main, em = self._write_fixture(tmp, [self._base_row()], self._print_main(), self._book_emissions())
+            md = "plain paragraph without indexed spans\n"
+            proc = _run_pandoc(
+                md,
+                explicit_mode="plan",
+                explicit_plan_tsv=plan,
+                print_main_tsv=main,
+                book_emissions_tsv=em,
+                require_completeness=True,
+            )
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertIn("completeness failure", proc.stderr)
+
+    def test_completeness_fails_on_wrong_order(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            row2 = dict(self._base_row())
+            row2["occurrence_id"] = "occ:2"
+            row2["emission_id"] = "occ:2"
+            row2["source_ref"] = "Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:2"
+            em2 = dict(self._book_emissions()[0])
+            em2["emission_id"] = "occ:2"
+            em2["representative_occurrence_id"] = "occ:2"
+            em2["source_occurrence_ids"] = "occ:2"
+            em2["source_ref"] = "Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:2"
+            plan, main, em = self._write_fixture(
+                tmp, [self._base_row(), row2], self._print_main(), [self._book_emissions()[0], em2]
+            )
+            md = (
+                '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:2" occ_id="occ:2"}\n'
+                '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
+            )
+            proc = _run_pandoc(
+                md,
+                explicit_mode="plan",
+                explicit_plan_tsv=plan,
+                print_main_tsv=main,
+                book_emissions_tsv=em,
+                require_completeness=True,
+            )
+            self.assertNotEqual(proc.returncode, 0)
+            self.assertIn("completeness failure", proc.stderr)
+
+    def test_invalid_completeness_values_fail_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            plan, main, em = self._write_fixture(tmp, [self._base_row()], self._print_main(), self._book_emissions())
+            md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
+            for bad in ("true", "false", "yes", "no", "2", "-1", "01", " ", " 1"):
+                proc = _run_pandoc(
+                    md,
+                    explicit_mode="plan",
+                    explicit_plan_tsv=plan,
+                    print_main_tsv=main,
+                    book_emissions_tsv=em,
+                    completeness_value=bad,
+                )
+                self.assertNotEqual(proc.returncode, 0, f"value={bad!r} should fail")
+                self.assertIn("unsupported CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS", proc.stderr)
+
 
 class ExplicitPlanMembershipTests(unittest.TestCase):
     """Tests verifying .pred spans are excluded from plan membership."""
@@ -558,15 +674,24 @@ class ExplicitPlanMembershipTests(unittest.TestCase):
         overlap = pred_occ_ids & plan_occ_ids
         self.assertEqual(overlap, set(), f".pred occ_ids found in plan: {sorted(overlap)[:5]}")
 
-    def test_iv_span_with_deriv_chain_not_in_plan(self):
-        """The one derivation-chain .iv span (> in form) is not in the plan."""
+    def test_all_canonical_iv_spans_are_planned(self):
         rows = build_explicit_plan_from_paths()
         plan_occ_ids = {r["occurrence_id"] for r in rows}
         md = (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
+        iv_occ_ids = {
+            s["occurrence_id"]
+            for s in scan_explicit_spans(md)
+            if s["span_class"] == "iv" and s.get("occurrence_id")
+        }
+        self.assertEqual(iv_occ_ids, plan_occ_ids)
+
+    def test_canonical_iv_spans_have_no_deriv_chain_content(self):
+        rows = build_explicit_plan_from_paths()
+        md = (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
         all_spans = scan_explicit_spans(md)
         deriv_spans = [s for s in all_spans if s["span_class"] == "iv" and ">" in (s.get("normalized_visible_form") or "")]
-        self.assertEqual(len(deriv_spans), 1)
-        self.assertNotIn(deriv_spans[0]["occurrence_id"], plan_occ_ids)
+        self.assertEqual(len(rows), 1496)
+        self.assertEqual(len(deriv_spans), 0)
 
 
 class InventorySpansTests(unittest.TestCase):
@@ -575,27 +700,25 @@ class InventorySpansTests(unittest.TestCase):
     def test_canonical_counts(self):
         md = (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
         result = inventory_spans(md)
-        self.assertEqual(result.total_iv, 1497)
+        self.assertEqual(result.total_iv, 1496)
         self.assertEqual(result.iv_in_plan, 1496)
-        self.assertEqual(result.iv_derivation_chain, 1)
+        self.assertEqual(result.iv_with_gt, 0)
+        self.assertEqual(result.iv_blank_lang, 0)
+        self.assertEqual(result.iv_blank_source_ref, 0)
+        self.assertEqual(result.iv_blank_occ_id, 0)
         self.assertEqual(result.pred_in_plan, 0)
 
-    def test_derivation_chain_count_is_one(self):
-        md = (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
+    def test_derivation_chain_detected_when_explicitly_tagged_iv(self):
+        md = '[*knúbbô > *cnobba]{.iv lang=oe occ_id="test:1" source_ref="x:1"}\n'
         result = inventory_spans(md)
-        self.assertEqual(result.iv_derivation_chain, 1)
+        self.assertEqual(result.total_iv, 1)
+        self.assertEqual(result.iv_with_gt, 1)
+        self.assertEqual(result.iv_in_plan, 0)
 
     def test_pred_in_plan_is_zero(self):
         md = (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
         result = inventory_spans(md)
         self.assertEqual(result.pred_in_plan, 0)
-
-    def test_synthetic_derivation_chain_detected(self):
-        md = '[*knúbbô > *cnobba]{.iv lang=oe occ_id="test:1" source_ref="x:1"}\n'
-        result = inventory_spans(md)
-        self.assertEqual(result.total_iv, 1)
-        self.assertEqual(result.iv_derivation_chain, 1)
-        self.assertEqual(result.iv_in_plan, 0)
 
     def test_pred_counted_but_not_in_plan(self):
         md = '[form]{.pred lang=oe occ_id="test:pred:1" source_ref="x:1"}\n'
@@ -707,6 +830,12 @@ class LuaArchitectureTests(unittest.TestCase):
 
     def test_require_completeness_present(self):
         self.assertIn("REQUIRE_COMPLETENESS", self._lua_source())
+
+    def test_no_blank_lang_visible_only_bypass(self):
+        self.assertNotIn('sem.lang == ""', self._lua_source())
+
+    def test_no_derivation_chain_visible_only_bypass(self):
+        self.assertNotIn('sem.form:find(">", 1, true)', self._lua_source())
 
 
 if __name__ == "__main__":

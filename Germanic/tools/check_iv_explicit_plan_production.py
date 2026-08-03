@@ -129,6 +129,20 @@ def check(
     dup_plan = [k for k, v in Counter((r.get("occurrence_id") or "").strip() for r in plan_rows).items() if v > 1]
     if dup_plan:
         errors.append(f"A: duplicate occurrence_id in plan ({len(dup_plan)})")
+    emit_ids = [(r.get("emission_id") or "").strip() for r in plan_rows if (r.get("disposition") or "").strip() == "emit"]
+    if any(not eid for eid in emit_ids):
+        errors.append("A: blank emission_id in emit row")
+    dup_emit_ids = [k for k, v in Counter(emit_ids).items() if v > 1]
+    if dup_emit_ids:
+        errors.append(f"A: duplicate emit emission_id in plan ({len(dup_emit_ids)})")
+    mismatched_emit_ids = [
+        (r.get("occurrence_id") or "").strip()
+        for r in plan_rows
+        if (r.get("disposition") or "").strip() == "emit"
+        and (r.get("emission_id") or "").strip() != (r.get("occurrence_id") or "").strip()
+    ]
+    if mismatched_emit_ids:
+        errors.append(f"A: emit rows with emission_id!=occurrence_id ({len(mismatched_emit_ids)})")
     unsupported_disp = [k for k in plan_counts if k not in {"emit", "suppress"}]
     if unsupported_disp:
         errors.append(f"A: unsupported dispositions in plan: {unsupported_disp}")
@@ -138,8 +152,6 @@ def check(
         s
         for s in scan_explicit_spans(md_text)
         if s["span_class"] == "iv"
-        and (s.get("language") or "").strip()
-        and ">" not in (s.get("normalized_visible_form") or "")
     ]
     span_ids = [s["occurrence_id"] for s in spans]
     if len(span_ids) != EXPECTED_PLAN_ROWS:
@@ -154,6 +166,18 @@ def check(
         errors.append("B: assembled explicit occurrence_id order != explicit plan order")
     if set(plan_ids) != set(span_ids):
         errors.append("B: assembled/plan occurrence-id sets differ")
+    blank_lang = [s for s in spans if not (s.get("language") or "").strip()]
+    blank_source_ref = [s for s in spans if not (s.get("source_ref") or "").strip()]
+    blank_occ_id = [s for s in spans if not (s.get("occurrence_id") or "").strip()]
+    with_gt = [s for s in spans if ">" in (s.get("normalized_visible_form") or "")]
+    if blank_lang:
+        errors.append(f"B: assembled .iv spans with blank lang ({len(blank_lang)})")
+    if blank_source_ref:
+        errors.append(f"B: assembled .iv spans with blank source_ref ({len(blank_source_ref)})")
+    if blank_occ_id:
+        errors.append(f"B: assembled .iv spans with blank occ_id ({len(blank_occ_id)})")
+    if with_gt:
+        errors.append(f"B: assembled .iv spans containing '>' ({len(with_gt)})")
 
     # C. emit join validation
     em_by_id = {(r.get("emission_id") or "").strip(): r for r in emissions if (r.get("emission_id") or "").strip()}
@@ -167,6 +191,8 @@ def check(
             continue
         occ = (row.get("occurrence_id") or "").strip()
         eid = (row.get("emission_id") or "").strip()
+        if eid != occ:
+            errors.append(f"C: emit emission_id!=occurrence_id: {occ} -> {eid}")
         em = em_by_id.get(eid)
         if not em:
             errors.append(f"C: emit row missing emission: {occ}")

@@ -1,6 +1,21 @@
 local BOOK_EMISSIONS_TSV = os.getenv("CAPR_IV_BOOK_EMISSIONS_TSV") or "Germanic/docs/book/index_verborum_book_emissions.tsv"
 local EXPLICIT_PLAN_TSV = os.getenv("CAPR_IV_EXPLICIT_PLAN_TSV") or "Germanic/docs/book/index_verborum_book_explicit_plan.tsv"
-local REQUIRE_COMPLETENESS = (os.getenv("CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS") or "0") == "1"
+
+local function parse_require_completeness()
+  local raw = os.getenv("CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS")
+  if raw == nil or raw == "" or raw == "0" then
+    return false
+  end
+  if raw == "1" then
+    return true
+  end
+  error(
+    "index_verborum_filter.lua: unsupported CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS '"
+    .. raw .. "' (allowed: 0 or 1)"
+  )
+end
+
+local REQUIRE_COMPLETENESS = parse_require_completeness()
 -- ── Emission plan (for .iv-anchor path) ───────────────────────────────────────
 -- emission_plan[emission_id] = precomputed_index_command
 -- Loaded lazily when the first .iv-anchor span or div is encountered.
@@ -204,14 +219,6 @@ local function span_to_index(span)
   end
   local visible = visible_span(span)
   local sem = explicit_span_semantics(span)
-  if sem.lang == "" then
-    return visible
-  end
-  -- Derivation-chain spans (those with ">" in the form, e.g. *knúbbô > *cnobba)
-  -- are excluded from plan membership and returned as visible-only.
-  if sem.form:find(">", 1, true) then
-    return visible
-  end
   local plan_decision = plan_explicit_decision(sem)
   -- Track this occurrence for per-document completeness checking.
   if seen_explicit_occurrence_ids[sem.occurrence_id] then
@@ -511,6 +518,7 @@ ensure_explicit_plan_loaded = function()
     end
   end
   local row_num = 1
+  local emit_emission_ids = {}
   for line in handle:lines() do
     row_num = row_num + 1
     if line == "" then goto continue end
@@ -562,6 +570,16 @@ ensure_explicit_plan_loaded = function()
         handle:close()
         error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id .. "' has blank emission_id")
       end
+      if emission_id ~= occ_id then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' has emission_id '" .. emission_id .. "' (expected occurrence_id)")
+      end
+      if emit_emission_ids[emission_id] then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan duplicate emit emission_id '" .. emission_id .. "'")
+      end
+      emit_emission_ids[emission_id] = true
       if index_command == "" then
         handle:close()
         error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id .. "' has blank index_command")
@@ -817,7 +835,8 @@ function Pandoc(doc)
     end
   end
   -- ── Explicit plan completeness check ─────────────────────────────────────
-  if REQUIRE_COMPLETENESS and explicit_plan ~= nil then
+  if REQUIRE_COMPLETENESS then
+    ensure_explicit_plan_loaded()
     local plan_n = #explicit_plan_ordered_ids
     local seen_n = #seen_explicit_occurrence_order
     if seen_n ~= plan_n then

@@ -48,15 +48,9 @@ def check_parity(book_md: Path) -> None:
     if expected_printable & expected_excluded:
         raise AssertionError("printable/excluded in-book explicit ID sets overlap")
 
-    # Derivation-chain spans (those with ">" in the visible form) are excluded
-    # from plan membership because they represent multi-form chains.  Exactly 1
-    # such span is expected in the assembled book; see inventory_spans() for the
-    # canonical assertion.
     spans = [
         s for s in scan_explicit_spans(book_md.read_text(encoding="utf-8"))
         if s["span_class"] == "iv"
-        and (s.get("language") or "").strip()
-        and ">" not in (s.get("normalized_visible_form") or "")
     ]
     occ_ids = [s["occurrence_id"] for s in spans if s["occurrence_id"]]
     actual_counter = Counter(occ_ids)

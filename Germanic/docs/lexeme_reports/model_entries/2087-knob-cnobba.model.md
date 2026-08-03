@@ -53,7 +53,7 @@ different: if the voiced weak-noun branch is the one to be represented, then
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [`*knúbbô > *cnobba`]{.iv lang=oe display=*cnobba sort=cnobba} | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
+| `*knúbbô > *cnobba` | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
 | [`cnopp`]{.iv lang=oe sort=cnopp} / [`cnoppa`]{.iv lang=oe sort=cnoppa} | attested OE branch | important control form, but belongs to the voiceless branch |
 | [`cnæp`]{.iv lang=oe sort=cnaep} | attested OE form from another family | not part of the present lexeme line |
 

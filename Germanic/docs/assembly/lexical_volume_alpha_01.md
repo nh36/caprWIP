@@ -10636,7 +10636,7 @@ different: if the voiced weak-noun branch is the one to be represented, then
 
 | Form | Status | Relevance to this entry |
 | :--- | :--- | :--- |
-| [_\*knúbbô_ > _\*cnobba_]{.iv lang=oe display=*cnobba sort=cnobba source_ref="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:56:1"} | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
+| _\*knúbbô_ > _\*cnobba_ | reconstructed OE form; regular derivation | reconstructed Old English form compared here |
 | [_cnopp_]{.iv lang=oe sort=cnopp source_ref="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:57:1"} / [_cnoppa_]{.iv lang=oe sort=cnoppa source_ref="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:57:2"} | attested OE branch | important control form, but belongs to the voiceless branch |
 | [_cnæp_]{.iv lang=oe sort=cnaep source_ref="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:58:1"} | attested OE form from another family | not part of the present lexeme line |
 

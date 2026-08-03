@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Canonical explicit-span plan builder and validator.
 
-Stage 3A contract:
-  * every visible explicit .iv/.pred occurrence in assembled book has one row
+Stage 3B contract:
+  * every visible explicit .iv occurrence in assembled book has one row
   * row disposition is explicit: emit or suppress
   * emit rows join exactly to explicit_tag book emissions
   * suppress rows join exactly to explicit_tag print-excluded rows
@@ -241,29 +241,10 @@ def build_explicit_plan(
         if occ in suppress_ids:
             suppressed_reason_by_occ[occ] = (row.get("exclusion_reason") or "").strip()
 
-    # Derivation-chain spans (those with ">" in the visible form) are
-    # intentionally excluded from the plan.  The Lua filter returns visible-only
-    # for them because they represent multi-form chains, not individual lexeme
-    # entries.  Exactly 1 such span is expected in the assembled book
-    # (2087-knob-cnobba.model.md:56:1, *knúbbô > *cnobba, display=*cnobba).
-    deriv_chain_spans = [
-        s
-        for s in scan_explicit_spans(book_markdown_text)
-        if s["span_class"] == "iv"
-        and ">" in (s.get("normalized_visible_form") or "")
-    ]
-    if len(deriv_chain_spans) != 1:
-        raise AssertionError(
-            f"expected exactly 1 derivation-chain .iv span (with '>' in form), "
-            f"found {len(deriv_chain_spans)}"
-        )
-
     spans = [
         s
         for s in scan_explicit_spans(book_markdown_text)
         if s["span_class"] == "iv"
-        and (s.get("language") or "").strip()
-        and ">" not in (s.get("normalized_visible_form") or "")
     ]
     occ_ids = [s["occurrence_id"] for s in spans]
     if any(not oid for oid in occ_ids):
@@ -297,11 +278,16 @@ def build_explicit_plan(
             em = explicit_em_by_occ.get(occ_id)
             if em is None:
                 raise AssertionError(f"emit occurrence has no explicit_tag emission row: {occ_id}")
+            emission_id = (em.get("emission_id") or "").strip()
+            if emission_id != occ_id:
+                raise AssertionError(
+                    f"emit occurrence emission_id mismatch: occurrence_id={occ_id} emission_id={emission_id!r}"
+                )
             rows.append(
                 {
                     **base,
                     "disposition": "emit",
-                    "emission_id": (em.get("emission_id") or "").strip(),
+                    "emission_id": emission_id,
                     "index_command": (em.get("index_command") or "").strip(),
                     "exclusion_reason": "",
                 }
@@ -358,15 +344,10 @@ def validate_explicit_plan(
     if dup:
         raise AssertionError(f"duplicate explicit plan occurrence_id(s): {dup[:5]}")
 
-    # Derivation-chain spans (those with ">" in the visible form) are
-    # intentionally excluded from the plan; see build_explicit_plan() for the
-    # canonical assertion.  Here we simply reconstruct the filtered span list.
     spans = [
         s
         for s in scan_explicit_spans(book_markdown_text)
         if s["span_class"] == "iv"
-        and (s.get("language") or "").strip()
-        and ">" not in (s.get("normalized_visible_form") or "")
     ]
     assembled_occ = [s["occurrence_id"] for s in spans]
     if occ_ids != assembled_occ:
@@ -382,6 +363,7 @@ def validate_explicit_plan(
     }
     emitted_occ_set = set()
     suppressed_occ_set = set()
+    seen_emit_emission_ids: set[str] = set()
 
     for row in plan_rows:
         occ = (row.get("occurrence_id") or "").strip()
@@ -407,6 +389,11 @@ def validate_explicit_plan(
             emitted_occ_set.add(occ)
             if not emission_id:
                 raise AssertionError(f"emit row has blank emission_id: {occ}")
+            if emission_id != occ:
+                raise AssertionError(f"emit row emission_id must equal occurrence_id: {occ} -> {emission_id}")
+            if emission_id in seen_emit_emission_ids:
+                raise AssertionError(f"duplicate emit emission_id in explicit plan: {emission_id}")
+            seen_emit_emission_ids.add(emission_id)
             if not idx_cmd:
                 raise AssertionError(f"emit row has blank index_command: {occ}")
             if reason:
@@ -500,9 +487,13 @@ class InventoryResult:
     __slots__ = (
         "total_iv",
         "iv_with_lang",
+        "iv_blank_lang",
+        "iv_with_source_ref",
+        "iv_blank_source_ref",
         "iv_with_occ_id",
+        "iv_blank_occ_id",
         "iv_in_plan",
-        "iv_derivation_chain",
+        "iv_with_gt",
         "pred_total",
         "pred_in_plan",
     )
@@ -524,11 +515,11 @@ def inventory_spans(
     """Return per-class inventory counts for explicit spans in assembled Markdown.
 
     Expected values for the canonical assembled book:
-      total_iv           = 1497  (1496 plan-eligible + 1 derivation-chain bypass)
-      iv_with_lang       = 1497
-      iv_with_occ_id     = 1497
+      total_iv           = 1496
+      iv_with_lang       = 1496
+      iv_with_occ_id     = 1496
       iv_in_plan         = 1496
-      iv_derivation_chain = 1   (the 2087-knob-cnobba *knúbbô > *cnobba span)
+      iv_with_gt         = 0
       pred_total         = 158
       pred_in_plan       = 0    (.pred spans are excluded from plan membership)
     """
@@ -544,17 +535,18 @@ def inventory_spans(
     iv_spans = [s for s in all_spans if s["span_class"] == "iv"]
     pred_spans = [s for s in all_spans if s["span_class"] == "pred"]
 
-    iv_deriv = [s for s in iv_spans if ">" in (s.get("normalized_visible_form") or "")]
-
     return InventoryResult(
         total_iv=len(iv_spans),
         iv_with_lang=sum(1 for s in iv_spans if (s.get("language") or "").strip()),
+        iv_blank_lang=sum(1 for s in iv_spans if not (s.get("language") or "").strip()),
+        iv_with_source_ref=sum(1 for s in iv_spans if (s.get("source_ref") or "").strip()),
+        iv_blank_source_ref=sum(1 for s in iv_spans if not (s.get("source_ref") or "").strip()),
         iv_with_occ_id=sum(1 for s in iv_spans if (s.get("occurrence_id") or "").strip()),
+        iv_blank_occ_id=sum(1 for s in iv_spans if not (s.get("occurrence_id") or "").strip()),
         iv_in_plan=sum(1 for s in iv_spans if (s.get("occurrence_id") or "").strip() in plan_ids),
-        iv_derivation_chain=len(iv_deriv),
+        iv_with_gt=sum(1 for s in iv_spans if ">" in (s.get("normalized_visible_form") or "")),
         pred_total=len(pred_spans),
         pred_in_plan=sum(
             1 for s in pred_spans if (s.get("occurrence_id") or "").strip() in plan_ids
         ),
     )
-

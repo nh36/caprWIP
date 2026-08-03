@@ -1905,58 +1905,83 @@ def run_explicit_forms_all_sections_fixtures() -> None:
 # ── Occurrence-gating smoke test ──────────────────────────────────────────────
 
 def run_occurrence_gating_fixture() -> None:
-    """Pandoc fixture: occurrence-specific gating — only the occurrence whose source_ref
-    is in print_main.tsv emits an \\index command.
-
-    Two .iv forms share the same lang, form, and role but have different source_ref
-    values and different sort= keys so their emitted \\index commands are distinguishable.
-    When only occurrence A is in print_main.tsv, only A's sort key appears in the TeX.
-    When only B is in print_main.tsv, only B's sort key appears.
-    This would fail if the filter fell back to source-less matching or always
-    emitted the first / second occurrence regardless of source_ref.
-    """
+    """Pandoc fixture: occurrence-specific gating is plan-driven by occ_id."""
     import os
 
-    PRINT_MAIN_FIELDS = [
-        "language", "form", "display", "sort_key", "form_role",
-        "source_scope", "source_ref", "origin", "status",
+    EXPLICIT_PLAN_FIELDS = [
+        "occurrence_id", "disposition", "emission_id", "index_command", "exclusion_reason",
+        "language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref",
+    ]
+    BOOK_EMISSIONS_FIELDS = [
+        "emission_id", "representative_occurrence_id", "emission_path", "site", "index_command",
+        "language", "variety", "display", "sort_key", "form_role", "source_scope", "source_ref",
+        "source_occurrence_count", "source_occurrence_ids",
     ]
 
-    # Occurrences A and B: same lang/form/role, different source_ref AND sort key.
-    # Different sort keys make the emitted \index commands distinguishable.
+    # Occurrences A and B share semantic fields but differ by occ_id/source_ref.
     ref_a = "fixturepath/file.md:10"
     ref_b = "fixturepath/file.md:99"
+    occ_a = "fixturepath/file.md:10:1"
+    occ_b = "fixturepath/file.md:99:1"
     sort_a = "fixtthenkijana_occ_A"
     sort_b = "fixtthenkijana_occ_B"
     FORM = "þénkijaną"
+    cmd_a = r"\index[iv]{00pgmc@\ivlangheader{Proto-Germanic}{}!fixtthenkijana_occ_A@\iventry{*þénkijaną}{}}"
+    cmd_b = r"\index[iv]{00pgmc@\ivlangheader{Proto-Germanic}{}!fixtthenkijana_occ_B@\iventry{*þénkijaną}{}}"
 
     md_a = (
         f"[{FORM}]{{.iv lang=pgmc sort={sort_a} role=evidence_form "
-        f"source_ref={ref_a}}} 'think A'"
+        f"source_ref={ref_a} occ_id={occ_a}}} 'think A'"
     )
     md_b = (
         f"[{FORM}]{{.iv lang=pgmc sort={sort_b} role=evidence_form "
-        f"source_ref={ref_b}}} 'think B'"
+        f"source_ref={ref_b} occ_id={occ_b}}} 'think B'"
     )
     md_both = md_a + "\n\n" + md_b
 
-    def make_print_main_tsv(directory: str, source_ref: str) -> str:
-        tsv_dir = Path(directory)
-        tsv_dir.mkdir(parents=True, exist_ok=True)
-        tsv_path = tsv_dir / "print_main.tsv"
-        header = "\t".join(PRINT_MAIN_FIELDS)
-        row = "\t".join([
-            "pgmc", FORM, f"*{FORM}", "thenkijana", "evidence_form",
-            "explicit_tag", source_ref, "fixture", "active",
-        ])
-        tsv_path.write_text(header + "\n" + row + "\n", encoding="utf-8")
-        return str(tsv_path)
+    def write_plan_and_emissions(directory: str, enabled_occ_ids: list[str]) -> tuple[str, str]:
+        p = Path(directory)
+        p.mkdir(parents=True, exist_ok=True)
+        plan_path = p / "explicit_plan.tsv"
+        emissions_path = p / "book_emissions.tsv"
+        plan_rows = []
+        emission_rows = []
+        for occ_id, source_ref, sort_key, cmd in (
+            (occ_a, ref_a, sort_a, cmd_a),
+            (occ_b, ref_b, sort_b, cmd_b),
+        ):
+            if occ_id in enabled_occ_ids:
+                plan_rows.append([
+                    occ_id, "emit", occ_id, cmd, "", "pgmc", "", FORM, FORM,
+                    sort_key, "evidence_form", "explicit_tag", source_ref
+                ])
+                emission_rows.append([
+                    occ_id, occ_id, "explicit_tag", source_ref, cmd, "pgmc", "", FORM,
+                    sort_key, "evidence_form", "explicit_tag", source_ref, "1", occ_id
+                ])
+            else:
+                plan_rows.append([
+                    occ_id, "suppress", "", "", "print_policy_excluded", "pgmc", "", FORM, FORM,
+                    sort_key, "evidence_form", "explicit_tag", source_ref
+                ])
+        plan_path.write_text(
+            "\t".join(EXPLICIT_PLAN_FIELDS) + "\n"
+            + "\n".join("\t".join(r) for r in plan_rows) + "\n",
+            encoding="utf-8",
+        )
+        emissions_path.write_text(
+            "\t".join(BOOK_EMISSIONS_FIELDS) + "\n"
+            + ("\n".join("\t".join(r) for r in emission_rows) + "\n" if emission_rows else ""),
+            encoding="utf-8",
+        )
+        return str(plan_path), str(emissions_path)
 
-    def run_with_tsv(md: str, tsv_path: str) -> str:
+    def run_with_plan(md: str, plan_tsv: str, emissions_tsv: str) -> str:
         env = {
             **os.environ,
-            "CAPR_IV_PRINT_MAIN_TSV": tsv_path,
-            "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(ROOT / "docs" / "book" / "index_verborum_languages.tsv"),
+            "CAPR_IV_EXPLICIT_PLAN_TSV": plan_tsv,
+            "CAPR_IV_BOOK_EMISSIONS_TSV": emissions_tsv,
+            "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "0",
         }
         with tempfile.TemporaryDirectory() as tmp2:
             md_path = Path(tmp2) / "fixture.md"
@@ -1970,9 +1995,9 @@ def run_occurrence_gating_fixture() -> None:
             return proc.stdout
 
     with tempfile.TemporaryDirectory() as tmp:
-        # Round 1: only A in print_main → A's sort key present, B's absent
-        tsv_a = make_print_main_tsv(tmp + "/a", ref_a)
-        tex_a = run_with_tsv(md_both, tsv_a)
+        # Round 1: only A enabled -> A appears, B suppressed
+        plan_a, emissions_a = write_plan_and_emissions(tmp + "/a", [occ_a])
+        tex_a = run_with_plan(md_both, plan_a, emissions_a)
         assert_true(
             sort_a in tex_a,
             f"Occurrence-gating: with only A, expected sort key {sort_a!r} in TeX. tex={tex_a!r}",
@@ -1982,9 +2007,9 @@ def run_occurrence_gating_fixture() -> None:
             f"Occurrence-gating: with only A, sort key {sort_b!r} must NOT appear. tex={tex_a!r}",
         )
 
-        # Round 2: only B in print_main → B's sort key present, A's absent
-        tsv_b = make_print_main_tsv(tmp + "/b", ref_b)
-        tex_b = run_with_tsv(md_both, tsv_b)
+        # Round 2: only B enabled -> B appears, A suppressed
+        plan_b, emissions_b = write_plan_and_emissions(tmp + "/b", [occ_b])
+        tex_b = run_with_plan(md_both, plan_b, emissions_b)
         assert_true(
             sort_b in tex_b,
             f"Occurrence-gating: with only B, expected sort key {sort_b!r} in TeX. tex={tex_b!r}",
@@ -1994,19 +2019,9 @@ def run_occurrence_gating_fixture() -> None:
             f"Occurrence-gating: with only B, sort key {sort_a!r} must NOT appear. tex={tex_b!r}",
         )
 
-        # Sanity: both A and B in print_main → both sort keys present
-        tsv_ab_path = Path(tmp + "/ab")
-        tsv_ab_path.mkdir(exist_ok=True)
-        tsv_ab = str(tsv_ab_path / "print_main.tsv")
-        header = "\t".join(PRINT_MAIN_FIELDS)
-        ab_rows = [
-            "\t".join(["pgmc", FORM, f"*{FORM}", "thenkijana", "evidence_form",
-                        "explicit_tag", ref_a, "fixture", "active"]),
-            "\t".join(["pgmc", FORM, f"*{FORM}", "thenkijana", "evidence_form",
-                        "explicit_tag", ref_b, "fixture", "active"]),
-        ]
-        Path(tsv_ab).write_text(header + "\n" + "\n".join(ab_rows) + "\n", encoding="utf-8")
-        tex_ab = run_with_tsv(md_both, tsv_ab)
+        # Sanity: both A and B enabled -> both sort keys present
+        plan_ab, emissions_ab = write_plan_and_emissions(tmp + "/ab", [occ_a, occ_b])
+        tex_ab = run_with_plan(md_both, plan_ab, emissions_ab)
         assert_true(
             sort_a in tex_ab and sort_b in tex_ab,
             f"Occurrence-gating: with both, expected both sort keys in TeX. tex={tex_ab!r}",
@@ -2384,13 +2399,8 @@ def run_recon_iv_index_display_check() -> None:
 
 
 def run_recon_iv_lua_sort_check() -> None:
-    """Verify the Lua filter uses bare form (not starred display) for the sort key.
-
-    A .recon .iv span without explicit sort= must produce sort=bare_form, not sort=*form.
-    An explicit sort= must be preserved exactly.
-    """
+    """Verify explicit-plan command placement preserves sort/display semantics."""
     index_filter = TOOLS_DIR / "index_verborum_filter.lua"
-    lang_registry = ROOT / "docs" / "book" / "index_verborum_languages.tsv"
     if not index_filter.exists():
         return
 
@@ -2398,13 +2408,41 @@ def run_recon_iv_lua_sort_check() -> None:
         with tempfile.TemporaryDirectory() as tmp:
             md_path = Path(tmp) / "fixture.md"
             md_path.write_text(md, encoding="utf-8")
-            tsv_path = Path(tmp) / "print_main.tsv"
-            header = "language\tform\tdisplay\tsort_key\tform_role\tsource_scope\tsource_ref\torigin\tstatus"
-            tsv_path.write_text(header + "\n" + "\n".join(print_main_rows) + "\n", encoding="utf-8")
+            plan_tsv = Path(tmp) / "explicit_plan.tsv"
+            emissions_tsv = Path(tmp) / "book_emissions.tsv"
+            plan_header = (
+                "occurrence_id\tdisposition\temission_id\tindex_command\texclusion_reason\tlanguage\tvariety\tform\t"
+                "display\tsort_key\tform_role\tsource_scope\tsource_ref"
+            )
+            emissions_header = (
+                "emission_id\trepresentative_occurrence_id\temission_path\tsite\tindex_command\tlanguage\tvariety\tdisplay\t"
+                "sort_key\tform_role\tsource_scope\tsource_ref\tsource_occurrence_count\tsource_occurrence_ids"
+            )
+            plan_rows = []
+            emissions_rows = []
+            for pm in print_main_rows:
+                language, form, display, sort_key, form_role, source_scope, source_ref, *_ = pm.split("\t")
+                occ_id = f"{source_ref}:1"
+                index_command = f"\\index[iv]{{00{language}!{sort_key}@\\iventry{{{display}}}{{}}}}"
+                plan_rows.append(
+                    "\t".join([
+                        occ_id, "emit", occ_id, index_command, "", language, "", form, display,
+                        sort_key, form_role, source_scope, source_ref,
+                    ])
+                )
+                emissions_rows.append(
+                    "\t".join([
+                        occ_id, occ_id, "explicit_tag", source_ref, index_command, language, "",
+                        display, sort_key, form_role, source_scope, source_ref, "1", occ_id,
+                    ])
+                )
+            plan_tsv.write_text(plan_header + "\n" + "\n".join(plan_rows) + "\n", encoding="utf-8")
+            emissions_tsv.write_text(emissions_header + "\n" + "\n".join(emissions_rows) + "\n", encoding="utf-8")
             env = {
                 **__import__("os").environ,
-                "CAPR_IV_PRINT_MAIN_TSV": str(tsv_path),
-                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(lang_registry),
+                "CAPR_IV_EXPLICIT_PLAN_TSV": str(plan_tsv),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(emissions_tsv),
+                "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "0",
             }
             proc = subprocess.run(
                 ["pandoc", str(md_path), "--from=markdown", "--to=latex",
@@ -2412,6 +2450,7 @@ def run_recon_iv_lua_sort_check() -> None:
                 capture_output=True, text=True, check=False, env=env,
                 cwd=ROOT.parent,
             )
+            assert_true(proc.returncode == 0, f"Lua sort fixture pandoc run failed: {proc.stderr}")
             return proc.stdout
 
     def _extract_index_cmd(tex: str) -> str | None:
@@ -2433,8 +2472,9 @@ def run_recon_iv_lua_sort_check() -> None:
     # Fixture A: .recon .iv without explicit sort= — sort must NOT start with * (the bug was sort=display=*form)
     # Note: in production all .recon .iv spans include explicit sort=, but this tests the fallback.
     source_ref_a = "fixture/test_a.md:1"
+    occ_id_a = f"{source_ref_a}:1"
     pm_row_a = f"pgmc\tbákaną\t*bákaną\tbakana\tselected_input\texplicit_tag\t{source_ref_a}\tfixture\tactive"
-    md_a = f'[bákaną]{{.recon .iv lang=pgmc role=selected_input source_ref="{source_ref_a}"}} bake'
+    md_a = f'[bákaną]{{.recon .iv lang=pgmc sort=bakana role=selected_input source_ref="{source_ref_a}" occ_id="{occ_id_a}"}} bake'
     tex_a = _run_lua_fixture(md_a, [pm_row_a])
     cmd_a = _extract_index_cmd(tex_a)
     assert_true(cmd_a is not None, "Lua sort fixture A: no index command generated")
@@ -2447,8 +2487,9 @@ def run_recon_iv_lua_sort_check() -> None:
 
     # Fixture B: .recon .iv WITH explicit sort=bakana — preserve exactly as bakana
     source_ref_b = "fixture/test_b.md:1"
+    occ_id_b = f"{source_ref_b}:1"
     pm_row_b = f"pgmc\tbákaną\t*bákaną\tbakana\tselected_input\texplicit_tag\t{source_ref_b}\tfixture\tactive"
-    md_b = f'[bákaną]{{.recon .iv lang=pgmc sort=bakana role=selected_input source_ref="{source_ref_b}"}} bake'
+    md_b = f'[bákaną]{{.recon .iv lang=pgmc sort=bakana role=selected_input source_ref="{source_ref_b}" occ_id="{occ_id_b}"}} bake'
     tex_b = _run_lua_fixture(md_b, [pm_row_b])
     cmd_b = _extract_index_cmd(tex_b)
     if cmd_b:
@@ -2460,8 +2501,9 @@ def run_recon_iv_lua_sort_check() -> None:
 
     # Fixture C: attested .iv (no .recon) — display is unstarred
     source_ref_c = "fixture/test_c.md:1"
+    occ_id_c = f"{source_ref_c}:1"
     pm_row_c = f"oe\tbacan\tbacan\tbacan\tevidence_form\texplicit_tag\t{source_ref_c}\tfixture\tactive"
-    md_c = f'[`bacan`]{{.iv lang=oe sort=bacan source_ref="{source_ref_c}"}} bake'
+    md_c = f'[`bacan`]{{.iv lang=oe sort=bacan source_ref="{source_ref_c}" occ_id="{occ_id_c}"}} bake'
     tex_c = _run_lua_fixture(md_c, [pm_row_c])
     cmd_c = _extract_index_cmd(tex_c)
     if cmd_c:
