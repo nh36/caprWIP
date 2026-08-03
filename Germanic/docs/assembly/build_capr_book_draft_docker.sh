@@ -92,7 +92,8 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     CAPR_IV_PRINT_MAIN_TSV=Germanic/docs/book/index_verborum_print_main.tsv \
     CAPR_IV_BOOK_EMISSIONS_TSV=Germanic/docs/book/index_verborum_book_emissions.tsv \
     CAPR_IV_EXPLICIT_PLAN_TSV=Germanic/docs/book/index_verborum_book_explicit_plan.tsv \
-    CAPR_IV_EXPLICIT_MODE=legacy \
+    CAPR_IV_EXPLICIT_MODE=plan \
+    CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS=1 \
     CAPR_IV_LANGUAGE_REGISTRY_TSV=Germanic/docs/book/index_verborum_languages.tsv \
     CAPR_IV_VARIETY_REGISTRY_TSV=Germanic/docs/book/index_verborum_varieties.tsv \
     pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \

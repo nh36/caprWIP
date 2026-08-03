@@ -82,7 +82,7 @@ def _narrow_tex_normalize(tex: str) -> str:
     return "\n".join(norm)
 
 
-def _run_pandoc(md_text: str, mode: str, compare_log: Path | None = None) -> str:
+def _run_pandoc(md_text: str, mode: str, compare_log: Path | None = None, *, require_completeness: bool = False) -> str:
     env = dict(os.environ)
     env.update(
         {
@@ -92,6 +92,7 @@ def _run_pandoc(md_text: str, mode: str, compare_log: Path | None = None) -> str
             "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(LANG_REG),
             "CAPR_IV_VARIETY_REGISTRY_TSV": str(VAR_REG),
             "CAPR_IV_EXPLICIT_MODE": mode,
+            "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "1" if require_completeness else "0",
         }
     )
     if compare_log is not None:
@@ -141,7 +142,7 @@ def check(
     spans = [
         s
         for s in scan_explicit_spans(md_text)
-        if s["span_class"] in {"iv", "pred"}
+        if s["span_class"] == "iv"
         and (s.get("language") or "").strip()
         and ">" not in (s.get("normalized_visible_form") or "")
     ]
@@ -257,6 +258,15 @@ def check(
             if _narrow_tex_normalize(legacy_tex) != _narrow_tex_normalize(compare_tex):
                 errors.append("H: legacy/compare TeX differs after narrow normalization")
 
+        # I. plan mode with CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS=1 must succeed
+        # and produce byte-identical TeX to the plan run.
+        try:
+            plan_completeness_tex = _run_pandoc(md_text, "plan", require_completeness=True)
+            if plan_completeness_tex != plan_tex:
+                errors.append("I: plan+completeness=1 TeX differs from plan TeX")
+        except AssertionError as exc:
+            errors.append(f"I: plan+completeness=1 pandoc failed: {exc}")
+
     if errors:
         print("EXPLICIT PLAN SHADOW CHECK FAILED:", file=sys.stderr)
         for e in errors:
@@ -271,7 +281,8 @@ def check(
         f"  D: suppress joins validated ({EXPECTED_SUPPRESS})\n"
         f"  E/F: legacy/plan/compare commands={EXPECTED_TOTAL_CMDS} total, {EXPECTED_UNIQUE_CMDS} unique, ordered parity exact\n"
         f"  G: compare mode evaluated {EXPECTED_PLAN_ROWS} occurrences (all ok)\n"
-        "  H: TeX parity holds (byte-identical or narrow-normalized equivalent)"
+        "  H: TeX parity holds (byte-identical or narrow-normalized equivalent)\n"
+        "  I: plan+completeness=1 succeeded and matches plan TeX"
     )
 
 

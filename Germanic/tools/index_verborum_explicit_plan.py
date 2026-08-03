@@ -241,10 +241,27 @@ def build_explicit_plan(
         if occ in suppress_ids:
             suppressed_reason_by_occ[occ] = (row.get("exclusion_reason") or "").strip()
 
+    # Derivation-chain spans (those with ">" in the visible form) are
+    # intentionally excluded from the plan.  The Lua filter returns visible-only
+    # for them because they represent multi-form chains, not individual lexeme
+    # entries.  Exactly 1 such span is expected in the assembled book
+    # (2087-knob-cnobba.model.md:56:1, *knúbbô > *cnobba, display=*cnobba).
+    deriv_chain_spans = [
+        s
+        for s in scan_explicit_spans(book_markdown_text)
+        if s["span_class"] == "iv"
+        and ">" in (s.get("normalized_visible_form") or "")
+    ]
+    if len(deriv_chain_spans) != 1:
+        raise AssertionError(
+            f"expected exactly 1 derivation-chain .iv span (with '>' in form), "
+            f"found {len(deriv_chain_spans)}"
+        )
+
     spans = [
         s
         for s in scan_explicit_spans(book_markdown_text)
-        if s["span_class"] in {"iv", "pred"}
+        if s["span_class"] == "iv"
         and (s.get("language") or "").strip()
         and ">" not in (s.get("normalized_visible_form") or "")
     ]
@@ -341,10 +358,13 @@ def validate_explicit_plan(
     if dup:
         raise AssertionError(f"duplicate explicit plan occurrence_id(s): {dup[:5]}")
 
+    # Derivation-chain spans (those with ">" in the visible form) are
+    # intentionally excluded from the plan; see build_explicit_plan() for the
+    # canonical assertion.  Here we simply reconstruct the filtered span list.
     spans = [
         s
         for s in scan_explicit_spans(book_markdown_text)
-        if s["span_class"] in {"iv", "pred"}
+        if s["span_class"] == "iv"
         and (s.get("language") or "").strip()
         and ">" not in (s.get("normalized_visible_form") or "")
     ]
@@ -472,4 +492,69 @@ def render_explicit_plan_tsv(rows: list[dict[str, str]]) -> str:
 
 def write_explicit_plan(path: Path, rows: list[dict[str, str]]) -> None:
     path.write_text(render_explicit_plan_tsv(rows), encoding="utf-8")
+
+
+class InventoryResult:
+    """Summary counts from inventory_spans()."""
+
+    __slots__ = (
+        "total_iv",
+        "iv_with_lang",
+        "iv_with_occ_id",
+        "iv_in_plan",
+        "iv_derivation_chain",
+        "pred_total",
+        "pred_in_plan",
+    )
+
+    def __init__(self, **kwargs: int) -> None:
+        for k in self.__slots__:
+            setattr(self, k, kwargs.get(k, 0))
+
+    def __repr__(self) -> str:
+        parts = ", ".join(f"{k}={getattr(self, k)}" for k in self.__slots__)
+        return f"InventoryResult({parts})"
+
+
+def inventory_spans(
+    markdown_text: str,
+    *,
+    explicit_plan_path: Path = DEFAULT_EXPLICIT_PLAN_PATH,
+) -> InventoryResult:
+    """Return per-class inventory counts for explicit spans in assembled Markdown.
+
+    Expected values for the canonical assembled book:
+      total_iv           = 1497  (1496 plan-eligible + 1 derivation-chain bypass)
+      iv_with_lang       = 1497
+      iv_with_occ_id     = 1497
+      iv_in_plan         = 1496
+      iv_derivation_chain = 1   (the 2087-knob-cnobba *knúbbô > *cnobba span)
+      pred_total         = 158
+      pred_in_plan       = 0    (.pred spans are excluded from plan membership)
+    """
+    plan_ids: set[str] = set()
+    if explicit_plan_path.exists():
+        for row in load_rows(explicit_plan_path):
+            occ = (row.get("occurrence_id") or "").strip()
+            if occ:
+                plan_ids.add(occ)
+
+    all_spans = scan_explicit_spans(markdown_text)
+
+    iv_spans = [s for s in all_spans if s["span_class"] == "iv"]
+    pred_spans = [s for s in all_spans if s["span_class"] == "pred"]
+
+    iv_deriv = [s for s in iv_spans if ">" in (s.get("normalized_visible_form") or "")]
+
+    return InventoryResult(
+        total_iv=len(iv_spans),
+        iv_with_lang=sum(1 for s in iv_spans if (s.get("language") or "").strip()),
+        iv_with_occ_id=sum(1 for s in iv_spans if (s.get("occurrence_id") or "").strip()),
+        iv_in_plan=sum(1 for s in iv_spans if (s.get("occurrence_id") or "").strip() in plan_ids),
+        iv_derivation_chain=len(iv_deriv),
+        pred_total=len(pred_spans),
+        pred_in_plan=sum(
+            1 for s in pred_spans if (s.get("occurrence_id") or "").strip() in plan_ids
+        ),
+    )
 

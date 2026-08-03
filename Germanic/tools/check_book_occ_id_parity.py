@@ -48,9 +48,13 @@ def check_parity(book_md: Path) -> None:
     if expected_printable & expected_excluded:
         raise AssertionError("printable/excluded in-book explicit ID sets overlap")
 
+    # Derivation-chain spans (those with ">" in the visible form) are excluded
+    # from plan membership because they represent multi-form chains.  Exactly 1
+    # such span is expected in the assembled book; see inventory_spans() for the
+    # canonical assertion.
     spans = [
         s for s in scan_explicit_spans(book_md.read_text(encoding="utf-8"))
-        if s["span_class"] in {"iv", "pred"}
+        if s["span_class"] == "iv"
         and (s.get("language") or "").strip()
         and ">" not in (s.get("normalized_visible_form") or "")
     ]
@@ -87,10 +91,9 @@ def check_parity(book_md: Path) -> None:
 
     printables_seen = sum(1 for oid in occ_ids if oid in expected_printable)
     excluded_seen = sum(1 for oid in occ_ids if oid in expected_excluded)
-    pred_seen = sum(1 for s in spans if s["span_class"] == "pred")
     print(
         "assembled explicit parity: "
-        f"printable={printables_seen} excluded={excluded_seen} pred={pred_seen} "
+        f"printable={printables_seen} excluded={excluded_seen} "
         f"unknown={len(unknown)} duplicate={len(duplicates)} missing={len(missing)} "
         f"semantic_mismatch={len(semantic_mismatch)}"
     )

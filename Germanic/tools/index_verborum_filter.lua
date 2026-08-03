@@ -5,6 +5,7 @@ local BOOK_EMISSIONS_TSV = os.getenv("CAPR_IV_BOOK_EMISSIONS_TSV") or "Germanic/
 local EXPLICIT_PLAN_TSV = os.getenv("CAPR_IV_EXPLICIT_PLAN_TSV") or "Germanic/docs/book/index_verborum_book_explicit_plan.tsv"
 local EXPLICIT_MODE = os.getenv("CAPR_IV_EXPLICIT_MODE") or "legacy"
 local EXPLICIT_COMPARE_LOG = os.getenv("CAPR_IV_EXPLICIT_COMPARE_LOG")
+local REQUIRE_COMPLETENESS = (os.getenv("CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS") or "0") == "1"
 local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
@@ -14,6 +15,10 @@ local explicit_allow = nil
 local emission_plan = nil        -- emission_id → index_command
 local occurrence_to_emission = nil  -- occurrence_id → emission_id
 local explicit_plan = nil -- occurrence_id -> explicit plan row
+local book_explicit_emissions = nil  -- representative_occurrence_id → emission row (explicit_tag only)
+local explicit_plan_ordered_ids = {}  -- ordered list of occurrence_ids (set during plan loading)
+local seen_explicit_occurrence_ids = {}   -- reset per document
+local seen_explicit_occurrence_order = {}  -- ordered list, reset per document
 local explicit_compare_rows = {}
 local ensure_explicit_plan_loaded
 
@@ -505,6 +510,13 @@ local function span_to_index(span)
     return render_explicit_decision(visible, legacy_explicit_decision(sem))
   end
   local plan_decision = plan_explicit_decision(sem)
+  -- Track this occurrence for per-document completeness checking.
+  if seen_explicit_occurrence_ids[sem.occurrence_id] then
+    error("index_verborum_filter.lua: duplicate explicit occurrence_id '"
+      .. sem.occurrence_id .. "' encountered in this document")
+  end
+  seen_explicit_occurrence_ids[sem.occurrence_id] = true
+  table.insert(seen_explicit_occurrence_order, sem.occurrence_id)
   if mode == "plan" then
     return render_explicit_decision(visible, plan_decision)
   end
@@ -714,6 +726,63 @@ local function ensure_emission_plan_loaded()
   return emission_plan
 end
 
+local function ensure_book_explicit_emissions_loaded()
+  if book_explicit_emissions ~= nil then return book_explicit_emissions end
+  book_explicit_emissions = {}
+  local handle = io.open(BOOK_EMISSIONS_TSV, "r")
+  if not handle then
+    error("index_verborum_filter.lua: cannot read " .. BOOK_EMISSIONS_TSV
+          .. " for explicit plan cross-validation.")
+  end
+  local header_line = handle:read("*l")
+  if not header_line then
+    handle:close()
+    error("index_verborum_filter.lua: " .. BOOK_EMISSIONS_TSV .. " is empty (no header).")
+  end
+  local headers = split_tsv(header_line)
+  local idx = {}
+  for i, h in ipairs(headers) do idx[trim(h)] = i end
+  local required = {
+    "emission_id", "representative_occurrence_id", "emission_path", "index_command",
+    "language", "variety", "display", "sort_key", "form_role", "source_ref",
+    "source_occurrence_count", "source_occurrence_ids",
+  }
+  for _, col in ipairs(required) do
+    if not idx[col] then
+      handle:close()
+      error("index_verborum_filter.lua: " .. BOOK_EMISSIONS_TSV
+            .. " missing required column '" .. col .. "' for explicit plan cross-validation.")
+    end
+  end
+  for line in handle:lines() do
+    if line ~= "" then
+      local cells = split_tsv(line)
+      local epath = column(cells, idx["emission_path"])
+      if epath == "explicit_tag" then
+        local rep = column(cells, idx["representative_occurrence_id"])
+        if rep ~= "" then
+          book_explicit_emissions[rep] = {
+            emission_id            = column(cells, idx["emission_id"]),
+            emission_path          = epath,
+            representative_occurrence_id = rep,
+            index_command          = column(cells, idx["index_command"]),
+            language               = normalize_iv_match_text(column(cells, idx["language"])),
+            variety                = column(cells, idx["variety"]),
+            display                = normalize_iv_match_text(column(cells, idx["display"])),
+            sort_key               = column(cells, idx["sort_key"]),
+            form_role              = column(cells, idx["form_role"]),
+            source_ref             = column(cells, idx["source_ref"]),
+            source_occurrence_count = column(cells, idx["source_occurrence_count"]),
+            source_occurrence_ids  = column(cells, idx["source_occurrence_ids"]),
+          }
+        end
+      end
+    end
+  end
+  handle:close()
+  return book_explicit_emissions
+end
+
 ensure_explicit_plan_loaded = function()
   if explicit_plan ~= nil then
     return explicit_plan
@@ -833,6 +902,63 @@ ensure_explicit_plan_loaded = function()
       source_scope = source_scope,
       source_ref = source_ref,
     }
+
+    -- ── Cross-validate against book_explicit_emissions ─────────────────────
+    local bx = ensure_book_explicit_emissions_loaded()
+    if disposition == "emit" then
+      local bem = bx[occ_id]
+      if not bem then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' not found in book_explicit_emissions (emission_path=explicit_tag)")
+      end
+      if bem.emission_path ~= "explicit_tag" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' book_explicit_emissions entry has emission_path='" .. bem.emission_path .. "'")
+      end
+      if bem.representative_occurrence_id ~= occ_id then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' book_explicit_emissions representative_occurrence_id mismatch")
+      end
+      if bem.source_occurrence_count ~= "1" then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' book_explicit_emissions source_occurrence_count != '1'")
+      end
+      if bem.source_occurrence_ids ~= occ_id then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' book_explicit_emissions source_occurrence_ids mismatch")
+      end
+      if bem.index_command ~= index_command then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+              .. "' index_command mismatch vs book_explicit_emissions")
+      end
+      for _, fld in ipairs({"language", "variety", "display", "sort_key", "form_role", "source_ref"}) do
+        local plan_val = explicit_plan[occ_id][fld] or ""
+        local em_val = bem[fld] or ""
+        if plan_val ~= em_val then
+          handle:close()
+          error("index_verborum_filter.lua: explicit plan emit occurrence '" .. occ_id
+                .. "' field '" .. fld .. "' mismatch vs book_explicit_emissions"
+                .. " plan='" .. plan_val .. "' emissions='" .. em_val .. "'")
+        end
+      end
+    else
+      -- suppress: occurrence must NOT have an explicit_tag emission
+      if bx[occ_id] then
+        handle:close()
+        error("index_verborum_filter.lua: explicit plan suppress occurrence '" .. occ_id
+              .. "' unexpectedly found in book_explicit_emissions")
+      end
+    end
+
+    -- Track loading order for document completeness check
+    table.insert(explicit_plan_ordered_ids, occ_id)
+
     ::continue::
   end
   handle:close()
@@ -969,9 +1095,11 @@ local function handle_anchor_div(div)
 end
 
 function Pandoc(doc)
-  -- Reset per-document duplicate-anchor tracking.
+  -- Reset per-document tracking.
   emitted_anchor_ids = {}
   explicit_compare_rows = {}
+  seen_explicit_occurrence_ids = {}
+  seen_explicit_occurrence_order = {}
   local blocks = {}
   for _, block in ipairs(doc.blocks) do
     if block.t == "Div" and block.identifier == "refs" then
@@ -1008,6 +1136,23 @@ function Pandoc(doc)
         .. (row.comparison_result or "") .. "\n")
     end
     fh:close()
+  end
+  -- ── Explicit plan completeness check ─────────────────────────────────────
+  if REQUIRE_COMPLETENESS and explicit_plan ~= nil then
+    local plan_n = #explicit_plan_ordered_ids
+    local seen_n = #seen_explicit_occurrence_order
+    if seen_n ~= plan_n then
+      error("index_verborum_filter.lua: explicit plan completeness failure: "
+            .. "plan has " .. plan_n .. " occurrences but document contained " .. seen_n)
+    end
+    for i = 1, plan_n do
+      local expected = explicit_plan_ordered_ids[i]
+      local actual = seen_explicit_occurrence_order[i]
+      if expected ~= actual then
+        error("index_verborum_filter.lua: explicit plan completeness failure at position " .. i
+              .. ": expected='" .. (expected or "") .. "' actual='" .. (actual or "") .. "'")
+      end
+    end
   end
   return pandoc.Pandoc(blocks, doc.meta)
 end
