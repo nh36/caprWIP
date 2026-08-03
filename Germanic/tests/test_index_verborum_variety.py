@@ -738,6 +738,58 @@ class LuaParityTests(unittest.TestCase):
                           "Lua NFC normalizer must emit command via primary form match "
                           "(no display= attribute, no fallback)")
 
+    def test_normalize_iv_match_text_y_macron(self):
+        """normalize_iv_match_text composes y + combining macron → ȳ (U+0233).
+
+        Previously omitted from the composition table; proves the corpus form
+        cȳ (attested OE plural of 'cow') is handled by the same primary path.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            pm = tmp / "pm.tsv"
+            ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
+
+            # OE 'cȳ': c + ȳ (y U+0079 + combining macron U+0304 → ȳ U+0233)
+            form_nfc = unicodedata.normalize("NFC", "c\u0233")   # cȳ NFC
+            form_nfd = unicodedata.normalize("NFD", "c\u0233")   # cy + combining macron
+
+            self.assertNotEqual(form_nfc.encode("utf-8"), form_nfd.encode("utf-8"),
+                                "NFC and NFD encodings must differ")
+            self.assertEqual(unicodedata.normalize("NFC", form_nfd), form_nfc,
+                             "NFD must normalize back to NFC")
+
+            header = ["language", "variety", "form", "display", "sort_key", "form_role",
+                      "source_scope", "source_ref", "occurrence_id", "origin", "status"]
+            with pm.open("w", encoding="utf-8", newline="") as h:
+                w = csv.writer(h, delimiter="\t", lineterminator="\n")
+                w.writerow(header)
+                w.writerow(["oe", "", form_nfc, form_nfc, "cy", "target_form",
+                            "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+
+            env = dict(os.environ)
+            env.update({
+                "CAPR_IV_PRINT_MAIN_TSV": str(pm),
+                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
+                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+            })
+            src = tmp / "in.md"
+            # NFD span content, no display= attribute
+            span = (
+                "[" + form_nfd + "]{.iv lang=oe sort=cy role=target_form"
+                + ' source_ref="' + ref + '"'
+                + ' occ_id="' + ref + ':1"}'
+            )
+            src.write_text(span + "\n", encoding="utf-8")
+            proc = subprocess.run(
+                ["pandoc", "--from", "markdown", "--to", "latex",
+                 "--lua-filter", str(FILTER_LUA), str(src)],
+                capture_output=True, text=True, env=env,
+            )
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            self.assertIn(r"\index[iv]", proc.stdout,
+                          "y+macron composition must emit command via primary form match "
+                          "(no display= attribute)")
+
 
 class OccurrenceModelHardeningTests(unittest.TestCase):
     def _rows(self, name):

@@ -293,7 +293,6 @@ def main() -> None:
 
     # Second pass: assign dispositions.
     audit_rows: list[dict[str, str]] = []
-    seen_emission_ids: set[str] = set()
 
     for row, (path, site, cmd, in_book, emission_id, collapsed_into) in zip(main_rows, row_classifications):
         actual_count = actual.get(cmd, 0)
@@ -322,7 +321,6 @@ def main() -> None:
                 dispo = "collapsed_same_site"
                 reason = "duplicate occurrence collapsed into shared book emission"
             else:
-                seen_emission_ids.add(emission_id)
                 if actual_count > 0:
                     dispo = "heading_injected" if path == "heading_injection" else "line_injected"
                     reason = f"Python injection fired at site {site[:60]!r}"

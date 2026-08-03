@@ -5,37 +5,41 @@ local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
 
--- ── Unicode NFC normalization ──────────────────────────────────────────────────
--- Contract: both the values loaded from print_main.tsv and the form/display values
--- derived from the Pandoc span are normalized to NFC before the eligibility
--- comparison. This makes primary matching robust to source-file normalization
--- differences (e.g. NFD form content from Pandoc stringify vs NFC TSV storage).
+-- ── Targeted canonical composition for Index Verborum matching ────────────────
+-- This helper performs targeted canonical composition for the OE diacritic
+-- repertoire required by the Index Verborum corpus. It composes the specific
+-- NFD sequences (base character + combining diacritic) that occur in corpus
+-- forms into their NFC precomposed equivalents.
 --
--- All production spans are NFC (the Python pipeline normalizes output). This
--- function handles the edge case and ensures the test suite can prove the contract.
+-- This is NOT a general Unicode NFC normalization library. Combining sequences
+-- that are not present in the Old English corpus pass through unchanged.
 --
--- Implementation: targeted table-driven composition for the OE diacritic set
--- (combining macron U+0304 and combining dot above U+0307). Wider combining
--- characters not used in the corpus are not listed and pass through unchanged.
--- Multi-byte-base sequences (æ, Æ) are applied before single-byte-base sequences
--- to prevent partial replacements.
-local NFC_WIDE = {
+-- Current coverage:
+--   combining macron (U+0304): a e i o u y æ (and capitals) → ā ē ī ō ū ȳ ǣ etc.
+--   combining dot above (U+0307): c g s w (and capitals) → ċ ġ ṡ ẇ etc.
+--
+-- Both TSV-loaded values and Pandoc-stringified span content are passed through
+-- this helper before the eligibility key comparison, making primary matching
+-- robust to NFD/NFC source-file variation without a sort-key fallback.
+local IV_MATCH_WIDE = {
   -- æ/Æ + combining macron  (4-byte NFD → 2-byte NFC)
   ["\xc3\xa6\xcc\x84"] = "\xc7\xa3",  -- ǣ U+01E3
   ["\xc3\x86\xcc\x84"] = "\xc7\xa2",  -- Ǣ U+01E2
 }
-local NFC_NARROW = {
+local IV_MATCH_NARROW = {
   -- vowel + combining macron (3-byte NFD → 2-byte NFC)
   ["\x61\xcc\x84"] = "\xc4\x81",  -- ā U+0101
   ["\x65\xcc\x84"] = "\xc4\x93",  -- ē U+0113
   ["\x69\xcc\x84"] = "\xc4\xab",  -- ī U+012B
   ["\x6f\xcc\x84"] = "\xc5\x8d",  -- ō U+014D
   ["\x75\xcc\x84"] = "\xc5\xab",  -- ū U+016B
+  ["\x79\xcc\x84"] = "\xc8\xb3",  -- ȳ U+0233
   ["\x41\xcc\x84"] = "\xc4\x80",  -- Ā U+0100
   ["\x45\xcc\x84"] = "\xc4\x92",  -- Ē U+0112
   ["\x49\xcc\x84"] = "\xc4\xaa",  -- Ī U+012A
   ["\x4f\xcc\x84"] = "\xc5\x8c",  -- Ō U+014C
   ["\x55\xcc\x84"] = "\xc5\xaa",  -- Ū U+016A
+  ["\x59\xcc\x84"] = "\xc8\xb2",  -- Ȳ U+0232
   -- consonant + combining dot above (3-byte NFD → 2/3-byte NFC)
   ["\x63\xcc\x87"] = "\xc4\x8b",      -- ċ U+010B
   ["\x67\xcc\x87"] = "\xc4\xa1",      -- ġ U+0121
@@ -47,13 +51,13 @@ local NFC_NARROW = {
   ["\x57\xcc\x87"] = "\xe1\xba\x86",  -- Ẇ U+1E86
 }
 
-local function nfc_normalize(s)
-  -- Apply multi-byte-base patterns first (æ/Æ+macron) to avoid partial replacement
-  -- of their ASCII tail bytes by the narrow table.
-  for nfd, nfc in pairs(NFC_WIDE) do
+local function normalize_iv_match_text(s)
+  -- Apply multi-byte-base patterns first (æ/Æ+macron) to avoid partial
+  -- replacement of their ASCII tail bytes by the narrow table.
+  for nfd, nfc in pairs(IV_MATCH_WIDE) do
     s = s:gsub(nfd, nfc)
   end
-  for nfd, nfc in pairs(NFC_NARROW) do
+  for nfd, nfc in pairs(IV_MATCH_NARROW) do
     s = s:gsub(nfd, nfc)
   end
   return s
@@ -245,8 +249,8 @@ local function ensure_print_main_loaded()
       if column(cells, indices["source_scope"]) == "explicit_tag" then
         local language = column(cells, indices["language"])
         local role = column(cells, indices["form_role"])
-        local form = nfc_normalize(column(cells, indices["form"]))
-        local display = nfc_normalize(column(cells, indices["display"]))
+        local form = normalize_iv_match_text(column(cells, indices["form"]))
+        local display = normalize_iv_match_text(column(cells, indices["display"]))
         local source_ref = column(cells, indices["source_ref"])
         local variety = column(cells, indices["variety"])
         if role == "" then
@@ -341,8 +345,8 @@ local function span_to_index(span)
   local variety = trim(span.attributes["variety"] or "")
   -- Fail-closed validation; also yields the printed label (blank => no suffix).
   local variety_label = validate_variety(lang, variety)
-  local form = nfc_normalize(trim(pandoc.utils.stringify(span.content)))
-  local display_attr = nfc_normalize(trim(span.attributes["display"] or ""))
+  local form = normalize_iv_match_text(trim(pandoc.utils.stringify(span.content)))
+  local display_attr = normalize_iv_match_text(trim(span.attributes["display"] or ""))
   -- A combined .recon .iv span carries reconstruction semantics; derive the starred
   -- display automatically when no explicit display= attribute is provided.
   local is_recon = has_class(span, "recon")
