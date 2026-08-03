@@ -235,43 +235,42 @@ class ExplicitPlanLuaModeTests(unittest.TestCase):
             self.assertNotEqual(proc.returncode, 0)
             self.assertIn("blank disposition", proc.stderr)
 
-    def test_unsupported_explicit_mode_fails(self):
+    def test_capr_iv_explicit_mode_env_var_is_ignored(self):
+        """After removing legacy/compare modes, CAPR_IV_EXPLICIT_MODE is no longer used.
+        The filter always runs in plan mode; any value (even 'bogus') is silently ignored."""
         with tempfile.TemporaryDirectory() as tmp:
             plan, main, em = self._write_fixture_files(tmp, [self._base_row()], self._print_main(), self._book_emissions())
             md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
+            # Even "bogus_mode" no longer causes a failure because the env var is not read.
             proc = _run_pandoc(md, explicit_mode="bogus_mode", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em)
-            self.assertNotEqual(proc.returncode, 0)
-            self.assertIn("unsupported CAPR_IV_EXPLICIT_MODE", proc.stderr)
+            self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+            self.assertIn(r"\index[iv]{", proc.stdout)
 
-    def test_compare_mode_command_mismatch_fails_and_mentions_occ_id(self):
+    def test_plan_index_command_is_authoritative(self):
+        """The plan's index_command is emitted verbatim; the filter does not recompute it."""
         with tempfile.TemporaryDirectory() as tmp:
-            # Plan and book_emissions both carry the same wrong command so that
-            # cross-validation at plan-load time passes; the compare-mode
-            # runtime then catches the mismatch vs the legacy-computed command.
-            wrong_cmd = r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!WRONG@\iventry{wrong}{}}"
-            row = self._base_row(index_command=wrong_cmd)
-            em = self._book_emissions(index_command=wrong_cmd)
+            custom_cmd = r"\index[iv]{00custom@\ivlangheader{Custom}{}!custom@\iventry{custom}{}}"
+            row = self._base_row(index_command=custom_cmd)
+            em = self._book_emissions(index_command=custom_cmd)
             plan, main, em_f = self._write_fixture_files(tmp, [row], self._print_main(), em)
             md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
-            proc = _run_pandoc(md, explicit_mode="compare", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em_f)
-            self.assertNotEqual(proc.returncode, 0)
-            self.assertIn("occ:1", proc.stderr)
-            self.assertIn("compare command mismatch", proc.stderr)
+            proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em_f)
+            self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+            self.assertIn(custom_cmd, proc.stdout)
 
-    def test_compare_mode_emit_suppress_disagreement_fails(self):
+    def test_suppress_returns_visible_only_no_index_command(self):
+        """A suppress row returns only the visible span content, no \\index command."""
         with tempfile.TemporaryDirectory() as tmp:
             row = self._base_row(disposition="suppress", emission_id="", index_command="", exclusion_reason="print_policy_excluded")
-            # book_emissions must NOT have occ:1 for the suppress cross-validation to pass.
-            # Provide an unrelated explicit_tag row so the TSV is well-formed.
             em_other = self._book_emissions()
             em_other[0]["emission_id"] = "occ:other"
             em_other[0]["representative_occurrence_id"] = "occ:other"
             em_other[0]["source_occurrence_ids"] = "occ:other"
             plan, main, em_f = self._write_fixture_files(tmp, [row], self._print_main(), em_other)
             md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
-            proc = _run_pandoc(md, explicit_mode="compare", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em_f)
-            self.assertNotEqual(proc.returncode, 0)
-            self.assertIn("legacy=emit plan=suppress", proc.stderr)
+            proc = _run_pandoc(md, explicit_mode="plan", explicit_plan_tsv=plan, print_main_tsv=main, book_emissions_tsv=em_f)
+            self.assertEqual(proc.returncode, 0, proc.stderr[:300])
+            self.assertNotIn(r"\index[iv]{", proc.stdout)
 
     def test_nfd_nfc_occ_id_resolution_without_fallback(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -308,19 +307,19 @@ class ExplicitPlanLuaModeTests(unittest.TestCase):
 
 
 @unittest.skipIf(shutil.which("pandoc") is None, "pandoc not available")
-class ExplicitPlanShadowCheckerTests(unittest.TestCase):
-    def test_full_shadow_checker_passes(self):
-        from check_iv_explicit_plan_shadow import check
+class ExplicitPlanProductionCheckerTests(unittest.TestCase):
+    def test_full_production_checker_passes(self):
+        from check_iv_explicit_plan_production import check
         check()
 
     def test_checker_fails_if_plan_row_removed(self):
-        from check_iv_explicit_plan_shadow import check
+        from check_iv_explicit_plan_production import check
         rows = _load_tsv(BOOK / "index_verborum_book_explicit_plan.tsv")
         with self.assertRaises(SystemExit):
             check(plan_rows_override=rows[:-1])
 
     def test_checker_fails_if_disposition_changed(self):
-        from check_iv_explicit_plan_shadow import check
+        from check_iv_explicit_plan_production import check
         rows = _load_tsv(BOOK / "index_verborum_book_explicit_plan.tsv")
         target = next(r for r in rows if r["disposition"] == "emit")
         target["disposition"] = "suppress"
@@ -606,6 +605,109 @@ class InventorySpansTests(unittest.TestCase):
         self.assertEqual(result.total_iv, 0)
 
 
+@unittest.skipIf(shutil.which("pandoc") is None, "pandoc not available")
+class LegacyDepRemovalTests(unittest.TestCase):
+    """Verify that plan mode no longer requires print_main, language, or variety registry files.
+
+    After removing the legacy emitter, these files should be completely ignored
+    by the Lua filter in plan mode. A run with nonexistent paths should succeed.
+    """
+
+    def _book_emissions(self) -> list[dict[str, str]]:
+        return [{
+            "emission_id": "occ:1", "representative_occurrence_id": "occ:1",
+            "emission_path": "explicit_tag",
+            "site": "Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1",
+            "index_command": r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!ascaef@\iventry{āsceaf}{}}",
+            "language": "oe", "variety": "", "display": "āsceaf", "sort_key": "ascaef",
+            "form_role": "evidence_form", "source_scope": "explicit_tag",
+            "source_ref": "Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1",
+            "source_occurrence_count": "1", "source_occurrence_ids": "occ:1",
+        }]
+
+    def test_plan_mode_does_not_need_print_main_tsv(self):
+        """Plan mode must succeed even when CAPR_IV_PRINT_MAIN_TSV points to a nonexistent file."""
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp)
+            plan_row = {
+                "occurrence_id": "occ:1", "disposition": "emit", "emission_id": "occ:1",
+                "index_command": r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!ascaef@\iventry{āsceaf}{}}",
+                "exclusion_reason": "", "language": "oe", "variety": "", "form": "āsceaf",
+                "display": "āsceaf", "sort_key": "ascaef", "form_role": "evidence_form",
+                "source_scope": "explicit_tag",
+                "source_ref": "Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1",
+            }
+            plan_f = p / "plan.tsv"
+            em_f = p / "em.tsv"
+            _write_tsv(plan_f, [plan_row], EXPLICIT_PLAN_FIELDS)
+            _write_tsv(em_f, self._book_emissions(), list(self._book_emissions()[0].keys()))
+            md = '[āsceaf]{.iv lang=oe sort=ascaef role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/0000-test.model.md:1" occ_id="occ:1"}\n'
+            env = dict(os.environ)
+            env.update({
+                "CAPR_IV_EXPLICIT_PLAN_TSV": str(plan_f),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(em_f),
+                "CAPR_IV_PRINT_MAIN_TSV": "/nonexistent/print_main.tsv",
+                "CAPR_IV_LANGUAGE_REGISTRY_TSV": "/nonexistent/languages.tsv",
+                "CAPR_IV_VARIETY_REGISTRY_TSV": "/nonexistent/varieties.tsv",
+                "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "0",
+            })
+            src = p / "in.md"
+            src.write_text(md, encoding="utf-8")
+            proc = subprocess.run(
+                ["pandoc", str(src), "--from", "markdown+raw_tex", "--to", "latex",
+                 "--lua-filter", str(FILTER_LUA)],
+                capture_output=True, text=True, cwd=str(REPO_ROOT), env=env,
+            )
+            self.assertEqual(proc.returncode, 0,
+                             f"Plan mode failed with nonexistent legacy files:\n{proc.stderr[:400]}")
+            self.assertIn(r"\index[iv]{", proc.stdout)
+
+
+class LuaArchitectureTests(unittest.TestCase):
+    """Static architecture checks on the Lua filter source."""
+
+    def _lua_source(self) -> str:
+        return FILTER_LUA.read_text(encoding="utf-8")
+
+    def test_no_explicit_tag_is_printable(self):
+        self.assertNotIn("explicit_tag_is_printable", self._lua_source())
+
+    def test_no_ensure_print_main_loaded(self):
+        self.assertNotIn("ensure_print_main_loaded", self._lua_source())
+
+    def test_no_legacy_explicit_decision(self):
+        self.assertNotIn("legacy_explicit_decision", self._lua_source())
+
+    def test_no_compare_explicit_decisions(self):
+        self.assertNotIn("compare_explicit_decisions", self._lua_source())
+
+    def test_no_explicit_mode_function(self):
+        self.assertNotIn("explicit_mode()", self._lua_source())
+
+    def test_no_capr_iv_explicit_mode_env_var(self):
+        self.assertNotIn("CAPR_IV_EXPLICIT_MODE", self._lua_source())
+
+    def test_no_capr_iv_explicit_compare_log_env_var(self):
+        self.assertNotIn("CAPR_IV_EXPLICIT_COMPARE_LOG", self._lua_source())
+
+    def test_no_print_main_tsv_constant(self):
+        self.assertNotIn("PRINT_MAIN_TSV", self._lua_source())
+
+    def test_no_language_registry_tsv_constant(self):
+        self.assertNotIn("LANGUAGE_REGISTRY_TSV", self._lua_source())
+
+    def test_no_variety_registry_tsv_constant(self):
+        self.assertNotIn("VARIETY_REGISTRY_TSV", self._lua_source())
+
+    def test_plan_explicit_decision_present(self):
+        self.assertIn("plan_explicit_decision", self._lua_source())
+
+    def test_ensure_book_explicit_emissions_loaded_present(self):
+        self.assertIn("ensure_book_explicit_emissions_loaded", self._lua_source())
+
+    def test_require_completeness_present(self):
+        self.assertIn("REQUIRE_COMPLETENESS", self._lua_source())
+
+
 if __name__ == "__main__":
     unittest.main()
-

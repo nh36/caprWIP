@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Stage 3A explicit-plan shadow parity checker."""
+"""Stage 3B explicit-plan production checker.
+
+Verifies that the production explicit plan is valid and that running pandoc
+in plan mode with completeness enforcement produces the expected output.
+"""
 from __future__ import annotations
 
 import csv
@@ -8,7 +12,7 @@ import re
 import subprocess
 import sys
 import tempfile
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -19,9 +23,6 @@ FILTER_LUA = REPO_ROOT / "Germanic/tools/index_verborum_filter.lua"
 EXPLICIT_PLAN = BOOK / "index_verborum_book_explicit_plan.tsv"
 BOOK_EMISSIONS = BOOK / "index_verborum_book_emissions.tsv"
 PRINT_EXCLUDED = BOOK / "index_verborum_print_excluded.tsv"
-PRINT_MAIN = BOOK / "index_verborum_print_main.tsv"
-LANG_REG = BOOK / "index_verborum_languages.tsv"
-VAR_REG = BOOK / "index_verborum_varieties.tsv"
 
 EXPECTED_PLAN_ROWS = 1496
 EXPECTED_EMIT = 1417
@@ -82,23 +83,17 @@ def _narrow_tex_normalize(tex: str) -> str:
     return "\n".join(norm)
 
 
-def _run_pandoc(md_text: str, mode: str, compare_log: Path | None = None, *, require_completeness: bool = False) -> str:
+def _run_pandoc(md_text: str, *, require_completeness: bool = True) -> str:
     env = dict(os.environ)
     env.update(
         {
-            "CAPR_IV_PRINT_MAIN_TSV": str(PRINT_MAIN),
             "CAPR_IV_BOOK_EMISSIONS_TSV": str(BOOK_EMISSIONS),
             "CAPR_IV_EXPLICIT_PLAN_TSV": str(EXPLICIT_PLAN),
-            "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(LANG_REG),
-            "CAPR_IV_VARIETY_REGISTRY_TSV": str(VAR_REG),
-            "CAPR_IV_EXPLICIT_MODE": mode,
             "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "1" if require_completeness else "0",
         }
     )
-    if compare_log is not None:
-        env["CAPR_IV_EXPLICIT_COMPARE_LOG"] = str(compare_log)
     with tempfile.TemporaryDirectory() as tmp:
-        src = Path(tmp) / f"{mode}.md"
+        src = Path(tmp) / "plan.md"
         src.write_text(md_text, encoding="utf-8")
         proc = subprocess.run(
             ["pandoc", str(src), "--from", "markdown+raw_tex", "--to", "latex", "--lua-filter", str(FILTER_LUA)],
@@ -108,7 +103,7 @@ def _run_pandoc(md_text: str, mode: str, compare_log: Path | None = None, *, req
             env=env,
         )
         if proc.returncode != 0:
-            raise AssertionError(f"pandoc failed in {mode} mode:\n{proc.stderr[:800]}")
+            raise AssertionError(f"pandoc failed:\n{proc.stderr[:800]}")
         return proc.stdout
 
 
@@ -207,88 +202,36 @@ def check(
         if occ in explicit_em_by_occ:
             errors.append(f"D: suppress row unexpectedly has explicit emission: {occ}")
 
-    # E/F/G/H. three pandoc runs + command + explicit-compare + tex parity
-    with tempfile.TemporaryDirectory() as tmp:
-        compare_log = Path(tmp) / "compare.tsv"
-        legacy_tex = _run_pandoc(md_text, "legacy")
-        plan_tex = _run_pandoc(md_text, "plan")
-        compare_tex = _run_pandoc(md_text, "compare", compare_log=compare_log)
-
-        legacy_cmds = _extract_iv_commands(legacy_tex)
+    # E. Plan mode with completeness enforcement (single production run)
+    try:
+        plan_tex = _run_pandoc(md_text, require_completeness=True)
         plan_cmds = _extract_iv_commands(plan_tex)
-        compare_cmds = _extract_iv_commands(compare_tex)
-
-        for label, cmds in (("legacy", legacy_cmds), ("plan", plan_cmds), ("compare", compare_cmds)):
-            if len(cmds) != EXPECTED_TOTAL_CMDS:
-                errors.append(f"F: {label} total commands={len(cmds)} != {EXPECTED_TOTAL_CMDS}")
-            if len(set(cmds)) != EXPECTED_UNIQUE_CMDS:
-                errors.append(f"F: {label} unique commands={len(set(cmds))} != {EXPECTED_UNIQUE_CMDS}")
-
-        if legacy_cmds != plan_cmds:
-            errors.append("F: legacy ordered command sequence != plan")
-        if legacy_cmds != compare_cmds:
-            errors.append("F: legacy ordered command sequence != compare")
-        if Counter(legacy_cmds) != Counter(plan_cmds):
-            errors.append("F: legacy/plan command Counter mismatch")
-        if Counter(legacy_cmds) != Counter(compare_cmds):
-            errors.append("F: legacy/compare command Counter mismatch")
-
-        if not compare_log.exists():
-            errors.append("G: compare mode log missing")
-        else:
-            compare_rows = _load_tsv(compare_log)
-            if len(compare_rows) != EXPECTED_PLAN_ROWS:
-                errors.append(f"G: compare rows={len(compare_rows)} != {EXPECTED_PLAN_ROWS}")
-            bad = [r for r in compare_rows if (r.get("comparison_result") or "").strip() != "ok"]
-            if bad:
-                errors.append(f"G: compare non-ok rows={len(bad)} first={bad[0].get('occurrence_id')}")
-            compare_ids = [(r.get("occurrence_id") or "").strip() for r in compare_rows]
-            if compare_ids != plan_ids:
-                errors.append("G: compare occurrence_id order != plan order")
-            compare_disp = Counter((r.get("plan_disposition") or "").strip() for r in compare_rows)
-            if compare_disp.get("emit", 0) != EXPECTED_EMIT or compare_disp.get("suppress", 0) != EXPECTED_SUPPRESS:
-                errors.append(
-                    f"G: compare disposition counts mismatch emit={compare_disp.get('emit', 0)} "
-                    f"suppress={compare_disp.get('suppress', 0)}"
-                )
-
-        if legacy_tex != plan_tex or legacy_tex != compare_tex:
-            if _narrow_tex_normalize(legacy_tex) != _narrow_tex_normalize(plan_tex):
-                errors.append("H: legacy/plan TeX differs after narrow normalization")
-            if _narrow_tex_normalize(legacy_tex) != _narrow_tex_normalize(compare_tex):
-                errors.append("H: legacy/compare TeX differs after narrow normalization")
-
-        # I. plan mode with CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS=1 must succeed
-        # and produce byte-identical TeX to the plan run.
-        try:
-            plan_completeness_tex = _run_pandoc(md_text, "plan", require_completeness=True)
-            if plan_completeness_tex != plan_tex:
-                errors.append("I: plan+completeness=1 TeX differs from plan TeX")
-        except AssertionError as exc:
-            errors.append(f"I: plan+completeness=1 pandoc failed: {exc}")
+        if len(plan_cmds) != EXPECTED_TOTAL_CMDS:
+            errors.append(f"E: total commands={len(plan_cmds)} != {EXPECTED_TOTAL_CMDS}")
+        if len(set(plan_cmds)) != EXPECTED_UNIQUE_CMDS:
+            errors.append(f"E: unique commands={len(set(plan_cmds))} != {EXPECTED_UNIQUE_CMDS}")
+    except AssertionError as exc:
+        errors.append(f"E: pandoc plan+completeness run failed: {exc}")
 
     if errors:
-        print("EXPLICIT PLAN SHADOW CHECK FAILED:", file=sys.stderr)
+        print("EXPLICIT PLAN PRODUCTION CHECK FAILED:", file=sys.stderr)
         for e in errors:
             print(f"  {e}", file=sys.stderr)
         raise SystemExit(1)
 
     print(
-        "explicit plan shadow check passed:\n"
+        "explicit plan production check passed:\n"
         f"  A: plan rows={len(plan_rows)} emit={plan_counts.get('emit', 0)} suppress={plan_counts.get('suppress', 0)}\n"
         f"  B: assembled explicit spans={len(span_ids)} order/coverage exact\n"
         f"  C: emit joins validated ({EXPECTED_EMIT})\n"
         f"  D: suppress joins validated ({EXPECTED_SUPPRESS})\n"
-        f"  E/F: legacy/plan/compare commands={EXPECTED_TOTAL_CMDS} total, {EXPECTED_UNIQUE_CMDS} unique, ordered parity exact\n"
-        f"  G: compare mode evaluated {EXPECTED_PLAN_ROWS} occurrences (all ok)\n"
-        "  H: TeX parity holds (byte-identical or narrow-normalized equivalent)\n"
-        "  I: plan+completeness=1 succeeded and matches plan TeX"
+        f"  E: plan+completeness=1 commands={EXPECTED_TOTAL_CMDS} total, {EXPECTED_UNIQUE_CMDS} unique"
     )
 
 
 def main() -> None:
     if not _pandoc_available():
-        print("pandoc not found; cannot run explicit plan shadow check.", file=sys.stderr)
+        print("pandoc not found; cannot run explicit plan production check.", file=sys.stderr)
         raise SystemExit(127)
     check()
 

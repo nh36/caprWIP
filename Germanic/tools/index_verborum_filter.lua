@@ -1,14 +1,6 @@
-local PRINT_MAIN_TSV = os.getenv("CAPR_IV_PRINT_MAIN_TSV") or "Germanic/docs/book/index_verborum_print_main.tsv"
-local LANGUAGE_REGISTRY_TSV = os.getenv("CAPR_IV_LANGUAGE_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_languages.tsv"
-local VARIETY_REGISTRY_TSV = os.getenv("CAPR_IV_VARIETY_REGISTRY_TSV") or "Germanic/docs/book/index_verborum_varieties.tsv"
 local BOOK_EMISSIONS_TSV = os.getenv("CAPR_IV_BOOK_EMISSIONS_TSV") or "Germanic/docs/book/index_verborum_book_emissions.tsv"
 local EXPLICIT_PLAN_TSV = os.getenv("CAPR_IV_EXPLICIT_PLAN_TSV") or "Germanic/docs/book/index_verborum_book_explicit_plan.tsv"
-local EXPLICIT_MODE = os.getenv("CAPR_IV_EXPLICIT_MODE") or "legacy"
-local EXPLICIT_COMPARE_LOG = os.getenv("CAPR_IV_EXPLICIT_COMPARE_LOG")
 local REQUIRE_COMPLETENESS = (os.getenv("CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS") or "0") == "1"
-local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
-local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
-local explicit_allow = nil
 -- ── Emission plan (for .iv-anchor path) ───────────────────────────────────────
 -- emission_plan[emission_id] = precomputed_index_command
 -- Loaded lazily when the first .iv-anchor span or div is encountered.
@@ -19,7 +11,6 @@ local book_explicit_emissions = nil  -- representative_occurrence_id → emissio
 local explicit_plan_ordered_ids = {}  -- ordered list of occurrence_ids (set during plan loading)
 local seen_explicit_occurrence_ids = {}   -- reset per document
 local seen_explicit_occurrence_order = {}  -- ordered list, reset per document
-local explicit_compare_rows = {}
 local ensure_explicit_plan_loaded
 
 -- ── Targeted canonical composition for Index Verborum matching ────────────────
@@ -84,16 +75,6 @@ local function trim(value)
   return (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
 end
 
-local function explicit_mode()
-  local mode = trim(EXPLICIT_MODE)
-  if mode == "" then mode = "legacy" end
-  if mode ~= "legacy" and mode ~= "plan" and mode ~= "compare" then
-    error("index_verborum_filter.lua: unsupported CAPR_IV_EXPLICIT_MODE '" .. mode
-      .. "' (allowed: legacy, plan, compare)")
-  end
-  return mode
-end
-
 local function split_tsv(line)
   local cells = {}
   local start_at = 1
@@ -117,180 +98,6 @@ local function column(cells, idx)
   return trim(cells[idx] or "")
 end
 
-local function explicit_key(language, role, value, source_ref, variety)
-  return (language or "") .. "\t" .. (role or "") .. "\t" .. (value or "") .. "\t" .. (source_ref or "") .. "\t" .. (variety or "")
-end
-
-local function ensure_variety_meta_loaded()
-  if variety_meta ~= nil then return variety_meta end
-  variety_meta = {}
-  local handle = io.open(VARIETY_REGISTRY_TSV, "r")
-  if not handle then
-    error("index_verborum_filter.lua: cannot read " .. VARIETY_REGISTRY_TSV)
-  end
-  local header_line = handle:read("*l")
-  if not header_line then handle:close(); return variety_meta end
-  local headers = {}
-  local s = 1
-  while true do
-    local t = header_line:find("\t", s, true)
-    if t then table.insert(headers, header_line:sub(s, t-1)); s = t+1
-    else table.insert(headers, header_line:sub(s)); break end
-  end
-  local idx = {}
-  for i, h in ipairs(headers) do idx[trim(h)] = i end
-  for line in handle:lines() do
-    if line ~= "" then
-      local cells = {}
-      local c = 1
-      while true do
-        local t = line:find("\t", c, true)
-        if t then table.insert(cells, line:sub(c, t-1)); c = t+1
-        else table.insert(cells, line:sub(c)); break end
-      end
-      local code = trim(cells[idx["code"]] or "")
-      if code ~= "" then
-        variety_meta[code] = {
-          language = trim(cells[idx["language"]] or ""),
-          printed_label = trim(cells[idx["printed_label"]] or ""),
-          display_order = tonumber((trim(cells[idx["display_order"]] or "0"))) or 0,
-          suppress = trim(cells[idx["suppress_label"]] or "") == "1",
-          assignable = trim(cells[idx["assignable"]] or "") == "1",
-          active = trim(cells[idx["active"]] or "") == "1",
-        }
-      end
-    end
-  end
-  handle:close()
-  return variety_meta
-end
-
--- Fail-closed validation of a nonblank occurrence variety; returns printed label.
-local function validate_variety(language, variety)
-  if variety == "" then return "" end
-  local meta = ensure_variety_meta_loaded()
-  local entry = meta[variety]
-  if not entry then
-    error("index_verborum_filter.lua: unknown variety '" .. variety .. "'")
-  end
-  if not entry.active then
-    error("index_verborum_filter.lua: inactive variety '" .. variety .. "'")
-  end
-  if not entry.assignable then
-    error("index_verborum_filter.lua: non-assignable variety '" .. variety .. "' (e.g. 'ws')")
-  end
-  if entry.language ~= language then
-    error("index_verborum_filter.lua: variety '" .. variety .. "' not valid for language '" .. (language or "") .. "'")
-  end
-  if entry.suppress then return "" end
-  return entry.printed_label
-end
-
-local function ensure_lang_meta_loaded()
-  if lang_meta ~= nil then return lang_meta end
-  lang_meta = {}
-  local order = 0
-  local handle = io.open(LANGUAGE_REGISTRY_TSV, "r")
-  if not handle then
-    error("index_verborum_filter.lua: cannot read " .. LANGUAGE_REGISTRY_TSV)
-  end
-  local header_line = handle:read("*l")
-  if not header_line then handle:close(); return lang_meta end
-  -- parse header to find column indices
-  local headers = {}
-  local start_at = 1
-  while true do
-    local tab = header_line:find("\t", start_at, true)
-    if tab then
-      table.insert(headers, header_line:sub(start_at, tab-1))
-      start_at = tab + 1
-    else
-      table.insert(headers, header_line:sub(start_at))
-      break
-    end
-  end
-  local code_idx, title_idx, active_idx, note_idx = nil, nil, nil, nil
-  for i, h in ipairs(headers) do
-    if h == "code" then code_idx = i
-    elseif h == "title" then title_idx = i
-    elseif h == "active" then active_idx = i
-    elseif h == "index_note" then note_idx = i
-    end
-  end
-  for line in handle:lines() do
-    if line ~= "" then
-      local cells = {}
-      local s = 1
-      while true do
-        local t = line:find("\t", s, true)
-        if t then table.insert(cells, line:sub(s, t-1)); s = t+1
-        else table.insert(cells, line:sub(s)); break end
-      end
-      local code = trim(cells[code_idx] or "")
-      local title = trim(cells[title_idx] or "")
-      local active = trim(cells[active_idx] or "")
-      local note = note_idx and trim(cells[note_idx] or "") or ""
-      if code ~= "" and active == "1" then
-        order = order + 1
-        local order_str = string.format("%02d", order)
-        -- escape @ and ! for MakeIndex; include the optional reader-facing note
-        -- as the second \ivlangheader argument so Python and Lua stay equivalent.
-        local escaped = title:gsub("@", "\\@"):gsub("!", "\\!")
-        local escaped_note = note:gsub("@", "\\@"):gsub("!", "\\!")
-        lang_meta[code] = {order_str = order_str .. code, title = title, escaped_title = "\\ivlangheader{" .. escaped .. "}{" .. escaped_note .. "}"}
-      end
-    end
-  end
-  handle:close()
-  return lang_meta
-end
-
-local function ensure_print_main_loaded()
-  if explicit_allow ~= nil then
-    return explicit_allow
-  end
-  explicit_allow = {}
-  local handle = io.open(PRINT_MAIN_TSV, "r")
-  if not handle then
-    error("index_verborum_filter.lua: cannot read " .. PRINT_MAIN_TSV .. "; run build_index_verborum.py first.")
-  end
-  local header_line = handle:read("*l")
-  if not header_line then
-    handle:close()
-    error("index_verborum_filter.lua: missing header in " .. PRINT_MAIN_TSV)
-  end
-  local headers = split_tsv(header_line)
-  local indices = {}
-  for i, name in ipairs(headers) do
-    indices[name] = i
-  end
-  for _, required in ipairs({ "language", "form", "display", "form_role", "source_scope", "source_ref" }) do
-    if not indices[required] then
-      handle:close()
-      error("index_verborum_filter.lua: missing required column '" .. required .. "' in " .. PRINT_MAIN_TSV)
-    end
-  end
-  for line in handle:lines() do
-    if line ~= "" then
-      local cells = split_tsv(line)
-      if column(cells, indices["source_scope"]) == "explicit_tag" then
-        local language = column(cells, indices["language"])
-        local role = column(cells, indices["form_role"])
-        local form = normalize_iv_match_text(column(cells, indices["form"]))
-        local display = normalize_iv_match_text(column(cells, indices["display"]))
-        local source_ref = column(cells, indices["source_ref"])
-        local variety = column(cells, indices["variety"])
-        if role == "" then
-          role = "evidence_form"
-        end
-        explicit_allow[explicit_key(language, role, form, source_ref, variety)] = true
-        explicit_allow[explicit_key(language, role, display, source_ref, variety)] = true
-      end
-    end
-  end
-  handle:close()
-  return explicit_allow
-end
 
 local function has_class(el, class_name)
   for _, class in ipairs(el.classes) do
@@ -299,10 +106,6 @@ local function has_class(el, class_name)
     end
   end
   return false
-end
-
-local function latex_escape(value)
-  return value:gsub("([@!|])", "\\%1")
 end
 
 local function italicize_oe_content(content)
@@ -336,24 +139,6 @@ local function visible_span(span)
   return pandoc.Span(content, pandoc.Attr(span.identifier, filtered_classes, filtered_attrs))
 end
 
-local function explicit_tag_is_printable(language, role, form, display, source_ref, variety)
-  if language == "" then
-    return false
-  end
-  -- Note: preoe forms are now allowed to print if they appear in print_main.
-  -- The blanket preoe exclusion was removed (§11 fix); use print_main as the authority.
-  local allow = ensure_print_main_loaded()
-  if source_ref == "" then
-    return false
-  end
-  -- Primary check: form/display-based
-  if allow[explicit_key(language, role, form, source_ref, variety)]
-      or allow[explicit_key(language, role, display, source_ref, variety)] then
-    return true
-  end
-  return false
-end
-
 local function explicit_span_semantics(span)
   local lang = trim(span.attributes["lang"] or "")
   local role = trim(span.attributes["role"] or "")
@@ -361,10 +146,6 @@ local function explicit_span_semantics(span)
   local source_ref = trim(span.attributes["source_ref"] or "")
   local occ_id = trim(span.attributes["occ_id"] or "")
   local variety = trim(span.attributes["variety"] or "")
-  local variety_label = ""
-  if lang ~= "" then
-    variety_label = validate_variety(lang, variety)
-  end
   local form = normalize_iv_match_text(trim(pandoc.utils.stringify(span.content)))
   local display_attr = normalize_iv_match_text(trim(span.attributes["display"] or ""))
   local is_recon = has_class(span, "recon")
@@ -377,49 +158,10 @@ local function explicit_span_semantics(span)
     source_ref = source_ref,
     occurrence_id = occ_id,
     variety = variety,
-    variety_label = variety_label,
     form = form,
     display = display,
     sort = sort,
   }
-end
-
-local function legacy_explicit_decision(sem)
-  local decision = {
-    disposition = "suppress",
-    index_command = "",
-    occurrence_id = sem.occurrence_id,
-    source_ref = sem.source_ref,
-    reason = "not_printable",
-  }
-  if sem.lang == "" then
-    decision.reason = "blank_language"
-    return decision
-  end
-  if not explicit_tag_is_printable(sem.lang, sem.role, sem.form, sem.display, sem.source_ref, sem.variety) then
-    return decision
-  end
-  local index_display = "\\iventry{" .. latex_escape(sem.display) .. "}{" .. sem.variety_label .. "}"
-  local escaped_sort = latex_escape(sem.sort)
-  local disc = ""
-  if sem.variety ~= "" then
-    if escaped_sort:find("~", 1, true) then
-      error("index_verborum_filter.lua: sort key '" .. sem.sort .. "' contains reserved discriminator separator '~'")
-    end
-    local vmeta = ensure_variety_meta_loaded()
-    local ventry = vmeta[sem.variety]
-    if ventry then
-      disc = "~" .. string.format("%02d", ventry.display_order)
-    end
-  end
-  local meta = ensure_lang_meta_loaded()
-  local lm = meta[sem.lang]
-  local lang_sort = lm and lm.order_str or ("99" .. sem.lang)
-  local lang_display = lm and lm.escaped_title or ("\\ivlangheader{" .. sem.lang .. "}{}")
-  decision.disposition = "emit"
-  decision.index_command = "\\index[iv]{" .. lang_sort .. "@" .. lang_display .. "!" .. escaped_sort .. disc .. "@" .. index_display .. "}"
-  decision.reason = "printable"
-  return decision
 end
 
 local function plan_explicit_decision(sem)
@@ -449,43 +191,6 @@ local function plan_explicit_decision(sem)
   }
 end
 
-local function record_compare_result(sem, legacy_decision, plan_decision, result)
-  if not EXPLICIT_COMPARE_LOG or EXPLICIT_COMPARE_LOG == "" then
-    return
-  end
-  explicit_compare_rows[#explicit_compare_rows + 1] = {
-    occurrence_id = sem.occurrence_id,
-    source_ref = sem.source_ref,
-    legacy_disposition = legacy_decision.disposition,
-    plan_disposition = plan_decision.disposition,
-    emission_id = plan_decision.emission_id or "",
-    index_command = plan_decision.index_command or "",
-    comparison_result = result,
-  }
-end
-
-local function compare_explicit_decisions(sem, legacy_decision, plan_decision)
-  if legacy_decision.disposition ~= plan_decision.disposition then
-    record_compare_result(sem, legacy_decision, plan_decision, "mismatch_disposition")
-    error("index_verborum_filter.lua: explicit compare mismatch at occ_id '" .. sem.occurrence_id
-      .. "' source_ref='" .. sem.source_ref
-      .. "' legacy=" .. legacy_decision.disposition
-      .. " plan=" .. plan_decision.disposition)
-  end
-  if legacy_decision.disposition == "emit" and legacy_decision.index_command ~= plan_decision.index_command then
-    record_compare_result(sem, legacy_decision, plan_decision, "mismatch_command")
-    local l = legacy_decision.index_command or ""
-    local p = plan_decision.index_command or ""
-    local first_diff = 1
-    while first_diff <= #l and first_diff <= #p and l:sub(first_diff, first_diff) == p:sub(first_diff, first_diff) do
-      first_diff = first_diff + 1
-    end
-    error("index_verborum_filter.lua: explicit compare command mismatch at occ_id '" .. sem.occurrence_id
-      .. "' source_ref='" .. sem.source_ref .. "' first_diff_char=" .. first_diff)
-  end
-  record_compare_result(sem, legacy_decision, plan_decision, "ok")
-end
-
 local function render_explicit_decision(visible, decision)
   if decision.disposition == "suppress" then
     return visible
@@ -502,12 +207,10 @@ local function span_to_index(span)
   if sem.lang == "" then
     return visible
   end
+  -- Derivation-chain spans (those with ">" in the form, e.g. *knúbbô > *cnobba)
+  -- are excluded from plan membership and returned as visible-only.
   if sem.form:find(">", 1, true) then
     return visible
-  end
-  local mode = explicit_mode()
-  if mode == "legacy" then
-    return render_explicit_decision(visible, legacy_explicit_decision(sem))
   end
   local plan_decision = plan_explicit_decision(sem)
   -- Track this occurrence for per-document completeness checking.
@@ -517,11 +220,6 @@ local function span_to_index(span)
   end
   seen_explicit_occurrence_ids[sem.occurrence_id] = true
   table.insert(seen_explicit_occurrence_order, sem.occurrence_id)
-  if mode == "plan" then
-    return render_explicit_decision(visible, plan_decision)
-  end
-  local legacy_decision = legacy_explicit_decision(sem)
-  compare_explicit_decisions(sem, legacy_decision, plan_decision)
   return render_explicit_decision(visible, plan_decision)
 end
 
@@ -1097,7 +795,6 @@ end
 function Pandoc(doc)
   -- Reset per-document tracking.
   emitted_anchor_ids = {}
-  explicit_compare_rows = {}
   seen_explicit_occurrence_ids = {}
   seen_explicit_occurrence_order = {}
   local blocks = {}
@@ -1118,24 +815,6 @@ function Pandoc(doc)
         end
       }))
     end
-  end
-  if explicit_mode() == "compare" and EXPLICIT_COMPARE_LOG and EXPLICIT_COMPARE_LOG ~= "" then
-    local fh = io.open(EXPLICIT_COMPARE_LOG, "w")
-    if not fh then
-      error("index_verborum_filter.lua: cannot write CAPR_IV_EXPLICIT_COMPARE_LOG at " .. EXPLICIT_COMPARE_LOG)
-    end
-    fh:write("occurrence_id\tsource_ref\tlegacy_disposition\tplan_disposition\temission_id\tindex_command\tcomparison_result\n")
-    for _, row in ipairs(explicit_compare_rows) do
-      local cmd = (row.index_command or ""):gsub("\t", " "):gsub("\n", " ")
-      fh:write((row.occurrence_id or "") .. "\t"
-        .. (row.source_ref or "") .. "\t"
-        .. (row.legacy_disposition or "") .. "\t"
-        .. (row.plan_disposition or "") .. "\t"
-        .. (row.emission_id or "") .. "\t"
-        .. cmd .. "\t"
-        .. (row.comparison_result or "") .. "\n")
-    end
-    fh:close()
   end
   -- ── Explicit plan completeness check ─────────────────────────────────────
   if REQUIRE_COMPLETENESS and explicit_plan ~= nil then

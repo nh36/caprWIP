@@ -568,7 +568,81 @@ class VarietyAnnotationAuditTests(unittest.TestCase):
 
 @unittest.skipIf(shutil.which("pandoc") is None, "pandoc not available")
 class LuaParityTests(unittest.TestCase):
-    """Prove Lua and Python construct equivalent \\index[iv] bodies."""
+    """Prove Lua and Python construct equivalent \\index[iv] bodies.
+
+    After Stage 3B (legacy emitter removed), the Lua filter emits the plan's
+    precomputed index_command verbatim.  Parity is now verified by building a
+    plan fixture with Python-computed commands and confirming Lua emits them.
+    """
+
+    PLAN_FIELDS = [
+        "occurrence_id", "disposition", "emission_id", "index_command",
+        "exclusion_reason", "language", "variety", "form", "display",
+        "sort_key", "form_role", "source_scope", "source_ref",
+    ]
+    EMISSIONS_FIELDS = [
+        "emission_id", "representative_occurrence_id", "emission_path", "site",
+        "index_command", "language", "variety", "display", "sort_key",
+        "form_role", "source_scope", "source_ref",
+        "source_occurrence_count", "source_occurrence_ids",
+    ]
+
+    def _write_plan_and_emissions(
+        self,
+        tmp_dir: Path,
+        rows: "list[dict]",
+    ) -> "tuple[Path, Path]":
+        """Write plan.tsv + em.tsv fixtures.
+
+        Each dict must supply: occ_id, lang, variety, form, display, sort,
+        role, source_ref, index_command.  disposition=emit assumed.
+        """
+        plan_rows = []
+        em_rows = []
+        for r in rows:
+            occ = r["occ_id"]
+            plan_rows.append({
+                "occurrence_id": occ,
+                "disposition": "emit",
+                "emission_id": occ,
+                "index_command": r["index_command"],
+                "exclusion_reason": "",
+                "language": r["lang"],
+                "variety": r.get("variety", ""),
+                "form": r["form"],
+                "display": r.get("display", r["form"]),
+                "sort_key": r["sort"],
+                "form_role": r.get("role", "evidence_form"),
+                "source_scope": "explicit_tag",
+                "source_ref": r["source_ref"],
+            })
+            em_rows.append({
+                "emission_id": occ,
+                "representative_occurrence_id": occ,
+                "emission_path": "explicit_tag",
+                "site": r["source_ref"],
+                "index_command": r["index_command"],
+                "language": r["lang"],
+                "variety": r.get("variety", ""),
+                "display": r.get("display", r["form"]),
+                "sort_key": r["sort"],
+                "form_role": r.get("role", "evidence_form"),
+                "source_scope": "explicit_tag",
+                "source_ref": r["source_ref"],
+                "source_occurrence_count": "1",
+                "source_occurrence_ids": occ,
+            })
+        plan_f = tmp_dir / "plan.tsv"
+        em_f = tmp_dir / "em.tsv"
+        with plan_f.open("w", encoding="utf-8", newline="") as h:
+            w = csv.DictWriter(h, fieldnames=self.PLAN_FIELDS, delimiter="\t", lineterminator="\n")
+            w.writeheader()
+            w.writerows(plan_rows)
+        with em_f.open("w", encoding="utf-8", newline="") as h:
+            w = csv.DictWriter(h, fieldnames=self.EMISSIONS_FIELDS, delimiter="\t", lineterminator="\n")
+            w.writeheader()
+            w.writerows(em_rows)
+        return plan_f, em_f
 
     def _run_pandoc(self, markdown: str, env: dict[str, str]) -> str:
         with tempfile.TemporaryDirectory() as tmp:
@@ -590,34 +664,37 @@ class LuaParityTests(unittest.TestCase):
         var = ivr.load_variety_registry()
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            # print_main fixture whitelisting the explicit tags (with variety)
-            pm = tmp / "pm.tsv"
-            header = ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "origin", "status"]
             cases = [
                 ("", "strēgan", "stregan"),
                 ("angl", "strēgan", "stregan"),
                 ("merc", "geafa", "geafa"),
                 ("ews", "stīeran", "stieran"),
             ]
-            rows = []
+            ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
+            fixture_rows = []
             md_lines = []
-            for variety, form, sort in cases:
-                ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
-                rows.append(["oe", variety, form, form, sort, "comparison_form", "explicit_tag", ref, "x", "auto"])
+            for i, (variety, form, sort) in enumerate(cases, start=1):
+                occ_id = f"{ref}:{i}"
+                py_cmd = ivr.index_command("oe", sort, form, variety, lang_meta=lang, var_registry=var)
+                fixture_rows.append({
+                    "occ_id": occ_id, "lang": "oe", "variety": variety,
+                    "form": form, "display": form, "sort": sort,
+                    "role": "comparison_form", "source_ref": ref,
+                    "index_command": py_cmd,
+                })
                 va = f" variety={variety}" if variety else ""
-                md_lines.append(f"[{form}]{{.iv lang=oe{va} sort={sort} role=comparison_form source_ref=\"{ref}\"}}")
-            with pm.open("w", encoding="utf-8", newline="") as h:
-                w = csv.writer(h, delimiter="\t", lineterminator="\n")
-                w.writerow(header)
-                w.writerows(rows)
+                md_lines.append(
+                    f'[{form}]{{.iv lang=oe{va} sort={sort} role=comparison_form'
+                    f' source_ref="{ref}" occ_id="{occ_id}"}}'
+                )
+            plan_f, em_f = self._write_plan_and_emissions(tmp, fixture_rows)
             env = {
-                "CAPR_IV_PRINT_MAIN_TSV": str(pm),
-                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
-                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+                "CAPR_IV_EXPLICIT_PLAN_TSV": str(plan_f),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(em_f),
             }
             out = self._run_pandoc("\n\n".join(md_lines) + "\n", env)
-            for variety, form, sort in cases:
-                py = ivr.index_command("oe", sort, form, variety, lang_meta=lang, var_registry=var)
+            for (variety, form, sort), row in zip(cases, fixture_rows):
+                py = row["index_command"]
                 self.assertIn(py, out, f"Lua output missing Python-equivalent command for variety={variety!r}")
 
     def test_lua_rejects_ws(self):
@@ -647,21 +724,21 @@ class LuaParityTests(unittest.TestCase):
     def test_occ_id_not_leaked_to_visible_output(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            pm = tmp / "pm.tsv"
-            header = ["language", "variety", "form", "display", "sort_key", "form_role", "source_scope", "source_ref", "occurrence_id", "origin", "status"]
             ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
-            with pm.open("w", encoding="utf-8", newline="") as h:
-                w = csv.writer(h, delimiter="\t", lineterminator="\n")
-                w.writerow(header)
-                w.writerow(["oe", "", "form", "form", "form", "comparison_form", "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+            occ_id = f"{ref}:1"
+            plan_f, em_f = self._write_plan_and_emissions(tmp, [{
+                "occ_id": occ_id, "lang": "oe", "variety": "", "form": "form",
+                "display": "form", "sort": "form", "role": "evidence_form",
+                "source_ref": ref,
+                "index_command": r"\index[iv]{02oe@\ivlangheader{Old English}{}!form@\iventry{form}{}}",
+            }])
             env = dict(os.environ)
             env.update({
-                "CAPR_IV_PRINT_MAIN_TSV": str(pm),
-                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
-                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+                "CAPR_IV_EXPLICIT_PLAN_TSV": str(plan_f),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(em_f),
             })
             src = tmp / "in.md"
-            src.write_text(f"[form]{{.iv lang=oe sort=form source_ref=\"{ref}\" occ_id=\"{ref}:1\"}}\n", encoding="utf-8")
+            src.write_text(f"[form]{{.iv lang=oe sort=form source_ref=\"{ref}\" occ_id=\"{occ_id}\"}}\n", encoding="utf-8")
             proc = subprocess.run(
                 ["pandoc", "--from", "markdown", "--to", "html", "--lua-filter", str(FILTER_LUA), str(src)],
                 capture_output=True, text=True, env=env,
@@ -687,11 +764,14 @@ class LuaParityTests(unittest.TestCase):
 
         This is a real production-path test: ordinary corpus spans do not carry
         an explicit display= attribute, and the filter must still match them.
+
+        In plan mode the normalizer is used for the semantic identity check
+        (plan row form vs span content), not for print_main lookup.
         """
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            pm = tmp / "pm.tsv"
             ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
+            occ_id = f"{ref}:1"
 
             # OE 'āsceaf': a (U+0061) + combining macron (U+0304) vs precomposed ā (U+0101)
             form_nfc = unicodedata.normalize("NFC", "\u0101sceaf")
@@ -703,29 +783,31 @@ class LuaParityTests(unittest.TestCase):
             self.assertEqual(unicodedata.normalize("NFC", form_nfd), form_nfc,
                              "NFD form must normalize back to NFC form")
 
-            header = ["language", "variety", "form", "display", "sort_key", "form_role",
-                      "source_scope", "source_ref", "occurrence_id", "origin", "status"]
-            with pm.open("w", encoding="utf-8", newline="") as h:
-                w = csv.writer(h, delimiter="\t", lineterminator="\n")
-                w.writerow(header)
-                # TSV stores NFC form and NFC display
-                w.writerow(["oe", "", form_nfc, form_nfc, "asceaf", "target_form",
-                            "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+            # Plan stores NFC form; span uses NFD content.  normalize_iv_match_text must
+            # compose both sides so the semantic identity check passes.
+            synthetic_cmd = (
+                r"\index[iv]{02oe@\ivlangheader{Old English}{}!asceaf@\iventry{"
+                + form_nfc + r"}{}}"
+            )
+            plan_f, em_f = self._write_plan_and_emissions(tmp, [{
+                "occ_id": occ_id, "lang": "oe", "variety": "", "form": form_nfc,
+                "display": form_nfc, "sort": "asceaf", "role": "target_form",
+                "source_ref": ref, "index_command": synthetic_cmd,
+            }])
 
             env = dict(os.environ)
             env.update({
-                "CAPR_IV_PRINT_MAIN_TSV": str(pm),
-                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
-                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+                "CAPR_IV_EXPLICIT_PLAN_TSV": str(plan_f),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(em_f),
             })
             src = tmp / "in.md"
             # Span has NFD visible content. Critically: no display= attribute.
             # The Lua filter must normalize the form from stringify to NFC and match
-            # the NFC TSV entry via the primary form-based eligibility check.
+            # the NFC plan entry via the semantic identity check.
             span = (
                 "[" + form_nfd + "]{.iv lang=oe sort=asceaf role=target_form"
                 + ' source_ref="' + ref + '"'
-                + ' occ_id="' + ref + ':1"}'
+                + ' occ_id="' + occ_id + '"}'
             )
             src.write_text(span + "\n", encoding="utf-8")
             proc = subprocess.run(
@@ -735,19 +817,21 @@ class LuaParityTests(unittest.TestCase):
             )
             self.assertEqual(proc.returncode, 0, proc.stderr)
             self.assertIn(r"\index[iv]", proc.stdout,
-                          "Lua NFC normalizer must emit command via primary form match "
-                          "(no display= attribute, no fallback)")
+                          "Lua NFC normalizer must emit command via plan identity check "
+                          "(no display= attribute)")
 
     def test_normalize_iv_match_text_y_macron(self):
         """normalize_iv_match_text composes y + combining macron → ȳ (U+0233).
 
         Previously omitted from the composition table; proves the corpus form
         cȳ (attested OE plural of 'cow') is handled by the same primary path.
+
+        In plan mode this normalizer is used for the plan semantic identity check.
         """
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            pm = tmp / "pm.tsv"
             ref = "Germanic/docs/assembly/capr_book_intro_alpha_01.md:1"
+            occ_id = f"{ref}:1"
 
             # OE 'cȳ': c + ȳ (y U+0079 + combining macron U+0304 → ȳ U+0233)
             form_nfc = unicodedata.normalize("NFC", "c\u0233")   # cȳ NFC
@@ -758,26 +842,27 @@ class LuaParityTests(unittest.TestCase):
             self.assertEqual(unicodedata.normalize("NFC", form_nfd), form_nfc,
                              "NFD must normalize back to NFC")
 
-            header = ["language", "variety", "form", "display", "sort_key", "form_role",
-                      "source_scope", "source_ref", "occurrence_id", "origin", "status"]
-            with pm.open("w", encoding="utf-8", newline="") as h:
-                w = csv.writer(h, delimiter="\t", lineterminator="\n")
-                w.writerow(header)
-                w.writerow(["oe", "", form_nfc, form_nfc, "cy", "target_form",
-                            "explicit_tag", ref, f"{ref}:1", "x", "auto"])
+            synthetic_cmd = (
+                r"\index[iv]{02oe@\ivlangheader{Old English}{}!cy@\iventry{"
+                + form_nfc + r"}{}}"
+            )
+            plan_f, em_f = self._write_plan_and_emissions(tmp, [{
+                "occ_id": occ_id, "lang": "oe", "variety": "", "form": form_nfc,
+                "display": form_nfc, "sort": "cy", "role": "target_form",
+                "source_ref": ref, "index_command": synthetic_cmd,
+            }])
 
             env = dict(os.environ)
             env.update({
-                "CAPR_IV_PRINT_MAIN_TSV": str(pm),
-                "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(BOOK / "index_verborum_languages.tsv"),
-                "CAPR_IV_VARIETY_REGISTRY_TSV": str(BOOK / "index_verborum_varieties.tsv"),
+                "CAPR_IV_EXPLICIT_PLAN_TSV": str(plan_f),
+                "CAPR_IV_BOOK_EMISSIONS_TSV": str(em_f),
             })
             src = tmp / "in.md"
             # NFD span content, no display= attribute
             span = (
                 "[" + form_nfd + "]{.iv lang=oe sort=cy role=target_form"
                 + ' source_ref="' + ref + '"'
-                + ' occ_id="' + ref + ':1"}'
+                + ' occ_id="' + occ_id + '"}'
             )
             src.write_text(span + "\n", encoding="utf-8")
             proc = subprocess.run(
@@ -787,7 +872,7 @@ class LuaParityTests(unittest.TestCase):
             )
             self.assertEqual(proc.returncode, 0, proc.stderr)
             self.assertIn(r"\index[iv]", proc.stdout,
-                          "y+macron composition must emit command via primary form match "
+                          "y+macron composition must emit command via plan identity check "
                           "(no display= attribute)")
 
 

@@ -25,9 +25,6 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 FILTER_LUA = REPO_ROOT / "Germanic/tools/index_verborum_filter.lua"
 BOOK_EMISSIONS_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_book_emissions.tsv"
-PRINT_MAIN_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
-LANGUAGE_REGISTRY_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
-VARIETY_REGISTRY_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_varieties.tsv"
 EXPLICIT_PLAN_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_book_explicit_plan.tsv"
 CANONICAL_MD = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 
@@ -63,12 +60,9 @@ def _extract_iv_commands(text: str) -> list[str]:
 def _run_pandoc(md_text: str, tmp_dir: Path, label: str) -> str:
     env = dict(os.environ)
     env.update({
-        "CAPR_IV_PRINT_MAIN_TSV": str(PRINT_MAIN_TSV),
         "CAPR_IV_BOOK_EMISSIONS_TSV": str(BOOK_EMISSIONS_TSV),
         "CAPR_IV_EXPLICIT_PLAN_TSV": str(EXPLICIT_PLAN_TSV),
-        "CAPR_IV_EXPLICIT_MODE": "legacy",
-        "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(LANGUAGE_REGISTRY_TSV),
-        "CAPR_IV_VARIETY_REGISTRY_TSV": str(VARIETY_REGISTRY_TSV),
+        "CAPR_IV_REQUIRE_EXPLICIT_COMPLETENESS": "0",
     })
     src = tmp_dir / f"{label}.md"
     src.write_text(md_text, encoding="utf-8")

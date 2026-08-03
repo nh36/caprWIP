@@ -1116,7 +1116,10 @@ def assert_print_layer_outputs() -> None:
     assert "check_sound_change_heading_wrapping.py" in docker_build_text
     assert "check_bibliography_sanity.py" in docker_build_text
     assert "check_print_index_ready.py" in docker_build_text
-    assert "index_verborum_print_main.tsv" in filter_text
+    assert "index_verborum_book_explicit_plan.tsv" in filter_text
+    assert "index_verborum_print_main.tsv" not in filter_text, (
+        "Lua filter must not reference print_main.tsv after Stage 3B legacy removal"
+    )
     assert r"\indexsetup{level=\section*,noclearpage}" in header_text
     assert r"\indexsetup{level=\chapter*" not in header_text
     assert "toclevel" not in header_text
