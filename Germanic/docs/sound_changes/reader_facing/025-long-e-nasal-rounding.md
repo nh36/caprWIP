@@ -15,4 +15,4 @@ define NWGmcLongENasalRounding [
 ];
 ```
 
-Reversing [SC025 NWGmcLongENasalRounding](#rule-NWGmcLongENasalRounding) with neighboring changes leaves every checked output unchanged. Its position beside the other \emph{ē}-developments therefore follows the handbooks.
+Reversing [SC025 NWGmcLongENasalRounding](#rule-NWGmcLongENasalRounding) with neighboring changes leaves every output unchanged. Its position beside the other \emph{ē}-developments therefore follows the handbooks.

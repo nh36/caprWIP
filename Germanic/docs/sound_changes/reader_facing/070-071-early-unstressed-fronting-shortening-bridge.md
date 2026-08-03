@@ -12,7 +12,7 @@ o-shortening.
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) has both an
 earlier and a later lexical breakpoint.
 [SC071 OELateOShortening](#rule-OELateOShortening) confirms their reciprocal
-order, but no checked form fixes its later boundary.
+order, but no lexical evidence fixes its later boundary.
 
 ## SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly}
 
