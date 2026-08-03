@@ -1,10 +1,32 @@
 #!/usr/bin/env python3
+"""Assemble capr_book_draft_alpha_01.md from production sources.
+
+Two render modes are supported:
+
+``raw``   (default, production)
+    Non-explicit index emissions are inserted as raw ``\\index[iv]{...}``
+    commands in the Markdown.  This is the canonical production path used by
+    ``main()`` and the Docker build.  The output must be byte-identical to the
+    tracked ``capr_book_draft_alpha_01.md``.
+
+``anchor``  (shadow validation only — never written to the canonical path)
+    Non-explicit emissions are replaced by strict ``.iv-anchor`` block markers::
+
+        ::: {.iv-anchor emission_id="emit:xxx"}
+        :::
+
+    The Lua filter looks up each ``emission_id`` in ``book_emissions.tsv`` and
+    emits the Python-precomputed ``index_command`` verbatim.  This mode is used
+    by ``check_anchor_shadow.py`` to prove that the anchor path produces exactly
+    the same ``\\index[iv]`` commands as the raw path.
+"""
 from __future__ import annotations
 
 import csv
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 
 
@@ -21,6 +43,32 @@ MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
 NESTED_RECON_IV_RE = re.compile(r"\[\[(?P<form>[^\]]+)\]\{\.recon\}(?P<tail>.*?)\]\{(?P<attrs>[^}]*)\}")
 EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
+
+
+# ── Emission record ───────────────────────────────────────────────────────────
+
+@dataclass(frozen=True)
+class BookEmission:
+    """One canonical planned book emission from ``book_emissions.tsv``."""
+    emission_id: str
+    representative_occurrence_id: str
+    emission_path: str
+    site: str
+    index_command: str
+
+    def as_raw(self) -> str:
+        """The raw ``\\index[iv]{...}`` command used by the production path."""
+        return self.index_command
+
+    def as_anchor(self) -> str:
+        """A strict block ``.iv-anchor`` marker used by the shadow/anchor path.
+
+        Only ``emission_id`` is carried on the marker. No semantic fields
+        (language, form, sort key, command text, etc.) appear in the Markdown;
+        they are resolved at build time by the Lua filter from ``book_emissions.tsv``.
+        """
+        eid = self.emission_id.replace('"', "&quot;")
+        return f'::: {{.iv-anchor emission_id="{eid}"}}\n:::'
 
 
 def has_tag_class(raw_attrs: str, cls: str) -> bool:
@@ -42,9 +90,22 @@ def heading_ref(lexical_item: str, counterpart: str, derivation_class: str = "")
     return f"{lexical_item} — OE {oe_target_display(counterpart, derivation_class)}"
 
 
-def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, list[str]]], list[str]]:
-    commands_by_heading_ref: dict[str, list[str]] = defaultdict(list)
-    commands_by_line_ref: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
+def load_production_rows() -> tuple[
+    dict[str, list[BookEmission]],
+    dict[str, dict[int, list[BookEmission]]],
+    list[str],
+]:
+    """Load the canonical book emission plan and return ordered emission maps.
+
+    Returns:
+        emissions_by_heading_ref: heading site → ordered list of BookEmission
+        emissions_by_line_ref:    path → {line_no → ordered list of BookEmission}
+        unused:                   empty list (retained for API compatibility)
+    """
+    emissions_by_heading_ref: dict[str, list[BookEmission]] = defaultdict(list)
+    emissions_by_line_ref: dict[str, dict[int, list[BookEmission]]] = defaultdict(
+        lambda: defaultdict(list)
+    )
     main_rows = load_print_main()
     emission_rows = build_emission_table(main_rows, load_model_entry_headings())
     seen_emission_ids: set[str] = set()
@@ -55,24 +116,27 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
         if emission_id in seen_emission_ids:
             continue
         seen_emission_ids.add(emission_id)
-        path = row.get("emission_path", "")
-        if path == "explicit_tag":
+        epath = row.get("emission_path", "")
+        if epath == "explicit_tag":
             continue
-        cmd = row.get("index_command", "")
-        site = row.get("site", "")
-        if path == "heading_injection":
-            if cmd not in commands_by_heading_ref[site]:
-                commands_by_heading_ref[site].append(cmd)
-        elif path == "line_injection":
+        emission = BookEmission(
+            emission_id=emission_id,
+            representative_occurrence_id=row.get("representative_occurrence_id", ""),
+            emission_path=epath,
+            site=row.get("site", ""),
+            index_command=row.get("index_command", ""),
+        )
+        site = emission.site
+        if epath == "heading_injection":
+            emissions_by_heading_ref[site].append(emission)
+        elif epath == "line_injection":
             if ".md:" not in site:
                 continue
             path_part, line_part = site.rsplit(":", 1)
             if not line_part.isdigit():
                 continue
-            line_no = int(line_part)
-            if cmd not in commands_by_line_ref[path_part][line_no]:
-                commands_by_line_ref[path_part][line_no].append(cmd)
-    return commands_by_heading_ref, commands_by_line_ref, []
+            emissions_by_line_ref[path_part][int(line_part)].append(emission)
+    return emissions_by_heading_ref, emissions_by_line_ref, []
 
 
 def annotate_explicit_tags_in_line(line: str, rel_path: str, line_no: int) -> str:
@@ -119,15 +183,36 @@ def annotate_explicit_tags_with_source_ref(path: Path, text: str) -> str:
     )
 
 
-def inject_line_commands(path: Path, line_commands: dict[str, dict[int, list[str]]]) -> str:
+def _render_emissions(
+    emissions: list[BookEmission],
+    render_mode: str,
+) -> list[str]:
+    """Convert a list of BookEmissions to renderable strings for the given mode.
+
+    raw:    one ``\\index[iv]{...}`` string per emission
+    anchor: one ``::: {.iv-anchor emission_id="emit:..."}\n:::`` block per emission
+    """
+    if render_mode == "raw":
+        return [e.as_raw() for e in emissions]
+    elif render_mode == "anchor":
+        return [e.as_anchor() for e in emissions]
+    else:
+        raise ValueError(f"Unknown render_mode {render_mode!r}; expected 'raw' or 'anchor'")
+
+
+def inject_line_commands(
+    path: Path,
+    line_emissions: dict[str, dict[int, list[BookEmission]]],
+    render_mode: str = "raw",
+) -> str:
     rel = path.relative_to(REPO_ROOT).as_posix()
-    commands = line_commands.get(rel, {})
+    emissions_for_file = line_emissions.get(rel, {})
     lines = path.read_text(encoding="utf-8").splitlines()
     out: list[str] = []
     for idx, line in enumerate(lines, start=1):
         out.append(annotate_explicit_tags_in_line(line, rel, idx))
-        if idx in commands:
-            out.extend(commands[idx])
+        if idx in emissions_for_file:
+            out.extend(_render_emissions(emissions_for_file[idx], render_mode))
     return "\n".join(out).rstrip()
 
 
@@ -232,7 +317,11 @@ def transform_chronology(text: str) -> str:
 _PART_HEADING_RE = re.compile(r"^## Part [IVX]+\.\s+(.+)$")
 
 
-def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
+def transform_lexical(
+    text: str,
+    emissions_by_ref: dict[str, list[BookEmission]],
+    render_mode: str = "raw",
+) -> str:
     """Emit lexical material at correct heading levels for the book.
 
     Front matter (Introduction, Data and sources, Transducer and derivation
@@ -275,16 +364,16 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
             # Lexical entry heading: demote to ## (section within derivation-class chapter)
             entry_text = line[3:]  # keep the leading space from "### "
             out.append("##" + entry_text)
-            # Inject index commands after each entry heading
+            # Inject index emissions after each entry heading
             ref = line[4:].strip()
             if " — OE _" in ref and ref.endswith("_"):
                 lexical_item, target = ref.split(" — OE ", 1)
                 cleaned_target = target[1:-1].replace('\\*', '*')
                 ref = f"{lexical_item} — OE {cleaned_target}"
-            commands = commands_by_ref.get(ref, [])
-            if commands:
+            emissions = emissions_by_ref.get(ref, [])
+            if emissions:
                 out.append("")
-                out.extend(commands)
+                out.extend(_render_emissions(emissions, render_mode))
         elif line.startswith("#### "):
             # Entry subsection (Derivation trace, Reconstruction...) → ###
             out.append("###" + line[4:])
@@ -296,14 +385,30 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
     return "\n".join(out).rstrip()
 
 
-def build_book_markdown() -> str:
-    commands_by_ref, line_commands, nonempty_languages = load_production_rows()
-    intro = inject_line_commands(INTRO_PATH, line_commands)
-    chronology = transform_chronology(inject_line_commands(CHRONOLOGY_PATH, line_commands))
+def build_book_markdown(render_mode: str = "raw") -> str:
+    """Assemble the full book Markdown.
+
+    ``render_mode`` controls how non-explicit index emissions are rendered:
+
+    ``"raw"``     (default) — inserts precomputed ``\\index[iv]{...}`` commands.
+                  Used by ``main()`` and the Docker build.  The output must be
+                  byte-identical to the tracked ``capr_book_draft_alpha_01.md``.
+
+    ``"anchor"``  — inserts ``.iv-anchor`` block markers with ``emission_id``
+                  attributes only.  Used by the shadow check to prove that the
+                  Lua anchor path produces the same commands as the raw path.
+                  Never written to the canonical output file.
+    """
+    if render_mode not in ("raw", "anchor"):
+        raise ValueError(f"render_mode must be 'raw' or 'anchor', got {render_mode!r}")
+    emissions_by_ref, line_emissions, _ = load_production_rows()
+    intro = inject_line_commands(INTRO_PATH, line_emissions, render_mode)
+    chronology = transform_chronology(inject_line_commands(CHRONOLOGY_PATH, line_emissions, render_mode))
     lexical_text = annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8"))
     lexical = transform_lexical(
         strip_lexical_terminal_references(lexical_text),
-        commands_by_ref,
+        emissions_by_ref,
+        render_mode,
     )
     index_parts = [r"\printindex[iv]"]
     parts = [

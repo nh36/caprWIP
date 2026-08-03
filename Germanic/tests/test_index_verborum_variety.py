@@ -1259,27 +1259,37 @@ class IvAnchorShadowTests(unittest.TestCase):
         self.assertNotIn(".iv-anchor", content,
                          "Production MD must not contain .iv-anchor markers (shadow mode only)")
 
-    def test_shadow_md_has_anchors_not_raw_commands(self):
-        """The shadow MD uses .iv-anchor markers, not raw \\index[iv]{} commands."""
-        shadow_md = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_shadow.md"
-        if not shadow_md.exists():
-            self.skipTest("Shadow MD not built; run build_capr_book_draft_shadow.py first")
-        content = shadow_md.read_text(encoding="utf-8")
-        self.assertIn(".iv-anchor", content)
-        idx_idx_raw = content.count(r"\index[iv]")
-        # Shadow MD should have no raw injection commands (only the \printindex[iv] call)
-        self.assertEqual(idx_idx_raw, 0,
-                         "Shadow MD must use .iv-anchor markers instead of raw \\index[iv] injection")
+    def test_anchor_mode_md_has_anchors_not_raw_commands(self):
+        """anchor-mode build uses .iv-anchor block markers, not raw injection commands."""
+        import sys as _sys
+        _sys.path.insert(0, str(REPO_ROOT / "Germanic" / "docs" / "assembly"))
+        from build_capr_book_draft import build_book_markdown
+        anchor_md = build_book_markdown(render_mode="anchor")
+        self.assertIn(".iv-anchor", anchor_md,
+                      "anchor-mode MD must contain .iv-anchor markers")
+        raw_injection_count = anchor_md.count(r"\index[iv]")
+        self.assertEqual(raw_injection_count, 0,
+                         "anchor-mode MD must have no raw \\index[iv] injection (anchors only)")
+
+    def test_raw_mode_byte_identical_to_production(self):
+        """raw-mode build is byte-identical to the tracked capr_book_draft_alpha_01.md."""
+        import sys as _sys
+        _sys.path.insert(0, str(REPO_ROOT / "Germanic" / "docs" / "assembly"))
+        from build_capr_book_draft import build_book_markdown
+        raw_md = build_book_markdown(render_mode="raw")
+        prod_path = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
+        if not prod_path.exists():
+            self.skipTest("Production MD not present")
+        production_content = prod_path.read_text(encoding="utf-8")
+        self.assertEqual(raw_md, production_content,
+                         "raw-mode output must be byte-identical to tracked production MD")
 
     def test_shadow_check_passes(self):
         """Shadow check: anchor path produces exactly the same commands as canonical plan."""
         import sys as _sys
         _sys.path.insert(0, str(TOOLS))
         from check_anchor_shadow import check
-        shadow_md = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_shadow.md"
-        if not shadow_md.exists():
-            self.skipTest("Shadow MD not built; run build_capr_book_draft_shadow.py first")
-        ok = check(shadow_md)
+        ok = check()
         self.assertTrue(ok, "Shadow anchor check must pass: anchor path must equal canonical plan")
 
 

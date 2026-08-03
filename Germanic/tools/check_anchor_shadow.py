@@ -1,30 +1,41 @@
 #!/usr/bin/env python3
-"""Shadow-mode anchor check.
+"""Shadow-mode anchor equivalence check.
 
-Proves that the .iv-anchor path through the Lua filter produces
-exactly the same set of \\index[iv]{...} commands as the production
-Python-injection path.
+Proves that the plan-driven ``.iv-anchor`` Lua emission path produces exactly
+the same set of ``\\index[iv]{...}`` commands as the production Python-injection
+(raw) path, for every non-explicit book emission.
 
-Architecture being tested (shadow mode only — NOT yet active in production):
-  heading/line injection sites → .iv-anchor Span markers
-  .iv-anchor Span → Lua looks up emission_id in book_emissions.tsv
-  Lua emits precomputed index_command verbatim
+Architecture tested (shadow mode — not yet active in production)
+----------------------------------------------------------------
+For heading/line injection sites the shadow path places::
 
-Production architecture (unchanged by this task):
-  heading/line injection sites → raw \\index[iv]{...} in Markdown
-  these pass through pandoc as-is, bypassing the Lua filter
+    ::: {.iv-anchor emission_id="emit:xxx"}
+    :::
 
-Both paths must produce exactly the same command multiset.
+in the assembled Markdown. The Lua filter (index_verborum_filter.lua) looks up
+the emission_id in book_emissions.tsv and emits the precomputed index_command
+verbatim. No semantic reconstruction happens in Lua.
+
+The raw path (current production) inserts raw ``\\index[iv]{...}`` commands
+directly into the Markdown, bypassing the Lua filter.
+
+Both paths must produce the same 1865-command multiset from the same book
+source material.
+
+Explicit ``.iv`` spans are unaffected in both modes; they continue to emit
+through the existing Lua span_to_index path.
 
 Exit codes
 ----------
-  0  — equivalence proved
-  1  — differences found (details on stderr)
-  127 — pandoc not available (skip)
+  0    equivalence proved
+  1    differences found (details on stderr)
+  2    configuration error
+  127  pandoc not available (check skipped gracefully)
 """
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -33,16 +44,24 @@ from collections import Counter
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SHADOW_BUILDER = REPO_ROOT / "Germanic/docs/assembly/build_capr_book_draft_shadow.py"
+FILTER_LUA = REPO_ROOT / "Germanic/tools/index_verborum_filter.lua"
 BOOK_EMISSIONS_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_book_emissions.tsv"
 PRINT_MAIN_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 VARIETY_REGISTRY_TSV = REPO_ROOT / "Germanic/docs/book/index_verborum_varieties.tsv"
-FILTER_LUA = REPO_ROOT / "Germanic/tools/index_verborum_filter.lua"
+
+# Import the production builder (shared code, not a separate shadow copy)
+sys.path.insert(0, str(REPO_ROOT / "Germanic" / "docs" / "assembly"))
+from build_capr_book_draft import build_book_markdown
+
+
+def _pandoc_available() -> bool:
+    result = subprocess.run(["pandoc", "--version"], capture_output=True)
+    return result.returncode == 0
 
 
 def _extract_iv_bodies(text: str) -> list[str]:
-    bodies = []
+    bodies: list[str] = []
     for m in re.finditer(r"\\index\[iv\]\{", text):
         pos = m.end()
         depth = 1
@@ -62,36 +81,44 @@ def load_canonical_commands() -> Counter[str]:
     import csv
     with BOOK_EMISSIONS_TSV.open(encoding="utf-8") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
-    cmds: Counter[str] = Counter()
-    for row in rows:
-        cmd = (row.get("index_command") or "").strip()
-        if cmd:
-            cmds[cmd] += 1
-    return cmds
-
-
-def run_pandoc_anchor_check(shadow_md_path: Path) -> Counter[str]:
-    """Run pandoc with the Lua filter on the shadow MD and collect \\index[iv] commands."""
-    import os
-    env = dict(os.environ)
-    env["CAPR_IV_PRINT_MAIN_TSV"] = str(PRINT_MAIN_TSV)
-    env["CAPR_IV_BOOK_EMISSIONS_TSV"] = str(BOOK_EMISSIONS_TSV)
-    env["CAPR_IV_LANGUAGE_REGISTRY_TSV"] = str(LANGUAGE_REGISTRY_TSV)
-    env["CAPR_IV_VARIETY_REGISTRY_TSV"] = str(VARIETY_REGISTRY_TSV)
-
-    proc = subprocess.run(
-        [
-            "pandoc",
-            str(shadow_md_path),
-            "--from", "markdown+raw_tex",
-            "--to", "latex",
-            "--lua-filter", str(FILTER_LUA),
-        ],
-        capture_output=True,
-        text=True,
-        env=env,
-        cwd=str(REPO_ROOT),
+    return Counter(
+        (row.get("index_command") or "").strip()
+        for row in rows
+        if (row.get("index_command") or "").strip()
     )
+
+
+def run_pandoc_on_anchor_md(shadow_md_text: str) -> Counter[str]:
+    """Run pandoc + Lua filter on anchor-mode Markdown; return command Counter."""
+    env = dict(os.environ)
+    env.update({
+        "CAPR_IV_PRINT_MAIN_TSV": str(PRINT_MAIN_TSV),
+        "CAPR_IV_BOOK_EMISSIONS_TSV": str(BOOK_EMISSIONS_TSV),
+        "CAPR_IV_LANGUAGE_REGISTRY_TSV": str(LANGUAGE_REGISTRY_TSV),
+        "CAPR_IV_VARIETY_REGISTRY_TSV": str(VARIETY_REGISTRY_TSV),
+    })
+    with tempfile.NamedTemporaryFile(
+        mode="w", suffix=".md", encoding="utf-8", delete=False
+    ) as tmp:
+        tmp_path = Path(tmp.name)
+        tmp.write(shadow_md_text)
+
+    try:
+        proc = subprocess.run(
+            [
+                "pandoc", str(tmp_path),
+                "--from", "markdown+raw_tex",
+                "--to", "latex",
+                "--lua-filter", str(FILTER_LUA),
+            ],
+            capture_output=True,
+            text=True,
+            env=env,
+            cwd=str(REPO_ROOT),
+        )
+    finally:
+        tmp_path.unlink(missing_ok=True)
+
     if proc.returncode != 0:
         print("pandoc failed:", proc.stderr[:500], file=sys.stderr)
         sys.exit(1)
@@ -100,69 +127,78 @@ def run_pandoc_anchor_check(shadow_md_path: Path) -> Counter[str]:
     return Counter(r"\index[iv]{" + b + "}" for b in bodies)
 
 
-def check(shadow_md_path: Path | None = None) -> bool:
-    """Return True if the shadow anchor path produces commands equal to the canonical plan."""
-    # Step 1: build shadow MD if not already provided
-    if shadow_md_path is None:
-        shadow_md_path = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_shadow.md"
-        proc = subprocess.run(
-            [sys.executable, str(SHADOW_BUILDER)],
-            capture_output=True, text=True, cwd=str(REPO_ROOT)
-        )
-        if proc.returncode != 0:
-            print("Shadow builder failed:", proc.stderr[:500], file=sys.stderr)
-            sys.exit(1)
+def check(verbose: bool = False) -> bool:
+    """Run the shadow equivalence check. Returns True on pass."""
+    # Build anchor-mode Markdown using the production builder — same code, no copy.
+    anchor_md = build_book_markdown(render_mode="anchor")
 
-    # Step 2: load canonical expected commands
+    # Verify anchor MD has markers and no raw injections
+    if ".iv-anchor" not in anchor_md:
+        print("FAIL: anchor-mode MD has no .iv-anchor markers", file=sys.stderr)
+        return False
+
+    raw_count = anchor_md.count(r"\index[iv]")
+    if raw_count > 0:
+        print(
+            f"FAIL: anchor-mode MD contains {raw_count} raw \\index[iv] commands "
+            "(expected 0 — anchors only)",
+            file=sys.stderr,
+        )
+        return False
+
+    # Canonical expected commands
     canonical = load_canonical_commands()
 
-    # Step 3: run pandoc+lua on shadow MD
-    actual = run_pandoc_anchor_check(shadow_md_path)
+    # Shadow: run pandoc + Lua anchor handler
+    actual = run_pandoc_on_anchor_md(anchor_md)
 
-    # Step 4: compare
-    errors: list[str] = []
-
+    # Compare
     missing = {k: (canonical[k], actual.get(k, 0)) for k in canonical if canonical[k] > actual.get(k, 0)}
     extra = {k: (canonical.get(k, 0), actual[k]) for k in actual if actual[k] > canonical.get(k, 0)}
 
-    if missing:
-        errors.append(
-            f"Missing commands: {len(missing)} command(s) expected more times than emitted:\n"
-            + "\n".join(f"  expected={e} actual={a}: {k[:120]}" for k, (e, a) in sorted(missing.items())[:5])
-        )
-    if extra:
-        errors.append(
-            f"Extra commands: {len(extra)} command(s) emitted more times than expected:\n"
-            + "\n".join(f"  expected={e} actual={a}: {k[:120]}" for k, (e, a) in sorted(extra.items())[:5])
-        )
-
-    if errors:
+    if missing or extra:
         print("ANCHOR SHADOW CHECK FAILED:", file=sys.stderr)
-        for e in errors:
-            print(e, file=sys.stderr)
-        print(f"\nCanonical commands: {sum(canonical.values())}", file=sys.stderr)
-        print(f"Actual shadow commands: {sum(actual.values())}", file=sys.stderr)
+        if missing:
+            print(
+                f"  Missing {len(missing)} command(s) (expected > actual):",
+                file=sys.stderr,
+            )
+            for k, (e, a) in sorted(missing.items())[:5]:
+                print(f"    expected={e} actual={a}: {k[:120]}", file=sys.stderr)
+        if extra:
+            print(
+                f"  Extra {len(extra)} command(s) (actual > expected):",
+                file=sys.stderr,
+            )
+            for k, (e, a) in sorted(extra.items())[:5]:
+                print(f"    expected={e} actual={a}: {k[:120]}", file=sys.stderr)
+        print(
+            f"  Canonical plan total: {sum(canonical.values())}",
+            f"  Anchor path total:    {sum(actual.values())}",
+            sep="\n  ",
+            file=sys.stderr,
+        )
         return False
 
     total = sum(canonical.values())
+    unique = len(canonical)
     print(
-        f"anchor shadow check passed: {total} commands match canonical plan "
-        f"({len(canonical)} unique commands)"
+        f"anchor shadow check passed: {total} commands, {unique} unique — "
+        "anchor path equals canonical plan exactly"
     )
     return True
 
 
 def main() -> None:
-    if not Path(subprocess.run(["which", "pandoc"], capture_output=True).stdout.decode().strip()).exists():
+    if not _pandoc_available():
         print("pandoc not found; skipping anchor shadow check.", file=sys.stderr)
         sys.exit(127)
 
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--shadow-md", type=Path, default=None,
-                        help="Path to pre-built shadow MD (default: rebuild from builder)")
+    parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args()
 
-    ok = check(args.shadow_md)
+    ok = check(verbose=args.verbose)
     sys.exit(0 if ok else 1)
 
 

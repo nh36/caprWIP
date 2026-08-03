@@ -577,8 +577,15 @@ local function ensure_emission_plan_loaded()
       all_occurrence_ids[oid] = emission_id
     end
 
-    -- Store validated entry
-    emission_plan[emission_id] = index_command
+    -- Store validated entry as a complete record (not just the command).
+    -- This lets the anchor handler retain full context for diagnostics and
+    -- future extensions, while still emitting only the precomputed command.
+    emission_plan[emission_id] = {
+      index_command = index_command,
+      emission_path = epath,
+      representative_occurrence_id = rep_occ_id,
+      source_occurrence_ids = occ_ids,
+    }
     for _, oid in ipairs(occ_ids) do
       occurrence_to_emission[oid] = emission_id
     end
@@ -611,12 +618,14 @@ local function anchor_to_index_command(emission_id)
     error("index_verborum_filter.lua: .iv-anchor span has blank emission_id")
   end
   local plan = ensure_emission_plan_loaded()
-  local cmd = plan[emission_id]
-  if cmd == nil then
+  local record = plan[emission_id]
+  if record == nil then
     error("index_verborum_filter.lua: .iv-anchor emission_id '" .. emission_id
           .. "' not found in emission plan (" .. BOOK_EMISSIONS_TSV .. ")")
   end
-  return pandoc.RawInline("latex", cmd)
+  -- Emit the exact precomputed command from the plan. Lua never reconstructs or
+  -- modifies index_command; Python owns the canonical command construction.
+  return pandoc.RawInline("latex", record.index_command)
 end
 
 local function span_is_anchor(span)
