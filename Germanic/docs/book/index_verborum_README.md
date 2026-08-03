@@ -317,8 +317,9 @@ The build includes two complementary parity checks:
    Unknown/duplicate/missing/semantic-mismatch IDs fail.
 
 2. **Command-level (TeX)**: `check_book_draft_tex_indexes.py` proves that every
-   expected heading/line-injected command appears in the generated TeX and that
-   no spurious commands appear.
+   expected plan-driven non-explicit (`heading_injection`/`line_injection`)
+   command appears in generated TeX exactly as emitted by Lua from the
+   canonical plan, and that no spurious commands appear.
 
 ## Current emitter architecture and staged migration
 
@@ -354,17 +355,15 @@ verbatim; it never reconstructs or modifies `index_command`.
 
 ### Staged migration plan
 
-**Stage 1 (current — shadow equivalence proven, production unchanged)**
-- `check_iv_anchor_shadow.py` proves exact raw/anchor emission parity:
-  448 `.iv-anchor` block markers, 1865 commands matching the canonical plan,
-  ordered sequences equal, TeX equal after blank-line normalisation.
-- Production `capr_book_draft_alpha_01.md` uses raw Python commands;
-  no `.iv-anchor` markers appear in the production output.
+**Stage 1 (complete)**
+Shadow-mode `.iv-anchor` infrastructure and strict parity checks were added.
 
-**Stage 2 (deferred)**
-- Switch non-explicit heading and line emissions from raw Python injection
-  to production `.iv-anchor` markers in the assembled Markdown.
-- Single Lua emission path for all non-explicit occurrences.
+**Stage 2 (complete)**
+Production canonical Markdown now contains generated `.iv-anchor` block markers
+for all non-explicit `heading_injection` and `line_injection` emissions.
+`check_iv_anchor_production.py` proves raw-vs-anchor emission-ID trace parity
+and command-sequence parity. Production canonical Markdown no longer carries
+raw non-explicit `\index[iv]{...}` commands.
 
 **Stage 3 (deferred)**
 - Make explicit visible `.iv` spans plan-driven through `occ_id` so Lua no
@@ -376,6 +375,17 @@ verbatim; it never reconstructs or modifies `index_command`.
 
 **Stage 5 (deferred)**
 - Add TeX-level occurrence-ID and emission-ID logging.
+
+At the end of Stage 2:
+- anchors are generated infrastructure, not hand-authored scholarly markup;
+- `book_emissions.tsv` is authoritative for non-explicit command text;
+- Python owns modelling/policy/collapse/representatives/command construction;
+- Lua places the precomputed non-explicit command by `emission_id`;
+- production defaults to anchor-mode assembly;
+- legacy raw mode remains test-only for parity and regression;
+- explicit visible `.iv` spans still run through the legacy semantic path and
+  are not yet plan-driven via `occ_id` (full command-construction unification
+  is deferred to Stage 3).
 - Structured lexical fields, generated lexical headings/metadata, selected
   derivational inputs, explicit `.iv` tags, and curated overrides feed the
   **production** index.

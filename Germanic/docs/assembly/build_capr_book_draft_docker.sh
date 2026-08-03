@@ -59,6 +59,13 @@ else
 fi
 python3 Germanic/tools/check_index_verborum.py
 python3 Germanic/tools/check_book_occ_id_parity.py
+python3 Germanic/tools/index_verborum_emission.py --check
+if command -v pandoc >/dev/null 2>&1; then
+  python3 Germanic/tools/check_iv_anchor_production.py
+else
+  echo "pandoc not found locally; running production anchor checker inside Docker."
+  docker run --rm --platform "${platform}" --entrypoint /bin/sh -v "${repo_root}":/data -w /data "${image}" -c "apk add --no-cache python3 >/dev/null && python3 Germanic/tools/check_iv_anchor_production.py"
+fi
 python3 Germanic/tools/check_bibliography_sanity.py
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
@@ -81,6 +88,10 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
       --metadata-file=${intro_metadata#${repo_root}/} --bibliography=${refs_bib#${repo_root}/} --citeproc \
       --pdf-engine=xelatex -o ${intro_pdf#${repo_root}/}
+    CAPR_IV_PRINT_MAIN_TSV=Germanic/docs/book/index_verborum_print_main.tsv \
+    CAPR_IV_BOOK_EMISSIONS_TSV=Germanic/docs/book/index_verborum_book_emissions.tsv \
+    CAPR_IV_LANGUAGE_REGISTRY_TSV=Germanic/docs/book/index_verborum_languages.tsv \
+    CAPR_IV_VARIETY_REGISTRY_TSV=Germanic/docs/book/index_verborum_varieties.tsv \
     pandoc ${combined_md#${repo_root}/} --standalone --from=markdown+raw_tex+citations --to=latex \
       --top-level-division=chapter --number-sections --table-of-contents --toc-depth=1 \
       --lua-filter=Germanic/tools/paragraph_gloss_validator.lua \

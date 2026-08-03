@@ -2869,8 +2869,10 @@ analogical and exceptional histories must be judged.
 
 ## adder — OE _nǣdre_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naedre@\iventry{nǣdre}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedron@\iventry{*nḗdrōn}{}}
+::: {.iv-anchor emission_id="emit:1c416cf6288bba"}
+:::
+::: {.iv-anchor emission_id="emit:e8a28d4a85b765"}
+:::
 
 Derivation: _\*nḗdrōn_ > _nǣdre_ (regular).
 
@@ -2944,10 +2946,14 @@ consonant of [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexe
 
 ## bake — OE _bacan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bacan@\iventry{bacan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bakana@\iventry{*bákaną}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!backan@\iventry{backan}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!bahhan@\iventry{bahhan}{}}
+::: {.iv-anchor emission_id="emit:b0bd2706481a68"}
+:::
+::: {.iv-anchor emission_id="emit:66b6fac62b9c9a"}
+:::
+::: {.iv-anchor emission_id="emit:76895742e48e41"}
+:::
+::: {.iv-anchor emission_id="emit:a3b91d9b9f5557"}
+:::
 
 Derivation: _\*bákaną_ > _bacan_ (regular).
 
@@ -3010,9 +3016,12 @@ From [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexem
 
 ## beech — OE _bōc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!boc@\iventry{boc}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!boc@\iventry{bōc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!boko@\iventry{*bōkō}{}}
+::: {.iv-anchor emission_id="emit:67f8270ea6ff0f"}
+:::
+::: {.iv-anchor emission_id="emit:1019f11bf2184d"}
+:::
+::: {.iv-anchor emission_id="emit:1d480f4d3695f3"}
+:::
 
 Derivation: _\*bōkō_ > _bōc_ (regular).
 
@@ -3073,8 +3082,10 @@ With nominative input [bōkō]{.recon} 'beech', the development is compact. Nort
 
 ## begin — OE _beġinnan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!beginnan@\iventry{beġinnan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!biginnana@\iventry{*bigínnaną}{}}
+::: {.iv-anchor emission_id="emit:0dbfaa50532ff4"}
+:::
+::: {.iv-anchor emission_id="emit:7c672e1cda4a3a"}
+:::
 
 Derivation: _\*bigínnaną_ > _beġinnan_ (regular).
 
@@ -3141,8 +3152,10 @@ From [bigínnaną]{.iv .recon lang=pgmc sort=biginnana source_ref="Germanic/docs
 
 ## bier — OE _bǣr_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!baer@\iventry{bǣr}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bero@\iventry{*bḗrō}{}}
+::: {.iv-anchor emission_id="emit:8c87750d85844e"}
+:::
+::: {.iv-anchor emission_id="emit:f486895ad9f25a"}
+:::
 
 Derivation: _\*bḗrō_ > _bǣr_ (regular).
 
@@ -3208,11 +3221,16 @@ From [bḗrō]{.iv .recon lang=pgmc sort=bero source_ref="Germanic/docs/lexeme_r
 
 ## birth — OE _byrd_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!byrd@\iventry{byrd}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gebyrd@\iventry{ge-byrd}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gebyrd@\iventry{gebyrd}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gebyrdu@\iventry{gebyrdu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burdiz@\iventry{*búrdiz}{}}
+::: {.iv-anchor emission_id="emit:6151f481db0d75"}
+:::
+::: {.iv-anchor emission_id="emit:2cecb51e9c0475"}
+:::
+::: {.iv-anchor emission_id="emit:4dcd986ae6feed"}
+:::
+::: {.iv-anchor emission_id="emit:1812c6e004295e"}
+:::
+::: {.iv-anchor emission_id="emit:2cc5437408ec8e"}
+:::
 
 Derivation: _\*búrdiz_ > _byrd_ (regular).
 
@@ -3278,8 +3296,10 @@ From [búrdiz]{.recon} ‘birth’, loss of final _z_ gives [búrdi]{.recon} ‘
 
 ## bone — OE _bān_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!ban@\iventry{bān}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baina@\iventry{*báiną}{}}
+::: {.iv-anchor emission_id="emit:07bea379aad673"}
+:::
+::: {.iv-anchor emission_id="emit:23f776363ccd4d"}
+:::
 
 Derivation: _\*báiną_ > _bān_ (regular).
 
@@ -3344,11 +3364,16 @@ West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving [bāną
 
 ## both — OE _bū_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bu@\iventry{bū}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cu@\iventry{cū}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hu@\iventry{hū}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tu@\iventry{tū}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bo@\iventry{*bō}{}}
+::: {.iv-anchor emission_id="emit:bf72410fb9443e"}
+:::
+::: {.iv-anchor emission_id="emit:244cb029219be5"}
+:::
+::: {.iv-anchor emission_id="emit:e18113d98c9f9c"}
+:::
+::: {.iv-anchor emission_id="emit:16bb69132acc23"}
+:::
+::: {.iv-anchor emission_id="emit:e7fbada64ec0ed"}
+:::
 
 Derivation: _\*bō_ > _bū_ (regular).
 
@@ -3447,9 +3472,12 @@ other forms that belong to the same broader lexical history.
 
 ## bow — OE _bīeġan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!biegan@\iventry{bīeġan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bigan@\iventry{bigan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baugijana@\iventry{*báugijaną}{}}
+::: {.iv-anchor emission_id="emit:295d3372301e61"}
+:::
+::: {.iv-anchor emission_id="emit:f0365090b0aa70"}
+:::
+::: {.iv-anchor emission_id="emit:d252b16b8f32f0"}
+:::
 
 Derivation: _\*báugijaną_ > _bīeġan_ (regular).
 
@@ -3516,12 +3544,18 @@ From [báugijaną]{.recon} 'bow', the stem reaches pre-Old-English [bēagjan]{.r
 
 ## breeches — OE _brēċ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{bréc}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{brēc}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brec@\iventry{brēċ}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!broc@\iventry{broc}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!broc@\iventry{brōc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brokiz@\iventry{*brōkiz}{}}
+::: {.iv-anchor emission_id="emit:5e365cb8216e7d"}
+:::
+::: {.iv-anchor emission_id="emit:b12db350b2bd9d"}
+:::
+::: {.iv-anchor emission_id="emit:55b478cd2a4f75"}
+:::
+::: {.iv-anchor emission_id="emit:2aab3aa36f9d0d"}
+:::
+::: {.iv-anchor emission_id="emit:609612e47a0f02"}
+:::
+::: {.iv-anchor emission_id="emit:1a070e67fd6a4f"}
+:::
 
 Derivation: _\*brōkiz_ > _brēċ_ (regular).
 
@@ -3584,9 +3618,12 @@ After loss of final _-z_, the stem ends in _-ki_, so the velar palatalizes and _
 
 ## calf — OE _ċealf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!calfur@\iventry{calfur}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cealf@\iventry{ċealf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kalbaz@\iventry{*kálbaz}{}}
+::: {.iv-anchor emission_id="emit:68455232b1cfd7"}
+:::
+::: {.iv-anchor emission_id="emit:f378afba10b1ca"}
+:::
+::: {.iv-anchor emission_id="emit:77096b76447c06"}
+:::
 
 Derivation: _\*kálbaz_ > _ċealf_ (regular).
 
@@ -3651,9 +3688,12 @@ After loss of final _-z_ and bare _-a_, Anglo-Frisian brightening gives [kælb]{
 
 ## corn — OE _corn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!corn@\iventry{corn}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cornes@\iventry{cornes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kurna@\iventry{*kúrną}{}}
+::: {.iv-anchor emission_id="emit:814acf88db7b14"}
+:::
+::: {.iv-anchor emission_id="emit:dcc574e4765caa"}
+:::
+::: {.iv-anchor emission_id="emit:d07d632000b536"}
+:::
 
 Derivation: _\*kúrną_ > _corn_ (regular).
 
@@ -3714,11 +3754,16 @@ With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]
 
 ## deed — OE _dǣd_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!daed@\iventry{dæd}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!daed@\iventry{dǣd}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!ded~04@\iventry{dēd}{Angl.}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dediz@\iventry{*dēdiz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dediz@\iventry{*dḗdiz}{}}
+::: {.iv-anchor emission_id="emit:007800708d1eef"}
+:::
+::: {.iv-anchor emission_id="emit:51e292a0154aac"}
+:::
+::: {.iv-anchor emission_id="emit:fc76e9c2c4d7aa"}
+:::
+::: {.iv-anchor emission_id="emit:4378e5faee2f46"}
+:::
+::: {.iv-anchor emission_id="emit:a185b99c5a193c"}
+:::
 
 Derivation: _\*dḗdiz_ > _dǣd_ (regular).
 
@@ -3780,10 +3825,14 @@ From inherited [dēdiz]{.recon} 'deed', loss of final _-z_ and the West Saxon lo
 
 ## door — OE _dor_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!dor@\iventry{dor}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!dura@\iventry{*dúrą}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!tura@\iventry{tura}{}}
-\index[iv]{10ofris@\ivlangheader{Old Frisian}{}!dore@\iventry{dore}{}}
+::: {.iv-anchor emission_id="emit:d66c84d35e67f3"}
+:::
+::: {.iv-anchor emission_id="emit:107c1f923d67ed"}
+:::
+::: {.iv-anchor emission_id="emit:2652de557d5327"}
+:::
+::: {.iv-anchor emission_id="emit:d23f786f11a74f"}
+:::
 
 Derivation: _\*dúrą_ > _dor_ (regular).
 
@@ -3844,10 +3893,14 @@ From [dúrą]{.recon} ‘door’, Northwest Germanic u-lowering gives [dórą]{.
 
 ## fare — OE _faran_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!faeran@\iventry{færan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!faran@\iventry{faran}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farana@\iventry{*fáraną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!faranan@\iventry{*faranan}{}}
+::: {.iv-anchor emission_id="emit:b28f98ef19a71e"}
+:::
+::: {.iv-anchor emission_id="emit:c056ae072100af"}
+:::
+::: {.iv-anchor emission_id="emit:bcf39bb6858275"}
+:::
+::: {.iv-anchor emission_id="emit:983fbf324e5c11"}
+:::
 
 Derivation: _\*fáraną_ > _faran_ (regular).
 
@@ -3910,12 +3963,18 @@ From [fáraną]{.recon} ‘fare’, Anglo-Frisian brightening first gives [færa
 
 ## fell — OE _fell_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fel@\iventry{fel}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fell@\iventry{fell}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fellan@\iventry{fellan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fellum@\iventry{fellum}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feoll@\iventry{feoll}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fella@\iventry{*féllą}{}}
+::: {.iv-anchor emission_id="emit:34956b2e8fc2a4"}
+:::
+::: {.iv-anchor emission_id="emit:c28133c61038a2"}
+:::
+::: {.iv-anchor emission_id="emit:5bb5861fa26b67"}
+:::
+::: {.iv-anchor emission_id="emit:34890479bb5384"}
+:::
+::: {.iv-anchor emission_id="emit:ee5335ca31e582"}
+:::
+::: {.iv-anchor emission_id="emit:c6721c64e296b3"}
+:::
 
 Derivation: _\*féllą_ > _fell_ (regular).
 
@@ -3974,12 +4033,18 @@ With [féllą]{.recon} ‘fell’, no special earlier reshaping is needed: heavy
 
 ## fern — OE _fearn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearn@\iventry{fearn}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearna@\iventry{fearna}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearne@\iventry{fearne}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fearnes@\iventry{fearnes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farnan@\iventry{*farnan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!farnaz@\iventry{*fárnaz}{}}
+::: {.iv-anchor emission_id="emit:79b5fa7b698833"}
+:::
+::: {.iv-anchor emission_id="emit:39818570d1e4fe"}
+:::
+::: {.iv-anchor emission_id="emit:46735bc07422a3"}
+:::
+::: {.iv-anchor emission_id="emit:faf01d071abf7b"}
+:::
+::: {.iv-anchor emission_id="emit:223a0cac25dab9"}
+:::
+::: {.iv-anchor emission_id="emit:0ab09060f932c9"}
+:::
 
 Derivation: _\*fárnaz_ > _fearn_ (regular).
 
@@ -4042,10 +4107,14 @@ From [fárnaz]{.recon} ‘fern’, loss of final _-z_ and final _-a_ gives [fár
 
 ## field — OE _feld_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feld@\iventry{feld}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!felda@\iventry{felda}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!felde@\iventry{felde}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!felthuz@\iventry{*félθuz}{}}
+::: {.iv-anchor emission_id="emit:41f71fc3a944c5"}
+:::
+::: {.iv-anchor emission_id="emit:bed76c77969914"}
+:::
+::: {.iv-anchor emission_id="emit:f6206b99d1431e"}
+:::
+::: {.iv-anchor emission_id="emit:bb76b6edcb7486"}
+:::
 
 Derivation: _\*félθuz_ > _feld_ (regular).
 
@@ -4108,11 +4177,16 @@ In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and hig
 
 ## fly — OE _flēogan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flegan~04@\iventry{flégan}{Angl.}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleogan@\iventry{fléogan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleogan@\iventry{flēogan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fleoged@\iventry{fleogeð}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fleugana@\iventry{*fléuganą}{}}
+::: {.iv-anchor emission_id="emit:62602f02ab7cf5"}
+:::
+::: {.iv-anchor emission_id="emit:90c44a421cac52"}
+:::
+::: {.iv-anchor emission_id="emit:0847f80af31e8a"}
+:::
+::: {.iv-anchor emission_id="emit:2faf2f261c1c24"}
+:::
+::: {.iv-anchor emission_id="emit:705a812155b994"}
+:::
 
 Derivation: _\*fléuganą_ > _flēogan_ (regular).
 
@@ -4178,14 +4252,22 @@ From [fléuganą]{.recon} ‘fly’, Old English diphthong leveling gives [flēo
 
 ## forlorn — OE _lēosan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forleosan@\iventry{for-leósan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forleosan@\iventry{for-lēosan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forleosan@\iventry{forlēosan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forloren@\iventry{forloren}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forlorn@\iventry{forlorn}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!leosan@\iventry{lēosan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leusana@\iventry{*léusaną}{}}
-\index[iv]{11goth@\ivlangheader{Gothic}{}!fraliusan@\iventry{fra-liusan}{}}
+::: {.iv-anchor emission_id="emit:b8a540d5c51b18"}
+:::
+::: {.iv-anchor emission_id="emit:012f0490b8fb69"}
+:::
+::: {.iv-anchor emission_id="emit:ad8424e9c6b299"}
+:::
+::: {.iv-anchor emission_id="emit:ae56cff5caa5bc"}
+:::
+::: {.iv-anchor emission_id="emit:b233346d407333"}
+:::
+::: {.iv-anchor emission_id="emit:bd197f7c5dd246"}
+:::
+::: {.iv-anchor emission_id="emit:8c876a6e117c1a"}
+:::
+::: {.iv-anchor emission_id="emit:3a5098feaad8cb"}
+:::
 
 Derivation: _\*léusaną_ > _lēosan_ (regular).
 
@@ -4251,11 +4333,16 @@ From [léusaną]{.recon} 'lose', Old English diphthong leveling gives [lēosaną
 
 ## gang — OE _gang_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gang@\iventry{gang}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gangan@\iventry{gangan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gangaz@\iventry{*gangaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gangaz@\iventry{*gángaz}{}}
-\index[iv]{08on@\ivlangheader{Old Norse}{}!gangr@\iventry{gangr}{}}
+::: {.iv-anchor emission_id="emit:279a0bc0cec826"}
+:::
+::: {.iv-anchor emission_id="emit:b2101afb156340"}
+:::
+::: {.iv-anchor emission_id="emit:d967ce7aae7a58"}
+:::
+::: {.iv-anchor emission_id="emit:0ef897b73b5686"}
+:::
+::: {.iv-anchor emission_id="emit:845551bdda3b3f"}
+:::
 
 Derivation: _\*gángaz_ > _gang_ (regular).
 
@@ -4320,12 +4407,18 @@ From [gángaz]{.recon} ‘gang’, loss of final _-z_ gives [gánga]{.recon} ‘
 
 ## give — OE _ġiefan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forgeofan~05@\iventry{for-geofan}{Merc.}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!forgeofan@\iventry{for-geofan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geafa~06@\iventry{geafa}{North.}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geafa@\iventry{geafa}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!giefan@\iventry{ġiefan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gebana@\iventry{*gébaną}{}}
+::: {.iv-anchor emission_id="emit:9e2bacb9c75d67"}
+:::
+::: {.iv-anchor emission_id="emit:fd1d4c6295bb02"}
+:::
+::: {.iv-anchor emission_id="emit:fc9f6427981a01"}
+:::
+::: {.iv-anchor emission_id="emit:0ebaf361523ee0"}
+:::
+::: {.iv-anchor emission_id="emit:077e674334cd21"}
+:::
+::: {.iv-anchor emission_id="emit:cf120b1aaf8458"}
+:::
 
 Derivation: _\*gébaną_ > _ġiefan_ (regular).
 
@@ -4393,8 +4486,10 @@ From [gébaną]{.recon} ‘give’, initial _g_ palatalizes before _e_; West Sax
 
 ## gold — OE _gold_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gold@\iventry{gold}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gultha@\iventry{*gúlθą}{}}
+::: {.iv-anchor emission_id="emit:d397ccf13e75d5"}
+:::
+::: {.iv-anchor emission_id="emit:3e4ebbb9df5a94"}
+:::
 
 Derivation: _\*gúlθą_ > _gold_ (regular).
 
@@ -4461,11 +4556,16 @@ From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gú
 
 ## grave — OE _grafan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!graef@\iventry{græf}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!graefd@\iventry{græfð}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!graefen@\iventry{græfen}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!grafan@\iventry{grafan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!grabana@\iventry{*grábaną}{}}
+::: {.iv-anchor emission_id="emit:66b310ffb0ce25"}
+:::
+::: {.iv-anchor emission_id="emit:04e92f1bd41b59"}
+:::
+::: {.iv-anchor emission_id="emit:8f9a3cc49f4dbe"}
+:::
+::: {.iv-anchor emission_id="emit:4c4640275eaf25"}
+:::
+::: {.iv-anchor emission_id="emit:a36842044aa59f"}
+:::
 
 Derivation: _\*grábaną_ > _grafan_ (regular).
 
@@ -4533,8 +4633,10 @@ Noun _græf_ 'grave' and verbal forms such as _græfð_ 'graves' or past partici
 
 ## guest — OE _ġiest_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!giest@\iventry{ġiest}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gastiz@\iventry{*gástiz}{}}
+::: {.iv-anchor emission_id="emit:dcd33a2b2e26a3"}
+:::
+::: {.iv-anchor emission_id="emit:3b85c3b1da29b1"}
+:::
 
 Derivation: _\*gástiz_ > _ġiest_ (regular).
 
@@ -4603,8 +4705,10 @@ West Saxon _ġiest_ 'guest' is the Old English form here. Anglian _gest_ 'guest'
 
 ## hair — OE _hǣr_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!haer@\iventry{hǣr}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xera@\iventry{*xḗrą}{}}
+::: {.iv-anchor emission_id="emit:eaf90c4f986009"}
+:::
+::: {.iv-anchor emission_id="emit:dc8ee6b63b8969"}
+:::
 
 Derivation: _\*xḗrą_ > _hǣr_ (regular).
 
@@ -4670,8 +4774,10 @@ Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, a
 
 ## harvest — OE _hierfest_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hierfest@\iventry{hierfest}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xarbistuz@\iventry{*xárbistuz}{}}
+::: {.iv-anchor emission_id="emit:69f87fff85aa77"}
+:::
+::: {.iv-anchor emission_id="emit:01245db1ed1cce"}
+:::
 
 Derivation: _\*xárbistuz_ > _hierfest_ (regular).
 
@@ -4742,8 +4848,10 @@ The Old English form here, _hierfest_, represents the regular native West Saxon 
 
 ## hedge — OE _heġġ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hegg@\iventry{heġġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xagjaz@\iventry{*xágjaz}{}}
+::: {.iv-anchor emission_id="emit:3135764073bcc6"}
+:::
+::: {.iv-anchor emission_id="emit:bda7408c4bd8ea"}
+:::
 
 Derivation: _\*xágjaz_ > _heġġ_ (regular).
 
@@ -4815,8 +4923,10 @@ Standard dictionary spelling is _heċġ_ 'hedge' or _hecg_ 'hedge'. Normalized _
 
 ## helm — OE _helm_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!helm@\iventry{helm}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xelmaz@\iventry{*xélmaz}{}}
+::: {.iv-anchor emission_id="emit:63ed1628e886fa"}
+:::
+::: {.iv-anchor emission_id="emit:c36e6ac92b6b9f"}
+:::
 
 Derivation: _\*xélmaz_ > _helm_ (regular).
 
@@ -4882,8 +4992,10 @@ Comparative _\*helma-_ is headword notation for the helmet cognate set. It shoul
 
 ## help — OE _helpan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!helpan@\iventry{helpan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xelpana@\iventry{*xélpaną}{}}
+::: {.iv-anchor emission_id="emit:e073d3a8033a9e"}
+:::
+::: {.iv-anchor emission_id="emit:67c3bbac2de47c"}
+:::
 
 Derivation: _\*xélpaną_ > _helpan_ (regular).
 
@@ -4949,8 +5061,10 @@ Noun [_help_]{.iv lang=oe sort=help role=comparison_form source_ref="Germanic/do
 
 ## hind — OE _hind_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hind@\iventry{hind}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xendjo@\iventry{*xéndjō}{}}
+::: {.iv-anchor emission_id="emit:c43ff61ce55b13"}
+:::
+::: {.iv-anchor emission_id="emit:5eb869ccd25f0a"}
+:::
 
 Derivation: _\*xéndjō_ > _hind_ (regular).
 
@@ -5018,8 +5132,10 @@ _hindan_ 'from behind, behind' is a different Old English lexeme and does not be
 
 ## hold — OE _healdan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!healdan@\iventry{healdan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xaldana@\iventry{*xáldaną}{}}
+::: {.iv-anchor emission_id="emit:23c9fb50e7a0f5"}
+:::
+::: {.iv-anchor emission_id="emit:ab6a7168427932"}
+:::
 
 Derivation: _\*xáldaną_ > _healdan_ (regular).
 
@@ -5087,8 +5203,10 @@ West Saxon [_healdan_]{.iv lang=oe sort=healdan role=comparison_form source_ref=
 
 ## horn — OE _horn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!horn@\iventry{horn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xurna@\iventry{*xúrną}{}}
+::: {.iv-anchor emission_id="emit:75c9109a91beac"}
+:::
+::: {.iv-anchor emission_id="emit:49345039e0c41d"}
+:::
 
 Derivation: _\*xúrną_ > _horn_ (regular).
 
@@ -5153,8 +5271,10 @@ The note's oblique [xurnăn]{.recon} 'horn' belongs to comparative stem backgrou
 
 ## lead — OE _lǣdan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!laedan@\iventry{lǣdan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laidijana@\iventry{*láidijaną}{}}
+::: {.iv-anchor emission_id="emit:f323d0ee2ad8b8"}
+:::
+::: {.iv-anchor emission_id="emit:d89fe407d197bf"}
+:::
 
 Derivation: _\*láidijaną_ > _lǣdan_ (regular).
 
@@ -5220,9 +5340,12 @@ From [láidijaną]{.recon} ‘lead’, monophthongization of _\*ai_ first gives 
 
 ## learn — OE _liornian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!leornian@\iventry{leornian}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liornian@\iventry{liornian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*líznōjaną}{}}
+::: {.iv-anchor emission_id="emit:4318761d5a8805"}
+:::
+::: {.iv-anchor emission_id="emit:43466180106189"}
+:::
+::: {.iv-anchor emission_id="emit:5ba7883b55c37f"}
+:::
 
 Derivation: _\*líznōjaną_ > _liornian_ (regular).
 
@@ -5318,9 +5441,12 @@ modeled here from the better-known West Saxon headword.
 
 ## lid — OE _hlid_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlid@\iventry{hlid}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlida@\iventry{*xlídą}{}}
-\index[iv]{08on@\ivlangheader{Old Norse}{}!hlitho@\iventry{hliþó}{}}
+::: {.iv-anchor emission_id="emit:e1c1caddc1096d"}
+:::
+::: {.iv-anchor emission_id="emit:829423a45fc5e1"}
+:::
+::: {.iv-anchor emission_id="emit:4659c0bfb550e7"}
+:::
 
 Derivation: _\*xlídą_ > _hlid_ (regular).
 
@@ -5383,8 +5509,10 @@ An earlier etymological stage [liþuz]{.recon} ‘lid’ belongs to comparative 
 
 ## light — OE _līehtan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liehtan@\iventry{līehtan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!leuxtijana@\iventry{*léuxtijaną}{}}
+::: {.iv-anchor emission_id="emit:f645211dd8fe4a"}
+:::
+::: {.iv-anchor emission_id="emit:54ebb4e8f68b70"}
+:::
 
 Derivation: _\*léuxtijaną_ > _līehtan_ (regular).
 
@@ -5453,8 +5581,10 @@ Ringe and Taylor and Campbell distinguish West Saxon [_liehtan_]{.iv lang=oe sor
 
 ## linden — OE _lind_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lind@\iventry{lind}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lindo@\iventry{*líndō}{}}
+::: {.iv-anchor emission_id="emit:6af15a13a97525"}
+:::
+::: {.iv-anchor emission_id="emit:e9d029554eea92"}
+:::
 
 Derivation: _\*líndō_ > _lind_ (regular).
 
@@ -5519,8 +5649,10 @@ The Old English noun represented here is [_lind_]{.iv lang=oe sort=lind role=com
 
 ## milk — OE _meoloc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!meoloc@\iventry{meoloc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!melukz@\iventry{*mélukz}{}}
+::: {.iv-anchor emission_id="emit:0444bead4a6fc2"}
+:::
+::: {.iv-anchor emission_id="emit:d9ee549e3447ce"}
+:::
 
 Derivation: _\*mélukz_ > _meoloc_ (regular).
 
@@ -5586,8 +5718,10 @@ Syncopated _meolc_ and Anglian _milc_ belong to the competing leveled tradition 
 
 ## mother — OE _mōder_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!moder@\iventry{mōder}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!moder@\iventry{*mōdēr}{}}
+::: {.iv-anchor emission_id="emit:1941c21b8c1dd4"}
+:::
+::: {.iv-anchor emission_id="emit:5e094d97b08366"}
+:::
 
 Derivation: _\*mōdēr_ > _mōder_ (regular).
 
@@ -5653,8 +5787,10 @@ The note therefore concerns inherited vocalism rather than a different lexeme: _
 
 ## net — OE _nett_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nett@\iventry{nett}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!natja@\iventry{*nátją}{}}
+::: {.iv-anchor emission_id="emit:21d76f37b4154a"}
+:::
+::: {.iv-anchor emission_id="emit:44af52ee69c0ff"}
+:::
 
 Derivation: _\*nátją_ > _nett_ (regular).
 
@@ -5722,8 +5858,10 @@ Spellings in _net_ can therefore be graphic simplifications, but the lexical tar
 
 ## nightmare — OE _mare_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!mare@\iventry{mare}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!maron@\iventry{*márōn}{}}
+::: {.iv-anchor emission_id="emit:211988d539664f"}
+:::
+::: {.iv-anchor emission_id="emit:e590a82aec8c40"}
+:::
 
 Derivation: _\*márōn_ > _mare_ (regular).
 
@@ -5791,9 +5929,12 @@ The concept corresponds to an unattested compound [nihtmare]{.recon} ‘nightmar
 
 ## coat — OE _rocc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rocc@\iventry{rocc}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stanrocc@\iventry{stānrocc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rukkaz@\iventry{*rúkkaz}{}}
+::: {.iv-anchor emission_id="emit:4433d34b1d8b3f"}
+:::
+::: {.iv-anchor emission_id="emit:e1a2a594a547fc"}
+:::
+::: {.iv-anchor emission_id="emit:2353ad93c5f555"}
+:::
 
 Derivation: _\*rúkkaz_ > _rocc_ (regular).
 
@@ -5859,8 +6000,10 @@ This entry concerns the garment noun only. The stone word seen in _stānrocc_ 's
 
 ## sheep — OE _sċēap_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceap@\iventry{sċēap}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skepa@\iventry{*skḗpą}{}}
+::: {.iv-anchor emission_id="emit:5324fd4255cdf4"}
+:::
+::: {.iv-anchor emission_id="emit:14d9d0c1b7a355"}
+:::
 
 Derivation: _\*skḗpą_ > _sċēap_ (regular).
 
@@ -5927,8 +6070,10 @@ Ringe and Taylor contrast West Saxon _scéap_ 'sheep' with Mercian and Kentish _
 
 ## shilling — OE _sċilling_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!scilling@\iventry{sċilling}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skillingaz@\iventry{*skíllingaz}{}}
+::: {.iv-anchor emission_id="emit:5073eef67f4eb9"}
+:::
+::: {.iv-anchor emission_id="emit:f93afcada1258d"}
+:::
 
 Derivation: _\*skíllingaz_ > _sċilling_ (regular).
 
@@ -5996,8 +6141,10 @@ Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-lin
 
 ## show — OE _sċēawian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawian@\iventry{sċēawian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawojana@\iventry{*skáwōjaną}{}}
+::: {.iv-anchor emission_id="emit:0a5a5f62b41266"}
+:::
+::: {.iv-anchor emission_id="emit:5b0429a1954dbe"}
+:::
 
 Derivation: _\*skáwōjaną_ > _sċēawian_ (regular).
 
@@ -6068,8 +6215,10 @@ The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_f
 
 ## sleep — OE _slǣpan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!slaepan@\iventry{slǣpan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!slepana@\iventry{*slḗpaną}{}}
+::: {.iv-anchor emission_id="emit:162a5a40b89ba2"}
+:::
+::: {.iv-anchor emission_id="emit:d2512fafe5e658"}
+:::
 
 Derivation: _\*slḗpaną_ > _slǣpan_ (regular).
 
@@ -6136,8 +6285,10 @@ The note concerns lemma type rather than a special derivational problem: this ro
 
 ## smear — OE _smierwan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!smierwan@\iventry{smierwan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!smerwijana@\iventry{*smérwijaną}{}}
+::: {.iv-anchor emission_id="emit:f1f0448b724a57"}
+:::
+::: {.iv-anchor emission_id="emit:00d9827d98733f"}
+:::
 
 Derivation: _\*smérwijaną_ > _smierwan_ (regular).
 
@@ -6206,8 +6357,10 @@ The entry therefore represents the West Saxon member of a broader OE family: [_s
 
 ## span — OE _spannan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spannan@\iventry{spannan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spannana@\iventry{*spánnaną}{}}
+::: {.iv-anchor emission_id="emit:b8c16da7abdf8e"}
+:::
+::: {.iv-anchor emission_id="emit:7916f8285eb5ca"}
+:::
 
 Derivation: _\*spánnaną_ > _spannan_ (regular).
 
@@ -6272,8 +6425,10 @@ English _span_ can also reach the noun _spann_ in local lookup material. The for
 
 ## spar — OE _spearra_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spearra@\iventry{spearra}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparro@\iventry{*spárrô}{}}
+::: {.iv-anchor emission_id="emit:3c4dcdb3705e1e"}
+:::
+::: {.iv-anchor emission_id="emit:9ce8e682e41bb4"}
+:::
 
 Derivation: _\*spárrô_ > _spearra_ (regular).
 
@@ -6338,9 +6493,12 @@ This entry concerns the noun [_spearra_]{.iv lang=oe sort=spearra role=compariso
 
 ## still — OE _stillan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stillan@\iventry{stillan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stellijana@\iventry{*stéllijaną}{}}
-\index[iv]{16german@\ivlangheader{German}{}!stillen@\iventry{stillen}{}}
+::: {.iv-anchor emission_id="emit:d033c75e1f5ec4"}
+:::
+::: {.iv-anchor emission_id="emit:da528e8636c6f1"}
+:::
+::: {.iv-anchor emission_id="emit:785f60e01ca803"}
+:::
 
 Derivation: _\*stéllijaną_ > _stillan_ (regular).
 
@@ -6408,8 +6566,10 @@ The note concerns lexical framing rather than sound law: _stillan_ is the verb r
 
 ## summer — OE _sumer_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sumer@\iventry{sumer}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sumaraz@\iventry{*súmaraz}{}}
+::: {.iv-anchor emission_id="emit:a994f255e957b4"}
+:::
+::: {.iv-anchor emission_id="emit:48ef83e003c388"}
+:::
 
 Derivation: _\*súmaraz_ > _sumer_ (regular).
 
@@ -6476,8 +6636,10 @@ The entry does not deny [_sumor_]{.iv lang=oe sort=sumor role=comparison_form so
 
 ## sunder — OE _sundrian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sundrian@\iventry{sundrian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sundrojana@\iventry{*súndrōjaną}{}}
+::: {.iv-anchor emission_id="emit:2e67312fdb913f"}
+:::
+::: {.iv-anchor emission_id="emit:25030285be1fa3"}
+:::
 
 Derivation: _\*súndrōjaną_ > _sundrian_ (regular).
 
@@ -6548,8 +6710,10 @@ The earlier confusion was lexical, not phonological: [_sundor_]{.iv lang=oe sort
 
 ## swallow — OE _swealwe_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swealwe@\iventry{swealwe}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swalwon@\iventry{*swálwōn}{}}
+::: {.iv-anchor emission_id="emit:cd034510b35edb"}
+:::
+::: {.iv-anchor emission_id="emit:b76b9b523decd8"}
+:::
 
 Derivation: _\*swálwōn_ > _swealwe_ (regular).
 
@@ -6613,8 +6777,10 @@ From [swálwōn]{.recon} ‘swallow’, brightening yields _\*swælw-_, and brea
 
 ## swine — OE _swīn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swin@\iventry{swīn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swina@\iventry{*swī́ną}{}}
+::: {.iv-anchor emission_id="emit:7e9ef3eb946711"}
+:::
+::: {.iv-anchor emission_id="emit:028eb5d84ebd40"}
+:::
 
 Derivation: citation reconstruction _\*swī́ną_; form followed here _\*swī́ną_ > _swīn_ (regular).
 
@@ -6677,9 +6843,12 @@ The derivational input writes stressed long _ī_ as _\*ī́_, so comparative [sw
 
 ## think — OE _þenċan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hycgan@\iventry{hycgan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thencan@\iventry{þenċan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thankijana@\iventry{*θánkijaną}{}}
+::: {.iv-anchor emission_id="emit:16a09e37cf5a78"}
+:::
+::: {.iv-anchor emission_id="emit:91fa6eed971f9f"}
+:::
+::: {.iv-anchor emission_id="emit:03b3bd154c903a"}
+:::
 
 Derivation: _\*θánkijaną_ > _þenċan_ (regular).
 
@@ -6748,8 +6917,10 @@ Campbell's assibilation discussion uses the same verb _þencan_ 'think'; the cla
 
 ## thorn — OE _þorn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thorn@\iventry{þorn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thurnaz@\iventry{*θúrnaz}{}}
+::: {.iv-anchor emission_id="emit:b47522cdd4d6a3"}
+:::
+::: {.iv-anchor emission_id="emit:a7bd24cdb7b903"}
+:::
 
 Derivation: _\*θúrnaz_ > _þorn_ (regular).
 
@@ -6815,9 +6986,12 @@ The comparative sources preserve more than one stem formation, but the Old Engli
 
 ## tide — OE _tīd_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tid@\iventry{tīd}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tidan@\iventry{tīdan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tidiz@\iventry{*tī́diz}{}}
+::: {.iv-anchor emission_id="emit:99e64ce15c586e"}
+:::
+::: {.iv-anchor emission_id="emit:ceb41f1ed2110f"}
+:::
+::: {.iv-anchor emission_id="emit:58f0372eeab4b4"}
+:::
 
 Derivation: citation reconstruction _\*tī́diz_; form followed here _\*tī́diz_ > _tīd_ (regular).
 
@@ -6882,8 +7056,10 @@ English *tide* can also lead to the separate weak verb _tīdan_ 'happen'; the no
 
 ## token — OE _tācn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tacn@\iventry{tācn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!taikna@\iventry{*táikną}{}}
+::: {.iv-anchor emission_id="emit:b8a59b08156cc3"}
+:::
+::: {.iv-anchor emission_id="emit:428ad2174da05f"}
+:::
 
 Derivation: _\*táikną_ > _tācn_ (regular).
 
@@ -6948,8 +7124,10 @@ _tācn_ 'token' is the attested unbroken citation form selected here. Later West
 
 ## town — OE _tūn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tun@\iventry{tūn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tuna@\iventry{*tūną}{}}
+::: {.iv-anchor emission_id="emit:d655964e40c43a"}
+:::
+::: {.iv-anchor emission_id="emit:808d631480ab74"}
+:::
 
 Derivation: _\*tūną_ > _tūn_ (regular).
 
@@ -7012,8 +7190,10 @@ The comparative headwords vary, but the Old English target here is the direct ci
 
 ## wade — OE _wadan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wadan@\iventry{wadan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wadana@\iventry{*wádaną}{}}
+::: {.iv-anchor emission_id="emit:bb3e9da01f408b"}
+:::
+::: {.iv-anchor emission_id="emit:edc5c94826b19c"}
+:::
 
 Derivation: _\*wádaną_ > _wadan_ (regular).
 
@@ -7080,8 +7260,10 @@ The infinitive belongs to the A-restoration class. The citation form is therefor
 
 ## warp — OE _weorpan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weorpan@\iventry{weorpan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!werpana@\iventry{*wérpaną}{}}
+::: {.iv-anchor emission_id="emit:fba4ee5f212e78"}
+:::
+::: {.iv-anchor emission_id="emit:bc7222198ef402"}
+:::
 
 Derivation: _\*wérpaną_ > _weorpan_ (regular).
 
@@ -7147,8 +7329,10 @@ English *warp* also points to related _wearp_ material. The target is the infini
 
 ## wash — OE _wascan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wascan@\iventry{wascan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waskana@\iventry{*wáskaną}{}}
+::: {.iv-anchor emission_id="emit:5fbb2702a06f5b"}
+:::
+::: {.iv-anchor emission_id="emit:85b5dc8755204a"}
+:::
 
 Derivation: _\*wáskaną_ > _wascan_ (regular).
 
@@ -7215,8 +7399,10 @@ The conservative citation form _wascan_ 'wash' is selected here. Spellings such 
 
 ## wax — OE _weaxan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weaxan@\iventry{weaxan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waxsana@\iventry{*wáxsaną}{}}
+::: {.iv-anchor emission_id="emit:9738115dd04b80"}
+:::
+::: {.iv-anchor emission_id="emit:6fa4fc896812a1"}
+:::
 
 Derivation: _\*wáxsaną_ > _weaxan_ (regular).
 
@@ -7284,8 +7470,10 @@ The target here is the infinitive _weaxan_ 'wax'. Noun _weax_ 'wax' and preterit
 
 ## way — OE _weġ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weg@\iventry{weġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wegaz@\iventry{*wégaz}{}}
+::: {.iv-anchor emission_id="emit:f4fb84b16a578d"}
+:::
+::: {.iv-anchor emission_id="emit:b7674ef71092bf"}
+:::
 
 Derivation: _\*wégaz_ > _weġ_ (regular).
 
@@ -7351,8 +7539,10 @@ Normalized _weġ_ 'way' and dictionary _weg_ 'way' represent the same noun. No O
 
 ## weapon — OE _wǣpn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waepn@\iventry{wǣpn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wepna@\iventry{*wḗpną}{}}
+::: {.iv-anchor emission_id="emit:9816a24c97e03f"}
+:::
+::: {.iv-anchor emission_id="emit:44f1837aa39de3"}
+:::
 
 Derivation: _\*wḗpną_ > _wǣpn_ (regular).
 
@@ -7426,8 +7616,10 @@ remains the regular unbroken oblique comparator
 
 ## will — OE _willa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!willa@\iventry{willa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!weljo@\iventry{*wéljô}{}}
+::: {.iv-anchor emission_id="emit:15204926b625b7"}
+:::
+::: {.iv-anchor emission_id="emit:fc478134010119"}
+:::
 
 Derivation: _\*wéljô_ > _willa_ (regular).
 
@@ -7494,8 +7686,10 @@ The target here is the noun _willa_ 'will, wish'. Related verb [_willan_]{.iv la
 
 ## wind — OE _windan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!windan@\iventry{windan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!windana@\iventry{*wíndaną}{}}
+::: {.iv-anchor emission_id="emit:43d4209b78900f"}
+:::
+::: {.iv-anchor emission_id="emit:febafe510515ec"}
+:::
 
 Derivation: _\*wíndaną_ > _windan_ (regular).
 
@@ -7560,8 +7754,10 @@ English *wind* also names the noun. This row represents the class-III verb, not 
 
 ## wold — OE _weald_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weald@\iventry{weald}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!walthuz@\iventry{*wálθuz}{}}
+::: {.iv-anchor emission_id="emit:57cc6bc2913d0b"}
+:::
+::: {.iv-anchor emission_id="emit:c87aedf2e136ab"}
+:::
 
 Derivation: _\*wálθuz_ > _weald_ (regular).
 
@@ -7630,8 +7826,10 @@ _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking 
 
 ## yarn — OE _ġearn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gearn@\iventry{ġearn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!garna@\iventry{*gárną}{}}
+::: {.iv-anchor emission_id="emit:ffff1dab991d58"}
+:::
+::: {.iv-anchor emission_id="emit:05794f07a294c5"}
+:::
 
 Derivation: _\*gárną_ > _ġearn_ (regular).
 
@@ -7705,10 +7903,14 @@ away.
 
 ## cud — OE _cwedu_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cwedu@\iventry{cwedu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kwedu2@\iventry{*kwedu-2}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kweduz@\iventry{*kwéðuz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kwithuz@\iventry{*kwíθuz}{}}
+::: {.iv-anchor emission_id="emit:e5fb5ce10e953f"}
+:::
+::: {.iv-anchor emission_id="emit:c5f8bd1402f229"}
+:::
+::: {.iv-anchor emission_id="emit:a7e4158eb31a21"}
+:::
+::: {.iv-anchor emission_id="emit:69be4706e811ea"}
+:::
 
 Derivation: citation reconstruction _\*kwíθuz_; form followed here _\*kwéðuz_ > _cwedu_ (attested variant).
 
@@ -7792,8 +7994,10 @@ input.
 
 ## ten — OE _tēon_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!teon@\iventry{tēon}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!texun@\iventry{*téxun}{}}
+::: {.iv-anchor emission_id="emit:8a1af161628c30"}
+:::
+::: {.iv-anchor emission_id="emit:397e11be6109c8"}
+:::
 
 Derivation: _\*téxun_ > _tēon_ (attested variant).
 
@@ -7877,8 +8081,10 @@ from the attested simplex variants.
 
 ## three — OE _þrīe_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thrie@\iventry{þrīe}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!threjez@\iventry{*θréjez}{}}
+::: {.iv-anchor emission_id="emit:9baadfc7373f99"}
+:::
+::: {.iv-anchor emission_id="emit:ef1804bc16b26b"}
+:::
 
 Derivation: _\*θréjez_ > _þrīe_ (attested variant).
 
@@ -7969,8 +8175,10 @@ the later reduced form and from the rest of the numeral paradigm.
 
 ## wasp — OE _wæfs_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waefs@\iventry{wæfs}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wabsaz@\iventry{*wábsaz}{}}
+::: {.iv-anchor emission_id="emit:d5d9ca9d1af9cb"}
+:::
+::: {.iv-anchor emission_id="emit:bf7d9c61dd7cd2"}
+:::
 
 Derivation: _\*wábsaz_ > _wæfs_ (attested variant).
 
@@ -8076,9 +8284,12 @@ the successful output.
 
 ## bottom — OE _botm_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!botm@\iventry{botm}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!budmaz@\iventry{*búdmaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!buttmaz@\iventry{*búttmaz}{}}
+::: {.iv-anchor emission_id="emit:24fd9e306f85e1"}
+:::
+::: {.iv-anchor emission_id="emit:6c517200fcb125"}
+:::
+::: {.iv-anchor emission_id="emit:9cdc044c3dc659"}
+:::
 
 Derivation: citation reconstruction _\*búdmaz_; form followed here _\*búttmaz_ > _botm_ (early analogy).
 
@@ -8155,9 +8366,12 @@ among Old English paradigm cells.
 
 ## brand — OE _brandes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!brandes@\iventry{brandes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brandas@\iventry{*brándas}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brandaz@\iventry{*brándaz}{}}
+::: {.iv-anchor emission_id="emit:6644a236fdfcab"}
+:::
+::: {.iv-anchor emission_id="emit:3e5d9fc76ae2e5"}
+:::
+::: {.iv-anchor emission_id="emit:3cb1174edbba00"}
+:::
 
 Derivation: citation reconstruction _\*brándaz_; form followed here _\*brándas_ > _brandes_ (early analogy).
 
@@ -8250,9 +8464,12 @@ though the citation lemma remains the nominative singular.
 
 ## breast — OE _brēost_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!breost@\iventry{brēost}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!breusta@\iventry{*bréustą}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!brustz@\iventry{*brústz}{}}
+::: {.iv-anchor emission_id="emit:0e966a828a8aa6"}
+:::
+::: {.iv-anchor emission_id="emit:5d60c6f1365c95"}
+:::
+::: {.iv-anchor emission_id="emit:f66f241b93a3ed"}
+:::
 
 Derivation: citation reconstruction _\*brústz_; form followed here _\*bréustą_ > _brēost_ (early analogy).
 
@@ -8345,11 +8562,16 @@ outcome of the thematic [_\*breusta-_]{.iv lang=pgmc sort=breusta role=source_pr
 
 ## craft — OE _cræft_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!craeft@\iventry{cræft}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!craft@\iventry{craft}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!creft@\iventry{creft}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftaz@\iventry{*kráftaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kraftiz@\iventry{*kráftiz}{}}
+::: {.iv-anchor emission_id="emit:a1e7c9e737ef96"}
+:::
+::: {.iv-anchor emission_id="emit:09c51a8441faca"}
+:::
+::: {.iv-anchor emission_id="emit:ec006dca8bb927"}
+:::
+::: {.iv-anchor emission_id="emit:a594b30c1ac709"}
+:::
+::: {.iv-anchor emission_id="emit:7bf10daf53c31f"}
+:::
 
 Derivation: citation reconstruction _\*kráftiz_; form followed here _\*kráftaz_ > _cræft_ (early analogy).
 
@@ -8432,9 +8654,12 @@ the u-stem comparator.
 
 ## dill — OE _dile_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!dile@\iventry{dile}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!deliz@\iventry{*déliz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!deljaz@\iventry{*déljaz}{}}
+::: {.iv-anchor emission_id="emit:731f7144d4475b"}
+:::
+::: {.iv-anchor emission_id="emit:bfb5c9ea573f8f"}
+:::
+::: {.iv-anchor emission_id="emit:f7d45a49476b78"}
+:::
 
 Derivation: citation reconstruction _\*déljaz_; form followed here _\*déliz_ > _dile_ (early analogy).
 
@@ -8530,9 +8755,12 @@ formation rather than with the continental ja-stem branch.
 
 ## fast — OE _festan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!festan@\iventry{festan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fastena@\iventry{*fastēną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fastijana@\iventry{*fástijaną}{}}
+::: {.iv-anchor emission_id="emit:9cfe4ddcae70f2"}
+:::
+::: {.iv-anchor emission_id="emit:dca9fe3b51fa20"}
+:::
+::: {.iv-anchor emission_id="emit:537983ff41ebad"}
+:::
 
 Derivation: citation reconstruction _\*fastēną_; form followed here _\*fástijaną_ > _festan_ (early analogy).
 
@@ -8633,9 +8861,12 @@ later analogical layer.
 
 ## flask — OE _flasce_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@\iventry{*flaskō}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
+::: {.iv-anchor emission_id="emit:45dc53e641a3a1"}
+:::
+::: {.iv-anchor emission_id="emit:e59d371c3e4e78"}
+:::
+::: {.iv-anchor emission_id="emit:eb922b99cf5998"}
+:::
 
 Derivation: citation reconstruction _\*flaskō_; form followed here _\*fláskōn_ > _flasce_ (early analogy).
 
@@ -8733,9 +8964,12 @@ with attested [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Ge
 
 ## follow — OE _fylġan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fylgan@\iventry{fylġan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgena@\iventry{*fulgēną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgijana@\iventry{*fúlgijaną}{}}
+::: {.iv-anchor emission_id="emit:744c6b25fbecb8"}
+:::
+::: {.iv-anchor emission_id="emit:2f21df6b428325"}
+:::
+::: {.iv-anchor emission_id="emit:ffcf78c0f00a75"}
+:::
 
 Derivation: citation reconstruction _\*fulgēną_; form followed here _\*fúlgijaną_ > _fylġan_ (early analogy).
 
@@ -8845,9 +9079,12 @@ belongs to the parallel class-II branch.
 
 ## gall — OE _ġealla_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gealla@\iventry{ġealla}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!galla@\iventry{*gállą}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gallo@\iventry{*gállô}{}}
+::: {.iv-anchor emission_id="emit:9fc2903b905f33"}
+:::
+::: {.iv-anchor emission_id="emit:1c38cf284fb16f"}
+:::
+::: {.iv-anchor emission_id="emit:b63ecfaf8b773b"}
+:::
 
 Derivation: citation reconstruction _\*gállą_; form followed here _\*gállô_ > _ġealla_ (early analogy).
 
@@ -8945,9 +9182,12 @@ heading.
 
 ## knight — OE _cniht_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cniht@\iventry{cniht}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knextaz@\iventry{*knéxtaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knixtaz@\iventry{*kníxtaz}{}}
+::: {.iv-anchor emission_id="emit:a23c466a9af165"}
+:::
+::: {.iv-anchor emission_id="emit:9c1dc10160de2a"}
+:::
+::: {.iv-anchor emission_id="emit:df87640dcc82c9"}
+:::
 
 Derivation: citation reconstruction _\*kníxtaz_; form followed here _\*knéxtaz_ > _cniht_ (early analogy).
 
@@ -9039,9 +9279,12 @@ input from a competing citation reconstruction.
 
 ## lade — OE _hladan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hladan@\iventry{hladan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lathojana@\iventry{*laθōjaną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xladana@\iventry{*xláðaną}{}}
+::: {.iv-anchor emission_id="emit:fc67381cf957e5"}
+:::
+::: {.iv-anchor emission_id="emit:88be47dc966143"}
+:::
+::: {.iv-anchor emission_id="emit:b4b20038f839e1"}
+:::
 
 Derivation: citation reconstruction _\*laθōjaną_; form followed here _\*xláðaną_ > _hladan_ (early analogy).
 
@@ -9133,9 +9376,12 @@ from the strong verb actually reflected in Old English.
 
 ## lap — OE _lappa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lappa@\iventry{lappa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!labbaz@\iventry{*lábbaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lappo@\iventry{*láppô}{}}
+::: {.iv-anchor emission_id="emit:4a07decf9931f5"}
+:::
+::: {.iv-anchor emission_id="emit:980720cb4b012e"}
+:::
+::: {.iv-anchor emission_id="emit:d659189c7b0566"}
+:::
 
 Derivation: citation reconstruction _\*lábbaz_; form followed here _\*láppô_ > _lappa_ (early analogy).
 
@@ -9226,13 +9472,20 @@ a competing voiced comparative label.
 
 ## laugh — OE _hliehhan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlaehhan@\iventry{hlæhhan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hleahtor@\iventry{hleahtor}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlehhan@\iventry{hlehhan}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hliehhan@\iventry{hliehhan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!hlahtraz@\iventry{*hlahtraz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lakana@\iventry{*lákaną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xlaxjana@\iventry{*xláxjaną}{}}
+::: {.iv-anchor emission_id="emit:7b1abe0a51e32a"}
+:::
+::: {.iv-anchor emission_id="emit:77b3bea891712e"}
+:::
+::: {.iv-anchor emission_id="emit:32d2532191a17d"}
+:::
+::: {.iv-anchor emission_id="emit:f2a52070935c43"}
+:::
+::: {.iv-anchor emission_id="emit:9a49b0a4a2af1b"}
+:::
+::: {.iv-anchor emission_id="emit:af57e9dc31dbae"}
+:::
+::: {.iv-anchor emission_id="emit:1b981ae03c358c"}
+:::
 
 Derivation: citation reconstruction _\*lákaną_; form followed here _\*xláxjaną_ > _hliehhan_ (early analogy).
 
@@ -9329,9 +9582,12 @@ the j-present branch actually reflected in Old English.
 
 ## loam — OE _lām_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lam@\iventry{lām}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laima@\iventry{*láimą}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laimon@\iventry{*laimōn}{}}
+::: {.iv-anchor emission_id="emit:97cafe4809d5e2"}
+:::
+::: {.iv-anchor emission_id="emit:6d9a4bca3c394f"}
+:::
+::: {.iv-anchor emission_id="emit:59d179ee378102"}
+:::
 
 Derivation: citation reconstruction _\*laimōn_; form followed here _\*láimą_ > _lām_ (early analogy).
 
@@ -9416,9 +9672,12 @@ OE-facing stem class used to derive the attested noun.
 
 ## lung — OE _lungen_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lungen@\iventry{lungen}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lunganjo@\iventry{*lúnganjō}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lungo@\iventry{*lungō}{}}
+::: {.iv-anchor emission_id="emit:d13a015b60e218"}
+:::
+::: {.iv-anchor emission_id="emit:50c5e158434adb"}
+:::
+::: {.iv-anchor emission_id="emit:b75f2c8659d891"}
+:::
 
 Derivation: citation reconstruction _\*lungō_; form followed here _\*lúnganjō_ > _lungen_ (early analogy).
 
@@ -9512,10 +9771,14 @@ feminine formation reflected in Old English.
 
 ## navel — OE _nafola_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naefla@\iventry{næfla}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nafola@\iventry{nafola}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nablo@\iventry{*nablô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nabulo@\iventry{*nábulô}{}}
+::: {.iv-anchor emission_id="emit:ab32f14ebe1a07"}
+:::
+::: {.iv-anchor emission_id="emit:046677a642cd7e"}
+:::
+::: {.iv-anchor emission_id="emit:43dd11f7c730f2"}
+:::
+::: {.iv-anchor emission_id="emit:c345830082a259"}
+:::
 
 Derivation: citation reconstruction _\*nablô_; form followed here _\*nábulô_ > _nafola_ (early analogy).
 
@@ -9611,9 +9874,12 @@ the pre-syncope input and from the later OE spellings.
 
 ## neck — OE _hnecca_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hnecca@\iventry{hnecca}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnakkaz@\iventry{*xnákkaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnekko@\iventry{*xnékkô}{}}
+::: {.iv-anchor emission_id="emit:1eba1874ab5440"}
+:::
+::: {.iv-anchor emission_id="emit:fb9c5354789d1c"}
+:::
+::: {.iv-anchor emission_id="emit:0112f0b2d0844b"}
+:::
 
 Derivation: citation reconstruction _\*xnákkaz_; form followed here _\*xnékkô_ > _hnecca_ (early analogy).
 
@@ -9702,9 +9968,12 @@ selected e-grade Old English branch.
 
 ## needle — OE _nǣdl_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naedl@\iventry{nǣdl}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nedlo@\iventry{*nḗðlō}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nethlo@\iventry{*nḗθlō}{}}
+::: {.iv-anchor emission_id="emit:00b2d4b237d7fd"}
+:::
+::: {.iv-anchor emission_id="emit:a58d8f02b8d0ed"}
+:::
+::: {.iv-anchor emission_id="emit:c96df18560f401"}
+:::
 
 Derivation: citation reconstruction _\*nḗθlō_; form followed here _\*nḗðlō_ > _nǣdl_ (early analogy).
 
@@ -9798,10 +10067,14 @@ the voiced alternant used for Old English.
 
 ## nose — OE _nosu_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nasu@\iventry{nasu}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nosu@\iventry{nosu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naso@\iventry{*nasō}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nuso@\iventry{*núsō}{}}
+::: {.iv-anchor emission_id="emit:a54b338354422c"}
+:::
+::: {.iv-anchor emission_id="emit:245c6aa5137f6a"}
+:::
+::: {.iv-anchor emission_id="emit:5b415aa187e0e3"}
+:::
+::: {.iv-anchor emission_id="emit:023f045b98ae8f"}
+:::
 
 Derivation: citation reconstruction _\*nasō_; form followed here _\*núsō_ > _nosu_ (early analogy).
 
@@ -9892,9 +10165,12 @@ from the remodeled zero-grade input that yields the Old English form.
 
 ## sap — OE _sæp_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!saep@\iventry{sæp}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapa@\iventry{*sápą}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapon@\iventry{*sapōn}{}}
+::: {.iv-anchor emission_id="emit:a67457d474d640"}
+:::
+::: {.iv-anchor emission_id="emit:cf86266311adcb"}
+:::
+::: {.iv-anchor emission_id="emit:03b8a1d2f0c762"}
+:::
 
 Derivation: citation reconstruction _\*sapōn_; form followed here _\*sápą_ > _sæp_ (early analogy).
 
@@ -9984,9 +10260,12 @@ from the Old English-facing input.
 
 ## sea — OE _sǣ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sae@\iventry{sǣ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sai@\iventry{*sái}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!saiwiz@\iventry{*sáiwiz}{}}
+::: {.iv-anchor emission_id="emit:61ff1976a1105f"}
+:::
+::: {.iv-anchor emission_id="emit:897b1c4f2c3a6a"}
+:::
+::: {.iv-anchor emission_id="emit:fd338acbc72f77"}
+:::
 
 Derivation: citation reconstruction _\*sái_; form followed here _\*sáiwiz_ > _sǣ_ (early analogy).
 
@@ -10075,11 +10354,16 @@ headword from the fuller i-stem input that yields the Old English form.
 
 ## sieve — OE _sife_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sife@\iventry{sife}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spere@\iventry{spere}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibaz@\iventry{*síbaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibi@\iventry{*síbi}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibiz@\iventry{*sib-iz}{}}
+::: {.iv-anchor emission_id="emit:c0c499fc16523d"}
+:::
+::: {.iv-anchor emission_id="emit:d5394cc6200a15"}
+:::
+::: {.iv-anchor emission_id="emit:9c6e07ad6efe37"}
+:::
+::: {.iv-anchor emission_id="emit:86eb5604c6cfb5"}
+:::
+::: {.iv-anchor emission_id="emit:6d4cb105ad23ab"}
+:::
 
 Derivation: citation reconstruction _\*síbaz_; form followed here _\*síbi_ > _sife_ (early analogy).
 
@@ -10165,9 +10449,12 @@ its rejected competitors.
 
 ## spare — OE _sparian_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sparian@\iventry{sparian}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparena@\iventry{*sparēną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparojana@\iventry{*spárōjaną}{}}
+::: {.iv-anchor emission_id="emit:84911dcc09e05e"}
+:::
+::: {.iv-anchor emission_id="emit:a593f0e653c32a"}
+:::
+::: {.iv-anchor emission_id="emit:37a2d23ce1b5a1"}
+:::
 
 Derivation: citation reconstruction _\*sparēną_; form followed here _\*spárōjaną_ > _sparian_ (early analogy).
 
@@ -10264,9 +10551,12 @@ with the refashioned class-II one that yields the citation verb.
 
 ## staff — OE _stæf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!staef@\iventry{stæf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stabaz@\iventry{*stábaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stabiz@\iventry{*stábiz}{}}
+::: {.iv-anchor emission_id="emit:47db4573883eb5"}
+:::
+::: {.iv-anchor emission_id="emit:71106e8b6d9aa5"}
+:::
+::: {.iv-anchor emission_id="emit:6f49652d8be3e4"}
+:::
 
 Derivation: citation reconstruction _\*stábiz_; form followed here _\*stábaz_ > _stæf_ (early analogy).
 
@@ -10353,9 +10643,12 @@ selected a-stem input.
 
 ## swan — OE _swanes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swanes@\iventry{swanes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanas@\iventry{*swánas}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanaz@\iventry{*swánaz}{}}
+::: {.iv-anchor emission_id="emit:626bf80d78ebda"}
+:::
+::: {.iv-anchor emission_id="emit:074209d0abcf1f"}
+:::
+::: {.iv-anchor emission_id="emit:2c0e425b2cf79a"}
+:::
 
 Derivation: citation reconstruction _\*swánaz_; form followed here _\*swánas_ > _swanes_ (early analogy).
 
@@ -10439,11 +10732,16 @@ selected inflected cell.
 
 ## thousand — OE _þūsend_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!aerende@\iventry{ærende}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thusend@\iventry{þūsend}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@\iventry{*θūs-èndi}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@\iventry{*θūsèndi}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusundi@\iventry{*θūs-undī}{}}
+::: {.iv-anchor emission_id="emit:4d85a8c02e3095"}
+:::
+::: {.iv-anchor emission_id="emit:7645c46fd17e18"}
+:::
+::: {.iv-anchor emission_id="emit:721287768a21f3"}
+:::
+::: {.iv-anchor emission_id="emit:55b94c72f6ecbb"}
+:::
+::: {.iv-anchor emission_id="emit:b859129e0ac8cc"}
+:::
 
 Derivation: citation reconstruction _\*θūs-undī_; form followed here _\*θūs-èndi_ > _þūsend_ (early analogy).
 
@@ -10543,9 +10841,12 @@ interpretive account of the second-syllable vowel.
 
 ## timber — OE _timber_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!timber@\iventry{timber}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timbra@\iventry{*tímbrą}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timra@\iventry{*tímrą}{}}
+::: {.iv-anchor emission_id="emit:cf317f90be9bfa"}
+:::
+::: {.iv-anchor emission_id="emit:ffde64bd08c4b3"}
+:::
+::: {.iv-anchor emission_id="emit:b455a55639482b"}
+:::
 
 Derivation: citation reconstruction _\*tímrą_; form followed here _\*tímbrą_ > _timber_ (early analogy).
 
@@ -10625,9 +10926,12 @@ OE-facing consonantal input.
 
 ## wake — OE _wacan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wacan@\iventry{wacan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakana@\iventry{*wákaną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakena@\iventry{*wakēną}{}}
+::: {.iv-anchor emission_id="emit:0cb15f525d2cdb"}
+:::
+::: {.iv-anchor emission_id="emit:e865e6b2da6f63"}
+:::
+::: {.iv-anchor emission_id="emit:bb981fcff4779b"}
+:::
 
 Derivation: citation reconstruction _\*wakēną_; form followed here _\*wákaną_ > _wacan_ (early analogy).
 
@@ -10716,9 +11020,12 @@ The comparison below sets the relevant forms side by side. It separates the stro
 
 ## water — OE _wæter_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waeter@\iventry{wæter}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!watna@\iventry{*wátną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wator@\iventry{*wátōr}{}}
+::: {.iv-anchor emission_id="emit:bf698656c7f103"}
+:::
+::: {.iv-anchor emission_id="emit:03c471448ab9bd"}
+:::
+::: {.iv-anchor emission_id="emit:a3f413e078d0e8"}
+:::
 
 Derivation: citation reconstruction _\*wátną_; form followed here _\*wátōr_ > _wæter_ (early analogy).
 
@@ -10806,9 +11113,12 @@ the singular input that matches the Old English citation form.
 
 ## whale — OE _hwæl_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwael@\iventry{hwæl}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!walaz@\iventry{*wálaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwalaz@\iventry{*xwálaz}{}}
+::: {.iv-anchor emission_id="emit:4ee917663c661b"}
+:::
+::: {.iv-anchor emission_id="emit:09e0fc6079be80"}
+:::
+::: {.iv-anchor emission_id="emit:b772ecd38a6bc4"}
+:::
 
 Derivation: citation reconstruction _\*wálaz_; form followed here _\*xwálaz_ > _hwæl_ (early analogy).
 
@@ -10900,9 +11210,12 @@ notations from the normalized Old English singular.
 
 ## whine — OE _hwīnan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwinan@\iventry{hwīnan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wainojana@\iventry{*wainōjaną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwinana@\iventry{*xwī́naną}{}}
+::: {.iv-anchor emission_id="emit:bf4a174be8bc59"}
+:::
+::: {.iv-anchor emission_id="emit:d533c18c610259"}
+:::
+::: {.iv-anchor emission_id="emit:4a55c2036cb7b7"}
+:::
 
 Derivation: citation reconstruction _\*wainōjaną_; form followed here _\*xwī́naną_ > _hwīnan_ (early analogy).
 
@@ -10999,10 +11312,14 @@ that stand behind the inherited Old English forms.
 
 ## withy — OE _wīþiġ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hunig@\iventry{hunig}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!withig@\iventry{wīþiġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!waithiz@\iventry{*wáiθiz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!withaga@\iventry{*wī́θagą}{}}
+::: {.iv-anchor emission_id="emit:bcc78d663ff3d6"}
+:::
+::: {.iv-anchor emission_id="emit:965acf1567fecb"}
+:::
+::: {.iv-anchor emission_id="emit:d3e297d7e7c1da"}
+:::
+::: {.iv-anchor emission_id="emit:d99cfb7a79cfa2"}
+:::
 
 Derivation: citation reconstruction _\*wáiθiz_; form followed here _\*wī́θagą_ > _wīþiġ_ (early analogy).
 
@@ -11102,10 +11419,14 @@ the Old English-facing formation that actually yields the attested noun.
 
 ## world — OE _weorold_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weorold@\iventry{weorold}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraaldiz@\iventry{*wíra-àldiz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@\iventry{*wír-àldu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@\iventry{*wíràldu}{}}
+::: {.iv-anchor emission_id="emit:ab5db056e0e703"}
+:::
+::: {.iv-anchor emission_id="emit:06324ce1a19e9c"}
+:::
+::: {.iv-anchor emission_id="emit:1f1421639891c2"}
+:::
+::: {.iv-anchor emission_id="emit:e89843d97f636d"}
+:::
 
 Derivation: citation reconstruction _\*wíra-àldiz_; form followed here _\*wír-àldu_ > _weorold_ (early analogy).
 
@@ -11210,9 +11531,12 @@ OE-facing stage chosen for the derivation.
 
 ## youth — OE _ġeoguþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geoguth@\iventry{ġeoguþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunth@\iventry{*júgunθ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunthiz@\iventry{*júgunθiz}{}}
+::: {.iv-anchor emission_id="emit:3d8c7075f80b0b"}
+:::
+::: {.iv-anchor emission_id="emit:4bfda3e8e3a36d"}
+:::
+::: {.iv-anchor emission_id="emit:0accbb39a2c6ea"}
+:::
 
 Derivation: citation reconstruction _\*júgunθiz_; form followed here _\*júgunθ_ > _ġeoguþ_ (early analogy).
 
@@ -11321,9 +11645,12 @@ regular once the proper morphological history has been identified.
 
 ## ban — OE _bannes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bannes@\iventry{bannes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!banna@\iventry{*bánną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bannas@\iventry{*bánnas}{}}
+::: {.iv-anchor emission_id="emit:b30ee83982f903"}
+:::
+::: {.iv-anchor emission_id="emit:756244d5742340"}
+:::
+::: {.iv-anchor emission_id="emit:0fb9ee56c9ec95"}
+:::
 
 Derivation: citation reconstruction _\*bánną_; form followed here _\*bánnas_ > _bannes_ (late analogy).
 
@@ -11407,9 +11734,12 @@ conservative cell used for the entry.
 
 ## berry — OE _berġes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!berges@\iventry{berġes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazja@\iventry{*bázją}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazjas@\iventry{*bázjas}{}}
+::: {.iv-anchor emission_id="emit:52d72e33ee3f9f"}
+:::
+::: {.iv-anchor emission_id="emit:c246a0739fb204"}
+:::
+::: {.iv-anchor emission_id="emit:0d395a1f58f641"}
+:::
 
 Derivation: citation reconstruction _\*bázją_; form followed here _\*bázjas_ > _berġes_ (late analogy).
 
@@ -11493,9 +11823,12 @@ and the genitive singular cell.
 
 ## bow — OE _bēag_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!beag@\iventry{bēag}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baug@\iventry{*báug}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!beugana@\iventry{*béuganą}{}}
+::: {.iv-anchor emission_id="emit:217aea175ac0ca"}
+:::
+::: {.iv-anchor emission_id="emit:67657129636da5"}
+:::
+::: {.iv-anchor emission_id="emit:6247bb3d773ccf"}
+:::
 
 Derivation: citation reconstruction _\*béuganą_; form followed here _\*báug_ > _bēag_ (late analogy).
 
@@ -11596,10 +11929,14 @@ belongs to a paradigm whose present stem has already undergone later leveling.
 
 ## cow — OE _cȳ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cum@\iventry{cūm}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cy@\iventry{cȳ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!koz@\iventry{*kōz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kui@\iventry{*kūi}{}}
+::: {.iv-anchor emission_id="emit:28b7af789ce8e5"}
+:::
+::: {.iv-anchor emission_id="emit:f4b25bb56f6220"}
+:::
+::: {.iv-anchor emission_id="emit:c45b20550fc739"}
+:::
+::: {.iv-anchor emission_id="emit:b574552fbbf9dc"}
+:::
 
 Derivation: citation reconstruction _\*kōz_; form followed here _\*kūi_ > _cȳ_ (late analogy).
 
@@ -11701,10 +12038,14 @@ _\*kū-_ grade spread beyond that one cell.
 
 ## find — OE _fundene_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fundene@\iventry{fundene}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!tofundennes@\iventry{tō-fundennes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!finthana@\iventry{*fínθaną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fundano@\iventry{*fúnðanǭ}{}}
+::: {.iv-anchor emission_id="emit:8fcd0c0822751f"}
+:::
+::: {.iv-anchor emission_id="emit:d5a85a7ae60dc0"}
+:::
+::: {.iv-anchor emission_id="emit:41f6d480715bca"}
+:::
+::: {.iv-anchor emission_id="emit:f0628bd2a18228"}
+:::
 
 Derivation: citation reconstruction _\*fínθaną_; form followed here _\*fúnðanǭ_ > _fundene_ (late analogy).
 
@@ -11801,9 +12142,12 @@ different presentation cell within the same paradigm.
 
 ## fright — OE _fyrhte_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyrhte@\iventry{fyrhte}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtin@\iventry{*furxtīn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtinaz@\iventry{*fúrxtīnaz}{}}
+::: {.iv-anchor emission_id="emit:b0061a06fa6723"}
+:::
+::: {.iv-anchor emission_id="emit:2736606565a6fe"}
+:::
+::: {.iv-anchor emission_id="emit:1c3039e4f36457"}
+:::
 
 Derivation: citation reconstruction _\*furxtīn_; form followed here _\*fúrxtīnaz_ > _fyrhte_ (late analogy).
 
@@ -11905,9 +12249,12 @@ analogical layer.
 
 ## hammer — OE _hameres_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hameres@\iventry{hameres}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xamaras@\iventry{*xámaras}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xamaraz@\iventry{*xámaraz}{}}
+::: {.iv-anchor emission_id="emit:69f598fa8e70eb"}
+:::
+::: {.iv-anchor emission_id="emit:513f511e0bee2d"}
+:::
+::: {.iv-anchor emission_id="emit:fc76dc84c7070b"}
+:::
 
 Derivation: citation reconstruction _\*xámaraz_; form followed here _\*xámaras_ > _hameres_ (late analogy).
 
@@ -11997,9 +12344,12 @@ from the less stable citation tradition.
 
 ## have — OE _hæfeþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!haefeth@\iventry{hæfeþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabena@\iventry{*xabēną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabethi@\iventry{*xábēθi}{}}
+::: {.iv-anchor emission_id="emit:354b5b18f3fce6"}
+:::
+::: {.iv-anchor emission_id="emit:d761a2d33e42f4"}
+:::
+::: {.iv-anchor emission_id="emit:9f9be66a8355a5"}
+:::
 
 Derivation: citation reconstruction _\*xabēną_; form followed here _\*xábēθi_ > _hæfeþ_ (late analogy).
 
@@ -12100,9 +12450,12 @@ form from the regular 3sg present line.
 
 ## heaven — OE _heofon_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemenaz@\iventry{*xémenaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemonu@\iventry{*xémonų}{}}
+::: {.iv-anchor emission_id="emit:2d03c239c65420"}
+:::
+::: {.iv-anchor emission_id="emit:cacf6e9ffd1a4f"}
+:::
+::: {.iv-anchor emission_id="emit:574f4decd6cd13"}
+:::
 
 Derivation: citation reconstruction _\*xémenaz_; form followed here _\*xémonų_ > _heofon_ (late analogy).
 
@@ -12201,9 +12554,12 @@ line from the oblique stem selected for West Saxon [_heofon_]{.iv lang=oe sort=h
 
 ## live — OE _lifeþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lifeth@\iventry{lifeþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libena@\iventry{*libēną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libethi@\iventry{*líbēθi}{}}
+::: {.iv-anchor emission_id="emit:f51825ed992274"}
+:::
+::: {.iv-anchor emission_id="emit:bd8fbc92c52c9d"}
+:::
+::: {.iv-anchor emission_id="emit:0e62545caa712f"}
+:::
 
 Derivation: citation reconstruction _\*libēną_; form followed here _\*líbēθi_ > _lifeþ_ (late analogy).
 
@@ -12297,9 +12653,12 @@ ordinary infinitival and later remodeled lemma lines.
 
 ## man — OE _mannes_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!mannes@\iventry{mannes}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mannas@\iventry{*mánnas}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mannaz@\iventry{*mánnaz}{}}
+::: {.iv-anchor emission_id="emit:f047970eedff3d"}
+:::
+::: {.iv-anchor emission_id="emit:52b802bb5331ff"}
+:::
+::: {.iv-anchor emission_id="emit:e8ad4a73544645"}
+:::
 
 Derivation: citation reconstruction _\*mánnaz_; form followed here _\*mánnas_ > _mannes_ (late analogy).
 
@@ -12390,9 +12749,12 @@ genitive singular.
 
 ## meed — OE _meorde_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!meorde@\iventry{meorde}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdai@\iventry{*mízdai}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdo@\iventry{*mizdō}{}}
+::: {.iv-anchor emission_id="emit:f1b9c9f17682b2"}
+:::
+::: {.iv-anchor emission_id="emit:2b6bd28de9865e"}
+:::
+::: {.iv-anchor emission_id="emit:4f805842ca1b64"}
+:::
 
 Derivation: citation reconstruction _\*mizdō_; form followed here _\*mízdai_ > _meorde_ (late analogy).
 
@@ -12492,9 +12854,12 @@ the broader lemma history.
 
 ## night — OE _niht_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!niht@\iventry{niht}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naxti@\iventry{*náxti}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!naxtz@\iventry{*náxtz}{}}
+::: {.iv-anchor emission_id="emit:c26f5f4023ca28"}
+:::
+::: {.iv-anchor emission_id="emit:92a07c0364acd8"}
+:::
+::: {.iv-anchor emission_id="emit:d1e1692772e8ba"}
+:::
 
 Derivation: citation reconstruction _\*náxtz_; form followed here _\*náxti_ > _niht_ (late analogy).
 
@@ -12587,10 +12952,14 @@ attested Old English form.
 
 ## rest — OE _ræste_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!raeste@\iventry{ræste}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rast@\iventry{rast}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@\iventry{*rastō}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rastoz@\iventry{*rástōz}{}}
+::: {.iv-anchor emission_id="emit:a9b054580628ac"}
+:::
+::: {.iv-anchor emission_id="emit:2e5ec5323311e4"}
+:::
+::: {.iv-anchor emission_id="emit:6ecbcfaad96b6c"}
+:::
+::: {.iv-anchor emission_id="emit:7e99154b5e6751"}
+:::
 
 Derivation: citation reconstruction _\*rastō_; form followed here _\*rástōz_ > _ræste_ (late analogy).
 
@@ -12685,9 +13054,12 @@ from the oblique singular chosen here.
 
 ## shoulder — OE _sċuldrum_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sculdrum@\iventry{sċuldrum}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldramiz@\iventry{*skúldramiz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skuldro@\iventry{*skuldrō}{}}
+::: {.iv-anchor emission_id="emit:c00dc56287e363"}
+:::
+::: {.iv-anchor emission_id="emit:49ba91181db771"}
+:::
+::: {.iv-anchor emission_id="emit:9830a22f169bf7"}
+:::
 
 Derivation: citation reconstruction _\*skuldrō_; form followed here _\*skúldramiz_ > _sċuldrum_ (late analogy).
 
@@ -12774,9 +13146,12 @@ The dative plural line is decisive because it matches both the output and the pa
 
 ## shove — OE _sċēaf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceaf@\iventry{sċēaf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skaub@\iventry{*skáub}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skeubana@\iventry{*skéubaną}{}}
+::: {.iv-anchor emission_id="emit:7f9948db890032"}
+:::
+::: {.iv-anchor emission_id="emit:c4c4709c6a545c"}
+:::
+::: {.iv-anchor emission_id="emit:143e61d7b27803"}
+:::
 
 Derivation: citation reconstruction _\*skéubaną_; form followed here _\*skáub_ > _sċēaf_ (late analogy).
 
@@ -12861,9 +13236,12 @@ below is manual.
 
 ## span — OE _spanne_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spanne@\iventry{spanne}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spannai@\iventry{*spánnai}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spanno@\iventry{*spannō}{}}
+::: {.iv-anchor emission_id="emit:94213ee871e5aa"}
+:::
+::: {.iv-anchor emission_id="emit:d3353707668573"}
+:::
+::: {.iv-anchor emission_id="emit:f61a13a7a0f230"}
+:::
 
 Derivation: citation reconstruction _\*spannō_; form followed here _\*spánnai_ > _spanne_ (late analogy).
 
@@ -12942,10 +13320,14 @@ compared here.
 
 ## thistle — OE _þistles_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hrefn@\iventry{hrefn}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thistles@\iventry{þistles}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thestilaz@\iventry{*θéstilaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thistilas@\iventry{*θístilas}{}}
+::: {.iv-anchor emission_id="emit:6bf5fc695eb398"}
+:::
+::: {.iv-anchor emission_id="emit:707a7a6d76fb91"}
+:::
+::: {.iv-anchor emission_id="emit:cb25e1fe2f1da9"}
+:::
+::: {.iv-anchor emission_id="emit:8d89d8ce9d7207"}
+:::
 
 Derivation: citation reconstruction _\*θéstilaz_; form followed here _\*θístilas_ > _þistles_ (late analogy).
 
@@ -13028,10 +13410,14 @@ and the genitive singular cell.
 
 ## make (iptv.2sg) — OE _maca_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lapian@\iventry{lapian}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!maca@\iventry{maca}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mako@\iventry{*mákô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@\iventry{*makōną}{}}
+::: {.iv-anchor emission_id="emit:3e6af6623107ee"}
+:::
+::: {.iv-anchor emission_id="emit:d13148a675dafc"}
+:::
+::: {.iv-anchor emission_id="emit:0ce44da50a684e"}
+:::
+::: {.iv-anchor emission_id="emit:fe5301fce224c1"}
+:::
 
 Derivation: citation reconstruction _\*makōną_; form followed here _\*mákô_ > _maca_ (late analogy).
 
@@ -13125,9 +13511,12 @@ the Old English form chosen here. The comparison below sets the relevant forms s
 
 ## make (3sg) — OE _macaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!macath@\iventry{macaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makona@\iventry{*makōną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makothi@\iventry{*mákōθi}{}}
+::: {.iv-anchor emission_id="emit:7f7b24c0c16043"}
+:::
+::: {.iv-anchor emission_id="emit:441a658d28ccd7"}
+:::
+::: {.iv-anchor emission_id="emit:ed78adda25ceb8"}
+:::
 
 Derivation: citation reconstruction _\*makōną_; form followed here _\*mákōθi_ > _macaþ_ (late analogy).
 
@@ -13224,9 +13613,12 @@ make-family lemma and from the companion imperative form.
 
 ## bore (iptv.2sg) — OE _bora_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bora@\iventry{bora}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!buro@\iventry{*búrô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burona@\iventry{*burōną}{}}
+::: {.iv-anchor emission_id="emit:d34c557f9d02d2"}
+:::
+::: {.iv-anchor emission_id="emit:00387c4c1b7723"}
+:::
+::: {.iv-anchor emission_id="emit:5b966b797fbf17"}
+:::
 
 Derivation: citation reconstruction _\*burōną_; form followed here _\*búrô_ > _bora_ (late analogy).
 
@@ -13317,9 +13709,12 @@ from the bore-family lemma and from the companion 3sg form.
 
 ## bore (3sg) — OE _boraþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!borath@\iventry{boraþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burona@\iventry{*burōną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burothi@\iventry{*búrōθi}{}}
+::: {.iv-anchor emission_id="emit:5f537ff35be7f9"}
+:::
+::: {.iv-anchor emission_id="emit:5ef4e4429fa7ca"}
+:::
+::: {.iv-anchor emission_id="emit:cea7137bc74ef8"}
+:::
 
 Derivation: citation reconstruction _\*burōną_; form followed here _\*búrōθi_ > _boraþ_ (late analogy).
 
@@ -13412,9 +13807,12 @@ bore-family lemma and from the companion imperative form.
 
 ## learn (iptv.2sg) — OE _liorna_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liorna@\iventry{liorna}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!lizno@\iventry{*líznô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*liznōjaną}{}}
+::: {.iv-anchor emission_id="emit:ecc9aa54a82441"}
+:::
+::: {.iv-anchor emission_id="emit:f5580be32e7bec"}
+:::
+::: {.iv-anchor emission_id="emit:9a1caed638c9a4"}
+:::
 
 Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznô_ > _liorna_ (late analogy).
 
@@ -13507,9 +13905,12 @@ from the learn-family infinitive and from the companion 3sg form.
 
 ## learn (3sg) — OE _liornaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liornath@\iventry{liornaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznojana@\iventry{*liznōjaną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!liznothi@\iventry{*líznōθi}{}}
+::: {.iv-anchor emission_id="emit:12ba0cd4cf9ef5"}
+:::
+::: {.iv-anchor emission_id="emit:66c4c49e72b38a"}
+:::
+::: {.iv-anchor emission_id="emit:7eb4fd86c7c0bd"}
+:::
 
 Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznōθi_ > _liornaþ_ (late analogy).
 
@@ -13611,9 +14012,12 @@ the learn-family infinitive and from the companion imperative form.
 
 ## lick (iptv.2sg) — OE _licca_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!licca@\iventry{licca}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likko@\iventry{*líkkô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkona@\iventry{*likkōną}{}}
+::: {.iv-anchor emission_id="emit:46358354584247"}
+:::
+::: {.iv-anchor emission_id="emit:d819b04185af13"}
+:::
+::: {.iv-anchor emission_id="emit:452727ec39fec3"}
+:::
 
 Derivation: citation reconstruction _\*likkōną_; form followed here _\*líkkô_ > _licca_ (late analogy).
 
@@ -13686,9 +14090,12 @@ The comparison below sets the relevant forms side by side.
 
 ## lick (3sg) — OE _liccaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liccath@\iventry{liccaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkona@\iventry{*likkōną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkothi@\iventry{*líkkōθi}{}}
+::: {.iv-anchor emission_id="emit:8f04345e375bc4"}
+:::
+::: {.iv-anchor emission_id="emit:dbd6847b5ee1a0"}
+:::
+::: {.iv-anchor emission_id="emit:720f7e80be05f9"}
+:::
 
 Derivation: citation reconstruction _\*likkōną_; form followed here _\*líkkōθi_ > _liccaþ_ (late analogy).
 
@@ -13763,12 +14170,18 @@ The comparison below sets the relevant forms side by side.
 
 ## show (iptv.2sg) — OE _sċēawa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawa@\iventry{sċēawa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawo@\iventry{*skáwô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@\iventry{*skawōną}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!scouwon@\iventry{scouwōn}{}}
-\index[iv]{10ofris@\ivlangheader{Old Frisian}{}!skawia@\iventry{skawia}{}}
-\index[iv]{12os@\ivlangheader{Old Saxon}{}!skawon@\iventry{skawōn}{}}
+::: {.iv-anchor emission_id="emit:13c185811c4054"}
+:::
+::: {.iv-anchor emission_id="emit:7acb9b79c38247"}
+:::
+::: {.iv-anchor emission_id="emit:b93681720d94c2"}
+:::
+::: {.iv-anchor emission_id="emit:a653a081aef270"}
+:::
+::: {.iv-anchor emission_id="emit:af52924c182761"}
+:::
+::: {.iv-anchor emission_id="emit:b81e63b3a43d08"}
+:::
 
 Derivation: citation reconstruction _\*skawōną_; form followed here _\*skáwô_ > _sċēawa_ (late analogy).
 
@@ -13843,10 +14256,14 @@ The comparison below sets the relevant forms side by side.
 
 ## show (3sg) — OE _sċēawaþ_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawad@\iventry{sceawað}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sceawath@\iventry{sċēawaþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawona@\iventry{*skawōną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawothi@\iventry{*skáwōθi}{}}
+::: {.iv-anchor emission_id="emit:024db2857e1759"}
+:::
+::: {.iv-anchor emission_id="emit:b472b9d5545b78"}
+:::
+::: {.iv-anchor emission_id="emit:b1afef949e1e88"}
+:::
+::: {.iv-anchor emission_id="emit:95280f65547bd0"}
+:::
 
 Derivation: citation reconstruction _\*skawōną_; form followed here _\*skáwōθi_ > _sċēawaþ_ (late analogy).
 
@@ -13931,9 +14348,12 @@ corresponding evidential burden.
 
 ## knob — OE _\*cnobba_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cnobba@\iventry{*cnobba}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knubbo@\iventry{*knúbbô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knuppaz@\iventry{*knúppaz}{}}
+::: {.iv-anchor emission_id="emit:6c71c0a7164745"}
+:::
+::: {.iv-anchor emission_id="emit:7523bdc6d6cf5a"}
+:::
+::: {.iv-anchor emission_id="emit:3904205143a910"}
+:::
 
 Derivation: citation reconstruction _\*knúppaz_; form followed here _\*knúbbô_ > _\*cnobba_ (reconstructed Old English comparator).
 
@@ -14027,9 +14447,12 @@ question rather than a settled point of OE attestation.
 
 ## reek — OE _\*rēac_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!reac@\iventry{*rēac}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukaz@\iventry{*ráukaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukiz@\iventry{*ráukiz}{}}
+::: {.iv-anchor emission_id="emit:0dffae70cf562b"}
+:::
+::: {.iv-anchor emission_id="emit:a422447bf7ffc1"}
+:::
+::: {.iv-anchor emission_id="emit:f8dc49e7921f7a"}
+:::
 
 Derivation: citation reconstruction _\*ráukiz_; form followed here _\*ráukaz_ > _\*rēac_ (reconstructed Old English comparator).
 
@@ -14111,8 +14534,10 @@ modelling target, while the former remains philological background.
 
 ## strew — OE _\*strīeġan_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!striegan@\iventry{*strīeġan}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!strawjana@\iventry{*stráwjaną}{}}
+::: {.iv-anchor emission_id="emit:f934374bbdf890"}
+:::
+::: {.iv-anchor emission_id="emit:d8b67204fb5385"}
+:::
 
 Derivation: _\*stráwjaną_ > _\*strīeġan_ (reconstructed Old English comparator).
 
@@ -14223,8 +14648,10 @@ status without pretending that no historical account exists.
 
 ## stem — OE _stefn_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefn@\iventry{stefn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamnaz@\iventry{*stámnaz}{}}
+::: {.iv-anchor emission_id="emit:3e2f172a1355ff"}
+:::
+::: {.iv-anchor emission_id="emit:cef700951b4591"}
+:::
 
 Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regular trace was confidently matched for this entry.
 
@@ -14308,8 +14735,10 @@ The form followed here, _\*stébnō_, used in earlier versions of this entry was
 
 ## fire — OE _fȳre_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyre@\iventry{fȳre}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furi@\iventry{*fūri}{}}
+::: {.iv-anchor emission_id="emit:2429d65631b19c"}
+:::
+::: {.iv-anchor emission_id="emit:247fb7cef4a9c2"}
+:::
 
 Derivation: _\*fūri_ yields regular _fȳr_; the Old English form here is _fȳre_ (known but unmodelled development).
 
@@ -14406,8 +14835,10 @@ form and from the later analogical surface result.
 
 ## tap — OE _tæppa_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!taeppa@\iventry{tæppa}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tappo@\iventry{*táppô}{}}
+::: {.iv-anchor emission_id="emit:7eaf826af34338"}
+:::
+::: {.iv-anchor emission_id="emit:329ae48ba10e9f"}
+:::
 
 Derivation: _\*táppô_ yields regular _tappa_; the Old English form here is _tæppa_ (known but unmodelled development).
 
@@ -14497,8 +14928,10 @@ mismatch.
 
 ## buck — OE _bucc_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bucc@\iventry{bucc}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bukkaz@\iventry{*búkkaz}{}}
+::: {.iv-anchor emission_id="emit:9d850ff591ef0b"}
+:::
+::: {.iv-anchor emission_id="emit:7939d5847a1935"}
+:::
 
 Derivation: _\*búkkaz_ yields regular _bocc_; the Old English form here is _bucc_ (unexplained exception).
 
@@ -14586,11 +15019,16 @@ paradigm-cell survival.
 
 ## fowl — OE _fugol_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fugel@\iventry{fugel}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fugol@\iventry{fugol}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fuglaz@\iventry{*fúglaz}{}}
-\index[iv]{08on@\ivlangheader{Old Norse}{}!fugl@\iventry{fugl}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!fogal@\iventry{fogal}{}}
+::: {.iv-anchor emission_id="emit:eadb08d76354f2"}
+:::
+::: {.iv-anchor emission_id="emit:787c0062832827"}
+:::
+::: {.iv-anchor emission_id="emit:519721a52774f9"}
+:::
+::: {.iv-anchor emission_id="emit:4641e6a2ee19b9"}
+:::
+::: {.iv-anchor emission_id="emit:687c705fee51b6"}
+:::
 
 Derivation: _\*fúglaz_ yields regular _fogol_; the Old English form here is _fugol_ (unexplained exception).
 
@@ -14696,9 +15134,12 @@ attested _fugol_ 'fowl'.
 
 ## rust — OE _rust_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rust@\iventry{rust}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rusto@\iventry{*rústō}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!rost@\iventry{rost}{}}
+::: {.iv-anchor emission_id="emit:daec060bf71304"}
+:::
+::: {.iv-anchor emission_id="emit:5711d81f67db24"}
+:::
+::: {.iv-anchor emission_id="emit:ba5a8b5614b4ed"}
+:::
 
 Derivation: _\*rústō_ yields regular _rost_; the Old English form here is _rust_ (unexplained exception).
 
@@ -14796,10 +15237,14 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 ## wolf — OE _wulf_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bolt@\iventry{bolt}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wulf@\iventry{wulf}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wulfaz@\iventry{*wúlfaz}{}}
-\index[iv]{09ohg@\ivlangheader{Old High German}{}!wolf@\iventry{wolf}{}}
+::: {.iv-anchor emission_id="emit:61fdc22455f61e"}
+:::
+::: {.iv-anchor emission_id="emit:4a790e6ace095e"}
+:::
+::: {.iv-anchor emission_id="emit:f50ff17489f04b"}
+:::
+::: {.iv-anchor emission_id="emit:e59cbf6405540c"}
+:::
 
 Derivation: _\*wúlfaz_ yields regular _wolf_; the Old English form here is _wulf_ (unexplained exception).
 
@@ -14900,9 +15345,12 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 
 ## wool — OE _wull_
 
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!full@\iventry{full}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wull@\iventry{wull}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wullo@\iventry{*wúllō}{}}
+::: {.iv-anchor emission_id="emit:693d1c16712b26"}
+:::
+::: {.iv-anchor emission_id="emit:ab4cc0799e82e3"}
+:::
+::: {.iv-anchor emission_id="emit:aa145bd557361f"}
+:::
 
 Derivation: _\*wúllō_ yields regular _woll_; the Old English form here is _wull_ (unexplained exception).
 

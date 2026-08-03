@@ -3,22 +3,16 @@
 
 Two render modes are supported:
 
-``raw``   (default, production)
+``anchor``   (default, production)
+    Non-explicit emissions are rendered as strict ``.iv-anchor`` block
+    markers. Lua resolves each ``emission_id`` through
+    ``book_emissions.tsv`` and emits the precomputed command verbatim.
+    This is the canonical production path.
+
+``raw``   (legacy parity mode; test-only)
     Non-explicit index emissions are inserted as raw ``\\index[iv]{...}``
-    commands in the Markdown.  This is the canonical production path used by
-    ``main()`` and the Docker build.  The output must be byte-identical to the
-    tracked ``capr_book_draft_alpha_01.md``.
-
-``anchor``  (shadow validation only — never written to the canonical path)
-    Non-explicit emissions are replaced by strict ``.iv-anchor`` block markers::
-
-        ::: {.iv-anchor emission_id="emit:xxx"}
-        :::
-
-    The Lua filter looks up each ``emission_id`` in ``book_emissions.tsv`` and
-    emits the Python-precomputed ``index_command`` verbatim.  This mode is used
-    by ``check_anchor_shadow.py`` to prove that the anchor path produces exactly
-    the same ``\\index[iv]`` commands as the raw path.
+    commands directly into Markdown. This mode exists only for Stage 2
+    parity/comparison checks and must not be used for production output.
 """
 from __future__ import annotations
 
@@ -186,24 +180,39 @@ def annotate_explicit_tags_with_source_ref(path: Path, text: str) -> str:
 def _render_emissions(
     emissions: list[BookEmission],
     render_mode: str,
+    emission_trace: list[BookEmission] | None = None,
+    seen_trace_ids: set[str] | None = None,
 ) -> list[str]:
     """Convert a list of BookEmissions to renderable strings for the given mode.
 
     raw:    one ``\\index[iv]{...}`` string per emission
     anchor: one ``::: {.iv-anchor emission_id="emit:..."}\n:::`` block per emission
     """
-    if render_mode == "raw":
-        return [e.as_raw() for e in emissions]
-    elif render_mode == "anchor":
-        return [e.as_anchor() for e in emissions]
-    else:
-        raise ValueError(f"Unknown render_mode {render_mode!r}; expected 'raw' or 'anchor'")
+    rendered: list[str] = []
+    for e in emissions:
+        if emission_trace is not None:
+            if seen_trace_ids is not None and e.emission_id in seen_trace_ids:
+                raise ValueError(
+                    f"Duplicate non-explicit emission_id in rendering trace: {e.emission_id}"
+                )
+            emission_trace.append(e)
+            if seen_trace_ids is not None:
+                seen_trace_ids.add(e.emission_id)
+        if render_mode == "raw":
+            rendered.append(e.as_raw())
+        elif render_mode == "anchor":
+            rendered.append(e.as_anchor())
+        else:
+            raise ValueError(f"Unknown render_mode {render_mode!r}; expected 'raw' or 'anchor'")
+    return rendered
 
 
 def inject_line_commands(
     path: Path,
     line_emissions: dict[str, dict[int, list[BookEmission]]],
-    render_mode: str = "raw",
+    render_mode: str = "anchor",
+    emission_trace: list[BookEmission] | None = None,
+    seen_trace_ids: set[str] | None = None,
 ) -> str:
     rel = path.relative_to(REPO_ROOT).as_posix()
     emissions_for_file = line_emissions.get(rel, {})
@@ -212,7 +221,14 @@ def inject_line_commands(
     for idx, line in enumerate(lines, start=1):
         out.append(annotate_explicit_tags_in_line(line, rel, idx))
         if idx in emissions_for_file:
-            out.extend(_render_emissions(emissions_for_file[idx], render_mode))
+            out.extend(
+                _render_emissions(
+                    emissions_for_file[idx],
+                    render_mode,
+                    emission_trace=emission_trace,
+                    seen_trace_ids=seen_trace_ids,
+                )
+            )
     return "\n".join(out).rstrip()
 
 
@@ -320,7 +336,9 @@ _PART_HEADING_RE = re.compile(r"^## Part [IVX]+\.\s+(.+)$")
 def transform_lexical(
     text: str,
     emissions_by_ref: dict[str, list[BookEmission]],
-    render_mode: str = "raw",
+    render_mode: str = "anchor",
+    emission_trace: list[BookEmission] | None = None,
+    seen_trace_ids: set[str] | None = None,
 ) -> str:
     """Emit lexical material at correct heading levels for the book.
 
@@ -373,7 +391,14 @@ def transform_lexical(
             emissions = emissions_by_ref.get(ref, [])
             if emissions:
                 out.append("")
-                out.extend(_render_emissions(emissions, render_mode))
+                out.extend(
+                    _render_emissions(
+                        emissions,
+                        render_mode,
+                        emission_trace=emission_trace,
+                        seen_trace_ids=seen_trace_ids,
+                    )
+                )
         elif line.startswith("#### "):
             # Entry subsection (Derivation trace, Reconstruction...) → ###
             out.append("###" + line[4:])
@@ -385,30 +410,51 @@ def transform_lexical(
     return "\n".join(out).rstrip()
 
 
-def build_book_markdown(render_mode: str = "raw") -> str:
+def build_book_markdown(
+    render_mode: str = "anchor",
+    emission_trace: list[BookEmission] | None = None,
+) -> str:
     """Assemble the full book Markdown.
 
     ``render_mode`` controls how non-explicit index emissions are rendered:
 
-    ``"raw"``     (default) — inserts precomputed ``\\index[iv]{...}`` commands.
-                  Used by ``main()`` and the Docker build.  The output must be
-                  byte-identical to the tracked ``capr_book_draft_alpha_01.md``.
+    ``"anchor"``  (default, production) — inserts ``.iv-anchor`` block markers
+                  carrying only ``emission_id``.
 
-    ``"anchor"``  — inserts ``.iv-anchor`` block markers with ``emission_id``
-                  attributes only.  Used by the shadow check to prove that the
-                  Lua anchor path produces the same commands as the raw path.
-                  Never written to the canonical output file.
+    ``"raw"``     (legacy parity mode) — inserts precomputed
+                  ``\\index[iv]{...}`` commands directly.
+
+    If ``emission_trace`` is provided, every non-explicit emission is appended
+    to the list at the exact point where it is rendered. This captures true
+    assembled traversal order (heading/line site order plus within-site order).
     """
     if render_mode not in ("raw", "anchor"):
         raise ValueError(f"render_mode must be 'raw' or 'anchor', got {render_mode!r}")
     emissions_by_ref, line_emissions, _ = load_production_rows()
-    intro = inject_line_commands(INTRO_PATH, line_emissions, render_mode)
-    chronology = transform_chronology(inject_line_commands(CHRONOLOGY_PATH, line_emissions, render_mode))
+    seen_trace_ids: set[str] | None = set() if emission_trace is not None else None
+    intro = inject_line_commands(
+        INTRO_PATH,
+        line_emissions,
+        render_mode,
+        emission_trace=emission_trace,
+        seen_trace_ids=seen_trace_ids,
+    )
+    chronology = transform_chronology(
+        inject_line_commands(
+            CHRONOLOGY_PATH,
+            line_emissions,
+            render_mode,
+            emission_trace=emission_trace,
+            seen_trace_ids=seen_trace_ids,
+        )
+    )
     lexical_text = annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8"))
     lexical = transform_lexical(
         strip_lexical_terminal_references(lexical_text),
         emissions_by_ref,
         render_mode,
+        emission_trace=emission_trace,
+        seen_trace_ids=seen_trace_ids,
     )
     index_parts = [r"\printindex[iv]"]
     parts = [
@@ -432,7 +478,7 @@ def build_book_markdown(render_mode: str = "raw") -> str:
 
 
 def main() -> None:
-    OUTPUT_PATH.write_text(build_book_markdown(), encoding="utf-8")
+    OUTPUT_PATH.write_text(build_book_markdown(render_mode="anchor"), encoding="utf-8")
     print(f"Generated {OUTPUT_PATH}")
 
 

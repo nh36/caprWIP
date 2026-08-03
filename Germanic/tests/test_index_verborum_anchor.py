@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for the .iv-anchor shadow-mode emission infrastructure.
+"""Tests for the Stage 2 production .iv-anchor emission infrastructure.
 
 Run: cd Germanic/tests && python3 -m unittest test_index_verborum_anchor
 
@@ -8,12 +8,13 @@ Covers:
   * invalid plan loader tests (14 cases)
   * invalid marker contract tests (13 cases)
   * production builder raw/anchor mode invariants
-  * full shadow parity check
+  * full production anchor parity check
 """
 from __future__ import annotations
 
 import csv
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -230,16 +231,12 @@ class ValidPlanAndMarkerTests(unittest.TestCase):
             self.assertEqual(proc.returncode, 0, proc.stderr[:300])
             self.assertIn(row["index_command"], proc.stdout)
 
-    def test_builder_raw_mode_byte_identical(self):
-        """Shared builder raw mode is byte-identical to tracked canonical MD."""
+    def test_builder_raw_mode_available_for_parity(self):
+        """Legacy raw mode remains available as an explicit parity fixture."""
         from build_capr_book_draft import build_book_markdown
-        prod = ASSEMBLY / "capr_book_draft_alpha_01.md"
-        if not prod.exists():
-            self.skipTest("Production MD not present")
-        self.assertEqual(
-            build_book_markdown(render_mode="raw"),
-            prod.read_text(encoding="utf-8"),
-        )
+        raw_md = build_book_markdown(render_mode="raw")
+        self.assertIn(r"\index[iv]{", raw_md)
+        self.assertNotIn(".iv-anchor", raw_md)
 
     def test_builder_anchor_mode_produces_448_ids(self):
         """Shared builder anchor mode produces exactly 448 anchor block markers."""
@@ -253,9 +250,9 @@ class ValidPlanAndMarkerTests(unittest.TestCase):
         self.assertEqual(len(ids), 448, f"Expected 448 anchor IDs, got {len(ids)}")
         self.assertEqual(len(set(ids)), 448, "All anchor IDs must be unique")
 
-    def test_full_shadow_check_passes(self):
-        """Full shadow parity check passes."""
-        from check_iv_anchor_shadow import check
+    def test_full_production_check_passes(self):
+        """Full production parity check passes."""
+        from check_iv_anchor_production import check
         self.assertTrue(check(), "Shadow parity check must pass")
 
 
@@ -441,12 +438,172 @@ class InvalidMarkerTests(unittest.TestCase):
         md = f'[]{{.ex .iv-anchor emission_id="{eid}"}}\n'
         self._fail_marker(md, "contradictory class")
 
-    def test_production_md_has_no_anchor_markers(self):
-        """Regression: the production capr_book_draft_alpha_01.md has no anchor markers."""
+    def test_production_md_has_anchors(self):
+        """Stage 2 production Markdown now contains generated .iv-anchor markers."""
         prod_md = ASSEMBLY / "capr_book_draft_alpha_01.md"
         if not prod_md.exists():
             self.skipTest("Production MD not present")
-        self.assertNotIn(".iv-anchor", prod_md.read_text(encoding="utf-8"))
+        content = prod_md.read_text(encoding="utf-8")
+        self.assertIn(".iv-anchor", content)
+
+
+@unittest.skipIf(shutil.which("pandoc") is None, "pandoc not available")
+class Stage2ProductionParityTests(unittest.TestCase):
+    """Stage 2 production-activation checks."""
+
+    def _canonical_anchor_md(self) -> str:
+        return (ASSEMBLY / "capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
+
+    def _expected_nonexplicit_ids(self) -> list[str]:
+        rows = list(csv.DictReader((BOOK / "index_verborum_book_emissions.tsv").open(encoding="utf-8"), delimiter="\t"))
+        return [
+            r["emission_id"]
+            for r in rows
+            if (r.get("emission_path") or "").strip() in ("heading_injection", "line_injection")
+        ]
+
+    def test_build_book_markdown_defaults_to_anchor_mode(self):
+        from build_capr_book_draft import build_book_markdown
+        md_default = build_book_markdown()
+        md_anchor = build_book_markdown(render_mode="anchor")
+        self.assertEqual(md_default, md_anchor)
+        self.assertIn(".iv-anchor", md_default)
+
+    def test_default_builder_output_equals_tracked_canonical(self):
+        from build_capr_book_draft import build_book_markdown
+        self.assertEqual(build_book_markdown(), self._canonical_anchor_md())
+
+    def test_canonical_markdown_anchor_counts(self):
+        content = self._canonical_anchor_md()
+        block_ids = re.findall(r':::\s*\{[^}]*\.iv-anchor[^}]*emission_id="([^"]+)"[^}]*\}', content)
+        inline_ids = re.findall(r'\[\]\{[^}]*\.iv-anchor[^}]*emission_id="([^"]+)"[^}]*\}', content)
+        self.assertEqual(len(block_ids), 448)
+        self.assertEqual(len(inline_ids), 0)
+
+    def test_canonical_has_zero_raw_nonexplicit_commands(self):
+        content = self._canonical_anchor_md()
+        raw_nonexplicit = [
+            ln for ln in content.splitlines()
+            if ln.strip().startswith(r"\index[iv]{")
+        ]
+        self.assertEqual(raw_nonexplicit, [])
+
+    def test_canonical_anchor_ids_match_expected_set(self):
+        content = self._canonical_anchor_md()
+        actual = re.findall(r':::\s*\{[^}]*\.iv-anchor[^}]*emission_id="([^"]+)"[^}]*\}', content)
+        self.assertEqual(set(actual), set(self._expected_nonexplicit_ids()))
+        self.assertEqual(len(actual), len(set(actual)))
+
+    def test_anchor_sequence_equals_production_rendering_trace(self):
+        from build_capr_book_draft import build_book_markdown
+        trace = []
+        anchor_md = build_book_markdown(render_mode="anchor", emission_trace=trace)
+        ids_from_md = re.findall(r':::\s*\{[^}]*\.iv-anchor[^}]*emission_id="([^"]+)"[^}]*\}', anchor_md)
+        ids_from_trace = [e.emission_id for e in trace]
+        self.assertEqual(ids_from_md, ids_from_trace)
+        self.assertEqual(len(ids_from_trace), 448)
+
+    def test_raw_and_anchor_trace_records_equal(self):
+        from build_capr_book_draft import build_book_markdown
+        raw_trace = []
+        anchor_trace = []
+        build_book_markdown(render_mode="raw", emission_trace=raw_trace)
+        build_book_markdown(render_mode="anchor", emission_trace=anchor_trace)
+        self.assertEqual(raw_trace, anchor_trace)
+        self.assertEqual(len(raw_trace), 448)
+        self.assertEqual(len({e.emission_id for e in raw_trace}), 448)
+
+    def test_no_explicit_tag_ids_in_canonical_anchors(self):
+        rows = list(csv.DictReader((BOOK / "index_verborum_book_emissions.tsv").open(encoding="utf-8"), delimiter="\t"))
+        explicit_ids = {r["emission_id"] for r in rows if (r.get("emission_path") or "").strip() == "explicit_tag"}
+        content = self._canonical_anchor_md()
+        ids = set(re.findall(r':::\s*\{[^}]*\.iv-anchor[^}]*emission_id="([^"]+)"[^}]*\}', content))
+        self.assertEqual(explicit_ids.intersection(ids), set())
+
+    def test_production_checker_detects_deleted_anchor(self):
+        from check_iv_anchor_production import check
+        content = self._canonical_anchor_md()
+        mutated = re.sub(
+            r'\n?:::\s*\{[^}]*\.iv-anchor[^}]*emission_id="[^"]+"[^}]*\}\n:::\n?',
+            "\n",
+            content,
+            count=1,
+        )
+        self.assertFalse(check(canonical_md_override=mutated))
+
+    def test_production_checker_detects_duplicate_anchor(self):
+        from check_iv_anchor_production import check
+        content = self._canonical_anchor_md()
+        m = re.search(r'(:::\s*\{[^}]*\.iv-anchor[^}]*emission_id="[^"]+"[^}]*\}\n:::\n?)', content)
+        self.assertIsNotNone(m)
+        mutated = content + "\n" + m.group(1)
+        self.assertFalse(check(canonical_md_override=mutated))
+
+    def test_production_checker_detects_unknown_anchor(self):
+        from check_iv_anchor_production import check
+        content = self._canonical_anchor_md()
+        mutated = content + '\n::: {.iv-anchor emission_id="emit:unknown_nonexistent"}\n:::\n'
+        self.assertFalse(check(canonical_md_override=mutated))
+
+    def test_production_checker_detects_raw_nonexplicit_in_anchor_md(self):
+        from check_iv_anchor_production import check
+        content = self._canonical_anchor_md()
+        mutated = content.replace(
+            "\\printindex[iv]",
+            "\\index[iv]{02oe@\\ivlangheader{Old English}{West Saxon normalization unmarked}!intruder@\\iventry{intruder}{}}\n\\printindex[iv]",
+            1,
+        )
+        self.assertFalse(check(canonical_md_override=mutated))
+
+    def test_production_checker_detects_swapped_same_command_anchor_ids(self):
+        from check_iv_anchor_production import check
+        rows = list(csv.DictReader((BOOK / "index_verborum_book_emissions.tsv").open(encoding="utf-8"), delimiter="\t"))
+        groups: dict[str, list[str]] = {}
+        for r in rows:
+            if (r.get("emission_path") or "").strip() not in ("heading_injection", "line_injection"):
+                continue
+            groups.setdefault(r["index_command"], []).append(r["emission_id"])
+        pair = None
+        for ids in groups.values():
+            if len(ids) >= 2:
+                pair = (ids[0], ids[1])
+                break
+        self.assertIsNotNone(pair, "Need at least one same-command pair")
+        a, b = pair
+        content = self._canonical_anchor_md()
+        # swap two IDs with same command text; command parity alone would miss this
+        tmp = "__SWAP_TMP__"
+        mutated = content.replace(f'emission_id="{a}"', f'emission_id="{tmp}"')
+        mutated = mutated.replace(f'emission_id="{b}"', f'emission_id="{a}"')
+        mutated = mutated.replace(f'emission_id="{tmp}"', f'emission_id="{b}"')
+        self.assertFalse(check(canonical_md_override=mutated))
+
+    def test_narrow_tex_normalization_accepts_index_whitespace_only(self):
+        from check_iv_anchor_production import _narrow_tex_normalize
+        base = "A\n\\index[iv]{X}\nB\n"
+        variant = "A\n\n\\index[iv]{X}\n\nB\n"
+        self.assertEqual(_narrow_tex_normalize(base), _narrow_tex_normalize(variant))
+
+    def test_narrow_tex_normalization_rejects_paragraph_boundary_change(self):
+        from check_iv_anchor_production import _narrow_tex_normalize
+        a = "Para one.\n\nPara two.\n\\index[iv]{X}\n"
+        b = "Para one. Para two.\n\\index[iv]{X}\n"
+        self.assertNotEqual(_narrow_tex_normalize(a), _narrow_tex_normalize(b))
+
+    def test_narrow_tex_normalization_rejects_changed_heading_or_prose(self):
+        from check_iv_anchor_production import _narrow_tex_normalize
+        a = "\\section{Heading A}\nText.\n\\index[iv]{X}\n"
+        b = "\\section{Heading B}\nText.\n\\index[iv]{X}\n"
+        self.assertNotEqual(_narrow_tex_normalize(a), _narrow_tex_normalize(b))
+
+    def test_raw_and_anchor_modes_emit_same_ordered_commands(self):
+        from check_iv_anchor_production import _extract_iv_commands, _run_pandoc
+        from build_capr_book_draft import build_book_markdown
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            raw_tex = _run_pandoc(build_book_markdown(render_mode="raw"), tmp_path, "raw")
+            anchor_tex = _run_pandoc(build_book_markdown(render_mode="anchor"), tmp_path, "anchor")
+        self.assertEqual(_extract_iv_commands(raw_tex), _extract_iv_commands(anchor_tex))
 
 
 if __name__ == "__main__":

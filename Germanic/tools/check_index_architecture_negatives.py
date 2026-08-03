@@ -19,6 +19,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
+CANONICAL_MD_PATH = REPO_ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md"
 
 _FAILURES: list[str] = []
 _PASSES: int = 0
@@ -282,6 +283,62 @@ def test_valid_recon_accepted() -> None:
     assert not _doubled_star_hits(good_tex)
 
 
+# ── Stage 2 anchor-architecture fixtures ──────────────────────────────────────
+
+def _assert_anchor_production_check_fails(mutated_md: str) -> None:
+    from check_iv_anchor_production import check
+    assert not check(canonical_md_override=mutated_md), (
+        "Mutated canonical anchor Markdown was incorrectly accepted by "
+        "check_iv_anchor_production.py"
+    )
+
+
+def test_canonical_raw_non_explicit_command_rejected() -> None:
+    canonical = CANONICAL_MD_PATH.read_text(encoding="utf-8")
+    mutated = canonical.replace(
+        r"\printindex[iv]",
+        r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!intruder@\iventry{intruder}{}}" + "\n" + r"\printindex[iv]",
+        1,
+    )
+    _assert_anchor_production_check_fails(mutated)
+
+
+def test_missing_planned_anchor_rejected() -> None:
+    canonical = CANONICAL_MD_PATH.read_text(encoding="utf-8")
+    mutated = re.sub(
+        r'\n?:::\s*\{[^}]*\.iv-anchor[^}]*emission_id="[^"]+"[^}]*\}\n:::\n?',
+        "\n",
+        canonical,
+        count=1,
+    )
+    _assert_anchor_production_check_fails(mutated)
+
+
+def test_duplicate_anchor_rejected() -> None:
+    canonical = CANONICAL_MD_PATH.read_text(encoding="utf-8")
+    m = re.search(r'(:::\s*\{[^}]*\.iv-anchor[^}]*emission_id="[^"]+"[^}]*\}\n:::\n?)', canonical)
+    assert m, "Fixture requires at least one anchor block"
+    mutated = canonical + "\n" + m.group(1)
+    _assert_anchor_production_check_fails(mutated)
+
+
+def test_unknown_anchor_rejected() -> None:
+    canonical = CANONICAL_MD_PATH.read_text(encoding="utf-8")
+    mutated = canonical + '\n::: {.iv-anchor emission_id="emit:unknown_nonexistent"}\n:::\n'
+    _assert_anchor_production_check_fails(mutated)
+
+
+def test_explicit_tag_anchor_rejected() -> None:
+    import csv
+    with (REPO_ROOT / "Germanic/docs/book/index_verborum_book_emissions.tsv").open(encoding="utf-8") as f:
+        rows = list(csv.DictReader(f, delimiter="\t"))
+    explicit_row = next(r for r in rows if (r.get("emission_path") or "").strip() == "explicit_tag")
+    eid = explicit_row["emission_id"]
+    canonical = CANONICAL_MD_PATH.read_text(encoding="utf-8")
+    mutated = canonical + f'\n::: {{.iv-anchor emission_id="{eid}"}}\n:::\n'
+    _assert_anchor_production_check_fails(mutated)
+
+
 # ── Runner ───────────────────────────────────────────────────────────────────
 
 def main() -> int:
@@ -311,6 +368,11 @@ def main() -> int:
     # Positive fixtures: good inputs must be accepted without error.
     expect_pass("valid unified architecture is accepted", test_valid_unified_architecture_accepted)
     expect_pass("valid \\Recon{júką} not flagged as doubled-star", test_valid_recon_accepted)
+    expect_pass("canonical raw non-explicit command rejected by production checker", test_canonical_raw_non_explicit_command_rejected)
+    expect_pass("missing planned anchor rejected by production checker", test_missing_planned_anchor_rejected)
+    expect_pass("duplicate anchor rejected by production checker", test_duplicate_anchor_rejected)
+    expect_pass("unknown anchor rejected by production checker", test_unknown_anchor_rejected)
+    expect_pass("explicit_tag anchor rejected by production checker", test_explicit_tag_anchor_rejected)
 
     # Live-TeX check
     expect_pass("unknown language not present in real generated TeX", test_unknown_language_would_produce_fallback_prefix)

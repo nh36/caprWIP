@@ -1273,7 +1273,21 @@ def assert_reader_failure_pair_roles() -> None:
 
 
 def assert_reconstructed_oe_index_commands() -> None:
+    import csv
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
+    emissions_path = REPO_ROOT / "Germanic/docs/book/index_verborum_book_emissions.tsv"
+    with emissions_path.open(encoding="utf-8") as f:
+        emission_rows = list(csv.DictReader(f, delimiter="\t"))
+
+    def _find_anchor_id_for_command(index_command: str) -> str | None:
+        for row in emission_rows:
+            if (row.get("index_command") or "").strip() != index_command:
+                continue
+            if (row.get("emission_path") or "").strip() not in ("heading_injection", "line_injection"):
+                continue
+            return (row.get("emission_id") or "").strip() or None
+        return None
+
     for heading, needle in (
         ("## knob — OE _\\*cnobba_", r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cnobba@\iventry{*cnobba}{}}"),
         ("## reek — OE _\\*rēac_", r"\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!reac@\iventry{*rēac}{}}"),
@@ -1281,7 +1295,18 @@ def assert_reconstructed_oe_index_commands() -> None:
     ):
         start = text.index(heading)
         window = text[start : start + 400]
-        assert needle in window, f"Missing expected index command near {heading!r}: {needle!r}"
+        if needle in window:
+            continue
+        anchor_id = _find_anchor_id_for_command(needle)
+        if anchor_id is None:
+            raise AssertionError(
+                f"Missing expected index command near {heading!r}: {needle!r} "
+                "(and no matching non-explicit emission_id found)"
+            )
+        anchor_marker = f'::: {{.iv-anchor emission_id="{anchor_id}"}}'
+        assert anchor_marker in window, (
+            f"Missing expected anchor marker near {heading!r}: {anchor_marker!r}"
+        )
 
 
 def main() -> None:
