@@ -597,35 +597,80 @@ local function ensure_emission_plan_loaded()
 end
 
 -- ── .iv-anchor handler ────────────────────────────────────────────────────────
--- An .iv-anchor is a planned-emission anchor marker. It carries an emission_id
--- attribute that maps to a precomputed index_command in the emission plan.
+-- An .iv-anchor is a generated planned-emission anchor marker. It is not
+-- hand-authored scholarly markup; it carries only emission_id, which the
+-- Lua filter resolves against the precomputed emission plan.
 --
 -- Supported Pandoc forms:
 --
---   Inline: []{.iv-anchor emission_id="emit:xxx"}
 --   Block:  ::: {.iv-anchor emission_id="emit:xxx"}
 --           :::
 --
--- Both forms produce no visible output and emit the exact precomputed command.
--- The index_command is stored verbatim from the TSV; Lua does NOT reconstruct
--- it. This enforces the architectural contract that Python owns command
--- construction.
+--   Inline: []{.iv-anchor emission_id="emit:xxx"}
 --
--- Fail-closed on unknown emission_id — a missing plan entry is a build error.
+-- STRICT CONTRACT:
+--   * Only emission_id belongs on the marker. No semantic fields.
+--   * The anchor must be genuinely empty: no inline content (span), no blocks (div).
+--   * The emission_path in the plan must not be explicit_tag.
+--   * Each emission_id may fire at most once per Pandoc document.
+--   * The marker class must not co-occur with .iv, .recon, .pred, .lex, or .ex.
+--   * Block anchors emit a pandoc.RawBlock; inline anchors emit pandoc.RawInline.
+--   * No visible content is produced in any output format.
+--   * The index_command is stored verbatim and emitted without any modification.
+--
+-- Document-level duplicate tracking is reset at the start of each Pandoc run.
 
-local function anchor_to_index_command(emission_id)
-  if emission_id == nil or emission_id == "" then
-    error("index_verborum_filter.lua: .iv-anchor span has blank emission_id")
+local emitted_anchor_ids = {}   -- reset per document
+
+local CONTRADICTORY_ANCHOR_CLASSES = {
+  iv = true, recon = true, pred = true, lex = true, ex = true,
+}
+
+local function validate_anchor_class_or_fail(classes, context)
+  for _, cls in ipairs(classes) do
+    if CONTRADICTORY_ANCHOR_CLASSES[cls] then
+      error("index_verborum_filter.lua: .iv-anchor " .. context
+            .. " has contradictory class '." .. cls
+            .. "' — anchors must not co-occur with semantic span classes")
+    end
   end
+end
+
+local function anchor_emit(emission_id, context)
+  -- 1. Blank emission_id
+  if emission_id == nil or emission_id == "" then
+    error("index_verborum_filter.lua: .iv-anchor " .. context
+          .. " has blank or missing emission_id")
+  end
+
+  -- 2. Load plan
   local plan = ensure_emission_plan_loaded()
   local record = plan[emission_id]
+
+  -- 3. Unknown emission_id
   if record == nil then
-    error("index_verborum_filter.lua: .iv-anchor emission_id '" .. emission_id
+    error("index_verborum_filter.lua: .iv-anchor " .. context
+          .. " emission_id '" .. emission_id
           .. "' not found in emission plan (" .. BOOK_EMISSIONS_TSV .. ")")
   end
-  -- Emit the exact precomputed command from the plan. Lua never reconstructs or
-  -- modifies index_command; Python owns the canonical command construction.
-  return pandoc.RawInline("latex", record.index_command)
+
+  -- 4. Explicit-tag emission must not be anchored
+  if record.emission_path == "explicit_tag" then
+    error("index_verborum_filter.lua: .iv-anchor " .. context
+          .. " emission_id '" .. emission_id
+          .. "' has emission_path=explicit_tag — explicit spans must use .iv, not .iv-anchor")
+  end
+
+  -- 5. Duplicate anchor in this document
+  if emitted_anchor_ids[emission_id] then
+    error("index_verborum_filter.lua: .iv-anchor " .. context
+          .. " emission_id '" .. emission_id
+          .. "' has already been anchored in this document (duplicate anchor)")
+  end
+  emitted_anchor_ids[emission_id] = true
+
+  -- Emit the exact precomputed command. Lua never reconstructs index_command.
+  return record.index_command
 end
 
 local function span_is_anchor(span)
@@ -637,8 +682,20 @@ end
 
 local function handle_anchor_span(span)
   if not span_is_anchor(span) then return nil end
+
+  -- Class contradictions
+  validate_anchor_class_or_fail(span.classes, "inline span")
+
+  -- Inline anchor must have no content (genuinely empty)
+  if #span.content > 0 then
+    error("index_verborum_filter.lua: .iv-anchor inline span with emission_id '"
+          .. (span.attributes["emission_id"] or "")
+          .. "' has non-empty inline content — anchors must be empty: []{.iv-anchor ...}")
+  end
+
   local emission_id = trim(span.attributes["emission_id"] or "")
-  return { anchor_to_index_command(emission_id) }
+  local cmd = anchor_emit(emission_id, "inline span")
+  return { pandoc.RawInline("latex", cmd) }
 end
 
 local function div_is_anchor(div)
@@ -650,19 +707,33 @@ end
 
 local function handle_anchor_div(div)
   if not div_is_anchor(div) then return nil end
+
+  -- Class contradictions
+  validate_anchor_class_or_fail(div.classes, "block div")
+
+  -- Block anchor must have no content blocks
+  if #div.content > 0 then
+    error("index_verborum_filter.lua: .iv-anchor block div with emission_id '"
+          .. (div.attributes["emission_id"] or "")
+          .. "' has non-empty block content — anchors must be empty: ::: {.iv-anchor ...}\\n:::")
+  end
+
   local emission_id = trim(div.attributes["emission_id"] or "")
-  -- Block anchor emits as a paragraph containing the RawInline command,
-  -- followed by no visible content.
-  return pandoc.Plain({ anchor_to_index_command(emission_id) })
+  local cmd = anchor_emit(emission_id, "block div")
+  -- Block anchor emits a raw block (not a Plain paragraph) so it disappears
+  -- from non-LaTeX output without leaving a blank paragraph.
+  return pandoc.RawBlock("latex", cmd)
 end
 
 function Pandoc(doc)
+  -- Reset per-document duplicate-anchor tracking.
+  emitted_anchor_ids = {}
   local blocks = {}
   for _, block in ipairs(doc.blocks) do
     if block.t == "Div" and block.identifier == "refs" then
       table.insert(blocks, block)
     elseif block.t == "Div" and div_is_anchor(block) then
-      -- Block-level .iv-anchor: emit precomputed command, no visible output.
+      -- Block-level .iv-anchor: emit precomputed command via RawBlock.
       table.insert(blocks, handle_anchor_div(block))
     else
       -- Walk sub-tree for both .iv spans and inline .iv-anchor spans.

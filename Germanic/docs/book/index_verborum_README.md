@@ -320,20 +320,62 @@ The build includes two complementary parity checks:
    expected heading/line-injected command appears in the generated TeX and that
    no spurious commands appear.
 
-## Current emitter architecture and deferred migration
+## Current emitter architecture and staged migration
 
-Current state is intentionally **dual-emitter**:
+The production build uses a **dual-emitter** architecture:
 
-1. explicit visible `.iv` spans emit through the Lua filter;
-2. non-explicit structured occurrences emit via Python heading/line injection,
-   planned by `index_verborum_emission.py`.
+1. Explicit visible `.iv` spans emit through the Lua filter (`span_to_index`
+   path in `index_verborum_filter.lua`).
+2. Non-explicit structured occurrences (lexical heading and line injections)
+   emit via Python, which inserts precomputed raw `\index[iv]{...}` commands
+   directly into the assembled Markdown.
 
-Deferred (not implemented in this pass):
+### `.iv-anchor` marker syntax
 
-1. replace Python raw-command insertion with semantic `.iv-anchor` markers;
-2. move to single final Lua emission for all occurrences;
-3. move accepted broad-prose heading references to exact passage-adjacent markers;
-4. TeX-level occurrence-ID emission logging.
+Generated `.iv-anchor` markers are infrastructure, **not hand-authored
+scholarly markup**. They carry only `emission_id`; all semantic fields are
+resolved from `book_emissions.tsv` at build time.
+
+```markdown
+::: {.iv-anchor emission_id="emit:abc"}
+:::
+```
+
+or inline:
+
+```markdown
+[]{.iv-anchor emission_id="emit:abc"}
+```
+
+`book_emissions.tsv` is authoritative. Python owns occurrence modelling,
+emission policy, collapsing, representative selection, variety validation,
+and canonical `index_command` construction. Lua places the precomputed command
+verbatim; it never reconstructs or modifies `index_command`.
+
+### Staged migration plan
+
+**Stage 1 (current — shadow equivalence proven, production unchanged)**
+- `check_iv_anchor_shadow.py` proves exact raw/anchor emission parity:
+  448 `.iv-anchor` block markers, 1865 commands matching the canonical plan,
+  ordered sequences equal, TeX equal after blank-line normalisation.
+- Production `capr_book_draft_alpha_01.md` uses raw Python commands;
+  no `.iv-anchor` markers appear in the production output.
+
+**Stage 2 (deferred)**
+- Switch non-explicit heading and line emissions from raw Python injection
+  to production `.iv-anchor` markers in the assembled Markdown.
+- Single Lua emission path for all non-explicit occurrences.
+
+**Stage 3 (deferred)**
+- Make explicit visible `.iv` spans plan-driven through `occ_id` so Lua no
+  longer independently reconstructs their index commands.
+
+**Stage 4 (deferred)**
+- Move accepted broad-prose emissions from approximate heading sites to
+  exact passage-adjacent `.iv-anchor` markers.
+
+**Stage 5 (deferred)**
+- Add TeX-level occurrence-ID and emission-ID logging.
 - Structured lexical fields, generated lexical headings/metadata, selected
   derivational inputs, explicit `.iv` tags, and curated overrides feed the
   **production** index.
