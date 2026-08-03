@@ -389,14 +389,28 @@ raw non-explicit `\index[iv]{...}` commands.
 - `.pred` and unindexed `.recon` spans remain visible scholarly markup outside
   the explicit plan.
 
-**Stage 4 (deferred)**
-- Move accepted broad-prose emissions from approximate heading sites to
-  exact passage-adjacent `.iv-anchor` markers.
+**Stage 4A (exploratory, shadow-only)**
+- Stage 4A evaluates reversible passage-adjacent placement for a bounded subset
+  of accepted `broad_prose_decision` emissions.
+- Production placement remains unchanged; canonical production Markdown and TSV
+  plans are still built from the established heading/line emission plan.
+- Semantic acceptance remains unchanged: occurrence/emission identities,
+  representative selection, collapse relations, and command text are preserved.
+- Movable emissions are shadow-placed beside the representative passage only.
+  Mixed-scope and unresolved cases are retained at heading placement.
+- Page-reference and pagination impacts are measured before any production
+  activation decision.
+- Current source line locations, block boundaries, and observed placement counts
+  are treated as regenerable observations, not permanent architecture.
+
+**Stage 4B (future, review-gated)**
+- Possible production activation of passage-adjacent placement after editorial
+  review of Stage 4A impact measurements.
 
 **Stage 5 (deferred)**
 - Add TeX-level occurrence-ID and emission-ID logging.
 
-At the end of Stage 3B:
+At the end of Stage 3B (with Stage 4A remaining shadow-only):
 - anchors are generated infrastructure, not hand-authored scholarly markup;
 - `book_emissions.tsv` is authoritative for non-explicit command text;
 - Python owns modelling/policy/collapse/representatives/command construction;

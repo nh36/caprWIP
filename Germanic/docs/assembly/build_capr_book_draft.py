@@ -19,7 +19,7 @@ from __future__ import annotations
 import csv
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -37,6 +37,7 @@ MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
 OUTPUT_PATH = SCRIPT_DIR / "capr_book_draft_alpha_01.md"
 NESTED_RECON_IV_RE = re.compile(r"\[\[(?P<form>[^\]]+)\]\{\.recon\}(?P<tail>.*?)\]\{(?P<attrs>[^}]*)\}")
 EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
+ANCHOR_ID_RE = re.compile(r':::\s*\{[^}]*\.iv-anchor[^}]*emission_id="([^"]+)"[^}]*\}\s*\n:::', re.MULTILINE)
 
 
 # ── Emission record ───────────────────────────────────────────────────────────
@@ -413,6 +414,8 @@ def transform_lexical(
 def build_book_markdown(
     render_mode: str = "anchor",
     emission_trace: list[BookEmission] | None = None,
+    lexical_markdown_override: str | None = None,
+    preplaced_nonexplicit_emission_ids: set[str] | None = None,
 ) -> str:
     """Assemble the full book Markdown.
 
@@ -431,6 +434,39 @@ def build_book_markdown(
     if render_mode not in ("raw", "anchor"):
         raise ValueError(f"render_mode must be 'raw' or 'anchor', got {render_mode!r}")
     emissions_by_ref, line_emissions, _ = load_production_rows()
+
+    preplaced_ids = set(preplaced_nonexplicit_emission_ids or set())
+    if preplaced_ids and render_mode != "anchor":
+        raise ValueError("preplaced_nonexplicit_emission_ids requires render_mode='anchor'")
+
+    if preplaced_ids:
+        known_heading_ids: set[str] = set()
+        for ref in emissions_by_ref.values():
+            for emission in ref:
+                known_heading_ids.add(emission.emission_id)
+        known_line_ids: set[str] = set()
+        for by_line in line_emissions.values():
+            for emissions in by_line.values():
+                for emission in emissions:
+                    known_line_ids.add(emission.emission_id)
+        known_nonexplicit = known_heading_ids | known_line_ids
+        unknown = sorted(preplaced_ids - known_nonexplicit)
+        if unknown:
+            raise ValueError(f"Unknown preplaced non-explicit emission IDs: {unknown[:5]}")
+        bad_line_ids = sorted(preplaced_ids & known_line_ids)
+        if bad_line_ids:
+            raise ValueError(
+                "Preplaced non-explicit emission IDs must be heading_injection rows only; "
+                f"line_injection IDs found: {bad_line_ids[:5]}"
+            )
+
+    effective_emissions_by_ref = emissions_by_ref
+    if preplaced_ids:
+        effective_emissions_by_ref = {}
+        for ref, emissions in emissions_by_ref.items():
+            effective_emissions_by_ref[ref] = [
+                emission for emission in emissions if emission.emission_id not in preplaced_ids
+            ]
     seen_trace_ids: set[str] | None = set() if emission_trace is not None else None
     intro = inject_line_commands(
         INTRO_PATH,
@@ -448,10 +484,27 @@ def build_book_markdown(
             seen_trace_ids=seen_trace_ids,
         )
     )
-    lexical_text = annotate_explicit_tags_with_source_ref(LEXICAL_PATH, LEXICAL_PATH.read_text(encoding="utf-8"))
+    lexical_source = (
+        lexical_markdown_override
+        if lexical_markdown_override is not None
+        else LEXICAL_PATH.read_text(encoding="utf-8")
+    )
+    lexical_text = annotate_explicit_tags_with_source_ref(LEXICAL_PATH, lexical_source)
+    if preplaced_ids:
+        anchor_ids = ANCHOR_ID_RE.findall(lexical_text)
+        anchor_counter = Counter(anchor_ids)
+        duplicate_ids = [eid for eid, count in anchor_counter.items() if count > 1]
+        if duplicate_ids:
+            raise ValueError(f"Duplicate passage anchor IDs in lexical markdown override: {duplicate_ids[:5]}")
+        missing_preplaced = [eid for eid in sorted(preplaced_ids) if anchor_counter.get(eid, 0) != 1]
+        if missing_preplaced:
+            raise ValueError(
+                "Each preplaced ID must appear exactly once in lexical markdown override; "
+                f"missing/invalid IDs: {missing_preplaced[:5]}"
+            )
     lexical = transform_lexical(
         strip_lexical_terminal_references(lexical_text),
-        emissions_by_ref,
+        effective_emissions_by_ref,
         render_mode,
         emission_trace=emission_trace,
         seen_trace_ids=seen_trace_ids,

@@ -5,7 +5,7 @@ import csv
 import os
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 
@@ -1090,6 +1090,72 @@ def append_references_scaffold(parts: list[str]) -> None:
     parts.extend(["", r"\clearpage", "", "## References", ""])
 
 
+def _anchor_block(emission_id: str) -> str:
+    safe = emission_id.replace('"', '&quot;')
+    return f'::: {{.iv-anchor emission_id="{safe}"}}\n:::'
+
+
+def _norm_shadow_match(text: str) -> str:
+    return normalize_print_text((text or "").replace(r"\*", "*")).lower().strip()
+
+
+def inject_shadow_anchors_into_entry(
+    entry_text: str,
+    entry_anchor_requests: list[dict[str, str]],
+) -> str:
+    """Insert shadow-only .iv-anchor blocks after full paragraph/table/list blocks.
+
+    The optional seam is used only for Stage 4A shadow placement experiments.
+    Production calls this with an empty request list and receives byte-identical
+    output.
+    """
+    if not entry_anchor_requests:
+        return entry_text
+
+    blocks = entry_text.split("\n\n")
+    if not blocks:
+        return entry_text
+
+    inserts_after: dict[int, list[str]] = {}
+    seen_ids: set[str] = set()
+
+    for req in entry_anchor_requests:
+        eid = (req.get("emission_id") or "").strip()
+        if not eid:
+            raise ValueError("shadow anchor request missing emission_id")
+        if eid in seen_ids:
+            raise ValueError(f"duplicate shadow anchor request emission_id: {eid}")
+        seen_ids.add(eid)
+
+        needles = [
+            _norm_shadow_match(req.get("representative_display") or ""),
+            _norm_shadow_match(req.get("representative_form") or ""),
+            _norm_shadow_match(req.get("representative_sort_key") or ""),
+        ]
+        needles = [n for n in needles if n]
+        if not needles:
+            raise ValueError(f"shadow anchor request has no representative text for emission_id {eid}")
+
+        target_idx = None
+        for i, block in enumerate(blocks):
+            bnorm = _norm_shadow_match(block)
+            if any(n in bnorm for n in needles):
+                target_idx = i
+                break
+        if target_idx is None:
+            raise ValueError(
+                f"unable to place shadow anchor emission_id={eid}; representative text not found in rendered entry"
+            )
+        inserts_after.setdefault(target_idx, []).append(_anchor_block(eid))
+
+    out: list[str] = []
+    for i, block in enumerate(blocks):
+        out.append(block)
+        if i in inserts_after:
+            out.extend(inserts_after[i])
+    return "\n\n".join(out)
+
+
 def assert_print_regressions(text: str) -> None:
     if "ḯ" in text:
         raise ValueError("reader-facing output still contains ḯ")
@@ -1113,12 +1179,23 @@ def assert_print_regressions(text: str) -> None:
         raise ValueError("reader-facing output is missing the normalized breeches stage phrase")
 
 
-def main() -> int:
+def build_lexical_volume(
+    passage_anchor_requests: list[dict[str, str]] | None = None,
+) -> str:
+    """Build lexical volume Markdown.
+
+    With ``passage_anchor_requests=None`` this is the canonical production path
+    and must remain byte-identical to historical output.
+
+    The optional request list enables Stage 4A shadow anchor placement. Each
+    request must include at least:
+      emission_id, source_path, representative_display/form/sort_key.
+    """
     trace_entries = parse_trace_entries(TRACE_REPORT_PATH.read_text(encoding="utf-8"))
     intro_sections = parse_section_introductions(INTRO_PATH)
 
     with MANIFEST_PATH.open(encoding="utf-8", newline="") as handle:
-        manifest_rows = list(csv.DictReader(handle, delimiter="\t"))
+        manifest_rows = list(csv.DictReader(handle, delimiter="	"))
 
     counts = Counter(row["class_bucket"] for row in manifest_rows)
     parts: list[str] = build_front_matter(counts, intro_sections, regular_book_prose_dir=REGULAR_BOOK_PROSE_DIR)
@@ -1139,6 +1216,14 @@ def main() -> int:
             missing_list = "\n".join(missing_regular)
             raise FileNotFoundError(f"missing regular book prose files:\n{missing_list}")
 
+    by_source_path: dict[str, list[dict[str, str]]] = defaultdict(list)
+    if passage_anchor_requests:
+        for req in passage_anchor_requests:
+            src = (req.get("source_path") or "").strip()
+            if not src:
+                raise ValueError(f"shadow anchor request missing source_path: {req}")
+            by_source_path[src].append(req)
+
     for bucket, part_heading, intro_heading in SECTION_ORDER:
         parts.extend(["", r"\clearpage", "", f"## {part_heading}", "", tidy_prose(intro_sections[intro_heading])])
         for row in rows_by_bucket[bucket]:
@@ -1153,22 +1238,26 @@ def main() -> int:
                     f"Matched {entry_path.name} -> {trace_entry['title']} / {trace_entry['proto']} / {trace_entry['outputs']} ({basis})",
                     file=sys.stderr,
                 )
-            parts.extend(
-                [
-                    "",
-                    render_entry(
-                        model,
-                        trace_entry,
-                        entry_path=entry_path,
-                        regular_book_prose_dir=REGULAR_BOOK_PROSE_DIR,
-                    ),
-                ]
+            entry_text = render_entry(
+                model,
+                trace_entry,
+                entry_path=entry_path,
+                regular_book_prose_dir=REGULAR_BOOK_PROSE_DIR,
             )
+            src_rel = entry_path.relative_to(REPO_ROOT).as_posix()
+            if by_source_path.get(src_rel):
+                entry_text = inject_shadow_anchors_into_entry(entry_text, by_source_path[src_rel])
+            parts.extend(["", entry_text])
 
     append_references_scaffold(parts)
     assembled = normalize_print_text("\n".join(parts).rstrip())
     assert_print_regressions(assembled)
-    OUTPUT_PATH.write_text(assembled + "\n", encoding="utf-8")
+    return assembled + "\n"
+
+
+def main() -> int:
+    assembled = build_lexical_volume()
+    OUTPUT_PATH.write_text(assembled, encoding="utf-8")
     print(f"Generated {OUTPUT_PATH}")
     return 0
 
