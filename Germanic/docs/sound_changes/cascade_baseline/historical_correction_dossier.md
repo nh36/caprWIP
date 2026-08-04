@@ -176,3 +176,35 @@ a rename-only case (Class 2), not a wrong-position case.
 3. Separately and review-gated: the SC004 split and the SC064 stage adjudication.
 
 **Stop for review here.** No production FST change is made by this task.
+
+---
+
+## Ontology update (supersedes the proposed names above)
+
+The canonical stage/scope ontology (`canonical_stage_scope_ontology.md`) now
+governs the internal identifiers. The internal Foma prefix encodes the
+chronological stage on the axis PGmc → PNWGmc → PWGmc → EAF → OE; geographical/
+genealogical distribution is carried separately in `hist_scope`. The earlier
+"West Germanic rhotacism" style names in this dossier were reader-facing
+descriptions; the **internal identifiers** now adopt stage-prefixed canonical
+forms. The full former→canonical mapping and per-rule status live in
+`rename_migration_manifest.tsv`.
+
+Canonical internal identifiers (superseding earlier proposals):
+
+| SC | Former identifier | Canonical identifier | Reader-facing title |
+| --- | --- | --- | --- |
+| SC003 | `PGmcRhotacism` | `EAFRhotacism` | West Germanic rhotacism |
+| SC020 | `PGmcFinalZDeletion` | `EAFFinalZDeletion` | West Germanic final *z*-deletion |
+| SC012 | `PWGmcLThVoicing` | `EAFLThVoicing` | Northern West Germanic *lþ*-voicing |
+| SC026 | `NWGmcNasalSpirantLengthening` | `EAFNasalSpirantLengthening` | North Sea Germanic nasal-spirant lengthening |
+| SC027 | `NWGmcNasalSpirantLoss` | `EAFNasalSpirantLoss` | North Sea Germanic nasal-spirant loss |
+| SC043 | `AngloFrisianBrightening` | `EAFBrightening` | Anglo-Frisian brightening |
+| SC005, SC014, SC015, SC017, SC018, SC019, SC021, SC022, SC023, SC024, SC025, SC028 | `NWGmc…` | `PNWGmc…` | Proto-Northwest Germanic … |
+
+`EAF` is an operational post-PWGmc/pre-OE corridor, not a claim of a discrete
+Proto-Anglo-Frisian node; "Ingvaeonic" remains a scholarly alias for
+`north_sea_germanic`, not a stage. SC004 and SC064 remain unrenamed (deferred);
+SC016, SC041, SC042, SC049, SC050 remain unrenamed (not required — their
+positions diverge from stage by documented dependency, to be explained in prose,
+not converted).
