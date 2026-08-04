@@ -653,15 +653,15 @@ The broader history is the reduction and leveling of older n-stem endings in Wes
 
 The path to *dōn* ‘do’ provides the clearest witness, but the change remains narrow in scope.
 
-## SC023. Loss of n-stem \emph{*n} in final position (`NWGmcNStemNLoss`) {#rule-NWGmcNStemNLoss}
+## SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss}
 
 ```foma
-define NWGmcNStemNLoss [
+define PNWGmcNStemNLoss [
     {*ō} {*n} -> {*ǭ} || _ .#.
 ];
 ```
 
-After [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [dōną]{.recon} ‘do’ fails entirely (\emph{+?}) instead of yielding expected OE *dōn* ‘do’; earlier placement changes no output. Thus [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must feed the later apocope.
+After [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [dōną]{.recon} ‘do’ fails entirely (\emph{+?}) instead of yielding expected OE *dōn* ‘do’; earlier placement changes no output. Thus [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) must feed the later apocope.
 
 This failed derivation supplies a terminus ante quem, while the lower boundary remains unattested.
 
@@ -2265,13 +2265,13 @@ define OEEarlyOShortening [
 The rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.
 
 Moving the rule before
-[SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss), PGmc [nḗdrōn]{.recon} ‘adder’ yields
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss), PGmc [nḗdrōn]{.recon} ‘adder’ yields
 [*nǣdran*]{.pred} rather than expected OE *nǣdre* ‘adder’, PGmc [érθōn]{.recon} ‘earth’ yields
 [*eorþan*]{.pred} rather than expected *eorþe* ‘earth’, and PGmc [fláskōn]{.recon} ‘flask’ yields
 [*flascan*]{.pred} rather than expected *flasce* ‘flask’. The same earlier shift also
 disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of
 failures requires [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) to follow
-[SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss).
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss).
 
 If the rule is moved later within the tested sequence, no output differs from the
 expected one. The lexical evidence therefore does not

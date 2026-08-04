@@ -6,14 +6,14 @@ The broader history is the reduction and leveling of older n-stem endings in Wes
 
 The path to *dōn* ‘do’ provides the clearest witness, but the change remains narrow in scope.
 
-## SC023. Loss of n-stem \emph{*n} in final position (`NWGmcNStemNLoss`) {#rule-NWGmcNStemNLoss}
+## SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss}
 
 ```foma
-define NWGmcNStemNLoss [
+define PNWGmcNStemNLoss [
     {*ō} {*n} -> {*ǭ} || _ .#.
 ];
 ```
 
-After [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [dōną]{.recon} ‘do’ fails entirely (\emph{+?}) instead of yielding expected OE *dōn* ‘do’; earlier placement changes no output. Thus [SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss) must feed the later apocope.
+After [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [dōną]{.recon} ‘do’ fails entirely (\emph{+?}) instead of yielding expected OE *dōn* ‘do’; earlier placement changes no output. Thus [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) must feed the later apocope.
 
 This failed derivation supplies a terminus ante quem, while the lower boundary remains unattested.

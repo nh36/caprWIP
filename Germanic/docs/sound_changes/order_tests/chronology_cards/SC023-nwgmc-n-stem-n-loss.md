@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `23`
-- rule_name: `NWGmcNStemNLoss`
+- rule_name: `PNWGmcNStemNLoss`
+- former_rule_name: `NWGmcNStemNLoss`
 - safe computational window: `13-46` (earlier side runner-bounded)
 - status: `first_break_complete`
 

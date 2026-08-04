@@ -122,11 +122,12 @@ SC022	Proto-Northwest Germanic Mn Dissimilation	PNWGmcMnDissimilation	foma_rule_
 SC022	Proto-Northwest Germanic Mn Dissimilation	Northwest Germanic Mn Dissimilation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC022	Proto-Northwest Germanic Mn Dissimilation	NWGmc Mn Dissimilation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC022	Proto-Northwest Germanic Mn Dissimilation	NWGmcMnDissimilation	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
-SC023	NWGmc N Stem N Loss	NWGmc N Stem N Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC023	NWGmc N Stem N Loss	NWGmcNStemNLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC023	NWGmc N Stem N Loss	NWGmcNStemNLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
-SC023	NWGmc N Stem N Loss	Northwest Germanic N Stem N Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
-SC023	NWGmc N Stem N Loss	NWGmc N Stem N Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC023	Proto-Northwest Germanic N Stem N Loss	NWGmc N Stem N Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC023	Proto-Northwest Germanic N Stem N Loss	PNWGmcNStemNLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC023	Proto-Northwest Germanic N Stem N Loss	PNWGmcNStemNLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC023	Proto-Northwest Germanic N Stem N Loss	Northwest Germanic N Stem N Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC023	Proto-Northwest Germanic N Stem N Loss	NWGmc N Stem N Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC023	Proto-Northwest Germanic N Stem N Loss	NWGmcNStemNLoss	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC024	NWGmc Long E Lowering	NWGmc Long E Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC024	NWGmc Long E Lowering	NWGmcLongELowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC024	NWGmc Long E Lowering	NWGmcLongELowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt

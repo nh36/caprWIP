@@ -30,7 +30,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | 14 | 46 | no |
 | 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising} | 11 | 89 | no |
 | 022-mn-dissimilation.md | SC022. Dissimilation of \emph{mn} sequences (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | 14 | 68 | no |
-| 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`NWGmcNStemNLoss`) {#rule-NWGmcNStemNLoss} | 11 | 30 | no |
+| 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | 11 | 30 | no |
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`NWGmcLongELowering`) {#rule-NWGmcLongELowering} | 11 | 64 | no |
 | 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | 11 | 39 | no |
 | 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant lengthening (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | 15 | 69 | no |

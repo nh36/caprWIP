@@ -26,13 +26,13 @@ define OEEarlyOShortening [
 The rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.
 
 Moving the rule before
-[SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss), PGmc [nḗdrōn]{.recon} ‘adder’ yields
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss), PGmc [nḗdrōn]{.recon} ‘adder’ yields
 [*nǣdran*]{.pred} rather than expected OE *nǣdre* ‘adder’, PGmc [érθōn]{.recon} ‘earth’ yields
 [*eorþan*]{.pred} rather than expected *eorþe* ‘earth’, and PGmc [fláskōn]{.recon} ‘flask’ yields
 [*flascan*]{.pred} rather than expected *flasce* ‘flask’. The same earlier shift also
 disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of
 failures requires [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) to follow
-[SC023 NWGmcNStemNLoss](#rule-NWGmcNStemNLoss).
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss).
 
 If the rule is moved later within the tested sequence, no output differs from the
 expected one. The lexical evidence therefore does not

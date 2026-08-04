@@ -1917,7 +1917,7 @@ define EAFBrightening [
 # pattern-based via OEARestorationStrongOTail exclusion subtraction.)
 # {*ô} (trimoric *ō) is a back vowel that triggers A-restoration, but is not
 # in PGmcStarBackVowel to avoid regressions in general vowel rules.
-# {*ǭ} (nasalized *ō, from fem. n-stem *-ōn via NWGmcNStemNLoss) is phonetically
+# {*ǭ} (nasalized *ō, from fem. n-stem *-ōn via PNWGmcNStemNLoss) is phonetically
 # back and must trigger A-restoration. Without it, *flaskōn wrongly yields flæsċe
 # instead of flasce: AFB fronts *a→*æ, then SkPalatalization palatalizes after *æ.
 define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ}];
@@ -2064,7 +2064,7 @@ define PNWGmcUnstressedAiMonophthongization [
 # PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
 # The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
 # Masc. n-stem nom.sg. uses trimoric *-ô (no -n), which is NOT affected.
-define NWGmcNStemNLoss [
+define PNWGmcNStemNLoss [
     {*ō} {*n} -> {*ǭ} || _ .#.
 ];
 
@@ -2080,7 +2080,7 @@ define NWGmcNStemNLoss [
 # surfacing as -e (Campbell §589.7: "-e < -i < -in"). Confirmed
 # Lautgesetzlich by Lat. loanword pulvīnus → pyle (Campbell §473), a
 # non-paradigmatic word with no inherited *-ī cell to level from.
-# Parallel pattern to NWGmcNStemNLoss above (fem. ōn-stems); kept as
+# Parallel pattern to PNWGmcNStemNLoss above (fem. ōn-stems); kept as
 # a separate rule because the ōn-stem rule nasalizes (*-ōn → *-ǭ),
 # whereas the in-stem rule simply deletes (no nasalization survives,
 # per all sources). See DEV_NOTES §17.45.3c for the full dossier.
@@ -3120,7 +3120,7 @@ define EnglishProtoToOE (
     .o. EAFFinalZDeletion
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
-    .o. NWGmcNStemNLoss
+    .o. PNWGmcNStemNLoss
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
@@ -3312,7 +3312,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. EAFFinalZDeletion
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
-    .o. NWGmcNStemNLoss
+    .o. PNWGmcNStemNLoss
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)

@@ -18,7 +18,7 @@ position	foma_identifier	origin_block
 17	EAFFinalZDeletion	EnglishProtoToOE
 18	PNWGmcUnstressedORaising	EnglishProtoToOE
 19	PNWGmcMnDissimilation	EnglishProtoToOE
-20	NWGmcNStemNLoss	EnglishProtoToOE
+20	PNWGmcNStemNLoss	EnglishProtoToOE
 21	NWGmcLongELowering	EnglishProtoToOE
 22	NWGmcLongENasalRounding	EnglishProtoToOE
 23	EAFNasalSpirantLengthening	EnglishProtoToOE
