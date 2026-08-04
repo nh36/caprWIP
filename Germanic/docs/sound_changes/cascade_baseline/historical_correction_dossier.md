@@ -208,3 +208,51 @@ Proto-Anglo-Frisian node; "Ingvaeonic" remains a scholarly alias for
 SC016, SC041, SC042, SC049, SC050 remain unrenamed (not required — their
 positions diverge from stage by documented dependency, to be explained in prose,
 not converted).
+
+---
+
+## Migration completed (relabelling phase)
+
+All 18 renames in `rename_migration_manifest.tsv` are `completed`, each as one
+behaviour-neutral commit validated by the rename gate (A compile + no alias, B
+`outputs_sha256` identity, E executable-order identity, G former-name audit) plus
+the host test suite. Commit SHAs are recorded per row in the manifest
+(`migration_commit`). No Foma compatibility alias was ever committed.
+
+Order of migration: least-entangled EAF renames first (SC003, SC020, SC026,
+SC027, SC043), then SC012 (which also left the PNWGmc×PWGmc interaction matrix on
+becoming `eaf`), then the twelve PNWGmc renames (SC005, SC014, SC015, SC017,
+SC018, SC019, SC021, SC022, SC023, SC024, SC025, SC028).
+
+### Container audit (Section 8)
+
+Two containers were historically mixed after the renames and were given neutral
+architectural names (behaviour-neutral, contents/order unchanged):
+
+- `PGmcConsonantRules` → `EarlyGermanicConsonantPipeline`
+  (members: `PGmcGmSimplification` [pgmc], `EAFRhotacism` [eaf]).
+- `PWGmcChanges` → `EarlyEnglishLineChanges`
+  (members span pnwgmc → pwgmc → eaf, incl. `PNWGmcAToUBeforeM`, the pwgmc
+  SC006–011/013 rules, `EAFLThVoicing`, and the SC004 transition rule).
+
+`EAFLThVoicing` (SC012) and `EAFRhotacism` (SC003) executing inside PWGmc-/PGmc-
+named containers is a documented technical position, not a stage claim; the
+container names no longer assert homogeneous membership.
+
+### `nwgmc` retained only for deferred SC064
+
+Legacy stage `nwgmc` / scope `pan_nwgmc` remain in the registry **solely** for
+the deferred `NWGmcInStemNLoss` (SC064), whose stage is unresolved (do not
+rename). The interaction-matrix membership test therefore queries the earlier set
+as `{nwgmc, pnwgmc}` so SC064 stays in scope.
+
+### Trace-snapshot staleness finding (not a rename effect)
+
+Regenerating `docs/debug_snapshots/oe_full_trace_report.txt` moved `stem` from
+the `exact_match` bucket (373) to a mismatch bucket, giving 372 exact matches + 8
+documented mismatches = 380 — exactly the frozen baseline
+(`cascade_baseline_summary.json`). The previously committed snapshot was stale
+(it predated `stem` becoming a documented mismatch). Gate B confirms every rename
+preserved `outputs_sha256`, so this correction is orthogonal to the relabelling;
+after normalising former→canonical identifiers, no other lexeme's derivation
+differs.
