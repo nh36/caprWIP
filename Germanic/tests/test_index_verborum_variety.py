@@ -410,25 +410,67 @@ class RealCorpusInvariantTests(unittest.TestCase):
 
         # Unique printed entries: the count is a POST_ANNOTATION baseline captured in
         # test_pre_annotation_baseline_snapshot and not duplicated here.  What belongs
-        # in this permanent invariant is the RELATIONAL constraint: every entry in
-        # print_unique.tsv must be backed by at least one row in print_main.
-        # (Using sort_key avoids print-text normalization differences across files.)
+        # in this permanent invariant is the EXACT RELATIONAL check that mirrors
+        # build_print_unique_rows():
+        #
+        # The canonical collapsing key is (language, display, sort_key, printed_variety).
+        # print_main.tsv stores the display after write_print_main_rows normalises it
+        # via normalize_print_text; print_unique.tsv stores the display as produced by
+        # build_print_unique_rows, which uses the raw ProductionOccurrence.display value
+        # (some trace-origin forms still carry the raw ḯ precomposed character before
+        # normalisation).  To compare the two files consistently we normalise display on
+        # both sides before building the key.  When normalisation collapses two
+        # print_unique rows into the same key (a pre-existing data artefact from
+        # un-normalised trace origins) their occurrence_count values are summed so the
+        # aggregated total still matches the print_main group count.
+        try:
+            sys.path.insert(0, str(REPO_ROOT / "Germanic/docs/assembly"))
+            from build_full_lexical_volume import normalize_print_text as _norm_display
+        except Exception:
+            def _norm_display(text: str) -> str:
+                return text
+
         reg = ivr.load_variety_registry()
 
-        def printed_variety(variety):
+        def printed_variety(variety: str) -> str:
             variety = (variety or "").strip()
             return reg.printed_label(variety) if variety else ""
 
-        pm_keys = {
-            (r["language"], r["sort_key"], printed_variety(r.get("variety", "")))
-            for r in pm
-        }
-        for pu_row in pu:
-            key = (pu_row["language"], pu_row["sort_key"], pu_row.get("printed_variety", ""))
-            self.assertIn(
-                key, pm_keys,
-                f"print_unique row not backed by any print_main entry: {key}",
-            )
+        def pm_key(row: dict) -> tuple:
+            return (row["language"], _norm_display(row["display"]),
+                    row["sort_key"], printed_variety(row.get("variety", "")))
+
+        def pu_key(row: dict) -> tuple:
+            return (row["language"], _norm_display(row["display"]),
+                    row["sort_key"], row.get("printed_variety", ""))
+
+        # Expected groups (and group occurrence counts) from print_main
+        pm_groups = Counter(pm_key(r) for r in pm)
+
+        # Actual groups from print_unique (aggregate any normalisation-collapsed dups)
+        pu_agg: Counter[tuple] = Counter()
+        for r in pu:
+            k = pu_key(r)
+            count_str = r.get("occurrence_count", "")
+            if not count_str.isdigit():
+                self.fail(f"print_unique occurrence_count is not a valid integer: {count_str!r}")
+            pu_agg[k] += int(count_str)
+
+        pm_key_set = set(pm_groups)
+        pu_key_set = set(pu_agg)
+
+        missing = pm_key_set - pu_key_set
+        extra   = pu_key_set - pm_key_set
+
+        self.assertFalse(missing,
+            f"print_unique missing groups present in print_main (first 3): {sorted(missing)[:3]}")
+        self.assertFalse(extra,
+            f"print_unique has extra groups absent from print_main (first 3): {sorted(extra)[:3]}")
+
+        for k in pm_key_set:
+            self.assertEqual(pu_agg[k], pm_groups[k],
+                f"print_unique occurrence_count mismatch for key {k}: "
+                f"expected {pm_groups[k]}, got {pu_agg[k]}")
 
     def test_pre_annotation_baseline_snapshot(self):
         """Named historical snapshot documenting the effect of the annotation pass.
