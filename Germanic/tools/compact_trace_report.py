@@ -37,7 +37,7 @@ ORTHOGRAPHY_HEADER = "### Orthography & surface"
 
 
 def split_camel(name: str) -> str:
-    # "PGmcFinalZDeletion" -> "PGmc Final Z Deletion"
+    # "EAFFinalZDeletion" -> "PGmc Final Z Deletion"
     # Split "OE" prefix when followed by another capital (handles OEJ/OEI runs
     # where the camel-case heuristics below otherwise can't see a boundary).
     name = re.sub(r"^OE([A-Z])", r"OE \1", name)

@@ -1,18 +1,18 @@
-# Deletion of word-final \emph{*z}
+# West Germanic final \emph{*z}-deletion
 
 ## Historical discussion
 
 The loss of word-final \emph{*z} is a West Germanic development. Standard handbook tradition and Crist's West Germanic discussion establish the development within broader accounts of inflectional morphology [@Hogg1992, p. 37; @Crist2002, p. 1]. The derivation of *ræste* 'rest' demonstrates the local order: final \emph{*ō}-raising ([SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), Chapter 2) must precede final \emph{*z}-loss.
 
-The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) remain flagged for targeted chronology audit.
+The internal CAPR rule is labelled [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), placing it in the Early Anglo-Frisian corridor (CAPR's operational post-Proto-West-Germanic stage on the English line); the historical development is a West Germanic pan-WGmc loss of final \emph{*z}, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) remain flagged for targeted chronology audit.
 
 Final z-loss follows long-o raising and precedes the later changes in weak
 syllables.
 
-## SC020. Deletion of word-final \emph{*z} (`PGmcFinalZDeletion`) {#rule-PGmcFinalZDeletion}
+## SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion}
 
 ```foma
-define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
+define EAFFinalZDeletion [{*z} -> 0 || _ .#.];
 ```
 
 The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.

@@ -409,7 +409,7 @@ define pgrmWeakTailVowel [
     # (the inst.pl. branch of the dat./inst. merger).
     # PGmc *-amiz → NWGmc *-umiz (R1, NWGmcAToUBeforeM, Campbell §331(6))
     #              → *-umz (R2, PWGmcEarlyIApocope, 3rd-syllable *-i loss)
-    #              → *-um (PGmcFinalZDeletion).
+    #              → *-um (EAFFinalZDeletion).
     # Used for inputs encoded with the historical PGmc form, e.g.
     # *skúldramiz → sċuldrum. See DEV_NOTES §17.41 and
     # dossier-datpl-route-xy-deepdive-2026.md.
@@ -432,7 +432,7 @@ define pgrmWeakTailVowel [
     ī:{*ī} n:{*n} |
     # Fem. in-stem (abstract / weak adjective) full PGmc oblique-singular and
     # plural inflectional tails. PROTOFORMs ending in any of these run through
-    # PGmcFinalZDeletion (gsg. *-īnaz → *-īna; npl. *-īniz → *-īni) →
+    # EAFFinalZDeletion (gsg. *-īnaz → *-īna; npl. *-īniz → *-īni) →
     # PWGmcFinalBareALoss (gsg. *-īna → *-īn) and PWGmcEarlyIApocope (dsg.
     # *-īni → *-īn; npl. *-īni → *-īn) → NWGmcInStemNLoss (*-īn → *-ī) →
     # OEUnstressedLongVowelShortening (*-ī → *-i) → i-umlaut → surface -e.
@@ -1118,7 +1118,7 @@ define EnglishWGlideRule [{*w} -> {*ʋ}];
 # *some* symbol to follow *z, which permits every medial position
 # (VzV, VzC) but blocks the word boundary. R/T are explicit that
 # word-final *-z was **lost**, not rhotacized — handled by
-# PGmcFinalZDeletion, now composed later in the pipeline (inside
+# EAFFinalZDeletion, now composed later in the pipeline (inside
 # EnglishProtoToOE, after NWGmcFinalLongORaising). A stricter V_V
 # context was tried and rejected (regresses medial VzC forms such
 # as *mízdō); `V _ ?` is the R/T-faithful generalization. See
@@ -1149,7 +1149,7 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 # OE-stage shortening at §6.8.3). The full staged chain is:
 #
 #   *-ōz (PGmc)
-#    ↓ PGmcFinalZDeletion              [this rule, step 3]
+#    ↓ EAFFinalZDeletion              [this rule, step 3]
 #   *-ō  (PWGmc, z-lost)
 #    ↓ PWGmcSurvivingBimoricOUnrounding [step 5, word-final]
 #   *-ā  (PWGmc/WGmc)
@@ -1166,8 +1166,8 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 # must run BEFORE this rule so that pre-existing word-final *-ō
 # (nom.sg. *gebō etc.) raises while *-ōz (sheltered by *-z) does not.
 # That ordering is enforced in OldEnglishCore (see below).
-define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
-define PGmcFinalZLoss PGmcFinalZDeletion;
+define EAFFinalZDeletion [{*z} -> 0 || _ .#.];
+define EAFFinalZLoss EAFFinalZDeletion;
 
 # PWGmc final bare-a loss (R/T §§3.1-3.4, §6.1-6.2).
 # Word-final *-a of **nom.sg. m.a-stem *-az** origin (via z-loss) was lost at
@@ -1177,7 +1177,7 @@ define PGmcFinalZLoss PGmcFinalZDeletion;
 # fixes the A-restoration regression catalogued in DEV_NOTES §17.10.13.
 #
 # SCOPE: this rule targets {*a} only. The f.ō-stem *-ōz outcome is
-# handled separately by PGmcFinalZDeletion (z-loss, step 3) followed by
+# handled separately by EAFFinalZDeletion (z-loss, step 3) followed by
 # PWGmcSurvivingBimoricOUnrounding (step 5, {*ō} → {*ā}) below, per
 # DEV_NOTES §17.10.23 (R/T §3.1 pp.58-59 + §6.8.3 pp.299-300). The two
 # historically-distinct *-a tokens do not collapse here because the
@@ -1235,7 +1235,7 @@ define PGmcBAllophony [
 # PWGmcJGemination in PWGmcChanges. R/T vol.2 p.50: j-gemination
 # operates on underlying /b/, not the allophonic [β]. The allophonic
 # split is a late phonetic rule that must follow gemination.
-# PGmcFinalZLoss (= PGmcFinalZDeletion) is NOT composed here. Per
+# EAFFinalZLoss (= EAFFinalZDeletion) is NOT composed here. Per
 # DEV_NOTES §17.10.24, R/T's chronology requires z-loss to fire after
 # NWGmcFinalLongORaising (step 2 → step 3 in R/T §6.8.3 pp.299-300).
 # Composing z-loss at the top of OldEnglishCore would strip *-z from
@@ -1524,7 +1524,7 @@ define PWGmcDenasalization [
 # at the end of an inflectional ending (*m, *mz, *miz, with optional
 # *iz tail). Restricted by the V+C+ left-context to avoid catching
 # stem-internal *am sequences. Fires before R2 (PWGmcEarlyIApocope)
-# so that the chain is *-amiz → *-umiz → *-umz → *-um (PGmcFinalZDeletion).
+# so that the chain is *-amiz → *-umiz → *-umz → *-um (EAFFinalZDeletion).
 #
 # Probes (see DEV_NOTES §17.41):
 #   *dagamiz → dagum, *stainamiz → stānum, *skuldramiz → sċuldrum,
@@ -1553,7 +1553,7 @@ define NWGmcAToUBeforeM [
 # (and parallel *-imiz / *-umiz / *-ōmiz across stem classes), where
 # the chain is *-Vmiz → *-Vmz → *-Vm (Polomé 1967 p. 808;
 # Fulk §5.1; Stentoften runic borumʀ). The *z drops separately by
-# PGmcFinalZDeletion (later in the pipeline). See DEV_NOTES §17.41
+# EAFFinalZDeletion (later in the pipeline). See DEV_NOTES §17.41
 # and dossier-datpl-route-xy-deepdive-2026.md.
 define PGmcStarStressedVowel [
     {*á} | {*é} | {*í} | {*ó} | {*ú} |
@@ -3103,7 +3103,7 @@ define EnglishProtoToOE (
     # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (nom.sg.
     # *gebō etc.). Must fire AFTER NWGmcULowering — U-lowering needs
     # to see the original non-high *-ō suffix on forms like *núsō
-    # → *nósō → *nósu — and BEFORE PGmcFinalZDeletion, so gen.sg.
+    # → *nósō → *nósu — and BEFORE EAFFinalZDeletion, so gen.sg.
     # *-ōz is sheltered by its -z from raising. See DEV_NOTES §17.10.24.
     #
     # §17.31: stressed-monosyllable raising (Campbell §122) fires
@@ -3117,7 +3117,7 @@ define EnglishProtoToOE (
     # later, OEMedUnstressedULowering treats word-final *-uz as medial
     # (the *-z satisfies its right-context consonant slot) and wrongly
     # lowers *-u → *-o. See DEV_NOTES §17.10.25.
-    .o. PGmcFinalZDeletion
+    .o. EAFFinalZDeletion
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
@@ -3309,7 +3309,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
-    .o. PGmcFinalZDeletion
+    .o. EAFFinalZDeletion
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss

@@ -27,7 +27,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`NWGmcULowering`) {#rule-NWGmcULowering} | 20 | 60 | no |
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`NWGmcStressedMonosyllableORaising`) {#rule-NWGmcStressedMonosyllableORaising} | 12 | 79 | no |
 | 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`NWGmcFinalLongORaising`) {#rule-NWGmcFinalLongORaising} | 18 | 66 | no |
-| 020-wgmc-final-z-deletion.md | SC020. Deletion of word-final \emph{*z} (`PGmcFinalZDeletion`) {#rule-PGmcFinalZDeletion} | 14 | 47 | no |
+| 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | 14 | 46 | no |
 | 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`NWGmcUnstressedORaising`) {#rule-NWGmcUnstressedORaising} | 11 | 89 | no |
 | 022-mn-dissimilation.md | SC022. Dissimilation of \emph{mn} sequences (`NWGmcMnDissimilation`) {#rule-NWGmcMnDissimilation} | 14 | 68 | no |
 | 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`NWGmcNStemNLoss`) {#rule-NWGmcNStemNLoss} | 11 | 30 | no |

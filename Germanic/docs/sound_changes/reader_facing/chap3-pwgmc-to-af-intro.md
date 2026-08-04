@@ -72,7 +72,7 @@ deletion: Campbell notes that `*z` is "later lost or changed to `r`"
 [@Campbell1959]; Hogg gives a clean statement that Germanic `*z` is generally
 lost in final position [@Hogg1992, p. 37].
 
-The CAPR rule is named `PGmcFinalZDeletion`, which is historically misleading.
+The CAPR rule is named `EAFFinalZDeletion`, which is historically misleading.
 The existing reader-facing prose already notes this: the current assembled
 section correctly describes SC003 as presupposing an earlier loss of final `*z`,
 creating a presentational tension with SC020's place at cascade position 20.

@@ -96,8 +96,9 @@ SC019	NWGmc Final Long O Raising	NWGmcFinalLongORaising	foma_rule_name	underlyin
 SC019	NWGmc Final Long O Raising	Northwest Germanic Final Long O Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC019	NWGmc Final Long O Raising	NWGmc Final Long O Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC020	PGmc Final Z Deletion	PGmc Final Z Deletion	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC020	PGmc Final Z Deletion	PGmcFinalZDeletion	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC020	PGmc Final Z Deletion	PGmcFinalZDeletion	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC020	West Germanic final *z*-deletion	EAFFinalZDeletion	sandbox_stage_name	sandbox stage SEAFFinalZDeletion	Germanic/fsts/old_english_sandbox.txt
+SC020	West Germanic final *z*-deletion	EAFFinalZDeletion	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC020	West Germanic final *z*-deletion	PGmcFinalZDeletion	former_foma_rule_name	former identifier before EAF-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC020	PGmc Final Z Deletion	Proto-Germanic Final Z Deletion	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC020	PGmc Final Z Deletion	PGmc Final Z Deletion	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC020	PGmc Final Z Deletion	final *z deletion	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing

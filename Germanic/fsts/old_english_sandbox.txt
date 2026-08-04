@@ -72,9 +72,9 @@ define SNWGmcStressedMonosyllableORaising SNWGmcULowering
     .o. NWGmcStressedMonosyllableORaising;
 define SNWGmcFinalLongORaising SNWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising;
-define SPGmcFinalZDeletion SNWGmcFinalLongORaising
-    .o. PGmcFinalZDeletion;
-define SNWGmcUnstressedORaising SPGmcFinalZDeletion
+define SEAFFinalZDeletion SNWGmcFinalLongORaising
+    .o. EAFFinalZDeletion;
+define SNWGmcUnstressedORaising SEAFFinalZDeletion
     .o. NWGmcUnstressedORaising;
 define SNWGmcMnDissimilation SNWGmcUnstressedORaising
     .o. NWGmcMnDissimilation;
@@ -321,8 +321,8 @@ regex SNWGmcFinalLongORaising;
 save stack old_english_sandbox_after_nwgmc_final_long_o_raising.bin
 
 clear stack
-regex SPGmcFinalZDeletion;
-save stack old_english_sandbox_after_pgmc_final_z_deletion.bin
+regex SEAFFinalZDeletion;
+save stack old_english_sandbox_after_eaf_final_z_deletion.bin
 
 clear stack
 regex SNWGmcUnstressedORaising;

@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `20`
-- rule_name: `PGmcFinalZDeletion`
+- rule_name: `EAFFinalZDeletion`
+- former_rule_name: `PGmcFinalZDeletion`
 - safe computational window: `20-39`
 - status: `first_break_complete`
 

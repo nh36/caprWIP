@@ -123,13 +123,13 @@ class OrderManifestTests(unittest.TestCase):
 
         SC005 NWGmcAToUBeforeM < SC017 NWGmcULowering
         SC010 PWGmcJGemination < SC011 PWGmcSyllabicJ
-        SC019 NWGmcFinalLongORaising < SC020 PGmcFinalZDeletion (final-*z* deletion)
+        SC019 NWGmcFinalLongORaising < SC020 EAFFinalZDeletion (final-*z* deletion)
         """
         pos = {r["foma_identifier"]: int(r["position"]) for r in self.rows}
         pairs = [
             ("NWGmcAToUBeforeM", "NWGmcULowering"),
             ("PWGmcJGemination", "PWGmcSyllabicJ"),
-            ("NWGmcFinalLongORaising", "PGmcFinalZDeletion"),
+            ("NWGmcFinalLongORaising", "EAFFinalZDeletion"),
         ]
         for earlier, later in pairs:
             self.assertIn(earlier, pos, f"{earlier} missing from manifest")

@@ -63,6 +63,7 @@ FORMER: dict[str, tuple[str, str, str, str]] = {
 # recorded at final canonicalization). Presence here sets migration_status=completed.
 COMPLETED: dict[str, str] = {
     "SC003": "",
+    "SC020": "",
 }
 
 # Canonical rename set (task section 3). Each entry:

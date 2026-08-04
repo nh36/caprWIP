@@ -591,7 +591,7 @@ define NWGmcFinalLongORaising [
 
 Two groups of witnesses confine final unstressed long \emph{*ō} > \emph{*u}. The forms *nosu* 'nose', *sċofl* 'shovel', and *sorg* 'sorrow' fix its lower boundary.
 
-Before [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected OE *nosu* 'nose', PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected *sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather than expected *sorg* 'sorrow'. After word-final \emph{*z}-deletion ([SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion)), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected *ræste* 'rest'. These failures place [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) after u-lowering and before final \emph{z}-loss.
+Before [SC017 NWGmcULowering](#rule-NWGmcULowering), PGmc [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected OE *nosu* 'nose', PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected *sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather than expected *sorg* 'sorrow'. After word-final \emph{*z}-deletion ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected *ræste* 'rest'. These failures place [SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising) after u-lowering and before final \emph{z}-loss.
 
 \newpage
 
@@ -819,7 +819,7 @@ define PWGmcSurvivingBimoricOUnrounding [
 ];
 ```
 
-The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
+The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
 
 \newpage
 
@@ -925,7 +925,7 @@ deletion: Campbell notes that `*z` is "later lost or changed to `r`"
 [@Campbell1959]; Hogg gives a clean statement that Germanic `*z` is generally
 lost in final position [@Hogg1992, p. 37].
 
-The CAPR rule is named `PGmcFinalZDeletion`, which is historically misleading.
+The CAPR rule is named `EAFFinalZDeletion`, which is historically misleading.
 The existing reader-facing prose already notes this: the current assembled
 section correctly describes SC003 as presupposing an earlier loss of final `*z`,
 creating a presentational tension with SC020's place at cascade position 20.
@@ -977,7 +977,7 @@ automatically equal historical sequence.
 
 Hogg states that Germanic \emph{*z} yielded \emph{*r} in intervocalic position in Old English, while final \emph{*z} was generally lost [@Hogg1992, p. 37]. Ringe and Taylor argue that this merger of \emph{*z} with \emph{*r} was independent in Norse and West Germanic and belongs after the Proto-West-Germanic stage [@RingeTaylor2014, pp. 52, 98, 102]. Crist likewise places rhotacism after earlier West Germanic \emph{*z}-deletion rules and rejects treating it as an inherited Proto-Northwest-Germanic innovation [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
 
-The internal identifier [SC003 EAFRhotacism](#rule-EAFRhotacism) places the change in CAPR's Early Anglo-Frisian corridor, the operational post-Proto-West-Germanic stage on the English line; historically the change is a West Germanic rhotacism, later than Proto-Germanic. It is also distinct from [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
+The internal identifier [SC003 EAFRhotacism](#rule-EAFRhotacism) places the change in CAPR's Early Anglo-Frisian corridor, the operational post-Proto-West-Germanic stage on the English line; historically the change is a West Germanic rhotacism, later than Proto-Germanic. It is also distinct from [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
 
 ## SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism}
 
@@ -993,21 +993,21 @@ The lexical evidence thus supplies a terminus ante quem but no terminus post que
 
 \newpage
 
-# Deletion of word-final \emph{*z}
+# West Germanic final \emph{*z}-deletion
 
 ## Historical discussion
 
 The loss of word-final \emph{*z} is a West Germanic development. Standard handbook tradition and Crist's West Germanic discussion establish the development within broader accounts of inflectional morphology [@Hogg1992, p. 37; @Crist2002, p. 1]. The derivation of *ræste* 'rest' demonstrates the local order: final \emph{*ō}-raising ([SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), Chapter 2) must precede final \emph{*z}-loss.
 
-The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) remain flagged for targeted chronology audit.
+The internal CAPR rule is labelled [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), placing it in the Early Anglo-Frisian corridor (CAPR's operational post-Proto-West-Germanic stage on the English line); the historical development is a West Germanic pan-WGmc loss of final \emph{*z}, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) remain flagged for targeted chronology audit.
 
 Final z-loss follows long-o raising and precedes the later changes in weak
 syllables.
 
-## SC020. Deletion of word-final \emph{*z} (`PGmcFinalZDeletion`) {#rule-PGmcFinalZDeletion}
+## SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion}
 
 ```foma
-define PGmcFinalZDeletion [{*z} -> 0 || _ .#.];
+define EAFFinalZDeletion [{*z} -> 0 || _ .#.];
 ```
 
 The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
@@ -1707,7 +1707,7 @@ define OEWLossBeforeI [
 
 The history of *sǣ* ‘sea’ explains why non-initial \emph{*w} disappeared before final unstressed \emph{*i}. Campbell describes the loss, Ringe and Taylor derive the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel trajectory [@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. Loss of the glide allowed the preceding vowel to undergo the later fronting and lengthening.
 
-The same witness supplies two distant limits. Before [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
+The same witness supplies two distant limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
 
 \newpage
 
