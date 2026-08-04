@@ -1,0 +1,36 @@
+# historical_partial_order.tsv
+# Phase 3: supported historical partial order for the audited early cascade.
+#
+# Only evidence-backed edges appear. There are deliberately NO blanket
+# "all nwgmc before all pwgmc" edges: cohorts are determined by adjudicated
+# evidence, not by a predetermined permutation. Rules in the same broad stage
+# whose mutual chronology is unknown are left unordered.
+#
+# type_of_edge:
+#   historical_relative_chronology = a dated ordering supported by lexical
+#       witnesses and/or the handbook tradition
+#   fst_dependency        = required by the CAPR implementation (rule feeds/bleeds
+#       another within the model)
+#   technical_dependency  = a computational placement requirement (stage != order)
+#   historical_stage      = ordering implied purely by secure stage precedence
+#       (used sparingly; none asserted here without a concrete witness)
+#
+# confidence: A = lexically forced / secure ; B = analysis-dependent ; C = unresolved
+#
+# "later" endpoints outside the audited set (SC036, SC040, SC043, SC044, SC051,
+# SC052, SC063) are named so Phase 4 can honour the boundary.
+earlier_sc	earlier_rule	later_sc	later_rule	type_of_edge	confidence	evidence
+SC005	NWGmcAToUBeforeM	SC017	NWGmcULowering	historical_relative_chronology	A	shoulders root vowel: delaying SC005 past SC017 gives the wrong *u; Campbell §331(6); demonstrated dependency
+SC010	PWGmcJGemination	SC011	PWGmcSyllabicJ	historical_relative_chronology	A	OE nett: *natją>*nattją must geminate before syllabic-j; Ringe&Taylor vol.2 p.50; germanic.txt note
+SC019	NWGmcFinalLongORaising	SC020	PGmcFinalZDeletion	historical_relative_chronology	A	*rástōz>ræste: raising must precede final-*z* loss; reader 020-wgmc-final-z-deletion.md
+SC020	PGmcFinalZDeletion	SC040	OEMedUnstressedULowering	historical_relative_chronology	A	*bébruz>befer: final-*z* loss precedes medial u-lowering; reader 020
+SC004	PWGmcAiMonophthongization	SC036	OEInterStressRaising	historical_relative_chronology	A	*sáiwalō>sāwol: monophthongization precedes interstress raising; reader 004
+SC003	PGmcRhotacism	SC044	OEBreaking	historical_relative_chronology	A	terminus ante quem: delaying rhotacism past breaking gives *lirnian/*merde not liornian/meorde; reader 003
+SC026	NWGmcNasalSpirantLengthening	SC027	NWGmcNasalSpirantLoss	historical_relative_chronology	A	fist/goose/youth corridor: vowel effect requires the conditioning nasal present before deletion; change report 026-027
+SC016	OEWsPalatalGlide	SC017	NWGmcULowering	technical_dependency	A	*júką>ġeoc: glide insertion must precede u-lowering; reader 016 (computational placement, stage is OE-WS)
+SC010	PWGmcJGemination	SC049	PGmcBAllophony	fst_dependency	A	[β] must surface only on singleton *b, so allophony follows gemination; germanic.txt; change report 049-050
+SC042	PWGmcSurvivingBimoricOUnrounding	SC043	AngloFrisianBrightening	fst_dependency	B	SC042 creates the surviving-bimoric ō input that SC043 brightens (rest pathway); change report 042
+SC050	SieversLawSyncope	SC051	OESkPalatalization	fst_dependency	B	SC050 is a feeder into the palatalization region; change report 049-050
+SC050	SieversLawSyncope	SC052	OEVelarPalatalization	fst_dependency	B	SC050 feeds velar palatalization; change report 049-050
+SC063	OEHighVowelApocope	SC064	NWGmcInStemNLoss	historical_relative_chronology	A	*-n after *ī loss follows OE high-vowel apocope (cross-source: R/T vol.2 pp.71-72; Campbell §§472-473; Brunner §280; Fulk §7.34; Bammesberger §7.3.4)
+SC020	PGmcFinalZDeletion	SC003	PGmcRhotacism	historical_relative_chronology	B	Crist: WGmc rhotacism follows earlier WGmc *z-deletion (Crist2001 pp.104-106; Crist2002). NOTE: implemented via context-scoping of rhotacism to non-final, NOT via cascade ordering; not a cascade constraint
