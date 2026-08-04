@@ -35,7 +35,7 @@ BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 # These are typographical (markdown) headers — they do NOT change the cascade
 # order or rule application. The five sections track historical phases:
 #   1. Proto-Germanic consonant inheritance
-#   2. Proto-West Germanic developments (PWGmcChanges bundle, individuated)
+#   2. Proto-West Germanic developments (EarlyEnglishLineChanges bundle, individuated)
 #   3. Northwest Germanic developments (PNWGmc-era vowel/nasal changes)
 #   4. Old English (Anglo-Frisian + AF→OE rules)
 #   5. Orthography & surface

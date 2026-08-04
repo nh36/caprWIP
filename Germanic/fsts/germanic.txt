@@ -1232,7 +1232,7 @@ define PGmcBAllophony [
 # after OEARestoration to fix chronology. A-restoration must see the
 # weak-tail endings before they are apocopated.
 # PGmcBAllophony is deliberately excluded here and placed after
-# PWGmcJGemination in PWGmcChanges. R/T vol.2 p.50: j-gemination
+# PWGmcJGemination in EarlyEnglishLineChanges. R/T vol.2 p.50: j-gemination
 # operates on underlying /b/, not the allophonic [β]. The allophonic
 # split is a late phonetic rule that must follow gemination.
 # EAFFinalZLoss (= EAFFinalZDeletion) is NOT composed here. Per
@@ -1663,7 +1663,7 @@ define PWGmcJGemination [
 #
 # CRITICAL: PWGmcJGemination must precede PWGmcSyllabicJ (Fulk §6.15).
 # Gemination creates heavy syllables that block syllabic-j vocalization.
-define PWGmcChanges [
+define EarlyEnglishLineChanges [
     PWGmcAiMonophthongization
     .o. PNWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
     .o. PWGmcEarlyIApocope  # Early i-apocope: loss of final -i in 3rd/4th syllable
@@ -2056,7 +2056,7 @@ define PNWGmcILowering [
 # word-final right context, eliminating the breve-marked diphthong {*ăi}.
 # This rule is kept as a no-op (empty composition) to preserve cascade
 # insertion points; the actual monophthongization now fires at the
-# PWGmcChanges stage. See DEV_NOTES §17.12.
+# EarlyEnglishLineChanges stage. See DEV_NOTES §17.12.
 define PNWGmcUnstressedAiMonophthongization [
     {*ăi} -> {*ē}
 ];
@@ -3093,7 +3093,7 @@ define OERMetathesis [
 # Note: pipeline order reflects FST composition dependencies, not strict chronology.
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
-    PWGmcChanges
+    EarlyEnglishLineChanges
     .o. PNWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
@@ -3191,7 +3191,7 @@ define EnglishProtoToOE (
     .o. OEHeavySyllableNasalApocope
     # OESecondaryNasalization now simply checks `_ {*n} .#.` — true coda position
     .o. OESecondaryNasalization
-    # PWGmc j-gemination moved to PWGmcChanges (2026-03-18). Must run BEFORE
+    # PWGmc j-gemination moved to EarlyEnglishLineChanges (2026-03-18). Must run BEFORE
     # PWGmcSyllabicJ so that *natją → *nattją (gemination creates heavy stem).
     # See DEV_NOTES.md "OE nett 'net': ja-stem Gemination Chronology Bug"
     #
@@ -3213,7 +3213,7 @@ define EnglishProtoToOE (
     .o. OEPostVelarWLoss
     # Loss of *w before unstressed *i (R/T §6.7.1): *saiwiz > *sāi > sǣ
     .o. OEWLossBeforeI
-    # NOTE: PWGmcEarlyIApocope now in PWGmcChanges (Stage 2), not here.
+    # NOTE: PWGmcEarlyIApocope now in EarlyEnglishLineChanges (Stage 2), not here.
     # I-umlaut must precede WS palatal diphthongization: *skaiθiz → *skǣθ (i-umlaut)
     # → sċēaþ (WS palatal diph of ǣ → ēa after ʃ). Campbell §185 confirms both
     # sċǣþ and sċēaþ exist; the ēa form requires i-umlauted ǣ as input.
@@ -3296,7 +3296,7 @@ define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EarlyGermanicConsonantPipeline;
-define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
+define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. EarlyEnglishLineChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē

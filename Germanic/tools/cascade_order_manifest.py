@@ -3,9 +3,9 @@
 
 The Old English derivation is driven by the ``EnglishProtoToOE`` composition in
 ``Germanic/fsts/germanic.txt``.  That composition begins with the historically
-mixed ``PWGmcChanges`` block and then composes a long sequence of individual
+mixed ``EarlyEnglishLineChanges`` block and then composes a long sequence of individual
 rules with ``.o.``.  This tool flattens that composition into a single ordered
-list of Foma identifiers, expanding the ``PWGmcChanges`` block inline so the
+list of Foma identifiers, expanding the ``EarlyEnglishLineChanges`` block inline so the
 manifest reflects the true rule-application order.
 
 The manifest is *descriptive*: it records what the cascade currently does.  It
@@ -17,7 +17,7 @@ Output (deterministic TSV, sorted by executable position):
 
     position    foma_identifier    origin_block
 
-``origin_block`` is ``PWGmcChanges`` for rules expanded out of that block, or
+``origin_block`` is ``EarlyEnglishLineChanges`` for rules expanded out of that block, or
 ``EnglishProtoToOE`` for rules composed directly in the master pipeline.
 
 This script is pure text parsing; it needs neither foma nor flookup and runs on
@@ -102,24 +102,24 @@ def _composition_members(body: str) -> list[str]:
 def build_manifest(fst_path: Path) -> list[dict[str, str]]:
     text = _strip_comments(fst_path.read_text(encoding="utf-8"))
 
-    pwgmc_body = _extract_block_body(text, "PWGmcChanges", "[", "]")
+    pwgmc_body = _extract_block_body(text, "EarlyEnglishLineChanges", "[", "]")
     pwgmc_members = _composition_members(pwgmc_body)
 
     pipeline_body = _extract_block_body(text, "EnglishProtoToOE", "(", ")")
     pipeline_members = _composition_members(pipeline_body)
 
-    if not pipeline_members or pipeline_members[0] != "PWGmcChanges":
+    if not pipeline_members or pipeline_members[0] != "EarlyEnglishLineChanges":
         raise ValueError(
-            "expected EnglishProtoToOE to begin with PWGmcChanges; "
+            "expected EnglishProtoToOE to begin with EarlyEnglishLineChanges; "
             f"got {pipeline_members[:1]!r}"
         )
 
     rows: list[dict[str, str]] = []
     position = 0
-    # Expand PWGmcChanges in place of its reference at the head of the pipeline.
+    # Expand EarlyEnglishLineChanges in place of its reference at the head of the pipeline.
     for ident in pwgmc_members:
         position += 1
-        rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "PWGmcChanges"})
+        rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "EarlyEnglishLineChanges"})
     for ident in pipeline_members[1:]:
         position += 1
         rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "EnglishProtoToOE"})

@@ -21,7 +21,7 @@ ENGLISH_PROTO_TO_OE_RE = re.compile(
     r"define EnglishProtoToOE \((.*?)\);\s*define EnglishProtoInput",
     re.DOTALL,
 )
-PWGMC_CHANGES_RE = re.compile(r"define PWGmcChanges \[(.*?)\];", re.DOTALL)
+PWGMC_CHANGES_RE = re.compile(r"define EarlyEnglishLineChanges \[(.*?)\];", re.DOTALL)
 RESUME_STEPS_RE = re.compile(r"resume_steps=(\d+)")
 LAST_SAFE_ORDER_RE = re.compile(r"last_safe_order=(\d+)")
 
@@ -127,7 +127,7 @@ def parse_args() -> argparse.Namespace:
         "--order-profile",
         choices=(DEFAULT_ORDER_PROFILE, EXPANDED_PWGMC_ORDER_PROFILE),
         default=DEFAULT_ORDER_PROFILE,
-        help="Order profile for --mode first-break; default keeps bundled PWGmcChanges.",
+        help="Order profile for --mode first-break; default keeps bundled EarlyEnglishLineChanges.",
     )
     parser.add_argument(
         "--dry-run-order",
@@ -239,7 +239,7 @@ def parse_pwgmc_changes_components(germanic_path: Path) -> List[str]:
     text = germanic_path.read_text(encoding="utf-8")
     match = PWGMC_CHANGES_RE.search(text)
     if not match:
-        raise RuntimeError(f"Could not locate PWGmcChanges definition in {germanic_path}")
+        raise RuntimeError(f"Could not locate EarlyEnglishLineChanges definition in {germanic_path}")
     block = match.group(1)
     stripped_lines = []
     for raw_line in block.splitlines():
@@ -249,7 +249,7 @@ def parse_pwgmc_changes_components(germanic_path: Path) -> List[str]:
     cleaned = " ".join(stripped_lines)
     order = [part.strip() for part in cleaned.split(".o.") if part.strip()]
     if not order:
-        raise RuntimeError(f"PWGmcChanges definition in {germanic_path} parsed to an empty rule list")
+        raise RuntimeError(f"EarlyEnglishLineChanges definition in {germanic_path} parsed to an empty rule list")
     return order
 
 
@@ -267,7 +267,7 @@ def validate_expanded_pwgmc_components(germanic_path: Path) -> None:
     parsed_components = parse_pwgmc_changes_components(germanic_path)
     if parsed_components != PWGMC_COMPONENT_RULES:
         raise RuntimeError(
-            "PWGmcChanges definition no longer matches the expanded order-profile components: "
+            "EarlyEnglishLineChanges definition no longer matches the expanded order-profile components: "
             f"{parsed_components!r}"
         )
     stage_components = pwgmc_stage_components()
@@ -283,13 +283,13 @@ def expand_pwgmc_changes(order: Sequence[str], germanic_path: Path) -> List[str]
     expanded: List[str] = []
     replaced = 0
     for rule in order:
-        if rule == "PWGmcChanges":
+        if rule == "EarlyEnglishLineChanges":
             expanded.extend(PWGMC_COMPONENT_RULES)
             replaced += 1
             continue
         expanded.append(rule)
     if replaced != 1:
-        raise RuntimeError(f"Expected exactly one PWGmcChanges entry in EnglishProtoToOE, found {replaced}")
+        raise RuntimeError(f"Expected exactly one EarlyEnglishLineChanges entry in EnglishProtoToOE, found {replaced}")
     return expanded
 
 

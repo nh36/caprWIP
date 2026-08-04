@@ -110,12 +110,12 @@ class OrderManifestTests(unittest.TestCase):
         self.assertEqual(positions, list(range(1, len(positions) + 1)))
 
     def test_manifest_begins_with_pwgmc_block(self):
-        pwgmc = [r for r in self.rows if r["origin_block"] == "PWGmcChanges"]
-        # The PWGmcChanges block is expanded at the head of the pipeline, so its
+        pwgmc = [r for r in self.rows if r["origin_block"] == "EarlyEnglishLineChanges"]
+        # The EarlyEnglishLineChanges block is expanded at the head of the pipeline, so its
         # members must occupy the first contiguous positions.
         head = self.rows[: len(pwgmc)]
-        self.assertTrue(all(r["origin_block"] == "PWGmcChanges" for r in head),
-                        "PWGmcChanges members must lead the executable order")
+        self.assertTrue(all(r["origin_block"] == "EarlyEnglishLineChanges" for r in head),
+                        "EarlyEnglishLineChanges members must lead the executable order")
 
     def test_required_local_dependencies_hold_in_current_order(self):
         """Baseline sanity: the demonstrated local dependencies hold in the
