@@ -21,7 +21,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | 13 | 74 | no |
 | 012-lth-voicing.md | SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing} | 12 | 26 | no |
 | 013-dental-hardening.md | SC013. Dental hardening (`PWGmcDentalHardening`) {#rule-PWGmcDentalHardening} | 12 | 29 | no |
-| 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`NWGmcUnstressedAiMonophthongization`) {#rule-NWGmcUnstressedAiMonophthongization} | 13 | 44 | no |
+| 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`PNWGmcUnstressedAiMonophthongization`) {#rule-PNWGmcUnstressedAiMonophthongization} | 13 | 45 | no |
 | 014-015-opening-vowel-prelude.md | SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering} | 29 | 55 | no |
 | 016-west-saxon-palatal-glide.md | SC016. West Saxon palatal glide before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | 17 | 41 | no |
 | 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`NWGmcULowering`) {#rule-NWGmcULowering} | 20 | 60 | no |

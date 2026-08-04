@@ -2051,13 +2051,13 @@ define NWGmcILowering [
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
-# §17.12: The former NWGmcUnstressedAiMonophthongization ({*ăi} -> {*ē})
+# §17.12: The former PNWGmcUnstressedAiMonophthongization ({*ăi} -> {*ē})
 # has been folded into PWGmcAiMonophthongization (line ~1388) using a
 # word-final right context, eliminating the breve-marked diphthong {*ăi}.
 # This rule is kept as a no-op (empty composition) to preserve cascade
 # insertion points; the actual monophthongization now fires at the
 # PWGmcChanges stage. See DEV_NOTES §17.12.
-define NWGmcUnstressedAiMonophthongization [
+define PNWGmcUnstressedAiMonophthongization [
     {*ăi} -> {*ē}
 ];
 
@@ -3094,7 +3094,7 @@ define OERMetathesis [
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
     PWGmcChanges
-    .o. NWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
+    .o. PNWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
@@ -3299,7 +3299,7 @@ define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRu
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
-    .o. NWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
+    .o. PNWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. NWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide

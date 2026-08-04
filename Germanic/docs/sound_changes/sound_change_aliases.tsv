@@ -67,11 +67,12 @@ SC013	PWGmc Dental Hardening	PWGmcDentalHardening	sandbox_stage_name		Germanic/f
 SC013	PWGmc Dental Hardening	PWGmcDentalHardening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
 SC013	PWGmc Dental Hardening	Proto-West Germanic Dental Hardening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC013	PWGmc Dental Hardening	PWGmc Dental Hardening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
-SC014	NWGmc Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC014	NWGmc Unstressed Ai Monophthongization	NWGmcUnstressedAiMonophthongization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC014	NWGmc Unstressed Ai Monophthongization	NWGmcUnstressedAiMonophthongization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
-SC014	NWGmc Unstressed Ai Monophthongization	Northwest Germanic Unstressed Ai Monophthongization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
-SC014	NWGmc Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	PNWGmcUnstressedAiMonophthongization	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	PNWGmcUnstressedAiMonophthongization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	Northwest Germanic Unstressed Ai Monophthongization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	NWGmc Unstressed Ai Monophthongization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	NWGmcUnstressedAiMonophthongization	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC015	NWGmc I Lowering	NWGmc I Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC015	NWGmc I Lowering	NWGmcILowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC015	NWGmc I Lowering	NWGmcILowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt

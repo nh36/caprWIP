@@ -58,7 +58,7 @@ STAGES: List[Tuple[str, str]] = [
     ("PWGmcSyllabicJ", "old_english_sandbox_after_pwgmc_syllabic_j.bin"),
     ("EAFLThVoicing", "old_english_sandbox_after_eaf_l_th_voicing.bin"),
     ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
-    ("NWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_nwgmc_unstressed_ai_monophthongization.bin"),
+    ("PNWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin"),
     ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),
     ("OEWsPalatalGlide", "old_english_sandbox_after_oe_ws_palatal_glide.bin"),
     ("NWGmcULowering", "old_english_sandbox_after_nwgmc_u_lowering.bin"),
@@ -146,7 +146,7 @@ STAGES: List[Tuple[str, str]] = [
 STAGE_HEADERS: Dict[str, str] = {
     "ProtoInput": "## Section 1: Proto-Germanic consonant inheritance",
     "PWGmcAiMonophthongization": "## Section 2: Proto-West Germanic developments",
-    "NWGmcUnstressedAiMonophthongization": "## Section 3: Northwest Germanic developments",
+    "PNWGmcUnstressedAiMonophthongization": "## Section 3: Northwest Germanic developments",
     "OEAwjGlideFormation": "## Section 4: Old English",
     "OldEnglishOrthography": "## Section 5: Orthography & surface",
 }

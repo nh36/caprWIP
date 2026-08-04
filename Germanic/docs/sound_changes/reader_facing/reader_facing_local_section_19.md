@@ -466,15 +466,15 @@ The first change removes the remaining diphthongal quality of unstressed \emph{*
 
 Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e} [@RingeTaylor2014, pp. 37--41]. The historical change is thus established, although the order test determines no closer relative position.
 
-## \CAPRRuleHeading{SC014. Monophthongization of unstressed \emph{*ai}}{NWGmcUnstressedAiMonophthongization} {#rule-NWGmcUnstressedAiMonophthongization}
+## \CAPRRuleHeading{SC014. Monophthongization of unstressed \emph{*ai}}{PNWGmcUnstressedAiMonophthongization} {#rule-PNWGmcUnstressedAiMonophthongization}
 
 ```foma
-define NWGmcUnstressedAiMonophthongization [
+define PNWGmcUnstressedAiMonophthongization [
     {*ăi} -> {*ē}
 ];
 ```
 
-Moving [SC014 NWGmcUnstressedAiMonophthongization](#rule-NWGmcUnstressedAiMonophthongization) earlier or later changes no output. The lexicon therefore cannot refine its source-based placement among the earliest Northwest Germanic simplifications of unstressed vowels.
+Moving [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) earlier or later changes no output. The lexicon therefore cannot refine its source-based placement among the earliest Northwest Germanic simplifications of unstressed vowels.
 
 Ringe and Taylor's merger of unstressed \emph{*ai} with \emph{*e} establishes the historical development; the current witnesses do not distinguish its position relative to neighboring changes.
 

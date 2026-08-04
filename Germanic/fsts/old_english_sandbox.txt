@@ -60,9 +60,9 @@ define SPWGmcDentalHardening SEAFLThVoicing
 # Section 4: EnglishProtoToOE rules (germanic.txt lines 3093-3266),
 #            applied in cascade order, one snapshot per .o.
 # ============================================================================
-define SNWGmcUnstressedAiMonophthongization SPWGmcDentalHardening
-    .o. NWGmcUnstressedAiMonophthongization;
-define SNWGmcILowering SNWGmcUnstressedAiMonophthongization
+define SPNWGmcUnstressedAiMonophthongization SPWGmcDentalHardening
+    .o. PNWGmcUnstressedAiMonophthongization;
+define SNWGmcILowering SPNWGmcUnstressedAiMonophthongization
     .o. NWGmcILowering;
 define SOEWsPalatalGlide SNWGmcILowering
     .o. OEWsPalatalGlide;
@@ -297,8 +297,8 @@ save stack old_english_sandbox_after_pwgmc_dental_hardening.bin
 
 # Section 4: EnglishProtoToOE rules
 clear stack
-regex SNWGmcUnstressedAiMonophthongization;
-save stack old_english_sandbox_after_nwgmc_unstressed_ai_monophthongization.bin
+regex SPNWGmcUnstressedAiMonophthongization;
+save stack old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin
 
 clear stack
 regex SNWGmcILowering;
