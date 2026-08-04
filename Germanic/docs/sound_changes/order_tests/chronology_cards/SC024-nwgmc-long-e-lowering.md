@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `24`
-- rule_name: `NWGmcLongELowering`
+- rule_name: `PNWGmcLongELowering`
+- former_rule_name: `NWGmcLongELowering`
 - safe computational window: `13-55` (earlier side runner-bounded)
 - status: `first_break_complete`
 
