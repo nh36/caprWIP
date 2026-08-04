@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `22`
-- rule_name: `NWGmcMnDissimilation`
+- rule_name: `PNWGmcMnDissimilation`
+- former_rule_name: `NWGmcMnDissimilation`
 - safe computational window: `13-86` (earlier side runner-limited; later side boundary-limited)
 - status: `first_break_complete`
 

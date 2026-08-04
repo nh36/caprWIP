@@ -17,7 +17,7 @@ position	foma_identifier	origin_block
 16	PNWGmcFinalLongORaising	EnglishProtoToOE
 17	EAFFinalZDeletion	EnglishProtoToOE
 18	PNWGmcUnstressedORaising	EnglishProtoToOE
-19	NWGmcMnDissimilation	EnglishProtoToOE
+19	PNWGmcMnDissimilation	EnglishProtoToOE
 20	NWGmcNStemNLoss	EnglishProtoToOE
 21	NWGmcLongELowering	EnglishProtoToOE
 22	NWGmcLongENasalRounding	EnglishProtoToOE

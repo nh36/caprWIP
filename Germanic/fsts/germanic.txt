@@ -2132,7 +2132,7 @@ define PNWGmcUnstressedORaising [
 # PGmc *hemonų → NWGmc *hebonų → (later) OE heofon.
 # The output is *β (voiced bilabial fricative), which becomes OE f intervocalically.
 # Environment: V_VCn where C is any consonant(s) and n is a nasal.
-define NWGmcMnDissimilation [
+define PNWGmcMnDissimilation [
     {*m} -> {*β} || EnglishStarVocalic _ EnglishStarVocalic EnglishStarConsonant* EnglishStarNasal
 ];
 
@@ -3119,7 +3119,7 @@ define EnglishProtoToOE (
     # lowers *-u → *-o. See DEV_NOTES §17.10.25.
     .o. EAFFinalZDeletion
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
-    .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
+    .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
@@ -3311,7 +3311,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
-    .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
+    .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding

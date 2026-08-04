@@ -76,9 +76,9 @@ define SEAFFinalZDeletion SPNWGmcFinalLongORaising
     .o. EAFFinalZDeletion;
 define SPNWGmcUnstressedORaising SEAFFinalZDeletion
     .o. PNWGmcUnstressedORaising;
-define SNWGmcMnDissimilation SPNWGmcUnstressedORaising
-    .o. NWGmcMnDissimilation;
-define SNWGmcNStemNLoss SNWGmcMnDissimilation
+define SPNWGmcMnDissimilation SPNWGmcUnstressedORaising
+    .o. PNWGmcMnDissimilation;
+define SNWGmcNStemNLoss SPNWGmcMnDissimilation
     .o. NWGmcNStemNLoss;
 define SNWGmcLongELowering SNWGmcNStemNLoss
     .o. NWGmcLongELowering;
@@ -329,8 +329,8 @@ regex SPNWGmcUnstressedORaising;
 save stack old_english_sandbox_after_pnwgmc_unstressed_o_raising.bin
 
 clear stack
-regex SNWGmcMnDissimilation;
-save stack old_english_sandbox_after_nwgmc_mn_dissimilation.bin
+regex SPNWGmcMnDissimilation;
+save stack old_english_sandbox_after_pnwgmc_mn_dissimilation.bin
 
 clear stack
 regex SNWGmcNStemNLoss;
