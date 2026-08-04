@@ -534,7 +534,7 @@ class IdxParsingTests(unittest.TestCase):
         entries = _parse_idx_entries(idx)
         self.assertEqual(len(entries), 1)
         self.assertEqual(entries[0]["page"], "12")
-        self.assertIn(r"\iventry{wull}{}", entries[0]["command"])
+        self.assertIn(r"\iventry{wull}{}", entries[0]["key"])
 
     def test_parse_idx_entries_unbalanced_raises(self):
         with self.assertRaises(ValueError):
@@ -582,8 +582,11 @@ class MakeIndexParserExtendedTests(unittest.TestCase):
 
 class PdfComparisonTests(unittest.TestCase):
     def test_split_pdf_text_separates_body_and_index(self):
-        body, index = _split_pdf_text("Chapter one\nIndex verborum\nalpha 1\n", "prod")
-        self.assertEqual(body, "Chapter one\n")
+        # pdftotext uses form-feed (\f) as page separator
+        pdf_text = "Chapter one\n\fChapter two\n\fIndex verborum\nalpha 1\n"
+        body, index = _split_pdf_text(pdf_text, "prod")
+        self.assertIn("Chapter one", body)
+        self.assertIn("Chapter two", body)
         self.assertTrue(index.startswith("Index verborum"))
 
     def test_split_pdf_text_requires_index_heading(self):

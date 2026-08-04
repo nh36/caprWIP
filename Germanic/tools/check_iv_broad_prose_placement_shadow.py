@@ -198,7 +198,10 @@ def _parse_idx_entries(idx_text: str) -> list[dict[str, str]]:
             k += 1
         if depth != 0:
             raise ValueError("unbalanced page-number brace in IDX output")
-        entries.append({"command": command, "page": idx_text[page_start : k - 1]})
+        # Strip |pagespec suffix added by hyperref (e.g., |hyperpage)
+        # This is always at the top level of the key, not inside nested braces
+        canonical_key = command.rsplit("|", 1)[0] if "|" in command else command
+        entries.append({"key": canonical_key, "page": idx_text[page_start : k - 1]})
         i = k
     return entries
 
@@ -212,12 +215,156 @@ def _load_canonical_iv_commands() -> list[str]:
     ]
 
 
+def _extract_index_key(index_command: str) -> str:
+    """Extract the complete key from \\index[iv]{...} using balanced-brace parsing."""
+    prefix = r"\index[iv]{"
+    if not index_command.startswith(prefix):
+        raise ValueError(f"not an \\index[iv]{{...}} command: {index_command!r}")
+    i = len(prefix)
+    depth = 1
+    while i < len(index_command) and depth > 0:
+        if index_command[i] == "{":
+            depth += 1
+        elif index_command[i] == "}":
+            depth -= 1
+        i += 1
+    if depth != 0:
+        raise ValueError(f"unbalanced braces in index command: {index_command!r}")
+    return index_command[len(prefix) : i - 1]
+
+
+def _idx_page_impact_analysis(
+    prod_idx_text: str,
+    shadow_idx_text: str,
+    canonical_commands: list[str],
+    movable_emission_ids: list[str],
+    movable_records: list,  # list of PlacementRecord
+) -> dict[str, object]:
+    """Compare production vs shadow iv.idx using exact complete keys.
+
+    Returns summary dict with corrected counts based on complete canonical keys
+    (not display-only IND keys).
+    """
+    expected_keys = Counter(
+        _extract_index_key(cmd) for cmd in canonical_commands
+    )
+    expected_key_set = set(expected_keys.keys())
+    expected_total = len(canonical_commands)
+    expected_unique = len(expected_key_set)
+
+    # Parse both IDX files
+    prod_entries = _parse_idx_entries(prod_idx_text)
+    shadow_entries = _parse_idx_entries(shadow_idx_text)
+
+    # Build key → page-label lists
+    def _build_page_map(entries: list[dict[str, str]]) -> dict[str, list[str]]:
+        pages: dict[str, list[str]] = {}
+        for e in entries:
+            key = e["key"]
+            pages.setdefault(key, []).append(e["page"])
+        return pages
+
+    prod_pages = _build_page_map(prod_entries)
+    shad_pages = _build_page_map(shadow_entries)
+
+    prod_key_set = set(prod_pages.keys())
+    shad_key_set = set(shad_pages.keys())
+
+    # Build emission_id → canonical key mapping via PlacementRecord
+    emission_to_key: dict[str, str] = {}
+    for rec in movable_records:
+        if rec.canonical_index_key:
+            emission_to_key[rec.emission_id] = rec.canonical_index_key
+
+    # Compare by exact key
+    all_keys = prod_key_set | shad_key_set
+    unchanged = changed = 0
+    pages_added_count = pages_removed_count = 0
+    changed_entries: list[dict[str, object]] = []
+    changed_key_emission_ids: set[str] = set()
+
+    for key in sorted(all_keys):
+        prod_list = prod_pages.get(key, [])
+        shad_list = shad_pages.get(key, [])
+        if sorted(set(prod_list)) == sorted(set(shad_list)):
+            unchanged += 1
+        else:
+            changed += 1
+            prod_set = set(prod_list)
+            shad_set = set(shad_list)
+            added = sorted(shad_set - prod_set)
+            removed = sorted(prod_set - shad_set)
+            pages_added_count += len(added)
+            pages_removed_count += len(removed)
+            # Find associated movable emission IDs
+            assoc_ids = [eid for eid, k in emission_to_key.items() if k == key]
+            changed_key_emission_ids.update(assoc_ids)
+            changed_entries.append({
+                "key": key,
+                "prod_pages": prod_list,
+                "shadow_pages": shad_list,
+                "pages_added": added,
+                "pages_removed": removed,
+                "moved_emission_ids": assoc_ids,
+            })
+
+    return {
+        "expected_total_commands": expected_total,
+        "expected_unique_keys": expected_unique,
+        "prod_idx_total": len(prod_entries),
+        "shadow_idx_total": len(shadow_entries),
+        "prod_unique_keys": len(prod_key_set),
+        "shadow_unique_keys": len(shad_key_set),
+        "total_exact_entries": len(all_keys),
+        "unchanged": unchanged,
+        "changed": changed,
+        "pages_added_count": pages_added_count,
+        "pages_removed_count": pages_removed_count,
+        "changed_entries": changed_entries[:20],
+        "changed_key_emission_ids": sorted(changed_key_emission_ids),
+        "prod_idx_matches_canonical_count": len(prod_entries) == expected_total,
+        "prod_idx_matches_canonical_keys": prod_key_set == expected_key_set,
+        "shadow_idx_matches_canonical_keys": shad_key_set == expected_key_set,
+    }
+
+
 def _split_pdf_text(pdf_text: str, label: str) -> tuple[str, str]:
-    marker = "Index verborum"
-    idx = pdf_text.find(marker)
-    if idx < 0:
-        raise AssertionError(f"{label} PDF text missing '{marker}' heading")
-    return pdf_text[:idx], pdf_text[idx:]
+    """Split PDF text into body and Index Verborum sections.
+
+    Uses 'Index verborum' heading on its own page as the split boundary.
+    The Table of Contents also contains "Index verborum" but it appears
+    inline in a multi-entry page. The actual index starts on its own page
+    where "Index verborum" is the first non-whitespace content.
+    Raises if the boundary cannot be identified uniquely.
+    """
+    # Split on form-feed page boundaries
+    pages = pdf_text.split("\f")
+    iv_page_indices = []
+    for i, page in enumerate(pages):
+        stripped = page.strip()
+        # The actual IV index page starts with "Index verborum" as its first content
+        # The TOC page has it as an entry within other content
+        if stripped.startswith("Index verborum") or stripped.startswith("Index Verborum"):
+            iv_page_indices.append(i)
+
+    if not iv_page_indices:
+        # Fall back to first occurrence anywhere (handles TOC-only match)
+        for i, page in enumerate(pages):
+            if "Index verborum" in page or "Index Verborum" in page:
+                iv_page_indices.append(i)
+                break
+
+    if not iv_page_indices:
+        raise AssertionError(f"{label}: PDF text missing 'Index verborum' heading")
+    if len(iv_page_indices) > 1:
+        raise AssertionError(
+            f"{label}: multiple Index Verborum page boundaries found ({len(iv_page_indices)} pages)"
+        )
+
+    split_page = iv_page_indices[0]
+    body = "\f".join(pages[:split_page])
+    index_section = "\f".join(pages[split_page:])
+    return body, index_section
 
 
 def _run_pandoc(md_text: str, *, label: str) -> str:
@@ -356,8 +503,8 @@ def _pandoc_filter_args() -> list[str]:
     ]
 
 
-def _run_full_impact_local(production_md: str, shadow_md: str) -> dict[str, object]:
-    """Local 3-pass converged full-impact build (requires pandoc, xelatex, makeindex)."""
+def _run_full_impact_local(production_md: str, shadow_md: str, inventory: dict[str, object] | None = None) -> dict[str, object]:
+    """Local 3-pass converged full-impact build (requires pandoc, xelatex, makeindex, pdftotext)."""
     env = dict(os.environ)
     env.update({
         "CAPR_IV_BOOK_EMISSIONS_TSV": str(BOOK_EMISSIONS_TSV),
@@ -367,7 +514,6 @@ def _run_full_impact_local(production_md: str, shadow_md: str) -> dict[str, obje
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
         result: dict[str, object] = {}
-        ind_contents: dict[str, str] = {}
 
         for label, md_text in (("prod", production_md), ("shadow", shadow_md)):
             run_dir = tmp_path / label
@@ -392,7 +538,7 @@ def _run_full_impact_local(production_md: str, shadow_md: str) -> dict[str, obje
             if norm_proc.returncode != 0:
                 raise AssertionError(f"--full-impact normalize_citeproc failed for {label}: {norm_proc.stderr[:300]}")
 
-            # XeLaTeX pass 1
+            # XeLaTeX 3 passes with MakeIndex on iv.idx after pass 1
             for _pass in range(1, 4):
                 xe = subprocess.run(
                     ["xelatex", "-interaction=nonstopmode", "-halt-on-error", src_tex.name],
@@ -401,56 +547,53 @@ def _run_full_impact_local(production_md: str, shadow_md: str) -> dict[str, obje
                 if xe.returncode != 0:
                     raise AssertionError(f"--full-impact xelatex pass {_pass} failed for {label}")
                 if _pass == 1:
-                    # MakeIndex after pass 1
-                    acc = rej = 0
-                    for idx in run_dir.glob("*.idx"):
-                        ind = idx.with_suffix(".ind")
-                        mk = subprocess.run(
-                            ["makeindex", "-o", ind.name, idx.name],
-                            cwd=str(run_dir), capture_output=True, text=True,
-                        )
-                        if mk.returncode != 0:
-                            raise AssertionError(f"--full-impact makeindex failed for {idx.name}")
-                        mk_acc, mk_rej = _parse_makeindex_output(mk.stdout + "\n" + mk.stderr)
-                        acc += mk_acc
-                        rej += mk_rej
-                    result[f"{label}_accepted"] = acc
-                    result[f"{label}_rejected"] = rej
-                    # Save IND content for page-impact analysis
-                    iv_ind = next((run_dir / idx.stem).with_suffix(".ind")
-                                  for idx in run_dir.glob("*.idx") if "iv" in idx.stem.lower()
-                                  if (run_dir / idx.stem).with_suffix(".ind").exists()), None
-                    if iv_ind is None:
-                        iv_inds = list(run_dir.glob("*.ind"))
-                        iv_ind = iv_inds[0] if iv_inds else None
-                    if iv_ind and iv_ind.exists():
-                        ind_contents[label] = iv_ind.read_text(encoding="utf-8", errors="replace")
+                    iv_idx = run_dir / "iv.idx"
+                    if not iv_idx.exists():
+                        raise AssertionError(f"--full-impact iv.idx not found after XeLaTeX pass 1 for {label}")
+                    iv_ind = run_dir / "iv.ind"
+                    iv_ilg = run_dir / "iv.ilg"
+                    mk = subprocess.run(
+                        ["makeindex", "-o", iv_ind.name, "-t", iv_ilg.name, iv_idx.name],
+                        cwd=str(run_dir), capture_output=True, text=True,
+                    )
+                    if mk.returncode != 0:
+                        raise AssertionError(f"--full-impact makeindex failed for {label}: {mk.stderr[:300]}")
+                    mk_acc, mk_rej = _parse_makeindex_output(mk.stdout + "\n" + mk.stderr + "\n" + (iv_ilg.read_text() if iv_ilg.exists() else ""))
+                    result[f"{label}_accepted"] = mk_acc
+                    result[f"{label}_rejected"] = mk_rej
+                    result[f"{label}_iv_idx"] = iv_idx.read_text(encoding="utf-8")
 
-            # PDF page count via pdftotext or pdfinfo
+            # PDF page count (always try pdfinfo)
             pdf_path = run_dir / f"{label}.pdf"
-            if pdf_path.exists() and shutil.which("pdftotext"):
-                pt = subprocess.run(
-                    ["pdftotext", "-layout", str(pdf_path), "-"],
-                    capture_output=True, text=True,
-                )
-                result[f"{label}_pdf_text"] = pt.stdout
-            elif pdf_path.exists() and shutil.which("pdfinfo"):
-                pi = subprocess.run(["pdfinfo", str(pdf_path)], capture_output=True, text=True)
-                m = re.search(r"Pages:\s+(\d+)", pi.stdout)
-                result[f"{label}_pdf_pages"] = int(m.group(1)) if m else 0
+            if pdf_path.exists():
+                if shutil.which("pdfinfo"):
+                    pi = subprocess.run(["pdfinfo", str(pdf_path)], capture_output=True, text=True)
+                    m = re.search(r"Pages:\s+(\d+)", pi.stdout)
+                    result[f"{label}_pdf_pages"] = int(m.group(1)) if m else 0
+                if shutil.which("pdftotext"):
+                    pt = subprocess.run(
+                        ["pdftotext", "-layout", str(pdf_path), "-"],
+                        capture_output=True, text=True,
+                    )
+                    result[f"{label}_pdf_text"] = pt.stdout
 
-        # Page-impact analysis
-        if "prod" in ind_contents and "shadow" in ind_contents:
-            prod_pages = _parse_ind_page_lists(ind_contents["prod"])
-            shad_pages = _parse_ind_page_lists(ind_contents["shadow"])
-            result["page_impact"] = _page_impact_summary(prod_pages, shad_pages)
-            result["prod_iv_ind"] = ind_contents["prod"]
-            result["shadow_iv_ind"] = ind_contents["shadow"]
+        # IDX-based page impact using exact complete keys
+        if "prod_iv_idx" in result and "shadow_iv_idx" in result:
+            canonical_commands = _load_canonical_iv_commands()
+            movable_ids = inventory["movable_emission_ids"] if inventory else []
+            movable_records = [r for r in inventory["records"] if r.proposed_status == "passage_shadow"] if inventory else []
+            result["idx_page_impact"] = _idx_page_impact_analysis(
+                result["prod_iv_idx"],
+                result["shadow_iv_idx"],
+                canonical_commands,
+                movable_ids,
+                movable_records,
+            )
 
         return result
 
 
-def _run_full_impact_docker(production_md: str, shadow_md: str) -> dict[str, object]:
+def _run_full_impact_docker(production_md: str, shadow_md: str, inventory: dict[str, object] | None = None) -> dict[str, object]:
     """Production-equivalent converged 3-pass TeX build inside Docker.
 
     Runs: Pandoc → normalize_citeproc → XeLaTeX×1 → MakeIndex → XeLaTeX×2 → XeLaTeX×3.
@@ -467,7 +610,7 @@ def _run_full_impact_docker(production_md: str, shadow_md: str) -> dict[str, obj
         shad_md.write_text(shadow_md, encoding="utf-8")
         # Write Python helper scripts to files (inline -c scripts have newline issues in Docker)
         (tmp_path / "mkparse.py").write_text(
-            "import re, glob\n"
+            "import re, os, sys\n"
             "def parse(txt):\n"
             "    acc = rej = 0\n"
             "    for l in txt.splitlines():\n"
@@ -477,14 +620,14 @@ def _run_full_impact_docker(production_md: str, shadow_md: str) -> dict[str, obj
             "        if m: rej = int(m.group(1))\n"
             "    return acc, rej\n"
             "for b in ('prod', 'shadow'):\n"
-            "    total_a = total_r = 0\n"
-            "    for f in glob.glob(b + '/*.ilg'):\n"
-            "        try: txt = open(f).read()\n"
-            "        except: txt = ''\n"
-            "        a, r = parse(txt)\n"
-            "        total_a += a; total_r += r\n"
-            "    print('MK_' + b.upper() + '_ACCEPTED=' + str(total_a))\n"
-            "    print('MK_' + b.upper() + '_REJECTED=' + str(total_r))\n",
+            "    ilg_path = b + '/iv.ilg'\n"
+            "    if not os.path.exists(ilg_path):\n"
+            "        print('ERROR: missing ' + ilg_path, file=sys.stderr)\n"
+            "        sys.exit(1)\n"
+            "    txt = open(ilg_path).read()\n"
+            "    a, r = parse(txt)\n"
+            "    print('MK_' + b.upper() + '_ACCEPTED=' + str(a))\n"
+            "    print('MK_' + b.upper() + '_REJECTED=' + str(r))\n",
             encoding="utf-8",
         )
         (tmp_path / "indparse.py").write_text(
@@ -536,25 +679,18 @@ for base in prod shadow; do
   python3 /data/Germanic/tools/normalize_citeproc_section_locators.py --tex-path "$base.tex"
   xelatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
   [ -f iv.idx ] || {{ echo "missing iv.idx for $base" >&2; exit 1; }}
-  makeindex -o iv.ind -t iv.ilg iv.idx >/dev/null 2>&1
+  makeindex -o iv.ind -t iv.ilg iv.idx
+  [ -f iv.ind ] || {{ echo "missing iv.ind for $base" >&2; exit 1; }}
+  [ -f iv.ilg ] || {{ echo "missing iv.ilg for $base" >&2; exit 1; }}
   xelatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
   xelatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
-  pg=unknown
-  command -v pdfinfo >/dev/null 2>&1 && pg=$(pdfinfo "$base.pdf" 2>/dev/null | grep "^Pages:" | grep -o '[0-9]*' | head -1) || true
-  echo "PDF_${{base}}_PAGES=$pg"
-  command -v pdftotext >/dev/null 2>&1 && pdftotext -layout "$base.pdf" - >"$base.pdf.txt" 2>/dev/null || true
+  [ -f "$base.pdf" ] || {{ echo "missing PDF for $base" >&2; exit 1; }}
+  pdfinfo "$base.pdf" | grep "^Pages:" | grep -o '[0-9]*' > pages.txt
+  pdftotext -layout "$base.pdf" "$base.pdf.txt"
   cd /data/{rel_tmp}
 done
 cd /data/{rel_tmp}
 python3 mkparse.py
-python3 indparse.py
-for base in prod shadow; do
-  if [ -f "$base/$base.pdf.txt" ]; then
-    echo "PDFTEXT_${{base}}_BEGIN"
-    cat "$base/$base.pdf.txt"
-    echo "PDFTEXT_${{base}}_END"
-  fi
-done
 """
         proc = subprocess.run(
             [
@@ -567,7 +703,6 @@ done
             capture_output=True, text=True, cwd=str(REPO_ROOT),
         )
         if proc.returncode != 0:
-            # Show more stderr to aid diagnosis, but truncate to keep output manageable
             raise AssertionError(
                 f"--full-impact docker run failed (rc={proc.returncode})\n"
                 f"stderr (last 2000): {proc.stderr[-2000:]}\n"
@@ -575,7 +710,7 @@ done
             )
         output = proc.stdout
 
-        # Parse MakeIndex counts
+        # Parse MakeIndex counts from Python helper (reads iv.ilg)
         result: dict[str, object] = {}
         for key in ("prod", "shadow"):
             m_acc = re.search(rf"MK_{key.upper()}_ACCEPTED=(\d+)", output)
@@ -583,43 +718,48 @@ done
             result[f"{key}_accepted"] = int(m_acc.group(1)) if m_acc else 0
             result[f"{key}_rejected"] = int(m_rej.group(1)) if m_rej else 0
 
-        # Parse page counts (format: PDF_prod_PAGES=N)
+        # Read result files from the mounted filesystem (not stdout)
         for key in ("prod", "shadow"):
-            m = re.search(rf"PDF_{key}_PAGES=(\d+)", output)
-            if m:
-                result[f"{key}_pdf_pages"] = int(m.group(1))
+            # PDF page count
+            pages_file = tmp_path / key / "pages.txt"
+            if pages_file.exists():
+                pages_txt = pages_file.read_text(encoding="utf-8").strip()
+                if pages_txt.isdigit():
+                    result[f"{key}_pdf_pages"] = int(pages_txt)
+            # PDF text
+            pdf_txt_file = tmp_path / key / f"{key}.pdf.txt"
+            if pdf_txt_file.exists():
+                result[f"{key}_pdf_text"] = pdf_txt_file.read_text(encoding="utf-8")
+            # iv.idx content (for IDX-based page impact)
+            idx_file = tmp_path / key / "iv.idx"
+            if idx_file.exists():
+                result[f"{key}_iv_idx"] = idx_file.read_text(encoding="utf-8")
+            # iv.ilg content (for structural verification)
+            ilg_file = tmp_path / key / "iv.ilg"
+            if ilg_file.exists():
+                result[f"{key}_iv_ilg"] = ilg_file.read_text(encoding="utf-8")
 
-        # Parse IND content for page-impact analysis
-        ind_contents: dict[str, str] = {}
-        for key in ("prod", "shadow"):
-            block = re.search(
-                rf"IND_{key.upper()}_BEGIN\n(.*?)IND_{key.upper()}_END",
-                output, re.DOTALL
+        # IDX-based page impact (exact complete keys)
+        if "prod_iv_idx" in result and "shadow_iv_idx" in result:
+            canonical_commands = _load_canonical_iv_commands()
+            inv = inventory or {}
+            inv_movable_ids = inv.get("movable_emission_ids", [])
+            inv_movable_records = [r for r in inv.get("records", []) if r.proposed_status == "passage_shadow"]
+            result["idx_page_impact"] = _idx_page_impact_analysis(
+                result["prod_iv_idx"],
+                result["shadow_iv_idx"],
+                canonical_commands,
+                inv_movable_ids,
+                inv_movable_records,
             )
-            if block:
-                ind_contents[key] = block.group(1)
-
-        if "prod" in ind_contents and "shadow" in ind_contents:
-            prod_pages = _parse_ind_page_lists(ind_contents["prod"])
-            shad_pages = _parse_ind_page_lists(ind_contents["shadow"])
-            result["page_impact"] = _page_impact_summary(prod_pages, shad_pages)
-
-        # Parse PDF text
-        for key in ("prod", "shadow"):
-            block = re.search(
-                rf"PDFTEXT_{key}_BEGIN\n(.*?)PDFTEXT_{key}_END",
-                output, re.DOTALL
-            )
-            if block:
-                result[f"{key}_pdf_text"] = block.group(1)
 
         return result
 
 
-def _run_full_impact(production_md: str, shadow_md: str) -> dict[str, object]:
+def _run_full_impact(production_md: str, shadow_md: str, inventory: dict[str, object] | None = None) -> dict[str, object]:
     if all(shutil.which(tool) for tool in ("pandoc", "xelatex", "makeindex")):
-        return _run_full_impact_local(production_md, shadow_md)
-    return _run_full_impact_docker(production_md, shadow_md)
+        return _run_full_impact_local(production_md, shadow_md, inventory)
+    return _run_full_impact_docker(production_md, shadow_md, inventory)
 
 
 def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
@@ -722,7 +862,7 @@ def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
 
     full_impact_result = None
     if full_impact and not errors:
-        full_impact_result = _run_full_impact(ordinary_book, shadow_book)
+        full_impact_result = _run_full_impact(ordinary_book, shadow_book, inventory=inventory)
         if full_impact_result["prod_rejected"] != 0 or full_impact_result["shadow_rejected"] != 0:
             errors.append(
                 "makeindex rejected entries in full-impact mode: "
@@ -737,6 +877,26 @@ def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
                 "makeindex accepted totals differ in full-impact mode: "
                 f"prod={full_impact_result['prod_accepted']} shadow={full_impact_result['shadow_accepted']}"
             )
+        # IDX-based canonical key validation
+        if "idx_page_impact" in full_impact_result:
+            ipi = full_impact_result["idx_page_impact"]
+            if not ipi.get("prod_idx_matches_canonical_count", True):
+                errors.append(
+                    f"prod iv.idx total ({ipi.get('prod_idx_total')}) != expected commands "
+                    f"({ipi.get('expected_total_commands')})"
+                )
+            if not ipi.get("prod_idx_matches_canonical_keys", True):
+                errors.append("prod iv.idx complete-key set does not match canonical book_emissions keys")
+            if not ipi.get("shadow_idx_matches_canonical_keys", True):
+                errors.append("shadow iv.idx complete-key set does not match canonical book_emissions keys")
+            # Verify that changed keys are all associated with moved emissions
+            changed_entries = ipi.get("changed_entries", [])
+            for entry in changed_entries:
+                if not entry.get("moved_emission_ids"):
+                    errors.append(
+                        f"index key changed without associated movable emission: {entry.get('key', '')[:80]}"
+                    )
+        # PDF body/index separation
         if "prod_pdf_text" in full_impact_result and "shadow_pdf_text" in full_impact_result:
             try:
                 prod_body, prod_index = _split_pdf_text(full_impact_result["prod_pdf_text"], "prod")
@@ -763,25 +923,35 @@ def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
             f"prod={full_impact_result['prod_accepted']}/{full_impact_result['prod_rejected']} "
             f"shadow={full_impact_result['shadow_accepted']}/{full_impact_result['shadow_rejected']}"
         )
-        # Page-impact report
-        if verbose and full_impact_result and "page_impact" in full_impact_result:
-            pi = full_impact_result["page_impact"]
-            print(f"  page-impact: total_entries={pi.get('total_entries',0)} "
-                  f"unchanged={pi.get('unchanged',0)} changed={pi.get('changed',0)} "
-                  f"pages_added={pi.get('pages_added',0)} pages_removed={pi.get('pages_removed',0)}")
+        if "idx_page_impact" in full_impact_result:
+            ipi = full_impact_result["idx_page_impact"]
+            print(
+                f"  idx-page-impact (exact keys): total={ipi.get('total_exact_entries')} "
+                f"unchanged={ipi.get('unchanged')} changed={ipi.get('changed')} "
+                f"refs_added={ipi.get('pages_added_count')} refs_removed={ipi.get('pages_removed_count')}"
+            )
+            print(
+                f"  prod/shadow idx: {ipi.get('prod_idx_total')}/{ipi.get('shadow_idx_total')} entries "
+                f"({ipi.get('prod_unique_keys')}/{ipi.get('shadow_unique_keys')} unique keys)"
+            )
         if verbose and full_impact_result:
-            prod_pages = full_impact_result.get("prod_pdf_pages")
-            shad_pages = full_impact_result.get("shadow_pdf_pages")
-            if prod_pages is not None or shad_pages is not None:
-                print(f"  pdf pages: prod={prod_pages} shadow={shad_pages}")
-            # PDF text comparison
+            prod_pages_count = full_impact_result.get("prod_pdf_pages")
+            shad_pages_count = full_impact_result.get("shadow_pdf_pages")
+            if prod_pages_count is not None or shad_pages_count is not None:
+                print(f"  pdf pages: prod={prod_pages_count} shadow={shad_pages_count}")
             prod_text = full_impact_result.get("prod_pdf_text", "")
             shad_text = full_impact_result.get("shadow_pdf_text", "")
             if prod_text and shad_text:
-                if prod_text == shad_text:
-                    print("  pdf body text: identical")
-                else:
-                    print("  pdf body text: differs (pagination/placement change observed)")
+                try:
+                    prod_body, prod_idx_text = _split_pdf_text(prod_text, "prod")
+                    shad_body, shad_idx_text = _split_pdf_text(shad_text, "shadow")
+                    body_eq = (prod_body == shad_body)
+                    print(f"  pdf body text: {'identical' if body_eq else 'DIFFERS'}")
+                    if not body_eq:
+                        print("  WARNING: body text differs — investigate before proceeding")
+                    print(f"  pdf index text: {'identical' if prod_idx_text == shad_idx_text else 'differs (expected: page refs changed)'}")
+                except AssertionError as exc:
+                    print(f"  pdf split: {exc}")
     return True
 
 
