@@ -4,12 +4,16 @@
 Behaviour-neutral migration only. Each row pairs a rule's former identifier /
 display / stage / scope with its canonical target under the CAPR stage+scope
 ontology (PGmc -> PNWGmc -> PWGmc -> EAF -> OE for stage; a separate hist_scope
-axis). Former fields are auto-loaded from the registry so they cannot drift; the
-canonical targets are encoded in RENAMES below.
+axis). Former fields are a FROZEN pre-migration snapshot (FORMER below) so they
+cannot drift as the live registry is migrated rule-by-rule; the canonical targets
+are encoded in RENAMES below.
 
 migration_status values: pending | completed | deferred | not_required
-As each rule migrates, set its migration_status=completed and migration_commit
-to the rule's commit SHA (via --set-completed, or by editing the tracked TSV).
+As each rule migrates, add its sc_id -> commit SHA to COMPLETED below (or leave
+the SHA empty until final canonicalization); its migration_status then reports
+completed. Deferred / not_required rules are fixed. This generator is
+self-contained and reproducible: re-running never reads the (mutating) live
+staging map for former values.
 """
 from __future__ import annotations
 
@@ -22,6 +26,44 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
 STAGING_MAP = SC_DIR / "sound_change_historical_staging_map.tsv"
 DEFAULT_OUT = SC_DIR / "cascade_baseline/rename_migration_manifest.tsv"
+
+# Frozen pre-migration snapshot of former (former_foma_identifier,
+# former_display_name, former_hist_stage, former_hist_scope). Captured before any
+# rename touched the live staging map, so regenerating the manifest after rules
+# have migrated never corrupts the "former_*" columns.
+FORMER: dict[str, tuple[str, str, str, str]] = {
+    "SC003": ("PGmcRhotacism", "Rhotacism", "wgmc", "pan_wgmc"),
+    "SC004": ("PWGmcAiMonophthongization", "PWGmc Ai Monophthongization", "pnwgmc_pwgmc_transition", "pan_wgmc"),
+    "SC005": ("NWGmcAToUBeforeM", "NWGmc A To U Before M", "nwgmc", "pan_nwgmc"),
+    "SC012": ("PWGmcLThVoicing", "PWGmc L Th Voicing", "pwgmc", "pan_wgmc"),
+    "SC014": ("NWGmcUnstressedAiMonophthongization", "NWGmc Unstressed Ai Monophthongization", "nwgmc", "pan_nwgmc"),
+    "SC015": ("NWGmcILowering", "NWGmc I Lowering", "nwgmc", "pan_nwgmc"),
+    "SC016": ("OEWsPalatalGlide", "OE Ws Palatal Glide", "oe_ws", "west_saxon"),
+    "SC017": ("NWGmcULowering", "NWGmc U Lowering", "nwgmc", "pan_nwgmc"),
+    "SC018": ("NWGmcStressedMonosyllableORaising", "NWGmc Stressed Monosyllable O Raising", "nwgmc", "pan_nwgmc"),
+    "SC019": ("NWGmcFinalLongORaising", "NWGmc Final Long O Raising", "nwgmc", "pan_nwgmc"),
+    "SC020": ("PGmcFinalZDeletion", "PGmc Final Z Deletion", "wgmc", "pan_wgmc"),
+    "SC021": ("NWGmcUnstressedORaising", "NWGmc Unstressed O Raising", "nwgmc", "pan_nwgmc"),
+    "SC022": ("NWGmcMnDissimilation", "NWGmc Mn Dissimilation", "nwgmc", "pan_nwgmc"),
+    "SC023": ("NWGmcNStemNLoss", "NWGmc N Stem N Loss", "nwgmc", "pan_nwgmc"),
+    "SC024": ("NWGmcLongELowering", "NWGmc Long E Lowering", "nwgmc", "pan_nwgmc"),
+    "SC025": ("NWGmcLongENasalRounding", "NWGmc Long E Nasal Rounding", "nwgmc", "pan_nwgmc"),
+    "SC026": ("NWGmcNasalSpirantLengthening", "NWGmc Nasal Spirant Lengthening", "ingvaeonic", "north_sea_germanic"),
+    "SC027": ("NWGmcNasalSpirantLoss", "NWGmc Nasal Spirant Loss", "ingvaeonic", "north_sea_germanic"),
+    "SC028": ("NWGmcPreconsonantalXLoss", "NWGmc Preconsonantal X Loss", "nwgmc", "pan_nwgmc"),
+    "SC041": ("PWGmcFinalBareALoss", "PWGmc Final Bare A Loss", "pwgmc", "pan_wgmc"),
+    "SC042": ("PWGmcSurvivingBimoricOUnrounding", "PWGmc Surviving Bimoric O Unrounding", "pwgmc", "pan_wgmc"),
+    "SC043": ("AngloFrisianBrightening", "Anglo Frisian Brightening", "af", "anglo_frisian"),
+    "SC049": ("PGmcBAllophony", "PGmc B Allophony", "pgmc", "pan_germanic"),
+    "SC050": ("SieversLawSyncope", "Sievers Law Syncope", "pwgmc", "pan_wgmc"),
+    "SC064": ("NWGmcInStemNLoss", "NWGmc In Stem N Loss", "nwgmc", "pan_nwgmc"),
+}
+
+# Completed rule migrations: sc_id -> commit SHA (empty string until the SHA is
+# recorded at final canonicalization). Presence here sets migration_status=completed.
+COMPLETED: dict[str, str] = {
+    "SC003": "",
+}
 
 # Canonical rename set (task section 3). Each entry:
 #   canonical_foma_identifier, canonical_display_name, canonical_hist_stage,
@@ -134,16 +176,12 @@ def _canonical_display(sc: str, former_display: str, entry: dict[str, str]) -> s
 
 
 def build_rows() -> list[dict[str, str]]:
-    staging = _read_staging()
     rows: list[dict[str, str]] = []
     for sc in sorted(set(RENAMES) | set(EXCLUDED), key=lambda s: int(s[2:])):
-        s = staging.get(sc, {})
-        former_id = s.get("fst_identifier", "")
-        former_disp = s.get("display_name", "")
-        former_stage = s.get("hist_stage", "")
-        former_scope = s.get("hist_scope", "")
+        former_id, former_disp, former_stage, former_scope = FORMER[sc]
         if sc in RENAMES:
             e = RENAMES[sc]
+            status = "completed" if sc in COMPLETED else e["migration_status"]
             rows.append({
                 "sc_id": sc,
                 "former_foma_identifier": former_id,
@@ -154,8 +192,8 @@ def build_rows() -> list[dict[str, str]]:
                 "canonical_hist_stage": e["canonical_hist_stage"],
                 "former_hist_scope": former_scope,
                 "canonical_hist_scope": e["canonical_hist_scope"],
-                "migration_status": e["migration_status"],
-                "migration_commit": "",
+                "migration_status": status,
+                "migration_commit": COMPLETED.get(sc, ""),
                 "notes": e["notes"],
             })
         else:

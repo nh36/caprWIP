@@ -56,10 +56,10 @@ Hogg gives the standard Old English–facing summary: `*z` yielded `*r` in
 intervocalic position but was generally lost in final position
 [@Hogg1992, p. 37].
 
-The CAPR rule is named `PGmcRhotacism`, which is historically misleading: the
-change is not Proto-Germanic. The internal rule name is a stable identifier that
-will not be changed during this phase; the reader-facing chapter label corrects
-the historical description.
+The CAPR rule is named `EAFRhotacism`, placing it in the Early Anglo-Frisian
+corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
+the reader-facing chapter label describes the change as a West Germanic
+rhotacism.
 
 ### Word-final `*z` deletion (SC020)
 

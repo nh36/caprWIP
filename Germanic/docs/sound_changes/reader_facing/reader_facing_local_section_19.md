@@ -909,10 +909,10 @@ Hogg gives the standard Old English–facing summary: `*z` yielded `*r` in
 intervocalic position but was generally lost in final position
 [@Hogg1992, p. 37].
 
-The CAPR rule is named `PGmcRhotacism`, which is historically misleading: the
-change is not Proto-Germanic. The internal rule name is a stable identifier that
-will not be changed during this phase; the reader-facing chapter label corrects
-the historical description.
+The CAPR rule is named `EAFRhotacism`, placing it in the Early Anglo-Frisian
+corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
+the reader-facing chapter label describes the change as a West Germanic
+rhotacism.
 
 ### Word-final `*z` deletion (SC020)
 
@@ -977,12 +977,12 @@ automatically equal historical sequence.
 
 Hogg states that Germanic \emph{*z} yielded \emph{*r} in intervocalic position in Old English, while final \emph{*z} was generally lost [@Hogg1992, p. 37]. Ringe and Taylor argue that this merger of \emph{*z} with \emph{*r} was independent in Norse and West Germanic and belongs after the Proto-West-Germanic stage [@RingeTaylor2014, pp. 52, 98, 102]. Crist likewise places rhotacism after earlier West Germanic \emph{*z}-deletion rules and rejects treating it as an inherited Proto-Northwest-Germanic innovation [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
 
-The label [SC003 PGmcRhotacism](#rule-PGmcRhotacism) is historically misleading: the change is a later West Germanic rhotacism, not a Proto-Germanic one. It is also distinct from [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
+The internal identifier [SC003 EAFRhotacism](#rule-EAFRhotacism) places the change in CAPR's Early Anglo-Frisian corridor, the operational post-Proto-West-Germanic stage on the English line; historically the change is a West Germanic rhotacism, later than Proto-Germanic. It is also distinct from [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
 
-## SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism}
+## SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism}
 
 ```foma
-define PGmcRhotacism [
+define EAFRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _ ?
 ];
 ```
@@ -999,7 +999,7 @@ The lexical evidence thus supplies a terminus ante quem but no terminus post que
 
 The loss of word-final \emph{*z} is a West Germanic development. Standard handbook tradition and Crist's West Germanic discussion establish the development within broader accounts of inflectional morphology [@Hogg1992, p. 37; @Crist2002, p. 1]. The derivation of *ræste* 'rest' demonstrates the local order: final \emph{*ō}-raising ([SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), Chapter 2) must precede final \emph{*z}-loss.
 
-The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 PGmcRhotacism](#rule-PGmcRhotacism)) remain flagged for targeted chronology audit.
+The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) remain flagged for targeted chronology audit.
 
 Final z-loss follows long-o raising and precedes the later changes in weak
 syllables.

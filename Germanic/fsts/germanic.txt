@@ -1123,7 +1123,7 @@ define EnglishWGlideRule [{*w} -> {*ʋ}];
 # context was tried and rejected (regresses medial VzC forms such
 # as *mízdō); `V _ ?` is the R/T-faithful generalization. See
 # DEV_NOTES §17.10.24.
-define PGmcRhotacism [
+define EAFRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _ ?
 ];
 
@@ -1161,7 +1161,7 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 #   -e   (OE)
 #
 # Ordering constraint within PGmcConsonantRules: z-deletion must run
-# BEFORE PGmcRhotacism so that word-final *-z is lost, not rhotacized.
+# BEFORE EAFRhotacism so that word-final *-z is lost, not rhotacized.
 # The PNWGmc *-ō → *-u raising (NWGmcFinalLongORaising, R/T pp.30-31)
 # must run BEFORE this rule so that pre-existing word-final *-ō
 # (nom.sg. *gebō etc.) raises while *-ōz (sheltered by *-z) does not.
@@ -1242,11 +1242,11 @@ define PGmcBAllophony [
 # *-ōz before raising could shelter the gen.sg. ending, collapsing
 # the *-ō vs. *-ōz distinction R/T rely on. Instead, z-loss is
 # composed inside EnglishProtoToOE immediately before
-# PWGmcFinalBareALoss. PGmcRhotacism (above) has been scoped to
+# PWGmcFinalBareALoss. EAFRhotacism (above) has been scoped to
 # non-word-final contexts so it no longer needs z-loss to bleed the
 # word-final case.
 define PGmcConsonantRules PGmcGmSimplification
-    .o. PGmcRhotacism;
+    .o. EAFRhotacism;
 
 define EnglishGhMarker [
     {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)

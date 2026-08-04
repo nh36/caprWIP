@@ -9,7 +9,8 @@ SC002	Gm Simplification	PGmcGmSimplification	foma_rule_name	underlying germanic.
 SC002	Gm Simplification	Gm Simplification	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC003	Rhotacism	Rhotacism	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC003	Rhotacism	Rhotacism	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC003	Rhotacism	PGmcRhotacism	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC003	Rhotacism	EAFRhotacism	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC003	Rhotacism	PGmcRhotacism	former_foma_rule_name	former identifier before EAF-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC003	Rhotacism	Rhotacism	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC003	Rhotacism	z-rhotacism	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
 SC004	PWGmc Ai Monophthongization	PWGmc Ai Monophthongization	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md

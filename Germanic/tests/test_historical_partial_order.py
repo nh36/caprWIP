@@ -48,7 +48,7 @@ def _sc_to_position() -> dict[str, int]:
                 sc2foma[r["change_id"]] = m.group(1)
     with ORDER_MANIFEST.open(encoding="utf-8") as handle:
         pos = {r["foma_identifier"]: int(r["position"]) for r in csv.DictReader(handle, delimiter="\t")}
-    # Rules not in EnglishProtoToOE (e.g. PGmcRhotacism in PGmcConsonantRules)
+    # Rules not in EnglishProtoToOE (e.g. EAFRhotacism in PGmcConsonantRules)
     # are pre-pipeline -> position 0.
     return {sc: pos.get(foma, 0) for sc, foma in sc2foma.items()}
 

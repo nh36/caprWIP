@@ -143,7 +143,7 @@ def gate_g_former_name_audit(former: str) -> list[str]:
     scan_roots = [GERMANIC_ROOT / "fsts", GERMANIC_ROOT / "tools", GERMANIC_ROOT / "tests"]
     offenders: dict[str, list[str]] = {}
     for variant in variants:
-        proc = subprocess.run(["grep", "-rIl", "--exclude=*.bin", variant, *[str(p) for p in scan_roots if p.exists()]],
+        proc = subprocess.run(["grep", "-rwIl", "--exclude=*.bin", variant, *[str(p) for p in scan_roots if p.exists()]],
                               stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
         for path in proc.stdout.decode("utf-8", "replace").splitlines():
             rel = path

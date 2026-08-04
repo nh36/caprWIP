@@ -33,7 +33,7 @@ _DEFINE_RE = re.compile(r"define\s+([A-Za-z][A-Za-z0-9_]*)")
 # outside the EnglishProtoToOE pipeline (it lives in PGmcConsonantRules). The
 # handover flags SC003 rhotacism as "audit separately", explicitly outside the
 # stage blocks, so its absence from the pipeline manifest is expected.
-STAGING_RULES_OUTSIDE_PIPELINE = {"SC003": "PGmcRhotacism"}
+STAGING_RULES_OUTSIDE_PIPELINE = {"SC003": "EAFRhotacism"}
 
 
 def _load_module(name: str, path: Path):

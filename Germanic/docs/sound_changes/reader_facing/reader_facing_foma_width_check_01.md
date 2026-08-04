@@ -10,7 +10,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
 | --- | --- | --- | --- | --- |
-| 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism} | 11 | 42 | no |
+| 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism} | 11 | 42 | no |
 | 004-pwgmc-ai-monophthongization.md | SC004. Proto-West-Germanic ai-monophthongization (`PWGmcAiMonophthongization`) {#rule-PWGmcAiMonophthongization} | 12 | 34 | no |
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`NWGmcAToUBeforeM`) {#rule-NWGmcAToUBeforeM} | 12 | 87 | no |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | 11 | 103 | yes |

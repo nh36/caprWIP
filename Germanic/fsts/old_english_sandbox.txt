@@ -29,7 +29,7 @@ define SProtoInput EnglishProtoInput;
 define SGmSimplification SProtoInput
     .o. PGmcGmSimplification;
 define SRhotacism SGmSimplification
-    .o. PGmcRhotacism;
+    .o. EAFRhotacism;
 
 # ============================================================================
 # Section 3: PWGmcChanges bundle (split into individual sub-rules,

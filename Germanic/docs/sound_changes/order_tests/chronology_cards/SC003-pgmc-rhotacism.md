@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `3`
-- rule_name: `PGmcRhotacism`
+- rule_name: `EAFRhotacism`
+- former_rule_name: `PGmcRhotacism`
 - safe computational window: `2-43` (earlier side boundary-only; later side broad/far)
 - status: `first_break_complete`
 
@@ -28,7 +29,7 @@
 Current first-break evidence identifies one historically interpretable boundary for SC003. The earlier search moved safely across SC002 down to order `2` and then stopped at the left edge of the tested historical chain with no real break, so that side remains boundary-only rather than a positive chronology constraint. The later search does find a real historical boundary at `SC044` OE Breaking: if PGmc Rhotacism is moved later than that stage, PGmc `*líznōjaną` yields `lirnian` rather than expected OE `liornian`, and related witnesses such as `*líznōθi`, `*líznô`, and `*mízdai` likewise yield `lirnaþ`, `lirna`, and `merde` instead of `liornaþ`, `liorna`, and `meorde`.
 
 ## Caveats
-This card is one-sided in current testing. The later boundary is historically interpretable, but it is broad/far across SC044 rather than a tight local adjacency claim. The backend report layer now treats the historical stage as post-PWGmc West Germanic even though CAPR retains the rule name `PGmcRhotacism`, and the chronology evidence should be read with that distinction in mind.
+This card is one-sided in current testing. The later boundary is historically interpretable, but it is broad/far across SC044 rather than a tight local adjacency claim. The backend report layer now treats the historical stage as post-PWGmc West Germanic; CAPR's internal rule name is now `EAFRhotacism` (former `PGmcRhotacism`), and the chronology evidence should be read with that distinction in mind.
 
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01.tsv`

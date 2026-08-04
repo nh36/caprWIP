@@ -4,7 +4,7 @@
 
 The loss of word-final \emph{*z} is a West Germanic development. Standard handbook tradition and Crist's West Germanic discussion establish the development within broader accounts of inflectional morphology [@Hogg1992, p. 37; @Crist2002, p. 1]. The derivation of *ræste* 'rest' demonstrates the local order: final \emph{*ō}-raising ([SC019 NWGmcFinalLongORaising](#rule-NWGmcFinalLongORaising), Chapter 2) must precede final \emph{*z}-loss.
 
-The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 PGmcRhotacism](#rule-PGmcRhotacism)) remain flagged for targeted chronology audit.
+The internal CAPR rule is labelled [SC020 PGmcFinalZDeletion](#rule-PGmcFinalZDeletion), but this label reflects a legacy identifier and not the historical stage of the change. The existing CAPR prose (and literature dossier) identifies the development as a West Germanic pan-WGmc loss, not a Proto-Germanic one. The exact scope (whether all West Germanic or specifically Ingvaeonic) and the precise relationship between this rule and West Germanic rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) remain flagged for targeted chronology audit.
 
 Final z-loss follows long-o raising and precedes the later changes in weak
 syllables.

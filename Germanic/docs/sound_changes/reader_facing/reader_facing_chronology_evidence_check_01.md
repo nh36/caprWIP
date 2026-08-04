@@ -9,7 +9,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`PGmcRhotacism`) {#rule-PGmcRhotacism} | yes | yes | yes | yes | yes | no | no | — |
+| 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism} | yes | yes | yes | yes | yes | no | no | — |
 | 004-pwgmc-ai-monophthongization.md | SC004. Proto-West-Germanic ai-monophthongization (`PWGmcAiMonophthongization`) {#rule-PWGmcAiMonophthongization} | yes | yes | yes | no | yes | no | no | missing SC-plus-rule reference in chronology prose |
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`NWGmcAToUBeforeM`) {#rule-NWGmcAToUBeforeM} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | yes | yes | yes | yes | yes | yes | no | — |
