@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import os
 import re
 import sys
@@ -856,6 +857,9 @@ def parse_model_entry(path: Path, extra_lines_after: dict[int, list[str]] | None
     # and emit them at their true position, instead of receiving an
     # assembled-lexical-volume reference that fails eligibility matching.
     lines = annotate_model_entry_spans(lines, path)
+    for orig_line in lines:
+        if "\x01" in orig_line:
+            raise ValueError(f"source file {path} contains control character \x01")
 
     # Insert extra lines (shadow markers) AFTER span annotation to preserve occ_id correctness.
     # Keys are 1-based original line numbers; insertion is after that line.
@@ -1110,6 +1114,11 @@ def _make_source_marker(marker_id: str) -> str:
     return f"{SHADOW_MARKER_PREFIX}{marker_id}{SHADOW_MARKER_SUFFIX}"
 
 
+def _make_marker_id(source_path: str, block_start: int, block_end: int, ordinal: int) -> str:
+    digest = hashlib.sha256(f"{source_path}:{block_start}:{block_end}:{ordinal}".encode()).hexdigest()[:12]
+    return digest
+
+
 def _anchor_block(emission_id: str) -> str:
     safe = emission_id.replace('"', '&quot;')
     return f'::: {{.iv-anchor emission_id="{safe}"}}\n:::'
@@ -1139,7 +1148,8 @@ def assert_print_regressions(text: str) -> None:
 
 
 def build_lexical_volume(
-    passage_anchor_requests: list[dict[str, str]] | None = None,
+    passage_anchor_requests: list[dict[str, object]] | None = None,
+    placement_trace: list[dict[str, object]] | None = None,
 ) -> str:
     """Build lexical volume Markdown.
 
@@ -1175,7 +1185,7 @@ def build_lexical_volume(
             missing_list = "\n".join(missing_regular)
             raise FileNotFoundError(f"missing regular book prose files:\n{missing_list}")
 
-    by_source_path: dict[str, list[dict[str, str]]] = defaultdict(list)
+    by_source_path: dict[str, list[dict[str, object]]] = defaultdict(list)
     if passage_anchor_requests:
         for req in passage_anchor_requests:
             src = (req.get("source_path") or "").strip()
@@ -1193,16 +1203,23 @@ def build_lexical_volume(
             # Build extra_lines_after for this entry's markers (marker-based placement).
             extra_lines_after: dict[int, list[str]] | None = None
             marker_to_emission_ids: dict[str, list[str]] = {}
+            emission_to_marker_id: dict[str, str] = {}
+            marker_render_counts: dict[str, int] = {}
             if entry_reqs:
-                by_block_end: dict[int, list[str]] = {}
+                by_block_end: dict[int, list[dict[str, object]]] = defaultdict(list)
                 for req in entry_reqs:
-                    end = req.get("block_end_line") or 0
+                    end = int(req.get("block_end_line") or 0)
                     if end:
-                        by_block_end.setdefault(end, []).append(req["emission_id"])
+                        by_block_end[end].append(req)
                 extra_lines_after = {}
-                for end_line, emission_ids in by_block_end.items():
-                    marker_id = f"bl{end_line}"
+                for ordinal, end_line in enumerate(sorted(by_block_end.keys())):
+                    reqs_at_end = by_block_end[end_line]
+                    block_start = min(int(req.get("block_start_line") or 0) for req in reqs_at_end)
+                    marker_id = _make_marker_id(src_rel, block_start, end_line, ordinal)
+                    emission_ids = [str(req["emission_id"]) for req in reqs_at_end]
                     marker_to_emission_ids[marker_id] = emission_ids
+                    for emission_id in emission_ids:
+                        emission_to_marker_id[emission_id] = marker_id
                     extra_lines_after[end_line] = ["", _make_source_marker(marker_id), ""]
 
             model = parse_model_entry(entry_path, extra_lines_after=extra_lines_after)
@@ -1224,13 +1241,40 @@ def build_lexical_volume(
 
             # Replace markers with anchor blocks and verify no residue.
             if marker_to_emission_ids:
+                entry_title = str(model.get("title", ""))
                 for marker_id, emission_ids in marker_to_emission_ids.items():
                     marker = _make_source_marker(marker_id)
                     anchor_blocks = "\n".join(_anchor_block(eid) for eid in emission_ids)
-                    entry_text = entry_text.replace(marker, anchor_blocks)
+                    count = entry_text.count(marker)
+                    if count != 1:
+                        raise ValueError(
+                            f"marker {marker_id} appears {count} times in {entry_path.name} (expected 1)"
+                        )
+                    marker_render_counts[marker_id] = count
+                    entry_text = entry_text.replace(marker, anchor_blocks, 1)
                 residue = SHADOW_MARKER_RE.findall(entry_text)
                 if residue:
                     raise ValueError(f"Unresolved shadow marker residue in {entry_path.name}: {residue}")
+                if placement_trace is not None:
+                    all_anchor_ids = re.findall(r'emission_id="([^"]+)"', entry_text)
+                    for req in entry_reqs:
+                        emission_id = str(req.get("emission_id") or "")
+                        marker_id = emission_to_marker_id.get(emission_id, "")
+                        placement_trace.append(
+                            {
+                                "emission_id": emission_id,
+                                "representative_occurrence_id": str(req.get("representative_occurrence_id") or ""),
+                                "representative_source_ref": str(req.get("representative_source_ref") or ""),
+                                "source_block_start": int(req.get("block_start_line") or 0),
+                                "source_block_end": int(req.get("block_end_line") or 0),
+                                "marker_id": marker_id,
+                                "source_insertion_count": 0,
+                                "rendered_marker_count": marker_render_counts.get(marker_id, 0),
+                                "replacement_count": 1 if marker_id else 0,
+                                "entry_title": entry_title,
+                                "final_anchor_ordinal": all_anchor_ids.index(emission_id) if emission_id in all_anchor_ids else -1,
+                            }
+                        )
 
             parts.extend(["", entry_text])
 

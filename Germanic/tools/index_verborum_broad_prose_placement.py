@@ -60,11 +60,29 @@ class PlacementRecord:
     resolved_block_start_line: int
     resolved_block_end_line: int
     note: str
+    canonical_index_key: str = ""
 
 
 def _load_rows(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def _extract_index_key(index_command: str) -> str:
+    prefix = r"\index[iv]{"
+    if not index_command.startswith(prefix):
+        raise ValueError(f"not an index command: {index_command!r}")
+    i = len(prefix)
+    depth = 1
+    while i < len(index_command) and depth > 0:
+        if index_command[i] == "{":
+            depth += 1
+        elif index_command[i] == "}":
+            depth -= 1
+        i += 1
+    if depth != 0:
+        raise ValueError(f"unbalanced braces in index command: {index_command!r}")
+    return index_command[len(prefix) : i - 1]
 
 
 def _parse_source_ref(source_ref: str) -> tuple[str, int] | None:
@@ -207,6 +225,12 @@ def load_broad_prose_inventory() -> dict[str, object]:
         if eid:
             by_emission[eid].append(row)
 
+    be_by_emission_id: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in book_emissions:
+        eid = (row.get("emission_id") or "").strip()
+        if eid:
+            be_by_emission_id[eid].append(row)
+
     broad_main_rows = [
         row
         for row in print_main
@@ -242,12 +266,68 @@ def load_broad_prose_inventory() -> dict[str, object]:
         members = by_emission.get(emission_id, [])
         if not members:
             continue
+
+        be_rows = be_by_emission_id.get(emission_id, [])
+        if len(be_rows) != 1:
+            raise ValueError(
+                f"emission {emission_id}: expected exactly 1 book_emissions row, got {len(be_rows)}"
+            )
+        be = be_rows[0]
+        be_rep_occurrence_id = (be.get("representative_occurrence_id") or "").strip()
+        if not be_rep_occurrence_id:
+            raise ValueError(f"emission {emission_id}: blank representative_occurrence_id in book_emissions")
+        be_count_raw = (be.get("source_occurrence_count") or "").strip()
+        try:
+            be_count = int(be_count_raw)
+        except ValueError as exc:
+            raise ValueError(
+                f"emission {emission_id}: invalid source_occurrence_count {be_count_raw!r}"
+            ) from exc
+        if be_count <= 0:
+            raise ValueError(f"emission {emission_id}: source_occurrence_count must be positive, got {be_count}")
+        be_occurrence_ids_raw = (be.get("source_occurrence_ids") or "").strip()
+        if not be_occurrence_ids_raw:
+            raise ValueError(f"emission {emission_id}: blank source_occurrence_ids in book_emissions")
+        be_emission_path = (be.get("emission_path") or "").strip()
+        if be_emission_path != "heading_injection":
+            raise ValueError(
+                f"emission {emission_id}: expected book_emissions emission_path heading_injection, got {be_emission_path!r}"
+            )
+        be_index_command = (be.get("index_command") or "").strip()
+        if not be_index_command:
+            raise ValueError(f"emission {emission_id}: blank index_command in book_emissions")
+
+        be_occ_ids = {part.strip() for part in be_occurrence_ids_raw.split("|") if part.strip()}
+        if not be_occ_ids:
+            raise ValueError(f"emission {emission_id}: no source_occurrence_ids parsed from book_emissions")
+        member_occ_ids = {(m.get("occurrence_id") or "").strip() for m in members}
+        if member_occ_ids != be_occ_ids:
+            raise ValueError(
+                f"emission {emission_id}: member occurrence IDs {sorted(member_occ_ids)} != book_emissions IDs {sorted(be_occ_ids)}"
+            )
+        if len(members) != be_count:
+            raise ValueError(
+                f"emission {emission_id}: member count {len(members)} != source_occurrence_count {be_count}"
+            )
+
+        reps = [m for m in members if not (m.get("collapsed_into") or "").strip()]
+        if not reps:
+            raise ValueError(f"emission {emission_id}: no representative (zero collapsed_into=='' rows)")
+        if len(reps) > 1:
+            raise ValueError(f"emission {emission_id}: {len(reps)} representatives found (expected 1)")
+        representative = reps[0]
+        rep_occurrence_id = (representative.get("occurrence_id") or "").strip()
+        if rep_occurrence_id != be_rep_occurrence_id:
+            raise ValueError(
+                f"emission {emission_id}: representative occurrence {rep_occurrence_id!r} != book_emissions representative {be_rep_occurrence_id!r}"
+            )
+        canonical_index_key = _extract_index_key(be_index_command)
+
         scopes = {(m.get("source_scope") or "").strip() for m in members}
         broad_members = [
             m for m in members if (m.get("source_scope") or "").strip() == "broad_prose_decision"
         ]
 
-        representative = next((m for m in members if not (m.get("collapsed_into") or "").strip()), members[0])
         rep_source_ref = (representative.get("source_ref") or "").strip()
         rep_display = (representative.get("display") or "").strip()
         rep_form = (representative.get("form") or "").strip()
@@ -306,19 +386,20 @@ def load_broad_prose_inventory() -> dict[str, object]:
 
         record = PlacementRecord(
             emission_id=emission_id,
-            representative_occurrence_id=(representative.get("occurrence_id") or "").strip(),
+            representative_occurrence_id=be_rep_occurrence_id,
             representative_source_ref=rep_source_ref,
             representative_display=rep_display,
             representative_form=rep_form,
             representative_sort_key=rep_sort,
-            current_emission_path=(representative.get("emission_path") or "").strip(),
-            current_site=(representative.get("site") or "").strip(),
+            current_emission_path=be_emission_path,
+            current_site=(be.get("site") or "").strip(),
             group_class=group_class,
             proposed_status=proposed_status,
             resolved_block_kind=(rep_passage.block_kind if proposed_status == STATUS_PASSAGE_SHADOW and rep_passage else ""),
             resolved_block_start_line=(rep_passage.start_line if proposed_status == STATUS_PASSAGE_SHADOW and rep_passage else 0),
             resolved_block_end_line=(rep_passage.end_line if proposed_status == STATUS_PASSAGE_SHADOW and rep_passage else 0),
             note=note,
+            canonical_index_key=canonical_index_key,
         )
         records.append(record)
 
@@ -326,7 +407,7 @@ def load_broad_prose_inventory() -> dict[str, object]:
         row for row in broad_decisions if (row.get("action") or "").strip() == "accept"
     ]
 
-    decision_state_counts = classify_broad_decision_states(accepted_rows)
+    decision_state_counts, decision_state_records = classify_broad_decision_states(accepted_rows)
 
     summary = {
         "accepted_broad_prose_decision_rows": len(accepted_rows),
@@ -349,6 +430,7 @@ def load_broad_prose_inventory() -> dict[str, object]:
     return {
         "summary": summary,
         "records": records,
+        "decision_state_records": decision_state_records,
         "movable_emission_ids": [r.emission_id for r in records if r.proposed_status == STATUS_PASSAGE_SHADOW],
         "retained_mixed_emission_ids": [r.emission_id for r in records if r.proposed_status == STATUS_RETAIN_MIXED],
         "retained_unresolved_emission_ids": [r.emission_id for r in records if r.proposed_status == STATUS_RETAIN_UNRESOLVED],
@@ -375,6 +457,8 @@ def build_passage_anchor_requests(records: list[PlacementRecord]) -> list[dict]:
         requests.append(
             {
                 "emission_id": record.emission_id,
+                "representative_occurrence_id": record.representative_occurrence_id,
+                "representative_source_ref": record.representative_source_ref,
                 "source_path": rel_path,
                 "block_start_line": record.resolved_block_start_line,
                 "block_end_line": record.resolved_block_end_line,
@@ -387,42 +471,65 @@ def build_passage_anchor_requests(records: list[PlacementRecord]) -> list[dict]:
 
 def classify_broad_decision_states(
     accepted_rows: list[dict[str, str]],
-) -> dict[str, int]:
-    """Classify each accepted broad-prose decision row by its current print state.
-
-    Returns counts keyed by:
-      active_print_main           - (source_ref, form) matches a print_main row
-                                    with source_scope=broad_prose_decision
-      active_print_excluded       - (source_ref, form) matches a print_excluded row
-                                    with source_scope=broad_prose_decision
-      stale_no_current_candidate  - neither
-    """
+) -> tuple[dict[str, int], list[dict[str, str]]]:
+    """Classify each accepted broad-prose decision row by its current print state."""
     print_main_rows = _load_rows(PRINT_MAIN_TSV)
-    broad_main_set: set[tuple[str, str]] = {
-        ((r.get("source_ref") or "").strip(), (r.get("form") or "").strip())
+    broad_main_set: set[tuple[str, str, str, str, str]] = {
+        (
+            (r.get("source_ref") or "").strip(),
+            (r.get("form") or "").strip(),
+            (r.get("language") or "").strip(),
+            (r.get("variety") or "").strip(),
+            (r.get("form_role") or "").strip(),
+        )
         for r in print_main_rows
         if (r.get("source_scope") or "").strip() == "broad_prose_decision"
     }
 
-    excluded_set: set[tuple[str, str]] = set()
+    excluded_set: set[tuple[str, str, str, str, str]] = set()
     if PRINT_EXCLUDED_TSV.exists():
         excluded_rows = _load_rows(PRINT_EXCLUDED_TSV)
         excluded_set = {
-            ((r.get("source_ref") or "").strip(), (r.get("form") or "").strip())
+            (
+                (r.get("source_ref") or "").strip(),
+                (r.get("form") or "").strip(),
+                (r.get("language") or "").strip(),
+                (r.get("variety") or "").strip(),
+                (r.get("form_role") or "").strip(),
+            )
             for r in excluded_rows
             if (r.get("source_scope") or "").strip() == "broad_prose_decision"
         }
 
     counts = {"active_print_main": 0, "active_print_excluded": 0, "stale_no_current_candidate": 0}
+    classification_records: list[dict[str, str]] = []
     for row in accepted_rows:
-        key = ((row.get("source_ref") or "").strip(), (row.get("form") or "").strip())
+        key = (
+            (row.get("source_ref") or "").strip(),
+            (row.get("form") or "").strip(),
+            (row.get("language") or "").strip(),
+            (row.get("variety") or "").strip(),
+            (row.get("form_role") or "").strip(),
+        )
         if key in broad_main_set:
-            counts["active_print_main"] += 1
+            state = "active_print_main"
         elif key in excluded_set:
-            counts["active_print_excluded"] += 1
+            state = "active_print_excluded"
         else:
-            counts["stale_no_current_candidate"] += 1
-    return counts
+            state = "stale_no_current_candidate"
+        counts[state] += 1
+        classification_records.append(
+            {
+                "source_ref": key[0],
+                "form": key[1],
+                "language": key[2],
+                "variety": key[3],
+                "form_role": key[4],
+                "action": (row.get("action") or "").strip(),
+                "state": state,
+            }
+        )
+    return counts, classification_records
 
 
 def write_report(path: Path, records: list[PlacementRecord]) -> None:
@@ -441,6 +548,7 @@ def write_report(path: Path, records: list[PlacementRecord]) -> None:
         "resolved_block_start_line",
         "resolved_block_end_line",
         "note",
+        "canonical_index_key",
     ]
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames, delimiter="\t")
