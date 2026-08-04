@@ -62,6 +62,7 @@ FORMER: dict[str, tuple[str, str, str, str]] = {
 # Completed rule migrations: sc_id -> commit SHA (empty string until the SHA is
 # recorded at final canonicalization). Presence here sets migration_status=completed.
 COMPLETED: dict[str, str] = {
+    "SC025": "",
     "SC024": "",
     "SC023": "",
     "SC022": "",

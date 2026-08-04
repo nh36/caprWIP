@@ -82,9 +82,9 @@ define SPNWGmcNStemNLoss SPNWGmcMnDissimilation
     .o. PNWGmcNStemNLoss;
 define SPNWGmcLongELowering SPNWGmcNStemNLoss
     .o. PNWGmcLongELowering;
-define SNWGmcLongENasalRounding SPNWGmcLongELowering
-    .o. NWGmcLongENasalRounding;
-define SEAFNasalSpirantLengthening SNWGmcLongENasalRounding
+define SPNWGmcLongENasalRounding SPNWGmcLongELowering
+    .o. PNWGmcLongENasalRounding;
+define SEAFNasalSpirantLengthening SPNWGmcLongENasalRounding
     .o. EAFNasalSpirantLengthening;
 define SEAFNasalSpirantLoss SEAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss;
@@ -341,8 +341,8 @@ regex SPNWGmcLongELowering;
 save stack old_english_sandbox_after_pnwgmc_long_e_lowering.bin
 
 clear stack
-regex SNWGmcLongENasalRounding;
-save stack old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin
+regex SPNWGmcLongENasalRounding;
+save stack old_english_sandbox_after_pnwgmc_long_e_nasal_rounding.bin
 
 clear stack
 regex SEAFNasalSpirantLengthening;

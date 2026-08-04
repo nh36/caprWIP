@@ -17,7 +17,7 @@ STAGES: List[Tuple[str, str]] = [
     ("PNWGmcULowering", "old_english_sandbox_after_pnwgmc_u_lowering.bin"),
     ("PNWGmcFinalLongORaising", "old_english_sandbox_after_pnwgmc_final_long_o_raising.bin"),
     ("PNWGmcLongELowering", "old_english_sandbox_after_pnwgmc_long_e_lowering.bin"),
-    ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
+    ("PNWGmcLongENasalRounding", "old_english_sandbox_after_pnwgmc_long_e_nasal_rounding.bin"),
     ("AuFronting", "old_english_sandbox_after_au_fronting.bin"),
     ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
     ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),

@@ -2150,7 +2150,7 @@ define PNWGmcLongELowering [
 
 # R/T vol.2 §5.1.2: Before nasals, *ē₁ → *ā → nasalized/rounded *ō.
 # *mēnōθ- → *mānōθ- → mōnaþ; *spēnuz → *spānuz → spōn.
-define NWGmcLongENasalRounding [
+define PNWGmcLongENasalRounding [
     {*ē} -> {*ō} || _ EnglishStarNasal,
     # §17.46: stressed long *ḗ rounds before nasals identically. Stress is
     # dropped on output (no *ṓ this branch).
@@ -3122,7 +3122,7 @@ define EnglishProtoToOE (
     .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. PNWGmcNStemNLoss
     .o. PNWGmcLongELowering
-    .o. NWGmcLongENasalRounding
+    .o. PNWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
     # fricatives with compensatory lengthening. Must precede i-umlaut so that
     # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
@@ -3314,7 +3314,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. PNWGmcNStemNLoss
     .o. PNWGmcLongELowering
-    .o. NWGmcLongENasalRounding
+    .o. PNWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss

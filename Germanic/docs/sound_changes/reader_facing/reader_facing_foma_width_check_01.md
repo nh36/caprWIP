@@ -32,7 +32,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 022-mn-dissimilation.md | SC022. Dissimilation of \emph{mn} sequences (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | 14 | 68 | no |
 | 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | 11 | 30 | no |
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | 11 | 64 | no |
-| 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | 11 | 39 | no |
+| 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`PNWGmcLongENasalRounding`) {#rule-PNWGmcLongENasalRounding} | 11 | 39 | no |
 | 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant lengthening (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | 15 | 69 | no |
 | 026-027-nasal-spirant-changes.md | SC027. North Sea Germanic nasal-spirant loss (`EAFNasalSpirantLoss`) {#rule-EAFNasalSpirantLoss} | 35 | 60 | no |
 | 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss} | 11 | 44 | no |

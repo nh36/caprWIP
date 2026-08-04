@@ -698,16 +698,16 @@ Before nasals, older long \emph{ē} can round toward the \emph{ō}-vocalism seen
 
 The change is historically recognizable, but the tested forms supply no close relative chronology.
 
-## SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding}
+## \CAPRRuleHeading{SC025. Rounding of long \emph{ē} before nasals}{PNWGmcLongENasalRounding} {#rule-PNWGmcLongENasalRounding}
 
 ```foma
-define NWGmcLongENasalRounding [
+define PNWGmcLongENasalRounding [
     {*ē} -> {*ō} || _ EnglishStarNasal,
     {*ḗ} -> {*ō} || _ EnglishStarNasal
 ];
 ```
 
-Reversing [SC025 NWGmcLongENasalRounding](#rule-NWGmcLongENasalRounding) with neighboring changes leaves every output unchanged. Its position beside the other \emph{ē}-developments therefore follows the handbooks.
+Reversing [SC025 PNWGmcLongENasalRounding](#rule-PNWGmcLongENasalRounding) with neighboring changes leaves every output unchanged. Its position beside the other \emph{ē}-developments therefore follows the handbooks.
 
 \newpage
 

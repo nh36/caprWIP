@@ -20,7 +20,7 @@ position	foma_identifier	origin_block
 19	PNWGmcMnDissimilation	EnglishProtoToOE
 20	PNWGmcNStemNLoss	EnglishProtoToOE
 21	PNWGmcLongELowering	EnglishProtoToOE
-22	NWGmcLongENasalRounding	EnglishProtoToOE
+22	PNWGmcLongENasalRounding	EnglishProtoToOE
 23	EAFNasalSpirantLengthening	EnglishProtoToOE
 24	EAFNasalSpirantLoss	EnglishProtoToOE
 25	NWGmcPreconsonantalXLoss	EnglishProtoToOE
