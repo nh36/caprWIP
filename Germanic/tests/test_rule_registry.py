@@ -30,7 +30,7 @@ ORDER_MANIFEST = SC_DIR / "cascade_baseline/cascade_order_manifest.tsv"
 _DEFINE_RE = re.compile(r"define\s+([A-Za-z][A-Za-z0-9_]*)")
 
 # The single documented reader-facing SC whose principal Foma rule is composed
-# outside the EnglishProtoToOE pipeline (it lives in PGmcConsonantRules). The
+# outside the EnglishProtoToOE pipeline (it lives in EarlyGermanicConsonantPipeline). The
 # handover flags SC003 rhotacism as "audit separately", explicitly outside the
 # stage blocks, so its absence from the pipeline manifest is expected.
 STAGING_RULES_OUTSIDE_PIPELINE = {"SC003": "EAFRhotacism"}

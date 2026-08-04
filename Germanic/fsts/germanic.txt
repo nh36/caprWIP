@@ -1160,7 +1160,7 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 #    ↓ OEUnstressedAEMerger             [step 8]
 #   -e   (OE)
 #
-# Ordering constraint within PGmcConsonantRules: z-deletion must run
+# Ordering constraint within EarlyGermanicConsonantPipeline: z-deletion must run
 # BEFORE EAFRhotacism so that word-final *-z is lost, not rhotacized.
 # The PNWGmc *-ō → *-u raising (PNWGmcFinalLongORaising, R/T pp.30-31)
 # must run BEFORE this rule so that pre-existing word-final *-ō
@@ -1245,7 +1245,7 @@ define PGmcBAllophony [
 # PWGmcFinalBareALoss. EAFRhotacism (above) has been scoped to
 # non-word-final contexts so it no longer needs z-loss to bleed the
 # word-final case.
-define PGmcConsonantRules PGmcGmSimplification
+define EarlyGermanicConsonantPipeline PGmcGmSimplification
     .o. EAFRhotacism;
 
 define EnglishGhMarker [
@@ -3269,7 +3269,7 @@ define EnglishProtoToOE (
 define EnglishProtoInput pgrmWord;
 
 define OldEnglishCore EnglishProtoInput
-    .o. PGmcConsonantRules
+    .o. EarlyGermanicConsonantPipeline
     .o. EnglishProtoToOE;
 
 define EnglishOEToModern EnglishShortAFronting
@@ -3295,7 +3295,7 @@ define EnglishReflexes OldEnglishCore
 define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
-define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. PGmcConsonantRules;
+define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EarlyGermanicConsonantPipeline;
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. PWGmcChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic

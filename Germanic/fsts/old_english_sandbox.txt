@@ -3,14 +3,14 @@ source fsts/germanic.txt
 # Old English sandbox: trace the OE pipeline rule-by-rule.
 #
 # This file MUST mirror germanic.txt exactly:
-#   OldEnglishCore     = EnglishProtoInput .o. PGmcConsonantRules .o. EnglishProtoToOE
+#   OldEnglishCore     = EnglishProtoInput .o. EarlyGermanicConsonantPipeline .o. EnglishProtoToOE
 #   OldEnglishReflexes = OldEnglishCore .o. OEEpentheticVowel .o.
 #                        OELateUnstressedAgSuffix .o. OECjCleanup .o. OEXsMerge .o.
 #                        OldEnglishOrthography .o. OEGlideUToEO .o.
 #                        OldEnglishRemoveStars .o. OldEnglishSurface
 #
 # Every rule that appears in that chain gets ITS OWN snapshot here. Bundles
-# (PGmcConsonantRules, PWGmcChanges) are split open so each sub-rule is
+# (EarlyGermanicConsonantPipeline, PWGmcChanges) are split open so each sub-rule is
 # individually visible. Rule order matches the cascade exactly.
 #
 # DO NOT alias any `EnglishAfter*` checkpoints from germanic.txt: those are
@@ -24,7 +24,7 @@ source fsts/germanic.txt
 define SProtoInput EnglishProtoInput;
 
 # ============================================================================
-# Section 2: PGmc consonant changes (PGmcConsonantRules bundle, split)
+# Section 2: PGmc consonant changes (EarlyGermanicConsonantPipeline bundle, split)
 # ============================================================================
 define SGmSimplification SProtoInput
     .o. PGmcGmSimplification;

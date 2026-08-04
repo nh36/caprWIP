@@ -566,7 +566,7 @@ def build_variant_appendix(order: Sequence[str]) -> str:
             ");",
             "",
             "define VariantOldEnglishCore EnglishProtoInput",
-            "    .o. PGmcConsonantRules",
+            "    .o. EarlyGermanicConsonantPipeline",
             "    .o. VariantEnglishProtoToOE;",
             "",
             "define VariantOldEnglishAfterEpenthesis VariantOldEnglishCore",

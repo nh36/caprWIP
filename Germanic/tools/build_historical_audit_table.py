@@ -267,7 +267,7 @@ def build_rows() -> list[dict[str, str]]:
         if adj is None:
             raise ValueError(f"no adjudication encoded for {sc}")
         foma = s.get("fst_identifier", "")
-        cascade_pos = pos.get(foma, "pre-pipeline (PGmcConsonantRules)")
+        cascade_pos = pos.get(foma, "pre-pipeline (EarlyGermanicConsonantPipeline)")
         row = {
             "sc_id": sc,
             "current_foma_identifier": foma,
