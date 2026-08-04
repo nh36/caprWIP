@@ -2123,7 +2123,7 @@ define PNWGmcFinalLongORaising [
 # Fulk: "*-on- should have yielded, in (N)WGmc., *-un- before *u in the next syllable"
 # This explains the acc.sg. of an-stems: PGmc *-onų → NWGmc *-unų → OE -an/-un
 # Example: *hemonų (acc.sg. 'heaven') → *hemunų → OE heofon (with back umlaut)
-define NWGmcUnstressedORaising [
+define PNWGmcUnstressedORaising [
     {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
 ];
 
@@ -3118,7 +3118,7 @@ define EnglishProtoToOE (
     # (the *-z satisfies its right-context consonant slot) and wrongly
     # lowers *-u → *-o. See DEV_NOTES §17.10.25.
     .o. EAFFinalZDeletion
-    .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
+    .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
     .o. NWGmcLongELowering
@@ -3310,7 +3310,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion
-    .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
+    .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. NWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
     .o. NWGmcNStemNLoss
     .o. NWGmcLongELowering

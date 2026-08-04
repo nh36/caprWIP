@@ -6,14 +6,14 @@ The older history of [*heofon*]{.iv lang=oe sort=heofon role=evidence_form} 'hea
 
 The change is historically recognizable, but the lexical evidence establishes only a later boundary.
 
-## SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`NWGmcUnstressedORaising`) {#rule-NWGmcUnstressedORaising}
+## SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising}
 
 ```foma
-define NWGmcUnstressedORaising [
+define PNWGmcUnstressedORaising [
     {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
 ];
 ```
 
-After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [xémonų]{.recon} ‘heaven’ yields [*heofun*]{.pred} rather than expected OE *heofon* ‘heaven’; earlier placement changes no output. The witness therefore places [SC021 NWGmcUnstressedORaising](#rule-NWGmcUnstressedORaising) before medial unstressed-\emph{u} lowering.
+After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [xémonų]{.recon} ‘heaven’ yields [*heofun*]{.pred} rather than expected OE *heofon* ‘heaven’; earlier placement changes no output. The witness therefore places [SC021 PNWGmcUnstressedORaising](#rule-PNWGmcUnstressedORaising) before medial unstressed-\emph{u} lowering.
 
 Nothing in the present lexicon supplies the corresponding earlier boundary.

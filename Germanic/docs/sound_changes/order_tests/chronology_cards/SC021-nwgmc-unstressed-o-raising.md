@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `21`
-- rule_name: `NWGmcUnstressedORaising`
+- rule_name: `PNWGmcUnstressedORaising`
+- former_rule_name: `NWGmcUnstressedORaising`
 - safe computational window: `13-39` (earlier side runner-bounded)
 - status: `first_break_complete`
 
