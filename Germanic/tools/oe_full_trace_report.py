@@ -49,7 +49,7 @@ STAGES: List[Tuple[str, str]] = [
     ("GmSimplification", "old_english_sandbox_after_gm_simplification.bin"),
     ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
     ("PWGmcAiMonophthongization", "old_english_sandbox_after_pwgmc_ai_monophthongization.bin"),
-    ("NWGmcAToUBeforeM", "old_english_sandbox_after_nwgmc_a_to_u_before_m.bin"),
+    ("PNWGmcAToUBeforeM", "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin"),
     ("PWGmcEarlyIApocope", "old_english_sandbox_after_pwgmc_early_i_apocope.bin"),
     ("PWGmcFinalOrLowering", "old_english_sandbox_after_pwgmc_final_or_lowering.bin"),
     ("PWGmcCoronalWAssimilation", "old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin"),

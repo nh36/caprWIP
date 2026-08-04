@@ -247,10 +247,10 @@ Campbell notes that unstressed \emph{u} is especially well preserved before \emp
 I restrict the change to unstressed vowels in inflectional material because the strongest evidence concerns noninitial unstressed material before final \emph{*m}.
 Final \emph{*m} conditions the raising.
 
-## SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`NWGmcAToUBeforeM`) {#rule-NWGmcAToUBeforeM}
+## SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`PNWGmcAToUBeforeM`) {#rule-PNWGmcAToUBeforeM}
 
 ```foma
-define NWGmcAToUBeforeM [
+define PNWGmcAToUBeforeM [
     {*a} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ {*m} ({*i})? ({*z})? .#.
 ];
 ```

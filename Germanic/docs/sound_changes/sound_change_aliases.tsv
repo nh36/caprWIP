@@ -18,11 +18,12 @@ SC004	PWGmc Ai Monophthongization	PWGmcAiMonophthongization	sandbox_stage_name		
 SC004	PWGmc Ai Monophthongization	PWGmcAiMonophthongization	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
 SC004	PWGmc Ai Monophthongization	Proto-West Germanic Ai Monophthongization	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC004	PWGmc Ai Monophthongization	PWGmc Ai Monophthongization	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
-SC005	NWGmc A To U Before M	NWGmc A To U Before M	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC005	NWGmc A To U Before M	NWGmcAToUBeforeM	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC005	NWGmc A To U Before M	NWGmcAToUBeforeM	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
-SC005	NWGmc A To U Before M	Northwest Germanic A To U Before M	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
-SC005	NWGmc A To U Before M	NWGmc A To U Before M	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC005	Proto-Northwest Germanic A To U Before M	NWGmc A To U Before M	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC005	Proto-Northwest Germanic A To U Before M	PNWGmcAToUBeforeM	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC005	Proto-Northwest Germanic A To U Before M	PNWGmcAToUBeforeM	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC005	Proto-Northwest Germanic A To U Before M	Northwest Germanic A To U Before M	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC005	Proto-Northwest Germanic A To U Before M	NWGmc A To U Before M	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC005	Proto-Northwest Germanic A To U Before M	NWGmcAToUBeforeM	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC006	PWGmc Early I Apocope	PWGmc Early I Apocope	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC006	PWGmc Early I Apocope	PWGmcEarlyIApocope	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC006	PWGmc Early I Apocope	PWGmcEarlyIApocope	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt

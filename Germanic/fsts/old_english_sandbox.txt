@@ -37,9 +37,9 @@ define SRhotacism SGmSimplification
 # ============================================================================
 define SPWGmcAiMonophthongization SRhotacism
     .o. PWGmcAiMonophthongization;
-define SNWGmcAToUBeforeM SPWGmcAiMonophthongization
-    .o. NWGmcAToUBeforeM;
-define SPWGmcEarlyIApocope SNWGmcAToUBeforeM
+define SPNWGmcAToUBeforeM SPWGmcAiMonophthongization
+    .o. PNWGmcAToUBeforeM;
+define SPWGmcEarlyIApocope SPNWGmcAToUBeforeM
     .o. PWGmcEarlyIApocope;
 define SPWGmcFinalOrLowering SPWGmcEarlyIApocope
     .o. PWGmcFinalOrLowering;
@@ -260,8 +260,8 @@ regex SPWGmcAiMonophthongization;
 save stack old_english_sandbox_after_pwgmc_ai_monophthongization.bin
 
 clear stack
-regex SNWGmcAToUBeforeM;
-save stack old_english_sandbox_after_nwgmc_a_to_u_before_m.bin
+regex SPNWGmcAToUBeforeM;
+save stack old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin
 
 clear stack
 regex SPWGmcEarlyIApocope;

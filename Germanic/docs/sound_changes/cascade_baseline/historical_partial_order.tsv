@@ -20,7 +20,7 @@
 # "later" endpoints outside the audited set (SC036, SC040, SC043, SC044, SC051,
 # SC052, SC063) are named so Phase 4 can honour the boundary.
 earlier_sc	earlier_rule	later_sc	later_rule	type_of_edge	confidence	evidence
-SC005	NWGmcAToUBeforeM	SC017	NWGmcULowering	historical_relative_chronology	A	shoulders root vowel: delaying SC005 past SC017 gives the wrong *u; Campbell §331(6); demonstrated dependency
+SC005	PNWGmcAToUBeforeM	SC017	NWGmcULowering	historical_relative_chronology	A	shoulders root vowel: delaying SC005 past SC017 gives the wrong *u; Campbell §331(6); demonstrated dependency
 SC010	PWGmcJGemination	SC011	PWGmcSyllabicJ	historical_relative_chronology	A	OE nett: *natją>*nattją must geminate before syllabic-j; Ringe&Taylor vol.2 p.50; germanic.txt note
 SC019	NWGmcFinalLongORaising	SC020	EAFFinalZDeletion	historical_relative_chronology	A	*rástōz>ræste: raising must precede final-*z* loss; reader 020-wgmc-final-z-deletion.md
 SC020	EAFFinalZDeletion	SC040	OEMedUnstressedULowering	historical_relative_chronology	A	*bébruz>befer: final-*z* loss precedes medial u-lowering; reader 020

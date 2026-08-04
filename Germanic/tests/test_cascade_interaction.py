@@ -77,7 +77,7 @@ class InteractionMatrixTests(unittest.TestCase):
         commute = {(r["earlier_rule"], r["later_rule"]): r["commute"] for r in self.matrix}
         # SC010 PWGmcJGemination x SC011 PWGmcSyllabicJ are both PWGmc, so not in
         # this PNWGmc x PWGmc matrix; the SC005/SC006 boundary pair is:
-        pair = ("NWGmcAToUBeforeM", "PWGmcEarlyIApocope")
+        pair = ("PNWGmcAToUBeforeM", "PWGmcEarlyIApocope")
         if pair in commute:
             self.assertEqual(commute[pair], "no",
                              "SC005 x SC006 is expected to be order-sensitive")

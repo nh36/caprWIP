@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `5`
-- rule_name: `NWGmcAToUBeforeM`
+- rule_name: `PNWGmcAToUBeforeM`
+- former_rule_name: `NWGmcAToUBeforeM`
 - safe computational window: `4-16` (earlier side boundary-only; later side broad/far)
 - status: `first_break_complete`
 

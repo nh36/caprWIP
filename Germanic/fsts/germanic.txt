@@ -407,7 +407,7 @@ define pgrmWeakTailVowel [
     u:{*u} z:{*z} |
     # Dat.pl. of a-stem masc./neut. — full PGmc-proper form *-amiz
     # (the inst.pl. branch of the dat./inst. merger).
-    # PGmc *-amiz → NWGmc *-umiz (R1, NWGmcAToUBeforeM, Campbell §331(6))
+    # PGmc *-amiz → NWGmc *-umiz (R1, PNWGmcAToUBeforeM, Campbell §331(6))
     #              → *-umz (R2, PWGmcEarlyIApocope, 3rd-syllable *-i loss)
     #              → *-um (EAFFinalZDeletion).
     # Used for inputs encoded with the historical PGmc form, e.g.
@@ -1531,7 +1531,7 @@ define PWGmcDenasalization [
 #   *gebōmiz → giefum (no *a, doesn't fire), *winimiz/*gastimiz/
 #   *sunumiz (no *a, doesn't fire), *beramiz → †berum (regular outcome;
 #   OE -aþ is analogical from pret.pl., per Campbell §331(6) as quoted).
-define NWGmcAToUBeforeM [
+define PNWGmcAToUBeforeM [
     {*a} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ {*m} ({*i})? ({*z})? .#.
 ];
 
@@ -1665,7 +1665,7 @@ define PWGmcJGemination [
 # Gemination creates heavy syllables that block syllabic-j vocalization.
 define PWGmcChanges [
     PWGmcAiMonophthongization
-    .o. NWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
+    .o. PNWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
     .o. PWGmcEarlyIApocope  # Early i-apocope: loss of final -i in 3rd/4th syllable
     .o. PWGmcFinalOrLowering
     .o. PWGmcCoronalWAssimilation
