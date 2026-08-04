@@ -408,16 +408,27 @@ class RealCorpusInvariantTests(unittest.TestCase):
         self.assertEqual(partition, production,
                          "print_main + print_excluded must be an exact multiset partition of production")
 
-        # Unique printed entries: one per (language, display, sort_key, printed_variety)
-        # group of print_main (exactly the collapsing key used by the generator).
-        # Load the variety registry ONCE, not once per row.
+        # Unique printed entries: the count is a POST_ANNOTATION baseline captured in
+        # test_pre_annotation_baseline_snapshot and not duplicated here.  What belongs
+        # in this permanent invariant is the RELATIONAL constraint: every entry in
+        # print_unique.tsv must be backed by at least one row in print_main.
+        # (Using sort_key avoids print-text normalization differences across files.)
         reg = ivr.load_variety_registry()
 
         def printed_variety(variety):
             variety = (variety or "").strip()
             return reg.printed_label(variety) if variety else ""
 
-        self.assertEqual(len(pu), 1061, "corpus-wide unique entry baseline changed unexpectedly")
+        pm_keys = {
+            (r["language"], r["sort_key"], printed_variety(r.get("variety", "")))
+            for r in pm
+        }
+        for pu_row in pu:
+            key = (pu_row["language"], pu_row["sort_key"], pu_row.get("printed_variety", ""))
+            self.assertIn(
+                key, pm_keys,
+                f"print_unique row not backed by any print_main entry: {key}",
+            )
 
     def test_pre_annotation_baseline_snapshot(self):
         """Named historical snapshot documenting the effect of the annotation pass.
