@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import re
 import shutil
@@ -47,13 +48,17 @@ def _extract_anchor_ids(md_text: str) -> list[str]:
     )
 
 
+def _strip_shadow_anchors_exact(shadow_text: str, anchor_ids: list[str]) -> str:
+    result = shadow_text
+    for eid in anchor_ids:
+        safe = eid.replace('"', '&quot;')
+        bare = f'::: {{.iv-anchor emission_id="{safe}"}}\n:::'
+        result = result.replace(bare, '')
+    return re.sub(r"\n{3,}", "\n\n", result)
+
+
 def _strip_anchor_blocks(md_text: str) -> str:
-    stripped = re.sub(
-        r"\n?:::\s*\{[^}]*\.iv-anchor[^}]*emission_id=\"[^\"]+\"[^}]*\}\s*\n:::\n?",
-        "\n",
-        md_text,
-    )
-    return re.sub(r"\n{3,}", "\n\n", stripped).rstrip() + "\n"
+    return _strip_shadow_anchors_exact(md_text, _extract_anchor_ids(md_text))
 
 
 def _extract_iv_commands(tex_text: str) -> list[str]:
@@ -81,63 +86,19 @@ def _extract_iv_commands(tex_text: str) -> list[str]:
     return out
 
 
-def _remove_iv_commands_narrow(tex_text: str) -> str:
-    """Remove \\index[iv]{...} commands with only local whitespace normalization.
-
-    Blank lines that existed before removal are preserved unchanged.
-    Blank lines created by removing a command that occupied an entire line are
-    collapsed with adjacent blank lines at that location only.
-    """
-    # Process line by line, tracking which blank lines were created by removal
-    lines_info: list[tuple[str, bool]] = []  # (cleaned_line, was_created_by_removal)
-    for line in tex_text.split("\n"):
-        original_had_content = line.strip() != ""
-        cleaned = _remove_iv_commands_from_line(line).rstrip()
-        created_by_removal = original_had_content and (cleaned == "")
-        lines_info.append((cleaned, created_by_removal))
-
-    # Only collapse blank runs that contain at least one removal-created blank.
-    # Pre-existing blank lines are preserved verbatim.
-    output: list[str] = []
-    i = 0
-    n = len(lines_info)
-    while i < n:
-        line, was_removal = lines_info[i]
-        if line == "":
-            # Collect the entire run of consecutive blank lines
-            run_removals: list[bool] = []
-            j = i
-            while j < n and lines_info[j][0] == "":
-                run_removals.append(lines_info[j][1])
-                j += 1
-            if any(run_removals):
-                # At least one blank in this run was created by removal; collapse to one blank
-                output.append("")
-            else:
-                # All blanks are pre-existing; preserve them all
-                output.extend([""] * len(run_removals))
-            i = j
-        else:
-            output.append(line)
-            i += 1
-    return "\n".join(output)
-
-
-def _remove_iv_commands_from_line(line: str) -> str:
-    """Remove all \\index[iv]{...} commands from a single line."""
+def _strip_iv_commands_from_line(line: str) -> str:
     prefix = r"\index[iv]{"
+    result: list[str] = []
     i = 0
-    n = len(line)
-    parts: list[str] = []
-    while i < n:
+    while i < len(line):
         j = line.find(prefix, i)
         if j < 0:
-            parts.append(line[i:])
+            result.append(line[i:])
             break
-        parts.append(line[i:j])
+        result.append(line[i:j])
         k = j + len(prefix)
         depth = 1
-        while k < n and depth > 0:
+        while k < len(line) and depth > 0:
             if line[k] == "{":
                 depth += 1
             elif line[k] == "}":
@@ -146,16 +107,50 @@ def _remove_iv_commands_from_line(line: str) -> str:
         if depth != 0:
             raise ValueError("unbalanced \\index[iv]{...} in TeX output")
         i = k
-    return "".join(parts)
+    return "".join(result)
+
+
+def _remove_iv_commands_narrow(tex_text: str) -> str:
+    prefix = r"\index[iv]{"
+    lines_info: list[tuple[str, bool]] = []
+    for line in tex_text.split("\n"):
+        if prefix not in line:
+            lines_info.append((line, False))
+            continue
+        cleaned = _strip_iv_commands_from_line(line)
+        created_by_removal = line.strip() != "" and cleaned.strip() == ""
+        lines_info.append((cleaned, created_by_removal))
+
+    output: list[str] = []
+    i = 0
+    while i < len(lines_info):
+        line, _ = lines_info[i]
+        if line == "":
+            run_removals: list[bool] = []
+            j = i
+            while j < len(lines_info) and lines_info[j][0] == "":
+                run_removals.append(lines_info[j][1])
+                j += 1
+            if any(run_removals):
+                output.append("")
+            else:
+                output.extend([""] * len(run_removals))
+            i = j
+            continue
+        output.append(line)
+        i += 1
+    return "\n".join(output)
+
+
+def _remove_iv_commands_from_line(line: str) -> str:
+    """Remove all \index[iv]{...} commands from a single line."""
+    return _strip_iv_commands_from_line(line)
 
 
 def _parse_makeindex_output(output: str, filename: str = "") -> tuple[int, int]:
-    """Parse MakeIndex stdout/stderr for accepted/rejected counts.
-    Returns (accepted, rejected).
-    MakeIndex writes: "N entries accepted, M rejected."
-    """
-    accepted = 0
-    rejected = 0
+    """Parse MakeIndex stdout/stderr for accepted/rejected counts."""
+    accepted = None
+    rejected = None
     for line in output.splitlines():
         m_acc = re.search(r"(\d+)\s+entries accepted", line)
         m_rej = re.search(r"(\d+)\s+rejected", line)
@@ -163,7 +158,66 @@ def _parse_makeindex_output(output: str, filename: str = "") -> tuple[int, int]:
             accepted = int(m_acc.group(1))
         if m_rej:
             rejected = int(m_rej.group(1))
+    label = f" in {filename}" if filename else ""
+    if accepted is None:
+        raise ValueError(f"makeindex output missing 'entries accepted' line{label}: {output[:200]!r}")
+    if rejected is None:
+        raise ValueError(f"makeindex output missing 'rejected' line{label}: {output[:200]!r}")
     return accepted, rejected
+
+
+def _parse_idx_entries(idx_text: str) -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    prefix = r"\indexentry{"
+    i = 0
+    while i < len(idx_text):
+        j = idx_text.find(prefix, i)
+        if j < 0:
+            break
+        k = j + len(prefix)
+        depth = 1
+        while k < len(idx_text) and depth > 0:
+            if idx_text[k] == "{":
+                depth += 1
+            elif idx_text[k] == "}":
+                depth -= 1
+            k += 1
+        if depth != 0:
+            raise ValueError(r"unbalanced \indexentry{...} in IDX output")
+        command = idx_text[j + len(prefix) : k - 1]
+        if k >= len(idx_text) or idx_text[k] != "{":
+            raise ValueError("missing page-number brace in IDX output")
+        page_start = k + 1
+        depth = 1
+        k = page_start
+        while k < len(idx_text) and depth > 0:
+            if idx_text[k] == "{":
+                depth += 1
+            elif idx_text[k] == "}":
+                depth -= 1
+            k += 1
+        if depth != 0:
+            raise ValueError("unbalanced page-number brace in IDX output")
+        entries.append({"command": command, "page": idx_text[page_start : k - 1]})
+        i = k
+    return entries
+
+
+def _load_canonical_iv_commands() -> list[str]:
+    rows = _load_tsv_rows(BOOK_EMISSIONS_TSV)
+    return [
+        (row.get("index_command") or "").strip()
+        for row in rows
+        if (row.get("index_command") or "").strip()
+    ]
+
+
+def _split_pdf_text(pdf_text: str, label: str) -> tuple[str, str]:
+    marker = "Index verborum"
+    idx = pdf_text.find(marker)
+    if idx < 0:
+        raise AssertionError(f"{label} PDF text missing '{marker}' heading")
+    return pdf_text[:idx], pdf_text[idx:]
 
 
 def _run_pandoc(md_text: str, *, label: str) -> str:
@@ -451,7 +505,7 @@ def _run_full_impact_docker(production_md: str, shadow_md: str) -> dict[str, obj
         script = f"""
 set -e
 apk add --no-cache font-noto python3 >/dev/null 2>&1
-apk add --no-cache poppler-utils >/dev/null 2>&1 || true
+apk add --no-cache poppler-utils >/dev/null 2>&1
 tlmgr option repository https://ftp.fau.de/ctan/systems/texlive/tlnet >/dev/null
 kpsewhich fvextra.sty >/dev/null 2>&1 || (tlmgr update --self >/dev/null && tlmgr install fvextra >/dev/null)
 kpsewhich imakeidx.sty >/dev/null 2>&1 || tlmgr install imakeidx >/dev/null
@@ -481,12 +535,10 @@ for base in prod shadow; do
     --bibliography=/data/docs/refs.bib --citeproc -o "$base.tex"
   python3 /data/Germanic/tools/normalize_citeproc_section_locators.py --tex-path "$base.tex"
   xelatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
-  for idx in *.idx; do
-    [ -e "$idx" ] || continue
-    makeindex -o "${{idx%.idx}}.ind" -t "${{idx%.idx}}.ilg" "$idx" >/dev/null 2>&1 || true
-  done
-  xelatex -interaction=nonstopmode "$base.tex" >/dev/null 2>&1 || true
-  xelatex -interaction=nonstopmode "$base.tex" >/dev/null 2>&1 || true
+  [ -f iv.idx ] || {{ echo "missing iv.idx for $base" >&2; exit 1; }}
+  makeindex -o iv.ind -t iv.ilg iv.idx >/dev/null 2>&1
+  xelatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
+  xelatex -interaction=nonstopmode -halt-on-error "$base.tex" >/dev/null
   pg=unknown
   command -v pdfinfo >/dev/null 2>&1 && pg=$(pdfinfo "$base.pdf" 2>/dev/null | grep "^Pages:" | grep -o '[0-9]*' | head -1) || true
   echo "PDF_${{base}}_PAGES=$pg"
@@ -602,7 +654,7 @@ def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
     retained_present = [eid for eid in retained_ids if shadow_anchor_counter.get(eid, 0) > 0]
     if retained_present:
         errors.append(f"retained heading IDs appeared in passage placement: {retained_present[:5]}")
-    stripped_shadow_lexical = _strip_anchor_blocks(shadow_lexical)
+    stripped_shadow_lexical = _strip_shadow_anchors_exact(shadow_lexical, movable_ids)
     if stripped_shadow_lexical != ordinary_lexical:
         errors.append("shadow lexical differs from ordinary lexical after stripping only generated anchor blocks")
 
@@ -685,6 +737,14 @@ def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
                 "makeindex accepted totals differ in full-impact mode: "
                 f"prod={full_impact_result['prod_accepted']} shadow={full_impact_result['shadow_accepted']}"
             )
+        if "prod_pdf_text" in full_impact_result and "shadow_pdf_text" in full_impact_result:
+            try:
+                prod_body, prod_index = _split_pdf_text(full_impact_result["prod_pdf_text"], "prod")
+                shad_body, shad_index = _split_pdf_text(full_impact_result["shadow_pdf_text"], "shadow")
+                if prod_body != shad_body:
+                    errors.append("PDF body text differs between production and shadow")
+            except AssertionError as exc:
+                errors.append(str(exc))
 
     if errors:
         print("Stage 4A shadow checker: FAILED", file=sys.stderr)

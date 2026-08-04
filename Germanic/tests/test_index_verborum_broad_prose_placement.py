@@ -22,13 +22,19 @@ from build_capr_book_draft import build_book_markdown
 from build_full_lexical_volume import (
     SHADOW_MARKER_RE,
     _anchor_block,
+    _make_marker_id,
     _make_source_marker,
     build_lexical_volume,
     parse_model_entry,
 )
 from check_iv_broad_prose_placement_shadow import (
+    _page_impact_summary,
+    _parse_idx_entries,
+    _parse_ind_page_lists,
     _parse_makeindex_output,
     _remove_iv_commands_narrow,
+    _split_pdf_text,
+    _strip_shadow_anchors_exact,
     check as run_shadow_check,
 )
 from index_verborum_broad_prose_placement import (
@@ -40,6 +46,7 @@ from index_verborum_broad_prose_placement import (
     STATUS_PASSAGE_SHADOW,
     STATUS_RETAIN_MIXED,
     STATUS_RETAIN_UNRESOLVED,
+    _extract_index_key,
     build_passage_anchor_requests,
     classify_broad_decision_states,
     load_broad_prose_inventory,
@@ -121,7 +128,7 @@ class BroadProseInventoryTests(unittest.TestCase):
     def test_pure_singleton_classification(self):
         """Synthetic: single member with broad_prose_decision scope → pure_singleton."""
         accepted_rows = [{"source_ref": "x:1", "form": "notaform", "action": "accept"}]
-        counts = classify_broad_decision_states(accepted_rows)
+        counts, _ = classify_broad_decision_states(accepted_rows)
         self.assertEqual(counts["active_print_main"] + counts["active_print_excluded"], 0)
         self.assertEqual(counts["stale_no_current_candidate"], 1)
 
@@ -131,7 +138,7 @@ class BroadProseInventoryTests(unittest.TestCase):
             {"source_ref": "x:5", "form": "zyz", "action": "accept"},
             {"source_ref": "x:5", "form": "zyz", "action": "accept"},
         ]
-        counts = classify_broad_decision_states(rows)
+        counts, _ = classify_broad_decision_states(rows)
         self.assertEqual(counts["stale_no_current_candidate"], 2)
 
     def test_mixed_scope_retained(self):
@@ -423,6 +430,165 @@ class MakeIndexParserTests(unittest.TestCase):
         acc, rej = _parse_makeindex_output(output)
         self.assertEqual(acc, 100)
         self.assertEqual(rej, 3)
+
+
+# ---------------------------------------------------------------------------
+# Inventory authority tests
+# ---------------------------------------------------------------------------
+
+class InventoryAuthorityTests(unittest.TestCase):
+    def test_extract_index_key_handles_nested_braces(self):
+        cmd = r"\index[iv]{02oe@\ivlangheader{Old English}{}!wull@\iventry{wull}{}}"
+        self.assertEqual(_extract_index_key(cmd), r"02oe@\ivlangheader{Old English}{}!wull@\iventry{wull}{}")
+
+    def test_inventory_records_have_canonical_index_key(self):
+        inv = load_broad_prose_inventory()
+        movable = [rec for rec in inv["records"] if rec.proposed_status == STATUS_PASSAGE_SHADOW]
+        self.assertTrue(movable)
+        self.assertTrue(all(rec.canonical_index_key for rec in movable))
+
+    def test_decision_state_records_returned(self):
+        inv = load_broad_prose_inventory()
+        records = inv["decision_state_records"]
+        self.assertEqual(len(records), 92)
+        self.assertTrue(all(record["state"] for record in records))
+
+
+# ---------------------------------------------------------------------------
+# Marker coverage tests
+# ---------------------------------------------------------------------------
+
+class MarkerCoverageTests(unittest.TestCase):
+    def test_make_marker_id_is_deterministic(self):
+        a = _make_marker_id("a.md", 10, 20, 0)
+        b = _make_marker_id("a.md", 10, 20, 0)
+        c = _make_marker_id("a.md", 10, 21, 0)
+        self.assertEqual(a, b)
+        self.assertNotEqual(a, c)
+        self.assertEqual(len(a), 12)
+
+    def test_parse_model_entry_rejects_control_characters(self):
+        scratch = REPO_ROOT / "stage4a_shadow_marker_control_char.md"
+        scratch.write_text("# Scratch\n\nContains bad char \x01 here.\n", encoding="utf-8")
+        try:
+            with self.assertRaises(ValueError):
+                parse_model_entry(scratch)
+        finally:
+            scratch.unlink(missing_ok=True)
+
+    def test_build_lexical_volume_can_emit_placement_trace(self):
+        inv = load_broad_prose_inventory()
+        requests = build_passage_anchor_requests(inv["records"])[:1]
+        trace: list[dict[str, object]] = []
+        build_lexical_volume(passage_anchor_requests=requests, placement_trace=trace)
+        self.assertTrue(trace)
+        self.assertIn("marker_id", trace[0])
+        self.assertEqual(trace[0]["source_insertion_count"], 0)
+        self.assertEqual(trace[0]["replacement_count"], 1)
+
+
+# ---------------------------------------------------------------------------
+# Exact markdown reversibility tests
+# ---------------------------------------------------------------------------
+
+class ExactMarkdownReversibilityTests(unittest.TestCase):
+    def test_strip_shadow_anchors_exact_is_reversible(self):
+        base = "Alpha\n\nBeta\n"
+        shadow = 'Alpha\n\n::: {.iv-anchor emission_id="emit-1"}\n:::\nBeta\n'
+        stripped = _strip_shadow_anchors_exact(shadow, ["emit-1"])
+        self.assertEqual(stripped, base)
+
+    def test_strip_shadow_anchors_exact_only_removes_named_ids(self):
+        shadow = (
+            'Alpha\n\n::: {.iv-anchor emission_id="emit-1"}\n:::\n'
+            'Beta\n\n::: {.iv-anchor emission_id="emit-2"}\n:::\n'
+        )
+        stripped = _strip_shadow_anchors_exact(shadow, ["emit-1"])
+        self.assertIn('emit-2', stripped)
+        self.assertNotIn('emit-1', stripped)
+
+
+# ---------------------------------------------------------------------------
+# TeX comparison precision tests
+# ---------------------------------------------------------------------------
+
+class TexComparisonPrecisionTests(unittest.TestCase):
+    def test_trailing_spaces_are_preserved(self):
+        cmd = r"\index[iv]{alpha@\iventry{alpha}{}}"
+        stripped = _remove_iv_commands_narrow(f"Some prose {cmd}\n")
+        self.assertEqual(stripped, "Some prose \n")
+
+    def test_command_only_line_is_removed_exactly(self):
+        cmd = r"\index[iv]{alpha@\iventry{alpha}{}}"
+        stripped = _remove_iv_commands_narrow(f"Line one\n{cmd}\nLine two\n")
+        self.assertEqual(stripped, "Line one\n\nLine two\n")
+
+
+# ---------------------------------------------------------------------------
+# IDX parsing tests
+# ---------------------------------------------------------------------------
+
+class IdxParsingTests(unittest.TestCase):
+    def test_parse_idx_entries_balanced_braces(self):
+        idx = r"\indexentry{02oe@\ivlangheader{Old English}{}!wull@\iventry{wull}{}}{12}"
+        entries = _parse_idx_entries(idx)
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["page"], "12")
+        self.assertIn(r"\iventry{wull}{}", entries[0]["command"])
+
+    def test_parse_idx_entries_unbalanced_raises(self):
+        with self.assertRaises(ValueError):
+            _parse_idx_entries(r"\indexentry{broken{12}")
+
+
+# ---------------------------------------------------------------------------
+# Page impact tests
+# ---------------------------------------------------------------------------
+
+class PageImpactTests(unittest.TestCase):
+    def test_parse_ind_page_lists(self):
+        ind = (
+            r"\item \iventry{alpha}{} , \hyperpage{1}, \hyperpagerange{3}{4}" "\n"
+            r"\item \iventry{beta}{} , \hyperpage{2}" "\n"
+        )
+        pages = _parse_ind_page_lists(ind)
+        self.assertEqual(pages["alpha"], [1, 3, 4])
+        self.assertEqual(pages["beta"], [2])
+
+    def test_page_impact_summary_counts_changes(self):
+        summary = _page_impact_summary({"alpha": [1], "beta": [2]}, {"alpha": [1, 3], "beta": [2]})
+        self.assertEqual(summary["unchanged"], 1)
+        self.assertEqual(summary["changed"], 1)
+        self.assertEqual(summary["pages_added"], 1)
+
+
+# ---------------------------------------------------------------------------
+# MakeIndex parser extended tests
+# ---------------------------------------------------------------------------
+
+class MakeIndexParserExtendedTests(unittest.TestCase):
+    def test_missing_accepted_line_raises(self):
+        with self.assertRaises(ValueError):
+            _parse_makeindex_output("no counts here")
+
+    def test_missing_rejected_line_raises(self):
+        with self.assertRaises(ValueError):
+            _parse_makeindex_output("10 entries accepted")
+
+
+# ---------------------------------------------------------------------------
+# PDF comparison tests
+# ---------------------------------------------------------------------------
+
+class PdfComparisonTests(unittest.TestCase):
+    def test_split_pdf_text_separates_body_and_index(self):
+        body, index = _split_pdf_text("Chapter one\nIndex verborum\nalpha 1\n", "prod")
+        self.assertEqual(body, "Chapter one\n")
+        self.assertTrue(index.startswith("Index verborum"))
+
+    def test_split_pdf_text_requires_index_heading(self):
+        with self.assertRaises(AssertionError):
+            _split_pdf_text("No index here", "prod")
 
 
 # ---------------------------------------------------------------------------
