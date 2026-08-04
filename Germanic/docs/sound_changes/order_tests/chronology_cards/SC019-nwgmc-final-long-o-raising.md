@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `19`
-- rule_name: `NWGmcFinalLongORaising`
+- rule_name: `PNWGmcFinalLongORaising`
+- former_rule_name: `NWGmcFinalLongORaising`
 - safe computational window: `18-19`
 - status: `first_break_complete`
 

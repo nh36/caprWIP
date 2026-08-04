@@ -14,7 +14,7 @@ position	foma_identifier	origin_block
 13	OEWsPalatalGlide	EnglishProtoToOE
 14	PNWGmcULowering	EnglishProtoToOE
 15	PNWGmcStressedMonosyllableORaising	EnglishProtoToOE
-16	NWGmcFinalLongORaising	EnglishProtoToOE
+16	PNWGmcFinalLongORaising	EnglishProtoToOE
 17	EAFFinalZDeletion	EnglishProtoToOE
 18	NWGmcUnstressedORaising	EnglishProtoToOE
 19	NWGmcMnDissimilation	EnglishProtoToOE

@@ -22,7 +22,7 @@
 earlier_sc	earlier_rule	later_sc	later_rule	type_of_edge	confidence	evidence
 SC005	PNWGmcAToUBeforeM	SC017	PNWGmcULowering	historical_relative_chronology	A	shoulders root vowel: delaying SC005 past SC017 gives the wrong *u; Campbell §331(6); demonstrated dependency
 SC010	PWGmcJGemination	SC011	PWGmcSyllabicJ	historical_relative_chronology	A	OE nett: *natją>*nattją must geminate before syllabic-j; Ringe&Taylor vol.2 p.50; germanic.txt note
-SC019	NWGmcFinalLongORaising	SC020	EAFFinalZDeletion	historical_relative_chronology	A	*rástōz>ræste: raising must precede final-*z* loss; reader 020-wgmc-final-z-deletion.md
+SC019	PNWGmcFinalLongORaising	SC020	EAFFinalZDeletion	historical_relative_chronology	A	*rástōz>ræste: raising must precede final-*z* loss; reader 020-wgmc-final-z-deletion.md
 SC020	EAFFinalZDeletion	SC040	OEMedUnstressedULowering	historical_relative_chronology	A	*bébruz>befer: final-*z* loss precedes medial u-lowering; reader 020
 SC004	PWGmcAiMonophthongization	SC036	OEInterStressRaising	historical_relative_chronology	A	*sáiwalō>sāwol: monophthongization precedes interstress raising; reader 004
 SC003	EAFRhotacism	SC044	OEBreaking	historical_relative_chronology	A	terminus ante quem: delaying rhotacism past breaking gives *lirnian/*merde not liornian/meorde; reader 003

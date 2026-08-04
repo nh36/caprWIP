@@ -141,7 +141,7 @@ ADJUDICATION: dict[str, dict] = {
     "SC020": {
         "proposed_canonical_name": "WGmcFinalZDeletion",
         "proposed_hist_stage": "wgmc", "proposed_hist_scope": "pan_wgmc (vs Ingvaeonic: open)",
-        "supported_earlier_relations": "SC019 NWGmcFinalLongORaising (lexical A: rastoz>raste)",
+        "supported_earlier_relations": "SC019 PNWGmcFinalLongORaising (lexical A: rastoz>raste)",
         "supported_later_relations": "SC040 OEMedUnstressedULowering (lexical A: bebruz>befer)",
         "confidence": "A (position) / B (scope)",
         "name_status": "wrong", "position_status": "right",

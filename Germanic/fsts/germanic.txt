@@ -1119,7 +1119,7 @@ define EnglishWGlideRule [{*w} -> {*ʋ}];
 # (VzV, VzC) but blocks the word boundary. R/T are explicit that
 # word-final *-z was **lost**, not rhotacized — handled by
 # EAFFinalZDeletion, now composed later in the pipeline (inside
-# EnglishProtoToOE, after NWGmcFinalLongORaising). A stricter V_V
+# EnglishProtoToOE, after PNWGmcFinalLongORaising). A stricter V_V
 # context was tried and rejected (regresses medial VzC forms such
 # as *mízdō); `V _ ?` is the R/T-faithful generalization. See
 # DEV_NOTES §17.10.24.
@@ -1162,7 +1162,7 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 #
 # Ordering constraint within PGmcConsonantRules: z-deletion must run
 # BEFORE EAFRhotacism so that word-final *-z is lost, not rhotacized.
-# The PNWGmc *-ō → *-u raising (NWGmcFinalLongORaising, R/T pp.30-31)
+# The PNWGmc *-ō → *-u raising (PNWGmcFinalLongORaising, R/T pp.30-31)
 # must run BEFORE this rule so that pre-existing word-final *-ō
 # (nom.sg. *gebō etc.) raises while *-ōz (sheltered by *-z) does not.
 # That ordering is enforced in OldEnglishCore (see below).
@@ -1200,12 +1200,12 @@ define PWGmcFinalBareALoss [
 #
 # Context `_ .#.` (word-final only): at the pipeline position where this
 # rule fires, all pre-existing word-final *-ō has already been raised to
-# *-u by NWGmcFinalLongORaising, and nasalized *-ǭ is a distinct symbol.
+# *-u by PNWGmcFinalLongORaising, and nasalized *-ǭ is a distinct symbol.
 # So the only *-ō reaching this rule is the z-loss-exposed "surviving"
 # one. See DEV_NOTES §17.10.23 for the full chronology and audit.
 #
 # §17.31: defensive "preceded by another nucleus" guard added in parallel
-# with NWGmcFinalLongORaising. Stressed monosyllabic *ō is raised to *ū
+# with PNWGmcFinalLongORaising. Stressed monosyllabic *ō is raised to *ū
 # by PNWGmcStressedMonosyllableORaising upstream and so does not reach
 # this rule; the guard belt-and-braces against any future re-ordering.
 define PWGmcSurvivingBimoricOUnrounding [
@@ -1237,7 +1237,7 @@ define PGmcBAllophony [
 # split is a late phonetic rule that must follow gemination.
 # EAFFinalZLoss (= EAFFinalZDeletion) is NOT composed here. Per
 # DEV_NOTES §17.10.24, R/T's chronology requires z-loss to fire after
-# NWGmcFinalLongORaising (step 2 → step 3 in R/T §6.8.3 pp.299-300).
+# PNWGmcFinalLongORaising (step 2 → step 3 in R/T §6.8.3 pp.299-300).
 # Composing z-loss at the top of OldEnglishCore would strip *-z from
 # *-ōz before raising could shelter the gen.sg. ending, collapsing
 # the *-ō vs. *-ōz distinction R/T rely on. Instead, z-loss is
@@ -2092,7 +2092,7 @@ define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
 # (two), bū (both n.dual), hū (how, with §173 *w*-loss). See DEV_NOTES
 # §17.31 for the cross-source dossier.
 #
-# Must fire BEFORE NWGmcFinalLongORaising and PWGmcSurvivingBimoricOUnrounding
+# Must fire BEFORE PNWGmcFinalLongORaising and PWGmcSurvivingBimoricOUnrounding
 # so that monosyllabic *ō never reaches the (polysyllable-only) shortening
 # or unrounding rules.
 #
@@ -2115,7 +2115,7 @@ define PNWGmcStressedMonosyllableORaising [
 # Brunner §§143-149), apocope/shortening rules require a preceding
 # (un)stressed nucleus. Stressed monosyllables are handled by
 # PNWGmcStressedMonosyllableORaising above.
-define NWGmcFinalLongORaising [
+define PNWGmcFinalLongORaising [
     {*ō} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 
@@ -3110,7 +3110,7 @@ define EnglishProtoToOE (
     # FIRST so monosyllabic *bō, *kō, *twō → *bū, *kū, *twū are
     # exempt from the polysyllable shortening.
     .o. PNWGmcStressedMonosyllableORaising
-    .o. NWGmcFinalLongORaising
+    .o. PNWGmcFinalLongORaising
     # PWGmc z-loss (R/T §3.3.1 p.98, §6.8.3 pp.299-300 step 3). Placed
     # immediately after raising — still R/T step 3, but tight to step 2
     # — so the OE cluster below sees a z-free input. If z-loss drifts
@@ -3307,7 +3307,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
     # §17.31: stressed monosyllable rule fires first.
     .o. PNWGmcStressedMonosyllableORaising
-    .o. NWGmcFinalLongORaising
+    .o. PNWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion
     .o. NWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
