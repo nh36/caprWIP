@@ -81,34 +81,89 @@ def _extract_iv_commands(tex_text: str) -> list[str]:
     return out
 
 
-def _remove_iv_commands_and_normalize(tex_text: str) -> str:
+def _remove_iv_commands_narrow(tex_text: str) -> str:
+    """Remove \\index[iv]{...} commands with only local whitespace normalization.
+
+    Blank lines that existed before removal are preserved unchanged.
+    Blank lines created by removing a command that occupied an entire line are
+    collapsed with adjacent blank lines at that location only.
+    """
+    # Process line by line, tracking which blank lines were created by removal
+    lines_info: list[tuple[str, bool]] = []  # (cleaned_line, was_created_by_removal)
+    for line in tex_text.split("\n"):
+        original_had_content = line.strip() != ""
+        cleaned = _remove_iv_commands_from_line(line).rstrip()
+        created_by_removal = original_had_content and (cleaned == "")
+        lines_info.append((cleaned, created_by_removal))
+
+    # Only collapse blank runs that contain at least one removal-created blank.
+    # Pre-existing blank lines are preserved verbatim.
+    output: list[str] = []
+    i = 0
+    n = len(lines_info)
+    while i < n:
+        line, was_removal = lines_info[i]
+        if line == "":
+            # Collect the entire run of consecutive blank lines
+            run_removals: list[bool] = []
+            j = i
+            while j < n and lines_info[j][0] == "":
+                run_removals.append(lines_info[j][1])
+                j += 1
+            if any(run_removals):
+                # At least one blank in this run was created by removal; collapse to one blank
+                output.append("")
+            else:
+                # All blanks are pre-existing; preserve them all
+                output.extend([""] * len(run_removals))
+            i = j
+        else:
+            output.append(line)
+            i += 1
+    return "\n".join(output)
+
+
+def _remove_iv_commands_from_line(line: str) -> str:
+    """Remove all \\index[iv]{...} commands from a single line."""
     prefix = r"\index[iv]{"
     i = 0
-    n = len(tex_text)
+    n = len(line)
     parts: list[str] = []
     while i < n:
-        j = tex_text.find(prefix, i)
+        j = line.find(prefix, i)
         if j < 0:
-            parts.append(tex_text[i:])
+            parts.append(line[i:])
             break
-        parts.append(tex_text[i:j])
+        parts.append(line[i:j])
         k = j + len(prefix)
         depth = 1
         while k < n and depth > 0:
-            ch = tex_text[k]
-            if ch == "{":
+            if line[k] == "{":
                 depth += 1
-            elif ch == "}":
+            elif line[k] == "}":
                 depth -= 1
             k += 1
         if depth != 0:
             raise ValueError("unbalanced \\index[iv]{...} in TeX output")
-        parts.append("\n")
         i = k
-    merged = "".join(parts)
-    merged = re.sub(r"[ \t]+\n", "\n", merged)
-    merged = re.sub(r"\n{3,}", "\n\n", merged)
-    return merged.rstrip()
+    return "".join(parts)
+
+
+def _parse_makeindex_output(output: str, filename: str = "") -> tuple[int, int]:
+    """Parse MakeIndex stdout/stderr for accepted/rejected counts.
+    Returns (accepted, rejected).
+    MakeIndex writes: "N entries accepted, M rejected."
+    """
+    accepted = 0
+    rejected = 0
+    for line in output.splitlines():
+        m_acc = re.search(r"(\d+)\s+entries accepted", line)
+        m_rej = re.search(r"(\d+)\s+rejected", line)
+        if m_acc:
+            accepted = int(m_acc.group(1))
+        if m_rej:
+            rejected = int(m_rej.group(1))
+    return accepted, rejected
 
 
 def _run_pandoc(md_text: str, *, label: str) -> str:
@@ -243,10 +298,10 @@ def _run_full_impact_local(production_md: str, shadow_md: str) -> dict[str, int]
                 )
                 if mk.returncode != 0:
                     raise AssertionError(f"--full-impact makeindex failed for {idx.name}: {mk.stderr[:300]}")
-                m_acc = re.search(r"(\d+)\s+entries accepted", mk.stdout)
-                m_rej = re.search(r"(\d+)\s+entries rejected", mk.stdout)
-                acc += int(m_acc.group(1)) if m_acc else 0
-                rej += int(m_rej.group(1)) if m_rej else 0
+                mk_output = mk.stdout + "\n" + mk.stderr
+                mk_acc, mk_rej = _parse_makeindex_output(mk_output, idx.name)
+                acc += mk_acc
+                rej += mk_rej
             accepted[tex_base] = acc
             rejected[tex_base] = rej
         return {
@@ -305,8 +360,8 @@ for base in prod shadow; do
     [ -e "$idx" ] || continue
     saw_idx=1
     out="$(makeindex -o "${{idx%.idx}}.ind" "$idx" 2>&1)"
-    a="$(printf '%s' "$out" | sed -n 's/.*\\([0-9][0-9]*\\) entries accepted.*/\\1/p' | head -n1)"
-    r="$(printf '%s' "$out" | sed -n 's/.*\\([0-9][0-9]*\\) entries rejected.*/\\1/p' | head -n1)"
+    a="$(printf '%s' "$out" | sed -n 's/.*(\\([0-9][0-9]*\\) entries accepted.*/\\1/p' | head -n1)"
+    r="$(printf '%s' "$out" | sed -n 's/.*(\\([0-9][0-9]*\\) entries rejected.*/\\1/p' | head -n1)"
     [ -n "$a" ] || a=0
     [ -n "$r" ] || r=0
     acc=$((acc + a))
@@ -459,8 +514,8 @@ def check(*, full_impact: bool = False, verbose: bool = False) -> bool:
                 f"command order movement: changed={changed} first_changed={first_change} last_changed={last_change}"
             )
 
-        prod_no_index = _remove_iv_commands_and_normalize(prod_tex)
-        shad_no_index = _remove_iv_commands_and_normalize(shad_tex)
+        prod_no_index = _remove_iv_commands_narrow(prod_tex)
+        shad_no_index = _remove_iv_commands_narrow(shad_tex)
         if prod_no_index != shad_no_index:
             errors.append("non-index TeX differs after removing only \\index[iv]{...} commands")
 

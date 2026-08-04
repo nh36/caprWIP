@@ -402,6 +402,20 @@ raw non-explicit `\index[iv]{...}` commands.
   activation decision.
 - Current source line locations, block boundaries, and observed placement counts
   are treated as regenerable observations, not permanent architecture.
+- **Placement mechanism**: exact source-block boundaries (`block_start_line`,
+  `block_end_line`) from the resolved `SourcePassage` are carried through
+  assembly via collision-resistant in-memory source markers (`\x01SHADOWIV:...:\x01`)
+  inserted into the entry's in-memory source lines AFTER `annotate_model_entry_spans()`
+  assigns `occ_id`s (so `occ_id` correctness is preserved). After rendering,
+  markers are replaced with `.iv-anchor` blocks; any residue raises an error.
+- **Placement order**: (1) read original file lines; (2) annotate spans
+  (assigns correct `occ_id`s from original line numbers); (3) insert markers
+  at `block_end_line` positions; (4) render; (5) replace markers with anchors.
+- **Form text** validates that a source block contains the representative form,
+  but is never used to locate the anchor position.
+- **Sort-key text** is not used for placement in any way.
+- `source_ref` is re-resolved on every shadow run from canonical TSVs; no
+  placement coordinates are hard-coded in tracked files.
 
 **Stage 4B (future, review-gated)**
 - Possible production activation of passage-adjacent placement after editorial

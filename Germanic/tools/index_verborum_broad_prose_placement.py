@@ -18,6 +18,7 @@ from build_full_lexical_volume import normalize_print_text
 BOOK_DIR = REPO_ROOT / "Germanic/docs/book"
 
 PRINT_MAIN_TSV = BOOK_DIR / "index_verborum_print_main.tsv"
+PRINT_EXCLUDED_TSV = BOOK_DIR / "index_verborum_print_excluded.tsv"
 EMISSION_TABLE_TSV = BOOK_DIR / "index_verborum_emission_table.tsv"
 BOOK_EMISSIONS_TSV = BOOK_DIR / "index_verborum_book_emissions.tsv"
 BROAD_DECISIONS_TSV = BOOK_DIR / "index_verborum_broad_prose_decisions.tsv"
@@ -325,6 +326,8 @@ def load_broad_prose_inventory() -> dict[str, object]:
         row for row in broad_decisions if (row.get("action") or "").strip() == "accept"
     ]
 
+    decision_state_counts = classify_broad_decision_states(accepted_rows)
+
     summary = {
         "accepted_broad_prose_decision_rows": len(accepted_rows),
         "matching_print_main_occurrences": len(broad_main_rows),
@@ -340,6 +343,7 @@ def load_broad_prose_inventory() -> dict[str, object]:
         ),
         "resolved_block_kinds": dict(block_kind_counter),
         "unresolved_reasons": dict(unresolved_reasons),
+        "decision_state_counts": decision_state_counts,
     }
 
     return {
@@ -351,25 +355,74 @@ def load_broad_prose_inventory() -> dict[str, object]:
     }
 
 
-def build_passage_anchor_requests(records: list[PlacementRecord]) -> list[dict[str, str]]:
-    requests: list[dict[str, str]] = []
+def build_passage_anchor_requests(records: list[PlacementRecord]) -> list[dict]:
+    """Return per-emission anchor placement requests carrying exact block coordinates.
+
+    Block coordinates (block_start_line, block_end_line) come from the resolved
+    SourcePassage so that placement is determined by source location, not by
+    searching for form text in the rendered output.
+    """
+    requests: list[dict] = []
     for record in records:
         if record.proposed_status != STATUS_PASSAGE_SHADOW:
             continue
         parsed = _parse_source_ref(record.representative_source_ref)
         if not parsed:
             continue
-        source_path, _ = parsed
+        rel_path, _ = parsed
+        # Reconstruct the full relative source path (rel_path includes the file path only).
+        # resolved_block_start/end_line come from the PlacementRecord (set during inventory).
         requests.append(
             {
                 "emission_id": record.emission_id,
-                "source_path": source_path,
-                "representative_display": record.representative_display,
+                "source_path": rel_path,
+                "block_start_line": record.resolved_block_start_line,
+                "block_end_line": record.resolved_block_end_line,
                 "representative_form": record.representative_form,
-                "representative_sort_key": record.representative_sort_key,
+                "representative_display": record.representative_display,
             }
         )
     return requests
+
+
+def classify_broad_decision_states(
+    accepted_rows: list[dict[str, str]],
+) -> dict[str, int]:
+    """Classify each accepted broad-prose decision row by its current print state.
+
+    Returns counts keyed by:
+      active_print_main           - (source_ref, form) matches a print_main row
+                                    with source_scope=broad_prose_decision
+      active_print_excluded       - (source_ref, form) matches a print_excluded row
+                                    with source_scope=broad_prose_decision
+      stale_no_current_candidate  - neither
+    """
+    print_main_rows = _load_rows(PRINT_MAIN_TSV)
+    broad_main_set: set[tuple[str, str]] = {
+        ((r.get("source_ref") or "").strip(), (r.get("form") or "").strip())
+        for r in print_main_rows
+        if (r.get("source_scope") or "").strip() == "broad_prose_decision"
+    }
+
+    excluded_set: set[tuple[str, str]] = set()
+    if PRINT_EXCLUDED_TSV.exists():
+        excluded_rows = _load_rows(PRINT_EXCLUDED_TSV)
+        excluded_set = {
+            ((r.get("source_ref") or "").strip(), (r.get("form") or "").strip())
+            for r in excluded_rows
+            if (r.get("source_scope") or "").strip() == "broad_prose_decision"
+        }
+
+    counts = {"active_print_main": 0, "active_print_excluded": 0, "stale_no_current_candidate": 0}
+    for row in accepted_rows:
+        key = ((row.get("source_ref") or "").strip(), (row.get("form") or "").strip())
+        if key in broad_main_set:
+            counts["active_print_main"] += 1
+        elif key in excluded_set:
+            counts["active_print_excluded"] += 1
+        else:
+            counts["stale_no_current_candidate"] += 1
+    return counts
 
 
 def write_report(path: Path, records: list[PlacementRecord]) -> None:

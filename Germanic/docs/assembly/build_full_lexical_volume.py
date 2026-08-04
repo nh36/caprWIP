@@ -844,7 +844,7 @@ def annotate_model_entry_spans(lines: list[str], path: Path) -> list[str]:
     return annotated
 
 
-def parse_model_entry(path: Path) -> dict[str, object]:
+def parse_model_entry(path: Path, extra_lines_after: dict[int, list[str]] | None = None) -> dict[str, object]:
     lines = path.read_text(encoding="utf-8").splitlines()
     if not lines:
         raise ValueError(f"empty model entry: {path}")
@@ -856,6 +856,14 @@ def parse_model_entry(path: Path) -> dict[str, object]:
     # and emit them at their true position, instead of receiving an
     # assembled-lexical-volume reference that fails eligibility matching.
     lines = annotate_model_entry_spans(lines, path)
+
+    # Insert extra lines (shadow markers) AFTER span annotation to preserve occ_id correctness.
+    # Keys are 1-based original line numbers; insertion is after that line.
+    if extra_lines_after:
+        for line_no in sorted(extra_lines_after.keys(), reverse=True):
+            idx = line_no  # after 1-based line_no is at 0-based index line_no
+            extra = extra_lines_after[line_no]
+            lines = lines[:idx] + extra + lines[idx:]
 
     title_line = next((line.strip() for line in lines if line.strip()), "")
     if not title_line.startswith("# "):
@@ -1090,70 +1098,21 @@ def append_references_scaffold(parts: list[str]) -> None:
     parts.extend(["", r"\clearpage", "", "## References", ""])
 
 
+# Shadow-only source markers - collision-resistant, not valid UTF-8 prose
+# \x01 cannot appear in normal Markdown source files
+SHADOW_MARKER_PREFIX = "\x01SHADOWIV:"
+SHADOW_MARKER_SUFFIX = ":\x01"
+SHADOW_MARKER_RE = re.compile(r"\x01SHADOWIV:([A-Za-z0-9_-]+):\x01")
+
+
+def _make_source_marker(marker_id: str) -> str:
+    """Create a collision-resistant source marker line for shadow placement."""
+    return f"{SHADOW_MARKER_PREFIX}{marker_id}{SHADOW_MARKER_SUFFIX}"
+
+
 def _anchor_block(emission_id: str) -> str:
     safe = emission_id.replace('"', '&quot;')
     return f'::: {{.iv-anchor emission_id="{safe}"}}\n:::'
-
-
-def _norm_shadow_match(text: str) -> str:
-    return normalize_print_text((text or "").replace(r"\*", "*")).lower().strip()
-
-
-def inject_shadow_anchors_into_entry(
-    entry_text: str,
-    entry_anchor_requests: list[dict[str, str]],
-) -> str:
-    """Insert shadow-only .iv-anchor blocks after full paragraph/table/list blocks.
-
-    The optional seam is used only for Stage 4A shadow placement experiments.
-    Production calls this with an empty request list and receives byte-identical
-    output.
-    """
-    if not entry_anchor_requests:
-        return entry_text
-
-    blocks = entry_text.split("\n\n")
-    if not blocks:
-        return entry_text
-
-    inserts_after: dict[int, list[str]] = {}
-    seen_ids: set[str] = set()
-
-    for req in entry_anchor_requests:
-        eid = (req.get("emission_id") or "").strip()
-        if not eid:
-            raise ValueError("shadow anchor request missing emission_id")
-        if eid in seen_ids:
-            raise ValueError(f"duplicate shadow anchor request emission_id: {eid}")
-        seen_ids.add(eid)
-
-        needles = [
-            _norm_shadow_match(req.get("representative_display") or ""),
-            _norm_shadow_match(req.get("representative_form") or ""),
-            _norm_shadow_match(req.get("representative_sort_key") or ""),
-        ]
-        needles = [n for n in needles if n]
-        if not needles:
-            raise ValueError(f"shadow anchor request has no representative text for emission_id {eid}")
-
-        target_idx = None
-        for i, block in enumerate(blocks):
-            bnorm = _norm_shadow_match(block)
-            if any(n in bnorm for n in needles):
-                target_idx = i
-                break
-        if target_idx is None:
-            raise ValueError(
-                f"unable to place shadow anchor emission_id={eid}; representative text not found in rendered entry"
-            )
-        inserts_after.setdefault(target_idx, []).append(_anchor_block(eid))
-
-    out: list[str] = []
-    for i, block in enumerate(blocks):
-        out.append(block)
-        if i in inserts_after:
-            out.extend(inserts_after[i])
-    return "\n\n".join(out)
 
 
 def assert_print_regressions(text: str) -> None:
@@ -1228,7 +1187,25 @@ def build_lexical_volume(
         parts.extend(["", r"\clearpage", "", f"## {part_heading}", "", tidy_prose(intro_sections[intro_heading])])
         for row in rows_by_bucket[bucket]:
             entry_path = REPO_ROOT / row["model_entry_path"]
-            model = parse_model_entry(entry_path)
+            src_rel = entry_path.relative_to(REPO_ROOT).as_posix()
+            entry_reqs = by_source_path.get(src_rel, [])
+
+            # Build extra_lines_after for this entry's markers (marker-based placement).
+            extra_lines_after: dict[int, list[str]] | None = None
+            marker_to_emission_ids: dict[str, list[str]] = {}
+            if entry_reqs:
+                by_block_end: dict[int, list[str]] = {}
+                for req in entry_reqs:
+                    end = req.get("block_end_line") or 0
+                    if end:
+                        by_block_end.setdefault(end, []).append(req["emission_id"])
+                extra_lines_after = {}
+                for end_line, emission_ids in by_block_end.items():
+                    marker_id = f"bl{end_line}"
+                    marker_to_emission_ids[marker_id] = emission_ids
+                    extra_lines_after[end_line] = ["", _make_source_marker(marker_id), ""]
+
+            model = parse_model_entry(entry_path, extra_lines_after=extra_lines_after)
             trace_entry, basis, confident = match_trace_entry(model, trace_entries)
             if trace_entry is None or not confident:
                 print(f"WARNING: trace match unresolved for {entry_path.name} ({basis})", file=sys.stderr)
@@ -1244,9 +1221,17 @@ def build_lexical_volume(
                 entry_path=entry_path,
                 regular_book_prose_dir=REGULAR_BOOK_PROSE_DIR,
             )
-            src_rel = entry_path.relative_to(REPO_ROOT).as_posix()
-            if by_source_path.get(src_rel):
-                entry_text = inject_shadow_anchors_into_entry(entry_text, by_source_path[src_rel])
+
+            # Replace markers with anchor blocks and verify no residue.
+            if marker_to_emission_ids:
+                for marker_id, emission_ids in marker_to_emission_ids.items():
+                    marker = _make_source_marker(marker_id)
+                    anchor_blocks = "\n".join(_anchor_block(eid) for eid in emission_ids)
+                    entry_text = entry_text.replace(marker, anchor_blocks)
+                residue = SHADOW_MARKER_RE.findall(entry_text)
+                if residue:
+                    raise ValueError(f"Unresolved shadow marker residue in {entry_path.name}: {residue}")
+
             parts.extend(["", entry_text])
 
     append_references_scaffold(parts)
