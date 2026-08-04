@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC022 `NWGmcMnDissimilation` appears here as a **short finished singleton
+SC022 `PNWGmcMnDissimilation` appears here as a **short finished singleton
 note**. The source background is thinner and more descriptive than for the
 stronger nearby singletons, but the rule is still historically legible enough to
 remain explicit in the book. The right final form is therefore a short note, not
@@ -24,7 +24,7 @@ current record turns it into a strong chronology hinge.
 #### CAPR implementation
 
 CAPR isolates this material as one explicit step: SC022
-`NWGmcMnDissimilation`. That is analytically useful because it keeps the rule
+`PNWGmcMnDissimilation`. That is analytically useful because it keeps the rule
 visible in strict order even though the handbooks usually discuss the underlying
 pattern more descriptively than as a separate major chapter.
 
@@ -40,7 +40,7 @@ holding chapter.
 
 Current testing does **not** identify a positive historical first-break
 boundary for SC022 in either direction. On the earlier side, the search reaches
-bundled `PWGmcChanges`; that is a methodological runner limit, not a detected
+bundled `EarlyEnglishLineChanges`; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC022 must precede SC087.
@@ -59,7 +59,7 @@ into a larger report.
 
 #### Remaining cautions
 
-The methodological limits matter here. Bundled `PWGmcChanges` and the current
+The methodological limits matter here. Bundled `EarlyEnglishLineChanges` and the current
 SC087 search boundary are search limits, not historical boundaries for SC022.
 This note should therefore stay short and should not be merged into SC021,
 SC023, or any broader early Northwest Germanic chapter.

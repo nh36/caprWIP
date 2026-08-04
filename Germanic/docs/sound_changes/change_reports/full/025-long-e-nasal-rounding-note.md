@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC025 `NWGmcLongENasalRounding` appears here as a **short finished
+SC025 `PNWGmcLongENasalRounding` appears here as a **short finished
 singleton note**. The long-`ē`-before-nasal background is historically legible
 enough to remain explicit, but the chronology card is boundary-limited on both
 sides. The right final form is therefore a short standalone note, not a hidden
@@ -25,7 +25,7 @@ recovered a positive local chronology.
 #### CAPR implementation
 
 CAPR isolates this background as one explicit step: SC025
-`NWGmcLongENasalRounding`. That sharper implementation is useful because it lets
+`PNWGmcLongENasalRounding`. That sharper implementation is useful because it lets
 the book keep the long-`ē`-before-nasal adjustment visible in strict order
 without overstating its chronology.
 
@@ -41,7 +41,7 @@ spirant corridor.
 
 Current testing does **not** identify a positive historical first-break
 boundary for SC025 in either direction. On the earlier side, the search reaches
-bundled `PWGmcChanges`; that is a methodological runner limit, not a detected
+bundled `EarlyEnglishLineChanges`; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC025 must precede SC087.
@@ -60,6 +60,6 @@ strictly methodological, and avoid inflating the rule into a corridor chapter.
 #### Remaining cautions
 
 The main caution is not to turn methodological search limits into history.
-Bundled `PWGmcChanges` and the current SC087 boundary are not positive
+Bundled `EarlyEnglishLineChanges` and the current SC087 boundary are not positive
 chronology anchors for SC025. This note should therefore stay brief and should
 not be merged into the stronger neighboring SC024 or `SC026-SC027` reports.

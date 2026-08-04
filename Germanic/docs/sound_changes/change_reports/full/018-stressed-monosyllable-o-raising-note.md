@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC018 `NWGmcStressedMonosyllableORaising` appears here as a **short finished
+SC018 `PNWGmcStressedMonosyllableORaising` appears here as a **short finished
 singleton note**. It is historically legible enough to remain explicit in the
 book, but the current chronology card is boundary-limited on both sides. The
 right reading is therefore modest: this is a short standalone note in strict
@@ -27,7 +27,7 @@ it.
 #### CAPR implementation
 
 CAPR isolates this background as one explicit step: SC018
-`NWGmcStressedMonosyllableORaising`. That formalization is sharper than most
+`PNWGmcStressedMonosyllableORaising`. That formalization is sharper than most
 handbook summaries, but it is useful because it lets the book keep the rule
 explicit without pretending that it anchors a larger report of its own.
 
@@ -43,7 +43,7 @@ into the later singleton sequence.
 
 Current testing does **not** identify a positive historical first-break
 boundary for SC018 in either direction. On the earlier side, the search reaches
-bundled `PWGmcChanges`; that is a methodological runner limit, not a detected
+bundled `EarlyEnglishLineChanges`; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is likewise a no-break-before-boundary result
 bounded by the present search space, not a claim that SC018 must precede SC087.
@@ -60,7 +60,7 @@ current chronology remains boundary-limited rather than positively ordered.
 
 #### Remaining cautions
 
-The caution is methodological. Bundled `PWGmcChanges` and the current SC087
+The caution is methodological. Bundled `EarlyEnglishLineChanges` and the current SC087
 search boundary are limits of the searchable corridor, not historical anchors
 for SC018. This note should therefore stay brief and should not be merged into
 either the `SC016-SC020` corridor on the left or the SC021 singleton on the right.

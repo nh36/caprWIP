@@ -87,7 +87,7 @@ alternative surface reflexes. On its right, `SC032` must precede `SC040`, with
 local. It must precede `SC044`, with `chew`, `four`, and `knee` losing their
 long-diphthong outputs if the rule is delayed too far. Its earlier-side default
 card does not yield an ordinary historical boundary before the bundled
-`PWGmcChanges` runner limit, and the expanded-PWGmc note across `SC008` is
+`EarlyEnglishLineChanges` runner limit, and the expanded-PWGmc note across `SC008` is
 supplementary only rather than a replacement for the default chronology claim.
 
 `SC034` likewise has a real forward relation into the brightening

@@ -38,7 +38,7 @@ CAPR makes the local sequence explicit by keeping two adjacent rules.
 SC029 `OEAwjGlideFormation` handles the intermediate glide structure that turns
 the inherited `awj` / `auj` material into the form that later fronting reads.
 On its own it is still somewhat one-sided because the earlier search remains
-runner-bounded at bundled `PWGmcChanges`, but it is the indispensable left-hand
+runner-bounded at bundled `EarlyEnglishLineChanges`, but it is the indispensable left-hand
 feeder of the pair.
 
 SC030 `OEAuFronting` then fronts the relevant `au` material and delivers the
@@ -68,7 +68,7 @@ Glide Formation is delayed past SC030, PGmc `*xáwwją` yields `hauġ` instead o
 expected OE `hīeġ`, and `*stráwjaną` yields `strauian` instead of expected
 `strīeġan`. That makes `SC029 < SC030` a real local chronology claim. The
 earlier side is not comparable: the current runner can move SC029 safely back to
-order `13`, but the search then stops at bundled `PWGmcChanges`, so the present
+order `13`, but the search then stops at bundled `EarlyEnglishLineChanges`, so the present
 result does **not** identify any positive earlier boundary for SC029.
 
 SC030 reciprocates that local evidence on its left and adds one broader
@@ -104,7 +104,7 @@ the larger right-hand diphthong chain in their own chapters.
 
 The cautions are structural as much as evidential. SC029's runner-bounded
 earlier side must not be turned into a hidden positive boundary against bundled
-`PWGmcChanges`. SC028 should remain visible to the left as a separate context
+`EarlyEnglishLineChanges`. SC028 should remain visible to the left as a separate context
 note rather than being treated as a coequal member of this report.
 SC030's later relation to SC032 is real, but its failure set must be described
 as no-output / derivational collapse rather than as a cluster of competing Old

@@ -61,18 +61,18 @@ Proto input: _\*nḗdrōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc N Stem N Loss} & \emph{*nḗdrǭ} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*nǣdrǭ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc N Stem N Loss} & \emph{*nḗdrǭ} \\
-\mbox{NWGmc Long E Lowering} & \emph{*nǣdrǭ} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -133,12 +133,12 @@ Proto input: _\*bákaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -149,7 +149,7 @@ Proto input: _\*bákaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*bækaną} \\
+\mbox{EAF Brightening} & \emph{*bækaną} \\
 \mbox{OE A Restoration} & \emph{*bakaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*bakan} \\
 \mbox{OE Secondary Nasalization} & \emph{*bakąn} \\
@@ -194,17 +194,17 @@ Proto input: _\*bōkō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*bōku} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*bōku} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -253,12 +253,12 @@ Proto input: _\*bigínnaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -318,18 +318,18 @@ Proto input: _\*bḗrō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*bḗru} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*bǣru} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*bḗru} \\
-\mbox{NWGmc Long E Lowering} & \emph{*bǣru} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -382,17 +382,17 @@ Proto input: _\*búrdiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*búrdi} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*búrdi} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -446,17 +446,17 @@ Proto input: _\*báiną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*bāną} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -509,17 +509,17 @@ Proto input: _\*bō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PNWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-NWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -606,12 +606,12 @@ Proto input: _\*báugijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -671,17 +671,17 @@ Proto input: _\*brōkiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*brōki} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*brōki} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -727,22 +727,22 @@ Proto input: _\*kálbaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*kálba} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*kálba} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -751,7 +751,7 @@ Proto input: _\*kálbaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*kálb} \\
-\mbox{Anglo Frisian Brightening} & \emph{*kælb} \\
+\mbox{EAF Brightening} & \emph{*kælb} \\
 \mbox{OE Breaking} & \emph{*kealb} \\
 \mbox{PGmc B Allophony} & \emph{*kealβ} \\
 \mbox{OE Velar Palatalization} & \emph{*ʧealβ} \\
@@ -795,17 +795,17 @@ Proto input: _\*kúrną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*kórną} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*kórną} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -854,18 +854,18 @@ Proto input: _\*dḗdiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*dḗdi} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*dǣdi} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*dḗdi} \\
-\mbox{NWGmc Long E Lowering} & \emph{*dǣdi} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -914,17 +914,17 @@ Proto input: _\*dúrą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*dórą} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*dórą} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -973,12 +973,12 @@ Proto input: _\*fáraną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -989,7 +989,7 @@ Proto input: _\*fáraną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*færaną} \\
+\mbox{EAF Brightening} & \emph{*færaną} \\
 \mbox{OE A Restoration} & \emph{*faraną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*faran} \\
 \mbox{OE Secondary Nasalization} & \emph{*farąn} \\
@@ -1034,12 +1034,12 @@ Proto input: _\*féllą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -1086,22 +1086,22 @@ Proto input: _\*fárnaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*fárna} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*fárna} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -1110,7 +1110,7 @@ Proto input: _\*fárnaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*fárn} \\
-\mbox{Anglo Frisian Brightening} & \emph{*færn} \\
+\mbox{EAF Brightening} & \emph{*færn} \\
 \mbox{OE Breaking} & \emph{*fearn} \\
 \end{tabularx}
 \end{minipage}
@@ -1152,18 +1152,18 @@ Proto input: _\*félθuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*féldu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc L Th Voicing} & \emph{*félduz} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*féldu} \\
+\mbox{EAFL Th Voicing} & \emph{*félduz} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -1213,12 +1213,12 @@ Proto input: _\*fléuganą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -1277,12 +1277,12 @@ Proto input: _\*léusaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -1341,17 +1341,17 @@ Proto input: _\*gángaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*gánga} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*gánga} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -1404,12 +1404,12 @@ Proto input: _\*gébaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -1470,18 +1470,18 @@ Proto input: _\*gúlθą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*góldą} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc L Th Voicing} & \emph{*gúldą} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*góldą} \\
+\mbox{EAFL Th Voicing} & \emph{*gúldą} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -1535,12 +1535,12 @@ Proto input: _\*grábaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -1551,7 +1551,7 @@ Proto input: _\*grábaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*græbaną} \\
+\mbox{EAF Brightening} & \emph{*græbaną} \\
 \mbox{OE A Restoration} & \emph{*grabaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*graban} \\
 \mbox{OE Secondary Nasalization} & \emph{*grabąn} \\
@@ -1601,17 +1601,17 @@ Proto input: _\*gástiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*gásti} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*gásti} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -1619,7 +1619,7 @@ Proto input: _\*gástiz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*gæsti} \\
+\mbox{EAF Brightening} & \emph{*gæsti} \\
 \mbox{OE Velar Palatalization} & \emph{*ʤæsti} \\
 \mbox{OE I Umlaut} & \emph{*ʤesti} \\
 OE Ws Palatal Diphthongization & \emph{*ʤiesti} \\
@@ -1668,17 +1668,17 @@ Proto input: _\*xḗrą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*xǣrą} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*xǣrą} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -1732,17 +1732,17 @@ Proto input: _\*xárbistuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*xárbistu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*xárbistu} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -1750,7 +1750,7 @@ Proto input: _\*xárbistuz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*xærbistu} \\
+\mbox{EAF Brightening} & \emph{*xærbistu} \\
 \mbox{OE Breaking} & \emph{*xearbistu} \\
 OE Velar Fricative Palatalization & \emph{*çearbistu} \\
 \mbox{PGmc B Allophony} & \emph{*çearβistu} \\
@@ -1801,18 +1801,18 @@ Proto input: _\*xágjaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*xággja} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*xággjaz} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*xággja} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -1822,7 +1822,7 @@ Proto input: _\*xágjaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*xággj} \\
-\mbox{Anglo Frisian Brightening} & \emph{*xæggj} \\
+\mbox{EAF Brightening} & \emph{*xæggj} \\
 OE Velar Fricative Palatalization & \emph{*çæggj} \\
 \mbox{OE Velar Palatalization} & \emph{*çæʤʤj} \\
 \mbox{OE I Umlaut} & \emph{*çeʤʤj} \\
@@ -1871,17 +1871,17 @@ Proto input: _\*xélmaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*xélma} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*xélma} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -1935,12 +1935,12 @@ Proto input: _\*xélpaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -1999,17 +1999,17 @@ Proto input: _\*xéndjō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*xéndju} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*xéndju} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2065,12 +2065,12 @@ Proto input: _\*xáldaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -2081,7 +2081,7 @@ Proto input: _\*xáldaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*xældaną} \\
+\mbox{EAF Brightening} & \emph{*xældaną} \\
 \mbox{OE Breaking} & \emph{*xealdaną} \\
 OE Velar Fricative Palatalization & \emph{*çealdaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*çealdan} \\
@@ -2131,17 +2131,17 @@ Proto input: _\*xúrną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*xórną} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*xórną} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2194,17 +2194,17 @@ Proto input: _\*láidijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*lādijaną} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2258,12 +2258,12 @@ Proto input: _\*líznōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -2352,12 +2352,12 @@ Proto input: _\*xlídą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -2413,12 +2413,12 @@ Proto input: _\*léuxtijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -2480,17 +2480,17 @@ Proto input: _\*líndō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*líndu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*líndu} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2543,17 +2543,17 @@ Proto input: _\*mélukz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*méluk} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*méluk} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2607,17 +2607,17 @@ Proto input: _\*mōdēr_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*mōdǣr} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*mōdǣr} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2671,17 +2671,17 @@ Proto input: _\*nátją_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*náttją} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2689,7 +2689,7 @@ Proto input: _\*nátją_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*nættją} \\
+\mbox{EAF Brightening} & \emph{*nættją} \\
 OE Heavy Syllable Nasal Apocope & \emph{*nættj} \\
 \mbox{OE I Umlaut} & \emph{*nettj} \\
 \mbox{OE J Loss After Heavy} & \emph{*nett} \\
@@ -2737,17 +2737,17 @@ Proto input: _\*márōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc N Stem N Loss} & \emph{*márǭ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc N Stem N Loss} & \emph{*márǭ} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2755,7 +2755,7 @@ Proto input: _\*márōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*mærǭ} \\
+\mbox{EAF Brightening} & \emph{*mærǭ} \\
 \mbox{OE A Restoration} & \emph{*marǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*mare} \\
@@ -2803,18 +2803,18 @@ Proto input: _\*rúkkaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*rókkaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*rókka} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*rókkaz} \\
-\mbox{PGmc Final Z Deletion} & \emph{*rókka} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2867,17 +2867,17 @@ Proto input: _\*skḗpą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*skǣpą} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*skǣpą} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2932,17 +2932,17 @@ Proto input: _\*skíllingaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*skíllinga} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*skíllinga} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -2998,12 +2998,12 @@ Proto input: _\*skáwōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3067,17 +3067,17 @@ Proto input: _\*slḗpaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*slǣpaną} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*slǣpaną} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -3132,12 +3132,12 @@ Proto input: _\*smérwijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3199,12 +3199,12 @@ Proto input: _\*spánnaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3262,12 +3262,12 @@ Proto input: _\*spárrô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3278,7 +3278,7 @@ Proto input: _\*spárrô_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*spærrô} \\
+\mbox{EAF Brightening} & \emph{*spærrô} \\
 \mbox{OE Breaking} & \emph{*spearrô} \\
 OE Unstressed Long Vowel Shortening & \emph{*spearra} \\
 \end{tabularx}
@@ -3325,12 +3325,12 @@ Proto input: _\*stéllijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3386,22 +3386,22 @@ Proto input: _\*súmaraz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*súmara} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*súmara} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -3410,7 +3410,7 @@ Proto input: _\*súmaraz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*súmar} \\
-\mbox{Anglo Frisian Brightening} & \emph{*súmær} \\
+\mbox{EAF Brightening} & \emph{*súmær} \\
 \mbox{OE Unstressed AE Merger} & \emph{*súmer} \\
 \end{tabularx}
 \end{minipage}
@@ -3456,12 +3456,12 @@ Proto input: _\*súndrōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3525,17 +3525,17 @@ Proto input: _\*swálwōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc N Stem N Loss} & \emph{*swálwǭ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc N Stem N Loss} & \emph{*swálwǭ} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -3543,7 +3543,7 @@ Proto input: _\*swálwōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*swælwǭ} \\
+\mbox{EAF Brightening} & \emph{*swælwǭ} \\
 \mbox{OE Breaking} & \emph{*swealwǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*swealwæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*swealwe} \\
@@ -3587,12 +3587,12 @@ Proto input: _\*swī́ną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3648,12 +3648,12 @@ Proto input: _\*θánkijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3715,18 +3715,18 @@ Proto input: _\*θúrnaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*θórnaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*θórna} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*θórnaz} \\
-\mbox{PGmc Final Z Deletion} & \emph{*θórna} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -3779,17 +3779,17 @@ Proto input: _\*tī́diz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*tī́di} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*tī́di} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -3842,17 +3842,17 @@ Proto input: _\*táikną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*tākną} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -3905,12 +3905,12 @@ Proto input: _\*tūną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3966,12 +3966,12 @@ Proto input: _\*wádaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3982,7 +3982,7 @@ Proto input: _\*wádaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wædaną} \\
+\mbox{EAF Brightening} & \emph{*wædaną} \\
 \mbox{OE A Restoration} & \emph{*wadaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wadan} \\
 \mbox{OE Secondary Nasalization} & \emph{*wadąn} \\
@@ -4031,12 +4031,12 @@ Proto input: _\*wérpaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4095,12 +4095,12 @@ Proto input: _\*wáskaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4111,7 +4111,7 @@ Proto input: _\*wáskaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wæskaną} \\
+\mbox{EAF Brightening} & \emph{*wæskaną} \\
 \mbox{OE A Restoration} & \emph{*waskaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*waskan} \\
 \mbox{OE Secondary Nasalization} & \emph{*waskąn} \\
@@ -4160,12 +4160,12 @@ Proto input: _\*wáxsaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4176,7 +4176,7 @@ Proto input: _\*wáxsaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wæxsaną} \\
+\mbox{EAF Brightening} & \emph{*wæxsaną} \\
 \mbox{OE Breaking} & \emph{*weaxsaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*weaxsan} \\
 \mbox{OE Secondary Nasalization} & \emph{*weaxsąn} \\
@@ -4226,17 +4226,17 @@ Proto input: _\*wégaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*wéga} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*wéga} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4290,17 +4290,17 @@ Proto input: _\*wḗpną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*wǣpną} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*wǣpną} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4362,17 +4362,17 @@ Proto input: _\*wéljô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*wélljô} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4427,12 +4427,12 @@ Proto input: _\*wíndaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4490,18 +4490,18 @@ Proto input: _\*wálθuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*wáldu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc L Th Voicing} & \emph{*wálduz} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*wáldu} \\
+\mbox{EAFL Th Voicing} & \emph{*wálduz} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -4510,7 +4510,7 @@ Proto input: _\*wálθuz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wældu} \\
+\mbox{EAF Brightening} & \emph{*wældu} \\
 \mbox{OE Breaking} & \emph{*wealdu} \\
 \mbox{OE High Vowel Apocope} & \emph{*weald} \\
 \end{tabularx}
@@ -4557,12 +4557,12 @@ Proto input: _\*gárną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4573,7 +4573,7 @@ Proto input: _\*gárną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*gærną} \\
+\mbox{EAF Brightening} & \emph{*gærną} \\
 \mbox{OE Breaking} & \emph{*gearną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*gearn} \\
 \mbox{OE Velar Palatalization} & \emph{*ʤearn} \\
@@ -4629,18 +4629,18 @@ Proto input: _\*kwéðuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*kwédu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*kwéduz} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*kwédu} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -4711,12 +4711,12 @@ Proto input: _\*téxun_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4793,17 +4793,17 @@ Proto input: _\*θréjez_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*θréje} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*θréje} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4877,22 +4877,22 @@ Proto input: _\*wábsaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*wábsa} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*wábsa} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4901,7 +4901,7 @@ Proto input: _\*wábsaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*wábs} \\
-\mbox{Anglo Frisian Brightening} & \emph{*wæbs} \\
+\mbox{EAF Brightening} & \emph{*wæbs} \\
 \mbox{PGmc B Allophony} & \emph{*wæβs} \\
 \end{tabularx}
 \end{minipage}
@@ -4986,18 +4986,18 @@ Proto input: _\*búttmaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*bóttmaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*bóttma} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*bóttmaz} \\
-\mbox{PGmc Final Z Deletion} & \emph{*bóttma} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5056,17 +5056,17 @@ Proto input: _\*brándas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5077,7 +5077,7 @@ Proto input: _\*brándas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*brándæs} \\
+\mbox{EAF Brightening} & \emph{*brándæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*brándes} \\
 \end{tabularx}
 \end{minipage}
@@ -5152,12 +5152,12 @@ Proto input: _\*bréustą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5238,22 +5238,22 @@ Proto input: _\*kráftaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*kráfta} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*kráfta} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5262,7 +5262,7 @@ Proto input: _\*kráftaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*kráft} \\
-\mbox{Anglo Frisian Brightening} & \emph{*kræft} \\
+\mbox{EAF Brightening} & \emph{*kræft} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -5324,17 +5324,17 @@ Proto input: _\*déliz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*déli} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*déli} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5418,12 +5418,12 @@ Proto input: _\*fástijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5434,7 +5434,7 @@ Proto input: _\*fástijaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*fæstijaną} \\
+\mbox{EAF Brightening} & \emph{*fæstijaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*fæstijan} \\
 \mbox{OE Secondary Nasalization} & \emph{*fæstijąn} \\
 \mbox{Sievers Law Syncope} & \emph{*fæstjąn} \\
@@ -5517,17 +5517,17 @@ Proto input: _\*fláskōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc N Stem N Loss} & \emph{*fláskǭ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc N Stem N Loss} & \emph{*fláskǭ} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5535,7 +5535,7 @@ Proto input: _\*fláskōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*flæskǭ} \\
+\mbox{EAF Brightening} & \emph{*flæskǭ} \\
 \mbox{OE A Restoration} & \emph{*flaskǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*flaske} \\
@@ -5613,12 +5613,12 @@ Proto input: _\*fúlgijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5721,12 +5721,12 @@ Proto input: _\*gállô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5737,7 +5737,7 @@ Proto input: _\*gállô_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*gællô} \\
+\mbox{EAF Brightening} & \emph{*gællô} \\
 \mbox{OE Breaking} & \emph{*geallô} \\
 \mbox{OE Velar Palatalization} & \emph{*ʤeallô} \\
 OE Unstressed Long Vowel Shortening & \emph{*ʤealla} \\
@@ -5817,17 +5817,17 @@ Proto input: _\*knéxtaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*knéxta} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*knéxta} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5907,17 +5907,17 @@ Proto input: _\*xláðaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*xládaną} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5925,7 +5925,7 @@ Proto input: _\*xláðaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*xlædaną} \\
+\mbox{EAF Brightening} & \emph{*xlædaną} \\
 \mbox{OE A Restoration} & \emph{*xladaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*xladan} \\
 \mbox{OE Secondary Nasalization} & \emph{*xladąn} \\
@@ -5997,12 +5997,12 @@ Proto input: _\*láppô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6013,7 +6013,7 @@ Proto input: _\*láppô_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*læppô} \\
+\mbox{EAF Brightening} & \emph{*læppô} \\
 \mbox{OE A Restoration} & \emph{*lappô} \\
 OE Unstressed Long Vowel Shortening & \emph{*lappa} \\
 \end{tabularx}
@@ -6086,17 +6086,17 @@ Proto input: _\*xláxjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*xláxxjaną} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -6104,7 +6104,7 @@ Proto input: _\*xláxjaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*xlæxxjaną} \\
+\mbox{EAF Brightening} & \emph{*xlæxxjaną} \\
 \mbox{OE Breaking} & \emph{*xleaxxjaną} \\
 OE Velar Fricative Palatalization & \emph{*xleaxçjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*xleaxçjan} \\
@@ -6181,17 +6181,17 @@ Proto input: _\*láimą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*lāmą} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -6264,18 +6264,18 @@ Proto input: _\*lúnganjō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*lúngannju} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*lúngannjō} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*lúngannju} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -6356,12 +6356,12 @@ Proto input: _\*nábulô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6373,7 +6373,7 @@ Proto input: _\*nábulô_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{OE Med Unstressed U Lowering} & \emph{*nábolô} \\
-\mbox{Anglo Frisian Brightening} & \emph{*næbolô} \\
+\mbox{EAF Brightening} & \emph{*næbolô} \\
 \mbox{OE A Restoration} & \emph{*nabolô} \\
 \mbox{PGmc B Allophony} & \emph{*naβolô} \\
 OE Unstressed Long Vowel Shortening & \emph{*naβola} \\
@@ -6450,12 +6450,12 @@ Proto input: _\*xnékkô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6537,19 +6537,19 @@ Proto input: _\*nḗðlō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*nḗdlu} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*nǣdlu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*nḗdlō} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Final Long O Raising} & \emph{*nḗdlu} \\
-\mbox{NWGmc Long E Lowering} & \emph{*nǣdlu} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -6629,18 +6629,18 @@ Proto input: _\*núsō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*nósō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*nósu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*nósō} \\
-\mbox{NWGmc Final Long O Raising} & \emph{*nósu} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -6718,12 +6718,12 @@ Proto input: _\*sápą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6734,7 +6734,7 @@ Proto input: _\*sápą_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*sæpą} \\
+\mbox{EAF Brightening} & \emph{*sæpą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sæp} \\
 \end{tabularx}
 \end{minipage}
@@ -6806,18 +6806,18 @@ Proto input: _\*sáiwiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*sāwi} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*sāwiz} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*sāwi} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -6893,12 +6893,12 @@ Proto input: _\*síbi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6977,12 +6977,12 @@ Proto input: _\*spárōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6993,7 +6993,7 @@ Proto input: _\*spárōjaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*spærōjaną} \\
+\mbox{EAF Brightening} & \emph{*spærōjaną} \\
 \mbox{OE A Restoration} & \emph{*sparōjaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*sparōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*sparōjąn} \\
@@ -7067,22 +7067,22 @@ Proto input: _\*stábaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*stába} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*stába} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7091,7 +7091,7 @@ Proto input: _\*stábaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*stáb} \\
-\mbox{Anglo Frisian Brightening} & \emph{*stæb} \\
+\mbox{EAF Brightening} & \emph{*stæb} \\
 \mbox{PGmc B Allophony} & \emph{*stæβ} \\
 \end{tabularx}
 \end{minipage}
@@ -7152,17 +7152,17 @@ Proto input: _\*swánas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7173,7 +7173,7 @@ Proto input: _\*swánas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*swánæs} \\
+\mbox{EAF Brightening} & \emph{*swánæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*swánes} \\
 \end{tabularx}
 \end{minipage}
@@ -7239,17 +7239,17 @@ Proto input: _\*θūsèndi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*θūsènd} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7337,12 +7337,12 @@ Proto input: _\*tímbrą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7415,12 +7415,12 @@ Proto input: _\*wákaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7431,7 +7431,7 @@ Proto input: _\*wákaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wækaną} \\
+\mbox{EAF Brightening} & \emph{*wækaną} \\
 \mbox{OE A Restoration} & \emph{*wakaną} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wakan} \\
 \mbox{OE Secondary Nasalization} & \emph{*wakąn} \\
@@ -7497,22 +7497,22 @@ Proto input: _\*wátōr_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Or Lowering} & \emph{*wátar} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7520,7 +7520,7 @@ Proto input: _\*wátōr_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wætær} \\
+\mbox{EAF Brightening} & \emph{*wætær} \\
 \mbox{OE Unstressed AE Merger} & \emph{*wæter} \\
 \end{tabularx}
 \end{minipage}
@@ -7583,22 +7583,22 @@ Proto input: _\*xwálaz_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*xwála} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*xwála} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7607,7 +7607,7 @@ Proto input: _\*xwálaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*xwál} \\
-\mbox{Anglo Frisian Brightening} & \emph{*xwæl} \\
+\mbox{EAF Brightening} & \emph{*xwæl} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -7678,12 +7678,12 @@ Proto input: _\*xwī́naną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7773,12 +7773,12 @@ Proto input: _\*wī́θagą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7789,7 +7789,7 @@ Proto input: _\*wī́θagą_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*wī́θægą} \\
+\mbox{EAF Brightening} & \emph{*wī́θægą} \\
 OE Heavy Syllable Nasal Apocope & \emph{*wī́θæg} \\
 \mbox{OE Velar Palatalization} & \emph{*wī́θæʤ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*wī́θeʤ} \\
@@ -7871,17 +7871,17 @@ Proto input: _\*wíràldu_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc I Lowering} & \emph{*wéràldu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc I Lowering} & \emph{*wéràldu} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7974,19 +7974,19 @@ Proto input: _\*júgunθ_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{OE Ws Palatal Glide} & \emph{*jéugunθ} \\
-NWGmc Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
-\mbox{NWGmc Nasal Spirant Loss} & \emph{*jéugūθ} \\
+EAF Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
+\mbox{EAF Nasal Spirant Loss} & \emph{*jéugūθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Proto-West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -8076,17 +8076,17 @@ Proto input: _\*bánnas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8097,7 +8097,7 @@ Proto input: _\*bánnas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*bánnæs} \\
+\mbox{EAF Brightening} & \emph{*bánnæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*bánnes} \\
 \end{tabularx}
 \end{minipage}
@@ -8158,17 +8158,17 @@ Proto input: _\*bázjas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8179,7 +8179,7 @@ Proto input: _\*bázjas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*bærjæs} \\
+\mbox{EAF Brightening} & \emph{*bærjæs} \\
 \mbox{OE I Umlaut} & \emph{*berjæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*berjes} \\
 \end{tabularx}
@@ -8245,12 +8245,12 @@ Proto input: _\*báug_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8344,12 +8344,12 @@ Proto input: _\*kūi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8444,17 +8444,17 @@ Proto input: _\*fúnðanǭ_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*fúndanǭ} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -8539,17 +8539,17 @@ Proto input: _\*fúrxtīnaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*fúrxtīna} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*fúrxtīna} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -8634,17 +8634,17 @@ Proto input: _\*xámaras_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8655,7 +8655,7 @@ Proto input: _\*xámaras_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*xámæræs} \\
+\mbox{EAF Brightening} & \emph{*xámæræs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*xámeres} \\
 \end{tabularx}
 \end{minipage}
@@ -8727,18 +8727,18 @@ Proto input: _\*xábēθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*xábǣθ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*xábēθ} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*xábǣθ} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -8747,7 +8747,7 @@ Proto input: _\*xábēθi_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*xæbǣθ} \\
+\mbox{EAF Brightening} & \emph{*xæbǣθ} \\
 OE Velar Fricative Palatalization & \emph{*çæbǣθ} \\
 \mbox{PGmc B Allophony} & \emph{*çæβǣθ} \\
 OE Unstressed Long Vowel Shortening & \emph{*çæβæθ} \\
@@ -8826,18 +8826,18 @@ Proto input: _\*xémonų_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Unstressed O Raising} & \emph{*xémunų} \\
+\mbox{PNWGmc Mn Dissimilation} & \emph{*xéβunų} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Unstressed O Raising} & \emph{*xémunų} \\
-\mbox{NWGmc Mn Dissimilation} & \emph{*xéβunų} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -8923,18 +8923,18 @@ Proto input: _\*líbēθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Long E Lowering} & \emph{*líbǣθ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*líbēθ} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc Long E Lowering} & \emph{*líbǣθ} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -9010,17 +9010,17 @@ Proto input: _\*mánnas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9031,7 +9031,7 @@ Proto input: _\*mánnas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*mánnæs} \\
+\mbox{EAF Brightening} & \emph{*mánnæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*mánnes} \\
 \end{tabularx}
 \end{minipage}
@@ -9104,18 +9104,18 @@ Proto input: _\*mízdai_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc I Lowering} & \emph{*mérdē} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*mírdē} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc I Lowering} & \emph{*mérdē} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -9197,17 +9197,17 @@ Proto input: _\*náxti_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9218,7 +9218,7 @@ Proto input: _\*náxti_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*næxti} \\
+\mbox{EAF Brightening} & \emph{*næxti} \\
 \mbox{OE Breaking} & \emph{*neaxti} \\
 \mbox{OE I Umlaut} & \emph{*niexti} \\
 \mbox{OE Ws Palatal Umlaut} & \emph{*nixti} \\
@@ -9293,17 +9293,17 @@ Proto input: _\*rástōz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*rástō} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*rástō} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9312,7 +9312,7 @@ Proto input: _\*rástōz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 PWGmc Surviving Bimoric O Unrounding & \emph{*rástā} \\
-\mbox{Anglo Frisian Brightening} & \emph{*ræstǣ} \\
+\mbox{EAF Brightening} & \emph{*ræstǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*ræste} \\
 \end{tabularx}
@@ -9386,19 +9386,19 @@ Proto input: _\*skúldramiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*skúldrum} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc A To U Before M} & \emph{*skúldrumiz} \\
+\mbox{PNWGmc A To U Before M} & \emph{*skúldrumiz} \\
 \mbox{PWGmc Early I Apocope} & \emph{*skúldrumz} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*skúldrum} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -9471,12 +9471,12 @@ Proto input: _\*skáub_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9554,17 +9554,17 @@ Proto input: _\*spánnai_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Ai Monophthongization} & \emph{*spánnē} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9626,17 +9626,17 @@ Proto input: _\*θístilas_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9647,7 +9647,7 @@ Proto input: _\*θístilas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*θístilæs} \\
+\mbox{EAF Brightening} & \emph{*θístilæs} \\
 \mbox{OE L Adjacent Syncope} & \emph{*θístlæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*θístles} \\
 \end{tabularx}
@@ -9712,12 +9712,12 @@ Proto input: _\*mákô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9728,7 +9728,7 @@ Proto input: _\*mákô_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*mækô} \\
+\mbox{EAF Brightening} & \emph{*mækô} \\
 \mbox{OE A Restoration} & \emph{*makô} \\
 OE Unstressed Long Vowel Shortening & \emph{*maka} \\
 \end{tabularx}
@@ -9799,22 +9799,22 @@ Proto input: _\*mákōθi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*mákōθ} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9822,7 +9822,7 @@ Proto input: _\*mákōθi_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*mækōθ} \\
+\mbox{EAF Brightening} & \emph{*mækōθ} \\
 \mbox{OE A Restoration} & \emph{*makōθ} \\
 \mbox{OE Late O Shortening} & \emph{*makaθ} \\
 \end{tabularx}
@@ -9899,17 +9899,17 @@ Proto input: _\*búrô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*bórô} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*bórô} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9988,18 +9988,18 @@ Proto input: _\*búrōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*bórōθ} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*búrōθ} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*bórōθ} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -10079,12 +10079,12 @@ Proto input: _\*líznô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10170,17 +10170,17 @@ Proto input: _\*líznōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*lírnōθ} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10270,12 +10270,12 @@ Proto input: _\*líkkô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10341,17 +10341,17 @@ Proto input: _\*líkkōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*líkkōθ} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10414,12 +10414,12 @@ Proto input: _\*skáwô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10487,17 +10487,17 @@ Proto input: _\*skáwōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*skáwōθ} \\
 \end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10570,17 +10570,17 @@ Proto input: _\*knúbbô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*knóbbô} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*knóbbô} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10662,17 +10662,17 @@ Proto input: _\*ráukaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*ráuka} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PGmc Final Z Deletion} & \emph{*ráuka} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10742,12 +10742,12 @@ Proto input: _\*stráwjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10835,7 +10835,52 @@ status without pretending that no historical account exists.
 
 ### stem — OE _stefn_
 
-Derivation: form followed here _\*stámnaz_; Old English form _stefn_; no regular trace was confidently matched for this entry.
+Derivation: _\*stámnaz_ yields regular _stamn_; the Old English form here is _stefn_ (known but unmodelled development).
+
+#### Derivation trace
+
+Proto input: _\*stámnaz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*stámna} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Proto-West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc Final Bare A Loss} & \emph{*stámn} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Regular outcome: _stamn_
+
+Old English form: _stefn_
 
 #### Reconstruction and comparative evidence
 
@@ -10887,7 +10932,7 @@ scholarship. The handbooks treat it as a pre-Old-English development (Luick §21
 Brunner §205), but the term "North-West Germanic coda dissimilation" should be taken
 as descriptive rather than technically established. This coda environment
 (_[C]mn → [C]fn_) is distinct from the cross-syllable m → _β_ change (as in
-[xémonų]{.recon} 'heaven' → [_heofon_]{.iv lang=oe sort=heofon role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69:1"} 'heaven') handled by the _NWGmcMnDissimilation_ rule;
+[xémonų]{.recon} 'heaven' → [_heofon_]{.iv lang=oe sort=heofon role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69:1"} 'heaven') handled by the _PNWGmcMnDissimilation_ rule;
 it is currently not modeled in the FST.
 
 The correct OE-facing transponent has not yet been established for the FST pipeline.
@@ -10933,12 +10978,12 @@ Proto input: _\*fūri_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11028,12 +11073,12 @@ Proto input: _\*táppô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Proto-Northwest Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
+\centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11044,7 +11089,7 @@ Proto input: _\*táppô_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{Anglo Frisian Brightening} & \emph{*tæppô} \\
+\mbox{EAF Brightening} & \emph{*tæppô} \\
 \mbox{OE A Restoration} & \emph{*tappô} \\
 OE Unstressed Long Vowel Shortening & \emph{*tappa} \\
 \end{tabularx}
@@ -11116,18 +11161,18 @@ Proto input: _\*búkkaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*bókkaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*bókka} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*bókkaz} \\
-\mbox{PGmc Final Z Deletion} & \emph{*bókka} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -11202,18 +11247,18 @@ Proto input: _\*fúglaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*fóglaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*fógla} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*fóglaz} \\
-\mbox{PGmc Final Z Deletion} & \emph{*fógla} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -11306,18 +11351,18 @@ Proto input: _\*rústō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*róstō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*róstu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*róstō} \\
-\mbox{NWGmc Final Long O Raising} & \emph{*róstu} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -11402,18 +11447,18 @@ Proto input: _\*wúlfaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*wólfaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*wólfa} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*wólfaz} \\
-\mbox{PGmc Final Z Deletion} & \emph{*wólfa} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -11501,18 +11546,18 @@ Proto input: _\*wúllō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
+\centering\textbf{Proto-Northwest Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*wóllō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*wóllu} \\
+\end{tabularx}
+\vspace{0.6em}
 \centering\textbf{Proto-West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{NWGmc U Lowering} & \emph{*wóllō} \\
-\mbox{NWGmc Final Long O Raising} & \emph{*wóllu} \\
-\end{tabularx}
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}

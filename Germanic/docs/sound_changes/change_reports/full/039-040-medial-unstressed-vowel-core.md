@@ -84,7 +84,7 @@ Combinative U Umlaut is delayed past SC040, PGmc `*wíduwōn` yields `wudowe`
 instead of expected OE `wuduwe`. That makes `SC039 < SC040` a real local
 chronology claim. The earlier side is not comparable: the current runner can
 move SC039 safely back to order `13`, but the search then stops at bundled
-`PWGmcChanges`, so the present result does **not** identify any positive earlier
+`EarlyEnglishLineChanges`, so the present result does **not** identify any positive earlier
 historical boundary for SC039.
 
 SC040 reciprocates that local evidence on its left and adds one broader
@@ -116,7 +116,7 @@ without pretending it is part of the same immediate core.
 
 The cautions are structural as much as evidential. SC039's runner-bounded
 earlier side must not be turned into a hidden positive boundary against bundled
-`PWGmcChanges`. SC040's later relation to SC072 is real, but it should remain a
+`EarlyEnglishLineChanges`. SC040's later relation to SC072 is real, but it should remain a
 rightward cross-reference rather than a reason to expand this report into a
 non-local late-vowel chapter. And the separate SC041 note should stay separate:
 the split solves a real asymmetry in source weight and chronology, so the book

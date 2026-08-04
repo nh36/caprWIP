@@ -48,9 +48,9 @@ purely model-internal adjustment.
 CAPR turns that broad unstressed-vowel background into two explicit opening
 rules at the left edge of the ordinary cascade.
 
-SC014 `NWGmcUnstressedAiMonophthongization` removes the unstressed diphthongal
+SC014 `PNWGmcUnstressedAiMonophthongization` removes the unstressed diphthongal
 quality of `*ai`, formalizing a comparative development that the grammars
-describe more diffusely. SC015 `NWGmcILowering` then lowers or levels early
+describe more diffusely. SC015 `PNWGmcILowering` then lowers or levels early
 unstressed front-vowel quality farther. That sequence is more explicit than the
 handbook prose, but it is still historically defensible so long as the report
 states clearly that the two rules do not form a strong local reciprocal
@@ -62,18 +62,18 @@ This report sits at the very opening of the volume and hands off
 directly to the pilot `SC016-SC020` **Early vocalic/final corridor**.
 
 ```foma
-.o. NWGmcUnstressedAiMonophthongization
-.o. NWGmcILowering
+.o. PNWGmcUnstressedAiMonophthongization
+.o. PNWGmcILowering
 .o. OEWsPalatalGlide
-.o. NWGmcULowering
-.o. NWGmcStressedMonosyllableORaising
-.o. NWGmcFinalLongORaising
-.o. PGmcFinalZDeletion
+.o. PNWGmcULowering
+.o. PNWGmcStressedMonosyllableORaising
+.o. PNWGmcFinalLongORaising
+.o. EAFFinalZDeletion
 ```
 
 That immediate handoff is the main structural reason to keep the row here.
 The report gives the volume an explicit opening without absorbing the `SC016-SC020` corridor to the right. Its outward links should remain restrained. Bundled
-`PWGmcChanges` bounds the earlier search space for both rules, but that is a
+`EarlyEnglishLineChanges` bounds the earlier search space for both rules, but that is a
 runner limitation rather than a positive left boundary. SC015 points forward
 to SC036 through `world`, but that relation should remain a cross-reference
 only, not a larger chapter claim.
@@ -83,13 +83,13 @@ only, not a larger chapter claim.
 The order evidence justifies the grouping only if the asymmetry remains explicit.
 
 SC014 is source-backed but chronology-negative in current testing. The earlier
-search runs safely down to bundled `PWGmcChanges` with no real break, and the
+search runs safely down to bundled `EarlyEnglishLineChanges` with no real break, and the
 later search finds no real break before the current search boundary at SC087.
 Those results should not be rewritten into positive chronology claims. The card
 supports SC014 as a brief opening note, not as a strongly bounded local law.
 
 SC015 is the stronger member. Its earlier search is likewise runner-bounded at
-bundled `PWGmcChanges`, so that side is not a positive earlier boundary
+bundled `EarlyEnglishLineChanges`, so that side is not a positive earlier boundary
 either. The later side is real, but broad/far: SC015 must precede SC036
 **OE Inter Stress Raising**. If SC015 is delayed later than SC036, the `world`
 derivation yields `wuruld` rather than expected `weorold`. That is a genuine
@@ -118,7 +118,7 @@ SC015-led prelude rather than as a symmetrical two-rule chapter.
 #### Remaining cautions
 
 The cautions here are straightforward but important. Do not treat bundled
-`PWGmcChanges` as a historical left boundary for either rule. Do not treat
+`EarlyEnglishLineChanges` as a historical left boundary for either rule. Do not treat
 SC014's no-break-before-boundary result as proof that it must precede the whole
 rest of the half. Do not let the forward `SC015 < SC036` relation pull this
 opening report into a non-contiguous chapter with the later

@@ -75,7 +75,7 @@ the same representative failure, `fright`, where shifting the rule yields
 meaningful, but narrow.
 
 SC065 is different. Its card has **no positive first-break boundary in either
-direction**. The earlier side stops only at the bundled `PWGmcChanges` runner
+direction**. The earlier side stops only at the bundled `EarlyEnglishLineChanges` runner
 boundary, and the later side reaches the current SC087 runner boundary with no
 real break. Those runner-boundary results must not be treated as historical
 constraints. This report therefore does **not** claim that SC065 must follow a

@@ -29,7 +29,7 @@ The implementation makes explicit what the historical discussion implies: the de
 
 #### Place in the cascade
 
-In the inventory ordering, SC006 follows SC005 `NWGmcAToUBeforeM` and precedes SC007 `PWGmcFinalOrLowering`. Like SC004 and SC005, it is still live inside bundled `PWGmcChanges`, but the current runner can now expose it directly through the `expanded-pwgmc` first-break profile.
+In the inventory ordering, SC006 follows SC005 `PNWGmcAToUBeforeM` and precedes SC007 `PWGmcFinalOrLowering`. Like SC004 and SC005, it is still live inside bundled `EarlyEnglishLineChanges`, but the current runner can now expose it directly through the `expanded-pwgmc` first-break profile.
 
 That means the main backend blocker is no longer runner visibility. It is simply the absence of actual first-break TSV output for this specific change.
 

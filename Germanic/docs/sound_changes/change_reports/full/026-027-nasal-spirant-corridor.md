@@ -80,7 +80,7 @@ and formal implementation.
 #### Remaining cautions
 
 The cautions are as important as the positive result. The earlier side of
-`SC026` remains runner-limited at bundled `PWGmcChanges`, so the current
+`SC026` remains runner-limited at bundled `EarlyEnglishLineChanges`, so the current
 evidence does **not** identify an earlier historical boundary for the pair. The
 later side of `SC027` is a no-break-before-boundary result through order `86`,
 so the current evidence does **not** justify a claim that the corridor must

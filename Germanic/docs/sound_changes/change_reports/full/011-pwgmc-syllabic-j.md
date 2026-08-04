@@ -29,7 +29,7 @@ This is a deliberately tight formalization of the environment described by Ringe
 
 #### Place in the cascade
 
-In the inventory ordering, SC011 follows SC010 `PWGmcJGemination` and precedes SC012 `PWGmcLThVoicing`. In the production cascade it remains inside bundled `PWGmcChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+In the inventory ordering, SC011 follows SC010 `PWGmcJGemination` and precedes SC012 `EAFLThVoicing`. In the production cascade it remains inside bundled `EarlyEnglishLineChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
 
 Its most important local relation is to SC010. In CAPR, j-gemination must precede syllabic-j vocalization, because gemination creates heavy stems that no longer match the light-syllable environment for SC011. That is a modeled-cascade claim rather than a validated chronology card result at present.
 

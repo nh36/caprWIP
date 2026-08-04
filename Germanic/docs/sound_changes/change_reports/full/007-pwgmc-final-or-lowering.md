@@ -28,7 +28,7 @@ The implementation matches the narrow final environment described in the sources
 
 #### Place in the cascade
 
-In the inventory ordering, SC007 follows SC006 `PWGmcEarlyIApocope` and precedes SC008 `PWGmcCoronalWAssimilation`. In the live cascade it remains inside bundled `PWGmcChanges`, but the first-break runner can now expose it directly through the `expanded-pwgmc` order profile.
+In the inventory ordering, SC007 follows SC006 `PWGmcEarlyIApocope` and precedes SC008 `PWGmcCoronalWAssimilation`. In the live cascade it remains inside bundled `EarlyEnglishLineChanges`, but the first-break runner can now expose it directly through the `expanded-pwgmc` order profile.
 
 That means the rule already has a clean chronology-test path even though it remains bundled in production.
 

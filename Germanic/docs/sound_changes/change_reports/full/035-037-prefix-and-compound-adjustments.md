@@ -94,7 +94,7 @@ shows that SC035 must precede SC043: if OE Prefix A Reduction is delayed beyond
 Anglo-Frisian Brightening, PGmc `*galáubijaną` yields `ġealīefan` instead of
 expected OE `ġelīefan`. That is a real chronology claim. The earlier side is
 not. The runner can move SC035 safely back to order 13, but it then stops at
-bundled `PWGmcChanges`, so the current result does **not** identify any earlier
+bundled `EarlyEnglishLineChanges`, so the current result does **not** identify any earlier
 historical boundary and must not be rewritten as one.
 
 SC036 is the strongest member of the report. It must follow SC019: moving it
@@ -108,7 +108,7 @@ inside this immediate corridor.
 
 SC037 is weaker in ordinary chronology but still important. Its card currently
 finds no ordinary historical positive boundary in either direction. The earlier
-search stops at bundled `PWGmcChanges` with no real break. The later search does
+search stops at bundled `EarlyEnglishLineChanges` with no real break. The later search does
 find a real computational break across SC038 **OE Strip Secondary Stress**:
 moving SC037 later produces `reġnefoga` instead of expected `reġnboga` in
 `rainbow`. But SC038 is a technical marker, so that result must remain exactly

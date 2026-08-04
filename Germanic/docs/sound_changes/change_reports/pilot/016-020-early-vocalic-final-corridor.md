@@ -93,13 +93,13 @@ formal model is broader than the cleanest handbook formulation.
 The relevant cascade slice is:
 
 ```foma
-.o. NWGmcUnstressedAiMonophthongization
-.o. NWGmcILowering
+.o. PNWGmcUnstressedAiMonophthongization
+.o. PNWGmcILowering
 .o. OEWsPalatalGlide
-.o. NWGmcULowering
-.o. NWGmcStressedMonosyllableORaising
-.o. NWGmcFinalLongORaising
-.o. PGmcFinalZDeletion
+.o. PNWGmcULowering
+.o. PNWGmcStressedMonosyllableORaising
+.o. PNWGmcFinalLongORaising
+.o. EAFFinalZDeletion
 ```
 
 This is the local neighborhood that makes the corridor visible. SC016, SC017,

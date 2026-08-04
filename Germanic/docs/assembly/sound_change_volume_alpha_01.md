@@ -4,19 +4,30 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 
 ## Coverage summary
 
-- Ordinary chronology-card sound changes represented: 70/70.
-- Covered by pilot/full production reports: 70.
+- Ordinary chronology-card sound changes represented: 81/81.
+- Covered by pilot/full production reports: 81.
 - Covered by scaffold placeholders: 0.
 - Grouped into multi-change units: 48 changes across 20 units.
 - Still needing literature dossiers: 0.
 - Still needing human judgement or promotion decisions: 0.
-- Negative/boundary-only chronology cards: 10.
-- Broad/far/contextual chronology cards: 31.
+- Negative/boundary-only chronology cards: 12.
+- Broad/far/contextual chronology cards: 38.
 
 ## Unit register
 
 | Unit | Change IDs | Status | Chronology status | Literature status | Final treatment |
 | --- | --- | --- | --- | --- | --- |
+| 003 | SC003 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested early-rule chain and a real but broad/far `SC003 < SC044` boundary via `learn`, `learn (3sg)`, `learn (iptv.2sg)`, and `meed` | source-backed with a cautious post-PWGmc West Germanic historical label; keep the CAPR rule name distinct from the historical interpretation | keep as a short singleton full report; treat the SC044 relation as a rightward cross-reference only and keep final `*z` deletion distinct |
+| 004 | SC004 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a real but broad/far `SC004 < SC036` boundary via `soul` | source-backed with explicit scope caution: the historical support is strongest for the unstressed and word-final side, while CAPR's broader nonfinal `*ai > *ā` packaging remains more explicit than the current handbook prose | keep as a short singleton full note; treat the SC036 relation as a rightward cross-reference only and keep the broader packaging caution explicit |
+| 005 | SC005 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a real but broad/far `SC005 < SC017` boundary via `shoulder` | source-backed by inflectional and morphophonological pre-`m` raising; keep the stage label cautious and do not make the case rest on the compact trace witness alone | keep as a short singleton full note; treat the SC017 relation as a rightward cross-reference only and keep the inflectional setting central |
+| 006 | SC006 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a real but broad/far `SC006 < SC034` boundary via `show (3sg)` | source-backed by the suffixal anti-umlaut argument and the `geoguþ` pathway; keep that center of gravity clearer than the wider trace spread | keep as a short singleton full note; treat the SC034 relation as a rightward cross-reference only and keep the suffixal evidence central |
+| 007 | SC007 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a real but broad/far `SC007 < SC043` boundary via `water` | source-backed by the `four` and `water` evidence; keep the final/pre-final environment explicit and do not inflate the rule into a broad long-vowel chapter | keep as a short singleton full note; treat the SC043 relation as a rightward cross-reference only and keep the narrow witness set visible |
+| 008 | SC008 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a real but broad/far `SC008 < SC031` boundary via `four` | source-backed by `four` plus plural-pronominal material; keep the small witness set explicit and do not overread the broad formal rule | keep as a short singleton full note; treat the SC031 relation as a rightward cross-reference only and keep the pronominal support visible |
+| 009 | SC009 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a real but broad/far `SC009 < SC032` boundary via `friend` | source-backed by the exceptional `friend` sequence; keep the lexical narrowness explicit and do not enlarge the rule into a broadly productive contraction chapter | keep as a short lexical singleton note; treat the SC032 relation as a rightward cross-reference only and keep the uniqueness of the `friend` family visible |
+| 010 | SC010 | full | one-sided singleton with boundary-only earlier side at the left edge of the tested expanded-PWGmc chain and a tight local reciprocal `SC010 < SC011` boundary via `net` | source-backed by Fulk's strong j-gemination statement and example set; keep the light-syllable plus `*j` environment explicit and do not widen the rule into a general consonant-doubling chapter | keep as a short singleton full note; treat the SC011 relation as an immediate rightward cross-reference or local seam without forcing a grouped chapter |
+| 011 | SC011 | full | one-sided singleton with a tight local reciprocal earlier boundary at `SC010` via `net` and a boundary-only later side that reaches the SC087 search limit | source-backed by Ringe and Taylor's direct statement about postconsonantal `*j > *i`, but keep the trace-light status explicit because the current compact trace gives no direct SC011 hits | keep as a short singleton full note; treat the SC010 relation as a leftward local seam and do not enlarge the rule into a broader high-vowel chapter |
+| 012 | SC012 | full | boundary-limited on both sides; earlier search stops at the left edge of the tested expanded-PWGmc chain and later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | source-backed by the `lþ > ld` development with a cautious northern-West-Germanic scope; keep the stage-label caution explicit and do not overstate the chronology | keep as a short finished singleton note; state plainly that the order test supplies no positive local boundary and keep the scope caution visible |
+| 013 | SC013 | full | boundary-limited on both sides; earlier search stops at the left edge of the tested expanded-PWGmc chain and later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | source-backed by Ringe and Taylor's direct systemic statement that PWGmc `*d` became a stop in all positions; the lexical dossier is compact but sufficient for a short note | keep as a short finished singleton note; treat the tested-chain left edge and the SC087 search boundary as methodological limits rather than chapter architecture |
 | 014-015 | SC014; SC015 | full | short asymmetric opening bridge: SC014 remains negative and boundary-limited; SC015 is the stronger member with broad/far `SC015 < SC036` via `world`; both earlier sides are runner-bounded at `PWGmcChanges` | literature and book dossiers drafted | keep as a short cautious full opening prelude; SC014 stays brief, SC015 carries the prose, and the SC016-SC020 / SC036 links remain cross-references only |
 | 016-020 | SC016; SC017; SC019; SC020 | pilot | strong local corridor with forward links | substantial pilot source material | keep as pilot multi-change production report |
 | 018 | SC018 | full | boundary-limited on both sides; earlier search stops at bundled `PWGmcChanges`, later search reaches the SC087 boundary with no real break; do not turn either side into positive chronology | review and book dossiers drafted | keep as a short finished singleton note; keep bundled `PWGmcChanges` and the SC087 search boundary as methodological limits rather than historical chronology, and do not merge the rule into the pilot corridor or SC021 |
@@ -59,6 +70,612 @@ _Generated from `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
 | 081-083 | SC081; SC082; SC083 | full | technical middle bridge: `SC081 < SC082 < SC083`, with SC082 as the strongest center, SC081's left edge broad/far to SC055, and SC083's later side runner-bounded | literature and book dossiers drafted | keep as a cautious technical full bridge with SC082 as the center; keep SC055 and SC085 as outward cross-references only, do not rewrite SC083's runner-bounded later side as positive chronology, and do not merge into SC085-SC086 |
 | 085-086 | SC085; SC086 | full | strongest compact closing core: `SC073 < SC085 < SC086`, with SC086 also receiving the SC078 seam as a cross-reference | literature and book dossiers drafted | keep as a focused full closing report; keep SC073 and SC078 as leftward cross-references only, do not claim a positive SC086 < SC087 boundary, and do not expand into SC081-SC083 or SC087 |
 | 087 | SC087 | full | terminal singleton with broad/far `SC044 < SC087` and a runner-bounded later side | literature and book dossiers drafted | keep as a short terminal singleton full report; keep SC044-SC045 as a distant leftward cross-reference only, do not claim a positive SC086 < SC087 relation, and do not absorb SC078, SC079-SC080, or SC081-SC083 |
+
+## West Germanic rhotacism
+
+### Sound-change report
+
+#### Historical formulation
+
+SC003 *EAFRhotacism* appears here as a singleton consonant report for the change of medial *z* to *r*. Historically, the change is better treated as a post-PWGmc West Germanic rhotacism than as a Proto-Germanic innovation proper. Ringe and Taylor place rhotacism in the post-PWGmc sound-change layer and stress that it was not uniform within WGmc [@RingeTaylor2014, pp. 98, 102], while Crist argues that it cannot be inherited from Proto-Northwest Germanic and must follow earlier WGmc *z*-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
+
+That does not make the CAPR rule name unusable. It does mean the backend apparatus should distinguish the implementation label *EAFRhotacism* from the source-supported historical stage label.
+
+#### Source tradition
+
+The source support for the phenomenon itself is strong. Hogg states succinctly that Germanic `/z/` yielded `/r/` in intervocalic position in Old English, though it was generally lost finally [@Hogg1992, p. 37]. Ringe and Taylor go farther: they first note that the change occurred independently in Norse and WGmc and was not uniform even in the latter [@RingeTaylor2014, p. 52], and later advise assigning the process to the post-PWGmc period [@RingeTaylor2014, pp. 98, 102]. Crist's analysis aligns with that caution by arguing that rhotacism is not inherited from Proto-Northwest Germanic and must follow earlier WGmc *z*-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
+
+This is enough source support not only for a backend report but for a cautious historical label. The clearest sources support the change itself strongly and support locating it in the West Germanic area after PWGmc rather than at Proto-Germanic proper.
+
+#### CAPR implementation
+
+CAPR models the development as one explicit rewrite in vocalic medial environments:
+
+```foma
+define EAFRhotacism [
+    {*z} -> {*r} || EnglishStarVocalic _ ?
+];
+```
+
+The implementation is broader than a strictly intervocalic *V_V* rule because the current model also needs to retain medial *VzC* environments. That choice matches the local FST comment, but it should still be kept distinct from the narrower formulations in the historical literature.
+
+For implementation continuity, CAPR keeps the exact rule name *EAFRhotacism*. That identifier should be read as a model label rather than as the best historical stage label.
+
+#### Place in the cascade
+
+In the current inventory ordering, SC003 follows SC002 *PGmcGmSimplification* and precedes the Proto-West-Germanic developments that begin with SC004. In the implementation, however, it remains inside the same bundled Proto-Germanic consonant block that also contains final *z* deletion.
+
+That placement still matters, but the early-rule harness now exposes SC003 to standalone first-break testing without changing the production bundle. The rule therefore has direct chronology support even though the live cascade remains bundled, and the historical prose can now say more clearly that the modeled stage name is earlier than the source-supported historical interpretation.
+
+#### Order evidence
+
+Validated order evidence now exists through the temporary early-rule harness:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_early_rules_01_failures.tsv`
+
+The earlier search moved SC003 safely across SC002 down to order *2* and then reached the left edge of the tested historical chain with no real break. That side is therefore boundary-only rather than a positive earlier chronology constraint.
+
+The later search does find a real historical break at order *44* across `SC044` OE Breaking. If PGmc Rhotacism is delayed past that stage, PGmc líznōjaną yields lirnian rather than liornian, líznōθi yields lirnaþ rather than liornaþ, líznô yields lirna rather than liorna, and mízdai yields merde rather than meorde.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC003 is now substantially stronger than SC002 on both the chronology and source sides. It has a validated one-sided historical boundary and exact wrong-output diagnostics, and the literature now supports a cautious historical label: post-PWGmc West Germanic rhotacism. That is enough for a cautious singleton report, provided the prose keeps the CAPR rule name and the historical label clearly distinct.
+
+#### Remaining cautions
+
+Two cautions still matter most. First, backend prose should keep rhotacism distinct from final *z* deletion, because the literature treats them as separate events with their own chronology. Second, the later boundary with `SC044` is broad/far rather than a tight local adjacency claim. The prose should therefore continue to describe the historical stage as post-PWGmc West Germanic while reserving *EAFRhotacism* for the CAPR rule label.
+
+## PWGmc ai-monophthongization note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC004 *PWGmcAiMonophthongization* packages the West Germanic monophthongization of inherited *ai*, including the special word-final unstressed outcome that merges with long mid ē. In the inventory and trace output the rule is visible across a broad set of lexical families such as bone, deal, dough, flesh, and ghost.
+
+That makes it historically recognizable, but the present source support is uneven. The clearest sources assembled here speak most directly to the unstressed and especially word-final *ai* outcomes. The broader nonfinal *ai* > ā side of the CAPR rule is therefore more explicit in the implementation than in the currently assembled handbook prose.
+
+#### Source tradition
+
+Ringe and Taylor treat the monophthongization of unstressed *ai* as one of the most widespread post-PNWGmc vowel shifts and illustrate it with endings such as PGmc dat. sg. -ai, subjunctive -ai, and strong adjective plural -ai, all of which surface in Northwest Germanic as long mid reflexes [@RingeTaylor2014, pp. 40--41]. Fulk likewise lists the development of unstressed *ai* and *au* among the important similarities shared by North and West Germanic against Gothic [@Fulk2018, §5.2].
+
+That is solid support for the historical phenomenon at least on the unstressed side. It is weaker support for the full CAPR packaging, because the retrieved sources here do not yet give a comparably explicit handbook statement for the wider nonfinal *ai* > ā generalization reflected in the trace examples bone, deal, dough, flesh, and ghost. A fuller source pass should therefore strengthen that side before any broader narrative treatment is attempted.
+
+#### CAPR implementation
+
+CAPR models the change as a single explicit West Germanic stage with a word-final split:
+
+```foma
+define PWGmcAiMonophthongization [
+    [{*ai} -> {*ē} || _ .#.]
+    .o.
+    [{*ai} -> {*ā}]
+    .o.
+    [{*ái} -> {*ā}]
+];
+```
+
+This implementation is sharper than the narrowest handbook wording recovered in this pass. The special word-final *ai* *-*> ē outcome maps directly onto the retrieved historical discussion, while the broader *ai* *-*> ā generalization functions as CAPR's unified treatment of the wider monophthongization pattern.
+
+#### Place in the cascade
+
+In the inventory ordering, SC004 is the first member of the Proto-West-Germanic bundle and stands immediately before SC005 *PNWGmcAToUBeforeM*. In the live pipeline it still sits inside bundled *EarlyEnglishLineChanges*, but the first-break runner now has an expanded-pwgmc order profile that exposes SC004 explicitly for chronology testing without changing the production cascade.
+
+That means the rule now occupies a clearer position in the cascade evidence. It remains a bundled production rule in the live cascade, but it is no longer blocked from first-break testing in principle.
+
+#### Order evidence
+
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
+
+The earlier search stops immediately at the left edge of the tested expanded-PWGmc chain. SC004 is already the first explicitly testable rule in that profile, so the earlier side is boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order *36* across `SC036` OE Inter Stress Raising. If PWGmc Ai Monophthongization is delayed that far, PGmc sáiwalō yields sāwel rather than sāwol.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC004 works best as a short singleton opening note. The historical phenomenon is real, the chronology layer now gives one usable later boundary, and the source base is strong enough to support the unstressed and word-final side of the change. The report should nevertheless remain modest, because the broader nonfinal *ai* > ā packaging is still more explicit in CAPR than in the currently assembled handbook prose.
+
+#### Remaining cautions
+
+The chief caution is scope. The retrieved sources support the unstressed *ai* monophthongization clearly, but they do not yet support every detail of CAPR's wider *ai* *-*> ā packaging equally explicitly. The earlier side of the chronology card is also only a tested-chain boundary, while the later `SC036` relation is broad/far rather than local. Those limits should remain visible even in a cautious singleton note.
+
+## Unstressed a-raising before final m note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC005 *PNWGmcAToUBeforeM* isolates the raising of unstressed noninitial *a* to *u* before final *m* in a narrow set of inflectional environments. The inventory currently labels it Northwest Germanic and gives shoulder as the compact-trace witness, but the historical discussion recovered in this pass is broader and more morphologically oriented than that single lexical example suggests.
+
+That mismatch is important. The change is historically plausible, but the source layer does not yet settle whether the best label is strictly Northwest Germanic, a broader North-and-West-Germanic shared development, or a still earlier PWGmc-stage adjustment inside inflectional endings. The existing needs_human_review=yes flag should therefore remain explicit.
+
+#### Source tradition
+
+Campbell describes an early development in inflectional endings by which *a* > *o* > *u* before m, citing dat.pl. endings and related finite-verb morphology [@Campbell1959, §331(6)]. Sievers/Brunner likewise treats old unstressed *o* in derivational and inflectional syllables before *m* as yielding *u* in Old English [@SieversBrunner1965, §44]. Fulk places the development of early Proto-Germanic unstressed *o* to *u* before *m* among the important similarities shared by North and West Germanic [@Fulk2018, §5.2].
+
+Those sources support the underlying phenomenon, but they do not align perfectly with CAPR's present label. They point most clearly to a morphologized pre-*m* raising in endings and to a wider North/West-Germanic distribution, not to a settled standalone Northwest-Germanic rule named from the single lexical trace item shoulder. The source base is therefore usable but not yet decisive on the staging question.
+
+#### CAPR implementation
+
+CAPR models the change as a narrow pre-*m* raising rule:
+
+```foma
+define PNWGmcAToUBeforeM [
+    {*a} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ {*m} ({*i})? ({*z})? .#.
+];
+```
+
+This rule is intentionally tight. It targets unstressed ending material before final *m*, with optional *i* and *z* tails, rather than a general stem-wide vowel shift. The implementation is therefore more precise than the broader morphophonological prose in the handbooks, but it also inherits their uncertainty about exact stage placement.
+
+#### Place in the cascade
+
+In the inventory ordering, SC005 follows SC004 *PWGmcAiMonophthongization* and precedes SC006 *PWGmcEarlyIApocope*. In the live pipeline it remains part of bundled *EarlyEnglishLineChanges*, and the inventory itself flags the stage label for review because the rule is Northwest-Germanic in name but still embedded inside the Proto-West-Germanic pipeline bundle.
+
+That bundle position no longer blocks chronology testing in principle. The current first-break runner can expose SC005 through the expanded-pwgmc order profile, but the historical naming issue remains unresolved even if the computation path is now available.
+
+#### Order evidence
+
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
+
+The earlier search moved SC005 safely across SC004 down to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order *17* across `SC017` NWGmc U Lowering. If NWGmc A To U Before M is delayed that far, PGmc skúldramiz yields sċoldrum rather than expected OE sċuldrum.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC005 can now stand as a cautious singleton note. The source support points to a real unstressed-vowel development before final *m* in inflectional material, and the validated chronology card adds a real later boundary even though that boundary is broad/far rather than local. The section should not make the whole case rest on the compact trace witness shoulder.
+
+#### Remaining cautions
+
+Three cautions remain explicit. First, the stage label is unresolved: the current literature support fits a wider North/West-Germanic inflectional development at least as well as a narrowly Northwest-Germanic singleton. Second, the compact trace currently gives only one lexical witness, shoulder, while the source prose is mostly morphological rather than lexical. Third, the chronology card is one-sided and broad/far on its later side. Those limits should remain visible in prose rather than being used as grounds for omission.
+
+## Early i-apocope note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC006 *PWGmcEarlyIApocope* isolates the early loss of final *i* after unstressed syllables in forms far enough from the main stress that later i-umlaut no longer sees the trigger. In the trace output it appears in forms such as thousand, bore (3sg), have, learn (3sg), and lick (3sg).
+
+That is historically recognizable and more strongly sourced than SC005. The main historical value of the rule is not the individual lexemes alone, but the broader argument that early final *i* loss must precede later umlaut and related vocalic developments.
+
+#### Source tradition
+
+Sievers/Brunner treats the early Common-Germanic loss of final *-i* after unstressed syllables as established by the fact that these endings no longer triggered i-umlaut in Old English [@SieversBrunner1965, §§145--146]. Ringe and Taylor give the classic youth example directly: PWGmc jugunþi > juguþ > OE geoguþ ~ iuguþ [@RingeTaylor2014, p. 141]. Campbell likewise cites dugup and geogup among the relevant outcomes of early final high-vowel loss [@Campbell1959, §332].
+
+That is good support for the historical phenomenon itself. The present source pass is less complete for the full spread of CAPR's inventory examples, since the retrieved prose is strongest on endings and on the youth family rather than on every trace witness such as have or lick (3sg). The source layer is therefore solid but not yet exhaustive.
+
+#### CAPR implementation
+
+CAPR models the early apocope as a targeted deletion of final *i* in sufficiently remote unstressed syllables:
+
+```foma
+define PWGmcEarlyIApocope [
+    {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.,
+    {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ {*z} .#.
+];
+```
+
+The implementation makes explicit what the historical discussion implies: the decisive issue is relative stress and syllable count, not just absolute word-final position. This is why the rule is modeled separately from later syncope and apocope.
+
+#### Place in the cascade
+
+In the inventory ordering, SC006 follows SC005 *PNWGmcAToUBeforeM* and precedes SC007 *PWGmcFinalOrLowering*. Like SC004 and SC005, it is still live inside bundled *EarlyEnglishLineChanges*, but the current runner can now expose it directly through the expanded-pwgmc first-break profile.
+
+That means the main backend blocker is no longer runner visibility. It is simply the absence of actual first-break TSV output for this specific change.
+
+#### Order evidence
+
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
+
+The earlier search moved SC006 safely across SC005 and SC004 down to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order *34* across `SC034` OE Aw Long Diphthong. If PWGmc Early I Apocope is delayed that far, PGmc skáwōθi yields sċēaweþ rather than expected OE sċēawaþ.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC006 works well as a short singleton note. The historical phenomenon is well supported, and the chronology layer now supplies a usable one-sided later boundary. The report's center of gravity should remain the anti-umlaut and suffixal evidence rather than an attempt to distribute equal weight across every current trace witness.
+
+#### Remaining cautions
+
+The major caution is not the existence of the rule but its scale. The retrieved source discussion is strongest for suffixal evidence and geoguþ rather than for every inventory witness, and the later `SC034` relation is broad/far rather than local. Those limits should remain visible even in a cautious singleton note.
+
+## Final *ō-lowering before *r note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC007 *PWGmcFinalOrLowering* isolates the lowering of final bimoric ō to *a* before word-final *r*. In the compact trace it is concentrated in a very small witness set, above all four and water.
+
+That narrowness matters. This is not a general long-ō lowering rule, but a specific final/pre-final environment whose historical value lies in a small set of well-known forms.
+
+#### Source tradition
+
+Ringe and Taylor state that surviving bimoric long ō became PWGmc *a* word-finally and before word-final *r*, and they illustrate the outcome with four and water [@RingeTaylor2014, pp. 58--59]. Fulk likewise notes that final *r* was preserved and that ō before it developed to *a* in West Germanic [@Fulk2018, §5.3].
+
+That is solid support for the underlying phenomenon. It is not broad support for a large lexical class, because the historical discussion is anchored chiefly in four- and water-type material. The report should therefore remain explicit about the rule's narrow environment.
+
+#### CAPR implementation
+
+CAPR models the change as a single explicit environment:
+
+```foma
+define PWGmcFinalOrLowering [
+    {*ō} -> {*a} || _ {*r} .#.
+];
+```
+
+The implementation matches the narrow final environment described in the sources. It is also the place where an older duplicated shortening treatment was consolidated in the FST comments, so the current CAPR rule should be read as a compact formalization of a very specific historical setting.
+
+#### Place in the cascade
+
+In the inventory ordering, SC007 follows SC006 *PWGmcEarlyIApocope* and precedes SC008 *PWGmcCoronalWAssimilation*. In the live cascade it remains inside bundled *EarlyEnglishLineChanges*, but the first-break runner can now expose it directly through the expanded-pwgmc order profile.
+
+That means the rule already has a clean chronology-test path even though it remains bundled in production.
+
+#### Order evidence
+
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_failures.tsv`
+
+The earlier search moved SC007 safely across SC006, SC005, and SC004 down to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order *43* across `SC043` Anglo Frisian Brightening. If PWGmc Final Or Lowering is delayed that far, PGmc wátōr yields water rather than expected OE wæter.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC007 works best as a narrow singleton note. The source support is real, the chronology layer now yields one usable later boundary, and the witness set is coherent even if small. That is enough for a cautious manifest-backed note, provided the report keeps the narrow environment and limited lexical base explicit.
+
+#### Remaining cautions
+
+The chief caution is scope. The rule is narrowly conditioned and strongly tied to the four and water evidence. The earlier side of the chronology card is also only boundary-only, while the later `SC043` relation is broad/far rather than local. Any later prose should resist turning this into a broad long-vowel chapter or implying that the small witness set supports a much larger phenomenon than the sources actually state.
+
+## Coronal-w assimilation note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC008 *PWGmcCoronalWAssimilation* isolates the assimilation of coronal obstruents before *w*, yielding *ww*. In the compact trace the clearest lexical witness is four, while the historical discussion also depends on pronominal forms such as the plural dative and possessive `you / your`.
+
+That makes the rule historically recognizable, but also narrow. The historical case rests on a very small number of input clusters and should be presented as such.
+
+#### Source tradition
+
+Ringe and Taylor call the change a shared Proto-West-Germanic innovation: the intervocalic sequences *zw* and *dw* were assimilated to *ww* [@RingeTaylor2014, pp. 56--57]. Their supporting examples are PGmc fedwor four, PGmc izwiz `you (dat.pl.)`, and PGmc izweraz your (pl.), and they note that although there is essentially one clear lexical example of each cluster, the basic nature of the lexemes makes the change virtually certain [@RingeTaylor2014, pp. 56--57].
+
+That is enough for a backend report. It is also a warning against overstatement: the historical support is compelling but quite concentrated.
+
+#### CAPR implementation
+
+CAPR models the assimilation with one formal rule covering both coronal inputs:
+
+```foma
+define PWGmcCoronalWAssimilation [
+    {*d} -> {*w} || _ {*w},
+    {*z} -> {*w} || _ {*w}
+];
+```
+
+This implementation is broader than any one lexical example, but it is still directly tied to the two historically motivated cluster types recovered in the sources.
+
+#### Place in the cascade
+
+In the inventory ordering, SC008 follows SC007 *PWGmcFinalOrLowering* and precedes SC009 *PWGmcIjContraction*. In the production cascade it remains part of bundled *EarlyEnglishLineChanges*, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+
+That keeps the chronology path straightforward even though the live bundled cascade is unchanged.
+
+#### Order evidence
+
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_failures.tsv`
+
+The earlier search moved SC008 safely across SC007, SC006, SC005, and SC004 down to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order *31* across `SC031` OE WW Simplification. If PWGmc Coronal W Assimilation is delayed that far, PGmc fédwōr yields fēowwer rather than expected OE fēower.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC008 works well as a narrow singleton note. The source support for the phenomenon is good, the chronology layer now yields a usable later boundary, and the pronominal support keeps the rule from collapsing into a single-example convenience. That is enough for a cautious manifest-backed note.
+
+#### Remaining cautions
+
+The main caution is concentration of evidence. The historical case depends on a small cluster of forms, especially four and the plural-pronominal material. The earlier side of the chronology card is also only boundary-only, while the later `SC031` relation is broad/far rather than local. Any later prose should keep the rule tightly bounded and should not let the broad formal implementation read as if the sources had established a much wider lexical scope.
+
+## Ij-contraction in friend note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC009 *PWGmcIjContraction* isolates a contraction of ijo to *iu* in the friend family. In the current trace and source material, that family is essentially the whole historical argument.
+
+That narrowness is not incidental. This is exactly the kind of rule whose existence may be historically real while still being too lexically restricted to support broad generalization.
+
+#### Source tradition
+
+Ringe and Taylor describe a roughly similar change of ijo to *iu* in the word friend, giving the pathway PGmc frijond- > PWGmc friund > OE friond and related WGmc forms [@RingeTaylor2014, p. 62]. They immediately warn, however, that the word is unique: the sequence ijo with stressed i* is so singular that it is inadvisable to attempt wider generalizations from this single history [@RingeTaylor2014, p. 62].
+
+That is enough to justify backend documentation of the phenomenon. It is also strong reason to keep the report modest and explicit about its lexical narrowness.
+
+#### CAPR implementation
+
+CAPR models the contraction with an explicit environment:
+
+```foma
+define PWGmcIjContraction [
+    {*i} {*j} {*ō} -> {*iu} || _ EnglishStarConsonant,
+    {*í} {*j} {*ō} -> {*íu} || _ EnglishStarConsonant
+];
+```
+
+The implementation carries a stronger general shape than the historical source base does. It should therefore be read as a CAPR formalization of a very narrow lexical development, not as a broad rule independently supported across many families.
+
+#### Place in the cascade
+
+In the inventory ordering, SC009 follows SC008 *PWGmcCoronalWAssimilation* and precedes SC010 *PWGmcJGemination*. In the production cascade it remains inside bundled *EarlyEnglishLineChanges*, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+
+That means chronology testing is procedurally ready even though the historical source base remains narrow.
+
+#### Order evidence
+
+Validated order evidence now exists through the expanded-PWGmc first-break output family:
+
+1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01.tsv`
+2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_changes.tsv`
+3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc007_009_01_failures.tsv`
+
+The earlier search moved SC009 safely across SC008, SC007, SC006, SC005, and SC004 down to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break. That side is therefore boundary-only rather than a positive chronology constraint.
+
+The later search does find a real historical break at order *32* across `SC032` OE Diphthong Leveling. If PWGmc Ij Contraction is delayed that far, PGmc fríjōndz yields friund rather than expected OE frēond.
+
+That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+
+#### Interpretation
+
+SC009 can now stand as a short lexical singleton note. The historical change is real enough to explain the friend family explicitly, and the validated chronology shows that the rule cannot simply be delayed indefinitely. The uniqueness of the friend family should remain part of the chapter rather than a reason to omit it.
+
+#### Remaining cautions
+
+The key caution is lexical uniqueness. The later `SC032` boundary is real but broad/far, while the friend family remains effectively the whole historical case. Any later prose should keep that family at the center and should not let CAPR's formal rule read like a major chapter-scale West Germanic vowel change.
+
+## West Germanic j-gemination note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC010 *PWGmcJGemination* isolates West Germanic consonant gemination before *j* after a short vowel. In the compact trace it appears across several familiar families such as hedge, net, set, sit, and will, and the trace occurrence count is therefore appreciably larger than for some of the surrounding early PWGmc rules.
+
+This is historically recognizable and not merely a one-lexeme convenience. Even so, the report should keep its scope narrow: the rule concerns gemination before *j* after a light syllable, not a general discussion of all consonant doubling in early West Germanic.
+
+#### Source tradition
+
+Fulk treats West Germanic consonant gemination before *j* as regular after a short vowel and states that the change applies to any consonant other than *r* (including *r* < *z*) in that setting [@Fulk2018, §6.15]. He illustrates the rule with a wide set of examples including OE scieppan, settan, lecgan, fremman, wennan, and sellan [@Fulk2018, §6.15].
+
+That is strong support for the historical phenomenon itself. It is less explicit about the exact interaction with the later CAPR rules that follow it, because those interactions belong to the modeled cascade rather than to the handbooks. The current source layer is therefore good for the existence and scope of the rule, but not yet for every internal chronology edge.
+
+#### CAPR implementation
+
+CAPR models the gemination as a large explicit set of consonants doubling before *j* after a short vowel:
+
+```foma
+define PWGmcJGemination [
+    {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
+    {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
+    {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
+    {*d} -> {*d} {*d} || EnglishStarShortVowel _ {*j},
+    {*k} -> {*k} {*k} || EnglishStarShortVowel _ {*j},
+    {*g} -> {*g} {*g} || EnglishStarShortVowel _ {*j},
+    {*f} -> {*f} {*f} || EnglishStarShortVowel _ {*j},
+    {*s} -> {*s} {*s} || EnglishStarShortVowel _ {*j},
+    {*m} -> {*m} {*m} || EnglishStarShortVowel _ {*j},
+    {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
+    {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
+    {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j},
+    {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j}
+];
+```
+
+This is broader and more explicit than any single handbook example, but it follows the general historical statement closely. The exact enumerated set belongs to the CAPR implementation layer rather than to the historical source tradition.
+
+#### Place in the cascade
+
+In the inventory ordering, SC010 follows SC009 *PWGmcIjContraction* and precedes SC011 *PWGmcSyllabicJ*. In the live production cascade it remains part of bundled *EarlyEnglishLineChanges*, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+
+The local implementation logic also makes SC010 important for the next rule. In CAPR, j-gemination must precede SC011 so that newly heavy stems block later syllabic-j vocalization. That interaction is part of the modeled cascade and should stay explicit in backend documentation.
+
+#### Order evidence
+
+Validated expanded-PWGmc first-break TSV output now exists for SC010, and the chronology card is complete. The earlier search moved safely across SC009, SC008, SC007, SC006, SC005, and SC004 to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break, so the earlier side is boundary-only.
+
+The later search finds an immediate real break at SC011 *PWGmcSyllabicJ*: if SC010 is delayed to order *11*, PGmc nátją yields nete instead of expected OE nett. That is a tight local reciprocal boundary with SC011 rather than a broad/far rightward limit.
+
+#### Interpretation
+
+SC010 can now stand as a cautious singleton note. The source support is good, the trace presence is substantial, and the validated order evidence recovers a tight local seam with SC011 rather than only a distant broad/far boundary.
+
+#### Remaining cautions
+
+The main caution is scope. The rule is well supported historically, but the earlier side remains boundary-only at the left edge of the tested expanded-PWGmc chain. Any later prose should keep the relation to SC011 visible without turning the pair into a mandatory grouped chapter or enlarging SC010 into a general consonant-doubling chapter.
+
+## Syllabic j after final-vowel loss note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC011 *PWGmcSyllabicJ* isolates the development by which postconsonantal *j* becomes syllabic *i* after the loss of unstressed final *a* and *ą*. In the current inventory the trace occurrence count is *0*, which immediately marks this rule as backend-useful but observationally weak inside the present compact trace.
+
+That does not make the rule unreal. It does mean the report should stay modest and should not pretend that the current lexical dataset exhibits a broad live witness set for the change.
+
+#### Source tradition
+
+Ringe and Taylor state directly that upon the loss of unstressed *a* and *ą*, preceding postconsonantal *j* and *w* became syllabic *i* and *u* respectively [@RingeTaylor2014, p. 46]. Their examples include PGmc harjaz > PWGmc hari, PGmc andijaz > PWGmc andi, and PGmc rikija > PWGmc riki [@RingeTaylor2014, p. 46].
+
+That is good direct support for the historical phenomenon. The weakness lies not in the source tradition but in the trace layer: the current compact trace does not surface direct SC011 hits, so the report must keep the distinction between source-backed history and present trace visibility clear.
+
+#### CAPR implementation
+
+CAPR models the syllabic-j development as:
+
+```foma
+define PWGmcSyllabicJ [
+    {*j} {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.,
+    {*j} {*ą} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.
+];
+```
+
+This is a deliberately tight formalization of the environment described by Ringe and Taylor. It keeps the focus on postconsonantal *j* after final-vowel loss, rather than widening the rule into a generic fronting or vocalization note.
+
+#### Place in the cascade
+
+In the inventory ordering, SC011 follows SC010 *PWGmcJGemination* and precedes SC012 *EAFLThVoicing*. In the production cascade it remains inside bundled *EarlyEnglishLineChanges*, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+
+Its most important local relation is to SC010. In CAPR, j-gemination must precede syllabic-j vocalization, because gemination creates heavy stems that no longer match the light-syllable environment for SC011. That is a modeled-cascade claim rather than a validated chronology card result at present.
+
+#### Order evidence
+
+Validated expanded-PWGmc first-break TSV output now exists for SC011, and the chronology card is complete. The earlier search finds an immediate real break at SC010 *PWGmcJGemination*: if SC011 is moved earlier to order *10*, PGmc nátją yields nete instead of expected OE nett.
+
+The later search then reaches order *86* with no real break before the current SC087 boundary, so the later side is boundary-only rather than a positive historical limit.
+
+#### Interpretation
+
+SC011 can now stand as a cautious singleton note. The handbook support is good and the validated order evidence recovers a real local seam with SC010, even though the current compact trace still gives the rule a zero direct occurrence count of its own.
+
+#### Remaining cautions
+
+The main caution is the mismatch between the validated boundary and the present trace layer. The historical phenomenon is real and the SC010/SC011 seam is now explicit, but the compact trace still yields no direct SC011 hits. Any later prose should keep that limitation visible and should not inflate the rule into a broader high-vowel chapter.
+
+## Lþ-voicing note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC012 *EAFLThVoicing* isolates the development of word-internal lþ to *ld*, reflected in trace examples such as field, fold, gold, and wold. The historical phenomenon is clear enough to document, but the stage label is already more delicate than the current inventory makes it sound.
+
+The source support recovered here points most clearly to a **northern West Germanic** development rather than to an unquestioned pan-PWGmc rule. That caution should remain visible from the beginning.
+
+#### Source tradition
+
+Ringe and Taylor state that word-internal lþ became *ld* by regular sound change in northern WGmc and give examples such as fealdan, beald, wuldor, and gylden [@RingeTaylor2014, pp. 170--171]. Campbell likewise states that medial lþ became *ld* in West Germanic and illustrates the outcome with forms such as fealdan, wuldor, beald, gold, and feld [@Campbell1959, §414].
+
+That is enough to support the historical development itself. It is less enough to license a fully settled PWGmc label, because the strongest Ringe and Taylor wording is explicitly narrower than the inventory's present stage label.
+
+#### CAPR implementation
+
+CAPR models the change as:
+
+```foma
+define EAFLThVoicing [
+    {*θ} -> {*d} || {*l} _
+];
+```
+
+This is a compact formalization of the lþ > *ld* development. As the FST comments already note, some lexical families may also intersect with Verner's-law alternation, but the implementation keeps the historical center of gravity on the consonant cluster itself.
+
+#### Place in the cascade
+
+In the inventory ordering, SC012 follows SC011 *PWGmcSyllabicJ* and precedes SC013 *PWGmcDentalHardening*. In the live cascade it remains inside bundled *EarlyEnglishLineChanges*, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+
+That means the chronology path is procedurally available even though the source-layer stage label still needs caution.
+
+#### Order evidence
+
+Validated expanded-PWGmc first-break TSV output now exists for SC012, and the chronology card is complete. The earlier search moved safely across SC011, SC010, SC009, SC008, SC007, SC006, SC005, and SC004 to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break.
+
+The later search likewise reached order *86* with no real break before the current SC087 boundary. Both sides are therefore boundary-only / chronology-negative in current testing.
+
+#### Interpretation
+
+SC012 can now stand as a cautious singleton note. The underlying sound change is credible and source-supported, and the sequence should account for it explicitly even though the validated chronology card supplies no positive local boundary on either side.
+
+#### Remaining cautions
+
+Two cautions matter most. First, the historical stage may be narrower than the inventory's plain PWGmc framing, since Ringe and Taylor describe the change as northern WGmc. Second, the validated chronology card is negative on both sides and therefore supplies no positive local ordering claim. The chapter should keep both cautions visible and should not present the rule as a tightly anchored local seam.
+
+## Dental hardening note
+
+### Sound-change report
+
+#### Historical formulation
+
+SC013 *PWGmcDentalHardening* isolates the hardening of voiced dental fricative ð to stop *d*. In the current trace layer it appears through forms such as lade, needle, find, and cud, but the historical point is broader than any one lexical family: this is a systemic statement about the status of PWGmc *d*.
+
+That gives the rule a stronger structural footing than some neighboring early PWGmc items, even though the present lexical witness set is still modest.
+
+#### Source tradition
+
+Ringe and Taylor state directly that in PWGmc the non-coronal voiced obstruents continued to show allophony, but *d* became a stop in all positions [@RingeTaylor2014, p. 43]. That is unusually strong and explicit support for the historical phenomenon itself.
+
+What the source layer does not yet provide in this pass is a fully expanded lexical dossier for every current trace witness. The systemic historical claim is well supported; the individual witness mapping is still lighter than it could be.
+
+#### CAPR implementation
+
+CAPR models the change as:
+
+```foma
+define PWGmcDentalHardening [
+    {*ð} -> {*d}
+];
+```
+
+This is a direct formalization of the historical statement recovered from Ringe and Taylor. It is one of the cleaner cases in the early PWGmc bundle because the source tradition and the modeled rule align closely.
+
+#### Place in the cascade
+
+In the inventory ordering, SC013 follows SC012 *EAFLThVoicing* and stands as the last internal PWGmc component before the already established SC014 onward sequence. In the production cascade it remains inside bundled *EarlyEnglishLineChanges*, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+
+That makes SC013 a natural right-edge singleton in the present backend-preparation sequence.
+
+#### Order evidence
+
+Validated expanded-PWGmc first-break TSV output now exists for SC013, and the chronology card is complete. The earlier search moved safely across SC012, SC011, SC010, SC009, SC008, SC007, SC006, SC005, and SC004 to order *4* and then reached the left edge of the tested expanded-PWGmc chain with no real break.
+
+The later search likewise reached order *86* with no real break before the current SC087 boundary. Both sides are therefore boundary-only / chronology-negative in current testing.
+
+#### Interpretation
+
+SC013 can still stand as a short finished singleton note. The source support for the basic change is direct, the implementation is straightforward, and the negative chronology card is acceptable so long as the note stays precise and does not claim a positive local ordering that current testing does not show.
+
+#### Remaining cautions
+
+The chief caution is methodological. The systemic historical statement is strong, but both sides of the validated chronology card are boundary-only. Any later prose should keep the rule precise and should not turn the tested-chain left edge or the SC087 search boundary into historical anchors.
 
 ## Opening vowel prelude
 
@@ -110,9 +727,9 @@ purely model-internal adjustment.
 CAPR turns that broad unstressed-vowel background into two explicit opening
 rules at the left edge of the ordinary cascade.
 
-SC014 *NWGmcUnstressedAiMonophthongization* removes the unstressed diphthongal
+SC014 *PNWGmcUnstressedAiMonophthongization* removes the unstressed diphthongal
 quality of *ai*, formalizing a comparative development that the grammars
-describe more diffusely. SC015 *NWGmcILowering* then lowers or levels early
+describe more diffusely. SC015 *PNWGmcILowering* then lowers or levels early
 unstressed front-vowel quality farther. That sequence is more explicit than the
 handbook prose, but it is still historically defensible so long as the report
 states clearly that the two rules do not form a strong local reciprocal
@@ -124,18 +741,18 @@ This report sits at the very opening of the volume and hands off
 directly to the pilot `SC016-SC020` **Early vocalic/final corridor**.
 
 ```foma
-.o. NWGmcUnstressedAiMonophthongization
-.o. NWGmcILowering
+.o. PNWGmcUnstressedAiMonophthongization
+.o. PNWGmcILowering
 .o. OEWsPalatalGlide
-.o. NWGmcULowering
-.o. NWGmcStressedMonosyllableORaising
-.o. NWGmcFinalLongORaising
-.o. PGmcFinalZDeletion
+.o. PNWGmcULowering
+.o. PNWGmcStressedMonosyllableORaising
+.o. PNWGmcFinalLongORaising
+.o. EAFFinalZDeletion
 ```
 
 That immediate handoff is the main structural reason to keep the row here.
 The report gives the volume an explicit opening without absorbing the `SC016-SC020` corridor to the right. Its outward links should remain restrained. Bundled
-*PWGmcChanges* bounds the earlier search space for both rules, but that is a
+*EarlyEnglishLineChanges* bounds the earlier search space for both rules, but that is a
 runner limitation rather than a positive left boundary. SC015 points forward
 to SC036 through world, but that relation should remain a cross-reference
 only, not a larger chapter claim.
@@ -145,13 +762,13 @@ only, not a larger chapter claim.
 The order evidence justifies the grouping only if the asymmetry remains explicit.
 
 SC014 is source-backed but chronology-negative in current testing. The earlier
-search runs safely down to bundled *PWGmcChanges* with no real break, and the
+search runs safely down to bundled *EarlyEnglishLineChanges* with no real break, and the
 later search finds no real break before the current search boundary at SC087.
 Those results should not be rewritten into positive chronology claims. The card
 supports SC014 as a brief opening note, not as a strongly bounded local law.
 
 SC015 is the stronger member. Its earlier search is likewise runner-bounded at
-bundled *PWGmcChanges*, so that side is not a positive earlier boundary
+bundled *EarlyEnglishLineChanges*, so that side is not a positive earlier boundary
 either. The later side is real, but broad/far: SC015 must precede SC036
 OE Inter Stress Raising. If SC015 is delayed later than SC036, the world
 derivation yields wuruld rather than expected weorold. That is a genuine
@@ -180,7 +797,7 @@ SC015-led prelude rather than as a symmetrical two-rule chapter.
 #### Remaining cautions
 
 The cautions here are straightforward but important. Do not treat bundled
-*PWGmcChanges* as a historical left boundary for either rule. Do not treat
+*EarlyEnglishLineChanges* as a historical left boundary for either rule. Do not treat
 SC014's no-break-before-boundary result as proof that it must precede the whole
 rest of the half. Do not let the forward `SC015 < SC036` relation pull this
 opening report into a non-contiguous chapter with the later
@@ -284,13 +901,13 @@ formal model is broader than the cleanest handbook formulation.
 The relevant cascade slice is:
 
 ```foma
-.o. NWGmcUnstressedAiMonophthongization
-.o. NWGmcILowering
+.o. PNWGmcUnstressedAiMonophthongization
+.o. PNWGmcILowering
 .o. OEWsPalatalGlide
-.o. NWGmcULowering
-.o. NWGmcStressedMonosyllableORaising
-.o. NWGmcFinalLongORaising
-.o. PGmcFinalZDeletion
+.o. PNWGmcULowering
+.o. PNWGmcStressedMonosyllableORaising
+.o. PNWGmcFinalLongORaising
+.o. EAFFinalZDeletion
 ```
 
 This is the local neighborhood that makes the corridor visible. SC016, SC017,
@@ -365,7 +982,7 @@ should not expand this entry into a graph-driven chapter.
 
 #### Historical formulation
 
-SC018 *NWGmcStressedMonosyllableORaising* appears here as a **short finished
+SC018 *PNWGmcStressedMonosyllableORaising* appears here as a **short finished
 singleton note**. It is historically legible enough to remain explicit in the
 book, but the current chronology card is boundary-limited on both sides. The
 right reading is therefore modest: this is a short standalone note in strict
@@ -388,7 +1005,7 @@ it.
 #### CAPR implementation
 
 CAPR isolates this background as one explicit step: SC018
-*NWGmcStressedMonosyllableORaising*. That formalization is sharper than most
+*PNWGmcStressedMonosyllableORaising*. That formalization is sharper than most
 handbook summaries, but it is useful because it lets the book keep the rule
 explicit without pretending that it anchors a larger report of its own.
 
@@ -404,7 +1021,7 @@ into the later singleton sequence.
 
 Current testing does not identify a positive historical first-break
 boundary for SC018 in either direction. On the earlier side, the search reaches
-bundled *PWGmcChanges*; that is a methodological runner limit, not a detected
+bundled *EarlyEnglishLineChanges*; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is likewise a no-break-before-boundary result
 bounded by the present search space, not a claim that SC018 must precede SC087.
@@ -421,7 +1038,7 @@ current chronology remains boundary-limited rather than positively ordered.
 
 #### Remaining cautions
 
-The caution is methodological. Bundled *PWGmcChanges* and the current SC087
+The caution is methodological. Bundled *EarlyEnglishLineChanges* and the current SC087
 search boundary are limits of the searchable corridor, not historical anchors
 for SC018. This note should therefore stay brief and should not be merged into
 either the `SC016-SC020` corridor on the left or the SC021 singleton on the right.
@@ -432,7 +1049,7 @@ either the `SC016-SC020` corridor on the left or the SC021 singleton on the righ
 
 #### Historical formulation
 
-SC021 *NWGmcUnstressedORaising* appears here as a **short singleton
+SC021 *PNWGmcUnstressedORaising* appears here as a **short singleton
 unstressed-vowel note**. It is not a claim that the handbooks isolate one large
 independent chapter under exactly this CAPR label, and it is not a reason to
 build a non-contiguous chapter with the later `SC039-SC040`
@@ -457,7 +1074,7 @@ into a corridor report or a hidden left member of the later `SC039-SC040` unit.
 #### CAPR implementation
 
 CAPR sharpens that broad unstressed-vowel background into one explicit step:
-SC021 *NWGmcUnstressedORaising* isolates the unstressed-vowel adjustment that
+SC021 *PNWGmcUnstressedORaising* isolates the unstressed-vowel adjustment that
 lets the heaven derivation reach heofon rather than heofun. This is more
 specific than the handbook phrasing, but that specificity is exactly why the
 note is useful. It lets the book mark the first singleton in the split
@@ -481,11 +1098,11 @@ flattening the whole region into one non-local chapter.
 #### Order evidence
 
 The chronology card gives SC021 a real but one-sided window: its earlier side
-is runner-bounded at bundled *PWGmcChanges*, while its later side yields the
+is runner-bounded at bundled *EarlyEnglishLineChanges*, while its later side yields the
 broad/far boundary `SC021 < SC040`.
 
 On the earlier side, the current runner can move SC021 back only to the bundled
-*PWGmcChanges* boundary. That is a methodological runner limitation, not a
+*EarlyEnglishLineChanges* boundary. That is a methodological runner limitation, not a
 positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC021 must precede SC040. If NWGmc unstressed *o*-raising is
@@ -506,7 +1123,7 @@ then the remaining early Northwest Germanic singleton notes before the `SC026-SC
 
 The cautions are mostly structural. SC021 should not be merged with the
 `SC039-SC040` report just because its one positive edge points there.
-Its earlier boundary against bundled *PWGmcChanges* must remain a runner
+Its earlier boundary against bundled *EarlyEnglishLineChanges* must remain a runner
 limitation rather than a historical claim. And the note should stay modest: it
 is a short architectural singleton, not a new corridor report and not a reason
 to treat SC023 or SC024 the same way.
@@ -517,7 +1134,7 @@ to treat SC023 or SC024 the same way.
 
 #### Historical formulation
 
-SC022 *NWGmcMnDissimilation* appears here as a **short finished singleton
+SC022 *PNWGmcMnDissimilation* appears here as a **short finished singleton
 note**. The source background is thinner and more descriptive than for the
 stronger nearby singletons, but the rule is still historically legible enough to
 remain explicit in the book. The right final form is therefore a short note, not
@@ -537,7 +1154,7 @@ current record turns it into a strong chronology hinge.
 #### CAPR implementation
 
 CAPR isolates this material as one explicit step: SC022
-*NWGmcMnDissimilation*. That is analytically useful because it keeps the rule
+*PNWGmcMnDissimilation*. That is analytically useful because it keeps the rule
 visible in strict order even though the handbooks usually discuss the underlying
 pattern more descriptively than as a separate major chapter.
 
@@ -553,7 +1170,7 @@ holding chapter.
 
 Current testing does not identify a positive historical first-break
 boundary for SC022 in either direction. On the earlier side, the search reaches
-bundled *PWGmcChanges*; that is a methodological runner limit, not a detected
+bundled *EarlyEnglishLineChanges*; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC022 must precede SC087.
@@ -572,7 +1189,7 @@ into a larger report.
 
 #### Remaining cautions
 
-The methodological limits matter here. Bundled *PWGmcChanges* and the current
+The methodological limits matter here. Bundled *EarlyEnglishLineChanges* and the current
 SC087 search boundary are search limits, not historical boundaries for SC022.
 This note should therefore stay short and should not be merged into SC021,
 SC023, or any broader early Northwest Germanic chapter.
@@ -583,7 +1200,7 @@ SC023, or any broader early Northwest Germanic chapter.
 
 #### Historical formulation
 
-SC023 *NWGmcNStemNLoss* appears here as a **short singleton n-stem-loss
+SC023 *PNWGmcNStemNLoss* appears here as a **short singleton n-stem-loss
 note**. It is not a claim that the handbooks isolate one broad morphology
 chapter under exactly this CAPR label, and it is not a reason to build a
 non-contiguous chapter with the later `SC046-SC048` restoration and
@@ -607,7 +1224,7 @@ into a full n-stem morphology chapter or a hidden left member of the later
 #### CAPR implementation
 
 CAPR sharpens that broad background into one explicit step: SC023
-*NWGmcNStemNLoss* removes the relevant n-stem *n* in the early Northwest
+*PNWGmcNStemNLoss* removes the relevant n-stem *n* in the early Northwest
 Germanic zone so that the *do* derivation reaches expected OE dōn rather than
 collapsing later in the nasal-tail region. This is more specific than the
 handbook phrasing, but that specificity is exactly why the note is useful. It
@@ -632,11 +1249,11 @@ SC018, SC022, and SC025 as boundary/context notes.
 #### Order evidence
 
 The chronology card gives SC023 a real but one-sided window: its earlier side
-is runner-bounded at bundled *PWGmcChanges*, while its later side yields the
+is runner-bounded at bundled *EarlyEnglishLineChanges*, while its later side yields the
 broad/far boundary `SC023 < SC047`.
 
 On the earlier side, the current runner can move SC023 back only to the bundled
-*PWGmcChanges* boundary. That is a methodological runner limitation, not a
+*EarlyEnglishLineChanges* boundary. That is a methodological runner limitation, not a
 positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC023 must precede SC047. If NWGmc n-stem *n*-loss is
@@ -657,7 +1274,7 @@ remaining early Northwest Germanic singleton notes before the `SC026-SC027` corr
 
 The cautions are mostly structural. SC023 should not be merged with the
 `SC046-SC048` report just because its one positive edge points there.
-Its earlier boundary against bundled *PWGmcChanges* must remain a runner
+Its earlier boundary against bundled *EarlyEnglishLineChanges* must remain a runner
 limitation rather than a historical claim. And the failed late derivation
 should be described as no output or derivational collapse, not as a competing
 Old English surface form. The note should stay modest: it is a short
@@ -670,7 +1287,7 @@ SC024 the same way.
 
 #### Historical formulation
 
-SC024 *NWGmcLongELowering* appears here as a **short singleton long-vowel
+SC024 *PNWGmcLongELowering* appears here as a **short singleton long-vowel
 note**. It is not a claim that the handbooks isolate one broad long-vowel
 chapter under exactly this CAPR label, and it is not a reason to build a
 non-contiguous chapter with the later `SC055-SC056` umlaut core. The
@@ -695,7 +1312,7 @@ into a broad long-vowel chapter or a hidden left member of the later
 #### CAPR implementation
 
 CAPR sharpens that broad background into one explicit step: SC024
-*NWGmcLongELowering* lowers the relevant long ē in the early Northwest
+*PNWGmcLongELowering* lowers the relevant long ē in the early Northwest
 Germanic zone so that the sheep and year derivations reach expected OE
 sċēap and ġēar rather than later high-diphthong outcomes. This is more
 specific than the handbook phrasing, but that specificity is exactly why the
@@ -720,11 +1337,11 @@ SC025 as boundary/context notes.
 #### Order evidence
 
 The chronology card gives SC024 a real but one-sided window: its earlier side
-is runner-bounded at bundled *PWGmcChanges*, while its later side yields the
+is runner-bounded at bundled *EarlyEnglishLineChanges*, while its later side yields the
 broad/far boundary `SC024 < SC056`.
 
 On the earlier side, the current runner can move SC024 back only to the bundled
-*PWGmcChanges* boundary. That is a methodological runner limitation, not a
+*EarlyEnglishLineChanges* boundary. That is a methodological runner limitation, not a
 positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC024 must precede SC056. If NWGmc long-ē lowering is
@@ -745,7 +1362,7 @@ SC025, then the `SC026-SC027` corridor.
 
 The cautions are mostly structural. SC024 should not be merged with the
 `SC055-SC056` report just because its one positive edge points there.
-Its earlier boundary against bundled *PWGmcChanges* must remain a runner
+Its earlier boundary against bundled *EarlyEnglishLineChanges* must remain a runner
 limitation rather than a historical claim. And the note should stay modest: it
 is a short architectural singleton, not a new corridor report and not a reason
 to reopen SC018, SC022, or SC025 the same way.
@@ -756,7 +1373,7 @@ to reopen SC018, SC022, or SC025 the same way.
 
 #### Historical formulation
 
-SC025 *NWGmcLongENasalRounding* appears here as a **short finished
+SC025 *PNWGmcLongENasalRounding* appears here as a **short finished
 singleton note**. The long-ē-before-nasal background is historically legible
 enough to remain explicit, but the chronology card is boundary-limited on both
 sides. The right final form is therefore a short standalone note, not a hidden
@@ -777,7 +1394,7 @@ recovered a positive local chronology.
 #### CAPR implementation
 
 CAPR isolates this background as one explicit step: SC025
-*NWGmcLongENasalRounding*. That sharper implementation is useful because it lets
+*PNWGmcLongENasalRounding*. That sharper implementation is useful because it lets
 the book keep the long-ē-before-nasal adjustment visible in strict order
 without overstating its chronology.
 
@@ -793,7 +1410,7 @@ spirant corridor.
 
 Current testing does not identify a positive historical first-break
 boundary for SC025 in either direction. On the earlier side, the search reaches
-bundled *PWGmcChanges*; that is a methodological runner limit, not a detected
+bundled *EarlyEnglishLineChanges*; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC025 must precede SC087.
@@ -812,7 +1429,7 @@ strictly methodological, and avoid inflating the rule into a corridor chapter.
 #### Remaining cautions
 
 The main caution is not to turn methodological search limits into history.
-Bundled *PWGmcChanges* and the current SC087 boundary are not positive
+Bundled *EarlyEnglishLineChanges* and the current SC087 boundary are not positive
 chronology anchors for SC025. This note should therefore stay brief and should
 not be merged into the stronger neighboring SC024 or `SC026-SC027` reports.
 
@@ -898,7 +1515,7 @@ and formal implementation.
 #### Remaining cautions
 
 The cautions are as important as the positive result. The earlier side of
-`SC026` remains runner-limited at bundled *PWGmcChanges*, so the current
+`SC026` remains runner-limited at bundled *EarlyEnglishLineChanges*, so the current
 evidence does not identify an earlier historical boundary for the pair. The
 later side of `SC027` is a no-break-before-boundary result through order *86*,
 so the current evidence does not justify a claim that the corridor must
@@ -917,7 +1534,7 @@ Old English output.
 
 #### Historical formulation
 
-SC028 *NWGmcPreconsonantalXLoss* appears here as a **short finished
+SC028 *PNWGmcPreconsonantalXLoss* appears here as a **short finished
 singleton note**. It is historically legible as preconsonantal *x*-loss and
 deserves explicit final prose, but its chronology card remains boundary-limited
 on both sides. The right final form is therefore a short standalone note, not a
@@ -937,7 +1554,7 @@ stay short and explicit rather than becoming a larger entry chapter.
 #### CAPR implementation
 
 CAPR isolates this background as one explicit step: SC028
-*NWGmcPreconsonantalXLoss*. That sharper implementation is useful because it
+*PNWGmcPreconsonantalXLoss*. That sharper implementation is useful because it
 lets the book keep the left edge of the glide/fronting entry zone visible
 without pretending that the rule carries the same local chronology weight as the
 earlier `SC029-SC030` core.
@@ -954,7 +1571,7 @@ or forward into the glide/fronting core.
 
 Current testing does not identify a positive historical first-break
 boundary for SC028 in either direction. On the earlier side, the search reaches
-bundled *PWGmcChanges*; that is a methodological runner limit, not a detected
+bundled *EarlyEnglishLineChanges*; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC028 must precede SC087.
@@ -971,7 +1588,7 @@ its right.
 
 #### Remaining cautions
 
-The methodological boundaries matter here. Bundled *PWGmcChanges* and the
+The methodological boundaries matter here. Bundled *EarlyEnglishLineChanges* and the
 current SC087 search boundary are search limits, not historical anchors for
 SC028. This note should therefore stay brief and should not be merged into the
 `SC026-SC027` corridor or the `SC029-SC030` core.
@@ -1016,7 +1633,7 @@ CAPR makes the local sequence explicit by keeping two adjacent rules.
 SC029 *OEAwjGlideFormation* handles the intermediate glide structure that turns
 the inherited awj / auj material into the form that later fronting reads.
 On its own it is still somewhat one-sided because the earlier search remains
-runner-bounded at bundled *PWGmcChanges*, but it is the indispensable left-hand
+runner-bounded at bundled *EarlyEnglishLineChanges*, but it is the indispensable left-hand
 feeder of the pair.
 
 SC030 *OEAuFronting* then fronts the relevant *au* material and delivers the
@@ -1046,7 +1663,7 @@ Glide Formation is delayed past SC030, PGmc xáwwją yields hauġ instead of
 expected OE hīeġ, and stráwjaną yields strauian instead of expected
 strīeġan. That makes `SC029 < SC030` a real local chronology claim. The
 earlier side is not comparable: the current runner can move SC029 safely back to
-order *13*, but the search then stops at bundled *PWGmcChanges*, so the present
+order *13*, but the search then stops at bundled *EarlyEnglishLineChanges*, so the present
 result does not identify any positive earlier boundary for SC029.
 
 SC030 reciprocates that local evidence on its left and adds one broader
@@ -1082,7 +1699,7 @@ the larger right-hand diphthong chain in their own chapters.
 
 The cautions are structural as much as evidential. SC029's runner-bounded
 earlier side must not be turned into a hidden positive boundary against bundled
-*PWGmcChanges*. SC028 should remain visible to the left as a separate context
+*EarlyEnglishLineChanges*. SC028 should remain visible to the left as a separate context
 note rather than being treated as a coequal member of this report.
 SC030's later relation to SC032 is real, but its failure set must be described
 as no-output / derivational collapse rather than as a cluster of competing Old
@@ -1178,7 +1795,7 @@ head showing the wrong unstressed vowel if the rule moves too late.
 local. It must precede `SC044`, with chew, four, and knee losing their
 long-diphthong outputs if the rule is delayed too far. Its earlier-side default
 card does not yield an ordinary historical boundary before the bundled
-*PWGmcChanges* runner limit, and the expanded-PWGmc note across `SC008` is
+*EarlyEnglishLineChanges* runner limit, and the expanded-PWGmc note across `SC008` is
 supplementary only rather than a replacement for the default chronology claim.
 
 `SC034` likewise has a real forward relation into the brightening
@@ -1310,7 +1927,7 @@ shows that SC035 must precede SC043: if OE Prefix A Reduction is delayed beyond
 Anglo-Frisian Brightening, PGmc galáubijaną yields ġealīefan instead of
 expected OE ġelīefan. That is a real chronology claim. The earlier side is
 not. The runner can move SC035 safely back to order 13, but it then stops at
-bundled *PWGmcChanges*, so the current result does not identify any earlier
+bundled *EarlyEnglishLineChanges*, so the current result does not identify any earlier
 historical boundary and must not be rewritten as one.
 
 SC036 is the strongest member of the report. It must follow SC019: moving it
@@ -1324,7 +1941,7 @@ inside this immediate corridor.
 
 SC037 is weaker in ordinary chronology but still important. Its card currently
 finds no ordinary historical positive boundary in either direction. The earlier
-search stops at bundled *PWGmcChanges* with no real break. The later search does
+search stops at bundled *EarlyEnglishLineChanges* with no real break. The later search does
 find a real computational break across SC038 OE Strip Secondary Stress:
 moving SC037 later produces reġnefoga instead of expected reġnboga in
 rainbow. But SC038 is a technical marker, so that result must remain exactly
@@ -1453,7 +2070,7 @@ Combinative U Umlaut is delayed past SC040, PGmc wíduwōn yields wudowe
 instead of expected OE wuduwe. That makes `SC039 < SC040` a real local
 chronology claim. The earlier side is not comparable: the current runner can
 move SC039 safely back to order *13*, but the search then stops at bundled
-*PWGmcChanges*, so the present result does not identify any positive earlier
+*EarlyEnglishLineChanges*, so the present result does not identify any positive earlier
 historical boundary for SC039.
 
 SC040 reciprocates that local evidence on its left and adds one broader
@@ -1485,7 +2102,7 @@ without pretending it is part of the same immediate core.
 
 The cautions are structural as much as evidential. SC039's runner-bounded
 earlier side must not be turned into a hidden positive boundary against bundled
-*PWGmcChanges*. SC040's later relation to SC072 is real, but it should remain a
+*EarlyEnglishLineChanges*. SC040's later relation to SC072 is real, but it should remain a
 rightward cross-reference rather than a reason to expand this report into a
 non-local late-vowel chapter. And the separate SC041 note should stay separate:
 the split solves a real asymmetry in source weight and chronology, so the book
@@ -2059,7 +2676,7 @@ must remain a bounded no-break outcome, not a positive claim that SC049 must
 precede some specific later historical stage.
 
 SC050 shows the opposite profile. Its earlier side found no real break before
-the bundled *PWGmcChanges* runner boundary, so it does not support a
+the bundled *EarlyEnglishLineChanges* runner boundary, so it does not support a
 positive claim that Sievers Law Syncope must follow any specific earlier
 historical stage. Its later side is real: SC050 must precede SC052, because
 delaying it past OE Velar Palatalization breaks the stretch derivation and
@@ -2438,7 +3055,7 @@ glide-loss rule must already be in place to the left of that later chapter.
 
 The order evidence is sharply asymmetric. SC053 has **no positive first-break
 boundary in either tested direction**. On the earlier side, the runner reaches
-order *13* and then stops at bundled *PWGmcChanges* with no real break. On the
+order *13* and then stops at bundled *EarlyEnglishLineChanges* with no real break. On the
 later side, it reaches the current safe boundary at SC087 with no real break.
 Those are boundary-limited negative results, not hidden chronology claims. This
 report therefore does not claim that SC053 must follow any specific earlier
@@ -2686,7 +3303,7 @@ rather than a coequal partner to either neighboring chapter.
 
 Current testing does not identify a positive historical first-break
 boundary for SC058 in either direction. On the earlier side, the search reaches
-bundled *PWGmcChanges*; that is a methodological runner limit, not a detected
+bundled *EarlyEnglishLineChanges*; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC058 must precede SC087.
@@ -2704,7 +3321,7 @@ into a larger chapter.
 
 #### Remaining cautions
 
-The methodological boundaries matter here. Bundled *PWGmcChanges* and the
+The methodological boundaries matter here. Bundled *EarlyEnglishLineChanges* and the
 current SC087 boundary are search limits, not historical anchors for SC058.
 This note should therefore stay brief and should not be read as a coequal
 partner to the SC057 note or the SC059 back-mutation report.
@@ -3105,7 +3722,7 @@ fyrhten instead of expected fyrhte. That makes SC064 historically
 meaningful, but narrow.
 
 SC065 is different. Its card has **no positive first-break boundary in either
-direction**. The earlier side stops only at the bundled *PWGmcChanges* runner
+direction**. The earlier side stops only at the bundled *EarlyEnglishLineChanges* runner
 boundary, and the later side reaches the current SC087 runner boundary with no
 real break. Those runner-boundary results must not be treated as historical
 constraints. This report therefore does not claim that SC065 must follow a
@@ -3668,7 +4285,7 @@ note in that position rather than being folded into either neighboring report.
 
 Current testing does not identify a positive historical first-break
 boundary for SC076 in either direction. On the earlier side, the search moves
-safely down to order *13* before reaching bundled *PWGmcChanges*; that is a
+safely down to order *13* before reaching bundled *EarlyEnglishLineChanges*; that is a
 methodological runner limit, not a detected historical boundary. On the later
 side, the search runs safely through order *86* before reaching the current
 SC087 boundary with no real break; that is a runner-bounded no-break result,
@@ -3688,7 +4305,7 @@ chronology language strictly methodological.
 #### Remaining cautions
 
 This note should stay brief. It should not be folded into the `SC074-SC075` bridge, the SC078 right-edge report, or any larger
-late-tail chapter. Bundled *PWGmcChanges* and the current SC087 boundary remain
+late-tail chapter. Bundled *EarlyEnglishLineChanges* and the current SC087 boundary remain
 search limits, not historical boundaries for SC076.
 
 ## Weak-tail reduction right-edge note

@@ -28,7 +28,7 @@ This is a direct formalization of the historical statement recovered from Ringe 
 
 #### Place in the cascade
 
-In the inventory ordering, SC013 follows SC012 `PWGmcLThVoicing` and stands as the last internal PWGmc component before the already established SC014 onward sequence. In the production cascade it remains inside bundled `PWGmcChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+In the inventory ordering, SC013 follows SC012 `EAFLThVoicing` and stands as the last internal PWGmc component before the already established SC014 onward sequence. In the production cascade it remains inside bundled `EarlyEnglishLineChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
 
 That makes SC013 a natural right-edge singleton in the present backend-preparation sequence.
 

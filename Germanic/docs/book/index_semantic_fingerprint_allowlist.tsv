@@ -1,1 +1,2 @@
 action	language	form	form_role	source_scope	source_ref	note
+add	pgmc	*stámnaz	selected_input	trace_proto_input	stem — OE stefn	Stem proto-input surfaced after regenerating the stale full-trace snapshot: stem moved exact_match -> fronting_missing_no_trigger, matching the frozen baseline (8 documented mismatches incl. stem). Orthogonal to the rename migration; gate B confirms outputs_sha256 unchanged.

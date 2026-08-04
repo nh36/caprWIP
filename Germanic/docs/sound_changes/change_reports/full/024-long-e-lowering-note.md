@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC024 `NWGmcLongELowering` appears here as a **short singleton long-vowel
+SC024 `PNWGmcLongELowering` appears here as a **short singleton long-vowel
 note**. It is not a claim that the handbooks isolate one broad long-vowel
 chapter under exactly this CAPR label, and it is not a reason to build a
 non-contiguous chapter with the later `SC055-SC056` umlaut core. The
@@ -29,7 +29,7 @@ into a broad long-vowel chapter or a hidden left member of the later
 #### CAPR implementation
 
 CAPR sharpens that broad background into one explicit step: SC024
-`NWGmcLongELowering` lowers the relevant long `ē` in the early Northwest
+`PNWGmcLongELowering` lowers the relevant long `ē` in the early Northwest
 Germanic zone so that the `sheep` and `year` derivations reach expected OE
 `sċēap` and `ġēar` rather than later high-diphthong outcomes. This is more
 specific than the handbook phrasing, but that specificity is exactly why the
@@ -54,11 +54,11 @@ SC025 as boundary/context notes.
 #### Order evidence
 
 The chronology card gives SC024 a real but one-sided window: its earlier side
-is runner-bounded at bundled `PWGmcChanges`, while its later side yields the
+is runner-bounded at bundled `EarlyEnglishLineChanges`, while its later side yields the
 broad/far boundary `SC024 < SC056`.
 
 On the earlier side, the current runner can move SC024 back only to the bundled
-`PWGmcChanges` boundary. That is a methodological runner limitation, not a
+`EarlyEnglishLineChanges` boundary. That is a methodological runner limitation, not a
 positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC024 must precede SC056. If NWGmc long-`ē` lowering is
@@ -79,7 +79,7 @@ SC025, then the `SC026-SC027` corridor.
 
 The cautions are mostly structural. SC024 should not be merged with the
 `SC055-SC056` report just because its one positive edge points there.
-Its earlier boundary against bundled `PWGmcChanges` must remain a runner
+Its earlier boundary against bundled `EarlyEnglishLineChanges` must remain a runner
 limitation rather than a historical claim. And the note should stay modest: it
 is a short architectural singleton, not a new corridor report and not a reason
 to reopen SC018, SC022, or SC025 the same way.

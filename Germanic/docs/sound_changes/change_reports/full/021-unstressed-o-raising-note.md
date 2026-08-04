@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC021 `NWGmcUnstressedORaising` appears here as a **short singleton
+SC021 `PNWGmcUnstressedORaising` appears here as a **short singleton
 unstressed-vowel note**. It is not a claim that the handbooks isolate one large
 independent chapter under exactly this CAPR label, and it is not a reason to
 build a non-contiguous chapter with the later `SC039-SC040`
@@ -29,7 +29,7 @@ into a corridor report or a hidden left member of the later `SC039-SC040` unit.
 #### CAPR implementation
 
 CAPR sharpens that broad unstressed-vowel background into one explicit step:
-SC021 `NWGmcUnstressedORaising` isolates the unstressed-vowel adjustment that
+SC021 `PNWGmcUnstressedORaising` isolates the unstressed-vowel adjustment that
 lets the `heaven` derivation reach `heofon` rather than `heofun`. This is more
 specific than the handbook phrasing, but that specificity is exactly why the
 note is useful. It lets the book mark the first singleton in the split
@@ -53,11 +53,11 @@ flattening the whole region into one non-local chapter.
 #### Order evidence
 
 The chronology card gives SC021 a real but one-sided window: its earlier side
-is runner-bounded at bundled `PWGmcChanges`, while its later side yields the
+is runner-bounded at bundled `EarlyEnglishLineChanges`, while its later side yields the
 broad/far boundary `SC021 < SC040`.
 
 On the earlier side, the current runner can move SC021 back only to the bundled
-`PWGmcChanges` boundary. That is a methodological runner limitation, not a
+`EarlyEnglishLineChanges` boundary. That is a methodological runner limitation, not a
 positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC021 must precede SC040. If NWGmc unstressed `o`-raising is
@@ -78,7 +78,7 @@ then the remaining early Northwest Germanic singleton notes before the `SC026-SC
 
 The cautions are mostly structural. SC021 should not be merged with the
 `SC039-SC040` report just because its one positive edge points there.
-Its earlier boundary against bundled `PWGmcChanges` must remain a runner
+Its earlier boundary against bundled `EarlyEnglishLineChanges` must remain a runner
 limitation rather than a historical claim. And the note should stay modest: it
 is a short architectural singleton, not a new corridor report and not a reason
 to treat SC023 or SC024 the same way.

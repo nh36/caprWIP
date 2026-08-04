@@ -41,7 +41,7 @@ note in that position rather than being folded into either neighboring report.
 
 Current testing does **not** identify a positive historical first-break
 boundary for SC076 in either direction. On the earlier side, the search moves
-safely down to order `13` before reaching bundled `PWGmcChanges`; that is a
+safely down to order `13` before reaching bundled `EarlyEnglishLineChanges`; that is a
 methodological runner limit, not a detected historical boundary. On the later
 side, the search runs safely through order `86` before reaching the current
 SC087 boundary with no real break; that is a runner-bounded no-break result,
@@ -61,5 +61,5 @@ chronology language strictly methodological.
 #### Remaining cautions
 
 This note should stay brief. It should not be folded into the `SC074-SC075` bridge, the SC078 right-edge report, or any larger
-late-tail chapter. Bundled `PWGmcChanges` and the current SC087 boundary remain
+late-tail chapter. Bundled `EarlyEnglishLineChanges` and the current SC087 boundary remain
 search limits, not historical boundaries for SC076.

@@ -40,7 +40,7 @@ This is broader and more explicit than any single handbook example, but it follo
 
 #### Place in the cascade
 
-In the inventory ordering, SC010 follows SC009 `PWGmcIjContraction` and precedes SC011 `PWGmcSyllabicJ`. In the live production cascade it remains part of bundled `PWGmcChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+In the inventory ordering, SC010 follows SC009 `PWGmcIjContraction` and precedes SC011 `PWGmcSyllabicJ`. In the live production cascade it remains part of bundled `EarlyEnglishLineChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
 
 The local implementation logic also makes SC010 important for the next rule. In CAPR, j-gemination must precede SC011 so that newly heavy stems block later syllabic-j vocalization. That interaction is part of the modeled cascade and should stay explicit in backend documentation.
 

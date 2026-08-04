@@ -81,7 +81,7 @@ must remain a bounded no-break outcome, not a positive claim that SC049 must
 precede some specific later historical stage.
 
 SC050 shows the opposite profile. Its earlier side found no real break before
-the bundled `PWGmcChanges` runner boundary, so it does **not** support a
+the bundled `EarlyEnglishLineChanges` runner boundary, so it does **not** support a
 positive claim that Sievers Law Syncope must follow any specific earlier
 historical stage. Its later side is real: SC050 must precede SC052, because
 delaying it past OE Velar Palatalization breaks the `stretch` derivation and

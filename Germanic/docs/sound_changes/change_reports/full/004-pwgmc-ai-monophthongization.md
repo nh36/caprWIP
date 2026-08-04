@@ -32,7 +32,7 @@ This implementation is sharper than the narrowest handbook wording recovered in 
 
 #### Place in the cascade
 
-In the inventory ordering, SC004 is the first member of the Proto-West-Germanic bundle and stands immediately before SC005 `NWGmcAToUBeforeM`. In the live pipeline it still sits inside bundled `PWGmcChanges`, but the first-break runner now has an `expanded-pwgmc` order profile that exposes SC004 explicitly for chronology testing without changing the production cascade.
+In the inventory ordering, SC004 is the first member of the Proto-West-Germanic bundle and stands immediately before SC005 `PNWGmcAToUBeforeM`. In the live pipeline it still sits inside bundled `EarlyEnglishLineChanges`, but the first-break runner now has an `expanded-pwgmc` order profile that exposes SC004 explicitly for chronology testing without changing the production cascade.
 
 That means the rule now occupies a clearer position in the cascade evidence. It remains a bundled production rule in the live cascade, but it is no longer blocked from first-break testing in principle.
 

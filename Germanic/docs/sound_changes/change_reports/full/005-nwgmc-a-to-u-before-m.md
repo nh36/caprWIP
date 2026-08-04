@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC005 `NWGmcAToUBeforeM` isolates the raising of unstressed noninitial `*a` to `*u` before final `*m` in a narrow set of inflectional environments. The inventory currently labels it Northwest Germanic and gives `shoulder` as the compact-trace witness, but the historical discussion recovered in this pass is broader and more morphologically oriented than that single lexical example suggests.
+SC005 `PNWGmcAToUBeforeM` isolates the raising of unstressed noninitial `*a` to `*u` before final `*m` in a narrow set of inflectional environments. The inventory currently labels it Northwest Germanic and gives `shoulder` as the compact-trace witness, but the historical discussion recovered in this pass is broader and more morphologically oriented than that single lexical example suggests.
 
 That mismatch is important. The change is historically plausible, but the source layer does not yet settle whether the best label is strictly Northwest Germanic, a broader North-and-West-Germanic shared development, or a still earlier PWGmc-stage adjustment inside inflectional endings. The existing `needs_human_review=yes` flag should therefore remain explicit.
 
@@ -19,7 +19,7 @@ Those sources support the underlying phenomenon, but they do not align perfectly
 CAPR models the change as a narrow pre-`m` raising rule:
 
 ```foma
-define NWGmcAToUBeforeM [
+define PNWGmcAToUBeforeM [
     {*a} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ {*m} ({*i})? ({*z})? .#.
 ];
 ```
@@ -28,7 +28,7 @@ This rule is intentionally tight. It targets unstressed ending material before f
 
 #### Place in the cascade
 
-In the inventory ordering, SC005 follows SC004 `PWGmcAiMonophthongization` and precedes SC006 `PWGmcEarlyIApocope`. In the live pipeline it remains part of bundled `PWGmcChanges`, and the inventory itself flags the stage label for review because the rule is Northwest-Germanic in name but still embedded inside the Proto-West-Germanic pipeline bundle.
+In the inventory ordering, SC005 follows SC004 `PWGmcAiMonophthongization` and precedes SC006 `PWGmcEarlyIApocope`. In the live pipeline it remains part of bundled `EarlyEnglishLineChanges`, and the inventory itself flags the stage label for review because the rule is Northwest-Germanic in name but still embedded inside the Proto-West-Germanic pipeline bundle.
 
 That bundle position no longer blocks chronology testing in principle. The current first-break runner can expose SC005 through the `expanded-pwgmc` order profile, but the historical naming issue remains unresolved even if the computation path is now available.
 

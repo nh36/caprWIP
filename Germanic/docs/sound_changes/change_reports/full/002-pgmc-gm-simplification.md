@@ -26,7 +26,7 @@ The rule is intentionally narrow. It captures the loss of `*g` before `*m` in th
 
 #### Place in the cascade
 
-In the current inventory ordering, SC002 is the first historical sound change after the excluded support/input stage `SC001 EnglishProtoInput`, and it stands immediately before SC003 `PGmcRhotacism`. In the implementation, however, it still sits inside the bundled Proto-Germanic consonant block rather than as an independently reorderable chain member.
+In the current inventory ordering, SC002 is the first historical sound change after the excluded support/input stage `SC001 EnglishProtoInput`, and it stands immediately before SC003 `EAFRhotacism`. In the implementation, however, it still sits inside the bundled Proto-Germanic consonant block rather than as an independently reorderable chain member.
 
 That distinction still matters for backend placement. The production cascade keeps SC002 inside the bundle, but the temporary early-rule harness now expands the sandbox order so the rule can be tested as a standalone chronology target without changing the live FST.
 

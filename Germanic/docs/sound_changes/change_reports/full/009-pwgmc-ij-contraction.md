@@ -29,7 +29,7 @@ The implementation carries a stronger general shape than the historical source b
 
 #### Place in the cascade
 
-In the inventory ordering, SC009 follows SC008 `PWGmcCoronalWAssimilation` and precedes SC010 `PWGmcJGemination`. In the production cascade it remains inside bundled `PWGmcChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+In the inventory ordering, SC009 follows SC008 `PWGmcCoronalWAssimilation` and precedes SC010 `PWGmcJGemination`. In the production cascade it remains inside bundled `EarlyEnglishLineChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
 
 That means chronology testing is procedurally ready even though the historical source base remains narrow.
 

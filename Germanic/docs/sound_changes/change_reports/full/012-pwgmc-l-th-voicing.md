@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC012 `PWGmcLThVoicing` isolates the development of word-internal `*lþ` to `*ld`, reflected in trace examples such as `field`, `fold`, `gold`, and `wold`. The historical phenomenon is clear enough to document, but the stage label is already more delicate than the current inventory makes it sound.
+SC012 `EAFLThVoicing` isolates the development of word-internal `*lþ` to `*ld`, reflected in trace examples such as `field`, `fold`, `gold`, and `wold`. The historical phenomenon is clear enough to document, but the stage label is already more delicate than the current inventory makes it sound.
 
 The source support recovered here points most clearly to a **northern West Germanic** development rather than to an unquestioned pan-PWGmc rule. That caution should remain visible from the beginning.
 
@@ -19,7 +19,7 @@ That is enough to support the historical development itself. It is less enough t
 CAPR models the change as:
 
 ```foma
-define PWGmcLThVoicing [
+define EAFLThVoicing [
     {*θ} -> {*d} || {*l} _
 ];
 ```
@@ -28,7 +28,7 @@ This is a compact formalization of the `lþ > ld` development. As the FST commen
 
 #### Place in the cascade
 
-In the inventory ordering, SC012 follows SC011 `PWGmcSyllabicJ` and precedes SC013 `PWGmcDentalHardening`. In the live cascade it remains inside bundled `PWGmcChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+In the inventory ordering, SC012 follows SC011 `PWGmcSyllabicJ` and precedes SC013 `PWGmcDentalHardening`. In the live cascade it remains inside bundled `EarlyEnglishLineChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
 
 That means the chronology path is procedurally available even though the source-layer stage label still needs caution.
 

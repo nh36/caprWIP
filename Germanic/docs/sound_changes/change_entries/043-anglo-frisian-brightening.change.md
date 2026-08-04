@@ -5,7 +5,7 @@ INCLUDE_IN_VOLUME: yes
 HISTORICAL_STAGE: Old English
 PIPELINE_STAGE: Old English
 CANONICAL_CHANGE_ID: SC043
-RULE_SOURCE: Germanic/fsts/germanic.txt (define AngloFrisianBrightening, line 1891)
+RULE_SOURCE: Germanic/fsts/germanic.txt (define EAFBrightening, line 1891)
 TRACE_OCCURRENCE_COUNT: 89
 STATUS: pilot_complete
 
@@ -13,7 +13,7 @@ STATUS: pilot_complete
 
 ## Rule
 
-FOMA_RULE: AngloFrisianBrightening
+FOMA_RULE: EAFBrightening
 RULE_SUMMARY: fronts low a outside nasal environments, with later breaking and restoration masking many outputs
 
 ## Literature dossier

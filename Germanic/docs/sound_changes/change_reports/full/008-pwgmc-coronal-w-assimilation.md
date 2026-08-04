@@ -29,7 +29,7 @@ This implementation is broader than any one lexical example, but it is still dir
 
 #### Place in the cascade
 
-In the inventory ordering, SC008 follows SC007 `PWGmcFinalOrLowering` and precedes SC009 `PWGmcIjContraction`. In the production cascade it remains part of bundled `PWGmcChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
+In the inventory ordering, SC008 follows SC007 `PWGmcFinalOrLowering` and precedes SC009 `PWGmcIjContraction`. In the production cascade it remains part of bundled `EarlyEnglishLineChanges`, but the expanded-PWGmc first-break mode already exposes it directly for chronology testing.
 
 That keeps the chronology path straightforward even though the live bundled cascade is unchanged.
 

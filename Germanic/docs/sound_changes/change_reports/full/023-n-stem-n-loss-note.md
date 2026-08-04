@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC023 `NWGmcNStemNLoss` appears here as a **short singleton n-stem-loss
+SC023 `PNWGmcNStemNLoss` appears here as a **short singleton n-stem-loss
 note**. It is not a claim that the handbooks isolate one broad morphology
 chapter under exactly this CAPR label, and it is not a reason to build a
 non-contiguous chapter with the later `SC046-SC048` restoration and
@@ -28,7 +28,7 @@ into a full n-stem morphology chapter or a hidden left member of the later
 #### CAPR implementation
 
 CAPR sharpens that broad background into one explicit step: SC023
-`NWGmcNStemNLoss` removes the relevant n-stem `n` in the early Northwest
+`PNWGmcNStemNLoss` removes the relevant n-stem `n` in the early Northwest
 Germanic zone so that the `do` derivation reaches expected OE `dōn` rather than
 collapsing later in the nasal-tail region. This is more specific than the
 handbook phrasing, but that specificity is exactly why the note is useful. It
@@ -53,11 +53,11 @@ SC018, SC022, and SC025 as boundary/context notes.
 #### Order evidence
 
 The chronology card gives SC023 a real but one-sided window: its earlier side
-is runner-bounded at bundled `PWGmcChanges`, while its later side yields the
+is runner-bounded at bundled `EarlyEnglishLineChanges`, while its later side yields the
 broad/far boundary `SC023 < SC047`.
 
 On the earlier side, the current runner can move SC023 back only to the bundled
-`PWGmcChanges` boundary. That is a methodological runner limitation, not a
+`EarlyEnglishLineChanges` boundary. That is a methodological runner limitation, not a
 positive earlier boundary, so the note must not rewrite it as one.
 
 On the later side, SC023 must precede SC047. If NWGmc n-stem `n`-loss is
@@ -78,7 +78,7 @@ remaining early Northwest Germanic singleton notes before the `SC026-SC027` corr
 
 The cautions are mostly structural. SC023 should not be merged with the
 `SC046-SC048` report just because its one positive edge points there.
-Its earlier boundary against bundled `PWGmcChanges` must remain a runner
+Its earlier boundary against bundled `EarlyEnglishLineChanges` must remain a runner
 limitation rather than a historical claim. And the failed late derivation
 should be described as no output or derivational collapse, not as a competing
 Old English surface form. The note should stay modest: it is a short

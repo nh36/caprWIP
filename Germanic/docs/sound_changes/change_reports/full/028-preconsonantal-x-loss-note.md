@@ -4,7 +4,7 @@
 
 #### Historical formulation
 
-SC028 `NWGmcPreconsonantalXLoss` appears here as a **short finished
+SC028 `PNWGmcPreconsonantalXLoss` appears here as a **short finished
 singleton note**. It is historically legible as preconsonantal `x`-loss and
 deserves explicit final prose, but its chronology card remains boundary-limited
 on both sides. The right final form is therefore a short standalone note, not a
@@ -24,7 +24,7 @@ stay short and explicit rather than becoming a larger entry chapter.
 #### CAPR implementation
 
 CAPR isolates this background as one explicit step: SC028
-`NWGmcPreconsonantalXLoss`. That sharper implementation is useful because it
+`PNWGmcPreconsonantalXLoss`. That sharper implementation is useful because it
 lets the book keep the left edge of the glide/fronting entry zone visible
 without pretending that the rule carries the same local chronology weight as the
 earlier `SC029-SC030` core.
@@ -41,7 +41,7 @@ or forward into the glide/fronting core.
 
 Current testing does **not** identify a positive historical first-break
 boundary for SC028 in either direction. On the earlier side, the search reaches
-bundled `PWGmcChanges`; that is a methodological runner limit, not a detected
+bundled `EarlyEnglishLineChanges`; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC028 must precede SC087.
@@ -58,7 +58,7 @@ its right.
 
 #### Remaining cautions
 
-The methodological boundaries matter here. Bundled `PWGmcChanges` and the
+The methodological boundaries matter here. Bundled `EarlyEnglishLineChanges` and the
 current SC087 search boundary are search limits, not historical anchors for
 SC028. This note should therefore stay brief and should not be merged into the
 `SC026-SC027` corridor or the `SC029-SC030` core.

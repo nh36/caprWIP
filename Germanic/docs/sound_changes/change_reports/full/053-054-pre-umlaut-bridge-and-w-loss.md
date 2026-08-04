@@ -88,7 +88,7 @@ glide-loss rule must already be in place to the left of that later chapter.
 
 The order evidence is sharply asymmetric. SC053 has **no positive first-break
 boundary in either tested direction**. On the earlier side, the runner reaches
-order `13` and then stops at bundled `PWGmcChanges` with no real break. On the
+order `13` and then stops at bundled `EarlyEnglishLineChanges` with no real break. On the
 later side, it reaches the current safe boundary at SC087 with no real break.
 Those are boundary-limited negative results, not hidden chronology claims. This
 report therefore does **not** claim that SC053 must follow any specific earlier

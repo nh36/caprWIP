@@ -4,9 +4,9 @@
 
 #### Historical formulation
 
-SC003 `PGmcRhotacism` appears here as a singleton consonant report for the change of medial `*z` to `*r`. Historically, the change is better treated as a **post-PWGmc West Germanic rhotacism** than as a Proto-Germanic innovation proper. Ringe and Taylor place rhotacism in the post-PWGmc sound-change layer and stress that it was not uniform within WGmc [@RingeTaylor2014, pp. 98, 102], while Crist argues that it cannot be inherited from Proto-Northwest Germanic and must follow earlier WGmc `*z`-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
+SC003 `EAFRhotacism` appears here as a singleton consonant report for the change of medial `*z` to `*r`. Historically, the change is better treated as a **post-PWGmc West Germanic rhotacism** than as a Proto-Germanic innovation proper. Ringe and Taylor place rhotacism in the post-PWGmc sound-change layer and stress that it was not uniform within WGmc [@RingeTaylor2014, pp. 98, 102], while Crist argues that it cannot be inherited from Proto-Northwest Germanic and must follow earlier WGmc `*z`-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
 
-That does not make the CAPR rule name unusable. It does mean the backend apparatus should distinguish the implementation label `PGmcRhotacism` from the source-supported historical stage label.
+That does not make the CAPR rule name unusable. It does mean the backend apparatus should distinguish the implementation label `EAFRhotacism` from the source-supported historical stage label.
 
 #### Source tradition
 
@@ -19,14 +19,14 @@ This is enough source support not only for a backend report but for a cautious h
 CAPR models the development as one explicit rewrite in vocalic medial environments:
 
 ```foma
-define PGmcRhotacism [
+define EAFRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _ ?
 ];
 ```
 
 The implementation is broader than a strictly intervocalic `V_V` rule because the current model also needs to retain medial `VzC` environments. That choice matches the local FST comment, but it should still be kept distinct from the narrower formulations in the historical literature.
 
-For implementation continuity, CAPR keeps the exact rule name `PGmcRhotacism`. That identifier should be read as a model label rather than as the best historical stage label.
+For implementation continuity, CAPR keeps the exact rule name `EAFRhotacism`. That identifier should be read as a model label rather than as the best historical stage label.
 
 #### Place in the cascade
 
@@ -54,4 +54,4 @@ SC003 is now substantially stronger than SC002 on both the chronology and source
 
 #### Remaining cautions
 
-Two cautions still matter most. First, backend prose should keep rhotacism distinct from final `*z` deletion, because the literature treats them as separate events with their own chronology. Second, the later boundary with `SC044` is broad/far rather than a tight local adjacency claim. The prose should therefore continue to describe the historical stage as post-PWGmc West Germanic while reserving `PGmcRhotacism` for the CAPR rule label.
+Two cautions still matter most. First, backend prose should keep rhotacism distinct from final `*z` deletion, because the literature treats them as separate events with their own chronology. Second, the later boundary with `SC044` is broad/far rather than a tight local adjacency claim. The prose should therefore continue to describe the historical stage as post-PWGmc West Germanic while reserving `EAFRhotacism` for the CAPR rule label.

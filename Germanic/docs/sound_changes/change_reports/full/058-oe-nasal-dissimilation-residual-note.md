@@ -35,7 +35,7 @@ rather than a coequal partner to either neighboring chapter.
 
 Current testing does **not** identify a positive historical first-break
 boundary for SC058 in either direction. On the earlier side, the search reaches
-bundled `PWGmcChanges`; that is a methodological runner limit, not a detected
+bundled `EarlyEnglishLineChanges`; that is a methodological runner limit, not a detected
 historical boundary. On the later side, the search reaches the current SC087
 boundary with no real break; that is a no-break-before-boundary result bounded
 by the present search space, not a claim that SC058 must precede SC087.
@@ -53,7 +53,7 @@ into a larger chapter.
 
 #### Remaining cautions
 
-The methodological boundaries matter here. Bundled `PWGmcChanges` and the
+The methodological boundaries matter here. Bundled `EarlyEnglishLineChanges` and the
 current SC087 boundary are search limits, not historical anchors for SC058.
 This note should therefore stay brief and should not be read as a coequal
 partner to the SC057 note or the SC059 back-mutation report.
