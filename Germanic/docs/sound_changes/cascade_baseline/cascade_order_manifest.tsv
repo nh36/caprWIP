@@ -10,7 +10,7 @@ position	foma_identifier	origin_block
 9	EAFLThVoicing	PWGmcChanges
 10	PWGmcDentalHardening	PWGmcChanges
 11	PNWGmcUnstressedAiMonophthongization	EnglishProtoToOE
-12	NWGmcILowering	EnglishProtoToOE
+12	PNWGmcILowering	EnglishProtoToOE
 13	OEWsPalatalGlide	EnglishProtoToOE
 14	NWGmcULowering	EnglishProtoToOE
 15	NWGmcStressedMonosyllableORaising	EnglishProtoToOE

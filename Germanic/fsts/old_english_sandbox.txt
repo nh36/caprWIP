@@ -62,9 +62,9 @@ define SPWGmcDentalHardening SEAFLThVoicing
 # ============================================================================
 define SPNWGmcUnstressedAiMonophthongization SPWGmcDentalHardening
     .o. PNWGmcUnstressedAiMonophthongization;
-define SNWGmcILowering SPNWGmcUnstressedAiMonophthongization
-    .o. NWGmcILowering;
-define SOEWsPalatalGlide SNWGmcILowering
+define SPNWGmcILowering SPNWGmcUnstressedAiMonophthongization
+    .o. PNWGmcILowering;
+define SOEWsPalatalGlide SPNWGmcILowering
     .o. OEWsPalatalGlide;
 define SNWGmcULowering SOEWsPalatalGlide
     .o. NWGmcULowering;
@@ -301,8 +301,8 @@ regex SPNWGmcUnstressedAiMonophthongization;
 save stack old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin
 
 clear stack
-regex SNWGmcILowering;
-save stack old_english_sandbox_after_nwgmc_i_lowering.bin
+regex SPNWGmcILowering;
+save stack old_english_sandbox_after_pnwgmc_i_lowering.bin
 
 clear stack
 regex SOEWsPalatalGlide;
