@@ -10,8 +10,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MARKDOWN_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
 LONG_HEADING_THRESHOLD = 65
-TARGET_RULE_NAME = "NWGmcStressedMonosyllableORaising"
-TARGET_ANCHOR = "rule-NWGmcStressedMonosyllableORaising"
+TARGET_RULE_NAME = "PNWGmcStressedMonosyllableORaising"
+TARGET_ANCHOR = "rule-PNWGmcStressedMonosyllableORaising"
 
 LEGACY_HEADING_RE = re.compile(
     r"^(#{2,3})\s+(SC\d{3})\.\s+(.*?)\s+\(`([^`]+)`\)\s+\{#(rule-[^}]+)\}\s*$"

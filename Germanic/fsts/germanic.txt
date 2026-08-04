@@ -1206,7 +1206,7 @@ define PWGmcFinalBareALoss [
 #
 # §17.31: defensive "preceded by another nucleus" guard added in parallel
 # with NWGmcFinalLongORaising. Stressed monosyllabic *ō is raised to *ū
-# by NWGmcStressedMonosyllableORaising upstream and so does not reach
+# by PNWGmcStressedMonosyllableORaising upstream and so does not reach
 # this rule; the guard belt-and-braces against any future re-ordering.
 define PWGmcSurvivingBimoricOUnrounding [
     {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
@@ -2100,7 +2100,7 @@ define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
 # `.#. C* _ .#.`. By Germanic root-stress, the only stressed syllable
 # is the first; a word with no preceding vowel is by definition a
 # stressed monosyllable.
-define NWGmcStressedMonosyllableORaising [
+define PNWGmcStressedMonosyllableORaising [
     {*ō} -> {*ū} || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* _ .#.
 ];
 
@@ -2114,7 +2114,7 @@ define NWGmcStressedMonosyllableORaising [
 # unanimous source consensus (Campbell §331(5), R/T 2.1.1, Fulk §5.2,
 # Brunner §§143-149), apocope/shortening rules require a preceding
 # (un)stressed nucleus. Stressed monosyllables are handled by
-# NWGmcStressedMonosyllableORaising above.
+# PNWGmcStressedMonosyllableORaising above.
 define NWGmcFinalLongORaising [
     {*ō} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
@@ -3109,7 +3109,7 @@ define EnglishProtoToOE (
     # §17.31: stressed-monosyllable raising (Campbell §122) fires
     # FIRST so monosyllabic *bō, *kō, *twō → *bū, *kū, *twū are
     # exempt from the polysyllable shortening.
-    .o. NWGmcStressedMonosyllableORaising
+    .o. PNWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising
     # PWGmc z-loss (R/T §3.3.1 p.98, §6.8.3 pp.299-300 step 3). Placed
     # immediately after raising — still R/T step 3, but tight to step 2
@@ -3306,7 +3306,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcULowering
     # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
     # §17.31: stressed monosyllable rule fires first.
-    .o. NWGmcStressedMonosyllableORaising
+    .o. PNWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion

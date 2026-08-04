@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `18`
-- rule_name: `NWGmcStressedMonosyllableORaising`
+- rule_name: `PNWGmcStressedMonosyllableORaising`
+- former_rule_name: `NWGmcStressedMonosyllableORaising`
 - safe computational window: `13-86` (earlier side runner-limited; later side boundary-limited)
 - status: `first_break_complete`
 
