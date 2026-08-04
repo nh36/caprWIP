@@ -121,13 +121,13 @@ class OrderManifestTests(unittest.TestCase):
         """Baseline sanity: the demonstrated local dependencies hold in the
         current (old) order. These same edges must be preserved by any reorder.
 
-        SC005 PNWGmcAToUBeforeM < SC017 NWGmcULowering
+        SC005 PNWGmcAToUBeforeM < SC017 PNWGmcULowering
         SC010 PWGmcJGemination < SC011 PWGmcSyllabicJ
         SC019 NWGmcFinalLongORaising < SC020 EAFFinalZDeletion (final-*z* deletion)
         """
         pos = {r["foma_identifier"]: int(r["position"]) for r in self.rows}
         pairs = [
-            ("PNWGmcAToUBeforeM", "NWGmcULowering"),
+            ("PNWGmcAToUBeforeM", "PNWGmcULowering"),
             ("PWGmcJGemination", "PWGmcSyllabicJ"),
             ("NWGmcFinalLongORaising", "EAFFinalZDeletion"),
         ]

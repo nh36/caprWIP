@@ -12,7 +12,7 @@ position	foma_identifier	origin_block
 11	PNWGmcUnstressedAiMonophthongization	EnglishProtoToOE
 12	PNWGmcILowering	EnglishProtoToOE
 13	OEWsPalatalGlide	EnglishProtoToOE
-14	NWGmcULowering	EnglishProtoToOE
+14	PNWGmcULowering	EnglishProtoToOE
 15	NWGmcStressedMonosyllableORaising	EnglishProtoToOE
 16	NWGmcFinalLongORaising	EnglishProtoToOE
 17	EAFFinalZDeletion	EnglishProtoToOE

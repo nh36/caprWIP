@@ -416,7 +416,7 @@ define pgrmWeakTailVowel [
     a:{*a} m:{*m} i:{*i} z:{*z} |
     # Dat.pl. of a-stem masc./neut.: PGmc *-umiz → PWGmc *-um → OE -um
     # (Ringe-Taylor §6.6, Brunner §237). The high *u in this suffix blocks
-    # NWGmcULowering (Campbell §§115-118), so the root *u is preserved through
+    # PNWGmcULowering (Campbell §§115-118), so the root *u is preserved through
     # to OE -u-. Encoded as the post-apocope form *-um (paralleling the
     # *-onų / *-unþ patterns above) because the cascade's apocope and
     # weak-tail-reduction rules were built for NSg/AccSg morphology and
@@ -2009,7 +2009,7 @@ define EnglishStarNonHighVowel [
 # no vowel precedes the *u being lowered (i.e., *u must be in the first syllable).
 # This fixes *widuwōn → widuwe (not ×widowe): the second *u is unstressed and
 # should not lower.
-define NWGmcULowering [
+define PNWGmcULowering [
     {*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel,
     # Stressed variant (stress preserved):
     {*ú} -> {*ó} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
@@ -2232,7 +2232,7 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening8;
 
 # Medial unstressed *u → *o in OE (WS/Northumbrian).
-# This is DISTINCT from NWGmcULowering (stressed u-lowering).
+# This is DISTINCT from PNWGmcULowering (stressed u-lowering).
 # The exact conditioning is under investigation — see DEV_NOTES.md §14.8.1.
 # Campbell §373-374 shows complex conditioning:
 # - "protected u > o very often" (e.g. heafod < *xaubud-)
@@ -2267,7 +2267,7 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 # When the stressed syllable contains *u (including stressed *ú), the rule
 # does not apply, preserving the unstressed *u.
 #
-# CHRONOLOGY FIX (2026-04-14): This rule MUST run BEFORE NWGmcULowering
+# CHRONOLOGY FIX (2026-04-14): This rule MUST run BEFORE PNWGmcULowering
 # (stressed *ú → *ó) so that the vowel harmony check can see the stressed *ú.
 # If run later, the stressed *ú will have become *ó then *eo, and the harmony
 # NOTE ON CHRONOLOGY (see DEV_NOTES.md §14.13):
@@ -3099,9 +3099,9 @@ define EnglishProtoToOE (
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
     .o. OEWsPalatalGlide
-    .o. NWGmcULowering
+    .o. PNWGmcULowering
     # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (nom.sg.
-    # *gebō etc.). Must fire AFTER NWGmcULowering — U-lowering needs
+    # *gebō etc.). Must fire AFTER PNWGmcULowering — U-lowering needs
     # to see the original non-high *-ō suffix on forms like *núsō
     # → *nósō → *nósu — and BEFORE EAFFinalZDeletion, so gen.sg.
     # *-ōz is sheltered by its -z from raising. See DEV_NOTES §17.10.24.
@@ -3303,7 +3303,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide
-    .o. NWGmcULowering
+    .o. PNWGmcULowering
     # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
     # §17.31: stressed monosyllable rule fires first.
     .o. NWGmcStressedMonosyllableORaising

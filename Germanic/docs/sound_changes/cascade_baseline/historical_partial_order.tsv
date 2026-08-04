@@ -20,14 +20,14 @@
 # "later" endpoints outside the audited set (SC036, SC040, SC043, SC044, SC051,
 # SC052, SC063) are named so Phase 4 can honour the boundary.
 earlier_sc	earlier_rule	later_sc	later_rule	type_of_edge	confidence	evidence
-SC005	PNWGmcAToUBeforeM	SC017	NWGmcULowering	historical_relative_chronology	A	shoulders root vowel: delaying SC005 past SC017 gives the wrong *u; Campbell §331(6); demonstrated dependency
+SC005	PNWGmcAToUBeforeM	SC017	PNWGmcULowering	historical_relative_chronology	A	shoulders root vowel: delaying SC005 past SC017 gives the wrong *u; Campbell §331(6); demonstrated dependency
 SC010	PWGmcJGemination	SC011	PWGmcSyllabicJ	historical_relative_chronology	A	OE nett: *natją>*nattją must geminate before syllabic-j; Ringe&Taylor vol.2 p.50; germanic.txt note
 SC019	NWGmcFinalLongORaising	SC020	EAFFinalZDeletion	historical_relative_chronology	A	*rástōz>ræste: raising must precede final-*z* loss; reader 020-wgmc-final-z-deletion.md
 SC020	EAFFinalZDeletion	SC040	OEMedUnstressedULowering	historical_relative_chronology	A	*bébruz>befer: final-*z* loss precedes medial u-lowering; reader 020
 SC004	PWGmcAiMonophthongization	SC036	OEInterStressRaising	historical_relative_chronology	A	*sáiwalō>sāwol: monophthongization precedes interstress raising; reader 004
 SC003	EAFRhotacism	SC044	OEBreaking	historical_relative_chronology	A	terminus ante quem: delaying rhotacism past breaking gives *lirnian/*merde not liornian/meorde; reader 003
 SC026	EAFNasalSpirantLengthening	SC027	EAFNasalSpirantLoss	historical_relative_chronology	A	fist/goose/youth corridor: vowel effect requires the conditioning nasal present before deletion; change report 026-027
-SC016	OEWsPalatalGlide	SC017	NWGmcULowering	technical_dependency	A	*júką>ġeoc: glide insertion must precede u-lowering; reader 016 (computational placement, stage is OE-WS)
+SC016	OEWsPalatalGlide	SC017	PNWGmcULowering	technical_dependency	A	*júką>ġeoc: glide insertion must precede u-lowering; reader 016 (computational placement, stage is OE-WS)
 SC010	PWGmcJGemination	SC049	PGmcBAllophony	fst_dependency	A	[β] must surface only on singleton *b, so allophony follows gemination; germanic.txt; change report 049-050
 SC042	PWGmcSurvivingBimoricOUnrounding	SC043	EAFBrightening	fst_dependency	B	SC042 creates the surviving-bimoric ō input that SC043 brightens (rest pathway); change report 042
 SC050	SieversLawSyncope	SC051	OESkPalatalization	fst_dependency	B	SC050 is a feeder into the palatalization region; change report 049-050

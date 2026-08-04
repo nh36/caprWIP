@@ -41,4 +41,4 @@ The *weorold* 'world' and *weoruld* 'world' variants turn the general source cla
 
 The derivation thus fixes front-vowel leveling before interstress raising while leaving its earlier boundary open.
 
-[SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) and [SC017 NWGmcULowering](#rule-NWGmcULowering) follow with a more tightly constrained local chronology.
+[SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) and [SC017 PNWGmcULowering](#rule-PNWGmcULowering) follow with a more tightly constrained local chronology.

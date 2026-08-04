@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `17`
-- rule_name: `NWGmcULowering`
+- rule_name: `PNWGmcULowering`
+- former_rule_name: `NWGmcULowering`
 - safe computational window: `17-18`
 - status: `first_break_complete`
 

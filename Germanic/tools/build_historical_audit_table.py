@@ -129,7 +129,7 @@ ADJUDICATION: dict[str, dict] = {
     "SC016": {
         "proposed_canonical_name": "", "proposed_hist_stage": "", "proposed_hist_scope": "",
         "supported_earlier_relations": "",
-        "supported_later_relations": "SC017 NWGmcULowering (fst/technical dependency, A: juka>geoc requires glide before u-lowering)",
+        "supported_later_relations": "SC017 PNWGmcULowering (fst/technical dependency, A: juka>geoc requires glide before u-lowering)",
         "confidence": "B",
         "name_status": "right", "position_status": "partly_right",
         "granularity_status": "one_historical_change",

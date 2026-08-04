@@ -66,9 +66,9 @@ define SPNWGmcILowering SPNWGmcUnstressedAiMonophthongization
     .o. PNWGmcILowering;
 define SOEWsPalatalGlide SPNWGmcILowering
     .o. OEWsPalatalGlide;
-define SNWGmcULowering SOEWsPalatalGlide
-    .o. NWGmcULowering;
-define SNWGmcStressedMonosyllableORaising SNWGmcULowering
+define SPNWGmcULowering SOEWsPalatalGlide
+    .o. PNWGmcULowering;
+define SNWGmcStressedMonosyllableORaising SPNWGmcULowering
     .o. NWGmcStressedMonosyllableORaising;
 define SNWGmcFinalLongORaising SNWGmcStressedMonosyllableORaising
     .o. NWGmcFinalLongORaising;
@@ -309,8 +309,8 @@ regex SOEWsPalatalGlide;
 save stack old_english_sandbox_after_oe_ws_palatal_glide.bin
 
 clear stack
-regex SNWGmcULowering;
-save stack old_english_sandbox_after_nwgmc_u_lowering.bin
+regex SPNWGmcULowering;
+save stack old_english_sandbox_after_pnwgmc_u_lowering.bin
 
 clear stack
 regex SNWGmcStressedMonosyllableORaising;
