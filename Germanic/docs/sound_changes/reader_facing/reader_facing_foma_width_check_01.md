@@ -34,7 +34,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`NWGmcLongELowering`) {#rule-NWGmcLongELowering} | 11 | 64 | no |
 | 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`NWGmcLongENasalRounding`) {#rule-NWGmcLongENasalRounding} | 11 | 39 | no |
 | 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant lengthening (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | 15 | 69 | no |
-| 026-027-nasal-spirant-changes.md | SC027. Loss of the nasal before spirants (`NWGmcNasalSpirantLoss`) {#rule-NWGmcNasalSpirantLoss} | 35 | 60 | no |
+| 026-027-nasal-spirant-changes.md | SC027. North Sea Germanic nasal-spirant loss (`EAFNasalSpirantLoss`) {#rule-EAFNasalSpirantLoss} | 35 | 60 | no |
 | 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss} | 11 | 44 | no |
 | 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation} | 17 | 38 | no |
 | 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting} | 38 | 21 | no |

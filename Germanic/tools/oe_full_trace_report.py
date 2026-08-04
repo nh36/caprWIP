@@ -71,7 +71,7 @@ STAGES: List[Tuple[str, str]] = [
     ("NWGmcLongELowering", "old_english_sandbox_after_nwgmc_long_e_lowering.bin"),
     ("NWGmcLongENasalRounding", "old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin"),
     ("EAFNasalSpirantLengthening", "old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin"),
-    ("NWGmcNasalSpirantLoss", "old_english_sandbox_after_nwgmc_nasal_spirant_loss.bin"),
+    ("EAFNasalSpirantLoss", "old_english_sandbox_after_eaf_nasal_spirant_loss.bin"),
     ("NWGmcPreconsonantalXLoss", "old_english_sandbox_after_nwgmc_preconsonantal_x_loss.bin"),
     ("OEAwjGlideFormation", "old_english_sandbox_after_oe_awj_glide_formation.bin"),
     ("OEAuFronting", "old_english_sandbox_after_oe_au_fronting.bin"),

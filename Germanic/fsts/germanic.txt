@@ -2729,7 +2729,7 @@ define EAFNasalSpirantLengthening [
     {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative
 ];
 
-define NWGmcNasalSpirantLoss [
+define EAFNasalSpirantLoss [
     EnglishStarNasal -> 0 || _ EnglishStarVoicelessFricative
 ];
 
@@ -3127,7 +3127,7 @@ define EnglishProtoToOE (
     # fricatives with compensatory lengthening. Must precede i-umlaut so that
     # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
     .o. EAFNasalSpirantLengthening
-    .o. NWGmcNasalSpirantLoss
+    .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. NWGmcPreconsonantalXLoss
     .o. OEAwjGlideFormation
@@ -3317,7 +3317,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
     .o. EAFNasalSpirantLengthening
-    .o. NWGmcNasalSpirantLoss
+    .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. NWGmcPreconsonantalXLoss
     .o. OEAwjGlideFormation

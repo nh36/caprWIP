@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `27`
-- rule_name: `NWGmcNasalSpirantLoss`
+- rule_name: `EAFNasalSpirantLoss`
+- former_rule_name: `NWGmcNasalSpirantLoss`
 - safe computational window: `27-86` (later side boundary-limited)
 - status: `first_break_complete`
 
