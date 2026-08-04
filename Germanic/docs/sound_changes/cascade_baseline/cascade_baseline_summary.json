@@ -1,0 +1,9 @@
+{
+  "total_lexemes": 380,
+  "accepted": 380,
+  "rejected": 0,
+  "matched": 372,
+  "mismatched": 8,
+  "ambiguous_outputs": 0,
+  "outputs_sha256": "aaf19ba919cafbe86ea59d482ce74d0944f541336e246da481a3f37b20da480e"
+}
