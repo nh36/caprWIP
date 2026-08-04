@@ -1,0 +1,4 @@
+former_identifier	path_substring	reason
+*	tools/build_historical_audit_table.py	Adjudication snapshot: records former identifiers as historical audit data (existing_capr_sources, notes).
+*	tools/build_rename_migration_manifest.py	Migration record: encodes former->canonical mapping and former-identifier notes.
+*	tools/check_rename_gate.py	The rename gate references identifiers only via arguments and docstring examples.
