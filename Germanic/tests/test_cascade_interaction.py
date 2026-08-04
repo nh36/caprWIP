@@ -55,9 +55,14 @@ class InteractionMatrixTests(unittest.TestCase):
             self.assertIn(r["later_rule"], self.pos, f"unknown rule {r['later_rule']}")
 
     def test_matrix_covers_registry_stage_cross_product(self):
-        """The committed matrix must cover exactly the PNWGmc x PWGmc pairs
-        implied by the registry's curated stage membership."""
-        nwgmc = self.harness.registry_rules_by_stage(STAGING_MAP, ORDER_MANIFEST, "nwgmc")
+        """The committed matrix must cover exactly the (Proto-)Northwest Germanic
+        x PWGmc pairs implied by the registry's curated stage membership.
+
+        The earlier set is queried as {nwgmc, pnwgmc} so the check is invariant to
+        how far the nwgmc->pnwgmc relabelling has progressed (and keeps the
+        still-unresolved SC064, held at nwgmc, in scope). The later set is pwgmc;
+        SC012, relabelled pwgmc->eaf, is intentionally out of this matrix."""
+        nwgmc = self.harness.registry_rules_by_stage(STAGING_MAP, ORDER_MANIFEST, "nwgmc,pnwgmc")
         pwgmc = self.harness.registry_rules_by_stage(STAGING_MAP, ORDER_MANIFEST, "pwgmc")
         expected = {(e, l) for e in nwgmc for l in pwgmc}
         actual = {(r["earlier_rule"], r["later_rule"]) for r in self.matrix}

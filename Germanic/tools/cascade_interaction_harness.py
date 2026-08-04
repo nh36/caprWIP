@@ -46,16 +46,27 @@ def _read_tsv_skip_comments(path: Path) -> list[dict[str, str]]:
     return list(csv.DictReader(io.StringIO("\n".join(lines)), delimiter="\t"))
 
 
-def registry_rules_by_stage(staging_map: Path, order_manifest: Path, stage: str) -> list[str]:
-    """Return pipeline Foma identifiers whose curated hist_stage == ``stage``.
+def registry_rules_by_stage(staging_map: Path, order_manifest: Path, stage) -> list[str]:
+    """Return pipeline Foma identifiers whose curated hist_stage is in ``stage``.
 
-    Restricted to rules that appear in the executable-order manifest and returned
-    in executable order. Stage comes from the sourced registry, not the FST name.
+    ``stage`` may be a single stage string, a comma-separated list of stages, or
+    an iterable of stages. Restricted to rules that appear in the executable-order
+    manifest and returned in executable order. Stage comes from the sourced
+    registry, not the FST name.
+
+    Accepting a set of stages lets the PNWGmc relabelling migration run
+    rule-by-rule: the 'earlier' set is queried as {nwgmc, pnwgmc} so a rule stays
+    in the set whether it has been relabelled yet or not (and the still-unresolved
+    SC064, kept at nwgmc, remains included).
     """
+    if isinstance(stage, str):
+        stages = {s.strip() for s in stage.split(",") if s.strip()}
+    else:
+        stages = set(stage)
     staging = {r["fst_identifier"]: r for r in _read_tsv_skip_comments(staging_map)}
     with order_manifest.open(encoding="utf-8") as handle:
         manifest = [r["foma_identifier"] for r in csv.DictReader(handle, delimiter="\t")]
-    return [f for f in manifest if staging.get(f, {}).get("hist_stage") == stage]
+    return [f for f in manifest if staging.get(f, {}).get("hist_stage") in stages]
 
 
 def build_defs_image(fst_path: Path) -> Path:
@@ -129,10 +140,10 @@ def main() -> int:
                         default=Path("docs/sound_changes/sound_change_historical_staging_map.tsv"))
     parser.add_argument("--order-manifest", type=Path,
                         default=Path("docs/sound_changes/cascade_baseline/cascade_order_manifest.tsv"))
-    parser.add_argument("--earlier-stage", default="nwgmc",
-                        help="curated hist_stage for the 'earlier' (PNWGmc) rule set")
+    parser.add_argument("--earlier-stage", default="nwgmc,pnwgmc",
+                        help="curated hist_stage(s) for the 'earlier' (Proto-Northwest Germanic) rule set; comma-separated")
     parser.add_argument("--later-stage", default="pwgmc",
-                        help="curated hist_stage for the 'later' (PWGmc) rule set")
+                        help="curated hist_stage(s) for the 'later' (PWGmc) rule set; comma-separated")
     parser.add_argument("--pairs", nargs="*", default=None,
                         help="explicit EARLIER:LATER pairs, overriding the stage cross-product")
     parser.add_argument("--out", type=Path,
