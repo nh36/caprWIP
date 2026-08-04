@@ -7,7 +7,7 @@ position	foma_identifier	origin_block
 6	PWGmcIjContraction	PWGmcChanges
 7	PWGmcJGemination	PWGmcChanges
 8	PWGmcSyllabicJ	PWGmcChanges
-9	PWGmcLThVoicing	PWGmcChanges
+9	EAFLThVoicing	PWGmcChanges
 10	PWGmcDentalHardening	PWGmcChanges
 11	NWGmcUnstressedAiMonophthongization	EnglishProtoToOE
 12	NWGmcILowering	EnglishProtoToOE

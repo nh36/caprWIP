@@ -19,7 +19,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 009-ij-contraction-in-friend.md | SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction} | 11 | 54 | no |
 | 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | 11 | 54 | no |
 | 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | 13 | 74 | no |
-| 012-lth-voicing.md | SC012. \emph{lþ}-voicing (`PWGmcLThVoicing`) {#rule-PWGmcLThVoicing} | 12 | 26 | no |
+| 012-lth-voicing.md | SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing} | 12 | 26 | no |
 | 013-dental-hardening.md | SC013. Dental hardening (`PWGmcDentalHardening`) {#rule-PWGmcDentalHardening} | 12 | 29 | no |
 | 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`NWGmcUnstressedAiMonophthongization`) {#rule-NWGmcUnstressedAiMonophthongization} | 13 | 44 | no |
 | 014-015-opening-vowel-prelude.md | SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering} | 29 | 55 | no |

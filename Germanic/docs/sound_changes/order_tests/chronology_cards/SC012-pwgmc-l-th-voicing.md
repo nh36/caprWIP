@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `12`
-- rule_name: `PWGmcLThVoicing`
+- rule_name: `EAFLThVoicing`
+- former_rule_name: `PWGmcLThVoicing`
 - safe computational window: `4-86` (both directions boundary-only)
 - status: `first_break_complete`
 

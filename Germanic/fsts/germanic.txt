@@ -1607,7 +1607,7 @@ define PWGmcSyllabicJ [
 #   *wulþraz → *wuldr → OE wuldor; *gulþinaz → *guldin → OE gylden
 # Note: *gulþa-/*gulda- and *felþu-/*feldu- may alternatively reflect Verner's
 # Law alternation, but *lþ→ld gives the same result.
-define PWGmcLThVoicing [
+define EAFLThVoicing [
     {*θ} -> {*d} || {*l} _
 ];
 
@@ -1672,7 +1672,7 @@ define PWGmcChanges [
     .o. PWGmcIjContraction
     .o. PWGmcJGemination
     .o. PWGmcSyllabicJ
-    .o. PWGmcLThVoicing
+    .o. EAFLThVoicing
     .o. PWGmcDentalHardening
     # NOTE: PWGmcPreFinalRShortening removed - was duplicate of PWGmcFinalOrLowering
 ];

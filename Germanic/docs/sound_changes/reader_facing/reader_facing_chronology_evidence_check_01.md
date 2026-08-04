@@ -18,7 +18,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 009-ij-contraction-in-friend.md | SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction} | yes | yes | yes | yes | yes | no | no | — |
 | 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | yes | yes | yes | yes | yes | no | no | — |
-| 012-lth-voicing.md | SC012. \emph{lþ}-voicing (`PWGmcLThVoicing`) {#rule-PWGmcLThVoicing} | yes | no | no | no | yes | yes | no | — |
+| 012-lth-voicing.md | SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing} | yes | no | no | no | yes | yes | no | — |
 | 013-dental-hardening.md | SC013. Dental hardening (`PWGmcDentalHardening`) {#rule-PWGmcDentalHardening} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
 | 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`NWGmcUnstressedAiMonophthongization`) {#rule-NWGmcUnstressedAiMonophthongization} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
 | 014-015-opening-vowel-prelude.md | SC015. Leveling of early unstressed front vowels (`NWGmcILowering`) {#rule-NWGmcILowering} | yes | yes | yes | yes | yes | no | no | — |

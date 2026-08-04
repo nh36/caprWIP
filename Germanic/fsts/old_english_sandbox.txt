@@ -51,9 +51,9 @@ define SPWGmcJGemination SPWGmcIjContraction
     .o. PWGmcJGemination;
 define SPWGmcSyllabicJ SPWGmcJGemination
     .o. PWGmcSyllabicJ;
-define SPWGmcLThVoicing SPWGmcSyllabicJ
-    .o. PWGmcLThVoicing;
-define SPWGmcDentalHardening SPWGmcLThVoicing
+define SEAFLThVoicing SPWGmcSyllabicJ
+    .o. EAFLThVoicing;
+define SPWGmcDentalHardening SEAFLThVoicing
     .o. PWGmcDentalHardening;
 
 # ============================================================================
@@ -288,8 +288,8 @@ regex SPWGmcSyllabicJ;
 save stack old_english_sandbox_after_pwgmc_syllabic_j.bin
 
 clear stack
-regex SPWGmcLThVoicing;
-save stack old_english_sandbox_after_pwgmc_l_th_voicing.bin
+regex SEAFLThVoicing;
+save stack old_english_sandbox_after_eaf_l_th_voicing.bin
 
 clear stack
 regex SPWGmcDentalHardening;

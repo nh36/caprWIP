@@ -5,7 +5,6 @@ NWGmcAToUBeforeM	PWGmcCoronalWAssimilation	yes
 NWGmcAToUBeforeM	PWGmcIjContraction	yes
 NWGmcAToUBeforeM	PWGmcJGemination	yes
 NWGmcAToUBeforeM	PWGmcSyllabicJ	no
-NWGmcAToUBeforeM	PWGmcLThVoicing	yes
 NWGmcAToUBeforeM	PWGmcDentalHardening	yes
 NWGmcAToUBeforeM	PWGmcFinalBareALoss	no
 NWGmcAToUBeforeM	PWGmcSurvivingBimoricOUnrounding	yes
@@ -16,7 +15,6 @@ NWGmcUnstressedAiMonophthongization	PWGmcCoronalWAssimilation	yes
 NWGmcUnstressedAiMonophthongization	PWGmcIjContraction	yes
 NWGmcUnstressedAiMonophthongization	PWGmcJGemination	yes
 NWGmcUnstressedAiMonophthongization	PWGmcSyllabicJ	yes
-NWGmcUnstressedAiMonophthongization	PWGmcLThVoicing	yes
 NWGmcUnstressedAiMonophthongization	PWGmcDentalHardening	yes
 NWGmcUnstressedAiMonophthongization	PWGmcFinalBareALoss	yes
 NWGmcUnstressedAiMonophthongization	PWGmcSurvivingBimoricOUnrounding	yes
@@ -27,7 +25,6 @@ NWGmcILowering	PWGmcCoronalWAssimilation	yes
 NWGmcILowering	PWGmcIjContraction	yes
 NWGmcILowering	PWGmcJGemination	yes
 NWGmcILowering	PWGmcSyllabicJ	yes
-NWGmcILowering	PWGmcLThVoicing	yes
 NWGmcILowering	PWGmcDentalHardening	yes
 NWGmcILowering	PWGmcFinalBareALoss	no
 NWGmcILowering	PWGmcSurvivingBimoricOUnrounding	yes
@@ -38,7 +35,6 @@ NWGmcULowering	PWGmcCoronalWAssimilation	yes
 NWGmcULowering	PWGmcIjContraction	yes
 NWGmcULowering	PWGmcJGemination	yes
 NWGmcULowering	PWGmcSyllabicJ	yes
-NWGmcULowering	PWGmcLThVoicing	yes
 NWGmcULowering	PWGmcDentalHardening	yes
 NWGmcULowering	PWGmcFinalBareALoss	no
 NWGmcULowering	PWGmcSurvivingBimoricOUnrounding	yes
@@ -49,7 +45,6 @@ NWGmcStressedMonosyllableORaising	PWGmcCoronalWAssimilation	yes
 NWGmcStressedMonosyllableORaising	PWGmcIjContraction	yes
 NWGmcStressedMonosyllableORaising	PWGmcJGemination	yes
 NWGmcStressedMonosyllableORaising	PWGmcSyllabicJ	yes
-NWGmcStressedMonosyllableORaising	PWGmcLThVoicing	yes
 NWGmcStressedMonosyllableORaising	PWGmcDentalHardening	yes
 NWGmcStressedMonosyllableORaising	PWGmcFinalBareALoss	no
 NWGmcStressedMonosyllableORaising	PWGmcSurvivingBimoricOUnrounding	yes
@@ -60,7 +55,6 @@ NWGmcFinalLongORaising	PWGmcCoronalWAssimilation	yes
 NWGmcFinalLongORaising	PWGmcIjContraction	yes
 NWGmcFinalLongORaising	PWGmcJGemination	yes
 NWGmcFinalLongORaising	PWGmcSyllabicJ	yes
-NWGmcFinalLongORaising	PWGmcLThVoicing	yes
 NWGmcFinalLongORaising	PWGmcDentalHardening	yes
 NWGmcFinalLongORaising	PWGmcFinalBareALoss	no
 NWGmcFinalLongORaising	PWGmcSurvivingBimoricOUnrounding	no
@@ -71,7 +65,6 @@ NWGmcUnstressedORaising	PWGmcCoronalWAssimilation	yes
 NWGmcUnstressedORaising	PWGmcIjContraction	yes
 NWGmcUnstressedORaising	PWGmcJGemination	yes
 NWGmcUnstressedORaising	PWGmcSyllabicJ	yes
-NWGmcUnstressedORaising	PWGmcLThVoicing	yes
 NWGmcUnstressedORaising	PWGmcDentalHardening	yes
 NWGmcUnstressedORaising	PWGmcFinalBareALoss	yes
 NWGmcUnstressedORaising	PWGmcSurvivingBimoricOUnrounding	yes
@@ -82,7 +75,6 @@ NWGmcMnDissimilation	PWGmcCoronalWAssimilation	yes
 NWGmcMnDissimilation	PWGmcIjContraction	no
 NWGmcMnDissimilation	PWGmcJGemination	yes
 NWGmcMnDissimilation	PWGmcSyllabicJ	yes
-NWGmcMnDissimilation	PWGmcLThVoicing	yes
 NWGmcMnDissimilation	PWGmcDentalHardening	yes
 NWGmcMnDissimilation	PWGmcFinalBareALoss	yes
 NWGmcMnDissimilation	PWGmcSurvivingBimoricOUnrounding	yes
@@ -93,7 +85,6 @@ NWGmcNStemNLoss	PWGmcCoronalWAssimilation	yes
 NWGmcNStemNLoss	PWGmcIjContraction	no
 NWGmcNStemNLoss	PWGmcJGemination	yes
 NWGmcNStemNLoss	PWGmcSyllabicJ	yes
-NWGmcNStemNLoss	PWGmcLThVoicing	yes
 NWGmcNStemNLoss	PWGmcDentalHardening	yes
 NWGmcNStemNLoss	PWGmcFinalBareALoss	no
 NWGmcNStemNLoss	PWGmcSurvivingBimoricOUnrounding	yes
@@ -104,7 +95,6 @@ NWGmcLongELowering	PWGmcCoronalWAssimilation	yes
 NWGmcLongELowering	PWGmcIjContraction	yes
 NWGmcLongELowering	PWGmcJGemination	yes
 NWGmcLongELowering	PWGmcSyllabicJ	yes
-NWGmcLongELowering	PWGmcLThVoicing	yes
 NWGmcLongELowering	PWGmcDentalHardening	yes
 NWGmcLongELowering	PWGmcFinalBareALoss	yes
 NWGmcLongELowering	PWGmcSurvivingBimoricOUnrounding	yes
@@ -115,7 +105,6 @@ NWGmcLongENasalRounding	PWGmcCoronalWAssimilation	yes
 NWGmcLongENasalRounding	PWGmcIjContraction	no
 NWGmcLongENasalRounding	PWGmcJGemination	yes
 NWGmcLongENasalRounding	PWGmcSyllabicJ	yes
-NWGmcLongENasalRounding	PWGmcLThVoicing	yes
 NWGmcLongENasalRounding	PWGmcDentalHardening	yes
 NWGmcLongENasalRounding	PWGmcFinalBareALoss	yes
 NWGmcLongENasalRounding	PWGmcSurvivingBimoricOUnrounding	yes
@@ -126,7 +115,6 @@ NWGmcPreconsonantalXLoss	PWGmcCoronalWAssimilation	yes
 NWGmcPreconsonantalXLoss	PWGmcIjContraction	yes
 NWGmcPreconsonantalXLoss	PWGmcJGemination	no
 NWGmcPreconsonantalXLoss	PWGmcSyllabicJ	no
-NWGmcPreconsonantalXLoss	PWGmcLThVoicing	yes
 NWGmcPreconsonantalXLoss	PWGmcDentalHardening	yes
 NWGmcPreconsonantalXLoss	PWGmcFinalBareALoss	yes
 NWGmcPreconsonantalXLoss	PWGmcSurvivingBimoricOUnrounding	yes
@@ -137,7 +125,6 @@ NWGmcInStemNLoss	PWGmcCoronalWAssimilation	yes
 NWGmcInStemNLoss	PWGmcIjContraction	yes
 NWGmcInStemNLoss	PWGmcJGemination	yes
 NWGmcInStemNLoss	PWGmcSyllabicJ	yes
-NWGmcInStemNLoss	PWGmcLThVoicing	yes
 NWGmcInStemNLoss	PWGmcDentalHardening	yes
 NWGmcInStemNLoss	PWGmcFinalBareALoss	no
 NWGmcInStemNLoss	PWGmcSurvivingBimoricOUnrounding	yes

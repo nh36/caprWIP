@@ -56,8 +56,9 @@ SC011	PWGmc Syllabic J	PWGmcSyllabicJ	foma_rule_name	underlying germanic.txt def
 SC011	PWGmc Syllabic J	Proto-West Germanic Syllabic J	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC011	PWGmc Syllabic J	PWGmc Syllabic J	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC012	PWGmc L Th Voicing	PWGmc L Th Voicing	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC012	PWGmc L Th Voicing	PWGmcLThVoicing	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC012	PWGmc L Th Voicing	PWGmcLThVoicing	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC012	Northern West Germanic *lþ*-voicing	EAFLThVoicing	sandbox_stage_name	sandbox stage SEAFLThVoicing	Germanic/fsts/old_english_sandbox.txt
+SC012	Northern West Germanic *lþ*-voicing	EAFLThVoicing	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC012	Northern West Germanic *lþ*-voicing	PWGmcLThVoicing	former_foma_rule_name	former identifier before EAF-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC012	PWGmc L Th Voicing	Proto-West Germanic L Th Voicing	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC012	PWGmc L Th Voicing	PWGmc L Th Voicing	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC013	PWGmc Dental Hardening	PWGmc Dental Hardening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md

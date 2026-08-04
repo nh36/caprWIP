@@ -56,7 +56,7 @@ PWGMC_COMPONENT_RULES = [
     "PWGmcIjContraction",
     "PWGmcJGemination",
     "PWGmcSyllabicJ",
-    "PWGmcLThVoicing",
+    "EAFLThVoicing",
     "PWGmcDentalHardening",
 ]
 

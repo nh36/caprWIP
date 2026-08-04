@@ -56,7 +56,7 @@ STAGES: List[Tuple[str, str]] = [
     ("PWGmcIjContraction", "old_english_sandbox_after_pwgmc_ij_contraction.bin"),
     ("PWGmcJGemination", "old_english_sandbox_after_pwgmc_j_gemination.bin"),
     ("PWGmcSyllabicJ", "old_english_sandbox_after_pwgmc_syllabic_j.bin"),
-    ("PWGmcLThVoicing", "old_english_sandbox_after_pwgmc_l_th_voicing.bin"),
+    ("EAFLThVoicing", "old_english_sandbox_after_eaf_l_th_voicing.bin"),
     ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
     ("NWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_nwgmc_unstressed_ai_monophthongization.bin"),
     ("NWGmcILowering", "old_english_sandbox_after_nwgmc_i_lowering.bin"),

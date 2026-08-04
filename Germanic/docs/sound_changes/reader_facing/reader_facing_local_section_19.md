@@ -419,10 +419,10 @@ Ringe and Taylor treat word-internal \emph{*lþ} > \emph{*ld} as a regular sound
 The comparative evidence supports \emph{lþ > ld} most clearly in northern West
 Germanic, not as an unqualified pan-PWGmc development.
 
-## SC012. \emph{lþ}-voicing (`PWGmcLThVoicing`) {#rule-PWGmcLThVoicing}
+## SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing}
 
 ```foma
-define PWGmcLThVoicing [
+define EAFLThVoicing [
     {*θ} -> {*d} || {*l} _
 ];
 ```
