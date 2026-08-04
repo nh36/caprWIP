@@ -84,9 +84,9 @@ define SNWGmcLongELowering SNWGmcNStemNLoss
     .o. NWGmcLongELowering;
 define SNWGmcLongENasalRounding SNWGmcLongELowering
     .o. NWGmcLongENasalRounding;
-define SNWGmcNasalSpirantLengthening SNWGmcLongENasalRounding
-    .o. NWGmcNasalSpirantLengthening;
-define SNWGmcNasalSpirantLoss SNWGmcNasalSpirantLengthening
+define SEAFNasalSpirantLengthening SNWGmcLongENasalRounding
+    .o. EAFNasalSpirantLengthening;
+define SNWGmcNasalSpirantLoss SEAFNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss;
 define SNWGmcPreconsonantalXLoss SNWGmcNasalSpirantLoss
     .o. NWGmcPreconsonantalXLoss;
@@ -345,8 +345,8 @@ regex SNWGmcLongENasalRounding;
 save stack old_english_sandbox_after_nwgmc_long_e_nasal_rounding.bin
 
 clear stack
-regex SNWGmcNasalSpirantLengthening;
-save stack old_english_sandbox_after_nwgmc_nasal_spirant_lengthening.bin
+regex SEAFNasalSpirantLengthening;
+save stack old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin
 
 clear stack
 regex SNWGmcNasalSpirantLoss;

@@ -2712,7 +2712,7 @@ define OEWsPalatalUmlaut [
 # CHRONOLOGY: This is a NWGmc change, shared by OE, OF, OS. It must precede
 # OE i-umlaut, otherwise umlauted vowels like *y (from *u) won't be lengthened.
 # See DEV_NOTES.md: "NSL Chronology Bug: *funxstiz → fyxt instead of fȳst"
-define NWGmcNasalSpirantLengthening [
+define EAFNasalSpirantLengthening [
     {*a} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*e} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
@@ -3126,7 +3126,7 @@ define EnglishProtoToOE (
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
     # fricatives with compensatory lengthening. Must precede i-umlaut so that
     # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
-    .o. NWGmcNasalSpirantLengthening
+    .o. EAFNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. NWGmcPreconsonantalXLoss
@@ -3316,7 +3316,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. NWGmcLongELowering
     .o. NWGmcLongENasalRounding
     # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
-    .o. NWGmcNasalSpirantLengthening
+    .o. EAFNasalSpirantLengthening
     .o. NWGmcNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. NWGmcPreconsonantalXLoss
