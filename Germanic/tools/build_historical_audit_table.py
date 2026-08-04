@@ -188,7 +188,7 @@ ADJUDICATION: dict[str, dict] = {
     },
     "SC042": {
         "proposed_canonical_name": "", "proposed_hist_stage": "", "proposed_hist_scope": "",
-        "supported_earlier_relations": "", "supported_later_relations": "SC043 AngloFrisianBrightening (feeder, fst dependency)",
+        "supported_earlier_relations": "", "supported_later_relations": "SC043 EAFBrightening (feeder, fst dependency)",
         "confidence": "B",
         "name_status": "partly_right", "position_status": "right",
         "granularity_status": "one_historical_change",

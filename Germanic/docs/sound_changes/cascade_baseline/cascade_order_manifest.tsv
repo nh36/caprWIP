@@ -38,7 +38,7 @@ position	foma_identifier	origin_block
 37	OEMedUnstressedULowering	EnglishProtoToOE
 38	PWGmcFinalBareALoss	EnglishProtoToOE
 39	PWGmcSurvivingBimoricOUnrounding	EnglishProtoToOE
-40	AngloFrisianBrightening	EnglishProtoToOE
+40	EAFBrightening	EnglishProtoToOE
 41	OEBreaking	EnglishProtoToOE
 42	OEVelarFricativePalatalization	EnglishProtoToOE
 43	OEARestoration	EnglishProtoToOE

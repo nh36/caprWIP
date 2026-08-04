@@ -22,7 +22,7 @@ STAGES: List[Tuple[str, str]] = [
     ("WWSimplification", "old_english_sandbox_after_ww_simplification.bin"),
     ("DiphthongLeveling", "old_english_sandbox_after_diphthong_leveling.bin"),
     ("EwLongDiphthong", "old_english_sandbox_after_ew_long_diphthong.bin"),
-    ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
+    ("EAFBrightening", "old_english_sandbox_after_eaf_brightening.bin"),
     ("BreakingLengthening", "old_english_sandbox_after_breaking_lengthening.bin"),
     ("VelarFricPal", "old_english_sandbox_after_velar_fricative_palatalization.bin"),
     ("ARestoration", "old_english_sandbox_after_a_restoration.bin"),

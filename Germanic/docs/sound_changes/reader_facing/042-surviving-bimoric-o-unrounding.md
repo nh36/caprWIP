@@ -5,7 +5,7 @@
 The handbooks do not isolate a large independent sound change under this label.
 The surviving bimoric \emph{*ō} in the pathway to *ræste* ‘rest’ nevertheless
 undergoes unrounding before
-[SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). Campbell, Hogg,
+[SC043 EAFBrightening](#rule-EAFBrightening). Campbell, Hogg,
 and Ringe and Taylor describe the surrounding fronting and restoration history
 without naming this feeder separately [@Campbell1959, pp. 52, 60,
 §§131, 157--158; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158,
@@ -21,4 +21,4 @@ define PWGmcSurvivingBimoricOUnrounding [
 ];
 ```
 
-The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
+The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.

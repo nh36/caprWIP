@@ -1153,7 +1153,7 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 #   *-ō  (PWGmc, z-lost)
 #    ↓ PWGmcSurvivingBimoricOUnrounding [step 5, word-final]
 #   *-ā  (PWGmc/WGmc)
-#    ↓ AngloFrisianBrightening          [step 6, word-final long-vowel clause]
+#    ↓ EAFBrightening          [step 6, word-final long-vowel clause]
 #   *-ǣ  (pre-OE)
 #    ↓ OEUnstressedLongVowelShortening6 [step 7, existing rule]
 #   *-æ  (eOE)
@@ -1173,7 +1173,7 @@ define EAFFinalZLoss EAFFinalZDeletion;
 # Word-final *-a of **nom.sg. m.a-stem *-az** origin (via z-loss) was lost at
 # the PWGmc stage, BEFORE AFB and retraction. Brunner §10 is explicit that
 # retraction sees the tail as it stood at retraction time, i.e. already
-# without this *-a. Moving this loss to run BEFORE AngloFrisianBrightening
+# without this *-a. Moving this loss to run BEFORE EAFBrightening
 # fixes the A-restoration regression catalogued in DEV_NOTES §17.10.13.
 #
 # SCOPE: this rule targets {*a} only. The f.ō-stem *-ōz outcome is
@@ -1873,10 +1873,10 @@ define OEAwLongDiphthong [
 # composed separately because foma's parallel-rewrite `,` unions the
 # contexts across clauses even when targets differ (see DEV_NOTES
 # §17.10.13, "Foma parallel-rule context-merging gotcha").
-define AngloFrisianBrighteningUnstressed [
+define EAFBrighteningUnstressed [
     {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
 ];
-define AngloFrisianBrighteningStressed [
+define EAFBrighteningStressed [
     {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
 # Long-vowel AFB clause for the surviving-bimoric outcome (R/T
@@ -1885,13 +1885,13 @@ define AngloFrisianBrighteningStressed [
 # fronts it to *-ǣ, which OEUnstressedLongVowelShortening6 later
 # reduces to *-æ. Narrow context `_ .#.` to avoid touching any
 # root-length *ā in medial position. See DEV_NOTES §17.10.23.
-define AngloFrisianBrighteningLongFinal [
+define EAFBrighteningLongFinal [
     {*ā} -> {*ǣ} || _ .#.
 ];
-define AngloFrisianBrightening [
-    AngloFrisianBrighteningUnstressed .o.
-    AngloFrisianBrighteningStressed .o.
-    AngloFrisianBrighteningLongFinal
+define EAFBrightening [
+    EAFBrighteningUnstressed .o.
+    EAFBrighteningStressed .o.
+    EAFBrighteningLongFinal
 ];
 
 # A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
@@ -3172,7 +3172,7 @@ define EnglishProtoToOE (
     # Output kept LONG (*-ā) so length is preserved through AFB; shortening
     # happens at R/T's dated OE stage (§6.8.3). See DEV_NOTES §17.10.23.
     .o. PWGmcSurvivingBimoricOUnrounding
-    .o. AngloFrisianBrightening
+    .o. EAFBrightening
     .o. OEBreaking
     # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
     .o. OEVelarFricativePalatalization
@@ -3338,7 +3338,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # R/T §3.1 pp.58-59: surviving bimoric *-ō (z-loss-exposed) → *-ā (long).
     # See DEV_NOTES §17.10.23.
     .o. PWGmcSurvivingBimoricOUnrounding
-    .o. AngloFrisianBrightening
+    .o. EAFBrightening
     .o. OEBreaking
     .o. OEVelarFricativePalatalization
     .o. OEARestoration

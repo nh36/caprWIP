@@ -87,7 +87,7 @@ STAGES: List[Tuple[str, str]] = [
     ("OEMedUnstressedULowering", "old_english_sandbox_after_oe_med_unstressed_u_lowering.bin"),
     ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
     ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),
-    ("AngloFrisianBrightening", "old_english_sandbox_after_anglo_frisian_brightening.bin"),
+    ("EAFBrightening", "old_english_sandbox_after_eaf_brightening.bin"),
     ("OEBreaking", "old_english_sandbox_after_oe_breaking.bin"),
     ("OEVelarFricativePalatalization", "old_english_sandbox_after_oe_velar_fricative_palatalization.bin"),
     ("OEARestoration", "old_english_sandbox_after_oe_a_restoration.bin"),
@@ -482,7 +482,7 @@ def write_report(
     stage_fires: Dict[str, List[str]] = defaultdict(list)
     fronted_rows: List[str] = []; unfronted_rows: List[str] = []; fronting_correct: List[str] = []; fronting_unfronting_correct: List[str] = []; fronting_unfronting_incorrect: List[str] = []
     for row in rows:
-        afb = run_stage(bin_dir, "old_english_sandbox_after_anglo_frisian_brightening.bin", row["proto_norm"]); ar = run_stage(bin_dir, "old_english_sandbox_after_oe_a_restoration.bin", row["proto_norm"])
+        afb = run_stage(bin_dir, "old_english_sandbox_after_eaf_brightening.bin", row["proto_norm"]); ar = run_stage(bin_dir, "old_english_sandbox_after_oe_a_restoration.bin", row["proto_norm"])
         afb_out = next((o for o in afb if o != "+?"), ""); ar_out = next((o for o in ar if o != "+?"), "")
         fronted = is_a_fronting_context(row["proto_norm"]) and oe_first_is_front(afb_out); unfronted = fronted and oe_first_is_back(ar_out)
         outputs = apply_down(bin_path, row["proto_norm"])

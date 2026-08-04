@@ -66,6 +66,7 @@ COMPLETED: dict[str, str] = {
     "SC020": "",
     "SC026": "",
     "SC027": "",
+    "SC043": "",
 }
 
 # Canonical rename set (task section 3). Each entry:

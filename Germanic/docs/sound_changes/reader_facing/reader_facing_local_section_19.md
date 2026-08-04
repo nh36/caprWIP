@@ -299,7 +299,7 @@ define PWGmcFinalOrLowering [
 ];
 ```
 
-OE *wæter* ‘water’ reveals why lowering must precede [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). If [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed until afterwards, PGmc [wátōr]{.recon} ‘water’ yields [*water*]{.pred} rather than expected OE *wæter* ‘water’: brightening can affect the vowel only after lowering has created its input. Moving the change earlier within the tested range alters no output.
+OE *wæter* ‘water’ reveals why lowering must precede [SC043 EAFBrightening](#rule-EAFBrightening). If [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed until afterwards, PGmc [wátōr]{.recon} ‘water’ yields [*water*]{.pred} rather than expected OE *wæter* ‘water’: brightening can affect the vowel only after lowering has created its input. Moving the change earlier within the tested range alters no output.
 
 The witness thus supplies a terminus ante quem at brightening but no earlier boundary. Comparative support for the \emph{*ō}-before-\emph{*r} rule comes from the two lexical witnesses [fedwōr]{.recon .iv lang=pgmc sort=fedwor role=evidence_form} 'four' and [watōr]{.recon .iv lang=pgmc sort=wator role=evidence_form} 'water' and their WGmc reflexes; kinship \emph{*r}-stems belong to the broader pre-\emph{*r} shortening context, not to a direct \emph{*ō} > \emph{*a} control. Within CAPR, [*wæter*]{.iv lang=oe sort=waeter role=evidence_form} 'water' is the form that establishes ordering before brightening. No broader lowering of \emph{*ō} is attested.
 
@@ -803,7 +803,7 @@ The two sides of final bare-\emph{a} loss rest on different evidence. Applied be
 The handbooks do not isolate a large independent sound change under this label.
 The surviving bimoric \emph{*ō} in the pathway to *ræste* ‘rest’ nevertheless
 undergoes unrounding before
-[SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening). Campbell, Hogg,
+[SC043 EAFBrightening](#rule-EAFBrightening). Campbell, Hogg,
 and Ringe and Taylor describe the surrounding fronting and restoration history
 without naming this feeder separately [@Campbell1959, pp. 52, 60,
 §§131, 157--158; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158,
@@ -819,7 +819,7 @@ define PWGmcSurvivingBimoricOUnrounding [
 ];
 ```
 
-The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
+The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
 
 \newpage
 
@@ -1026,10 +1026,10 @@ Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \em
 
 Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
 
-## \CAPRRuleHeading{SC043. Fronting of low \emph{*a} outside nasal environments}{AngloFrisianBrightening} {#rule-AngloFrisianBrightening}
+## \CAPRRuleHeading{SC043. Fronting of low \emph{*a} outside nasal environments}{EAFBrightening} {#rule-EAFBrightening}
 
 ```foma
-define AngloFrisianBrightening [
+define EAFBrightening [
     AngloFrisianBrighteningUnstressed .o.
     AngloFrisianBrighteningStressed .o.
     AngloFrisianBrighteningLongFinal
@@ -1304,7 +1304,7 @@ The long \emph{ēow} of *ċēowan* 'chew', *fēower* 'four', and *cnēow* 'knee'
 After [SC031 OEWWSimplification](#rule-OEWWSimplification) has reduced \emph{ww} to single \emph{w}, the remaining \emph{aw} sequence can develop into the long \emph{ēaw} seen in *dēaw* 'dew' and *hēawan* 'hew'. Campbell treats these outputs in the early diphthong history of West Germanic and Old English [@Campbell1959, pp. 46, 53--54, §§120, 135--136].
 The resulting long diphthong is \emph{ēaw}.
 
-[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) follows [SC031 OEWWSimplification](#rule-OEWWSimplification) locally and must also precede [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening).
+[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) follows [SC031 OEWWSimplification](#rule-OEWWSimplification) locally and must also precede [SC043 EAFBrightening](#rule-EAFBrightening).
 
 ## SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong}
 
@@ -1315,7 +1315,7 @@ define OEAwLongDiphthong [
 ];
 ```
 
-A local feeding relation and a later vowel change confine \emph{aw} > \emph{ēaw}. Before [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc [dáwwō]{.recon} ‘dew’ yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc [xáwwaną]{.recon} ‘hew’ yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. After [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [skáwōjaną]{.recon} ‘show’ yields [*sċawian*]{.pred} rather than expected OE *sċēawian* ‘show’, PGmc [skáwōθi]{.recon} ‘shows’ yields [*sċawaþ*]{.pred} rather than expected *sċēawaþ* 'shows', and PGmc [stráwą]{.recon} ‘straw’ yields [*stræw*]{.pred} rather than expected *strēaw* ‘straw’. The *dēaw* and *hēawan* forms require long-diphthong formation after simplification, while *sċēawian* requires it before brightening; the handbooks assign the same interval to the West Saxon development.
+A local feeding relation and a later vowel change confine \emph{aw} > \emph{ēaw}. Before [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc [dáwwō]{.recon} ‘dew’ yields [*dawu*]{.pred} rather than expected OE *dēaw* ‘dew’, and PGmc [xáwwaną]{.recon} ‘hew’ yields [*hawan*]{.pred} rather than expected *hēawan* ‘hew’. After [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [skáwōjaną]{.recon} ‘show’ yields [*sċawian*]{.pred} rather than expected OE *sċēawian* ‘show’, PGmc [skáwōθi]{.recon} ‘shows’ yields [*sċawaþ*]{.pred} rather than expected *sċēawaþ* 'shows', and PGmc [stráwą]{.recon} ‘straw’ yields [*stræw*]{.pred} rather than expected *strēaw* ‘straw’. The *dēaw* and *hēawan* forms require long-diphthong formation after simplification, while *sċēawian* requires it before brightening; the handbooks assign the same interval to the West Saxon development.
 
 \newpage
 
@@ -1344,7 +1344,7 @@ define OEPrefixAReduction [
 ];
 ```
 
-The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. Earlier placement changes no output, so the witness dates prefix reduction before brightening without locating its beginning.
+The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. Earlier placement changes no output, so the witness dates prefix reduction before brightening without locating its beginning.
 
 ## Historical discussion of inter-stress raising
 
@@ -1454,7 +1454,7 @@ define OEBreaking OEBreakingA
     .o. OEBreakingI;
 ```
 
-Breaking must encounter the vowel created by brightening and must precede the fricative change seen in *feoh* ‘fee’ and *feohtan* ‘fight’. Before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [sláxaną]{.recon} ‘slay’ yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. After [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), PGmc [féxu]{.recon} ‘cattle’ yields [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc [féxtaną]{.recon} ‘fight’ yields [*fehtan*]{.pred} rather than expected *feohtan*. The two feeding relations place breaking between brightening and velar-fricative palatalization.
+Breaking must encounter the vowel created by brightening and must precede the fricative change seen in *feoh* ‘fee’ and *feohtan* ‘fight’. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [sláxaną]{.recon} ‘slay’ yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. After [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), PGmc [féxu]{.recon} ‘cattle’ yields [*fehu*]{.pred} rather than expected OE *feoh*, and PGmc [féxtaną]{.recon} ‘fight’ yields [*fehtan*]{.pred} rather than expected *feohtan*. The two feeding relations place breaking between brightening and velar-fricative palatalization.
 
 ## \CAPRRuleHeading{SC045. Palatalization of velar fricatives beside front vowels}{OEVelarFricativePalatalization} {#rule-OEVelarFricativePalatalization}
 
@@ -1492,7 +1492,7 @@ define OEARestoration (
 );
 ```
 
-Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.
+Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.
 
 ## Historical discussion of heavy-syllable nasal loss and secondary nasalization
 

@@ -118,9 +118,9 @@ define SPWGmcFinalBareALoss SOEMedUnstressedULowering
     .o. PWGmcFinalBareALoss;
 define SPWGmcSurvivingBimoricOUnrounding SPWGmcFinalBareALoss
     .o. PWGmcSurvivingBimoricOUnrounding;
-define SAngloFrisianBrightening SPWGmcSurvivingBimoricOUnrounding
-    .o. AngloFrisianBrightening;
-define SOEBreaking SAngloFrisianBrightening
+define SEAFBrightening SPWGmcSurvivingBimoricOUnrounding
+    .o. EAFBrightening;
+define SOEBreaking SEAFBrightening
     .o. OEBreaking;
 define SOEVelarFricativePalatalization SOEBreaking
     .o. OEVelarFricativePalatalization;
@@ -413,8 +413,8 @@ regex SPWGmcSurvivingBimoricOUnrounding;
 save stack old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin
 
 clear stack
-regex SAngloFrisianBrightening;
-save stack old_english_sandbox_after_anglo_frisian_brightening.bin
+regex SEAFBrightening;
+save stack old_english_sandbox_after_eaf_brightening.bin
 
 clear stack
 regex SOEBreaking;

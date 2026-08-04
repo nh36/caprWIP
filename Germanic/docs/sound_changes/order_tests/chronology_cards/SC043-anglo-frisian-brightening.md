@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `43`
-- rule_name: `AngloFrisianBrightening`
+- rule_name: `EAFBrightening`
+- former_rule_name: `AngloFrisianBrightening`
 - safe computational window: `43-43`
 - status: `first_break_complete`
 

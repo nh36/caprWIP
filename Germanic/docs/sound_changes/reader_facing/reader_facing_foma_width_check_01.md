@@ -49,7 +49,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 32 | 68 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 12 | 28 | no |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 18 | 94 | yes |
-| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`AngloFrisianBrightening`) {#rule-AngloFrisianBrightening} | 11 | 41 | no |
+| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 11 | 41 | no |
 | 044-045-breaking-and-velar-fricative-palatalization.md | SC044. Breaking before \emph{h}, \emph{rC}, and \emph{lC} (`OEBreaking`) {#rule-OEBreaking} | 17 | 29 | no |
 | 044-045-breaking-and-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 27 | 44 | no |
 | 046-048-restoration-and-nasal-tail-changes.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |

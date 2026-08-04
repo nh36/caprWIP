@@ -23,7 +23,7 @@ define OEPrefixAReduction [
 ];
 ```
 
-The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [SC043 AngloFrisianBrightening](#rule-AngloFrisianBrightening), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. Earlier placement changes no output, so the witness dates prefix reduction before brightening without locating its beginning.
+The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġealīefan*]{.pred} rather than expected OE *ġelīefan* ‘believe’. Earlier placement changes no output, so the witness dates prefix reduction before brightening without locating its beginning.
 
 ## Historical discussion of inter-stress raising
 

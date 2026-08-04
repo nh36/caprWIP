@@ -6,10 +6,10 @@ Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \em
 
 Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
 
-## SC043. Fronting of low \emph{*a} outside nasal environments (`AngloFrisianBrightening`) {#rule-AngloFrisianBrightening}
+## SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening}
 
 ```foma
-define AngloFrisianBrightening [
+define EAFBrightening [
     AngloFrisianBrighteningUnstressed .o.
     AngloFrisianBrighteningStressed .o.
     AngloFrisianBrighteningLongFinal
