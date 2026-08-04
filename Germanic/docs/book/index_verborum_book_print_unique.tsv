@@ -734,7 +734,7 @@ pgmc	*spárōjaną	sparojana			5	evidence_form; selected_input; source_protoform
 pgmc	*spárrô	sparro			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	spar — OE spearra
 pgmc	*stábaz	stabaz			4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:23; Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53; staff — OE stæf
 pgmc	*stábiz	stabiz			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:22; Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:51; staff — OE stæf
-pgmc	*stámnaz	stamnaz			5	source_protoform	explicit_tag; lexical_protoform	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82
+pgmc	*stámnaz	stamnaz			6	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82
 pgmc	*stéllijaną	stellijana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	still — OE stillan
 pgmc	*straujan-	straujan			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:22
 pgmc	*stráwjaną	strawjana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	strew — OE *strīeġan

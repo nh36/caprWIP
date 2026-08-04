@@ -66,7 +66,7 @@ scholarship. The handbooks treat it as a pre-Old-English development (Luick §21
 Brunner §205), but the term "North-West Germanic coda dissimilation" should be taken
 as descriptive rather than technically established. This coda environment
 (`[C]mn → [C]fn`) is distinct from the cross-syllable `m → β` change (as in
-[xémonų]{.recon} 'heaven' → [`heofon`]{.iv lang=oe sort=heofon role=comparison_form} 'heaven') handled by the `NWGmcMnDissimilation` rule;
+[xémonų]{.recon} 'heaven' → [`heofon`]{.iv lang=oe sort=heofon role=comparison_form} 'heaven') handled by the `PNWGmcMnDissimilation` rule;
 it is currently not modeled in the FST.
 
 The correct OE-facing transponent has not yet been established for the FST pipeline.

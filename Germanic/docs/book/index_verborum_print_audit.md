@@ -1,8 +1,8 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2352
+- Internal production occurrences: 2353
 - Internal production unique forms: 1050
-- Printed main occurrences: 2264
+- Printed main occurrences: 2265
 - Printed main unique forms: 1040
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
@@ -16,7 +16,7 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1225 | 446 |
-| Proto-Germanic | 943 | 519 |
+| Proto-Germanic | 944 | 519 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 8 | 5 |
 | Pre-Old English / prehistoric English | 6 | 6 |
@@ -37,7 +37,7 @@
 | --- | ---: |
 | target_form | 373 |
 | source_protoform | 330 |
-| selected_input | 532 |
+| selected_input | 533 |
 | comparison_form | 821 |
 | evidence_form | 208 |
 
@@ -55,11 +55,11 @@
 - `example_input`: 107
 - `expected_output`: 130
 - `model_stage`: 70
-- `notation_or_segment`: 377
+- `notation_or_segment`: 378
 - `yielded_output`: 101
 
 - Reader-facing include_in_example_index=yes: 480
-- Reader-facing include_in_example_index=no: 377
+- Reader-facing include_in_example_index=no: 378
 
 ## Print-unique entry audit
 
@@ -214,9 +214,9 @@ _None._
 
 - `*z` (pgmc, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1000)
 - `*ō` (pgmc, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1000)
+- `*z` (pwgmc, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1002)
 - `*z` (pgmc, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1013)
 - `*befer` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1015)
 - `*befro` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1015)
 - `*bébruz` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1015)
 - `*cwedo` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1015)
-- `*cwedu` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1015)

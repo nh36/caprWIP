@@ -214,7 +214,8 @@ EXPLICIT_TAG_RE = re.compile(r"\[(?P<content>[^\]]+)\]\{(?P<attrs>[^}]*)\}")
 ATTR_RE = re.compile(r"(?P<key>[A-Za-z_][A-Za-z0-9_-]*)=(?P<value>\"[^\"]*\"|[^\s}]+)")
 STAGE_FORM_RE = re.compile(
     r"(?P<label>(?:PGmc|Proto-Germanic|PWGmc|Proto-West Germanic|Proto-West-Germanic|"
-    r"NWGmc|Proto-Northwest Germanic|Proto-Northwest-Germanic|OE|Old English|"
+    r"NWGmc|Proto-Northwest Germanic|Proto-Northwest-Germanic|EAF|Early Anglo-Frisian|"
+    r"OE|Old English|"
     r"West Saxon|WS|Anglo Frisian|Anglian)[^:\n<]{0,80}):\s*(?P<form>\*?[A-Za-zÀ-ɏḀ-ỿþðæǣœȳċġǭǫáéíóúāēīōūḗḯ'./()-]+)"
 )
 FAILURE_FORM_TOKEN_RE = (
@@ -734,6 +735,8 @@ def stage_to_language(label: str, form: str) -> str:
         return "pwgmc"
     if compact.startswith(("PNWGmc", "NWGmc", "Proto-Northwest Germanic", "Proto-Northwest-Germanic")):
         return "pnwgmc"
+    if compact.startswith(("EAF", "Early Anglo-Frisian")):
+        return "preoe"
     if compact.startswith(("Old Norse", "ON")):
         return "on"
     if compact.startswith(("Old Saxon", "OS")):

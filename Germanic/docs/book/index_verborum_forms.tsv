@@ -1977,6 +1977,7 @@ pgmc		stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lex
 pgmc		stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82:1	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 pgmc		stámnaz	*stámnaz	stamnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:90	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:90:1	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md	auto
 pgmc		*stámnaz	*stámnaz	stamnaz	source_protoform	lexical_protoform	stem — OE stefn	lexical-protoform:e38ada4778d0a3	manifest	auto
+pgmc		*stámnaz	*stámnaz	stamnaz	selected_input	trace_proto_input	stem — OE stefn	trace:6da61f3a132e39	compact	auto
 pgmc		*stélaną	*stélaną	stelana	selected_input	trace_proto_input	steal — OE stelan	trace:0893c2062cbc2f	compact	auto
 pgmc		*stéllijaną	*stéllijaną	stellijana	source_protoform	lexical_protoform	still — OE stillan	lexical-protoform:41abc9d187a190	manifest	auto
 pgmc		*stéllijaną	*stéllijaną	stellijana	selected_input	trace_proto_input	still — OE stillan	trace:7af070e107ab02	compact	auto
