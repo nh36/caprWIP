@@ -2,7 +2,8 @@
 
 ## Current position
 - current_order: `28`
-- rule_name: `NWGmcPreconsonantalXLoss`
+- rule_name: `PNWGmcPreconsonantalXLoss`
+- former_rule_name: `NWGmcPreconsonantalXLoss`
 - safe computational window: `13-86` (earlier side runner-limited; later side boundary-limited)
 - status: `first_break_complete`
 

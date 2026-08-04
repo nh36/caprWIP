@@ -156,11 +156,12 @@ SC027	NWGmc Nasal Spirant Loss	Northwest Germanic Nasal Spirant Loss	normalized_
 SC027	NWGmc Nasal Spirant Loss	NWGmc Nasal Spirant Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC027	NWGmc Nasal Spirant Loss	loss of nasal before fricative	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
 SC027	NWGmc Nasal Spirant Loss	nasal spirant law	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
-SC028	NWGmc Preconsonantal X Loss	NWGmc Preconsonantal X Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC028	NWGmc Preconsonantal X Loss	NWGmcPreconsonantalXLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC028	NWGmc Preconsonantal X Loss	NWGmcPreconsonantalXLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
-SC028	NWGmc Preconsonantal X Loss	Northwest Germanic Preconsonantal X Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
-SC028	NWGmc Preconsonantal X Loss	NWGmc Preconsonantal X Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC028	Proto-Northwest Germanic Preconsonantal X Loss	NWGmc Preconsonantal X Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC028	Proto-Northwest Germanic Preconsonantal X Loss	PNWGmcPreconsonantalXLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC028	Proto-Northwest Germanic Preconsonantal X Loss	PNWGmcPreconsonantalXLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC028	Proto-Northwest Germanic Preconsonantal X Loss	Northwest Germanic Preconsonantal X Loss	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
+SC028	Proto-Northwest Germanic Preconsonantal X Loss	NWGmc Preconsonantal X Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC028	Proto-Northwest Germanic Preconsonantal X Loss	NWGmcPreconsonantalXLoss	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC029	OE Awj Glide Formation	OE Awj Glide Formation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC029	OE Awj Glide Formation	OEAwjGlideFormation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC029	OE Awj Glide Formation	OEAwjGlideFormation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt

@@ -2744,7 +2744,7 @@ define EAFNasalSpirantLoss [
 # the broader `*x → 0 / _ CC` schema overgenerated, deleting the first *x of a *xx*j
 # geminate. See DEV_NOTES §17.40 for the dossier.
 # Must follow NSL (which creates the *xst cluster) and precede breaking/i-umlaut.
-define NWGmcPreconsonantalXLoss [
+define PNWGmcPreconsonantalXLoss [
     {*x} -> 0 || _ {*s} EnglishStarConsonant
 ];
 
@@ -3129,7 +3129,7 @@ define EnglishProtoToOE (
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
-    .o. NWGmcPreconsonantalXLoss
+    .o. PNWGmcPreconsonantalXLoss
     .o. OEAwjGlideFormation
     .o. OEAuFronting
     .o. OEWWSimplification
@@ -3319,7 +3319,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417)
-    .o. NWGmcPreconsonantalXLoss
+    .o. PNWGmcPreconsonantalXLoss
     .o. OEAwjGlideFormation
     .o. OEAuFronting
     .o. OEWWSimplification

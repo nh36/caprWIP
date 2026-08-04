@@ -23,7 +23,7 @@ position	foma_identifier	origin_block
 22	PNWGmcLongENasalRounding	EnglishProtoToOE
 23	EAFNasalSpirantLengthening	EnglishProtoToOE
 24	EAFNasalSpirantLoss	EnglishProtoToOE
-25	NWGmcPreconsonantalXLoss	EnglishProtoToOE
+25	PNWGmcPreconsonantalXLoss	EnglishProtoToOE
 26	OEAwjGlideFormation	EnglishProtoToOE
 27	OEAuFronting	EnglishProtoToOE
 28	OEWWSimplification	EnglishProtoToOE

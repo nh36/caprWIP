@@ -6,12 +6,12 @@ Campbell explicitly treats loss of \emph{x} and gives forms such as *fléam* ‘
 
 The historical evidence is firmer than the chronology: the lexical evidence does not constrain the rule's position.
 
-## SC028. Loss of preconsonantal \emph{*x} (`NWGmcPreconsonantalXLoss`) {#rule-NWGmcPreconsonantalXLoss}
+## SC028. Loss of preconsonantal \emph{*x} (`PNWGmcPreconsonantalXLoss`) {#rule-PNWGmcPreconsonantalXLoss}
 
 ```foma
-define NWGmcPreconsonantalXLoss [
+define PNWGmcPreconsonantalXLoss [
     {*x} -> 0 || _ {*s} EnglishStarConsonant
 ];
 ```
 
-No witness word dates preconsonantal \emph{*x}-loss before \emph{*s} plus another consonant: moving [SC028 NWGmcPreconsonantalXLoss](#rule-NWGmcPreconsonantalXLoss) in either direction leaves every output unchanged. Its position within this stretch therefore rests on the handbook chronology for \emph{x}-loss.
+No witness word dates preconsonantal \emph{*x}-loss before \emph{*s} plus another consonant: moving [SC028 PNWGmcPreconsonantalXLoss](#rule-PNWGmcPreconsonantalXLoss) in either direction leaves every output unchanged. Its position within this stretch therefore rests on the handbook chronology for \emph{x}-loss.
