@@ -11,7 +11,8 @@ Gates implemented here (task section 7):
   B  Lexical-output identity: recompiling and re-applying preserves the frozen
      outputs_sha256 (and accepted/matched/mismatched counts).
   E' Executable order unchanged: the live order manifest equals the frozen
-     manifest with (former -> canonical) substituted at the renamed slot only.
+     (original) manifest after undoing ALL completed relabelings (former ->
+     canonical), proving relabeling only, never reordering.
   G  Former-name audit: the former identifier and its snake/kebab derivatives are
      absent from active source and generated output, except individually
      allowlisted archival references.
@@ -107,6 +108,25 @@ def gate_b_output_identity() -> list[str]:
     return errors
 
 
+def _completed_rename_map(former: str, canonical: str) -> dict[str, str]:
+    """former_foma_identifier -> canonical_foma_identifier for every completed
+    rename, so gate E compares the live order against the frozen (original) order
+    after undoing *all* relabelings, not just the current rule's. This keeps the
+    order-identity check valid as renames accumulate."""
+    mapping: dict[str, str] = {}
+    manifest = BASELINE_DIR / "rename_migration_manifest.tsv"
+    if manifest.exists():
+        with manifest.open(encoding="utf-8") as handle:
+            for row in csv.DictReader(handle, delimiter="\t"):
+                if row.get("migration_status") == "completed":
+                    f, c = row.get("former_foma_identifier", ""), row.get("canonical_foma_identifier", "")
+                    if f and c and f != c:
+                        mapping[f] = c
+    # Ensure the current rule is included even if not yet marked completed.
+    mapping[former] = canonical
+    return mapping
+
+
 def gate_e_order_unchanged(former: str, canonical: str) -> list[str]:
     errors: list[str] = []
     import cascade_order_manifest as com
@@ -115,8 +135,9 @@ def gate_e_order_unchanged(former: str, canonical: str) -> list[str]:
         frozen = list(csv.DictReader(handle, delimiter="\t"))
     if len(live) != len(frozen):
         return [f"E: manifest length changed {len(frozen)} -> {len(live)}"]
+    rename_map = _completed_rename_map(former, canonical)
     for i, (lrow, frow) in enumerate(zip(live, frozen), start=1):
-        expected = canonical if frow["foma_identifier"] == former else frow["foma_identifier"]
+        expected = rename_map.get(frow["foma_identifier"], frow["foma_identifier"])
         if lrow["foma_identifier"] != expected:
             errors.append(f"E: position {i} expected {expected!r} got {lrow['foma_identifier']!r}")
     return errors
