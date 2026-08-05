@@ -1465,33 +1465,32 @@ define EnglishLongVowelRealisation [
 # PWGmc is the common ancestor of OE, OS, OHG, OF - the "West Germanic" stage.
 # These rules model critical PWGmc developments per R/T §3.1.
 
-# Traditional West Germanic monophthongization, with word-final split
-# (§17.12): unstressed word-final *ai → *ē (R/T §6.1.5), elsewhere *ai → *ā.
-# SC004 was formerly the bundled rule PWGmcAiMonophthongization, packaging two
-# historically distinct changes (see sc004_historical_options_report.md,
-# sc004_split_movement_proofs.md; Versloot 2017; R/T pp.40-41). It is now split:
+# Monophthongization of inherited *ai, split into two historically distinct
+# changes (see sc004_component_dossier, sc004_historical_options_report.md;
+# Ringe-Taylor pp.40-41 §6.1.5; Versloot 2017). SC004 was formerly the bundled
+# rule PWGmcAiMonophthongization. Application analysis uses the Old-English-row
+# PROTOFORM (the production input), not the cognate-set PROTO field:
 #
-#   SC014  PNWGmcUnstressedAiMonophthongization : word-final unstressed *ai -> *ē
-#          (Proto-Northwest Germanic, early; R/T §6.1.5, pp.40-41). Executes at the
-#          head of EarlyEnglishLineChanges. The word-final rule fires first so the
-#          *ai of the fem. ō-stem dat.sg. (*spannai) is not consumed by the later
-#          general monophthongization.
+#   SC014  PNWGmcUnstressedAiMonophthongization : unstressed *ai -> *ē, in final
+#          AND nonfinal environments (Ringe-Taylor's rule is unstressed *ai > *ē,
+#          not merely word-final; Proto-Northwest Germanic, early). Executes at the
+#          head of EarlyEnglishLineChanges. Corpus witnesses: the dat.sg endings
+#          *spánnai (span -> spanne) and *mízdai (meed -> meorde).
 #
-#   SC004  EAFAiMonophthongization : general *ai/*ái -> *ā (Early Anglo-Frisian /
+#   SC004  EAFAiMonophthongization : stressed/root *ái -> *ā (Early Anglo-Frisian /
 #          North Sea Germanic, later, areally diffused; Versloot 2017). Executes in
-#          the EAF corridor, after SC028 PNWGmcPreconsonantalXLoss. The unstressed
-#          sub-rule is scoped to non-final position so it does not depend on SC014
-#          having run immediately beforehand.
+#          the EAF corridor, after SC028 PNWGmcPreconsonantalXLoss. 24 stressed
+#          corpus witnesses incl. loam *láimą (stressed *ái by its PROTOFORM),
+#          stone *stáinaz, soul *sáiwalō. No nonfinal unstressed root *ai remains
+#          in the corpus, so no {*ai}->{*ā} branch is needed.
 define PNWGmcUnstressedAiMonophthongization [
-    {*ai} -> {*ē} || _ .#.
+    {*ai} -> {*ē}
 ];
 define EAFAiMonophthongization [
-    [{*ai} -> {*ā} || _ ?]
-    .o.
-    [{*ái} -> {*ā}]
+    {*ái} -> {*ā}
 ];
-# Former identifier, retained as a documented compatibility alias only (the
-# bundled relation A .o. (B .o. C)); NOT composed in any production pipeline.
+# Former identifier, retained as a documented compatibility alias only
+# (SC014 .o. SC004); NOT composed in any production pipeline.
 define PWGmcAiMonophthongization [
     PNWGmcUnstressedAiMonophthongization
     .o. EAFAiMonophthongization
@@ -2072,10 +2071,11 @@ define PNWGmcILowering [
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
 # §17.12: The former PNWGmcUnstressedAiMonophthongization ({*ăi} -> {*ē}) no-op
-# has been removed. As of the SC004 split, PNWGmcUnstressedAiMonophthongization is
-# defined near line ~1472 with the live word-final rule {*ai} -> {*ē} || _ .#.
-# and executes at the head of EarlyEnglishLineChanges (its old SC004 slot). The
-# breve-marked {*ăi} placeholder is gone. See sc004_split_movement_proofs.md.
+# has been removed. As of the corrective PROTOFORM pass,
+# PNWGmcUnstressedAiMonophthongization is defined near line ~1486 with the live
+# rule {*ai} -> {*ē} (unstressed *ai, final AND nonfinal) and executes at the
+# head of EarlyEnglishLineChanges (its old SC004 slot). The breve-marked {*ăi}
+# placeholder is gone. See sc004_component_dossier.md.
 
 # PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
 # The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).

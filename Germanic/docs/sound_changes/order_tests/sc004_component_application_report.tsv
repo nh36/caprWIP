@@ -1,27 +1,29 @@
-concept	proto_input	expected_oe	before_sc004	after_A	after_AB	after_full_sc004	components_applied	derivation_class
-loam	*laimōn	lām	*l*ai*m*ō*n	*l*ai*m*ō*n	*l*ā*m*ō*n	*l*ā*m*ō*n	B_nonfinal_ai_to_a	early_analogy
-whine	*wainōjaną	hwīnan	*w*ai*n*ō*j*a*n*ą	*w*ai*n*ō*j*a*n*ą	*w*ā*n*ō*j*a*n*ą	*w*ā*n*ō*j*a*n*ą	B_nonfinal_ai_to_a	early_analogy
-bone	*báiną	bān	*b*ái*n*ą	*b*ái*n*ą	*b*ái*n*ą	*b*ā*n*ą	C_stressed_ai_to_a	regular
-deal	*dáiliz	dǣl	*d*ái*l*i*z	*d*ái*l*i*z	*d*ái*l*i*z	*d*ā*l*i*z	C_stressed_ai_to_a	regular
-dough	*dáigaz	dāg	*d*ái*g*a*z	*d*ái*g*a*z	*d*ái*g*a*z	*d*ā*g*a*z	C_stressed_ai_to_a	regular
-flesh	*fláiskiz	flǣsċ	*f*l*ái*s*k*i*z	*f*l*ái*s*k*i*z	*f*l*ái*s*k*i*z	*f*l*ā*s*k*i*z	C_stressed_ai_to_a	regular
-ghost	*gáistaz	gāst	*g*ái*s*t*a*z	*g*ái*s*t*a*z	*g*ái*s*t*a*z	*g*ā*s*t*a*z	C_stressed_ai_to_a	regular
-heal	*xáilijaną	hǣlan	*x*ái*l*i*j*a*n*ą	*x*ái*l*i*j*a*n*ą	*x*ái*l*i*j*a*n*ą	*x*ā*l*i*j*a*n*ą	C_stressed_ai_to_a	regular
-heath	*xáiθiz	hǣþ	*x*ái*θ*i*z	*x*ái*θ*i*z	*x*ái*θ*i*z	*x*ā*θ*i*z	C_stressed_ai_to_a	regular
-home	*xáimaz	hām	*x*ái*m*a*z	*x*ái*m*a*z	*x*ái*m*a*z	*x*ā*m*a*z	C_stressed_ai_to_a	regular
-last	*láistijaną	lǣstan	*l*ái*s*t*i*j*a*n*ą	*l*ái*s*t*i*j*a*n*ą	*l*ái*s*t*i*j*a*n*ą	*l*ā*s*t*i*j*a*n*ą	C_stressed_ai_to_a	regular
-lead	*láidijaną	lǣdan	*l*ái*d*i*j*a*n*ą	*l*ái*d*i*j*a*n*ą	*l*ái*d*i*j*a*n*ą	*l*ā*d*i*j*a*n*ą	C_stressed_ai_to_a	regular
-loath	*láiθaz	lāþ	*l*ái*θ*a*z	*l*ái*θ*a*z	*l*ái*θ*a*z	*l*ā*θ*a*z	C_stressed_ai_to_a	regular
-mean	*máinijaną	mǣnan	*m*ái*n*i*j*a*n*ą	*m*ái*n*i*j*a*n*ą	*m*ái*n*i*j*a*n*ą	*m*ā*n*i*j*a*n*ą	C_stressed_ai_to_a	regular
-one	*áinaz	ān	*ái*n*a*z	*ái*n*a*z	*ái*n*a*z	*ā*n*a*z	C_stressed_ai_to_a	regular
-roe	*ráixōn	-	*r*ái*x*ō*n	*r*ái*x*ō*n	*r*ái*x*ō*n	*r*ā*x*ō*n	C_stressed_ai_to_a	
-rope	*ráipą	rāp	*r*ái*p*ą	*r*ái*p*ą	*r*ái*p*ą	*r*ā*p*ą	C_stressed_ai_to_a	regular
-sea	*sái	sǣ	*s*ái	*s*ái	*s*ái	*s*ā	C_stressed_ai_to_a	early_analogy
-sheath	*skáiθiz	sċēaþ	*s*k*ái*θ*i*z	*s*k*ái*θ*i*z	*s*k*ái*θ*i*z	*s*k*ā*θ*i*z	C_stressed_ai_to_a	regular
-snow	*snáiwaz	snāw	*s*n*ái*w*a*z	*s*n*ái*w*a*z	*s*n*ái*w*a*z	*s*n*ā*w*a*z	C_stressed_ai_to_a	regular
-soul	*sáiwalō	sāwol	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	*s*ā*w*a*l*ō	C_stressed_ai_to_a	regular
-spread	*spráidijaną	sprǣdan	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ā*d*i*j*a*n*ą	C_stressed_ai_to_a	regular
-stone	*stáinaz	stān	*s*t*ái*n*a*z	*s*t*ái*n*a*z	*s*t*ái*n*a*z	*s*t*ā*n*a*z	C_stressed_ai_to_a	regular
-toe	*táixōn	tā	*t*ái*x*ō*n	*t*ái*x*ō*n	*t*ái*x*ō*n	*t*ā*x*ō*n	C_stressed_ai_to_a	regular
-token	*táikną	tācn	*t*ái*k*n*ą	*t*ái*k*n*ą	*t*ái*k*n*ą	*t*ā*k*n*ą	C_stressed_ai_to_a	regular
-withy	*wáiθiz	wīþiġ	*w*ái*θ*i*z	*w*ái*θ*i*z	*w*ái*θ*i*z	*w*ā*θ*i*z	C_stressed_ai_to_a	early_analogy
+concept	row_id	PROTO	PROTOFORM	prod_input_norm	prod_field	counterpart	derivation_class	sc014_applies	sc004_applies	rewrite_applied	proto_protoform_disagree	before	after_sc014	after_sc004	row_note
+bone	1954	*báiną	*báiną	báiną	PROTOFORM	bān	regular	no	yes	SC004:{*ái}->{*ā}	no	*b*ái*n*ą	*b*ái*n*ą	*b*ā*n*ą	Proto: oblique *bainăn→*bainą (n. a-stem nom.sg.; Kroonen)
+deal	1986	*dáiliz	*dáiliz	dáiliz	PROTOFORM	dǣl	regular	no	yes	SC004:{*ái}->{*ā}	no	*d*ái*l*i*z	*d*ái*l*i*z	*d*ā*l*i*z	
+dough	1993	*dáigaz	*dáigaz	dáigaz	PROTOFORM	dāg	regular	no	yes	SC004:{*ái}->{*ā}	no	*d*ái*g*a*z	*d*ái*g*a*z	*d*ā*g*a*z	
+flesh	2020	*fláiskiz	*fláiskiz	fláiskiz	PROTOFORM	flǣsċ	regular	no	yes	SC004:{*ái}->{*ā}	no	*f*l*ái*s*k*i*z	*f*l*ái*s*k*i*z	*f*l*ā*s*k*i*z	
+ghost	2039	*gáistaz	*gáistaz	gáistaz	PROTOFORM	gāst	regular	no	yes	SC004:{*ái}->{*ā}	no	*g*ái*s*t*a*z	*g*ái*s*t*a*z	*g*ā*s*t*a*z	
+heal	2064	*xáilijaną	*xáilijaną	xáilijaną	PROTOFORM	hǣlan	regular	no	yes	SC004:{*ái}->{*ā}	no	*x*ái*l*i*j*a*n*ą	*x*ái*l*i*j*a*n*ą	*x*ā*l*i*j*a*n*ą	
+heath	2067	*xáiθiz	*xáiθiz	xáiθiz	PROTOFORM	hǣþ	regular	no	yes	SC004:{*ái}->{*ā}	no	*x*ái*θ*i*z	*x*ái*θ*i*z	*x*ā*θ*i*z	
+home	2078	*xáimaz	*xáimaz	xáimaz	PROTOFORM	hām	regular	no	yes	SC004:{*ái}->{*ā}	no	*x*ái*m*a*z	*x*ái*m*a*z	*x*ā*m*a*z	
+last	2091	*láistijaną	*láistijaną	láistijaną	PROTOFORM	lǣstan	regular	no	yes	SC004:{*ái}->{*ā}	no	*l*ái*s*t*i*j*a*n*ą	*l*ái*s*t*i*j*a*n*ą	*l*ā*s*t*i*j*a*n*ą	
+lead	2093	*láidijaną	*láidijaną	láidijaną	PROTOFORM	lǣdan	regular	no	yes	SC004:{*ái}->{*ā}	no	*l*ái*d*i*j*a*n*ą	*l*ái*d*i*j*a*n*ą	*l*ā*d*i*j*a*n*ą	R/T vol.2 13527-29: PGmc *laidijaną > OE lǣdan (to lead)
+loam	2109	*laimōn	*láimą	láimą	PROTOFORM	lām	early_analogy	no	yes	SC004:{*ái}->{*ā}	yes	*l*ái*m*ą	*l*ái*m*ą	*l*ā*m*ą	
+loath	2110	*láiθaz	*láiθaz	láiθaz	PROTOFORM	lāþ	regular	no	yes	SC004:{*ái}->{*ā}	no	*l*ái*θ*a*z	*l*ái*θ*a*z	*l*ā*θ*a*z	
+mean	2123	*máinijaną	*máinijaną	máinijaną	PROTOFORM	mǣnan	regular	no	yes	SC004:{*ái}->{*ā}	no	*m*ái*n*i*j*a*n*ą	*m*ái*n*i*j*a*n*ą	*m*ā*n*i*j*a*n*ą	
+one	2144	*áinaz	*áinaz	áinaz	PROTOFORM	ān	regular	no	yes	SC004:{*ái}->{*ā}	no	*ái*n*a*z	*ái*n*a*z	*ā*n*a*z	
+roe	2156	*ráixōn	*ráixōn	ráixōn	PROTOFORM	-		no	yes	SC004:{*ái}->{*ā}	no	*r*ái*x*ō*n	*r*ái*x*ō*n	*r*ā*x*ō*n	Unattested OE; reconstructed *hrogn.
+rope	2159	*ráipą	*ráipą	ráipą	PROTOFORM	rāp	regular	no	yes	SC004:{*ái}->{*ā}	no	*r*ái*p*ą	*r*ái*p*ą	*r*ā*p*ą	
+sea	2169	*sái	*sáiwiz	sáiwiz	PROTOFORM	sǣ	early_analogy	no	yes	SC004:{*ái}->{*ā}	yes	*s*ái*w*i*z	*s*ái*w*i*z	*s*ā*w*i*z	Kroonen (2013): *saiwi- m. 'sea', i-stem; R/T §6.7.1: *w lost before *i → *sāwi > *sǣi > sǣ
+sheath	2178	*skáiθiz	*skáiθiz	skáiθiz	PROTOFORM	sċēaþ	regular	no	yes	SC004:{*ái}->{*ā}	no	*s*k*ái*θ*i*z	*s*k*ái*θ*i*z	*s*k*ā*θ*i*z	
+snow	2199	*snáiwaz	*snáiwaz	snáiwaz	PROTOFORM	snāw	regular	no	yes	SC004:{*ái}->{*ā}	no	*s*n*ái*w*a*z	*s*n*ái*w*a*z	*s*n*ā*w*a*z	
+soul	2201	*sáiwalō	*sáiwalō	sáiwalō	PROTOFORM	sāwol	regular	no	yes	SC004:{*ái}->{*ā}	no	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	*s*ā*w*a*l*ō	
+spread	2210	*spráidijaną	*spráidijaną	spráidijaną	PROTOFORM	sprǣdan	regular	no	yes	SC004:{*ái}->{*ā}	no	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ā*d*i*j*a*n*ą	
+stone	2220	*stáinaz	*stáinaz	stáinaz	PROTOFORM	stān	regular	no	yes	SC004:{*ái}->{*ā}	no	*s*t*ái*n*a*z	*s*t*ái*n*a*z	*s*t*ā*n*a*z	
+toe	2259	*táixōn	*táixōn	táixōn	PROTOFORM	tā	regular	no	yes	SC004:{*ái}->{*ā}	no	*t*ái*x*ō*n	*t*ái*x*ō*n	*t*ā*x*ō*n	
+token	2260	*táikną	*táikną	táikną	PROTOFORM	tācn	regular	no	yes	SC004:{*ái}->{*ā}	no	*t*ái*k*n*ą	*t*ái*k*n*ą	*t*ā*k*n*ą	Proto: oblique *taiknăn→*taikną (n. a-stem nom.sg.; Kroonen)
+meed	2124	*mizdō	*mízdai	mízdai	PROTOFORM	meorde	late_analogy	yes	no	SC014:{*ai}->{*ē}	yes	*m*í*r*d*ai	*m*í*r*d*ē	*m*í*r*d*ē	Paradigm-cell switch to dat.sg. *mízdai > meorde, the directly-attested OE oblique (Bede 4.17 var.; Phoenix 17; GD 227.16; gen.pl. meorda GD 312.14). Lautgesetzlich via the regular ō-stem dat.sg. c...
+span	2203	*spannō	*spánnai	spánnai	PROTOFORM	spanne	late_analogy	yes	no	SC014:{*ai}->{*ē}	yes	*s*p*á*n*n*ai	*s*p*á*n*n*ē	*s*p*á*n*n*ē	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ai preserves medial geminate; unstressed word-final *ai→*ē (R/T §6.1.5; §17.12).
+whine	2286	*wainōjaną	*xwḯnaną	xwḯnaną	PROTOFORM	hwīnan	early_analogy	no	no	none	yes	*x*w*ḯ*n*a*n*ą	*x*w*ḯ*n*a*n*ą	*x*w*ḯ*n*a*n*ą	
+withy	2296	*wáiθiz	*wḯθagą	wḯθagą	PROTOFORM	wīþiġ	early_analogy	no	no	none	yes	*w*ḯ*θ*a*g*ą	*w*ḯ*θ*a*g*ą	*w*ḯ*θ*a*g*ą	Campbell §275(7), §376: OE -ig < PGmc *-ag- (cf. *xúnagą → huniġ); see DEV_NOTES §17.10.35 and notable_findings §9. Wiktionary/Kluge *wīþja- cannot derive -ig (heavy ja-stem yields -e/-Ø).

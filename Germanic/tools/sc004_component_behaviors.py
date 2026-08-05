@@ -1,26 +1,22 @@
 #!/usr/bin/env python3
-"""SC004 split component-behavior probe (permanent evidence generator).
+"""SC004/SC014 split component-behavior probe (permanent evidence generator).
 
-After the SC004 Outcome-C split, the bundled PWGmcAiMonophthongization is
-separated into two production rules that live at different cascade stages:
+After the corrective PROTOFORM pass, the two production rules are the
+historically cleaner pair:
 
-  SC014  PNWGmcUnstressedAiMonophthongization : {*ai} -> {*e} || _ .#.
-         (word-final unstressed *ai; Proto-Northwest Germanic, early)
-  SC004  EAFAiMonophthongization              : [{*ai}->{*a} || _ ?] .o. [{*ai(acute)}->{*a}]
-         (general/root *ai/*ai(acute); Early Anglo-Frisian, later)
+  SC014  PNWGmcUnstressedAiMonophthongization : {*ai} -> {*ē}
+         (unstressed *ai, in final AND nonfinal environments; Ringe-Taylor's
+         rule is unstressed *ai > *ē, not merely word-final)
+  SC004  EAFAiMonophthongization              : {*ái} -> {*ā}
+         (stressed/root *ái; Early Anglo-Frisian / North Sea Germanic)
 
 This tool applies each production define (and the retained compatibility alias
-PWGmcAiMonophthongization) to a curated set of internal star-representation
-probe forms and records the observed output against the expected output. It is
-the foma-backed evidence behind tests/test_sc004_component_split.py.
+PWGmcAiMonophthongization = SC014 .o. SC004) to internal star-representation
+probes covering both Ringe-Taylor handbook paradigm examples (final AND nonfinal
+unstressed *ai) and the actual corpus PROTOFORM values, and records observed vs
+expected. It is the foma-backed evidence behind tests/test_sc004_component_split.py.
 
 Runs inside the backend container (needs foma/flookup); CWD = /usr/app.
-Writes a TSV to --out (default the committed evidence path).
-
-The probes deliberately include the fem. o-stem dat.sg. *spannai (word-final
-unstressed *ai): it has no corpus attestation but is the canonical form the
-final/general split must keep distinct, so it is the clearest demonstration
-that SC014 (final only) and SC004 (nonfinal/stressed only) do not overlap.
 """
 from __future__ import annotations
 
@@ -30,8 +26,6 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-# Regex the three production defines straight out of germanic.txt (they already
-# exist there after the split) and snapshot each to its own bin.
 FOMA_SCRIPT = r"""
 source fsts/germanic.txt
 clear stack
@@ -54,42 +48,51 @@ BIN_BY_RULE = {
 
 # (probe_id, rule_key, input, expected_output, note)
 PROBES = [
-    # SC014 performs the word-final unstressed *ai -> *e change.
-    ("final_ai_to_e", "SC014_PNWGmcUnstressedAiMonophthongization",
-     "*s*p*a*n*n*ai", "*s*p*a*n*n*ē",
-     "fem. o-stem dat.sg *spannai: word-final unstressed *ai -> *e"),
-    # SC014 does NOT perform the general/root *ai -> *a development.
+    # --- Ringe-Taylor handbook paradigm examples: unstressed *ai > *ē ---
+    ("rt_final_dagai", "SC014_PNWGmcUnstressedAiMonophthongization",
+     "*d*a*g*ai", "*d*a*g*ē",
+     "R/T word-final unstressed *dagai > *dagē"),
+    ("rt_nonfinal_berain", "SC014_PNWGmcUnstressedAiMonophthongization",
+     "*b*e*r*ai*n", "*b*e*r*ē*n",
+     "R/T NONFINAL unstressed *berain > *berēn (needs SC014 without ||_.#.)"),
+    ("rt_nonfinal_habaisi", "SC014_PNWGmcUnstressedAiMonophthongization",
+     "*h*a*b*ai*s*i", "*h*a*b*ē*s*i",
+     "R/T nonfinal unstressed *habaisi > *habēsi at the SC014 checkpoint"),
+    ("rt_nonfinal_godaimaz", "SC014_PNWGmcUnstressedAiMonophthongization",
+     "*g*ō*d*ai*m*a*z", "*g*ō*d*ē*m*a*z",
+     "R/T nonfinal unstressed *gōdaimaz > *gōdēmaz"),
+    # SC014 does NOT touch stressed *ái.
     ("sc014_leaves_stressed", "SC014_PNWGmcUnstressedAiMonophthongization",
-     "*s*ái*w*a*l*ō", "*s*ái*w*a*l*ō",
-     "soul: stressed root *ai(acute) is untouched by SC014 (final-only)"),
-    ("sc014_leaves_nonfinal", "SC014_PNWGmcUnstressedAiMonophthongization",
-     "*l*ai*m*ō*n", "*l*ai*m*ō*n",
-     "loam: nonfinal unaccented *ai is untouched by SC014 (final-only)"),
-    # SC004 performs stressed *ai(acute) -> *a.
-    ("sc004_stressed_ai_to_a", "SC004_EAFAiMonophthongization",
-     "*s*ái*w*a*l*ō", "*s*ā*w*a*l*ō",
-     "soul: stressed root *ai(acute) -> *a (SC036 boundary witness)"),
-    # SC004 handles the two unaccented root cases (no accent in the data).
-    ("sc004_loam_nonfinal", "SC004_EAFAiMonophthongization",
-     "*l*ai*m*ō*n", "*l*ā*m*ō*n",
-     "loam: unaccented nonfinal *ai -> *a"),
-    ("sc004_whine_nonfinal", "SC004_EAFAiMonophthongization",
-     "*w*ai*n*ō*j*a*n*ą", "*w*ā*n*ō*j*a*n*ą",
-     "whine: unaccented nonfinal *ai -> *a"),
-    # SC004 does NOT touch word-final unstressed *ai (clean separation from SC014).
-    ("sc004_leaves_final", "SC004_EAFAiMonophthongization",
-     "*s*p*a*n*n*ai", "*s*p*a*n*n*ai",
-     "fem. o-stem dat.sg *spannai: word-final unstressed *ai untouched by SC004"),
-    # Compatibility alias reproduces the bundled relation A .o. (B .o. C).
-    ("alias_final_path", "ALIAS_PWGmcAiMonophthongization",
-     "*s*p*a*n*n*ai", "*s*p*a*n*n*ē",
-     "alias == A.o.(B.o.C): final *ai -> *e via A"),
+     "*s*t*ái*n*a*z", "*s*t*ái*n*a*z",
+     "stressed *stáinaz untouched by SC014 (stressed is SC004)"),
+    # --- stressed/root *ái > *ā (SC004) ---
+    ("sc004_stressed_stainaz", "SC004_EAFAiMonophthongization",
+     "*s*t*ái*n*a*z", "*s*t*ā*n*a*z",
+     "stressed/root *stáinaz > *stānaz"),
+    # SC004 does NOT touch unstressed *ai.
+    ("sc004_leaves_unstressed", "SC004_EAFAiMonophthongization",
+     "*s*p*á*n*n*ai", "*s*p*á*n*n*ai",
+     "unstressed final *spánnai untouched by SC004 (unstressed is SC014)"),
+    # --- actual corpus PROTOFORM values ---
+    ("corpus_span_sc014", "SC014_PNWGmcUnstressedAiMonophthongization",
+     "*s*p*á*n*n*ai", "*s*p*á*n*n*ē",
+     "corpus span *spánnai (dat.sg) > *spánnē via SC014 (-> OE spanne)"),
+    ("corpus_loam_sc004", "SC004_EAFAiMonophthongization",
+     "*l*ái*m*ą", "*l*ā*m*ą",
+     "corpus loam *láimą (stressed by its PROTOFORM) > *lāmą via SC004 (-> OE lām)"),
+    ("corpus_whine_neither_sc014", "SC014_PNWGmcUnstressedAiMonophthongization",
+     "*x*w*ḯ*n*a*n*ą", "*x*w*ḯ*n*a*n*ą",
+     "corpus whine *xwḯnaną has no *ai in PROTOFORM: unchanged by SC014"),
+    ("corpus_whine_neither_sc004", "SC004_EAFAiMonophthongization",
+     "*x*w*ḯ*n*a*n*ą", "*x*w*ḯ*n*a*n*ą",
+     "corpus whine *xwḯnaną has no *ai in PROTOFORM: unchanged by SC004"),
+    # --- compatibility alias reproduces SC014 .o. SC004 ---
+    ("alias_unstressed_path", "ALIAS_PWGmcAiMonophthongization",
+     "*s*p*á*n*n*ai", "*s*p*á*n*n*ē",
+     "alias == SC014 .o. SC004: unstressed *ai -> *ē via SC014"),
     ("alias_stressed_path", "ALIAS_PWGmcAiMonophthongization",
-     "*s*ái*w*a*l*ō", "*s*ā*w*a*l*ō",
-     "alias == A.o.(B.o.C): stressed *ai(acute) -> *a via C"),
-    ("alias_nonfinal_path", "ALIAS_PWGmcAiMonophthongization",
-     "*l*ai*m*ō*n", "*l*ā*m*ō*n",
-     "alias == A.o.(B.o.C): nonfinal *ai -> *a via B"),
+     "*s*t*ái*n*a*z", "*s*t*ā*n*a*z",
+     "alias == SC014 .o. SC004: stressed *ái -> *ā via SC004"),
 ]
 
 
@@ -98,8 +101,6 @@ def flookup_one(bin_path: str, form: str) -> str:
                           input=(form + "\n").encode("utf-8"),
                           stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
     outs = [ln for ln in proc.stdout.decode("utf-8", "replace").splitlines() if ln.strip()]
-    # An identity rule leaves the form unchanged; flookup -x echoes the single
-    # output. "+?" marks no analysis (should not happen for these total rules).
     return outs[0] if outs else "<none>"
 
 
@@ -140,7 +141,7 @@ def main() -> int:
 
     for r in rows:
         flag = "ok " if r["pass"] == "1" else "FAIL"
-        print(f"  [{flag}] {r['probe_id']:24s} {r['input']} -> {r['output']} (expect {r['expected']})")
+        print(f"  [{flag}] {r['probe_id']:26s} {r['input']} -> {r['output']} (expect {r['expected']})")
     print(f"wrote {args.out}")
     return 0 if all_pass else 1
 
