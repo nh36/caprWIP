@@ -114,19 +114,46 @@ OUTPUTS:  stamn        (what the production cascade actually derives)
 ```
 
 The model derives `stamn`; the attested Old English is *stefn*. The model does
-not produce the front vowel / cluster development that yields `stefn`, so the
-regenerated full trace classifies `stem` in the mismatch bucket
-`fronting_missing_no_trigger`. This is **not new behaviour**: `stem` is one of the
-eight documented mismatches in the frozen baseline
-(`cascade_baseline_summary.json`: 372 matched, 8 mismatched — buck, fowl, fire,
-rust, **stem**, tap, wolf, wool). The previously *committed* trace snapshot was
-stale: it listed `stem` under `exact_match (373)`, contradicting the frozen
-baseline. Regenerating the snapshot from the current FST (mandatory, because the
-trace carried former rule names) corrected the count to `exact_match (372)` + 8
-mismatches = 380, matching the baseline. Rename gate B confirms `outputs_sha256`
-is unchanged, so the correction is orthogonal to the relabelling — it is a
-snapshot-staleness fix exposed by the required regeneration, not a cascade or
-data change.
+not produce the coda `mn > fn` development (attested comparatively — ON *stafn*,
+OS *stamn* — but not yet implemented in the FST), so `stem` is a genuine output
+mismatch (output `stamn` ≠ expected `stefn`). The aligned data
+(`germanic-aligned-final.tsv`, ID 2216) classifies stem as
+`DERIVATION_CLASS = known_unmodelled` and documents the pending `mn > fn`
+derivation in its NOTE.
+
+This is **pre-existing** and **not caused by the relabelling** (rename gate B:
+`outputs_sha256` unchanged since the branch base `a5e9ce12`; the FST already
+produced `stamn` for stem at branch start). But regenerating the two snapshots
+exposes a genuine, previously-masked inconsistency that must be reported, not
+silently fixed:
+
+- `cascade_baseline_summary.json` counts **8** output-mismatches over all 380
+  lexemes — this includes the `known_unmodelled` stem. Gate B has validated
+  `mismatched = 8` throughout the migration.
+- The previously **committed** `oe_mismatch_report.txt` (and its `a5e9ce12`
+  ancestor) reported **7** mismatches with **0** actionable phonology. That
+  snapshot was **stale** — it predated stem's `stamn` output — so the widely-cited
+  "0 actionable phonology" state rested on a stale report.
+- Regenerating `oe_mismatch_report.txt` from the current FST yields **8**
+  mismatches: the 7 documented `oe_known_problems.tsv` exceptions plus stem in the
+  **core** bucket `fronting_missing__also_wrong_form`, i.e. **"Phonology (core
+  buckets): 1"**. The tool does **not** read `DERIVATION_CLASS`, so it does not
+  honor the aligned data's `known_unmodelled` classification of stem, and surfaces
+  it as one actionable core-phonology mismatch.
+
+**Finding (deferred, not resolved here):** the "0 actionable phonology" invariant
+does not currently hold against a freshly-generated mismatch report; stem is the
+single exposed case. Resolving it is a linguistic/tooling decision — options are
+(a) teach `oe_mismatch_report.py` to exclude `DERIVATION_CLASS = known_unmodelled`
+rows (making the report honor the existing data classification), (b) add stem to
+`oe_known_problems.tsv`, or (c) implement the `mn > fn` rule so stem matches. This
+closure makes **none** of those changes (no FST, aligned-data,
+`oe_known_problems.tsv`, or `oe_mismatch_report.py` change); the item is flagged
+for a separate review, analogous to the queued SC004/SC064 decisions.
+
+The regenerated `oe_full_trace_report.txt` correspondingly moved `stem` from the
+stale `exact_match (373)` to a mismatch bucket, giving `exact_match (372)` + 8
+mismatches = 380, matching the frozen output baseline.
 
 ### 3.2 The single downstream index consequence
 
@@ -178,8 +205,18 @@ occurrences but not which occurrences are emitted.
 
 ## 6. Conclusion
 
-No indexing behaviour is changed by this report. The two exposed items — the EAF
-`STAGE_FORM_RE` gap and the stale `stem` bucketing — were fixed at their generator
-sources and reconciled against the frozen lexical baseline, which is unchanged.
-The only book-index delta is the +1 `stem`/`*stámnaz` occurrence, fully diagnosed
-and narrowly allowlisted.
+Two items were fixed at their generator sources and reconciled against the frozen
+lexical baseline (unchanged): the EAF `STAGE_FORM_RE` gap (§1) and the stale
+full-trace `stem` bucketing (§3). The only book-index delta across the whole
+migration is the +1 `stem`/`*stámnaz` occurrence, fully diagnosed and narrowly
+allowlisted (§4–§5).
+
+A third item is **diagnosed and deferred, not fixed** (§3): regenerating
+`oe_mismatch_report.txt` shows the current FST has one actionable core-phonology
+mismatch (stem `*stámnaz -> stamn`, expected `stefn`), because the report tool
+does not honor the aligned data's `known_unmodelled` classification. The
+previously-cited "0 actionable phonology" state rested on a stale committed
+report. This is pre-existing (gate B: outputs unchanged since `a5e9ce12`) and is
+flagged for a separate review decision; no FST, aligned-data,
+`oe_known_problems.tsv`, or tool change is made here. The lexical `outputs_sha256`
+remains `aaf19ba9…480e`.
