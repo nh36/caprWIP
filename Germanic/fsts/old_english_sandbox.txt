@@ -35,9 +35,9 @@ define SRhotacism SGmSimplification
 # Section 3: EarlyEnglishLineChanges bundle (split into individual sub-rules,
 #            in the order EarlyEnglishLineChanges composes them, lines 1672-1684)
 # ============================================================================
-define SPWGmcAiMonophthongization SRhotacism
-    .o. PWGmcAiMonophthongization;
-define SPNWGmcAToUBeforeM SPWGmcAiMonophthongization
+define SPNWGmcUnstressedAiMonophthongization SRhotacism
+    .o. PNWGmcUnstressedAiMonophthongization;
+define SPNWGmcAToUBeforeM SPNWGmcUnstressedAiMonophthongization
     .o. PNWGmcAToUBeforeM;
 define SPWGmcEarlyIApocope SPNWGmcAToUBeforeM
     .o. PWGmcEarlyIApocope;
@@ -60,9 +60,7 @@ define SPWGmcDentalHardening SEAFLThVoicing
 # Section 4: EnglishProtoToOE rules (germanic.txt lines 3093-3266),
 #            applied in cascade order, one snapshot per .o.
 # ============================================================================
-define SPNWGmcUnstressedAiMonophthongization SPWGmcDentalHardening
-    .o. PNWGmcUnstressedAiMonophthongization;
-define SPNWGmcILowering SPNWGmcUnstressedAiMonophthongization
+define SPNWGmcILowering SPWGmcDentalHardening
     .o. PNWGmcILowering;
 define SOEWsPalatalGlide SPNWGmcILowering
     .o. OEWsPalatalGlide;
@@ -90,7 +88,9 @@ define SEAFNasalSpirantLoss SEAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss;
 define SPNWGmcPreconsonantalXLoss SEAFNasalSpirantLoss
     .o. PNWGmcPreconsonantalXLoss;
-define SOEAwjGlideFormation SPNWGmcPreconsonantalXLoss
+define SEAFAiMonophthongization SPNWGmcPreconsonantalXLoss
+    .o. EAFAiMonophthongization;
+define SOEAwjGlideFormation SEAFAiMonophthongization
     .o. OEAwjGlideFormation;
 define SOEAuFronting SOEAwjGlideFormation
     .o. OEAuFronting;
@@ -256,8 +256,8 @@ save stack old_english_sandbox_after_rhotacism.bin
 
 # Section 3: EarlyEnglishLineChanges bundle (split)
 clear stack
-regex SPWGmcAiMonophthongization;
-save stack old_english_sandbox_after_pwgmc_ai_monophthongization.bin
+regex SPNWGmcUnstressedAiMonophthongization;
+save stack old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin
 
 clear stack
 regex SPNWGmcAToUBeforeM;
@@ -296,10 +296,6 @@ regex SPWGmcDentalHardening;
 save stack old_english_sandbox_after_pwgmc_dental_hardening.bin
 
 # Section 4: EnglishProtoToOE rules
-clear stack
-regex SPNWGmcUnstressedAiMonophthongization;
-save stack old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin
-
 clear stack
 regex SPNWGmcILowering;
 save stack old_english_sandbox_after_pnwgmc_i_lowering.bin
@@ -355,6 +351,10 @@ save stack old_english_sandbox_after_eaf_nasal_spirant_loss.bin
 clear stack
 regex SPNWGmcPreconsonantalXLoss;
 save stack old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin
+
+clear stack
+regex SEAFAiMonophthongization;
+save stack old_english_sandbox_after_eaf_ai_monophthongization.bin
 
 clear stack
 regex SOEAwjGlideFormation;

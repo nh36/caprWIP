@@ -1467,14 +1467,34 @@ define EnglishLongVowelRealisation [
 
 # Traditional West Germanic monophthongization, with word-final split
 # (§17.12): unstressed word-final *ai → *ē (R/T §6.1.5), elsewhere *ai → *ā.
-# The word-final rule fires first so the *ai of the fem. ō-stem dat.sg.
-# (*spannai) is not consumed by the general stressed monophthongization.
-define PWGmcAiMonophthongization [
-    [{*ai} -> {*ē} || _ .#.]
-    .o.
-    [{*ai} -> {*ā}]
+# SC004 was formerly the bundled rule PWGmcAiMonophthongization, packaging two
+# historically distinct changes (see sc004_historical_options_report.md,
+# sc004_split_movement_proofs.md; Versloot 2017; R/T pp.40-41). It is now split:
+#
+#   SC014  PNWGmcUnstressedAiMonophthongization : word-final unstressed *ai -> *ē
+#          (Proto-Northwest Germanic, early; R/T §6.1.5, pp.40-41). Executes at the
+#          head of EarlyEnglishLineChanges. The word-final rule fires first so the
+#          *ai of the fem. ō-stem dat.sg. (*spannai) is not consumed by the later
+#          general monophthongization.
+#
+#   SC004  EAFAiMonophthongization : general *ai/*ái -> *ā (Early Anglo-Frisian /
+#          North Sea Germanic, later, areally diffused; Versloot 2017). Executes in
+#          the EAF corridor, after SC028 PNWGmcPreconsonantalXLoss. The unstressed
+#          sub-rule is scoped to non-final position so it does not depend on SC014
+#          having run immediately beforehand.
+define PNWGmcUnstressedAiMonophthongization [
+    {*ai} -> {*ē} || _ .#.
+];
+define EAFAiMonophthongization [
+    [{*ai} -> {*ā} || _ ?]
     .o.
     [{*ái} -> {*ā}]
+];
+# Former identifier, retained as a documented compatibility alias only (the
+# bundled relation A .o. (B .o. C)); NOT composed in any production pipeline.
+define PWGmcAiMonophthongization [
+    PNWGmcUnstressedAiMonophthongization
+    .o. EAFAiMonophthongization
 ];
 
 # PWGmc: Bimoric *ō → *a before word-final *r (R/T vol.2 §3.1.4, pp.58-59; Fulk §5.3).
@@ -1664,7 +1684,7 @@ define PWGmcJGemination [
 # CRITICAL: PWGmcJGemination must precede PWGmcSyllabicJ (Fulk §6.15).
 # Gemination creates heavy syllables that block syllabic-j vocalization.
 define EarlyEnglishLineChanges [
-    PWGmcAiMonophthongization
+    PNWGmcUnstressedAiMonophthongization
     .o. PNWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
     .o. PWGmcEarlyIApocope  # Early i-apocope: loss of final -i in 3rd/4th syllable
     .o. PWGmcFinalOrLowering
@@ -2051,15 +2071,11 @@ define PNWGmcILowering [
 ];
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).
-# §17.12: The former PNWGmcUnstressedAiMonophthongization ({*ăi} -> {*ē})
-# has been folded into PWGmcAiMonophthongization (line ~1388) using a
-# word-final right context, eliminating the breve-marked diphthong {*ăi}.
-# This rule is kept as a no-op (empty composition) to preserve cascade
-# insertion points; the actual monophthongization now fires at the
-# EarlyEnglishLineChanges stage. See DEV_NOTES §17.12.
-define PNWGmcUnstressedAiMonophthongization [
-    {*ăi} -> {*ē}
-];
+# §17.12: The former PNWGmcUnstressedAiMonophthongization ({*ăi} -> {*ē}) no-op
+# has been removed. As of the SC004 split, PNWGmcUnstressedAiMonophthongization is
+# defined near line ~1472 with the live word-final rule {*ai} -> {*ē} || _ .#.
+# and executes at the head of EarlyEnglishLineChanges (its old SC004 slot). The
+# breve-marked {*ăi} placeholder is gone. See sc004_split_movement_proofs.md.
 
 # PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
 # The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
@@ -3094,7 +3110,6 @@ define OERMetathesis [
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
     EarlyEnglishLineChanges
-    .o. PNWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
@@ -3130,6 +3145,7 @@ define EnglishProtoToOE (
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. PNWGmcPreconsonantalXLoss
+    .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; see sc004_split_movement_proofs.md
     .o. OEAwjGlideFormation
     .o. OEAuFronting
     .o. OEWWSimplification
@@ -3299,7 +3315,6 @@ define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EarlyGermanicCo
 define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. EarlyEnglishLineChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
-    .o. PNWGmcUnstressedAiMonophthongization  # R/T §6.1.5: unstressed *ăi → *ē
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     .o. OEWsPalatalGlide
@@ -3320,6 +3335,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. PNWGmcPreconsonantalXLoss
+    .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; mirrors EnglishProtoToOE
     .o. OEAwjGlideFormation
     .o. OEAuFronting
     .o. OEWWSimplification

@@ -48,7 +48,7 @@ POST_EPENTHESIS_RULES = [
 DEFAULT_ORDER_PROFILE = "default"
 EXPANDED_PWGMC_ORDER_PROFILE = "expanded-pwgmc"
 PWGMC_COMPONENT_RULES = [
-    "PWGmcAiMonophthongization",
+    "PNWGmcUnstressedAiMonophthongization",
     "PNWGmcAToUBeforeM",
     "PWGmcEarlyIApocope",
     "PWGmcFinalOrLowering",

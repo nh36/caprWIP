@@ -48,7 +48,7 @@ STAGES: List[Tuple[str, str]] = [
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
     ("GmSimplification", "old_english_sandbox_after_gm_simplification.bin"),
     ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
-    ("PWGmcAiMonophthongization", "old_english_sandbox_after_pwgmc_ai_monophthongization.bin"),
+    ("PNWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin"),
     ("PNWGmcAToUBeforeM", "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin"),
     ("PWGmcEarlyIApocope", "old_english_sandbox_after_pwgmc_early_i_apocope.bin"),
     ("PWGmcFinalOrLowering", "old_english_sandbox_after_pwgmc_final_or_lowering.bin"),
@@ -58,7 +58,6 @@ STAGES: List[Tuple[str, str]] = [
     ("PWGmcSyllabicJ", "old_english_sandbox_after_pwgmc_syllabic_j.bin"),
     ("EAFLThVoicing", "old_english_sandbox_after_eaf_l_th_voicing.bin"),
     ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
-    ("PNWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin"),
     ("PNWGmcILowering", "old_english_sandbox_after_pnwgmc_i_lowering.bin"),
     ("OEWsPalatalGlide", "old_english_sandbox_after_oe_ws_palatal_glide.bin"),
     ("PNWGmcULowering", "old_english_sandbox_after_pnwgmc_u_lowering.bin"),
@@ -73,6 +72,7 @@ STAGES: List[Tuple[str, str]] = [
     ("EAFNasalSpirantLengthening", "old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin"),
     ("EAFNasalSpirantLoss", "old_english_sandbox_after_eaf_nasal_spirant_loss.bin"),
     ("PNWGmcPreconsonantalXLoss", "old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin"),
+    ("EAFAiMonophthongization", "old_english_sandbox_after_eaf_ai_monophthongization.bin"),
     ("OEAwjGlideFormation", "old_english_sandbox_after_oe_awj_glide_formation.bin"),
     ("OEAuFronting", "old_english_sandbox_after_oe_au_fronting.bin"),
     ("OEWWSimplification", "old_english_sandbox_after_oe_ww_simplification.bin"),
@@ -145,8 +145,8 @@ STAGES: List[Tuple[str, str]] = [
 # output. Section dividers only — they do not alter the cascade.
 STAGE_HEADERS: Dict[str, str] = {
     "ProtoInput": "## Section 1: Proto-Germanic consonant inheritance",
-    "PWGmcAiMonophthongization": "## Section 2: Proto-West Germanic developments",
-    "PNWGmcUnstressedAiMonophthongization": "## Section 3: Northwest Germanic developments",
+    "PNWGmcUnstressedAiMonophthongization": "## Section 2: Northwest and West Germanic developments",
+    "EAFAiMonophthongization": "## Section 3: Early Anglo-Frisian (North Sea Germanic)",
     "OEAwjGlideFormation": "## Section 4: Old English",
     "OldEnglishOrthography": "## Section 5: Orthography & surface",
 }
