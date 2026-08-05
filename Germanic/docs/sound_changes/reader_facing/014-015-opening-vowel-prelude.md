@@ -2,23 +2,23 @@
 
 ## Historical discussion
 
-The first change removes the remaining diphthongal quality of unstressed \emph{*ai} word-finally; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* 'world'. Their chronological evidence differs. The word-final monophthongization is historically clear but has no witness in the dataset, whereas \emph{*i}-lowering has a diagnostic later boundary.
+The first change monophthongizes unstressed \emph{*ai}; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* 'world'. Both have a diagnostic later boundary in the dataset.
 
 ## Historical discussion of unstressed \emph{*ai} monophthongization
 
-Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e} [@RingeTaylor2014, pp. 37--41]. The word-final case is the one modeled below; the historical change is established, although no lexical witness in the dataset carries it, so the data fix no closer relative position. The general development of \emph{*ai} to \emph{*ā} is treated separately as [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
+Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e}, in final and nonfinal syllables alike [@RingeTaylor2014, pp. 37--41]. Two dative-singular endings in the dataset, span \emph{*spánnai} and meed \emph{*mízdai}, carry the change. The stressed development of \emph{*ái} to \emph{*ā} is treated separately as [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
 
 ## SC014. Monophthongization of unstressed \emph{*ai} (`PNWGmcUnstressedAiMonophthongization`) {#rule-PNWGmcUnstressedAiMonophthongization}
 
 ```foma
 define PNWGmcUnstressedAiMonophthongization [
-    {*ai} -> {*ē} || _ .#.
+    {*ai} -> {*ē}
 ];
 ```
 
-This change has no current lexical applications. No Old English witness in the dataset carries word-final unstressed \emph{*-ai}; the historical evidence for it comes from inflectional endings such as the dative singular \emph{*-ai} and the strong-adjective plural \emph{*-ai}. Moving [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) earlier or later changes no output.
+The dative-singular endings span \emph{*spánnai} 'span' and meed \emph{*mízdai} 'meed' carry this change; both give a final \emph{*ē}. If [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) is delayed until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the \emph{*ē} is no longer present for shortening, so PGmc [spánnai]{.recon} 'span' yields [*spannē*]{.pred} rather than expected OE *spanne* 'span'. This shows that [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) in the modeled sequence.
 
-Ringe and Taylor's merger of unstressed \emph{*ai} with long mid \emph{*ē} establishes the historical development; the endings that carry it are absent from the dataset as standalone words, so the witnesses do not fix its position relative to neighboring changes. The general development of \emph{*ai} to \emph{*ā} in stressed and nonfinal syllables is a separate and later change; see [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
+Ringe and Taylor's merger of unstressed \emph{*ai} with long mid \emph{*ē} establishes the historical development, in final and nonfinal syllables alike. The stressed development of \emph{*ái} to \emph{*ā} is a separate and later change; see [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
 
 ## Historical discussion of early unstressed front-vowel leveling
 

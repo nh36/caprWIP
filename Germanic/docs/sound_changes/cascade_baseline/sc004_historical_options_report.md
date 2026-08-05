@@ -1,5 +1,15 @@
 # SC004 historical options report and recommendation
 
+> **Superseded in detail by the corrected PROTOFORM pass (commit `9c71aed3`).**
+> The component evidence below (SC014 "zero corpus load"; loam/whine as
+> unaccented SC004 cases) was computed from the cognate-set `PROTO` field. Under
+> the production `PROTOFORM`, SC014 has two corpus witnesses (span, meed), loam
+> is a stressed SC004 case, and whine is not an ai case. The Outcome-C
+> recommendation (a two-rule historical split) still stands and is implemented;
+> only the corpus attributions are corrected. See
+> `sc004_component_application_report.tsv`. Retained as a historical research
+> record.
+
 Research only. Evaluates the three analytical outcomes for SC004
 `PWGmcAiMonophthongization` and makes a definite recommendation. **No production
 change is made** (task §10): the production rule is not replaced, no SC number is

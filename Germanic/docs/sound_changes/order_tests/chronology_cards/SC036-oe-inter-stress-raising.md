@@ -1,5 +1,13 @@
 # SC036 OE Inter Stress Raising — chronology evidence card
 
+> **Updated by the SC004 correction.** SC004 (stressed `*ái > *ā`,
+> `EAFAiMonophthongization`) now executes at cascade position 25, between SC019
+> and SC036. First-break re-run (`sc004corr_first_break_sc036.tsv`) shows SC036's
+> **earlier boundary is now SC004** (crossing it makes `soul` `*sáiwalō` yield
+> `sāwel` instead of `sāwol`), which supersedes the former SC019 boundary recorded
+> below; SC019 remains a further earlier constraint. The safe earlier window
+> narrows accordingly. The later side (SC040) is unchanged.
+
 ## Current position
 - current_order: `36`
 - rule_name: `OEInterStressRaising`

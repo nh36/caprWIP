@@ -1,17 +1,16 @@
 # SC014-SC015 Opening Vowel Prelude -- literature dossier
 
-> **Split note (SC004 Outcome-C).** SC014 is now a standalone early
-> Proto-Northwest Germanic change — word-final unstressed `*-ai > *-ē` — split
-> out of the former bundled SC004 `PWGmcAiMonophthongization`. Its live Foma rule
-> is `{*ai} -> {*ē} || _ .#.` (the obsolete `{*ăi} -> {*ē}` no-op is gone), and
-> it is **corpus-inert**: zero corpus applications, because no OE corpus lexeme
-> carries word-final unstressed `*-ai`; its witnesses are inflectional endings.
-> The general `*ai/*ái > *ā` development is now the separate SC004
-> `EAFAiMonophthongization` (Chapter 3; see
-> `004-pwgmc-ai-monophthongization.dossier.md`). Where the analysis below calls
-> SC014 "runner-limited by bundled `PWGmcChanges`," read that as **corpus-inert**:
-> the earlier limitation was an artefact of SC014 sharing a rule with the general
-> change, which the split removes. SC015's substantive text is unchanged.
+> **Corrected PROTOFORM pass (supersedes the split note below).** SC014 is the
+> unstressed monophthongization `*ai > *ē` (final AND nonfinal; Ringe-Taylor's
+> rule), live Foma rule `{*ai} -> {*ē}`. Under the production `PROTOFORM` it is
+> **corpus-active**, with two dat.sg witnesses, `span` (`*spánnai` > spanne) and
+> `meed` (`*mízdai` > meorde), and a real later first-break boundary at SC072 OE
+> Unstressed Long Vowel Shortening (order 69). The earlier "corpus-inert" claim
+> was a cognate-set `PROTO`-field artefact: **read every "corpus-inert" below as
+> "corpus-active (span, meed)"** and every "word-final only" as "final and
+> nonfinal". The separate stressed change is SC004 `EAFAiMonophthongization`
+> (`{*ái} -> {*ā}`; see `004-pwgmc-ai-monophthongization.dossier.md`). SC015's
+> substantive text is unchanged.
 > Implemented on branch `historical-cascade-order` (FST split commit `f59b758d`).
 
 ## Rule metadata

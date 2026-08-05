@@ -1,16 +1,16 @@
 # SC014-SC015: Opening vowel prelude
 
-> **Split note (SC004 Outcome-C).** SC014 is now a standalone early
-> Proto-Northwest Germanic change — word-final unstressed `*-ai > *-ē` — split
-> out of the former bundled SC004. Its live Foma rule is
-> `{*ai} -> {*ē} || _ .#.` and it is **corpus-inert** (zero corpus applications;
-> witnesses are inflectional endings). It executes at the head of the cascade
-> (position 1). The general `*ai/*ái > *ā` development is the separate SC004
-> `EAFAiMonophthongization` (Chapter 3; see
-> `004-pwgmc-ai-monophthongization.book-dossier.md`). Read "boundary-limited /
-> runner-limited at bundled `PWGmcChanges`" for SC014 below as **corpus-inert**.
-> SC015's substantive text is unchanged. Implemented on branch
-> `historical-cascade-order` (FST split commit `f59b758d`).
+> **Corrected PROTOFORM pass (supersedes the split note below).** SC014 is the
+> unstressed monophthongization `*ai > *ē` (final AND nonfinal), live Foma rule
+> `{*ai} -> {*ē}`. Under the production `PROTOFORM` it is **corpus-active**, with
+> two dat.sg witnesses `span` (> spanne) and `meed` (> meorde) and a later
+> first-break boundary at SC072 (order 69). **Read every "corpus-inert" /
+> "boundary-limited" / "word-final only" below as superseded.** It executes at the
+> head of the cascade (position 1). The separate stressed change is SC004
+> `EAFAiMonophthongization` (`{*ái} -> {*ā}`; see
+> `004-pwgmc-ai-monophthongization.book-dossier.md`). SC015's substantive text is
+> unchanged. Implemented on branch `historical-cascade-order` (split `f59b758d`,
+> PROTOFORM correction `9c71aed3`).
 
 ## 1. Role in the book
 

@@ -1,5 +1,15 @@
 # SC004 split — movement proofs and outputs validation
 
+> **Superseded by the corrected PROTOFORM pass (commit `9c71aed3`).** The
+> "25 vs 26" reconciliation and the loam/whine component attributions below were
+> computed from the cognate-set `PROTO` field. The production input is the
+> Old-English-row `PROTOFORM`, under which SC004 (stressed `*ái`) applies to 24
+> corpus rows (23 attested + roe), SC014 (unstressed `*ai`) applies to 2 (span,
+> meed), and whine/withy are not ai cases. See
+> `sc004_component_application_report.tsv` and
+> `sc004_sc014_interaction_report.md`. Retained as a historical research record;
+> the outputs-preservation result (frozen `aaf19ba9…480e`) still holds.
+
 Research record for the Outcome-C implementation. Tools:
 `tools/sc004_split_experiment.py` (whole-cascade equivalence over
 `EnglishProtoInput`) and `tools/sc004_outputs_check.py` (the decisive corpus

@@ -1,0 +1,3 @@
+variant_id	change_id	direction	variant_order	crossed_change_id	crossed_display_name	crossed_rule_name	crossed_entry_type	lexical_item	protoform	expected_counterpart	baseline_output	variant_output	failure_type	note
+SC014_later_order_69	SC014	later	69	SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	historical_sound_change	meed	*mízdai	meorde	meorde	meordē	newly_failing	Crossing OEUnstressedLongVowelShortening changed the output.
+SC014_later_order_69	SC014	later	69	SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	historical_sound_change	span	*spánnai	spanne	spanne	spannē	newly_failing	Crossing OEUnstressedLongVowelShortening changed the output.

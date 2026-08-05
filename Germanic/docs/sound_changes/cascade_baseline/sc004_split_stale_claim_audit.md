@@ -1,6 +1,15 @@
 # SC004 split: stale-claim audit
 
-Branch `historical-cascade-order`; FST split commit `f59b758d`.
+Branch `historical-cascade-order`; FST split commit `f59b758d`; PROTOFORM
+correction commit `9c71aed3`.
+
+> **Corrected PROTOFORM pass.** An earlier version of this audit described SC004
+> as "general `*ai/*ái > *ā`" and SC014 as "corpus-inert." Both are now corrected:
+> under the production `PROTOFORM`, **SC004 is stressed/root `*ái > *ā` only**
+> (24 corpus rows) and **SC014 is unstressed `*ai > *ē`** (final and nonfinal)
+> with **two corpus witnesses, span and meed** (not corpus-inert). `loam` is a
+> stressed SC004 case; `whine`/`withy` are not ai cases. See
+> `sc004_component_application_report.tsv`.
 
 Per task §9, this note reports every remaining repository occurrence of the five
 pre-split claim patterns and records, for each, whether it was **updated** or is
@@ -15,9 +24,9 @@ downstream reassembly). The five patterns are:
 
 ## Updated (authoritative sources)
 
-These now describe the split correctly (SC004 = general `*ai/*ái > *ā`, EAF /
-North Sea Germanic; SC014 = word-final unstressed `*-ai > *-ē`, PNWGmc,
-corpus-inert):
+These now describe the split correctly (SC004 = stressed/root `*ái > *ā`, EAF /
+North Sea Germanic; SC014 = unstressed `*ai > *ē`, PNWGmc, corpus witnesses
+span and meed):
 
 - `sound_change_inventory.tsv`, `sound_change_historical_staging_map.tsv`,
   `sound_change_aliases.tsv`;

@@ -80,10 +80,9 @@ This tension is a targeted audit item for the next phase of the chronology work.
 
 ### Anglo-Frisian ai-monophthongization (SC004)
 
-The monophthongization of inherited `*ai` to `*ā`, in stressed root syllables
-such as [sáiwalō]{.recon .iv lang=pgmc sort=saiwalo} 'soul' and in the two
-unaccented nonfinal forms of the dataset, is a North Sea Germanic areal
-development. Versloot argues that it spread in successive waves through a
+The monophthongization of stressed/root `*ái` to `*ā`, as in
+[sáiwalō]{.recon .iv lang=pgmc sort=saiwalo} 'soul', is a North Sea Germanic
+areal development. Versloot argues that it spread in successive waves through a
 dialect continuum, with Old English among the widest to carry it, so the change
 is better read as an areal diffusion through the continuum than as a single
 dated node [@Versloot2017, pp. 281--324]. The resulting `*ā` is later fronted to
@@ -96,9 +95,10 @@ change passed through a discrete Proto-Anglo-Frisian node. The one usable
 chronological anchor is the `soul` derivation, which requires the
 monophthongization to precede OE interstress raising (SC036).
 
-The early word-final development `*-ai > *-ē` is a separate and earlier
-Proto-Northwest Germanic change (SC014), discussed in Chapter 2; it is
-corpus-inert in the current dataset.
+The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
+separate and earlier Proto-Northwest Germanic change (SC014), discussed in
+Chapter 2; its corpus witnesses are the dative-singular endings of `span`
+(`*spánnai` > spanne) and `meed` (`*mízdai` > meorde).
 
 ### Anglo-Frisian brightening (SC043)
 

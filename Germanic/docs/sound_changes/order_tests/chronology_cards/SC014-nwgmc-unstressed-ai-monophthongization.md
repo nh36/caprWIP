@@ -1,57 +1,58 @@
 # SC014 NWGmc Unstressed Ai Monophthongization — chronology evidence card
 
-> **Split note (SC004 Outcome-C).** SC014 is now a standalone rule: word-final
-> unstressed `*-ai > *-ē` (early Proto-Northwest Germanic), split out of the
-> former bundled SC004 `PWGmcAiMonophthongization`. It replaces the earlier no-op
-> `{*ăi} -> {*ē}` card, which was a placeholder with no live rule. The general
-> `*ai/*ái > *ā` development is now SC004 `EAFAiMonophthongization` (see
-> `SC004-pwgmc-ai-monophthongization.md` and `SC004-components-chronology.md`).
+> **Corrected PROTOFORM pass.** SC014 is the unstressed monophthongization
+> `*ai > *ē` (final AND nonfinal; Ringe-Taylor's rule, not merely word-final),
+> split out of the former bundled SC004. An earlier version of this card called
+> SC014 "corpus-inert"; that was a cognate-set `PROTO`-field artefact. Under the
+> production `PROTOFORM`, SC014 has **two corpus witnesses** and a real later
+> boundary. The stressed `*ái > *ā` development is SC004 `EAFAiMonophthongization`
+> (see `SC004-pwgmc-ai-monophthongization.md`, `SC004-components-chronology.md`).
 
 ## Current position
 - current_order (SC id): `14`
 - executable cascade position: `1` (head of `EarlyEnglishLineChanges`, the former SC004 slot)
 - rule_name: `PNWGmcUnstressedAiMonophthongization`
 - former_rule_name: `NWGmcUnstressedAiMonophthongization`
-- live Foma rule: `{*ai} -> {*ē} || _ .#.` (explicit word-final environment)
-- safe computational window: **unconstrained** — zero corpus applications
-- status: `corpus_inert`
+- live Foma rule: `{*ai} -> {*ē}` (unstressed `*ai`, final and nonfinal)
+- corpus witnesses: `span` (`*spánnai` > spanne), `meed` (`*mízdai` > meorde)
+- status: `first_break_complete`
 
 ## Earlier boundary
-- first earlier break: `none — no corpus witness can be crossed`
+- first earlier break: `none — SC014 already executes at the cascade head (pos 1)`
 - crossed stage: `n/a`
-- crossed stage type: `no_corpus_load`
-- failure count: `0`
-- representative failures: `none`
-- concrete failure example: `none — SC014 fires on zero corpus lexemes`
-- interpretation: No Old English corpus lexeme carries word-final unstressed `*-ai`; SC014's historical witnesses are inflectional endings (dat.sg `*-ai`, subjunctive `*-ai`, strong-adj pl `*-ai`), not standalone lexemes. There is therefore no earlier break to find.
+- crossed stage type: `head_of_cascade`
+- interpretation: SC014 is at position 1, so it cannot be moved earlier; the
+  earlier side is bounded by the cascade head, not by a historical break.
 
 ## Later boundary
-- first later break: `none — no corpus witness can be crossed`
-- crossed stage: `n/a`
-- crossed stage type: `no_corpus_load`
-- failure count: `0`
-- representative failures: `none`
-- concrete failure example: `none — SC014 fires on zero corpus lexemes`
-- interpretation: Because SC014 rewrites zero corpus forms, moving it to any cascade position leaves every corpus output unchanged. It has no positive chronology boundary of any kind.
+- first later break: order `69`, crossing **SC072 OE Unstressed Long Vowel Shortening**
+- crossed stage type: `historical_sound_change`
+- failure count: `2`
+- representative failures: `span`, `meed`
+- concrete failure example: if SC014 is delayed past SC072, the `*-ē` it produces
+  from `*-ai` is no longer available for shortening, so PGmc `*spánnai` yields
+  `spannē` instead of expected `spanne`, and `*mízdai` yields `meordē` instead of
+  `meorde` (370/372 match at the break).
+- interpretation: SC014 must precede the unstressed-long-vowel shortening (SC072)
+  so that the monophthong it creates in the dat.sg `*-ai` endings is shortened to
+  final `-e`. This is a genuine lexical ordering constraint.
 
 ## Chronology statement
-SC014 is **corpus-inert** in the current lexical dataset: it has no first-break
-boundary in either direction because no corpus derivation passes a word-final
-unstressed `*-ai`. Its correct historical stage — early Proto-Northwest Germanic,
-with the `*ē` outcome merging into long mid `*ē` — is established by comparison of
-inflectional endings and by the literature (R/T pp. 40–41, §6.1.5; Fulk §5.2),
-not by any CAPR derivational witness. Its cascade position (executable pos 1) is
-therefore historically motivated but computationally free.
+SC014 is **corpus-active** (two dat.sg `*-ai` witnesses, `span` and `meed`). Its
+earlier side is bounded by the cascade head; its later side has a real
+first-break boundary at SC072 OE Unstressed Long Vowel Shortening. Its historical
+stage — early Proto-Northwest Germanic, with the `*ē` outcome merging into long
+mid `*ē` — is established both by these corpus endings and by the literature
+(R/T pp. 37–41, §6.1.5; Fulk §5.2). The nonfinal unstressed environment (e.g.
+`*berain > *berēn`) is corpus-inert but is covered by the rule and confirmed by
+Foma probe.
 
 ## Caveats
-This card records a corpus-inert result: SC014 imposes no cascade-order
-constraint and cannot be constrained (or justified) by first-break testing. The
-earlier negative card that reported a runner limitation against the bundled
-`PWGmcChanges` is superseded — the limitation was an artefact of SC014 sharing a
-rule with the general change, which the split removes.
+The earlier "corpus-inert" card and the still-earlier bundled-runner-limitation
+card are both superseded: the first by the PROTOFORM correction (which surfaces
+span and meed), the second by the split itself.
 
 ## Source files
-- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03.tsv`
-- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
-- `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
-- `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+- `Germanic/docs/sound_changes/order_tests/summaries/sc004corr_first_break_sc014.tsv`
+- `Germanic/docs/sound_changes/order_tests/summaries/sc004corr_first_break_sc014_changes.tsv`
+- `Germanic/docs/sound_changes/order_tests/sc004_component_application_report.tsv`

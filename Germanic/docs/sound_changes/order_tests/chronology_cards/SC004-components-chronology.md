@@ -1,89 +1,85 @@
-# SC004 component chronology cards (research)
+# SC004 / SC014 component chronology cards (corrected PROTOFORM pass)
 
-Research only. The existing `SC004-pwgmc-ai-monophthongization.md` chronology card
-covers the **bundled** rule and cannot decide whether the components belong to
-different stages. These per-component cards separate them. Empirical basis: the
-deterministic application report (`sc004_component_application_report.tsv`) and the
-proven behaviour-neutral split (`sc004_split_candidate_and_proof.md`).
+> **Corrected.** An earlier version of this card (from the pre-correction pass)
+> read the components off the cognate-set `PROTO` field and concluded that
+> Component A (`*ai > *ē`) had zero corpus applications and that `loam`/`whine`
+> were unaccented `*ai > *ā` cases. The production input is the Old-English-row
+> `PROTOFORM`; under it the components are re-attributed as below. Empirical
+> basis: `sc004_component_application_report.tsv`,
+> `sc004_sc014_interaction_report.md`, and the first-break summaries
+> `summaries/sc004corr_first_break_sc004.tsv` and `..._sc014.tsv`.
 
----
+The two production rules are now the historically cleaner pair:
 
-## Card: SC004.final-ai-to-e  (Component A)
-
-Rewrite: `{*ai} -> {*ē} || _ .#.`  (word-final unstressed `*ai`)
-
-- **Corpus applications:** `0`. No Old English corpus lexeme carries word-final
-  unstressed `*-ai`; A's historical witnesses are inflectional endings (dat.sg
-  `*-ai`, subjunctive `*-ai`, strong-adj pl `*-ai`) not present as standalone
-  lexemes.
-- **Lexical witnesses:** none in the corpus.
-- **Earlier boundary:** none — no witness can be crossed.
-- **Later boundary:** none — no witness can be crossed.
-- **Safe computational window:** unconstrained by any corpus output. Because A
-  fires on zero corpus lexemes, moving it to any position leaves every corpus
-  output unchanged; it has **no positive chronology boundary of any kind**.
-- **Downstream dependency creators:** none (no corpus feed).
-- **Historical placement:** early — (P)NWGmc, outcome `*ē` merging with long mid
-  `*ē` [@RingeTaylor2014, pp. 40--41; @Fulk2018, §5.2; Versloot 2017 verify].
-- **Interpretation:** A is chronologically **inert on the CAPR corpus**. Its
-  correct historical stage (early PNWGmc) is a fact about the endings it targets,
-  established by comparison, not by any CAPR derivational witness. Its cascade
-  position is therefore free and cannot be constrained (or justified) by
-  first-break testing.
+* **SC014** `PNWGmcUnstressedAiMonophthongization` : `{*ai} -> {*ē}` (unstressed
+  `*ai`, final AND nonfinal; Ringe-Taylor's rule), at cascade pos 1.
+* **SC004** `EAFAiMonophthongization` : `{*ái} -> {*ā}` (stressed/root `*ái`), at
+  cascade pos 25.
 
 ---
 
-## Card: SC004.general-ai-to-a  (Components B + C)
+## Card: SC014 unstressed `*ai > *ē`
 
-Rewrite: `[{*ai} -> {*ā}] .o. [{*ái} -> {*ā}]`  (`*ai`/`*ái` elsewhere → `*ā`)
+Rewrite: `{*ai} -> {*ē}` (final and nonfinal unstressed `*ai`).
 
-- **Corpus applications:** `26` — all SC004 corpus witnesses. C (stressed) 24;
-  B (unstressed nonfinal) 2 (loam, whine, both `early_analogy`).
-- **Lexical witnesses (later boundary):** `soul` `*sáiwalō` (Component C).
-- **Earlier boundary:** none found before the left edge of the tested
-  expanded-PWGmc chain (order 4) — **boundary-only**, not a positive historical
-  constraint (inherited from the bundled card; the general component carries the
-  witnesses that card tested).
-- **Later boundary:** order `36`, crossing **SC036 OE Inter Stress Raising**.
-  Delaying the general component past SC036 makes `*sáiwalō` yield `sāwel`
-  instead of `sāwol`. This is a genuine lexical failure (not mere
-  non-commutation), hence historical evidence.
-- **Safe computational window:** `4–35` (earlier boundary-only; later broad/far
-  across SC036).
-- **Downstream dependency creator:** SC036 OE Inter Stress Raising (consumes the
-  `*ā` output of the *soul* derivation).
-- **Historical placement:** later than A — North Sea Germanic / Anglo-Frisian
-  `*ai > *ā` (OE `ā`, front `ǣ` by later fronting) [@Campbell1959; @Hogg1992;
-  Versloot 2017 verify: areal, wave-diffused].
-- **Interpretation:** the general component carries the entire empirical
-  chronology of SC004. Its one real boundary (SC036) is historically consistent
-  with a later, North-Sea-Germanic placement.
+- **Corpus applications:** `2`. By PROTOFORM: `span` (`*spánnai`, fem. o-stem
+  dat.sg → OE `spanne`) and `meed` (`*mízdai`, dat.sg → OE `meorde`). Both are
+  unstressed word-final `*-ai` endings; the NOTE fields cite Ringe-Taylor
+  §6.1.5 / Brunner §252. The rule is **not** corpus-inert (the pre-correction
+  card's claim of zero applications was a PROTO-field artefact).
+- **Lexical witnesses:** `span`, `meed`.
+- **Handbook support for the nonfinal environment:** Ringe-Taylor's rule covers
+  nonfinal unstressed `*ai` too (e.g. `*berain > *berēn`, `*habaisi > *habēs`,
+  `*gōdaimaz > *gōdēmaz`); the Foma probes confirm SC014 monophthongizes those
+  (see `sc004_component_behaviors.tsv`). No corpus lexeme instantiates a nonfinal
+  unstressed `*ai`, so the nonfinal environment is corpus-inert while the
+  final one carries the two witnesses.
+- **Earlier boundary:** none — SC014 executes at the cascade head (pos 1).
+- **Later boundary:** order `69`, crossing **SC072 OE Unstressed Long Vowel
+  Shortening**. First-break testing confirms that delaying SC014 past SC072
+  leaves the `*-ē` (from `*-ai`) unshortened, so `span` surfaces as `spannē`
+  instead of `spanne` and `meed` as `meordē` instead of `meorde` (370/372 match
+  at the break; `sc004corr_first_break_sc014.tsv`). Both corpus witnesses break
+  at exactly this stage.
+- **Interpretation:** SC014 is a real, corpus-active early PNWGmc change with an
+  interpretable later boundary at the unstressed-long-vowel shortening (SC072);
+  its historical stage (early PNWGmc, `*ē` merging with long mid `*ē`) rests on
+  both the two corpus endings and the comparative record.
 
 ---
 
-## Summary — the five §7 questions
+## Card: SC004 stressed `*ái > *ā`
 
-1. **Does the final component (A) have any positive chronology boundary?** No. A
-   applies to 0 corpus lexemes, so no earlier or later break exists; its stage is
-   fixed only by external (ending) comparison, not by CAPR derivation.
-2. **Does the general component alone produce the SC036 `soul` failure?** Yes.
-   `soul` is a Component C application; the general component (B+C) alone yields
-   `*sāwalō` and reproduces the SC036 boundary. A plays no part.
-3. **Can the two components be separated computationally without changing
-   outputs?** Yes — proven behaviour-neutral (`test equivalent` TRUE, unrestricted
-   and over `EnglishProtoInput`; `sc004_split_candidate_and_proof.md`).
-4. **Can either component be placed in a historically preferable position?**
-   - A: already effectively early; being inert, it can sit at its historically
-     preferable early (PNWGmc) position with zero output effect.
-   - General (B+C): historically *later* than its current bundle position 1;
-     it can move later (safe through order 35) toward a more historically accurate
-     North-Sea-Germanic / EAF position without changing any output.
-5. **Does any historically preferable movement conflict with a technical FST
-   dependency?** No. The general component's only computational boundary is
-   SC036, which is itself an Old English change *later* than the Anglo-Frisian
-   `*ai > *ā`; the historically preferable (later) placement is therefore
-   **bounded above by, and consistent with**, the FST dependency — not blocked by
-   it. A has no dependency at all.
+Rewrite: `{*ái} -> {*ā}` (stressed/root `*ái`).
 
-Non-commutation caveat (task §7): the SC036 boundary is retained here because it
-is a real lexical derivational failure (`soul`), not merely a non-commuting pair.
+- **Corpus applications:** `24` — every stressed-`*ái` corpus witness (23 attested
+  + `roe` `*ráixōn`, unattested). Includes `loam` (`*láimą`, stressed by its
+  PROTOFORM, previously misfiled as unaccented).
+- **Lexical witness (later boundary):** `soul` `*sáiwalō`.
+- **Earlier boundary:** none found toward the head (boundary-limited); SC004's
+  formal earlier non-commutations (`PNWGmcILowering`, `PNWGmcULowering`) are
+  feeding artefacts on non-corpus `EnglishProtoInput` forms only.
+- **Later boundary:** order `33`, crossing **SC036 OE Inter Stress Raising**.
+  First-break testing with the corrected stressed-only rule confirms that
+  delaying SC004 past SC036 makes `*sáiwalō` yield `sāwel` instead of `sāwol`
+  (371/372 match at the break; `sc004corr_first_break_sc004.tsv`). This is a
+  genuine lexical failure, hence historical evidence.
+- **Interpretation:** SC004 carries the stressed monophthongization and its one
+  real boundary (SC036), consistent with a later North-Sea-Germanic / EAF
+  placement. Its stressed target `*ái` is disjoint from SC014's unstressed `*ai`,
+  so the two rules are independent.
+
+---
+
+## Summary
+
+1. **SC014 corpus load:** 2 (span, meed) — corrected from the pre-correction
+   "zero." SC014 is corpus-active and has a later boundary at unstressed-long-
+   vowel shortening.
+2. **SC004 corpus load:** 24 stressed (23 attested + roe); `loam` is stressed;
+   `whine`/`withy` are not ai cases.
+3. **SC036 soul boundary:** carried by SC004 (stressed), reproduced with the
+   corrected rule; not by SC014.
+4. **Separability:** the split is behaviour-neutral on the corpus (frozen
+   `outputs_sha256` `aaf19ba9…480e`); the components' only genuine historical
+   dependencies are SC014 < unstressed-long-vowel shortening and SC004 < SC036.
