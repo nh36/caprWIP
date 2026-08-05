@@ -1,0 +1,27 @@
+concept	proto_input	expected_oe	before_sc004	after_A	after_AB	after_full_sc004	components_applied	derivation_class
+loam	*laimōn	lām	*l*ai*m*ō*n	*l*ai*m*ō*n	*l*ā*m*ō*n	*l*ā*m*ō*n	B_nonfinal_ai_to_a	early_analogy
+whine	*wainōjaną	hwīnan	*w*ai*n*ō*j*a*n*ą	*w*ai*n*ō*j*a*n*ą	*w*ā*n*ō*j*a*n*ą	*w*ā*n*ō*j*a*n*ą	B_nonfinal_ai_to_a	early_analogy
+bone	*báiną	bān	*b*ái*n*ą	*b*ái*n*ą	*b*ái*n*ą	*b*ā*n*ą	C_stressed_ai_to_a	regular
+deal	*dáiliz	dǣl	*d*ái*l*i*z	*d*ái*l*i*z	*d*ái*l*i*z	*d*ā*l*i*z	C_stressed_ai_to_a	regular
+dough	*dáigaz	dāg	*d*ái*g*a*z	*d*ái*g*a*z	*d*ái*g*a*z	*d*ā*g*a*z	C_stressed_ai_to_a	regular
+flesh	*fláiskiz	flǣsċ	*f*l*ái*s*k*i*z	*f*l*ái*s*k*i*z	*f*l*ái*s*k*i*z	*f*l*ā*s*k*i*z	C_stressed_ai_to_a	regular
+ghost	*gáistaz	gāst	*g*ái*s*t*a*z	*g*ái*s*t*a*z	*g*ái*s*t*a*z	*g*ā*s*t*a*z	C_stressed_ai_to_a	regular
+heal	*xáilijaną	hǣlan	*x*ái*l*i*j*a*n*ą	*x*ái*l*i*j*a*n*ą	*x*ái*l*i*j*a*n*ą	*x*ā*l*i*j*a*n*ą	C_stressed_ai_to_a	regular
+heath	*xáiθiz	hǣþ	*x*ái*θ*i*z	*x*ái*θ*i*z	*x*ái*θ*i*z	*x*ā*θ*i*z	C_stressed_ai_to_a	regular
+home	*xáimaz	hām	*x*ái*m*a*z	*x*ái*m*a*z	*x*ái*m*a*z	*x*ā*m*a*z	C_stressed_ai_to_a	regular
+last	*láistijaną	lǣstan	*l*ái*s*t*i*j*a*n*ą	*l*ái*s*t*i*j*a*n*ą	*l*ái*s*t*i*j*a*n*ą	*l*ā*s*t*i*j*a*n*ą	C_stressed_ai_to_a	regular
+lead	*láidijaną	lǣdan	*l*ái*d*i*j*a*n*ą	*l*ái*d*i*j*a*n*ą	*l*ái*d*i*j*a*n*ą	*l*ā*d*i*j*a*n*ą	C_stressed_ai_to_a	regular
+loath	*láiθaz	lāþ	*l*ái*θ*a*z	*l*ái*θ*a*z	*l*ái*θ*a*z	*l*ā*θ*a*z	C_stressed_ai_to_a	regular
+mean	*máinijaną	mǣnan	*m*ái*n*i*j*a*n*ą	*m*ái*n*i*j*a*n*ą	*m*ái*n*i*j*a*n*ą	*m*ā*n*i*j*a*n*ą	C_stressed_ai_to_a	regular
+one	*áinaz	ān	*ái*n*a*z	*ái*n*a*z	*ái*n*a*z	*ā*n*a*z	C_stressed_ai_to_a	regular
+roe	*ráixōn	-	*r*ái*x*ō*n	*r*ái*x*ō*n	*r*ái*x*ō*n	*r*ā*x*ō*n	C_stressed_ai_to_a	
+rope	*ráipą	rāp	*r*ái*p*ą	*r*ái*p*ą	*r*ái*p*ą	*r*ā*p*ą	C_stressed_ai_to_a	regular
+sea	*sái	sǣ	*s*ái	*s*ái	*s*ái	*s*ā	C_stressed_ai_to_a	early_analogy
+sheath	*skáiθiz	sċēaþ	*s*k*ái*θ*i*z	*s*k*ái*θ*i*z	*s*k*ái*θ*i*z	*s*k*ā*θ*i*z	C_stressed_ai_to_a	regular
+snow	*snáiwaz	snāw	*s*n*ái*w*a*z	*s*n*ái*w*a*z	*s*n*ái*w*a*z	*s*n*ā*w*a*z	C_stressed_ai_to_a	regular
+soul	*sáiwalō	sāwol	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	*s*ā*w*a*l*ō	C_stressed_ai_to_a	regular
+spread	*spráidijaną	sprǣdan	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ái*d*i*j*a*n*ą	*s*p*r*ā*d*i*j*a*n*ą	C_stressed_ai_to_a	regular
+stone	*stáinaz	stān	*s*t*ái*n*a*z	*s*t*ái*n*a*z	*s*t*ái*n*a*z	*s*t*ā*n*a*z	C_stressed_ai_to_a	regular
+toe	*táixōn	tā	*t*ái*x*ō*n	*t*ái*x*ō*n	*t*ái*x*ō*n	*t*ā*x*ō*n	C_stressed_ai_to_a	regular
+token	*táikną	tācn	*t*ái*k*n*ą	*t*ái*k*n*ą	*t*ái*k*n*ą	*t*ā*k*n*ą	C_stressed_ai_to_a	regular
+withy	*wáiθiz	wīþiġ	*w*ái*θ*i*z	*w*ái*θ*i*z	*w*ái*θ*i*z	*w*ā*θ*i*z	C_stressed_ai_to_a	early_analogy
