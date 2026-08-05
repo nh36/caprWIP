@@ -19,9 +19,9 @@ it must be checked lexically and understood.
 ## Summary (current snapshot)
 
 - pairs tested: 130  (13 early PNWGmc/NWGmc x 10 PWGmc; SC012 `EAFLThVoicing` left this matrix on becoming EAF)
-- commute: 104
-- non-commute: 26
-  - the reorder **preserves** (PNWGmc already before PWGmc): 16
+- commute: 103
+- non-commute: 27
+  - the reorder **preserves** (PNWGmc already before PWGmc): 17
   - the reorder would **swap** (PWGmc currently before a non-commuting PNWGmc rule): 10
 
 Only the 10 swap pairs below are reorder-relevant. Non-commutation over
@@ -55,6 +55,19 @@ regression-checked against the baseline outputs.
 The remaining non-commuting pairs already have the PNWGmc rule before the PWGmc
 rule in the current cascade; the historical reorder keeps that relative order, so
 they carry no swap risk. See `cascade_interaction_matrix.tsv` for the full data.
+
+### SC004 split effect (SC014 `PNWGmcUnstressedAiMonophthongization`)
+
+The SC004 Outcome-C split turned SC014 from a `{*ăi} -> {*ē}` no-op into a live
+word-final rule (`{*ai} -> {*ē} || _ .#.`) at the head of the cascade (pos 1).
+Its interaction profile therefore changed: `PNWGmcUnstressedAiMonophthongization
+x PWGmcFinalBareALoss` is now **non-commute** (was `commute` while SC014 was a
+no-op), because final bare-*a deletion can alter the word-final environment the
+rule keys on. This pair is **preserved, not swap-relevant**: SC014 (pos 1) is
+already far before `PWGmcFinalBareALoss` (pos 38), so the relative order is
+unchanged and no baseline output is affected (frozen `outputs_sha256`
+`aaf19ba9…480e` is preserved). This is the one matrix change from the split; all
+other SC014 pairs remain `commute`.
 
 ## Regenerating
 

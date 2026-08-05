@@ -1,35 +1,54 @@
 # SC014 NWGmc Unstressed Ai Monophthongization — chronology evidence card
 
+> **Split note (SC004 Outcome-C).** SC014 is now a standalone rule: word-final
+> unstressed `*-ai > *-ē` (early Proto-Northwest Germanic), split out of the
+> former bundled SC004 `PWGmcAiMonophthongization`. It replaces the earlier no-op
+> `{*ăi} -> {*ē}` card, which was a placeholder with no live rule. The general
+> `*ai/*ái > *ā` development is now SC004 `EAFAiMonophthongization` (see
+> `SC004-pwgmc-ai-monophthongization.md` and `SC004-components-chronology.md`).
+
 ## Current position
-- current_order: `14`
+- current_order (SC id): `14`
+- executable cascade position: `1` (head of `EarlyEnglishLineChanges`, the former SC004 slot)
 - rule_name: `PNWGmcUnstressedAiMonophthongization`
 - former_rule_name: `NWGmcUnstressedAiMonophthongization`
-- safe computational window: `13-86` (earlier side runner-limited; later side boundary-limited)
-- status: `first_break_complete`
+- live Foma rule: `{*ai} -> {*ē} || _ .#.` (explicit word-final environment)
+- safe computational window: **unconstrained** — zero corpus applications
+- status: `corpus_inert`
 
 ## Earlier boundary
-- first earlier break: `none found before runner boundary at order 13`
-- crossed stage: `PWGmcChanges`
-- crossed stage type: `blocked_by_runner_limitation`
+- first earlier break: `none — no corpus witness can be crossed`
+- crossed stage: `n/a`
+- crossed stage type: `no_corpus_load`
 - failure count: `0`
 - representative failures: `none`
-- concrete failure example: `none — no earlier real break was found before the runner boundary`
-- interpretation: The current runner can move SC014 earlier safely down to order `13`, but it cannot test farther because that path enters bundled `PWGmcChanges`. This is therefore not yet an earlier historical boundary for NWGmc Unstressed Ai Monophthongization.
+- concrete failure example: `none — SC014 fires on zero corpus lexemes`
+- interpretation: No Old English corpus lexeme carries word-final unstressed `*-ai`; SC014's historical witnesses are inflectional endings (dat.sg `*-ai`, subjunctive `*-ai`, strong-adj pl `*-ai`), not standalone lexemes. There is therefore no earlier break to find.
 
 ## Later boundary
-- first later break: `none found before runner boundary at order 86`
-- crossed stage: `SC087` OE R Metathesis
-- crossed stage type: `historical_sound_change` (runner-boundary result)
+- first later break: `none — no corpus witness can be crossed`
+- crossed stage: `n/a`
+- crossed stage type: `no_corpus_load`
 - failure count: `0`
 - representative failures: `none`
-- concrete failure example: `none — no later real break was found before the runner boundary`
-- interpretation: The current runner found no later real break for SC014 through last safe order `86`. This is not a detected later historical boundary for the rule; it is a no-break-before-boundary result bounded by the current search space.
+- concrete failure example: `none — SC014 fires on zero corpus lexemes`
+- interpretation: Because SC014 rewrites zero corpus forms, moving it to any cascade position leaves every corpus output unchanged. It has no positive chronology boundary of any kind.
 
 ## Chronology statement
-Current first-break evidence does **not** yet identify a historical first-break boundary for SC014 in either tested direction. The earlier search ran safely down to order `13` before stopping at bundled `PWGmcChanges`, and the later search ran safely through order `86` before stopping at the current `SC087` boundary with no real break. This card therefore records a negative computational result rather than a positive chronology constraint.
+SC014 is **corpus-inert** in the current lexical dataset: it has no first-break
+boundary in either direction because no corpus derivation passes a word-final
+unstressed `*-ai`. Its correct historical stage — early Proto-Northwest Germanic,
+with the `*ē` outcome merging into long mid `*ē` — is established by comparison of
+inflectional endings and by the literature (R/T pp. 40–41, §6.1.5; Fulk §5.2),
+not by any CAPR derivational witness. Its cascade position (executable pos 1) is
+therefore historically motivated but computationally free.
 
 ## Caveats
-Both sides are boundary-limited rather than historically interpretable. This card should not be used to claim that SC014 must follow any specific earlier stage or precede `SC087`.
+This card records a corpus-inert result: SC014 imposes no cascade-order
+constraint and cannot be constrained (or justified) by first-break testing. The
+earlier negative card that reported a runner limitation against the bundled
+`PWGmcChanges` is superseded — the limitation was an artefact of SC014 sharing a
+rule with the general change, which the split removes.
 
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03.tsv`
