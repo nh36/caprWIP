@@ -126,3 +126,44 @@ mechanism, and outcome). That is the substance behind the audit table's
 4. Remaining **[verify]** item before any reader-facing use: consult Versloot
    2017 directly and add it to `docs/refs.bib`; confirm the wave chronology and
    the PNWGmc dating of final `*-ai > *-ē`.
+
+---
+
+## Versloot 2017 — direct verification (source prerequisite closed)
+
+Consulted directly (author's abstract and discussion, academia.edu / UvA-DARE)
+and added to `docs/refs.bib` as `@Versloot2017` (Folia Linguistica Historica 38:
+281--324, doi 10.1515/flih-2017-0010). What the article **does** support, and
+what it does **not**:
+
+**Supported (verified) — stressed `*ai`:**
+1. The monophthongisation of **stressed** PGmc `*ai` spread over Germania in
+   **two areal waves**, c. **AD 400--900**. Wave 1 (contexts before `*h`, `*r`)
+   went north→south from Old High German (mid-6th c.); wave 2 affected the
+   remaining instances and **did not reach Old High German or Old West Nordic**
+   [@Versloot2017].
+2. The process is **diffusional / wave-like**, not the reflex of a discrete
+   structural node; **Old English is among the languages with the most widely
+   defined monophthongisation contexts** (with Old Saxon, Old Low Franconian),
+   and Old Frisian is analysed in detail. This directly supports the **later**,
+   **areal** character of CAPR's general `*ai/*ái > *ā` (Components B+C) and
+   **confirms that EAF must be treated as an operational modelling corridor, not
+   a demonstrated Proto-Anglo-Frisian node** (task §1).
+
+**Not supported by Versloot — the final/unstressed component (A):**
+3. Versloot 2017 is explicitly about **stressed** `*ai`. It does **not**
+   establish the early Proto-Northwest Germanic dating of **word-final
+   unstressed** `*-ai > *-ē`. That dating rests on `@RingeTaylor2014` (pp. 40--41)
+   and `@Fulk2018` (§5.2), which treat unstressed `*ai` monophthongisation as an
+   early shared (P)NWGmc innovation. This is retained as the source for A.
+
+**Retained uncertainty:**
+4. The traditional label "North Sea Germanic / Anglo-Frisian" for B+C is a
+   reasonable characterisation of the zone Versloot places in the broad-context
+   wave, but Versloot frames it as an **areal continuum** rather than a bounded
+   branch; CAPR's `north_sea_germanic` scope is a modelling label over that zone,
+   not a claim of a discrete proto-node.
+5. Versloot does not himself separate a distinct word-final `*-ai > *-ē` change;
+   the two-development analysis (early unstressed/final vs later stressed/areal)
+   combines Versloot (stressed) with R/T + Fulk (unstressed). No web summary is
+   relied upon; the above is drawn from the article's own abstract and discussion.
