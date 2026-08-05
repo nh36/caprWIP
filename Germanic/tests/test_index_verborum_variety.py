@@ -493,9 +493,13 @@ class RealCorpusInvariantTests(unittest.TestCase):
             "print_excluded_occurrences": 88,
         }
         POST_ANNOTATION = {
-            "production_occurrences": 2352,
+            # stem's proto-input *stámnaz surfaced (+1 occurrence) after the stale
+            # full-trace snapshot was regenerated: stem moved exact_match -> mismatch,
+            # matching the frozen baseline's 8 documented mismatches. Orthogonal to
+            # the rename migration (gate B: outputs_sha256 unchanged).
+            "production_occurrences": 2353,
             "production_unique_forms": 1139,
-            "print_main_occurrences": 2264,
+            "print_main_occurrences": 2265,
             "unique_printed_entries": 1061,
             "print_excluded_occurrences": 88,
         }
@@ -879,12 +883,12 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bo = self._rows("index_verborum_book_occurrences.tsv")
         be = self._rows("index_verborum_book_emissions.tsv")
 
-        self.assertEqual(len(pm), 2264)
+        self.assertEqual(len(pm), 2265)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
         self.assertEqual(source_not_in_book, 233)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2031)
+        self.assertEqual(len(bo), 2032)
         self.assertEqual(len(be), 1865)
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
@@ -929,8 +933,8 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bu = self._rows("index_verborum_book_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
 
-        self.assertEqual(len(pm), 2264, "corpus occurrence count")
-        source_not_in_book = 2264 - 2031
+        self.assertEqual(len(pm), 2265, "corpus occurrence count")
+        source_not_in_book = 2265 - 2032
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
         self.assertEqual(len(be), 1865, "book emission count")
         self.assertEqual(len(pu), 1061, "unique corpus entries")
