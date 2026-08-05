@@ -1,0 +1,11 @@
+probe_id	rule	input	output	expected	pass	note
+final_ai_to_e	SC014_PNWGmcUnstressedAiMonophthongization	*s*p*a*n*n*ai	*s*p*a*n*n*ē	*s*p*a*n*n*ē	1	fem. o-stem dat.sg *spannai: word-final unstressed *ai -> *e
+sc014_leaves_stressed	SC014_PNWGmcUnstressedAiMonophthongization	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	*s*ái*w*a*l*ō	1	soul: stressed root *ai(acute) is untouched by SC014 (final-only)
+sc014_leaves_nonfinal	SC014_PNWGmcUnstressedAiMonophthongization	*l*ai*m*ō*n	*l*ai*m*ō*n	*l*ai*m*ō*n	1	loam: nonfinal unaccented *ai is untouched by SC014 (final-only)
+sc004_stressed_ai_to_a	SC004_EAFAiMonophthongization	*s*ái*w*a*l*ō	*s*ā*w*a*l*ō	*s*ā*w*a*l*ō	1	soul: stressed root *ai(acute) -> *a (SC036 boundary witness)
+sc004_loam_nonfinal	SC004_EAFAiMonophthongization	*l*ai*m*ō*n	*l*ā*m*ō*n	*l*ā*m*ō*n	1	loam: unaccented nonfinal *ai -> *a
+sc004_whine_nonfinal	SC004_EAFAiMonophthongization	*w*ai*n*ō*j*a*n*ą	*w*ā*n*ō*j*a*n*ą	*w*ā*n*ō*j*a*n*ą	1	whine: unaccented nonfinal *ai -> *a
+sc004_leaves_final	SC004_EAFAiMonophthongization	*s*p*a*n*n*ai	*s*p*a*n*n*ai	*s*p*a*n*n*ai	1	fem. o-stem dat.sg *spannai: word-final unstressed *ai untouched by SC004
+alias_final_path	ALIAS_PWGmcAiMonophthongization	*s*p*a*n*n*ai	*s*p*a*n*n*ē	*s*p*a*n*n*ē	1	alias == A.o.(B.o.C): final *ai -> *e via A
+alias_stressed_path	ALIAS_PWGmcAiMonophthongization	*s*ái*w*a*l*ō	*s*ā*w*a*l*ō	*s*ā*w*a*l*ō	1	alias == A.o.(B.o.C): stressed *ai(acute) -> *a via C
+alias_nonfinal_path	ALIAS_PWGmcAiMonophthongization	*l*ai*m*ō*n	*l*ā*m*ō*n	*l*ā*m*ō*n	1	alias == A.o.(B.o.C): nonfinal *ai -> *a via B
