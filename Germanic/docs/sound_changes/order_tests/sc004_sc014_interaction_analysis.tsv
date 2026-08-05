@@ -1,0 +1,42 @@
+rule	rule_foma	crossed_rule	commute	counterexample_input	forward_output	reversed_output	counterexample_source
+SC014	PNWGmcUnstressedAiMonophthongization	PNWGmcAToUBeforeM	no	īld-amai	*ī*l*d*u*m*ē	*ī*l*d*a*m*ē	formal_noncorpus
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcEarlyIApocope	no	-xnaijēsi	*x*n*ē*j*ē*s	*x*n*ē*j*ē*s*i	formal_noncorpus
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcFinalOrLowering	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcCoronalWAssimilation	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcIjContraction	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcJGemination	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcSyllabicJ	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	EAFLThVoicing	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	PWGmcDentalHardening	yes				
+SC014	PNWGmcUnstressedAiMonophthongization	PNWGmcILowering	yes				
+SC004	EAFAiMonophthongization	PNWGmcAToUBeforeM	yes				
+SC004	EAFAiMonophthongization	PWGmcEarlyIApocope	no	-spráixzēθi	*s*p*r*ā*x*z*ē*θ	*s*p*r*ā*x*z*ē*θ*i	formal_noncorpus
+SC004	EAFAiMonophthongization	PWGmcFinalOrLowering	yes				
+SC004	EAFAiMonophthongization	PWGmcCoronalWAssimilation	yes				
+SC004	EAFAiMonophthongization	PWGmcIjContraction	yes				
+SC004	EAFAiMonophthongization	PWGmcJGemination	yes				
+SC004	EAFAiMonophthongization	PWGmcSyllabicJ	yes				
+SC004	EAFAiMonophthongization	EAFLThVoicing	yes				
+SC004	EAFAiMonophthongization	PWGmcDentalHardening	yes				
+SC004	EAFAiMonophthongization	PNWGmcILowering	no	iðl-dráiu	*e*ð*l*d*r*ā*u	*i*ð*l*d*r*ā*u	formal_noncorpus
+SC004	EAFAiMonophthongization	OEWsPalatalGlide	yes				
+SC004	EAFAiMonophthongization	PNWGmcULowering	no	wrúz-áipą	*w*r*ó*z*ā*p*ą	*w*r*ú*z*ā*p*ą	formal_noncorpus
+SC004	EAFAiMonophthongization	PNWGmcStressedMonosyllableORaising	yes				
+SC004	EAFAiMonophthongization	PNWGmcFinalLongORaising	yes				
+SC004	EAFAiMonophthongization	EAFFinalZDeletion	yes				
+SC004	EAFAiMonophthongization	PNWGmcUnstressedORaising	yes				
+SC004	EAFAiMonophthongization	PNWGmcMnDissimilation	yes				
+SC004	EAFAiMonophthongization	PNWGmcNStemNLoss	yes				
+SC004	EAFAiMonophthongization	PNWGmcLongELowering	yes				
+SC004	EAFAiMonophthongization	PNWGmcLongENasalRounding	yes				
+SC004	EAFAiMonophthongization	EAFNasalSpirantLengthening	yes				
+SC004	EAFAiMonophthongization	EAFNasalSpirantLoss	yes				
+SC004	EAFAiMonophthongization	PNWGmcPreconsonantalXLoss	yes				
+SC004	EAFAiMonophthongization	OEAwjGlideFormation	yes				
+SC004	EAFAiMonophthongization	OEAuFronting	yes				
+SC004	EAFAiMonophthongization	OEWWSimplification	yes				
+SC004	EAFAiMonophthongization	OEDiphthongLeveling	yes				
+SC004	EAFAiMonophthongization	OEEwLongDiphthong	yes				
+SC004	EAFAiMonophthongization	OEAwLongDiphthong	yes				
+SC004	EAFAiMonophthongization	OEPrefixAReductionEarly	yes				
+SC004	EAFAiMonophthongization	OEInterStressRaising	no	rgái-ladu	*r*g*ā*l*u*d*u	*r*g*ā*l*a*d*u	formal_noncorpus

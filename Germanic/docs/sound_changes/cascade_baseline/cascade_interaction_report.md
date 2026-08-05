@@ -58,16 +58,24 @@ they carry no swap risk. See `cascade_interaction_matrix.tsv` for the full data.
 
 ### SC004 split effect (SC014 `PNWGmcUnstressedAiMonophthongization`)
 
-The SC004 Outcome-C split turned SC014 from a `{*ăi} -> {*ē}` no-op into a live
-word-final rule (`{*ai} -> {*ē} || _ .#.`) at the head of the cascade (pos 1).
-Its interaction profile therefore changed: `PNWGmcUnstressedAiMonophthongization
-x PWGmcFinalBareALoss` is now **non-commute** (was `commute` while SC014 was a
-no-op), because final bare-*a deletion can alter the word-final environment the
-rule keys on. This pair is **preserved, not swap-relevant**: SC014 (pos 1) is
-already far before `PWGmcFinalBareALoss` (pos 38), so the relative order is
-unchanged and no baseline output is affected (frozen `outputs_sha256`
-`aaf19ba9…480e` is preserved). This is the one matrix change from the split; all
-other SC014 pairs remain `commute`.
+After the corrective PROTOFORM pass, SC014 is the live rule `{*ai} -> {*ē}`
+(unstressed *ai, final AND nonfinal, following Ringe-Taylor) at the head of the
+cascade (pos 1), and SC004 is the stressed-only rule `{*ái} -> {*ā}` at pos 25.
+
+The one SC014 change in this PNWGmc x PWGmc matrix is
+`PNWGmcUnstressedAiMonophthongization x PWGmcEarlyIApocope`, now **non-commute**:
+because SC014 monophthongizes *ai in any position, it can alter syllable
+structure that early i-apocope keys on (SC014 feeds apocope). Conversely
+`... x PWGmcFinalBareALoss` is now **commute** (the unrestricted rule no longer
+keys on the word-final environment, unlike the earlier `|| _ .#.` form). Both
+totals are unchanged (103 commute / 27 non-commute); the two changes offset.
+
+This pair is **preserved, not swap-relevant**: SC014 (pos 1) is already before
+`PWGmcEarlyIApocope` (pos 3), so the relative order is unchanged and no baseline
+output is affected (frozen `outputs_sha256` `aaf19ba9…480e` is preserved). The
+full SC004/SC014 crossing analysis, with formal counterexamples, is in
+`order_tests/sc004_sc014_interaction_analysis.tsv` and
+`order_tests/sc004_sc014_interaction_report.md`.
 
 ## Regenerating
 
