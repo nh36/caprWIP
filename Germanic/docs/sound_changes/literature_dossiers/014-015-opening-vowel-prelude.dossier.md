@@ -1,23 +1,36 @@
 # SC014-SC015 Opening Vowel Prelude -- literature dossier
 
+> **Split note (SC004 Outcome-C).** SC014 is now a standalone early
+> Proto-Northwest Germanic change — word-final unstressed `*-ai > *-ē` — split
+> out of the former bundled SC004 `PWGmcAiMonophthongization`. Its live Foma rule
+> is `{*ai} -> {*ē} || _ .#.` (the obsolete `{*ăi} -> {*ē}` no-op is gone), and
+> it is **corpus-inert**: zero corpus applications, because no OE corpus lexeme
+> carries word-final unstressed `*-ai`; its witnesses are inflectional endings.
+> The general `*ai/*ái > *ā` development is now the separate SC004
+> `EAFAiMonophthongization` (Chapter 3; see
+> `004-pwgmc-ai-monophthongization.dossier.md`). Where the analysis below calls
+> SC014 "runner-limited by bundled `PWGmcChanges`," read that as **corpus-inert**:
+> the earlier limitation was an artefact of SC014 sharing a rule with the general
+> change, which the split removes. SC015's substantive text is unchanged.
+> Implemented on branch `historical-cascade-order` (FST split commit `f59b758d`).
+
 ## Rule metadata
 
 - **change_ids:** SC014; SC015
 - **display_names:** NWGmc Unstressed Ai Monophthongization; NWGmc I Lowering
-- **FOMA rule names:** `NWGmcUnstressedAiMonophthongization`; `NWGmcILowering`
-- **current_orders:** SC014 immediately precedes SC015 at the left edge of the ordinary sound-change half, directly before the pilot `SC016-SC020` early vocalic/final corridor
+- **FOMA rule names:** `PNWGmcUnstressedAiMonophthongization`; `PNWGmcILowering`
+- **current_orders:** SC014 now executes at the head of `EarlyEnglishLineChanges` (executable position 1, the former SC004 slot); SC015 immediately precedes the pilot `SC016-SC020` early vocalic/final corridor
 - **chronology card paths:**
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC014-nwgmc-unstressed-ai-monophthongization.md`
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC015-nwgmc-i-lowering.md`
 - **representative failures / witnesses:**
-  - SC014: none in the current searchable corridor
+  - SC014: none — corpus-inert (zero corpus applications; witnesses are inflectional endings, not standalone lexemes)
   - SC015: `world`
 - **local chronology summary:**
-  - SC014 has no positive earlier historical boundary: the earlier search stops at bundled `PWGmcChanges`.
-  - SC014 has no positive later historical boundary in the current searchable corridor: no real break appears before the current search boundary at SC087.
-  - SC015 has no positive earlier historical boundary: the earlier search stops at bundled `PWGmcChanges`.
+  - SC014 has no positive chronology boundary of any kind: it is corpus-inert, so no witness can be crossed in either direction.
+  - SC015 has no positive earlier historical boundary: the earlier search stops at bundled `EarlyEnglishLineChanges`.
   - SC015 must precede SC036, with `world`.
-  - The row is adjacent and useful as an opening prelude, but the available chronology is highly asymmetric: SC014 is boundary-limited on both sides, while SC015 has one real broad/far later boundary.
+  - The row is adjacent and useful as an opening prelude, but the available chronology is highly asymmetric: SC014 is corpus-inert (unconstrained), while SC015 has one real broad/far later boundary.
 
 ## Historical problem
 
@@ -81,14 +94,15 @@ boundary-limited note while SC015 carries most of the prose.
 CAPR turns that early unstressed-vowel background into two explicit adjacent
 rules at the very start of the ordinary cascade.
 
-SC014 `NWGmcUnstressedAiMonophthongization` is historically plausible and
+SC014 `PNWGmcUnstressedAiMonophthongization` is historically plausible and
 comparatively well supported as a type. Ringe and Taylor give the clearest
 statement that unstressed `*ai` merged with unstressed `*e` across much of the
 Northwest Germanic area, and Campbell supplies older West Germanic support for
 the same general move [@RingeTaylor2014, pp. 37--41; @Campbell1959, §331.7].
-But CAPR currently gives SC014 no positive chronology on either side. It is
-therefore best understood as a real historical prelude with weak current
-chapter evidence.
+Post-split, SC014 is the word-final `*-ai > *-ē` change only; it is corpus-inert
+(zero corpus applications), so CAPR gives it no positive chronology on either
+side. It is therefore best understood as a real early historical prelude whose
+placement rests on comparative evidence rather than on any CAPR derivation.
 
 SC015 `NWGmcILowering` is stronger. Campbell's unaccented-vowel merger and
 Hogg's claim that unstressed front vowels converged on `/e/` give it a clear
@@ -106,9 +120,9 @@ chronology relation.
 
 ## Chronology implications
 
-- SC014 currently has no positive historical first-break boundary in either direction.
-- SC014's earlier side stops at bundled `PWGmcChanges`; that is a runner limitation, not a positive left boundary.
-- SC014's later side reaches the current search boundary with no real break; that is also not a positive chronology claim.
+- SC014 has no positive historical first-break boundary in either direction because it is **corpus-inert**: no OE corpus lexeme carries word-final unstressed `*-ai`, so no witness can be crossed.
+- SC014's cascade placement is therefore computationally free; its early Proto-Northwest Germanic stage rests on comparative evidence (inflectional endings `*-ai`), not CAPR derivation.
+- The former "runner-limited at bundled `PWGmcChanges`" reading is superseded by the SC004 split, which removed the shared rule that caused it.
 - SC015 has one current historical boundary, and it is rightward: `SC015 < SC036`, with `world`.
 - SC015's earlier side is also runner-limited at bundled `PWGmcChanges` and must not be rewritten as a positive left boundary.
 - The `SC015 < SC036` relation is broad/far and should remain a cross-reference only. It does not justify a non-contiguous SC015-SC036 chapter.

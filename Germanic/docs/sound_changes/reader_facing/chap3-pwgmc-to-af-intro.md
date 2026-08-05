@@ -78,6 +78,28 @@ section correctly describes SC003 as presupposing an earlier loss of final `*z`,
 creating a presentational tension with SC020's place at cascade position 20.
 This tension is a targeted audit item for the next phase of the chronology work.
 
+### Anglo-Frisian ai-monophthongization (SC004)
+
+The monophthongization of inherited `*ai` to `*ā`, in stressed root syllables
+such as [sáiwalō]{.recon .iv lang=pgmc sort=saiwalo} 'soul' and in the two
+unaccented nonfinal forms of the dataset, is a North Sea Germanic areal
+development. Versloot argues that it spread in successive waves through a
+dialect continuum, with Old English among the widest to carry it, so the change
+is better read as an areal diffusion through the continuum than as a single
+dated node [@Versloot2017, pp. 281--324]. The resulting `*ā` is later fronted to
+`ǣ` in the relevant Old English environments.
+
+The CAPR rule is named `EAFAiMonophthongization` and executes at cascade
+position 25. That position is CAPR's operational home for a North Sea Germanic
+areal change on the English line; it is a modelling choice, not a claim that the
+change passed through a discrete Proto-Anglo-Frisian node. The one usable
+chronological anchor is the `soul` derivation, which requires the
+monophthongization to precede OE interstress raising (SC036).
+
+The early word-final development `*-ai > *-ē` is a separate and earlier
+Proto-Northwest Germanic change (SC014), discussed in Chapter 2; it is
+corpus-inert in the current dataset.
+
 ### Anglo-Frisian brightening (SC043)
 
 The fronting of low `*a` to `*æ` outside nasal environments is the defining
@@ -106,13 +128,14 @@ staging map now places it in Chapter 3, correcting that provisional label.
 
 ## Cascade vs. historical order in this chapter
 
-The three changes in this chapter currently occur at cascade positions 3, 19–20,
-and 43 respectively. These cascade positions reflect computational dependencies,
+The four changes in this chapter currently occur at cascade positions 3, 19–20,
+25, and 43 respectively. These cascade positions reflect computational dependencies,
 not historical sequence. The reader-facing book order in this chapter places
 rhotacism first (as the post-PWGmc WGmc change), then word-final `*z` deletion
 (SC020, closely related to rhotacism and discussed in the same reader-facing
-section as SC019), then Anglo-Frisian brightening as the culminating change of
-the pre-OE period.
+section as SC019), then Anglo-Frisian ai-monophthongization (SC004, the North
+Sea Germanic areal vowel change), then Anglo-Frisian brightening as the
+culminating change of the pre-OE period.
 
 The divergence between cascade order and book order in this chapter is one of
 the clearest illustrations of the principle that FST dependency does not

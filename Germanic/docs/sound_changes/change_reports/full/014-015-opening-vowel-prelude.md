@@ -2,6 +2,19 @@
 
 ### Sound-change report
 
+> **Split note (SC004 Outcome-C).** SC014 is now a standalone early
+> Proto-Northwest Germanic change — word-final unstressed `*-ai > *-ē` — split
+> out of the former bundled SC004. Its live Foma rule is
+> `{*ai} -> {*ē} || _ .#.` and it is **corpus-inert** (zero corpus applications;
+> witnesses are inflectional endings). It now executes at the head of the cascade
+> (executable position 1), so it is no longer adjacent to SC015 `PNWGmcILowering`
+> (position 11); the cascade snippet below shows the pre-split opening region. The
+> general `*ai/*ái > *ā` development is the separate SC004 `EAFAiMonophthongization`
+> (Chapter 3; see `004-pwgmc-ai-monophthongization.md`). Read "chronology-negative
+> / boundary-limited" for SC014 below as **corpus-inert**. SC015's substantive
+> text is unchanged. Implemented on branch `historical-cascade-order` (FST split
+> commit `f59b758d`).
+
 #### Historical formulation
 
 `SC014-SC015` appears here as a **short, cautious opening bridge report**,
@@ -12,9 +25,10 @@ with an explicit opening prelude rather than jumping straight into the more
 developed `SC016-SC020` corridor.
 
 The internal hierarchy of the pair should stay explicit. SC014
-**NWGmc Unstressed Ai Monophthongization** is the weak opening member:
-historically plausible and source-backed, but currently chronology-negative on
-both tested sides. SC015 **NWGmc I Lowering** is the stronger member and carries
+**NWGmc Unstressed Ai Monophthongization** is the early opening member: it is the
+word-final unstressed `*-ai > *-ē` change, historically plausible and
+source-backed but **corpus-inert** (zero corpus applications), so it imposes no
+chronology constraint. SC015 **NWGmc I Lowering** is the stronger member and carries
 most of the report. It belongs to the broader history of early unstressed
 front-vowel leveling and has one real, though broad/far, later chronology
 relation through `world`.

@@ -1,5 +1,17 @@
 # SC014-SC015: Opening vowel prelude
 
+> **Split note (SC004 Outcome-C).** SC014 is now a standalone early
+> Proto-Northwest Germanic change — word-final unstressed `*-ai > *-ē` — split
+> out of the former bundled SC004. Its live Foma rule is
+> `{*ai} -> {*ē} || _ .#.` and it is **corpus-inert** (zero corpus applications;
+> witnesses are inflectional endings). It executes at the head of the cascade
+> (position 1). The general `*ai/*ái > *ā` development is the separate SC004
+> `EAFAiMonophthongization` (Chapter 3; see
+> `004-pwgmc-ai-monophthongization.book-dossier.md`). Read "boundary-limited /
+> runner-limited at bundled `PWGmcChanges`" for SC014 below as **corpus-inert**.
+> SC015's substantive text is unchanged. Implemented on branch
+> `historical-cascade-order` (FST split commit `f59b758d`).
+
 ## 1. Role in the book
 
 This row is the earliest ordinary Northwest Germanic vowel prelude in the
@@ -8,8 +20,9 @@ assembled half. Its purpose is not to rival the better-documented
 preceding opening changes explicit so that the book does not appear to begin in
 midstream.
 
-That role is inherently asymmetrical. SC014 is historically real but currently
-boundary-limited on both sides. SC015 is the stronger member: it has clear
+That role is inherently asymmetrical. SC014 is historically real but
+corpus-inert (zero corpus applications), so it imposes no chronology constraint.
+SC015 is the stronger member: it has clear
 source support as part of early unstressed front-vowel leveling, and it has one
 real broad/far chronology relation through `world`. The book therefore needs to
 decide whether this row should eventually become a short cautious opening
@@ -19,8 +32,8 @@ of the prose.
 ## 2. Name and basic formulation
 
 - **SC014:** NWGmc Unstressed Ai Monophthongization
-  - **FOMA rule:** `NWGmcUnstressedAiMonophthongization`
-  - **Current role:** weak but historically plausible opening reduction of unstressed `*ai`, with no positive boundary yet recovered on either side
+  - **FOMA rule:** `PNWGmcUnstressedAiMonophthongization`
+  - **Current role:** early Proto-Northwest Germanic word-final unstressed `*-ai > *-ē`; corpus-inert (zero corpus applications), so no positive boundary on either side; historical placement rests on comparative evidence (inflectional endings)
 - **SC015:** NWGmc I Lowering
   - **FOMA rule:** `NWGmcILowering`
   - **Current role:** stronger early unstressed-vocalic adjustment, with one real later boundary at SC036 on `world`

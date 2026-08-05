@@ -5,12 +5,12 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 ## Summary
 
 - Sections checked: 85.
-- Sections with warnings: 58.
+- Sections with warnings: 57.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism} | yes | yes | yes | yes | yes | no | no | — |
-| 004-pwgmc-ai-monophthongization.md | SC004. Proto-West-Germanic ai-monophthongization (`PWGmcAiMonophthongization`) {#rule-PWGmcAiMonophthongization} | yes | yes | yes | no | yes | no | no | missing SC-plus-rule reference in chronology prose |
+| 004-pwgmc-ai-monophthongization.md | SC004. Anglo-Frisian ai-monophthongization (`EAFAiMonophthongization`) {#rule-EAFAiMonophthongization} | yes | yes | yes | yes | yes | no | no | — |
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`PNWGmcAToUBeforeM`) {#rule-PNWGmcAToUBeforeM} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | yes | yes | yes | yes | yes | yes | no | — |
 | 007-final-o-lowering-before-r.md | SC007. Lowering of final bimoric \emph{*ō} before \emph{*r} (`PWGmcFinalOrLowering`) {#rule-PWGmcFinalOrLowering} | yes | yes | yes | yes | yes | no | no | — |

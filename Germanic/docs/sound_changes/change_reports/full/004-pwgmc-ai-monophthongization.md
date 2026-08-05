@@ -1,59 +1,89 @@
-# PWGmc ai-monophthongization
+# EAF ai-monophthongization
 
 ### Sound-change report
 
+> **Split note (SC004 Outcome-C).** SC004 is now the general/root change
+> `*ai/*ái > *ā` only. The word-final unstressed `*-ai > *-ē` outcome that the
+> former bundled rule also packaged is a separate, earlier change — now SC014
+> `PNWGmcUnstressedAiMonophthongization` (see
+> `014-015-opening-vowel-prelude.md`). Implemented on branch
+> `historical-cascade-order` (FST split commit `f59b758d`).
+
 #### Historical formulation
 
-SC004 `PWGmcAiMonophthongization` packages the West Germanic monophthongization of inherited `*ai`, including the special word-final unstressed outcome that merges with long mid `*ē`. In the inventory and trace output the rule is visible across a broad set of lexical families such as `bone`, `deal`, `dough`, `flesh`, and `ghost`.
-
-That makes it historically recognizable, but the present source support is uneven. The clearest sources assembled here speak most directly to the unstressed and especially word-final `*ai` outcomes. The broader nonfinal `*ai > *ā` side of the CAPR rule is therefore more explicit in the implementation than in the currently assembled handbook prose.
+SC004 `EAFAiMonophthongization` is the general monophthongization of inherited
+`*ai` to `*ā` in the English line: stressed/root `*ái` and unaccented nonfinal
+`*ai` both give `*ā` (later fronted to `ǣ` in the relevant OE environments). In
+the trace output the rule is visible across families such as `soul`, `stone`,
+`bone`, `deal`, and `ghost`, with the two unaccented protoforms `loam` and
+`whine` routed through the unaccented rewrite because stress is absent from the
+data. It is best understood as a North Sea Germanic / Anglo-Frisian areal
+development, not as a single dated node.
 
 #### Source tradition
 
-Ringe and Taylor treat the monophthongization of unstressed `*ai` as one of the most widespread post-PNWGmc vowel shifts and illustrate it with endings such as PGmc dat. sg. `*-ai`, subjunctive `*-ai`, and strong adjective plural `*-ai`, all of which surface in Northwest Germanic as long mid reflexes [@RingeTaylor2014, pp. 40--41]. Fulk likewise lists the development of unstressed `ai` and `au` among the important similarities shared by North and West Germanic against Gothic [@Fulk2018, §5.2].
-
-That is solid support for the historical phenomenon at least on the unstressed side. It is weaker support for the full CAPR packaging, because the retrieved sources here do not yet give a comparably explicit handbook statement for the wider nonfinal `*ai > *ā` generalization reflected in the trace examples `bone`, `deal`, `dough`, `flesh`, and `ghost`. A fuller source pass should therefore strengthen that side before any broader narrative treatment is attempted.
+Ringe and Taylor treat the monophthongization of `*ai` among the widespread
+post-PNWGmc vowel developments of the English line [@RingeTaylor2014,
+pp. 40--41, §6.1.5]; Fulk lists `ai`/`au` among the North/West-Germanic shared
+innovations against Gothic [@Fulk2018, §5.2]; Campbell describes the
+Anglo-Frisian `*ai > ā` (later fronted) as an English-line development
+[@Campbell1959, §§133--134, §417]. Versloot 2017 — consulted directly (see the
+reconciliation dossier) — argues that stressed/root `*ai` monophthongization
+spread in two areal waves through a North Sea Germanic dialect continuum
+(c. AD 400--900), a diffusion rather than a single inherited Proto-Anglo-Frisian
+node, with Old English among the broadest monophthongizers. That source layer
+supports the general/root side modelled here; the early unstressed/final side is
+SC014's evidence, not SC004's.
 
 #### CAPR implementation
 
-CAPR models the change as a single explicit West Germanic stage with a word-final split:
+CAPR models the general change as a single EAF-stage rule in the EAF corridor:
 
 ```foma
-define PWGmcAiMonophthongization [
-    [{*ai} -> {*ē} || _ .#.]
-    .o.
-    [{*ai} -> {*ā}]
+define EAFAiMonophthongization [
+    [{*ai} -> {*ā} || _ ?]
     .o.
     [{*ái} -> {*ā}]
 ];
 ```
 
-This implementation is sharper than the narrowest handbook wording recovered in this pass. The special word-final `*ai -> *ē` outcome maps directly onto the retrieved historical discussion, while the broader `*ai -> *ā` generalization functions as CAPR's unified treatment of the wider monophthongization pattern.
+The unaccented sub-rule is explicitly scoped to nonfinal position (`|| _ ?`), so
+its correctness does not depend on the early word-final rule (SC014) having run
+immediately beforehand. The stressed `*ái -> *ā` and unaccented nonfinal
+`*ai -> *ā` rewrites remain two implementation components of one historical
+change. The former bundled identifier `PWGmcAiMonophthongization` is retained as
+a documented compatibility alias but is not composed in any pipeline.
 
 #### Place in the cascade
 
-In the inventory ordering, SC004 is the first member of the Proto-West-Germanic bundle and stands immediately before SC005 `PNWGmcAToUBeforeM`. In the live pipeline it still sits inside bundled `EarlyEnglishLineChanges`, but the first-break runner now has an `expanded-pwgmc` order profile that exposes SC004 explicitly for chronology testing without changing the production cascade.
-
-That means the rule now occupies a clearer position in the cascade evidence. It remains a bundled production rule in the live cascade, but it is no longer blocked from first-break testing in principle.
+SC004 executes at cascade position 25, immediately after SC028
+`PNWGmcPreconsonantalXLoss` and before SC029 `OEAwjGlideFormation` — the EAF
+corridor. Its SC number stays SC004 even though its executable position no
+longer follows numerical order. The former bundled rule opened the cascade
+(position 1); that slot is now held by the early final change SC014.
 
 #### Order evidence
 
-Validated order evidence now exists through the expanded-PWGmc first-break output family:
-
-1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
-2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
-3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
-
-The earlier search stops immediately at the left edge of the tested expanded-PWGmc chain. SC004 is already the first explicitly testable rule in that profile, so the earlier side is boundary-only rather than a positive chronology constraint.
-
-The later search does find a real historical break at order `36` across `SC036` OE Inter Stress Raising. If PWGmc Ai Monophthongization is delayed that far, PGmc `*sáiwalō` yields `sāwel` rather than `sāwol`.
-
-That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+The general component carries the entire empirical chronology of the former
+bundled rule. The later search finds a real historical break at order `36`
+across `SC036` OE Inter Stress Raising: if SC004 is delayed past that stage,
+PGmc `*sáiwalō` yields `sāwel` rather than expected OE `sāwol`. The current
+placement (executable pos 25 < 33) sits safely before that boundary. The earlier
+side is boundary-only — an artefact of the pre-split expanded-PWGmc window — not
+a positive constraint on the general component.
 
 #### Interpretation
 
-SC004 works best as a short singleton opening note. The historical phenomenon is real, the chronology layer now gives one usable later boundary, and the source base is strong enough to support the unstressed and word-final side of the change. The report should nevertheless remain modest, because the broader nonfinal `*ai > *ā` packaging is still more explicit in CAPR than in the currently assembled handbook prose.
+SC004 is the later, areally diffused North Sea Germanic monophthongization of
+`*ai`. The EAF corridor is an operational modelling home for a change whose real
+history is a dialect-continuum diffusion rather than a discrete node; the SC036
+`soul` boundary is its one usable chronological anchor. Separating out the early
+word-final `*-ē` change (SC014) resolves the source imbalance the bundled report
+noted: the `*ā` outcome and its areal evidence now stand on their own.
 
 #### Remaining cautions
 
-The chief caution is scope. The retrieved sources support the unstressed `*ai` monophthongization clearly, but they do not yet support every detail of CAPR's wider `*ai -> *ā` packaging equally explicitly. The earlier side of the chronology card is also only a tested-chain boundary, while the later `SC036` relation is broad/far rather than local. Those limits should remain visible even in a cautious singleton note.
+The EAF stage is a modelling corridor, not a demonstrated discrete
+Proto-Anglo-Frisian node; the prose should say so. The later `SC036` relation is
+broad/far rather than local. Old English `ā` is fronted to `ǣ` by later change
+in the relevant environments, so the surface reflex is not always `ā`.

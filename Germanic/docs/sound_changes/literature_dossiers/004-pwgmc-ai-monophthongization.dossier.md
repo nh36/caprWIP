@@ -1,44 +1,81 @@
-# SC004 PWGmc ai-monophthongization — literature dossier
+# SC004 EAF ai-monophthongization — literature dossier
+
+> **Split note (SC004 Outcome-C).** This dossier now covers **only** the later
+> general/root development `*ai/*ái > *ā`. The word-final unstressed
+> `*-ai > *-ē` development that the former bundled rule also packaged is a
+> separate, earlier change, now **SC014** (see
+> `014-015-opening-vowel-prelude.dossier.md`). SC004 no longer claims that final
+> `*-ai > *-ē` is one conditioned outcome of the same historical change.
+> Implemented on branch `historical-cascade-order` (FST split commit
+> `f59b758d`).
 
 ## Historical phenomenon
 
-This dossier concerns the West Germanic monophthongization of inherited `*ai`, especially the widespread unstressed reflexes that merge with long mid `*ē`.
+The general (root/stressed and unaccented nonfinal) monophthongization of
+inherited `*ai` to `*ā` in the English line. In Old English the `*ā` is later
+fronted to `ǣ` in the relevant environments; the change is best understood as a
+North Sea Germanic / Anglo-Frisian areal development rather than a single dated
+node.
 
 ## CAPR rule
 
 - change_id: `SC004`
-- display_name: `PWGmc Ai Monophthongization`
-- rule_name: `PWGmcAiMonophthongization`
-- FOMA definition: `*ai -> *ē` word-finally, otherwise `*ai -> *ā` and `*ái -> *ā`
+- display_name: `EAF Ai Monophthongization`
+- rule_name: `EAFAiMonophthongization`
+- former identifier: `PWGmcAiMonophthongization` (bundled final+general rule; retained as a documented compatibility alias)
+- FOMA definition: `[{*ai} -> {*ā} || _ ?] .o. [{*ái} -> {*ā}]` (nonfinal unaccented `*ai`, and stressed `*ái`, both to `*ā`)
+- cascade: executable position 25, EAF corridor, immediately after SC028 `PNWGmcPreconsonantalXLoss`
+- hist_stage `eaf`; hist_scope `north_sea_germanic`; book Chapter 3
 
 ## Example lexemes
 
-1. `bone`
-2. `deal`
-3. `dough`
-4. `flesh`
-5. `ghost`
+1. `soul` (`*sáiwalō`; the SC036 boundary witness)
+2. `stone` (`*stáinaz`)
+3. `bone` (`*báiną`)
+4. `loam` (`*laimōn`; unaccented nonfinal `*ai`)
+5. `whine` (`*wainōjaną`; unaccented nonfinal `*ai`)
 
-## Source support found so far
+The full witness set is 26 corpus protoforms (24 stressed `*ái`, 2 unaccented
+nonfinal `*ai`; `roe` `*ráixōn` is unattested in OE, giving the 25 attested / 26
+total reconciliation). See `sc004_component_application_report.tsv`.
 
-1. Ringe and Taylor treat the monophthongization of unstressed `*ai` as one of the most pervasive post-PNWGmc vowel shifts and illustrate it with endings such as dat.sg. `*-ai` and strong-adjective plural `*-ai` [@RingeTaylor2014, pp. 40--41].
-2. Fulk lists the development of unstressed `ai` and `au` among the important North/West-Germanic shared innovations against Gothic [@Fulk2018, §5.2].
+## Source support
 
-## Missing source support
+1. Ringe and Taylor treat the monophthongization of `*ai` among the pervasive
+   post-PNWGmc vowel developments of the English line [@RingeTaylor2014,
+   pp. 40--41, §6.1.5].
+2. Fulk lists the development of `ai`/`au` among the North/West-Germanic shared
+   innovations against Gothic [@Fulk2018, §5.2].
+3. Campbell describes the Anglo-Frisian monophthongization of `*ai > ā` (later
+   fronted) as an English-line development [@Campbell1959, §§133--134, §417].
+4. **Versloot 2017** (verified directly; see the reconciliation dossier) argues
+   that stressed/root `*ai` monophthongization spread in two areal waves through
+   a North Sea Germanic dialect continuum (c. AD 400--900), a diffusion rather
+   than a single inherited Proto-Anglo-Frisian node; Old English is among the
+   broadest monophthongizers. Versloot supports the **stressed/general** side
+   treated here, not the early unstressed/final side (that is SC014's evidence).
 
-1. The current source pass is strongest on the unstressed and word-final side of the change.
-2. A fuller handbook or comparative-grammar discussion of the broader nonfinal `*ai > *ā` side would still be useful.
-3. The present pass did not assemble page-specific lexical witnesses for every inventory example.
+## Chronology / order-test status
 
-## Chronology/order-test status
+1. The general component carries the entire empirical chronology of the former
+   bundled rule.
+2. Later boundary: `SC036` OE Inter Stress Raising. Delaying SC004 past SC036
+   makes `*sáiwalō` yield `sāwel` instead of `sāwol` — a genuine lexical failure,
+   hence historical evidence (executable pos 25 < 33).
+3. Earlier side: boundary-only (an artefact of the pre-split expanded-PWGmc
+   window); no positive earlier constraint on the general component.
 
-1. A validated chronology card now exists from the expanded-PWGmc first-break output family.
-2. The earlier search found no real break before the left edge of the tested expanded-PWGmc chain at order `4`, so the earlier side is boundary-only rather than historically positive.
-3. The later search breaks at `SC036` OE Inter Stress Raising: `*sáiwalō` yields `sāwel` instead of `sāwol`.
-4. That later boundary is historically interpretable but broad/far rather than tightly local.
+## Cautions for reader-facing prose
 
-## Cautions for eventual reader-facing prose
+1. Present SC004 as the general/root `*ai/*ái > *ā` change only; do **not**
+   reintroduce word-final `*-ai > *-ē` (that is SC014).
+2. Characterise the EAF placement as an operational modelling corridor for a
+   North Sea Germanic areal development, not as a demonstrated discrete
+   Proto-Anglo-Frisian node.
+3. Note the two unaccented protoforms (`loam`, `whine`) routed through the
+   unaccented rewrite because stress is absent from the data.
+4. Treat the `SC036` relation as broad/far rather than a local seam.
 
-1. Keep the word-final unstressed `*ai` evidence distinct from the broader CAPR packaging of nonfinal `*ai > *ā`.
-2. Treat the later `SC036` relation as broad/far rather than as a local seam.
-3. A later reader-facing chapter should probably treat this as a short early singleton rather than as a broad survey chapter.
+See also: `014-015-opening-vowel-prelude.dossier.md` (SC014, the early final
+change); `sc004_historical_options_report.md`; `sc004_split_movement_proofs.md`;
+`SC004-components-chronology.md`.
