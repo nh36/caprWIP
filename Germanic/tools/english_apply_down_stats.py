@@ -50,8 +50,8 @@ def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
         for row in reader:
             if row.get("DOCULECT") != "English":
                 continue
-            proto = row.get("PROTO", "").strip()
-            ipa = row.get("IPA", "").strip()
+            proto = (row.get("PROTO") or "").strip()
+            ipa = (row.get("IPA") or "").strip()
             if not proto or not ipa:
                 continue
             norm = normalize_proto(proto)
