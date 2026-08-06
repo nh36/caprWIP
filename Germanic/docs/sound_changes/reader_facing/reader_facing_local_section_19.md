@@ -211,33 +211,6 @@ beginning with `PWGmc` does not guarantee that it is absent from North Germanic.
 The historical analysis in each sound-change section takes priority over the
 name prefix.
 
-# Proto-West-Germanic ai-monophthongization
-
-## Historical discussion
-
-Ringe and Taylor treat the reduction of unstressed \emph{*ai} as one of the major early vowel shifts shared across the Northwest Germanic area [@RingeTaylor2014, pp. 40--41].
-
-The historical support is strongest for unstressed \emph{*ai}, especially word-finally. The rule extends the change to nonfinal \emph{*ai > *ā}, a generalization stated more sharply than in the current handbook discussion.
-Both developments have inherited \emph{*ai} as their input.
-
-## \CAPRRuleHeading{SC004. Proto-West-Germanic ai-monophthongization}{PWGmcAiMonophthongization} {#rule-PWGmcAiMonophthongization}
-
-```foma
-define PWGmcAiMonophthongization [
-    [{*ai} -> {*ē} || _ .#.]
-    .o.
-    [{*ai} -> {*ā}]
-    .o.
-    [{*ái} -> {*ā}]
-];
-```
-
-The soul form fixes the relation to interstress raising. If monophthongization is delayed until after that change, PGmc [sáiwalō]{.recon} ‘soul’ yields [*sāwel*]{.pred} rather than expected OE *sāwol* ‘soul’. No earlier placement changes any output.
-
-This witness proves that monophthongization preceded interstress raising; it says nothing about the date of the wider nonfinal \emph{*ai > *ā} generalization. The word-final merger with long mid \emph{*ē} belongs among the early Northwest Germanic vowel shifts; the broader chronology remains less certain.
-
-\newpage
-
 # Unstressed \emph{*a}-raising before final \emph{*m}
 
 ## Historical discussion
@@ -460,23 +433,23 @@ Comparative evidence establishes the sound law; the present lexicon leaves its e
 
 ## Historical discussion
 
-The first change removes the remaining diphthongal quality of unstressed \emph{*ai}; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* ‘world’. Their chronological evidence differs: monophthongization is historically clear but not closely dated by the witness forms, whereas \emph{*i}-lowering has a diagnostic later boundary.
+The first change monophthongizes unstressed \emph{*ai}; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* 'world'. Both have a diagnostic later boundary in the dataset.
 
 ## Historical discussion of unstressed \emph{*ai} monophthongization
 
-Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e} [@RingeTaylor2014, pp. 37--41]. The historical change is thus established, although the order test determines no closer relative position.
+Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e}, in final and nonfinal syllables alike [@RingeTaylor2014, pp. 37--41]. Two dative-singular endings in the dataset, span [spánnai]{.recon} 'span' and meed [mízdai]{.recon} 'meed', carry the change. The stressed development of \emph{*ái} to \emph{*ā} is treated separately as [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
 
 ## \CAPRRuleHeading{SC014. Monophthongization of unstressed \emph{*ai}}{PNWGmcUnstressedAiMonophthongization} {#rule-PNWGmcUnstressedAiMonophthongization}
 
 ```foma
 define PNWGmcUnstressedAiMonophthongization [
-    {*ăi} -> {*ē}
+    {*ai} -> {*ē}
 ];
 ```
 
-Moving [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) earlier or later changes no output. The lexicon therefore cannot refine its source-based placement among the earliest Northwest Germanic simplifications of unstressed vowels.
+The dative-singular endings span [spánnai]{.recon} 'span' and meed [mízdai]{.recon} 'meed' carry this change; both give a final \emph{*ē}. If [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) is delayed until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the \emph{*ē} is no longer present for shortening, so PGmc [spánnai]{.recon} 'span' yields [*spannē*]{.pred} rather than expected OE *spanne* 'span'. This shows that [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) in the modeled sequence.
 
-Ringe and Taylor's merger of unstressed \emph{*ai} with \emph{*e} establishes the historical development; the current witnesses do not distinguish its position relative to neighboring changes.
+Ringe and Taylor's merger of unstressed \emph{*ai} with long mid \emph{*ē} establishes the historical development, in final and nonfinal syllables alike. The stressed development of \emph{*ái} to \emph{*ā} is a separate and later change; see [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
 
 ## Historical discussion of early unstressed front-vowel leveling
 
@@ -931,6 +904,29 @@ section correctly describes SC003 as presupposing an earlier loss of final `*z`,
 creating a presentational tension with SC020's place at cascade position 20.
 This tension is a targeted audit item for the next phase of the chronology work.
 
+### Anglo-Frisian ai-monophthongization (SC004)
+
+The monophthongization of stressed/root `*ái` to `*ā`, seen in the soul
+derivation, is a North Sea Germanic
+areal development. Versloot argues that it spread in successive waves through a
+dialect continuum, with Old English among the widest to carry it, so the change
+is better read as an areal diffusion through the continuum than as a single
+dated node [@Versloot2017, pp. 281--324]. The resulting `*ā` is later fronted to
+`ǣ` in the relevant Old English environments.
+
+The CAPR rule is named `EAFAiMonophthongization` and executes at cascade
+position 25. That position is CAPR's operational home for a North Sea Germanic
+areal change on the English line; it is a modelling choice, not a claim that the
+change passed through a discrete Proto-Anglo-Frisian node. The one usable
+chronological anchor is the `soul` derivation, which requires the
+monophthongization to precede OE interstress raising (SC036).
+
+The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
+separate and earlier Proto-Northwest Germanic change (SC014), discussed in
+Chapter 2; its corpus witnesses are the dative-singular endings of `span`
+([spánnai]{.recon} 'span' > *spanne* 'span') and `meed` ([mízdai]{.recon}
+'meed' > *meorde* 'meed').
+
 ### Anglo-Frisian brightening (SC043)
 
 The fronting of low `*a` to `*æ` outside nasal environments is the defining
@@ -959,13 +955,14 @@ staging map now places it in Chapter 3, correcting that provisional label.
 
 ## Cascade vs. historical order in this chapter
 
-The three changes in this chapter currently occur at cascade positions 3, 19–20,
-and 43 respectively. These cascade positions reflect computational dependencies,
+The four changes in this chapter currently occur at cascade positions 3, 19–20,
+25, and 43 respectively. These cascade positions reflect computational dependencies,
 not historical sequence. The reader-facing book order in this chapter places
 rhotacism first (as the post-PWGmc WGmc change), then word-final `*z` deletion
 (SC020, closely related to rhotacism and discussed in the same reader-facing
-section as SC019), then Anglo-Frisian brightening as the culminating change of
-the pre-OE period.
+section as SC019), then Anglo-Frisian ai-monophthongization (SC004, the North
+Sea Germanic areal vowel change), then Anglo-Frisian brightening as the
+culminating change of the pre-OE period.
 
 The divergence between cascade order and book order in this chapter is one of
 the clearest illustrations of the principle that FST dependency does not
@@ -1015,6 +1012,30 @@ The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste
 Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected OE *ræste* 'rest'. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} 'beaver' yields [*befro*]{.pred} rather than expected *befer* 'beaver', PGmc [kwéðuz]{.recon} 'cud' yields [*cwedo*]{.pred} rather than expected *cwedu* 'cud', and PGmc [félθuz]{.recon} 'field' yields [*feldo*]{.pred} rather than expected *feld* 'field', alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
 The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
+
+\newpage
+
+# Anglo-Frisian ai-monophthongization
+
+## Historical discussion
+
+Inherited stressed \emph{*ái} monophthongized to \emph{*ā} across the North Sea Germanic area. Ringe and Taylor place the monophthongization of \emph{*ai} among the widespread early vowel developments of the English line [@RingeTaylor2014, pp. 40--41]. Versloot shows that the stressed development spread in successive waves through a dialect continuum, with Old English among the widest to carry it [@Versloot2017, pp. 281--324]. The Old English \emph{*ā} is later fronted to \emph{ǣ} in the relevant environments.
+
+The change is areal in character. It is shared with Frisian, and its spread through the continuum gives it a range of dates and no single sharp moment.
+
+All twenty-four corpus witnesses carry stressed \emph{*ái}; loam \emph{*láimą} 'loam' is one of them, stressed in its Old English protoform. The unstressed development \emph{*ai > *ē} is the separate earlier change [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization).
+
+## \CAPRRuleHeading{SC004. Anglo-Frisian ai-monophthongization}{EAFAiMonophthongization} {#rule-EAFAiMonophthongization}
+
+```foma
+define EAFAiMonophthongization [
+    {*ái} -> {*ā}
+];
+```
+
+The soul form fixes the relation to interstress raising. If the monophthongization is delayed until after that change, PGmc [sáiwalō]{.recon} 'soul' yields [*sāwel*]{.pred} rather than expected OE *sāwol* 'soul'. An earlier placement changes no output. This shows that [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.
+
+The unstressed development \emph{*ai > *ē} in final and nonfinal syllables is a separate and earlier change; see [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization).
 
 \newpage
 

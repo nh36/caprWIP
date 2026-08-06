@@ -37,7 +37,6 @@ chapter_files = [
     # ── Chapter 1: Proto-Germanic → Proto-Northwest Germanic ───────────────
     "049-pgmc-b-allophony.md",
     # ── Chapter 2: Proto-Northwest Germanic → Proto-West Germanic ──────────
-    "004-pwgmc-ai-monophthongization.md",
     "005-unstressed-a-raising-before-final-m.md",
     "006-early-i-apocope.md",
     "007-final-o-lowering-before-r.md",
@@ -64,6 +63,7 @@ chapter_files = [
     # ── Chapter 3: Proto-West Germanic → Anglo-Frisian ─────────────────────
     "003-west-germanic-rhotacism.md",
     "020-wgmc-final-z-deletion.md",
+    "004-pwgmc-ai-monophthongization.md",
     "043-anglo-frisian-brightening.md",
     # ── Chapter 4: Anglo-Frisian → Old English ─────────────────────────────
     "016-west-saxon-palatal-glide.md",
@@ -111,7 +111,7 @@ CHAPTER_BOUNDARIES: dict[str, tuple[int, str, str]] = {
         "From Proto-Germanic to Proto-Northwest Germanic",
         "chap1-pgmc-to-pnwgmc-intro.md",
     ),
-    "004-pwgmc-ai-monophthongization.md": (
+    "005-unstressed-a-raising-before-final-m.md": (
         2,
         "From Proto-Northwest Germanic to Proto-West Germanic",
         "chap2-pnwgmc-to-pwgmc-intro.md",

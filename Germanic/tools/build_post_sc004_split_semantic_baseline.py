@@ -20,6 +20,7 @@ Run: python3 Germanic/tools/build_post_sc004_split_semantic_baseline.py
 """
 from __future__ import annotations
 
+import csv
 import hashlib
 import re
 from pathlib import Path
@@ -42,6 +43,48 @@ def sha256_file(path: Path) -> str:
 
 def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+# Terminal first-break results (a completed run). "in_progress" is NOT terminal.
+TERMINAL_RESULTS = {
+    "first_break_found", "no_break_before_boundary",
+    "no_break_before_runner_boundary", "blocked_by_runner_limitation",
+    "no_break_before_search_limit",
+}
+
+
+def read_first_break(path: Path) -> dict:
+    """Return {direction: row} from a first-break summary TSV."""
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as handle:
+        return {r["direction"]: r for r in csv.DictReader(handle, delimiter="\t")}
+
+
+def require_terminal(change: str, fb: dict, directions=("earlier", "later")) -> None:
+    """Refuse to freeze if any required direction is missing or still in progress."""
+    for d in directions:
+        row = fb.get(d)
+        if row is None:
+            raise SystemExit(
+                f"REFUSING to freeze: {change} first-break has no '{d}' row "
+                f"(run the chronology campaign first)")
+        result = (row.get("result") or "").strip()
+        if result not in TERMINAL_RESULTS:
+            raise SystemExit(
+                f"REFUSING to freeze: {change} '{d}' first-break is not terminal "
+                f"(result={result!r}); complete the chronology run before freezing")
+
+
+def boundary_str(row: dict) -> str:
+    """Derive a boundary statement from a first-break row (never hardcoded)."""
+    result = (row.get("result") or "").strip()
+    if result == "first_break_found":
+        crossed = (row.get("crossed_change_id") or "").strip()
+        order = (row.get("first_break_order") or "").strip()
+        lex = (row.get("representative_changed_lexemes") or "").strip()
+        return f"first_break_found {crossed} order {order} ({lex})"
+    return result
 
 
 def rule_body(src: str, name: str) -> str:
@@ -91,15 +134,24 @@ def main() -> int:
                  "cascade_order_manifest position"))
 
     # First-break boundaries (literal).
-    rows.append(("sc014_later_boundary", "SC072 order 69 (span spanne->spannē, meed meorde->meordē)",
+    # First-break boundaries: derived from the summary TSVs, never hardcoded.
+    # Refuse to freeze if any required chronology run is still in progress.
+    fb_dir = SC / "order_tests/summaries"
+    fb_sc014 = read_first_break(fb_dir / "sc004corr_first_break_sc014.tsv")
+    fb_sc004 = read_first_break(fb_dir / "sc004corr_first_break_sc004.tsv")
+    fb_sc036 = read_first_break(fb_dir / "sc004corr_first_break_sc036.tsv")
+    require_terminal("SC014", fb_sc014)
+    require_terminal("SC004", fb_sc004)
+    require_terminal("SC036", fb_sc036, directions=("earlier",))
+    rows.append(("sc014_later_boundary", boundary_str(fb_sc014["later"]),
                  "summaries/sc004corr_first_break_sc014.tsv"))
-    rows.append(("sc014_earlier_boundary", "none (cascade head, pos 1)",
+    rows.append(("sc014_earlier_boundary", boundary_str(fb_sc014["earlier"]),
                  "summaries/sc004corr_first_break_sc014.tsv"))
-    rows.append(("sc004_later_boundary", "SC036 order 33 (soul sāwol->sāwel)",
+    rows.append(("sc004_later_boundary", boundary_str(fb_sc004["later"]),
                  "summaries/sc004corr_first_break_sc004.tsv"))
-    rows.append(("sc004_earlier_boundary", "none toward head (boundary-limited)",
+    rows.append(("sc004_earlier_boundary", boundary_str(fb_sc004["earlier"]),
                  "summaries/sc004corr_first_break_sc004.tsv"))
-    rows.append(("sc036_earlier_boundary", "SC004 order 28 (soul; supersedes SC019)",
+    rows.append(("sc036_earlier_boundary", boundary_str(fb_sc036["earlier"]),
                  "summaries/sc004corr_first_break_sc036.tsv"))
 
     # Application inventory counts (literal).

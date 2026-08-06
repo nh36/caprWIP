@@ -689,125 +689,98 @@ note}\label{pwgmc-ai-monophthongization-note}
 
 \subsubsection{Sound-change report}\label{sound-change-report-1}
 
+\begin{quote}
+\textbf{Corrected PROTOFORM pass.} SC004 is the stressed/root change ái
+\textgreater{} ā only. The unstressed development \emph{ai}
+\textgreater{} ē (final and nonfinal) is the separate, earlier SC014
+\emph{PNWGmcUnstressedAiMonophthongization}. Application analysis uses
+the Old-English-row \emph{PROTOFORM} (the production input): under it
+loam (láimą) is stressed and whine (xwḯnaną) carries no \emph{ai}.
+Implemented on branch historical-cascade-order (split commit f59b758d,
+PROTOFORM correction 9c71aed3).
+\end{quote}
+
 \paragraph{Historical formulation}\label{historical-formulation-1}
 
-SC004 \emph{PWGmcAiMonophthongization} packages the West Germanic
-monophthongization of inherited \emph{ai}, including the special
-word-final unstressed outcome that merges with long mid ē. In the
-inventory and trace output the rule is visible across a broad set of
-lexical families such as bone, deal, dough, flesh, and ghost.
-
-That makes it historically recognizable, but the present source support
-is uneven. The clearest sources assembled here speak most directly to
-the unstressed and especially word-final \emph{ai} outcomes. The broader
-nonfinal \emph{ai} \textgreater{} ā side of the CAPR rule is therefore
-more explicit in the implementation than in the currently assembled
-handbook prose.
+SC004 \emph{EAFAiMonophthongization} is the monophthongization of
+stressed/root ái to ā in the English line (later fronted to ǣ in the
+relevant OE environments). In the trace it is visible across 24 stressed
+families such as soul, stone, bone, deal, ghost, and loam. It is best
+understood as a North Sea Germanic / Anglo-Frisian areal development,
+not as a single dated node.
 
 \paragraph{Source tradition}\label{source-tradition-1}
 
-Ringe and Taylor treat the monophthongization of unstressed \emph{ai} as
-one of the most widespread post-PNWGmc vowel shifts and illustrate it
-with endings such as PGmc dat. sg. -ai, subjunctive -ai, and strong
-adjective plural -ai, all of which surface in Northwest Germanic as long
-mid reflexes (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
-40--41}). Fulk likewise lists the development of unstressed \emph{ai}
-and \emph{au} among the important similarities shared by North and West
-Germanic against Gothic (\citeproc{ref-Fulk2018}{Fulk 2018, sect. 5.2}).
-
-That is solid support for the historical phenomenon at least on the
-unstressed side. It is weaker support for the full CAPR packaging,
-because the retrieved sources here do not yet give a comparably explicit
-handbook statement for the wider nonfinal \emph{ai} \textgreater{} ā
-generalization reflected in the trace examples bone, deal, dough, flesh,
-and ghost. A fuller source pass should therefore strengthen that side
-before any broader narrative treatment is attempted.
+Ringe and Taylor treat the monophthongization of \emph{ai} among the
+widespread post-PNWGmc vowel developments of the English line
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 40--41}, §6.1.5);
+Fulk lists \emph{ai}/\emph{au} among the North/West-Germanic shared
+innovations against Gothic (\citeproc{ref-Fulk2018}{Fulk 2018, sect.
+5.2}); Campbell describes the Anglo-Frisian \emph{ai} \textgreater{} ā
+(later fronted) as an English-line development
+(\citeproc{ref-Campbell1959}{Campbell 1959, sects 133--134}, §417).
+Versloot 2017 (consulted directly) argues that stressed/root \emph{ai}
+monophthongization spread in two areal waves through a North Sea
+Germanic dialect continuum (c.~AD 400--900), a diffusion rather than a
+single inherited Proto-Anglo-Frisian node, with Old English among the
+broadest monophthongizers. That source layer supports precisely the
+stressed side modelled here; the unstressed side is SC014's evidence.
 
 \paragraph{CAPR implementation}\label{capr-implementation-1}
 
-CAPR models the change as a single explicit West Germanic stage with a
-word-final split:
+CAPR models the change as a single EAF-stage rule in the EAF corridor:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{define PWGmcAiMonophthongization [}
-\NormalTok{    [\{*ai\} {-}\textgreater{} \{*ē\} || \_ .\#.]}
-\NormalTok{    .o.}
-\NormalTok{    [\{*ai\} {-}\textgreater{} \{*ā\}]}
-\NormalTok{    .o.}
-\NormalTok{    [\{*ái\} {-}\textgreater{} \{*ā\}]}
+\NormalTok{define EAFAiMonophthongization [}
+\NormalTok{    \{*ái\} {-}\textgreater{} \{*ā\}}
 \NormalTok{];}
 \end{Highlighting}
 \end{Shaded}
 
-This implementation is sharper than the narrowest handbook wording
-recovered in this pass. The special word-final \emph{ai}
-\emph{-}\textgreater{} ē outcome maps directly onto the retrieved
-historical discussion, while the broader \emph{ai}
-\emph{-}\textgreater{} ā generalization functions as CAPR's unified
-treatment of the wider monophthongization pattern.
+The rule targets the stressed diphthong ái only (a distinct segment from
+unstressed \emph{ai}), so it is independent of SC014. No nonfinal
+unstressed root \emph{ai} remains in the corpus once PROTOFORM is used,
+so no \{\emph{ai}\} \emph{-}\textgreater{} \{ā\} branch is required; the
+earlier unrestricted branch was an artefact of the PROTO-based
+misclassification of loam and whine. The former bundled identifier
+\emph{PWGmcAiMonophthongization} is retained as a documented
+compatibility alias but is not composed in any pipeline.
 
 \paragraph{Place in the cascade}\label{place-in-the-cascade-1}
 
-In the inventory ordering, SC004 is the first member of the
-Proto-West-Germanic bundle and stands immediately before SC005
-\emph{PNWGmcAToUBeforeM}. In the live pipeline it still sits inside
-bundled \emph{EarlyEnglishLineChanges}, but the first-break runner now
-has an expanded-pwgmc order profile that exposes SC004 explicitly for
-chronology testing without changing the production cascade.
-
-That means the rule now occupies a clearer position in the cascade
-evidence. It remains a bundled production rule in the live cascade, but
-it is no longer blocked from first-break testing in principle.
+SC004 executes at cascade position 25, immediately after SC028
+\emph{PNWGmcPreconsonantalXLoss} and before SC029
+\emph{OEAwjGlideFormation} (the EAF corridor). Its SC number stays SC004
+even though its executable position no longer follows numerical order.
 
 \paragraph{Order evidence}\label{order-evidence-1}
 
-Validated order evidence now exists through the expanded-PWGmc
-first-break output family:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \texttt{Germanic/docs/sound\_changes/order\_tests/summaries/order\_sensitivity\_first\_break\_expanded\_pwgmc\_sc004\_006\_01.tsv}
-\item
-  \texttt{Germanic/docs/sound\_changes/order\_tests/summaries/order\_sensitivity\_first\_break\_expanded\_pwgmc\_sc004\_006\_01\_changes.tsv}
-\item
-  \texttt{Germanic/docs/sound\_changes/order\_tests/summaries/order\_sensitivity\_first\_break\_expanded\_pwgmc\_sc004\_006\_01\_failures.tsv}
-\end{enumerate}
-
-The earlier search stops immediately at the left edge of the tested
-expanded-PWGmc chain. SC004 is already the first explicitly testable
-rule in that profile, so the earlier side is boundary-only rather than a
-positive chronology constraint.
-
-The later search does find a real historical break at order \emph{36}
-across \texttt{SC036} OE Inter Stress Raising. If PWGmc Ai
-Monophthongization is delayed that far, PGmc sáiwalō yields sāwel rather
-than sāwol.
-
-That later boundary is historically interpretable, but it is broad/far
-rather than a tight local adjacency claim.
+First-break testing with the corrected stressed-only rule reproduces the
+one historical boundary at order 33 across \texttt{SC036} OE Inter
+Stress Raising: delaying SC004 past that stage makes PGmc sáiwalō yield
+sāwel rather than expected OE sāwol (371/372 match at the break). The
+current placement (pos 25) sits safely before that boundary. The earlier
+side has no corpus break toward the head. The formal crossing analysis
+(\texttt{sc004\_sc014\_interaction\_report.md}) shows SC004's only
+genuine dependency is on SC036; its other non-commutations are feeding
+artefacts on non-corpus \emph{EnglishProtoInput} forms.
 
 \paragraph{Interpretation}\label{interpretation-1}
 
-SC004 works best as a short singleton opening note. The historical
-phenomenon is real, the chronology layer now gives one usable later
-boundary, and the source base is strong enough to support the unstressed
-and word-final side of the change. The report should nevertheless remain
-modest, because the broader nonfinal \emph{ai} \textgreater{} ā
-packaging is still more explicit in CAPR than in the currently assembled
-handbook prose.
+SC004 is the later, areally diffused North Sea Germanic
+monophthongization of stressed \emph{ai}. The EAF corridor is an
+operational modelling home for a change whose real history is a
+dialect-continuum diffusion rather than a discrete node; the SC036 soul
+boundary is its one usable chronological anchor.
 
 \paragraph{Remaining cautions}\label{remaining-cautions-1}
 
-The chief caution is scope. The retrieved sources support the unstressed
-\emph{ai} monophthongization clearly, but they do not yet support every
-detail of CAPR's wider \emph{ai} \emph{-}\textgreater{} ā packaging
-equally explicitly. The earlier side of the chronology card is also only
-a tested-chain boundary, while the later \texttt{SC036} relation is
-broad/far rather than local. Those limits should remain visible even in
-a cautious singleton note.
+The EAF stage is a modelling corridor, not a demonstrated discrete
+Proto-Anglo-Frisian node; the prose should say so. Old English ā is
+fronted to ǣ by later change in the relevant environments, so the
+surface reflex is not always ā. loam is a stressed witness; whine is not
+an ai-monophthongization case.
 
 \subsection{Unstressed a-raising before final m
 note}\label{unstressed-a-raising-before-final-m-note}
@@ -1738,6 +1711,25 @@ historical anchors.
 
 \subsubsection{Sound-change report}\label{sound-change-report-11}
 
+\begin{quote}
+\textbf{Corrected PROTOFORM pass (supersedes the split note below).}
+SC014 is the unstressed monophthongization \emph{ai} \textgreater{} ē
+(final AND nonfinal), live Foma rule \{\emph{ai}\}
+\emph{-}\textgreater{} \{ē\}. Under the production \emph{PROTOFORM} it
+is corpus-active, with two dat.sg witnesses span (\textgreater{} spanne)
+and meed (\textgreater{} meorde) and a later first-break boundary at
+SC072 (order 69). \textbf{Read every ``corpus-inert'' /
+``chronology-negative'' / ``word-final only'' below as superseded}:
+SC014 is corpus-active and covers final and nonfinal unstressed
+\emph{ai}. It executes at the head of the cascade (position 1), so it is
+no longer adjacent to SC015 \emph{PNWGmcILowering} (position 11). The
+separate stressed change is SC004 \emph{EAFAiMonophthongization} (\{ái\}
+\emph{-}\textgreater{} \{ā\}; see
+\texttt{004-pwgmc-ai-monophthongization.md}). SC015's substantive text
+is unchanged. Implemented on branch historical-cascade-order (split
+f59b758d, PROTOFORM correction 9c71aed3).
+\end{quote}
+
 \paragraph{Historical formulation}\label{historical-formulation-11}
 
 \texttt{SC014-SC015} appears here as a short, cautious opening bridge
@@ -1749,9 +1741,10 @@ if it begins with an explicit opening prelude rather than jumping
 straight into the more developed \texttt{SC016-SC020} corridor.
 
 The internal hierarchy of the pair should stay explicit. SC014 NWGmc
-Unstressed Ai Monophthongization is the weak opening member:
-historically plausible and source-backed, but currently
-chronology-negative on both tested sides. SC015 NWGmc I Lowering is the
+Unstressed Ai Monophthongization is the early opening member: it is the
+word-final unstressed -ai \textgreater{} -ē change, historically
+plausible and source-backed but corpus-inert (zero corpus applications),
+so it imposes no chronology constraint. SC015 NWGmc I Lowering is the
 stronger member and carries most of the report. It belongs to the
 broader history of early unstressed front-vowel leveling and has one
 real, though broad/far, later chronology relation through world.

@@ -80,8 +80,8 @@ This tension is a targeted audit item for the next phase of the chronology work.
 
 ### Anglo-Frisian ai-monophthongization (SC004)
 
-The monophthongization of stressed/root `*ái` to `*ā`, as in
-[sáiwalō]{.recon .iv lang=pgmc sort=saiwalo} 'soul', is a North Sea Germanic
+The monophthongization of stressed/root `*ái` to `*ā`, seen in the soul
+derivation, is a North Sea Germanic
 areal development. Versloot argues that it spread in successive waves through a
 dialect continuum, with Old English among the widest to carry it, so the change
 is better read as an areal diffusion through the continuum than as a single
@@ -98,7 +98,8 @@ monophthongization to precede OE interstress raising (SC036).
 The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
 separate and earlier Proto-Northwest Germanic change (SC014), discussed in
 Chapter 2; its corpus witnesses are the dative-singular endings of `span`
-(`*spánnai` > spanne) and `meed` (`*mízdai` > meorde).
+([spánnai]{.recon} 'span' > *spanne* 'span') and `meed` ([mízdai]{.recon}
+'meed' > *meorde* 'meed').
 
 ### Anglo-Frisian brightening (SC043)
 

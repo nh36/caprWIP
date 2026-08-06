@@ -38,9 +38,8 @@ remains a further earlier constraint. SC036's later side (SC040) is unchanged.
 ## Proved unaffected
 
 - **SC005–SC013** (`PNWGmcAToUBeforeM` … `PWGmcDentalHardening`): their chronology
-  cards record a boundary-only earlier result at "order 4", the left edge of the
-  former expanded-PWGmc chain when the **bundled** SC004 opened it. After the
-  split that left edge is SC014 (order 1); the substance (no earlier break;
+  cards now record a boundary-only earlier result against the real SC014 head,
+  not the former bundled SC004 entry. The substance (no earlier break;
   boundary-only at the chain edge) is unchanged, and their real later boundaries
   (SC017, SC034, SC043, SC031, SC032, SC011, SC087 …) do not involve SC004/SC014.
 - **SC015 `PNWGmcILowering`, SC017 `PNWGmcULowering`, SC005 `PNWGmcAToUBeforeM`,

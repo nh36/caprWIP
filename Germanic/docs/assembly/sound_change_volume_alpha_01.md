@@ -133,61 +133,86 @@ Two cautions still matter most. First, backend prose should keep rhotacism disti
 
 ### Sound-change report
 
+> **Corrected PROTOFORM pass.** SC004 is the stressed/root change ái > ā
+> only. The unstressed development *ai* > ē (final and nonfinal) is the
+> separate, earlier SC014 *PNWGmcUnstressedAiMonophthongization*. Application
+> analysis uses the Old-English-row *PROTOFORM* (the production input): under it
+> loam (láimą) is stressed and whine (xwḯnaną) carries no *ai*.
+> Implemented on branch historical-cascade-order (split commit f59b758d,
+> PROTOFORM correction 9c71aed3).
+
 #### Historical formulation
 
-SC004 *PWGmcAiMonophthongization* packages the West Germanic monophthongization of inherited *ai*, including the special word-final unstressed outcome that merges with long mid ē. In the inventory and trace output the rule is visible across a broad set of lexical families such as bone, deal, dough, flesh, and ghost.
-
-That makes it historically recognizable, but the present source support is uneven. The clearest sources assembled here speak most directly to the unstressed and especially word-final *ai* outcomes. The broader nonfinal *ai* > ā side of the CAPR rule is therefore more explicit in the implementation than in the currently assembled handbook prose.
+SC004 *EAFAiMonophthongization* is the monophthongization of stressed/root ái
+to ā in the English line (later fronted to ǣ in the relevant OE
+environments). In the trace it is visible across 24 stressed families such as
+soul, stone, bone, deal, ghost, and loam. It is best understood as a
+North Sea Germanic / Anglo-Frisian areal development, not as a single dated node.
 
 #### Source tradition
 
-Ringe and Taylor treat the monophthongization of unstressed *ai* as one of the most widespread post-PNWGmc vowel shifts and illustrate it with endings such as PGmc dat. sg. -ai, subjunctive -ai, and strong adjective plural -ai, all of which surface in Northwest Germanic as long mid reflexes [@RingeTaylor2014, pp. 40--41]. Fulk likewise lists the development of unstressed *ai* and *au* among the important similarities shared by North and West Germanic against Gothic [@Fulk2018, §5.2].
-
-That is solid support for the historical phenomenon at least on the unstressed side. It is weaker support for the full CAPR packaging, because the retrieved sources here do not yet give a comparably explicit handbook statement for the wider nonfinal *ai* > ā generalization reflected in the trace examples bone, deal, dough, flesh, and ghost. A fuller source pass should therefore strengthen that side before any broader narrative treatment is attempted.
+Ringe and Taylor treat the monophthongization of *ai* among the widespread
+post-PNWGmc vowel developments of the English line [@RingeTaylor2014,
+pp. 40--41, §6.1.5]; Fulk lists *ai*/*au* among the North/West-Germanic shared
+innovations against Gothic [@Fulk2018, §5.2]; Campbell describes the
+Anglo-Frisian *ai* > ā (later fronted) as an English-line development
+[@Campbell1959, §§133--134, §417]. Versloot 2017 (consulted directly) argues
+that stressed/root *ai* monophthongization spread in two areal waves through a
+North Sea Germanic dialect continuum (c. AD 400--900), a diffusion rather than a
+single inherited Proto-Anglo-Frisian node, with Old English among the broadest
+monophthongizers. That source layer supports precisely the stressed side modelled
+here; the unstressed side is SC014's evidence.
 
 #### CAPR implementation
 
-CAPR models the change as a single explicit West Germanic stage with a word-final split:
+CAPR models the change as a single EAF-stage rule in the EAF corridor:
 
 ```foma
-define PWGmcAiMonophthongization [
-    [{*ai} -> {*ē} || _ .#.]
-    .o.
-    [{*ai} -> {*ā}]
-    .o.
-    [{*ái} -> {*ā}]
+define EAFAiMonophthongization [
+    {*ái} -> {*ā}
 ];
 ```
 
-This implementation is sharper than the narrowest handbook wording recovered in this pass. The special word-final *ai* *-*> ē outcome maps directly onto the retrieved historical discussion, while the broader *ai* *-*> ā generalization functions as CAPR's unified treatment of the wider monophthongization pattern.
+The rule targets the stressed diphthong ái only (a distinct segment from
+unstressed *ai*), so it is independent of SC014. No nonfinal unstressed root
+*ai* remains in the corpus once PROTOFORM is used, so no {*ai*} *-*> {ā} branch
+is required; the earlier unrestricted branch was an artefact of the PROTO-based
+misclassification of loam and whine. The former bundled identifier
+*PWGmcAiMonophthongization* is retained as a documented compatibility alias but
+is not composed in any pipeline.
 
 #### Place in the cascade
 
-In the inventory ordering, SC004 is the first member of the Proto-West-Germanic bundle and stands immediately before SC005 *PNWGmcAToUBeforeM*. In the live pipeline it still sits inside bundled *EarlyEnglishLineChanges*, but the first-break runner now has an expanded-pwgmc order profile that exposes SC004 explicitly for chronology testing without changing the production cascade.
-
-That means the rule now occupies a clearer position in the cascade evidence. It remains a bundled production rule in the live cascade, but it is no longer blocked from first-break testing in principle.
+SC004 executes at cascade position 25, immediately after SC028
+*PNWGmcPreconsonantalXLoss* and before SC029 *OEAwjGlideFormation* (the EAF
+corridor). Its SC number stays SC004 even though its executable position no
+longer follows numerical order.
 
 #### Order evidence
 
-Validated order evidence now exists through the expanded-PWGmc first-break output family:
-
-1. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01.tsv`
-2. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_changes.tsv`
-3. `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_expanded_pwgmc_sc004_006_01_failures.tsv`
-
-The earlier search stops immediately at the left edge of the tested expanded-PWGmc chain. SC004 is already the first explicitly testable rule in that profile, so the earlier side is boundary-only rather than a positive chronology constraint.
-
-The later search does find a real historical break at order *36* across `SC036` OE Inter Stress Raising. If PWGmc Ai Monophthongization is delayed that far, PGmc sáiwalō yields sāwel rather than sāwol.
-
-That later boundary is historically interpretable, but it is broad/far rather than a tight local adjacency claim.
+First-break testing with the corrected stressed-only rule reproduces the one
+historical boundary at order 33 across `SC036` OE Inter Stress Raising: delaying
+SC004 past that stage makes PGmc sáiwalō yield sāwel rather than expected OE
+sāwol (371/372 match at the break). The current placement (pos 25) sits safely
+before that boundary. The earlier side has no corpus break toward the head. The
+formal crossing analysis (`sc004_sc014_interaction_report.md`) shows SC004's only
+genuine dependency is on SC036; its other non-commutations are feeding artefacts
+on non-corpus *EnglishProtoInput* forms.
 
 #### Interpretation
 
-SC004 works best as a short singleton opening note. The historical phenomenon is real, the chronology layer now gives one usable later boundary, and the source base is strong enough to support the unstressed and word-final side of the change. The report should nevertheless remain modest, because the broader nonfinal *ai* > ā packaging is still more explicit in CAPR than in the currently assembled handbook prose.
+SC004 is the later, areally diffused North Sea Germanic monophthongization of
+stressed *ai*. The EAF corridor is an operational modelling home for a change
+whose real history is a dialect-continuum diffusion rather than a discrete node;
+the SC036 soul boundary is its one usable chronological anchor.
 
 #### Remaining cautions
 
-The chief caution is scope. The retrieved sources support the unstressed *ai* monophthongization clearly, but they do not yet support every detail of CAPR's wider *ai* *-*> ā packaging equally explicitly. The earlier side of the chronology card is also only a tested-chain boundary, while the later `SC036` relation is broad/far rather than local. Those limits should remain visible even in a cautious singleton note.
+The EAF stage is a modelling corridor, not a demonstrated discrete
+Proto-Anglo-Frisian node; the prose should say so. Old English ā is fronted to
+ǣ by later change in the relevant environments, so the surface reflex is not
+always ā. loam is a stressed witness; whine is not an ai-monophthongization
+case.
 
 ## Unstressed a-raising before final m note
 
@@ -681,6 +706,20 @@ The chief caution is methodological. The systemic historical statement is strong
 
 ### Sound-change report
 
+> **Corrected PROTOFORM pass (supersedes the split note below).** SC014 is the
+> unstressed monophthongization *ai* > ē (final AND nonfinal), live Foma rule
+> {*ai*} *-*> {ē}. Under the production *PROTOFORM* it is corpus-active, with
+> two dat.sg witnesses span (> spanne) and meed (> meorde) and a later
+> first-break boundary at SC072 (order 69). **Read every "corpus-inert" /
+> "chronology-negative" / "word-final only" below as superseded**: SC014 is
+> corpus-active and covers final and nonfinal unstressed *ai*. It executes at the
+> head of the cascade (position 1), so it is no longer adjacent to SC015
+> *PNWGmcILowering* (position 11). The separate stressed change is SC004
+> *EAFAiMonophthongization* ({ái} *-*> {ā}; see
+> `004-pwgmc-ai-monophthongization.md`). SC015's substantive text is unchanged.
+> Implemented on branch historical-cascade-order (split f59b758d, PROTOFORM
+> correction 9c71aed3).
+
 #### Historical formulation
 
 `SC014-SC015` appears here as a short, cautious opening bridge report,
@@ -691,9 +730,10 @@ with an explicit opening prelude rather than jumping straight into the more
 developed `SC016-SC020` corridor.
 
 The internal hierarchy of the pair should stay explicit. SC014
-NWGmc Unstressed Ai Monophthongization is the weak opening member:
-historically plausible and source-backed, but currently chronology-negative on
-both tested sides. SC015 NWGmc I Lowering is the stronger member and carries
+NWGmc Unstressed Ai Monophthongization is the early opening member: it is the
+word-final unstressed -ai > -ē change, historically plausible and
+source-backed but corpus-inert (zero corpus applications), so it imposes no
+chronology constraint. SC015 NWGmc I Lowering is the stronger member and carries
 most of the report. It belongs to the broader history of early unstressed
 front-vowel leveling and has one real, though broad/far, later chronology
 relation through world.

@@ -16,12 +16,14 @@
 - status: `first_break_complete`
 
 ## Earlier boundary
-- first earlier break: `none found toward the cascade head`
+- first earlier break: `none found before the SC014 head boundary (last_safe_order=4)`
+- crossed stage: `SC014` NWGmc Unstressed Ai Monophthongization
 - crossed stage type: `boundary_limited`
 - failure count: `0`
 - interpretation: Moving SC004 earlier from pos 25 toward the head produces no
-  corpus break (first-break `sc004corr_first_break_sc004.tsv`, earlier
-  direction). Its formal earlier non-commutations (`PNWGmcILowering`,
+  corpus break before the SC014 boundary (first-break
+  `sc004corr_first_break_sc004.tsv`, earlier direction). Its formal earlier
+  non-commutations (`PNWGmcILowering`,
   `PNWGmcULowering`) are feeding artefacts on non-corpus `EnglishProtoInput`
   forms only (`sc004_sc014_interaction_report.md`).
 
@@ -41,8 +43,9 @@
 ## Chronology statement
 First-break evidence identifies one historically interpretable boundary for
 SC004: the later boundary at `SC036` OE Inter Stress Raising (order 33), with
-`soul`. The earlier side has no corpus break toward the head. The stressed target
-`*ái` is disjoint from SC014's unstressed `*ai`, so the two rules are independent.
+`soul`. The earlier side has no corpus break before the SC014 boundary. The
+stressed target `*ái` is disjoint from SC014's unstressed `*ai`, so the two
+rules are independent.
 
 ## Caveats
 The later boundary is real but broad/far rather than a tight local adjacency.
