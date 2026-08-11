@@ -25,35 +25,44 @@ change at all**, and must:
 
 Only after that audit may a stage decision (and any rename) be considered.
 
-## Q2. SC004 — implementation of the recommended split (Outcome C)
+## Q2. SC004 — split task record (closed)
 
-The SC004 research task (this cluster) recommends **Outcome C**: split the bundled
-`PWGmcAiMonophthongization` into a later general `*ai/*ái > *ā` (retains SC004,
-all witnesses) and an earlier corpus-inert word-final `*-ai > *-ē` (provisional
-id). See `sc004_historical_options_report.md`. **Not applied.** Before any
-implementation (a separate review-gated task):
+Historical queue entry retained for traceability. The earlier proposal in
+`sc004_historical_options_report.md` has now been implemented and closed at
+checkpoint `d704a94c`, with publication-prose reconciliation completed on the
+current `dublin-resume` line.
 
-1. consult **Versloot 2017** directly and add it to `docs/refs.bib`; confirm the
-   PNWGmc dating of the final component and the wave chronology of the general
-   component;
-2. treat `EAF` for the general component as an operational modelling corridor, not
-   a Proto-Anglo-Frisian node claim;
-3. record the final component's 0-corpus-load explicitly.
+Final recorded state:
 
-## Q3. `stem` — actionable-phonology / `known_unmodelled` reconciliation
+1. split applied: former bundled `PWGmcAiMonophthongization` was reconciled into
+   SC014 and SC004 behaviorally distinct components;
+2. **SC014** = unstressed `*ai > *ē`, final and nonfinal, with corpus witnesses
+   `span` (`*spánnai`) and `meed` (`*mízdai`);
+3. SC014 later chronology boundary = **SC072**;
+4. **SC004** = stressed/root `*ái > *ā`;
+5. SC004 production application count = **24** rows.
 
-`post_rename_integrity_report.md` §3 diagnoses (and does **not** fix) that a
-freshly generated `oe_mismatch_report.txt` reports one actionable core-phonology
-mismatch — `stem` `*stámnaz -> stamn` (expected `stefn`) — because
-`oe_mismatch_report.py` does not honor the aligned data's
-`DERIVATION_CLASS = known_unmodelled`. The previously-cited "0 actionable
-phonology" state rested on a stale committed report. Pre-existing (gate B:
-outputs_sha256 unchanged since `a5e9ce12`). A separate review must choose among:
+## Q3. `stem` — legacy decision tree superseded (pending targeted follow-up)
 
-1. teach `oe_mismatch_report.py` to exclude `DERIVATION_CLASS = known_unmodelled`
-   rows (make the report honor the existing data classification);
+The old three-way queue choice is superseded and should not be used as the active
+decision framework. Do not execute the prior options:
+
+1. exclude `known_unmodelled` rows in `oe_mismatch_report.py`;
 2. add `stem` to `oe_known_problems.tsv`;
-3. implement the `mn > fn` development so `stem` matches.
+3. implement a general `mn > fn` sound change.
 
-No FST, aligned-data, `oe_known_problems.tsv`, or tool change has been made for
-this item.
+Use the targeted row-2216 adjudication plan instead:
+
+1. retain lexeme-level `PROTO = *stámnaz`;
+2. test/select English-line `PROTOFORM = *stámniz`;
+3. test attested OE `stemn` as deterministic comparator;
+4. if trace and sources justify it, reclassify `known_unmodelled -> early_analogy`;
+5. do **not** add a general `mn > fn` rule;
+6. do **not** broaden `PNWGmcMnDissimilation`;
+7. keep unrelated `*stébnō` ('voice/sound') excluded.
+
+Durable planning anchors for this follow-up already exist in
+`Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md` and
+`Germanic/docs/sound_changes/cascade_baseline/post_rename_integrity_report.md`.
+No FST, aligned-data, `oe_known_problems.tsv`, or tool change is made in this
+queue update.

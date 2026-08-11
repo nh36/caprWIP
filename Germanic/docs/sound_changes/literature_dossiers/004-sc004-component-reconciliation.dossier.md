@@ -1,169 +1,66 @@
 # SC004 source reconciliation dossier
 
-Research only; no production change. This dossier reconciles the source evidence
-for the SC004 components at the level of *environment* (stressed vs unstressed;
-word-final vs nonfinal), so the retain/split/remodel decision rests on
-scholarship, not on CAPR's linear ontology. Provisional research identifiers:
-`SC004.final-ai-to-e` (A) and `SC004.general-ai-to-a` (B+C), per the component
-dossier.
+Research dossier; no production change. This file preserves the earlier SC004
+split investigation, records where that pass overreached, and reconciles it with
+the settled production interpretation now in force.
 
-## Method and evidential caution
+## What the earlier research pass concluded
 
-Local citable sources (in `docs/refs.bib`) are used as primary evidence:
-`RingeTaylor2014`, `Fulk2018`, `Campbell1959`, `Hogg1992`, `Luick1914`,
-`SieversBrunner1965`. **Versloot 2017**, "Proto-Germanic *ai in North and West
-Germanic" (*Folia Linguistica Historica* 38), is the most directly relevant
-recent study but is **not yet in `docs/refs.bib`** and could not be consulted in
-full text here; its argument is characterised below and flagged **[verify —
-consult directly; add to refs.bib before any reader-facing use]**. Per project
-policy, no general web summary is treated as evidence: web search was used only to
-locate the Versloot argument, which must be confirmed against the article.
+The earlier pass usefully separated two historical tendencies:
 
-## Source positions by environment
+1. an unstressed `*ai > *ē` development in the North/West Germanic corridor;
+2. a later stressed/root `*ái > *ā` development in the North Sea
+   Germanic/Anglo-Frisian corridor.
 
-### A — word-final unstressed `*-ai` (→ `*ē`)
+It also argued, correctly at the source-analysis level, that stressed
+monophthongisation can be modeled as areal/diffusional and that CAPR's EAF stage
+functions as an operational corridor rather than proof of a discrete
+Proto-Anglo-Frisian node.
 
-- **Ringe & Taylor** treat the monophthongisation of unstressed `*ai` as one of
-  the most pervasive post-PNWGmc vowel shifts, illustrated by endings dat.sg
-  `*-ai`, subjunctive `*-ai`, strong-adj pl `*-ai`, surfacing as long mid
-  reflexes across Northwest Germanic [@RingeTaylor2014, pp. 40--41]. Environment:
-  **unstressed, word-final**; outcome **`*ē`**; scope **Northwest Germanic**
-  (shared, early); mechanism: common inheritance in the (P)NWGmc period.
-- **Fulk** lists the development of unstressed `ai`/`au` among the important
-  North/West-Germanic shared innovations against Gothic [@Fulk2018, §5.2].
-  Environment **unstressed**; scope **North+West Germanic** shared.
-- **Versloot 2017 [verify]** argues the unstressed / word-final `*-ai > *-ē` was
-  **completed already in Proto-Northwest Germanic**, i.e. it *predates* the
-  stressed-syllable monophthongisation and is a **distinct, earlier** event.
+## Why part of the old corpus attribution was invalidated
 
-Convergent reading: A is an **early, well-supported (P)NWGmc** change with outcome
-`*ē`. Its CAPR corpus load is **zero** lexemes (component dossier §"Already
-established"); its witnesses are inflectional endings.
+The earlier corpus accounting treated generic `PROTO` as if it were the
+row-executed production input. Production execution is row-specific and uses
+`PROTOFORM`. After re-audit against row-specific `PROTOFORM`, several claims in
+the older pass no longer stand:
 
-### B+C — stressed / nonfinal `*ai`, `*ái` (→ `*ā`)
+1. SC014 is not restricted to a "word-final only" corpus interpretation.
+2. SC014 is not corpus-inert: live witnesses include `span` (`*spánnai`) and
+   `meed` (`*mízdai`).
+3. `loam` belongs to SC004 because its executed row-specific input is stressed
+   `*láimą`.
+4. `whine` is not an `*ai` application in the production input path.
 
-- **Campbell** and **Hogg** treat Germanic `*ai` in stressed root syllables as
-  yielding Old English **`ā`** (e.g. *stān* < `*stainaz`), with the front reflex
-  **`ǣ`** arising by the later Anglo-Frisian fronting/brightening of that `ā`
-  (i.e. `*ai > *ā > ǣ`), not directly [@Campbell1959; @Hogg1992]. Environment
-  **stressed root**; outcome **`ā`** (then `ǣ` where fronted); scope **Anglo-
-  Frisian / North Sea Germanic**.
-- **Ringe & Taylor** state the wider generalisation "more sharply than" the
-  narrowest handbook wording (per CAPR's own reader/change-report), i.e. the
-  broad nonfinal `*ai > *ā` is **less explicitly** delimited in the handbooks than
-  in CAPR's implementation.
-- **Versloot 2017 [verify]** argues the **stressed-syllable** monophthongisation
-  (`*ai > ā~ē`) is a **later, gradual, areally-diffused** North Sea Germanic
-  process — spreading in waves (pre-consonantal environments such as before `*h`,
-  `*r` first, then more broadly), datable roughly to c. AD 400--900 on runic
-  evidence, and **not** reaching Old High German or West Norse. Mechanism:
-  **areal diffusion through a dialect continuum**, not simple common inheritance.
+So the discrepancy was methodological (generic `PROTO` read as execution input),
+not a contradiction in the settled split itself.
 
-Convergent reading: B+C is the **later** monophthongisation to `*ā`, characteristic
-of **North Sea Germanic / Anglo-Frisian**, of **diffusional** character, carrying
-**all 26** CAPR corpus witnesses.
+## What remains valid from the source argument
 
-### B vs C is not a historical division
+The corrected corpus attribution does **not** collapse the historical distinction
+between the two developments:
 
-CAPR splits B (`{*ai} -> {*ā}`) from C (`{*ái} -> {*ā}`) only because the FST
-marks stress on the vowel segment. The two produce the **identical** outcome
-`*ā`. Empirically, C carries 24 stressed-root lexemes; B carries just **2**
-(loam `*laimōn`, whine `*wainōjaną`), **both** flagged `early_analogy` in the
-aligned data and both with a root-syllable `*ai` that would ordinarily bear
-stress (`*láim-`, `*wáin-`) — their assignment to the *unstressed* rewrite
-reflects **absent stress marks in the proto field**, not a genuine
-unstressed-nonfinal category. (whine is additionally irregular: expected *hwīnan*
-has `ī`, not the `ā` the merger would give, consistent with its `early_analogy`
-class.) There is therefore **no source or corpus basis for treating B and C as
-two historical changes**; they are one development across two stress tiers.
+1. SC014 (`PNWGmcUnstressedAiMonophthongization`) remains an unstressed
+   `*ai > *ē` development with Northwest Germanic scope.
+2. SC004 (`EAFAiMonophthongization`) remains the stressed/root `*ái > *ā`
+   development.
+3. The stressed `*ai > *ā` history can still be read as areal/diffusional
+   (including wave-like spread in the literature), so EAF remains a modeling
+   corridor rather than a node-proof claim.
 
-## Confronting the four possibilities (task §5)
+## Final production interpretation (settled state)
 
-1. **Final `*-ai > *-ē` may postdate the North/West Germanic divergence.** The
-   sources place it *early* — R/T in the shared (P)NWGmc layer; Versloot in
-   Proto-Northwest Germanic. Nothing here requires it to postdate the divergence;
-   it is the **earliest** of the three developments. It is distinct from B+C by
-   both outcome (`*ē` vs `*ā`) and date (earlier).
-2. **Stressed `*ai` monophthongisation spread in waves.** Directly supported by
-   Versloot 2017 [verify] (two waves, pre-consonantal first) and consistent with
-   the handbook placement of OE `*ai > ā` as an Anglo-Frisian/North-Sea-Germanic
-   development rather than a pan-West-Germanic inheritance.
-3. **English/Frisian `*ai > ā` need not prove an inherited Proto-Anglo-Frisian
-   innovation.** The wave/areal account (Versloot) is explicitly a diffusional
-   one; shared `*ai > ā` is compatible with convergence across a continuum, not
-   only with a discrete Proto-Anglo-Frisian node — matching CAPR's own definition
-   of EAF as an *operational corridor*, not a claimed proto-node.
-4. **CAPR may still need a modelling stage for a diffused development.** Yes:
-   even if B+C is areal/diffusional rather than a clean inherited node, CAPR's
-   linear model must assign it *some* chronological stage. The EAF corridor
-   (post-PWGmc, pre-OE) is the natural modelling home for a North Sea
-   Germanic / Anglo-Frisian areal change — but this is a **modelling choice**,
-   not a claim that B+C was a single datable Anglo-Frisian event.
+1. **SC014**: unstressed `*ai > *ē`, both final and nonfinal in production scope;
+   corpus witnesses `span` and `meed`; positive later boundary at **SC072**; no
+   positive earlier break observed before the established head boundary.
+2. **SC004**: stressed/root `*ái > *ā`; **24** application rows in the production
+   checkpoint.
+3. B/C stress-tier splitting remains an implementation detail and must not be read
+   as two separate historical sound changes.
 
-## Stage vs scope vs label vs mechanism
+## Source notes
 
-| Axis | A (final `*ai > *ē`) | B+C (`*ai/*ái > *ā`) |
-| --- | --- | --- |
-| CAPR chronological stage | PNWGmc (early) | EAF (operational; areal change modelled in the post-PWGmc/pre-OE corridor) |
-| comparative scope | Northwest Germanic (shared) | North Sea Germanic / Anglo-Frisian |
-| traditional label | unstressed `*ai`-monophthongisation | Anglo-Frisian (OE) `*ai > ā` |
-| historical mechanism | common (P)NWGmc inheritance | areal diffusion in waves through a continuum |
-
-These axes **cross-cut**: A and B+C differ on *every* axis (stage, scope, label,
-mechanism, and outcome). That is the substance behind the audit table's
-`definitely_conflated` verdict.
-
-## Reconciled findings
-
-1. A and B+C are **historically distinct** developments — different outcomes
-   (`*ē` vs `*ā`), different dates (early PNWGmc vs later areal), different scope
-   (NWGmc-shared vs North Sea Germanic/Anglo-Frisian), different mechanism
-   (inheritance vs diffusion). The sources support treating them as two changes.
-2. B and C are **one** development (stressed-root `*ai > *ā`) split only by the
-   FST's stress marking; they must **not** become two historical changes.
-3. The best-attested component (A) has **zero** corpus load; the component
-   carrying all witnesses (B+C) is the one the handbooks state least sharply.
-4. Remaining **[verify]** item before any reader-facing use: consult Versloot
-   2017 directly and add it to `docs/refs.bib`; confirm the wave chronology and
-   the PNWGmc dating of final `*-ai > *-ē`.
-
----
-
-## Versloot 2017 — direct verification (source prerequisite closed)
-
-Consulted directly (author's abstract and discussion, academia.edu / UvA-DARE)
-and added to `docs/refs.bib` as `@Versloot2017` (Folia Linguistica Historica 38:
-281--324, doi 10.1515/flih-2017-0010). What the article **does** support, and
-what it does **not**:
-
-**Supported (verified) — stressed `*ai`:**
-1. The monophthongisation of **stressed** PGmc `*ai` spread over Germania in
-   **two areal waves**, c. **AD 400--900**. Wave 1 (contexts before `*h`, `*r`)
-   went north→south from Old High German (mid-6th c.); wave 2 affected the
-   remaining instances and **did not reach Old High German or Old West Nordic**
-   [@Versloot2017].
-2. The process is **diffusional / wave-like**, not the reflex of a discrete
-   structural node; **Old English is among the languages with the most widely
-   defined monophthongisation contexts** (with Old Saxon, Old Low Franconian),
-   and Old Frisian is analysed in detail. This directly supports the **later**,
-   **areal** character of CAPR's general `*ai/*ái > *ā` (Components B+C) and
-   **confirms that EAF must be treated as an operational modelling corridor, not
-   a demonstrated Proto-Anglo-Frisian node** (task §1).
-
-**Not supported by Versloot — the final/unstressed component (A):**
-3. Versloot 2017 is explicitly about **stressed** `*ai`. It does **not**
-   establish the early Proto-Northwest Germanic dating of **word-final
-   unstressed** `*-ai > *-ē`. That dating rests on `@RingeTaylor2014` (pp. 40--41)
-   and `@Fulk2018` (§5.2), which treat unstressed `*ai` monophthongisation as an
-   early shared (P)NWGmc innovation. This is retained as the source for A.
-
-**Retained uncertainty:**
-4. The traditional label "North Sea Germanic / Anglo-Frisian" for B+C is a
-   reasonable characterisation of the zone Versloot places in the broad-context
-   wave, but Versloot frames it as an **areal continuum** rather than a bounded
-   branch; CAPR's `north_sea_germanic` scope is a modelling label over that zone,
-   not a claim of a discrete proto-node.
-5. Versloot does not himself separate a distinct word-final `*-ai > *-ē` change;
-   the two-development analysis (early unstressed/final vs later stressed/areal)
-   combines Versloot (stressed) with R/T + Fulk (unstressed). No web summary is
-   relied upon; the above is drawn from the article's own abstract and discussion.
+The source base for this dossier remains: `RingeTaylor2014`, `Fulk2018`,
+`Campbell1959`, `Hogg1992`, `Luick1914`, `SieversBrunner1965`, and
+`Versloot2017`. Versloot is used here for stressed `*ai` areal chronology and
+diffusional interpretation; unstressed `*ai > *ē` support remains anchored in
+Ringe/Taylor and Fulk.
