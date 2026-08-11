@@ -1,17 +1,20 @@
 # SC014-SC015 Opening Vowel Prelude -- literature dossier
 
-> **Corrected PROTOFORM pass (supersedes the split note below).** SC014 is the
-> unstressed monophthongization `*ai > *ē` (final AND nonfinal; Ringe-Taylor's
-> rule), live Foma rule `{*ai} -> {*ē}`. Under the production `PROTOFORM` it is
-> **corpus-active**, with two dat.sg witnesses, `span` (`*spánnai` > spanne) and
-> `meed` (`*mízdai` > meorde), and a real later first-break boundary at SC072 OE
-> Unstressed Long Vowel Shortening (order 69). The earlier "corpus-inert" claim
-> was a cognate-set `PROTO`-field artefact: **read every "corpus-inert" below as
-> "corpus-active (span, meed)"** and every "word-final only" as "final and
-> nonfinal". The separate stressed change is SC004 `EAFAiMonophthongization`
-> (`{*ái} -> {*ā}`; see `004-pwgmc-ai-monophthongization.dossier.md`). SC015's
-> substantive text is unchanged.
-> Implemented on branch `historical-cascade-order` (FST split commit `f59b758d`).
+SC014 is the unstressed monophthongization `*ai > *ē` in both final and
+nonfinal positions. Under the production `PROTOFORM` it is corpus-active, with
+the dat.sg witnesses `span` (`*spánnai` > spanne) and `meed` (`*mízdai` >
+meorde), and its current chronology evidence is one-sided: it must precede
+SC072 OE Unstressed Long Vowel Shortening, while its earlier side shows no
+positive break before its established head position in the cascade. The
+separate stressed change is SC004 `EAFAiMonophthongization`
+(`{*ái} -> {*ā}`; see `004-pwgmc-ai-monophthongization.dossier.md`).
+
+This dossier keeps SC014 and SC015 together as an opening-vowel prelude because
+they still frame the earliest unstressed-vocalic zone in the historical
+discussion. That grouping is editorial rather than a claim that the rules
+remain immediately adjacent in executable order: SC014 now sits at the head of
+`EarlyEnglishLineChanges`, while SC015 remains the stronger later member of the
+same broad opening region.
 
 ## Rule metadata
 
@@ -23,13 +26,14 @@
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC014-nwgmc-unstressed-ai-monophthongization.md`
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC015-nwgmc-i-lowering.md`
 - **representative failures / witnesses:**
-  - SC014: none — corpus-inert (zero corpus applications; witnesses are inflectional endings, not standalone lexemes)
+  - SC014: `span`; `meed`
   - SC015: `world`
 - **local chronology summary:**
-  - SC014 has no positive chronology boundary of any kind: it is corpus-inert, so no witness can be crossed in either direction.
+  - SC014 has no positive earlier boundary before its current head position.
+  - SC014 must precede SC072, with `span` and `meed`.
   - SC015 has no positive earlier historical boundary: the earlier search stops at bundled `EarlyEnglishLineChanges`.
   - SC015 must precede SC036, with `world`.
-  - The row is adjacent and useful as an opening prelude, but the available chronology is highly asymmetric: SC014 is corpus-inert (unconstrained), while SC015 has one real broad/far later boundary.
+  - The row remains useful as an opening prelude, but the available chronology is still highly asymmetric: SC014 is lightly evidenced and one-sided, while SC015 has the stronger broad/far later boundary.
 
 ## Historical problem
 
@@ -40,15 +44,16 @@ opening pair is already a classical textbook chapter.
 
 The asymmetry inside the row is the main editorial problem. SC014 is
 historically plausible as part of early Northwest Germanic unstressed-vowel
-simplification, but its current order evidence is purely boundary-limited: the
-earlier side stops at bundled `PWGmcChanges`, and the later side finds no real
-break before the current search limit. SC015 is stronger. Its earlier side is
-still runner-limited, but its later boundary is historically interpretable:
-`SC015 < SC036` through `world`, where delaying the rule yields `wuruld`
-instead of expected `weorold`. The question is therefore not whether the row
-matters, but whether it should eventually become a short cautious opening
-bridge, or a more obviously asymmetric unit with SC014 reduced to a brief
-boundary-limited note while SC015 carries most of the prose.
+simplification, and it is no longer only comparative background: `span` and
+`meed` now give it a real later boundary at SC072. But its evidence is still
+light, and its earlier side shows no positive break before the rule's current
+head position. SC015 is stronger. Its earlier side is still runner-limited,
+but its later boundary is historically interpretable: `SC015 < SC036` through
+`world`, where delaying the rule yields `wuruld` instead of expected
+`weorold`. The question is therefore not whether the row matters, but whether
+it should eventually become a short cautious opening bridge, or a more
+obviously asymmetric unit with SC014 reduced to a brief SC072-linked note while
+SC015 carries most of the prose.
 
 ## Source dossier
 
@@ -58,9 +63,9 @@ boundary-limited note while SC015 carries most of the prose.
 - **locator:** pp. 37--41; §6.3.3
 - **terminology:** monophthongization of unstressed `*ai`; merger of unstressed `*ai` with `*e`; `*weraldu > *weruld > weorold`
 - **short quotation:** "`unstressed *ai was usually monophthongized to *e throughout the NWGmc area`"; "`*weraldu > *weruld > WS OE weorold ~ worold`"
-- **paraphrase:** Ringe and Taylor provide the clearest comparative support for both members of the row. In their early Northwest Germanic discussion they state directly that unstressed `*ai` was usually monophthongized and merged with unstressed `*e` across most of the Northwest Germanic area, illustrating the change through endings such as subjunctive `*-ai`, weak-past endings, and the dative singular of a-stems [@RingeTaylor2014, pp. 37--41]. That gives SC014 real historical substance even though the chronology card remains negative. Later, in the Old English sound-change discussion, they derive `world` through `*weraldu > *weruld > weorold ~ worold`, which gives SC015 a clear historical home inside early unstressed-medial vocalism and explains why the later `SC015 < SC036` card boundary is historically legible rather than merely computational [@RingeTaylor2014, §6.3.3].
+- **paraphrase:** Ringe and Taylor provide the clearest comparative support for both members of the row. In their early Northwest Germanic discussion they state directly that unstressed `*ai` was usually monophthongized and merged with unstressed `*e` across most of the Northwest Germanic area, illustrating the change through endings such as subjunctive `*-ai`, weak-past endings, and the dative singular of a-stems [@RingeTaylor2014, pp. 37--41]. That gives SC014 real historical substance, while the CAPR dat.sg witnesses `span` and `meed` show the same development in the current corpus and anchor the later SC072 boundary. Later, in the Old English sound-change discussion, they derive `world` through `*weraldu > *weruld > weorold ~ worold`, which gives SC015 a clear historical home inside early unstressed-medial vocalism and explains why the later `SC015 < SC036` card boundary is historically legible rather than merely computational [@RingeTaylor2014, §6.3.3].
 - **conditioning:** unstressed syllables, especially endings and medial weak-vowel positions; later medial-vowel development in forms like `world`
-- **chronology:** This source strongly supports the type of both changes, but it does not yield a local SC014 or SC015 chapter by itself. SC014 remains weak in chronology despite strong comparative support; SC015 gains a stronger forward-looking historical anchor.
+- **chronology:** This source strongly supports the type of both changes, but it does not yield a local SC014 or SC015 chapter by itself. SC014 now has a limited CAPR chronology foothold through `span` and `meed`, but it remains weaker and more one-sided than SC015; SC015 gains the stronger forward-looking historical anchor.
 - **examples:** `bere`; `beren`; `dege`; `hatte`; `world`
 - **cautions:** The source supports a broad Northwest Germanic vocalic prelude, not a ready-made two-change chapter. It especially does not license turning the runner-bounded left edge or the broad/far SC036 relation into local chapter architecture.
 
@@ -90,18 +95,20 @@ boundary-limited note while SC015 carries most of the prose.
 
 ## CAPR formulation versus literature
 
-CAPR turns that early unstressed-vowel background into two explicit adjacent
-rules at the very start of the ordinary cascade.
+CAPR turns that early unstressed-vowel background into two explicit rules that
+frame the opening unstressed-vocalic zone, even though they are no longer
+adjacent in executable order.
 
 SC014 `PNWGmcUnstressedAiMonophthongization` is historically plausible and
 comparatively well supported as a type. Ringe and Taylor give the clearest
 statement that unstressed `*ai` merged with unstressed `*e` across much of the
 Northwest Germanic area, and Campbell supplies older West Germanic support for
 the same general move [@RingeTaylor2014, pp. 37--41; @Campbell1959, §331.7].
-Post-split, SC014 is the word-final `*-ai > *-ē` change only; it is corpus-inert
-(zero corpus applications), so CAPR gives it no positive chronology on either
-side. It is therefore best understood as a real early historical prelude whose
-placement rests on comparative evidence rather than on any CAPR derivation.
+In the production corpus it now applies to unstressed `*ai` in both final and
+nonfinal positions, with `span` and `meed` as live witnesses and SC072 as its
+positive later boundary. Its earlier side still shows no positive break before
+the current head position, so it remains a lightly anchored prelude rather than
+a tightly bounded corridor.
 
 SC015 `NWGmcILowering` is stronger. Campbell's unaccented-vowel merger and
 Hogg's claim that unstressed front vowels converged on `/e/` give it a clear
@@ -113,19 +120,21 @@ rule is still only one-sided in chronology, but it has a more obvious prose
 center than SC014.
 
 The practical result is an opening pair whose internal hierarchy is already
-clear. SC014 is a boundary-limited left flank. SC015 is the stronger right-hand
-member and the only one that currently points forward into a later ordinary
-chronology relation.
+clear. SC014 is the lighter left-hand member: source-backed, corpus-active, and
+one-sided through SC072, but still without a positive earlier boundary. SC015
+is the stronger right-hand member and the only one that currently points
+forward into the broader later ordinary chronology relation.
 
 ## Chronology implications
 
-- SC014 has no positive historical first-break boundary in either direction because it is **corpus-inert**: no OE corpus lexeme carries word-final unstressed `*-ai`, so no witness can be crossed.
-- SC014's cascade placement is therefore computationally free; its early Proto-Northwest Germanic stage rests on comparative evidence (inflectional endings `*-ai`), not CAPR derivation.
+- SC014 has no positive historical earlier boundary before its current head position.
+- SC014 does have a positive later boundary: it must precede SC072 OE Unstressed Long Vowel Shortening, with `span` and `meed`.
+- SC014's early Proto-Northwest Germanic stage still rests on comparative evidence plus limited corpus witnesses, not on any claim to a precise absolute date.
 - The former "runner-limited at bundled `PWGmcChanges`" reading is superseded by the SC004 split, which removed the shared rule that caused it.
 - SC015 has one current historical boundary, and it is rightward: `SC015 < SC036`, with `world`.
 - SC015's earlier side is also runner-limited at bundled `PWGmcChanges` and must not be rewritten as a positive left boundary.
 - The `SC015 < SC036` relation is broad/far and should remain a cross-reference only. It does not justify a non-contiguous SC015-SC036 chapter.
-- The opening pair therefore has one real future-facing hinge but no local reciprocal corridor of the kind seen in the `SC016-SC020` pilot.
+- The opening pair therefore has two one-sided chronology results, but no local reciprocal corridor of the kind seen in the `SC016-SC020` pilot.
 
 ## Chapter-shape options
 
@@ -133,15 +142,15 @@ chronology relation.
 
 This is the least disruptive option and remains fully viable.
 
-- **Why it works:** the rules are adjacent, both are ordinary FST changes, and together they form a real prelude to the `SC016-SC020` pilot corridor.
-- **How it should be narrated:** SC014 as a short boundary-limited opening note, SC015 as the stronger subsection that carries most of the historical prose.
-- **Main caution:** the report would need to say openly that SC014 is source-backed but chronology-negative in current testing.
+- **Why it works:** both rules still frame the opening unstressed-vowel prelude, even though SC014 now executes at the head of the cascade and SC015 later in the same early zone.
+- **How it should be narrated:** SC014 as a short SC072-linked opening note, SC015 as the stronger subsection that carries most of the historical prose.
+- **Main caution:** the report would need to say openly that SC014 is source-backed but only lightly witnessed and one-sided in chronology.
 
 ### Option 2: keep the grouped row, but make SC014 explicitly very short and let SC015 carry the chapter
 
 This is probably the best reading if the row is ever promoted unchanged.
 
-- **Why it works:** it matches the evidence already in hand. SC014 has real comparative support but no usable positive chronology, while SC015 has both source support and one interpretable order relation.
+- **Why it works:** it matches the evidence already in hand. SC014 has real comparative support plus the limited `span`/`meed` and SC072 evidence, while SC015 has both source support and the stronger `world` relation.
 - **How it should look:** a brief opening paragraph on unstressed `*ai` monophthongization, followed by a longer SC015 subsection focused on early unstressed front-vowel leveling and the `world` cross-reference.
 - **Main caution:** the prose should remain a genuine two-change report rather than quietly collapsing into an SC015 singleton with SC014 omitted.
 
@@ -155,7 +164,7 @@ This is the main alternative, but it is weaker as current book architecture.
 
 ## Cross-region links that should stay as cross-references only
 
-1. **Bundled `PWGmcChanges`** bounds the earlier searches for both SC014 and SC015, but it is a runner limitation rather than a historical opening boundary.
+1. **SC014's current head position** and bundled `PWGmcChanges` on the SC015 side bound the earlier searches; these are constraints of the present runner and cascade layout, not proof of an absolute earliest date.
 2. **The pilot `SC016-SC020` corridor** is the immediate right-hand neighbor and the reason this row matters as an opening prelude, but it should not absorb SC014-SC015 by default.
 3. **SC036** is the one real positive later relation for SC015 through `world`, but it is too far right to justify a non-contiguous chapter.
 
@@ -169,7 +178,7 @@ next human decision much clearer.
 
 1. `SC014-SC015` can remain scaffolded for now.
 2. If the row is eventually promoted unchanged, it should be a short cautious opening bridge with SC014 explicitly brief and SC015 carrying most of the prose.
-3. SC014 is likely to remain a boundary-limited implementation-context note even inside a grouped report.
+3. SC014 is likely to remain a brief SC072-linked implementation-context note even inside a grouped report.
 4. SC015 can and should cross-reference the later SC036 / `world` material, but only as cross-reference.
 5. Further source work is optional rather than mandatory; the main unresolved question is chapter shape, not missing basic evidence.
 

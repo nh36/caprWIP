@@ -1,16 +1,19 @@
 # SC014-SC015: Opening vowel prelude
 
-> **Corrected PROTOFORM pass (supersedes the split note below).** SC014 is the
-> unstressed monophthongization `*ai > *ē` (final AND nonfinal), live Foma rule
-> `{*ai} -> {*ē}`. Under the production `PROTOFORM` it is **corpus-active**, with
-> two dat.sg witnesses `span` (> spanne) and `meed` (> meorde) and a later
-> first-break boundary at SC072 (order 69). **Read every "corpus-inert" /
-> "boundary-limited" / "word-final only" below as superseded.** It executes at the
-> head of the cascade (position 1). The separate stressed change is SC004
-> `EAFAiMonophthongization` (`{*ái} -> {*ā}`; see
-> `004-pwgmc-ai-monophthongization.book-dossier.md`). SC015's substantive text is
-> unchanged. Implemented on branch `historical-cascade-order` (split `f59b758d`,
-> PROTOFORM correction `9c71aed3`).
+SC014 is the unstressed monophthongization `*ai > *ē` in both final and
+nonfinal positions. Under the production `PROTOFORM` it is corpus-active, with
+the dative-singular witnesses `span` (> spanne) and `meed` (> meorde), and its
+current chronology evidence is one-sided: it must precede SC072 OE
+Unstressed Long Vowel Shortening, while its earlier side shows no positive
+break before its established head position in the cascade. The separate
+stressed change is SC004 `EAFAiMonophthongization` (`{*ái} -> {*ā}`; see
+`004-pwgmc-ai-monophthongization.book-dossier.md`).
+
+This dossier keeps SC014 and SC015 together as an editorial opening prelude
+because they still frame the earliest unstressed-vocalic material in the book.
+That grouping is no longer a claim that the two rules remain adjacent in the
+executable cascade: SC014 now sits at the head of `EarlyEnglishLineChanges`,
+while SC015 remains the stronger handoff into the later Chapter 2 corridor.
 
 ## 1. Role in the book
 
@@ -20,22 +23,23 @@ assembled half. Its purpose is not to rival the better-documented
 preceding opening changes explicit so that the book does not appear to begin in
 midstream.
 
-That role is inherently asymmetrical. SC014 is historically real but
-corpus-inert (zero corpus applications), so it imposes no chronology constraint.
-SC015 is the stronger member: it has clear
-source support as part of early unstressed front-vowel leveling, and it has one
-real broad/far chronology relation through `world`. The book therefore needs to
-decide whether this row should eventually become a short cautious opening
-bridge, or a grouped note in which SC014 is very brief and SC015 carries most
-of the prose.
+That role is inherently asymmetrical. SC014 is historically real, source-backed,
+and lightly anchored in the corpus: the `span` and `meed` rows give it a real
+later boundary at SC072, but it still has no positive earlier boundary and does
+not create a local reciprocal corridor. SC015 is the stronger member: it has
+clear source support as part of early unstressed front-vowel leveling, and it
+has one real broad/far chronology relation through `world`. The book therefore
+needs to decide whether this row should eventually become a short cautious
+opening bridge, or a grouped note in which SC014 is very brief and SC015
+carries most of the prose.
 
 ## 2. Name and basic formulation
 
 - **SC014:** NWGmc Unstressed Ai Monophthongization
   - **FOMA rule:** `PNWGmcUnstressedAiMonophthongization`
-  - **Current role:** early Proto-Northwest Germanic word-final unstressed `*-ai > *-ē`; corpus-inert (zero corpus applications), so no positive boundary on either side; historical placement rests on comparative evidence (inflectional endings)
+  - **Current role:** early Proto-Northwest Germanic unstressed `*ai > *ē` in final and nonfinal positions; corpus witnesses `span` and `meed`; positive later boundary at SC072; no positive earlier boundary before the current head position
 - **SC015:** NWGmc I Lowering
-  - **FOMA rule:** `NWGmcILowering`
+  - **FOMA rule:** `PNWGmcILowering`
   - **Current role:** stronger early unstressed-vocalic adjustment, with one real later boundary at SC036 on `world`
 - **Combined unit label:** Opening vowel prelude
 - **Present editorial judgment:** keep grouped as scaffold for now; if promoted later, the most plausible shape is a short cautious bridge in which SC014 stays brief and SC015 carries the main prose
@@ -48,8 +52,9 @@ comparative statement for SC014: unstressed `*ai` was usually monophthongized
 to a long mid vowel and merged with unstressed `*e` across much of Northwest
 Germanic [@RingeTaylor2014, pp. 37--41]. Campbell independently notes the same
 development for unaccented medial `ai` in West Germanic [@Campbell1959,
-§331.7]. That gives SC014 real historical substance, but not strong chapter
-architecture.
+§331.7]. That gives SC014 real historical substance, while the `span` and
+`meed` rows supply a limited but genuine corpus foothold and the later SC072
+boundary.
 
 SC015 is better anchored. Campbell states that unaccented front vowels merged
 in Old English [@Campbell1959, §369], and Hogg likewise argues that by about
@@ -77,36 +82,40 @@ stages. The book should keep that distinction visible.
 
 ## 5. Place in the cascade
 
-`SC014-SC015` sits immediately before the pilot `SC016-SC020` early
-vocalic/final corridor. That is the main reason the row matters editorially:
-without it, the assembled half would jump directly from bundled earlier
-material into the first pilot report.
+`SC014-SC015` matters because it frames the opening unstressed-vocalic material
+before the pilot `SC016-SC020` early vocalic/final corridor. SC014 itself now
+occupies the established head position of `EarlyEnglishLineChanges`, while
+SC015 remains the later opening-vowel step that hands off into the pilot
+corridor. Without a grouped treatment, the assembled half would jump from the
+earliest comparative prelude straight into the first fully developed pilot
+report.
 
 The outward links should remain restrained:
 
-- **Left edge:** both earlier searches stop at bundled `PWGmcChanges`; this is a runner limitation, not chapter architecture.
+- **Left edge:** SC014's earlier probe reaches its current head position with no positive break; SC015's earlier probe is still bounded by bundled `PWGmcChanges`.
 - **Immediate right neighbour:** the pilot `SC016-SC020` corridor begins immediately after SC015 and provides the better-documented continuation of early vowel and final-syllable history.
 - **Farther right cross-reference:** SC015 points forward to SC036 through `world`, but that relation should remain cross-reference only.
 
 ## 6. Order-testing evidence
 
-- SC014 has no positive earlier boundary; the search stops at bundled `PWGmcChanges`.
-- SC014 has no positive later boundary before the current search limit.
+- SC014 has no positive earlier boundary before its current head position.
+- SC014 must precede SC072, with `span` and `meed`.
 - SC015 has no positive earlier boundary; that side is also runner-limited.
 - SC015 must precede SC036, with `world`.
 
-The practical consequence is that SC014 is currently a negative or
-boundary-limited card, while SC015 is one-sided but historically informative.
-If SC015 is moved later than SC036, PGmc `*wir-aldu` yields `wuruld` instead of
-expected `weorold`. That is the row's only live positive chronology relation,
-and it is broad/far rather than local.
+The practical consequence is that SC014 is now one-sided but lightly anchored:
+it has a real later boundary at SC072, but only a boundary result on the
+earlier side. SC015 remains one-sided but historically informative. If SC015 is
+moved later than SC036, PGmc `*wir-aldu` yields `wuruld` instead of expected
+`weorold`. That is still the row's broader forward-looking chronology relation,
+and it remains broad/far rather than local.
 
 ## 7. Interpretation for the book
 
 The safest reading is that this row is an opening prelude, not yet a robust
 mini-corridor like `SC016-SC020`.
 
-1. **SC014** should be treated as a short source-backed but boundary-limited opening note.
+1. **SC014** should be treated as a short source-backed opening note with two live corpus witnesses and a one-sided SC072 chronology result.
 2. **SC015** should carry the row if it is ever promoted, because it has both stronger literature framing and the only positive chronology relation.
 3. **The handoff to `SC016-SC020`** should be explicit, so the opening prelude does not duplicate the pilot corridor.
 4. **The later SC036 relation** should be mentioned only as a forward cross-reference, not as a reason to create a non-contiguous chapter.
@@ -127,7 +136,7 @@ order.
 ## 9. Remaining uncertainty
 
 - cautious grouped opening bridge versus a more visibly SC015-led treatment
-- how much explicit space SC014 deserves given its chronology-negative card
+- how much explicit space SC014 deserves given its one-sided SC072-linked card
 - how prominently to mention the bundled `PWGmcChanges` limitation
 - how much of the `world` derivation to spell out before the later SC036 report revisits the same witness
 - whether the finished prose should stress "opening prelude" or "pre-pilot setup" as the chapter function
@@ -137,14 +146,14 @@ order.
 ### Option A: short cautious SC014-SC015 opening bridge
 
 1. Why the assembled half begins with a short unstressed-vowel prelude
-2. SC014 as the weak but source-backed monophthongization opening
+2. SC014 as the brief monophthongization opening, anchored by `span`, `meed`, and SC072
 3. SC015 as the stronger unstressed-front-vowel subsection
 4. Handoff to the `SC016-SC020` pilot corridor
 5. Brief note on the later `world` / SC036 cross-reference
 
 ### Option B: grouped row with very brief SC014 and SC015 carrying the prose
 
-1. One paragraph on unstressed `*ai` monophthongization and its boundary-limited card
+1. One paragraph on unstressed `*ai` monophthongization and its one-sided SC072-linked card
 2. Main subsection on early unstressed front-vowel leveling
 3. `world` as the one positive chronology witness
 4. Forward orientation toward `SC016-SC020` and later SC036
