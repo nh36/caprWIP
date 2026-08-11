@@ -4,7 +4,7 @@ _Generated from the current build-script chapter files and their SC-numbered rul
 
 ## Summary
 
-- Build script: `/Users/nathanhill/Code/caprWIP/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh`.
+- Build script: `/Users/nathanhill/Code/capr-dublin-resume/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_19_docker.sh`.
 - Chapter files checked: 57.
 - Rule headings mapped from current chapter files: 85.
 - Sound-change links checked: 248.

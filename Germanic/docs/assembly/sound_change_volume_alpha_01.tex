@@ -143,10 +143,6 @@
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
-% fallback for those not using the hyperref driver hyperxmp:
-\makeatletter
-\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
-\makeatother
 \hypersetup{
   pdflang={en-GB},
   hidelinks,
@@ -1711,40 +1707,31 @@ historical anchors.
 
 \subsubsection{Sound-change report}\label{sound-change-report-11}
 
-\begin{quote}
-\textbf{Corrected PROTOFORM pass (supersedes the split note below).}
-SC014 is the unstressed monophthongization \emph{ai} \textgreater{} ē
-(final AND nonfinal), live Foma rule \{\emph{ai}\}
-\emph{-}\textgreater{} \{ē\}. Under the production \emph{PROTOFORM} it
-is corpus-active, with two dat.sg witnesses span (\textgreater{} spanne)
-and meed (\textgreater{} meorde) and a later first-break boundary at
-SC072 (order 69). \textbf{Read every ``corpus-inert'' /
-``chronology-negative'' / ``word-final only'' below as superseded}:
-SC014 is corpus-active and covers final and nonfinal unstressed
-\emph{ai}. It executes at the head of the cascade (position 1), so it is
-no longer adjacent to SC015 \emph{PNWGmcILowering} (position 11). The
-separate stressed change is SC004 \emph{EAFAiMonophthongization} (\{ái\}
-\emph{-}\textgreater{} \{ā\}; see
-\texttt{004-pwgmc-ai-monophthongization.md}). SC015's substantive text
-is unchanged. Implemented on branch historical-cascade-order (split
-f59b758d, PROTOFORM correction 9c71aed3).
-\end{quote}
+SC014 monophthongizes unstressed \emph{ai} to ē in both final and
+nonfinal positions. Under the production \emph{PROTOFORM} it is
+corpus-active, with the dative-singular witnesses span (\textgreater{}
+spanne) and meed (\textgreater{} meorde), and its current chronology
+result is one-sided: it must precede SC072 OE Unstressed Long Vowel
+Shortening, while its earlier side shows no positive break before its
+established head position in the cascade. The separate stressed/root
+change ái \textgreater{} ā is SC004 \emph{EAFAiMonophthongization}.
+SC015's role as the stronger second member of this opening prelude
+remains unchanged.
 
 \paragraph{Historical formulation}\label{historical-formulation-11}
 
 \texttt{SC014-SC015} appears here as a short, cautious opening bridge
 report, not as a claim that the traditional grammars present one robust
 textbook chapter called ``opening vowel prelude.'' The grouped report is
-useful for narrative shape because these are the earliest ordinary FST
-changes in the volume, and the sound-change narrative reads more clearly
-if it begins with an explicit opening prelude rather than jumping
-straight into the more developed \texttt{SC016-SC020} corridor.
+useful for narrative shape because it gives explicit prose to the
+earliest unstressed-vocalic material before the more developed
+\texttt{SC016-SC020} corridor.
 
 The internal hierarchy of the pair should stay explicit. SC014 NWGmc
-Unstressed Ai Monophthongization is the early opening member: it is the
-word-final unstressed -ai \textgreater{} -ē change, historically
-plausible and source-backed but corpus-inert (zero corpus applications),
-so it imposes no chronology constraint. SC015 NWGmc I Lowering is the
+Unstressed Ai Monophthongization is the early opening member:
+historically plausible, source-backed, corpus-active through span and
+meed, and now anchored by a real later boundary at SC072, but still
+lacking a positive earlier boundary. SC015 NWGmc I Lowering is the
 stronger member and carries most of the report. It belongs to the
 broader history of early unstressed front-vowel leveling and has one
 real, though broad/far, later chronology relation through world.
@@ -1765,7 +1752,9 @@ without overstating local chronology
 structural observation that diphthongs do not survive in Old English
 unstressed syllables, reinforcing the broad historical type behind SC014
 without turning it into a chapter center (\citeproc{ref-Hogg1992}{Hogg
-1992, 112}).
+1992, 112}). The CAPR corpus now adds two live dat.sg witnesses, span
+and meed, which turn that broad type into a limited but real lexical
+foothold.
 
 SC015 is better anchored. Campbell states that unaccented front vowels
 fell together in Old English (\citeproc{ref-Campbell1959}{Campbell 1959,
@@ -1784,55 +1773,44 @@ model-internal adjustment.
 \paragraph{CAPR implementation}\label{capr-implementation-11}
 
 CAPR turns that broad unstressed-vowel background into two explicit
-opening rules at the left edge of the ordinary cascade.
+opening rules in the early unstressed-vocalic zone.
 
 SC014 \emph{PNWGmcUnstressedAiMonophthongization} removes the unstressed
-diphthongal quality of \emph{ai}, formalizing a comparative development
-that the grammars describe more diffusely. SC015 \emph{PNWGmcILowering}
-then lowers or levels early unstressed front-vowel quality farther. That
-sequence is more explicit than the handbook prose, but it is still
-historically defensible so long as the report states clearly that the
-two rules do not form a strong local reciprocal corridor.
+diphthongal quality of \emph{ai} in both final and nonfinal positions,
+formalizing a comparative development that the grammars describe more
+diffusely. SC015 \emph{PNWGmcILowering} then lowers or levels early
+unstressed front-vowel quality farther. The grouped report is therefore
+editorial rather than a claim that the two rules still occupy adjacent
+executable slots: SC014 now sits at the head of
+\emph{EarlyEnglishLineChanges}, while SC015 remains the later
+opening-vowel step.
 
 \paragraph{Place in the cascade}\label{place-in-the-cascade-11}
 
-This report sits at the very opening of the volume and hands off
-directly to the pilot \texttt{SC016-SC020} \textbf{Early vocalic/final
-corridor}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{.o. PNWGmcUnstressedAiMonophthongization}
-\NormalTok{.o. PNWGmcILowering}
-\NormalTok{.o. OEWsPalatalGlide}
-\NormalTok{.o. PNWGmcULowering}
-\NormalTok{.o. PNWGmcStressedMonosyllableORaising}
-\NormalTok{.o. PNWGmcFinalLongORaising}
-\NormalTok{.o. EAFFinalZDeletion}
-\end{Highlighting}
-\end{Shaded}
-
-That immediate handoff is the main structural reason to keep the row
-here. The report gives the volume an explicit opening without absorbing
-the \texttt{SC016-SC020} corridor to the right. Its outward links should
-remain restrained. Bundled \emph{EarlyEnglishLineChanges} bounds the
-earlier search space for both rules, but that is a runner limitation
-rather than a positive left boundary. SC015 points forward to SC036
-through world, but that relation should remain a cross-reference only,
-not a larger chapter claim.
+This report sits at the very opening of the volume and hands off into
+the pilot \texttt{SC016-SC020} \textbf{Early vocalic/final corridor}.
+SC014 itself now occupies the head position of
+\emph{EarlyEnglishLineChanges}, while SC015 remains the later
+opening-vowel step that points directly into the pilot corridor. That
+editorial handoff is the main structural reason to keep the row here.
+Its outward links should remain restrained: SC014's earlier probe
+reaches its current head boundary with no positive break, SC015's
+earlier side is still runner-limited, and the forward SC015/SC036
+relation should remain a cross-reference rather than a larger chapter
+claim.
 
 \paragraph{Order evidence}\label{order-evidence-11}
 
 The order evidence justifies the grouping only if the asymmetry remains
 explicit.
 
-SC014 is source-backed but chronology-negative in current testing. The
-earlier search runs safely down to bundled
-\emph{EarlyEnglishLineChanges} with no real break, and the later search
-finds no real break before the current search boundary at SC087. Those
-results should not be rewritten into positive chronology claims. The
-card supports SC014 as a brief opening note, not as a strongly bounded
-local law.
+SC014 is source-backed and now lightly anchored in current testing. Its
+earlier side shows no positive break before the current head position,
+while its later side must remain before SC072. If SC014 is delayed until
+after SC072, the monophthongized ē is no longer present for shortening,
+so span and meed fail. Those results support SC014 as a brief opening
+note with a one-sided chronology result, not as a strongly bounded local
+law.
 
 SC015 is the stronger member. Its earlier search is likewise
 runner-bounded at bundled \emph{EarlyEnglishLineChanges}, so that side
@@ -1843,9 +1821,9 @@ expected weorold. That is a genuine historical ordering statement, but
 it is still a forward cross-reference rather than a reason to build a
 non-contiguous \texttt{SC015-SC036} chapter.
 
-Taken together, the cards support a short opening bridge with one weak
-boundary-limited member and one stronger forward-looking member. They do
-not support a local reciprocal corridor.
+Taken together, the cards support a short opening bridge with one
+lightly anchored SC072-linked member and one stronger forward-looking
+member. They do not support a local reciprocal corridor.
 
 \paragraph{Interpretation}\label{interpretation-11}
 
@@ -1856,19 +1834,19 @@ abruptly at the \texttt{SC016-SC020} corridor. That is enough to justify
 prose even though the two members do not contribute equal weight.
 
 SC014 should therefore stay brief: historically plausible,
-source-backed, and useful as an opening note, but not a major chronology
+source-backed, and useful as an opening note with two live corpus
+witnesses and a one-sided SC072 result, but not a major chronology
 anchor. SC015 carries the report because it belongs to the broader
 history of unstressed front-vowel leveling and because its world
-relation gives the pair one real positive ordering result. The grouped
-unit works best when it is described as a short SC015-led prelude rather
-than as a symmetrical two-rule chapter.
+relation gives the pair the stronger forward-looking ordering result.
+The grouped unit works best when it is described as a short SC015-led
+prelude rather than as a symmetrical two-rule chapter.
 
 \paragraph{Remaining cautions}\label{remaining-cautions-11}
 
 The cautions here are straightforward but important. Do not treat
-bundled \emph{EarlyEnglishLineChanges} as a historical left boundary for
-either rule. Do not treat SC014's no-break-before-boundary result as
-proof that it must precede the whole rest of the half. Do not let the
+SC014's no-break-before-head result as proof that it must precede the
+whole rest of the half or as a precise historical date. Do not let the
 forward \texttt{SC015\ \textless{}\ SC036} relation pull this opening
 report into a non-contiguous chapter with the later \texttt{SC035-SC037}
 bridge. And do not let the prelude duplicate the neighboring
