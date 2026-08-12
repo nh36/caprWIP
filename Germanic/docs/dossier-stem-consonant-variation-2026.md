@@ -43,11 +43,11 @@ publication locator.
 | Kroonen 2011, *The Proto-Germanic n-stems*, pp. 183, 286 | `kroonen_2011_n_stems.vision.txt` (`:8286`, `:12975`) | OE `stefn`/`heofon`/`levene` as `*-mn-` with "vocalization of the m"; `stofn` = `*stubna/ō-` in the `*stub-` 'stub' family |
 | Kroonen 2006, "Gemination and allomorphy in the PGmc mn-stems" (*ABäG* 61: 17–25) | `kroonen_2006_mn_stems_bottom_rime.txt` (`:1`) | PIE `*-Cmn- > *-Cn-` after labial roots; mn-stem allomorphy / Kluge's law framework |
 | Polomé 1967, "Notes on the Reflexes of IE /ms/ in Germanic", pp. 818–819 | `polome_1967_reflexes_ie_ms.txt` (`:867`) | Germanic `-mn- > *-bn-`; OE `stefn : stemn` 'prow' and 'voice' as **doublets**; Torp `*stab-` alternative |
-| Fulk 2018, *A Comparative Grammar of the Early Germanic Languages*, §6.14 (+ n. 6) | `fulk_comparative_grammar_early_germanic.vision.txt` (`:7365`, `:7403`) | "In the cluster mn, the first consonant tends to lose its nasality by dissimilation... the reverse change (of bn to mn) is well attested in NWGmc"; "hardly regular"; stem/voice etymologies "rather insecure" |
-| Campbell 1959, *Old English Grammar*, §§193.d n.4, 484, 328 | `campbell_old_english_grammar.txt` (`:5504`, `:12570`, `:15225`) | `fn > mn` as *sporadic West-Saxon* assimilation; explicitly `stemn stem (beside stefn)`; rejects Luick on the vowel |
-| Luick 1914–40, *Hist. Gramm.*, §75 Anm. 1; §186 | `luick_historische_grammatik.txt` (`:5988`, `:11332`, `:16996`) | "e vor jüngerem mn aus fn" (mn is younger, from fn); tentative `stemn Stamm aus *stofn` |
-| Brunner 1965 (Sievers–Brunner), *Altenglische Grammatik*, §193.2; §201 | `brunner_1965_altenglische_grammatik.vision.txt` (`:8044`, `:4016`) | WS "fn ... geht ... oft in mn über": `stemn Stimme, stemn Stamm ... für ... stefn` |
-| Bülbring 1902, *Altenglisches Elementarbuch*, §485 | `bulbring_altenglisches_elementarbuch.txt` (`:9012`) | WS "f vor n + Vokal in m über": `stemn 'Stimme', stemn 'Steven'` |
+| Fulk 2018, *A Comparative Grammar of the Early Germanic Languages*, §6.11 (p. 121) (+ n. 6) | `fulk_comparative_grammar_early_germanic.vision.txt` (`:7365`, `:7403`) | "In the cluster mn, the first consonant tends to lose its nasality by dissimilation... the reverse change (of bn to mn) is well attested in NWGmc"; "hardly regular"; stem/voice etymologies "rather insecure" |
+| Campbell 1959, *Old English Grammar*, §193.d (p. 75) n.4, §484 (p. 195), §328 (p. 135) | `campbell_old_english_grammar.txt` (`:5504`, `:12570`, `:15225`) | `fn > mn` as *sporadic West-Saxon* assimilation; explicitly `stemn stem (beside stefn)`; rejects Luick on the vowel |
+| Luick 1914–40, *Hist. Gramm.*, §75 Anm. 1 (p. 103); §186 (p. 171) | `luick_historische_grammatik.txt` (`:5988`, `:11332`, `:16996`) | "e vor jüngerem mn aus fn" (mn is younger, from fn); tentative `stemn Stamm aus *stofn` |
+| Brunner 1965 (Sievers–Brunner), *Altenglische Grammatik*, §193.2 (p. 156); §96 (p. 72) | `brunner_1965_altenglische_grammatik.vision.txt` (`:8044`, `:4016`) | WS "fn ... geht ... oft in mn über": `stemn Stimme, stemn Stamm ... für ... stefn` |
+| Bülbring 1902, *Altenglisches Elementarbuch*, §485 (p. 191) | `bulbring_altenglisches_elementarbuch.txt` (`:9012`) | WS "f vor n + Vokal in m über": `stemn 'Stimme', stemn 'Steven'` |
 | Ringe & Taylor 2014, vol. 2, p. 346 | `ringe_taylor_linguistic_history_vol2.txt` (`:18934`) | Voice chain `*stebno > *stebnu > OE stebn > stefn > stemn` |
 | Clark Hall 1960, *Concise A-S Dictionary*, pp. 276, 341 | `clark_hall_concise_anglo_saxon_dictionary.vision.txt` (`:38045`, `:38341`) | Lemmas: `stefn` I 'voice'; `stefn` III 'stem, trunk, prow/stern'; `stefna` 'prow/stern'; `stofn` 'trunk, stem, branch, shoot' |
 | Bosworth–Toller (+ Supp.) | `bosworth_toller_anglo_saxon_dictionary.vision.txt` | Attestations: prow compounds (`brand-stefn`, `bundenstefna`, `hringedstefna`, `forþ-stefna`); voice `stemne` dat.sg. abundant |
@@ -60,37 +60,37 @@ locator recovered), Pokorny IEW pages, Bright/Sweet readers.
 
 | Form | Gender / class | Morphological shape | Sense(s) | Status in the lexeme | Lexeme assignment | Source |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `stefn` (III) | m., strong (a-stem) | `stefn` (`fn`) | 'stem, trunk, root; prow/stern; foundation' | primary/base dictionary form for stem/prow | **A (stem/prow)** | Clark Hall p. 276; Campbell §484 |
-| `stemn` | m. (stem/prow); homonym also f. 'voice', m. 'period' | `stemn` (`mn`) | 'stem, trunk; prow' | variant beside `stefn`; WS assimilation and/or retained `mn` | **A**, but graphically shared with B/period | Campbell §484 ("stemn stem beside stefn"); Brunner §193.2 |
+| `stefn` (III) | m., strong (a-stem) | `stefn` (`fn`) | 'stem, trunk, root; prow/stern; foundation' | primary/base dictionary form for stem/prow | **A (stem/prow)** | Clark Hall p. 276; Campbell §484 (p. 195) |
+| `stemn` | m. (stem/prow); homonym also f. 'voice', m. 'period' | `stemn` (`mn`) | 'stem, trunk; prow' | variant beside `stefn`; WS assimilation and/or retained `mn` | **A**, but graphically shared with B/period | Campbell §484 (p. 195) ("stemn stem beside stefn"); Brunner §193.2 (p. 156) |
 | `stefna` | m., weak (n-stem) | `stefn` + `-a` | esp. nautical 'prow or stern of a ship' | related n-stem specialization | **A**, nautical sub-sense | Clark Hall p. 341; Orel p. 371 (OE `stefna`) |
 | `stofn` | mf. | `stofn` (`o`-vocalism, `fn`) | 'trunk, stem, branch, shoot'; (ON `stofn` 'stub') | related but distinct ablaut formation | **A**, but separate stem (`*stub-`) | Clark Hall p. 341; Kroonen 2011 p. 286 |
 
 Homonym control (do **not** use as evidence for A): `stefn`/`stemn` **f.**
-'voice, sound' (Clark Hall p. 276, Campbell §328/§484), and `stefn` **m.**
-'summons, turn, period' (Campbell §484). Attestations of dat.sg. `stemne`
+'voice, sound' (Clark Hall p. 276, Campbell §328 (p. 135)/§484 (p. 195)), and `stefn` **m.**
+'summons, turn, period' (Campbell §484 (p. 195)). Attestations of dat.sg. `stemne`
 'with a voice' are extremely common in Bosworth–Toller and are **category B**.
 
 ## 5. `stemn ~ stefn`: the central alternation
 
 **What the grammars explicitly say about `fn ~ mn` in OE — direction, environment, chronology:**
 
-- **Campbell §484** (`:12570`): in groups of consonant + liquid/nasal
+- **Campbell §484 (p. 195)** (`:12570`): in groups of consonant + liquid/nasal
   "assimilation is **sporadic**." Listed under **`fn > mn`**: "W-S `emn`
-  even, `hremn` raven (§193.d, footnote 4), and the homonyms `stemn` voice,
+  even, `hremn` raven (§193.d (p. 75), footnote 4), and the homonyms `stemn` voice,
   `stemn` period, `stemn` stem (beside `efn`, `hrefn`, `stefn`); nW-S only
   Ru. `stemn` voice (beside `stæfn`)." Direction: **`fn -> mn`**; dialect:
   **West-Saxon** (non-WS retains `fn`); status: **sporadic** assimilation.
-- **Luick §75 Anm. 1** (`:5988`): "e vor **jüngerem mn aus fn**: `emn`
+- **Luick §75 Anm. 1 (p. 103)** (`:5988`): "e vor **jüngerem mn aus fn**: `emn`
   'eben', `stemn` Stimme." Direction **`fn -> mn`**; the `mn` is explicitly
   "**younger**" (jünger).
-- **Brunner (Sievers–Brunner) §193.2** (`:8044`): WS, sometimes already
+- **Brunner (Sievers–Brunner) §193.2 (p. 156)** (`:8044`): WS, sometimes already
   early-WS, inlaut "**fn ... geht ... oft in mn über**": `emne`, `stemn`
   Stimme, `stemn` Stamm, `hremn` "für `efn`, `stefn`, `stefn`, `hræfn`;"
   later even `mm`/`m`. Direction **`fn -> mn`**; WS.
-- **Bülbring §485** (`:9012`): "Im Ws. geht **f vor n + Vokal in m über**":
+- **Bülbring §485 (p. 191)** (`:9012`): "Im Ws. geht **f vor n + Vokal in m über**":
   `emne`, `hræmn/hremn`, `stemn` 'Stimme', `stemn` 'Steven'. Direction
   **`fn -> mn`**; WS; conditioned by a following vowel (inflected forms).
-- **Fulk §6.14** (`:7365`): primary tendency is **`mn -> bn`** ("the first
+- **Fulk §6.11 (p. 121)** (`:7365`): primary tendency is **`mn -> bn`** ("the first
   consonant tends to lose its nasality by dissimilation"), but "the
   **reverse change (of bn to mn) is well attested in NWGmc**," and "the
   results are **hardly regular**." Footnote 6 (`:7403`): the `stefn ~ stemn`
@@ -100,7 +100,7 @@ Homonym control (do **not** use as evidence for A): `stefn`/`stemn` **f.**
 Within Old English the four grammars agree: **`stefn` (fn) is the base and
 `stemn` (mn) is the later, sporadic West-Saxon product** of `fn -> mn`. There
 is **no** OE grammarian who derives `stefn` from an OE `stemn`. The one
-recorded disagreement (Campbell §193.d n. 4 vs Luick §186, `:5504`) concerns
+recorded disagreement (Campbell §193.d (p. 75) n. 4 vs Luick §186 (p. 171), `:5504`) concerns
 only the **vowel** (`e`) of `stemn/hremn`, not the consonant direction:
 Campbell objects to Luick treating the `e` as an æ-mutation product
 conditioned by `mn`, "as the forms `stefn`, `hrefn` are common" (i.e. `mn` is
@@ -137,7 +137,7 @@ earlier development:
   then, explicitly for our word: **"OE `stefn : stemn` 'prow', as compared
   with ON `stafn` versus OS `stamn`."** He treats `stefn ~ stemn` as an
   inherited **doublet** from the `-m- ~ -b-` alternation, leveled differently.
-- **Fulk §6.14** (`:7365`): same primary tendency, `mn -> bn` (m loses
+- **Fulk §6.11 (p. 121)** (`:7365`): same primary tendency, `mn -> bn` (m loses
   nasality), citing `heofon`/`heban`; "hardly regular."
 - **Kroonen 2011, p. 183** (`:8286`): OE `stefn` (voice), `he(o)fen`
   'heaven', `levene` 'lightning' all continue `*-mn-` with **"vocalization of
@@ -214,7 +214,7 @@ view and is not adopted here.
 | PGmc (citation) | `*stamnaz ~ *stamniz` | `mn` | `a` | masc. a-/i-stem | stem, trunk, prow | Orel p. 371 |
 | PGmc (alt., Torp) | `*stabnaz` (`*stab-`) | `bn` | `a` | to 'staff/post' | (would explain `f`) | Orel p. 371; Polomé n. 2 |
 | Old English | `stefn` III | `fn` | `e` | m. a-stem | stem, trunk, prow | Clark Hall p. 276 |
-| Old English | `stemn` | `mn` | `e` | m. (WS variant) | stem, trunk | Campbell §484 |
+| Old English | `stemn` | `mn` | `e` | m. (WS variant) | stem, trunk | Campbell §484 (p. 195) |
 | Old English | `stefna` | `fn` | `e` | m. n-stem | prow/stern (naut.) | Clark Hall p. 341 |
 | Old English | `stofn` | `fn` | `o` (< `*u`) | mf. (`*stubna-`) | trunk, stump, shoot | Kroonen 2011 p. 286 |
 | Old Saxon | `stamn` | `mn` | `a` | — | stem | Orel p. 371; Polomé |
@@ -240,7 +240,7 @@ A targeted (non-exhaustive) check of Bosworth–Toller and Campbell:
 - **Stem/prow sense (A)**: nautical compounds cluster in verse
   (`bundenstefna`, `hringedstefna`, `wundenstefna` in *Beowulf* etc.) with the
   `stefna` n-stem; prose `forþ-stefn(a)` 'prow'.
-- **Dialect**: Campbell §484 states `stemn` (mn) is essentially **West-Saxon**;
+- **Dialect**: Campbell §484 (p. 195) states `stemn` (mn) is essentially **West-Saxon**;
   non-WS (Ru.¹/Anglian) shows `stefn/stæfn`.
 
 **Judgment.** The consonant distribution is **PROBABLE** dialectal (WS `mn` vs
@@ -255,7 +255,7 @@ verse-bound nautical compounds prevent a clean count).
   Kroonen EDPG p. 480), Go. `stibna`, OE `stefn/stemn`, OFris `stifne/stemme`,
   OS `stemna`, OHG `stimna/stimma`. Etymologically **distinct** from
   `*stamn-` 'stem'.
-- **The same OE `fn -> mn`** applies to it: Campbell §484 lists `stemn` voice
+- **The same OE `fn -> mn`** applies to it: Campbell §484 (p. 195) lists `stemn` voice
   beside `stefn`; Ringe–Taylor p. 346 give `... OE stebn > stefn > stemn`.
 - Its `f` has the same deep source: `-mn- > -bn-` before the labial (Polomé;
   Kroonen EDPG p. 480 "before the change `*-mn- > *-bn-`").
@@ -280,7 +280,9 @@ define PNWGmcMnDissimilation [
 
 Its structural description requires **intervocalic `*m`** (`V _ V ... N`),
 i.e. the `-mVn-` environment of `*xemonų -> heofon` (row 2068; comment at
-`germanic.txt:2141-2153`; sources cited there: Fulk §6.14, Kluge–Seebold s.v.
+`germanic.txt:2141-2153`; sources cited there: Fulk §6.14 (the germanic.txt
+comment's section label; the quoted passage is actually §6.11, p. 121),
+Kluge–Seebold s.v.
 Himmel). In `*stámniz` the `m` is **immediately followed by `n`** (a true
 `-mn-` coda cluster), so the left/right contexts are not met and the rule
 correctly does **not** fire.
@@ -304,7 +306,7 @@ Therefore `PNWGmcMnDissimilation` must remain scoped to the intervocalic
 
 ## 14. Chronology
 
-- **Proto-Indo-European**: `*-Cmn- > *-Cn-` after labial roots (Kroonen 2006)
+- **Proto-Indo-European**: `*-Cmn- > *-Cn-` after labial roots (Kroonen 2006: 17–18)
   — feeds Kluge's-law gemination in *other* words (bottom, rime); marginal to
   this lexeme.
 - **Common/Northwest Germanic**: `-mn- > -bn-` (Polomé, Fulk) — the source of
@@ -341,10 +343,10 @@ claim it as the exclusive history of every `stemn`.
   `*stamnaz ~ *stamniz` (Orel p. 371), distinct from the voice etymon
   `*stebnō/*stimno-` (Orel p. 373; Kroonen EDPG p. 480).
 - **ESTABLISHED**: OE has a real **`fn -> mn`** development — West-Saxon,
-  sporadic/late, etymology-independent (Campbell §484; Luick §75; Brunner
-  §193.2; Bülbring §485).
+  sporadic/late, etymology-independent (Campbell §484 (p. 195); Luick §75 (p. 103); Brunner
+  §193.2 (p. 156); Bülbring §485 (p. 191)).
 - **ESTABLISHED**: The `f`-forms' labial ultimately reflects a Germanic
-  **`-mn- > -bn-`** tendency (Polomé pp. 818–819; Fulk §6.14; Kroonen).
+  **`-mn- > -bn-`** tendency (Polomé pp. 818–819; Fulk §6.11 (p. 121); Kroonen).
 - **ESTABLISHED**: `stefna` is a **weak n-stem** specialized to nautical
   'prow/stern'; `stofn` is a **distinct `*stubna-`** formation.
 - **ESTABLISHED**: CAPR's `*stámniz -> stemn` is one valid route (retained
@@ -370,7 +372,7 @@ claim it as the exclusive history of every `stemn`.
    variant `*stamniz`; it is the input that regularly yields an attested OE
    form; nothing in the variation research weakens it.
 3. **Select `stemn` as `COUNTERPART`?** **Yes** — `stemn` is attested for the
-   stem lexeme (Campbell §484) and is the unique regular CAPR output of
+   stem lexeme (Campbell §484 (p. 195)) and is the unique regular CAPR output of
    `*stámniz`; it is a defensible *selected* comparator even though it is
    historically overdetermined.
 4. **Add an `mn -> fn` rule?** **No** — no source posits a productive OE
@@ -397,8 +399,8 @@ claim it as the exclusive history of every `stemn`.
 > Attested variants `stefn` (m., stem/prow), `stefna` (weak n-stem, nautical
 > 'prow/stern'), `stofn` (mf., `*stubna-`, 'trunk/stump') are comparison forms,
 > not modeled outputs. The `f` of `stefn`/ON `stafn` reflects the pre-OE
-> Germanic `-mn- > -bn-(> fn)` tendency (Polomé 1967; Fulk §6.14); OE also has
-> a sporadic West-Saxon `fn -> mn` (Campbell §484) that independently yields
+> Germanic `-mn- > -bn-(> fn)` tendency (Polomé 1967; Fulk §6.11 (p. 121)); OE also has
+> a sporadic West-Saxon `fn -> mn` (Campbell §484 (p. 195)) that independently yields
 > `stemn`, so attested `stemn` is historically overdetermined. Distinct from
 > the voice homonym `stefn/stemn` < `*stebnō/*stimnō-`. No new sound law added;
 > `PNWGmcMnDissimilation` (intervocalic `heofon`-type) is not broadened.
@@ -415,8 +417,8 @@ claim it as the exclusive history of every `stemn`.
   `Stamm` in the comparative note.
 - **Historically understood processes**: state the Germanic `-mn- > -bn-`
   origin of the `f`, and the sporadic West-Saxon `fn -> mn`, each with page-
-  numbered citations (Polomé 1967:818–819; Fulk §6.14; Campbell §484;
-  Luick §75; Brunner §193.2; Bülbring §485).
+  numbered citations (Polomé 1967:818–819; Fulk §6.11 (p. 121); Campbell §484 (p. 195);
+  Luick §75 (p. 103); Brunner §193.2 (p. 156); Bülbring §485 (p. 191)).
 - **Unresolved variation**: note the overdetermination of `stemn` and the
   Torp `*stab-` alternative for the `f`-forms; do not adjudicate them.
 - **Explicitly unmodeled**: CAPR does not model `mn ↔ fn` for this word and
@@ -443,15 +445,15 @@ claim it as the exclusive history of every `stemn`.
 - Polomé, E. C. (1967). "Notes on the Reflexes of IE /ms/ in Germanic."
   *RBPh* 45.3. pp. 818–819. [`polome_1967_reflexes_ie_ms.txt:867`]
 - Fulk, R. D. (2018). *A Comparative Grammar of the Early Germanic Languages*.
-  Amsterdam: Benjamins. §6.14 and n. 6.
+  Amsterdam: Benjamins. §6.11 (p. 121) and n. 6.
   [`fulk_comparative_grammar_early_germanic.vision.txt:7365, :7403`]
-- Campbell, A. (1959). *Old English Grammar*. Oxford. §§193.d n. 4, 484, 328.
+- Campbell, A. (1959). *Old English Grammar*. Oxford. §193.d (p. 75) n. 4, §484 (p. 195), §328 (p. 135).
   [`campbell_old_english_grammar.txt:5504, :12570, :15225`]
 - Luick, K. (1914–40). *Historische Grammatik der englischen Sprache*.
-  §75 Anm. 1; §186. [`luick_historische_grammatik.txt:5988, :11332, :16996`]
-- Brunner, K. (1965). *Altenglische Grammatik* (Sievers–Brunner). §193.2;
-  §201. [`brunner_1965_altenglische_grammatik.vision.txt:8044, :4016`]
-- Bülbring, K. D. (1902). *Altenglisches Elementarbuch*. §485.
+  §75 Anm. 1 (p. 103); §186 (p. 171). [`luick_historische_grammatik.txt:5988, :11332, :16996`]
+- Brunner, K. (1965). *Altenglische Grammatik* (Sievers–Brunner). §193.2 (p. 156);
+  §96 (p. 72). [`brunner_1965_altenglische_grammatik.vision.txt:8044, :4016`]
+- Bülbring, K. D. (1902). *Altenglisches Elementarbuch*. §485 (p. 191).
   [`bulbring_altenglisches_elementarbuch.txt:9012`]
 - Ringe, D. & Taylor, A. (2014). *The Development of Old English* (A Linguistic
   History of English, vol. 2). Oxford. p. 346.
