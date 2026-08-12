@@ -2655,20 +2655,6 @@ define OEUnstressedEIContraction [
 # NOTE: Use separate symbols {*e} {*o} not multichar {*eo} for proper pipeline handling.
 # NOTE: Context must NOT be optional — [X | Y] not (X | Y).
 
-# OE/OS m → f dissimilation before syllable containing n (K-S s.v. Himmel):
-# "ae. heofon, as. heban das m dissimilatorisch zu v weiterentwickelt haben"
-# Campbell OEG §381: "heofon is for older hefzen (CH)"
-# The dissimilation happens when *m precedes a syllable with *n:
-# *hemunaz → *hefunaz → heofon (with back umlaut)
-# Context: *m + vowel + n (i.e., m in one syllable, n in the next)
-# IMPORTANT: This does NOT apply when:
-# - the n is geminate (*nn) — e.g., *mannaz → mann
-# - the m is part of a geminate (*mm) — e.g., *swimmanan → swimman
-# - the m is word-initial — only applies to medial m
-define OENasalDissimilation [
-    {*m} -> {*f} || EnglishStarShortVowel _ EnglishStarShortVowel {*n} [EnglishStarShortVowel | .#.]
-];
-
 define OEBackMutation [
     {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
     {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
@@ -3236,7 +3222,6 @@ define EnglishProtoToOE (
     .o. OEIUmlaut
     .o. OEWsPalatalDiphthongization
     .o. OEJClusterCoalescence
-    .o. OENasalDissimilation
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
     # NSL moved earlier in pipeline (NWGmc stage, before i-umlaut) — see lines 1945-1946
@@ -3368,7 +3353,6 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OEJClusterCoalescence
-    .o. OENasalDissimilation
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
     # NSL moved earlier in pipeline (NWGmc stage)

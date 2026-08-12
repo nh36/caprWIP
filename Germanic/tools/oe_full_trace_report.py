@@ -102,7 +102,6 @@ STAGES: List[Tuple[str, str]] = [
     ("OEIUmlaut", "old_english_sandbox_after_oe_i_umlaut.bin"),
     ("OEWsPalatalDiphthongization", "old_english_sandbox_after_oe_ws_palatal_diphthongization.bin"),
     ("OEJClusterCoalescence", "old_english_sandbox_after_oe_j_cluster_coalescence.bin"),
-    ("OENasalDissimilation", "old_english_sandbox_after_oe_nasal_dissimilation.bin"),
     ("OEBackMutation", "old_english_sandbox_after_oe_back_mutation.bin"),
     ("OEWsPalatalUmlaut", "old_english_sandbox_after_oe_ws_palatal_umlaut.bin"),
     ("OEWeakTailNasalLoss", "old_english_sandbox_after_oe_weak_tail_nasal_loss.bin"),

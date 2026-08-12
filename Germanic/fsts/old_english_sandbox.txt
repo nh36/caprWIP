@@ -148,9 +148,7 @@ define SOEWsPalatalDiphthongization SOEIUmlaut
     .o. OEWsPalatalDiphthongization;
 define SOEJClusterCoalescence SOEWsPalatalDiphthongization
     .o. OEJClusterCoalescence;
-define SOENasalDissimilation SOEJClusterCoalescence
-    .o. OENasalDissimilation;
-define SOEBackMutation SOENasalDissimilation
+define SOEBackMutation SOEJClusterCoalescence
     .o. OEBackMutation;
 define SOEWsPalatalUmlaut SOEBackMutation
     .o. OEWsPalatalUmlaut;
@@ -471,10 +469,6 @@ save stack old_english_sandbox_after_oe_ws_palatal_diphthongization.bin
 clear stack
 regex SOEJClusterCoalescence;
 save stack old_english_sandbox_after_oe_j_cluster_coalescence.bin
-
-clear stack
-regex SOENasalDissimilation;
-save stack old_english_sandbox_after_oe_nasal_dissimilation.bin
 
 clear stack
 regex SOEBackMutation;
