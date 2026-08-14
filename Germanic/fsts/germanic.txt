@@ -2143,13 +2143,20 @@ define PNWGmcUnstressedORaising [
     {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
 ];
 
-# NWGmc mn-dissimilation (Fulk §6.14, K-S s.v. Himmel)
-# When two nasals appear in successive syllables, the first loses nasality.
-# PGmc *hemonų → NWGmc *hebonų → (later) OE heofon.
-# The output is *β (voiced bilabial fricative), which becomes OE f intervocalically.
-# Environment: V_VCn where C is any consonant(s) and n is a nasal.
+# NWGmc mn-dissimilation (Fulk §6.14, K-S s.v. Himmel; Ringe–Taylor vol.2 p.272)
+# Historical adjacent-cluster change: *m dissimilates to *β immediately before *n
+# in the inherited zero-grade oblique cluster -mn-. Attested comparatively (ON
+# himinn : hifni; OE/OS obliques; stem/prow *stamn- : stefn). The output is *β
+# (voiced bilabial fricative), which becomes OE f/b intervocalically.
+# Environment: strictly adjacent  V _ {*n}  (an *m directly before *n).
+# NOTE (stage label vs claim): the FST stage name is descriptive; the precise
+# dialectal dating of the change is discussed in the SC022/heaven dossiers.
+# Paradigm levelling of the resulting labial into vowel-bearing stems is analogy,
+# NOT a sound law, and is deliberately left outside this rule (see
+# dossier-heaven-paradigm-history-2026.md §15; the old cross-syllable *mV…n
+# proxy has been retired).
 define PNWGmcMnDissimilation [
-    {*m} -> {*β} || EnglishStarVocalic _ EnglishStarVocalic EnglishStarConsonant* EnglishStarNasal
+    {*m} -> {*β} || EnglishStarVocalic _ {*n}
 ];
 
 # R/T vol.2 §5.1.2: PGmc *ē₁ → OE ǣ. Historically *ē₁ lowered to *ā in NWGmc,
@@ -3120,7 +3127,7 @@ define EnglishProtoToOE (
     # lowers *-u → *-o. See DEV_NOTES §17.10.25.
     .o. EAFFinalZDeletion
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
-    .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
+    .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
     .o. PNWGmcLongELowering
     .o. PNWGmcLongENasalRounding
@@ -3311,7 +3318,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
-    .o. PNWGmcMnDissimilation     # *m → *β before nasal in next syllable (Fulk §6.14)
+    .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
     .o. PNWGmcLongELowering
     .o. PNWGmcLongENasalRounding

@@ -12821,6 +12821,14 @@ D. **Further research** — search for specialist literature on Germanic tree na
 
 ## OE heofon 'heaven': Back Umlaut and Medial Syncope (2026-03-20)
 
+> **SUPERSEDED (2026-08-14).** The analysis below (and any implication that
+> `*xémonų -> heofon` or `*xeβun -> heofon` is derived by a cross-syllable
+> `mV…n` sound law) is retained only as a research-path record. Row 2068 is now
+> PROTOFORM `*xébun`, COUNTERPART `heofon`, class `early_analogy`, and SC022 is
+> the literal adjacent `mn > βn`. The former `mV…n` proxy has been retired. See
+> `dossier-heaven-paradigm-history-2026.md` §§13–15 and
+> `audits/heaven-sc022-implementation-2026.md`.
+
 ### The Mismatch
 
 TSV row 2068:
