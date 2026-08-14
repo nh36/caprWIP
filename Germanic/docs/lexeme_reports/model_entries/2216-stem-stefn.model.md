@@ -1,9 +1,9 @@
 # stem — OE stefn
 
 PROTO: *stámnaz
-PROTOFORM: *stámnaz
+PROTOFORM: *stámniz
 COUNTERPART: stefn
-DERIVATION_CLASS: known_unmodelled
+DERIVATION_CLASS: early_analogy
 
 ### Transducer input and output
 
@@ -11,10 +11,10 @@ DERIVATION_CLASS: known_unmodelled
 | :--- | :--- |
 | lexical item | stem, trunk, prow |
 | citation reconstruction / lexeme label | *stámnaz |
-| selected input form | *stámnaz (OE-facing transponent pending; see Development note) |
+| selected input form | *stámniz (Orel's i-stem variant; citation reconstruction *stámnaz) |
 | Old English target | stefn |
-| classification | known_unmodelled |
-| documented output | *stámnaz -> stefn (via pre-OE cluster change, not yet modeled in FST) |
+| classification | early_analogy |
+| documented output | *stámniz -> stefn (multiplicity 1, exact match) |
 
 ### Reconstruction and comparative evidence
 
@@ -55,24 +55,41 @@ relevant to English `stem`. The n-stem [`stefna`]{.iv lang=oe sort=stefna role=c
 ### Development to Old English
 
 The derivation of OE [`stefn`]{.iv lang=oe sort=stefn role=comparison_form} 'stem, trunk'
-from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk'
-involves a cluster change `mn → fn` that is attested comparatively: Old Norse
-[`stafn`]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship' and Old Saxon
-[`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' preserve the `fn`/`mn` variants
-expected from this family. The precise phonological dating and domain of this change —
-whether it belongs to a North-West Germanic stage, an early West Germanic stage, or is
-reconstructed separately in each branch — is not definitively resolved by the cited
-scholarship. The handbooks treat it as a pre-Old-English development (Luick §211;
-Brunner §205), but the term "North-West Germanic coda dissimilation" should be taken
-as descriptive rather than technically established. This coda environment
-(`[C]mn → [C]fn`) is distinct from the cross-syllable `m → β` change (as in
-[xémonų]{.recon} 'heaven' → [`heofon`]{.iv lang=oe sort=heofon role=comparison_form} 'heaven') handled by the `PNWGmcMnDissimilation` rule;
-it is currently not modeled in the FST.
+from the i-stem input [stámniz]{.recon .iv lang=pgmc sort=stamniz role=source_protoform} 'stem, trunk'
+(Orel's attested i-stem variant; the citation reconstruction remains
+[stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform}) is now **regular and
+modelled**, with multiplicity 1. Live trace under the corrected literal
+adjacent-`mn` SC022:
 
-The correct OE-facing transponent has not yet been established for the FST pipeline.
-The classification `known_unmodelled` reflects that the derivation involves a historically
-real development not yet represented in the FST cascade. The derivation is attested
-comparatively; the FST work remains to be done.
+| step | form |
+| :--- | :--- |
+| proto input | `*stámniz` |
+| EAF Final Z Deletion | `*stámni` |
+| PNWGmc Mn Dissimilation (adjacent mn > βn) | `*stáβni` |
+| EAF Brightening (á > æ) | `*stæβni` |
+| OE i-Umlaut (æ > e, from the i-stem ending) | `*steβni` |
+| OE High Vowel Apocope | `*steβn` |
+| Old English Orthography (β > f) | `stefn` |
+
+The consonantal change `mn → βn/fn` is attested comparatively: Old Norse
+[`stafn`]{.iv lang=on sort=stafn role=comparison_form} 'stem of a ship' and Old Saxon
+[`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' preserve the `fn`/`mn`
+variants expected from this family. The handbooks treat the change as a pre-Old-English
+development (Luick §211; Brunner §205), and the FST now encodes it as the historical
+**adjacent** `mn > βn` (the rule `PNWGmcMnDissimilation` / SC022). The `e` of `stefn`
+is regular from `á` via brightening (`á > æ`) plus i-umlaut triggered by the i-stem
+ending (`æ > e`), so both the vowel and the consonant follow by regular sound change
+once the i-stem input is selected.
+
+This is the **same** rule and the same historical change that supplies the labial in
+*heaven* (`*xébun -> heofon`): the earlier cross-syllable `mV…n` proxy — which had
+formerly fabricated a labial from an intervocalic *m* — has been **retired** in favour
+of this literal adjacent `mn > βn` (see `dossier-heaven-paradigm-history-2026.md` §15
+and `audits/heaven-sc022-implementation-2026.md`). Selecting the i-stem input
+`*stámniz` over the a-stem citation `*stámnaz` is a **pre-OE input selection**; once
+selected, the Old English development is regular. Hence the classification
+`early_analogy` (analogy separates the input from the citation reconstruction before
+the specifically Old English changes apply), not `known_unmodelled`.
 
 ### Homonym note
 
@@ -87,7 +104,8 @@ The selected input `*stébnō` used in earlier versions of this entry was the wr
 
 | Form or label | Status | OE relation | Result |
 | :--- | :--- | :--- | :--- |
-| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
+| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk' | Orel's PGmc a-stem citation for the stem/trunk/prow family | lexeme-level citation | retained as PROTO (citation) |
+| [stámniz]{.recon .iv lang=pgmc sort=stamniz role=source_protoform} 'stem, trunk' | Orel's attested i-stem variant | **selected derivational input** | regular OE output `stefn` (mult 1) |
 | [`stefn`]{.iv lang=oe sort=stefn role=target_form} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
 | [`stefna`]{.iv lang=oe sort=stefna role=comparison_form} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
 | [`stofn`]{.iv lang=oe sort=stofn role=comparison_form} 'trunk' | OE `o`-grade variant or earlier stage | trunk/stem sense | comparison form |

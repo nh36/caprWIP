@@ -22,3 +22,50 @@
 - Unresolved but non-blocking: whether `stemn` is best understood as a secondary doublet beside `stefn/stefna/stofn`, and how the stem-side variants should be narrated in later prose.
 
 Recommendation: **PROCEED TO TSV CORRECTION**.
+
+## Implementation update (2026-08-14): superseded target under the corrected cascade
+
+The gate above was written against the **old** cascade, under which
+`*stámniz -> stemn` (multiplicity 1) and the recommendation was
+`COUNTERPART = stemn`. That recommendation is now **superseded** by the
+implementation of the literal adjacent-`mn` SC022 (the same rule change that
+retires the `mV…n` heaven proxy; see `dossier-heaven-paradigm-history-2026.md`
+§15 and `audits/heaven-sc022-implementation-2026.md`).
+
+Under the **corrected** cascade the i-stem input now derives the primary
+stem/trunk form directly, multiplicity 1:
+
+```text
+*stámniz
+  EAF Final Z Deletion:    *stámni
+  PNWGmc Mn Dissimilation: *stáβni   ← adjacent mn > βn (SC022)
+  EAF Brightening:         *stæβni
+  OE i-Umlaut:             *steβni   ← æ > e (i-stem ending)
+  OE High Vowel Apocope:   *steβn
+  Orthography:             stefn
+```
+
+Implemented row 2216 fields:
+
+```text
+PROTO             *stámnaz     (a-stem citation, retained)
+PROTOFORM         *stámniz     (Orel's attested i-stem variant, selected input)
+COUNTERPART       stefn        (attested stem/trunk/prow form; Clark Hall stefn III)
+DERIVATION_CLASS  early_analogy
+```
+
+Notes:
+
+- `stefn` and `stemn` are both attested stem/trunk forms (Clark Hall; Luick §211;
+  Brunner §205). The corrected cascade yields `stefn` (the primary form and the
+  existing COUNTERPART), so the earlier `stemn` target is no longer needed.
+- The homonym distinction is unchanged and must be preserved: this row is the
+  stem/trunk/prow word (< `*stámnaz ~ *stámniz`, Orel 2003:371), **not** the
+  voice/sound homonym (< `*stebnō ~ *stemnō`, Orel 2003:373; Ringe–Taylor vol. 2
+  p. 346). The earlier `*stébnō` PROTOFORM belonged to the wrong homonym and is
+  not used.
+- Class is `early_analogy`: selecting the i-stem input over the a-stem citation
+  is a pre-OE input selection; the Old English development is then regular.
+
+Revised recommendation: **IMPLEMENTED** (PROTOFORM `*stámniz`, COUNTERPART
+`stefn`, class `early_analogy`).
