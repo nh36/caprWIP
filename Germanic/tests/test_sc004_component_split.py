@@ -40,7 +40,9 @@ COMPONENT_REPORT = ORDER_TESTS / "sc004_component_application_report.tsv"
 SUMMARY_JSON = SC_DIR / "cascade_baseline/cascade_baseline_summary.json"
 FST_SOURCE = REPO_ROOT / "Germanic/fsts/germanic.txt"
 
-FROZEN_OUTPUTS_SHA = "aaf19ba919cafbe86ea59d482ce74d0944f541336e246da481a3f37b20da480e"
+# Re-frozen 2026-08-14 after the deliberate SC022 literal adjacent-mn correction
+# (heaven -> *xébun, stem -> *stámniz; see audits/heaven-sc022-implementation-2026.md).
+FROZEN_OUTPUTS_SHA = "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc"
 
 
 def _read_tsv(path: Path) -> list[dict[str, str]]:
@@ -175,8 +177,8 @@ class ProductionCascadeTests(unittest.TestCase):
     def test_frozen_outputs_preserved(self):
         summary = json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
         self.assertEqual(summary["outputs_sha256"], FROZEN_OUTPUTS_SHA)
-        self.assertEqual(summary["matched"], 372)
-        self.assertEqual(summary["mismatched"], 8)
+        self.assertEqual(summary["matched"], 373)
+        self.assertEqual(summary["mismatched"], 7)
 
     def test_sc014_body_is_unrestricted_unstressed_ai(self):
         m = re.search(

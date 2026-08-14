@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""Focused regression for the SC022 literal adjacent-`mn` correction (2026-08).
+
+These host-runnable tests protect the scientific consequences of retiring the
+old cross-syllable `mV…n` proxy in `PNWGmcMnDissimilation` and making SC022 the
+literal adjacent `mn > βn`, together with the two data rows that the correction
+enables/repairs:
+
+  * row 2068 (heaven): PROTOFORM `*xébun`  -> `heofon`  (early_analogy)
+  * row 2216 (stem):   PROTOFORM `*stámniz` -> `stefn`   (early_analogy)
+
+They assert against the committed rule source, the authoritative TSV rows, and
+the frozen cascade baseline (the reproducibility contract), so no foma/flookup
+or Docker is required. The live-cascade behaviour that produced these artifacts
+(e.g. `*xémnas -> hefnes`, `*xémnum -> hefnum`, `*xémonų -> heomon`,
+`*sébun -> seofon`) is recorded in the implementation audit
+`Germanic/docs/audits/heaven-sc022-implementation-2026.md`.
+
+Run: cd Germanic/tests && python3 -m unittest test_sc022_mn_dissimilation
+"""
+from __future__ import annotations
+
+import csv
+import json
+import re
+import unittest
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+GERMANIC = REPO_ROOT / "Germanic"
+FST_SOURCE = GERMANIC / "fsts" / "germanic.txt"
+TSV = GERMANIC / "data" / "germanic-aligned-final.tsv"
+BASELINE = GERMANIC / "docs" / "sound_changes" / "cascade_baseline" / "cascade_baseline_outputs.tsv"
+
+
+def _tsv_row(row_id: str) -> dict[str, str]:
+    with TSV.open(encoding="utf-8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            if row["ID"] == row_id:
+                return row
+    raise AssertionError(f"row {row_id} not found in {TSV}")
+
+
+def _baseline_by_concept() -> dict[str, dict[str, str]]:
+    with BASELINE.open(encoding="utf-8") as handle:
+        return {row["concept"]: row for row in csv.DictReader(handle, delimiter="\t")}
+
+
+class SC022RuleBodyTests(unittest.TestCase):
+    def setUp(self):
+        self.text = FST_SOURCE.read_text(encoding="utf-8")
+
+    def test_rule_is_literal_adjacent_mn(self):
+        match = re.search(
+            r"define PNWGmcMnDissimilation \[\s*(.*?)\s*\];", self.text, re.S
+        )
+        self.assertIsNotNone(match, "PNWGmcMnDissimilation definition not found")
+        body = " ".join(match.group(1).split())
+        self.assertEqual(
+            body,
+            "{*m} -> {*β} || EnglishStarVocalic _ {*n}",
+            "SC022 must be the literal adjacent mn > β rule",
+        )
+
+    def test_cross_syllable_proxy_is_gone(self):
+        self.assertNotIn(
+            "EnglishStarVocalic _ EnglishStarVocalic EnglishStarConsonant* EnglishStarNasal",
+            self.text,
+            "the old mV…n proxy environment must not remain in germanic.txt",
+        )
+
+
+class HeavenRowTests(unittest.TestCase):
+    def test_tsv_row_2068(self):
+        row = _tsv_row("2068")
+        self.assertEqual(row["PROTOFORM"], "*xébun")
+        self.assertEqual(row["COUNTERPART"], "heofon")
+        self.assertEqual(row["DERIVATION_CLASS"], "early_analogy")
+        self.assertEqual(row["PROTO"], "*xémenaz")
+
+    def test_baseline_heaven_matches_via_new_input(self):
+        heaven = _baseline_by_concept()["heaven"]
+        self.assertEqual(heaven["proto"], "*xébun")
+        self.assertEqual(heaven["outputs"], "heofon")
+        self.assertEqual(heaven["output_count"], "1")
+        self.assertEqual(heaven["match"], "1")
+
+    def test_old_proxy_input_is_retired(self):
+        self.assertNotEqual(
+            _baseline_by_concept().get("heaven", {}).get("proto"), "*xémonų"
+        )
+        with TSV.open(encoding="utf-8") as handle:
+            for row in csv.DictReader(handle, delimiter="\t"):
+                self.assertNotEqual(
+                    row["PROTOFORM"], "*xémonų",
+                    "the retired *xémonų proxy input must not remain in the TSV",
+                )
+
+
+class StemRowTests(unittest.TestCase):
+    def test_tsv_row_2216(self):
+        row = _tsv_row("2216")
+        self.assertEqual(row["PROTOFORM"], "*stámniz")
+        self.assertEqual(row["COUNTERPART"], "stefn")
+        self.assertEqual(row["DERIVATION_CLASS"], "early_analogy")
+        self.assertEqual(row["PROTO"], "*stámnaz")
+
+    def test_baseline_stem_now_matches(self):
+        stem = _baseline_by_concept()["stem"]
+        self.assertEqual(stem["proto"], "*stámniz")
+        self.assertEqual(stem["outputs"], "stefn")
+        self.assertEqual(stem["output_count"], "1")
+        self.assertEqual(stem["match"], "1")
+
+
+class SevenControlTests(unittest.TestCase):
+    def test_seven_regular_unchanged(self):
+        seven = _baseline_by_concept()["seven"]
+        self.assertEqual(seven["proto"], "*sébun")
+        self.assertEqual(seven["outputs"], "seofon")
+        self.assertEqual(seven["match"], "1")
+
+
+class CorpusTotalsTests(unittest.TestCase):
+    def test_summary_totals(self):
+        summary = json.loads(
+            (BASELINE.parent / "cascade_baseline_summary.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(summary["total_lexemes"], 380)
+        self.assertEqual(summary["accepted"], 380)
+        self.assertEqual(summary["matched"], 373)
+        self.assertEqual(summary["mismatched"], 7)
+        self.assertEqual(summary["ambiguous_outputs"], 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

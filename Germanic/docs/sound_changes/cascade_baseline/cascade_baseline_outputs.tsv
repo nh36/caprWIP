@@ -229,7 +229,7 @@ strew	*stráwjaną	stráwjaną	strīeġan	1	1	1	strīeġan
 straw	*stráwą	stráwą	strēaw	1	1	1	strēaw
 staff	*stábaz	stábaz	stæf	1	1	1	stæf
 stone	*stáinaz	stáinaz	stān	1	1	1	stān
-stem	*stámnaz	stámnaz	stefn	1	1	0	stamn
+stem	*stámniz	stámniz	stefn	1	1	1	stefn
 steal	*stélaną	stélaną	stelan	1	1	1	stelan
 still	*stéllijaną	stéllijaną	stillan	1	1	1	stillan
 starve	*stérbaną	stérbaną	steorfan	1	1	1	steorfan
@@ -344,10 +344,10 @@ hazel	*xáslaz	xáslaz	hæsl	1	1	1	hæsl
 head	*xáubudą	xáubudą	hēafod	1	1	1	hēafod
 hew	*xáwwaną	xáwwaną	hēawan	1	1	1	hēawan
 hay	*xáwwją	xáwwją	hīeġ	1	1	1	hīeġ
+heaven	*xébun	xébun	heofon	1	1	1	heofon
 helm	*xélmaz	xélmaz	helm	1	1	1	helm
 help	*xélpaną	xélpaną	helpan	1	1	1	helpan
 help	*xélpō	xélpō	help	1	1	1	help
-heaven	*xémonų	xémonų	heofon	1	1	1	heofon
 hind	*xéndjō	xéndjō	hind	1	1	1	hind
 herd	*xérdō	xérdō	heord	1	1	1	heord
 heart	*xértōn	xértōn	heorte	1	1	1	heorte

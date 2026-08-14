@@ -139,3 +139,76 @@ define PNWGmcMnDissimilation [
 
 Predicted post-change corpus (to **verify**, not target): 380 / 373 / 7 / 0;
 mismatch set `{buck, fire, fowl, rust, tap, wolf, wool}`.
+
+---
+
+## 7. After-state (implemented 2026-08-14)
+
+**SC022 rule body — now literal adjacent `mn > βn`:**
+
+```foma
+define PNWGmcMnDissimilation [
+    {*m} -> {*β} || EnglishStarVocalic _ {*n}
+];
+```
+
+**Live probes (corrected cascade, verified in-container), multiplicity 1 each:**
+
+| input | output | note |
+| :-- | :-- | :-- |
+| `*xébun` | `heofon` | new selected heaven input (row 2068) — MATCH |
+| `*stámniz` | `stefn` | i-stem stem input (row 2216) — MATCH |
+| `*xémnas` | `hefnes` | positive adjacent-`mn` (labial derived) |
+| `*xémnum` | `hefnum` | positive adjacent-`mn` |
+| `*xémni` | `hifn` | adjacent-`mn` + i-umlaut (cf. ON `hifni`) |
+| `*xémonų` | `heomon` | negative: retired input no longer fabricates the labial |
+| `*sébun` | `seofon` | seven control — unchanged |
+
+**Row 2068 (heaven):** PROTOFORM `*xémonų → *xébun`; class `late_analogy →
+early_analogy`; PROTO `*xémenaz` and COUNTERPART `heofon` retained. Trace:
+`*xébun → [u-lowering] *xébon → [b-allophony] *xéβon → [back mutation] *xéoβon →
+heofon`.
+
+**Row 2216 (stem):** PROTOFORM `*stámnaz → *stámniz`; class `known_unmodelled →
+early_analogy`; PROTO `*stámnaz` and COUNTERPART `stefn` retained. Trace:
+`*stámniz → *stámni → [mn>βn] *stáβni → [bright] *stæβni → [i-umlaut] *steβni →
+[apocope] *steβn → stefn`.
+
+**Corpus (rule-only, TSV unchanged):** 380 / 371 / 9 / 0 — transient; heaven flips
+to mismatch (`heomon`), stem output changes `stamn → stæfn`; no other row changes.
+**Corpus (final, both rows):** **380 / 373 / 7 / 0**; mismatch set `{buck, fire,
+fowl, rust, tap, wolf, wool}` (all documented exceptions). Semantic diff confined
+to heaven and stem only (verified by per-row baseline diff).
+
+**Baseline:** old `outputs_sha256 = aaf19ba9…480e` (372/8) → new `outputs_sha256 =
+a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc` (373/7). The
+frozen-drift guard in `Germanic/tests/test_sc004_component_split.py` was re-frozen
+to the new value + totals (this is a deliberate scientific change, not drift). The
+historical SC004/rename frozen baselines and their self-consistency checks are
+left unchanged as immutable records of that earlier migration.
+
+**Tests:** `Germanic/tests/test_sc022_mn_dissimilation.py` added (9 focused
+assertions); full suite `Ran 152 tests … OK`.
+
+## 8. Deferred: presentation-layer rebuild (follow-up)
+
+The scientific + data + classification layer is complete here. The **rendered
+publication layer** is intentionally **not** regenerated in this change and is
+deferred to a dedicated rebuild (matching the repo convention where book/volume/
+PDF regeneration is a separate `rebuild …` commit, e.g. `045e2aa9`):
+
+- `Germanic/docs/assembly/lexical_volume_alpha_01.{md,tex,pdf}`,
+  `capr_book_draft_alpha_01.{md,tex,pdf}`;
+- `Germanic/docs/book/index_verborum_*` artifacts;
+- `Germanic/docs/debug_snapshots/oe_*_report*.{txt,md}` snapshots.
+
+These are produced by a coupled pipeline (reader-facing → full lexical volume →
+index verborum → book draft → xelatex render) that must be run end-to-end (with
+the pandoc/LaTeX toolchain) to stay internally consistent, and several of its
+gates carry curated, line-anchored decisions and hardcoded expectations tied to
+the previous heaven row. The source inputs to that pipeline (model entries,
+manifests, TSV, rule) are already updated here, so the rebuild is mechanical.
+
+**Note:** the model entries were pre-validated against the index-verborum
+language/variety registries (Old Norse `on`, Old Saxon `os`, Gothic `goth`,
+Northumbrian `north`), so they are ready for the deferred rebuild.

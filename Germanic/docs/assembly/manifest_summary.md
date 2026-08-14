@@ -12,8 +12,8 @@
 | :--- | ---: |
 | `regular` (Regular derivations) | 70 |
 | `attested_variant` (Attested variants and selected comparison forms) | 4 |
-| `early_analogy` (Early analogy and pre-Old-English input selection) | 35 |
-| `late_analogy` (Late analogy and paradigm-cell selection) | 28 |
+| `early_analogy` (Early analogy and pre-Old-English input selection) | 36 |
+| `late_analogy` (Late analogy and paradigm-cell selection) | 27 |
 | `reconstructed_oe` (Reconstructed Old English comparators) | 3 |
 | `known_unmodelled` (Known but unmodelled remodellings) | 2 |
 | `unexplained_unmodelled` (Unexplained or deliberately unmodelled exceptions) | 5 |
@@ -41,4 +41,8 @@
 
 ## Entries needing special handling before full assembly
 
-- None.
+| Row ID | File | Trigger |
+| :--- | :--- | :--- |
+| 2087 | `2087-knob-cnobba.model.md` | title counterpart differs from metadata COUNTERPART |
+| 2151 | `2151-reek-rēac.model.md` | title counterpart differs from metadata COUNTERPART |
+| 2227 | `2227-strew-strīeġan.model.md` | title counterpart differs from metadata COUNTERPART |
