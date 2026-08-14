@@ -39,10 +39,27 @@ headword, **[RECON]** reconstruction. These are never silently conflated.
 mutation; whether Northumbrian back mutation could reach a `-fn-` cluster; the
 security of Kroonen's specific `*hemō/*hemnaz/*hemeni` remodelling.
 
-**Bottom line:** *heaven* is **too remodeled to yield a long, clean,
-uninterrupted Lautgesetzlich span from a citation-level input to an attested OE
-form.** See §10 for the concrete CAPR recommendation (do not use the proxy; do
-not use unattested `hefn`).
+**Bottom line (revised — see §13 addendum).** The 2026-08 research pass
+sharpened this. The history is now describable as **two analogies bracketing a
+real regular span**: an **early** analogy levels the oblique-cluster labial into
+the vowel-bearing stem (giving Ringe–Taylor's northern-WGmc **`*hebun`**), then
+**regular OE back mutation** derives `heofon` (exactly parallel to *seven*
+`*sebun -> seofon`), then a **late** paradigm levelling + optional syncope give
+the obliques. Crucially, a shadow probe now shows that CAPR's **real** cascade
+(no proxy) derives attested `heofon` from a labial-bearing input `*hebun`
+(`*xébun` ~ `*xéfun`) — the labial-levelling analogy simply lives *in the input*,
+which is exactly what CAPR's `early_analogy` class is for. This **upgrades** the
+old `*héfon` fallback of §10 into a genuine, better-motivated modelling option.
+
+The revised recommendation (§10, §13.5) is therefore: **model heaven as
+`early_analogy` from `*hebun -> heofon`** (regular back mutation, no proxy;
+parallel to *seven*), **with `known_unmodelled` as a fully-legitimate
+conservative fallback** (the correct tier — the history is *understood*, cf.
+§13.1 — not `unexplained_unmodelled`). Either way the ahistorical `mV…n` proxy
+is retired and SC022 becomes literal adjacent `mn > βn`, which also lets `stem`
+derive `stefn`. The one thing still excluded is any *single-cell* span from a
+**citation** input to an attested form: `heaven` remains "too remodeled" in that
+narrow sense, but that is not the choice CAPR actually faces.
 
 ---
 
@@ -257,6 +274,25 @@ of real changes from a citation input.
 
 ## 10. CAPR recommendation
 
+**Primary recommendation — REVISED 2026-08 (see §13.5).** The prior draft of
+this section made `known_unmodelled` the primary and `*héfon` a reluctant
+"short-span" alternative. The new shadow probe (§13.4) and the classification
+audit (§13.1) revise that ordering. **The recommended primary is now to model
+heaven as `early_analogy` from Ringe–Taylor's `*hebun`** (`*xébun` ~ `*xéfun`)
+`-> heofon`: a *regular* OE back-mutation span, shadow-verified with **no proxy**,
+exactly parallel to the production-`regular` derivation *seven* `*sébun ->
+seofon`. The early labial-levelling analogy is encoded **in the input** — which
+is precisely the definition of CAPR's `early_analogy` class (Part III: "an
+analogical change already separates the transducer input from the lexeme's
+citation reconstruction before the specifically Old English changes apply").
+**`known_unmodelled` remains a fully-legitimate conservative fallback** (§13.5);
+it is the *correct tier* (history *understood*, unlike `unexplained_unmodelled`
+— §13.1), appropriate if the project prefers not to compress the labial +
+suffix-vowel remodelling into the input. Both retire the `mV…n` proxy.
+
+The remainder of this section preserves the original (pre-revision) reasoning
+for the record; read §13 for the superseding argument.
+
 CAPR seeks the **longest defensible uninterrupted Lautgesetzlich span** and must
 **not** invent a pseudo-sound-law to simulate analogy, choose an unattested
 endpoint, or treat normalization as attestation.
@@ -270,7 +306,7 @@ endpoint, or treat normalization as attestation.
 - Every **attested** OE form is analogically leveled (labial + medial vowel;
   obliques' `eo` levelled/pre-syncope) — no long clean span exists.
 
-**Primary recommendation — classify row 2068 `known_unmodelled`.** *heaven* is
+**Primary recommendation (ORIGINAL — now the fallback; see §13.5) — classify row 2068 `known_unmodelled`.** *heaven* is
 too remodeled to provide a clean CAPR datum. Concretely (future, do **not** edit
 now):
 - PROTO `*xémenaz` (citation) may remain.
@@ -285,8 +321,8 @@ now):
   `known_unmodelled` → **380 / 372 / 8 / 0**, mismatch set {buck, fire, fowl,
   rust, tap, wolf, wool, **heaven**}.
 
-**Acceptable alternative (if a modelled datum is wanted), with full disclosure —
-short back-mutation-only span:**
+**Acceptable alternative (ORIGINAL framing — now SUPERSEDED by the better-motivated
+`*hebun` input of §13.4/§13.5), with full disclosure — short back-mutation-only span:**
 - PROTOFORM `*héfon` (pre-OE English-branch, **post-leveling**: labial present,
   back medial vowel — Hogg's own `*hefon`), COUNTERPART `heofon` [attested WS
   nom], DERIVATION_CLASS `late_analogy` (the leveling is explicitly *outside*
@@ -361,3 +397,298 @@ ran in the container's ephemeral `/root`. `git diff --check` clean.
 - Bosworth–Toller: `heofnes` (`:5170`), `heofne` (`:67495`), `heofnum` (`:6389`).
 - Polomé 1967 pp. 818–819 (`polome_1967_reflexes_ie_ms.txt:867`); Kluge–Seebold
   s.v. *Himmel* (`kluge_seebold…:42427`).
+
+---
+
+# 13. Addendum (2026-08-13): classification audit, Ringe–Taylor `*hebun`, and the two-analogy span
+
+This addendum answers four loose ends left by §§1–12: (a) how CAPR's derivation
+classes *actually* work; (b) what Ringe–Taylor's northern-WGmc **`*hebun`**
+contributes, decomposing **`b`** vs **`u`**; (c) whether the "two analogies
+bracketing a regular span" narrative survives; and (d) the resulting
+classification. It **revises** the executive conclusion (§1) and the primary
+recommendation (§10). No production file is touched.
+
+## 13.1 CAPR classification system — what the categories actually permit
+
+Inspected live: the book Parts and every current entry.
+
+- **Part VI "Known but unmodelled developments"** (`known_unmodelled`,
+  `lexical_volume_alpha_01.md:10829`): *"The historical development is
+  sufficiently supported by comparative and philological evidence, but the
+  current transducer cascade does not yet implement the phonological or
+  morphological process required to derive the target."* Entries: **fire**
+  (2013), **tap** (2240), **stem** (2216).
+- **Part VII "Unexplained or deliberately unmodelled exceptions"**
+  (`unexplained_unmodelled`, `:11140`): *"No sufficiently supported account yet
+  reconciles the regular output with the Old English form."* Entries: **buck**
+  (1973), **fowl** (2030), **rust** (2162), **wolf** (2298), **wool** (2300).
+
+**Decisive point:** `known_unmodelled` ≠ "historically unexplained." It is the
+tier for rows whose history *is* understood but whose deriving process the FST
+does not implement. `unexplained_unmodelled` is the "we don't know" tier.
+*heaven*, whose history this dossier reconstructs in detail, therefore belongs —
+if unmodelled at all — to the **`known_unmodelled`** tier, never to
+`unexplained_unmodelled`.
+
+**Is there a precedent for *two* non-phonological interventions (early + late)
+in one `known_unmodelled` row?** No. Surveying the three entries:
+
+| entry | regular FST output | attested target | intervention(s) | where |
+| :-- | :-- | :-- | :-- | :-- |
+| **fire** | `fȳr` (regular, from selected oblique `*fūri`) | `fȳre` | one **late** analogy (`-e` restoration) + a paradigm-cell *selection* of the input | input selection + late |
+| **tap** | `tappa` | `tæppa` | one analogy (`æ` levelled from j-stems) | surface |
+| **stem** | `stamn` | `stefn` | none analogical — a **sound change** (`mn>fn`) not yet in the cascade | the rule itself |
+
+So the closest precedent, **fire**, has a clean regular span **plus a single
+late analogy** (and an input cell-selection). **No current `known_unmodelled`
+entry brackets a regular span between an *early* and a *late* analogy.** If
+heaven were classified `known_unmodelled`, it would be a **new but legitimate
+sub-type** of that tier (double-analogy bracketing), not a category error.
+
+**How the single-class system bears on heaven.** CAPR assigns **one** class per
+row and models **one** cell's input→output. It has `early_analogy` (Part III:
+analogy separates the *input* from citation before OE changes) and `late_analogy`
+(Part IV: the OE form continues a later paradigm cell / remodelling), but **no
+combined class**. Two honest readings follow, developed in §13.5.
+
+## 13.2 Ringe–Taylor `*hebun`: decomposing `b` and `u`
+
+Source used: `docs/references/ringe_taylor_linguistic_history_vol2.txt` (Ringe &
+Taylor 2014, *The Development of Old English* = *A Linguistic History of English*
+vol. 2). Three loci, all found and read:
+
+1. **p. 272** (`:15697`), in the list of **non-syncopating heavy/‏light stems**
+   (beside `*sikur -> sicor`, `*habukaz -> hafoc/hafoce`, `*stabulaz ->
+   stapol/stapolas`): *"northern WGmc `*hebun`° 'sky, heaven', gen. `*hebunas`,
+   etc. (OS heban, hebanas, etc.) > OE heofon, heofones."* — i.e. R&T derive
+   `heofon, heofones` **regularly**, with the medial vowel **retained** (no early
+   syncope). Footnote 20 (`:15711`): *"There is some sort of relationship between
+   this word and PWGmc `*himil` (OF, OS, OHG himil), and between both and PGmc
+   `*himinaz` (Goth. himins, ON himinn), but the details do not seem to be
+   recoverable."*
+2. **p. 324** (`:18570`), in the section on **WS back umlaut of `e`** (*"it
+   occurred only when the following vowel was u and the intervening consonant was
+   l, r, or a labial"*, `:18556`), listed **directly beside *seven***:
+   `*sebun > WS/North. seofon, Merc. seofen`; then *"northern WGmc `*hebun` 'sky,
+   heaven' (OS heban) > WS, North. OE heofon, Merc. heofen."*
+3. **p. 387** (`:21859`): heaven cited as a **non-alternating** stem, *"heofon
+   'sky, heaven', gen. sg. heofones < `*hebun-`."*
+
+**What R&T regard as unrecoverable.** *Not* the internal `*hebun -> heofon`
+derivation — that is one of their **regular** back-umlaut examples (locus 2),
+strictly parallel to `*sebun -> seofon`. What is "not recoverable" (fn 20) is the
+**morphological relationship among the three stem-shapes**: the labial `n`-stem
+`*hebun`, the `l`-stem `*himil`, and the `m`-stem `*himinaz` (Goth. `himins`, ON
+`himinn`). `*hebun` is thus, in R&T, a **northern-WGmc lexeme-level stem**
+(nom. `*hebun`, gen. `*hebunas`), *not* an isolated case-cell, and its OE
+outcome is regular.
+
+Decomposition:
+
+- **The `b`.** R&T **posit** it (from OS `heban`) but do **not** derive it; it is
+  part of the "unrecoverable" relationship. **Our paradigm analysis explains it:**
+  regular `mn > βn/bn` in the inherited oblique cluster (ON `himinn : hifni`
+  preserves exactly this alternation; OS `heban/hebenes` generalizes it), then
+  **early analogical levelling** of that labial into the vowel-bearing stem. So
+  CAPR's account **explains the consonantism of R&T's `*hebun`** rather than
+  accepting it as a black box — a genuine, if partial, advance on fn 20.
+- **The `u`.** This is the separate, harder problem, and it must not be assumed
+  merely because a back vowel is convenient for back umlaut. `*hebun` has the
+  `n`-stem **suffixal vowel** `*-un-` (gen. `*-un-as`), the *same* element as in
+  `*sebun` 'seven'; it is what **triggers** WS back umlaut (locus 2). Its *exact*
+  morphological source — why the `-un-`/`-an-` grade generalized here whereas the
+  cognate `m`-stem shows `-in-` (`himinn`, `himins`) — is precisely the
+  suffix-ablaut / stem-relationship question R&T call unrecoverable. Kroonen's
+  split `*hemina-` (i-vocalism → `himinn`, `himins`) vs `*hemna-`/oblique
+  (→ OE/OS) frames the same uncertainty. So the **`u` remains partly opaque**:
+  identifiable as the `n`-stem suffix vowel (parallel to *seven*), but its
+  selected ablaut grade is not fully recoverable.
+
+**Adjudication of §5's four options (task Part 5): B + D, shading to C.**
+`*hebun` is best read as a **useful shorthand (B)** for the already-remodelled
+vowel-bearing `b`-stem, whose **`b` our account explains** and whose **`u` is
+partly opaque (D)**. It is **not a necessary intermediate (¬A)**: CAPR can derive
+the OE forms directly from the remodelled stem without erecting `*hebun` as a
+distinct node **(C)**. Net result — we explain **part** (the consonantism) of the
+relationship R&T deemed unrecoverable, without claiming to have solved the `u`.
+
+## 13.3 The two analogies — tested, and sharpened
+
+The narrative survives falsification, but R&T force two refinements.
+
+**Early analogy (labial levelling) — confirmed.** The `f`/`b`/`β` is regular only
+in the oblique `-mn-` cluster; its presence in the vowel-bearing stem is
+analogical (ON does **not** level: `himinn` keeps `m`; OE/OS do: `heofon`,
+`heban`). This is the analogy that builds `*hebun-`. It explains R&T's `b`.
+
+**Regular middle (back mutation) — sharpened to WS back umlaut of `e` before
+`u`.** R&T (locus 2) make `*hebun -> heofon` a *textbook* WS/North. back-umlaut
+example, conditioned by the **medial `u`** across the **labial**, and strictly
+**parallel to *seven*** `*sebun -> seofon`. The labial is already present when
+this fires. On heavy/non-alternating stems the medial vowel is **retained**
+(locus 1, 3), so gen. `heofones`/dat.pl `heofonum` are **also regular** (back
+umlaut applies; no early syncope).
+
+**Late analogy — reframed as levelling + *late* syncope (the "before-syncope"
+chronology wins).** §5e/§8.7 worried that `heofnum`'s `eo` cannot come from a
+syncopated `*hemnum`. R&T resolve this cleanly: because `*hebun-` is
+**non-alternating**, the regular obliques are `heofones`/`heofonum` (medial vowel
+retained, `eo` already installed by back umlaut); the syncopated `heofnes`/
+`heofnum` then arise by **later optional syncope** of *those* forms
+(`heofonum > heofnum`). So the attested `eo` **is** regular (present **before**
+syncope) — exactly the "levelling/back-umlaut before syncope" chronology the task
+(Part 2) asked us to prefer over a fictitious back mutation across `-fn-`. The
+residual genuinely-*analogical* late event is the **flattening of the
+`he-`(front) : `heo-`(back) suffix-vowel alternation** across the paradigm (Hogg:
+in WS such alternations "were normally levelled out"), which does **not** disturb
+the modelled nominative `heofon`.
+
+### Chronological schematic
+
+```text
+old amphikinetic mn-stem paradigm  (*hemō : gen *hemn-os …; ON himinn : hifni)
+        |
+        | REGULAR  mn > βn/bn  in the inherited cluster-bearing obliques
+        v
+paradigm with m : f/b alternation  (ON himinn : hifni type)
+        |
+        | EARLY ANALOGY: level the f/b labial into the vowel-bearing stem
+        |                (+ generalize the n-stem suffix vowel *-un-)
+        v
+northern WGmc *hebun- / *hefun-   ============  Ringe–Taylor *hebun, gen *hebunas
+   (b explained here; u = n-stem suffix vowel, exact grade partly opaque)
+        |
+        | REGULAR  WS back umlaut of e before medial u across the labial
+        |          (exactly parallel to *sebun 'seven' > seofon)
+        v
+heofon (WS/North.) : Merc. heofen   +  regular obliques heofones/heofonum
+        |
+        | LATE: level residual he-/heo- alternation  +  optional late syncope
+        |       (heofonum > heofnum; eo already present pre-syncope)
+        v
+attested  heofon : heofnes : heofnum : Merc. heofen : early Nhb hefun/hefen/heben
+```
+
+`*hebun` sits **on** the diagram (the remodelled `b`-stem node), not beside it as
+a rival: our chain reaches the *same* node and additionally motivates its `b`.
+
+## 13.4 New shadow probe (2026-08-13): does the *real* cascade reach `heofon`?
+
+Method as §11 (ephemeral `/root`; production untouched). Two builds: **production**
+(with the `mV…n` proxy) and **shadow** (SC022 = adjacent-`mn` only,
+`{*m} -> {*β} || EnglishStarVocalic _ {*n}`). Inputs fed to `old_english.bin` via
+`flookup -i` (normalized: strip `*`; `þ→θ`).
+
+| input (CAPR notation) | reading | production (proxy) | **shadow (adjacent-mn, NO proxy)** | attested? |
+| :-- | :-- | :-- | :-- | :-- |
+| `*xéfon` | Hogg `*hefon` | `heofon` | **`heofon`** | yes (nom) |
+| `*xéfun` | *seven*-parallel, medial u | `heofon` | **`heofon`** | yes (nom) |
+| `*xébun` | **R&T `*hebun`** (b→β→f) | `heofon` | **`heofon`** | yes (nom) |
+| `*xémun` | m, medial u (non-adjacent) | `heofon` (via proxy) | `heomon` | no |
+| `*xémon` | m, medial o | `heofon` (via proxy) | `heomon` | no |
+| `*xémonų` | **current row-2068 PROTOFORM** | `heofon` (via proxy) | `heomon` | no |
+| `*xémenaz` | current row-2068 PROTO | `hefen` (via proxy) | `hemen` | no |
+| `*xémnaz` | adjacent-mn nom cluster | `hemn` | `hefn` | no |
+| `*xémnas` | adjacent-mn gen cluster | `hemnes` | `hefnes` | no |
+| `*xémnum` | adjacent-mn dat.pl cluster | `hemnum` | `hefnum` | no |
+
+**Reading.** (i) A **labial-bearing** input (`*xéfon` / `*xéfun` / **`*xébun`**)
+derives attested `heofon` under the **real** cascade with **no proxy** — via
+regular `PGmc B Allophony` (`b→β`) + `OE Back Mutation`, identical to the
+production-`regular` derivation *seven* `*sébun -> *séβon -> séoβon -> seofon`.
+(ii) An `m`-bearing input needs the **proxy** to reach `heofon`; without it,
+`*xémonų` (current PROTOFORM) gives `heomon`. (iii) A genuine **adjacent-mn**
+cluster input gives only **unattested** `hefn/hefnes/hefnum`. Multiplicity 1
+throughout.
+
+This is the crux: the **only** thing the proxy buys is fabricating the labial
+from `m`. Once the labial is (correctly, analogically) in the input — as it is in
+R&T's `*hebun` — the span to `heofon` is **ordinary, real OE phonology**.
+
+## 13.5 Reassessed classification and final recommendation
+
+Three levels, kept distinct per task Part 3 / Part 8:
+
+1. **Lexeme history:** inherited mn-stem → *early* labial levelling → regular WS
+   back umlaut → *late* alternation-levelling + syncope → attested paradigm
+   (§13.3). Two analogies, real regular middle.
+2. **Regular sub-spans:** (a) the **`*hebun -> heofon`** nominative span is real,
+   regular, shadow-verified, *seven*-parallel; (b) the inherited-oblique line
+   `*hemnum -> …-> *hefnum` is regular **but its endpoint is unattested** (attested
+   `heofnum` descends from the vowel line, §13.3). Span (a) is the usable one.
+2b. **Single CAPR row (the actual decision).** CAPR models **one** cell. For the
+   **nominative**, the modelled derivation `*hebun -> heofon` contains **exactly
+   one** intervention — the *early* labial levelling, encoded in the input — and
+   is therefore a clean **`early_analogy`** row, structurally identical to
+   `bottom` (`*búttmaz -> botm`). The *late* levelling/syncope belongs to **other
+   cells** the row does not model (just as `fire` models only `fȳr` and lets the
+   paradigm's `-e` restoration lie outside). The "two analogies" are a property of
+   the **lexeme's paradigm**, not of the modelled nominative derivation.
+
+**Recommendation.** Two honest, non-contradictory options; the project chooses:
+
+- **PRIMARY — `early_analogy`, `*hebun -> heofon`.** PROTOFORM `*xébun`
+  (≈ R&T `*hebun`; `*xéfun`/`*xéfon` are equivalent inputs), COUNTERPART `heofon`
+  [attested WS/North. nom], DERIVATION_CLASS `early_analogy`. Trace (real cascade,
+  no proxy; exactly the *seven* path): `*xébun -> [Med Unstressed U Lowering]
+  *xébon -> [B Allophony] *xéβon -> [Back Mutation] *xéoβon -> heofon`.
+  **Analogy boundary:** the mn-cluster labial levelling (and the
+  suffix-vowel generalization) are pre-OE, *in the input*; only regular OE
+  phonology is modelled. **Confidence:** high — `*hebun` is R&T's own
+  reconstruction, the span is regular and *seven*-parallel, and the task (Part 2)
+  explicitly licenses an analogical labial in the input. This **supersedes** the
+  §10 `*héfon` alternative (same output, but `*hebun` is better motivated: real
+  reconstruction, the `u` is the genuine back-umlaut trigger, `b→β→f` is regular).
+- **FALLBACK — `known_unmodelled`.** If the project prefers not to compress the
+  labial + suffix-vowel remodelling into `*hebun`, keep heaven as an explicit
+  **understood** exception alongside fire/tap/stem. This is the **correct tier**
+  (§13.1), *never* `unexplained_unmodelled`. Reader-facing wording:
+
+  > *heaven* is `known_unmodelled` **not** because its development is inexplicable,
+  > but because its Old English history brackets a real regular sound change (WS
+  > back umlaut, `*hebun > heofon`, exactly as *seven* `*sebun > seofon`) between
+  > an **earlier** analogy (levelling the oblique `-mn-` labial into the
+  > vowel-bearing stem) and a **later** one (levelling the residual suffix-vowel
+  > alternation, with optional syncope). CAPR assigns one derivation class per row
+  > and does not model those analogical operations in the deterministic cascade.
+
+- **REJECTED (unchanged):** the `mV…n` proxy *as a sound change*; retargeting to
+  unattested `hefn`/`hefnes`/`hefnum`; any score-driven choice.
+
+**Corpus consequence (shadow, unchanged from §11):** with SC022 = adjacent-`mn`
+and `stem *stámniz -> stefn`, either heaven option gives a clean total — the
+`early_analogy` primary matches `heofon` → **380 / 373 / 7 / 0**; the
+`known_unmodelled` fallback lists heaven as the 8th mismatch → **380 / 372 / 8 /
+0**. No collateral beyond heaven and stem.
+
+## 13.6 Consequences (for the eventual implementation task — NOT executed here)
+
+- **SC022:** the cell-to-cell evidence **supports retiring the `mV…n` proxy** and
+  making SC022 literal adjacent `mn > βn`. Heaven never needed a *sound change*
+  for its labial (it needs the *early analogy*, encoded by input choice or by the
+  `known_unmodelled` label); the proxy's sole beneficiary was this one row.
+- **Row 2068 (heaven):** implement as **`early_analogy`, PROTOFORM `*xébun`,
+  COUNTERPART `heofon`** (primary), or **`known_unmodelled`** (fallback). Either
+  removes the proxy dependency.
+- **Row 2216 (stem):** `*stámniz -> stefn` (mult 1) remains independently
+  supported under literal adjacent `mn > βn`; unaffected.
+
+**Integrity (re-verified for this addendum):** all shadow builds ran in the
+container's ephemeral `/root`; `germanic.txt` (`10c61d2c…`),
+`germanic-aligned-final.tsv`, baselines, manifests, book/index, and rows
+2068/2216 are untouched. This addendum is the only change.
+
+### Bibliography additions
+
+- Ringe & Taylor 2014, *A Linguistic History of English* vol. 2 (*The Development
+  of Old English*): northern-WGmc `*hebun`, gen. `*hebunas` > OE heofon/heofones
+  pp. 272 (`ringe_taylor_linguistic_history_vol2.txt:15697`, fn 20 `:15711`), 324
+  (`:18570`; WS back umlaut of `e` before `u`, `:18556`; *seven* `*sebun >
+  seofon` `:18565`), 387 (`:21859`).
+- *seven* in CAPR: row 2174, PROTOFORM `*sébun`, `regular` match `seofon`
+  (`germanic-aligned-final.tsv`; trace
+  `debug_snapshots/oe_derivation_class_trace_report.compact.md:4624`).
+- CAPR classes: Part VI `known_unmodelled` (`lexical_volume_alpha_01.md:10829`),
+  Part VII `unexplained_unmodelled` (`:11140`), Part III `early_analogy`
+  (`:4964`), Part IV `late_analogy` (`:8060`); `manifest_known_unmodelled.tsv`.
