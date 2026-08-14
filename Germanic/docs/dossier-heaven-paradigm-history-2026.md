@@ -16,6 +16,11 @@ headword, **[RECON]** reconstruction. These are never silently conflated.
 
 ## 1. Executive conclusion
 
+> **IMPLEMENTED DECISION (see §15, authoritative):** row 2068 = PROTO `*xémenaz`,
+> PROTOFORM `*xébun`, COUNTERPART `heofon`, DERIVATION_CLASS **`early_analogy`**;
+> SC022 becomes the literal adjacent `mn > βn`. Provisional `known_unmodelled`
+> judgements in §10/§13.5/§14.8 are **superseded** by §15.
+
 **Confident:**
 - The Germanic labial (`f`/`b`/`β`) in this word originates in the **oblique
   `-mn-` cluster** of an old mn-stem and was **levelled** into the vowel-bearing
@@ -996,3 +1001,96 @@ the mechanism.)
   Hogg §6.36 syncope/parasiting) as the *late* svarabhakti excluded in §14.3.
 - Shadow traces via `old_english_sandbox_after_*.bin` (adjacent-`mn` build,
   ephemeral `/root`); rule labels as in the sandbox cascade order.
+
+---
+
+# 15. Final CAPR implementation decision (2026-08-14)
+
+The preceding sections (§§1–14) record the full research path, including two
+**provisional** and now-**superseded** recommendations that a reader must not
+mistake for the implemented judgement:
+
+- §10 (original) and §13.5 (fallback) floated **`known_unmodelled`** as a
+  conservative row-level label;
+- §14.8 held the row **provisionally `known_unmodelled`** while the
+  labial-derivation question was probed to PIE depth.
+
+**Those provisional labels are hereby superseded for implementation.** After the
+symmetrical §14 investigation, the implemented decision for **row 2068** is:
+
+```text
+PROTO             *xémenaz     (lexeme-level citation reconstruction — retained)
+PROTOFORM         *xébun       (selected derivational input: northern WGmc / pre-OE *hebun)
+COUNTERPART       heofon       (secure attested OE nominative — retained)
+DERIVATION_CLASS  early_analogy
+```
+
+## 15.1 Why `early_analogy`, decided *after* §14
+
+§14 established, and this decision rests on, four points that are **not** in
+tension:
+
+1. **The labial is historically regular and deep.** In the zero-grade oblique
+   cells (gen. `*hemnaz` < PIE `*h₂k-mn-ós`, dat. `*hemni`, dat.pl `*hemnum`),
+   `mn > βn` is a regular, mult-1 change (traces §14.2). The `f/b` of OE `heofon`
+   therefore has recoverable regular ancestry — a real advance on Ringe–Taylor,
+   who merely posit the `b` of `*hebun`.
+2. **No oblique gives an uninterrupted *actual* OE line.** The clean cluster
+   outputs (`hefnes`, `hifn`, `hefnum`) are attested only in **Norse**
+   (ON `hifni`), not Old English; the attested OE forms descend from a
+   **re-vowelled** `*hebun-` stem, so a single non-regular event (medial-vowel
+   restoration) always intervenes before the attested OE paradigm (§14.3–§14.6).
+3. **`*xébun → heofon` is the longest clean regular span that both begins *after*
+   the necessary early restructuring and ends in a *secure attested OE* form**
+   (§13.4, §14.2c), exactly parallel to the independently-regular *seven*
+   `*sébun → seofon`.
+4. **The selected `b` is analogical *within this nominative input*, but not
+   historically unexplained** (its origin is the cluster-bearing oblique
+   paradigm, point 1); the principal remaining opaque element is the medial
+   **`u`**, not the labial.
+
+This is the definition of CAPR's **`early_analogy`** class (Part III: "an
+analogical change already separates the transducer input from the lexeme's
+citation reconstruction *before* the specifically Old English changes apply").
+The paradigm remodelling that installs the labial (and the medial vowel) is
+encoded in the input `*xébun`; everything the FST models from there
+(`u`-lowering, `b`-allophony, back mutation) is regular.
+
+## 15.2 Why not the alternatives
+
+- **Not `late_analogy`.** The selected row models one form, `*xébun → heofon`.
+  The restructuring precedes the input; it is not a later paradigm-cell selection
+  operating on an otherwise-citation input. The *later* history of *other*
+  paradigm cells (oblique syncope, `heo-` levelling) does not touch the modelled
+  nominative derivation.
+- **Not `known_unmodelled` (for implementation).** That label is intellectually
+  legitimate (§13.1 places heaven firmly in the *understood*, not *unexplained*,
+  tier) and is **retained in this dossier as the rejected conservative
+  alternative**. But it understates what CAPR can model: `*xébun → heofon` *is* a
+  clean regular span to an attested target, so declaring the row unmodelled would
+  discard a real, defensible derivation. The implementation therefore selects the
+  modelled `early_analogy` reading; §14's provisional `known_unmodelled` was a
+  research checkpoint, not the verdict.
+- **Not the deep obliques as the selected input.** `*xémnas → hefnes`,
+  `*xémni → hifn`, `*xémnum → hefnum` derive the labial themselves and are
+  historically essential, but their unremodelled outputs are **not** the OE line
+  that reaches the attested paradigm (§14.4 B). They stay in the dossier/model
+  entry as the deep controls that *explain* the labial, not as the row datum.
+
+## 15.3 SC022 consequence
+
+The decision requires retiring the ahistorical `mV…n` proxy and making
+`PNWGmcMnDissimilation` the **literal adjacent** `{*m} -> {*β} || EnglishStarVocalic _ {*n}`.
+Heaven never needed a *sound change* for its labial (it needs the *early
+analogy*, now encoded in `*xébun`); the proxy's sole beneficiary was this one
+row. The literal rule also independently enables the *stem* correction
+(`*stámniz → stefn`), gated separately.
+
+## 15.4 Status of earlier sections
+
+§§1–14 are preserved as the research trail. Where they present
+`known_unmodelled` (§10 original block, §13.5 fallback, §14.8 provisional) or the
+`*héfon` framing (§10) as a recommendation, **read them as superseded by this
+§15**: the implemented row is `early_analogy` / `*xébun → heofon`. Nothing in the
+evidence is withdrawn — only the row-level label is now fixed.
+
