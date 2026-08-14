@@ -61,6 +61,26 @@ derive `stefn`. The one thing still excluded is any *single-cell* span from a
 **citation** input to an attested form: `heaven` remains "too remodeled" in that
 narrow sense, but that is not the choice CAPR actually faces.
 
+**Deepest-span finding (2026-08-14 — see §14).** A further pass stopped
+privileging the nominative and asked how far the **labial itself** can be derived
+by regular sound change. Answer: **very deep — to the inherited genitive.** In
+the zero-grade oblique cells (gen. `*hemnaz` < PIE `*h₂k-mn-ós`, dat. `*hemni`,
+dat.pl `*hemnum`) the change `mn > βn` is regular and mult-1 (shadow traces,
+§14.2), so the `f/b` of OE `heofon` has continuous **regular** ancestry back to
+PIE — a real advance on Ringe–Taylor, who merely posit the `b` of `*hebun`. But
+the *clean* cluster outputs (`hefnes`, `hifn`, `hefnum`) are attested only in
+**Norse** (ON `hifni`), **not** in Old English; the attested OE forms descend
+from a **re-vowelled** `*hebun-` stem (labial already present, then regular back
+umlaut/​syncope). The labial-deriving line and the attested-OE line are thus
+**different cells**, joined only by one non-regular event (restoration of the
+medial vowel). For this pass row 2068 is therefore held **provisionally
+`known_unmodelled`** — not for want of history but because its regular history is
+**split across paradigm cells** and cannot be one deterministic CAPR path. The
+`early_analogy` `*hebun -> heofon` option above remains available if a modelled
+datum is later wanted; §14 does not withdraw it, but shows why the honest
+row-level label is `known_unmodelled`. The residue that stays genuinely
+unrecoverable is the medial **`u`** (its ablaut source), never the `b`.
+
 ---
 
 ## 2. History of the CAPR problem
@@ -692,3 +712,287 @@ container's ephemeral `/root`; `germanic.txt` (`10c61d2c…`),
 - CAPR classes: Part VI `known_unmodelled` (`lexical_volume_alpha_01.md:10829`),
   Part VII `unexplained_unmodelled` (`:11140`), Part III `early_analogy`
   (`:4964`), Part IV `late_analogy` (`:8060`); `manifest_known_unmodelled.tsv`.
+
+---
+
+# 14. How far back can the regular history be recovered? Competing Lautgesetzlich spans
+
+Row 2068 is treated here **provisionally as `known_unmodelled`** (§13.1). This
+section does **not** try to rescue it as a match. Its purpose is the opposite of
+§13's nominative focus: to find the **deepest and longest** stretches of the
+history that proceed by *regular* sound change — and, above all, to test whether
+the labial `b/f` can be **derived within a single paradigm cell** rather than
+pre-supplied in the input. All experiments are shadow-only (adjacent-`mn` SC022,
+ephemeral `/root`); production is untouched.
+
+## 14.1 Where adjacent `mn` actually occurs in the paradigm
+
+Kroonen (EDPG p. 220, `:12428`) reconstructs the remodelled PGmc paradigm on the
+genitive: nom. **`*hemō`**, gen. **`*hemnaz`**, dat. **`*hemeni`**, continuing
+PIE `*h₂ék-mōn`, gen. `*h₂k-mn-ós`, loc. `*h₂k-mén-i` (Lühr 2000: 79). Two stems
+then generalize out of it: vowel-bearing **`*hemina-`** (→ Go. `himins`, ON
+`himinn`) and cluster **`*hemna-`** (→ OE `heofon`, OS `heban`). The decisive
+morphological fact:
+
+| cell | PGmc | suffix grade | adjacent `mn`? | feeds the labial? |
+| :-- | :-- | :-- | :-: | :-: |
+| nom.sg | `*hemō` | — (no `n` cluster) | **no** | no |
+| **gen.sg** | **`*hemnaz`** | **zero** (`*-n-`) | **YES** | **yes** |
+| dat.sg | `*hemeni` | **full** (`*-en-`) | **no** (`hem-en-i`) | no |
+| loc.sg (PIE) | `*h₂k-mén-i` | full (`*-én-`) | no | no |
+| dat.pl (zero-grade) | `*hemn-um` | zero | **YES** | **yes** |
+| gen.pl (zero-grade) | `*hemn-ō(n)` | zero | **YES** | **yes** |
+| stem `*hemna-` | (generalized gen.) | zero | **YES** | **yes** |
+| stem `*hemina-` | (generalized full) | full | no | no |
+
+So the labial is fed **specifically by the zero-grade (genitive/oblique) cells**,
+not by the nominative or the full-grade dative singular. This is the exact
+morphological locus we must follow.
+
+## 14.2 Three exact shadow traces (adjacent-`mn` cascade, mult 1 each)
+
+Walked step-by-step through the sandbox's cumulative intermediate transducers
+(`old_english_sandbox_after_*.bin`); only the steps that change the string are
+shown.
+
+**(a) Genitive cluster `*hemnas` (deep zero-grade) — the labial is derived:**
+```
+proto_input                     *x*e*m*n*a*s
+pnwgmc_mn_dissimilation         *x*e*β*n*a*s   ← mn > βn  (SC022, REGULAR)
+eaf_brightening                 *x*e*β*n*æ*s
+oe_velar_fricative_palatal.     *ç*e*β*n*æ*s
+oe_unstressed_ae_merger         *ç*e*β*n*e*s
+old_english_orthography         h*e*β*n*e*s
+old_english_remove_stars        hefnes          (β → f)
+```
+
+**(b) Dative-sg cluster `*hemni` (zero-grade, i-ending) — labial + i-umlaut:**
+```
+proto_input                     *x*e*m*n*i
+pnwgmc_mn_dissimilation         *x*e*β*n*i     ← mn > βn  (SC022, REGULAR)
+oe_velar_fricative_palatal.     *ç*e*β*n*i
+oe_i_umlaut                     *ç*i*β*n*i     ← i-umlaut e > i  (from the ending)
+oe_high_vowel_apocope           *ç*i*β*n
+old_english_orthography         h*i*β*n
+old_english_remove_stars        hifn
+```
+The outcome `hifn` converges in surface shape with **ON `hifni`** (dat.sg), the
+attested North-Germanic form that carries the oblique labial from a syncopated
+`-mn-` cluster — independent evidence that this cluster labialization is real.
+(The two derivations are not claimed to be step-identical — ON `hifni` reaches
+its root `i` through the `*hemina-` stem vowel + medial syncope, the OE probe
+through i-umlaut — but both attest the same oblique `-mn- > -fn-`.)
+
+**(c) Nominative remodelled stem `*hebun` (R&T) — the labial is pre-supplied:**
+```
+proto_input                     *x*e*b*u*n
+oe_med_unstressed_u_lowering    *x*e*b*o*n     ← u > o (medial)
+oe_velar_fricative_palatal.     *ç*e*b*o*n
+pgmc_b_allophony                *ç*e*β*o*n     ← b > β
+oe_back_mutation                *ç*eo*β*o*n    ← back mutation e > eo
+old_english_orthography         h*eo*β*o*n
+old_english_remove_stars        heofon
+```
+Here **no rule creates the labial** — it enters with the input `b`. Only vocalic
+and surface changes are modelled.
+
+Contrast in one line: cluster cells reach `hefnes`/`hifn`/`hefnum` **through a
+regular `mn > β` step**; the vowel-line `*hebun/*hebunas` reaches attested
+`heofon`/`heofones` **with the labial already present** and no such step.
+
+## 14.3 The genitive `???` resolved: the `b` is regular, the `u` is secondary
+
+The addendum (§13.2) asked whether R&T's gen. `*hebunas` can be reached from an
+inherited cluster genitive. It can, in two regular consonantal moves plus one
+**non-consonantal** interruption:
+
+```
+PIE  *h₂k-mn-ós            (gen., zero-grade suffix; secure — Kroonen/Lühr)
+  →  PGmc *hemnaz          (remodelled on the gen.; adjacent mn)
+  →  *heβnaz / *hebn-      REGULAR  mn > βn/bn   (SC022; trace §14.2a)
+  →  *hebun-              ►►► medial vowel RESTORED/generalised  ◄◄◄  (not regular)
+  →  R&T *hebunas
+  →  heofones             REGULAR OE (u-lowering, back umlaut; R&T p. 272/387)
+```
+
+**The `b` is regular** within the genitive/oblique lineage: it is the ordinary
+reflex of the inherited zero-grade cluster `-mn-`. This is a real gain over R&T,
+who **posit** the `b` (from OS `heban`) without deriving it.
+
+**The `u` is secondary, and demonstrably so.** The medial vowel of `heofon`
+cannot be OE's regular parasite/​svarabhakti vowel in `-fn-` (the type
+`efn ~ efen`, `hræfn ~ hræfen`), because that vowel is **late and optional** and
+would post-date back mutation — yet `heofon`'s `eo` **requires** a medial vowel
+to be present *before* back umlaut (§13.3, R&T p. 324). The vowel must therefore
+be the **earlier restored/generalised suffix vowel**, installed *before* the OE
+vocalic changes. That the vowel differs by dialect — OE `u/o` (`heofon`) vs OS
+`a` (`heban`) — confirms it is a secondary resolution of the `*hebn-` cluster
+stem, not an inherited constant. Its exact ablaut source (why `-u-` here, against
+the `-i-` of the `*hemina-` stem, `himinn`/`himins`) is **not recoverable** — the
+residue R&T flagged.
+
+**Verdict.** The genitive is a *deeper* line than the nominative **for the
+consonant** (it derives the `b`), but it offers **no advantage for reaching an
+attested OE form**: exactly one non-regular event (the medial-vowel restoration)
+sits between the regular cluster labialization and the attested `heofones`, and
+it is the same event whichever oblique we choose.
+
+## 14.4 Genuine ancestor, counterfactual, or dialectal? (per cell)
+
+Applying the task's A/B/C test to each cluster output:
+
+- **A (genuine pre-analogical ancestor):** holds for **ON**, not OE. ON
+  `himinn : hifni` preserves the cluster line to an **attested** North-Germanic
+  form. The `mn > fn` change has a real attested endpoint — in Norse.
+- **B (counterfactual for OE):** the bare cluster outputs `hefnes`/`hefnum`/`hefn`
+  are **not** the ancestors of attested OE `heofnes`/`heofnum`/`heofon`. The
+  attested OE obliques carry `eo` (regular back umlaut on a *retained/restored*
+  medial vowel, then optional late syncope: `heofonum > heofnum`, §13.3). A
+  form that had stayed a bare `-fn-` cluster could not acquire that `eo`. So for
+  OE, `*hemnum → hefnum` is what the **unrestructured** cell *would* have given —
+  a counterfactual, not a derivation of the attested word.
+- **C (dialectally split):** confirmed. North Germanic kept the cluster line
+  longer (ON `hifni`); OE and OS generalised the labial into a **re-vowelled**
+  stem (`*hebun-`, `*heban-`) before their attested paradigms. One West-Saxon
+  chronology must **not** be imposed on ON.
+
+**Consequence:** the labial of attested OE `heofon` **does** descend from the
+regular cluster labialization (via the generalised `*hemna-/*hebn-` stem — the
+*consonant's* ancestry is genuine, interpretation A for the segment); but the
+**word-forms** with a bare cluster are counterfactual for OE (B), the cluster
+line surviving attested only in Norse (C).
+
+## 14.5 The longest-Lautgesetzlich-span table
+
+Real forms; "regular endpoint" = output of the adjacent-`mn` cascade;
+"first non-regular event" = where analogy/restructuring first becomes necessary
+to reach the *attested* target of that cell.
+
+| # | candidate line | start cell (chronological depth) | regular developments | regular endpoint | endpoint attested? | first non-regular event | actual ancestor of an attested form? |
+| :- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| 1 | **gen.sg cluster** | PGmc `*hemnaz` < PIE `*h₂k-mn-ós` — **deepest** | **mn > βn**, brightening, palatal., æ-merger | `hefnes` | **no** (OE has `heofnes`) | medial-vowel restoration | **labial: yes**; OE word-form: no (→ B); cf. ON |
+| 2 | **dat.sg cluster** (i-ending) | PGmc `*hemni` (zero-grade) — deep | **mn > βn**, **i-umlaut**, apocope | `hifn` | via **ON `hifni`** (not OE) | vowel restoration (for OE) | ON: **yes** (A/C); OE: no |
+| 3 | **dat.pl cluster** | PGmc `*hemnum` < PIE zero-grade — deep | **mn > βn**, … | `hefnum` | **no** (OE has `heofnum`) | vowel restoration | labial: yes; OE word-form: no (→ B) |
+| 4 | **gen.pl / a-stem cluster** | PGmc `*hemnō(n)` / `*hemnaz` — deep | **mn > βn**, ending loss | `hefn` | **no** | vowel restoration | labial: yes; OE word-form: no |
+| 5 | **nom. remodelled stem** | northern WGmc `*hebun` — **shallow** | u-lowering, b-allophony, back mutation | `heofon` | **yes** (WS/North. nom) | *before* the input (labial + vowel levelled in) | **yes** (OE nom) |
+| 6 | **gen.sg remodelled stem** | northern WGmc `*hebunas` (R&T) — shallow | u-lowering, b-allophony, back umlaut | `heofones` | **yes** (OE gen) | *before* the input | **yes** (OE gen) |
+| 7 | **dat.pl remodelled stem** | northern WGmc `*hebunum` — shallow | back umlaut, **late syncope** | `heofonum > heofnum` | **yes** (OE dat.pl) | *before* the input | **yes** (OE dat.pl) |
+
+Two independent measures, deliberately kept apart (task Part 6):
+
+- **Chronological depth of the start:** lines 1–4 (cluster) are **deep** (secure
+  to PIE zero-grade); lines 5–7 (remodelled `*hebun-`) are **shallow** (northern
+  WGmc, post-levelling).
+- **Regular-span length that reaches an *attested* endpoint:** lines 5–7 reach an
+  attested OE form but derive **no** labial; lines 1–4 derive the labial by a
+  long regular run but their **attested** endpoint is Norse (line 2) or nothing
+  in OE (lines 1, 3, 4).
+
+## 14.6 Ranking under CAPR's "longest defensible span" — and why they don't coincide
+
+- **Deepest derivation of the labial itself:** the **genitive/oblique cluster**
+  (lines 1–4). Here `mn > βn` is a real, regular, mult-1 step from a securely
+  reconstructed PIE zero-grade cell. This is the historically most interesting
+  span and the answer to "how far back can the labial be recovered": **to the
+  inherited genitive `*h₂k-mn-ós`.**
+- **Longest regular run to an *attested* endpoint — but in Norse:** the **dat.sg
+  cluster** `*hemni → hifni` (line 2), whose attested witness is ON `hifni`.
+- **Longest regular run to an attested *Old English* endpoint:** the **remodelled
+  vowel line** `*hebun(as/um) → heofon(es/um)` (lines 5–7) — but it presupposes
+  the labial and is *shallow*.
+
+**They do not coincide, and that non-coincidence is the whole result.** No single
+line is simultaneously (i) deep, (ii) labial-deriving, and (iii) terminating in
+an attested **Old English** form: the one non-regular event — restoration of the
+medial vowel into the labialised cluster stem — always intervenes between the
+regular labialization and the attested OE paradigm. CAPR must therefore **not**
+prefer a cluster oblique merely because it derives the `f` (its OE endpoint is
+counterfactual, §14.4 B), nor claim the shallow nominative captures the labial's
+history (it does not).
+
+## 14.7 What we now explain of R&T's `*himinaz ~ *himil ~ *hebun`
+
+- **The `b`: recovered further than R&T state.** Their northern-WGmc `*hebun` is
+  posited from OS `heban`; we derive its labial regularly from the inherited
+  oblique cluster `*hemn-` (`mn > βn/bn`, trace §14.2a) generalised out of the
+  genitive-based `*hemna-` stem, with ON `himinn : hifni` and OS `heban/hebenes`
+  as comparative anchors. The **consonantism** R&T left inside their
+  "not recoverable" verdict is, in fact, largely recoverable.
+- **The `u`: still opaque, and now precisely so.** It is the secondary resolution
+  vowel of the `*hebn-` cluster stem (§14.3), the genuine trigger of WS back
+  umlaut (parallel to *seven* `*sebun`), but its selected ablaut grade — `-u-`
+  here vs `-i-` in the cognate `*hemina-` stem — is not derivable. This is the
+  irreducible residue.
+- **Net:** we convert R&T's single opaque `*hebun` into **`b` (explained) + `u`
+  (residual)** — a real partial solution of a relationship they called
+  unrecoverable, without overclaiming the vowel.
+
+## 14.8 Consequence for the row and the executive conclusion
+
+Nothing here makes row 2068 a clean single-path match, and it should **remain
+`known_unmodelled`** for this pass. But the classification now rests on a sharp,
+positive finding rather than a shrug:
+
+> *heaven* is `known_unmodelled` because its regular history is **split across
+> cells**: the labial `f/b` is regularly derivable, and *deeply* — back to the
+> inherited genitive `*h₂k-mn-ós` (PGmc `*hemnaz`, `mn > βn`) — but only in the
+> **oblique cluster** cells, whose clean outputs (`hefnes`, `hifn`, `hefnum`)
+> are attested in Norse (ON `hifni`), **not** in Old English; while the
+> **attested** OE forms (`heofon`, `heofones`, `heofnum`) descend from a
+> **re-vowelled** `*hebun-` stem in which the labial is already present and only
+> ordinary Old English changes (back umlaut, late syncope) apply. A single
+> non-regular event — restoration of the medial vowel into the labialised
+> cluster stem — separates the two, and no one CAPR input-to-attested-OE-target
+> path spans it. CAPR can thus **describe** more regular history (the labial to
+> PIE depth) than it can **model** in one deterministic derivation.
+
+### Answers to the Part-10 questions
+
+1. **Deepest regular source of the labial:** the inherited **genitive** cluster,
+   PIE `*h₂k-mn-ós` → PGmc `*hemnaz` → regular `mn > βn` (§14.2a).
+2. **Longest credible regular run:** for the labial, the oblique cluster lines
+   (1–4); for an attested endpoint, the dat.sg `*hemni → hifni` (attested in ON)
+   and the vowel-line `*hebun → heofon` (attested in OE).
+3. **Actual ancestry vs counterfactual:** the cluster word-forms are
+   **counterfactual for OE** (B) and **genuine for ON** (A/C); the *consonant* of
+   OE `heofon` is nonetheless genuine cluster ancestry.
+4. **Best actual path to an attested OE form:** the remodelled vowel line
+   `*hebun(as/um) → heofon(es/um)` (lines 5–7).
+5. **How much of R&T's relationship we explain:** the **`b`** (regular oblique
+   `mn`), not the **`u`**.
+6. **What remains unrecoverable:** the ablaut source of the medial **`u`** and
+   the precise route/date of its restoration.
+7. **Why the row stays `known_unmodelled`:** the labial-deriving line and the
+   attested-OE line are **different cells**, joined only by a non-regular
+   vowel restoration; one deterministic CAPR path cannot cover both.
+
+### Shadow battery (this section; adjacent-`mn` SC022, production untouched)
+
+| input | reading | output | mult | attested? | same-cell regular ancestry of the labial? |
+| :-- | :-- | :-- | :-: | :-- | :-- |
+| `*xemnas` | gen.sg cluster | `hefnes` | 1 | no (OE `heofnes`) | **yes** (mn>β) |
+| `*xemni` | dat.sg cluster (i-end.) | `hifn` | 1 | via ON `hifni` | **yes** (mn>β + i-umlaut) |
+| `*xemnum` | dat.pl cluster | `hefnum` | 1 | no (OE `heofnum`) | **yes** |
+| `*xemnō` | gen.pl cluster | `hefn` | 1 | no | **yes** |
+| `*xemnaz` | `*hemna-` a-stem nom | `hefn` | 1 | no (OE `heofon`) | **yes** |
+| `*xebnas` | b-cluster gen (vowel not yet restored) | `hefnes` | 1 | no | (labial present) |
+| `*xebun` | remodelled nom (R&T) | `heofon` | 1 | **yes** | no (labial pre-supplied) |
+| `*xebunaz` | remodelled a-stem nom | `heofon` | 1 | **yes** | no |
+| `*xefun` | remodelled nom (f) | `heofon` | 1 | **yes** | no |
+| `*xemonų` | **current row-2068 PROTOFORM** | `heomon` | 1 | no | no (needs the proxy) |
+
+(Vowel-line genitives `*xebunas`/`*xefones` return `+?`: the transducer's PGmc
+**input** alphabet does not license those trisyllabic ending-shapes; R&T supply
+the regular `*hebunas > heofones` documentarily, and `*xebun → heofon` confirms
+the mechanism.)
+
+### Bibliography additions (this section)
+
+- Kroonen 2013, *EDPG* p. 220: paradigm nom. `*hemō`, gen. `*hemnaz`, dat.
+  `*hemeni`; stems `*hemina- ~ *hemna-`; PIE `*h₂ék-mōn`, gen. `*h₂k-mn-ós`
+  (`kroonen_etymological_dictionary_pgmc.vision.txt:12428`); Lühr 2000: 79.
+- ON `himinn : hifni` (oblique cluster labial); OS `heban / hebenes`
+  (Fulk `:5946`); OE parasite vowel `efn ~ efen` type (Campbell §363–§364;
+  Hogg §6.36 syncope/parasiting) as the *late* svarabhakti excluded in §14.3.
+- Shadow traces via `old_english_sandbox_after_*.bin` (adjacent-`mn` build,
+  ephemeral `/root`); rule labels as in the sandbox cascade order.
