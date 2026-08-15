@@ -2137,8 +2137,10 @@ define PNWGmcFinalLongORaising [
 
 # NWGmc: Unstressed *o → *u raising before following *u (Fulk §7.31).
 # Fulk: "*-on- should have yielded, in (N)WGmc., *-un- before *u in the next syllable"
-# This explains the acc.sg. of an-stems: PGmc *-onų → NWGmc *-unų → OE -an/-un
-# Example: *hemonų (acc.sg. 'heaven') → *hemunų → OE heofon (with back umlaut)
+# This explains the acc.sg. of an-stems: PGmc *-onų → NWGmc *-unų → OE -an/-un.
+# Retained as a genuine NWGmc change but currently UNWITNESSED in the 380-row
+# corpus: no selected input carries *o before *ų (the former witness heaven now
+# starts from northern-WGmc *xébun, not *xémonų). Fires on 0 rows; inert here.
 define PNWGmcUnstressedORaising [
     {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
 ];
