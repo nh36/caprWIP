@@ -1,8 +1,8 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2364
+- Internal production occurrences: 2362
 - Internal production unique forms: 1069
-- Printed main occurrences: 2276
+- Printed main occurrences: 2274
 - Printed main unique forms: 1059
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
@@ -15,16 +15,17 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1217 | 455 |
+| Old English | 1216 | 455 |
 | Proto-Germanic | 946 | 523 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 13 | 7 |
+| Proto-West Germanic | 5 | 4 |
+| Northern West Germanic | 8 | 3 |
 | Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
 | Gothic | 7 | 7 |
-| Old Saxon | 20 | 13 |
+| Old Saxon | 19 | 13 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Middle English | 1 | 1 |
@@ -39,7 +40,7 @@
 | source_protoform | 333 |
 | selected_input | 533 |
 | comparison_form | 821 |
-| evidence_form | 216 |
+| evidence_form | 214 |
 
 ## Internal-only rows by reason
 
@@ -51,15 +52,15 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 82
-- `example_input`: 108
-- `expected_output`: 133
-- `model_stage`: 71
-- `notation_or_segment`: 388
-- `yielded_output`: 102
+- `diagnostic_comparator`: 85
+- `example_input`: 107
+- `expected_output`: 132
+- `model_stage`: 70
+- `notation_or_segment`: 395
+- `yielded_output`: 101
 
-- Reader-facing include_in_example_index=yes: 496
-- Reader-facing include_in_example_index=no: 388
+- Reader-facing include_in_example_index=yes: 495
+- Reader-facing include_in_example_index=no: 395
 
 ## Print-unique entry audit
 
@@ -122,12 +123,9 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
-| pwgmc | `*hebun` | hebun | 2 | comparison_form; evidence_form |
-| pwgmc | `*hebunas` | hebunas | 2 | comparison_form; evidence_form |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*timbr` | timbr | 2 | comparison_form |
-| pwgmc | `*xébun` | xebun | 4 | evidence_form; selected_input; source_protoform |
 | goth | `baíram` | bairam | 1 | evidence_form |
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `dagam` | dagam | 1 | evidence_form |
@@ -148,31 +146,32 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 82
-- `example_input`: 108
-- `expected_output`: 133
-- `model_stage`: 71
-- `yielded_output`: 102
+- `diagnostic_comparator`: 85
+- `example_input`: 107
+- `expected_output`: 132
+- `model_stage`: 70
+- `yielded_output`: 101
 
 ### Included rows by inferred language
 
 - `goth`: 8
-- `oe`: 57
+- `nsgmc`: 5
+- `oe`: 56
 - `ofris`: 4
 - `ohg`: 2
-- `os`: 5
-- `pgmc`: 204
+- `os`: 3
+- `pgmc`: 203
 - `pnwgmc`: 3
-- `preoe`: 203
+- `preoe`: 201
 - `pwgmc`: 10
 
 ### Included rows by main-index overlap
 
-- `no`: 322
-- `yes`: 174
+- `no`: 319
+- `yes`: 176
 
-- Included whole-form rows with asterisks: 412
-- Included whole-form rows without asterisks: 84
+- Included whole-form rows with asterisks: 409
+- Included whole-form rows without asterisks: 86
 - Included rows inferred_language=oe with leading asterisk: 24
 - Included rows inferred_language=pgmc but OE-output-like form shape: 27
 
@@ -215,11 +214,11 @@ _None._
 
 ## Reader-facing example rows (sample)
 
-- `*z` (pgmc, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1010)
-- `*befer` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
-- `*befro` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
-- `*bébruz` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
-- `*cwedo` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
-- `*cwedu` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
-- `*feld` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
-- `*feldo` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1012)
+- `*liorna` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*liornaþ` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*liornian` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*lirna` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*lirnaþ` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*lirnian` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*líznô` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)
+- `*líznōjaną` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:1009)

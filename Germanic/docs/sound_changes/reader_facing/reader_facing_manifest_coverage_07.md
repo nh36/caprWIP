@@ -45,7 +45,7 @@
 | `053-054` Pre-umlaut bridge and W-loss | `SC053;SC054` | `053-054-pre-umlaut-bridge-and-w-loss.md` | yes |
 | `055-056` Umlaut core and palatal-diphthongization follower | `SC055;SC056` | `055-056-i-umlaut-core.md` | yes |
 | `057` OE J Cluster Coalescence note | `SC057` | `057-j-cluster-coalescence.md` | yes |
-| `058` OE Nasal Dissimilation residual note | `SC058` | `058-nasal-dissimilation.md` | yes |
+| `058` OE Nasal Dissimilation residual note | `SC058` | — | no |
 | `059` OE back mutation | `SC059` | `059-oe-back-mutation.md` | yes |
 | `060` WS palatal umlaut note | `SC060` | `060-ws-palatal-umlaut-note.md` | yes |
 | `061` Weak-tail nasal-loss note | `SC061` | `061-weak-tail-nasal-loss-note.md` | yes |
@@ -65,15 +65,15 @@
 
 ## SC numbers covered by reader-facing rule sections
 
-`SC049`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, `SC013`, `SC014`, `SC015`, `SC017`, `SC018`, `SC019`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC041`, `SC042`, `SC050`, `SC003`, `SC020`, `SC004`, `SC043`, `SC016`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`, `SC044`, `SC045`, `SC046`, `SC047`, `SC048`, `SC051`, `SC052`, `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, `SC058`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`, `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
+`SC049`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, `SC013`, `SC014`, `SC015`, `SC017`, `SC018`, `SC019`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC041`, `SC042`, `SC050`, `SC003`, `SC020`, `SC004`, `SC043`, `SC016`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`, `SC044`, `SC045`, `SC046`, `SC047`, `SC048`, `SC051`, `SC052`, `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`, `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`
 
 ## Manifest rows not yet covered
 
-1. none
+1. `058` OE Nasal Dissimilation residual note — missing `SC058`
 
 ## SC numbers present in the manifest but missing from reader-facing rule headings
 
-1. none
+`SC058`
 
 ## Reader-facing rule headings not present in the manifest
 

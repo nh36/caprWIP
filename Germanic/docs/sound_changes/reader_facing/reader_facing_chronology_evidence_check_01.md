@@ -4,8 +4,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 85.
-- Sections with warnings: 56.
+- Sections checked: 84.
+- Sections with warnings: 54.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -27,8 +27,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`PNWGmcStressedMonosyllableORaising`) {#rule-PNWGmcStressedMonosyllableORaising} | no | no | no | yes | no | yes | no | missing move-condition wording |
 | 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 022-mn-dissimilation.md | SC022. Dissimilation of \emph{mn} sequences (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | yes | no | no | yes | no | yes | no | — |
+| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising} | yes | no | no | yes | no | yes | no | — |
+| 022-mn-dissimilation.md | SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | yes | no | no | yes | no | yes | no | — |
 | 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
 | 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`PNWGmcLongENasalRounding`) {#rule-PNWGmcLongENasalRounding} | no | no | no | yes | yes | yes | no | missing move-condition wording |
@@ -67,7 +67,6 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 055-056-i-umlaut-core.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
 | 055-056-i-umlaut-core.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | no | yes | yes | no | yes | yes | no | missing move-condition wording |
 | 057-j-cluster-coalescence.md | SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 058-nasal-dissimilation.md | SC058. Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation} | no | no | no | no | no | yes | no | missing move-condition wording |
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | yes | yes | yes | yes | yes | no | no | — |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | no | yes | no | yes | yes | yes | no | missing move-condition wording |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |

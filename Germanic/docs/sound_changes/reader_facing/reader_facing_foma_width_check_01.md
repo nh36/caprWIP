@@ -4,8 +4,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 85.
-- Blocks over the conservative 90-character threshold: 11.
+- Foma blocks checked: 84.
+- Blocks over the conservative 90-character threshold: 10.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -28,7 +28,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`PNWGmcStressedMonosyllableORaising`) {#rule-PNWGmcStressedMonosyllableORaising} | 12 | 79 | no |
 | 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | 18 | 66 | no |
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | 14 | 46 | no |
-| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising} | 11 | 89 | no |
+| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising} | 15 | 89 | no |
 | 022-mn-dissimilation.md | SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | 19 | 36 | no |
 | 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | 11 | 30 | no |
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | 11 | 64 | no |
@@ -68,7 +68,6 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 055-056-i-umlaut-core.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 113 | 34 | no |
 | 055-056-i-umlaut-core.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | 127 | 110 | yes |
 | 057-j-cluster-coalescence.md | SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence} | 16 | 30 | no |
-| 058-nasal-dissimilation.md | SC058. Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation} | 24 | 100 | yes |
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 15 | 90 | no |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | 14 | 56 | no |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | 14 | 31 | no |
@@ -115,10 +114,6 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `110` chars — `    {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],`
 - `110` chars — `    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],`
 - `109` chars — `    {*ḗ} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]`
-
-### 058-nasal-dissimilation.md:24 — SC058. Nasal dissimilation in short-vowel environments (`OENasalDissimilation`) {#rule-OENasalDissimilation}
-
-- `100` chars — `    {*m} -> {*f} || EnglishStarShortVowel _ EnglishStarShortVowel {*n} [EnglishStarShortVowel | .#.]`
 
 ### 063-high-vowel-apocope.md:14 — SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope}
 
