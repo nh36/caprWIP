@@ -144,3 +144,11 @@ defer	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49	*wó
 defer	Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49	*wólfaz	pgmc		source_protoform	Intermediate wolf dev stage; deferred
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69	*xémonų	pgmc		source_protoform	Heaven PGmc form used as cross-reference comparison in stem/prow dev note
 defer	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:45	*mákōθ	pgmc		source_protoform	Intermediate make 3sg development stage; deferred
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:106	cluster				English word "cluster" in prose (adjacent -mn- cluster); not a linguistic form
+ignore	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:131	hefn				discussed in the attestation warning as NOT securely attested; must not be indexed as a form
+ignore	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:152	mV…n				retired proxy environment notation, not a linguistic form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:79	PNWGmcMnDissimilation				FST rule identifier, not a linguistic form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:84	PNWGmcMnDissimilation				FST rule identifier, not a linguistic form
+ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:105	*stebnō				voice/sound homonym reconstruction; per row-2216 policy must not be indexed from the stem/prow row
+accept	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:79	*sébun	pgmc		comparison_form	seven (row 2174) PGmc protoform, cited as the regular back-umlaut parallel
+accept	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:79	seofon	oe		comparison_form	seven (row 2174) OE form, cited as the regular back-umlaut parallel

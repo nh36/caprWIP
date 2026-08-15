@@ -30,8 +30,11 @@ SECTION_PREFIX_RE = re.compile(r"^(#{1,6})\s+Section\s+\d+:\s*")
 LEMMA_RE = re.compile(r"^---\s+(.*?)\s+---$")
 # Stage line label: "OEMedUnstressedULowering: ..."
 STAGE_LABEL_RE = re.compile(r"^([A-Za-z][A-Za-z0-9]*):")
-PWGMC_HEADER = "### Proto-West Germanic developments"
-NWGMC_HEADER = "### Northwest Germanic developments"
+# Section headers as they appear in the *compacted* report (after `## Section N:`
+# has been stripped and promoted to `###`). These must track the section names
+# emitted by oe_full_trace_report.STAGE_HEADERS.
+NW_WGMC_HEADER = "### Northwest and West Germanic developments"
+EAF_HEADER = "### Early Anglo-Frisian (North Sea Germanic)"
 OE_HEADER = "### Old English"
 ORTHOGRAPHY_HEADER = "### Orthography & surface"
 
@@ -117,21 +120,21 @@ def extract_section_body(lines: List[str], start: int) -> tuple[List[str], int]:
 def rewrite_entry_development_sections(lines: List[str]) -> tuple[List[str], bool]:
     notes = [line for line in lines if line.startswith("NOTE:")]
     lines = [line for line in lines if not line.startswith("NOTE:")]
-    headers = (PWGMC_HEADER, NWGMC_HEADER, OE_HEADER, ORTHOGRAPHY_HEADER)
+    headers = (NW_WGMC_HEADER, EAF_HEADER, OE_HEADER, ORTHOGRAPHY_HEADER)
     if any(lines.count(header) != 1 for header in headers):
         return lines, False
 
-    pwgmc = lines.index(PWGMC_HEADER)
-    nwgmc = lines.index(NWGMC_HEADER)
+    nw_wgmc = lines.index(NW_WGMC_HEADER)
+    eaf = lines.index(EAF_HEADER)
     old_english = lines.index(OE_HEADER)
     orthography = lines.index(ORTHOGRAPHY_HEADER)
-    if not (pwgmc < nwgmc < old_english < orthography):
+    if not (nw_wgmc < eaf < old_english < orthography):
         return lines, False
 
-    pwgmc_body, next_index = extract_section_body(lines, pwgmc)
-    if next_index != nwgmc:
+    nw_wgmc_body, next_index = extract_section_body(lines, nw_wgmc)
+    if next_index != eaf:
         return lines, False
-    nwgmc_body, next_index = extract_section_body(lines, nwgmc)
+    eaf_body, next_index = extract_section_body(lines, eaf)
     if next_index != old_english:
         return lines, False
     old_english_body, next_index = extract_section_body(lines, old_english)
@@ -139,13 +142,13 @@ def rewrite_entry_development_sections(lines: List[str]) -> tuple[List[str], boo
         return lines, False
 
     left_cell = (
-        format_table_cell("Proto-Northwest Germanic", nwgmc_body)
+        format_table_cell("Northwest and West Germanic", nw_wgmc_body)
         + "<br><br>"
-        + format_table_cell("Proto-West Germanic", pwgmc_body)
+        + format_table_cell("Early Anglo-Frisian", eaf_body)
     )
     right_cell = format_table_cell("Old English", old_english_body)
 
-    prefix = trim_blank_edges(lines[:pwgmc])
+    prefix = trim_blank_edges(lines[:nw_wgmc])
     suffix = trim_blank_edges(lines[orthography:])
     rewritten = [
         *prefix,
@@ -177,7 +180,7 @@ def rewrite_development_tables(lines: List[str]) -> tuple[List[str], List[str]]:
             j += 1
         entry = lines[i:j]
         updated_entry, transformed = rewrite_entry_development_sections(entry)
-        if not transformed and any(header in entry for header in (PWGMC_HEADER, NWGMC_HEADER, OE_HEADER)):
+        if not transformed and any(header in entry for header in (NW_WGMC_HEADER, EAF_HEADER, OE_HEADER)):
             failed_entries.append(line[2:].strip())
         rewritten.extend(updated_entry)
         i = j

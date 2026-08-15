@@ -497,10 +497,10 @@ class RealCorpusInvariantTests(unittest.TestCase):
             # full-trace snapshot was regenerated: stem moved exact_match -> mismatch,
             # matching the frozen baseline's 8 documented mismatches. Orthogonal to
             # the rename migration (gate B: outputs_sha256 unchanged).
-            "production_occurrences": 2353,
-            "production_unique_forms": 1139,
-            "print_main_occurrences": 2265,
-            "unique_printed_entries": 1061,
+            "production_occurrences": 2364,
+            "production_unique_forms": 1160,
+            "print_main_occurrences": 2276,
+            "unique_printed_entries": 1078,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -883,13 +883,13 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bo = self._rows("index_verborum_book_occurrences.tsv")
         be = self._rows("index_verborum_book_emissions.tsv")
 
-        self.assertEqual(len(pm), 2265)
+        self.assertEqual(len(pm), 2276)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
         self.assertEqual(source_not_in_book, 233)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2032)
-        self.assertEqual(len(be), 1865)
+        self.assertEqual(len(bo), 2043)
+        self.assertEqual(len(be), 1876)
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
         self.assertEqual(
@@ -933,12 +933,12 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bu = self._rows("index_verborum_book_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
 
-        self.assertEqual(len(pm), 2265, "corpus occurrence count")
-        source_not_in_book = 2265 - 2032
+        self.assertEqual(len(pm), 2276, "corpus occurrence count")
+        source_not_in_book = 2276 - 2043
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
-        self.assertEqual(len(be), 1865, "book emission count")
-        self.assertEqual(len(pu), 1061, "unique corpus entries")
-        self.assertEqual(len(bu), 828, "unique book entries")
+        self.assertEqual(len(be), 1876, "book emission count")
+        self.assertEqual(len(pu), 1078, "unique corpus entries")
+        self.assertEqual(len(bu), 846, "unique book entries")
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)
@@ -946,10 +946,10 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(total_occurrences, len(bo), "book_occurrences == sum(source_occurrence_count)")
 
         variety_labelled_unique = sum(1 for r in bu if (r.get("printed_variety") or "").strip())
-        self.assertEqual(variety_labelled_unique, 27, "variety-labelled unique book entries")
+        self.assertEqual(variety_labelled_unique, 28, "variety-labelled unique book entries")
 
         printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
-        self.assertEqual(printable_explicit, 1417, "printable explicit occurrences")
+        self.assertEqual(printable_explicit, 1425, "printable explicit occurrences")
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

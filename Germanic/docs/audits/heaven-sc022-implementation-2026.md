@@ -212,3 +212,58 @@ manifests, TSV, rule) are already updated here, so the rebuild is mechanical.
 **Note:** the model entries were pre-validated against the index-verborum
 language/variety registries (Old Norse `on`, Old Saxon `os`, Gothic `goth`,
 Northumbrian `north`), so they are ready for the deferred rebuild.
+
+## 9. Presentation-layer rebuild completed (2026-08-14/15)
+
+The deferred presentation layer (§8) has now been rebuilt for the heaven/stem
+change:
+
+- **Regenerated:** `lexical_volume_alpha_01.{md,tex,pdf}`,
+  `capr_book_draft_alpha_01.{md,pdf}`, all `index_verborum_*` artifacts, and the
+  debug trace reports (`oe_mismatch_report.txt`,
+  `oe_derivation_class_trace_report.{txt,compact.txt,compact.md}`,
+  `oe_full_trace_report.txt`, `oe_known_problems_report.txt`). The book PDF was
+  rendered in the `pandoc/latex` container and inspected: the heaven and stem
+  entries appear only in the `early_analogy` chapter with the correct fields,
+  the deep-oblique / `hifni` / `hefn`-not-attested / medial-`u` material, and the
+  Index Verborum places reconstructed (`*xébun`, `*hebun`, `*xémenaz`,
+  `*stámnaz`, `*stámniz`) vs attested (`heofon`, `heofnes`, `stefn`, `himinn`,
+  `hifni`, `heban`) forms correctly (never conflated).
+
+- **Necessary tooling bug fix:** `compact_trace_report.py` still referenced the
+  pre-refactor `STAGE_HEADERS` section names ("Proto-West / Northwest Germanic
+  developments"); the current report tools emit "Northwest and West Germanic
+  developments" + "Early Anglo-Frisian (North Sea Germanic)". The stale reflow
+  silently produced a plain-line compact report that the Index Verborum parser
+  could not read (it needs the `<br>` development table). Updated the reflow to
+  the current 5-section grouping (no change to the index parser). This is a
+  pre-existing drift, unrelated to heaven/stem, but blocked any faithful compact
+  regeneration.
+
+- **Index metadata:** added 8 broad-prose decisions for prose mentions in the
+  richer heaven/stem entries (ignore: `cluster`, `PNWGmcMnDissimilation`,
+  `mV…n`, `hefn`, `*stebnō`; accept: `*sébun`, `seofon` as *seven* comparanda),
+  re-anchored the `*stébnō` table decision, refreshed the variety-annotation
+  audit (heaven's early-Northumbrian `hefun`/`hefen`/`heben` + Mercian `heofen`),
+  and updated the deliberately-changed occurrence-count snapshots in
+  `test_index_verborum_variety.py` (production 2353→2364, print-main 2265→2276,
+  book-occ 2032→2043, etc.; algebraic invariants preserved). `lang=pgmc` is
+  retained for `*xébun` (the project's generic bucket for reconstructed Germanic
+  FST inputs; 168/186 `.recon` spans use it); the prose supplies the "northern
+  WGmc / pre-OE" qualification, which renders correctly in the book.
+
+- **Known limitation (pre-existing, out of scope):** the reader-facing
+  **sound-change** volume (reader_facing section 19) could not be regenerated
+  because the earlier SC058 dead-code removal was never propagated to the ~50
+  reader-facing files that still reference the removed `SC058` /
+  `rule-OENasalDissimilation` (the section-order check rejects the orphaned
+  `058-nasal-dissimilation.md`). The book PDF was therefore rendered against the
+  committed section-19 aggregate, so its **sound-change** chapters (incl. the
+  updated SC022 reader-facing chapter and the orphan SC058 chapter) remain as
+  previously committed. The heaven/stem **lexical** entries — the subject of this
+  work — are fully current. Completing the SC058 reader-facing cleanup is a
+  separate task that would unblock a full section-19 + sound-change-volume
+  rebuild.
+
+Scientific state is unchanged from `6a5b9398` (germanic.txt, TSV rows 2068/2216,
+cascade baseline 380/373/7/0, manifests). Full test suite: 152 tests OK.

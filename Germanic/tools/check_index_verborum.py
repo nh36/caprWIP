@@ -372,7 +372,7 @@ def assert_production_rows() -> None:
     assert ("*cnobba", "oe", "lexical_heading", "knob — OE *cnobba", "target_form") in keys
     assert ("*rēac", "oe", "lexical_heading", "reek — OE *rēac", "target_form") in keys
     assert ("*strīeġan", "oe", "lexical_heading", "strew — OE *strīeġan", "target_form") in keys
-    assert any(row.form == "*xémonų" and row.form_role == "selected_input" and row.source_scope == "trace_proto_input" for row in rows)
+    assert any(row.form == "*xébun" and row.form_role == "selected_input" and row.source_scope == "trace_proto_input" for row in rows)
     assert not any(row.source_scope in {"trace_stage", "trace_output"} for row in rows)
 
 
@@ -781,7 +781,7 @@ def assert_table_semantic_rows() -> None:
     ignored_pairs = parse_audit_table_semantic_ignored_pairs()
     for form in {"*kōz", "*kūi", "*kūiz", "*nasō", "*núsō"}:
         assert not any(pair_form == form for pair_form, _ in ignored_pairs)
-    assert ("*stébnō", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95") in ignored_pairs
+    assert ("*stébnō", "Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:120") in ignored_pairs
 
     def auto_or_suggest(form: str, role: str) -> bool:
         return (

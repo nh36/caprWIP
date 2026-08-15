@@ -6,7 +6,7 @@ COUNTERPART: heofon
 DERIVATION_CLASS: early_analogy
 
 This entry looks simple on its surface — one regular Old English span from
-[xébun]{.iv .recon lang=pgmc sort=xebun} to [`heofon`]{.iv lang=oe sort=heofon} 'heaven' — but it rests on a
+*\*xébun* to *heofon* 'heaven' — but it rests on a
 paradigm history complicated enough that the selected input already contains an
 analogically generalized labial. The subsections below justify the input, the
 class, and the deeper history that the deterministic cascade does **not** model.
@@ -40,22 +40,22 @@ No rule in this span creates the labial: it enters with the input `b`
 
 Ringe and Taylor reconstruct northern West Germanic
 [hebun]{.iv .recon lang=pgmc sort=hebun role=comparison_form} 'sky, heaven',
-gen. [hebunas]{.iv .recon lang=pgmc sort=hebunas role=comparison_form}, whence
+gen. [hebunas]{.iv .recon lang=pgmc sort=hebunas role=comparison_form} 'heaven', whence
 West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon} 'heaven', Mercian
 [`heofen`]{.iv lang=oe variety=merc sort=heofen} 'heaven' [@RingeTaylor2014, 272, 324].
 CAPR does **not** merely defer to that reconstruction: the deeper comparative
 analysis explains its labial.
 
 The word is an inherited **mn-stem** [@Kroonen2013, 220]: PIE *h₂ék-mōn, gen.
-*h₂k-mn-ós, remodelled in Germanic to nom. [hemō]{.iv .recon lang=pgmc sort=hemo},
-gen. [hemnaz]{.iv .recon lang=pgmc sort=hemnaz}. In the zero-grade **oblique
+*h₂k-mn-ós, remodelled in Germanic to nom. [hemō]{.iv .recon lang=pgmc sort=hemo} 'heaven',
+gen. [hemnaz]{.iv .recon lang=pgmc sort=hemnaz} 'heaven'. In the zero-grade **oblique
 cluster** cells the sequence *-mn-* is adjacent, and the change
 *mn > βn/bn/fn* is regular there (Fulk §6.14 [@Fulk2018, 121]). Old Norse
 preserves exactly this paradigmatic distribution —
 [`himinn`]{.iv lang=on sort=himinn} 'heaven' (nominative, with *m*) beside dative
-[`hifni`]{.iv lang=on sort=hifni} (oblique, with *f* from the syncopated cluster)
-— while Old English and Old Saxon (OS [`heban`]{.iv lang=os sort=heban},
-[`hebenes`]{.iv lang=os sort=hebenes} [@Fulk2018]) **generalized the labial**
+[`hifni`]{.iv lang=on sort=hifni} 'heaven' (oblique, with *f* from the syncopated cluster)
+— while Old English and Old Saxon (OS [`heban`]{.iv lang=os sort=heban} 'heaven',
+[`hebenes`]{.iv lang=os sort=hebenes} 'heaven' [@Fulk2018]) **generalized the labial**
 into the vowel-bearing stem. The `b` of *xébun is therefore analogical *within
 this nominative input*, but its historical source is regular and recoverable —
 back to the inherited genitive (see §E).
@@ -68,8 +68,8 @@ n-stem suffixal vowel, the genuine conditioning environment for West Saxon back
 umlaut of *e* (parallel to *seven*, §D), and it is supported by Ringe–Taylor's
 reconstruction and by the Old English back-mutation pattern [@RingeTaylor2014, 324].
 But its exact deeper ablaut grade — *u* here, against the *i* of the cognate
-vowel-stem [hemina-]{.iv .recon lang=pgmc sort=hemina} ([`himinn`]{.iv lang=on sort=himinn},
-Go. [`himins`]{.iv lang=goth sort=himins}) — is **not fully recoverable**. It is the
+vowel-stem [hemina-]{.iv .recon lang=pgmc sort=hemina} ([`himinn`]{.iv lang=on sort=himinn} 'heaven',
+Go. [`himins`]{.iv lang=goth sort=himins} 'heaven') — is **not fully recoverable**. It is the
 irreducible residue of the reconstruction; the `b` is not.
 
 ### D. Regular modelled span
@@ -94,12 +94,12 @@ evidential status marked:
 | :--- | :--- | :--- | :--- | :--- |
 | nom. citation [xémenaz]{.iv .recon lang=pgmc sort=xemenaz} | reconstructed (citation) | [`hemen`]{.iv lang=oe sort=hemen} | counterfactual (no labial) | citation a-stem; no cluster, so no regular `f` |
 | gen.sg cluster [xémnas]{.iv .recon lang=pgmc sort=xemnas} | reconstructed (PIE *h₂k-mn-ós) | [`hefnes`]{.iv lang=oe sort=hefnes} | reconstructed, **not attested in OE** | labial **regular** here (mn > βn) |
-| dat.sg cluster [xémni]{.iv .recon lang=pgmc sort=xemni} | reconstructed | [`hifn`]{.iv lang=oe sort=hifn} | attested only as ON [`hifni`]{.iv lang=on sort=hifni} | labial + i-umlaut regular |
+| dat.sg cluster [xémni]{.iv .recon lang=pgmc sort=xemni} | reconstructed | [`hifn`]{.iv lang=oe sort=hifn} | attested only as ON [`hifni`]{.iv lang=on sort=hifni} 'heaven' | labial + i-umlaut regular |
 | dat.pl cluster [xémnum]{.iv .recon lang=pgmc sort=xemnum} | reconstructed | [`hefnum`]{.iv lang=oe sort=hefnum} | reconstructed, **not attested in OE** | labial regular |
 | remodelled stem [xébun]{.iv .recon lang=pgmc sort=xebun} | reconstructed (R&T *hebun) | [`heofon`]{.iv lang=oe sort=heofon} | **attested** (selected row) | labial pre-supplied |
 | R&T genitive [hebunas]{.iv .recon lang=pgmc sort=hebunas} | reconstructed | [`heofones`]{.iv lang=oe sort=heofones} | **attested** | labial pre-supplied |
 | OE oblique [`heofnes`]{.iv lang=oe sort=heofnes} / [`heofnum`]{.iv lang=oe sort=heofnum} | **attested** | — | actual OE forms | carry `eo`; from the re-vowelled stem + late syncope |
-| ON [`himinn`]{.iv lang=on sort=himinn} : [`hifni`]{.iv lang=on sort=hifni} | **attested** (North Gmc) | — | attested cluster line | keeps the *m* : *f* alternation |
+| ON [`himinn`]{.iv lang=on sort=himinn} : [`hifni`]{.iv lang=on sort=hifni} 'heaven' | **attested** (North Gmc) | — | attested cluster line | keeps the *m* : *f* alternation |
 | OS [`heban`]{.iv lang=os sort=heban} / [`hebenes`]{.iv lang=os sort=hebenes} | **attested** (Old Saxon) | — | labial generalized | vowel-bearing throughout |
 
 Distinctions kept explicit: **attested** OE forms (`heofon`, `heofones`,
@@ -108,7 +108,7 @@ Distinctions kept explicit: **attested** OE forms (`heofon`, `heofones`,
 English they are **counterfactual** — the actual attested obliques carry `eo`
 from back mutation on the retained/​restored medial vowel, then late syncope
 (`heofonum > heofnum`), not from a bare `-fn-` cluster. The genuine attested
-witness of the pure cluster line is Old Norse [`hifni`]{.iv lang=on sort=hifni}.
+witness of the pure cluster line is Old Norse [`hifni`]{.iv lang=on sort=hifni} 'heaven'.
 
 ### F. Why the oblique is not the selected row
 
@@ -126,8 +126,8 @@ sound change to a secure attested target — the longest clean modellable span.
 
 Bare Old English **`hefn`** is **not** securely attested and must not be
 reintroduced as an attested comparator. The earliest witnesses (Cædmon's Hymn)
-are [`hefun`]{.iv lang=oe variety=north sort=hefun}, [`hefen`]{.iv lang=oe variety=north sort=hefen}, and
-(Moore Bede) [`heben`]{.iv lang=oe variety=north sort=heben} — all with a **medial vowel**. The
+are [`hefun`]{.iv lang=oe variety=north sort=hefun} 'heaven', [`hefen`]{.iv lang=oe variety=north sort=hefen} 'heaven', and
+(Moore Bede) [`heben`]{.iv lang=oe variety=north sort=heben} 'heaven' — all with a **medial vowel**. The
 reconstructed cluster output `hefn` (§E) is a reconstruction, never a manuscript
 form.
 

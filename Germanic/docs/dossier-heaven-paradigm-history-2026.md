@@ -1,7 +1,13 @@
 # Dossier: the OE *heofon / hefen / heben* 'heaven' word — paradigm history and CAPR modelling (2026)
 
-**Type:** first-principles research dossier. **No production change.**
-**Branch:** `stem-row-2216-correction` · **HEAD at authoring:** `22d31464`.
+**Type:** first-principles research dossier (§§1–14, research-only) plus the
+**implemented decision** recorded in §15. §§1–14 were written before any
+production change; §15 (2026-08-14) records the decision subsequently
+**implemented** in commit `7de9133f` (row 2068 = `*xébun -> heofon`,
+`early_analogy`; SC022 made literal adjacent `mn > βn`). Descriptions of the
+"current"/"live" production in §§1–14 therefore refer to the
+**pre-implementation** state and are retained as the research record.
+**Branch:** `stem-row-2216-correction` · **HEAD at authoring of §§1–14:** `22d31464`.
 Supersedes the piecemeal treatment in `audits/heaven-paradigm-cell-lautgesetzlich-probe.md`
 (whose central proposal is here **corrected**) and complements
 `dossier-sc022-mn-dissimilation-2026.md`,
@@ -90,10 +96,12 @@ unrecoverable is the medial **`u`** (its ablaut source), never the `b`.
 
 ## 2. History of the CAPR problem
 
-- **Current production (row 2068):** PROTO `*xémenaz`, PROTOFORM `*xémonų`
-  (acc.sg., **intervocalic** m), COUNTERPART `heofon`, class `late_analogy`.
-  It derives `heofon` **only** because live SC022 `PNWGmcMnDissimilation` uses a
-  surface `m -> β / V _ V … N` **proxy** that labializes an intervocalic `m`.
+- **Pre-implementation production (row 2068, before commit `7de9133f`):** PROTO
+  `*xémenaz`, PROTOFORM `*xémonų` (acc.sg., **intervocalic** m), COUNTERPART
+  `heofon`, class `late_analogy`. It derived `heofon` **only** because the
+  then-live SC022 `PNWGmcMnDissimilation` used a surface `m -> β / V _ V … N`
+  **proxy** that labialized an intervocalic `m`. (This is the state the §15
+  decision replaced; see §15 for the implemented row.)
 - **`dossier-sc022-mn-dissimilation-2026.md`** established (sources) that the
   *real* historical change is the adjacent-cluster `-mn- > -bn-`, and that the
   `mV…n` environment is a segmental proxy for mn-stem allomorphy.
