@@ -18,3 +18,12 @@ accept	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59	r
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:120	*stébnō				wrong homonym noted in table; must not be indexed from stem/prow row 2216
 ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57	spárē				probe/comparison helper in table, not a standalone index occurrence
 ignore	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58	spárēθi				probe/comparison helper in table, not a standalone index occurrence
+accept	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	*kráftaz	pgmc		selected_input	selected PGmc a-stem input (explicit stage; no longer silent-inferred)
+accept	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56	*xláðaną	pgmc		selected_input	selected PGmc strong-verb input (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:57	*lábbaz	pgmc		source_protoform	PGmc competing labial-grade comparator (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:58	*láppô	pgmc		selected_input	selected PGmc weak-noun input (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57	*xláxjaną	pgmc		selected_input	selected PGmc j-present input (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:52	*laimōn	pgmc		selected_input	PGmc comparative-family form (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53	*láimą	pgmc		selected_input	selected PGmc stem-class input (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:56	*lúnganjō	pgmc		selected_input	selected PGmc derived formation (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:55	*sib-iz	pgmc		selected_input	PGmc i-stem ancestor line (explicit stage)

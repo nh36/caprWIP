@@ -206,6 +206,35 @@ ALLOWED_FORM_ROLES = {
     "comparison_form",
     "regular_output",
 }
+
+# Reconstructed historical stages, ordered oldest -> youngest. A reconstruction
+# asterisk marks a form as *reconstructed*, not as Proto-Germanic: the historical
+# stage is a separate axis that must be declared explicitly by the canonical
+# source (model-entry PROTO_STAGE / PROTOFORM_STAGE, propagated via the manifest).
+RECONSTRUCTED_STAGE_CODES = ("pie", "pgmc", "pnwgmc", "pwgmc", "paf", "preoe")
+
+
+def require_reconstructed_stage(stage: str, *, form: str, scope: str, source_ref: str) -> str:
+    """Fail-closed resolution of a reconstructed form's historical stage.
+
+    Computational convenience must not silently become historical metadata: an
+    absent or unrecognised stage is never coerced to ``pgmc``. It raises so the
+    gap is fixed at the data layer instead of mislabelling the printed index.
+    """
+    stage = (stage or "").strip()
+    if not stage:
+        raise ValueError(
+            f"Missing historical stage for reconstructed form {form!r} "
+            f"({scope} @ {source_ref}); declare PROTO_STAGE/PROTOFORM_STAGE. "
+            "Reconstructed forms are not silently labelled pgmc."
+        )
+    if stage not in RECONSTRUCTED_STAGE_CODES:
+        raise ValueError(
+            f"Unknown reconstructed stage {stage!r} for form {form!r} "
+            f"({scope} @ {source_ref}); valid stages: {list(RECONSTRUCTED_STAGE_CODES)}"
+        )
+    return stage
+
 FORM_RE = re.compile(r"[*A-Za-zÀ-ɏḀ-ỿͰ-Ͽἀ-῿þðæǣœȳċġǭǫáéíóúāēīōūḗḯ'().-]+")
 MARKUP_FORM_RE = re.compile(r"\\emph\{([^}]+)\}|`([^`]+)`")
 RECON_SPAN_RE = re.compile(r"\[([^\]]+)\]\{\.recon(?:[^}]*)?\}")
@@ -2546,7 +2575,10 @@ def infer_table_semantic_language(
                 return next(iter(non_oe_hints)), True
             if len(non_oe_hints) > 1:
                 return "", False
-            return "pgmc", False if role == "comparison_form" else True
+            # Reconstructed form with no stage signal: fail closed. A reconstruction
+            # asterisk is not evidence of Proto-Germanic; route to the review/decision
+            # queue instead of silently labelling it pgmc.
+            return "", False
         if role in {"target_form", "regular_output"}:
             if derivation_class == "reconstructed_oe" and mention.form in target_forms:
                 return "oe", True
@@ -2556,12 +2588,13 @@ def infer_table_semantic_language(
                 return next(iter(non_oe_hints)), True
             if len(non_oe_hints) > 1:
                 return "", False
-            return "pgmc", False
+            # Reconstructed output with no stage signal: fail closed (never silent pgmc).
+            return "", False
     if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
         for code in ("preoe", "paf", "pwgmc", "pnwgmc", "pgmc", "pie"):
             if code in hints:
                 return code, True
-        return "pgmc", True
+        return "", False
     if role in {"target_form", "regular_output"}:
         if len(hints - {"oe"}) == 0:
             return "oe", True
@@ -2851,9 +2884,9 @@ def build_production_rows(
         ref = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
         oe_display = oe_target_display(row["counterpart"], row["derivation_class"])
         add_production(store, language="oe", form=row["counterpart"], display=oe_display, form_role="target_form", source_scope="lexical_heading", source_ref=ref, origin="manifest")
-        add_production(store, language="pgmc", form=row["protoform"], form_role="source_protoform", source_scope="lexical_protoform", source_ref=ref, origin="manifest")
+        add_production(store, language=require_reconstructed_stage(row.get("protoform_stage", ""), form=row["protoform"], scope="lexical_protoform", source_ref=ref), form=row["protoform"], form_role="source_protoform", source_scope="lexical_protoform", source_ref=ref, origin="manifest")
         if row["proto"] and row["proto"] != row["protoform"]:
-            add_production(store, language="pgmc", form=row["proto"], form_role="source_protoform", source_scope="lexical_proto", source_ref=ref, origin="manifest")
+            add_production(store, language=require_reconstructed_stage(row.get("proto_stage", ""), form=row["proto"], scope="lexical_proto", source_ref=ref), form=row["proto"], form_role="source_protoform", source_scope="lexical_proto", source_ref=ref, origin="manifest")
 
     # Also build a lookup by (title, expected) only — used to detect obsolete compact traces
     manifest_by_title_counterpart = {
@@ -2879,7 +2912,23 @@ def build_production_rows(
             ref = heading_ref(str(entry["title"]), str(entry["expected"]))
             oe_display = str(entry["expected"])
         if entry["proto_input"]:
-            add_production(store, language="pgmc", form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
+            if manifest_row is not None:
+                # A modelled selected input carries its declared historical stage
+                # (e.g. heaven *xébun -> pwgmc). Fail closed on an absent/unknown stage.
+                stage = require_reconstructed_stage(
+                    manifest_row.get("protoform_stage", ""),
+                    form=str(entry["proto_input"]),
+                    scope="trace_proto_input",
+                    source_ref=ref,
+                )
+            else:
+                # Corpus selected input with no model entry: this is the Proto-Germanic
+                # reconstruction heading its derivation. Any *post*-PGmc selected input
+                # must declare PROTOFORM_STAGE in a model entry (handled by the branch
+                # above), so this is the affirmed PGmc corpus stage, not a silent
+                # reconstruction->pgmc coercion.
+                stage = "pgmc"
+            add_production(store, language=stage, form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
 
     for row in explicit_tag_occurrences():
         if row["language"]:

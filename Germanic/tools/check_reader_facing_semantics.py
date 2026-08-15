@@ -1413,10 +1413,12 @@ def run_row2216_invariants() -> None:
         "Row 2216 stem entry must not use *stébnō as its PROTOFORM or selected input (wrong homonym)",
     )
 
-    # 2. derivation class must be known_unmodelled (not early_analogy)
+    # 2. derivation class is early_analogy: stem 2216 was moved
+    # known_unmodelled -> early_analogy (authoritative decision; *stámniz -> stefn
+    # is regularly modelled via SC022 adjacent mn > βn).
     assert_true(
-        "DERIVATION_CLASS: known_unmodelled" in stem_text,
-        "Row 2216 must be classified as known_unmodelled, not early_analogy",
+        "DERIVATION_CLASS: early_analogy" in stem_text,
+        "Row 2216 must be classified as early_analogy (moved from known_unmodelled)",
     )
 
     # 3. homonym note must be present
@@ -1443,22 +1445,22 @@ def run_row2216_invariants() -> None:
                         protoform != "*stébnō",
                         f"Aligned data row 2216 must not use PROTOFORM *stébnō; found {protoform!r}",
                     )
-                    # 5. derivation class must be known_unmodelled
+                    # 5. derivation class is early_analogy (regularly modelled)
                     deriv_class = row[10]
                     assert_true(
-                        deriv_class == "known_unmodelled",
-                        f"Aligned data row 2216 must be known_unmodelled; found {deriv_class!r}",
+                        deriv_class == "early_analogy",
+                        f"Aligned data row 2216 must be early_analogy; found {deriv_class!r}",
                     )
                     break
 
-    # 6. manifest must agree (trace_match_status != confident if no FST trace)
+    # 6. manifest must agree: stem is now confidently traced (*stámniz -> stefn)
     if MANIFEST_PATH.exists():
         with open(MANIFEST_PATH, encoding="utf-8", newline="") as f:
             for row in csv.DictReader(f, delimiter="\t"):
                 if row.get("row_id") == "2216":
                     assert_true(
-                        row.get("trace_match_status", "") != "confident",
-                        "Manifest row 2216 must not be marked confident without an FST trace",
+                        row.get("trace_match_status", "") == "confident",
+                        "Manifest row 2216 must be a confident FST trace (early_analogy)",
                     )
                     break
 
@@ -1844,20 +1846,21 @@ def run_row2216_voice_stem_regressions() -> None:
         "Homonym voice path must gloss stefn as 'voice, sound', not 'stem, trunk'",
     )
 
-    # 3. No regular_output role in row 2216 (known_unmodelled, no FST trace)
+    # 3. No regular_output role in row 2216 (the entry is table-based, not a
+    # single regular span; early_analogy input *stámniz is modelled via SC022).
     assert_true(
         "role=regular_output" not in stem,
-        "Row 2216 known_unmodelled entry must not have role=regular_output",
+        "Row 2216 stem entry must not have role=regular_output",
     )
 
-    # 4. Row 2216 in aligned data: no *stébnō PROTOFORM, class=known_unmodelled
+    # 4. Row 2216 in aligned data: no *stébnō PROTOFORM, class=early_analogy
     if ALIGNED_DATA_PATH.exists():
         with open(ALIGNED_DATA_PATH, encoding="utf-8", newline="") as f:
             reader = csv.reader(f, delimiter="\t")
             for row in reader:
                 if len(row) >= 11 and row[0] == "2216" and row[7] == "Old_English":
                     assert_true(row[2] != "*stébnō", f"Aligned row 2216 PROTOFORM must not be *stébnō; got {row[2]!r}")
-                    assert_true(row[10] == "known_unmodelled", f"Aligned row 2216 must be known_unmodelled; got {row[10]!r}")
+                    assert_true(row[10] == "early_analogy", f"Aligned row 2216 must be early_analogy; got {row[10]!r}")
                     break
 
     # 5. Index forms TSV must not have *stébnō for stem row as selected_input/trace

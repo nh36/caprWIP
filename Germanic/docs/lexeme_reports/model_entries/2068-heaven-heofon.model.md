@@ -39,12 +39,12 @@ No rule in this span creates the labial: it enters with the input `b`
 ### B. Why *xébun is not arbitrary
 
 Ringe and Taylor reconstruct northern West Germanic
-[hebun]{.iv .recon lang=pgmc sort=hebun role=comparison_form} 'sky, heaven',
-gen. [hebunas]{.iv .recon lang=pgmc sort=hebunas role=comparison_form} 'heaven', whence
+[hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form} 'sky, heaven',
+gen. [hebunas]{.iv .recon lang=pwgmc sort=hebunas role=comparison_form} 'heaven', whence
 West Saxon and Northumbrian [`heofon`]{.iv lang=oe sort=heofon} 'heaven', Mercian
 [`heofen`]{.iv lang=oe variety=merc sort=heofen} 'heaven' [@RingeTaylor2014, 272, 324].
-CAPR does **not** merely defer to that reconstruction: the deeper comparative
-analysis explains its labial.
+R&T's *hebun* is the lexeme CAPR writes *\*xébun* (canonical *x* for source *h*),
+dated to that northern West Germanic (`pwgmc`) stage, not Proto-Germanic; §D explains its labial.
 
 The word is an inherited **mn-stem** [@Kroonen2013, 220]: PIE *h₂ék-mōn, gen.
 *h₂k-mn-ós, remodelled in Germanic to nom. [hemō]{.iv .recon lang=pgmc sort=hemo} 'heaven',
@@ -96,8 +96,8 @@ evidential status marked:
 | gen.sg cluster [xémnas]{.iv .recon lang=pgmc sort=xemnas} | reconstructed (PIE *h₂k-mn-ós) | [`hefnes`]{.iv lang=oe sort=hefnes} | reconstructed, **not attested in OE** | labial **regular** here (mn > βn) |
 | dat.sg cluster [xémni]{.iv .recon lang=pgmc sort=xemni} | reconstructed | [`hifn`]{.iv lang=oe sort=hifn} | attested only as ON [`hifni`]{.iv lang=on sort=hifni} 'heaven' | labial + i-umlaut regular |
 | dat.pl cluster [xémnum]{.iv .recon lang=pgmc sort=xemnum} | reconstructed | [`hefnum`]{.iv lang=oe sort=hefnum} | reconstructed, **not attested in OE** | labial regular |
-| remodelled stem [xébun]{.iv .recon lang=pgmc sort=xebun} | reconstructed (R&T *hebun) | [`heofon`]{.iv lang=oe sort=heofon} | **attested** (selected row) | labial pre-supplied |
-| R&T genitive [hebunas]{.iv .recon lang=pgmc sort=hebunas} | reconstructed | [`heofones`]{.iv lang=oe sort=heofones} | **attested** | labial pre-supplied |
+| remodelled stem [xébun]{.iv .recon lang=pwgmc sort=xebun} | reconstructed (R&T *hebun) | [`heofon`]{.iv lang=oe sort=heofon} | **attested** (selected row) | labial pre-supplied |
+| R&T genitive [hebunas]{.iv .recon lang=pwgmc sort=hebunas} | reconstructed | [`heofones`]{.iv lang=oe sort=heofones} | **attested** | labial pre-supplied |
 | OE oblique [`heofnes`]{.iv lang=oe sort=heofnes} / [`heofnum`]{.iv lang=oe sort=heofnum} | **attested** | — | actual OE forms | carry `eo`; from the re-vowelled stem + late syncope |
 | ON [`himinn`]{.iv lang=on sort=himinn} : [`hifni`]{.iv lang=on sort=hifni} 'heaven' | **attested** (North Gmc) | — | attested cluster line | keeps the *m* : *f* alternation |
 | OS [`heban`]{.iv lang=os sort=heban} / [`hebenes`]{.iv lang=os sort=hebenes} | **attested** (Old Saxon) | — | labial generalized | vowel-bearing throughout |
@@ -135,7 +135,7 @@ form.
 
 The row is **`early_analogy`**, not `late_analogy` and not `known_unmodelled`.
 
-- The selected row models exactly one form, [xébun]{.iv .recon lang=pgmc sort=xebun}
+- The selected row models exactly one form, [xébun]{.iv .recon lang=pwgmc sort=xebun}
   → [`heofon`]{.iv lang=oe sort=heofon}. The necessary paradigm restructuring
   (labial levelling + suffix-vowel generalization) precedes the selected input;
   once that input is chosen, the modelled development is regular. This is the

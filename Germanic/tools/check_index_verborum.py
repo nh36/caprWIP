@@ -762,7 +762,7 @@ def assert_table_semantic_rows() -> None:
         and row["language"] == "pgmc"
         and row["form_role"] == "selected_input"
         and row["source_ref"] == "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50"
-        for row in table_auto_rows
+        for row in table_rows
     )
     assert not any(
         row["form"] == "*kráftaz"

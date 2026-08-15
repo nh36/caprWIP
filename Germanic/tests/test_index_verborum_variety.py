@@ -497,10 +497,15 @@ class RealCorpusInvariantTests(unittest.TestCase):
             # full-trace snapshot was regenerated: stem moved exact_match -> mismatch,
             # matching the frozen baseline's 8 documented mismatches. Orthogonal to
             # the rename migration (gate B: outputs_sha256 unchanged).
+            #
+            # unique counts are -1 vs the earlier snapshot because heaven's *hebun
+            # carried a duplicate chronological label (pgmc in the model entry vs
+            # pwgmc in reader-facing section 19); dating both to pwgmc merges them
+            # into a single headword. Occurrence totals are unchanged.
             "production_occurrences": 2364,
-            "production_unique_forms": 1160,
+            "production_unique_forms": 1159,
             "print_main_occurrences": 2276,
-            "unique_printed_entries": 1078,
+            "unique_printed_entries": 1077,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -937,8 +942,11 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         source_not_in_book = 2276 - 2043
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
         self.assertEqual(len(be), 1876, "book emission count")
-        self.assertEqual(len(pu), 1078, "unique corpus entries")
-        self.assertEqual(len(bu), 846, "unique book entries")
+        # -1 unique vs the pre-mn-adjudication snapshot: heaven's *hebun was labelled
+        # pgmc in the model entry but pwgmc in reader-facing section 19 (a duplicate
+        # chronological label). Dating both to pwgmc merges them into one headword.
+        self.assertEqual(len(pu), 1077, "unique corpus entries")
+        self.assertEqual(len(bu), 845, "unique book entries")
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)

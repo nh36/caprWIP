@@ -182,6 +182,69 @@ PIE → PGmc → PNWGmc → PWGmc → Pre-OE → OE
 
 Proto-Anglo-Frisian (`paf`) is an optional analytical stage used between PWGmc and Pre-OE when a source or adopted analysis reconstructs an Anglo-Frisian common stage. Language/stage codes and computational provenance are **independent**: a form may be tagged `lang=preoe` because it belongs to the historical Pre-OE stage, not because the transducer predicted it.
 
+### Reconstruction status vs. historical stage (independent axes)
+
+The four properties of an indexed form are **orthogonal** and must never be
+conflated:
+
+| Axis | Encoded by | Meaning |
+| :--- | :--- | :--- |
+| reconstruction **status** | `.recon` class / leading `*` | the form is reconstructed, *not* attested — **this says nothing about which stage** |
+| historical **stage** | `lang=` (`pie … preoe`) | the comparative-Germanic stage the form belongs to |
+| form **role** | `role=` | selected_input, source_protoform, comparison_form, … |
+| **notation** | see below | which scholar's transcription is used (CAPR `x` vs. source `h`) |
+
+The central rule: **a reconstruction asterisk means "reconstructed", it does not
+mean "Proto-Germanic".** `*`, `role=selected_input`, and a `early_analogy`
+derivation class are **not** evidence of any particular stage. The stage must be
+declared explicitly, and an unknown stage **fails closed** — it is never silently
+defaulted to `pgmc` (nor to `preoe`).
+
+### Where the stage of a lexical PROTO/PROTOFORM comes from
+
+For the lexical headwords (`lexical_proto`, `lexical_protoform`) and the
+selected input (`trace_proto_input`), the stage is **not** hard-coded in the
+index builder. It is declared per row in the canonical sidecar
+`Germanic/docs/assembly/entry_stage_metadata.tsv`
+(`row_id → proto_stage, protoform_stage`), propagated into
+`manifest_all_by_class.tsv`, and read from there. `build_index_verborum.py`
+resolves it through `require_reconstructed_stage(...)`, which **raises** on a
+blank or unrecognised stage. A corpus selected input that has no model entry is
+the Proto-Germanic reconstruction heading its derivation; any *post*-PGmc
+selected input **must** declare its stage in the sidecar (as heaven does).
+
+Table-scanned and broad-prose reconstructed forms with no explicit stage signal
+are routed to the review/decision queues (`table_semantic` /
+`broad_prose_decisions`) rather than auto-labelled `pgmc`; a curator affirms the
+stage explicitly.
+
+### Source vs. canonical transcription (`x` ≠ new lexeme)
+
+CAPR's canonical transcription writes the Germanic dorsal fricative `x`; several
+sources (e.g. Ringe & Taylor) write it `h`. These are the **same lexeme in two
+notations**, so they must share one stage and must not appear as two unrelated
+Proto-Germanic headwords. Example: R&T's northern West Germanic *hebun* is the
+lexeme CAPR writes *\*xébun*; both are dated `pwgmc`, so the source spelling and
+the canonical spelling are never given conflicting chronological labels.
+
+### Worked examples
+
+```markdown
+# Regular etymon — PROTO == PROTOFORM, ordinary Proto-Germanic input
+PROTO/PROTOFORM  *helpaną   (sidecar: proto_stage=pgmc, protoform_stage=pgmc)
+[*helpan*]{.iv lang=pgmc sort=helpana}          # selected input, PGmc
+
+# heaven — analogically remodelled input is *later* than the PGmc paradigm
+PROTO       *xémenaz   (pgmc — Kroonen's PGmc mn-stem citation)
+PROTOFORM   *xébun     (pwgmc — R&T's northern West Germanic remodelled stem)
+[xémnas]{.iv .recon lang=pgmc sort=xemnas}      # deeper oblique cluster: PGmc
+[xébun]{.iv .recon lang=pwgmc sort=xebun}       # selected input: post-PGmc
+[hebun]{.iv .recon lang=pwgmc sort=hebun}       # R&T's h-notation of *xébun (same stage)
+```
+
+An uncertain stage is preserved as uncertain (routed to review), never
+manufactured to make a build pass.
+
 ## Semantic markup classes
 
 Each class classifies **how the form is used**, not its linguistic properties:

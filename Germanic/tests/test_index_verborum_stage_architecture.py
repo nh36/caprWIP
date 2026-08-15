@@ -1,0 +1,236 @@
+#!/usr/bin/env python3
+"""Regression tests for the Index Verborum historical-stage architecture.
+
+Core principle under test: a reconstruction asterisk means *reconstructed*, NOT
+*Proto-Germanic*. Historical stage is a separate, explicit axis. Computational
+convenience must never silently become historical metadata:
+
+  * reconstructed forms are never *silently* coerced to ``pgmc``;
+  * the historical stage is declared explicitly by the canonical source
+    (the ``entry_stage_metadata.tsv`` sidecar, propagated through the manifest);
+  * an absent or unknown stage fails closed instead of defaulting to ``pgmc``
+    (or ``preoe``);
+  * source-scholar transcription (Ringe & Taylor ``h``) and CAPR canonical
+    transcription (``x``) are dated to the *same* stage, so one lexeme never
+    acquires duplicate chronological labels.
+
+Run: cd Germanic/tests && python3 -m unittest test_index_verborum_stage_architecture
+"""
+from __future__ import annotations
+
+import csv
+import sys
+import unittest
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+BOOK = REPO_ROOT / "Germanic/docs/book"
+ASSEMBLY = REPO_ROOT / "Germanic/docs/assembly"
+TOOLS = REPO_ROOT / "Germanic/tools"
+
+sys.path.insert(0, str(TOOLS))
+import build_index_verborum as biv  # noqa: E402
+
+RECONSTRUCTED_STAGES = set(biv.RECONSTRUCTED_STAGE_CODES)
+
+
+def _rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def _forms() -> list[dict[str, str]]:
+    return _rows(BOOK / "index_verborum_forms.tsv")
+
+
+class RequireReconstructedStageTests(unittest.TestCase):
+    """The fail-closed stage resolver never invents pgmc."""
+
+    def test_valid_stage_passes_through(self):
+        for code in RECONSTRUCTED_STAGES:
+            self.assertEqual(
+                biv.require_reconstructed_stage(code, form="*x", scope="s", source_ref="r"),
+                code,
+            )
+
+    def test_blank_stage_fails_closed(self):
+        with self.assertRaises(ValueError):
+            biv.require_reconstructed_stage("", form="*xébun", scope="lexical_protoform", source_ref="r")
+
+    def test_whitespace_stage_fails_closed(self):
+        with self.assertRaises(ValueError):
+            biv.require_reconstructed_stage("   ", form="*x", scope="s", source_ref="r")
+
+    def test_unknown_stage_fails_closed(self):
+        with self.assertRaises(ValueError):
+            biv.require_reconstructed_stage("nwgmc-northsea", form="*x", scope="s", source_ref="r")
+
+    def test_pgmc_is_not_a_hardcoded_fallback(self):
+        # A blank stage must NOT silently resolve to pgmc.
+        with self.assertRaises(ValueError):
+            biv.require_reconstructed_stage(None, form="*x", scope="s", source_ref="r")  # type: ignore[arg-type]
+
+
+class TableSemanticInferenceFailsClosedTests(unittest.TestCase):
+    """A starred form with no stage signal is never inferred as pgmc."""
+
+    def _mention(self, form: str, cell_text: str = "", row_text: str = ""):
+        return biv.TableFormMention(
+            form=form,
+            source_ref="Germanic/docs/lexeme_reports/model_entries/9999-x.model.md:1",
+            source_path="Germanic/docs/lexeme_reports/model_entries/9999-x.model.md",
+            line_no=1,
+            heading="### Test",
+            line_text="",
+            row_label="row",
+            row_text=row_text,
+            cell_header="",
+            cell_kind="input",
+            cell_text=cell_text,
+        )
+
+    def test_starred_selected_input_without_hint_is_unresolved(self):
+        lang, confident = biv.infer_table_semantic_language(
+            self._mention("*xyzaz"), "selected_input", set()
+        )
+        self.assertEqual(lang, "", "reconstructed selected input with no hint must fail closed")
+        self.assertFalse(confident)
+
+    def test_starred_source_protoform_without_hint_is_unresolved(self):
+        lang, _ = biv.infer_table_semantic_language(
+            self._mention("*xyzaz"), "source_protoform", set()
+        )
+        self.assertEqual(lang, "")
+
+    def test_explicit_later_stage_hint_is_honoured(self):
+        lang, confident = biv.infer_table_semantic_language(
+            self._mention("*xébun", cell_text="northern West Germanic *xébun", row_text=""),
+            "selected_input",
+            set(),
+        )
+        # An explicit later-stage hint must win; it must not be flattened to pgmc.
+        self.assertNotEqual(lang, "pgmc")
+
+
+class ProductionStageInvariantTests(unittest.TestCase):
+    """Every reconstructed production occurrence carries an explicit valid stage."""
+
+    RECON_SCOPES = {"lexical_proto", "lexical_protoform", "trace_proto_input"}
+
+    def test_reconstructed_lexical_and_trace_rows_have_valid_stage(self):
+        for row in _forms():
+            if row["source_scope"] in self.RECON_SCOPES:
+                self.assertIn(
+                    row["language"],
+                    RECONSTRUCTED_STAGES,
+                    f"{row['source_scope']} {row['form']} has non-reconstructed stage {row['language']!r}",
+                )
+
+    def test_no_production_row_has_blank_language(self):
+        for row in _forms():
+            self.assertTrue(row["language"], f"blank language for {row['form']} ({row['source_scope']})")
+
+
+class HeavenStageTests(unittest.TestCase):
+    """Heaven: selected input is post-PGmc; the deeper obliques stay PGmc."""
+
+    def setUp(self):
+        self.by_form: dict[str, set[str]] = {}
+        for row in _forms():
+            self.by_form.setdefault(row["form"], set()).add(row["language"])
+
+    def test_selected_input_and_source_forms_are_pwgmc(self):
+        for form in ("*xébun", "xébun", "hebun", "hebunas"):
+            self.assertIn(form, self.by_form, f"{form} missing from index")
+            self.assertEqual(
+                self.by_form[form], {"pwgmc"},
+                f"{form} should be dated pwgmc only, got {self.by_form[form]}",
+            )
+
+    def test_deeper_obliques_and_citation_stay_pgmc(self):
+        for form in ("*xémenaz", "xémenaz", "xémnas", "xémni", "xémnum", "hemnaz", "hemō"):
+            self.assertIn(form, self.by_form, f"{form} missing from index")
+            self.assertEqual(
+                self.by_form[form], {"pgmc"},
+                f"{form} should stay pgmc, got {self.by_form[form]}",
+            )
+
+    def test_no_heaven_form_is_labelled_proto_germanic_selected_input(self):
+        # *xébun is the selected input; it must never be pgmc.
+        self.assertNotIn("pgmc", self.by_form.get("*xébun", set()))
+        self.assertNotIn("pgmc", self.by_form.get("xébun", set()))
+
+
+class DuplicateChronologyTests(unittest.TestCase):
+    """A single source form never carries two different reconstructed stages."""
+
+    def test_hebun_has_a_single_stage(self):
+        stages: set[str] = set()
+        for row in _forms():
+            if row["form"] == "hebun":
+                stages.add(row["language"])
+        self.assertEqual(stages, {"pwgmc"}, f"*hebun must have one stage, got {stages}")
+
+    def test_no_reconstructed_form_spans_two_stages(self):
+        stages_by_form: dict[str, set[str]] = {}
+        for row in _forms():
+            if row["language"] in RECONSTRUCTED_STAGES:
+                stages_by_form.setdefault(row["form"], set()).add(row["language"])
+        multi = {f: s for f, s in stages_by_form.items() if len(s) > 1}
+        self.assertEqual(multi, {}, f"forms with duplicate chronological labels: {multi}")
+
+
+class StemStageTests(unittest.TestCase):
+    """Stem: PGmc i-stem input, distinct from the OE voice/sound homonym."""
+
+    def setUp(self):
+        self.by_form: dict[str, set[str]] = {}
+        for row in _forms():
+            self.by_form.setdefault(row["form"], set()).add(row["language"])
+
+    def test_stem_proto_and_protoform_are_pgmc(self):
+        for form in ("*stámnaz", "*stámniz"):
+            self.assertEqual(self.by_form.get(form), {"pgmc"}, f"{form}: {self.by_form.get(form)}")
+
+    def test_stefn_is_old_english(self):
+        self.assertEqual(self.by_form.get("stefn"), {"oe"})
+
+
+class StageMetadataSidecarTests(unittest.TestCase):
+    """The canonical stage sidecar is complete, valid, and matches the manifest."""
+
+    def setUp(self):
+        self.sidecar = {r["row_id"]: r for r in _rows(ASSEMBLY / "entry_stage_metadata.tsv")}
+        self.manifest = _rows(ASSEMBLY / "manifest_all_by_class.tsv")
+
+    def test_every_model_entry_has_a_stage_declaration(self):
+        model_ids = {
+            p.name.split("-", 1)[0]
+            for p in (REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries").glob("*.model.md")
+        }
+        self.assertEqual(model_ids - set(self.sidecar), set(), "model entries missing a stage declaration")
+
+    def test_all_sidecar_stages_are_valid(self):
+        for rid, row in self.sidecar.items():
+            self.assertIn(row["proto_stage"], RECONSTRUCTED_STAGES, rid)
+            self.assertIn(row["protoform_stage"], RECONSTRUCTED_STAGES, rid)
+
+    def test_heaven_protoform_is_pwgmc_proto_is_pgmc(self):
+        self.assertEqual(self.sidecar["2068"]["protoform_stage"], "pwgmc")
+        self.assertEqual(self.sidecar["2068"]["proto_stage"], "pgmc")
+
+    def test_manifest_stage_matches_sidecar(self):
+        for row in self.manifest:
+            rid = row["row_id"]
+            if rid in self.sidecar:
+                self.assertEqual(row["proto_stage"], self.sidecar[rid]["proto_stage"], rid)
+                self.assertEqual(row["protoform_stage"], self.sidecar[rid]["protoform_stage"], rid)
+
+    def test_no_manifest_row_has_blank_stage(self):
+        for row in self.manifest:
+            self.assertTrue(row["proto_stage"], f"blank proto_stage row {row['row_id']}")
+            self.assertTrue(row["protoform_stage"], f"blank protoform_stage row {row['row_id']}")
+
+
+if __name__ == "__main__":
+    unittest.main()

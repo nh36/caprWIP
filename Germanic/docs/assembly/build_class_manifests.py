@@ -11,6 +11,24 @@ ASSEMBLY_DIR = Path(__file__).resolve().parent
 REPO_ROOT = ASSEMBLY_DIR.parents[2]
 MODEL_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 TRACE_REPORT = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
+# Canonical historical-stage declaration for reconstructed PROTO/PROTOFORM forms,
+# keyed by row_id. Kept as a sidecar (rather than inline model-entry headers) so
+# stage metadata never shifts the line-anchored index-decision curation. A
+# reconstruction asterisk means "reconstructed", NOT "Proto-Germanic"; the stage
+# axis is declared explicitly here and never silently defaulted.
+STAGE_METADATA_PATH = ASSEMBLY_DIR / "entry_stage_metadata.tsv"
+
+
+def load_stage_metadata() -> dict[str, dict[str, str]]:
+    with STAGE_METADATA_PATH.open(encoding="utf-8") as handle:
+        return {
+            row["row_id"].strip(): {
+                "proto_stage": (row.get("proto_stage") or "").strip(),
+                "protoform_stage": (row.get("protoform_stage") or "").strip(),
+            }
+            for row in csv.DictReader(handle, delimiter="\t")
+        }
+
 
 REQUIRED_METADATA = ("PROTO", "PROTOFORM", "COUNTERPART", "DERIVATION_CLASS")
 CLASS_CONFIG = {
@@ -33,7 +51,9 @@ MANIFEST_COLUMNS = [
     "lexical_item",
     "counterpart",
     "proto",
+    "proto_stage",
     "protoform",
+    "protoform_stage",
     "derivation_class",
     "class_bucket",
     "section_title",
@@ -192,7 +212,7 @@ def relative_repo_path(path: Path) -> str:
 
 def write_manifest(path: Path, rows: list[dict[str, object]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=MANIFEST_COLUMNS, delimiter="\t")
+        writer = csv.DictWriter(handle, fieldnames=MANIFEST_COLUMNS, delimiter="\t", lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({column: row.get(column, "") for column in MANIFEST_COLUMNS})
@@ -217,6 +237,7 @@ def format_count_table(counts: Counter[str]) -> list[str]:
 def main() -> None:
     trace_entries = parse_trace_entries(TRACE_REPORT.read_text(encoding="utf-8"))
     models = [parse_model_entry(path) for path in sorted(MODEL_DIR.glob("*.model.md"))]
+    stage_map = load_stage_metadata()
 
     models.sort(
         key=lambda model: (
@@ -254,6 +275,17 @@ def main() -> None:
         if trace_status != "confident":
             notes.append(f"trace match {trace_status}")
 
+        stage_row = stage_map.get(str(model["row_id"]), {})
+        proto_stage = stage_row.get("proto_stage", "")
+        protoform_stage = stage_row.get("protoform_stage", "")
+        missing_stage = [
+            name
+            for name, value in (("proto_stage", proto_stage), ("protoform_stage", protoform_stage))
+            if not value
+        ]
+        if missing_stage:
+            notes.append("missing stage metadata: " + ", ".join(missing_stage))
+
         row = {
             "global_order": global_value,
             "class_order": class_value,
@@ -261,7 +293,9 @@ def main() -> None:
             "lexical_item": model["lexical_item"],
             "counterpart": model["metadata"].get("COUNTERPART", ""),
             "proto": model["metadata"].get("PROTO", ""),
+            "proto_stage": proto_stage,
             "protoform": model["metadata"].get("PROTOFORM", ""),
+            "protoform_stage": protoform_stage,
             "derivation_class": raw_class,
             "class_bucket": bucket,
             "section_title": model["section_title"],
