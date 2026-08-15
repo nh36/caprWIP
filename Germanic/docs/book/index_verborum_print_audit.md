@@ -1,9 +1,9 @@
 # Index verborum print audit
 
 - Internal production occurrences: 2364
-- Internal production unique forms: 1070
+- Internal production unique forms: 1069
 - Printed main occurrences: 2276
-- Printed main unique forms: 1060
+- Printed main unique forms: 1059
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -16,9 +16,9 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1217 | 455 |
-| Proto-Germanic | 953 | 526 |
+| Proto-Germanic | 946 | 523 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 6 | 5 |
+| Proto-West Germanic | 13 | 7 |
 | Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
@@ -63,7 +63,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1078
+- Unique printed entries: 1077
 - Print anomaly rows: 50
 - Hard print anomalies: 0
 
@@ -122,10 +122,12 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
-| pwgmc | `*hebun` | hebun | 1 | evidence_form |
+| pwgmc | `*hebun` | hebun | 2 | comparison_form; evidence_form |
+| pwgmc | `*hebunas` | hebunas | 2 | comparison_form; evidence_form |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*timbr` | timbr | 2 | comparison_form |
+| pwgmc | `*xébun` | xebun | 4 | evidence_form; selected_input; source_protoform |
 | goth | `baíram` | bairam | 1 | evidence_form |
 | goth | `brusts` | brusts | 1 | comparison_form |
 | goth | `dagam` | dagam | 1 | evidence_form |

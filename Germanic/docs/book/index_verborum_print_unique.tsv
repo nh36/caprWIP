@@ -615,8 +615,6 @@ pgmc	*grḯpaną	gripana			1	selected_input	trace_proto_input	gripe — OE grīp
 pgmc	*grúnduz	grunduz			1	selected_input	trace_proto_input	ground — OE grund
 pgmc	*gúdą	guda			1	selected_input	trace_proto_input	god — OE god
 pgmc	*gúlθą	gultha			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	gold — OE gold
-pgmc	*hebun	hebun			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:42
-pgmc	*hebunas	hebunas			2	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:43
 pgmc	*hemina-	hemina			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:71
 pgmc	*hemnaz	hemnaz			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51
 pgmc	*hemō	hemo			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:50
@@ -642,7 +640,7 @@ pgmc	*kníxtaz	knixtaz			3	source_protoform	explicit_tag; lexical_proto	Germanic
 pgmc	*knúbbô	knubbo			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	knob — OE *cnobba
 pgmc	*knúppaz	knuppaz			1	source_protoform	lexical_proto	knob — OE *cnobba
 pgmc	*kōz	koz			1	source_protoform	lexical_proto	cow — OE cȳ
-pgmc	*kráftaz	kraftaz			3	selected_input; source_protoform	lexical_protoform; table_semantic_auto; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50; craft — OE cræft
+pgmc	*kráftaz	kraftaz			3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50; craft — OE cræft
 pgmc	*kráftiz	kraftiz			1	source_protoform	lexical_proto	craft — OE cræft
 pgmc	*krúppaz	kruppaz			1	selected_input	trace_proto_input	crop — OE cropp
 pgmc	*kūi	kui			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	cow — OE cȳ
@@ -650,15 +648,15 @@ pgmc	*kúrną	kurna			2	selected_input; source_protoform	lexical_protoform; trac
 pgmc	*kwedu-2	kwedu2			1	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:21
 pgmc	*kwéðuz	kweduz			4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:24; Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:39; cud — OE cwedu
 pgmc	*kwíθuz	kwithuz			1	source_protoform	lexical_proto	cud — OE cwedu
-pgmc	*lábbaz	labbaz			2	source_protoform	lexical_proto; table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:57; lap — OE lappa
+pgmc	*lábbaz	labbaz			2	source_protoform	lexical_proto; table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:57; lap — OE lappa
 pgmc	*láidijaną	laidijana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	lead — OE lǣdan
-pgmc	*láimą	laima			3	selected_input; source_protoform	lexical_protoform; table_semantic_auto; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53; loam — OE lām
-pgmc	*laimōn	laimon			2	selected_input; source_protoform	lexical_proto; table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:52; loam — OE lām
+pgmc	*láimą	laima			3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53; loam — OE lām
+pgmc	*laimōn	laimon			2	selected_input; source_protoform	lexical_proto; table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:52; loam — OE lām
 pgmc	*láistijaną	laistijana			1	selected_input	trace_proto_input	last — OE lǣstan
 pgmc	*láiθaz	laithaz			1	selected_input	trace_proto_input	loath — OE lāþ
 pgmc	*lákaną	lakana			1	source_protoform	lexical_proto	laugh — OE hliehhan
 pgmc	*lándą	landa			1	selected_input	trace_proto_input	land — OE land
-pgmc	*láppô	lappo			3	selected_input; source_protoform	lexical_protoform; table_semantic_auto; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:58; lap — OE lappa
+pgmc	*láppô	lappo			3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:58; lap — OE lappa
 pgmc	*laθōjaną	lathojana			1	source_protoform	lexical_proto	lade — OE hladan
 pgmc	*láubą	lauba			1	selected_input	trace_proto_input	leaf — OE lēaf
 pgmc	*láugō	laugo			1	selected_input	trace_proto_input	lye — OE lēag
@@ -686,7 +684,7 @@ pgmc	*líznōjaną	liznojana			3	evidence_form; selected_input; source_protoform
 pgmc	*líznōθi	liznothi			5	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:25; Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68; learn (3sg) — OE liornaþ
 pgmc	*lúką	luka			1	selected_input	trace_proto_input	lock — OE loc
 pgmc	*lúkkaz	lukkaz			1	selected_input	trace_proto_input	lock — OE locc
-pgmc	*lúnganjō	lunganjo			3	selected_input; source_protoform	lexical_protoform; table_semantic_auto; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:56; lung — OE lungen
+pgmc	*lúnganjō	lunganjo			3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:56; lung — OE lungen
 pgmc	*lungō	lungo			1	source_protoform	lexical_proto	lung — OE lungen
 pgmc	*lústuz	lustuz			1	selected_input	trace_proto_input	lust — OE lust
 pgmc	*lūsz	lusz			1	selected_input	trace_proto_input	louse — OE lūs
@@ -777,7 +775,7 @@ pgmc	*séxs	sexs			1	selected_input	trace_proto_input	six — OE six
 pgmc	*sibaz	sibaz			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:27
 pgmc	*síbaz	sibaz			2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:54; sieve — OE sife
 pgmc	*síbi	sibi			6	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:24; Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:41; Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:44; Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:55; sieve — OE sife
-pgmc	*sib-iz	sibiz			1	selected_input	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:55
+pgmc	*sib-iz	sibiz			1	selected_input	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:55
 pgmc	*sibja	sibja			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:53
 pgmc	*sḯdōn	sidon			1	selected_input	trace_proto_input	side — OE sīde
 pgmc	*síngwaną	singwana			1	selected_input	trace_proto_input	sing — OE singan
@@ -964,7 +962,6 @@ pgmc	*xáslaz	xaslaz			1	selected_input	trace_proto_input	hazel — OE hæsl
 pgmc	*xáubudą	xaubuda			1	selected_input	trace_proto_input	head — OE hēafod
 pgmc	*xáwwaną	xawwana			1	selected_input	trace_proto_input	hew — OE hēawan
 pgmc	*xáwwją	xawwja			1	selected_input	trace_proto_input	hay — OE hīeġ
-pgmc	*xébun	xebun			4	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:138; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99; heaven — OE heofon
 pgmc	*xélmaz	xelmaz			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	helm — OE helm
 pgmc	*xélpaną	xelpana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	help — OE helpan
 pgmc	*xélpō	xelpo			1	selected_input	trace_proto_input	help — OE help
@@ -977,8 +974,8 @@ pgmc	*xḗrą	xera			2	selected_input; source_protoform	lexical_protoform; trace
 pgmc	*xérdō	xerdo			1	selected_input	trace_proto_input	herd — OE heord
 pgmc	*xérθaz	xerthaz			1	selected_input	trace_proto_input	hearth — OE heorþ
 pgmc	*xértōn	xerton			1	selected_input	trace_proto_input	heart — OE heorte
-pgmc	*xláðaną	xladana			3	selected_input; source_protoform	lexical_protoform; table_semantic_auto; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56; lade — OE hladan
-pgmc	*xláxjaną	xlaxjana			3	selected_input; source_protoform	lexical_protoform; table_semantic_auto; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57; laugh — OE hliehhan
+pgmc	*xláðaną	xladana			3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56; lade — OE hladan
+pgmc	*xláxjaną	xlaxjana			3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57; laugh — OE hliehhan
 pgmc	*xlídą	xlida			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	lid — OE hlid
 pgmc	*xnákkaz	xnakkaz			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:27; Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:56; neck — OE hnecca
 pgmc	*xnakkô	xnakko			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:57
@@ -1000,10 +997,12 @@ pgmc	*xwḯnaną	xwinana			5	selected_input; source_protoform	explicit_tag; lexi
 pgmc	*xwinanan	xwinanan			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2286-whine-hwīnan.model.md:24
 pnwgmc	*brōkiz	brokiz			2	comparison_form; selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21
 pwgmc	*bakan	bakan			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21
-pwgmc	*hebun	hebun			1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:575
+pwgmc	*hebun	hebun			2	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:42; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:575
+pwgmc	*hebunas	hebunas			2	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:43
 pwgmc	*skuldru	skuldru			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21
 pwgmc	*skúldru	skuldru			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48
 pwgmc	*timbr	timbr			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48
+pwgmc	*xébun	xebun			4	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:138; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99; heaven — OE heofon
 preoe	*sparai-	sparai			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
 preoe	*spárē	spare			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47
 preoe	*sparja-	sparja			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
