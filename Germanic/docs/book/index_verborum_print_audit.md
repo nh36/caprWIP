@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2353
-- Internal production unique forms: 1050
-- Printed main occurrences: 2265
-- Printed main unique forms: 1040
+- Internal production occurrences: 2364
+- Internal production unique forms: 1070
+- Printed main occurrences: 2276
+- Printed main unique forms: 1060
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -15,16 +15,16 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1225 | 446 |
-| Proto-Germanic | 944 | 519 |
+| Old English | 1217 | 455 |
+| Proto-Germanic | 953 | 526 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 8 | 5 |
+| Proto-West Germanic | 6 | 5 |
 | Pre-Old English / prehistoric English | 6 | 6 |
-| Old Norse | 16 | 12 |
+| Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
-| Gothic | 6 | 6 |
-| Old Saxon | 16 | 12 |
+| Gothic | 7 | 7 |
+| Old Saxon | 20 | 13 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
 | Middle English | 1 | 1 |
@@ -36,10 +36,10 @@
 | Role | Occurrences |
 | --- | ---: |
 | target_form | 373 |
-| source_protoform | 330 |
+| source_protoform | 333 |
 | selected_input | 533 |
 | comparison_form | 821 |
-| evidence_form | 208 |
+| evidence_form | 216 |
 
 ## Internal-only rows by reason
 
@@ -63,7 +63,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1061
+- Unique printed entries: 1078
 - Print anomaly rows: 50
 - Hard print anomalies: 0
 
@@ -122,7 +122,7 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
-| pwgmc | `*hebun` | hebun | 3 | comparison_form; evidence_form |
+| pwgmc | `*hebun` | hebun | 1 | evidence_form |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*timbr` | timbr | 2 | comparison_form |
@@ -132,6 +132,7 @@
 | goth | `faurhtei` | faurhtei | 1 | comparison_form |
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
 | goth | `godamma` | godamma | 1 | evidence_form |
+| goth | `himins` | himins | 1 | evidence_form |
 | dutch | `beide` | beide | 2 | comparison_form |
 | dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
@@ -165,8 +166,8 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 321
-- `yes`: 175
+- `no`: 322
+- `yes`: 174
 
 - Included whole-form rows with asterisks: 412
 - Included whole-form rows without asterisks: 84

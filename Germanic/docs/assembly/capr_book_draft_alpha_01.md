@@ -2873,10 +2873,10 @@ The lexical catalogue is ordered by seven derivation classes in the current mani
 
 - Regular derivations: 70
 - Attested variants: 4
-- Early analogy: 34
-- Late analogy: 28
+- Early analogy: 36
+- Late analogy: 27
 - Reconstructed Old English comparators: 3
-- Known but unmodelled developments: 3
+- Known but unmodelled developments: 2
 - Unexplained or deliberately unmodelled exceptions: 5
 
 \clearpage
@@ -2909,7 +2909,7 @@ Proto input: _\*nḗdrōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -2917,7 +2917,7 @@ Proto input: _\*nḗdrōn_
 \mbox{PNWGmc Long E Lowering} & \emph{*nǣdrǭ} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -2986,12 +2986,12 @@ Proto input: _\*bákaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3051,14 +3051,14 @@ Proto input: _\*bōkō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Final Long O Raising} & \emph{*bōku} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3113,12 +3113,12 @@ Proto input: _\*bigínnaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3181,7 +3181,7 @@ Proto input: _\*bḗrō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -3189,7 +3189,7 @@ Proto input: _\*bḗrō_
 \mbox{PNWGmc Long E Lowering} & \emph{*bǣru} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3251,14 +3251,14 @@ Proto input: _\*búrdiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*búrdi} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3318,16 +3318,16 @@ Proto input: _\*báiną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*bāną} \\
+\mbox{EAF Ai Monophthongization} & \emph{*bāną} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -3387,14 +3387,14 @@ Proto input: _\*bō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 PNWGmc Stressed Monosyllable O Raising & \emph{*bū} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3488,12 +3488,12 @@ Proto input: _\*báugijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3560,14 +3560,14 @@ Proto input: _\*brōkiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*brōki} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3625,14 +3625,14 @@ Proto input: _\*kálbaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*kálba} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3692,14 +3692,14 @@ Proto input: _\*kúrną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*kórną} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3757,7 +3757,7 @@ Proto input: _\*dḗdiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -3765,7 +3765,7 @@ Proto input: _\*dḗdiz_
 \mbox{PNWGmc Long E Lowering} & \emph{*dǣdi} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3822,14 +3822,14 @@ Proto input: _\*dúrą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*dórą} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3886,12 +3886,12 @@ Proto input: _\*fáraną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -3954,12 +3954,12 @@ Proto input: _\*féllą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4018,14 +4018,14 @@ Proto input: _\*fárnaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*fárna} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4084,19 +4084,18 @@ Proto input: _\*félθuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*féldu} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAFL Th Voicing} & \emph{*félduz} \\
+\mbox{EAF Final Z Deletion} & \emph{*féldu} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4151,12 +4150,12 @@ Proto input: _\*fléuganą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4224,12 +4223,12 @@ Proto input: _\*léusaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4294,14 +4293,14 @@ Proto input: _\*gángaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*gánga} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4364,12 +4363,12 @@ Proto input: _\*gébaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4433,19 +4432,18 @@ Proto input: _\*gúlθą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc U Lowering} & \emph{*góldą} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAFL Th Voicing} & \emph{*gúldą} \\
+\mbox{PNWGmc U Lowering} & \emph{*góldą} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4504,12 +4502,12 @@ Proto input: _\*grábaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4573,14 +4571,14 @@ Proto input: _\*gástiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*gásti} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4643,14 +4641,14 @@ Proto input: _\*xḗrą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Long E Lowering} & \emph{*xǣrą} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4710,14 +4708,14 @@ Proto input: _\*xárbistuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*xárbistu} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4782,19 +4780,18 @@ Proto input: _\*xágjaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*xággja} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*xággjaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*xággja} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -4855,14 +4852,14 @@ Proto input: _\*xélmaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*xélma} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4922,12 +4919,12 @@ Proto input: _\*xélpaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -4989,14 +4986,14 @@ Proto input: _\*xéndjō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Final Long O Raising} & \emph{*xéndju} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5058,12 +5055,12 @@ Proto input: _\*xáldaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5127,14 +5124,14 @@ Proto input: _\*xúrną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*xórną} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5193,16 +5190,16 @@ Proto input: _\*láidijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*lādijaną} \\
+\mbox{EAF Ai Monophthongization} & \emph{*lādijaną} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -5261,12 +5258,12 @@ Proto input: _\*líznōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5359,12 +5356,12 @@ Proto input: _\*xlídą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5423,12 +5420,12 @@ Proto input: _\*léuxtijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5493,14 +5490,14 @@ Proto input: _\*líndō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Final Long O Raising} & \emph{*líndu} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5559,14 +5556,14 @@ Proto input: _\*mélukz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*méluk} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5626,14 +5623,14 @@ Proto input: _\*mōdēr_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Long E Lowering} & \emph{*mōdǣr} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5693,17 +5690,17 @@ Proto input: _\*nátją_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*náttją} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -5762,14 +5759,14 @@ Proto input: _\*márōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc N Stem N Loss} & \emph{*márǭ} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5832,7 +5829,7 @@ Proto input: _\*rúkkaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -5840,7 +5837,7 @@ Proto input: _\*rúkkaz_
 \mbox{EAF Final Z Deletion} & \emph{*rókka} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5899,14 +5896,14 @@ Proto input: _\*skḗpą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Long E Lowering} & \emph{*skǣpą} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -5967,14 +5964,14 @@ Proto input: _\*skíllingaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*skíllinga} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6036,12 +6033,12 @@ Proto input: _\*skáwōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6108,14 +6105,14 @@ Proto input: _\*slḗpaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Long E Lowering} & \emph{*slǣpaną} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6176,12 +6173,12 @@ Proto input: _\*smérwijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6246,12 +6243,12 @@ Proto input: _\*spánnaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6312,12 +6309,12 @@ Proto input: _\*spárrô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6379,12 +6376,12 @@ Proto input: _\*stéllijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6448,14 +6445,14 @@ Proto input: _\*súmaraz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*súmara} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6516,12 +6513,12 @@ Proto input: _\*súndrōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6588,14 +6585,14 @@ Proto input: _\*swálwōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc N Stem N Loss} & \emph{*swálwǭ} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6653,12 +6650,12 @@ Proto input: _\*swī́ną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6718,12 +6715,12 @@ Proto input: _\*θánkijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6788,7 +6785,7 @@ Proto input: _\*θúrnaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -6796,7 +6793,7 @@ Proto input: _\*θúrnaz_
 \mbox{EAF Final Z Deletion} & \emph{*θórna} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6856,14 +6853,14 @@ Proto input: _\*tī́diz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*tī́di} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -6922,16 +6919,16 @@ Proto input: _\*táikną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*tākną} \\
+\mbox{EAF Ai Monophthongization} & \emph{*tākną} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -6988,12 +6985,12 @@ Proto input: _\*tūną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7052,12 +7049,12 @@ Proto input: _\*wádaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7120,12 +7117,12 @@ Proto input: _\*wérpaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7187,12 +7184,12 @@ Proto input: _\*wáskaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7255,12 +7252,12 @@ Proto input: _\*wáxsaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7324,14 +7321,14 @@ Proto input: _\*wégaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*wéga} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7391,14 +7388,14 @@ Proto input: _\*wḗpną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Long E Lowering} & \emph{*wǣpną} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7466,17 +7463,17 @@ Proto input: _\*wéljô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*wélljô} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7534,12 +7531,12 @@ Proto input: _\*wíndaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7600,19 +7597,18 @@ Proto input: _\*wálθuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*wáldu} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAFL Th Voicing} & \emph{*wálduz} \\
+\mbox{EAF Final Z Deletion} & \emph{*wáldu} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7670,12 +7666,12 @@ Proto input: _\*gárną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7747,19 +7743,18 @@ Proto input: _\*kwéðuz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*kwédu} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*kwéduz} \\
+\mbox{EAF Final Z Deletion} & \emph{*kwédu} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -7832,12 +7827,12 @@ Proto input: _\*téxun_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -7917,14 +7912,14 @@ Proto input: _\*θréjez_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*θréje} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8009,14 +8004,14 @@ Proto input: _\*wábsaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*wábsa} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8117,7 +8112,7 @@ Proto input: _\*búttmaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
@@ -8125,7 +8120,7 @@ Proto input: _\*búttmaz_
 \mbox{EAF Final Z Deletion} & \emph{*bóttma} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8196,12 +8191,12 @@ Proto input: _\*brándas_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8291,12 +8286,12 @@ Proto input: _\*bréustą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8388,14 +8383,14 @@ Proto input: _\*kráftaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*kráfta} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8473,14 +8468,14 @@ Proto input: _\*déliz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*déli} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8571,12 +8566,12 @@ Proto input: _\*fástijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8674,14 +8669,14 @@ Proto input: _\*fláskōn_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc N Stem N Loss} & \emph{*fláskǭ} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8774,12 +8769,12 @@ Proto input: _\*fúlgijaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8886,12 +8881,12 @@ Proto input: _\*gállô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -8964,6 +8959,204 @@ The weak-noun stem class is the relevant point. It gives a direct route to
 attested _ġealla_ 'gall', while the broader comparative label serves only as a family
 heading.
 
+## heaven — OE _heofon_
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!seofon@\iventry{seofon}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sebun@\iventry{*sébun}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xebun@\iventry{*xébun}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemenaz@\iventry{*xémenaz}{}}
+
+Derivation: citation reconstruction _\*xémenaz_; form followed here _\*xébun_ > _heofon_ (early analogy).
+
+### Derivation trace
+
+Proto input: _\*xébun_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Med Unstressed U Lowering} & \emph{*xébon} \\
+OE Velar Fricative Palatalization & \emph{*çébon} \\
+\mbox{PGmc B Allophony} & \emph{*çéβon} \\
+\mbox{OE Back Mutation} & \emph{*çéoβon} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _heofon_
+
+### A. Selected CAPR derivation
+
+| Item | Value |
+| :--- | :--- |
+| lexical item | heaven |
+| citation reconstruction / lexeme label | *xémenaz |
+| form followed here | *xébun (northern WGmc / pre-OE *hebun) |
+| Old English target | heofon |
+| classification | early_analogy |
+| derivational result | *xébun > heofon (multiplicity 1, exact match) |
+
+Compact live trace (corrected cascade, literal adjacent-_mn_ SC022):
+
+| step | form |
+| :--- | :--- |
+| proto input | _\*xébun_ |
+| OE Med Unstressed U Lowering | _\*xébon_ |
+| OE Velar Fricative Palatalization | _\*çébon_ |
+| PGmc B Allophony | _\*çéβon_ |
+| OE Back Mutation | _\*çéoβon_ |
+| Old English Orthography | _heofon_ |
+
+No rule in this span creates the labial: it enters with the input _b_
+(→ _β_ → _f_). Only vocalic and surface changes are modelled.
+
+### B. Why *xébun is not arbitrary
+
+Ringe and Taylor reconstruct northern West Germanic
+[hebun]{.iv .recon lang=pgmc sort=hebun role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:42:1"} 'sky, heaven',
+gen. [hebunas]{.iv .recon lang=pgmc sort=hebunas role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:43" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:43:1"} 'heaven', whence
+West Saxon and Northumbrian [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:44:1"} 'heaven', Mercian
+[_heofen_]{.iv lang=oe variety=merc sort=heofen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45:1"} 'heaven' [@RingeTaylor2014, 272, 324].
+CAPR does **not** merely defer to that reconstruction: the deeper comparative
+analysis explains its labial.
+
+The word is an inherited **mn-stem** [@Kroonen2013, 220]: PIE *h₂ék-mōn, gen.
+*h₂k-mn-ós, remodelled in Germanic to nom. [hemō]{.iv .recon lang=pgmc sort=hemo source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:50:1"} 'heaven',
+gen. [hemnaz]{.iv .recon lang=pgmc sort=hemnaz source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51:1"} 'heaven'. In the zero-grade **oblique
+cluster** cells the sequence *-mn- is adjacent, and the change
+*mn > βn/bn/fn* is regular there (Fulk §6.14 [@Fulk2018, 121]). Old Norse
+preserves exactly this paradigmatic distribution —
+[_himinn_]{.iv lang=on sort=himinn source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:55" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:55:1"} 'heaven' (nominative, with *m*) beside dative
+[_hifni_]{.iv lang=on sort=hifni source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:56:1"} 'heaven' (oblique, with *f* from the syncopated cluster)
+— while Old English and Old Saxon (OS [_heban_]{.iv lang=os sort=heban source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:57:1"} 'heaven',
+[_hebenes_]{.iv lang=os sort=hebenes source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:58:1"} 'heaven' [@Fulk2018]) **generalized the labial**
+into the vowel-bearing stem. The _b_ of *xébun is therefore analogical *within
+this nominative input*, but its historical source is regular and recoverable —
+back to the inherited genitive (see §E).
+
+### C. The unresolved *u*
+
+The medial *u* is the less secure element and must not be treated as certain
+merely because the cascade needs a back vowel to trigger back mutation. It is the
+n-stem suffixal vowel, the genuine conditioning environment for West Saxon back
+umlaut of *e* (parallel to *seven*, §D), and it is supported by Ringe–Taylor's
+reconstruction and by the Old English back-mutation pattern [@RingeTaylor2014, 324].
+But its exact deeper ablaut grade — *u* here, against the *i* of the cognate
+vowel-stem [hemina-]{.iv .recon lang=pgmc sort=hemina source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:71" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:71:1"} ([_himinn_]{.iv lang=on sort=himinn source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:71" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:71:2"} 'heaven',
+Go. [_himins_]{.iv lang=goth sort=himins source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:72" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:72:1"} 'heaven') — is **not fully recoverable**. It is the
+irreducible residue of the reconstruction; the _b_ is not.
+
+### D. Regular modelled span
+
+The northern-WGmc / pre-OE → Old English development _\*xébun_ > _heofon_
+is regular and is the exact structural parallel of the independently regular
+numeral *seven*, _\*sébun_ > _seofon_ (row 2174, _DERIVATION_CLASS_ regular).
+Both have a medial *u* and a labial, and both undergo West Saxon back umlaut of
+*e* before *u* across that labial [@RingeTaylor2014, 324; @Hogg1992]. The live
+traces run in lock-step (medial _u_-lowering, labial spirantization, back
+mutation, orthography). Ringe and Taylor explicitly treat *heaven* and *seven*
+as parallel back-umlaut examples, which is why *seven* is retained here as the
+control.
+
+### E. Deep oblique controls
+
+The obliques go **deeper** than the selected nominative and derive the labial
+themselves. Live outputs under the corrected literal adjacent-_mn_ cascade, with
+evidential status marked:
+
+| cell / form | type | corrected-cascade output | status | note |
+| :--- | :--- | :--- | :--- | :--- |
+| nom. citation [xémenaz]{.iv .recon lang=pgmc sort=xemenaz source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:95" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:95:1"} | reconstructed (citation) | [_hemen_]{.iv lang=oe sort=hemen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:95" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:95:2"} | counterfactual (no labial) | citation a-stem; no cluster, so no regular _f_ |
+| gen.sg cluster [xémnas]{.iv .recon lang=pgmc sort=xemnas source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:96" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:96:1"} | reconstructed (PIE *h₂k-mn-ós) | [_hefnes_]{.iv lang=oe sort=hefnes source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:96" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:96:2"} | reconstructed, **not attested in OE** | labial **regular** here (mn > βn) |
+| dat.sg cluster [xémni]{.iv .recon lang=pgmc sort=xemni source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:97" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:97:1"} | reconstructed | [_hifn_]{.iv lang=oe sort=hifn source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:97" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:97:2"} | attested only as ON [_hifni_]{.iv lang=on sort=hifni source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:97" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:97:3"} 'heaven' | labial + i-umlaut regular |
+| dat.pl cluster [xémnum]{.iv .recon lang=pgmc sort=xemnum source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:98" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:98:1"} | reconstructed | [_hefnum_]{.iv lang=oe sort=hefnum source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:98" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:98:2"} | reconstructed, **not attested in OE** | labial regular |
+| remodelled stem [xébun]{.iv .recon lang=pgmc sort=xebun source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99:1"} | reconstructed (R&T *hebun) | [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99:2"} | **attested** (selected row) | labial pre-supplied |
+| R&T genitive [hebunas]{.iv .recon lang=pgmc sort=hebunas source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100:1"} | reconstructed | [_heofones_]{.iv lang=oe sort=heofones source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100:2"} | **attested** | labial pre-supplied |
+| OE oblique [_heofnes_]{.iv lang=oe sort=heofnes source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:101" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:101:1"} / [_heofnum_]{.iv lang=oe sort=heofnum source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:101" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:101:2"} | **attested** | — | actual OE forms | carry _eo_; from the re-vowelled stem + late syncope |
+| ON [_himinn_]{.iv lang=on sort=himinn source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:102" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:102:1"} : [_hifni_]{.iv lang=on sort=hifni source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:102" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:102:2"} 'heaven' | **attested** (North Gmc) | — | attested cluster line | keeps the *m* : *f* alternation |
+| OS [_heban_]{.iv lang=os sort=heban source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:103" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:103:1"} / [_hebenes_]{.iv lang=os sort=hebenes source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:103" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:103:2"} | **attested** (Old Saxon) | — | labial generalized | vowel-bearing throughout |
+
+Distinctions kept explicit: **attested** OE forms (_heofon_, _heofones_,
+_heofnes_, _heofnum_) descend from the re-vowelled stem; the cluster outputs
+_hefnes_/_hifn_/_hefnum_ are **reconstructed regular outputs**, and for Old
+English they are **counterfactual** — the actual attested obliques carry _eo_
+from back mutation on the retained/​restored medial vowel, then late syncope
+(_heofonum_ > _heofnum_), not from a bare _-fn-_ cluster. The genuine attested
+witness of the pure cluster line is Old Norse [_hifni_]{.iv lang=on sort=hifni source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:111" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:111:1"} 'heaven'.
+
+### F. Why the oblique is not the selected row
+
+The oblique lines are historically **essential** — they show that the labial has
+a regular origin, all the way back to the inherited genitive *h₂k-mn-ós — but
+they are inferior as the single CAPR input→target datum. In Old English every
+oblique cluster form encounters morphological **re-vowelling** (restoration of a
+medial vowel into the labialized _-βn-_ stem) before it reaches an attested Old
+English shape. That re-vowelling is a non-regular event; it interrupts any single
+deterministic path from a cluster oblique to an attested OE form. The nominative
+input *xébun begins **after** that restructuring and then proceeds by regular
+sound change to a secure attested target — the longest clean modellable span.
+
+### G. Attestation warning
+
+Bare Old English _hefn_ is **not** securely attested and must not be
+reintroduced as an attested comparator. The earliest witnesses (Cædmon's Hymn)
+are [_hefun_]{.iv lang=oe variety=north sort=hefun source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:129" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:129:1"} 'heaven', [_hefen_]{.iv lang=oe variety=north sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:129" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:129:2"} 'heaven', and
+(Moore Bede) [_heben_]{.iv lang=oe variety=north sort=heben source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:130" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:130:1"} 'heaven' — all with a **medial vowel**. The
+reconstructed cluster output _hefn_ (§E) is a reconstruction, never a manuscript
+form.
+
+### H. Classification rationale
+
+The row is _early_analogy_, not _late_analogy_ and not _known_unmodelled_.
+
+- The selected row models exactly one form, [xébun]{.iv .recon lang=pgmc sort=xebun source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:138" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:138:1"}
+  → [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:139" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:139:1"}. The necessary paradigm restructuring
+  (labial levelling + suffix-vowel generalization) precedes the derivational input;
+  once that input is chosen, the modelled development is regular. This is the
+  definition of _early_analogy_ (analogy separates the input from the citation
+  reconstruction **before** the specifically Old English changes apply).
+- It is not _late_analogy_: the analogy is in the input, not a later
+  paradigm-cell selection; the later history of *other* paradigm cells (oblique
+  syncope, _heo-_ levelling) does not touch the modelled nominative derivation.
+- It is not _known_unmodelled_: that label (a legitimate, conservative
+  alternative discussed in `dossier-heaven-paradigm-history-2026.md`) would
+  discard a real, defensible regular span. _\*xébun_ > _heofon_ *is* a clean
+  regular derivation to a secure attested target, so CAPR models it.
+
+The old cross-syllable _mV…n_ proxy in SC022 — which formerly fabricated the
+labial from an intervocalic *m* so that the previous input *\*xémonų*
+could reach _heofon_ — has been retired in favour of the literal historical
+adjacent _mn_ > _βn_. See `dossier-heaven-paradigm-history-2026.md` §§13–15 and the
+implementation audit `audits/heaven-sc022-implementation-2026.md`.
+
 ## knight — OE _cniht_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cniht@\iventry{cniht}{}}
@@ -8986,14 +9179,14 @@ Proto input: _\*knéxtaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*knéxta} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9080,17 +9273,17 @@ Proto input: _\*xláðaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*xládaną} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9174,12 +9367,12 @@ Proto input: _\*láppô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9271,17 +9464,17 @@ Proto input: _\*xláxjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*xláxxjaną} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9370,16 +9563,16 @@ Proto input: _\*láimą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*lāmą} \\
+\mbox{EAF Ai Monophthongization} & \emph{*lāmą} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -9457,19 +9650,18 @@ Proto input: _\*lúnganjō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc Final Long O Raising} & \emph{*lúngannju} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*lúngannjō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*lúngannju} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9554,12 +9746,12 @@ Proto input: _\*nábulô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9652,12 +9844,12 @@ Proto input: _\*xnékkô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9743,20 +9935,19 @@ Proto input: _\*nḗðlō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc Final Long O Raising} & \emph{*nḗdlu} \\
-\mbox{PNWGmc Long E Lowering} & \emph{*nǣdlu} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*nḗdlō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*nḗdlu} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*nǣdlu} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -9840,7 +10031,7 @@ Proto input: _\*núsō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -9848,7 +10039,7 @@ Proto input: _\*núsō_
 \mbox{PNWGmc Final Long O Raising} & \emph{*nósu} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -9933,12 +10124,12 @@ Proto input: _\*sápą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10025,18 +10216,18 @@ Proto input: _\*sáiwiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*sāwi} \\
+\mbox{EAF Final Z Deletion} & \emph{*sáiwi} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*sāwiz} \\
+\mbox{EAF Ai Monophthongization} & \emph{*sāwi} \\
 \end{tabularx}
 \end{minipage}
 &
@@ -10118,12 +10309,12 @@ Proto input: _\*síbi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10206,12 +10397,12 @@ Proto input: _\*spárōjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10305,14 +10496,14 @@ Proto input: _\*stábaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*stába} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10372,6 +10563,163 @@ selected a-stem input.
 | mixed comparative notation | Orel _\*stabiz_ ~ _\*stabaz_; Kluge _\*stabi-_/a- | source-level stem-class uncertainty | _stæf_ | useful comparative background, but not a single OE-facing input |
 | selected a-stem input | [_\*stábaz_]{.iv lang=pgmc sort=stabaz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53:1"} | documented regular output: [_stæf_]{.iv lang=oe sort=staef role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53:2"} | [_stæf_]{.iv lang=oe sort=staef role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:53:3"} | exact match between derivational input and Old English target |
 
+## stem — OE _stefn_
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefn@\iventry{stefn}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamnaz@\iventry{*stámnaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamniz@\iventry{*stámniz}{}}
+
+Derivation: citation reconstruction _\*stámnaz_; form followed here _\*stámniz_ > _stefn_ (early analogy).
+
+### Derivation trace
+
+Proto input: _\*stámniz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*stámni} \\
+\mbox{PNWGmc Mn Dissimilation} & \emph{*stáβni} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Brightening} & \emph{*stæβni} \\
+\mbox{OE I Umlaut} & \emph{*steβni} \\
+\mbox{OE High Vowel Apocope} & \emph{*steβn} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _stefn_
+
+### Reconstruction and comparative evidence
+
+Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21:1"}
+'stem, trunk' (also variant [stamniz]{.recon} 'stem, trunk'), citing Old Norse
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23:1"} 'stem of a ship',
+Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24:1"} 'stem of a ship' (fem.),
+and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:25:1"} 'stem' as its
+main continuants [@Orel2003, 371].
+
+This word is etymologically unrelated to the Old English homonym
+[stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound',
+which descends from a distinct Proto-Germanic
+[stebnō]{.recon} 'voice, sound' / [stemnō]{.recon} 'voice, sound' etymon.
+The two OE lexemes are distinguished in Clark Hall, Bosworth-Toller, Brunner, and
+Luick; they collide on the surface forms _stefn_ and _stemn_ through historically
+independent developments.
+
+Kroonen relates the 'stem' family to the _stam(m)_ 'stem, trunk' group attested in
+Old High German, Dutch, and German, without reconstructing a separate 'prow'
+proto-form [@Kroonen2013, 479–480].
+
+### Old English evidence
+
+Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:42:1"} 'stem, trunk, root, prow, foundation', the weak n-stem
+[_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:43" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:43:1"} 'prow or stern of a ship',
+and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:44:1"} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
+
+Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
+Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47:1"} 'stem' and Middle English [_stam_]{.iv lang=me sort=stam role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47:2"} 'stem' — from the
+separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
+_stefn, stemn Stamm_ among words showing the _fn_/_mn_ alternation [@SieversBrunner1965, §205].
+
+The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:51:1"} 'stem, trunk, root, prow', the form attested most directly in the semantic range
+relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:52" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:52:1"}
+'prow/stern' is a closely related but more narrowly attested nautical specialization.
+
+### Development to Old English
+
+The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:57:1"} 'stem, trunk'
+from the i-stem input [stámniz]{.recon .iv lang=pgmc sort=stamniz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58:1"} 'stem, trunk'
+(Orel's attested i-stem variant; the citation reconstruction remains
+[stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60:1"} 'stem, trunk') is now **regular and
+modelled**, with multiplicity 1. Live trace under the corrected literal
+adjacent-_mn_ SC022:
+
+| step | form |
+| :--- | :--- |
+| proto input | _\*stámniz_ |
+| EAF Final Z Deletion | _\*stámni_ |
+| PNWGmc Mn Dissimilation (adjacent mn > βn) | _\*stáβni_ |
+| EAF Brightening (á > æ) | _\*stæβni_ |
+| OE i-Umlaut (æ > e, from the i-stem ending) | _\*steβni_ |
+| OE High Vowel Apocope | _\*steβn_ |
+| Old English Orthography (β > f) | _stefn_ |
+
+The consonantal change mn → _βn_/_fn_ is attested comparatively: Old Norse
+[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:75" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:75:1"} 'stem of a ship' and Old Saxon
+[_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:76" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:76:1"} 'stem' preserve the _fn_/_mn_
+variants expected from this family. The handbooks treat the change as a pre-Old-English
+development (Luick §211; Brunner §205), and the FST now encodes it as the historical
+**adjacent** _mn_ > _βn_ (the rule _PNWGmcMnDissimilation_ / SC022). The _e_ of _stefn_
+is regular from _á_ via brightening (_á_ > _æ_) plus i-umlaut triggered by the i-stem
+ending (_æ_ > _e_), so both the vowel and the consonant follow by regular sound change
+once the i-stem input is selected.
+
+Note the contrast with *heaven*. Here SC022 (_PNWGmcMnDissimilation_) **fires
+directly inside** the selected derivation, deriving the labial of _stefn_ from
+the adjacent _-mn-_ cluster of _\*stámniz_. In *heaven*, by contrast, the **same
+historical change _mn_ > _βn_/_fn_ operated only in the deeper cluster-bearing
+oblique prehistory**; the resulting labial was then **generalized** into the
+vowel-bearing _\*hebun-_ stem, so the selected CAPR path _\*xébun_ > _heofon_ begins
+*after* that analogy and does **not** itself contain SC022 (see
+`dossier-heaven-paradigm-history-2026.md` §§13–15 and
+`audits/heaven-sc022-implementation-2026.md`). The earlier cross-syllable
+_mV…n_ proxy — which had formerly fabricated a labial from an intervocalic *m* —
+has been **retired** in favour of this literal adjacent _mn_ > _βn_. Selecting the
+i-stem input _\*stámniz_ over the a-stem citation _\*stámnaz_ is a **pre-OE input
+selection**; once selected, the Old English development is regular. Hence the
+classification _early_analogy_ (analogy separates the input from the citation
+reconstruction before the specifically Old English changes apply), not
+_known_unmodelled_.
+
+### Homonym note
+
+Old English _stefn_/_stemn_ is a surface homonym for two etymologically unrelated words:
+
+1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a different row from 2216.
+2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:106" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:106:1"} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. This is row 2216.
+
+The form followed here, _\*stébnō_, used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
+
+### Source comparison
+
+| Form or label | Status | OE relation | Result |
+| :--- | :--- | :--- | :--- |
+| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:114" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:114:1"} 'stem, trunk' | Orel's PGmc a-stem citation for the stem/trunk/prow family | lexeme-level citation | retained as PROTO (citation) |
+| [stámniz]{.recon .iv lang=pgmc sort=stamniz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:115" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:115:1"} 'stem, trunk' | Orel's attested i-stem variant | **selected derivational input** | regular OE output _stefn_ (mult 1) |
+| [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:116" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:116:1"} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
+| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:117" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:117:1"} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
+| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:118" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:118:1"} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
+| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:119" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:119:1"} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
+| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not be used as row 2216's derivational input** |
+
 ## swan — OE _swanes_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swanes@\iventry{swanes}{}}
@@ -10394,12 +10742,12 @@ Proto input: _\*swánas_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10482,17 +10830,17 @@ Proto input: _\*θūsèndi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*θūsènd} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10584,12 +10932,12 @@ Proto input: _\*tímbrą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10666,12 +11014,12 @@ Proto input: _\*wákaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10757,17 +11105,17 @@ Proto input: _\*wátōr_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Or Lowering} & \emph{*wátar} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -10847,14 +11195,14 @@ Proto input: _\*xwálaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*xwála} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -10941,12 +11289,12 @@ Proto input: _\*xwī́naną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11041,12 +11389,12 @@ Proto input: _\*wī́θagą_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11144,14 +11492,14 @@ Proto input: _\*wíràldu_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc I Lowering} & \emph{*wéràldu} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11251,7 +11599,7 @@ Proto input: _\*júgunθ_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
@@ -11260,7 +11608,7 @@ EAF Nasal Spirant Lengthening & \emph{*jéugūnθ} \\
 \mbox{EAF Nasal Spirant Loss} & \emph{*jéugūθ} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11362,12 +11710,12 @@ Proto input: _\*bánnas_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11448,12 +11796,12 @@ Proto input: _\*bázjas_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11534,12 +11882,12 @@ Proto input: _\*báug_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11638,12 +11986,12 @@ Proto input: _\*kūi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11743,17 +12091,17 @@ Proto input: _\*fúnðanǭ_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*fúndanǭ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -11842,14 +12190,14 @@ Proto input: _\*fúrxtīnaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*fúrxtīna} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -11946,12 +12294,12 @@ Proto input: _\*xámaras_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -12038,19 +12386,18 @@ Proto input: _\*xábēθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc Long E Lowering} & \emph{*xábǣθ} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*xábēθ} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*xábǣθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -12119,107 +12466,6 @@ form from the regular 3sg present line.
 | 3sg present | [_\*xábēθi_]{.iv lang=pgmc sort=xabethi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62:1"} | regular output: [_hæfeþ_]{.iv lang=oe sort=haefeth role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62:2"} | [_hæfeþ_]{.iv lang=oe sort=haefeth role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62:3"} | exact match between input, output, and finite form compared here |
 | syncopated finite tradition | same present stem | [_hæfþ_]{.iv lang=oe sort=haefth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:63:1"} type evidence | [_hæfþ_]{.iv lang=oe sort=haefth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:63:2"} | genuine later OE finite form, but not the normalized target used here |
 
-## heaven — OE _heofon_
-
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!heofon@\iventry{heofon}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemenaz@\iventry{*xémenaz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xemonu@\iventry{*xémonų}{}}
-
-Derivation: citation reconstruction _\*xémenaz_; form followed here _\*xémonų_ > _heofon_ (late analogy).
-
-### Derivation trace
-
-Proto input: _\*xémonų_
-
-\begingroup
-\setlength{\fboxsep}{6pt}
-\noindent\fbox{%
-\begin{minipage}{0.97\linewidth}
-\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
-\begin{minipage}[t]{\linewidth}
-\centering\textbf{Earlier Germanic changes}\par
-\vspace{0.35em}
-\raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc Unstressed O Raising} & \emph{*xémunų} \\
-\mbox{PNWGmc Mn Dissimilation} & \emph{*xéβunų} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\end{minipage}
-&
-\begin{minipage}[t]{\linewidth}
-\centering\textbf{Old English changes}\par
-\vspace{0.35em}
-\raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Med Unstressed U Lowering} & \emph{*xéβonų} \\
-OE Velar Fricative Palatalization & \emph{*çéβonų} \\
-\mbox{OE Back Mutation} & \emph{*çéoβonų} \\
-\mbox{OE High Vowel Apocope} & \emph{*çéoβon} \\
-\end{tabularx}
-\end{minipage}
-\\
-\end{tabular}
-\end{minipage}%
-}
-\endgroup
-
-Old English form: _heofon_
-
-### Reconstruction and comparative evidence
-
-The inherited noun belongs to the mn-stem family cited by Kroonen as
-[hemina-*]{.iv .recon lang=pgmc sort=hemina source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22:1"} ‘heaven’ ~ [hemna-*]{.iv .recon lang=pgmc sort=hemna source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22:2"} ‘heaven’ [@Kroonen2013, 220]. The derivational input [xémonų]{.iv .recon lang=pgmc sort=xemonu source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:22:3"} ‘heaven’ is an
-oblique singular form within that paradigm rather than the lexeme-level
-citation form [xémenaz]{.iv .recon lang=pgmc sort=xemenaz source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:24:1"} ‘heaven’.
-
-The back-vocalic oblique stem accounts for the West Saxon target. Ringe and Taylor give
-northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27:1"} ‘heaven’ > West Saxon and Northumbrian [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:27:2"} 'heaven', Mercian
-[_heofen_]{.iv lang=oe sort=heofen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28:1"} 'heaven' [@RingeTaylor2014, 324]. Campbell likewise gives [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:28:2"} 'heaven' beside
-[_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:29:1"} 'heaven' in the same West-Saxon _u_-umlaut environment [@Campbell1959, §210.1].
-
-### Old English evidence
-
-Old English dictionaries record the standard West Saxon noun as [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:33:1"} 'heaven',
-alongside Anglian or Mercian [_hefen_]{.iv lang=oe variety=angl sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:34:1"} 'heaven' material [@ClarkHall1960, 188;
-@BosworthToller1898, 43]. Campbell also cites an earlier stage [_hefzen_]{.iv lang=oe variety=merc sort=hefzen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:35:1"} 'heaven (Mercian)' in the
-history of the word [@Campbell1959, §381].
-
-The target of this entry is the West Saxon citation form [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:38:1"} 'heaven'. Its vowel
-history points toward the oblique stem rather than the front-vocalic nominative
-line.
-
-### Development to Old English
-
-From [xémonų]{.iv .recon lang=pgmc sort=xemonu source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:44:1"} ‘heaven’, the West Saxon line passes through the oblique-stem type
-reflected in northern WGmc [hebun]{.iv .recon lang=pwgmc sort=hebun role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:45:1"} ‘heaven’ [@RingeTaylor2014, 324]. Campbell's
-[_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46:1"} 'heaven' beside [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46:2"} 'heaven' and earlier [_hefzen_]{.iv lang=oe variety=merc sort=hefzen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:46:3"} 'heaven (Mercian)' show the later West-Saxon
-back-mutation and suffix reshaping behind [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:47:1"} 'heaven'
-[@Campbell1959, §210.1; @Campbell1959, §381].
-
-The front-vocalic nominative line explains the dialectal [_hefen_]{.iv lang=oe variety=merc sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:50:1"} 'heaven (Mercian)'
-type. West Saxon [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:51:1"} 'heaven' reflects the oblique
-stem that was generalized into the nominative position.
-
-### Paradigm comparison
-
-The comparison below sets the relevant forms side by side. It distinguishes the front-vocalic nominative
-line from the oblique stem selected for West Saxon [_heofon_]{.iv lang=oe sort=heofon role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:57:1"} 'heaven'.
-
-| PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [_\*xémenaz_]{.iv lang=pgmc sort=xemenaz source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61:1"} | front-vocalic [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61:2"} type outcome | [_hefen_]{.iv lang=oe sort=hefen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61:3"} / [_heofen_]{.iv lang=oe sort=heofen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:61:4"} | useful control, but not the West Saxon form used here |
-| selected oblique singular | [_\*xémonų_]{.iv lang=pgmc sort=xemonu source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62:1"} | regular output: [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62:2"} | [_heofon_]{.iv lang=oe sort=heofon source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:62:3"} | exact match between input, output, and target |
-| older pre-OE stage | inherited oblique line | earlier [_hefzen_]{.iv lang=oe sort=hefzen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:63:1"} stage | [_hefzen_]{.iv lang=oe sort=hefzen source_ref="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:63:2"} | historical background for the same West Saxon development |
-
 ## live — OE _lifeþ_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lifeth@\iventry{lifeþ}{}}
@@ -12242,19 +12488,18 @@ Proto input: _\*líbēθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc Long E Lowering} & \emph{*líbǣθ} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*líbēθ} \\
+\mbox{PNWGmc Long E Lowering} & \emph{*líbǣθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -12338,12 +12583,12 @@ Proto input: _\*mánnas_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -12431,19 +12676,18 @@ Proto input: _\*mízdai_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PNWGmc Unstressed Ai Monophthongization & \emph{*mírdē} \\
 \mbox{PNWGmc I Lowering} & \emph{*mérdē} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*mírdē} \\
-\end{tabularx}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -12533,12 +12777,12 @@ Proto input: _\*náxti_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -12629,14 +12873,14 @@ Proto input: _\*rástōz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*rástō} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -12726,20 +12970,19 @@ Proto input: _\*skúldramiz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*skúldrum} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc A To U Before M} & \emph{*skúldrumiz} \\
 \mbox{PWGmc Early I Apocope} & \emph{*skúldrumz} \\
+\mbox{EAF Final Z Deletion} & \emph{*skúldrum} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -12815,12 +13058,12 @@ Proto input: _\*skáub_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -12902,17 +13145,17 @@ Proto input: _\*spánnai_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Ai Monophthongization} & \emph{*spánnē} \\
+PNWGmc Unstressed Ai Monophthongization & \emph{*spánnē} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -12984,12 +13227,12 @@ Proto input: _\*θístilas_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -13070,12 +13313,12 @@ Proto input: _\*mákô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -13166,17 +13409,17 @@ Proto input: _\*mákōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*mákōθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -13265,14 +13508,14 @@ Proto input: _\*búrô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*bórô} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -13358,19 +13601,18 @@ Proto input: _\*búrōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc U Lowering} & \emph{*bórōθ} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*búrōθ} \\
+\mbox{PNWGmc U Lowering} & \emph{*bórōθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -13453,12 +13695,12 @@ Proto input: _\*líznô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -13548,17 +13790,17 @@ Proto input: _\*líznōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*lírnōθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -13652,12 +13894,12 @@ Proto input: _\*líkkô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -13727,17 +13969,17 @@ Proto input: _\*líkkōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*líkkōθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -13807,12 +14049,12 @@ Proto input: _\*skáwô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -13885,17 +14127,17 @@ Proto input: _\*skáwōθi_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*skáwōθ} \\
 \end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
 \end{minipage}
 &
 \begin{minipage}[t]{\linewidth}
@@ -13972,14 +14214,14 @@ Proto input: _\*knúbbô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*knóbbô} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14068,14 +14310,14 @@ Proto input: _\*ráukaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*ráuka} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14151,12 +14393,12 @@ Proto input: _\*stráwjaną_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14242,136 +14484,6 @@ evidence, but the current transducer cascade does not yet implement the phonolog
 or morphological process required to derive the target. Naming the gap explains the
 status without pretending that no historical account exists.
 
-## stem — OE _stefn_
-
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefn@\iventry{stefn}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamnaz@\iventry{*stámnaz}{}}
-
-Derivation: _\*stámnaz_ yields regular _stamn_; the Old English form here is _stefn_ (known but unmodelled development).
-
-### Derivation trace
-
-Proto input: _\*stámnaz_
-
-\begingroup
-\setlength{\fboxsep}{6pt}
-\noindent\fbox{%
-\begin{minipage}{0.97\linewidth}
-\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
-\begin{minipage}[t]{\linewidth}
-\centering\textbf{Earlier Germanic changes}\par
-\vspace{0.35em}
-\raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*stámna} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\end{minipage}
-&
-\begin{minipage}[t]{\linewidth}
-\centering\textbf{Old English changes}\par
-\vspace{0.35em}
-\raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Final Bare A Loss} & \emph{*stámn} \\
-\end{tabularx}
-\end{minipage}
-\\
-\end{tabular}
-\end{minipage}%
-}
-\endgroup
-
-Regular outcome: _stamn_
-
-Old English form: _stefn_
-
-### Reconstruction and comparative evidence
-
-Orel reconstructs the Proto-Germanic source as [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:21:1"}
-'stem, trunk' (also variant [stamniz]{.recon} 'stem, trunk'), citing Old Norse
-[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:23:1"} 'stem of a ship',
-Old Frisian [_stevene_]{.iv lang=ofris sort=stevene role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:24:1"} 'stem of a ship' (fem.),
-and Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:25:1"} 'stem' as its
-main continuants [@Orel2003, 371].
-
-This word is etymologically unrelated to the Old English homonym
-[stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound',
-which descends from a distinct Proto-Germanic
-[stebnō]{.recon} 'voice, sound' / [stemnō]{.recon} 'voice, sound' etymon.
-The two OE lexemes are distinguished in Clark Hall, Bosworth-Toller, Brunner, and
-Luick; they collide on the surface forms _stefn_ and _stemn_ through historically
-independent developments.
-
-Kroonen relates the 'stem' family to the _stam(m)_ 'stem, trunk' group attested in
-Old High German, Dutch, and German, without reconstructing a separate 'prow'
-proto-form [@Kroonen2013, 479–480].
-
-### Old English evidence
-
-Clark Hall records [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:42:1"} 'stem, trunk, root, prow, foundation', the weak n-stem
-[_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:43" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:43:1"} 'prow or stern of a ship',
-and the related [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:44:1"} 'trunk, stem, branch, shoot' [@ClarkHall1960, 276, 341].
-
-Luick §211 explicitly distinguishes OE [stefn]{.lex lang=oe} 'stem, trunk' / [stemn]{.lex lang=oe} 'stem, trunk' — noting cognates with
-Old Saxon [_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47:1"} 'stem' and Middle English [_stam_]{.iv lang=me sort=stam role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:47:2"} 'stem' — from the
-separate OE voice/sound word ([stefn]{.lex lang=oe} 'voice, sound' / [stemn]{.lex lang=oe} 'voice, sound') treated in §75 [@Luick1914, §211]. Brunner §205 lists
-_stefn, stemn Stamm_ among words showing the _fn_/_mn_ alternation [@SieversBrunner1965, §205].
-
-The primary comparison form used here is [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:51:1"} 'stem, trunk, root, prow', the form attested most directly in the semantic range
-relevant to English _stem_. The n-stem [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:52" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:52:1"}
-'prow/stern' is a closely related but more narrowly attested nautical specialization.
-
-### Development to Old English
-
-The derivation of OE [_stefn_]{.iv lang=oe sort=stefn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:57:1"} 'stem, trunk'
-from [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:58:1"} 'stem, trunk'
-involves a cluster change _mn → fn_ that is attested comparatively: Old Norse
-[_stafn_]{.iv lang=on sort=stafn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:60:1"} 'stem of a ship' and Old Saxon
-[_stamn_]{.iv lang=os sort=stamn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:61:1"} 'stem' preserve the _fn_/_mn_ variants
-expected from this family. The precise phonological dating and domain of this change —
-whether it belongs to a North-West Germanic stage, an early West Germanic stage, or is
-reconstructed separately in each branch — is not definitively resolved by the cited
-scholarship. The handbooks treat it as a pre-Old-English development (Luick §211;
-Brunner §205), but the term "North-West Germanic coda dissimilation" should be taken
-as descriptive rather than technically established. This coda environment
-(_[C]mn → [C]fn_) is distinct from the cross-syllable m → _β_ change (as in
-[xémonų]{.recon} 'heaven' → [_heofon_]{.iv lang=oe sort=heofon role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69:1"} 'heaven') handled by the _PNWGmcMnDissimilation_ rule;
-it is currently not modeled in the FST.
-
-The correct OE-facing transponent has not yet been established for the FST pipeline.
-The classification _known_unmodelled_ reflects that the derivation involves a historically
-real development not yet represented in the FST cascade. The derivation is attested
-comparatively; the FST work remains to be done.
-
-### Homonym note
-
-Old English _stefn_/_stemn_ is a surface homonym for two etymologically unrelated words:
-
-1. _stefn_/_stemn_ 'voice, sound': from PGmc _\*stebnō_ (Ringe-Taylor, Orel); via _bn → fn_ (b-allophony), giving [stefn]{.lex lang=oe} 'voice, sound'. This is a different row from 2216.
-2. _stefn_/_stefna_/_stofn_/_stemn_ 'stem, trunk, prow': from PGmc [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82:1"} 'stem/trunk' (Orel); via the pre-OE cluster change _mn → fn_. This is row 2216.
-
-The form followed here, _\*stébnō_, used in earlier versions of this entry was the wrong homonym's transponent and must not be used here.
-
-### Source comparison
-
-| Form or label | Status | OE relation | Result |
-| :--- | :--- | :--- | :--- |
-| [stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:90" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:90:1"} 'stem, trunk' | Orel's PGmc citation for stem/trunk/prow family | controls this derivation | selected comparative citation |
-| [_stefn_]{.iv lang=oe sort=stefn role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:91" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:91:1"} III 'stem, trunk, root, prow' | primary OE target (strong masc.) | stem/trunk sense per Clark Hall | target form |
-| [_stefna_]{.iv lang=oe sort=stefna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:92" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:92:1"} 'prow/stern' | OE n-stem specialization | nautical sense per Clark Hall | comparison form |
-| [_stofn_]{.iv lang=oe sort=stofn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:93" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:93:1"} 'trunk' | OE _o_-grade variant or earlier stage | trunk/stem sense | comparison form |
-| [_stemn_]{.iv lang=oe sort=stemn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:94" occ_id="Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:94:1"} 'trunk' | late West Saxon _fn → mn_ doublet | secondary form | comparison form |
-| _\*stébnō_ (voice word) | **wrong homonym** — belongs to voice/sound dossier | no relation to stem/trunk sense | **must not be used as row 2216's derivational input** |
-
 ## fire — OE _fȳre_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyre@\iventry{fȳre}{}}
@@ -14393,12 +14505,12 @@ Proto input: _\*fūri_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14491,12 +14603,12 @@ Proto input: _\*táppô_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14582,7 +14694,7 @@ Proto input: _\*búkkaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -14590,7 +14702,7 @@ Proto input: _\*búkkaz_
 \mbox{EAF Final Z Deletion} & \emph{*bókka} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14674,7 +14786,7 @@ Proto input: _\*fúglaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -14682,7 +14794,7 @@ Proto input: _\*fúglaz_
 \mbox{EAF Final Z Deletion} & \emph{*fógla} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14782,7 +14894,7 @@ Proto input: _\*rústō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -14790,7 +14902,7 @@ Proto input: _\*rústō_
 \mbox{PNWGmc Final Long O Raising} & \emph{*róstu} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14883,7 +14995,7 @@ Proto input: _\*wúlfaz_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -14891,7 +15003,7 @@ Proto input: _\*wúlfaz_
 \mbox{EAF Final Z Deletion} & \emph{*wólfa} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par
@@ -14986,7 +15098,7 @@ Proto input: _\*wúllō_
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
 \raggedright
-\centering\textbf{Proto-Northwest Germanic}\par
+\centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
@@ -14994,7 +15106,7 @@ Proto input: _\*wúllō_
 \mbox{PNWGmc Final Long O Raising} & \emph{*wóllu} \\
 \end{tabularx}
 \vspace{0.6em}
-\centering\textbf{Proto-West Germanic}\par
+\centering\textbf{Early Anglo-Frisian}\par
 \raggedright
 \vspace{0.2em}
 \raggedright [no change]\par

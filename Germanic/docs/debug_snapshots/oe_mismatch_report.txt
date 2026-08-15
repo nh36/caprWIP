@@ -1,9 +1,9 @@
-Total mismatches: 8
+Total mismatches: 7
 
 === INTERVENTION SUMMARY ===
   TSV/data fixes needed:      0
   Documented exceptions:       7
-  Phonology (core buckets):    1
+  Phonology (core buckets):    0
   Phonology (other buckets):   0
 
 === DOCUMENTED EXCEPTIONS (oe_known_problems.tsv) ===
@@ -16,7 +16,6 @@ Total mismatches: 8
   *wúllō -> woll (expected wull)  [wontfix: u_lowering_near_labial]
 
 === CORE BUCKETS ===
-  fronting_missing__also_wrong_form: 1
 
 === OTHER SUB-BUCKETS ===
   front_expected_back_out: 1
@@ -34,9 +33,6 @@ Total mismatches: 8
 --- suffix_form sub-buckets ---
 
 === DETAILED EXAMPLES ===
-
-fronting_missing__also_wrong_form (1):
-  *stámnaz -> stamn (expected stefn)
 
 front_expected_back_out (1):
   *táppô -> tappa (expected tæppa)
@@ -58,4 +54,3 @@ final_vowel_missing__weak_noun_like (1):
 --- fronting_missing__afb ---
 
 --- fronting_missing__also_wrong_form ---
-*stámnaz -> stamn (expected stefn)
