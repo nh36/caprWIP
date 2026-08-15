@@ -26,6 +26,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 BOOK = REPO_ROOT / "Germanic/docs/book"
 ASSEMBLY = REPO_ROOT / "Germanic/docs/assembly"
+DATA = REPO_ROOT / "Germanic/data"
 TOOLS = REPO_ROOT / "Germanic/tools"
 
 sys.path.insert(0, str(TOOLS))
@@ -139,12 +140,12 @@ class HeavenStageTests(unittest.TestCase):
         for row in _forms():
             self.by_form.setdefault(row["form"], set()).add(row["language"])
 
-    def test_selected_input_and_source_forms_are_pwgmc(self):
+    def test_selected_input_and_source_forms_are_northern_west_germanic(self):
         for form in ("*xébun", "xébun", "hebun", "hebunas"):
             self.assertIn(form, self.by_form, f"{form} missing from index")
             self.assertEqual(
-                self.by_form[form], {"pwgmc"},
-                f"{form} should be dated pwgmc only, got {self.by_form[form]}",
+                self.by_form[form], {"nsgmc"},
+                f"{form} should be dated nsgmc (northern West Germanic) only, got {self.by_form[form]}",
             )
 
     def test_deeper_obliques_and_citation_stay_pgmc(self):
@@ -156,28 +157,47 @@ class HeavenStageTests(unittest.TestCase):
             )
 
     def test_no_heaven_form_is_labelled_proto_germanic_selected_input(self):
-        # *xébun is the selected input; it must never be pgmc.
-        self.assertNotIn("pgmc", self.by_form.get("*xébun", set()))
-        self.assertNotIn("pgmc", self.by_form.get("xébun", set()))
+        # *xébun is the selected input; it must never be pgmc, nor undifferentiated
+        # pwgmc, nor conflated with Proto-Northwest Germanic (pnwgmc).
+        for stray in ("pgmc", "pwgmc", "pnwgmc"):
+            self.assertNotIn(stray, self.by_form.get("*xébun", set()))
+            self.assertNotIn(stray, self.by_form.get("xébun", set()))
 
 
-class DuplicateChronologyTests(unittest.TestCase):
-    """A single source form never carries two different reconstructed stages."""
+class OccurrenceStageInvariantTests(unittest.TestCase):
+    """Each indexed occurrence carries exactly one explicit, valid stage.
 
-    def test_hebun_has_a_single_stage(self):
-        stages: set[str] = set()
+    Historical identity and orthographic identity are separate: the SAME
+    reconstructed spelling may legitimately occur at more than one stage (an
+    unchanged form can persist across stages, or two distinct reconstructions may
+    coincide in spelling). We therefore do NOT require a literal string to map to
+    exactly one stage across the whole book. We require that every occurrence has
+    a single defensible stage and that no *identical occurrence* is emitted with
+    conflicting stages.
+    """
+
+    def test_every_occurrence_has_a_single_valid_stage(self):
         for row in _forms():
-            if row["form"] == "hebun":
-                stages.add(row["language"])
-        self.assertEqual(stages, {"pwgmc"}, f"*hebun must have one stage, got {stages}")
+            self.assertTrue(row["language"], f"blank stage: {row['form']} @ {row['source_ref']}")
 
-    def test_no_reconstructed_form_spans_two_stages(self):
-        stages_by_form: dict[str, set[str]] = {}
+    def test_no_identical_occurrence_has_conflicting_stage(self):
+        # Genuine accidental-duplicate detection: the same occurrence_id must not
+        # appear with two different languages/stages.
+        by_occ: dict[str, set[str]] = {}
         for row in _forms():
-            if row["language"] in RECONSTRUCTED_STAGES:
-                stages_by_form.setdefault(row["form"], set()).add(row["language"])
-        multi = {f: s for f, s in stages_by_form.items() if len(s) > 1}
-        self.assertEqual(multi, {}, f"forms with duplicate chronological labels: {multi}")
+            occ = row.get("occurrence_id") or ""
+            if occ:
+                by_occ.setdefault(occ, set()).add(row["language"])
+        conflicts = {occ: langs for occ, langs in by_occ.items() if len(langs) > 1}
+        self.assertEqual(conflicts, {}, f"occurrences with conflicting stage: {conflicts}")
+
+    def test_hebun_lexeme_has_a_single_stage(self):
+        # This is a lexeme-specific regression (not a global string rule): the
+        # heaven source form *hebun is ONE reconstruction (R&T's northern West
+        # Germanic sky-word), so all its occurrences share one stage. It must not
+        # regress to the earlier duplicate pgmc/pwgmc labelling.
+        stages = {row["language"] for row in _forms() if row["form"] == "hebun"}
+        self.assertEqual(stages, {"nsgmc"}, f"*hebun must have one stage, got {stages}")
 
 
 class StemStageTests(unittest.TestCase):
@@ -200,7 +220,7 @@ class StageMetadataSidecarTests(unittest.TestCase):
     """The canonical stage sidecar is complete, valid, and matches the manifest."""
 
     def setUp(self):
-        self.sidecar = {r["row_id"]: r for r in _rows(ASSEMBLY / "entry_stage_metadata.tsv")}
+        self.sidecar = {r["row_id"]: r for r in _rows(DATA / "entry_stage_metadata.tsv")}
         self.manifest = _rows(ASSEMBLY / "manifest_all_by_class.tsv")
 
     def test_every_model_entry_has_a_stage_declaration(self):
@@ -215,8 +235,8 @@ class StageMetadataSidecarTests(unittest.TestCase):
             self.assertIn(row["proto_stage"], RECONSTRUCTED_STAGES, rid)
             self.assertIn(row["protoform_stage"], RECONSTRUCTED_STAGES, rid)
 
-    def test_heaven_protoform_is_pwgmc_proto_is_pgmc(self):
-        self.assertEqual(self.sidecar["2068"]["protoform_stage"], "pwgmc")
+    def test_heaven_protoform_is_northern_west_germanic_proto_is_pgmc(self):
+        self.assertEqual(self.sidecar["2068"]["protoform_stage"], "nsgmc")
         self.assertEqual(self.sidecar["2068"]["proto_stage"], "pgmc")
 
     def test_manifest_stage_matches_sidecar(self):

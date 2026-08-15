@@ -211,7 +211,9 @@ ALLOWED_FORM_ROLES = {
 # asterisk marks a form as *reconstructed*, not as Proto-Germanic: the historical
 # stage is a separate axis that must be declared explicitly by the canonical
 # source (model-entry PROTO_STAGE / PROTOFORM_STAGE, propagated via the manifest).
-RECONSTRUCTED_STAGE_CODES = ("pie", "pgmc", "pnwgmc", "pwgmc", "paf", "preoe")
+# `nsgmc` (northern West Germanic / North Sea Germanic) is a genuine domain
+# distinct from `pnwgmc` (Proto-Northwest Germanic); do not conflate them.
+RECONSTRUCTED_STAGE_CODES = ("pie", "pgmc", "pnwgmc", "pwgmc", "nsgmc", "paf", "preoe")
 
 
 def require_reconstructed_stage(stage: str, *, form: str, scope: str, source_ref: str) -> str:
@@ -1287,6 +1289,7 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
         (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "pnwgmc"),
         (r"\bproto-anglo-frisian\b|\bproto-anglofrisian\b", "paf"),
+        (r"\bnorthern west germanic\b", "nsgmc"),
         (r"\bproto-indo-european\b|\bproto-indo-european\b|\bpie\b", "pie"),
         (
             r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
@@ -2341,7 +2344,7 @@ def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
     hints = explicit_language_hints(text)
     non_oe_hints = hints - {"oe"}
     if candidate.form.startswith("*"):
-        for code in ("preoe", "paf", "pwgmc", "pnwgmc", "pgmc", "pie"):
+        for code in ("preoe", "paf", "nsgmc", "pwgmc", "pnwgmc", "pgmc", "pie"):
             if code in hints:
                 return code
         if len(non_oe_hints) == 1:
@@ -2520,6 +2523,7 @@ def explicit_language_hints(text: str) -> set[str]:
         (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
         (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "pnwgmc"),
         (r"\bproto-anglo-frisian\b|\bproto-anglofrisian\b", "paf"),
+        (r"\bnorthern west germanic\b", "nsgmc"),
         (r"\bproto-indo-european\b|\bproto-indo-european\b|\bpie\b", "pie"),
         (
             r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
@@ -2591,7 +2595,7 @@ def infer_table_semantic_language(
             # Reconstructed output with no stage signal: fail closed (never silent pgmc).
             return "", False
     if role in {"selected_input", "source_protoform"} and mention.form.startswith("*"):
-        for code in ("preoe", "paf", "pwgmc", "pnwgmc", "pgmc", "pie"):
+        for code in ("preoe", "paf", "nsgmc", "pwgmc", "pnwgmc", "pgmc", "pie"):
             if code in hints:
                 return code, True
         return "", False

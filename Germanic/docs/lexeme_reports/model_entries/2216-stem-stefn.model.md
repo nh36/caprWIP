@@ -57,8 +57,8 @@ relevant to English `stem`. The n-stem [`stefna`]{.iv lang=oe sort=stefna role=c
 The derivation of OE [`stefn`]{.iv lang=oe sort=stefn role=comparison_form} 'stem, trunk'
 from the i-stem input [stámniz]{.recon .iv lang=pgmc sort=stamniz role=source_protoform} 'stem, trunk'
 (Orel's attested i-stem variant; the citation reconstruction remains
-[stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk') is now **regular and
-modelled**, with multiplicity 1. Live trace under the corrected literal
+[stámnaz]{.recon .iv lang=pgmc sort=stamnaz role=source_protoform} 'stem, trunk') is now regular and
+modelled, with multiplicity 1. Live trace under the corrected literal
 adjacent-`mn` SC022:
 
 | step | form |
@@ -76,24 +76,24 @@ The consonantal change `mn → βn/fn` is attested comparatively: Old Norse
 [`stamn`]{.iv lang=os sort=stamn role=comparison_form} 'stem' preserve the `fn`/`mn`
 variants expected from this family. The handbooks treat the change as a pre-Old-English
 development (Luick §211; Brunner §205), and the FST now encodes it as the historical
-**adjacent** `mn > βn` (the rule `PNWGmcMnDissimilation` / SC022). The `e` of `stefn`
+adjacent `mn > βn` (the rule `PNWGmcMnDissimilation` / SC022). The `e` of `stefn`
 is regular from `á` via brightening (`á > æ`) plus i-umlaut triggered by the i-stem
 ending (`æ > e`), so both the vowel and the consonant follow by regular sound change
 once the i-stem input is selected.
 
-Note the contrast with *heaven*. Here SC022 (`PNWGmcMnDissimilation`) **fires
-directly inside** the selected derivation, deriving the labial of `stefn` from
-the adjacent `-mn-` cluster of `*stámniz`. In *heaven*, by contrast, the **same
-historical change** `mn > βn/fn` operated only in the deeper **cluster-bearing
-oblique prehistory**; the resulting labial was then **generalized** into the
+Note the contrast with *heaven*. Here SC022 (`PNWGmcMnDissimilation`) fires
+directly inside the selected derivation, deriving the labial of `stefn` from
+the adjacent `-mn-` cluster of `*stámniz`. In *heaven*, by contrast, the same
+historical change `mn > βn/fn` operated only in the deeper cluster-bearing
+oblique prehistory; the resulting labial was then generalized into the
 vowel-bearing `*hebun-` stem, so the selected CAPR path `*xébun -> heofon` begins
-*after* that analogy and does **not** itself contain SC022 (see
+*after* that analogy and does not itself contain SC022 (see
 `dossier-heaven-paradigm-history-2026.md` §§13–15 and
 `audits/heaven-sc022-implementation-2026.md`). The earlier cross-syllable
 `mV…n` proxy — which had formerly fabricated a labial from an intervocalic *m* —
-has been **retired** in favour of this literal adjacent `mn > βn`. Selecting the
-i-stem input `*stámniz` over the a-stem citation `*stámnaz` is a **pre-OE input
-selection**; once selected, the Old English development is regular. Hence the
+has been retired in favour of this literal adjacent `mn > βn`. Selecting the
+i-stem input `*stámniz` over the a-stem citation `*stámnaz` is a pre-OE input
+selection; once selected, the Old English development is regular. Hence the
 classification `early_analogy` (analogy separates the input from the citation
 reconstruction before the specifically Old English changes apply), not
 `known_unmodelled`.

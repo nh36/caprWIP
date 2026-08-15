@@ -12,11 +12,11 @@ REPO_ROOT = ASSEMBLY_DIR.parents[2]
 MODEL_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 TRACE_REPORT = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
 # Canonical historical-stage declaration for reconstructed PROTO/PROTOFORM forms,
-# keyed by row_id. Kept as a sidecar (rather than inline model-entry headers) so
-# stage metadata never shifts the line-anchored index-decision curation. A
-# reconstruction asterisk means "reconstructed", NOT "Proto-Germanic"; the stage
-# axis is declared explicitly here and never silently defaulted.
-STAGE_METADATA_PATH = ASSEMBLY_DIR / "entry_stage_metadata.tsv"
+# keyed by row_id. Lives with the corpus data (upstream of assembly) because it
+# encodes scholarly historical judgments, not assembly output. A reconstruction
+# asterisk means "reconstructed", NOT "Proto-Germanic"; the stage axis is
+# declared explicitly here and never silently defaulted.
+STAGE_METADATA_PATH = REPO_ROOT / "Germanic/data/entry_stage_metadata.tsv"
 
 
 def load_stage_metadata() -> dict[str, dict[str, str]]:

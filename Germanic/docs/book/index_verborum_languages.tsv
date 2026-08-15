@@ -4,6 +4,7 @@ oe	Old English	3	1	Includes attested and reconstructed Old English forms; recons
 pgmc	Proto-Germanic	3	1	Comparative proto-language and selected PGmc input-stage forms.	
 pnwgmc	Proto-Northwest Germanic	3	1	Intermediate Northwest Germanic reconstructed stages where a Proto-Northwest analysis is explicitly used.	
 pwgmc	Proto-West Germanic	3	1	Intermediate West Germanic reconstructed stages.	
+nsgmc	Northern West Germanic	3	1	Ringe & Taylor's "northern West Germanic" (North Sea Germanic / Ingvaeonic): the innovating northern dialect area WITHIN West Germanic, ancestral to Anglo-Frisian and shared with Old Saxon (e.g. *hebun, whence OE heofon and OS heban). NOT Proto-Northwest Germanic (pnwgmc, the common ancestor of North and West Germanic); narrower than undifferentiated Proto-West Germanic (pwgmc).	
 paf	Proto-Anglo-Frisian	3	1	Optional intermediate stage used when a source or adopted analysis reconstructs an Anglo-Frisian common stage.	
 preoe	Pre-Old English / prehistoric English	3	1	Historical English-branch stage between common Germanic stages and attested Old English; not a model-internal label.	
 on	Old Norse	3	1	Comparison-language evidence.	

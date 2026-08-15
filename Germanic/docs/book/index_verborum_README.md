@@ -124,6 +124,7 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 - `pgmc` — Proto-Germanic
 - `pnwgmc` — Proto-Northwest Germanic
 - `pwgmc` — Proto-West Germanic
+- `nsgmc` — Northern West Germanic
 - `paf` — Proto-Anglo-Frisian
 - `preoe` — Pre-Old English / prehistoric English
 - `on` — Old Norse
@@ -174,13 +175,38 @@ is eligible in** `Germanic/docs/book/index_verborum_print_main.tsv`.
 
 ## Stage ontology
 
-The historical stages recognized for Index Verborum purposes follow the standard comparative-Germanic cascade:
+A broad comparative-Germanic backbone runs:
 
 ```
 PIE → PGmc → PNWGmc → PWGmc → Pre-OE → OE
 ```
 
-Proto-Anglo-Frisian (`paf`) is an optional analytical stage used between PWGmc and Pre-OE when a source or adopted analysis reconstructs an Anglo-Frisian common stage. Language/stage codes and computational provenance are **independent**: a form may be tagged `lang=preoe` because it belongs to the historical Pre-OE stage, not because the transducer predicted it.
+but the ontology is **not a single linear chain**: reconstruction domains may
+branch or overlap, and the historical analysis — not the existing label list —
+determines the taxonomy. Add a controlled stage/domain code when authoritative
+scholarship uses the distinction and flattening it into an existing label would
+make a false chronological or genealogical claim.
+
+Intermediate reconstruction domains currently recognised:
+
+- `pnwgmc` — **Proto-Northwest Germanic**: the common ancestor of North Germanic
+  and West Germanic (a node *above* West Germanic).
+- `pwgmc` — **Proto-West Germanic**: undifferentiated West Germanic (ancestor of
+  OE, OS, OHG, OFri, including High German).
+- `nsgmc` — **Northern West Germanic** (North Sea Germanic / Ingvaeonic): the
+  innovating northern dialect area *within* West Germanic (Ringe & Taylor's
+  designation for *hebun*), ancestral to Anglo-Frisian and shared with Old Saxon.
+  This is **not** Proto-Northwest Germanic (`pnwgmc`) and is narrower than
+  undifferentiated `pwgmc`.
+- `paf` — **Proto-Anglo-Frisian**: the common Anglo-Frisian (English + Frisian)
+  stage, narrower than North Sea Germanic (it excludes Saxon).
+- `preoe` — **Pre-Old English**: the English-branch stage between the common
+  Germanic stages and attested Old English.
+
+Language/stage codes and computational provenance are **independent**: a form may
+be tagged `lang=preoe` because it belongs to the historical Pre-OE stage, not
+because the transducer predicted it.
+
 
 ### Reconstruction status vs. historical stage (independent axes)
 
@@ -223,9 +249,9 @@ stage explicitly.
 CAPR's canonical transcription writes the Germanic dorsal fricative `x`; several
 sources (e.g. Ringe & Taylor) write it `h`. These are the **same lexeme in two
 notations**, so they must share one stage and must not appear as two unrelated
-Proto-Germanic headwords. Example: R&T's northern West Germanic *hebun* is the
-lexeme CAPR writes *\*xébun*; both are dated `pwgmc`, so the source spelling and
-the canonical spelling are never given conflicting chronological labels.
+headwords. Example: R&T's northern West Germanic *hebun* is the lexeme CAPR
+writes *\*xébun*; both are dated `nsgmc`, so the source spelling and the
+canonical spelling are never given conflicting chronological labels.
 
 ### Worked examples
 
@@ -236,10 +262,10 @@ PROTO/PROTOFORM  *helpaną   (sidecar: proto_stage=pgmc, protoform_stage=pgmc)
 
 # heaven — analogically remodelled input is *later* than the PGmc paradigm
 PROTO       *xémenaz   (pgmc — Kroonen's PGmc mn-stem citation)
-PROTOFORM   *xébun     (pwgmc — R&T's northern West Germanic remodelled stem)
+PROTOFORM   *xébun     (nsgmc — R&T's northern West Germanic remodelled stem)
 [xémnas]{.iv .recon lang=pgmc sort=xemnas}      # deeper oblique cluster: PGmc
-[xébun]{.iv .recon lang=pwgmc sort=xebun}       # selected input: post-PGmc
-[hebun]{.iv .recon lang=pwgmc sort=hebun}       # R&T's h-notation of *xébun (same stage)
+[xébun]{.iv .recon lang=nsgmc sort=xebun}       # selected input: northern WGmc
+[hebun]{.iv .recon lang=nsgmc sort=hebun}       # R&T's h-notation of *xébun (same stage)
 ```
 
 An uncertain stage is preserved as uncertain (routed to review), never
