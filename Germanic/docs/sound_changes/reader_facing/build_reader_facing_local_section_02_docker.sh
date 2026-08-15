@@ -31,7 +31,6 @@ chapter_files = [
     "053-054-pre-umlaut-bridge-and-w-loss.md",
     "055-056-i-umlaut-core.md",
     "057-j-cluster-coalescence.md",
-    "058-nasal-dissimilation.md",
     "059-oe-back-mutation.md",
     "060-ws-palatal-umlaut-note.md",
     "061-weak-tail-nasal-loss-note.md",

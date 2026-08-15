@@ -20,7 +20,6 @@ out = root / "reader_facing_pilot_02.md"
 chapter_files = [
     "052-velar-palatalization.md",
     "055-056-i-umlaut-core.md",
-    "058-nasal-dissimilation.md",
     "049-pgmc-b-allophony.md",
     "050-pwgmc-sievers-law-syncope.md",
     "051-sk-palatalization.md",

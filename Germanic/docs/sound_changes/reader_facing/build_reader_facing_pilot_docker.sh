@@ -20,7 +20,6 @@ out = root / "reader_facing_pilot_01.md"
 chapter_files = [
     "052-velar-palatalization.md",
     "055-056-i-umlaut-core.md",
-    "058-nasal-dissimilation.md",
 ]
 source_note = "source_note.md"
 
