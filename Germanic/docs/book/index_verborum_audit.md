@@ -1,9 +1,9 @@
 # Index verborum audit
 
 - Internal production occurrences: 2362
-- Internal production unique forms: 1069
+- Internal production unique forms: 1073
 - Printed main-index occurrences: 2274
-- Printed main-index unique forms: 1059
+- Printed main-index unique forms: 1063
 - Print-excluded occurrences: 88
 - Print-excluded unique forms: 69
 - Print exclusions (regular_output_default_exclusion): 88
@@ -18,12 +18,12 @@
 - Reader-facing example candidate rows: 890
 - Reader-facing rows include_in_example_index=yes: 495
 - Reader-facing rows include_in_example_index=no: 395
-- Audit-only candidates needing review: 0
-- True remaining unresolved: 0
+- Audit-only candidates needing review: 1
+- True remaining unresolved: 1
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 441
 - Broad-prose notation / compound expressions: 448
-- Broad-prose evidence suggestions: 283
+- Broad-prose evidence suggestions: 282
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 7
 - Reader-facing examples quarantined (separate example index policy): 745
@@ -38,7 +38,7 @@
 - Ignored fragments or sequences: 317
 - Possible extraction garbage: 13
 - Excluded intermediate trace forms: 1278
-- New unresolved candidates relative to baseline: 0
+- New unresolved candidates relative to baseline: 1
 - Baseline candidates now resolved or ignored: 0
 
 ## Internal production forms by language
@@ -46,9 +46,9 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1304 | 465 |
-| Proto-Germanic | 946 | 523 |
-| Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 5 | 4 |
+| Proto-Germanic | 938 | 522 |
+| Proto-Northwest Germanic | 4 | 2 |
+| Proto-West Germanic | 11 | 8 |
 | Northern West Germanic | 8 | 3 |
 | Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 23 | 14 |
@@ -84,14 +84,16 @@
 
 - `*brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
 - `*brōkiz` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21)
+- `*nábulô` (lexical_protoform; navel — OE nafola)
+- `*nábulô` (trace_proto_input; navel — OE nafola)
 
 ### Proto-West Germanic
 
 - `*bakan` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21)
+- `*júgunθ` (lexical_protoform; youth — OE ġeoguþ)
+- `*júgunθ` (trace_proto_input; youth — OE ġeoguþ)
 - `*skuldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:21)
 - `*skúldru` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:48)
-- `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:24)
-- `*timbr` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md:48)
 
 ### Northern West Germanic
 
@@ -192,9 +194,9 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1216 | 455 |
-| Proto-Germanic | 946 | 523 |
-| Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 5 | 4 |
+| Proto-Germanic | 938 | 522 |
+| Proto-Northwest Germanic | 4 | 2 |
+| Proto-West Germanic | 11 | 8 |
 | Northern West Germanic | 8 | 3 |
 | Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 23 | 14 |
@@ -1131,13 +1133,13 @@
 | `bām` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bēġra` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `bisceoprocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*bō-jenō` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*bō-jenō` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:27 |  | source_protoform | citation or reconstructed source form in prose |
 | `*breeci` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:21 | pnwgmc | selected_input | selected input described in prose |
 | `breóstrocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*budmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*budmō` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*butmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*buttaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*budmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 |  | source_protoform | citation or reconstructed source form in prose |
+| `*budmō` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*butmaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:27 |  | source_protoform | citation or reconstructed source form in prose |
+| `*buttaz` | Germanic/docs/lexeme_reports/model_entries/1959-bottom-botm.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `Campbell's` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:51 | oe | comparison_form | attested Old English comparison form in development prose |
 | `ēaw` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
@@ -1145,7 +1147,7 @@
 | `flēag` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `fléoge` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*fleugana` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*fleugana` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 |  | selected_input | selected input described in prose |
 | `flogen` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `flugon` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `folc` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1155,12 +1157,12 @@
 | `full` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `fyrht` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `fyrhtan` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*garna` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:33 | pgmc | selected_input | selected input described in prose |
+| `*garna` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 |  | selected_input | selected input described in prose |
+| `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 |  | selected_input | selected input described in prose |
+| `*garnăn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:33 |  | selected_input | selected input described in prose |
 | `geaf` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*gearn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*geern` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*gearn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 |  | selected_input | selected input described in prose |
+| `*geern` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 |  | selected_input | selected input described in prose |
 | `gefan` | Germanic/docs/lexeme_reports/model_entries/2041-give-ġiefan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `geond-scēawian` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `gest` | Germanic/docs/lexeme_reports/model_entries/2049-guest-ġiest.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1184,14 +1186,14 @@
 | `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hindan` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hlæhan` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*hnekkō` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*hnekkō` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
 | `input` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:95 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*juguþ` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:28 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*kalbizō` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*kauwjan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:31 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*kneht` | Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*kraftiz` | Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*kraftuz` | Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*juguþ` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:28 |  | source_protoform | citation or reconstructed source form in prose |
+| `*kalbizō` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:21 |  | selected_input | selected input described in prose |
+| `*kauwjan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:31 |  | source_protoform | citation or reconstructed source form in prose |
+| `*kneht` | Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
+| `*kraftiz` | Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
+| `*kraftuz` | Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
 | `lædan` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `læppa` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:22 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `læppa` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:34 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1199,7 +1201,7 @@
 | `læppa` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `læppa` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:45 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*laidijaną` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*lappōn` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*lappōn` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `leappan` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `leoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `lēoht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1209,7 +1211,7 @@
 | `liht` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `līhtan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `linden` | Germanic/docs/lexeme_reports/model_entries/2104-linden-lind.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*liþuz` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:33 | pgmc | comparison_form | comparative or background source form in prose |
+| `*liþuz` | Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md:33 |  | comparison_form | comparative or background source form in prose |
 | `*liuxtijanan` | Germanic/docs/lexeme_reports/model_entries/2102-light-līehtan.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `lungena` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `lungenādl` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1219,54 +1221,54 @@
 | `mæċa` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:48 | oe | comparison_form | attested Old English comparison form in development prose |
 | `make` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:25 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `*makon` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:25 | pwgmc | source_protoform | citation or reconstructed source form in prose |
-| `*mannz` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:22 | pgmc | selected_input | selected input described in prose |
+| `*mannz` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:22 |  | selected_input | selected input described in prose |
 | `maran` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mēder` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mēder` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*mekojan` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:25 | pwgmc | source_protoform | citation or reconstructed source form in prose |
-| `*melukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*melukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `meolc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `meolc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `meoluc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mere` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `milc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `milc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*mizdo` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:45 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*mizdu` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:45 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*mizdo` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:45 |  | source_protoform | citation or reconstructed source form in prose |
+| `*mizdu` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:45 |  | source_protoform | citation or reconstructed source form in prose |
 | `modor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `modor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `mōdor` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mV…n` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:93 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*nabulō` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:23 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*nabulō` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*næbula` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:23 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*næbula` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:28 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:44 | pgmc | source_protoform | source form in development prose |
-| `*nahtiz` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*natjan` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*nabulō` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:23 |  | source_protoform | citation or reconstructed source form in prose |
+| `*nabulō` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 |  | source_protoform | citation or reconstructed source form in prose |
+| `*næbula` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:23 |  | source_protoform | citation or reconstructed source form in prose |
+| `*næbula` | Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:45 |  | source_protoform | citation or reconstructed source form in prose |
+| `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:28 |  | source_protoform | citation or reconstructed source form in prose |
+| `*nahti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:44 |  | source_protoform | source form in development prose |
+| `*nahtiz` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*natjan` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 | oe | comparison_form | attested Old English comparison form in development prose |
 | `nédl` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:42 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*nēdlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*nēdlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*nēdlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
+| `*nēdlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 |  | source_protoform | citation or reconstructed source form in prose |
 | `net` | Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
+| `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:41 |  | source_protoform | citation or reconstructed source form in prose |
 | `nidi` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `nosa` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:36 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*rukkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*rukkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:22 | os | source_protoform | citation or reconstructed source form in prose |
-| `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:28 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:39 | pgmc | comparison_form | comparative or background source form in prose |
-| `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:47 | pgmc | comparison_form | comparative or background source form in prose |
-| `*rústu` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:49 | pgmc | comparison_form | comparative or background source form in prose |
+| `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:28 |  | source_protoform | citation or reconstructed source form in prose |
+| `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:39 |  | comparison_form | comparative or background source form in prose |
+| `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:47 |  | comparison_form | comparative or background source form in prose |
+| `*rústu` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:49 |  | comparison_form | comparative or background source form in prose |
 | `sæ` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:40 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*sapan` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:24 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*sapan` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:24 |  | source_protoform | citation or reconstructed source form in prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `scéap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1280,8 +1282,7 @@
 | `shilling` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `show` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `sieve` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:27 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `*skawōjanan` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 | pgmc | selected_input | selected input described in prose |
-| `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 | pgmc | source_protoform | introductory illustrative example |
+| `*skawōjanan` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 |  | selected_input | selected input described in prose |
 | `*skúldrumiz` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `slǣp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `slǣp` | Germanic/docs/lexeme_reports/model_entries/2196-sleep-slǣpan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1306,23 +1307,23 @@
 | `sperran` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `staff` | Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md:32 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*stamniz` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:22 | on | source_protoform | citation or reconstructed source form in prose |
-| `*stebnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:108 | pgmc | selected_input | selected input described in prose |
+| `*stebnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 |  | source_protoform | citation or reconstructed source form in prose |
+| `*stébnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:108 |  | selected_input | selected input described in prose |
 | `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:46 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:52 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `stem` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:57 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*stemnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*stemnō` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:31 |  | source_protoform | citation or reconstructed source form in prose |
 | `*straujana` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:33 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*strauwjan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*strauwjan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 |  | source_protoform | citation or reconstructed source form in prose |
 | `*striegan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:33 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*sumaraz` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*sumeraz` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*sunþraz` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*sunþrjanan` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*sunþrōjanan` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*sumaraz` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:21 |  | selected_input | selected input described in prose |
+| `*sumeraz` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:21 |  | selected_input | selected input described in prose |
+| `*sunþraz` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*sunþrjanan` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*sunþrōjanan` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `swalewan` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `swaluwe` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*swalwa` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*swalwa` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `swealuwe` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `swelgan` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:21 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `swelgan` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1331,16 +1332,16 @@
 | `tācnes` | Germanic/docs/lexeme_reports/model_entries/2260-token-tācn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tæppere` | Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tæppestre` | Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*taiknan` | Germanic/docs/lexeme_reports/model_entries/2260-token-tācn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*tappòn` | Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*taiknan` | Germanic/docs/lexeme_reports/model_entries/2260-token-tācn.model.md:21 |  | selected_input | selected input described in prose |
+| `*tappòn` | Germanic/docs/lexeme_reports/model_entries/2240-tap-tæppa.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `tēa` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*tëhun` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*tëhun` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `tēn` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tēo` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tēoða` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tēontig` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*þankaz` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 | pgmc | comparison_form | comparative or background source form in prose |
-| `*þankijaną` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 | pgmc | comparison_form | comparative or background source form in prose |
+| `*þankaz` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 |  | comparison_form | comparative or background source form in prose |
+| `*þankijaną` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:21 |  | comparison_form | comparative or background source form in prose |
 | `þencan` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `þencan` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `thousand` | Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:50 | oe | comparison_form | attested Old English comparison form in development prose |
@@ -1348,18 +1349,18 @@
 | `þrī` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `þry` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `þry` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*þurnaz` | Germanic/docs/lexeme_reports/model_entries/2251-thorn-þorn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*þurnuz` | Germanic/docs/lexeme_reports/model_entries/2251-thorn-þorn.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*þurnaz` | Germanic/docs/lexeme_reports/model_entries/2251-thorn-þorn.model.md:21 |  | selected_input | selected input described in prose |
+| `*þurnuz` | Germanic/docs/lexeme_reports/model_entries/2251-thorn-þorn.model.md:21 |  | selected_input | selected input described in prose |
 | `tīda` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tīde` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tien` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `tien` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tien` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:38 | oe | comparison_form | attested Old English comparison form in development prose |
 | `tīen` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:38 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*tīđiz` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*tūnan` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*tūnăn` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:33 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*tūnaz` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*tīđiz` | Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*tūnan` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:21 |  | selected_input | selected input described in prose |
+| `*tūnăn` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:33 |  | source_protoform | citation or reconstructed source form in prose |
+| `*tūnaz` | Germanic/docs/lexeme_reports/model_entries/2263-town-tūn.model.md:21 |  | selected_input | selected input described in prose |
 | `twām` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `tȳn` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `tȳn` | Germanic/docs/lexeme_reports/model_entries/2242-ten-tēon.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1374,13 +1375,13 @@
 | `wæstm` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `wapen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:27 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wapen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*waskanan` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*waskanan` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `*watenaz` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*wator` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:24 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*wator` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:24 |  | source_protoform | citation or reconstructed source form in prose |
 | `*watōr` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `wax` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wax` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `*waxsanan` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*waxsanan` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `wē` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wearp` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wearp` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:33 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -1391,24 +1392,24 @@
 | `wegas` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `wegum` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `wegum` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*weljan` | Germanic/docs/lexeme_reports/model_entries/2293-will-willa.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*weljōn` | Germanic/docs/lexeme_reports/model_entries/2293-will-willa.model.md:21 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*weljan` | Germanic/docs/lexeme_reports/model_entries/2293-will-willa.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
+| `*weljōn` | Germanic/docs/lexeme_reports/model_entries/2293-will-willa.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `wēox` | Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wépen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:26 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wépen` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wépn` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wépn` | Germanic/docs/lexeme_reports/model_entries/2278-weapon-wǣpn.model.md:39 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*werpana` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 | pgmc | selected_input | selected input described in prose |
+| `*werpana` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 |  | selected_input | selected input described in prose |
 | `weter` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:35 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `*wira-aldō` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:25 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*wīþja` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
-| `*wīþja` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:54 | pgmc | source_protoform | citation or reconstructed source form in prose |
+| `*wira-aldō` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:25 |  | source_protoform | citation or reconstructed source form in prose |
+| `*wīþja` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:22 |  | source_protoform | citation or reconstructed source form in prose |
+| `*wīþja` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:54 |  | source_protoform | citation or reconstructed source form in prose |
 | `*wulfaz` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `wulle` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wylfe` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:54 | oe | comparison_form | attested Old English comparison form in development prose |
-| `*xazwăz` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | pgmc | comparison_form | comparative or background source form in prose |
+| `*xazwăz` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 |  | comparison_form | comparative or background source form in prose |
 | `*xurnan` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:21 | pgmc | selected_input | selected input described in prose |
-| `*xurnăn` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:33 | pgmc | selected_input | selected input described in prose |
+| `*xurnăn` | Germanic/docs/lexeme_reports/model_entries/2082-horn-horn.model.md:33 |  | selected_input | selected input described in prose |
 | `yarn` | Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 
 ## Curated broad-prose deferred
@@ -2260,7 +2261,9 @@ _None._
 
 ## Likely Proto-Germanic forms
 
-_None._
+| Form | Source | Candidate origin |
+| --- | --- | --- |
+| `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 | broad_prose_candidate |
 
 ## Likely Proto-West Germanic forms
 
@@ -2367,7 +2370,7 @@ _None._
 | `*láimą` | Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53 |  | selected_input | selected-input row; language unclear |
 | `*lungō` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:55 |  | source_protoform | source-protoform row; language unclear |
 | `*lúnganjō` | Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:56 |  | selected_input | selected-input row; language unclear |
-| `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:57 | pgmc | comparison_form | comparison cell |
+| `*nēþlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:57 |  | comparison_form | comparison cell |
 | `*nḗdlō` | Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59 | preoe | comparison_form | comparison/negative row |
 | `*nasō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59 | pgmc | comparison_form | full-grade comparative background only |
 | `*núsō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:60 | pgmc | selected_input | short remodeled zero-grade input; keep manual review |
@@ -2808,11 +2811,15 @@ _None._
 
 ## Top repeated unresolved forms
 
-_None._
+| Form | Count |
+| --- | --- |
+| `*skúldramiz` | 1 |
 
 ## Unresolved forms by source file
 
-_None._
+| Source file | Count |
+| --- | --- |
+| Germanic/docs/assembly/capr_book_intro_alpha_01.md | 1 |
 
 ## Top unresolved table files
 
@@ -2820,7 +2827,9 @@ _None._
 
 ## New unresolved candidates relative to baseline
 
-_None._
+| Form | Source | Category | Nearest heading |
+| --- | --- | --- | --- |
+| `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 | likely_pgmc | ## Inputs, targets, and success |
 
 ## Resolved or ignored baseline candidates
 

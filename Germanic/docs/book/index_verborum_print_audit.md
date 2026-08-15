@@ -1,9 +1,9 @@
 # Index verborum print audit
 
 - Internal production occurrences: 2362
-- Internal production unique forms: 1069
+- Internal production unique forms: 1073
 - Printed main occurrences: 2274
-- Printed main unique forms: 1059
+- Printed main unique forms: 1063
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -16,9 +16,9 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1216 | 455 |
-| Proto-Germanic | 946 | 523 |
-| Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 5 | 4 |
+| Proto-Germanic | 938 | 522 |
+| Proto-Northwest Germanic | 4 | 2 |
+| Proto-West Germanic | 11 | 8 |
 | Northern West Germanic | 8 | 3 |
 | Pre-Old English / prehistoric English | 6 | 6 |
 | Old Norse | 23 | 14 |
@@ -64,7 +64,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1077
+- Unique printed entries: 1081
 - Print anomaly rows: 50
 - Hard print anomalies: 0
 
@@ -123,8 +123,12 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
+| pwgmc | `*júgunθ` | jugunth | 2 | selected_input; source_protoform |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
+| pwgmc | `*spárōjaną` | sparojana | 2 | selected_input; source_protoform |
+| pwgmc | `*θūs-èndi` | thusendi | 1 | source_protoform |
+| pwgmc | `*θūsèndi` | thusendi | 1 | selected_input |
 | pwgmc | `*timbr` | timbr | 2 | comparison_form |
 | goth | `baíram` | bairam | 1 | evidence_form |
 | goth | `brusts` | brusts | 1 | comparison_form |
@@ -154,13 +158,14 @@
 
 ### Included rows by inferred language
 
+- `unknown`: 27
 - `goth`: 8
 - `nsgmc`: 5
 - `oe`: 56
 - `ofris`: 4
 - `ohg`: 2
 - `os`: 3
-- `pgmc`: 203
+- `pgmc`: 176
 - `pnwgmc`: 3
 - `preoe`: 201
 - `pwgmc`: 10

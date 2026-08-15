@@ -1340,7 +1340,9 @@ def infer_table_semantic_language(
                 return next(iter(non_oe_hints)), True
             if len(non_oe_hints) > 1:
                 return "", False
-            return "pgmc", True
+            # No explicit stage hint: fail closed. Do not silently default to pgmc.
+            # The mention will be queued for manual review in suggestions.
+            return "", False
         if role == "comparison_form":
             if "preoe" in hints:
                 return "preoe", True
@@ -1348,7 +1350,8 @@ def infer_table_semantic_language(
                 return next(iter(non_oe_hints)), True
             if len(non_oe_hints) > 1:
                 return "", False
-            return "pgmc", False
+            # No explicit stage hint: fail closed. Do not silently default to pgmc.
+            return "", False
         if role in {"target_form", "regular_output"}:
             return "", False
     if role in {"target_form", "regular_output"}:
@@ -1478,7 +1481,8 @@ def collect_table_semantic_results(
                 language, confident_language = infer_table_semantic_language(mention, role, target_forms)
                 if not language:
                     if role == "comparison_form" and mention.form.startswith("*"):
-                        language = "preoe" if caution_intermediate else "pgmc"
+                        # No explicit stage hint: fail closed. Do not silently default to pgmc.
+                        language = "preoe" if caution_intermediate else ""
                     else:
                         key = (mention.form, mention.source_ref, role, "suggest")
                         if key not in seen_suggest:
@@ -2349,7 +2353,9 @@ def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
                 return code
         if len(non_oe_hints) == 1:
             return next(iter(non_oe_hints))
-        return "pgmc"
+        # No explicit stage hint: fail closed. Do not silently default to pgmc.
+        # The mention will be queued for manual review in suggestions.
+        return ""
     if len(non_oe_hints) == 1:
         return next(iter(non_oe_hints))
     if candidate.heading.startswith("### Old English evidence"):
@@ -2390,7 +2396,11 @@ def infer_broad_prose_suggestion(candidate: CandidateOccurrence) -> dict[str, st
     if candidate.form == "help" and "separate noun" in semantic_text:
         return None
     if candidate.source_path == intro_path:
-        language = "pgmc" if candidate.form.startswith("*") else "oe"
+        language = "" if candidate.form.startswith("*") else "oe"
+        if not language:
+            # Introductory illustrative example with no stage hint: fail closed.
+            # Return None to skip this entry instead of generating a suggestion.
+            return None
         return broad_prose_suggestion_row(
             candidate,
             language=language,
@@ -2733,7 +2743,8 @@ def classify_table_semantic_mentions(
                 )
                 if not language:
                     if role == "comparison_form":
-                        language = "pgmc" if mention.form.startswith("*") else ""
+                        # No explicit stage hint: fail closed. Do not silently default to pgmc.
+                        language = "" if mention.form.startswith("*") else ""
                     if not language:
                         key = (mention.form, mention.source_ref, role, "suggest")
                         if key not in seen_suggest:

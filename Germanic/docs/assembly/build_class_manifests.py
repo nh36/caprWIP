@@ -12,22 +12,47 @@ REPO_ROOT = ASSEMBLY_DIR.parents[2]
 MODEL_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 TRACE_REPORT = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
 # Canonical historical-stage declaration for reconstructed PROTO/PROTOFORM forms,
-# keyed by row_id. Lives with the corpus data (upstream of assembly) because it
-# encodes scholarly historical judgments, not assembly output. A reconstruction
-# asterisk means "reconstructed", NOT "Proto-Germanic"; the stage axis is
-# declared explicitly here and never silently defaulted.
+# Historical-stage sidecar for reconstructed selected inputs, keyed by row_id.
+# Lives with the corpus data (upstream of assembly) because it encodes scholarly
+# historical judgments, not assembly output.
+#
+# CAPR project convention (author decision): PROTO is the Proto-Germanic
+# lexeme-level reconstruction, so proto_stage is always pgmc. When PROTOFORM ==
+# PROTO the selected input IS that PGmc reconstruction, so protoform_stage = pgmc
+# automatically. The sidecar therefore records ONLY the exceptional rows where
+# PROTOFORM != PROTO, whose stage is a separate historical question. A PROTOFORM
+# != PROTO row with no sidecar entry fails closed (it is never silently pgmc).
 STAGE_METADATA_PATH = REPO_ROOT / "Germanic/data/entry_stage_metadata.tsv"
 
 
 def load_stage_metadata() -> dict[str, dict[str, str]]:
+    """row_id -> {protoform_stage} for the PROTOFORM != PROTO exception rows."""
     with STAGE_METADATA_PATH.open(encoding="utf-8") as handle:
         return {
             row["row_id"].strip(): {
-                "proto_stage": (row.get("proto_stage") or "").strip(),
                 "protoform_stage": (row.get("protoform_stage") or "").strip(),
             }
             for row in csv.DictReader(handle, delimiter="\t")
         }
+
+
+def resolve_stages(row_id: str, proto: str, protoform: str, sidecar: dict[str, dict[str, str]]) -> tuple[str, str, list[str]]:
+    """Resolve (proto_stage, protoform_stage) under the CAPR convention.
+
+    proto_stage is always pgmc (PROTO is the PGmc lexeme reconstruction). When
+    PROTOFORM == PROTO, protoform_stage is pgmc by convention. When they differ,
+    protoform_stage must come from an explicit sidecar decision; a missing entry
+    is reported (fail closed), never defaulted to pgmc.
+    """
+    notes: list[str] = []
+    proto_stage = "pgmc"
+    if (proto or "").strip() and (proto or "").strip() == (protoform or "").strip():
+        return proto_stage, "pgmc", notes
+    entry = sidecar.get(str(row_id))
+    if entry and entry.get("protoform_stage"):
+        return proto_stage, entry["protoform_stage"], notes
+    notes.append("PROTOFORM != PROTO but no explicit stage decision (unresolved)")
+    return proto_stage, "", notes
 
 
 REQUIRED_METADATA = ("PROTO", "PROTOFORM", "COUNTERPART", "DERIVATION_CLASS")
@@ -275,16 +300,13 @@ def main() -> None:
         if trace_status != "confident":
             notes.append(f"trace match {trace_status}")
 
-        stage_row = stage_map.get(str(model["row_id"]), {})
-        proto_stage = stage_row.get("proto_stage", "")
-        protoform_stage = stage_row.get("protoform_stage", "")
-        missing_stage = [
-            name
-            for name, value in (("proto_stage", proto_stage), ("protoform_stage", protoform_stage))
-            if not value
-        ]
-        if missing_stage:
-            notes.append("missing stage metadata: " + ", ".join(missing_stage))
+        proto_stage, protoform_stage, stage_notes = resolve_stages(
+            str(model["row_id"]),
+            model["metadata"].get("PROTO", ""),
+            model["metadata"].get("PROTOFORM", ""),
+            stage_map,
+        )
+        notes.extend(stage_notes)
 
         row = {
             "global_order": global_value,
