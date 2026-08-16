@@ -223,12 +223,31 @@ class StageMetadataSidecarTests(unittest.TestCase):
         self.sidecar = {r["row_id"]: r for r in _rows(DATA / "entry_stage_metadata.tsv")}
         self.manifest = _rows(ASSEMBLY / "manifest_all_by_class.tsv")
 
-    def test_every_model_entry_has_a_stage_declaration(self):
-        model_ids = {
-            p.name.split("-", 1)[0]
-            for p in (REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries").glob("*.model.md")
+    def test_unequal_population_has_stage_declarations(self):
+        """Every PROTOFORM != PROTO manifest row carries an explicit sidecar
+        decision. Equality rows are auto-pgmc in code and are NOT required here
+        (testing model-entry membership was the wrong criterion: it forced
+        equality rows into the sidecar and bloated it)."""
+        unequal = {
+            r["row_id"]
+            for r in self.manifest
+            if r["proto"].strip() and r["proto"].strip() != r["protoform"].strip()
         }
-        self.assertEqual(model_ids - set(self.sidecar), set(), "model entries missing a stage declaration")
+        missing = unequal - set(self.sidecar)
+        self.assertEqual(missing, set(), f"unequal rows missing a sidecar decision: {missing}")
+
+    def test_sidecar_is_exception_only(self):
+        """The sidecar records ONLY exception (PROTOFORM != PROTO) rows; an
+        equality row must never appear (it is auto-pgmc in code, not data)."""
+        manifest_by_id = {r["row_id"]: r for r in self.manifest}
+        for rid in self.sidecar:
+            r = manifest_by_id.get(rid)
+            if r is None:
+                continue
+            self.assertNotEqual(
+                r["proto"].strip(), r["protoform"].strip(),
+                f"equality row {rid} must not be in the exception-only sidecar",
+            )
 
     def test_all_sidecar_stages_are_valid(self):
         for rid, row in self.sidecar.items():
@@ -250,6 +269,88 @@ class StageMetadataSidecarTests(unittest.TestCase):
         for row in self.manifest:
             self.assertTrue(row["proto_stage"], f"blank proto_stage row {row['row_id']}")
             self.assertTrue(row["protoform_stage"], f"blank protoform_stage row {row['row_id']}")
+
+
+class AuditSidecarAgreementTests(unittest.TestCase):
+    """The human-readable audit ledger and the canonical sidecar are one source
+    of truth: the stage label and variety must never diverge between them."""
+
+    def setUp(self):
+        self.sidecar = {r["row_id"]: r for r in _rows(DATA / "entry_stage_metadata.tsv")}
+        self.audit = {r["row_id"]: r for r in _rows(DATA / "protoform_stage_audit.tsv")}
+
+    def test_same_population(self):
+        self.assertEqual(set(self.sidecar), set(self.audit))
+
+    def test_stage_and_variety_agree(self):
+        for rid, s in self.sidecar.items():
+            a = self.audit[rid]
+            self.assertEqual(
+                s["protoform_stage"], a["proposed_protoform_stage"],
+                f"{rid}: stage label diverges between sidecar and audit",
+            )
+            self.assertEqual(
+                (s.get("protoform_variety") or ""), (a.get("protoform_variety") or ""),
+                f"{rid}: variety label diverges between sidecar and audit",
+            )
+
+    def test_label_is_independent_of_confidence(self):
+        """The stage/variety label must not be derived from confidence: a
+        provisional-confidence row still carries its full explicit label, and no
+        confidence-derived review_status column exists."""
+        self.assertNotIn("review_status", next(iter(self.audit.values())).keys())
+        world = self.audit["2302"]
+        self.assertEqual(world["confidence"], "provisional")
+        self.assertEqual(world["proposed_protoform_stage"], "pgmc")
+        self.assertEqual(world["protoform_variety"], "transponent")
+
+
+class TransponentVarietyTests(unittest.TestCase):
+    """`transponent` is a cross-stage variety (parallel to OE dialect labels),
+    orthogonal to the base stage and fail-closed validated."""
+
+    def setUp(self):
+        import index_verborum_render as ivr
+        self.reg = ivr.load_variety_registry()
+
+    def test_registered_and_printed(self):
+        entry = self.reg.get("transponent")
+        self.assertIsNotNone(entry)
+        self.assertEqual(self.reg.printed_label("transponent"), "transp.")
+
+    def test_attaches_to_any_reconstructed_stage(self):
+        for stage in ("pgmc", "pnwgmc", "pwgmc", "nsgmc", "paf", "preoe"):
+            self.reg.validate_occurrence(stage, "transponent")
+
+    def test_rejected_on_non_reconstructed_language(self):
+        with self.assertRaises(ValueError):
+            self.reg.validate_occurrence("oe", "transponent")
+
+    def test_transponent_rows_keep_honest_base_stage(self):
+        sidecar = {r["row_id"]: r for r in _rows(DATA / "entry_stage_metadata.tsv")}
+        expect = {"2109": "preoe", "2205": "preoe", "2252": "preoe", "2302": "pgmc"}
+        for rid, stage in expect.items():
+            self.assertEqual(sidecar[rid]["protoform_variety"], "transponent", rid)
+            self.assertEqual(sidecar[rid]["protoform_stage"], stage, rid)
+
+
+class NonModelStageFailClosedTests(unittest.TestCase):
+    """§6: a non-model selected input equal to PROTO (modulo stress/compound
+    hyphen encoding) is pgmc; a genuinely different one is never silently pgmc."""
+
+    def test_encoding_only_difference_is_equal(self):
+        # rainbow: *régna-bùgô vs *régnabùgô differ only by a compound hyphen.
+        self.assertEqual(
+            biv.transliterate_sort_key("*régna-bùgô"),
+            biv.transliterate_sort_key("*régnabùgô"),
+        )
+
+    def test_genuine_stage_difference_is_not_equal(self):
+        # thousand: jō-stem *θūs-undī vs OE-oriented *θūs-èndi are truly distinct.
+        self.assertNotEqual(
+            biv.transliterate_sort_key("*θūs-undī"),
+            biv.transliterate_sort_key("*θūs-èndi"),
+        )
 
 
 if __name__ == "__main__":
