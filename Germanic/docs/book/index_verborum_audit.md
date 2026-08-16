@@ -1,9 +1,9 @@
 # Index verborum audit
 
-- Internal production occurrences: 2385
-- Internal production unique forms: 1079
-- Printed main-index occurrences: 2297
-- Printed main-index unique forms: 1069
+- Internal production occurrences: 2386
+- Internal production unique forms: 1080
+- Printed main-index occurrences: 2298
+- Printed main-index unique forms: 1070
 - Print-excluded occurrences: 88
 - Print-excluded unique forms: 69
 - Print exclusions (regular_output_default_exclusion): 88
@@ -15,18 +15,18 @@
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
 - Pre-OE review rows: 19
-- Reader-facing example candidate rows: 1009
-- Reader-facing rows include_in_example_index=yes: 542
-- Reader-facing rows include_in_example_index=no: 467
+- Reader-facing example candidate rows: 1017
+- Reader-facing rows include_in_example_index=yes: 544
+- Reader-facing rows include_in_example_index=no: 473
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 449
-- Broad-prose notation / compound expressions: 466
-- Broad-prose evidence suggestions: 285
+- Broad-prose notation / compound expressions: 467
+- Broad-prose evidence suggestions: 286
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 7
-- Reader-facing examples quarantined (separate example index policy): 864
+- Reader-facing examples quarantined (separate example index policy): 872
 - Ordinary prose/gloss ignored: 28
 - Orthographic/normalization variants: 10
 - Table semantic auto-promoted: 16
@@ -46,7 +46,7 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1312 | 468 |
-| Proto-Germanic | 939 | 524 |
+| Proto-Germanic | 940 | 525 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 3 |
@@ -183,7 +183,7 @@
 | target_form | 381 |
 | source_protoform | 337 |
 | selected_input | 537 |
-| comparison_form | 828 |
+| comparison_form | 829 |
 | regular_output | 88 |
 | evidence_form | 214 |
 
@@ -192,7 +192,7 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1224 | 458 |
-| Proto-Germanic | 939 | 524 |
+| Proto-Germanic | 940 | 525 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 3 |
@@ -215,7 +215,7 @@
 | target_form | 381 |
 | source_protoform | 337 |
 | selected_input | 537 |
-| comparison_form | 828 |
+| comparison_form | 829 |
 | evidence_form | 214 |
 
 ## Internal-only rows by reason
@@ -290,8 +290,8 @@
 | `*féllą` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*félθuz` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*fláskōn` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:50 | ### Development to Old English | same form already indexed in this entry |
-| `*fláuxz` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:52 | ### Development to Old English | same form already indexed in this entry |
-| `flēah` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:54 | ### Development to Old English | same form already indexed in this entry |
+| `*fláuxz` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:57 | ### Development to Old English | same form already indexed in this entry |
+| `flēah` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:59 | ### Development to Old English | same form already indexed in this entry |
 | `flégan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | ### Form note | same form already indexed in this entry |
@@ -802,7 +802,7 @@
 | `*féllą > fell` | Germanic/docs/lexeme_reports/model_entries/2007-fell-fell.model.md:29 | notation or compound expression |
 | `-felth` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:25 | notation or compound expression |
 | `*felþu- ~ *feldu-` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:21 | notation or compound expression |
-| `*flēax` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:53 | intermediate or model-stage form in development chain |
+| `*flēax` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:58 | intermediate or model-stage form in development chain |
 | `*flēoganą` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | intermediate or model-stage form in development chain |
 | `*fléuganą > flēogan` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:33 | notation or compound expression |
 | `-fn-` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:110 | notation or compound expression |
@@ -984,7 +984,7 @@
 | `nosu f` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:36 | notation or compound expression |
 | `*nus-` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:22 | notation or compound expression |
 | `(N,VPs)` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:25 | notation or compound expression |
-| `*-ō` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:33 | notation or compound expression |
+| `*-ō` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:38 | notation or compound expression |
 | `*-ō` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2104-linden-lind.model.md:29 | intermediate or model-stage form in development chain |
 | `-o` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:25 | notation or compound expression |
@@ -1130,7 +1130,7 @@
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:24 | notation or compound expression |
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:29 | notation or compound expression |
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:46 | notation or compound expression |
-| `*-z` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:58 | notation or compound expression |
+| `*-z` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:63 | notation or compound expression |
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:23 | notation or compound expression |
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:22 | notation or compound expression |
 | `*-z` | Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:34 | notation or compound expression |
@@ -1145,6 +1145,7 @@
 | `-z` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | notation or compound expression |
 | `-z` | Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29 | notation or compound expression |
 | `-z` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24 | notation or compound expression |
+| `-z` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:28 | notation or compound expression |
 | `-z` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33 | notation or compound expression |
 | `-z` | Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md:45 | notation or compound expression |
 | `-z` | Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md:45 | notation or compound expression |
@@ -1169,6 +1170,7 @@
 | `ēaw` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | oe | comparison_form | attested Old English comparison form in development prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
+| `*flauhaz` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:27 |  | source_protoform | citation or reconstructed source form in prose |
 | `*flauxz` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:23 |  | source_protoform | citation or reconstructed source form in prose |
 | `flēag` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `flége` | Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1506,6 +1508,7 @@
 | `*a` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403 | ## Historical discussion | Ringe and Taylor state directly that after final unstressed `*a` and `*ą` were lost, postconsonantal `*j` became syllabic `*i`, with outcomes behind OE *here* ' |
 | `*a` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:420 | ## SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *ric |
 | `*a` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:980 | ### Anglo-Frisian brightening (SC043) | The fronting of low `*a` to `*æ` outside nasal environments is the defining |
+| `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1108 | ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss} | The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a mon |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1118 | ## Historical discussion | Inherited stressed \emph{*ái} monophthongized to \emph{*ā} across the North Sea Germanic area. Ringe and Taylor place the monophthongization of \emph{*ai} among |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:455 | ## Historical discussion of unstressed \emph{*ai} monophthongization | Ringe and Taylor describe the broad Northwest Germanic reduction of unstressed \emph{*ai} to a long mid vowel that merges with unstressed \emph{*e}, in final an |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:467 | ## \CAPRRuleHeading{SC014. Monophthongization of unstressed \emph{*ai}}{PNWGmcUnstressedAiMonophthongization} {#rule-PNWGmcUnstressedAiMonophthongization} | Ringe and Taylor's merger of unstressed \emph{*ai} with long mid \emph{*ē} establishes the historical development, in final and nonfinal syllables alike. The st |
@@ -1532,6 +1535,7 @@
 | `ǣ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:697 | ## \CAPRRuleHeading{SC024. Lowering of long \emph{ē} before non-nasal consonants}{PNWGmcLongELowering} {#rule-PNWGmcLongELowering} | After [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), long \emph{ē} > \emph{ǣ} can no longer produce the expected West Saxon forms: PGmc |
 | `ǣ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:963 | ### Anglo-Frisian ai-monophthongization (SC004) | `ǣ` in the relevant Old English environments. |
 | `ær` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:231 | ## Historical discussion | The branch evidence dates and localizes that generalization. Gothic keeps its sibilant throughout the class (\emph{baúrgs}, \emph{nahts}, \emph{reiks}) [@Fulk20 |
+| `*ai` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1108 | ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss} | The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a mon |
 | `*ai` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1118 | ## Historical discussion | Inherited stressed \emph{*ái} monophthongized to \emph{*ā} across the North Sea Germanic area. Ringe and Taylor place the monophthongization of \emph{*ai} among |
 | `*ai` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:157 | ## Major changes | The `*ai` monophthongization (SC004) represents one of the most pervasive |
 | `*ai` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:451 | ## Historical discussion | The first change monophthongizes unstressed \emph{*ai}; the second carries early unstressed front-vowel leveling farther in forms such as *weorold* 'world'. Bot |
@@ -1549,6 +1553,7 @@
 | `-an` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1669 | ## \CAPRRuleHeading{SC048. Secondary nasalization before final \emph{*n}}{OESecondaryNasalization} {#rule-OESecondaryNasalization} | The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule |
 | `and` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:982 | ### Anglo-Frisian brightening (SC043) | classical statement: "By a very early change Prim. Gmc. `a > æ` in OE and OFris. |
 | `*ǥansz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
+| `*ǥansz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `a-Restoration` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:989 | ### Anglo-Frisian brightening (SC043) | input; OE a-Restoration partially undoes it in back-vowel environments. The |
 | `attribution` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1179 | ## SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing} | Comparative reconstruction therefore establishes northern West Germanic \emph{lþ > ld}, but the witness forms fix no date. Neither a pan-PWGmc attribution nor a |
 | `*au` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1218 | ## Chapter structure | Chapter 3. The `*awj` glide formation (SC029), `*au` fronting (SC030), and |
@@ -1598,13 +1603,13 @@
 | `*bíndaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1669 | ## \CAPRRuleHeading{SC048. Secondary nasalization before final \emph{*n}}{OESecondaryNasalization} {#rule-OESecondaryNasalization} | The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule |
 | `*bíndaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2594 | ## \CAPRRuleHeading{SC078. Reduction of remaining weak-tail vowels}{OEWeakTailReduction} {#rule-OEWeakTailReduction} | [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* ‘bind’, alongside |
 | `βn` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:626 | ## Historical discussion | labial nasal dissimilated to a labial spirant: \emph{mn} > \emph{βn} (surfacing |
-| `*bōc` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
+| `*bōc` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*bōk-` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
 | `*bōks` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
 | `*bōkz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1052 | ## Historical discussion | This is the middle of three historically distinct final-\emph{*z} developments, and Ringe and Taylor explicitly separate it from the later loss in stressed mono |
 | `*bōkz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
-| `*bōkz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
-| `book` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
+| `*bōkz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
+| `book` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*boraþ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2404 | ## \CAPRRuleHeading{SC070. Early fronting of unstressed \emph{*a}}{OEUnstressedFrontingEarly} {#rule-OEUnstressedFrontingEarly} | If the rule is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [lúnganjō]{.recon} ‘lungs’ yields [*lunġen*]{.pred} rather than exp |
 | `*boraþ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2422 | ## SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | producing the later “stable a” endings in OE *boraþ* ‘bears’ and *liornaþ* |
 | `*boraþ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2425 | ## SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred} rather than |
@@ -1742,7 +1747,8 @@
 | `fiuwer` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:323 | ## Historical discussion | Ringe and Taylor treat the assimilation of \emph{*dw} and \emph{*zw} to \emph{*ww} as a shared Proto-West-Germanic innovation supported by one example of each i |
 | `*flasce` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1712 | ## SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | The non-fronted vowels of *flasce* ‘flask’ and *wascan* ‘wash’ fix the lower boundary of \emph{*sk} > \emph{*sc}. Before [SC046 OEARestoration](#rule-OEARestora |
 | `*fláskōn` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2364 | ## \CAPRRuleHeading{SC069. Early shortening of unstressed \emph{*ō} before nasals}{OEEarlyOShortening} {#rule-OEEarlyOShortening} | [*eorþan*]{.pred} rather than expected *eorþe* ‘earth’, and PGmc [fláskōn]{.recon} ‘flask’ yields |
-| `*fláuxz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
+| `*flauxz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
+| `*fláuxz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*flēon` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2597 | ## \CAPRRuleHeading{SC078. Reduction of remaining weak-tail vowels}{OEWeakTailReduction} {#rule-OEWeakTailReduction} | [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, and PGmc [sláxaną]{.recon} ‘slay’ |
 | `*flēon` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2747 | ## SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE  |
 | `*flēon` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2791 | ## SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred} rather than expected OE *flēon* 'flee', PG |
@@ -1803,7 +1809,7 @@
 | `*galáubijaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1487 | ## SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [S |
 | `*galáubijaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2634 | ## SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġelēafan*]{.pred} rather than expected OE *ġelīefa |
 | `*gans-` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
-| `*gánsz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
+| `*gánsz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*gánsz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:754 | ## \CAPRRuleHeading{SC026. North Sea Germanic nasal-spirant lengthening}{EAFNasalSpirantLengthening} {#rule-EAFNasalSpirantLengthening} | All three witnesses require the vowel adjustment while the nasal is still present. If [SC026 EAFNasalSpirantLengthening](#rule-EAFNasalSpirantLengthening) follo |
 | `*ganz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:229 | ## Historical discussion | The three focal words are only superficially parallel. The root-final \emph{s} of 'louse' is itself an extension of \emph{*luw-} on the model of 'mouse' [@Bamme |
 | `*ge-` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1487 | ## SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | The prefix of *ġelīefan* 'believe' supplies the upper boundary for \emph{*ga-} > \emph{*ge-}. If [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) follows [S |
@@ -1965,7 +1971,7 @@
 | `*lungen` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2634 | ## SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġelēafan*]{.pred} rather than expected OE *ġelīefa |
 | `*lungen` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2651 | ## \CAPRRuleHeading{SC080. Simplification of final geminates}{OEFinalGeminateSimplification} {#rule-OEFinalGeminateSimplification} | Moving the rule before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) makes PGmc [lúnganjō]{.recon} ‘lungs’ yield [*lungenn*]{.pred} rather than expected OE |
 | `*lūsz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
-| `*lūsz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
+| `*lūsz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*luw-` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:229 | ## Historical discussion | The three focal words are only superficially parallel. The root-final \emph{s} of 'louse' is itself an extension of \emph{*luw-} on the model of 'mouse' [@Bamme |
 | `*m` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:258 | ## Historical discussion | I restrict the change to unstressed vowels in inflectional material because the strongest evidence concerns noninitial unstressed material before final \emph{*m |
 | `*m` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:259 | ## Historical discussion | Final \emph{*m} conditions the raising. |
@@ -1975,6 +1981,8 @@
 | `m` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:650 | ## SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | cross-syllable formulation that labialized an intervocalic \emph{m} before a |
 | `*-mą` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2131 | ## \CAPRRuleHeading{SC061. Reduction of final nasal weak-tail endings}{OEWeakTailNasalLoss} {#rule-OEWeakTailNasalLoss} | Final weak-tail \emph{*-ną} and \emph{*-mą} accordingly yield plain |
 | `*mā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1082 | ## Historical discussion | Long after the Proto-West Germanic loss of final \emph{*z} in unstressed syllables ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), the northern West Germa |
+| `*mā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1108 | ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss} | The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a mon |
+| `*mai` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1108 | ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss} | The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a mon |
 | `*maiz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1082 | ## Historical discussion | Long after the Proto-West Germanic loss of final \emph{*z} in unstressed syllables ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), the northern West Germa |
 | `*maiz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1108 | ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss} | The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a mon |
 | `*mákōjaną` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2703 | ## \CAPRRuleHeading{SC082. Intervocalic vocalization of \emph{*j}}{OEIntervocalicJVocalization} {#rule-OEIntervocalicJVocalization} | Moving the rule before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) makes PGmc [stráwjaną]{.recon} ‘strew’ yield [*str |
@@ -2306,6 +2314,7 @@
 | `*-z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
 | `*-z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:231 | ## Historical discussion | The branch evidence dates and localizes that generalization. Gothic keeps its sibilant throughout the class (\emph{baúrgs}, \emph{nahts}, \emph{reiks}) [@Fulk20 |
 | `*-z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:233 | ## Historical discussion | This change is distinct from the two later final-\emph{*z} developments. It was complete before Proto-West Germanic, whereas the loss of \emph{*-z} in unstresse |
+| `*-z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007 | ## Cascade vs. historical order in this chapter | at position 3, word-final `*z` deletion at 19–20, the new northern |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1008 | ## Cascade vs. historical order in this chapter | monosyllabic `*z`-loss beside it, ai-monophthongization at 25, brightening at |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012 | ## Cascade vs. historical order in this chapter | word-final `*z` deletion (SC020), then the later northern monosyllabic |
@@ -2328,7 +2337,7 @@
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1110 | ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss} | Because no corpus form reaches this rule, adding it changes no Old English output, and if the rule were moved earlier or later within its stage, no corpus outpu |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:154 | ## Major changes | the earliest of the three historically distinct final-`*z` developments; the |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:233 | ## Historical discussion | This change is distinct from the two later final-\emph{*z} developments. It was complete before Proto-West Germanic, whereas the loss of \emph{*-z} in unstresse |
-| `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. This environment is a computational proxy: the historical development is the morpholo |
+| `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:248 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | Negative controls behave as the morphology predicts. Stressed monosyllables whose \emph{*z} follows a vowel — the domain of the later northern change — do not m |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:562 | ## Historical discussion | as the subsequent loss of word-final \emph{*z}. The derivation of *ræste* |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:564 | ## Historical discussion | must still see final \emph{*ō}, and word-final \emph{*z}-deletion removes the following |
@@ -2344,6 +2353,7 @@
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:943 | ### Word-final `*z` deletion (SC020) and the three final-`*z` developments | statement that Germanic `*z` is generally lost in final position |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:953 | ### Word-final `*z` deletion (SC020) and the three final-`*z` developments | fate of every remaining `*z`. |
 | `-z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:227 | ## Historical discussion | The dictionary traditions encode this situation in different notations, and the differences are conventions of citation rather than competing claims of fact. Or |
+| `-z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:244 | ## SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical clai |
 | `z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1072 | ## SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected OE *ræste* 'rest |
 | `z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1850 | ## SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | The same witness supplies two distant limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApo |
 | `z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:582 | ## \CAPRRuleHeading{SC019. Raising of final unstressed long \emph{*ō}}{PNWGmcFinalLongORaising} {#rule-PNWGmcFinalLongORaising} | Before [SC017 PNWGmcULowering](#rule-PNWGmcULowering), PGmc [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected OE *nosu* 'nose', PGmc [skúflō]{.r |
@@ -2681,7 +2691,7 @@ _None._
 | `*ganz` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:30 |
 | `*ǵʰān` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:29 |
 | `*gj` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29 |
-| `h` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:54 |
+| `h` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:59 |
 | `*i` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:29 |
 | `*i` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:47 |
 | `*i` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:40 |
@@ -2865,7 +2875,7 @@ _None._
 | `*z` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:15 |
 | `*z` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:5 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:60 |
-| `*z` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:56 |
+| `*z` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:61 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:59 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:57 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:43 |
@@ -2894,7 +2904,7 @@ _None._
 | `development` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:28 |
 | `development` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:49 |
 | `family` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33 |
-| `*fláux` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:51 |
+| `*fláux` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:56 |
 | `layer` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:21 |
 | `*liornian` | Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:33 |
 | `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 |

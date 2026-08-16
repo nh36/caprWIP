@@ -499,10 +499,13 @@ class RealCorpusInvariantTests(unittest.TestCase):
             # section 20, and four model entries were added for the root-noun
             # witnesses (book, flea, goose, louse), each contributing indexed
             # protoform/target/evidence spans plus lexical-heading injections.
-            "production_occurrences": 2385,
-            "production_unique_forms": 1173,
-            "print_main_occurrences": 2297,
-            "unique_printed_entries": 1087,
+            # +1 occurrence / +1 unique form again after the flea adjudication:
+            # the Kluge/Seebold a-stem reconstruction *flauha- was added to the
+            # flea model entry as a third comparison_form span.
+            "production_occurrences": 2386,
+            "production_unique_forms": 1174,
+            "print_main_occurrences": 2298,
+            "unique_printed_entries": 1088,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -893,13 +896,15 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bo = self._rows("index_verborum_book_occurrences.tsv")
         be = self._rows("index_verborum_book_emissions.tsv")
 
-        self.assertEqual(len(pm), 2297)
+        # +1 vs the z-split snapshot: Kluge/Seebold *flauha- comparison form
+        # added to the flea model entry during the flea adjudication.
+        self.assertEqual(len(pm), 2298)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
         self.assertEqual(source_not_in_book, 229)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2068)
-        self.assertEqual(len(be), 1897)
+        self.assertEqual(len(bo), 2069)
+        self.assertEqual(len(be), 1898)
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
         self.assertEqual(
@@ -943,15 +948,18 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bu = self._rows("index_verborum_book_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
 
-        self.assertEqual(len(pm), 2297, "corpus occurrence count")
-        source_not_in_book = 2297 - 2068
+        # +1 across corpus/book counts vs the z-split snapshot: Kluge/Seebold
+        # *flauha- comparison form added to the flea model entry during the
+        # flea adjudication.
+        self.assertEqual(len(pm), 2298, "corpus occurrence count")
+        source_not_in_book = 2298 - 2069
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
-        self.assertEqual(len(be), 1897, "book emission count")
+        self.assertEqual(len(be), 1898, "book emission count")
         # +10 corpus / +14 book unique entries vs the pre-z-split snapshot: the
         # three-way SC020 split (SC096/SC020/SC097) and the four new root-noun
         # model entries (book, flea, goose, louse) introduce new indexed headwords.
-        self.assertEqual(len(pu), 1087, "unique corpus entries")
-        self.assertEqual(len(bu), 859, "unique book entries")
+        self.assertEqual(len(pu), 1088, "unique corpus entries")
+        self.assertEqual(len(bu), 860, "unique book entries")
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)
@@ -976,7 +984,8 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(variety_labelled_unique, 34, "variety-labelled unique book entries")
 
         printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
-        self.assertEqual(printable_explicit, 1438, "printable explicit occurrences")
+        # +1 vs the z-split snapshot: the *flauha- span is an explicit .iv tag.
+        self.assertEqual(printable_explicit, 1439, "printable explicit occurrences")
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

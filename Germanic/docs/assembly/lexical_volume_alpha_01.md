@@ -1335,13 +1335,18 @@ This word carries a genuine stem-class dispute, not merely a notational one.
 Orel reconstructs a root noun with his class-wide explicit nominative marker,
 _\*flauxz_ 'flea' [@Orel2003, 105]. Kroonen instead reconstructs an ō-stem
 [_\*flauhō-_]{.iv lang=pgmc sort=flauho role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24:1"} 'flea', with no _-z_ at any layer of the analysis
-[@Kroonen2013, 145]. The attested forms do not decide the question: Old
+[@Kroonen2013, 145]. Kluge and Seebold offer yet a third analysis, a
+masculine a-stem [_\*flauha-_]{.iv lang=pgmc sort=flauha role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:26" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:26:1"} 'flea'
+[@KlugeSeebold2011, 304], whose nominative singular _\*flauhaz_ would have
+carried its _-z_ in an unstressed syllable and lost it under the West
+Germanic unstressed loss rather than with the root nouns. The attested
+forms do not decide the question: Old
 English [flēah]{.ex} 'flea' and Old Norse [fló]{.ex} 'flea' are compatible with
-both reconstructions. This is a case where reputable sources disagree about
-the morphological class itself, and the disagreement is documented here
-rather than silently normalized away.
+all three reconstructions. This is a case where reputable sources disagree
+about the morphological class itself, and the disagreement is documented
+here rather than silently normalized away.
 
-The derivational input [fláuxz]{.iv .recon lang=pgmc sort=flauxz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31:1"} 'flea' adopts Orel's root-noun
+The derivational input [fláuxz]{.iv .recon lang=pgmc sort=flauxz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:36" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:36:1"} 'flea' adopts Orel's root-noun
 analysis with its morphologically explicit nominative marker. Under
 Kroonen's ō-stem analysis the nominative would instead have ended in _\*-ō_
 and developed like the other ō-stems; the choice of Orel's form keeps the
@@ -1350,7 +1355,7 @@ endingless West Germanic nominatives it shares [@RingeTaylor2014, 118].
 
 #### Old English evidence
 
-Old English [_flēah_]{.iv lang=oe sort=fleah role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40:1"} 'flea' is the endingless nominative-accusative
+Old English [_flēah_]{.iv lang=oe sort=fleah role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:45:1"} 'flea' is the endingless nominative-accusative
 singular. The root-noun class to which Orel assigns it shows no nominative
 ending anywhere in West Germanic [@RingeTaylor2014, 118]; on Kroonen's
 ō-stem analysis the endingless form would instead reflect the regular fate

@@ -329,7 +329,7 @@ oe		flasce	flasce	flasce	target_form	explicit_tag	Germanic/docs/lexeme_reports/m
 oe		flasce	flasce	flasce	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:63	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:63:1	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	auto
 oe		flasce	flasce	flasce	target_form	lexical_heading	flask — OE flasce	heading:62f4609ba8b7d9	manifest	auto
 oe		flaxe	flaxe	flaxe	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33:2	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	auto
-oe		flēah	flēah	fleah	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40:1	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md	auto
+oe		flēah	flēah	fleah	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:45	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:45:1	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md	auto
 oe		flēah	flēah	fleah	target_form	lexical_heading	flea — OE flēah	heading:40a734a202f2fd	manifest	auto
 oe	angl	flégan	flégan	flegan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29	broad-prose:6a64fc282ee962	broad_prose_curated	override
 oe		fléogan	fléogan	fleogan	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21	broad-prose:a1eec5298e8248	broad_prose_curated	override
@@ -1426,8 +1426,9 @@ pgmc		fláskōn	*fláskōn	flaskon	selected_input	explicit_tag	Germanic/docs/lex
 pgmc		*fláskōn	*fláskōn	flaskon	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60:1	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	auto
 pgmc		*fláskōn	*fláskōn	flaskon	source_protoform	lexical_protoform	flask — OE flasce	lexical-protoform:1b319c6fc4ef22	manifest	auto
 pgmc		*fláskōn	*fláskōn	flaskon	selected_input	trace_proto_input	flask — OE flasce	trace:4b1c0d345132fb	compact	auto
+pgmc		*flauha-	*flauha-	flauha	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:26	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:26:1	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md	auto
 pgmc		*flauhō-	*flauhō-	flauho	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24:1	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md	auto
-pgmc		fláuxz	*fláuxz	flauxz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31:1	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md	auto
+pgmc		fláuxz	*fláuxz	flauxz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:36	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:36:1	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md	auto
 pgmc		*fláuxz	*fláuxz	flauxz	source_protoform	lexical_protoform	flea — OE flēah	lexical-protoform:654e19908097be	manifest	auto
 pgmc		*fláuxz	*fláuxz	flauxz	selected_input	trace_proto_input	flea — OE flēah	trace:79da3276a862c9	compact	auto
 pgmc		*fláxsą	*fláxsą	flaxsa	selected_input	trace_proto_input	flax — OE fleax	trace:bf2b55264d5dcf	compact	auto

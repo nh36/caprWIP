@@ -139,7 +139,7 @@ oe	findan	findan			4	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/m
 oe	flascan	flascan			3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:28; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:45
 oe	flasce	flasce			8	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:27; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:32; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:36
 oe	flaxe	flaxe			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33
-oe	flēah	fleah			2	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40; flea — OE flēah
+oe	flēah	fleah			2	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:45; flea — OE flēah
 oe	flégan	flegan	Angl.	angl	1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:29
 oe	fléogan	fleogan			1	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2022-fly-flēogan.model.md:21
 oe	flēogan	fleogan			1	target_form	lexical_heading	fly — OE flēogan
@@ -606,8 +606,9 @@ pgmc	*fínθaną	finthana			3	source_protoform	explicit_tag; lexical_proto	Germa
 pgmc	*flaskō	flasko			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:21; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:59; flask — OE flasce
 pgmc	*flaskǭ	flasko			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23
 pgmc	*fláskōn	flaskon			5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:42; Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60
+pgmc	*flauha-	flauha			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:26
 pgmc	*flauhō-	flauho			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24
-pgmc	*fláuxz	flauxz			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31; flea — OE flēah
+pgmc	*fláuxz	flauxz			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:36; flea — OE flēah
 pgmc	*fléuganą	fleugana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	fly — OE flēogan
 pgmc	*fúglaz	fuglaz			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	fowl — OE fugol
 pgmc	*fulgēną	fulgena			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:30; Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:68; follow — OE fylġan
