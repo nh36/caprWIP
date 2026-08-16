@@ -27,7 +27,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:
 
-- Regular derivations: 70
+- Regular derivations: 74
 - Attested variants: 4
 - Early analogy: 36
 - Late analogy: 27
@@ -490,6 +490,95 @@ The comparative headwords [_\*baina-_]{.iv lang=pgmc sort=baina source_ref="Germ
 #### Development to Old English
 
 West Germanic monophthongization turns stressed _\*ai_ into _ā_, giving [bāną]{.recon} ‘bone’; heavy-syllable nasal apocope then yields [_bān_]{.iv lang=oe sort=ban source_ref="Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33:1"} 'bone'. The resulting form matches the attested Old English citation noun.
+
+### book — OE _bōc_
+
+Derivation: _\*bōkz_ > _bōc_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*bōkz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _bōc_
+
+#### Reconstruction and comparative evidence
+
+The noun is an athematic consonant stem (root noun), and the sources print its
+nominative singular in three different notations that encode the same
+morphology. Orel's citation form is _\*bōkz_ 'book', with the explicit
+nominative marker _\*-z_ that he writes across the whole root-noun class
+[@Orel2003, 52]. Kroonen cites the bare stem [_\*bōk-_]{.iv lang=pgmc sort=bok role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:25:1"} 'book, beech' and treats
+Gothic [bōka]{.ex} 'letter' as a separate ō-stem formation [@Kroonen2013, 71--72].
+Kluge/Seebold print a third variant with voiceless sibilant, [_\*bōks_]{.iv lang=pgmc sort=boks role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:27:1"} 'book'
+[@KlugeSeebold2011, 158]. These are citation conventions, not competing facts:
+Ringe gives the consonant-stem nominative ending as zero, _\*-z_, or possibly
+_\*-s_, and states that the distribution is unrecoverable for monosyllabic stems
+[@Ringe2017, 306]. No scholar is simply "wrong" here; the notations differ in
+whether they make the inflectional marker visible.
+
+The derivational input [bōkz]{.iv .recon lang=pgmc sort=bokz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:34:1"} 'book' follows Orel's morphologically explicit
+convention: it records the nominative marker whose historical elimination the
+derivation then models. The word is distinct from the ō-stem 'beech' word,
+whose derivational input here is the separate nominative [bōkō]{.recon} 'beech'.
+
+#### Old English evidence
+
+Old English [_bōc_]{.iv lang=oe sort=boc role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:41:1"} 'book' is the endingless nominative-accusative singular of
+a root noun, with the mutated plural [bēċ]{.ex} 'books' preserving the class's
+characteristic i-umlaut alternation [@Fulk2018, 165--166]. Comparative
+root-noun evidence shows the branch-by-branch fate of the ending: Gothic keeps
+its sibilant in this class ([baúrgs]{.ex} 'city', [nahts]{.ex} 'night'), while Old Norse
+[bók]{.ex} 'book' keeps a reflex of _\*-z_ as _-r_ only in the masculine root nouns
+and drops it in feminines [@Fulk2018, 165--167]. West Germanic alone is
+uniform: none of its daughters shows any ending in the root-noun nominative
+[@RingeTaylor2014, 118].
+
+#### Development to Old English
+
+The nominative marker of the consonant stems was eliminated before
+Proto-West Germanic: endingless nominatives arose by Szemerényi's law after
+sonorant-final stems and spread analogically through the class [@Fulk2018,
+143], so that no West Germanic daughter inherits an ending here
+[@RingeTaylor2014, 118]. From the derivational input [bōkz]{.recon} 'book' the loss of
+the marker gives [bōk]{.recon} 'book', which is already the Old English form:
+_bōc_ 'book' differs only in spelling. This early morphological loss is a
+different development from the later West Germanic loss of final _\*z_ in
+unstressed syllables (as in [bárdaz]{.recon} 'beard') and from the still later
+northern loss in stressed monosyllables (as in the pronouns); the root-noun
+ending was gone before either of those changes applied.
 
 ### both — OE _bū_
 
@@ -1194,6 +1283,94 @@ Clark Hall records [_feld_]{.iv lang=oe sort=feld role=comparison_form source_re
 
 In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and high-vowel apocope then yields [_feld_]{.iv lang=oe sort=feld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29:1"} 'field'. Whether the voiced dental ultimately reflects inherited alternation or the regular _\*lþ_ > _ld_ development, both accounts converge on the same Old English form [@RingeTaylor2014, 170].
 
+### flea — OE _flēah_
+
+Derivation: _\*fláuxz_ > _flēah_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*fláuxz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Au Fronting} & \emph{*fláeux} \\
+\mbox{OE Diphthong Leveling} & \emph{*flēax} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _flēah_
+
+#### Reconstruction and comparative evidence
+
+This word carries a genuine stem-class dispute, not merely a notational one.
+Orel reconstructs a root noun with his class-wide explicit nominative marker,
+_\*flauxz_ 'flea' [@Orel2003, 105]. Kroonen instead reconstructs an ō-stem
+[_\*flauhō-_]{.iv lang=pgmc sort=flauho role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:24:1"} 'flea', with no _-z_ at any layer of the analysis
+[@Kroonen2013, 145]. The attested forms do not decide the question: Old
+English [flēah]{.ex} 'flea' and Old Norse [fló]{.ex} 'flea' are compatible with
+both reconstructions. This is a case where reputable sources disagree about
+the morphological class itself, and the disagreement is documented here
+rather than silently normalized away.
+
+The derivational input [fláuxz]{.iv .recon lang=pgmc sort=flauxz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:31:1"} 'flea' adopts Orel's root-noun
+analysis with its morphologically explicit nominative marker. Under
+Kroonen's ō-stem analysis the nominative would instead have ended in _\*-ō_
+and developed like the other ō-stems; the choice of Orel's form keeps the
+word in the root-noun class alongside 'book', 'goose', and 'louse', whose
+endingless West Germanic nominatives it shares [@RingeTaylor2014, 118].
+
+#### Old English evidence
+
+Old English [_flēah_]{.iv lang=oe sort=fleah role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:40:1"} 'flea' is the endingless nominative-accusative
+singular. The root-noun class to which Orel assigns it shows no nominative
+ending anywhere in West Germanic [@RingeTaylor2014, 118]; on Kroonen's
+ō-stem analysis the endingless form would instead reflect the regular fate
+of the ō-stem nominative in this shape. Either way the attested Old English
+form is the expected one, which is precisely why the class question remains
+open.
+
+#### Development to Old English
+
+On the selected root-noun analysis, the nominative marker was eliminated
+before Proto-West Germanic [@RingeTaylor2014, 118], giving [fláux]{.recon}
+'flea' from the derivational input [fláuxz]{.recon} 'flea'. The diphthong is then
+fronted and levelled in Old English, yielding [flēax]{.recon} 'flea', spelled
+_flēah_ 'flea' with final _h_ for the fricative. The early loss of the
+root-noun marker is historically distinct from the later West Germanic loss
+of final _\*z_ in unstressed syllables and from the northern monosyllabic
+loss with compensatory lengthening; the derivational input is a stressed
+monosyllable, but its _\*-z_ stands after a consonant and was gone long
+before the northern change, whose domain is vowel-final monosyllables.
+
 ### fly — OE _flēogan_
 
 Derivation: _\*fléuganą_ > _flēogan_ (regular).
@@ -1514,6 +1691,97 @@ Ringe and Taylor note that the medial stop can be understood either as alternati
 #### Development to Old English
 
 From [gúlθą]{.recon} ‘gold’, the regular consonant development gives [gúldą]{.recon} ‘gold’; Northwest Germanic / Old English lowering then yields [góldą]{.recon} ‘gold’, and apocope gives _gold_ [@Campbell1959; @RingeTaylor2014, 42].
+
+### goose — OE _gōs_
+
+Derivation: _\*gánsz_ > _gōs_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*gánsz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.611\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.359\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+EAF Nasal Spirant Lengthening & \emph{*gōns} \\
+\mbox{EAF Nasal Spirant Loss} & \emph{*gōs} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _gōs_
+
+#### Reconstruction and comparative evidence
+
+The 'goose' word is a root noun whose nominative singular has an unusually
+layered history. Orel's citation form is _\*ǥansz_ 'goose', with his
+class-wide explicit nominative marker _\*-z_ stacked on the root-final _s_
+[@Orel2003, 126]. Kroonen reconstructs an endingless nominative [_\*gans_]{.iv lang=pgmc sort=gans role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:24:1"}
+'goose' with Verner-voiced _z_ only in the oblique cells (genitive
+[_\*gunzaz_]{.iv lang=pgmc sort=gunzaz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:26" occ_id="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:26:1"} 'goose (gen.)') [@Kroonen2013, 168--169], and Kluge/Seebold
+treat the German cognate under the same root noun [@KlugeSeebold2011, 331].
+Bammesberger supplies the deeper layer: by Szemerényi's law the
+Proto-Indo-European nominative _\*ǵʰanss_ yielded _\*ǵʰān_, after which the
+Proto-Germanic nominative was rebuilt with a final voiced sibilant, _\*ganz_,
+reanalyzed within the paradigm [@Bammesberger1990, 196]. A mainstream
+specialist thus reconstructs a Proto-Germanic 'goose' nominative with a final
+voiced sibilant; Orel's notation is not idiosyncratic, and Kroonen's
+endingless citation reflects a different analytical layer of the same
+paradigm rather than a contradictory fact.
+
+The derivational input [gánsz]{.iv .recon lang=pgmc sort=gansz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:37:1"} 'goose' follows Orel's morphologically
+explicit convention, keeping the nominative marker visible so that its
+historical elimination is modelled rather than presupposed.
+
+#### Old English evidence
+
+Old English [_gōs_]{.iv lang=oe sort=gos role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:43" occ_id="Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:43:1"} 'goose' is the endingless nominative-accusative singular,
+with mutated plural [ġēs]{.ex} 'geese' [@Fulk2018, 165--166]. The comparative
+picture matches the rest of the root-noun class: Gothic replaced the word (its
+'goose' is the u-stem remodeling behind Spanish [ganso]{.ex} 'goose'
+[@Orel2003, 126]), and no West Germanic daughter shows any nominative ending
+[@RingeTaylor2014, 118].
+
+#### Development to Old English
+
+The root-noun nominative marker was eliminated before Proto-West Germanic
+[@RingeTaylor2014, 118], giving [gáns]{.recon} 'goose' from the derivational input
+[gánsz]{.recon} 'goose'. The remaining development is the familiar Ingvaeonic
+nasal-spirant sequence: the vowel lengthens and rounds before the nasal +
+voiceless fricative cluster and the nasal is then lost, giving [gōs]{.recon}
+'goose', which is the attested Old English form. The early loss of the
+nominative marker is historically distinct from the later West Germanic loss
+of final _\*z_ in unstressed syllables and from the northern monosyllabic loss
+with compensatory lengthening; had the marker survived to the later
+monosyllabic change, a lengthened vowel before _s_ would not be the expected
+outcome of this shape, since the root-noun ending was already gone.
 
 ### grave — OE _grafan_
 
@@ -2521,6 +2789,92 @@ From [líndō]{.recon} ‘linden’, Northwest Germanic final _\*ō_ raising fir
 #### Form note
 
 The Old English noun represented here is [_lind_]{.iv lang=oe sort=lind role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2104-linden-lind.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2104-linden-lind.model.md:33:1"} 'linden, lime tree'. Clark Hall also has a separate adjectival _linden_ 'made of linden-wood', but that is not the noun counterpart for this entry [@ClarkHall1960].
+
+### louse — OE _lūs_
+
+Derivation: _\*lūsz_ > _lūs_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*lūsz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _lūs_
+
+#### Reconstruction and comparative evidence
+
+Orel's citation form is _\*lusz_ 'louse', with the explicit nominative marker
+_\*-z_ he writes across the root-noun class; his entry points to Bammesberger
+and Griepentrog for the morphology [@Orel2003, 252]. Kroonen has no 'louse'
+entry, so his dictionary cannot be cited for this word [@Kroonen2013, 345].
+Kluge/Seebold carry the German cognate as the same root noun
+[@KlugeSeebold2011, 563]. Bammesberger shows that the root-final _s_ is
+itself secondary: the root [_\*luw-_]{.iv lang=pgmc sort=luw role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:27:1"} 'louse' was extended with _s_ on
+the model of the 'mouse' word [@Bammesberger1990, 195]. The 'mouse' parallel
+also shows why no extra sibilant is audible in the nominative: Ringe
+reconstructs endingless [_\*mūs_]{.iv lang=pgmc sort=mus role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:30" occ_id="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:30:1"} 'mouse', with the expected double
+sibilant of the nominative removed by degemination [@Ringe2017, 149].
+
+The derivational input [lūsz]{.iv .recon lang=pgmc sort=lusz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:33:1"} 'louse' follows Orel's morphologically
+explicit convention. The final _\*-z_ is an inflectional marker made visible
+in the citation form, not a claim that a phonetic cluster _[sz]_ was ever
+pronounced; the notation records the morphology whose elimination the
+derivation models.
+
+#### Old English evidence
+
+Old English [_lūs_]{.iv lang=oe sort=lus role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:41:1"} 'louse' is the endingless nominative-accusative
+singular of a root noun, with mutated plural [lȳs]{.ex} 'lice'
+[@Fulk2018, 165--166]. Old Norse [lús]{.ex} 'louse' is likewise endingless, in
+keeping with the North Germanic redistribution that drops the reflex of
+_\*-z_ in feminine root nouns [@Fulk2018, 167]. No West Germanic daughter
+shows any ending in this class [@RingeTaylor2014, 118].
+
+#### Development to Old English
+
+The root-noun nominative marker was eliminated before Proto-West Germanic
+[@RingeTaylor2014, 118]. From the derivational input [lūsz]{.recon} 'louse' the loss
+of the marker gives [lūs]{.recon} 'louse', which is already the attested Old
+English form. Because the root itself ends in _s_, the marker's elimination
+here is best read together with the degemination that Ringe describes for
+'mouse': at no stage does the reconstruction require an audible _-sz_
+sequence. This early morphological development is distinct from the later
+West Germanic loss of final _\*z_ in unstressed syllables and from the
+northern monosyllabic loss with compensatory lengthening; the root-noun
+ending was gone before either applied, and the root-final _s_ of _lūs_
+'louse' was never eligible for either change.
 
 ### milk — OE _meoloc_
 
