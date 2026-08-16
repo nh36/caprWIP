@@ -20,7 +20,7 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs the Germanic numeral as [`*þūsundī-`]{.iv lang=pgmc sort=thusundi role=source_protoform} and cites Old
 English [`þūsend`]{.iv lang=oe sort=thusend role=target_form} 'thousand' among its continuations [@Kroonen2013, 554]. The
-selected input [θūs-èndi]{.iv .recon lang=pgmc sort=thusendi role=selected_input} ‘thousand’ is not the same claim. It is an OE-oriented
+selected input [θūs-èndi]{.iv .recon lang=preoe variety=transponent sort=thusendi role=selected_input} ‘thousand’ is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to `e` and the final
 high vowel already shortened for apocope.
 
@@ -53,7 +53,7 @@ arguing that Old English `e` in this weak position may simply write schwa and so
 need not prove a unique `ærende` 'message'-type analogy [@GermanicSlavicBaltic2025,
 §2.1.4].
 
-The selected transponent [θūs-èndi]{.iv .recon lang=pgmc sort=thusendi role=selected_input} ‘thousand’ captures the OE-side state from which
+The selected transponent [θūs-èndi]{.iv .recon lang=preoe variety=transponent sort=thusendi role=selected_input} ‘thousand’ captures the OE-side state from which
 the documented trace reaches [`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand'.
 
 ### Stage comparison
@@ -65,4 +65,4 @@ interpretive account of the second-syllable vowel.
 | :--- | :--- | :--- | :--- |
 | surviving `-ī` with ordinary double umlaut | [`*þūsundī-`]{.iv lang=pgmc sort=thusundi role=source_protoform} treated as still umlaut-active in OE | would point toward [`*þȳsend`]{.iv lang=oe sort=thysend role=comparison_form} | excluded by preserved `ū` |
 | early loss of the trigger without further reshaping | `*þūsund-` type | explains `ū`, but not why OE alone has medial `e` | incomplete account |
-| selected OE-oriented transponent | [`*θūs-èndi`]{.iv lang=pgmc sort=thusendi role=selected_input} | trace output: [`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand' | selected modeling input |
+| selected OE-oriented transponent | [`*θūs-èndi`]{.iv lang=preoe variety=transponent sort=thusendi role=selected_input} | trace output: [`þūsend`]{.iv lang=oe sort=thusend role=regular_output} 'thousand' | selected modeling input |

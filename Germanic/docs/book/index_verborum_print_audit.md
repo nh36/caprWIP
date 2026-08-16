@@ -1,9 +1,9 @@
 # Index verborum print audit
 
 - Internal production occurrences: 2362
-- Internal production unique forms: 1073
+- Internal production unique forms: 1071
 - Printed main occurrences: 2274
-- Printed main unique forms: 1063
+- Printed main unique forms: 1061
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -16,11 +16,11 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1216 | 455 |
-| Proto-Germanic | 938 | 522 |
-| Proto-Northwest Germanic | 4 | 2 |
-| Proto-West Germanic | 11 | 8 |
+| Proto-Germanic | 928 | 519 |
+| Proto-Northwest Germanic | 2 | 1 |
+| Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 3 |
-| Pre-Old English / prehistoric English | 6 | 6 |
+| Pre-Old English / prehistoric English | 15 | 10 |
 | Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
@@ -48,7 +48,8 @@
 
 ## Pre-OE review rows by proposed status
 
-- `include_if_source_backed`: 6
+- `include_if_source_backed`: 9
+- `needs_human_review`: 6
 
 ## Reader-facing example rows by role
 
@@ -123,12 +124,10 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
-| pwgmc | `*júgunθ` | jugunth | 2 | selected_input; source_protoform |
+| pwgmc | `*júgunθ` | jugunth | 5 | selected_input; source_protoform |
+| pwgmc | `*nábulô` | nabulo | 4 | selected_input; source_protoform |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
 | pwgmc | `*skúldru` | skuldru | 1 | comparison_form |
-| pwgmc | `*spárōjaną` | sparojana | 2 | selected_input; source_protoform |
-| pwgmc | `*θūs-èndi` | thusendi | 1 | source_protoform |
-| pwgmc | `*θūsèndi` | thusendi | 1 | selected_input |
 | pwgmc | `*timbr` | timbr | 2 | comparison_form |
 | goth | `baíram` | bairam | 1 | evidence_form |
 | goth | `brusts` | brusts | 1 | comparison_form |

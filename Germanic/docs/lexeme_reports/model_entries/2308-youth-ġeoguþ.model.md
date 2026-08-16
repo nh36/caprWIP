@@ -21,7 +21,7 @@ DERIVATION_CLASS: early_analogy
 The wider etymological tradition reconstructs an earlier form of the word as
 [`*ju(w)unþi-`]{.iv lang=pgmc sort=juwunthi role=source_protoform}. The comparative label
 [júgunθiz]{.iv .recon lang=pgmc sort=jugunthiz role=source_protoform} 'youth' already stands at a later Germanic stage with `g`, and the
-derivational input [júgunθ]{.iv .recon lang=pgmc sort=jugunth role=selected_input} 'youth' is later again: it represents the form after final
+derivational input [júgunθ]{.iv .recon lang=pwgmc sort=jugunth role=selected_input} 'youth' is later again: it represents the form after final
 `-i` has been lost.
 
 Ringe and Taylor explicitly give the sequence
@@ -45,7 +45,7 @@ The decisive early step is the loss of final `-i` before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 `y`-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From the selected input [júgunθ]{.iv .recon lang=pgmc sort=jugunth role=selected_input} 'youth', the later development is regular: palatal
+From the selected input [júgunθ]{.iv .recon lang=pwgmc sort=jugunth role=selected_input} 'youth', the later development is regular: palatal
 fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
 [jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
 [jéoguθ]{.recon} 'youth', which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves `u` after accented `u` in forms such
@@ -62,5 +62,5 @@ from the later stages relevant to the Old English noun.
 | :--- | :--- | :--- | :--- |
 | earlier etymological headword | [`*ju(w)unþi-`]{.iv lang=pgmc sort=juwunthi role=source_protoform} | comparative family background | older comparative reconstruction of the lexeme |
 | later g-bearing comparative label | [`*júgunθiz`]{.iv lang=pgmc sort=jugunthiz role=source_protoform} | citation reconstruction / lexeme label | preserves the later Germanic stage behind the selected entry |
-| Old English-facing input | [`*júgunθ`]{.iv lang=pgmc sort=jugunth role=selected_input} | compact-trace output: [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} | exact match for the Old English form used here |
+| Old English-facing input | [`*júgunθ`]{.iv lang=pwgmc sort=jugunth role=selected_input} | compact-trace output: [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} | exact match for the Old English form used here |
 | full `-i` stage retained too long | [`*jugunþi`]{.iv lang=pgmc sort=jugunthi role=comparison_form} | expected over-umlauted `y`-type result | negative control showing why early `-i` loss must precede the OE umlaut stage |

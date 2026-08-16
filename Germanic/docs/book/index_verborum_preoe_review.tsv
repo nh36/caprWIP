@@ -2,6 +2,15 @@ form	source_ref	source_scope	form_role	reason_for_current_inclusion	proposed_pri
 sparai-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	
 sparja-	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	
 spárē	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	
+θūs-èndi	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23	explicit_tag	selected_input	Explicit .iv tag in source prose.	include_if_source_backed	
+θūs-èndi	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56	explicit_tag	selected_input	Explicit .iv tag in source prose.	include_if_source_backed	
+*θūs-èndi	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68	explicit_tag	selected_input	Explicit .iv tag in source prose.	include_if_source_backed	
 weraldiz	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	
 weraldu	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	
 weruld	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68	explicit_tag	comparison_form	Explicit .iv tag in source prose.	include_if_source_backed	
+*láimą	loam — OE lām	trace_proto_input	selected_input	Production source scope trace_proto_input.	needs_human_review	
+*láimą	loam — OE lām	lexical_protoform	source_protoform	Production source scope lexical_protoform.	needs_human_review	
+*spárōjaną	spare — OE sparian	trace_proto_input	selected_input	Production source scope trace_proto_input.	needs_human_review	
+*spárōjaną	spare — OE sparian	lexical_protoform	source_protoform	Production source scope lexical_protoform.	needs_human_review	
+*θūs-èndi	thousand — OE þūsend	lexical_protoform	source_protoform	Production source scope lexical_protoform.	needs_human_review	
+*θūsèndi	thousand — OE þūsend	trace_proto_input	selected_input	Production source scope trace_proto_input.	needs_human_review	

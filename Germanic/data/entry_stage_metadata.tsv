@@ -1,161 +1,81 @@
-row_id	proto_stage	protoform_stage	decision_type	evidence
-1936	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Note: a-stem neuter, gen.s
-1946	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Note: using gen.sg. *bazjas (> berġes); R/T vol.2 §6.8.2: *rj did not geminate in PWGmc
-1959	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen p.82: OE < *buttma- (oblique stem variant via PIE dissimilation)
-1962	pgmc	pgmc	same_stage_pgmc_paradigm_cell	1/3 sg pret. of *būgan 'to bow, bend' (class II strong). Retargeted from 3pl pret. *búgun → bugon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossiers/bu
-1965	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-1968	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-1980	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich.
-1981	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen: *kraftu- m. 'strength' (u-stem); Orel: *kraftiz ~ *kraftuz. OE cræft has æ (not e), ruling out i-stem *-iz which would trigger i-umlaut. Using a-stem *
-1983	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen (2013:313) *kweduz m. u-stem 'resin' (Leiden orthography: *d* = [ð] intervocalically); Orel (2003) *kweðuz explicit; R/T (2014:323) PWGmc *kwidu presupp
-1990	pgmc	pgmc	same_stage_pgmc_paradigm_cell	"I-stem *deliz per Kroonen p.93: ""evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)"". OE generalized i-stem; OS/OHG generalized ja-stem."
-1998	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2004	pgmc	pgmc	same_stage_pgmc_alternative_formation	"R/T: ""festan 'to fix, to fasten' < *fæstjan"" (Class I weak); ""acquired stative meaning ['to fast'] by lexical confusion"" with *fastēn-. OE fæstan has æ from ana"
-2011	pgmc	pgmc	same_stage_pgmc_alternative_formation	"Paradigm-cell acc.sg.m. of strong past ptc, attested (Bosworth-Toller s.v. findan: ""Beón i hergeata ww fundene, 414, 4 note""; cf. Hall s.v. tō-fundennes). Regul"
-2016	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2027	pgmc	pgmc	same_stage_pgmc_alternative_formation	"Kroonen s.v. *fulgēn-: ""OE fylg(e)an continue *fulgjan-""; R/T §2.3.1: ""class I weak OE fylgan"". WS folgian is Class II from *fulgēn-."
-2034	pgmc	pgmc	same_stage_pgmc_paradigm_cell	§17.45.3c: target retargeted to obl.sg./pl. paradigm cell fyrhte (BT: Guth. 88,18; 92,1; Bl.H. 57,20; Hml.S.; Ll.Th. 378,22; etc.). Bare-stem nom.sg. *fyrht is 
-2037	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2047	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2053	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplai
-2058	pgmc	pgmc	same_stage_pgmc_alternative_formation	3sg pres. indic. (lautgesetzlich); inf. habban is analogical (umlaut leveled, Fulk §12.47)
-2068	pgmc	nsgmc	post_pgmc_historical_input	Selected input is northern WGmc / pre-OE *xébun (Ringe-Taylor *hebun), NOT the PGmc citation *xémenaz. Early paradigm remodelling generalized the labial - regul
-2086	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Proto corrected to *knextăz per R/T vol.2 p.127, Orel p.220, Kluge-Seebold
-2087	pgmc	pgmc	pgmc_morphological_variant	Both *knúppaz (voiceless) and *knúbbô (voiced weak-noun) are PGmc formations per Kroonen 2011:297; model entry confirms both branches are PGmc variants. Selected input *knúbbô is pgmc.
-2088	pgmc	pgmc	same_stage_pgmc_alternative_formation	Wiktionary: PGmc *hlaðaną (Verner) > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1
-2090	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2092	pgmc	pgmc	same_stage_pgmc_alternative_formation	§17.40: target hlæhhan → hliehhan (WS form per Bright p.597, Brunner §392,4; Anglian hlæhhan attested as variant — cascade defaults to WS). Added *x to PWGmcJGe
-2101	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2103	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2105	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2106	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2107	pgmc	pgmc	same_stage_pgmc_alternative_formation	3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem
-2109	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2114	pgmc	pgmc	same_stage_pgmc_paradigm_cell	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). OE lungen specifically reflects the *-anjō derivative.
-2119	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate
-2124	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Paradigm-cell switch to dat.sg. *mízdai > meorde, the directly-attested OE oblique (Bede 4.17 var.; Phoenix 17; GD 227.16; gen.pl. meorda GD 312.14). Lautgesetz
-2133	pgmc	pnwgmc	post_pgmc_historical_stage	R/T vol.2 p.11090 explicitly: "PNWGnmc *nabulé 'navel' (ON nafli, OHG nabalo) > *nzbula > OE nafola". Selected PROTOFORM *nábulô is the PNWGmc form before syncope. Medial *u is PNWGmc-universal per TSV note.
-2134	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2136	pgmc	pgmc	same_stage_pgmc_paradigm_cell	R/T p.435: PGmc *nēdlō has Verner's alternation; OE nǣdl reflects *d variant
-2140	pgmc	pgmc	same_stage_pgmc_paradigm_cell	R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > neaht
-2143	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2151	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Retargeted 2026-04-30 from attested Anglian rēc (smoothing relic) to reconstructed West Saxon *rēac. The FST cascade already produces rēac from *ráukaz by regul
-2152	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still presen
-2153	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2168	pgmc	pgmc	same_stage_pgmc_paradigm_cell	OE neut. a-stem (Hall, K-S); Kroonen: n-stem *safō dissolved dialectally
-2169	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen (2013): *saiwi- m. 'sea', i-stem; R/T §6.7.1: *w lost before *i → *sāwi > *sǣi > sǣ
-2182	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2183	pgmc	pgmc	same_stage_pgmc_paradigm_cell	DatPl encoding: PROTOFORM is PGmc-proper *-amiz (inst.pl. branch of dat./inst. merger). See DEV_NOTES §17.41.
-2184	pgmc	pgmc	same_stage_pgmc_paradigm_cell	1/3 sg pret. of *sċūfan 'to shove, push' (class II strong). Retargeted from 3pl pret. *skúbun → sċufon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossie
-2188	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2189	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2197	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2203	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ai preserves medial geminate; unstressed word-final *ai→*ē (R/T §6.1.5; §17.12).
-2205	pgmc	pwgmc	post_pgmc_morphological_refashioning	Class III *spárēn- is PGmc per Kroonen, ON, OHG. Selected class II *spárōjaną is PWGmc-level cl-III→II refashioning per dossier-spar-2025.md §1.1–1.3 and R/T vol.2 pp.162,191.
-2212	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen: *staba- m. 'staff; letter' (a-stem). OE stæf has æ (not e), ruling out i-stem *-iz. Using a-stem *stabăz.
-2216	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Selected input is the i-stem variant *stámniz (Orel 2003:371, *stamnaz ~ *stamniz); citation reconstruction remains *stámnaz. Under literal adjacent SC022 (mn>β
-2235	pgmc	pgmc	same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
-2238	pgmc	pgmc	same_stage_pgmc_model_encoding	Proto: oblique *swīnăn→*swīną (n. a-stem nom.sg.; Kroonen) §17.46 Phase 2: PROTOFORM accented (ḯ = stressed long *ī, U+1E2F) so NWGmcInStemNLoss does not fire o
-2250	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Paradigm-cell target: GenSg þistles (masc. a-stem). NomSg simplex *þistl is unattested in OE manuscripts; the only attested simplex NomSg is broken þistel (via 
-2252	pgmc	pwgmc	post_pgmc_paradigm_restructuring	PGmc PROTO *θūs-undī is jō-stem (with -ī). Selected PROTOFORM *θūs-èndi lacks -ī: this is the result of WGmc paradigm restructuring to a-stem (pre-OE but post-PGmc). Shared across OS/OHG/OE; ON/Gothic preserve the earlier jō-stem class. The -ī loss is a PWGmc-level morphological innovation. 
-2257	pgmc	pgmc	same_stage_pgmc_model_encoding	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'
-2258	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen *timbra- with *b; OE timber.
-2268	pgmc	pgmc	same_stage_pgmc_alternative_formation	OE wacan is the strong verb (Class VI) 'to wake up' < PGmc *wakaną, not the weak Class III *wakēną 'to be awake' (→ OE wacian). The cognate set GLOSSID 299 conf
-2274	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen *watar-/*watan- r/n-stem, nom.sg. *watōr; R/T §3.1.4 *ō→*a before final *r in PWGmc.
-2284	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Kroonen *hwalaz with initial *hw-; OE hwæl.
-2285	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2286	pgmc	pgmc	same_stage_pgmc_alternative_formation	(no TSV NOTE; PGmc paradigm/stem variant)
-2290	pgmc	pgmc	same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
-2296	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Campbell §275(7), §376: OE -ig < PGmc *-ag- (cf. *xúnagą → huniġ); see DEV_NOTES §17.10.35 and notable_findings §9. Wiktionary/Kluge *wīþja- cannot derive -ig (
-2302	pgmc	pgmc	same_stage_pgmc_paradigm_cell	PROTOFORM *wir-aldu uses PIE root vowel *i (cf. Lat vir). FST: (1) NWGmc i-lowering *i>*e, (2) inter-stress raising *a>*u (OEInterStressRaising), (3) back mutat
-2308	pgmc	pwgmc	post_pgmc_apocope	Final *-i loss after heavy syllable (PWGmcEarlyIApocope, FST line 1593) before i-umlaut. Model entry confirms derivation begins after apocope. R/T vol.2 p.141: "*jugunþi > *juguþ" documents this as pre-OE post-PGmc boundary. Selected *júgunθ is pwgmc.
-2309	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test (R/T §5.2). Trimoric *ō → OE -a.
-2310	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ (Campbell §355.4, R/T vol.2 p.80). No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Camp
-2311	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.
-2312	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ (Campbell §355.4). No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal.
-2313	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Northumbrian iptv.2sg. Uses io from regular breaking; WS leorna has leveled eo.
-2314	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak 3sg. Regular: *-ōθi → -aþ. Root has io from breaking before rn. No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Campbell §757
-2315	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.
-2316	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Root has cc from WGmc gemination.
-2317	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.
-2318	pgmc	pgmc	same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Normalized sċ: Campbell §440.
-
-1933	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*nḗdrōn: PROTO==PROTOFORM, both pgmc (auto-determined).
-1934	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*bákaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-1942	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*bōkō: PROTO==PROTOFORM, both pgmc (auto-determined).
-1943	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*bigínnaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-1949	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*bḗrō: PROTO==PROTOFORM, both pgmc (auto-determined).
-1951	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*búrdiz: PROTO==PROTOFORM, both pgmc (auto-determined).
-1954	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*báiną: PROTO==PROTOFORM, both pgmc (auto-determined).
-1958	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*bō: PROTO==PROTOFORM, both pgmc (auto-determined).
-1961	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*báugijaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-1969	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*brōkiz: PROTO==PROTOFORM, both pgmc (auto-determined).
-1973	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*búkkaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-1975	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*kálbaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-1979	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*kúrną: PROTO==PROTOFORM, both pgmc (auto-determined).
-1987	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*dḗdiz: PROTO==PROTOFORM, both pgmc (auto-determined).
-1992	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*dúrą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2003	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*fáraną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2007	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*féllą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2008	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*fárnaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2009	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*félθuz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2013	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*fūri: PROTO==PROTOFORM, both pgmc (auto-determined).
-2022	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*fléuganą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2028	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*léusaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2030	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*fúglaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2038	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*gángaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2041	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*gébaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2043	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*gúlθą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2046	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*grábaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2049	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*gástiz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2051	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xḗrą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2057	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xárbistuz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2069	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xágjaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2070	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xélmaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2071	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xélpaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2075	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xéndjō: PROTO==PROTOFORM, both pgmc (auto-determined).
-2077	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xáldaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2082	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xúrną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2093	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*láidijaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2095	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*líznōjaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2100	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*xlídą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2102	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*léuxtijaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2104	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*líndō: PROTO==PROTOFORM, both pgmc (auto-determined).
-2126	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*mélukz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2129	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*mōdēr: PROTO==PROTOFORM, both pgmc (auto-determined).
-2138	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*nátją: PROTO==PROTOFORM, both pgmc (auto-determined).
-2141	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*márōn: PROTO==PROTOFORM, both pgmc (auto-determined).
-2155	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*rúkkaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2162	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*rústō: PROTO==PROTOFORM, both pgmc (auto-determined).
-2179	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*skḗpą: PROTO==PROTOFORM, both pgmc (auto-determined).
-2181	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*skíllingaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2186	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*skáwōjaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2196	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*slḗpaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2198	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*smérwijaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2202	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*spánnaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2204	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*spárrô: PROTO==PROTOFORM, both pgmc (auto-determined).
-2217	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*stéllijaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2227	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*stráwjaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2230	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*súmaraz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2232	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*súndrōjaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2234	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*swálwōn: PROTO==PROTOFORM, both pgmc (auto-determined).
-2240	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*táppô: PROTO==PROTOFORM, both pgmc (auto-determined).
-2242	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*téxun: PROTO==PROTOFORM, both pgmc (auto-determined).
-2248	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*θánkijaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2251	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*θúrnaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2254	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*θréjez: PROTO==PROTOFORM, both pgmc (auto-determined).
-2260	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*táikną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2263	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*tūną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2266	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wádaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2270	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wérpaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2272	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wáskaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2273	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wábsaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2276	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wáxsaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2277	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wégaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2278	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wḗpną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2293	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wéljô: PROTO==PROTOFORM, both pgmc (auto-determined).
-2294	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wíndaną: PROTO==PROTOFORM, both pgmc (auto-determined).
-2297	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wálθuz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2298	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wúlfaz: PROTO==PROTOFORM, both pgmc (auto-determined).
-2300	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*wúllō: PROTO==PROTOFORM, both pgmc (auto-determined).
-2305	pgmc	pgmc	same_stage_pgmc_citation	Model entry with PROTO==*gárną: PROTO==PROTOFORM, both pgmc (auto-determined).
+row_id	proto_stage	protoform_stage	protoform_variety	decision_type	evidence
+1936	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Gen.sg. paradigm cell: *bannas → bannes. Word-final geminates are phonologically simplified; using gen.sg. preserves medial geminate. Note: a-stem neuter, gen.s
+1946	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Note: using gen.sg. *bazjas (> berġes); R/T vol.2 §6.8.2: *rj did not geminate in PWGmc
+1959	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen p.82: OE < *buttma- (oblique stem variant via PIE dissimilation)
+1962	pgmc	pgmc		same_stage_pgmc_paradigm_cell	1/3 sg pret. of *būgan 'to bow, bend' (class II strong). Retargeted from 3pl pret. *búgun → bugon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossiers/bu
+1965	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+1968	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+1980	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich.
+1981	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen: *kraftu- m. 'strength' (u-stem); Orel: *kraftiz ~ *kraftuz. OE cræft has æ (not e), ruling out i-stem *-iz which would trigger i-umlaut. Using a-stem *
+1983	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen (2013:313) *kweduz m. u-stem 'resin' (Leiden orthography: *d* = [ð] intervocalically); Orel (2003) *kweðuz explicit; R/T (2014:323) PWGmc *kwidu presupp
+1990	pgmc	pgmc		same_stage_pgmc_paradigm_cell	I-stem *deliz per Kroonen p.93: "evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)". OE generalized i-stem; OS/OHG generalized ja-stem.
+1998	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2004	pgmc	pgmc		same_stage_pgmc_alternative_formation	R/T: "festan 'to fix, to fasten' < *fæstjan" (Class I weak); "acquired stative meaning ['to fast'] by lexical confusion" with *fastēn-. OE fæstan has æ from ana
+2011	pgmc	pgmc		same_stage_pgmc_alternative_formation	Paradigm-cell acc.sg.m. of strong past ptc, attested (Bosworth-Toller s.v. findan: "Beón i hergeata ww fundene, 414, 4 note"; cf. Hall s.v. tō-fundennes). Regul
+2016	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2027	pgmc	pgmc		same_stage_pgmc_alternative_formation	Kroonen s.v. *fulgēn-: "OE fylg(e)an continue *fulgjan-"; R/T §2.3.1: "class I weak OE fylgan". WS folgian is Class II from *fulgēn-.
+2034	pgmc	pgmc		same_stage_pgmc_paradigm_cell	§17.45.3c: target retargeted to obl.sg./pl. paradigm cell fyrhte (BT: Guth. 88,18; 92,1; Bl.H. 57,20; Hml.S.; Ll.Th. 378,22; etc.). Bare-stem nom.sg. *fyrht is 
+2037	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2047	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2053	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplai
+2058	pgmc	pgmc		same_stage_pgmc_alternative_formation	3sg pres. indic. (lautgesetzlich); inf. habban is analogical (umlaut leveled, Fulk §12.47)
+2068	pgmc	nsgmc		post_pgmc_historical_input	Selected input is northern WGmc / pre-OE *xébun (Ringe-Taylor *hebun), NOT the PGmc citation *xémenaz. Early paradigm remodelling generalized the labial - regul
+2086	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Proto corrected to *knextăz per R/T vol.2 p.127, Orel p.220, Kluge-Seebold
+2087	pgmc	pgmc		pgmc_morphological_variant	Both *knúppaz (voiceless) and *knúbbô (voiced weak-noun) are Proto-Germanic morphological variants (Kroonen 2011:297); selected input *knúbbô is a PGmc paradigm/formation variant.
+2088	pgmc	pgmc		same_stage_pgmc_alternative_formation	Wiktionary: PGmc *hlaðaną (Verner) > OE hladan | Proto encoding: -aną (full vowel) for A-restoration; R/T §6.3.1
+2090	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2092	pgmc	pgmc		same_stage_pgmc_alternative_formation	§17.40: target hlæhhan → hliehhan (WS form per Bright p.597, Brunner §392,4; Anglian hlæhhan attested as variant — cascade defaults to WS). Added *x to PWGmcJGe
+2101	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2103	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2105	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2106	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2107	pgmc	pgmc		same_stage_pgmc_alternative_formation	3sg pres. indic. (archaic North. lifed); infinitive libban shows j-gemination from *libjăną stem, not *-ē- stem
+2109	pgmc	preoe	transponent	post_pgmc_oe_internal_class_shift	PGmc is the n-stem *laimô(n) (Orel 2003:272; Kroonen 2013:363). Selected neuter a-stem *láimą is an OE-internal class reformation, explicitly not reconstructible as a PGmc a-stem (research memo 2109). Model transponent: input chosen to drive the OE derivation.
+2114	pgmc	pgmc		same_stage_pgmc_paradigm_cell	*lunganjō (ō-stem feminine with *-anjō suffix; Wiktionary Reconstruction:Proto-Germanic/*lunganjō). OE lungen specifically reflects the *-anjō derivative.
+2119	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Gen.sg. paradigm cell: *mannas → mannes. Word-final geminates are phonologically simplified (Kurath 1956, Brunner §231); using gen.sg. preserves medial geminate
+2124	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Paradigm-cell switch to dat.sg. *mízdai > meorde, the directly-attested OE oblique (Bede 4.17 var.; Phoenix 17; GD 227.16; gen.pl. meorda GD 312.14). Lautgesetz
+2133	pgmc	pwgmc		post_pgmc_historical_stage	R/T 2014:270 (index): PNWGmc *nabulaz > PWGmc *nabulō; CAPR PROTOFORM *nábulô = PWGmc *nabulō. (Supersedes prior pnwgmc and the erroneous 'p.11090' citation, which was an OCR line number, not a page.)
+2134	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2136	pgmc	pgmc		same_stage_pgmc_paradigm_cell	R/T p.435: PGmc *nēdlō has Verner's alternation; OE nǣdl reflects *d variant
+2140	pgmc	pgmc		same_stage_pgmc_paradigm_cell	R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > neaht
+2143	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2151	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Retargeted 2026-04-30 from attested Anglian rēc (smoothing relic) to reconstructed West Saxon *rēac. The FST cascade already produces rēac from *ráukaz by regul
+2152	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still presen
+2153	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2168	pgmc	pgmc		same_stage_pgmc_paradigm_cell	OE neut. a-stem (Hall, K-S); Kroonen: n-stem *safō dissolved dialectally
+2169	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen (2013): *saiwi- m. 'sea', i-stem; R/T §6.7.1: *w lost before *i → *sāwi > *sǣi > sǣ
+2182	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2183	pgmc	pgmc		same_stage_pgmc_paradigm_cell	DatPl encoding: PROTOFORM is PGmc-proper *-amiz (inst.pl. branch of dat./inst. merger). See DEV_NOTES §17.41.
+2184	pgmc	pgmc		same_stage_pgmc_paradigm_cell	1/3 sg pret. of *sċūfan 'to shove, push' (class II strong). Retargeted from 3pl pret. *skúbun → sċufon (analogical-overlay) per DEV_NOTES §17.51.A1.4 and dossie
+2188	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2189	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2197	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2203	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ai preserves medial geminate; unstressed word-final *ai→*ē (R/T §6.1.5; §17.12).
+2205	pgmc	preoe	transponent	post_pgmc_morphological_refashioning	PGmc/PWGmc verb is class-III *sparē- (Kroonen; Go. sparan, OHG sparēn, ON spara). R/T 2014:191 give the pre-OE class-II refashioning *spærōjan > OE sparian; selected class-II *spárōjaną is that pre-OE form. Model transponent (code already treats sparian as the one transponent row).
+2212	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen: *staba- m. 'staff; letter' (a-stem). OE stæf has æ (not e), ruling out i-stem *-iz. Using a-stem *stabăz.
+2216	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Selected input is the i-stem variant *stámniz (Orel 2003:371, *stamnaz ~ *stamniz); citation reconstruction remains *stámnaz. Under literal adjacent SC022 (mn>β
+2235	pgmc	pgmc		same_stage_pgmc_paradigm_cell	(no TSV NOTE; PGmc paradigm/stem variant)
+2238	pgmc	pgmc		same_stage_pgmc_model_encoding	Proto: oblique *swīnăn→*swīną (n. a-stem nom.sg.; Kroonen) §17.46 Phase 2: PROTOFORM accented (ḯ = stressed long *ī, U+1E2F) so NWGmcInStemNLoss does not fire o
+2250	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Paradigm-cell target: GenSg þistles (masc. a-stem). NomSg simplex *þistl is unattested in OE manuscripts; the only attested simplex NomSg is broken þistel (via 
+2252	pgmc	preoe	transponent	post_pgmc_analogical_oe_form	Medial -e- is an OE-specific analogical development (Vorbild ærende < *arundiju), not regular phonology; PWGmc/OS/OHG retain -u- (thūsund). Selected *θūs-èndi is the OE-oriented transponent input (DEV_NOTES §14.7).
+2257	pgmc	pgmc		same_stage_pgmc_model_encoding	Kroonen *tīdiz f. i-stem 'time, hour' → OE tīd f.; tīdan is the verb 'to happen'
+2258	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen *timbra- with *b; OE timber.
+2268	pgmc	pgmc		same_stage_pgmc_alternative_formation	OE wacan is the strong verb (Class VI) 'to wake up' < PGmc *wakaną, not the weak Class III *wakēną 'to be awake' (→ OE wacian). The cognate set GLOSSID 299 conf
+2274	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen *watar-/*watan- r/n-stem, nom.sg. *watōr; R/T §3.1.4 *ō→*a before final *r in PWGmc.
+2284	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen *hwalaz with initial *hw-; OE hwæl.
+2285	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2286	pgmc	pgmc		same_stage_pgmc_alternative_formation	(no TSV NOTE; PGmc paradigm/stem variant)
+2290	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
+2296	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Campbell §275(7), §376: OE -ig < PGmc *-ag- (cf. *xúnagą → huniġ); see DEV_NOTES §17.10.35 and notable_findings §9. Wiktionary/Kluge *wīþja- cannot derive -ig (
+2302	pgmc	pgmc	transponent	pgmc_base_model_transponent	R/T 2014:341 anchor the compound as PNWGmc *weraldiz (lowered *wer-), with the ō/u-stem shift a later/branch-level innovation. CAPR *wír-àldu keeps the older *wir- vowel (Orel 2003; Kluge-Seebold *wira-aldō) but post-PGmc ō/u-stem morphology: a genuine transponent whose vowel and morphology belong to different stages. Base recorded pgmc; flagged transponent.
+2308	pgmc	pwgmc		post_pgmc_apocope	R/T 2014:141: PWGmc *jugunþi > *jugiþ > OE geoguþ. Selected *júgunθ is post-early-apocope (PWGmcEarlyIApocope, FST line 1593); apocope is early/PWGmc-internal. Final *-i loss precedes i-umlaut (Campbell §332).
+2309	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test (R/T §5.2). Trimoric *ō → OE -a.
+2310	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ (Campbell §355.4, R/T vol.2 p.80). No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Camp
+2311	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.
+2312	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ (Campbell §355.4). No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal.
+2313	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Northumbrian iptv.2sg. Uses io from regular breaking; WS leorna has leveled eo.
+2314	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak 3sg. Regular: *-ōθi → -aþ. Root has io from breaking before rn. No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Campbell §757
+2315	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.
+2316	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Root has cc from WGmc gemination.
+2317	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.
+2318	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Normalized sċ: Campbell §440.
