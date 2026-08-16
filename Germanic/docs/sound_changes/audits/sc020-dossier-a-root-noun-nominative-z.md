@@ -104,6 +104,12 @@ whose final sibilant is the root-final `s`, not a separate audible ending) with
 Verner-voiced `z` only in the oblique (`*gunzaz`). Second, for 'flea' Kroonen's
 reconstruction (`*flauhō-`) disagrees at the level of **stem class** with
 Orel's root-noun `*flauxz`; ON fló, OE flēah are compatible with both.
+Kluge/Seebold s.v. *Floh* (p. 304, printed page confirmed against the PDF
+page labels) add a **third** stem-class analysis, masculine a-stem
+`*flauha-`, whose nom. sg. `*flauhaz` would have lost `-z` with the
+unstressed a-stem endings (SC020) rather than with the root nouns; the
+attested forms are compatible with all three analyses, and the selected
+input remains Orel's `*flauxz` (pre-push adjudication, this programme).
 
 ### 3.3 Ringe (2017), *From Proto-Indo-European to Proto-Germanic*, 2nd edn.
 

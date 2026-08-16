@@ -22,11 +22,16 @@ This word carries a genuine stem-class dispute, not merely a notational one.
 Orel reconstructs a root noun with his class-wide explicit nominative marker,
 `*flauxz` 'flea' [@Orel2003, 105]. Kroonen instead reconstructs an ō-stem
 [`*flauhō-`]{.iv lang=pgmc sort=flauho role=comparison_form} 'flea', with no `-z` at any layer of the analysis
-[@Kroonen2013, 145]. The attested forms do not decide the question: Old
+[@Kroonen2013, 145]. Kluge and Seebold offer yet a third analysis, a
+masculine a-stem [`*flauha-`]{.iv lang=pgmc sort=flauha role=comparison_form} 'flea'
+[@KlugeSeebold2011, 304], whose nominative singular `*flauhaz` would have
+carried its `-z` in an unstressed syllable and lost it under the West
+Germanic unstressed loss rather than with the root nouns. The attested
+forms do not decide the question: Old
 English [flēah]{.ex} 'flea' and Old Norse [fló]{.ex} 'flea' are compatible with
-both reconstructions. This is a case where reputable sources disagree about
-the morphological class itself, and the disagreement is documented here
-rather than silently normalized away.
+all three reconstructions. This is a case where reputable sources disagree
+about the morphological class itself, and the disagreement is documented
+here rather than silently normalized away.
 
 The selected input [fláuxz]{.iv .recon lang=pgmc sort=flauxz role=selected_input} 'flea' adopts Orel's root-noun
 analysis with its morphologically explicit nominative marker. Under
