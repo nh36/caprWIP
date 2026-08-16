@@ -90,15 +90,15 @@ ADJUDICATION: dict[str, dict] = {
     "SC003": {
         "proposed_canonical_name": "WGmcRhotacism",
         "proposed_hist_stage": "wgmc", "proposed_hist_scope": "pan_wgmc",
-        "supported_earlier_relations": "final-*z* deletion (Crist: rhotacism follows WGmc *z-deletion; implemented via context-scoping to non-final, not ordering; B)",
+        "supported_earlier_relations": "final-*z* losses (Crist2002 §6; R/T vol.2 p.87: rhotacism at the end of the z-loss sequence; enforced by cascade ordering — EAFRhotacism composed after MonosyllabicFinalZLoss; B)",
         "supported_later_relations": "SC044 OEBreaking (terminus ante quem, lexical A: liznojana>liornian, mizdai>meorde)",
         "confidence": "A",
         "name_status": "wrong", "position_status": "partly_right",
         "granularity_status": "one_historical_change",
         "required_action": "rename_only",
-        "existing_capr_sources": "reader 003-west-germanic-rhotacism.md; change_reports/full/003; R/T pp.52,98,102; Crist2001 pp.104-106, Crist2002 pp.1,4; Hogg p.37",
+        "existing_capr_sources": "reader 003-west-germanic-rhotacism.md; change_reports/full/003; R/T pp.52,87,98,102; Crist2001 pp.104-106, Crist2002 pp.1,4; Hogg p.37",
         "source_agreement_or_conflict": "agreement (reader+registry both: WGmc, not PGmc); FST name is the sole legacy error",
-        "open_questions": "Implementation broader than intervocalic (retains medial VzC); exact relation to SC020 final-z (bleeding via scoping) to confirm in SC020 audit",
+        "open_questions": "Implementation broader than intervocalic (retains medial VzC); relation to the final-z rules now enforced by genuine cascade ordering (2026 rhotacism-position correction)",
     },
     "SC004": {
         "proposed_canonical_name": "",  # defer until split decided
@@ -267,7 +267,7 @@ def build_rows() -> list[dict[str, str]]:
         if adj is None:
             raise ValueError(f"no adjudication encoded for {sc}")
         foma = s.get("fst_identifier", "")
-        cascade_pos = pos.get(foma, "pre-pipeline (EarlyGermanicConsonantPipeline)")
+        cascade_pos = pos.get(foma, "pre-pipeline (support rule)")
         row = {
             "sc_id": sc,
             "current_foma_identifier": foma,

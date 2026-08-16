@@ -29,11 +29,12 @@ ORDER_MANIFEST = SC_DIR / "cascade_baseline/cascade_order_manifest.tsv"
 
 _DEFINE_RE = re.compile(r"define\s+([A-Za-z][A-Za-z0-9_]*)")
 
-# The single documented reader-facing SC whose principal Foma rule is composed
-# outside the EnglishProtoToOE pipeline (it lives in EarlyGermanicConsonantPipeline). The
-# handover flags SC003 rhotacism as "audit separately", explicitly outside the
-# stage blocks, so its absence from the pipeline manifest is expected.
-STAGING_RULES_OUTSIDE_PIPELINE = {"SC003": "EAFRhotacism"}
+# Every documented reader-facing SC's principal Foma rule is now composed
+# inside the EnglishProtoToOE pipeline manifest. SC003 rhotacism, formerly in
+# EarlyGermanicConsonantPipeline, was moved after MonosyllabicFinalZLoss (2026
+# rhotacism-position correction: R/T vol.2 p.87; Crist 2002 §6), so no rule is
+# expected to be absent from the manifest.
+STAGING_RULES_OUTSIDE_PIPELINE: dict[str, str] = {}
 
 
 def _load_module(name: str, path: Path):
