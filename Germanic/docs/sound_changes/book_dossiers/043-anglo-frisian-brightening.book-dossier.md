@@ -50,7 +50,7 @@ define AngloFrisianBrighteningStressed [
     {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
 define AngloFrisianBrighteningLongFinal [
-    {*ā} -> {*ǣ} || _ .#.
+    {*ā} -> {*ǣ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 define AngloFrisianBrightening [
     AngloFrisianBrighteningUnstressed .o.
@@ -62,6 +62,8 @@ define AngloFrisianBrightening [
 This is mostly a straightforward formalization of the handbook rule, but two caveats matter.
 
 First, the **unstressed clause** is more model-explicit than many short textbook descriptions, though the literature dossier notes that Hogg gives support for extending first fronting into the unstressed system. Second, the **long-final clause** is best read as a formal approximation used to preserve a historically motivated chain across SC042 and later unstressed-long-vowel shortening. In other words, the rule is historically serious, but the exact shape of the FOMA definition is tuned to how this cascade represents intermediate states rather than to a single line in any one handbook.
+
+**Long-final clause narrowing (corpus-maturation pass 01).** The clause was introduced solely for the surviving-bimoric pathway — unstressed final `*-ā` (from `*-ō`) in polysyllables [@RingeTaylor2014, §3.1 pp. 58–59; §6.8.3 pp. 299–300] — but its original context `_ .#.` was broader than that intent and wrongly captured the long `ā` of stressed monosyllables created by SC097 monosyllabic final `*-z` loss. The decisive case is OE *hwā* 'who': Ringe & Taylor derive "PGmc *hwaz > PWGmc *hwaz > OE, OF hwā" with the back vowel intact [@RingeTaylor2014, p. 86]; Campbell states flatly that "the form with West Gmc. lengthening (OE *hwǣ) does not exist" [@Campbell1959, §125, p. 49]; Brunner concurs that no `æ`/`ē` forms occur beside *hwā* [@SieversBrunner1965, §137 Anm. 1, p. 129]. The clause now requires a preceding nucleus (the same "preceded by another nucleus" guard used by `PWGmcSurvivingBimoricOUnrounding`), restricting it to exactly the polysyllabic surviving-bimoric class the sources describe. Validated: all 380 legacy corpus outputs unchanged; `*xwáz` now yields *hwā*. See `audits/corpus-maturation-01-candidate-adjudication.md` §1.
 
 ## 5. Place in the cascade
 
