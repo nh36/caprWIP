@@ -9520,8 +9520,8 @@ the j-present branch actually reflected in Old English.
 ## loam — OE _lām_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lam@\iventry{lām}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laima@\iventry{*láimą}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!laimon@\iventry{*laimōn}{}}
+\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!laima~01@\iventry{*láimą}{transp.}}
 
 Derivation: citation reconstruction _\*laimōn_; form followed here _\*láimą_ > _lām_ (early analogy).
 
@@ -9704,7 +9704,7 @@ feminine formation reflected in Old English.
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!naefla@\iventry{næfla}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nafola@\iventry{nafola}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nablo@\iventry{*nablô}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!nabulo@\iventry{*nábulô}{}}
+\index[iv]{05pwgmc@\ivlangheader{Proto-West Germanic}{}!nabulo@\iventry{*nábulô}{}}
 
 Derivation: citation reconstruction _\*nablô_; form followed here _\*nábulô_ > _nafola_ (early analogy).
 
@@ -9759,7 +9759,7 @@ Kroonen instead gives a nasal-suffix navel formation with Old English [_nafela_]
 among its reflexes [@Kroonen2013, 420], while Ringe and Taylor give the
 derivational pathway [nabulō]{.recon} 'navel' > [næbula]{.recon} 'navel' > _nafola_ 'navel' [@RingeTaylor2014, 270]. The
 difference is one of stage and notation rather than of lexeme identity: the
-derivational input [nábulô]{.iv .recon lang=pgmc sort=nabulo role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:25:1"} ‘navel’ is the pre-syncope form needed for the Old English
+derivational input [nábulô]{.iv .recon lang=pwgmc sort=nabulo role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:25:1"} ‘navel’ is the pre-syncope form needed for the Old English
 development.
 
 For the Old English comparison, the crucial point is simply that the pre-OE form
@@ -9795,7 +9795,7 @@ the pre-syncope input and from the later OE spellings.
 | Formation / stage | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | syncopated comparative headword | [_\*nablô_]{.iv lang=pgmc sort=nablo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60:1"} | reduced _næfla_-type outcome rather than [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60:2"} 'navel' | not the Old English form here | useful citation form, but too reduced for the pathway modeled here |
-| selected pre-syncope input | [_\*nábulô_]{.iv lang=pgmc sort=nabulo role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61:1"} | regular output: [_nafola_]{.iv lang=oe sort=nafola role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61:2"} 'navel' | [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61:3"} 'navel' | exact match between derivational input and target |
+| selected pre-syncope input | [_\*nábulô_]{.iv lang=pwgmc sort=nabulo role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61:1"} | regular output: [_nafola_]{.iv lang=oe sort=nafola role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61:2"} 'navel' | [_nafola_]{.iv lang=oe sort=nafola role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:61:3"} 'navel' | exact match between derivational input and target |
 | later OE reduction stages | same lexical history | attested [_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62:1"} 'navel'; Corpus [_nabula_]{.iv lang=oe sort=nabula role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62:2"} 'navel' | [_nafela_]{.iv lang=oe sort=nafela role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62:3"} 'navel' / [_nabula_]{.iv lang=oe sort=nabula role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:62:4"} 'navel' | related OE spellings, but not the chosen comparator |
 
 ## neck — OE _hnecca_
@@ -10355,7 +10355,7 @@ its rejected competitors.
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sparian@\iventry{sparian}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparena@\iventry{*sparēną}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparojana@\iventry{*spárōjaną}{}}
+\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!sparojana~01@\iventry{*spárōjaną}{transp.}}
 
 Derivation: citation reconstruction _\*sparēną_; form followed here _\*spárōjaną_ > _sparian_ (early analogy).
 
@@ -10414,7 +10414,7 @@ Kroonen keeps the inherited verb under class-III [_\*sparēn-_]{.iv lang=pgmc so
 [@Kroonen2013, 465]. Orel similarly preserves [sparēnan]{.iv .recon lang=pgmc sort=sparenan source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:22:1"} ‘spare’ [@Orel2003, 362]. Ringe
 and Taylor, however, reconstruct [sparai-]{.iv .recon lang=preoe sort=sparai role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23:1"} ~ [sparja-]{.iv .recon lang=preoe sort=sparja role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23:2"} for the English branch
 and derive the citation verb from a class-II line [@RingeTaylor2014, 162, 191].
-The derivational input [spárōjaną]{.iv .recon lang=pgmc sort=sparojana source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25:1"} ‘spare’ therefore represents the refashioned class-II
+The derivational input [spárōjaną]{.iv .recon lang=preoe variety=transponent sort=sparojana source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25:1"} ‘spare’ therefore represents the refashioned class-II
 formation behind Old English [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:26" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:26:1"} 'spare', while the citation reconstruction
 [sparēną]{.iv .recon lang=pgmc sort=sparena source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:27:1"} ‘spare’ remains the inherited comparative headword.
 
@@ -10431,7 +10431,7 @@ formation, not alternative headwords of equal status.
 
 ### Development to Old English
 
-Once the class-II formation [spárōjaną]{.iv .recon lang=pgmc sort=sparojana source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42:1"} ‘spare’ is chosen, the remaining development is
+Once the class-II formation [spárōjaną]{.iv .recon lang=preoe variety=transponent sort=sparojana source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42:1"} ‘spare’ is chosen, the remaining development is
 regular. The regular derivation shows brightening, restoration of _a_ before the
 back vocalism of the suffix, later i-mutation within the weak ending, weak-tail
 reduction, and contraction to [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:45:1"} 'spare'. By contrast, Brunner's rule against
@@ -10448,7 +10448,7 @@ with the refashioned class-II one that yields the citation verb.
 | inherited class-III infinitive | [_\*spárēną_]{.iv lang=pgmc sort=sparena source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56:1"} | paradigm comparison / probe output: [_sparen_]{.iv lang=oe sort=sparen source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56:2"} | [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56:3"} 'spare' | wrong class and wrong ending for the citation verb |
 | inherited class-III imperative singular | [spárē]{.recon} | paradigm comparison / probe output: [_spære_]{.iv lang=oe sort=spaere source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57:1"} | Ritual [_spær_]{.iv lang=oe sort=spaer source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:57:2"} 'spare' | loss of final _-e_ is not regular, so the relic form cannot control the entry |
 | inherited class-III finite present | [spárēθi]{.recon} | paradigm comparison / probe output: [_spæreþ_]{.iv lang=oe sort=spaereth source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58:1"} | [_spearad_]{.iv lang=oe sort=spearad source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:58:2"} 'spare' | attested form is mixed, not a direct continuation of the inherited cell |
-| selected class-II formation | [_\*spárōjaną_]{.iv lang=pgmc sort=sparojana source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59:1"} | documented regular output: [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59:2"} 'spare' | [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59:3"} 'spare' | exact match between derivational input and Old English citation form |
+| selected class-II formation | [_\*spárōjaną_]{.iv lang=preoe variety=transponent sort=sparojana source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59:1"} | documented regular output: [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59:2"} 'spare' | [_sparian_]{.iv lang=oe sort=sparian source_ref="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59:3"} 'spare' | exact match between derivational input and Old English citation form |
 
 ## staff — OE _stæf_
 
@@ -10786,9 +10786,9 @@ selected inflected cell.
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!aerende@\iventry{ærende}{}}
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thusend@\iventry{þūsend}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@\iventry{*θūs-èndi}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusendi@\iventry{*θūsèndi}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusundi@\iventry{*θūs-undī}{}}
+\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!thusendi~01@\iventry{*θūs-èndi}{transp.}}
+\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!thusendi~01@\iventry{*θūsèndi}{transp.}}
 
 Derivation: citation reconstruction _\*θūs-undī_; form followed here _\*θūs-èndi_ > _þūsend_ (early analogy).
 
@@ -10839,7 +10839,7 @@ Old English form: _þūsend_
 
 Kroonen reconstructs the Germanic numeral as [_\*þūsundī-_]{.iv lang=pgmc sort=thusundi role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:21:1"} and cites Old
 English [_þūsend_]{.iv lang=oe sort=thusend role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:22:1"} 'thousand' among its continuations [@Kroonen2013, 554]. The
-derivational input [θūs-èndi]{.iv .recon lang=pgmc sort=thusendi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23:1"} ‘thousand’ is not the same claim. It is an OE-oriented
+derivational input [θūs-èndi]{.iv .recon lang=preoe variety=transponent sort=thusendi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23:1"} ‘thousand’ is not the same claim. It is an OE-oriented
 transponent with the second-member vowel already resolved to _e_ and the final
 high vowel already shortened for apocope.
 
@@ -10872,7 +10872,7 @@ arguing that Old English _e_ in this weak position may simply write schwa and so
 need not prove a unique _ærende_ 'message'-type analogy [@GermanicSlavicBaltic2025,
 §2.1.4].
 
-The selected transponent [θūs-èndi]{.iv .recon lang=pgmc sort=thusendi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56:1"} ‘thousand’ captures the OE-side state from which
+The selected transponent [θūs-èndi]{.iv .recon lang=preoe variety=transponent sort=thusendi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56:1"} ‘thousand’ captures the OE-side state from which
 the regular derivation reaches [_þūsend_]{.iv lang=oe sort=thusend role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:57:1"} 'thousand'.
 
 ### Stage comparison
@@ -10884,7 +10884,7 @@ interpretive account of the second-syllable vowel.
 | :--- | :--- | :--- | :--- |
 | surviving _-ī_ with ordinary double umlaut | [_\*þūsundī-_]{.iv lang=pgmc sort=thusundi role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66:1"} treated as still umlaut-active in OE | would point toward [_\*þȳsend_]{.iv lang=oe sort=thysend role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:66:2"} | excluded by preserved _ū_ |
 | early loss of the trigger without further reshaping | _\*þūsund-_ type | explains _ū_, but not why OE alone has medial _e_ | incomplete account |
-| selected OE-oriented transponent | [_\*θūs-èndi_]{.iv lang=pgmc sort=thusendi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68:1"} | regular output: [_þūsend_]{.iv lang=oe sort=thusend role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68:2"} 'thousand' | selected modeling input |
+| selected OE-oriented transponent | [_\*θūs-èndi_]{.iv lang=preoe variety=transponent sort=thusendi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68:1"} | regular output: [_þūsend_]{.iv lang=oe sort=thusend role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68:2"} 'thousand' | selected modeling input |
 
 ## timber — OE _timber_
 
@@ -11449,8 +11449,8 @@ the Old English-facing formation that actually yields the attested noun.
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!weorold@\iventry{weorold}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraaldiz@\iventry{*wíra-àldiz}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@\iventry{*wír-àldu}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu@\iventry{*wíràldu}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu~01@\iventry{*wír-àldu}{transp.}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wiraldu~01@\iventry{*wíràldu}{transp.}}
 
 Derivation: citation reconstruction _\*wíra-àldiz_; form followed here _\*wír-àldu_ > _weorold_ (early analogy).
 
@@ -11509,7 +11509,7 @@ reconstruct the older _i_-vocalism, while Ringe and Taylor discuss the lowered f
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English _weorold_ 'world'
 [@KlugeSeebold2011, 981].
 
-The derivational input [wír-àldu]{.iv .recon lang=pgmc sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28:1"} ‘world’ therefore combines the older _\*wir-_ vowel of the comparative headword with
+The derivational input [wír-àldu]{.iv .recon lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28:1"} ‘world’ therefore combines the older _\*wir-_ vowel of the comparative headword with
 the early shift of the compound into the ō-stems that Ringe and
 Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
@@ -11550,14 +11550,14 @@ OE-facing stage chosen for the derivation.
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:67:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
 | literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:5"} 'world' | explains the older comparative literature cited for the word |
-| Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69:2"} 'world' | exact match for the West Saxon form used here |
+| Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69:2"} 'world' | exact match for the West Saxon form used here |
 | broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
 
 ## youth — OE _ġeoguþ_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geoguth@\iventry{ġeoguþ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunth@\iventry{*júgunθ}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!jugunthiz@\iventry{*júgunθiz}{}}
+\index[iv]{05pwgmc@\ivlangheader{Proto-West Germanic}{}!jugunth@\iventry{*júgunθ}{}}
 
 Derivation: citation reconstruction _\*júgunθiz_; form followed here _\*júgunθ_ > _ġeoguþ_ (early analogy).
 
@@ -11612,7 +11612,7 @@ Old English form: _ġeoguþ_
 The wider etymological tradition reconstructs an earlier form of the word as
 [_\*ju(w)unþi-_]{.iv lang=pgmc sort=juwunthi role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:22:1"}. The comparative label
 [júgunθiz]{.iv .recon lang=pgmc sort=jugunthiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:23:1"} 'youth' already stands at a later Germanic stage with _g_, and the
-derivational input [júgunθ]{.iv .recon lang=pgmc sort=jugunth role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:24:1"} 'youth' is later again: it represents the form after final
+derivational input [júgunθ]{.iv .recon lang=pwgmc sort=jugunth role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:24:1"} 'youth' is later again: it represents the form after final
 _-i_ has been lost.
 
 Ringe and Taylor explicitly give the sequence
@@ -11636,7 +11636,7 @@ The decisive early step is the loss of final _-i_ before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 _y_-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From the derivational input [júgunθ]{.iv .recon lang=pgmc sort=jugunth role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:48" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:48:1"} 'youth', the later development is regular: palatal
+From the derivational input [júgunθ]{.iv .recon lang=pwgmc sort=jugunth role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:48" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:48:1"} 'youth', the later development is regular: palatal
 fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
 [jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
 [jéoguθ]{.recon} 'youth', which surfaces as [_ġeoguþ_]{.iv lang=oe sort=geoguth role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:51:1"} 'youth'. Campbell preserves _u_ after accented _u_ in forms such
@@ -11653,7 +11653,7 @@ from the later stages relevant to the Old English noun.
 | :--- | :--- | :--- | :--- |
 | earlier etymological headword | [_\*ju(w)unþi-_]{.iv lang=pgmc sort=juwunthi role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:63:1"} | comparative family background | older comparative reconstruction of the lexeme |
 | later g-bearing comparative label | [_\*júgunθiz_]{.iv lang=pgmc sort=jugunthiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:64:1"} | citation reconstruction / lexeme label | preserves the later Germanic stage behind the selected entry |
-| Old English-facing input | [_\*júgunθ_]{.iv lang=pgmc sort=jugunth role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65:1"} | regular output: [_ġeoguþ_]{.iv lang=oe sort=geoguth role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65:2"} | exact match for the Old English form used here |
+| Old English-facing input | [_\*júgunθ_]{.iv lang=pwgmc sort=jugunth role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65:1"} | regular output: [_ġeoguþ_]{.iv lang=oe sort=geoguth role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:65:2"} | exact match for the Old English form used here |
 | full _-i_ stage retained too long | [_\*jugunþi_]{.iv lang=pgmc sort=jugunthi role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:66" occ_id="Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:66:1"} | expected over-umlauted _y_-type result | negative control showing why early _-i_ loss must precede the OE umlaut stage |
 
 \clearpage
