@@ -1057,7 +1057,7 @@ def run_corpus_lints() -> None:
     # Canonical book Markdown sources, derived from the actual build architecture.
     # The canonical build assembles:
     #   - capr_book_intro_alpha_01.md (Part 0 / Introduction)
-    #   - reader_facing_local_section_19.md (Part I), assembled from:
+    #   - reader_facing_local_section_20.md (Part I), assembled from:
     #       * individual chapter files from the build script's chapter_files list
     #       * chapter intro files (chap*-*.md)
     #   - lexical_volume_alpha_01.md (Part II), assembled from model entries
@@ -1066,7 +1066,7 @@ def run_corpus_lints() -> None:
     # file and line-number diagnostics point to the canonical edit locations.
 
     reader_facing_root = ROOT / "docs" / "sound_changes" / "reader_facing"
-    build_script = reader_facing_root / "build_reader_facing_local_section_19_docker.sh"
+    build_script = reader_facing_root / "build_reader_facing_local_section_20_docker.sh"
 
     source_paths: list[Path] = []
 
@@ -2256,7 +2256,7 @@ def run_recon_iv_index_display_check() -> None:
 
     source_paths = [
         TOOLS_DIR.parent / "docs" / "assembly" / "capr_book_intro_alpha_01.md",
-        TOOLS_DIR.parent / "docs" / "sound_changes" / "reader_facing" / "reader_facing_local_section_19.md",
+        TOOLS_DIR.parent / "docs" / "sound_changes" / "reader_facing" / "reader_facing_local_section_20.md",
         *sorted((TOOLS_DIR.parent / "docs" / "lexeme_reports" / "model_entries").glob("*.model.md")),
     ]
 

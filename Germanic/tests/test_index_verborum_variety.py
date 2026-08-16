@@ -493,24 +493,16 @@ class RealCorpusInvariantTests(unittest.TestCase):
             "print_excluded_occurrences": 88,
         }
         POST_ANNOTATION = {
-            # stem's proto-input *stámnaz surfaced (+1 occurrence) after the stale
-            # full-trace snapshot was regenerated: stem moved exact_match -> mismatch,
-            # matching the frozen baseline's 8 documented mismatches. Orthogonal to
-            # the rename migration (gate B: outputs_sha256 unchanged).
-            #
-            # unique counts are -1 vs the earlier snapshot because heaven's *hebun
-            # carried a duplicate chronological label (pgmc in the model entry vs
-            # pwgmc in reader-facing section 19); dating both to one stage merges
-            # them into a single headword.
-            #
-            # Occurrence totals are -2 vs the earlier snapshot: the SC021
-            # reader-facing chapter was rewritten for the "unwitnessed" adjudication
-            # (SC021 fires on 0 rows once heaven starts from *xébun), dropping a
-            # repeated *heofon span and the Old Saxon *heban comparative form.
-            "production_occurrences": 2362,
-            "production_unique_forms": 1159,
-            "print_main_occurrences": 2274,
-            "unique_printed_entries": 1077,
+            # +23 occurrences / +14 unique forms vs the pre-z-split snapshot: the
+            # SC020 final-z chapter was split three ways (SC096 RootNounNomZLoss,
+            # SC020 EAFFinalZDeletion, SC097 MonosyllabicFinalZLoss) in reader-facing
+            # section 20, and four model entries were added for the root-noun
+            # witnesses (book, flea, goose, louse), each contributing indexed
+            # protoform/target/evidence spans plus lexical-heading injections.
+            "production_occurrences": 2385,
+            "production_unique_forms": 1173,
+            "print_main_occurrences": 2297,
+            "unique_printed_entries": 1087,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -901,13 +893,13 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bo = self._rows("index_verborum_book_occurrences.tsv")
         be = self._rows("index_verborum_book_emissions.tsv")
 
-        self.assertEqual(len(pm), 2274)
+        self.assertEqual(len(pm), 2297)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
-        self.assertEqual(source_not_in_book, 233)
+        self.assertEqual(source_not_in_book, 229)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2041)
-        self.assertEqual(len(be), 1874)
+        self.assertEqual(len(bo), 2068)
+        self.assertEqual(len(be), 1897)
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
         self.assertEqual(
@@ -951,15 +943,15 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bu = self._rows("index_verborum_book_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
 
-        self.assertEqual(len(pm), 2274, "corpus occurrence count")
-        source_not_in_book = 2274 - 2041
+        self.assertEqual(len(pm), 2297, "corpus occurrence count")
+        source_not_in_book = 2297 - 2068
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
-        self.assertEqual(len(be), 1874, "book emission count")
-        # -1 unique vs the pre-mn-adjudication snapshot: heaven's *hebun was labelled
-        # pgmc in the model entry but pwgmc in reader-facing section 19 (a duplicate
-        # chronological label). Dating both to pwgmc merges them into one headword.
-        self.assertEqual(len(pu), 1077, "unique corpus entries")
-        self.assertEqual(len(bu), 845, "unique book entries")
+        self.assertEqual(len(be), 1897, "book emission count")
+        # +10 corpus / +14 book unique entries vs the pre-z-split snapshot: the
+        # three-way SC020 split (SC096/SC020/SC097) and the four new root-noun
+        # model entries (book, flea, goose, louse) introduce new indexed headwords.
+        self.assertEqual(len(pu), 1087, "unique corpus entries")
+        self.assertEqual(len(bu), 859, "unique book entries")
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)
@@ -984,7 +976,7 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(variety_labelled_unique, 34, "variety-labelled unique book entries")
 
         printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
-        self.assertEqual(printable_explicit, 1423, "printable explicit occurrences")
+        self.assertEqual(printable_explicit, 1438, "printable explicit occurrences")
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

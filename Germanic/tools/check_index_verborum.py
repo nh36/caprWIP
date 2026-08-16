@@ -873,7 +873,7 @@ def assert_broad_prose_buckets() -> None:
     # The compound form is retained in the table row at a different line.
 
     reader_pairs = parse_audit_bucket_pairs("Reader-facing examples quarantined (separate example index policy)")
-    reader_source = "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:"
+    reader_source = "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:"
     for form in {"*bacan", "*fúrxtīnaz", "ġeoc"}:
         assert any(item_form == form and source_ref.startswith(reader_source) for item_form, source_ref in reader_pairs)
 

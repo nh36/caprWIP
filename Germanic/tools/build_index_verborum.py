@@ -31,7 +31,7 @@ INTRO_PATH = ASSEMBLY_DIR / "capr_book_intro_alpha_01.md"
 README_PATH = BOOK_DIR / "index_verborum_README.md"
 MANIFEST_PATH = ASSEMBLY_DIR / "manifest_all_by_class.tsv"
 COMPACT_PATH = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
-CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md"
+CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md"
 MODEL_ENTRIES_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 FORMS_PATH = BOOK_DIR / "index_verborum_forms.tsv"
 PRINT_MAIN_PATH = BOOK_DIR / "index_verborum_print_main.tsv"
@@ -3613,7 +3613,7 @@ def guess_unresolved_category(candidate: CandidateOccurrence) -> str:
         return "likely_false_positive"
     if candidate.heading.startswith("### Old English evidence"):
         return "likely_oe"
-    if candidate.source_path.endswith("reader_facing_local_section_19.md"):
+    if candidate.source_path.endswith("reader_facing_local_section_20.md"):
         return "likely_preoe" if form.startswith("*") else "likely_oe"
     if form.startswith("*"):
         return "likely_pgmc"
