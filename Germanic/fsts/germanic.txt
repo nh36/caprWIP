@@ -1218,18 +1218,26 @@ define EAFFinalZLoss EAFFinalZDeletion;
 # shape (friend lost *-z by SC020, not here — memo §5). GUARD: if a
 # future corpus row presents a monosyllabic C+z form at the head of the
 # pipeline that is NOT a consonant-stem nominative, the proxy breaks
-# and this rule must be re-scoped.
+# and this rule must be re-scoped. The firing population is pinned
+# fail-closed to book/flea/goose/louse by
+# tests/test_final_z_firing_populations.py: any fifth firing (or any
+# new TSV protoform matching the proxy environment) fails the suite
+# and forces historical adjudication.
 define RootNounNomZLoss [{*z} -> 0 || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.];
 
 # SC097: northern WGmc loss of word-final *-z in stressed monosyllables,
 # with compensatory lengthening of a short nucleus (R/T 2014: 86-87:
-# *maiz > mā, *hwaz > hwā, *kūz > cū; OHG rhotacizes instead — ir, wir,
-# mēr). Post-PWGmc, northern WGmc/Ingvaeonic scope (Dossier C). ZERO
+# *hwaz > hwā, *maiz > mā — mā only via later ai-monophthongization;
+# R/T print cow's history with question marks, so kū is NOT used as a
+# principal control. OHG rhotacizes instead — ir, wir, mēr). Post-PWGmc,
+# northern WGmc/Ingvaeonic scope (Dossier C). ZERO
 # selected witnesses in the OE baseline (the corpus selects oblique
 # cells for cow/night/breast/meed), so this rule fires on no OE-baseline
 # input; it is carried as a genuine but unwitnessed historical change,
-# validated by synthetic unit examples. Bimoric nuclei (long vowels,
-# diphthongs) lose *-z without further lengthening.
+# validated by synthetic unit controls (*hwaz > *hwā, *hiz > *hī with
+# compensatory lengthening; *maiz > *mai with the bimoric nucleus
+# preserved — see test_final_z_firing_populations.py). Bimoric nuclei
+# (long vowels, diphthongs) lose *-z without further lengthening.
 define MonosyllabicFinalZLoss [
     {*a} -> {*ā}, {*á} -> {*ā},
     {*e} -> {*ē}, {*é} -> {*ḗ},
