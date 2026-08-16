@@ -34,6 +34,16 @@ _DEFAULT_VARIETY_REGISTRY = REPO_ROOT / "Germanic/docs/book/index_verborum_varie
 
 BOOL_VALUES = {"0", "1"}
 
+# Sentinel "language" for cross-stage varieties: a variety whose registry row
+# declares language==CROSS_STAGE_LANGUAGE may attach to ANY reconstructed base
+# stage (rather than a single language). Used for the `transponent` variety,
+# a selected PROTOFORM that is a deliberate transducer input spanning stages.
+CROSS_STAGE_LANGUAGE = "recon"
+# Reconstructed base stages a cross-stage variety is permitted to attach to.
+# Kept fail-closed: a cross-stage variety on e.g. `oe` or a comparison language
+# is still rejected.
+RECONSTRUCTED_STAGES = {"pie", "pgmc", "pnwgmc", "pwgmc", "nsgmc", "paf", "preoe"}
+
 # Separator used only inside the hidden MakeIndex sort field to attach a
 # per-variety discriminator. It is deliberately a character that can never
 # appear in a scholarly sort key (which is [a-z0-9] only), which is what makes
@@ -142,10 +152,17 @@ class VarietyRegistry:
                 f"(e.g. 'ws' is a taxonomy parent; ordinary West Saxon stays unmarked)"
             )
         if entry.language != language:
-            raise ValueError(
-                f"Variety {variety!r} belongs to language {entry.language!r}, "
-                f"not {language!r}"
-            )
+            if entry.language == CROSS_STAGE_LANGUAGE:
+                if language not in RECONSTRUCTED_STAGES:
+                    raise ValueError(
+                        f"Cross-stage variety {variety!r} may only attach to a "
+                        f"reconstructed stage {sorted(RECONSTRUCTED_STAGES)}, not {language!r}"
+                    )
+            else:
+                raise ValueError(
+                    f"Variety {variety!r} belongs to language {entry.language!r}, "
+                    f"not {language!r}"
+                )
 
 
 def load_variety_registry(path: Path | None = None) -> VarietyRegistry:
@@ -195,7 +212,8 @@ def _validate_variety_rows(rows: list[dict[str, str]]) -> VarietyRegistry:
         suppress = suppress_raw == "1"
 
         if active and language not in known_languages:
-            raise ValueError(f"Variety {code!r}: unknown active language {language!r}")
+            if language != CROSS_STAGE_LANGUAGE:
+                raise ValueError(f"Variety {code!r}: unknown active language {language!r}")
         if assignable and not active:
             raise ValueError(f"Variety {code!r}: assignable variety must be active")
         # An assignable variety must be visibly printable: it needs a real label

@@ -11,7 +11,6 @@ ASSEMBLY_DIR = Path(__file__).resolve().parent
 REPO_ROOT = ASSEMBLY_DIR.parents[2]
 MODEL_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 TRACE_REPORT = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
-# Canonical historical-stage declaration for reconstructed PROTO/PROTOFORM forms,
 # Historical-stage sidecar for reconstructed selected inputs, keyed by row_id.
 # Lives with the corpus data (upstream of assembly) because it encodes scholarly
 # historical judgments, not assembly output.
@@ -26,33 +25,36 @@ STAGE_METADATA_PATH = REPO_ROOT / "Germanic/data/entry_stage_metadata.tsv"
 
 
 def load_stage_metadata() -> dict[str, dict[str, str]]:
-    """row_id -> {protoform_stage} for the PROTOFORM != PROTO exception rows."""
+    """row_id -> {protoform_stage, protoform_variety} for the PROTOFORM != PROTO exception rows."""
     with STAGE_METADATA_PATH.open(encoding="utf-8") as handle:
         return {
             row["row_id"].strip(): {
                 "protoform_stage": (row.get("protoform_stage") or "").strip(),
+                "protoform_variety": (row.get("protoform_variety") or "").strip(),
             }
             for row in csv.DictReader(handle, delimiter="\t")
         }
 
 
-def resolve_stages(row_id: str, proto: str, protoform: str, sidecar: dict[str, dict[str, str]]) -> tuple[str, str, list[str]]:
-    """Resolve (proto_stage, protoform_stage) under the CAPR convention.
+def resolve_stages(row_id: str, proto: str, protoform: str, sidecar: dict[str, dict[str, str]]) -> tuple[str, str, str, list[str]]:
+    """Resolve (proto_stage, protoform_stage, protoform_variety) under the CAPR convention.
 
     proto_stage is always pgmc (PROTO is the PGmc lexeme reconstruction). When
     PROTOFORM == PROTO, protoform_stage is pgmc by convention. When they differ,
     protoform_stage must come from an explicit sidecar decision; a missing entry
-    is reported (fail closed), never defaulted to pgmc.
+    is reported (fail closed), never defaulted to pgmc. protoform_variety is a
+    separate orthogonal axis (e.g. 'transponent') and is blank unless the sidecar
+    declares one; equality rows never carry a variety.
     """
     notes: list[str] = []
     proto_stage = "pgmc"
     if (proto or "").strip() and (proto or "").strip() == (protoform or "").strip():
-        return proto_stage, "pgmc", notes
+        return proto_stage, "pgmc", "", notes
     entry = sidecar.get(str(row_id))
     if entry and entry.get("protoform_stage"):
-        return proto_stage, entry["protoform_stage"], notes
+        return proto_stage, entry["protoform_stage"], entry.get("protoform_variety", ""), notes
     notes.append("PROTOFORM != PROTO but no explicit stage decision (unresolved)")
-    return proto_stage, "", notes
+    return proto_stage, "", "", notes
 
 
 REQUIRED_METADATA = ("PROTO", "PROTOFORM", "COUNTERPART", "DERIVATION_CLASS")
@@ -79,6 +81,7 @@ MANIFEST_COLUMNS = [
     "proto_stage",
     "protoform",
     "protoform_stage",
+    "protoform_variety",
     "derivation_class",
     "class_bucket",
     "section_title",
@@ -300,7 +303,7 @@ def main() -> None:
         if trace_status != "confident":
             notes.append(f"trace match {trace_status}")
 
-        proto_stage, protoform_stage, stage_notes = resolve_stages(
+        proto_stage, protoform_stage, protoform_variety, stage_notes = resolve_stages(
             str(model["row_id"]),
             model["metadata"].get("PROTO", ""),
             model["metadata"].get("PROTOFORM", ""),
@@ -318,6 +321,7 @@ def main() -> None:
             "proto_stage": proto_stage,
             "protoform": model["metadata"].get("PROTOFORM", ""),
             "protoform_stage": protoform_stage,
+            "protoform_variety": protoform_variety,
             "derivation_class": raw_class,
             "class_bucket": bucket,
             "section_title": model["section_title"],

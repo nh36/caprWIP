@@ -6,3 +6,4 @@ oe	angl	Anglian	Angl.		4	0	1	1
 oe	merc	Mercian	Merc.	angl	5	0	1	1	
 oe	north	Northumbrian	North.	angl	6	0	1	1	
 oe	kent	Kentish	Kent.		7	0	1	1	
+recon	transponent	Model transponent	transp.		1	0	1	1	Cross-stage model-input variety: a selected PROTOFORM whose form is a deliberate transducer input (e.g. older vowel + later morphology) rather than a claim about a single historical stage. Attaches to any reconstructed base stage.

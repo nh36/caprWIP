@@ -1248,128 +1248,6 @@ def table_form_mentions_from_path(path: Path, *, allow_non_model_entry: bool = F
     return mentions
 
 
-def manifest_rows_by_model_entry_path() -> dict[str, dict[str, str]]:
-    return {row["model_entry_path"]: row for row in parse_manifest_rows() if row.get("model_entry_path")}
-
-
-def entry_target_forms(entry_row: dict[str, str] | None) -> set[str]:
-    if not entry_row:
-        return set()
-    counterpart = (entry_row.get("counterpart") or "").strip()
-    if not counterpart:
-        return set()
-    forms = {counterpart}
-    if entry_row.get("derivation_class") == "reconstructed_oe":
-        forms.add(f"*{counterpart}")
-    return forms
-
-
-def contains_phrase(text: str, phrases: tuple[str, ...]) -> bool:
-    return any(phrase in text for phrase in phrases)
-
-
-def explicit_language_hints(text: str) -> set[str]:
-    hints: set[str] = set()
-    lowered = text.casefold()
-    full_patterns = [
-        (r"\bold norse\b", "on"),
-        (r"\bold saxon\b", "os"),
-        (r"\bold high german\b", "ohg"),
-        (r"\bold frisian\b|\bofri\b|\bofris\b", "ofris"),
-        (r"\bgothic\b", "goth"),
-        (r"\bold dutch\b", "odutch"),
-        (r"\bmiddle dutch\b", "mdutch"),
-        (r"\bdutch\b", "dutch"),
-        (r"\bgerman\b", "german"),
-        (r"\bmodern english\b", "modeng"),
-        (r"\bmiddle english\b", "me"),
-        (r"\bold irish\b", "oirish"),
-        (r"\bold english\b|\bwest saxon\b|\banglian\b|\bnorthumbrian\b|\bmercian\b|\bkentish\b", "oe"),
-        (r"\bproto-germanic\b", "pgmc"),
-        (r"\bproto-west germanic\b|\bproto-west-germanic\b", "pwgmc"),
-        (r"\bproto-northwest germanic\b|\bproto-northwest-germanic\b", "pnwgmc"),
-        (r"\bproto-anglo-frisian\b|\bproto-anglofrisian\b", "paf"),
-        (r"\bnorthern west germanic\b", "nsgmc"),
-        (r"\bproto-indo-european\b|\bproto-indo-european\b|\bpie\b", "pie"),
-        (
-            r"\b(?:intermediate pre-oe stage|intermediate pre-old-english stage|"
-            r"later hardening stage|pre-oe stage|pre-old-english stage|"
-            r"model-internal stage|same derivation)\b",
-            "preoe",
-        ),
-    ]
-    for pattern, code in full_patterns:
-        if re.search(pattern, lowered):
-            hints.add(code)
-    code_patterns = [
-        (r"(?<![A-Za-z])OE(?![A-Za-z])", "oe"),
-        (r"(?<![A-Za-z])ON(?![A-Za-z])", "on"),
-        (r"(?<![A-Za-z])OS(?![A-Za-z])", "os"),
-        (r"(?<![A-Za-z])OHG(?![A-Za-z])", "ohg"),
-        (r"(?<![A-Za-z])OFri(?:s)?(?![A-Za-z])", "ofris"),
-        (r"(?<![A-Za-z])Goth(?![A-Za-z])", "goth"),
-        (r"(?<![A-Za-z])PGmc(?![A-Za-z])", "pgmc"),
-        (r"(?<![A-Za-z])PWGmc(?![A-Za-z])", "pwgmc"),
-        (r"(?<![A-Za-z])PNWGmc(?![A-Za-z])", "pnwgmc"),
-        (r"(?<![A-Za-z])NWGmc(?![A-Za-z])", "pnwgmc"),
-        (r"(?<![A-Za-z])PAF(?![A-Za-z])", "paf"),
-        (r"(?<![A-Za-z])PIE(?![A-Za-z])", "pie"),
-    ]
-    for pattern, code in code_patterns:
-        if re.search(pattern, text):
-            hints.add(code)
-    return hints
-
-
-def infer_table_semantic_language(
-    mention: TableFormMention,
-    role: str,
-    target_forms: set[str],
-) -> tuple[str, bool]:
-    row_text = mention.row_text
-    cell_text = mention.cell_text
-    hints = explicit_language_hints(cell_text) | explicit_language_hints(row_text)
-    non_oe_hints = hints - {"oe"}
-    if mention.form in target_forms:
-        return "oe", True
-    if mention.form.startswith("*"):
-        if role in {"selected_input", "source_protoform"}:
-            if "preoe" in hints:
-                return "preoe", True
-            if len(non_oe_hints) == 1:
-                return next(iter(non_oe_hints)), True
-            if len(non_oe_hints) > 1:
-                return "", False
-            # No explicit stage hint: fail closed. Do not silently default to pgmc.
-            # The mention will be queued for manual review in suggestions.
-            return "", False
-        if role == "comparison_form":
-            if "preoe" in hints:
-                return "preoe", True
-            if len(non_oe_hints) == 1:
-                return next(iter(non_oe_hints)), True
-            if len(non_oe_hints) > 1:
-                return "", False
-            # No explicit stage hint: fail closed. Do not silently default to pgmc.
-            return "", False
-        if role in {"target_form", "regular_output"}:
-            return "", False
-    if role in {"target_form", "regular_output"}:
-        if len(non_oe_hints) == 0:
-            return "oe", True
-    if role == "comparison_form":
-        if len(non_oe_hints) == 1:
-            return next(iter(non_oe_hints)), True
-        if len(non_oe_hints) > 1:
-            return "", False
-        if mention.cell_kind in {"comparison", "output"} and len(hints - {"oe"}) == 0:
-            return "oe", True
-        if mention.form in target_forms:
-            return "oe", True
-        return "oe", False
-    return "", False
-
-
 def collect_table_semantic_results(
     production_rows: list[ProductionOccurrence],
 ) -> dict[str, list[dict[str, str]]]:
@@ -1481,8 +1359,11 @@ def collect_table_semantic_results(
                 language, confident_language = infer_table_semantic_language(mention, role, target_forms)
                 if not language:
                     if role == "comparison_form" and mention.form.startswith("*"):
-                        # No explicit stage hint: fail closed. Do not silently default to pgmc.
-                        language = "preoe" if caution_intermediate else ""
+                        # No explicit stage hint: fail closed. Do not silently
+                        # default to pgmc OR preoe. A negative/caution phrase is
+                        # not positive evidence for any stage; leave unresolved
+                        # so the mention is queued for manual review.
+                        language = ""
                     else:
                         key = (mention.form, mention.source_ref, role, "suggest")
                         if key not in seen_suggest:
@@ -2571,7 +2452,6 @@ def infer_table_semantic_language(
     target_forms: set[str],
     *,
     derivation_class: str = "",
-    caution_intermediate: bool = False,
 ) -> tuple[str, bool]:
     row_text = mention.row_text
     cell_text = mention.cell_text
@@ -2583,8 +2463,8 @@ def infer_table_semantic_language(
     non_oe_hints = hints - {"oe"}
     if mention.form.startswith("*"):
         if role in {"selected_input", "source_protoform", "comparison_form"}:
-            if "preoe" in hints or caution_intermediate:
-                return "preoe", "preoe" in hints
+            if "preoe" in hints:
+                return "preoe", True
             if len(non_oe_hints) == 1:
                 return next(iter(non_oe_hints)), True
             if len(non_oe_hints) > 1:
@@ -2596,8 +2476,8 @@ def infer_table_semantic_language(
         if role in {"target_form", "regular_output"}:
             if derivation_class == "reconstructed_oe" and mention.form in target_forms:
                 return "oe", True
-            if "preoe" in hints or caution_intermediate:
-                return "preoe", "preoe" in hints
+            if "preoe" in hints:
+                return "preoe", True
             if len(non_oe_hints) == 1:
                 return next(iter(non_oe_hints)), True
             if len(non_oe_hints) > 1:
@@ -2627,196 +2507,6 @@ def infer_table_semantic_language(
     return "", False
 
 
-def classify_table_semantic_mentions(
-    production_rows: list[ProductionOccurrence],
-) -> dict[str, list[dict[str, str]]]:
-    production_pairs = {(row.form, row.source_ref) for row in production_rows}
-    manifest_map = manifest_rows_by_model_entry_path()
-    auto_rows: list[dict[str, str]] = []
-    suggestions: list[dict[str, str]] = []
-    ignored: list[dict[str, str]] = []
-    notation: list[dict[str, str]] = []
-    seen_auto: set[tuple[str, str, str, str]] = set()
-    seen_suggest: set[tuple[str, str, str, str]] = set()
-    seen_ignored: set[tuple[str, str]] = set()
-    seen_notation: set[tuple[str, str]] = set()
-
-    for path in sorted(MODEL_ENTRIES_DIR.glob("*.model.md")):
-        source_path = relative_source_path(path)
-        entry_row = manifest_map.get(source_path)
-        target_forms = entry_target_forms(entry_row)
-        derivation_class = (entry_row or {}).get("derivation_class", "")
-        for mention in table_form_mentions_from_path(path):
-            pair = (mention.form, mention.source_ref)
-            if pair in production_pairs:
-                continue
-            notation_reason = notation_or_metadata_reason(mention.form)
-            if notation_reason:
-                if pair not in seen_notation:
-                    seen_notation.add(pair)
-                    notation.append(
-                        {
-                            "source_ref": mention.source_ref,
-                            "nearest_heading": mention.heading,
-                            "row_label": mention.row_label,
-                            "form": mention.form,
-                            "display": mention.form,
-                            "suggested_language": "",
-                            "suggested_role": "",
-                            "confidence": "ignore",
-                            "reason": notation_reason,
-                            "context": mention.line_text,
-                        }
-                    )
-                continue
-            if mention.form.casefold() in TABLE_STOPWORDS or candidate_category(mention.form) != "needs_review":
-                if pair not in seen_ignored:
-                    seen_ignored.add(pair)
-                    ignored.append(
-                        {
-                            "source_ref": mention.source_ref,
-                            "nearest_heading": mention.heading,
-                            "row_label": mention.row_label,
-                            "form": mention.form,
-                            "display": mention.form,
-                            "suggested_language": "",
-                            "suggested_role": "",
-                            "confidence": "ignore",
-                            "reason": "table stopword or fragment",
-                            "context": mention.line_text,
-                        }
-                    )
-                continue
-
-            semantic_text = normalize_semantic_text(
-                " | ".join([mention.heading, mention.row_label, mention.row_text, mention.cell_header, mention.cell_text])
-            )
-            is_selected = contains_phrase(semantic_text, TABLE_SELECTED_PHRASES)
-            is_source = contains_phrase(semantic_text, TABLE_SOURCE_PHRASES)
-            is_output = contains_phrase(semantic_text, TABLE_OUTPUT_PHRASES)
-            is_comparison = contains_phrase(semantic_text, TABLE_COMPARISON_PHRASES)
-            is_negative = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
-            is_target = contains_phrase(semantic_text, TABLE_TARGET_PHRASES)
-            caution_intermediate = contains_phrase(semantic_text, TABLE_NEGATIVE_PHRASES)
-
-            role_candidates: list[tuple[str, str]] = []
-            if mention.cell_kind == "input":
-                if is_selected and not is_negative:
-                    role_candidates.append(("selected_input", "selected-input row"))
-                elif is_source:
-                    role_candidates.append(("source_protoform", "source-protoform row"))
-                elif is_comparison or is_negative:
-                    role_candidates.append(("comparison_form", "comparison/negative row"))
-            elif mention.cell_kind == "output":
-                if is_output:
-                    role_candidates.append(("regular_output", "output row"))
-                    if mention.form in target_forms or is_target:
-                        role_candidates.append(("target_form", "output matches target"))
-                elif mention.form in target_forms and is_target:
-                    role_candidates.append(("target_form", "explicit target row"))
-                elif is_comparison or is_source or is_negative:
-                    role_candidates.append(("comparison_form", "output used as comparison"))
-            elif mention.cell_kind == "comparison":
-                if mention.form in target_forms and (is_target or is_output or is_selected):
-                    role_candidates.append(("target_form", "comparison cell matches target"))
-                elif is_comparison or is_source or is_negative or is_output:
-                    role_candidates.append(("comparison_form", "comparison cell"))
-            elif mention.cell_kind == "form":
-                if mention.form in target_forms and (is_target or is_selected or is_output):
-                    role_candidates.append(("target_form", "form row target"))
-                    if is_output:
-                        role_candidates.append(("regular_output", "form row regular output"))
-                elif mention.form.startswith("*") and is_selected and not is_negative:
-                    role_candidates.append(("selected_input", "selected form row"))
-                elif mention.form.startswith("*") and is_source:
-                    role_candidates.append(("source_protoform", "source form row"))
-                elif is_comparison or is_negative or is_source:
-                    role_candidates.append(("comparison_form", "comparison form row"))
-
-            for role, reason in role_candidates:
-                language, confident_language = infer_table_semantic_language(
-                    mention,
-                    role,
-                    target_forms,
-                    derivation_class=derivation_class,
-                    caution_intermediate=caution_intermediate,
-                )
-                if not language:
-                    if role == "comparison_form":
-                        # No explicit stage hint: fail closed. Do not silently default to pgmc.
-                        language = "" if mention.form.startswith("*") else ""
-                    if not language:
-                        key = (mention.form, mention.source_ref, role, "suggest")
-                        if key not in seen_suggest:
-                            seen_suggest.add(key)
-                            suggestions.append(
-                                {
-                                    "source_ref": mention.source_ref,
-                                    "nearest_heading": mention.heading,
-                                    "row_label": mention.row_label,
-                                    "form": mention.form,
-                                    "display": mention.form,
-                                    "suggested_language": "",
-                                    "suggested_role": role,
-                                    "confidence": "suggest",
-                                    "reason": f"{reason}; language unclear",
-                                    "context": mention.line_text,
-                                }
-                            )
-                        continue
-                confidence = "auto"
-                if role == "comparison_form" and (mention.cell_kind == "form" and not mention.form.startswith("*") and not confident_language):
-                    confidence = "suggest"
-                if role == "comparison_form" and is_negative:
-                    confidence = "suggest"
-                if mention.form.startswith("*") and role == "comparison_form" and not confident_language:
-                    confidence = "suggest"
-                if caution_intermediate and mention.form.startswith("*"):
-                    confidence = "suggest"
-                if confidence == "auto":
-                    key = (language, mention.form, role, mention.source_ref)
-                    if key not in seen_auto:
-                        seen_auto.add(key)
-                        auto_rows.append(
-                            {
-                                "language": language,
-                                "form": mention.form,
-                                "display": mention.form,
-                                "sort_key": transliterate_sort_key(mention.form),
-                                "form_role": role,
-                                "source_scope": TABLE_SEMANTIC_SOURCE_SCOPE,
-                                "source_ref": mention.source_ref,
-                                "origin": TABLE_SEMANTIC_ORIGIN,
-                                "status": "auto",
-                            }
-                        )
-                else:
-                    key = (mention.form, mention.source_ref, role, "suggest")
-                    if key not in seen_suggest:
-                        seen_suggest.add(key)
-                        suggestions.append(
-                            {
-                                "source_ref": mention.source_ref,
-                                "nearest_heading": mention.heading,
-                                "row_label": mention.row_label,
-                                "form": mention.form,
-                                "display": mention.form,
-                                "suggested_language": language,
-                                "suggested_role": role,
-                                "confidence": "suggest",
-                                "reason": reason,
-                                "context": mention.line_text,
-                            }
-                        )
-
-    return {
-        "auto_rows": auto_rows,
-        "suggestions": suggestions,
-        "ignored": ignored,
-        "notation": notation,
-        "suggest_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in suggestions],
-        "ignore_pairs": [{"form": row["form"], "source_ref": row["source_ref"]} for row in ignored],
-    }
 def is_already_indexed_nearby(
     candidate: CandidateOccurrence,
     by_source: dict[str, list[tuple[str, int, str]]],
@@ -2899,7 +2589,7 @@ def build_production_rows(
         ref = heading_ref(row["lexical_item"], row["counterpart"], row["derivation_class"])
         oe_display = oe_target_display(row["counterpart"], row["derivation_class"])
         add_production(store, language="oe", form=row["counterpart"], display=oe_display, form_role="target_form", source_scope="lexical_heading", source_ref=ref, origin="manifest")
-        add_production(store, language=require_reconstructed_stage(row.get("protoform_stage", ""), form=row["protoform"], scope="lexical_protoform", source_ref=ref), form=row["protoform"], form_role="source_protoform", source_scope="lexical_protoform", source_ref=ref, origin="manifest")
+        add_production(store, language=require_reconstructed_stage(row.get("protoform_stage", ""), form=row["protoform"], scope="lexical_protoform", source_ref=ref), variety=(row.get("protoform_variety") or "").strip(), form=row["protoform"], form_role="source_protoform", source_scope="lexical_protoform", source_ref=ref, origin="manifest")
         if row["proto"] and row["proto"] != row["protoform"]:
             add_production(store, language=require_reconstructed_stage(row.get("proto_stage", ""), form=row["proto"], scope="lexical_proto", source_ref=ref), form=row["proto"], form_role="source_protoform", source_scope="lexical_proto", source_ref=ref, origin="manifest")
 
@@ -2937,12 +2627,27 @@ def build_production_rows(
                     source_ref=ref,
                 )
             else:
-                # Corpus selected input with no model entry: this is the Proto-Germanic
-                # reconstruction heading its derivation. Any *post*-PGmc selected input
-                # must declare PROTOFORM_STAGE in a model entry (handled by the branch
-                # above), so this is the affirmed PGmc corpus stage, not a silent
-                # reconstruction->pgmc coercion.
-                stage = "pgmc"
+                # Corpus selected input with no model entry. Under the CAPR
+                # convention PROTO is always the Proto-Germanic reconstruction,
+                # so this is legitimately pgmc ONLY when the selected input IS
+                # that PROTO (modulo stress-accent / compound-hyphen encoding).
+                # A genuinely different (post-PGmc) selected input with no model
+                # entry and no stage decision must NOT be silently coerced to
+                # pgmc — fail closed instead (protoform-stage architecture).
+                proto_head = str(entry.get("proto", "")).strip()
+                proto_input = str(entry["proto_input"]).strip()
+                same_as_proto = bool(proto_head) and (
+                    transliterate_sort_key(proto_head) == transliterate_sort_key(proto_input)
+                )
+                if same_as_proto or not proto_head:
+                    stage = "pgmc"
+                else:
+                    raise SystemExit(
+                        f"protoform-stage architecture: selected input {proto_input!r} "
+                        f"differs from PROTO {proto_head!r} for {entry['title']!r} but has "
+                        f"no model entry and no sidecar stage decision; refusing to default "
+                        f"to pgmc. Add a model entry / entry_stage_metadata.tsv decision."
+                    )
             add_production(store, language=stage, form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
 
     for row in explicit_tag_occurrences():
