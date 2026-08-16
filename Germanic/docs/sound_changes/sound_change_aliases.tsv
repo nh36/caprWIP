@@ -504,3 +504,9 @@ SC095	Old English Surface	Old English Surface	trace_label		Germanic/docs/debug_s
 SC095	Old English Surface	OldEnglishSurface	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC095	Old English Surface	OldEnglishSurface	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
 SC095	Old English Surface	Old English Surface	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC096	Root-noun nominative *-z* loss	RootNounNomZLoss	foma_rule_name	underlying germanic.txt define (working placeholder pending global rename)	Germanic/fsts/germanic.txt
+SC096	Root-noun nominative *-z* loss	SRootNounNomZLoss	sandbox_stage_name	sandbox stage SRootNounNomZLoss	Germanic/fsts/old_english_sandbox.txt
+SC096	Root-noun nominative *-z* loss	RootNounNomZLoss	trace_label	oe_full_trace_report.py stage label	Germanic/tools/oe_full_trace_report.py
+SC097	Northern West Germanic monosyllabic final *z*-loss	MonosyllabicFinalZLoss	foma_rule_name	underlying germanic.txt define (working placeholder pending global rename)	Germanic/fsts/germanic.txt
+SC097	Northern West Germanic monosyllabic final *z*-loss	SMonosyllabicFinalZLoss	sandbox_stage_name	sandbox stage SMonosyllabicFinalZLoss	Germanic/fsts/old_english_sandbox.txt
+SC097	Northern West Germanic monosyllabic final *z*-loss	MonosyllabicFinalZLoss	trace_label	oe_full_trace_report.py stage label	Germanic/tools/oe_full_trace_report.py

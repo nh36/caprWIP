@@ -40,8 +40,11 @@ class InventoryStageTests(unittest.TestCase):
         self.assertNotIn("Proto-Germanic", self.inv["SC003"]["display_name"])
 
     def test_sc020_final_z_is_west_germanic_not_pgmc(self):
-        # Crist2002 §5; Campbell p.166; Hogg p.37; Kilday2024.
-        self.assertEqual(self.inv["SC020"]["historical_stage"], "West Germanic")
+        # Crist2002 §5; Campbell p.166; Hogg p.37; Kilday2024 place the loss in
+        # West Germanic, not Proto-Germanic; Dossier B (2026 three-rule split,
+        # sc020-three-rule-adjudication.md) fixes the stage more precisely as
+        # Proto-West Germanic (R/T 2014 pp.44-45, 212).
+        self.assertEqual(self.inv["SC020"]["historical_stage"], "Proto-West Germanic")
         self.assertNotEqual(self.inv["SC020"]["display_name"], "PGmc Final Z Deletion")
         self.assertIn("West Germanic", self.inv["SC020"]["display_name"])
 
