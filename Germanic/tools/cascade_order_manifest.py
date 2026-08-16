@@ -108,19 +108,26 @@ def build_manifest(fst_path: Path) -> list[dict[str, str]]:
     pipeline_body = _extract_block_body(text, "EnglishProtoToOE", "(", ")")
     pipeline_members = _composition_members(pipeline_body)
 
-    if not pipeline_members or pipeline_members[0] != "EarlyEnglishLineChanges":
+    # SC096 RootNounNomZLoss is composed at the head of EnglishProtoToOE,
+    # before EarlyEnglishLineChanges (it must precede PWGmcIjContraction).
+    # Emit any such head rules in order, then expand EarlyEnglishLineChanges.
+    if "EarlyEnglishLineChanges" not in pipeline_members:
         raise ValueError(
-            "expected EnglishProtoToOE to begin with EarlyEnglishLineChanges; "
-            f"got {pipeline_members[:1]!r}"
+            "expected EnglishProtoToOE to contain EarlyEnglishLineChanges; "
+            f"got {pipeline_members[:3]!r}"
         )
+    block_index = pipeline_members.index("EarlyEnglishLineChanges")
 
     rows: list[dict[str, str]] = []
     position = 0
-    # Expand EarlyEnglishLineChanges in place of its reference at the head of the pipeline.
+    for ident in pipeline_members[:block_index]:
+        position += 1
+        rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "EnglishProtoToOE"})
+    # Expand EarlyEnglishLineChanges in place of its reference in the pipeline.
     for ident in pwgmc_members:
         position += 1
         rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "EarlyEnglishLineChanges"})
-    for ident in pipeline_members[1:]:
+    for ident in pipeline_members[block_index + 1:]:
         position += 1
         rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "EnglishProtoToOE"})
     return rows

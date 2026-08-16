@@ -111,11 +111,15 @@ class OrderManifestTests(unittest.TestCase):
 
     def test_manifest_begins_with_pwgmc_block(self):
         pwgmc = [r for r in self.rows if r["origin_block"] == "EarlyEnglishLineChanges"]
-        # The EarlyEnglishLineChanges block is expanded at the head of the pipeline, so its
-        # members must occupy the first contiguous positions.
-        head = self.rows[: len(pwgmc)]
+        # SC096 RootNounNomZLoss is composed at the very head of the pipeline
+        # (it must precede PWGmcIjContraction, which creates monosyllabic
+        # *fríundz from *fríjōndz); the EarlyEnglishLineChanges block is
+        # expanded immediately after it, occupying contiguous positions.
+        self.assertEqual(self.rows[0]["foma_identifier"], "RootNounNomZLoss",
+                         "RootNounNomZLoss must lead the executable order")
+        head = self.rows[1: 1 + len(pwgmc)]
         self.assertTrue(all(r["origin_block"] == "EarlyEnglishLineChanges" for r in head),
-                        "EarlyEnglishLineChanges members must lead the executable order")
+                        "EarlyEnglishLineChanges members must follow RootNounNomZLoss contiguously")
 
     def test_required_local_dependencies_hold_in_current_order(self):
         """Baseline sanity: the demonstrated local dependencies hold in the
@@ -124,12 +128,23 @@ class OrderManifestTests(unittest.TestCase):
         SC005 PNWGmcAToUBeforeM < SC017 PNWGmcULowering
         SC010 PWGmcJGemination < SC011 PWGmcSyllabicJ
         SC019 PNWGmcFinalLongORaising < SC020 EAFFinalZDeletion (final-*z* deletion)
+        SC096 RootNounNomZLoss < PWGmcIjContraction (friend must reach SC096
+            uncontracted/polysyllabic so its *-z falls under SC020, not SC096)
+        SC020 EAFFinalZDeletion < SC097 MonosyllabicFinalZLoss (chronology:
+            PWGmc unstressed loss precedes the later northern monosyllabic loss)
+        SC018/SC019 raisers < SC097 MonosyllabicFinalZLoss (English-doculect
+            *-ōz forms must not be exposed to final/monosyllabic ō-raising
+            by premature z-loss)
         """
         pos = {r["foma_identifier"]: int(r["position"]) for r in self.rows}
         pairs = [
             ("PNWGmcAToUBeforeM", "PNWGmcULowering"),
             ("PWGmcJGemination", "PWGmcSyllabicJ"),
             ("PNWGmcFinalLongORaising", "EAFFinalZDeletion"),
+            ("RootNounNomZLoss", "PWGmcIjContraction"),
+            ("EAFFinalZDeletion", "MonosyllabicFinalZLoss"),
+            ("PNWGmcStressedMonosyllableORaising", "MonosyllabicFinalZLoss"),
+            ("PNWGmcFinalLongORaising", "MonosyllabicFinalZLoss"),
         ]
         for earlier, later in pairs:
             self.assertIn(earlier, pos, f"{earlier} missing from manifest")

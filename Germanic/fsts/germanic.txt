@@ -1166,8 +1166,80 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 # must run BEFORE this rule so that pre-existing word-final *-ō
 # (nom.sg. *gebō etc.) raises while *-ōz (sheltered by *-z) does not.
 # That ordering is enforced in OldEnglishCore (see below).
-define EAFFinalZDeletion [{*z} -> 0 || _ .#.];
+#
+# THREE-RULE DECOMPOSITION (2026, SC020 audit): the former unconditional
+# body ({*z} -> 0 || _ .#.) conflated three historically distinct
+# developments. It is now split into:
+#   SC096 RootNounNomZLoss        — consonant-stem nominative *-z loss
+#                                   (pre-PWGmc; monosyllabic C+z proxy)
+#   SC020 EAFFinalZDeletion       — PWGmc loss of final *-z in unstressed
+#                                   syllables (this rule, narrowed to
+#                                   polysyllables; R/T §3.1.1 pp.44-45)
+#   SC097 MonosyllabicFinalZLoss  — later northern WGmc loss of *-z in
+#                                   stressed monosyllables, with
+#                                   compensatory lengthening (R/T §3.3.1
+#                                   pp.86-87; presently unwitnessed in the
+#                                   OE baseline)
+# The three environments partition all word-final *z inputs exactly; see
+# Germanic/docs/sound_changes/audits/sc020-three-rule-adjudication.md and
+# Dossiers A/B/C in the same directory. Identifier names are provisional
+# (global rename pass deferred).
+#
+# SC020 environment: word-final *z in an unstressed syllable. Two
+# implementable clauses:
+#   (i)  POLYSYLLABLE — two vowel nuclei separated by at least one
+#        consonant somewhere before the final *z (every polysyllabic
+#        final syllable in the corpus is post-stress);
+#   (ii) post-consonantal *z in a monosyllable. By this cascade point
+#        SC096 RootNounNomZLoss (composed at the head of
+#        EnglishProtoToOE, before PWGmcIjContraction) has already
+#        consumed the genuine root-noun nominatives, so the only forms
+#        reaching clause (ii) are monosyllables CREATED by contraction
+#        from historically polysyllabic inputs — in the corpus exactly
+#        friend *fríjōndz → *fríundz, whose final syllable was
+#        unstressed when this change applied (adjudication memo §5:
+#        friend/milk/month belong to SC020, per R/T 2014: 44 *fadurz).
+define EAFFinalZDeletion [{*z} -> 0 ||
+    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,
+    .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.];
 define EAFFinalZLoss EAFFinalZDeletion;
+
+# SC096: consonant-stem (root-noun) nominative *-z loss. Historically a
+# MORPHOLOGICAL development: the nom.sg. marker *-z was eliminated after
+# stem-final consonant in athematic consonant stems, complete before
+# PWGmc (R/T 2014: 118, 306, 313; Bammesberger 1990: 190-93; Dossier A).
+# The FST states it through the phonological proxy "word-final *z after
+# a consonant in a monosyllable", which in this corpus is exactly
+# coextensive with the morphological class (book *bōkz, flea *fláuxz,
+# goose *gánsz, louse *lūsz — 4 firings) PROVIDED the rule is composed
+# at the head of EnglishProtoToOE, BEFORE PWGmcIjContraction: the
+# contraction turns historically polysyllabic *fríjōndz into
+# monosyllabic *fríundz, which this rule must never see in contracted
+# shape (friend lost *-z by SC020, not here — memo §5). GUARD: if a
+# future corpus row presents a monosyllabic C+z form at the head of the
+# pipeline that is NOT a consonant-stem nominative, the proxy breaks
+# and this rule must be re-scoped.
+define RootNounNomZLoss [{*z} -> 0 || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.];
+
+# SC097: northern WGmc loss of word-final *-z in stressed monosyllables,
+# with compensatory lengthening of a short nucleus (R/T 2014: 86-87:
+# *maiz > mā, *hwaz > hwā, *kūz > cū; OHG rhotacizes instead — ir, wir,
+# mēr). Post-PWGmc, northern WGmc/Ingvaeonic scope (Dossier C). ZERO
+# selected witnesses in the OE baseline (the corpus selects oblique
+# cells for cow/night/breast/meed), so this rule fires on no OE-baseline
+# input; it is carried as a genuine but unwitnessed historical change,
+# validated by synthetic unit examples. Bimoric nuclei (long vowels,
+# diphthongs) lose *-z without further lengthening.
+define MonosyllabicFinalZLoss [
+    {*a} -> {*ā}, {*á} -> {*ā},
+    {*e} -> {*ē}, {*é} -> {*ḗ},
+    {*i} -> {*ī}, {*í} -> {*ḯ},
+    {*o} -> {*ō}, {*ó} -> {*ō},
+    {*u} -> {*ū}, {*ú} -> {*ū}
+        || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* _ {*z} .#.
+] .o. [
+    {*z} -> 0 || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ _ .#.
+];
 
 # PWGmc final bare-a loss (R/T §§3.1-3.4, §6.1-6.2).
 # Word-final *-a of **nom.sg. m.a-stem *-az** origin (via z-loss) was lost at
@@ -3104,7 +3176,15 @@ define OERMetathesis [
 # Note: pipeline order reflects FST composition dependencies, not strict chronology.
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE (
-    EarlyEnglishLineChanges
+    # SC096 root-noun nominative *-z loss (pre-PWGmc; Dossier A, memo
+    # §§5-6). Composed at the very head of the PGmc→OE pipeline: it must
+    # precede PWGmcIjContraction (inside EarlyEnglishLineChanges), which
+    # contracts historically polysyllabic *fríjōndz to monosyllabic
+    # *fríundz — friend must NOT meet this rule in contracted shape (its
+    # *-z fell by SC020). The early slot also matches the change's
+    # pre-PWGmc date.
+    RootNounNomZLoss
+    .o. EarlyEnglishLineChanges
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
     # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
@@ -3128,6 +3208,12 @@ define EnglishProtoToOE (
     # (the *-z satisfies its right-context consonant slot) and wrongly
     # lowers *-u → *-o. See DEV_NOTES §17.10.25.
     .o. EAFFinalZDeletion
+    # SC097 northern stressed-monosyllable *-z loss (post-PWGmc; Dossier
+    # C). MUST stay after the two ō-raisers: its z-loss exposes final
+    # vowels that the raisers must not see (e.g. English-doculect *kōz →
+    # *kō must not feed monosyllabic ō-raising). Unwitnessed in the OE
+    # baseline; fires on no selected OE input.
+    .o. MonosyllabicFinalZLoss
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
@@ -3306,7 +3392,11 @@ define EnglishAfterProtoInput EnglishProtoInput;
 define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
 define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
 define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EarlyGermanicConsonantPipeline;
-define EnglishAfterWestGermanic EnglishAfterConsonantRules .o. EarlyEnglishLineChanges;
+define EnglishAfterWestGermanic EnglishAfterConsonantRules
+    # SC096 root-noun nominative *-z loss: mirrors main pipeline (head of
+    # EnglishProtoToOE, before EarlyEnglishLineChanges/PWGmcIjContraction).
+    .o. RootNounNomZLoss
+    .o. EarlyEnglishLineChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
@@ -3319,6 +3409,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion
+    # SC097 northern stressed-monosyllable *-z loss: mirrors main pipeline.
+    .o. MonosyllabicFinalZLoss
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss

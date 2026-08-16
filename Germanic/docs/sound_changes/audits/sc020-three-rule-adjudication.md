@@ -120,7 +120,7 @@ omits on trivially-stressed monosyllables (`*bōkz`, `*lūsz`).
 | Rule | Historical environment | Implementable statement (Phase 3 designs the Foma) | Corpus domain |
 |---|---|---|---|
 | A (SC096) | nom.sg. marker `*-z` eliminated in consonant-final athematic stems (morphological, analogically enacted; Dossier A §7) | word-final `z` after a consonant in a monosyllable | 4 forms: `*bōkz`, `*fláuxz`, `*gánsz`, `*lūsz` |
-| B (SC020) | word-final `*z` in unstressed syllables, any preceding segment; `*z` only, never `*s` (R/T 2014: 44–45, 212) | word-final `z` in a polysyllable | 110 forms (see §5) |
+| B (SC020) | word-final `*z` in unstressed syllables, any preceding segment; `*z` only, never `*s` (R/T 2014: 44–45, 212) | word-final `z` in a polysyllable, plus word-final post-consonantal `z` in a monosyllable at corridor stage (catches only contraction-created `*fríundz`; genuine `-Cz#` monosyllables were already consumed by A upstream) | 110 forms (see §5) |
 | C (SC097) | word-final `*z` after vowel in a stressed monosyllable; loss + compensatory lengthening (R/T 2014: 86–87) | word-final `z` after a vowel in a monosyllable, with lengthening of a short nucleus | 0 forms |
 
 Two provisos, both recorded rather than hidden:
@@ -209,10 +209,17 @@ Historical (partial) order, from the dossiers:
 Chronological note on A vs. SC019: A precedes PWGmc, and SC019 is PNWGmc,
 so their true relative order is A-then-raising or overlapping; they share
 no inputs (A: `-Cz#`; SC019: `-ō#`), so cascade order between them is
-computationally free. Phase 3 should compose **A immediately before SC019**
-in `EnglishProtoToOE` (reflecting its earliness) or, acceptably, adjacent
-to SC020 with a comment; either satisfies the only hard constraints:
+computationally free with respect to SC019 itself. However, Phase 3
+implementation found a hard constraint elsewhere: `PWGmcIjContraction`
+(inside `EarlyEnglishLineChanges`) contracts historically polysyllabic
+`*fríjōndz` to monosyllabic `*fríundz`, and A's monosyllabic `-Cz#`
+environment would then wrongly consume friend (adjudicated to B in §5).
+A must therefore be composed **at the head of `EnglishProtoToOE`, before
+`EarlyEnglishLineChanges`** — which also best reflects A's pre-PWGmc
+date. The hard constraints are:
 
+- A before `PWGmcIjContraction` (so A sees friend in its uncontracted
+  polysyllabic shape and passes over it);
 - A before B (so book/flea/goose/louse are consumed by A, not B — though
   with the partitioned environments neither can capture the other's
   domain, order still encodes chronology);

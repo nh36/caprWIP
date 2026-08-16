@@ -31,11 +31,16 @@ define SGmSimplification SProtoInput
 define SRhotacism SGmSimplification
     .o. EAFRhotacism;
 
+# SC096 root-noun nominative *-z loss: head of EnglishProtoToOE in
+# germanic.txt (before EarlyEnglishLineChanges/PWGmcIjContraction).
+define SRootNounNomZLoss SRhotacism
+    .o. RootNounNomZLoss;
+
 # ============================================================================
 # Section 3: EarlyEnglishLineChanges bundle (split into individual sub-rules,
 #            in the order EarlyEnglishLineChanges composes them, lines 1672-1684)
 # ============================================================================
-define SPNWGmcUnstressedAiMonophthongization SRhotacism
+define SPNWGmcUnstressedAiMonophthongization SRootNounNomZLoss
     .o. PNWGmcUnstressedAiMonophthongization;
 define SPNWGmcAToUBeforeM SPNWGmcUnstressedAiMonophthongization
     .o. PNWGmcAToUBeforeM;
@@ -72,7 +77,9 @@ define SPNWGmcFinalLongORaising SPNWGmcStressedMonosyllableORaising
     .o. PNWGmcFinalLongORaising;
 define SEAFFinalZDeletion SPNWGmcFinalLongORaising
     .o. EAFFinalZDeletion;
-define SPNWGmcUnstressedORaising SEAFFinalZDeletion
+define SMonosyllabicFinalZLoss SEAFFinalZDeletion
+    .o. MonosyllabicFinalZLoss;
+define SPNWGmcUnstressedORaising SMonosyllabicFinalZLoss
     .o. PNWGmcUnstressedORaising;
 define SPNWGmcMnDissimilation SPNWGmcUnstressedORaising
     .o. PNWGmcMnDissimilation;
@@ -252,6 +259,10 @@ clear stack
 regex SRhotacism;
 save stack old_english_sandbox_after_rhotacism.bin
 
+clear stack
+regex SRootNounNomZLoss;
+save stack old_english_sandbox_after_root_noun_nom_z_loss.bin
+
 # Section 3: EarlyEnglishLineChanges bundle (split)
 clear stack
 regex SPNWGmcUnstressedAiMonophthongization;
@@ -317,6 +328,10 @@ save stack old_english_sandbox_after_pnwgmc_final_long_o_raising.bin
 clear stack
 regex SEAFFinalZDeletion;
 save stack old_english_sandbox_after_eaf_final_z_deletion.bin
+
+clear stack
+regex SMonosyllabicFinalZLoss;
+save stack old_english_sandbox_after_monosyllabic_final_z_loss.bin
 
 clear stack
 regex SPNWGmcUnstressedORaising;
