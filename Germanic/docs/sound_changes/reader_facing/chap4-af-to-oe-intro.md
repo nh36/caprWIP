@@ -1,20 +1,20 @@
-# Chapter 4. From Anglo-Frisian to Old English
+# Chapter 3. From Anglo-Frisian to Old English
 
 ## Historical interval
 
 This chapter covers the sound changes that occurred within the Old English period:
 the changes that produced attested Old English from the prehistoric English forms
 that emerged from the Anglo-Frisian stage. The starting point is the end of the
-Anglo-Frisian changes of Chapter 3; the ending point is attested West Saxon Old
+Anglo-Frisian changes of Chapter 2; the ending point is attested West Saxon Old
 English, the primary dialect of the CAPR corpus.
 
 ## Scope and dialect variation
 
 Not every change in this chapter has pan-Old-English scope. Some changes — most
-notably the West Saxon palatal-glide effects (SC016) and West Saxon palatal
-umlaut (SC060), the back-mutation rules (SC059), and the West Saxon diphthong
-chain (SC031–SC034) — are specifically West Saxon or more broadly southern Old
-English phenomena.
+notably West Saxon palatal umlaut (SC060), the back-mutation rules (SC059), and
+the West Saxon diphthong chain (SC031–SC034) — are specifically West Saxon or
+more broadly southern Old English phenomena. (The West Saxon palatal-glide
+effects, SC016, execute early in the cascade and are treated in Chapter 1.)
 
 The CAPR derivations target West Saxon Old English citation forms as the default
 comparator. Changes that belong to other dialects, or that are absent from West
@@ -31,8 +31,9 @@ The changes in this chapter fall into several natural historical subgroups,
 though the boundaries between them are not always sharp:
 
 Early Old English changes linked to the Anglo-Frisian inheritance:
-Changes that feed directly on, or are closely related to, the brightening of
-Chapter 3. The `*awj` glide formation (SC029), `*au` fronting (SC030), and
+Changes that feed directly on, or are closely related to, Anglo-Frisian
+brightening (SC043), whose section opens the vowel corridor of this chapter.
+The `*awj` glide formation (SC029), `*au` fronting (SC030), and
 the West Saxon diphthong chain (SC031–SC034) all operate on the vowel inventory
 shaped by Anglo-Frisian brightening. OE Breaking (SC044) and
 a-Restoration (SC046) similarly presuppose the fronted `*æ` input.
@@ -58,18 +59,18 @@ began to shift toward the more reduced profile of Middle English.
 
 ## Cascade positions and historical order
 
-The cascade positions of changes in this chapter broadly follow historical
-sequence within the Old English period. Some divergences exist and are documented
-in the individual sound-change sections:
+Chapters in this part of the book follow the executable cascade order, which
+models the reconstructed chronology, so every section in this chapter appears
+at its cascade position. A few rules presented here carry stage labels from
+earlier periods; their individual sections discuss the label and its history,
+and a later renaming pass will resolve the residue:
 
 * SC041 (PWGmc Final Bare-`*a` Loss) and SC042 (Surviving Bimoric `*ō`
-  Unrounding) appear late in the cascade but are assigned to Chapter 2
-  (Proto-West Germanic) for historical reasons; their sections appear there.
-* SC064 (NWGmc `*-n` Stem `*n` Loss) carries a Northwest Germanic label and is
-  assigned to Chapter 2 historically, but appears in the cascade after OE
-  High-Vowel Apocope (SC063). Its section cross-references this divergence.
-* SC049 (PGmc B Allophony) is assigned to Chapter 1 historically but appears
-  in the cascade here; its section cross-references Chapter 1.
+  Unrounding) carry Proto-West Germanic labels but execute in this stretch of
+  the cascade.
+* SC064 (NWGmc `*-n` Stem `*n` Loss) carries a Northwest Germanic label but
+  executes after OE High-Vowel Apocope (SC063).
+* SC049 (PGmc B Allophony) carries a Proto-Germanic label but executes here.
 
 ## Sources
 

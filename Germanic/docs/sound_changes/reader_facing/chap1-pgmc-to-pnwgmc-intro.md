@@ -1,5 +1,10 @@
 # Chapter 1. From Proto-Germanic to Proto-Northwest Germanic
 
+<!-- NOTE: This intro is not currently used by the part-one build. Chapters now
+follow contiguous executable-cascade intervals (see
+build_reader_facing_local_section_20_docker.sh), and no chapter currently opens
+at a Proto-Germanic-stage rule. Retained pending the renaming/retitling pass. -->
+
 ## Historical interval
 
 This chapter covers developments that took place within the Proto-Germanic

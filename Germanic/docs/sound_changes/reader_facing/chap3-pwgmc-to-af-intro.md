@@ -1,4 +1,4 @@
-# Chapter 3. From Proto-West Germanic to Anglo-Frisian
+# Chapter 2. From Proto-West Germanic to Anglo-Frisian
 
 ## Historical interval
 
@@ -72,7 +72,7 @@ seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest
 the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
 rules [@Crist2002, pp. 1, 4]. Earlier still, the consonant-stem root nouns
 had generalized endingless nominatives before Proto-West Germanic (SC096,
-Chapter 2). Later, and only in the north, `*z` was lost in stressed
+Chapter 1). Later, and only in the north, `*z` was lost in stressed
 monosyllables with compensatory lengthening (SC097, this chapter); the
 southern dialects instead retained and rhotacized it. The standard handbooks
 confirm the West Germanic deletion in general terms: Campbell notes that
@@ -100,7 +100,7 @@ dated node [@Versloot2017, pp. 281--324]. The resulting `*ā` is later fronted t
 `ǣ` in the relevant Old English environments.
 
 The CAPR rule is named `EAFAiMonophthongization` and executes at cascade
-position 25. That position is CAPR's operational home for a North Sea Germanic
+position 28. That position is CAPR's operational home for a North Sea Germanic
 areal change on the English line; it is a modelling choice, not a claim that the
 change passed through a discrete Proto-Anglo-Frisian node. The one usable
 chronological anchor is the `soul` derivation, which requires the
@@ -108,16 +108,19 @@ monophthongization to precede OE interstress raising (SC036).
 
 The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
 separate and earlier Proto-Northwest Germanic change (SC014), discussed in
-Chapter 2; its corpus witnesses are the dative-singular endings of `span`
+Chapter 1; its corpus witnesses are the dative-singular endings of `span`
 ([spánnai]{.recon} 'span' > *spanne* 'span') and `meed` ([mízdai]{.recon}
 'meed' > *meorde* 'meed').
 
-### Anglo-Frisian brightening (SC043)
+### Anglo-Frisian brightening (SC043, treated in Chapter 3)
 
 The fronting of low `*a` to `*æ` outside nasal environments is the defining
-Anglo-Frisian change and the central event of this chapter. Campbell gives the
-classical statement: "By a very early change Prim. Gmc. `a > æ` in OE and OFris.
-when not followed by a nasal consonant" [@Campbell1959, §§ 163--165].
+Anglo-Frisian change. It executes later in the cascade than the changes of
+this chapter, so its full section appears in Chapter 3; it is introduced here
+because it anchors the "Anglo-Frisian" label that names this period. Campbell
+gives the classical statement: "By a very early change Prim. Gmc. `a > æ` in
+OE and OFris. when not followed by a nasal consonant"
+[@Campbell1959, §§ 163--165].
 Hogg gives the most familiar modern label pair: "This vowel normally fronted
 to /ae/ by the sound change of Anglo-Frisian Brightening (or First Fronting)"
 [@Hogg1992, §5.8].
@@ -136,22 +139,23 @@ exact geographical scope.
 
 The current CAPR inventory has this change labeled "Old English" in the pipeline
 taxonomy (no separate Anglo-Frisian bucket previously existed). The historical
-staging map now places it in Chapter 3, correcting that provisional label.
+staging map places its section in Chapter 3, at its executable cascade position.
 
 ## Cascade vs. historical order in this chapter
 
-The changes in this chapter occur at scattered cascade positions — rhotacism
-at position 3, word-final `*z` deletion at 19–20, the new northern
-monosyllabic `*z`-loss beside it, ai-monophthongization at 25, brightening at
-43, and `*lþ`-voicing at 12. These cascade positions reflect computational
-dependencies, not historical sequence. The reader-facing book order in this
-chapter places rhotacism first (as the post-PWGmc WGmc change), then
-word-final `*z` deletion (SC020), then the later northern monosyllabic
-`*z`-loss (SC097) that completes the final-`*z` story, then Anglo-Frisian
-ai-monophthongization (SC004, the North Sea Germanic areal vowel change),
-then Anglo-Frisian brightening as the culminating change of the pre-OE
-period, and finally the northern West Germanic `*lþ`-voicing (SC012).
+The changes in this chapter are presented in the order in which they apply in
+the executable cascade, which models the reconstructed chronology itself: first
+word-final `*z` deletion in unstressed syllables (SC020), then the later
+northern monosyllabic `*z`-loss (SC097) that completes the final-`*z` story,
+then West Germanic rhotacism (SC003), which turns every surviving `*z` into
+`*r` only after the deletions have run their course. There follow the
+unstressed `*ō` raising (SC021), the `*mn` dissimilation and n-stem `*n`
+loss (SC022–SC023), the long-`*ē` developments (SC024–SC025), the
+nasal-spirant corridor (SC026–SC027) with preconsonantal `*x` loss (SC028),
+and finally Anglo-Frisian ai-monophthongization (SC004, the North Sea areal
+vowel change) closing the chapter.
 
-The divergence between cascade order and book order in this chapter is one of
-the clearest illustrations of the principle that FST dependency does not
-automatically equal historical sequence.
+Book order, cascade order, and reconstructed historical order coincide here:
+in particular, the deletions of final `*z` precede rhotacism both in the
+sources and in the executable derivation, so no form ever meets rhotacism
+with a word-final sibilant intact.

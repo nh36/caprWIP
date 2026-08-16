@@ -34,10 +34,9 @@ root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_20.md"
 coverage_out = root / "reader_facing_manifest_coverage_08.md"
 chapter_files = [
-    # ── Chapter 1: Proto-Germanic → Proto-Northwest Germanic ───────────────
-    "049-pgmc-b-allophony.md",
-    # ── Chapter 2: Proto-Northwest Germanic → Proto-West Germanic ──────────
+    # ── Chapter 1: executable positions 1–16 (PGmc/PNWGmc → PWGmc corridor) ─
     "096-root-noun-nominative-z-loss.md",
+    "014-015-opening-vowel-prelude.md",
     "005-unstressed-a-raising-before-final-m.md",
     "006-early-i-apocope.md",
     "007-final-o-lowering-before-r.md",
@@ -45,11 +44,16 @@ chapter_files = [
     "009-ij-contraction-in-friend.md",
     "010-west-germanic-j-gemination.md",
     "011-syllabic-j-after-final-vowel-loss.md",
+    "012-lth-voicing.md",
     "013-dental-hardening.md",
-    "014-015-opening-vowel-prelude.md",
+    "016-west-saxon-palatal-glide.md",
     "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
     "019-nwgmc-final-long-o-raising.md",
+    # ── Chapter 2: executable positions 17–28 (final-*z, rhotacism, NWGmc vowels) ─
+    "020-wgmc-final-z-deletion.md",
+    "097-monosyllabic-final-z-loss.md",
+    "003-west-germanic-rhotacism.md",
     "021-unstressed-o-raising.md",
     "022-mn-dissimilation.md",
     "023-n-stem-n-loss.md",
@@ -57,24 +61,19 @@ chapter_files = [
     "025-long-e-nasal-rounding.md",
     "026-027-nasal-spirant-changes.md",
     "028-preconsonantal-x-loss.md",
-    "041-final-bare-a-loss.md",
-    "042-surviving-bimoric-o-unrounding.md",
-    "050-pwgmc-sievers-law-syncope.md",
-    # ── Chapter 3: Proto-West Germanic → Anglo-Frisian ─────────────────────
-    "003-west-germanic-rhotacism.md",
-    "020-wgmc-final-z-deletion.md",
-    "097-monosyllabic-final-z-loss.md",
     "004-pwgmc-ai-monophthongization.md",
-    "043-anglo-frisian-brightening.md",
-    "012-lth-voicing.md",
-    # ── Chapter 4: Anglo-Frisian → Old English ─────────────────────────────
-    "016-west-saxon-palatal-glide.md",
+    # ── Chapter 3: executable positions 29–85 (Anglo-Frisian → Old English) ─
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",
     "039-040-medial-unstressed-vowel-changes.md",
+    "041-final-bare-a-loss.md",
+    "042-surviving-bimoric-o-unrounding.md",
+    "043-anglo-frisian-brightening.md",
     "044-045-breaking-and-velar-fricative-palatalization.md",
     "046-048-restoration-and-nasal-tail-changes.md",
+    "049-pgmc-b-allophony.md",
+    "050-pwgmc-sievers-law-syncope.md",
     "051-sk-palatalization.md",
     "052-velar-palatalization.md",
     "053-054-pre-umlaut-bridge-and-w-loss.md",
@@ -107,23 +106,18 @@ CHAPTER_INTRO_ROOT = root
 # Chapter heading configuration: maps first filename of each chapter to
 # (chapter_number, title, intro_file_in_reader_facing_dir)
 CHAPTER_BOUNDARIES: dict[str, tuple[int, str, str]] = {
-    "049-pgmc-b-allophony.md": (
-        1,
-        "From Proto-Germanic to Proto-Northwest Germanic",
-        "chap1-pgmc-to-pnwgmc-intro.md",
-    ),
     "096-root-noun-nominative-z-loss.md": (
-        2,
+        1,
         "From Proto-Northwest Germanic to Proto-West Germanic",
         "chap2-pnwgmc-to-pwgmc-intro.md",
     ),
-    "003-west-germanic-rhotacism.md": (
-        3,
+    "020-wgmc-final-z-deletion.md": (
+        2,
         "From Proto-West Germanic to Anglo-Frisian",
         "chap3-pwgmc-to-af-intro.md",
     ),
-    "016-west-saxon-palatal-glide.md": (
-        4,
+    "029-030-awj-glide-and-au-fronting.md": (
+        3,
         "From Anglo-Frisian to Old English",
         "chap4-af-to-oe-intro.md",
     ),
