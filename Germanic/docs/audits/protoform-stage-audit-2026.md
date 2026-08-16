@@ -112,9 +112,33 @@ fresh compile of `Germanic/fsts/germanic.txt` followed by
 undocumented**. The `--strict-mode=baseline` index build exits 0 (no new
 unresolved candidates).
 
-> Note: the checked-in `backend/*.bin` files are **stale** relative to the
-> current `germanic.txt` — a fresh compile gives 7/0, but the committed bins
-> produce a phantom 8th (`*stámniz -> stemn`, the stem row) because the stem fix
-> in `germanic.txt` was never recompiled into the committed bins. Run
-> `oe_bin_sync_check.py` and recommit the bins to clear this (out of scope for
-> this audit).
+> Note: the canonical tracked `Germanic/fsts/*.bin` files have now been
+> recompiled from the current `germanic.txt` (via `foma -q -l germanic.txt -e
+> quit` run with CWD `/usr/app/fsts`, the Docker-mounted `Germanic/fsts`), so
+> the compiled bins now agree with the source and yield **380 accepted / 373
+> matched / 7 mismatched / 0 ambiguous** with `*stámniz -> stefn` (mult 1,
+> MATCH) and `*xébun -> heofon` (mult 1, MATCH). Foma bins are byte
+> non-deterministic but functionally deterministic; only the 30 functionally
+> changed bins were recommitted. The gitignored `backend/*.bin` files are left
+> untouched (legacy/noncanonical); `.gitignore` tracks only `Germanic/fsts/*.bin`.
+
+## Follow-up corrections (finishing pass)
+
+A source-markup re-audit of the eight sampled transponents surfaced three
+residual leaks that let a selected transponent input appear under Proto-Germanic:
+
+- **spare** (`2205-spare-sparian.model.md`): three occurrences of the *selected*
+  class-II transponent *\*spárōjaną* were still tagged `lang=pgmc` (they lacked
+  `role=selected_input`, so the earlier grep missed them). Re-tagged to
+  `lang=preoe variety=transponent`. The genuinely inherited class-III *\*sparē-*
+  comparanda were left as PGmc/PWGmc.
+- **loam** (`index_verborum_table_decisions.tsv`): the curated table-decision for
+  *\*láimą* was `pgmc`/blank, forcing a stray Proto-Germanic occurrence. Corrected
+  to `preoe`/`transponent`. The comparative headword *\*laimōn* stays PGmc.
+- **`build_index_verborum.py`**: `trace_proto_input`'s compact-trace production
+  did not forward `protoform_variety`, so the trace occurrence of a transponent
+  lost its `transp.` label. Now resolves and forwards the variety.
+
+After these fixes the four selected transponents render as: spare *\*spárōjaną*,
+thousand *\*θūs-èndi*, loam *\*láimą* at **pre-OE** with `transp.`; world
+*\*wír-àldu* at its chosen **PGmc base stage** with an explicit `transp.` marker.

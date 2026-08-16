@@ -983,9 +983,6 @@ pgmc		*hnukkaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc		*hwali-	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2284-whale-hwæl.model.md
 pgmc		*ju(w)unþi-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
 pgmc		*jugunþi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
-pgmc		*júgunθ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
-pgmc		*júgunθ	selected_input	trace_proto_input	youth — OE ġeoguþ
-pgmc		*júgunθ	source_protoform	lexical_protoform	youth — OE ġeoguþ
 pgmc		*júgunθiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
 pgmc		*júgunθiz	source_protoform	lexical_proto	youth — OE ġeoguþ
 pgmc		*júką	selected_input	trace_proto_input	yoke — OE ġeoc
@@ -1035,9 +1032,6 @@ pgmc		*lábbaz	source_protoform	lexical_proto	lap — OE lappa
 pgmc		*lábbaz	source_protoform	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md
 pgmc		*láidijaną	selected_input	trace_proto_input	lead — OE lǣdan
 pgmc		*láidijaną	source_protoform	lexical_protoform	lead — OE lǣdan
-pgmc		*láimą	selected_input	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md
-pgmc		*láimą	selected_input	trace_proto_input	loam — OE lām
-pgmc		*láimą	source_protoform	lexical_protoform	loam — OE lām
 pgmc		*láistijaną	selected_input	trace_proto_input	last — OE lǣstan
 pgmc		*láiθaz	selected_input	trace_proto_input	loath — OE lāþ
 pgmc		*lákaną	source_protoform	lexical_proto	laugh — OE hliehhan
@@ -1137,9 +1131,6 @@ pgmc		*nablô	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc		*nablô	source_protoform	lexical_proto	navel — OE nafola
 pgmc		*nadra-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md
 pgmc		*nasō	source_protoform	lexical_proto	nose — OE nosu
-pgmc		*nábulô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md
-pgmc		*nábulô	selected_input	trace_proto_input	navel — OE nafola
-pgmc		*nábulô	source_protoform	lexical_protoform	navel — OE nafola
 pgmc		*nábō	selected_input	trace_proto_input	nave — OE nafu
 pgmc		*náglaz	selected_input	trace_proto_input	nail — OE næġl
 pgmc		*námô	selected_input	trace_proto_input	name — OE nama
@@ -1255,9 +1246,6 @@ pgmc		*spánnaną	source_protoform	lexical_protoform	span — OE spannan
 pgmc		*spárrô	selected_input	trace_proto_input	spar — OE spearra
 pgmc		*spárrô	source_protoform	lexical_protoform	spar — OE spearra
 pgmc		*spárēną	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
-pgmc		*spárōjaną	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
-pgmc		*spárōjaną	selected_input	trace_proto_input	spare — OE sparian
-pgmc		*spárōjaną	source_protoform	lexical_protoform	spare — OE sparian
 pgmc		*spénnilō	selected_input	trace_proto_input	spindle — OE spinl
 pgmc		*spéru	selected_input	trace_proto_input	spear — OE speoru
 pgmc		*spínnaną	selected_input	trace_proto_input	spin — OE spinnan
@@ -1412,11 +1400,8 @@ pgmc		*wíduwōn	selected_input	trace_proto_input	widow — OE wuduwe
 pgmc		*wíndaną	selected_input	trace_proto_input	wind — OE windan
 pgmc		*wíndaną	source_protoform	lexical_protoform	wind — OE windan
 pgmc		*wíntruz	selected_input	trace_proto_input	winter — OE winter
-pgmc		*wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
-pgmc		*wír-àldu	source_protoform	lexical_protoform	world — OE weorold
 pgmc		*wíra-àldiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 pgmc		*wíra-àldiz	source_protoform	lexical_proto	world — OE weorold
-pgmc		*wíràldu	selected_input	trace_proto_input	world — OE weorold
 pgmc		*wíθrą	selected_input	trace_proto_input	wether — OE weþer
 pgmc		*wúlfaz	selected_input	trace_proto_input	wolf — OE wulf
 pgmc		*wúlfaz	source_protoform	lexical_protoform	wolf — OE wulf
@@ -1531,9 +1516,6 @@ pgmc		*θúrnaz	selected_input	trace_proto_input	thorn — OE þorn
 pgmc		*θúrnaz	source_protoform	lexical_protoform	thorn — OE þorn
 pgmc		*θúrstuz	selected_input	trace_proto_input	thirst — OE þurst
 pgmc		*θūs-undī	source_protoform	lexical_proto	thousand — OE þūsend
-pgmc		*θūs-èndi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md
-pgmc		*θūs-èndi	source_protoform	lexical_protoform	thousand — OE þūsend
-pgmc		*θūsèndi	selected_input	trace_proto_input	thousand — OE þūsend
 pgmc		*ḗlaz	selected_input	trace_proto_input	eel — OE ǣl
 pgmc		bainan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md
 pgmc		bakanan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md
@@ -1576,7 +1558,6 @@ pgmc		gállą	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc		hemina-	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md
 pgmc		hemnaz	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md
 pgmc		hemō	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md
-pgmc		júgunθ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
 pgmc		júgunθiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
 pgmc		knextaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md
 pgmc		knéxtaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md
@@ -1595,7 +1576,6 @@ pgmc		mákōθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc		mánnas	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md
 pgmc		mízdai	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md
 pgmc		nadrōn	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md
-pgmc		nábulô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md
 pgmc		náxti	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md
 pgmc		náxtz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md
 pgmc		nēdrōn	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md
@@ -1619,7 +1599,6 @@ pgmc		spannō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_e
 pgmc		sparēnan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
 pgmc		sparēną	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
 pgmc		spánnai	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md
-pgmc		spárōjaną	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
 pgmc		stábaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md
 pgmc		stábiz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2212-staff-stæf.model.md
 pgmc		stámnaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md
@@ -1637,7 +1616,6 @@ pgmc		watōr	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facin
 pgmc		wábsaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2273-wasp-wæfs.model.md
 pgmc		wákaną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2268-wake-wacan.model.md
 pgmc		wátōr	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md
-pgmc		wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 pgmc		wī́θagą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md
 pgmc		xabēną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md
 pgmc		xnákkaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md
@@ -1657,7 +1635,10 @@ pgmc		xúrdaz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_faci
 pgmc		θréjez	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2254-three-þrīe.model.md
 pgmc		θéstilaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md
 pgmc		θístilas	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2250-thistle-þistles.model.md
-pgmc		θūs-èndi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md
+pgmc	transponent	*wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
+pgmc	transponent	*wír-àldu	source_protoform	lexical_protoform	world — OE weorold
+pgmc	transponent	*wíràldu	selected_input	trace_proto_input	world — OE weorold
+pgmc	transponent	wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 pnwgmc		brōkiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md
 pnwgmc		brōkiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md
 preoe		sparai-	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
@@ -1666,7 +1647,26 @@ preoe		spárē	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_e
 preoe		weraldiz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 preoe		weraldu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
 preoe		weruld	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md
+preoe	transponent	*láimą	selected_input	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md
+preoe	transponent	*láimą	selected_input	trace_proto_input	loam — OE lām
+preoe	transponent	*láimą	source_protoform	lexical_protoform	loam — OE lām
+preoe	transponent	*spárōjaną	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
+preoe	transponent	*spárōjaną	selected_input	trace_proto_input	spare — OE sparian
+preoe	transponent	*spárōjaną	source_protoform	lexical_protoform	spare — OE sparian
+preoe	transponent	*θūs-èndi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md
+preoe	transponent	*θūs-èndi	source_protoform	lexical_protoform	thousand — OE þūsend
+preoe	transponent	*θūsèndi	selected_input	trace_proto_input	thousand — OE þūsend
+preoe	transponent	spárōjaną	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md
+preoe	transponent	θūs-èndi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md
+pwgmc		*júgunθ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
+pwgmc		*júgunθ	selected_input	trace_proto_input	youth — OE ġeoguþ
+pwgmc		*júgunθ	source_protoform	lexical_protoform	youth — OE ġeoguþ
+pwgmc		*nábulô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md
+pwgmc		*nábulô	selected_input	trace_proto_input	navel — OE nafola
+pwgmc		*nábulô	source_protoform	lexical_protoform	navel — OE nafola
 pwgmc		*skúldru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 pwgmc		bakan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md
+pwgmc		júgunθ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md
+pwgmc		nábulô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md
 pwgmc		skuldru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md
 pwgmc		timbr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2258-timber-timber.model.md

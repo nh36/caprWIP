@@ -576,11 +576,19 @@ class VarietyAnnotationAuditTests(unittest.TestCase):
                           f"uncontrolled decision value: {r['decision']!r}")
 
     def test_every_annotated_occurrence_has_audit_row(self):
-        # Every nonblank-variety production occurrence must be covered by an
+        # Every nonblank-variety OE production occurrence must be covered by an
         # 'annotated' audit row keyed by (source_ref, sort_key, variety).
+        # The OE source-attestation audit governs OE dialectal varieties (angl/
+        # merc/lws/north/kent). The cross-stage transponent variety attaches to
+        # reconstructed stages (language != oe) and is governed instead by the
+        # sidecar (entry_stage_metadata.tsv) + variety registry + stage tests, so
+        # it is out of scope for this OE-dialect audit (cf. the language==oe
+        # filter in test_no_named_candidate_omitted_from_audit).
         audit_keys = {(r["source_ref"], r["sort_key"], r["proposed_variety"])
                       for r in self._audit() if r["decision"] == "annotated"}
         for r in self._rows("index_verborum_forms.tsv"):
+            if (r.get("language", "") or "").strip() != "oe":
+                continue
             v = (r.get("variety", "") or "").strip()
             if not v:
                 continue
@@ -958,8 +966,22 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         total_occurrences = sum(int(r["source_occurrence_count"]) for r in be)
         self.assertEqual(total_occurrences, len(bo), "book_occurrences == sum(source_occurrence_count)")
 
+        # OE dialectal varieties (LWS/Angl./Merc./North./Kent.) and the cross-stage
+        # transponent variety are separate axes. The 28 OE-dialect labels are governed
+        # by the OE source-attestation audit; the 6 transp. labels are cross-stage
+        # modeling annotations governed by the sidecar + variety registry.
+        oe_variety_unique = sum(
+            1 for r in bu
+            if (r.get("printed_variety") or "").strip()
+            and (r.get("printed_variety") or "").strip() != "transp."
+        )
+        transp_variety_unique = sum(
+            1 for r in bu if (r.get("printed_variety") or "").strip() == "transp."
+        )
+        self.assertEqual(oe_variety_unique, 28, "OE-dialect variety-labelled unique book entries")
+        self.assertEqual(transp_variety_unique, 6, "transponent variety-labelled unique book entries")
         variety_labelled_unique = sum(1 for r in bu if (r.get("printed_variety") or "").strip())
-        self.assertEqual(variety_labelled_unique, 28, "variety-labelled unique book entries")
+        self.assertEqual(variety_labelled_unique, 34, "variety-labelled unique book entries")
 
         printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(printable_explicit, 1423, "printable explicit occurrences")

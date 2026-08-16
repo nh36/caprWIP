@@ -1,9 +1,9 @@
 # Index verborum audit
 
 - Internal production occurrences: 2362
-- Internal production unique forms: 1071
+- Internal production unique forms: 1069
 - Printed main-index occurrences: 2274
-- Printed main-index unique forms: 1061
+- Printed main-index unique forms: 1059
 - Print-excluded occurrences: 88
 - Print-excluded unique forms: 69
 - Print exclusions (regular_output_default_exclusion): 88
@@ -14,7 +14,7 @@
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
-- Pre-OE review rows: 15
+- Pre-OE review rows: 19
 - Reader-facing example candidate rows: 890
 - Reader-facing rows include_in_example_index=yes: 495
 - Reader-facing rows include_in_example_index=no: 395
@@ -46,11 +46,11 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1304 | 465 |
-| Proto-Germanic | 928 | 519 |
+| Proto-Germanic | 924 | 517 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 3 |
-| Pre-Old English / prehistoric English | 15 | 10 |
+| Pre-Old English / prehistoric English | 19 | 10 |
 | Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
@@ -103,11 +103,11 @@
 
 ### Pre-Old English / prehistoric English
 
+- `*láimą` (table_semantic_decision; Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53)
 - `*láimą` (lexical_protoform; loam — OE lām)
 - `*láimą` (trace_proto_input; loam — OE lām)
 - `*sparai-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 - `*spárē` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47)
-- `*sparja-` (explicit_tag; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23)
 
 ### Old Norse
 
@@ -192,11 +192,11 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1216 | 455 |
-| Proto-Germanic | 928 | 519 |
+| Proto-Germanic | 924 | 517 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 3 |
-| Pre-Old English / prehistoric English | 15 | 10 |
+| Pre-Old English / prehistoric English | 19 | 10 |
 | Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |

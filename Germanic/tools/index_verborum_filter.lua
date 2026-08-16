@@ -5,6 +5,16 @@ local lang_meta = nil  -- {code → {order_str, title, escaped_title}}
 local variety_meta = nil  -- {code → {printed_label, display_order, assignable, active, language, suppress}}
 local explicit_allow = nil
 
+-- Sentinel "language" for cross-stage varieties (mirrors CROSS_STAGE_LANGUAGE /
+-- RECONSTRUCTED_STAGES in Germanic/tools/index_verborum_render.py): a variety
+-- whose registry row declares language=="recon" may attach to ANY reconstructed
+-- base stage rather than a single language. Used for the `transponent` variety.
+local CROSS_STAGE_LANGUAGE = "recon"
+local RECONSTRUCTED_STAGES = {
+  pie = true, pgmc = true, pnwgmc = true, pwgmc = true,
+  nsgmc = true, paf = true, preoe = true,
+}
+
 -- ── Targeted canonical composition for Index Verborum matching ────────────────
 -- This helper performs targeted canonical composition for the OE diacritic
 -- repertoire required by the Index Verborum corpus. It composes the specific
@@ -153,7 +163,13 @@ local function validate_variety(language, variety)
     error("index_verborum_filter.lua: non-assignable variety '" .. variety .. "' (e.g. 'ws')")
   end
   if entry.language ~= language then
-    error("index_verborum_filter.lua: variety '" .. variety .. "' not valid for language '" .. (language or "") .. "'")
+    if entry.language == CROSS_STAGE_LANGUAGE then
+      if not RECONSTRUCTED_STAGES[language] then
+        error("index_verborum_filter.lua: cross-stage variety '" .. variety .. "' may only attach to a reconstructed stage, not '" .. (language or "") .. "'")
+      end
+    else
+      error("index_verborum_filter.lua: variety '" .. variety .. "' not valid for language '" .. (language or "") .. "'")
+    end
   end
   if entry.suppress then return "" end
   return entry.printed_label

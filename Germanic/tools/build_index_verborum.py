@@ -2626,6 +2626,7 @@ def build_production_rows(
                     scope="trace_proto_input",
                     source_ref=ref,
                 )
+                variety = (manifest_row.get("protoform_variety") or "").strip()
             else:
                 # Corpus selected input with no model entry. Under the CAPR
                 # convention PROTO is always the Proto-Germanic reconstruction,
@@ -2648,7 +2649,8 @@ def build_production_rows(
                         f"no model entry and no sidecar stage decision; refusing to default "
                         f"to pgmc. Add a model entry / entry_stage_metadata.tsv decision."
                     )
-            add_production(store, language=stage, form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
+                variety = ""
+            add_production(store, language=stage, variety=variety, form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
 
     for row in explicit_tag_occurrences():
         if row["language"]:

@@ -1,9 +1,9 @@
 # Index verborum print audit
 
 - Internal production occurrences: 2362
-- Internal production unique forms: 1071
+- Internal production unique forms: 1069
 - Printed main occurrences: 2274
-- Printed main unique forms: 1061
+- Printed main unique forms: 1059
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -16,11 +16,11 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1216 | 455 |
-| Proto-Germanic | 928 | 519 |
+| Proto-Germanic | 924 | 517 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 3 |
-| Pre-Old English / prehistoric English | 15 | 10 |
+| Pre-Old English / prehistoric English | 19 | 10 |
 | Old Norse | 23 | 14 |
 | Old High German | 20 | 16 |
 | Old Frisian | 8 | 7 |
@@ -48,8 +48,8 @@
 
 ## Pre-OE review rows by proposed status
 
-- `include_if_source_backed`: 9
-- `needs_human_review`: 6
+- `include_if_source_backed`: 12
+- `needs_human_review`: 7
 
 ## Reader-facing example rows by role
 
@@ -65,7 +65,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1081
+- Unique printed entries: 1077
 - Print anomaly rows: 50
 - Hard print anomalies: 0
 

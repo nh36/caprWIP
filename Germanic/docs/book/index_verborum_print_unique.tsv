@@ -649,7 +649,6 @@ pgmc	*kwéðuz	kweduz			4	selected_input; source_protoform	explicit_tag; lexical
 pgmc	*kwíθuz	kwithuz			1	source_protoform	lexical_proto	cud — OE cwedu
 pgmc	*lábbaz	labbaz			2	source_protoform	lexical_proto; table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:57; lap — OE lappa
 pgmc	*láidijaną	laidijana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	lead — OE lǣdan
-pgmc	*láimą	laima			1	selected_input	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53
 pgmc	*laimōn	laimon			2	selected_input; source_protoform	lexical_proto; table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:52; loam — OE lām
 pgmc	*láistijaną	laistijana			1	selected_input	trace_proto_input	last — OE lǣstan
 pgmc	*láiθaz	laithaz			1	selected_input	trace_proto_input	loath — OE lāþ
@@ -815,7 +814,6 @@ pgmc	*sparēn-	sparen			1	evidence_form	explicit_tag	Germanic/docs/lexeme_report
 pgmc	*sparēną	sparena			2	evidence_form; source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:27; spare — OE sparian
 pgmc	*spárēną	sparena			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:56
 pgmc	*sparēnan	sparenan			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:22
-pgmc	*spárōjaną	sparojana			3	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59
 pgmc	*spárrô	sparro			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	spar — OE spearra
 pgmc	*spénnilō	spennilo			1	selected_input	trace_proto_input	spindle — OE spinl
 pgmc	*spḗnuz	spenuz			1	selected_input	trace_proto_input	spoon — OE spōn
@@ -928,7 +926,7 @@ pgmc	*wíndaną	windana			2	selected_input; source_protoform	lexical_protoform; 
 pgmc	*wíntruz	wintruz			1	selected_input	trace_proto_input	winter — OE winter
 pgmc	*wíra-àldiz	wiraaldiz			2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:67; world — OE weorold
 pgmc	*wír-àldu	wiraldu	transp.	transponent	3	selected_input; source_protoform	explicit_tag; lexical_protoform	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28; Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69; world — OE weorold
-pgmc	*wíràldu	wiraldu			1	selected_input	trace_proto_input	world — OE weorold
+pgmc	*wíràldu	wiraldu	transp.	transponent	1	selected_input	trace_proto_input	world — OE weorold
 pgmc	*wḯθagą	withaga			6	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:29; Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:41; Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:46; Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:66; withy — OE wīþiġ
 pgmc	*wíθrą	withra			1	selected_input	trace_proto_input	wether — OE weþer
 pgmc	*wrínganą	wringana			1	selected_input	trace_proto_input	wring — OE wringan
@@ -1001,15 +999,13 @@ pwgmc	*timbr	timbr			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports
 nsgmc	*hebun	hebun			2	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:42; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:596
 nsgmc	*hebunas	hebunas			2	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:100; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:43
 nsgmc	*xébun	xebun			4	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:138; Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:99; heaven — OE heofon
-preoe	*láimą	laima			1	selected_input	trace_proto_input	loam — OE lām
-preoe	*láimą	laima	transp.	transponent	1	source_protoform	lexical_protoform	loam — OE lām
+preoe	*láimą	laima	transp.	transponent	3	selected_input; source_protoform	lexical_protoform; table_semantic_decision; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53; loam — OE lām
 preoe	*sparai-	sparai			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
 preoe	*spárē	spare			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:47
 preoe	*sparja-	sparja			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:23
-preoe	*spárōjaną	sparojana			1	selected_input	trace_proto_input	spare — OE sparian
-preoe	*spárōjaną	sparojana	transp.	transponent	1	source_protoform	lexical_protoform	spare — OE sparian
+preoe	*spárōjaną	sparojana	transp.	transponent	5	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:25; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:42; Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:59; spare — OE sparian
 preoe	*θūs-èndi	thusendi	transp.	transponent	4	selected_input; source_protoform	explicit_tag; lexical_protoform	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:23; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:56; Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:68; thousand — OE þūsend
-preoe	*θūsèndi	thusendi			1	selected_input	trace_proto_input	thousand — OE þūsend
+preoe	*θūsèndi	thusendi	transp.	transponent	1	selected_input	trace_proto_input	thousand — OE þūsend
 preoe	*weraldiz	weraldiz			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
 preoe	*weraldu	weraldu			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
 preoe	*weruld	weruld			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68
