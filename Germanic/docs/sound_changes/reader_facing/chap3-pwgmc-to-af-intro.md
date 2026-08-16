@@ -61,22 +61,33 @@ corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
 the reader-facing chapter label describes the change as a West Germanic
 rhotacism.
 
-### Word-final `*z` deletion (SC020)
+### Word-final `*z` deletion (SC020) and the three final-`*z` developments
 
-The deletion of word-final `*z` in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest (nom.sg.)'
-is placed here on the basis of Crist's analysis, which distinguishes
-a pan-West-Germanic loss of `*z` after unstressed vowels from the earlier
-NWGmc changes and from the later narrower Ingvaeonic deletion rules
-[@Crist2002, pp. 1, 4]. The standard handbooks confirm a West Germanic
-deletion: Campbell notes that `*z` is "later lost or changed to `r`"
-[@Campbell1959]; Hogg gives a clean statement that Germanic `*z` is generally
-lost in final position [@Hogg1992, p. 37].
+The loss of word-final `*z` is not one process but three historically
+distinct developments, and this chapter contains two of them. The central
+one, SC020, is the Proto-West Germanic loss of `*z` in unstressed syllables,
+seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest
+(nom.sg.)' and stated for the whole branch by Ringe and Taylor
+[@RingeTaylor2014, pp. 44--45]; Crist's analysis distinguishes it both from
+the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
+rules [@Crist2002, pp. 1, 4]. Earlier still, the consonant-stem root nouns
+had generalized endingless nominatives before Proto-West Germanic (SC096,
+Chapter 2). Later, and only in the north, `*z` was lost in stressed
+monosyllables with compensatory lengthening (SC097, this chapter); the
+southern dialects instead retained and rhotacized it. The standard handbooks
+confirm the West Germanic deletion in general terms: Campbell notes that
+`*z` is "later lost or changed to `r`" [@Campbell1959]; Hogg gives a clean
+statement that Germanic `*z` is generally lost in final position
+[@Hogg1992, p. 37]; the three-way division refines those summaries rather
+than contradicting them.
 
-The CAPR rule is named `EAFFinalZDeletion`, which is historically misleading.
-The existing reader-facing prose already notes this: the current assembled
-section correctly describes SC003 as presupposing an earlier loss of final `*z`,
-creating a presentational tension with SC020's place at cascade position 20.
-This tension is a targeted audit item for the next phase of the chronology work.
+The CAPR rule for the unstressed loss is still named `EAFFinalZDeletion`,
+an identifier that predates the restaging of the change to Proto-West
+Germanic; the name is retained as a stable identifier pending a global
+renaming pass, and the historical stage recorded in the staging metadata
+takes priority over the name prefix. SC020 remains presented in this
+chapter, beside rhotacism, because the two changes jointly determine the
+fate of every remaining `*z`.
 
 ### Anglo-Frisian ai-monophthongization (SC004)
 
@@ -129,14 +140,17 @@ staging map now places it in Chapter 3, correcting that provisional label.
 
 ## Cascade vs. historical order in this chapter
 
-The four changes in this chapter currently occur at cascade positions 3, 19–20,
-25, and 43 respectively. These cascade positions reflect computational dependencies,
-not historical sequence. The reader-facing book order in this chapter places
-rhotacism first (as the post-PWGmc WGmc change), then word-final `*z` deletion
-(SC020, closely related to rhotacism and discussed in the same reader-facing
-section as SC019), then Anglo-Frisian ai-monophthongization (SC004, the North
-Sea Germanic areal vowel change), then Anglo-Frisian brightening as the
-culminating change of the pre-OE period.
+The changes in this chapter occur at scattered cascade positions — rhotacism
+at position 3, word-final `*z` deletion at 19–20, the new northern
+monosyllabic `*z`-loss beside it, ai-monophthongization at 25, brightening at
+43, and `*lþ`-voicing at 12. These cascade positions reflect computational
+dependencies, not historical sequence. The reader-facing book order in this
+chapter places rhotacism first (as the post-PWGmc WGmc change), then
+word-final `*z` deletion (SC020), then the later northern monosyllabic
+`*z`-loss (SC097) that completes the final-`*z` story, then Anglo-Frisian
+ai-monophthongization (SC004, the North Sea Germanic areal vowel change),
+then Anglo-Frisian brightening as the culminating change of the pre-OE
+period, and finally the northern West Germanic `*lþ`-voicing (SC012).
 
 The divergence between cascade order and book order in this chapter is one of
 the clearest illustrations of the principle that FST dependency does not

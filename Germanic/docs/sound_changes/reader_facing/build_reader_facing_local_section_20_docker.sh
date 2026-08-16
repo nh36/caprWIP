@@ -1,0 +1,487 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+repo_root="$(cd -- "${script_dir}/../../../.." && pwd)"
+image="${ASSEMBLY_DOCKER_IMAGE:-pandoc/latex:latest}"
+platform="${ASSEMBLY_DOCKER_PLATFORM:-linux/amd64}"
+font_package="${ASSEMBLY_DOCKER_FONT_PACKAGE:-font-noto}"
+tlmgr_repo="${ASSEMBLY_DOCKER_TLMGR_REPOSITORY:-https://ftp.fau.de/ctan/systems/texlive/tlnet}"
+
+assembled_md="${script_dir}/reader_facing_local_section_20.md"
+assembled_pdf="${script_dir}/reader_facing_local_section_20.pdf"
+
+cd "${repo_root}"
+
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_citations.py
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_foma_width.py
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_section_order.py \
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh \
+  --staging-map Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_generated_prose.py \
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_crossrefs.py \
+  --build-script Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh
+python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_chronology_evidence.py
+
+python3 - <<'PY'
+from pathlib import Path
+import csv
+import re
+
+root = Path("Germanic/docs/sound_changes/reader_facing")
+out = root / "reader_facing_local_section_20.md"
+coverage_out = root / "reader_facing_manifest_coverage_08.md"
+chapter_files = [
+    # ── Chapter 1: Proto-Germanic → Proto-Northwest Germanic ───────────────
+    "049-pgmc-b-allophony.md",
+    # ── Chapter 2: Proto-Northwest Germanic → Proto-West Germanic ──────────
+    "096-root-noun-nominative-z-loss.md",
+    "005-unstressed-a-raising-before-final-m.md",
+    "006-early-i-apocope.md",
+    "007-final-o-lowering-before-r.md",
+    "008-coronal-w-assimilation.md",
+    "009-ij-contraction-in-friend.md",
+    "010-west-germanic-j-gemination.md",
+    "011-syllabic-j-after-final-vowel-loss.md",
+    "013-dental-hardening.md",
+    "014-015-opening-vowel-prelude.md",
+    "017-nwgmc-u-lowering.md",
+    "018-stressed-monosyllable-o-raising.md",
+    "019-nwgmc-final-long-o-raising.md",
+    "021-unstressed-o-raising.md",
+    "022-mn-dissimilation.md",
+    "023-n-stem-n-loss.md",
+    "024-long-e-lowering.md",
+    "025-long-e-nasal-rounding.md",
+    "026-027-nasal-spirant-changes.md",
+    "028-preconsonantal-x-loss.md",
+    "041-final-bare-a-loss.md",
+    "042-surviving-bimoric-o-unrounding.md",
+    "050-pwgmc-sievers-law-syncope.md",
+    # ── Chapter 3: Proto-West Germanic → Anglo-Frisian ─────────────────────
+    "003-west-germanic-rhotacism.md",
+    "020-wgmc-final-z-deletion.md",
+    "097-monosyllabic-final-z-loss.md",
+    "004-pwgmc-ai-monophthongization.md",
+    "043-anglo-frisian-brightening.md",
+    "012-lth-voicing.md",
+    # ── Chapter 4: Anglo-Frisian → Old English ─────────────────────────────
+    "016-west-saxon-palatal-glide.md",
+    "029-030-awj-glide-and-au-fronting.md",
+    "031-034-west-saxon-diphthong-chain.md",
+    "035-037-prefix-and-compound-adjustments.md",
+    "039-040-medial-unstressed-vowel-changes.md",
+    "044-045-breaking-and-velar-fricative-palatalization.md",
+    "046-048-restoration-and-nasal-tail-changes.md",
+    "051-sk-palatalization.md",
+    "052-velar-palatalization.md",
+    "053-054-pre-umlaut-bridge-and-w-loss.md",
+    "055-056-i-umlaut-core.md",
+    "057-j-cluster-coalescence.md",
+    "059-oe-back-mutation.md",
+    "060-ws-palatal-umlaut-note.md",
+    "061-weak-tail-nasal-loss-note.md",
+    "063-high-vowel-apocope.md",
+    "064-065-post-apocope-tail.md",
+    "066-068-syncope-and-degemination-corridor.md",
+    "069-early-o-shortening-context-note.md",
+    "070-071-early-unstressed-fronting-shortening-bridge.md",
+    "072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md",
+    "074-075-medial-unstressed-i-lowering.md",
+    "076-prefix-i-reduction.md",
+    "078-weak-tail-reduction.md",
+    "079-080-final-j-loss-and-final-geminate-simplification.md",
+    "081-083-j-strengthening-vocalization-and-ei-contraction.md",
+    "085-086-h-loss-and-contraction.md",
+    "087-r-metathesis.md",
+]
+rule_heading_re = re.compile(r"^##\s+(SC\d{3})\.\s+(.*?)\s+\(`([^`]+)`\)\s+\{#(rule-[^}]+)\}\s*$")
+link_re = re.compile(r"\[([^\]]+)\]\((#rule-[^)]+)\)")
+long_rule_heading_threshold = 65
+
+STAGING_MAP_PATH = Path("Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv")
+CHAPTER_INTRO_ROOT = root
+
+# Chapter heading configuration: maps first filename of each chapter to
+# (chapter_number, title, intro_file_in_reader_facing_dir)
+CHAPTER_BOUNDARIES: dict[str, tuple[int, str, str]] = {
+    "049-pgmc-b-allophony.md": (
+        1,
+        "From Proto-Germanic to Proto-Northwest Germanic",
+        "chap1-pgmc-to-pnwgmc-intro.md",
+    ),
+    "096-root-noun-nominative-z-loss.md": (
+        2,
+        "From Proto-Northwest Germanic to Proto-West Germanic",
+        "chap2-pnwgmc-to-pwgmc-intro.md",
+    ),
+    "003-west-germanic-rhotacism.md": (
+        3,
+        "From Proto-West Germanic to Anglo-Frisian",
+        "chap3-pwgmc-to-af-intro.md",
+    ),
+    "016-west-saxon-palatal-glide.md": (
+        4,
+        "From Anglo-Frisian to Old English",
+        "chap4-af-to-oe-intro.md",
+    ),
+}
+
+parts: list[str] = [
+    "# The ordered sound-change sequence",
+    "",
+    "## Scope and orientation",
+    "",
+    "The sequence begins with early West Germanic consonant and vowel changes"
+    " and ends with Old English r-metathesis.",
+    "",
+    "Rhotacism, brightening, breaking, umlaut, and apocope alternate with narrowly"
+    " conditioned changes whose relative order rests on particular witness words.",
+    "",
+    "The evidence ranges from broadly attested sound laws to lexical constraints"
+    " that establish only one chronological boundary.",
+    "",
+    "## Numbering note",
+    "",
+    "SC numbers remain the established legacy identifiers. The Version 1 book"
+    " presents the changes in historical chapter order, which differs from the"
+    " computational cascade order for several rules.",
+    "",
+    "SC038, SC062, and SC084 mark technical or prosodic stages rather than sound"
+    " changes; SC077 is unused.",
+    "",
+]
+
+active_anchors: set[str] = set()
+file_sc_map: dict[str, list[str]] = {}
+reader_sc_numbers: list[str] = []
+seen_sc: set[str] = set()
+
+for name in chapter_files:
+    text = (root / name).read_text(encoding="utf-8")
+    scs: list[str] = []
+    for line in text.splitlines():
+        match = rule_heading_re.match(line.strip())
+        if not match:
+            continue
+        sc_number = match.group(1)
+        scs.append(sc_number)
+        active_anchors.add(f"#{match.group(4)}")
+        if sc_number not in seen_sc:
+            seen_sc.add(sc_number)
+            reader_sc_numbers.append(sc_number)
+    unique = sorted(set(scs), key=lambda item: int(item[2:]))
+    file_sc_map[name] = unique
+
+
+def resolve_links(text: str) -> str:
+    return link_re.sub(lambda match: match.group(0) if match.group(2) in active_anchors else match.group(1), text)
+
+
+def heading_visible_text(sc_number: str, title: str, rule_name: str) -> str:
+    visible = title
+    visible = re.sub(r"\\[A-Za-z]+\{([^{}]*)\}", r"\1", visible)
+    visible = visible.replace("{", "").replace("}", "")
+    visible = re.sub(r"\\[A-Za-z]+", "", visible)
+    visible = re.sub(r"\s+", " ", visible).strip()
+    return f"{sc_number}. {visible} ({rule_name})"
+
+
+def wrap_long_rule_headings(text: str) -> str:
+    wrapped: list[str] = []
+    for line in text.splitlines():
+        match = rule_heading_re.match(line.strip())
+        if not match:
+            wrapped.append(line)
+            continue
+        sc_number, title, rule_name, anchor = match.groups()
+        if len(heading_visible_text(sc_number, title, rule_name)) <= long_rule_heading_threshold:
+            wrapped.append(line)
+            continue
+        wrapped.append(
+            f"## \\CAPRRuleHeading{{{sc_number}. {title}}}{{{rule_name}}} {{#{anchor}}}"
+        )
+    return "\n".join(wrapped)
+
+
+def inject_chapter_block(chapter_num: int, title: str, intro_file: str) -> list[str]:
+    """Return markdown lines for a chapter heading and intro, or empty if intro file missing."""
+    block: list[str] = [
+        "",
+        r"\newpage",
+        "",
+        f"# Chapter {chapter_num}. {title}",
+        "",
+    ]
+    intro_path = CHAPTER_INTRO_ROOT / intro_file
+    if intro_path.exists():
+        intro_text = intro_path.read_text(encoding="utf-8").strip()
+        # Drop the top-level # heading from the intro file (already rendered as chapter title)
+        intro_lines = intro_text.splitlines()
+        if intro_lines and intro_lines[0].startswith("# "):
+            intro_lines = intro_lines[1:]
+        block.extend(intro_lines)
+        block.append("")
+    return block
+
+
+first_file_seen = False
+for idx, name in enumerate(chapter_files):
+    if name in CHAPTER_BOUNDARIES:
+        # Inject chapter heading + intro before this file
+        chap_num, chap_title, intro_file = CHAPTER_BOUNDARIES[name]
+        parts.extend(inject_chapter_block(chap_num, chap_title, intro_file))
+    elif first_file_seen:
+        # Non-boundary file: add page break before it
+        parts.extend(["", r"\newpage", ""])
+    first_file_seen = True
+    chapter_text = resolve_links((root / name).read_text(encoding="utf-8").rstrip())
+    parts.append(wrap_long_rule_headings(chapter_text))
+
+parts.extend([
+    "",
+    r"\newpage",
+    "",
+    "# References",
+    "",
+    "::: {#refs}",
+    ":::",
+    "",
+])
+
+out.write_text("\n".join(parts), encoding="utf-8")
+
+manifest_rows: list[dict[str, object]] = []
+manifest_path = Path("Germanic/docs/sound_changes/change_reports/report_manifest.tsv")
+with manifest_path.open(encoding="utf-8") as handle:
+    reader = csv.DictReader(handle, delimiter="\t")
+    for row in reader:
+        if not row["ID"]:
+            continue
+        sc_ids = [item.strip() for item in row["CHANGE_IDS"].split(";") if item.strip()]
+        chapters = [name for name in chapter_files if set(file_sc_map[name]) & set(sc_ids)]
+        covered_scs = sorted({sc for name in chapters for sc in file_sc_map[name]}, key=lambda item: int(item[2:]))
+        manifest_rows.append({
+            "id": row["ID"],
+            "title": row["TITLE"],
+            "change_ids": sc_ids,
+            "chapters": chapters,
+            "covered": set(sc_ids).issubset(set(covered_scs)),
+        })
+
+manifest_sc_numbers = sorted({sc for row in manifest_rows for sc in row["change_ids"]}, key=lambda item: int(item[2:]))
+reader_sc_set = set(reader_sc_numbers)
+manifest_sc_set = set(manifest_sc_numbers)
+missing_manifest_sc = sorted(manifest_sc_set - reader_sc_set, key=lambda item: int(item[2:]))
+extra_reader_sc = sorted(reader_sc_set - manifest_sc_set, key=lambda item: int(item[2:]))
+
+front_manifest_gaps = []
+
+resumed_sc_numbers = [sc for sc in manifest_sc_numbers if int(sc[2:]) >= 14]
+if resumed_sc_numbers:
+    resumed_min = min(int(sc[2:]) for sc in resumed_sc_numbers)
+    resumed_max = max(int(sc[2:]) for sc in resumed_sc_numbers)
+    later_gaps = [f"SC{i:03d}" for i in range(resumed_min, resumed_max + 1) if f"SC{i:03d}" not in manifest_sc_set]
+else:
+    later_gaps = []
+
+expected_gaps = later_gaps
+early_programme_missing = [
+    f"SC{i:03d}"
+    for i in range(3, 14)
+    if f"SC{i:03d}" not in manifest_sc_set and f"SC{i:03d}" not in set(front_manifest_gaps)
+]
+uncovered_rows = [row for row in manifest_rows if not row["covered"]]
+
+coverage_parts: list[str] = [
+    "# Reader-facing manifest coverage 08",
+    "",
+    "## Inputs",
+    "",
+    "1. `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`",
+    "2. `Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh`",
+    "",
+    "## Manifest rows covered by reader-facing chapters",
+    "",
+    "| Manifest row | Change IDs | Reader-facing chapter files | Covered |",
+    "| --- | --- | --- | --- |",
+]
+
+for row in manifest_rows:
+    chapters = ", ".join(f"`{name}`" for name in row["chapters"]) if row["chapters"] else "—"
+    coverage_parts.append(
+        f"| `{row['id']}` {row['title']} | `{';'.join(row['change_ids'])}` | {chapters} | {'yes' if row['covered'] else 'no'} |"
+    )
+
+coverage_parts.extend([
+    "",
+    "## SC numbers covered by reader-facing rule sections",
+    "",
+    ", ".join(f"`{sc}`" for sc in reader_sc_numbers),
+    "",
+    "## Manifest rows not yet covered",
+    "",
+])
+
+if uncovered_rows:
+    for row in uncovered_rows:
+        coverage_parts.append(f"1. `{row['id']}` {row['title']} — missing `{';'.join(row['change_ids'])}`")
+else:
+    coverage_parts.append("1. none")
+
+coverage_parts.extend([
+    "",
+    "## SC numbers present in the manifest but missing from reader-facing rule headings",
+    "",
+])
+
+if missing_manifest_sc:
+    coverage_parts.append(", ".join(f"`{sc}`" for sc in missing_manifest_sc))
+else:
+    coverage_parts.append("1. none")
+
+coverage_parts.extend([
+    "",
+    "## Reader-facing rule headings not present in the manifest",
+    "",
+])
+
+if extra_reader_sc:
+    coverage_parts.append(", ".join(f"`{sc}`" for sc in extra_reader_sc))
+else:
+    coverage_parts.append("1. none")
+
+coverage_parts.extend([
+    "",
+    "## Expected gaps in the manifest-backed sequence",
+    "",
+])
+
+if expected_gaps:
+    coverage_parts.append(", ".join(f"`{sc}`" for sc in expected_gaps))
+else:
+    coverage_parts.append("1. none")
+
+coverage_parts.extend([
+    "",
+    "## Early SC numbers and the current manifest-backed programme",
+    "",
+])
+
+if "SC003" in manifest_sc_set and "SC003" in reader_sc_set:
+    coverage_parts.append("1. `SC003` is now covered by `003-west-germanic-rhotacism.md`.")
+else:
+    coverage_parts.append("1. `SC003` is not fully covered in the current reader-facing set.")
+
+if "SC004" in manifest_sc_set and "SC004" in reader_sc_set:
+    coverage_parts.append("2. `SC004` is now covered by `004-pwgmc-ai-monophthongization.md`.")
+else:
+    coverage_parts.append("2. `SC004` is not fully covered in the current reader-facing set.")
+
+if "SC005" in manifest_sc_set and "SC005" in reader_sc_set:
+    coverage_parts.append("3. `SC005` is now covered by `005-unstressed-a-raising-before-final-m.md`.")
+else:
+    coverage_parts.append("3. `SC005` is not fully covered in the current reader-facing set.")
+
+if "SC006" in manifest_sc_set and "SC006" in reader_sc_set:
+    coverage_parts.append("4. `SC006` is now covered by `006-early-i-apocope.md`.")
+else:
+    coverage_parts.append("4. `SC006` is not fully covered in the current reader-facing set.")
+
+if "SC007" in manifest_sc_set and "SC007" in reader_sc_set:
+    coverage_parts.append("5. `SC007` is now covered by `007-final-o-lowering-before-r.md`.")
+else:
+    coverage_parts.append("5. `SC007` is not fully covered in the current reader-facing set.")
+
+if "SC008" in manifest_sc_set and "SC008" in reader_sc_set:
+    coverage_parts.append("6. `SC008` is now covered by `008-coronal-w-assimilation.md`.")
+else:
+    coverage_parts.append("6. `SC008` is not fully covered in the current reader-facing set.")
+
+if "SC009" in manifest_sc_set and "SC009" in reader_sc_set:
+    coverage_parts.append("7. `SC009` is now covered by `009-ij-contraction-in-friend.md`.")
+else:
+    coverage_parts.append("7. `SC009` is not fully covered in the current reader-facing set.")
+
+if "SC010" in manifest_sc_set and "SC010" in reader_sc_set:
+    coverage_parts.append("8. `SC010` is now covered by `010-west-germanic-j-gemination.md`.")
+else:
+    coverage_parts.append("8. `SC010` is not fully covered in the current reader-facing set.")
+
+if "SC011" in manifest_sc_set and "SC011" in reader_sc_set:
+    coverage_parts.append("9. `SC011` is now covered by `011-syllabic-j-after-final-vowel-loss.md`.")
+else:
+    coverage_parts.append("9. `SC011` is not fully covered in the current reader-facing set.")
+
+if "SC012" in manifest_sc_set and "SC012" in reader_sc_set:
+    coverage_parts.append("10. `SC012` is now covered by `012-lth-voicing.md`.")
+else:
+    coverage_parts.append("10. `SC012` is not fully covered in the current reader-facing set.")
+
+if "SC013" in manifest_sc_set and "SC013" in reader_sc_set:
+    coverage_parts.append("11. `SC013` is now covered by `013-dental-hardening.md`.")
+else:
+    coverage_parts.append("11. `SC013` is not fully covered in the current reader-facing set.")
+
+coverage_parts.append("12. Coverage from `SC014` through `SC087` remains intact.")
+
+if early_programme_missing:
+    coverage_parts.append(
+        "13. The remaining early SC numbers outside the current manifest-backed programme are "
+        + ", ".join(f"`{sc}`" for sc in early_programme_missing)
+        + "."
+    )
+else:
+    coverage_parts.append("13. No other early SC numbers remain outside the current manifest-backed programme.")
+
+if {"SC003", "SC004", "SC005", "SC006", "SC007", "SC008", "SC009", "SC010", "SC011", "SC012", "SC013", "SC014", "SC015"} <= manifest_sc_set:
+    coverage_parts.append("14. The manifest-backed sequence now opens with `SC003`, `SC004`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, and `SC013`, and then resumes at `SC014-SC015`.")
+else:
+    coverage_parts.append("14. The manifest-backed opening sequence no longer matches the expected `SC003`, `SC004`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, `SC013`, then `SC014-SC015` pattern.")
+
+coverage_out.write_text("\n".join(coverage_parts) + "\n", encoding="utf-8")
+PY
+
+python3 Germanic/tools/check_sound_change_heading_wrapping.py --markdown-path "${assembled_md}"
+
+if ! command -v docker >/dev/null 2>&1; then
+  echo "docker not found; cannot run Docker-based render." >&2
+  exit 127
+fi
+
+if ! docker info >/dev/null 2>&1; then
+  echo "docker daemon not running; start Docker Desktop or another daemon first." >&2
+  exit 1
+fi
+
+docker run --rm --platform "${platform}" --entrypoint /bin/sh \
+  -v "${repo_root}":/data -w /data "${image}" -c "
+    set -e
+    apk add --no-cache ${font_package} >/dev/null
+    kpsewhich fvextra.sty >/dev/null 2>&1 || (
+      tlmgr option repository ${tlmgr_repo} >/dev/null &&
+      tlmgr update --self >/dev/null &&
+      tlmgr install fvextra >/dev/null
+    )
+    pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md \
+      --standalone \
+      --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/tools/predicted_form_filter.lua \
+      --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
+      --lua-filter=Germanic/tools/lex_form_filter.lua \
+      --lua-filter=Germanic/docs/sound_changes/reader_facing/reader_facing_foma.lua \
+      --include-in-header=Germanic/docs/sound_changes/reader_facing/reader_facing_pdf_header.tex \
+      --number-sections \
+      --table-of-contents \
+      --metadata-file=Germanic/docs/assembly/full_volume_metadata.yaml \
+      --bibliography=docs/refs.bib \
+      --citeproc \
+      --pdf-engine=xelatex \
+      -o Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.pdf
+  "
+
+echo "Generated ${assembled_md}"
+echo "Generated ${assembled_pdf}"
+echo "Generated ${script_dir}/reader_facing_manifest_coverage_08.md"

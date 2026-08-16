@@ -284,6 +284,21 @@ This writes:
 - `reader_facing_local_section_19.md`
 - `reader_facing_local_section_19.pdf`
 
+To extend the same ordered section with the three-way split of the final
+\emph{*z} developments — adding root-noun nominative \emph{*-z} loss (SC096)
+and northern monosyllabic final \emph{*z}-loss (SC097) around the narrowed
+West Germanic final \emph{*z}-deletion (SC020), and moving \emph{lþ}-voicing
+(SC012) to its Chapter 3 registry position — use:
+
+```bash
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh
+```
+
+This writes:
+
+- `reader_facing_local_section_20.md`
+- `reader_facing_local_section_20.pdf`
+
 ## Style audit workflow
 
 After drafting or revising any reader-facing chapter, run:

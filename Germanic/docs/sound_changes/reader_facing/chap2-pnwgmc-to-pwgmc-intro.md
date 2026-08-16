@@ -30,6 +30,13 @@ West Germanic gemination of consonants before `*j`.
 
 ## Major changes
 
+The chapter opens with the root-noun nominative `*-z` loss (SC096), the
+generalization of endingless nominatives through the athematic consonant
+stems, complete before Proto-West Germanic: none of the West Germanic
+daughters shows any ending in this class [@RingeTaylor2014, p. 118]. It is
+the earliest of the three historically distinct final-`*z` developments; the
+other two (SC020 and SC097) belong to Chapter 3.
+
 The `*ai` monophthongization (SC004) represents one of the most pervasive
 shared NW–West Germanic vowel shifts, turning unstressed endings such as the
 dative singular and strong-adjective plural to longer vowels. Ringe and Taylor
