@@ -419,10 +419,11 @@ OUTPUTS: bōc
 ### Proto-Germanic consonant inheritance
 
 Proto Input: *bōkz
+Root Noun Nom Z Loss: *bōk
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *bōk<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
 
 
 
@@ -1605,10 +1606,11 @@ OUTPUTS: flēah
 ### Proto-Germanic consonant inheritance
 
 Proto Input: *fláuxz
+Root Noun Nom Z Loss: *fláux
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *fláux<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Fronting: *fláeux<br>OE Diphthong Leveling: *flēax |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Fronting: *fláeux<br>OE Diphthong Leveling: *flēax |
 
 
 
@@ -2126,10 +2128,11 @@ OUTPUTS: gōs
 ### Proto-Germanic consonant inheritance
 
 Proto Input: *gánsz
+Root Noun Nom Z Loss: *gáns
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *gáns<br>EAF Nasal Spirant Lengthening: *gōns<br>EAF Nasal Spirant Loss: *gōs<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
+| **Northwest and West Germanic**<br>EAF Nasal Spirant Lengthening: *gōns<br>EAF Nasal Spirant Loss: *gōs<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
 
 
 
@@ -3553,10 +3556,11 @@ OUTPUTS: lūs
 ### Proto-Germanic consonant inheritance
 
 Proto Input: *lūsz
+Root Noun Nom Z Loss: *lūs
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *lūs<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
 
 
 
