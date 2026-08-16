@@ -1114,15 +1114,18 @@ define EnglishPalatalisation EnglishEarlyPalatalisation;
 
 define EnglishWGlideRule [{*w} -> {*ʋ}];
 
-# PGmc rhotacism (R/T vol.2 §3.3.1 p.98). Right-context `?` requires
-# *some* symbol to follow *z, which permits every medial position
-# (VzV, VzC) but blocks the word boundary. R/T are explicit that
-# word-final *-z was **lost**, not rhotacized — handled by
-# EAFFinalZDeletion, now composed later in the pipeline (inside
-# EnglishProtoToOE, after PNWGmcFinalLongORaising). A stricter V_V
-# context was tried and rejected (regresses medial VzC forms such
-# as *mízdō); `V _ ?` is the R/T-faithful generalization. See
-# DEV_NOTES §17.10.24.
+# Rhotacism: surviving *z > *r (R/T vol.2 p.87: "first *z was lost in
+# a variety of environments ..., then all surviving *z became *r
+# across the whole WGmc area"). Executable position matches that
+# chronology: this rule is composed inside EnglishProtoToOE
+# immediately AFTER all three final-*z losses (RootNounNomZLoss,
+# EAFFinalZDeletion, MonosyllabicFinalZLoss), so word-final *-z is
+# gone before rhotacism applies — deletion is *z-sensitive and so
+# must precede the *z/*r merger (Crist 2002 §6). Right-context `?`
+# requires *some* symbol to follow *z, permitting every medial
+# position (VzV, VzC) while blocking the word boundary; a stricter
+# V_V context was tried and rejected (regresses medial VzC forms
+# such as *mízdō). See DEV_NOTES §17.10.24.
 define EAFRhotacism [
     {*z} -> {*r} || EnglishStarVocalic _ ?
 ];
@@ -1160,8 +1163,9 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 #    ↓ OEUnstressedAEMerger             [step 8]
 #   -e   (OE)
 #
-# Ordering constraint within EarlyGermanicConsonantPipeline: z-deletion must run
-# BEFORE EAFRhotacism so that word-final *-z is lost, not rhotacized.
+# Ordering constraint: z-deletion runs BEFORE EAFRhotacism (which is
+# composed after MonosyllabicFinalZLoss inside EnglishProtoToOE) so
+# that word-final *-z is lost, not rhotacized.
 # The PNWGmc *-ō → *-u raising (PNWGmcFinalLongORaising, R/T pp.30-31)
 # must run BEFORE this rule so that pre-existing word-final *-ō
 # (nom.sg. *gebō etc.) raises while *-ōz (sheltered by *-z) does not.
@@ -1322,11 +1326,11 @@ define PGmcBAllophony [
 # *-ōz before raising could shelter the gen.sg. ending, collapsing
 # the *-ō vs. *-ōz distinction R/T rely on. Instead, z-loss is
 # composed inside EnglishProtoToOE immediately before
-# PWGmcFinalBareALoss. EAFRhotacism (above) has been scoped to
-# non-word-final contexts so it no longer needs z-loss to bleed the
-# word-final case.
-define EarlyGermanicConsonantPipeline PGmcGmSimplification
-    .o. EAFRhotacism;
+# PWGmcFinalBareALoss. EAFRhotacism is composed inside
+# EnglishProtoToOE immediately after MonosyllabicFinalZLoss, i.e.
+# after all three final-*z losses, matching the historical
+# chronology (R/T vol.2 p.87; Crist 2002 §6).
+define EarlyGermanicConsonantPipeline PGmcGmSimplification;
 
 define EnglishGhMarker [
     {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
@@ -3222,6 +3226,12 @@ define EnglishProtoToOE (
     # *kō must not feed monosyllabic ō-raising). Unwitnessed in the OE
     # baseline; fires on no selected OE input.
     .o. MonosyllabicFinalZLoss
+    # SC003 rhotacism: surviving (non-final) *z → *r. Composed AFTER all
+    # three final-*z losses, matching the historical chronology (R/T
+    # vol.2 p.87; Crist 2002 §6: deletion is *z-sensitive, so must
+    # precede the *z/*r merger). Must precede breaking (SC044): the
+    # *r produced here conditions breaking in e.g. liornian, meorde.
+    .o. EAFRhotacism
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
@@ -3419,6 +3429,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. EAFFinalZDeletion
     # SC097 northern stressed-monosyllable *-z loss: mirrors main pipeline.
     .o. MonosyllabicFinalZLoss
+    # SC003 rhotacism after all final-*z losses: mirrors main pipeline.
+    .o. EAFRhotacism
     .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss

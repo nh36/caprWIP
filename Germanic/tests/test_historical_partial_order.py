@@ -2,12 +2,13 @@
 """Invariants for the supported historical partial order (Phase 3).
 
 Host-runnable. Verifies the curated partial-order edges use controlled
-vocabularies, that every cascade-relevant edge is satisfied by the current
-executable order (the scoping-note edge, explicitly not a cascade constraint, is
-excluded), and that the cascade edges are acyclic. This encodes the pivotal
-finding that the current rule sequence already honours every evidence-backed
-historical constraint — so the adjudicated corrections are renames/metadata, not
-moves.
+vocabularies, that every edge is satisfied positionally by the current
+executable order, and that the edges are acyclic. Since the 2026 rhotacism
+move (EAFRhotacism composed after MonosyllabicFinalZLoss inside
+EnglishProtoToOE) the executable cascade honours every evidence-backed
+historical constraint by genuine ordering: no edge may rely on context-scoping
+in lieu of cascade position, and no edge endpoint may escape the check by
+sitting outside the position manifest.
 
 Run: cd Germanic/tests && python3 -m unittest test_historical_partial_order
 """
@@ -48,8 +49,9 @@ def _sc_to_position() -> dict[str, int]:
                 sc2foma[r["change_id"]] = m.group(1)
     with ORDER_MANIFEST.open(encoding="utf-8") as handle:
         pos = {r["foma_identifier"]: int(r["position"]) for r in csv.DictReader(handle, delimiter="\t")}
-    # Rules not in EnglishProtoToOE (e.g. EAFRhotacism in EarlyGermanicConsonantPipeline)
-    # are pre-pipeline -> position 0.
+    # Rules not composed inside EnglishProtoToOE are absent from the manifest
+    # and map to position 0. Edge endpoints must NOT be position 0: see
+    # test_edge_endpoints_have_manifest_positions.
     return {sc: pos.get(foma, 0) for sc, foma in sc2foma.items()}
 
 
@@ -68,16 +70,24 @@ class PartialOrderTests(unittest.TestCase):
             self.assertIn(e["earlier_sc"], self.pos, f"unknown earlier_sc {e['earlier_sc']}")
             self.assertIn(e["later_sc"], self.pos, f"unknown later_sc {e['later_sc']}")
 
+    def test_edge_endpoints_have_manifest_positions(self):
+        """No edge endpoint may sit outside the executable-order manifest.
+        A position of 0 would let a relation escape the ordering check."""
+        missing = []
+        for e in self.edges:
+            for key in ("earlier_sc", "later_sc"):
+                if self.pos[e[key]] == 0:
+                    missing.append((e[key], e["earlier_sc"], e["later_sc"]))
+        self.assertEqual(missing, [],
+                         f"edge endpoints without a manifest position: {missing}")
+
     def test_cascade_edges_hold_in_current_order(self):
-        """Every cascade-relevant edge is already satisfied by the current
-        executable order. The scoping-note edge is excluded by design."""
+        """Every edge must be satisfied by genuine executable ordering.
+        No scoping escape and no position-0 escape is permitted."""
         violations = []
         for e in self.edges:
-            if _SCOPING_NOTE in e["evidence"]:
-                continue
             a, b = self.pos[e["earlier_sc"]], self.pos[e["later_sc"]]
-            # a == 0 means pre-pipeline (before all EnglishProtoToOE positions).
-            if not (a < b or a == 0):
+            if not (0 < a < b):
                 violations.append((e["earlier_sc"], e["later_sc"], a, b))
         self.assertEqual(violations, [],
                          f"current cascade violates supported historical edges: {violations}")
@@ -85,8 +95,6 @@ class PartialOrderTests(unittest.TestCase):
     def test_cascade_edges_are_acyclic(self):
         adj = collections.defaultdict(list)
         for e in self.edges:
-            if _SCOPING_NOTE in e["evidence"]:
-                continue
             adj[e["earlier_sc"]].append(e["later_sc"])
         color = collections.defaultdict(int)  # 0 white, 1 gray, 2 black
         cycle = [False]
@@ -105,16 +113,15 @@ class PartialOrderTests(unittest.TestCase):
                 dfs(node)
         self.assertFalse(cycle[0], "supported partial order contains a cycle")
 
-    def test_scoping_note_edge_is_documented(self):
-        """The one historical edge that runs counter to the current cascade order
-        must be explicitly marked as implemented via scoping, not ordering."""
-        counter = [e for e in self.edges
-                   if self.pos[e["earlier_sc"]] and self.pos[e["later_sc"]]
-                   and self.pos[e["earlier_sc"]] > self.pos[e["later_sc"]]]
-        for e in counter:
-            self.assertIn(_SCOPING_NOTE, e["evidence"],
-                          f"edge {e['earlier_sc']}->{e['later_sc']} runs counter to the cascade "
-                          "but is not marked as a non-cascade (scoping) constraint")
+    def test_no_scoping_note_edges_remain(self):
+        """Since the rhotacism move, every historical relation is implemented
+        by genuine cascade ordering. The legacy 'not a cascade constraint'
+        scoping escape must not reappear."""
+        for e in self.edges:
+            self.assertNotIn(_SCOPING_NOTE, e["evidence"],
+                             f"edge {e['earlier_sc']}->{e['later_sc']} claims a scoping "
+                             "implementation; historical relations must be enforced by "
+                             "executable ordering")
 
 
 if __name__ == "__main__":

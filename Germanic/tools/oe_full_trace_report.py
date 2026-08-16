@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import re
 import subprocess
 from collections import defaultdict
@@ -47,7 +48,6 @@ BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 STAGES: List[Tuple[str, str]] = [
     ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
     ("GmSimplification", "old_english_sandbox_after_gm_simplification.bin"),
-    ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
     ("RootNounNomZLoss", "old_english_sandbox_after_root_noun_nom_z_loss.bin"),
     ("PNWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin"),
     ("PNWGmcAToUBeforeM", "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin"),
@@ -66,6 +66,7 @@ STAGES: List[Tuple[str, str]] = [
     ("PNWGmcFinalLongORaising", "old_english_sandbox_after_pnwgmc_final_long_o_raising.bin"),
     ("EAFFinalZDeletion", "old_english_sandbox_after_eaf_final_z_deletion.bin"),
     ("MonosyllabicFinalZLoss", "old_english_sandbox_after_monosyllabic_final_z_loss.bin"),
+    ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
     ("PNWGmcUnstressedORaising", "old_english_sandbox_after_pnwgmc_unstressed_o_raising.bin"),
     ("PNWGmcMnDissimilation", "old_english_sandbox_after_pnwgmc_mn_dissimilation.bin"),
     ("PNWGmcNStemNLoss", "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin"),
@@ -472,12 +473,42 @@ def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     return trace
 
 
+def sha256_of(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path) -> List[str]:
+    """Provenance block recording the canonical live inputs of this report.
+
+    Source files (germanic.txt, old_english_sandbox.txt, the TSV) are the
+    freshness contract enforced by test_final_z_firing_populations.py: if the
+    committed report's hashes do not match the live sources, the report is
+    stale. The compiled .bin hash is informational only — foma compilation is
+    byte-non-deterministic, so it is NOT part of the freshness contract.
+    """
+    lines = ["=== PROVENANCE ==="]
+    for label, path in [
+        ("germanic.txt", fsts_dir / "germanic.txt"),
+        ("old_english_sandbox.txt", fsts_dir / "old_english_sandbox.txt"),
+        ("germanic-aligned-final.tsv", tsv_path),
+    ]:
+        lines.append(f"{label} sha256: {sha256_of(path)}")
+    lines.append(f"old_english.bin sha256 (informational): {sha256_of(bin_path)}")
+    lines.append("")
+    return lines
+
+
 def write_report(
     rows: Iterable[Dict[str, str]],
     bin_path: Path,
     bin_dir: Path,
     output_path: Path,
     trace_all: bool = False,
+    provenance: List[str] | None = None,
 ) -> None:
     buckets: Dict[str, List[Dict[str, str]]] = defaultdict(list)
     stage_fires: Dict[str, List[str]] = defaultdict(list)
@@ -538,6 +569,8 @@ def write_report(
     ]
 
     lines: List[str] = []
+    if provenance:
+        lines.extend(provenance)
     for bucket in order:
         items = buckets.get(bucket, [])
         if not items:
@@ -624,7 +657,10 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     rows = load_rows(tsv_path)
-    write_report(rows, bin_path, bin_dir, output_path, trace_all=args.all)
+    fsts_dir = germanic_dir / "fsts"
+    provenance = provenance_lines(tsv_path, bin_path, fsts_dir)
+    write_report(rows, bin_path, bin_dir, output_path, trace_all=args.all,
+                 provenance=provenance)
     print(f"Wrote {output_path}")
 
 

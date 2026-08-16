@@ -26,6 +26,7 @@ extracted from germanic.txt and are skipped when foma is not installed.
 from __future__ import annotations
 
 import csv
+import hashlib
 import re
 import shutil
 import subprocess
@@ -129,6 +130,59 @@ def load_stage_firing_summary() -> dict[str, tuple[int, list[tuple[str, str]]]]:
             summary[current] = (count, pairs)
             current = None
     return summary
+
+
+class TraceReportProvenanceTests(unittest.TestCase):
+    """The committed full trace report must be fresh w.r.t. the live sources.
+
+    tools/oe_full_trace_report.py records sha256 hashes of its canonical live
+    inputs in a PROVENANCE block. If the committed report's hashes do not
+    match the live germanic.txt / old_english_sandbox.txt / TSV, every
+    population assertion in this module would be testing a stale artifact —
+    so this test fails closed and requires regenerating the report.
+    (The compiled .bin hash in the block is informational only: foma
+    compilation is byte-non-deterministic.)
+    """
+
+    LIVE_SOURCES = {
+        "germanic.txt": GERMANIC_DIR / "fsts" / "germanic.txt",
+        "old_english_sandbox.txt": GERMANIC_DIR / "fsts" / "old_english_sandbox.txt",
+        "germanic-aligned-final.tsv": CORPUS_TSV,
+    }
+
+    @staticmethod
+    def _sha256(path: Path) -> str:
+        digest = hashlib.sha256()
+        with path.open("rb") as handle:
+            for chunk in iter(lambda: handle.read(1 << 20), b""):
+                digest.update(chunk)
+        return digest.hexdigest()
+
+    def test_committed_report_matches_live_sources(self):
+        text = FULL_TRACE.read_text(encoding="utf-8")
+        marker = "=== PROVENANCE ==="
+        self.assertIn(marker, text,
+                      "oe_full_trace_report.txt has no PROVENANCE block; "
+                      "regenerate with tools/oe_full_trace_report.py --all")
+        recorded: dict[str, str] = {}
+        for line in text.split(marker, 1)[1].splitlines():
+            line = line.strip()
+            if not line:
+                if recorded:
+                    break
+                continue
+            m = re.match(r"^(\S+) sha256(?: \(informational\))?: ([0-9a-f]{64})$",
+                         line)
+            if m:
+                recorded[m.group(1)] = m.group(2)
+        for label, path in self.LIVE_SOURCES.items():
+            self.assertIn(label, recorded,
+                          f"PROVENANCE block lacks a hash for {label}")
+            self.assertEqual(
+                recorded[label], self._sha256(path),
+                f"committed trace report is STALE w.r.t. {label}; regenerate "
+                "with tools/oe_full_trace_report.py --all before trusting the "
+                "firing-population assertions")
 
 
 class Sc096FiringPopulationTests(unittest.TestCase):

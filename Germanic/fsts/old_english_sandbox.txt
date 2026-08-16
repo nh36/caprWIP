@@ -28,12 +28,10 @@ define SProtoInput EnglishProtoInput;
 # ============================================================================
 define SGmSimplification SProtoInput
     .o. PGmcGmSimplification;
-define SRhotacism SGmSimplification
-    .o. EAFRhotacism;
 
 # SC096 root-noun nominative *-z loss: head of EnglishProtoToOE in
 # germanic.txt (before EarlyEnglishLineChanges/PWGmcIjContraction).
-define SRootNounNomZLoss SRhotacism
+define SRootNounNomZLoss SGmSimplification
     .o. RootNounNomZLoss;
 
 # ============================================================================
@@ -79,7 +77,11 @@ define SEAFFinalZDeletion SPNWGmcFinalLongORaising
     .o. EAFFinalZDeletion;
 define SMonosyllabicFinalZLoss SEAFFinalZDeletion
     .o. MonosyllabicFinalZLoss;
-define SPNWGmcUnstressedORaising SMonosyllabicFinalZLoss
+# SC003 rhotacism after all three final-*z losses: mirrors germanic.txt
+# (R/T vol.2 p.87; Crist 2002 §6).
+define SRhotacism SMonosyllabicFinalZLoss
+    .o. EAFRhotacism;
+define SPNWGmcUnstressedORaising SRhotacism
     .o. PNWGmcUnstressedORaising;
 define SPNWGmcMnDissimilation SPNWGmcUnstressedORaising
     .o. PNWGmcMnDissimilation;
@@ -256,10 +258,6 @@ regex SGmSimplification;
 save stack old_english_sandbox_after_gm_simplification.bin
 
 clear stack
-regex SRhotacism;
-save stack old_english_sandbox_after_rhotacism.bin
-
-clear stack
 regex SRootNounNomZLoss;
 save stack old_english_sandbox_after_root_noun_nom_z_loss.bin
 
@@ -332,6 +330,10 @@ save stack old_english_sandbox_after_eaf_final_z_deletion.bin
 clear stack
 regex SMonosyllabicFinalZLoss;
 save stack old_english_sandbox_after_monosyllabic_final_z_loss.bin
+
+clear stack
+regex SRhotacism;
+save stack old_english_sandbox_after_rhotacism.bin
 
 clear stack
 regex SPNWGmcUnstressedORaising;
