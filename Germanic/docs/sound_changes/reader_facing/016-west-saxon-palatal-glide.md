@@ -61,4 +61,8 @@ before u-lowering, the derivation would have to treat an Old English
 scribal practice as a Northwest Germanic sound change, an ordering that
 no source supports. The witnesses *ġeoc* and *ġeoguþ* between them fix
 both faces of the rule: one shows the convention applied to lowered
-\emph{o}, the other to unlowered \emph{u}.
+\emph{o}, the other to unlowered \emph{u}. The handbook domain is broader
+(it also includes \emph{a}/\emph{ā}/\emph{ō} contexts after word-initial
+palatals), but this executable rule is intentionally complete for the
+currently selected corpus witnesses rather than a maximal dialectal
+enumeration.
