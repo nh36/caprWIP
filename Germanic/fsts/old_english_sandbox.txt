@@ -75,7 +75,11 @@ define SPNWGmcFinalLongORaising SPNWGmcStressedMonosyllableORaising
     .o. PNWGmcFinalLongORaising;
 define SEAFFinalZDeletion SPNWGmcFinalLongORaising
     .o. EAFFinalZDeletion;
-define SMonosyllabicFinalZLoss SEAFFinalZDeletion
+# SC098 PWGmc apocope in unstressed words: mirrors germanic.txt
+# (R/T 2014: 57-58; fed by SC020, bleeds i-umlaut).
+define SPWGmcUnstressedWordFinalIApocope SEAFFinalZDeletion
+    .o. PWGmcUnstressedWordFinalIApocope;
+define SMonosyllabicFinalZLoss SPWGmcUnstressedWordFinalIApocope
     .o. MonosyllabicFinalZLoss;
 # SC003 rhotacism after all three final-*z losses: mirrors germanic.txt
 # (R/T vol.2 p.87; Crist 2002 §6).
@@ -103,13 +107,15 @@ define SOEAwjGlideFormation SEAFAiMonophthongization
     .o. OEAwjGlideFormation;
 define SOEAuFronting SOEAwjGlideFormation
     .o. OEAuFronting;
-define SOEWWSimplification SOEAuFronting
+# SC033 before SC031/SC032: mirrors germanic.txt (geminate-w vocalization
+# is PWGmc, R/T 2014: 41-42; must precede degemination).
+define SOEEwLongDiphthong SOEAuFronting
+    .o. OEEwLongDiphthong;
+define SOEWWSimplification SOEEwLongDiphthong
     .o. OEWWSimplification;
 define SOEDiphthongLeveling SOEWWSimplification
     .o. OEDiphthongLeveling;
-define SOEEwLongDiphthong SOEDiphthongLeveling
-    .o. OEEwLongDiphthong;
-define SOEAwLongDiphthong SOEEwLongDiphthong
+define SOEAwLongDiphthong SOEDiphthongLeveling
     .o. OEAwLongDiphthong;
 define SOEPrefixAReductionEarly SOEAwLongDiphthong
     .o. OEPrefixAReduction;
@@ -328,6 +334,10 @@ regex SEAFFinalZDeletion;
 save stack old_english_sandbox_after_eaf_final_z_deletion.bin
 
 clear stack
+regex SPWGmcUnstressedWordFinalIApocope;
+save stack old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin
+
+clear stack
 regex SMonosyllabicFinalZLoss;
 save stack old_english_sandbox_after_monosyllabic_final_z_loss.bin
 
@@ -380,16 +390,16 @@ regex SOEAuFronting;
 save stack old_english_sandbox_after_oe_au_fronting.bin
 
 clear stack
+regex SOEEwLongDiphthong;
+save stack old_english_sandbox_after_oe_ew_long_diphthong.bin
+
+clear stack
 regex SOEWWSimplification;
 save stack old_english_sandbox_after_oe_ww_simplification.bin
 
 clear stack
 regex SOEDiphthongLeveling;
 save stack old_english_sandbox_after_oe_diphthong_leveling.bin
-
-clear stack
-regex SOEEwLongDiphthong;
-save stack old_english_sandbox_after_oe_ew_long_diphthong.bin
 
 clear stack
 regex SOEAwLongDiphthong;

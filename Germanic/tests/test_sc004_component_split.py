@@ -42,6 +42,10 @@ FST_SOURCE = REPO_ROOT / "Germanic/fsts/germanic.txt"
 
 # Re-frozen 2026-08-14 after the deliberate SC022 literal adjacent-mn correction
 # (heaven -> *xébun, stem -> *stámniz; see audits/heaven-sc022-implementation-2026.md).
+# Since corpus-maturation pass 01 this is the LEGACY-380 SUBSET invariant:
+# the corpus may grow (whole-corpus outputs_sha256 changes with each approved
+# addition), but the original 380 rows must reproduce this hash exactly
+# (summary key legacy_subset_sha256; see cascade_baseline_outputs_legacy380.tsv).
 FROZEN_OUTPUTS_SHA = "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc"
 
 
@@ -176,9 +180,14 @@ class ProductionCascadeTests(unittest.TestCase):
 
     def test_frozen_outputs_preserved(self):
         summary = json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
-        self.assertEqual(summary["outputs_sha256"], FROZEN_OUTPUTS_SHA)
-        self.assertEqual(summary["matched"], 373)
+        self.assertEqual(summary["legacy_subset_sha256"], FROZEN_OUTPUTS_SHA,
+                         "legacy-380 subset outputs drifted")
+        self.assertEqual(summary["legacy_subset_count"], 380)
+        # Fail closed on any mismatching NEW addition too: all approved
+        # corpus-maturation rows must match their attested counterparts, so
+        # the whole-corpus mismatch population stays the legacy 7.
         self.assertEqual(summary["mismatched"], 7)
+        self.assertEqual(summary["matched"], summary["total_lexemes"] - 7)
 
     def test_sc014_body_is_unrestricted_unstressed_ai(self):
         m = re.search(

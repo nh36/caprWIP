@@ -1182,8 +1182,8 @@ define PGmcGmSimplification [{*g} -> 0 || _ {*m}];
 #   SC097 MonosyllabicFinalZLoss  — later northern WGmc loss of *-z in
 #                                   stressed monosyllables, with
 #                                   compensatory lengthening (R/T §3.3.1
-#                                   pp.86-87; presently unwitnessed in the
-#                                   OE baseline)
+#                                   pp.86-87; corpus witness: who
+#                                   *xwáz > hwā)
 # The three environments partition all word-final *z inputs exactly; see
 # Germanic/docs/sound_changes/audits/sc020-three-rule-adjudication.md and
 # Dossiers A/B/C in the same directory. Identifier names are provisional
@@ -1207,6 +1207,29 @@ define EAFFinalZDeletion [{*z} -> 0 ||
     .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,
     .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.];
 define EAFFinalZLoss EAFFinalZDeletion;
+
+# SC098: PWGmc apocope of word-final short high vowels after heavy
+# syllables in unstressed words (R/T 2014: 57-58: "Short high vowels were
+# also lost after heavy syllables in unstressed words ... OE iow 'you
+# (dat. pl.)' definitely does [show early apocope] (since it does not
+# exhibit i-umlaut)"). An exceptionless, prosodically conditioned law:
+# like Verner's law it is governed by accent — here the absence of word
+# stress in clitic sentence forms. The PWGmc doublet *iuwi ~ *iuw (R/T
+# 2014: 41-42) is regular sentence sandhi: the stressed sentence variant
+# kept *-i, the unstressed one lost it, and OE ēow continues the
+# unstressed variant, as its lack of i-umlaut proves. Distinct from
+# SC006 third-syllable i-apocope: stressed disyllables keep final *-i
+# and umlaut (R/T 2014: 55; *gastiz > giest, *fūri > fȳr untouched).
+# The corpus transcription does not mark word-level stresslessness, so
+# the FST states the law through the proxy environment "final *-i after
+# the geminate *ww created by SC008", which in this corpus is exactly
+# coextensive with the law's unstressed-word domain (cf. the SC096 proxy
+# convention). Fed by SC020 (z-loss makes the *-i final); bleeds SC055
+# i-umlaut. See
+# docs/sound_changes/audits/sc098-dossier-unstressed-word-final-i-apocope.md.
+define PWGmcUnstressedWordFinalIApocope [
+    {*i} -> 0 || {*w} {*w} _ .#.
+];
 
 # SC096: consonant-stem (root-noun) nominative *-z loss. Historically a
 # MORPHOLOGICAL development: the nom.sg. marker *-z was eliminated after
@@ -1234,10 +1257,9 @@ define RootNounNomZLoss [{*z} -> 0 || .#. [EnglishStarConsonant | EnglishPalatal
 # *hwaz > hwā, *maiz > mā — mā only via later ai-monophthongization;
 # R/T print cow's history with question marks, so kū is NOT used as a
 # principal control. OHG rhotacizes instead — ir, wir, mēr). Post-PWGmc,
-# northern WGmc/Ingvaeonic scope (Dossier C). ZERO
-# selected witnesses in the OE baseline (the corpus selects oblique
-# cells for cow/night/breast/meed), so this rule fires on no OE-baseline
-# input; it is carried as a genuine but unwitnessed historical change,
+# northern WGmc/Ingvaeonic scope (Dossier C). ONE selected corpus
+# witness: who *xwáz > hwā (corpus-maturation pass 01; the corpus
+# otherwise selects oblique cells for cow/night/breast/meed). Also
 # validated by synthetic unit controls (*hwaz > *hwā, *hiz > *hī with
 # compensatory lengthening; *maiz > *mai with the bimoric nucleus
 # preserved — see test_final_z_firing_populations.py). Bimoric nuclei
@@ -1938,11 +1960,17 @@ define OEWWSimplification [
 ];
 
 # Promote inherited *ew/*iw clusters to the long diphthong tier when the
-# glide stays vocalic (cf. Hogg 1992 §3.3.1 on OE ēo).
+# glide stays vocalic (cf. Hogg 1992 §3.3.1 on OE ēo). The word-final
+# geminate alternative ({*w} .#.) admits the *-ww left by SC098 early
+# apocope: R/T date the geminate-w vocalization to PWGmc itself (*fewwar >
+# PWGmc *feuwar; *iwwi > PWGmc *iuwi ~ *iuw, R/T 2014: 41-42), and OE ēow
+# continues word-final *iuw (cf. Campbell §120.2-3 pp.44-47 on WGmc *iuu >
+# OE iow/eow). See book_dossiers/031-034-west-saxon-diphthong-chain.
 define OEEwLongContext [
     {*w} EnglishWeakTailVowel |
     EnglishWeakTailVowel |
-    EnglishStarVocalic
+    EnglishStarVocalic |
+    {*w} .#.
 ];
 
 define OEEwLongDiphthong [
@@ -1986,10 +2014,20 @@ define EAFBrighteningStressed [
 # vol.2 §3.1 pp.58-59 → §6.8.3 pp.299-300). The "*-ā" here is the
 # length-preserved output of PWGmcSurvivingBimoricOUnrounding; AFB
 # fronts it to *-ǣ, which OEUnstressedLongVowelShortening6 later
-# reduces to *-æ. Narrow context `_ .#.` to avoid touching any
-# root-length *ā in medial position. See DEV_NOTES §17.10.23.
+# reduces to *-æ. Word-final context to avoid touching any
+# root-length *ā in medial position, PLUS the "preceded by another
+# nucleus" guard (same guard as PWGmcSurvivingBimoricOUnrounding):
+# the surviving-bimoric *-ā this clause exists for is the unstressed
+# final syllable of a polysyllable. Without the guard the clause
+# wrongly fronted the long ā of stressed monosyllables created by
+# SC097 monosyllabic final *-z loss: OE hwā 'who' keeps its back
+# vowel on all accounts (R/T 2014: 86 *hwaz > hwā; Campbell §125
+# p.49: "the form with West Gmc. lengthening (OE *hwǣ) does not
+# exist"; Brunner §137 Anm.1 p.129: no æ/ē forms beside hwā). See
+# DEV_NOTES §17.10.23 and
+# docs/sound_changes/audits/corpus-maturation-01-candidate-adjudication.md §1.
 define EAFBrighteningLongFinal [
-    {*ā} -> {*ǣ} || _ .#.
+    {*ā} -> {*ǣ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 define EAFBrightening [
     EAFBrighteningUnstressed .o.
@@ -3220,11 +3258,16 @@ define EnglishProtoToOE (
     # (the *-z satisfies its right-context consonant slot) and wrongly
     # lowers *-u → *-o. See DEV_NOTES §17.10.25.
     .o. EAFFinalZDeletion
+    # SC098 PWGmc early apocope in unstressed words (R/T 2014: 57-58).
+    # Fed by SC020 (the *-i of *iwwiz becomes final only after z-loss);
+    # PWGmc-era, so before the post-PWGmc northern SC097; must precede
+    # SC055 i-umlaut (OE ēow shows none — R/T's own dating argument).
+    .o. PWGmcUnstressedWordFinalIApocope
     # SC097 northern stressed-monosyllable *-z loss (post-PWGmc; Dossier
     # C). MUST stay after the two ō-raisers: its z-loss exposes final
     # vowels that the raisers must not see (e.g. English-doculect *kōz →
-    # *kō must not feed monosyllabic ō-raising). Unwitnessed in the OE
-    # baseline; fires on no selected OE input.
+    # *kō must not feed monosyllabic ō-raising). Corpus witness: who
+    # *xwáz > hwā (corpus-maturation pass 01).
     .o. MonosyllabicFinalZLoss
     # SC003 rhotacism: surviving (non-final) *z → *r. Composed AFTER all
     # three final-*z losses, matching the historical chronology (R/T
@@ -3247,9 +3290,15 @@ define EnglishProtoToOE (
     .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; see sc004_split_movement_proofs.md
     .o. OEAwjGlideFormation
     .o. OEAuFronting
+    # SC033 before SC031/SC032: R/T date geminate-w vocalization to PWGmc
+    # itself (*fewwar > PWGmc *feuwar, R/T 2014: 41-42; Fulk §8.3
+    # pp.204-205), so *ew/*iw promotion to the long-diphthong tier must
+    # see the geminate *ww (word-final in *iww < *izwiz) BEFORE
+    # degemination destroys it. Output-neutral for all 380 legacy rows;
+    # required for ēow. See 031-034-west-saxon-diphthong-chain dossier.
+    .o. OEEwLongDiphthong
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
-    .o. OEEwLongDiphthong
     .o. OEAwLongDiphthong
     # EARLY PREFIX REDUCTION: Unstressed prefix vowels must reduce to *e BEFORE
     # AFB applies. Otherwise, ga- would undergo AFB (*a → *æ) and then breaking
@@ -3427,6 +3476,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcFinalLongORaising
     # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
     .o. EAFFinalZDeletion
+    # SC098 early apocope in unstressed words: mirrors main pipeline.
+    .o. PWGmcUnstressedWordFinalIApocope
     # SC097 northern stressed-monosyllable *-z loss: mirrors main pipeline.
     .o. MonosyllabicFinalZLoss
     # SC003 rhotacism after all final-*z losses: mirrors main pipeline.
@@ -3444,9 +3495,11 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; mirrors EnglishProtoToOE
     .o. OEAwjGlideFormation
     .o. OEAuFronting
+    # SC033 before SC031/SC032: mirrors main pipeline (geminate-w
+    # vocalization is PWGmc; must precede degemination).
+    .o. OEEwLongDiphthong
     .o. OEWWSimplification
     .o. OEDiphthongLeveling
-    .o. OEEwLongDiphthong
     # Inter-stress raising (R/T §6.3.3): *a → *u before AFB/breaking.
     .o. OEInterStressRaising
     # §16.6: strip Nebenton graves after raising (OE-only pipeline).

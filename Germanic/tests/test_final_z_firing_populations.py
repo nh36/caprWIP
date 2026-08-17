@@ -9,13 +9,15 @@ the historical analysis.
   proxy environment (word-final *z after a consonant in a monosyllable) —
   fails the suite and forces historical adjudication (see the GUARD comment
   at the rule definition in Germanic/fsts/germanic.txt).
-- SC020 EAFFinalZDeletion must fire on exactly 110 corpus inputs, including
-  friend/milk/month (adjudication memo §5).
-- SC097 MonosyllabicFinalZLoss must fire on no corpus input (Dossier C:
-  genuine but unwitnessed), and its synthetic controls must genuinely
-  demonstrate loss of final *-z with compensatory lengthening of a short
-  nucleus (*hwaz > *hwā, *hiz > *hī) and nucleus preservation for bimoric
-  inputs (*maiz > *mai; *mā arises only via later ai-monophthongization).
+- SC020 EAFFinalZDeletion must fire on exactly 111 corpus inputs: the 110
+  legacy firings including friend/milk/month (adjudication memo §5) plus
+  you :: *ízwiz (corpus-maturation pass 01).
+- SC097 MonosyllabicFinalZLoss must fire on exactly who :: *xwáz (corpus-
+  maturation pass 01: R&T 2014 p.86; Campbell §125). Its synthetic controls
+  must still genuinely demonstrate loss of final *-z with compensatory
+  lengthening of a short nucleus (*hwaz > *hwā, *hiz > *hī) and nucleus
+  preservation for bimoric inputs (*maiz > *mai; *mā arises only via later
+  ai-monophthongization).
 
 Population tests are host-runnable (no foma/Docker): they read the committed
 full trace report, the committed firing table, and the live TSV. The
@@ -55,8 +57,14 @@ SC096_POPULATION = {
     "goose": "*gánsz",
     "louse": "*lūsz",
 }
-SC020_COUNT = 110
-SC020_MUST_INCLUDE = {"friend": "*fríjōndz", "milk": "*mélukz", "month": "*mḗnōθz"}
+# Legacy SC020 population (the frozen 114-row before/after firing table).
+SC020_LEGACY_TABLE_COUNT = 110
+# Live corpus population: legacy 110 + you (corpus-maturation pass 01).
+SC020_COUNT = 111
+SC020_MUST_INCLUDE = {"friend": "*fríjōndz", "milk": "*mélukz",
+                      "month": "*mḗnōθz", "you": "*ízwiz"}
+# Adjudicated SC097 corpus population (corpus-maturation pass 01 §1).
+SC097_POPULATION = {"who": "*xwáz"}
 
 # Mirrors normalize_proto in tools/oe_full_trace_report.py.
 PROTO_STRIP_RE = re.compile(r"[{}*\s/()]")
@@ -200,7 +208,7 @@ class Sc096FiringPopulationTests(unittest.TestCase):
                          "SC096 firing population changed; a new or lost witness "
                          "requires historical adjudication (Dossier A, memo §6)")
 
-    def test_sc020_fires_on_110_including_friend_milk_month(self):
+    def test_sc020_fires_on_111_including_friend_milk_month_you(self):
         count, pairs = self.summary["EAFFinalZDeletion"]
         self.assertEqual(count, SC020_COUNT)
         as_dict = dict(pairs)
@@ -211,12 +219,14 @@ class Sc096FiringPopulationTests(unittest.TestCase):
             self.assertNotIn(lex, as_dict,
                              f"{lex} must lose *-z under SC096, not SC020")
 
-    def test_sc097_fires_on_no_corpus_input(self):
+    def test_sc097_fires_on_exactly_who(self):
         count, pairs = self.summary["MonosyllabicFinalZLoss"]
-        self.assertEqual((count, pairs), (0, []),
-                         "SC097 is adjudicated as unwitnessed in the OE baseline; "
-                         "a corpus firing requires historical adjudication "
-                         "(Dossier C)")
+        self.assertEqual(count, len(SC097_POPULATION),
+                         "SC097 firing count changed; adjudicate before accepting")
+        self.assertEqual(dict(pairs), SC097_POPULATION,
+                         "SC097 firing population changed; a new or lost witness "
+                         "requires historical adjudication (Dossier C; "
+                         "corpus-maturation-01 adjudication §1)")
 
 
 class FiringTablePartitionTests(unittest.TestCase):
@@ -235,7 +245,8 @@ class FiringTablePartitionTests(unittest.TestCase):
                 row["lexical_item"])
         self.assertEqual(sorted(by_rule),
                          ["SC020 EAFFinalZDeletion", "SC096 RootNounNomZLoss"])
-        self.assertEqual(len(by_rule["SC020 EAFFinalZDeletion"]), SC020_COUNT)
+        self.assertEqual(len(by_rule["SC020 EAFFinalZDeletion"]),
+                         SC020_LEGACY_TABLE_COUNT)
         self.assertEqual(sorted(by_rule["SC096 RootNounNomZLoss"]),
                          sorted(SC096_POPULATION))
 

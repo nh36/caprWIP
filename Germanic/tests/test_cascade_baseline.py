@@ -86,6 +86,53 @@ class BaselineArtifactTests(unittest.TestCase):
                          "baseline rows must be sorted by (proto_norm, counterpart, concept)")
 
 
+class LegacySubsetTests(unittest.TestCase):
+    """Corpus-maturation baseline policy: the original 380-row corpus is a
+    frozen legacy subset. Corpus expansion may change the whole-corpus
+    fingerprint, but every legacy row must persist byte-identically and the
+    legacy-subset hash must reproduce the frozen constant."""
+
+    LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
+    LEGACY_SHA = "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc"
+
+    def setUp(self):
+        self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
+        with self.LEGACY_TSV.open(encoding="utf-8") as handle:
+            self.legacy_rows = list(csv.DictReader(handle, delimiter="\t"))
+        with OUTPUTS_TSV.open(encoding="utf-8") as handle:
+            self.current_rows = list(csv.DictReader(handle, delimiter="\t"))
+        self.summary = json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
+
+    def test_legacy_file_has_exactly_380_rows(self):
+        self.assertEqual(len(self.legacy_rows), 380)
+
+    def test_legacy_file_reproduces_frozen_fingerprint(self):
+        import hashlib
+        hasher = hashlib.sha256()
+        for r in self.legacy_rows:
+            hasher.update((r["proto_norm"] + "\x1f" + r["outputs"] + "\x1e").encode("utf-8"))
+        self.assertEqual(hasher.hexdigest(), self.LEGACY_SHA,
+                         "frozen legacy380 file no longer reproduces the frozen fingerprint")
+
+    def test_every_legacy_row_persists_identically_in_current_baseline(self):
+        current_by_key = {
+            (r["proto_norm"], r["counterpart"], r["concept"]): r
+            for r in self.current_rows
+        }
+        for legacy in self.legacy_rows:
+            key = (legacy["proto_norm"], legacy["counterpart"], legacy["concept"])
+            self.assertIn(key, current_by_key,
+                          f"legacy row {key} missing from current baseline")
+            current = current_by_key[key]
+            for field in ("proto", "accepted", "output_count", "match", "outputs"):
+                self.assertEqual(current[field], legacy[field],
+                                 f"legacy row {key} drifted in field {field!r}")
+
+    def test_summary_records_legacy_subset_invariant(self):
+        self.assertEqual(self.summary["legacy_subset_count"], 380)
+        self.assertEqual(self.summary["legacy_subset_sha256"], self.LEGACY_SHA)
+
+
 class OrderManifestTests(unittest.TestCase):
     def setUp(self):
         self.mod = _load_module("cascade_order_manifest", TOOLS / "cascade_order_manifest.py")
