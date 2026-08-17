@@ -80,11 +80,19 @@ define PWGmcUnstressedWordFinalIApocope [
 
 Scoping rationale, recorded explicitly:
 
-1. R&T describe the change as **lexically and dialectally variable**
-   ("not uniform either lexically or dialectally", with proclisis as the
-   main escape route) [@RingeTaylor2014, pp. 57–58]. A deterministic
-   cascade cannot implement a variable change in full generality without
-   deciding, per lexeme, which variant Old English continued.
+1. **The law is regular and prosodically conditioned.** Like Verner's law,
+   it is governed by accent: word-final short high vowels dropped after
+   heavy syllables in words that carried no word stress. R&T's apparent
+   counterexamples are handled by their own proclisis account — proclitic
+   forms "were not phonologically word-final" and so stood outside the
+   law's environment [@RingeTaylor2014, pp. 57–58]. This project is
+   neogrammarian: we adopt the proclisis account as the systematic
+   explanation and reject R&T's residual hedge that the loss "was variable
+   in any case" — sentence-level accent placement, not lexical diffusion,
+   decides which sandhi variant each language continues. The PWGmc doublet
+   \*iuwi ~ \*iuw is regular sentence sandhi (stressed vs. unstressed
+   sentence forms), and OE continues the unstressed variant, as its lack
+   of i-umlaut proves.
 2. The corpus's protoform notation cannot currently carry word-level
    stresslessness: rows such as \*kūi and \*fūri are stressed words whose
    orthography happens to lack an acute (no stressed long ū/ō symbols),
@@ -92,19 +100,20 @@ Scoping rationale, recorded explicitly:
    \*fūri must keep its \*-i to umlaut to *fȳr*, while a general
    heavy-syllable formulation would equally destroy \*gastiz-type umlaut
    (§2).
-3. The rule is therefore scoped to the segmentally explicit domain in
-   which Old English demonstrably continued the apocopated variant: final
-   \*-i after the geminate \*ww produced by SC008, i.e. the
-   \*izwiz-pronoun class for which R&T print the apocopated PWGmc doublet
-   \*iuw and the umlaut-free OE reflex [@RingeTaylor2014, pp. 41–42,
-   57–58]. If future corpus additions bring in further R&T-supported
-   early-apocope lexemes (e.g. *and* < \*andi), the environment is to be
-   widened on the same evidence-first basis, not pre-emptively.
+3. The rule is therefore stated through a **proxy environment** (cf. the
+   SC096 convention): final \*-i after the geminate \*ww produced by
+   SC008, which in the present corpus is exactly coextensive with the
+   law's unstressed-word domain — the \*izwiz-pronoun class for which R&T
+   print the apocopated PWGmc doublet \*iuw and the umlaut-free OE reflex
+   [@RingeTaylor2014, pp. 41–42, 57–58]. When future corpus additions
+   bring in further unstressed-word lexemes covered by the law (e.g.
+   *and* < \*andi), the proxy environment is to be widened so that it
+   again matches the law's true domain.
 
-This mirrors the precedent of SC096 (`RootNounNomZLoss`), where a
-lexically/morphologically bounded historical development is implemented
-over its evidenced domain rather than as a falsely general phonological
-law.
+This mirrors the precedent of SC096 (`RootNounNomZLoss`), where a regular
+historical development whose true conditioning the notation cannot yet
+express is implemented over an exactly coextensive proxy environment
+rather than as a falsely general phonological law.
 
 ## 5. Interactions checked
 

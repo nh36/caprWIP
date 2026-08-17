@@ -7,6 +7,7 @@ RootNounNomZLoss	PWGmcJGemination	yes
 RootNounNomZLoss	PWGmcSyllabicJ	yes
 RootNounNomZLoss	PWGmcDentalHardening	yes
 RootNounNomZLoss	EAFFinalZDeletion	yes
+RootNounNomZLoss	PWGmcUnstressedWordFinalIApocope	yes
 RootNounNomZLoss	PWGmcFinalBareALoss	no
 RootNounNomZLoss	PWGmcSurvivingBimoricOUnrounding	yes
 RootNounNomZLoss	SieversLawSyncope	no
@@ -18,6 +19,7 @@ PNWGmcUnstressedAiMonophthongization	PWGmcJGemination	yes
 PNWGmcUnstressedAiMonophthongization	PWGmcSyllabicJ	yes
 PNWGmcUnstressedAiMonophthongization	PWGmcDentalHardening	yes
 PNWGmcUnstressedAiMonophthongization	EAFFinalZDeletion	yes
+PNWGmcUnstressedAiMonophthongization	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcUnstressedAiMonophthongization	PWGmcFinalBareALoss	yes
 PNWGmcUnstressedAiMonophthongization	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcUnstressedAiMonophthongization	SieversLawSyncope	yes
@@ -29,6 +31,7 @@ PNWGmcAToUBeforeM	PWGmcJGemination	yes
 PNWGmcAToUBeforeM	PWGmcSyllabicJ	no
 PNWGmcAToUBeforeM	PWGmcDentalHardening	yes
 PNWGmcAToUBeforeM	EAFFinalZDeletion	no
+PNWGmcAToUBeforeM	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcAToUBeforeM	PWGmcFinalBareALoss	no
 PNWGmcAToUBeforeM	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcAToUBeforeM	SieversLawSyncope	no
@@ -40,6 +43,7 @@ PNWGmcILowering	PWGmcJGemination	yes
 PNWGmcILowering	PWGmcSyllabicJ	yes
 PNWGmcILowering	PWGmcDentalHardening	yes
 PNWGmcILowering	EAFFinalZDeletion	yes
+PNWGmcILowering	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcILowering	PWGmcFinalBareALoss	no
 PNWGmcILowering	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcILowering	SieversLawSyncope	no
@@ -51,6 +55,7 @@ PNWGmcULowering	PWGmcJGemination	yes
 PNWGmcULowering	PWGmcSyllabicJ	yes
 PNWGmcULowering	PWGmcDentalHardening	yes
 PNWGmcULowering	EAFFinalZDeletion	yes
+PNWGmcULowering	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcULowering	PWGmcFinalBareALoss	no
 PNWGmcULowering	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcULowering	SieversLawSyncope	no
@@ -62,6 +67,7 @@ PNWGmcStressedMonosyllableORaising	PWGmcJGemination	yes
 PNWGmcStressedMonosyllableORaising	PWGmcSyllabicJ	yes
 PNWGmcStressedMonosyllableORaising	PWGmcDentalHardening	yes
 PNWGmcStressedMonosyllableORaising	EAFFinalZDeletion	yes
+PNWGmcStressedMonosyllableORaising	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcStressedMonosyllableORaising	PWGmcFinalBareALoss	no
 PNWGmcStressedMonosyllableORaising	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcStressedMonosyllableORaising	SieversLawSyncope	no
@@ -73,6 +79,7 @@ PNWGmcFinalLongORaising	PWGmcJGemination	yes
 PNWGmcFinalLongORaising	PWGmcSyllabicJ	yes
 PNWGmcFinalLongORaising	PWGmcDentalHardening	yes
 PNWGmcFinalLongORaising	EAFFinalZDeletion	no
+PNWGmcFinalLongORaising	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcFinalLongORaising	PWGmcFinalBareALoss	no
 PNWGmcFinalLongORaising	PWGmcSurvivingBimoricOUnrounding	no
 PNWGmcFinalLongORaising	SieversLawSyncope	no
@@ -84,6 +91,7 @@ PNWGmcUnstressedORaising	PWGmcJGemination	yes
 PNWGmcUnstressedORaising	PWGmcSyllabicJ	yes
 PNWGmcUnstressedORaising	PWGmcDentalHardening	yes
 PNWGmcUnstressedORaising	EAFFinalZDeletion	yes
+PNWGmcUnstressedORaising	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcUnstressedORaising	PWGmcFinalBareALoss	yes
 PNWGmcUnstressedORaising	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcUnstressedORaising	SieversLawSyncope	no
@@ -95,6 +103,7 @@ PNWGmcMnDissimilation	PWGmcJGemination	yes
 PNWGmcMnDissimilation	PWGmcSyllabicJ	yes
 PNWGmcMnDissimilation	PWGmcDentalHardening	yes
 PNWGmcMnDissimilation	EAFFinalZDeletion	yes
+PNWGmcMnDissimilation	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcMnDissimilation	PWGmcFinalBareALoss	yes
 PNWGmcMnDissimilation	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcMnDissimilation	SieversLawSyncope	yes
@@ -106,6 +115,7 @@ PNWGmcNStemNLoss	PWGmcJGemination	yes
 PNWGmcNStemNLoss	PWGmcSyllabicJ	yes
 PNWGmcNStemNLoss	PWGmcDentalHardening	yes
 PNWGmcNStemNLoss	EAFFinalZDeletion	yes
+PNWGmcNStemNLoss	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcNStemNLoss	PWGmcFinalBareALoss	no
 PNWGmcNStemNLoss	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcNStemNLoss	SieversLawSyncope	yes
@@ -117,6 +127,7 @@ PNWGmcLongELowering	PWGmcJGemination	yes
 PNWGmcLongELowering	PWGmcSyllabicJ	yes
 PNWGmcLongELowering	PWGmcDentalHardening	yes
 PNWGmcLongELowering	EAFFinalZDeletion	no
+PNWGmcLongELowering	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcLongELowering	PWGmcFinalBareALoss	yes
 PNWGmcLongELowering	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcLongELowering	SieversLawSyncope	yes
@@ -128,6 +139,7 @@ PNWGmcLongENasalRounding	PWGmcJGemination	yes
 PNWGmcLongENasalRounding	PWGmcSyllabicJ	yes
 PNWGmcLongENasalRounding	PWGmcDentalHardening	yes
 PNWGmcLongENasalRounding	EAFFinalZDeletion	yes
+PNWGmcLongENasalRounding	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcLongENasalRounding	PWGmcFinalBareALoss	yes
 PNWGmcLongENasalRounding	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcLongENasalRounding	SieversLawSyncope	yes
@@ -139,6 +151,7 @@ PNWGmcPreconsonantalXLoss	PWGmcJGemination	no
 PNWGmcPreconsonantalXLoss	PWGmcSyllabicJ	no
 PNWGmcPreconsonantalXLoss	PWGmcDentalHardening	yes
 PNWGmcPreconsonantalXLoss	EAFFinalZDeletion	no
+PNWGmcPreconsonantalXLoss	PWGmcUnstressedWordFinalIApocope	yes
 PNWGmcPreconsonantalXLoss	PWGmcFinalBareALoss	yes
 PNWGmcPreconsonantalXLoss	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcPreconsonantalXLoss	SieversLawSyncope	no
@@ -150,6 +163,7 @@ NWGmcInStemNLoss	PWGmcJGemination	yes
 NWGmcInStemNLoss	PWGmcSyllabicJ	yes
 NWGmcInStemNLoss	PWGmcDentalHardening	yes
 NWGmcInStemNLoss	EAFFinalZDeletion	yes
+NWGmcInStemNLoss	PWGmcUnstressedWordFinalIApocope	yes
 NWGmcInStemNLoss	PWGmcFinalBareALoss	no
 NWGmcInStemNLoss	PWGmcSurvivingBimoricOUnrounding	yes
 NWGmcInStemNLoss	SieversLawSyncope	yes

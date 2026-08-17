@@ -18,11 +18,14 @@ it must be checked lexically and understood.
 
 ## Summary (current snapshot)
 
-- pairs tested: 130  (13 early PNWGmc/NWGmc x 10 PWGmc; SC012 `EAFLThVoicing` left this matrix on becoming EAF)
-- commute: 103
-- non-commute: 27
-  - the reorder **preserves** (PNWGmc already before PWGmc): 17
+- pairs tested: 168  (14 early PNWGmc/NWGmc x 12 PWGmc; SC012 `EAFLThVoicing` left this matrix on becoming EAF; SC096 `RootNounNomZLoss` and SC098 `PWGmcUnstressedWordFinalIApocope` joined it in the final-z split and corpus-maturation-01 passes)
+- commute: 135
+- non-commute: 33
+  - the reorder **preserves** (PNWGmc already before PWGmc): 23
   - the reorder would **swap** (PWGmc currently before a non-commuting PNWGmc rule): 10
+
+SC098 commutes with every PNWGmc-stage rule (no shared environments), so the
+corpus-maturation-01 additions introduce no new reorder-relevant pairs.
 
 Only the 10 swap pairs below are reorder-relevant. Non-commutation over
 the input language is a **flag for lexical investigation, not a veto**: a
