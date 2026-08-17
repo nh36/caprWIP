@@ -492,8 +492,8 @@ SC092	Old English Orthography	OldEnglishOrthography	sandbox_stage_name		Germanic
 SC092	Old English Orthography	OldEnglishOrthography	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
 SC092	Old English Orthography	Old English Orthography	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC093	OE Glide U To EO	OE Glide U To EO	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC093	OE Glide U To EO	OEGlideUToEO	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC093	OE Glide U To EO	OEGlideUToEO	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC093	OE Glide U To EO	OEGlideUToEO	sandbox_stage_name	retired alias: absorbed into repaired SC016 OEWsPalatalGlide (sc016-017-adjudication.md)	sc016-017-adjudication.md
+SC093	OE Glide U To EO	OEGlideUToEO	foma_rule_name	retired alias: absorbed into repaired SC016 OEWsPalatalGlide (sc016-017-adjudication.md)	sc016-017-adjudication.md
 SC093	OE Glide U To EO	Old English Glide U To EO	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC093	OE Glide U To EO	OE Glide U To EO	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC094	Old English Remove Stars	Old English Remove Stars	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md

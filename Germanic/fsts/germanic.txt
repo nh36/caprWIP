@@ -821,20 +821,35 @@ define OECjCleanup [
     {*ʤ} {*j} -> {*ʤ}
 ];
 
-# OEGlideUToEO: Convert palatal glide + u to eo diphthong (orthographic)
-# Campbell §172: "A palatal glide + u is written eo, io or iu in W-S and Kt."
-# R/T vol.2 p.5: "geoc 'yoke' is /jok/" — the eo is purely orthographic for /o/.
-# Brunner §92.1: geong, geoc with eo for u after initial j.
-# Luick §169: Rising diphthongs iu, eo after palatals with level stress.
+# SC016 OEWsPalatalGlide — WS glide spelling of back vowels after initial ġ.
+# Adjudication: Germanic/docs/sound_changes/audits/sc016-017-adjudication.md.
 #
-# The glide *e was inserted by OEWsPalatalGlide: *juk → *jeuk.
-# At this point OldEnglishOrthography has converted *j → ġ.
-# We now merge the glide+u sequence into the digraph *eo.
+# After word-initial ġ /j/, Old English scribes wrote a palatal-glide letter
+# before back vowels; the normalized (late) WS digraph is ⟨eo⟩:
+#   - o-subcase (< NWGmc u-lowering): *jok → ġeoc 'yoke'
+#     (Brunner §92.1b pp.64-65; Bülbring §299 p.120 "aus wg. *jok";
+#      Campbell §115 p.43 lists geoc under u > o, cf. §§172-173)
+#   - u-subcase (lowering blocked by following high vowel): *juguθ → ġeoguþ
+#     (Brunner §92.1a; Bülbring §298; Campbell §172; Luick §169 pp.158-159)
+# R/T p.5: "After word-initial /j/ followed by a back vowel that practice
+# was universal … geoc 'yoke' is /jok/" — the ⟨e⟩ is orthographic; Hogg,
+# CHEL I p.112 concurs (back-vowel cases "never anything more than an
+# orthographic variation", contra Campbell §176). The older school
+# (Campbell §44; Luick §169 "schwebende Diphthonge"; Brunner §92;
+# Bülbring §§47, 298-299) reads the same spellings as rising diphthongs;
+# either way the nucleus remains the back vowel and the practice is an
+# OE-period development fed by NWGmc u-lowering (SC017 < SC016).
 #
-# NOTE: ġ{*e}{*u} → ġ{*eo} because eo is the normalized WS spelling.
-# Northumbrian iu spellings (giung) are dialectal variants not modeled here.
-define OEGlideUToEO [
-    {*e} {*u} -> {*eo} || [ġ|ċ|{sċ}] _
+# Restricted to word-initial ġ: after /tʃ ʃ/ the practice was not universal
+# (R/T p.5; Hogg p.112 on sc(e)op-type inconsistency). The ā/ō subcases
+# (geara, geōmor) are documented in the adjudication but unexercised by
+# the corpus. Early-WS io (gioc) and Anglian iu (giung) spellings are
+# dialectal variants not modeled here.
+define OEWsPalatalGlide [
+    {*ó} -> {*éo} || .#. ġ _ ,
+    {*ú} -> {*éo} || .#. ġ _ ,
+    {*o} -> {*eo} || .#. ġ _ ,
+    {*u} -> {*eo} || .#. ġ _
 ];
 
 define OldEnglishRemoveStars [
@@ -2970,28 +2985,14 @@ define OEVelarFricativePalatalization [
 ]
     .o. EnglishStarAlphabet*;
 
-# Campbell §§171-172: WS palatal glide before back vowels.
-# After initial palatalized consonants, a glide vowel develops before back vowels.
-# Examples: *juką → ġeoc 'yoke', *jungaz → ġeong 'young', *jugunþiz → ġeoguþ 'youth'
-# Campbell §172: "for Prim. Gmc. initial *jū we find iū (gū), giū, geū... geoc yoke"
-# The glide+u combination is written 'eo' or 'io' in WS.
-# Only applies word-initially (Campbell: "initial *jū").
-define OEWsPalatalGlide [
-    # WS palatal glide insertion: insert *e between initial palatal and *u
-    # Creates *eo (later eo) — Campbell §§171-172: geoc 'yoke', geoguþ 'youth'
-    # Cannot use epenthesis (0 ->) with multichar symbols; use direct replacement.
-    {*j} {*u} -> {*j} {*e} {*u} || .#. _,
-    {*j} {*ú} -> {*j} {*é} {*u} || .#. _
-] .o. [
-    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _,
-    {*ʤ} {*ú} -> {*ʤ} {*é} {*u} || .#. _
-] .o. [
-    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _,
-    {*ʧ} {*ú} -> {*ʧ} {*é} {*u} || .#. _
-] .o. [
-    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _,
-    {*ʃ} {*ú} -> {*ʃ} {*é} {*u} || .#. _
-];
+# NOTE (SC016 repair, sc016-017-adjudication.md): OEWsPalatalGlide formerly
+# stood here as an early phonological *e-insertion between initial palatals
+# and *u. That formulation was historically wrong on stage, domain, and
+# status: the ⟨eo⟩ of ġeoc/ġeoguþ is the OE West Saxon glide spelling of a
+# BACK vowel after word-initial ġ (Campbell §44; Brunner §92.1; Bülbring
+# §§298-299; R/T p.5: geoc is /jok/), applied AFTER NWGmc u-lowering had
+# produced *jok (Fulk §4.3 p.56; Campbell §115). The rule now lives in the
+# orthography/surface block (see OEWsPalatalGlide below OldEnglishOrthography).
 
 # Pragmatic approach: encode heavy-syllable apocope directly rather than using
 # a two-step mark-then-delete system (which misbehaves under composition due to
@@ -3236,9 +3237,10 @@ define EnglishProtoToOE (
     RootNounNomZLoss
     .o. EarlyEnglishLineChanges
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
-    # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
-    # Must precede u-lowering so we can see *u; rule targets initial *j/*ʤ/*ʧ/*ʃ + *u.
-    .o. OEWsPalatalGlide
+    # SC016 OEWsPalatalGlide no longer fires here: it is an OE-period WS
+    # glide-spelling convention and now sits in the orthography block
+    # (sc016-017-adjudication.md). U-lowering must see *júką → *jóką
+    # (Fulk §4.3 p.56; Campbell §115; R/T PWGmc paradigm jok, p.129).
     .o. PNWGmcULowering
     # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (nom.sg.
     # *gebō etc.). Must fire AFTER PNWGmcULowering — U-lowering needs
@@ -3467,8 +3469,7 @@ define EnglishAfterWestGermanic EnglishAfterConsonantRules
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
-    # WS palatal glide: insert *e before *u after initial palatal (Campbell §§171-172)
-    .o. OEWsPalatalGlide
+    # SC016 moved to orthography block (sc016-017-adjudication.md).
     .o. PNWGmcULowering
     # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
     # §17.31: stressed monosyllable rule fires first.
@@ -3586,7 +3587,9 @@ define OldEnglishRules OldEnglishAfterEpenthesis
     .o. OECjCleanup
     .o. OEXsMerge
     .o. OldEnglishOrthography
-    .o. OEGlideUToEO
+    # SC016: WS glide spelling after word-initial ġ (needs ġ from
+    # OldEnglishOrthography; see adjudication dossier).
+    .o. OEWsPalatalGlide
     .o. OldEnglishRemoveStars;
 
 define OldEnglishReflexes OldEnglishRules .o. OldEnglishSurface;

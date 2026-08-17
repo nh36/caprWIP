@@ -431,60 +431,28 @@ Comparative evidence establishes the sound law; the present lexicon leaves its e
 
 \newpage
 
-# West Saxon palatal glide before back vowels
-
-## Historical discussion
-
-West Saxon spellings such as *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ*
-'youth' reflect an early Old English development before back vowels. Campbell gives the
-most direct handbook statement of the phenomenon [@Campbell1959, p. 17, §44].
-
-The sources establish [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), although the lexical evidence establishes only a later boundary. The rule is computationally
-positioned before [SC017 PNWGmcULowering](#rule-PNWGmcULowering) because the
-derivation of *ġeoc* 'yoke' requires glide insertion before u-lowering applies. That
-computational dependency places [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) in the Old English section of the cascade
-even though the cascade position precedes many Northwest Germanic changes.
-
-## \CAPRRuleHeading{SC016. West Saxon palatal glide before back vowels}{OEWsPalatalGlide} {#rule-OEWsPalatalGlide}
-
-```foma
-define OEWsPalatalGlide [
-    {*j} {*u} -> {*j} {*e} {*u} || .#. _,
-    {*j} {*ú} -> {*j} {*é} {*u} || .#. _
-] .o. [
-    {*ʤ} {*u} -> {*ʤ} {*e} {*u} || .#. _,
-    {*ʤ} {*ú} -> {*ʤ} {*é} {*u} || .#. _
-] .o. [
-    {*ʧ} {*u} -> {*ʧ} {*e} {*u} || .#. _,
-    {*ʧ} {*ú} -> {*ʧ} {*é} {*u} || .#. _
-] .o. [
-    {*ʃ} {*u} -> {*ʃ} {*e} {*u} || .#. _,
-    {*ʃ} {*ú} -> {*ʃ} {*é} {*u} || .#. _
-];
-```
-
-OE *ġeoc* 'yoke' fixes the close relation between glide insertion before back-vocalic \emph{u} and the following change.
-
-If glide insertion follows [SC017 PNWGmcULowering](#rule-PNWGmcULowering), PGmc [júką]{.recon} 'yoke' yields [*ġoc*]{.pred} rather than expected OE *ġeoc* 'yoke'; earlier placement changes no output. The witness therefore dates [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) before u-lowering without supplying an earlier boundary. The *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ* 'youth' material establishes the lexical scope of the West Saxon development.
-
-\newpage
-
 # Northwest Germanic u-lowering
 
 ## Historical discussion
 
-The derivation of *ġeoc* 'yoke' passes through both this change and the
-preceding West Saxon palatal glide ([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)).
-Campbell treats the West Saxon rising-diphthong spellings before back vowels,
-while the same handbook tradition describes the lowering of \emph{u} before a
-following non-high vowel separately [@Campbell1959, p. 17, §44;
-@Campbell1959, pp. 42--43, §115; @Fulk2018, p. 56, §4.3].
-The first change creates the West Saxon \emph{ġeoc} type; u-lowering then
-carries the same material into the subsequent vowel history.
+Northwest Germanic lowered \emph{*u} to \emph{*o} when the following
+syllable contained a non-high vowel. Campbell describes the change and
+lists *ġeoc* 'yoke' among its regular outcomes [@Campbell1959, pp. 42--43,
+§115]; Fulk gives the same word as a standard example — "OIcel. ok, OE
+geoc, OHG joh beside juh and OS juk" — and notes the paradigmatic
+alternation between lowered and unlowered stems that the conditioning
+produced [@Fulk2018, p. 56, §4.3]. A word-initial \emph{*j} does not block
+the change: the blocking effect of \emph{j} concerns only a consonantal
+\emph{j} standing between the target vowel and the conditioning vowel, as
+in the class I weak verbs of the *cnyssan* 'strike' type
+[@Fulk2018, p. 56, §4.3]. Ringe and Taylor accordingly reconstruct the
+Proto-West Germanic paradigm of 'yoke' with the lowering applied
+[@RingeTaylor2014, p. 129].
 
-After the glide-conditioned West Saxon spellings are in place, the broader Northwest Germanic lowering of \emph{u} to \emph{o} before a following non-high vowel provides the clearest standard sound change in this small region. Campbell and Fulk both describe that change directly [@Campbell1959, pp. 42--43, §115; @Fulk2018, p. 56, §4.3].
-
-[SC017 PNWGmcULowering](#rule-PNWGmcULowering) thus rests on a broader source base than the preceding West Saxon rule.
+The clearest corpus witnesses are *ġeoc*, *nosu* 'nose', *sċofl* 'shovel',
+and *sorg* 'sorrow'. Where the following syllable kept a high vowel the
+lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
+survived [@SieversBrunner1965, pp. 64--65, §92.1].
 
 ## \CAPRRuleHeading{SC017. Lowering of \emph{*u} before following non-high vowels}{PNWGmcULowering} {#rule-PNWGmcULowering}
 
@@ -501,9 +469,22 @@ define PNWGmcULowering [
 ];
 ```
 
-Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* 'yoke', *nosu* 'nose', *sċofl* 'shovel', and *sorg* 'sorrow'.
+Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc*,
+*nosu*, *sċofl*, and *sorg*.
 
-Before [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide), PGmc [júką]{.recon} 'yoke' yields [*ġoc*]{.pred} rather than expected OE *ġeoc* 'yoke'. After [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected *nosu* 'nose', PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected *sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather than expected *sorg* 'sorrow'. The two witness sets place [SC017 PNWGmcULowering](#rule-PNWGmcULowering) after glide formation and before final long-\emph{o} raising.
+The lowering feeds the much later West Saxon palatal-glide spelling
+([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)): the \emph{o} that the
+scribes wrote in *ġeoc* is the output of this change, so PGmc
+[júką]{.recon} 'yoke' passes through \emph{*joką} on its way to the
+attested spelling [@Fulk2018, p. 56, §4.3; @RingeTaylor2014, p. 129].
+After [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc
+[núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected *nosu*,
+PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected
+*sċofl*, and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather
+than expected *sorg*. These witnesses place
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering) before final long-\emph{o}
+raising, and the *ġeoc* spelling shows its output surviving into the
+written record.
 
 \newpage
 
@@ -1101,7 +1082,8 @@ Not every change in this chapter has pan-Old-English scope. Some changes — mos
 notably West Saxon palatal umlaut (SC060), the back-mutation rules (SC059), and
 the West Saxon diphthong chain (SC031–SC034) — are specifically West Saxon or
 more broadly southern Old English phenomena. (The West Saxon palatal-glide
-effects, SC016, execute early in the cascade and are treated in Chapter 1.)
+spellings, SC016, belong to the written surface of Old English and are treated
+in Chapter 4.)
 
 The CAPR derivations target West Saxon Old English citation forms as the default
 comparator. Changes that belong to other dialects, or that are absent from West
@@ -2828,6 +2810,111 @@ Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstan
 The lexical evidence fixes the earlier relation but does not identify a corresponding
 later constraint. The sources treat r-metathesis as a late rearrangement after
 breaking without placing it immediately beside contraction.
+
+\newpage
+
+# Chapter 4. Old English orthography and the written surface
+
+
+## Historical interval
+
+This short chapter stands apart from the derivational chapters that precede
+it. The changes of Chapters 1–3 are sound changes: they altered the spoken
+form of the language. The material treated here belongs instead to the
+written surface of Old English — scribal conventions that determined how the
+results of the completed phonological history were committed to parchment.
+
+In the executable model these conventions apply after every phonological
+rule, at the very end of the cascade, because that is where they belong
+historically: a spelling practice can only render forms that the spoken
+language had already produced.
+
+## Scope
+
+The one rule treated here is the West Saxon palatal-glide spelling (SC016),
+by which back vowels following word-initial [j] — spelled *g* — came to be
+written with a preceding front glide letter, as in *geoc* 'yoke' for spoken
+[jok] and *geoguþ* 'youth' for a form whose root vowel remained [u]. Ringe and Taylor state the modern assessment
+directly: the *eo* of *geoc* is a spelling convention, and the word was
+pronounced [jok] [@RingeTaylor2014, p. 5]. Hogg reaches the same verdict for
+the back-vowel cases generally [@Hogg1992, p. 112]. The older handbooks —
+Campbell, Brunner, Bülbring, Luick — analysed the same spellings as rising
+diphthongs; the section below presents both views
+[@Campbell1959, p. 17, § 44; @SieversBrunner1965, pp. 64--65, § 92].
+
+## Sources
+
+Ringe and Taylor provide the modern phonological interpretation
+[@RingeTaylor2014, p. 5]. Campbell [@Campbell1959, pp. 17, 64--67, §§ 44, 170--176], Brunner
+[@SieversBrunner1965, pp. 64--65, § 92], and Bülbring
+[@Bulbring1902, p. 120, §§ 298--299] document the
+distribution of the spellings; Hogg supplies the critical reassessment
+[@Hogg1992, p. 112].
+
+# West Saxon palatal-glide spelling before back vowels
+
+## Historical discussion
+
+West Saxon spellings such as *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ*
+'youth' write a front glide letter between a word-initial palatal and a
+following back vowel. Campbell describes the phenomenon as the development
+of rising diphthongs when "palatal glides developed before back vowels"
+and cites *ġeoc* directly [@Campbell1959, p. 17, §44]; Brunner separates
+the \emph{u}-cases (*ġeong*, *ġeoguþ*) from the \emph{o}-cases (*ġioc*,
+*ġeoc*) [@SieversBrunner1965, pp. 64--65, §92.1]; Bülbring likewise treats
+*iuguð* and *iuc* under \emph{ju} but derives *ġioc*, *ġeoc* from West
+Germanic \emph{*jok} [@Bulbring1902, p. 120, §§298--299]; and Luick groups
+all of these under his "schwebende Diphthonge" after palatal onsets
+[@Luick1914, pp. 158--159, §169].
+
+The phonological interpretation of these spellings is disputed. The older
+handbook tradition — Campbell, Brunner, Bülbring, Luick — reads them as
+genuine rising diphthongs. The modern assessment is orthographic: Ringe and
+Taylor state flatly that *ġeoc* "is /jok/", the digraph being a spelling
+convention that became universal after word-initial /j/
+[@RingeTaylor2014, p. 5], and Hogg concludes that the back-vowel cases were
+"never anything more than an orthographic variation", judging Campbell's
+arguments to the contrary "insubstantial" [@Hogg1992, p. 112;
+@Campbell1959, pp. 66--67, §176]. This model follows Ringe and Taylor and
+Hogg: the rule is a spelling convention applied to the finished phonology,
+and it therefore stands at the end of the derivation, in the written-surface
+stage of the cascade.
+
+Its position also settles a relative chronology. The \emph{o} of *ġeoc*
+is itself the product of Northwest Germanic u-lowering
+([SC017 PNWGmcULowering](#rule-PNWGmcULowering)): Fulk lists *ġeoc* as a
+regular lowering example beside OIcel *ok* and OHG *joh*
+[@Fulk2018, p. 56, §4.3], and Campbell gives *ġeoc* among the regular
+\emph{u} > \emph{o} words [@Campbell1959, p. 43, §115]. The lowering
+therefore feeds the spelling: first \emph{*juk-} became \emph{*jok-} in
+Northwest Germanic, and only much later did West Saxon scribes write the
+result as *ġeoc*. Where lowering did not apply, as in *ġeoguþ* 'youth',
+whose root \emph{u} was protected by the high vowel of the following
+syllable, the same convention wrote the retained \emph{u} with the same
+digraph [@SieversBrunner1965, pp. 64--65, §92.1].
+
+## \CAPRRuleHeading{SC016. West Saxon palatal-glide spelling before back vowels}{OEWsPalatalGlide} {#rule-OEWsPalatalGlide}
+
+```foma
+define OEWsPalatalGlide [
+    {*ó} -> {*éo} || .#. ġ _ ,
+    {*ú} -> {*éo} || .#. ġ _ ,
+    {*o} -> {*eo} || .#. ġ _ ,
+    {*u} -> {*eo} || .#. ġ _
+];
+```
+
+The rule rewrites a back vowel after word-initial *ġ* as the digraph
+spelling, covering both the lowered \emph{o}-cases (*ġeoc*) and the
+retained \emph{u}-cases (*ġeoguþ*). Because it is a convention of the
+written language, it applies after every phonological change; in
+particular it follows [SC017 PNWGmcULowering](#rule-PNWGmcULowering),
+which supplies the \emph{o} of *ġeoc*. If the spelling rule were placed
+before u-lowering, the derivation would have to treat an Old English
+scribal practice as a Northwest Germanic sound change, an ordering that
+no source supports. The witnesses *ġeoc* and *ġeoguþ* between them fix
+both faces of the rule: one shows the convention applied to lowered
+\emph{o}, the other to unlowered \emph{u}.
 
 \newpage
 

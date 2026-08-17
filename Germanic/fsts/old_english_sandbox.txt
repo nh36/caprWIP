@@ -6,7 +6,7 @@ source fsts/germanic.txt
 #   OldEnglishCore     = EnglishProtoInput .o. EarlyGermanicConsonantPipeline .o. EnglishProtoToOE
 #   OldEnglishReflexes = OldEnglishCore .o. OEEpentheticVowel .o.
 #                        OELateUnstressedAgSuffix .o. OECjCleanup .o. OEXsMerge .o.
-#                        OldEnglishOrthography .o. OEGlideUToEO .o.
+#                        OldEnglishOrthography .o. OEWsPalatalGlide .o.
 #                        OldEnglishRemoveStars .o. OldEnglishSurface
 #
 # Every rule that appears in that chain gets ITS OWN snapshot here. Bundles
@@ -65,9 +65,9 @@ define SPWGmcDentalHardening SEAFLThVoicing
 # ============================================================================
 define SPNWGmcILowering SPWGmcDentalHardening
     .o. PNWGmcILowering;
-define SOEWsPalatalGlide SPNWGmcILowering
-    .o. OEWsPalatalGlide;
-define SPNWGmcULowering SOEWsPalatalGlide
+# SC016 OEWsPalatalGlide moved to the orthography block (sc016-017
+# adjudication): u-lowering fires directly on *júką → *jóką.
+define SPNWGmcULowering SPNWGmcILowering
     .o. PNWGmcULowering;
 define SPNWGmcStressedMonosyllableORaising SPNWGmcULowering
     .o. PNWGmcStressedMonosyllableORaising;
@@ -234,9 +234,10 @@ define SOEXsMerge SOECjCleanup
     .o. OEXsMerge;
 define SOldEnglishOrthography SOEXsMerge
     .o. OldEnglishOrthography;
-define SOEGlideUToEO SOldEnglishOrthography
-    .o. OEGlideUToEO;
-define SOldEnglishRemoveStars SOEGlideUToEO
+# SC016 in its historical OE position: WS glide spelling after initial ġ.
+define SOEWsPalatalGlide SOldEnglishOrthography
+    .o. OEWsPalatalGlide;
+define SOldEnglishRemoveStars SOEWsPalatalGlide
     .o. OldEnglishRemoveStars;
 define SOldEnglishSurface SOldEnglishRemoveStars
     .o. OldEnglishSurface;
@@ -312,10 +313,6 @@ save stack old_english_sandbox_after_pwgmc_dental_hardening.bin
 clear stack
 regex SPNWGmcILowering;
 save stack old_english_sandbox_after_pnwgmc_i_lowering.bin
-
-clear stack
-regex SOEWsPalatalGlide;
-save stack old_english_sandbox_after_oe_ws_palatal_glide.bin
 
 clear stack
 regex SPNWGmcULowering;
@@ -631,8 +628,8 @@ regex SOldEnglishOrthography;
 save stack old_english_sandbox_after_old_english_orthography.bin
 
 clear stack
-regex SOEGlideUToEO;
-save stack old_english_sandbox_after_oe_glide_u_to_eo.bin
+regex SOEWsPalatalGlide;
+save stack old_english_sandbox_after_oe_ws_palatal_glide.bin
 
 clear stack
 regex SOldEnglishRemoveStars;

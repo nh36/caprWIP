@@ -1,5 +1,16 @@
 # SC017 NWGmc U Lowering — chronology evidence card
 
+## 2026 adjudication supersession
+
+The "earlier boundary at SC016" recorded below was measured against the
+SUPERSEDED early implementation of SC016 and is retracted: the
+adjudication `sc016-017-adjudication.md` established that SC017 FEEDS
+SC016 (*juką > *joką > ġeoc; Fulk §4.3 p. 56; Campbell §115; Brunner
+§92.1), and the repaired SC016 now executes in the Old English
+written-surface block. SC017's formulation was confirmed unchanged. The
+later boundary against SC019 (nose/shovel/sorrow) remains valid. The
+pilot data are retained below as a historical record.
+
 ## Current position
 - current_order: `17`
 - rule_name: `PNWGmcULowering`

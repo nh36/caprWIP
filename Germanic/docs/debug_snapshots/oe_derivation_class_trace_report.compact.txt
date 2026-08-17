@@ -7232,13 +7232,14 @@ Proto Input: *júką
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>OE Ws Palatal Glide: *jéuką<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *jéoką<br>OE Heavy Syllable Nasal Apocope: *jéok |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *jóką<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *jók |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: ġ*éok
+Old English Orthography: ġ*ók
+OE Ws Palatal Glide: ġ*éok
 Outcome: ġeoc
 
 
@@ -8149,13 +8150,14 @@ Proto Input: *júgunθ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>OE Ws Palatal Glide: *jéugunθ<br>EAF Nasal Spirant Lengthening: *jéugūnθ<br>EAF Nasal Spirant Loss: *jéugūθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *jéogūθ<br>OE Unstressed Long Vowel Shortening: *jéoguθ |
+| **Northwest and West Germanic**<br>EAF Nasal Spirant Lengthening: *júgūnθ<br>EAF Nasal Spirant Loss: *júgūθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *júguθ |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: ġ*éoguþ
+Old English Orthography: ġ*úguþ
+OE Ws Palatal Glide: ġ*éoguþ
 Outcome: ġeoguþ
 
 NOTE: PROTOFORM *jugunθ (without -iz): (1) Early i-apocope: R/T §6.8.1 shows final *-i lost after heavy syllable BEFORE i-umlaut. R/T vol.2 p.141: "*jugunþi > *juguþ". Campbell §332: "duguþ < *dugunþ-, and so geoguþ". (2) Medial u preserved: Campbell §373 "u always well preserved after accented u" (vowel harmony). Contrast *xaubudą > hēafod (au, not u, so u→o). See DEV_NOTES.md §14.9 for full documentation.

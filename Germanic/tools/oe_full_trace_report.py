@@ -60,7 +60,6 @@ STAGES: List[Tuple[str, str]] = [
     ("EAFLThVoicing", "old_english_sandbox_after_eaf_l_th_voicing.bin"),
     ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
     ("PNWGmcILowering", "old_english_sandbox_after_pnwgmc_i_lowering.bin"),
-    ("OEWsPalatalGlide", "old_english_sandbox_after_oe_ws_palatal_glide.bin"),
     ("PNWGmcULowering", "old_english_sandbox_after_pnwgmc_u_lowering.bin"),
     ("PNWGmcStressedMonosyllableORaising", "old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin"),
     ("PNWGmcFinalLongORaising", "old_english_sandbox_after_pnwgmc_final_long_o_raising.bin"),
@@ -139,7 +138,7 @@ STAGES: List[Tuple[str, str]] = [
     ("OECjCleanup", "old_english_sandbox_after_oe_cj_cleanup.bin"),
     ("OEXsMerge", "old_english_sandbox_after_oe_xs_merge.bin"),
     ("OldEnglishOrthography", "old_english_sandbox_after_old_english_orthography.bin"),
-    ("OEGlideUToEo", "old_english_sandbox_after_oe_glide_u_to_eo.bin"),
+    ("OEWsPalatalGlide", "old_english_sandbox_after_oe_ws_palatal_glide.bin"),
     ("OldEnglishRemoveStars", "old_english_sandbox_after_old_english_remove_stars.bin"),
     ("OldEnglishSurface", "old_english_sandbox_after_old_english_surface.bin"),
 ]

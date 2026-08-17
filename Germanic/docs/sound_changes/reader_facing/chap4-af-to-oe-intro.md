@@ -14,7 +14,8 @@ Not every change in this chapter has pan-Old-English scope. Some changes — mos
 notably West Saxon palatal umlaut (SC060), the back-mutation rules (SC059), and
 the West Saxon diphthong chain (SC031–SC034) — are specifically West Saxon or
 more broadly southern Old English phenomena. (The West Saxon palatal-glide
-effects, SC016, execute early in the cascade and are treated in Chapter 1.)
+spellings, SC016, belong to the written surface of Old English and are treated
+in Chapter 4.)
 
 The CAPR derivations target West Saxon Old English citation forms as the default
 comparator. Changes that belong to other dialects, or that are absent from West

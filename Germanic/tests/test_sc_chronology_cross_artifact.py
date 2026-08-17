@@ -110,8 +110,9 @@ class CrossArtifactTests(unittest.TestCase):
                          "EAFAiMonophthongization")
         self.assertEqual(self.staging["SC004"]["fst_identifier"].strip(),
                          "EAFAiMonophthongization")
-        # Position 29 since the 2026 SC098 insertion (was 28).
-        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 29)
+        # Position 28 since the SC016/SC017 repair moved SC016 out of the
+        # early cascade (was 29 after the 2026 SC098 insertion; 28 before it).
+        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 28)
 
     def test_historical_stage_agrees_audit_inventory_staging(self):
         """Historical stage (canonical long form) must agree across audit,

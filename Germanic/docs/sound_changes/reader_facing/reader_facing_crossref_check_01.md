@@ -7,7 +7,7 @@ _Generated from the current build-script chapter files and their SC-numbered rul
 - Build script: `/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh`.
 - Chapter files checked: 59.
 - Rule headings mapped from current chapter files: 87.
-- Sound-change links checked: 275.
+- Sound-change links checked: 270.
 - Symbolic `<` relations found: 0.
 - Bare SC references found: 0.
 - Rule-name-only references found: 0.

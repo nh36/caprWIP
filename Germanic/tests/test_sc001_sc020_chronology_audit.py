@@ -76,12 +76,18 @@ class PartialOrderAuditTests(unittest.TestCase):
         return next((e for e in self.edges
                      if e["earlier_sc"] == a and e["later_sc"] == b), None)
 
-    def test_sc016_sc017_is_technical_not_historical(self):
-        # The architectural control: stage (OE/WS) diverges from cascade
-        # position; the edge is a computational placement requirement.
-        e = self._edge("SC016", "SC017")
-        self.assertIsNotNone(e, "SC016<SC017 edge must exist")
-        self.assertEqual(e["type_of_edge"], "technical_dependency")
+    def test_sc017_feeds_sc016_and_inverted_edge_is_retired(self):
+        # sc016-017-adjudication.md: NWGmc u-lowering produced the *o of
+        # geoc (Fulk §4.3 p.56; Campbell §115; Brunner §92.1), which the WS
+        # glide spelling later rendered <eo>. The former SC016<SC017
+        # "technical_dependency" was an artifact of the retired early
+        # formulation and must not return.
+        self.assertIsNone(self._edge("SC016", "SC017"),
+                          "retracted SC016<SC017 edge has returned")
+        e = self._edge("SC017", "SC016")
+        self.assertIsNotNone(e, "feeding edge SC017<SC016 must exist")
+        self.assertEqual(e["type_of_edge"], "historical_relative_chronology")
+        self.assertEqual(e["confidence"], "A")
 
     def test_sc020_sc003_zdeletion_before_rhotacism(self):
         # Crist: rhotacism follows WGmc *z-deletion; implemented via scoping.

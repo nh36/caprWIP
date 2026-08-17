@@ -41,7 +41,7 @@ POST_EPENTHESIS_RULES = [
     "OECjCleanup",
     "OEXsMerge",
     "OldEnglishOrthography",
-    "OEGlideUToEO",
+    "OEWsPalatalGlide",
     "OldEnglishRemoveStars",
 ]
 

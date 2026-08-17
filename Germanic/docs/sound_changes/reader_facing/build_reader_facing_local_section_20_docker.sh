@@ -34,7 +34,7 @@ root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_20.md"
 coverage_out = root / "reader_facing_manifest_coverage_08.md"
 chapter_files = [
-    # ── Chapter 1: executable positions 1–16 (PGmc/PNWGmc → PWGmc corridor) ─
+    # ── Chapter 1: executable positions 1–15 (PGmc/PNWGmc → PWGmc corridor) ─
     "096-root-noun-nominative-z-loss.md",
     "014-015-opening-vowel-prelude.md",
     "005-unstressed-a-raising-before-final-m.md",
@@ -46,11 +46,10 @@ chapter_files = [
     "011-syllabic-j-after-final-vowel-loss.md",
     "012-lth-voicing.md",
     "013-dental-hardening.md",
-    "016-west-saxon-palatal-glide.md",
     "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
     "019-nwgmc-final-long-o-raising.md",
-    # ── Chapter 2: executable positions 17–29 (final-*z, rhotacism, NWGmc vowels) ─
+    # ── Chapter 2: executable positions 16–28 (final-*z, rhotacism, NWGmc vowels) ─
     "020-wgmc-final-z-deletion.md",
     "098-early-apocope-in-unstressed-words.md",
     "097-monosyllabic-final-z-loss.md",
@@ -63,7 +62,7 @@ chapter_files = [
     "026-027-nasal-spirant-changes.md",
     "028-preconsonantal-x-loss.md",
     "004-pwgmc-ai-monophthongization.md",
-    # ── Chapter 3: executable positions 30–86 (Anglo-Frisian → Old English) ─
+    # ── Chapter 3: executable positions 29–85 (Anglo-Frisian → Old English) ─
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",
@@ -96,6 +95,10 @@ chapter_files = [
     "081-083-j-strengthening-vocalization-and-ei-contraction.md",
     "085-086-h-loss-and-contraction.md",
     "087-r-metathesis.md",
+    # ── Chapter 4: Old English surface tail (executable position 91) ─
+    # SC016 executes after OldEnglishOrthography (sc016-017-adjudication.md):
+    # the WS glide spelling of back vowels after word-initial ġ.
+    "016-west-saxon-palatal-glide.md",
 ]
 rule_heading_re = re.compile(r"^##\s+(SC\d{3})\.\s+(.*?)\s+\(`([^`]+)`\)\s+\{#(rule-[^}]+)\}\s*$")
 link_re = re.compile(r"\[([^\]]+)\]\((#rule-[^)]+)\)")
@@ -121,6 +124,11 @@ CHAPTER_BOUNDARIES: dict[str, tuple[int, str, str]] = {
         3,
         "From Anglo-Frisian to Old English",
         "chap4-af-to-oe-intro.md",
+    ),
+    "016-west-saxon-palatal-glide.md": (
+        4,
+        "Old English orthography and the written surface",
+        "chap5-oe-orthography-intro.md",
     ),
 }
 

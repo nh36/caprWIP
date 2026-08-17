@@ -17,8 +17,14 @@ Output (deterministic TSV, sorted by executable position):
 
     position    foma_identifier    origin_block
 
-``origin_block`` is ``EarlyEnglishLineChanges`` for rules expanded out of that block, or
-``EnglishProtoToOE`` for rules composed directly in the master pipeline.
+``origin_block`` is ``EarlyEnglishLineChanges`` for rules expanded out of that block,
+``EnglishProtoToOE`` for rules composed directly in the master pipeline, or
+``OldEnglishRules`` for the Old English surface tail (epenthesis, late
+suffix/cluster cleanups, orthography, and the post-orthography rules such as
+SC016 OEWsPalatalGlide) composed after EnglishProtoToOE on the way to the
+final Old English output.  Since the SC016/SC017 repair
+(sc016-017-adjudication.md) the manifest covers this tail as well, so every
+rule with a staging-map row has a genuine executable position.
 
 This script is pure text parsing; it needs neither foma nor flookup and runs on
 the host.
@@ -99,6 +105,21 @@ def _composition_members(body: str) -> list[str]:
     return members
 
 
+def _chain_define_members(text: str, define_name: str) -> list[str]:
+    """Members of a plain ``define Name Base .o. A .o. B ... ;`` chain,
+    excluding the leading base identifier."""
+    marker = f"define {define_name} "
+    start = text.find(marker)
+    if start < 0:
+        raise ValueError(f"could not find 'define {define_name}' in FST source")
+    end = text.find(";", start)
+    if end < 0:
+        raise ValueError(f"unterminated define for {define_name}")
+    body = text[start + len(marker):end]
+    members = _composition_members(body)
+    return members[1:]  # drop the base-chain reference
+
+
 def build_manifest(fst_path: Path) -> list[dict[str, str]]:
     text = _strip_comments(fst_path.read_text(encoding="utf-8"))
 
@@ -107,6 +128,12 @@ def build_manifest(fst_path: Path) -> list[dict[str, str]]:
 
     pipeline_body = _extract_block_body(text, "EnglishProtoToOE", "(", ")")
     pipeline_members = _composition_members(pipeline_body)
+
+    # Old English surface tail: OldEnglishAfterEpenthesis chains epenthesis
+    # onto OldEnglishCore; OldEnglishRules chains the late cleanups,
+    # orthography, and the post-orthography rules (SC016) onto that.
+    tail_members = (_chain_define_members(text, "OldEnglishAfterEpenthesis")
+                    + _chain_define_members(text, "OldEnglishRules"))
 
     # SC096 RootNounNomZLoss is composed at the head of EnglishProtoToOE,
     # before EarlyEnglishLineChanges (it must precede PWGmcIjContraction).
@@ -130,6 +157,9 @@ def build_manifest(fst_path: Path) -> list[dict[str, str]]:
     for ident in pipeline_members[block_index + 1:]:
         position += 1
         rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "EnglishProtoToOE"})
+    for ident in tail_members:
+        position += 1
+        rows.append({"position": str(position), "foma_identifier": ident, "origin_block": "OldEnglishRules"})
     return rows
 
 
