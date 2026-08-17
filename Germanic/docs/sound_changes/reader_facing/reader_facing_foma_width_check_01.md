@@ -4,7 +4,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 86.
+- Foma blocks checked: 87.
 - Blocks over the conservative 90-character threshold: 10.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
@@ -96,6 +96,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | 18 | 63 | no |
 | 096-root-noun-nominative-z-loss.md | SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | 17 | 65 | no |
 | 097-monosyllabic-final-z-loss.md | SC097. Northern monosyllabic final \emph{*z}-loss (`MonosyllabicFinalZLoss`) {#rule-MonosyllabicFinalZLoss} | 15 | 64 | no |
+| 098-early-apocope-in-unstressed-words.md | SC098. Early apocope in unstressed words (`PWGmcUnstressedWordFinalIApocope`) {#rule-PWGmcUnstressedWordFinalIApocope} | 13 | 41 | no |
 
 ## Lines that would have overflowed under the old rendering
 

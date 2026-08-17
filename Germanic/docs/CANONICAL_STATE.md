@@ -7,14 +7,14 @@
 ## Canonical status summary
 
 - The Germanic → Old English **research phase is complete** as of 2026-04-30.
-- The canonical high-level project status is **7 mismatches out of 386 OE lexemes** (**98.2% accuracy**), with **0 actionable phonology**.
+- The canonical high-level project status is **7 mismatches out of 388 OE lexemes** (**98.2% accuracy**), with **0 actionable phonology**.
 - All 7 remaining mismatches are treated as **documented exceptions** in `Germanic/data/oe_known_problems.tsv`.
 - The project is now in **lexical write-up and publication-preparation mode**, not active sound-change debugging mode.
 
 ## Important count distinction
 
-- The **pipeline-status denominator** remains **386 OE lexemes**. This is the status reported in `Germanic/README.md` and in the closing status section of `Germanic/docs/DEV_NOTES.md`.
-- The **lexeme-report coverage audit** currently counts **380 OE rows with a real `COUNTERPART`**. Six OE TSV rows have `COUNTERPART = -` and are therefore excluded from lexeme-report coverage:
+- The **pipeline-status denominator** is now **388 OE lexemes** (the original 386 plus *who* 2322 and *you* 2326 from corpus-maturation pass 01). This is the status reported in `Germanic/README.md` and in the closing status section of `Germanic/docs/DEV_NOTES.md`. The original 380-row selected corpus is frozen as a legacy subset with invariant fingerprint `a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc` (see `cascade_baseline_outputs_legacy380.tsv`).
+- The **lexeme-report coverage audit** currently counts **382 OE rows with a real `COUNTERPART`**. Six OE TSV rows have `COUNTERPART = -` and are therefore excluded from lexeme-report coverage:
   - `1935 ball`
   - `1947 bid`
   - `1948 bid`
@@ -88,10 +88,10 @@ These are useful reading views, but the authoritative input for new report work 
   ```
 
 - The regenerated audit currently reports:
-  - 380 OE rows with real counterpart
-  - 148 rows requiring lexeme reports
+  - 382 OE rows with real counterpart
+  - 150 rows requiring lexeme reports
   - 11 manifest-backed production reports
-  - 136 required rows with source material available but no manifest-backed production report
+  - 138 required rows with source material available but no manifest-backed production report
   - 1 required row with no source material found
 
 Because the coverage tool now distinguishes **manifest-backed production reports** from **supporting source material**, the production backlog is not limited to the final row with no matched files. Treat both **“source material available but no manifest-backed production report”** and **“no source material found”** as active write-up backlog categories.

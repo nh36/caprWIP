@@ -286,7 +286,7 @@ The witness thus supplies a terminus ante quem at brightening but no earlier bou
 
 Ringe and Taylor treat the assimilation of \emph{*dw} and \emph{*zw} to \emph{*ww} as a shared Proto-West-Germanic innovation supported by one example of each input cluster [@RingeTaylor2014, pp. 56--57; @Stiles1985, pp. 89--94]. The \emph{*dw} example is the numeral 'four': PGmc \emph{*feðwor} (Gothic \emph{fidwor}) → WGmc \emph{*fewwar} → OE \emph{fēower}, Old Frisian \emph{fiuwer}, Old Saxon \emph{fiuwar}. The \emph{*zw} example is the second-person plural pronoun, where two oblique case forms show the change: acc./dat.\ PGmc \emph{*izwiz} (Gothic \emph{izwis}) → OE \emph{eow}, Old Frisian \emph{iu}, Old Saxon \emph{iu}, OHG \emph{iu}; and gen.\ Ringe and Taylor's PGmc \emph{*izweraz} (Gothic \emph{izwara}) → OE \emph{eower}, OHG \emph{iuwer} [@RingeTaylor2014, p. 56]. Stiles discusses the same pronominal material using his own reconstruction conventions and explicitly treats Gothic \emph{izwara} among the relevant comparanda [@Stiles1985, pp. 89--94]. These two case forms belong to a single pronominal paradigm, not to two independent etyma.
 
-The historical support rests on a small witness set. Both coronal inputs assimilate before \emph{*w}, but the evidence for each cluster is confined: the numeral alone supplies the \emph{*dw} instance, and the oblique case forms of the second-person plural pronoun supply the \emph{*zw} instance.
+The historical support rests on a small witness set. Both coronal inputs assimilate before \emph{*w}, but the evidence for each cluster is confined: the numeral alone supplies the \emph{*dw} instance, and the oblique case forms of the second-person plural pronoun supply the \emph{*zw} instance. Both clusters are now witnessed in the corpus: 'four' for \emph{*dw}, and 'you' — selected in its dat.(-acc.) plural cell \emph{*izwiz} — for \emph{*zw}, deriving through \emph{*iwwi}, apocopated \emph{*iww}, to OE *ēow* 'you' [@RingeTaylor2014, pp. 41--42, §3.1.1; @Fulk2018, §8.3, pp. 204--205].
 
 ## \CAPRRuleHeading{SC008. Assimilation of coronal consonants before \emph{*w}}{PWGmcCoronalWAssimilation} {#rule-PWGmcCoronalWAssimilation}
 
@@ -299,7 +299,7 @@ define PWGmcCoronalWAssimilation [
 
 OE *fēower* ‘four’ exposes a feeding relation: coronal assimilation must create \emph{*ww} while simplification can still reduce it. If [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) is delayed until after [SC031 OEWWSimplification](#rule-OEWWSimplification), PGmc [fédwōr]{.recon} ‘four’ yields [*fēowwer*]{.pred} rather than expected OE *fēower* ‘four’. Earlier placements alter no output.
 
-The numeral fixes that relative order. The pronominal forms supply the parallel \emph{*zw} evidence; 'four' remains the sole \emph{*dw} witness and the sole source of the coronal-assimilation → *ww*-simplification ordering constraint. The earlier boundary of the assimilation remains undetermined.
+The numeral fixes that relative order. The pronoun now fixes a second one: assimilation must precede rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)). The \emph{*z} of \emph{*izwiz} stands between vowel and \emph{*w}; had rhotacism applied first, it would have produced [*irwiz*]{.pred}, from which OE *ēow* 'you' can never be derived. The executable cascade composes the assimilation well before rhotacism, and the corpus derivation of *ēow* 'you' fails if the two are reversed. 'Four' remains the sole \emph{*dw} witness and the sole source of the coronal-assimilation → *ww*-simplification ordering constraint. The earlier boundary of the assimilation remains undetermined.
 
 \newpage
 
@@ -758,6 +758,32 @@ The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWG
 
 \newpage
 
+# Early apocope in unstressed words
+
+## Historical discussion
+
+Alongside the regular loss of word-final short high vowels in third syllables ([SC006 PWGmcEarlyIApocope](#rule-PWGmcEarlyIApocope)), Ringe and Taylor identify a second, earlier apocope: "Short high vowels were also lost after heavy syllables in unstressed words" [@RingeTaylor2014, pp. 57--58, §3.1.4]. The two laws must not be conflated. Fully stressed disyllables kept their final \emph{*-i} long enough to cause i-umlaut — OE *ġiest* 'guest' < \emph{*gastiz} and *fȳr* 'fire' < \emph{*fūri} require exactly that survival [@RingeTaylor2014, p. 55, §3.1.4] — whereas words that carried no sentence stress lost the vowel already in Proto-West Germanic.
+
+The conditioning is prosodic. Like Verner's law, the change is governed by accent: it applied in words unstressed in the sentence, and its apparent exceptions are systematic, not sporadic. Forms such as OE *ymbe* 'around' and OHG \emph{umbi} kept their final vowel because, as Ringe and Taylor observe, proclitics "were not phonologically word-final" and so stood outside the environment altogether [@RingeTaylor2014, pp. 57--58, §3.1.4]. Sentence-level accent placement therefore decides which sandhi variant each daughter language continues, and doublets across the family reflect the stressed and unstressed sentence forms of the same word — regular sandhi, not lexical diffusion.
+
+The diagnostic witness is the second-person plural pronoun. Ringe and Taylor print the Proto-West Germanic form as a doublet: PGmc \emph{*izwiz} (Gothic \emph{izwis}) → \emph{*iwwi} (by [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) and the loss of final \emph{*z}, [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)) → PWGmc \emph{*iuwi} ~ \emph{*iuw} [@RingeTaylor2014, pp. 41--42, §3.1.1]. Old English continues the apocopated, unstressed variant, and Ringe and Taylor's proof is the vocalism itself: "OE iow 'you (dat. pl.)' definitely does [show early apocope] (since it does not exhibit i-umlaut)" [@RingeTaylor2014, pp. 57--58, §3.1.4]. Had the \emph{*-i} survived, i-umlaut ([SC055 OEIUmlaut](#rule-OEIUmlaut)) would have fronted the diphthong; West Saxon *ēow* 'you' beside early West Saxon and Northumbrian *īow* shows the normal unumlauted development [@Campbell1959, §702, p. 283].
+
+## \CAPRRuleHeading{SC098. Early apocope in unstressed words}{PWGmcUnstressedWordFinalIApocope} {#rule-PWGmcUnstressedWordFinalIApocope}
+
+```foma
+define PWGmcUnstressedWordFinalIApocope [
+    {*i} -> 0 || {*w} {*w} _ .#.
+];
+```
+
+The corpus transcription does not mark the absence of word stress, so the rule states the law through a proxy environment: word-final \emph{*-i} after the geminate \emph{*ww} created by coronal-w assimilation, which in the present corpus is exactly coextensive with the law's unstressed-word domain. The same convention serves [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss), where a development whose true conditioning the notation cannot yet express is likewise implemented over an exactly coextensive segmental environment.
+
+The corpus witness is 'you': \emph{*izwiz} → \emph{*iwwiz} (assimilation) → \emph{*iwwi} (final \emph{*z}-loss) → \emph{*iww} (this rule) → OE *ēow* 'you'. The chronology is fixed on both sides. The rule is fed by the loss of final \emph{*z} ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), since only that loss makes the \emph{*-i} word-final; and it must precede i-umlaut ([SC055 OEIUmlaut](#rule-OEIUmlaut)) — that ordering is Ringe and Taylor's own dating argument, for an unapocopated [*iwwi*]{.recon} surviving to the umlaut period would yield an umlauted diphthong and a form other than the attested *ēow* 'you'. The rule applies within Proto-West Germanic, before the later northern loss of final \emph{*z} in stressed monosyllables ([SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)): Ringe and Taylor treat the apocope among the Proto-West Germanic final-syllable developments and print the apocopated variant as a Proto-West Germanic form [@RingeTaylor2014, pp. 41--42, 57--58]. Fully stressed disyllables are untouched, as the history requires: \emph{*gastiz} and \emph{*fūri} pass through unchanged and duly umlaut to *ġiest* 'guest' and *fȳr* 'fire'.
+
+The surviving word-final geminate \emph{*ww} is then vocalized to a long diphthong ([SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong)) before geminate simplification ([SC031 OEWWSimplification](#rule-OEWWSimplification)) can destroy it — Ringe and Taylor date that vocalization to Proto-West Germanic itself (\emph{*fewwar} → PWGmc \emph{*feuwar}) [@RingeTaylor2014, pp. 41--42, §3.1.1; @Fulk2018, §8.3, pp. 204--205] — giving \emph{*ēoww}, simplified to \emph{*ēow}, the attested Old English form.
+
+\newpage
+
 # Northern monosyllabic final \emph{*z}-loss
 
 ## Historical discussion
@@ -768,7 +794,7 @@ The scholarship disagrees about the exact conditioning, and the disagreement is 
 
 Apparent counterexamples are analogical, not phonological: OE *dēor* 'deer', *ār* 'oar', and *gār* 'spear' show final \emph{-r} from levelling out of inflected forms where the sibilant was word-internal and regularly rhotacized, not from retention of word-final \emph{*z} [@RingeTaylor2014, p. 86, §3.3.1, n. 24]. The change precedes rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)), which Ringe and Taylor place last in this sequence of northern developments [@RingeTaylor2014, p. 87, §3.3.1].
 
-No selected derivation in the current corpus tests this change: the corpus happens to select oblique or plural cells for the relevant lexemes — for instance 'cow' and 'meed' enter the cascade in inflected forms whose \emph{*z}, where present, is word-internal. The rule is therefore carried as a historically genuine but presently unwitnessed change, in the same way the project retains other well-attested developments that the current word list does not happen to exercise.
+The corpus now witnesses this change directly. The interrogative pronoun 'who' is selected in its nominative singular masculine cell, PGmc \emph{*hwaz} (Gothic \emph{hwas}), precisely the form Ringe and Taylor cite for this loss [@RingeTaylor2014, p. 86, §3.3.1]: the rule lengthens the short nucleus and deletes the sibilant, giving \emph{*hwā}, whence OE *hwā* 'who'. The resulting back vowel never undergoes Anglo-Frisian brightening — "\emph{*hwǣ} does not exist", as Campbell puts it [@Campbell1959, §125, p. 49; @SieversBrunner1965, §137 Anm. 1, p. 129] — so the derivation ends with the attested form. Other members of Ringe and Taylor's witness set remain outside the corpus because it selects oblique or plural cells for them — 'cow' and 'meed', for instance, enter the cascade in inflected forms whose \emph{*z}, where present, is word-internal.
 
 ## \CAPRRuleHeading{SC097. Northern monosyllabic final \emph{*z}-loss}{MonosyllabicFinalZLoss} {#rule-MonosyllabicFinalZLoss}
 
@@ -790,7 +816,7 @@ define MonosyllabicFinalZLoss [
 
 The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a monosyllable. The principal synthetic controls run the change on Ringe and Taylor's own witnesses, fed to the rule in their chronologically correct intermediate shapes. Short-nucleus inputs show both halves of the change at once: \emph{*hwaz} yields \emph{*hwā} and \emph{*hiz} yields \emph{*hī}, each with loss of the sibilant and compensatory lengthening [@RingeTaylor2014, p. 86, §3.3.1]. A form whose nucleus is already bimoric skips the lengthening step and simply loses the sibilant: \emph{*maiz} yields \emph{*mai} at this stage, with its diphthong intact; the attested OE *mā* 'more' arises only later, when the stressed monophthongization ([SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization)) takes \emph{*ai} to \emph{*ā}. The word 'cow', whose history Ringe and Taylor themselves print with question marks and whose analysis remains disputed, is deliberately not used as a principal control; a long-vowel input of that shape (\emph{*kūz} yielding \emph{*kū}) merely repeats what \emph{*maiz} already demonstrates, and the word's evidentiary weight is discussed in the historical dossier rather than leaned on here.
 
-Because no corpus form reaches this rule, adding it changes no Old English output, and if the rule were moved earlier or later within its stage, no corpus output would change either; the corpus supplies no derivation that could fix its position by a wrong form, so its placement instead follows the sources. It stands after [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), since the two losses are historically distinct changes with the unstressed loss earlier [@RingeTaylor2014, pp. 44--45, §3.1.1]. Rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) follows in the executable cascade as in the historical account: Ringe and Taylor place rhotacism after this loss, at the end of the sequence of \emph{*z}-losses [@RingeTaylor2014, p. 87, §3.3.1], and the cascade composes it immediately after this rule, so a sibilant removed here can never surface as \emph{-r}; the negative controls below confirm this. Consonant-final monosyllables are untouched: their nominative \emph{*-z}, where it ever existed, was eliminated before Proto-West Germanic under [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss). Word-internal \emph{*z}, as in PGmc [déuzą]{.recon} 'deer' on its way to OE *dēor* 'deer', does not meet the environment of this rule and duly rhotacizes.
+The corpus derivation of *hwā* 'who' now fixes this rule's position empirically as well as philologically. It stands after [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), since the two losses are historically distinct changes with the unstressed loss earlier [@RingeTaylor2014, pp. 44--45, §3.1.1]. Rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) follows in the executable cascade as in the historical account: Ringe and Taylor place rhotacism after this loss, at the end of the sequence of \emph{*z}-losses [@RingeTaylor2014, p. 87, §3.3.1], and the cascade composes it immediately after this rule, so a sibilant removed here can never surface as \emph{-r} — were the order reversed, \emph{*hwaz} would rhotacize to \emph{*hwar} and 'who' could never be derived; the negative controls below confirm this. Consonant-final monosyllables are untouched: their nominative \emph{*-z}, where it ever existed, was eliminated before Proto-West Germanic under [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss). Word-internal \emph{*z}, as in PGmc [déuzą]{.recon} 'deer' on its way to OE *dēor* 'deer', does not meet the environment of this rule and duly rhotacizes.
 
 \newpage
 
@@ -847,6 +873,22 @@ northern West Germanic [hebun]{.recon .iv lang=nsgmc sort=hebun role=evidence_fo
 genuine Northwest Germanic change, but it is presently unwitnessed and
 boundary-limited: no lexical form now constrains its position within the Old
 English sequence, and moving it earlier or later leaves every output unchanged.
+
+One candidate witness was examined and declined. The early Northumbrian
+accusative *galgu* 'gallows' (Ruthwell Cross) stands among the "very few"
+\emph{n}-stem forms preserving a \emph{u}-vowel in this ending, and if its
+\emph{-u} continued raised \emph{*-unų} it would witness this change directly.
+But Ringe and Taylor themselves hedge the form — "masc. acc. galgu is not
+necessarily relevant", since its \emph{-u} may instead connect with the Old
+High German masculine accusative singular ending \emph{-un} ~ \emph{-on} on
+Bammesberger's analogical account [@RingeTaylor2014, pp. 62--63; @Bammesberger1990,
+p. 169] — they judge the raising hypothesis phonetically sensible but resting
+on "too small a basis" [@RingeTaylor2014, p. 63], and they conclude of the
+competing analyses of these \emph{n}-stem relics that "a decisive choice
+between those alternatives does not seem possible" [@RingeTaylor2014, p. 164].
+A single dialectally marked inflected relic whose ending admits an analogical
+source cannot responsibly anchor a sound law, so the rule remains unwitnessed
+and its coverage status is recorded as a research issue.
 
 \newpage
 

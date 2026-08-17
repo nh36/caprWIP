@@ -29,3 +29,19 @@ northern West Germanic [hebun]{.recon .iv lang=nsgmc sort=hebun role=evidence_fo
 genuine Northwest Germanic change, but it is presently unwitnessed and
 boundary-limited: no lexical form now constrains its position within the Old
 English sequence, and moving it earlier or later leaves every output unchanged.
+
+One candidate witness was examined and declined. The early Northumbrian
+accusative *galgu* 'gallows' (Ruthwell Cross) stands among the "very few"
+\emph{n}-stem forms preserving a \emph{u}-vowel in this ending, and if its
+\emph{-u} continued raised \emph{*-unų} it would witness this change directly.
+But Ringe and Taylor themselves hedge the form — "masc. acc. galgu is not
+necessarily relevant", since its \emph{-u} may instead connect with the Old
+High German masculine accusative singular ending \emph{-un} ~ \emph{-on} on
+Bammesberger's analogical account [@RingeTaylor2014, pp. 62--63; @Bammesberger1990,
+p. 169] — they judge the raising hypothesis phonetically sensible but resting
+on "too small a basis" [@RingeTaylor2014, p. 63], and they conclude of the
+competing analyses of these \emph{n}-stem relics that "a decisive choice
+between those alternatives does not seem possible" [@RingeTaylor2014, p. 164].
+A single dialectally marked inflected relic whose ending admits an analogical
+source cannot responsibly anchor a sound law, so the rule remains unwitnessed
+and its coverage status is recorded as a research issue.

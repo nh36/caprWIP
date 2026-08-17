@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2386
-- Internal production unique forms: 1080
-- Printed main occurrences: 2298
-- Printed main unique forms: 1070
+- Internal production occurrences: 2407
+- Internal production unique forms: 1092
+- Printed main occurrences: 2319
+- Printed main unique forms: 1082
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -15,16 +15,16 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1224 | 458 |
-| Proto-Germanic | 940 | 525 |
+| Old English | 1230 | 461 |
+| Proto-Germanic | 948 | 527 |
 | Proto-Northwest Germanic | 2 | 1 |
-| Proto-West Germanic | 14 | 6 |
-| Northern West Germanic | 8 | 3 |
+| Proto-West Germanic | 17 | 9 |
+| Northern West Germanic | 9 | 4 |
 | Pre-Old English / prehistoric English | 19 | 10 |
 | Old Norse | 23 | 14 |
-| Old High German | 20 | 16 |
+| Old High German | 21 | 17 |
 | Old Frisian | 8 | 7 |
-| Gothic | 7 | 7 |
+| Gothic | 9 | 9 |
 | Old Saxon | 19 | 13 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
@@ -36,11 +36,11 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 381 |
-| source_protoform | 337 |
-| selected_input | 537 |
-| comparison_form | 829 |
-| evidence_form | 214 |
+| target_form | 386 |
+| source_protoform | 339 |
+| selected_input | 543 |
+| comparison_form | 833 |
+| evidence_form | 218 |
 
 ## Internal-only rows by reason
 
@@ -65,7 +65,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1088
+- Unique printed entries: 1100
 - Print anomaly rows: 50
 - Hard print anomalies: 0
 
@@ -124,6 +124,9 @@
 | Language | Display | Sort key | Occurrences | Roles |
 | --- | --- | --- | ---: | --- |
 | pwgmc | `*bakan` | bakan | 1 | comparison_form |
+| pwgmc | `*íww` | iww | 1 | evidence_form |
+| pwgmc | `*íwwi` | iwwi | 1 | evidence_form |
+| pwgmc | `*íwwiz` | iwwiz | 1 | evidence_form |
 | pwgmc | `*júgunθ` | jugunth | 5 | selected_input; source_protoform |
 | pwgmc | `*nábulô` | nabulo | 4 | selected_input; source_protoform |
 | pwgmc | `*skuldru` | skuldru | 1 | comparison_form |
@@ -136,6 +139,8 @@
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
 | goth | `godamma` | godamma | 1 | evidence_form |
 | goth | `himins` | himins | 1 | evidence_form |
+| goth | `ƕas` | hwas | 1 | comparison_form |
+| goth | `izwis` | izwis | 1 | comparison_form |
 | dutch | `beide` | beide | 2 | comparison_form |
 | dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
@@ -172,8 +177,8 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 359
-- `yes`: 184
+- `no`: 355
+- `yes`: 188
 
 - Included whole-form rows with asterisks: 439
 - Included whole-form rows without asterisks: 104

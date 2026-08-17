@@ -4,7 +4,7 @@ _Generated from the current reader-facing chapter files and `reader_facing_citat
 
 ## Summary
 
-- Files checked: 62.
+- Files checked: 63.
 - Citation issues: 0.
 
 | File | Line | Key | Citation | Issue |

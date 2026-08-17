@@ -50,8 +50,9 @@ chapter_files = [
     "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
     "019-nwgmc-final-long-o-raising.md",
-    # ── Chapter 2: executable positions 17–28 (final-*z, rhotacism, NWGmc vowels) ─
+    # ── Chapter 2: executable positions 17–29 (final-*z, rhotacism, NWGmc vowels) ─
     "020-wgmc-final-z-deletion.md",
+    "098-early-apocope-in-unstressed-words.md",
     "097-monosyllabic-final-z-loss.md",
     "003-west-germanic-rhotacism.md",
     "021-unstressed-o-raising.md",
@@ -62,7 +63,7 @@ chapter_files = [
     "026-027-nasal-spirant-changes.md",
     "028-preconsonantal-x-loss.md",
     "004-pwgmc-ai-monophthongization.md",
-    # ── Chapter 3: executable positions 29–85 (Anglo-Frisian → Old English) ─
+    # ── Chapter 3: executable positions 30–86 (Anglo-Frisian → Old English) ─
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",

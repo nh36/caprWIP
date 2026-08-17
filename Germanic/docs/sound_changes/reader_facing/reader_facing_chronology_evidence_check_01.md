@@ -4,7 +4,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 86.
+- Sections checked: 87.
 - Sections with warnings: 55.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
@@ -14,7 +14,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`PNWGmcAToUBeforeM`) {#rule-PNWGmcAToUBeforeM} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | yes | yes | yes | yes | yes | yes | no | — |
 | 007-final-o-lowering-before-r.md | SC007. Lowering of final bimoric \emph{*ō} before \emph{*r} (`PWGmcFinalOrLowering`) {#rule-PWGmcFinalOrLowering} | yes | yes | yes | yes | yes | no | no | — |
-| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
+| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | yes | yes | yes | yes | yes | no | no | — |
 | 009-ij-contraction-in-friend.md | SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction} | yes | yes | yes | yes | yes | no | no | — |
 | 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | yes | yes | yes | yes | yes | no | no | — |
@@ -94,4 +94,5 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 085-086-h-loss-and-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | yes | yes | yes | yes | yes | no | no | — |
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | yes | yes | yes | yes | yes | no | no | — |
 | 096-root-noun-nominative-z-loss.md | SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | yes | yes | yes | yes | yes | no | no | — |
-| 097-monosyllabic-final-z-loss.md | SC097. Northern monosyllabic final \emph{*z}-loss (`MonosyllabicFinalZLoss`) {#rule-MonosyllabicFinalZLoss} | yes | no | yes | yes | yes | no | no | missing expected-form wording |
+| 097-monosyllabic-final-z-loss.md | SC097. Northern monosyllabic final \emph{*z}-loss (`MonosyllabicFinalZLoss`) {#rule-MonosyllabicFinalZLoss} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 098-early-apocope-in-unstressed-words.md | SC098. Early apocope in unstressed words (`PWGmcUnstressedWordFinalIApocope`) {#rule-PWGmcUnstressedWordFinalIApocope} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |

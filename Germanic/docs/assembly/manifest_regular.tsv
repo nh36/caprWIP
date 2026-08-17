@@ -73,3 +73,5 @@ global_order	class_order	row_id	lexical_item	counterpart	proto	proto_stage	proto
 72	72	2294	wind	windan	*wíndaną	pgmc	*wíndaną	pgmc		regular	regular	Regular derivations	Germanic/docs/lexeme_reports/model_entries/2294-wind-windan.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS	
 73	73	2297	wold	weald	*wálθuz	pgmc	*wálθuz	pgmc		regular	regular	Regular derivations	Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS	
 74	74	2305	yarn	ġearn	*gárną	pgmc	*gárną	pgmc		regular	regular	Regular derivations	Germanic/docs/lexeme_reports/model_entries/2305-yarn-ġearn.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS	
+75	75	2322	who	hwā	*xwáz	pgmc	*xwáz	pgmc		regular	regular	Regular derivations	Germanic/docs/lexeme_reports/model_entries/2322-who-hwā.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS	
+76	76	2326	you	ēow	*ízwiz	pgmc	*ízwiz	pgmc		regular	regular	Regular derivations	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md	confident	lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS	
