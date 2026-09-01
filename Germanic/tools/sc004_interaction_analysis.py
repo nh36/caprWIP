@@ -60,7 +60,7 @@ SC004_CROSSED = [
     "PWGmcCoronalWAssimilation", "PWGmcIjContraction", "PWGmcJGemination",
     "PWGmcSyllabicJ", "EAFLThVoicing", "PWGmcDentalHardening", "PNWGmcILowering",
     "OEWsPalatalGlide", "PNWGmcULowering", "PNWGmcStressedMonosyllableORaising",
-    "PNWGmcFinalLongORaising", "EAFFinalZDeletion", "PNWGmcUnstressedORaising",
+    "PNWGmcFinalLongORaising", "EAFFinalZDeletion",
     "PNWGmcMnDissimilation", "PNWGmcNStemNLoss", "PNWGmcLongELowering",
     "PNWGmcLongENasalRounding", "EAFNasalSpirantLengthening", "EAFNasalSpirantLoss",
     "PNWGmcPreconsonantalXLoss", "OEAwjGlideFormation", "OEAuFronting",

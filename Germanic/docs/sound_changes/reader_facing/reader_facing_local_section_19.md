@@ -636,7 +636,7 @@ cross-syllable formulation that labialized an intervocalic \emph{m} before a
 later nasal has been retired: it simulated paradigm levelling rather than a sound
 law.)
 
-Moving [SC022 PNWGmcMnDissimilation](#rule-PNWGmcMnDissimilation) earlier or later leaves every output unchanged. Its place among the early consonantal changes rests on the handbook account of \emph{mn}-dissimilation.
+Moving [SC022 PNWGmcMnDissimilation](#rule-PNWGmcMnDissimilation) earlier or later leaves every output unchanged. Its executable place in this holding zone is therefore editorial/computational, while its historical classification rests on the handbook account of \emph{mn}-dissimilation.
 
 \newpage
 

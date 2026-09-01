@@ -13,6 +13,16 @@ GERMANIC = REPO_ROOT / "Germanic"
 FST = GERMANIC / "fsts" / "germanic.txt"
 MANIFEST = (GERMANIC / "docs" / "sound_changes" / "cascade_baseline"
             / "cascade_order_manifest.tsv")
+HISTORICAL_AUDIT = (GERMANIC / "docs" / "sound_changes" / "cascade_baseline"
+                    / "historical_audit_table.tsv")
+RENAME_MANIFEST = (GERMANIC / "docs" / "sound_changes" / "cascade_baseline"
+                   / "rename_migration_manifest.tsv")
+BOOK_DOSSIER = (GERMANIC / "docs" / "sound_changes" / "book_dossiers"
+                / "018-025-early-nwgmc-unstressed-and-boundary-limited-zone.book-dossier.md")
+CHRONOLOGY_GRAPH_NODES = (GERMANIC / "docs" / "sound_changes" / "order_tests"
+                          / "chronology_cards" / "chronology_graph_nodes.tsv")
+NEXT_BATCH_CANDIDATES = (GERMANIC / "docs" / "sound_changes" / "order_tests"
+                         / "next_batch_candidates.tsv")
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
@@ -47,6 +57,37 @@ class SC021AdjudicationTests(unittest.TestCase):
             self.uncommented, r"define\s+PNWGmcUnstressedORaising\b"
         )
         self.assertNotIn("PNWGmcUnstressedORaising", self.positions)
+
+    def test_sc021_is_not_a_current_promotion_or_migration_candidate(self):
+        with HISTORICAL_AUDIT.open(encoding="utf-8") as handle:
+            audit = {
+                row["sc_id"]: row for row in csv.DictReader(handle, delimiter="\t")
+            }["SC021"]
+        with RENAME_MANIFEST.open(encoding="utf-8") as handle:
+            rename = {
+                row["sc_id"]: row for row in csv.DictReader(handle, delimiter="\t")
+            }["SC021"]
+        dossier = BOOK_DOSSIER.read_text(encoding="utf-8")
+
+        self.assertEqual(audit["required_action"], "retired")
+        self.assertEqual(audit["proposed_hist_stage"], "retired")
+        self.assertEqual(rename["migration_status"], "retired")
+        self.assertEqual(rename["canonical_foma_identifier"], "")
+        self.assertNotRegex(dossier, r"singleton candidates?:[^\n]*SC021")
+        self.assertIn("SC021 is retired", dossier)
+
+        with CHRONOLOGY_GRAPH_NODES.open(encoding="utf-8") as handle:
+            graph = {
+                row["change_id"]: row for row in csv.DictReader(handle, delimiter="\t")
+            }["SC021"]
+        with NEXT_BATCH_CANDIDATES.open(encoding="utf-8") as handle:
+            batch = {
+                row["change_id"]: row for row in csv.DictReader(handle, delimiter="\t")
+            }["SC021"]
+        self.assertEqual(graph["current_order"], "retired")
+        self.assertEqual(graph["in_contextual_edges"], "no")
+        self.assertEqual(batch["suggested_priority"], "retired")
+        self.assertIn("archival", batch["reason"])
 
     def test_successors_follow_shortening_and_precede_sc040(self):
         self.assertLess(

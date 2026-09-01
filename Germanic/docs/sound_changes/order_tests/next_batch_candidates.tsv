@@ -6,8 +6,8 @@ SC017	NWGmc U Lowering	17	NWGmcULowering	done	completed	Already interpreted in t
 SC018	NWGmc Stressed Monosyllable O Raising	18	NWGmcStressedMonosyllableORaising	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
 SC019	NWGmc Final Long O Raising	19	NWGmcFinalLongORaising	done	completed	Already interpreted in the early-corridor batch; retain for coverage and reference, not for re-queueing.	no
 SC020	PGmc Final Z Deletion	20	PGmcFinalZDeletion	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
-SC021	NWGmc Unstressed O Raising	21	NWGmcUnstressedORaising	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
-SC022	NWGmc Mn Dissimilation	22	NWGmcMnDissimilation	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
+SC021	Retired NWGmc Unstressed O Raising	retired	PNWGmcUnstressedORaising	done	retired	Retired after source-led adjudication; retain as archival project-history reference only, not for re-queueing or promotion.	no
+SC022	Common Germanic Mn Dissimilation	22	PNWGmcMnDissimilation	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference as a Common-Germanic rule in an executable holding-zone slot.	no
 SC023	NWGmc N Stem N Loss	23	NWGmcNStemNLoss	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
 SC024	NWGmc Long E Lowering	24	NWGmcLongELowering	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no
 SC025	NWGmc Long E Nasal Rounding	25	NWGmcLongENasalRounding	done	completed	Already interpreted in the lower-early batch; retain for coverage and reference, not for re-queueing.	no

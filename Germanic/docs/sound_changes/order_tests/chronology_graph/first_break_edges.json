@@ -78,23 +78,23 @@
     },
     {
       "change_id": "SC021",
-      "display_name": "NWGmc Unstressed O Raising",
-      "current_order": "21",
-      "rule_name": "NWGmcUnstressedORaising",
+      "display_name": "Retired NWGmc Unstressed O Raising",
+      "current_order": "retired",
+      "rule_name": "PNWGmcUnstressedORaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC021-nwgmc-unstressed-o-raising.md",
-      "card_type": "broad_far",
+      "card_type": "retired",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC040 and should be narrated broadly rather than locally."
+      "short_summary": "Retired after source-led adjudication; the former SC040 break was tied to the retired heaven proxy and is not a current chronology node."
     },
     {
       "change_id": "SC022",
-      "display_name": "NWGmc Mn Dissimilation",
+      "display_name": "Common Germanic Mn Dissimilation",
       "current_order": "22",
-      "rule_name": "NWGmcMnDissimilation",
+      "rule_name": "PNWGmcMnDissimilation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC022-nwgmc-mn-dissimilation.md",
       "card_type": "negative_boundary",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break."
+      "short_summary": "No ordinary chronology first break was found in either direction; executable position is a holding-zone placement, while historical classification is late Proto-Germanic/Common Germanic."
     },
     {
       "change_id": "SC023",

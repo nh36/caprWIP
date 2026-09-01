@@ -114,15 +114,15 @@ SC020	PGmc Final Z Deletion	final *z deletion	literature_search_alias	obvious se
 SC020	PGmc Final Z Deletion	loss of word-final *z	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
 SC021	Retired PNWGmc unstressed *o* raising	NWGmc Unstressed O Raising	retired_trace_label	Retired after the SC021 adjudication.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
 SC021	Retired PNWGmc unstressed *o* raising	PNWGmcUnstressedORaising	retired_foma_rule_name	Disputed short-*o before-*u rule retired, not reassigned to SC099/SC100.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
-SC021	Proto-Northwest Germanic Unstressed O Raising	Northwest Germanic Unstressed O Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
-SC021	Proto-Northwest Germanic Unstressed O Raising	NWGmc Unstressed O Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC021	Retired PNWGmc unstressed *o* raising	Northwest Germanic Unstressed O Raising	retired_normalized_stage_name	Retired after the SC021 adjudication; not a live normalized-stage candidate.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
+SC021	Retired PNWGmc unstressed *o* raising	NWGmc Unstressed O Raising	retired_book_display_candidate	Former planning label retained only as archival history; not eligible for promotion.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
 SC021	Proto-Northwest Germanic Unstressed O Raising	NWGmcUnstressedORaising	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
-SC022	Proto-Northwest Germanic Mn Dissimilation	NWGmc Mn Dissimilation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC022	Proto-Northwest Germanic Mn Dissimilation	PNWGmcMnDissimilation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC022	Proto-Northwest Germanic Mn Dissimilation	PNWGmcMnDissimilation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
-SC022	Proto-Northwest Germanic Mn Dissimilation	Northwest Germanic Mn Dissimilation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
-SC022	Proto-Northwest Germanic Mn Dissimilation	NWGmc Mn Dissimilation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
-SC022	Proto-Northwest Germanic Mn Dissimilation	NWGmcMnDissimilation	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
+SC022	Common Germanic Mn Dissimilation	NWGmc Mn Dissimilation	retired_trace_label	Former compact trace label; historical stage now comes from canonical metadata.	Germanic/docs/dossier-sc022-mn-dissimilation-2026.md
+SC022	Common Germanic Mn Dissimilation	PNWGmcMnDissimilation	sandbox_stage_name	Stable executable identifier; not a stage claim.	Germanic/fsts/old_english_sandbox.txt
+SC022	Common Germanic Mn Dissimilation	PNWGmcMnDissimilation	foma_rule_name	Stable executable identifier; not a stage claim.	Germanic/fsts/germanic.txt
+SC022	Common Germanic Mn Dissimilation	Northwest Germanic Mn Dissimilation	retired_normalized_stage_name	Former normalized label retained only as archival history.	Germanic/docs/dossier-sc022-mn-dissimilation-2026.md
+SC022	Common Germanic Mn Dissimilation	NWGmc Mn Dissimilation	retired_book_display_candidate	Former planning label replaced by Common Germanic Mn Dissimilation.	Germanic/docs/dossier-sc022-mn-dissimilation-2026.md
+SC022	Common Germanic Mn Dissimilation	NWGmcMnDissimilation	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral); not a historical stage label	Germanic/fsts/germanic.txt
 SC023	Proto-Northwest Germanic N Stem N Loss	NWGmc N Stem N Loss	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC023	Proto-Northwest Germanic N Stem N Loss	PNWGmcNStemNLoss	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC023	Proto-Northwest Germanic N Stem N Loss	PNWGmcNStemNLoss	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt

@@ -260,12 +260,12 @@ The history of \emph{mn} sequences is historically legible, but the handbooks de
 
 That is enough for a short note. The change deserves explicit prose, but the current order evidence does not make it a strong chronological marker.
 
-## SC022. Dissimilation of \emph{mn} sequences (`NWGmcMnDissimilation`) {#rule-NWGmcMnDissimilation}
+## SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation}
 
 The implementation keeps the dissimilation rule explicit.
 
 ```foma
-define NWGmcMnDissimilation [
+define PNWGmcMnDissimilation [
     {*m} -> {*β}
         || EnglishStarVocalic _
            EnglishStarVocalic EnglishStarConsonant* EnglishStarNasal

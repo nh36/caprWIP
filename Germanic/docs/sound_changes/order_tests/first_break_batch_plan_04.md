@@ -180,8 +180,8 @@ These results close the upper-early corridor immediately below the already inter
 The lower-early manual terminal batch is now complete for:
 
 1. `SC020` PGmc Final Z Deletion
-2. `SC021` NWGmc Unstressed O Raising
-3. `SC022` NWGmc Mn Dissimilation
+2. `SC021` retired NWGmc Unstressed O Raising (archival only)
+3. `SC022` Common Germanic Mn Dissimilation (executable holding-zone placement)
 4. `SC023` NWGmc N Stem N Loss
 5. `SC024` NWGmc Long E Lowering
 6. `SC025` NWGmc Long E Nasal Rounding

@@ -36,6 +36,7 @@ STAGING_MAP = GERMANIC / "docs" / "sound_changes" / "sound_change_historical_sta
 HISTORICAL_AUDIT = (
     GERMANIC / "docs" / "sound_changes" / "cascade_baseline" / "historical_audit_table.tsv"
 )
+INDEX_FORMS = GERMANIC / "docs" / "book" / "index_verborum_forms.tsv"
 
 
 def _tsv_row(row_id: str) -> dict[str, str]:
@@ -140,7 +141,10 @@ class HistoricalScopeTests(unittest.TestCase):
         inventory = _metadata_row(INVENTORY, "change_id")
         staging = _metadata_row(STAGING_MAP, "sc_id")
         audit = _metadata_row(HISTORICAL_AUDIT, "sc_id")
+        self.assertEqual(inventory["stage"], "Common Germanic")
+        self.assertEqual(inventory["trace_stage"], "SC018-SC025 editorial holding zone")
         self.assertEqual(inventory["historical_stage"], "Proto-Germanic")
+        self.assertEqual(inventory["pipeline_stage"], "SC018-SC025 editorial holding zone")
         self.assertEqual(staging["hist_stage"], "pgmc")
         self.assertEqual(staging["hist_scope"], "pan_germanic")
         self.assertEqual(audit["proposed_hist_stage"], "pgmc")
@@ -152,6 +156,28 @@ class HistoricalScopeTests(unittest.TestCase):
         self.assertEqual(inventory["rule_source_anchor"], "define PNWGmcMnDissimilation (line 2158)")
         self.assertEqual(staging["fst_identifier"], "PNWGmcMnDissimilation")
         self.assertIn("stable Foma identifier only", inventory["notes"])
+
+    def test_index_uses_canonical_form_stage_not_rule_name_prefix(self):
+        with INDEX_FORMS.open(encoding="utf-8") as handle:
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+
+        stem_selected = [
+            row for row in rows
+            if row["form"] == "*stámniz"
+            and row["form_role"] == "selected_input"
+            and row["source_scope"] == "trace_proto_input"
+        ]
+        self.assertTrue(stem_selected)
+        self.assertEqual({row["language"] for row in stem_selected}, {"pgmc"})
+
+        heaven_selected = [
+            row for row in rows
+            if row["form"] == "*xébun"
+            and row["form_role"] == "selected_input"
+            and row["source_scope"] == "trace_proto_input"
+        ]
+        self.assertTrue(heaven_selected)
+        self.assertEqual({row["language"] for row in heaven_selected}, {"nsgmc"})
 
 
 class CorpusTotalsTests(unittest.TestCase):

@@ -67,7 +67,6 @@ COMPLETED: dict[str, str] = {
     "SC024": "851f7531",
     "SC023": "aeea523b",
     "SC022": "10e55b8c",
-    "SC021": "505c94c6",
     "SC019": "337d31b6",
     "SC018": "c94fb4a3",
     "SC017": "7013010d",
@@ -97,7 +96,6 @@ _PNWGMC = {
     "SC017": "PNWGmcULowering",
     "SC018": "PNWGmcStressedMonosyllableORaising",
     "SC019": "PNWGmcFinalLongORaising",
-    "SC021": "PNWGmcUnstressedORaising",
     "SC023": "PNWGmcNStemNLoss",
     "SC024": "PNWGmcLongELowering",
     "SC025": "PNWGmcLongENasalRounding",
@@ -171,6 +169,7 @@ EXCLUDED: dict[str, tuple[str, str]] = {
     "SC004": ("deferred", "Conflates distinguishable developments; split decision pending (do not rename)."),
     "SC064": ("deferred", "Stage unresolved (hist_stage nwgmc vs chapter 4/OE, confidence C); do not rename."),
     "SC016": ("not_required", "OE West Saxon; early position is a documented FST dependency, not a stage claim."),
+    "SC021": ("retired", "SC021 is retired; former PNWGmcUnstressedORaising has no live canonical rule. Successors are SC071, SC099, and SC100."),
     "SC041": ("not_required", "PWGmc name source-correct (R/T pp.60-61); no rename."),
     "SC042": ("not_required", "Model-shaped feeder; position-by-dependency; no rename."),
     "SC049": ("not_required", "PGmc *b allophony correct; late position is an FST dependency."),
@@ -223,16 +222,26 @@ def build_rows() -> list[dict[str, str]]:
             })
         else:
             status, note = EXCLUDED[sc]
+            if status == "retired":
+                canonical_id = ""
+                canonical_display = ""
+                canonical_stage = "retired"
+                canonical_scope = "retired"
+            else:
+                canonical_id = former_id
+                canonical_display = former_disp
+                canonical_stage = former_stage
+                canonical_scope = former_scope
             rows.append({
                 "sc_id": sc,
                 "former_foma_identifier": former_id,
-                "canonical_foma_identifier": former_id,  # unchanged
+                "canonical_foma_identifier": canonical_id,
                 "former_display_name": former_disp,
-                "canonical_display_name": former_disp,
+                "canonical_display_name": canonical_display,
                 "former_hist_stage": former_stage,
-                "canonical_hist_stage": former_stage,
+                "canonical_hist_stage": canonical_stage,
                 "former_hist_scope": former_scope,
-                "canonical_hist_scope": former_scope,
+                "canonical_hist_scope": canonical_scope,
                 "migration_status": status,
                 "migration_commit": "",
                 "notes": note,
