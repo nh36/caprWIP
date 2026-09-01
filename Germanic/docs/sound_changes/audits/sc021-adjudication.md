@@ -348,14 +348,14 @@ final-syllable positive control, and the weak II presents in -aþ as
 further final-syllable controls. This follows the corpus-maturation tack
 used for WHO/YOU: the corrected rule must actually fire on a witnessed row.
 
-**Defect exposed (Phase-4 report)**: SC040 `OEMedUnstressedULowering` — a
-late (9th-c.) OE change (Campbell §373) — currently executes at cascade
-position 40, BEFORE Anglo-Frisian brightening and the pre-OE shortening
-block (positions ~46–70). That executable order was already historically
-inverted before this adjudication. The repair places the shortening/raising/
-lowering chain in its correct position relative to SC040 wherever that can
-be done without disturbing frozen outputs, and reports the residual SC040
-staging question rather than silently rebuilding the whole OE block.
+**Phase-4 final state**: the SC040 `OEMedUnstressedULowering` defect reported
+above is repaired, not residual. The late (9th-c.) OE lowering (Campbell §373)
+now executes after the c.700 unstressed mergers and the SC071 → SC099 → SC100
+chain, at both production composition sites and in the sandbox. This is the
+historically ordered final architecture: the short *o produced by SC071 is
+first resolved as medial *u or final *a, and SC040 can then apply only at its
+own later OE stage. No further SC040 staging question remains in this SC021
+adjudication.
 
 **Re-entry conditions** (recorded so the SC021 retirement is not silent
 loss):
