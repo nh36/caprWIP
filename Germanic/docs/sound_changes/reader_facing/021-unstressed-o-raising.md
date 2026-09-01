@@ -1,5 +1,7 @@
 # SC021 retirement: alleged Northwest Germanic unstressed \emph{*o}-raising
 
+## SC021. Retired PNWGmc unstressed \emph{*o}-raising (`RetiredPNWGmcUnstressedORaising`) {#rule-RetiredPNWGmcUnstressedORaising}
+
 SC021 formerly modeled an unstressed short \emph{*o} > \emph{*u} before a
 following \emph{*u} as a Proto-Northwest-Germanic sound change. It is
 **retired** and no longer has an executable Foma definition or a place in the

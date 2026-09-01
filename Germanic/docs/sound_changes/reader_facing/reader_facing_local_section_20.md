@@ -449,9 +449,9 @@ in the class I weak verbs of the *cnyssan* 'strike' type
 Proto-West Germanic paradigm of 'yoke' with the lowering applied
 [@RingeTaylor2014, p. 129].
 
-The clearest corpus witnesses are *ġeoc*, *nosu* 'nose', *sċofl* 'shovel',
-and *sorg* 'sorrow'. Where the following syllable kept a high vowel the
-lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
+The clearest corpus witnesses are [ġeoc]{.iv lang=oe sort=geoc role=evidence_form} 'yoke', *nosu* 'nose',
+*sċofl* 'shovel', and *sorg* 'sorrow'. Where the following syllable kept a
+high vowel the lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
 survived [@SieversBrunner1965, pp. 64--65, §92.1].
 
 ## \CAPRRuleHeading{SC017. Lowering of \emph{*u} before following non-high vowels}{PNWGmcULowering} {#rule-PNWGmcULowering}
@@ -820,56 +820,6 @@ define EAFRhotacism [
 Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc [líznōjaną]{.recon} ‘learn’ yields [*lirnian*]{.pred} rather than expected OE *liornian* ‘learn’, PGmc [líznōθi]{.recon} ‘learns’ yields [*lirnaþ*]{.pred} rather than expected *liornaþ* 'learns', PGmc [líznô]{.recon} ‘learn’ yields [*lirna*]{.pred} rather than expected *liorna* 'learn', and PGmc [mízdai]{.recon} ‘meed’ yields [*merde*]{.pred} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes no output.
 
 The lexical evidence thus supplies a terminus ante quem but no terminus post quem. The lower boundary rests on the historical analyses cited above: Ringe and Taylor put rhotacism at the end of the sequence of \emph{*z}-losses — "first \emph{*z} was lost in a variety of environments ..., then all surviving \emph{*z} became \emph{*r}" [@RingeTaylor2014, p. 87, §3.3.1] — and Crist observes that the deletions distinguish \emph{*z} from \emph{*r} and so must precede the merger [@Crist2002, pp. 2--3]. The rule is accordingly ordered after the three final-\emph{*z} losses ([SC096 RootNounNomZLoss](#rule-RootNounNomZLoss), [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), and [SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)) and before breaking, so that the derivation follows the reconstructed chronology.
-
-\newpage
-
-# Unstressed \emph{*o}-raising
-
-## Historical discussion
-
-In the Northwest Germanic period an unstressed \emph{*o} was raised to \emph{*u}
-when \emph{*u} followed in the next syllable. The clearest case is the
-\emph{n}-stem accusative singular, where inherited \emph{*-onų} was regularly
-raised to \emph{*-unų} before the following high vowel; Campbell treats the
-resulting unstressed \emph{u} and \emph{o} alternations for Old English
-[@Campbell1959, pp. 155--156, §§373--374]. The change is a general development of
-the unstressed suffix, not tied to any single lexeme.
-
-## \CAPRRuleHeading{SC021. Raising of unstressed \emph{*o} before later \emph{*u}}{PNWGmcUnstressedORaising} {#rule-PNWGmcUnstressedORaising}
-
-```foma
-define PNWGmcUnstressedORaising [
-    {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
-];
-```
-
-No word in the present selected corpus supplies this environment: no selected
-input carries an unstressed \emph{*o} before a following \emph{*ų}, so
-[SC021 PNWGmcUnstressedORaising](#rule-PNWGmcUnstressedORaising) fires in no
-current derivation. The earlier witness [*heofon*]{.iv lang=oe sort=heofon role=evidence_form}
-'heaven' no longer applies here: its selected input is now Ringe and Taylor's
-northern West Germanic [hebun]{.recon .iv lang=nsgmc sort=hebun role=evidence_form}
-'heaven', which already carries the generalized labial and contains no unstressed
-\emph{*o} before \emph{*ų} [@RingeTaylor2014, p. 287]. The rule is retained as a
-genuine Northwest Germanic change, but it is presently unwitnessed and
-boundary-limited: no lexical form now constrains its position within the Old
-English sequence, and moving it earlier or later leaves every output unchanged.
-
-One candidate witness was examined and declined. The early Northumbrian
-accusative *galgu* 'gallows' (Ruthwell Cross) stands among the "very few"
-\emph{n}-stem forms preserving a \emph{u}-vowel in this ending, and if its
-\emph{-u} continued raised \emph{*-unų} it would witness this change directly.
-But Ringe and Taylor themselves hedge the form — "masc. acc. galgu is not
-necessarily relevant", since its \emph{-u} may instead connect with the Old
-High German masculine accusative singular ending \emph{-un} ~ \emph{-on} on
-Bammesberger's analogical account [@RingeTaylor2014, pp. 62--63; @Bammesberger1990,
-p. 169] — they judge the raising hypothesis phonetically sensible but resting
-on "too small a basis" [@RingeTaylor2014, p. 63], and they conclude of the
-competing analyses of these \emph{n}-stem relics that "a decisive choice
-between those alternatives does not seem possible" [@RingeTaylor2014, p. 164].
-A single dialectally marked inflected relic whose ending admits an analogical
-source cannot responsibly anchor a sound law, so the rule remains unwitnessed
-and its coverage status is recorded as a research issue.
 
 \newpage
 
@@ -2393,15 +2343,46 @@ The following rule handles the later shortening stage.
 
 ```foma
 define OELateOShortening [
-    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
 ];
 ```
 
-The rule shortens the remaining unstressed long \emph{*ō} after fronting,
-producing the later “stable a” endings in OE *boraþ* ‘bears’ and *liornaþ*
-‘learns’.
+The rule shortens the remaining unstressed long \emph{*ō} after fronting. The
+shortened vowel is then resolved by the following medial/final distribution,
+not directly as \emph{a} [@StauslandJohnsen2015, pp. 28--31].
 
-Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred} rather than expected OE *boraþ* 'bears', and PGmc [líznōθi]{.recon} ‘learns’ yield [*liorneþ*]{.pred} rather than expected *liornaþ* 'learns'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly). Moving it later within the tested range creates no equally sharp failure.
+Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred} rather than expected OE *boraþ* 'bears', and PGmc [líznōθi]{.recon} ‘learns’ yield [*liorneþ*]{.pred} rather than expected *liornaþ* 'learns'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly).
+
+## \CAPRRuleHeading{SC099. Medial raising of shortened unstressed \emph{*o}}{OEMedUnstressedORaising} {#rule-OEMedUnstressedORaising}
+
+```foma
+define OEMedUnstressedORaising [
+    {*o} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic
+];
+```
+
+After [SC071 OELateOShortening](#rule-OELateOShortening), the shortened vowel gives \emph{u} in an unstressed medial
+syllable. The rule encodes Stausland Johnsen's statistically supported account
+of West Saxon ō-verb pasts, not a general rule for inherited short \emph{*o}
+or for nominal morphology [@StauslandJohnsen2015, pp. 28--31, 36]. His
+diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [wundode]{.pred}
+> OE [wundude]{.iv lang=oe} ‘wounded’ [@StauslandJohnsen2015, pp. 28--29].
+
+## \CAPRRuleHeading{SC100. Final lowering of shortened unstressed \emph{*o}}{OEFinalUnstressedOLowering} {#rule-OEFinalUnstressedOLowering}
+
+```foma
+define OEFinalUnstressedOLowering [
+    {*o} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* .#.
+];
+```
+
+In a final syllable the same shortened vowel gives \emph{a}. Thus the existing
+month control continues PGmc [mḗnōθz]{.recon} ‘month’ through shortened
+\emph{*o} to OE [mōnaþ]{.iv lang=oe} ‘month’, while [wúndōdē]{.recon} takes
+[SC099 OEMedUnstressedORaising](#rule-OEMedUnstressedORaising)
+instead. The medial/final contrast and its chronology after long-vowel
+shortening are Stausland Johnsen's analysis [@StauslandJohnsen2015,
+pp. 28--31].
 
 \newpage
 
@@ -2914,7 +2895,11 @@ before u-lowering, the derivation would have to treat an Old English
 scribal practice as a Northwest Germanic sound change, an ordering that
 no source supports. The witnesses *ġeoc* and *ġeoguþ* between them fix
 both faces of the rule: one shows the convention applied to lowered
-\emph{o}, the other to unlowered \emph{u}.
+\emph{o}, the other to unlowered \emph{u}. The handbook domain is broader
+(it also includes \emph{a}/\emph{ā}/\emph{ō} contexts after word-initial
+palatals), but this executable rule is intentionally complete for the
+currently selected corpus witnesses rather than a maximal dialectal
+enumeration.
 
 \newpage
 

@@ -16,9 +16,9 @@ in the class I weak verbs of the *cnyssan* 'strike' type
 Proto-West Germanic paradigm of 'yoke' with the lowering applied
 [@RingeTaylor2014, p. 129].
 
-The clearest corpus witnesses are *ġeoc*, *nosu* 'nose', *sċofl* 'shovel',
-and *sorg* 'sorrow'. Where the following syllable kept a high vowel the
-lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
+The clearest corpus witnesses are [ġeoc]{.iv lang=oe sort=geoc role=evidence_form} 'yoke', *nosu* 'nose',
+*sċofl* 'shovel', and *sorg* 'sorrow'. Where the following syllable kept a
+high vowel the lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
 survived [@SieversBrunner1965, pp. 64--65, §92.1].
 
 ## SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering}

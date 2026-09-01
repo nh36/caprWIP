@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2407
-- Internal production unique forms: 1092
-- Printed main occurrences: 2319
-- Printed main unique forms: 1082
+- Internal production occurrences: 2408
+- Internal production unique forms: 1095
+- Printed main occurrences: 2320
+- Printed main unique forms: 1085
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -15,11 +15,11 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1230 | 461 |
+| Old English | 1232 | 464 |
 | Proto-Germanic | 948 | 527 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 17 | 9 |
-| Northern West Germanic | 9 | 4 |
+| Northern West Germanic | 8 | 4 |
 | Pre-Old English / prehistoric English | 19 | 10 |
 | Old Norse | 23 | 14 |
 | Old High German | 21 | 17 |
@@ -40,7 +40,7 @@
 | source_protoform | 339 |
 | selected_input | 543 |
 | comparison_form | 833 |
-| evidence_form | 218 |
+| evidence_form | 219 |
 
 ## Internal-only rows by reason
 
@@ -53,19 +53,19 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 117
-- `example_input`: 107
-- `expected_output`: 133
-- `model_stage`: 84
-- `notation_or_segment`: 473
-- `yielded_output`: 102
+- `diagnostic_comparator`: 127
+- `example_input`: 103
+- `expected_output`: 127
+- `model_stage`: 86
+- `notation_or_segment`: 518
+- `yielded_output`: 98
 
-- Reader-facing include_in_example_index=yes: 543
-- Reader-facing include_in_example_index=no: 473
+- Reader-facing include_in_example_index=yes: 541
+- Reader-facing include_in_example_index=no: 518
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1100
+- Unique printed entries: 1103
 - Print anomaly rows: 50
 - Hard print anomalies: 0
 
@@ -154,36 +154,36 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 117
-- `example_input`: 107
-- `expected_output`: 133
-- `model_stage`: 84
-- `yielded_output`: 102
+- `diagnostic_comparator`: 127
+- `example_input`: 103
+- `expected_output`: 127
+- `model_stage`: 86
+- `yielded_output`: 98
 
 ### Included rows by inferred language
 
-- `unknown`: 30
-- `goth`: 14
-- `nsgmc`: 5
+- `unknown`: 32
+- `goth`: 16
+- `nsgmc`: 4
 - `oe`: 57
 - `ofris`: 4
-- `ohg`: 5
+- `ohg`: 7
 - `on`: 9
 - `os`: 3
-- `pgmc`: 182
+- `pgmc`: 179
 - `pnwgmc`: 3
-- `preoe`: 201
-- `pwgmc`: 30
+- `preoe`: 191
+- `pwgmc`: 36
 
 ### Included rows by main-index overlap
 
-- `no`: 355
-- `yes`: 188
+- `no`: 354
+- `yes`: 187
 
-- Included whole-form rows with asterisks: 439
-- Included whole-form rows without asterisks: 104
+- Included whole-form rows with asterisks: 436
+- Included whole-form rows without asterisks: 105
 - Included rows inferred_language=oe with leading asterisk: 25
-- Included rows inferred_language=pgmc but OE-output-like form shape: 31
+- Included rows inferred_language=pgmc but OE-output-like form shape: 28
 
 ## Included main-index rows (sample)
 
@@ -225,10 +225,10 @@ _None._
 ## Reader-facing example rows (sample)
 
 - `*taugma-` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:100)
-- `x` (oe, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1005)
-- `*s` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1017)
-- `*x` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1017)
-- `x` (oe, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1017)
-- `*ai` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1025)
-- `*ái` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1025)
-- `*ā` (oe, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1025)
+- `*ai > *ē` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
+- `*láimą` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
+- `*ái` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
+- `*sáiwalō` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
+- `*sāwel` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
+- `*sāwol` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
+- `soul` (pgmc, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)

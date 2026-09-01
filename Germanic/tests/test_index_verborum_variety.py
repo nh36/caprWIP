@@ -509,10 +509,12 @@ class RealCorpusInvariantTests(unittest.TestCase):
             # section 20, and chapters 008/097/021 gained witness prose (hwā,
             # ēow, and the declined galgu candidate), each contributing indexed
             # protoform/target/evidence spans plus lexical-heading injections.
-            "production_occurrences": 2407,
-            "production_unique_forms": 1188,
-            "print_main_occurrences": 2319,
-            "unique_printed_entries": 1100,
+            # +1 occurrence / +3 unique printed entries after ġeoc became an
+            # explicitly typed OE reader-facing evidence form.
+            "production_occurrences": 2408,
+            "production_unique_forms": 1191,
+            "print_main_occurrences": 2320,
+            "unique_printed_entries": 1103,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -907,14 +909,15 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # added to the flea model entry during the flea adjudication.
         # +21 corpus / +21 book occurrences after corpus-maturation pass 01
         # (who/you rows, model entries, assembly-manifest rows, SC098 chapter,
-        # and 008/097/021 witness prose).
-        self.assertEqual(len(pm), 2319)
+        # and 008/097/021 witness prose). +1 corpus / book occurrence and
+        # book emission after ġeoc became explicit reader-facing evidence.
+        self.assertEqual(len(pm), 2320)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
         self.assertEqual(source_not_in_book, 229)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2090)
-        self.assertEqual(len(be), 1917)
+        self.assertEqual(len(bo), 2091)
+        self.assertEqual(len(be), 1918)
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
         self.assertEqual(
@@ -962,17 +965,19 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # *flauha- comparison form added to the flea model entry during the
         # flea adjudication.
         # +21 corpus / +21 book occurrences and +19 book emissions after
-        # corpus-maturation pass 01 (who/you additions).
-        self.assertEqual(len(pm), 2319, "corpus occurrence count")
-        source_not_in_book = 2319 - 2090
+        # corpus-maturation pass 01 (who/you additions). +1 corpus / book
+        # occurrence and book emission after ġeoc became explicit
+        # reader-facing evidence.
+        self.assertEqual(len(pm), 2320, "corpus occurrence count")
+        source_not_in_book = 2320 - 2091
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
-        self.assertEqual(len(be), 1917, "book emission count")
+        self.assertEqual(len(be), 1918, "book emission count")
         # +10 corpus / +14 book unique entries vs the pre-z-split snapshot: the
         # three-way SC020 split (SC096/SC020/SC097) and the four new root-noun
         # model entries (book, flea, goose, louse) introduce new indexed headwords.
         # +12 corpus / +12 book unique entries after corpus-maturation pass 01.
-        self.assertEqual(len(pu), 1100, "unique corpus entries")
-        self.assertEqual(len(bu), 872, "unique book entries")
+        self.assertEqual(len(pu), 1103, "unique corpus entries")
+        self.assertEqual(len(bu), 875, "unique book entries")
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)
@@ -1000,7 +1005,8 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # +1 vs the z-split snapshot: the *flauha- span is an explicit .iv tag.
         # +15 after corpus-maturation pass 01: the who/you model entries carry
         # explicit .iv spans for protoforms, targets, and comparison forms.
-        self.assertEqual(printable_explicit, 1454, "printable explicit occurrences")
+        # +1 after ġeoc became explicit reader-facing evidence.
+        self.assertEqual(printable_explicit, 1455, "printable explicit occurrences")
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

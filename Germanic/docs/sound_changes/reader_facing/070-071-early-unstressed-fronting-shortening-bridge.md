@@ -55,11 +55,11 @@ define OEMedUnstressedORaising [
 ];
 ```
 
-After SC071, the shortened vowel gives \emph{u} in an unstressed medial
+After [SC071 OELateOShortening](#rule-OELateOShortening), the shortened vowel gives \emph{u} in an unstressed medial
 syllable. The rule encodes Stausland Johnsen's statistically supported account
 of West Saxon ō-verb pasts, not a general rule for inherited short \emph{*o}
 or for nominal morphology [@StauslandJohnsen2015, pp. 28--31, 36]. His
-diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [*wundode]{.pred}
+diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [wundode]{.pred}
 > OE [wundude]{.iv lang=oe} ‘wounded’ [@StauslandJohnsen2015, pp. 28--29].
 
 ## SC100. Final lowering of shortened unstressed \emph{*o} (`OEFinalUnstressedOLowering`) {#rule-OEFinalUnstressedOLowering}
@@ -72,7 +72,8 @@ define OEFinalUnstressedOLowering [
 
 In a final syllable the same shortened vowel gives \emph{a}. Thus the existing
 month control continues PGmc [mḗnōθz]{.recon} ‘month’ through shortened
-\emph{*o} to OE [mōnaþ]{.iv lang=oe} ‘month’, while *wundōdē* takes SC099
+\emph{*o} to OE [mōnaþ]{.iv lang=oe} ‘month’, while [wúndōdē]{.recon} takes
+[SC099 OEMedUnstressedORaising](#rule-OEMedUnstressedORaising)
 instead. The medial/final contrast and its chronology after long-vowel
 shortening are Stausland Johnsen's analysis [@StauslandJohnsen2015,
 pp. 28--31].
