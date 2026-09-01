@@ -98,7 +98,6 @@ _PNWGMC = {
     "SC018": "PNWGmcStressedMonosyllableORaising",
     "SC019": "PNWGmcFinalLongORaising",
     "SC021": "PNWGmcUnstressedORaising",
-    "SC022": "PNWGmcMnDissimilation",
     "SC023": "PNWGmcNStemNLoss",
     "SC024": "PNWGmcLongELowering",
     "SC025": "PNWGmcLongENasalRounding",
@@ -113,6 +112,15 @@ for _sc, _canon in _PNWGMC.items():
         "migration_status": "pending",
         "notes": "PNWGmc convention: make Proto-Northwest Germanic explicit; body/order unchanged",
     }
+
+RENAMES["SC022"] = {
+    "canonical_foma_identifier": "PNWGmcMnDissimilation",
+    "canonical_display_name": "Common Germanic Mn Dissimilation",
+    "canonical_hist_stage": "pgmc",
+    "canonical_hist_scope": "pan_germanic",
+    "migration_status": "pending",
+    "notes": "Foma identifier remains stable; Fulk 2018 p.121 §6.11 and Polomé 1967 pp.818-819 correct the historical scope from PNWGmc to Common Germanic.",
+}
 
 # --- 3.2 Early Anglo-Frisian corridor rules ---
 RENAMES["SC003"] = {

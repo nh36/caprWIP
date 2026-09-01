@@ -57,11 +57,11 @@
 - `example_input`: 103
 - `expected_output`: 127
 - `model_stage`: 86
-- `notation_or_segment`: 518
+- `notation_or_segment`: 521
 - `yielded_output`: 98
 
 - Reader-facing include_in_example_index=yes: 541
-- Reader-facing include_in_example_index=no: 518
+- Reader-facing include_in_example_index=no: 521
 
 ## Print-unique entry audit
 
@@ -225,10 +225,10 @@ _None._
 ## Reader-facing example rows (sample)
 
 - `*taugma-` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:100)
-- `*ai > *ē` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
-- `*láimą` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
-- `*ái` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
-- `*sáiwalō` (pgmc, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
-- `*sāwel` (preoe, yielded_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
-- `*sāwol` (preoe, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
-- `soul` (pgmc, expected_output; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1012)
+- `*ai` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1003)
+- `*ái` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1003)
+- `*ā` (oe, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1003)
+- `ǣ` (oe, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1003)
+- `*ai > *ē` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007)
+- `*láimą` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007)
+- `*ái` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007)

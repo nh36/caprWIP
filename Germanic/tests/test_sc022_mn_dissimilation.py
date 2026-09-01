@@ -31,6 +31,11 @@ GERMANIC = REPO_ROOT / "Germanic"
 FST_SOURCE = GERMANIC / "fsts" / "germanic.txt"
 TSV = GERMANIC / "data" / "germanic-aligned-final.tsv"
 BASELINE = GERMANIC / "docs" / "sound_changes" / "cascade_baseline" / "cascade_baseline_outputs.tsv"
+INVENTORY = GERMANIC / "docs" / "sound_changes" / "sound_change_inventory.tsv"
+STAGING_MAP = GERMANIC / "docs" / "sound_changes" / "sound_change_historical_staging_map.tsv"
+HISTORICAL_AUDIT = (
+    GERMANIC / "docs" / "sound_changes" / "cascade_baseline" / "historical_audit_table.tsv"
+)
 
 
 def _tsv_row(row_id: str) -> dict[str, str]:
@@ -44,6 +49,15 @@ def _tsv_row(row_id: str) -> dict[str, str]:
 def _baseline_by_concept() -> dict[str, dict[str, str]]:
     with BASELINE.open(encoding="utf-8") as handle:
         return {row["concept"]: row for row in csv.DictReader(handle, delimiter="\t")}
+
+
+def _metadata_row(path: Path, key: str) -> dict[str, str]:
+    lines = [line for line in path.read_text(encoding="utf-8").splitlines()
+             if not line.startswith("#")]
+    for row in csv.DictReader(lines, delimiter="\t"):
+        if row[key] == "SC022":
+            return row
+    raise AssertionError(f"SC022 not found in {path}")
 
 
 class SC022RuleBodyTests(unittest.TestCase):
@@ -119,6 +133,25 @@ class SevenControlTests(unittest.TestCase):
         self.assertEqual(seven["proto"], "*sébun")
         self.assertEqual(seven["outputs"], "seofon")
         self.assertEqual(seven["match"], "1")
+
+
+class HistoricalScopeTests(unittest.TestCase):
+    def test_stage_is_common_germanic_not_pnwgmc(self):
+        inventory = _metadata_row(INVENTORY, "change_id")
+        staging = _metadata_row(STAGING_MAP, "sc_id")
+        audit = _metadata_row(HISTORICAL_AUDIT, "sc_id")
+        self.assertEqual(inventory["historical_stage"], "Proto-Germanic")
+        self.assertEqual(staging["hist_stage"], "pgmc")
+        self.assertEqual(staging["hist_scope"], "pan_germanic")
+        self.assertEqual(audit["proposed_hist_stage"], "pgmc")
+        self.assertEqual(audit["proposed_hist_scope"], "pan_germanic")
+
+    def test_stable_identifier_is_not_a_stage_claim(self):
+        inventory = _metadata_row(INVENTORY, "change_id")
+        staging = _metadata_row(STAGING_MAP, "sc_id")
+        self.assertEqual(inventory["rule_source_anchor"], "define PNWGmcMnDissimilation (line 2158)")
+        self.assertEqual(staging["fst_identifier"], "PNWGmcMnDissimilation")
+        self.assertIn("stable Foma identifier only", inventory["notes"])
 
 
 class CorpusTotalsTests(unittest.TestCase):
