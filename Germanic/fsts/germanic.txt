@@ -467,6 +467,9 @@ define pgrmWeakTailVowel [
     ō:{*ō} θ:{*θ} i:{*i} |
     # 3sg after early i-apocope: *-ōθ (needed for vowel shortening to apply)
     ō:{*ō} θ:{*θ} |
+    # Class II weak preterite 3sg: *-ōdē, e.g. *wundōdē > OE wundude.
+    # This is the medial-syllable diagnostic in Stausland Johnsen 2015: 28--31.
+    ō:{*ō} d:{*d} ē:{*ē} |
     # 3sg after vowel shortening: *-aθ (output of *ō → *a shortening)
     a:{*a} θ:{*θ} |
     ō:{*ō} θ:{*θ} z:{*z} |
@@ -2272,15 +2275,16 @@ define PNWGmcFinalLongORaising [
     {*ō} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ];
 
-# NWGmc: Unstressed *o → *u raising before following *u (Fulk §7.31).
-# Fulk: "*-on- should have yielded, in (N)WGmc., *-un- before *u in the next syllable"
-# This explains the acc.sg. of an-stems: PGmc *-onų → NWGmc *-unų → OE -an/-un.
-# Retained as a genuine NWGmc change but currently UNWITNESSED in the 380-row
-# corpus: no selected input carries *o before *ų (the former witness heaven now
-# starts from northern-WGmc *xébun, not *xémonų). Fires on 0 rows; inert here.
-define PNWGmcUnstressedORaising [
-    {*o} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ EnglishStarConsonant* {*ų}
-];
+# SC021 PNWGmcUnstressedORaising RETIRED (sc021-adjudication.md, 2026).
+# The former NWGmc *o → *u raising before *ų (Fulk §7.31/§5.5 "commonly said")
+# is not a securely established sound law: R/T 2014 pp.62-65 reject any general
+# PNWGmc *-on- > *-un- (early Runic -on-, OS/OHG gen.pl. -ōno); the sole OE
+# relic galgu has live analogical explanations (Bammesberger 1990:169; Walde
+# 1900:169); and van Helten's parent conditioning is statistically refuted by
+# Stausland Johnsen 2015:24-25. The rule fired on 0 corpus rows. The real,
+# demonstrated development in this domain — Stausland Johnsen's medial-syllable
+# raising of shortened *o < *ō — is implemented at its correct late pre-OE
+# position as SC099 OEMedUnstressedORaising (see the *ō shortening block).
 
 # NWGmc mn-dissimilation (Fulk §6.14, K-S s.v. Himmel; Ringe–Taylor vol.2 p.272)
 # Historical adjacent-cluster change: *m dissimilates to *β immediately before *n
@@ -2360,10 +2364,46 @@ define OEEarlyOShortening [
 ];
 
 define OELateOShortening [
-    # LATE: *ō → *a elsewhere (runs AFTER fronting)
-    # This *a was "of too late origin to become æ" (Campbell §355)
-    # Covers weak II -ōθi, -ōsi and any remaining *ō
-    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+    # LATE: *ō → *o elsewhere (runs AFTER fronting; Campbell §355: the late
+    # product is "of too late origin to become æ").
+    # Stausland Johnsen 2015:28-30: unstressed long vowels shorten regularly in
+    # pre-OE AFTER the loss of short unstressed vowels (the *bursti-/*burstīz
+    # argument). The shortened vowel is a plain short *o — the ONLY source of
+    # unstressed *o at this stage (the earliest OE texts have just two
+    # unstressed back vowels, u and a: Stausland Johnsen 2015:21; classical-OE
+    # unstressed o arises only from the later 9th-c. lowering, SC040). Its
+    # split — u in medial syllables, a in final syllables — is carried out by
+    # OEMedUnstressedORaising (SC099) and OEFinalUnstressedOLowering (SC100)
+    # immediately below, replacing the old one-step *ō → *a compression that
+    # hard-coded the final-syllable outcome for all positions (van Helten's
+    # refuted conditioning aside, medial *ō would have surfaced wrongly as a:
+    # **wundade).
+    {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
+];
+
+# SC099: Stausland Johnsen's law. The shortened *o (< PWGmc *ō) raises to *u
+# in unstressed MEDIAL syllables, where unstressed vowels are phonetically
+# shortest (Stausland Johnsen 2015:28-31; model fit R²=0.827, χ²(1)=25.41,
+# p<0.000001 on the 457 ō-verb past forms of Hatton 20). Demonstrated for the
+# WS ō-verbs; the corpus witness (wundude, his (6a)) stays inside that domain.
+# The raising's output u is what the earliest (8th-c.) texts write
+# (2015:21-22), so it MUST precede the 9th-c. u > o lowering tendency (SC040
+# OEMedUnstressedULowering) in the executable cascade.
+define OEMedUnstressedORaising [
+    {*o} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic
+];
+
+# SC100: in FINAL syllables the shortened *o undergoes the general development
+# of pre-OE unstressed *o to a (Stausland Johnsen 2015:28-29, *wundod >
+# wundad; Campbell §355 "stable a"; R/T vol.2 p.80 weak II -as/-aþ). Together
+# with SC099 this exhausts pre-OE unstressed *o: every such *o is non-initial
+# (see the shortening environment) and is either followed by another syllable
+# (SC099) or not (this rule). NOTE: this rule is only correct if SC040's
+# 9th-c. lowering runs AFTER it — otherwise SC040's output o (heofon) would
+# be swept to **heofan. That is the historical order in any case (Campbell
+# §373 is late; this split feeds the 8th-c. u/a distribution).
+define OEFinalUnstressedOLowering [
+    {*o} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* .#.
 ];
 define OEUnstressedLongVowelShortening5 [
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
@@ -3277,7 +3317,10 @@ define EnglishProtoToOE (
     # precede the *z/*r merger). Must precede breaking (SC044): the
     # *r produced here conditions breaking in e.g. liornian, meorde.
     .o. EAFRhotacism
-    .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
+    # SC021 PNWGmcUnstressedORaising retired from this slot
+    # (sc021-adjudication.md): no secure NWGmc *o → *u raising exists. The
+    # demonstrated development is Stausland Johnsen's late pre-OE medial
+    # raising, SC099, in the *ō-shortening block below.
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
     .o. PNWGmcLongELowering
@@ -3319,18 +3362,19 @@ define EnglishProtoToOE (
     # immediately after inter-stress raising, before the general
     # stress-sensitive cascade.
     .o. OEStripSecondaryStress
-    # PROBE §17.10.19 (R3): medial u-lowering moved AFTER InterStressRaising so
-    # that *u's newly raised from *a (e.g. *sāwalu → *sāwulu) are visible to
-    # lowering. Original position was immediately after NasalSpirantLoss.
-    # Campbell §373 / §49 place unstressed u → o late; R/T §6.3.3 places
-    # inter-stress raising in pre-OE — so lowering-after-raising is the
-    # chronologically correct order.
     # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
     # Must precede OEMedUnstressedULowering so that the medial *u trigger
     # is still visible. Output *ú (stressed) is then preserved through
     # u-lowering by the existing stressed-vowel left-context exclusion.
     .o. OEWICombinativeUUmlaut
-    .o. OEMedUnstressedULowering
+    # SC040 OEMedUnstressedULowering formerly sat HERE (moved to this slot
+    # from after NasalSpirantLoss by PROBE §17.10.19 R3, to follow
+    # InterStressRaising). The sc021 adjudication moved it further down, to
+    # after the unstressed-vowel mergers: Campbell §373 dates the u → o
+    # lowering to the 9th century, i.e. AFTER the pre-OE *ō-shortening split
+    # (SC071/SC099/SC100) whose 8th-c. u/a output it lowers. Executing it up
+    # here was historically inverted, and under the corrected split its o
+    # output would be swept by SC100 (**heofan for heofon).
     # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
     # See DEV_NOTES §17.10.14 for the cross-source survey.
     .o. PWGmcFinalBareALoss
@@ -3410,14 +3454,27 @@ define EnglishProtoToOE (
     .o. OEEarlyOShortening
     # 2. Fronting: *a → *æ (Anglo-Frisian fronting, §333)
     .o. OEUnstressedFrontingEarly
-    # 3. Late: *ō → *a elsewhere (weak II verbs like macaþ, lufaþ)
+    # 3. Late: *ō → *o elsewhere (Stausland Johnsen 2015:28-30; the old
+    #    one-step *ō → *a is replaced by shortening + the SC099/SC100 split)
     .o. OELateOShortening
+    # 3a. SC099 Stausland Johnsen's law: shortened *o → *u in medial
+    #     syllables (2015:28-31)
+    .o. OEMedUnstressedORaising
+    # 3b. SC100: shortened *o → *a in final syllables (2015:28-29;
+    #     Campbell §355)
+    .o. OEFinalUnstressedOLowering
     # 4. Other long vowel shortening (ī, ū, ǣ, ǭ → æ, etc.)
     .o. OEUnstressedLongVowelShortening
     # 5. Merger: *æ → *e (unstressed vowel merger, §369)
     .o. OEUnstressedAEMerger
     .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
+    # SC040 9th-c. medial u > o lowering (Campbell §373). Moved here from
+    # before PWGmcFinalBareALoss (sc021-adjudication.md): it must follow the
+    # pre-OE *ō-shortening split (SC071/SC099/SC100) and the c.700 unstressed
+    # mergers, matching its 9th-c. date; the old early position was
+    # historically inverted and incompatible with SC100.
+    .o. OEMedUnstressedULowering
     .o. OEPrefixIReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy
@@ -3483,7 +3540,7 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. MonosyllabicFinalZLoss
     # SC003 rhotacism after all final-*z losses: mirrors main pipeline.
     .o. EAFRhotacism
-    .o. PNWGmcUnstressedORaising  # *o → *u in suffix before *ų (Fulk §7.31)
+    # SC021 retired here too (sc021-adjudication.md): mirrors main pipeline.
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
     .o. PNWGmcLongELowering
@@ -3505,11 +3562,10 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. OEInterStressRaising
     # §16.6: strip Nebenton graves after raising (OE-only pipeline).
     .o. OEStripSecondaryStress
-    # Medial unstressed u-lowering moved AFTER InterStressRaising per
-    # §17.10.19 (R3). Mirrors main-stack ordering.
     # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
     .o. OEWICombinativeUUmlaut
-    .o. OEMedUnstressedULowering
+    # SC040 moved to after the unstressed mergers (9th-c. lowering;
+    # sc021-adjudication.md). Mirrors main-stack ordering.
     .o. PWGmcFinalBareALoss
     # R/T §3.1 pp.58-59: surviving bimoric *-ō (z-loss-exposed) → *-ā (long).
     # See DEV_NOTES §17.10.23.
@@ -3539,11 +3595,16 @@ define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
     .o. OEEarlyOShortening
     .o. OEUnstressedFrontingEarly
     .o. OELateOShortening
+    # SC099/SC100: Stausland Johnsen split of the shortened *o.
+    .o. OEMedUnstressedORaising
+    .o. OEFinalUnstressedOLowering
     .o. OEUnstressedLongVowelShortening
     .o. OEUnstressedAEMerger
-    # NOTE: OEMedUnstressedULowering runs after NasalSpirantLoss (see §14.13)
     .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
+    # SC040 9th-c. u > o lowering: mirrors main-stack position (after the
+    # mergers; sc021-adjudication.md).
+    .o. OEMedUnstressedULowering
     .o. OEPrefixIReduction
     .o. OEWeakTailReduction
     .o. OEJLossAfterHeavy

@@ -85,9 +85,9 @@ define SMonosyllabicFinalZLoss SPWGmcUnstressedWordFinalIApocope
 # (R/T vol.2 p.87; Crist 2002 §6).
 define SRhotacism SMonosyllabicFinalZLoss
     .o. EAFRhotacism;
-define SPNWGmcUnstressedORaising SRhotacism
-    .o. PNWGmcUnstressedORaising;
-define SPNWGmcMnDissimilation SPNWGmcUnstressedORaising
+# SC021 PNWGmcUnstressedORaising retired (sc021-adjudication.md); its stage
+# is gone and mn-dissimilation now chains directly off rhotacism.
+define SPNWGmcMnDissimilation SRhotacism
     .o. PNWGmcMnDissimilation;
 define SPNWGmcNStemNLoss SPNWGmcMnDissimilation
     .o. PNWGmcNStemNLoss;
@@ -127,9 +127,9 @@ define SOEStripSecondaryStress SOECompoundLinkingSyncope
     .o. OEStripSecondaryStress;
 define SOEWICombinativeUUmlaut SOEStripSecondaryStress
     .o. OEWICombinativeUUmlaut;
-define SOEMedUnstressedULowering SOEWICombinativeUUmlaut
-    .o. OEMedUnstressedULowering;
-define SPWGmcFinalBareALoss SOEMedUnstressedULowering
+# SC040 stage moved to after SOEMedUnstressedILowering (9th-c. lowering;
+# sc021-adjudication.md). Mirrors germanic.txt.
+define SPWGmcFinalBareALoss SOEWICombinativeUUmlaut
     .o. PWGmcFinalBareALoss;
 define SPWGmcSurvivingBimoricOUnrounding SPWGmcFinalBareALoss
     .o. PWGmcSurvivingBimoricOUnrounding;
@@ -189,7 +189,13 @@ define SOEUnstressedFrontingEarly SOEEarlyOShortening
     .o. OEUnstressedFrontingEarly;
 define SOELateOShortening SOEUnstressedFrontingEarly
     .o. OELateOShortening;
-define SOEUnstressedLongVowelShortening SOELateOShortening
+# SC099/SC100: Stausland Johnsen split of the shortened *o (mirrors
+# germanic.txt; sc021-adjudication.md).
+define SOEMedUnstressedORaising SOELateOShortening
+    .o. OEMedUnstressedORaising;
+define SOEFinalUnstressedOLowering SOEMedUnstressedORaising
+    .o. OEFinalUnstressedOLowering;
+define SOEUnstressedLongVowelShortening SOEFinalUnstressedOLowering
     .o. OEUnstressedLongVowelShortening;
 define SOEUnstressedAEMerger SOEUnstressedLongVowelShortening
     .o. OEUnstressedAEMerger;
@@ -197,7 +203,10 @@ define SOEMedUnstressedILowering1 SOEUnstressedAEMerger
     .o. OEMedUnstressedILowering1;
 define SOEMedUnstressedILowering SOEMedUnstressedILowering1
     .o. OEMedUnstressedILowering;
-define SOEPrefixIReduction SOEMedUnstressedILowering
+# SC040 9th-c. u > o lowering: after the mergers (sc021-adjudication.md).
+define SOEMedUnstressedULowering SOEMedUnstressedILowering
+    .o. OEMedUnstressedULowering;
+define SOEPrefixIReduction SOEMedUnstressedULowering
     .o. OEPrefixIReduction;
 define SOEWeakTailReduction SOEPrefixIReduction
     .o. OEWeakTailReduction;
@@ -343,10 +352,6 @@ regex SRhotacism;
 save stack old_english_sandbox_after_rhotacism.bin
 
 clear stack
-regex SPNWGmcUnstressedORaising;
-save stack old_english_sandbox_after_pnwgmc_unstressed_o_raising.bin
-
-clear stack
 regex SPNWGmcMnDissimilation;
 save stack old_english_sandbox_after_pnwgmc_mn_dissimilation.bin
 
@@ -421,10 +426,6 @@ save stack old_english_sandbox_after_oe_strip_secondary_stress.bin
 clear stack
 regex SOEWICombinativeUUmlaut;
 save stack old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin
-
-clear stack
-regex SOEMedUnstressedULowering;
-save stack old_english_sandbox_after_oe_med_unstressed_u_lowering.bin
 
 clear stack
 regex SPWGmcFinalBareALoss;
@@ -547,6 +548,14 @@ regex SOELateOShortening;
 save stack old_english_sandbox_after_oe_late_o_shortening.bin
 
 clear stack
+regex SOEMedUnstressedORaising;
+save stack old_english_sandbox_after_oe_med_unstressed_o_raising.bin
+
+clear stack
+regex SOEFinalUnstressedOLowering;
+save stack old_english_sandbox_after_oe_final_unstressed_o_lowering.bin
+
+clear stack
 regex SOEUnstressedLongVowelShortening;
 save stack old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin
 
@@ -561,6 +570,10 @@ save stack old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin
 clear stack
 regex SOEMedUnstressedILowering;
 save stack old_english_sandbox_after_oe_med_unstressed_i_lowering.bin
+
+clear stack
+regex SOEMedUnstressedULowering;
+save stack old_english_sandbox_after_oe_med_unstressed_u_lowering.bin
 
 clear stack
 regex SOEPrefixIReduction;

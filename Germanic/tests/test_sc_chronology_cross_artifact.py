@@ -27,7 +27,9 @@ INVENTORY = SC_DIR / "sound_change_inventory.tsv"
 STAGING = SC_DIR / "sound_change_historical_staging_map.tsv"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 
-SC_IDS = [f"SC{i:03d}" for i in range(1, 21)]
+# SC021 is retained as a stable retired identifier in its adjudication dossier
+# and aliases, but has no live inventory/staging-map rule after retirement.
+SC_IDS = [f"SC{i:03d}" for i in range(1, 21) if i != 21]
 
 # Historical stage: the audit matrix and the inventory use long-form display
 # labels; the staging map uses short internal codes. Map them onto one canonical
@@ -110,9 +112,8 @@ class CrossArtifactTests(unittest.TestCase):
                          "EAFAiMonophthongization")
         self.assertEqual(self.staging["SC004"]["fst_identifier"].strip(),
                          "EAFAiMonophthongization")
-        # Position 28 since the SC016/SC017 repair moved SC016 out of the
-        # early cascade (was 29 after the 2026 SC098 insertion; 28 before it).
-        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 28)
+        # Position 27 after SC021's retirement removed its former cascade slot.
+        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 27)
 
     def test_historical_stage_agrees_audit_inventory_staging(self):
         """Historical stage (canonical long form) must agree across audit,

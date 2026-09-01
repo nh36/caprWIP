@@ -8,7 +8,8 @@ corpus-maturation-01 coverage facts must hold:
   * SC097 is witnessed by who;
   * SC098 is witnessed by you;
   * SC008 witnesses include you;
-  * SC021 remains disputed_or_research_issue (galgu declined);
+  * retired SC021 is absent from the active historical-rule census;
+  * SC099 is witnessed by wundude;
   * every rule's coverage status is explicit ("every rule must fire" is
     deliberately NOT an invariant).
 """
@@ -90,11 +91,13 @@ class CorpusMaturationCoverageTests(unittest.TestCase):
         self.assertEqual(row["coverage_status"], "witnessed")
         self.assertIn("you", row["lexical_witnesses"].split(", "))
 
-    def test_sc021_disputed_galgu_declined(self):
-        row = self.census["SC021"]
-        self.assertEqual(row["coverage_status"],
-                         "disputed_or_research_issue")
-        self.assertIn("galgu", row["note"])
+    def test_retired_sc021_is_not_an_active_historical_rule(self):
+        self.assertNotIn("SC021", self.census)
+
+    def test_sc099_witnessed_by_wundude(self):
+        row = self.census["SC099"]
+        self.assertEqual(row["coverage_status"], "witnessed")
+        self.assertIn("wound", row["lexical_witnesses"].split(", "))
 
     def test_rhotacism_alias_resolves(self):
         # STAGE_ALIASES must keep SC003 witnessed even though the tracer

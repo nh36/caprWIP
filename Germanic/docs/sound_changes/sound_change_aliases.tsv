@@ -112,9 +112,8 @@ SC020	PGmc Final Z Deletion	Proto-Germanic Final Z Deletion	normalized_stage_nam
 SC020	PGmc Final Z Deletion	PGmc Final Z Deletion	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC020	PGmc Final Z Deletion	final *z deletion	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
 SC020	PGmc Final Z Deletion	loss of word-final *z	literature_search_alias	obvious search alias from the current rule name	inventory_audit_02 aliasing
-SC021	Proto-Northwest Germanic Unstressed O Raising	NWGmc Unstressed O Raising	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC021	Proto-Northwest Germanic Unstressed O Raising	PNWGmcUnstressedORaising	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC021	Proto-Northwest Germanic Unstressed O Raising	PNWGmcUnstressedORaising	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC021	Retired PNWGmc unstressed *o* raising	NWGmc Unstressed O Raising	retired_trace_label	Retired after the SC021 adjudication.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
+SC021	Retired PNWGmc unstressed *o* raising	PNWGmcUnstressedORaising	retired_foma_rule_name	Disputed short-*o before-*u rule retired, not reassigned to SC099/SC100.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
 SC021	Proto-Northwest Germanic Unstressed O Raising	Northwest Germanic Unstressed O Raising	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC021	Proto-Northwest Germanic Unstressed O Raising	NWGmc Unstressed O Raising	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC021	Proto-Northwest Germanic Unstressed O Raising	NWGmcUnstressedORaising	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
@@ -390,6 +389,14 @@ SC071	OE Late O Shortening	OELateOShortening	sandbox_stage_name		Germanic/fsts/o
 SC071	OE Late O Shortening	OELateOShortening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
 SC071	OE Late O Shortening	Old English Late O Shortening	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC071	OE Late O Shortening	OE Late O Shortening	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
+SC099	OE medial unstressed *o* raising	OE Medial Unstressed O Raising	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC099	OE medial unstressed *o* raising	OEMedUnstressedORaising	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC099	OE medial unstressed *o* raising	OEMedUnstressedORaising	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC099	OE medial unstressed *o* raising	OE medial shortened-o raising	normalized_stage_name	Stausland Johnsen 2015: 28-31, 36; original PWGmc *ō only.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
+SC100	OE final unstressed *o* lowering	OE Final Unstressed O Lowering	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+SC100	OE final unstressed *o* lowering	OEFinalUnstressedOLowering	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC100	OE final unstressed *o* lowering	OEFinalUnstressedOLowering	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC100	OE final unstressed *o* lowering	OE final shortened-o lowering	normalized_stage_name	Stausland Johnsen 2015: 28-31; paired with SC099.	Germanic/docs/sound_changes/audits/sc021-adjudication.md
 SC072	OE Unstressed Long Vowel Shortening	OE Unstressed Long Vowel Shortening	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
 SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
 SC072	OE Unstressed Long Vowel Shortening	OEUnstressedLongVowelShortening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt

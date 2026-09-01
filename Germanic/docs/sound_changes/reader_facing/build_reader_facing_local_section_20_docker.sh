@@ -54,7 +54,6 @@ chapter_files = [
     "098-early-apocope-in-unstressed-words.md",
     "097-monosyllabic-final-z-loss.md",
     "003-west-germanic-rhotacism.md",
-    "021-unstressed-o-raising.md",
     "022-mn-dissimilation.md",
     "023-n-stem-n-loss.md",
     "024-long-e-lowering.md",

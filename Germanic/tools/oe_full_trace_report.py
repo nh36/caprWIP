@@ -67,7 +67,7 @@ STAGES: List[Tuple[str, str]] = [
     ("PWGmcUnstressedWordFinalIApocope", "old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin"),
     ("MonosyllabicFinalZLoss", "old_english_sandbox_after_monosyllabic_final_z_loss.bin"),
     ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
-    ("PNWGmcUnstressedORaising", "old_english_sandbox_after_pnwgmc_unstressed_o_raising.bin"),
+    # SC021 PNWGmcUnstressedORaising retired (sc021-adjudication.md)
     ("PNWGmcMnDissimilation", "old_english_sandbox_after_pnwgmc_mn_dissimilation.bin"),
     ("PNWGmcNStemNLoss", "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin"),
     ("PNWGmcLongELowering", "old_english_sandbox_after_pnwgmc_long_e_lowering.bin"),
@@ -87,7 +87,8 @@ STAGES: List[Tuple[str, str]] = [
     ("OECompoundLinkingSyncope", "old_english_sandbox_after_oe_compound_linking_syncope.bin"),
     ("OEStripSecondaryStress", "old_english_sandbox_after_oe_strip_secondary_stress.bin"),
     ("OEWICombinativeUUmlaut", "old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin"),
-    ("OEMedUnstressedULowering", "old_english_sandbox_after_oe_med_unstressed_u_lowering.bin"),
+    # SC040 OEMedUnstressedULowering moved after the unstressed mergers
+    # (9th-c. lowering; sc021-adjudication.md)
     ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
     ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),
     ("EAFBrightening", "old_english_sandbox_after_eaf_brightening.bin"),
@@ -118,10 +119,15 @@ STAGES: List[Tuple[str, str]] = [
     ("OEEarlyOShortening", "old_english_sandbox_after_oe_early_o_shortening.bin"),
     ("OEUnstressedFrontingEarly", "old_english_sandbox_after_oe_unstressed_fronting_early.bin"),
     ("OELateOShortening", "old_english_sandbox_after_oe_late_o_shortening.bin"),
+    # SC099/SC100: Stausland Johnsen split of the shortened *o
+    ("OEMedUnstressedORaising", "old_english_sandbox_after_oe_med_unstressed_o_raising.bin"),
+    ("OEFinalUnstressedOLowering", "old_english_sandbox_after_oe_final_unstressed_o_lowering.bin"),
     ("OEUnstressedLongVowelShortening", "old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin"),
     ("OEUnstressedAEMerger", "old_english_sandbox_after_oe_unstressed_ae_merger.bin"),
     ("OEMedUnstressedILowering1", "old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin"),
     ("OEMedUnstressedILowering", "old_english_sandbox_after_oe_med_unstressed_i_lowering.bin"),
+    # SC040 9th-c. u > o lowering in its historically correct slot
+    ("OEMedUnstressedULowering", "old_english_sandbox_after_oe_med_unstressed_u_lowering.bin"),
     ("OEPrefixIReduction", "old_english_sandbox_after_oe_prefix_i_reduction.bin"),
     ("OEWeakTailReduction", "old_english_sandbox_after_oe_weak_tail_reduction.bin"),
     ("OEJLossAfterHeavy", "old_english_sandbox_after_oe_j_loss_after_heavy.bin"),
