@@ -877,30 +877,6 @@
       "notes": "Earlier boundary is an ordinary chronology boundary and local across SC019 and reciprocates SC019 later around rest; later boundary is also an ordinary chronology boundary but broad/far across SC040."
     },
     {
-      "source_change_id": "SC021",
-      "target_change_id": "PWGmcChanges",
-      "relation_type": "runner_limited_boundary",
-      "direction_basis": "earlier_boundary",
-      "representative_lexemes": "",
-      "representative_forms": "`none — no earlier real break was found before the runner boundary`",
-      "strength": "runner_boundary",
-      "interpretation_category": "runner_boundary",
-      "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC040 and should be narrated broadly rather than locally."
-    },
-    {
-      "source_change_id": "SC021",
-      "target_change_id": "SC040",
-      "relation_type": "broad_far_chronology",
-      "direction_basis": "later_boundary",
-      "representative_lexemes": "heaven",
-      "representative_forms": "PGmc `*xémonų` yields expected OE `heofon`, but the later-shifted variant yields `heofun`",
-      "strength": "broad_far",
-      "interpretation_category": "broad_far",
-      "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC040 and should be narrated broadly rather than locally."
-    },
-    {
       "source_change_id": "SC022",
       "target_change_id": "PWGmcChanges",
       "relation_type": "runner_limited_boundary",

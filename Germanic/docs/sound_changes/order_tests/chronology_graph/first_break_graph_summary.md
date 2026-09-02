@@ -9,29 +9,30 @@ In this documentation, **ordinary chronology** means a first-break relation betw
 ## Totals
 
 - total node count: `70`
-- total edge count: `140`
+- total edge count: `138`
 
 ### Node counts by card_type
 
 | card_type | count |
 | --- | ---: |
-| `broad_far` | 9 |
+| `broad_far` | 8 |
 | `mixed` | 14 |
 | `negative_boundary` | 10 |
 | `one_sided_chronology` | 5 |
 | `reciprocal_or_near_reciprocal` | 31 |
+| `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
 
 ### Edge counts by relation_type
 
 | relation_type | count |
 | --- | ---: |
-| `broad_far_chronology` | 18 |
+| `broad_far_chronology` | 17 |
 | `near_reciprocal_chronology` | 2 |
 | `no_break_search_boundary` | 23 |
 | `one_sided_chronology` | 32 |
 | `reciprocal_chronology` | 40 |
-| `runner_limited_boundary` | 22 |
+| `runner_limited_boundary` | 21 |
 | `technical_computational` | 3 |
 
 ## Strongest reciprocal / near-reciprocal clusters
@@ -66,7 +67,6 @@ The list below includes both tight reciprocal relations and broader reciprocal-l
 
 1. `SC015 -> SC036` (later_boundary) — lexemes: `world`; forms: PGmc `*wír-àldu` yields expected OE `weorold`, but the later-shifted variant yields `wuruld`
 1. `SC020 -> SC040` (later_boundary) — lexemes: `beaver; bough; cud; field; flood`; forms: PGmc `*bébruz` yields expected OE `befer`, but the later-shifted variant yields `befro`; PGmc `*kwéðuz` likewise yields `cwedo` instead of expected `cwedu`; PGmc `*félθuz` yields `feldo` instead of `feld`
-1. `SC021 -> SC040` (later_boundary) — lexemes: `heaven`; forms: PGmc `*xémonų` yields expected OE `heofon`, but the later-shifted variant yields `heofun`
 1. `SC023 -> SC047` (later_boundary) — lexemes: `do`; forms: PGmc `*dōną` yields expected OE `dōn`, but the later-shifted variant yields `+?` (no output)
 1. `SC024 -> SC056` (later_boundary) — lexemes: `sheep; year`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but the later-shifted variant yields `sċīep`; PGmc `*jḗrą` likewise yields `ġīer` instead of expected `ġēar`
 1. `SC033 -> SC044` (later_boundary) — lexemes: `chew; four; knee`; forms: PGmc `*kéwwaną` yields expected OE `ċēowan`, but the later-shifted variant yields `ċeowan`; PGmc `*fédwōr` likewise yields `feower` instead of expected `fēower`; PGmc `*knéwą` yields `cneow` instead of `cnēow`
@@ -89,7 +89,7 @@ The list below includes both tight reciprocal relations and broader reciprocal-l
 
 ## Runner-limited and technical / boundary cases
 
-- earlier runner-limited boundaries to `PWGmcChanges`: `SC014`, `SC015`, `SC016`, `SC018`, `SC021`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, `SC076`
+- earlier runner-limited boundaries to `PWGmcChanges`: `SC014`, `SC015`, `SC016`, `SC018`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC028`, `SC029`, `SC035`, `SC037`, `SC039`, `SC050`, `SC053`, `SC058`, `SC065`, `SC067`, `SC076` (the retired `SC021`'s former runner boundary is archival only)
 - later no-break search-boundary cases before `SC087`: `SC014`, `SC018`, `SC022`, `SC025`, `SC027`, `SC028`, `SC049`, `SC053`, `SC056`, `SC057`, `SC058`, `SC060`, `SC061`, `SC065`, `SC067`, `SC068`, `SC069`, `SC071`, `SC075`, `SC076`, `SC080`, `SC083`, `SC086`
 - these runner-limited and no-break edges are diagnostic search-boundary observations, not ordinary sound-change chronology constraints tying the source rule to `PWGmcChanges` or `SC087`
 - technical / scaffolding edges:

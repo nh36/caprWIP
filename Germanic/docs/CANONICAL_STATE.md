@@ -1,5 +1,13 @@
 # Germanic/OE canonical state
 
+> **FROZEN HISTORICAL CHECKPOINT (2026-05-09).** This file records the
+> project state at its freeze date and is preserved unchanged as a
+> historical record. It is **not** the current state: an active
+> sound-change adjudication programme has since reopened individual
+> rules. For current state, start with `Germanic/docs/CURRENT_STATE.md`;
+> for the adjudication method, see
+> `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`.
+
 - **Freeze date:** 2026-05-09
 - **Branch used:** `update`
 - **Base commit used for this freeze pass:** `37567274`

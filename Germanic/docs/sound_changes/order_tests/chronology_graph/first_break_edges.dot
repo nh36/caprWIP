@@ -92,8 +92,6 @@ digraph first_break_chronology {
   "SC019" -> "SC020" [label="reciprocal_chronology\nRG03_SC019_SC020", color="#2f855a", fontcolor="#2f855a", style=solid, penwidth=2.2];
   "SC020" -> "SC019" [label="reciprocal_chronology\nRG03_SC019_SC020", color="#2f855a", fontcolor="#2f855a", style=solid, penwidth=2.2];
   "SC020" -> "SC040" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0", style=dashed, penwidth=1.8];
-  "SC021" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed, penwidth=1.5];
-  "SC021" -> "SC040" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0", style=dashed, penwidth=1.8];
   "SC022" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed, penwidth=1.5];
   "SC022" -> "SC087" [label="no_break_search_boundary", color="#c53030", fontcolor="#c53030", style=dotted, penwidth=1.5];
   "SC023" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed, penwidth=1.5];
