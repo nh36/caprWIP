@@ -98,13 +98,13 @@
     },
     {
       "change_id": "SC023",
-      "display_name": "NWGmc N Stem N Loss",
+      "display_name": "Proto-Germanic Word-Final N Loss",
       "current_order": "23",
       "rule_name": "NWGmcNStemNLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC023-nwgmc-n-stem-n-loss.md",
       "card_type": "broad_far",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC047 and the `do` failure should be narrated as a no-output (`+?`) derivation rather than as a surface variant."
+      "short_summary": "Stage corrected to (pre-)PGmc general word-final *-n loss (sc023-adjudication.md). No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided counterfeeding boundary across SC047 with do as a negative witness (no-output `+?` derivation), stage-entailed rather than locally adjacent."
     },
     {
       "change_id": "SC024",
@@ -474,7 +474,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC061-oe-weak-tail-nasal-loss.md",
       "card_type": "one_sided_chronology",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier side is one-sided across SC023; the failure row records loss of output for do and later search reaches SC087 with no real break."
+      "short_summary": "Earlier side is one-sided across SC023 (Proto-Germanic Word-Final N Loss); the do failure is the same counterfeeding artifact adjudicated in sc023-adjudication.md (do never undergoes SC023 live); later search reaches SC087 with no real break."
     },
     {
       "change_id": "SC063",

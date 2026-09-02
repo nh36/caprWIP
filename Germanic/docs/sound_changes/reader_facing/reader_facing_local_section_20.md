@@ -469,18 +469,18 @@ define PNWGmcULowering [
 ];
 ```
 
-Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc*,
-*nosu*, *sċofl*, and *sorg*.
+Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* 'yoke',
+*nosu*, *sċofl* 'shovel', and *sorg*.
 
 The lowering feeds the much later West Saxon palatal-glide spelling
 ([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)): the \emph{o} that the
-scribes wrote in *ġeoc* is the output of this change, so PGmc
+scribes wrote in *ġeoc* 'yoke' is the output of this change, so PGmc
 [júką]{.recon} 'yoke' passes through \emph{*joką} on its way to the
 attested spelling [@Fulk2018, p. 56, §4.3; @RingeTaylor2014, p. 129].
 After [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc
 [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected *nosu*,
 PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected
-*sċofl*, and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather
+*sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather
 than expected *sorg*. These witnesses place
 [SC017 PNWGmcULowering](#rule-PNWGmcULowering) before final long-\emph{o}
 raising, and the *ġeoc* spelling shows its output surviving into the
@@ -747,7 +747,7 @@ Alongside the regular loss of word-final short high vowels in third syllables ([
 
 The conditioning is prosodic. Like Verner's law, the change is governed by accent: it applied in words unstressed in the sentence, and its apparent exceptions are systematic, not sporadic. Forms such as OE *ymbe* 'around' and OHG \emph{umbi} kept their final vowel because, as Ringe and Taylor observe, proclitics "were not phonologically word-final" and so stood outside the environment altogether [@RingeTaylor2014, pp. 57--58, §3.1.4]. Sentence-level accent placement therefore decides which sandhi variant each daughter language continues, and doublets across the family reflect the stressed and unstressed sentence forms of the same word — regular sandhi, not lexical diffusion.
 
-The diagnostic witness is the second-person plural pronoun. Ringe and Taylor print the Proto-West Germanic form as a doublet: PGmc \emph{*izwiz} (Gothic \emph{izwis}) → \emph{*iwwi} (by [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) and the loss of final \emph{*z}, [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)) → PWGmc \emph{*iuwi} ~ \emph{*iuw} [@RingeTaylor2014, pp. 41--42, §3.1.1]. Old English continues the apocopated, unstressed variant, and Ringe and Taylor's proof is the vocalism itself: "OE iow 'you (dat. pl.)' definitely does [show early apocope] (since it does not exhibit i-umlaut)" [@RingeTaylor2014, pp. 57--58, §3.1.4]. Had the \emph{*-i} survived, i-umlaut ([SC055 OEIUmlaut](#rule-OEIUmlaut)) would have fronted the diphthong; West Saxon *ēow* 'you' beside early West Saxon and Northumbrian *īow* shows the normal unumlauted development [@Campbell1959, §702, p. 283].
+The diagnostic witness is the second-person plural pronoun. Ringe and Taylor print the Proto-West Germanic form as a doublet: PGmc \emph{*izwiz} (Gothic \emph{izwis}) → \emph{*iwwi} (by [SC008 PWGmcCoronalWAssimilation](#rule-PWGmcCoronalWAssimilation) and the loss of final \emph{*z}, [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)) → PWGmc \emph{*iuwi} ~ \emph{*iuw} [@RingeTaylor2014, pp. 41--42, §3.1.1]. Old English continues the apocopated, unstressed variant, and Ringe and Taylor's proof is the vocalism itself: "OE iow 'you (dat. pl.)' definitely does [show early apocope] (since it does not exhibit i-umlaut)" [@RingeTaylor2014, pp. 57--58, §3.1.4]. Had the \emph{*-i} survived, i-umlaut ([SC055 OEIUmlaut](#rule-OEIUmlaut)) would have fronted the diphthong; West Saxon *ēow* 'you' beside early West Saxon and Northumbrian *īow* 'you' shows the normal unumlauted development [@Campbell1959, §702, p. 283].
 
 ## \CAPRRuleHeading{SC098. Early apocope in unstressed words}{PWGmcUnstressedWordFinalIApocope} {#rule-PWGmcUnstressedWordFinalIApocope}
 
@@ -759,7 +759,7 @@ define PWGmcUnstressedWordFinalIApocope [
 
 The corpus transcription does not mark the absence of word stress, so the rule states the law through a proxy environment: word-final \emph{*-i} after the geminate \emph{*ww} created by coronal-w assimilation, which in the present corpus is exactly coextensive with the law's unstressed-word domain. The same convention serves [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss), where a development whose true conditioning the notation cannot yet express is likewise implemented over an exactly coextensive segmental environment.
 
-The corpus witness is 'you': \emph{*izwiz} → \emph{*iwwiz} (assimilation) → \emph{*iwwi} (final \emph{*z}-loss) → \emph{*iww} (this rule) → OE *ēow* 'you'. The chronology is fixed on both sides. The rule is fed by the loss of final \emph{*z} ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), since only that loss makes the \emph{*-i} word-final; and it must precede i-umlaut ([SC055 OEIUmlaut](#rule-OEIUmlaut)) — that ordering is Ringe and Taylor's own dating argument, for an unapocopated [*iwwi*]{.recon} surviving to the umlaut period would yield an umlauted diphthong and a form other than the attested *ēow* 'you'. The rule applies within Proto-West Germanic, before the later northern loss of final \emph{*z} in stressed monosyllables ([SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)): Ringe and Taylor treat the apocope among the Proto-West Germanic final-syllable developments and print the apocopated variant as a Proto-West Germanic form [@RingeTaylor2014, pp. 41--42, 57--58]. Fully stressed disyllables are untouched, as the history requires: \emph{*gastiz} and \emph{*fūri} pass through unchanged and duly umlaut to *ġiest* 'guest' and *fȳr* 'fire'.
+The corpus witness is 'you': \emph{*izwiz} → \emph{*iwwiz} (assimilation) → \emph{*iwwi} (final \emph{*z}-loss) → \emph{*iww} (this rule) → OE *ēow* 'you'. The chronology is fixed on both sides. The rule is fed by the loss of final \emph{*z} ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), since only that loss makes the \emph{*-i} word-final; and it must precede i-umlaut ([SC055 OEIUmlaut](#rule-OEIUmlaut)) — that ordering is Ringe and Taylor's own dating argument, for an unapocopated [iwwi]{.recon} 'you' surviving to the umlaut period would yield an umlauted diphthong and a form other than the attested *ēow* 'you'. The rule applies within Proto-West Germanic, before the later northern loss of final \emph{*z} in stressed monosyllables ([SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)): Ringe and Taylor treat the apocope among the Proto-West Germanic final-syllable developments and print the apocopated variant as a Proto-West Germanic form [@RingeTaylor2014, pp. 41--42, 57--58]. Fully stressed disyllables are untouched, as the history requires: \emph{*gastiz} and \emph{*fūri} pass through unchanged and duly umlaut to *ġiest* 'guest' and *fȳr* 'fire'.
 
 The surviving word-final geminate \emph{*ww} is then vocalized to a long diphthong ([SC033 OEEwLongDiphthong](#rule-OEEwLongDiphthong)) before geminate simplification ([SC031 OEWWSimplification](#rule-OEWWSimplification)) can destroy it — Ringe and Taylor date that vocalization to Proto-West Germanic itself (\emph{*fewwar} → PWGmc \emph{*feuwar}) [@RingeTaylor2014, pp. 41--42, §3.1.1; @Fulk2018, §8.3, pp. 204--205] — giving \emph{*ēoww}, simplified to \emph{*ēow}, the attested Old English form.
 
@@ -866,15 +866,15 @@ Moving [SC022 PNWGmcMnDissimilation](#rule-PNWGmcMnDissimilation) earlier or lat
 
 \newpage
 
-# N-stem \emph{n}-loss
+# Word-final \emph{n}-loss
 
 ## Historical discussion
 
-The broader history is the reduction and leveling of older n-stem endings in West Germanic. Ringe and Taylor describe the resulting syncretism in the n-stems, which is the wider morphological setting for the narrower step isolated here [@RingeTaylor2014, p. 72].
+The change isolated here is far older than its position in the cascade suggests: it is the general (pre-)Proto-Germanic loss of word-final \emph{*n}, with nasalization of the preceding vowel, in polysyllables. Ringe's proof set for the law spans the whole grammar — nouns such as \emph{*yugón} > \emph{*juką} 'yoke', pronouns such as \emph{*tón} > \emph{*þanǭ}, and even the verb form \emph{*dedǭ} 'I did' — so it is general phonology, not a fact about any one declension [@Ringe2017, pp. 101--103]. Gothic \emph{tuggo} shares the weak nominative-singular outcome, and the nasalized reflex \emph{*-ǭ} remained contrastive into Proto-West Germanic before yielding OE \emph{-e} [@RingeTaylor2014, pp. 54--55, 58--59].
 
-The path to *dōn* ‘do’ provides the clearest witness, but the change remains narrow in scope.
+Within the present corpus the change surfaces in exactly one shape: the weak nouns are cited in the stem form \emph{*-ōn-}, and this rule carries them to the Proto-Germanic nominative singular in \emph{*-ǭ}, as in \emph{*túngōn} > \emph{*túngǭ} > *tunge* 'tongue', alongside *eorþe* 'earth', *heorte* 'heart', *nǣdre* 'adder', and thirteen further weak nouns. The masculine weak nominative singular in trimoric \emph{*-ô} never had a final \emph{*-n} to lose, and Proto-Germanic \emph{*sebun} 'seven', \emph{*nigun} 'nine', and \emph{*tehun} 'ten' kept their \emph{-n} by lexical analogy among the numerals [@Ringe2017, p. 103]; the rule's narrow \emph{*-ōn} environment leaves all of these correctly untouched.
 
-## SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss}
+## SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss}
 
 ```foma
 define PNWGmcNStemNLoss [
@@ -882,9 +882,9 @@ define PNWGmcNStemNLoss [
 ];
 ```
 
-After [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [dōną]{.recon} ‘do’ fails entirely (\emph{+?}) instead of yielding expected OE *dōn* ‘do’; earlier placement changes no output. Thus [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) must feed the later apocope.
+The verb *dōn* 'do' supplies the negative, counterfeeding witness for the chronology. PGmc [dōną]{.recon} 'do' passes this rule untouched; only [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) later strips the final [ą]{.recon} and creates a new word-final [-ōn]{.recon}. That secondary [-n]{.recon} survives into *dōn* precisely because the old loss was no longer active: if [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) is displaced after the apocope, it consumes the new nasal and the derivation collapses entirely (\emph{+?}).
 
-This failed derivation supplies a terminus ante quem, while the lower boundary remains unattested.
+The retained \emph{-n} of *dōn* 'do' therefore supplies a terminus ante quem for the loss — it must be dead before the apocope — while the seventeen weak nouns above are its positive witnesses; the lower boundary remains unattested within the cascade, as befits a change already complete in Proto-Germanic.
 
 \newpage
 
@@ -2371,7 +2371,7 @@ syllable. The rule encodes Stausland Johnsen's statistically supported account
 of West Saxon ō-verb pasts, not a general rule for inherited short \emph{*o}
 or for nominal morphology [@StauslandJohnsen2015, pp. 28--31, 36]. His
 diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [wundode]{.pred}
-> OE [wundude]{.iv lang=oe} ‘wounded’ [@StauslandJohnsen2015, pp. 28--29].
+> OE [wundude]{.iv lang=oe sort=wundude role=evidence_form} ‘wounded’ [@StauslandJohnsen2015, pp. 28--29].
 
 ## \CAPRRuleHeading{SC100. Final lowering of shortened unstressed \emph{*o}}{OEFinalUnstressedOLowering} {#rule-OEFinalUnstressedOLowering}
 
@@ -2383,7 +2383,7 @@ define OEFinalUnstressedOLowering [
 
 In a final syllable the same shortened vowel gives \emph{a}. Thus the existing
 month control continues PGmc [mḗnōθz]{.recon} ‘month’ through shortened
-\emph{*o} to OE [mōnaþ]{.iv lang=oe} ‘month’, while [wúndōdē]{.recon} takes
+\emph{*o} to OE [mōnaþ]{.iv lang=oe sort=monath role=evidence_form} ‘month’, while [wúndōdē]{.recon} ‘wounded’ takes
 [SC099 OEMedUnstressedORaising](#rule-OEMedUnstressedORaising)
 instead. The medial/final contrast and its chronology after long-vowel
 shortening are Stausland Johnsen's analysis [@StauslandJohnsen2015,
@@ -2846,9 +2846,9 @@ West Saxon spellings such as *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ*
 following back vowel. Campbell describes the phenomenon as the development
 of rising diphthongs when "palatal glides developed before back vowels"
 and cites *ġeoc* directly [@Campbell1959, p. 17, §44]; Brunner separates
-the \emph{u}-cases (*ġeong*, *ġeoguþ*) from the \emph{o}-cases (*ġioc*,
+the \emph{u}-cases (*ġeong*, *ġeoguþ*) from the \emph{o}-cases (*ġioc* 'yoke',
 *ġeoc*) [@SieversBrunner1965, pp. 64--65, §92.1]; Bülbring likewise treats
-*iuguð* and *iuc* under \emph{ju} but derives *ġioc*, *ġeoc* from West
+*iuguð* 'youth' and *iuc* under \emph{ju} but derives *ġioc*, *ġeoc* from West
 Germanic \emph{*jok} [@Bulbring1902, p. 120, §§298--299]; and Luick groups
 all of these under his "schwebende Diphthonge" after palatal onsets
 [@Luick1914, pp. 158--159, §169].
@@ -2866,7 +2866,7 @@ Hogg: the rule is a spelling convention applied to the finished phonology,
 and it therefore stands at the end of the derivation, in the written-surface
 stage of the cascade.
 
-Its position also settles a relative chronology. The \emph{o} of *ġeoc*
+Its position also settles a relative chronology. The \emph{o} of *ġeoc* 'yoke'
 is itself the product of Northwest Germanic u-lowering
 ([SC017 PNWGmcULowering](#rule-PNWGmcULowering)): Fulk lists *ġeoc* as a
 regular lowering example beside OIcel *ok* and OHG *joh*
@@ -2890,9 +2890,9 @@ define OEWsPalatalGlide [
 ];
 ```
 
-The rule rewrites a back vowel after word-initial *ġ* as the digraph
-spelling, covering both the lowered \emph{o}-cases (*ġeoc*) and the
-retained \emph{u}-cases (*ġeoguþ*). Because it is a convention of the
+The rule rewrites a back vowel after word-initial \emph{ġ} as the digraph
+spelling, covering both the lowered \emph{o}-cases (*ġeoc* 'yoke') and the
+retained \emph{u}-cases (*ġeoguþ* 'youth'). Because it is a convention of the
 written language, it applies after every phonological change; in
 particular it follows [SC017 PNWGmcULowering](#rule-PNWGmcULowering),
 which supplies the \emph{o} of *ġeoc*. If the spelling rule were placed

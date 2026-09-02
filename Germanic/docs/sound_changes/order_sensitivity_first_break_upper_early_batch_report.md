@@ -144,7 +144,7 @@ The upper-early batch is now interpreted, so the next terminal batch should shif
 
 1. `SC020` PGmc Final Z Deletion
 2. `SC022` Common Germanic Mn Dissimilation (executable holding-zone placement)
-3. `SC023` NWGmc N Stem N Loss
+3. `SC023` Proto-Germanic Word-Final N Loss (formerly NWGmc N Stem N Loss)
 4. `SC024` NWGmc Long E Lowering
 5. `SC025` NWGmc Long E Nasal Rounding
 6. `SC026` NWGmc Nasal Spirant Lengthening

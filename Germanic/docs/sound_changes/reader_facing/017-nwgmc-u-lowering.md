@@ -36,18 +36,18 @@ define PNWGmcULowering [
 ];
 ```
 
-Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc*,
-*nosu*, *sċofl*, and *sorg*.
+Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* 'yoke',
+*nosu*, *sċofl* 'shovel', and *sorg*.
 
 The lowering feeds the much later West Saxon palatal-glide spelling
 ([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)): the \emph{o} that the
-scribes wrote in *ġeoc* is the output of this change, so PGmc
+scribes wrote in *ġeoc* 'yoke' is the output of this change, so PGmc
 [júką]{.recon} 'yoke' passes through \emph{*joką} on its way to the
 attested spelling [@Fulk2018, p. 56, §4.3; @RingeTaylor2014, p. 129].
 After [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc
 [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected *nosu*,
 PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected
-*sċofl*, and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather
+*sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather
 than expected *sorg*. These witnesses place
 [SC017 PNWGmcULowering](#rule-PNWGmcULowering) before final long-\emph{o}
 raising, and the *ġeoc* spelling shows its output surviving into the

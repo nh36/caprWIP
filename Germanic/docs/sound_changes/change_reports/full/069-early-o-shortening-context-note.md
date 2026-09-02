@@ -36,7 +36,7 @@ implicit inside neighboring reductions.
 This note belongs immediately after the `SC066-SC068`
 **Syncope and degemination corridor** and immediately before the `SC070-SC071` **Early unstressed fronting and shortening bridge**. Its only
 positive outward chronology relation points far left to the SC023
-**N-stem n-loss note**, but that broad/far relation should remain a distant
+**Word-final n-loss note**, but that broad/far relation should remain a distant
 cross-reference rather than a larger chapter claim.
 
 The local late-tail architecture begins more credibly with the `SC070-SC071` bridge and is strongest in the `SC072-SC073` core. SC069

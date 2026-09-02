@@ -51,9 +51,9 @@ is archival: its apparent SC040 break depended on the retired `*xémonų`
 `heaven` proxy and SC040's former early position. Current chronology uses
 SC071/SC099/SC100 instead, and SC021 is not a live one-sided constraint.
 
-### SC023 NWGmc N Stem N Loss
+### SC023 Proto-Germanic Word-Final N Loss (adjudicated 2026; formerly NWGmc N Stem N Loss)
 
-`SC023` also remains one-sided in current testing. No earlier real break was found before bundled `PWGmcChanges`, but moving `SC023` later than `SC047` OE Heavy Syllable Nasal Apocope turns PGmc `*dōną` into `+?` instead of expected OE `dōn`. That is a real historical boundary, but the wrong outcome must be described as a failed derivation rather than as a competing surface form.
+`SC023` also remains one-sided in current testing. No earlier real break was found before bundled `PWGmcChanges`, but moving `SC023` later than `SC047` OE Heavy Syllable Nasal Apocope turns PGmc `*dōną` into `+?` instead of expected OE `dōn`. That is a real historical boundary, but it is counterfeeding: SC023 never applies to `do` in the live cascade (OE `dōn` keeps the secondary `-n` created by SC047 precisely because the old loss was no longer active), and the wrong outcome must be described as a failed derivation rather than as a competing surface form.
 
 ### SC024 NWGmc Long E Lowering
 
@@ -74,7 +74,7 @@ of `heofon`), but that proxy and the active SC021 rule have both been retired.
 
 ### SC023 later across SC047
 
-`SC023` later is historically real, but it is not a local neighboring-stage constraint. The first break appears only at order `47`, crossing `SC047` OE Heavy Syllable Nasal Apocope, where PGmc `*dōną` stops producing OE `dōn` and instead yields no output (`+?`).
+`SC023` later is historically real (as stage-entailed counterfeeding evidence; the rule never applies to `do` live), but it is not a local neighboring-stage constraint. The first break appears only at order `47`, crossing `SC047` OE Heavy Syllable Nasal Apocope, where PGmc `*dōną` stops producing OE `dōn` and instead yields no output (`+?`).
 
 ### SC024 later across SC056
 

@@ -29,7 +29,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | 18 | 66 | no |
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | 15 | 65 | no |
 | 022-mn-dissimilation.md | SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | 24 | 36 | no |
-| 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | 11 | 30 | no |
+| 023-n-stem-n-loss.md | SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | 11 | 30 | no |
 | 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | 11 | 64 | no |
 | 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`PNWGmcLongENasalRounding`) {#rule-PNWGmcLongENasalRounding} | 11 | 39 | no |
 | 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant lengthening (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | 15 | 69 | no |

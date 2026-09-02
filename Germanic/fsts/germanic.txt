@@ -2217,9 +2217,24 @@ define PNWGmcILowering [
 # head of EarlyEnglishLineChanges (its old SC004 slot). The breve-marked {*ăi}
 # placeholder is gone. See sc004_component_dossier.md.
 
-# PGmc fem. n-stem nom.sg. *-ōn → *-ǭ (nasalized ō) by loss of final -n.
+# SC023. General (pre-)Proto-Germanic loss of word-final *-n with
+# nasalization of the preceding vowel in polysyllables (Ringe 2017
+# pp.101-103; proof set includes *juką, *wullǭ, *dedǭ, *þanǭ — nouns,
+# verbs, and pronouns alike, so this is general phonology, not n-stem
+# morphology). Goth. tuggo shares the weak nom.sg. outcome, so the change
+# is Common Germanic at the latest; R/T 2014 pp.54-55 keep the nasalized
+# reflex contrastive into PWGmc. The {*ō}{*n}-only environment below is a
+# deliberate citation-form proxy: corpus protoforms already encode the
+# law's other outputs (*dōną, *wulfą, *sunų), and PGmc *sebun/*nigun/
+# *tehun (numeral analogy, Ringe 2017 p.103) plus *hebun- retained -un
+# and must not be touched. Live firings are exactly the 17 weak-noun
+# citation stems in *-ōn- (stem-form *túngōn → PGmc nom.sg. *túngǭ).
 # The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
 # Masc. n-stem nom.sg. uses trimoric *-ô (no -n), which is NOT affected.
+# OE dōn is the counterfeeding witness: its secondary final -n (created
+# by the later *ą-apocope) survives because this loss was long complete.
+# PNWGmcNStemNLoss remains the stable executable identifier; it is not a
+# stage claim. See docs/sound_changes/audits/sc023-adjudication.md.
 define PNWGmcNStemNLoss [
     {*ō} {*n} -> {*ǭ} || _ .#.
 ];

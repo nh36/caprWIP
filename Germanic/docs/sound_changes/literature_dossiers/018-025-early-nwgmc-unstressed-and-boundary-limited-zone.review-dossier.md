@@ -64,19 +64,36 @@ note whose executable position is a holding-zone placement. Its
 `PNWGmcMnDissimilation` identifier is an implementation name, not stage
 evidence.
 
-### SC023 `NWGmcNStemNLoss`
+### SC023 `PNWGmcNStemNLoss`
 
-`SC023` has the same left-edge runner limitation as `SC021`, but it does have a
-real broad/far rightward boundary: `SC023 < SC047`, with `do`. Moving `SC023`
-later than the promoted `SC046-SC048` restoration corridor collapses the `do`
-derivation to no output rather than producing a competing surface form.
+`SC023` was adjudicated in 2026 (`audits/sc023-adjudication.md`). The
+historical change behind it is not a Northwest Germanic n-stem rule at all:
+it is the general (pre-)Proto-Germanic loss of word-final `*-n` with
+nasalization of the preceding vowel in polysyllables, whose proof set in
+Ringe spans nouns, pronouns, and verb forms (`*juką`, `*þanǭ`, `*dedǭ`)
+[@Ringe2017, pp. 101--103], and whose weak nominative-singular outcome is
+shared by Gothic `tuggo`. Reconstructed PGmc already shows `*tungǭ`, and
+Ringe & Taylor keep the nasalized reflex contrastive into PWGmc
+[@RingeTaylor2014, pp. 54--55, 58--59]. The executable restriction to
+`{*ō}{*n}` is a deliberate citation-form proxy: the corpus's seventeen weak
+nouns are cited in the stem form `*-ōn-`, while `*sebun`, `*nigun`,
+`*tehun` retained `-un` by numeral analogy [@Ringe2017, p. 103] and must
+not be touched. The `PNWGmcNStemNLoss` identifier is an implementation
+name, not stage evidence.
 
-The historical background is morphologically real even if the chapter shape is
-not obvious. Ringe & Taylor describe the heavy syncretism and reduction in the
-Germanic `n`-stems and separately discuss the development of the verb `do`,
-which is exactly the kind of morphologized material CAPR is isolating here
-[@RingeTaylor2014]. That supports keeping `SC023` visible and treating it as a
-possible future singleton note.
+`SC023` has the same left-edge runner limitation as retired `SC021`, but it
+does have a real broad/far rightward boundary: `SC023 < SC047`, with `do`.
+Moving `SC023` later than the promoted `SC046-SC048` restoration corridor
+collapses the `do` derivation to no output rather than producing a
+competing surface form. Adjudication classifies this edge as counterfeeding
+and stage-entailed: `do` never undergoes `SC023` live (`*dōną` passes
+position 23 untouched); rather, OE `dōn` retains the secondary final `-n`
+created by the apocope, showing the (pre-)PGmc loss was long complete. The
+edge stands, but `do` is a negative witness, never an application.
+
+That supports keeping `SC023` visible and treating it as a possible future
+singleton note, provided its prose leads with the seventeen in-domain
+weak-noun witnesses and presents `dōn` only as counterfeeding evidence.
 
 But again the positive edge is outward, not internal. The SC047 relation should
 stay a cross-reference to the promoted `SC046-SC048` report rather than a

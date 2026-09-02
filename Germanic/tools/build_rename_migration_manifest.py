@@ -120,6 +120,15 @@ RENAMES["SC022"] = {
     "notes": "Foma identifier remains stable; Fulk 2018 p.121 §6.11 and Polomé 1967 pp.818-819 correct the historical scope from PNWGmc to Common Germanic.",
 }
 
+RENAMES["SC023"] = {
+    "canonical_foma_identifier": "PNWGmcNStemNLoss",
+    "canonical_display_name": "Proto-Germanic Word-Final N Loss",
+    "canonical_hist_stage": "pgmc",
+    "canonical_hist_scope": "pan_germanic",
+    "migration_status": "pending",
+    "notes": "Foma identifier remains stable; Ringe 2017 pp.101-103 correct the historical stage from PNWGmc to (pre-)Proto-Germanic general word-final *-n loss (sc023-adjudication.md); {*o-n}-only environment is a citation-form proxy.",
+}
+
 # --- 3.2 Early Anglo-Frisian corridor rules ---
 RENAMES["SC003"] = {
     "canonical_foma_identifier": "EAFRhotacism",

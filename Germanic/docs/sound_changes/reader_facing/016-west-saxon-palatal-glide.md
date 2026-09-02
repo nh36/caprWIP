@@ -7,9 +7,9 @@ West Saxon spellings such as *ġeoc* 'yoke', *ġeong* 'young', and *ġeoguþ*
 following back vowel. Campbell describes the phenomenon as the development
 of rising diphthongs when "palatal glides developed before back vowels"
 and cites *ġeoc* directly [@Campbell1959, p. 17, §44]; Brunner separates
-the \emph{u}-cases (*ġeong*, *ġeoguþ*) from the \emph{o}-cases (*ġioc*,
+the \emph{u}-cases (*ġeong*, *ġeoguþ*) from the \emph{o}-cases (*ġioc* 'yoke',
 *ġeoc*) [@SieversBrunner1965, pp. 64--65, §92.1]; Bülbring likewise treats
-*iuguð* and *iuc* under \emph{ju} but derives *ġioc*, *ġeoc* from West
+*iuguð* 'youth' and *iuc* under \emph{ju} but derives *ġioc*, *ġeoc* from West
 Germanic \emph{*jok} [@Bulbring1902, p. 120, §§298--299]; and Luick groups
 all of these under his "schwebende Diphthonge" after palatal onsets
 [@Luick1914, pp. 158--159, §169].
@@ -27,7 +27,7 @@ Hogg: the rule is a spelling convention applied to the finished phonology,
 and it therefore stands at the end of the derivation, in the written-surface
 stage of the cascade.
 
-Its position also settles a relative chronology. The \emph{o} of *ġeoc*
+Its position also settles a relative chronology. The \emph{o} of *ġeoc* 'yoke'
 is itself the product of Northwest Germanic u-lowering
 ([SC017 PNWGmcULowering](#rule-PNWGmcULowering)): Fulk lists *ġeoc* as a
 regular lowering example beside OIcel *ok* and OHG *joh*
@@ -51,9 +51,9 @@ define OEWsPalatalGlide [
 ];
 ```
 
-The rule rewrites a back vowel after word-initial *ġ* as the digraph
-spelling, covering both the lowered \emph{o}-cases (*ġeoc*) and the
-retained \emph{u}-cases (*ġeoguþ*). Because it is a convention of the
+The rule rewrites a back vowel after word-initial \emph{ġ} as the digraph
+spelling, covering both the lowered \emph{o}-cases (*ġeoc* 'yoke') and the
+retained \emph{u}-cases (*ġeoguþ* 'youth'). Because it is a convention of the
 written language, it applies after every phonological change; in
 particular it follows [SC017 PNWGmcULowering](#rule-PNWGmcULowering),
 which supplies the \emph{o} of *ġeoc*. If the spelling rule were placed

@@ -47,7 +47,12 @@ is not stage evidence.
 
 ### One-sided later-facing current members
 
-- `SC023` `NWGmcNStemNLoss` -> outward rightward boundary at `SC047` with `do`
+- `SC023` `PNWGmcNStemNLoss` -> outward rightward boundary at `SC047` with
+  `do` (adjudicated 2026, `audits/sc023-adjudication.md`: the historical
+  change is the general (pre-)Proto-Germanic loss of word-final `*-n` with
+  nasalization, not a NWGmc n-stem rule; `do` is a negative counterfeeding
+  witness — OE `dōn` keeps its secondary final `-n` — and the boundary is
+  stage-entailed rather than locally adjacent)
 - `SC024` `NWGmcLongELowering` -> outward rightward boundary at `SC056` with
   `sheep` and `year`
 
@@ -97,6 +102,8 @@ This is the clearest later split if the project wants more explicit prose.
 
 - boundary/context notes: `SC018`, `SC025`
 - Common-Germanic context note: `SC022`
+- Proto-Germanic context note: `SC023` (stage corrected 2026; executable
+  position 23 is a holding-zone placement only)
 - later singleton candidates: `SC023`, `SC024`
 - retired note: archival `SC021` only, with live cross-reference to
   SC071/SC099/SC100

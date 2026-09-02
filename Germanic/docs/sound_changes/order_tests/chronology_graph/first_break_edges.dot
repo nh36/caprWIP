@@ -12,7 +12,7 @@ digraph first_break_chronology {
   "SC020" [label="SC020\nPGmc Final Z Deletion", shape=hexagon, fillcolor="#6b46c122", color="#6b46c1"];
   "SC021" [label="SC021\nretired unstressed-o raising", shape=box, fillcolor="#71809622", color="#718096"];
   "SC022" [label="SC022\nCommon Germanic Mn Dissimilation", shape=octagon, fillcolor="#c5303022", color="#c53030"];
-  "SC023" [label="SC023\nNWGmc N Stem N Loss", shape=box, fillcolor="#2b6cb022", color="#2b6cb0"];
+  "SC023" [label="SC023\nProto-Germanic Word-Final N Loss", shape=box, fillcolor="#2b6cb022", color="#2b6cb0"];
   "SC024" [label="SC024\nNWGmc Long E Lowering", shape=box, fillcolor="#2b6cb022", color="#2b6cb0"];
   "SC025" [label="SC025\nNWGmc Long E Nasal Rounding", shape=octagon, fillcolor="#c5303022", color="#c53030"];
   "SC026" [label="SC026\nNWGmc Nasal Spirant Lengthening", shape=ellipse, fillcolor="#2f855a22", color="#2f855a"];

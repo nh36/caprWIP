@@ -25,7 +25,7 @@
 | `018` Stressed monosyllable o-raising note | `SC018` | `018-stressed-monosyllable-o-raising.md` | yes |
 | `021` Unstressed o-raising note | `SC021` | — | no |
 | `022` Mn dissimilation note | `SC022` | `022-mn-dissimilation.md` | yes |
-| `023` N-stem n-loss note | `SC023` | `023-n-stem-n-loss.md` | yes |
+| `023` Word-final n-loss note | `SC023` | `023-n-stem-n-loss.md` | yes |
 | `024` Long e-lowering note | `SC024` | `024-long-e-lowering.md` | yes |
 | `025` Long e nasal-rounding note | `SC025` | `025-long-e-nasal-rounding.md` | yes |
 | `026-027` Nasal spirant corridor | `SC026;SC027` | `026-027-nasal-spirant-changes.md` | yes |
