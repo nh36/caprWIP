@@ -1,9 +1,9 @@
-# sound_change_historical_staging_map.tsv
-# Canonical SC-level historical staging map for the Version 1 CAPR book.
-# One row per SC identifier. All reader-facing SCs must appear exactly once.
+# GENERATED FILE — DO NOT EDIT.
+# Source: registry/sc_registry.tsv (rows with staging_row=yes)
+# Generator: Germanic/tools/generate_registry_views.py (run after editing sources).
+# Canonical SC-level historical staging map view for the Version 1 CAPR book.
 # Chapters: 1=PGmc→PNWGmc | 2=PNWGmc→PWGmc | 3=PWGmc→Anglo-Frisian | 4=Anglo-Frisian→OE
 # Confidence: A=secure | B=strong but analysis-dependent | C=genuinely unresolved
-# Generated 2026-07-31. Total SCs: 82
 sc_id	fst_identifier	display_name	source_reader_facing_file	cascade_position	hist_stage	hist_scope	v1_chapter	v1_reader_position	confidence	action_status	capr_evidence	chronology_problem	notes
 SC049	PGmcBAllophony	PGmc B Allophony	049-pgmc-b-allophony.md	47	pgmc	pan_germanic	3	20	A	possible_fst_reorder_later	049-050-onset-allophony-and-sievers-law-bridge.book-dossier.md	Historically PGmc but placed late in cascade (pos 49) for computational reasons; cascade position diverges from historical stage; now in Chapter 1 reader-facing	Split from 049-050 into standalone 049-pgmc-b-allophony.md; Chapter 1
 SC004	EAFAiMonophthongization	EAF Ai Monophthongization	004-pwgmc-ai-monophthongization.md	27	eaf	north_sea_germanic	2	13	B	split_implemented	004-pwgmc-ai-monophthongization.dossier.md; 004-pwgmc-ai-monophthongization.book-dossier.md	Stressed/root *ái → *ā, North Sea Germanic areal development (Versloot 2017: two-wave diffusion, AD 400-900); executes in the EAF corridor after SC028 PNWGmcPreconsonantalXLoss (pos 25); carries the SC036 soul boundary (*sáiwalō>sāwol, first-break confirmed)	Split out of the former bundled SC004; stressed/root *ái→*ā only (unstressed *ai→*ē is now SC014). 24 stressed corpus witnesses incl. loam *láimą (stressed by its PROTOFORM). EAF is an operational modelling corridor for a North Sea Germanic areal change, not a demonstrated discrete Proto-Anglo-Frisian node. Former PWGmc identifier PWGmcAiMonophthongization retained as a documented alias. Cascade position (25) diverges from SC number.

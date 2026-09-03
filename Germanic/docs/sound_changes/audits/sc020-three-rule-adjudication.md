@@ -1,5 +1,7 @@
 # Three-rule adjudication memo: decomposing SC020 final *-z deletion (2026)
 
+Registry-verdict: SC020=SPLIT
+
 Branch `sc001-sc020-chronology-audit`. Phase 2 of the three-rule *-z
 programme. Written only after all three research dossiers were complete and
 committed:

@@ -1,5 +1,7 @@
 # SC023 adjudication — scope and stage of the n-stem *n*-loss
 
+Registry-verdict: SC023=REFORMULATE/RETAIN
+
 Status: adjudicated (this memo governs the outcome)
 Scope: SC023 `PNWGmcNStemNLoss` only.
 Verdict: **REFORMULATE the historical characterization (stage + narrative);

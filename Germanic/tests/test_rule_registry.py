@@ -52,8 +52,8 @@ def _read_tsv_skip_comments(path: Path) -> list[dict[str, str]]:
 
 class InventoryFomaMappingTests(unittest.TestCase):
     def setUp(self):
-        with INVENTORY.open(encoding="utf-8") as handle:
-            self.inv = list(csv.DictReader(handle, delimiter="\t"))
+        lines = [ln for ln in INVENTORY.read_text(encoding="utf-8").splitlines() if not ln.startswith("#")]
+        self.inv = list(csv.DictReader(io.StringIO("\n".join(lines)), delimiter="\t"))
 
     def test_every_inventory_row_has_a_foma_define(self):
         for row in self.inv:
@@ -75,8 +75,8 @@ class ManifestRegistryCoverageTests(unittest.TestCase):
     def setUp(self):
         with ORDER_MANIFEST.open(encoding="utf-8") as handle:
             self.manifest = list(csv.DictReader(handle, delimiter="\t"))
-        with INVENTORY.open(encoding="utf-8") as handle:
-            inv = list(csv.DictReader(handle, delimiter="\t"))
+        inv_lines = [ln for ln in INVENTORY.read_text(encoding="utf-8").splitlines() if not ln.startswith("#")]
+        inv = list(csv.DictReader(io.StringIO("\n".join(inv_lines)), delimiter="\t"))
         self.inv_foma = {}
         for row in inv:
             m = _DEFINE_RE.search(row.get("rule_source_anchor") or "")

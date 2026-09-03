@@ -1,31 +1,53 @@
-# Germanic Pipeline Documentation
+# Germanic pipeline — navigation
 
-This directory contains all documentation specific to the Proto-Germanic → Old English FST development.
+Read this first. Every file relevant to current work is SOURCE (hand-edited),
+GENERATED (never hand-edited), or ARCHIVE (historical; never authoritative).
 
-## Primary Documentation
+## What you may edit (SOURCE)
 
-- **[CANONICAL_STATE.md](CANONICAL_STATE.md)** — Authoritative current project state and writing-phase source hierarchy
-- **[DEV_NOTES.md](DEV_NOTES.md)** — Main research log with dated entries, phonological decisions, and source citations. Start here for context on any decision.
+- `sound_changes/registry/sc_registry.tsv` — **the canonical SC registry.**
+  One row per SC ever used (including retired). Owns identity, lifecycle,
+  executable identifier/position, display names, historical stage/scope,
+  confidence, adjudication status/verdict/memo path, chronology-node facts.
+- `sound_changes/registry/chronology_edges.tsv` — **the canonical
+  chronology-edge registry.** Owns all chronology relations, witnesses,
+  witness roles, and evidence basis.
+- `sound_changes/registry/sc_inventory_annotations.tsv` — inventory-view
+  annotations (trace/rule-source/literature fields) not owned by the registry.
+- `sound_changes/audits/scNNN-adjudication.md` — per-SC adjudication memos
+  (copy `sound_changes/audits/ADJUDICATION_TEMPLATE.md`).
+- `../fsts/germanic.txt` — the FST cascade (only as an adjudication verdict
+  requires).
+- Reader-facing chapters, dossiers, and `CURRENT_STATE.md`.
 
-## Reports & Analysis
+## What is GENERATED (do not edit; regenerate)
 
-- **[debug_snapshots/](debug_snapshots/)** — Current compact/publish derivation reports plus historical mismatch and trace snapshots
-- **[analysis/](analysis/)** — Deep-dive investigations on specific phenomena
-- **[germanic_transducer_report.md](germanic_transducer_report.md)** — Historical pre-freeze FST status summary (not the canonical current OE status page)
+Run `python3 Germanic/tools/generate_registry_views.py` after editing any
+registry file. It writes: `sound_changes/sound_change_historical_staging_map.tsv`,
+`sound_changes/sound_change_inventory.tsv`, the chronology graph files under
+`sound_changes/order_tests/chronology_graph/` (edges TSV/JSON/DOT, nodes,
+summary), and `sound_changes/registry/settled_verdicts.md`.
+Then run `python3 Germanic/tools/build_historical_audit_table.py` and
+`python3 Germanic/tools/build_rename_migration_manifest.py` if the staging
+view changed. `--check` on the generator verifies everything is clean.
 
-## Reference Materials
+## What is ARCHIVE (never authoritative)
 
-- **[REFERENCES.md](REFERENCES.md)** — Index of Germanic-specific sources
-- **[germanic_notes/](germanic_notes/)** — Historical notes and Word docs
+`archive/` (old project states, DEV_NOTES research log, old workflow/plans),
+`sound_changes/archive/`, batch reports, frozen baselines' historical
+snapshots, and the chronology-card programme records. See `archive/README.md`.
 
-## Planning & Technical
+## One SC adjudication, start to finish
 
-- **[german_surface_followup.md](german_surface_followup.md)** — German surface layer plans
-- **[germanic_proto_inventory.md](germanic_proto_inventory.md)** — Proto-form inventory
-- **[germanic_nan_exceptions.csv](germanic_nan_exceptions.csv)** — NaN exception handling
-- **[non_firing_rules_analysis.md](non_firing_rules_analysis.md)** — Debugging non-firing rules
+1. `python3 Germanic/tools/adjudicate.py SCNNN --prepare` — assembles the
+   packet (registry row, rule text, edges, memo path, fingerprints, census
+   command).
+2. Follow `RESEARCH_ADJUDICATION_PROTOCOL.md`; record everything in the memo.
+3. Propagate the verdict by editing the registry files (and FST/corpus only
+   if the verdict requires), then regenerate views (command above).
+4. `python3 Germanic/tools/adjudicate.py SCNNN --check` — validates
+   propagation consistency.
+5. `cd Germanic/tests && python3 -m pytest -q` — full suite must pass.
+6. Commit and push; STOP after one SC.
 
-## See Also
-
-- **[../../docs/](../../docs/)** — Shared project documentation
-- **[../../docs/references/](../../docs/references/)** — Scholarly sources (PDFs/text)
+Current phase and frozen baselines: `CURRENT_STATE.md`.

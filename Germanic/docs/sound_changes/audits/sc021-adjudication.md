@@ -1,5 +1,7 @@
 # SC021 adjudication — NWGmc unstressed *o raising
 
+Registry-verdict: SC021=RETIRE
+
 Status: adjudicated (this memo governs the repair)
 Scope: SC021 `PNWGmcUnstressedORaising` only.
 New source ingested for this adjudication: Stausland Johnsen 2015

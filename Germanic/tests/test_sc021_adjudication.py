@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import io
 import re
 import unittest
 from pathlib import Path
@@ -21,8 +22,8 @@ BOOK_DOSSIER = (GERMANIC / "docs" / "sound_changes" / "book_dossiers"
                 / "018-025-early-nwgmc-unstressed-and-boundary-limited-zone.book-dossier.md")
 CHRONOLOGY_GRAPH_NODES = (GERMANIC / "docs" / "sound_changes" / "order_tests"
                           / "chronology_cards" / "chronology_graph_nodes.tsv")
-NEXT_BATCH_CANDIDATES = (GERMANIC / "docs" / "sound_changes" / "order_tests"
-                         / "next_batch_candidates.tsv")
+SC_REGISTRY = (GERMANIC / "docs" / "sound_changes" / "registry"
+               / "sc_registry.tsv")
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
@@ -80,14 +81,17 @@ class SC021AdjudicationTests(unittest.TestCase):
             graph = {
                 row["change_id"]: row for row in csv.DictReader(handle, delimiter="\t")
             }["SC021"]
-        with NEXT_BATCH_CANDIDATES.open(encoding="utf-8") as handle:
-            batch = {
-                row["change_id"]: row for row in csv.DictReader(handle, delimiter="\t")
-            }["SC021"]
+        reg_lines = [ln for ln in SC_REGISTRY.read_text(encoding="utf-8").splitlines()
+                     if not ln.startswith("#")]
+        registry = {
+            row["sc_id"]: row
+            for row in csv.DictReader(io.StringIO("\n".join(reg_lines)), delimiter="\t")
+        }["SC021"]
         self.assertEqual(graph["current_order"], "retired")
         self.assertEqual(graph["in_contextual_edges"], "no")
-        self.assertEqual(batch["suggested_priority"], "retired")
-        self.assertIn("archival", batch["reason"])
+        self.assertEqual(registry["lifecycle_status"], "retired")
+        self.assertEqual(registry["verdict"], "RETIRE")
+        self.assertEqual(registry["staging_row"], "no")
 
     def test_successors_follow_shortening_and_precede_sc040(self):
         self.assertLess(

@@ -1,5 +1,7 @@
 # SC016 / SC017 relative-chronology adjudication
 
+Registry-verdict: SC016=REFORMULATE/REORDER; SC017=RETAIN
+
 Status: adjudicated (this memo governs the repair)
 Scope: SC016 `OEWsPalatalGlide` and SC017 `PNWGmcULowering` only.
 Supersedes: the `technical_dependency` classification of SC016 < SC017 in

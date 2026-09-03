@@ -34,7 +34,8 @@ COPILOT_INSTRUCTIONS = REPO_ROOT / ".github" / "copilot-instructions.md"
 STAGING_MAP = SC_DOCS / "sound_change_historical_staging_map.tsv"
 AUDIT_TABLE = SC_DOCS / "cascade_baseline" / "historical_audit_table.tsv"
 RENAME_MANIFEST = SC_DOCS / "cascade_baseline" / "rename_migration_manifest.tsv"
-CANDIDATES = SC_DOCS / "order_tests" / "next_batch_candidates.tsv"
+CANDIDATES_ARCHIVED = SC_DOCS / "order_tests" / "next_batch_candidates.tsv"
+SC_REGISTRY = SC_DOCS / "registry" / "sc_registry.tsv"
 GRAPH_DIR = SC_DOCS / "order_tests" / "chronology_graph"
 EDGES = GRAPH_DIR / "first_break_edges.tsv"
 NODES = GRAPH_DIR / "first_break_nodes.tsv"
@@ -210,33 +211,40 @@ class PrefixVersusStageTests(unittest.TestCase):
 
 class RetiredRuleGuardTests(unittest.TestCase):
     def retired_ids(self):
-        retired = set()
-        for row in read_tsv(AUDIT_TABLE):
-            if row.get("required_action") == "retired":
-                retired.add(row["sc_id"])
-        return retired
+        return {
+            row["sc_id"]
+            for row in read_tsv(SC_REGISTRY)
+            if row.get("lifecycle_status") == "retired"
+        }
 
     def test_retirements_exist_and_include_sc021(self):
         retired = self.retired_ids()
         self.assertIn("SC021", retired)
+        # The audit-table layer must agree with the registry on retirement.
+        audit_retired = {
+            row["sc_id"]
+            for row in read_tsv(AUDIT_TABLE)
+            if row.get("required_action") == "retired"
+        }
+        self.assertLessEqual(audit_retired, retired)
 
     def test_retired_rules_stay_out_of_live_machinery(self):
         retired = self.retired_ids()
-        candidates = {r["change_id"]: r for r in read_tsv(CANDIDATES)}
         rename = {r["sc_id"]: r for r in read_tsv(RENAME_MANIFEST)}
         nodes = {r["change_id"]: r for r in read_tsv(NODES)}
         staging_ids = {r["sc_id"] for r in read_tsv(STAGING_MAP)}
+        self.assertFalse(
+            CANDIDATES_ARCHIVED.exists(),
+            "next_batch_candidates.tsv has been resurrected in the live "
+            "order_tests namespace; the candidate board is archived and the "
+            "registry owns candidate/lifecycle status",
+        )
         for sc_id in sorted(retired):
             self.assertNotIn(
                 sc_id,
                 staging_ids,
                 f"{sc_id} is retired but still has an active staging-map row",
             )
-            if sc_id in candidates:
-                row = candidates[sc_id]
-                self.assertEqual(row["current_order"], "retired", sc_id)
-                self.assertEqual(row["suggested_priority"], "retired", sc_id)
-                self.assertEqual(row["recommended_for_next_batch"], "no", sc_id)
             if sc_id in rename:
                 self.assertEqual(rename[sc_id]["migration_status"], "retired", sc_id)
             if sc_id in nodes:

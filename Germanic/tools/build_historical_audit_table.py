@@ -296,8 +296,8 @@ FIELDS = [
 
 def build_rows() -> list[dict[str, str]]:
     staging = _read_tsv_skip_comments(STAGING_MAP)
-    with INVENTORY.open(encoding="utf-8") as handle:
-        inv = {r["change_id"]: r for r in csv.DictReader(handle, delimiter="\t")}
+    inv_lines = [ln for ln in INVENTORY.read_text(encoding="utf-8").splitlines() if not ln.startswith("#")]
+    inv = {r["change_id"]: r for r in csv.DictReader(io.StringIO("\n".join(inv_lines)), delimiter="\t")}
     with ORDER_MANIFEST.open(encoding="utf-8") as handle:
         pos = {r["foma_identifier"]: r["position"] for r in csv.DictReader(handle, delimiter="\t")}
 

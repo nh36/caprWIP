@@ -1,25 +1,40 @@
-# Sound-change volume scaffold
+# sound_changes — layout
 
-This directory is the architecture scaffold for a rule-centered sound-change volume parallel to the lexical derivation volume.
+Classification: SOURCE (edit), GENERATED (regenerate, never edit), ARCHIVE
+(historical record). See `../README.md` for the full workflow.
 
-## Layout
+## SOURCE
 
-- `sound_change_inventory.tsv` — first-pass ordered inventory of the current OE stack, keyed to the live rule source and compact trace report.
-- `sound_change_aliases.tsv` — trace labels, internal stage names, and normalized variants for later dossier matching.
-- `sound_change_literature_matrix.tsv` — row-level literature dossier workspace for quotations, paraphrases, chronology, and disagreement tracking.
-- `sound_change_order_sensitivity.tsv` — runner-facing summary table for earliest/latest safe positions and lexical breakage.
-- `change_entries/` — one file per sound-change entry in the eventual volume.
-- `literature_dossiers/` — longer per-rule dossier notes and source collation.
-- `order_tests/runs/` — raw future order-perturbation run outputs.
-- `order_tests/summaries/` — future TSV/markdown summaries of those runs.
+- `registry/sc_registry.tsv` — canonical SC registry (single owner of SC
+  identity, lifecycle, executable identifier/position, names, stage, scope,
+  confidence, adjudication status/verdict/memo, chronology-node facts).
+- `registry/chronology_edges.tsv` — canonical chronology-edge registry.
+- `registry/sc_inventory_annotations.tsv` — inventory-view annotations.
+- `audits/` — adjudication memos (`ADJUDICATION_TEMPLATE.md` is the template).
+- `reader_facing/`, `book_dossiers/`, `literature_dossiers/`, `change_entries/`
+  — prose layers.
+- `sound_change_aliases.tsv`, `sound_change_literature_matrix.tsv`,
+  `sound_change_book_entry_plan.tsv` — auxiliary hand-edited tables (own only
+  their unique fields; never restate registry facts as authority).
 
-## Current scope
+## GENERATED (by `Germanic/tools/generate_registry_views.py` unless noted)
 
-Scaffold 01 does **not** assemble the sound-change volume yet. It only:
+- `sound_change_historical_staging_map.tsv` — staging view of the registry.
+- `sound_change_inventory.tsv` — inventory view (registry + annotations).
+- `order_tests/chronology_graph/` — first-break edge/node views (TSV, JSON,
+  DOT, summary).
+- `registry/settled_verdicts.md` — settled-verdict summary.
+- `cascade_baseline/historical_audit_table.tsv`,
+  `cascade_baseline/rename_migration_manifest.tsv` — via
+  `Germanic/tools/build_historical_audit_table.py` /
+  `build_rename_migration_manifest.py` (read the staging view).
 
-1. locates the rule source and trace machinery;
-2. extracts a first ordered inventory;
-3. creates dossier and order-testing templates;
-4. adds two pilot change-entry stubs.
+## ARCHIVE / RECORD
 
-See `sound_change_architecture_scaffold_01_report.md` for the source-discovery findings and next recommended task.
+- `archive/` — retired current-authority files (e.g. the old
+  next-batch candidates board).
+- `order_sensitivity_*`, `order_tests/` batch reports, chronology cards and
+  their index, `sound_change_order_sensitivity.tsv`, `cascade_baseline`
+  frozen snapshots and audit reports — records of completed experiments and
+  audits. Consult freely; never treat as current metadata authority and never
+  update them during an adjudication.

@@ -1,5 +1,7 @@
 # Dossier: SC022 Germanic `mn`-dissimilation (`-mn- > -bn-/-βn-`) — 2026
 
+Registry-verdict: SC022=REFORMULATE/RETAIN
+
 **Scope:** the historical sound change modelled by CAPR SC022
 `PNWGmcMnDissimilation`. Research only; **no production change**. This is the
 sound-change companion to the lexical dossiers `dossier-stem-2026.md` and

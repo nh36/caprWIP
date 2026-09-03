@@ -1,3 +1,6 @@
+# GENERATED FILE — DO NOT EDIT.
+# Source: registry/chronology_edges.tsv
+# Generator: Germanic/tools/generate_registry_views.py (run after editing sources).
 source_change_id	target_change_id	relation_type	direction_basis	representative_lexemes	representative_forms	strength	interpretation_category	reciprocal_group_id	notes
 SC014	PWGmcChanges	runner_limited_boundary	earlier_boundary		`none — no earlier real break was found before the runner boundary`	runner_boundary	runner_boundary		No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break.
 SC014	SC087	no_break_search_boundary	later_boundary		`none — no later real break was found before the runner boundary`	search_boundary	search_boundary		No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break.

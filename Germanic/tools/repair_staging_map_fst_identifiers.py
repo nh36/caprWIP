@@ -33,14 +33,14 @@ _DEFINE_RE = re.compile(r"define\s+([A-Za-z][A-Za-z0-9_]*)")
 def load_sc_to_foma(inventory_path: Path) -> dict[str, str]:
     """Return {change_id: foma_identifier} from the inventory rule anchors."""
     mapping: dict[str, str] = {}
-    with inventory_path.open(encoding="utf-8") as handle:
-        for row in csv.DictReader(handle, delimiter="\t"):
-            change_id = (row.get("change_id") or "").strip()
-            anchor = row.get("rule_source_anchor") or ""
-            match = _DEFINE_RE.search(anchor)
-            if not change_id or not match:
-                continue
-            mapping[change_id] = match.group(1)
+    lines = [ln for ln in inventory_path.read_text(encoding="utf-8").splitlines() if not ln.startswith("#")]
+    for row in csv.DictReader(io.StringIO("\n".join(lines)), delimiter="\t"):
+        change_id = (row.get("change_id") or "").strip()
+        anchor = row.get("rule_source_anchor") or ""
+        match = _DEFINE_RE.search(anchor)
+        if not change_id or not match:
+            continue
+        mapping[change_id] = match.group(1)
     return mapping
 
 

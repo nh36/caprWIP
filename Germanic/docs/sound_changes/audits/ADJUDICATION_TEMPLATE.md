@@ -59,6 +59,11 @@ but never delete a section — write "none" or "n/a" with a reason.
 - **Verdict** (RETAIN / REFORMULATE / RESTRICT / SPLIT / RETIRE /
   REORDER / DEFER; state dimensions separately if needed, e.g.
   "REFORMULATE metadata / RETAIN executable rule"):
+- **Machine-readable line** (must match the `verdict` column in
+  `registry/sc_registry.tsv`; slash-join multiple tokens):
+
+  `Registry-verdict: SCNNN=VERDICT`
+
 - **Justification (2–5 sentences):**
 
 ## Propagation (only after verdict)

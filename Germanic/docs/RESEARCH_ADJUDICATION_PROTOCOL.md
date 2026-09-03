@@ -23,13 +23,18 @@ supports.
 
 ### 1. Establish current authoritative state first
 
-Read `Germanic/docs/CURRENT_STATE.md`, the canonical registries
-(`sound_change_inventory.tsv`, `sound_change_historical_staging_map.tsv`,
-`sound_change_aliases.tsv`, `cascade_baseline/`), and any existing
-adjudication memo for the rule under
-`Germanic/docs/sound_changes/audits/`. Do not resurrect superseded plans,
-retired rules, or old audit conclusions. Frozen checkpoints (e.g.
-`CANONICAL_STATE.md`) are historical records, not current state.
+Read `Germanic/docs/CURRENT_STATE.md` and the canonical registries under
+`Germanic/docs/sound_changes/registry/` (`sc_registry.tsv`,
+`chronology_edges.tsv`, `sc_inventory_annotations.tsv`; see
+`registry/CONTROL_PLANE.md` for the full SOURCE/GENERATED/ARCHIVE map),
+plus any existing adjudication memo for the rule under
+`Germanic/docs/sound_changes/audits/`. `sound_change_inventory.tsv`, the
+staging map, and the chronology-graph files are GENERATED views — read
+them freely, never hand-edit them; regenerate with
+`python3 Germanic/tools/generate_registry_views.py`. Do not resurrect
+superseded plans, retired rules, or old audit conclusions. Frozen
+checkpoints (e.g. `docs/archive/CANONICAL_STATE.md`) are historical
+records, not current state.
 
 ### 2. State the question falsifiably
 
@@ -89,9 +94,10 @@ convenience into a historical claim by citation proximity.
 Identifiers like `PNWGmcMnDissimilation` (SC022, historically Common
 Germanic) and `PNWGmcNStemNLoss` (SC023, historically Proto-Germanic)
 are retained for executable stability after their historical metadata
-changed. Stage and scope come from
-`sound_change_historical_staging_map.tsv` and the inventory, never from
-the name prefix. This invariant is machine-checked
+changed. Stage and scope come from the canonical
+`registry/sc_registry.tsv` (of which the staging map and inventory are
+generated views), never from the name prefix. This invariant is
+machine-checked
 (`test_adjudication_protocol_guardrails.py`).
 
 ### 8. Never infer historical domain from the executable environment

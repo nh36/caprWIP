@@ -1,43 +1,28 @@
 # Germanic project — current state (living entry point)
 
-**This is the "start here" document for the Germanic pipeline.** It is a
-living document: update it whenever a sound-change adjudication or other
-project-phase change alters what is authoritative.
-
-`Germanic/docs/CANONICAL_STATE.md` is a **frozen historical checkpoint**
-(freeze date 2026-05-09). It correctly records the state at that
-moment, including "research phase complete / publication mode". That
-claim is no longer current: an active sound-change adjudication
-programme has since reopened individual rules. Do not treat
-CANONICAL_STATE.md, or any frozen audit conclusion, as current state.
+Keep this file tiny. Per-SC facts (status, verdicts, stages, memos) live only
+in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
-Sequential per-SC adjudication of the sound-change cascade
-(chronology, historical staging/scope, executable-rule scientific
-correctness), performed on branch `sc001-sc020-chronology-audit`,
-one SC per instructed task.
+Sequential per-SC adjudication of the sound-change cascade on branch
+`sc001-sc020-chronology-audit`, one SC per instructed task.
+**Next SC in sequence: SC024.**
 
-**Method:** any work touching Germanic sound-change history,
-chronology, staging, scope, FST semantics, or interaction evidence MUST
-follow `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` and record its
-reasoning in a memo based on
-`Germanic/docs/sound_changes/audits/ADJUDICATION_TEMPLATE.md`.
+Method: `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` +
+`Germanic/docs/sound_changes/audits/ADJUDICATION_TEMPLATE.md` are mandatory
+for any sound-change history/chronology/staging/scope/FST-semantics work.
 
-## Authoritative registries
+## Canonical sources
 
-- `Germanic/docs/sound_changes/sound_change_inventory.tsv` — rule inventory.
-- `Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv` —
-  historical stage/scope, display names, cascade positions, action status.
-- `Germanic/docs/sound_changes/cascade_baseline/` — frozen baseline
-  summary, historical audit table, rename migration manifest.
-- `Germanic/docs/sound_changes/order_tests/` — interaction matrix,
-  chronology graph (`first_break_edges.tsv`, nodes), candidate lists.
-- `Germanic/docs/sound_changes/audits/scNNN-adjudication.md` — per-SC
-  adjudication memos (verdicts of record).
-- Live corpus TSV plus compact derivation report, lexeme packets,
-  manifest, schema, and coverage audit (as listed in CANONICAL_STATE.md;
-  those artifact roles are unchanged).
+- `Germanic/docs/sound_changes/registry/sc_registry.tsv` — all SC metadata.
+- `Germanic/docs/sound_changes/registry/chronology_edges.tsv` — all
+  chronology relations and witnesses.
+- `Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv` —
+  inventory-view annotations.
+- Settled verdicts (generated view):
+  `Germanic/docs/sound_changes/registry/settled_verdicts.md`.
+- Navigation and the SOURCE/GENERATED/ARCHIVE map: `Germanic/docs/README.md`.
 
 ## Frozen baselines (must not change silently)
 
@@ -54,33 +39,21 @@ A fingerprint may change only as the explicit, row-level-diagnosed
 consequence of an adjudication verdict (protocol step 13), never as a
 routine refresh.
 
-## Settled adjudication verdicts (do not reopen without new evidence)
+## Standard commands
 
-- **SC020** — split (see `sc020-adjudication.md`).
-- **SC021** `NWGmcUnstressedORaising` — RETIRED. Successors: SC071
-  (*ō > *o shortening), SC099/SC100 (medial-u/final-a split); SC040
-  moved later. The identifier SC021 must not be reused or reactivated.
-- **SC022** `PNWGmcMnDissimilation` — RETAIN executable rule /
-  REFORMULATE metadata: historically late Proto-Germanic / Common
-  Germanic, not specifically Northwest Germanic. The `PNWGmc` prefix in
-  the executable identifier is retained for stability and carries no
-  stage claim.
-- **SC023** `PNWGmcNStemNLoss` — RETAIN executable rule byte-for-byte /
-  REFORMULATE metadata: (late) Proto-Germanic word-final n-loss
-  (Ringe 2017: 101–103); the `{*ō}{*n}` environment is a deliberately
-  narrow executable proxy. `do` is a counterfeeding negative chronology
-  witness for SC023 < SC047, not a live application.
-
-Next in sequence: SC024 (not yet begun).
+- Prepare an adjudication packet: `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
+- Regenerate views after registry edits: `python3 Germanic/tools/generate_registry_views.py`
+- Verify views clean: `python3 Germanic/tools/generate_registry_views.py --check`
+- Validate propagation: `python3 Germanic/tools/adjudicate.py SCNNN --check`
+- Full test suite: `cd Germanic/tests && python3 -m pytest -q`
 
 ## Instruction precedence
 
-1. The current explicit user instruction for the task at hand.
-2. `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` (for adjudication work).
+1. The current explicit user instruction.
+2. `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` (adjudication work).
 3. `.github/copilot-instructions.md` (repo-wide conventions).
-4. `docs/AGENTS.md` — its container sanity checks and evidence
-   discipline remain good practice, but its Tier-3 "always ask before
-   editing/committing" gates do **not** govern explicitly instructed
-   adjudication tasks, which include commit-and-push in scope.
-5. Frozen checkpoints (CANONICAL_STATE.md and audit snapshots) are
-   historical records, not instructions.
+4. `docs/AGENTS.md` — container sanity checks remain good practice; its
+   Tier-3 approval gates do not govern explicitly instructed adjudication
+   tasks.
+5. Anything under `Germanic/docs/archive/` is historical record, never
+   instruction.

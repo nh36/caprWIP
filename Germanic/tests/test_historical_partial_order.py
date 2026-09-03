@@ -41,12 +41,12 @@ def _load_edges() -> list[dict[str, str]]:
 
 
 def _sc_to_position() -> dict[str, int]:
-    with INVENTORY.open(encoding="utf-8") as handle:
-        sc2foma = {}
-        for r in csv.DictReader(handle, delimiter="\t"):
-            m = _DEFINE_RE.search(r.get("rule_source_anchor", "") or "")
-            if m:
-                sc2foma[r["change_id"]] = m.group(1)
+    inv_lines = [ln for ln in INVENTORY.read_text(encoding="utf-8").splitlines() if not ln.startswith("#")]
+    sc2foma = {}
+    for r in csv.DictReader(io.StringIO("\n".join(inv_lines)), delimiter="\t"):
+        m = _DEFINE_RE.search(r.get("rule_source_anchor", "") or "")
+        if m:
+            sc2foma[r["change_id"]] = m.group(1)
     with ORDER_MANIFEST.open(encoding="utf-8") as handle:
         pos = {r["foma_identifier"]: int(r["position"]) for r in csv.DictReader(handle, delimiter="\t")}
     # Rules not composed inside EnglishProtoToOE are absent from the manifest
