@@ -141,6 +141,82 @@ class MemoAgreementTests(unittest.TestCase):
             self.assertEqual(rc, 0, f"adjudicate --check failed for {r['sc_id']}")
 
 
+class ReadingListTests(unittest.TestCase):
+    def test_grouped_dossier_discoverable_without_literal_sc_id(self):
+        # SC024's evidence dossier is the grouped SC018-SC025 book dossier,
+        # whose filename does not contain the string 'sc024'. The reading
+        # list must find it from the canonical capr_evidence field, not by
+        # filename guessing.
+        row = adjudicate.load_registry_row("SC024")
+        ann = adjudicate.load_annotation_row("SC024")
+        sections, warnings = adjudicate.reading_list(row, ann)
+        self.assertEqual(warnings, [])
+        required = sections["REQUIRED CURRENT SOURCES"]
+        grouped = [p for p in required if "018-025" in p]
+        self.assertTrue(grouped, required)
+        self.assertNotIn("sc024", grouped[0].lower())
+        prose = sections["PUBLICATION PROSE (inspect/update after verdict)"]
+        self.assertTrue(any("reader_facing/024-long-e-lowering.md" in p for p in prose), prose)
+        self.assertTrue(
+            any("chronology_cards/SC024" in p for p in sections["CHRONOLOGY EVIDENCE"])
+        )
+
+    def test_adjudicated_sc_reading_list_includes_memo(self):
+        row = adjudicate.load_registry_row("SC023")
+        sections, warnings = adjudicate.reading_list(
+            row, adjudicate.load_annotation_row("SC023")
+        )
+        self.assertEqual(warnings, [])
+        self.assertTrue(
+            any("sc023-adjudication.md" in p for p in sections["EXISTING ADJUDICATION"])
+        )
+
+    def test_every_registry_document_pointer_resolves(self):
+        unresolved = []
+        for r in views.read_tsv(views.SC_REGISTRY):
+            for field in (
+                "capr_evidence",
+                "chronology_card",
+                "source_reader_facing_file",
+                "adjudication_memo",
+            ):
+                for ref in adjudicate.split_refs(r.get(field, "")):
+                    if adjudicate.resolve_doc(ref) is None:
+                        unresolved.append((r["sc_id"], field, ref))
+        self.assertEqual(unresolved, [])
+
+
+class NextScTests(unittest.TestCase):
+    def test_next_sc_derives_from_registry_state(self):
+        reg = views.read_tsv(views.SC_REGISTRY)
+        nxt = adjudicate.next_sc()
+        self.assertIsNotNone(nxt)
+        row = {r["sc_id"]: r for r in reg}[nxt]
+        self.assertEqual(row["lifecycle_status"], "active")
+        self.assertNotEqual(row["adjudication_status"], "adjudicated")
+        highest_adjudicated = max(
+            adjudicate.sc_num(r["sc_id"])
+            for r in reg
+            if r["adjudication_status"] == "adjudicated"
+        )
+        self.assertGreater(adjudicate.sc_num(nxt), highest_adjudicated)
+        # No active SC between the highest adjudicated SC and the next
+        # target may be skipped.
+        for r in reg:
+            n = adjudicate.sc_num(r["sc_id"])
+            if highest_adjudicated < n < adjudicate.sc_num(nxt):
+                self.assertNotEqual(r["lifecycle_status"], "active", r["sc_id"])
+
+    def test_current_state_does_not_hardcode_next_sc(self):
+        text = (REPO_ROOT / "Germanic/docs/CURRENT_STATE.md").read_text(encoding="utf-8")
+        self.assertNotRegex(
+            text,
+            r"[Nn]ext SC in sequence:\s*SC\d",
+            "CURRENT_STATE.md hard-codes the next SC; it must be derived "
+            "via `adjudicate.py --next`",
+        )
+
+
 class ArchiveIsolationTests(unittest.TestCase):
     def test_no_generator_input_lives_in_an_archive(self):
         for path in views.DECLARED_INPUTS:

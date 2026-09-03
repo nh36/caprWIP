@@ -7,19 +7,30 @@ never treat an ARCHIVE file as current authority.
 
 ## SOURCE (hand-edited, authoritative)
 
-| File | Owns |
-|---|---|
-| `registry/sc_registry.tsv` | SC identity, lifecycle status, executable identifier, cascade position, display names, historical stage/scope, confidence, reader-facing placement, adjudication status/verdict, memo path |
-| `registry/chronology_edges.tsv` | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
-| `registry/sc_inventory_annotations.tsv` | Inventory-only annotation columns (evidence pointers, notes) not otherwise owned by the registry |
-| `Germanic/fsts/germanic.txt` | Executable rule semantics and cascade composition |
-| `audits/*.md` adjudication memos | Per-SC scientific reasoning; each carries a machine-readable `Registry-verdict:` line that must agree with the registry |
-| `cascade_baseline/cascade_baseline_summary.json` | Frozen fingerprints (change only via the explicit adjudication/refreeze procedure) |
-| `Germanic/docs/CURRENT_STATE.md` | Current phase, next SC, standard commands |
-| `Germanic/docs/README.md`, `sound_changes/README.md` | Navigation |
-| `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`, `audits/ADJUDICATION_TEMPLATE.md` | Method |
+Three kinds: **machine-state** (structured facts), **scientific-reasoning**
+(adjudication memos), **publication-prose** (reader-facing text). All others
+are GENERATED or ARCHIVE.
 
-## GENERATED (never hand-edit; rebuild with `python3 Germanic/tools/generate_registry_views.py`)
+| File | Kind | Owns |
+|---|---|---|
+| `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, cascade position, display names, historical stage/scope, confidence, reader-facing placement, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter) |
+| `registry/chronology_edges.tsv` | machine-state | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
+| `registry/sc_inventory_annotations.tsv` | machine-state | Inventory-only annotation columns (evidence pointers, notes) not otherwise owned by the registry |
+| `Germanic/fsts/germanic.txt` | machine-state | Executable rule semantics and cascade composition |
+| `audits/*.md` adjudication memos | scientific-reasoning | Per-SC scientific reasoning; each carries a machine-readable `Registry-verdict:` line that must agree with the registry |
+| `reader_facing/*.md`, `book_dossiers/*.md` | publication-prose | Reader-facing chapters and grouped book dossiers; `adjudicate.py SCNNN --prepare` lists the ones relevant to a given SC |
+| `cascade_baseline/cascade_baseline_summary.json` | machine-state | Frozen fingerprints (change only via the explicit adjudication/refreeze procedure) |
+| `Germanic/docs/CURRENT_STATE.md` | publication-prose | Current phase and standard commands (the next SC is derived: `adjudicate.py --next`) |
+| `Germanic/docs/README.md`, `sound_changes/README.md` | publication-prose | Navigation |
+| `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`, `audits/ADJUDICATION_TEMPLATE.md` | publication-prose | Method |
+
+Registry document pointers (`capr_evidence`, `chronology_card`,
+`source_reader_facing_file`, `adjudication_memo`) are either repo-relative
+paths or bare filenames resolved against the canonical document directories;
+`--prepare` builds the reading list exclusively from these fields (no
+filename guessing), and a test requires every pointer to resolve.
+
+## GENERATED (never hand-edit; rebuilt by `adjudicate.py SCNNN --finalize`)
 
 | File | Source |
 |---|---|
@@ -30,7 +41,8 @@ never treat an ARCHIVE file as current authority.
 | `order_tests/chronology_graph/first_break_graph_summary.md` | both registries |
 | `registry/settled_verdicts.md` | sc_registry |
 
-Chained generators (run after registry views if staging/inventory changed):
+Chained generators (always rebuilt by `--finalize`; deterministic and safe
+to run unconditionally):
 
 | File | Generator |
 |---|---|
@@ -46,11 +58,11 @@ Chained generators (run after registry views if staging/inventory changed):
 
 ## Standard workflow for one SC adjudication
 
-1. `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
-2. Investigate per `RESEARCH_ADJUDICATION_PROTOCOL.md`; write the memo from `audits/ADJUDICATION_TEMPLATE.md` including a `Registry-verdict:` line.
-3. Edit the SOURCE files only: `sc_registry.tsv`, `chronology_edges.tsv`, memo, and `germanic.txt` if the verdict requires.
-4. `python3 Germanic/tools/generate_registry_views.py` then the chained builders if staging/inventory changed.
-5. `python3 Germanic/tools/adjudicate.py SCNNN --check`
+1. `python3 Germanic/tools/adjudicate.py --next` (derived next SC)
+2. `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
+3. Investigate per `RESEARCH_ADJUDICATION_PROTOCOL.md`; write the memo from `audits/ADJUDICATION_TEMPLATE.md` including a `Registry-verdict:` line.
+4. Edit SOURCE files only: `sc_registry.tsv`, `chronology_edges.tsv`, memo, `germanic.txt` if the verdict requires, and the publication prose listed by `--prepare`.
+5. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` (regenerates every derived artifact, then runs propagation checks — never choose generators by hand)
 6. `cd Germanic/tests && python3 -m pytest -q`
 
 ## Known remaining duplications (accepted, machine-checked where possible)

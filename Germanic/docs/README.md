@@ -5,31 +5,50 @@ GENERATED (never hand-edited), or ARCHIVE (historical; never authoritative).
 
 ## What you may edit (SOURCE)
 
+SOURCE files come in three kinds; all are hand-edited, everything else is
+generated or archived.
+
+**Machine-state SOURCE** (structured facts; one owner per fact):
+
 - `sound_changes/registry/sc_registry.tsv` — **the canonical SC registry.**
   One row per SC ever used (including retired). Owns identity, lifecycle,
   executable identifier/position, display names, historical stage/scope,
-  confidence, adjudication status/verdict/memo path, chronology-node facts.
+  confidence, adjudication status/verdict/memo path, chronology-node facts,
+  and document pointers (evidence dossiers, chronology card, reader-facing
+  chapter).
 - `sound_changes/registry/chronology_edges.tsv` — **the canonical
   chronology-edge registry.** Owns all chronology relations, witnesses,
   witness roles, and evidence basis.
 - `sound_changes/registry/sc_inventory_annotations.tsv` — inventory-view
   annotations (trace/rule-source/literature fields) not owned by the registry.
-- `sound_changes/audits/scNNN-adjudication.md` — per-SC adjudication memos
-  (copy `sound_changes/audits/ADJUDICATION_TEMPLATE.md`).
 - `../fsts/germanic.txt` — the FST cascade (only as an adjudication verdict
   requires).
-- Reader-facing chapters, dossiers, and `CURRENT_STATE.md`.
+
+**Scientific-reasoning SOURCE** (prose arguments and evidence):
+
+- `sound_changes/audits/scNNN-adjudication.md` — per-SC adjudication memos
+  (copy `sound_changes/audits/ADJUDICATION_TEMPLATE.md`; must carry a
+  `Registry-verdict:` line agreeing with the registry).
+
+**Publication-prose SOURCE** (reader-facing text; inspect after a verdict):
+
+- `sound_changes/reader_facing/*.md` chapters and
+  `sound_changes/book_dossiers/*.md` — `adjudicate.py SCNNN --prepare`
+  lists exactly which of these are relevant to a given SC.
+- `CURRENT_STATE.md` (phase/commands only; no per-SC facts).
 
 ## What is GENERATED (do not edit; regenerate)
 
-Run `python3 Germanic/tools/generate_registry_views.py` after editing any
-registry file. It writes: `sound_changes/sound_change_historical_staging_map.tsv`,
+`python3 Germanic/tools/adjudicate.py SCNNN --finalize` regenerates all of
+these deterministically and then runs propagation checks — you never decide
+which generator to run. Generated files:
+`sound_changes/sound_change_historical_staging_map.tsv`,
 `sound_changes/sound_change_inventory.tsv`, the chronology graph files under
 `sound_changes/order_tests/chronology_graph/` (edges TSV/JSON/DOT, nodes,
-summary), and `sound_changes/registry/settled_verdicts.md`.
-Then run `python3 Germanic/tools/build_historical_audit_table.py` and
-`python3 Germanic/tools/build_rename_migration_manifest.py` if the staging
-view changed. `--check` on the generator verifies everything is clean.
+summary), `sound_changes/registry/settled_verdicts.md`,
+`sound_changes/cascade_baseline/historical_audit_table.tsv`, and
+`sound_changes/cascade_baseline/rename_migration_manifest.tsv`.
+(Debugging only: `python3 Germanic/tools/generate_registry_views.py [--check]`.)
 
 ## What is ARCHIVE (never authoritative)
 
@@ -39,15 +58,20 @@ snapshots, and the chronology-card programme records. See `archive/README.md`.
 
 ## One SC adjudication, start to finish
 
-1. `python3 Germanic/tools/adjudicate.py SCNNN --prepare` — assembles the
-   packet (registry row, rule text, edges, memo path, fingerprints, census
-   command).
-2. Follow `RESEARCH_ADJUDICATION_PROTOCOL.md`; record everything in the memo.
-3. Propagate the verdict by editing the registry files (and FST/corpus only
-   if the verdict requires), then regenerate views (command above).
-4. `python3 Germanic/tools/adjudicate.py SCNNN --check` — validates
-   propagation consistency.
-5. `cd Germanic/tests && python3 -m pytest -q` — full suite must pass.
-6. Commit and push; STOP after one SC.
+1. `python3 Germanic/tools/adjudicate.py --next` — the next SC (derived
+   from the registry; never hand-maintained).
+2. `python3 Germanic/tools/adjudicate.py SCNNN --prepare` — assembles the
+   packet: registry row, rule text, edges, fingerprints, census commands,
+   and a registry-driven reading list (required sources, existing
+   adjudication, chronology evidence, publication prose, historical
+   support). Do not search the repository for evidence; the packet is the
+   reading list.
+3. Follow `RESEARCH_ADJUDICATION_PROTOCOL.md`; record everything in the memo.
+4. Propagate the verdict by editing SOURCE files only (registries, memo,
+   FST/corpus only if the verdict requires, relevant publication prose).
+5. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` — regenerates
+   all derived artifacts and validates propagation consistency.
+6. `cd Germanic/tests && python3 -m pytest -q` — full suite must pass.
+7. Commit and push; STOP after one SC.
 
 Current phase and frozen baselines: `CURRENT_STATE.md`.

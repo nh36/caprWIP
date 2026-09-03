@@ -7,7 +7,8 @@ in the canonical registry; do not duplicate them here.
 
 Sequential per-SC adjudication of the sound-change cascade on branch
 `sc001-sc020-chronology-audit`, one SC per instructed task.
-**Next SC in sequence: SC024.**
+The next SC is derived from the registry, never stated here:
+`python3 Germanic/tools/adjudicate.py --next`
 
 Method: `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` +
 `Germanic/docs/sound_changes/audits/ADJUDICATION_TEMPLATE.md` are mandatory
@@ -41,11 +42,13 @@ routine refresh.
 
 ## Standard commands
 
+- Next SC to adjudicate: `python3 Germanic/tools/adjudicate.py --next`
 - Prepare an adjudication packet: `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
-- Regenerate views after registry edits: `python3 Germanic/tools/generate_registry_views.py`
-- Verify views clean: `python3 Germanic/tools/generate_registry_views.py --check`
-- Validate propagation: `python3 Germanic/tools/adjudicate.py SCNNN --check`
+- Finalize after SOURCE edits (regenerates everything, then checks):
+  `python3 Germanic/tools/adjudicate.py SCNNN --finalize`
 - Full test suite: `cd Germanic/tests && python3 -m pytest -q`
+- Debug-only: `python3 Germanic/tools/generate_registry_views.py [--check]`
+  (already run by `--finalize`)
 
 ## Instruction precedence
 

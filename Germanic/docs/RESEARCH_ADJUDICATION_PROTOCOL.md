@@ -28,10 +28,14 @@ Read `Germanic/docs/CURRENT_STATE.md` and the canonical registries under
 `chronology_edges.tsv`, `sc_inventory_annotations.tsv`; see
 `registry/CONTROL_PLANE.md` for the full SOURCE/GENERATED/ARCHIVE map),
 plus any existing adjudication memo for the rule under
-`Germanic/docs/sound_changes/audits/`. `sound_change_inventory.tsv`, the
+`Germanic/docs/sound_changes/audits/`. Start with
+`python3 Germanic/tools/adjudicate.py SCNNN --prepare`: it assembles the
+packet and the registry-driven reading list — do not search the repository
+for evidence documents. `sound_change_inventory.tsv`, the
 staging map, and the chronology-graph files are GENERATED views — read
-them freely, never hand-edit them; regenerate with
-`python3 Germanic/tools/generate_registry_views.py`. Do not resurrect
+them freely, never hand-edit them; after editing SOURCE files run
+`python3 Germanic/tools/adjudicate.py SCNNN --finalize`, which regenerates
+every derived artifact and validates propagation. Do not resurrect
 superseded plans, retired rules, or old audit conclusions. Frozen
 checkpoints (e.g. `docs/archive/CANONICAL_STATE.md`) are historical
 records, not current state.
