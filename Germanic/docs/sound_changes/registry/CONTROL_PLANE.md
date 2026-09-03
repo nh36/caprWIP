@@ -60,10 +60,11 @@ to run unconditionally):
 
 1. `python3 Germanic/tools/adjudicate.py --next` (derived next SC)
 2. `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
-3. Investigate per `RESEARCH_ADJUDICATION_PROTOCOL.md`; write the memo from `audits/ADJUDICATION_TEMPLATE.md` including a `Registry-verdict:` line.
-4. Edit SOURCE files only: `sc_registry.tsv`, `chronology_edges.tsv`, memo, `germanic.txt` if the verdict requires, and the publication prose listed by `--prepare`.
-5. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` (regenerates every derived artifact, then runs propagation checks — never choose generators by hand)
-6. `cd Germanic/tests && python3 -m pytest -q`
+3. `python3 Germanic/tools/adjudicate.py SCNNN --evidence` (container rebuild of the full cascade and stage bins, freshness-checked live firing census, witness pre/post — never run foma/flookup or trace scripts by hand)
+4. Investigate per `RESEARCH_ADJUDICATION_PROTOCOL.md`; write the memo from `audits/ADJUDICATION_TEMPLATE.md` including a `Registry-verdict:` line.
+5. Edit SOURCE files only: `sc_registry.tsv`, `chronology_edges.tsv`, memo, `germanic.txt` if the verdict requires, and the publication prose listed by `--prepare`.
+6. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` (regenerates every derived artifact, then runs propagation checks — never choose generators by hand)
+7. `cd Germanic/tests && python3 -m pytest -q`
 
 ## Known remaining duplications (accepted, machine-checked where possible)
 

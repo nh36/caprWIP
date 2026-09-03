@@ -12,6 +12,15 @@
         adjudication, chronology evidence, publication prose, historical
         support), frozen fingerprints, and the standard commands.
 
+    python3 Germanic/tools/adjudicate.py SC024 --evidence
+        Deterministically gather the executable evidence: rebuild the full
+        OE cascade and every stage bin from Germanic/fsts/old_english_sandbox.txt
+        inside the backend container, verify bin freshness against the
+        rebuild timestamp, and print the complete live firing census for the
+        SC's executable rule (lexeme, protoform, form immediately before the
+        rule, form immediately after), plus before/after lines for the SC's
+        chronology witnesses. No manual foma/flookup work is ever needed.
+
     python3 Germanic/tools/adjudicate.py SC024 --finalize
         Deterministic finalization: regenerate all registry views, rebuild
         the chained audit-table and rename-manifest artifacts, then run the
@@ -30,6 +39,7 @@ from __future__ import annotations
 
 import json
 import re
+import shlex
 import subprocess
 import sys
 from pathlib import Path
@@ -48,6 +58,13 @@ from generate_registry_views import (  # noqa: E402
 
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
 FST = REPO_ROOT / "Germanic/fsts/germanic.txt"
+SANDBOX_FST = REPO_ROOT / "Germanic/fsts/old_english_sandbox.txt"
+# Canonical container layout (docker-compose.yml): ./backend -> /usr/app,
+# ./Germanic/{data,fsts,tools,docs} -> /usr/app/{data,fsts,tools,docs}.
+# foma writes compiled bins into its working directory, so the ONLY
+# authoritative bin location is /usr/app (host: backend/). Bins found under
+# fsts/ are stale duplicates and are never read.
+CONTAINER_APP = "/usr/app"
 ORDER_MANIFEST = SC_DIR / "cascade_baseline/cascade_order_manifest.tsv"
 BASELINE_SUMMARY = SC_DIR / "cascade_baseline/cascade_baseline_summary.json"
 TEMPLATE = SC_DIR / "audits/ADJUDICATION_TEMPLATE.md"
@@ -204,6 +221,103 @@ def next_sc():
     return candidates[0][1] if candidates else None
 
 
+def container_command(inner):
+    """Wrap a shell command for the backend container (canonical layout)."""
+    return ["docker", "compose", "exec", "-T", "backend", "sh", "-lc", inner]
+
+
+def evidence_rebuild_command():
+    """Command that rebuilds ALL executable evidence artifacts.
+
+    old_english_sandbox.txt begins with `source fsts/germanic.txt`, so this
+    single deterministic compile rebuilds the full OE cascade AND every
+    stage-by-stage sandbox bin, writing them into the canonical bin
+    directory (the foma working directory, /usr/app).
+    """
+    return container_command(
+        f"cd {CONTAINER_APP} && foma -q -l fsts/old_english_sandbox.txt -e quit"
+    )
+
+
+def evidence_census_command(fst_identifier, min_mtime, witnesses):
+    inner = (f"cd {CONTAINER_APP} && python3 tools/sc_evidence.py "
+             f"{shlex.quote(fst_identifier)}")
+    if min_mtime is not None:
+        inner += f" --min-mtime {int(min_mtime)}"
+    if witnesses:
+        inner += f" --witnesses {shlex.quote(witnesses)}"
+    return container_command(inner)
+
+
+def evidence(sc_id) -> int:
+    """Deterministically gather the executable evidence for one SC.
+
+    Fails loudly at every step; never falls back to stale artifacts.
+    """
+    row = load_registry_row(sc_id)
+    if row is None:
+        print(f"{sc_id} not found in {SC_REGISTRY.relative_to(REPO_ROOT)}", file=sys.stderr)
+        return 1
+    ident = row["fst_identifier"]
+    if not ident:
+        print(f"EVIDENCE FAILED: {sc_id} has no executable fst_identifier in the "
+              f"registry (lifecycle: {row['lifecycle_status']}); there is no live "
+              "rule to census.", file=sys.stderr)
+        return 1
+    edges = edges_for(sc_id)
+    witnesses = "; ".join(
+        w for e in edges for w in split_refs(e["representative_lexemes"]))
+
+    print(f"# Executable evidence: {sc_id} ({ident})")
+    print("\n## Chronology relations and witnesses (canonical edge registry)")
+    if not edges:
+        print("- none recorded")
+    for e in edges:
+        print(f"- {e['source_change_id']} -> {e['target_change_id']} "
+              f"[{e['relation_type']}; {e['evidence_basis']}; "
+              f"role: {e['witness_role'] or '-'}]")
+        if e["representative_lexemes"]:
+            print(f"  witnesses: {e['representative_lexemes']}")
+        if e["representative_forms"]:
+            print(f"  forms: {e['representative_forms']}")
+
+    if not SANDBOX_FST.is_file():
+        print(f"EVIDENCE FAILED: missing {SANDBOX_FST}", file=sys.stderr)
+        return 1
+    clock = subprocess.run(container_command("date +%s"),
+                           cwd=REPO_ROOT, capture_output=True, text=True)
+    if clock.returncode != 0:
+        print(clock.stderr, file=sys.stderr)
+        print("EVIDENCE FAILED: backend container is not reachable "
+              "(is `docker compose up -d` running?)", file=sys.stderr)
+        return 1
+    min_mtime = int(clock.stdout.strip())
+
+    print("\n## Rebuilding full cascade + stage bins "
+          "(fsts/old_english_sandbox.txt sources fsts/germanic.txt) ...")
+    rebuild = subprocess.run(evidence_rebuild_command(),
+                             cwd=REPO_ROOT, capture_output=True, text=True)
+    if rebuild.returncode != 0:
+        print(rebuild.stdout, file=sys.stderr)
+        print(rebuild.stderr, file=sys.stderr)
+        print("EVIDENCE FAILED: foma rebuild exited "
+              f"{rebuild.returncode}", file=sys.stderr)
+        return 1
+    tail = [l for l in rebuild.stdout.splitlines() if l.strip()][-3:]
+    for line in tail:
+        print(f"  {line}")
+    print("rebuild ok")
+
+    print("\n## Firing census (fresh stage bins only)")
+    sys.stdout.flush()
+    census = subprocess.run(
+        evidence_census_command(ident, min_mtime, witnesses), cwd=REPO_ROOT)
+    if census.returncode != 0:
+        print(f"EVIDENCE FAILED: census exited {census.returncode}", file=sys.stderr)
+        return 1
+    return 0
+
+
 def prepare(sc_id) -> int:
     row = load_registry_row(sc_id)
     if row is None:
@@ -252,12 +366,13 @@ def prepare(sc_id) -> int:
     print(f"- expanded-{summary['total_lexemes']}: {summary['outputs_sha256']}")
     print(f"- legacy-{summary['legacy_subset_count']}: {summary['legacy_subset_sha256']}")
     print("\n## Standard commands")
-    print("- compile FST (in container): docker compose exec -T backend bash -lc "
-          "'cd /usr/app && foma -q -l fsts/germanic.txt -e quit'")
-    print("- firing census / traces (in container): docker compose exec -T backend "
-          "python3 /usr/app/tools/oe_full_trace_report.py  (see protocol step 3-4)")
+    print(f"- executable evidence (rebuild + firing census): "
+          f"python3 Germanic/tools/adjudicate.py {sc_id} --evidence")
     print(f"- finalize after SOURCE edits: python3 Germanic/tools/adjudicate.py {sc_id} --finalize")
     print("- full suite: cd Germanic/tests && python3 -m pytest -q")
+    print("All container FST work (rebuild, freshness checks, firing census, "
+          "witness pre/post) is encapsulated by --evidence; never compile or "
+          "probe transducers by hand.")
     return 0
 
 
@@ -364,13 +479,15 @@ def main() -> int:
         print(nxt)
         return 0
     if (len(args) != 2
-            or args[1] not in ("--prepare", "--check", "--finalize")
+            or args[1] not in ("--prepare", "--check", "--finalize", "--evidence")
             or not re.fullmatch(r"SC\d{3}", args[0])):
         print(__doc__.strip(), file=sys.stderr)
         return 2
     sc_id, mode = args
     if mode == "--prepare":
         return prepare(sc_id)
+    if mode == "--evidence":
+        return evidence(sc_id)
     if mode == "--finalize":
         return finalize(sc_id)
     return check(sc_id)

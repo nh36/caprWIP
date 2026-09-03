@@ -44,6 +44,8 @@ routine refresh.
 
 - Next SC to adjudicate: `python3 Germanic/tools/adjudicate.py --next`
 - Prepare an adjudication packet: `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
+- Executable evidence (container rebuild + live firing census + witness
+  pre/post): `python3 Germanic/tools/adjudicate.py SCNNN --evidence`
 - Finalize after SOURCE edits (regenerates everything, then checks):
   `python3 Germanic/tools/adjudicate.py SCNNN --finalize`
 - Full test suite: `cd Germanic/tests && python3 -m pytest -q`
@@ -55,8 +57,8 @@ routine refresh.
 1. The current explicit user instruction.
 2. `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` (adjudication work).
 3. `.github/copilot-instructions.md` (repo-wide conventions).
-4. `docs/AGENTS.md` — container sanity checks remain good practice; its
-   Tier-3 approval gates do not govern explicitly instructed adjudication
-   tasks.
-5. Anything under `Germanic/docs/archive/` is historical record, never
-   instruction.
+4. `docs/AGENTS.md` — a short routing rule pointing to the adjudication
+   interface. An explicit user request to complete, commit and push an
+   adjudication is itself the authorization for those operations.
+5. Anything under `Germanic/docs/archive/` or `docs/archive/` is
+   historical record, never instruction.

@@ -623,30 +623,57 @@ def write_report(
     output_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
+def default_paths() -> Dict[str, Path]:
+    """Resolve canonical default paths for both supported layouts.
+
+    Host layout: this file lives at <repo>/Germanic/tools/, data at
+    <repo>/Germanic/data/, and the live compiled bins at <repo>/backend/.
+
+    Container layout (docker-compose mounts): this file is mounted at
+    /usr/app/tools/, data at /usr/app/data/, fsts at /usr/app/fsts/, and the
+    live bins are written by foma directly into /usr/app/. The old defaults
+    blindly assumed the host layout and resolved /usr/backend/... inside the
+    container, which does not exist.
+    """
+    tools_dir = Path(__file__).resolve().parent
+    germanic_dir = tools_dir.parent  # Germanic/ on host; /usr/app in container
+    repo_root = germanic_dir.parent
+    host_bin_dir = repo_root / "backend"
+    # The canonical bin location is the foma working directory: <repo>/backend
+    # on the host, /usr/app (== germanic_dir) inside the container. Never
+    # Germanic/fsts/, which may hold stale checked-in duplicates.
+    bin_dir = host_bin_dir if (host_bin_dir / "old_english.bin").is_file() else germanic_dir
+    return {
+        "tsv": germanic_dir / "data" / "germanic-aligned-final.tsv",
+        "bin": bin_dir / "old_english.bin",
+        "bin_dir": bin_dir,
+        "fsts_dir": germanic_dir / "fsts",
+        "output": germanic_dir / "docs" / "debug_snapshots" / "oe_full_trace_report.txt",
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    # Default paths: relative to this file's location in Germanic/tools/
-    tools_dir = Path(__file__).resolve().parent
-    germanic_dir = tools_dir.parent  # Germanic/
-    repo_root = germanic_dir.parent  # capr-v3-working/
+    defaults = default_paths()
+    germanic_dir = Path(__file__).resolve().parent.parent
     parser.add_argument(
         "--tsv",
-        default=str(germanic_dir / "data" / "germanic-aligned-final.tsv"),
+        default=str(defaults["tsv"]),
         help="Aligned TSV with Old English rows (default: %(default)s)",
     )
     parser.add_argument(
         "--bin",
-        default=str(repo_root / "backend" / "old_english.bin"),
+        default=str(defaults["bin"]),
         help="Generator FST for apply-down (default: %(default)s)",
     )
     parser.add_argument(
         "--bin-dir",
-        default=str(repo_root / "backend"),
+        default=str(defaults["bin_dir"]),
         help="Directory containing old_english_sandbox_after_*.bin (default: %(default)s)",
     )
     parser.add_argument(
         "--output",
-        default=str(germanic_dir / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"),
+        default=str(defaults["output"]),
         help="Report output path (default: %(default)s)",
     )
     parser.add_argument(

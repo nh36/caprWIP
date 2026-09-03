@@ -61,17 +61,21 @@ snapshots, and the chronology-card programme records. See `archive/README.md`.
 1. `python3 Germanic/tools/adjudicate.py --next` — the next SC (derived
    from the registry; never hand-maintained).
 2. `python3 Germanic/tools/adjudicate.py SCNNN --prepare` — assembles the
-   packet: registry row, rule text, edges, fingerprints, census commands,
-   and a registry-driven reading list (required sources, existing
+   packet: registry row, rule text, edges, fingerprints, and a
+   registry-driven reading list (required sources, existing
    adjudication, chronology evidence, publication prose, historical
    support). Do not search the repository for evidence; the packet is the
    reading list.
-3. Follow `RESEARCH_ADJUDICATION_PROTOCOL.md`; record everything in the memo.
-4. Propagate the verdict by editing SOURCE files only (registries, memo,
+3. `python3 Germanic/tools/adjudicate.py SCNNN --evidence` — rebuilds the
+   full cascade and stage bins in the backend container, verifies their
+   freshness, and prints the complete live firing census plus witness
+   pre/post forms. Never run `foma`/`flookup` or trace scripts by hand.
+4. Follow `RESEARCH_ADJUDICATION_PROTOCOL.md`; record everything in the memo.
+5. Propagate the verdict by editing SOURCE files only (registries, memo,
    FST/corpus only if the verdict requires, relevant publication prose).
-5. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` — regenerates
+6. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` — regenerates
    all derived artifacts and validates propagation consistency.
-6. `cd Germanic/tests && python3 -m pytest -q` — full suite must pass.
-7. Commit and push; STOP after one SC.
+7. `cd Germanic/tests && python3 -m pytest -q` — full suite must pass.
+8. Commit and push; STOP after one SC.
 
 Current phase and frozen baselines: `CURRENT_STATE.md`.

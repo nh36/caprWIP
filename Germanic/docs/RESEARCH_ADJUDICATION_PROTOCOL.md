@@ -51,9 +51,11 @@ counterfeeding. Expect and allow this outcome.
 
 ### 3. Diagnose executable behavior before editing anything
 
-* Trace the relevant witnesses through the actual compiled cascade
-  (stage bins via `tools/oe_full_trace_report.py` machinery), not from
-  memory of what the rule "should" do.
+* Trace the relevant witnesses through the actual compiled cascade with
+  `python3 Germanic/tools/adjudicate.py SCNNN --evidence` (it rebuilds the
+  stage bins in the container, checks their freshness, and prints before/
+  after forms), not from memory of what the rule "should" do. Do not run
+  `foma`/`flookup` or trace scripts by hand for ordinary adjudication.
 * Establish the selected input/protoform actually fed to the transducer.
 * Inspect the form immediately before and immediately after the rule.
 * When chronology is at issue, run the counterfactual: skip or displace
@@ -62,9 +64,9 @@ counterfeeding. Expect and allow this outcome.
 ### 4. Census all live firings
 
 Never infer a rule's behavior from the single lexeme named on a
-chronology card. Enumerate every input the rule changes across the full
-corpus, and classify each firing as in-domain or out-of-domain relative
-to the historical claim. (SC023: the card named 1 lexeme; the census
+chronology card. `--evidence` enumerates every input the rule changes
+across the full corpus; classify each firing as in-domain or
+out-of-domain relative to the historical claim. (SC023: the card named 1 lexeme; the census
 found 17 live firings, all in-domain — the apparent conflict was between
 two different kinds of record, not in the rule.)
 
@@ -218,12 +220,12 @@ rule may deserve RETAIN, and saying so with evidence is a success.
 * `.github/copilot-instructions.md` governs general repository
   conventions (build/test commands, container rules, reader-facing
   style) and points here for adjudication work.
-* `docs/AGENTS.md` is a legacy debugging-autonomy protocol (command
-  tiers, per-message response format, approval gates). Its environment
-  sanity checks (container health, foma/flookup availability) remain
-  good practice, but its Tier-3 "always ask before edits/commits" gate
-  does **not** apply to adjudication tasks in which the user has
-  explicitly instructed the agent to implement, commit, and push.
+* `docs/AGENTS.md` is a short routing rule pointing to the canonical
+  adjudication interface. An explicit user instruction to implement,
+  commit, and push an adjudication is itself the authorization to do so;
+  no approval gate applies. (The retired generic debugging workflow is
+  archived at `docs/archive/legacy-agent-workflow.md` and is never an
+  instruction source.)
 * Frozen checkpoints such as `Germanic/docs/CANONICAL_STATE.md` are
   historical records of a past freeze; they are never a source of
   current rule status. Start from `Germanic/docs/CURRENT_STATE.md`.
