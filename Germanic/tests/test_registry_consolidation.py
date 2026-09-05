@@ -194,18 +194,31 @@ class NextScTests(unittest.TestCase):
         row = {r["sc_id"]: r for r in reg}[nxt]
         self.assertEqual(row["lifecycle_status"], "active")
         self.assertNotEqual(row["adjudication_status"], "adjudicated")
-        highest_adjudicated = max(
+        # The governing threshold is the highest end of a contiguous
+        # adjudicated run with pending SCs above it — not the global max,
+        # which may be an out-of-band identity (e.g. SC101 from the SC024
+        # e1-complex split) adjudicated ahead of the mainline sequence.
+        adjudicated = sorted(
             adjudicate.sc_num(r["sc_id"])
             for r in reg
             if r["adjudication_status"] == "adjudicated"
         )
-        self.assertGreater(adjudicate.sc_num(nxt), highest_adjudicated)
-        # No active SC between the highest adjudicated SC and the next
-        # target may be skipped.
+        run_ends = [
+            n
+            for i, n in enumerate(adjudicated)
+            if i + 1 == len(adjudicated) or adjudicated[i + 1] != n + 1
+        ]
+        threshold = max(
+            n for n in run_ends if n < adjudicate.sc_num(nxt)
+        )
+        self.assertGreater(adjudicate.sc_num(nxt), threshold)
+        # No active unadjudicated SC between the governing threshold and
+        # the next target may be skipped.
         for r in reg:
             n = adjudicate.sc_num(r["sc_id"])
-            if highest_adjudicated < n < adjudicate.sc_num(nxt):
-                self.assertNotEqual(r["lifecycle_status"], "active", r["sc_id"])
+            if threshold < n < adjudicate.sc_num(nxt):
+                if r["adjudication_status"] != "adjudicated":
+                    self.assertNotEqual(r["lifecycle_status"], "active", r["sc_id"])
 
     def test_current_state_does_not_hardcode_next_sc(self):
         text = (REPO_ROOT / "Germanic/docs/CURRENT_STATE.md").read_text(encoding="utf-8")

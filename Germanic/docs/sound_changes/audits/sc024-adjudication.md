@@ -2,7 +2,19 @@
 
 Registry-verdict: SC024=REFORMULATE/RETAIN
 
-Status: adjudicated (this memo governs the outcome)
+> **SUPERSEDED IN IMPLEMENTATION** by
+> `sc024-sc025-sc101-e1-complex-adjudication.md` (the governing memo).
+> The historical discovery below — that the rule telescopes two
+> distinct developments — stands and was the basis of the follow-up.
+> The decision to RETAIN the one-step executable proxy was rejected:
+> CAPR's modelling policy requires independently reconstructible
+> chronological stages to be represented as separate executable sound
+> changes. SC024 now implements only the early NWGmc *ē₁ > *ā
+> lowering; the later fronting is SC101 and the nasal branch SC025
+> consumes the intermediate *ā. This memo is preserved unedited below
+> as part of the audit trail.
+
+Status: superseded in implementation (see header; originally: adjudicated)
 Scope: SC024 `PNWGmcLongELowering` only. SC025 is discussed where the
 historical phenomenon requires it, but is not adjudicated here.
 Verdict: **REFORMULATE the historical characterization (the rule

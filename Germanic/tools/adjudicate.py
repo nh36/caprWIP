@@ -205,20 +205,35 @@ def sc_num(sc_id):
 
 def next_sc():
     """Next SC to adjudicate: first active, unadjudicated SC after the
-    highest adjudicated SC in the canonical registry."""
+    contiguous run of adjudicated SCs in the canonical registry.
+
+    Out-of-band identities adjudicated ahead of sequence (e.g. SC101,
+    created and settled by the SC024 e1-complex split) must not raise
+    the threshold past the pending mainline SCs: the threshold is the
+    highest end of a contiguous adjudicated run that still has pending
+    SCs above it, not the global maximum."""
     rows = read_tsv(SC_REGISTRY)
-    threshold = max(
-        (sc_num(r["sc_id"]) for r in rows if r["adjudication_status"] == "adjudicated"),
-        default=0,
+    adjudicated = sorted(
+        sc_num(r["sc_id"]) for r in rows if r["adjudication_status"] == "adjudicated"
     )
-    candidates = sorted(
+    # Ends of each contiguous adjudicated run, e.g. {16,17,23,24,25,101}
+    # -> [17, 25, 101].
+    run_ends = [
+        n
+        for i, n in enumerate(adjudicated)
+        if i + 1 == len(adjudicated) or adjudicated[i + 1] != n + 1
+    ]
+    pending = sorted(
         (sc_num(r["sc_id"]), r["sc_id"])
         for r in rows
         if r["lifecycle_status"] == "active"
         and r["adjudication_status"] != "adjudicated"
-        and sc_num(r["sc_id"]) > threshold
     )
-    return candidates[0][1] if candidates else None
+    for threshold in reversed(run_ends or [0]):
+        candidates = [(n, sc) for n, sc in pending if n > threshold]
+        if candidates:
+            return candidates[0][1]
+    return pending[0][1] if pending and not run_ends else None
 
 
 def container_command(inner):

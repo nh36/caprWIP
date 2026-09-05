@@ -88,3 +88,19 @@ bash Germanic/tools/build_cascade_interaction_matrix_docker.sh
 
 `test equivalent` is a deterministic decision procedure, so the matrix is fully
 regenerable (unlike compiled `.bin` bytes).
+
+## Update: SC024/SC025/SC101 e1-complex split
+
+After the SC024 re-adjudication (sc024-sc025-sc101-e1-complex-adjudication.md),
+the one-step `*ē > *ǣ` proxy was split: `PNWGmcLongELowering` is now the
+unconditioned stressed `{*ḗ} -> {*ā}` lowering at position 12, and the former
+`PNWGmcLongENasalRounding` was reformulated as `EAFLongANasalRounding`
+(`{*ā} -> {*ō} / _ N`, position 26) alongside the new `EAFLongAFronting`
+(position 27), both outside this PNWGmc x PWGmc matrix's row set. In the
+regenerated matrix the 12 `PNWGmcLongENasalRounding` rows are replaced by 12
+`PNWGmcLongELowering` rows, all **commute** (the unconditioned vowel-quality
+rule interacts with none of the PWGmc structural rules); the former
+`PNWGmcLongENasalRounding x PWGmcIjContraction` non-commute pair disappears.
+Totals: 120 pairs, 94 commute / 26 non-commute. Position numbers quoted in the
+swap-pair tables above are the pre-reorder positions current when that analysis
+was written and are preserved as an archival record.

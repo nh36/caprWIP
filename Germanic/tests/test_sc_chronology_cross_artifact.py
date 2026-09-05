@@ -112,8 +112,9 @@ class CrossArtifactTests(unittest.TestCase):
                          "EAFAiMonophthongization")
         self.assertEqual(self.staging["SC004"]["fst_identifier"].strip(),
                          "EAFAiMonophthongization")
-        # Position 27 after SC021's retirement removed its former cascade slot.
-        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 27)
+        # Position 28 after the SC024 e1-complex split inserted the early
+        # NWGmc lowering at position 12 (SC021's retirement had left it at 27).
+        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 28)
 
     def test_historical_stage_agrees_audit_inventory_staging(self):
         """Historical stage (canonical long form) must agree across audit,

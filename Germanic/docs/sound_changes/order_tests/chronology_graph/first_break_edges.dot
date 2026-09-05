@@ -14,8 +14,8 @@ digraph first_break_chronology {
   "SC021" [label="SC021\nRetired NWGmc Unstressed O Raising", fillcolor="#71809622", color="#718096"];
   "SC022" [label="SC022\nCommon Germanic Mn Dissimilation"];
   "SC023" [label="SC023\nProto-Germanic Word-Final N Loss"];
-  "SC024" [label="SC024\nLong E Lowering with Anglo-Frisian Fronting"];
-  "SC025" [label="SC025\nProto-Northwest Germanic Long E Nasal Rounding"];
+  "SC024" [label="SC024\nNWGmc Long E1 Lowering"];
+  "SC025" [label="SC025\nEAF Long A Nasal Rounding"];
   "SC026" [label="SC026\nNorth Sea Germanic nasal-spirant lengthening"];
   "SC027" [label="SC027\nNorth Sea Germanic nasal-spirant loss"];
   "SC028" [label="SC028\nProto-Northwest Germanic Preconsonantal X Loss"];
@@ -74,6 +74,7 @@ digraph first_break_chronology {
   "SC085" [label="SC085\nOE H Loss"];
   "SC086" [label="SC086\nOE Contraction"];
   "SC087" [label="SC087\nOE R Metathesis"];
+  "SC101" [label="SC101\nEAF Long A Fronting"];
   "PWGmcChanges" [shape=ellipse, fillcolor="#faf089"];
   "RUNNER_LIMIT" [shape=ellipse, fillcolor="#faf089"];
   "SC014" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
@@ -95,9 +96,11 @@ digraph first_break_chronology {
   "SC023" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC023" -> "SC047" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC024" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC024" -> "SC056" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC025" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC025" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
+  "SC024" -> "SC025" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC024" -> "SC101" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC025" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC101" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC101" -> "SC056" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC026" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC026" -> "SC027" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC027" -> "SC026" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];

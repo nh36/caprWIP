@@ -109,10 +109,11 @@ class SC023AdjudicationTests(unittest.TestCase):
         )
 
     def test_rule_position_is_23(self):
-        # Executable cascade slot is 21 since the SC021 retirement removed a
-        # define; the stable identifier ordering (SC023) is asserted against
-        # the inventory below.
-        self.assertEqual(self.positions.get("PNWGmcNStemNLoss"), 21)
+        # Executable cascade slot is 22 since the SC024 e1-complex split
+        # inserted PNWGmcLongELowering at position 12 (it was 21 after the
+        # SC021 retirement removed a define); the stable identifier ordering
+        # (SC023) is asserted against the inventory below.
+        self.assertEqual(self.positions.get("PNWGmcNStemNLoss"), 22)
         inventory = {
             r["change_id"]: r for r in _tsv_rows(INVENTORY)
         }

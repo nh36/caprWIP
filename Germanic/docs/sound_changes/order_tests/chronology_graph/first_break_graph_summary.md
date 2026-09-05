@@ -11,17 +11,17 @@ chronology constraints.
 
 ## Totals
 
-- total node count: `70`
-- total edge count: `138`
+- total node count: `71`
+- total edge count: `140`
 
 ### Node counts by card_type
 
 | card_type | count |
 | --- | ---: |
-| `broad_far` | 8 |
-| `mixed` | 14 |
-| `negative_boundary` | 10 |
-| `one_sided_chronology` | 5 |
+| `broad_far` | 7 |
+| `mixed` | 15 |
+| `negative_boundary` | 9 |
+| `one_sided_chronology` | 7 |
 | `reciprocal_or_near_reciprocal` | 31 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
@@ -32,10 +32,10 @@ chronology constraints.
 | --- | ---: |
 | `broad_far_chronology` | 17 |
 | `near_reciprocal_chronology` | 2 |
-| `no_break_search_boundary` | 23 |
-| `one_sided_chronology` | 32 |
+| `no_break_search_boundary` | 22 |
+| `one_sided_chronology` | 36 |
 | `reciprocal_chronology` | 40 |
-| `runner_limited_boundary` | 21 |
+| `runner_limited_boundary` | 20 |
 | `technical_computational` | 3 |
 
 ## Chronology edges
@@ -49,7 +49,11 @@ chronology constraints.
 1. `SC020 -> SC019` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rast`
 1. `SC020 -> SC040` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `beaver; bough; cud; field; flood`; forms: PGmc `*bébruz` yields expected OE `befer`, but the later-shifted variant yields `befro`; PGmc `*kwéðuz` likewise yields `cwedo` instead of expected `cwedu`; PGmc `*félθuz` yields `feldo` instead of `feld`
 1. `SC023 -> SC047` (broad_far_chronology; independently_demonstrated; witness role: counterfeeding_negative) — lexemes: `do`; forms: PGmc `*dōną` yields expected OE `dōn`, but the later-shifted variant yields `+?` (no output)
-1. `SC024 -> SC056` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sheep; year`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but the later-shifted variant yields `sċīep`; PGmc `*jḗrą` likewise yields `ġīer` instead of expected `ġēar`
+1. `SC024 -> SC025` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `month; spoon`; forms: PGmc `*mḗnōθz` yields expected OE `mōnaþ`, but with SC024 displaced after SC025/SC101 the cascade yields `mānaþ`; `*spḗnuz` likewise yields `spān` instead of `spōn`
+1. `SC024 -> SC101` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sheep; year; sleep`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but with SC024 displaced after SC025/SC101 the cascade yields `sċāp`; `*jḗrą` yields `ġār` instead of `ġēar`; `*slḗpaną` yields `slāpan` instead of `slǣpan`
+1. `SC025 -> SC004` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stone; home`; forms: PGmc `*stáinaz` yields expected OE `stān`, but with SC025 displaced after SC004 the cascade yields `stōn`; `*xáimaz` yields `hōm` instead of `hām`
+1. `SC101 -> SC004` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `loath; rope; token; soul; ghost`; forms: PGmc `*láiθaz` yields expected OE `lāþ`, but with SC101 displaced after SC004 the cascade yields `lǣþ`; likewise `rǣp`, `tǣcn`, `sǣwol`, `ġēast` for `rāp`, `tācn`, `sāwol`, `gāst`
+1. `SC101 -> SC056` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sheep; year`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but with SC101 displaced after SC056 the cascade yields `sċǣp`; `*jḗrą` likewise yields `ġǣr` instead of `ġēar`
 1. `SC026 -> SC027` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fist; goose; youth`; forms: PGmc `*fúnxstiz` yields expected OE `fȳst`, but the later-shifted variant yields `fyst`; PGmc `*gánsz` likewise yields `ġeas` instead of expected `gōs`; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`
 1. `SC027 -> SC026` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fist; goose; youth`; forms: PGmc `*fúnxstiz` yields expected OE `fȳst`, but the earlier-shifted variant yields `fyst`; PGmc `*gánsz` likewise yields `ġeas` instead of expected `gōs`; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`
 1. `SC029 -> SC030` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `hay; strew`; forms: PGmc `*xáwwją` yields expected OE `hīeġ`, but the later-shifted variant yields `hauġ`; PGmc `*stráwjaną` likewise yields `strauian` instead of expected `strīeġan`
@@ -144,8 +148,6 @@ chronology constraints.
 1. `SC022 -> SC087` (no_break_search_boundary)
 1. `SC023 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC024 -> PWGmcChanges` (runner_limited_boundary)
-1. `SC025 -> PWGmcChanges` (runner_limited_boundary)
-1. `SC025 -> SC087` (no_break_search_boundary)
 1. `SC026 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC027 -> SC087` (no_break_search_boundary)
 1. `SC028 -> PWGmcChanges` (runner_limited_boundary)

@@ -217,8 +217,15 @@ class ProductionCascadeTests(unittest.TestCase):
         self.assertEqual(m.group(1), "PNWGmcUnstressedAiMonophthongization")
 
     def test_sc004_general_runs_after_sc028_in_both_branches(self):
+        # Since the SC024 e1-complex split, EAFLongANasalRounding (SC025) and
+        # EAFLongAFronting (SC101) sit between SC028 and SC004: both must
+        # precede SC004 so that *ā < *ai arises after fronting/rounding
+        # (Campbell §132; Ringe & Taylor pp. 169-170).
         pat = re.compile(
-            r"\.o\. PNWGmcPreconsonantalXLoss\b.*\n(?:\s*#.*\n)*\s*\.o\. EAFAiMonophthongization\b")
+            r"\.o\. PNWGmcPreconsonantalXLoss\b.*\n(?:\s*#.*\n)*"
+            r"\s*\.o\. EAFLongANasalRounding\b.*\n(?:\s*#.*\n)*"
+            r"\s*\.o\. EAFLongAFronting\b.*\n(?:\s*#.*\n)*"
+            r"\s*\.o\. EAFAiMonophthongization\b")
         self.assertGreaterEqual(len(pat.findall(self.src)), 2)
 
     def test_alias_is_not_composed(self):

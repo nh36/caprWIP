@@ -63,7 +63,11 @@ define SPWGmcDentalHardening SEAFLThVoicing
 # Section 4: EnglishProtoToOE rules (germanic.txt lines 3093-3266),
 #            applied in cascade order, one snapshot per .o.
 # ============================================================================
-define SPNWGmcILowering SPWGmcDentalHardening
+# SC024 Change A: early NWGmc *ē₁ > *ā — mirrors main pipeline (head of
+# the NWGmc block, immediately after EarlyEnglishLineChanges).
+define SPNWGmcLongELowering SPWGmcDentalHardening
+    .o. PNWGmcLongELowering;
+define SPNWGmcILowering SPNWGmcLongELowering
     .o. PNWGmcILowering;
 # SC016 OEWsPalatalGlide moved to the orthography block (sc016-017
 # adjudication): u-lowering fires directly on *júką → *jóką.
@@ -91,17 +95,19 @@ define SPNWGmcMnDissimilation SRhotacism
     .o. PNWGmcMnDissimilation;
 define SPNWGmcNStemNLoss SPNWGmcMnDissimilation
     .o. PNWGmcNStemNLoss;
-define SPNWGmcLongELowering SPNWGmcNStemNLoss
-    .o. PNWGmcLongELowering;
-define SPNWGmcLongENasalRounding SPNWGmcLongELowering
-    .o. PNWGmcLongENasalRounding;
-define SEAFNasalSpirantLengthening SPNWGmcLongENasalRounding
+define SEAFNasalSpirantLengthening SPNWGmcNStemNLoss
     .o. EAFNasalSpirantLengthening;
 define SEAFNasalSpirantLoss SEAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss;
 define SPNWGmcPreconsonantalXLoss SEAFNasalSpirantLoss
     .o. PNWGmcPreconsonantalXLoss;
-define SEAFAiMonophthongization SPNWGmcPreconsonantalXLoss
+# SC025 + SC101 northern-WGmc low-vowel split consuming *ā < *ē₁:
+# mirrors main pipeline; both precede SC004 (Campbell §132).
+define SEAFLongANasalRounding SPNWGmcPreconsonantalXLoss
+    .o. EAFLongANasalRounding;
+define SEAFLongAFronting SEAFLongANasalRounding
+    .o. EAFLongAFronting;
+define SEAFAiMonophthongization SEAFLongAFronting
     .o. EAFAiMonophthongization;
 define SOEAwjGlideFormation SEAFAiMonophthongization
     .o. OEAwjGlideFormation;
@@ -319,6 +325,11 @@ regex SPWGmcDentalHardening;
 save stack old_english_sandbox_after_pwgmc_dental_hardening.bin
 
 # Section 4: EnglishProtoToOE rules
+# SC024 Change A snapshot: early NWGmc *ē₁ > *ā (head of NWGmc block).
+clear stack
+regex SPNWGmcLongELowering;
+save stack old_english_sandbox_after_pnwgmc_long_e_lowering.bin
+
 clear stack
 regex SPNWGmcILowering;
 save stack old_english_sandbox_after_pnwgmc_i_lowering.bin
@@ -360,14 +371,6 @@ regex SPNWGmcNStemNLoss;
 save stack old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin
 
 clear stack
-regex SPNWGmcLongELowering;
-save stack old_english_sandbox_after_pnwgmc_long_e_lowering.bin
-
-clear stack
-regex SPNWGmcLongENasalRounding;
-save stack old_english_sandbox_after_pnwgmc_long_e_nasal_rounding.bin
-
-clear stack
 regex SEAFNasalSpirantLengthening;
 save stack old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin
 
@@ -378,6 +381,15 @@ save stack old_english_sandbox_after_eaf_nasal_spirant_loss.bin
 clear stack
 regex SPNWGmcPreconsonantalXLoss;
 save stack old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin
+
+# SC025 + SC101 northern-WGmc low-vowel split snapshots (both pre-SC004).
+clear stack
+regex SEAFLongANasalRounding;
+save stack old_english_sandbox_after_eaf_long_a_nasal_rounding.bin
+
+clear stack
+regex SEAFLongAFronting;
+save stack old_english_sandbox_after_eaf_long_a_fronting.bin
 
 clear stack
 regex SEAFAiMonophthongization;

@@ -63,7 +63,8 @@ FORMER: dict[str, tuple[str, str, str, str]] = {
 # recorded at final canonicalization). Presence here sets migration_status=completed.
 COMPLETED: dict[str, str] = {
     "SC028": "2f74516b",
-    "SC025": "0b4ffa59",
+    # SC025 first migration (-> PNWGmcLongENasalRounding) completed in 0b4ffa59;
+    # superseded by the e1-complex re-adjudication second migration (-> EAFLongANasalRounding), pending below.
     "SC024": "851f7531",
     "SC023": "aeea523b",
     "SC022": "10e55b8c",
@@ -131,11 +132,20 @@ RENAMES["SC023"] = {
 
 RENAMES["SC024"] = {
     "canonical_foma_identifier": "PNWGmcLongELowering",
-    "canonical_display_name": "Long E Lowering with Anglo-Frisian Fronting",
-    "canonical_hist_stage": "eaf",
-    "canonical_hist_scope": "anglo_frisian",
+    "canonical_display_name": "NWGmc Long E1 Lowering",
+    "canonical_hist_stage": "pnwgmc",
+    "canonical_hist_scope": "pan_pnwgmc",
     "migration_status": "pending",
-    "notes": "Foma identifier remains stable; R/T 2014 pp.11-14, 146-152 correct the scope: the rule telescopes pan-NWGmc *e1 > *a plus Anglo-Frisian fronting of non-nasalized *a (OS/OHG/ON keep a), so the fronted outcome is Anglo-Frisian, not pan-NWGmc (sc024-adjudication.md); one-step *e > *ae proxy keeps *e1 disjoint from a < *ai.",
+    "notes": "Foma identifier remains stable. Re-adjudicated by the e1-complex split (sc024-sc025-sc101-e1-complex-adjudication.md): SC024 now implements only the early pan-NWGmc stressed *e1 > *a lowering ({*e-acute} -> {*a}, unconditioned, position 12); the later Anglo-Frisian fronting formerly telescoped into this rule is the new SC101 EAFLongAFronting.",
+}
+
+RENAMES["SC025"] = {
+    "canonical_foma_identifier": "EAFLongANasalRounding",
+    "canonical_display_name": "EAF Long A Nasal Rounding",
+    "canonical_hist_stage": "eaf",
+    "canonical_hist_scope": "north_sea_germanic",
+    "migration_status": "pending",
+    "notes": "Second migration: intermediate identifier PNWGmcLongENasalRounding (completed 0b4ffa59) superseded by the e1-complex re-adjudication -- the rule now consumes the *a produced by SC024 ({*a} -> {*o} / _ nasal) at the EAF stage, North Sea Germanic scope, position 26 (before SC004).",
 }
 
 # --- 3.2 Early Anglo-Frisian corridor rules ---

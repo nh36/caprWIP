@@ -1,5 +1,16 @@
 # SC018-SC025 book dossier: editorial holding zone after SC021/SC022 adjudication
 
+> **Partially superseded (e1-complex re-adjudication,
+> `audits/sc024-sc025-sc101-e1-complex-adjudication.md`).** The SC024 and
+> SC025 characterizations below predate the split of the old one-step
+> SC024 telescope. SC024 is now the early pan-NWGmc stressed *e1 > *a
+> lowering at executable position 12 (its SC056 sheep/year edge moved to
+> the new SC101 `EAFLongAFronting`); SC025 is now `EAFLongANasalRounding`
+> (*a > *o / _N, EAF stage, North Sea Germanic scope, position 26, fed by
+> SC024 and preceding SC004); both now have positive displacement-verified
+> chronology rather than boundary-limited results. The editorial options
+> below are retained as an archival record of the pre-split state.
+
 ## Role in the book
 
 The former `SC018-SC025` row remains useful only as an editorial and

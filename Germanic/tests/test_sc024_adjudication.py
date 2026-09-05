@@ -1,34 +1,33 @@
 #!/usr/bin/env python3
-"""Focused regression for the SC024 historical adjudication (2026).
+"""Regression for the *ē₁-complex re-adjudication (SC024/SC025/SC101, 2026).
 
-Adjudication memo: Germanic/docs/sound_changes/audits/sc024-adjudication.md
+Governing memo:
+Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md
+(supersedes in implementation sc024-adjudication.md).
 
-Protected invariants:
+Protected scientific conclusions:
 
-  * The executable rule `PNWGmcLongELowering` is unchanged (stable
-    identifier; `{*ē}/{*ḗ} -> {*ǣ}` before a non-nasal consonant) and
-    remains at executable cascade slot 22.
-  * Its live firing population is exactly 18 lexemes: 13 in-domain
-    stressed root *ē₁ witnesses plus 5 unstressed selected-input proxies
-    (father, mother, sister, have, live). Any drift forces
-    re-adjudication.
-  * The nasal branch is complementary, not overlapping: `month`
-    (`*mḗnōθz`) and `spoon` (`*spḗnuz`) must pass SC024 untouched and be
-    changed by SC025 `PNWGmcLongENasalRounding` instead (> ō: mōnaþ,
-    spōn).
-  * `ā < *ai` is never fronted: `stone` (`*stáinaz`) and `home`
-    (`*xáimaz`) pass SC024 untouched and surface with ā (stān, hām).
-    The Campbell §132 / R&T pp. 169–170 ordering (fronting before
-    completion of *ai > ā) is encoded architecturally by symbol
-    separation, and this disjointness is what these controls pin.
-  * The five unstressed proxy firings surface with SHORT vowels
-    (fæder, mōder, swester, hæfeþ, lifeþ) — their ǣ is an internal
-    implementation pathway, not a claim that unstressed *ē took the
-    stressed detour.
-  * Canonical historical metadata says early Anglo-Frisian scope for the
-    fronted outcome (`eaf` / `anglo_frisian`), not pan-Northwest-Germanic,
-    even though the executable identifier keeps the `PNWGmc` prefix
-    (stage comes from metadata, not the name prefix).
+  * Change A exists independently: SC024 `PNWGmcLongELowering` is
+    `{*ḗ} -> {*ā}` — stressed tier only, unconditioned (nasal forms
+    included), producing the reconstructed intermediate *ā (R/T 2014
+    pp. 11–13, *mānōþ-, *spānuz) — at executable position 12.
+  * Change B exists independently and consumes the correct input:
+    SC101 `EAFLongAFronting` is `{*ā} -> {*ǣ}` before non-nasal C, at
+    position 27; SC025 `EAFLongANasalRounding` is `{*ā} -> {*ō}` before
+    nasal, at position 26. Both are fed by SC024.
+  * *ā < *ai arises too late to be fronted or rounded: SC004 stands at
+    position 28, after both (Campbell §132; R/T pp. 169–170) — stone,
+    home, loath, rope, token, soul, ghost keep back ā.
+  * The old one-step `*ē/*ḗ -> *ǣ` telescoping must not silently return.
+  * The five unstressed selected-input tokens (father, mother, sister,
+    have, live) are NOT SC024 witnesses: their plain unstressed {*ē}
+    passes the stressed rule untouched and takes the §6.8.3
+    unstressed-shortening path, still surfacing short (fæder etc.).
+  * SC101 < SC056: WS palatal diphthongization operated on the
+    already-fronted vowel (sheep sċēap, year ġēar).
+  * Canonical registry metadata matches each distinct historical change
+    (SC024 pnwgmc/pan_pnwgmc; SC025 and SC101 eaf/north_sea_germanic;
+    all confidence B) and each has its own reader-facing write-up.
 
 Run: cd Germanic/tests && python3 -m unittest test_sc024_adjudication
 """
@@ -49,32 +48,34 @@ INVENTORY = SC_DIR / "sound_change_inventory.tsv"
 STAGING_MAP = SC_DIR / "sound_change_historical_staging_map.tsv"
 HISTORICAL_AUDIT = SC_DIR / "cascade_baseline" / "historical_audit_table.tsv"
 RENAME_MANIFEST = SC_DIR / "cascade_baseline" / "rename_migration_manifest.tsv"
-CARD = SC_DIR / "order_tests" / "chronology_cards" / "SC024-nwgmc-long-e-lowering.md"
+CARDS = SC_DIR / "order_tests" / "chronology_cards"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 EDGES = SC_DIR / "registry" / "chronology_edges.tsv"
-MEMO = SC_DIR / "audits" / "sc024-adjudication.md"
+REGISTRY = SC_DIR / "registry" / "sc_registry.tsv"
+MEMO = SC_DIR / "audits" / "sc024-sc025-sc101-e1-complex-adjudication.md"
+OLD_MEMO = SC_DIR / "audits" / "sc024-adjudication.md"
+READER = SC_DIR / "reader_facing"
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
-# The adjudicated firing population (sc024-adjudication.md §3).
-IN_DOMAIN_CONCEPTS = {
+# Change A census: 13 stressed oral roots + the two nasal-branch lexemes,
+# which historically DID undergo *ē₁ > *ā (R/T p. 11: *mānōþ-, *spānuz).
+ORAL_ROOT_CONCEPTS = {
     "adder", "bier", "deed", "eel", "hair", "let", "meal", "needle",
     "read", "sheep", "sleep", "weapon", "year",
 }
-UNSTRESSED_PROXY_CONCEPTS = {"father", "mother", "sister", "have", "live"}
-EXPECTED_FIRING_CONCEPTS = IN_DOMAIN_CONCEPTS | UNSTRESSED_PROXY_CONCEPTS
-
-# Nasal-branch negative controls: same vowel, nasal environment -> SC025.
 NASAL_BRANCH_CONCEPTS = {"month", "spoon"}
+SC024_FIRING_CONCEPTS = ORAL_ROOT_CONCEPTS | NASAL_BRANCH_CONCEPTS
 
-# *ai-branch negative controls: ā < *ai must never be fronted.
-AI_BRANCH_CONTROLS = {"stone": "stān", "home": "hām"}
-
-# Unstressed proxies surface with short vowels (no stressed detour).
-PROXY_ATTESTED = {
+# Unstressed selected-input tokens: plain {*ē}, outside the stressed law.
+UNSTRESSED_CONCEPTS = {"father", "mother", "sister", "have", "live"}
+UNSTRESSED_ATTESTED = {
     "father": "fæder", "mother": "mōder", "sister": "swester",
     "have": "hæfeþ", "live": "lifeþ",
 }
+
+# ā < *ai negative controls (never fronted/rounded).
+AI_BRANCH_CONTROLS = {"stone": "stān", "home": "hām"}
 
 
 def load_trace_tool():
@@ -91,7 +92,7 @@ def _tsv_rows(path: Path):
     return list(csv.DictReader(lines, delimiter="\t"))
 
 
-class SC024AdjudicationTests(unittest.TestCase):
+class E1ComplexAdjudicationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.text = FST.read_text(encoding="utf-8")
@@ -113,196 +114,273 @@ class SC024AdjudicationTests(unittest.TestCase):
             BIN_DIR, f"old_english_sandbox_after_{name}.bin", form
         )
 
-    def before_after(self, form):
-        before = self.stage("pnwgmc_n_stem_n_loss", form)
+    def across_sc024(self, form):
+        before = self.stage("pwgmc_dental_hardening", form)
         after = self.stage("pnwgmc_long_e_lowering", form)
         return before, after
 
+    def across_rounding(self, form):
+        before = self.stage("pnwgmc_preconsonantal_x_loss", form)
+        after = self.stage("eaf_long_a_nasal_rounding", form)
+        return before, after
+
+    def across_fronting(self, form):
+        before = self.stage("eaf_long_a_nasal_rounding", form)
+        after = self.stage("eaf_long_a_fronting", form)
+        return before, after
+
     # ------------------------------------------------------------------
-    # Executable rule stability
+    # Executable rules: two changes, correct inputs and outputs
     # ------------------------------------------------------------------
 
-    def test_rule_definition_is_unchanged(self):
+    def test_change_a_is_unconditioned_stressed_lowering_to_a(self):
         match = re.search(
-            r"define\s+PNWGmcLongELowering\s*\[\s*"
-            r"\{\*ē\}\s*->\s*\{\*ǣ\}\s*\|\|\s*_\s*"
-            r"\[EnglishStarConsonant\s*-\s*EnglishStarNasal\]\s*,\s*"
-            r"\{\*ḗ\}\s*->\s*\{\*ǣ\}\s*\|\|\s*_\s*"
-            r"\[EnglishStarConsonant\s*-\s*EnglishStarNasal\]\s*\];",
+            r"define\s+PNWGmcLongELowering\s*\[\s*\{\*ḗ\}\s*->\s*\{\*ā\}\s*\];",
             self.uncommented,
         )
         self.assertIsNotNone(
             match,
-            "PNWGmcLongELowering must stay the byte-stable one-step "
-            "{*ē}/{*ḗ} -> {*ǣ} non-nasal proxy (sc024-adjudication.md §2)",
+            "SC024 must be the unconditioned stressed lowering "
+            "{*ḗ} -> {*ā} (Change A of the e1 complex)",
         )
 
-    def test_rule_position_is_22_and_inventory_order_24(self):
-        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 22)
-        inventory = {r["change_id"]: r for r in _tsv_rows(INVENTORY)}
-        self.assertEqual(inventory["SC024"]["current_order"], "24")
+    def test_change_b_rules_consume_long_a(self):
+        self.assertIsNotNone(re.search(
+            r"define\s+EAFLongANasalRounding\s*\[\s*\{\*ā\}\s*->\s*\{\*ō\}"
+            r"\s*\|\|\s*_\s*EnglishStarNasal\s*\];",
+            self.uncommented,
+        ), "SC025 must round the historical *ā before nasals")
+        self.assertIsNotNone(re.search(
+            r"define\s+EAFLongAFronting\s*\[\s*\{\*ā\}\s*->\s*\{\*ǣ\}"
+            r"\s*\|\|\s*_\s*\[EnglishStarConsonant\s*-\s*EnglishStarNasal\]\s*\];",
+            self.uncommented,
+        ), "SC101 must front the historical non-nasalized *ā")
+
+    def test_one_step_telescoping_cannot_silently_return(self):
+        self.assertIsNone(
+            re.search(r"\{\*ē\}\s*->\s*\{\*ǣ\}|\{\*ḗ\}\s*->\s*\{\*ǣ\}",
+                      self.uncommented),
+            "the retired one-step *ē/*ḗ -> *ǣ telescoping has returned",
+        )
+        self.assertIsNone(
+            re.search(r"\{\*ē\}\s*->\s*\{\*ō\}|\{\*ḗ\}\s*->\s*\{\*ō\}",
+                      self.uncommented),
+            "the retired direct *ē -> *ō nasal bypass has returned",
+        )
+
+    def test_cascade_positions_encode_the_chronology(self):
+        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 12)
+        self.assertEqual(self.positions.get("EAFLongANasalRounding"), 26)
+        self.assertEqual(self.positions.get("EAFLongAFronting"), 27)
+        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 28)
+        # SC101 < SC056 (sheep/year: diphthongization of already-fronted ǣ)
+        self.assertLess(self.positions["EAFLongAFronting"],
+                        self.positions["OEWsPalatalDiphthongization"])
 
     # ------------------------------------------------------------------
-    # Firing population pinned (live stage bins)
+    # Change A firing census (live stage bins)
     # ------------------------------------------------------------------
 
-    def test_firing_population_is_exactly_the_18_adjudicated_lexemes(self):
+    def test_change_a_fires_on_exactly_the_15_stressed_e1_lexemes(self):
         fired = set()
-        # A live firing requires a literal long-e symbol; no earlier
-        # cascade rule creates {*ē}/{*ḗ}, so protos containing one are an
-        # exhaustive candidate set (the full --evidence census over all
-        # 383 rows finds the same 18).
         candidates = {
             concept: row for concept, row in self.baseline.items()
             if ("ē" in row["proto"] or "ḗ" in row["proto"])
         }
         for concept, row in sorted(candidates.items()):
-            before, after = self.before_after(row["proto"].lstrip("*"))
+            before, after = self.across_sc024(row["proto"].lstrip("*"))
             if before != after:
                 fired.add(concept)
         self.assertEqual(
             fired,
-            EXPECTED_FIRING_CONCEPTS,
-            "SC024 firing population drifted; any change forces "
-            "re-adjudication (see sc024-adjudication.md §3)",
+            SC024_FIRING_CONCEPTS,
+            "SC024 (Change A) census drifted; expected the 13 stressed "
+            "oral roots plus month and spoon (which pass through *ā)",
         )
 
-    def test_sheep_and_year_are_live_in_domain_witnesses(self):
+    def test_change_a_produces_the_reconstructed_intermediate_a(self):
         self.assertEqual(
-            self.before_after("skḗpą"), (["*s*k*ḗ*p*ą"], ["*s*k*ǣ*p*ą"])
+            self.across_sc024("skḗpą"), (["*s*k*ḗ*p*ą"], ["*s*k*ā*p*ą"])
         )
         self.assertEqual(
-            self.before_after("jḗrą"), (["*j*ḗ*r*ą"], ["*j*ǣ*r*ą"])
+            self.across_sc024("mḗnōθz"), (["*m*ḗ*n*ō*θ*z"], ["*m*ā*n*ō*θ*z"])
+        )
+        self.assertEqual(
+            self.across_sc024("spḗnuz"), (["*s*p*ḗ*n*u*z"], ["*s*p*ā*n*u*z"])
+        )
+
+    def test_unstressed_tokens_do_not_fire_and_surface_short(self):
+        for concept in sorted(UNSTRESSED_CONCEPTS):
+            row = self.baseline[concept]
+            before, after = self.across_sc024(row["proto"].lstrip("*"))
+            self.assertEqual(
+                before, after,
+                f"{concept} carries unstressed *ē and must not undergo "
+                "the stressed lowering (R/T p. 13 n. 3)",
+            )
+            self.assertEqual(
+                row["outputs"], UNSTRESSED_ATTESTED[concept],
+                f"{concept} must still surface with its short unstressed "
+                "vowel via the §6.8.3 shortening path",
+            )
+
+    # ------------------------------------------------------------------
+    # Change B: rounding and fronting consume the *ā
+    # ------------------------------------------------------------------
+
+    def test_nasal_branch_rounds_the_intermediate_a(self):
+        for concept in sorted(NASAL_BRANCH_CONCEPTS):
+            row = self.baseline[concept]
+            form = row["proto"].lstrip("*")
+            before, after = self.across_rounding(form)
+            self.assertNotEqual(
+                before, after,
+                f"{concept} must be rounded by SC025 EAFLongANasalRounding",
+            )
+            self.assertIn("*ō", after[0])
+        self.assertEqual(self.baseline["month"]["outputs"], "mōnaþ")
+        self.assertEqual(self.baseline["spoon"]["outputs"], "spōn")
+
+    def test_oral_branch_fronts_the_intermediate_a(self):
+        self.assertEqual(
+            self.across_fronting("skāpą"), (["*s*k*ā*p*ą"], ["*s*k*ǣ*p*ą"])
+        )
+        self.assertEqual(
+            self.across_fronting("jārą"), (["*j*ā*r*ą"], ["*j*ǣ*r*ą"])
         )
         self.assertEqual(self.baseline["sheep"]["outputs"], "sċēap")
         self.assertEqual(self.baseline["year"]["outputs"], "ġēar")
 
-    # ------------------------------------------------------------------
-    # Nasal branch: complementary conditioning, handled by SC025
-    # ------------------------------------------------------------------
-
-    def test_nasal_environment_is_untouched_by_sc024_and_taken_by_sc025(self):
-        for concept in sorted(NASAL_BRANCH_CONCEPTS):
-            row = self.baseline[concept]
-            form = row["proto"].lstrip("*")
-            before, after = self.before_after(form)
-            self.assertEqual(
-                before, after,
-                f"{concept} ({row['proto']}) is nasal-branch (SC025) and "
-                "must pass SC024 untouched",
-            )
-            rounded = self.stage("pnwgmc_long_e_nasal_rounding", form)
-            self.assertNotEqual(
-                after, rounded,
-                f"{concept} must be changed by SC025 PNWGmcLongENasalRounding",
-            )
-            self.assertIn("*ō", rounded[0])
-        self.assertEqual(self.baseline["month"]["outputs"], "mōnaþ")
-        self.assertEqual(self.baseline["spoon"]["outputs"], "spōn")
-
-    # ------------------------------------------------------------------
-    # ā < *ai is never fronted (architectural encoding of Campbell §132)
-    # ------------------------------------------------------------------
-
-    def test_ai_monophthongization_outputs_keep_a(self):
+    def test_a_from_ai_arises_too_late_to_front_or_round(self):
         for concept, attested in sorted(AI_BRANCH_CONTROLS.items()):
             row = self.baseline[concept]
             form = row["proto"].lstrip("*")
-            before, after = self.before_after(form)
-            self.assertEqual(
-                before, after,
-                f"{concept} ({row['proto']}) has *ai, not *ē₁; SC024 must "
-                "not touch it",
-            )
-            self.assertEqual(
-                row["outputs"], attested,
-                f"{concept} must surface with unfronted ā ({attested})",
-            )
+            # untouched by A (no *ē₁), by rounding and by fronting
+            # (its ā does not exist yet at positions 26–27)
+            for probe in (self.across_sc024, self.across_rounding,
+                          self.across_fronting):
+                before, after = probe(form)
+                self.assertEqual(
+                    before, after,
+                    f"{concept} ({row['proto']}) has *ai, whose ā arises "
+                    "only at SC004; it must pass positions 12/26/27 untouched",
+                )
+            self.assertEqual(row["outputs"], attested)
 
     # ------------------------------------------------------------------
-    # Unstressed proxies: implementation pathway, short attested vowels
+    # Canonical registry metadata
     # ------------------------------------------------------------------
 
-    def test_unstressed_proxy_firings_surface_with_short_vowels(self):
-        for concept, attested in sorted(PROXY_ATTESTED.items()):
-            row = self.baseline[concept]
-            before, after = self.before_after(row["proto"].lstrip("*"))
-            self.assertNotEqual(
-                before, after,
-                f"{concept} is a documented unstressed proxy firing",
-            )
-            self.assertEqual(
-                row["outputs"], attested,
-                f"{concept} must surface with a short unstressed vowel "
-                f"({attested}); the SC024 ǣ is an internal pathway only",
-            )
+    def test_registry_metadata_matches_the_two_change_architecture(self):
+        registry = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
+        sc024, sc025, sc101 = registry["SC024"], registry["SC025"], registry["SC101"]
+        self.assertEqual(sc024["fst_identifier"], "PNWGmcLongELowering")
+        self.assertEqual(sc024["hist_stage"], "pnwgmc")
+        self.assertEqual(sc024["hist_scope"], "pan_pnwgmc")
+        self.assertEqual(sc024["verdict"], "SPLIT/REFORMULATE/REORDER")
+        self.assertEqual(sc025["fst_identifier"], "EAFLongANasalRounding")
+        self.assertEqual(sc025["hist_stage"], "eaf")
+        self.assertEqual(sc025["hist_scope"], "north_sea_germanic")
+        self.assertEqual(sc025["verdict"], "REFORMULATE/REORDER")
+        self.assertEqual(sc101["fst_identifier"], "EAFLongAFronting")
+        self.assertEqual(sc101["hist_stage"], "eaf")
+        self.assertEqual(sc101["hist_scope"], "north_sea_germanic")
+        self.assertEqual(sc101["verdict"], "SPLIT")
+        for row in (sc024, sc025, sc101):
+            self.assertEqual(row["confidence"], "B",
+                             "the two-step reconstruction is disputed "
+                             "(Fulk 2018 §4.6); confidence must stay B")
+            self.assertEqual(row["adjudication_status"], "adjudicated")
+            self.assertIn("sc024-sc025-sc101-e1-complex-adjudication.md",
+                          row["adjudication_memo"])
+
+    def test_staging_map_view_matches(self):
+        staging = {r["sc_id"]: r for r in _tsv_rows(STAGING_MAP)}
+        self.assertEqual(staging["SC024"]["hist_stage"], "pnwgmc")
+        self.assertEqual(staging["SC025"]["fst_identifier"],
+                         "EAFLongANasalRounding")
+        self.assertEqual(staging["SC101"]["fst_identifier"],
+                         "EAFLongAFronting")
+
+    def test_rename_manifest_records_the_sc025_second_migration(self):
+        rename = {r["sc_id"]: r for r in _tsv_rows(RENAME_MANIFEST)}
+        self.assertEqual(rename["SC025"]["canonical_foma_identifier"],
+                         "EAFLongANasalRounding")
+        self.assertEqual(rename["SC025"]["canonical_hist_stage"], "eaf")
+        self.assertEqual(rename["SC024"]["canonical_hist_stage"], "pnwgmc")
 
     # ------------------------------------------------------------------
-    # Canonical metadata: Anglo-Frisian scope, not the name prefix
+    # Chronology edges
     # ------------------------------------------------------------------
 
-    def test_staging_map_says_anglo_frisian(self):
-        row = {r["sc_id"]: r for r in _tsv_rows(STAGING_MAP)}["SC024"]
-        self.assertEqual(row["hist_stage"], "eaf")
-        self.assertEqual(row["hist_scope"], "anglo_frisian")
-        self.assertEqual(row["display_name"],
-                         "Long E Lowering with Anglo-Frisian Fronting")
-        self.assertEqual(row["action_status"], "metadata_corrected")
-        self.assertEqual(row["fst_identifier"], "PNWGmcLongELowering")
-
-    def test_inventory_is_adjudicated_with_corrected_stage(self):
-        row = {r["change_id"]: r for r in _tsv_rows(INVENTORY)}["SC024"]
-        self.assertEqual(row["historical_stage"], "Early Anglo-Frisian")
-        self.assertEqual(row["literature_status"], "adjudicated")
-        self.assertEqual(row["trace_occurrence_count"], "18")
-        self.assertIn("Anglo-Frisian", row["notes"])
-        self.assertIn("sc024-adjudication.md", row["notes"])
-
-    def test_historical_audit_and_rename_manifest_are_corrected(self):
-        audit = {r["sc_id"]: r for r in _tsv_rows(HISTORICAL_AUDIT)}["SC024"]
-        rename = {r["sc_id"]: r for r in _tsv_rows(RENAME_MANIFEST)}["SC024"]
-        self.assertEqual(audit["proposed_hist_stage"], "eaf")
-        self.assertEqual(audit["proposed_hist_scope"], "anglo_frisian")
-        self.assertEqual(rename["canonical_hist_stage"], "eaf")
-        self.assertEqual(rename["canonical_hist_scope"], "anglo_frisian")
-        self.assertEqual(rename["canonical_foma_identifier"],
-                         "PNWGmcLongELowering")
-
-    # ------------------------------------------------------------------
-    # Chronology: edge interpretation pinned
-    # ------------------------------------------------------------------
-
-    def test_sc056_edge_is_independently_demonstrated_with_sheep_year(self):
+    def edge(self, src, tgt):
         rows = [r for r in _tsv_rows(EDGES)
-                if r["source_change_id"] == "SC024"
-                and r["target_change_id"] == "SC056"]
-        self.assertEqual(len(rows), 1)
-        edge = rows[0]
-        self.assertEqual(edge["evidence_basis"], "independently_demonstrated")
+                if r["source_change_id"] == src
+                and r["target_change_id"] == tgt]
+        self.assertEqual(len(rows), 1, f"expected exactly one {src}->{tgt} edge")
+        return rows[0]
+
+    def test_feeding_edges_from_change_a(self):
+        for tgt in ("SC025", "SC101"):
+            edge = self.edge("SC024", tgt)
+            self.assertEqual(edge["evidence_basis"], "independently_demonstrated")
+            self.assertEqual(edge["relation_type"], "one_sided_chronology")
+
+    def test_pre_sc004_edges_encode_campbell_132(self):
+        self.assertEqual(self.edge("SC025", "SC004")["representative_lexemes"],
+                         "stone; home")
+        self.assertIn("ghost", self.edge("SC101", "SC004")["representative_lexemes"])
+
+    def test_sheep_year_sc056_edge_now_attaches_to_sc101(self):
+        edge = self.edge("SC101", "SC056")
         self.assertEqual(edge["representative_lexemes"], "sheep; year")
-        self.assertIn("sc024-adjudication.md", edge["notes"])
+        self.assertEqual(edge["evidence_basis"], "independently_demonstrated")
+        self.assertFalse(
+            [r for r in _tsv_rows(EDGES)
+             if r["source_change_id"] == "SC024"
+             and r["target_change_id"] == "SC056"],
+            "the old SC024->SC056 edge must not survive; it belongs to SC101",
+        )
 
-    def test_earlier_side_stays_runner_limited(self):
-        rows = [r for r in _tsv_rows(EDGES)
-                if r["source_change_id"] == "SC024"
-                and r["target_change_id"] == "PWGmcChanges"]
-        self.assertEqual(len(rows), 1)
-        self.assertEqual(rows[0]["relation_type"], "runner_limited_boundary")
-        self.assertIn("not a lower boundary", rows[0]["notes"])
+    def test_earlier_side_of_change_a_stays_runner_limited(self):
+        edge = self.edge("SC024", "PWGmcChanges")
+        self.assertEqual(edge["relation_type"], "runner_limited_boundary")
+        self.assertIn("not a lower boundary", edge["notes"])
 
-    def test_card_records_the_adjudicated_interpretation(self):
-        card = CARD.read_text(encoding="utf-8")
-        self.assertIn("sc024-adjudication.md", card)
-        self.assertIn("independently demonstrated", card)
-        self.assertIn("symbol separation", card)
+    # ------------------------------------------------------------------
+    # Memos and reader-facing write-ups
+    # ------------------------------------------------------------------
 
-    def test_memo_exists_with_matching_registry_verdict(self):
+    def test_governing_memo_and_supersession(self):
         memo = MEMO.read_text(encoding="utf-8")
-        self.assertIn("Registry-verdict: SC024=REFORMULATE/RETAIN", memo)
-        registry = {r["sc_id"]: r
-                    for r in _tsv_rows(SC_DIR / "registry" / "sc_registry.tsv")}
-        self.assertEqual(registry["SC024"]["verdict"], "REFORMULATE/RETAIN")
-        self.assertEqual(registry["SC024"]["adjudication_status"], "adjudicated")
+        self.assertTrue(memo.splitlines()[2].startswith(
+            "Registry-verdict: SC024=SPLIT/REFORMULATE/REORDER; "
+            "SC025=REFORMULATE/REORDER; SC101=SPLIT"))
+        old = OLD_MEMO.read_text(encoding="utf-8")
+        self.assertIn("SUPERSEDED IN IMPLEMENTATION", old)
+
+    def test_each_change_has_its_own_reader_chapter(self):
+        for fname, anchor, cite in (
+            ("024-long-e-lowering.md", "{#rule-PNWGmcLongELowering}",
+             "[@RingeTaylor2014, pp. 11--13]"),
+            ("025-long-a-nasal-rounding.md", "{#rule-EAFLongANasalRounding}",
+             "[@RingeTaylor2014, pp. 150--152]"),
+            ("101-long-a-fronting.md", "{#rule-EAFLongAFronting}",
+             "[@RingeTaylor2014, pp. 146--150"),
+        ):
+            text = (READER / fname).read_text(encoding="utf-8")
+            self.assertIn(anchor, text, fname)
+            self.assertIn(cite, text, f"{fname} must cite its sources")
+        # the dispute must be recorded, not suppressed
+        self.assertIn("@Fulk2018",
+                      (READER / "024-long-e-lowering.md").read_text(encoding="utf-8"))
+
+    def test_chronology_cards_exist_for_all_three(self):
+        for fname in ("SC024-nwgmc-long-e-lowering.md",
+                      "SC025-eaf-long-a-nasal-rounding.md",
+                      "SC101-eaf-long-a-fronting.md"):
+            card = (CARDS / fname).read_text(encoding="utf-8")
+            self.assertIn("sc024-sc025-sc101-e1-complex-adjudication.md", card)
 
 
 if __name__ == "__main__":
