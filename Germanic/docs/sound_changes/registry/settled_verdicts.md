@@ -13,4 +13,5 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC023 | Proto-Germanic Word-Final N Loss | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc023-adjudication.md` |
 | SC024 | NWGmc Long E1 Lowering | active | SPLIT/REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
 | SC025 | EAF Long A Nasal Rounding | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
-| SC101 | EAF Long A Fronting | active | SPLIT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
+| SC101 | EAF Long A Fronting | active | SPLIT/RESTRICT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
+| SC102 | EAF Hiatus W Insertion | active | SPLIT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |

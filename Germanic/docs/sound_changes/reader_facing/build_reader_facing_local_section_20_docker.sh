@@ -38,6 +38,7 @@ chapter_files = [
     "096-root-noun-nominative-z-loss.md",
     "014-015-opening-vowel-prelude.md",
     "005-unstressed-a-raising-before-final-m.md",
+    "024-long-e-lowering.md",
     "006-early-i-apocope.md",
     "007-final-o-lowering-before-r.md",
     "008-coronal-w-assimilation.md",
@@ -46,11 +47,10 @@ chapter_files = [
     "011-syllabic-j-after-final-vowel-loss.md",
     "012-lth-voicing.md",
     "013-dental-hardening.md",
-    "024-long-e-lowering.md",
     "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
     "019-nwgmc-final-long-o-raising.md",
-    # ── Chapter 2: executable positions 17–28 (final-*z, rhotacism, EAF vowels) ─
+    # ── Chapter 2: executable positions 17–29 (final-*z, rhotacism, EAF vowels) ─
     "020-wgmc-final-z-deletion.md",
     "098-early-apocope-in-unstressed-words.md",
     "097-monosyllabic-final-z-loss.md",
@@ -59,10 +59,11 @@ chapter_files = [
     "023-n-stem-n-loss.md",
     "026-027-nasal-spirant-changes.md",
     "028-preconsonantal-x-loss.md",
+    "102-hiatus-w-insertion.md",
     "025-long-a-nasal-rounding.md",
     "101-long-a-fronting.md",
     "004-pwgmc-ai-monophthongization.md",
-    # ── Chapter 3: executable positions 29–85 (Anglo-Frisian → Old English) ─
+    # ── Chapter 3: executable positions 30–95 (Anglo-Frisian → Old English) ─
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",

@@ -58,7 +58,7 @@ class RegistryCoherenceTests(unittest.TestCase):
     def test_edge_endpoints_exist_in_registry(self):
         # Boundary/technical edges may target non-SC sentinels: the
         # PWGmcChanges umbrella FST block and the RUNNER_LIMIT marker.
-        sentinels = {"PWGmcChanges", "RUNNER_LIMIT"}
+        sentinels = {"PWGmcChanges", "EarlyEnglishLineChanges", "RUNNER_LIMIT"}
         for e in self.edges:
             self.assertIn(e["source_change_id"], self.by_id)
             tgt = e["target_change_id"]
@@ -265,9 +265,12 @@ class ArchiveIsolationTests(unittest.TestCase):
 class FingerprintGuardTests(unittest.TestCase):
     def test_frozen_fingerprints_unchanged(self):
         data = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
+        # outputs_sha256 rebaselined 2026-09-06 for the sow/laewan
+        # follow-up (memo §12.4): two corpus rows added (sow, betray);
+        # every pre-existing output byte-identical (legacy sha unchanged).
         self.assertEqual(
             data["outputs_sha256"],
-            "7bed2ba862d91f82a0b7553e1a98fc78d9137483d39d94af0050af5aa18bdd33",
+            "1309dbc301916a3fa8cd8810d808e56c12da142c849a4e4f7de9df5923eacd31",
         )
         self.assertEqual(
             data["legacy_subset_sha256"],

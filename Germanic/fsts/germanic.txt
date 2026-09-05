@@ -1806,9 +1806,56 @@ define PWGmcJGemination [
 #
 # CRITICAL: PWGmcJGemination must precede PWGmcSyllabicJ (Fulk §6.15).
 # Gemination creates heavy syllables that block syllabic-j vocalization.
+# SC024 PNWGmcLongELowering (re-adjudicated: two-change split; see
+# audits/sc024-sc025-sc101-e1-complex-adjudication.md, superseding the
+# one-step proxy of audits/sc024-adjudication.md).
+#
+# CHANGE A — early Northwest Germanic *ē₁ > *ā, ALL environments (nasal
+# forms included: R/T print PNWGmc *mānō, *mānōþ-, *spānuz; vol.2 pp. 11-12).
+# Pan-NWGmc, attested from the later 2nd c. AD (Early Runic acc. makija
+# < PGmc *mēkija-, R/T vol.2 p. 12 citing Grønvik 1998: 87; Sami loan
+# evidence for early NGmc [aː], Stiles 2017: 4 citing Lid 1952: 238).
+# R/T restrict the change to STRESSED *ē₁ (vol.2 p. 13 and p. 13 n. 3:
+# "the sound change (stressed) *ē > *ā"); unstressed *ē took the separate
+# shortening path (PGmc *fadēr > PWGmc *fader, R/T p. 147; cf. §6.8.3
+# below). Executable input is therefore {*ḗ} ONLY; the five unstressed
+# corpus *ē tokens (father, mother, sister, have, live) are handled by
+# the §6.8.3 unstressed-shortening block, no longer by this rule.
+# Stress is absorbed into the output (§17.46: no *ā́ tier; no rule between
+# this slot and the *ā consumers reads stress on long vowels).
+#
+# DISPUTED RECONSTRUCTION (canonical confidence B): Fulk 2018 §4.6
+# pp. 60-61 argues the NWGmc value was low-front *ǣ, retained unchanged
+# in Anglo-Frisian, with backing to ā a separate NGmc + inner-WGmc areal
+# development (*swā/sō coalescence argument; Angle/Frisian names in ‹e›);
+# the retention tradition (Bennett 1950, Grønvik 1981: 43-50, 1998: 87-9;
+# cf. Campbell §128 n. 1, §129, deliberately noncommittal) denies any *ā
+# stage on the OE line. CAPR adopts R/T's majority two-step analysis
+# (vol.2 pp. 13-14, with Stiles 2004: 387-9 þǣr/hwǣr fronting argument).
+#
+# Cascade position: EARLY NWGmc — attested from the later 2nd c. AD, this
+# change precedes the specifically West Germanic innovations (early
+# i-apocope, *ij-contraction, j-gemination, syllabic *j, dental
+# hardening), so it is composed inside EarlyEnglishLineChanges directly
+# after the other PNWGmc rules and BEFORE the PWGmc block. It remains
+# far before MonosyllabicFinalZLoss (so secondary compensatory *ḗ — not
+# ē₁ — can never feed it) and long before the northern-WGmc low-vowel
+# developments (EAFLongANasalRounding / EAFLongAFronting) that consume
+# its output. NOTE (bundle-level limitation, follow-up architecture
+# issue): EarlyEnglishLineChanges still mixes stages (EAFLThVoicing sits
+# inside it; PNWGmcILowering/ULowering and the ō-raisers still follow
+# the PWGmc block outside it); only SC024's own placement is corrected
+# here.
+define PNWGmcLongELowering [
+    {*ḗ} -> {*ā}
+];
+
 define EarlyEnglishLineChanges [
     PNWGmcUnstressedAiMonophthongization
     .o. PNWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
+    # SC024 early NWGmc *ē₁ > *ā (2nd c. AD): before the PWGmc innovations
+    # below — see the rule's header comment for the chronology argument.
+    .o. PNWGmcLongELowering
     .o. PWGmcEarlyIApocope  # Early i-apocope: loss of final -i in 3rd/4th syllable
     .o. PWGmcFinalOrLowering
     .o. PWGmcCoronalWAssimilation
@@ -2317,40 +2364,27 @@ define PNWGmcMnDissimilation [
     {*m} -> {*β} || EnglishStarVocalic _ {*n}
 ];
 
-# SC024 PNWGmcLongELowering (re-adjudicated: two-change split; see
-# audits/sc024-sc025-sc101-e1-complex-adjudication.md, superseding the
-# one-step proxy of audits/sc024-adjudication.md).
-#
-# CHANGE A — early Northwest Germanic *ē₁ > *ā, ALL environments (nasal
-# forms included: R/T print PNWGmc *mānō, *mānōþ-, *spānuz; vol.2 pp. 11-12).
-# Pan-NWGmc, attested from the later 2nd c. AD (Early Runic acc. makija
-# < PGmc *mēkija-, R/T vol.2 p. 12 citing Grønvik 1998: 87; Sami loan
-# evidence for early NGmc [aː], Stiles 2017: 4 citing Lid 1952: 238).
-# R/T restrict the change to STRESSED *ē₁ (vol.2 p. 13 and p. 13 n. 3:
-# "the sound change (stressed) *ē > *ā"); unstressed *ē took the separate
-# shortening path (PGmc *fadēr > PWGmc *fader, R/T p. 147; cf. §6.8.3
-# below). Executable input is therefore {*ḗ} ONLY; the five unstressed
-# corpus *ē tokens (father, mother, sister, have, live) are handled by
-# the §6.8.3 unstressed-shortening block, no longer by this rule.
-# Stress is absorbed into the output (§17.46: no *ā́ tier; no rule between
-# this slot and the *ā consumers reads stress on long vowels).
-#
-# DISPUTED RECONSTRUCTION (canonical confidence B): Fulk 2018 §4.6
-# pp. 60-61 argues the NWGmc value was low-front *ǣ, retained unchanged
-# in Anglo-Frisian, with backing to ā a separate NGmc + inner-WGmc areal
-# development (*swā/sō coalescence argument; Angle/Frisian names in ‹e›);
-# the retention tradition (Bennett 1950, Grønvik 1981: 43-50, 1998: 87-9;
-# cf. Campbell §128 n. 1, §129, deliberately noncommittal) denies any *ā
-# stage on the OE line. CAPR adopts R/T's majority two-step analysis
-# (vol.2 pp. 13-14, with Stiles 2004: 387-9 þǣr/hwǣr fronting argument).
-#
-# Cascade position: head of the NWGmc block, immediately after
-# EarlyEnglishLineChanges — before MonosyllabicFinalZLoss, so secondary
-# *ḗ from monosyllabic compensatory lengthening (not ē₁) can never feed
-# this rule, and long before the northern-WGmc low-vowel developments
-# (EAFLongANasalRounding / EAFLongAFronting) that consume its output.
-define PNWGmcLongELowering [
-    {*ḗ} -> {*ā}
+# SC102 EAFHiatusWInsertion (new identity; see
+# audits/sc024-sc025-sc101-e1-complex-adjudication.md, sow/lǣwan follow-up).
+# Pre-OE / Anglo-Frisian hiatus-filling *w in the vowel-final strong-verb
+# roots (Germanic verba pura): PGmc *sēaną > (SC024) *sāaną > *sāwan- >
+# OE sāwan (R/T vol.2 p. 12 and p. 151, citing Þórhallsdóttir 1993:
+# 82-137, 114-37). The regular sound change proper inserted *w between
+# the stressed stem vowel and the *u-initial endings (pres.ind.1sg *-u,
+# past ind.pl. *-un); its presence throughout the paradigm — including
+# the infinitive that CAPR selects as citation form — is Þórhallsdóttir's
+# analogical generalization of that regular epenthesis. The executable
+# rule therefore models the paradigm-generalized change as it affects
+# citation forms: *w in hiatus after stressed long *ā.
+# SCOPE: OE and OFris (OF grōwinge, R/T p. 151); OS and OHG resolved the
+# same hiatus with *j instead (OS sājan, OHG sāen/drāen, R/T p. 151), so
+# this is an Anglo-Frisian development, NOT common WGmc.
+# CHRONOLOGY: "well after the PWGmc loss of *w between vowels and *u"
+# (R/T p. 151 n. 9; §3.1.5 — not modelled as a cascade rule) and "early
+# enough to prevent fronting of *ā in pre-OE" (R/T p. 151) — hence
+# composed BEFORE EAFLongAFronting, whose *w-block it feeds.
+define EAFHiatusWInsertion [
+    [..] -> {*w} || {*ā} _ EnglishStarVocalic
 ];
 
 # SC025 EAFLongANasalRounding (reformulated from PNWGmcLongENasalRounding;
@@ -2374,11 +2408,20 @@ define EAFLongANasalRounding [
 # CHANGE B — much later northern West Germanic fronting of non-nasalized
 # stressed *ā > WS ǣ (Anglian/Kentish/OFris ē; sporadic OS ‹e› spellings,
 # Gallée: R/T vol.2 §5.1.2 pp. 149-150). Consumes the *ā that existed at
-# that stage, centrally *ā < *ē₁ (Change A above). Historically blocked
-# before *w not followed by a high front vocalic (R/T p. 149; no corpus
-# witness reaches that environment). The non-nasal condition is the
-# complementary branch to EAFLongANasalRounding: nasalized *ā was
-# rounded, not fronted.
+# that stage, centrally *ā < *ē₁ (Change A above). The non-nasal
+# condition is the complementary branch to EAFLongANasalRounding:
+# nasalized *ā was rounded, not fronted.
+# *W-CONDITIONING (R/T vol.2 pp. 150-151): fronting was BLOCKED before
+# *w followed by a back or non-high vowel — OE clēa/clawa, and the verba
+# pura sāwan, wāwan, cnāwan, māwan, þrāwan, blāwan retain ā ("The
+# simplest hypothesis is that fronting never occurred in that
+# environment", R/T p. 151, with Hogg 1992: 81 [2011: 79]) — but *ā WAS
+# fronted before *w plus a high front vocalic: *lēwijaną > PWGmc
+# *lāwijan > WS *lǣwjan > lǣwan; *-tēwijaz > eltǣwe; *brāwi > brǣw
+# (R/T p. 150). Encoded below: the general clause excludes {*w}; a
+# second clause re-admits {*w} + EnglishIUmlautTrigger (i, ī, ḯ, j).
+# The corpus witnesses are sow (blocked: *sāwaną after SC102 keeps ā)
+# and betray (permitted: *lāwijaną → *lǣwijaną).
 # ORDERING (Campbell §132 pp. 52-3; R/T §6.1.2 pp. 169-170): the fronting
 # must have been well under way before *ai > ā was complete — otherwise
 # stān, hām would show fronting. Encoded here by actual cascade position:
@@ -2386,7 +2429,8 @@ define EAFLongANasalRounding [
 # late to be fronted. It must also precede palatal diphthongization
 # (SC056): *skāp > *skǣp > sċēap, *jār > *jǣr > ġēar (R/T p. 216).
 define EAFLongAFronting [
-    {*ā} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal]
+    {*ā} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal - {*w}],
+    {*ā} -> {*ǣ} || _ {*w} EnglishIUmlautTrigger
 ];
 
 define OEWeakTailNasalLoss [
@@ -3342,11 +3386,10 @@ define EnglishProtoToOE (
     # pre-PWGmc date.
     RootNounNomZLoss
     .o. EarlyEnglishLineChanges
-    # SC024 Change A: early NWGmc stressed *ē₁ > *ā (2nd c. AD, pan-NWGmc).
-    # Head of the NWGmc block — precedes MonosyllabicFinalZLoss so secondary
-    # compensatory *ḗ never feeds it. Its *ā output is consumed much later
-    # by EAFLongANasalRounding / EAFLongAFronting below.
-    .o. PNWGmcLongELowering
+    # SC024 Change A (early NWGmc stressed *ē₁ > *ā, 2nd c. AD) is now
+    # composed INSIDE EarlyEnglishLineChanges, before the PWGmc rules —
+    # see its define's header comment. Its *ā output is consumed much
+    # later by EAFLongANasalRounding / EAFLongAFronting below.
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # SC016 OEWsPalatalGlide no longer fires here: it is an OE-period WS
     # glide-spelling convention and now sits in the orthography block
@@ -3401,6 +3444,10 @@ define EnglishProtoToOE (
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
     .o. PNWGmcPreconsonantalXLoss
+    # SC102 pre-OE / Anglo-Frisian hiatus *w (verba pura): must precede
+    # EAFLongAFronting, whose *w-block it feeds — "early enough to prevent
+    # fronting of *ā in pre-OE" (R/T p. 151): sāwan, not *sǣwan.
+    .o. EAFHiatusWInsertion
     # SC025 + SC101: the northern-WGmc low-vowel split consuming *ā < *ē₁
     # (Change A above). Complementary environments (nasal vs non-nasal), so
     # their mutual order carries no claim. BOTH must precede SC004: *ā < *ai
@@ -3601,8 +3648,8 @@ define EnglishAfterWestGermanic EnglishAfterConsonantRules
     .o. EarlyEnglishLineChanges;
 # Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
 define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
-    # SC024 Change A: early NWGmc *ē₁ > *ā — mirrors main pipeline.
-    .o. PNWGmcLongELowering
+    # SC024 Change A (early NWGmc *ē₁ > *ā) is composed inside
+    # EarlyEnglishLineChanges after PNWGmcAToUBeforeM — mirrors main pipeline.
     .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
     # SC016 moved to orthography block (sc016-017-adjudication.md).
     .o. PNWGmcULowering
@@ -3626,6 +3673,8 @@ define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417)
     .o. PNWGmcPreconsonantalXLoss
+    # SC102 Anglo-Frisian hiatus *w (verba pura): mirrors main pipeline.
+    .o. EAFHiatusWInsertion
     # SC025 + SC101 northern-WGmc low-vowel split: mirrors main pipeline.
     .o. EAFLongANasalRounding
     .o. EAFLongAFronting

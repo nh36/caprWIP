@@ -51,6 +51,8 @@ STAGES: List[Tuple[str, str]] = [
     ("RootNounNomZLoss", "old_english_sandbox_after_root_noun_nom_z_loss.bin"),
     ("PNWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin"),
     ("PNWGmcAToUBeforeM", "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin"),
+    # SC024 Change A: early NWGmc *ē₁ > *ā (before the PWGmc block).
+    ("PNWGmcLongELowering", "old_english_sandbox_after_pnwgmc_long_e_lowering.bin"),
     ("PWGmcEarlyIApocope", "old_english_sandbox_after_pwgmc_early_i_apocope.bin"),
     ("PWGmcFinalOrLowering", "old_english_sandbox_after_pwgmc_final_or_lowering.bin"),
     ("PWGmcCoronalWAssimilation", "old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin"),
@@ -59,8 +61,6 @@ STAGES: List[Tuple[str, str]] = [
     ("PWGmcSyllabicJ", "old_english_sandbox_after_pwgmc_syllabic_j.bin"),
     ("EAFLThVoicing", "old_english_sandbox_after_eaf_l_th_voicing.bin"),
     ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
-    # SC024 Change A: early NWGmc *ē₁ > *ā (head of the NWGmc block).
-    ("PNWGmcLongELowering", "old_english_sandbox_after_pnwgmc_long_e_lowering.bin"),
     ("PNWGmcILowering", "old_english_sandbox_after_pnwgmc_i_lowering.bin"),
     ("PNWGmcULowering", "old_english_sandbox_after_pnwgmc_u_lowering.bin"),
     ("PNWGmcStressedMonosyllableORaising", "old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin"),
@@ -75,6 +75,8 @@ STAGES: List[Tuple[str, str]] = [
     ("EAFNasalSpirantLengthening", "old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin"),
     ("EAFNasalSpirantLoss", "old_english_sandbox_after_eaf_nasal_spirant_loss.bin"),
     ("PNWGmcPreconsonantalXLoss", "old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin"),
+    # SC102 pre-OE/AF hiatus *w (feeds the SC101 *w-block).
+    ("EAFHiatusWInsertion", "old_english_sandbox_after_eaf_hiatus_w_insertion.bin"),
     # SC025 + SC101 northern-WGmc low-vowel split (both pre-SC004).
     ("EAFLongANasalRounding", "old_english_sandbox_after_eaf_long_a_nasal_rounding.bin"),
     ("EAFLongAFronting", "old_english_sandbox_after_eaf_long_a_fronting.bin"),

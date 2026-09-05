@@ -223,6 +223,7 @@ class ProductionCascadeTests(unittest.TestCase):
         # (Campbell §132; Ringe & Taylor pp. 169-170).
         pat = re.compile(
             r"\.o\. PNWGmcPreconsonantalXLoss\b.*\n(?:\s*#.*\n)*"
+            r"\s*\.o\. EAFHiatusWInsertion\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongANasalRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongAFronting\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFAiMonophthongization\b")

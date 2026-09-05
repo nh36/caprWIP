@@ -1,8 +1,8 @@
 # SC024/SC025/SC101 — the *ē₁ complex: two sound changes, three executable rules
 
-Registry-verdict: SC024=SPLIT/REFORMULATE/REORDER; SC025=REFORMULATE/REORDER; SC101=SPLIT
+Registry-verdict: SC024=SPLIT/REFORMULATE/REORDER; SC025=REFORMULATE/REORDER; SC101=SPLIT/RESTRICT; SC102=SPLIT
 
-Status: adjudicated (this memo governs SC024, SC025 and SC101)
+Status: adjudicated (this memo governs SC024, SC025, SC101 and SC102)
 Scope: the complete history of Proto-Germanic *ē₁ in CAPR — the former
 one-step SC024 `PNWGmcLongELowering`, the former SC025
 `PNWGmcLongENasalRounding`, and the new SC101 `EAFLongAFronting`.
@@ -306,16 +306,16 @@ scholarship survey) remains valid and is built on here.
 
 ## 8. Registry disposition
 
-| | SC024 | SC025 | SC101 |
-|---|---|---|---|
-| fst_identifier | PNWGmcLongELowering | EAFLongANasalRounding | EAFLongAFronting |
-| rule | {*ḗ} → {*ā} | {*ā} → {*ō} / _N | {*ā} → {*ǣ} / _[C−N] |
-| hist_stage / scope | pnwgmc / pan_pnwgmc | eaf / north_sea_germanic | eaf / north_sea_germanic |
-| confidence | B | B | B |
-| cascade_position | 12 | 26 | 27 |
-| verdict | SPLIT/REFORMULATE/REORDER | REFORMULATE/REORDER | SPLIT |
-| firings | 15 | 2 | 13 |
-| reader chapter | 024-long-e-lowering.md | 025-long-a-nasal-rounding.md | 101-long-a-fronting.md |
+| | SC024 | SC025 | SC101 | SC102 |
+|---|---|---|---|---|
+| fst_identifier | PNWGmcLongELowering | EAFLongANasalRounding | EAFLongAFronting | EAFHiatusWInsertion |
+| rule | {*ḗ} → {*ā} | {*ā} → {*ō} / _N | {*ā} → {*ǣ} / _[C−N−w], _w+high-front | ∅ → {*w} / {*ā} _ V |
+| hist_stage / scope | pnwgmc / pan_pnwgmc | eaf / north_sea_germanic | eaf / north_sea_germanic | eaf / anglo_frisian |
+| confidence | B | B | B | B |
+| cascade_position | 4 | 27 | 28 | 26 |
+| verdict | SPLIT/REFORMULATE/REORDER | REFORMULATE/REORDER | SPLIT/RESTRICT | SPLIT |
+| firings | 17 | 2 | 14 | 1 |
+| reader chapter | 024-long-e-lowering.md | 025-long-a-nasal-rounding.md | 101-long-a-fronting.md | 102-hiatus-w-insertion.md |
 
 SC024's Foma identifier `PNWGmcLongELowering` is retained as the
 stable identifier of Change A (its content now matches the name); the
@@ -338,3 +338,139 @@ not acceptable. The reversal costs nothing empirically (383/383
 outputs identical) and gains: real feeding edges, order-encoded
 non-merger with ā < *ai, historically correct internal derivations
 (*mōnaþ via *mānōþ-), and the removal of five spurious census members.
+
+## 10. SC024's absolute executable position (stress-test follow-up)
+
+Position 12 — after PWGmc early i-apocope, *ij contraction,
+j-gemination, syllabic *j and dental hardening — was historically
+indefensible: the adopted reconstruction dates pan-NWGmc *ē₁ > *ā to
+the second century AD (Early Runic makija, Grønvik 1998: 87 apud R&T
+p. 12; Saami loan evidence, Stiles 2017: 4), i.e. **before** the
+independent West Germanic innovations. SC024 is therefore now composed
+inside `EarlyEnglishLineChanges` immediately after `PNWGmcAToUBeforeM`,
+giving executable position 4, ahead of every genuinely PWGmc rule. The
+move commutes on the present corpus (all 383 pre-existing outputs are
+byte-identical), but chronology, not accidental commutation, governs
+placement.
+
+Remaining bundle-level limitation (architectural follow-up, not fixed
+here): `EarlyEnglishLineChanges` still mixes historical stages — it
+contains `EAFLThVoicing`, and the PNWGmc I/U-lowering rules still
+execute after the PWGmc block. A dedicated infrastructure pass should
+unbundle the early corridor by stage.
+
+## 11. SC101's full historical conditioning (the *w restriction)
+
+The first implementation of SC101 (`{*ā} → {*ǣ} / _ [C − nasal]`) was
+knowingly over-broad: R&T's *w conditioning was documented but not
+encoded because no corpus witness reached the environment. That is now
+reversed. R&T pp. 150–151 establish both sides:
+
+* **Blocked**: *ā was retained before *w followed by a back/non-high
+  vowel — the verba pura sāwan, wāwan, cnāwan, māwan, þrāwan, blāwan,
+  and clāwu 'claw' (p. 151). "The simplest hypothesis is that fronting
+  never occurred in that environment (so Hogg 1992: 81)."
+* **Permitted**: *ā was fronted before *w plus a high front vocalic —
+  *lēwijaną → PWGmc *lāwijan → WS lǣwan 'betray' (Goth. lēwjan, OHG
+  gi-lāen), *-tēwijaz → eltǣwe 'entire', *brāwi → brǣw 'eyelid'
+  (p. 150).
+
+The executable rule is now the general historical condition, not a
+lexical exception:
+
+```
+define EAFLongAFronting [
+    {*ā} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal - {*w}],
+    {*ā} -> {*ǣ} || _ {*w} EnglishIUmlautTrigger
+];
+```
+
+Registry verdict extended to SPLIT/RESTRICT: RESTRICT records this
+narrowing of the executable environment to the historically supported
+one. The fronted output of the *w+i clause is produced **at the SC101
+boundary itself**, not by later i-umlaut — the regression test inspects
+the form at the `eaf_long_a_fronting` stage bin, where lǣwan is already
+*lǣwijaną (Sievers-law syncope, which removes the *i, runs after
+SC101, so the conditioning environment is intact at fronting).
+
+## 12. Diagnostic witnesses: sow, lǣwan, and the new SC102 (sow/laewan follow-up)
+
+### 12.1 sow and the origin of its *w — a fourth historical event
+
+R&T p. 12 reconstruct PGmc *sēaną 'to sow' (Goth. saian) with
+morphologically expected hiatus; "the WGmc forms exhibit innovative
+consonants that eliminated" that hiatus (Þórhallsdóttir 1993: 82–137).
+The consonant differs by branch: OE (and OFris — grōwinge) inserted
+*w; OS and OHG used *j (sāian, sā(j)en). The *w is therefore **not**
+Proto-Germanic and must not be smuggled into the protoform: the corpus
+input for sow is *sḗaną, and the derivation is
+
+    *sēaną → (SC024) *sāaną → (SC102) *sāwaną → (SC101 blocked) → sāwan
+
+Per Þórhallsdóttir (1993: 114–37, apud R&T p. 151), the insertion was
+a **regular** development first in the *u-initial endings (pres. ind.
+1sg *-u, past ind. pl. *-un) and was generalized through the rest of
+the paradigm analogically. R&T p. 151 fix its chronology: it happened
+"early enough to prevent fronting of *ā" (before SC101) and (n. 9)
+well after the PWGmc loss of intervocalic *w (§3.1.5). This is a real,
+datable, areally bounded (Anglo-Frisian) sound change — a fourth
+historical event in the complex, distinct from SC024 (which creates
+the hiatus) and SC101 (whose *w-block it feeds). It is therefore
+modelled as its own identity:
+
+```
+define EAFHiatusWInsertion [
+    [..] -> {*w} || {*ā} _ EnglishStarVocalic
+];
+```
+
+SC102, position 26, hist stage eaf, scope anglo_frisian. The
+executable rule models the paradigm-generalized change on citation
+forms ({*ā} _ V), as documented in its FST header; the regular-first,
+analogical-spread layering is recorded here and in the registry rather
+than hidden in the selected input.
+
+Chronology within the executable cascade: SC024 → SC102 is a
+demonstrated feeding edge (displaced before SC024 the rule can never
+fire — no *ā exists yet). SC102 → SC101 is historically asserted by
+R&T but commutes in the executable formulation (SC101 is
+preconsonantal, so hiatus *ā is outside its domain either way); the
+position encodes the historical order per the governing principle.
+
+### 12.2 lǣwan as the positive *w+high-front control
+
+OE lǣwan 'betray' < PGmc *lēwijaną (Goth. lēwjan, OHG gi-lāen; R&T
+p. 150). Its *w is **inherited**, already present at the fronting
+stage, and followed by *i (the *ij of the class-1 weak suffix) when
+SC101 applies. R&T p. 150 cite precisely this word as proof that
+fronting **did** apply before *w + high front vocalic. The corpus row
+uses input *lḗwijaną; SC024 lowers to *lāwijaną; SC101 fronts to
+*lǣwijaną at its own boundary (verified at the stage bin — not an
+artifact of later i-umlaut); later syncope and *j-loss yield lǣwan.
+
+sow and lǣwan together give minimal-pair coverage of the *w
+conditioning: sow proves the block, lǣwan proves the high-front
+exception. Non-interference checks: OEWLossBeforeI applies only
+word-finally, OEAwjGlideFormation needs *awwj — neither touches
+either form.
+
+### 12.3 Alternatives considered and not added
+
+The other verba pura — cnāwan 'know', blāwan 'blow', māwan 'mow',
+wāwan, þrāwan (R&T p. 151) — instantiate essentially the same
+derivation as sāwan and would add redundant firings, not diagnostic
+coverage. eltǣwe and brǣw duplicate lǣwan's environment with less
+transparent morphology. R&T p. 152 also mention possible blocking in
+Cw- monosyllables (hwā, swā) — not modelled; no corpus witness and
+the conditioning is doubtful. One strong blocked witness plus one
+strong fronted witness was preferred to corpus padding. `street`
+(a Latin loan with its own dating problems) was explicitly excluded
+from this pass.
+
+### 12.4 Corpus and fingerprints
+
+Rows added: sow (ID 2328, *sḗaną → sāwan) and betray (ID 2329,
+*lḗwijaną → lǣwan), both OE-only. Corpus grows 383 → 385 matched
+376 → 378. legacy_subset_sha256 is unchanged; outputs_sha256 changed
+only by the two additions; every pre-existing output is
+byte-identical despite the SC024 move and the SC101 reconditioning.

@@ -10,13 +10,22 @@ Protected scientific conclusions:
   * Change A exists independently: SC024 `PNWGmcLongELowering` is
     `{*ḗ} -> {*ā}` — stressed tier only, unconditioned (nasal forms
     included), producing the reconstructed intermediate *ā (R/T 2014
-    pp. 11–13, *mānōþ-, *spānuz) — at executable position 12.
+    pp. 11–13, *mānōþ-, *spānuz) — at executable position 4, before
+    every genuinely PWGmc innovation (2nd-c. runic dating).
   * Change B exists independently and consumes the correct input:
-    SC101 `EAFLongAFronting` is `{*ā} -> {*ǣ}` before non-nasal C, at
-    position 27; SC025 `EAFLongANasalRounding` is `{*ā} -> {*ō}` before
-    nasal, at position 26. Both are fed by SC024.
+    SC101 `EAFLongAFronting` fronts `{*ā}` before non-nasal, non-*w
+    consonants, and before *w + high front vocalic, at position 28;
+    SC025 `EAFLongANasalRounding` is `{*ā} -> {*ō}` before nasal, at
+    position 27. Both are fed by SC024.
+  * SC102 `EAFHiatusWInsertion` (position 26) is the pre-OE/Anglo-
+    Frisian hiatus *w of the verba pura (R/T p. 12, p. 151;
+    Þórhallsdóttir 1993): *sāaną > *sāwaną. It is fed by SC024 and
+    feeds the *w-block of SC101 (sow: sāwan, not **sǣwan).
+  * lǣwan 'betray' is the positive *w + high-front control: its
+    inherited *w is followed by *i at the fronting stage, and SC101
+    itself (not later i-umlaut) fronts *lāwijaną > *lǣwijaną.
   * *ā < *ai arises too late to be fronted or rounded: SC004 stands at
-    position 28, after both (Campbell §132; R/T pp. 169–170) — stone,
+    position 29, after both (Campbell §132; R/T pp. 169–170) — stone,
     home, loath, rope, token, soul, ghost keep back ā.
   * The old one-step `*ē/*ḗ -> *ǣ` telescoping must not silently return.
   * The five unstressed selected-input tokens (father, mother, sister,
@@ -59,13 +68,17 @@ TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
 # Change A census: 13 stressed oral roots + the two nasal-branch lexemes,
-# which historically DID undergo *ē₁ > *ā (R/T p. 11: *mānōþ-, *spānuz).
+# which historically DID undergo *ē₁ > *ā (R/T p. 11: *mānōþ-, *spānuz),
+# + the two *w-conditioning witnesses (sow, betray).
 ORAL_ROOT_CONCEPTS = {
     "adder", "bier", "deed", "eel", "hair", "let", "meal", "needle",
     "read", "sheep", "sleep", "weapon", "year",
 }
 NASAL_BRANCH_CONCEPTS = {"month", "spoon"}
-SC024_FIRING_CONCEPTS = ORAL_ROOT_CONCEPTS | NASAL_BRANCH_CONCEPTS
+W_CONDITION_CONCEPTS = {"sow", "betray"}
+SC024_FIRING_CONCEPTS = (
+    ORAL_ROOT_CONCEPTS | NASAL_BRANCH_CONCEPTS | W_CONDITION_CONCEPTS
+)
 
 # Unstressed selected-input tokens: plain {*ē}, outside the stressed law.
 UNSTRESSED_CONCEPTS = {"father", "mother", "sister", "have", "live"}
@@ -115,12 +128,17 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         )
 
     def across_sc024(self, form):
-        before = self.stage("pwgmc_dental_hardening", form)
+        before = self.stage("pnwgmc_a_to_u_before_m", form)
         after = self.stage("pnwgmc_long_e_lowering", form)
         return before, after
 
-    def across_rounding(self, form):
+    def across_w_insertion(self, form):
         before = self.stage("pnwgmc_preconsonantal_x_loss", form)
+        after = self.stage("eaf_hiatus_w_insertion", form)
+        return before, after
+
+    def across_rounding(self, form):
+        before = self.stage("eaf_hiatus_w_insertion", form)
         after = self.stage("eaf_long_a_nasal_rounding", form)
         return before, after
 
@@ -151,10 +169,19 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             self.uncommented,
         ), "SC025 must round the historical *ā before nasals")
         self.assertIsNotNone(re.search(
-            r"define\s+EAFLongAFronting\s*\[\s*\{\*ā\}\s*->\s*\{\*ǣ\}"
-            r"\s*\|\|\s*_\s*\[EnglishStarConsonant\s*-\s*EnglishStarNasal\]\s*\];",
+            r"define\s+EAFLongAFronting\s*\[\s*"
+            r"\{\*ā\}\s*->\s*\{\*ǣ\}\s*\|\|\s*_\s*"
+            r"\[EnglishStarConsonant\s*-\s*EnglishStarNasal\s*-\s*\{\*w\}\]\s*,\s*"
+            r"\{\*ā\}\s*->\s*\{\*ǣ\}\s*\|\|\s*_\s*\{\*w\}\s*EnglishIUmlautTrigger\s*\];",
             self.uncommented,
-        ), "SC101 must front the historical non-nasalized *ā")
+        ), "SC101 must front non-nasalized *ā with the historical *w "
+           "conditioning: blocked before *w except before *w + high front "
+           "vocalic (R/T pp. 150–151)")
+        self.assertIsNotNone(re.search(
+            r"define\s+EAFHiatusWInsertion\s*\[\s*\[\.\.\]\s*->\s*\{\*w\}"
+            r"\s*\|\|\s*\{\*ā\}\s*_\s*EnglishStarVocalic\s*\];",
+            self.uncommented,
+        ), "SC102 must insert the hiatus *w after long *ā (verba pura)")
 
     def test_one_step_telescoping_cannot_silently_return(self):
         self.assertIsNone(
@@ -169,10 +196,28 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         )
 
     def test_cascade_positions_encode_the_chronology(self):
-        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 12)
-        self.assertEqual(self.positions.get("EAFLongANasalRounding"), 26)
-        self.assertEqual(self.positions.get("EAFLongAFronting"), 27)
-        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 28)
+        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 4)
+        self.assertEqual(self.positions.get("EAFHiatusWInsertion"), 26)
+        self.assertEqual(self.positions.get("EAFLongANasalRounding"), 27)
+        self.assertEqual(self.positions.get("EAFLongAFronting"), 28)
+        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 29)
+        # SC024 is early pan-NWGmc: it must precede the genuinely PWGmc
+        # innovations (early i-apocope, *ij contraction, j-gemination,
+        # syllabic *j, dental hardening)
+        for pwgmc_rule in ("PWGmcEarlyIApocope", "PWGmcIjContraction",
+                           "PWGmcJGemination", "PWGmcSyllabicJ",
+                           "PWGmcDentalHardening"):
+            self.assertLess(
+                self.positions["PNWGmcLongELowering"],
+                self.positions[pwgmc_rule],
+                f"SC024 (2nd-c. pan-NWGmc) must precede {pwgmc_rule}",
+            )
+        # SC102 feeds the *w-block of SC101 (historical chronology,
+        # R/T p. 151) and follows SC024 (feeding)
+        self.assertLess(self.positions["PNWGmcLongELowering"],
+                        self.positions["EAFHiatusWInsertion"])
+        self.assertLess(self.positions["EAFHiatusWInsertion"],
+                        self.positions["EAFLongAFronting"])
         # SC101 < SC056 (sheep/year: diphthongization of already-fronted ǣ)
         self.assertLess(self.positions["EAFLongAFronting"],
                         self.positions["OEWsPalatalDiphthongization"])
@@ -181,7 +226,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
     # Change A firing census (live stage bins)
     # ------------------------------------------------------------------
 
-    def test_change_a_fires_on_exactly_the_15_stressed_e1_lexemes(self):
+    def test_change_a_fires_on_exactly_the_17_stressed_e1_lexemes(self):
         fired = set()
         candidates = {
             concept: row for concept, row in self.baseline.items()
@@ -195,7 +240,8 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             fired,
             SC024_FIRING_CONCEPTS,
             "SC024 (Change A) census drifted; expected the 13 stressed "
-            "oral roots plus month and spoon (which pass through *ā)",
+            "oral roots, month and spoon (which pass through *ā), and "
+            "the *w-conditioning witnesses sow and betray",
         )
 
     def test_change_a_produces_the_reconstructed_intermediate_a(self):
@@ -251,19 +297,68 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(self.baseline["sheep"]["outputs"], "sċēap")
         self.assertEqual(self.baseline["year"]["outputs"], "ġēar")
 
+    # ------------------------------------------------------------------
+    # The *w conditioning: SC102 feeds the block, lǣwan is the control
+    # ------------------------------------------------------------------
+
+    def test_sow_undergoes_change_a(self):
+        self.assertEqual(
+            self.across_sc024("sḗaną"), (["*s*ḗ*a*n*ą"], ["*s*ā*a*n*ą"])
+        )
+
+    def test_sc102_inserts_the_hiatus_w_in_sow_only(self):
+        self.assertEqual(
+            self.across_w_insertion("sḗaną"),
+            (["*s*ā*a*n*ą"], ["*s*ā*w*a*n*ą"]),
+            "SC102 must repair the *ā.a hiatus of sow with *w "
+            "(R/T p. 12: *sāaną > OE sāwan)",
+        )
+        fired = []
+        # *ā at position 25 can only come from SC024 (*ē₁) or be inherited
+        # (*ā did not exist in PGmc); restrict the census accordingly
+        for concept, row in sorted(self.baseline.items()):
+            proto = row["proto"]
+            if not ("ē" in proto or "ḗ" in proto or "ā" in proto):
+                continue
+            before, after = self.across_w_insertion(proto.lstrip("*"))
+            if before != after:
+                fired.append(concept)
+        self.assertEqual(fired, ["sow"],
+                         "SC102 must fire on exactly the one verba-pura "
+                         "witness in the corpus")
+
+    def test_sc101_is_blocked_before_w_in_sow(self):
+        before, after = self.across_fronting("sḗaną")
+        self.assertEqual(before, after,
+                         "sow's *ā must NOT front before its hiatus *w "
+                         "(R/T p. 151; Hogg 1992: 81)")
+        self.assertEqual(after, ["*s*ā*w*a*n*ą"])
+        self.assertEqual(self.baseline["sow"]["outputs"], "sāwan")
+
+    def test_sc101_fronts_betray_at_its_own_boundary(self):
+        # the front vowel must appear AT the SC101 stage bin, not later
+        # via i-umlaut: *lāwijaną > *lǣwijaną (R/T p. 150)
+        before, after = self.across_fronting("lḗwijaną")
+        self.assertNotEqual(before, after,
+                            "betray's *ā must front before *w + *i "
+                            "(the high-front exception to the *w block)")
+        self.assertEqual(before, ["*l*ā*w*i*j*a*n*ą"])
+        self.assertEqual(after, ["*l*ǣ*w*i*j*a*n*ą"])
+        self.assertEqual(self.baseline["betray"]["outputs"], "lǣwan")
+
     def test_a_from_ai_arises_too_late_to_front_or_round(self):
         for concept, attested in sorted(AI_BRANCH_CONTROLS.items()):
             row = self.baseline[concept]
             form = row["proto"].lstrip("*")
-            # untouched by A (no *ē₁), by rounding and by fronting
-            # (its ā does not exist yet at positions 26–27)
-            for probe in (self.across_sc024, self.across_rounding,
-                          self.across_fronting):
+            # untouched by A (no *ē₁), by w-insertion, by rounding and by
+            # fronting (its ā does not exist yet at positions 26–28)
+            for probe in (self.across_sc024, self.across_w_insertion,
+                          self.across_rounding, self.across_fronting):
                 before, after = probe(form)
                 self.assertEqual(
                     before, after,
                     f"{concept} ({row['proto']}) has *ai, whose ā arises "
-                    "only at SC004; it must pass positions 12/26/27 untouched",
+                    "only at SC004; it must pass positions 4/26/27/28 untouched",
                 )
             self.assertEqual(row["outputs"], attested)
 
@@ -273,7 +368,8 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
 
     def test_registry_metadata_matches_the_two_change_architecture(self):
         registry = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
-        sc024, sc025, sc101 = registry["SC024"], registry["SC025"], registry["SC101"]
+        sc024, sc025, sc101, sc102 = (registry["SC024"], registry["SC025"],
+                                      registry["SC101"], registry["SC102"])
         self.assertEqual(sc024["fst_identifier"], "PNWGmcLongELowering")
         self.assertEqual(sc024["hist_stage"], "pnwgmc")
         self.assertEqual(sc024["hist_scope"], "pan_pnwgmc")
@@ -285,8 +381,13 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(sc101["fst_identifier"], "EAFLongAFronting")
         self.assertEqual(sc101["hist_stage"], "eaf")
         self.assertEqual(sc101["hist_scope"], "north_sea_germanic")
-        self.assertEqual(sc101["verdict"], "SPLIT")
-        for row in (sc024, sc025, sc101):
+        self.assertEqual(sc101["verdict"], "SPLIT/RESTRICT")
+        # SC102 is Anglo-Frisian only: OS/OHG repaired the hiatus with *j
+        self.assertEqual(sc102["fst_identifier"], "EAFHiatusWInsertion")
+        self.assertEqual(sc102["hist_stage"], "eaf")
+        self.assertEqual(sc102["hist_scope"], "anglo_frisian")
+        self.assertEqual(sc102["verdict"], "SPLIT")
+        for row in (sc024, sc025, sc101, sc102):
             self.assertEqual(row["confidence"], "B",
                              "the two-step reconstruction is disputed "
                              "(Fulk 2018 §4.6); confidence must stay B")
@@ -321,10 +422,15 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         return rows[0]
 
     def test_feeding_edges_from_change_a(self):
-        for tgt in ("SC025", "SC101"):
+        for tgt in ("SC025", "SC101", "SC102"):
             edge = self.edge("SC024", tgt)
             self.assertEqual(edge["evidence_basis"], "independently_demonstrated")
             self.assertEqual(edge["relation_type"], "one_sided_chronology")
+
+    def test_sc102_before_sc101_is_a_recorded_historical_assertion(self):
+        edge = self.edge("SC102", "SC101")
+        self.assertEqual(edge["direction_basis"], "later_boundary")
+        self.assertIn("historically asserted", edge["notes"].lower())
 
     def test_pre_sc004_edges_encode_campbell_132(self):
         self.assertEqual(self.edge("SC025", "SC004")["representative_lexemes"],
@@ -343,9 +449,9 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         )
 
     def test_earlier_side_of_change_a_stays_runner_limited(self):
-        edge = self.edge("SC024", "PWGmcChanges")
+        edge = self.edge("SC024", "EarlyEnglishLineChanges")
         self.assertEqual(edge["relation_type"], "runner_limited_boundary")
-        self.assertIn("not a lower boundary", edge["notes"])
+        self.assertIn("not a real lower boundary", edge["notes"])
 
     # ------------------------------------------------------------------
     # Memos and reader-facing write-ups
@@ -355,7 +461,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         memo = MEMO.read_text(encoding="utf-8")
         self.assertTrue(memo.splitlines()[2].startswith(
             "Registry-verdict: SC024=SPLIT/REFORMULATE/REORDER; "
-            "SC025=REFORMULATE/REORDER; SC101=SPLIT"))
+            "SC025=REFORMULATE/REORDER; SC101=SPLIT/RESTRICT; SC102=SPLIT"))
         old = OLD_MEMO.read_text(encoding="utf-8")
         self.assertIn("SUPERSEDED IN IMPLEMENTATION", old)
 
@@ -367,6 +473,8 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
              "[@RingeTaylor2014, pp. 150--152]"),
             ("101-long-a-fronting.md", "{#rule-EAFLongAFronting}",
              "[@RingeTaylor2014, pp. 146--150"),
+            ("102-hiatus-w-insertion.md", "{#rule-EAFHiatusWInsertion}",
+             "[@Thorhallsdottir1993, pp. 114--137]"),
         ):
             text = (READER / fname).read_text(encoding="utf-8")
             self.assertIn(anchor, text, fname)
@@ -374,11 +482,19 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         # the dispute must be recorded, not suppressed
         self.assertIn("@Fulk2018",
                       (READER / "024-long-e-lowering.md").read_text(encoding="utf-8"))
+        # the SC101 chapter must document BOTH sides of the *w condition
+        fronting = (READER / "101-long-a-fronting.md").read_text(encoding="utf-8")
+        self.assertIn("sāwan", fronting)
+        self.assertIn("lǣwan", fronting)
+        self.assertNotIn("without being encoded", fronting,
+                         "the SC101 chapter must no longer describe the "
+                         "*w restriction as unencoded")
 
-    def test_chronology_cards_exist_for_all_three(self):
+    def test_chronology_cards_exist_for_all_four(self):
         for fname in ("SC024-nwgmc-long-e-lowering.md",
                       "SC025-eaf-long-a-nasal-rounding.md",
-                      "SC101-eaf-long-a-fronting.md"):
+                      "SC101-eaf-long-a-fronting.md",
+                      "SC102-eaf-hiatus-w-insertion.md"):
             card = (CARDS / fname).read_text(encoding="utf-8")
             self.assertIn("sc024-sc025-sc101-e1-complex-adjudication.md", card)
 

@@ -75,6 +75,8 @@ digraph first_break_chronology {
   "SC086" [label="SC086\nOE Contraction"];
   "SC087" [label="SC087\nOE R Metathesis"];
   "SC101" [label="SC101\nEAF Long A Fronting"];
+  "SC102" [label="SC102\nEAF Hiatus W Insertion"];
+  "EarlyEnglishLineChanges" [shape=ellipse, fillcolor="#faf089"];
   "PWGmcChanges" [shape=ellipse, fillcolor="#faf089"];
   "RUNNER_LIMIT" [shape=ellipse, fillcolor="#faf089"];
   "SC014" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
@@ -95,9 +97,11 @@ digraph first_break_chronology {
   "SC022" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC023" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC023" -> "SC047" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC024" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
+  "SC024" -> "EarlyEnglishLineChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC024" -> "SC025" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC024" -> "SC101" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC024" -> "SC102" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC102" -> "SC101" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC025" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC101" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC101" -> "SC056" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
