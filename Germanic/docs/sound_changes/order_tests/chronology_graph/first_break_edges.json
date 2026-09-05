@@ -107,13 +107,13 @@
     },
     {
       "change_id": "SC024",
-      "display_name": "Proto-Northwest Germanic Long E Lowering",
+      "display_name": "Long E Lowering with Anglo-Frisian Fronting",
       "current_order": "24",
       "rule_name": "PNWGmcLongELowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC024-nwgmc-long-e-lowering.md",
       "card_type": "broad_far",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC056 and is broad/far rather than local."
+      "short_summary": "Stage/scope corrected: the rule telescopes PNWGmc *e1 > *a (pan-NWGmc, runic-dated 2nd c. AD) plus Anglo-Frisian fronting of non-nasalized *a > ae (sc024-adjudication.md). No earlier ordinary chronology break was found before bundled PWGmcChanges (runner-limited, not a lower boundary); later side is an independently demonstrated one-sided boundary across SC056 (sheep, year: WS palatal diphthongization operated on already-fronted ae), broad/far rather than local."
     },
     {
       "change_id": "SC025",
@@ -971,7 +971,7 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC056 and is broad/far rather than local."
+      "notes": "Runner-limited: no earlier real break before bundled PWGmcChanges; not a lower boundary. Scholarship supplies only an absolute early anchor for the pan-NWGmc *e1 > *a onset (runic makija, 2nd c. AD, Gronvik 1998: 87 apud R/T 2014 p.12), not an in-cascade constraint. See sc024-adjudication.md."
     },
     {
       "source_change_id": "SC024",
@@ -985,7 +985,7 @@
       "strength": "broad_far",
       "interpretation_category": "broad_far",
       "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC056 and is broad/far rather than local."
+      "notes": "Independently demonstrated: WS palatal diphthongization operated on already-fronted ae (Campbell sec.185 pp.69-70 sceap, gear; R/T 2014 p.216 *skap > *skaep > sceap). Model counterfactual (sciep/gier via e > ie) differs from the historical one (unfronted a would fail to diphthongize, **scap/**gar) because the one-step proxy has no *a stage; same ordering conclusion. See sc024-adjudication.md."
     },
     {
       "source_change_id": "SC025",

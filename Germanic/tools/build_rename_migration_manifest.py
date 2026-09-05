@@ -129,6 +129,15 @@ RENAMES["SC023"] = {
     "notes": "Foma identifier remains stable; Ringe 2017 pp.101-103 correct the historical stage from PNWGmc to (pre-)Proto-Germanic general word-final *-n loss (sc023-adjudication.md); {*o-n}-only environment is a citation-form proxy.",
 }
 
+RENAMES["SC024"] = {
+    "canonical_foma_identifier": "PNWGmcLongELowering",
+    "canonical_display_name": "Long E Lowering with Anglo-Frisian Fronting",
+    "canonical_hist_stage": "eaf",
+    "canonical_hist_scope": "anglo_frisian",
+    "migration_status": "pending",
+    "notes": "Foma identifier remains stable; R/T 2014 pp.11-14, 146-152 correct the scope: the rule telescopes pan-NWGmc *e1 > *a plus Anglo-Frisian fronting of non-nasalized *a (OS/OHG/ON keep a), so the fronted outcome is Anglo-Frisian, not pan-NWGmc (sc024-adjudication.md); one-step *e > *ae proxy keeps *e1 disjoint from a < *ai.",
+}
+
 # --- 3.2 Early Anglo-Frisian corridor rules ---
 RENAMES["SC003"] = {
     "canonical_foma_identifier": "EAFRhotacism",

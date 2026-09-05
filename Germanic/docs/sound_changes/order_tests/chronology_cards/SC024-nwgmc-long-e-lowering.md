@@ -23,13 +23,13 @@
 - failure count: `2`
 - representative failures: `sheep; year`
 - concrete failure example: PGmc `*skḗpą` yields expected OE `sċēap`, but the later-shifted variant yields `sċīep`; PGmc `*jḗrą` likewise yields `ġīer` instead of expected `ġēar`
-- interpretation: SC024 can move later safely through order `55`, but it cannot move later across SC056. Delaying NWGmc Long E Lowering that far forward leaves unlowered high diphthong outcomes in the `sheep` and `year` derivations.
+- interpretation: SC024 can move later safely through order `55`, but it cannot move later across SC056. The historical content (sc024-adjudication.md) is that West Saxon palatal diphthongization operated on the already-fronted vowel (ǣ > ēa after sċ-, ġ-: `sċēap`, `ġēar`), so the fronting must already have applied — an independently demonstrated ordering, not merely stage-entailed. Note that the model counterfactual (`sċīep`, `ġīer` via ē > īe) differs from the historical counterfactual (an unfronted `*ā` would simply fail to diphthongize, giving `**sċāp`, `**ġār`) because the one-step executable proxy has no `*ā` stage; the ordering conclusion is the same.
 
 ## Chronology statement
 Current first-break evidence identifies one historically interpretable boundary for SC024. The earlier search ran safely down to order `13` before stopping at bundled `PWGmcChanges` with no real break, so that side remains runner-limited. The later search does find a real historical boundary at `SC056` OE Ws Palatal Diphthongization: if NWGmc Long E Lowering is moved later than that stage, PGmc `*skḗpą` yields `sċīep` rather than expected OE `sċēap`, and PGmc `*jḗrą` yields `ġīer` rather than expected `ġēar`.
 
 ## Caveats
-This card is one-sided in current testing. The later boundary is historically interpretable, but it is broad/far across `SC056` rather than a tight local adjacency claim; the earlier side must not be rewritten as a positive boundary because it stops at bundled `PWGmcChanges`.
+This card is one-sided in current testing. The later boundary is historically interpretable (independently demonstrated; see above), but it is broad/far across `SC056` rather than a tight local adjacency claim; the earlier side must not be rewritten as a positive boundary because it stops at bundled `PWGmcChanges`. The adjudication (sc024-adjudication.md) additionally records a scholarship-only ordering — fronting of inherited `*ā` preceded completion of `*ai > ā` (Campbell §132; R/T pp. 169–170) — which is deliberately executable-invisible: the one-step `{*ē} → {*ǣ}` proxy keeps `*ē₁` reflexes disjoint from `ā < *ai` by symbol separation, so no runner edge can or should record it.
 
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03.tsv`

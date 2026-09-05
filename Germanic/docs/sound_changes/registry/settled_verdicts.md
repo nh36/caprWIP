@@ -11,3 +11,4 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC021 | Retired NWGmc Unstressed O Raising | retired | RETIRE | `Germanic/docs/sound_changes/audits/sc021-adjudication.md` |
 | SC022 | Common Germanic Mn Dissimilation | active | REFORMULATE/RETAIN | `Germanic/docs/dossier-sc022-mn-dissimilation-2026.md` |
 | SC023 | Proto-Germanic Word-Final N Loss | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc023-adjudication.md` |
+| SC024 | Long E Lowering with Anglo-Frisian Fronting | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc024-adjudication.md` |

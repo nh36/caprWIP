@@ -2317,10 +2317,18 @@ define PNWGmcMnDissimilation [
     {*m} -> {*β} || EnglishStarVocalic _ {*n}
 ];
 
-# R/T vol.2 §5.1.2: PGmc *ē₁ → OE ǣ. Historically *ē₁ lowered to *ā in NWGmc,
-# then *ā was fronted to *ǣ by AFB. We model this as a direct *ē → *ǣ to avoid
-# conflating with *ā < *ai monophthongization (which was NOT fronted; R/T §6.1.2:
-# "fronting of *ā must have preceded monophthongization of *ai").
+# SC024 (adjudicated REFORMULATE/RETAIN; see audits/sc024-adjudication.md).
+# Telescopes two historical changes: (i) PNWGmc *ē₁ > *ā, pan-NWGmc, runic-dated
+# (mākija, 2nd c. AD; R/T vol.2 pp. 11-14); (ii) Anglo-Frisian fronting of
+# non-nasalized *ā > WS ǣ / Angl.-Kent.-OFris ē (R/T §5.1.2 pp. 146-152;
+# Campbell §128). OS/OHG/ON keep ā — scope is Anglo-Frisian, not pan-NWGmc.
+# Campbell §129 is agnostic on the *ā detour (retention view: Wright, Bennett,
+# Grønvik); the one-step *ē → *ǣ proxy is compatible with both analyses.
+# The direct proxy also avoids conflating with *ā < *ai monophthongization
+# (which was NOT fronted: stān, hām; R/T §6.1.2 pp. 169-170, Campbell §132) —
+# that ordering constraint is encoded by symbol separation, not rule order.
+# The nasal branch (*ē₁ before nasal > ō) is the complementary conditioned
+# outcome of the same development: see PNWGmcLongENasalRounding (SC025) below.
 define PNWGmcLongELowering [
     {*ē} -> {*ǣ} || _ [EnglishStarConsonant - EnglishStarNasal],
     # §17.46: stressed long *ḗ undergoes the same lowering. Stress is dropped

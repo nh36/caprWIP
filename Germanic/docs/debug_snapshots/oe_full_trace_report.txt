@@ -1,8 +1,8 @@
 === PROVENANCE ===
-germanic.txt sha256: 0d800dd7057fbe2196df9a0b4cc8b4a390206c2e280ad0f6af82b13a406ff826
+germanic.txt sha256: 3e1744571a4fff37e1733fb23fc8bb959e192a66bd4f6644296d952986b66c15
 old_english_sandbox.txt sha256: a3099447ec25e882a8d3c0d8dc435a359e30771a338e0f284eeaccadc4a0374f
 germanic-aligned-final.tsv sha256: 59b9798934e8a79b724716e778d35050f24a42b6260d44fbad21b065a907122e
-old_english.bin sha256 (informational): 33bfd9945f1fa98afbf9d01d02de6d7a32118141e9056b1f16c9f441183ea95e
+old_english.bin sha256 (informational): 35f78ae798c15325e1161e9062c423f6c36bcb9a0a49ca2fba507299c502e315
 
 === BUCKET: exact_match (376) ===
 

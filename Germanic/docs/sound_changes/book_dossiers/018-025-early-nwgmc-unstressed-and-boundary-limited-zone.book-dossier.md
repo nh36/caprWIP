@@ -54,7 +54,12 @@ is not stage evidence.
   witness — OE `dōn` keeps its secondary final `-n` — and the boundary is
   stage-entailed rather than locally adjacent)
 - `SC024` `NWGmcLongELowering` -> outward rightward boundary at `SC056` with
-  `sheep` and `year`
+  `sheep` and `year` (adjudicated 2026, `audits/sc024-adjudication.md`: the
+  rule telescopes pan-NWGmc `*ē₁ > *ā` — runic `mākija`, 2nd c. AD — plus
+  Anglo-Frisian fronting of non-nasalized `*ā > *ǣ`; scope corrected from
+  pan-NWGmc to Anglo-Frisian, since OS/OHG/ON keep `ā`; the SC056 boundary is
+  independently demonstrated — WS palatal diphthongization operated on the
+  already-fronted vowel, `sċēap`, `ġēar`)
 
 These are the remaining later-facing current members. Neither boundary is
 internal to the row; each points outward to an already promoted later report.
@@ -104,6 +109,8 @@ This is the clearest later split if the project wants more explicit prose.
 - Common-Germanic context note: `SC022`
 - Proto-Germanic context note: `SC023` (stage corrected 2026; executable
   position 23 is a holding-zone placement only)
+- Anglo-Frisian context note: `SC024` (stage/scope corrected 2026; the
+  fronted `*ǣ` outcome is Anglo-Frisian, not pan-NWGmc)
 - later singleton candidates: `SC023`, `SC024`
 - retired note: archival `SC021` only, with live cross-reference to
   SC071/SC099/SC100

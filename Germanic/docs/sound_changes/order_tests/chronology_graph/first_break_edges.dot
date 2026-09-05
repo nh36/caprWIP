@@ -14,7 +14,7 @@ digraph first_break_chronology {
   "SC021" [label="SC021\nRetired NWGmc Unstressed O Raising", fillcolor="#71809622", color="#718096"];
   "SC022" [label="SC022\nCommon Germanic Mn Dissimilation"];
   "SC023" [label="SC023\nProto-Germanic Word-Final N Loss"];
-  "SC024" [label="SC024\nProto-Northwest Germanic Long E Lowering"];
+  "SC024" [label="SC024\nLong E Lowering with Anglo-Frisian Fronting"];
   "SC025" [label="SC025\nProto-Northwest Germanic Long E Nasal Rounding"];
   "SC026" [label="SC026\nNorth Sea Germanic nasal-spirant lengthening"];
   "SC027" [label="SC027\nNorth Sea Germanic nasal-spirant loss"];
