@@ -624,7 +624,9 @@ class VarietyAnnotationAuditTests(unittest.TestCase):
             if ":" not in ref:
                 continue
             path, ln = ref.rsplit(":", 1)
-            p = Path(path)
+            # source_refs are repo-root relative; resolve against REPO_ROOT so
+            # the check runs identically from any pytest invocation directory.
+            p = REPO_ROOT / path
             if not p.exists() or not ln.isdigit():
                 continue
             line = p.read_text(encoding="utf-8").splitlines()[int(ln) - 1]
