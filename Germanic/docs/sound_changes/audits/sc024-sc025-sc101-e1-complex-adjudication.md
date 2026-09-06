@@ -1,33 +1,47 @@
-# SC024/SC025/SC101 — the *ē₁ complex: two sound changes, three executable rules
+# SC024/SC025/SC101/SC102 — the *ē₁ complex and hiatus-*w follow-up
 
 Registry-verdict: SC024=SPLIT/REFORMULATE/REORDER; SC025=REFORMULATE/REORDER; SC101=SPLIT/RESTRICT; SC102=SPLIT
 
 Status: adjudicated (this memo governs SC024, SC025, SC101 and SC102)
 Scope: the complete history of Proto-Germanic *ē₁ in CAPR — the former
 one-step SC024 `PNWGmcLongELowering`, the former SC025
-`PNWGmcLongENasalRounding`, and the new SC101 `EAFLongAFronting`.
+`PNWGmcLongENasalRounding`, the SC101 `EAFLongAFronting` identity
+created by the split, and the SC102 `EAFHiatusWInsertion` identity
+created by the sow/lǣwan follow-up (§12).
 Supersedes in implementation: `sc024-adjudication.md` (whose historical
 research this memo builds on, but whose decision to RETAIN the one-step
 executable proxy is rejected; see §9).
+
+Open question reserved for later adjudication: whether SC102 should be
+decomposed into a phonological insertion plus a separate analogical
+generalization. See §13.
 
 Verdict summary:
 
 - **SC024 = SPLIT/REFORMULATE/REORDER.** The old rule telescoped two
   historically distinct changes. SC024 now implements only the early
   Northwest Germanic lowering, stressed *ē₁ > *ā, unconditioned, as
-  `{*ḗ} -> {*ā}` at cascade position 12.
-- **SC101 = SPLIT.** New identity for the second half of the old
-  telescope: the much later northern West Germanic fronting of
-  non-nasalized *ā > *ǣ, `{*ā} -> {*ǣ} / _ [C − nasal]`, position 27,
-  immediately before SC004 `EAFAiMonophthongization`.
+  `{*ḗ} -> {*ā}` at cascade position 4 (§10).
+- **SC101 = SPLIT/RESTRICT.** New identity for the second half of the
+  old telescope: the much later northern West Germanic fronting of
+  non-nasalized *ā > *ǣ, `{*ā} -> {*ǣ} / _ [C − nasal − w]` plus
+  fronting before *w + high front vocalic (§11), position 28,
+  immediately before SC004 `EAFAiMonophthongization` (position 29).
 - **SC025 = REFORMULATE/REORDER.** The nasal branch no longer bypasses
   the intermediate stage: `EAFLongANasalRounding`, `{*ā} -> {*ō} / _
-  nasal`, position 26, consuming the *ā produced by SC024.
+  nasal`, position 27, consuming the *ā produced by SC024.
+- **SC102 = SPLIT.** Separate identity for the Anglo-Frisian
+  hiatus-filling *w of the *verba pura*, `EAFHiatusWInsertion`,
+  position 26: fed by SC024, feeding the *w environment SC101 reads
+  (§12).
 
-All 383 corpus surface outputs are unchanged; what changed is the
-internal derivational history, which now passes through the
-reconstructed intermediate *ā, and the chronology, which is now carried
-by real cascade order instead of symbol separation.
+Every corpus surface output that existed before this adjudication is
+unchanged; what changed is the internal derivational history, which now
+passes through the reconstructed intermediate *ā, and the chronology,
+which is now carried by real cascade order instead of symbol
+separation. The two witnesses added by the follow-up (sow, betray)
+brought the corpus from 383 to 385 rows without altering any
+pre-existing output (§12.4).
 
 ## 0. What CAPR claimed before this adjudication
 
@@ -122,9 +136,25 @@ Kept separate from the scholarship interpreting it:
   ca. 500); the *swā/sō coalescence argument; Angle/Frisian ethnonyms
   in ⟨e⟩; n. 2 counters Stiles 2004; n. 4 reads Thorsberg *-marir*
   (ca. 200) as already showing ⟨a⟩.
-- **Retention tradition**: Bennett 1950, Grønvik (1981: 43–50;
-  1998: 87–89), and older handbooks (Wright): Gmc *ē₁ was still ē or ǣ
-  everywhere, with lowering/backing as late parallel developments.
+- **Retention tradition**: Bennett 1950 (directly consulted; see §13),
+  Grønvik (1981: 43–50; 1998: 87–89), and older handbooks (Wright):
+  Gmc *ē₁ was still ē or ǣ everywhere, with lowering/backing as late
+  parallel developments. Bennett pp. 232–233 sets out the objection in
+  its sharpest form: the received account requires five distinct and
+  mutually unrelated patterns, and forces Gothic through *ē > *ǣ > *ē*
+  and non-WS OE/OFris through *ē > *ǣ > *ā > *ǣ > *ē*, with "no
+  apparent agreement among the languages and no discernible
+  phonological trend" (p. 235). He stresses that PGmc *ǣ "is not
+  supposed to be preserved directly in any historic Germanic
+  language" (p. 233), and that neither the Old Saxon/OHG ā-reflexes
+  (OS *gēbun* still in the 9th c.; Caesar's *Suēbi*, *Hariomērus*, not
+  *Suābi*, *-mārus*) nor the Latin-loan parallel (*strāta* > WS
+  *strǣt*) compels a common West Germanic *ā (p. 233). His own
+  proposal (pp. 234–235) is areal: the change *ē > *ǣ > *ā began in
+  the north of the homeland and spread south, missing the peripheries,
+  so that Gothic in the east and Anglian/Frisian in the west were
+  never reached and West Saxon, "carried to the west before the change
+  was completed, shows the intermediate stage ǣ" (p. 235).
 
 ### 1.3 Why the two-step analysis, and why confidence B
 
@@ -137,14 +167,20 @@ non-fronting of ā < *ai then follows from ordinary rule ordering
 (Campbell §132), which a retention analysis must instead attribute to
 accidental non-merger.
 
-But Fulk's alternative is serious: the runic ⟨a⟩ spellings could
-represent a low *front* [æː] for which the futhark had no better
+But the retention alternative is serious. Fulk's runic ⟨a⟩ spellings
+could represent a low *front* [æː] for which the futhark had no better
 grapheme, and the ethnonym and *swā/sō evidence is not trivially
-dismissed. Campbell declined to decide. The reconstruction of the
-intermediate value is therefore genuinely disputed, and all three
-registry rows carry **confidence B**, not A. What is *not* disputed is
-the surface comparative distribution (Gothic ē vs. NWGmc non-front ā
-vs. North Sea front reflexes) — only the path between them.
+dismissed; Bennett 1950: 232–233 independently denies that a common
+West Germanic *ā is needed at all, and observes that PGmc *ǣ is on the
+received account nowhere directly attested (p. 233). Campbell declined
+to decide. The reconstruction of the intermediate value is therefore
+genuinely disputed, and the **SC024, SC025 and SC101** registry rows
+carry **confidence B**, not A, for exactly this reason. What is *not*
+disputed is the surface comparative distribution (Gothic ē vs. NWGmc
+non-front ā vs. North Sea front reflexes) — only the path between them.
+
+SC102's confidence B does **not** derive from this controversy; it has
+an independent rationale, recorded in §13.4.
 
 ## 2. Change A — SC024 `PNWGmcLongELowering`
 
@@ -161,13 +197,15 @@ vs. North Sea front reflexes) — only the path between them.
 - **Chronology**: under way by the later 2nd c. AD (*mākija*); no
   in-cascade earlier boundary (runner-limited at bundled
   `PWGmcChanges`).
-- **Executable**: `{*ḗ} -> {*ā}` (stressed tier only), position 12,
-  at the head of the NWGmc block — before `MonosyllabicFinalZLoss`, so
-  that secondary compensatory *ḗ created there cannot feed it, and
-  before every rule that consumes *ā.
-- **Census: 15 firings** — the 13 stressed oral roots (adder, bier,
-  deed, eel, hair, let, meal, needle, read, sheep, sleep, weapon,
-  year) plus month and spoon, which now correctly pass through *ā.
+- **Executable**: `{*ḗ} -> {*ā}` (stressed tier only), position 4,
+  at the head of the early corridor — before `MonosyllabicFinalZLoss`,
+  so that secondary compensatory *ḗ created there cannot feed it,
+  before every genuinely PWGmc innovation (§10), and before every rule
+  that consumes *ā.
+- **Census: 17 firings** — the 14 stressed oral roots (adder, betray,
+  bier, deed, eel, hair, let, meal, needle, read, sheep, sleep,
+  weapon, year), sow, plus month and spoon, which now correctly pass
+  through *ā.
 
 ### 2.1 The five former unstressed firings
 
@@ -188,16 +226,24 @@ deferred; it does not affect SC024, whose input tier is fully marked.)
 - **Historical phenomenon**: much later fronting of non-nasalized
   stressed *ā > *ǣ in the northern West Germanic / North Sea Germanic
   dialect continuum (WS ǣ; Anglian/Kentish/OFris ē; sporadic OS ⟨e⟩).
-- **Conditioning**: stressed, non-nasalized *ā; historically blocked
-  before *w followed by anything but a high front vocalic (R/T
-  p. 149). No corpus row reaches the *w environment, so the blocking
-  is documented rather than encoded.
+- **Conditioning**: stressed, non-nasalized *ā; blocked before *w
+  followed by anything but a high front vocalic (R/T p. 149, pp.
+  150–151). That restriction is now **encoded**, not merely
+  documented, and both sides of it carry a corpus witness: sow is
+  blocked, betray is fronted (§11). Bennett 1950: 235 n. 6 states the
+  same environment independently from the WS evidence — WS OE "shows
+  ǣ as a regular isolative development of IE ē but has ā before w or g
+  plus a back vowel" — and notes that on the two-step reading (CAPR's)
+  "the WS ā in such forms is simply a combinative retention of the
+  older vowel", i.e. exactly a blocked fronting.
 - **Stage/scope**: `eaf` / `north_sea_germanic` — not mechanically
   "Anglo-Frisian", because the sporadic OS ⟨e⟩ spellings show uneven
   Old Saxon participation.
 - **Executable**: `{*ā} -> {*ǣ} / _ [EnglishStarConsonant −
-  EnglishStarNasal]`, position 27, immediately before SC004.
-- **Census: 13 firings** — the 13 stressed oral roots above.
+  EnglishStarNasal − *w]`, plus the high-front-vocalic exception that
+  admits betray, position 28, immediately before SC004 (position 29).
+- **Census: 14 firings** — the 13 stressed oral roots above plus
+  betray; sow is the blocked control.
 - **Chronology**: must precede the completion of *ai > ā (SC004) and
   WS palatal diphthongization (SC056); see §5. The old sheep/year
   SC056 edge attaches **here**, not to SC024 — SC101 is the rule that
@@ -217,7 +263,7 @@ deferred; it does not affect SC024, whose input tier is fully marked.)
 - **Relation to SC101**: complementary conditioned outcomes of the
   same later low-vowel development (nasalized → rounded, oral →
   fronted). The corpus cannot order them against each other and no
-  claim is made; their mutual adjacency at positions 26–27 is
+  claim is made; their mutual adjacency at positions 27–28 is
   arbitrary. An explicit nasalization microstep (*ā > *ą̄) is **not**
   modelled: CAPR's segment inventory has no nasalized-vowel tier and
   the scholarship does not force an independently *ordered*
@@ -474,3 +520,129 @@ Rows added: sow (ID 2328, *sḗaną → sāwan) and betray (ID 2329,
 376 → 378. legacy_subset_sha256 is unchanged; outputs_sha256 changed
 only by the two additions; every pre-existing output is
 byte-identical despite the SC024 move and the SC101 reconditioning.
+
+## 13. Source-status audit and the deferred SC102 question
+
+This section is **internal**. None of it belongs in reader-facing
+chapters, which must read as ordinary historical-linguistic
+scholarship and must cite only sources actually relied upon.
+
+### 13.1 Directly verified
+
+Held locally in `docs/references/` and read directly for this
+adjudication:
+
+- **Ringe & Taylor 2014** (`ringe_taylor_linguistic_history_vol2`) —
+  pp. 12–14, 147, 149, 150–152. The governing account for the
+  two-step reconstruction, the stress restriction, the *w blocking
+  and its high-front exception, and the verba pura.
+- **Fulk 2018** (`fulk_comparative_grammar_early_germanic`) — §4.6
+  pp. 60–61 with nn. 2 and 4. The principal modern alternative.
+- **Campbell 1959** (`campbell_old_english_grammar`) — §§127, 128,
+  132, 185.
+- **Hogg 1992** (`hogg_vol1`).
+- **Stiles 2017** (`stiles_2017_opedal_swestar_runic`) — p. 4, the
+  Saami-loan and Early Runic dating, and the report of Lid 1952.
+- **Bennett 1950** (`bennett_1950_germanic_development_of_ie_e`) —
+  pp. 232–235, acquired and read directly during this pass. The PDF's
+  embedded text layer has a broken font encoding that mis-renders
+  every phonetic symbol; a verified transcript of the argument and of
+  n. 6 was made from the page images and is stored alongside it as
+  `.vision.txt`. All Bennett citations in this memo are page-precise
+  and read off the page, not taken over from another scholar.
+
+### 13.2 Known only indirectly
+
+Cited in this memo through a directly consulted source. No local copy
+exists, and no page reference to them has been independently checked:
+
+- **Þórhallsdóttir 1993** (pp. 82–137 / 114–137) — known through
+  Ringe & Taylor's discussion of the verba pura (p. 151).
+- **Stiles 2004** (pp. 387–389) — known through R&T pp. 13–14 and
+  Fulk 2018 §4.6 n. 2.
+- **Grønvik 1998** (pp. 87–89) — known through R&T p. 12.
+- **Grønvik 1981** (pp. 43–50) — known through the retention-tradition
+  summaries in R&T and Fulk.
+- **Lid 1952** (p. 238) — known through Stiles 2017: 4.
+
+Bibliography entries for these are retained in `docs/refs.bib`; a
+missing local copy is not a reason to drop a reference.
+
+### 13.3 Pending direct verification
+
+The five items in §13.2 remain to be acquired and read. Until then no
+reader-facing chapter may carry a page-specific citation to them as
+though the pages had been checked here. Where the present account is
+in fact known from Ringe & Taylor, the chapters cite Ringe & Taylor.
+
+Bennett 1950 was on this list at the opening of this pass and has been
+discharged: it moved to §13.1 when the article was acquired and read.
+
+### 13.4 SC102: what is settled, and what is deferred
+
+SC102 `EAFHiatusWInsertion` is a **provisional paradigm-level
+implementation** of the currently adopted outcome. Current SC102
+represents the paradigm-wide outcome with one executable operation.
+The presently consulted account distinguishes an original phonological
+innovation in particular cells from subsequent analogical
+generalization. Whether CAPR should decompose these into separate
+historical operations is reserved for later direct source-led
+adjudication.
+
+That adjudication should determine, from Þórhallsdóttir directly:
+
+1. what she actually argues;
+2. which paradigm cells undergo regular phonological insertion;
+3. how and when analogy spreads the *w;
+4. whether the spread precedes SC101;
+5. whether CAPR should model phonological insertion and analogy as
+   separate operations.
+
+Until then:
+
+- the one-rule architecture is **not** claimed to be definitively
+  historical;
+- a two-operation architecture is **not** claimed to be definitively
+  required;
+- no SC102A and no analogy operation is created.
+
+**SC102's confidence rationale.** SC102 carries confidence B on its
+own grounds, *not* because of the Fulk/*ē₁ controversy that governs
+SC024, SC025 and SC101 (§1.3). The broad innovation — that the West
+Germanic verba pura developed hiatus-breaking consonants, that Old
+English and Old Frisian developed *w, and that the *w was in place
+early enough to block long-*ā fronting — is supported by the
+scholarship consulted here. What has not been directly adjudicated
+from the specialist source is the precise phonological-versus-
+analogical architecture of that innovation. That is the whole of
+SC102's B.
+
+### 13.5 Chronology status of the four rules
+
+- **SC024 → SC102** is executably demonstrated **feeding**: SC024
+  supplies the *ā that SC102's environment reads.
+- **SC102 → SC101** is at present a **historical ordering claim**,
+  asserted from Ringe & Taylor. In the current formulation the two
+  executable operations **commute**, so displacement probes cannot
+  demonstrate the order, and no displacement witness has been
+  manufactured to make them appear to. This edge must not be promoted
+  to "independently demonstrated chronology".
+- A future decomposition of SC102 (§13.4) may alter this relationship,
+  since a separately ordered analogical generalization could stand in
+  a different relation to SC101 than the present single operation
+  does.
+
+### 13.6 Newly opened questions from Bennett 1950 (not acted on here)
+
+Recorded, deliberately not implemented in this pass:
+
+- Bennett 1950: 235 n. 6 gives the retaining environment as "before w
+  **or g** plus a back vowel". CAPR encodes only the *w side. Whether
+  a *g-plus-back-vowel environment should also block SC101 is an open
+  question requiring its own adjudication and its own witnesses.
+- Bennett's *wǣg* / *wāgas* 'wave(s)' alternation is a paradigmatic
+  split of exactly the shape SC101 now encodes for *w — retention
+  before the back vowel, fronting elsewhere — and he notes that
+  analogical *wǣgas* for *wāgas* also occurs, i.e. levelling runs in
+  the opposite direction from the SC102 case. Neither observation
+  changes any rule here.

@@ -387,10 +387,21 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(sc102["hist_stage"], "eaf")
         self.assertEqual(sc102["hist_scope"], "anglo_frisian")
         self.assertEqual(sc102["verdict"], "SPLIT")
-        for row in (sc024, sc025, sc101, sc102):
+        for row in (sc024, sc025, sc101):
             self.assertEqual(row["confidence"], "B",
-                             "the two-step reconstruction is disputed "
-                             "(Fulk 2018 §4.6); confidence must stay B")
+                             "the two-step *ē₁ reconstruction is disputed "
+                             "(Fulk 2018 §4.6; Bennett 1950); confidence "
+                             "must stay B")
+        # SC102's B has an independent rationale: the broad innovation is
+        # supported by the scholarship consulted, but the phonological-
+        # versus-analogical architecture has not been adjudicated from the
+        # specialist source. It must NOT ride on the *ē₁ controversy.
+        self.assertEqual(sc102["confidence"], "B",
+                         "SC102 stays provisionally B: the hiatus-*w "
+                         "innovation is well supported, but its "
+                         "phonological-versus-analogical architecture "
+                         "awaits direct source-led adjudication")
+        for row in (sc024, sc025, sc101, sc102):
             self.assertEqual(row["adjudication_status"], "adjudicated")
             self.assertIn("sc024-sc025-sc101-e1-complex-adjudication.md",
                           row["adjudication_memo"])
@@ -474,7 +485,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             ("101-long-a-fronting.md", "{#rule-EAFLongAFronting}",
              "[@RingeTaylor2014, pp. 146--150"),
             ("102-hiatus-w-insertion.md", "{#rule-EAFHiatusWInsertion}",
-             "[@Thorhallsdottir1993, pp. 114--137]"),
+             "[@RingeTaylor2014, p. 151]"),
         ):
             text = (READER / fname).read_text(encoding="utf-8")
             self.assertIn(anchor, text, fname)
@@ -489,6 +500,109 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertNotIn("without being encoded", fronting,
                          "the SC101 chapter must no longer describe the "
                          "*w restriction as unencoded")
+
+    def test_reader_chapters_carry_no_research_process_language(self):
+        """Reader prose is scholarship, not a source-acquisition log.
+
+        The source-status audit lives in the governing memo (§13). None
+        of it may leak into the chapters.
+        """
+        banned = (
+            "pending direct verification", "pending acquisition",
+            "not locally available", "not yet consulted",
+            "have not consulted", "direct verification",
+            "we are waiting", "lacks the source", "SC102A",
+            "PDF", "refs.bib", "repository",
+        )
+        for fname in ("024-long-e-lowering.md", "025-long-a-nasal-rounding.md",
+                      "101-long-a-fronting.md", "102-hiatus-w-insertion.md"):
+            text = (READER / fname).read_text(encoding="utf-8")
+            for phrase in banned:
+                self.assertNotIn(phrase.lower(), text.lower(),
+                                 f"{fname} must not contain research-process "
+                                 f"language ({phrase!r})")
+
+    def test_reader_chapters_cite_only_directly_consulted_sources(self):
+        """No page-precise citation to a source CAPR holds only at second hand.
+
+        Þórhallsdóttir 1993, Stiles 2004, Grønvik 1981/1998 and Lid 1952
+        are known through Ringe & Taylor, Fulk or Stiles 2017 (memo
+        §13.2). Where the present account rests on them, the chapters
+        must cite the source actually consulted. Bennett 1950 is NOT on
+        this list: it was acquired and read directly (memo §13.1).
+        """
+        indirect = ("@Thorhallsdottir1993", "@Stiles2004",
+                    "@Gronvik1981", "@Gronvik1998", "@Lid1952")
+        for path in sorted(READER.glob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            for key in indirect:
+                self.assertNotIn(key, text,
+                                 f"{path.name} cites {key}, which CAPR "
+                                 "knows only through another source; cite "
+                                 "the source actually relied upon")
+        # the SC102 chapter must rest on the account actually consulted
+        self.assertIn("[@RingeTaylor2014, p. 151]",
+                      (READER / "102-hiatus-w-insertion.md").read_text(encoding="utf-8"))
+
+    def test_memo_records_the_deferred_sc102_decomposition(self):
+        """The unresolved phonology-vs-analogy question is recorded internally.
+
+        It must be recorded as open — not resolved in either direction.
+        """
+        memo = MEMO.read_text(encoding="utf-8")
+        flat = " ".join(memo.replace("*", "").split())
+        self.assertIn("provisional paradigm-level implementation", flat)
+        self.assertIn("reserved for later direct source-led adjudication", flat)
+        # source-status audit present, with the three-way distinction
+        self.assertIn("Directly verified", memo)
+        self.assertIn("Known only indirectly", memo)
+        self.assertIn("Pending direct verification", memo)
+        # SC102's confidence must be decoupled from the *ē₁ controversy
+        self.assertIn("not because of the Fulk/ē₁ controversy", flat)
+        # and the memo must not have been quietly re-adjudicated
+        # the memo may say that no SC102A exists; it may not settle the
+        # question in either direction
+        self.assertIn("the one-rule architecture is not claimed to be "
+                      "definitively historical", flat)
+        self.assertIn("a two-operation architecture is not claimed to be "
+                      "definitively required", flat)
+        self.assertIn("no SC102A and no analogy operation is created", flat)
+
+    def test_sc102_confidence_rationale_is_not_the_e1_controversy(self):
+        rows = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
+        sc102 = rows["SC102"]
+        blob = " ".join(sc102.values())
+        self.assertIn("provisional paradigm-level implementation", blob)
+        self.assertNotIn("two-step", blob,
+                         "SC102's rationale must not invoke the *ē₁ "
+                         "two-step reconstruction dispute")
+
+    def test_no_canonical_claim_that_the_w_restriction_is_unencoded(self):
+        """The *w condition is encoded as of a90d33cb; stale prose must go."""
+        stale = ("documented, not encoded", "documented rather than encoded",
+                 "has no corpus witness and is documented",
+                 "no corpus row reaches the *w environment")
+        for path in (REGISTRY, SC_DIR / "registry" / "sc_inventory_annotations.tsv",
+                     INVENTORY, STAGING_MAP):
+            text = path.read_text(encoding="utf-8")
+            for phrase in stale:
+                self.assertNotIn(phrase, text,
+                                 f"{path.name} still claims the *w "
+                                 "restriction is unencoded")
+
+    def test_card_index_orders_match_the_cascade_manifest(self):
+        """Mechanical consistency for the four adjudicated rows."""
+        manifest = {r["foma_identifier"]: r["position"] for r in _tsv_rows(MANIFEST)}
+        registry = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
+        index = {r["change_id"]: r
+                 for r in _tsv_rows(CARDS / "chronology_card_index.tsv")}
+        for sc_id in ("SC024", "SC025", "SC101", "SC102"):
+            fst = registry[sc_id]["fst_identifier"]
+            self.assertEqual(registry[sc_id]["cascade_position"], manifest[fst],
+                             f"{sc_id}: registry position must match manifest")
+            self.assertEqual(index[sc_id]["current_order"], manifest[fst],
+                             f"{sc_id}: chronology card index order is stale "
+                             "against the cascade manifest")
 
     def test_chronology_cards_exist_for_all_four(self):
         for fname in ("SC024-nwgmc-long-e-lowering.md",
