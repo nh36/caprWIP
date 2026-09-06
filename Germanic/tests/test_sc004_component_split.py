@@ -213,21 +213,26 @@ class ProductionCascadeTests(unittest.TestCase):
         self.assertEqual(active, [], "the {*ai}->{*ā} branch must not survive")
 
     def test_sc014_leads_early_english_line_changes(self):
-        m = re.search(r"define EarlyEnglishLineChanges \[\s*\n\s*([A-Za-z0-9]+)", self.src)
+        # tolerate the structural `# capr:bundle` marker after the bracket
+        m = re.search(
+            r"define EarlyEnglishLineChanges \[[^\n]*\n\s*([A-Za-z0-9]+)",
+            self.src)
         self.assertEqual(m.group(1), "PNWGmcUnstressedAiMonophthongization")
 
-    def test_sc004_general_runs_after_sc028_in_both_branches(self):
+    def test_sc004_general_runs_after_sc028_in_production(self):
         # Since the SC024 e1-complex split, EAFLongANasalRounding (SC025) and
         # EAFLongAFronting (SC101) sit between SC028 and SC004: both must
         # precede SC004 so that *ā < *ai arises after fronting/rounding
-        # (Campbell §132; Ringe & Taylor pp. 169-170).
+        # (Campbell §132; Ringe & Taylor pp. 169-170). The production
+        # composition is the only copy since the EnglishAfter* instrumentation
+        # chain was retired (2026 infrastructure pass).
         pat = re.compile(
             r"\.o\. PNWGmcPreconsonantalXLoss\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFHiatusWInsertion\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongANasalRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongAFronting\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFAiMonophthongization\b")
-        self.assertGreaterEqual(len(pat.findall(self.src)), 2)
+        self.assertEqual(len(pat.findall(self.src)), 1)
 
     def test_alias_is_not_composed(self):
         self.assertNotIn(".o. PWGmcAiMonophthongization", self.src)

@@ -119,25 +119,30 @@ class EvidenceCommandTests(unittest.TestCase):
         self.assertIn("--evidence", doc)
         self.assertTrue(callable(adjudicate.evidence))
 
-    def test_rebuild_command_compiles_the_sandbox_stage_bins(self):
-        cmd = " ".join(adjudicate.evidence_rebuild_command())
-        self.assertIn("old_english_sandbox.txt", cmd)
-        self.assertIn("-e quit", cmd)
-        self.assertIn("cd /usr/app", cmd)
+    def test_rebuild_compiles_the_sandbox_via_the_shared_runner(self):
+        src = (Path(adjudicate.__file__)).read_text(encoding="utf-8")
+        self.assertIn('run_in_runner("foma -q -l fsts/old_english_sandbox.txt '
+                      '-e quit"', src)
+        self.assertIn("write_build_manifest", src)
+
+    def test_runner_wraps_commands_for_the_canonical_container(self):
+        from capr_runtime import container_command
+        cmd = container_command("cd /usr/app && foma -q")
+        self.assertEqual(cmd[:6],
+                         ["docker", "compose", "exec", "-T", "backend", "sh"])
+        self.assertIn("cd /usr/app && foma -q", cmd)
 
     def test_sandbox_source_rebuilds_the_full_cascade_too(self):
-        first_line = adjudicate.SANDBOX_FST.read_text(encoding="utf-8").splitlines()[0]
-        self.assertEqual(first_line.strip(), "source fsts/germanic.txt")
+        lines = adjudicate.SANDBOX_FST.read_text(encoding="utf-8").splitlines()
+        first_code = next(l for l in lines if l.strip() and not l.startswith("#"))
+        self.assertEqual(first_code.strip(), "source fsts/germanic.txt")
 
-    def test_census_command_uses_canonical_container_paths(self):
-        cmd = " ".join(adjudicate.evidence_census_command(
-            "PNWGmcLongELowering", 1234, "sheep; year"))
-        self.assertIn("cd /usr/app", cmd)
-        self.assertIn("tools/sc_evidence.py", cmd)
-        self.assertIn("--min-mtime 1234", cmd)
-        self.assertIn("PNWGmcLongELowering", cmd)
-        self.assertNotIn("/usr/backend", cmd)
-        self.assertNotIn("fsts/old_english_sandbox_after", cmd)
+    def test_census_uses_canonical_worker_and_min_mtime(self):
+        src = (Path(adjudicate.__file__)).read_text(encoding="utf-8")
+        self.assertIn("tools/sc_evidence.py", src)
+        self.assertIn("--min-mtime", src)
+        self.assertNotIn("/usr/backend", src)
+        self.assertNotIn("fsts/old_english_sandbox_after", src)
 
 
 class ScEvidenceWorkerTests(unittest.TestCase):
@@ -149,10 +154,11 @@ class ScEvidenceWorkerTests(unittest.TestCase):
         self.assertEqual(bin_name,
                          "old_english_sandbox_after_pnwgmc_long_e_lowering.bin")
 
-    def test_aliased_manifest_identifier_resolves(self):
+    def test_canonical_rhotacism_identifier_resolves(self):
+        # Canonical Foma identifier resolves directly; no alias table exists.
         index, name, bin_name = sc_evidence.find_stage("EAFRhotacism")
-        self.assertEqual(name, "Rhotacism")
-        self.assertEqual(bin_name, "old_english_sandbox_after_rhotacism.bin")
+        self.assertEqual(name, "EAFRhotacism")
+        self.assertEqual(bin_name, "old_english_sandbox_after_eaf_rhotacism.bin")
 
     def test_unknown_identifier_fails_loudly(self):
         with self.assertRaises(KeyError):

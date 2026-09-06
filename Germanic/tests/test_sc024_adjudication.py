@@ -600,7 +600,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             fst = registry[sc_id]["fst_identifier"]
             self.assertEqual(registry[sc_id]["cascade_position"], manifest[fst],
                              f"{sc_id}: registry position must match manifest")
-            self.assertEqual(index[sc_id]["current_order"], manifest[fst],
+            self.assertEqual(index[sc_id]["cascade_position"], manifest[fst],
                              f"{sc_id}: chronology card index order is stale "
                              "against the cascade manifest")
 

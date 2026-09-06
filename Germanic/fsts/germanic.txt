@@ -1370,7 +1370,7 @@ define PGmcBAllophony [
 # EnglishProtoToOE immediately after MonosyllabicFinalZLoss, i.e.
 # after all three final-*z losses, matching the historical
 # chronology (R/T vol.2 p.87; Crist 2002 §6).
-define EarlyGermanicConsonantPipeline PGmcGmSimplification;
+define EarlyGermanicConsonantPipeline PGmcGmSimplification; # capr:bundle
 
 define EnglishGhMarker [
     {*x} -> {*GH} || EnglishStarVocalic _ ({*t} | {*d} | .#.)
@@ -1850,7 +1850,7 @@ define PNWGmcLongELowering [
     {*ḗ} -> {*ā}
 ];
 
-define EarlyEnglishLineChanges [
+define EarlyEnglishLineChanges [ # capr:bundle
     PNWGmcUnstressedAiMonophthongization
     .o. PNWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
     # SC024 early NWGmc *ē₁ > *ā (2nd c. AD): before the PWGmc innovations
@@ -3376,7 +3376,7 @@ define OERMetathesis [
 # Stages: PGmc → PWGmc → NWGmc → Anglo-Frisian → OE
 # Note: pipeline order reflects FST composition dependencies, not strict chronology.
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
-define EnglishProtoToOE (
+define EnglishProtoToOE ( # capr:bundle
     # SC096 root-noun nominative *-z loss (pre-PWGmc; Dossier A, memo
     # §§5-6). Composed at the very head of the PGmc→OE pipeline: it must
     # precede PWGmcIjContraction (inside EarlyEnglishLineChanges), which
@@ -3613,7 +3613,7 @@ define EnglishProtoToOE (
 
 define EnglishProtoInput pgrmWord;
 
-define OldEnglishCore EnglishProtoInput
+define OldEnglishCore EnglishProtoInput # capr:bundle
     .o. EarlyGermanicConsonantPipeline
     .o. EnglishProtoToOE;
 
@@ -3636,142 +3636,13 @@ define EnglishOEToModern EnglishShortAFronting
 define EnglishReflexes OldEnglishCore
     .o. EnglishOEToModern;
 
-# Stage instrumentation so every checkpoint can be traced/saved like the German stack.
-define EnglishAfterProtoInput EnglishProtoInput;
-define EnglishAfterInitialKn EnglishAfterProtoInput .o. EnglishInitialKnMarkers;
-define EnglishAfterPalatalisation EnglishAfterInitialKn .o. EnglishPalatalisation;
-define EnglishAfterConsonantRules EnglishAfterPalatalisation .o. EarlyGermanicConsonantPipeline;
-define EnglishAfterWestGermanic EnglishAfterConsonantRules
-    # SC096 root-noun nominative *-z loss: mirrors main pipeline (head of
-    # EnglishProtoToOE, before EarlyEnglishLineChanges/PWGmcIjContraction).
-    .o. RootNounNomZLoss
-    .o. EarlyEnglishLineChanges;
-# Composed trace stages — must exactly mirror EnglishProtoToOE pipeline order.
-define EnglishAfterProtoToOEWeakTail EnglishAfterWestGermanic
-    # SC024 Change A (early NWGmc *ē₁ > *ā) is composed inside
-    # EarlyEnglishLineChanges after PNWGmcAToUBeforeM — mirrors main pipeline.
-    .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
-    # SC016 moved to orthography block (sc016-017-adjudication.md).
-    .o. PNWGmcULowering
-    # PNWGmc *-ō → *-u raising: see main-pipeline note. (§17.10.24)
-    # §17.31: stressed monosyllable rule fires first.
-    .o. PNWGmcStressedMonosyllableORaising
-    .o. PNWGmcFinalLongORaising
-    # PWGmc z-loss tight to step 2: see main-pipeline note. (§17.10.25)
-    .o. EAFFinalZDeletion
-    # SC098 early apocope in unstressed words: mirrors main pipeline.
-    .o. PWGmcUnstressedWordFinalIApocope
-    # SC097 northern stressed-monosyllable *-z loss: mirrors main pipeline.
-    .o. MonosyllabicFinalZLoss
-    # SC003 rhotacism after all final-*z losses: mirrors main pipeline.
-    .o. EAFRhotacism
-    # SC021 retired here too (sc021-adjudication.md): mirrors main pipeline.
-    .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
-    .o. PNWGmcNStemNLoss
-    # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
-    .o. EAFNasalSpirantLengthening
-    .o. EAFNasalSpirantLoss
-    # NWGmc *x loss before CC clusters (Campbell §417)
-    .o. PNWGmcPreconsonantalXLoss
-    # SC102 Anglo-Frisian hiatus *w (verba pura): mirrors main pipeline.
-    .o. EAFHiatusWInsertion
-    # SC025 + SC101 northern-WGmc low-vowel split: mirrors main pipeline.
-    .o. EAFLongANasalRounding
-    .o. EAFLongAFronting
-    .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; mirrors EnglishProtoToOE
-    .o. OEAwjGlideFormation
-    .o. OEAuFronting
-    # SC033 before SC031/SC032: mirrors main pipeline (geminate-w
-    # vocalization is PWGmc; must precede degemination).
-    .o. OEEwLongDiphthong
-    .o. OEWWSimplification
-    .o. OEDiphthongLeveling
-    # Inter-stress raising (R/T §6.3.3): *a → *u before AFB/breaking.
-    .o. OEInterStressRaising
-    # §16.6: strip Nebenton graves after raising (OE-only pipeline).
-    .o. OEStripSecondaryStress
-    # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
-    .o. OEWICombinativeUUmlaut
-    # SC040 moved to after the unstressed mergers (9th-c. lowering;
-    # sc021-adjudication.md). Mirrors main-stack ordering.
-    .o. PWGmcFinalBareALoss
-    # R/T §3.1 pp.58-59: surviving bimoric *-ō (z-loss-exposed) → *-ā (long).
-    # See DEV_NOTES §17.10.23.
-    .o. PWGmcSurvivingBimoricOUnrounding
-    .o. EAFBrightening
-    .o. OEBreaking
-    .o. OEVelarFricativePalatalization
-    .o. OEARestoration
-    .o. PGmcBAllophony
-    .o. OESkPalatalization
-    .o. OEVelarPalatalization
-    # WS palatal glide moved earlier (before u-lowering)
-    .o. OEPostVelarWLoss
-    # Loss of *w before unstressed *i (R/T §6.7.1)
-    .o. OEWLossBeforeI
-    .o. OEWsPalatalDiphthongization
-    .o. OEIUmlaut
-    .o. OEJClusterCoalescence
-    .o. OEBackMutation
-    .o. OEWsPalatalUmlaut
-    # NSL moved earlier in pipeline (NWGmc stage)
-    .o. OEWeakTailNasalLoss;
-define EnglishAfterProtoToOEWeightMarkers EnglishAfterProtoToOEWeakTail .o. OEWeightMarkers;
-define EnglishAfterProtoToOEApocope EnglishAfterProtoToOEWeightMarkers .o. OEHighVowelApocope .o. NWGmcInStemNLoss .o. OEHeavySyllableNasalApocope;
-define EnglishAfterProtoToOEWeightCleanup EnglishAfterProtoToOEApocope
-    # TWO-STAGE *ō SHORTENING (§15.8):
-    .o. OEEarlyOShortening
-    .o. OEUnstressedFrontingEarly
-    .o. OELateOShortening
-    # SC099/SC100: Stausland Johnsen split of the shortened *o.
-    .o. OEMedUnstressedORaising
-    .o. OEFinalUnstressedOLowering
-    .o. OEUnstressedLongVowelShortening
-    .o. OEUnstressedAEMerger
-    .o. OEMedUnstressedILowering1
-    .o. OEMedUnstressedILowering
-    # SC040 9th-c. u > o lowering: mirrors main-stack position (after the
-    # mergers; sc021-adjudication.md).
-    .o. OEMedUnstressedULowering
-    .o. OEPrefixIReduction
-    .o. OEWeakTailReduction
-    .o. OEJLossAfterHeavy
-    .o. OEFinalGeminateSimplification
-    .o. OEJStrengtheningAfterFrontDiphthong
-    .o. OEIntervocalicJVocalization
-    .o. OEUnstressedEIContraction
-    .o. OEWeightCleanup
-    .o. OEHLoss
-    .o. OEContraction;
-define EnglishAfterProtoToOE EnglishAfterConsonantRules .o. EnglishProtoToOE;
-define EnglishAfterWGlide EnglishAfterProtoToOE .o. EnglishWGlideRule;
-define EnglishAfterGhMarker EnglishAfterWGlide .o. EnglishGhMarker;
-define EnglishAfterGlideDeletion EnglishAfterGhMarker .o. EnglishGlideDeletion;
-define EnglishAfterShortAFronting EnglishAfterProtoToOE .o. EnglishShortAFronting;
-define EnglishAfterProtoRhoticFronting EnglishAfterShortAFronting .o. EnglishProtoRhoticFronting;
-define EnglishAfterRhoticBreaking EnglishAfterProtoRhoticFronting .o. EnglishRhoticBreaking;
-define EnglishAfterPreMEShortBackLowering EnglishAfterRhoticBreaking .o. EnglishPreMEShortBackLowering;
-define EnglishAfterLMEShortVowelSplit EnglishAfterPreMEShortBackLowering .o. EnglishVowelRulesPreRhotic;
-define EnglishAfterRhoticColoring EnglishAfterLMEShortVowelSplit .o. EnglishRhoticColoring;
-define EnglishAfterVowelRules EnglishAfterRhoticColoring .o. EnglishVowelRulesPostRhotic;
-define EnglishAfterPostVocalicRLoss EnglishAfterVowelRules .o. EnglishPostVocalicRLoss;
-define EnglishAfterWeakTailReductions EnglishAfterPostVocalicRLoss .o. EnglishWeakTailReductions;
-define EnglishAfterWeakTailCleanup EnglishAfterWeakTailReductions
-    .o. EnglishWeakTailCleanup
-    .o. EnglishWeakTailFinalDrop
-    .o. EnglishNoFinalWeakTail;
-define EnglishAfterSilentCleanup EnglishAfterWeakTailCleanup .o. EnglishSilentInitialCleanup;
-define EnglishAfterGhDeletion EnglishAfterSilentCleanup .o. EnglishGhDeletion;
-define EnglishAfterOrthography EnglishAfterGhDeletion .o. EnglishOrthography;
-define EnglishAfterLongVowelRealisation EnglishAfterOrthography .o. EnglishLongVowelRealisation;
-define EnglishAfterSurface EnglishAfterLongVowelRealisation .o. RemoveStars .o. EnglishSurface;
 define English EnglishReflexes .o. RemoveStars .o. EnglishSurface;
 
 # Old English: stop after the Proto→OE layer and surface-filter the OE inventory.
-define OldEnglishAfterEpenthesis OldEnglishCore
+define OldEnglishAfterEpenthesis OldEnglishCore # capr:bundle
     .o. OEEpentheticVowel;
 
-define OldEnglishRules OldEnglishAfterEpenthesis
+define OldEnglishRules OldEnglishAfterEpenthesis # capr:bundle
     .o. OELateUnstressedAgSuffix
     .o. OECjCleanup
     .o. OEXsMerge
@@ -3781,8 +3652,8 @@ define OldEnglishRules OldEnglishAfterEpenthesis
     .o. OEWsPalatalGlide
     .o. OldEnglishRemoveStars;
 
-define OldEnglishReflexes OldEnglishRules .o. OldEnglishSurface;
-define OldEnglish OldEnglishReflexes;
+define OldEnglishReflexes OldEnglishRules .o. OldEnglishSurface; # capr:bundle
+define OldEnglish OldEnglishReflexes; # capr:bundle
 
 clear stack
 regex English;
@@ -3791,114 +3662,6 @@ save stack english.bin
 clear stack
 regex OldEnglish;
 save stack old_english.bin
-
-clear stack
-regex EnglishAfterProtoInput;
-save stack english_after_proto_input.bin
-
-clear stack
-regex EnglishAfterInitialKn;
-save stack english_after_initial_kn.bin
-
-clear stack
-regex EnglishAfterPalatalisation;
-save stack english_after_palatalisation.bin
-
-clear stack
-regex EnglishAfterConsonantRules;
-save stack english_after_consonant_rules.bin
-
-clear stack
-regex EnglishAfterWestGermanic;
-save stack english_after_west_germanic.bin
-
-clear stack
-regex EnglishAfterGhMarker;
-save stack english_after_gh_marker.bin
-
-clear stack
-regex EnglishAfterGlideDeletion;
-save stack english_after_glide_deletion.bin
-
-clear stack
-regex EnglishAfterProtoToOEWeakTail;
-save stack english_after_proto_to_oe_weak_tail.bin
-
-clear stack
-regex EnglishAfterProtoToOEWeightMarkers;
-save stack english_after_proto_to_oe_weight_markers.bin
-
-clear stack
-regex EnglishAfterProtoToOEApocope;
-save stack english_after_proto_to_oe_apocope.bin
-
-clear stack
-regex EnglishAfterProtoToOEWeightCleanup;
-save stack english_after_proto_to_oe_weight_cleanup.bin
-
-clear stack
-regex EnglishAfterProtoToOE;
-save stack english_after_proto_to_oe.bin
-
-clear stack
-regex EnglishAfterShortAFronting;
-save stack english_after_short_a_fronting.bin
-
-clear stack
-regex EnglishAfterProtoRhoticFronting;
-save stack english_after_proto_rhotic_fronting.bin
-
-clear stack
-regex EnglishAfterRhoticBreaking;
-save stack english_after_rhotic_breaking.bin
-
-clear stack
-regex EnglishAfterPreMEShortBackLowering;
-save stack english_after_pre_me_short_back_lowering.bin
-
-clear stack
-regex EnglishAfterLMEShortVowelSplit;
-save stack english_after_lme_short_vowel_split.bin
-
-clear stack
-regex EnglishAfterRhoticColoring;
-save stack english_after_rhotic_coloring.bin
-
-clear stack
-regex EnglishAfterVowelRules;
-save stack english_after_vowel_rules.bin
-
-clear stack
-regex EnglishAfterPostVocalicRLoss;
-save stack english_after_postvocalic_r_loss.bin
-
-clear stack
-regex EnglishAfterWeakTailReductions;
-save stack english_after_weak_tail.bin
-
-clear stack
-regex EnglishAfterWeakTailCleanup;
-save stack english_after_weak_tail_cleanup.bin
-
-clear stack
-regex EnglishAfterSilentCleanup;
-save stack english_after_silent_cleanup.bin
-
-clear stack
-regex EnglishAfterGhDeletion;
-save stack english_after_gh_deletion.bin
-
-clear stack
-regex EnglishAfterOrthography;
-save stack english_after_orthography.bin
-
-clear stack
-regex EnglishAfterLongVowelRealisation;
-save stack english_after_long_vowel_realisation.bin
-
-clear stack
-regex EnglishAfterSurface;
-save stack english_after_surface.bin
 
 ##############################################
 ## Dutch transducer                          ##

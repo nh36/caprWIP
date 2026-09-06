@@ -133,8 +133,8 @@ class CompositionOrderTests(unittest.TestCase):
 
     def test_sandbox_mirrors_the_repair(self):
         text = re.sub(r"(?m)#.*$", "", SANDBOX.read_text(encoding="utf-8"))
-        i_orth = text.index("SOldEnglishOrthography")
-        i_glide = text.index("SOEWsPalatalGlide")
+        i_orth = re.search(r"define S\d+OldEnglishOrthography", text).start()
+        i_glide = re.search(r"define S\d+OEWsPalatalGlide", text).start()
         self.assertLess(i_orth, i_glide,
                         "sandbox stage order must mirror germanic.txt")
 

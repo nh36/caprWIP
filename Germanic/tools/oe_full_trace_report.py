@@ -4,16 +4,26 @@
 from __future__ import annotations
 
 import argparse
-import csv
-import hashlib
-import re
-import subprocess
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
-# Strip braces, stars, whitespace, slashes, parens — but KEEP hyphens for compound markers
-PROTO_STRIP_RE = re.compile(r"[{}*\s/()]")
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import oe_pipeline  # noqa: E402
+from capr_runtime import layout, sha256_of  # noqa: E402
+
+# Corpus/flookup helpers live in the shared model module; re-exported here
+# for the existing consumers of this module's API.
+from oe_pipeline import (  # noqa: E402,F401
+    PROTO_STRIP_RE,
+    apply_down,
+    load_rows,
+    normalize_proto,
+    run_stage,
+)
 
 PROTO_VOWELS = set("aeiouyāēīōūǣȳ")
 PROTO_TRIGGERS = set("ijī")
@@ -27,229 +37,25 @@ OE_DIPHTHONGS = ("īe", "ie", "ēo", "eo", "ēa", "ea")
 PALATAL_MARKERS = ("ċ", "ġ", "sc", "cg")
 BREAKING_DIPHTHONGS = ("ēa", "ēo", "īe", "ea", "eo", "ie")
 
-# STAGES mirrors Germanic/fsts/old_english_sandbox.txt exactly: one entry per
-# `save stack old_english_sandbox_after_<slug>.bin` line, in cascade order.
-# Each stage is one rule from OldEnglishReflexes — no bundles, no Modern
-# English contamination. If the sandbox changes, regenerate this list.
-#
-# STAGE_HEADERS marks chronological section breakpoints for the trace report.
-# These are typographical (markdown) headers — they do NOT change the cascade
-# order or rule application. The five sections track historical phases:
-#   1. Proto-Germanic consonant inheritance
-#   2. Proto-West Germanic developments (EarlyEnglishLineChanges bundle, individuated)
-#   3. Northwest Germanic developments (PNWGmc-era vowel/nasal changes)
-#   4. Old English (Anglo-Frisian + AF→OE rules)
-#   5. Orthography & surface
-#
-# Some PGmc/PWGmc rules (PGmcBAllophony, PWGmcFinalBareALoss,
-# NWGmcInStemNLoss, etc.) appear in the OE section because the cascade
-# applies them late for chronological-interaction reasons — they are kept in
-# their cascade position rather than re-grouped by historical phase.
+# The ordered stage sequence is DERIVED from the shared executable model
+# (oe_pipeline.py; authority: the production OldEnglish composition in
+# germanic.txt). One (stage label, snapshot bin) pair per named executable
+# stage, labels = canonical Foma identifiers. No hand-maintained copy.
 STAGES: List[Tuple[str, str]] = [
-    ("ProtoInput", "old_english_sandbox_after_proto_input.bin"),
-    ("GmSimplification", "old_english_sandbox_after_gm_simplification.bin"),
-    ("RootNounNomZLoss", "old_english_sandbox_after_root_noun_nom_z_loss.bin"),
-    ("PNWGmcUnstressedAiMonophthongization", "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin"),
-    ("PNWGmcAToUBeforeM", "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin"),
-    # SC024 Change A: early NWGmc *ē₁ > *ā (before the PWGmc block).
-    ("PNWGmcLongELowering", "old_english_sandbox_after_pnwgmc_long_e_lowering.bin"),
-    ("PWGmcEarlyIApocope", "old_english_sandbox_after_pwgmc_early_i_apocope.bin"),
-    ("PWGmcFinalOrLowering", "old_english_sandbox_after_pwgmc_final_or_lowering.bin"),
-    ("PWGmcCoronalWAssimilation", "old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin"),
-    ("PWGmcIjContraction", "old_english_sandbox_after_pwgmc_ij_contraction.bin"),
-    ("PWGmcJGemination", "old_english_sandbox_after_pwgmc_j_gemination.bin"),
-    ("PWGmcSyllabicJ", "old_english_sandbox_after_pwgmc_syllabic_j.bin"),
-    ("EAFLThVoicing", "old_english_sandbox_after_eaf_l_th_voicing.bin"),
-    ("PWGmcDentalHardening", "old_english_sandbox_after_pwgmc_dental_hardening.bin"),
-    ("PNWGmcILowering", "old_english_sandbox_after_pnwgmc_i_lowering.bin"),
-    ("PNWGmcULowering", "old_english_sandbox_after_pnwgmc_u_lowering.bin"),
-    ("PNWGmcStressedMonosyllableORaising", "old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin"),
-    ("PNWGmcFinalLongORaising", "old_english_sandbox_after_pnwgmc_final_long_o_raising.bin"),
-    ("EAFFinalZDeletion", "old_english_sandbox_after_eaf_final_z_deletion.bin"),
-    ("PWGmcUnstressedWordFinalIApocope", "old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin"),
-    ("MonosyllabicFinalZLoss", "old_english_sandbox_after_monosyllabic_final_z_loss.bin"),
-    ("Rhotacism", "old_english_sandbox_after_rhotacism.bin"),
-    # SC021 PNWGmcUnstressedORaising retired (sc021-adjudication.md)
-    ("PNWGmcMnDissimilation", "old_english_sandbox_after_pnwgmc_mn_dissimilation.bin"),
-    ("PNWGmcNStemNLoss", "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin"),
-    ("EAFNasalSpirantLengthening", "old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin"),
-    ("EAFNasalSpirantLoss", "old_english_sandbox_after_eaf_nasal_spirant_loss.bin"),
-    ("PNWGmcPreconsonantalXLoss", "old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin"),
-    # SC102 pre-OE/AF hiatus *w (feeds the SC101 *w-block).
-    ("EAFHiatusWInsertion", "old_english_sandbox_after_eaf_hiatus_w_insertion.bin"),
-    # SC025 + SC101 northern-WGmc low-vowel split (both pre-SC004).
-    ("EAFLongANasalRounding", "old_english_sandbox_after_eaf_long_a_nasal_rounding.bin"),
-    ("EAFLongAFronting", "old_english_sandbox_after_eaf_long_a_fronting.bin"),
-    ("EAFAiMonophthongization", "old_english_sandbox_after_eaf_ai_monophthongization.bin"),
-    ("OEAwjGlideFormation", "old_english_sandbox_after_oe_awj_glide_formation.bin"),
-    ("OEAuFronting", "old_english_sandbox_after_oe_au_fronting.bin"),
-    ("OEEwLongDiphthong", "old_english_sandbox_after_oe_ew_long_diphthong.bin"),
-    ("OEWWSimplification", "old_english_sandbox_after_oe_ww_simplification.bin"),
-    ("OEDiphthongLeveling", "old_english_sandbox_after_oe_diphthong_leveling.bin"),
-    ("OEAwLongDiphthong", "old_english_sandbox_after_oe_aw_long_diphthong.bin"),
-    ("OEPrefixAReductionEarly", "old_english_sandbox_after_oe_prefix_a_reduction_early.bin"),
-    ("OEInterStressRaising", "old_english_sandbox_after_oe_inter_stress_raising.bin"),
-    ("OECompoundLinkingSyncope", "old_english_sandbox_after_oe_compound_linking_syncope.bin"),
-    ("OEStripSecondaryStress", "old_english_sandbox_after_oe_strip_secondary_stress.bin"),
-    ("OEWICombinativeUUmlaut", "old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin"),
-    # SC040 OEMedUnstressedULowering moved after the unstressed mergers
-    # (9th-c. lowering; sc021-adjudication.md)
-    ("PWGmcFinalBareALoss", "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin"),
-    ("PWGmcSurvivingBimoricOUnrounding", "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin"),
-    ("EAFBrightening", "old_english_sandbox_after_eaf_brightening.bin"),
-    ("OEBreaking", "old_english_sandbox_after_oe_breaking.bin"),
-    ("OEVelarFricativePalatalization", "old_english_sandbox_after_oe_velar_fricative_palatalization.bin"),
-    ("OEARestoration", "old_english_sandbox_after_oe_a_restoration.bin"),
-    ("OEHeavySyllableNasalApocope", "old_english_sandbox_after_oe_heavy_syllable_nasal_apocope.bin"),
-    ("OESecondaryNasalization", "old_english_sandbox_after_oe_secondary_nasalization.bin"),
-    ("PGmcBAllophony", "old_english_sandbox_after_pgmc_b_allophony.bin"),
-    ("SieversLawSyncope", "old_english_sandbox_after_sievers_law_syncope.bin"),
-    ("OESkPalatalization", "old_english_sandbox_after_oe_sk_palatalization.bin"),
-    ("OEVelarPalatalization", "old_english_sandbox_after_oe_velar_palatalization.bin"),
-    ("OEPostVelarWLoss", "old_english_sandbox_after_oe_post_velar_w_loss.bin"),
-    ("OEWLossBeforeI", "old_english_sandbox_after_oe_w_loss_before_i.bin"),
-    ("OEIUmlaut", "old_english_sandbox_after_oe_i_umlaut.bin"),
-    ("OEWsPalatalDiphthongization", "old_english_sandbox_after_oe_ws_palatal_diphthongization.bin"),
-    ("OEJClusterCoalescence", "old_english_sandbox_after_oe_j_cluster_coalescence.bin"),
-    ("OEBackMutation", "old_english_sandbox_after_oe_back_mutation.bin"),
-    ("OEWsPalatalUmlaut", "old_english_sandbox_after_oe_ws_palatal_umlaut.bin"),
-    ("OEWeakTailNasalLoss", "old_english_sandbox_after_oe_weak_tail_nasal_loss.bin"),
-    ("OEWeightMarkers", "old_english_sandbox_after_oe_weight_markers.bin"),
-    ("OEHighVowelApocope", "old_english_sandbox_after_oe_high_vowel_apocope.bin"),
-    ("NWGmcInStemNLoss", "old_english_sandbox_after_nwgmc_in_stem_n_loss.bin"),
-    ("OEMedialSyncope", "old_english_sandbox_after_oe_medial_syncope.bin"),
-    ("OELAdjacentSyncope", "old_english_sandbox_after_oe_l_adjacent_syncope.bin"),
-    ("OEDentalAssimilation", "old_english_sandbox_after_oe_dental_assimilation.bin"),
-    ("OEPreconsonantalDegemination", "old_english_sandbox_after_oe_preconsonantal_degemination.bin"),
-    ("OEEarlyOShortening", "old_english_sandbox_after_oe_early_o_shortening.bin"),
-    ("OEUnstressedFrontingEarly", "old_english_sandbox_after_oe_unstressed_fronting_early.bin"),
-    ("OELateOShortening", "old_english_sandbox_after_oe_late_o_shortening.bin"),
-    # SC099/SC100: Stausland Johnsen split of the shortened *o
-    ("OEMedUnstressedORaising", "old_english_sandbox_after_oe_med_unstressed_o_raising.bin"),
-    ("OEFinalUnstressedOLowering", "old_english_sandbox_after_oe_final_unstressed_o_lowering.bin"),
-    ("OEUnstressedLongVowelShortening", "old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin"),
-    ("OEUnstressedAEMerger", "old_english_sandbox_after_oe_unstressed_ae_merger.bin"),
-    ("OEMedUnstressedILowering1", "old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin"),
-    ("OEMedUnstressedILowering", "old_english_sandbox_after_oe_med_unstressed_i_lowering.bin"),
-    # SC040 9th-c. u > o lowering in its historically correct slot
-    ("OEMedUnstressedULowering", "old_english_sandbox_after_oe_med_unstressed_u_lowering.bin"),
-    ("OEPrefixIReduction", "old_english_sandbox_after_oe_prefix_i_reduction.bin"),
-    ("OEWeakTailReduction", "old_english_sandbox_after_oe_weak_tail_reduction.bin"),
-    ("OEJLossAfterHeavy", "old_english_sandbox_after_oe_j_loss_after_heavy.bin"),
-    ("OEFinalGeminateSimplification", "old_english_sandbox_after_oe_final_geminate_simplification.bin"),
-    ("OEJStrengtheningAfterFrontDiphthong", "old_english_sandbox_after_oe_j_strengthening_after_front_diphthong.bin"),
-    ("OEIntervocalicJVocalization", "old_english_sandbox_after_oe_intervocalic_j_vocalization.bin"),
-    ("OEUnstressedEIContraction", "old_english_sandbox_after_oe_unstressed_ei_contraction.bin"),
-    ("OEWeightCleanup", "old_english_sandbox_after_oe_weight_cleanup.bin"),
-    ("OEHLoss", "old_english_sandbox_after_oe_h_loss.bin"),
-    ("OEContraction", "old_english_sandbox_after_oe_contraction.bin"),
-    ("OERMetathesis", "old_english_sandbox_after_oe_r_metathesis.bin"),
-    ("OEEpentheticVowel", "old_english_sandbox_after_oe_epenthetic_vowel.bin"),
-    ("OELateUnstressedAgSuffix", "old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin"),
-    ("OECjCleanup", "old_english_sandbox_after_oe_cj_cleanup.bin"),
-    ("OEXsMerge", "old_english_sandbox_after_oe_xs_merge.bin"),
-    ("OldEnglishOrthography", "old_english_sandbox_after_old_english_orthography.bin"),
-    ("OEWsPalatalGlide", "old_english_sandbox_after_oe_ws_palatal_glide.bin"),
-    ("OldEnglishRemoveStars", "old_english_sandbox_after_old_english_remove_stars.bin"),
-    ("OldEnglishSurface", "old_english_sandbox_after_old_english_surface.bin"),
+    (s.foma_identifier, s.snapshot_bin) for s in oe_pipeline.named_stages()
 ]
 
 # Markdown section headers injected before the named stage in the trace
-# output. Section dividers only — they do not alter the cascade.
+# output. Presentation metadata only — they do NOT determine rule order.
+# Some PGmc/PWGmc rules appear in later sections because the cascade
+# applies them late for chronological-interaction reasons.
 STAGE_HEADERS: Dict[str, str] = {
-    "ProtoInput": "## Section 1: Proto-Germanic consonant inheritance",
+    "EnglishProtoInput": "## Section 1: Proto-Germanic consonant inheritance",
     "PNWGmcUnstressedAiMonophthongization": "## Section 2: Northwest and West Germanic developments",
     "EAFAiMonophthongization": "## Section 3: Early Anglo-Frisian (North Sea Germanic)",
     "OEAwjGlideFormation": "## Section 4: Old English",
     "OldEnglishOrthography": "## Section 5: Orthography & surface",
 }
-
-
-def normalize_proto(raw: str) -> str:
-    normalized = PROTO_STRIP_RE.sub("", raw or "")
-    # Proto inventory uses θ; normalize þ to avoid false no_output buckets.
-    return normalized.replace("þ", "θ")
-
-
-def load_rows(tsv_path: Path) -> List[Dict[str, str]]:
-    rows: List[Dict[str, str]] = []
-    with tsv_path.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        for row in reader:
-            if row.get("DOCULECT") != "Old_English":
-                continue
-            proto = (row.get("PROTOFORM") or "").strip()
-            counterpart = (row.get("COUNTERPART") or "").strip()
-            if not proto or not counterpart or counterpart == "-":
-                continue
-            norm = normalize_proto(proto)
-            if not norm:
-                continue
-            rows.append(
-                {
-                    "concept": row.get("CONCEPT", ""),
-                    "proto": proto,
-                    "proto_norm": norm,
-                    "counterpart": counterpart,
-                }
-            )
-    return rows
-
-
-def apply_down(bin_path: Path, form: str) -> List[str]:
-    proc = subprocess.run(
-        ["flookup", "-i", str(bin_path)],
-        input=(form + "\n").encode("utf-8"),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        check=True,
-    )
-    outputs: List[str] = []
-    for raw in proc.stdout.decode("utf-8").splitlines():
-        raw = raw.strip()
-        if not raw:
-            continue
-        parts = raw.split("\t", 1)
-        out = parts[1] if len(parts) == 2 else ""
-        if out and out != "+?":
-            outputs.append(out)
-    seen = set()
-    deduped: List[str] = []
-    for item in outputs:
-        if item in seen:
-            continue
-        seen.add(item)
-        deduped.append(item)
-    return deduped
-
-
-def run_stage(bin_dir: Path, bin_name: str, form: str) -> List[str]:
-    stage_path = (bin_dir / bin_name).resolve()
-    proc = subprocess.run(
-        ["flookup", "-i", str(stage_path)],
-        input=(form + "\n").encode("utf-8"),
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        check=True,
-    )
-    outputs: List[str] = []
-    for raw in proc.stdout.decode("utf-8").splitlines():
-        raw = raw.strip()
-        if not raw:
-            continue
-        parts = raw.split("\t", 1)
-        out = parts[1] if len(parts) == 2 else raw
-        outputs.append(out or "+?")
-    if not outputs:
-        outputs.append("+?")
-    seen = set()
-    deduped: List[str] = []
-    for item in outputs:
-        if item in seen:
-            continue
-        seen.add(item)
-        deduped.append(item)
-    return deduped
 
 
 def has_front(s: str) -> bool:
@@ -484,14 +290,6 @@ def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     return trace
 
 
-def sha256_of(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1 << 20), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
 def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path) -> List[str]:
     """Provenance block recording the canonical live inputs of this report.
 
@@ -629,31 +427,19 @@ def write_report(
 
 
 def default_paths() -> Dict[str, Path]:
-    """Resolve canonical default paths for both supported layouts.
+    """Resolve canonical default paths via the shared runtime layout.
 
-    Host layout: this file lives at <repo>/Germanic/tools/, data at
-    <repo>/Germanic/data/, and the live compiled bins at <repo>/backend/.
-
-    Container layout (docker-compose mounts): this file is mounted at
-    /usr/app/tools/, data at /usr/app/data/, fsts at /usr/app/fsts/, and the
-    live bins are written by foma directly into /usr/app/. The old defaults
-    blindly assumed the host layout and resolved /usr/backend/... inside the
-    container, which does not exist.
+    The authoritative runtime bin directory is the foma working directory:
+    <repo>/backend on the host, /usr/app inside the container.  Never
+    Germanic/fsts/, which may hold stale duplicates.
     """
-    tools_dir = Path(__file__).resolve().parent
-    germanic_dir = tools_dir.parent  # Germanic/ on host; /usr/app in container
-    repo_root = germanic_dir.parent
-    host_bin_dir = repo_root / "backend"
-    # The canonical bin location is the foma working directory: <repo>/backend
-    # on the host, /usr/app (== germanic_dir) inside the container. Never
-    # Germanic/fsts/, which may hold stale checked-in duplicates.
-    bin_dir = host_bin_dir if (host_bin_dir / "old_english.bin").is_file() else germanic_dir
+    rt = layout()
     return {
-        "tsv": germanic_dir / "data" / "germanic-aligned-final.tsv",
-        "bin": bin_dir / "old_english.bin",
-        "bin_dir": bin_dir,
-        "fsts_dir": germanic_dir / "fsts",
-        "output": germanic_dir / "docs" / "debug_snapshots" / "oe_full_trace_report.txt",
+        "tsv": rt.corpus_tsv,
+        "bin": rt.bin_dir / "old_english.bin",
+        "bin_dir": rt.bin_dir,
+        "fsts_dir": rt.fsts_dir,
+        "output": rt.docs_dir / "debug_snapshots" / "oe_full_trace_report.txt",
     }
 
 

@@ -31,32 +31,25 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from oe_full_trace_report import (  # noqa: E402
-    STAGES,
-    apply_down,
-    default_paths,
-    load_rows,
-    sha256_of,
-)
-from rule_coverage_census import STAGE_ALIASES  # noqa: E402
+import oe_pipeline  # noqa: E402
+from capr_runtime import MIN_BIN_BYTES, layout, sha256_of  # noqa: E402
+from oe_pipeline import apply_down, load_rows  # noqa: E402
 
-MIN_BIN_BYTES = 1024  # anything smaller is a degenerate/failed build
-
-# Registry/manifest foma identifier -> tracer STAGES name (e.g. the registry's
-# EAFRhotacism is the tracer stage "Rhotacism").
-TRACER_NAME = STAGE_ALIASES
+# Stage truth comes from the shared executable model (oe_pipeline), which
+# uses canonical Foma identifiers throughout — no alias table.
+STAGES = [(s.foma_identifier, s.snapshot_bin)
+          for s in oe_pipeline.named_stages()]
 
 
 def find_stage(fst_identifier):
-    """Return (index, tracer_name, bin_name) for a registry fst_identifier."""
-    tracer_name = TRACER_NAME.get(fst_identifier, fst_identifier)
+    """Return (index, stage_name, bin_name) for a registry fst_identifier."""
     for index, (name, bin_name) in enumerate(STAGES):
-        if name == tracer_name:
+        if name == fst_identifier:
             return index, name, bin_name
     known = ", ".join(name for name, _ in STAGES)
     raise KeyError(
-        f"{fst_identifier!r} (tracer name {tracer_name!r}) is not a stage in "
-        f"old_english_sandbox.txt. Known stages: {known}"
+        f"{fst_identifier!r} is not a stage of the production OE cascade "
+        f"(fsts/germanic.txt). Known stages: {known}"
     )
 
 
@@ -96,10 +89,10 @@ def main():
                              "before/after for even when unchanged")
     args = parser.parse_args()
 
-    defaults = default_paths()
-    bin_dir = defaults["bin_dir"]
-    tsv_path = defaults["tsv"]
-    fsts_dir = defaults["fsts_dir"]
+    rt = layout()
+    bin_dir = rt.bin_dir
+    tsv_path = rt.corpus_tsv
+    fsts_dir = rt.fsts_dir
 
     index, tracer_name, bin_name = find_stage(args.fst_identifier)
     if index == 0:

@@ -87,7 +87,7 @@ position	foma_identifier	origin_block
 86	OEHLoss	EnglishProtoToOE
 87	OEContraction	EnglishProtoToOE
 88	OERMetathesis	EnglishProtoToOE
-89	OEEpentheticVowel	OldEnglishRules
+89	OEEpentheticVowel	OldEnglishAfterEpenthesis
 90	OELateUnstressedAgSuffix	OldEnglishRules
 91	OECjCleanup	OldEnglishRules
 92	OEXsMerge	OldEnglishRules

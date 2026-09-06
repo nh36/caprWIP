@@ -56,15 +56,13 @@ from generate_registry_views import (  # noqa: E402
     read_tsv,
 )
 
+import oe_pipeline  # noqa: E402
+from capr_runtime import layout, run_in_runner, write_build_manifest  # noqa: E402
+
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
 FST = REPO_ROOT / "Germanic/fsts/germanic.txt"
 SANDBOX_FST = REPO_ROOT / "Germanic/fsts/old_english_sandbox.txt"
-# Canonical container layout (docker-compose.yml): ./backend -> /usr/app,
-# ./Germanic/{data,fsts,tools,docs} -> /usr/app/{data,fsts,tools,docs}.
-# foma writes compiled bins into its working directory, so the ONLY
-# authoritative bin location is /usr/app (host: backend/). Bins found under
-# fsts/ are stale duplicates and are never read.
-CONTAINER_APP = "/usr/app"
+# Runtime layout (authoritative bin dir, runner) comes from capr_runtime.
 ORDER_MANIFEST = SC_DIR / "cascade_baseline/cascade_order_manifest.tsv"
 BASELINE_SUMMARY = SC_DIR / "cascade_baseline/cascade_baseline_summary.json"
 TEMPLATE = SC_DIR / "audits/ADJUDICATION_TEMPLATE.md"
@@ -72,6 +70,19 @@ PROTOCOL = REPO_ROOT / "Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md"
 CHAINED_BUILDERS = (
     REPO_ROOT / "Germanic/tools/build_historical_audit_table.py",
     REPO_ROOT / "Germanic/tools/build_rename_migration_manifest.py",
+    # Executable-order projections of the shared model (oe_pipeline):
+    REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
+    REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
+    REPO_ROOT / "Germanic/tools/sync_chronology_card_positions.py",
+    REPO_ROOT / "Germanic/tools/rule_coverage_census.py",
+)
+
+# Generated artifacts that must be clean before executable evidence is
+# gathered and after finalization (fail-closed: never census stale order).
+GENERATED_CHECKS = (
+    ("cascade_order_manifest.py", ["--check"]),
+    ("generate_oe_sandbox.py", ["--check"]),
+    ("sync_chronology_card_positions.py", ["--check"]),
 )
 
 # Canonical directories in which bare-filename registry pointers may live.
@@ -236,32 +247,17 @@ def next_sc():
     return pending[0][1] if pending and not run_ends else None
 
 
-def container_command(inner):
-    """Wrap a shell command for the backend container (canonical layout)."""
-    return ["docker", "compose", "exec", "-T", "backend", "sh", "-lc", inner]
-
-
-def evidence_rebuild_command():
-    """Command that rebuilds ALL executable evidence artifacts.
-
-    old_english_sandbox.txt begins with `source fsts/germanic.txt`, so this
-    single deterministic compile rebuilds the full OE cascade AND every
-    stage-by-stage sandbox bin, writing them into the canonical bin
-    directory (the foma working directory, /usr/app).
-    """
-    return container_command(
-        f"cd {CONTAINER_APP} && foma -q -l fsts/old_english_sandbox.txt -e quit"
-    )
-
-
-def evidence_census_command(fst_identifier, min_mtime, witnesses):
-    inner = (f"cd {CONTAINER_APP} && python3 tools/sc_evidence.py "
-             f"{shlex.quote(fst_identifier)}")
-    if min_mtime is not None:
-        inner += f" --min-mtime {int(min_mtime)}"
-    if witnesses:
-        inner += f" --witnesses {shlex.quote(witnesses)}"
-    return container_command(inner)
+def run_generated_checks() -> list:
+    """Run the --check mode of every generated-artifact builder."""
+    failures = []
+    for script, extra in GENERATED_CHECKS:
+        result = subprocess.run(
+            [sys.executable, str(REPO_ROOT / "Germanic/tools" / script), *extra],
+            cwd=REPO_ROOT, capture_output=True, text=True)
+        if result.returncode != 0:
+            detail = (result.stderr or result.stdout).strip().splitlines()
+            failures.append(f"{script}: {detail[-1] if detail else 'stale'}")
+    return failures
 
 
 def evidence(sc_id) -> int:
@@ -299,8 +295,19 @@ def evidence(sc_id) -> int:
     if not SANDBOX_FST.is_file():
         print(f"EVIDENCE FAILED: missing {SANDBOX_FST}", file=sys.stderr)
         return 1
-    clock = subprocess.run(container_command("date +%s"),
-                           cwd=REPO_ROOT, capture_output=True, text=True)
+    stale = run_generated_checks()
+    if stale:
+        for s in stale:
+            print(f"EVIDENCE FAILED (stale generated artifact): {s}",
+                  file=sys.stderr)
+        print("Run adjudicate.py SCNNN --finalize (or the individual "
+              "generators) before gathering evidence.", file=sys.stderr)
+        return 1
+    try:
+        clock = run_in_runner("date +%s", capture_output=True, text=True)
+    except RuntimeError as exc:
+        print(f"EVIDENCE FAILED: {exc}", file=sys.stderr)
+        return 1
     if clock.returncode != 0:
         print(clock.stderr, file=sys.stderr)
         print("EVIDENCE FAILED: backend container is not reachable "
@@ -310,8 +317,8 @@ def evidence(sc_id) -> int:
 
     print("\n## Rebuilding full cascade + stage bins "
           "(fsts/old_english_sandbox.txt sources fsts/germanic.txt) ...")
-    rebuild = subprocess.run(evidence_rebuild_command(),
-                             cwd=REPO_ROOT, capture_output=True, text=True)
+    rebuild = run_in_runner("foma -q -l fsts/old_english_sandbox.txt -e quit",
+                            capture_output=True, text=True)
     if rebuild.returncode != 0:
         print(rebuild.stdout, file=sys.stderr)
         print(rebuild.stderr, file=sys.stderr)
@@ -321,12 +328,16 @@ def evidence(sc_id) -> int:
     tail = [l for l in rebuild.stdout.splitlines() if l.strip()][-3:]
     for line in tail:
         print(f"  {line}")
-    print("rebuild ok")
+    manifest_path = write_build_manifest(
+        oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])
+    print(f"rebuild ok; build manifest: {manifest_path}")
 
     print("\n## Firing census (fresh stage bins only)")
     sys.stdout.flush()
-    census = subprocess.run(
-        evidence_census_command(ident, min_mtime, witnesses), cwd=REPO_ROOT)
+    inner = f"python3 tools/sc_evidence.py {shlex.quote(ident)} --min-mtime {min_mtime}"
+    if witnesses:
+        inner += f" --witnesses {shlex.quote(witnesses)}"
+    census = run_in_runner(inner)
     if census.returncode != 0:
         print(f"EVIDENCE FAILED: census exited {census.returncode}", file=sys.stderr)
         return 1
@@ -470,12 +481,22 @@ def check(sc_id) -> int:
                 f"retired SC still has a live define {row['fst_identifier']} "
                 f"at germanic.txt line {lineno}"
             )
+    # registry structured position must match the executable model
+    if row["lifecycle_status"] == "active" and row["fst_identifier"]:
+        model_pos = oe_pipeline.cascade_position(row["fst_identifier"])
+        if str(model_pos) != row["cascade_position"]:
+            errors.append(
+                f"registry cascade_position {row['cascade_position']!r} != "
+                f"executable model position {model_pos!r} for "
+                f"{row['fst_identifier']}")
     # generated views must be clean
     for path, expected in build_all().items():
         current = path.read_text(encoding="utf-8") if path.exists() else None
         if current != expected:
             errors.append(f"stale generated view: {path.relative_to(REPO_ROOT)} — "
                           "run generate_registry_views.py")
+    for stale_item in run_generated_checks():
+        errors.append(f"stale generated artifact: {stale_item}")
     if errors:
         for e in errors:
             print(f"CHECK FAILED: {e}", file=sys.stderr)

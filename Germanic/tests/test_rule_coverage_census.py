@@ -99,9 +99,9 @@ class CorpusMaturationCoverageTests(unittest.TestCase):
         self.assertEqual(row["coverage_status"], "witnessed")
         self.assertIn("wound", row["lexical_witnesses"].split(", "))
 
-    def test_rhotacism_alias_resolves(self):
-        # STAGE_ALIASES must keep SC003 witnessed even though the tracer
-        # labels the stage "Rhotacism" rather than "EAFRhotacism".
+    def test_rhotacism_witnessed_under_canonical_label(self):
+        # The trace report and the executable model both use the canonical
+        # Foma identifier "EAFRhotacism"; no alias table exists any more.
         row = self.census["SC003"]
         self.assertEqual(row["coverage_status"], "witnessed")
         self.assertGreater(int(row["corpus_firing_count"]), 0)

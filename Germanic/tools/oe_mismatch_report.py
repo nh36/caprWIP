@@ -1156,18 +1156,20 @@ def write_report(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    # Default paths: relative to this file's location in Germanic/tools/
-    tools_dir = Path(__file__).resolve().parent
-    germanic_dir = tools_dir.parent  # Germanic/
-    repo_root = germanic_dir.parent  # capr-v3-working/
+    # Default paths: resolved through the shared runtime layout
+    # (host: bins in <repo>/backend; container: /usr/app).
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from capr_runtime import layout
+    rt = layout()
+    germanic_dir = rt.germanic_dir
     parser.add_argument(
         "--tsv",
-        default=str(germanic_dir / "data" / "germanic-aligned-final.tsv"),
+        default=str(rt.corpus_tsv),
         help="Aligned TSV with Old English rows (default: %(default)s)",
     )
     parser.add_argument(
         "--bin",
-        default=str(repo_root / "backend" / "old_english.bin"),
+        default=str(rt.bin_dir / "old_english.bin"),
         help="Generator FST for apply-down (default: %(default)s)",
     )
     parser.add_argument(

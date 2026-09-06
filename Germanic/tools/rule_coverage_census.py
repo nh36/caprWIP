@@ -29,23 +29,19 @@ from __future__ import annotations
 
 import csv
 import re
+import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-GERMANIC = REPO_ROOT / "Germanic"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import oe_pipeline  # noqa: E402
+from capr_runtime import layout  # noqa: E402
+
+GERMANIC = layout().germanic_dir
 FULL_TRACE = GERMANIC / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"
 INVENTORY = GERMANIC / "docs" / "sound_changes" / "sound_change_inventory.tsv"
-MANIFEST = (GERMANIC / "docs" / "sound_changes" / "cascade_baseline"
-            / "cascade_order_manifest.tsv")
 OUTPUT = (GERMANIC / "docs" / "sound_changes" / "cascade_baseline"
           / "rule_coverage_census.tsv")
-
-# The tracer's STAGES list names two stages differently from the manifest's
-# foma identifiers (historic labels; renaming deferred by author decision).
-STAGE_ALIASES: dict[str, str] = {
-    "EAFRhotacism": "Rhotacism",
-    "OEPrefixAReduction": "OEPrefixAReductionEarly",
-}
 
 # Zero-firing statuses that require adjudication rather than the
 # synthetic_only default. Every entry must cite its adjudication.
@@ -93,8 +89,12 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 
 def build_rows() -> list[dict[str, str]]:
     firing = load_firing_summary(FULL_TRACE.read_text(encoding="utf-8"))
-    manifest_pos = {r["foma_identifier"]: int(r["position"])
-                    for r in read_tsv(MANIFEST)}
+    # Executable positions come from the shared model (canonical Foma
+    # identifiers throughout — the trace report uses the same identifiers,
+    # so no alias table exists or is permitted here).
+    manifest_pos = {s.foma_identifier: s.cascade_position
+                    for s in oe_pipeline.named_stages()
+                    if s.cascade_position is not None}
     rows = []
     for inv in read_tsv(INVENTORY):
         if inv.get("entry_type") != "historical_sound_change":
@@ -107,7 +107,7 @@ def build_rows() -> list[dict[str, str]]:
             foma = m.group(1)
         if foma not in manifest_pos:
             continue  # not composed in the executable cascade
-        count, lexemes = firing.get(STAGE_ALIASES.get(foma, foma), (0, []))
+        count, lexemes = firing.get(foma, (0, []))
         if count > 0:
             status, note = "witnessed", ""
         else:

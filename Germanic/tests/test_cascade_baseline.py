@@ -142,13 +142,8 @@ class OrderManifestTests(unittest.TestCase):
 
     def test_manifest_matches_current_fst_source(self):
         """The committed manifest must be an exact projection of germanic.txt."""
-        regenerated = self.mod.build_manifest(FST_SOURCE)
-        committed = [
-            {"position": r["position"], "foma_identifier": r["foma_identifier"],
-             "origin_block": r["origin_block"]}
-            for r in self.rows
-        ]
-        self.assertEqual(regenerated, committed,
+        self.assertEqual(self.mod.manifest_text(),
+                         ORDER_MANIFEST.read_text(encoding="utf-8"),
                          "cascade_order_manifest.tsv is stale relative to germanic.txt; "
                          "regenerate with tools/cascade_order_manifest.py")
 
