@@ -50,6 +50,7 @@ EXPECTED_ROW_COUNT = 385
 def _load(name):
     spec = importlib.util.spec_from_file_location(name, TOOLS / f"{name}.py")
     mod = importlib.util.module_from_spec(spec)
+    sys.modules[name] = mod  # dataclasses resolve annotations via sys.modules
     spec.loader.exec_module(mod)
     return mod
 
@@ -530,6 +531,238 @@ def _tsv_rows_skip_comments(path):
     lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
              if ln and not ln.startswith("#")]
     return list(csv.DictReader(lines, delimiter="\t"))
+
+
+class NestedBundleCascadePositionTests(unittest.TestCase):
+    """The numbered cascade is a structural span, not a bundle-name list.
+
+    A nested structural bundle inside the numbered cascade must not silently
+    lose cascade positions merely because its name is new.
+    """
+
+    TEMPLATE = (
+        "define RuleA a -> b;\n"
+        "define RuleB b -> c;\n"
+        "define RuleC c -> d;\n"
+        "define RuleD d -> e;\n"
+        "define EnglishProtoInput ?*;\n"
+        "define OldEnglishSurface ?*;\n"
+        "define BrandNewInnerBundle ( RuleB .o. RuleC ); # capr:bundle\n"
+        "define EnglishProtoToOE ( {order} ); # capr:bundle\n"
+        "define OldEnglish EnglishProtoInput .o. EnglishProtoToOE "
+        ".o. OldEnglishSurface; # capr:bundle\n"
+    )
+
+    def _positions(self, tmp, order):
+        fst = Path(tmp) / "germanic.txt"
+        fst.write_text(self.TEMPLATE.format(order=order), encoding="utf-8")
+        return {s.foma_identifier: s.cascade_position
+                for s in oe_pipeline.parse_stages(fst)
+                if s.cascade_position is not None}
+
+    def test_nested_bundle_members_receive_contiguous_positions(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            pos = self._positions(
+                tmp, "RuleA .o. BrandNewInnerBundle .o. RuleD")
+            self.assertEqual(pos, {"RuleA": 1, "RuleB": 2,
+                                   "RuleC": 3, "RuleD": 4})
+
+    def test_moving_the_nested_bundle_renumbers_mechanically(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            pos = self._positions(
+                tmp, "RuleA .o. RuleD .o. BrandNewInnerBundle")
+            self.assertEqual(pos, {"RuleA": 1, "RuleD": 2,
+                                   "RuleB": 3, "RuleC": 4})
+
+    def test_prelude_and_surface_stay_outside_the_numbering(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fst = Path(tmp) / "germanic.txt"
+            fst.write_text(self.TEMPLATE.format(
+                order="RuleA .o. BrandNewInnerBundle .o. RuleD"),
+                encoding="utf-8")
+            outside = {s.foma_identifier: s.cascade_position
+                       for s in oe_pipeline.parse_stages(fst)
+                       if s.foma_identifier in ("EnglishProtoInput",
+                                                "OldEnglishSurface")}
+            self.assertEqual(outside, {"EnglishProtoInput": None,
+                                       "OldEnglishSurface": None})
+
+    def test_production_positions_remain_contiguous(self):
+        positions = [s.cascade_position for s in oe_pipeline.named_stages()
+                     if s.cascade_position is not None]
+        self.assertEqual(positions, list(range(1, len(positions) + 1)))
+
+
+class ScosRegistryIdentityTests(unittest.TestCase):
+    """SCOS takes SC -> FST identity from sc_registry.tsv, never from the
+    inventory view's rule_source_anchor documentation."""
+
+    def setUp(self):
+        self.scos = _load("sound_change_order_sensitivity")
+
+    def test_registry_supplies_fst_identifier(self):
+        idents = self.scos.registry_fst_identifiers(
+            SC_DIR / "registry/sc_registry.tsv")
+        self.assertEqual(idents.get("SC043"), "EAFBrightening")
+        self.assertEqual(idents.get("SC020"), "EAFFinalZDeletion")
+
+    def test_load_inventory_uses_registry_not_anchor(self):
+        inventory = SC_DIR / "sound_change_inventory.tsv"
+        by_id, _ = self.scos.load_inventory(
+            inventory,
+            self.scos.registry_fst_identifiers(
+                SC_DIR / "registry/sc_registry.tsv"))
+        self.assertEqual(by_id["SC043"].rule_name, "EAFBrightening")
+        # rows without a registry identifier are metadata-only, not targets
+        self.assertEqual(by_id["SC088"].rule_name, "")
+        lookup = self.scos.inventory_rule_lookup(list(by_id.values()))
+        self.assertNotIn("", lookup)
+
+    def test_no_anchor_based_identity_extraction(self):
+        src = (TOOLS / "sound_change_order_sensitivity.py").read_text(
+            encoding="utf-8")
+        self.assertNotIn("extract_rule_name", src)
+        self.assertNotIn('row.get("rule_source_anchor")', src)
+
+    def test_unknown_registry_identifier_fails_clearly(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            inv = Path(tmp) / "inventory.tsv"
+            inv.write_text(
+                "change_id\tcurrent_order\tdisplay_name\tentry_type\t"
+                "include_in_volume\tnotes\n"
+                "SC999\t1\tFake\thistorical_sound_change\tyes\t\n",
+                encoding="utf-8")
+            with self.assertRaises(SystemExit):
+                self.scos.load_inventory(inv, {"SC999": "NoSuchFstRule"})
+
+    def test_every_crossable_profile_rule_resolves_to_an_sc(self):
+        """No anonymous crossings: every rule inside either SCOS order
+        profile must resolve to an SC via the registry, so an
+        order-sensitivity crossing is never mislabeled as a placeholder
+        ('blocked_by_runner_limitation') stage."""
+        idents = self.scos.registry_fst_identifiers(
+            SC_DIR / "registry/sc_registry.tsv")
+        _, ordered = self.scos.load_inventory(
+            SC_DIR / "sound_change_inventory.tsv", idents)
+        lookup = self.scos.inventory_rule_lookup(ordered)
+        bundle = self.scos.PWGMC_BUNDLE
+        default = oe_pipeline.composition_members_of(
+            self.scos.EXPERIMENT_ROOT)
+        expanded = [m for r in default for m in
+                    (oe_pipeline.composition_members_of(r)
+                     if r == bundle else [r])]
+        for profile_name, profile in (("default", default),
+                                      ("expanded-pwgmc", expanded)):
+            unresolved = [r for r in profile
+                          if r != bundle and r not in lookup]
+            self.assertEqual(
+                unresolved, [],
+                f"{profile_name} profile rules without registry SC identity "
+                "(backfill fst_identifier in sc_registry.tsv)")
+
+
+class ControlPlaneDocTests(unittest.TestCase):
+    """Current routing docs must reflect the derived/frozen architecture."""
+
+    CONTROL_PLANE = SC_DIR / "registry/CONTROL_PLANE.md"
+
+    def _section(self, text, heading):
+        start = text.index(heading)
+        rest = text[start + len(heading):]
+        nxt = rest.find("\n## ")
+        return rest if nxt < 0 else rest[:nxt]
+
+    def test_archives_not_classified_as_generated(self):
+        text = self.CONTROL_PLANE.read_text(encoding="utf-8")
+        generated = self._section(text, "## GENERATED")
+        archive = self._section(text, "## ARCHIVE")
+        for name in ("historical_audit_table.tsv",
+                     "rename_migration_manifest.tsv"):
+            self.assertNotIn(name, generated,
+                             f"{name} is ARCHIVE/FROZEN, not GENERATED")
+            self.assertIn(name, archive)
+
+    def test_control_plane_declares_cascade_position_derived(self):
+        text = self.CONTROL_PLANE.read_text(encoding="utf-8")
+        self.assertIn("sync_registry_cascade_positions", text)
+        self.assertNotIn("executable identifier, cascade position", text)
+
+    def test_docs_readme_lists_archives_as_archive(self):
+        text = (REPO_ROOT / "Germanic/docs/README.md").read_text(
+            encoding="utf-8")
+        generated = self._section(text, "## What is GENERATED")
+        self.assertNotIn("historical_audit_table", generated)
+        self.assertNotIn("rename_migration_manifest", generated)
+
+
+class EvidencePrerequisiteTests(unittest.TestCase):
+    """--evidence regenerates the mechanical prerequisites itself."""
+
+    def test_mechanical_prereqs_cover_the_generated_checks(self):
+        adj = _load("adjudicate")
+        prereq_names = {p.name for p in adj.MECHANICAL_PREREQS}
+        self.assertEqual(prereq_names, {
+            "sync_registry_cascade_positions.py",
+            "cascade_order_manifest.py",
+            "generate_oe_sandbox.py",
+            "sync_chronology_card_positions.py",
+        })
+        for p in adj.MECHANICAL_PREREQS:
+            self.assertTrue(p.is_file(), p)
+        # every prerequisite that --evidence later checks is regenerable
+        checked = {script for script, _ in adj.GENERATED_CHECKS}
+        self.assertEqual(checked, prereq_names)
+
+
+class CurrentStateFingerprintTests(unittest.TestCase):
+    """CURRENT_STATE.md must advertise the canonical current baseline."""
+
+    def test_current_state_matches_cascade_baseline_summary(self):
+        summary = json.loads(
+            (BASELINE_DIR / "cascade_baseline_summary.json").read_text(
+                encoding="utf-8"))
+        text = (REPO_ROOT / "Germanic/docs/CURRENT_STATE.md").read_text(
+            encoding="utf-8")
+        self.assertIn(summary["outputs_sha256"], text)
+        self.assertIn(summary["legacy_subset_sha256"], text)
+        # no superseded fingerprints advertised as current
+        self.assertNotIn(
+            "7bed2ba862d91f82a0b7553e1a98fc78d9137483d39d94af0050af5aa18bdd33",
+            text)
+
+
+class TraceBuildIdentityTests(unittest.TestCase):
+    """Trace provenance rejects a materially different build configuration."""
+
+    TRACE = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
+
+    def setUp(self):
+        self.mod = _load("oe_full_trace_report")
+        self.live = self.TRACE.read_text(encoding="utf-8")
+
+    def test_mismatched_expected_bin_count_is_rejected(self):
+        broken = re.sub(r"build_manifest_expected_bins: \d+",
+                        "build_manifest_expected_bins: 7", self.live, count=1)
+        self.assertTrue(any("expected-bin count" in p for p in
+                            self.mod.trace_provenance_problems(broken)))
+
+    def test_mismatched_foma_version_is_rejected(self):
+        broken = re.sub(r"build_manifest_foma_version: .*",
+                        "build_manifest_foma_version: foma 9.9.9",
+                        self.live, count=1)
+        self.assertTrue(any("Foma version" in p for p in
+                            self.mod.trace_provenance_problems(broken)))
+
+
+class ArchiveNotCurrentAuthorityTests(unittest.TestCase):
+    """Frozen archives are never required to track future current metadata."""
+
+    def test_guardrails_do_not_couple_archives_to_live_staging(self):
+        src = (REPO_ROOT /
+               "Germanic/tests/test_adjudication_protocol_guardrails.py"
+               ).read_text(encoding="utf-8")
+        self.assertNotIn("disagrees with staging", src)
+        self.assertIn("ARCHIVE/FROZEN", src)
 
 
 if __name__ == "__main__":

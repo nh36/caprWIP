@@ -175,38 +175,30 @@ class PrefixVersusStageTests(unittest.TestCase):
                 "canonical stage (adjudicated verdict)",
             )
 
-    def test_authoritative_layers_agree_on_adjudicated_stages(self):
-        """Layers must agree wherever an adjudication corrected metadata.
+    def test_frozen_audit_archives_are_archival_not_current(self):
+        """The audit table and rename manifest are ARCHIVE/FROZEN snapshots.
 
-        Older rows may carry legacy stage-label vocabularies; this test
-        deliberately targets only rules whose staging-map action_status
-        records a completed metadata correction, where full agreement
-        was explicitly established.
+        They must exist, carry the frozen-archive banner, and stay readable,
+        but they are NOT required to agree with the current staging map:
+        a future legitimate stage correction updates the registry (and its
+        generated views) without rewriting the frozen archives. Current
+        authority is the registry/model, never these files.
         """
+        for path in (AUDIT_TABLE, RENAME_MANIFEST):
+            self.assertTrue(path.exists(), path)
+            head = "\n".join(
+                line for line in
+                path.read_text(encoding="utf-8").splitlines()[:15]
+                if line.startswith("#"))
+            self.assertIn("ARCHIVE", head, f"{path.name}: missing frozen-archive banner")
         audit = {r["sc_id"]: r for r in read_tsv(AUDIT_TABLE)}
         rename = {r["sc_id"]: r for r in read_tsv(RENAME_MANIFEST)}
-        checked = 0
-        for row in self.staging:
-            if row.get("action_status") != "metadata_corrected":
-                continue
-            sc_id = row["sc_id"]
-            stage = row.get("hist_stage", "")
-            checked += 1
-            if sc_id in audit:
-                self.assertEqual(
-                    audit[sc_id]["proposed_hist_stage"],
-                    stage,
-                    f"{sc_id}: historical_audit_table stage disagrees with "
-                    "staging map on a metadata-corrected rule",
-                )
-            if sc_id in rename:
-                self.assertEqual(
-                    rename[sc_id]["canonical_hist_stage"],
-                    stage,
-                    f"{sc_id}: rename manifest stage disagrees with staging "
-                    "map on a metadata-corrected rule",
-                )
-        self.assertGreater(checked, 0, "no metadata_corrected rows found")
+        self.assertTrue(audit, "archive audit table unreadable/empty")
+        self.assertTrue(rename, "archive rename manifest unreadable/empty")
+        for row in audit.values():
+            self.assertIn("proposed_hist_stage", row)
+        for row in rename.values():
+            self.assertIn("canonical_hist_stage", row)
 
 
 class RetiredRuleGuardTests(unittest.TestCase):

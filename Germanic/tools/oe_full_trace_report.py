@@ -351,6 +351,7 @@ def trace_provenance_problems(text: str) -> List[str]:
         return ["trace report has no PROVENANCE block; regenerate with "
                 "tools/oe_full_trace_report.py --all"]
     recorded: Dict[str, str] = {}
+    meta: Dict[str, str] = {}
     canonical = False
     for line in text.split(marker, 1)[1].splitlines():
         line = line.strip()
@@ -360,6 +361,9 @@ def trace_provenance_problems(text: str) -> List[str]:
             continue
         if line.startswith("bins_provenance: canonical"):
             canonical = True
+        if ": " in line and line.startswith("build_manifest_"):
+            key, value = line.split(": ", 1)
+            meta[key] = value.strip()
         m = _PROVENANCE_HASH_RE.match(line)
         if m:
             recorded[m.group(1)] = m.group(2)
@@ -385,6 +389,26 @@ def trace_provenance_problems(text: str) -> List[str]:
         elif recorded.get(label) and recorded[manifest_label] != recorded[label]:
             problems.append(f"trace report's build manifest disagrees with its "
                             f"own source hash for {label}")
+    # Build-identity checks: the trace must have been produced under the
+    # current build contract, not merely from identical source bytes.
+    expected_count = str(len(oe_pipeline.expected_snapshot_bins()) + 1)
+    if meta.get("build_manifest_expected_bins") != expected_count:
+        problems.append(
+            "trace report's expected-bin count "
+            f"({meta.get('build_manifest_expected_bins', 'missing')}) does not "
+            f"match the current executable model contract ({expected_count}); "
+            "regenerate from a current canonical build")
+    try:
+        current_manifest = json.loads(rt.build_manifest.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        current_manifest = {}
+    current_foma = current_manifest.get("foma_version")
+    if current_foma and meta.get("build_manifest_foma_version") != current_foma:
+        problems.append(
+            "trace report's recorded Foma version "
+            f"({meta.get('build_manifest_foma_version', 'missing')}) differs "
+            f"from the current build manifest ({current_foma}); regenerate "
+            "under the current build configuration")
     return problems
 
 

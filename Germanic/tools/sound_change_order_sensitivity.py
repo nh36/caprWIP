@@ -42,7 +42,6 @@ from capr_runtime import check_build_manifest, layout  # noqa: E402
 from oe_pipeline import apply_down, load_rows  # noqa: E402
 
 
-RULE_NAME_RE = re.compile(r"define\s+([A-Za-z0-9]+)")
 RESUME_STEPS_RE = re.compile(r"resume_steps=(\d+)")
 LAST_SAFE_ORDER_RE = re.compile(r"last_safe_order=(\d+)")
 
@@ -99,6 +98,7 @@ def repo_paths() -> Dict[str, Path]:
         "germanic_dir": germanic_dir,
         "repo_root": rt.repo_root,
         "inventory": germanic_dir / "docs" / "sound_changes" / "sound_change_inventory.tsv",
+        "registry": germanic_dir / "docs" / "sound_changes" / "registry" / "sc_registry.tsv",
         "germanic_txt": rt.germanic_fst,
         "sandbox_txt": rt.sandbox_fst,
         "aligned_tsv": rt.corpus_tsv,
@@ -162,30 +162,54 @@ def parse_args() -> argparse.Namespace:
     return args
 
 
-def extract_rule_name(anchor: str) -> str:
-    match = RULE_NAME_RE.search(anchor or "")
-    if not match:
-        raise ValueError(f"Could not extract FOMA rule name from anchor: {anchor!r}")
-    return match.group(1)
+def registry_fst_identifiers(path: Path) -> Dict[str, str]:
+    """Canonical SC id -> fst_identifier mapping from the semantic registry.
+
+    sc_registry.tsv is the ONE authority for which executable FST rule a
+    sound change denotes; the inventory view's rule_source_anchor is
+    documentation only and is never used for executable identity.
+    """
+    lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
+             if ln and not ln.startswith("#")]
+    reader = csv.DictReader(lines, delimiter="\t")
+    return {
+        (row.get("sc_id") or "").strip(): (row.get("fst_identifier") or "").strip()
+        for row in reader
+    }
 
 
-def load_inventory(path: Path) -> Tuple[Dict[str, ChangeInfo], List[ChangeInfo]]:
+def load_inventory(
+    path: Path,
+    fst_identifiers: Dict[str, str],
+) -> Tuple[Dict[str, ChangeInfo], List[ChangeInfo]]:
     by_id: Dict[str, ChangeInfo] = {}
     ordered: List[ChangeInfo] = []
     lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
              if ln and not ln.startswith("#")]
     reader = csv.DictReader(lines, delimiter="\t")
+    model_rules = {s.foma_identifier for s in oe_pipeline.named_stages()}
     for row in reader:
             # Archival column name in the generated inventory view; this is
             # INVENTORY order, not executable position.
             inventory_order = (row.get("current_order") or "").strip()
             if not inventory_order:
                 continue
+            change_id = (row.get("change_id") or "").strip()
+            # sc_registry.tsv is the ONE identity authority. Rows without a
+            # registry fst_identifier (support stages, technical markers,
+            # surface orthography) stay as inventory metadata but cannot be
+            # experiment targets.
+            rule_name = fst_identifiers.get(change_id, "")
+            if rule_name and rule_name not in model_rules:
+                raise SystemExit(
+                    f"{change_id}: registry fst_identifier {rule_name!r} is not "
+                    "a stage of the executable model (oe_pipeline); fix "
+                    "sc_registry.tsv or germanic.txt")
             info = ChangeInfo(
-                change_id=(row.get("change_id") or "").strip(),
+                change_id=change_id,
                 display_name=(row.get("display_name") or "").strip(),
                 inventory_order=int(inventory_order),
-                rule_name=extract_rule_name(row.get("rule_source_anchor") or ""),
+                rule_name=rule_name,
                 entry_type=(row.get("entry_type") or "").strip(),
                 include_in_volume=(row.get("include_in_volume") or "").strip(),
                 notes=(row.get("notes") or "").strip(),
@@ -206,6 +230,7 @@ def inventory_rule_lookup(ordered: Sequence[ChangeInfo]) -> Dict[str, NeighborIn
             item.entry_type,
         )
         for item in ordered
+        if item.rule_name
     }
 
 
@@ -1417,12 +1442,25 @@ def main() -> None:
         first_break_failures_output=first_break_failures_output,
     )
 
-    inventory_by_id, ordered_inventory = load_inventory(inventory_path)
+    inventory_by_id, ordered_inventory = load_inventory(
+        inventory_path, registry_fst_identifiers(repo_paths()["registry"]))
+
+    def focal_change(sc_id: str) -> ChangeInfo:
+        if sc_id not in inventory_by_id:
+            raise SystemExit(f"{sc_id}: not in the sound-change inventory")
+        info = inventory_by_id[sc_id]
+        if not info.rule_name:
+            raise SystemExit(
+                f"{sc_id}: no fst_identifier in sc_registry.tsv; the registry "
+                "is the canonical SC -> FST identity authority, so this entry "
+                "cannot be an order-sensitivity experiment target")
+        return info
+
     live_order = parse_english_proto_to_oe_order(germanic_path)
     first_break_order = resolve_first_break_order_profile(live_order, args.order_profile, germanic_path)
 
     if args.mode == "first-break" and args.dry_run_order:
-        change = inventory_by_id[args.change]
+        change = focal_change(args.change)
         print_order_profile(first_break_order, args.order_profile, change, ordered_inventory)
         return
 
@@ -1488,7 +1526,7 @@ def main() -> None:
             raise SystemExit(1)
         return
 
-    change = inventory_by_id[args.change]
+    change = focal_change(args.change)
     if args.mode == "first-break":
         run_first_break(
             change=change,

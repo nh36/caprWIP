@@ -48,16 +48,16 @@ ROOT_IDENTIFIER = "OldEnglish"
 BUNDLE_MARKER = "capr:bundle"
 SNAPSHOT_PREFIX = "old_english_sandbox_after_"
 
-# Legacy-compatible cascade_position domain: the origin blocks whose stages
-# carry SC cascade positions in the scientific records.  The proto-input
-# filter, the PGmc consonant prelude, and the surface filter are part of the
-# physical execution sequence (exec_index) but outside this numbering.
-CASCADE_POSITION_BLOCKS = (
-    "EnglishProtoToOE",
-    "EarlyEnglishLineChanges",
-    "OldEnglishAfterEpenthesis",
-    "OldEnglishRules",
-)
+# Legacy-compatible cascade_position domain: a contiguous executable span,
+# not a list of bundle names.  The numbered SC cascade starts at the first
+# stage contained (at any nesting depth) in CASCADE_ENTRY_BUNDLE and ends
+# just before the CASCADE_SURFACE_STAGE filter.  Every named stage inside
+# that span is numbered contiguously regardless of how many nested
+# structural bundles contain it.  The proto-input filter, the PGmc
+# consonant prelude, and the surface filter are part of the physical
+# execution sequence (exec_index) but outside this numbering.
+CASCADE_ENTRY_BUNDLE = "EnglishProtoToOE"
+CASCADE_SURFACE_STAGE = "OldEnglishSurface"
 
 _IDENT_RE = re.compile(r"^[A-Za-z][A-Za-z0-9_]*$")
 
@@ -206,27 +206,49 @@ def parse_stages(fst_path: Path | None = None) -> List[Stage]:
             f"in {fst_path}")
     bodies = _define_bodies(_strip_comments(raw))
 
-    flat: List[Tuple[str, str, str, str]] = []  # (identifier, origin, kind, inline_text)
+    flat: List[Tuple[str, str, str, str, frozenset]] = []
+    # (identifier, origin, kind, inline_text, ancestor bundle set)
 
-    def expand(name: str) -> None:
+    def expand(name: str, ancestors: frozenset) -> None:
         if name not in bodies:
             raise ValueError(f"bundle {name!r} has no define in {fst_path}")
+        inner = ancestors | {name}
         for member in _composition_members(bodies[name]):
             if _IDENT_RE.match(member):
                 if member in bundles:
-                    expand(member)
+                    expand(member, inner)
                 else:
-                    flat.append((member, name, "named", ""))
+                    flat.append((member, name, "named", "", inner))
             else:
-                flat.append(("", name, "inline", member))
+                flat.append(("", name, "inline", member, inner))
 
-    expand(ROOT_IDENTIFIER)
+    expand(ROOT_IDENTIFIER, frozenset())
+
+    # Numbered SC cascade span: from the first stage nested (at any depth)
+    # inside CASCADE_ENTRY_BUNDLE up to (excluding) CASCADE_SURFACE_STAGE.
+    entry_indices = [i for i, entry in enumerate(flat)
+                     if CASCADE_ENTRY_BUNDLE in entry[4]]
+    if not entry_indices:
+        raise ValueError(
+            f"cascade entry bundle {CASCADE_ENTRY_BUNDLE!r} has no expanded "
+            f"members in {fst_path}")
+    surface_indices = [i for i, entry in enumerate(flat)
+                       if entry[0] == CASCADE_SURFACE_STAGE]
+    if not surface_indices:
+        raise ValueError(
+            f"surface stage {CASCADE_SURFACE_STAGE!r} not found in {fst_path}")
+    span_start = entry_indices[0]
+    span_end = surface_indices[0]  # exclusive
+    if span_end <= span_start:
+        raise ValueError(
+            f"surface stage {CASCADE_SURFACE_STAGE!r} precedes the cascade "
+            f"entry bundle {CASCADE_ENTRY_BUNDLE!r} in {fst_path}")
 
     stages: List[Stage] = []
     cascade_pos = 0
-    for i, (ident, origin, kind, inline_text) in enumerate(flat, start=1):
+    for i, (ident, origin, kind, inline_text, _ancestors) in enumerate(flat, start=1):
         pos = None
-        if kind == "named" and origin in CASCADE_POSITION_BLOCKS:
+        if kind == "named" and span_start <= i - 1 < span_end:
             cascade_pos += 1
             pos = cascade_pos
         stages.append(Stage(exec_index=i, foma_identifier=ident,

@@ -13,7 +13,10 @@
         support), frozen fingerprints, and the standard commands.
 
     python3 Germanic/tools/adjudicate.py SC024 --evidence
-        Deterministically gather the executable (runtime) evidence: rebuild
+        Deterministically gather the executable (runtime) evidence: first
+        regenerate the purely mechanical prerequisites (derived registry
+        cascade positions, executable manifests, generated sandbox,
+        chronology-card positions), then rebuild
         the full OE cascade and every stage bin from
         Germanic/fsts/old_english_sandbox.txt inside the backend container,
         write the build manifest, prove production-vs-generated-sandbox
@@ -102,6 +105,16 @@ GENERATED_CHECKS = (
     ("cascade_order_manifest.py", ["--check"]),
     ("generate_oe_sandbox.py", ["--check"]),
     ("sync_chronology_card_positions.py", ["--check"]),
+)
+
+# Purely mechanical prerequisites for runtime evidence, regenerated
+# automatically by --evidence before compiling (derived registry columns,
+# executable manifests, generated sandbox, card positions). Never touches
+# scientific SOURCE metadata beyond explicitly derived columns.
+MECHANICAL_PREREQS = DERIVED_COLUMN_SYNCS + (
+    REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
+    REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
+    REPO_ROOT / "Germanic/tools/sync_chronology_card_positions.py",
 )
 
 # Canonical directories in which bare-filename registry pointers may live.
@@ -311,16 +324,30 @@ def evidence(sc_id) -> int:
         if e["representative_forms"]:
             print(f"  forms: {e['representative_forms']}")
 
-    if not SANDBOX_FST.is_file():
-        print(f"EVIDENCE FAILED: missing {SANDBOX_FST}", file=sys.stderr)
-        return 1
+    # Regenerate the mechanical prerequisites of runtime evidence in place
+    # (§ ordinary workflow: --evidence, --finalize, tests — no bounce cycle).
+    print("\n## Regenerating mechanical prerequisites (model projections) ...")
+    for builder in MECHANICAL_PREREQS:
+        result = subprocess.run(
+            [sys.executable, str(builder)], cwd=REPO_ROOT,
+            capture_output=True, text=True)
+        tail = (result.stdout or result.stderr).strip().splitlines()
+        print(f"{builder.name}: {tail[-1] if tail else 'ok'}")
+        if result.returncode != 0:
+            print(result.stderr, file=sys.stderr)
+            print(f"EVIDENCE FAILED: {builder.name} exited {result.returncode}",
+                  file=sys.stderr)
+            return 1
     stale = run_generated_checks()
     if stale:
         for s in stale:
             print(f"EVIDENCE FAILED (stale generated artifact): {s}",
                   file=sys.stderr)
-        print("Run adjudicate.py SCNNN --finalize (or the individual "
-              "generators) before gathering evidence.", file=sys.stderr)
+        print("A generated artifact stayed stale after regeneration; fix the "
+              "generator before gathering evidence.", file=sys.stderr)
+        return 1
+    if not SANDBOX_FST.is_file():
+        print(f"EVIDENCE FAILED: missing {SANDBOX_FST}", file=sys.stderr)
         return 1
     try:
         clock = run_in_runner("date +%s", capture_output=True, text=True)
