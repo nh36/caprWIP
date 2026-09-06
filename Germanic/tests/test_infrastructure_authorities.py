@@ -614,7 +614,7 @@ class ScosRegistryIdentityTests(unittest.TestCase):
                 SC_DIR / "registry/sc_registry.tsv"))
         self.assertEqual(by_id["SC043"].rule_name, "EAFBrightening")
         # rows without a registry identifier are metadata-only, not targets
-        self.assertEqual(by_id["SC088"].rule_name, "")
+        self.assertEqual(by_id["SC090"].rule_name, "")
         lookup = self.scos.inventory_rule_lookup(list(by_id.values()))
         self.assertNotIn("", lookup)
 
@@ -747,6 +747,11 @@ class TraceBuildIdentityTests(unittest.TestCase):
                             self.mod.trace_provenance_problems(broken)))
 
     def test_mismatched_foma_version_is_rejected(self):
+        manifest = REPO_ROOT / "backend" / "oe_build_manifest.json"
+        if not manifest.is_file():
+            self.skipTest("foma-version identity check compares against the "
+                          "local runtime build manifest (adjudicate "
+                          "--evidence); absent in a clean checkout")
         broken = re.sub(r"build_manifest_foma_version: .*",
                         "build_manifest_foma_version: foma 9.9.9",
                         self.live, count=1)
@@ -763,6 +768,64 @@ class ArchiveNotCurrentAuthorityTests(unittest.TestCase):
                ).read_text(encoding="utf-8")
         self.assertNotIn("disagrees with staging", src)
         self.assertIn("ARCHIVE/FROZEN", src)
+
+
+class CensusRegistryIdentityTests(unittest.TestCase):
+    """rule_coverage_census executable identity comes from the registry,
+    never from rule_source_anchor; census scope is the numbered cascade."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.census = _load("rule_coverage_census")
+        cls.pipeline = _load("oe_pipeline")
+
+    def test_census_source_never_reads_rule_source_anchor(self):
+        src = (TOOLS / "rule_coverage_census.py").read_text(encoding="utf-8")
+        self.assertNotIn("rule_source_anchor", src.replace(
+            "rule_source_anchor is documentation", ""),
+            "census must take executable identity from sc_registry.tsv, "
+            "not from the inventory's rule_source_anchor annotation")
+
+    def test_no_active_tool_extracts_identity_from_anchor(self):
+        """No active tool may regex-extract a Foma identifier from
+        rule_source_anchor to decide executable identity. Documentation
+        emitters (generate_registry_views, adjudicate reading list) may
+        mention the column but must not parse 'define <Ident>' out of it."""
+        offenders = []
+        for path in sorted(TOOLS.glob("*.py")):
+            src = path.read_text(encoding="utf-8")
+            if ("rule_source_anchor" in src
+                    and "define\\s+([A-Za-z" in src):
+                offenders.append(path.name)
+        self.assertEqual(offenders, [],
+                         "tools parsing executable identity out of "
+                         f"rule_source_anchor: {offenders}")
+
+    def test_census_scope_is_the_numbered_cascade(self):
+        """Every census row has a numbered cascade position; SC002 (the
+        pre-cascade prelude stage PGmcGmSimplification) is deliberately out
+        of scope even though it has a registry fst_identifier."""
+        rows = {r["sc_id"]: r for r in self.census.build_rows()}
+        self.assertNotIn("SC002", rows)
+        positions = [int(r["cascade_position"]) for r in rows.values()]
+        self.assertTrue(positions and all(p >= 1 for p in positions))
+        self.assertIn("SC088", rows)
+        self.assertIn("SC089", rows)
+        self.assertEqual(rows["SC088"]["cascade_position"], "89")
+        self.assertEqual(rows["SC089"]["cascade_position"], "90")
+        # SC002's stage is executable but outside the numbered span.
+        stage = {s.foma_identifier: s.cascade_position
+                 for s in self.pipeline.named_stages()}
+        self.assertIn("PGmcGmSimplification", stage)
+        self.assertIsNone(stage["PGmcGmSimplification"])
+
+    def test_registry_supplies_identity_for_all_census_rows(self):
+        reg = {r["sc_id"]: (r.get("fst_identifier") or "").strip()
+               for r in self.census.read_tsv(self.census.SC_REGISTRY)}
+        for row in self.census.build_rows():
+            self.assertEqual(row["foma_identifier"], reg[row["sc_id"]],
+                             f"{row['sc_id']}: census identity must equal "
+                             "the registry fst_identifier")
 
 
 if __name__ == "__main__":

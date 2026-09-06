@@ -26,6 +26,7 @@ from __future__ import annotations
 import csv
 import importlib.util
 import re
+import shutil
 import unittest
 from pathlib import Path
 
@@ -42,6 +43,18 @@ CARD = SC_DIR / "order_tests" / "chronology_cards" / "SC023-nwgmc-n-stem-n-loss.
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
+
+
+# Live-probe availability: these adjudication files mix committed-evidence
+# assertions (always run) with live flookup probes against the untracked
+# sandbox bins built by `adjudicate --evidence`. The probes are skipped when
+# the local runtime build is absent (e.g. clean CI checkout).
+RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
+                 and shutil.which("flookup") is not None)
+requires_runtime = unittest.skipUnless(
+    RUNTIME_BUILT,
+    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
+    "and flookup on PATH")
 
 # The adjudicated firing population: weak-noun citation stems in *-ōn-.
 EXPECTED_FIRING_CONCEPTS = {
@@ -123,6 +136,7 @@ class SC023AdjudicationTests(unittest.TestCase):
     # Firing population pinned (live stage bins)
     # ------------------------------------------------------------------
 
+    @requires_runtime
     def test_firing_population_is_exactly_the_17_weak_nouns(self):
         fired = set()
         candidates = {
@@ -145,6 +159,7 @@ class SC023AdjudicationTests(unittest.TestCase):
             "(see sc023-adjudication.md)",
         )
 
+    @requires_runtime
     def test_do_is_not_a_live_application_and_don_keeps_secondary_n(self):
         row = self.baseline["do"]
         self.assertEqual(row["proto"], "*dōną")
@@ -157,6 +172,7 @@ class SC023AdjudicationTests(unittest.TestCase):
         self.assertEqual(apocope, ["*d*ō*n"])
         self.assertEqual(row["outputs"], "dōn")
 
+    @requires_runtime
     def test_un_final_words_are_untouched_by_sc023(self):
         for concept in sorted(UN_FINAL_CONCEPTS):
             row = self.baseline[concept]
@@ -168,6 +184,7 @@ class SC023AdjudicationTests(unittest.TestCase):
                 f"{concept} ({row['proto']}) retained -un must not undergo SC023",
             )
 
+    @requires_runtime
     def test_tongue_normalizes_citation_stem_to_nasalized_nom_sg(self):
         after = self.stage("pnwgmc_n_stem_n_loss", "túngōn")
         self.assertEqual(after, ["*t*ú*n*g*ǭ"])

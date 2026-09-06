@@ -101,9 +101,13 @@ class TraceReportPathTests(unittest.TestCase):
     def test_defaults_resolve_to_existing_files(self):
         defaults = trace_report.default_paths()
         self.assertTrue(defaults["tsv"].is_file(), defaults["tsv"])
-        self.assertTrue(defaults["bin"].is_file(), defaults["bin"])
-        self.assertTrue(defaults["bin_dir"].is_dir(), defaults["bin_dir"])
         self.assertTrue(defaults["fsts_dir"].is_dir(), defaults["fsts_dir"])
+        self.assertTrue(defaults["bin_dir"].is_dir(), defaults["bin_dir"])
+        # The compiled bin is an untracked runtime artifact (built by
+        # `adjudicate --evidence`); require it only when a local runtime
+        # build exists, so a clean CI checkout still validates the layout.
+        if any(defaults["bin_dir"].glob("*.bin")):
+            self.assertTrue(defaults["bin"].is_file(), defaults["bin"])
 
     def test_default_bin_dir_is_never_the_fsts_source_dir(self):
         defaults = trace_report.default_paths()

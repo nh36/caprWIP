@@ -6,6 +6,7 @@ import csv
 import importlib.util
 import io
 import re
+import shutil
 import unittest
 from pathlib import Path
 
@@ -26,6 +27,18 @@ SC_REGISTRY = (GERMANIC / "docs" / "sound_changes" / "registry"
                / "sc_registry.tsv")
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
+
+
+# Live-probe availability: these adjudication files mix committed-evidence
+# assertions (always run) with live flookup probes against the untracked
+# sandbox bins built by `adjudicate --evidence`. The probes are skipped when
+# the local runtime build is absent (e.g. clean CI checkout).
+RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
+                 and shutil.which("flookup") is not None)
+requires_runtime = unittest.skipUnless(
+    RUNTIME_BUILT,
+    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
+    "and flookup on PATH")
 
 
 def load_trace_tool():
@@ -107,6 +120,7 @@ class SC021AdjudicationTests(unittest.TestCase):
             self.positions["OEMedUnstressedULowering"],
         )
 
+    @requires_runtime
     def test_wundude_has_the_source_backed_medial_path(self):
         form = "wúndōdē"
         self.assertEqual(
@@ -122,6 +136,7 @@ class SC021AdjudicationTests(unittest.TestCase):
             self.stage("old_english_surface", form), ["wundude"]
         )
 
+    @requires_runtime
     def test_final_shortened_o_does_not_use_the_medial_rule(self):
         form = "mḗnōθz"
         self.assertEqual(
@@ -137,6 +152,7 @@ class SC021AdjudicationTests(unittest.TestCase):
             self.stage("old_english_surface", form), ["mōnaþ"]
         )
 
+    @requires_runtime
     def test_late_sc040_remains_distinct_from_the_new_chain(self):
         form = "xébun"
         self.assertEqual(

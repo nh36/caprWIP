@@ -45,6 +45,7 @@ from __future__ import annotations
 import csv
 import importlib.util
 import re
+import shutil
 import unittest
 from pathlib import Path
 
@@ -66,6 +67,18 @@ OLD_MEMO = SC_DIR / "audits" / "sc024-adjudication.md"
 READER = SC_DIR / "reader_facing"
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
+
+
+# Live-probe availability: these adjudication files mix committed-evidence
+# assertions (always run) with live flookup probes against the untracked
+# sandbox bins built by `adjudicate --evidence`. The probes are skipped when
+# the local runtime build is absent (e.g. clean CI checkout).
+RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
+                 and shutil.which("flookup") is not None)
+requires_runtime = unittest.skipUnless(
+    RUNTIME_BUILT,
+    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
+    "and flookup on PATH")
 
 # Change A census: 13 stressed oral roots + the two nasal-branch lexemes,
 # which historically DID undergo *ē₁ > *ā (R/T p. 11: *mānōþ-, *spānuz),
@@ -226,6 +239,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
     # Change A firing census (live stage bins)
     # ------------------------------------------------------------------
 
+    @requires_runtime
     def test_change_a_fires_on_exactly_the_17_stressed_e1_lexemes(self):
         fired = set()
         candidates = {
@@ -244,6 +258,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             "the *w-conditioning witnesses sow and betray",
         )
 
+    @requires_runtime
     def test_change_a_produces_the_reconstructed_intermediate_a(self):
         self.assertEqual(
             self.across_sc024("skḗpą"), (["*s*k*ḗ*p*ą"], ["*s*k*ā*p*ą"])
@@ -255,6 +270,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             self.across_sc024("spḗnuz"), (["*s*p*ḗ*n*u*z"], ["*s*p*ā*n*u*z"])
         )
 
+    @requires_runtime
     def test_unstressed_tokens_do_not_fire_and_surface_short(self):
         for concept in sorted(UNSTRESSED_CONCEPTS):
             row = self.baseline[concept]
@@ -274,6 +290,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
     # Change B: rounding and fronting consume the *ā
     # ------------------------------------------------------------------
 
+    @requires_runtime
     def test_nasal_branch_rounds_the_intermediate_a(self):
         for concept in sorted(NASAL_BRANCH_CONCEPTS):
             row = self.baseline[concept]
@@ -287,6 +304,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(self.baseline["month"]["outputs"], "mōnaþ")
         self.assertEqual(self.baseline["spoon"]["outputs"], "spōn")
 
+    @requires_runtime
     def test_oral_branch_fronts_the_intermediate_a(self):
         self.assertEqual(
             self.across_fronting("skāpą"), (["*s*k*ā*p*ą"], ["*s*k*ǣ*p*ą"])
@@ -301,11 +319,13 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
     # The *w conditioning: SC102 feeds the block, lǣwan is the control
     # ------------------------------------------------------------------
 
+    @requires_runtime
     def test_sow_undergoes_change_a(self):
         self.assertEqual(
             self.across_sc024("sḗaną"), (["*s*ḗ*a*n*ą"], ["*s*ā*a*n*ą"])
         )
 
+    @requires_runtime
     def test_sc102_inserts_the_hiatus_w_in_sow_only(self):
         self.assertEqual(
             self.across_w_insertion("sḗaną"),
@@ -327,6 +347,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
                          "SC102 must fire on exactly the one verba-pura "
                          "witness in the corpus")
 
+    @requires_runtime
     def test_sc101_is_blocked_before_w_in_sow(self):
         before, after = self.across_fronting("sḗaną")
         self.assertEqual(before, after,
@@ -335,6 +356,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(after, ["*s*ā*w*a*n*ą"])
         self.assertEqual(self.baseline["sow"]["outputs"], "sāwan")
 
+    @requires_runtime
     def test_sc101_fronts_betray_at_its_own_boundary(self):
         # the front vowel must appear AT the SC101 stage bin, not later
         # via i-umlaut: *lāwijaną > *lǣwijaną (R/T p. 150)
@@ -346,6 +368,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(after, ["*l*ǣ*w*i*j*a*n*ą"])
         self.assertEqual(self.baseline["betray"]["outputs"], "lǣwan")
 
+    @requires_runtime
     def test_a_from_ai_arises_too_late_to_front_or_round(self):
         for concept, attested in sorted(AI_BRANCH_CONTROLS.items()):
             row = self.baseline[concept]

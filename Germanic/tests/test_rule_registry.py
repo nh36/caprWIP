@@ -95,37 +95,35 @@ class ManifestRegistryCoverageTests(unittest.TestCase):
         self.assertEqual(inline, [], "manifest should contain only named rules")
 
 
-class StagingMapRepairTests(unittest.TestCase):
-    def setUp(self):
-        self.repair = _load_module("repair_staging_map_fst_identifiers",
-                                   TOOLS / "repair_staging_map_fst_identifiers.py")
-        self.staging = _read_tsv_skip_comments(STAGING_MAP)
-        self.sc_to_foma = self.repair.load_sc_to_foma(INVENTORY)
+class StagingMapIdentityTests(unittest.TestCase):
+    """The staging map is a generated view; its executable identity must come
+    from the registry (sc_registry.tsv fst_identifier), never from
+    rule_source_anchor. (Replaces the retired anchor-based repair tool.)"""
 
-    def test_fst_identifier_column_is_repaired(self):
+    def setUp(self):
+        self.staging = _read_tsv_skip_comments(STAGING_MAP)
+        registry = _read_tsv_skip_comments(
+            SC_DIR / "registry" / "sc_registry.tsv")
+        self.registry_ident = {r["sc_id"]: (r.get("fst_identifier") or "").strip()
+                               for r in registry}
+
+    def test_fst_identifier_column_is_not_the_sc_label(self):
         """fst_identifier must hold the real Foma identifier, never the SC label."""
         offenders = [r["sc_id"] for r in self.staging if r["fst_identifier"] == r["sc_id"]]
         self.assertEqual(offenders, [],
                          f"fst_identifier still equals the SC label for: {offenders}")
 
-    def test_fst_identifier_matches_inventory(self):
+    def test_fst_identifier_matches_registry(self):
         for r in self.staging:
-            self.assertIn(r["sc_id"], self.sc_to_foma,
-                          f"{r['sc_id']} missing from inventory")
-            self.assertEqual(r["fst_identifier"], self.sc_to_foma[r["sc_id"]],
-                             f"{r['sc_id']}: staging Foma id disagrees with inventory")
+            self.assertIn(r["sc_id"], self.registry_ident,
+                          f"{r['sc_id']} missing from the registry")
+            self.assertEqual(r["fst_identifier"], self.registry_ident[r["sc_id"]],
+                             f"{r['sc_id']}: staging Foma id disagrees with registry")
 
     def test_staging_foma_identifiers_are_unique(self):
         foma = [r["fst_identifier"] for r in self.staging]
         dups = {f for f in foma if foma.count(f) > 1}
         self.assertEqual(dups, set(), f"duplicate principal Foma rules in staging map: {dups}")
-
-    def test_repair_tool_is_idempotent(self):
-        """The committed map must already be repaired (repair --check would pass)."""
-        original = STAGING_MAP.read_text(encoding="utf-8")
-        repaired_lines, changed = self.repair.repair_lines(original, self.sc_to_foma)
-        self.assertEqual(changed, 0, "staging map is stale; run repair_staging_map_fst_identifiers.py")
-        self.assertEqual("\n".join(repaired_lines) + "\n", original)
 
 
 class StagingPipelineCrossCheckTests(unittest.TestCase):

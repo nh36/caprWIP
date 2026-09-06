@@ -7,7 +7,7 @@
 # complete physical order. sc_id is joined from registry/sc_registry.tsv.
 exec_index	cascade_position	foma_identifier	origin_block	kind	snapshot_bin	sc_id
 1		EnglishProtoInput	OldEnglishCore	named	old_english_sandbox_after_english_proto_input.bin	
-2		PGmcGmSimplification	EarlyGermanicConsonantPipeline	named	old_english_sandbox_after_pgmc_gm_simplification.bin	
+2		PGmcGmSimplification	EarlyGermanicConsonantPipeline	named	old_english_sandbox_after_pgmc_gm_simplification.bin	SC002
 3	1	RootNounNomZLoss	EnglishProtoToOE	named	old_english_sandbox_after_root_noun_nom_z_loss.bin	SC096
 4	2	PNWGmcUnstressedAiMonophthongization	EarlyEnglishLineChanges	named	old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin	SC014
 5	3	PNWGmcAToUBeforeM	EarlyEnglishLineChanges	named	old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin	SC005
@@ -96,8 +96,8 @@ exec_index	cascade_position	foma_identifier	origin_block	kind	snapshot_bin	sc_id
 88	86	OEHLoss	EnglishProtoToOE	named	old_english_sandbox_after_oe_h_loss.bin	SC085
 89	87	OEContraction	EnglishProtoToOE	named	old_english_sandbox_after_oe_contraction.bin	SC086
 90	88	OERMetathesis	EnglishProtoToOE	named	old_english_sandbox_after_oe_r_metathesis.bin	SC087
-91	89	OEEpentheticVowel	OldEnglishAfterEpenthesis	named	old_english_sandbox_after_oe_epenthetic_vowel.bin	
-92	90	OELateUnstressedAgSuffix	OldEnglishRules	named	old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin	
+91	89	OEEpentheticVowel	OldEnglishAfterEpenthesis	named	old_english_sandbox_after_oe_epenthetic_vowel.bin	SC088
+92	90	OELateUnstressedAgSuffix	OldEnglishRules	named	old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin	SC089
 93	91	OECjCleanup	OldEnglishRules	named	old_english_sandbox_after_oe_cj_cleanup.bin	
 94	92	OEXsMerge	OldEnglishRules	named	old_english_sandbox_after_oe_xs_merge.bin	
 95	93	OldEnglishOrthography	OldEnglishRules	named	old_english_sandbox_after_old_english_orthography.bin	
