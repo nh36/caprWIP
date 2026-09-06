@@ -19,8 +19,8 @@ manifest (``oe_build_manifest.json``).  Bins under ``Germanic/fsts/`` are
 never authoritative.
 
 Every Python tool should obtain paths from :func:`layout` instead of
-reconstructing ``Path(__file__).parents[...] / "backend"`` (or the stale
-``/server`` and ``/usr/backend`` layouts) independently.
+reconstructing ``Path(__file__).parents[...] / "backend"`` (or other
+stale pre-2026 container layouts) independently.
 
 Foma-dependent work goes through an explicit runner:
 

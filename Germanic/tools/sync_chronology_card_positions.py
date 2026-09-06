@@ -2,12 +2,14 @@
 """Mechanically sync chronology_card_index.tsv executable positions.
 
 The ``cascade_position`` column (formerly ``current_order``) is a DERIVED
-projection of the canonical registry's ``cascade_position`` (itself checked
-against the executable model in fsts/germanic.txt).  This builder rewrites
-that one column only; every other column (earliest_safe_order,
-latest_safe_order, *_boundary_order, ...) records the ARCHIVAL first-break
-experiment results in the original chronology-test order space and is
-deliberately left untouched.
+projection: the registry owns ``change_id -> fst_identifier`` and the
+executable model (oe_pipeline, parsed from fsts/germanic.txt) owns
+``fst_identifier -> cascade_position``.  This builder joins the two and
+rewrites that one column only — it never reads a cached human-entered
+position.  Every other column (earliest_safe_order, latest_safe_order,
+*_boundary_order, ...) records the ARCHIVAL first-break experiment results
+in the original chronology-test order space and is deliberately left
+untouched.
 
 Retired changes get the literal value ``retired``; active changes without a
 cascade position get ``-``.
@@ -24,10 +26,24 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import oe_pipeline  # noqa: E402
 from generate_registry_views import SC_REGISTRY, read_tsv  # noqa: E402
 
 CARD_INDEX = (SC_REGISTRY.parents[1] / "order_tests" / "chronology_cards"
               / "chronology_card_index.tsv")
+
+
+def _derived_position(row: dict[str, str]) -> str:
+    if row["lifecycle_status"] == "retired":
+        return "retired"
+    ident = row["fst_identifier"]
+    if not ident:
+        return "-"
+    try:
+        pos = oe_pipeline.cascade_position(ident)
+    except KeyError:
+        return "-"
+    return "-" if pos is None else str(pos)
 
 
 def synced_text() -> str:
@@ -49,10 +65,7 @@ def synced_text() -> str:
         row = registry.get(sc_id)
         if row is None:
             raise SystemExit(f"card index change_id {sc_id} not in sc_registry.tsv")
-        if row["lifecycle_status"] == "retired":
-            fields[2] = "retired"
-        else:
-            fields[2] = row["cascade_position"] or "-"
+        fields[2] = _derived_position(row)
         out.append("\t".join(fields))
     return "\n".join(out) + "\n"
 

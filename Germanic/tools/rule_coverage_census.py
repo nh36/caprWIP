@@ -36,6 +36,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import oe_pipeline  # noqa: E402
 from capr_runtime import layout  # noqa: E402
+from oe_full_trace_report import trace_provenance_problems  # noqa: E402
 
 GERMANIC = layout().germanic_dir
 FULL_TRACE = GERMANIC / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"
@@ -88,7 +89,21 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 
 
 def build_rows() -> list[dict[str, str]]:
-    firing = load_firing_summary(FULL_TRACE.read_text(encoding="utf-8"))
+    trace_text = FULL_TRACE.read_text(encoding="utf-8")
+    # Fail closed: the committed full trace is upstream runtime evidence and
+    # must be fresh (canonical provenance, hashes matching the live sources
+    # and its own build manifest) before firing counts are projected from it.
+    problems = trace_provenance_problems(trace_text)
+    if problems:
+        for problem in problems:
+            print(f"CENSUS REFUSED (stale trace evidence): {problem}",
+                  file=sys.stderr)
+        raise SystemExit(
+            "the committed full trace report is stale or noncanonical; run "
+            "the runtime evidence step first (python3 Germanic/tools/"
+            "adjudicate.py SCNNN --evidence, which rebuilds bins and "
+            "regenerates the canonical trace), then re-run this census")
+    firing = load_firing_summary(trace_text)
     # Executable positions come from the shared model (canonical Foma
     # identifiers throughout — the trace report uses the same identifiers,
     # so no alias table exists or is permitted here).

@@ -1,5 +1,26 @@
 #!/usr/bin/env python3
-"""Order-sensitivity runner for Old English baseline, validation, and pilot modes."""
+"""Order-sensitivity runner for Old English baseline, validation, and pilot modes.
+
+Order spaces (do not conflate):
+
+* EXECUTABLE ORDER — the production composition in fsts/germanic.txt,
+  exposed by the shared model (oe_pipeline.py). This is the chain the
+  experiments actually manipulate; it is derived, never hand-listed here.
+* INVENTORY ORDER — the archival ``current_order`` column of the generated
+  sound_change_inventory.tsv view (registry ``inventory_order``). Used only
+  as coordinates for the archival experiment summaries and for
+  inventory-vs-chain neighbor discrepancy notes; it does NOT drive which
+  rules are adjacent in a variant.
+* CHRONOLOGY-EXPERIMENT ORDER — the archival summary columns
+  (``baseline_order``, ``first_break_order``, ``variant_order``,
+  ``last_safe_order``) express movement steps in inventory-order
+  coordinates. They are historical experiment bookkeeping, kept for
+  compatibility with the committed first-break corpus.
+
+The scientific experiment (focal SC, movement direction, order profile,
+boundary tested) stays human-specified; the production chain it manipulates
+comes exclusively from oe_pipeline.
+"""
 
 from __future__ import annotations
 
@@ -8,20 +29,20 @@ import csv
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Sequence, Tuple
 
-from oe_full_trace_report import STAGES, apply_down, load_rows
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import oe_pipeline  # noqa: E402
+from capr_runtime import check_build_manifest, layout  # noqa: E402
+from oe_pipeline import apply_down, load_rows  # noqa: E402
 
 
 RULE_NAME_RE = re.compile(r"define\s+([A-Za-z0-9]+)")
-ENGLISH_PROTO_TO_OE_RE = re.compile(
-    r"define EnglishProtoToOE \((.*?)\);\s*define EnglishProtoInput",
-    re.DOTALL,
-)
-PWGMC_CHANGES_RE = re.compile(r"define EarlyEnglishLineChanges \[(.*?)\];", re.DOTALL)
 RESUME_STEPS_RE = re.compile(r"resume_steps=(\d+)")
 LAST_SAFE_ORDER_RE = re.compile(r"last_safe_order=(\d+)")
 
@@ -33,39 +54,21 @@ FIRST_BREAK_DONE_RESULTS = {
     "ambiguous_needs_review",
 }
 
-POST_EPENTHESIS_RULES = [
-    # OEEpentheticVowel is applied in VariantOldEnglishAfterEpenthesis, so this
-    # list mirrors only the rules that follow OldEnglishAfterEpenthesis in the
-    # live OldEnglishRules definition.
-    "OELateUnstressedAgSuffix",
-    "OECjCleanup",
-    "OEXsMerge",
-    "OldEnglishOrthography",
-    "OEWsPalatalGlide",
-    "OldEnglishRemoveStars",
-]
-
 DEFAULT_ORDER_PROFILE = "default"
 EXPANDED_PWGMC_ORDER_PROFILE = "expanded-pwgmc"
-PWGMC_COMPONENT_RULES = [
-    "PNWGmcUnstressedAiMonophthongization",
-    "PNWGmcAToUBeforeM",
-    "PWGmcEarlyIApocope",
-    "PWGmcFinalOrLowering",
-    "PWGmcCoronalWAssimilation",
-    "PWGmcIjContraction",
-    "PWGmcJGemination",
-    "PWGmcSyllabicJ",
-    "EAFLThVoicing",
-    "PWGmcDentalHardening",
-]
+
+# The structural bundle expanded by the expanded-pwgmc order profile. Its
+# component sequence is DERIVED from the live production composition via
+# oe_pipeline; no hand-maintained component list exists here.
+PWGMC_BUNDLE = "EarlyEnglishLineChanges"
+EXPERIMENT_ROOT = "EnglishProtoToOE"
 
 
 @dataclass(frozen=True)
 class ChangeInfo:
     change_id: str
     display_name: str
-    current_order: int
+    inventory_order: int  # archival inventory/chronology-experiment order space
     rule_name: str
     entry_type: str
     include_in_volume: str
@@ -76,32 +79,30 @@ class ChangeInfo:
 class NeighborInfo:
     change_id: str
     display_name: str
-    current_order: int
+    inventory_order: int  # archival inventory/chronology-experiment order space
     rule_name: str
     entry_type: str
 
 
 def repo_paths() -> Dict[str, Path]:
-    tools_dir = Path(__file__).resolve().parent
-    germanic_dir = tools_dir.parent
-    repo_root = germanic_dir.parent
+    """Canonical paths from the shared runtime layout (capr_runtime).
+
+    The live bin is the production old_english.bin in the ONE authoritative
+    runtime bin directory (host backend/ == container /usr/app). No
+    candidate search, no Germanic/fsts fallback.
+    """
+    rt = layout()
+    germanic_dir = rt.germanic_dir
     summaries_dir = germanic_dir / "docs" / "sound_changes" / "order_tests" / "summaries"
-    live_bin_candidates = [
-        germanic_dir / "old_english.bin",
-        repo_root / "backend" / "old_english.bin",
-        repo_root / "old_english.bin",
-        germanic_dir / "fsts" / "old_english.bin",
-    ]
-    live_bin = next((path for path in live_bin_candidates if path.exists()), live_bin_candidates[0])
     return {
-        "tools_dir": tools_dir,
+        "tools_dir": rt.tools_dir,
         "germanic_dir": germanic_dir,
-        "repo_root": repo_root,
+        "repo_root": rt.repo_root,
         "inventory": germanic_dir / "docs" / "sound_changes" / "sound_change_inventory.tsv",
-        "germanic_txt": germanic_dir / "fsts" / "germanic.txt",
-        "sandbox_txt": germanic_dir / "fsts" / "old_english_sandbox.txt",
-        "aligned_tsv": germanic_dir / "data" / "germanic-aligned-final.tsv",
-        "live_bin": live_bin,
+        "germanic_txt": rt.germanic_fst,
+        "sandbox_txt": rt.sandbox_fst,
+        "aligned_tsv": rt.corpus_tsv,
+        "live_bin": rt.bin_dir / "old_english.bin",
         "baseline_tsv": summaries_dir / "order_sensitivity_baseline_01.tsv",
         "identity_tsv": summaries_dir / "order_sensitivity_identity_variant_02.tsv",
         "adjacent_tsv": summaries_dir / "order_sensitivity_adjacent_pilot_01.tsv",
@@ -146,6 +147,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--first-break-output", default=str(defaults["first_break_tsv"]))
     parser.add_argument("--first-break-changes-output", default=str(defaults["first_break_changes_tsv"]))
     parser.add_argument("--first-break-failures-output", default=str(defaults["first_break_failures_tsv"]))
+    parser.add_argument(
+        "--allow-stale-bin",
+        action="store_true",
+        help="Debug only: skip the build-manifest freshness check for the canonical runtime bin.",
+    )
     args = parser.parse_args()
     if args.mode in {"adjacent-pilot", "first-break"} and not args.change:
         parser.error("--change is required for --mode adjacent-pilot and --mode first-break")
@@ -166,16 +172,19 @@ def extract_rule_name(anchor: str) -> str:
 def load_inventory(path: Path) -> Tuple[Dict[str, ChangeInfo], List[ChangeInfo]]:
     by_id: Dict[str, ChangeInfo] = {}
     ordered: List[ChangeInfo] = []
-    with path.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        for row in reader:
-            current_order = (row.get("current_order") or "").strip()
-            if not current_order:
+    lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
+             if ln and not ln.startswith("#")]
+    reader = csv.DictReader(lines, delimiter="\t")
+    for row in reader:
+            # Archival column name in the generated inventory view; this is
+            # INVENTORY order, not executable position.
+            inventory_order = (row.get("current_order") or "").strip()
+            if not inventory_order:
                 continue
             info = ChangeInfo(
                 change_id=(row.get("change_id") or "").strip(),
                 display_name=(row.get("display_name") or "").strip(),
-                current_order=int(current_order),
+                inventory_order=int(inventory_order),
                 rule_name=extract_rule_name(row.get("rule_source_anchor") or ""),
                 entry_type=(row.get("entry_type") or "").strip(),
                 include_in_volume=(row.get("include_in_volume") or "").strip(),
@@ -183,7 +192,7 @@ def load_inventory(path: Path) -> Tuple[Dict[str, ChangeInfo], List[ChangeInfo]]
             )
             by_id[info.change_id] = info
             ordered.append(info)
-    ordered.sort(key=lambda item: item.current_order)
+    ordered.sort(key=lambda item: item.inventory_order)
     return by_id, ordered
 
 
@@ -192,7 +201,7 @@ def inventory_rule_lookup(ordered: Sequence[ChangeInfo]) -> Dict[str, NeighborIn
         item.rule_name: NeighborInfo(
             item.change_id,
             item.display_name,
-            item.current_order,
+            item.inventory_order,
             item.rule_name,
             item.entry_type,
         )
@@ -211,85 +220,64 @@ def neighbors_for_change(change_id: str, ordered: Sequence[ChangeInfo]) -> Tuple
         earlier = ordered[idx - 1] if idx > 0 else None
         later = ordered[idx + 1] if idx + 1 < len(ordered) else None
         return (
-            NeighborInfo(earlier.change_id, earlier.display_name, earlier.current_order, earlier.rule_name, earlier.entry_type) if earlier else None,
-            NeighborInfo(later.change_id, later.display_name, later.current_order, later.rule_name, later.entry_type) if later else None,
+            NeighborInfo(earlier.change_id, earlier.display_name, earlier.inventory_order, earlier.rule_name, earlier.entry_type) if earlier else None,
+            NeighborInfo(later.change_id, later.display_name, later.inventory_order, later.rule_name, later.entry_type) if later else None,
         )
     raise KeyError(f"Change {change_id} not found in inventory")
 
 
 def parse_english_proto_to_oe_order(germanic_path: Path) -> List[str]:
-    text = germanic_path.read_text(encoding="utf-8")
-    match = ENGLISH_PROTO_TO_OE_RE.search(text)
-    if not match:
-        raise RuntimeError(f"Could not locate EnglishProtoToOE block in {germanic_path}")
-    block = match.group(1)
-    stripped_lines = []
-    for raw_line in block.splitlines():
-        line = raw_line.split("#", 1)[0].strip()
-        if line:
-            stripped_lines.append(line)
-    cleaned = "\n".join(stripped_lines)
-    order = [part.strip() for part in cleaned.split(".o.") if part.strip()]
+    """Live experiment order: the raw member sequence of the production
+    EnglishProtoToOE composition, from the shared executable model."""
+    order = oe_pipeline.composition_members_of(EXPERIMENT_ROOT, germanic_path)
     if not order:
-        raise RuntimeError(f"EnglishProtoToOE block in {germanic_path} parsed to an empty rule list")
+        raise RuntimeError(
+            f"{EXPERIMENT_ROOT} in {germanic_path} parsed to an empty rule list")
     return order
 
 
-def parse_pwgmc_changes_components(germanic_path: Path) -> List[str]:
-    text = germanic_path.read_text(encoding="utf-8")
-    match = PWGMC_CHANGES_RE.search(text)
-    if not match:
-        raise RuntimeError(f"Could not locate EarlyEnglishLineChanges definition in {germanic_path}")
-    block = match.group(1)
-    stripped_lines = []
-    for raw_line in block.splitlines():
-        line = raw_line.split("#", 1)[0].strip()
-        if line:
-            stripped_lines.append(line)
-    cleaned = " ".join(stripped_lines)
-    order = [part.strip() for part in cleaned.split(".o.") if part.strip()]
-    if not order:
-        raise RuntimeError(f"EarlyEnglishLineChanges definition in {germanic_path} parsed to an empty rule list")
-    return order
-
-
-def pwgmc_stage_components() -> List[str]:
-    stage_names = [stage_name for stage_name, _ in STAGES]
-    try:
-        start = stage_names.index(PWGMC_COMPONENT_RULES[0])
-        end = stage_names.index(PWGMC_COMPONENT_RULES[-1]) + 1
-    except ValueError as exc:
-        raise RuntimeError(f"PWGmc component stage missing from oe_full_trace_report.STAGES: {exc}") from exc
-    return stage_names[start:end]
+def pwgmc_bundle_components(germanic_path: Path) -> List[str]:
+    """Current component sequence of the PWGmc structural bundle, derived
+    from the live production composition (never hand-listed)."""
+    components = oe_pipeline.composition_members_of(PWGMC_BUNDLE, germanic_path)
+    if not components:
+        raise RuntimeError(
+            f"{PWGMC_BUNDLE} in {germanic_path} parsed to an empty rule list")
+    return components
 
 
 def validate_expanded_pwgmc_components(germanic_path: Path) -> None:
-    parsed_components = parse_pwgmc_changes_components(germanic_path)
-    if parsed_components != PWGMC_COMPONENT_RULES:
+    """The bundle's components must be consecutive named stages of the
+    executable model, so expanding it in place is order-preserving."""
+    components = pwgmc_bundle_components(germanic_path)
+    stage_names = [s.foma_identifier for s in oe_pipeline.named_stages()]
+    try:
+        start = stage_names.index(components[0])
+    except ValueError as exc:
         raise RuntimeError(
-            "EarlyEnglishLineChanges definition no longer matches the expanded order-profile components: "
-            f"{parsed_components!r}"
-        )
-    stage_components = pwgmc_stage_components()
-    if stage_components != PWGMC_COMPONENT_RULES:
+            f"{PWGMC_BUNDLE} component missing from the executable model: {exc}"
+        ) from exc
+    if stage_names[start:start + len(components)] != components:
         raise RuntimeError(
-            "oe_full_trace_report.STAGES no longer matches the expanded PWGmc component sequence: "
-            f"{stage_components!r}"
-        )
+            f"{PWGMC_BUNDLE} components are not consecutive in the executable "
+            f"model: {components!r}")
 
 
 def expand_pwgmc_changes(order: Sequence[str], germanic_path: Path) -> List[str]:
     validate_expanded_pwgmc_components(germanic_path)
+    components = pwgmc_bundle_components(germanic_path)
     expanded: List[str] = []
     replaced = 0
     for rule in order:
-        if rule == "EarlyEnglishLineChanges":
-            expanded.extend(PWGMC_COMPONENT_RULES)
+        if rule == PWGMC_BUNDLE:
+            expanded.extend(components)
             replaced += 1
             continue
         expanded.append(rule)
     if replaced != 1:
-        raise RuntimeError(f"Expected exactly one EarlyEnglishLineChanges entry in EnglishProtoToOE, found {replaced}")
+        raise RuntimeError(
+            f"Expected exactly one {PWGMC_BUNDLE} entry in {EXPERIMENT_ROOT}, "
+            f"found {replaced}")
     return expanded
 
 
@@ -552,39 +540,38 @@ def build_evaluated_row(row: Dict[str, str], outputs: Sequence[str]) -> Dict[str
     }
 
 
-def build_variant_appendix(order: Sequence[str]) -> str:
+def build_variant_appendix(order: Sequence[str], germanic_path: Path) -> str:
+    """Foma appendix defining the variant production network.
+
+    Only the experimental segment (Variant{EXPERIMENT_ROOT}) is
+    hand-manipulated; every enclosing production define up to the root is
+    mirrored mechanically from the live composition via oe_pipeline, so the
+    tool survives adding/removing rules outside the experimental segment
+    without edits here.
+    """
     lines = [
         "",
         "# Variant Old English order generated by sound_change_order_sensitivity.py",
-        "define VariantEnglishProtoToOE (",
+        f"define Variant{EXPERIMENT_ROOT} (",
     ]
     for index, rule in enumerate(order):
         prefix = "    " if index == 0 else "    .o. "
         lines.append(f"{prefix}{rule}")
+    lines.append(");")
+    variant_names = {EXPERIMENT_ROOT}
+    chain = oe_pipeline.production_parent_chain(EXPERIMENT_ROOT, germanic_path)
+    for ancestor in chain:
+        members = oe_pipeline.composition_members_of(ancestor, germanic_path)
+        rendered = [f"Variant{m}" if m in variant_names else m for m in members]
+        lines.append("")
+        lines.append(f"define Variant{ancestor} " + "\n    .o. ".join(rendered) + ";")
+        variant_names.add(ancestor)
+    root = chain[-1]
     lines.extend(
         [
-            ");",
-            "",
-            "define VariantOldEnglishCore EnglishProtoInput",
-            "    .o. EarlyGermanicConsonantPipeline",
-            "    .o. VariantEnglishProtoToOE;",
-            "",
-            "define VariantOldEnglishAfterEpenthesis VariantOldEnglishCore",
-            "    .o. OEEpentheticVowel;",
-            "",
-            "define VariantOldEnglishRules VariantOldEnglishAfterEpenthesis",
-        ]
-    )
-    for rule in POST_EPENTHESIS_RULES:
-        lines.append(f"    .o. {rule}")
-    lines.extend(
-        [
-            "    ;",
-            "",
-            "define VariantOldEnglishReflexes VariantOldEnglishRules .o. OldEnglishSurface;",
             "",
             "clear stack",
-            "regex VariantOldEnglishReflexes;",
+            f"regex Variant{root};",
             "save stack old_english_variant.bin",
             "",
         ]
@@ -605,7 +592,7 @@ def compile_variant(
         shutil.copy2(germanic_path, tmp_germanic)
         shutil.copy2(sandbox_path, tmp_sandbox)
         with tmp_germanic.open("a", encoding="utf-8") as handle:
-            handle.write(build_variant_appendix(order))
+            handle.write(build_variant_appendix(order, germanic_path))
         manifest = tmpdir / "variant_manifest.txt"
         manifest.write_text("\n".join(order) + "\n", encoding="utf-8")
         proc = subprocess.run(
@@ -960,17 +947,17 @@ def run_adjacent_pilot(
 ) -> List[Dict[str, str]]:
     summary_rows: List[Dict[str, str]] = []
     detail_rows: List[Dict[str, str]] = []
-    stage_labels = {label for label, _ in STAGES}
+    stage_labels = {s.foma_identifier for s in oe_pipeline.named_stages()}
     for movement, inventory_neighbor in (("earlier", inventory_earlier), ("later", inventory_later)):
         variant_id = f"{change.change_id}_{movement}_adjacent"
         variant_order, chain_neighbor_rule = swap_adjacent(live_order, change.rule_name, movement)
-        crossed = inventory_neighbor or placeholder_neighbor(chain_neighbor_rule, variant_target_order(change.current_order, movement, 1))
+        crossed = inventory_neighbor or placeholder_neighbor(chain_neighbor_rule, variant_target_order(change.inventory_order, movement, 1))
         evaluation = evaluate_variant_against_baseline(
             variant_id=variant_id,
             change=change,
             display_name=change.display_name,
             direction=movement,
-            variant_order=variant_target_order(change.current_order, movement, 1),
+            variant_order=variant_target_order(change.inventory_order, movement, 1),
             crossed=crossed,
             variant_order_chain=variant_order,
             rows=rows,
@@ -1098,7 +1085,7 @@ def run_first_break(
             clear_first_break_direction_outputs(change.change_id, direction, summary_output, changes_output, failures_output)
             existing_summary = None
         steps_completed = parse_resume_steps(existing_summary.get("notes", "")) if resume and existing_summary else 0
-        safe_order = parse_last_safe_order(existing_summary.get("notes", ""), change.current_order) if resume and existing_summary else change.current_order
+        safe_order = parse_last_safe_order(existing_summary.get("notes", ""), change.inventory_order) if resume and existing_summary else change.inventory_order
         current_chain = move_rule_steps(live_order, change.rule_name, direction, steps_completed) if steps_completed else list(live_order)
         latest_evaluation: Dict[str, object] | None = None
 
@@ -1115,7 +1102,7 @@ def run_first_break(
                     "change_id": change.change_id,
                     "display_name": change.display_name,
                     "rule_name": change.rule_name,
-                    "baseline_order": str(change.current_order),
+                    "baseline_order": str(change.inventory_order),
                     "direction": direction,
                     "result": "no_break_before_boundary",
                     "first_break_variant_id": "-",
@@ -1157,7 +1144,7 @@ def run_first_break(
                 break
 
             current_steps = steps_completed + 1
-            current_variant_order = variant_target_order(change.current_order, direction, current_steps)
+            current_variant_order = variant_target_order(change.inventory_order, direction, current_steps)
             crossed = inventory_by_rule.get(crossed_rule_name) or placeholder_neighbor(crossed_rule_name, current_variant_order)
             evaluation = evaluate_variant_against_baseline(
                 variant_id=f"{change.change_id}_{direction}_order_{current_variant_order}",
@@ -1179,7 +1166,7 @@ def run_first_break(
                     "change_id": change.change_id,
                     "display_name": change.display_name,
                     "rule_name": change.rule_name,
-                    "baseline_order": str(change.current_order),
+                    "baseline_order": str(change.inventory_order),
                     "direction": direction,
                     "result": "compile_failure",
                     "first_break_variant_id": str(evaluation["variant_id"]),
@@ -1218,7 +1205,7 @@ def run_first_break(
                     "change_id": change.change_id,
                     "display_name": change.display_name,
                     "rule_name": change.rule_name,
-                    "baseline_order": str(change.current_order),
+                    "baseline_order": str(change.inventory_order),
                     "direction": direction,
                     "result": "first_break_found",
                     "first_break_variant_id": str(evaluation["variant_id"]),
@@ -1265,7 +1252,7 @@ def run_first_break(
                 "change_id": change.change_id,
                 "display_name": change.display_name,
                 "rule_name": change.rule_name,
-                "baseline_order": str(change.current_order),
+                "baseline_order": str(change.inventory_order),
                 "direction": direction,
                 "result": "in_progress",
                 "first_break_variant_id": "-",
@@ -1382,6 +1369,32 @@ def run_identity_variant(
     }
 
 
+def ensure_canonical_bin_fresh(bin_path: Path, allow_stale: bool) -> None:
+    """Fail closed when the canonical runtime bin does not correspond to the
+    current sources (build manifest contract). Explicit noncanonical --bin
+    overrides are permitted but flagged as noncanonical provenance."""
+    canonical = repo_paths()["live_bin"].resolve()
+    if bin_path != canonical:
+        print(f"NONCANONICAL BIN: {bin_path} is not the canonical runtime bin "
+              f"({canonical}); results have debug provenance only.",
+              file=sys.stderr)
+        return
+    if allow_stale:
+        print("WARNING: --allow-stale-bin set; skipping build-manifest "
+              "freshness check (debug provenance only).", file=sys.stderr)
+        return
+    problems = check_build_manifest(
+        oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])
+    if problems:
+        for problem in problems:
+            print(f"STALE RUNTIME BINS: {problem}", file=sys.stderr)
+        raise SystemExit(
+            "canonical runtime bins do not match the current sources; rebuild "
+            "them first (python3 Germanic/tools/adjudicate.py SCNNN --evidence "
+            "or bash Germanic/tools/rebuild_oe_bins.sh), or pass "
+            "--allow-stale-bin for a debug run.")
+
+
 def main() -> None:
     args = parse_args()
     inventory_path = Path(args.inventory).expanduser().resolve()
@@ -1412,6 +1425,8 @@ def main() -> None:
         change = inventory_by_id[args.change]
         print_order_profile(first_break_order, args.order_profile, change, ordered_inventory)
         return
+
+    ensure_canonical_bin_fresh(bin_path, args.allow_stale_bin)
 
     if args.mode == "validate-batch":
         rows = load_rows(tsv_path)

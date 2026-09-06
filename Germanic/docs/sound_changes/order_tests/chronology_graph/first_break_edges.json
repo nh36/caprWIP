@@ -1,5 +1,6 @@
 {
   "generated_by": "Germanic/tools/generate_registry_views.py — GENERATED FILE, DO NOT EDIT",
+  "order_note": "node current_order is the archival inventory order, not the executable cascade position (see oe_pipeline / cascade_order_manifest.tsv)",
   "sources": [
     "Germanic/docs/sound_changes/registry/sc_registry.tsv",
     "Germanic/docs/sound_changes/registry/chronology_edges.tsv"

@@ -1,6 +1,9 @@
 # GENERATED FILE — DO NOT EDIT.
 # Source: registry/sc_registry.tsv (rows with chronology-card facts)
 # Generator: Germanic/tools/generate_registry_views.py (run after editing sources).
+# current_order is the ARCHIVAL inventory order (registry inventory_order),
+# not the executable cascade position; executable positions come from
+# oe_pipeline / cascade_order_manifest.tsv.
 change_id	display_name	current_order	rule_name	card_path	card_type	has_reciprocal_boundary	short_summary
 SC014	Proto-Northwest Germanic Unstressed Ai Monophthongization	1	PNWGmcUnstressedAiMonophthongization	Germanic/docs/sound_changes/order_tests/chronology_cards/SC014-nwgmc-unstressed-ai-monophthongization.md	negative_boundary	no	No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break.
 SC015	Proto-Northwest Germanic I Lowering	15	PNWGmcILowering	Germanic/docs/sound_changes/order_tests/chronology_cards/SC015-nwgmc-i-lowering.md	broad_far	no	No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC036 and is broad/far rather than local.

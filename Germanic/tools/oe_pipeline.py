@@ -278,6 +278,62 @@ def next_stage(identifier: str) -> Stage | None:
     return later[0] if later else None
 
 
+# ---------------------------------------------------------------------------
+# Composition structure (raw, unexpanded)
+# ---------------------------------------------------------------------------
+
+@lru_cache(maxsize=None)
+def _cached_composition_map(fst_path: Path) -> Dict[str, Tuple[str, ...]]:
+    raw = fst_path.read_text(encoding="utf-8")
+    bodies = _define_bodies(_strip_comments(raw))
+    return {name: tuple(_composition_members(body))
+            for name, body in bodies.items()}
+
+
+def composition_members_of(identifier: str,
+                           fst_path: Path | None = None) -> List[str]:
+    """Raw depth-0 member expressions of one define (unexpanded).
+
+    This is the ONE parser for production composition membership; tools
+    must not re-parse germanic.txt with their own regexes.
+    """
+    comp = _cached_composition_map(fst_path or layout().germanic_fst)
+    if identifier not in comp:
+        raise KeyError(f"no define {identifier!r} in the production FST source")
+    return list(comp[identifier])
+
+
+def production_parent_chain(identifier: str, fst_path: Path | None = None,
+                            root: str = ROOT_IDENTIFIER) -> List[str]:
+    """Defines from ``identifier``'s direct parent up to ``root`` (inclusive),
+    following the unique membership chain of the production composition."""
+    fst_path = fst_path or layout().germanic_fst
+    comp = _cached_composition_map(fst_path)
+    reachable: set[str] = set()
+    frontier = [root]
+    while frontier:
+        name = frontier.pop()
+        if name in reachable or name not in comp:
+            continue
+        reachable.add(name)
+        frontier.extend(m for m in comp[name] if _IDENT_RE.match(m))
+    if identifier not in reachable:
+        raise ValueError(f"{identifier!r} is not reachable from {root!r} "
+                         "in the production composition")
+    chain: List[str] = []
+    current = identifier
+    while current != root:
+        parents = [name for name in reachable if current in comp.get(name, ())]
+        if not parents:
+            raise ValueError(f"{current!r} has no parent reachable from {root!r}")
+        if len(parents) > 1:
+            raise ValueError(
+                f"{current!r} has multiple production parents: {sorted(parents)}")
+        current = parents[0]
+        chain.append(current)
+    return chain
+
+
 def rules_between(a: str, b: str, inclusive: bool = False) -> List[str]:
     """Named rules strictly between stages ``a`` and ``b`` in execution order
     (or including the endpoints with ``inclusive=True``)."""

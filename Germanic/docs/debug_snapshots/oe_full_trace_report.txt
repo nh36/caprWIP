@@ -2,7 +2,15 @@
 germanic.txt sha256: 2e744a0c71417d521e51e9706c3a50d6665cce040441d49e1d5e1be0f360f28b
 old_english_sandbox.txt sha256: f19a39ed935454b3cd3de18a1e852ed76e1a99442cf64eb4d309009e0d08f022
 germanic-aligned-final.tsv sha256: 6360cc687b1926aaa48b761b5a878182812f2b426ad77757b28aebdb1d29857b
-old_english.bin sha256 (informational): d4c7d8053eb3af3290b302a67583b18d4637f24620d62ea6a04adcf216390ce4
+old_english.bin sha256 (informational): 69f9ba94b3f75796391234defa3ab47ee538e833a81804b8deabd438ec726531
+bins_provenance: canonical (build manifest validated against current sources and expected bin set)
+build_manifest_built_at: 2026-09-06T13:49:27+0100
+build_manifest_runner: docker
+build_manifest_foma_version: foma 0.10.0alpha
+build_manifest_expected_bins: 99
+manifest:germanic-aligned-final.tsv sha256: 6360cc687b1926aaa48b761b5a878182812f2b426ad77757b28aebdb1d29857b
+manifest:germanic.txt sha256: 2e744a0c71417d521e51e9706c3a50d6665cce040441d49e1d5e1be0f360f28b
+manifest:old_english_sandbox.txt sha256: f19a39ed935454b3cd3de18a1e852ed76e1a99442cf64eb4d309009e0d08f022
 
 === BUCKET: exact_match (378) ===
 

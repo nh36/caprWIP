@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import json
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
@@ -13,7 +15,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import oe_pipeline  # noqa: E402
-from capr_runtime import layout, sha256_of  # noqa: E402
+from capr_runtime import check_build_manifest, layout, sha256_of  # noqa: E402
 
 # Corpus/flookup helpers live in the shared model module; re-exported here
 # for the existing consumers of this module's API.
@@ -290,14 +292,18 @@ def trace_lexeme(proto_norm: str, bin_dir: Path) -> List[Tuple[str, List[str]]]:
     return trace
 
 
-def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path) -> List[str]:
-    """Provenance block recording the canonical live inputs of this report.
+def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path,
+                     canonical: bool = True) -> List[str]:
+    """Provenance block tying the report to the validated build it used.
 
     Source files (germanic.txt, old_english_sandbox.txt, the TSV) are the
     freshness contract enforced by test_final_z_firing_populations.py: if the
     committed report's hashes do not match the live sources, the report is
     stale. The compiled .bin hash is informational only — foma compilation is
-    byte-non-deterministic, so it is NOT part of the freshness contract.
+    byte-non-deterministic, so it is NOT part of the freshness contract. The
+    semantic contract is instead: the report was produced from bins whose
+    build manifest records exactly the source state hashed here (canonical
+    provenance), as verified fail-closed before generation.
     """
     lines = ["=== PROVENANCE ==="]
     for label, path in [
@@ -307,8 +313,79 @@ def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path) -> List[str
     ]:
         lines.append(f"{label} sha256: {sha256_of(path)}")
     lines.append(f"old_english.bin sha256 (informational): {sha256_of(bin_path)}")
+    if canonical:
+        rt = layout()
+        manifest = json.loads(rt.build_manifest.read_text(encoding="utf-8"))
+        lines.append("bins_provenance: canonical (build manifest validated "
+                     "against current sources and expected bin set)")
+        lines.append(f"build_manifest_built_at: {manifest.get('built_at', 'unknown')}")
+        lines.append(f"build_manifest_runner: {manifest.get('runner', 'unknown')}")
+        lines.append(f"build_manifest_foma_version: {manifest.get('foma_version', 'unknown')}")
+        lines.append("build_manifest_expected_bins: "
+                     f"{len(manifest.get('expected_bins', []))}")
+        for name, sha in sorted(manifest.get("sources", {}).items()):
+            lines.append(f"manifest:{name} sha256: {sha}")
+    else:
+        lines.append("bins_provenance: NONCANONICAL DEBUG (explicit --bin/"
+                     "--bin-dir override or --debug-bins; NOT valid as "
+                     "committed canonical evidence)")
     lines.append("")
     return lines
+
+
+_PROVENANCE_HASH_RE = re.compile(
+    r"^(\S+) sha256(?: \(informational\))?: ([0-9a-f]{64})$")
+
+
+def trace_provenance_problems(text: str) -> List[str]:
+    """Freshness/provenance problems of a committed trace report (empty == usable).
+
+    Requires: a PROVENANCE block, canonical bins provenance, recorded source
+    hashes identical to the current live sources, and manifest-recorded source
+    hashes identical to the report's own source hashes (i.e. the report was
+    built from bins compiled from exactly the sources it hashes).
+    """
+    problems: List[str] = []
+    marker = "=== PROVENANCE ==="
+    if marker not in text:
+        return ["trace report has no PROVENANCE block; regenerate with "
+                "tools/oe_full_trace_report.py --all"]
+    recorded: Dict[str, str] = {}
+    canonical = False
+    for line in text.split(marker, 1)[1].splitlines():
+        line = line.strip()
+        if not line:
+            if recorded:
+                break
+            continue
+        if line.startswith("bins_provenance: canonical"):
+            canonical = True
+        m = _PROVENANCE_HASH_RE.match(line)
+        if m:
+            recorded[m.group(1)] = m.group(2)
+    if not canonical:
+        problems.append("trace report bins provenance is not canonical "
+                        "(missing or NONCANONICAL DEBUG); regenerate from "
+                        "validated canonical bins")
+    rt = layout()
+    live = {
+        "germanic.txt": rt.germanic_fst,
+        "old_english_sandbox.txt": rt.sandbox_fst,
+        "germanic-aligned-final.tsv": rt.corpus_tsv,
+    }
+    for label, path in live.items():
+        if label not in recorded:
+            problems.append(f"trace PROVENANCE lacks a hash for {label}")
+        elif recorded[label] != sha256_of(path):
+            problems.append(f"trace report is STALE w.r.t. {label}")
+        manifest_label = f"manifest:{label}"
+        if manifest_label not in recorded:
+            problems.append(f"trace PROVENANCE lacks {manifest_label} "
+                            "(pre-build-identity report); regenerate")
+        elif recorded.get(label) and recorded[manifest_label] != recorded[label]:
+            problems.append(f"trace report's build manifest disagrees with its "
+                            f"own source hash for {label}")
+    return problems
 
 
 def write_report(
@@ -472,6 +549,13 @@ def main() -> None:
         action="store_true",
         help="Trace all entries including exact_match (default: mismatches only)",
     )
+    parser.add_argument(
+        "--debug-bins",
+        action="store_true",
+        help="Permit noncanonical/stale bins; the report is stamped with "
+             "NONCANONICAL DEBUG provenance and must not be committed as "
+             "canonical evidence.",
+    )
     args = parser.parse_args()
 
     tsv_path = Path(args.tsv).expanduser().resolve()
@@ -480,9 +564,37 @@ def main() -> None:
     output_path = Path(args.output).expanduser().resolve()
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Canonical-run gate (fail closed): when tracing the canonical runtime
+    # bins, they must correspond exactly to the current sources per the
+    # build manifest. A stale-bin report must never stamp itself with
+    # hashes of newer source files.
+    is_canonical_bins = (
+        bin_path == defaults["bin"].resolve()
+        and bin_dir == defaults["bin_dir"].resolve()
+    )
+    if not args.debug_bins:
+        if not is_canonical_bins:
+            raise SystemExit(
+                "explicit --bin/--bin-dir overrides require --debug-bins "
+                "(noncanonical provenance); canonical committed reports must "
+                "be built from the validated canonical runtime bins")
+        problems = check_build_manifest(
+            oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])
+        if problems:
+            for problem in problems:
+                print(f"TRACE REFUSED (stale/unvalidated bins): {problem}",
+                      file=sys.stderr)
+            raise SystemExit(
+                "runtime bins do not correspond to the current sources; "
+                "rebuild first (python3 Germanic/tools/adjudicate.py SCNNN "
+                "--evidence or bash Germanic/tools/rebuild_oe_bins.sh), or "
+                "pass --debug-bins for a noncanonical debug report")
+    canonical = is_canonical_bins and not args.debug_bins
+
     rows = load_rows(tsv_path)
     fsts_dir = germanic_dir / "fsts"
-    provenance = provenance_lines(tsv_path, bin_path, fsts_dir)
+    provenance = provenance_lines(tsv_path, bin_path, fsts_dir,
+                                  canonical=canonical)
     write_report(rows, bin_path, bin_dir, output_path, trace_all=args.all,
                  provenance=provenance)
     print(f"Wrote {output_path}")

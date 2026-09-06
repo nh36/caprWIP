@@ -60,14 +60,14 @@ class SC021AdjudicationTests(unittest.TestCase):
         self.assertNotIn("PNWGmcUnstressedORaising", self.positions)
 
     def test_sc021_is_not_a_current_promotion_or_migration_candidate(self):
-        with HISTORICAL_AUDIT.open(encoding="utf-8") as handle:
-            audit = {
-                row["sc_id"]: row for row in csv.DictReader(handle, delimiter="\t")
-            }["SC021"]
-        with RENAME_MANIFEST.open(encoding="utf-8") as handle:
-            rename = {
-                row["sc_id"]: row for row in csv.DictReader(handle, delimiter="\t")
-            }["SC021"]
+        def rows(path):
+            lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
+                     if not ln.startswith("#")]
+            return {row["sc_id"]: row
+                    for row in csv.DictReader(lines, delimiter="\t")}
+
+        audit = rows(HISTORICAL_AUDIT)["SC021"]
+        rename = rows(RENAME_MANIFEST)["SC021"]
         dossier = BOOK_DOSSIER.read_text(encoding="utf-8")
 
         self.assertEqual(audit["required_action"], "retired")

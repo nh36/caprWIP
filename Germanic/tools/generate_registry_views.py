@@ -205,7 +205,11 @@ def build_inventory_view(reg, ann):
         ])
     b = banner(
         "registry/sc_registry.tsv (metadata) + registry/sc_inventory_annotations.tsv (annotations)"
-    )
+    ) + [
+        "current_order is the ARCHIVAL inventory order (registry inventory_order),",
+        "not the executable cascade position; executable positions come from",
+        "oe_pipeline / cascade_order_manifest.tsv.",
+    ]
     return tsv_text(b, header, rows)
 
 
@@ -245,13 +249,21 @@ def build_nodes_tsv(reg):
     ]
     rows = [[n[h] for h in header] for n in node_rows(reg)]
     return tsv_text(
-        banner("registry/sc_registry.tsv (rows with chronology-card facts)"), header, rows
+        banner("registry/sc_registry.tsv (rows with chronology-card facts)") + [
+            "current_order is the ARCHIVAL inventory order (registry inventory_order),",
+            "not the executable cascade position; executable positions come from",
+            "oe_pipeline / cascade_order_manifest.tsv.",
+        ], header, rows
     )
 
 
 def build_edges_json(reg, edges):
     payload = {
         "generated_by": "Germanic/tools/generate_registry_views.py — GENERATED FILE, DO NOT EDIT",
+        "order_note": (
+            "node current_order is the archival inventory order, not the executable "
+            "cascade position (see oe_pipeline / cascade_order_manifest.tsv)"
+        ),
         "sources": [
             "Germanic/docs/sound_changes/registry/sc_registry.tsv",
             "Germanic/docs/sound_changes/registry/chronology_edges.tsv",

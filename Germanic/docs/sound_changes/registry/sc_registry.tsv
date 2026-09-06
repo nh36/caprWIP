@@ -1,8 +1,13 @@
 # sc_registry.tsv — CANONICAL SC REGISTRY (SOURCE — hand-edited).
 # One row per SC identifier ever used, including retired identifiers.
 # This file is the single editable owner of SC identity, lifecycle, executable
-# identifier/position, display names, historical stage/scope, confidence,
+# identifier (fst_identifier), display names, historical stage/scope, confidence,
 # adjudication status/verdict/memo, and chronology-node facts.
+# EXCEPTION — cascade_position is DERIVED, not hand-edited: the executable model
+# (Germanic/tools/oe_pipeline.py, parsed from the production composition in
+# Germanic/fsts/germanic.txt) owns fst_identifier -> position; the column is
+# rewritten by Germanic/tools/sync_registry_cascade_positions.py (run via
+# adjudicate.py --finalize) and checked by --check. Never type positions by hand.
 # Derived views are produced by Germanic/tools/generate_registry_views.py.
 sc_id	lifecycle_status	entry_type	pipeline_stage	canonical_change_id	duplicate_group	staging_row	staging_order	fst_identifier	cascade_position	inventory_order	display_name	inventory_display_name	stage_label	historical_stage_label	hist_stage	hist_scope	confidence	v1_chapter	v1_reader_position	source_reader_facing_file	include_in_volume	is_reader_facing	adjudication_status	verdict	adjudication_memo	chronology_profile	chronology_card	chronology_has_reciprocal_boundary	chronology_summary	action_status	capr_evidence	chronology_problem	staging_notes
 SC001	active	support_stage	Proto-Germanic consonant inheritance	SC001		no				1	Proto Input		Proto-Germanic consonant inheritance	Technical							no	no	unadjudicated										

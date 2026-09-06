@@ -16,6 +16,7 @@ These tests enforce "one logical authority for each fact":
 import importlib.util
 import json
 import re
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -265,6 +266,270 @@ class OutputIdentityTests(unittest.TestCase):
                       "infrastructure refactor altered scientific outputs")
         self.assertIn(EXPECTED_LEGACY_SUBSET_SHA256, text)
         self.assertIn(str(EXPECTED_ROW_COUNT), text)
+
+
+class NoIndependentOrderParserTests(unittest.TestCase):
+    """Active chronology tooling must not re-parse the production chain."""
+
+    SCOS = TOOLS / "sound_change_order_sensitivity.py"
+
+    def test_no_private_composition_regex_parser(self):
+        text = self.SCOS.read_text(encoding="utf-8")
+        for forbidden in (r"define EnglishProtoToOE \(",
+                          r"define EarlyEnglishLineChanges \["):
+            self.assertNotIn(forbidden, text,
+                             "sound_change_order_sensitivity.py reintroduced "
+                             "its own production-chain regex parser; use "
+                             "oe_pipeline.composition_members_of")
+
+    def test_no_hand_maintained_component_lists(self):
+        text = self.SCOS.read_text(encoding="utf-8")
+        for name in ("POST_EPENTHESIS_RULES", "PWGMC_COMPONENT_RULES"):
+            self.assertNotIn(name, text,
+                             f"{name} is a hand-maintained production-order "
+                             "copy; derive membership from oe_pipeline")
+        self.assertIn("import oe_pipeline", text)
+
+    def test_model_matches_bundle_membership(self):
+        # The shared parser is the one authority for bundle components:
+        # components must be consecutive named stages of the model.
+        comps = oe_pipeline.composition_members_of("EarlyEnglishLineChanges")
+        names = [s.foma_identifier for s in oe_pipeline.named_stages()]
+        start = names.index(comps[0])
+        self.assertEqual(names[start:start + len(comps)], comps)
+
+
+class NoStaleBinSearchTests(unittest.TestCase):
+    """Active OE tools must not search stale/fallback bin locations."""
+
+    FORBIDDEN = (
+        re.compile(r"live_bin_candidates"),
+        re.compile(r"/usr/backend"),
+        re.compile(r"""["']server["']\s*/|/\s*["']server["']"""),
+        re.compile(r"""fsts["']?\s*/\s*["']old_english\.bin"""),
+    )
+
+    def test_no_candidate_bin_searches(self):
+        offenders = []
+        for path in sorted(TOOLS.glob("*.py")):
+            text = path.read_text(encoding="utf-8")
+            for pattern in self.FORBIDDEN:
+                if pattern.search(text):
+                    offenders.append(f"{path.name}: {pattern.pattern}")
+        self.assertEqual(offenders, [],
+                         "runtime bins live ONLY in capr_runtime.layout()."
+                         "bin_dir (host backend/ == container /usr/app)")
+
+
+class DerivedCascadePositionTests(unittest.TestCase):
+    """Registry cascade_position is derived from the executable model."""
+
+    def test_registry_positions_are_synced_from_model(self):
+        mod = _load("sync_registry_cascade_positions")
+        views = _load("generate_registry_views")
+        committed = views.SC_REGISTRY.read_text(encoding="utf-8")
+        self.assertEqual(mod.synced_text(), committed,
+                         "sc_registry.tsv cascade_position column is out of "
+                         "sync with oe_pipeline; run "
+                         "tools/sync_registry_cascade_positions.py")
+
+    def test_registry_header_declares_position_derived(self):
+        views = _load("generate_registry_views")
+        header = "\n".join(
+            line for line in views.SC_REGISTRY.read_text(
+                encoding="utf-8").splitlines() if line.startswith("#"))
+        self.assertIn("cascade_position is DERIVED", header)
+
+    def test_positions_derive_from_synthetic_composition(self):
+        # Moving a rule in a (synthetic) production composition changes the
+        # derived positions with no hand-edited position data anywhere.
+        template = (
+            "define RuleA a -> b;\n"
+            "define RuleB b -> c;\n"
+            "define RuleC c -> d;\n"
+            "define EnglishProtoInput ?*;\n"
+            "define OldEnglishSurface ?*;\n"
+            "define EnglishProtoToOE ( {order} ); # capr:bundle\n"
+            "define OldEnglish EnglishProtoInput .o. EnglishProtoToOE "
+            ".o. OldEnglishSurface; # capr:bundle\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            fst = Path(tmp) / "germanic.txt"
+            fst.write_text(template.format(order="RuleA .o. RuleB .o. RuleC"),
+                           encoding="utf-8")
+            before = {s.foma_identifier: s.cascade_position
+                      for s in oe_pipeline.parse_stages(fst)
+                      if s.cascade_position is not None}
+            fst.write_text(template.format(order="RuleB .o. RuleC .o. RuleA"),
+                           encoding="utf-8")
+            after = {s.foma_identifier: s.cascade_position
+                     for s in oe_pipeline.parse_stages(fst)
+                     if s.cascade_position is not None}
+        self.assertEqual(before, {"RuleA": 1, "RuleB": 2, "RuleC": 3})
+        self.assertEqual(after, {"RuleB": 1, "RuleC": 2, "RuleA": 3})
+
+
+class TraceFreshnessTests(unittest.TestCase):
+    """Canonical trace evidence is tied to the validated build (fail-closed)."""
+
+    TRACE = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
+
+    def setUp(self):
+        self.mod = _load("oe_full_trace_report")
+
+    def test_committed_trace_is_canonical_and_fresh(self):
+        problems = self.mod.trace_provenance_problems(
+            self.TRACE.read_text(encoding="utf-8"))
+        self.assertEqual(problems, [],
+                         "committed full trace report is stale or "
+                         "noncanonical; regenerate via adjudicate.py "
+                         "SCNNN --evidence")
+
+    def test_missing_provenance_fails_closed(self):
+        problems = self.mod.trace_provenance_problems("=== BUCKET: x ===\n")
+        self.assertTrue(problems)
+
+    def test_noncanonical_or_stale_provenance_fails_closed(self):
+        live = self.TRACE.read_text(encoding="utf-8")
+        # strip the canonical marker -> must be refused
+        broken = live.replace("bins_provenance: canonical",
+                              "bins_provenance: NONCANONICAL DEBUG")
+        self.assertTrue(any("not canonical" in p for p in
+                            self.mod.trace_provenance_problems(broken)))
+        # corrupt a recorded source hash -> stale
+        stale = re.sub(r"(germanic\.txt sha256: )[0-9a-f]{8}",
+                       r"\g<1>00000000", live, count=1)
+        self.assertTrue(any("STALE" in p for p in
+                            self.mod.trace_provenance_problems(stale)))
+
+
+class CoverageFreshnessTests(unittest.TestCase):
+    """Coverage census must refuse stale runtime-derived upstream evidence."""
+
+    def test_census_refuses_stale_trace(self):
+        mod = _load("rule_coverage_census")
+        with tempfile.TemporaryDirectory() as tmp:
+            stale = Path(tmp) / "trace.txt"
+            stale.write_text("=== STAGE FIRING SUMMARY ===\n\nRuleA: 0\n",
+                             encoding="utf-8")
+            mod.FULL_TRACE = stale
+            with self.assertRaises(SystemExit):
+                mod.build_rows()
+
+    def test_committed_census_is_a_clean_projection(self):
+        mod = _load("rule_coverage_census")
+        rows = mod.build_rows()
+        lines = [mod.PREAMBLE + "\t".join(mod.HEADER)]
+        for r in rows:
+            lines.append("\t".join(r[h] for h in mod.HEADER))
+        expected = "\n".join(lines) + "\n"
+        committed = mod.OUTPUT.read_text(encoding="utf-8")
+        self.assertEqual(expected, committed,
+                         "rule_coverage_census.tsv is stale; regenerate with "
+                         "tools/rule_coverage_census.py")
+
+
+class SandboxEquivalenceTests(unittest.TestCase):
+    """Production old_english.bin == final generated sandbox stage,
+    semantically, over all selected corpus rows (evidence validated
+    fail-closed against the live sources)."""
+
+    def test_equivalence_evidence_is_fresh_and_equivalent(self):
+        mod = _load("check_production_sandbox_equivalence")
+        path = mod.evidence_path()
+        self.assertTrue(path.is_file(),
+                        "missing oe_equivalence_report.json; run adjudicate.py "
+                        "SCNNN --evidence (or tools/"
+                        "check_production_sandbox_equivalence.py in the "
+                        "container)")
+        report = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(report["status"], "equivalent")
+        self.assertEqual(report["rows_compared"], EXPECTED_ROW_COUNT)
+        from capr_runtime import sha256_of
+        rt = layout()
+        live = {
+            "germanic.txt": sha256_of(rt.germanic_fst),
+            "old_english_sandbox.txt": sha256_of(rt.sandbox_fst),
+            "germanic-aligned-final.tsv": sha256_of(rt.corpus_tsv),
+        }
+        self.assertEqual(report["sources"], live,
+                         "equivalence evidence is STALE w.r.t. the live "
+                         "sources; re-run the evidence step")
+        final_bin = oe_pipeline.named_stages()[-1].snapshot_bin
+        self.assertEqual(report["sandbox_final_bin"], final_bin)
+
+
+class ArchiveCurrentSeparationTests(unittest.TestCase):
+    """SOURCE / GENERATED / ARCHIVE are disjoint genres (no hybrids)."""
+
+    ARCHIVES = (
+        BASELINE_DIR / "historical_audit_table.tsv",
+        BASELINE_DIR / "rename_migration_manifest.tsv",
+    )
+    ARCHIVE_BUILDERS = ("build_historical_audit_table.py",
+                        "build_rename_migration_manifest.py")
+
+    def test_frozen_archives_carry_archive_banner(self):
+        for path in self.ARCHIVES:
+            first = path.read_text(encoding="utf-8").splitlines()[0]
+            self.assertIn("ARCHIVE / FROZEN", first, path.name)
+
+    def test_finalize_never_rewrites_frozen_archives(self):
+        adjudicate = (TOOLS / "adjudicate.py").read_text(encoding="utf-8")
+        for name in self.ARCHIVE_BUILDERS:
+            self.assertNotIn(f'"{name}"', adjudicate.replace("'", '"'),
+                             f"{name} must not be in the finalize chain — "
+                             "frozen archives are never rewritten")
+
+    def test_archival_builders_refuse_without_explicit_flag(self):
+        for name in self.ARCHIVE_BUILDERS:
+            proc = subprocess.run([sys.executable, str(TOOLS / name)],
+                                  capture_output=True, text=True)
+            self.assertEqual(proc.returncode, 1, name)
+            self.assertIn("ARCHIVE", proc.stderr, name)
+
+
+class NoSupersededCurrentFactsTests(unittest.TestCase):
+    """Current generated artifacts must not carry superseded facts as
+    current (archival files stating them as history are legitimate)."""
+
+    def current_generated_files(self):
+        views = _load("generate_registry_views")
+        paths = list(views.build_all().keys())
+        paths += [BASELINE_DIR / "cascade_order_manifest.tsv",
+                  BASELINE_DIR / "executable_model.tsv",
+                  BASELINE_DIR / "rule_coverage_census.tsv"]
+        return paths
+
+    def test_no_pre_split_sc004_language_in_current_artifacts(self):
+        for path in self.current_generated_files():
+            if not path.exists():
+                continue
+            text = path.read_text(encoding="utf-8")
+            self.assertNotIn("split decision pending", text, path.name)
+            self.assertNotIn("split decision precedes", text, path.name)
+
+    def test_current_positions_match_model_not_superseded_claims(self):
+        pos = {s.foma_identifier: str(s.cascade_position)
+               for s in oe_pipeline.named_stages()
+               if s.cascade_position is not None}
+        census = _tsv_rows_skip_comments(
+            BASELINE_DIR / "rule_coverage_census.tsv")
+        for row in census:
+            self.assertEqual(row["cascade_position"],
+                             pos[row["foma_identifier"]],
+                             f"{row['sc_id']}: census position is not the "
+                             "executable model's")
+        # the superseded audit-time claims must not surface as current
+        self.assertNotEqual(pos.get("PNWGmcLongELowering"), "12")
+        self.assertNotEqual(pos.get("EAFLongANasalRounding"), "26")
+
+
+def _tsv_rows_skip_comments(path):
+    import csv
+    lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
+             if ln and not ln.startswith("#")]
+    return list(csv.DictReader(lines, delimiter="\t"))
 
 
 if __name__ == "__main__":

@@ -13,18 +13,26 @@
         support), frozen fingerprints, and the standard commands.
 
     python3 Germanic/tools/adjudicate.py SC024 --evidence
-        Deterministically gather the executable evidence: rebuild the full
-        OE cascade and every stage bin from Germanic/fsts/old_english_sandbox.txt
-        inside the backend container, verify bin freshness against the
-        rebuild timestamp, and print the complete live firing census for the
-        SC's executable rule (lexeme, protoform, form immediately before the
-        rule, form immediately after), plus before/after lines for the SC's
-        chronology witnesses. No manual foma/flookup work is ever needed.
+        Deterministically gather the executable (runtime) evidence: rebuild
+        the full OE cascade and every stage bin from
+        Germanic/fsts/old_english_sandbox.txt inside the backend container,
+        write the build manifest, prove production-vs-generated-sandbox
+        semantic equivalence over the full selected corpus, regenerate the
+        canonical full trace report if it is stale, and print the complete
+        live firing census for the SC's executable rule (lexeme, protoform,
+        form immediately before the rule, form immediately after), plus
+        before/after lines for the SC's chronology witnesses. No manual
+        foma/flookup work is ever needed.
 
     python3 Germanic/tools/adjudicate.py SC024 --finalize
-        Deterministic finalization: regenerate all registry views, rebuild
-        the chained audit-table and rename-manifest artifacts, then run the
-        propagation consistency checks. Run this after editing SOURCE files.
+        Deterministic host-side finalization: sync derived registry columns
+        (cascade_position) from the executable model, regenerate all registry
+        views and chained model projections (order manifest, generated
+        sandbox, chronology-card positions, coverage census), then run the
+        propagation consistency checks. Never fabricates runtime evidence
+        (the census fails closed on stale trace evidence — run --evidence
+        first) and never rewrites ARCHIVE/FROZEN snapshots. Run after
+        editing SOURCE files.
 
     python3 Germanic/tools/adjudicate.py SC024 --check
         Validate propagation consistency only (no regeneration).
@@ -58,6 +66,7 @@ from generate_registry_views import (  # noqa: E402
 
 import oe_pipeline  # noqa: E402
 from capr_runtime import layout, run_in_runner, write_build_manifest  # noqa: E402
+from oe_full_trace_report import trace_provenance_problems  # noqa: E402
 
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
 FST = REPO_ROOT / "Germanic/fsts/germanic.txt"
@@ -68,18 +77,28 @@ BASELINE_SUMMARY = SC_DIR / "cascade_baseline/cascade_baseline_summary.json"
 TEMPLATE = SC_DIR / "audits/ADJUDICATION_TEMPLATE.md"
 PROTOCOL = REPO_ROOT / "Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md"
 CHAINED_BUILDERS = (
-    REPO_ROOT / "Germanic/tools/build_historical_audit_table.py",
-    REPO_ROOT / "Germanic/tools/build_rename_migration_manifest.py",
     # Executable-order projections of the shared model (oe_pipeline):
     REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
     REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
     REPO_ROOT / "Germanic/tools/sync_chronology_card_positions.py",
+    # Reads the committed full trace report; fails closed if that runtime
+    # evidence is stale (run --evidence first).
     REPO_ROOT / "Germanic/tools/rule_coverage_census.py",
+)
+# ARCHIVE/FROZEN artifacts (historical_audit_table.tsv,
+# rename_migration_manifest.tsv) are deliberately NOT in the chain: frozen
+# snapshots are never rewritten by finalization.
+
+# Derived SOURCE-file columns synchronized from the executable model before
+# any view regeneration (registry cascade_position is derived, not hand-edited).
+DERIVED_COLUMN_SYNCS = (
+    REPO_ROOT / "Germanic/tools/sync_registry_cascade_positions.py",
 )
 
 # Generated artifacts that must be clean before executable evidence is
 # gathered and after finalization (fail-closed: never census stale order).
 GENERATED_CHECKS = (
+    ("sync_registry_cascade_positions.py", ["--check"]),
     ("cascade_order_manifest.py", ["--check"]),
     ("generate_oe_sandbox.py", ["--check"]),
     ("sync_chronology_card_positions.py", ["--check"]),
@@ -332,6 +351,34 @@ def evidence(sc_id) -> int:
         oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])
     print(f"rebuild ok; build manifest: {manifest_path}")
 
+    print("\n## Production vs generated-sandbox semantic equivalence")
+    sys.stdout.flush()
+    equiv = run_in_runner("python3 tools/check_production_sandbox_equivalence.py")
+    if equiv.returncode != 0:
+        print("EVIDENCE FAILED: production/sandbox semantic equivalence check "
+              f"exited {equiv.returncode}", file=sys.stderr)
+        return 1
+
+    # Canonical full trace: runtime-derived upstream evidence for the
+    # coverage census. Regenerate only when stale (~16 min when needed).
+    trace_path = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
+    trace_problems = (trace_provenance_problems(
+        trace_path.read_text(encoding="utf-8"))
+        if trace_path.is_file() else ["missing canonical full trace report"])
+    if trace_problems:
+        print("\n## Canonical full trace is stale; regenerating from the "
+              "validated bins (~16 min) ...")
+        for problem in trace_problems:
+            print(f"  - {problem}")
+        sys.stdout.flush()
+        trace = run_in_runner("python3 tools/oe_full_trace_report.py --all")
+        if trace.returncode != 0:
+            print(f"EVIDENCE FAILED: trace report exited {trace.returncode}",
+                  file=sys.stderr)
+            return 1
+    else:
+        print("\n## Canonical full trace is fresh; skipping regeneration")
+
     print("\n## Firing census (fresh stage bins only)")
     sys.stdout.flush()
     inner = f"python3 tools/sc_evidence.py {shlex.quote(ident)} --min-mtime {min_mtime}"
@@ -403,12 +450,29 @@ def prepare(sc_id) -> int:
 
 
 def finalize(sc_id) -> int:
-    """Deterministic finalization: regenerate everything, then check.
+    """Deterministic host-side finalization: regenerate projections, then check.
 
     Always runs the full regeneration chain — the agent never decides
-    whether 'staging changed'. All generators are deterministic and safe
-    to run unconditionally.
+    whether 'staging changed'. All generators are deterministic and safe to
+    run unconditionally. Order: derived SOURCE columns are synchronized from
+    the executable model first, then registry views, then chained projections.
+    Runtime-derived evidence is never fabricated here: rule_coverage_census
+    fails closed on stale trace evidence with an instruction to run
+    --evidence first, and ARCHIVE/FROZEN snapshots are never rewritten.
     """
+    print("== syncing derived registry columns (from the executable model) ==")
+    for builder in DERIVED_COLUMN_SYNCS:
+        result = subprocess.run(
+            [sys.executable, str(builder)], cwd=REPO_ROOT,
+            capture_output=True, text=True,
+        )
+        tail = (result.stdout or result.stderr).strip().splitlines()
+        print(f"{builder.name}: {tail[-1] if tail else 'ok'}")
+        if result.returncode != 0:
+            print(result.stderr, file=sys.stderr)
+            print(f"FINALIZE FAILED: {builder.name} exited {result.returncode}",
+                  file=sys.stderr)
+            return 1
     print("== regenerating registry views ==")
     for path, text in build_all().items():
         current = path.read_text(encoding="utf-8") if path.exists() else None
