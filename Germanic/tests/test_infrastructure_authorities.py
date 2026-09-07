@@ -811,8 +811,9 @@ class CensusRegistryIdentityTests(unittest.TestCase):
         self.assertTrue(positions and all(p >= 1 for p in positions))
         self.assertIn("SC088", rows)
         self.assertIn("SC089", rows)
-        self.assertEqual(rows["SC088"]["cascade_position"], "89")
-        self.assertEqual(rows["SC089"]["cascade_position"], "90")
+        # 90 since SC103 PGmcNasalLossBeforeX was inserted at position 23.
+        self.assertEqual(rows["SC088"]["cascade_position"], "90")
+        self.assertEqual(rows["SC089"]["cascade_position"], "91")
         # SC002's stage is executable but outside the numbered span.
         stage = {s.foma_identifier: s.cascade_position
                  for s in self.pipeline.named_stages()}

@@ -1,5 +1,16 @@
 # SC026 NWGmc Nasal Spirant Lengthening — chronology evidence card
 
+> **Superseded in part.** See
+> `Germanic/docs/sound_changes/audits/sc026-sc027-nasal-spirant-adjudication.md`.
+> `fist` has been withdrawn from this witness set: its nasal loss is the
+> pan-Germanic change before \*x (SC103 `PGmcNasalLossBeforeX`), not the North
+> Sea Germanic nasal-spirant law. The surviving witnesses are `goose` and
+> `youth`. The reciprocal SC026/SC027 relation recorded here is an **executable
+> dependency** — SC026 must read the nasal that SC027 deletes — and is not a
+> demonstrated historical relative chronology; the two rules implement one
+> historical sound change.
+
+
 ## Current position
 - current_order: `26`
 - rule_name: `EAFNasalSpirantLengthening`

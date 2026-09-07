@@ -128,23 +128,23 @@
     },
     {
       "change_id": "SC026",
-      "display_name": "North Sea Germanic nasal-spirant lengthening",
+      "display_name": "North Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening)",
       "current_order": "26",
       "rule_name": "EAFNasalSpirantLengthening",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC026-nwgmc-nasal-spirant-lengthening.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC027 earlier around fist, goose, and youth."
+      "short_summary": "SC026 < SC027 is an EXECUTABLE DEPENDENCY, not a demonstrated historical relative chronology: the two rules implement one sound change, and the vowel must be read while the conditioning nasal is still present. Witnesses corrected to goose and youth; fist removed (its nasal loss is the pan-Germanic pre-*x change, now SC103). Earlier side remains runner-limited by bundled PWGmcChanges; source chronology places the law after the Anglo-Saxon migration period but before i-umlaut and before the Anglo-Frisian fronting of *a-long (Campbell §121; Fulk §4.11)."
     },
     {
       "change_id": "SC027",
-      "display_name": "North Sea Germanic nasal-spirant loss",
+      "display_name": "North Sea Germanic nasal-spirant law (step 2: loss of the nasal)",
       "current_order": "27",
       "rule_name": "EAFNasalSpirantLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC027-nwgmc-nasal-spirant-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC026 later around fist, goose, and youth; later search reached SC087 with no real break."
+      "short_summary": "Second executable operation of the single North Sea Germanic nasal-spirant law; its dependency on SC026 is computational (SC026 needs the nasal SC027 deletes), not a demonstrated historical interval. Witnesses corrected to goose and youth; fist removed. Later search reached SC087 with no real break."
     },
     {
       "change_id": "SC028",
@@ -1104,7 +1104,7 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC027 earlier around fist, goose, and youth."
+      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC027 earlier around goose and youth (executable dependency; fist withdrawn, see SC103)."
     },
     {
       "source_change_id": "SC026",
@@ -1113,12 +1113,12 @@
       "direction_basis": "later_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "fist; goose; youth",
-      "representative_forms": "PGmc `*fúnxstiz` yields expected OE `fȳst`, but the later-shifted variant yields `fyst`; PGmc `*gánsz` likewise yields `ġeas` instead of expected `gōs`; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`",
+      "representative_lexemes": "goose; youth",
+      "representative_forms": "PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC026 is shifted later; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. This is an EXECUTABLE dependency, not a historical interval: SC026 must read the nasal that SC027 deletes (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103",
       "strength": "tight_local",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG04_SC026_SC027",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC027 earlier around fist, goose, and youth."
+      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC027 earlier around goose and youth (executable dependency; fist withdrawn, see SC103)."
     },
     {
       "source_change_id": "SC027",
@@ -1127,12 +1127,12 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "fist; goose; youth",
-      "representative_forms": "PGmc `*fúnxstiz` yields expected OE `fȳst`, but the earlier-shifted variant yields `fyst`; PGmc `*gánsz` likewise yields `ġeas` instead of expected `gōs`; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`",
+      "representative_lexemes": "goose; youth",
+      "representative_forms": "PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC027 is shifted earlier; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. Executable dependency, not a historical interval (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103",
       "strength": "tight_local",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG04_SC026_SC027",
-      "notes": "Earlier boundary reciprocates SC026 later around fist, goose, and youth; later search reached SC087 with no real break."
+      "notes": "Earlier boundary reciprocates SC026 later around goose and youth (executable dependency; fist withdrawn, see SC103); later search reached SC087 with no real break."
     },
     {
       "source_change_id": "SC027",
@@ -1146,7 +1146,7 @@
       "strength": "search_boundary",
       "interpretation_category": "search_boundary",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary reciprocates SC026 later around fist, goose, and youth; later search reached SC087 with no real break."
+      "notes": "Earlier boundary reciprocates SC026 later around goose and youth (executable dependency; fist withdrawn, see SC103); later search reached SC087 with no real break."
     },
     {
       "source_change_id": "SC028",

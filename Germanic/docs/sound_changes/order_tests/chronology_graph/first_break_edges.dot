@@ -16,8 +16,8 @@ digraph first_break_chronology {
   "SC023" [label="SC023\nProto-Germanic Word-Final N Loss"];
   "SC024" [label="SC024\nNWGmc Long E1 Lowering"];
   "SC025" [label="SC025\nEAF Long A Nasal Rounding"];
-  "SC026" [label="SC026\nNorth Sea Germanic nasal-spirant lengthening"];
-  "SC027" [label="SC027\nNorth Sea Germanic nasal-spirant loss"];
+  "SC026" [label="SC026\nNorth Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening)"];
+  "SC027" [label="SC027\nNorth Sea Germanic nasal-spirant law (step 2: loss of the nasal)"];
   "SC028" [label="SC028\nProto-Northwest Germanic Preconsonantal X Loss"];
   "SC029" [label="SC029\nOE Awj Glide Formation"];
   "SC030" [label="SC030\nOE Au Fronting"];

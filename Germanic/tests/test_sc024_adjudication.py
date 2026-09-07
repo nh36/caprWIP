@@ -210,10 +210,13 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
 
     def test_cascade_positions_encode_the_chronology(self):
         self.assertEqual(self.positions.get("PNWGmcLongELowering"), 4)
-        self.assertEqual(self.positions.get("EAFHiatusWInsertion"), 26)
-        self.assertEqual(self.positions.get("EAFLongANasalRounding"), 27)
-        self.assertEqual(self.positions.get("EAFLongAFronting"), 28)
-        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 29)
+        # Each shifted by one when the SC026/SC027 nasal-spirant adjudication
+        # inserted SC103 PGmcNasalLossBeforeX at position 23. The relative
+        # order asserted here is unchanged.
+        self.assertEqual(self.positions.get("EAFHiatusWInsertion"), 27)
+        self.assertEqual(self.positions.get("EAFLongANasalRounding"), 28)
+        self.assertEqual(self.positions.get("EAFLongAFronting"), 29)
+        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 30)
         # SC024 is early pan-NWGmc: it must precede the genuinely PWGmc
         # innovations (early i-apocope, *ij contraction, j-gemination,
         # syllabic *j, dental hardening)

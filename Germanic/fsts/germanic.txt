@@ -1005,8 +1005,15 @@ define EnglishStarLabial [{*b} | {*β} | {*p} | {*f} | {*v} | {*m} | {*w}];
 
 define EnglishStarFricative [{*f} | {*β} | {*s} | {*θ} | {*ð} | {*x}];
 
-# Voiceless fricatives only - for NSL (Fulk §4.11: *mf, *ns, *nþ)
-define EnglishStarVoicelessFricative [{*f} | {*s} | {*θ} | {*x}];
+# Consonantal domain of the North Sea Germanic nasal-spirant law: *f, *þ, *s ONLY.
+# Campbell §121 (p. 47) "the groups mf, ns, nþ"; Fulk §4.11 "The change thus
+# affects mf, ns, nþ"; Sievers-Brunner §186.1 "vor den stimmlosen Spiranten
+# f, þ, s"; R/T 2014 §5.1.1 (pp. 139-41) list some thirty-odd examples, not one
+# of them with *x. *x is deliberately EXCLUDED: nasal loss before *x is the
+# earlier PAN-GERMANIC change (Campbell §119, p. 44; Fulk §4.1), modelled
+# separately by PGmcNasalLossBeforeX. See
+# audits/sc026-sc027-nasal-spirant-adjudication.md.
+define EnglishStarNSGmcSpirant [{*f} | {*s} | {*θ}];
 
 define EnglishIUmlautTrigger [{*i} | {*ī} | {*ḯ} | {*j}];
 
@@ -3003,32 +3010,68 @@ define OEWsPalatalUmlaut [
     {*íe} -> {*i} || _ OEHCluster EnglishStarFrontVowel
 ];
 
-# NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1)
-# "The most obvious phonological innovation of the northern dialects is the loss
-# of nasals immediately preceding fricatives, with lengthening and nasalization
-# of the preceding vowel."
-# CHRONOLOGY: This is a NWGmc change, shared by OE, OF, OS. It must precede
-# OE i-umlaut, otherwise umlauted vowels like *y (from *u) won't be lengthened.
-# See DEV_NOTES.md: "NSL Chronology Bug: *funxstiz → fyxt instead of fȳst"
-define EAFNasalSpirantLengthening [
-    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*e} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*i} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*o} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*u} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*æ} -> {*ē} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    # Stressed variants:
-    # *á → *ō: stress absorbed into length (no *ṓ this branch).
-    # *é → *ḗ: stress preserved on long-vowel tier per §17.46.
-    {*á} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*é} -> {*ḗ} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*í} -> {*ī} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*ó} -> {*ō} || _ EnglishStarNasal EnglishStarVoicelessFricative,
-    {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarVoicelessFricative
+# SC103 Proto-Germanic nasal loss before *x
+# (Campbell §119, p. 44; Fulk §4.1; Ringe 2006 [vol. 1]: "*VN was realized as a
+# long nasalized vowel immediately before *h")
+# PGmc *-Nx- > long nasalized vowel + *x: the nasal is lost with compensatory
+# lengthening and nasalization of the preceding vowel. This is PAN-GERMANIC,
+# shared by Gothic, Norse and the whole of West Germanic — Go. þeihan, brāhta,
+# þūhta; OHG dīhan, brāhta, dūhta, fūht, fūst; OE þēon, brōhte, þūhte, fūht.
+# It is NOT the later North Sea Germanic nasal-spirant law below, every one of
+# whose witnesses keeps the nasal outside the Ingvaeonic area (OHG fimf, gans,
+# ander, jugund). Campbell §121 and Fulk §4.11 both present the Ingvaeonic law
+# as a separate, later change merely "similar"/"comparable" to this one.
+# Only *a, *i, *u occur here: Fulk §4.1 "The vowels e and o did not occur in
+# this environment"; cf. Campbell §116 n. 4, §119.
+# The nasalized *ą̄ of this change is rounded to *ō in Anglo-Frisian exactly as
+# the nasalized *ą̄ of the later law is (Campbell §119: OE fōn, brōhte, þōhte;
+# Fulk §4.1; Sievers-Brunner §80 Anm. 1). CAPR telescopes that rounding into the
+# mapping here, as EAFNasalSpirantLengthening does; the shared-rounding question
+# is recorded as an SC025 follow-up in the adjudication memo.
+define PGmcNasalLossBeforeX [
+    {*a} -> {*ō} || _ EnglishStarNasal {*x},
+    {*i} -> {*ī} || _ EnglishStarNasal {*x},
+    {*u} -> {*ū} || _ EnglishStarNasal {*x},
+    {*á} -> {*ō} || _ EnglishStarNasal {*x},
+    {*í} -> {*ī} || _ EnglishStarNasal {*x},
+    {*ú} -> {*ū} || _ EnglishStarNasal {*x}
+] .o. [
+    EnglishStarNasal -> 0 || _ {*x}
 ];
 
+# SC026 North Sea Germanic nasal-spirant law, step 1 of 2:
+# nasalization and compensatory lengthening of the vowel.
+# R/T vol. 2 §5.1.1 (pp. 139-41): "The most obvious phonological innovation of
+# the northern dialects is the loss of nasals immediately preceding fricatives,
+# with lengthening and nasalization of the preceding vowel."
+# HISTORICALLY THIS AND EAFNasalSpirantLoss ARE ONE SOUND CHANGE. Every handbook
+# states the loss and the compensatory lengthening as a single development
+# (Campbell §121; Fulk §4.11; Sievers-Brunner §186.1; Luick §301.1). CAPR splits
+# it into two transducer operations only because the vowel must be read while
+# the conditioning nasal is still present, before the nasal is deleted. The
+# order EAFNasalSpirantLengthening < EAFNasalSpirantLoss is therefore an
+# EXECUTABLE DEPENDENCY, not a demonstrated historical relative chronology.
+# Domain: *mf, *nþ, *ns only (EnglishStarNSGmcSpirant), never *nx.
+# Input vowels: *a, *i, *u only — *e and *o do not occur before nasal + obstruent
+# in Germanic (Fulk §4.1), and *æ arises far later than this stage.
+# *a -> *ō telescopes NSGmc lengthening (*a > *ą̄) with the Anglo-Frisian
+# rounding of nasalized *ą̄ (Campbell §121; Sievers-Brunner §80 Anm. 1).
+# CHRONOLOGY: must precede OE i-umlaut, or umlauted vowels are not lengthened.
+define EAFNasalSpirantLengthening [
+    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*i} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*u} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    # Stressed variants (*á -> *ō: stress absorbed into length, no *ṓ branch):
+    {*á} -> {*ō} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*í} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant
+];
+
+# SC027 North Sea Germanic nasal-spirant law, step 2 of 2: deletion of the
+# conditioning nasal. See the note on EAFNasalSpirantLengthening above: this is
+# the second executable operation of ONE historical sound change.
 define EAFNasalSpirantLoss [
-    EnglishStarNasal -> 0 || _ EnglishStarVoicelessFricative
+    EnglishStarNasal -> 0 || _ EnglishStarNSGmcSpirant
 ];
 
 # NWGmc Preconsonantal *x Loss (Campbell §417, Brunner §221, Bülbring §527)
@@ -3041,7 +3084,10 @@ define EAFNasalSpirantLoss [
 # (e.g. *xláxjaną → *xláxxjaną → hliehhan, NOT †hliehan). Earlier formulations using
 # the broader `*x → 0 / _ CC` schema overgenerated, deleting the first *x of a *xx*j
 # geminate. See DEV_NOTES §17.40 for the dossier.
-# Must follow NSL (which creates the *xst cluster) and precede breaking/i-umlaut.
+# Must follow SC103 PGmcNasalLossBeforeX (which creates the *xst cluster of
+# *fúnxstiz > *fū́xstiz) and precede breaking/i-umlaut. Before the SC026/SC027
+# adjudication the cluster was created by the nasal-spirant law instead; the
+# provenance of *xst is flagged for the SC028 adjudication.
 define PNWGmcPreconsonantalXLoss [
     {*x} -> 0 || _ {*s} EnglishStarConsonant
 ];
@@ -3437,9 +3483,16 @@ define EnglishProtoToOE ( # capr:bundle
     # raising, SC099, in the *ō-shortening block below.
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
-    # NWGmc Nasal-Spirant Lengthening (R/T vol.2 §5.1.1): nasal loss before
-    # fricatives with compensatory lengthening. Must precede i-umlaut so that
-    # *funxstiz → *fūstiz (NSL) → *fȳst (i-umlaut), not *fynxst (wrong).
+    # SC103 Proto-Germanic nasal loss before *x (Campbell §119; Fulk §4.1):
+    # pan-Germanic, and therefore prior to the North Sea Germanic law below.
+    # It creates the *xst cluster of *fúnxstiz > *fū́xstiz that SC028 then
+    # simplifies. Placed here in the pgmc editorial holding zone beside SC022
+    # and SC023; it must precede i-umlaut for the same reason SC026 does.
+    .o. PGmcNasalLossBeforeX
+    # SC026 + SC027: the North Sea Germanic (Ingvaeonic) nasal-spirant law,
+    # ONE historical sound change implemented as two ordered operations —
+    # the vowel must be read while the nasal is still there. Must precede
+    # i-umlaut so that *gánsz → *gōs, and *júgunθ → *júgūθ, not †*ġyns.
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss
     # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)

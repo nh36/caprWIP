@@ -1,16 +1,16 @@
 === PROVENANCE ===
-germanic.txt sha256: 2e744a0c71417d521e51e9706c3a50d6665cce040441d49e1d5e1be0f360f28b
-old_english_sandbox.txt sha256: f19a39ed935454b3cd3de18a1e852ed76e1a99442cf64eb4d309009e0d08f022
+germanic.txt sha256: 7ad7501c7c1d6b389d1256b082629ed38d1676ccfe06469738f5a82a981b05f2
+old_english_sandbox.txt sha256: 73e214837275a042dd08ec985ef142c1a616a94f657ebc2f8ff8f4ad60fb5114
 germanic-aligned-final.tsv sha256: 6360cc687b1926aaa48b761b5a878182812f2b426ad77757b28aebdb1d29857b
-old_english.bin sha256 (informational): 69f9ba94b3f75796391234defa3ab47ee538e833a81804b8deabd438ec726531
+old_english.bin sha256 (informational): 7401c7e3ebbb5f93123a4b8d7a14a5aa3591f6e8afdef77169ccb98b8917d7e1
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-09-06T13:49:27+0100
+build_manifest_built_at: 2026-09-06T22:59:44+0100
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
-build_manifest_expected_bins: 99
+build_manifest_expected_bins: 100
 manifest:germanic-aligned-final.tsv sha256: 6360cc687b1926aaa48b761b5a878182812f2b426ad77757b28aebdb1d29857b
-manifest:germanic.txt sha256: 2e744a0c71417d521e51e9706c3a50d6665cce040441d49e1d5e1be0f360f28b
-manifest:old_english_sandbox.txt sha256: f19a39ed935454b3cd3de18a1e852ed76e1a99442cf64eb4d309009e0d08f022
+manifest:germanic.txt sha256: 7ad7501c7c1d6b389d1256b082629ed38d1676ccfe06469738f5a82a981b05f2
+manifest:old_english_sandbox.txt sha256: 73e214837275a042dd08ec985ef142c1a616a94f657ebc2f8ff8f4ad60fb5114
 
 === BUCKET: exact_match (378) ===
 
@@ -49,6 +49,7 @@ MonosyllabicFinalZLoss [no-change]: *n*ā*d*r*ō*n
 EAFRhotacism [no-change]: *n*ā*d*r*ō*n
 PNWGmcMnDissimilation [no-change]: *n*ā*d*r*ō*n
 PNWGmcNStemNLoss: *n*ā*d*r*ǭ
+PGmcNasalLossBeforeX [no-change]: *n*ā*d*r*ǭ
 EAFNasalSpirantLengthening [no-change]: *n*ā*d*r*ǭ
 EAFNasalSpirantLoss [no-change]: *n*ā*d*r*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *n*ā*d*r*ǭ
@@ -168,6 +169,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*k*a*n*ą
 EAFRhotacism [no-change]: *b*á*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*á*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*á*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*á*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*á*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*á*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*k*a*n*ą
@@ -287,6 +289,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*n*n*a*s
 EAFRhotacism [no-change]: *b*á*n*n*a*s
 PNWGmcMnDissimilation [no-change]: *b*á*n*n*a*s
 PNWGmcNStemNLoss [no-change]: *b*á*n*n*a*s
+PGmcNasalLossBeforeX [no-change]: *b*á*n*n*a*s
 EAFNasalSpirantLengthening [no-change]: *b*á*n*n*a*s
 EAFNasalSpirantLoss [no-change]: *b*á*n*n*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*n*n*a*s
@@ -406,6 +409,7 @@ MonosyllabicFinalZLoss [no-change]: *b*é*r*g*ą
 EAFRhotacism [no-change]: *b*é*r*g*ą
 PNWGmcMnDissimilation [no-change]: *b*é*r*g*ą
 PNWGmcNStemNLoss [no-change]: *b*é*r*g*ą
+PGmcNasalLossBeforeX [no-change]: *b*é*r*g*ą
 EAFNasalSpirantLengthening [no-change]: *b*é*r*g*ą
 EAFNasalSpirantLoss [no-change]: *b*é*r*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*é*r*g*ą
@@ -525,6 +529,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*s*t*ą
 EAFRhotacism [no-change]: *b*á*s*t*ą
 PNWGmcMnDissimilation [no-change]: *b*á*s*t*ą
 PNWGmcNStemNLoss [no-change]: *b*á*s*t*ą
+PGmcNasalLossBeforeX [no-change]: *b*á*s*t*ą
 EAFNasalSpirantLengthening [no-change]: *b*á*s*t*ą
 EAFNasalSpirantLoss [no-change]: *b*á*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*s*t*ą
@@ -644,6 +649,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*θ*ą
 EAFRhotacism [no-change]: *b*á*θ*ą
 PNWGmcMnDissimilation [no-change]: *b*á*θ*ą
 PNWGmcNStemNLoss [no-change]: *b*á*θ*ą
+PGmcNasalLossBeforeX [no-change]: *b*á*θ*ą
 EAFNasalSpirantLengthening [no-change]: *b*á*θ*ą
 EAFNasalSpirantLoss [no-change]: *b*á*θ*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*θ*ą
@@ -763,6 +769,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*r*d*a
 EAFRhotacism [no-change]: *b*á*r*d*a
 PNWGmcMnDissimilation [no-change]: *b*á*r*d*a
 PNWGmcNStemNLoss [no-change]: *b*á*r*d*a
+PGmcNasalLossBeforeX [no-change]: *b*á*r*d*a
 EAFNasalSpirantLengthening [no-change]: *b*á*r*d*a
 EAFNasalSpirantLoss [no-change]: *b*á*r*d*a
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*r*d*a
@@ -882,6 +889,7 @@ MonosyllabicFinalZLoss [no-change]: *b*é*b*r*u
 EAFRhotacism [no-change]: *b*é*b*r*u
 PNWGmcMnDissimilation [no-change]: *b*é*b*r*u
 PNWGmcNStemNLoss [no-change]: *b*é*b*r*u
+PGmcNasalLossBeforeX [no-change]: *b*é*b*r*u
 EAFNasalSpirantLengthening [no-change]: *b*é*b*r*u
 EAFNasalSpirantLoss [no-change]: *b*é*b*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *b*é*b*r*u
@@ -1001,6 +1009,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ō*k*u
 EAFRhotacism [no-change]: *b*ō*k*u
 PNWGmcMnDissimilation [no-change]: *b*ō*k*u
 PNWGmcNStemNLoss [no-change]: *b*ō*k*u
+PGmcNasalLossBeforeX [no-change]: *b*ō*k*u
 EAFNasalSpirantLengthening [no-change]: *b*ō*k*u
 EAFNasalSpirantLoss [no-change]: *b*ō*k*u
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*k*u
@@ -1120,6 +1129,7 @@ MonosyllabicFinalZLoss [no-change]: *b*i*g*í*n*n*a*n*ą
 EAFRhotacism [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*i*g*í*n*n*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*i*g*í*n*n*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*i*g*í*n*n*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*i*g*í*n*n*a*n*ą
@@ -1239,6 +1249,7 @@ MonosyllabicFinalZLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 EAFRhotacism [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
@@ -1358,6 +1369,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*l*g*i
 EAFRhotacism [no-change]: *b*á*l*g*i
 PNWGmcMnDissimilation [no-change]: *b*á*l*g*i
 PNWGmcNStemNLoss [no-change]: *b*á*l*g*i
+PGmcNasalLossBeforeX [no-change]: *b*á*l*g*i
 EAFNasalSpirantLengthening [no-change]: *b*á*l*g*i
 EAFNasalSpirantLoss [no-change]: *b*á*l*g*i
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*l*g*i
@@ -1477,6 +1489,7 @@ MonosyllabicFinalZLoss [no-change]: *b*á*z*j*a*s
 EAFRhotacism: *b*á*r*j*a*s
 PNWGmcMnDissimilation [no-change]: *b*á*r*j*a*s
 PNWGmcNStemNLoss [no-change]: *b*á*r*j*a*s
+PGmcNasalLossBeforeX [no-change]: *b*á*r*j*a*s
 EAFNasalSpirantLengthening [no-change]: *b*á*r*j*a*s
 EAFNasalSpirantLoss [no-change]: *b*á*r*j*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*r*j*a*s
@@ -1596,6 +1609,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ā*r*u
 EAFRhotacism [no-change]: *b*ā*r*u
 PNWGmcMnDissimilation [no-change]: *b*ā*r*u
 PNWGmcNStemNLoss [no-change]: *b*ā*r*u
+PGmcNasalLossBeforeX [no-change]: *b*ā*r*u
 EAFNasalSpirantLengthening [no-change]: *b*ā*r*u
 EAFNasalSpirantLoss [no-change]: *b*ā*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *b*ā*r*u
@@ -1715,6 +1729,7 @@ MonosyllabicFinalZLoss [no-change]: *b*í*n*d*a*n*ą
 EAFRhotacism [no-change]: *b*í*n*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*í*n*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*í*n*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*í*n*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*í*n*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*í*n*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*í*n*d*a*n*ą
@@ -1834,6 +1849,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ú*r*d*i
 EAFRhotacism [no-change]: *b*ú*r*d*i
 PNWGmcMnDissimilation [no-change]: *b*ú*r*d*i
 PNWGmcNStemNLoss [no-change]: *b*ú*r*d*i
+PGmcNasalLossBeforeX [no-change]: *b*ú*r*d*i
 EAFNasalSpirantLengthening [no-change]: *b*ú*r*d*i
 EAFNasalSpirantLoss [no-change]: *b*ú*r*d*i
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*r*d*i
@@ -1953,6 +1969,7 @@ MonosyllabicFinalZLoss [no-change]: *b*l*ō*d*ą
 EAFRhotacism [no-change]: *b*l*ō*d*ą
 PNWGmcMnDissimilation [no-change]: *b*l*ō*d*ą
 PNWGmcNStemNLoss [no-change]: *b*l*ō*d*ą
+PGmcNasalLossBeforeX [no-change]: *b*l*ō*d*ą
 EAFNasalSpirantLengthening [no-change]: *b*l*ō*d*ą
 EAFNasalSpirantLoss [no-change]: *b*l*ō*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*l*ō*d*ą
@@ -2072,6 +2089,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*r*d*ą
 EAFRhotacism [no-change]: *b*ó*r*d*ą
 PNWGmcMnDissimilation [no-change]: *b*ó*r*d*ą
 PNWGmcNStemNLoss [no-change]: *b*ó*r*d*ą
+PGmcNasalLossBeforeX [no-change]: *b*ó*r*d*ą
 EAFNasalSpirantLengthening [no-change]: *b*ó*r*d*ą
 EAFNasalSpirantLoss [no-change]: *b*ó*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*r*d*ą
@@ -2191,6 +2209,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ái*n*ą
 EAFRhotacism [no-change]: *b*ái*n*ą
 PNWGmcMnDissimilation [no-change]: *b*ái*n*ą
 PNWGmcNStemNLoss [no-change]: *b*ái*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*ái*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*ái*n*ą
 EAFNasalSpirantLoss [no-change]: *b*ái*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ái*n*ą
@@ -2310,6 +2329,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ō*k
 EAFRhotacism [no-change]: *b*ō*k
 PNWGmcMnDissimilation [no-change]: *b*ō*k
 PNWGmcNStemNLoss [no-change]: *b*ō*k
+PGmcNasalLossBeforeX [no-change]: *b*ō*k
 EAFNasalSpirantLengthening [no-change]: *b*ō*k
 EAFNasalSpirantLoss [no-change]: *b*ō*k
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*k
@@ -2429,6 +2449,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*r*ō*j*a*n*ą
 EAFRhotacism [no-change]: *b*ó*r*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*ó*r*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*ó*r*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*ó*r*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*ó*r*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*ó*r*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*r*ō*j*a*n*ą
@@ -2548,6 +2569,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ō*s*m*a
 EAFRhotacism [no-change]: *b*ō*s*m*a
 PNWGmcMnDissimilation [no-change]: *b*ō*s*m*a
 PNWGmcNStemNLoss [no-change]: *b*ō*s*m*a
+PGmcNasalLossBeforeX [no-change]: *b*ō*s*m*a
 EAFNasalSpirantLengthening [no-change]: *b*ō*s*m*a
 EAFNasalSpirantLoss [no-change]: *b*ō*s*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*s*m*a
@@ -2667,6 +2689,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ū
 EAFRhotacism [no-change]: *b*ū
 PNWGmcMnDissimilation [no-change]: *b*ū
 PNWGmcNStemNLoss [no-change]: *b*ū
+PGmcNasalLossBeforeX [no-change]: *b*ū
 EAFNasalSpirantLengthening [no-change]: *b*ū
 EAFNasalSpirantLoss [no-change]: *b*ū
 PNWGmcPreconsonantalXLoss [no-change]: *b*ū
@@ -2786,6 +2809,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*t*t*m*a
 EAFRhotacism [no-change]: *b*ó*t*t*m*a
 PNWGmcMnDissimilation [no-change]: *b*ó*t*t*m*a
 PNWGmcNStemNLoss [no-change]: *b*ó*t*t*m*a
+PGmcNasalLossBeforeX [no-change]: *b*ó*t*t*m*a
 EAFNasalSpirantLengthening [no-change]: *b*ó*t*t*m*a
 EAFNasalSpirantLoss [no-change]: *b*ó*t*t*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*t*t*m*a
@@ -2905,6 +2929,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ō*g*u
 EAFRhotacism [no-change]: *b*ō*g*u
 PNWGmcMnDissimilation [no-change]: *b*ō*g*u
 PNWGmcNStemNLoss [no-change]: *b*ō*g*u
+PGmcNasalLossBeforeX [no-change]: *b*ō*g*u
 EAFNasalSpirantLengthening [no-change]: *b*ō*g*u
 EAFNasalSpirantLoss [no-change]: *b*ō*g*u
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*g*u
@@ -3024,6 +3049,7 @@ MonosyllabicFinalZLoss [no-change]: *b*áu*g*i*j*a*n*ą
 EAFRhotacism [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*áu*g*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*áu*g*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*áu*g*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*áu*g*i*j*a*n*ą
@@ -3143,6 +3169,7 @@ MonosyllabicFinalZLoss [no-change]: *b*áu*g
 EAFRhotacism [no-change]: *b*áu*g
 PNWGmcMnDissimilation [no-change]: *b*áu*g
 PNWGmcNStemNLoss [no-change]: *b*áu*g
+PGmcNasalLossBeforeX [no-change]: *b*áu*g
 EAFNasalSpirantLengthening [no-change]: *b*áu*g
 EAFNasalSpirantLoss [no-change]: *b*áu*g
 PNWGmcPreconsonantalXLoss [no-change]: *b*áu*g
@@ -3262,6 +3289,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*g*ô
 EAFRhotacism [no-change]: *b*ó*g*ô
 PNWGmcMnDissimilation [no-change]: *b*ó*g*ô
 PNWGmcNStemNLoss [no-change]: *b*ó*g*ô
+PGmcNasalLossBeforeX [no-change]: *b*ó*g*ô
 EAFNasalSpirantLengthening [no-change]: *b*ó*g*ô
 EAFNasalSpirantLoss [no-change]: *b*ó*g*ô
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*g*ô
@@ -3381,6 +3409,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ū*r*ą
 EAFRhotacism [no-change]: *b*ū*r*ą
 PNWGmcMnDissimilation [no-change]: *b*ū*r*ą
 PNWGmcNStemNLoss [no-change]: *b*ū*r*ą
+PGmcNasalLossBeforeX [no-change]: *b*ū*r*ą
 EAFNasalSpirantLengthening [no-change]: *b*ū*r*ą
 EAFNasalSpirantLoss [no-change]: *b*ū*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ū*r*ą
@@ -3500,6 +3529,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*á*n*d*a*s
 EAFRhotacism [no-change]: *b*r*á*n*d*a*s
 PNWGmcMnDissimilation [no-change]: *b*r*á*n*d*a*s
 PNWGmcNStemNLoss [no-change]: *b*r*á*n*d*a*s
+PGmcNasalLossBeforeX [no-change]: *b*r*á*n*d*a*s
 EAFNasalSpirantLengthening [no-change]: *b*r*á*n*d*a*s
 EAFNasalSpirantLoss [no-change]: *b*r*á*n*d*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*á*n*d*a*s
@@ -3619,6 +3649,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*áu*d*ą
 EAFRhotacism [no-change]: *b*r*áu*d*ą
 PNWGmcMnDissimilation [no-change]: *b*r*áu*d*ą
 PNWGmcNStemNLoss [no-change]: *b*r*áu*d*ą
+PGmcNasalLossBeforeX [no-change]: *b*r*áu*d*ą
 EAFNasalSpirantLengthening [no-change]: *b*r*áu*d*ą
 EAFNasalSpirantLoss [no-change]: *b*r*áu*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*áu*d*ą
@@ -3738,6 +3769,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*é*k*a*n*ą
 EAFRhotacism [no-change]: *b*r*é*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*é*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*é*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*r*é*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*r*é*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*r*é*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*é*k*a*n*ą
@@ -3857,6 +3889,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*éu*s*t*ą
 EAFRhotacism [no-change]: *b*r*éu*s*t*ą
 PNWGmcMnDissimilation [no-change]: *b*r*éu*s*t*ą
 PNWGmcNStemNLoss [no-change]: *b*r*éu*s*t*ą
+PGmcNasalLossBeforeX [no-change]: *b*r*éu*s*t*ą
 EAFNasalSpirantLengthening [no-change]: *b*r*éu*s*t*ą
 EAFNasalSpirantLoss [no-change]: *b*r*éu*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*éu*s*t*ą
@@ -3976,6 +4009,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*ō*k*i
 EAFRhotacism [no-change]: *b*r*ō*k*i
 PNWGmcMnDissimilation [no-change]: *b*r*ō*k*i
 PNWGmcNStemNLoss [no-change]: *b*r*ō*k*i
+PGmcNasalLossBeforeX [no-change]: *b*r*ō*k*i
 EAFNasalSpirantLengthening [no-change]: *b*r*ō*k*i
 EAFNasalSpirantLoss [no-change]: *b*r*ō*k*i
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*ō*k*i
@@ -4095,6 +4129,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*ū*d*i
 EAFRhotacism [no-change]: *b*r*ū*d*i
 PNWGmcMnDissimilation [no-change]: *b*r*ū*d*i
 PNWGmcNStemNLoss [no-change]: *b*r*ū*d*i
+PGmcNasalLossBeforeX [no-change]: *b*r*ū*d*i
 EAFNasalSpirantLengthening [no-change]: *b*r*ū*d*i
 EAFNasalSpirantLoss [no-change]: *b*r*ū*d*i
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*ū*d*i
@@ -4214,6 +4249,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*í*n*g*a*n*ą
 EAFRhotacism [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*í*n*g*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*r*í*n*g*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*r*í*n*g*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*í*n*g*a*n*ą
@@ -4333,6 +4369,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*ū*k*a*n*ą
 EAFRhotacism [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*ū*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*r*ū*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*r*ū*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*ū*k*a*n*ą
@@ -4452,6 +4489,7 @@ MonosyllabicFinalZLoss [no-change]: *b*r*é*s*t*a*n*ą
 EAFRhotacism [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*é*s*t*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *b*r*é*s*t*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *b*r*é*s*t*a*n*ą
 EAFNasalSpirantLoss [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*é*s*t*a*n*ą
@@ -4571,6 +4609,7 @@ MonosyllabicFinalZLoss [no-change]: *k*á*l*b*a
 EAFRhotacism [no-change]: *k*á*l*b*a
 PNWGmcMnDissimilation [no-change]: *k*á*l*b*a
 PNWGmcNStemNLoss [no-change]: *k*á*l*b*a
+PGmcNasalLossBeforeX [no-change]: *k*á*l*b*a
 EAFNasalSpirantLengthening [no-change]: *k*á*l*b*a
 EAFNasalSpirantLoss [no-change]: *k*á*l*b*a
 PNWGmcPreconsonantalXLoss [no-change]: *k*á*l*b*a
@@ -4690,6 +4729,7 @@ MonosyllabicFinalZLoss [no-change]: *k*é*w*w*a*n*ą
 EAFRhotacism [no-change]: *k*é*w*w*a*n*ą
 PNWGmcMnDissimilation [no-change]: *k*é*w*w*a*n*ą
 PNWGmcNStemNLoss [no-change]: *k*é*w*w*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *k*é*w*w*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *k*é*w*w*a*n*ą
 EAFNasalSpirantLoss [no-change]: *k*é*w*w*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*é*w*w*a*n*ą
@@ -4809,6 +4849,7 @@ MonosyllabicFinalZLoss [no-change]: *k*l*í*m*b*a*n*ą
 EAFRhotacism [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *k*l*í*m*b*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *k*l*í*m*b*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *k*l*í*m*b*a*n*ą
 EAFNasalSpirantLoss [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*l*í*m*b*a*n*ą
@@ -4928,6 +4969,7 @@ MonosyllabicFinalZLoss [no-change]: *k*á*m*b*a
 EAFRhotacism [no-change]: *k*á*m*b*a
 PNWGmcMnDissimilation [no-change]: *k*á*m*b*a
 PNWGmcNStemNLoss [no-change]: *k*á*m*b*a
+PGmcNasalLossBeforeX [no-change]: *k*á*m*b*a
 EAFNasalSpirantLengthening [no-change]: *k*á*m*b*a
 EAFNasalSpirantLoss [no-change]: *k*á*m*b*a
 PNWGmcPreconsonantalXLoss [no-change]: *k*á*m*b*a
@@ -5047,6 +5089,7 @@ MonosyllabicFinalZLoss [no-change]: *k*ó*r*n*ą
 EAFRhotacism [no-change]: *k*ó*r*n*ą
 PNWGmcMnDissimilation [no-change]: *k*ó*r*n*ą
 PNWGmcNStemNLoss [no-change]: *k*ó*r*n*ą
+PGmcNasalLossBeforeX [no-change]: *k*ó*r*n*ą
 EAFNasalSpirantLengthening [no-change]: *k*ó*r*n*ą
 EAFNasalSpirantLoss [no-change]: *k*ó*r*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*ó*r*n*ą
@@ -5166,6 +5209,7 @@ MonosyllabicFinalZLoss [no-change]: *k*ū*i
 EAFRhotacism [no-change]: *k*ū*i
 PNWGmcMnDissimilation [no-change]: *k*ū*i
 PNWGmcNStemNLoss [no-change]: *k*ū*i
+PGmcNasalLossBeforeX [no-change]: *k*ū*i
 EAFNasalSpirantLengthening [no-change]: *k*ū*i
 EAFNasalSpirantLoss [no-change]: *k*ū*i
 PNWGmcPreconsonantalXLoss [no-change]: *k*ū*i
@@ -5285,6 +5329,7 @@ MonosyllabicFinalZLoss [no-change]: *k*r*á*f*t*a
 EAFRhotacism [no-change]: *k*r*á*f*t*a
 PNWGmcMnDissimilation [no-change]: *k*r*á*f*t*a
 PNWGmcNStemNLoss [no-change]: *k*r*á*f*t*a
+PGmcNasalLossBeforeX [no-change]: *k*r*á*f*t*a
 EAFNasalSpirantLengthening [no-change]: *k*r*á*f*t*a
 EAFNasalSpirantLoss [no-change]: *k*r*á*f*t*a
 PNWGmcPreconsonantalXLoss [no-change]: *k*r*á*f*t*a
@@ -5404,6 +5449,7 @@ MonosyllabicFinalZLoss [no-change]: *k*r*ó*p*p*a
 EAFRhotacism [no-change]: *k*r*ó*p*p*a
 PNWGmcMnDissimilation [no-change]: *k*r*ó*p*p*a
 PNWGmcNStemNLoss [no-change]: *k*r*ó*p*p*a
+PGmcNasalLossBeforeX [no-change]: *k*r*ó*p*p*a
 EAFNasalSpirantLengthening [no-change]: *k*r*ó*p*p*a
 EAFNasalSpirantLoss [no-change]: *k*r*ó*p*p*a
 PNWGmcPreconsonantalXLoss [no-change]: *k*r*ó*p*p*a
@@ -5523,6 +5569,7 @@ MonosyllabicFinalZLoss [no-change]: *k*w*é*d*u
 EAFRhotacism [no-change]: *k*w*é*d*u
 PNWGmcMnDissimilation [no-change]: *k*w*é*d*u
 PNWGmcNStemNLoss [no-change]: *k*w*é*d*u
+PGmcNasalLossBeforeX [no-change]: *k*w*é*d*u
 EAFNasalSpirantLengthening [no-change]: *k*w*é*d*u
 EAFNasalSpirantLoss [no-change]: *k*w*é*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *k*w*é*d*u
@@ -5642,6 +5689,7 @@ MonosyllabicFinalZLoss [no-change]: *d*á*l*a
 EAFRhotacism [no-change]: *d*á*l*a
 PNWGmcMnDissimilation [no-change]: *d*á*l*a
 PNWGmcNStemNLoss [no-change]: *d*á*l*a
+PGmcNasalLossBeforeX [no-change]: *d*á*l*a
 EAFNasalSpirantLengthening [no-change]: *d*á*l*a
 EAFNasalSpirantLoss [no-change]: *d*á*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *d*á*l*a
@@ -5761,6 +5809,7 @@ MonosyllabicFinalZLoss [no-change]: *d*á*g*a
 EAFRhotacism [no-change]: *d*á*g*a
 PNWGmcMnDissimilation [no-change]: *d*á*g*a
 PNWGmcNStemNLoss [no-change]: *d*á*g*a
+PGmcNasalLossBeforeX [no-change]: *d*á*g*a
 EAFNasalSpirantLengthening [no-change]: *d*á*g*a
 EAFNasalSpirantLoss [no-change]: *d*á*g*a
 PNWGmcPreconsonantalXLoss [no-change]: *d*á*g*a
@@ -5880,6 +5929,7 @@ MonosyllabicFinalZLoss [no-change]: *d*ái*l*i
 EAFRhotacism [no-change]: *d*ái*l*i
 PNWGmcMnDissimilation [no-change]: *d*ái*l*i
 PNWGmcNStemNLoss [no-change]: *d*ái*l*i
+PGmcNasalLossBeforeX [no-change]: *d*ái*l*i
 EAFNasalSpirantLengthening [no-change]: *d*ái*l*i
 EAFNasalSpirantLoss [no-change]: *d*ái*l*i
 PNWGmcPreconsonantalXLoss [no-change]: *d*ái*l*i
@@ -5999,6 +6049,7 @@ MonosyllabicFinalZLoss [no-change]: *d*ā*d*i
 EAFRhotacism [no-change]: *d*ā*d*i
 PNWGmcMnDissimilation [no-change]: *d*ā*d*i
 PNWGmcNStemNLoss [no-change]: *d*ā*d*i
+PGmcNasalLossBeforeX [no-change]: *d*ā*d*i
 EAFNasalSpirantLengthening [no-change]: *d*ā*d*i
 EAFNasalSpirantLoss [no-change]: *d*ā*d*i
 PNWGmcPreconsonantalXLoss [no-change]: *d*ā*d*i
@@ -6118,6 +6169,7 @@ MonosyllabicFinalZLoss [no-change]: *d*éu*z*ą
 EAFRhotacism: *d*éu*r*ą
 PNWGmcMnDissimilation [no-change]: *d*éu*r*ą
 PNWGmcNStemNLoss [no-change]: *d*éu*r*ą
+PGmcNasalLossBeforeX [no-change]: *d*éu*r*ą
 EAFNasalSpirantLengthening [no-change]: *d*éu*r*ą
 EAFNasalSpirantLoss [no-change]: *d*éu*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*éu*r*ą
@@ -6237,6 +6289,7 @@ MonosyllabicFinalZLoss [no-change]: *d*á*w*w*u
 EAFRhotacism [no-change]: *d*á*w*w*u
 PNWGmcMnDissimilation [no-change]: *d*á*w*w*u
 PNWGmcNStemNLoss [no-change]: *d*á*w*w*u
+PGmcNasalLossBeforeX [no-change]: *d*á*w*w*u
 EAFNasalSpirantLengthening [no-change]: *d*á*w*w*u
 EAFNasalSpirantLoss [no-change]: *d*á*w*w*u
 PNWGmcPreconsonantalXLoss [no-change]: *d*á*w*w*u
@@ -6356,6 +6409,7 @@ MonosyllabicFinalZLoss [no-change]: *d*é*l*i
 EAFRhotacism [no-change]: *d*é*l*i
 PNWGmcMnDissimilation [no-change]: *d*é*l*i
 PNWGmcNStemNLoss [no-change]: *d*é*l*i
+PGmcNasalLossBeforeX [no-change]: *d*é*l*i
 EAFNasalSpirantLengthening [no-change]: *d*é*l*i
 EAFNasalSpirantLoss [no-change]: *d*é*l*i
 PNWGmcPreconsonantalXLoss [no-change]: *d*é*l*i
@@ -6475,6 +6529,7 @@ MonosyllabicFinalZLoss [no-change]: *d*ō*n*ą
 EAFRhotacism [no-change]: *d*ō*n*ą
 PNWGmcMnDissimilation [no-change]: *d*ō*n*ą
 PNWGmcNStemNLoss [no-change]: *d*ō*n*ą
+PGmcNasalLossBeforeX [no-change]: *d*ō*n*ą
 EAFNasalSpirantLengthening [no-change]: *d*ō*n*ą
 EAFNasalSpirantLoss [no-change]: *d*ō*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*ō*n*ą
@@ -6594,6 +6649,7 @@ MonosyllabicFinalZLoss [no-change]: *d*ó*r*ą
 EAFRhotacism [no-change]: *d*ó*r*ą
 PNWGmcMnDissimilation [no-change]: *d*ó*r*ą
 PNWGmcNStemNLoss [no-change]: *d*ó*r*ą
+PGmcNasalLossBeforeX [no-change]: *d*ó*r*ą
 EAFNasalSpirantLengthening [no-change]: *d*ó*r*ą
 EAFNasalSpirantLoss [no-change]: *d*ó*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*ó*r*ą
@@ -6713,6 +6769,7 @@ MonosyllabicFinalZLoss [no-change]: *d*ái*g*a
 EAFRhotacism [no-change]: *d*ái*g*a
 PNWGmcMnDissimilation [no-change]: *d*ái*g*a
 PNWGmcNStemNLoss [no-change]: *d*ái*g*a
+PGmcNasalLossBeforeX [no-change]: *d*ái*g*a
 EAFNasalSpirantLengthening [no-change]: *d*ái*g*a
 EAFNasalSpirantLoss [no-change]: *d*ái*g*a
 PNWGmcPreconsonantalXLoss [no-change]: *d*ái*g*a
@@ -6832,6 +6889,7 @@ MonosyllabicFinalZLoss [no-change]: *d*r*áu*m*a
 EAFRhotacism [no-change]: *d*r*áu*m*a
 PNWGmcMnDissimilation [no-change]: *d*r*áu*m*a
 PNWGmcNStemNLoss [no-change]: *d*r*áu*m*a
+PGmcNasalLossBeforeX [no-change]: *d*r*áu*m*a
 EAFNasalSpirantLengthening [no-change]: *d*r*áu*m*a
 EAFNasalSpirantLoss [no-change]: *d*r*áu*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*áu*m*a
@@ -6951,6 +7009,7 @@ MonosyllabicFinalZLoss [no-change]: *d*r*á*n*k*i
 EAFRhotacism [no-change]: *d*r*á*n*k*i
 PNWGmcMnDissimilation [no-change]: *d*r*á*n*k*i
 PNWGmcNStemNLoss [no-change]: *d*r*á*n*k*i
+PGmcNasalLossBeforeX [no-change]: *d*r*á*n*k*i
 EAFNasalSpirantLengthening [no-change]: *d*r*á*n*k*i
 EAFNasalSpirantLoss [no-change]: *d*r*á*n*k*i
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*á*n*k*i
@@ -7070,6 +7129,7 @@ MonosyllabicFinalZLoss [no-change]: *d*r*í*n*k*a*n*ą
 EAFRhotacism [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *d*r*í*n*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *d*r*í*n*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *d*r*í*n*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*í*n*k*a*n*ą
@@ -7189,6 +7249,7 @@ MonosyllabicFinalZLoss [no-change]: *d*r*ḯ*b*a*n*ą
 EAFRhotacism [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *d*r*ḯ*b*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *d*r*ḯ*b*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *d*r*ḯ*b*a*n*ą
 EAFNasalSpirantLoss [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*ḯ*b*a*n*ą
@@ -7308,6 +7369,7 @@ MonosyllabicFinalZLoss [no-change]: *é*r*θ*ō*n
 EAFRhotacism [no-change]: *é*r*θ*ō*n
 PNWGmcMnDissimilation [no-change]: *é*r*θ*ō*n
 PNWGmcNStemNLoss: *é*r*θ*ǭ
+PGmcNasalLossBeforeX [no-change]: *é*r*θ*ǭ
 EAFNasalSpirantLengthening [no-change]: *é*r*θ*ǭ
 EAFNasalSpirantLoss [no-change]: *é*r*θ*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *é*r*θ*ǭ
@@ -7427,6 +7489,7 @@ MonosyllabicFinalZLoss [no-change]: *é*t*a*n*ą
 EAFRhotacism [no-change]: *é*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *é*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *é*t*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *é*t*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *é*t*a*n*ą
 EAFNasalSpirantLoss [no-change]: *é*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *é*t*a*n*ą
@@ -7546,6 +7609,7 @@ MonosyllabicFinalZLoss [no-change]: *ā*l*a
 EAFRhotacism [no-change]: *ā*l*a
 PNWGmcMnDissimilation [no-change]: *ā*l*a
 PNWGmcNStemNLoss [no-change]: *ā*l*a
+PGmcNasalLossBeforeX [no-change]: *ā*l*a
 EAFNasalSpirantLengthening [no-change]: *ā*l*a
 EAFNasalSpirantLoss [no-change]: *ā*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *ā*l*a
@@ -7665,6 +7729,7 @@ MonosyllabicFinalZLoss [no-change]: *f*á*l*l*a*n*ą
 EAFRhotacism [no-change]: *f*á*l*l*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*l*l*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*l*l*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*á*l*l*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*á*l*l*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*á*l*l*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*l*l*a*n*ą
@@ -7784,6 +7849,7 @@ MonosyllabicFinalZLoss [no-change]: *f*á*r*a*n*ą
 EAFRhotacism [no-change]: *f*á*r*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*r*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*r*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*á*r*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*á*r*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*á*r*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*r*a*n*ą
@@ -7903,6 +7969,7 @@ MonosyllabicFinalZLoss [no-change]: *f*á*s*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*s*t*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*á*s*t*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*á*s*t*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*s*t*i*j*a*n*ą
@@ -8022,6 +8089,7 @@ MonosyllabicFinalZLoss [no-change]: *f*á*d*ē*r
 EAFRhotacism [no-change]: *f*á*d*ē*r
 PNWGmcMnDissimilation [no-change]: *f*á*d*ē*r
 PNWGmcNStemNLoss [no-change]: *f*á*d*ē*r
+PGmcNasalLossBeforeX [no-change]: *f*á*d*ē*r
 EAFNasalSpirantLengthening [no-change]: *f*á*d*ē*r
 EAFNasalSpirantLoss [no-change]: *f*á*d*ē*r
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*d*ē*r
@@ -8141,6 +8209,7 @@ MonosyllabicFinalZLoss [no-change]: *f*é*x*u
 EAFRhotacism [no-change]: *f*é*x*u
 PNWGmcMnDissimilation [no-change]: *f*é*x*u
 PNWGmcNStemNLoss [no-change]: *f*é*x*u
+PGmcNasalLossBeforeX [no-change]: *f*é*x*u
 EAFNasalSpirantLengthening [no-change]: *f*é*x*u
 EAFNasalSpirantLoss [no-change]: *f*é*x*u
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*x*u
@@ -8260,6 +8329,7 @@ MonosyllabicFinalZLoss [no-change]: *f*é*l*l*ą
 EAFRhotacism [no-change]: *f*é*l*l*ą
 PNWGmcMnDissimilation [no-change]: *f*é*l*l*ą
 PNWGmcNStemNLoss [no-change]: *f*é*l*l*ą
+PGmcNasalLossBeforeX [no-change]: *f*é*l*l*ą
 EAFNasalSpirantLengthening [no-change]: *f*é*l*l*ą
 EAFNasalSpirantLoss [no-change]: *f*é*l*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*l*l*ą
@@ -8379,6 +8449,7 @@ MonosyllabicFinalZLoss [no-change]: *f*á*r*n*a
 EAFRhotacism [no-change]: *f*á*r*n*a
 PNWGmcMnDissimilation [no-change]: *f*á*r*n*a
 PNWGmcNStemNLoss [no-change]: *f*á*r*n*a
+PGmcNasalLossBeforeX [no-change]: *f*á*r*n*a
 EAFNasalSpirantLengthening [no-change]: *f*á*r*n*a
 EAFNasalSpirantLoss [no-change]: *f*á*r*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*r*n*a
@@ -8498,6 +8569,7 @@ MonosyllabicFinalZLoss [no-change]: *f*é*l*d*u
 EAFRhotacism [no-change]: *f*é*l*d*u
 PNWGmcMnDissimilation [no-change]: *f*é*l*d*u
 PNWGmcNStemNLoss [no-change]: *f*é*l*d*u
+PGmcNasalLossBeforeX [no-change]: *f*é*l*d*u
 EAFNasalSpirantLengthening [no-change]: *f*é*l*d*u
 EAFNasalSpirantLoss [no-change]: *f*é*l*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*l*d*u
@@ -8617,6 +8689,7 @@ MonosyllabicFinalZLoss [no-change]: *f*é*x*t*a*n*ą
 EAFRhotacism [no-change]: *f*é*x*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*é*x*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*é*x*t*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*é*x*t*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*é*x*t*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*é*x*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*x*t*a*n*ą
@@ -8736,6 +8809,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ú*n*d*a*n*ǭ
 EAFRhotacism [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcMnDissimilation [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcNStemNLoss [no-change]: *f*ú*n*d*a*n*ǭ
+PGmcNasalLossBeforeX [no-change]: *f*ú*n*d*a*n*ǭ
 EAFNasalSpirantLengthening [no-change]: *f*ú*n*d*a*n*ǭ
 EAFNasalSpirantLoss [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*n*d*a*n*ǭ
@@ -8855,6 +8929,7 @@ MonosyllabicFinalZLoss [no-change]: *f*í*n*g*r*a
 EAFRhotacism [no-change]: *f*í*n*g*r*a
 PNWGmcMnDissimilation [no-change]: *f*í*n*g*r*a
 PNWGmcNStemNLoss [no-change]: *f*í*n*g*r*a
+PGmcNasalLossBeforeX [no-change]: *f*í*n*g*r*a
 EAFNasalSpirantLengthening [no-change]: *f*í*n*g*r*a
 EAFNasalSpirantLoss [no-change]: *f*í*n*g*r*a
 PNWGmcPreconsonantalXLoss [no-change]: *f*í*n*g*r*a
@@ -8974,6 +9049,7 @@ MonosyllabicFinalZLoss [no-change]: *f*í*s*k*a
 EAFRhotacism [no-change]: *f*í*s*k*a
 PNWGmcMnDissimilation [no-change]: *f*í*s*k*a
 PNWGmcNStemNLoss [no-change]: *f*í*s*k*a
+PGmcNasalLossBeforeX [no-change]: *f*í*s*k*a
 EAFNasalSpirantLengthening [no-change]: *f*í*s*k*a
 EAFNasalSpirantLoss [no-change]: *f*í*s*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *f*í*s*k*a
@@ -9093,8 +9169,9 @@ MonosyllabicFinalZLoss [no-change]: *f*ú*n*x*s*t*i
 EAFRhotacism [no-change]: *f*ú*n*x*s*t*i
 PNWGmcMnDissimilation [no-change]: *f*ú*n*x*s*t*i
 PNWGmcNStemNLoss [no-change]: *f*ú*n*x*s*t*i
-EAFNasalSpirantLengthening: *f*ū*n*x*s*t*i
-EAFNasalSpirantLoss: *f*ū*x*s*t*i
+PGmcNasalLossBeforeX: *f*ū*x*s*t*i
+EAFNasalSpirantLengthening [no-change]: *f*ū*x*s*t*i
+EAFNasalSpirantLoss [no-change]: *f*ū*x*s*t*i
 PNWGmcPreconsonantalXLoss: *f*ū*s*t*i
 EAFHiatusWInsertion [no-change]: *f*ū*s*t*i
 EAFLongANasalRounding [no-change]: *f*ū*s*t*i
@@ -9212,6 +9289,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*á*s*k*ō*n
 EAFRhotacism [no-change]: *f*l*á*s*k*ō*n
 PNWGmcMnDissimilation [no-change]: *f*l*á*s*k*ō*n
 PNWGmcNStemNLoss: *f*l*á*s*k*ǭ
+PGmcNasalLossBeforeX [no-change]: *f*l*á*s*k*ǭ
 EAFNasalSpirantLengthening [no-change]: *f*l*á*s*k*ǭ
 EAFNasalSpirantLoss [no-change]: *f*l*á*s*k*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*á*s*k*ǭ
@@ -9331,6 +9409,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*á*x*s*ą
 EAFRhotacism [no-change]: *f*l*á*x*s*ą
 PNWGmcMnDissimilation [no-change]: *f*l*á*x*s*ą
 PNWGmcNStemNLoss [no-change]: *f*l*á*x*s*ą
+PGmcNasalLossBeforeX [no-change]: *f*l*á*x*s*ą
 EAFNasalSpirantLengthening [no-change]: *f*l*á*x*s*ą
 EAFNasalSpirantLoss [no-change]: *f*l*á*x*s*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*á*x*s*ą
@@ -9450,6 +9529,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*áu*x
 EAFRhotacism [no-change]: *f*l*áu*x
 PNWGmcMnDissimilation [no-change]: *f*l*áu*x
 PNWGmcNStemNLoss [no-change]: *f*l*áu*x
+PGmcNasalLossBeforeX [no-change]: *f*l*áu*x
 EAFNasalSpirantLengthening [no-change]: *f*l*áu*x
 EAFNasalSpirantLoss [no-change]: *f*l*áu*x
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*áu*x
@@ -9569,6 +9649,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*éu*x*a*n*ą
 EAFRhotacism [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*l*éu*x*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*l*éu*x*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*l*éu*x*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*éu*x*a*n*ą
@@ -9688,6 +9769,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*ái*s*k*i
 EAFRhotacism [no-change]: *f*l*ái*s*k*i
 PNWGmcMnDissimilation [no-change]: *f*l*ái*s*k*i
 PNWGmcNStemNLoss [no-change]: *f*l*ái*s*k*i
+PGmcNasalLossBeforeX [no-change]: *f*l*ái*s*k*i
 EAFNasalSpirantLengthening [no-change]: *f*l*ái*s*k*i
 EAFNasalSpirantLoss [no-change]: *f*l*ái*s*k*i
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*ái*s*k*i
@@ -9807,6 +9889,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*ō*d*u
 EAFRhotacism [no-change]: *f*l*ō*d*u
 PNWGmcMnDissimilation [no-change]: *f*l*ō*d*u
 PNWGmcNStemNLoss [no-change]: *f*l*ō*d*u
+PGmcNasalLossBeforeX [no-change]: *f*l*ō*d*u
 EAFNasalSpirantLengthening [no-change]: *f*l*ō*d*u
 EAFNasalSpirantLoss [no-change]: *f*l*ō*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*ō*d*u
@@ -9926,6 +10009,7 @@ MonosyllabicFinalZLoss [no-change]: *f*l*éu*g*a*n*ą
 EAFRhotacism [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*l*éu*g*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*l*éu*g*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*l*éu*g*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*éu*g*a*n*ą
@@ -10045,6 +10129,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ó*l*ô
 EAFRhotacism [no-change]: *f*ó*l*ô
 PNWGmcMnDissimilation [no-change]: *f*ó*l*ô
 PNWGmcNStemNLoss [no-change]: *f*ó*l*ô
+PGmcNasalLossBeforeX [no-change]: *f*ó*l*ô
 EAFNasalSpirantLengthening [no-change]: *f*ó*l*ô
 EAFNasalSpirantLoss [no-change]: *f*ó*l*ô
 PNWGmcPreconsonantalXLoss [no-change]: *f*ó*l*ô
@@ -10164,6 +10249,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ō*d*r*ą
 EAFRhotacism [no-change]: *f*ō*d*r*ą
 PNWGmcMnDissimilation [no-change]: *f*ō*d*r*ą
 PNWGmcNStemNLoss [no-change]: *f*ō*d*r*ą
+PGmcNasalLossBeforeX [no-change]: *f*ō*d*r*ą
 EAFNasalSpirantLengthening [no-change]: *f*ō*d*r*ą
 EAFNasalSpirantLoss [no-change]: *f*ō*d*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*ō*d*r*ą
@@ -10283,6 +10369,7 @@ MonosyllabicFinalZLoss [no-change]: *f*á*l*d*a*n*ą
 EAFRhotacism [no-change]: *f*á*l*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*l*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*l*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*á*l*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*á*l*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*á*l*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*l*d*a*n*ą
@@ -10402,6 +10489,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ó*l*k*ą
 EAFRhotacism [no-change]: *f*ó*l*k*ą
 PNWGmcMnDissimilation [no-change]: *f*ó*l*k*ą
 PNWGmcNStemNLoss [no-change]: *f*ó*l*k*ą
+PGmcNasalLossBeforeX [no-change]: *f*ó*l*k*ą
 EAFNasalSpirantLengthening [no-change]: *f*ó*l*k*ą
 EAFNasalSpirantLoss [no-change]: *f*ó*l*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*ó*l*k*ą
@@ -10521,6 +10609,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
 EAFRhotacism [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*ú*l*g*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*ú*l*g*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
@@ -10640,6 +10729,7 @@ MonosyllabicFinalZLoss [no-change]: *l*éu*s*a*n*ą
 EAFRhotacism [no-change]: *l*éu*s*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*éu*s*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*éu*s*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*éu*s*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*éu*s*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*éu*s*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*éu*s*a*n*ą
@@ -10759,6 +10849,7 @@ MonosyllabicFinalZLoss [no-change]: *f*é*w*w*a*r
 EAFRhotacism [no-change]: *f*é*w*w*a*r
 PNWGmcMnDissimilation [no-change]: *f*é*w*w*a*r
 PNWGmcNStemNLoss [no-change]: *f*é*w*w*a*r
+PGmcNasalLossBeforeX [no-change]: *f*é*w*w*a*r
 EAFNasalSpirantLengthening [no-change]: *f*é*w*w*a*r
 EAFNasalSpirantLoss [no-change]: *f*é*w*w*a*r
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*w*w*a*r
@@ -10878,6 +10969,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ó*x*s*a
 EAFRhotacism [no-change]: *f*ó*x*s*a
 PNWGmcMnDissimilation [no-change]: *f*ó*x*s*a
 PNWGmcNStemNLoss [no-change]: *f*ó*x*s*a
+PGmcNasalLossBeforeX [no-change]: *f*ó*x*s*a
 EAFNasalSpirantLengthening [no-change]: *f*ó*x*s*a
 EAFNasalSpirantLoss [no-change]: *f*ó*x*s*a
 PNWGmcPreconsonantalXLoss [no-change]: *f*ó*x*s*a
@@ -10997,6 +11089,7 @@ MonosyllabicFinalZLoss [no-change]: *f*r*éu*s*a*n*ą
 EAFRhotacism [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*r*éu*s*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *f*r*éu*s*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *f*r*éu*s*a*n*ą
 EAFNasalSpirantLoss [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*r*éu*s*a*n*ą
@@ -11116,6 +11209,7 @@ MonosyllabicFinalZLoss [no-change]: *f*r*íu*n*d
 EAFRhotacism [no-change]: *f*r*íu*n*d
 PNWGmcMnDissimilation [no-change]: *f*r*íu*n*d
 PNWGmcNStemNLoss [no-change]: *f*r*íu*n*d
+PGmcNasalLossBeforeX [no-change]: *f*r*íu*n*d
 EAFNasalSpirantLengthening [no-change]: *f*r*íu*n*d
 EAFNasalSpirantLoss [no-change]: *f*r*íu*n*d
 PNWGmcPreconsonantalXLoss [no-change]: *f*r*íu*n*d
@@ -11235,6 +11329,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ú*r*x*t*ī*n*a
 EAFRhotacism [no-change]: *f*ú*r*x*t*ī*n*a
 PNWGmcMnDissimilation [no-change]: *f*ú*r*x*t*ī*n*a
 PNWGmcNStemNLoss [no-change]: *f*ú*r*x*t*ī*n*a
+PGmcNasalLossBeforeX [no-change]: *f*ú*r*x*t*ī*n*a
 EAFNasalSpirantLengthening [no-change]: *f*ú*r*x*t*ī*n*a
 EAFNasalSpirantLoss [no-change]: *f*ú*r*x*t*ī*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*r*x*t*ī*n*a
@@ -11354,6 +11449,7 @@ MonosyllabicFinalZLoss [no-change]: *f*r*ó*s*t*ą
 EAFRhotacism [no-change]: *f*r*ó*s*t*ą
 PNWGmcMnDissimilation [no-change]: *f*r*ó*s*t*ą
 PNWGmcNStemNLoss [no-change]: *f*r*ó*s*t*ą
+PGmcNasalLossBeforeX [no-change]: *f*r*ó*s*t*ą
 EAFNasalSpirantLengthening [no-change]: *f*r*ó*s*t*ą
 EAFNasalSpirantLoss [no-change]: *f*r*ó*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*r*ó*s*t*ą
@@ -11473,6 +11569,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ú*r*x
 EAFRhotacism [no-change]: *f*ú*r*x
 PNWGmcMnDissimilation [no-change]: *f*ú*r*x
 PNWGmcNStemNLoss [no-change]: *f*ú*r*x
+PGmcNasalLossBeforeX [no-change]: *f*ú*r*x
 EAFNasalSpirantLengthening [no-change]: *f*ú*r*x
 EAFNasalSpirantLoss [no-change]: *f*ú*r*x
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*r*x
@@ -11592,6 +11689,7 @@ MonosyllabicFinalZLoss [no-change]: *g*á*l*l*ô
 EAFRhotacism [no-change]: *g*á*l*l*ô
 PNWGmcMnDissimilation [no-change]: *g*á*l*l*ô
 PNWGmcNStemNLoss [no-change]: *g*á*l*l*ô
+PGmcNasalLossBeforeX [no-change]: *g*á*l*l*ô
 EAFNasalSpirantLengthening [no-change]: *g*á*l*l*ô
 EAFNasalSpirantLoss [no-change]: *g*á*l*l*ô
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*l*l*ô
@@ -11711,6 +11809,7 @@ MonosyllabicFinalZLoss [no-change]: *g*á*n*g*a
 EAFRhotacism [no-change]: *g*á*n*g*a
 PNWGmcMnDissimilation [no-change]: *g*á*n*g*a
 PNWGmcNStemNLoss [no-change]: *g*á*n*g*a
+PGmcNasalLossBeforeX [no-change]: *g*á*n*g*a
 EAFNasalSpirantLengthening [no-change]: *g*á*n*g*a
 EAFNasalSpirantLoss [no-change]: *g*á*n*g*a
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*n*g*a
@@ -11830,6 +11929,7 @@ MonosyllabicFinalZLoss [no-change]: *g*ái*s*t*a
 EAFRhotacism [no-change]: *g*ái*s*t*a
 PNWGmcMnDissimilation [no-change]: *g*ái*s*t*a
 PNWGmcNStemNLoss [no-change]: *g*ái*s*t*a
+PGmcNasalLossBeforeX [no-change]: *g*ái*s*t*a
 EAFNasalSpirantLengthening [no-change]: *g*ái*s*t*a
 EAFNasalSpirantLoss [no-change]: *g*ái*s*t*a
 PNWGmcPreconsonantalXLoss [no-change]: *g*ái*s*t*a
@@ -11949,6 +12049,7 @@ MonosyllabicFinalZLoss [no-change]: *g*é*f*t*i
 EAFRhotacism [no-change]: *g*é*f*t*i
 PNWGmcMnDissimilation [no-change]: *g*é*f*t*i
 PNWGmcNStemNLoss [no-change]: *g*é*f*t*i
+PGmcNasalLossBeforeX [no-change]: *g*é*f*t*i
 EAFNasalSpirantLengthening [no-change]: *g*é*f*t*i
 EAFNasalSpirantLoss [no-change]: *g*é*f*t*i
 PNWGmcPreconsonantalXLoss [no-change]: *g*é*f*t*i
@@ -12068,6 +12169,7 @@ MonosyllabicFinalZLoss [no-change]: *g*é*b*a*n*ą
 EAFRhotacism [no-change]: *g*é*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*é*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*é*b*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *g*é*b*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *g*é*b*a*n*ą
 EAFNasalSpirantLoss [no-change]: *g*é*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*é*b*a*n*ą
@@ -12187,6 +12289,7 @@ MonosyllabicFinalZLoss [no-change]: *g*ó*d*ą
 EAFRhotacism [no-change]: *g*ó*d*ą
 PNWGmcMnDissimilation [no-change]: *g*ó*d*ą
 PNWGmcNStemNLoss [no-change]: *g*ó*d*ą
+PGmcNasalLossBeforeX [no-change]: *g*ó*d*ą
 EAFNasalSpirantLengthening [no-change]: *g*ó*d*ą
 EAFNasalSpirantLoss [no-change]: *g*ó*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*ó*d*ą
@@ -12306,6 +12409,7 @@ MonosyllabicFinalZLoss [no-change]: *g*ó*l*d*ą
 EAFRhotacism [no-change]: *g*ó*l*d*ą
 PNWGmcMnDissimilation [no-change]: *g*ó*l*d*ą
 PNWGmcNStemNLoss [no-change]: *g*ó*l*d*ą
+PGmcNasalLossBeforeX [no-change]: *g*ó*l*d*ą
 EAFNasalSpirantLengthening [no-change]: *g*ó*l*d*ą
 EAFNasalSpirantLoss [no-change]: *g*ó*l*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*ó*l*d*ą
@@ -12425,6 +12529,7 @@ MonosyllabicFinalZLoss [no-change]: *g*á*n*s
 EAFRhotacism [no-change]: *g*á*n*s
 PNWGmcMnDissimilation [no-change]: *g*á*n*s
 PNWGmcNStemNLoss [no-change]: *g*á*n*s
+PGmcNasalLossBeforeX [no-change]: *g*á*n*s
 EAFNasalSpirantLengthening: *g*ō*n*s
 EAFNasalSpirantLoss: *g*ō*s
 PNWGmcPreconsonantalXLoss [no-change]: *g*ō*s
@@ -12544,6 +12649,7 @@ MonosyllabicFinalZLoss [no-change]: *g*r*á*s*ą
 EAFRhotacism [no-change]: *g*r*á*s*ą
 PNWGmcMnDissimilation [no-change]: *g*r*á*s*ą
 PNWGmcNStemNLoss [no-change]: *g*r*á*s*ą
+PGmcNasalLossBeforeX [no-change]: *g*r*á*s*ą
 EAFNasalSpirantLengthening [no-change]: *g*r*á*s*ą
 EAFNasalSpirantLoss [no-change]: *g*r*á*s*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*á*s*ą
@@ -12663,6 +12769,7 @@ MonosyllabicFinalZLoss [no-change]: *g*r*á*b*a*n*ą
 EAFRhotacism [no-change]: *g*r*á*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*r*á*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*r*á*b*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *g*r*á*b*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *g*r*á*b*a*n*ą
 EAFNasalSpirantLoss [no-change]: *g*r*á*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*á*b*a*n*ą
@@ -12782,6 +12889,7 @@ MonosyllabicFinalZLoss [no-change]: *g*r*ḯ*p*a*n*ą
 EAFRhotacism [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*r*ḯ*p*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *g*r*ḯ*p*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *g*r*ḯ*p*a*n*ą
 EAFNasalSpirantLoss [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*ḯ*p*a*n*ą
@@ -12901,6 +13009,7 @@ MonosyllabicFinalZLoss [no-change]: *g*r*ú*n*d*u
 EAFRhotacism [no-change]: *g*r*ú*n*d*u
 PNWGmcMnDissimilation [no-change]: *g*r*ú*n*d*u
 PNWGmcNStemNLoss [no-change]: *g*r*ú*n*d*u
+PGmcNasalLossBeforeX [no-change]: *g*r*ú*n*d*u
 EAFNasalSpirantLengthening [no-change]: *g*r*ú*n*d*u
 EAFNasalSpirantLoss [no-change]: *g*r*ú*n*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*ú*n*d*u
@@ -13020,6 +13129,7 @@ MonosyllabicFinalZLoss [no-change]: *g*á*s*t*i
 EAFRhotacism [no-change]: *g*á*s*t*i
 PNWGmcMnDissimilation [no-change]: *g*á*s*t*i
 PNWGmcNStemNLoss [no-change]: *g*á*s*t*i
+PGmcNasalLossBeforeX [no-change]: *g*á*s*t*i
 EAFNasalSpirantLengthening [no-change]: *g*á*s*t*i
 EAFNasalSpirantLoss [no-change]: *g*á*s*t*i
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*s*t*i
@@ -13139,6 +13249,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*g*l*ą
 EAFRhotacism [no-change]: *x*á*g*l*ą
 PNWGmcMnDissimilation [no-change]: *x*á*g*l*ą
 PNWGmcNStemNLoss [no-change]: *x*á*g*l*ą
+PGmcNasalLossBeforeX [no-change]: *x*á*g*l*ą
 EAFNasalSpirantLengthening [no-change]: *x*á*g*l*ą
 EAFNasalSpirantLoss [no-change]: *x*á*g*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*l*ą
@@ -13258,6 +13369,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ā*r*ą
 EAFRhotacism [no-change]: *x*ā*r*ą
 PNWGmcMnDissimilation [no-change]: *x*ā*r*ą
 PNWGmcNStemNLoss [no-change]: *x*ā*r*ą
+PGmcNasalLossBeforeX [no-change]: *x*ā*r*ą
 EAFNasalSpirantLengthening [no-change]: *x*ā*r*ą
 EAFNasalSpirantLoss [no-change]: *x*ā*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ā*r*ą
@@ -13377,6 +13489,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*l*l*u
 EAFRhotacism [no-change]: *x*á*l*l*u
 PNWGmcMnDissimilation [no-change]: *x*á*l*l*u
 PNWGmcNStemNLoss [no-change]: *x*á*l*l*u
+PGmcNasalLossBeforeX [no-change]: *x*á*l*l*u
 EAFNasalSpirantLengthening [no-change]: *x*á*l*l*u
 EAFNasalSpirantLoss [no-change]: *x*á*l*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*l*l*u
@@ -13496,6 +13609,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*m*a*r*a*s
 EAFRhotacism [no-change]: *x*á*m*a*r*a*s
 PNWGmcMnDissimilation [no-change]: *x*á*m*a*r*a*s
 PNWGmcNStemNLoss [no-change]: *x*á*m*a*r*a*s
+PGmcNasalLossBeforeX [no-change]: *x*á*m*a*r*a*s
 EAFNasalSpirantLengthening [no-change]: *x*á*m*a*r*a*s
 EAFNasalSpirantLoss [no-change]: *x*á*m*a*r*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*m*a*r*a*s
@@ -13615,6 +13729,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*n*d*u
 EAFRhotacism [no-change]: *x*á*n*d*u
 PNWGmcMnDissimilation [no-change]: *x*á*n*d*u
 PNWGmcNStemNLoss [no-change]: *x*á*n*d*u
+PGmcNasalLossBeforeX [no-change]: *x*á*n*d*u
 EAFNasalSpirantLengthening [no-change]: *x*á*n*d*u
 EAFNasalSpirantLoss [no-change]: *x*á*n*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*n*d*u
@@ -13734,6 +13849,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 EAFRhotacism [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
@@ -13853,6 +13969,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*r*m*a
 EAFRhotacism [no-change]: *x*á*r*m*a
 PNWGmcMnDissimilation [no-change]: *x*á*r*m*a
 PNWGmcNStemNLoss [no-change]: *x*á*r*m*a
+PGmcNasalLossBeforeX [no-change]: *x*á*r*m*a
 EAFNasalSpirantLengthening [no-change]: *x*á*r*m*a
 EAFNasalSpirantLoss [no-change]: *x*á*r*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*r*m*a
@@ -13972,6 +14089,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*r*b*i*s*t*u
 EAFRhotacism [no-change]: *x*á*r*b*i*s*t*u
 PNWGmcMnDissimilation [no-change]: *x*á*r*b*i*s*t*u
 PNWGmcNStemNLoss [no-change]: *x*á*r*b*i*s*t*u
+PGmcNasalLossBeforeX [no-change]: *x*á*r*b*i*s*t*u
 EAFNasalSpirantLengthening [no-change]: *x*á*r*b*i*s*t*u
 EAFNasalSpirantLoss [no-change]: *x*á*r*b*i*s*t*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*r*b*i*s*t*u
@@ -14091,6 +14209,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*b*ē*θ
 EAFRhotacism [no-change]: *x*á*b*ē*θ
 PNWGmcMnDissimilation [no-change]: *x*á*b*ē*θ
 PNWGmcNStemNLoss [no-change]: *x*á*b*ē*θ
+PGmcNasalLossBeforeX [no-change]: *x*á*b*ē*θ
 EAFNasalSpirantLengthening [no-change]: *x*á*b*ē*θ
 EAFNasalSpirantLoss [no-change]: *x*á*b*ē*θ
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*b*ē*θ
@@ -14210,6 +14329,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*g*ô
 EAFRhotacism [no-change]: *x*á*g*ô
 PNWGmcMnDissimilation [no-change]: *x*á*g*ô
 PNWGmcNStemNLoss [no-change]: *x*á*g*ô
+PGmcNasalLossBeforeX [no-change]: *x*á*g*ô
 EAFNasalSpirantLengthening [no-change]: *x*á*g*ô
 EAFNasalSpirantLoss [no-change]: *x*á*g*ô
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*ô
@@ -14329,6 +14449,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*b*u*k*a
 EAFRhotacism [no-change]: *x*á*b*u*k*a
 PNWGmcMnDissimilation [no-change]: *x*á*b*u*k*a
 PNWGmcNStemNLoss [no-change]: *x*á*b*u*k*a
+PGmcNasalLossBeforeX [no-change]: *x*á*b*u*k*a
 EAFNasalSpirantLengthening [no-change]: *x*á*b*u*k*a
 EAFNasalSpirantLoss [no-change]: *x*á*b*u*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*b*u*k*a
@@ -14448,6 +14569,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*w*w*j*ą
 EAFRhotacism [no-change]: *x*á*w*w*j*ą
 PNWGmcMnDissimilation [no-change]: *x*á*w*w*j*ą
 PNWGmcNStemNLoss [no-change]: *x*á*w*w*j*ą
+PGmcNasalLossBeforeX [no-change]: *x*á*w*w*j*ą
 EAFNasalSpirantLengthening [no-change]: *x*á*w*w*j*ą
 EAFNasalSpirantLoss [no-change]: *x*á*w*w*j*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*w*w*j*ą
@@ -14567,6 +14689,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*s*l*a
 EAFRhotacism [no-change]: *x*á*s*l*a
 PNWGmcMnDissimilation [no-change]: *x*á*s*l*a
 PNWGmcNStemNLoss [no-change]: *x*á*s*l*a
+PGmcNasalLossBeforeX [no-change]: *x*á*s*l*a
 EAFNasalSpirantLengthening [no-change]: *x*á*s*l*a
 EAFNasalSpirantLoss [no-change]: *x*á*s*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*s*l*a
@@ -14686,6 +14809,7 @@ MonosyllabicFinalZLoss [no-change]: *x*áu*b*u*d*ą
 EAFRhotacism [no-change]: *x*áu*b*u*d*ą
 PNWGmcMnDissimilation [no-change]: *x*áu*b*u*d*ą
 PNWGmcNStemNLoss [no-change]: *x*áu*b*u*d*ą
+PGmcNasalLossBeforeX [no-change]: *x*áu*b*u*d*ą
 EAFNasalSpirantLengthening [no-change]: *x*áu*b*u*d*ą
 EAFNasalSpirantLoss [no-change]: *x*áu*b*u*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*áu*b*u*d*ą
@@ -14805,6 +14929,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ái*l*i*j*a*n*ą
 EAFRhotacism [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*ái*l*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*ái*l*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*ái*l*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ái*l*i*j*a*n*ą
@@ -14924,6 +15049,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*r*t*ō*n
 EAFRhotacism [no-change]: *x*é*r*t*ō*n
 PNWGmcMnDissimilation [no-change]: *x*é*r*t*ō*n
 PNWGmcNStemNLoss: *x*é*r*t*ǭ
+PGmcNasalLossBeforeX [no-change]: *x*é*r*t*ǭ
 EAFNasalSpirantLengthening [no-change]: *x*é*r*t*ǭ
 EAFNasalSpirantLoss [no-change]: *x*é*r*t*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*r*t*ǭ
@@ -15043,6 +15169,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*r*θ*a
 EAFRhotacism [no-change]: *x*é*r*θ*a
 PNWGmcMnDissimilation [no-change]: *x*é*r*θ*a
 PNWGmcNStemNLoss [no-change]: *x*é*r*θ*a
+PGmcNasalLossBeforeX [no-change]: *x*é*r*θ*a
 EAFNasalSpirantLengthening [no-change]: *x*é*r*θ*a
 EAFNasalSpirantLoss [no-change]: *x*é*r*θ*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*r*θ*a
@@ -15162,6 +15289,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ái*θ*i
 EAFRhotacism [no-change]: *x*ái*θ*i
 PNWGmcMnDissimilation [no-change]: *x*ái*θ*i
 PNWGmcNStemNLoss [no-change]: *x*ái*θ*i
+PGmcNasalLossBeforeX [no-change]: *x*ái*θ*i
 EAFNasalSpirantLengthening [no-change]: *x*ái*θ*i
 EAFNasalSpirantLoss [no-change]: *x*ái*θ*i
 PNWGmcPreconsonantalXLoss [no-change]: *x*ái*θ*i
@@ -15281,6 +15409,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*b*u*n
 EAFRhotacism [no-change]: *x*é*b*u*n
 PNWGmcMnDissimilation [no-change]: *x*é*b*u*n
 PNWGmcNStemNLoss [no-change]: *x*é*b*u*n
+PGmcNasalLossBeforeX [no-change]: *x*é*b*u*n
 EAFNasalSpirantLengthening [no-change]: *x*é*b*u*n
 EAFNasalSpirantLoss [no-change]: *x*é*b*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*b*u*n
@@ -15400,6 +15529,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*g*g*j*a
 EAFRhotacism [no-change]: *x*á*g*g*j*a
 PNWGmcMnDissimilation [no-change]: *x*á*g*g*j*a
 PNWGmcNStemNLoss [no-change]: *x*á*g*g*j*a
+PGmcNasalLossBeforeX [no-change]: *x*á*g*g*j*a
 EAFNasalSpirantLengthening [no-change]: *x*á*g*g*j*a
 EAFNasalSpirantLoss [no-change]: *x*á*g*g*j*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*g*j*a
@@ -15519,6 +15649,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*l*m*a
 EAFRhotacism [no-change]: *x*é*l*m*a
 PNWGmcMnDissimilation [no-change]: *x*é*l*m*a
 PNWGmcNStemNLoss [no-change]: *x*é*l*m*a
+PGmcNasalLossBeforeX [no-change]: *x*é*l*m*a
 EAFNasalSpirantLengthening [no-change]: *x*é*l*m*a
 EAFNasalSpirantLoss [no-change]: *x*é*l*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*l*m*a
@@ -15638,6 +15769,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*l*p*a*n*ą
 EAFRhotacism [no-change]: *x*é*l*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*é*l*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*é*l*p*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*é*l*p*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*é*l*p*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*é*l*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*l*p*a*n*ą
@@ -15757,6 +15889,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*l*p*u
 EAFRhotacism [no-change]: *x*é*l*p*u
 PNWGmcMnDissimilation [no-change]: *x*é*l*p*u
 PNWGmcNStemNLoss [no-change]: *x*é*l*p*u
+PGmcNasalLossBeforeX [no-change]: *x*é*l*p*u
 EAFNasalSpirantLengthening [no-change]: *x*é*l*p*u
 EAFNasalSpirantLoss [no-change]: *x*é*l*p*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*l*p*u
@@ -15876,6 +16009,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*r*d*u
 EAFRhotacism [no-change]: *x*é*r*d*u
 PNWGmcMnDissimilation [no-change]: *x*é*r*d*u
 PNWGmcNStemNLoss [no-change]: *x*é*r*d*u
+PGmcNasalLossBeforeX [no-change]: *x*é*r*d*u
 EAFNasalSpirantLengthening [no-change]: *x*é*r*d*u
 EAFNasalSpirantLoss [no-change]: *x*é*r*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*r*d*u
@@ -15995,6 +16129,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*w*w*a*n*ą
 EAFRhotacism [no-change]: *x*á*w*w*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*á*w*w*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*á*w*w*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*á*w*w*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*á*w*w*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*á*w*w*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*w*w*a*n*ą
@@ -16114,6 +16249,7 @@ MonosyllabicFinalZLoss [no-change]: *x*é*n*d*j*u
 EAFRhotacism [no-change]: *x*é*n*d*j*u
 PNWGmcMnDissimilation [no-change]: *x*é*n*d*j*u
 PNWGmcNStemNLoss [no-change]: *x*é*n*d*j*u
+PGmcNasalLossBeforeX [no-change]: *x*é*n*d*j*u
 EAFNasalSpirantLengthening [no-change]: *x*é*n*d*j*u
 EAFNasalSpirantLoss [no-change]: *x*é*n*d*j*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*n*d*j*u
@@ -16233,6 +16369,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ó*z*d*ą
 EAFRhotacism: *x*ó*r*d*ą
 PNWGmcMnDissimilation [no-change]: *x*ó*r*d*ą
 PNWGmcNStemNLoss [no-change]: *x*ó*r*d*ą
+PGmcNasalLossBeforeX [no-change]: *x*ó*r*d*ą
 EAFNasalSpirantLengthening [no-change]: *x*ó*r*d*ą
 EAFNasalSpirantLoss [no-change]: *x*ó*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ó*r*d*ą
@@ -16352,6 +16489,7 @@ MonosyllabicFinalZLoss [no-change]: *x*á*l*d*a*n*ą
 EAFRhotacism [no-change]: *x*á*l*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*á*l*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*á*l*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*á*l*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*á*l*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*á*l*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*l*d*a*n*ą
@@ -16471,6 +16609,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ái*m*a
 EAFRhotacism [no-change]: *x*ái*m*a
 PNWGmcMnDissimilation [no-change]: *x*ái*m*a
 PNWGmcNStemNLoss [no-change]: *x*ái*m*a
+PGmcNasalLossBeforeX [no-change]: *x*ái*m*a
 EAFNasalSpirantLengthening [no-change]: *x*ái*m*a
 EAFNasalSpirantLoss [no-change]: *x*ái*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*ái*m*a
@@ -16590,6 +16729,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ú*n*a*g*ą
 EAFRhotacism [no-change]: *x*ú*n*a*g*ą
 PNWGmcMnDissimilation [no-change]: *x*ú*n*a*g*ą
 PNWGmcNStemNLoss [no-change]: *x*ú*n*a*g*ą
+PGmcNasalLossBeforeX [no-change]: *x*ú*n*a*g*ą
 EAFNasalSpirantLengthening [no-change]: *x*ú*n*a*g*ą
 EAFNasalSpirantLoss [no-change]: *x*ú*n*a*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ú*n*a*g*ą
@@ -16709,6 +16849,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ō*d*a
 EAFRhotacism [no-change]: *x*ō*d*a
 PNWGmcMnDissimilation [no-change]: *x*ō*d*a
 PNWGmcNStemNLoss [no-change]: *x*ō*d*a
+PGmcNasalLossBeforeX [no-change]: *x*ō*d*a
 EAFNasalSpirantLengthening [no-change]: *x*ō*d*a
 EAFNasalSpirantLoss [no-change]: *x*ō*d*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*ō*d*a
@@ -16828,6 +16969,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ō*f*a
 EAFRhotacism [no-change]: *x*ō*f*a
 PNWGmcMnDissimilation [no-change]: *x*ō*f*a
 PNWGmcNStemNLoss [no-change]: *x*ō*f*a
+PGmcNasalLossBeforeX [no-change]: *x*ō*f*a
 EAFNasalSpirantLengthening [no-change]: *x*ō*f*a
 EAFNasalSpirantLoss [no-change]: *x*ō*f*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*ō*f*a
@@ -16947,6 +17089,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ó*r*n*ą
 EAFRhotacism [no-change]: *x*ó*r*n*ą
 PNWGmcMnDissimilation [no-change]: *x*ó*r*n*ą
 PNWGmcNStemNLoss [no-change]: *x*ó*r*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*ó*r*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*ó*r*n*ą
 EAFNasalSpirantLoss [no-change]: *x*ó*r*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ó*r*n*ą
@@ -17066,6 +17209,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ú*n*d*a
 EAFRhotacism [no-change]: *x*ú*n*d*a
 PNWGmcMnDissimilation [no-change]: *x*ú*n*d*a
 PNWGmcNStemNLoss [no-change]: *x*ú*n*d*a
+PGmcNasalLossBeforeX [no-change]: *x*ú*n*d*a
 EAFNasalSpirantLengthening [no-change]: *x*ú*n*d*a
 EAFNasalSpirantLoss [no-change]: *x*ú*n*d*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*ú*n*d*a
@@ -17185,6 +17329,7 @@ MonosyllabicFinalZLoss [no-change]: *k*n*é*d*a*n*ą
 EAFRhotacism [no-change]: *k*n*é*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *k*n*é*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *k*n*é*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *k*n*é*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *k*n*é*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *k*n*é*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*é*d*a*n*ą
@@ -17304,6 +17449,7 @@ MonosyllabicFinalZLoss [no-change]: *k*n*é*w*ą
 EAFRhotacism [no-change]: *k*n*é*w*ą
 PNWGmcMnDissimilation [no-change]: *k*n*é*w*ą
 PNWGmcNStemNLoss [no-change]: *k*n*é*w*ą
+PGmcNasalLossBeforeX [no-change]: *k*n*é*w*ą
 EAFNasalSpirantLengthening [no-change]: *k*n*é*w*ą
 EAFNasalSpirantLoss [no-change]: *k*n*é*w*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*é*w*ą
@@ -17423,6 +17569,7 @@ MonosyllabicFinalZLoss [no-change]: *k*n*é*x*t*a
 EAFRhotacism [no-change]: *k*n*é*x*t*a
 PNWGmcMnDissimilation [no-change]: *k*n*é*x*t*a
 PNWGmcNStemNLoss [no-change]: *k*n*é*x*t*a
+PGmcNasalLossBeforeX [no-change]: *k*n*é*x*t*a
 EAFNasalSpirantLengthening [no-change]: *k*n*é*x*t*a
 EAFNasalSpirantLoss [no-change]: *k*n*é*x*t*a
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*é*x*t*a
@@ -17542,6 +17689,7 @@ MonosyllabicFinalZLoss [no-change]: *k*n*ó*b*b*ô
 EAFRhotacism [no-change]: *k*n*ó*b*b*ô
 PNWGmcMnDissimilation [no-change]: *k*n*ó*b*b*ô
 PNWGmcNStemNLoss [no-change]: *k*n*ó*b*b*ô
+PGmcNasalLossBeforeX [no-change]: *k*n*ó*b*b*ô
 EAFNasalSpirantLengthening [no-change]: *k*n*ó*b*b*ô
 EAFNasalSpirantLoss [no-change]: *k*n*ó*b*b*ô
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*ó*b*b*ô
@@ -17661,6 +17809,7 @@ MonosyllabicFinalZLoss [no-change]: *x*l*á*d*a*n*ą
 EAFRhotacism [no-change]: *x*l*á*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*l*á*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*l*á*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*l*á*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*l*á*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*l*á*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*l*á*d*a*n*ą
@@ -17780,6 +17929,7 @@ MonosyllabicFinalZLoss [no-change]: *l*á*n*d*ą
 EAFRhotacism [no-change]: *l*á*n*d*ą
 PNWGmcMnDissimilation [no-change]: *l*á*n*d*ą
 PNWGmcNStemNLoss [no-change]: *l*á*n*d*ą
+PGmcNasalLossBeforeX [no-change]: *l*á*n*d*ą
 EAFNasalSpirantLengthening [no-change]: *l*á*n*d*ą
 EAFNasalSpirantLoss [no-change]: *l*á*n*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*á*n*d*ą
@@ -17899,6 +18049,7 @@ MonosyllabicFinalZLoss [no-change]: *l*á*p*p*ô
 EAFRhotacism [no-change]: *l*á*p*p*ô
 PNWGmcMnDissimilation [no-change]: *l*á*p*p*ô
 PNWGmcNStemNLoss [no-change]: *l*á*p*p*ô
+PGmcNasalLossBeforeX [no-change]: *l*á*p*p*ô
 EAFNasalSpirantLengthening [no-change]: *l*á*p*p*ô
 EAFNasalSpirantLoss [no-change]: *l*á*p*p*ô
 PNWGmcPreconsonantalXLoss [no-change]: *l*á*p*p*ô
@@ -18018,6 +18169,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*ái*s*t*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*ái*s*t*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
@@ -18137,6 +18289,7 @@ MonosyllabicFinalZLoss [no-change]: *x*l*á*x*x*j*a*n*ą
 EAFRhotacism [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*l*á*x*x*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*l*á*x*x*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*l*á*x*x*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*l*á*x*x*j*a*n*ą
@@ -18256,6 +18409,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ái*d*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ái*d*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*ái*d*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*ái*d*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*d*i*j*a*n*ą
@@ -18375,6 +18529,7 @@ MonosyllabicFinalZLoss [no-change]: *l*áu*b*ą
 EAFRhotacism [no-change]: *l*áu*b*ą
 PNWGmcMnDissimilation [no-change]: *l*áu*b*ą
 PNWGmcNStemNLoss [no-change]: *l*áu*b*ą
+PGmcNasalLossBeforeX [no-change]: *l*áu*b*ą
 EAFNasalSpirantLengthening [no-change]: *l*áu*b*ą
 EAFNasalSpirantLoss [no-change]: *l*áu*b*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*áu*b*ą
@@ -18494,6 +18649,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*z*n*ō*j*a*n*ą
 EAFRhotacism: *l*í*r*n*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*í*r*n*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*í*r*n*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*í*r*n*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*í*r*n*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*í*r*n*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*r*n*ō*j*a*n*ą
@@ -18613,6 +18769,7 @@ MonosyllabicFinalZLoss [no-change]: *l*é*θ*r*ą
 EAFRhotacism [no-change]: *l*é*θ*r*ą
 PNWGmcMnDissimilation [no-change]: *l*é*θ*r*ą
 PNWGmcNStemNLoss [no-change]: *l*é*θ*r*ą
+PGmcNasalLossBeforeX [no-change]: *l*é*θ*r*ą
 EAFNasalSpirantLengthening [no-change]: *l*é*θ*r*ą
 EAFNasalSpirantLoss [no-change]: *l*é*θ*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*é*θ*r*ą
@@ -18732,6 +18889,7 @@ MonosyllabicFinalZLoss [no-change]: *l*áu*k*a
 EAFRhotacism [no-change]: *l*áu*k*a
 PNWGmcMnDissimilation [no-change]: *l*áu*k*a
 PNWGmcNStemNLoss [no-change]: *l*áu*k*a
+PGmcNasalLossBeforeX [no-change]: *l*áu*k*a
 EAFNasalSpirantLengthening [no-change]: *l*áu*k*a
 EAFNasalSpirantLoss [no-change]: *l*áu*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *l*áu*k*a
@@ -18851,6 +19009,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ā*t*a*n*ą
 EAFRhotacism [no-change]: *l*ā*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ā*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ā*t*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*ā*t*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*ā*t*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*ā*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ā*t*a*n*ą
@@ -18970,6 +19129,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
 EAFRhotacism [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*í*k*k*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*í*k*k*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
@@ -19089,6 +19249,7 @@ MonosyllabicFinalZLoss [no-change]: *x*l*í*d*ą
 EAFRhotacism [no-change]: *x*l*í*d*ą
 PNWGmcMnDissimilation [no-change]: *x*l*í*d*ą
 PNWGmcNStemNLoss [no-change]: *x*l*í*d*ą
+PGmcNasalLossBeforeX [no-change]: *x*l*í*d*ą
 EAFNasalSpirantLengthening [no-change]: *x*l*í*d*ą
 EAFNasalSpirantLoss [no-change]: *x*l*í*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*l*í*d*ą
@@ -19208,6 +19369,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ḯ*b*ą
 EAFRhotacism [no-change]: *l*ḯ*b*ą
 PNWGmcMnDissimilation [no-change]: *l*ḯ*b*ą
 PNWGmcNStemNLoss [no-change]: *l*ḯ*b*ą
+PGmcNasalLossBeforeX [no-change]: *l*ḯ*b*ą
 EAFNasalSpirantLengthening [no-change]: *l*ḯ*b*ą
 EAFNasalSpirantLoss [no-change]: *l*ḯ*b*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*b*ą
@@ -19327,6 +19489,7 @@ MonosyllabicFinalZLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*éu*x*t*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*éu*x*t*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
@@ -19446,6 +19609,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ḯ*m*ą
 EAFRhotacism [no-change]: *l*ḯ*m*ą
 PNWGmcMnDissimilation [no-change]: *l*ḯ*m*ą
 PNWGmcNStemNLoss [no-change]: *l*ḯ*m*ą
+PGmcNasalLossBeforeX [no-change]: *l*ḯ*m*ą
 EAFNasalSpirantLengthening [no-change]: *l*ḯ*m*ą
 EAFNasalSpirantLoss [no-change]: *l*ḯ*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*m*ą
@@ -19565,6 +19729,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*n*d*u
 EAFRhotacism [no-change]: *l*í*n*d*u
 PNWGmcMnDissimilation [no-change]: *l*í*n*d*u
 PNWGmcNStemNLoss [no-change]: *l*í*n*d*u
+PGmcNasalLossBeforeX [no-change]: *l*í*n*d*u
 EAFNasalSpirantLengthening [no-change]: *l*í*n*d*u
 EAFNasalSpirantLoss [no-change]: *l*í*n*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*n*d*u
@@ -19684,6 +19849,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ḯ*n*ō*n
 EAFRhotacism [no-change]: *l*ḯ*n*ō*n
 PNWGmcMnDissimilation [no-change]: *l*ḯ*n*ō*n
 PNWGmcNStemNLoss: *l*ḯ*n*ǭ
+PGmcNasalLossBeforeX [no-change]: *l*ḯ*n*ǭ
 EAFNasalSpirantLengthening [no-change]: *l*ḯ*n*ǭ
 EAFNasalSpirantLoss [no-change]: *l*ḯ*n*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*n*ǭ
@@ -19803,6 +19969,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ḯ*s*t*ō*n
 EAFRhotacism [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcMnDissimilation [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcNStemNLoss: *l*ḯ*s*t*ǭ
+PGmcNasalLossBeforeX [no-change]: *l*ḯ*s*t*ǭ
 EAFNasalSpirantLengthening [no-change]: *l*ḯ*s*t*ǭ
 EAFNasalSpirantLoss [no-change]: *l*ḯ*s*t*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*s*t*ǭ
@@ -19922,6 +20089,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*b*ē*θ
 EAFRhotacism [no-change]: *l*í*b*ē*θ
 PNWGmcMnDissimilation [no-change]: *l*í*b*ē*θ
 PNWGmcNStemNLoss [no-change]: *l*í*b*ē*θ
+PGmcNasalLossBeforeX [no-change]: *l*í*b*ē*θ
 EAFNasalSpirantLengthening [no-change]: *l*í*b*ē*θ
 EAFNasalSpirantLoss [no-change]: *l*í*b*ē*θ
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*b*ē*θ
@@ -20041,6 +20209,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*b*r*u
 EAFRhotacism [no-change]: *l*í*b*r*u
 PNWGmcMnDissimilation [no-change]: *l*í*b*r*u
 PNWGmcNStemNLoss [no-change]: *l*í*b*r*u
+PGmcNasalLossBeforeX [no-change]: *l*í*b*r*u
 EAFNasalSpirantLengthening [no-change]: *l*í*b*r*u
 EAFNasalSpirantLoss [no-change]: *l*í*b*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*b*r*u
@@ -20160,6 +20329,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ái*m*ą
 EAFRhotacism [no-change]: *l*ái*m*ą
 PNWGmcMnDissimilation [no-change]: *l*ái*m*ą
 PNWGmcNStemNLoss [no-change]: *l*ái*m*ą
+PGmcNasalLossBeforeX [no-change]: *l*ái*m*ą
 EAFNasalSpirantLengthening [no-change]: *l*ái*m*ą
 EAFNasalSpirantLoss [no-change]: *l*ái*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*m*ą
@@ -20279,6 +20449,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ái*θ*a
 EAFRhotacism [no-change]: *l*ái*θ*a
 PNWGmcMnDissimilation [no-change]: *l*ái*θ*a
 PNWGmcNStemNLoss [no-change]: *l*ái*θ*a
+PGmcNasalLossBeforeX [no-change]: *l*ái*θ*a
 EAFNasalSpirantLengthening [no-change]: *l*ái*θ*a
 EAFNasalSpirantLoss [no-change]: *l*ái*θ*a
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*θ*a
@@ -20398,6 +20569,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ó*k*ą
 EAFRhotacism [no-change]: *l*ó*k*ą
 PNWGmcMnDissimilation [no-change]: *l*ó*k*ą
 PNWGmcNStemNLoss [no-change]: *l*ó*k*ą
+PGmcNasalLossBeforeX [no-change]: *l*ó*k*ą
 EAFNasalSpirantLengthening [no-change]: *l*ó*k*ą
 EAFNasalSpirantLoss [no-change]: *l*ó*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ó*k*ą
@@ -20517,6 +20689,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ó*k*k*a
 EAFRhotacism [no-change]: *l*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *l*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *l*ó*k*k*a
+PGmcNasalLossBeforeX [no-change]: *l*ó*k*k*a
 EAFNasalSpirantLengthening [no-change]: *l*ó*k*k*a
 EAFNasalSpirantLoss [no-change]: *l*ó*k*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *l*ó*k*k*a
@@ -20636,6 +20809,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ū*s
 EAFRhotacism [no-change]: *l*ū*s
 PNWGmcMnDissimilation [no-change]: *l*ū*s
 PNWGmcNStemNLoss [no-change]: *l*ū*s
+PGmcNasalLossBeforeX [no-change]: *l*ū*s
 EAFNasalSpirantLengthening [no-change]: *l*ū*s
 EAFNasalSpirantLoss [no-change]: *l*ū*s
 PNWGmcPreconsonantalXLoss [no-change]: *l*ū*s
@@ -20755,6 +20929,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ú*n*g*a*n*n*j*u
 EAFRhotacism [no-change]: *l*ú*n*g*a*n*n*j*u
 PNWGmcMnDissimilation [no-change]: *l*ú*n*g*a*n*n*j*u
 PNWGmcNStemNLoss [no-change]: *l*ú*n*g*a*n*n*j*u
+PGmcNasalLossBeforeX [no-change]: *l*ú*n*g*a*n*n*j*u
 EAFNasalSpirantLengthening [no-change]: *l*ú*n*g*a*n*n*j*u
 EAFNasalSpirantLoss [no-change]: *l*ú*n*g*a*n*n*j*u
 PNWGmcPreconsonantalXLoss [no-change]: *l*ú*n*g*a*n*n*j*u
@@ -20874,6 +21049,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ú*s*t*u
 EAFRhotacism [no-change]: *l*ú*s*t*u
 PNWGmcMnDissimilation [no-change]: *l*ú*s*t*u
 PNWGmcNStemNLoss [no-change]: *l*ú*s*t*u
+PGmcNasalLossBeforeX [no-change]: *l*ú*s*t*u
 EAFNasalSpirantLengthening [no-change]: *l*ú*s*t*u
 EAFNasalSpirantLoss [no-change]: *l*ú*s*t*u
 PNWGmcPreconsonantalXLoss [no-change]: *l*ú*s*t*u
@@ -20993,6 +21169,7 @@ MonosyllabicFinalZLoss [no-change]: *l*áu*g*u
 EAFRhotacism [no-change]: *l*áu*g*u
 PNWGmcMnDissimilation [no-change]: *l*áu*g*u
 PNWGmcNStemNLoss [no-change]: *l*áu*g*u
+PGmcNasalLossBeforeX [no-change]: *l*áu*g*u
 EAFNasalSpirantLengthening [no-change]: *l*áu*g*u
 EAFNasalSpirantLoss [no-change]: *l*áu*g*u
 PNWGmcPreconsonantalXLoss [no-change]: *l*áu*g*u
@@ -21112,6 +21289,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*k*ō*j*a*n*ą
 EAFRhotacism [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *m*á*k*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *m*á*k*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *m*á*k*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*k*ō*j*a*n*ą
@@ -21231,6 +21409,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*l*t*a
 EAFRhotacism [no-change]: *m*á*l*t*a
 PNWGmcMnDissimilation [no-change]: *m*á*l*t*a
 PNWGmcNStemNLoss [no-change]: *m*á*l*t*a
+PGmcNasalLossBeforeX [no-change]: *m*á*l*t*a
 EAFNasalSpirantLengthening [no-change]: *m*á*l*t*a
 EAFNasalSpirantLoss [no-change]: *m*á*l*t*a
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*l*t*a
@@ -21350,6 +21529,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*n*n*a*s
 EAFRhotacism [no-change]: *m*á*n*n*a*s
 PNWGmcMnDissimilation [no-change]: *m*á*n*n*a*s
 PNWGmcNStemNLoss [no-change]: *m*á*n*n*a*s
+PGmcNasalLossBeforeX [no-change]: *m*á*n*n*a*s
 EAFNasalSpirantLengthening [no-change]: *m*á*n*n*a*s
 EAFNasalSpirantLoss [no-change]: *m*á*n*n*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*n*n*a*s
@@ -21469,6 +21649,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*r*k*u
 EAFRhotacism [no-change]: *m*á*r*k*u
 PNWGmcMnDissimilation [no-change]: *m*á*r*k*u
 PNWGmcNStemNLoss [no-change]: *m*á*r*k*u
+PGmcNasalLossBeforeX [no-change]: *m*á*r*k*u
 EAFNasalSpirantLengthening [no-change]: *m*á*r*k*u
 EAFNasalSpirantLoss [no-change]: *m*á*r*k*u
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*r*k*u
@@ -21588,6 +21769,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*s*t*a
 EAFRhotacism [no-change]: *m*á*s*t*a
 PNWGmcMnDissimilation [no-change]: *m*á*s*t*a
 PNWGmcNStemNLoss [no-change]: *m*á*s*t*a
+PGmcNasalLossBeforeX [no-change]: *m*á*s*t*a
 EAFNasalSpirantLengthening [no-change]: *m*á*s*t*a
 EAFNasalSpirantLoss [no-change]: *m*á*s*t*a
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*s*t*a
@@ -21707,6 +21889,7 @@ MonosyllabicFinalZLoss [no-change]: *m*ā*l*ą
 EAFRhotacism [no-change]: *m*ā*l*ą
 PNWGmcMnDissimilation [no-change]: *m*ā*l*ą
 PNWGmcNStemNLoss [no-change]: *m*ā*l*ą
+PGmcNasalLossBeforeX [no-change]: *m*ā*l*ą
 EAFNasalSpirantLengthening [no-change]: *m*ā*l*ą
 EAFNasalSpirantLoss [no-change]: *m*ā*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *m*ā*l*ą
@@ -21826,6 +22009,7 @@ MonosyllabicFinalZLoss [no-change]: *m*ái*n*i*j*a*n*ą
 EAFRhotacism [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *m*ái*n*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *m*ái*n*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *m*ái*n*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *m*ái*n*i*j*a*n*ą
@@ -21945,6 +22129,7 @@ MonosyllabicFinalZLoss [no-change]: *m*é*z*d*ē
 EAFRhotacism: *m*é*r*d*ē
 PNWGmcMnDissimilation [no-change]: *m*é*r*d*ē
 PNWGmcNStemNLoss [no-change]: *m*é*r*d*ē
+PGmcNasalLossBeforeX [no-change]: *m*é*r*d*ē
 EAFNasalSpirantLengthening [no-change]: *m*é*r*d*ē
 EAFNasalSpirantLoss [no-change]: *m*é*r*d*ē
 PNWGmcPreconsonantalXLoss [no-change]: *m*é*r*d*ē
@@ -22064,6 +22249,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*x*t*i
 EAFRhotacism [no-change]: *m*á*x*t*i
 PNWGmcMnDissimilation [no-change]: *m*á*x*t*i
 PNWGmcNStemNLoss [no-change]: *m*á*x*t*i
+PGmcNasalLossBeforeX [no-change]: *m*á*x*t*i
 EAFNasalSpirantLengthening [no-change]: *m*á*x*t*i
 EAFNasalSpirantLoss [no-change]: *m*á*x*t*i
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*x*t*i
@@ -22183,6 +22369,7 @@ MonosyllabicFinalZLoss [no-change]: *m*é*l*u*k
 EAFRhotacism [no-change]: *m*é*l*u*k
 PNWGmcMnDissimilation [no-change]: *m*é*l*u*k
 PNWGmcNStemNLoss [no-change]: *m*é*l*u*k
+PGmcNasalLossBeforeX [no-change]: *m*é*l*u*k
 EAFNasalSpirantLengthening [no-change]: *m*é*l*u*k
 EAFNasalSpirantLoss [no-change]: *m*é*l*u*k
 PNWGmcPreconsonantalXLoss [no-change]: *m*é*l*u*k
@@ -22302,6 +22489,7 @@ MonosyllabicFinalZLoss [no-change]: *m*ā*n*ō*θ
 EAFRhotacism [no-change]: *m*ā*n*ō*θ
 PNWGmcMnDissimilation [no-change]: *m*ā*n*ō*θ
 PNWGmcNStemNLoss [no-change]: *m*ā*n*ō*θ
+PGmcNasalLossBeforeX [no-change]: *m*ā*n*ō*θ
 EAFNasalSpirantLengthening [no-change]: *m*ā*n*ō*θ
 EAFNasalSpirantLoss [no-change]: *m*ā*n*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *m*ā*n*ō*θ
@@ -22421,6 +22609,7 @@ MonosyllabicFinalZLoss [no-change]: *m*ō*d*a
 EAFRhotacism [no-change]: *m*ō*d*a
 PNWGmcMnDissimilation [no-change]: *m*ō*d*a
 PNWGmcNStemNLoss [no-change]: *m*ō*d*a
+PGmcNasalLossBeforeX [no-change]: *m*ō*d*a
 EAFNasalSpirantLengthening [no-change]: *m*ō*d*a
 EAFNasalSpirantLoss [no-change]: *m*ō*d*a
 PNWGmcPreconsonantalXLoss [no-change]: *m*ō*d*a
@@ -22540,6 +22729,7 @@ MonosyllabicFinalZLoss [no-change]: *m*ō*d*ē*r
 EAFRhotacism [no-change]: *m*ō*d*ē*r
 PNWGmcMnDissimilation [no-change]: *m*ō*d*ē*r
 PNWGmcNStemNLoss [no-change]: *m*ō*d*ē*r
+PGmcNasalLossBeforeX [no-change]: *m*ō*d*ē*r
 EAFNasalSpirantLengthening [no-change]: *m*ō*d*ē*r
 EAFNasalSpirantLoss [no-change]: *m*ō*d*ē*r
 PNWGmcPreconsonantalXLoss [no-change]: *m*ō*d*ē*r
@@ -22659,6 +22849,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*g*l*a
 EAFRhotacism [no-change]: *n*á*g*l*a
 PNWGmcMnDissimilation [no-change]: *n*á*g*l*a
 PNWGmcNStemNLoss [no-change]: *n*á*g*l*a
+PGmcNasalLossBeforeX [no-change]: *n*á*g*l*a
 EAFNasalSpirantLengthening [no-change]: *n*á*g*l*a
 EAFNasalSpirantLoss [no-change]: *n*á*g*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*g*l*a
@@ -22778,6 +22969,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*m*ô
 EAFRhotacism [no-change]: *n*á*m*ô
 PNWGmcMnDissimilation [no-change]: *n*á*m*ô
 PNWGmcNStemNLoss [no-change]: *n*á*m*ô
+PGmcNasalLossBeforeX [no-change]: *n*á*m*ô
 EAFNasalSpirantLengthening [no-change]: *n*á*m*ô
 EAFNasalSpirantLoss [no-change]: *n*á*m*ô
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*m*ô
@@ -22897,6 +23089,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*b*u
 EAFRhotacism [no-change]: *n*á*b*u
 PNWGmcMnDissimilation [no-change]: *n*á*b*u
 PNWGmcNStemNLoss [no-change]: *n*á*b*u
+PGmcNasalLossBeforeX [no-change]: *n*á*b*u
 EAFNasalSpirantLengthening [no-change]: *n*á*b*u
 EAFNasalSpirantLoss [no-change]: *n*á*b*u
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*b*u
@@ -23016,6 +23209,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*b*u*l*ô
 EAFRhotacism [no-change]: *n*á*b*u*l*ô
 PNWGmcMnDissimilation [no-change]: *n*á*b*u*l*ô
 PNWGmcNStemNLoss [no-change]: *n*á*b*u*l*ô
+PGmcNasalLossBeforeX [no-change]: *n*á*b*u*l*ô
 EAFNasalSpirantLengthening [no-change]: *n*á*b*u*l*ô
 EAFNasalSpirantLoss [no-change]: *n*á*b*u*l*ô
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*b*u*l*ô
@@ -23135,6 +23329,7 @@ MonosyllabicFinalZLoss [no-change]: *x*n*é*k*k*ô
 EAFRhotacism [no-change]: *x*n*é*k*k*ô
 PNWGmcMnDissimilation [no-change]: *x*n*é*k*k*ô
 PNWGmcNStemNLoss [no-change]: *x*n*é*k*k*ô
+PGmcNasalLossBeforeX [no-change]: *x*n*é*k*k*ô
 EAFNasalSpirantLengthening [no-change]: *x*n*é*k*k*ô
 EAFNasalSpirantLoss [no-change]: *x*n*é*k*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *x*n*é*k*k*ô
@@ -23254,6 +23449,7 @@ MonosyllabicFinalZLoss [no-change]: *n*áu*d*i
 EAFRhotacism [no-change]: *n*áu*d*i
 PNWGmcMnDissimilation [no-change]: *n*áu*d*i
 PNWGmcNStemNLoss [no-change]: *n*áu*d*i
+PGmcNasalLossBeforeX [no-change]: *n*áu*d*i
 EAFNasalSpirantLengthening [no-change]: *n*áu*d*i
 EAFNasalSpirantLoss [no-change]: *n*áu*d*i
 PNWGmcPreconsonantalXLoss [no-change]: *n*áu*d*i
@@ -23373,6 +23569,7 @@ MonosyllabicFinalZLoss [no-change]: *n*ā*d*l*u
 EAFRhotacism [no-change]: *n*ā*d*l*u
 PNWGmcMnDissimilation [no-change]: *n*ā*d*l*u
 PNWGmcNStemNLoss [no-change]: *n*ā*d*l*u
+PGmcNasalLossBeforeX [no-change]: *n*ā*d*l*u
 EAFNasalSpirantLengthening [no-change]: *n*ā*d*l*u
 EAFNasalSpirantLoss [no-change]: *n*ā*d*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *n*ā*d*l*u
@@ -23492,6 +23689,7 @@ MonosyllabicFinalZLoss [no-change]: *n*é*s*t*ą
 EAFRhotacism [no-change]: *n*é*s*t*ą
 PNWGmcMnDissimilation [no-change]: *n*é*s*t*ą
 PNWGmcNStemNLoss [no-change]: *n*é*s*t*ą
+PGmcNasalLossBeforeX [no-change]: *n*é*s*t*ą
 EAFNasalSpirantLengthening [no-change]: *n*é*s*t*ą
 EAFNasalSpirantLoss [no-change]: *n*é*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *n*é*s*t*ą
@@ -23611,6 +23809,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*t*t*j*ą
 EAFRhotacism [no-change]: *n*á*t*t*j*ą
 PNWGmcMnDissimilation [no-change]: *n*á*t*t*j*ą
 PNWGmcNStemNLoss [no-change]: *n*á*t*t*j*ą
+PGmcNasalLossBeforeX [no-change]: *n*á*t*t*j*ą
 EAFNasalSpirantLengthening [no-change]: *n*á*t*t*j*ą
 EAFNasalSpirantLoss [no-change]: *n*á*t*t*j*ą
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*t*t*j*ą
@@ -23730,6 +23929,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*t*i*l*ō*n
 EAFRhotacism [no-change]: *n*á*t*i*l*ō*n
 PNWGmcMnDissimilation [no-change]: *n*á*t*i*l*ō*n
 PNWGmcNStemNLoss: *n*á*t*i*l*ǭ
+PGmcNasalLossBeforeX [no-change]: *n*á*t*i*l*ǭ
 EAFNasalSpirantLengthening [no-change]: *n*á*t*i*l*ǭ
 EAFNasalSpirantLoss [no-change]: *n*á*t*i*l*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*t*i*l*ǭ
@@ -23849,6 +24049,7 @@ MonosyllabicFinalZLoss [no-change]: *n*á*x*t*i
 EAFRhotacism [no-change]: *n*á*x*t*i
 PNWGmcMnDissimilation [no-change]: *n*á*x*t*i
 PNWGmcNStemNLoss [no-change]: *n*á*x*t*i
+PGmcNasalLossBeforeX [no-change]: *n*á*x*t*i
 EAFNasalSpirantLengthening [no-change]: *n*á*x*t*i
 EAFNasalSpirantLoss [no-change]: *n*á*x*t*i
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*x*t*i
@@ -23968,6 +24169,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*r*ō*n
 EAFRhotacism [no-change]: *m*á*r*ō*n
 PNWGmcMnDissimilation [no-change]: *m*á*r*ō*n
 PNWGmcNStemNLoss: *m*á*r*ǭ
+PGmcNasalLossBeforeX [no-change]: *m*á*r*ǭ
 EAFNasalSpirantLengthening [no-change]: *m*á*r*ǭ
 EAFNasalSpirantLoss [no-change]: *m*á*r*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*r*ǭ
@@ -24087,6 +24289,7 @@ MonosyllabicFinalZLoss [no-change]: *n*í*g*u*n
 EAFRhotacism [no-change]: *n*í*g*u*n
 PNWGmcMnDissimilation [no-change]: *n*í*g*u*n
 PNWGmcNStemNLoss [no-change]: *n*í*g*u*n
+PGmcNasalLossBeforeX [no-change]: *n*í*g*u*n
 EAFNasalSpirantLengthening [no-change]: *n*í*g*u*n
 EAFNasalSpirantLoss [no-change]: *n*í*g*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *n*í*g*u*n
@@ -24206,6 +24409,7 @@ MonosyllabicFinalZLoss [no-change]: *n*ó*s*u
 EAFRhotacism [no-change]: *n*ó*s*u
 PNWGmcMnDissimilation [no-change]: *n*ó*s*u
 PNWGmcNStemNLoss [no-change]: *n*ó*s*u
+PGmcNasalLossBeforeX [no-change]: *n*ó*s*u
 EAFNasalSpirantLengthening [no-change]: *n*ó*s*u
 EAFNasalSpirantLoss [no-change]: *n*ó*s*u
 PNWGmcPreconsonantalXLoss [no-change]: *n*ó*s*u
@@ -24325,6 +24529,7 @@ MonosyllabicFinalZLoss [no-change]: *ái*n*a
 EAFRhotacism [no-change]: *ái*n*a
 PNWGmcMnDissimilation [no-change]: *ái*n*a
 PNWGmcNStemNLoss [no-change]: *ái*n*a
+PGmcNasalLossBeforeX [no-change]: *ái*n*a
 EAFNasalSpirantLengthening [no-change]: *ái*n*a
 EAFNasalSpirantLoss [no-change]: *ái*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *ái*n*a
@@ -24444,6 +24649,7 @@ MonosyllabicFinalZLoss [no-change]: *ó*f*n*a
 EAFRhotacism [no-change]: *ó*f*n*a
 PNWGmcMnDissimilation [no-change]: *ó*f*n*a
 PNWGmcNStemNLoss [no-change]: *ó*f*n*a
+PGmcNasalLossBeforeX [no-change]: *ó*f*n*a
 EAFNasalSpirantLengthening [no-change]: *ó*f*n*a
 EAFNasalSpirantLoss [no-change]: *ó*f*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *ó*f*n*a
@@ -24563,6 +24769,7 @@ MonosyllabicFinalZLoss [no-change]: *ó*x*s*ô
 EAFRhotacism [no-change]: *ó*x*s*ô
 PNWGmcMnDissimilation [no-change]: *ó*x*s*ô
 PNWGmcNStemNLoss [no-change]: *ó*x*s*ô
+PGmcNasalLossBeforeX [no-change]: *ó*x*s*ô
 EAFNasalSpirantLengthening [no-change]: *ó*x*s*ô
 EAFNasalSpirantLoss [no-change]: *ó*x*s*ô
 PNWGmcPreconsonantalXLoss [no-change]: *ó*x*s*ô
@@ -24682,6 +24889,7 @@ MonosyllabicFinalZLoss [no-change]: *r*é*g*n*ą
 EAFRhotacism [no-change]: *r*é*g*n*ą
 PNWGmcMnDissimilation [no-change]: *r*é*g*n*ą
 PNWGmcNStemNLoss [no-change]: *r*é*g*n*ą
+PGmcNasalLossBeforeX [no-change]: *r*é*g*n*ą
 EAFNasalSpirantLengthening [no-change]: *r*é*g*n*ą
 EAFNasalSpirantLoss [no-change]: *r*é*g*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*é*g*n*ą
@@ -24801,6 +25009,7 @@ MonosyllabicFinalZLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
 EAFRhotacism [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcMnDissimilation [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcNStemNLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
+PGmcNasalLossBeforeX [no-change]: *r*é*g*n*a*b*ù*g*ô
 EAFNasalSpirantLengthening [no-change]: *r*é*g*n*a*b*ù*g*ô
 EAFNasalSpirantLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcPreconsonantalXLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
@@ -24920,6 +25129,7 @@ MonosyllabicFinalZLoss [no-change]: *x*r*á*b*n*a
 EAFRhotacism [no-change]: *x*r*á*b*n*a
 PNWGmcMnDissimilation [no-change]: *x*r*á*b*n*a
 PNWGmcNStemNLoss [no-change]: *x*r*á*b*n*a
+PGmcNasalLossBeforeX [no-change]: *x*r*á*b*n*a
 EAFNasalSpirantLengthening [no-change]: *x*r*á*b*n*a
 EAFNasalSpirantLoss [no-change]: *x*r*á*b*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*r*á*b*n*a
@@ -25039,6 +25249,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ā*d*a*n*ą
 EAFRhotacism [no-change]: *r*ā*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *r*ā*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *r*ā*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *r*ā*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *r*ā*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *r*ā*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ā*d*a*n*ą
@@ -25158,6 +25369,7 @@ MonosyllabicFinalZLoss [no-change]: *r*áu*k*a
 EAFRhotacism [no-change]: *r*áu*k*a
 PNWGmcMnDissimilation [no-change]: *r*áu*k*a
 PNWGmcNStemNLoss [no-change]: *r*áu*k*a
+PGmcNasalLossBeforeX [no-change]: *r*áu*k*a
 EAFNasalSpirantLengthening [no-change]: *r*áu*k*a
 EAFNasalSpirantLoss [no-change]: *r*áu*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *r*áu*k*a
@@ -25277,6 +25489,7 @@ MonosyllabicFinalZLoss [no-change]: *r*á*s*t*ō
 EAFRhotacism [no-change]: *r*á*s*t*ō
 PNWGmcMnDissimilation [no-change]: *r*á*s*t*ō
 PNWGmcNStemNLoss [no-change]: *r*á*s*t*ō
+PGmcNasalLossBeforeX [no-change]: *r*á*s*t*ō
 EAFNasalSpirantLengthening [no-change]: *r*á*s*t*ō
 EAFNasalSpirantLoss [no-change]: *r*á*s*t*ō
 PNWGmcPreconsonantalXLoss [no-change]: *r*á*s*t*ō
@@ -25396,6 +25609,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ḯ*d*a*n*ą
 EAFRhotacism [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *r*ḯ*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *r*ḯ*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *r*ḯ*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ḯ*d*a*n*ą
@@ -25515,6 +25729,7 @@ MonosyllabicFinalZLoss [no-change]: *r*í*n*d*u
 EAFRhotacism [no-change]: *r*í*n*d*u
 PNWGmcMnDissimilation [no-change]: *r*í*n*d*u
 PNWGmcNStemNLoss [no-change]: *r*í*n*d*u
+PGmcNasalLossBeforeX [no-change]: *r*í*n*d*u
 EAFNasalSpirantLengthening [no-change]: *r*í*n*d*u
 EAFNasalSpirantLoss [no-change]: *r*í*n*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *r*í*n*d*u
@@ -25634,6 +25849,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ó*k*k*a
 EAFRhotacism [no-change]: *r*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *r*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *r*ó*k*k*a
+PGmcNasalLossBeforeX [no-change]: *r*ó*k*k*a
 EAFNasalSpirantLengthening [no-change]: *r*ó*k*k*a
 EAFNasalSpirantLoss [no-change]: *r*ó*k*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *r*ó*k*k*a
@@ -25753,6 +25969,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ō*d*u
 EAFRhotacism [no-change]: *r*ō*d*u
 PNWGmcMnDissimilation [no-change]: *r*ō*d*u
 PNWGmcNStemNLoss [no-change]: *r*ō*d*u
+PGmcNasalLossBeforeX [no-change]: *r*ō*d*u
 EAFNasalSpirantLengthening [no-change]: *r*ō*d*u
 EAFNasalSpirantLoss [no-change]: *r*ō*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *r*ō*d*u
@@ -25872,6 +26089,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ū*m*ą
 EAFRhotacism [no-change]: *r*ū*m*ą
 PNWGmcMnDissimilation [no-change]: *r*ū*m*ą
 PNWGmcNStemNLoss [no-change]: *r*ū*m*ą
+PGmcNasalLossBeforeX [no-change]: *r*ū*m*ą
 EAFNasalSpirantLengthening [no-change]: *r*ū*m*ą
 EAFNasalSpirantLoss [no-change]: *r*ū*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ū*m*ą
@@ -25991,6 +26209,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ái*p*ą
 EAFRhotacism [no-change]: *r*ái*p*ą
 PNWGmcMnDissimilation [no-change]: *r*ái*p*ą
 PNWGmcNStemNLoss [no-change]: *r*ái*p*ą
+PGmcNasalLossBeforeX [no-change]: *r*ái*p*ą
 EAFNasalSpirantLengthening [no-change]: *r*ái*p*ą
 EAFNasalSpirantLoss [no-change]: *r*ái*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ái*p*ą
@@ -26110,6 +26329,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ō*θ*r*a
 EAFRhotacism [no-change]: *r*ō*θ*r*a
 PNWGmcMnDissimilation [no-change]: *r*ō*θ*r*a
 PNWGmcNStemNLoss [no-change]: *r*ō*θ*r*a
+PGmcNasalLossBeforeX [no-change]: *r*ō*θ*r*a
 EAFNasalSpirantLengthening [no-change]: *r*ō*θ*r*a
 EAFNasalSpirantLoss [no-change]: *r*ō*θ*r*a
 PNWGmcPreconsonantalXLoss [no-change]: *r*ō*θ*r*a
@@ -26229,6 +26449,7 @@ MonosyllabicFinalZLoss [no-change]: *r*í*n*n*a*n*ą
 EAFRhotacism [no-change]: *r*í*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *r*í*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *r*í*n*n*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *r*í*n*n*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *r*í*n*n*a*n*ą
 EAFNasalSpirantLoss [no-change]: *r*í*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*í*n*n*a*n*ą
@@ -26348,6 +26569,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ú*g*i
 EAFRhotacism [no-change]: *r*ú*g*i
 PNWGmcMnDissimilation [no-change]: *r*ú*g*i
 PNWGmcNStemNLoss [no-change]: *r*ú*g*i
+PGmcNasalLossBeforeX [no-change]: *r*ú*g*i
 EAFNasalSpirantLengthening [no-change]: *r*ú*g*i
 EAFNasalSpirantLoss [no-change]: *r*ú*g*i
 PNWGmcPreconsonantalXLoss [no-change]: *r*ú*g*i
@@ -26467,6 +26689,7 @@ MonosyllabicFinalZLoss [no-change]: *s*é*g*l*ą
 EAFRhotacism [no-change]: *s*é*g*l*ą
 PNWGmcMnDissimilation [no-change]: *s*é*g*l*ą
 PNWGmcNStemNLoss [no-change]: *s*é*g*l*ą
+PGmcNasalLossBeforeX [no-change]: *s*é*g*l*ą
 EAFNasalSpirantLengthening [no-change]: *s*é*g*l*ą
 EAFNasalSpirantLoss [no-change]: *s*é*g*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*g*l*ą
@@ -26586,6 +26809,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*k*u
 EAFRhotacism [no-change]: *s*á*k*u
 PNWGmcMnDissimilation [no-change]: *s*á*k*u
 PNWGmcNStemNLoss [no-change]: *s*á*k*u
+PGmcNasalLossBeforeX [no-change]: *s*á*k*u
 EAFNasalSpirantLengthening [no-change]: *s*á*k*u
 EAFNasalSpirantLoss [no-change]: *s*á*k*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*k*u
@@ -26705,6 +26929,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*l*t*ą
 EAFRhotacism [no-change]: *s*á*l*t*ą
 PNWGmcMnDissimilation [no-change]: *s*á*l*t*ą
 PNWGmcNStemNLoss [no-change]: *s*á*l*t*ą
+PGmcNasalLossBeforeX [no-change]: *s*á*l*t*ą
 EAFNasalSpirantLengthening [no-change]: *s*á*l*t*ą
 EAFNasalSpirantLoss [no-change]: *s*á*l*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*l*t*ą
@@ -26824,6 +27049,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*l*b*u
 EAFRhotacism [no-change]: *s*á*l*b*u
 PNWGmcMnDissimilation [no-change]: *s*á*l*b*u
 PNWGmcNStemNLoss [no-change]: *s*á*l*b*u
+PGmcNasalLossBeforeX [no-change]: *s*á*l*b*u
 EAFNasalSpirantLengthening [no-change]: *s*á*l*b*u
 EAFNasalSpirantLoss [no-change]: *s*á*l*b*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*l*b*u
@@ -26943,6 +27169,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*p*ą
 EAFRhotacism [no-change]: *s*á*p*ą
 PNWGmcMnDissimilation [no-change]: *s*á*p*ą
 PNWGmcNStemNLoss [no-change]: *s*á*p*ą
+PGmcNasalLossBeforeX [no-change]: *s*á*p*ą
 EAFNasalSpirantLengthening [no-change]: *s*á*p*ą
 EAFNasalSpirantLoss [no-change]: *s*á*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*p*ą
@@ -27062,6 +27289,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ái*w*i
 EAFRhotacism [no-change]: *s*ái*w*i
 PNWGmcMnDissimilation [no-change]: *s*ái*w*i
 PNWGmcNStemNLoss [no-change]: *s*ái*w*i
+PGmcNasalLossBeforeX [no-change]: *s*ái*w*i
 EAFNasalSpirantLengthening [no-change]: *s*ái*w*i
 EAFNasalSpirantLoss [no-change]: *s*ái*w*i
 PNWGmcPreconsonantalXLoss [no-change]: *s*ái*w*i
@@ -27181,6 +27409,7 @@ MonosyllabicFinalZLoss [no-change]: *s*áu*m*a
 EAFRhotacism [no-change]: *s*áu*m*a
 PNWGmcMnDissimilation [no-change]: *s*áu*m*a
 PNWGmcNStemNLoss [no-change]: *s*áu*m*a
+PGmcNasalLossBeforeX [no-change]: *s*áu*m*a
 EAFNasalSpirantLengthening [no-change]: *s*áu*m*a
 EAFNasalSpirantLoss [no-change]: *s*áu*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*áu*m*a
@@ -27300,6 +27529,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ō*k*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ō*k*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*ō*k*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*ō*k*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ō*k*i*j*a*n*ą
@@ -27419,6 +27649,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*n*d*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*á*n*d*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*á*n*d*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*á*n*d*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*n*d*i*j*a*n*ą
@@ -27538,6 +27769,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*t*t*j*a*n*ą
 EAFRhotacism [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*á*t*t*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*á*t*t*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*á*t*t*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*t*t*j*a*n*ą
@@ -27657,6 +27889,7 @@ MonosyllabicFinalZLoss [no-change]: *s*é*b*u*n
 EAFRhotacism [no-change]: *s*é*b*u*n
 PNWGmcMnDissimilation [no-change]: *s*é*b*u*n
 PNWGmcNStemNLoss [no-change]: *s*é*b*u*n
+PGmcNasalLossBeforeX [no-change]: *s*é*b*u*n
 EAFNasalSpirantLengthening [no-change]: *s*é*b*u*n
 EAFNasalSpirantLoss [no-change]: *s*é*b*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*b*u*n
@@ -27776,6 +28009,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*á*f*t*ą
 EAFRhotacism [no-change]: *s*k*á*f*t*ą
 PNWGmcMnDissimilation [no-change]: *s*k*á*f*t*ą
 PNWGmcNStemNLoss [no-change]: *s*k*á*f*t*ą
+PGmcNasalLossBeforeX [no-change]: *s*k*á*f*t*ą
 EAFNasalSpirantLengthening [no-change]: *s*k*á*f*t*ą
 EAFNasalSpirantLoss [no-change]: *s*k*á*f*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*f*t*ą
@@ -27895,6 +28129,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*á*m*u
 EAFRhotacism [no-change]: *s*k*á*m*u
 PNWGmcMnDissimilation [no-change]: *s*k*á*m*u
 PNWGmcNStemNLoss [no-change]: *s*k*á*m*u
+PGmcNasalLossBeforeX [no-change]: *s*k*á*m*u
 EAFNasalSpirantLengthening [no-change]: *s*k*á*m*u
 EAFNasalSpirantLoss [no-change]: *s*k*á*m*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*m*u
@@ -28014,6 +28249,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*é*r*a*n*ą
 EAFRhotacism [no-change]: *s*k*é*r*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*k*é*r*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*k*é*r*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*k*é*r*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*k*é*r*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*k*é*r*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*é*r*a*n*ą
@@ -28133,6 +28369,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*ái*θ*i
 EAFRhotacism [no-change]: *s*k*ái*θ*i
 PNWGmcMnDissimilation [no-change]: *s*k*ái*θ*i
 PNWGmcNStemNLoss [no-change]: *s*k*ái*θ*i
+PGmcNasalLossBeforeX [no-change]: *s*k*ái*θ*i
 EAFNasalSpirantLengthening [no-change]: *s*k*ái*θ*i
 EAFNasalSpirantLoss [no-change]: *s*k*ái*θ*i
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ái*θ*i
@@ -28252,6 +28489,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*ā*p*ą
 EAFRhotacism [no-change]: *s*k*ā*p*ą
 PNWGmcMnDissimilation [no-change]: *s*k*ā*p*ą
 PNWGmcNStemNLoss [no-change]: *s*k*ā*p*ą
+PGmcNasalLossBeforeX [no-change]: *s*k*ā*p*ą
 EAFNasalSpirantLengthening [no-change]: *s*k*ā*p*ą
 EAFNasalSpirantLoss [no-change]: *s*k*ā*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ā*p*ą
@@ -28371,6 +28609,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*é*l*d*u
 EAFRhotacism [no-change]: *s*k*é*l*d*u
 PNWGmcMnDissimilation [no-change]: *s*k*é*l*d*u
 PNWGmcNStemNLoss [no-change]: *s*k*é*l*d*u
+PGmcNasalLossBeforeX [no-change]: *s*k*é*l*d*u
 EAFNasalSpirantLengthening [no-change]: *s*k*é*l*d*u
 EAFNasalSpirantLoss [no-change]: *s*k*é*l*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*é*l*d*u
@@ -28490,6 +28729,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*í*l*l*i*n*g*a
 EAFRhotacism [no-change]: *s*k*í*l*l*i*n*g*a
 PNWGmcMnDissimilation [no-change]: *s*k*í*l*l*i*n*g*a
 PNWGmcNStemNLoss [no-change]: *s*k*í*l*l*i*n*g*a
+PGmcNasalLossBeforeX [no-change]: *s*k*í*l*l*i*n*g*a
 EAFNasalSpirantLengthening [no-change]: *s*k*í*l*l*i*n*g*a
 EAFNasalSpirantLoss [no-change]: *s*k*í*l*l*i*n*g*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*í*l*l*i*n*g*a
@@ -28609,6 +28849,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*ḯ*n*a*n*ą
 EAFRhotacism [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*k*ḯ*n*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*k*ḯ*n*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*k*ḯ*n*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ḯ*n*a*n*ą
@@ -28728,6 +28969,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*ú*l*d*r*u*m
 EAFRhotacism [no-change]: *s*k*ú*l*d*r*u*m
 PNWGmcMnDissimilation [no-change]: *s*k*ú*l*d*r*u*m
 PNWGmcNStemNLoss [no-change]: *s*k*ú*l*d*r*u*m
+PGmcNasalLossBeforeX [no-change]: *s*k*ú*l*d*r*u*m
 EAFNasalSpirantLengthening [no-change]: *s*k*ú*l*d*r*u*m
 EAFNasalSpirantLoss [no-change]: *s*k*ú*l*d*r*u*m
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ú*l*d*r*u*m
@@ -28847,6 +29089,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*áu*b
 EAFRhotacism [no-change]: *s*k*áu*b
 PNWGmcMnDissimilation [no-change]: *s*k*áu*b
 PNWGmcNStemNLoss [no-change]: *s*k*áu*b
+PGmcNasalLossBeforeX [no-change]: *s*k*áu*b
 EAFNasalSpirantLengthening [no-change]: *s*k*áu*b
 EAFNasalSpirantLoss [no-change]: *s*k*áu*b
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*áu*b
@@ -28966,6 +29209,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*ó*f*l*u
 EAFRhotacism [no-change]: *s*k*ó*f*l*u
 PNWGmcMnDissimilation [no-change]: *s*k*ó*f*l*u
 PNWGmcNStemNLoss [no-change]: *s*k*ó*f*l*u
+PGmcNasalLossBeforeX [no-change]: *s*k*ó*f*l*u
 EAFNasalSpirantLengthening [no-change]: *s*k*ó*f*l*u
 EAFNasalSpirantLoss [no-change]: *s*k*ó*f*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ó*f*l*u
@@ -29085,6 +29329,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
 EAFRhotacism [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*k*á*w*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*k*á*w*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
@@ -29204,6 +29449,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*ū*r*u
 EAFRhotacism [no-change]: *s*k*ū*r*u
 PNWGmcMnDissimilation [no-change]: *s*k*ū*r*u
 PNWGmcNStemNLoss [no-change]: *s*k*ū*r*u
+PGmcNasalLossBeforeX [no-change]: *s*k*ū*r*u
 EAFNasalSpirantLengthening [no-change]: *s*k*ū*r*u
 EAFNasalSpirantLoss [no-change]: *s*k*ū*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ū*r*u
@@ -29323,6 +29569,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ḯ*d*ō*n
 EAFRhotacism [no-change]: *s*ḯ*d*ō*n
 PNWGmcMnDissimilation [no-change]: *s*ḯ*d*ō*n
 PNWGmcNStemNLoss: *s*ḯ*d*ǭ
+PGmcNasalLossBeforeX [no-change]: *s*ḯ*d*ǭ
 EAFNasalSpirantLengthening [no-change]: *s*ḯ*d*ǭ
 EAFNasalSpirantLoss [no-change]: *s*ḯ*d*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *s*ḯ*d*ǭ
@@ -29442,6 +29689,7 @@ MonosyllabicFinalZLoss [no-change]: *s*í*b*i
 EAFRhotacism [no-change]: *s*í*b*i
 PNWGmcMnDissimilation [no-change]: *s*í*b*i
 PNWGmcNStemNLoss [no-change]: *s*í*b*i
+PGmcNasalLossBeforeX [no-change]: *s*í*b*i
 EAFNasalSpirantLengthening [no-change]: *s*í*b*i
 EAFNasalSpirantLoss [no-change]: *s*í*b*i
 PNWGmcPreconsonantalXLoss [no-change]: *s*í*b*i
@@ -29561,6 +29809,7 @@ MonosyllabicFinalZLoss [no-change]: *s*í*n*g*w*a*n*ą
 EAFRhotacism [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*í*n*g*w*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*í*n*g*w*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*í*n*g*w*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*í*n*g*w*a*n*ą
@@ -29680,6 +29929,7 @@ MonosyllabicFinalZLoss [no-change]: *s*á*n*g*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*á*n*g*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*á*n*g*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*á*n*g*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*n*g*i*j*a*n*ą
@@ -29799,6 +30049,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*é*s*t*ē*r
 EAFRhotacism [no-change]: *s*w*é*s*t*ē*r
 PNWGmcMnDissimilation [no-change]: *s*w*é*s*t*ē*r
 PNWGmcNStemNLoss [no-change]: *s*w*é*s*t*ē*r
+PGmcNasalLossBeforeX [no-change]: *s*w*é*s*t*ē*r
 EAFNasalSpirantLengthening [no-change]: *s*w*é*s*t*ē*r
 EAFNasalSpirantLoss [no-change]: *s*w*é*s*t*ē*r
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*é*s*t*ē*r
@@ -29918,6 +30169,7 @@ MonosyllabicFinalZLoss [no-change]: *s*é*t*t*j*a*n*ą
 EAFRhotacism [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*é*t*t*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*é*t*t*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*é*t*t*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*t*t*j*a*n*ą
@@ -30037,6 +30289,7 @@ MonosyllabicFinalZLoss [no-change]: *s*é*x*s
 EAFRhotacism [no-change]: *s*é*x*s
 PNWGmcMnDissimilation [no-change]: *s*é*x*s
 PNWGmcNStemNLoss [no-change]: *s*é*x*s
+PGmcNasalLossBeforeX [no-change]: *s*é*x*s
 EAFNasalSpirantLengthening [no-change]: *s*é*x*s
 EAFNasalSpirantLoss [no-change]: *s*é*x*s
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*x*s
@@ -30156,6 +30409,7 @@ MonosyllabicFinalZLoss [no-change]: *s*l*á*x*a*n*ą
 EAFRhotacism [no-change]: *s*l*á*x*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*l*á*x*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*l*á*x*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*l*á*x*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*l*á*x*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*l*á*x*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*l*á*x*a*n*ą
@@ -30275,6 +30529,7 @@ MonosyllabicFinalZLoss [no-change]: *s*l*ā*p*a*n*ą
 EAFRhotacism [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*l*ā*p*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*l*ā*p*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*l*ā*p*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*l*ā*p*a*n*ą
@@ -30394,6 +30649,7 @@ MonosyllabicFinalZLoss [no-change]: *s*l*ḯ*m*ą
 EAFRhotacism [no-change]: *s*l*ḯ*m*ą
 PNWGmcMnDissimilation [no-change]: *s*l*ḯ*m*ą
 PNWGmcNStemNLoss [no-change]: *s*l*ḯ*m*ą
+PGmcNasalLossBeforeX [no-change]: *s*l*ḯ*m*ą
 EAFNasalSpirantLengthening [no-change]: *s*l*ḯ*m*ą
 EAFNasalSpirantLoss [no-change]: *s*l*ḯ*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*l*ḯ*m*ą
@@ -30513,6 +30769,7 @@ MonosyllabicFinalZLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*m*é*r*w*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*m*é*r*w*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
@@ -30632,6 +30889,7 @@ MonosyllabicFinalZLoss [no-change]: *s*n*ái*w*a
 EAFRhotacism [no-change]: *s*n*ái*w*a
 PNWGmcMnDissimilation [no-change]: *s*n*ái*w*a
 PNWGmcNStemNLoss [no-change]: *s*n*ái*w*a
+PGmcNasalLossBeforeX [no-change]: *s*n*ái*w*a
 EAFNasalSpirantLengthening [no-change]: *s*n*ái*w*a
 EAFNasalSpirantLoss [no-change]: *s*n*ái*w*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*n*ái*w*a
@@ -30751,6 +31009,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ó*r*g*u
 EAFRhotacism [no-change]: *s*ó*r*g*u
 PNWGmcMnDissimilation [no-change]: *s*ó*r*g*u
 PNWGmcNStemNLoss [no-change]: *s*ó*r*g*u
+PGmcNasalLossBeforeX [no-change]: *s*ó*r*g*u
 EAFNasalSpirantLengthening [no-change]: *s*ó*r*g*u
 EAFNasalSpirantLoss [no-change]: *s*ó*r*g*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*ó*r*g*u
@@ -30870,6 +31129,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ái*w*a*l*u
 EAFRhotacism [no-change]: *s*ái*w*a*l*u
 PNWGmcMnDissimilation [no-change]: *s*ái*w*a*l*u
 PNWGmcNStemNLoss [no-change]: *s*ái*w*a*l*u
+PGmcNasalLossBeforeX [no-change]: *s*ái*w*a*l*u
 EAFNasalSpirantLengthening [no-change]: *s*ái*w*a*l*u
 EAFNasalSpirantLoss [no-change]: *s*ái*w*a*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*ái*w*a*l*u
@@ -30989,6 +31249,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*á*n*n*a*n*ą
 EAFRhotacism [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*á*n*n*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*p*á*n*n*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*p*á*n*n*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*n*n*a*n*ą
@@ -31108,6 +31369,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*á*n*n*ē
 EAFRhotacism [no-change]: *s*p*á*n*n*ē
 PNWGmcMnDissimilation [no-change]: *s*p*á*n*n*ē
 PNWGmcNStemNLoss [no-change]: *s*p*á*n*n*ē
+PGmcNasalLossBeforeX [no-change]: *s*p*á*n*n*ē
 EAFNasalSpirantLengthening [no-change]: *s*p*á*n*n*ē
 EAFNasalSpirantLoss [no-change]: *s*p*á*n*n*ē
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*n*n*ē
@@ -31227,6 +31489,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*á*r*r*ô
 EAFRhotacism [no-change]: *s*p*á*r*r*ô
 PNWGmcMnDissimilation [no-change]: *s*p*á*r*r*ô
 PNWGmcNStemNLoss [no-change]: *s*p*á*r*r*ô
+PGmcNasalLossBeforeX [no-change]: *s*p*á*r*r*ô
 EAFNasalSpirantLengthening [no-change]: *s*p*á*r*r*ô
 EAFNasalSpirantLoss [no-change]: *s*p*á*r*r*ô
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*r*r*ô
@@ -31346,6 +31609,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
 EAFRhotacism [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*p*á*r*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*p*á*r*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
@@ -31465,6 +31729,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*é*r*u
 EAFRhotacism [no-change]: *s*p*é*r*u
 PNWGmcMnDissimilation [no-change]: *s*p*é*r*u
 PNWGmcNStemNLoss [no-change]: *s*p*é*r*u
+PGmcNasalLossBeforeX [no-change]: *s*p*é*r*u
 EAFNasalSpirantLengthening [no-change]: *s*p*é*r*u
 EAFNasalSpirantLoss [no-change]: *s*p*é*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*é*r*u
@@ -31584,6 +31849,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*í*n*n*a*n*ą
 EAFRhotacism [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*í*n*n*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*p*í*n*n*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*p*í*n*n*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*í*n*n*a*n*ą
@@ -31703,6 +31969,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*é*n*n*i*l*u
 EAFRhotacism [no-change]: *s*p*é*n*n*i*l*u
 PNWGmcMnDissimilation [no-change]: *s*p*é*n*n*i*l*u
 PNWGmcNStemNLoss [no-change]: *s*p*é*n*n*i*l*u
+PGmcNasalLossBeforeX [no-change]: *s*p*é*n*n*i*l*u
 EAFNasalSpirantLengthening [no-change]: *s*p*é*n*n*i*l*u
 EAFNasalSpirantLoss [no-change]: *s*p*é*n*n*i*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*é*n*n*i*l*u
@@ -31822,6 +32089,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*ā*n*u
 EAFRhotacism [no-change]: *s*p*ā*n*u
 PNWGmcMnDissimilation [no-change]: *s*p*ā*n*u
 PNWGmcNStemNLoss [no-change]: *s*p*ā*n*u
+PGmcNasalLossBeforeX [no-change]: *s*p*ā*n*u
 EAFNasalSpirantLengthening [no-change]: *s*p*ā*n*u
 EAFNasalSpirantLoss [no-change]: *s*p*ā*n*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*ā*n*u
@@ -31941,6 +32209,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
@@ -32060,6 +32329,7 @@ MonosyllabicFinalZLoss [no-change]: *s*p*ó*r*ô
 EAFRhotacism [no-change]: *s*p*ó*r*ô
 PNWGmcMnDissimilation [no-change]: *s*p*ó*r*ô
 PNWGmcNStemNLoss [no-change]: *s*p*ó*r*ô
+PGmcNasalLossBeforeX [no-change]: *s*p*ó*r*ô
 EAFNasalSpirantLengthening [no-change]: *s*p*ó*r*ô
 EAFNasalSpirantLoss [no-change]: *s*p*ó*r*ô
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*ó*r*ô
@@ -32179,6 +32449,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*á*b*a
 EAFRhotacism [no-change]: *s*t*á*b*a
 PNWGmcMnDissimilation [no-change]: *s*t*á*b*a
 PNWGmcNStemNLoss [no-change]: *s*t*á*b*a
+PGmcNasalLossBeforeX [no-change]: *s*t*á*b*a
 EAFNasalSpirantLengthening [no-change]: *s*t*á*b*a
 EAFNasalSpirantLoss [no-change]: *s*t*á*b*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*á*b*a
@@ -32298,6 +32569,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
@@ -32417,6 +32689,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*é*r*b*a*n*ą
 EAFRhotacism [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*é*r*b*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*é*r*b*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*é*r*b*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*é*r*b*a*n*ą
@@ -32536,6 +32809,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*é*l*a*n*ą
 EAFRhotacism [no-change]: *s*t*é*l*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*é*l*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*é*l*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*é*l*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*é*l*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*t*é*l*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*é*l*a*n*ą
@@ -32655,6 +32929,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*á*m*n*i
 EAFRhotacism [no-change]: *s*t*á*m*n*i
 PNWGmcMnDissimilation: *s*t*á*β*n*i
 PNWGmcNStemNLoss [no-change]: *s*t*á*β*n*i
+PGmcNasalLossBeforeX [no-change]: *s*t*á*β*n*i
 EAFNasalSpirantLengthening [no-change]: *s*t*á*β*n*i
 EAFNasalSpirantLoss [no-change]: *s*t*á*β*n*i
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*á*β*n*i
@@ -32774,6 +33049,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*é*l*l*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*é*l*l*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
@@ -32893,6 +33169,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ó*k*k*a
 EAFRhotacism [no-change]: *s*t*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *s*t*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *s*t*ó*k*k*a
+PGmcNasalLossBeforeX [no-change]: *s*t*ó*k*k*a
 EAFNasalSpirantLengthening [no-change]: *s*t*ó*k*k*a
 EAFNasalSpirantLoss [no-change]: *s*t*ó*k*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ó*k*k*a
@@ -33012,6 +33289,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ái*n*a
 EAFRhotacism [no-change]: *s*t*ái*n*a
 PNWGmcMnDissimilation [no-change]: *s*t*ái*n*a
 PNWGmcNStemNLoss [no-change]: *s*t*ái*n*a
+PGmcNasalLossBeforeX [no-change]: *s*t*ái*n*a
 EAFNasalSpirantLengthening [no-change]: *s*t*ái*n*a
 EAFNasalSpirantLoss [no-change]: *s*t*ái*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ái*n*a
@@ -33131,6 +33409,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ō*l*a
 EAFRhotacism [no-change]: *s*t*ō*l*a
 PNWGmcMnDissimilation [no-change]: *s*t*ō*l*a
 PNWGmcNStemNLoss [no-change]: *s*t*ō*l*a
+PGmcNasalLossBeforeX [no-change]: *s*t*ō*l*a
 EAFNasalSpirantLengthening [no-change]: *s*t*ō*l*a
 EAFNasalSpirantLoss [no-change]: *s*t*ō*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ō*l*a
@@ -33250,6 +33529,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ó*r*k*a
 EAFRhotacism [no-change]: *s*t*ó*r*k*a
 PNWGmcMnDissimilation [no-change]: *s*t*ó*r*k*a
 PNWGmcNStemNLoss [no-change]: *s*t*ó*r*k*a
+PGmcNasalLossBeforeX [no-change]: *s*t*ó*r*k*a
 EAFNasalSpirantLengthening [no-change]: *s*t*ó*r*k*a
 EAFNasalSpirantLoss [no-change]: *s*t*ó*r*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ó*r*k*a
@@ -33369,6 +33649,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ó*r*m*a
 EAFRhotacism [no-change]: *s*t*ó*r*m*a
 PNWGmcMnDissimilation [no-change]: *s*t*ó*r*m*a
 PNWGmcNStemNLoss [no-change]: *s*t*ó*r*m*a
+PGmcNasalLossBeforeX [no-change]: *s*t*ó*r*m*a
 EAFNasalSpirantLengthening [no-change]: *s*t*ó*r*m*a
 EAFNasalSpirantLoss [no-change]: *s*t*ó*r*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ó*r*m*a
@@ -33488,6 +33769,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*r*á*w*ą
 EAFRhotacism [no-change]: *s*t*r*á*w*ą
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*w*ą
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*w*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*r*á*w*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*r*á*w*ą
 EAFNasalSpirantLoss [no-change]: *s*t*r*á*w*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*w*ą
@@ -33607,6 +33889,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*r*áu*m*a
 EAFRhotacism [no-change]: *s*t*r*áu*m*a
 PNWGmcMnDissimilation [no-change]: *s*t*r*áu*m*a
 PNWGmcNStemNLoss [no-change]: *s*t*r*áu*m*a
+PGmcNasalLossBeforeX [no-change]: *s*t*r*áu*m*a
 EAFNasalSpirantLengthening [no-change]: *s*t*r*áu*m*a
 EAFNasalSpirantLoss [no-change]: *s*t*r*áu*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*áu*m*a
@@ -33726,6 +34009,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
@@ -33845,6 +34129,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*r*á*w*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*r*á*w*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*w*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*w*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*r*á*w*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*r*á*w*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*t*r*á*w*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*w*j*a*n*ą
@@ -33964,6 +34249,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*r*á*n*g*i
 EAFRhotacism [no-change]: *s*t*r*á*n*g*i
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*n*g*i
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*n*g*i
+PGmcNasalLossBeforeX [no-change]: *s*t*r*á*n*g*i
 EAFNasalSpirantLengthening [no-change]: *s*t*r*á*n*g*i
 EAFNasalSpirantLoss [no-change]: *s*t*r*á*n*g*i
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*n*g*i
@@ -34083,6 +34369,7 @@ MonosyllabicFinalZLoss [no-change]: *s*t*ō*d*ą
 EAFRhotacism [no-change]: *s*t*ō*d*ą
 PNWGmcMnDissimilation [no-change]: *s*t*ō*d*ą
 PNWGmcNStemNLoss [no-change]: *s*t*ō*d*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*ō*d*ą
 EAFNasalSpirantLengthening [no-change]: *s*t*ō*d*ą
 EAFNasalSpirantLoss [no-change]: *s*t*ō*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ō*d*ą
@@ -34202,6 +34489,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ú*m*a*r*a
 EAFRhotacism [no-change]: *s*ú*m*a*r*a
 PNWGmcMnDissimilation [no-change]: *s*ú*m*a*r*a
 PNWGmcNStemNLoss [no-change]: *s*ú*m*a*r*a
+PGmcNasalLossBeforeX [no-change]: *s*ú*m*a*r*a
 EAFNasalSpirantLengthening [no-change]: *s*ú*m*a*r*a
 EAFNasalSpirantLoss [no-change]: *s*ú*m*a*r*a
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*m*a*r*a
@@ -34321,6 +34609,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ú*n*n*ō*n
 EAFRhotacism [no-change]: *s*ú*n*n*ō*n
 PNWGmcMnDissimilation [no-change]: *s*ú*n*n*ō*n
 PNWGmcNStemNLoss: *s*ú*n*n*ǭ
+PGmcNasalLossBeforeX [no-change]: *s*ú*n*n*ǭ
 EAFNasalSpirantLengthening [no-change]: *s*ú*n*n*ǭ
 EAFNasalSpirantLoss [no-change]: *s*ú*n*n*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*n*n*ǭ
@@ -34440,6 +34729,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 EAFRhotacism [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
@@ -34559,6 +34849,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ū*p*a*n*ą
 EAFRhotacism [no-change]: *s*ū*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ū*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ū*p*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*ū*p*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*ū*p*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*ū*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ū*p*a*n*ą
@@ -34678,6 +34969,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*á*l*w*ō*n
 EAFRhotacism [no-change]: *s*w*á*l*w*ō*n
 PNWGmcMnDissimilation [no-change]: *s*w*á*l*w*ō*n
 PNWGmcNStemNLoss: *s*w*á*l*w*ǭ
+PGmcNasalLossBeforeX [no-change]: *s*w*á*l*w*ǭ
 EAFNasalSpirantLengthening [no-change]: *s*w*á*l*w*ǭ
 EAFNasalSpirantLoss [no-change]: *s*w*á*l*w*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*á*l*w*ǭ
@@ -34797,6 +35089,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*á*n*a*s
 EAFRhotacism [no-change]: *s*w*á*n*a*s
 PNWGmcMnDissimilation [no-change]: *s*w*á*n*a*s
 PNWGmcNStemNLoss [no-change]: *s*w*á*n*a*s
+PGmcNasalLossBeforeX [no-change]: *s*w*á*n*a*s
 EAFNasalSpirantLengthening [no-change]: *s*w*á*n*a*s
 EAFNasalSpirantLoss [no-change]: *s*w*á*n*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*á*n*a*s
@@ -34916,6 +35209,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*é*l*l*a*n*ą
 EAFRhotacism [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*w*é*l*l*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*w*é*l*l*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*w*é*l*l*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*é*l*l*a*n*ą
@@ -35035,6 +35329,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*í*m*m*a*n*ą
 EAFRhotacism [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*w*í*m*m*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*w*í*m*m*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*w*í*m*m*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*í*m*m*a*n*ą
@@ -35154,6 +35449,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*ḯ*n*ą
 EAFRhotacism [no-change]: *s*w*ḯ*n*ą
 PNWGmcMnDissimilation [no-change]: *s*w*ḯ*n*ą
 PNWGmcNStemNLoss [no-change]: *s*w*ḯ*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*w*ḯ*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*w*ḯ*n*ą
 EAFNasalSpirantLoss [no-change]: *s*w*ḯ*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*ḯ*n*ą
@@ -35273,6 +35569,7 @@ MonosyllabicFinalZLoss [no-change]: *s*w*é*r*d*ą
 EAFRhotacism [no-change]: *s*w*é*r*d*ą
 PNWGmcMnDissimilation [no-change]: *s*w*é*r*d*ą
 PNWGmcNStemNLoss [no-change]: *s*w*é*r*d*ą
+PGmcNasalLossBeforeX [no-change]: *s*w*é*r*d*ą
 EAFNasalSpirantLengthening [no-change]: *s*w*é*r*d*ą
 EAFNasalSpirantLoss [no-change]: *s*w*é*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*é*r*d*ą
@@ -35392,6 +35689,7 @@ MonosyllabicFinalZLoss [no-change]: *t*áu*m*a
 EAFRhotacism [no-change]: *t*áu*m*a
 PNWGmcMnDissimilation [no-change]: *t*áu*m*a
 PNWGmcNStemNLoss [no-change]: *t*áu*m*a
+PGmcNasalLossBeforeX [no-change]: *t*áu*m*a
 EAFNasalSpirantLengthening [no-change]: *t*áu*m*a
 EAFNasalSpirantLoss [no-change]: *t*áu*m*a
 PNWGmcPreconsonantalXLoss [no-change]: *t*áu*m*a
@@ -35511,6 +35809,7 @@ MonosyllabicFinalZLoss [no-change]: *t*é*x*u*n
 EAFRhotacism [no-change]: *t*é*x*u*n
 PNWGmcMnDissimilation [no-change]: *t*é*x*u*n
 PNWGmcNStemNLoss [no-change]: *t*é*x*u*n
+PGmcNasalLossBeforeX [no-change]: *t*é*x*u*n
 EAFNasalSpirantLengthening [no-change]: *t*é*x*u*n
 EAFNasalSpirantLoss [no-change]: *t*é*x*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *t*é*x*u*n
@@ -35630,6 +35929,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*é*g*n*a
 EAFRhotacism [no-change]: *θ*é*g*n*a
 PNWGmcMnDissimilation [no-change]: *θ*é*g*n*a
 PNWGmcNStemNLoss [no-change]: *θ*é*g*n*a
+PGmcNasalLossBeforeX [no-change]: *θ*é*g*n*a
 EAFNasalSpirantLengthening [no-change]: *θ*é*g*n*a
 EAFNasalSpirantLoss [no-change]: *θ*é*g*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *θ*é*g*n*a
@@ -35749,6 +36049,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*á*n*k*a
 EAFRhotacism [no-change]: *θ*á*n*k*a
 PNWGmcMnDissimilation [no-change]: *θ*á*n*k*a
 PNWGmcNStemNLoss [no-change]: *θ*á*n*k*a
+PGmcNasalLossBeforeX [no-change]: *θ*á*n*k*a
 EAFNasalSpirantLengthening [no-change]: *θ*á*n*k*a
 EAFNasalSpirantLoss [no-change]: *θ*á*n*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *θ*á*n*k*a
@@ -35868,6 +36169,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*á*k*ą
 EAFRhotacism [no-change]: *θ*á*k*ą
 PNWGmcMnDissimilation [no-change]: *θ*á*k*ą
 PNWGmcNStemNLoss [no-change]: *θ*á*k*ą
+PGmcNasalLossBeforeX [no-change]: *θ*á*k*ą
 EAFNasalSpirantLengthening [no-change]: *θ*á*k*ą
 EAFNasalSpirantLoss [no-change]: *θ*á*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*á*k*ą
@@ -35987,6 +36289,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*éu*b*a
 EAFRhotacism [no-change]: *θ*éu*b*a
 PNWGmcMnDissimilation [no-change]: *θ*éu*b*a
 PNWGmcNStemNLoss [no-change]: *θ*éu*b*a
+PGmcNasalLossBeforeX [no-change]: *θ*éu*b*a
 EAFNasalSpirantLengthening [no-change]: *θ*éu*b*a
 EAFNasalSpirantLoss [no-change]: *θ*éu*b*a
 PNWGmcPreconsonantalXLoss [no-change]: *θ*éu*b*a
@@ -36106,6 +36409,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*í*n*g*ą
 EAFRhotacism [no-change]: *θ*í*n*g*ą
 PNWGmcMnDissimilation [no-change]: *θ*í*n*g*ą
 PNWGmcNStemNLoss [no-change]: *θ*í*n*g*ą
+PGmcNasalLossBeforeX [no-change]: *θ*í*n*g*ą
 EAFNasalSpirantLengthening [no-change]: *θ*í*n*g*ą
 EAFNasalSpirantLoss [no-change]: *θ*í*n*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*í*n*g*ą
@@ -36225,6 +36529,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
 EAFRhotacism [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *θ*á*n*k*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *θ*á*n*k*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
@@ -36344,6 +36649,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*ú*r*s*t*u
 EAFRhotacism [no-change]: *θ*ú*r*s*t*u
 PNWGmcMnDissimilation [no-change]: *θ*ú*r*s*t*u
 PNWGmcNStemNLoss [no-change]: *θ*ú*r*s*t*u
+PGmcNasalLossBeforeX [no-change]: *θ*ú*r*s*t*u
 EAFNasalSpirantLengthening [no-change]: *θ*ú*r*s*t*u
 EAFNasalSpirantLoss [no-change]: *θ*ú*r*s*t*u
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ú*r*s*t*u
@@ -36463,6 +36769,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*í*s*t*i*l*a*s
 EAFRhotacism [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcMnDissimilation [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcNStemNLoss [no-change]: *θ*í*s*t*i*l*a*s
+PGmcNasalLossBeforeX [no-change]: *θ*í*s*t*i*l*a*s
 EAFNasalSpirantLengthening [no-change]: *θ*í*s*t*i*l*a*s
 EAFNasalSpirantLoss [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *θ*í*s*t*i*l*a*s
@@ -36582,6 +36889,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*ó*r*n*a
 EAFRhotacism [no-change]: *θ*ó*r*n*a
 PNWGmcMnDissimilation [no-change]: *θ*ó*r*n*a
 PNWGmcNStemNLoss [no-change]: *θ*ó*r*n*a
+PGmcNasalLossBeforeX [no-change]: *θ*ó*r*n*a
 EAFNasalSpirantLengthening [no-change]: *θ*ó*r*n*a
 EAFNasalSpirantLoss [no-change]: *θ*ó*r*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ó*r*n*a
@@ -36701,6 +37009,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*ū*s*è*n*d
 EAFRhotacism [no-change]: *θ*ū*s*è*n*d
 PNWGmcMnDissimilation [no-change]: *θ*ū*s*è*n*d
 PNWGmcNStemNLoss [no-change]: *θ*ū*s*è*n*d
+PGmcNasalLossBeforeX [no-change]: *θ*ū*s*è*n*d
 EAFNasalSpirantLengthening [no-change]: *θ*ū*s*è*n*d
 EAFNasalSpirantLoss [no-change]: *θ*ū*s*è*n*d
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ū*s*è*n*d
@@ -36820,6 +37129,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*r*é*s*k*a*n*ą
 EAFRhotacism [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *θ*r*é*s*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *θ*r*é*s*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *θ*r*é*s*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*r*é*s*k*a*n*ą
@@ -36939,6 +37249,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*r*é*j*e
 EAFRhotacism [no-change]: *θ*r*é*j*e
 PNWGmcMnDissimilation [no-change]: *θ*r*é*j*e
 PNWGmcNStemNLoss [no-change]: *θ*r*é*j*e
+PGmcNasalLossBeforeX [no-change]: *θ*r*é*j*e
 EAFNasalSpirantLengthening [no-change]: *θ*r*é*j*e
 EAFNasalSpirantLoss [no-change]: *θ*r*é*j*e
 PNWGmcPreconsonantalXLoss [no-change]: *θ*r*é*j*e
@@ -37058,6 +37369,7 @@ MonosyllabicFinalZLoss [no-change]: *θ*ú*n*r*a
 EAFRhotacism [no-change]: *θ*ú*n*r*a
 PNWGmcMnDissimilation [no-change]: *θ*ú*n*r*a
 PNWGmcNStemNLoss [no-change]: *θ*ú*n*r*a
+PGmcNasalLossBeforeX [no-change]: *θ*ú*n*r*a
 EAFNasalSpirantLengthening [no-change]: *θ*ú*n*r*a
 EAFNasalSpirantLoss [no-change]: *θ*ú*n*r*a
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ú*n*r*a
@@ -37177,6 +37489,7 @@ MonosyllabicFinalZLoss [no-change]: *t*í*k*k*ô
 EAFRhotacism [no-change]: *t*í*k*k*ô
 PNWGmcMnDissimilation [no-change]: *t*í*k*k*ô
 PNWGmcNStemNLoss [no-change]: *t*í*k*k*ô
+PGmcNasalLossBeforeX [no-change]: *t*í*k*k*ô
 EAFNasalSpirantLengthening [no-change]: *t*í*k*k*ô
 EAFNasalSpirantLoss [no-change]: *t*í*k*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *t*í*k*k*ô
@@ -37296,6 +37609,7 @@ MonosyllabicFinalZLoss [no-change]: *t*ḯ*d*i
 EAFRhotacism [no-change]: *t*ḯ*d*i
 PNWGmcMnDissimilation [no-change]: *t*ḯ*d*i
 PNWGmcNStemNLoss [no-change]: *t*ḯ*d*i
+PGmcNasalLossBeforeX [no-change]: *t*ḯ*d*i
 EAFNasalSpirantLengthening [no-change]: *t*ḯ*d*i
 EAFNasalSpirantLoss [no-change]: *t*ḯ*d*i
 PNWGmcPreconsonantalXLoss [no-change]: *t*ḯ*d*i
@@ -37415,6 +37729,7 @@ MonosyllabicFinalZLoss [no-change]: *t*í*m*b*r*ą
 EAFRhotacism [no-change]: *t*í*m*b*r*ą
 PNWGmcMnDissimilation [no-change]: *t*í*m*b*r*ą
 PNWGmcNStemNLoss [no-change]: *t*í*m*b*r*ą
+PGmcNasalLossBeforeX [no-change]: *t*í*m*b*r*ą
 EAFNasalSpirantLengthening [no-change]: *t*í*m*b*r*ą
 EAFNasalSpirantLoss [no-change]: *t*í*m*b*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*í*m*b*r*ą
@@ -37534,6 +37849,7 @@ MonosyllabicFinalZLoss [no-change]: *t*ái*x*ō*n
 EAFRhotacism [no-change]: *t*ái*x*ō*n
 PNWGmcMnDissimilation [no-change]: *t*ái*x*ō*n
 PNWGmcNStemNLoss: *t*ái*x*ǭ
+PGmcNasalLossBeforeX [no-change]: *t*ái*x*ǭ
 EAFNasalSpirantLengthening [no-change]: *t*ái*x*ǭ
 EAFNasalSpirantLoss [no-change]: *t*ái*x*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *t*ái*x*ǭ
@@ -37653,6 +37969,7 @@ MonosyllabicFinalZLoss [no-change]: *t*ái*k*n*ą
 EAFRhotacism [no-change]: *t*ái*k*n*ą
 PNWGmcMnDissimilation [no-change]: *t*ái*k*n*ą
 PNWGmcNStemNLoss [no-change]: *t*ái*k*n*ą
+PGmcNasalLossBeforeX [no-change]: *t*ái*k*n*ą
 EAFNasalSpirantLengthening [no-change]: *t*ái*k*n*ą
 EAFNasalSpirantLoss [no-change]: *t*ái*k*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*ái*k*n*ą
@@ -37772,6 +38089,7 @@ MonosyllabicFinalZLoss [no-change]: *t*á*n*g*u
 EAFRhotacism [no-change]: *t*á*n*g*u
 PNWGmcMnDissimilation [no-change]: *t*á*n*g*u
 PNWGmcNStemNLoss [no-change]: *t*á*n*g*u
+PGmcNasalLossBeforeX [no-change]: *t*á*n*g*u
 EAFNasalSpirantLengthening [no-change]: *t*á*n*g*u
 EAFNasalSpirantLoss [no-change]: *t*á*n*g*u
 PNWGmcPreconsonantalXLoss [no-change]: *t*á*n*g*u
@@ -37891,6 +38209,7 @@ MonosyllabicFinalZLoss [no-change]: *t*ú*n*g*ō*n
 EAFRhotacism [no-change]: *t*ú*n*g*ō*n
 PNWGmcMnDissimilation [no-change]: *t*ú*n*g*ō*n
 PNWGmcNStemNLoss: *t*ú*n*g*ǭ
+PGmcNasalLossBeforeX [no-change]: *t*ú*n*g*ǭ
 EAFNasalSpirantLengthening [no-change]: *t*ú*n*g*ǭ
 EAFNasalSpirantLoss [no-change]: *t*ú*n*g*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *t*ú*n*g*ǭ
@@ -38010,6 +38329,7 @@ MonosyllabicFinalZLoss [no-change]: *t*ū*n*ą
 EAFRhotacism [no-change]: *t*ū*n*ą
 PNWGmcMnDissimilation [no-change]: *t*ū*n*ą
 PNWGmcNStemNLoss [no-change]: *t*ū*n*ą
+PGmcNasalLossBeforeX [no-change]: *t*ū*n*ą
 EAFNasalSpirantLengthening [no-change]: *t*ū*n*ą
 EAFNasalSpirantLoss [no-change]: *t*ū*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*ū*n*ą
@@ -38129,6 +38449,7 @@ MonosyllabicFinalZLoss [no-change]: *t*r*é*d*a*n*ą
 EAFRhotacism [no-change]: *t*r*é*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *t*r*é*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *t*r*é*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *t*r*é*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *t*r*é*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *t*r*é*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*r*é*d*a*n*ą
@@ -38248,6 +38569,7 @@ MonosyllabicFinalZLoss [no-change]: *t*r*ó*g*ą
 EAFRhotacism [no-change]: *t*r*ó*g*ą
 PNWGmcMnDissimilation [no-change]: *t*r*ó*g*ą
 PNWGmcNStemNLoss [no-change]: *t*r*ó*g*ą
+PGmcNasalLossBeforeX [no-change]: *t*r*ó*g*ą
 EAFNasalSpirantLengthening [no-change]: *t*r*ó*g*ą
 EAFNasalSpirantLoss [no-change]: *t*r*ó*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*r*ó*g*ą
@@ -38367,6 +38689,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*d*a*n*ą
 EAFRhotacism [no-change]: *w*á*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*á*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*d*a*n*ą
@@ -38486,6 +38809,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*g*n*a
 EAFRhotacism [no-change]: *w*á*g*n*a
 PNWGmcMnDissimilation [no-change]: *w*á*g*n*a
 PNWGmcNStemNLoss [no-change]: *w*á*g*n*a
+PGmcNasalLossBeforeX [no-change]: *w*á*g*n*a
 EAFNasalSpirantLengthening [no-change]: *w*á*g*n*a
 EAFNasalSpirantLoss [no-change]: *w*á*g*n*a
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*g*n*a
@@ -38605,6 +38929,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*k*a*n*ą
 EAFRhotacism [no-change]: *w*á*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*á*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*k*a*n*ą
@@ -38724,6 +39049,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*r*p*ą
 EAFRhotacism [no-change]: *w*á*r*p*ą
 PNWGmcMnDissimilation [no-change]: *w*á*r*p*ą
 PNWGmcNStemNLoss [no-change]: *w*á*r*p*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*r*p*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*r*p*ą
 EAFNasalSpirantLoss [no-change]: *w*á*r*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*r*p*ą
@@ -38843,6 +39169,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*r*p*a*n*ą
 EAFRhotacism [no-change]: *w*é*r*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*é*r*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*é*r*p*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*é*r*p*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*é*r*p*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*é*r*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*r*p*a*n*ą
@@ -38962,6 +39289,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*r*t*ō*n
 EAFRhotacism [no-change]: *w*á*r*t*ō*n
 PNWGmcMnDissimilation [no-change]: *w*á*r*t*ō*n
 PNWGmcNStemNLoss: *w*á*r*t*ǭ
+PGmcNasalLossBeforeX [no-change]: *w*á*r*t*ǭ
 EAFNasalSpirantLengthening [no-change]: *w*á*r*t*ǭ
 EAFNasalSpirantLoss [no-change]: *w*á*r*t*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*r*t*ǭ
@@ -39081,6 +39409,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*s*k*a*n*ą
 EAFRhotacism [no-change]: *w*á*s*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*s*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*s*k*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*s*k*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*s*k*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*á*s*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*s*k*a*n*ą
@@ -39200,6 +39529,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*b*s*a
 EAFRhotacism [no-change]: *w*á*b*s*a
 PNWGmcMnDissimilation [no-change]: *w*á*b*s*a
 PNWGmcNStemNLoss [no-change]: *w*á*b*s*a
+PGmcNasalLossBeforeX [no-change]: *w*á*b*s*a
 EAFNasalSpirantLengthening [no-change]: *w*á*b*s*a
 EAFNasalSpirantLoss [no-change]: *w*á*b*s*a
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*b*s*a
@@ -39319,6 +39649,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*t*a*r
 EAFRhotacism [no-change]: *w*á*t*a*r
 PNWGmcMnDissimilation [no-change]: *w*á*t*a*r
 PNWGmcNStemNLoss [no-change]: *w*á*t*a*r
+PGmcNasalLossBeforeX [no-change]: *w*á*t*a*r
 EAFNasalSpirantLengthening [no-change]: *w*á*t*a*r
 EAFNasalSpirantLoss [no-change]: *w*á*t*a*r
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*t*a*r
@@ -39438,6 +39769,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*x*s*ą
 EAFRhotacism [no-change]: *w*á*x*s*ą
 PNWGmcMnDissimilation [no-change]: *w*á*x*s*ą
 PNWGmcNStemNLoss [no-change]: *w*á*x*s*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*x*s*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*x*s*ą
 EAFNasalSpirantLoss [no-change]: *w*á*x*s*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*x*s*ą
@@ -39557,6 +39889,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*x*s*a*n*ą
 EAFRhotacism [no-change]: *w*á*x*s*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*x*s*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*x*s*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*x*s*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*x*s*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*á*x*s*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*x*s*a*n*ą
@@ -39676,6 +40009,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*g*a
 EAFRhotacism [no-change]: *w*é*g*a
 PNWGmcMnDissimilation [no-change]: *w*é*g*a
 PNWGmcNStemNLoss [no-change]: *w*é*g*a
+PGmcNasalLossBeforeX [no-change]: *w*é*g*a
 EAFNasalSpirantLengthening [no-change]: *w*é*g*a
 EAFNasalSpirantLoss [no-change]: *w*é*g*a
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*g*a
@@ -39795,6 +40129,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ā*p*n*ą
 EAFRhotacism [no-change]: *w*ā*p*n*ą
 PNWGmcMnDissimilation [no-change]: *w*ā*p*n*ą
 PNWGmcNStemNLoss [no-change]: *w*ā*p*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*ā*p*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*ā*p*n*ą
 EAFNasalSpirantLoss [no-change]: *w*ā*p*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ā*p*n*ą
@@ -39914,6 +40249,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*s*l*ō*n
 EAFRhotacism [no-change]: *w*é*s*l*ō*n
 PNWGmcMnDissimilation [no-change]: *w*é*s*l*ō*n
 PNWGmcNStemNLoss: *w*é*s*l*ǭ
+PGmcNasalLossBeforeX [no-change]: *w*é*s*l*ǭ
 EAFNasalSpirantLengthening [no-change]: *w*é*s*l*ǭ
 EAFNasalSpirantLoss [no-change]: *w*é*s*l*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*s*l*ǭ
@@ -40033,6 +40369,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*d*r*ą
 EAFRhotacism [no-change]: *w*é*d*r*ą
 PNWGmcMnDissimilation [no-change]: *w*é*d*r*ą
 PNWGmcNStemNLoss [no-change]: *w*é*d*r*ą
+PGmcNasalLossBeforeX [no-change]: *w*é*d*r*ą
 EAFNasalSpirantLengthening [no-change]: *w*é*d*r*ą
 EAFNasalSpirantLoss [no-change]: *w*é*d*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*d*r*ą
@@ -40152,6 +40489,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*b*a*n*ą
 EAFRhotacism [no-change]: *w*é*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*é*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*é*b*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*é*b*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*é*b*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*é*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*b*a*n*ą
@@ -40271,6 +40609,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*s*t*a*n*ē
 EAFRhotacism [no-change]: *w*é*s*t*a*n*ē
 PNWGmcMnDissimilation [no-change]: *w*é*s*t*a*n*ē
 PNWGmcNStemNLoss [no-change]: *w*é*s*t*a*n*ē
+PGmcNasalLossBeforeX [no-change]: *w*é*s*t*a*n*ē
 EAFNasalSpirantLengthening [no-change]: *w*é*s*t*a*n*ē
 EAFNasalSpirantLoss [no-change]: *w*é*s*t*a*n*ē
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*s*t*a*n*ē
@@ -40390,6 +40729,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*θ*r*ą
 EAFRhotacism [no-change]: *w*é*θ*r*ą
 PNWGmcMnDissimilation [no-change]: *w*é*θ*r*ą
 PNWGmcNStemNLoss [no-change]: *w*é*θ*r*ą
+PGmcNasalLossBeforeX [no-change]: *w*é*θ*r*ą
 EAFNasalSpirantLengthening [no-change]: *w*é*θ*r*ą
 EAFNasalSpirantLoss [no-change]: *w*é*θ*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*θ*r*ą
@@ -40509,6 +40849,7 @@ MonosyllabicFinalZLoss [no-change]: *x*w*á*l*a
 EAFRhotacism [no-change]: *x*w*á*l*a
 PNWGmcMnDissimilation [no-change]: *x*w*á*l*a
 PNWGmcNStemNLoss [no-change]: *x*w*á*l*a
+PGmcNasalLossBeforeX [no-change]: *x*w*á*l*a
 EAFNasalSpirantLengthening [no-change]: *x*w*á*l*a
 EAFNasalSpirantLoss [no-change]: *x*w*á*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*á*l*a
@@ -40628,6 +40969,7 @@ MonosyllabicFinalZLoss [no-change]: *x*w*ḯ*l*u
 EAFRhotacism [no-change]: *x*w*ḯ*l*u
 PNWGmcMnDissimilation [no-change]: *x*w*ḯ*l*u
 PNWGmcNStemNLoss [no-change]: *x*w*ḯ*l*u
+PGmcNasalLossBeforeX [no-change]: *x*w*ḯ*l*u
 EAFNasalSpirantLengthening [no-change]: *x*w*ḯ*l*u
 EAFNasalSpirantLoss [no-change]: *x*w*ḯ*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*ḯ*l*u
@@ -40747,6 +41089,7 @@ MonosyllabicFinalZLoss [no-change]: *x*w*ḯ*n*a*n*ą
 EAFRhotacism [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*w*ḯ*n*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *x*w*ḯ*n*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *x*w*ḯ*n*a*n*ą
 EAFNasalSpirantLoss [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*ḯ*n*a*n*ą
@@ -40866,6 +41209,7 @@ MonosyllabicFinalZLoss [no-change]: *x*ō*r*ō*n
 EAFRhotacism [no-change]: *x*ō*r*ō*n
 PNWGmcMnDissimilation [no-change]: *x*ō*r*ō*n
 PNWGmcNStemNLoss: *x*ō*r*ǭ
+PGmcNasalLossBeforeX [no-change]: *x*ō*r*ǭ
 EAFNasalSpirantLengthening [no-change]: *x*ō*r*ǭ
 EAFNasalSpirantLoss [no-change]: *x*ō*r*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *x*ō*r*ǭ
@@ -40985,6 +41329,7 @@ MonosyllabicFinalZLoss [no-change]: *w*í*d*u*w*ō*n
 EAFRhotacism [no-change]: *w*í*d*u*w*ō*n
 PNWGmcMnDissimilation [no-change]: *w*í*d*u*w*ō*n
 PNWGmcNStemNLoss: *w*í*d*u*w*ǭ
+PGmcNasalLossBeforeX [no-change]: *w*í*d*u*w*ǭ
 EAFNasalSpirantLengthening [no-change]: *w*í*d*u*w*ǭ
 EAFNasalSpirantLoss [no-change]: *w*í*d*u*w*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*d*u*w*ǭ
@@ -41104,6 +41449,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*l*d*a*n*ą
 EAFRhotacism [no-change]: *w*á*l*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*l*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*l*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*á*l*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*á*l*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*á*l*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*l*d*a*n*ą
@@ -41223,6 +41569,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ḯ*b*ą
 EAFRhotacism [no-change]: *w*ḯ*b*ą
 PNWGmcMnDissimilation [no-change]: *w*ḯ*b*ą
 PNWGmcNStemNLoss [no-change]: *w*ḯ*b*ą
+PGmcNasalLossBeforeX [no-change]: *w*ḯ*b*ą
 EAFNasalSpirantLengthening [no-change]: *w*ḯ*b*ą
 EAFNasalSpirantLoss [no-change]: *w*ḯ*b*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ḯ*b*ą
@@ -41342,6 +41689,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*x*t*i
 EAFRhotacism [no-change]: *w*é*x*t*i
 PNWGmcMnDissimilation [no-change]: *w*é*x*t*i
 PNWGmcNStemNLoss [no-change]: *w*é*x*t*i
+PGmcNasalLossBeforeX [no-change]: *w*é*x*t*i
 EAFNasalSpirantLengthening [no-change]: *w*é*x*t*i
 EAFNasalSpirantLoss [no-change]: *w*é*x*t*i
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*x*t*i
@@ -41461,6 +41809,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*l*l*j*a*n*ą
 EAFRhotacism [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*é*l*l*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*é*l*l*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*é*l*l*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*l*l*j*a*n*ą
@@ -41580,6 +41929,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*l*l*j*ô
 EAFRhotacism [no-change]: *w*é*l*l*j*ô
 PNWGmcMnDissimilation [no-change]: *w*é*l*l*j*ô
 PNWGmcNStemNLoss [no-change]: *w*é*l*l*j*ô
+PGmcNasalLossBeforeX [no-change]: *w*é*l*l*j*ô
 EAFNasalSpirantLengthening [no-change]: *w*é*l*l*j*ô
 EAFNasalSpirantLoss [no-change]: *w*é*l*l*j*ô
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*l*l*j*ô
@@ -41699,6 +42049,7 @@ MonosyllabicFinalZLoss [no-change]: *w*í*n*d*a*n*ą
 EAFRhotacism [no-change]: *w*í*n*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*í*n*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*í*n*d*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*í*n*d*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*í*n*d*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*í*n*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*n*d*a*n*ą
@@ -41818,6 +42169,7 @@ MonosyllabicFinalZLoss [no-change]: *w*í*n*t*r*u
 EAFRhotacism [no-change]: *w*í*n*t*r*u
 PNWGmcMnDissimilation [no-change]: *w*í*n*t*r*u
 PNWGmcNStemNLoss [no-change]: *w*í*n*t*r*u
+PGmcNasalLossBeforeX [no-change]: *w*í*n*t*r*u
 EAFNasalSpirantLengthening [no-change]: *w*í*n*t*r*u
 EAFNasalSpirantLoss [no-change]: *w*í*n*t*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*n*t*r*u
@@ -41937,6 +42289,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ḯ*θ*a*g*ą
 EAFRhotacism [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcMnDissimilation [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcNStemNLoss [no-change]: *w*ḯ*θ*a*g*ą
+PGmcNasalLossBeforeX [no-change]: *w*ḯ*θ*a*g*ą
 EAFNasalSpirantLengthening [no-change]: *w*ḯ*θ*a*g*ą
 EAFNasalSpirantLoss [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ḯ*θ*a*g*ą
@@ -42056,6 +42409,7 @@ MonosyllabicFinalZLoss [no-change]: *w*á*l*d*u
 EAFRhotacism [no-change]: *w*á*l*d*u
 PNWGmcMnDissimilation [no-change]: *w*á*l*d*u
 PNWGmcNStemNLoss [no-change]: *w*á*l*d*u
+PGmcNasalLossBeforeX [no-change]: *w*á*l*d*u
 EAFNasalSpirantLengthening [no-change]: *w*á*l*d*u
 EAFNasalSpirantLoss [no-change]: *w*á*l*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*l*d*u
@@ -42175,6 +42529,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ú*n*d*r*ą
 EAFRhotacism [no-change]: *w*ú*n*d*r*ą
 PNWGmcMnDissimilation [no-change]: *w*ú*n*d*r*ą
 PNWGmcNStemNLoss [no-change]: *w*ú*n*d*r*ą
+PGmcNasalLossBeforeX [no-change]: *w*ú*n*d*r*ą
 EAFNasalSpirantLengthening [no-change]: *w*ú*n*d*r*ą
 EAFNasalSpirantLoss [no-change]: *w*ú*n*d*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*n*d*r*ą
@@ -42294,6 +42649,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ó*r*d*ą
 EAFRhotacism [no-change]: *w*ó*r*d*ą
 PNWGmcMnDissimilation [no-change]: *w*ó*r*d*ą
 PNWGmcNStemNLoss [no-change]: *w*ó*r*d*ą
+PGmcNasalLossBeforeX [no-change]: *w*ó*r*d*ą
 EAFNasalSpirantLengthening [no-change]: *w*ó*r*d*ą
 EAFNasalSpirantLoss [no-change]: *w*ó*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ó*r*d*ą
@@ -42413,6 +42769,7 @@ MonosyllabicFinalZLoss [no-change]: *w*é*r*à*l*d*u
 EAFRhotacism [no-change]: *w*é*r*à*l*d*u
 PNWGmcMnDissimilation [no-change]: *w*é*r*à*l*d*u
 PNWGmcNStemNLoss [no-change]: *w*é*r*à*l*d*u
+PGmcNasalLossBeforeX [no-change]: *w*é*r*à*l*d*u
 EAFNasalSpirantLengthening [no-change]: *w*é*r*à*l*d*u
 EAFNasalSpirantLoss [no-change]: *w*é*r*à*l*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*r*à*l*d*u
@@ -42532,6 +42889,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ú*r*m*i
 EAFRhotacism [no-change]: *w*ú*r*m*i
 PNWGmcMnDissimilation [no-change]: *w*ú*r*m*i
 PNWGmcNStemNLoss [no-change]: *w*ú*r*m*i
+PGmcNasalLossBeforeX [no-change]: *w*ú*r*m*i
 EAFNasalSpirantLengthening [no-change]: *w*ú*r*m*i
 EAFNasalSpirantLoss [no-change]: *w*ú*r*m*i
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*r*m*i
@@ -42651,6 +43009,7 @@ MonosyllabicFinalZLoss [no-change]: *w*r*í*n*g*a*n*ą
 EAFRhotacism [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*r*í*n*g*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *w*r*í*n*g*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *w*r*í*n*g*a*n*ą
 EAFNasalSpirantLoss [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*r*í*n*g*a*n*ą
@@ -42770,6 +43129,7 @@ MonosyllabicFinalZLoss [no-change]: *g*á*r*n*ą
 EAFRhotacism [no-change]: *g*á*r*n*ą
 PNWGmcMnDissimilation [no-change]: *g*á*r*n*ą
 PNWGmcNStemNLoss [no-change]: *g*á*r*n*ą
+PGmcNasalLossBeforeX [no-change]: *g*á*r*n*ą
 EAFNasalSpirantLengthening [no-change]: *g*á*r*n*ą
 EAFNasalSpirantLoss [no-change]: *g*á*r*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*r*n*ą
@@ -42889,6 +43249,7 @@ MonosyllabicFinalZLoss [no-change]: *j*ā*r*ą
 EAFRhotacism [no-change]: *j*ā*r*ą
 PNWGmcMnDissimilation [no-change]: *j*ā*r*ą
 PNWGmcNStemNLoss [no-change]: *j*ā*r*ą
+PGmcNasalLossBeforeX [no-change]: *j*ā*r*ą
 EAFNasalSpirantLengthening [no-change]: *j*ā*r*ą
 EAFNasalSpirantLoss [no-change]: *j*ā*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *j*ā*r*ą
@@ -43008,6 +43369,7 @@ MonosyllabicFinalZLoss [no-change]: *j*ó*k*ą
 EAFRhotacism [no-change]: *j*ó*k*ą
 PNWGmcMnDissimilation [no-change]: *j*ó*k*ą
 PNWGmcNStemNLoss [no-change]: *j*ó*k*ą
+PGmcNasalLossBeforeX [no-change]: *j*ó*k*ą
 EAFNasalSpirantLengthening [no-change]: *j*ó*k*ą
 EAFNasalSpirantLoss [no-change]: *j*ó*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *j*ó*k*ą
@@ -43127,6 +43489,7 @@ MonosyllabicFinalZLoss [no-change]: *j*ú*g*u*n*θ
 EAFRhotacism [no-change]: *j*ú*g*u*n*θ
 PNWGmcMnDissimilation [no-change]: *j*ú*g*u*n*θ
 PNWGmcNStemNLoss [no-change]: *j*ú*g*u*n*θ
+PGmcNasalLossBeforeX [no-change]: *j*ú*g*u*n*θ
 EAFNasalSpirantLengthening: *j*ú*g*ū*n*θ
 EAFNasalSpirantLoss: *j*ú*g*ū*θ
 PNWGmcPreconsonantalXLoss [no-change]: *j*ú*g*ū*θ
@@ -43246,6 +43609,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*k*ô
 EAFRhotacism [no-change]: *m*á*k*ô
 PNWGmcMnDissimilation [no-change]: *m*á*k*ô
 PNWGmcNStemNLoss [no-change]: *m*á*k*ô
+PGmcNasalLossBeforeX [no-change]: *m*á*k*ô
 EAFNasalSpirantLengthening [no-change]: *m*á*k*ô
 EAFNasalSpirantLoss [no-change]: *m*á*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*k*ô
@@ -43365,6 +43729,7 @@ MonosyllabicFinalZLoss [no-change]: *m*á*k*ō*θ
 EAFRhotacism [no-change]: *m*á*k*ō*θ
 PNWGmcMnDissimilation [no-change]: *m*á*k*ō*θ
 PNWGmcNStemNLoss [no-change]: *m*á*k*ō*θ
+PGmcNasalLossBeforeX [no-change]: *m*á*k*ō*θ
 EAFNasalSpirantLengthening [no-change]: *m*á*k*ō*θ
 EAFNasalSpirantLoss [no-change]: *m*á*k*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*k*ō*θ
@@ -43484,6 +43849,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*r*ô
 EAFRhotacism [no-change]: *b*ó*r*ô
 PNWGmcMnDissimilation [no-change]: *b*ó*r*ô
 PNWGmcNStemNLoss [no-change]: *b*ó*r*ô
+PGmcNasalLossBeforeX [no-change]: *b*ó*r*ô
 EAFNasalSpirantLengthening [no-change]: *b*ó*r*ô
 EAFNasalSpirantLoss [no-change]: *b*ó*r*ô
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*r*ô
@@ -43603,6 +43969,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*r*ō*θ
 EAFRhotacism [no-change]: *b*ó*r*ō*θ
 PNWGmcMnDissimilation [no-change]: *b*ó*r*ō*θ
 PNWGmcNStemNLoss [no-change]: *b*ó*r*ō*θ
+PGmcNasalLossBeforeX [no-change]: *b*ó*r*ō*θ
 EAFNasalSpirantLengthening [no-change]: *b*ó*r*ō*θ
 EAFNasalSpirantLoss [no-change]: *b*ó*r*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*r*ō*θ
@@ -43722,6 +44089,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*z*n*ô
 EAFRhotacism: *l*í*r*n*ô
 PNWGmcMnDissimilation [no-change]: *l*í*r*n*ô
 PNWGmcNStemNLoss [no-change]: *l*í*r*n*ô
+PGmcNasalLossBeforeX [no-change]: *l*í*r*n*ô
 EAFNasalSpirantLengthening [no-change]: *l*í*r*n*ô
 EAFNasalSpirantLoss [no-change]: *l*í*r*n*ô
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*r*n*ô
@@ -43841,6 +44209,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*z*n*ō*θ
 EAFRhotacism: *l*í*r*n*ō*θ
 PNWGmcMnDissimilation [no-change]: *l*í*r*n*ō*θ
 PNWGmcNStemNLoss [no-change]: *l*í*r*n*ō*θ
+PGmcNasalLossBeforeX [no-change]: *l*í*r*n*ō*θ
 EAFNasalSpirantLengthening [no-change]: *l*í*r*n*ō*θ
 EAFNasalSpirantLoss [no-change]: *l*í*r*n*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*r*n*ō*θ
@@ -43960,6 +44329,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*k*k*ô
 EAFRhotacism [no-change]: *l*í*k*k*ô
 PNWGmcMnDissimilation [no-change]: *l*í*k*k*ô
 PNWGmcNStemNLoss [no-change]: *l*í*k*k*ô
+PGmcNasalLossBeforeX [no-change]: *l*í*k*k*ô
 EAFNasalSpirantLengthening [no-change]: *l*í*k*k*ô
 EAFNasalSpirantLoss [no-change]: *l*í*k*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*k*k*ô
@@ -44079,6 +44449,7 @@ MonosyllabicFinalZLoss [no-change]: *l*í*k*k*ō*θ
 EAFRhotacism [no-change]: *l*í*k*k*ō*θ
 PNWGmcMnDissimilation [no-change]: *l*í*k*k*ō*θ
 PNWGmcNStemNLoss [no-change]: *l*í*k*k*ō*θ
+PGmcNasalLossBeforeX [no-change]: *l*í*k*k*ō*θ
 EAFNasalSpirantLengthening [no-change]: *l*í*k*k*ō*θ
 EAFNasalSpirantLoss [no-change]: *l*í*k*k*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*k*k*ō*θ
@@ -44198,6 +44569,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*á*w*ô
 EAFRhotacism [no-change]: *s*k*á*w*ô
 PNWGmcMnDissimilation [no-change]: *s*k*á*w*ô
 PNWGmcNStemNLoss [no-change]: *s*k*á*w*ô
+PGmcNasalLossBeforeX [no-change]: *s*k*á*w*ô
 EAFNasalSpirantLengthening [no-change]: *s*k*á*w*ô
 EAFNasalSpirantLoss [no-change]: *s*k*á*w*ô
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*w*ô
@@ -44317,6 +44689,7 @@ MonosyllabicFinalZLoss [no-change]: *s*k*á*w*ō*θ
 EAFRhotacism [no-change]: *s*k*á*w*ō*θ
 PNWGmcMnDissimilation [no-change]: *s*k*á*w*ō*θ
 PNWGmcNStemNLoss [no-change]: *s*k*á*w*ō*θ
+PGmcNasalLossBeforeX [no-change]: *s*k*á*w*ō*θ
 EAFNasalSpirantLengthening [no-change]: *s*k*á*w*ō*θ
 EAFNasalSpirantLoss [no-change]: *s*k*á*w*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*w*ō*θ
@@ -44436,6 +44809,7 @@ MonosyllabicFinalZLoss: *x*w*ā
 EAFRhotacism [no-change]: *x*w*ā
 PNWGmcMnDissimilation [no-change]: *x*w*ā
 PNWGmcNStemNLoss [no-change]: *x*w*ā
+PGmcNasalLossBeforeX [no-change]: *x*w*ā
 EAFNasalSpirantLengthening [no-change]: *x*w*ā
 EAFNasalSpirantLoss [no-change]: *x*w*ā
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*ā
@@ -44555,6 +44929,7 @@ MonosyllabicFinalZLoss [no-change]: *í*w*w
 EAFRhotacism [no-change]: *í*w*w
 PNWGmcMnDissimilation [no-change]: *í*w*w
 PNWGmcNStemNLoss [no-change]: *í*w*w
+PGmcNasalLossBeforeX [no-change]: *í*w*w
 EAFNasalSpirantLengthening [no-change]: *í*w*w
 EAFNasalSpirantLoss [no-change]: *í*w*w
 PNWGmcPreconsonantalXLoss [no-change]: *í*w*w
@@ -44674,6 +45049,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ú*n*d*ō*d*ē
 EAFRhotacism [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcMnDissimilation [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcNStemNLoss [no-change]: *w*ú*n*d*ō*d*ē
+PGmcNasalLossBeforeX [no-change]: *w*ú*n*d*ō*d*ē
 EAFNasalSpirantLengthening [no-change]: *w*ú*n*d*ō*d*ē
 EAFNasalSpirantLoss [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*n*d*ō*d*ē
@@ -44793,6 +45169,7 @@ MonosyllabicFinalZLoss [no-change]: *s*ā*a*n*ą
 EAFRhotacism [no-change]: *s*ā*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ā*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ā*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *s*ā*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *s*ā*a*n*ą
 EAFNasalSpirantLoss [no-change]: *s*ā*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ā*a*n*ą
@@ -44912,6 +45289,7 @@ MonosyllabicFinalZLoss [no-change]: *l*ā*w*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ā*w*i*j*a*n*ą
+PGmcNasalLossBeforeX [no-change]: *l*ā*w*i*j*a*n*ą
 EAFNasalSpirantLengthening [no-change]: *l*ā*w*i*j*a*n*ą
 EAFNasalSpirantLoss [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ā*w*i*j*a*n*ą
@@ -45034,6 +45412,7 @@ MonosyllabicFinalZLoss [no-change]: *t*á*p*p*ô
 EAFRhotacism [no-change]: *t*á*p*p*ô
 PNWGmcMnDissimilation [no-change]: *t*á*p*p*ô
 PNWGmcNStemNLoss [no-change]: *t*á*p*p*ô
+PGmcNasalLossBeforeX [no-change]: *t*á*p*p*ô
 EAFNasalSpirantLengthening [no-change]: *t*á*p*p*ô
 EAFNasalSpirantLoss [no-change]: *t*á*p*p*ô
 PNWGmcPreconsonantalXLoss [no-change]: *t*á*p*p*ô
@@ -45156,6 +45535,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ū*r*i
 EAFRhotacism [no-change]: *f*ū*r*i
 PNWGmcMnDissimilation [no-change]: *f*ū*r*i
 PNWGmcNStemNLoss [no-change]: *f*ū*r*i
+PGmcNasalLossBeforeX [no-change]: *f*ū*r*i
 EAFNasalSpirantLengthening [no-change]: *f*ū*r*i
 EAFNasalSpirantLoss [no-change]: *f*ū*r*i
 PNWGmcPreconsonantalXLoss [no-change]: *f*ū*r*i
@@ -45278,6 +45658,7 @@ MonosyllabicFinalZLoss [no-change]: *b*ó*k*k*a
 EAFRhotacism [no-change]: *b*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *b*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *b*ó*k*k*a
+PGmcNasalLossBeforeX [no-change]: *b*ó*k*k*a
 EAFNasalSpirantLengthening [no-change]: *b*ó*k*k*a
 EAFNasalSpirantLoss [no-change]: *b*ó*k*k*a
 PNWGmcPreconsonantalXLoss [no-change]: *b*ó*k*k*a
@@ -45397,6 +45778,7 @@ MonosyllabicFinalZLoss [no-change]: *f*ó*g*l*a
 EAFRhotacism [no-change]: *f*ó*g*l*a
 PNWGmcMnDissimilation [no-change]: *f*ó*g*l*a
 PNWGmcNStemNLoss [no-change]: *f*ó*g*l*a
+PGmcNasalLossBeforeX [no-change]: *f*ó*g*l*a
 EAFNasalSpirantLengthening [no-change]: *f*ó*g*l*a
 EAFNasalSpirantLoss [no-change]: *f*ó*g*l*a
 PNWGmcPreconsonantalXLoss [no-change]: *f*ó*g*l*a
@@ -45516,6 +45898,7 @@ MonosyllabicFinalZLoss [no-change]: *r*ó*s*t*u
 EAFRhotacism [no-change]: *r*ó*s*t*u
 PNWGmcMnDissimilation [no-change]: *r*ó*s*t*u
 PNWGmcNStemNLoss [no-change]: *r*ó*s*t*u
+PGmcNasalLossBeforeX [no-change]: *r*ó*s*t*u
 EAFNasalSpirantLengthening [no-change]: *r*ó*s*t*u
 EAFNasalSpirantLoss [no-change]: *r*ó*s*t*u
 PNWGmcPreconsonantalXLoss [no-change]: *r*ó*s*t*u
@@ -45635,6 +46018,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ó*l*f*a
 EAFRhotacism [no-change]: *w*ó*l*f*a
 PNWGmcMnDissimilation [no-change]: *w*ó*l*f*a
 PNWGmcNStemNLoss [no-change]: *w*ó*l*f*a
+PGmcNasalLossBeforeX [no-change]: *w*ó*l*f*a
 EAFNasalSpirantLengthening [no-change]: *w*ó*l*f*a
 EAFNasalSpirantLoss [no-change]: *w*ó*l*f*a
 PNWGmcPreconsonantalXLoss [no-change]: *w*ó*l*f*a
@@ -45754,6 +46138,7 @@ MonosyllabicFinalZLoss [no-change]: *w*ó*l*l*u
 EAFRhotacism [no-change]: *w*ó*l*l*u
 PNWGmcMnDissimilation [no-change]: *w*ó*l*l*u
 PNWGmcNStemNLoss [no-change]: *w*ó*l*l*u
+PGmcNasalLossBeforeX [no-change]: *w*ó*l*l*u
 EAFNasalSpirantLengthening [no-change]: *w*ó*l*l*u
 EAFNasalSpirantLoss [no-change]: *w*ó*l*l*u
 PNWGmcPreconsonantalXLoss [no-change]: *w*ó*l*l*u
@@ -46017,11 +46402,14 @@ stem :: *stámniz
 PNWGmcNStemNLoss: 17
 adder :: *nḗdrōn, earth :: *érθōn, flask :: *fláskōn, heart :: *xértōn, line :: *lḯnōn, list :: *lḯstōn, nettle :: *nátilōn, nightmare :: *márōn, side :: *sḯdōn, sun :: *súnnōn, swallow :: *swálwōn, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn
 
-EAFNasalSpirantLengthening: 3
-fist :: *fúnxstiz, goose :: *gánsz, youth :: *júgunθ
+PGmcNasalLossBeforeX: 1
+fist :: *fúnxstiz
 
-EAFNasalSpirantLoss: 3
-fist :: *fúnxstiz, goose :: *gánsz, youth :: *júgunθ
+EAFNasalSpirantLengthening: 2
+goose :: *gánsz, youth :: *júgunθ
+
+EAFNasalSpirantLoss: 2
+goose :: *gánsz, youth :: *júgunθ
 
 PNWGmcPreconsonantalXLoss: 1
 fist :: *fúnxstiz
