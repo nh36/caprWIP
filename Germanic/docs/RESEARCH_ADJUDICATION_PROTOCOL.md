@@ -25,7 +25,7 @@ supports.
 
 Read `Germanic/docs/CURRENT_STATE.md` and the canonical registries under
 `Germanic/docs/sound_changes/registry/` (`sc_registry.tsv`,
-`chronology_edges.tsv`, `sc_inventory_annotations.tsv`; see
+`chronology_edges.tsv`, `sc_inventory_notes.tsv`; see
 `registry/CONTROL_PLANE.md` for the full SOURCE/GENERATED/ARCHIVE map),
 plus any existing adjudication memo for the rule under
 `Germanic/docs/sound_changes/audits/`. Start with

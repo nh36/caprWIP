@@ -49,6 +49,7 @@ SC_DIR = GERMANIC / "docs" / "sound_changes"
 REGISTRY = SC_DIR / "registry" / "sc_registry.tsv"
 EDGES = SC_DIR / "registry" / "chronology_edges.tsv"
 ANNOTATIONS = SC_DIR / "registry" / "sc_inventory_annotations.tsv"
+CENSUS = SC_DIR / "cascade_baseline" / "rule_coverage_census.tsv"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 BASELINE = SC_DIR / "cascade_baseline" / "cascade_baseline_outputs.tsv"
 MEMO = SC_DIR / "audits" / "sc026-sc027-nasal-spirant-adjudication.md"
@@ -246,11 +247,17 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
                 "belongs to the pan-Germanic change SC103")
         self.assertEqual(seen, 2, "expected the reciprocal edge pair")
 
-    def test_annotation_example_lexemes_follow_the_census(self):
+    def test_annotation_firing_lexemes_follow_the_census(self):
+        """firing_lexemes is generated FROM the census, so it can never drift
+        from it; the check is that the witness sets are the adjudicated ones."""
         rows = {r["change_id"]: r for r in _tsv_rows(ANNOTATIONS)}
+        census = {r["sc_id"]: r for r in _tsv_rows(CENSUS)}
         for sc in ("SC026", "SC027"):
-            self.assertEqual(rows[sc]["example_lexemes"], "goose, youth")
-        self.assertEqual(rows["SC103"]["example_lexemes"], "fist")
+            self.assertEqual(rows[sc]["firing_lexemes"], "goose, youth")
+        self.assertIn("fist", rows["SC103"]["firing_lexemes"])
+        for sc in ("SC026", "SC027", "SC103"):
+            self.assertEqual(rows[sc]["firing_lexemes"],
+                             census[sc]["lexical_witnesses"])
 
     # ------------------------------------------------------------------
     # Live probes: the census, and unchanged surface output

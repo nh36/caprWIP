@@ -6,7 +6,7 @@
 # proto-input/PGmc prelude and the surface filter); exec_index is the
 # complete physical order. sc_id is joined from registry/sc_registry.tsv.
 exec_index	cascade_position	foma_identifier	origin_block	kind	snapshot_bin	sc_id
-1		EnglishProtoInput	OldEnglishCore	named	old_english_sandbox_after_english_proto_input.bin	
+1		EnglishProtoInput	OldEnglishCore	named	old_english_sandbox_after_english_proto_input.bin	SC001
 2		PGmcGmSimplification	EarlyGermanicConsonantPipeline	named	old_english_sandbox_after_pgmc_gm_simplification.bin	SC002
 3	1	PGmcNasalLossBeforeX	EnglishProtoToOE	named	old_english_sandbox_after_pgmc_nasal_loss_before_x.bin	SC103
 4	2	RootNounNomZLoss	EnglishProtoToOE	named	old_english_sandbox_after_root_noun_nom_z_loss.bin	SC096
@@ -100,9 +100,9 @@ exec_index	cascade_position	foma_identifier	origin_block	kind	snapshot_bin	sc_id
 92	90	OERMetathesis	EnglishProtoToOE	named	old_english_sandbox_after_oe_r_metathesis.bin	SC087
 93	91	OEEpentheticVowel	OldEnglishAfterEpenthesis	named	old_english_sandbox_after_oe_epenthetic_vowel.bin	SC088
 94	92	OELateUnstressedAgSuffix	OldEnglishRules	named	old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin	SC089
-95	93	OECjCleanup	OldEnglishRules	named	old_english_sandbox_after_oe_cj_cleanup.bin	
-96	94	OEXsMerge	OldEnglishRules	named	old_english_sandbox_after_oe_xs_merge.bin	
-97	95	OldEnglishOrthography	OldEnglishRules	named	old_english_sandbox_after_old_english_orthography.bin	
+95	93	OECjCleanup	OldEnglishRules	named	old_english_sandbox_after_oe_cj_cleanup.bin	SC090
+96	94	OEXsMerge	OldEnglishRules	named	old_english_sandbox_after_oe_xs_merge.bin	SC091
+97	95	OldEnglishOrthography	OldEnglishRules	named	old_english_sandbox_after_old_english_orthography.bin	SC092
 98	96	OEWsPalatalGlide	OldEnglishRules	named	old_english_sandbox_after_oe_ws_palatal_glide.bin	SC016
-99	97	OldEnglishRemoveStars	OldEnglishRules	named	old_english_sandbox_after_old_english_remove_stars.bin	
-100		OldEnglishSurface	OldEnglishReflexes	named	old_english_sandbox_after_old_english_surface.bin	
+99	97	OldEnglishRemoveStars	OldEnglishRules	named	old_english_sandbox_after_old_english_remove_stars.bin	SC094
+100		OldEnglishSurface	OldEnglishReflexes	named	old_english_sandbox_after_old_english_surface.bin	SC095

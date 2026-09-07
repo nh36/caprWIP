@@ -153,7 +153,9 @@ class HistoricalScopeTests(unittest.TestCase):
     def test_stable_identifier_is_not_a_stage_claim(self):
         inventory = _metadata_row(INVENTORY, "change_id")
         staging = _metadata_row(STAGING_MAP, "sc_id")
-        self.assertEqual(inventory["rule_source_anchor"], "define PNWGmcMnDissimilation (line 2158)")
+        # The anchor is STABLE: it carries no line number, so inserting lines
+        # above the definition cannot dirty a committed file.
+        self.assertEqual(inventory["rule_source_anchor"], "define PNWGmcMnDissimilation")
         self.assertEqual(staging["fst_identifier"], "PNWGmcMnDissimilation")
         self.assertIn("stable Foma identifier only", inventory["notes"])
 

@@ -41,7 +41,7 @@
         Validate propagation consistency only (no regeneration).
 
 Canonical sources read: registry/sc_registry.tsv, registry/chronology_edges.tsv,
-registry/sc_inventory_annotations.tsv, Germanic/fsts/germanic.txt,
+registry/sc_inventory_notes.tsv, Germanic/fsts/germanic.txt,
 cascade_baseline/cascade_order_manifest.tsv,
 cascade_baseline/cascade_baseline_summary.json. Archive files are never read.
 """

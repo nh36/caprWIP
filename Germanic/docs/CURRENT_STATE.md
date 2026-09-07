@@ -19,8 +19,9 @@ for any sound-change history/chronology/staging/scope/FST-semantics work.
 - `Germanic/docs/sound_changes/registry/sc_registry.tsv` — all SC metadata.
 - `Germanic/docs/sound_changes/registry/chronology_edges.tsv` — all
   chronology relations and witnesses.
-- `Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv` —
-  inventory-view annotations.
+- `Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv` — human
+  inventory judgements only (`sc_inventory_annotations.tsv` is generated from
+  it plus `germanic.txt` and the coverage census).
 - Settled verdicts (generated view):
   `Germanic/docs/sound_changes/registry/settled_verdicts.md`.
 - Navigation and the SOURCE/GENERATED/ARCHIVE map: `Germanic/docs/README.md`.

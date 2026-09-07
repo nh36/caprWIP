@@ -19,8 +19,9 @@ generated or archived.
 - `sound_changes/registry/chronology_edges.tsv` — **the canonical
   chronology-edge registry.** Owns all chronology relations, witnesses,
   witness roles, and evidence basis.
-- `sound_changes/registry/sc_inventory_annotations.tsv` — inventory-view
-  annotations (trace/rule-source/literature fields) not owned by the registry.
+- `sound_changes/registry/sc_inventory_notes.tsv` — human inventory judgements
+  only (plain descriptions, order sensitivity, editorial examples, notes).
+  The `sc_inventory_annotations.tsv` beside it is a GENERATED projection.
 - `../fsts/germanic.txt` — the FST cascade (only as an adjudication verdict
   requires).
 

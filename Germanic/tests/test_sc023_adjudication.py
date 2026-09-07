@@ -36,6 +36,7 @@ FST = GERMANIC / "fsts" / "germanic.txt"
 SC_DIR = GERMANIC / "docs" / "sound_changes"
 BASELINE = SC_DIR / "cascade_baseline" / "cascade_baseline_outputs.tsv"
 INVENTORY = SC_DIR / "sound_change_inventory.tsv"
+CENSUS = SC_DIR / "cascade_baseline" / "rule_coverage_census.tsv"
 STAGING_MAP = SC_DIR / "sound_change_historical_staging_map.tsv"
 HISTORICAL_AUDIT = SC_DIR / "cascade_baseline" / "historical_audit_table.tsv"
 RENAME_MANIFEST = SC_DIR / "cascade_baseline" / "rename_migration_manifest.tsv"
@@ -208,7 +209,11 @@ class SC023AdjudicationTests(unittest.TestCase):
         self.assertEqual(row["stage"], "Proto-Germanic")
         self.assertEqual(row["historical_stage"], "Proto-Germanic")
         self.assertEqual(row["pipeline_stage"], "SC018-SC025 editorial holding zone")
-        self.assertEqual(row["trace_occurrence_count"], "17")
+        # The firing count is machine evidence: assert it AGREES with the
+        # canonical census rather than pinning a hand-copied number.
+        census = {r["sc_id"]: r for r in _tsv_rows(CENSUS)}["SC023"]
+        self.assertEqual(row["firing_count"], census["corpus_firing_count"])
+        self.assertEqual(row["firing_lexemes"], census["lexical_witnesses"])
         self.assertEqual(row["literature_status"], "adjudicated")
         self.assertIn("counterfeeding", row["notes"])
 

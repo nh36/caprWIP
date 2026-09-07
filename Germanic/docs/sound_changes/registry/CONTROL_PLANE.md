@@ -15,7 +15,8 @@ are GENERATED or ARCHIVE.
 |---|---|---|
 | `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, reader-facing placement, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). EXCEPTION: the `cascade_position` column is DERIVED from the executable model (`tools/sync_registry_cascade_positions.py`, run by `--finalize`) and is never hand-edited |
 | `registry/chronology_edges.tsv` | machine-state | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
-| `registry/sc_inventory_annotations.tsv` | machine-state | Inventory-only annotation columns (evidence pointers, notes) not otherwise owned by the registry |
+| `registry/sc_inventory_notes.tsv` | source | HUMAN JUDGEMENTS ONLY: plain-language draft descriptions, order-sensitivity classification, editorial `illustrative_lexemes`, notes, review flags |
+| `registry/sc_inventory_annotations.tsv` | GENERATED | Projection joining the two human sources with `germanic.txt` (definition text, stable anchor) and the coverage census (`firing_count`, `firing_lexemes`). Never hand-edit |
 | `Germanic/fsts/germanic.txt` | machine-state | Executable rule semantics and cascade composition |
 | `audits/*.md` adjudication memos | scientific-reasoning | Per-SC scientific reasoning; each carries a machine-readable `Registry-verdict:` line that must agree with the registry |
 | `reader_facing/*.md`, `book_dossiers/*.md` | publication-prose | Reader-facing chapters and grouped book dossiers; `adjudicate.py SCNNN --prepare` lists the ones relevant to a given SC |

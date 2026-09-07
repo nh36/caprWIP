@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """Regenerate all derived views from the canonical SC registries.
 
-SOURCE (hand-edited):
+SOURCE (hand-edited; human judgements only):
     Germanic/docs/sound_changes/registry/sc_registry.tsv
-    Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv
+    Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv
     Germanic/docs/sound_changes/registry/chronology_edges.tsv
 
+MACHINE AUTHORITIES (read, never written by a human):
+    Germanic/fsts/germanic.txt              via tools/executable_facts.py
+    docs/debug_snapshots/oe_full_trace_report.txt  via tools/rule_coverage_census.py
+
 GENERATED (never hand-edited; written by this script):
+    Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv
     Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv
     Germanic/docs/sound_changes/sound_change_inventory.tsv
     Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_edges.tsv
@@ -30,9 +35,15 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import executable_facts  # noqa: E402
+import rule_coverage_census  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
@@ -40,12 +51,20 @@ REGISTRY_DIR = SC_DIR / "registry"
 GRAPH_DIR = SC_DIR / "order_tests/chronology_graph"
 
 SC_REGISTRY = REGISTRY_DIR / "sc_registry.tsv"
-ANNOTATIONS = REGISTRY_DIR / "sc_inventory_annotations.tsv"
+INVENTORY_NOTES = REGISTRY_DIR / "sc_inventory_notes.tsv"
 EDGE_REGISTRY = REGISTRY_DIR / "chronology_edges.tsv"
 
-# The complete list of inputs this generator may read. Guardrail tests
-# assert that no archived file can silently become a current-state input.
-DECLARED_INPUTS = (SC_REGISTRY, ANNOTATIONS, EDGE_REGISTRY)
+# The complete list of hand-edited inputs this generator may read. Guardrail
+# tests assert that no archived file can silently become a current-state input.
+DECLARED_INPUTS = (SC_REGISTRY, INVENTORY_NOTES, EDGE_REGISTRY)
+
+ANNOTATIONS = REGISTRY_DIR / "sc_inventory_annotations.tsv"  # now GENERATED
+BASELINE_OUTPUTS = SC_DIR / "cascade_baseline/cascade_baseline_outputs.tsv"
+
+RULE_SOURCE_PATH = executable_facts.FST_REL
+# literature_status is the inventory vocabulary for the registry's
+# adjudication_status. It is a rendering, not an independent judgement.
+LITERATURE_STATUS = {"unadjudicated": "not_started", "adjudicated": "adjudicated"}
 
 STAGING_VIEW = SC_DIR / "sound_change_historical_staging_map.tsv"
 INVENTORY_VIEW = SC_DIR / "sound_change_inventory.tsv"
@@ -98,8 +117,63 @@ def banner(source_desc):
     ]
 
 
+# Columns a human source file may never contain: each names a fact that has a
+# real authority elsewhere, so a hand-typed copy is a second authority.
+FORBIDDEN_HUMAN_COLUMNS = {
+    "foma_definition_raw": "germanic.txt (tools/executable_facts.py)",
+    "rule_source_anchor": "germanic.txt (tools/executable_facts.py)",
+    "rule_source_path": "germanic.txt (tools/executable_facts.py)",
+    "rule_source_line": "computed for display only, never stored",
+    "cascade_position": "cascade_baseline/executable_model.tsv",
+    "exec_index": "cascade_baseline/executable_model.tsv",
+    "appears_in_compact_trace": "cascade_baseline/rule_coverage_census.tsv",
+    "trace_occurrence_count": "cascade_baseline/rule_coverage_census.tsv",
+    "firing_count": "cascade_baseline/rule_coverage_census.tsv",
+    "firing_lexemes": "cascade_baseline/rule_coverage_census.tsv",
+    "example_lexemes": "ambiguous; use illustrative_lexemes (human) or the census",
+    "trace_stage": "sc_registry.tsv pipeline_stage",
+    "literature_status": "sc_registry.tsv adjudication_status",
+}
+
+
+def validate_human_sources(notes):
+    """A hand-edited source may contain only human judgements."""
+    errors = []
+    if not notes:
+        return ["inventory notes: file is empty"]
+    for column, authority in FORBIDDEN_HUMAN_COLUMNS.items():
+        if column in notes[0]:
+            errors.append(
+                f"inventory notes: column {column!r} is machine-derived "
+                f"(authority: {authority}) and must not be hand-maintained")
+    for n in notes:
+        for column, value in n.items():
+            if column in ("notes", "review_note", "plain_description_draft"):
+                continue  # prose may legitimately mention a rule
+            if executable_facts.LINE_REF_RE.search(value or ""):
+                errors.append(
+                    f"inventory notes: {n['change_id']} column {column!r} "
+                    "contains a Foma source line number; line numbers are "
+                    "computed for display and never stored")
+    return errors
+
+
+def split_lexemes(value):
+    return [x.strip() for x in re.split(r"[;,]", value or "") if x.strip()]
+
+
+def load_corpus_concepts():
+    """The selected corpus, from the cascade baseline outputs."""
+    if not BASELINE_OUTPUTS.is_file():
+        return None
+    return {r["concept"] for r in read_tsv(BASELINE_OUTPUTS)}
+
+
 def validate_registry(reg, edges):
     errors = []
+    corpus = load_corpus_concepts()
+    if corpus is None:
+        corpus = set()
     counts = Counter(r["sc_id"] for r in reg)
     for sc, n in counts.items():
         if n != 1:
@@ -135,11 +209,30 @@ def validate_registry(reg, edges):
                 )
             if not e["witness_role"]:
                 errors.append(f"edges: {e['source_change_id']}->{e['target_change_id']} missing witness_role")
-            if not e["representative_lexemes"] or not e["representative_forms"] or not e["notes"]:
+            if not e["notes"]:
                 errors.append(
-                    f"edges: {e['source_change_id']}->{e['target_change_id']} chronology edge without "
-                    "witness lexemes/forms/notes"
+                    f"edges: {e['source_change_id']}->{e['target_change_id']} chronology edge "
+                    "without notes explaining the relation"
                 )
+            # A chronology edge that CLAIMS a live lexical demonstration must
+            # name real corpus items. An edge whose direction follows from
+            # independently established stages legitimately has no current
+            # witness, and inventing one to satisfy a validator would be
+            # fabricating evidence.
+            if e["evidence_basis"] == "independently_demonstrated":
+                if not e["representative_lexemes"] or not e["representative_forms"]:
+                    errors.append(
+                        f"edges: {e['source_change_id']}->{e['target_change_id']} claims an "
+                        "independently demonstrated relation but names no witness "
+                        "lexemes/forms (use evidence_basis=stage_entailed if the "
+                        "direction follows from the stages alone)"
+                    )
+                for lex in split_lexemes(e["representative_lexemes"]):
+                    if lex not in corpus:
+                        errors.append(
+                            f"edges: {e['source_change_id']}->{e['target_change_id']} names "
+                            f"witness {lex!r}, which is not in the selected corpus"
+                        )
             retired = {r["sc_id"] for r in reg if r["lifecycle_status"] == "retired"}
             if e["source_change_id"] in retired or e["target_change_id"] in retired:
                 errors.append(
@@ -175,17 +268,85 @@ def build_staging_view(reg):
     return tsv_text(b, header, rows)
 
 
-def build_inventory_view(reg, ann):
+ANNOTATION_HEADER = [
+    "change_id", "trace_stage", "rule_source_path", "rule_source_anchor",
+    "foma_definition_raw", "plain_description_draft", "appears_in_compact_trace",
+    "firing_count", "firing_lexemes", "illustrative_lexemes", "literature_status",
+    "order_sensitivity_status", "notes", "review_note", "needs_human_review",
+]
+
+
+def build_annotation_rows(reg, notes):
+    """Join human notes with the executable and corpus authorities.
+
+    Nothing mechanical is read from a hand-edited file. The Foma definition
+    and its anchor come from germanic.txt; the firing count and firing
+    lexemes come from the canonical trace/census; the stage and literature
+    status are renderings of registry columns.
+    """
+    facts = executable_facts.define_facts()
+    firing = rule_coverage_census.load_firing_summary(
+        rule_coverage_census.FULL_TRACE.read_text(encoding="utf-8"))
+    reg_by_id = {r["sc_id"]: r for r in reg}
+    rows = []
+    for n in sorted(notes, key=lambda n: n["change_id"]):
+        sc = n["change_id"]
+        r = reg_by_id.get(sc)
+        if r is None:
+            raise SystemExit(f"inventory notes: unknown SC {sc}")
+        ident = (r.get("fst_identifier") or "").strip()
+        fact = facts.get(ident) if ident else None
+        count, lexemes = firing.get(ident, (0, [])) if ident else (0, [])
+        status = r["adjudication_status"]
+        if status not in LITERATURE_STATUS:
+            raise SystemExit(f"{sc}: unmapped adjudication_status {status!r}")
+        rows.append([
+            sc,
+            r["pipeline_stage"],
+            RULE_SOURCE_PATH if fact else "",
+            fact.stable_anchor if fact else "",
+            fact.definition_raw if fact else "",
+            n["plain_description_draft"],
+            "yes" if count else "no",
+            str(count) if ident else "",
+            ", ".join(dict.fromkeys(lexemes)),
+            n["illustrative_lexemes"],
+            LITERATURE_STATUS[status],
+            n["order_sensitivity_status"],
+            n["notes"], n["review_note"], n["needs_human_review"],
+        ])
+    return rows
+
+
+def build_annotations_view(rows):
+    b = banner(
+        "registry/sc_registry.tsv + registry/sc_inventory_notes.tsv (human) "
+        "joined with Germanic/fsts/germanic.txt and the coverage census (machine)"
+    ) + [
+        "",
+        "rule_source_anchor is deliberately a STABLE anchor with no line number:",
+        "inserting lines above a definition must not dirty any committed file.",
+        "Run tools/executable_facts.py NAME for the current line.",
+        "",
+        "firing_count/firing_lexemes are the CURRENT corpus firing population",
+        "(machine evidence). illustrative_lexemes are examples a human chose",
+        "(editorial). The two are never interchangeable.",
+    ]
+    return tsv_text(b, ANNOTATION_HEADER, rows)
+
+
+def build_inventory_view(reg, ann_rows):
     header = [
         "change_id", "current_order", "display_name", "stage", "trace_stage",
         "rule_source_path", "rule_source_anchor", "foma_definition_raw",
-        "plain_description_draft", "appears_in_compact_trace", "trace_occurrence_count",
-        "example_lexemes", "literature_status", "order_sensitivity_status", "notes",
+        "plain_description_draft", "appears_in_compact_trace", "firing_count",
+        "firing_lexemes", "illustrative_lexemes", "literature_status",
+        "order_sensitivity_status", "notes",
         "entry_type", "include_in_volume", "historical_stage", "pipeline_stage",
         "canonical_change_id", "duplicate_group", "is_reader_facing", "review_note",
         "needs_human_review",
     ]
-    ann_by_id = {a["change_id"]: a for a in ann}
+    ann_by_id = {row[0]: dict(zip(ANNOTATION_HEADER, row)) for row in ann_rows}
     rows = []
     for r in sorted(reg, key=lambda r: r["sc_id"]):
         a = ann_by_id.get(r["sc_id"])
@@ -196,15 +357,17 @@ def build_inventory_view(reg, ann):
             r["sc_id"], r["inventory_order"], display, r["stage_label"],
             a["trace_stage"], a["rule_source_path"], a["rule_source_anchor"],
             a["foma_definition_raw"], a["plain_description_draft"],
-            a["appears_in_compact_trace"], a["trace_occurrence_count"],
-            a["example_lexemes"], a["literature_status"], a["order_sensitivity_status"],
+            a["appears_in_compact_trace"], a["firing_count"],
+            a["firing_lexemes"], a["illustrative_lexemes"],
+            a["literature_status"], a["order_sensitivity_status"],
             a["notes"], r["entry_type"], r["include_in_volume"],
             r["historical_stage_label"], r["pipeline_stage"], r["canonical_change_id"],
             r["duplicate_group"], r["is_reader_facing"], a["review_note"],
             a["needs_human_review"],
         ])
     b = banner(
-        "registry/sc_registry.tsv (metadata) + registry/sc_inventory_annotations.tsv (annotations)"
+        "registry/sc_registry.tsv + registry/sc_inventory_notes.tsv + "
+        "germanic.txt + rule_coverage_census"
     ) + [
         "current_order is the ARCHIVAL inventory order (registry inventory_order),",
         "not the executable cascade position; executable positions come from",
@@ -405,16 +568,19 @@ def build_settled_verdicts(reg):
 
 def build_all():
     reg = read_tsv(SC_REGISTRY)
-    ann = read_tsv(ANNOTATIONS)
+    notes = read_tsv(INVENTORY_NOTES)
     edges = read_tsv(EDGE_REGISTRY)
     errors = validate_registry(reg, edges)
+    errors += validate_human_sources(notes)
     if errors:
         for e in errors:
             print(f"REGISTRY ERROR: {e}", file=sys.stderr)
         raise SystemExit(1)
+    ann_rows = build_annotation_rows(reg, notes)
     return {
+        ANNOTATIONS: build_annotations_view(ann_rows),
         STAGING_VIEW: build_staging_view(reg),
-        INVENTORY_VIEW: build_inventory_view(reg, ann),
+        INVENTORY_VIEW: build_inventory_view(reg, ann_rows),
         EDGES_TSV: build_edges_tsv(edges),
         EDGES_JSON: build_edges_json(reg, edges),
         EDGES_DOT: build_edges_dot(reg, edges),

@@ -699,8 +699,17 @@ class ScosRegistryIdentityTests(unittest.TestCase):
             self.scos.registry_fst_identifiers(
                 SC_DIR / "registry/sc_registry.tsv"))
         self.assertEqual(by_id["SC043"].rule_name, "EAFBrightening")
-        # rows without a registry identifier are metadata-only, not targets
-        self.assertEqual(by_id["SC090"].rule_name, "")
+        # The registry is the ONE identity authority, and since the inventory
+        # authority repair it carries an fst_identifier for every SC -- the
+        # support and orthography stages included, whose identity used to
+        # survive only in a hand-typed annotation anchor.
+        idents = self.scos.registry_fst_identifiers(
+            SC_DIR / "registry/sc_registry.tsv")
+        self.assertEqual(idents.get("SC090"), "OECjCleanup")
+        self.assertEqual([sc for sc, name in idents.items() if not name], [])
+        # a row with no registry identifier is metadata-only, not a target
+        self.assertEqual(
+            self.scos.load_inventory(inventory, {})[0]["SC043"].rule_name, "")
         lookup = self.scos.inventory_rule_lookup(list(by_id.values()))
         self.assertNotIn("", lookup)
 

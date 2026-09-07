@@ -9,7 +9,9 @@ Classification: SOURCE (edit), GENERATED (regenerate, never edit), ARCHIVE
   identity, lifecycle, executable identifier/position, names, stage, scope,
   confidence, adjudication status/verdict/memo, chronology-node facts).
 - `registry/chronology_edges.tsv` — canonical chronology-edge registry.
-- `registry/sc_inventory_annotations.tsv` — inventory-view annotations.
+- `registry/sc_inventory_notes.tsv` — SOURCE: human inventory judgements only.
+- `registry/sc_inventory_annotations.tsv` — GENERATED projection of those notes
+  joined with `germanic.txt` and the coverage census.
 - `audits/` — adjudication memos (`ADJUDICATION_TEMPLATE.md` is the template).
 - `reader_facing/`, `book_dossiers/`, `literature_dossiers/`, `change_entries/`
   — prose layers.
