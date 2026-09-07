@@ -490,6 +490,92 @@ class ArchiveCurrentSeparationTests(unittest.TestCase):
             self.assertIn("ARCHIVE", proc.stderr, name)
 
 
+class FrozenArchivePositionSemanticsTests(unittest.TestCase):
+    """`cascade_position` (live) vs frozen `current_cascade_position`.
+
+    Two similarly-named fields mean different things and MUST NOT be
+    conflated:
+
+    * `audits/sc001-sc020-chronology-audit.tsv` `cascade_position` is a LIVE
+      projection and must track `cascade_baseline/cascade_order_manifest.tsv`;
+    * `cascade_baseline/historical_audit_table.tsv` `current_cascade_position`
+      is an ARCHIVE field meaning "position current at the time the snapshot
+      was frozen". It must never be resynchronized when a later adjudication
+      inserts, retires, or moves an executable rule, and drift from the live
+      cascade is expected and meaningful.
+    """
+
+    FROZEN = BASELINE_DIR / "historical_audit_table.tsv"
+    LIVE = SC_DIR / "audits/sc001-sc020-chronology-audit.tsv"
+    MANIFEST = BASELINE_DIR / "cascade_order_manifest.tsv"
+    ARCHIVE_WRITER = "build_historical_audit_table.py"
+
+    def test_frozen_historical_audit_is_not_a_live_position_authority(self):
+        banner = "\n".join(
+            line for line in self.FROZEN.read_text(
+                encoding="utf-8").splitlines()[:20]
+            if line.startswith("#"))
+        self.assertIn("ARCHIVE / FROZEN", banner)
+        self.assertIn("current_cascade_position", banner,
+                      "the frozen archive must document that "
+                      "current_cascade_position is audit-time state")
+        self.assertRegex(banner, r"MUST NOT be\s*\n?#?\s*synchronized",
+                         "the frozen banner must forbid resynchronization")
+
+        # Only the archival builder may write the field; no live tool or test
+        # may read it as the current executable position.
+        readers = set()
+        for path in list((REPO_ROOT / "Germanic/tools").glob("*.py")) + \
+                list((REPO_ROOT / "Germanic/tests").glob("*.py")):
+            if path.name in (self.ARCHIVE_WRITER, Path(__file__).name):
+                continue
+            if "current_cascade_position" in path.read_text(encoding="utf-8"):
+                readers.add(path.name)
+        self.assertEqual(readers, set(),
+                         "current_cascade_position is a frozen archive field; "
+                         "no active tool/test may treat it as the current "
+                         "executable position")
+
+        # The frozen archive is neither generated nor finalized.
+        adjudicate = (TOOLS / "adjudicate.py").read_text(encoding="utf-8")
+        self.assertNotIn(f'"{self.ARCHIVE_WRITER}"',
+                         adjudicate.replace("'", '"'))
+        views = _load("generate_registry_views")
+        generated = {Path(p).name for p in views.build_all()}
+        self.assertNotIn(self.FROZEN.name, generated)
+
+    def test_live_chronology_audit_is_the_current_position_authority(self):
+        positions = {row["foma_identifier"]: row["position"]
+                     for row in _tsv_rows_skip_comments(self.MANIFEST)}
+        checked = 0
+        for row in _tsv_rows(self.LIVE):
+            pos = (row.get("cascade_position") or "").strip()
+            ident = (row.get("foma_identifier") or "").strip()
+            if not pos.isdigit() or ident not in positions:
+                continue
+            checked += 1
+            self.assertEqual(pos, positions[ident],
+                             f"{row['sc_id']}: live audit cascade_position "
+                             "must match the order manifest")
+        self.assertGreater(checked, 0, "live audit matrix yielded no rows")
+
+        # The cross-artifact current-position test must read the LIVE matrix,
+        # never the frozen archive.
+        cross = (REPO_ROOT / "Germanic/tests"
+                 / "test_sc_chronology_cross_artifact.py").read_text(
+                     encoding="utf-8")
+        self.assertIn("sc001-sc020-chronology-audit.tsv", cross)
+        self.assertNotIn("historical_audit_table", cross)
+
+    def test_control_plane_documents_the_distinction(self):
+        text = (SC_DIR / "registry/CONTROL_PLANE.md").read_text(
+            encoding="utf-8")
+        self.assertIn("current_cascade_position", text)
+        self.assertIn("audits/sc001-sc020-chronology-audit.tsv", text)
+        self.assertNotIn("current_order", text,
+                         "do not introduce another vague position synonym")
+
+
 class NoSupersededCurrentFactsTests(unittest.TestCase):
     """Current generated artifacts must not carry superseded facts as
     current (archival files stating them as history are legitimate)."""

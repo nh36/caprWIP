@@ -374,6 +374,12 @@ ARCHIVE_BANNER = """\
 # current_* columns were last refreshed at freeze time. Current facts live in
 # registry/sc_registry.tsv, its generated views, and oe_pipeline. Rewriting
 # requires build_historical_audit_table.py --allow-archival-rewrite.
+# SEMANTICS: current_* means "current at the time this audit snapshot was
+# frozen", NOT current repository state. current_cascade_position MUST NOT be
+# synchronized to later executable insertions/removals/reorders; drift from the
+# live cascade is expected and meaningful. The live projection is
+# audits/sc001-sc020-chronology-audit.tsv (column cascade_position), which does
+# track cascade_baseline/cascade_order_manifest.tsv.
 """
 
 

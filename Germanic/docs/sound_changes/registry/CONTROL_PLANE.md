@@ -61,6 +61,18 @@ to run unconditionally):
   `tools/build_rename_migration_manifest.py`) refuse to run without
   `--allow-archival-rewrite`. Current stage/scope/verdict authority is the
   registry; current positions come from the executable model.
+  - **Position-field semantics (do not conflate).** In the frozen archive the
+    `current_*` prefix means "current *at the time this snapshot was frozen*",
+    not current repository state. In particular
+    `historical_audit_table.tsv.current_cascade_position` MUST NOT be
+    synchronized to later executable insertions, removals, or reorders: it is
+    audit-time record, and it is *expected* to drift from the live cascade.
+    The live counterpart is `audits/sc001-sc020-chronology-audit.tsv`, whose
+    `cascade_position` column is a live projection and MUST match
+    `cascade_baseline/cascade_order_manifest.tsv` (enforced by
+    `test_sc_chronology_cross_artifact.py::test_cascade_position_matches_order_manifest`).
+    `exec_index` in the executable model is the complete physical execution
+    index. No further vague position synonym may be introduced.
 - `Germanic/docs/archive/` — DEV_NOTES.md, WORKFLOW.md, CANONICAL_STATE.md, HISTORICAL_CHRONOLOGY_AUDIT_PLAN.md, canonical_state_freeze_report.md (tombstones remain at old paths)
 - `sound_changes/archive/next_batch_candidates.tsv` — retired candidate board; the registry owns lifecycle/candidate status
 - `order_tests/chronology_cards/*.md` and `chronology_cards/chronology_graph_nodes.tsv` — per-SC evidence records from past audits; cite but do not treat their metadata as current
