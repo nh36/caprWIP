@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `72`
-- total edge count: `142`
+- total edge count: `145`
 
 ### Node counts by card_type
 
@@ -33,10 +33,10 @@ chronology constraints.
 | `broad_far_chronology` | 17 |
 | `near_reciprocal_chronology` | 2 |
 | `no_break_search_boundary` | 23 |
-| `one_sided_chronology` | 37 |
+| `one_sided_chronology` | 38 |
 | `reciprocal_chronology` | 40 |
 | `runner_limited_boundary` | 20 |
-| `technical_computational` | 3 |
+| `technical_computational` | 5 |
 
 ## Chronology edges
 
@@ -52,7 +52,8 @@ chronology constraints.
 1. `SC024 -> SC025` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `month; spoon`; forms: PGmc `*mḗnōθz` yields expected OE `mōnaþ`, but with SC024 displaced after SC025/SC101 the cascade yields `mānaþ`; `*spḗnuz` likewise yields `spān` instead of `spōn`
 1. `SC024 -> SC101` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sheep; year; sleep`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but with SC024 displaced after SC025/SC101 the cascade yields `sċāp`; `*jḗrą` yields `ġār` instead of `ġēar`; `*slḗpaną` yields `slāpan` instead of `slǣpan`
 1. `SC024 -> SC102` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `sow`; forms: PGmc `*sḗaną` yields expected OE `sāwan`, but with SC102 displaced before SC024 the insertion environment `{*ā} _ V` never exists (the pre-SC024 form is still `*sēaną`), so no hiatus *w is ever inserted and the output lacks the historical consonant (`**sāan`-type)
-1. `SC025 -> SC004` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stone; home`; forms: PGmc `*stáinaz` yields expected OE `stān`, but with SC025 displaced after SC004 the cascade yields `stōn`; `*xáimaz` yields `hōm` instead of `hām`
+1. `SC025 -> SC004` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stone; home`; forms: PGmc `*stáinaz` yields expected OE `stān` and `*xáimaz` yields `hām`; with SC004 displaced before SC025 (the equivalent test after the SC025/SC104 split) the new *ā < *ai is nasalized and then rounded, and the cascade yields `stōn` and `hōm`
+1. `SC103 -> SC104` (one_sided_chronology; stage_entailed; witness role: out_of_domain) — lexemes: `fist`; forms: `none — SC103's low-vowel branch has no live corpus witness; its sole firing, `*fúnxstiz` > `*fū́xsti`, takes the high-vowel branch and never reaches SC104`
 1. `SC101 -> SC004` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `loath; rope; token; soul; ghost`; forms: PGmc `*láiθaz` yields expected OE `lāþ`, but with SC101 displaced after SC004 the cascade yields `lǣþ`; likewise `rǣp`, `tǣcn`, `sǣwol`, `ġēast` for `rāp`, `tācn`, `sāwol`, `gāst`
 1. `SC101 -> SC056` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sheep; year`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but with SC101 displaced after SC056 the cascade yields `sċǣp`; `*jḗrą` likewise yields `ġǣr` instead of `ġēar`
 1. `SC026 -> SC027` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `goose; youth`; forms: PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC026 is shifted later; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. This is an EXECUTABLE dependency, not a historical interval: SC026 must read the nasal that SC027 deletes (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103
@@ -150,6 +151,8 @@ chronology constraints.
 1. `SC023 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC024 -> EarlyEnglishLineChanges` (runner_limited_boundary)
 1. `SC102 -> SC101` (no_break_search_boundary)
+1. `SC025 -> SC104` (technical_computational)
+1. `SC026 -> SC104` (technical_computational)
 1. `SC026 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC027 -> SC087` (no_break_search_boundary)
 1. `SC028 -> PWGmcChanges` (runner_limited_boundary)

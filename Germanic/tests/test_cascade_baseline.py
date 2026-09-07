@@ -153,13 +153,16 @@ class OrderManifestTests(unittest.TestCase):
 
     def test_manifest_begins_with_pwgmc_block(self):
         pwgmc = [r for r in self.rows if r["origin_block"] == "EarlyEnglishLineChanges"]
-        # SC096 RootNounNomZLoss is composed at the very head of the pipeline
-        # (it must precede PWGmcIjContraction, which creates monosyllabic
-        # *fríundz from *fríjōndz); the EarlyEnglishLineChanges block is
-        # expanded immediately after it, occupying contiguous positions.
-        self.assertEqual(self.rows[0]["foma_identifier"], "RootNounNomZLoss",
-                         "RootNounNomZLoss must lead the executable order")
-        head = self.rows[1: 1 + len(pwgmc)]
+        # SC103 PGmcNasalLossBeforeX is pan-Germanic and leads the pipeline.
+        # SC096 RootNounNomZLoss follows immediately (it must precede
+        # PWGmcIjContraction, which creates monosyllabic *fríundz from
+        # *fríjōndz); the EarlyEnglishLineChanges block is expanded
+        # immediately after it, occupying contiguous positions.
+        self.assertEqual(self.rows[0]["foma_identifier"], "PGmcNasalLossBeforeX",
+                         "the pan-Germanic SC103 must lead the executable order")
+        self.assertEqual(self.rows[1]["foma_identifier"], "RootNounNomZLoss",
+                         "RootNounNomZLoss must lead the West Germanic block")
+        head = self.rows[2: 2 + len(pwgmc)]
         self.assertTrue(all(r["origin_block"] == "EarlyEnglishLineChanges" for r in head),
                         "EarlyEnglishLineChanges members must follow RootNounNomZLoss contiguously")
 

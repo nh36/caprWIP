@@ -112,10 +112,10 @@ class CrossArtifactTests(unittest.TestCase):
                          "EAFAiMonophthongization")
         self.assertEqual(self.staging["SC004"]["fst_identifier"].strip(),
                          "EAFAiMonophthongization")
-        # Position 30 after the SC026/SC027 nasal-spirant adjudication
-        # inserted SC103 PGmcNasalLossBeforeX at position 23 (the SC024
-        # e1-complex split had previously left it at 29).
-        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 30)
+        # Position 31 after the SC025/SC104 nasalized-low-vowel adjudication
+        # moved SC103 PGmcNasalLossBeforeX to position 1 and inserted SC104
+        # EAFNasalizedLowRounding at position 29.
+        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 31)
 
     def test_historical_stage_agrees_audit_inventory_staging(self):
         """Historical stage (canonical long form) must agree across audit,

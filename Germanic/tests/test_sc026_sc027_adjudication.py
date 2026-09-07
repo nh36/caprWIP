@@ -151,12 +151,23 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
                 "arises long after this stage")
 
     def test_low_vowel_outcome_is_rounded(self):
+        # Both feeders now produce the long nasalized low vowel *ą̄ (spelled
+        # {*ã}); the rounding to *ō is the separate Anglo-Frisian SC104
+        # EAFNasalizedLowRounding (Campbell §119 p. 44, §121 p. 47,
+        # §128 n. 1 p. 50; Fulk §4.11 p. 72; Sievers-Brunner §80 Anm. 1).
         for name in ("EAFNasalSpirantLengthening", "PGmcNasalLossBeforeX"):
             body = self.define_body(name)
             self.assertRegex(
+                body, r"\{\*a\}\s*->\s*\{\*ã\}",
+                f"{name}: *a is lengthened and nasalized to *ą̄")
+            self.assertNotRegex(
                 body, r"\{\*a\}\s*->\s*\{\*ō\}",
-                f"{name}: nasalized *a is rounded to *ō in Anglo-Frisian "
-                "(Campbell §119, §121; Sievers-Brunner §80 Anm. 1)")
+                f"{name}: the Anglo-Frisian rounding must not be telescoped "
+                "back into this rule")
+        self.assertRegex(
+            self.define_body("EAFNasalizedLowRounding"),
+            r"\{\*ã\}\s*->\s*\{\*ō\}",
+            "SC104 rounds the long nasalized low vowel in Anglo-Frisian")
 
     # ------------------------------------------------------------------
     # SC103 exists, is pan-Germanic, and precedes the North Sea law
@@ -247,8 +258,11 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
 
     @requires_runtime
     def test_north_sea_law_fires_on_goose_and_youth(self):
+        # SC103 now stands at the head of the cascade, so its snapshot still
+        # shows the inherited final *-z on goose. Both steps of the North Sea
+        # law leave a NASALIZED low vowel; SC104 rounds it later.
         cases = {
-            "goose": (["*g*á*n*s"], ["*g*ō*n*s"], ["*g*ō*s"]),
+            "goose": (["*g*á*n*s*z"], ["*g*ã*n*s"], ["*g*ã*s"]),
             "youth": (["*j*ú*g*u*n*θ"], ["*j*ú*g*ū*n*θ"], ["*j*ú*g*ū*θ"]),
         }
         for concept, (before, mid, after) in cases.items():
@@ -264,16 +278,25 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
     @requires_runtime
     def test_fist_is_handled_by_the_pan_germanic_rule_alone(self):
         form = self.baseline["fist"]["proto"].lstrip("*")
-        self.assertEqual(self.stage("pnwgmc_n_stem_n_loss", form),
-                         ["*f*ú*n*x*s*t*i"])
+        # SC103 now heads the cascade, so the state immediately before it is
+        # the prelude stage PGmcGmSimplification.
+        self.assertEqual(self.stage("pgmc_gm_simplification", form),
+                         ["*f*ú*n*x*s*t*i*z"])
         after_pgmc = self.stage("pgmc_nasal_loss_before_x", form)
-        self.assertEqual(after_pgmc, ["*f*ū*x*s*t*i"],
+        self.assertEqual(after_pgmc, ["*f*ū*x*s*t*i*z"],
                          "SC103 lengthens and deletes the nasal before *x")
-        # Neither step of the North Sea Germanic law may touch it.
+        # Neither step of the North Sea Germanic law may touch it: the state
+        # entering the law (after SC023 PNWGmcNStemNLoss, the stage
+        # immediately preceding SC026) survives both steps unchanged.
+        before_law = self.stage("pnwgmc_n_stem_n_loss", form)
+        self.assertEqual(before_law, ["*f*ū*x*s*t*i"])
         self.assertEqual(self.stage("eaf_nasal_spirant_lengthening", form),
-                         after_pgmc)
+                         before_law)
         self.assertEqual(self.stage("eaf_nasal_spirant_loss", form),
-                         after_pgmc)
+                         before_law)
+        # and the pan-Germanic rule never rounds: *ą̄ is not created here
+        self.assertNotIn("*ã", before_law[0])
+        self.assertNotIn("*ō", before_law[0])
 
     def test_surface_outputs_are_unchanged(self):
         for concept, attested in {**NSGMC_WITNESSES, **PGMC_X_WITNESS}.items():

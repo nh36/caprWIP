@@ -15,7 +15,7 @@ digraph first_break_chronology {
   "SC022" [label="SC022\nCommon Germanic Mn Dissimilation"];
   "SC023" [label="SC023\nProto-Germanic Word-Final N Loss"];
   "SC024" [label="SC024\nNWGmc Long E1 Lowering"];
-  "SC025" [label="SC025\nEAF Long A Nasal Rounding"];
+  "SC025" [label="SC025\nNorth Sea Germanic nasalization of long a before a nasal"];
   "SC026" [label="SC026\nNorth Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening)"];
   "SC027" [label="SC027\nNorth Sea Germanic nasal-spirant law (step 2: loss of the nasal)"];
   "SC028" [label="SC028\nProto-Northwest Germanic Preconsonantal X Loss"];
@@ -103,6 +103,9 @@ digraph first_break_chronology {
   "SC024" -> "SC102" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC102" -> "SC101" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC025" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC025" -> "SC104" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC026" -> "SC104" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC103" -> "SC104" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC101" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC101" -> "SC056" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC026" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];

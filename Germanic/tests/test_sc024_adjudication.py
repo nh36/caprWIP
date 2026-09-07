@@ -155,6 +155,11 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         after = self.stage("eaf_long_a_nasal_rounding", form)
         return before, after
 
+    def across_nasalized_rounding(self, form):
+        before = self.stage("eaf_long_a_nasal_rounding", form)
+        after = self.stage("eaf_nasalized_low_rounding", form)
+        return before, after
+
     def across_fronting(self, form):
         before = self.stage("eaf_long_a_nasal_rounding", form)
         after = self.stage("eaf_long_a_fronting", form)
@@ -177,10 +182,15 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
 
     def test_change_b_rules_consume_long_a(self):
         self.assertIsNotNone(re.search(
-            r"define\s+EAFLongANasalRounding\s*\[\s*\{\*ā\}\s*->\s*\{\*ō\}"
+            r"define\s+EAFLongANasalRounding\s*\[\s*\{\*ā\}\s*->\s*\{\*ã\}"
             r"\s*\|\|\s*_\s*EnglishStarNasal\s*\];",
             self.uncommented,
-        ), "SC025 must round the historical *ā before nasals")
+        ), "SC025 must nasalize the historical *ā before nasals")
+        self.assertIsNotNone(re.search(
+            r"define\s+EAFNasalizedLowRounding\s*\[\s*"
+            r"\{\*ã\}\s*->\s*\{\*ō\}\s*\];",
+            self.uncommented,
+        ), "SC104 must round the long nasalized low vowel to *ō")
         self.assertIsNotNone(re.search(
             r"define\s+EAFLongAFronting\s*\[\s*"
             r"\{\*ā\}\s*->\s*\{\*ǣ\}\s*\|\|\s*_\s*"
@@ -209,14 +219,16 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         )
 
     def test_cascade_positions_encode_the_chronology(self):
-        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 4)
-        # Each shifted by one when the SC026/SC027 nasal-spirant adjudication
-        # inserted SC103 PGmcNasalLossBeforeX at position 23. The relative
+        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 5)
+        # Shifted when the SC025/SC104 nasalized-low-vowel adjudication moved
+        # the pan-Germanic SC103 PGmcNasalLossBeforeX to position 1 and
+        # inserted SC104 EAFNasalizedLowRounding after SC025. The relative
         # order asserted here is unchanged.
         self.assertEqual(self.positions.get("EAFHiatusWInsertion"), 27)
         self.assertEqual(self.positions.get("EAFLongANasalRounding"), 28)
-        self.assertEqual(self.positions.get("EAFLongAFronting"), 29)
-        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 30)
+        self.assertEqual(self.positions.get("EAFNasalizedLowRounding"), 29)
+        self.assertEqual(self.positions.get("EAFLongAFronting"), 30)
+        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 31)
         # SC024 is early pan-NWGmc: it must precede the genuinely PWGmc
         # innovations (early i-apocope, *ij contraction, j-gemination,
         # syllabic *j, dental hardening)
@@ -294,16 +306,26 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
     # ------------------------------------------------------------------
 
     @requires_runtime
-    def test_nasal_branch_rounds_the_intermediate_a(self):
+    def test_nasal_branch_nasalizes_then_rounds_the_intermediate_a(self):
+        """SC025 only nasalizes (*ā > *ą̄, spelled {*ã}); the rounding to *ō is
+        the separate Anglo-Frisian SC104 EAFNasalizedLowRounding, which the
+        SC025/SC104 adjudication split out of the old telescoped rule."""
         for concept in sorted(NASAL_BRANCH_CONCEPTS):
             row = self.baseline[concept]
             form = row["proto"].lstrip("*")
             before, after = self.across_rounding(form)
             self.assertNotEqual(
                 before, after,
-                f"{concept} must be rounded by SC025 EAFLongANasalRounding",
+                f"{concept} must be nasalized by SC025 EAFLongANasalRounding",
+            )
+            self.assertIn("*ã", after[0])
+            before, after = self.across_nasalized_rounding(form)
+            self.assertNotEqual(
+                before, after,
+                f"{concept} must be rounded by SC104 EAFNasalizedLowRounding",
             )
             self.assertIn("*ō", after[0])
+            self.assertNotIn("*ã", after[0])
         self.assertEqual(self.baseline["month"]["outputs"], "mōnaþ")
         self.assertEqual(self.baseline["spoon"]["outputs"], "spōn")
 
@@ -403,7 +425,10 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertEqual(sc025["fst_identifier"], "EAFLongANasalRounding")
         self.assertEqual(sc025["hist_stage"], "eaf")
         self.assertEqual(sc025["hist_scope"], "north_sea_germanic")
-        self.assertEqual(sc025["verdict"], "REFORMULATE/REORDER")
+        # SC025 was itself split by the SC025/SC104 nasalized-low-vowel
+        # adjudication: it now states only the nasalization, and the
+        # Anglo-Frisian rounding is SC104.
+        self.assertEqual(sc025["verdict"], "SPLIT/REFORMULATE")
         self.assertEqual(sc101["fst_identifier"], "EAFLongAFronting")
         self.assertEqual(sc101["hist_stage"], "eaf")
         self.assertEqual(sc101["hist_scope"], "north_sea_germanic")
@@ -429,8 +454,12 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
                          "awaits direct source-led adjudication")
         for row in (sc024, sc025, sc101, sc102):
             self.assertEqual(row["adjudication_status"], "adjudicated")
+        for row in (sc024, sc101, sc102):
             self.assertIn("sc024-sc025-sc101-e1-complex-adjudication.md",
                           row["adjudication_memo"])
+        # SC025's governing memo is now the nasalized-low-vowel adjudication
+        self.assertIn("sc025-sc104-nasalized-low-vowel-adjudication.md",
+                      sc025["adjudication_memo"])
 
     def test_staging_map_view_matches(self):
         staging = {r["sc_id"]: r for r in _tsv_rows(STAGING_MAP)}
@@ -507,7 +536,7 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             ("024-long-e-lowering.md", "{#rule-PNWGmcLongELowering}",
              "[@RingeTaylor2014, pp. 11--13]"),
             ("025-long-a-nasal-rounding.md", "{#rule-EAFLongANasalRounding}",
-             "[@RingeTaylor2014, pp. 150--152]"),
+             "[@RingeTaylor2014, pp. 150--151]"),
             ("101-long-a-fronting.md", "{#rule-EAFLongAFronting}",
              "[@RingeTaylor2014, pp. 146--150"),
             ("102-hiatus-w-insertion.md", "{#rule-EAFHiatusWInsertion}",

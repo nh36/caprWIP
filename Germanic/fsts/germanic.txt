@@ -536,6 +536,13 @@ define PGmcStarVowel [
     {*ø} |
     {*ā} |
     {*ą} |
+    # Long nasalized low vowel — the handbooks' *ą̄ (Campbell §119 p. 44, §121
+    # p. 47, §128 n. 1 p. 50, Fulk §4.1 p. 55 and §4.11 p. 72, Ringe vol. 1
+    # §3.2.7(ii) pp. 149-50, R/T vol. 2 §5.1.2 p. 142). CAPR spells it with the
+    # SINGLE codepoint U+00E3 rather than "ą" + combining macron: foma's brace
+    # notation does not fuse a base letter with a combining diacritic, so a
+    # two-codepoint {*ą̄} silently never matches. See EAFNasalizedLowRounding.
+    {*ã} |
     {*ē} |
     {*ę} |
     {*ī} |
@@ -650,6 +657,7 @@ define PGmcStarBackVowel [
     {*ā} |
     {*ō} |
     {*ū} |
+    {*ã} |  # long nasalized low vowel (*ą̄) — back, like its oral counterpart *ā
     {*ɑ} |
     {*ɔ} |
     {*ʊ} |
@@ -982,7 +990,7 @@ define EnglishStarLongDiphthong [
 
 define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
 
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ}];
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ} | {*ã}];
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ą} |
@@ -2394,20 +2402,64 @@ define EAFHiatusWInsertion [
     [..] -> {*w} || {*ā} _ EnglishStarVocalic
 ];
 
-# SC025 EAFLongANasalRounding (reformulated from PNWGmcLongENasalRounding;
-# see audits/sc024-sc025-sc101-e1-complex-adjudication.md).
-# Northern West Germanic / North Sea Germanic rounding of nasalized *ā:
-# *ā > [ą̄] > *ō before a nasal (R/T vol.2 §5.1.2 pp. 150-152; Campbell
-# §127). Input is the historical *ā of that stage — including *ā < *ē₁
-# via PNWGmcLongELowering: *mānōþ- > mōnaþ, *spānuz > spōn (R/T p. 11).
-# OS rounding is variable/dialectal but real (ōdar, sōd beside quān,
-# sān(o)), which shows nasalization occurred in OS too — hence North Sea
-# Germanic scope, not Anglo-Frisian (R/T pp. 150-151).
-# Must precede EAFAiMonophthongization: *ā < *ai is NOT rounded before
-# nasals (hām < *xáimaz), because it arose only after this change.
-# The nasal environment is the executable proxy for nasalization.
+# SC025 EAFLongANasalRounding — RE-ADJUDICATED (sc025-sc104-nasalized-low-vowel
+# -adjudication.md): this rule is now the NASALIZATION step only. The rounding
+# it used to perform has been split out as EAFNasalizedLowRounding (SC104)
+# below, because it is one change shared with two other sources of *ą̄.
+# Northern West Germanic / North Sea Germanic nasalization of *ā before a
+# RETAINED nasal: *ā > *ą̄ (R/T vol. 2 §5.1.2 p. 142 "Stressed low vowels were
+# nasalized when immediately followed by a nasal in the northern WGmc
+# dialects"; Campbell §127 p. 50; Fulk §4.12 p. 72 "reflected everywhere as ō,
+# presumably from earlier ą̄"). Input is the historical *ā of that stage —
+# including *ā < *ē₁ via SC024: *mānōþ- > mōnaþ, *spānuz > spōn (R/T p. 11).
+# SCOPE: north_sea_germanic. OS shows the nasalization (its low vowel behaves
+# as a unit with OE/OFris here, R/T pp. 142-4); what OS mostly does NOT share
+# is the later rounding, which is why the two steps carry different scopes.
+# The conditioning nasal SURVIVES (mōnaþ, spōn keep their -n-), unlike in the
+# nasal-spirant law; that is the whole difference between the two feeders.
+# NOTE: the acute/oral contrast now does the work that a stipulated ordering
+# used to do. *ā < *ai (SC004) is ORAL and therefore simply not an input to
+# the rounding rule, so hām/stān are protected segmentally rather than by
+# cascade position (Fulk §4.1 p. 55: *ą̄ "did not fall together with OE ā < ai").
 define EAFLongANasalRounding [
-    {*ā} -> {*ō} || _ EnglishStarNasal
+    {*ā} -> {*ã} || _ EnglishStarNasal
+];
+
+# SC104 EAFNasalizedLowRounding — the common Anglo-Frisian rounding of the long
+# nasalized low vowel: *ą̄ > *ō, unconditioned (the nasal environment is already
+# encoded in the segment).
+# THIS IS ONE HISTORICAL CHANGE WITH THREE FEEDING SOURCES:
+#   (a) PGmc *-Nx-           -> *ą̄  (PGmcNasalLossBeforeX, SC103; Campbell §119)
+#   (b) NSGmc nasal-spirant  -> *ą̄  (EAFNasalSpirantLengthening, SC026; §121)
+#   (c) *ā before retained N -> *ą̄  (EAFLongANasalRounding, SC025; §127)
+# Campbell §128 n. 1 p. 50 states the convergence outright: the rounding
+# "affected ą̄ from Prim. Gmc. ą̄ (§119) and from Ingvaeonic ą̄ (§121) at the same
+# time" as the *ą̄ of §127. R/T vol. 2 §5.1.2 p. 142: "Rounding affected not
+# only the nasalized low vowels discussed below, but also those in the list at
+# the beginning of 5.1.1 and the examples of */anh/ = *[ą̄x] inherited from
+# PGmc." Brunner §64 p. 58 and §69 p. 59 likewise merge all three with Gmc *ō
+# "nach Aufgabe der Nasalierung".
+# SCOPE: anglo_frisian, NOT North Sea Germanic. Campbell §121 p. 47 "West Gmc.
+# ą̄ > ā in OS only, while in OFris. and OE it remained nasalized, and was
+# ultimately developed to ō"; Campbell §119 p. 44 (this *ą̄ "became ā in Goth.,
+# North Gmc., OHG, and OS"); Fulk §4.11 p. 72 "yields ō in Anglo-Frisian ...
+# but either ā or ō in OS (whereas PGmc. ą̄ is always reflected as ā)"; Ringe
+# vol. 1 §3.2.7(ii) pp. 149-50 "the low vowel was rounded ... in the
+# northernmost dialects of WGmc ('Anglo-Frisian')"; Luick §301 p. 276 heads the
+# whole set "der anglofriesischen Dialektgruppe eigentümliche Lautwandlungen".
+# R/T p. 142 call it "a parallel development of the diverging northern
+# dialects" — i.e. later than the common NSGmc nasalization, which is exactly
+# why nasalization (SC025/SC026) and rounding (here) are separated.
+# ONLY THE LONG vowel is rounded here. Short nasalized *ą > o is a separate,
+# dialectally restricted change (OFris. and Mercian noma, lomb, hond: Fulk
+# §4.12 p. 72 and n. 2; Campbell §130), and WS — the dialect CAPR targets —
+# keeps a (band, sang). R/T p. 142: rounding applied "when stressed".
+# CHRONOLOGY: must precede i-umlaut, since the product merges with inherited
+# *ō "already in prehistoric OE" (Campbell §128 n. 1 p. 50) and then umlauts
+# with it (ēst, gēs). Its position relative to SC101/SC004 carries no claim:
+# *ą̄ and oral *ā are different segments, so neither can bleed the other.
+define EAFNasalizedLowRounding [
+    {*ã} -> {*ō}
 ];
 
 # SC101 EAFLongAFronting (new identity from the SC024 split; see
@@ -3023,16 +3075,34 @@ define OEWsPalatalUmlaut [
 # as a separate, later change merely "similar"/"comparable" to this one.
 # Only *a, *i, *u occur here: Fulk §4.1 "The vowels e and o did not occur in
 # this environment"; cf. Campbell §116 n. 4, §119.
-# The nasalized *ą̄ of this change is rounded to *ō in Anglo-Frisian exactly as
-# the nasalized *ą̄ of the later law is (Campbell §119: OE fōn, brōhte, þōhte;
-# Fulk §4.1; Sievers-Brunner §80 Anm. 1). CAPR telescopes that rounding into the
-# mapping here, as EAFNasalSpirantLengthening does; the shared-rounding question
-# is recorded as an SC025 follow-up in the adjudication memo.
+# WHAT THE RULE DOES: despite the short identifier, this is the full
+# three-part change of Campbell §119 p. 44 — "loss of the nasal consonant, and
+# compensatory lengthening and nasalization of the vowel" (Fulk's heading for
+# §4.1 p. 55 is "Compensatory lengthening upon loss of a nasal consonant").
+# A SHORT input vowel therefore yields a LONG one; the acute-marked inputs lose
+# their stress diacritic because CAPR has no stressed long low/back tier, so
+# stress is absorbed into length exactly as in EAFNasalSpirantLengthening.
+# OUTPUT IS NASALIZED, NOT ROUNDED. Fulk §4.1 p. 55: the lengthened vowels
+# "may have remained nasalized for a considerable time, well past the close of
+# the NWGmc. period, since ą̄ produced this way developed to ō in Anglo-Frisian
+# ... and did not fall together with OE ā < ai". Ringe vol. 1 §3.2.7(ii)
+# pp. 149-50 reconstructs PGmc *hanhaną = *[xɑ̃:xanɑ̃] outright. The rounding is
+# a much later Anglo-Frisian development shared with the two other sources of
+# *ą̄ (EAFNasalizedLowRounding below); a Proto-Germanic rule must not
+# anticipate it, or the Gothic/Norse/OHG/OS outcome would be misrepresented.
+# Campbell §119 p. 44 is explicit that this *ą̄ "became ā in Goth., North Gmc.,
+# OHG, and OS", and only "in OE and OFris." was it rounded (Go. OHG brāhta :
+# OE brōhte, Fulk §4.11 p. 72).
+# The high vowels take NO explicit nasalized tier: Campbell §119 p. 44 and §121
+# p. 47 state that *ī̃ and *ū̃ "subsequently develop like original ī and ū", and
+# Brunner §67 p. 59 says nasalized *ī merged with old *ī "nach Aufgabe der
+# Nasalierung". Their nasalization has no independent consequence, so
+# representing it would add unused states. See the adjudication memo.
 define PGmcNasalLossBeforeX [
-    {*a} -> {*ō} || _ EnglishStarNasal {*x},
+    {*a} -> {*ã} || _ EnglishStarNasal {*x},
     {*i} -> {*ī} || _ EnglishStarNasal {*x},
     {*u} -> {*ū} || _ EnglishStarNasal {*x},
-    {*á} -> {*ō} || _ EnglishStarNasal {*x},
+    {*á} -> {*ã} || _ EnglishStarNasal {*x},
     {*í} -> {*ī} || _ EnglishStarNasal {*x},
     {*ú} -> {*ū} || _ EnglishStarNasal {*x}
 ] .o. [
@@ -3054,15 +3124,25 @@ define PGmcNasalLossBeforeX [
 # Domain: *mf, *nþ, *ns only (EnglishStarNSGmcSpirant), never *nx.
 # Input vowels: *a, *i, *u only — *e and *o do not occur before nasal + obstruent
 # in Germanic (Fulk §4.1), and *æ arises far later than this stage.
-# *a -> *ō telescopes NSGmc lengthening (*a > *ą̄) with the Anglo-Frisian
-# rounding of nasalized *ą̄ (Campbell §121; Sievers-Brunner §80 Anm. 1).
+# OUTPUT FOR *a IS *ą̄, NOT *ō. Campbell §121 p. 47: the groups "reject the
+# nasal consonant with compensatory lengthening and nasalization of the
+# preceding vowel to ą̄, ī̃, ū̃ ... West Gmc. ą̄ > ā in OS only, while in OFris.
+# and OE it remained nasalized, and was ultimately developed to ō". Fulk §4.11
+# p. 72: "The change thus affects mf, ns, nþ and produces ą̄, ī̃, ū̃. The first of
+# these yields ō in Anglo-Frisian (as does ą̄ inherited from PGmc.)". R/T vol. 2
+# §5.1.1 pp. 139-41 write every outcome as a nasalized vowel (*gą̄s, *ą̄sti,
+# *ą̄sla). The rounding is the separate, later EAFNasalizedLowRounding.
+# The high branches stay unnasalized in the model: Campbell §121 p. 47 says
+# *ī̃/*ū̃ "subsequently develop like original ī and ū"; nothing later depends on
+# their nasality (Brunner §67 p. 59, §186.1).
 # CHRONOLOGY: must precede OE i-umlaut, or umlauted vowels are not lengthened.
 define EAFNasalSpirantLengthening [
-    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*a} -> {*ã} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
-    # Stressed variants (*á -> *ō: stress absorbed into length, no *ṓ branch):
-    {*á} -> {*ō} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    # Stressed variants (*á -> *ã: stress absorbed into length, no stressed
+    # long low tier exists):
+    {*á} -> {*ã} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*í} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant
 ];
@@ -3423,6 +3503,17 @@ define OERMetathesis [
 # Note: pipeline order reflects FST composition dependencies, not strict chronology.
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE ( # capr:bundle
+    # SC103 Proto-Germanic nasal loss before *x (Campbell §119 p.44; Fulk
+    # §4.1 p.55; Ringe vol.1 §3.2.7(ii) pp.149-150). This is a PAN-GERMANIC
+    # change — Gothic, North Germanic, Old High German and Old Saxon all
+    # share its output — so it is composed at the absolute head of the
+    # PGmc→OE pipeline, ahead of even the pre-PWGmc SC096 below. Its
+    # earlier holding-zone slot (beside SC022/SC023, after ~22 NWGmc and
+    # PWGmc innovations) was an editorial artifact, not a historical claim.
+    # It creates the *xst cluster of *fúnxstiz > *fū́xstiz that SC028 then
+    # simplifies, and its nasalized low output *ã is rounded much later by
+    # SC104 EAFNasalizedLowRounding.
+    PGmcNasalLossBeforeX
     # SC096 root-noun nominative *-z loss (pre-PWGmc; Dossier A, memo
     # §§5-6). Composed at the very head of the PGmc→OE pipeline: it must
     # precede PWGmcIjContraction (inside EarlyEnglishLineChanges), which
@@ -3430,7 +3521,7 @@ define EnglishProtoToOE ( # capr:bundle
     # *fríundz — friend must NOT meet this rule in contracted shape (its
     # *-z fell by SC020). The early slot also matches the change's
     # pre-PWGmc date.
-    RootNounNomZLoss
+    .o. RootNounNomZLoss
     .o. EarlyEnglishLineChanges
     # SC024 Change A (early NWGmc stressed *ē₁ > *ā, 2nd c. AD) is now
     # composed INSIDE EarlyEnglishLineChanges, before the PWGmc rules —
@@ -3483,12 +3574,6 @@ define EnglishProtoToOE ( # capr:bundle
     # raising, SC099, in the *ō-shortening block below.
     .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
     .o. PNWGmcNStemNLoss
-    # SC103 Proto-Germanic nasal loss before *x (Campbell §119; Fulk §4.1):
-    # pan-Germanic, and therefore prior to the North Sea Germanic law below.
-    # It creates the *xst cluster of *fúnxstiz > *fū́xstiz that SC028 then
-    # simplifies. Placed here in the pgmc editorial holding zone beside SC022
-    # and SC023; it must precede i-umlaut for the same reason SC026 does.
-    .o. PGmcNasalLossBeforeX
     # SC026 + SC027: the North Sea Germanic (Ingvaeonic) nasal-spirant law,
     # ONE historical sound change implemented as two ordered operations —
     # the vowel must be read while the nasal is still there. Must precede
@@ -3503,10 +3588,15 @@ define EnglishProtoToOE ( # capr:bundle
     .o. EAFHiatusWInsertion
     # SC025 + SC101: the northern-WGmc low-vowel split consuming *ā < *ē₁
     # (Change A above). Complementary environments (nasal vs non-nasal), so
-    # their mutual order carries no claim. BOTH must precede SC004: *ā < *ai
-    # arises after fronting/rounding (Campbell §132; R/T pp. 169-170) —
-    # hence stān, hām, not *stǣn, *hōm.
+    # their mutual order carries no claim. SC025 now only NASALIZES (*ā > *ą̄);
+    # SC104 below rounds every *ą̄, whatever its source.
     .o. EAFLongANasalRounding
+    # SC104: the common Anglo-Frisian rounding *ą̄ > *ō. Composed after all
+    # three feeders (SC103 above, SC026/SC027 above, SC025 immediately above)
+    # and before i-umlaut, with which its product merges (Campbell §128 n. 1).
+    # Its order relative to SC101/SC004 is free: *ą̄ is a distinct segment, so
+    # oral *ā < *ai (hām, stān) can never be an input.
+    .o. EAFNasalizedLowRounding
     .o. EAFLongAFronting
     .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; see sc004_split_movement_proofs.md
     .o. OEAwjGlideFormation

@@ -34,7 +34,8 @@ root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_20.md"
 coverage_out = root / "reader_facing_manifest_coverage_08.md"
 chapter_files = [
-    # ── Chapter 1: executable positions 1–15 (PGmc/PNWGmc → PWGmc corridor) ─
+    # ── Chapter 1: executable positions 1–17 (PGmc → PNWGmc → PWGmc) ─
+    "103-pgmc-nasal-loss-before-x.md",
     "096-root-noun-nominative-z-loss.md",
     "014-015-opening-vowel-prelude.md",
     "005-unstressed-a-raising-before-final-m.md",
@@ -50,7 +51,7 @@ chapter_files = [
     "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
     "019-nwgmc-final-long-o-raising.md",
-    # ── Chapter 2: executable positions 17–29 (final-*z, rhotacism, EAF vowels) ─
+    # ── Chapter 2: executable positions 18–31 (final-*z, rhotacism, EAF vowels) ─
     "020-wgmc-final-z-deletion.md",
     "098-early-apocope-in-unstressed-words.md",
     "097-monosyllabic-final-z-loss.md",
@@ -61,9 +62,10 @@ chapter_files = [
     "028-preconsonantal-x-loss.md",
     "102-hiatus-w-insertion.md",
     "025-long-a-nasal-rounding.md",
+    "104-nasalized-low-vowel-rounding.md",
     "101-long-a-fronting.md",
     "004-pwgmc-ai-monophthongization.md",
-    # ── Chapter 3: executable positions 30–95 (Anglo-Frisian → Old English) ─
+    # ── Chapter 3: executable positions 32–95 (Anglo-Frisian → Old English) ─
     "029-030-awj-glide-and-au-fronting.md",
     "031-034-west-saxon-diphthong-chain.md",
     "035-037-prefix-and-compound-adjustments.md",

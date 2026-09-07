@@ -230,6 +230,7 @@ class ProductionCascadeTests(unittest.TestCase):
             r"\.o\. PNWGmcPreconsonantalXLoss\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFHiatusWInsertion\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongANasalRounding\b.*\n(?:\s*#.*\n)*"
+            r"\s*\.o\. EAFNasalizedLowRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongAFronting\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFAiMonophthongization\b")
         self.assertEqual(len(pat.findall(self.src)), 1)

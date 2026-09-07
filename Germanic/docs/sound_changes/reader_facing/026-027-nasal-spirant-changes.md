@@ -8,23 +8,20 @@ sequence of vowel, nasal and fricative with a long nasalized vowel and the
 fricative. They differ in date, in geography, and in which fricatives they
 affect.
 
-The earlier change is common Germanic. In the group [-ŋx-]{.recon} the nasal was
-lost with compensatory lengthening and nasalization of the vowel, and its results
-are shared by every daughter language. Gothic *þeihan*, *brāhta*, *þūhta* stand
-beside Old High German *dīhan*, *brāhta*, *fūht* and Old English *þēon* ‘thrive’,
-*brōhte* ‘brought’, *þūhte* ‘seemed’, *fūht* ‘damp’
-[@Campbell1959, p. 44, §119; @Fulk2018, §4.1; @Ringe2017, pp. 118--119].
-Only [a]{.recon}, [i]{.recon} and [u]{.recon} occur in this position: Germanic had
-already raised [e]{.recon} to [i]{.recon} and [o]{.recon} to [u]{.recon} before a
-nasal followed by a consonant [@Fulk2018, §4.1].
+The earlier change is common Germanic and is treated in the opening chapter of
+this book, on the Proto-Germanic loss of a nasal before [x]{.recon}. Its results
+are shared by every daughter language, and only [a]{.recon}, [i]{.recon} and
+[u]{.recon} occur in its input
+[@Campbell1959, p. 44, §119; @Fulk2018, p. 55, §4.1;
+@Ringe2017, pp. 149--150, §3.2.7].
 
 The later change belongs to the dialects bordering the North Sea, that is to Old
 English, Old Frisian and Old Saxon, the group traditionally called Ingvaeonic.
 Here the
 groups [mf]{.recon}, [ns]{.recon} and [nþ]{.recon} likewise reject the nasal with
 compensatory lengthening and nasalization
-[@Campbell1959, p. 47, §121; @Fulk2018, §4.11; @SieversBrunner1965, §186.1;
-@Luick1914, §301.1]. Ringe and Taylor call it the most obvious phonological
+[@Campbell1959, p. 47, §121; @Fulk2018, p. 72, §4.11;
+@SieversBrunner1965, p. 176, §186.1; @Luick1914, p. 276, §301.1]. Ringe and Taylor call it the most obvious phonological
 innovation of the northern dialects and list some thirty examples, among them
 [gans]{.recon} ‘goose’ and [jugunþi]{.recon} ‘youth’
 [@RingeTaylor2014, pp. 139--141]. Campbell describes it as a later change similar
@@ -41,20 +38,23 @@ German *fimf*, *gans*, *ander*, *jugund* answer Old English *fīf* ‘five’, *
 German *Faust*, belongs to the earlier change and not to the North Sea law at all
 [@Kroonen2013, p. 160].
 
-Where the vowel was [a]{.recon}, the nasalized long vowel it produced was
-subsequently rounded to *ō* in Anglo-Frisian, which is why Old English has *fōn*
-‘seize’ and *þōhte* ‘thought’ from the earlier change and *gōs*, *tōþ* ‘tooth’,
-*ōþer* from the later one. The rounding is a third change again, and it is the
-same rounding that turns inherited long *ā* before a nasal into *ō* in *mōna*
-‘moon’ and *spōn* ‘chip’ [@SieversBrunner1965, §80, Anm. 1;
-@Campbell1959, p. 44, §119; @Fulk2018, §4.11]. That the nasalized vowel was
-rounded and not merged shows that its nasality survived the change that
+Where the vowel was [a]{.recon}, the long nasalized vowel that this law produced
+was afterwards rounded to *ō* in Anglo-Frisian, which is why Old English has
+*gōs*, *tōþ* ‘tooth’ and *ōþer* ‘other’. That rounding is a third change again,
+and it is the same rounding that gives *fōn* ‘seize’ and *þōhte* ‘thought’ from
+the common Germanic law and *mōna* ‘moon’ and *spōn* ‘chip’ from inherited long
+*ā* before a surviving nasal; Campbell states that it reached all three sources
+at one and the same time [@Campbell1959, p. 50, §128 n. 1;
+@SieversBrunner1965, p. 33, §26; @Fulk2018, p. 72, §4.11]. It is treated in the
+chapter on the rounding of the long nasalized low vowel. That the vowel was
+rounded and did not simply merge shows that its nasality survived the law that
 created it: as Fulk observes, it did not fall together with the *ā* that came
-from [ai]{.recon} [@Fulk2018, §4.1]. Ringe and Taylor take the nasalization to
-have remained subphonemic until it was lost separately in each daughter
-[@RingeTaylor2014, p. 141]. Old Saxon shares the loss but rounds only variably,
-which is why the law is described as North Sea Germanic and not as Anglo-Frisian
-[@Campbell1959, p. 47, §121; @Fulk2018, §4.11].
+from [ai]{.recon} [@Fulk2018, p. 55, §4.1]. Ringe and Taylor take the
+nasalization to have remained subphonemic until it was lost separately in each
+daughter [@RingeTaylor2014, p. 141]. Old Saxon shares the loss of the nasal and
+the nasalization, and rounds only variably, which is why the law itself is
+described as North Sea Germanic and the rounding as Anglo-Frisian
+[@Campbell1959, p. 47, §121; @Fulk2018, p. 72, §4.11].
 
 The North Sea Germanic law is a single connected sound change: in every handbook
 account the nasal is lost *with* compensatory lengthening, and the lengthening is
@@ -65,43 +65,14 @@ nasal can be removed. The order of
 [SC027 EAFNasalSpirantLoss](#rule-EAFNasalSpirantLoss) is a requirement of the
 statement, not evidence for two successive historical stages.
 
-## SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX}
-
-```foma
-define PGmcNasalLossBeforeX [
-    {*a} -> {*ō} || _ EnglishStarNasal {*x},
-    {*i} -> {*ī} || _ EnglishStarNasal {*x},
-    {*u} -> {*ū} || _ EnglishStarNasal {*x},
-    {*á} -> {*ō} || _ EnglishStarNasal {*x},
-    {*í} -> {*ī} || _ EnglishStarNasal {*x},
-    {*ú} -> {*ū} || _ EnglishStarNasal {*x}
-] .o. [
-    EnglishStarNasal -> 0 || _ {*x}
-];
-```
-
-The rule states the common Germanic change. Since only [a]{.recon},
-[i]{.recon} and [u]{.recon} occur before nasal plus [x]{.recon}, no other vowel is
-listed. The outcome of [a]{.recon} is given directly as [ō]{.recon}, which
-combines the lengthening with the later Anglo-Frisian rounding of the nasalized
-vowel; the intermediate nasalized [ā]{.recon} is not represented, because its only
-consequence in the material treated here is that rounding.
-
-The single witness in the present corpus is [fúnxstiz]{.recon} ‘fist’, which
-becomes [fū́xsti]{.recon} and, after the loss of [x]{.recon} before the cluster,
-gives Old English *fȳst* ‘fist’. Because the change is Proto-Germanic it
-necessarily precedes the North Sea Germanic law below; it also supplies the
-[xst]{.recon} cluster on which the loss of [x]{.recon} before a consonant
-operates.
-
 ## SC026. North Sea Germanic nasal-spirant law, first step (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening}
 
 ```foma
 define EAFNasalSpirantLengthening [
-    {*a} -> {*ō} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*a} -> {*ą̄} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
-    {*á} -> {*ō} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*á} -> {*ą̄} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*í} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant
 ];
@@ -115,18 +86,21 @@ groups [mf]{.recon}, [ns]{.recon} and [nþ]{.recon}, Fulk says the change affect
 [mf]{.recon}, [ns]{.recon} and [nþ]{.recon}, Sievers and Brunner name the
 fricatives [f]{.recon}, [þ]{.recon} and [s]{.recon}, and no example in Ringe and
 Taylor's list contains [x]{.recon}
-[@Campbell1959, p. 47, §121; @Fulk2018, §4.11; @SieversBrunner1965, §186.1;
-@RingeTaylor2014, pp. 139--141]. As in the earlier change, only [a]{.recon},
-[i]{.recon} and [u]{.recon} occur, and the outcome of [a]{.recon} is given
-directly as [ō]{.recon}.
+[@Campbell1959, p. 47, §121; @Fulk2018, p. 72, §4.11;
+@SieversBrunner1965, p. 176, §186.1; @RingeTaylor2014, pp. 139--141]. As in the
+earlier change, only [a]{.recon}, [i]{.recon} and [u]{.recon} occur. The outcome
+of [a]{.recon} is the long nasalized [ą̄]{.recon}, which
+[SC104 EAFNasalizedLowRounding](#rule-EAFNasalizedLowRounding) later rounds; the
+outcomes of [i]{.recon} and [u]{.recon} are written [ī]{.recon} and [ū]{.recon},
+their nasality having no further consequence [@Campbell1959, p. 47, §121].
 
 Two witnesses apply in the present corpus. PGmc [gánsz]{.recon} ‘goose’ becomes
-[gōns]{.recon}, and PGmc [júgunθ]{.recon} ‘youth’ becomes [júgūnθ]{.recon}. In
+[gą̄ns]{.recon}, and PGmc [júgunθ]{.recon} ‘youth’ becomes [júgūnθ]{.recon}. In
 *ġeoguþ* the syllable carrying the lengthened vowel is unstressed, and the length
 is given up again by the later shortening of unstressed syllables; Sievers and
 Brunner note the same course in *beraþ* ‘they carry’ from [beranþi]{.recon}
-through [berōþ]{.recon} [@SieversBrunner1965, §186.1, Anm. 3;
-@Luick1914, §301.1].
+through [berōþ]{.recon} [@SieversBrunner1965, p. 176, §186.1 Anm. 3;
+@Luick1914, p. 276, §301.1].
 
 If the rule is stated after the loss of the nasal, PGmc [gánsz]{.recon} yields
 [*ġeas*]{.pred} in place of *gōs*, and PGmc [júgunθ]{.recon} yields
@@ -143,7 +117,7 @@ define EAFNasalSpirantLoss [
 ```
 
 The nasal is removed in the environment that conditioned the lengthening, giving
-[gōs]{.recon} and [júgūθ]{.recon}. The rule completes the statement of the single
+[gą̄s]{.recon} and [júgūθ]{.recon}. The rule completes the statement of the single
 change begun in
 [SC026 EAFNasalSpirantLengthening](#rule-EAFNasalSpirantLengthening); the two are
 not independent sound laws. The converse test, stating the loss first, merely

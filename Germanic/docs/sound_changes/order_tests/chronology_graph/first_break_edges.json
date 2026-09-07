@@ -118,13 +118,13 @@
     },
     {
       "change_id": "SC025",
-      "display_name": "EAF Long A Nasal Rounding",
+      "display_name": "North Sea Germanic nasalization of long a before a nasal",
       "current_order": "25",
       "rule_name": "EAFLongANasalRounding",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC025-eaf-long-a-nasal-rounding.md",
       "card_type": "one_sided_chronology",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Reformulated: input is the historical *a of the northern-WGmc stage (centrally *a < *e1 via SC024), no longer a direct *e -> *o bypass. Earlier boundary: fed by SC024 (displacement of SC024 after this rule yields **manath, **spaan). Later boundary independently demonstrated: moving this rule after SC004 wrongly rounds *a < *ai (stone -> **ston, home -> **hom); *a < *ai arose only after nasalization/rounding (Campbell sec.132; R/T pp.169-170)."
+      "short_summary": "Reformulated and split by the nasalized-low-vowel adjudication: this rule now performs NASALIZATION only (*a-long > nasalized *a-long before a nasal); the rounding to *o-long is the separate later Anglo-Frisian change SC104. Earlier boundary: fed by SC024 (displacement of SC024 after this rule yields **manath, **spaan). Later boundary: it must precede SC004 EAFAiMonophthongization, demonstrated by displacing SC004 before this rule, which wrongly rounds the new *a-long < *ai (stone -> **ston, home -> **hom); *a-long < *ai arose only after nasalization (Campbell §132 pp.52-53; R/T pp.169-170). It feeds SC104: stating SC025 after SC104 strands the nasalized vowel and month and spoon are rejected."
     },
     {
       "change_id": "SC026",
@@ -1058,11 +1058,53 @@
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
       "representative_lexemes": "stone; home",
-      "representative_forms": "PGmc `*stáinaz` yields expected OE `stān`, but with SC025 displaced after SC004 the cascade yields `stōn`; `*xáimaz` yields `hōm` instead of `hām`",
+      "representative_forms": "PGmc `*stáinaz` yields expected OE `stān` and `*xáimaz` yields `hām`; with SC004 displaced before SC025 (the equivalent test after the SC025/SC104 split) the new *ā < *ai is nasalized and then rounded, and the cascade yields `stōn` and `hōm`",
       "strength": "one_sided_chronology",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Counterfeeding requirement: *a < *ai arose after nasalization/rounding and is not rounded before nasals (Campbell sec.132 pp.52-53; R/T pp.169-170). Displacement probe 2026-09-05. See sc024-sc025-sc101-e1-complex-adjudication.md."
+      "notes": "One-sided later boundary for the nasalization: the whole nasalization-and-rounding complex precedes *ai-monophthongization (Campbell §132 pp.52-53; R/T pp.169-170). Since the SC025/SC104 split the demonstration is run by displacing SC004 EARLIER (before SC025), not by displacing SC025 later: SC025 alone displaced after SC004 merely strands the nasalized vowel. Twelve rows change in that variant; stone and home are the decisive counterfeeding controls."
+    },
+    {
+      "source_change_id": "SC025",
+      "target_change_id": "SC104",
+      "relation_type": "technical_computational",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "month; spoon",
+      "representative_forms": "PGmc `*mḗnōθz` and `*spḗnuz` are REJECTED (no output at all) when SC025 is stated after SC104: the nasalized vowel is created too late to be rounded and is stranded",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "Executable feeding dependency, not a historical interval. SC025 nasalizes inherited long *ā before a retained nasal; SC104 rounds the nasalized vowel. The sources place the nasalization before the rounding by definition, not by an independent chronological argument (Campbell §128 n.1 p.50)."
+    },
+    {
+      "source_change_id": "SC026",
+      "target_change_id": "SC104",
+      "relation_type": "technical_computational",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "goose",
+      "representative_forms": "PGmc `*gánsz` is REJECTED (no output at all) when SC104 is stated before SC026: the nasalized vowel produced by the nasal-spirant law is never rounded and is stranded",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "Executable feeding dependency. The North Sea Germanic nasal-spirant law creates one of the three inputs to the Anglo-Frisian rounding (Campbell §121 p.47, §128 n.1 p.50; Fulk §4.11 p.72). Historically the law is prior to the rounding because Old Saxon shares the law but not its rounded outcome."
+    },
+    {
+      "source_change_id": "SC103",
+      "target_change_id": "SC104",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "out_of_domain",
+      "representative_lexemes": "fist",
+      "representative_forms": "`none — SC103's low-vowel branch has no live corpus witness; its sole firing, `*fúnxstiz` > `*fū́xsti`, takes the high-vowel branch and never reaches SC104`",
+      "strength": "one_sided",
+      "interpretation_category": "one_sided_chronology",
+      "reciprocal_group_id": "",
+      "notes": "Stage-entailed feeding: a Proto-Germanic change necessarily precedes an Anglo-Frisian one. Campbell §128 n.1 p.50 states that the rounding affected the nasalized vowel of §119 (this rule) and of §121 (SC026/SC027) at the same time; Fulk §4.11 p.72 adds that Old Saxon reflects the PGmc nasalized vowel invariably as unrounded ā, which is the comparative proof that the rounding is later and narrower than SC103."
     },
     {
       "source_change_id": "SC101",
