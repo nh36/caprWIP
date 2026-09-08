@@ -40,11 +40,15 @@ BASELINE_DIR = SC_DIR / "cascade_baseline"
 CARD_INDEX = (SC_DIR / "order_tests/chronology_cards"
               / "chronology_card_index.tsv")
 
+# Rebaselined 2026 for the `thought` addition (sc025-sc104 memo §12): one
+# corpus row added (thought, PGmc *θánxtē > OE þōhte) as the live low-vowel
+# witness of SC103 -> SC104. Every pre-existing output is byte-identical, so
+# the legacy-380 fingerprint below is unchanged.
 EXPECTED_OUTPUTS_SHA256 = (
-    "1309dbc301916a3fa8cd8810d808e56c12da142c849a4e4f7de9df5923eacd31")
+    "862b0908b2ab44097eeda3bf82f95d76625eb169230efa3a072eb93c1311c35b")
 EXPECTED_LEGACY_SUBSET_SHA256 = (
     "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc")
-EXPECTED_ROW_COUNT = 385
+EXPECTED_ROW_COUNT = 386
 
 
 def _load(name):

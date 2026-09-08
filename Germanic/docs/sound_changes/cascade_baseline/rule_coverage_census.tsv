@@ -8,7 +8,7 @@
 # Invariant: every in-scope historical rule's coverage status is explicit and
 # understood. "Every rule must fire" is deliberately NOT an invariant.
 sc_id	foma_identifier	cascade_position	corpus_firing_count	lexical_witnesses	coverage_status	note
-SC103	PGmcNasalLossBeforeX	1	1	fist	witnessed	
+SC103	PGmcNasalLossBeforeX	1	2	fist, thought	witnessed	
 SC096	RootNounNomZLoss	2	4	book, flea, goose, louse	witnessed	
 SC014	PNWGmcUnstressedAiMonophthongization	3	2	meed, span	witnessed	
 SC005	PNWGmcAToUBeforeM	4	1	shoulder	witnessed	
@@ -36,7 +36,7 @@ SC027	EAFNasalSpirantLoss	25	2	goose, youth	witnessed
 SC028	PNWGmcPreconsonantalXLoss	26	1	fist	witnessed	
 SC102	EAFHiatusWInsertion	27	1	sow	witnessed	
 SC025	EAFLongANasalRounding	28	2	month, spoon	witnessed	
-SC104	EAFNasalizedLowRounding	29	3	goose, month, spoon	witnessed	
+SC104	EAFNasalizedLowRounding	29	4	goose, month, spoon, thought	witnessed	
 SC101	EAFLongAFronting	30	14	adder, bier, deed, eel, hair, let, meal, needle, read, sheep, sleep, weapon, year, betray	witnessed	
 SC004	EAFAiMonophthongization	31	23	bone, deal, dough, flesh, ghost, heal, heath, home, last, lead, loam, loath, mean, one, rope, sea, sheath, snow, soul, spread, stone, toe, token	witnessed	
 SC029	OEAwjGlideFormation	32	2	hay, strew	witnessed	
@@ -80,7 +80,7 @@ SC070	OEUnstressedFrontingEarly	71	2	find, west	witnessed
 SC071	OELateOShortening	72	7	month, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg), wound	witnessed	
 SC099	OEMedUnstressedORaising	73	1	wound	witnessed	
 SC100	OEFinalUnstressedOLowering	74	6	month, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg)	witnessed	
-SC072	OEUnstressedLongVowelShortening	75	59	adder, bore, bow, earth, father, find, flask, foal, fright, gall, handle, have, haw, heart, knob, lap, learn, lick, line, list, live, make, meed, mother, name, navel, neck, nettle, nightmare, ox, rainbow, rest, show, side, sister, span, spar, spare, spur, sun, sunder, swallow, tick, toe, tongue, wart, weasel, west, whore, widow, will, youth, make (iptv.2sg), bore (iptv.2sg), learn (iptv.2sg), lick (iptv.2sg), show (iptv.2sg), wound, tap	witnessed	
+SC072	OEUnstressedLongVowelShortening	75	60	adder, bore, bow, earth, father, find, flask, foal, fright, gall, handle, have, haw, heart, knob, lap, learn, lick, line, list, live, make, meed, mother, name, navel, neck, nettle, nightmare, ox, rainbow, rest, show, side, sister, span, spar, spare, spur, sun, sunder, swallow, tick, toe, tongue, wart, weasel, west, whore, widow, will, youth, make (iptv.2sg), bore (iptv.2sg), learn (iptv.2sg), lick (iptv.2sg), show (iptv.2sg), wound, thought, tap	witnessed	
 SC073	OEUnstressedAEMerger	76	32	adder, ban, berry, brand, earth, find, flask, four, hammer, heart, honey, line, list, man, nettle, nightmare, rest, side, summer, sun, swallow, swan, thistle, toe, tongue, wart, water, weasel, west, whore, widow, withy	witnessed	
 SC074	OEMedUnstressedILowering1	77	6	dill, fright, harvest, rye, shilling, sieve	witnessed	
 SC075	OEMedUnstressedILowering	78	1	shilling	witnessed	

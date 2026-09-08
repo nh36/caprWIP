@@ -67,14 +67,18 @@ three stands in a feeding relation to it: stated before any one of them, the
 rule leaves that source's nasalized vowel untouched and the cascade returns no
 form at all for its witnesses.
 
-Three lexemes in the present corpus reach Old English through this rule.
+Four lexemes in the present corpus reach Old English through this rule, and
+between them they witness all three sources.
 [gánsz]{.recon} ‘goose’ arrives as [gą̄s]{.recon} from the North Sea Germanic
 law and gives *gōs*; [mḗnōθz]{.recon} ‘month’ arrives as [mą̄nōþ]{.recon} and
 gives *mōnaþ*; [spḗnuz]{.recon} ‘spoon’ arrives as [spą̄nu]{.recon} and gives
-*spōn*. The Proto-Germanic law contributes no low-vowel witness to this corpus,
-its one firing being the high vowel of *fȳst* ‘fist’, but the wider material
-supplies *fōn* ‘seize’ and *þōhte* ‘thought’ for that source
-[@Campbell1959, p. 44, §119].
+*spōn*. The Proto-Germanic law contributes [θánxtē]{.recon}, the preterite of
+the verb ‘to think’, which arrives as [θą̄xtē]{.recon} and gives *þōhte*
+‘thought’. That is the very form cited for this rounding, beside Old Frisian
+*thochte*, and it is the evidence that the vowel did not fall together with the
+*ā* of *stān* [@Fulk2018, p. 55, §4.1; @Campbell1959, p. 44, §119]. The other
+firing of the Proto-Germanic law, the high vowel of *fȳst* ‘fist’, does not
+reach this rule at all.
 
 The counterpart is what the rule leaves alone. [stáinaz]{.recon} ‘stone’ and
 [xáimaz]{.recon} ‘home’ acquire their long *ā* from

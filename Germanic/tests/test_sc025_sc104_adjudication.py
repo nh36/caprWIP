@@ -38,6 +38,10 @@ Protected scientific conclusions:
     cascade, ahead of every daughter-specific NWGmc/PWGmc change.
   * The whole reformulation is output-neutral: all 385 corpus rows and
     both frozen cascade fingerprints are unchanged.
+  * `thought` (PGmc *θánxtē > OE þōhte) was added afterwards as the
+    live low-vowel witness of SC103 -> SC104, the one branch of the
+    analysis the corpus had not previously exercised. It changes no
+    existing output; see §12 of the memo.
 
 Run: cd Germanic/tests && python3 -m unittest test_sc025_sc104_adjudication
 """
@@ -74,9 +78,14 @@ requires_runtime = unittest.skipUnless(
 # The complete live firing census established by the adjudication.
 SC025_WITNESSES = {"month": "mōnaþ", "spoon": "spōn"}
 SC026_LOW_WITNESS = {"goose": "gōs"}
-# SC103's only live firing is on its HIGH branch; its low branch has no
-# live corpus witness (the rule is retained on comparative grounds).
+# SC103 fires on both branches. `fist` takes the HIGH branch and never
+# reaches the rounding; `thought` takes the LOW branch and feeds SC104.
 SC103_WITNESS = {"fist": "fȳst"}
+SC103_LOW_WITNESS = {"thought": "þōhte"}
+# Ringe 2017 pp. 136, 281: PGmc *þankijaną, *þanhtē, *þanhtaz. The
+# preterite is reconstructed with the nasal still present before *h, so
+# the corpus enters it un-reduced and the cascade derives the loss.
+THOUGHT_PROTO = "*θánxtē"
 # Counterfeeding controls: their *ā arises from *ai, after the rounding.
 ORAL_A_CONTROLS = {"stone": "stān", "home": "hām"}
 
@@ -292,9 +301,9 @@ class NasalizedLowVowelAdjudicationTests(unittest.TestCase):
         self.assertIn("*ō", self.stage("eaf_nasalized_low_rounding", form)[0])
 
     @requires_runtime
-    def test_sc103_fires_on_its_high_branch_only(self):
-        """fist is SC103's only live firing, and it takes the high branch, so
-        it never enters the rounding."""
+    def test_sc103_high_branch_witness_never_enters_the_rounding(self):
+        """fist takes SC103's high branch, so it never enters the rounding
+        (contrast `thought`, which takes the low branch)."""
         form = self.baseline["fist"]["proto"].lstrip("*")
         after = self.stage("pgmc_nasal_loss_before_x", form)
         self.assertIn("*ū", after[0])
@@ -318,12 +327,112 @@ class NasalizedLowVowelAdjudicationTests(unittest.TestCase):
                 self.assertIn("*ā", after_ai[0])
 
     # ------------------------------------------------------------------
+    # `thought` — the low-vowel witness of SC103 -> SC104
+    # ------------------------------------------------------------------
+
+    def test_thought_is_in_the_corpus_with_the_verified_protoform(self):
+        """Ringe 2017 p. 281 gives *þankijaną, *þanhtē, *þanhtaz; p. 136
+        (§3.2.4 (iv)) reconstructs the preterite stem *þanh- with the nasal
+        still intact before *h.  *θánxtē is that form in the transducer's
+        notation (þ = θ, PGmc voiceless velar fricative = *x, acute =
+        primary stress), matching *θánkijaną (think) and *fúnxstiz (fist)."""
+        row = self.baseline.get("thought")
+        self.assertIsNotNone(row, "thought must be a selected corpus row")
+        self.assertEqual(row["proto"], THOUGHT_PROTO)
+        self.assertEqual(row["outputs"], "þōhte")
+
+    def test_thought_enters_with_its_nasal_intact(self):
+        """The nasal loss must be DERIVED by SC103, not assumed in the input;
+        otherwise the row would beg the question it is meant to witness."""
+        self.assertIn("n", THOUGHT_PROTO)
+        self.assertIn("nx", THOUGHT_PROTO)
+
+    def test_the_input_filter_admits_the_nxt_coda(self):
+        """*θánxtē was rejected outright before `*nxt` was listed among the
+        attested coda clusters; the filter applies only to the input side."""
+        self.assertRegex(self.define_body("pgrmCodaComplex"),
+                         r"n:\{\*n\}\s+x:\{\*x\}\s+t:\{\*t\}")
+
+    @requires_runtime
+    def test_sc103_fires_on_its_low_branch_for_thought(self):
+        form = self.baseline["thought"]["proto"].lstrip("*")
+        after = self.stage("pgmc_nasal_loss_before_x", form)[0]
+        self.assertIn("*ã", after,
+                      "SC103's low branch must create the nasalized low vowel")
+        self.assertNotIn("*n", after, "SC103 deletes the nasal before *x")
+        self.assertNotIn("*ō", after,
+                         "a pan-Germanic rule may not do the Anglo-Frisian "
+                         "rounding itself")
+
+    @requires_runtime
+    def test_sc104_rounds_what_sc103_created(self):
+        form = self.baseline["thought"]["proto"].lstrip("*")
+        before = self.stage("eaf_long_a_nasal_rounding", form)[0]
+        self.assertIn("*ã", before,
+                      "the nasalized low vowel must survive untouched from "
+                      "SC103 all the way to the rounding")
+        after = self.stage("eaf_nasalized_low_rounding", form)[0]
+        self.assertIn("*ō", after)
+        self.assertNotIn("*ã", after)
+
+    @requires_runtime
+    def test_thought_is_not_an_ingvaeonic_nasal_spirant_witness(self):
+        """*x is not one of the *f/*þ/*s spirants of the North Sea Germanic
+        law, so SC026/SC027 must leave the word alone."""
+        form = self.baseline["thought"]["proto"].lstrip("*")
+        before = self.stage("pnwgmc_n_stem_n_loss", form)[0]
+        for stage in ("eaf_nasal_spirant_lengthening", "eaf_nasal_spirant_loss"):
+            with self.subTest(stage=stage):
+                self.assertEqual(self.stage(stage, form)[0], before)
+
+    @requires_runtime
+    def test_sc028_does_not_fire_on_thought(self):
+        """This is what makes `thought` a cleaner SC103 -> SC104 diagnostic
+        than `fist`: `fist` loses its *x in the *xst cluster at SC028, so its
+        trace confounds the nasal-loss history with the later preconsonantal
+        *x loss.  In þōhte the *x survives to the surface as orthographic h.
+        SC028 itself is NOT adjudicated here; only its behaviour is observed."""
+        thought = self.baseline["thought"]["proto"].lstrip("*")
+        before = self.stage("eaf_nasal_spirant_loss", thought)[0]
+        after = self.stage("pnwgmc_preconsonantal_x_loss", thought)[0]
+        self.assertEqual(before, after, "SC028 must not fire on thought")
+        self.assertIn("*x", after, "the *x survives, and surfaces as h")
+        fist = self.baseline["fist"]["proto"].lstrip("*")
+        self.assertNotEqual(
+            self.stage("eaf_nasal_spirant_loss", fist)[0],
+            self.stage("pnwgmc_preconsonantal_x_loss", fist)[0],
+            "fist, by contrast, does lose its *x at SC028")
+
+    def test_sc103_to_sc104_is_a_witnessed_feeding_edge(self):
+        edge = next(e for e in self.edges
+                    if e["source_change_id"] == "SC103"
+                    and e["target_change_id"] == "SC104")
+        self.assertEqual(edge["evidence_basis"], "independently_demonstrated")
+        self.assertEqual(edge["witness_role"], "feeding")
+        self.assertEqual(edge["representative_lexemes"], "thought")
+        self.assertTrue(edge["representative_forms"].strip())
+
+    def test_claimed_chronology_witnesses_are_real_corpus_rows(self):
+        """The human edge says what the relation means; the machine checks
+        that any lexeme it names actually exists."""
+        for edge in self.edges:
+            if edge["target_change_id"] != "SC104":
+                continue
+            for lexeme in re.split(r"[;,]", edge["representative_lexemes"]):
+                lexeme = lexeme.strip()
+                if not lexeme:
+                    continue
+                with self.subTest(edge=edge["source_change_id"], lexeme=lexeme):
+                    self.assertIn(lexeme, self.baseline)
+
+    # ------------------------------------------------------------------
     # Output neutrality
     # ------------------------------------------------------------------
 
     def test_surface_outputs_are_unchanged(self):
         for concept, attested in {**SC025_WITNESSES, **SC026_LOW_WITNESS,
-                                  **SC103_WITNESS, **ORAL_A_CONTROLS}.items():
+                                  **SC103_WITNESS, **SC103_LOW_WITNESS,
+                                  **ORAL_A_CONTROLS}.items():
             with self.subTest(concept=concept):
                 self.assertEqual(self.baseline[concept]["outputs"], attested)
 

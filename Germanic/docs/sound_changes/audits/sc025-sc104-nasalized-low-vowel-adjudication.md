@@ -186,8 +186,9 @@ position 1, ahead of SC096 `RootNounNomZLoss` (pre-PWGmc) and everything else.
 
 Justification: the change is pan-Germanic, so nothing else in this cascade can
 precede it. Verification: `foma` compiles clean, production-vs-sandbox
-equivalence holds over all 385 rows, and both frozen fingerprints are
-byte-identical (`outputs_sha256=1309dbc3…`, `legacy_subset_sha256=a72bdeb8…`).
+equivalence held over all 385 rows as the corpus then stood, and both frozen
+fingerprints were byte-identical (`outputs_sha256=1309dbc3…`,
+`legacy_subset_sha256=a72bdeb8…`).
 The move is therefore output-neutral. Its only genuine antecedent requirement is
 that the nasal and the \*x be intact, which holds at the head by construction;
 its only genuine consequent requirement is that it precede SC028 (position 26)
@@ -207,9 +208,11 @@ is outside this pass.
 | goose | \*gánsz | inherited \*a | SC026, nasal-spirant law | \*gãns → \*gãs | \*gōs | *gōs* |
 | youth | \*júgunθ | — (high vowel \*u) | SC026, high branch | \*júgūnθ → \*júgūθ | n/a | *ġeoguþ* |
 | fist | \*fúnxstiz | — (high vowel \*u) | SC103, high branch | \*fū́xsti | n/a | *fȳst* |
+| thought | \*θánxtē | inherited \*a | SC103, low branch | \*θãxtē | \*θōxtē | *þōhte* |
 
-SC103's low-vowel branch has **no live corpus witness**; its correction is a
-pure semantic repair. `moon` is not in the selected corpus.
+Every one of SC104's three feeders now has a live low-vowel witness: SC025
+(`month`, `spoon`), SC026 (`goose`) and SC103 (`thought`). See §12 for the
+addition of `thought`. `moon` is still not in the selected corpus.
 
 Counterfeeding controls, unchanged and oral throughout:
 
@@ -226,9 +229,12 @@ Counterfeeding controls, unchanged and oral throughout:
   stating the rounding before either feeder strands the nasalized vowel and the
   cascade returns *no output at all* for `month`, `spoon`, `goose`. These are
   feeding dependencies, not historical intervals.
-- **SC103 → SC104** (stage-entailed): a Proto-Germanic change necessarily
-  precedes an Anglo-Frisian one. No corpus witness exists, since SC103's only
-  firing takes the high-vowel branch.
+- **SC103 → SC104** (independently demonstrated, feeding): composing the pair in
+  the attested order maps \*θ\*á\*n\*x\*t\*ē to \*θ\*ō\*x\*t\*ē; composing them
+  in the opposite order leaves \*θ\*ã\*x\*t\*ē unrounded, because SC104 has no
+  `{*ã}` to read until SC103 has created it. The witness is `thought`
+  (§12). The stage entailment — a Proto-Germanic change necessarily precedes an
+  Anglo-Frisian one — still holds independently.
 - **SC025 → SC004** (revised): the demonstration is now run by displacing SC004
   *earlier*, before SC025. Twelve rows change, among them `stone` → \*\*stōn and
   `home` → \*\*hōm. Displacing SC025 *later* than SC004 no longer produces those
@@ -265,6 +271,160 @@ general re-adjudication of unstressed-vowel shortening was undertaken.
 
 ## Corpus and output changes
 
-**None.** All 385 rows accept, 378 match, 7 mismatch, and both fingerprints are
-byte-identical to the frozen values. The entire change is a correction of the
-model's internal history, with no consequence for any surface form.
+**None** for the adjudication proper. All 385 rows accept, 378 match, 7 mismatch,
+and both fingerprints are byte-identical to the frozen values. The entire change
+is a correction of the model's internal history, with no consequence for any
+surface form. The one corpus addition made afterwards, `thought`, is documented
+separately in §12; it adds a 386th row and changes no existing output.
+
+## §12 `thought` — the low-vowel witness of SC103 → SC104
+
+### Why the word was added
+
+The adjudication above left one branch of the analysis unwitnessed. SC104
+receives nasalized low vowels from three feeders. Two of them had live corpus
+witnesses (`month` and `spoon` from SC025; `goose` from SC026), but SC103's only
+firing was `fist` \*fúnxstiz, whose input vowel is \*u. `fist` therefore tests
+SC103's **high**-vowel branch and never reaches SC104 at all. The pathway
+
+> \*aNx → \*ą̄x → \*ōx
+
+was asserted on the strength of the literature alone. The order of reasoning
+here was: the handbooks predict this pathway; `thought` is an attested instance
+of it; therefore it belongs in the corpus; and only after the trace actually
+succeeded was it recorded as the chronology witness.
+
+### The verified reconstruction
+
+Ringe 2017 p. 281 gives the principal parts of the verb in full:
+
+> \*þankijaną, \*þanhtē, \*þanhtaz 'think' (cf. Goth. þagkjan, þāhta; ON þekkja,
+> þátti (poet.) ~ þekði, þekðr 'perceive'; OE þenċan, þōhte, þōht; OHG denken,
+> dāhta, gidāht ~ gidenkit)
+
+The preterite stem is independently reconstructed at Ringe 2017 p. 136
+(§3.2.4 (iv)), among the past participles that show the pre-\*t devoicing rule:
+post-PIE \*tong- > PGmc \*þank- in \*þankijaną, beside PGmc \*þanhtaz 'thought'
+(cf. ON þáttr, OE þōht, OHG gidāht). In both places Ringe reconstructs the
+Proto-Germanic form with the **nasal still present** before \*h; the loss is a
+later development. That is exactly the stage at which the corpus enters forms,
+so the nasal loss is derived by the cascade rather than assumed in the input.
+
+The corpus row is therefore:
+
+| field | value |
+|---|---|
+| CONCEPT | `thought` |
+| PROTOFORM | `*θánxtē` |
+| COUNTERPART | `þōhte` |
+| paradigm cell | class I weak preterite 3sg of þenċan (CONCEPT `think`, `*θánkijaną`) |
+
+`*θánxtē` is Ringe's \*þanhtē in the transducer's notation: `þ` is written `θ`,
+the Proto-Germanic voiceless velar fricative is written `*x` rather than `*h`,
+and primary stress is marked with an acute on the root vowel, exactly as in the
+existing `*θánkijaną` (think) and `*fúnxstiz` (fist).
+
+Fulk 2018 §4.1 p. 55 supplies the Anglo-Frisian half of the story and names this
+very form:
+
+> "The lengthened vowels may have remained nasalized for a considerable time,
+> well past the close of the NWGmc. period, since \*ą̄ produced this way
+> developed to ō in Anglo-Frisian (as in OE pret. sg. þōhte, OFris. thochte
+> 'thought') and did not fall together with OE ā < ai or OFris. ā < ai, au."
+
+So `þōhte` is not merely compatible with the SC103 → SC104 analysis; it is the
+form the handbook itself cites for it.
+
+### The derivation as the cascade actually runs it
+
+```
+EnglishProtoInput                        *θ*á*n*x*t*ē
+PGmcNasalLossBeforeX      (SC103, pos 1) *θ*ã*x*t*ē
+  ... 24 rules, all no-change ...
+EAFNasalSpirantLengthening (SC026, pos 24) [no-change]
+EAFNasalSpirantLoss        (SC027, pos 25) [no-change]
+PNWGmcPreconsonantalXLoss  (SC028, pos 26) [no-change]
+EAFLongANasalRounding      (SC102, pos 28) [no-change]
+EAFNasalizedLowRounding   (SC104, pos 29) *θ*ō*x*t*ē
+  ... remainder no-change ...
+OUTPUT                                   þōhte
+```
+
+Four points are worth recording.
+
+1. **SC103 fires on its low branch.** `{*á}` before `EnglishStarNasal {*x}`
+   becomes `{*ã}` and the nasal is deleted. This is the branch that had no
+   witness before.
+2. **SC104 fires, and fires on SC103's output.** It reads the `{*ã}` that SC103
+   created and rounds it to `{*ō}`.
+3. **SC028 `PNWGmcPreconsonantalXLoss` does not fire.** This is what makes
+   `thought` a cleaner diagnostic than `fist`. `fist` loses its \*x in the
+   \*xst cluster, so its trace confounds the nasal-loss history with the later
+   preconsonantal \*x loss; in `þōhte` the \*x survives to the surface as
+   orthographic *h*, and the only vowel history in the word is SC103 → SC104.
+   SC028 was **not** adjudicated or modified here; only its behaviour on the new
+   row was observed.
+4. **SC026 and SC027 do not fire.** `thought` is not misclassified as an
+   Ingvaeonic nasal-spirant witness — correctly, since \*x is not one of the
+   \*f/\*þ/\*s spirants of the North Sea Germanic law.
+
+### The feeding relation, demonstrated
+
+Composing the two rules directly, in each order, and applying the protoform:
+
+| composition | output |
+|---|---|
+| `PGmcNasalLossBeforeX .o. EAFNasalizedLowRounding` | `*θ*ō*x*t*ē` |
+| `EAFNasalizedLowRounding .o. PGmcNasalLossBeforeX` | `*θ*ã*x*t*ē` |
+
+In the counterfed order SC104 has no `{*ã}` to read at the time it applies, so
+the vowel is left nasalized and unrounded. The SC103 → SC104 edge has therefore
+been promoted from `stage_entailed` to `independently_demonstrated`, with
+`witness_role=feeding` and `representative_lexemes=thought`. The stage entailment
+that previously carried the edge on its own is unaffected and still stated in the
+edge's notes.
+
+### Falsification set
+
+The corpus now holds a complete set of controls around the rounding:
+
+| lexeme | role |
+|---|---|
+| `thought` | SC103 low branch → SC104 |
+| `fist` | SC103 high branch, does **not** reach SC104 |
+| `goose` | SC026/SC027 → SC104 |
+| `month`, `spoon` | SC025 → SC104 |
+| `stone`, `home` | later oral \*ā < \*ai; must **not** round |
+
+`stone` and `home` remain the essential negative controls: they show that SC104
+operates on nasalized \*ą̄ and not on every long low vowel.
+
+### Change to the phonotactic input filter
+
+The Proto-Germanic input filter `pgrmWord` enumerates the coda clusters attested
+in the corpus. It listed `*nxst` (for `fist`) and `*xt` (for e.g. `*máxtiz`) but
+not `*nxt`, so `*θánxtē` was rejected outright before any rule could apply. One
+line, `n:{*n} x:{*x} t:{*t}`, was added to `pgrmCodaComplex`. The filter is used
+only on the input side of the cascade; widening it cannot alter the mapping of
+any form that was already accepted, and the corpus baseline confirms that none
+changed.
+
+### Corpus and output effect
+
+The selected corpus goes from 385 to 386 rows. The per-lexeme baseline differs
+from the pre-addition baseline by exactly one added line:
+
+```
+thought	*θánxtē	θánxtē	þōhte	1	1	1	þōhte
+```
+
+All 385 previously present rows are byte-identical. `thought` is accepted, has a
+single unambiguous output, and that output matches the attested form. The
+`legacy_subset_sha256` fingerprint is unchanged at `a72bdeb8…`; the whole-corpus
+`outputs_sha256` necessarily changes, and the change is attributable solely to
+the added row.
+
+The generated firing census updates itself: SC103 now reports `fist, thought`
+and SC104 reports `goose, month, spoon, thought`. No firing count or firing list
+was edited by hand — the authority repair committed immediately before this
+change made that impossible.

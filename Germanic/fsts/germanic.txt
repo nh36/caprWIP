@@ -273,6 +273,7 @@ define pgrmCodaComplex [
     x:{*x} t:{*t} j:{*j} |
     x:{*x} t:{*t} z:{*z} |
     n:{*n} x:{*x} s:{*s} t:{*t} |
+    n:{*n} x:{*x} t:{*t} |
     n:{*n} x:{*x} w:{*w} s:{*s} t:{*t} |
     t:{*t} t:{*t} m:{*m}
 ];

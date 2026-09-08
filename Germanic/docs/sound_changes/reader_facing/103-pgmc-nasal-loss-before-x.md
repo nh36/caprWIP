@@ -57,11 +57,23 @@ no further consequence: they go on to develop exactly as the inherited long
 [ī]{.recon} and [ū]{.recon} do [@Campbell1959, p. 47, §121]. The nasality of the
 low vowel is carried forward because its later fate depends on it.
 
-The single witness in the present corpus is [fúnxstiz]{.recon} ‘fist’, which
-becomes [fū́xsti]{.recon} and, after the loss of [x]{.recon} before the cluster
-in [SC028 PNWGmcPreconsonantalXLoss](#rule-PNWGmcPreconsonantalXLoss), gives Old
+The corpus witnesses both branches of the rule. The high branch is
+[fúnxstiz]{.recon} ‘fist’, which becomes [fū́xsti]{.recon} and, after the loss of
+[x]{.recon} before the cluster in
+[SC028 PNWGmcPreconsonantalXLoss](#rule-PNWGmcPreconsonantalXLoss), gives Old
 English *fȳst* ‘fist’. The long vowel of Old High German *fūst*, Dutch *vuist*
 and German *Faust* shows that the word belongs here and to no later law
 [@Kroonen2013, p. 160]. The rule also supplies the [xst]{.recon} cluster on
 which the loss of [x]{.recon} before a consonant operates, so the two stand in a
 feeding relation.
+
+The low branch is [θánxtē]{.recon}, the preterite of the verb ‘to think’, whose
+principal parts are reconstructed as [þankijaną]{.recon}, [þanhtē]{.recon},
+[þanhtaz]{.recon} with the nasal still standing before the fricative
+[@Ringe2017, p. 281; @Ringe2017, p. 136]. Here the rule yields
+[θą̄xtē]{.recon}, and the nasalized low vowel is later rounded by
+[SC104 EAFNasalizedLowRounding](#rule-EAFNasalizedLowRounding) to give Old
+English *þōhte* ‘thought’. This is the form the handbooks themselves cite for
+the Anglo-Frisian rounding of the vowel produced here [@Fulk2018, p. 55, §4.1]. It does not enter the loss of [x]{.recon} before a
+consonant, in which respect it differs from ‘fist’, so the fricative survives to
+the surface and the word displays the vowel history alone.

@@ -268,9 +268,12 @@ class FingerprintGuardTests(unittest.TestCase):
         # outputs_sha256 rebaselined 2026-09-06 for the sow/laewan
         # follow-up (memo §12.4): two corpus rows added (sow, betray);
         # every pre-existing output byte-identical (legacy sha unchanged).
+        # Rebaselined again for `thought` (sc025-sc104 memo §12): one row
+        # added as the live low-vowel witness of SC103 -> SC104; all 385
+        # pre-existing outputs byte-identical, legacy sha still unchanged.
         self.assertEqual(
             data["outputs_sha256"],
-            "1309dbc301916a3fa8cd8810d808e56c12da142c849a4e4f7de9df5923eacd31",
+            "862b0908b2ab44097eeda3bf82f95d76625eb169230efa3a072eb93c1311c35b",
         )
         self.assertEqual(
             data["legacy_subset_sha256"],
