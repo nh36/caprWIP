@@ -107,12 +107,15 @@ change, and its nasality is precisely what distinguishes it from the later oral
 2. **What are its feeding sources?** SC103 (PGmc \*aNx), SC026/SC027 (the North
    Sea Germanic nasal-spirant law), SC025 (inherited long \*ā before a retained
    nasal).
-3. **Geographical scope?** `anglo_frisian`. Old Saxon reflects the PGmc
-   nasalized low vowel invariably as *ā* and the Ingvaeonic one as *ā* or *ō*
-   according to word and dialect (Campbell §119 p. 44; Fulk §4.11 p. 72). The
-   former CAPR justification for `north_sea_germanic` conflated two things:
-   Old Saxon shares the **nasalization** (R/T §5.1.2 p. 142), not the
-   **rounding**.
+3. **Geographical scope?** `anglo_frisian`. Old Saxon does not share the
+   **categorical, systematic** Anglo-Frisian rounding: it retains *ā*
+   consistently in the inherited Proto-Germanic nasalized-low-vowel class,
+   while the Ingvaeonic (nasal-spirant) class shows variable *ā*/*ō* by word
+   and dialect (Campbell §119 p. 44; Fulk §4.11 p. 72). The former CAPR
+   justification for `north_sea_germanic` conflated two things:
+   Old Saxon shares the **nasalization** (R/T §5.1.2 p. 142); its partial,
+   lexically variable rounding in the Ingvaeonic class is comparative evidence
+   bearing on the innovation, not membership in it.
 4. **Chronology?** After all three feeders; before the product merges with
    inherited \*ō *“already in prehistoric OE”* (Campbell §128 n. 1 p. 50), and
    therefore before i-umlaut; before \*ai-monophthongization, since the oral
@@ -134,8 +137,13 @@ change, and its nasality is precisely what distinguishes it from the later oral
 10. **Where should SC103 sit?** At the head of the cascade, executable position
     1, ahead of SC096. See below.
 11. **Independent confidences?** \*ē₁ > \*ā: **B**, unchanged, tied to the
-    disputed \*ē₁ reconstruction. Nasalization before a retained nasal
-    (SC025): **B**, since its input depends on that same pathway. Common
+    disputed \*ē₁ reconstruction. SC025: **B** — but the rating attaches to
+    CAPR's particular formulation, not to the phenomenon. Northern West
+    Germanic nasalization of stressed low vowels before a retained nasal is
+    itself independently well supported (R/T §5.1.2 p. 142; Campbell §119
+    p. 44). What is rated B is the claim that the input to that nasalization
+    in *these* forms is \*ā, because identifying the input as \*ā depends
+    centrally on the disputed \*ē₁ > \*ā reconstruction. Common
     \*ą̄ > \*ō (SC104): **A**, independently evidenced from PGmc \*Nx reflexes,
     from nasal-spirant reflexes, from retained-nasal forms, and by cross-dialect
     comparison. Confidence attaches to the claim being rated, so the uncertainty
@@ -184,8 +192,13 @@ SC103 sat at position 23, after some twenty Northwest Germanic and Proto-West
 Germanic innovations. That was an editorial holding-zone artifact. It is now at
 position 1, ahead of SC096 `RootNounNomZLoss` (pre-PWGmc) and everything else.
 
-Justification: the change is pan-Germanic, so nothing else in this cascade can
-precede it. Verification: `foma` compiles clean, production-vs-sandbox
+Justification: SC103 must precede the daughter-specific Northwest Germanic and
+Proto-West Germanic developments, since it is pan-Germanic. Its exact order
+relative to *other* Proto-Germanic changes is not established here; another
+Proto-Germanic change could well be earlier. Position 1 is therefore a
+defensible **holding** placement rather than a demonstrated absolute first
+position: no demonstrated antecedent within the current cascade requires SC103
+to sit later. Verification: `foma` compiles clean, production-vs-sandbox
 equivalence held over all 385 rows as the corpus then stood, and both frozen
 fingerprints were byte-identical (`outputs_sha256=1309dbc3…`,
 `legacy_subset_sha256=a72bdeb8…`).
@@ -408,6 +421,18 @@ line, `n:{*n} x:{*x} t:{*t}`, was added to `pgrmCodaComplex`. The filter is used
 only on the input side of the cascade; widening it cannot alter the mapping of
 any form that was already accepted, and the corpus baseline confirms that none
 changed.
+
+**Recorded infrastructure debt (not addressed in this pass).** The episode
+exposes that the Proto-Germanic input grammar is an *enumerative cluster
+whitelist* rather than a phonotactic grammar. Any future historically valid
+lexeme whose coda cluster happens to be absent from the enumeration will be
+rejected silently at the input boundary rather than producing a wrong output,
+which makes the failure mode quiet and easy to misread as a rule problem. This
+is logged here as scientific-input/infrastructure debt for a later dedicated
+pass. It is deliberately **not** fixed now: the whitelist must not be broadened
+indiscriminately, since its narrowness is also what keeps unattested
+Proto-Germanic shapes out of the corpus. Only the source-backed `*nxt`
+admission is retained.
 
 ### Corpus and output effect
 

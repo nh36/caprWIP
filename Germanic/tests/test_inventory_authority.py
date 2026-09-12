@@ -306,6 +306,105 @@ class ChronologyEdgeWitnessSemanticsTests(unittest.TestCase):
         self.assertTrue(any("not in the selected corpus" in e for e in errors))
 
 
+    def test_a_demonstrated_edge_needs_a_machine_evidence_route(self):
+        """Corpus membership alone does not demonstrate an interaction."""
+        edge = dict(self.edges[0], source_change_id="SC001",
+                    target_change_id="SC002",
+                    relation_type="one_sided_chronology",
+                    evidence_basis="independently_demonstrated",
+                    witness_role="feeding",
+                    representative_lexemes=sorted(self.corpus)[0],
+                    representative_forms="*whatever",
+                    machine_evidence="",
+                    notes="claims a demonstration")
+        errors = self.grv.validate_registry(self.reg, [edge])
+        self.assertTrue(any("no order-test harness result" in e for e in errors),
+                        errors)
+
+    def test_machine_evidence_must_name_a_real_test(self):
+        edge = dict(self.edges[0], source_change_id="SC001",
+                    target_change_id="SC002",
+                    relation_type="one_sided_chronology",
+                    evidence_basis="independently_demonstrated",
+                    witness_role="feeding",
+                    representative_lexemes=sorted(self.corpus)[0],
+                    representative_forms="*whatever",
+                    machine_evidence="test:Germanic/tests/test_does_not_exist.py",
+                    notes="claims a demonstration")
+        errors = self.grv.validate_registry(self.reg, [edge])
+        self.assertTrue(any("missing test" in e for e in errors), errors)
+
+    def test_every_live_demonstrated_edge_has_an_evidence_route(self):
+        harness = self.grv.load_harness_witnesses()
+        for e in self.edges:
+            if e["evidence_basis"] != "independently_demonstrated":
+                continue
+            pair = (e["source_change_id"], e["target_change_id"])
+            named = set(self.grv.split_lexemes(e["representative_lexemes"]))
+            ref = (e.get("machine_evidence") or "").strip()
+            with self.subTest(edge=f"{pair[0]}->{pair[1]}"):
+                if harness.get(pair, set()) & named:
+                    continue
+                self.assertTrue(ref.startswith("test:"), ref)
+                self.assertTrue((REPO_ROOT / ref[len("test:"):]).is_file(), ref)
+
+
+class MachineStateProseTests(unittest.TestCase):
+    """Live human metadata may not mirror a current machine-state quantity.
+
+    The structured columns were cleaned by the authority repair, but a
+    free-text mirror is still a mirror: it goes stale the moment a corpus row,
+    a firing population or the executable order changes.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.grv = load_module("generate_registry_views")
+
+    def test_live_human_sources_contain_no_machine_state_prose(self):
+        errors = self.grv.validate_human_sources(_tsv_rows(NOTES))
+        errors += self.grv.validate_human_prose(
+            "sc_registry.tsv", _tsv_rows(SC_REGISTRY), "sc_id")
+        errors += self.grv.validate_human_prose(
+            "chronology_edges.tsv", _tsv_rows(EDGES), "source_change_id")
+        machine_state = [e for e in errors if "current machine state" in e]
+        self.assertEqual(machine_state, [])
+
+    def test_machine_state_formulations_are_detected(self):
+        for text in (
+            "SC103 sits at cascade position 1.",
+            "SC022 has witness_count = 1.",
+            "The rule fires 17 times.",
+            "SC004 currently has 24 corpus applications.",
+            "SC024 has 17 firings in the present corpus.",
+            "moved from position 23 to position 1",
+            "trace_occurrence_count is 3",
+            "executable position 22 is a holding zone",
+        ):
+            with self.subTest(text=text):
+                self.assertTrue(self.grv.find_machine_state_prose(text), text)
+
+    def test_legitimate_scholarly_prose_is_not_flagged(self):
+        for text in (
+            "Campbell §128 n. 1 p. 50 unifies the three feeders.",
+            "Ringe vol. 1 §3.2.7(ii) pp. 149-150.",
+            "This is one historical sound change, not three.",
+            "SC103 feeds SC028 in `fist`.",
+            "Early Runic makija, later 2nd c. AD (Gronvik 1998: 87).",
+            "Diagnostic witnesses include `fist` and `thought`.",
+            "See the generated firing census for the current population.",
+            "Fulk 2018 §4.6 pp. 60-61 reconstructs a retained low front vowel.",
+        ):
+            with self.subTest(text=text):
+                self.assertEqual(self.grv.find_machine_state_prose(text), [], text)
+
+    def test_dated_adjudication_memos_are_not_covered(self):
+        """A memo is a research record, not live metadata."""
+        self.assertNotIn("audits", str(self.grv.HUMAN_PROSE_COLUMNS))
+        for name in self.grv.HUMAN_PROSE_COLUMNS:
+            self.assertTrue(name.endswith(".tsv"), name)
+
+
 class NoOtherHandMaintainedMirrorsTests(unittest.TestCase):
     """Search the human sources for other copies of the same machine facts."""
 

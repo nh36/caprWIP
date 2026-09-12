@@ -26,11 +26,14 @@ the same nasalized long vowel and its rounded Old English outcome
 The geography is Anglo-Frisian. Old Saxon nasalized its stressed low vowels
 along with the rest of the northern West Germanic area
 [@RingeTaylor2014, p. 142, §5.1.2], and it shares the loss of the nasal in both
-of the earlier laws; the rounded outcome, however, it does not share. For the
-Proto-Germanic nasalized low vowel Old Saxon has *ā* without exception, and for
+of the earlier laws; the categorical, systematic rounding, however, it does not
+share. For the
+Proto-Germanic nasalized low vowel Old Saxon retains *ā* consistently, and for
 the vowel created by the nasal-spirant law it has *ā* or *ō* according to word
 and dialect, while Old English and Old Frisian have *ō* throughout
-[@Campbell1959, p. 44, §119; @Fulk2018, p. 72, §4.11]. Ringe treats the rounding
+[@Campbell1959, p. 44, §119; @Fulk2018, p. 72, §4.11]. That partial and
+lexically variable Old Saxon rounding is comparative evidence bearing on the
+innovation rather than participation in it. Ringe treats the rounding
 as a parallel development of the diverging northern dialects and locates it in
 the northernmost of them, that is in Anglo-Frisian
 [@Ringe2017, pp. 149--150, §3.2.7; @RingeTaylor2014, p. 142, §5.1.2]. Luick

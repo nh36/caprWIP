@@ -992,7 +992,7 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "Runner-limited: SC024 now executes at position 4, composed inside the bundled EarlyEnglishLineChanges immediately after PNWGmcAToUBeforeM and before every genuinely PWGmc innovation; the earlier-boundary search is limited by the same bundle (remaining earlier neighbors are input handoff, GmSimplification, AToUBeforeM), not a real lower boundary. Scholarship supplies only an absolute early anchor for the pan-NWGmc *e1 > *a onset (Early Runic makija, later 2nd c. AD, Gronvik 1998: 87 apud R/T 2014 p.12; Sami loan evidence, Stiles 2017: 4). See sc024-sc025-sc101-e1-complex-adjudication.md."
+      "notes": "Runner-limited: SC024 now executes near the head of the early corridor, composed inside the bundled EarlyEnglishLineChanges immediately after PNWGmcAToUBeforeM and before every genuinely PWGmc innovation; the earlier-boundary search is limited by the same bundle (remaining earlier neighbors are input handoff, GmSimplification, AToUBeforeM), not a real lower boundary. Scholarship supplies only an absolute early anchor for the pan-NWGmc *e1 > *a onset (Early Runic makija, later 2nd c. AD, Gronvik 1998: 87 apud R/T 2014 p.12; Sami loan evidence, Stiles 2017: 4). See sc024-sc025-sc101-e1-complex-adjudication.md."
     },
     {
       "source_change_id": "SC024",
@@ -1048,7 +1048,7 @@
       "strength": "historical_assertion",
       "interpretation_category": "no_break",
       "reciprocal_group_id": "",
-      "notes": "Historically asserted later boundary without an executable displacement break: R/T p.151 state the hiatus *w arose early enough to prevent fronting of *ā in pre-OE, i.e. SC102 precedes SC101. In the executable formulation SC101 is preconsonantal, so displacing SC102 after SC101 happens to commute on the present corpus (hiatus *ā is outside SC101's domain either way). Position 26 (before SC025/SC101) encodes the historical chronology per the governing principle that historically earlier rules occupy their historical region even when displacement commutes. See sc024-sc025-sc101-e1-complex-adjudication.md §12."
+      "notes": "Historically asserted later boundary without an executable displacement break: R/T p.151 state the hiatus *w arose early enough to prevent fronting of *ā in pre-OE, i.e. SC102 precedes SC101. In the executable formulation SC101 is preconsonantal, so displacing SC102 after SC101 happens to commute on the present corpus (hiatus *ā is outside SC101's domain either way). Stating it before SC025/SC101 encodes the historical chronology per the governing principle that historically earlier rules occupy their historical region even when displacement commutes. See sc024-sc025-sc101-e1-complex-adjudication.md §12."
     },
     {
       "source_change_id": "SC025",
@@ -1062,7 +1062,7 @@
       "strength": "one_sided_chronology",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "One-sided later boundary for the nasalization: the whole nasalization-and-rounding complex precedes *ai-monophthongization (Campbell §132 pp.52-53; R/T pp.169-170). Since the SC025/SC104 split the demonstration is run by displacing SC004 EARLIER (before SC025), not by displacing SC025 later: SC025 alone displaced after SC004 merely strands the nasalized vowel. Twelve rows change in that variant; stone and home are the decisive counterfeeding controls."
+      "notes": "One-sided later boundary for the nasalization: the whole nasalization-and-rounding complex precedes *ai-monophthongization (Campbell §132 pp.52-53; R/T pp.169-170). Since the SC025/SC104 split the demonstration is run by displacing SC004 EARLIER (before SC025), not by displacing SC025 later: SC025 alone displaced after SC004 merely strands the nasalized vowel. Several rows change in that variant; stone and home are the decisive counterfeeding controls."
     },
     {
       "source_change_id": "SC025",
@@ -1090,7 +1090,7 @@
       "strength": "technical_marker",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Executable feeding dependency. The North Sea Germanic nasal-spirant law creates one of the three inputs to the Anglo-Frisian rounding (Campbell §121 p.47, §128 n.1 p.50; Fulk §4.11 p.72). Historically the law is prior to the rounding because Old Saxon shares the law but not its rounded outcome."
+      "notes": "Executable feeding dependency. The North Sea Germanic nasal-spirant law creates one of the three inputs to the Anglo-Frisian rounding (Campbell §121 p.47, §128 n.1 p.50; Fulk §4.11 p.72). Historically the law is prior to the rounding because Old Saxon shares the law but not the categorical Anglo-Frisian rounding of its output."
     },
     {
       "source_change_id": "SC103",
@@ -1100,7 +1100,7 @@
       "evidence_basis": "independently_demonstrated",
       "witness_role": "feeding",
       "representative_lexemes": "thought",
-      "representative_forms": "PGmc `*θánxtē` 'thought (3sg pret.)' > OE `þōhte`. SC103 creates the nasalized low vowel and deletes the nasal (`*θ*á*n*x*t*ē` > `*θ*ã*x*t*ē`); SC104 then rounds exactly that vowel (`*θ*ã*x*t*ē` > `*θ*ō*x*t*ē`). Counterfactual composition in the opposite order leaves `*θ*ã*x*t*ē` unrounded, because SC104 has no `{*ã}` to read until SC103 has applied — a live feeding relation, not merely a stage entailment. This is the low-vowel (*aNx) branch of SC103; the other SC103 firing, `fist` (`*fúnxstiz`), takes the high-vowel branch and never reaches SC104",
+      "representative_forms": "PGmc `*θánxtē` 'thought (3sg pret.)' > OE `þōhte`. SC103 creates the nasalized low vowel and deletes the nasal (`*θ*á*n*x*t*ē` > `*θ*ã*x*t*ē`); SC104 then rounds exactly that vowel (`*θ*ã*x*t*ē` > `*θ*ō*x*t*ē`). Counterfactual composition in the opposite order leaves `*θ*ã*x*t*ē` unrounded, because SC104 has no `{*ã}` to read until SC103 has applied — a live feeding relation, not merely a stage entailment. This is the low-vowel (*aNx) branch of SC103; the high-vowel branch, exemplified by `fist` (`*fúnxstiz`), never reaches SC104",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",

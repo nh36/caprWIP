@@ -473,6 +473,35 @@ class ArchiveCurrentSeparationTests(unittest.TestCase):
     )
     ARCHIVE_BUILDERS = ("build_historical_audit_table.py",
                         "build_rename_migration_manifest.py")
+    # Every tool that participates in current-state propagation. None of their
+    # documentation may describe a frozen archive as something they generate.
+    CURRENT_STATE_TOOLS = ("generate_registry_views.py", "adjudicate.py")
+
+    def test_no_current_generator_documents_a_frozen_archive_as_generated(self):
+        archive_names = [p.name for p in self.ARCHIVES]
+        for tool in self.CURRENT_STATE_TOOLS:
+            text = (TOOLS / tool).read_text(encoding="utf-8")
+            for line in text.splitlines():
+                for name in archive_names:
+                    if name not in line:
+                        continue
+                    lowered = line.lower()
+                    with self.subTest(tool=tool, archive=name):
+                        for claim in ("generated", "regenerate", "produced by",
+                                      "chained", "written by", "current-state"):
+                            self.assertNotIn(
+                                claim, lowered,
+                                f"{tool} describes the frozen archive {name} as "
+                                f"a current-state projection ({line.strip()!r}); "
+                                "both archives are ARCHIVE / FROZEN and are "
+                                "never regenerated or synchronized")
+
+    def test_generator_docstring_marks_the_archives_frozen(self):
+        doc = (TOOLS / "generate_registry_views.py").read_text(encoding="utf-8")
+        header = doc.split('"""')[1]
+        self.assertIn("FROZEN ARCHIVES", header)
+        for path in self.ARCHIVES:
+            self.assertIn(path.name, header, path.name)
 
     def test_frozen_archives_carry_archive_banner(self):
         for path in self.ARCHIVES:

@@ -21,11 +21,15 @@ GENERATED (never hand-edited; written by this script):
     Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_graph_summary.md
     Germanic/docs/sound_changes/registry/settled_verdicts.md
 
-Downstream generated files produced by their own existing builders (chained
-from the staging-map view): cascade_baseline/historical_audit_table.tsv
-(tools/build_historical_audit_table.py) and
-cascade_baseline/rename_migration_manifest.tsv
-(tools/build_rename_migration_manifest.py).
+FROZEN ARCHIVES (never regenerated, never synchronized with current state):
+    Germanic/docs/sound_changes/cascade_baseline/historical_audit_table.tsv
+    Germanic/docs/sound_changes/cascade_baseline/rename_migration_manifest.tsv
+    These are dated ARCHIVE / FROZEN snapshots of a past state. This script
+    does not write them, adjudicate.py --finalize explicitly excludes them,
+    and current-state propagation must never synchronize them. Their
+    historical builders (tools/build_historical_audit_table.py,
+    tools/build_rename_migration_manifest.py) are retained only as a record
+    of how the snapshots were originally produced.
 
 Usage:
     python3 Germanic/tools/generate_registry_views.py            # write views
@@ -49,6 +53,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
 REGISTRY_DIR = SC_DIR / "registry"
 GRAPH_DIR = SC_DIR / "order_tests/chronology_graph"
+ORDER_SUMMARIES = SC_DIR / "order_tests/summaries"
 
 SC_REGISTRY = REGISTRY_DIR / "sc_registry.tsv"
 INVENTORY_NOTES = REGISTRY_DIR / "sc_inventory_notes.tsv"
@@ -155,11 +160,117 @@ def validate_human_sources(notes):
                     f"inventory notes: {n['change_id']} column {column!r} "
                     "contains a Foma source line number; line numbers are "
                     "computed for display and never stored")
+    errors.extend(validate_human_prose("sc_inventory_notes.tsv", notes, "change_id"))
     return errors
 
 
 def split_lexemes(value):
     return [x.strip() for x in re.split(r"[;,]", value or "") if x.strip()]
+
+
+# Unmistakable formulations of CURRENT machine state. Human prose may describe
+# scientific relations, but a volatile quantity or physical cascade offset that
+# has a generated authority must not be mirrored in hand-edited metadata: the
+# mirror goes stale the moment a corpus row, a firing population or the
+# executable order changes. Deliberately conservative — page numbers, dates,
+# section references ("Campbell 128"), SC numbers and phrases such as "one
+# historical sound change" are all legitimate and must not be caught.
+MACHINE_STATE_PROSE = (
+    (r"\bcascade position\s+\d+", "the generated executable model"),
+    (r"\bexecutable position\s+\d+", "the generated executable model"),
+    (r"\bexec[_ ]index\s*=?\s*\d+", "the generated executable model"),
+    (r"\bposition\s+\d+\b", "the generated executable model"),
+    (r"\bpositions\s+\d+\s*[-\u2013]\s*\d+", "the generated executable model"),
+    (r"\bpos\.?\s+\d+\b", "the generated executable model"),
+    (r"\bmoved from position\s+\d+", "the generated executable model"),
+    (r"\btrace_occurrence_count\b", "the generated firing census"),
+    (r"\bwitness_count\b", "the generated firing census"),
+    (r"\bfiring_count\s*=\s*\d+", "the generated firing census"),
+    (r"\bfires\s+\d+\s+times\b", "generated firing_count / firing_lexemes"),
+    (r"\b\d+\s+firings\b", "generated firing_count / firing_lexemes"),
+    (r"\b\d+\s+corpus\s+(applications|firings|witnesses|rows)\b",
+     "generated firing_count / firing_lexemes"),
+    (r"\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\s+"
+     r"corpus\s+(applications|firings|witnesses|rows)\b",
+     "generated firing_count / firing_lexemes"),
+    (r"\ball\s+\d+\s+(firings|witnesses|applications)\b",
+     "generated firing_count / firing_lexemes"),
+    (r"\bsole\s+(live\s+)?(firing|witness|corpus firing)\b",
+     "generated firing_count / firing_lexemes"),
+    (r"\bonly\s+(live\s+)?(firing|witness)\b",
+     "generated firing_count / firing_lexemes"),
+)
+
+MACHINE_STATE_PROSE_RE = tuple(
+    (re.compile(pattern, re.IGNORECASE), advice)
+    for pattern, advice in MACHINE_STATE_PROSE
+)
+
+# Free-text columns of the hand-edited sources. Prose here is expected to stay
+# current, so it is held to the same authority rule as a structured column.
+# (Dated adjudication memos under docs/sound_changes/audits/ are research
+# records, not live metadata, and are deliberately NOT covered by this guard.)
+HUMAN_PROSE_COLUMNS = {
+    "sc_inventory_notes.tsv": ("notes", "review_note", "plain_description_draft"),
+    "sc_registry.tsv": (
+        "staging_notes", "chronology_summary", "chronology_problem",
+        "evidence_summary", "notes", "verdict_summary",
+    ),
+    "chronology_edges.tsv": ("notes", "representative_forms"),
+}
+
+
+def find_machine_state_prose(text):
+    """Return (matched_text, advice) pairs for machine-state claims in prose."""
+    hits = []
+    for pattern, advice in MACHINE_STATE_PROSE_RE:
+        for m in pattern.finditer(text or ""):
+            hits.append((m.group(0), advice))
+    return hits
+
+
+def validate_human_prose(filename, rows, key_column):
+    """No live human metadata may mirror a current machine-state quantity."""
+    errors = []
+    columns = HUMAN_PROSE_COLUMNS.get(filename, ())
+    for row in rows:
+        key = row.get(key_column) or "?"
+        for column in columns:
+            if column not in row:
+                continue
+            for matched, advice in find_machine_state_prose(row[column]):
+                errors.append(
+                    f"{filename}: {key} column {column!r} states current machine "
+                    f"state ({matched!r}); human prose must describe the "
+                    f"scientific relation and defer to {advice}"
+                )
+    return errors
+
+
+def load_harness_witnesses():
+    """Edge -> witness lexemes actually demonstrated by the order-test harness.
+
+    The canonical first-break/order-sensitivity summaries record, per run, the
+    rule that was displaced, the rule it was crossed with, and the lexeme whose
+    output changed. That is machine evidence that the two rules really do
+    interact on that lexeme, as opposed to mere corpus membership.
+    """
+    witnesses = {}
+    if not ORDER_SUMMARIES.is_dir():
+        return witnesses
+    for path in sorted(ORDER_SUMMARIES.glob("*_changes.tsv")):
+        try:
+            rows = read_tsv(path)
+        except Exception:  # a malformed archive summary must not break --check
+            continue
+        for row in rows:
+            change = row.get("change_id")
+            crossed = row.get("crossed_change_id")
+            lexeme = row.get("lexical_item")
+            if change and crossed and lexeme:
+                witnesses.setdefault((change, crossed), set()).add(lexeme)
+                witnesses.setdefault((crossed, change), set()).add(lexeme)
+    return witnesses
 
 
 def load_corpus_concepts():
@@ -174,6 +285,9 @@ def validate_registry(reg, edges):
     corpus = load_corpus_concepts()
     if corpus is None:
         corpus = set()
+    harness = load_harness_witnesses()
+    errors.extend(validate_human_prose("sc_registry.tsv", reg, "sc_id"))
+    errors.extend(validate_human_prose("chronology_edges.tsv", edges, "source_change_id"))
     counts = Counter(r["sc_id"] for r in reg)
     for sc, n in counts.items():
         if n != 1:
@@ -232,6 +346,38 @@ def validate_registry(reg, edges):
                         errors.append(
                             f"edges: {e['source_change_id']}->{e['target_change_id']} names "
                             f"witness {lex!r}, which is not in the selected corpus"
+                        )
+                # representative_lexemes establishes CORPUS MEMBERSHIP ONLY: it
+                # proves the named word is in the selected corpus, not that it
+                # actually demonstrates the claimed interaction. A claimed live
+                # demonstration must therefore also have a machine-checkable
+                # evidence route: either the canonical order-test harness
+                # recorded an output change for this rule pair on one of the
+                # named lexemes, or structured metadata names a dedicated
+                # regression test that checks the interaction.
+                pair = (e["source_change_id"], e["target_change_id"])
+                demonstrated = harness.get(pair, set())
+                named = set(split_lexemes(e["representative_lexemes"]))
+                ref = (e.get("machine_evidence") or "").strip()
+                if not (demonstrated & named):
+                    if not ref:
+                        errors.append(
+                            f"edges: {e['source_change_id']}->{e['target_change_id']} claims an "
+                            "independently demonstrated relation, but no order-test "
+                            "harness result demonstrates the interaction on a named "
+                            "witness; name a dedicated regression test in "
+                            "machine_evidence (test:Germanic/tests/<file>.py) or use "
+                            "evidence_basis=stage_entailed"
+                        )
+                    elif not ref.startswith("test:"):
+                        errors.append(
+                            f"edges: {e['source_change_id']}->{e['target_change_id']} has "
+                            f"machine_evidence {ref!r}; expected test:<path>"
+                        )
+                    elif not (REPO_ROOT / ref[len("test:"):]).is_file():
+                        errors.append(
+                            f"edges: {e['source_change_id']}->{e['target_change_id']} "
+                            f"machine_evidence names a missing test: {ref[len('test:'):]}"
                         )
             retired = {r["sc_id"] for r in reg if r["lifecycle_status"] == "retired"}
             if e["source_change_id"] in retired or e["target_change_id"] in retired:
