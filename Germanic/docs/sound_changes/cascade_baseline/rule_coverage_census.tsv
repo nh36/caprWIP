@@ -19,21 +19,21 @@ SC008	PWGmcCoronalWAssimilation	8	2	four, you	witnessed
 SC009	PWGmcIjContraction	9	1	friend	witnessed	
 SC010	PWGmcJGemination	10	8	hedge, laugh, lung, net, set, sit, will	witnessed	
 SC011	PWGmcSyllabicJ	11	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC012	EAFLThVoicing	12	4	field, fold, gold, wold	witnessed	
-SC013	PWGmcDentalHardening	13	4	cud, find, lade, needle	witnessed	
-SC015	PNWGmcILowering	14	4	meed, nest, wether, world	witnessed	
-SC017	PNWGmcULowering	15	39	board, bore, bottom, bow, corn, crop, door, foal, folk, fox, frost, god, gold, hoard, horn, knob, lock, nose, oven, ox, coat, shovel, sorrow, spur, stock, stork, storm, thorn, trough, word, yoke, bore (iptv.2sg), bore (3sg), buck, fowl, rust, wolf, wool	witnessed	
-SC018	PNWGmcStressedMonosyllableORaising	16	1	both	witnessed	
-SC019	PNWGmcFinalLongORaising	17	29	beech, bier, dew, hall, help, herd, hind, linden, liver, lung, lye, march, nave, needle, nose, rind, rood, sake, salve, shame, shovel, shower, sorrow, soul, spindle, tongs, while, rust, wool	witnessed	
-SC020	EAFFinalZDeletion	18	111	beard, beaver, belly, birth, bosom, bottom, bough, breeches, bride, calf, comb, craft, crop, cud, dale, day, deal, deed, dill, dough, dream, drench, eel, fern, field, finger, fish, fist, flesh, flood, fox, friend, fright, gang, ghost, gift, ground, guest, hand, harm, harvest, hawk, hazel, hearth, heath, hedge, helm, home, hood, hoof, hound, knight, leek, loath, lock, lust, malt, mast, might, milk, month, mood, nail, need, one, oven, raven, reek, rest, coat, rudder, rye, sea, seam, sheath, shield, shilling, shoulder, snow, spoon, staff, stem, stock, stone, stool, stork, storm, stream, string, summer, team, thane, thanks, thief, thirst, thorn, three, thunder, tide, wain, wasp, way, whale, wight, winter, wold, worm, you, buck, fowl, wolf	witnessed	
-SC098	PWGmcUnstressedWordFinalIApocope	19	1	you	witnessed	
-SC097	MonosyllabicFinalZLoss	20	1	who	witnessed	
-SC003	EAFRhotacism	21	7	berry, deer, hoard, learn, meed, learn (iptv.2sg), learn (3sg)	witnessed	
-SC022	PNWGmcMnDissimilation	22	1	stem	witnessed	
-SC023	PNWGmcNStemNLoss	23	17	adder, earth, flask, heart, line, list, nettle, nightmare, side, sun, swallow, toe, tongue, wart, weasel, whore, widow	witnessed	
-SC026	EAFNasalSpirantLengthening	24	2	goose, youth	witnessed	
-SC027	EAFNasalSpirantLoss	25	2	goose, youth	witnessed	
-SC028	PNWGmcPreconsonantalXLoss	26	1	fist	witnessed	
+SC028	PNWGmcPreconsonantalXLoss	12	1	fist	witnessed	
+SC012	EAFLThVoicing	13	4	field, fold, gold, wold	witnessed	
+SC013	PWGmcDentalHardening	14	4	cud, find, lade, needle	witnessed	
+SC015	PNWGmcILowering	15	4	meed, nest, wether, world	witnessed	
+SC017	PNWGmcULowering	16	39	board, bore, bottom, bow, corn, crop, door, foal, folk, fox, frost, god, gold, hoard, horn, knob, lock, nose, oven, ox, coat, shovel, sorrow, spur, stock, stork, storm, thorn, trough, word, yoke, bore (iptv.2sg), bore (3sg), buck, fowl, rust, wolf, wool	witnessed	
+SC018	PNWGmcStressedMonosyllableORaising	17	1	both	witnessed	
+SC019	PNWGmcFinalLongORaising	18	29	beech, bier, dew, hall, help, herd, hind, linden, liver, lung, lye, march, nave, needle, nose, rind, rood, sake, salve, shame, shovel, shower, sorrow, soul, spindle, tongs, while, rust, wool	witnessed	
+SC020	EAFFinalZDeletion	19	111	beard, beaver, belly, birth, bosom, bottom, bough, breeches, bride, calf, comb, craft, crop, cud, dale, day, deal, deed, dill, dough, dream, drench, eel, fern, field, finger, fish, fist, flesh, flood, fox, friend, fright, gang, ghost, gift, ground, guest, hand, harm, harvest, hawk, hazel, hearth, heath, hedge, helm, home, hood, hoof, hound, knight, leek, loath, lock, lust, malt, mast, might, milk, month, mood, nail, need, one, oven, raven, reek, rest, coat, rudder, rye, sea, seam, sheath, shield, shilling, shoulder, snow, spoon, staff, stem, stock, stone, stool, stork, storm, stream, string, summer, team, thane, thanks, thief, thirst, thorn, three, thunder, tide, wain, wasp, way, whale, wight, winter, wold, worm, you, buck, fowl, wolf	witnessed	
+SC098	PWGmcUnstressedWordFinalIApocope	20	1	you	witnessed	
+SC097	MonosyllabicFinalZLoss	21	1	who	witnessed	
+SC003	EAFRhotacism	22	7	berry, deer, hoard, learn, meed, learn (iptv.2sg), learn (3sg)	witnessed	
+SC022	PNWGmcMnDissimilation	23	1	stem	witnessed	
+SC023	PNWGmcNStemNLoss	24	17	adder, earth, flask, heart, line, list, nettle, nightmare, side, sun, swallow, toe, tongue, wart, weasel, whore, widow	witnessed	
+SC026	EAFNasalSpirantLengthening	25	2	goose, youth	witnessed	
+SC027	EAFNasalSpirantLoss	26	2	goose, youth	witnessed	
 SC102	EAFHiatusWInsertion	27	1	sow	witnessed	
 SC025	EAFLongANasalRounding	28	2	month, spoon	witnessed	
 SC104	EAFNasalizedLowRounding	29	4	goose, month, spoon, thought	witnessed	

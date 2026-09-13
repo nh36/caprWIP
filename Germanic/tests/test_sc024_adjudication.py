@@ -146,7 +146,10 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         return before, after
 
     def across_w_insertion(self, form):
-        before = self.stage("pnwgmc_preconsonantal_x_loss", form)
+        # The checkpoint immediately preceding SC102 is EAFNasalSpirantLoss;
+        # it was SC028 PNWGmcPreconsonantalXLoss until the SC028 adjudication
+        # moved that rule to its northern West Germanic position.
+        before = self.stage("eaf_nasal_spirant_loss", form)
         after = self.stage("eaf_hiatus_w_insertion", form)
         return before, after
 

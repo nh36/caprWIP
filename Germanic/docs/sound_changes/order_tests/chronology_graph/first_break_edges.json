@@ -148,13 +148,13 @@
     },
     {
       "change_id": "SC028",
-      "display_name": "Proto-Northwest Germanic Preconsonantal X Loss",
+      "display_name": "Northern West Germanic *xs-Cluster Simplification",
       "current_order": "28",
       "rule_name": "PNWGmcPreconsonantalXLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC028-nwgmc-preconsonantal-x-loss.md",
       "card_type": "negative_boundary",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break."
+      "short_summary": "Post-Proto-Germanic (Gothic bi-niuhsjan, saihsta retain the *h) and pre-breaking (R/T p.158: the undiphthongized vowels of waestm and thisl \"can be accounted for only by supposing that these *h were lost before breaking took place\"). R/T p.157 place it after the PWGmc *-CijV- syncope, which is what creates the *sj of *niuhsjan, so it is now composed immediately after PWGmcSyllabicJ. Fed by SC103 PGmcNasalLossBeforeX, which creates the *xst cluster of fist (*funxstiz > *fuxstiz); the two are separate historical changes, since Gothic underwent SC103 but not this one. Restaged out of the North Sea Germanic corridor, where it had wrongly followed the Ingvaeonic nasal-spirant law."
     },
     {
       "change_id": "SC029",
@@ -1107,6 +1107,20 @@
       "notes": "Live feeding relation with a low-vowel corpus witness: `thought` (PGmc *θánxtē > OE þōhte), added 2026 precisely because SC103's low-vowel branch previously had no live witness. A Proto-Germanic change necessarily precedes an Anglo-Frisian one, and the corpus now also demonstrates the feeding directly. Campbell §128 n.1 p.50 states that the rounding affected the nasalized vowel of §119 (this rule) and of §121 (SC026/SC027) at the same time; Fulk §4.11 p.72 adds that Old Saxon reflects the PGmc nasalized vowel invariably as unrounded ā, which is the comparative proof that the rounding is later and narrower than SC103; Fulk §4.1 p. 55 names OE pret. sg. þōhte as the very form in which the PGmc nasalized vowel surfaces as Anglo-Frisian ō."
     },
     {
+      "source_change_id": "SC103",
+      "target_change_id": "SC028",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "feeding",
+      "representative_lexemes": "fist",
+      "representative_forms": "*funxstiz > *fuxstiz > *fustiz",
+      "strength": "stage_entailed",
+      "interpretation_category": "stage_entailed",
+      "reciprocal_group_id": "",
+      "notes": "Stage-entailed, NOT independently demonstrated. SC103 is pan-Germanic (Gothic thuhta, brahta, fahan) while SC028 is post-Proto-Germanic, since Gothic retains the *h of the *hsC cluster (bi-niuhsjan, saihsta; Campbell sec.417 p.170, R/T pp.157-158). The direction therefore follows from the established stages alone. In the executable cascade SC103 does create the *xst cluster that SC028 simplifies in fist (*funxstiz > *fuxstiz > *fustiz), but that feeding is NOT a chronology demonstration: a counterfactual composition with SC028 before SC103 still yields fyst, because deleting the *x first leaves *funstiz, whose nasal is then removed with compensatory lengthening by the Ingvaeonic nasal-spirant law SC026/SC027 (whose domain includes *ns). The surface result is overdetermined, so no corpus witness discriminates the order and none is claimed. See sc028-xs-cluster-simplification-adjudication.md. Witness discipline: fist is named as the representative lexeme because it is the form in which the relation is visible, but it is NOT a discriminating witness. A counterfactual run with SC028 composed before SC103 still yields fyst, because deleting the *x first leaves a nasal before *s which the Ingvaeonic nasal-spirant law then removes with the same compensatory lengthening. The outcome is overdetermined, so no corpus form can demonstrate the order and no machine evidence route is claimed."
+    },
+    {
       "source_change_id": "SC101",
       "target_change_id": "SC004",
       "relation_type": "one_sided_chronology",
@@ -1189,34 +1203,6 @@
       "interpretation_category": "search_boundary",
       "reciprocal_group_id": "",
       "notes": "Earlier boundary reciprocates SC026 later around goose and youth (executable dependency; fist withdrawn, see SC103); later search reached SC087 with no real break."
-    },
-    {
-      "source_change_id": "SC028",
-      "target_change_id": "PWGmcChanges",
-      "relation_type": "runner_limited_boundary",
-      "direction_basis": "earlier_boundary",
-      "evidence_basis": "boundary_observation",
-      "witness_role": "",
-      "representative_lexemes": "",
-      "representative_forms": "`none — no earlier real break was found before the runner boundary`",
-      "strength": "runner_boundary",
-      "interpretation_category": "runner_boundary",
-      "reciprocal_group_id": "",
-      "notes": "No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break."
-    },
-    {
-      "source_change_id": "SC028",
-      "target_change_id": "SC087",
-      "relation_type": "no_break_search_boundary",
-      "direction_basis": "later_boundary",
-      "evidence_basis": "boundary_observation",
-      "witness_role": "",
-      "representative_lexemes": "",
-      "representative_forms": "`none — no later real break was found before the runner boundary`",
-      "strength": "search_boundary",
-      "interpretation_category": "search_boundary",
-      "reciprocal_group_id": "",
-      "notes": "No ordinary chronology first break was found in either direction: earlier search is runner-limited by bundled PWGmcChanges and later search reached SC087 with no real break."
     },
     {
       "source_change_id": "SC029",

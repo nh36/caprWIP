@@ -40,37 +40,37 @@ define S012PWGmcJGemination S011PWGmcIjContraction
     .o. PWGmcJGemination;
 define S013PWGmcSyllabicJ S012PWGmcJGemination
     .o. PWGmcSyllabicJ;
-define S014EAFLThVoicing S013PWGmcSyllabicJ
-    .o. EAFLThVoicing;
-define S015PWGmcDentalHardening S014EAFLThVoicing
-    .o. PWGmcDentalHardening;
-define S016PNWGmcILowering S015PWGmcDentalHardening
-    .o. PNWGmcILowering;
-define S017PNWGmcULowering S016PNWGmcILowering
-    .o. PNWGmcULowering;
-define S018PNWGmcStressedMonosyllableORaising S017PNWGmcULowering
-    .o. PNWGmcStressedMonosyllableORaising;
-define S019PNWGmcFinalLongORaising S018PNWGmcStressedMonosyllableORaising
-    .o. PNWGmcFinalLongORaising;
-define S020EAFFinalZDeletion S019PNWGmcFinalLongORaising
-    .o. EAFFinalZDeletion;
-define S021PWGmcUnstressedWordFinalIApocope S020EAFFinalZDeletion
-    .o. PWGmcUnstressedWordFinalIApocope;
-define S022MonosyllabicFinalZLoss S021PWGmcUnstressedWordFinalIApocope
-    .o. MonosyllabicFinalZLoss;
-define S023EAFRhotacism S022MonosyllabicFinalZLoss
-    .o. EAFRhotacism;
-define S024PNWGmcMnDissimilation S023EAFRhotacism
-    .o. PNWGmcMnDissimilation;
-define S025PNWGmcNStemNLoss S024PNWGmcMnDissimilation
-    .o. PNWGmcNStemNLoss;
-define S026EAFNasalSpirantLengthening S025PNWGmcNStemNLoss
-    .o. EAFNasalSpirantLengthening;
-define S027EAFNasalSpirantLoss S026EAFNasalSpirantLengthening
-    .o. EAFNasalSpirantLoss;
-define S028PNWGmcPreconsonantalXLoss S027EAFNasalSpirantLoss
+define S014PNWGmcPreconsonantalXLoss S013PWGmcSyllabicJ
     .o. PNWGmcPreconsonantalXLoss;
-define S029EAFHiatusWInsertion S028PNWGmcPreconsonantalXLoss
+define S015EAFLThVoicing S014PNWGmcPreconsonantalXLoss
+    .o. EAFLThVoicing;
+define S016PWGmcDentalHardening S015EAFLThVoicing
+    .o. PWGmcDentalHardening;
+define S017PNWGmcILowering S016PWGmcDentalHardening
+    .o. PNWGmcILowering;
+define S018PNWGmcULowering S017PNWGmcILowering
+    .o. PNWGmcULowering;
+define S019PNWGmcStressedMonosyllableORaising S018PNWGmcULowering
+    .o. PNWGmcStressedMonosyllableORaising;
+define S020PNWGmcFinalLongORaising S019PNWGmcStressedMonosyllableORaising
+    .o. PNWGmcFinalLongORaising;
+define S021EAFFinalZDeletion S020PNWGmcFinalLongORaising
+    .o. EAFFinalZDeletion;
+define S022PWGmcUnstressedWordFinalIApocope S021EAFFinalZDeletion
+    .o. PWGmcUnstressedWordFinalIApocope;
+define S023MonosyllabicFinalZLoss S022PWGmcUnstressedWordFinalIApocope
+    .o. MonosyllabicFinalZLoss;
+define S024EAFRhotacism S023MonosyllabicFinalZLoss
+    .o. EAFRhotacism;
+define S025PNWGmcMnDissimilation S024EAFRhotacism
+    .o. PNWGmcMnDissimilation;
+define S026PNWGmcNStemNLoss S025PNWGmcMnDissimilation
+    .o. PNWGmcNStemNLoss;
+define S027EAFNasalSpirantLengthening S026PNWGmcNStemNLoss
+    .o. EAFNasalSpirantLengthening;
+define S028EAFNasalSpirantLoss S027EAFNasalSpirantLengthening
+    .o. EAFNasalSpirantLoss;
+define S029EAFHiatusWInsertion S028EAFNasalSpirantLoss
     .o. EAFHiatusWInsertion;
 define S030EAFLongANasalRounding S029EAFHiatusWInsertion
     .o. EAFLongANasalRounding;
@@ -268,64 +268,64 @@ regex S013PWGmcSyllabicJ;
 save stack old_english_sandbox_after_pwgmc_syllabic_j.bin
 
 clear stack
-regex S014EAFLThVoicing;
+regex S014PNWGmcPreconsonantalXLoss;
+save stack old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin
+
+clear stack
+regex S015EAFLThVoicing;
 save stack old_english_sandbox_after_eaf_l_th_voicing.bin
 
 clear stack
-regex S015PWGmcDentalHardening;
+regex S016PWGmcDentalHardening;
 save stack old_english_sandbox_after_pwgmc_dental_hardening.bin
 
 clear stack
-regex S016PNWGmcILowering;
+regex S017PNWGmcILowering;
 save stack old_english_sandbox_after_pnwgmc_i_lowering.bin
 
 clear stack
-regex S017PNWGmcULowering;
+regex S018PNWGmcULowering;
 save stack old_english_sandbox_after_pnwgmc_u_lowering.bin
 
 clear stack
-regex S018PNWGmcStressedMonosyllableORaising;
+regex S019PNWGmcStressedMonosyllableORaising;
 save stack old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin
 
 clear stack
-regex S019PNWGmcFinalLongORaising;
+regex S020PNWGmcFinalLongORaising;
 save stack old_english_sandbox_after_pnwgmc_final_long_o_raising.bin
 
 clear stack
-regex S020EAFFinalZDeletion;
+regex S021EAFFinalZDeletion;
 save stack old_english_sandbox_after_eaf_final_z_deletion.bin
 
 clear stack
-regex S021PWGmcUnstressedWordFinalIApocope;
+regex S022PWGmcUnstressedWordFinalIApocope;
 save stack old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin
 
 clear stack
-regex S022MonosyllabicFinalZLoss;
+regex S023MonosyllabicFinalZLoss;
 save stack old_english_sandbox_after_monosyllabic_final_z_loss.bin
 
 clear stack
-regex S023EAFRhotacism;
+regex S024EAFRhotacism;
 save stack old_english_sandbox_after_eaf_rhotacism.bin
 
 clear stack
-regex S024PNWGmcMnDissimilation;
+regex S025PNWGmcMnDissimilation;
 save stack old_english_sandbox_after_pnwgmc_mn_dissimilation.bin
 
 clear stack
-regex S025PNWGmcNStemNLoss;
+regex S026PNWGmcNStemNLoss;
 save stack old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin
 
 clear stack
-regex S026EAFNasalSpirantLengthening;
+regex S027EAFNasalSpirantLengthening;
 save stack old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin
 
 clear stack
-regex S027EAFNasalSpirantLoss;
+regex S028EAFNasalSpirantLoss;
 save stack old_english_sandbox_after_eaf_nasal_spirant_loss.bin
-
-clear stack
-regex S028PNWGmcPreconsonantalXLoss;
-save stack old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin
 
 clear stack
 regex S029EAFHiatusWInsertion;

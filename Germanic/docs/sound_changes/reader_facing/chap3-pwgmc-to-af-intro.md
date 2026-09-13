@@ -151,7 +151,7 @@ then West Germanic rhotacism (SC003), which turns every surviving `*z` into
 `*r` only after the deletions have run their course. There follow the
 unstressed `*ō` raising (SC021), the `*mn` dissimilation and n-stem `*n`
 loss (SC022–SC023), the long-`*ē` developments (SC024–SC025), the
-nasal-spirant corridor (SC026–SC027) with preconsonantal `*x` loss (SC028),
+nasal-spirant corridor (SC026–SC027),
 and finally Anglo-Frisian ai-monophthongization (SC004, the North Sea areal
 vowel change) closing the chapter.
 

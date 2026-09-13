@@ -11,7 +11,7 @@ production rules, using the Old-English-row PROTOFORM (the production input):
          span (*spánnai -> spanne) and meed (*mízdai -> meorde).
   SC004  EAFAiMonophthongization              : {*ái} -> {*ā}
          (stressed/root *ái; Early Anglo-Frisian / North Sea Germanic); EAF
-         corridor, after SC028 PNWGmcPreconsonantalXLoss; carries the SC036
+         corridor, after the fronting/rounding block; carries the SC036
          *soul* boundary. 24 corpus applications (23 attested + roe).
 
 loam (*láimą) is a stressed SC004 case by its PROTOFORM; whine (*xwḯnaną) and
@@ -219,16 +219,17 @@ class ProductionCascadeTests(unittest.TestCase):
             self.src)
         self.assertEqual(m.group(1), "PNWGmcUnstressedAiMonophthongization")
 
-    def test_sc004_general_runs_after_sc028_in_production(self):
+    def test_sc004_general_runs_after_the_fronting_rounding_block(self):
         # Since the SC024 e1-complex split, EAFLongANasalRounding (SC025) and
-        # EAFLongAFronting (SC101) sit between SC028 and SC004: both must
-        # precede SC004 so that *ā < *ai arises after fronting/rounding
-        # (Campbell §132; Ringe & Taylor pp. 169-170). The production
-        # composition is the only copy since the EnglishAfter* instrumentation
-        # chain was retired (2026 infrastructure pass).
+        # EAFLongAFronting (SC101) precede SC004, so that *ā < *ai arises after
+        # fronting/rounding (Campbell §132; Ringe & Taylor pp. 169-170). The
+        # production composition is the only copy since the EnglishAfter*
+        # instrumentation chain was retired (2026 infrastructure pass).
+        # SC028 PNWGmcPreconsonantalXLoss used to head this block; the SC028
+        # adjudication moved it to its northern West Germanic position, so the
+        # block is now anchored on EAFHiatusWInsertion.
         pat = re.compile(
-            r"\.o\. PNWGmcPreconsonantalXLoss\b.*\n(?:\s*#.*\n)*"
-            r"\s*\.o\. EAFHiatusWInsertion\b.*\n(?:\s*#.*\n)*"
+            r"\.o\. EAFHiatusWInsertion\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongANasalRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFNasalizedLowRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongAFronting\b.*\n(?:\s*#.*\n)*"

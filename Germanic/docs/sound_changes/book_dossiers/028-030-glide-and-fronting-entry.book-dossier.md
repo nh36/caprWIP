@@ -1,5 +1,36 @@
 # SC028-SC030: Glide and fronting entry
 
+> **SUPERSEDED IN PART — the SC028 material below predates the SC028 adjudication
+> of 2026.** This dossier is retained as a dated research record; it is not
+> current guidance for SC028. See
+> `Germanic/docs/sound_changes/audits/sc028-xs-cluster-simplification-adjudication.md`.
+>
+> Four assumptions about SC028 in the text below are now known to be wrong.
+>
+> 1. **It is not a "kind of `x`-loss" in Campbell's broad sense.** The rule is the
+>    narrow simplification of *xs* before a further consonant (Campbell §417
+>    p. 170). The §461 citation with `flēam` and `hēla` conflated it with a
+>    different change, the loss of *x* between a vowel and a voiced consonant
+>    with compensatory lengthening (Campbell §461 p. 186, Bülbring §528 p. 215).
+> 2. **It is not Northwest Germanic.** Gothic retains the *h* of the cluster
+>    (`bi-niuhsjan`, `saihsta`), so the change is post-Proto-Germanic; Ringe and
+>    Taylor pp. 157-158 read it as northern West Germanic and allow that the
+>    North Germanic agreement is partly parallel drift.
+> 3. **Its chronology is not merely "negative" for want of searching.** The
+>    negative card is now explained: the sole witness `fist` is overdetermined,
+>    reaching the same surface form under either order relative to SC103, so no
+>    displacement probe can discriminate. The chronology is carried by
+>    comparative evidence instead, which bounds the change after the PWGmc
+>    *-CijV-* syncope and before breaking.
+> 4. **It no longer belongs to this editorial row.** SC028 has been restaged and
+>    moved out of the Ingvaeonic corridor into the northern West Germanic region
+>    of the cascade. Its former adjacency to SC029 and SC030 was an artifact of
+>    the old executable placement, not a historical grouping, so the "entry
+>    bridge" question below should be reopened for SC029-SC030 alone.
+>
+> The SC029 and SC030 material in this dossier is not affected and has not been
+> adjudicated.
+
 ## 1. Role in the book
 
 This row is the compact entry into the early Old English fronting and

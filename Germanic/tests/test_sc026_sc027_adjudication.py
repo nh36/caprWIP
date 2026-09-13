@@ -292,11 +292,17 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
         after_pgmc = self.stage("pgmc_nasal_loss_before_x", form)
         self.assertEqual(after_pgmc, ["*f*ū*x*s*t*i*z"],
                          "SC103 lengthens and deletes the nasal before *x")
+        # SC028 PNWGmcPreconsonantalXLoss then simplifies the *xst cluster
+        # that SC103 has just created; since the SC028 adjudication it does so
+        # in the northern West Germanic region, ahead of the Ingvaeonic law.
+        self.assertEqual(self.stage("pnwgmc_preconsonantal_x_loss", form),
+                         ["*f*ū*s*t*i*z"],
+                         "SC028 deletes the *x of the *xst cluster")
         # Neither step of the North Sea Germanic law may touch it: the state
         # entering the law (after SC023 PNWGmcNStemNLoss, the stage
         # immediately preceding SC026) survives both steps unchanged.
         before_law = self.stage("pnwgmc_n_stem_n_loss", form)
-        self.assertEqual(before_law, ["*f*ū*x*s*t*i"])
+        self.assertEqual(before_law, ["*f*ū*s*t*i"])
         self.assertEqual(self.stage("eaf_nasal_spirant_lengthening", form),
                          before_law)
         self.assertEqual(self.stage("eaf_nasal_spirant_loss", form),

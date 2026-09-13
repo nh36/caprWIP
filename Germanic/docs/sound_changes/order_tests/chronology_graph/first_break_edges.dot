@@ -18,7 +18,7 @@ digraph first_break_chronology {
   "SC025" [label="SC025\nNorth Sea Germanic nasalization of long a before a nasal"];
   "SC026" [label="SC026\nNorth Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening)"];
   "SC027" [label="SC027\nNorth Sea Germanic nasal-spirant law (step 2: loss of the nasal)"];
-  "SC028" [label="SC028\nProto-Northwest Germanic Preconsonantal X Loss"];
+  "SC028" [label="SC028\nNorthern West Germanic *xs-Cluster Simplification"];
   "SC029" [label="SC029\nOE Awj Glide Formation"];
   "SC030" [label="SC030\nOE Au Fronting"];
   "SC031" [label="SC031\nOE WW Simplification"];
@@ -106,14 +106,13 @@ digraph first_break_chronology {
   "SC025" -> "SC104" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC026" -> "SC104" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC103" -> "SC104" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC103" -> "SC028" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC101" -> "SC004" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC101" -> "SC056" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC026" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC026" -> "SC027" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC027" -> "SC026" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC027" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC028" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC028" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC029" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC029" -> "SC030" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC030" -> "SC029" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];

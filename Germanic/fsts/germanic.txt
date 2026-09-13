@@ -1866,6 +1866,55 @@ define PNWGmcLongELowering [
     {*ḗ} -> {*ā}
 ];
 
+# SC028 Northern West Germanic *xs-cluster simplification (adjudicated 2026:
+# sc028-xs-cluster-simplification-adjudication.md).
+# *x -> 0 in the cluster *xs + consonant, i.e. only when *s is itself followed
+# by a further consonant. This is exactly the handbooks' statement:
+#   Campbell §417 p.170: "When a consonant follows, xs > s in OE", with wæstm,
+#     -wæsma, North. sesta, and the comparative set ON ísl, ON nýsa, OS weslon,
+#     OS wastum, OS niustan, OHG niusen, OS/OHG lastar (< *laxstra-).
+#   Brunner §221.2 p.184: "Wenn auf hs andere Konsonanten (auch j) folgen, ist
+#     h ausgefallen" — so the following consonant may be *t, *m, *l or *j.
+#   Bülbring §527 p.215: "Im Urengl. ist xs vor Konsonanten in der Regel zu s
+#     geworden."
+#   R/T pp.157-158: "*h was ... lost, possibly variably, possibly only in some
+#     dialects, when followed by two or more consonants", with PGmc *niuhsijaną
+#     > PWGmc *niusjan > OE nēosan, *sehstō > North. OE sesta, *þihslu > OE þīsl.
+# NOT Proto-Germanic: Gothic keeps the *h (bi-niuhsjan, saihsta), so the change
+# is post-PGmc. R/T p.158 read it as a shared NORTHERN WEST GERMANIC change (OS
+# wastum, thisla, niusian), while noting that the North Germanic agreement may
+# be partly parallel drift in the diverging NWGmc dialects; hence confidence B
+# for the dating, not for the existence of the change.
+# DOMAIN CONTROLS, all confirmed against the selected corpus:
+#   *xs with NO following consonant is NOT simplified — it gives OE <x> = /ks/
+#     (Campbell §416 p.170: fox, siex, weaxan, oxa, fleax). Corpus: fox, six,
+#     wax, flax, ox all retain *x. So a broader *xs > *s rule is falsified.
+#   *xt is NOT simplified (Campbell §464 p.186: "the only group in which x was
+#     followed by a voiceless consonant in Prim. OE was xt, and this group
+#     remained" — feohtan, miht, niht, sōhte). Corpus: thought, fight, night,
+#     light, might, knight, fright, wight all retain *x.
+#   The same *xst/*xt contrast is independently attested outside English by
+#     OHG/OS lastar < *laxstra- against OE leahtor < *laxtra- (Campbell §417).
+#   The rule must NOT fire on geminate *xx + C; Campbell §464 is explicit that
+#     *xx survives as OE <hh> in every environment, including before *j
+#     (*xláxjaną > hliehhan, NOT †hliehan). An earlier CAPR formulation used the
+#     broader `*x -> 0 / _ CC` schema and overgenerated exactly there; the *s in
+#     the structural description is what prevents it. See DEV_NOTES §17.40.
+# PLACEMENT: composed here, immediately after PWGmcSyllabicJ, because R/T p.157
+# state the loss followed the PWGmc *-CijV- syncope ("After this highly
+# restricted syncope had run its course, *h was variably lost when followed by
+# two nonsyllabics") — the syncope is what creates the *sj of *niuhsjan. Its
+# later bound is breaking: R/T p.158 note that the undiphthongized vowels of
+# wæstm and þīsl "can be accounted for only by supposing that these *h were lost
+# before breaking took place". Its input in fist is created by SC103
+# PGmcNasalLossBeforeX (*fúnxstiz > *fū́xstiz), which is pan-Germanic and far
+# earlier. Before the 2026 adjudication this rule sat after the North Sea
+# Germanic nasal-spirant law, which inverted the two stages; the move is
+# output-equivalent.
+define PNWGmcPreconsonantalXLoss [
+    {*x} -> 0 || _ {*s} EnglishStarConsonant
+];
+
 define EarlyEnglishLineChanges [ # capr:bundle
     PNWGmcUnstressedAiMonophthongization
     .o. PNWGmcAToUBeforeM     # R1: *a → *u / _m in unstressed inflectional endings (Campbell §331(6))
@@ -1878,6 +1927,10 @@ define EarlyEnglishLineChanges [ # capr:bundle
     .o. PWGmcIjContraction
     .o. PWGmcJGemination
     .o. PWGmcSyllabicJ
+    # SC028 northern WGmc *xsC > *sC: R/T p.157 place it after the *-CijV-
+    # syncope above, and p.158 before breaking. Moved here from after the
+    # Ingvaeonic nasal-spirant law by the 2026 adjudication.
+    .o. PNWGmcPreconsonantalXLoss
     .o. EAFLThVoicing
     .o. PWGmcDentalHardening
     # NOTE: PWGmcPreFinalRShortening removed - was duplicate of PWGmcFinalOrLowering
@@ -3155,24 +3208,6 @@ define EAFNasalSpirantLoss [
     EnglishStarNasal -> 0 || _ EnglishStarNSGmcSpirant
 ];
 
-# NWGmc Preconsonantal *x Loss (Campbell §417, Brunner §221, Bülbring §527)
-# *x → ∅ specifically in the cluster *xs + C (i.e. when followed by *s plus another consonant).
-# This is the conditioning that the handbooks describe with their canonical examples:
-#   *funxstiz → fūstiz → fȳst, *wahstmaz → wæstm, *sehsto → sesta, *niuxsjan → nēosian
-# Brunner §221: "Wenn auf hs andere Konsonanten (auch j) folgen, ist h ausgefallen."
-# The rule must NOT fire on *xx + C clusters (geminate *x); Campbell §464 is explicit
-# that geminate *xx survives into OE as <hh> in every environment, including before *j
-# (e.g. *xláxjaną → *xláxxjaną → hliehhan, NOT †hliehan). Earlier formulations using
-# the broader `*x → 0 / _ CC` schema overgenerated, deleting the first *x of a *xx*j
-# geminate. See DEV_NOTES §17.40 for the dossier.
-# Must follow SC103 PGmcNasalLossBeforeX (which creates the *xst cluster of
-# *fúnxstiz > *fū́xstiz) and precede breaking/i-umlaut. Before the SC026/SC027
-# adjudication the cluster was created by the nasal-spirant law instead; the
-# provenance of *xst is flagged for the SC028 adjudication.
-define PNWGmcPreconsonantalXLoss [
-    {*x} -> 0 || _ {*s} EnglishStarConsonant
-];
-
 define OESkPalatalization [
     {*s} {*k} -> {*ʃ} || .#. _
 ] .o. [
@@ -3581,8 +3616,6 @@ define EnglishProtoToOE ( # capr:bundle
     # i-umlaut so that *gánsz → *gōs, and *júgunθ → *júgūθ, not †*ġyns.
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss
-    # NWGmc *x loss before CC clusters (Campbell §417, R/T pp.156-158)
-    .o. PNWGmcPreconsonantalXLoss
     # SC102 pre-OE / Anglo-Frisian hiatus *w (verba pura): must precede
     # EAFLongAFronting, whose *w-block it feeds — "early enough to prevent
     # fronting of *ā in pre-OE" (R/T p. 151): sāwan, not *sǣwan.

@@ -34,7 +34,7 @@ root = Path("Germanic/docs/sound_changes/reader_facing")
 out = root / "reader_facing_local_section_20.md"
 coverage_out = root / "reader_facing_manifest_coverage_08.md"
 chapter_files = [
-    # ── Chapter 1: executable positions 1–17 (PGmc → PNWGmc → PWGmc) ─
+    # ── Chapter 1: executable positions 1–18 (PGmc → PNWGmc → PWGmc) ─
     "103-pgmc-nasal-loss-before-x.md",
     "096-root-noun-nominative-z-loss.md",
     "014-015-opening-vowel-prelude.md",
@@ -46,12 +46,13 @@ chapter_files = [
     "009-ij-contraction-in-friend.md",
     "010-west-germanic-j-gemination.md",
     "011-syllabic-j-after-final-vowel-loss.md",
+    "028-preconsonantal-x-loss.md",
     "012-lth-voicing.md",
     "013-dental-hardening.md",
     "017-nwgmc-u-lowering.md",
     "018-stressed-monosyllable-o-raising.md",
     "019-nwgmc-final-long-o-raising.md",
-    # ── Chapter 2: executable positions 18–31 (final-*z, rhotacism, EAF vowels) ─
+    # ── Chapter 2: executable positions 19–31 (final-*z, rhotacism, EAF vowels) ─
     "020-wgmc-final-z-deletion.md",
     "098-early-apocope-in-unstressed-words.md",
     "097-monosyllabic-final-z-loss.md",
@@ -59,7 +60,6 @@ chapter_files = [
     "022-mn-dissimilation.md",
     "023-n-stem-n-loss.md",
     "026-027-nasal-spirant-changes.md",
-    "028-preconsonantal-x-loss.md",
     "102-hiatus-w-insertion.md",
     "025-long-a-nasal-rounding.md",
     "104-nasalized-low-vowel-rounding.md",
