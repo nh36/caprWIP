@@ -84,8 +84,17 @@ Kept separate from the scholarship interpreting it:
 - **Early Runic**: *mākija* 'sword' (Vimose chape, later 2nd c. AD)
   with ⟨a⟩ for the *ē₁ reflex; Opedal *swestar* with a-rune for the
   stressed reflex, supported by early Proto-Scandinavian loans into
-  Sami showing /aː/ (Lid 1952: 238, apud Stiles 2017: 4). This dates
-  the *ā stage absolutely and places it in the North.
+  Sami showing /aː/ (**Lid 1952: 238**, read directly; Lid's own
+  wording is that the Proto-Germanic root vowel *ē of Gothic *mēna*
+  "gått over til ā" — 'had gone over to ā' — before the word was
+  borrowed into Sami as *mānno*, with the parallel Sami *saððo -āð-*
+  < Proto-Nordic \**sāðō* f. < \**sēðō-*, ON *sáð*; cf. Stiles 2017:
+  4, who reports the same evidence). This dates the *ā stage
+  absolutely and places it in the North. Lid's evidence is Sami
+  borrowing from **Proto-Scandinavian**, so what it witnesses directly
+  is the northern *ā stage; it does not by itself establish the West
+  Germanic side of the pan-Northwest Germanic reconstruction, which
+  rests on the daughter correspondences above.
 - **Old English / Old Frisian front reflexes**: WS ǣ (*dǣd, slǣpan,
   ġēar* with later diphthongization, *sċēap*), Anglian/Kentish and
   OFris ē (*dēd, slēpa, jēr*), against OS/OHG/ON ā — the front outcome
@@ -550,72 +559,193 @@ adjudication:
   n. 6 was made from the page images and is stored alongside it as
   `.vision.txt`. All Bennett citations in this memo are page-precise
   and read off the page, not taken over from another scholar.
+- **Þórhallsdóttir 1993**
+  (`thorhallsdottir_1993_intervocalic_j`) — Ch. 5, pp. 114–137, with
+  pp. 120, 123, 126–127, 130, 134, 136 load-bearing. Acquired and read
+  directly during this pass; the specialist authority for SC102. The
+  PDF is an image scan of the UMI microfilm with no text layer, so a
+  Google Vision transcript with the dissertation's own printed folios
+  is stored alongside it as `.vision.txt` (printed N = PDF sheet
+  N + 11, verified mechanically). The OCR is unreliable on this work's
+  diacritics; every form quoted below was checked against the page
+  image.
+- **Lid 1952** (`lid_1952_nordiske_nominativ_an_stammer`) — p. 238,
+  acquired and read directly during this pass. Previously known only
+  through Stiles 2017: 4. The scan is 2-up and was split on the
+  detected gutter; one OCR character (*å* for printed *ā*) was
+  corrected against the page image, and the correction is recorded in
+  the transcript header.
 
 ### 13.2 Known only indirectly
 
 Cited in this memo through a directly consulted source. No local copy
 exists, and no page reference to them has been independently checked:
 
-- **Þórhallsdóttir 1993** (pp. 82–137 / 114–137) — known through
-  Ringe & Taylor's discussion of the verba pura (p. 151).
 - **Stiles 2004** (pp. 387–389) — known through R&T pp. 13–14 and
   Fulk 2018 §4.6 n. 2.
 - **Grønvik 1998** (pp. 87–89) — known through R&T p. 12.
 - **Grønvik 1981** (pp. 43–50) — known through the retention-tradition
   summaries in R&T and Fulk.
-- **Lid 1952** (p. 238) — known through Stiles 2017: 4.
 
 Bibliography entries for these are retained in `docs/refs.bib`; a
 missing local copy is not a reason to drop a reference.
 
 ### 13.3 Pending direct verification
 
-The five items in §13.2 remain to be acquired and read. Until then no
-reader-facing chapter may carry a page-specific citation to them as
-though the pages had been checked here. Where the present account is
-in fact known from Ringe & Taylor, the chapters cite Ringe & Taylor.
+The three items remaining in §13.2 are to be acquired and read. Until
+then no reader-facing chapter may carry a page-specific citation to
+them as though the pages had been checked here. Where the present
+account is in fact known from Ringe & Taylor, the chapters cite
+Ringe & Taylor.
 
 Bennett 1950 was on this list at the opening of this pass and has been
 discharged: it moved to §13.1 when the article was acquired and read.
+Þórhallsdóttir 1993 and Lid 1952 have since been discharged the same
+way; both moved to §13.1 when the sources were acquired, OCRed into
+`docs/references/`, and read. Their discharge is the occasion for
+§13.4 below and for the direct Lid citation in §1.1.
 
-### 13.4 SC102: what is settled, and what is deferred
+### 13.4 SC102: the deferred question, now adjudicated
 
-SC102 `EAFHiatusWInsertion` is a **provisional paradigm-level
-implementation** of the currently adopted outcome. Current SC102
-represents the paradigm-wide outcome with one executable operation.
-The presently consulted account distinguishes an original phonological
-innovation in particular cells from subsequent analogical
-generalization. Whether CAPR should decompose these into separate
-historical operations is reserved for later direct source-led
-adjudication.
+This section formerly recorded a deferral. Þórhallsdóttir 1993 has now
+been acquired and read directly (§13.1), and the five questions it
+posed are answered below. The deferral is discharged.
 
-That adjudication should determine, from Þórhallsdóttir directly:
+**(1) What Þórhallsdóttir actually argues.** Chapter 5 (pp. 114–137)
+rejects every attempt to derive the West Germanic *w* of the *verba
+pura* from an inherited Indo-European \**u̯* — the *u*-perfect of
+Möller 1880: 469 and its successors (pp. 115–117), the \**ue/o*-present
+reinterpretations of Bethge, Flasdieck and others (pp. 117–119), and
+the transfer of a preterite *w* into the present (pp. 121–122, against
+Lindeman 1968: 63–65). Her conclusion is that "it rather has an
+inner-Germanic phonological explanation" (p. 136): the hiatus left by
+the Proto-Germanic loss of intervocalic \**j* was broken by a
+phonetic glide *w*, and that glide was subsequently generalized. She
+adopts and refines the account of Bremer 1886: 72–73 (p. 120).
 
-1. what she actually argues;
-2. which paradigm cells undergo regular phonological insertion;
-3. how and when analogy spreads the *w;
-4. whether the spread precedes SC101;
-5. whether CAPR should model phonological insertion and analogy as
-   separate operations.
+**(2) Which cells undergo regular phonological insertion.** The
+environment is narrow and explicit: *before \*u*. Bremer's forms, which
+she endorses, are "the 1sg. and 1pl. present indicative … and the
+plural forms of the reduplicated preterite with the endings \*-um,
+\*-uþ, \*-un" (p. 120). She reconstructs the pre-Old English present
+indicative with the hiatus still intact —
 
-Until then:
+    1sg. *sā'u   2sg. *sā'is   3sg. *sā'iþ
+    1pl. *sā'um  2pl. *sā'iþ   3pl. *sā'anþ
 
-- the one-rule architecture is **not** claimed to be definitively
-  historical;
-- a two-operation architecture is **not** claimed to be definitively
-  required;
-- no SC102A and no analogy operation is created.
+— and states: "The glide *w* was a natural hiatus filler before the
+*u* of the endings of the 1st person singular and plural, in particular
+in verbs with the vowel \**ō*; hence, 1sg. \**rōwu*, 1pl. \**rōwum*"
+(p. 127). The same insertion produces the preterite stem: "the simple
+insertion of a hiatus-breaking \**w* before the \**u* of the plural
+endings (e.g., 3pl. \**seu-un* > \**seuwun*)" (p. 126).
 
-**SC102's confidence rationale.** SC102 carries confidence B on its
-own grounds, *not* because of the Fulk/*ē₁ controversy that governs
-SC024, SC025 and SC101 (§1.3). The broad innovation — that the West
-Germanic verba pura developed hiatus-breaking consonants, that Old
-English and Old Frisian developed *w, and that the *w was in place
-early enough to block long-*ā fronting — is supported by the
-scholarship consulted here. What has not been directly adjudicated
-from the specialist source is the precise phonological-versus-
-analogical architecture of that innovation. That is the whole of
-SC102's B.
+The cells that do **not** receive \**w* phonologically are therefore
+the 2sg., 3sg. and 2pl. present (\**-i*-initial endings), the 3pl.
+present (\**-anþ*), the preterite participle, and — decisively for
+CAPR — **the infinitive** \**sā'an*.
+
+**(3) How and when analogy spreads the \*w.** Three forces, all named
+on p. 127: paradigm levelling out of the \**u*-cells; support from the
+preterite stem \**seuw(un)*, which "probably would have assisted in
+extending the new *w* to all forms of the present paradigm … and to
+the preterite participle"; and attraction from verbs with an
+etymological \**w*, "at least OE *flōwan* (the root PIE \**pleu-*)".
+The generalization is complete by the pre-Old English stage (p. 128
+n. 23, "until the \**w* was generalized in pre-Old English"), yielding
+"pre-OE inf. \**sāwan* – 3sg. pret. \**seuw* – 3pl. pret. \**seuwun* –
+pret. ptc. \**sāwan-*" (p. 136). Old Frisian is derived from the same
+generalized type: "an Anglo-Frisian inflection with the hiatus breaker
+\**w* generalized throughout the paradigm" (p. 130), "the Anglo-Frisian
+type of present with \**w* in every form" (p. 134), "Old Frisian shared
+in the generalization of \**w*" (p. 136). She insists that the Old
+High German *w* is a separate, later, inner-German event and must not
+be unified with this one: "it is by no means necessary to regard the
+completely generalized *w* in the Old English *verba pura* and the
+scattered *w*-forms in Old High German (East Franconian) as having the
+same origin. … The *w* in Old English is likely to be an older
+phenomenon" (p. 123; cf. pp. 114, 119).
+
+This independently confirms CAPR's `anglo_frisian` scope for SC102,
+which until now rested on Ringe & Taylor's report.
+
+**(4) Whether the spread precedes SC101.** Chapter 5 does not discuss
+the fronting of \**ā* at any point. Þórhallsdóttir therefore supplies
+**no** independent evidence for the SC102 < SC101 ordering. That edge
+remains exactly what §13.5 says it is: a historical ordering claim
+asserted from Ringe & Taylor p. 151, not a demonstrated chronology.
+The acquisition of the specialist source did not strengthen it, and
+this must not be quietly forgotten now that the source is in hand.
+
+**(5) Whether CAPR should model insertion and analogy as separate
+operations. Verdict: no split.** The two mechanisms are genuinely
+distinct, and Þórhallsdóttir is explicit that they are; CAPR's policy
+that distinct historical mechanisms stay distinct applies in full. But
+the policy is discharged here by *describing* them distinctly, not by
+manufacturing a second executable rule, for three reasons.
+
+First, the phonological rule is unrepresentable in this corpus. CAPR's
+witnesses are citation forms, and the Old English citation form of a
+strong verb is the infinitive. \**sāaną* > *sāwan* presents \**a*, not
+\**u*, after the stem vowel. No form in the 386-row corpus offers the
+\**_ u* environment, so a separately executable phonological SC would
+fire on nothing. CAPR does not carry unwitnessed rules, and inventing
+one to satisfy a taxonomic instinct would be the same padding the
+project refuses elsewhere.
+
+Second, the generalization is **analogy, not sound change**. The
+registry's `entry_type` vocabulary has no value for a morphological
+levelling, and every registry row carries an `fst_identifier`. A
+second row would have to misrepresent a paradigm levelling as a
+phonological law in order to exist at all.
+
+Third — and this is the substantive result of the direct reading — the
+single operation CAPR already executes corresponds to the *second*
+mechanism, not the first. The \**w* of *sāwan* is there **by
+analogical generalization**. CAPR's rule inserts \**w* between \**ā*
+and any following vowel; that environment is a citation-form proxy for
+the generalized outcome, and is deliberately *not* Þórhallsdóttir's
+phonological environment. Splitting would not make the model more
+faithful; it would add a dead rule beside an already-correctly-scoped
+one.
+
+What the direct reading does require is that the **identity** of
+SC102 be stated correctly. SC102 is the *Anglo-Frisian generalization
+of a hiatus-breaking \*w through the paradigm of the* verba pura,
+whose regular phonological source was insertion before \**u*. The
+registry note and the reader chapter are corrected accordingly, and
+the phonological antecedent is recorded there with page-precise
+citations rather than being collapsed into the executable statement.
+
+**SC102's confidence: B → A.** The stated ground of the B was that
+"the precise phonological-versus-analogical architecture of that
+innovation" had not been adjudicated from the specialist source. That
+ground is now discharged: the specialist source has been read, the
+architecture is settled, it is the standard account, and Ringe &
+Taylor's summary of it proves accurate in every particular CAPR
+relied on. The change itself — that Old English and Old Frisian
+generalized a hiatus-breaking \**w* through the *verba pura*, against
+the \**j* of Old Saxon and Old High German — is not controversial in
+the literature consulted. A is therefore warranted for the identity,
+scope and reality of the change.
+
+Two residual uncertainties are recorded rather than folded into the
+confidence value, because neither bears on the identity of the change:
+
+- the executable environment (\**ā* \_ V) is a citation-form proxy for
+  a paradigm-wide outcome, not a reconstruction of the conditioning
+  of the original phonological insertion;
+- the SC102 < SC101 ordering remains an assertion from Ringe & Taylor
+  (§13.5), unsupported by Þórhallsdóttir and undemonstrable by
+  displacement in the present formulation.
+
+**Deferred, behaviour-neutral.** The Foma identifier
+`EAFHiatusWInsertion` now understates the rule, which executes the
+generalization rather than the insertion. Renaming it is a
+behaviour-neutral change requiring its own rename pass under the
+project's rename protocol, and is not performed here so that this
+pass's scientific diff stays legible. The display name and all prose
+are corrected now; the identifier rename is recorded as outstanding.
 
 ### 13.5 Chronology status of the four rules
 
@@ -630,7 +760,11 @@ SC102's B.
 - A future decomposition of SC102 (§13.4) may alter this relationship,
   since a separately ordered analogical generalization could stand in
   a different relation to SC101 than the present single operation
-  does.
+  does. **Update:** §13.4 is now adjudicated and no decomposition is
+  made, so this relationship stands unchanged. Þórhallsdóttir 1993
+  Ch. 5 nowhere discusses the fronting of \**ā*, and therefore adds
+  nothing to this edge; acquiring the specialist source did not
+  convert the ordering claim into a demonstrated chronology.
 
 ### 13.6 Newly opened questions from Bennett 1950 (not acted on here)
 

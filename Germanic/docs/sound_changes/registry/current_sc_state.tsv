@@ -35,7 +35,7 @@ SC022	PNWGmcMnDissimilation	historical_sound_change	SC018-SC025 editorial holdin
 SC023	PNWGmcNStemNLoss	historical_sound_change	SC018-SC025 editorial holding zone	Proto-Germanic Word-Final N Loss	pgmc	pan_germanic	A	adjudicated	REFORMULATE/RETAIN	26	24
 SC026	EAFNasalSpirantLengthening	historical_sound_change	Northwest Germanic developments	North Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening)	eaf	north_sea_germanic	A	adjudicated	SPLIT/RESTRICT/REFORMULATE	27	25
 SC027	EAFNasalSpirantLoss	historical_sound_change	Northwest Germanic developments	North Sea Germanic nasal-spirant law (step 2: loss of the nasal)	eaf	north_sea_germanic	A	adjudicated	SPLIT/RESTRICT/REFORMULATE	28	26
-SC102	EAFHiatusWInsertion	historical_sound_change	Early Anglo-Frisian	EAF Hiatus W Insertion	eaf	anglo_frisian	B	adjudicated	SPLIT	29	27
+SC102	EAFHiatusWInsertion	historical_sound_change	Early Anglo-Frisian	EAF Generalization of Hiatus-Breaking W	eaf	anglo_frisian	A	adjudicated	SPLIT	29	27
 SC025	EAFLongANasalRounding	historical_sound_change	Early Anglo-Frisian	North Sea Germanic nasalization of long a before a nasal	eaf	north_sea_germanic	B	adjudicated	SPLIT/REFORMULATE	30	28
 SC104	EAFNasalizedLowRounding	historical_sound_change	Early Anglo-Frisian	Anglo-Frisian rounding of the long nasalized low vowel	eaf	anglo_frisian	A	adjudicated	SPLIT	31	29
 SC101	EAFLongAFronting	historical_sound_change	Early Anglo-Frisian	EAF Long A Fronting	eaf	north_sea_germanic	B	adjudicated	SPLIT/RESTRICT	32	30

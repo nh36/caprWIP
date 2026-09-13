@@ -452,11 +452,12 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         # supported by the scholarship consulted, but the phonological-
         # versus-analogical architecture has not been adjudicated from the
         # specialist source. It must NOT ride on the *ē₁ controversy.
-        self.assertEqual(sc102["confidence"], "B",
-                         "SC102 stays provisionally B: the hiatus-*w "
-                         "innovation is well supported, but its "
-                         "phonological-versus-analogical architecture "
-                         "awaits direct source-led adjudication")
+        self.assertEqual(sc102["confidence"], "A",
+                         "SC102 was raised to A when Þórhallsdóttir 1993 "
+                         "was acquired and read (memo §13.4): the sole "
+                         "stated ground of its B was that the phonological-"
+                         "versus-analogical architecture had not been "
+                         "checked against the specialist source")
         for row in (sc024, sc025, sc101, sc102):
             self.assertEqual(row["adjudication_status"], "adjudicated")
         for row in (sc024, sc101, sc102):
@@ -585,14 +586,13 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
     def test_reader_chapters_cite_only_directly_consulted_sources(self):
         """No page-precise citation to a source CAPR holds only at second hand.
 
-        Þórhallsdóttir 1993, Stiles 2004, Grønvik 1981/1998 and Lid 1952
-        are known through Ringe & Taylor, Fulk or Stiles 2017 (memo
-        §13.2). Where the present account rests on them, the chapters
-        must cite the source actually consulted. Bennett 1950 is NOT on
-        this list: it was acquired and read directly (memo §13.1).
+        Stiles 2004 and Grønvik 1981/1998 are known through Ringe &
+        Taylor or Fulk (memo §13.2). Where the present account rests on
+        them, the chapters must cite the source actually consulted.
+        Bennett 1950, Þórhallsdóttir 1993 and Lid 1952 are NOT on this
+        list: all three were acquired and read directly (memo §13.1).
         """
-        indirect = ("@Thorhallsdottir1993", "@Stiles2004",
-                    "@Gronvik1981", "@Gronvik1998", "@Lid1952")
+        indirect = ("@Stiles2004", "@Gronvik1981", "@Gronvik1998")
         for path in sorted(READER.glob("*.md")):
             text = path.read_text(encoding="utf-8")
             for key in indirect:
@@ -604,35 +604,50 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         self.assertIn("[@RingeTaylor2014, p. 151]",
                       (READER / "102-hiatus-w-insertion.md").read_text(encoding="utf-8"))
 
-    def test_memo_records_the_deferred_sc102_decomposition(self):
-        """The unresolved phonology-vs-analogy question is recorded internally.
+    def test_memo_records_the_adjudicated_sc102_decomposition(self):
+        """The phonology-vs-analogy question is settled from the source.
 
-        It must be recorded as open — not resolved in either direction.
+        Þórhallsdóttir 1993 was acquired and read, so the memo must now
+        answer all five questions the deferral posed, and must record the
+        verdict as "no split" for stated reasons rather than leaving it
+        open. The reasons themselves are load-bearing: a split is refused
+        because the phonological environment has no witness in a
+        citation-form corpus and because the generalization is analogy.
         """
         memo = MEMO.read_text(encoding="utf-8")
         flat = " ".join(memo.replace("*", "").split())
-        self.assertIn("provisional paradigm-level implementation", flat)
-        self.assertIn("reserved for later direct source-led adjudication", flat)
+        # the deferral is discharged, not silently dropped
+        self.assertIn("The deferral is discharged", flat)
+        self.assertNotIn("reserved for later direct source-led adjudication",
+                         flat)
         # source-status audit present, with the three-way distinction
         self.assertIn("Directly verified", memo)
         self.assertIn("Known only indirectly", memo)
         self.assertIn("Pending direct verification", memo)
-        # SC102's confidence must be decoupled from the *ē₁ controversy
-        self.assertIn("not because of the Fulk/ē₁ controversy", flat)
-        # and the memo must not have been quietly re-adjudicated
-        # the memo may say that no SC102A exists; it may not settle the
-        # question in either direction
-        self.assertIn("the one-rule architecture is not claimed to be "
-                      "definitively historical", flat)
-        self.assertIn("a two-operation architecture is not claimed to be "
-                      "definitively required", flat)
-        self.assertIn("no SC102A and no analogy operation is created", flat)
+        # SC102's confidence must remain decoupled from the ē₁ controversy
+        self.assertIn("Verdict: no split", flat)
+        # the two mechanisms must still be described distinctly: the
+        # phonological insertion is restricted to the pre-*u cells, the
+        # generalization is analogy
+        self.assertIn("The environment is narrow and explicit", flat)
+        self.assertIn("1st person singular and plural", flat)
+        self.assertIn("analogy, not sound change", flat)
+        # and the reason for refusing the split must be recorded
+        self.assertIn("unrepresentable in this corpus", flat)
+        # the identifier rename is recorded as outstanding, not done here
+        self.assertIn("EAFHiatusWInsertion", memo)
+        self.assertIn("behaviour-neutral", flat)
+        # Þórhallsdóttir supplies no evidence for the SC102 < SC101 order
+        self.assertIn("no independent evidence", flat)
 
     def test_sc102_confidence_rationale_is_not_the_e1_controversy(self):
         rows = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
         sc102 = rows["SC102"]
         blob = " ".join(sc102.values())
-        self.assertIn("provisional paradigm-level implementation", blob)
+        # the A rests on the specialist source having been read directly,
+        # never on the *ē₁ reconstruction dispute that governs SC024/025/101
+        self.assertIn("READ DIRECTLY", blob)
+        self.assertIn("citation-form proxy", blob)
         self.assertNotIn("two-step", blob,
                          "SC102's rationale must not invoke the *ē₁ "
                          "two-step reconstruction dispute")

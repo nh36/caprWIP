@@ -75,7 +75,7 @@ digraph first_break_chronology {
   "SC086" [label="SC086\nOE Contraction"];
   "SC087" [label="SC087\nOE R Metathesis"];
   "SC101" [label="SC101\nEAF Long A Fronting"];
-  "SC102" [label="SC102\nEAF Hiatus W Insertion"];
+  "SC102" [label="SC102\nEAF Generalization of Hiatus-Breaking W"];
   "EarlyEnglishLineChanges" [shape=ellipse, fillcolor="#faf089"];
   "PWGmcChanges" [shape=ellipse, fillcolor="#faf089"];
   "RUNNER_LIMIT" [shape=ellipse, fillcolor="#faf089"];

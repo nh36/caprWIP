@@ -718,7 +718,7 @@
     },
     {
       "change_id": "SC102",
-      "display_name": "EAF Hiatus W Insertion",
+      "display_name": "EAF Generalization of Hiatus-Breaking W",
       "lifecycle_status": "active",
       "rule_name": "EAFHiatusWInsertion",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC102-eaf-hiatus-w-insertion.md",
