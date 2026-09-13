@@ -255,9 +255,14 @@ class GeneratedProjectionTests(unittest.TestCase):
                          f"stale generated views:\n{proc.stdout}{proc.stderr}")
 
     def test_finalize_regenerates_the_projections(self):
+        # finalize drives the ONE artifact graph, whose registry_views node
+        # renders every generate_registry_views projection
         src = (TOOLS / "adjudicate.py").read_text(encoding="utf-8")
-        self.assertIn("generate_registry_views.py", src,
-                      "--finalize must regenerate the registry projections")
+        self.assertIn("artifact_graph.refresh", src,
+                      "--finalize must run the control-plane refresh")
+        graph_src = (TOOLS / "artifact_graph.py").read_text(encoding="utf-8")
+        self.assertIn("generate_registry_views.build_all", graph_src,
+                      "the graph must own the registry projections")
 
 
 class ChronologyEdgeWitnessSemanticsTests(unittest.TestCase):

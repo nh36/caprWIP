@@ -47,11 +47,13 @@ routine refresh.
 - Prepare an adjudication packet: `python3 Germanic/tools/adjudicate.py SCNNN --prepare`
 - Executable evidence (container rebuild + live firing census + witness
   pre/post): `python3 Germanic/tools/adjudicate.py SCNNN --evidence`
-- Finalize after SOURCE edits (regenerates everything, then checks):
+- Control-plane refresh after ANY source edit (rule move, registry edit,
+  prose edit): `python3 Germanic/tools/adjudicate.py --refresh`
+- Finalize after SOURCE edits (control-plane refresh, then SC checks):
   `python3 Germanic/tools/adjudicate.py SCNNN --finalize`
 - Full test suite: `cd Germanic/tests && python3 -m pytest -q`
-- Debug-only: `python3 Germanic/tools/generate_registry_views.py [--check]`
-  (already run by `--finalize`)
+- Debug-only: `python3 Germanic/tools/artifact_graph.py [--check|--refresh]`
+  (the same graph `--refresh` drives)
 
 ## Instruction precedence
 

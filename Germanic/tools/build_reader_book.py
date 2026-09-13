@@ -124,7 +124,8 @@ def inject_chapter_block(chapter_num: str, title: str, intro_file: str) -> list[
     return block
 
 
-def build() -> None:
+def render() -> dict[Path, str]:
+    """Render every output to text without touching the filesystem."""
     manifest, chapters = load_manifest()
     manifest_files = [row["reader_file"] for row in manifest]
 
@@ -182,14 +183,21 @@ def build() -> None:
         "",
     ])
 
-    OUT_MD.write_text("\n".join(parts), encoding="utf-8")
+    return {
+        OUT_MD: "\n".join(parts),
+        OUT_COVERAGE: render_coverage_report(
+            manifest_files, file_sc_map, reader_sc_numbers),
+    }
 
-    write_coverage_report(manifest_files, file_sc_map, reader_sc_numbers)
+
+def build() -> None:
+    for path, text in render().items():
+        path.write_text(text, encoding="utf-8")
 
 
-def write_coverage_report(manifest_files: list[str],
-                          file_sc_map: dict[str, list[str]],
-                          reader_sc_numbers: list[str]) -> None:
+def render_coverage_report(manifest_files: list[str],
+                           file_sc_map: dict[str, list[str]],
+                           reader_sc_numbers: list[str]) -> str:
     manifest_rows: list[dict[str, object]] = []
     with REPORT_MANIFEST.open(encoding="utf-8") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
@@ -352,7 +360,7 @@ def write_coverage_report(manifest_files: list[str],
             "`SC003`, `SC004`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, "
             "`SC011`, `SC012`, `SC013`, then `SC014-SC015` pattern.")
 
-    OUT_COVERAGE.write_text("\n".join(coverage_parts) + "\n", encoding="utf-8")
+    return "\n".join(coverage_parts) + "\n"
 
 
 def main() -> int:

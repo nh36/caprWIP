@@ -871,21 +871,65 @@ class ControlPlaneDocTests(unittest.TestCase):
         self.assertNotIn("rename_migration_manifest", generated)
 
 
-class EvidencePrerequisiteTests(unittest.TestCase):
-    """--evidence regenerates the mechanical prerequisites itself."""
+class ArtifactGraphTests(unittest.TestCase):
+    """ONE artifact graph owns every generated artifact; adjudicate.py is a
+    front-end to it and carries no builder lists of its own."""
 
-    def test_mechanical_prereqs_cover_the_generated_checks(self):
-        adj = _load("adjudicate")
-        prereq_names = {p.name for p in adj.MECHANICAL_PREREQS}
-        self.assertEqual(prereq_names, {
-            "cascade_order_manifest.py",
-            "generate_oe_sandbox.py",
-        })
-        for p in adj.MECHANICAL_PREREQS:
-            self.assertTrue(p.is_file(), p)
-        # every prerequisite that --evidence later checks is regenerable
-        checked = {script for script, _ in adj.GENERATED_CHECKS}
-        self.assertEqual(checked, prereq_names)
+    REQUIRED_NODES = {
+        "executable_order": "projection",
+        "oe_sandbox": "projection",
+        "runtime_bins": "runtime",
+        "full_trace": "runtime",
+        "registry_views": "projection",
+        "coverage_census": "projection",
+        "reader_book": "projection",
+        "book_draft": "projection",
+        "index_verborum": "regen",
+        "interaction_matrix": "runtime",
+    }
+
+    def test_graph_covers_the_control_plane(self):
+        ag = _load("artifact_graph")
+        kinds = {n.name: n.kind for n in ag.nodes()}
+        self.assertEqual(kinds, self.REQUIRED_NODES)
+
+    def test_adjudicate_has_no_hand_picked_builder_lists(self):
+        src = (TOOLS / "adjudicate.py").read_text(encoding="utf-8")
+        for legacy in ("CHAINED_BUILDERS", "GENERATED_CHECKS",
+                       "MECHANICAL_PREREQS", "run_generated_checks"):
+            self.assertNotIn(legacy, src,
+                             f"{legacy} is a second authority beside the "
+                             "artifact graph")
+        self.assertIn("artifact_graph", src)
+        for mode in ("--refresh", "--evidence", "--finalize", "--check"):
+            self.assertIn(mode, src)
+
+    def test_matrix_provenance_is_move_invariant(self):
+        """The recorded matrix provenance hashes harness source, the
+        stage-derived pair list, and rule definition text — never cascade
+        positions — so a pure reorder cannot invalidate the matrix."""
+        ag = _load("artifact_graph")
+        payload = ag.matrix_provenance()
+        self.assertEqual(
+            set(payload), {
+                "harness_sha256", "earlier_stages", "later_stages",
+                "pair_count", "pairs_sha256", "definitions_sha256",
+                "definition_networks", "provenance_sha256"})
+        recorded = json.loads(ag.MATRIX_PROVENANCE.read_text(
+            encoding="utf-8"))
+        self.assertEqual(recorded["provenance_sha256"],
+                         payload["provenance_sha256"],
+                         "interaction matrix sidecar is stale; run the "
+                         "control-plane refresh")
+
+    def test_projection_nodes_verify_clean(self):
+        """Every host-side projection is fresh in a committed tree."""
+        ag = _load("artifact_graph")
+        problems = []
+        for node in ag.nodes():
+            if node.kind == "projection":
+                problems.extend(node.verify())
+        self.assertEqual(problems, [])
 
 
 class CurrentStateFingerprintTests(unittest.TestCase):

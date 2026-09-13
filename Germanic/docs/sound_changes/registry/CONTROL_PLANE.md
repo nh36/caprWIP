@@ -33,7 +33,15 @@ paths or bare filenames resolved against the canonical document directories;
 `--prepare` builds the reading list exclusively from these fields (no
 filename guessing), and a test requires every pointer to resolve.
 
-## GENERATED (never hand-edit; rebuilt by `adjudicate.py SCNNN --finalize`)
+## GENERATED (never hand-edit; rebuilt by `adjudicate.py --refresh`)
+
+ONE unified artifact graph (`tools/artifact_graph.py`) owns every generated
+artifact: its authority, a non-mutating freshness check, and its builder.
+`adjudicate.py --refresh` (also run by `--finalize`) drives the graph to a
+clean state and prints `CONTROL PLANE CLEAN`; `--check` verifies every node
+without mutating anything. No other builder list exists, and no workflow
+step ever hand-picks generators. Any stale-artifact error says to run the
+control-plane refresh.
 
 | File | Source |
 |---|---|
@@ -47,15 +55,21 @@ filename guessing), and a test requires every pointer to resolve.
 | `order_tests/chronology_graph/first_break_graph_summary.md` | both registries |
 | `registry/settled_verdicts.md` | sc_registry |
 | `reader_facing/reader_facing_local_section_20.md`, `reader_facing/reader_facing_manifest_coverage_08.md` | `tools/build_reader_book.py` (reader_manifest + reader_chapters + chapter files) |
+| `cascade_baseline/cascade_order_manifest.tsv`, `cascade_baseline/executable_model.tsv` | `tools/cascade_order_manifest.py` (oe_pipeline projection) |
+| `Germanic/fsts/old_english_sandbox.txt` | `tools/generate_oe_sandbox.py` (oe_pipeline projection) |
+| `cascade_baseline/rule_coverage_census.tsv` | `tools/rule_coverage_census.py` (fails closed if the canonical trace evidence is stale — the refresh rebuilds the trace first) |
+| `docs/assembly/capr_book_draft_alpha_01.md` | `docs/assembly/build_capr_book_draft.py` |
+| `docs/book/index_verborum_*` + `docs/assembly/book_draft_index_registry.tex` | `tools/build_index_verborum.py` |
 
-Chained generators (always rebuilt by `--finalize`; deterministic and safe
-to run unconditionally):
+Runtime evidence (container-built; the graph rebuilds these ONLY when their
+recorded input provenance shows them stale, so a no-op refresh never touches
+Docker):
 
-| File | Generator |
+| Artifact | Provenance record |
 |---|---|
-| `cascade_baseline/cascade_order_manifest.tsv`, `cascade_baseline/executable_model.tsv` | `tools/cascade_order_manifest.py` |
-| `Germanic/fsts/old_english_sandbox.txt` | `tools/generate_oe_sandbox.py` |
-| `cascade_baseline/rule_coverage_census.tsv` | `tools/rule_coverage_census.py` (fails closed if the canonical trace evidence is stale — run `--evidence` first) |
+| stage bins (`backend/*.bin`) + `backend/oe_build_manifest.json` | source hashes in the build manifest (`tools/capr_runtime.py`) |
+| `debug_snapshots/oe_full_trace_report.txt` | PROVENANCE block checked by `oe_full_trace_report.trace_provenance_problems` |
+| `cascade_baseline/cascade_interaction_matrix.tsv` | `cascade_baseline/cascade_interaction_provenance.json` — hash over harness source, the stage-derived pair list, and the executable_facts definition closure of every participating network. Pure cascade reorders do not invalidate the matrix; editing a participating rule does. The matrix is CURRENT-STATE analysis, not a frozen snapshot |
 
 ## ARCHIVE / RECORD (historical; never current authority)
 
@@ -97,8 +111,16 @@ to run unconditionally):
 3. `python3 Germanic/tools/adjudicate.py SCNNN --evidence` (container rebuild of the full cascade and stage bins, freshness-checked live firing census, witness pre/post — never run foma/flookup or trace scripts by hand)
 4. Investigate per `RESEARCH_ADJUDICATION_PROTOCOL.md`; write the memo from `audits/ADJUDICATION_TEMPLATE.md` including a `Registry-verdict:` line.
 5. Edit SOURCE files only: `sc_registry.tsv`, `chronology_edges.tsv`, memo, `germanic.txt` if the verdict requires, and the publication prose listed by `--prepare`.
-6. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` (regenerates every derived artifact, then runs propagation checks — never choose generators by hand)
+6. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` (control-plane refresh of every derived artifact via the artifact graph, then propagation checks — never choose generators by hand)
 7. `cd Germanic/tests && python3 -m pytest -q`
+
+## Moving a rule (or any other SOURCE-only edit)
+
+1. Edit the real authority (`tools/oe_pipeline.py` / `Germanic/fsts/germanic.txt` for order; a registry TSV for metadata; a reader file for prose).
+2. `python3 Germanic/tools/adjudicate.py --refresh` (rebuilds every stale projection; rebuilds bins/trace/matrix only if their recorded provenance is invalidated).
+3. `cd Germanic/tests && python3 -m pytest -q`
+
+No hand synchronization, no builder selection, no position editing anywhere else.
 
 ## Known remaining duplications (accepted, machine-checked where possible)
 

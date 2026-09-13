@@ -47,9 +47,11 @@ generated or archived.
 
 ## What is GENERATED (do not edit; regenerate)
 
-`python3 Germanic/tools/adjudicate.py SCNNN --finalize` regenerates all of
-these deterministically and then runs propagation checks — you never decide
-which generator to run. Generated files:
+`python3 Germanic/tools/adjudicate.py --refresh` (also run by `--finalize`)
+regenerates all of these deterministically through the ONE artifact graph
+(`tools/artifact_graph.py`) and ends with `CONTROL PLANE CLEAN` — you never
+decide which generator to run, and any stale-artifact error tells you to run
+the control-plane refresh. Generated files:
 `sound_changes/sound_change_historical_staging_map.tsv`,
 `sound_changes/sound_change_inventory.tsv`, the chronology graph files under
 `sound_changes/order_tests/chronology_graph/` (edges TSV/JSON/DOT, nodes,
@@ -61,8 +63,12 @@ coverage report from `tools/build_reader_book.py`), plus the executable
 projections (`cascade_baseline/cascade_order_manifest.tsv`,
 `cascade_baseline/executable_model.tsv`, the generated
 `fsts/old_english_sandbox.txt`, and
-`cascade_baseline/rule_coverage_census.tsv`).
-(Debugging only: `python3 Germanic/tools/generate_registry_views.py [--check]`.)
+`cascade_baseline/rule_coverage_census.tsv`), the assembled book draft +
+index verborum tables, and — only when their recorded input provenance is
+stale — the runtime evidence (stage bins, canonical full trace,
+`cascade_baseline/cascade_interaction_matrix.tsv` with its provenance
+sidecar).
+(Debugging only: `python3 Germanic/tools/artifact_graph.py [--check|--refresh]`.)
 
 ## What is ARCHIVE (never authoritative)
 

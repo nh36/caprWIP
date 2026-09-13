@@ -174,14 +174,19 @@ PREAMBLE = """\
 """
 
 
-def main() -> None:
+def census_text() -> str:
+    """Render the census to text (fails closed on stale trace evidence)."""
     rows = build_rows()
-    with OUTPUT.open("w", encoding="utf-8") as f:
-        f.write(PREAMBLE)
-        f.write("\t".join(HEADER) + "\n")
-        for r in rows:
-            f.write("\t".join(r[h] for h in HEADER) + "\n")
-    print(f"wrote {OUTPUT} ({len(rows)} rules)")
+    lines = [PREAMBLE + "\t".join(HEADER)]
+    for r in rows:
+        lines.append("\t".join(r[h] for h in HEADER))
+    return "\n".join(lines) + "\n"
+
+
+def main() -> None:
+    text = census_text()
+    OUTPUT.write_text(text, encoding="utf-8")
+    print(f"wrote {OUTPUT} ({len(text.splitlines()) - PREAMBLE.count(chr(10)) - 1} rules)")
 
 
 if __name__ == "__main__":

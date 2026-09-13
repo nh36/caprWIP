@@ -124,10 +124,15 @@ class EvidenceCommandTests(unittest.TestCase):
         self.assertTrue(callable(adjudicate.evidence))
 
     def test_rebuild_compiles_the_sandbox_via_the_shared_runner(self):
-        src = (Path(adjudicate.__file__)).read_text(encoding="utf-8")
+        # the stage-bin rebuild lives in the ONE artifact graph, and
+        # --evidence forces that runtime node through the shared runner
+        import artifact_graph
+        graph_src = (Path(artifact_graph.__file__)).read_text(encoding="utf-8")
         self.assertIn('run_in_runner("foma -q -l fsts/old_english_sandbox.txt '
-                      '-e quit"', src)
-        self.assertIn("write_build_manifest", src)
+                      '-e quit"', graph_src)
+        self.assertIn("write_build_manifest", graph_src)
+        src = (Path(adjudicate.__file__)).read_text(encoding="utf-8")
+        self.assertIn('force=frozenset({"runtime_bins"})', src)
 
     def test_runner_wraps_commands_for_the_canonical_container(self):
         from capr_runtime import container_command

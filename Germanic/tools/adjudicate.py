@@ -12,32 +12,39 @@
         adjudication, chronology evidence, publication prose, historical
         support), frozen fingerprints, and the standard commands.
 
+    python3 Germanic/tools/adjudicate.py --refresh
+        Control-plane refresh: bring EVERY generated artifact up to date
+        from its authority via the unified artifact graph
+        (Germanic/tools/artifact_graph.py) — executable-order projections,
+        generated sandbox, registry views, coverage census, reader book,
+        book draft, index verborum, and (only when their recorded input
+        provenance shows them stale) the runtime evidence: stage bins,
+        canonical full trace, interaction matrix. Ends with
+        'CONTROL PLANE CLEAN' or one actionable authority-tied error.
+        This is the ONE command to run after any SOURCE edit, including
+        rule moves. May also be invoked as 'SCNNN --refresh'.
+
     python3 Germanic/tools/adjudicate.py SC024 --evidence
-        Deterministically gather the executable (runtime) evidence: first
-        regenerate the purely mechanical prerequisites (derived registry
-        cascade positions, executable manifests, generated sandbox,
-        chronology-card positions), then rebuild
-        the full OE cascade and every stage bin from
-        Germanic/fsts/old_english_sandbox.txt inside the backend container,
-        write the build manifest, prove production-vs-generated-sandbox
-        semantic equivalence over the full selected corpus, regenerate the
-        canonical full trace report if it is stale, and print the complete
-        live firing census for the SC's executable rule (lexeme, protoform,
-        form immediately before the rule, form immediately after), plus
-        before/after lines for the SC's chronology witnesses. No manual
-        foma/flookup work is ever needed.
+        Deterministically gather the executable (runtime) evidence: run the
+        control-plane refresh with an unconditional stage-bin rebuild
+        (fsts/old_english_sandbox.txt inside the backend container, build
+        manifest, production-vs-sandbox semantic equivalence, canonical
+        full trace when stale), then print the complete live firing census
+        for the SC's executable rule (lexeme, protoform, form immediately
+        before the rule, form immediately after), plus before/after lines
+        for the SC's chronology witnesses. No manual foma/flookup work is
+        ever needed.
 
     python3 Germanic/tools/adjudicate.py SC024 --finalize
-        Deterministic host-side finalization: regenerate all registry views
-        and chained model projections (order manifest, generated sandbox,
-        chronology-card positions, coverage census), then run the
-        propagation consistency checks. Never fabricates runtime evidence
-        (the census fails closed on stale trace evidence — run --evidence
-        first) and never rewrites ARCHIVE/FROZEN snapshots. Run after
-        editing SOURCE files.
+        Control-plane refresh plus the SC-specific propagation checks.
+        Never fabricates runtime evidence (the census fails closed on stale
+        trace evidence) and never rewrites ARCHIVE/FROZEN snapshots. Run
+        after editing SOURCE files.
 
     python3 Germanic/tools/adjudicate.py SC024 --check
-        Validate propagation consistency only (no regeneration).
+        Validate propagation consistency only (no regeneration): SC
+        metadata checks plus a non-mutating freshness check of every
+        artifact-graph node.
 
 Canonical sources read: registry/sc_registry.tsv, registry/chronology_edges.tsv,
 registry/sc_inventory_notes.tsv, Germanic/fsts/germanic.txt,
@@ -50,7 +57,6 @@ from __future__ import annotations
 import json
 import re
 import shlex
-import subprocess
 import sys
 from pathlib import Path
 
@@ -62,13 +68,11 @@ from generate_registry_views import (  # noqa: E402
     EDGE_REGISTRY,
     SC_REGISTRY,
     VERDICT_VOCABULARY,
-    build_all,
     read_tsv,
 )
 
-import oe_pipeline  # noqa: E402
-from capr_runtime import layout, run_in_runner, write_build_manifest  # noqa: E402
-from oe_full_trace_report import trace_provenance_problems  # noqa: E402
+import artifact_graph  # noqa: E402
+from capr_runtime import run_in_runner  # noqa: E402
 
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
 FST = REPO_ROOT / "Germanic/fsts/germanic.txt"
@@ -78,37 +82,11 @@ ORDER_MANIFEST = SC_DIR / "cascade_baseline/cascade_order_manifest.tsv"
 BASELINE_SUMMARY = SC_DIR / "cascade_baseline/cascade_baseline_summary.json"
 TEMPLATE = SC_DIR / "audits/ADJUDICATION_TEMPLATE.md"
 PROTOCOL = REPO_ROOT / "Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md"
-CHAINED_BUILDERS = (
-    # Executable-order projections of the shared model (oe_pipeline):
-    REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
-    REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
-    # Reads the committed full trace report; fails closed if that runtime
-    # evidence is stale (run --evidence first).
-    REPO_ROOT / "Germanic/tools/rule_coverage_census.py",
-)
-# ARCHIVE/FROZEN artifacts (historical_audit_table.tsv,
-# rename_migration_manifest.tsv) are deliberately NOT in the chain: frozen
-# snapshots are never rewritten by finalization.
-
-# Derived SOURCE-file columns synchronized from the executable model before
-# SOURCE files carry no derived columns (positions live only in the
-# executable model / generated views), so there is nothing to synchronize
-# before view regeneration.
-
-# Generated artifacts that must be clean before executable evidence is
-# gathered and after finalization (fail-closed: never census stale order).
-GENERATED_CHECKS = (
-    ("cascade_order_manifest.py", ["--check"]),
-    ("generate_oe_sandbox.py", ["--check"]),
-)
-
-# Purely mechanical prerequisites for runtime evidence, regenerated
-# automatically by --evidence before compiling (executable manifests,
-# generated sandbox). Never touches scientific SOURCE metadata.
-MECHANICAL_PREREQS = (
-    REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
-    REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
-)
+# ONE artifact graph (Germanic/tools/artifact_graph.py) owns every generated
+# artifact: its authority, freshness check and builder. There are no other
+# builder lists. ARCHIVE/FROZEN artifacts (historical_audit_table.tsv,
+# rename_migration_manifest.tsv) are deliberately NOT in the graph: frozen
+# snapshots are never rewritten.
 
 # Canonical directories in which bare-filename registry pointers may live.
 DOC_SEARCH_DIRS = (
@@ -272,17 +250,21 @@ def next_sc():
     return pending[0][1] if pending and not run_ends else None
 
 
-def run_generated_checks() -> list:
-    """Run the --check mode of every generated-artifact builder."""
-    failures = []
-    for script, extra in GENERATED_CHECKS:
-        result = subprocess.run(
-            [sys.executable, str(REPO_ROOT / "Germanic/tools" / script), *extra],
-            cwd=REPO_ROOT, capture_output=True, text=True)
-        if result.returncode != 0:
-            detail = (result.stderr or result.stdout).strip().splitlines()
-            failures.append(f"{script}: {detail[-1] if detail else 'stale'}")
-    return failures
+def refresh() -> int:
+    """Control-plane refresh: drive the ONE artifact graph to a clean state."""
+    print("== control-plane refresh (artifact graph) ==")
+    try:
+        artifact_graph.refresh()
+    except artifact_graph.GraphError as exc:
+        print(f"REFRESH FAILED: {exc}", file=sys.stderr)
+        return 1
+    problems = artifact_graph.verify_all()
+    if problems:
+        for p in problems:
+            print(f"STALE AFTER REFRESH: {p}", file=sys.stderr)
+        return 1
+    print("CONTROL PLANE CLEAN")
+    return 0
 
 
 def evidence(sc_id) -> int:
@@ -317,28 +299,6 @@ def evidence(sc_id) -> int:
         if e["representative_forms"]:
             print(f"  forms: {e['representative_forms']}")
 
-    # Regenerate the mechanical prerequisites of runtime evidence in place
-    # (§ ordinary workflow: --evidence, --finalize, tests — no bounce cycle).
-    print("\n## Regenerating mechanical prerequisites (model projections) ...")
-    for builder in MECHANICAL_PREREQS:
-        result = subprocess.run(
-            [sys.executable, str(builder)], cwd=REPO_ROOT,
-            capture_output=True, text=True)
-        tail = (result.stdout or result.stderr).strip().splitlines()
-        print(f"{builder.name}: {tail[-1] if tail else 'ok'}")
-        if result.returncode != 0:
-            print(result.stderr, file=sys.stderr)
-            print(f"EVIDENCE FAILED: {builder.name} exited {result.returncode}",
-                  file=sys.stderr)
-            return 1
-    stale = run_generated_checks()
-    if stale:
-        for s in stale:
-            print(f"EVIDENCE FAILED (stale generated artifact): {s}",
-                  file=sys.stderr)
-        print("A generated artifact stayed stale after regeneration; fix the "
-              "generator before gathering evidence.", file=sys.stderr)
-        return 1
     if not SANDBOX_FST.is_file():
         print(f"EVIDENCE FAILED: missing {SANDBOX_FST}", file=sys.stderr)
         return 1
@@ -354,50 +314,24 @@ def evidence(sc_id) -> int:
         return 1
     min_mtime = int(clock.stdout.strip())
 
-    print("\n## Rebuilding full cascade + stage bins "
-          "(fsts/old_english_sandbox.txt sources fsts/germanic.txt) ...")
-    rebuild = run_in_runner("foma -q -l fsts/old_english_sandbox.txt -e quit",
-                            capture_output=True, text=True)
-    if rebuild.returncode != 0:
-        print(rebuild.stdout, file=sys.stderr)
-        print(rebuild.stderr, file=sys.stderr)
-        print("EVIDENCE FAILED: foma rebuild exited "
-              f"{rebuild.returncode}", file=sys.stderr)
-        return 1
-    tail = [l for l in rebuild.stdout.splitlines() if l.strip()][-3:]
-    for line in tail:
-        print(f"  {line}")
-    manifest_path = write_build_manifest(
-        oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])
-    print(f"rebuild ok; build manifest: {manifest_path}")
-
-    print("\n## Production vs generated-sandbox semantic equivalence")
+    # Control-plane refresh with an unconditional stage-bin rebuild: the
+    # graph regenerates the mechanical projections, rebuilds the full OE
+    # cascade + stage bins in the container (writing the build manifest and
+    # proving production/sandbox equivalence), regenerates the canonical
+    # full trace only when its recorded provenance is stale, and brings
+    # every downstream projection up to date.
+    print("\n## Control-plane refresh (forced stage-bin rebuild) ...")
     sys.stdout.flush()
-    equiv = run_in_runner("python3 tools/check_production_sandbox_equivalence.py")
-    if equiv.returncode != 0:
-        print("EVIDENCE FAILED: production/sandbox semantic equivalence check "
-              f"exited {equiv.returncode}", file=sys.stderr)
+    try:
+        artifact_graph.refresh(force=frozenset({"runtime_bins"}))
+    except artifact_graph.GraphError as exc:
+        print(f"EVIDENCE FAILED: {exc}", file=sys.stderr)
         return 1
-
-    # Canonical full trace: runtime-derived upstream evidence for the
-    # coverage census. Regenerate only when stale (~16 min when needed).
-    trace_path = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
-    trace_problems = (trace_provenance_problems(
-        trace_path.read_text(encoding="utf-8"))
-        if trace_path.is_file() else ["missing canonical full trace report"])
-    if trace_problems:
-        print("\n## Canonical full trace is stale; regenerating from the "
-              "validated bins (~16 min) ...")
-        for problem in trace_problems:
-            print(f"  - {problem}")
-        sys.stdout.flush()
-        trace = run_in_runner("python3 tools/oe_full_trace_report.py --all")
-        if trace.returncode != 0:
-            print(f"EVIDENCE FAILED: trace report exited {trace.returncode}",
-                  file=sys.stderr)
-            return 1
-    else:
-        print("\n## Canonical full trace is fresh; skipping regeneration")
+    stale = artifact_graph.verify_all()
+    if stale:
+        for s in stale:
+            print(f"EVIDENCE FAILED (stale after refresh): {s}", file=sys.stderr)
+        return 1
 
     print("\n## Firing census (fresh stage bins only)")
     sys.stdout.flush()
@@ -470,37 +404,18 @@ def prepare(sc_id) -> int:
 
 
 def finalize(sc_id) -> int:
-    """Deterministic host-side finalization: regenerate projections, then check.
+    """Control-plane refresh plus SC-specific propagation checks.
 
-    Always runs the full regeneration chain — the agent never decides
-    whether 'staging changed'. All generators are deterministic and safe to
-    run unconditionally. SOURCE files carry no derived columns, so the chain
-    is purely SOURCE -> views -> chained projections. Runtime-derived
-    evidence is never fabricated here: rule_coverage_census fails closed on
-    stale trace evidence with an instruction to run --evidence first, and
-    ARCHIVE/FROZEN snapshots are never rewritten.
+    The agent never decides which builders to run: the artifact graph owns
+    every generated artifact and regenerates whatever is stale. Runtime
+    evidence is never fabricated here — runtime nodes rebuild only when
+    their recorded input provenance shows them stale, and the coverage
+    census fails closed on stale trace evidence. ARCHIVE/FROZEN snapshots
+    are never rewritten.
     """
-    print("== regenerating registry views ==")
-    for path, text in build_all().items():
-        current = path.read_text(encoding="utf-8") if path.exists() else None
-        if current != text:
-            path.write_text(text, encoding="utf-8")
-            print(f"wrote {path.relative_to(REPO_ROOT)}")
-    print("== rebuilding chained artifacts ==")
-    for builder in CHAINED_BUILDERS:
-        result = subprocess.run(
-            [sys.executable, str(builder)],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-        )
-        tail = (result.stdout or result.stderr).strip().splitlines()
-        print(f"{builder.name}: {tail[-1] if tail else 'ok'}")
-        if result.returncode != 0:
-            print(result.stderr, file=sys.stderr)
-            print(f"FINALIZE FAILED: {builder.name} exited {result.returncode}",
-                  file=sys.stderr)
-            return 1
+    rc = refresh()
+    if rc:
+        return rc
     print("== propagation checks ==")
     return check(sc_id)
 
@@ -553,15 +468,9 @@ def check(sc_id) -> int:
                 f"at germanic.txt line {lineno}"
             )
     # the registry never stores positions; the executable model owns them,
-    # and stale projections are caught by the generated-view checks below
-    # generated views must be clean
-    for path, expected in build_all().items():
-        current = path.read_text(encoding="utf-8") if path.exists() else None
-        if current != expected:
-            errors.append(f"stale generated view: {path.relative_to(REPO_ROOT)} — "
-                          "run generate_registry_views.py")
-    for stale_item in run_generated_checks():
-        errors.append(f"stale generated artifact: {stale_item}")
+    # and stale projections are caught by the artifact-graph check below
+    # every generated artifact must be fresh (non-mutating graph check)
+    errors.extend(artifact_graph.verify_all())
     if errors:
         for e in errors:
             print(f"CHECK FAILED: {e}", file=sys.stderr)
@@ -579,8 +488,11 @@ def main() -> int:
             return 1
         print(nxt)
         return 0
+    if args == ["--refresh"]:
+        return refresh()
     if (len(args) != 2
-            or args[1] not in ("--prepare", "--check", "--finalize", "--evidence")
+            or args[1] not in ("--prepare", "--check", "--finalize",
+                               "--evidence", "--refresh")
             or not re.fullmatch(r"SC\d{3}", args[0])):
         print(__doc__.strip(), file=sys.stderr)
         return 2
@@ -591,6 +503,8 @@ def main() -> int:
         return evidence(sc_id)
     if mode == "--finalize":
         return finalize(sc_id)
+    if mode == "--refresh":
+        return refresh()
     return check(sc_id)
 
 
