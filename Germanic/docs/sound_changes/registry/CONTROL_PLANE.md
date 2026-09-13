@@ -122,6 +122,38 @@ Docker):
 
 No hand synchronization, no builder selection, no position editing anywhere else.
 
+## Control-plane acceptance tests (executed 2026-02; rerun after any control-plane change)
+
+These experiments define what "one authority + one refresh" means. Each was
+run against the live tree and reverted; rerun them whenever the artifact
+graph, adjudicate front-end, or projection renderers change materially.
+
+1. **Move-a-rule.** Swap two adjacent commuting same-stage rules
+   (`OEPrefixAReduction`/`OEInterStressRaising`, no chronology edge, disjoint
+   witnesses) in `fsts/germanic.txt` — the ONLY manual edit — then run
+   `adjudicate.py --refresh` and the suite. Result: the single refresh
+   rebuilt order manifest, executable model, sandbox FST, stage bins
+   (+ production/sandbox equivalence, 386 rows identical), full trace,
+   registry views, and census; the interaction matrix correctly stayed fresh
+   (move-invariant provenance); the suite passed with zero test edits; no
+   SOURCE TSV, audit TSV, chronology card, or reader list needed touching.
+   Revert = `git checkout` of the moved sources and generated files + one
+   refresh (only the bins rebuild; the committed trace matches the restored
+   sources), leaving a byte-clean tree.
+2. **Add-a-valid-witness.** Append one corpus TSV row in an already-derived
+   domain (a duplicate final-`*-z` protoform under a temporary concept),
+   `--refresh`, suite. Result: trace and census update automatically; firing
+   counts/lists absorb the new witness with no test edits; only the explicit
+   corpus-identity guard (386-row equivalence count) flags the change, which
+   is its job — a real corpus addition updates the baseline via
+   `tools/cascade_baseline.py` as part of the adjudicated change.
+3. **Idempotence.** From a clean tree, `--refresh` twice: zero file changes
+   both times (~6.5 s each, no container work).
+4. **Missing-runtime recovery.** Delete the bin build manifest (or clone
+   without bins): `--check` names exactly what is stale and the refresh
+   command to run; one `--refresh` restores runtime evidence without tribal
+   knowledge.
+
 ## Known remaining duplications (accepted, machine-checked where possible)
 
 - `tools/build_historical_audit_table.py` internally hard-codes the SC021 archival prose block; the table is now ARCHIVE/FROZEN, so the hard-coding is frozen historical record rather than a live duplication.

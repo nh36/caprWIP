@@ -403,7 +403,8 @@ def nodes() -> tuple:
                  _bins_verify, _bins_build,
                  lambda: sorted(
                      [layout().bin_dir / b for b in _expected_bins()]
-                     + [layout().build_manifest])),
+                     + [layout().build_manifest,
+                        BASELINE_DIR / "oe_equivalence_report.json"])),
         _runtime("full_trace",
                  "container oe_full_trace_report.py --all over fresh bins",
                  _trace_verify, _trace_build,

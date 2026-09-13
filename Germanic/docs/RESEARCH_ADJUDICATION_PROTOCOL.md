@@ -35,7 +35,10 @@ for evidence documents. `sound_change_inventory.tsv`, the
 staging map, and the chronology-graph files are GENERATED views — read
 them freely, never hand-edit them; after editing SOURCE files run
 `python3 Germanic/tools/adjudicate.py SCNNN --finalize`, which regenerates
-every derived artifact and validates propagation. Do not resurrect
+every derived artifact and validates propagation. For a SOURCE-only edit
+outside an SC adjudication (e.g. moving a rule, editing reader prose),
+`python3 Germanic/tools/adjudicate.py --refresh` is the single
+regeneration command — never pick individual generators by hand. Do not resurrect
 superseded plans, retired rules, or old audit conclusions. Frozen
 checkpoints (e.g. `docs/archive/CANONICAL_STATE.md`) are historical
 records, not current state.
