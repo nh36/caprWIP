@@ -129,30 +129,41 @@ class GeneratedProjectionTests(unittest.TestCase):
 
 
 class RegistryModelResolutionTests(unittest.TestCase):
-    """SC id -> fst_identifier -> executable position, no contradictions."""
+    """SC id -> fst_identifier -> executable position, no contradictions.
+
+    The registry stores NO position columns: executable order is resolved
+    through oe_pipeline at read time, so there is no mirror to go stale."""
 
     def setUp(self):
         views = _load("generate_registry_views")
         self.rows = views.read_tsv(views.SC_REGISTRY)
 
     def test_every_active_executable_sc_resolves(self):
+        model = {s.foma_identifier for s in oe_pipeline.named_stages()}
         for row in self.rows:
             ident = row["fst_identifier"]
             if row["lifecycle_status"] != "active" or not ident:
                 continue
-            stage = oe_pipeline.stage_for(ident)  # must not raise
-            if row["cascade_position"]:
-                self.assertEqual(str(stage.cascade_position),
-                                 row["cascade_position"],
-                                 f"{row['sc_id']}: registry cascade_position "
-                                 "contradicts the executable model")
+            self.assertIn(ident, model,
+                          f"{row['sc_id']}: fst_identifier does not resolve "
+                          "in the executable model")
 
-    def test_retired_scs_have_no_cascade_position(self):
+    def test_registry_carries_no_order_valued_columns(self):
+        for column in ("cascade_position", "exec_index", "staging_order",
+                       "inventory_order", "current_order",
+                       "v1_position", "position"):
+            self.assertNotIn(column, self.rows[0],
+                             f"sc_registry.tsv must not carry the derived or "
+                             f"archival order column {column!r}")
+
+    def test_retired_identifiers_are_not_in_the_model(self):
+        model = {s.foma_identifier for s in oe_pipeline.named_stages()}
         for row in self.rows:
-            if row["lifecycle_status"] == "retired":
-                self.assertEqual(row["cascade_position"], "",
-                                 f"{row['sc_id']} is retired but has a "
-                                 "cascade_position")
+            ident = row["fst_identifier"]
+            if row["lifecycle_status"] == "retired" and ident:
+                self.assertNotIn(ident, model,
+                                 f"{row['sc_id']} is retired but its rule is "
+                                 "still a stage of the executable model")
 
 
 class RuntimeLayoutTests(unittest.TestCase):
@@ -327,23 +338,12 @@ class NoStaleBinSearchTests(unittest.TestCase):
 
 
 class DerivedCascadePositionTests(unittest.TestCase):
-    """Registry cascade_position is derived from the executable model."""
+    """Executable positions are derived by oe_pipeline, never stored."""
 
-    def test_registry_positions_are_synced_from_model(self):
-        mod = _load("sync_registry_cascade_positions")
-        views = _load("generate_registry_views")
-        committed = views.SC_REGISTRY.read_text(encoding="utf-8")
-        self.assertEqual(mod.synced_text(), committed,
-                         "sc_registry.tsv cascade_position column is out of "
-                         "sync with oe_pipeline; run "
-                         "tools/sync_registry_cascade_positions.py")
-
-    def test_registry_header_declares_position_derived(self):
-        views = _load("generate_registry_views")
-        header = "\n".join(
-            line for line in views.SC_REGISTRY.read_text(
-                encoding="utf-8").splitlines() if line.startswith("#"))
-        self.assertIn("cascade_position is DERIVED", header)
+    def test_no_registry_position_sync_script_exists(self):
+        self.assertFalse((TOOLS / "sync_registry_cascade_positions.py").exists(),
+                         "the registry position column was removed; its sync "
+                         "script must stay retired")
 
     def test_positions_derive_from_synthetic_composition(self):
         # Moving a rule in a (synthetic) production composition changes the
@@ -529,17 +529,21 @@ class FrozenArchivePositionSemanticsTests(unittest.TestCase):
     Two similarly-named fields mean different things and MUST NOT be
     conflated:
 
-    * `audits/sc001-sc020-chronology-audit.tsv` `cascade_position` is a LIVE
-      projection and must track `cascade_baseline/cascade_order_manifest.tsv`;
+    * `audits/sc001-sc020-chronology-audit.tsv` `cascade_position` is an
+      ARCHIVE field: the matrix was FROZEN by the control-plane pass and its
+      positions are audit-time state, never resynchronized;
     * `cascade_baseline/historical_audit_table.tsv` `current_cascade_position`
       is an ARCHIVE field meaning "position current at the time the snapshot
       was frozen". It must never be resynchronized when a later adjudication
       inserts, retires, or moves an executable rule, and drift from the live
       cascade is expected and meaningful.
+
+    The only current-position table is the GENERATED
+    registry/current_sc_state.tsv projection (registry + oe_pipeline).
     """
 
     FROZEN = BASELINE_DIR / "historical_audit_table.tsv"
-    LIVE = SC_DIR / "audits/sc001-sc020-chronology-audit.tsv"
+    FROZEN_AUDIT = SC_DIR / "audits/sc001-sc020-chronology-audit.tsv"
     MANIFEST = BASELINE_DIR / "cascade_order_manifest.tsv"
     ARCHIVE_WRITER = "build_historical_audit_table.py"
 
@@ -577,34 +581,52 @@ class FrozenArchivePositionSemanticsTests(unittest.TestCase):
         generated = {Path(p).name for p in views.build_all()}
         self.assertNotIn(self.FROZEN.name, generated)
 
-    def test_live_chronology_audit_is_the_current_position_authority(self):
-        positions = {row["foma_identifier"]: row["position"]
-                     for row in _tsv_rows_skip_comments(self.MANIFEST)}
-        checked = 0
-        for row in _tsv_rows(self.LIVE):
-            pos = (row.get("cascade_position") or "").strip()
-            ident = (row.get("foma_identifier") or "").strip()
-            if not pos.isdigit() or ident not in positions:
-                continue
-            checked += 1
-            self.assertEqual(pos, positions[ident],
-                             f"{row['sc_id']}: live audit cascade_position "
-                             "must match the order manifest")
-        self.assertGreater(checked, 0, "live audit matrix yielded no rows")
-
-        # The cross-artifact current-position test must read the LIVE matrix,
-        # never the frozen archive.
+    def test_chronology_audit_matrix_is_frozen(self):
+        """The SC001-SC020 audit matrix is ARCHIVE/FROZEN: banner present,
+        never regenerated, and no live test compares its positions to the
+        current cascade."""
+        banner = "\n".join(
+            line for line in self.FROZEN_AUDIT.read_text(
+                encoding="utf-8").splitlines()[:20]
+            if line.startswith("#"))
+        self.assertIn("ARCHIVE / FROZEN", banner)
+        self.assertIn("NEVER resynchronized", banner,
+                      "the frozen banner must forbid resynchronization")
+        views = _load("generate_registry_views")
+        generated = {Path(p).name for p in views.build_all()}
+        self.assertNotIn(self.FROZEN_AUDIT.name, generated)
+        # the retired cross-artifact mirror test must not return
         cross = (REPO_ROOT / "Germanic/tests"
                  / "test_sc_chronology_cross_artifact.py").read_text(
                      encoding="utf-8")
-        self.assertIn("sc001-sc020-chronology-audit.tsv", cross)
-        self.assertNotIn("historical_audit_table", cross)
+        self.assertNotIn("sc001-sc020-chronology-audit.tsv", cross,
+                         "the frozen audit matrix must not be compared "
+                         "against current state")
+
+    def test_current_sc_state_projection_matches_the_model(self):
+        """registry/current_sc_state.tsv is the generated current-position
+        table; its positions must be a clean projection of oe_pipeline."""
+        state = SC_DIR / "registry/current_sc_state.tsv"
+        positions = {row["foma_identifier"]: row["position"]
+                     for row in _tsv_rows_skip_comments(self.MANIFEST)}
+        checked = 0
+        for row in _tsv_rows_skip_comments(state):
+            pos = (row.get("cascade_position") or "").strip()
+            ident = (row.get("fst_identifier") or "").strip()
+            if not pos:
+                continue
+            checked += 1
+            self.assertEqual(pos, positions.get(ident),
+                             f"{row['sc_id']}: current_sc_state position "
+                             "must match the order manifest")
+        self.assertGreater(checked, 0, "current_sc_state yielded no rows")
 
     def test_control_plane_documents_the_distinction(self):
         text = (SC_DIR / "registry/CONTROL_PLANE.md").read_text(
             encoding="utf-8")
         self.assertIn("current_cascade_position", text)
         self.assertIn("audits/sc001-sc020-chronology-audit.tsv", text)
+        self.assertIn("current_sc_state.tsv", text)
         self.assertNotIn("current_order", text,
                          "do not introduce another vague position synonym")
 
@@ -725,26 +747,46 @@ class ScosRegistryIdentityTests(unittest.TestCase):
         self.assertEqual(idents.get("SC043"), "EAFBrightening")
         self.assertEqual(idents.get("SC020"), "EAFFinalZDeletion")
 
+    def _idents(self):
+        return self.scos.registry_fst_identifiers(
+            SC_DIR / "registry/sc_registry.tsv")
+
+    def _orders(self):
+        return self.scos.archival_inventory_orders(
+            SC_DIR / "registry/archival_orders.tsv")
+
     def test_load_inventory_uses_registry_not_anchor(self):
         inventory = SC_DIR / "sound_change_inventory.tsv"
         by_id, _ = self.scos.load_inventory(
-            inventory,
-            self.scos.registry_fst_identifiers(
-                SC_DIR / "registry/sc_registry.tsv"))
+            inventory, self._idents(), self._orders())
         self.assertEqual(by_id["SC043"].rule_name, "EAFBrightening")
         # The registry is the ONE identity authority, and since the inventory
         # authority repair it carries an fst_identifier for every SC -- the
         # support and orthography stages included, whose identity used to
         # survive only in a hand-typed annotation anchor.
-        idents = self.scos.registry_fst_identifiers(
-            SC_DIR / "registry/sc_registry.tsv")
+        idents = self._idents()
         self.assertEqual(idents.get("SC090"), "OECjCleanup")
         self.assertEqual([sc for sc, name in idents.items() if not name], [])
         # a row with no registry identifier is metadata-only, not a target
         self.assertEqual(
-            self.scos.load_inventory(inventory, {})[0]["SC043"].rule_name, "")
+            self.scos.load_inventory(
+                inventory, {}, self._orders())[0]["SC043"].rule_name, "")
         lookup = self.scos.inventory_rule_lookup(list(by_id.values()))
         self.assertNotIn("", lookup)
+
+    def test_archival_order_space_is_the_frozen_experiment_order(self):
+        """SCOS coordinates come from registry/archival_orders.tsv (ARCHIVE),
+        never from a current-state view: the experiment order space is
+        experiment bookkeeping and must not move when the cascade does."""
+        orders = self._orders()
+        self.assertEqual(orders.get("SC001"), 1)
+        self.assertEqual(orders.get("SC023"), 23)
+        banner = "\n".join(
+            line for line in (SC_DIR / "registry/archival_orders.tsv"
+                              ).read_text(encoding="utf-8").splitlines()[:10]
+            if line.startswith("#"))
+        self.assertIn("ARCHIVE / FROZEN", banner)
+        self.assertIn("NEVER resynchronized", banner)
 
     def test_no_anchor_based_identity_extraction(self):
         src = (TOOLS / "sound_change_order_sensitivity.py").read_text(
@@ -756,12 +798,13 @@ class ScosRegistryIdentityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             inv = Path(tmp) / "inventory.tsv"
             inv.write_text(
-                "change_id\tcurrent_order\tdisplay_name\tentry_type\t"
+                "change_id\tdisplay_name\tentry_type\t"
                 "include_in_volume\tnotes\n"
-                "SC999\t1\tFake\thistorical_sound_change\tyes\t\n",
+                "SC999\tFake\thistorical_sound_change\tyes\t\n",
                 encoding="utf-8")
             with self.assertRaises(SystemExit):
-                self.scos.load_inventory(inv, {"SC999": "NoSuchFstRule"})
+                self.scos.load_inventory(inv, {"SC999": "NoSuchFstRule"},
+                                         {"SC999": 1})
 
     def test_every_crossable_profile_rule_resolves_to_an_sc(self):
         """No anonymous crossings: every rule inside either SCOS order
@@ -771,7 +814,9 @@ class ScosRegistryIdentityTests(unittest.TestCase):
         idents = self.scos.registry_fst_identifiers(
             SC_DIR / "registry/sc_registry.tsv")
         _, ordered = self.scos.load_inventory(
-            SC_DIR / "sound_change_inventory.tsv", idents)
+            SC_DIR / "sound_change_inventory.tsv", idents,
+            self.scos.archival_inventory_orders(
+                SC_DIR / "registry/archival_orders.tsv"))
         lookup = self.scos.inventory_rule_lookup(ordered)
         bundle = self.scos.PWGMC_BUNDLE
         default = oe_pipeline.composition_members_of(
@@ -810,9 +855,11 @@ class ControlPlaneDocTests(unittest.TestCase):
                              f"{name} is ARCHIVE/FROZEN, not GENERATED")
             self.assertIn(name, archive)
 
-    def test_control_plane_declares_cascade_position_derived(self):
+    def test_control_plane_declares_registry_position_free(self):
         text = self.CONTROL_PLANE.read_text(encoding="utf-8")
-        self.assertIn("sync_registry_cascade_positions", text)
+        self.assertIn("archival_orders.tsv", text)
+        self.assertNotIn("sync_registry_cascade_positions", text,
+                         "the registry position sync script is retired")
         self.assertNotIn("executable identifier, cascade position", text)
 
     def test_docs_readme_lists_archives_as_archive(self):
@@ -830,7 +877,6 @@ class EvidencePrerequisiteTests(unittest.TestCase):
         adj = _load("adjudicate")
         prereq_names = {p.name for p in adj.MECHANICAL_PREREQS}
         self.assertEqual(prereq_names, {
-            "sync_registry_cascade_positions.py",
             "cascade_order_manifest.py",
             "generate_oe_sandbox.py",
             "sync_chronology_card_positions.py",

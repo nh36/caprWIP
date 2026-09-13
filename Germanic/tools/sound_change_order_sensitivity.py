@@ -6,8 +6,9 @@ Order spaces (do not conflate):
 * EXECUTABLE ORDER — the production composition in fsts/germanic.txt,
   exposed by the shared model (oe_pipeline.py). This is the chain the
   experiments actually manipulate; it is derived, never hand-listed here.
-* INVENTORY ORDER — the archival ``current_order`` column of the generated
-  sound_change_inventory.tsv view (registry ``inventory_order``). Used only
+* INVENTORY ORDER — the archival order space frozen in
+  registry/archival_orders.tsv (ARCHIVE; formerly the registry
+  ``inventory_order`` column). Used only
   as coordinates for the archival experiment summaries and for
   inventory-vs-chain neighbor discrepancy notes; it does NOT drive which
   rules are adjacent in a variant.
@@ -99,6 +100,7 @@ def repo_paths() -> Dict[str, Path]:
         "repo_root": rt.repo_root,
         "inventory": germanic_dir / "docs" / "sound_changes" / "sound_change_inventory.tsv",
         "registry": germanic_dir / "docs" / "sound_changes" / "registry" / "sc_registry.tsv",
+        "archival_orders": germanic_dir / "docs" / "sound_changes" / "registry" / "archival_orders.tsv",
         "germanic_txt": rt.germanic_fst,
         "sandbox_txt": rt.sandbox_fst,
         "aligned_tsv": rt.corpus_tsv,
@@ -178,9 +180,27 @@ def registry_fst_identifiers(path: Path) -> Dict[str, str]:
     }
 
 
+def archival_inventory_orders(path: Path) -> Dict[str, int]:
+    """SC id -> archival inventory order from registry/archival_orders.tsv.
+
+    This ARCHIVE/FROZEN file is the order space in which the first-break
+    experiments were run. It is experiment bookkeeping, never current state,
+    and is never resynchronized with the executable cascade.
+    """
+    lines = [ln for ln in path.read_text(encoding="utf-8").splitlines()
+             if ln and not ln.startswith("#")]
+    reader = csv.DictReader(lines, delimiter="\t")
+    return {
+        (row.get("sc_id") or "").strip(): int(row["inventory_order"])
+        for row in reader
+        if (row.get("inventory_order") or "").strip()
+    }
+
+
 def load_inventory(
     path: Path,
     fst_identifiers: Dict[str, str],
+    inventory_orders: Dict[str, int],
 ) -> Tuple[Dict[str, ChangeInfo], List[ChangeInfo]]:
     by_id: Dict[str, ChangeInfo] = {}
     ordered: List[ChangeInfo] = []
@@ -189,12 +209,13 @@ def load_inventory(
     reader = csv.DictReader(lines, delimiter="\t")
     model_rules = {s.foma_identifier for s in oe_pipeline.named_stages()}
     for row in reader:
-            # Archival column name in the generated inventory view; this is
-            # INVENTORY order, not executable position.
-            inventory_order = (row.get("current_order") or "").strip()
-            if not inventory_order:
-                continue
             change_id = (row.get("change_id") or "").strip()
+            # Archival experiment order space (registry/archival_orders.tsv);
+            # this is INVENTORY order, not executable position. Rows outside
+            # the archival order space are metadata-only.
+            if change_id not in inventory_orders:
+                continue
+            inventory_order = inventory_orders[change_id]
             # sc_registry.tsv is the ONE identity authority. Rows without a
             # registry fst_identifier (support stages, technical markers,
             # surface orthography) stay as inventory metadata but cannot be
@@ -1443,7 +1464,8 @@ def main() -> None:
     )
 
     inventory_by_id, ordered_inventory = load_inventory(
-        inventory_path, registry_fst_identifiers(repo_paths()["registry"]))
+        inventory_path, registry_fst_identifiers(repo_paths()["registry"]),
+        archival_inventory_orders(repo_paths()["archival_orders"]))
 
     def focal_change(sc_id: str) -> ChangeInfo:
         if sc_id not in inventory_by_id:

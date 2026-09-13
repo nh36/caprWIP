@@ -1,3 +1,15 @@
+# sc001-sc020-chronology-audit.tsv — ARCHIVE / FROZEN (frozen at commit ce4fd3e5).
+# The SC001-SC020 chronology-audit matrix, retired as a live artifact by the
+# 2026 control-plane pass. Every field is audit-time state: cascade_position,
+# current_reader_chapter/current_reader_position and the proposed_* columns
+# record the repository as it stood when each row was last adjudicated, and
+# they are NEVER resynchronized when a later adjudication moves, inserts or
+# retires an executable rule. Drift from the live cascade is expected and
+# meaningful.
+# Current authorities: registry/sc_registry.tsv (identity, stage, scope,
+# confidence, verdicts), registry/chronology_edges.tsv (relative chronology),
+# oe_pipeline / cascade_baseline/cascade_order_manifest.tsv (executable order),
+# and the generated registry views (current_sc_state.tsv and friends).
 sc_id	current_display_name	foma_identifier	entry_type	current_historical_stage	proposed_historical_stage	current_historical_scope	proposed_historical_scope	cascade_position	pipeline_stage	current_reader_chapter	proposed_reader_chapter	current_reader_position	proposed_reader_position	source_evidence	relative_chronology_evidence	fst_dependency	technical_dependency	confidence	current_problem	recommended_action	implementation_needed	notes
 SC001	Proto Input	EnglishProtoInput	support_stage	Technical	Technical (support stage)	—	—	support	Proto-Germanic consonant inheritance	—	—	—	—	germanic.txt:3279 define EnglishProtoInput pgrmWord (input handoff); inventory note	none (not a sound change)	feeds EarlyGermanicConsonantPipeline	pipeline head	A	None; correctly typed support_stage, include_in_volume=no	support_stage_not_sound_change	no	Confirm remains support_stage, NOT reader-facing sound change.
 SC002	Gm Simplification	PGmcGmSimplification	historical_sound_change	Proto-Germanic	pgmc	pan-Germanic	pan_gmc	support	Proto-Germanic consonant inheritance	—	—	—	—	Kroonen p.511,101: *tauma-,*drauma- lost *g (Verner DRV); germanic.txt:1138 comment	early PGmc; precedes all NWGmc/WGmc rules (no daughter shows *-gm-)	sole rule in EarlyGermanicConsonantPipeline; precedes the entire EnglishProtoToOE pipeline (and thus EAFRhotacism, now composed there)		A	None; genuinely PGmc (name matches history)	no_change	no	*gm>*m Verner-voiced spirant loss; PGmc correct, not assumed from name.

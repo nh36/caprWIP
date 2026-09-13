@@ -1,6 +1,6 @@
 {
   "generated_by": "Germanic/tools/generate_registry_views.py — GENERATED FILE, DO NOT EDIT",
-  "order_note": "node current_order is the archival inventory order, not the executable cascade position (see oe_pipeline / cascade_order_manifest.tsv)",
+  "order_note": "nodes carry no order fields; executable order comes from oe_pipeline / cascade_order_manifest.tsv (see registry/current_sc_state.tsv)",
   "sources": [
     "Germanic/docs/sound_changes/registry/sc_registry.tsv",
     "Germanic/docs/sound_changes/registry/chronology_edges.tsv"
@@ -9,7 +9,7 @@
     {
       "change_id": "SC014",
       "display_name": "Proto-Northwest Germanic Unstressed Ai Monophthongization",
-      "current_order": "1",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcUnstressedAiMonophthongization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC014-nwgmc-unstressed-ai-monophthongization.md",
       "card_type": "negative_boundary",
@@ -19,7 +19,7 @@
     {
       "change_id": "SC015",
       "display_name": "Proto-Northwest Germanic I Lowering",
-      "current_order": "15",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcILowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC015-nwgmc-i-lowering.md",
       "card_type": "broad_far",
@@ -29,7 +29,7 @@
     {
       "change_id": "SC016",
       "display_name": "OE Ws Palatal Glide",
-      "current_order": "16",
+      "lifecycle_status": "active",
       "rule_name": "OEWsPalatalGlide",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC016-oe-ws-palatal-glide.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -39,7 +39,7 @@
     {
       "change_id": "SC017",
       "display_name": "Proto-Northwest Germanic U Lowering",
-      "current_order": "17",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcULowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC017-nwgmc-u-lowering.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -49,7 +49,7 @@
     {
       "change_id": "SC018",
       "display_name": "Proto-Northwest Germanic Stressed Monosyllable O Raising",
-      "current_order": "18",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcStressedMonosyllableORaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC018-nwgmc-stressed-monosyllable-o-raising.md",
       "card_type": "negative_boundary",
@@ -59,7 +59,7 @@
     {
       "change_id": "SC019",
       "display_name": "Proto-Northwest Germanic Final Long O Raising",
-      "current_order": "19",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcFinalLongORaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC019-nwgmc-final-long-o-raising.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -69,7 +69,7 @@
     {
       "change_id": "SC020",
       "display_name": "West Germanic final *z*-deletion",
-      "current_order": "20",
+      "lifecycle_status": "active",
       "rule_name": "EAFFinalZDeletion",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC020-pgmc-final-z-deletion.md",
       "card_type": "mixed",
@@ -79,7 +79,7 @@
     {
       "change_id": "SC021",
       "display_name": "Retired NWGmc Unstressed O Raising",
-      "current_order": "retired",
+      "lifecycle_status": "retired",
       "rule_name": "PNWGmcUnstressedORaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC021-nwgmc-unstressed-o-raising.md",
       "card_type": "retired",
@@ -89,7 +89,7 @@
     {
       "change_id": "SC022",
       "display_name": "Common Germanic Mn Dissimilation",
-      "current_order": "22",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcMnDissimilation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC022-nwgmc-mn-dissimilation.md",
       "card_type": "negative_boundary",
@@ -99,7 +99,7 @@
     {
       "change_id": "SC023",
       "display_name": "Proto-Germanic Word-Final N Loss",
-      "current_order": "23",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcNStemNLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC023-nwgmc-n-stem-n-loss.md",
       "card_type": "broad_far",
@@ -109,7 +109,7 @@
     {
       "change_id": "SC024",
       "display_name": "NWGmc Long E1 Lowering",
-      "current_order": "24",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcLongELowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC024-nwgmc-long-e-lowering.md",
       "card_type": "one_sided_chronology",
@@ -119,7 +119,7 @@
     {
       "change_id": "SC025",
       "display_name": "North Sea Germanic nasalization of long a before a nasal",
-      "current_order": "25",
+      "lifecycle_status": "active",
       "rule_name": "EAFLongANasalRounding",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC025-eaf-long-a-nasal-rounding.md",
       "card_type": "one_sided_chronology",
@@ -129,7 +129,7 @@
     {
       "change_id": "SC026",
       "display_name": "North Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening)",
-      "current_order": "26",
+      "lifecycle_status": "active",
       "rule_name": "EAFNasalSpirantLengthening",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC026-nwgmc-nasal-spirant-lengthening.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -139,7 +139,7 @@
     {
       "change_id": "SC027",
       "display_name": "North Sea Germanic nasal-spirant law (step 2: loss of the nasal)",
-      "current_order": "27",
+      "lifecycle_status": "active",
       "rule_name": "EAFNasalSpirantLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC027-nwgmc-nasal-spirant-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -149,7 +149,7 @@
     {
       "change_id": "SC028",
       "display_name": "Northern West Germanic *xs-Cluster Simplification",
-      "current_order": "28",
+      "lifecycle_status": "active",
       "rule_name": "PNWGmcPreconsonantalXLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC028-nwgmc-preconsonantal-x-loss.md",
       "card_type": "negative_boundary",
@@ -159,7 +159,7 @@
     {
       "change_id": "SC029",
       "display_name": "OE Awj Glide Formation",
-      "current_order": "29",
+      "lifecycle_status": "active",
       "rule_name": "OEAwjGlideFormation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC029-oe-awj-glide-formation.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -169,7 +169,7 @@
     {
       "change_id": "SC030",
       "display_name": "OE Au Fronting",
-      "current_order": "30",
+      "lifecycle_status": "active",
       "rule_name": "OEAuFronting",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC030-oe-au-fronting.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -179,7 +179,7 @@
     {
       "change_id": "SC031",
       "display_name": "OE WW Simplification",
-      "current_order": "31",
+      "lifecycle_status": "active",
       "rule_name": "OEWWSimplification",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC031-oe-ww-simplification.md",
       "card_type": "mixed",
@@ -189,7 +189,7 @@
     {
       "change_id": "SC032",
       "display_name": "OE Diphthong Leveling",
-      "current_order": "32",
+      "lifecycle_status": "active",
       "rule_name": "OEDiphthongLeveling",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC032-oe-diphthong-leveling.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -199,7 +199,7 @@
     {
       "change_id": "SC033",
       "display_name": "OE Ew Long Diphthong",
-      "current_order": "33",
+      "lifecycle_status": "active",
       "rule_name": "OEEwLongDiphthong",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC033-oe-ew-long-diphthong.md",
       "card_type": "mixed",
@@ -209,7 +209,7 @@
     {
       "change_id": "SC034",
       "display_name": "OE Aw Long Diphthong",
-      "current_order": "34",
+      "lifecycle_status": "active",
       "rule_name": "OEAwLongDiphthong",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC034-oe-aw-long-diphthong.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -219,7 +219,7 @@
     {
       "change_id": "SC035",
       "display_name": "OE Prefix A Reduction Early",
-      "current_order": "35",
+      "lifecycle_status": "active",
       "rule_name": "OEPrefixAReduction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC035-oe-prefix-a-reduction-early.md",
       "card_type": "one_sided_chronology",
@@ -229,7 +229,7 @@
     {
       "change_id": "SC036",
       "display_name": "OE Inter Stress Raising",
-      "current_order": "36",
+      "lifecycle_status": "active",
       "rule_name": "OEInterStressRaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC036-oe-inter-stress-raising.md",
       "card_type": "broad_far",
@@ -239,7 +239,7 @@
     {
       "change_id": "SC037",
       "display_name": "OE Compound Linking Syncope",
-      "current_order": "37",
+      "lifecycle_status": "active",
       "rule_name": "OECompoundLinkingSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC037-oe-compound-linking-syncope.md",
       "card_type": "runner_limited_or_technical",
@@ -249,7 +249,7 @@
     {
       "change_id": "SC039",
       "display_name": "OE WI Combinative U Umlaut",
-      "current_order": "39",
+      "lifecycle_status": "active",
       "rule_name": "OEWICombinativeUUmlaut",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC039-oe-wi-combinative-u-umlaut.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -259,7 +259,7 @@
     {
       "change_id": "SC040",
       "display_name": "OE Med Unstressed U Lowering",
-      "current_order": "40",
+      "lifecycle_status": "active",
       "rule_name": "OEMedUnstressedULowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC040-oe-med-unstressed-u-lowering.md",
       "card_type": "mixed",
@@ -269,7 +269,7 @@
     {
       "change_id": "SC041",
       "display_name": "PWGmc Final Bare A Loss",
-      "current_order": "41",
+      "lifecycle_status": "active",
       "rule_name": "PWGmcFinalBareALoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC041-pwgmc-final-bare-a-loss.md",
       "card_type": "broad_far",
@@ -279,7 +279,7 @@
     {
       "change_id": "SC042",
       "display_name": "PWGmc Surviving Bimoric O Unrounding",
-      "current_order": "42",
+      "lifecycle_status": "active",
       "rule_name": "PWGmcSurvivingBimoricOUnrounding",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC042-pwgmc-surviving-bimoric-o-unrounding.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -289,7 +289,7 @@
     {
       "change_id": "SC043",
       "display_name": "Anglo-Frisian brightening",
-      "current_order": "43",
+      "lifecycle_status": "active",
       "rule_name": "EAFBrightening",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC043-anglo-frisian-brightening.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -299,7 +299,7 @@
     {
       "change_id": "SC044",
       "display_name": "OE Breaking",
-      "current_order": "44",
+      "lifecycle_status": "active",
       "rule_name": "OEBreaking",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC044-oe-breaking.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -309,7 +309,7 @@
     {
       "change_id": "SC045",
       "display_name": "OE Velar Fricative Palatalization",
-      "current_order": "45",
+      "lifecycle_status": "active",
       "rule_name": "OEVelarFricativePalatalization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC045-oe-velar-fricative-palatalization.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -319,7 +319,7 @@
     {
       "change_id": "SC046",
       "display_name": "OE A Restoration",
-      "current_order": "46",
+      "lifecycle_status": "active",
       "rule_name": "OEARestoration",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC046-oe-a-restoration.md",
       "card_type": "mixed",
@@ -329,7 +329,7 @@
     {
       "change_id": "SC047",
       "display_name": "OE Heavy Syllable Nasal Apocope",
-      "current_order": "47",
+      "lifecycle_status": "active",
       "rule_name": "OEHeavySyllableNasalApocope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC047-oe-heavy-syllable-nasal-apocope.md",
       "card_type": "mixed",
@@ -339,7 +339,7 @@
     {
       "change_id": "SC048",
       "display_name": "OE Secondary Nasalization",
-      "current_order": "48",
+      "lifecycle_status": "active",
       "rule_name": "OESecondaryNasalization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC048-oe-secondary-nasalization.md",
       "card_type": "mixed",
@@ -349,7 +349,7 @@
     {
       "change_id": "SC049",
       "display_name": "PGmc B Allophony",
-      "current_order": "49",
+      "lifecycle_status": "active",
       "rule_name": "PGmcBAllophony",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC049-pgmc-b-allophony.md",
       "card_type": "one_sided_chronology",
@@ -359,7 +359,7 @@
     {
       "change_id": "SC050",
       "display_name": "Sievers Law Syncope",
-      "current_order": "50",
+      "lifecycle_status": "active",
       "rule_name": "SieversLawSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC050-sievers-law-syncope.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -369,7 +369,7 @@
     {
       "change_id": "SC051",
       "display_name": "OE Sk Palatalization",
-      "current_order": "51",
+      "lifecycle_status": "active",
       "rule_name": "OESkPalatalization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC051-oe-sk-palatalization.md",
       "card_type": "mixed",
@@ -379,7 +379,7 @@
     {
       "change_id": "SC052",
       "display_name": "OE Velar Palatalization",
-      "current_order": "52",
+      "lifecycle_status": "active",
       "rule_name": "OEVelarPalatalization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC052-oe-velar-palatalization.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -389,7 +389,7 @@
     {
       "change_id": "SC053",
       "display_name": "OE Post Velar W Loss",
-      "current_order": "53",
+      "lifecycle_status": "active",
       "rule_name": "OEPostVelarWLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC053-oe-post-velar-w-loss.md",
       "card_type": "negative_boundary",
@@ -399,7 +399,7 @@
     {
       "change_id": "SC054",
       "display_name": "OE W Loss Before I",
-      "current_order": "54",
+      "lifecycle_status": "active",
       "rule_name": "OEWLossBeforeI",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC054-oe-w-loss-before-i.md",
       "card_type": "mixed",
@@ -409,7 +409,7 @@
     {
       "change_id": "SC055",
       "display_name": "OE I Umlaut",
-      "current_order": "55",
+      "lifecycle_status": "active",
       "rule_name": "OEIUmlaut",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC055-oe-i-umlaut.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -419,7 +419,7 @@
     {
       "change_id": "SC056",
       "display_name": "OE Ws Palatal Diphthongization",
-      "current_order": "56",
+      "lifecycle_status": "active",
       "rule_name": "OEWsPalatalDiphthongization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC056-oe-ws-palatal-diphthongization.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -429,7 +429,7 @@
     {
       "change_id": "SC057",
       "display_name": "OE J Cluster Coalescence",
-      "current_order": "57",
+      "lifecycle_status": "active",
       "rule_name": "OEJClusterCoalescence",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC057-oe-j-cluster-coalescence.md",
       "card_type": "one_sided_chronology",
@@ -439,7 +439,7 @@
     {
       "change_id": "SC058",
       "display_name": "OE Nasal Dissimilation",
-      "current_order": "retired",
+      "lifecycle_status": "retired",
       "rule_name": "OENasalDissimilation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC058-oe-nasal-dissimilation.md",
       "card_type": "negative_boundary",
@@ -449,7 +449,7 @@
     {
       "change_id": "SC059",
       "display_name": "OE Back Mutation",
-      "current_order": "59",
+      "lifecycle_status": "active",
       "rule_name": "OEBackMutation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC059-oe-back-mutation.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -459,7 +459,7 @@
     {
       "change_id": "SC060",
       "display_name": "OE Ws Palatal Umlaut",
-      "current_order": "60",
+      "lifecycle_status": "active",
       "rule_name": "OEWsPalatalUmlaut",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC060-oe-ws-palatal-umlaut.md",
       "card_type": "one_sided_chronology",
@@ -469,7 +469,7 @@
     {
       "change_id": "SC061",
       "display_name": "OE Weak Tail Nasal Loss",
-      "current_order": "61",
+      "lifecycle_status": "active",
       "rule_name": "OEWeakTailNasalLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC061-oe-weak-tail-nasal-loss.md",
       "card_type": "one_sided_chronology",
@@ -479,7 +479,7 @@
     {
       "change_id": "SC063",
       "display_name": "OE High Vowel Apocope",
-      "current_order": "63",
+      "lifecycle_status": "active",
       "rule_name": "OEHighVowelApocope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC063-oe-high-vowel-apocope.md",
       "card_type": "mixed",
@@ -489,7 +489,7 @@
     {
       "change_id": "SC064",
       "display_name": "NWGmc In Stem N Loss",
-      "current_order": "64",
+      "lifecycle_status": "active",
       "rule_name": "NWGmcInStemNLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC064-nwgmc-in-stem-n-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -499,7 +499,7 @@
     {
       "change_id": "SC065",
       "display_name": "OE Medial Syncope",
-      "current_order": "65",
+      "lifecycle_status": "active",
       "rule_name": "OEMedialSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC065-oe-medial-syncope.md",
       "card_type": "negative_boundary",
@@ -509,7 +509,7 @@
     {
       "change_id": "SC066",
       "display_name": "OE L Adjacent Syncope",
-      "current_order": "66",
+      "lifecycle_status": "active",
       "rule_name": "OELAdjacentSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC066-oe-l-adjacent-syncope.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -519,7 +519,7 @@
     {
       "change_id": "SC067",
       "display_name": "OE Dental Assimilation",
-      "current_order": "67",
+      "lifecycle_status": "active",
       "rule_name": "OEDentalAssimilation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC067-oe-dental-assimilation.md",
       "card_type": "negative_boundary",
@@ -529,7 +529,7 @@
     {
       "change_id": "SC068",
       "display_name": "OE Preconsonantal Degemination",
-      "current_order": "68",
+      "lifecycle_status": "active",
       "rule_name": "OEPreconsonantalDegemination",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC068-oe-preconsonantal-degemination.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -539,7 +539,7 @@
     {
       "change_id": "SC069",
       "display_name": "OE Early O Shortening",
-      "current_order": "69",
+      "lifecycle_status": "active",
       "rule_name": "OEEarlyOShortening",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC069-oe-early-o-shortening.md",
       "card_type": "broad_far",
@@ -549,7 +549,7 @@
     {
       "change_id": "SC070",
       "display_name": "OE Unstressed Fronting Early",
-      "current_order": "67",
+      "lifecycle_status": "active",
       "rule_name": "OEUnstressedFrontingEarly",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC070-oe-unstressed-fronting-early.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -559,7 +559,7 @@
     {
       "change_id": "SC071",
       "display_name": "OE Late O Shortening",
-      "current_order": "68",
+      "lifecycle_status": "active",
       "rule_name": "OELateOShortening",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC071-oe-late-o-shortening.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -569,7 +569,7 @@
     {
       "change_id": "SC072",
       "display_name": "OE Unstressed Long Vowel Shortening",
-      "current_order": "72",
+      "lifecycle_status": "active",
       "rule_name": "OEUnstressedLongVowelShortening",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC072-oe-unstressed-long-vowel-shortening.md",
       "card_type": "mixed",
@@ -579,7 +579,7 @@
     {
       "change_id": "SC073",
       "display_name": "OE Unstressed AE Merger",
-      "current_order": "73",
+      "lifecycle_status": "active",
       "rule_name": "OEUnstressedAEMerger",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC073-oe-unstressed-ae-merger.md",
       "card_type": "mixed",
@@ -589,7 +589,7 @@
     {
       "change_id": "SC074",
       "display_name": "OE Med Unstressed I Lowering1",
-      "current_order": "74",
+      "lifecycle_status": "active",
       "rule_name": "OEMedUnstressedILowering1",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC074-oe-med-unstressed-i-lowering1.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -599,7 +599,7 @@
     {
       "change_id": "SC075",
       "display_name": "OE Med Unstressed I Lowering",
-      "current_order": "75",
+      "lifecycle_status": "active",
       "rule_name": "OEMedUnstressedILowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC075-oe-med-unstressed-i-lowering.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -609,7 +609,7 @@
     {
       "change_id": "SC076",
       "display_name": "OE Prefix I Reduction",
-      "current_order": "76",
+      "lifecycle_status": "active",
       "rule_name": "OEPrefixIReduction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC076-oe-prefix-i-reduction.md",
       "card_type": "negative_boundary",
@@ -619,7 +619,7 @@
     {
       "change_id": "SC078",
       "display_name": "OE Weak Tail Reduction",
-      "current_order": "77",
+      "lifecycle_status": "active",
       "rule_name": "OEWeakTailReduction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC078-oe-weak-tail-reduction.md",
       "card_type": "broad_far",
@@ -629,7 +629,7 @@
     {
       "change_id": "SC079",
       "display_name": "OE J Loss After Heavy",
-      "current_order": "78",
+      "lifecycle_status": "active",
       "rule_name": "OEJLossAfterHeavy",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC079-oe-j-loss-after-heavy.md",
       "card_type": "mixed",
@@ -639,7 +639,7 @@
     {
       "change_id": "SC080",
       "display_name": "OE Final Geminate Simplification",
-      "current_order": "79",
+      "lifecycle_status": "active",
       "rule_name": "OEFinalGeminateSimplification",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC080-oe-final-geminate-simplification.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -649,7 +649,7 @@
     {
       "change_id": "SC081",
       "display_name": "OE J Strengthening After Front Diphthong",
-      "current_order": "80",
+      "lifecycle_status": "active",
       "rule_name": "OEJStrengtheningAfterFrontDiphthong",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC081-oe-j-strengthening-after-front-diphthong.md",
       "card_type": "mixed",
@@ -659,7 +659,7 @@
     {
       "change_id": "SC082",
       "display_name": "OE Intervocalic J Vocalization",
-      "current_order": "81",
+      "lifecycle_status": "active",
       "rule_name": "OEIntervocalicJVocalization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC082-oe-intervocalic-j-vocalization.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -669,7 +669,7 @@
     {
       "change_id": "SC083",
       "display_name": "OE Unstressed EI Contraction",
-      "current_order": "82",
+      "lifecycle_status": "active",
       "rule_name": "OEUnstressedEIContraction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC083-oe-unstressed-ei-contraction.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -679,7 +679,7 @@
     {
       "change_id": "SC085",
       "display_name": "OE H Loss",
-      "current_order": "84",
+      "lifecycle_status": "active",
       "rule_name": "OEHLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC085-oe-h-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -689,7 +689,7 @@
     {
       "change_id": "SC086",
       "display_name": "OE Contraction",
-      "current_order": "85",
+      "lifecycle_status": "active",
       "rule_name": "OEContraction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC086-oe-contraction.md",
       "card_type": "reciprocal_or_near_reciprocal",
@@ -699,7 +699,7 @@
     {
       "change_id": "SC087",
       "display_name": "OE R Metathesis",
-      "current_order": "86",
+      "lifecycle_status": "active",
       "rule_name": "OERMetathesis",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC087-oe-r-metathesis.md",
       "card_type": "broad_far",
@@ -709,7 +709,7 @@
     {
       "change_id": "SC101",
       "display_name": "EAF Long A Fronting",
-      "current_order": "27",
+      "lifecycle_status": "active",
       "rule_name": "EAFLongAFronting",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC101-eaf-long-a-fronting.md",
       "card_type": "mixed",
@@ -719,7 +719,7 @@
     {
       "change_id": "SC102",
       "display_name": "EAF Hiatus W Insertion",
-      "current_order": "27",
+      "lifecycle_status": "active",
       "rule_name": "EAFHiatusWInsertion",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC102-eaf-hiatus-w-insertion.md",
       "card_type": "mixed",

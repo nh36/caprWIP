@@ -1,16 +1,14 @@
-"""Cross-artifact consistency invariants for the SC001-SC020 chronology audit.
+"""Source-level stage-vocabulary discipline plus book-order projections.
 
-Branch sc001-sc020-chronology-audit. These tests compare the four artifacts that
-describe the same SC001-SC020 rules and fail if their shared fields drift apart:
-
-  * docs/sound_changes/audits/sc001-sc020-chronology-audit.tsv  (audit matrix)
-  * docs/sound_changes/sound_change_inventory.tsv               (per-rule inventory)
-  * docs/sound_changes/sound_change_historical_staging_map.tsv  (reader registry)
-  * docs/sound_changes/cascade_baseline/cascade_order_manifest.tsv (executable order)
-
-Fields that intentionally use different controlled vocabularies are compared
-through explicit mappings (documented below), NOT by hard-coding four copies of
-the same answer.
+The former cross-artifact agreement tests compared four artifacts (live audit
+matrix, inventory, staging map, order manifest) and failed when hand-synced
+mirrors drifted. That architecture is retired: the SC001-SC020 audit matrix is
+now ARCHIVE/FROZEN, and every current view is a generated projection of
+registry/sc_registry.tsv + oe_pipeline whose freshness is enforced by
+test_registry_consolidation.GeneratedViewTests. What remains here are
+source-level invariants on the registry itself (two human vocabularies that
+must stay semantically consistent) and the book-order-matches-cascade
+invariant.
 
 Run: cd Germanic/tests && python3 -m unittest test_sc_chronology_cross_artifact
 """
@@ -22,8 +20,7 @@ import unittest
 from pathlib import Path
 
 SC_DIR = Path(__file__).resolve().parents[1] / "docs" / "sound_changes"
-AUDIT = SC_DIR / "audits" / "sc001-sc020-chronology-audit.tsv"
-INVENTORY = SC_DIR / "sound_change_inventory.tsv"
+REGISTRY = SC_DIR / "registry" / "sc_registry.tsv"
 STAGING = SC_DIR / "sound_change_historical_staging_map.tsv"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 
@@ -31,35 +28,27 @@ MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 # and aliases, but has no live inventory/staging-map rule after retirement.
 SC_IDS = [f"SC{i:03d}" for i in range(1, 21) if i != 21]
 
-# Historical stage: the audit matrix and the inventory use long-form display
-# labels; the staging map uses short internal codes. Map them onto one canonical
-# long form. Only map values that actually occur for SC001-SC020.
-STAGE_TO_CANONICAL = {
-    # audit proposed_historical_stage / staging hist_stage short codes
-    "eaf": "Early Anglo-Frisian",
-    "wgmc": "West Germanic",
-    "nsgmc": "Northern West Germanic",
-    "pnwgmc": "Northwest Germanic",
-    "pwgmc": "Proto-West Germanic",
-    "pgmc": "Proto-Germanic",
-    "oe_ws": "Old English",
-    "Technical": "Technical",
-    "Technical (support stage)": "Technical",
-    # inventory / staging long forms (identity)
-    "Early Anglo-Frisian": "Early Anglo-Frisian",
-    "West Germanic": "West Germanic",
-    "Northern West Germanic": "Northern West Germanic",
-    "Northwest Germanic": "Northwest Germanic",
-    "Proto-West Germanic": "Proto-West Germanic",
-    "Proto-Germanic": "Proto-Germanic",
-    "Old English": "Old English",
+# The registry carries TWO human stage vocabularies: hist_stage (short internal
+# code) and historical_stage_label (reader-facing display label). Both are
+# human judgements in ONE source file; this map pins which display labels each
+# code may legitimately carry (corridor codes admit finer reader-facing
+# stages). A pairing outside this map is a source-level contradiction.
+ALLOWED_STAGE_LABELS = {
+    "pgmc": {"Proto-Germanic"},
+    "pnwgmc": {"Northwest Germanic"},
+    "nwgmc": {"Northwest Germanic"},
+    "pwgmc": {"Proto-West Germanic", "Northern West Germanic"},
+    # EAF is CAPR's post-PWGmc executable corridor; the reader-facing label may
+    # record the finer historical stage established by adjudication.
+    "eaf": {"Early Anglo-Frisian", "Anglo-Frisian", "North Sea Germanic",
+            "Northern West Germanic", "West Germanic", "Old English"},
+    "preoe": {"Old English"},
+    "oe": {"Old English"},
+    "oe_ws": {"Old English"},
+    "ws_oe": {"Old English"},
+    "": {"", "Old English", "Orthography & surface", "Proto-Germanic",
+         "Technical"},
 }
-# SC020's audit stage carries a parenthetical refinement; normalize its head.
-STAGE_HEAD_ONLY = {"SC020"}  # "wgmc (early rule: PWGmc)" -> head "wgmc"
-
-# Historical scope: audit and staging both use short codes already; inventory
-# does not carry a separate scope column (folded into pipeline_stage).
-SCOPE_FIELDS_AGREE = ("audit", "staging")  # only these two have a scope column
 
 
 def _read(path, key):
@@ -68,120 +57,51 @@ def _read(path, key):
     return {r[key]: r for r in csv.DictReader(io.StringIO("\n".join(lines)), delimiter="\t")}
 
 
-def _canon_stage(sc, raw):
-    raw = (raw or "").strip()
-    if sc in STAGE_HEAD_ONLY:
-        raw = raw.split("(")[0].strip()
-    return STAGE_TO_CANONICAL.get(raw, raw)
+class RegistryStageVocabularyTests(unittest.TestCase):
+    """Semantic discipline between the registry's two human stage columns."""
 
-
-class CrossArtifactTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.audit = _read(AUDIT, "sc_id")
-        cls.inv = _read(INVENTORY, "change_id")
+        cls.reg = _read(REGISTRY, "sc_id")
         cls.staging = _read(STAGING, "sc_id")
-        # order manifest: foma_identifier -> position
-        mlines = [ln for ln in MANIFEST.read_text(encoding="utf-8").splitlines()
-                  if not ln.startswith("#")]
-        cls.manifest = {r["foma_identifier"]: int(r["position"])
-                        for r in csv.DictReader(io.StringIO("\n".join(mlines)), delimiter="\t")}
 
-    def test_all_sc001_sc020_present_everywhere(self):
+    def test_all_sc001_sc020_present_in_registry(self):
         for sc in SC_IDS:
-            self.assertIn(sc, self.audit, f"{sc} missing from audit matrix")
-            self.assertIn(sc, self.inv, f"{sc} missing from inventory")
-            if sc not in ("SC001", "SC002"):  # support/early stages absent from staging map
-                self.assertIn(sc, self.staging, f"{sc} missing from staging map")
+            self.assertIn(sc, self.reg, f"{sc} missing from sc_registry.tsv")
 
-    def test_foma_identifier_agrees_audit_vs_staging(self):
-        """The canonical Foma identifier must match between the audit matrix and
-        the staging map (this catches the SC004 PWGmc->EAF alias error)."""
-        for sc in SC_IDS:
-            if sc not in self.staging:
-                continue  # SC001/SC002 are support stages, not in the reader registry
-            a = self.audit[sc]["foma_identifier"].strip()
-            s = self.staging[sc]["fst_identifier"].strip()
-            self.assertEqual(a, s,
-                             f"{sc}: audit foma id {a!r} != staging fst id {s!r}")
-
-    def test_foma_identifier_is_principal_not_legacy_alias(self):
-        """SC004's principal rule is EAFAiMonophthongization; the legacy
-        PWGmcAiMonophthongization alias must not be recorded as the principal id."""
-        self.assertEqual(self.audit["SC004"]["foma_identifier"].strip(),
-                         "EAFAiMonophthongization")
-        self.assertEqual(self.staging["SC004"]["fst_identifier"].strip(),
-                         "EAFAiMonophthongization")
-        # Position 31 after the SC025/SC104 nasalized-low-vowel adjudication
-        # moved SC103 PGmcNasalLossBeforeX to position 1 and inserted SC104
-        # EAFNasalizedLowRounding at position 29.
-        self.assertEqual(self.manifest.get("EAFAiMonophthongization"), 31)
-
-    def test_historical_stage_agrees_audit_inventory_staging(self):
-        """Historical stage (canonical long form) must agree across audit,
-        inventory, and staging map for every SC001-SC020 that all three cover."""
-        for sc in SC_IDS:
-            audit_stage = _canon_stage(sc, self.audit[sc]["proposed_historical_stage"])
-            inv_stage = _canon_stage(sc, self.inv[sc]["historical_stage"])
-            self.assertEqual(audit_stage, inv_stage,
-                             f"{sc}: audit stage {audit_stage!r} != inventory {inv_stage!r}")
-            if sc in self.staging:
-                st_stage = _canon_stage(sc, self.staging[sc]["hist_stage"])
-                # EAF is CAPR's post-PWGmc corridor; the audit/inventory record the
-                # finer reader-facing stage (e.g. Northern West Germanic / West
-                # Germanic). Both map to the same corridor. Only require agreement
-                # when staging uses a specific (non-EAF) code.
-                if self.staging[sc]["hist_stage"].strip() != "eaf":
-                    self.assertEqual(audit_stage, st_stage,
-                                     f"{sc}: audit stage {audit_stage!r} != staging {st_stage!r}")
-
-    def test_historical_scope_agrees_audit_vs_staging(self):
-        """Historical scope must agree between audit matrix and staging map
-        (the two artifacts that carry a scope column)."""
-        for sc in SC_IDS:
-            if sc not in self.staging:
-                continue
-            a = self.audit[sc]["proposed_historical_scope"].strip()
-            s = self.staging[sc]["hist_scope"].strip()
-            self.assertEqual(a, s,
-                             f"{sc}: audit scope {a!r} != staging scope {s!r}")
-
-    def test_cascade_position_matches_order_manifest(self):
-        """The audit matrix cascade_position must equal the executable position
-        in the order manifest for rules that execute inside EnglishProtoToOE.
-        (Support/early rules not in the manifest are skipped.)"""
-        for sc in SC_IDS:
-            foma = self.audit[sc]["foma_identifier"].strip()
-            if foma not in self.manifest:
-                continue  # support / pre-pipeline rule
-            manifest_pos = self.manifest[foma]
-            audit_pos = self.audit[sc]["cascade_position"].strip()
-            self.assertTrue(audit_pos.isdigit(),
-                            f"{sc}: audit cascade_position {audit_pos!r} not numeric but rule is in manifest")
-            self.assertEqual(int(audit_pos), manifest_pos,
-                             f"{sc}: audit cascade_position {audit_pos} != manifest {manifest_pos}")
-
-    def test_reader_chapter_agrees_audit_vs_staging(self):
-        """Proposed reader chapter in the audit matrix must match the staging
-        map's chapter (catches SC012 Ch2 -> Ch3 drift)."""
-        for sc in SC_IDS:
-            if sc not in self.staging:
-                continue
-            a = self.audit[sc]["proposed_reader_chapter"].strip()
-            s = self.staging[sc]["v1_chapter"].strip()
-            self.assertEqual(a, s,
-                             f"{sc}: audit proposed chapter {a!r} != staging chapter {s!r}")
+    def test_stage_code_and_display_label_are_consistent(self):
+        for sc, r in self.reg.items():
+            code = r["hist_stage"].strip()
+            label = r["historical_stage_label"].strip()
+            self.assertIn(code, ALLOWED_STAGE_LABELS,
+                          f"{sc}: unknown hist_stage code {code!r}")
+            self.assertIn(label, ALLOWED_STAGE_LABELS[code],
+                          f"{sc}: display label {label!r} contradicts "
+                          f"hist_stage {code!r}")
 
     def test_sc012_is_northern_wgmc_scope(self):
-        """SC012: northern WGmc scope, display stage Northern West Germanic.
-        Reader chapters are now contiguous executable-position intervals, so
-        SC012 (cascade position 10) sits in chapter 1; scope/stage labels are
-        independent of chapter assignment until the rename pass."""
-        self.assertEqual(self.audit["SC012"]["proposed_historical_stage"].split("(")[0].strip(), "nsgmc")
-        self.assertEqual(self.audit["SC012"]["proposed_historical_scope"].strip(), "north_wgmc")
-        self.assertEqual(self.inv["SC012"]["historical_stage"], "Northern West Germanic")
+        """SC012: northern WGmc scope, display stage Northern West Germanic
+        (R/T pp.170-171; Campbell §414: lþ>ld clearest in northern WGmc).
+        Chapter assignment is a separate editorial fact and is tested against
+        the cascade by the book-order tests below."""
+        self.assertEqual(self.reg["SC012"]["hist_scope"], "north_wgmc")
+        self.assertEqual(self.reg["SC012"]["historical_stage_label"],
+                         "Northern West Germanic")
         self.assertEqual(self.staging["SC012"]["hist_scope"], "north_wgmc")
-        self.assertEqual(self.staging["SC012"]["v1_chapter"], "1")
+
+    def test_sc020_stage_is_proto_west_germanic(self):
+        """Dossier B (sc020-three-rule-adjudication.md): PWGmc stage
+        (R/T 2014 pp.44-45, 212)."""
+        self.assertEqual(self.reg["SC020"]["historical_stage_label"],
+                         "Proto-West Germanic")
+
+    def test_sc004_principal_identifier_is_not_the_legacy_alias(self):
+        """SC004's principal rule is EAFAiMonophthongization; the legacy
+        PWGmcAiMonophthongization alias must never return as principal id."""
+        self.assertEqual(self.reg["SC004"]["fst_identifier"],
+                         "EAFAiMonophthongization")
+        self.assertEqual(self.staging["SC004"]["fst_identifier"],
+                         "EAFAiMonophthongization")
 
 
 class BookOrderMatchesManifestTests(unittest.TestCase):

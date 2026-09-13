@@ -1,5 +1,15 @@
 # Infrastructure authority architecture (internal engineering note)
 
+> HISTORICAL NOTE (control-plane pass, 2026): this note records passes 1–2
+> as implemented at the time. The 2026 control-plane pass has since removed
+> the registry's derived order columns entirely (no `cascade_position` /
+> `staging_order` / `inventory_order` in `sc_registry.tsv`; no
+> `sync_registry_cascade_positions.py`). Current positions live only in the
+> generated `registry/current_sc_state.tsv`; legacy order spaces are frozen
+> in `registry/archival_orders.tsv`. For the current authority map see
+> `registry/CONTROL_PLANE.md`. The tables below are kept as a record of the
+> earlier architecture.
+
 Internal engineering documentation for the 2026 infrastructure-consistency
 passes ("one logical authority for each fact"). Not reader-facing.
 Pass 1: authority consolidation. Pass 2: derived cascade positions,

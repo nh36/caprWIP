@@ -100,6 +100,8 @@ class SC021AdjudicationTests(unittest.TestCase):
             row["sc_id"]: row
             for row in csv.DictReader(io.StringIO("\n".join(reg_lines)), delimiter="\t")
         }["SC021"]
+        # chronology_graph_nodes.tsv is the archival card-area record; its
+        # experiment-time current_order column recorded the retirement.
         self.assertEqual(graph["current_order"], "retired")
         self.assertEqual(graph["in_contextual_edges"], "no")
         self.assertEqual(registry["lifecycle_status"], "retired")

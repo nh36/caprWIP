@@ -13,7 +13,7 @@ are GENERATED or ARCHIVE.
 
 | File | Kind | Owns |
 |---|---|---|
-| `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, reader-facing placement, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). EXCEPTION: the `cascade_position` column is DERIVED from the executable model (`tools/sync_registry_cascade_positions.py`, run by `--finalize`) and is never hand-edited |
+| `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, reader-facing placement, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). It carries NO order-valued columns: executable positions are derived at read time from the executable model (`tools/oe_pipeline.py`) and published in the generated `registry/current_sc_state.tsv`; the legacy inventory/staging order spaces are frozen in `registry/archival_orders.tsv` (ARCHIVE) |
 | `registry/chronology_edges.tsv` | machine-state | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
 | `registry/sc_inventory_notes.tsv` | source | HUMAN JUDGEMENTS ONLY: plain-language draft descriptions, order-sensitivity classification, editorial `illustrative_lexemes`, notes, review flags |
 | `registry/sc_inventory_annotations.tsv` | GENERATED | Projection joining the two human sources with `germanic.txt` (definition text, stable anchor) and the coverage census (`firing_count`, `firing_lexemes`). Never hand-edit |
@@ -35,7 +35,8 @@ filename guessing), and a test requires every pointer to resolve.
 
 | File | Source |
 |---|---|
-| `sound_change_historical_staging_map.tsv` | sc_registry |
+| `registry/current_sc_state.tsv` | sc_registry + oe_pipeline (the ONLY current-position table) |
+| `sound_change_historical_staging_map.tsv` | sc_registry + oe_pipeline (row order and `cascade_position`) |
 | `sound_change_inventory.tsv` | sc_registry + annotations |
 | `order_tests/chronology_graph/first_break_edges.{tsv,json,dot}` | chronology_edges (+ registry for node metadata) |
 | `order_tests/chronology_graph/first_break_nodes.tsv` | sc_registry |
@@ -49,7 +50,6 @@ to run unconditionally):
 |---|---|
 | `cascade_baseline/cascade_order_manifest.tsv`, `cascade_baseline/executable_model.tsv` | `tools/cascade_order_manifest.py` |
 | `Germanic/fsts/old_english_sandbox.txt` | `tools/generate_oe_sandbox.py` |
-| `registry/sc_registry.tsv` `cascade_position` column | `tools/sync_registry_cascade_positions.py` |
 | `chronology_card_index.tsv` `cascade_position` column | `tools/sync_chronology_card_positions.py` |
 | `cascade_baseline/rule_coverage_census.tsv` | `tools/rule_coverage_census.py` (fails closed if the canonical trace evidence is stale — run `--evidence` first) |
 
@@ -68,14 +68,21 @@ to run unconditionally):
     `historical_audit_table.tsv.current_cascade_position` MUST NOT be
     synchronized to later executable insertions, removals, or reorders: it is
     audit-time record, and it is *expected* to drift from the live cascade.
-    The live counterpart is `audits/sc001-sc020-chronology-audit.tsv`, whose
-    `cascade_position` column is a live projection and MUST match
-    `cascade_baseline/cascade_order_manifest.tsv` (enforced by
-    `test_sc_chronology_cross_artifact.py::test_cascade_position_matches_order_manifest`).
+    The audit matrix `audits/sc001-sc020-chronology-audit.tsv` is likewise
+    ARCHIVE/FROZEN (frozen at commit ce4fd3e5): its `cascade_position` and
+    reader-placement columns are audit-time state and are never
+    resynchronized. The only current-position table is the GENERATED
+    `registry/current_sc_state.tsv` projection.
     `exec_index` in the executable model is the complete physical execution
     index. No further vague position synonym may be introduced.
+- `registry/archival_orders.tsv` — ARCHIVE/FROZEN legacy order spaces
+  (`inventory_order`: the chronology-experiment order space still used as
+  archival coordinates by `tools/sound_change_order_sensitivity.py`;
+  `staging_order`: the retired staging-map row sequence). Never
+  resynchronized.
 - `Germanic/docs/archive/` — DEV_NOTES.md, WORKFLOW.md, CANONICAL_STATE.md, HISTORICAL_CHRONOLOGY_AUDIT_PLAN.md, canonical_state_freeze_report.md (tombstones remain at old paths)
 - `sound_changes/archive/next_batch_candidates.tsv` — retired candidate board; the registry owns lifecycle/candidate status
+- `audits/sc001-sc020-chronology-audit.tsv` — the frozen SC001-SC020 audit matrix (see position-field semantics above)
 - `order_tests/chronology_cards/*.md` and `chronology_cards/chronology_graph_nodes.tsv` — per-SC evidence records from past audits; cite but do not treat their metadata as current
 - `chronology_card_index.tsv` — record of the card set (read by the book pipeline; id set only)
 

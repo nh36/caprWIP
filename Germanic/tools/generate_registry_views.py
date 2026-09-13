@@ -8,10 +8,12 @@ SOURCE (hand-edited; human judgements only):
 
 MACHINE AUTHORITIES (read, never written by a human):
     Germanic/fsts/germanic.txt              via tools/executable_facts.py
+                                            and tools/oe_pipeline.py (order)
     docs/debug_snapshots/oe_full_trace_report.txt  via tools/rule_coverage_census.py
 
 GENERATED (never hand-edited; written by this script):
     Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv
+    Germanic/docs/sound_changes/registry/current_sc_state.tsv
     Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv
     Germanic/docs/sound_changes/sound_change_inventory.tsv
     Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_edges.tsv
@@ -47,6 +49,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import executable_facts  # noqa: E402
+import oe_pipeline  # noqa: E402
 import rule_coverage_census  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -73,6 +76,7 @@ LITERATURE_STATUS = {"unadjudicated": "not_started", "adjudicated": "adjudicated
 
 STAGING_VIEW = SC_DIR / "sound_change_historical_staging_map.tsv"
 INVENTORY_VIEW = SC_DIR / "sound_change_inventory.tsv"
+CURRENT_SC_STATE = REGISTRY_DIR / "current_sc_state.tsv"
 EDGES_TSV = GRAPH_DIR / "first_break_edges.tsv"
 EDGES_JSON = GRAPH_DIR / "first_break_edges.json"
 EDGES_DOT = GRAPH_DIR / "first_break_edges.dot"
@@ -280,8 +284,25 @@ def load_corpus_concepts():
     return {r["concept"] for r in read_tsv(BASELINE_OUTPUTS)}
 
 
+# Order-valued columns that once lived in sc_registry.tsv. Executable order is
+# owned by oe_pipeline (parsed from germanic.txt); the legacy inventory/staging
+# order spaces are frozen in registry/archival_orders.tsv (ARCHIVE). None of
+# them may reappear as a hand-maintained registry column.
+REGISTRY_FORBIDDEN_COLUMNS = dict(FORBIDDEN_HUMAN_COLUMNS)
+REGISTRY_FORBIDDEN_COLUMNS.update({
+    "staging_order": "registry/archival_orders.tsv (ARCHIVE / FROZEN)",
+    "inventory_order": "registry/archival_orders.tsv (ARCHIVE / FROZEN)",
+    "current_order": "no such fact; executable order is oe_pipeline's",
+})
+
+
 def validate_registry(reg, edges):
     errors = []
+    for column, authority in REGISTRY_FORBIDDEN_COLUMNS.items():
+        if reg and column in reg[0]:
+            errors.append(
+                f"registry: column {column!r} is machine-derived or archival "
+                f"(authority: {authority}) and must not be hand-maintained")
     corpus = load_corpus_concepts()
     if corpus is None:
         corpus = set()
@@ -293,12 +314,20 @@ def validate_registry(reg, edges):
         if n != 1:
             errors.append(f"registry: {sc} appears {n} times")
     ids = set(counts)
+    model_idents = {s.foma_identifier for s in oe_pipeline.named_stages()}
     for r in reg:
+        ident = (r.get("fst_identifier") or "").strip()
+        if r["lifecycle_status"] == "active" and ident and ident not in model_idents:
+            errors.append(
+                f"registry: active {r['sc_id']} fst_identifier {ident!r} is not "
+                "a stage of the executable model (oe_pipeline)")
+        if r["lifecycle_status"] == "retired" and ident and ident in model_idents:
+            errors.append(
+                f"registry: retired {r['sc_id']} fst_identifier {ident!r} is "
+                "still a stage of the executable model")
         if r["lifecycle_status"] not in ("active", "retired"):
             errors.append(f"registry: {r['sc_id']} bad lifecycle_status {r['lifecycle_status']!r}")
         if r["lifecycle_status"] == "retired":
-            if r["cascade_position"]:
-                errors.append(f"registry: retired {r['sc_id']} has a cascade_position")
             if r["staging_row"] == "yes":
                 errors.append(f"registry: retired {r['sc_id']} marked as a staging row")
         if r["verdict"]:
@@ -395,19 +424,28 @@ def build_staging_view(reg):
         "chronology_problem", "notes",
     ]
     staged = [r for r in reg if r["staging_row"] == "yes"]
-    staged.sort(key=lambda r: int(r["staging_order"]))
+    position = {r["sc_id"]: oe_pipeline.cascade_position(r["fst_identifier"])
+                for r in staged}
+    missing = [sc for sc, pos in position.items() if pos is None]
+    if missing:
+        raise SystemExit(
+            f"staging view: staged SCs without a numbered cascade position: {missing}")
+    staged.sort(key=lambda r: position[r["sc_id"]])
     rows = [
         [
             r["sc_id"], r["fst_identifier"], r["display_name"],
-            r["source_reader_facing_file"], r["cascade_position"], r["hist_stage"],
+            r["source_reader_facing_file"], str(position[r["sc_id"]]),
+            r["hist_stage"],
             r["hist_scope"], r["v1_chapter"], r["v1_reader_position"], r["confidence"],
             r["action_status"], r["capr_evidence"], r["chronology_problem"],
             r["staging_notes"],
         ]
         for r in staged
     ]
-    b = banner("registry/sc_registry.tsv (rows with staging_row=yes)") + [
+    b = banner("registry/sc_registry.tsv (rows with staging_row=yes) + "
+               "oe_pipeline (cascade_position, row order)") + [
         "Canonical SC-level historical staging map view for the Version 1 CAPR book.",
+        "Rows are in executable cascade order (oe_pipeline).",
         "Chapters: 1=PGmc→PNWGmc | 2=PNWGmc→PWGmc | 3=PWGmc→Anglo-Frisian | 4=Anglo-Frisian→OE",
         "Confidence: A=secure | B=strong but analysis-dependent | C=genuinely unresolved",
     ]
@@ -483,7 +521,7 @@ def build_annotations_view(rows):
 
 def build_inventory_view(reg, ann_rows):
     header = [
-        "change_id", "current_order", "display_name", "stage", "trace_stage",
+        "change_id", "display_name", "stage", "trace_stage",
         "rule_source_path", "rule_source_anchor", "foma_definition_raw",
         "plain_description_draft", "appears_in_compact_trace", "firing_count",
         "firing_lexemes", "illustrative_lexemes", "literature_status",
@@ -500,7 +538,7 @@ def build_inventory_view(reg, ann_rows):
             continue  # SCs without an inventory row (e.g. retired SC021)
         display = r["inventory_display_name"] or r["display_name"]
         rows.append([
-            r["sc_id"], r["inventory_order"], display, r["stage_label"],
+            r["sc_id"], display, r["stage_label"],
             a["trace_stage"], a["rule_source_path"], a["rule_source_anchor"],
             a["foma_definition_raw"], a["plain_description_draft"],
             a["appears_in_compact_trace"], a["firing_count"],
@@ -515,9 +553,9 @@ def build_inventory_view(reg, ann_rows):
         "registry/sc_registry.tsv + registry/sc_inventory_notes.tsv + "
         "germanic.txt + rule_coverage_census"
     ) + [
-        "current_order is the ARCHIVAL inventory order (registry inventory_order),",
-        "not the executable cascade position; executable positions come from",
-        "oe_pipeline / cascade_order_manifest.tsv.",
+        "Rows are keyed by change_id. Executable positions come from",
+        "oe_pipeline / cascade_order_manifest.tsv; the archival inventory",
+        "order space is frozen in registry/archival_orders.tsv.",
     ]
     return tsv_text(b, header, rows)
 
@@ -537,11 +575,10 @@ def node_rows(reg):
     for r in sorted(reg, key=lambda r: r["sc_id"]):
         if not r["chronology_card"]:
             continue
-        order = "retired" if r["lifecycle_status"] == "retired" else r["inventory_order"]
         rows.append({
             "change_id": r["sc_id"],
             "display_name": r["display_name"],
-            "current_order": order,
+            "lifecycle_status": r["lifecycle_status"],
             "rule_name": r["fst_identifier"],
             "card_path": r["chronology_card"],
             "card_type": r["chronology_profile"],
@@ -553,15 +590,14 @@ def node_rows(reg):
 
 def build_nodes_tsv(reg):
     header = [
-        "change_id", "display_name", "current_order", "rule_name", "card_path",
+        "change_id", "display_name", "lifecycle_status", "rule_name", "card_path",
         "card_type", "has_reciprocal_boundary", "short_summary",
     ]
     rows = [[n[h] for h in header] for n in node_rows(reg)]
     return tsv_text(
         banner("registry/sc_registry.tsv (rows with chronology-card facts)") + [
-            "current_order is the ARCHIVAL inventory order (registry inventory_order),",
-            "not the executable cascade position; executable positions come from",
-            "oe_pipeline / cascade_order_manifest.tsv.",
+            "Executable positions are not repeated here; they come from",
+            "oe_pipeline / cascade_order_manifest.tsv (see current_sc_state.tsv).",
         ], header, rows
     )
 
@@ -570,8 +606,8 @@ def build_edges_json(reg, edges):
     payload = {
         "generated_by": "Germanic/tools/generate_registry_views.py — GENERATED FILE, DO NOT EDIT",
         "order_note": (
-            "node current_order is the archival inventory order, not the executable "
-            "cascade position (see oe_pipeline / cascade_order_manifest.tsv)"
+            "nodes carry no order fields; executable order comes from oe_pipeline / "
+            "cascade_order_manifest.tsv (see registry/current_sc_state.tsv)"
         ),
         "sources": [
             "Germanic/docs/sound_changes/registry/sc_registry.tsv",
@@ -625,7 +661,7 @@ def build_edges_dot(reg, edges):
         mentioned.add(e["target_change_id"])
     for n in node_rows(reg):
         style = ""
-        if n["current_order"] == "retired":
+        if n["lifecycle_status"] == "retired":
             style = ', fillcolor="#71809622", color="#718096"'
         lines.append(f'  "{n["change_id"]}" [label="{n["change_id"]}\\n{n["display_name"]}"{style}];')
     for name in sorted(mentioned):
@@ -712,6 +748,44 @@ def build_settled_verdicts(reg):
     return "\n".join(lines) + "\n"
 
 
+def build_current_sc_state(reg):
+    """The generated current-state table: one row per active SC, joining the
+    registry's human judgements with the executable model's derived order.
+    This is the projection that replaces every retired hand-maintained
+    position mirror (registry cascade_position column, live audit matrix)."""
+    header = [
+        "sc_id", "fst_identifier", "entry_type", "pipeline_stage",
+        "display_name", "hist_stage", "hist_scope", "confidence",
+        "adjudication_status", "verdict", "exec_index", "cascade_position",
+    ]
+    rows = []
+    for r in reg:
+        if r["lifecycle_status"] != "active":
+            continue
+        ident = (r.get("fst_identifier") or "").strip()
+        exec_index = cascade_pos = ""
+        if ident:
+            stage = oe_pipeline.stage_for(ident)
+            exec_index = str(stage.exec_index)
+            if stage.cascade_position is not None:
+                cascade_pos = str(stage.cascade_position)
+        rows.append([
+            r["sc_id"], ident, r["entry_type"], r["pipeline_stage"],
+            r["display_name"], r["hist_stage"], r["hist_scope"], r["confidence"],
+            r["adjudication_status"], r["verdict"], exec_index, cascade_pos,
+        ])
+    rows.sort(key=lambda row: (row[10] == "", int(row[10] or 0), row[0]))
+    b = banner("registry/sc_registry.tsv (human judgements) + oe_pipeline "
+               "(exec_index/cascade_position from germanic.txt)") + [
+        "Current SC state projection. Positions here are DERIVED and go stale the",
+        "moment germanic.txt changes; regenerate, never edit. An empty",
+        "cascade_position means the stage executes outside the numbered span",
+        "(prelude or written-surface block); an empty exec_index means the SC has",
+        "no executable stage.",
+    ]
+    return tsv_text(b, header, rows)
+
+
 def build_all():
     reg = read_tsv(SC_REGISTRY)
     notes = read_tsv(INVENTORY_NOTES)
@@ -725,6 +799,7 @@ def build_all():
     ann_rows = build_annotation_rows(reg, notes)
     return {
         ANNOTATIONS: build_annotations_view(ann_rows),
+        CURRENT_SC_STATE: build_current_sc_state(reg),
         STAGING_VIEW: build_staging_view(reg),
         INVENTORY_VIEW: build_inventory_view(reg, ann_rows),
         EDGES_TSV: build_edges_tsv(edges),

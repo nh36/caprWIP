@@ -649,15 +649,17 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
                                  "restriction is unencoded")
 
     def test_card_index_orders_match_the_cascade_manifest(self):
-        """Mechanical consistency for the four adjudicated rows."""
+        """Mechanical consistency for the four adjudicated rows. The registry
+        itself stores no positions (oe_pipeline is the order authority); the
+        card index's live position column is checked until it is archived."""
         manifest = {r["foma_identifier"]: r["position"] for r in _tsv_rows(MANIFEST)}
         registry = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
         index = {r["change_id"]: r
                  for r in _tsv_rows(CARDS / "chronology_card_index.tsv")}
         for sc_id in ("SC024", "SC025", "SC101", "SC102"):
             fst = registry[sc_id]["fst_identifier"]
-            self.assertEqual(registry[sc_id]["cascade_position"], manifest[fst],
-                             f"{sc_id}: registry position must match manifest")
+            self.assertIn(fst, manifest,
+                          f"{sc_id}: rule missing from the cascade manifest")
             self.assertEqual(index[sc_id]["cascade_position"], manifest[fst],
                              f"{sc_id}: chronology card index order is stale "
                              "against the cascade manifest")

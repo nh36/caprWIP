@@ -28,10 +28,9 @@
         foma/flookup work is ever needed.
 
     python3 Germanic/tools/adjudicate.py SC024 --finalize
-        Deterministic host-side finalization: sync derived registry columns
-        (cascade_position) from the executable model, regenerate all registry
-        views and chained model projections (order manifest, generated
-        sandbox, chronology-card positions, coverage census), then run the
+        Deterministic host-side finalization: regenerate all registry views
+        and chained model projections (order manifest, generated sandbox,
+        chronology-card positions, coverage census), then run the
         propagation consistency checks. Never fabricates runtime evidence
         (the census fails closed on stale trace evidence — run --evidence
         first) and never rewrites ARCHIVE/FROZEN snapshots. Run after
@@ -93,25 +92,23 @@ CHAINED_BUILDERS = (
 # snapshots are never rewritten by finalization.
 
 # Derived SOURCE-file columns synchronized from the executable model before
-# any view regeneration (registry cascade_position is derived, not hand-edited).
-DERIVED_COLUMN_SYNCS = (
-    REPO_ROOT / "Germanic/tools/sync_registry_cascade_positions.py",
-)
+# SOURCE files carry no derived columns (positions live only in the
+# executable model / generated views), so there is nothing to synchronize
+# before view regeneration.
 
 # Generated artifacts that must be clean before executable evidence is
 # gathered and after finalization (fail-closed: never census stale order).
 GENERATED_CHECKS = (
-    ("sync_registry_cascade_positions.py", ["--check"]),
     ("cascade_order_manifest.py", ["--check"]),
     ("generate_oe_sandbox.py", ["--check"]),
     ("sync_chronology_card_positions.py", ["--check"]),
 )
 
 # Purely mechanical prerequisites for runtime evidence, regenerated
-# automatically by --evidence before compiling (derived registry columns,
-# executable manifests, generated sandbox, card positions). Never touches
-# scientific SOURCE metadata beyond explicitly derived columns.
-MECHANICAL_PREREQS = DERIVED_COLUMN_SYNCS + (
+# automatically by --evidence before compiling (executable manifests,
+# generated sandbox, card positions). Never touches scientific SOURCE
+# metadata.
+MECHANICAL_PREREQS = (
     REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
     REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
     REPO_ROOT / "Germanic/tools/sync_chronology_card_positions.py",
@@ -481,25 +478,12 @@ def finalize(sc_id) -> int:
 
     Always runs the full regeneration chain — the agent never decides
     whether 'staging changed'. All generators are deterministic and safe to
-    run unconditionally. Order: derived SOURCE columns are synchronized from
-    the executable model first, then registry views, then chained projections.
-    Runtime-derived evidence is never fabricated here: rule_coverage_census
-    fails closed on stale trace evidence with an instruction to run
-    --evidence first, and ARCHIVE/FROZEN snapshots are never rewritten.
+    run unconditionally. SOURCE files carry no derived columns, so the chain
+    is purely SOURCE -> views -> chained projections. Runtime-derived
+    evidence is never fabricated here: rule_coverage_census fails closed on
+    stale trace evidence with an instruction to run --evidence first, and
+    ARCHIVE/FROZEN snapshots are never rewritten.
     """
-    print("== syncing derived registry columns (from the executable model) ==")
-    for builder in DERIVED_COLUMN_SYNCS:
-        result = subprocess.run(
-            [sys.executable, str(builder)], cwd=REPO_ROOT,
-            capture_output=True, text=True,
-        )
-        tail = (result.stdout or result.stderr).strip().splitlines()
-        print(f"{builder.name}: {tail[-1] if tail else 'ok'}")
-        if result.returncode != 0:
-            print(result.stderr, file=sys.stderr)
-            print(f"FINALIZE FAILED: {builder.name} exited {result.returncode}",
-                  file=sys.stderr)
-            return 1
     print("== regenerating registry views ==")
     for path, text in build_all().items():
         current = path.read_text(encoding="utf-8") if path.exists() else None
@@ -572,14 +556,8 @@ def check(sc_id) -> int:
                 f"retired SC still has a live define {row['fst_identifier']} "
                 f"at germanic.txt line {lineno}"
             )
-    # registry structured position must match the executable model
-    if row["lifecycle_status"] == "active" and row["fst_identifier"]:
-        model_pos = oe_pipeline.cascade_position(row["fst_identifier"])
-        if str(model_pos) != row["cascade_position"]:
-            errors.append(
-                f"registry cascade_position {row['cascade_position']!r} != "
-                f"executable model position {model_pos!r} for "
-                f"{row['fst_identifier']}")
+    # the registry never stores positions; the executable model owns them,
+    # and stale projections are caught by the generated-view checks below
     # generated views must be clean
     for path, expected in build_all().items():
         current = path.read_text(encoding="utf-8") if path.exists() else None

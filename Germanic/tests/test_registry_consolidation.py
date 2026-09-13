@@ -113,7 +113,6 @@ class RetiredExecutableTests(unittest.TestCase):
         for r in reg:
             if r["lifecycle_status"] != "retired":
                 continue
-            self.assertEqual(r["cascade_position"], "", r["sc_id"])
             self.assertEqual(r["staging_row"], "no", r["sc_id"])
             ident = r["fst_identifier"]
             if not ident:

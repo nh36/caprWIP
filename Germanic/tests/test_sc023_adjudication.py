@@ -36,6 +36,7 @@ FST = GERMANIC / "fsts" / "germanic.txt"
 SC_DIR = GERMANIC / "docs" / "sound_changes"
 BASELINE = SC_DIR / "cascade_baseline" / "cascade_baseline_outputs.tsv"
 INVENTORY = SC_DIR / "sound_change_inventory.tsv"
+ARCHIVAL_ORDERS = SC_DIR / "registry" / "archival_orders.tsv"
 CENSUS = SC_DIR / "cascade_baseline" / "rule_coverage_census.tsv"
 STAGING_MAP = SC_DIR / "sound_change_historical_staging_map.tsv"
 HISTORICAL_AUDIT = SC_DIR / "cascade_baseline" / "historical_audit_table.tsv"
@@ -129,12 +130,13 @@ class SC023AdjudicationTests(unittest.TestCase):
         # the SC025/SC104 adjudication moved the pan-Germanic SC103
         # PGmcNasalLossBeforeX to position 1, and 22 after the SC024
         # e1-complex split inserted PNWGmcLongELowering); the stable
-        # identifier ordering (SC023) is asserted against the inventory below.
+        # identifier ordering (SC023) is asserted against the frozen archival
+        # order space below.
         self.assertEqual(self.positions.get("PNWGmcNStemNLoss"), 24)
-        inventory = {
-            r["change_id"]: r for r in _tsv_rows(INVENTORY)
+        archival = {
+            r["sc_id"]: r for r in _tsv_rows(ARCHIVAL_ORDERS)
         }
-        self.assertEqual(inventory["SC023"]["current_order"], "23")
+        self.assertEqual(archival["SC023"]["inventory_order"], "23")
 
     # ------------------------------------------------------------------
     # Firing population pinned (live stage bins)

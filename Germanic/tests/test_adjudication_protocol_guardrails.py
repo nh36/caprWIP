@@ -240,7 +240,7 @@ class RetiredRuleGuardTests(unittest.TestCase):
             if sc_id in rename:
                 self.assertEqual(rename[sc_id]["migration_status"], "retired", sc_id)
             if sc_id in nodes:
-                self.assertEqual(nodes[sc_id]["current_order"], "retired", sc_id)
+                self.assertEqual(nodes[sc_id]["lifecycle_status"], "retired", sc_id)
 
     def test_retired_rules_not_active_chronology_edges(self):
         retired = self.retired_ids()
