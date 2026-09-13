@@ -40,8 +40,8 @@ SC025	EAFLongANasalRounding	historical_sound_change	Early Anglo-Frisian	North Se
 SC104	EAFNasalizedLowRounding	historical_sound_change	Early Anglo-Frisian	Anglo-Frisian rounding of the long nasalized low vowel	eaf	anglo_frisian	A	adjudicated	SPLIT	31	29
 SC101	EAFLongAFronting	historical_sound_change	Early Anglo-Frisian	EAF Long A Fronting	eaf	north_sea_germanic	B	adjudicated	SPLIT/RESTRICT	32	30
 SC004	EAFAiMonophthongization	historical_sound_change	Early Anglo-Frisian	EAF Ai Monophthongization	eaf	north_sea_germanic	B	unadjudicated		33	31
-SC029	OEAwjGlideFormation	historical_sound_change	Old English	OE Awj Glide Formation	preoe	english_specific	B	unadjudicated		34	32
-SC030	OEAuFronting	historical_sound_change	Old English	OE Au Fronting	preoe	english_specific	B	unadjudicated		35	33
+SC029	OEAwjGlideFormation	historical_sound_change	Old English	Pre-OE resolution of *awj to *auj	preoe	english_specific	B	adjudicated	RETAIN	34	32
+SC030	OEAuFronting	historical_sound_change	Old English	English brightening of *au to *æu	preoe	english_specific	A	adjudicated	RETAIN	35	33
 SC033	OEEwLongDiphthong	historical_sound_change	Old English	OE Ew Long Diphthong	ws_oe	west_saxon	A	unadjudicated		36	34
 SC031	OEWWSimplification	historical_sound_change	Old English	OE WW Simplification	ws_oe	west_saxon	A	unadjudicated		37	35
 SC032	OEDiphthongLeveling	historical_sound_change	Old English	OE Diphthong Leveling	ws_oe	west_saxon	A	unadjudicated		38	36

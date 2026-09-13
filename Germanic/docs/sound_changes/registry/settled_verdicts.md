@@ -16,6 +16,8 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC026 | North Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening) | active | SPLIT/RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc026-sc027-nasal-spirant-adjudication.md` |
 | SC027 | North Sea Germanic nasal-spirant law (step 2: loss of the nasal) | active | SPLIT/RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc026-sc027-nasal-spirant-adjudication.md` |
 | SC028 | Northern West Germanic *xs-Cluster Simplification | active | RETAIN/REORDER | `Germanic/docs/sound_changes/audits/sc028-xs-cluster-simplification-adjudication.md` |
+| SC029 | Pre-OE resolution of *awj to *auj | active | RETAIN | `Germanic/docs/sound_changes/audits/sc029-sc030-awj-resolution-and-au-fronting-adjudication.md` |
+| SC030 | English brightening of *au to *æu | active | RETAIN | `Germanic/docs/sound_changes/audits/sc029-sc030-awj-resolution-and-au-fronting-adjudication.md` |
 | SC101 | EAF Long A Fronting | active | SPLIT/RESTRICT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
 | SC102 | EAF Generalization of Hiatus-Breaking W | active | SPLIT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
 | SC103 | Proto-Germanic nasal loss before *x | active | SPLIT/REORDER | `Germanic/docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` |

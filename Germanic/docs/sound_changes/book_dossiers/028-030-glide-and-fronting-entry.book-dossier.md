@@ -28,8 +28,28 @@
 >    the old executable placement, not a historical grouping, so the "entry
 >    bridge" question below should be reopened for SC029-SC030 alone.
 >
-> The SC029 and SC030 material in this dossier is not affected and has not been
-> adjudicated.
+> The SC029 and SC030 material in this dossier has now also been superseded.
+>
+> **SUPERSEDED IN FULL AS TO SC029 AND SC030 — the 2026 joint adjudication.** See
+> `Germanic/docs/sound_changes/audits/sc029-sc030-awj-resolution-and-au-fronting-adjudication.md`.
+> Three further assumptions in the text below are now known to be wrong.
+>
+> 5. **SC029 is not "glide formation".** It is the reversal of the West Germanic
+>    gemination of *w* before *j*, restoring the diphthong: PNWGmc \*awj > PWGmc
+>    \*[aw'w'] > pre-OE \*[auj] (Ringe and Taylor p. 53 §3.1.3, "it was
+>    reversible"; Campbell §120.2 p. 46).
+> 6. **SC030 is not a separate Old English fronting.** It is Anglo-Frisian
+>    brightening applied to the first element of *au*, restricted to English
+>    (Campbell §132 p. 52 lists "West Gmc. a > OE æ; West Gmc. au > OE æu" as one
+>    step; Fulk §4.12 p. 73). Its population is 16 inherited *au* against only 2
+>    words from SC029, so the `hay` / `strew` pair does not define it.
+> 7. **The "post-brightening" placement claim was false, and there is no corridor
+>    problem.** SC030 is contemporaneous with SC043, and the two are provably
+>    non-interacting, so the executable order is free. SC029 and SC030 execute
+>    immediately after SC004, which reproduces Campbell §132's own steps (2) then
+>    (3). The verdict is RETAIN with no reorder, and the "entry bridge" question
+>    raised below is answered: the adjacency of SC029 and SC030 to SC031-SC034 is
+>    editorial, and their historical home is the brightening stage.
 
 ## 1. Role in the book
 
