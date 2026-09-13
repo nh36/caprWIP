@@ -12,13 +12,20 @@ generated or archived.
 
 - `sound_changes/registry/sc_registry.tsv` — **the canonical SC registry.**
   One row per SC ever used (including retired). Owns identity, lifecycle,
-  executable identifier/position, display names, historical stage/scope,
+  executable identifier, display names, historical stage/scope,
   confidence, adjudication status/verdict/memo path, chronology-node facts,
   and document pointers (evidence dossiers, chronology card, reader-facing
-  chapter).
+  chapter). It carries NO position columns: executable order is derived
+  from the model and published in the generated
+  `registry/current_sc_state.tsv`.
 - `sound_changes/registry/chronology_edges.tsv` — **the canonical
   chronology-edge registry.** Owns all chronology relations, witnesses,
   witness roles, and evidence basis.
+- `sound_changes/registry/reader_chapters.tsv` and
+  `sound_changes/registry/reader_files.tsv` — reader book chapters
+  (id, title, intro file) and file→chapter assignment. No order columns:
+  book order is derived from cascade positions into the generated
+  `registry/reader_manifest.tsv`.
 - `sound_changes/registry/sc_inventory_notes.tsv` — human inventory judgements
   only (plain descriptions, order sensitivity, editorial examples, notes).
   The `sc_inventory_annotations.tsv` beside it is a GENERATED projection.
@@ -46,11 +53,14 @@ which generator to run. Generated files:
 `sound_changes/sound_change_historical_staging_map.tsv`,
 `sound_changes/sound_change_inventory.tsv`, the chronology graph files under
 `sound_changes/order_tests/chronology_graph/` (edges TSV/JSON/DOT, nodes,
-summary), `sound_changes/registry/settled_verdicts.md`, plus the executable
+summary), `sound_changes/registry/settled_verdicts.md`, the position and
+book projections (`registry/current_sc_state.tsv`,
+`registry/reader_manifest.tsv`, `registry/current_chronology.tsv`, and the
+assembled `reader_facing/reader_facing_local_section_20.md` +
+coverage report from `tools/build_reader_book.py`), plus the executable
 projections (`cascade_baseline/cascade_order_manifest.tsv`,
 `cascade_baseline/executable_model.tsv`, the generated
-`fsts/old_english_sandbox.txt`, the derived `cascade_position` columns in
-`registry/sc_registry.tsv` and the chronology card index, and
+`fsts/old_english_sandbox.txt`, and
 `cascade_baseline/rule_coverage_census.tsv`).
 (Debugging only: `python3 Germanic/tools/generate_registry_views.py [--check]`.)
 

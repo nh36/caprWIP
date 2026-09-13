@@ -1,7 +1,7 @@
 # SC025 NSGmc Long A Nasalization — chronology evidence card
 
-## Current position
-- current_order: `27`
+## Position at experiment time
+- order_at_experiment_time: `27`
 - rule_name: `EAFLongANasalRounding`
 - former_rule_name: `PNWGmcLongENasalRounding` (and earlier `NWGmcLongENasalRounding`)
 - safe computational window: bounded earlier by SC024 (feeding) and later by SC004 (displacement-verified)

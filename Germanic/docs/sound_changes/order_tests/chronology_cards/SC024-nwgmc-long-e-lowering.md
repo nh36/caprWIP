@@ -1,7 +1,7 @@
 # SC024 NWGmc Long E1 Lowering — chronology evidence card
 
-## Current position
-- current_order: `4`
+## Position at experiment time
+- order_at_experiment_time: `4`
 - rule_name: `PNWGmcLongELowering`
 - former_rule_name: `NWGmcLongELowering`
 - safe computational window: earlier side runner-bounded; later side bounded by SC102 and SC025/SC101 (feeding)

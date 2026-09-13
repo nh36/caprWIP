@@ -114,18 +114,19 @@ class GeneratedProjectionTests(unittest.TestCase):
                          "old_english_sandbox.txt is stale; regenerate with "
                          "tools/generate_oe_sandbox.py")
 
-    def test_card_index_positions_are_clean(self):
-        mod = _load("sync_chronology_card_positions")
-        committed = CARD_INDEX.read_text(encoding="utf-8")
-        self.assertEqual(mod.synced_text(), committed,
-                         "chronology_card_index.tsv cascade_position column is "
-                         "stale; regenerate with "
-                         "tools/sync_chronology_card_positions.py")
-
-    def test_card_index_uses_cascade_position_column(self):
-        header = CARD_INDEX.read_text(encoding="utf-8").splitlines()[0]
-        self.assertIn("cascade_position", header.split("\t"))
-        self.assertNotIn("current_order", header.split("\t"))
+    def test_card_index_is_archival(self):
+        text = CARD_INDEX.read_text(encoding="utf-8")
+        first = text.splitlines()[0]
+        self.assertTrue(first.startswith("# ARCHIVE:"),
+                        "chronology_card_index.tsv must declare itself an "
+                        "experiment-time ARCHIVE")
+        header = next(line for line in text.splitlines()
+                      if not line.startswith("#"))
+        columns = header.split("\t")
+        self.assertNotIn("cascade_position", columns,
+                         "the archival card index must not mirror the live "
+                         "cascade position")
+        self.assertNotIn("current_order", columns)
 
 
 class RegistryModelResolutionTests(unittest.TestCase):
@@ -879,7 +880,6 @@ class EvidencePrerequisiteTests(unittest.TestCase):
         self.assertEqual(prereq_names, {
             "cascade_order_manifest.py",
             "generate_oe_sandbox.py",
-            "sync_chronology_card_positions.py",
         })
         for p in adj.MECHANICAL_PREREQS:
             self.assertTrue(p.is_file(), p)

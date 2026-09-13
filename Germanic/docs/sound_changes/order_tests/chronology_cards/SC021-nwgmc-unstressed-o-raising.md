@@ -1,7 +1,7 @@
 # SC021 retired NWGmc unstressed *o*-raising — chronology evidence card
 
-## Current position
-- current_order: `retired`
+## Position at experiment time
+- order_at_experiment_time: `retired`
 - former_rule_name: `PNWGmcUnstressedORaising`
 - successor rules: `SC071 OELateOShortening` → `SC099 OEMedUnstressedORaising` / `SC100 OEFinalUnstressedOLowering`
 - status: `adjudicated_retired`

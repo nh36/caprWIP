@@ -1,4 +1,4 @@
-# Chapter 2. From Proto-West Germanic to Anglo-Frisian
+# Chapter 3. From Proto-West Germanic to Anglo-Frisian
 
 ## Historical interval
 
@@ -72,7 +72,7 @@ seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest
 the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
 rules [@Crist2002, pp. 1, 4]. Earlier still, the consonant-stem root nouns
 had generalized endingless nominatives before Proto-West Germanic (SC096,
-Chapter 1). Later, and only in the north, `*z` was lost in stressed
+Chapter 2). Later, and only in the north, `*z` was lost in stressed
 monosyllables with compensatory lengthening (SC097, this chapter); the
 southern dialects instead retained and rhotacized it. The standard handbooks
 confirm the West Germanic deletion in general terms: Campbell notes that
@@ -108,15 +108,15 @@ monophthongization to precede OE interstress raising (SC036).
 
 The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
 separate and earlier Proto-Northwest Germanic change (SC014), discussed in
-Chapter 1; its corpus witnesses are the dative-singular endings of `span`
+Chapter 2; its corpus witnesses are the dative-singular endings of `span`
 ([spánnai]{.recon} 'span' > *spanne* 'span') and `meed` ([mízdai]{.recon}
 'meed' > *meorde* 'meed').
 
-### Anglo-Frisian brightening (SC043, treated in Chapter 3)
+### Anglo-Frisian brightening (SC043, treated in Chapter 4)
 
 The fronting of low `*a` to `*æ` outside nasal environments is the defining
 Anglo-Frisian change. It executes later in the cascade than the changes of
-this chapter, so its full section appears in Chapter 3; it is introduced here
+this chapter, so its full section appears in Chapter 4; it is introduced here
 because it anchors the "Anglo-Frisian" label that names this period. Campbell
 gives the classical statement: "By a very early change Prim. Gmc. `a > æ` in
 OE and OFris. when not followed by a nasal consonant"
@@ -139,7 +139,7 @@ exact geographical scope.
 
 The current CAPR inventory has this change labeled "Old English" in the pipeline
 taxonomy (no separate Anglo-Frisian bucket previously existed). The historical
-staging map places its section in Chapter 3, at its executable cascade position.
+staging map places its section in Chapter 4, at its executable cascade position.
 
 ## Cascade vs. historical order in this chapter
 

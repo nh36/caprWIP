@@ -1,7 +1,7 @@
 # SC101 EAF Long A Fronting — chronology evidence card
 
-## Current position
-- current_order: `28`
+## Position at experiment time
+- order_at_experiment_time: `28`
 - rule_name: `EAFLongAFronting`
 - former_rule_name: `none` (new identity from the SC024 split; the behavior was formerly telescoped inside one-step SC024)
 - safe computational window: bounded earlier by SC024 (feeding) and later by SC004 and SC056 (displacement-verified)

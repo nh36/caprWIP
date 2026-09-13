@@ -1,7 +1,7 @@
 # SC023 Proto-Germanic Word-Final N Loss — chronology evidence card
 
-## Current position
-- current_order: `23`
+## Position at experiment time
+- order_at_experiment_time: `23`
 - rule_name: `PNWGmcNStemNLoss` (stable executable identifier; not a stage claim)
 - former_rule_name: `NWGmcNStemNLoss`
 - canonical historical stage: `pgmc` (general (pre-)PGmc loss of word-final

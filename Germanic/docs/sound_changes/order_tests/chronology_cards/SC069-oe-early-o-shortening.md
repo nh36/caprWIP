@@ -1,7 +1,7 @@
 # SC069 OE Early O Shortening — chronology evidence card
 
-## Current position
-- current_order: `69`
+## Position at experiment time
+- order_at_experiment_time: `69`
 - rule_name: `OEEarlyOShortening`
 - safe computational window: `24-86` (later side runner-bounded)
 - status: `first_break_complete`

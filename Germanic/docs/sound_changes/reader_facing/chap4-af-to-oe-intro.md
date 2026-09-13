@@ -1,11 +1,11 @@
-# Chapter 3. From Anglo-Frisian to Old English
+# Chapter 4. From Anglo-Frisian to Old English
 
 ## Historical interval
 
 This chapter covers the sound changes that occurred within the Old English period:
 the changes that produced attested Old English from the prehistoric English forms
 that emerged from the Anglo-Frisian stage. The starting point is the end of the
-Anglo-Frisian changes of Chapter 2; the ending point is attested West Saxon Old
+Anglo-Frisian changes of Chapter 3; the ending point is attested West Saxon Old
 English, the primary dialect of the CAPR corpus.
 
 ## Scope and dialect variation
@@ -15,7 +15,7 @@ notably West Saxon palatal umlaut (SC060), the back-mutation rules (SC059), and
 the West Saxon diphthong chain (SC031–SC034) — are specifically West Saxon or
 more broadly southern Old English phenomena. (The West Saxon palatal-glide
 spellings, SC016, belong to the written surface of Old English and are treated
-in Chapter 4.)
+in Chapter 5.)
 
 The CAPR derivations target West Saxon Old English citation forms as the default
 comparator. Changes that belong to other dialects, or that are absent from West

@@ -61,10 +61,13 @@ ORDER_SUMMARIES = SC_DIR / "order_tests/summaries"
 SC_REGISTRY = REGISTRY_DIR / "sc_registry.tsv"
 INVENTORY_NOTES = REGISTRY_DIR / "sc_inventory_notes.tsv"
 EDGE_REGISTRY = REGISTRY_DIR / "chronology_edges.tsv"
+READER_CHAPTERS = REGISTRY_DIR / "reader_chapters.tsv"
+READER_FILES = REGISTRY_DIR / "reader_files.tsv"
 
 # The complete list of hand-edited inputs this generator may read. Guardrail
 # tests assert that no archived file can silently become a current-state input.
-DECLARED_INPUTS = (SC_REGISTRY, INVENTORY_NOTES, EDGE_REGISTRY)
+DECLARED_INPUTS = (SC_REGISTRY, INVENTORY_NOTES, EDGE_REGISTRY,
+                   READER_CHAPTERS, READER_FILES)
 
 ANNOTATIONS = REGISTRY_DIR / "sc_inventory_annotations.tsv"  # now GENERATED
 BASELINE_OUTPUTS = SC_DIR / "cascade_baseline/cascade_baseline_outputs.tsv"
@@ -77,6 +80,8 @@ LITERATURE_STATUS = {"unadjudicated": "not_started", "adjudicated": "adjudicated
 STAGING_VIEW = SC_DIR / "sound_change_historical_staging_map.tsv"
 INVENTORY_VIEW = SC_DIR / "sound_change_inventory.tsv"
 CURRENT_SC_STATE = REGISTRY_DIR / "current_sc_state.tsv"
+READER_MANIFEST = REGISTRY_DIR / "reader_manifest.tsv"
+CURRENT_CHRONOLOGY = REGISTRY_DIR / "current_chronology.tsv"
 EDGES_TSV = GRAPH_DIR / "first_break_edges.tsv"
 EDGES_JSON = GRAPH_DIR / "first_break_edges.json"
 EDGES_DOT = GRAPH_DIR / "first_break_edges.dot"
@@ -293,6 +298,10 @@ REGISTRY_FORBIDDEN_COLUMNS.update({
     "staging_order": "registry/archival_orders.tsv (ARCHIVE / FROZEN)",
     "inventory_order": "registry/archival_orders.tsv (ARCHIVE / FROZEN)",
     "current_order": "no such fact; executable order is oe_pipeline's",
+    "v1_chapter": "registry/reader_files.tsv (file -> chapter) via "
+                  "source_reader_facing_file",
+    "v1_reader_position": "GENERATED registry/reader_manifest.tsv "
+                          "(min cascade position per reader file)",
 })
 
 
@@ -419,9 +428,8 @@ def validate_registry(reg, edges):
 def build_staging_view(reg):
     header = [
         "sc_id", "fst_identifier", "display_name", "source_reader_facing_file",
-        "cascade_position", "hist_stage", "hist_scope", "v1_chapter",
-        "v1_reader_position", "confidence", "action_status", "capr_evidence",
-        "chronology_problem", "notes",
+        "cascade_position", "hist_stage", "hist_scope", "confidence",
+        "action_status", "capr_evidence", "chronology_problem", "notes",
     ]
     staged = [r for r in reg if r["staging_row"] == "yes"]
     position = {r["sc_id"]: oe_pipeline.cascade_position(r["fst_identifier"])
@@ -436,7 +444,7 @@ def build_staging_view(reg):
             r["sc_id"], r["fst_identifier"], r["display_name"],
             r["source_reader_facing_file"], str(position[r["sc_id"]]),
             r["hist_stage"],
-            r["hist_scope"], r["v1_chapter"], r["v1_reader_position"], r["confidence"],
+            r["hist_scope"], r["confidence"],
             r["action_status"], r["capr_evidence"], r["chronology_problem"],
             r["staging_notes"],
         ]
@@ -446,8 +454,149 @@ def build_staging_view(reg):
                "oe_pipeline (cascade_position, row order)") + [
         "Canonical SC-level historical staging map view for the Version 1 CAPR book.",
         "Rows are in executable cascade order (oe_pipeline).",
-        "Chapters: 1=PGmc→PNWGmc | 2=PNWGmc→PWGmc | 3=PWGmc→Anglo-Frisian | 4=Anglo-Frisian→OE",
+        "Book chapter/file order is the GENERATED registry/reader_manifest.tsv",
+        "(sources: registry/reader_chapters.tsv + reader_files.tsv + oe_pipeline).",
         "Confidence: A=secure | B=strong but analysis-dependent | C=genuinely unresolved",
+    ]
+    return tsv_text(b, header, rows)
+
+
+def read_reader_sources():
+    chapters = read_tsv(READER_CHAPTERS)
+    files = read_tsv(READER_FILES)
+    return chapters, files
+
+
+def build_reader_manifest(reg, chapters, files):
+    """The generated Version 1 book manifest: one row per reader-facing file,
+    in presentation order. Chapter membership is human (reader_files.tsv);
+    chapter metadata is human (reader_chapters.tsv); order inside a chapter is
+    DERIVED: files sort by the minimum cascade position of the SCs they
+    contain (sc_registry.tsv source_reader_facing_file + oe_pipeline)."""
+    errors = []
+    chapter_meta = {}
+    for c in chapters:
+        if c["chapter_id"] in chapter_meta:
+            errors.append(f"reader_chapters: duplicate chapter_id {c['chapter_id']}")
+        chapter_meta[c["chapter_id"]] = c
+        if not (SC_DIR / "reader_facing" / c["intro_file"]).is_file():
+            errors.append(f"reader_chapters: chapter {c['chapter_id']} intro "
+                          f"file missing: {c['intro_file']}")
+    file_chapter = {}
+    for f in files:
+        if f["reader_file"] in file_chapter:
+            errors.append(f"reader_files: duplicate reader_file {f['reader_file']}")
+        if f["chapter_id"] not in chapter_meta:
+            errors.append(f"reader_files: {f['reader_file']} names unknown "
+                          f"chapter_id {f['chapter_id']}")
+        file_chapter[f["reader_file"]] = f["chapter_id"]
+        if not (SC_DIR / "reader_facing" / f["reader_file"]).is_file():
+            errors.append(f"reader_files: missing reader file {f['reader_file']}")
+
+    staged = [r for r in reg if r["staging_row"] == "yes"]
+    per_file = {}
+    for r in staged:
+        fname = (r["source_reader_facing_file"] or "").strip()
+        if not fname:
+            errors.append(f"reader manifest: staged SC {r['sc_id']} has no "
+                          "source_reader_facing_file")
+            continue
+        if fname not in file_chapter:
+            errors.append(f"reader manifest: {r['sc_id']} names file {fname} "
+                          "absent from reader_files.tsv")
+            continue
+        pos = oe_pipeline.cascade_position(r["fst_identifier"])
+        if pos is None:
+            errors.append(f"reader manifest: staged SC {r['sc_id']} has no "
+                          "numbered cascade position")
+            continue
+        per_file.setdefault(fname, []).append((pos, r["sc_id"]))
+    unused = sorted(set(file_chapter) - set(per_file))
+    if unused:
+        errors.append(f"reader_files: files with no staged SC: {unused}")
+
+    chapter_order = [c["chapter_id"] for c in chapters]
+    ordered = sorted(
+        per_file.items(),
+        key=lambda kv: (chapter_order.index(file_chapter[kv[0]]),
+                        min(p for p, _ in kv[1])))
+    # Chapters must own contiguous cascade-position intervals, so ordering by
+    # (chapter, min position) is the same as ordering by min position alone.
+    mins = [min(p for p, _ in scs) for _, scs in ordered]
+    if mins != sorted(mins):
+        errors.append("reader manifest: chapter assignment breaks cascade "
+                      f"order (file min positions {mins})")
+    if len(mins) != len(set(mins)):
+        errors.append("reader manifest: two reader files share the same "
+                      "minimum cascade position")
+    prev_max = None
+    for cid in chapter_order:
+        pos_in_ch = [p for fname, scs in per_file.items()
+                     if file_chapter[fname] == cid for p, _ in scs]
+        if not pos_in_ch:
+            errors.append(f"reader manifest: chapter {cid} has no positioned SCs")
+            continue
+        if prev_max is not None and min(pos_in_ch) <= prev_max:
+            errors.append(f"reader manifest: chapter {cid} overlaps the "
+                          "previous chapter's cascade positions")
+        prev_max = max(pos_in_ch)
+    if errors:
+        for e in errors:
+            print(f"READER CONFIG ERROR: {e}", file=sys.stderr)
+        raise SystemExit(1)
+
+    header = ["reader_order", "chapter_id", "chapter_title", "reader_file",
+              "sc_ids", "min_cascade_position"]
+    rows = []
+    for i, (fname, scs) in enumerate(ordered, start=1):
+        cid = file_chapter[fname]
+        sc_ids = ";".join(sc for _, sc in sorted(scs))
+        rows.append([str(i), cid, chapter_meta[cid]["title"], fname,
+                     sc_ids, str(min(p for p, _ in scs))])
+    b = banner("registry/reader_chapters.tsv + registry/reader_files.tsv "
+               "(editorial) + registry/sc_registry.tsv + oe_pipeline "
+               "(cascade positions)") + [
+        "Version 1 book manifest: reader-facing files in presentation order.",
+        "File order inside a chapter is DERIVED from the minimum executable",
+        "cascade position of the SCs each file contains; never edit order here.",
+        "The book builder (Germanic/tools/build_reader_book.py) consumes this",
+        "manifest and contains no file list of its own.",
+    ]
+    return tsv_text(b, header, rows)
+
+
+def build_current_chronology(reg, edges):
+    """Generated current chronology view: the scholarly edge registry joined
+    with today's executable positions. Replaces the retired live position
+    column of the archival chronology card index."""
+    ident_of = {r["sc_id"]: (r.get("fst_identifier") or "").strip() for r in reg}
+
+    def position(change_id):
+        ident = ident_of.get(change_id, change_id)
+        if not ident:
+            return ""
+        try:
+            pos = oe_pipeline.cascade_position(ident)
+        except KeyError:
+            return ""
+        return "" if pos is None else str(pos)
+
+    header = ["source_change_id", "target_change_id", "relation_type",
+              "direction_basis", "evidence_basis", "witness_role",
+              "source_cascade_position", "target_cascade_position"]
+    rows = [
+        [e["source_change_id"], e["target_change_id"], e["relation_type"],
+         e["direction_basis"], e["evidence_basis"], e["witness_role"],
+         position(e["source_change_id"]), position(e["target_change_id"])]
+        for e in edges
+    ]
+    b = banner("registry/chronology_edges.tsv (scholarly relations) + "
+               "registry/sc_registry.tsv + oe_pipeline (current positions)") + [
+        "Current chronology view. Edge semantics are owned by",
+        "chronology_edges.tsv; positions are DERIVED from germanic.txt and go",
+        "stale the moment the cascade changes; regenerate, never edit.",
+        "Archived first-break experiments live in order_tests/chronology_cards/",
+        "(frozen in their original experiment order space).",
     ]
     return tsv_text(b, header, rows)
 
@@ -790,6 +939,7 @@ def build_all():
     reg = read_tsv(SC_REGISTRY)
     notes = read_tsv(INVENTORY_NOTES)
     edges = read_tsv(EDGE_REGISTRY)
+    chapters, files = read_reader_sources()
     errors = validate_registry(reg, edges)
     errors += validate_human_sources(notes)
     if errors:
@@ -801,6 +951,8 @@ def build_all():
         ANNOTATIONS: build_annotations_view(ann_rows),
         CURRENT_SC_STATE: build_current_sc_state(reg),
         STAGING_VIEW: build_staging_view(reg),
+        READER_MANIFEST: build_reader_manifest(reg, chapters, files),
+        CURRENT_CHRONOLOGY: build_current_chronology(reg, edges),
         INVENTORY_VIEW: build_inventory_view(reg, ann_rows),
         EDGES_TSV: build_edges_tsv(edges),
         EDGES_JSON: build_edges_json(reg, edges),

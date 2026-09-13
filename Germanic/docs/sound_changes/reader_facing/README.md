@@ -284,11 +284,12 @@ This writes:
 - `reader_facing_local_section_19.md`
 - `reader_facing_local_section_19.pdf`
 
-To extend the same ordered section with the three-way split of the final
-\emph{*z} developments — adding root-noun nominative \emph{*-z} loss (SC096)
-and northern monosyllabic final \emph{*z}-loss (SC097) around the narrowed
-West Germanic final \emph{*z}-deletion (SC020), and moving \emph{lþ}-voicing
-(SC012) to its Chapter 3 registry position — use:
+The current book section is assembled from the generated
+`registry/reader_manifest.tsv` (chapters and file order derived from
+`registry/reader_chapters.tsv`, `registry/reader_files.tsv`, the SC registry,
+and the executable cascade — no hand-typed file list). To run the checkers,
+rebuild the assembled Markdown with `Germanic/tools/build_reader_book.py`,
+and render the PDF, use:
 
 ```bash
 bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh

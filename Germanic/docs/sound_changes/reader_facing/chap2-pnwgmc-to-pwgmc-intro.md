@@ -1,4 +1,4 @@
-# Chapter 1. From Proto-Northwest Germanic to Proto-West Germanic
+# Chapter 2. From Proto-Northwest Germanic to Proto-West Germanic
 
 ## Historical interval
 
@@ -35,7 +35,7 @@ generalization of endingless nominatives through the athematic consonant
 stems, complete before Proto-West Germanic: none of the West Germanic
 daughters shows any ending in this class [@RingeTaylor2014, p. 118]. It is
 the earliest of the three historically distinct final-`*z` developments; the
-other two (SC020 and SC097) open Chapter 2.
+other two (SC020 and SC097) open Chapter 3.
 
 The unstressed `*ai > *ē` development (SC014) represents one of the most
 pervasive shared NW–West Germanic vowel shifts, turning unstressed endings
@@ -44,7 +44,7 @@ Ringe and Taylor treat this as one of the clearest post-PNWGmc shared
 developments [@RingeTaylor2014, pp. 40--41]; Fulk groups it among the
 North/West-Germanic shared innovations that distinguish the period from
 Gothic [@Fulk2018, §5.2]. The corresponding stressed monophthongization
-(SC004) belongs later in the cascade and is treated in Chapter 2.
+(SC004) belongs later in the cascade and is treated in Chapter 3.
 
 The West Germanic consonant changes of this chapter — j-gemination (SC010),
 early i-apocope (SC006), coronal-w assimilation (SC008), and related rules —
@@ -53,7 +53,7 @@ They feed a large proportion of the distinctive consonant clusters of Old
 English. Handbooks vary in exactly how they group and name these changes
 [@Campbell1959, §§ 404, 406; @Hogg1992, §7.1].
 
-The nasal spirant corridor (SC026–SC027), treated in Chapter 2 at its cascade
+The nasal spirant corridor (SC026–SC027), treated in Chapter 3 at its cascade
 position, illustrates a type of change common
 in historical grammars of the "Ingvaeonic" or "North Sea Germanic" area:
 nasals disappear before voiceless fricatives, with compensatory vowel
@@ -66,11 +66,11 @@ Chapters in this part of the book follow the executable cascade order, which
 models the reconstructed chronology itself. Several rules that carry `PWGmc`
 labels — final bare-`*a` loss (SC041), surviving bimoric `*ō` unrounding
 (SC042), and Sievers-law syncope (SC050) — execute later in the cascade and
-are therefore presented in Chapter 3, where their individual sections discuss
+are therefore presented in Chapter 4, where their individual sections discuss
 their historical stage labels. Conversely, one rule with a West Saxon label,
-the palatal-glide rule (SC016), executes early and is presented in this
-chapter; its section notes the mismatch, which will be resolved in a later
-renaming pass.
+the palatal-glide rule (SC016), is an orthographic rule of the written surface:
+it executes after the Old English orthography stage and is presented in
+Chapter 5.
 
 One historically Proto-Germanic change, Gm-simplification
 (`SC002 PGmcGmSimplification`), precedes everything in this chapter as a

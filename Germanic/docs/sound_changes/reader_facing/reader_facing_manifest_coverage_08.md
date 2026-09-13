@@ -3,7 +3,7 @@
 ## Inputs
 
 1. `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`
-2. `Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh`
+2. `Germanic/docs/sound_changes/registry/reader_manifest.tsv`
 
 ## Manifest rows covered by reader-facing chapters
 
@@ -27,11 +27,11 @@
 | `022` Mn dissimilation note | `SC022` | `022-mn-dissimilation.md` | yes |
 | `023` Word-final n-loss note | `SC023` | `023-n-stem-n-loss.md` | yes |
 | `024` Long e-lowering note | `SC024` | `024-long-e-lowering.md` | yes |
-| `025` Long e nasal-rounding note | `SC025` | `025-long-e-nasal-rounding.md` | yes |
+| `025` Long e nasal-rounding note | `SC025` | `025-long-a-nasal-rounding.md` | yes |
 | `026-027` Nasal spirant corridor | `SC026;SC027` | `026-027-nasal-spirant-changes.md` | yes |
 | `028` Preconsonantal x-loss note | `SC028` | `028-preconsonantal-x-loss.md` | yes |
 | `029-030` Awj glide and au-fronting core | `SC029;SC030` | `029-030-awj-glide-and-au-fronting.md` | yes |
-| `031-034` West Saxon diphthong chain | `SC031;SC032;SC033;SC034` | `031-034-west-saxon-diphthong-chain.md` | yes |
+| `031-034` West Saxon diphthong chain | `SC031;SC032;SC033;SC034` | `033-long-eow-diphthong.md`, `031-ww-simplification.md`, `032-diphthong-leveling.md`, `034-long-eaw-diphthong.md` | yes |
 | `035-037` Prefix and compound adjustments | `SC035;SC036;SC037` | `035-037-prefix-and-compound-adjustments.md` | yes |
 | `039-040` Medial unstressed vowel core | `SC039;SC040` | `039-040-medial-unstressed-vowel-changes.md` | yes |
 | `041` Final bare-a loss note | `SC041` | `041-final-bare-a-loss.md` | yes |
@@ -65,7 +65,7 @@
 
 ## SC numbers covered by reader-facing rule sections
 
-`SC096`, `SC014`, `SC015`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, `SC013`, `SC017`, `SC018`, `SC019`, `SC020`, `SC098`, `SC097`, `SC003`, `SC022`, `SC023`, `SC024`, `SC025`, `SC026`, `SC027`, `SC028`, `SC004`, `SC029`, `SC030`, `SC031`, `SC032`, `SC033`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`, `SC041`, `SC042`, `SC043`, `SC044`, `SC045`, `SC046`, `SC047`, `SC048`, `SC049`, `SC050`, `SC051`, `SC052`, `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC099`, `SC100`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`, `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`, `SC016`
+`SC103`, `SC096`, `SC014`, `SC015`, `SC005`, `SC024`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC028`, `SC012`, `SC013`, `SC017`, `SC018`, `SC019`, `SC020`, `SC098`, `SC097`, `SC003`, `SC022`, `SC023`, `SC026`, `SC027`, `SC102`, `SC025`, `SC104`, `SC101`, `SC004`, `SC029`, `SC030`, `SC033`, `SC031`, `SC032`, `SC034`, `SC035`, `SC036`, `SC037`, `SC039`, `SC040`, `SC041`, `SC042`, `SC043`, `SC044`, `SC045`, `SC046`, `SC047`, `SC048`, `SC049`, `SC050`, `SC051`, `SC052`, `SC053`, `SC054`, `SC055`, `SC056`, `SC057`, `SC059`, `SC060`, `SC061`, `SC063`, `SC064`, `SC065`, `SC066`, `SC067`, `SC068`, `SC069`, `SC070`, `SC071`, `SC099`, `SC100`, `SC072`, `SC073`, `SC074`, `SC075`, `SC076`, `SC078`, `SC079`, `SC080`, `SC081`, `SC082`, `SC083`, `SC085`, `SC086`, `SC087`, `SC016`
 
 ## Manifest rows not yet covered
 
@@ -78,7 +78,7 @@
 
 ## Reader-facing rule headings not present in the manifest
 
-`SC096`, `SC097`, `SC098`, `SC099`, `SC100`
+`SC096`, `SC097`, `SC098`, `SC099`, `SC100`, `SC101`, `SC102`, `SC103`, `SC104`
 
 ## Expected gaps in the manifest-backed sequence
 

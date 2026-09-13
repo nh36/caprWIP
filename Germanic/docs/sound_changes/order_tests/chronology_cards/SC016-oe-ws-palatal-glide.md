@@ -14,8 +14,8 @@ clause; it does not describe a historical relation. The supported
 historical edge is **SC017 < SC016** (feeding, witnessed by yoke).
 The pilot data are retained below as a historical record.
 
-## Current position
-- current_order: `16`
+## Position at experiment time
+- order_at_experiment_time: `16`
 - rule_name: `OEWsPalatalGlide`
 - safe computational window: `13-16` (earlier side runner-bounded)
 - status: `first_break_complete`

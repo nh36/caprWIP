@@ -1,7 +1,7 @@
 # SC102 EAF Hiatus W Insertion — chronology evidence card
 
-## Current position
-- current_order: `26`
+## Position at experiment time
+- order_at_experiment_time: `26`
 - rule_name: `EAFHiatusWInsertion`
 - former_rule_name: `none` (new identity from the sow/lǣwan follow-up to the *ē₁-complex adjudication)
 - safe computational window: bounded earlier by SC024 (feeding); later side historically asserted (before SC101) but executably commuting

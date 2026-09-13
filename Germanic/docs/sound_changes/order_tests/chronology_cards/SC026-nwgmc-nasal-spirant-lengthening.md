@@ -11,8 +11,8 @@
 > historical sound change.
 
 
-## Current position
-- current_order: `26`
+## Position at experiment time
+- order_at_experiment_time: `26`
 - rule_name: `EAFNasalSpirantLengthening`
 - former_rule_name: `NWGmcNasalSpirantLengthening`
 - safe computational window: `13-26` (earlier side runner-bounded)

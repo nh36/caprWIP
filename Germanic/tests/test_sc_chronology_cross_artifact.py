@@ -15,7 +15,7 @@ Run: cd Germanic/tests && python3 -m unittest test_sc_chronology_cross_artifact
 
 import csv
 import io
-import re
+
 import unittest
 from pathlib import Path
 
@@ -109,13 +109,18 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
     (sub)chapter presentation order NECESSARILY matches the executable cascade
     order recorded in cascade_order_manifest.tsv.
 
-    Chapter assignment is by contiguous manifest-position intervals; subchapter
-    files are ordered by the minimum manifest position of the SCs they contain
-    (a file may bundle several adjacent SCs). FST identifier names are historic
-    residue and carry no ordering authority."""
+    The generated registry/reader_manifest.tsv is the projection under test:
+    it is built from reader_chapters.tsv + reader_files.tsv (SOURCE, no order
+    columns) + sc_registry + oe_pipeline, and its freshness is already
+    enforced by test_registry_consolidation.GeneratedViewTests. Here we check
+    the projected invariants and that no hand-typed file list survives in the
+    build wrapper or builder."""
 
-    BUILD_SCRIPT = (SC_DIR / "reader_facing"
-                    / "build_reader_facing_local_section_20_docker.sh")
+    READER_MANIFEST = SC_DIR / "registry" / "reader_manifest.tsv"
+    READER_FILES = SC_DIR / "registry" / "reader_files.tsv"
+    BUILD_WRAPPER = (SC_DIR / "reader_facing"
+                     / "build_reader_facing_local_section_20_docker.sh")
+    BUILDER = SC_DIR.parents[1] / "tools" / "build_reader_book.py"
 
     @classmethod
     def setUpClass(cls):
@@ -128,22 +133,10 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
         cls.manifest = {r["foma_identifier"]: int(r["position"])
                         for r in csv.DictReader(io.StringIO("\n".join(mlines)),
                                                 delimiter="\t")}
-        # file -> (chapter, min reader position, min manifest position)
-        files = {}
-        for r in cls.staging_rows:
-            fst = r["fst_identifier"].strip()
-            cls_pos = cls.manifest.get(fst)
-            key = r["source_reader_facing_file"].strip()
-            ch = int(r["v1_chapter"])
-            rp = int(r["v1_reader_position"])
-            ent = files.setdefault(key, {"chapter": ch, "reader": rp,
-                                         "manifest": cls_pos,
-                                         "positions": []})
-            ent["chapter"] = min(ent["chapter"], ch)
-            ent["reader"] = min(ent["reader"], rp)
-            ent["manifest"] = min(ent["manifest"], cls_pos)
-            ent["positions"].append(cls_pos)
-        cls.files = files
+        rlines = [ln for ln in cls.READER_MANIFEST.read_text(
+                      encoding="utf-8").splitlines() if not ln.startswith("#")]
+        cls.reader_rows = list(csv.DictReader(io.StringIO("\n".join(rlines)),
+                                              delimiter="\t"))
 
     def test_every_staged_rule_has_a_manifest_position(self):
         for r in self.staging_rows:
@@ -157,43 +150,69 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
             self.assertEqual(int(r["cascade_position"]), self.manifest[fst],
                              f"{r['sc_id']}: stale cascade_position")
 
-    def test_subchapter_order_is_manifest_order(self):
-        """Files sorted by (chapter, reader position) must be strictly
-        increasing in minimum manifest position: book order == cascade order."""
-        ordered = sorted(self.files.values(),
-                         key=lambda e: (e["chapter"], e["reader"]))
-        mins = [e["manifest"] for e in ordered]
+    def test_reader_manifest_order_is_cascade_order(self):
+        """reader_manifest rows (already in book order) must be strictly
+        increasing in minimum cascade position: book order == cascade order."""
+        orders = [int(r["reader_order"]) for r in self.reader_rows]
+        self.assertEqual(orders, list(range(1, len(orders) + 1)),
+                         "reader_order is not 1..N")
+        mins = [int(r["min_cascade_position"]) for r in self.reader_rows]
         self.assertEqual(mins, sorted(mins),
-                         "subchapter file order does not follow the cascade "
+                         "reader file order does not follow the cascade "
                          f"manifest: {mins}")
         self.assertEqual(len(mins), len(set(mins)),
-                         "two subchapter files claim the same minimum "
-                         "manifest position")
+                         "two reader files claim the same minimum "
+                         "cascade position")
 
-    def test_chapters_are_contiguous_manifest_intervals(self):
-        """Every chapter must own a contiguous block of manifest positions:
+    def test_chapters_are_contiguous_cascade_intervals(self):
+        """Every chapter must own a contiguous block of cascade positions:
         the maximum position in chapter N is below the minimum in chapter N+1."""
+        pos_by_sc = {}
+        for r in self.staging_rows:
+            pos_by_sc[r["sc_id"]] = int(r["cascade_position"])
         by_ch = {}
-        for e in self.files.values():
-            by_ch.setdefault(e["chapter"], []).extend(e["positions"])
+        for r in self.reader_rows:
+            ch = int(r["chapter_id"])
+            for sc in r["sc_ids"].split(";"):
+                by_ch.setdefault(ch, []).append(pos_by_sc[sc])
         chapters = sorted(by_ch)
         self.assertEqual(chapters, list(range(1, len(chapters) + 1)),
                          "chapter numbers are not 1..N")
         for a, b in zip(chapters, chapters[1:]):
             self.assertLess(max(by_ch[a]), min(by_ch[b]),
-                            f"chapters {a} and {b} overlap in manifest positions")
+                            f"chapters {a} and {b} overlap in cascade positions")
 
-    def test_build_script_file_order_matches_staging_map(self):
-        """The section-20 build script's chapter_files list must equal the
-        staging map's file order, so the rendered book cannot drift from the
-        cascade."""
-        text = self.BUILD_SCRIPT.read_text(encoding="utf-8")
-        m = re.search(r"chapter_files = \[(.*?)\n\]", text, re.S)
-        self.assertIsNotNone(m, "chapter_files list not found in build script")
-        script_files = re.findall(r'"([^"]+\.md)"', m.group(1))
-        staging_files = [k for k, _ in sorted(
-            self.files.items(), key=lambda kv: (kv[1]["chapter"], kv[1]["reader"]))]
-        self.assertEqual(script_files, staging_files)
+    def test_every_staged_sc_appears_in_exactly_one_manifest_row(self):
+        seen = {}
+        for r in self.reader_rows:
+            for sc in r["sc_ids"].split(";"):
+                self.assertNotIn(sc, seen,
+                                 f"{sc} appears in two reader manifest rows")
+                seen[sc] = r["reader_file"]
+        staged = {r["sc_id"] for r in self.staging_rows}
+        self.assertEqual(set(seen), staged,
+                         "reader manifest SC coverage differs from the "
+                         "staging view")
+
+    def test_reader_files_source_carries_no_order_column(self):
+        header = next(ln for ln in self.READER_FILES.read_text(
+            encoding="utf-8").splitlines() if not ln.startswith("#"))
+        for col in header.split("\t"):
+            self.assertNotIn("order", col,
+                             "reader_files.tsv must not carry an order "
+                             "column: book order is derived from the cascade")
+            self.assertNotIn("position", col)
+
+    def test_no_hand_typed_chapter_file_list_survives(self):
+        """Neither the build wrapper nor the builder may embed a literal
+        chapter_files list; the generated reader manifest is the only order."""
+        for path in (self.BUILD_WRAPPER, self.BUILDER):
+            text = path.read_text(encoding="utf-8")
+            self.assertNotIn("chapter_files = [", text,
+                             f"{path.name} embeds a hand-typed file list")
+        self.assertIn("reader_manifest.tsv",
+                      self.BUILDER.read_text(encoding="utf-8"),
+                      "builder does not read the generated reader manifest")
 
 
 if __name__ == "__main__":

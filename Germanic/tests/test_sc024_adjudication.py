@@ -648,10 +648,11 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
                                  f"{path.name} still claims the *w "
                                  "restriction is unencoded")
 
-    def test_card_index_orders_match_the_cascade_manifest(self):
+    def test_card_index_rows_exist_for_the_adjudicated_changes(self):
         """Mechanical consistency for the four adjudicated rows. The registry
-        itself stores no positions (oe_pipeline is the order authority); the
-        card index's live position column is checked until it is archived."""
+        stores no positions and the card index is an experiment-time ARCHIVE
+        (oe_pipeline is the sole order authority), so only identity and
+        archival membership are checked here."""
         manifest = {r["foma_identifier"]: r["position"] for r in _tsv_rows(MANIFEST)}
         registry = {r["sc_id"]: r for r in _tsv_rows(REGISTRY)}
         index = {r["change_id"]: r
@@ -660,9 +661,9 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             fst = registry[sc_id]["fst_identifier"]
             self.assertIn(fst, manifest,
                           f"{sc_id}: rule missing from the cascade manifest")
-            self.assertEqual(index[sc_id]["cascade_position"], manifest[fst],
-                             f"{sc_id}: chronology card index order is stale "
-                             "against the cascade manifest")
+            self.assertIn(sc_id, index,
+                          f"{sc_id}: missing from the archival chronology "
+                          "card index")
 
     def test_chronology_cards_exist_for_all_four(self):
         for fname in ("SC024-nwgmc-long-e-lowering.md",

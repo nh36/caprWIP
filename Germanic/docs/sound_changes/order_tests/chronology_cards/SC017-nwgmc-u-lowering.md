@@ -11,8 +11,8 @@ written-surface block. SC017's formulation was confirmed unchanged. The
 later boundary against SC019 (nose/shovel/sorrow) remains valid. The
 pilot data are retained below as a historical record.
 
-## Current position
-- current_order: `17`
+## Position at experiment time
+- order_at_experiment_time: `17`
 - rule_name: `PNWGmcULowering`
 - former_rule_name: `NWGmcULowering`
 - safe computational window: `17-18`

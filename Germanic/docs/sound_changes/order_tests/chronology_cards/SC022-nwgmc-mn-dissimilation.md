@@ -1,7 +1,7 @@
 # SC022 Common Germanic Mn Dissimilation — chronology evidence card
 
-## Current position
-- current_order: `22`
+## Position at experiment time
+- order_at_experiment_time: `22`
 - rule_name: `PNWGmcMnDissimilation`
 - former_rule_name: `NWGmcMnDissimilation`
 - safe computational window: `13-86` (earlier side runner-limited; later side boundary-limited)

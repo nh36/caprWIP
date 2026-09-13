@@ -82,7 +82,6 @@ CHAINED_BUILDERS = (
     # Executable-order projections of the shared model (oe_pipeline):
     REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
     REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
-    REPO_ROOT / "Germanic/tools/sync_chronology_card_positions.py",
     # Reads the committed full trace report; fails closed if that runtime
     # evidence is stale (run --evidence first).
     REPO_ROOT / "Germanic/tools/rule_coverage_census.py",
@@ -101,17 +100,14 @@ CHAINED_BUILDERS = (
 GENERATED_CHECKS = (
     ("cascade_order_manifest.py", ["--check"]),
     ("generate_oe_sandbox.py", ["--check"]),
-    ("sync_chronology_card_positions.py", ["--check"]),
 )
 
 # Purely mechanical prerequisites for runtime evidence, regenerated
 # automatically by --evidence before compiling (executable manifests,
-# generated sandbox, card positions). Never touches scientific SOURCE
-# metadata.
+# generated sandbox). Never touches scientific SOURCE metadata.
 MECHANICAL_PREREQS = (
     REPO_ROOT / "Germanic/tools/cascade_order_manifest.py",
     REPO_ROOT / "Germanic/tools/generate_oe_sandbox.py",
-    REPO_ROOT / "Germanic/tools/sync_chronology_card_positions.py",
 )
 
 # Canonical directories in which bare-filename registry pointers may live.

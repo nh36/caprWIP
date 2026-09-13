@@ -1,7 +1,7 @@
 # SC061 OE Weak Tail Nasal Loss — chronology evidence card
 
-## Current position
-- current_order: `61`
+## Position at experiment time
+- order_at_experiment_time: `61`
 - rule_name: `OEWeakTailNasalLoss`
 - safe computational window: `24-86` (later side runner-bounded)
 - status: `first_break_complete`

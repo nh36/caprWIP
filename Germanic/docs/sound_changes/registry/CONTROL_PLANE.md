@@ -13,8 +13,10 @@ are GENERATED or ARCHIVE.
 
 | File | Kind | Owns |
 |---|---|---|
-| `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, reader-facing placement, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). It carries NO order-valued columns: executable positions are derived at read time from the executable model (`tools/oe_pipeline.py`) and published in the generated `registry/current_sc_state.tsv`; the legacy inventory/staging order spaces are frozen in `registry/archival_orders.tsv` (ARCHIVE) |
+| `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). It carries NO order-valued columns: executable positions are derived at read time from the executable model (`tools/oe_pipeline.py`) and published in the generated `registry/current_sc_state.tsv`; the legacy inventory/staging order spaces are frozen in `registry/archival_orders.tsv` (ARCHIVE) |
 | `registry/chronology_edges.tsv` | machine-state | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
+| `registry/reader_chapters.tsv` | machine-state | Reader book chapters: chapter id, title, intro file. Chapter order is the chapter id |
+| `registry/reader_files.tsv` | machine-state | Reader file -> chapter assignment (one row per reader-facing chapter file; no order column — book order is derived from cascade position) |
 | `registry/sc_inventory_notes.tsv` | source | HUMAN JUDGEMENTS ONLY: plain-language draft descriptions, order-sensitivity classification, editorial `illustrative_lexemes`, notes, review flags |
 | `registry/sc_inventory_annotations.tsv` | GENERATED | Projection joining the two human sources with `germanic.txt` (definition text, stable anchor) and the coverage census (`firing_count`, `firing_lexemes`). Never hand-edit |
 | `Germanic/fsts/germanic.txt` | machine-state | Executable rule semantics and cascade composition |
@@ -36,12 +38,15 @@ filename guessing), and a test requires every pointer to resolve.
 | File | Source |
 |---|---|
 | `registry/current_sc_state.tsv` | sc_registry + oe_pipeline (the ONLY current-position table) |
+| `registry/reader_manifest.tsv` | reader_chapters + reader_files + sc_registry + oe_pipeline (book order = min cascade position per file; chapters must be contiguous) |
+| `registry/current_chronology.tsv` | chronology_edges + sc_registry + oe_pipeline (edges projected onto current cascade positions) |
 | `sound_change_historical_staging_map.tsv` | sc_registry + oe_pipeline (row order and `cascade_position`) |
 | `sound_change_inventory.tsv` | sc_registry + annotations |
 | `order_tests/chronology_graph/first_break_edges.{tsv,json,dot}` | chronology_edges (+ registry for node metadata) |
 | `order_tests/chronology_graph/first_break_nodes.tsv` | sc_registry |
 | `order_tests/chronology_graph/first_break_graph_summary.md` | both registries |
 | `registry/settled_verdicts.md` | sc_registry |
+| `reader_facing/reader_facing_local_section_20.md`, `reader_facing/reader_facing_manifest_coverage_08.md` | `tools/build_reader_book.py` (reader_manifest + reader_chapters + chapter files) |
 
 Chained generators (always rebuilt by `--finalize`; deterministic and safe
 to run unconditionally):
@@ -50,7 +55,6 @@ to run unconditionally):
 |---|---|
 | `cascade_baseline/cascade_order_manifest.tsv`, `cascade_baseline/executable_model.tsv` | `tools/cascade_order_manifest.py` |
 | `Germanic/fsts/old_english_sandbox.txt` | `tools/generate_oe_sandbox.py` |
-| `chronology_card_index.tsv` `cascade_position` column | `tools/sync_chronology_card_positions.py` |
 | `cascade_baseline/rule_coverage_census.tsv` | `tools/rule_coverage_census.py` (fails closed if the canonical trace evidence is stale — run `--evidence` first) |
 
 ## ARCHIVE / RECORD (historical; never current authority)
@@ -84,7 +88,7 @@ to run unconditionally):
 - `sound_changes/archive/next_batch_candidates.tsv` — retired candidate board; the registry owns lifecycle/candidate status
 - `audits/sc001-sc020-chronology-audit.tsv` — the frozen SC001-SC020 audit matrix (see position-field semantics above)
 - `order_tests/chronology_cards/*.md` and `chronology_cards/chronology_graph_nodes.tsv` — per-SC evidence records from past audits; cite but do not treat their metadata as current
-- `chronology_card_index.tsv` — record of the card set (read by the book pipeline; id set only)
+- `chronology_card_index.tsv` — ARCHIVE record of the card set at experiment time (banner comment in the file; no live position column; the book pipeline reads its id set only)
 
 ## Standard workflow for one SC adjudication
 

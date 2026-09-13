@@ -1,7 +1,7 @@
 # SC028 Northern West Germanic *xs-Cluster Simplification — chronology evidence card
 
-## Current position
-- current_order: `28`
+## Position at experiment time
+- order_at_experiment_time: `28`
 - rule_name: `PNWGmcPreconsonantalXLoss`
 - former_rule_name: `NWGmcPreconsonantalXLoss`
 - safe computational window: `13-86` (earlier side runner-limited; later side boundary-limited)

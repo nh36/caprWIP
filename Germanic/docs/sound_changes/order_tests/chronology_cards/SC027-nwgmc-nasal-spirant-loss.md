@@ -11,8 +11,8 @@
 > historical sound change.
 
 
-## Current position
-- current_order: `27`
+## Position at experiment time
+- order_at_experiment_time: `27`
 - rule_name: `EAFNasalSpirantLoss`
 - former_rule_name: `NWGmcNasalSpirantLoss`
 - safe computational window: `27-86` (later side boundary-limited)
