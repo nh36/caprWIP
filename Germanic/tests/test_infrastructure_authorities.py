@@ -931,6 +931,67 @@ class ArtifactGraphTests(unittest.TestCase):
                 problems.extend(node.verify())
         self.assertEqual(problems, [])
 
+    def test_declared_outputs_cover_every_node(self):
+        """artifact_graph.declared_outputs() is the machine-readable
+        declaration of which files each node owns."""
+        ag = _load("artifact_graph")
+        outs = ag.declared_outputs()
+        self.assertEqual(set(outs), set(self.REQUIRED_NODES))
+        for name, paths in outs.items():
+            self.assertTrue(paths, f"node {name} declares no outputs")
+
+    def test_archives_are_never_node_outputs(self):
+        """ARCHIVE artifacts are frozen records: no refresh/build path may
+        own them, so they can never be silently rewritten."""
+        ag = _load("artifact_graph")
+        archives = set(ag.ARCHIVE_PATHS)
+        for path in archives:
+            self.assertTrue(path.is_file(),
+                            f"declared ARCHIVE file missing: {path}")
+        owned = {p for paths in ag.declared_outputs().values()
+                 for p in paths}
+        self.assertEqual(sorted(archives & owned), [],
+                         "an ARCHIVE artifact appears among graph node "
+                         "outputs; archives must stay frozen")
+
+
+class PositionPinGuardrailTests(unittest.TestCase):
+    """No live test may pin an absolute executable cascade position.
+
+    Executable positions are derived state owned by oe_pipeline; live tests
+    assert identity, relative order, and adjacency instead, so a legitimate
+    rule move never breaks an unrelated test.  Frozen archival order spaces
+    (`inventory_order`, archival_orders.tsv) are exempt: they are records of
+    past experiments, not claims about the live cascade, and are therefore
+    deliberately not matched by these patterns."""
+
+    FORBIDDEN = tuple(
+        (label, re.compile(pattern)) for label, pattern in (
+            ("positions.get(...) pinned to a literal",
+             r"positions\.get\([^)]*\)\s*(?:==|,)\s*[\"']?\d"),
+            ("positions[...] pinned to a literal",
+             r"positions\[[^\]]+\]\s*(?:==|,)\s*[\"']?\d"),
+            ("cascade_position field pinned to a literal",
+             r"\[[\"'](?:current_)?cascade_position[\"']\]\s*(?:==|,)\s*[\"']?\d"),
+            ("exec_index(...) pinned to a literal",
+             r"exec_index\([^)]*\)\s*(?:==|,)\s*\d"),
+            ("cascade_position(...) pinned to a literal",
+             r"cascade_position\([^)]*\)\s*(?:==|,)\s*\d"),
+        ))
+
+    def test_no_live_absolute_position_pins_in_the_suite(self):
+        offenders = []
+        for path in sorted((REPO_ROOT / "Germanic/tests").glob("test_*.py")):
+            for lineno, line in enumerate(
+                    path.read_text(encoding="utf-8").splitlines(), 1):
+                for label, pattern in self.FORBIDDEN:
+                    if pattern.search(line):
+                        offenders.append(
+                            f"{path.name}:{lineno}: {label}: {line.strip()}")
+        self.assertEqual(offenders, [],
+                         "live tests must assert identity/order/adjacency, "
+                         "not absolute cascade positions")
+
 
 class CurrentStateFingerprintTests(unittest.TestCase):
     """CURRENT_STATE.md must advertise the canonical current baseline."""
@@ -1020,21 +1081,25 @@ class CensusRegistryIdentityTests(unittest.TestCase):
                          f"rule_source_anchor: {offenders}")
 
     def test_census_scope_is_the_numbered_cascade(self):
-        """Every census row has a numbered cascade position; SC002 (the
-        pre-cascade prelude stage PGmcGmSimplification) is deliberately out
-        of scope even though it has a registry fst_identifier."""
+        """Every census row has a numbered cascade position taken from the
+        executable model by identity; SC002 (the pre-cascade prelude stage
+        PGmcGmSimplification) is deliberately out of scope even though it has
+        a registry fst_identifier."""
         rows = {r["sc_id"]: r for r in self.census.build_rows()}
         self.assertNotIn("SC002", rows)
         positions = [int(r["cascade_position"]) for r in rows.values()]
         self.assertTrue(positions and all(p >= 1 for p in positions))
         self.assertIn("SC088", rows)
         self.assertIn("SC089", rows)
-        # 91 since SC104 EAFNasalizedLowRounding was inserted at position 29.
-        self.assertEqual(rows["SC088"]["cascade_position"], "91")
-        self.assertEqual(rows["SC089"]["cascade_position"], "92")
-        # SC002's stage is executable but outside the numbered span.
+        # positions are identity-joined projections of the executable model,
+        # never literals
         stage = {s.foma_identifier: s.cascade_position
                  for s in self.pipeline.named_stages()}
+        for sc_id, row in rows.items():
+            self.assertEqual(
+                row["cascade_position"], str(stage[row["foma_identifier"]]),
+                f"{sc_id}: census position must be the executable model's")
+        # SC002's stage is executable but outside the numbered span.
         self.assertIn("PGmcGmSimplification", stage)
         self.assertIsNone(stage["PGmcGmSimplification"])
 

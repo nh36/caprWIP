@@ -195,7 +195,8 @@ class NasalizedLowVowelAdjudicationTests(unittest.TestCase):
 
     def test_sc103_heads_the_cascade(self):
         self.assertEqual(
-            self.positions["PGmcNasalLossBeforeX"], 1,
+            self.positions["PGmcNasalLossBeforeX"],
+            min(self.positions.values()),
             "a pan-Germanic change must not be stated after daughter-specific "
             "NWGmc/PWGmc changes")
 
@@ -205,7 +206,10 @@ class NasalizedLowVowelAdjudicationTests(unittest.TestCase):
                        "EAFLongANasalRounding"):
             self.assertLess(self.positions[feeder], rounding,
                             f"{feeder} must feed the rounding")
-        self.assertEqual(self.positions["EAFLongANasalRounding"] + 1, rounding,
+        rules_between = [
+            r for r, p in self.positions.items()
+            if self.positions["EAFLongANasalRounding"] < p < rounding]
+        self.assertEqual(rules_between, [],
                          "SC104 executes immediately after SC025")
 
     def test_rounding_precedes_ai_monophthongization(self):

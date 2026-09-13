@@ -66,6 +66,7 @@ import oe_pipeline  # noqa: E402
 import rule_coverage_census  # noqa: E402
 from capr_runtime import (  # noqa: E402
     check_build_manifest,
+    layout,
     run_in_runner,
     write_build_manifest,
 )
@@ -92,6 +93,19 @@ MATRIX_ROOT_NETWORK = "EnglishProtoInput"
 REFRESH_HINT = ("run the control-plane refresh: "
                 "python3 Germanic/tools/adjudicate.py --refresh")
 
+# ARCHIVE artifacts (frozen historical record; see CONTROL_PLANE.md
+# "ARCHIVE / RECORD").  These are never the output of any graph node: no
+# refresh, builder, or finalize step may rewrite them.
+ARCHIVE_PATHS = tuple(
+    SC_DIR / rel for rel in (
+        "cascade_baseline/historical_audit_table.tsv",
+        "cascade_baseline/rename_migration_manifest.tsv",
+        "registry/archival_orders.tsv",
+        "order_tests/chronology_cards/chronology_card_index.tsv",
+        "order_tests/chronology_cards/chronology_graph_nodes.tsv",
+        "audits/sc001-sc020-chronology-audit.tsv",
+    ))
+
 
 class GraphError(RuntimeError):
     """A node cannot be checked or built; message names the authority."""
@@ -108,6 +122,7 @@ class Node:
     authority: str  # the SOURCE (or runtime step) that owns this artifact
     verify: Callable[[], list]  # non-mutating; [] means fresh
     build: Callable[[], list]  # returns descriptions of what changed
+    outputs: Callable[[], list]  # declared output Paths this node owns
 
 
 # --------------------------------------------------------------------------
@@ -115,7 +130,8 @@ class Node:
 # --------------------------------------------------------------------------
 
 def _projection(name: str, authority: str,
-                render: Callable[[], dict]) -> Node:
+                render: Callable[[], dict],
+                outputs: Callable[[], list] | None = None) -> Node:
     def verify() -> list:
         try:
             rendered = render()
@@ -141,7 +157,8 @@ def _projection(name: str, authority: str,
                 changed.append(_rel(path))
         return changed
 
-    return Node(name, "projection", authority, verify, build)
+    return Node(name, "projection", authority, verify, build,
+                outputs or (lambda: sorted(render().keys())))
 
 
 def _render_executable_order() -> dict:
@@ -217,7 +234,8 @@ def _regen_index_verborum() -> Node:
         return sorted(_rel(p) for p in set(before) | set(after)
                       if before.get(p) != after.get(p))
 
-    return Node("index_verborum", "regen", authority, verify, build)
+    return Node("index_verborum", "regen", authority, verify, build,
+                _index_outputs)
 
 
 # --------------------------------------------------------------------------
@@ -363,8 +381,9 @@ def _matrix_build() -> list:
     return [_rel(MATRIX), _rel(MATRIX_PROVENANCE)]
 
 
-def _runtime(name: str, authority: str, verify, build) -> Node:
-    return Node(name, "runtime", authority, verify, build)
+def _runtime(name: str, authority: str, verify, build,
+             outputs: Callable[[], list]) -> Node:
+    return Node(name, "runtime", authority, verify, build, outputs)
 
 
 # --------------------------------------------------------------------------
@@ -381,16 +400,21 @@ def nodes() -> tuple:
                     _render_oe_sandbox),
         _runtime("runtime_bins",
                  "container foma build of fsts/old_english_sandbox.txt",
-                 _bins_verify, _bins_build),
+                 _bins_verify, _bins_build,
+                 lambda: sorted(
+                     [layout().bin_dir / b for b in _expected_bins()]
+                     + [layout().build_manifest])),
         _runtime("full_trace",
                  "container oe_full_trace_report.py --all over fresh bins",
-                 _trace_verify, _trace_build),
+                 _trace_verify, _trace_build,
+                 lambda: [FULL_TRACE]),
         _projection("registry_views",
                     "registry SOURCE TSVs via generate_registry_views",
                     generate_registry_views.build_all),
         _projection("coverage_census",
                     "committed full trace + registry via rule_coverage_census",
-                    _render_census),
+                    _render_census,
+                    outputs=lambda: [rule_coverage_census.OUTPUT]),
         _projection("reader_book",
                     "reader SOURCE files + reader_manifest.tsv via "
                     "build_reader_book",
@@ -402,8 +426,19 @@ def nodes() -> tuple:
         _runtime("interaction_matrix",
                  "container cascade_interaction_harness.py over the live "
                  "stage-derived pair list",
-                 _matrix_verify, _matrix_build),
+                 _matrix_verify, _matrix_build,
+                 lambda: [MATRIX, MATRIX_PROVENANCE]),
     )
+
+
+def declared_outputs() -> dict:
+    """Machine-readable output declaration: node name -> sorted Paths.
+
+    This is the §-mandated single declaration of which committed (or
+    runtime) files each node owns.  ARCHIVE_PATHS must never appear here;
+    a test enforces that invariant.
+    """
+    return {node.name: sorted(node.outputs()) for node in nodes()}
 
 
 # census reads the inventory view and the views annotate from the census, so

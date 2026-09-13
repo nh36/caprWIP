@@ -1,23 +1,32 @@
 """Fail-closed regression tests for the three final-*z* rules (SC096/SC020/SC097).
 
-Pre-push adjudication of the SC020 three-rule split: the firing populations
-of the split rules are pinned so that corpus growth cannot silently change
-the historical analysis.
+Adjudication of the SC020 three-rule split, restated as SEMANTIC invariants
+(control plane §17): required diagnostic witnesses must fire, negative
+controls must not, every observed firing must satisfy the adjudicated
+domain, and each lexeme is claimed by at most one of the three rules. The
+complete current firing population is machine-derived and owned by the
+coverage census — a legitimate new corpus witness that satisfies the domain
+passes automatically, while a domain violation still fails closed.
 
-- SC096 RootNounNomZLoss must fire on exactly book/flea/goose/louse. A fifth
-  firing — or any new TSV protoform that matches the rule's computational
-  proxy environment (word-final *z after a consonant in a monosyllable) —
-  fails the suite and forces historical adjudication (see the GUARD comment
-  at the rule definition in Germanic/fsts/germanic.txt).
-- SC020 EAFFinalZDeletion must fire on exactly 111 corpus inputs: the 110
-  legacy firings including friend/milk/month (adjudication memo §5) plus
-  you :: *ízwiz (corpus-maturation pass 01).
-- SC097 MonosyllabicFinalZLoss must fire on exactly who :: *xwáz (corpus-
-  maturation pass 01: R&T 2014 p.86; Campbell §125). Its synthetic controls
-  must still genuinely demonstrate loss of final *-z with compensatory
-  lengthening of a short nucleus (*hwaz > *hwā, *hiz > *hī) and nucleus
-  preservation for bimoric inputs (*maiz > *mai; *mā arises only via later
-  ai-monophthongization).
+- SC096 RootNounNomZLoss: the adjudicated root nouns book/flea/goose/louse
+  must fire on their adjudicated inputs, and every firing must match the
+  rule's computational proxy environment (word-final *z after a consonant
+  in a monosyllable; see the GUARD comment at the rule definition in
+  Germanic/fsts/germanic.txt). The separate proxy-environment guard below
+  censuses the whole TSV for new forms entering that environment.
+- SC020 EAFFinalZDeletion: friend/milk/month (adjudication memo §5) and you
+  (corpus-maturation pass 01) must fire; the SC096 root nouns must NOT fire
+  here; every firing input must end in *-z.
+- SC097 MonosyllabicFinalZLoss: who :: *xwáz (corpus-maturation pass 01:
+  R&T 2014 p.86; Campbell §125) must fire, and every firing must be a
+  monosyllabic final-*z* input. Its synthetic controls must still genuinely
+  demonstrate loss of final *-z with compensatory lengthening of a short
+  nucleus (*hwaz > *hwā, *hiz > *hī) and nucleus preservation for bimoric
+  inputs (*maiz > *mai; *mā arises only via later ai-monophthongization).
+
+The frozen 114-row before/after firing table keeps its exact historical
+counts: it is an ARCHIVE snapshot of the split adjudication, not a live
+population.
 
 Population tests are host-runnable (no foma/Docker): they read the committed
 full trace report, the committed firing table, and the live TSV. The
@@ -49,9 +58,9 @@ FIRING_TABLE = (
 CORPUS_TSV = GERMANIC_DIR / "data" / "germanic-aligned-final.tsv"
 FST_SOURCE = GERMANIC_DIR / "fsts" / "germanic.txt"
 
-# Adjudicated SC096 firing population (Dossier A + adjudication memo §6;
+# Required SC096 diagnostic witnesses (Dossier A + adjudication memo §6;
 # flea reopened and retained at the pre-push adjudication).
-SC096_POPULATION = {
+SC096_REQUIRED_WITNESSES = {
     "book": "*bōkz",
     "flea": "*fláuxz",
     "goose": "*gánsz",
@@ -59,12 +68,10 @@ SC096_POPULATION = {
 }
 # Legacy SC020 population (the frozen 114-row before/after firing table).
 SC020_LEGACY_TABLE_COUNT = 110
-# Live corpus population: legacy 110 + you (corpus-maturation pass 01).
-SC020_COUNT = 111
 SC020_MUST_INCLUDE = {"friend": "*fríjōndz", "milk": "*mélukz",
                       "month": "*mḗnōθz", "you": "*ízwiz"}
-# Adjudicated SC097 corpus population (corpus-maturation pass 01 §1).
-SC097_POPULATION = {"who": "*xwáz"}
+# Required SC097 diagnostic witness (corpus-maturation pass 01 §1).
+SC097_REQUIRED_WITNESSES = {"who": "*xwáz"}
 
 # Mirrors normalize_proto in tools/oe_full_trace_report.py.
 PROTO_STRIP_RE = re.compile(r"[{}*\s/()]")
@@ -200,33 +207,67 @@ class Sc096FiringPopulationTests(unittest.TestCase):
     def setUpClass(cls):
         cls.summary = load_stage_firing_summary()
 
-    def test_sc096_fires_on_exactly_the_adjudicated_population(self):
+    def test_sc096_required_root_nouns_fire_within_the_proxy_domain(self):
         count, pairs = self.summary["RootNounNomZLoss"]
-        self.assertEqual(count, len(SC096_POPULATION),
-                         "SC096 firing count changed; adjudicate before accepting")
-        self.assertEqual(dict(pairs), SC096_POPULATION,
-                         "SC096 firing population changed; a new or lost witness "
-                         "requires historical adjudication (Dossier A, memo §6)")
-
-    def test_sc020_fires_on_111_including_friend_milk_month_you(self):
-        count, pairs = self.summary["EAFFinalZDeletion"]
-        self.assertEqual(count, SC020_COUNT)
         as_dict = dict(pairs)
+        self.assertEqual(count, len(as_dict))
+        for lex, form in SC096_REQUIRED_WITNESSES.items():
+            self.assertEqual(as_dict.get(lex), form,
+                             f"{lex} must lose *-z under SC096 "
+                             "(Dossier A, memo §6)")
+        # domain: every firing matches the adjudicated proxy environment
+        for lex, form in as_dict.items():
+            self.assertTrue(
+                matches_sc096_proxy(normalize_proto(form)),
+                f"SC096 fired outside its proxy environment on {lex} :: "
+                f"{form}; historical adjudication required (GUARD note at "
+                "RootNounNomZLoss)")
+
+    def test_sc020_required_witnesses_fire_within_the_final_z_domain(self):
+        count, pairs = self.summary["EAFFinalZDeletion"]
+        as_dict = dict(pairs)
+        self.assertEqual(count, len(as_dict))
         for lex, form in SC020_MUST_INCLUDE.items():
             self.assertEqual(as_dict.get(lex), form,
                              f"{lex} must lose *-z under SC020 (memo §5)")
-        for lex in SC096_POPULATION:
+        for lex in SC096_REQUIRED_WITNESSES:
             self.assertNotIn(lex, as_dict,
                              f"{lex} must lose *-z under SC096, not SC020")
+        # domain: every firing input ends in word-final *-z
+        for lex, form in as_dict.items():
+            self.assertTrue(normalize_proto(form).endswith("z"),
+                            f"SC020 fired on a non-final-z input {lex} :: "
+                            f"{form}")
 
-    def test_sc097_fires_on_exactly_who(self):
+    def test_sc097_required_witness_fires_within_the_monosyllabic_domain(self):
         count, pairs = self.summary["MonosyllabicFinalZLoss"]
-        self.assertEqual(count, len(SC097_POPULATION),
-                         "SC097 firing count changed; adjudicate before accepting")
-        self.assertEqual(dict(pairs), SC097_POPULATION,
-                         "SC097 firing population changed; a new or lost witness "
-                         "requires historical adjudication (Dossier C; "
-                         "corpus-maturation-01 adjudication §1)")
+        as_dict = dict(pairs)
+        self.assertEqual(count, len(as_dict))
+        for lex, form in SC097_REQUIRED_WITNESSES.items():
+            self.assertEqual(as_dict.get(lex), form,
+                             f"{lex} must lose *-z under SC097 "
+                             "(Dossier C; corpus-maturation-01 §1)")
+        # domain: monosyllabic word-final *-z inputs only
+        for lex, form in as_dict.items():
+            norm = normalize_proto(form)
+            self.assertTrue(norm.endswith("z"),
+                            f"SC097 fired on a non-final-z input {lex} :: "
+                            f"{form}")
+            self.assertNotIn("-", norm,
+                             f"SC097 fired on a compound (non-monosyllable) "
+                             f"{lex} :: {form}")
+
+    def test_each_lexeme_is_claimed_by_at_most_one_final_z_rule(self):
+        claimed: dict[str, list[str]] = {}
+        for rule in ("RootNounNomZLoss", "EAFFinalZDeletion",
+                     "MonosyllabicFinalZLoss"):
+            for lex, _ in self.summary[rule][1]:
+                claimed.setdefault(lex, []).append(rule)
+        double = {lex: rules for lex, rules in claimed.items()
+                  if len(rules) > 1}
+        self.assertEqual(double, {},
+                         "a lexeme lost *-z under more than one of the three "
+                         "split rules; the partition is broken")
 
 
 class FiringTablePartitionTests(unittest.TestCase):
@@ -248,13 +289,13 @@ class FiringTablePartitionTests(unittest.TestCase):
         self.assertEqual(len(by_rule["SC020 EAFFinalZDeletion"]),
                          SC020_LEGACY_TABLE_COUNT)
         self.assertEqual(sorted(by_rule["SC096 RootNounNomZLoss"]),
-                         sorted(SC096_POPULATION))
+                         sorted(SC096_REQUIRED_WITNESSES))
 
     def test_sc096_rows_carry_the_adjudicated_inputs(self):
         inputs = {row["lexical_item"]: row["selected_input"]
                   for row in self.rows
                   if row["new_deleting_rule"] == "SC096 RootNounNomZLoss"}
-        self.assertEqual(inputs, SC096_POPULATION)
+        self.assertEqual(inputs, SC096_REQUIRED_WITNESSES)
 
 
 class Sc096ProxyEnvironmentGuardTests(unittest.TestCase):
@@ -294,14 +335,14 @@ class Sc096ProxyEnvironmentGuardTests(unittest.TestCase):
     def test_proxy_environment_matches_exactly_the_adjudicated_inputs(self):
         matching = {proto for proto, norm in self.protoforms.items()
                     if matches_sc096_proxy(norm)}
-        self.assertEqual(matching, set(SC096_POPULATION.values()),
+        self.assertEqual(matching, set(SC096_REQUIRED_WITNESSES.values()),
                          "a protoform entered/left SC096's proxy environment; "
                          "this requires historical adjudication before the "
                          "rule fires on it (GUARD note at RootNounNomZLoss)")
 
     def test_proxy_classifier_agrees_with_known_shapes(self):
         # Positive controls: the four adjudicated root-noun nominatives.
-        for form in SC096_POPULATION.values():
+        for form in SC096_REQUIRED_WITNESSES.values():
             self.assertTrue(matches_sc096_proxy(normalize_proto(form)), form)
         # Negative controls: vowel-final monosyllables belong to SC097's
         # domain, polysyllables to SC020's, hyphenated forms to neither.

@@ -222,16 +222,18 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         )
 
     def test_cascade_positions_encode_the_chronology(self):
-        self.assertEqual(self.positions.get("PNWGmcLongELowering"), 5)
-        # Shifted when the SC025/SC104 nasalized-low-vowel adjudication moved
-        # the pan-Germanic SC103 PGmcNasalLossBeforeX to position 1 and
-        # inserted SC104 EAFNasalizedLowRounding after SC025. The relative
-        # order asserted here is unchanged.
-        self.assertEqual(self.positions.get("EAFHiatusWInsertion"), 27)
-        self.assertEqual(self.positions.get("EAFLongANasalRounding"), 28)
-        self.assertEqual(self.positions.get("EAFNasalizedLowRounding"), 29)
-        self.assertEqual(self.positions.get("EAFLongAFronting"), 30)
-        self.assertEqual(self.positions.get("EAFAiMonophthongization"), 31)
+        # Positions are projections of the current cascade; only the
+        # RELATIVE order carries the historical claims (§ chronology).
+        # SC024 must be a live numbered stage ...
+        self.assertIn("PNWGmcLongELowering", self.positions)
+        # ... and the SC102/SC025/SC104/SC101/SC004 fronting-rounding block
+        # must keep its adjudicated internal order.
+        block = ["EAFHiatusWInsertion", "EAFLongANasalRounding",
+                 "EAFNasalizedLowRounding", "EAFLongAFronting",
+                 "EAFAiMonophthongization"]
+        for earlier, later in zip(block, block[1:]):
+            self.assertLess(self.positions[earlier], self.positions[later],
+                            f"{earlier} must precede {later}")
         # SC024 is early pan-NWGmc: it must precede the genuinely PWGmc
         # innovations (early i-apocope, *ij contraction, j-gemination,
         # syllabic *j, dental hardening)

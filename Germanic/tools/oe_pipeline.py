@@ -367,6 +367,35 @@ def rules_between(a: str, b: str, inclusive: bool = False) -> List[str]:
     return out
 
 
+def are_adjacent(a: str, b: str) -> bool:
+    """True iff named stage ``b`` executes immediately after named stage
+    ``a`` (identity-based adjacency; never compare numeric positions)."""
+    nxt = next_stage(a)
+    return nxt is not None and nxt.foma_identifier == b
+
+
+def first_numbered_stage() -> Stage:
+    """The first stage of the numbered SC cascade (identity, not a number)."""
+    for s in named_stages():
+        if s.cascade_position is not None:
+            return s
+    raise RuntimeError("no numbered cascade stage found")
+
+
+def run_before(bin_dir: Path, identifier: str, form: str) -> List[str]:
+    """Form immediately BEFORE stage ``identifier`` (identity-based probe:
+    applies the snapshot bin of the preceding named stage)."""
+    prev = previous_stage(identifier)
+    if prev is None:
+        raise ValueError(f"{identifier!r} has no preceding named stage")
+    return run_stage(bin_dir, prev.snapshot_bin, form)
+
+
+def run_after(bin_dir: Path, identifier: str, form: str) -> List[str]:
+    """Form immediately AFTER stage ``identifier`` (identity-based probe)."""
+    return run_stage(bin_dir, stage_for(identifier).snapshot_bin, form)
+
+
 def expected_snapshot_bins() -> List[str]:
     return [s.snapshot_bin for s in named_stages()]
 

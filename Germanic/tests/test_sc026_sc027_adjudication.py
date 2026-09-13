@@ -249,11 +249,13 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
 
     def test_annotation_firing_lexemes_follow_the_census(self):
         """firing_lexemes is generated FROM the census, so it can never drift
-        from it; the check is that the witness sets are the adjudicated ones."""
+        from it; the adjudicated witnesses must be present (the complete
+        current population is machine-derived and owned by the census)."""
         rows = {r["change_id"]: r for r in _tsv_rows(ANNOTATIONS)}
         census = {r["sc_id"]: r for r in _tsv_rows(CENSUS)}
         for sc in ("SC026", "SC027"):
-            self.assertEqual(rows[sc]["firing_lexemes"], "goose, youth")
+            for witness in NSGMC_WITNESSES:
+                self.assertIn(witness, rows[sc]["firing_lexemes"])
         self.assertIn("fist", rows["SC103"]["firing_lexemes"])
         for sc in ("SC026", "SC027", "SC103"):
             self.assertEqual(rows[sc]["firing_lexemes"],
