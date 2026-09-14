@@ -1670,17 +1670,34 @@ Proto-Germanic \emph{*hawja} through \emph{*hauj-} to *hīeġ*, and
 Proto-Germanic \emph{*strawjaną} through \emph{*straujan} to Anglian
 *strēgan* ‘strew’ [@RingeTaylor2014, p. 173].
 
-The change is confined to English. Old High German *houwi* ‘hay’ and
-*gistrouwen* ‘bestrew’, and Old Saxon *hoi* ‘hay’, keep the geminate
-[@RingeTaylor2014, p. 173].
+The strongest comparative argument for the doubled stage comes from paradigms
+in which some cells had \emph{*j} in the ending and others had \emph{*i}. Only
+the first group could double, and the two outcomes then sat side by side. Old
+High German has *hewi* ‘hay’ beside *houwi*, and Old English itself preserves
+both in one word, *glīg* ‘mirth’ from the undoubled nominative beside *glīowes*
+in the genitive [@RingeTaylor2014, p. 53, §3.1.3]. The continental forms *houwi*
+and *gistrouwen* ‘bestrew’, and Old Saxon *hoi* ‘hay’, point to the same West
+Germanic stage, which English alone went on to resolve [@RingeTaylor2014,
+p. 173].
+
+The resolution did not treat every doubled \emph{*w} alike, and the difference
+is what allows the doubling to be seen apart from it. Campbell sets the two
+vowel types side by side: \emph{auj} becomes \emph{auuj} and then \emph{auj},
+while \emph{iuj} becomes \emph{iuuj} and then \emph{iuj}. Thereafter they part
+company, since the \emph{u} of \emph{auuj} is generally lost while the \emph{j}
+of \emph{iuuj} is lost [@Campbell1959, p. 46, §120.2]. Old English *hīeġ* ‘hay’
+and *hīew* ‘form, hue’ begin from shapes that differ in a single vowel and end
+with different survivors. *Hīeġ* keeps its \emph{*j}, written *ġ*, while *hīew*
+keeps its \emph{*w}. Campbell’s other examples of the second type are *nīowe*,
+*nīewe* ‘new’ and *glīow*, *glīw* ‘mirth’.
 
 One qualification belongs in the record. Fulk holds that \emph{*w} was never
 consonantal here, so that Proto-Germanic already had \emph{*straujaną} with
 its diphthong in place and there is no gemination to undo [@Fulk2018, p. 73,
 §4.10 n. 1]. The account followed here is the handbook one, which the
-continental forms support: the geminate that Old High German *houwi* and
-*gistrouwen* preserve is precisely the stage Fulk denies ever existed. Both
-accounts agree that \emph{*auj} is what enters Old English, and the
+comparative material supports: the doubled stage that the continental and
+paradigm-internal forms point to is precisely the one Fulk denies ever existed.
+Both accounts agree that \emph{*auj} is what enters Old English, and the
 disagreement concerns whether a discrete change took place.
 
 ## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation}
@@ -1692,25 +1709,25 @@ define OEAwjGlideFormation [
 ];
 ```
 
-Two corpus words undergo the change. PGmc [xáwją]{.recon} ‘hay’ is doubled to
-\emph{*xáwwją} by the West Germanic law and then resolved to \emph{*xáują},
-and PGmc [stráwjaną]{.recon} ‘strew’ is doubled to \emph{*stráwwjaną} and
-resolved to \emph{*stráujaną},
-yielding *hīeġ* and *strīeġan* once the later diphthong changes and
-\emph{i}-umlaut have applied.
+The change is confined to the \emph{*a} type. PGmc [xáwją]{.recon} ‘hay’ is
+doubled to \emph{*xáwwją} by the West Germanic law and then resolved to
+\emph{*xáują}, and PGmc [stráwjaną]{.recon} ‘strew’ is doubled to
+\emph{*stráwwjaną} and resolved to \emph{*stráujaną}, yielding *hīeġ* and
+*strīeġan* once the later diphthong changes and \emph{i}-umlaut have applied.
+PGmc [xéwją]{.recon} ‘form, hue’ is doubled by the same law, and there the
+doubling holds: it passes through this change untouched and surfaces as *hīew*.
 
 The resolution has to precede the fronting of SC030, since the fronting needs a
-diphthong to work on. Reversing the two leaves the older sequence untouched and
-produces [*hauġ*]{.pred} for *hīeġ* and [*strauian*]{.pred} for *strīeġan*.
-Ringe and Taylor state the same dependence when they observe that these new
-instances of \emph{*au} went on to share the ordinary development
-[@RingeTaylor2014, p. 173].
+diphthong to work on. Ringe and Taylor state the same dependence when they
+observe that these new instances of \emph{*au} went on to share the ordinary
+development [@RingeTaylor2014, p. 173].
 
 ## Historical discussion of the brightening of \emph{*au}
 
-The fronting of \emph{*au} is the same change as the fronting of plain
-\emph{*a} that is usually called Anglo-Frisian brightening. Campbell arrives at
-the point while establishing the order of the early vowel changes, remarking
+The fronting of \emph{*au} is the application to a diphthong of the same
+process that fronts plain \emph{*a}, the process usually called Anglo-Frisian
+brightening. Campbell arrives at the point while establishing the order of the
+early vowel changes, remarking
 that the normal development of Proto-Germanic \emph{*au} to Old English *ēa*
 shows that the change of \emph{a} to \emph{æ} would affect the first element of
 a diphthong [@Campbell1959, p. 52, §132]. His ordered list accordingly places
@@ -1747,15 +1764,15 @@ define OEAuFronting [
 ];
 ```
 
-Eighteen corpus derivations pass through the change, and sixteen of them carry
-\emph{*au} inherited straight from Proto-Germanic. PGmc [láubą]{.recon} ‘leaf’
-gives *lēaf*, PGmc [stráumaz]{.recon} ‘stream’ gives *strēam*, PGmc
-[bráudą]{.recon} ‘bread’ gives *brēad*, and PGmc [dráugmaz]{.recon} ‘dream’
-gives *drēam*. Where a following \emph{*j} or \emph{*i} survives long enough to
-cause \emph{i}-umlaut, the *ēa* appears in West Saxon as *īe*, as in
-*ġelīefan* ‘believe’ from PGmc [galáubijaną]{.recon} and *nīed* ‘need’ from
-PGmc [náudiz]{.recon} [@Campbell1959, p. 46, §120.2]. The two words supplied by
-SC029, *hīeġ* and *strīeġan*, join this second group.
+Most of the words that pass through the change carry \emph{*au} inherited
+straight from Proto-Germanic. PGmc [láubą]{.recon} ‘leaf’ gives *lēaf*, PGmc
+[stráumaz]{.recon} ‘stream’ gives *strēam*, PGmc [bráudą]{.recon} ‘bread’
+gives *brēad*, and PGmc [dráugmaz]{.recon} ‘dream’ gives *drēam*. Where a
+following \emph{*j} or \emph{*i} survives long enough to cause \emph{i}-umlaut,
+the *ēa* appears in West Saxon as *īe*, as in *ġelīefan* ‘believe’ from PGmc
+[galáubijaną]{.recon} and *nīed* ‘need’ from PGmc [náudiz]{.recon}
+[@Campbell1959, p. 46, §120.2]. The two words supplied by SC029, *hīeġ* and
+*strīeġan*, join this second group.
 
 The proportions matter for what the rule is. This is the general Old English
 treatment of \emph{*au}, to which the resolution of \emph{*awj} contributes two
@@ -1765,10 +1782,6 @@ The fronted \emph{*æu} has no independent life. It is taken up at once by the
 diphthong leveling of SC032, which lowers the offglide and delivers *ēa*.
 Ringe and Taylor give that order explicitly when they place the tensing and
 fronting first and the unrounding and lowering later [@RingeTaylor2014, p. 172].
-Displacing the fronting past the leveling therefore leaves an \emph{*æu} that
-nothing consumes, and the affected derivations yield no output at all. That
-failure shows that \emph{*æu} is an internal stage with no Old English surface
-form; the historical order comes from the sources.
 
 \newpage
 

@@ -514,10 +514,16 @@ class RealCorpusInvariantTests(unittest.TestCase):
             # +2 occurrences (no new unique forms) after the manifest-driven
             # book gained the Chapter 1 (PGmc -> PNWGmc) intro, whose prose
             # cites *draugma- and *taugma- a second time.
-            "production_occurrences": 2410,
-            "production_unique_forms": 1191,
-            "print_main_occurrences": 2322,
-            "unique_printed_entries": 1103,
+            # +19 occurrences / +19 unique forms after the SC010 *w-gemination
+            # follow-up: row hue (2332) was added to the corpus as the *iwj
+            # witness with a model entry and source ledger, and thought (2330),
+            # added earlier without one, received the same pair. Neither lexeme
+            # is in the assembly manifest yet, so every new occurrence falls
+            # outside the book and the book counts are unchanged.
+            "production_occurrences": 2429,
+            "production_unique_forms": 1210,
+            "print_main_occurrences": 2341,
+            "unique_printed_entries": 1121,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -919,10 +925,13 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # +2 corpus / book occurrences and book emissions after the
         # manifest-driven book gained the Chapter 1 (PGmc -> PNWGmc) intro,
         # whose prose cites *draugma- and *taugma- a second time.
-        self.assertEqual(len(pm), 2322)
+        # +19 vs the previous snapshot: the hue (2332) and thought (2330)
+        # model entries. Both fall outside the assembly manifest, so the
+        # book occurrence and emission counts are unchanged.
+        self.assertEqual(len(pm), 2341)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
-        self.assertEqual(source_not_in_book, 229)
+        self.assertEqual(source_not_in_book, 248)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
         self.assertEqual(len(bo), 2093)
         self.assertEqual(len(be), 1920)
@@ -979,15 +988,18 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # +2 corpus / book occurrences and book emissions (no new unique
         # entries) after the manifest-driven book gained the Chapter 1
         # (PGmc -> PNWGmc) intro citing *draugma- and *taugma- again.
-        self.assertEqual(len(pm), 2322, "corpus occurrence count")
-        source_not_in_book = 2322 - 2093
+        # +19 vs the previous snapshot: the hue (2332) and thought (2330)
+        # model entries, none of whose spans are in the assembly manifest.
+        self.assertEqual(len(pm), 2341, "corpus occurrence count")
+        source_not_in_book = 2341 - 2093
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
         self.assertEqual(len(be), 1920, "book emission count")
         # +10 corpus / +14 book unique entries vs the pre-z-split snapshot: the
         # three-way SC020 split (SC096/SC020/SC097) and the four new root-noun
         # model entries (book, flea, goose, louse) introduce new indexed headwords.
         # +12 corpus / +12 book unique entries after corpus-maturation pass 01.
-        self.assertEqual(len(pu), 1103, "unique corpus entries")
+        # +18 unique corpus entries from the same two model entries.
+        self.assertEqual(len(pu), 1121, "unique corpus entries")
         self.assertEqual(len(bu), 875, "unique book entries")
 
         # Algebraic reconciliations
@@ -1019,7 +1031,9 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # +1 after ġeoc became explicit reader-facing evidence.
         # +2 after the Chapter 1 (PGmc -> PNWGmc) intro's explicit *draugma-
         # and *taugma- spans entered the manifest-driven book.
-        self.assertEqual(printable_explicit, 1457, "printable explicit occurrences")
+        # +14 after the hue (2332) and thought (2330) model entries, whose
+        # protoform, target and comparison spans are all explicit .iv tags.
+        self.assertEqual(printable_explicit, 1471, "printable explicit occurrences")
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

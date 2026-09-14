@@ -33,9 +33,9 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - legacy-380 corpus fingerprint (`legacy_subset_sha256`):
-  `a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc`
-- selected-386 corpus fingerprint (`outputs_sha256`):
-  `862b0908b2ab44097eeda3bf82f95d76625eb169230efa3a072eb93c1311c35b`
+  `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`
+- selected-387 corpus fingerprint (`outputs_sha256`):
+  `4c7854c06948b1f63456d0726c48e9bb26ac1049491300ad22f6206ecb2e3bf8`
 
 A fingerprint may change only as the explicit, row-level-diagnosed
 consequence of an adjudication verdict (protocol step 13), never as a

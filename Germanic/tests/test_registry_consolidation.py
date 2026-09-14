@@ -270,13 +270,19 @@ class FingerprintGuardTests(unittest.TestCase):
         # Rebaselined again for `thought` (sc025-sc104 memo §12): one row
         # added as the live low-vowel witness of SC103 -> SC104; all 385
         # pre-existing outputs byte-identical, legacy sha still unchanged.
+        # Rebaselined again for the SC010 *w-gemination follow-up: hay's
+        # selected input was corrected from *xáwwją to *xáwją and row hue
+        # (2332) was added. Every pre-existing OE output is byte-identical;
+        # the legacy sha moves only because the legacy key file was repointed
+        # to hay's corrected protoform, which the fingerprint hashes beside
+        # the unchanged output.
         self.assertEqual(
             data["outputs_sha256"],
-            "862b0908b2ab44097eeda3bf82f95d76625eb169230efa3a072eb93c1311c35b",
+            "4c7854c06948b1f63456d0726c48e9bb26ac1049491300ad22f6206ecb2e3bf8",
         )
         self.assertEqual(
             data["legacy_subset_sha256"],
-            "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc",
+            "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
         )
 
 

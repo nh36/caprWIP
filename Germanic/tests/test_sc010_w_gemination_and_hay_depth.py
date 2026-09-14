@@ -55,18 +55,32 @@ GEMINATION_ENV = "|| EnglishStarShortVowel _ {*j}"
 # Words whose *au is created by the gemination-plus-resolution chain.
 AWJ_WITNESSES = {"hay": "hīeġ", "strew": "strīeġan"}
 
-# Protoforms containing w somewhere before a j that must NOT geminate: the
-# w is not immediately before *j, or the preceding vowel is not short.
-NEGATIVE_CONTROLS = (
-    "*lḗwijaną",
-    "*smérwijaną",
-    "*skawōjaną",
-    "*skáwōjaną",
-    "*wainōjaną",
-    "*wéljaną",
-    "*weljô",
-    "*wéljô",
-)
+# The *iwj witness: geminates at SC010 like the *awj words, but the later
+# resolution is restricted to the low-vowel type, so it must not fire here.
+IWJ_WITNESS = ("hue", "*xéwją", "hīew")
+
+# Structural non-members of the *w branch. These are engineering near-misses,
+# NOT independent demonstrations of the short-syllable conditioning: in every
+# case the *w simply is not immediately before a *j. Each entry carries the
+# reason it cannot geminate. Every form here is a SELECTED protoform and must
+# be present in the trace; a typo or a deleted row has to fail the test rather
+# than skip it.
+NEGATIVE_CONTROLS = {
+    "*knéwą": "short *é plus *w but no following *j (minimal pair with hue)",
+    "*lḗwijaną": "*wij, not *wj: after a heavy syllable Sievers' law gives *-ij-",
+    "*smérwijaną": "*wij, not *wj, for the same reason",
+    "*skáwōjaną": "*w stands before *ō, not before *j",
+    "*wéljaną": "word-initial *w; it is the *l that geminates before *j",
+    "*wéljô": "word-initial *w; it is the *l that geminates before *j",
+    "*kéwwaną": "geminate already in Proto-Germanic by Verschärfung, and no *j",
+    "*xáwwaną": "geminate already in Proto-Germanic by Verschärfung, and no *j",
+    "*dáwwō": "geminate already in Proto-Germanic by Verschärfung, and no *j",
+    "*snáiwaz": "*w follows a diphthong and no *j follows",
+    "*sáiwiz": "*w follows a diphthong and no *j follows",
+}
+
+# A short vowel, optionally accented, immediately before *wj.
+SHORT_VOWEL_WJ = re.compile(r"[aeiouáéíóúäëïöüàèìòù]wj")
 
 
 def _tsv_rows(path: Path):
@@ -145,20 +159,21 @@ class WGeminationRepairTests(unittest.TestCase):
                          "these protoforms pre-encode a pre-*j geminate that "
                          "SC010 should be producing")
 
-    def test_corpus_has_no_iwj_lexeme(self):
-        """Boundary condition on the *w branch (memo §5.2).
+    def test_corpus_carries_an_iwj_witness(self):
+        """The *w branch must be witnessed outside the words SC029 consumes.
 
-        SC029 requires a preceding *a, so an *iwj form would geminate at SC010
-        with nothing to resolve it. R&T's *niwjaz, *siwjaną and *gliwjas need
-        the separate *iuwj treatment of Campbell §120.2, which CAPR does not
-        model. If this test ever fails, model that outcome first.
+        Campbell §120.2 p. 46 states both halves of the type: "auj > auuj >
+        auj, and iuj > iuuj > iuj", then "the u of auuj is lost, so that the
+        final result is ēg or ieg, but the j of iuuj is lost, so that the
+        result is iow or iew". Before hue was added, every witness of the *w
+        gemination also underwent the later resolution, so the corpus could
+        not tell the two changes apart.
         """
-        offenders = sorted({
-            (r["CONCEPT"], r["PROTOFORM"]) for r in self.corpus
-            if re.search(r"[iíīĭ]wj", r["PROTOFORM"])
-        })
-        self.assertEqual(offenders, [],
-                         "an *iwj lexeme was added but its outcome is unmodelled")
+        concept, form, _ = IWJ_WITNESS
+        self.assertIn(form, self.protoforms(concept),
+                      f"{concept} must enter as {form}")
+        self.assertNotIn("ww", form,
+                         "the *iwj witness must enter with a singleton *w too")
 
     # ------------------------------------------------------------------
     # Rule identity
@@ -246,16 +261,113 @@ class WGeminationRepairTests(unittest.TestCase):
                 self.assertIn(f"OUTPUTS: {expected}", block,
                               f"{concept} must still yield {expected}")
 
+    def test_the_iwj_witness_geminates_but_is_not_resolved(self):
+        """hue is a positive SC010 control and a negative SC029/SC030 control.
+
+        Campbell §120.2 p. 46 has both types geminate and then diverge: the
+        low-vowel type loses its *u and keeps its *j, giving hīeġ, while this
+        type loses its *j and keeps its *w, giving hīew.
+        """
+        concept, form, expected = IWJ_WITNESS
+        block = self.derivation(form)
+        gemination = re.search(r"PWGmcJGemination: (\S+)", block)
+        self.assertIsNotNone(
+            gemination,
+            f"{concept}: SC010 must FIRE, creating the West Germanic geminate")
+        self.assertIn("*w*w*j", gemination.group(1),
+                      f"{concept}: SC010 must produce the *wwj geminate")
+        self.assertNotIn("OEAwjGlideFormation: ", block,
+                         f"{concept}: SC029 resolves the low-vowel type only")
+        self.assertNotIn("OEAuFronting: ", block,
+                         f"{concept}: SC030 fronts an *au this word never has")
+        self.assertIn(f"OUTPUTS: {expected}", block,
+                      f"{concept} must yield {expected}")
+
+    def test_the_two_wj_types_diverge_after_the_geminate(self):
+        """The minimal pair hay : hue must differ only after gemination.
+
+        Both enter with a short vowel before *wj and both geminate. Thereafter
+        the low-vowel word keeps its *j to the surface as orthographic g, and
+        the front-vowel word keeps its *w.
+        """
+        hay_block = self.derivation(next(iter(self.protoforms("hay"))))
+        hue_block = self.derivation(IWJ_WITNESS[1])
+        for block in (hay_block, hue_block):
+            self.assertRegex(block, r"PWGmcJGemination: \S*\*w\*w\*j")
+        self.assertIn("OUTPUTS: hīeġ", hay_block)
+        self.assertIn("OUTPUTS: hīew", hue_block)
+
     def test_negative_controls_do_not_geminate(self):
-        """A broad *w branch must not create accidental geminates."""
-        for form in NEGATIVE_CONTROLS:
+        """A broad *w branch must not create accidental geminates.
+
+        Every curated control must be PRESENT before its non-application is
+        checked. A missing form is a test defect, not a pass: silently
+        skipping an absent control would let a typo or a deleted corpus row
+        turn this into a test of nothing.
+        """
+        for form, reason in NEGATIVE_CONTROLS.items():
+            with self.subTest(form=form):
+                self.assertIn(f"PROTO: {form}\n", self.trace,
+                              f"curated control {form!r} ({reason}) is not a "
+                              "selected protoform; fix the list rather than "
+                              "letting the check be skipped")
+                block = self.derivation(form)
+                fired = re.search(r"PWGmcJGemination: (\S+)", block)
+                if fired is not None:
+                    self.assertNotIn(
+                        "*w*w", fired.group(1),
+                        f"{form} must not undergo *w-gemination: {reason}")
+
+    def test_every_selected_w_form_outside_the_domain_is_left_alone(self):
+        """The same check, over the whole corpus rather than a curated list.
+
+        Only a short vowel immediately before *wj may gain a geminate *w. Any
+        other selected protoform containing *w must come through SC010 without
+        one, whatever else that rule does to it.
+        """
+        for row in self.corpus:
+            if row["DOCULECT"] != "Old_English":
+                continue
+            if row["COUNTERPART"] in ("", "-"):
+                continue
+            form = row["PROTOFORM"]
+            if "w" not in form or SHORT_VOWEL_WJ.search(form):
+                continue
             if f"PROTO: {form}\n" not in self.trace:
                 continue
-            block = self.derivation(form)
-            fired = re.search(r"PWGmcJGemination: (\S+)", block)
-            if fired is not None:
-                self.assertNotIn("*w*w", fired.group(1),
-                                 f"{form} must not undergo *w-gemination")
+            with self.subTest(concept=row["CONCEPT"], form=form):
+                block = self.derivation(form)
+                fired = re.search(r"PWGmcJGemination: (\S+)", block)
+                if fired is None:
+                    continue
+                before = form.count("w")
+                self.assertLessEqual(
+                    fired.group(1).count("*w"), before,
+                    f"{row['CONCEPT']} {form} gained a *w at SC010 but has no "
+                    "short vowel before *wj")
+
+    def test_no_clean_long_syllable_wj_control_can_exist(self):
+        """Sievers' law removes the *-j- allomorph after a heavy syllable.
+
+        The short-syllable conditioning of the gemination law therefore cannot
+        be demonstrated directly with a *wj minimal pair: a heavy stem takes
+        *-ij- instead, as betray *lḗwijaną and smear *smérwijaną do. Every
+        selected *wj form must consequently have a short vowel. If a genuine
+        long-syllable *wj reconstruction is ever found in the sources, it
+        becomes the missing negative control and this test must be revisited.
+        """
+        wj_forms = sorted({
+            (r["CONCEPT"], r["PROTOFORM"]) for r in self.corpus
+            if "wj" in r["PROTOFORM"]
+        })
+        self.assertTrue(wj_forms, "the *w branch has lost all its witnesses")
+        for concept, form in wj_forms:
+            with self.subTest(concept=concept, form=form):
+                self.assertRegex(
+                    form, SHORT_VOWEL_WJ,
+                    f"{concept} {form} has *wj without a short vowel; if this "
+                    "is source-supported it is the long-syllable control the "
+                    "*w branch has so far lacked")
 
     # ------------------------------------------------------------------
     # Registry and chronology

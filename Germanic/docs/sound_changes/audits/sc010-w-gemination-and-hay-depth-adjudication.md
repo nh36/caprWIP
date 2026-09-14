@@ -147,46 +147,111 @@ Added to `PWGmcJGemination`:
 This is the same environment, short vowel before, `*j` after, as the other
 thirteen members. It is not a *hay*-specific exception.
 
-### 5.1 Census of the branch across all 386 corpus rows
+### 5.1 Census of the branch across the whole selected corpus
 
-Every selected protoform containing `w` anywhere before a `j` was examined:
+Every selected protoform containing `w` was examined. Exactly three place a
+`*w` immediately before a `*j`, and all three have a short stressed vowel:
 
 | Protoform | `*w` immediately before `*j`? | Short vowel before `*w`? | Fires | Verdict |
 | --- | --- | --- | --- | --- |
-| `*xáwją` (hay) | yes | yes, `*á` | **yes** | correct, Campbell §120.2, R&T p. 53 |
-| `*stráwjaną` (strew) | yes | yes, `*á` | **yes** | correct, Campbell §120.2, R&T p. 53 |
-| `*lḗwijaną` | no, `*wi` | no, long `*ḗ` | no | negative control, two grounds |
-| `*smérwijaną` | no, `*wi` | yes | no | negative control |
-| `*skawōjaną` | no, `*wō` | yes | no | negative control |
-| `*skáwōjaną` | no, `*wō` | yes | no | negative control |
-| `*wainōjaną` | no, word-initial `w` | no | no | negative control |
-| `*wéljaną` | no, `*lj` | no | no | negative control |
-| `*weljô` | no, `*lj` | no | no | negative control |
-| `*wéljô` | no, `*lj` | no | no | negative control |
+| `*xáwją` (hay) | yes | yes, `*á` | **yes** | correct, Campbell §120.2 p. 46, R&T p. 53 |
+| `*stráwjaną` (strew) | yes | yes, `*á` | **yes** | correct, Campbell §120.2 p. 46, R&T p. 53 |
+| `*xéwją` (hue) | yes | yes, `*é` | **yes** | correct, Campbell §120.2 p. 46, R&T p. 53; see §5.2 |
+| `*knéwą` (knee) | no, no `*j` at all | yes, `*é` | no | structural non-member, minimal pair with *hue* |
+| `*lḗwijaną` (betray) | no, `*wi` | no, long `*ḗ` | no | structural non-member, two grounds |
+| `*smérwijaną` (smear) | no, `*wi` | yes | no | structural non-member |
+| `*skáwōjaną` (show) | no, `*wō` | yes | no | structural non-member |
+| `*wéljaną`, `*wéljô` (will) | no, `*lj` | no, word-initial `w` | no | structural non-member |
+| `*kéwwaną`, `*xáwwaną`, `*dáwwō` | no `*j` | yes | no | Proto-Germanic geminate by Verschärfung |
+| `*snáiwaz`, `*sáiwiz` | no `*j` | no, diphthong | no | structural non-member |
 
-The branch affects exactly **two cognate sets**, both of which the handbooks
+The branch affects exactly **three cognate sets**, all of which the handbooks
 place squarely in its domain. Machine verification of the rule in isolation:
 
 ```
 *x*á*w*j*ą          -> *x*á*w*w*j*ą
+*x*é*w*j*ą          -> *x*é*w*w*j*ą
 *s*t*r*á*w*j*a*n*ą  -> *s*t*r*á*w*w*j*a*n*ą
+*k*n*é*w*ą          -> unchanged
 *l*ḗ*w*i*j*a*n*ą    -> unchanged
 *s*m*é*r*w*i*j*a*n*ą -> unchanged
 *s*k*á*w*ō*j*a*n*ą  -> unchanged
 ```
 
-SC010's witnessed lexeme count rises from 8 to 10: *hedge, laugh, lung, net,
-set, sit, will* plus *hay* and *strew*.
+The negative forms above are engineering near-misses and are labelled as such
+in the regression suite. They are **not** independent demonstrations of the
+short-syllable conditioning: in each the `*w` simply is not before a `*j`.
 
-### 5.2 Why no accidental geminates arise
+That conditioning cannot in fact be demonstrated directly with a `*wj`
+minimal pair, and the reason is Sievers' law. After a heavy syllable the
+suffix surfaces with the `*-ij-` allomorph, which is precisely why *betray*
+is `*lḗwijaną` and *smear* is `*smérwijaną` rather than `**lḗwjaną` and
+`**smérwjaną`. A clean long-syllable `*wj` reconstruction therefore does not
+exist to be used as a control, in this corpus or in Proto-Germanic. The
+regression suite records this by requiring every selected `*wj` form to have a
+short vowel, so that a source-supported long-syllable `*wj` form, should one
+ever be found, surfaces immediately as the missing control.
 
-The corpus contains no `*iwj` sequence. R&T's `*niwjaz`, `*siwjaną` and
-`*gliwjas` are absent, so the branch cannot create a geminate that SC029,
-whose context requires a preceding `*a`, would be unable to resolve. Had such
-a form been present it would have needed the separate `*iuwj` treatment of
-Campbell §120.2, which CAPR does not model. This is recorded as a boundary
-condition on the branch: **adding any `*iwj` lexeme requires modelling that
-outcome first.**
+### 5.2 The `*iwj` continuation, and why it is a control rather than a hazard
+
+The earlier statement of this section treated an `*iwj` lexeme as a hazard,
+on the grounds that SC010 would create a geminate which SC029, whose context
+requires a preceding `*a`, could not resolve. That was wrong about the
+history, and the corpus is now corrected.
+
+Campbell states the two types together and then separates their outcomes
+(§120.2 p. 46):
+
+> A similar development took place when *u* was doubled before *j* by the West
+> Gmc. gemination of consonants (see §407): *auj* > *auuj* > *auj*, and *iuj* >
+> *iuuj* > *iuj*. ... Generally, the *u* of *auuj* is lost, so that the final
+> result is *ēġ* or *ieġ*, but the *j* of *iuuj* is lost, so that the result is
+> *īow* or *īew*.
+
+So gemination is shared; what differs is which of the two glides survives the
+later resolution. Ringe and Taylor supply the comparative warrant for the
+front-vowel half independently of the disputed `*awj` cases, reconstructing
+PWGmc `*[niwwa-]`, `*[siwwian]` and `*[gliwwias]` (p. 53). An `*iwj` lexeme is
+therefore not an unmodelled hazard; it is exactly the witness the branch was
+missing, because before it every witness of the gemination also underwent the
+`*awwj` resolution.
+
+The corpus now carries one. The selected input is *hue*, PGmc `*xéwją`, from
+Kroonen's `*heuja-` n. 'visible layer, appearance' (p. 224, s.v.; Go. *hiwi*,
+ON *hý*, OE *hīw*, *hēow*, ME *hue*); the prevocalic `*-u-` is written `*w`
+as in *knee* `*knéwą` and *chew* `*kéwwaną`, and the raising of `*e` to `*i`
+before `*j` is left to the cascade, so `*xíwją` reaches the same output. The
+counterpart is Campbell's West Saxon *hīew*, which he prints beside *hīow* in
+this very section; his rule is that the resulting *iu-* "appears as *io-* in
+nW-S, *ie-* in W-S", and CAPR targets West Saxon throughout.
+
+No new rule and no new branch was required. The existing machinery already
+models the continuation: the geminate is simplified by SC031
+`OEWWSimplification`, and the `*j` is lost after the now heavy syllable. The
+derivation is in §8.
+
+Two other members of Campbell's list were considered and rejected. His
+headline example, *nīowe*, *nīewe* 'new', cannot be targeted because the
+cascade does not model the inflectional `*-e` of *ja*-stem adjectives: it
+yields *grēn* for *grēne* and *mild* for *milde*, so 'new' would have failed
+for reasons wholly unrelated to gemination. That gap is recorded in §11 as
+separate debt. Campbell's *glīow*, *glīw* 'mirth' is a genuine member of the
+type, but he prints no West Saxon *glīew*.
+
+### 5.2.1 The paradigm contrast, recorded but not entered in the corpus
+
+Ringe and Taylor's own argument for the gemination rests on a contrast
+*within* paradigms: cells whose ending contained `*j` geminate, cells whose
+ending contained `*i` do not. They cite OHG *hewi* beside *houwi* for this
+very lexeme, and, inside Old English itself, *glīg* from the non-geminated
+nominative beside *glīowes* in the geminated genitive (p. 53).
+
+That is strong comparative warrant, and it is cited in the reader-facing
+chapter. It is deliberately **not** entered in the corpus: representing it
+would require two selected protoforms for a single lexical derivation, which
+the project's conventions do not permit. The corpus tests the claim instead
+through the *hay* : *hue* minimal pair, where the inputs differ in one
+segment, both geminate, and only then diverge.
 
 ### 5.3 Not a separate historical identity
 
@@ -273,24 +338,44 @@ OEDiphthongLeveling:      *s*t*r*ēa*j*a*n*ą      <- SC032
 
 These reproduce R&T p. 53 and Campbell §120.2 step for step.
 
+*hue*, PGmc `*xéwją`, expected `hīew`, output `hīew`:
+
+```
+EnglishProtoInput:        *x*é*w*j*ą
+PWGmcJGemination:         *x*é*w*w*j*ą      <- SC010, the shared gemination
+OEEwLongDiphthong:        *x*ēo*w*w*j*ą     <- SC033
+OEWWSimplification:       *x*ēo*w*j*ą       <- SC031
+OEVelarFricativePalatalization: *ç*ēo*w*j*ą
+OEHeavySyllableNasalApocope:    *ç*ēo*w*j
+OEIUmlaut:                *ç*īe*w*j
+OEJLossAfterHeavy:        *ç*īe*w
+OldEnglishOrthography:    h*īe*w
+```
+
+SC029 and SC030 do not appear in this trace, which is the point of the row.
+The two types share the geminate and then part company exactly as Campbell
+describes: *hay* loses its `*w` and keeps its `*j`, surfacing as *hīeġ*, while
+*hue* loses its `*j` and keeps its `*w`, surfacing as *hīew*.
+
 ## 9. Unchanged conclusions of 11aa99e8
 
 - **SC029 to SC030 remains genuine historical feeding.** SC029 still produces
   secondary `*au`, SC030 still fronts it. R&T p. 173: "These new *au also
   underwent the development to éa."
 - **SC030's identity is untouched.** It remains Anglo-Frisian brightening
-  applied to the first element of `*au`, English in scope, confidence A, and
-  it still fires on 18 rows of which 16 are inherited `*au`. The repair
-  concerns only how the two secondary inputs reach it.
-- **SC030 to SC032 remains feeding**, with the 18-row no-output displacement
-  set still classified technical.
+  applied to the first element of `*au`, English in scope, confidence A. The
+  large majority of the rows it fires on carry inherited `*au` and establish
+  it independently of the two secondary inputs; the repair concerns only how
+  those secondary inputs reach it.
+- **SC030 to SC032 remains feeding**, with the no-output displacement set
+  still classified technical.
 - **No reorder.** The disjointness of SC030 and SC043 proved in 11aa99e8 is
   unaffected.
 
 ## 10. Effect on outputs and fingerprints
 
-No Old English surface output changed. The equivalence report still reports
-all 386 rows identical between production and sandbox.
+No Old English surface output changed. The equivalence report continues to
+find every row identical between production and sandbox.
 
 Changed fingerprints, each an explicit consequence of the repair:
 
@@ -299,24 +384,34 @@ Changed fingerprints, each an explicit consequence of the repair:
 | `germanic-aligned-final.tsv` sha256 `c2ed8023` to `4a4c3bf0` | *hay* protoform corrected in 4 rows |
 | `germanic.txt` sha256 `eff0fe0b` to `7ef79508` | SC010 `*w` branch added, SC029 singleton branches removed |
 | `oe_full_trace_report.txt` | *hay* provenance, plus SC010 now firing for *hay* and *strew* |
-| `rule_coverage_census.tsv` | SC010 witnessed lexemes 8 to 10 |
+| `rule_coverage_census.tsv` | SC010 gains its two `*awj` witnesses |
+
+The `*iwj` follow-up then added *hue*, which changes the corpus fingerprint
+again and adds one trace block and one witness to each rule the new row
+exercises. No previously present row changed its output.
 
 This is a diagnosed scientific correction, not a rebaseline.
 
 ## 11. Deferred, carried forward
 
-1. **Foma identifier renames.** `OEAwjGlideFormation` is now plainly
-   misleading: the change is neither glide formation nor a singleton-input
-   rule. `OEAuFronting` is also weaker than SC030's established identity.
-   Both renames are deferred again, because this commit changes corpus and
-   rule semantics and so cannot pass the behaviour-neutral rename gate. The
-   debt is now two commits old and should be discharged in a dedicated
-   rename-only commit.
-2. **`*iwj` boundary condition**, §5.2 above.
+1. **Foma identifier renames.** `OEAwjGlideFormation` is plainly misleading:
+   the change is neither glide formation nor a singleton-input rule.
+   `OEAuFronting` is also weaker than SC030's established identity. Both are
+   discharged in the behaviour-neutral commit that follows this one, once the
+   SC030/SC043 ontology and the `*iwj` question were settled.
+2. **The `*ja`-stem adjective inflection.** The cascade does not model the
+   inflectional `*-e` of that class: `*grōnijaz` yields *grēn* for *grēne* and
+   `*míldijaz` yields *mild* for *milde*. This is why Campbell's headline
+   `*iwj` example, *nīowe* 'new', could not be used as the witness in §5.2.
+   It is a morphological gap, unconnected to gemination, and is logged here
+   for a later dedicated pass.
 3. **SC010's other gaps.** `*þ` and `*z` are absent from the rule. R&T p. 52
    establish `*z` as a genuine exception, so its absence is correct; `*þ` was
    not investigated here and is out of scope.
-4. **SC032 scope**, unchanged from 11aa99e8 §11.
+4. **SC032 scope**, unchanged from 11aa99e8 §11. SC032 appears to combine
+   general English `*æu` > *ēa* material with specifically West Saxon
+   developments, and SC031 `OEWWSimplification` is scoped to West Saxon
+   although `*ww` degemination looks more general. Both are observations for
+   the next bounded task, not conclusions of this one.
 5. **`docs/refs.bib` `Hogg1992` pointer defect**, unchanged from 11aa99e8
-   §11.4. Deliberately excluded from this scientific commit; it belongs in a
-   separate hygiene commit.
+   §11.4. Repaired in the hygiene commit that follows this one.

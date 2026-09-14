@@ -72,24 +72,31 @@ frozen into tests.
 
 ### 2.1 SC029, complete population
 
-Two of 386 selected corpus rows.
+Two selected corpus rows.
 
 | concept | protoform | before | after | attested |
 |---|---|---|---|---|
-| hay | \emph{*xáwwją} | `*x*á*w*w*j*ą` | `*x*áu*j*ą` | \emph{hīeġ} |
-| strew | \emph{*stráwjaną} | `*s*t*r*á*w*j*a*n*ą` | `*s*t*r*áu*j*a*n*ą` | \emph{strīeġan} |
+| hay | \emph{*xáwją} | `*x*á*w*w*j*ą` | `*x*áu*j*ą` | \emph{hīeġ} |
+| strew | \emph{*stráwjaną} | `*s*t*r*á*w*w*j*a*n*ą` | `*s*t*r*áu*j*a*n*ą` | \emph{strīeġan} |
 
-Both firings take a stressed branch. The two unstressed branches
-(`{*a} {*w} {*w} {*j}` and `{*a} {*w} {*j}`) have no witness in the corpus.
+In both, the input SC029 reads is the West Germanic geminate that SC010
+creates from a Proto-Germanic singleton \emph{*w}. Both firings take a stressed
+branch; the unstressed branch has no witness in the corpus.
 
-`hay` takes the geminate branch and `strew` the singleton branch. Section 6
-shows that this split reflects two different reconstruction depths in the
-corpus, and not two historical mechanisms.
+An earlier draft of this memo recorded that `hay` took a geminate branch of
+SC029 while `strew` took a singleton branch, and explained the split as two
+different reconstruction depths in the corpus. The split was a corpus defect,
+not a fact about the change: `hay` had been entered with a West Germanic
+geminate in a Proto-Germanic slot. The protoform was corrected, SC010 was
+extended to \emph{*w}, and the singleton branches of SC029, which no witness
+required once both inputs arrived as geminates, were removed. See
+`sc010-w-gemination-and-hay-depth-adjudication.md`.
 
 ### 2.2 SC030, complete population
 
-Eighteen of 386 selected corpus rows. Every firing takes the stressed `{*áu}`
-branch; the unstressed `{*au}` branch has no witness.
+Eighteen selected corpus rows at the time of the adjudication. Every firing
+takes the stressed `{*áu}` branch; the unstressed `{*au}` branch has no
+witness.
 
 Inherited \emph{*au}, sixteen rows:
 
@@ -365,6 +372,47 @@ re-evaluation that the registry anticipated is not needed. The old
 `chronology_problem` text and the `possible_fst_reorder_later` action status are
 retracted as resting on a misidentification of SC030.
 
+### 7.1 Do SC030 and SC043 share one canonical historical identity?
+
+No, and the distinction matters. They are the same phonetic process, but not
+the same historical event, and they must not be merged into one registry
+identity.
+
+Fulk states the relation in one sentence. Having defined the fronting of plain
+\emph{*a} and named it, "This fronting is commonly referred to as Anglo-Frisian
+Brightening", he continues: "This fronting of *a* applied also to the diphthong
+*au* in OE, producing *ēa*" [@Fulk2018, p. 73, §4.12]. The wording is precise
+and worth keeping. Brightening is one process; SC043 is its operation on the
+plain vowel, and SC030 is its application to the first element of the
+diphthong.
+
+Three things follow.
+
+**They are one process.** Nothing distinguishes the two phonetically. Both
+front a low back vowel to a low front one, and the executable clauses differ
+only in what follows the vowel. Any account that treats SC030 as a wholly
+unrelated change misses what Fulk says plainly.
+
+**They are two events.** Their isoglosses differ, and that is a historical
+fact, not a modelling convenience. Brightening of plain \emph{*a} is
+Anglo-Frisian: OE *fæder*, *dæg*, *læt* against OFris. *feder*, *dei*, *let*.
+Brightening of the diphthong is English only, because Old Frisian took the
+diphthong somewhere else entirely, monophthongizing \emph{au} to \emph{ā}
+[@Fulk2018, p. 73, §4.12]. A single change cannot have two isoglosses.
+
+**The scope difference has an independent diagnostic.** It does not rest on the
+direct reflexes alone. Old English *gēac* 'cuckoo' has a palatalized initial,
+which requires that a front vowel followed it; Old Frisian *gāk* has none
+[@Fulk2018, p. 73, §4.12]. The palatalization is a later change reading the
+output of the fronting, so it witnesses the fronting even where the vowel
+itself has since been obscured. That is why the scope claim is secure enough
+to carry a confidence A.
+
+The registry therefore keeps two rows. SC043 is Anglo-Frisian Brightening;
+SC030 is the application of that fronting to the diphthong in English. Neither
+is a duplicate of the other, and §7 above shows that their executable domains
+are provably disjoint, so nothing is lost by keeping them apart.
+
 ## 8. Relation to SC032
 
 Bounded question only; SC032 is not adjudicated here.
@@ -375,14 +423,26 @@ fronted to æu [...] later the offglide was unrounded and lowered"
 precede the first because it operates on a segment the first step creates.
 SC030 feeds SC032 historically.
 
+The intermediate is better evidenced than the earlier draft of this memo
+allowed. Fulk states that the fronting produced \emph{ēa} "at first a diphthong
+with a rounded off-glide, as shown by early spellings, e.g. (aeodbald) (i.e.
+Eadbald, name) in Bede, with rounding persisting in late Northumbrian"
+[@Fulk2018, p. 73, §4.12]. So the stage that CAPR writes `*aeu` is not a purely
+theoretical construct: it has a documentary witness in the early spelling of a
+name, and a dialectal one in late Northumbrian. The reconstruction of an
+intermediate between SC030 and SC032 therefore rests on attested spellings as
+well as on the handbooks' ordered narrative.
+
 The *executable* evidence recorded for the relation is a different matter and
-must not be promoted. Displacing SC030 after SC032 yields eighteen rows with no
-output. That happens because `*aeu` is an internal symbol with no surface
-realization: if SC032 runs first there is nothing for it to consume, and the
-`*aeu` that SC030 then creates survives to the surface and is rejected. The
-failure demonstrates that `*aeu` is a non-surface intermediate. It does not
+must not be promoted. Displacing SC030 after SC032 leaves a set of rows with no
+output. That happens because `*aeu` has no surface realization in the model: if
+SC032 runs first there is nothing for it to consume, and the `*aeu` that SC030
+then creates survives to the surface and is rejected. The failure demonstrates
+that `*aeu` is a non-surface intermediate of CAPR's own. It does not
 independently demonstrate a historical interval. The historical direction is
-established by the source, and the edge notes now say so.
+established by the sources, and the documentary support for the intermediate
+comes from Fulk's early spellings, not from the transducer's sensitivity to
+rule order. The edge notes say so.
 
 One observation is recorded without acting on it. SC032 is registered as
 `ws_oe` / `west_saxon`, but the \emph{*æu} > \emph{ēa} clause within it is
@@ -436,12 +496,12 @@ two, and that uncertainty belongs to SC032.
 
 ## 11. Deferred work
 
-1. **Foma identifier renames.** `OEAwjGlideFormation` is now a misnomer twice
-   over, since the change is not glide formation and the glide is being made
-   vocalic. `OEAuFronting` is accurate but understates the identification with
-   brightening. This commit changes rule metadata and prose, so the
-   behaviour-neutral rename gate cannot be satisfied here. Both renames are
-   deferred to an isolated pass.
+1. **Foma identifier renames. Now discharged.** `OEAwjGlideFormation` was a
+   misnomer twice over, since the change is not glide formation and the glide
+   is being made vocalic. `OEAuFronting` was accurate but understated the
+   identification with brightening. Both were renamed in an isolated
+   behaviour-neutral commit once the SC030/SC043 ontology of section 7.1 and
+   the \emph{*iwj} question were settled.
 
 2. **`hay` protoform depth. Now discharged.** \emph{*xáwwją} encoded a West
    Germanic geminate in a Proto-Germanic slot (section 6). The follow-up
@@ -450,17 +510,16 @@ two, and that uncertainty belongs to SC032.
    \emph{*j}. See
    `audits/sc010-w-gemination-and-hay-depth-adjudication.md`.
 
-3. **SC032 scope.** Recorded in section 8.
+3. **SC032 scope.** Recorded in section 8, and still open.
 
-4. **Bibliography defect, unrelated to these changes.** `docs/refs.bib` entry
-   `Hogg1992` is titled "A Grammar of Old English. Volume 1: Phonology" but its
-   `file` field points at `docs/references/hogg_vol1.txt`, which is *The
-   Cambridge History of the English Language*, volume 1, edited by Hogg. The key
-   is currently uncited in the Germanic documents, so nothing is misattributed
-   today. Hogg's chapter in that volume corroborates section 4.1 at p. 101,
-   where he gives \emph{au} > \emph{æu} and lists \emph{æu} in the post-fronting
-   vowel system, but it is not cited in the reader prose until the entry is
-   fixed.
+4. **Bibliography defect. Now discharged.** `docs/refs.bib` entry `Hogg1992`
+   was titled "A Grammar of Old English. Volume 1: Phonology" while its `file`
+   field pointed at a transcript of *The Cambridge History of the English
+   Language*, volume 1, edited by Hogg. The key was uncited in the Germanic
+   documents, so nothing had been misattributed. It was corrected in the
+   hygiene commit that follows. Hogg's chapter in that volume corroborates
+   section 4.1 at p. 101, where he gives \emph{au} > \emph{æu} and lists
+   \emph{æu} in the post-fronting vowel system.
 
 5. **Citation defect, corrected here.** The reader chapter cited
    `[@RingeTaylor2014, p. 188]`. CAPR cites Ringe and Taylor by printed page,
@@ -469,14 +528,13 @@ two, and that uncertainty belongs to SC032.
 
 ## 12. Corpus effect
 
-No new lexeme was added. The corpus already contains a geminate witness, a
-singleton witness and sixteen independent inherited-\emph{*au} witnesses, which
-covers every distinction the adjudication needed. Adding vocabulary would have
-padded the count without testing anything new.
+This adjudication added no lexeme. It changed no Foma rule and moved no rule,
+so it produced no derivation changes.
 
-No Foma rule was changed and no rule was moved by this adjudication, so it
-produced no derivation changes. The follow-up repair recorded in
-`audits/sc010-w-gemination-and-hay-depth-adjudication.md` subsequently
-corrected `hay`'s protoform and added the \emph{*w} branch of SC010. That
-changed the corpus and rule fingerprints and made SC010 fire for `hay` and
-`strew`, but left every Old English surface output unchanged.
+Two follow-ups did change the corpus, and both are recorded in
+`audits/sc010-w-gemination-and-hay-depth-adjudication.md`. The first corrected
+`hay`'s protoform and added the \emph{*w} branch of SC010. The second added
+*hue*, PGmc \emph{*xéwją}, so that the gemination has a witness which does not
+also undergo the resolution described here. Together they changed the corpus
+and rule fingerprints and gave SC010 three witnesses where it had none, but
+left every previously present Old English surface output unchanged.

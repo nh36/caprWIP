@@ -801,6 +801,13 @@ def stage_to_language(label: str, form: str) -> str:
     return "preoe" if form.startswith("*") else "oe"
 
 
+# The compact derivation report labels the selected input with the name of the
+# Foma input-filter network, which has been renamed over time (ProtoInput ->
+# EnglishProtoInput). Matching only one spelling silently drops every selected
+# input from the index, so accept both and fail closed if neither is found.
+PROTO_INPUT_RE = re.compile(r"^(?:English )?Proto Input:\s*(.+)$", re.M)
+
+
 def add_production(
     store: dict[tuple[str, str, str, str, str, str, str], ProductionOccurrence],
     *,
@@ -888,7 +895,7 @@ def parse_compact_entries() -> list[dict[str, object]]:
         proto_match = re.search(r"^PROTO:\s*(.+)$", block, re.M)
         expected_match = re.search(r"^EXPECTED:\s*(.+)$", block, re.M)
         outputs_match = re.search(r"^OUTPUTS:\s*(.+)$", block, re.M)
-        proto_input_match = re.search(r"^Proto Input:\s*(.+)$", block, re.M)
+        proto_input_match = PROTO_INPUT_RE.search(block)
         table_lines: list[str] = []
         in_table = False
         for line in chunk:
@@ -918,6 +925,11 @@ def parse_compact_entries() -> list[dict[str, object]]:
                 "proto_input": proto_input_match.group(1).strip() if proto_input_match else "",
                 "stages": stages,
             }
+        )
+    if entries and not any(entry["proto_input"] for entry in entries):
+        raise ValueError(
+            "compact derivation report yielded no selected inputs; the "
+            "'Proto Input:' label has probably changed again (see PROTO_INPUT_RE)"
         )
     return entries
 

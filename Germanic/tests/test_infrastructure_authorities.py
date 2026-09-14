@@ -40,15 +40,27 @@ BASELINE_DIR = SC_DIR / "cascade_baseline"
 CARD_INDEX = (SC_DIR / "order_tests/chronology_cards"
               / "chronology_card_index.tsv")
 
-# Rebaselined 2026 for the `thought` addition (sc025-sc104 memo §12): one
-# corpus row added (thought, PGmc *θánxtē > OE þōhte) as the live low-vowel
-# witness of SC103 -> SC104. Every pre-existing output is byte-identical, so
-# the legacy-380 fingerprint below is unchanged.
+# Rebaselined 2026 for the SC010 *w-gemination follow-up. Two diagnosed
+# causes, and no unexplained output change:
+#   1. hay's selected input was corrected from the anachronistic PGmc
+#      *xáwwją, which carried a West Germanic geminate in a Proto-Germanic
+#      slot, to *xáwją (sc010-w-gemination-and-hay-depth-adjudication.md).
+#      Its output stays hīeġ, but the fingerprints hash the input alongside
+#      the output, so both move. The legacy-380 key file was repointed to the
+#      corrected protoform so that the frozen subset still contains all 380
+#      original lexemes; without that it would silently shrink to 379 and
+#      stop guarding hay at all.
+#   2. row hue (2332, PGmc *xéwją > OE hīew) was added as the *iwj witness,
+#      taking the corpus from 386 to 387.
+# Every pre-existing Old English output is byte-identical: the outputs table
+# differs from the previous baseline only in hay's input column and in the
+# added hue row, and the matched/mismatched split is unchanged at 7
+# documented mismatches.
 EXPECTED_OUTPUTS_SHA256 = (
-    "862b0908b2ab44097eeda3bf82f95d76625eb169230efa3a072eb93c1311c35b")
+    "4c7854c06948b1f63456d0726c48e9bb26ac1049491300ad22f6206ecb2e3bf8")
 EXPECTED_LEGACY_SUBSET_SHA256 = (
-    "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc")
-EXPECTED_ROW_COUNT = 386
+    "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf")
+EXPECTED_ROW_COUNT = 387
 
 
 def _load(name):

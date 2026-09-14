@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (305) ===
+=== DERIVATION_CLASS: regular (310) ===
 
 
 
@@ -11,11 +11,11 @@ OUTPUTS: nǣdre
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nḗdrōn
+English Proto Input: *nḗdrōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *nḗdrǭ<br>PNWGmc Long E Lowering: *nǣdrǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *nǣdræ<br>OE Unstressed AE Merger: *nǣdre |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *nādrōn<br>PNWGmc N Stem N Loss: *nādrǭ<br>EAF Long A Fronting: *nǣdrǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *nǣdræ<br>OE Unstressed AE Merger: *nǣdre |
 
 
 
@@ -34,7 +34,7 @@ OUTPUTS: bacan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bákaną
+English Proto Input: *bákaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -59,7 +59,7 @@ OUTPUTS: beorg
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bérgą
+English Proto Input: *bérgą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -82,7 +82,7 @@ OUTPUTS: bæst
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bástą
+English Proto Input: *bástą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -105,7 +105,7 @@ OUTPUTS: bæþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *báθą
+English Proto Input: *báθą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -129,7 +129,7 @@ OUTPUTS: beard
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bárdaz
+English Proto Input: *bárdaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -152,7 +152,7 @@ OUTPUTS: befer
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bébruz
+English Proto Input: *bébruz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -175,7 +175,7 @@ OUTPUTS: bōc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bōkō
+English Proto Input: *bōkō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -200,7 +200,7 @@ OUTPUTS: beġinnan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bigínnaną
+English Proto Input: *bigínnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -226,11 +226,11 @@ OUTPUTS: ġelīefan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *galáubijaną
+English Proto Input: *galáubijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Fronting: *galáeubijaną<br>OE Diphthong Leveling: *galēabijaną<br>OE Prefix A Reduction Early: *gĕlēabijaną<br>OE Heavy Syllable Nasal Apocope: *gĕlēabijan<br>OE Secondary Nasalization: *gĕlēabijąn<br>PGmc B Allophony: *gĕlēaβijąn<br>Sievers Law Syncope: *gĕlēaβjąn<br>OE Velar Palatalization: *ʤĕlēaβjąn<br>OE I Umlaut: *ʤĕlīeβjąn<br>OE Weak Tail Reduction: *ʤĕlīeβjan<br>OE J Loss After Heavy: *ʤĕlīeβan |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Fronting: *galáeubijaną<br>OE Diphthong Leveling: *galēabijaną<br>OE Prefix A Reduction: *gĕlēabijaną<br>OE Heavy Syllable Nasal Apocope: *gĕlēabijan<br>OE Secondary Nasalization: *gĕlēabijąn<br>PGmc B Allophony: *gĕlēaβijąn<br>Sievers Law Syncope: *gĕlēaβjąn<br>OE Velar Palatalization: *ʤĕlēaβjąn<br>OE I Umlaut: *ʤĕlīeβjąn<br>OE Weak Tail Reduction: *ʤĕlīeβjan<br>OE J Loss After Heavy: *ʤĕlīeβan |
 
 
 
@@ -250,7 +250,7 @@ OUTPUTS: bielġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bálgiz
+English Proto Input: *bálgiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -265,6 +265,31 @@ Outcome: bielġ
 
 
 
+# betray
+PROTO: *lḗwijaną
+EXPECTED: lǣwan
+OUTPUTS: lǣwan
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *lḗwijaną
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *lāwijaną<br>EAF Long A Fronting: *lǣwijaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *lǣwijan<br>OE Secondary Nasalization: *lǣwijąn<br>Sievers Law Syncope: *lǣwjąn<br>OE Weak Tail Reduction: *lǣwjan<br>OE J Loss After Heavy: *lǣwan |
+
+
+
+### Orthography & surface
+
+Outcome: lǣwan
+
+NOTE: Weak verb class I 'to betray', PGmc *lēwijaną (Goth. lewjan) > PWGmc *lāwijan (OHG gi-lāen) > WS *lǣwjan > lǣwan (R/T 2014: 150). The *w is INHERITED (not hiatus-filling) and is followed by high-front *i at the fronting stage, so SC101 fronts the *ā: one of R/T's three witnesses that *ā, like short *a, was fronted before *w followed by a high front vowel (with eltǣwe and brǣw, R/T 2014: 150). The front root vowel is supplied by SC101 fronting itself, not by later i-umlaut — the SC101-boundary form is already *lǣwijaną.
+
+
+
 # bier
 PROTO: *bḗrō
 EXPECTED: bǣr
@@ -274,11 +299,11 @@ OUTPUTS: bǣr
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bḗrō
+English Proto Input: *bḗrō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *bḗru<br>PNWGmc Long E Lowering: *bǣru<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *bǣr |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *bārō<br>PNWGmc Final Long O Raising: *bāru<br>EAF Long A Fronting: *bǣru<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *bǣr |
 
 
 
@@ -299,7 +324,7 @@ OUTPUTS: bindan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bíndaną
+English Proto Input: *bíndaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -322,7 +347,7 @@ OUTPUTS: byrd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búrdiz
+English Proto Input: *búrdiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -347,7 +372,7 @@ OUTPUTS: blōd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *blōdą
+English Proto Input: *blōdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -370,7 +395,7 @@ OUTPUTS: bord
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búrdą
+English Proto Input: *búrdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -393,7 +418,7 @@ OUTPUTS: bān
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *báiną
+English Proto Input: *báiną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -418,7 +443,7 @@ OUTPUTS: bōc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bōkz
+English Proto Input: *bōkz
 Root Noun Nom Z Loss: *bōk
 
 | Earlier Germanic developments | Old English developments |
@@ -442,7 +467,7 @@ OUTPUTS: borian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búrōjaną
+English Proto Input: *búrōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -465,7 +490,7 @@ OUTPUTS: bōsm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bōsmaz
+English Proto Input: *bōsmaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -488,7 +513,7 @@ OUTPUTS: bū
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bō
+English Proto Input: *bō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -513,7 +538,7 @@ OUTPUTS: bōg
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bōguz
+English Proto Input: *bōguz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -536,7 +561,7 @@ OUTPUTS: bīeġan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *báugijaną
+English Proto Input: *báugijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -562,7 +587,7 @@ OUTPUTS: boga
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búgô
+English Proto Input: *búgô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -585,7 +610,7 @@ OUTPUTS: būr
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *būrą
+English Proto Input: *būrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -608,7 +633,7 @@ OUTPUTS: brēad
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bráudą
+English Proto Input: *bráudą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -631,7 +656,7 @@ OUTPUTS: brecan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *brékaną
+English Proto Input: *brékaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -654,7 +679,7 @@ OUTPUTS: brēċ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *brōkiz
+English Proto Input: *brōkiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -680,7 +705,7 @@ OUTPUTS: brȳd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *brūdiz
+English Proto Input: *brūdiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -703,7 +728,7 @@ OUTPUTS: bringan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *brínganą
+English Proto Input: *brínganą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -726,7 +751,7 @@ OUTPUTS: brūcan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *brūkaną
+English Proto Input: *brūkaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -749,7 +774,7 @@ OUTPUTS: berstan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bréstaną
+English Proto Input: *bréstaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -772,7 +797,7 @@ OUTPUTS: ċealf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kálbaz
+English Proto Input: *kálbaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -798,7 +823,7 @@ OUTPUTS: ċēowan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kéwwaną
+English Proto Input: *kéwwaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -822,7 +847,7 @@ OUTPUTS: climban
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *klímbaną
+English Proto Input: *klímbaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -845,7 +870,7 @@ OUTPUTS: rocc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rúkkaz
+English Proto Input: *rúkkaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -870,7 +895,7 @@ OUTPUTS: camb
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kámbaz
+English Proto Input: *kámbaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -893,7 +918,7 @@ OUTPUTS: corn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kúrną
+English Proto Input: *kúrną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -918,7 +943,7 @@ OUTPUTS: cropp
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *krúppaz
+English Proto Input: *krúppaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -941,7 +966,7 @@ OUTPUTS: dæl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dálaz
+English Proto Input: *dálaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -964,7 +989,7 @@ OUTPUTS: dæġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dágaz
+English Proto Input: *dágaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -988,7 +1013,7 @@ OUTPUTS: dǣl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dáiliz
+English Proto Input: *dáiliz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1011,11 +1036,11 @@ OUTPUTS: dǣd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dḗdiz
+English Proto Input: *dḗdiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *dḗdi<br>PNWGmc Long E Lowering: *dǣdi<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *dǣd |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *dādiz<br>EAF Final Z Deletion: *dādi<br>EAF Long A Fronting: *dǣdi<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *dǣd |
 
 
 
@@ -1036,11 +1061,11 @@ OUTPUTS: dēor
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *déuzą
+English Proto Input: *déuzą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>Rhotacism: *déurą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *dēorą<br>OE Heavy Syllable Nasal Apocope: *dēor |
+| **Northwest and West Germanic**<br>EAF Rhotacism: *déurą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *dēorą<br>OE Heavy Syllable Nasal Apocope: *dēor |
 
 
 
@@ -1059,7 +1084,7 @@ OUTPUTS: dēaw
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dáwwō
+English Proto Input: *dáwwō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1082,7 +1107,7 @@ OUTPUTS: dōn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dōną
+English Proto Input: *dōną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1105,7 +1130,7 @@ OUTPUTS: dor
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dúrą
+English Proto Input: *dúrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1130,7 +1155,7 @@ OUTPUTS: dāg
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dáigaz
+English Proto Input: *dáigaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1153,8 +1178,8 @@ OUTPUTS: drēam
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dráugmaz
-Gm Simplification: *dráumaz
+English Proto Input: *dráugmaz
+PGmc Gm Simplification: *dráumaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1177,7 +1202,7 @@ OUTPUTS: drenċ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *dránkiz
+English Proto Input: *dránkiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1201,7 +1226,7 @@ OUTPUTS: drincan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *drínkaną
+English Proto Input: *drínkaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1224,7 +1249,7 @@ OUTPUTS: drīfan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *drḯbaną
+English Proto Input: *drḯbaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1247,7 +1272,7 @@ OUTPUTS: eorþe
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *érθōn
+English Proto Input: *érθōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1271,7 +1296,7 @@ OUTPUTS: etan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *étaną
+English Proto Input: *étaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1294,11 +1319,11 @@ OUTPUTS: ǣl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *ḗlaz
+English Proto Input: *ḗlaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *ḗla<br>PNWGmc Long E Lowering: *ǣla<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *ǣl |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *ālaz<br>EAF Final Z Deletion: *āla<br>EAF Long A Fronting: *ǣla<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *ǣl |
 
 
 
@@ -1317,7 +1342,7 @@ OUTPUTS: feallan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fállaną
+English Proto Input: *fállaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1340,7 +1365,7 @@ OUTPUTS: faran
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fáraną
+English Proto Input: *fáraną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1365,11 +1390,11 @@ OUTPUTS: fæder
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fádēr
+English Proto Input: *fádēr
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *fádǣr<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *fædǣr<br>OE Unstressed Long Vowel Shortening: *fædær<br>OE Unstressed AE Merger: *fæder |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *fædēr<br>OE Unstressed Long Vowel Shortening: *fæder |
 
 
 
@@ -1388,7 +1413,7 @@ OUTPUTS: feoh
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *féxu
+English Proto Input: *féxu
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1412,7 +1437,7 @@ OUTPUTS: fell
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *féllą
+English Proto Input: *féllą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1437,7 +1462,7 @@ OUTPUTS: fearn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fárnaz
+English Proto Input: *fárnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1462,7 +1487,7 @@ OUTPUTS: feld
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *félθuz
+English Proto Input: *félθuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1487,7 +1512,7 @@ OUTPUTS: feohtan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *féxtaną
+English Proto Input: *féxtaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1511,7 +1536,7 @@ OUTPUTS: finger
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fíngraz
+English Proto Input: *fíngraz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1534,7 +1559,7 @@ OUTPUTS: fisċ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fískaz
+English Proto Input: *fískaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1558,11 +1583,12 @@ OUTPUTS: fȳst
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúnxstiz
+English Proto Input: *fúnxstiz
+PGmc Nasal Loss Before X: *fūxstiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *fúnxsti<br>EAF Nasal Spirant Lengthening: *fūnxsti<br>EAF Nasal Spirant Loss: *fūxsti<br>PNWGmc Preconsonantal X Loss: *fūsti<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳsti<br>OE High Vowel Apocope: *fȳst |
+| **Northwest and West Germanic**<br>PNWGmc Preconsonantal X Loss: *fūstiz<br>EAF Final Z Deletion: *fūsti<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳsti<br>OE High Vowel Apocope: *fȳst |
 
 
 
@@ -1581,7 +1607,7 @@ OUTPUTS: fleax
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fláxsą
+English Proto Input: *fláxsą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1604,7 +1630,7 @@ OUTPUTS: flēah
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fláuxz
+English Proto Input: *fláuxz
 Root Noun Nom Z Loss: *fláux
 
 | Earlier Germanic developments | Old English developments |
@@ -1629,7 +1655,7 @@ OUTPUTS: flēon
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fléuxaną
+English Proto Input: *fléuxaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1652,7 +1678,7 @@ OUTPUTS: flǣsċ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fláiskiz
+English Proto Input: *fláiskiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1676,7 +1702,7 @@ OUTPUTS: flōd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *flōduz
+English Proto Input: *flōduz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1699,7 +1725,7 @@ OUTPUTS: flēogan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fléuganą
+English Proto Input: *fléuganą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1724,7 +1750,7 @@ OUTPUTS: fola
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúlô
+English Proto Input: *fúlô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1747,7 +1773,7 @@ OUTPUTS: fōdor
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fōdrą
+English Proto Input: *fōdrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1770,7 +1796,7 @@ OUTPUTS: fealdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fálθaną
+English Proto Input: *fálθaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1793,7 +1819,7 @@ OUTPUTS: folc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúlką
+English Proto Input: *fúlką
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1816,7 +1842,7 @@ OUTPUTS: lēosan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *léusaną
+English Proto Input: *léusaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1841,7 +1867,7 @@ OUTPUTS: fēower
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fédwōr
+English Proto Input: *fédwōr
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1864,7 +1890,7 @@ OUTPUTS: fox
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúxsaz
+English Proto Input: *fúxsaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1887,7 +1913,7 @@ OUTPUTS: frēosan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fréusaną
+English Proto Input: *fréusaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1910,7 +1936,7 @@ OUTPUTS: frēond
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fríjōndz
+English Proto Input: *fríjōndz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1933,7 +1959,7 @@ OUTPUTS: forst
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *frústą
+English Proto Input: *frústą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1956,7 +1982,7 @@ OUTPUTS: furh
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúrx
+English Proto Input: *fúrx
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -1980,7 +2006,7 @@ OUTPUTS: gang
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gángaz
+English Proto Input: *gángaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2005,7 +2031,7 @@ OUTPUTS: gāst
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gáistaz
+English Proto Input: *gáistaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2028,7 +2054,7 @@ OUTPUTS: ġift
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *géftiz
+English Proto Input: *géftiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2052,7 +2078,7 @@ OUTPUTS: ġiefan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gébaną
+English Proto Input: *gébaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2078,7 +2104,7 @@ OUTPUTS: god
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gúdą
+English Proto Input: *gúdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2101,7 +2127,7 @@ OUTPUTS: gold
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gúlθą
+English Proto Input: *gúlθą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2126,12 +2152,12 @@ OUTPUTS: gōs
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gánsz
+English Proto Input: *gánsz
 Root Noun Nom Z Loss: *gáns
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Nasal Spirant Lengthening: *gōns<br>EAF Nasal Spirant Loss: *gōs<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
+| **Northwest and West Germanic**<br>EAF Nasal Spirant Lengthening: *gãns<br>EAF Nasal Spirant Loss: *gãs<br>EAF Nasalized Low Rounding: *gōs<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
 
 
 
@@ -2150,7 +2176,7 @@ OUTPUTS: græs
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *grásą
+English Proto Input: *grásą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2173,7 +2199,7 @@ OUTPUTS: grafan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *grábaną
+English Proto Input: *grábaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2198,7 +2224,7 @@ OUTPUTS: grīpan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *grḯpaną
+English Proto Input: *grḯpaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2221,7 +2247,7 @@ OUTPUTS: grund
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *grúnduz
+English Proto Input: *grúnduz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2244,7 +2270,7 @@ OUTPUTS: ġiest
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gástiz
+English Proto Input: *gástiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2270,7 +2296,7 @@ OUTPUTS: hæġl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáglą
+English Proto Input: *xáglą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2294,11 +2320,11 @@ OUTPUTS: hǣr
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xḗrą
+English Proto Input: *xḗrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *xǣrą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Velar Fricative Palatalization: *çǣrą<br>OE Heavy Syllable Nasal Apocope: *çǣr |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *xārą<br>EAF Long A Fronting: *xǣrą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Velar Fricative Palatalization: *çǣrą<br>OE Heavy Syllable Nasal Apocope: *çǣr |
 
 
 
@@ -2320,7 +2346,7 @@ OUTPUTS: heall
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xállō
+English Proto Input: *xállō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2344,7 +2370,7 @@ OUTPUTS: hand
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xánduz
+English Proto Input: *xánduz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2368,7 +2394,7 @@ OUTPUTS: handlian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xándlōjaną
+English Proto Input: *xándlōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2394,7 +2420,7 @@ OUTPUTS: hearm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xármaz
+English Proto Input: *xármaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2418,7 +2444,7 @@ OUTPUTS: hierfest
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xárbistuz
+English Proto Input: *xárbistuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2444,7 +2470,7 @@ OUTPUTS: haga
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xágô
+English Proto Input: *xágô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2468,11 +2494,11 @@ OUTPUTS: hafoc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xábukaz
+English Proto Input: *xábukaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *xábuka<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Unstressed U Lowering: *xáboka<br>PWGmc Final Bare A Loss: *xábok<br>EAF Brightening: *xæbok<br>OE Velar Fricative Palatalization: *çæbok<br>OE A Restoration: *çabok<br>PGmc B Allophony: *çaβok |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *xábuka<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *xábuk<br>EAF Brightening: *xæbuk<br>OE Velar Fricative Palatalization: *çæbuk<br>OE A Restoration: *çabuk<br>PGmc B Allophony: *çaβuk<br>OE Med Unstressed U Lowering: *çaβok |
 
 
 
@@ -2484,7 +2510,7 @@ Outcome: hafoc
 
 
 # hay
-PROTO: *xáwwją
+PROTO: *xáwją
 EXPECTED: hīeġ
 OUTPUTS: hīeġ
 
@@ -2492,11 +2518,11 @@ OUTPUTS: hīeġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáwwją
+English Proto Input: *xáwją
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Awj Glide Formation: *xáują<br>OE Au Fronting: *xáeują<br>OE Diphthong Leveling: *xēają<br>OE Velar Fricative Palatalization: *çēają<br>OE Heavy Syllable Nasal Apocope: *çēaj<br>OE I Umlaut: *çīej |
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *xáwwją<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Awj Glide Formation: *xáują<br>OE Au Fronting: *xáeują<br>OE Diphthong Leveling: *xēają<br>OE Velar Fricative Palatalization: *çēają<br>OE Heavy Syllable Nasal Apocope: *çēaj<br>OE I Umlaut: *çīej |
 
 
 
@@ -2516,7 +2542,7 @@ OUTPUTS: hæsl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáslaz
+English Proto Input: *xáslaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2540,11 +2566,11 @@ OUTPUTS: hēafod
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáubudą
+English Proto Input: *xáubudą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Fronting: *xáeubudą<br>OE Diphthong Leveling: *xēabudą<br>OE Med Unstressed U Lowering: *xēabodą<br>OE Velar Fricative Palatalization: *çēabodą<br>OE Heavy Syllable Nasal Apocope: *çēabod<br>PGmc B Allophony: *çēaβod |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Fronting: *xáeubudą<br>OE Diphthong Leveling: *xēabudą<br>OE Velar Fricative Palatalization: *çēabudą<br>OE Heavy Syllable Nasal Apocope: *çēabud<br>PGmc B Allophony: *çēaβud<br>OE Med Unstressed U Lowering: *çēaβod |
 
 
 
@@ -2564,7 +2590,7 @@ OUTPUTS: hǣlan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáilijaną
+English Proto Input: *xáilijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2588,7 +2614,7 @@ OUTPUTS: heorte
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xértōn
+English Proto Input: *xértōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2612,7 +2638,7 @@ OUTPUTS: heorþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xérθaz
+English Proto Input: *xérθaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2636,7 +2662,7 @@ OUTPUTS: hǣþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáiθiz
+English Proto Input: *xáiθiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2660,7 +2686,7 @@ OUTPUTS: heġġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xágjaz
+English Proto Input: *xágjaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2686,7 +2712,7 @@ OUTPUTS: helm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xélmaz
+English Proto Input: *xélmaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2712,7 +2738,7 @@ OUTPUTS: helpan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xélpaną
+English Proto Input: *xélpaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2738,7 +2764,7 @@ OUTPUTS: help
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xélpō
+English Proto Input: *xélpō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2762,7 +2788,7 @@ OUTPUTS: heord
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xérdō
+English Proto Input: *xérdō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2786,7 +2812,7 @@ OUTPUTS: hēawan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáwwaną
+English Proto Input: *xáwwaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2810,7 +2836,7 @@ OUTPUTS: hind
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xéndjō
+English Proto Input: *xéndjō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2836,11 +2862,11 @@ OUTPUTS: hord
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xúzdą
+English Proto Input: *xúzdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc U Lowering: *xózdą<br>Rhotacism: *xórdą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *xórd |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *xózdą<br>EAF Rhotacism: *xórdą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *xórd |
 
 
 
@@ -2860,7 +2886,7 @@ OUTPUTS: healdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáldaną
+English Proto Input: *xáldaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2886,7 +2912,7 @@ OUTPUTS: hām
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xáimaz
+English Proto Input: *xáimaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2910,7 +2936,7 @@ OUTPUTS: huniġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xúnagą
+English Proto Input: *xúnagą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2934,7 +2960,7 @@ OUTPUTS: hōd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xōdaz
+English Proto Input: *xōdaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2958,7 +2984,7 @@ OUTPUTS: hōf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xōfaz
+English Proto Input: *xōfaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -2982,7 +3008,7 @@ OUTPUTS: horn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xúrną
+English Proto Input: *xúrną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3008,7 +3034,7 @@ OUTPUTS: hund
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xúndaz
+English Proto Input: *xúndaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3023,6 +3049,32 @@ Outcome: hund
 
 
 
+# hue
+PROTO: *xéwją
+EXPECTED: hīew
+OUTPUTS: hīew
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *xéwją
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *xéwwją<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Ew Long Diphthong: *xēowwją<br>OE WW Simplification: *xēowją<br>OE Velar Fricative Palatalization: *çēowją<br>OE Heavy Syllable Nasal Apocope: *çēowj<br>OE I Umlaut: *çīewj<br>OE J Loss After Heavy: *çīew |
+
+
+
+### Orthography & surface
+
+Old English Orthography: h*īew
+Outcome: hīew
+
+NOTE: West Germanic j-gemination witness for *w after a short front vowel, the minimal-pair counterpart of hay (*xáwją, row 2061). Kroonen 2013 p. 224 s.v. *heuja- reconstructs PGmc *heuja- n. 'visible layer, appearance' (Go. hiwi n. 'surface appearance, complexion', ON hý n., OE hīw, hēow n. 'shape, form, hue, colour', ME hue); CAPR normalizes the prevocalic *-u- as *w, giving *xéwją, and the cascade raises *é to *í before *j, so the gemination law sees a short front vowel before *wj. Campbell 1959 §120.2 p. 46 states the law for exactly this stem shape: 'auj > auuj > auj, and iuj > iuuj > iuj', adding that 'the u of auuj is lost, so that the final result is ēg or ieg, but the j of iuuj is lost, so that the result is iow or iew', and printing 'OE hīow, hīew form' beside 'OE nīowe, nīewe new'. CAPR targets West Saxon, hence hīew; hīw, hīow and hēow are the commoner spellings. Diagnostic value: positive witness for the *w branch of SC010 PWGmcJGemination after a front vowel, and negative control for SC029, whose domain is *awwj only. Ringe & Taylor 2014 p. 53 supply the parallel West Germanic geminates *[niwwa-], *[siwwian] and *[gliwwias].
+
+
+
 # knead
 PROTO: *knédaną
 EXPECTED: cnedan
@@ -3032,7 +3084,7 @@ OUTPUTS: cnedan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *knédaną
+English Proto Input: *knédaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3055,7 +3107,7 @@ OUTPUTS: cnēow
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *knéwą
+English Proto Input: *knéwą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3078,7 +3130,7 @@ OUTPUTS: land
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lándą
+English Proto Input: *lándą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3101,7 +3153,7 @@ OUTPUTS: lǣstan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láistijaną
+English Proto Input: *láistijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3124,7 +3176,7 @@ OUTPUTS: lǣdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láidijaną
+English Proto Input: *láidijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3149,7 +3201,7 @@ OUTPUTS: lēaf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láubą
+English Proto Input: *láubą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3172,11 +3224,11 @@ OUTPUTS: liornian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líznōjaną
+English Proto Input: *líznōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>Rhotacism: *lírnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōjaną<br>OE Heavy Syllable Nasal Apocope: *líornōjan<br>OE Secondary Nasalization: *líornōjąn<br>OE I Umlaut: *líornējąn<br>OE Unstressed Long Vowel Shortening: *líornejąn<br>OE Weak Tail Reduction: *líornejan<br>OE Intervocalic J Vocalization: *líorneian<br>OE Unstressed EI Contraction: *líornian |
+| **Northwest and West Germanic**<br>EAF Rhotacism: *lírnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōjaną<br>OE Heavy Syllable Nasal Apocope: *líornōjan<br>OE Secondary Nasalization: *líornōjąn<br>OE I Umlaut: *líornējąn<br>OE Unstressed Long Vowel Shortening: *líornejąn<br>OE Weak Tail Reduction: *líornejan<br>OE Intervocalic J Vocalization: *líorneian<br>OE Unstressed EI Contraction: *líornian |
 
 
 
@@ -3197,7 +3249,7 @@ OUTPUTS: leþer
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *léθrą
+English Proto Input: *léθrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3221,7 +3273,7 @@ OUTPUTS: lēac
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láukaz
+English Proto Input: *láukaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3244,11 +3296,11 @@ OUTPUTS: lǣtan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lḗtaną
+English Proto Input: *lḗtaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *lǣtaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *lǣtan<br>OE Secondary Nasalization: *lǣtąn<br>OE Weak Tail Reduction: *lǣtan |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *lātaną<br>EAF Long A Fronting: *lǣtaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *lǣtan<br>OE Secondary Nasalization: *lǣtąn<br>OE Weak Tail Reduction: *lǣtan |
 
 
 
@@ -3267,7 +3319,7 @@ OUTPUTS: liccian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líkkōjaną
+English Proto Input: *líkkōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3290,7 +3342,7 @@ OUTPUTS: hlid
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xlídą
+English Proto Input: *xlídą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3316,7 +3368,7 @@ OUTPUTS: līf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lḯbą
+English Proto Input: *lḯbą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3339,7 +3391,7 @@ OUTPUTS: līehtan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *léuxtijaną
+English Proto Input: *léuxtijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3365,7 +3417,7 @@ OUTPUTS: līm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lḯmą
+English Proto Input: *lḯmą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3388,7 +3440,7 @@ OUTPUTS: lind
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líndō
+English Proto Input: *líndō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3413,7 +3465,7 @@ OUTPUTS: līne
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lḯnōn
+English Proto Input: *lḯnōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3436,7 +3488,7 @@ OUTPUTS: līste
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lḯstōn
+English Proto Input: *lḯstōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3459,7 +3511,7 @@ OUTPUTS: lifer
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líbrō
+English Proto Input: *líbrō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3482,7 +3534,7 @@ OUTPUTS: lāþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láiθaz
+English Proto Input: *láiθaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3506,7 +3558,7 @@ OUTPUTS: loc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lúką
+English Proto Input: *lúką
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3529,7 +3581,7 @@ OUTPUTS: locc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lúkkaz
+English Proto Input: *lúkkaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3552,7 +3604,7 @@ OUTPUTS: lūs
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lūsz
+English Proto Input: *lūsz
 Root Noun Nom Z Loss: *lūs
 
 | Earlier Germanic developments | Old English developments |
@@ -3576,7 +3628,7 @@ OUTPUTS: lust
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lústuz
+English Proto Input: *lústuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3599,7 +3651,7 @@ OUTPUTS: lēag
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láugō
+English Proto Input: *láugō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3622,7 +3674,7 @@ OUTPUTS: macian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mákōjaną
+English Proto Input: *mákōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3645,7 +3697,7 @@ OUTPUTS: mealt
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *máltaz
+English Proto Input: *máltaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3668,7 +3720,7 @@ OUTPUTS: mearc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *márkō
+English Proto Input: *márkō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3693,7 +3745,7 @@ OUTPUTS: mæst
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mástaz
+English Proto Input: *mástaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3716,11 +3768,11 @@ OUTPUTS: mǣl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mḗlą
+English Proto Input: *mḗlą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *mǣlą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *mǣl |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *mālą<br>EAF Long A Fronting: *mǣlą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *mǣl |
 
 
 
@@ -3739,7 +3791,7 @@ OUTPUTS: mǣnan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *máinijaną
+English Proto Input: *máinijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3762,7 +3814,7 @@ OUTPUTS: miht
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *máxtiz
+English Proto Input: *máxtiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3786,11 +3838,11 @@ OUTPUTS: meoloc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mélukz
+English Proto Input: *mélukz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *méluk<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Unstressed U Lowering: *mélok<br>OE Back Mutation: *méolok |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *méluk<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Back Mutation: *méoluk<br>OE Med Unstressed U Lowering: *méolok |
 
 
 
@@ -3811,11 +3863,11 @@ OUTPUTS: mōnaþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mḗnōθz
+English Proto Input: *mḗnōθz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *mḗnōθ<br>PNWGmc Long E Nasal Rounding: *mōnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *mōnaθ |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *mānōθz<br>EAF Final Z Deletion: *mānōθ<br>EAF Long A Nasal Rounding: *mãnōθ<br>EAF Nasalized Low Rounding: *mōnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *mōnoθ<br>OE Final Unstressed O Lowering: *mōnaθ |
 
 
 
@@ -3835,7 +3887,7 @@ OUTPUTS: mōd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mōdaz
+English Proto Input: *mōdaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3858,11 +3910,11 @@ OUTPUTS: mōder
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mōdēr
+English Proto Input: *mōdēr
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *mōdǣr<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *mōdær<br>OE Unstressed AE Merger: *mōder |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *mōder |
 
 
 
@@ -3883,7 +3935,7 @@ OUTPUTS: næġl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *náglaz
+English Proto Input: *náglaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3907,7 +3959,7 @@ OUTPUTS: nama
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *námô
+English Proto Input: *námô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3930,7 +3982,7 @@ OUTPUTS: nafu
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nábō
+English Proto Input: *nábō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3953,7 +4005,7 @@ OUTPUTS: nīed
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *náudiz
+English Proto Input: *náudiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3976,7 +4028,7 @@ OUTPUTS: nest
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nístą
+English Proto Input: *nístą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -3999,7 +4051,7 @@ OUTPUTS: nett
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nátją
+English Proto Input: *nátją
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4024,7 +4076,7 @@ OUTPUTS: netle
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nátilōn
+English Proto Input: *nátilōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4047,7 +4099,7 @@ OUTPUTS: mare
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *márōn
+English Proto Input: *márōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4072,7 +4124,7 @@ OUTPUTS: nigon
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nígun
+English Proto Input: *nígun
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4095,7 +4147,7 @@ OUTPUTS: ān
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *áinaz
+English Proto Input: *áinaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4118,7 +4170,7 @@ OUTPUTS: ofn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *úfnaz
+English Proto Input: *úfnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4141,7 +4193,7 @@ OUTPUTS: oxa
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *úxsô
+English Proto Input: *úxsô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4164,7 +4216,7 @@ OUTPUTS: reġn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *régną
+English Proto Input: *régną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4188,11 +4240,11 @@ OUTPUTS: reġnboga
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *régnabùgô
+English Proto Input: *régnabùgô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *régnbùgô<br>OE Strip Secondary Stress: *régnbugô<br>OE Med Unstressed U Lowering: *régnbogô<br>OE Velar Palatalization: *réʤnbogô<br>OE Unstressed Long Vowel Shortening: *réʤnboga |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *régnbùgô<br>OE Strip Secondary Stress: *régnbugô<br>OE Velar Palatalization: *réʤnbugô<br>OE Unstressed Long Vowel Shortening: *réʤnbuga<br>OE Med Unstressed U Lowering: *réʤnboga |
 
 
 
@@ -4212,7 +4264,7 @@ OUTPUTS: hræfn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xrábnaz
+English Proto Input: *xrábnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4236,11 +4288,11 @@ OUTPUTS: rǣdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rḗdaną
+English Proto Input: *rḗdaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *rǣdaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *rǣdan<br>OE Secondary Nasalization: *rǣdąn<br>OE Weak Tail Reduction: *rǣdan |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *rādaną<br>EAF Long A Fronting: *rǣdaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *rǣdan<br>OE Secondary Nasalization: *rǣdąn<br>OE Weak Tail Reduction: *rǣdan |
 
 
 
@@ -4259,7 +4311,7 @@ OUTPUTS: rīdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rḯdaną
+English Proto Input: *rḯdaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4282,7 +4334,7 @@ OUTPUTS: rind
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *ríndō
+English Proto Input: *ríndō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4305,7 +4357,7 @@ OUTPUTS: rōd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rōdō
+English Proto Input: *rōdō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4328,7 +4380,7 @@ OUTPUTS: rūm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rūmą
+English Proto Input: *rūmą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4351,7 +4403,7 @@ OUTPUTS: rāp
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *ráipą
+English Proto Input: *ráipą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4374,7 +4426,7 @@ OUTPUTS: rōþor
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rōθraz
+English Proto Input: *rōθraz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4398,7 +4450,7 @@ OUTPUTS: rinnan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rínnaną
+English Proto Input: *rínnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4421,7 +4473,7 @@ OUTPUTS: ryġe
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rúgiz
+English Proto Input: *rúgiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4445,7 +4497,7 @@ OUTPUTS: seġl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *séglą
+English Proto Input: *séglą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4469,7 +4521,7 @@ OUTPUTS: sacu
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sákō
+English Proto Input: *sákō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4492,7 +4544,7 @@ OUTPUTS: sealt
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sáltą
+English Proto Input: *sáltą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4515,7 +4567,7 @@ OUTPUTS: sealf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sálbō
+English Proto Input: *sálbō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4538,7 +4590,7 @@ OUTPUTS: sēam
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sáumaz
+English Proto Input: *sáumaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4561,7 +4613,7 @@ OUTPUTS: sēċan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sōkijaną
+English Proto Input: *sōkijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4585,7 +4637,7 @@ OUTPUTS: sendan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sándijaną
+English Proto Input: *sándijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4608,7 +4660,7 @@ OUTPUTS: settan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sátjaną
+English Proto Input: *sátjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4631,11 +4683,11 @@ OUTPUTS: seofon
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sébun
+English Proto Input: *sébun
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Unstressed U Lowering: *sébon<br>PGmc B Allophony: *séβon<br>OE Back Mutation: *séoβon |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PGmc B Allophony: *séβun<br>OE Back Mutation: *séoβun<br>OE Med Unstressed U Lowering: *séoβon |
 
 
 
@@ -4654,7 +4706,7 @@ OUTPUTS: sċeaft
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skáftą
+English Proto Input: *skáftą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4678,7 +4730,7 @@ OUTPUTS: sċamu
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skámō
+English Proto Input: *skámō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4702,7 +4754,7 @@ OUTPUTS: sċieran
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skéraną
+English Proto Input: *skéraną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4726,7 +4778,7 @@ OUTPUTS: sċēaþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skáiθiz
+English Proto Input: *skáiθiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4750,11 +4802,11 @@ OUTPUTS: sċēap
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skḗpą
+English Proto Input: *skḗpą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *skǣpą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *skǣp<br>OE Sk Palatalization: *ʃǣp<br>OE Ws Palatal Diphthongization: *ʃēap |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *skāpą<br>EAF Long A Fronting: *skǣpą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *skǣp<br>OE Sk Palatalization: *ʃǣp<br>OE Ws Palatal Diphthongization: *ʃēap |
 
 
 
@@ -4776,7 +4828,7 @@ OUTPUTS: sċield
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skélduz
+English Proto Input: *skélduz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4800,7 +4852,7 @@ OUTPUTS: sċilling
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skíllingaz
+English Proto Input: *skíllingaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4826,7 +4878,7 @@ OUTPUTS: sċīnan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skḯnaną
+English Proto Input: *skḯnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4850,7 +4902,7 @@ OUTPUTS: sċofl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skúflō
+English Proto Input: *skúflō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4874,7 +4926,7 @@ OUTPUTS: sċēawian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skáwōjaną
+English Proto Input: *skáwōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4900,7 +4952,7 @@ OUTPUTS: sċūr
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skūrō
+English Proto Input: *skūrō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4924,7 +4976,7 @@ OUTPUTS: sīde
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sḯdōn
+English Proto Input: *sḯdōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4947,7 +4999,7 @@ OUTPUTS: singan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *síngwaną
+English Proto Input: *síngwaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4970,7 +5022,7 @@ OUTPUTS: senġan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sángijaną
+English Proto Input: *sángijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -4994,11 +5046,11 @@ OUTPUTS: swester
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swéstēr
+English Proto Input: *swéstēr
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *swéstǣr<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *swéstær<br>OE Unstressed AE Merger: *swéster |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *swéster |
 
 
 
@@ -5017,7 +5069,7 @@ OUTPUTS: sittan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sétjaną
+English Proto Input: *sétjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5040,7 +5092,7 @@ OUTPUTS: six
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *séxs
+English Proto Input: *séxs
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5063,7 +5115,7 @@ OUTPUTS: slēan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sláxaną
+English Proto Input: *sláxaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5086,11 +5138,11 @@ OUTPUTS: slǣpan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *slḗpaną
+English Proto Input: *slḗpaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *slǣpaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *slǣpan<br>OE Secondary Nasalization: *slǣpąn<br>OE Weak Tail Reduction: *slǣpan |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *slāpaną<br>EAF Long A Fronting: *slǣpaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *slǣpan<br>OE Secondary Nasalization: *slǣpąn<br>OE Weak Tail Reduction: *slǣpan |
 
 
 
@@ -5111,7 +5163,7 @@ OUTPUTS: slīm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *slḯmą
+English Proto Input: *slḯmą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5134,7 +5186,7 @@ OUTPUTS: smierwan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *smérwijaną
+English Proto Input: *smérwijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5159,7 +5211,7 @@ OUTPUTS: snāw
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *snáiwaz
+English Proto Input: *snáiwaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5182,7 +5234,7 @@ OUTPUTS: sorg
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *súrgō
+English Proto Input: *súrgō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5205,17 +5257,42 @@ OUTPUTS: sāwol
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sáiwalō
+English Proto Input: *sáiwalō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *sáiwalu<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalu | **Old English**<br>OE Inter Stress Raising: *sāwulu<br>OE Med Unstressed U Lowering: *sāwolu<br>OE High Vowel Apocope: *sāwol |
+| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *sáiwalu<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalu | **Old English**<br>OE Inter Stress Raising: *sāwulu<br>OE High Vowel Apocope: *sāwul<br>OE Med Unstressed U Lowering: *sāwol |
 
 
 
 ### Orthography & surface
 
 Outcome: sāwol
+
+
+
+# sow
+PROTO: *sḗaną
+EXPECTED: sāwan
+OUTPUTS: sāwan
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *sḗaną
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *sāaną<br>EAF Hiatus W Insertion: *sāwaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *sāwan<br>OE Secondary Nasalization: *sāwąn<br>OE Weak Tail Reduction: *sāwan |
+
+
+
+### Orthography & surface
+
+Outcome: sāwan
+
+NOTE: Strong verb class VII (verba pura) 'to sow', PGmc *sēaną (Goth. saian) > PNWGmc *sāaną by SC024 (R/T 2014: 12) > WS/Merc./Kent. sāwan (North. sāwa). The WGmc forms exhibit innovative hiatus-filling consonants (Þórhallsdóttir 1993: 82-137): OE inserted *w — regular first between the stressed stem vowel and the *u-initial endings (pres.ind.1sg *-u, pres.ind.1pl *-um, redupl.pret.pl. *-um/-uþ/-un), then analogically generalized through the whole present paradigm and the pret.ptc., assisted by the pret. stem *seuw(un) and by etymological-*w verbs such as flōwan (Þórhallsdóttir 1993: 120, 126-27, 136, read directly; reported at R/T 2014: 151). The infinitive is NOT one of the cells that receives *w phonologically, so the *w of the citation form sāwan is analogical; OS and OHG instead used *j (OS sājan, OHG sāen; Tatian sāwen shows both). The *w arose early enough to prevent fronting (SC102 before SC101): fronting never occurred before *w plus a back/nonhigh vowel (R/T 2014: 151; Hogg 1992: 81 [2011: 79]) — hence sāwan, not *sǣwan. Same class: wāwan, cnāwan, māwan, þrāwan, blāwan (R/T 2014: 151); recorded but not added (diagnostic coverage, not corpus padding).
 
 
 
@@ -5228,7 +5305,7 @@ OUTPUTS: spannan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spánnaną
+English Proto Input: *spánnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5253,7 +5330,7 @@ OUTPUTS: spearra
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spárrô
+English Proto Input: *spárrô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5278,7 +5355,7 @@ OUTPUTS: speoru
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spéru
+English Proto Input: *spéru
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5301,7 +5378,7 @@ OUTPUTS: spinnan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spínnaną
+English Proto Input: *spínnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5324,7 +5401,7 @@ OUTPUTS: spinl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spénnilō
+English Proto Input: *spénnilō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5347,11 +5424,11 @@ OUTPUTS: spōn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spḗnuz
+English Proto Input: *spḗnuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *spḗnu<br>PNWGmc Long E Nasal Rounding: *spōnu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *spōn |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *spānuz<br>EAF Final Z Deletion: *spānu<br>EAF Long A Nasal Rounding: *spãnu<br>EAF Nasalized Low Rounding: *spōnu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *spōn |
 
 
 
@@ -5370,7 +5447,7 @@ OUTPUTS: sprǣdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spráidijaną
+English Proto Input: *spráidijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5393,7 +5470,7 @@ OUTPUTS: spora
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spúrô
+English Proto Input: *spúrô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5416,7 +5493,7 @@ OUTPUTS: styrtan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stúrtijaną
+English Proto Input: *stúrtijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5439,7 +5516,7 @@ OUTPUTS: steorfan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stérbaną
+English Proto Input: *stérbaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5462,7 +5539,7 @@ OUTPUTS: stelan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stélaną
+English Proto Input: *stélaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5485,7 +5562,7 @@ OUTPUTS: stillan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stéllijaną
+English Proto Input: *stéllijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5510,7 +5587,7 @@ OUTPUTS: stocc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stúkkaz
+English Proto Input: *stúkkaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5533,7 +5610,7 @@ OUTPUTS: stān
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stáinaz
+English Proto Input: *stáinaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5556,7 +5633,7 @@ OUTPUTS: stōl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stōlaz
+English Proto Input: *stōlaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5579,7 +5656,7 @@ OUTPUTS: storc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stúrkaz
+English Proto Input: *stúrkaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5602,7 +5679,7 @@ OUTPUTS: storm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stúrmaz
+English Proto Input: *stúrmaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5625,7 +5702,7 @@ OUTPUTS: strēaw
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stráwą
+English Proto Input: *stráwą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5648,7 +5725,7 @@ OUTPUTS: strēam
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stráumaz
+English Proto Input: *stráumaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5671,7 +5748,7 @@ OUTPUTS: streċċan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *strákkijaną
+English Proto Input: *strákkijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5695,7 +5772,7 @@ OUTPUTS: strenġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *strángiz
+English Proto Input: *strángiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5719,7 +5796,7 @@ OUTPUTS: stōd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stōdą
+English Proto Input: *stōdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5742,7 +5819,7 @@ OUTPUTS: sumer
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *súmaraz
+English Proto Input: *súmaraz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5767,7 +5844,7 @@ OUTPUTS: sunne
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *súnnōn
+English Proto Input: *súnnōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5790,7 +5867,7 @@ OUTPUTS: sundrian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *súndrōjaną
+English Proto Input: *súndrōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5815,7 +5892,7 @@ OUTPUTS: sūpan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sūpaną
+English Proto Input: *sūpaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5838,7 +5915,7 @@ OUTPUTS: swealwe
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swálwōn
+English Proto Input: *swálwōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5863,7 +5940,7 @@ OUTPUTS: swellan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swéllaną
+English Proto Input: *swéllaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5886,7 +5963,7 @@ OUTPUTS: swimman
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swímmaną
+English Proto Input: *swímmaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5909,7 +5986,7 @@ OUTPUTS: swīn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swḯną
+English Proto Input: *swḯną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5934,7 +6011,7 @@ OUTPUTS: sweord
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swérdą
+English Proto Input: *swérdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5957,8 +6034,8 @@ OUTPUTS: tēam
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *táugmaz
-Gm Simplification: *táumaz
+English Proto Input: *táugmaz
+PGmc Gm Simplification: *táumaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -5981,7 +6058,7 @@ OUTPUTS: þeġn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θégnaz
+English Proto Input: *θégnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6005,7 +6082,7 @@ OUTPUTS: þanc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θánkaz
+English Proto Input: *θánkaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6029,7 +6106,7 @@ OUTPUTS: þæc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θáką
+English Proto Input: *θáką
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6053,7 +6130,7 @@ OUTPUTS: þēof
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θéubaz
+English Proto Input: *θéubaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6077,7 +6154,7 @@ OUTPUTS: þing
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θíngą
+English Proto Input: *θíngą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6101,7 +6178,7 @@ OUTPUTS: þenċan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θánkijaną
+English Proto Input: *θánkijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6127,7 +6204,7 @@ OUTPUTS: þurst
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θúrstuz
+English Proto Input: *θúrstuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6151,7 +6228,7 @@ OUTPUTS: þorn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θúrnaz
+English Proto Input: *θúrnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6168,6 +6245,33 @@ NOTE: Adopt *θurnăz (m. a-stem; Kroonen *θurna-). A u-stem reformation *θurn
 
 
 
+# thought
+PROTO: *θánxtē
+EXPECTED: þōhte
+OUTPUTS: þōhte
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *θánxtē
+PGmc Nasal Loss Before X: *θãxtē
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>EAF Nasalized Low Rounding: *θōxtē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *θōxte |
+
+
+
+### Orthography & surface
+
+Old English Orthography: þ*ōhte
+Outcome: þōhte
+
+NOTE: Class I weak preterite 3sg 'thought', paradigm cell of þenċan (CONCEPT 'think', PGmc *þankijaną, row 2248). Principal parts PGmc *þankijaną, *þanhtē, *þanhtaz (Ringe 2017: 281; the preterite/participle stem *þanh- also at Ringe 2017: 136, §3.2.4(iv), where PGmc *þanhtaz 'thought' is reconstructed with the nasal still intact before *h). Entered at the PGmc stage with the nasal present (*θánxtē) so that the nasal loss is derived, not assumed. Diagnostic value: this is the low-vowel (*aNx) branch of SC103 PGmcNasalLossBeforeX, which yields nasalized *ą̄ (transducer {*ã}); SC104 EAFNasalizedLowRounding then rounds it to *ō, giving OE þōhte. Fulk 2018 §4.1 p. 55 names exactly this form: the lengthened nasalized *ą̄ 'developed to ō in Anglo-Frisian (as in OE pret. sg. þōhte, OFris. thochte "thought") and did not fall together with OE ā < ai'. Contrast the existing SC103 witness fist (*fúnxstiz), whose input vowel is *u and which additionally runs through the *xst cluster; thought isolates the SC103 -> SC104 low-vowel path.
+
+
+
 # thrash
 PROTO: *θréskaną
 EXPECTED: þresċan
@@ -6177,7 +6281,7 @@ OUTPUTS: þresċan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θréskaną
+English Proto Input: *θréskaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6201,7 +6305,7 @@ OUTPUTS: þunor
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θúnraz
+English Proto Input: *θúnraz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6225,7 +6329,7 @@ OUTPUTS: ticca
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *tíkkô
+English Proto Input: *tíkkô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6248,7 +6352,7 @@ OUTPUTS: tīd
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *tḯdiz
+English Proto Input: *tḯdiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6273,7 +6377,7 @@ OUTPUTS: tā
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *táixōn
+English Proto Input: *táixōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6296,7 +6400,7 @@ OUTPUTS: tācn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *táikną
+English Proto Input: *táikną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6321,7 +6425,7 @@ OUTPUTS: tang
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *tángō
+English Proto Input: *tángō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6344,7 +6448,7 @@ OUTPUTS: tunge
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *túngōn
+English Proto Input: *túngōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6367,7 +6471,7 @@ OUTPUTS: tūn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *tūną
+English Proto Input: *tūną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6392,7 +6496,7 @@ OUTPUTS: tredan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *trédaną
+English Proto Input: *trédaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6415,7 +6519,7 @@ OUTPUTS: trog
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *trúgą
+English Proto Input: *trúgą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6438,7 +6542,7 @@ OUTPUTS: wadan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wádaną
+English Proto Input: *wádaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6463,7 +6567,7 @@ OUTPUTS: wæġn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wágnaz
+English Proto Input: *wágnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6487,7 +6591,7 @@ OUTPUTS: wearp
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wárpą
+English Proto Input: *wárpą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6510,7 +6614,7 @@ OUTPUTS: weorpan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wérpaną
+English Proto Input: *wérpaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6535,7 +6639,7 @@ OUTPUTS: wearte
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wártōn
+English Proto Input: *wártōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6558,7 +6662,7 @@ OUTPUTS: wascan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wáskaną
+English Proto Input: *wáskaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6583,7 +6687,7 @@ OUTPUTS: weax
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wáxsą
+English Proto Input: *wáxsą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6606,7 +6710,7 @@ OUTPUTS: weaxan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wáxsaną
+English Proto Input: *wáxsaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6631,7 +6735,7 @@ OUTPUTS: weġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wégaz
+English Proto Input: *wégaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6657,11 +6761,11 @@ OUTPUTS: wǣpn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wḗpną
+English Proto Input: *wḗpną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *wǣpną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *wǣpn |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *wāpną<br>EAF Long A Fronting: *wǣpną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *wǣpn |
 
 
 
@@ -6682,7 +6786,7 @@ OUTPUTS: wesle
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wéslōn
+English Proto Input: *wéslōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6705,7 +6809,7 @@ OUTPUTS: weder
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wédrą
+English Proto Input: *wédrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6728,7 +6832,7 @@ OUTPUTS: wefan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wébaną
+English Proto Input: *wébaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6751,7 +6855,7 @@ OUTPUTS: westene
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wéstanē
+English Proto Input: *wéstanē
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6774,7 +6878,7 @@ OUTPUTS: weþer
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wíθrą
+English Proto Input: *wíθrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6798,7 +6902,7 @@ OUTPUTS: hwīl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xwḯlō
+English Proto Input: *xwḯlō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6822,7 +6926,7 @@ OUTPUTS: hwā
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xwáz
+English Proto Input: *xwáz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6848,7 +6952,7 @@ OUTPUTS: hōre
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xōrōn
+English Proto Input: *xōrōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6872,7 +6976,7 @@ OUTPUTS: wuduwe
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wíduwōn
+English Proto Input: *wíduwōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6895,7 +6999,7 @@ OUTPUTS: wealdan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wáldaną
+English Proto Input: *wáldaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6918,7 +7022,7 @@ OUTPUTS: wīf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wḯbą
+English Proto Input: *wḯbą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6941,7 +7045,7 @@ OUTPUTS: wiht
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wéxtiz
+English Proto Input: *wéxtiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6965,7 +7069,7 @@ OUTPUTS: willan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wéljaną
+English Proto Input: *wéljaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -6988,7 +7092,7 @@ OUTPUTS: willa
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wéljô
+English Proto Input: *wéljô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7013,7 +7117,7 @@ OUTPUTS: windan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wíndaną
+English Proto Input: *wíndaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7038,7 +7142,7 @@ OUTPUTS: winter
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wíntruz
+English Proto Input: *wíntruz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7061,7 +7165,7 @@ OUTPUTS: weald
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wálθuz
+English Proto Input: *wálθuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7086,7 +7190,7 @@ OUTPUTS: wundor
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wúndrą
+English Proto Input: *wúndrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7109,7 +7213,7 @@ OUTPUTS: word
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wúrdą
+English Proto Input: *wúrdą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7132,7 +7236,7 @@ OUTPUTS: wyrm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wúrmiz
+English Proto Input: *wúrmiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7146,6 +7250,31 @@ Outcome: wyrm
 
 
 
+# wound
+PROTO: *wúndōdē
+EXPECTED: wundude
+OUTPUTS: wundude
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *wúndōdē
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *wúndodē<br>OE Med Unstressed O Raising: *wúndudē<br>OE Unstressed Long Vowel Shortening: *wúndude |
+
+
+
+### Orthography & surface
+
+Outcome: wundude
+
+NOTE: Paradigm-cell 3.sg.pret.ind. of wundian (weak II), attested in the Pastoral Care itself: "ne wundude he ðæs lichoman" (Bosworth-Toller s.v. wundian). Stausland Johnsen 2015: 28-29 (6a): *wundōdē > pre-OE shortening *wundode (SC071) > medial raising wundude (SC099, his law); Hatton 20 attests the wund- paradigm variation wundad ~ wundud (2015: 20 (2b)) and medial-syllable u as the regular outcome (2015: 31, Figure 4). The medial u then survives the 9th-c. u > o lowering (SC040) by the Campbell §373 vowel-harmony restriction (preceding accented u).
+
+
+
 # wring
 PROTO: *wrínganą
 EXPECTED: wringan
@@ -7155,7 +7284,7 @@ OUTPUTS: wringan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wrínganą
+English Proto Input: *wrínganą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7178,7 +7307,7 @@ OUTPUTS: ġearn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gárną
+English Proto Input: *gárną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7204,11 +7333,11 @@ OUTPUTS: ġēar
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *jḗrą
+English Proto Input: *jḗrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *jǣrą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *jǣr<br>OE Ws Palatal Diphthongization: *jēar |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *jārą<br>EAF Long A Fronting: *jǣrą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *jǣr<br>OE Ws Palatal Diphthongization: *jēar |
 
 
 
@@ -7228,7 +7357,7 @@ OUTPUTS: ġeoc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *júką
+English Proto Input: *júką
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7253,7 +7382,7 @@ OUTPUTS: ēow
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *ízwiz
+English Proto Input: *ízwiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7282,7 +7411,7 @@ OUTPUTS: botm
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búttmaz
+English Proto Input: *búttmaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7307,7 +7436,7 @@ OUTPUTS: brandes
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *brándas
+English Proto Input: *brándas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7330,7 +7459,7 @@ OUTPUTS: brēost
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bréustą
+English Proto Input: *bréustą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7353,7 +7482,7 @@ OUTPUTS: cræft
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kráftaz
+English Proto Input: *kráftaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7378,7 +7507,7 @@ OUTPUTS: dile
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *déliz
+English Proto Input: *déliz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7403,7 +7532,7 @@ OUTPUTS: festan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fástijaną
+English Proto Input: *fástijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7428,7 +7557,7 @@ OUTPUTS: flasce
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fláskōn
+English Proto Input: *fláskōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7451,7 +7580,7 @@ OUTPUTS: fylġan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúlgijaną
+English Proto Input: *fúlgijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7477,7 +7606,7 @@ OUTPUTS: ġealla
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *gállô
+English Proto Input: *gállô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7501,11 +7630,11 @@ OUTPUTS: heofon
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xébun
+English Proto Input: *xébun
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Unstressed U Lowering: *xébon<br>OE Velar Fricative Palatalization: *çébon<br>PGmc B Allophony: *çéβon<br>OE Back Mutation: *çéoβon |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Velar Fricative Palatalization: *çébun<br>PGmc B Allophony: *çéβun<br>OE Back Mutation: *çéoβun<br>OE Med Unstressed U Lowering: *çéoβon |
 
 
 
@@ -7527,7 +7656,7 @@ OUTPUTS: cniht
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *knéxtaz
+English Proto Input: *knéxtaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7553,7 +7682,7 @@ OUTPUTS: hladan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xláðaną
+English Proto Input: *xláðaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7579,7 +7708,7 @@ OUTPUTS: lappa
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láppô
+English Proto Input: *láppô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7602,7 +7731,7 @@ OUTPUTS: hliehhan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xláxjaną
+English Proto Input: *xláxjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7628,7 +7757,7 @@ OUTPUTS: lām
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *láimą
+English Proto Input: *láimą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7651,7 +7780,7 @@ OUTPUTS: lungen
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *lúnganjō
+English Proto Input: *lúnganjō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7676,11 +7805,11 @@ OUTPUTS: nafola
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nábulô
+English Proto Input: *nábulô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Unstressed U Lowering: *nábolô<br>EAF Brightening: *næbolô<br>OE A Restoration: *nabolô<br>PGmc B Allophony: *naβolô<br>OE Unstressed Long Vowel Shortening: *naβola |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *næbulô<br>OE A Restoration: *nabulô<br>PGmc B Allophony: *naβulô<br>OE Unstressed Long Vowel Shortening: *naβula<br>OE Med Unstressed U Lowering: *naβola |
 
 
 
@@ -7701,7 +7830,7 @@ OUTPUTS: hnecca
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xnékkô
+English Proto Input: *xnékkô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7725,11 +7854,11 @@ OUTPUTS: nǣdl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *nḗðlō
+English Proto Input: *nḗðlō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *nḗdlō<br>PNWGmc Final Long O Raising: *nḗdlu<br>PNWGmc Long E Lowering: *nǣdlu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *nǣdl |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *nāðlō<br>PWGmc Dental Hardening: *nādlō<br>PNWGmc Final Long O Raising: *nādlu<br>EAF Long A Fronting: *nǣdlu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *nǣdl |
 
 
 
@@ -7750,7 +7879,7 @@ OUTPUTS: nosu
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *núsō
+English Proto Input: *núsō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7773,7 +7902,7 @@ OUTPUTS: sæp
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sápą
+English Proto Input: *sápą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7798,7 +7927,7 @@ OUTPUTS: sǣ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *sáiwiz
+English Proto Input: *sáiwiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7823,7 +7952,7 @@ OUTPUTS: sife
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *síbi
+English Proto Input: *síbi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7846,7 +7975,7 @@ OUTPUTS: sparian
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spárōjaną
+English Proto Input: *spárōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7871,7 +8000,7 @@ OUTPUTS: stæf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stábaz
+English Proto Input: *stábaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7896,7 +8025,7 @@ OUTPUTS: stefn
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stámniz
+English Proto Input: *stámniz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7921,7 +8050,7 @@ OUTPUTS: swanes
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *swánas
+English Proto Input: *swánas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7944,7 +8073,7 @@ OUTPUTS: þūsend
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θūsèndi
+English Proto Input: *θūsèndi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7970,7 +8099,7 @@ OUTPUTS: timber
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *tímbrą
+English Proto Input: *tímbrą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -7995,7 +8124,7 @@ OUTPUTS: wacan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wákaną
+English Proto Input: *wákaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8020,7 +8149,7 @@ OUTPUTS: wæter
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wátōr
+English Proto Input: *wátōr
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8045,7 +8174,7 @@ OUTPUTS: hwæl
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xwálaz
+English Proto Input: *xwálaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8071,7 +8200,7 @@ OUTPUTS: hwīnan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xwḯnaną
+English Proto Input: *xwḯnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8095,7 +8224,7 @@ OUTPUTS: wīþiġ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wḯθagą
+English Proto Input: *wḯθagą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8121,11 +8250,11 @@ OUTPUTS: weorold
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wíràldu
+English Proto Input: *wíràldu
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *wéràldu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Inter Stress Raising: *wéruldu<br>OE Med Unstressed U Lowering: *wéroldu<br>OE Back Mutation: *wéoroldu<br>OE High Vowel Apocope: *wéorold |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *wéràldu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Inter Stress Raising: *wéruldu<br>OE Back Mutation: *wéoruldu<br>OE High Vowel Apocope: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
 
 
 
@@ -8146,7 +8275,7 @@ OUTPUTS: ġeoguþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *júgunθ
+English Proto Input: *júgunθ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8177,7 +8306,7 @@ OUTPUTS: bannes
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bánnas
+English Proto Input: *bánnas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8202,11 +8331,11 @@ OUTPUTS: berġes
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *bázjas
+English Proto Input: *bázjas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>Rhotacism: *bárjas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *bærjæs<br>OE I Umlaut: *berjæs<br>OE Unstressed AE Merger: *berjes |
+| **Northwest and West Germanic**<br>EAF Rhotacism: *bárjas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *bærjæs<br>OE I Umlaut: *berjæs<br>OE Unstressed AE Merger: *berjes |
 
 
 
@@ -8228,11 +8357,11 @@ OUTPUTS: boraþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búrōθi
+English Proto Input: *búrōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *búrōθ<br>PNWGmc U Lowering: *bórōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *bóraθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *búrōθ<br>PNWGmc U Lowering: *bórōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *bóroθ<br>OE Final Unstressed O Lowering: *bóraθ |
 
 
 
@@ -8254,7 +8383,7 @@ OUTPUTS: bora
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búrô
+English Proto Input: *búrô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8279,7 +8408,7 @@ OUTPUTS: bēag
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *báug
+English Proto Input: *báug
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8304,7 +8433,7 @@ OUTPUTS: cȳ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kūi
+English Proto Input: *kūi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8329,7 +8458,7 @@ OUTPUTS: fundene
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúnðanǭ
+English Proto Input: *fúnðanǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8354,7 +8483,7 @@ OUTPUTS: fyrhte
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúrxtīnaz
+English Proto Input: *fúrxtīnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8380,7 +8509,7 @@ OUTPUTS: hameres
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xámaras
+English Proto Input: *xámaras
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8406,11 +8535,11 @@ OUTPUTS: hæfeþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *xábēθi
+English Proto Input: *xábēθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *xábēθ<br>PNWGmc Long E Lowering: *xábǣθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xæbǣθ<br>OE Velar Fricative Palatalization: *çæbǣθ<br>PGmc B Allophony: *çæβǣθ<br>OE Unstressed Long Vowel Shortening: *çæβæθ<br>OE Unstressed AE Merger: *çæβeθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *xábēθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xæbēθ<br>OE Velar Fricative Palatalization: *çæbēθ<br>PGmc B Allophony: *çæβēθ<br>OE Unstressed Long Vowel Shortening: *çæβeθ |
 
 
 
@@ -8432,11 +8561,11 @@ OUTPUTS: liornaþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líznōθi
+English Proto Input: *líznōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líznōθ<br>Rhotacism: *lírnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōθ<br>OE Late O Shortening: *líornaθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líznōθ<br>EAF Rhotacism: *lírnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōθ<br>OE Late O Shortening: *líornoθ<br>OE Final Unstressed O Lowering: *líornaθ |
 
 
 
@@ -8458,11 +8587,11 @@ OUTPUTS: liorna
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líznô
+English Proto Input: *líznô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>Rhotacism: *lírnô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornô<br>OE Unstressed Long Vowel Shortening: *líorna |
+| **Northwest and West Germanic**<br>EAF Rhotacism: *lírnô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornô<br>OE Unstressed Long Vowel Shortening: *líorna |
 
 
 
@@ -8483,11 +8612,11 @@ OUTPUTS: liccaþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líkkōθi
+English Proto Input: *líkkōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líkkōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *líkkaθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líkkōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *líkkoθ<br>OE Final Unstressed O Lowering: *líkkaθ |
 
 
 
@@ -8509,7 +8638,7 @@ OUTPUTS: licca
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líkkô
+English Proto Input: *líkkô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8534,11 +8663,11 @@ OUTPUTS: lifeþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *líbēθi
+English Proto Input: *líbēθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líbēθ<br>PNWGmc Long E Lowering: *líbǣθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PGmc B Allophony: *líβǣθ<br>OE Unstressed Long Vowel Shortening: *líβæθ<br>OE Unstressed AE Merger: *líβeθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líbēθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PGmc B Allophony: *líβēθ<br>OE Unstressed Long Vowel Shortening: *líβeθ |
 
 
 
@@ -8560,11 +8689,11 @@ OUTPUTS: macaþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mákōθi
+English Proto Input: *mákōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *mákōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *mækōθ<br>OE A Restoration: *makōθ<br>OE Late O Shortening: *makaθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *mákōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *mækōθ<br>OE A Restoration: *makōθ<br>OE Late O Shortening: *makoθ<br>OE Final Unstressed O Lowering: *makaθ |
 
 
 
@@ -8586,7 +8715,7 @@ OUTPUTS: maca
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mákô
+English Proto Input: *mákô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8611,7 +8740,7 @@ OUTPUTS: mannes
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mánnas
+English Proto Input: *mánnas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8636,11 +8765,11 @@ OUTPUTS: meorde
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *mízdai
+English Proto Input: *mízdai
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Unstressed Ai Monophthongization: *mízdē<br>PNWGmc I Lowering: *mézdē<br>Rhotacism: *mérdē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *méordē<br>OE Unstressed Long Vowel Shortening: *méorde |
+| **Northwest and West Germanic**<br>PNWGmc Unstressed Ai Monophthongization: *mízdē<br>PNWGmc I Lowering: *mézdē<br>EAF Rhotacism: *mérdē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *méordē<br>OE Unstressed Long Vowel Shortening: *méorde |
 
 
 
@@ -8661,7 +8790,7 @@ OUTPUTS: niht
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *náxti
+English Proto Input: *náxti
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8687,7 +8816,7 @@ OUTPUTS: ræste
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rástōz
+English Proto Input: *rástōz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8712,7 +8841,7 @@ OUTPUTS: sċuldrum
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skúldramiz
+English Proto Input: *skúldramiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8738,7 +8867,7 @@ OUTPUTS: sċēaf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skáub
+English Proto Input: *skáub
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8764,11 +8893,11 @@ OUTPUTS: sċēawaþ
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skáwōθi
+English Proto Input: *skáwōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *skáwōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *skḗawōθ<br>OE Sk Palatalization: *ʃḗawōθ<br>OE Late O Shortening: *ʃḗawaθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *skáwōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *skḗawōθ<br>OE Sk Palatalization: *ʃḗawōθ<br>OE Late O Shortening: *ʃḗawoθ<br>OE Final Unstressed O Lowering: *ʃḗawaθ |
 
 
 
@@ -8790,7 +8919,7 @@ OUTPUTS: sċēawa
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *skáwô
+English Proto Input: *skáwô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8816,7 +8945,7 @@ OUTPUTS: spanne
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *spánnai
+English Proto Input: *spánnai
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8841,7 +8970,7 @@ OUTPUTS: þistles
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θístilas
+English Proto Input: *θístilas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8871,7 +9000,7 @@ OUTPUTS: cwedu
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *kwéðuz
+English Proto Input: *kwéðuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8896,11 +9025,11 @@ OUTPUTS: tēon
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *téxun
+English Proto Input: *téxun
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Unstressed U Lowering: *téxon<br>OE Breaking: *téoxon<br>OE H Loss: *téoon<br>OE Contraction: *tḗon |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *téoxun<br>OE Med Unstressed U Lowering: *téoxon<br>OE H Loss: *téoon<br>OE Contraction: *tḗon |
 
 
 
@@ -8921,7 +9050,7 @@ OUTPUTS: þrīe
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *θréjez
+English Proto Input: *θréjez
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8947,7 +9076,7 @@ OUTPUTS: wæfs
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wábsaz
+English Proto Input: *wábsaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -8976,7 +9105,7 @@ OUTPUTS: cnobba
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *knúbbô
+English Proto Input: *knúbbô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9001,7 +9130,7 @@ OUTPUTS: rēac
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *ráukaz
+English Proto Input: *ráukaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9026,11 +9155,11 @@ OUTPUTS: strīeġan
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *stráwjaną
+English Proto Input: *stráwjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Awj Glide Formation: *stráujaną<br>OE Au Fronting: *stráeujaną<br>OE Diphthong Leveling: *strēajaną<br>OE Heavy Syllable Nasal Apocope: *strēajan<br>OE Secondary Nasalization: *strēająn<br>OE I Umlaut: *strīejąn<br>OE Weak Tail Reduction: *strīejan<br>OE J Strengthening After Front Diphthong: *strīeʒan |
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *stráwwjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Awj Glide Formation: *stráujaną<br>OE Au Fronting: *stráeujaną<br>OE Diphthong Leveling: *strēajaną<br>OE Heavy Syllable Nasal Apocope: *strēajan<br>OE Secondary Nasalization: *strēająn<br>OE I Umlaut: *strīejąn<br>OE Weak Tail Reduction: *strīejan<br>OE J Strengthening After Front Diphthong: *strīeʒan |
 
 
 
@@ -9056,7 +9185,7 @@ OUTPUTS: fȳr
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fūri
+English Proto Input: *fūri
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9081,7 +9210,7 @@ OUTPUTS: tappa
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *táppô
+English Proto Input: *táppô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9110,7 +9239,7 @@ OUTPUTS: bocc
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *búkkaz
+English Proto Input: *búkkaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9135,7 +9264,7 @@ OUTPUTS: fogol
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *fúglaz
+English Proto Input: *fúglaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9160,7 +9289,7 @@ OUTPUTS: rost
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *rústō
+English Proto Input: *rústō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9185,7 +9314,7 @@ OUTPUTS: wolf
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wúlfaz
+English Proto Input: *wúlfaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
@@ -9210,7 +9339,7 @@ OUTPUTS: woll
 
 ### Proto-Germanic consonant inheritance
 
-Proto Input: *wúllō
+English Proto Input: *wúllō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|

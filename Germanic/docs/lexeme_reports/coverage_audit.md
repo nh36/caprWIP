@@ -1,15 +1,15 @@
 # Old English lexeme-report coverage audit
 
-- Total OE rows with real counterpart: 382
+- Total OE rows with real counterpart: 387
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 150
+- Rows requiring lexeme report: 155
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 138
-- Required rows with no source material found: 1
+- Required rows with source material available but no manifest-backed production report: 140
+- Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 231
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 73
+- Regular rows with NOTE (report required): 78
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
 ## Counts by DERIVATION_CLASS
@@ -21,7 +21,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 27 | 27 | 4 | 23 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 305 | 73 | 0 | 72 | 1 |
+| regular | 310 | 78 | 0 | 74 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with manifest-backed production reports
@@ -180,14 +180,19 @@
 | 2316 | lick (3sg) | liccaþ | late_analogy | yes | source_material | - | dev_notes_slices/2316-lick-(3sg)-liccaþ.md, model_entries/2316-lick-(3sg)-liccaþ.model_implementation_report.md, model_entries/2316-lick-(3sg)-liccaþ.reviewer_checklist.md, model_entries/2316-lick-(3sg)-liccaþ.source_ledger.md, research_memos/2316-lick-(3sg)-liccaþ.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2317 | show (iptv.2sg) | sċēawa | late_analogy | yes | source_material | - | dev_notes_slices/2317-show-(iptv.2sg)-sċēawa.md, model_entries/2317-show-(iptv.2sg)-sċēawa.model.md, model_entries/2317-show-(iptv.2sg)-sċēawa.model_implementation_report.md, model_entries/2317-show-(iptv.2sg)-sċēawa.reviewer_checklist.md, model_entries/2317-show-(iptv.2sg)-sċēawa.source_ledger.md, model_entries/production_batch_06_report.md, packets/2317-show-(iptv.2sg)-sċēawa.md, research_memos/2317-show-(iptv.2sg)-sċēawa.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2318 | show (3sg) | sċēawaþ | late_analogy | yes | source_material | - | dev_notes_slices/2318-show-(3sg)-sċēawaþ.md, model_entries/2318-show-(3sg)-sċēawaþ.model.md, model_entries/2318-show-(3sg)-sċēawaþ.model_implementation_report.md, model_entries/2318-show-(3sg)-sċēawaþ.reviewer_checklist.md, model_entries/2318-show-(3sg)-sċēawaþ.source_ledger.md, research_memos/2318-show-(3sg)-sċēawaþ.md, research_memos/batch_14_summary.md | NOTE, DERIVATION_CLASS=late_analogy |
-| 2322 | who | hwā | regular | yes | source_material | - | model_entries/2322-who-hwā.model.md, model_entries/2322-who-hwā.source_ledger.md | NOTE |
-| 2326 | you | ēow | regular | yes | source_material | - | model_entries/2326-you-ēow.model.md, model_entries/2326-you-ēow.source_ledger.md | NOTE |
+| 2322 | who | hwā | regular | yes | source_material | - | model_entries/2322-who-hwā.model.md, model_entries/2322-who-hwā.source_ledger.md, research_memos/2322-who-hwā.md | NOTE |
+| 2326 | you | ēow | regular | yes | source_material | - | model_entries/2326-you-ēow.model.md, model_entries/2326-you-ēow.source_ledger.md, research_memos/2326-you-ēow.md | NOTE |
+| 2330 | thought | þōhte | regular | yes | source_material | - | model_entries/2330-thought-þōhte.model.md, model_entries/2330-thought-þōhte.source_ledger.md, packets/2330-thought-þōhte.md, research_memos/2330-thought-þōhte.md | NOTE |
+| 2332 | hue | hīew | regular | yes | source_material | - | model_entries/2332-hue-hīew.model.md, model_entries/2332-hue-hīew.source_ledger.md, research_memos/2332-hue-hīew.md | NOTE |
 
 ## Required rows with no source material found
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Coverage category | Production status | Production report / source-material path(s) | Requirement basis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2055 | handle | handlian | regular | yes | none | - | - | NOTE |
+| 2327 | wound | wundude | regular | yes | none | - | - | NOTE |
+| 2328 | sow | sāwan | regular | yes | none | - | - | NOTE |
+| 2329 | betray | lǣwan | regular | yes | none | - | - | NOTE |
 
 ## Regular rows with empty NOTE and no report required
 
@@ -425,7 +430,7 @@
 | 2292 | will | willan | regular | no | source_material | - | dev_notes_slices/2292-will-willan.md | none |
 | 2295 | winter | winter | regular | no | source_material | - | dev_notes_slices/2295-winter-winter.md | none |
 | 2299 | wonder | wundor | regular | no | source_material | - | dev_notes_slices/2299-wonder-wundor.md | none |
-| 2301 | word | word | regular | no | source_material | - | dev_notes_slices/2301-word-word.md, packets/1936-ban-bannes.md, packets/1946-berry-berġes.md, packets/1969-breeches-brēċ.md, packets/1973-buck-bucc.md, packets/1981-craft-cræft.md, packets/1987-deed-dǣd.md, packets/2030-fowl-fugol.md, packets/2057-harvest-hierfest.md, packets/2077-hold-healdan.md, packets/2119-man-mannes.md, packets/2124-meed-meorde.md, packets/2140-night-niht.md, packets/2151-reek-rēac.md, packets/2162-rust-rust.md, packets/2198-smear-smierwan.md, packets/2227-strew-strīeġan.md, packets/2242-ten-tēon.md, packets/2250-thistle-þistles.md, packets/2297-wold-weald.md, packets/2312-bore-(3sg)-boraþ.md, packets/2313-learn-(iptv.2sg)-liorna.md, packets/2314-learn-(3sg)-liornaþ.md, packets/2316-lick-(3sg)-liccaþ.md, packets/2318-show-(3sg)-sċēawaþ.md, writing_skill/book_entry_template.md | none |
+| 2301 | word | word | regular | no | source_material | - | dev_notes_slices/2301-word-word.md, packets/1936-ban-bannes.md, packets/1946-berry-berġes.md, packets/1969-breeches-brēċ.md, packets/1973-buck-bucc.md, packets/1981-craft-cræft.md, packets/1987-deed-dǣd.md, packets/2030-fowl-fugol.md, packets/2057-harvest-hierfest.md, packets/2077-hold-healdan.md, packets/2119-man-mannes.md, packets/2124-meed-meorde.md, packets/2140-night-niht.md, packets/2151-reek-rēac.md, packets/2162-rust-rust.md, packets/2198-smear-smierwan.md, packets/2227-strew-strīeġan.md, packets/2242-ten-tēon.md, packets/2250-thistle-þistles.md, packets/2297-wold-weald.md, packets/2312-bore-(3sg)-boraþ.md, packets/2313-learn-(iptv.2sg)-liorna.md, packets/2314-learn-(3sg)-liornaþ.md, packets/2316-lick-(3sg)-liccaþ.md, packets/2318-show-(3sg)-sċēawaþ.md, packets/2322-who-hwā.md, packets/2326-you-ēow.md, packets/2332-hue-hīew.md, writing_skill/book_entry_template.md | none |
 | 2303 | worm | wyrm | regular | no | source_material | - | dev_notes_slices/2303-worm-wyrm.md | none |
 | 2304 | wring | wringan | regular | no | source_material | - | dev_notes_slices/2304-wring-wringan.md | none |
 | 2306 | year | ġēar | regular | no | source_material | - | dev_notes_slices/2306-year-ġēar.md | none |

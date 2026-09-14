@@ -93,7 +93,7 @@ class LegacySubsetTests(unittest.TestCase):
     legacy-subset hash must reproduce the frozen constant."""
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
-    LEGACY_SHA = "a72bdeb8451039206ab0b90110547f50171c209d5b9c08c71219ed45df5165fc"
+    LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")

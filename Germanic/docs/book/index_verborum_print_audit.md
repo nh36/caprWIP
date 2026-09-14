@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2410
-- Internal production unique forms: 1095
-- Printed main occurrences: 2322
-- Printed main unique forms: 1085
+- Internal production occurrences: 2429
+- Internal production unique forms: 1112
+- Printed main occurrences: 2341
+- Printed main unique forms: 1102
 - Printed excluded occurrences: 88
 - Printed excluded unique forms: 69
 
@@ -15,16 +15,16 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1232 | 464 |
-| Proto-Germanic | 950 | 527 |
+| Old English | 1234 | 466 |
+| Proto-Germanic | 958 | 533 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 17 | 9 |
 | Northern West Germanic | 8 | 4 |
 | Pre-Old English / prehistoric English | 19 | 10 |
-| Old Norse | 23 | 14 |
-| Old High German | 21 | 17 |
-| Old Frisian | 8 | 7 |
-| Gothic | 9 | 9 |
+| Old Norse | 26 | 17 |
+| Old High German | 23 | 19 |
+| Old Frisian | 9 | 8 |
+| Gothic | 12 | 12 |
 | Old Saxon | 19 | 13 |
 | Dutch | 3 | 2 |
 | German | 7 | 5 |
@@ -36,10 +36,10 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 386 |
+| target_form | 388 |
 | source_protoform | 339 |
-| selected_input | 543 |
-| comparison_form | 833 |
+| selected_input | 550 |
+| comparison_form | 843 |
 | evidence_form | 221 |
 
 ## Internal-only rows by reason
@@ -53,20 +53,20 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 163
-- `example_input`: 104
+- `diagnostic_comparator`: 165
+- `example_input`: 105
 - `expected_output`: 120
-- `model_stage`: 125
-- `notation_or_segment`: 731
+- `model_stage`: 127
+- `notation_or_segment`: 740
 - `yielded_output`: 94
 
-- Reader-facing include_in_example_index=yes: 606
-- Reader-facing include_in_example_index=no: 731
+- Reader-facing include_in_example_index=yes: 611
+- Reader-facing include_in_example_index=no: 740
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1103
-- Print anomaly rows: 50
+- Unique printed entries: 1121
+- Print anomaly rows: 51
 - Hard print anomalies: 0
 
 ## Unique printed entries: first 20 Old English
@@ -139,8 +139,11 @@
 | goth | `fra-liusan` | fraliusan | 1 | comparison_form |
 | goth | `godamma` | godamma | 1 | evidence_form |
 | goth | `himins` | himins | 1 | evidence_form |
+| goth | `hiwi` | hiwi | 1 | comparison_form |
 | goth | `ƕas` | hwas | 1 | comparison_form |
 | goth | `izwis` | izwis | 1 | comparison_form |
+| goth | `þagkjan` | thagkjan | 1 | comparison_form |
+| goth | `þāhta` | thahta | 1 | comparison_form |
 | dutch | `beide` | beide | 2 | comparison_form |
 | dutch | `vel` | vel | 1 | comparison_form |
 | german | `beide` | beide | 2 | comparison_form |
@@ -154,10 +157,10 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 163
-- `example_input`: 104
+- `diagnostic_comparator`: 165
+- `example_input`: 105
 - `expected_output`: 120
-- `model_stage`: 125
+- `model_stage`: 127
 - `yielded_output`: 94
 
 ### Included rows by inferred language
@@ -165,12 +168,12 @@
 - `unknown`: 73
 - `goth`: 17
 - `nsgmc`: 4
-- `oe`: 59
+- `oe`: 65
 - `ofris`: 4
 - `ohg`: 7
 - `on`: 10
 - `os`: 3
-- `pgmc`: 207
+- `pgmc`: 206
 - `pie`: 5
 - `pnwgmc`: 3
 - `preoe`: 177
@@ -178,13 +181,13 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 405
-- `yes`: 201
+- `no`: 400
+- `yes`: 211
 
 - Included whole-form rows with asterisks: 495
-- Included whole-form rows without asterisks: 111
+- Included whole-form rows without asterisks: 116
 - Included rows inferred_language=oe with leading asterisk: 26
-- Included rows inferred_language=pgmc but OE-output-like form shape: 34
+- Included rows inferred_language=pgmc but OE-output-like form shape: 33
 
 ## Included main-index rows (sample)
 
