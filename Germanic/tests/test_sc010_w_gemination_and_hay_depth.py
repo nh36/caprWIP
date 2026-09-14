@@ -101,6 +101,41 @@ class WGeminationRepairTests(unittest.TestCase):
         flat = re.sub(r"(?m)^\s*>\s?", "", cls.memo.replace("`", ""))
         cls.memo_flat = " ".join(flat.split())
         cls.trace = TRACE.read_text(encoding="utf-8")
+        cls.sc010_output_shape = cls._compile_sc010_output_shape()
+
+    @classmethod
+    def _compile_sc010_output_shape(cls) -> re.Pattern:
+        """Build the 'SC010 has already applied' pattern out of SC010 itself.
+
+        The invariant has to track the rule, not a hand-copied snapshot of
+        it. This reads the gemination law's own segment inventory and its own
+        short-vowel environment out of germanic.txt and assembles the shape
+        the rule emits: a short vowel, a doubled member of the law, *j. If
+        the law's membership changes, the corpus invariant changes with it.
+
+        A selected protoform is a plain string, so a diphthong is simply two
+        vowel letters running together and its second half looks like a short
+        vowel. SC010's environment is a single short-vowel symbol, so the
+        match is barred from starting inside a diphthong or after a long
+        vowel.
+        """
+        def define(name: str) -> str:
+            found = re.search(r"define\s+%s\s*\[(.*?)\];" % name,
+                              cls.uncommented, re.DOTALL)
+            assert found, f"{name} not found in germanic.txt"
+            return found.group(1)
+
+        members = sorted(set(re.findall(
+            r"\{\*(.)\}\s*->\s*\{\*\1\}\s*\{\*\1\}\s*\|\|",
+            define("PWGmcJGemination"))))
+        assert "w" in members, "SC010 must carry the *w branch"
+        short = sorted(set(re.findall(r"\{\*(.)\}", define("EnglishStarShortVowel"))))
+        preceding = sorted(set("".join(
+            re.findall(r"\{\*([^}]+)\}",
+                       define("EnglishStarLongVowel") + define("EnglishStarDiphthong"))
+        )) | set(short))
+        return re.compile("(?<![%s])[%s](%s)\\1j"
+                          % ("".join(preceding), "".join(short), "|".join(members)))
 
     def define_body(self, identifier: str) -> str:
         match = re.search(r"define\s+%s\s*\[(.*?)\];" % re.escape(identifier),
@@ -149,15 +184,49 @@ class WGeminationRepairTests(unittest.TestCase):
         """The governing invariant, applied to the whole corpus.
 
         A selected Proto-Germanic input must not carry a geminate that the
-        cascade itself creates before *j. This is what went wrong with hay.
+        cascade itself derives at SC010 from the source-supported singleton.
+        This is what went wrong with hay.
+
+        The invariant is deliberately narrow, and is read off SC010 itself
+        rather than written out here: it rejects only the exact shape SC010
+        produces, namely a short vowel followed by a doubled member of the
+        gemination law followed by *j. Any other pre-*j geminate is outside
+        SC010's domain and is therefore a legitimate Proto-Germanic
+        reconstruction, not a reconstruction-depth error. A geminate after a
+        long vowel or a diphthong, or a geminate of a segment the law exempts
+        (*r, *z), must pass: the cascade does not create it, so carrying it
+        into a Proto-Germanic slot encodes nothing that CAPR models. If a
+        source reconstructs such a form, this test must not stand in its way.
         """
         offenders = sorted({
             (r["CONCEPT"], r["PROTOFORM"]) for r in self.corpus
-            if re.search(r"(.)\1j", r["PROTOFORM"])
+            if self.sc010_output_shape.search(r["PROTOFORM"])
         })
         self.assertEqual(offenders, [],
-                         "these protoforms pre-encode a pre-*j geminate that "
-                         "SC010 should be producing")
+                         "these protoforms pre-encode the very geminate SC010 "
+                         "derives from a singleton in this environment")
+
+    def test_the_invariant_is_scoped_to_what_sc010_actually_derives(self):
+        """Guard the guard: the invariant must not over-reject.
+
+        The first version of this check rejected any doubled character before
+        *j anywhere in a protoform. That would have failed a future
+        source-supported Proto-Germanic inherited geminate for no better
+        reason than that it resembles SC010's output. These probe forms are
+        not corpus rows; they exist to pin the boundary of the rule.
+        """
+        rejected = "*xáwwją"        # short vowel + geminated *w + *j: SC010's own output
+        self.assertRegex(rejected, self.sc010_output_shape,
+                         "the invariant must still catch hay's old protoform")
+        for allowed, why in {
+            "*xāwwją": "geminate after a long vowel: outside SC010's environment",
+            "*xáuwwją": "geminate after a diphthong: outside SC010's environment",
+            "*xárrją": "*r is exempt from the gemination law (R&T p. 52)",
+            "*xázzją": "*z is exempt from the gemination law (R&T p. 52)",
+            "*xáwwaną": "geminate not before *j",
+        }.items():
+            with self.subTest(form=allowed):
+                self.assertNotRegex(allowed, self.sc010_output_shape, why)
 
     def test_corpus_carries_an_iwj_witness(self):
         """The *w branch must be witnessed outside the words SC029 consumes.

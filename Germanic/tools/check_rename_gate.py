@@ -10,9 +10,11 @@ Gates implemented here (task section 7):
      canonical `define` is present.
   B  Lexical-output identity: recompiling and re-applying preserves the frozen
      outputs_sha256 (and accepted/matched/mismatched counts).
-  E' Executable order unchanged: the live order manifest equals the frozen
-     (original) manifest after undoing ALL completed relabelings (former ->
-     canonical), proving relabeling only, never reordering.
+  E  Executable order unchanged: the executable order immediately AFTER the
+     rename equals the order immediately BEFORE it, modulo the identifier
+     substitution, proving relabeling only, never reordering. The comparison
+     is against the pre-rename revision itself, never against the campaign-era
+     frozen manifest, which is an archive and not a current baseline.
   G  Former-name audit: the former identifier and its snake/kebab derivatives are
      absent from active source and generated output, except individually
      allowlisted archival references.
@@ -30,8 +32,10 @@ import csv
 import io
 import json
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 # Resolve repo layout whether run from /usr/app (container) or the host checkout.
@@ -50,9 +54,9 @@ else:
 
 BASELINE_DIR = DOCS / "cascade_baseline"
 BASELINE_SUMMARY = BASELINE_DIR / "cascade_baseline_summary.json"
-# The FROZEN old-order manifest is the immutable reference (old identifiers); the
-# live manifest (cascade_order_manifest.tsv) is regenerated per rename.
-FROZEN_ORDER_MANIFEST = BASELINE_DIR / "cascade_order_manifest_frozen.tsv"
+# Gate E reconstructs the pre-rename cascade from history, so it needs the
+# working repository rather than the container mount.
+REPO_FOR_GIT = TOOLS.parent.parent
 ALLOWLIST = BASELINE_DIR / "rename_former_name_allowlist.tsv"
 
 sys.path.insert(0, str(TOOLS))
@@ -178,42 +182,168 @@ def _completed_rename_map(former: str, canonical: str) -> dict[str, str]:
     return mapping
 
 
-def gate_e_order_unchanged(former: str, canonical: str) -> list[str]:
-    """Assert the rename leaves the executable order intact.
+def _git(*args: str, cwd: Path | None = None) -> str:
+    result = subprocess.run(("git",) + args, cwd=str(cwd or REPO_FOR_GIT),
+                            capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"git {' '.join(args)}: {result.stderr.strip()}")
+    return result.stdout
 
-    The frozen manifest is a campaign-era snapshot and is deliberately never
-    rebaselined, so the live cascade legitimately contains rules added after
-    the freeze. Comparing raw lengths would therefore fail for every rename
-    once a single new rule is introduced. The invariant that actually matters
-    is that the rules recorded in the frozen snapshot still occur in the live
-    cascade, under their renamed identifiers, in the same relative order.
+
+def _backfill_bundle_markers(fst_path: Path) -> None:
+    """Annotate a historical FST with the bundle markers it predates.
+
+    ``# capr:bundle`` tells the parser which defines are structural groupings
+    to recurse into rather than executable stages. Revisions older than that
+    convention carry the same grouping defines under the same names but
+    without the marker, so the parser cannot walk them. Marking exactly the
+    defines whose names are structural today, and only where they exist at
+    that revision, recovers the historical order without inventing any: the
+    composition being read is still entirely the old source's own.
     """
-    errors: list[str] = []
+    sys.path.insert(0, str(TOOLS))
+    import oe_pipeline as pipeline
+
+    text = fst_path.read_text(encoding="utf-8")
+    if pipeline.BUNDLE_MARKER in text:
+        return
+    structural = pipeline._bundle_names(FST.read_text(encoding="utf-8"))
+    out = []
+    for line in text.splitlines(keepends=True):
+        match = re.match(r"\s*define\s+([A-Za-z_]\w*)\b", line)
+        if match and match.group(1) in structural:
+            line = line.rstrip("\n") + f"  # {pipeline.BUNDLE_MARKER}\n"
+        out.append(line)
+    fst_path.write_text("".join(out), encoding="utf-8")
+
+
+def _order_at(ref: str) -> list[str]:
+    """The executable order of the cascade as it stood at a given revision.
+
+    The revision's own tooling is preferred, so that the historical order is
+    reported the way that revision itself reported it. Renames older than the
+    manifest tool -- or older than the conventions it depends on -- still have
+    a perfectly well-defined order, because it lives in that revision's
+    ``germanic.txt``; for those, today's parser is pointed at the old source
+    instead. That is sound because the parser only reports the order the
+    source already states, and both sides of a comparison fall back together.
+    """
+    snippet = ("import sys; sys.path.insert(0, 'Germanic/tools');"
+               "import cascade_order_manifest as c;"
+               "print(c.manifest_text())")
+
+    def run(tree: Path) -> subprocess.CompletedProcess:
+        return subprocess.run([sys.executable, "-c", snippet], cwd=str(tree),
+                              capture_output=True, text=True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = Path(tmp) / "tree"
+        _git("worktree", "add", "--detach", str(tree), ref)
+        try:
+            out = run(tree)
+            if out.returncode != 0:
+                shutil.copytree(TOOLS, tree / "Germanic" / "tools",
+                                dirs_exist_ok=True)
+                _backfill_bundle_markers(
+                    tree / "Germanic" / "fsts" / "germanic.txt")
+                out = run(tree)
+                if out.returncode != 0:
+                    detail = out.stderr.strip().splitlines()[-1]
+                    raise RuntimeError(f"order at {ref[:8]}: {detail}")
+            rows = csv.DictReader(io.StringIO(out.stdout), delimiter="\t")
+            return [r["foma_identifier"] for r in rows]
+        finally:
+            _git("worktree", "remove", "--force", str(tree))
+
+
+def _live_order() -> list[str]:
+    sys.path.insert(0, str(TOOLS))
     import cascade_order_manifest as com
-    live = list(csv.DictReader(io.StringIO(com.manifest_text()), delimiter="\t"))
-    with FROZEN_ORDER_MANIFEST.open(encoding="utf-8") as handle:
-        frozen = list(csv.DictReader(handle, delimiter="\t"))
+
+    rows = csv.DictReader(io.StringIO(com.manifest_text()), delimiter="\t")
+    return [r["foma_identifier"] for r in rows]
+
+
+def _rename_boundary(former: str) -> tuple[str, str | None]:
+    """The two revisions the rename sits between.
+
+    ``before`` is the newest commit whose cascade still used the former
+    identifier; ``after`` is the very next state of the FST, which is either
+    the commit that follows it or, when the rename is not yet committed, the
+    working tree. Pinning both sides to the rename itself is what keeps the
+    gate meaningful: it asks whether *this* edit reordered the cascade, and
+    stays silent about every legitimate reordering that came later.
+    """
+    history = _git("log", "--format=%H", "--",
+                   "Germanic/fsts/germanic.txt").split()
+    pattern = r"^\s*define\s+%s\b" % re.escape(former)
+    for index, sha in enumerate(history):
+        blob = _git("show", f"{sha}:Germanic/fsts/germanic.txt")
+        if re.search(pattern, blob, re.MULTILINE):
+            return sha, (history[index - 1] if index else None)
+    raise RuntimeError(
+        f"no commit of Germanic/fsts/germanic.txt still defines {former!r}; "
+        "pass --before <ref> to name the pre-rename state explicitly")
+
+
+def gate_e_order_unchanged(former: str, canonical: str,
+                           before: str | None = None) -> list[str]:
+    """Assert the rename relabelled the cascade without reordering it.
+
+    The invariant for a behaviour-neutral rename is local to the rename:
+
+        order immediately before == order immediately after,
+        modulo the identifier substitution.
+
+    It is emphatically NOT agreement with the campaign-era frozen manifest.
+    That manifest archives how the cascade looked during the original naming
+    campaign; legitimate scientific work has since added rules and moved
+    others, so treating it as the authority for today's order makes the gate
+    fail for reasons that have nothing to do with the rename under test.
+    Comparing the two sides of the rename itself asks the question the gate
+    exists to ask, and keeps asking it correctly however much the cascade
+    grows afterwards -- which is also why a rename performed long ago stays
+    checkable today.
+    """
+    try:
+        after: str | None = None
+        if before is None:
+            before, after = _rename_boundary(former)
+        previous = _order_at(before)
+        subsequent = _order_at(after) if after else _live_order()
+    except (RuntimeError, OSError) as exc:
+        return [f"E: cannot establish the order across the rename: {exc}"]
+
+    where = after[:8] if after else "the working tree"
+    # Normalise BOTH sides through the completed rename map so the comparison
+    # sees only order. Identifiers on either side may since have been
+    # relabelled again -- a rule renamed after this one carries a different
+    # name at the two revisions without anything having moved -- and the gate
+    # is about position, not spelling. Dropped or added stages still fail,
+    # because normalisation renames but never removes.
     rename_map = _completed_rename_map(former, canonical)
-    retired = _retired_identifiers()
-    expected = [
-        rename_map.get(r["foma_identifier"], r["foma_identifier"])
-        for r in frozen
-        if r["foma_identifier"] not in retired
-        and rename_map.get(r["foma_identifier"], r["foma_identifier"]) not in retired
-    ]
-    live_names = [r["foma_identifier"] for r in live]
-    missing = [name for name in expected if name not in live_names]
-    if missing:
-        errors.append(f"E: frozen rules absent from the live cascade: {missing}")
-        return errors
-    projected = [name for name in live_names if name in set(expected)]
-    if projected != expected:
-        for i, (got, want) in enumerate(zip(projected, expected), start=1):
-            if got != want:
-                errors.append(f"E: relative order changed at frozen position {i}: expected {want!r} got {got!r}")
-                break
-        else:
-            errors.append(f"E: frozen rule count changed {len(expected)} -> {len(projected)}")
+
+    def normalise(order: list[str]) -> list[str]:
+        return [rename_map.get(name, name) for name in order]
+
+    expected, subsequent = normalise(previous), normalise(subsequent)
+    if expected == subsequent:
+        return []
+
+    errors: list[str] = []
+    if len(expected) != len(subsequent):
+        errors.append(
+            f"E: the cascade changed length across the rename "
+            f"({len(expected)} -> {len(subsequent)}); a rename must not add "
+            f"or remove a stage")
+    for i, (want, got) in enumerate(zip(expected, subsequent), start=1):
+        if want != got:
+            errors.append(
+                f"E: order changed at position {i}: {before[:8]} had {want!r} "
+                f"(after relabeling), {where} has {got!r}")
+            break
+    if not errors:
+        errors.append("E: executable order differs across the rename")
     return errors
 
 
@@ -250,14 +380,15 @@ def gate_g_former_name_audit(former: str) -> list[str]:
     return errors
 
 
-def check(former: str, canonical: str, gates: str) -> int:
+def check(former: str, canonical: str, gates: str,
+          before: str | None = None) -> int:
     all_errors: list[str] = []
     if "A" in gates:
         all_errors += gate_a_compile_and_define(former, canonical)
     if "B" in gates:
         all_errors += gate_b_output_identity()
     if "E" in gates:
-        all_errors += gate_e_order_unchanged(former, canonical)
+        all_errors += gate_e_order_unchanged(former, canonical, before)
     if "G" in gates:
         all_errors += gate_g_former_name_audit(former)
     if all_errors:
@@ -275,8 +406,11 @@ def main() -> int:
     parser.add_argument("--former", required=True)
     parser.add_argument("--canonical", required=True)
     parser.add_argument("--gates", default="ABEG", help="subset of ABEG to run (default all)")
+    parser.add_argument("--before", default=None,
+                        help="git ref holding the pre-rename cascade; by "
+                             "default the newest commit still defining --former")
     args = parser.parse_args()
-    return check(args.former, args.canonical, args.gates)
+    return check(args.former, args.canonical, args.gates, args.before)
 
 
 if __name__ == "__main__":
