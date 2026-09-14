@@ -41,6 +41,7 @@ SC026	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation
 SC026	SC027	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	25	26
 SC027	SC026	reciprocal_chronology	earlier_boundary	independently_demonstrated	displacement_witness	26	25
 SC027	SC087	no_break_search_boundary	later_boundary	boundary_observation		26	90
+SC010	SC029	one_sided_chronology	later_boundary	independently_demonstrated	feeding	10	32
 SC029	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		32	
 SC029	SC030	reciprocal_chronology	later_boundary	independently_demonstrated	feeding	32	33
 SC030	SC029	reciprocal_chronology	earlier_boundary	independently_demonstrated	feeding	33	32

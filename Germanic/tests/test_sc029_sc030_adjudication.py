@@ -119,10 +119,9 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
         causes i-umlaut in hīeġ and strīeġan.
         """
         body = self.define_body("OEAwjGlideFormation")
-        for source in ("{*á} {*w} {*w} {*j}", "{*á} {*w}      {*j}"):
-            self.assertIn(source, body,
-                          "SC029 must still cover the stressed geminate and "
-                          "singleton inputs (hay and strew respectively)")
+        self.assertIn("{*á} {*w} {*w} {*j}", body,
+                      "SC029 must cover the stressed geminate input, which "
+                      "SC010 now supplies for both hay and strew")
         self.assertIn("{*áu} {*j}", body,
                       "the output must be a diphthong FOLLOWED BY surviving *j")
         self.assertNotIn("{*áu} {*w}", body,

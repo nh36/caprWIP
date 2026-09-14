@@ -285,32 +285,36 @@ feeding, attested in the sources' own ordered derivations
 
 ## 6. Do geminate and singleton *wj belong to the same change?
 
-This was posed as an open question and the answer is instructive.
+**Resolved by the follow-up repair.** See
+`audits/sc010-w-gemination-and-hay-depth-adjudication.md`. The account below
+records what this adjudication found; the repair has since removed the
+inconsistency it describes.
 
-CAPR's two witnesses are reconstructed at different depths.
+At the time of this adjudication CAPR's two witnesses were reconstructed at
+different depths.
 
-- `hay` carries \emph{*xáwwją} with a geminate. Ringe and Taylor give PGmc
+- `hay` carried \emph{*xáwwją} with a geminate. Ringe and Taylor give PGmc
   \emph{*hawja} with a single \emph{*w}, and Gothic \emph{hawi} and Old Norse
-  \emph{hey} both show a single \emph{*w} [@RingeTaylor2014, p. 173]. The
-  gemination is a West Germanic development, so a geminate in a Proto-Germanic
-  protoform slot is an anachronism.
-- `strew` carries \emph{*stráwjaną} with a single \emph{*w}, which matches
+  \emph{hey} both show a single \emph{*w} [@RingeTaylor2014, p. 53; p. 173].
+  The gemination is a West Germanic development, so a geminate in a
+  Proto-Germanic protoform slot was an anachronism.
+- `strew` carried \emph{*stráwjaną} with a single \emph{*w}, which matches
   Ringe and Taylor's Proto-Germanic form exactly.
 
-Meanwhile CAPR's own `PWGmcJGemination` rule geminates thirteen consonants
-before \emph{*j} and deliberately excludes \emph{*w}, which is Fulk's position.
+Meanwhile CAPR's own `PWGmcJGemination` geminated thirteen consonants before
+\emph{*j} and excluded \emph{*w}, which is Fulk's position.
 
-So the corpus asserts the gemination lexically for `hay`, denies it in the rule
-inventory, and denies it lexically for `strew`. The four-branch shape of SC029
-exists to absorb that inconsistency. The geminate branch and the singleton
-branch are therefore **not** two historical mechanisms. They are one mechanism
-applied to two reconstruction depths.
+The corpus therefore asserted the gemination lexically for `hay`, denied it in
+the rule inventory, and denied it lexically for `strew`. The four-branch shape
+of SC029 existed to absorb that inconsistency. The geminate branch and the
+singleton branch were **not** two historical mechanisms.
 
-No change is made here. Correcting `hay` to \emph{*xáwją} would entangle the
-unmodelled West Germanic gemination of \emph{*w}, which is a question about
-`PWGmcJGemination` and about which of the two camps CAPR wishes to encode, and
-that is outside this adjudication. It is recorded in section 11 as bounded
-follow-up work.
+The repair adopted the Ringe-Taylor and Campbell account throughout: `hay` now
+enters as \emph{*xáwją}, SC010 supplies the West Germanic geminate for both
+witnesses, and the two singleton branches of SC029 were removed as
+unwitnessed. Campbell §407 p. 167 is decisive that \emph{*w} is an ordinary
+member of the gemination law, "every consonant except r being affected after
+short syllables". SC029's input is now always the geminate.
 
 ## 7. Relation to SC043 Anglo-Frisian brightening
 
@@ -439,10 +443,12 @@ two, and that uncertainty belongs to SC032.
    behaviour-neutral rename gate cannot be satisfied here. Both renames are
    deferred to an isolated pass.
 
-2. **`hay` protoform depth.** \emph{*xáwwją} encodes a West Germanic geminate in
-   a Proto-Germanic slot (section 6). Resolving it requires deciding whether
-   `PWGmcJGemination` should geminate \emph{*w} before \emph{*j}, which is the
-   Campbell and Ringe-Taylor position against Fulk's. Bounded follow-up.
+2. **`hay` protoform depth. Now discharged.** \emph{*xáwwją} encoded a West
+   Germanic geminate in a Proto-Germanic slot (section 6). The follow-up
+   adopted the Campbell and Ringe-Taylor position against Fulk's: `hay` now
+   enters as \emph{*xáwją} and `PWGmcJGemination` geminates \emph{*w} before
+   \emph{*j}. See
+   `audits/sc010-w-gemination-and-hay-depth-adjudication.md`.
 
 3. **SC032 scope.** Recorded in section 8.
 
@@ -468,4 +474,9 @@ singleton witness and sixteen independent inherited-\emph{*au} witnesses, which
 covers every distinction the adjudication needed. Adding vocabulary would have
 padded the count without testing anything new.
 
-No Foma rule was changed and no rule was moved, so no derivation changes.
+No Foma rule was changed and no rule was moved by this adjudication, so it
+produced no derivation changes. The follow-up repair recorded in
+`audits/sc010-w-gemination-and-hay-depth-adjudication.md` subsequently
+corrected `hay`'s protoform and added the \emph{*w} branch of SC010. That
+changed the corpus and rule fingerprints and made SC010 fire for `hay` and
+`strew`, but left every Old English surface output unchanged.

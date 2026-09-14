@@ -17,14 +17,19 @@ first change merely adds two more inputs.
 ## Historical discussion of the resolution of \emph{*awj}
 
 Old English *hīeġ* ‘hay’ and *strīeġan* ‘strew’ go back to forms in which
-\emph{*w} preceded \emph{*j}. West Germanic doubled consonants before
-\emph{*j}, and the doubling applied here as well, so that Proto-Germanic
-\emph{*hauja-} appears as West Germanic \emph{*hauuj} [@Campbell1959, p. 46,
-§120.2]. Campbell writes the sequence as \emph{auj} > \emph{auuj} > \emph{auj},
-with the diphthong restored before the Old English developments begin.
+\emph{*w} preceded \emph{*j}. West Germanic doubled every consonant except
+\emph{*r} before \emph{*j} after a short syllable, and \emph{*w} was an
+ordinary member of that law [@Campbell1959, p. 167, §407]. Proto-Germanic
+\emph{*hawja-} therefore appears as West Germanic \emph{*hauuj}
+[@Campbell1959, p. 46, §120.2]. Campbell writes the sequence as \emph{auj} >
+\emph{auuj} > \emph{auj}, with the diphthong restored before the Old English
+developments begin.
 
 Ringe and Taylor reach the same result and explain why it is possible
-[@RingeTaylor2014, p. 53, §3.1.3]. Gemination was reversible, since it merged
+[@RingeTaylor2014, p. 53, §3.1.3]. They find the gemination of \emph{*wj}
+clearest where the preceding vowel was \emph{*i}, as in Proto-Germanic
+\emph{*niwjaz} ‘new’ and \emph{*siwjaną} ‘sew’, which give Old Saxon and Old
+High German *niuwi* and *siuwen*. Gemination was reversible, since it merged
 nothing and altered no underlying form, so the sequence Northwest Germanic
 \emph{*awj} to West Germanic \emph{*[aw'w']} to pre-Old English \emph{*[auj]}
 can have run its course and then undone itself. Their derivations give
@@ -36,26 +41,28 @@ The change is confined to English. Old High German *houwi* ‘hay’ and
 *gistrouwen* ‘bestrew’, and Old Saxon *hoi* ‘hay’, keep the geminate
 [@RingeTaylor2014, p. 173].
 
-One qualification belongs in the record. Fulk holds that \emph{*w} never
-doubled before \emph{*j} at all, the second element having been vocalic
-throughout [@Fulk2018, §4.10 n. 1]. On that account there is no gemination to
-undo. Both accounts agree that \emph{*auj} is what enters Old English, so the
-rule below is stated in a form that is neutral between them; the disagreement
-concerns whether a discrete change took place.
+One qualification belongs in the record. Fulk holds that \emph{*w} was never
+consonantal here, so that Proto-Germanic already had \emph{*straujaną} with
+its diphthong in place and there is no gemination to undo [@Fulk2018, p. 73,
+§4.10 n. 1]. The account followed here is the handbook one, which the
+continental forms support: the geminate that Old High German *houwi* and
+*gistrouwen* preserve is precisely the stage Fulk denies ever existed. Both
+accounts agree that \emph{*auj} is what enters Old English, and the
+disagreement concerns whether a discrete change took place.
 
 ## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation}
 
 ```foma
 define OEAwjGlideFormation [
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
-    {*a} {*w} {*w} {*j} -> {*au} {*j},
-    {*á} {*w}      {*j} -> {*áu} {*j},
-    {*a} {*w}      {*j} -> {*au} {*j}
+    {*a} {*w} {*w} {*j} -> {*au} {*j}
 ];
 ```
 
-Two corpus words undergo the change. PGmc [xáwwją]{.recon} ‘hay’ becomes
-\emph{*xáują}, and PGmc [stráwjaną]{.recon} ‘strew’ becomes \emph{*stráujaną},
+Two corpus words undergo the change. PGmc [xáwją]{.recon} ‘hay’ is doubled to
+\emph{*xáwwją} by the West Germanic law and then resolved to \emph{*xáują},
+and PGmc [stráwjaną]{.recon} ‘strew’ is doubled to \emph{*stráwwjaną} and
+resolved to \emph{*stráujaną},
 yielding *hīeġ* and *strīeġan* once the later diphthong changes and
 \emph{i}-umlaut have applied.
 

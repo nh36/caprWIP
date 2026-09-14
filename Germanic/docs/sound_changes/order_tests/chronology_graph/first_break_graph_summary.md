@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `72`
-- total edge count: `144`
+- total edge count: `145`
 
 ### Node counts by card_type
 
@@ -33,7 +33,7 @@ chronology constraints.
 | `broad_far_chronology` | 17 |
 | `near_reciprocal_chronology` | 2 |
 | `no_break_search_boundary` | 22 |
-| `one_sided_chronology` | 39 |
+| `one_sided_chronology` | 40 |
 | `reciprocal_chronology` | 40 |
 | `runner_limited_boundary` | 19 |
 | `technical_computational` | 5 |
@@ -59,8 +59,9 @@ chronology constraints.
 1. `SC101 -> SC056` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sheep; year`; forms: PGmc `*skḗpą` yields expected OE `sċēap`, but with SC101 displaced after SC056 the cascade yields `sċǣp`; `*jḗrą` likewise yields `ġǣr` instead of `ġēar`
 1. `SC026 -> SC027` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `goose; youth`; forms: PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC026 is shifted later; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. This is an EXECUTABLE dependency, not a historical interval: SC026 must read the nasal that SC027 deletes (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103
 1. `SC027 -> SC026` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `goose; youth`; forms: PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC027 is shifted earlier; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. Executable dependency, not a historical interval (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103
-1. `SC029 -> SC030` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `hay; strew`; forms: PGmc `*xáwwją` yields expected OE `hīeġ`, but the later-shifted variant yields `hauġ`; PGmc `*stráwjaną` likewise yields `strauian` instead of expected `strīeġan`
-1. `SC030 -> SC029` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `hay; strew`; forms: PGmc `*xáwwją` yields expected OE `hīeġ`, but the earlier-shifted variant yields `hauġ`; PGmc `*stráwjaną` likewise yields `strauian` instead of expected `strīeġan`
+1. `SC010 -> SC029` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `hay; strew`; forms: PGmc `*xáwją` geminates to `*xáwwją` at SC010, which SC029 resolves to `*xáuj`, yielding expected OE `hīeġ`; PGmc `*stráwjaną` likewise geminates to `*stráwwjaną` and resolves to `*stráujaną`, yielding expected `strīeġan`. Without the SC010 step neither form reaches SC029 in its geminate input shape.
+1. `SC029 -> SC030` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `hay; strew`; forms: PGmc `*xáwją` yields expected OE `hīeġ`, but the later-shifted variant yields `hauġ`; PGmc `*stráwjaną` likewise yields `strauian` instead of expected `strīeġan`
+1. `SC030 -> SC029` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `hay; strew`; forms: PGmc `*xáwją` yields expected OE `hīeġ`, but the earlier-shifted variant yields `hauġ`; PGmc `*stráwjaną` likewise yields `strauian` instead of expected `strīeġan`
 1. `SC030 -> SC032` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `believe; bow; bread; dream; flea`; forms: PGmc `*galáubijaną` yields expected OE `ġelīefan`, but the later-shifted variant yields `+?` (no output); PGmc `*bráudą` likewise yields no output instead of expected `brēad`; PGmc `*dráugmaz` yields no output instead of expected `drēam`
 1. `SC031 -> SC034` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `dew; hew`; forms: PGmc `*dáwwō` yields expected OE `dēaw`, but the later-shifted variant yields `dawu`; PGmc `*xáwwaną` likewise yields `hawan` instead of expected `hēawan`
 1. `SC032 -> SC030` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `believe; bow; bread; dream; flea`; forms: PGmc `*galáubijaną` yields expected OE `ġelīefan`, but the earlier-shifted variant yields `+?` (no output); PGmc `*báug` likewise yields no output instead of expected `bēag`; PGmc `*bráudą` yields no output instead of expected `brēad`

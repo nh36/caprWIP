@@ -1811,7 +1811,15 @@ define PWGmcJGemination [
     {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
     {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
     {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j},
-    {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j}
+    {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j},
+    # *w is an ordinary member of the same law. Campbell §407 p. 167:
+    # "every consonant except r being affected after short syllables...
+    # The forms in which w is doubled are dealt with in §120.2."
+    # Ringe & Taylor p. 53: "it appears that that cluster too underwent
+    # gemination in PWGmc." The geminate this creates is the input that
+    # SC029 later resolves. Fulk §4.10 n. 1 dissents; see
+    # audits/sc010-w-gemination-and-hay-depth-adjudication.md.
+    {*w} -> {*w} {*w} || EnglishStarShortVowel _ {*j}
 ];
 
 # Combine West Germanic rules in chronological order per R/T §3.1, §5.1.3.
@@ -2039,36 +2047,41 @@ define OEStripSecondaryStress [
     {*ù} -> {*u}
 ];
 
-# OEAwjGlideFormation: *aw + *j → *au + *j (and *aww + *j → *au + *j).
-# See DEV_NOTES.md §17.10.36-research for full source synthesis.
+# OEAwjGlideFormation (SC029): resolution of the PWGmc geminate
+# *aww + *j to *au + *j. The Foma identifier is retained for this
+# commit only; see the rename debt in
+# audits/sc010-w-gemination-and-hay-depth-adjudication.md. The change
+# is not "glide formation" but the reversal of the gemination that
+# SC010 PWGmcJGemination now supplies.
 #
-# The literature is divided on the PWGmc internal chronology of
-# this context:
-#   Camp A (Kögel 1884 → Luick §98 Anm.2 → Brunner §227/§408 Anm.12
-#           → Bülbring §540 → Campbell §120.2/§407 → R/T vol.2 §3.2.4
-#           lines 3762-3781): *aw + *j geminated to *aw'w' + *j in
-#           PWGmc, then reversed to *au + *j in pre-OE when preceded
-#           by *a. Luick himself calls this "wahrscheinlich aber
-#           nicht strikte zu erweisen" — probable but not strictly
-#           provable.
-#   Camp B (Fulk §4.10 fn.1 lines 4968-4973): no gemination of *w
-#           before *j ever; the *u was a glide throughout, cf. Gothic
-#           stráujan, niujis. Kroonen, Orel, Kluge-Seebold
-#           reconstruct single *w in the relevant headwords.
+# CAPR follows the Ringe-Taylor/Campbell account. R/T vol.2 p.53:
+# "because gemination was not a merger... it was reversible: a
+# sequence of changes PNWGmc *awj > PWGmc *[aw'w'] > pre-OE *[auj]
+# can have occurred, and I suggest that that is exactly what
+# happened", explicitly agreeing in principle with Campbell 1962:46.
+# Campbell §120.2 p. 46: "auj > auuj > auj". Campbell §407 p. 167
+# makes *w an ordinary member of the gemination law.
 #
-# Both camps CONVERGE on *au + *j as the OE-stage input. We model
-# the net effect with a single short-circuit rule, formally neutral
-# between the two accounts. The narrow context (*a precedence
-# required) keeps this from interacting with *e/*i/*o/*u + *w + *j
-# sequences (e.g. *niwjaz, *triwją), where separate analyses apply.
+# Fulk §4.10 n. 1 p. 73 dissents: *w was never consonantal here and
+# EWS *striegan comes straight from PGmc *straujana. Under that
+# account SC029 would not exist as a discrete change. Luick calls the
+# gemination account "wahrscheinlich aber nicht strikte zu erweisen",
+# which is why SC029 keeps confidence B.
 #
-# Stress preserved where present (stressed *á → *áu, parallel to
-# the existing *áu pattern handled by OEAuFronting below).
+# Input is always the geminate, because SC010 now creates it from the
+# PGmc singleton (hay *xawja, strew *strawjana). The former singleton
+# branches were an artifact of hay entering with a pre-geminated
+# protoform and were removed once that defect was repaired.
+#
+# The narrow context (*a precedence required) keeps this away from
+# *iwj sequences (*niwjaz, *triwja), where the handbooks reconstruct
+# a different outcome (OE niowe, not **nauj-).
+#
+# Stress preserved where present; the two branches are CAPR notation
+# variants, not a historical stress condition.
 define OEAwjGlideFormation [
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
-    {*a} {*w} {*w} {*j} -> {*au} {*j},
-    {*á} {*w}      {*j} -> {*áu} {*j},
-    {*a} {*w}      {*j} -> {*au} {*j}
+    {*a} {*w} {*w} {*j} -> {*au} {*j}
 ];
 
 define OEAuFronting [
