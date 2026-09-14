@@ -78,7 +78,7 @@ and a later renaming pass will resolve the residue:
 Campbell's *Old English Grammar* is the primary source for the dating and
 scope of individual changes in this chapter [@Campbell1959].
 Hogg's *Grammar of Old English* provides modern reassessments and additional
-relative-chronology evidence [@HoggPhonology1992]. Ringe and Taylor supply the most
+relative-chronology evidence [@HoggGrammar1992]. Ringe and Taylor supply the most
 detailed relative-chronology analysis for the earlier portion of the chapter,
 through back-mutation [@RingeTaylor2014, pp. 70--160]. Fulk's *Comparative
 Grammar* provides additional coverage for morphological conditioning

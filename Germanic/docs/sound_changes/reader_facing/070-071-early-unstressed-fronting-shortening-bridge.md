@@ -5,7 +5,7 @@
 Campbell distinguishes the shortening of unaccented long vowels, while Hogg,
 Ringe and Taylor, and Fulk place fronting and shortening within a later history
 of syncope and final-vowel adjustment [@Campbell1959, p. 148, §355;
-@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
+@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
 @Fulk2018, pp. 90--96, §§5.6--5.7]. Earlier unstressed fronting precedes later
 o-shortening.
 

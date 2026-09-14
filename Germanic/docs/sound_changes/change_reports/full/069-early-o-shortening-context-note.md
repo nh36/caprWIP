@@ -17,7 +17,7 @@ The source tradition supports the broader late unstressed-vowel region more
 strongly than it supports SC069 as a major handbook center. Campbell, Hogg,
 Ringe and Taylor, Luick, and Fulk all treat the larger zone of apocope, syncope,
 shortening, and later weak-tail cleanup as historically real
-[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.9.3; @Luick1914, §§304--307; @Fulk2018, §§5.6--5.7].
 
 That is enough to justify final prose for SC069. It is not enough to turn the

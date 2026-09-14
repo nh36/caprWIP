@@ -47,7 +47,7 @@ type into a limited but real lexical foothold.
 SC015 is better anchored. Campbell states that unaccented front vowels fell
 together in Old English [@Campbell1959, §369], and Hogg likewise argues that by
 about 700 unstressed front vowels had broadly converged on `/e/`
-[@HoggPhonology1992, p. 118]. The `world` material then makes the rule more concrete.
+[@HoggPhonology1992, p. 120]. The `world` material then makes the rule more concrete.
 Campbell records `weorold` / `weoruld` variation [@Campbell1959, §§338--339],
 while Ringe and Taylor derive the word through `*weraldu > *weruld > weorold ~
 worold` [@RingeTaylor2014, §6.3.3]. That does not create a tight local chapter,

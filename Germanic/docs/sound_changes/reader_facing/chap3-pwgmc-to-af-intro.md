@@ -52,7 +52,7 @@ not inherited from Proto-Northwest Germanic and was not uniform within West
 Germanic [@RingeTaylor2014, pp. 52, 98, 102]. Crist separates this change
 explicitly from the deletion of word-final `*z` and argues that rhotacism must
 follow the deletion rules [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
-Hogg gives the standard Old English–facing summary: `*z` yielded `*r` in
+Bammesberger gives the standard Old English–facing summary: `*z` yielded `*r` in
 intervocalic position but was generally lost in final position
 [@Bammesberger1992, p. 39].
 
@@ -76,7 +76,7 @@ Chapter 2). Later, and only in the north, `*z` was lost in stressed
 monosyllables with compensatory lengthening (SC097, this chapter); the
 southern dialects instead retained and rhotacized it. The standard handbooks
 confirm the West Germanic deletion in general terms: Campbell notes that
-`*z` is "later lost or changed to `r`" [@Campbell1959]; Hogg gives a clean
+`*z` is "later lost or changed to `r`" [@Campbell1959]; Bammesberger gives a clean
 statement that Germanic `*z` is generally lost in final position
 [@Bammesberger1992, p. 39]; the three-way division refines those summaries rather
 than contradicting them.

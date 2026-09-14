@@ -35,7 +35,7 @@ into one process [@Campbell1959, pp. 69--72, 89, §§170, 190--191].
 
 Hogg makes the conditioning sharper still. He states that the change takes place
 when the velar consonant is adjacent to and in the same syllable as a front
-vowel or the palatal consonant `j` [@HoggPhonology1992, pp. 105--106]. This formulation
+vowel or the palatal consonant `j` [@HoggPhonology1992, p. 106]. This formulation
 is important because it moves the discussion from a broad list of palatal
 outcomes to a more precise phonological environment involving adjacency and
 syllable structure.
@@ -180,7 +180,7 @@ Hogg continues in the same vein: “we come now to a change which is almost as
 uncontroversial as it is important” [@HoggPhonology1992, p. 113]. His examples, such as
 *bryd* ‘bride’, *trymman* ‘strengthen’, *bedd* ‘bed’, *ciest* ‘chest’, and
 *wiersa* ‘worse’, likewise emphasize that the change is a broad redistribution
-of vowel quality across the Old English vowel system [@HoggPhonology1992, pp. 113--115].
+of vowel quality across the Old English vowel system [@HoggPhonology1992, pp. 113--114].
 
 The narrower palatal-diphthongal material is described differently. Ringe and
 Taylor treat West-Saxon diphthongization after initial palatals as a distinct
@@ -296,7 +296,7 @@ shaped differently.
 The relevant examples are the recurring West-Saxon `ie` forms cited in the
 handbooks, including *giest* ‘guest’, *giefan* ‘give’, and *hierde*
 ‘shepherd’ in Campbell and *ciest* ‘chest’ in Hogg
-[@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @HoggPhonology1992, pp. 113--115]. The present formalization keeps those diphthongal outcomes
+[@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @HoggPhonology1992, pp. 113--114]. The present formalization keeps those diphthongal outcomes
 visible as a distinct part of the general umlautal development and does not
 leave them implicit under the broad description of fronting.
 
@@ -356,7 +356,7 @@ illustrate the rule with forms such as *gieldan* ‘pay’, *scield* ‘shield�
 *scieppan* ‘create’, where an already palatal consonant triggers the diphthongal
 outcome [@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg’s *giefan* ‘give’ and
 *sceap* ‘sheep’ material belongs to the same phonological zone
-[@HoggPhonology1992, pp. 109--110], while Fulk distinguishes this
+[@HoggPhonology1992, p. 112], while Fulk distinguishes this
 palatal-consonant-triggered diphthongization from the broad front-mutation
 process [@Fulk2018, p. 74, §4.13].
 

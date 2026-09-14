@@ -15,7 +15,7 @@ they sit next to each other in the sequence that leads into Old English
 palatalization. The first is the positional alternation of Germanic *b. Hogg
 states the Old English distribution clearly: /b/ is a stop initially, after
 nasals, and in gemination, while the same segment is otherwise realized as a
-voiced bilabial fricative [@HoggPhonology1992, pp. 101--102]. Ringe and Taylor support
+voiced bilabial fricative [@HoggPhonology1992, p. 108]. Ringe and Taylor support
 the broader West Germanic background by treating Proto-West-Germanic *b as a
 segment whose stop and fricative values depend on position
 [@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
@@ -95,7 +95,7 @@ cluster from plain velars when he remarks that *sk is especially prone to
 palatalization and assibilation [@Campbell1959, p. 278, §440]. Hogg gives the
 same change a clearer structural place by treating *sk beside the palatalization
 of plain velars and before the later West Saxon diphthongal developments
-[@HoggPhonology1992, pp. 106--107, 111--112]. Ringe and Taylor make the same sequence
+[@HoggPhonology1992, pp. 107, 112]. Ringe and Taylor make the same sequence
 explicit when they distinguish the earlier palatalization of velars and *sk from
 the later diphthongization after already palatal consonants
 [@RingeTaylor2014, §§6.4.1, 6.5.1].
@@ -175,7 +175,7 @@ into one process [@Campbell1959, pp. 69--72, 89, §§170, 190--191].
 
 Hogg makes the conditioning sharper still. He states that the change takes place
 when the velar consonant is adjacent to and in the same syllable as a front
-vowel or the palatal consonant `j` [@HoggPhonology1992, pp. 103--104]. This formulation
+vowel or the palatal consonant `j` [@HoggPhonology1992, p. 106]. This formulation
 is important because it moves the discussion from a broad list of palatal
 outcomes to a more precise phonological environment involving adjacency and
 syllable structure.
@@ -385,11 +385,11 @@ system, including forms such as *giest* ‘guest’, *giefan* ‘give’, *hierd
 ‘shepherd’, and *ieldra* ‘older’ [@Campbell1959, pp. 69--72, §§190--197].
 
 Hogg continues in the same vein: “we come now to a change which is almost as
-uncontroversial as it is important” [@HoggPhonology1992, p. 112]. His examples, such as
+uncontroversial as it is important” [@HoggPhonology1992, p. 113]. His examples, such as
 *bryd* ‘bride’, *trymman* ‘strengthen’, *bedd* ‘bed’, *ciest* ‘chest’, and
 *wiersa* ‘worse’, likewise emphasize that the change is a broad redistribution
 of vowel quality across the Old English vowel system [@HoggPhonology1992,
-pp. 112--114].
+pp. 113--114].
 
 The narrower palatal-diphthongal material is described differently. Ringe and
 Taylor treat West-Saxon diphthongization after initial palatals as a distinct
@@ -566,7 +566,7 @@ illustrate the rule with forms such as *gieldan* ‘pay’, *scield* ‘shield�
 *scieppan* ‘create’, where an already palatal consonant triggers the diphthongal
 outcome [@RingeTaylor2014, pp. 215--216, §6.5.1]. Hogg’s *giefan* ‘give’ and
 *sceap* ‘sheep’ material belongs to the same phonological zone
-[@HoggPhonology1992, pp. 108--109], while Fulk distinguishes this
+[@HoggPhonology1992, p. 112], while Fulk distinguishes this
 palatal-consonant-triggered diphthongization from the broad front-mutation
 process [@Fulk2018, p. 74, §4.13].
 

@@ -25,7 +25,7 @@ into one process [@Campbell1959, pp. 69--72, 89, §§170, 190--191].
 
 Hogg makes the conditioning sharper still. He states that the change takes place
 when the velar consonant is adjacent to and in the same syllable as a front
-vowel or the palatal consonant `j` [@HoggPhonology1992, pp. 105--106]. This formulation
+vowel or the palatal consonant `j` [@HoggPhonology1992, p. 106]. This formulation
 replaces a broad list of palatal outcomes with a phonological environment
 defined by adjacency and syllable structure.
 

@@ -63,7 +63,7 @@ That is why the older repo line "change protoform to `*nēdlō` for the OE row" 
 The philological subtlety is not whether OE had `nǣdl`, but how to describe its consonant history and orthographic presentation:
 
 - `Campbell` lists `nédl` among the expected unbroken forms after `t` and `d`, so the OE cluster itself is not problematic [@Campbell1959].
-- `Hogg` likewise treats forms like `bosm`, `hræfn`, `spatl`, and `nidl/nǣdl` as possible syllabic-sonorant outcomes, sometimes with competing epenthetic-vowel spellings elsewhere in the class [@HoggPhonology1992].
+- `Hogg` likewise treats forms like `bosm`, `hræfn`, `spatl`, and `nidl/nǣdl` as possible syllabic-sonorant outcomes, sometimes with competing epenthetic-vowel spellings elsewhere in the class [@HoggPhonology1992, p. 96].
 - The Brunner/Sievers quotation reused in `DEV_NOTES` specifically notes `nǣdl ~ nēdl`, which is useful as orthographic background but does not justify changing the row away from the attested citation form `nǣdl`.
 
 So the safe philological claim is straightforward: the row targets attested OE `nǣdl`, an unbroken citation form; the special explanatory burden lies in the inherited voiced/voiceless alternant, not in OE attestation or paradigm-cell choice.

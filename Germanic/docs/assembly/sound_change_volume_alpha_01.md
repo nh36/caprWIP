@@ -83,7 +83,7 @@ That does not make the CAPR rule name unusable. It does mean the backend apparat
 
 #### Source tradition
 
-The source support for the phenomenon itself is strong. Hogg states succinctly that Germanic `/z/` yielded `/r/` in intervocalic position in Old English, though it was generally lost finally [@Bammesberger1992, p. 39]. Ringe and Taylor go farther: they first note that the change occurred independently in Norse and WGmc and was not uniform even in the latter [@RingeTaylor2014, p. 52], and later advise assigning the process to the post-PWGmc period [@RingeTaylor2014, pp. 98, 102]. Crist's analysis aligns with that caution by arguing that rhotacism is not inherited from Proto-Northwest Germanic and must follow earlier WGmc *z*-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
+The source support for the phenomenon itself is strong. Bammesberger states succinctly that Germanic `/z/` yielded `/r/` in intervocalic position in Old English, though it was generally lost finally [@Bammesberger1992, p. 39]. Ringe and Taylor go farther: they first note that the change occurred independently in Norse and WGmc and was not uniform even in the latter [@RingeTaylor2014, p. 52], and later advise assigning the process to the post-PWGmc period [@RingeTaylor2014, pp. 98, 102]. Crist's analysis aligns with that caution by arguing that rhotacism is not inherited from Proto-Northwest Germanic and must follow earlier WGmc *z*-deletion rules [@Crist2001, pp. 104-106; @Crist2002, pp. 1, 4].
 
 This is enough source support not only for a backend report but for a cautious historical label. The clearest sources support the change itself strongly and support locating it in the West Germanic area after PWGmc rather than at Proto-Germanic proper.
 
@@ -751,7 +751,7 @@ type into a limited but real lexical foothold.
 SC015 is better anchored. Campbell states that unaccented front vowels fell
 together in Old English [@Campbell1959, §369], and Hogg likewise argues that by
 about 700 unstressed front vowels had broadly converged on `/e/`
-[@HoggPhonology1992, p. 118]. The world material then makes the rule more concrete.
+[@HoggPhonology1992, p. 120]. The world material then makes the rule more concrete.
 Campbell records weorold / weoruld variation [@Campbell1959, §§338--339],
 while Ringe and Taylor derive the word through `weraldu > weruld > weorold ~
 worold` [@RingeTaylor2014, §6.3.3]. That does not create a tight local chapter,
@@ -896,7 +896,7 @@ Campbell and Hogg preserve the textbook frame that Germanic *z* is later lost
 or rhotacized, while Crist's dissertation and 2002 handout formulate the key
 historical claim more sharply as West Germanic loss of word-final *z* in
 unstressed syllables before rhotacism; Kilday's recent summary treats that core
-development as already established background [@Campbell1959; @HoggPhonology1992;
+development as already established background [@Campbell1959; @HoggGrammar1992;
 @Crist2001; @Crist2002; @Kilday2024]. This means the right edge of the corridor
 is also historically real, but its literature is more morphology-heavy than the
 bare CAPR rule suggests.
@@ -1091,7 +1091,7 @@ from an older hefun, with the later visible -o- belonging to the broader
 history of unstressed vowels [@Campbell1959, §373]. Hogg likewise treats the
 heofon / heofun region inside later unstressed-vowel development, and Ringe
 and Taylor also keep heaven historically legible inside the wider West
-Germanic and Old English vocalic record [@HoggPhonology1992; @RingeTaylor2014].
+Germanic and Old English vocalic record [@HoggGrammar1992; @RingeTaylor2014].
 
 That is enough support for a short note. The prose should keep SC021
 focused on the narrow unstressed-vowel hinge behind heofon, not inflate it
@@ -1499,7 +1499,7 @@ the preceding vowel is lengthened, often with nasalization in the historical
 description [@Campbell1959, §121; @Fulk2018, §4.11;
 @SieversBrunner1965, §186.1]. Hogg is especially useful for the compact
 ansuz > ōs type, where rounding, nasal loss, and compensatory lengthening
-are kept together as one connected development [@HoggPhonology1992]. Ringe and Taylor
+are kept together as one connected development [@HoggGrammar1992]. Ringe and Taylor
 help most with stage assignment: they treat forms such as goose and youth
 as outcomes of a broader northern West Germanic development rather than as a
 late isolated Old English innovation [@RingeTaylor2014, pp. 140--141]. Luick
@@ -1758,7 +1758,7 @@ English surface forms. And this report should not be expanded backward into
 report**: a real four-change corridor in the model, not a claim that the
 handbooks themselves present exactly four separate laws matching CAPR's present
 segmentation [@Campbell1959, §120; @Campbell1959, §§170--176, 185, 222--227;
-@HoggPhonology1992, pp. 107--108, 112--113; @Luick1914, §§115--119, 168--176, 182--183,
+@HoggPhonology1992, pp. 106--108, 113; @Luick1914, §§115--119, 168--176, 182--183,
 195; @RingeTaylor2014, §§6.1.2, 6.5.1, 6.10.1; @Fulk2018, §§4.7, 4.13].
 `SC031` OE WW Simplification and `SC034` OE Aw Long Diphthong are the
 local center of the chapter, while `SC032` OE Diphthong Leveling and
@@ -1777,7 +1777,7 @@ related but distinct layers rather than as four coequal chapter headings
 Fulk sharpen the same caution from different angles: the palatal and later
 diphthongal material is real, but it sits inside a wider chronology of
 brightening, breaking, smoothing, and front mutation rather than inside one
-simple handbook chain [@HoggPhonology1992, pp. 107--108, 112--113;
+simple handbook chain [@HoggPhonology1992, pp. 112--113;
 @RingeTaylor2014, §§6.1.2, 6.5.1, 6.10.1; @Fulk2018, §§4.7, 4.13].
 
 That makes `SC031` and `SC034` the most natural production core. Their witness
@@ -2272,7 +2272,7 @@ large independent chapter under exactly this label. The historical point is
 smaller: CAPR needs an explicit surviving-bimoric ō pathway behind rest,
 and that pathway belongs immediately on the left edge of the SC043
 brightening pivot rather than hidden inside a larger non-contiguous chapter
-[@Campbell1959, §§131, 157--158; @HoggPhonology1992, pp. 102, 120;
+[@Campbell1959, §§131, 157--158; @HoggPhonology1992, pp. 102, 105;
 @RingeTaylor2014, pp. 157--158, 189--190].
 
 #### Source tradition
@@ -2283,7 +2283,7 @@ Campbell treats the early fronting and later restoration developments as part
 of one intelligible historical region [@Campbell1959, §§131, 157--158]. Hogg
 is especially useful on the early fronting side and on the broader vocalic
 environment that later Old English rules continue to read
-[@HoggPhonology1992, pp. 102, 120]. Ringe and Taylor likewise place fronting and later
+[@HoggPhonology1992, pp. 102, 105]. Ringe and Taylor likewise place fronting and later
 retraction/restoration in a sequence that makes CAPR's narrow rest pathway
 historically legible even if the precise SC042 label is model-shaped
 [@RingeTaylor2014, pp. 157--158, 189--190].
@@ -2371,7 +2371,7 @@ vowels. Ringe and Taylor sharpen the chronology further by arguing that
 fronting must precede breaking and that later retraction must follow both.
 Fulk gives the most compact bridge from the basic brightening rule to the later
 Old English developments that partly conceal it
-[@Campbell1959, §§131, 139, 157--158; @HoggPhonology1992, pp. 102, 120; @Toon1992, p. 446;
+[@Campbell1959, §§131, 139, 157--158; @HoggPhonology1992, pp. 102, 105; @Toon1992, p. 446;
 @RingeTaylor2014, pp. 157--158, 168--169, 189--190; @Fulk2018, §§4.12--4.13].
 
 #### CAPR implementation
@@ -2767,7 +2767,7 @@ palatal *sc. That is a real and recognizable historical development in the
 handbook tradition, even though it is usually presented as part of the broader
 Old English palatalization complex rather than as a wholly independent headline
 chapter [@Campbell1959, §170; @Campbell1959, §§440--441;
-@HoggPhonology1992, pp. 107--108; @RingeTaylor2014, §6.4.1; @Luick1914, §168;
+@HoggPhonology1992, pp. 106--108; @RingeTaylor2014, §6.4.1; @Luick1914, §168;
 @Fulk2018, p. 28; @SieversBrunner1965, §91.a].
 
 This report is therefore deliberately narrow. It treats SC051 as its own
@@ -2785,7 +2785,7 @@ assibilation, distinguishing the broad initial development from medial and final
 environments that still resist palatalization after back vowels
 [@Campbell1959, §170; @Campbell1959, §§440--441]. Hogg is especially clear that the cluster
 sk undergoes a parallel change to palatal sc and that this should be kept
-separate from later palatal diphthongization [@HoggPhonology1992, pp. 107--108, 112--113]. Ringe and Taylor are the sharpest guide to the chapter boundary:
+separate from later palatal diphthongization [@HoggPhonology1992, pp. 112--113]. Ringe and Taylor are the sharpest guide to the chapter boundary:
 they distinguish *sk palatalization from later West Saxon diphthongization
 after initial palatals, which is exactly the distinction this report needs
 [@RingeTaylor2014, §§6.4.1, 6.5.1].
@@ -2839,7 +2839,7 @@ flasce and wascan. It must also precede SC056: the key later-side witnesses
 are shaft, shear, sheath, sheep, and *shield, where delaying SC051
 beyond West Saxon palatal diphthongization removes the live *sċea- / *sċie-
 outcomes [@Campbell1959, §170; @Campbell1959, §§440--441;
-@HoggPhonology1992, pp. 107--108; @HoggPhonology1992, pp. 112--113;
+@HoggPhonology1992, p. 112; @HoggPhonology1992, pp. 112--113;
 @RingeTaylor2014, §6.4.1; @RingeTaylor2014, §6.5.1; @Fulk2018, p. 28;
 @Fulk2018, §4.13].
 
@@ -2869,7 +2869,7 @@ This report should stay narrow. It does not exhaust Old English palatalization,
 and it should not absorb SC052 or SC056 into a larger chapter by implication.
 The handbooks support SC051 as a real process, but they often discuss it inside
 the wider palatalization complex rather than as a fully isolated law
-[@Campbell1959, §170; @Campbell1959, §§440--441; @HoggPhonology1992, pp. 107--108;
+[@Campbell1959, §170; @Campbell1959, §§440--441; @HoggPhonology1992, pp. 106--108;
 @RingeTaylor2014, §6.4.1; @Luick1914, §168].
 
 The chapter must also avoid duplicating the earlier SC052 hinge report
@@ -2889,7 +2889,7 @@ SC052 isolates the Old English palatalization of plain velars *k* and *g* in
 front-vocalic and *j*-adjacent environments. That is a real Old English process
 in the handbook tradition, even though the same sources usually discuss plain
 velars and *sk* inside a broader palatalization complex rather than as wholly
-independent headline chapters [@Campbell1959, §170; @HoggPhonology1992, pp. 107--108;
+independent headline chapters [@Campbell1959, §170; @HoggPhonology1992, pp. 106--108;
 @RingeTaylor2014, §6.4.1; @Luick1914, §§168--176; @Fulk2018, p. 28].
 
 This report therefore treats SC052 as a standalone chronological hinge, not
@@ -2905,7 +2905,7 @@ The source tradition supports that framing. Campbell, Hogg, Ringe and Taylor,
 Luick, and Fulk all treat plain velar palatalization as a real Old English
 development, and all place it in the same broad historical neighborhood as
 *sk*-palatalization and later front-mutation material
-[@Campbell1959, §170; @HoggPhonology1992, pp. 107--108, 112--115;
+[@Campbell1959, §170; @HoggPhonology1992, pp. 106--108, 113--114;
 @RingeTaylor2014, §§6.4.1, 6.6.1--6.6.4; @Luick1914, §§168--176, 181--183;
 @Fulk2018, §§4.7, 4.13]. The handbooks usually describe SC051 and SC052 inside
 that wider palatalization complex, but the book can still treat them as
@@ -2916,7 +2916,7 @@ The strongest source support for SC052's right edge comes from Ringe and Taylor
 and from the broader handbook sequence in Campbell, Hogg, Luick, and Fulk:
 palatalization belongs to an earlier consonantal zone, while i-umlaut or front
 mutation is later enough to create contrasts with non-palatalized velars
-[@Campbell1959, §§190--197; @HoggPhonology1992, pp. 112--115;
+[@Campbell1959, §§190--197; @HoggPhonology1992, pp. 106--108, 113;
 @RingeTaylor2014, §§6.4.1, 6.6.1--6.6.4; @Luick1914, §§181--183;
 @Fulk2018, §4.7]. The left edge is narrower. Adamczyk is useful precisely
 because she supports treating SC050 as a real Sievers-law and prosodic feeder
@@ -2941,7 +2941,7 @@ functions that the handbook tradition often discusses together:
 That segmentation is a modeling choice, but it is a disciplined one. The
 sources support the larger historical zone, while CAPR makes the internal order
 testable without treating every neighboring process as one mixed chapter
-[@Campbell1959, §170; @HoggPhonology1992, pp. 107--108, 112--115;
+[@Campbell1959, §170; @HoggPhonology1992, pp. 106--108, 113--114;
 @RingeTaylor2014, §§6.4.1, 6.6.1--6.6.4; @Luick1914, §§168--176, 181--183;
 @Fulk2018, §§4.7, 4.13].
 
@@ -2973,7 +2973,7 @@ not a positive historical boundary, so the stretch relation must not be
 inflated into a whole `SC050-SC052` chapter. The right edge is
 narrow as well, but it is historically interpretable because the source
 tradition broadly places palatalization before i-umlaut or front mutation
-[@Campbell1959, §§190--197; @HoggPhonology1992, pp. 112--115;
+[@Campbell1959, §§190--197; @HoggPhonology1992, pp. 106--108, 113;
 @RingeTaylor2014, §§6.4.1, 6.6.1--6.6.4; @Luick1914, §§181--183;
 @Fulk2018, §4.7].
 
@@ -3151,24 +3151,24 @@ order without inflating either one into a major chapter.
 SC055 OE I Umlaut is one of the major handbook sound changes of Old
 English: a following i or j fronts back vowels and raises parts of the
 front-vowel system, leaving a large morphological and lexical footprint
-[@Campbell1959, §§190--197; @HoggPhonology1992, pp. 112--115; @Luick1914, §§181--183;
+[@Campbell1959, §§190--197; @HoggPhonology1992, pp. 106--108, 113; @Luick1914, §§181--183;
 @RingeTaylor2014, §§6.6.1--6.6.4; @Fulk2018, §4.7]. SC056 **OE Ws Palatal
 Diphthongization** is real as well, but it is narrower: a West Saxon
 palatal-triggered diphthongization zone on the right edge of the umlaut
 neighborhood rather than a second coequal handbook headline
-[@Campbell1959, §39; @HoggPhonology1992, pp. 105--106; @RingeTaylor2014, §6.5.1;
+[@Campbell1959, §39; @HoggPhonology1992, p. 106; @RingeTaylor2014, §6.5.1;
 @Fulk2018, §4.13].
 
 #### Source tradition
 
 The source tradition is clear about the chapter's center. Campbell, Hogg,
 Luick, Ringe and Taylor, and Fulk all treat i-umlaut as a large and central Old
-English development [@Campbell1959, §§190--197; @HoggPhonology1992, pp. 112--115;
+English development [@Campbell1959, §§190--197; @HoggPhonology1992, pp. 106--108, 113;
 @Luick1914, §§181--183; @RingeTaylor2014, §§6.6.1--6.6.4; @Fulk2018, §4.7].
 The same sources also recognize West Saxon palatal diphthongization, but they
 do not present it in the same way. Campbell and Hogg treat it in separate
 palatal-vowel discussions rather than folding it into the main i-mutation
-chapter [@Campbell1959, §39; @HoggPhonology1992, pp. 105--106]. Ringe and Taylor and
+chapter [@Campbell1959, §39; @HoggPhonology1992, p. 106]. Ringe and Taylor and
 Fulk are the most important cautions here: both place palatal-triggered
 diphthongization differently in the broader textbook chronology, so SC056 should
 not be narrated as if the handbook tradition simply states "after i-umlaut comes
@@ -3380,7 +3380,7 @@ seam. The
 historical point is narrower than the old grouped bridge: back mutation or back
 umlaut is a real Old English vowel-development zone in the handbooks, but that
 does not justify pulling SC060, SC061, or the later weak-tail cluster into
-one shared chapter [@Campbell1959, §207; @HoggPhonology1992; @RingeTaylor2014, §6.9.4;
+one shared chapter [@Campbell1959, §207; @HoggGrammar1992; @RingeTaylor2014, §6.9.4;
 @Fulk2018, §4.8].
 
 #### Source tradition
@@ -3390,7 +3390,8 @@ Campbell treats back mutation directly as a later diphthongizing development
 before following back vowels and illustrates why forms such as heofon are
 historically legible outcomes rather than model artifacts [@Campbell1959, §207].
 Hogg likewise treats back mutation as a real later change parallel in type to
-breaking, even if narrower and more restricted in West Saxon [@HoggPhonology1992].
+breaking, even if narrower and more restricted in West Saxon
+[@HoggPhonology1992, pp. 115--116].
 Ringe and Taylor sharpen the comparative picture by discussing back umlaut as a
 distinct later zone and by citing non-West-Saxon forms such as geofad beside
 West Saxon giefan and weofan beside West Saxon wefan
@@ -3710,7 +3711,7 @@ The source tradition strongly supports the **broader late weak-tail
 environment** around this unit. Campbell, Hogg, Ringe and Taylor, Luick, and
 Fulk all support a post-apocope zone in which additional medial reduction,
 cluster pressure, and weak-tail cleanup remain active
-[@Campbell1959, §§345--349, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--349, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.8.4; @Luick1914, §§304--306; @Fulk2018, §5.6].
 Kroonen adds the key lexical support for the inherited furht- family behind
 the fright witness that carries SC064's current positive evidence
@@ -3723,7 +3724,7 @@ of medial syncope than onto CAPR's precise pre-dental rule. The honest source
 claim is therefore asymmetrical: the post-apocope setting is well supported, the
 fright family is real, but the pair itself is a practical chronological bridge
 report rather than a traditional two-rule chapter
-[@Campbell1959, §§345--349, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--349, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.8.4; @Luick1914, §§304--306; @Fulk2018, §5.6;
 @Kroonen2013, p. 201].
 
@@ -3738,7 +3739,7 @@ useful explicit rules in the model, but they are not simple one-to-one matches
 for ordinary grammar chapter labels. SC064 is especially narrow and
 witness-driven. SC065 is better read as one carved-out formal slice of the
 broader late medial-syncope tradition than as the whole historical phenomenon
-[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, §§6.7.3--6.8.4].
+[@HoggPhonology1992, p. 121; @RingeTaylor2014, §§6.7.3--6.8.4].
 
 #### Place in the cascade
 
@@ -3812,7 +3813,7 @@ their weight. The historical core is therefore not three equally standard
 handbook laws, but one narrower sequence: medial syncope is strongly supported,
 downstream cluster simplification is moderately supported, and CAPR's exact
 three-rule segmentation is supported only unevenly
-[@Campbell1959, §§345--349, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--349, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.7.5, 6.8.1--6.8.2; @Luick1914, §§304--307;
 @SieversBrunner1965, §§157--159].
 
@@ -3823,7 +3824,7 @@ core: medial unaccented vowels are lost after short syllables, especially where
 the result is a consonant + `l/r` cluster, which makes him especially useful for
 SC066 [@Campbell1959, §§388--389]. Hogg is valuable at the broader structural
 level, since he keeps apocope, syncope, and the simplification of over-heavy
-consonant groups in one connected late weak-tail story [@HoggPhonology1992, pp. 121--122].
+consonant groups in one connected late weak-tail story [@HoggPhonology1992, p. 121].
 Ringe and Taylor provide the clearest staged formulation for this report: they
 distinguish general syncope from later apocope, treat nettle as a syncope
 type, and state explicitly that geminates are simplified next to another
@@ -3848,7 +3849,7 @@ makes the cleanup logic explicit, but the book should not imply that the
 handbooks routinely isolate SC067 as a coequal sound law. SC067 is better read
 as a model-internal bridge or cleanup step between the stronger historical poles
 of syncope and post-syncope cluster simplification
-[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, §§6.7.3--6.7.5, 6.8.1--6.8.2].
+[@HoggPhonology1992, p. 121; @RingeTaylor2014, §§6.7.3--6.7.5, 6.8.1--6.8.2].
 
 #### Place in the cascade
 
@@ -3913,7 +3914,7 @@ The source tradition supports the broader late unstressed-vowel region more
 strongly than it supports SC069 as a major handbook center. Campbell, Hogg,
 Ringe and Taylor, Luick, and Fulk all treat the larger zone of apocope, syncope,
 shortening, and later weak-tail cleanup as historically real
-[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.9.3; @Luick1914, §§304--307; @Fulk2018, §§5.6--5.7].
 
 That is enough to justify final prose for SC069. It is not enough to turn the
@@ -3993,7 +3994,7 @@ The source tradition supports the pair as part of the broader late
 unstressed-vowel leveling and reduction environment, but not as one of the
 major handbook centers in that region. Hogg is useful because he keeps apocope,
 syncope, and later consonant-cluster simplification in the same late zone while
-still distinguishing them as separate processes [@HoggPhonology1992, pp. 121--122].
+still distinguishing them as separate processes [@HoggPhonology1992, p. 121].
 Ringe and Taylor give the clearest staged framework for that zone, moving from
 general syncope and apocope into shortening of unstressed long vowels and later
 post-apocope developments [@RingeTaylor2014, §§6.7.3--6.8.4, 6.9.1--6.9.3].
@@ -4098,7 +4099,7 @@ The source tradition supports this pair as a compact late weak-tail core.
 Campbell, Hogg, Ringe and Taylor, Luick, and Fulk all support the broader late
 weak-tail environment in which syncope, apocope, unstressed long-vowel
 shortening, and later cleanup remain active
-[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.8.4; @Luick1914, §§304--307; @Fulk2018, §5.6].
 Within that broader environment, Ringe and Taylor give SC072 the clearest
 handbook footing by explicitly placing shortening of unstressed long vowels
@@ -4204,7 +4205,7 @@ unstressed-vowel and weak-tail environment, but not as one of its major
 handbook centers. Hogg is useful because he keeps apocope, syncope, and later
 cluster simplification in the same late zone while warning against turning
 every internal CAPR step into a separate large historical law
-[@HoggPhonology1992, pp. 121--122]. Ringe and Taylor provide the clearest staged late
+[@HoggPhonology1992, p. 121]. Ringe and Taylor provide the clearest staged late
 framework, but their strongest emphasis falls on the shortening/apocope core
 rather than on this narrower medial-lowering bridge
 [@RingeTaylor2014, §§6.7.3--6.8.4, 6.9.1--6.9.3]. Luick likewise supports the
@@ -4302,7 +4303,7 @@ inside the larger late unstressed-vowel environment
 [@Campbell1959, §§345--354, 388--389; @Fulk2018, §§5.6--5.7]. Hogg, Ringe and
 Taylor, and Luick support the same broader late weak-tail setting even though
 they do not isolate SC076 as a major handbook center
-[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, §§6.7.3--6.9.3;
+[@HoggPhonology1992, p. 121; @RingeTaylor2014, §§6.7.3--6.9.3;
 @Luick1914, §§304--307].
 
 That is enough to justify final prose. It is not enough to turn SC076 into a
@@ -4369,7 +4370,7 @@ post-apocope cleanup environment, but not a chapter that stretches out of
 chronological order to join SC078 to `SC085-SC086`. Campbell, Hogg, Ringe and
 Taylor, Luick, and Fulk all support a late weak-tail region in which apocope,
 syncope, shortening, contraction, and further cleanup remain active
-[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, pp. 121--122;
+[@Campbell1959, §§345--354, 388--389; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, §§6.7.3--6.9.3; @Luick1914, §§304--307; @Fulk2018, §5.6].
 
 Within that broader environment, SC078 is best read as the right-edge weak-tail
@@ -4476,7 +4477,7 @@ zone [@Fulk2018, §6.11, §12.21]. Campbell's vocalization material and final
 consonant discussions give the technical background for both the *j*-loss
 material and the final-geminate issue [@Campbell1959, §§266--274, §401, §731].
 Hogg's account of late final degemination gives SC080 its clearest handbook
-support [@HoggPhonology1992].
+support [@HoggGrammar1992].
 
 That support is enough for a short adjacent report, but the hierarchy remains
 uneven. SC079 carries the larger historical load; SC080 is best read as the
@@ -4683,7 +4684,7 @@ as téon, sléan, séon, and téo that matches the core of this pair
 picture with their explicit section on loss of intervocalic *h* and contraction,
 using forms such as flēon, slēan, téon, and tā
 [@RingeTaylor2014, §§6.9.1--6.9.3]. Hogg likewise treats contracted verbs after
-loss of intervocalic *h* as one coherent late pattern [@HoggPhonology1992].
+loss of intervocalic *h* as one coherent late pattern [@HoggGrammar1992].
 
 Luick and Sievers-Brunner reinforce the same point from the older grammar
 tradition: later contraction follows hiatus created by *h*-loss, while
@@ -4781,7 +4782,7 @@ in SC078, `SC079-SC080`, or `SC081-SC083`.
 The source tradition for this note is real and distinct. Hogg treats
 r-metathesis as a genuine Old English process with variable chronology and makes
 clear that it belongs to a different late consonant/vowel history from
-contracted verbs and final-geminate simplification [@HoggPhonology1992]. Ringe and
+contracted verbs and final-geminate simplification [@HoggGrammar1992]. Ringe and
 Taylor likewise treat metathesis of *r* with short vowels as a real Old English
 development and use beornan / berstan type material to show that the process
 is historically interpretable without making it a compact local pair

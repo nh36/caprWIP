@@ -23,7 +23,7 @@ Fulk gives the most compact bridge from the basic brightening rule to the later
 Old English developments that partly conceal it. Toon supplies the traditional
 relative ordering, reproducing Campbell's own chronological list while warning
 against reading it as a strict linear sequence
-[@Campbell1959, §§131, 139, 157--158, §255; @HoggPhonology1992, pp. 102, 120;
+[@Campbell1959, §§131, 139, 157--158, §255; @HoggPhonology1992, pp. 102, 105;
 @Toon1992, p. 446;
 @RingeTaylor2014, pp. 157--158, 168--169, 189--190; @Fulk2018, §§4.12--4.13].
 
@@ -76,7 +76,7 @@ carefully: the existence of the fronting rule is well supported, but the
 subgrouping narrative is less straightforward [@Campbell1959, §131;
 @RingeTaylor2014, pp. 157--158]. The unstressed clause in CAPR is defensible
 from the handbook tradition, yet it remains a modeling choice that should not
-be mistaken for the whole historical claim [@HoggPhonology1992, pp. 102, 120].
+be mistaken for the whole historical claim [@HoggPhonology1992, pp. 102, 105].
 Likewise, the long-final clause belongs to CAPR's representation of the
 SC042-to-SC043 pathway and should be presented as a model-specific approximation
 rather than as a simple handbook quotation.

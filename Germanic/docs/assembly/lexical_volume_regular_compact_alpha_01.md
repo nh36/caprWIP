@@ -320,7 +320,7 @@ OE I Umlaut & \emph{*byrdi} \\
 
 Kroonen cites the noun under stem-level _\*burdi-_ and gives Old English _(ge-)byrd_ among the reflexes [@Kroonen2013, 122]. The form followed here, _\*búrdiz_, is the nominative-style form that stands behind that stem label. Clark Hall and Bosworth-Toller both attest simplex _byrd_ as an Old English noun meaning 'birth' [@ClarkHall1960, 70; @BosworthToller1898, 125]. From _\*búrdiz_, loss of final _z_ gives _\*búrdi_.
 
-Form note. The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Kastovsky1992, p. 358].
+Form note. The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Kastovsky's discussion of deverbal feminines provides the broader derivational setting [@Kastovsky1992, p. 358].
 
 ### bone — OE bān
 
@@ -5365,7 +5365,7 @@ The development discussed here follows the Ringe-Taylor alternant framework.
 Clark Hall records the attested citation form _nǣdl_ [@ClarkHall1960, 210].
 Campbell lists _nédl_ among the expected unbroken forms after _t_ and _d_
 [@Campbell1959, §367]. Hogg also includes _nidi_ / _nǣdl_ in the same broader
-cluster history [@HoggPhonology1992].
+cluster history [@HoggGrammar1992].
 
 The target is therefore an attested citation form. No oblique-cell substitution
 is involved in this entry.

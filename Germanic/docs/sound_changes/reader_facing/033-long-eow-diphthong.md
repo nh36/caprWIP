@@ -7,7 +7,7 @@ discusses inherited \emph{aw}/\emph{ew} outcomes, palatal-triggered
 diphthongization, and later Anglian smoothing in connected but separate parts
 of the vowel history; Hogg likewise distinguishes the palatal-diphthongal
 developments [@Campbell1959, pp. 46, 53--54, 65--70, 95--96,
-§§120, 135--136, 170--176, 185, 223--227; @HoggPhonology1992, pp. 107--108, 112--113].
+§§120, 135--136, 170--176, 185, 223--227; @HoggPhonology1992, pp. 112--113].
 
 The closest interaction joins \emph{ww}-simplification and long-\emph{aw} diphthongization, which together shape *dēaw* ‘dew’ and *hēawan* ‘hew’. Diphthong leveling regularizes a wider field, while long-\emph{ew} diphthongization carries \emph{ēow} into the later environment of breaking.
 

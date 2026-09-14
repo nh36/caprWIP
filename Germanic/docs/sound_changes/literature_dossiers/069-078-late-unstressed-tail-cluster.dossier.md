@@ -86,7 +86,7 @@ uneven placeholder into a false chapter center.
   >
   > "The high vowels were also subject to syncope in medial positions after a heavy syllable ..."
 
-- paraphrase: Hogg is especially useful for the internal weighting of the row. He treats apocope and syncope as neighboring but distinct late processes, shows how `weorod`, `heafodu`, and `heafdu` reflect their overlap, and then immediately notes that syncope-created consonant clusters can trigger later simplification [@HoggPhonology1992, pp. 121--122]. That supports `SC072-SC075` and `SC078` as genuine late weak-tail material, while also warning against narrating every CAPR step as a separate textbook law.
+- paraphrase: Hogg is especially useful for the internal weighting of the row. He treats apocope and syncope as neighboring but distinct late processes, shows how `weorod`, `heafodu`, and `heafdu` reflect their overlap, and then immediately notes that syncope-created consonant clusters can trigger later simplification [@HoggPhonology1992, p. 121]. That supports `SC072-SC075` and `SC078` as genuine late weak-tail material, while also warning against narrating every CAPR step as a separate textbook law.
 - conditioning: heavy-syllable and trisyllabic apocope, medial syncope after heavy syllables, and downstream consonant-cluster simplification all belong to the same late zone
 - chronology: later than i-mutation; apocope and syncope are partly overlapping rather than a flat one-rule ladder
 - examples: `fet`; `word`; `scipu`; `weorod`; `heafodu`; `heafdu`
@@ -155,7 +155,7 @@ row.
 2. `SC063`, `SC064-SC065`, and `SC066-SC068` already articulate a staged
    weak-tail region on the left: apocope, a modest post-apocope tail, then a
    promoted syncope/cleanup corridor [@Campbell1959, §§345--349, 388--389;
-   @HoggPhonology1992, pp. 121--122; @RingeTaylor2014, §§6.7.3--6.8.4; @Fulk2018,
+   @HoggPhonology1992, p. 121; @RingeTaylor2014, §§6.7.3--6.8.4; @Fulk2018,
    §5.6].
 3. The closing `SC079-SC087` scaffold remains broad on the right, so `SC078`
    cannot yet be narrated as though its later `SC086` boundary had already been
