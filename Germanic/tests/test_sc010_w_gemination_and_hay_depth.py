@@ -204,7 +204,7 @@ class WGeminationRepairTests(unittest.TestCase):
 
     def test_sc029_takes_only_the_geminate_input(self):
         """The singleton branches were an artifact of hay's bad protoform."""
-        body = self.define_body("OEAwjGlideFormation")
+        body = self.define_body("OEAwwjResolution")
         self.assertIn("{*á} {*w} {*w} {*j}", body)
         clauses = [c.strip() for c in body.split(",") if c.strip()]
         for clause in clauses:
@@ -222,7 +222,7 @@ class WGeminationRepairTests(unittest.TestCase):
         reversal is no reason to delete the earlier change.
         """
         self.assertIn("define PWGmcJGemination", self.uncommented)
-        self.assertIn("define OEAwjGlideFormation", self.uncommented)
+        self.assertIn("define OEAwwjResolution", self.uncommented)
 
     # ------------------------------------------------------------------
     # Derivational chain
@@ -244,11 +244,11 @@ class WGeminationRepairTests(unittest.TestCase):
                     "the West Germanic geminate")
                 self.assertIn("*w*w*j", gemination.group(1),
                               f"{concept}: SC010 must produce the *wwj geminate")
-                resolved = re.search(r"OEAwjGlideFormation: (\S+)", block)
+                resolved = re.search(r"OEAwwjResolution: (\S+)", block)
                 self.assertIsNotNone(resolved, f"{concept}: SC029 must fire")
                 self.assertIn("*áu*j", resolved.group(1),
                               f"{concept}: SC029 must yield *au with *j surviving")
-                fronted = re.search(r"OEAuFronting: (\S+)", block)
+                fronted = re.search(r"OEAuBrightening: (\S+)", block)
                 self.assertIsNotNone(fronted, f"{concept}: SC030 must fire")
                 self.assertIn("*áeu", fronted.group(1),
                               f"{concept}: SC030 must front the new *au")
@@ -276,9 +276,9 @@ class WGeminationRepairTests(unittest.TestCase):
             f"{concept}: SC010 must FIRE, creating the West Germanic geminate")
         self.assertIn("*w*w*j", gemination.group(1),
                       f"{concept}: SC010 must produce the *wwj geminate")
-        self.assertNotIn("OEAwjGlideFormation: ", block,
+        self.assertNotIn("OEAwwjResolution: ", block,
                          f"{concept}: SC029 resolves the low-vowel type only")
-        self.assertNotIn("OEAuFronting: ", block,
+        self.assertNotIn("OEAuBrightening: ", block,
                          f"{concept}: SC030 fronts an *au this word never has")
         self.assertIn(f"OUTPUTS: {expected}", block,
                       f"{concept} must yield {expected}")

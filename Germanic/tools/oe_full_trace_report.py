@@ -55,7 +55,7 @@ STAGE_HEADERS: Dict[str, str] = {
     "EnglishProtoInput": "## Section 1: Proto-Germanic consonant inheritance",
     "PNWGmcUnstressedAiMonophthongization": "## Section 2: Northwest and West Germanic developments",
     "EAFAiMonophthongization": "## Section 3: Early Anglo-Frisian (North Sea Germanic)",
-    "OEAwjGlideFormation": "## Section 4: Old English",
+    "OEAwwjResolution": "## Section 4: Old English",
     "OldEnglishOrthography": "## Section 5: Orthography & surface",
 }
 

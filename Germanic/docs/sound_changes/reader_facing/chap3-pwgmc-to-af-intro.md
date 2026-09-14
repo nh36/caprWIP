@@ -54,7 +54,7 @@ explicitly from the deletion of word-final `*z` and argues that rhotacism must
 follow the deletion rules [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
 Hogg gives the standard Old English–facing summary: `*z` yielded `*r` in
 intervocalic position but was generally lost in final position
-[@Hogg1992, p. 37].
+[@Bammesberger1992, p. 39].
 
 The CAPR rule is named `EAFRhotacism`, placing it in the Early Anglo-Frisian
 corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
@@ -78,7 +78,7 @@ southern dialects instead retained and rhotacized it. The standard handbooks
 confirm the West Germanic deletion in general terms: Campbell notes that
 `*z` is "later lost or changed to `r`" [@Campbell1959]; Hogg gives a clean
 statement that Germanic `*z` is generally lost in final position
-[@Hogg1992, p. 37]; the three-way division refines those summaries rather
+[@Bammesberger1992, p. 39]; the three-way division refines those summaries rather
 than contradicting them.
 
 The CAPR rule for the unstressed loss is still named `EAFFinalZDeletion`,
@@ -123,7 +123,7 @@ OE and OFris. when not followed by a nasal consonant"
 [@Campbell1959, §§ 163--165].
 Hogg gives the most familiar modern label pair: "This vowel normally fronted
 to /ae/ by the sound change of Anglo-Frisian Brightening (or First Fronting)"
-[@Hogg1992, §5.8].
+[@HoggGrammar1992, §5.10].
 
 The change is notable for what follows it: OE Breaking presupposes the fronted
 input; OE a-Restoration partially undoes it in back-vowel environments. The

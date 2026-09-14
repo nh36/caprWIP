@@ -73,10 +73,10 @@ while SC029-SC030 carries most of the prose.
   - **FOMA rule:** `NWGmcPreconsonantalXLoss`
   - **Current role:** historically legible but chronology-negative left preface
 - **SC029:** OE Awj Glide Formation
-  - **FOMA rule:** `OEAwjGlideFormation`
+  - **FOMA rule:** `OEAwwjResolution`
   - **Current role:** left member of the real local `hay` / `strew` reciprocal pair
 - **SC030:** OE Au Fronting
-  - **FOMA rule:** `OEAuFronting`
+  - **FOMA rule:** `OEAuBrightening`
   - **Current role:** strongest member of the row, reciprocally tied to SC029 and handing forward to SC032
 - **Combined unit label:** Glide and fronting entry
 - **Present editorial judgment:** keep grouped as scaffold for now; if later promoted, the most plausible shapes are either a cautious grouped entry with SC028 kept brief or a later split into an SC028 note plus an SC029-SC030 core

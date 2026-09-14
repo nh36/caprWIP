@@ -221,13 +221,13 @@ early i-apocope (SC006), coronal-w assimilation (SC008), and related rules —
 represent the most productive phonological territory for the CAPR derivations.
 They feed a large proportion of the distinctive consonant clusters of Old
 English. Handbooks vary in exactly how they group and name these changes
-[@Campbell1959, §§ 404, 406; @Hogg1992, §7.1].
+[@Campbell1959, §§ 404, 406; @HoggGrammar1992, §4.11].
 
 The nasal spirant corridor (SC026–SC027), treated in Chapter 3 at its cascade
 position, illustrates a type of change common
 in historical grammars of the "Ingvaeonic" or "North Sea Germanic" area:
 nasals disappear before voiceless fricatives, with compensatory vowel
-lengthening [@Campbell1959, §§ 462--463; @Hogg1992, §7.77]. The CAPR model
+lengthening [@Campbell1959, §§ 462--463; @HoggGrammar1992, §§3.13--3.14]. The CAPR model
 splits this into two ordered steps to make the vowel effect computationally
 tractable; the book prose explains that split against the handbook tradition,
 which typically presents the change as a single process.
@@ -886,7 +886,7 @@ explicitly from the deletion of word-final `*z` and argues that rhotacism must
 follow the deletion rules [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
 Hogg gives the standard Old English–facing summary: `*z` yielded `*r` in
 intervocalic position but was generally lost in final position
-[@Hogg1992, p. 37].
+[@Bammesberger1992, p. 39].
 
 The CAPR rule is named `EAFRhotacism`, placing it in the Early Anglo-Frisian
 corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
@@ -910,7 +910,7 @@ southern dialects instead retained and rhotacized it. The standard handbooks
 confirm the West Germanic deletion in general terms: Campbell notes that
 `*z` is "later lost or changed to `r`" [@Campbell1959]; Hogg gives a clean
 statement that Germanic `*z` is generally lost in final position
-[@Hogg1992, p. 37]; the three-way division refines those summaries rather
+[@Bammesberger1992, p. 39]; the three-way division refines those summaries rather
 than contradicting them.
 
 The CAPR rule for the unstressed loss is still named `EAFFinalZDeletion`,
@@ -955,7 +955,7 @@ OE and OFris. when not followed by a nasal consonant"
 [@Campbell1959, §§ 163--165].
 Hogg gives the most familiar modern label pair: "This vowel normally fronted
 to /ae/ by the sound change of Anglo-Frisian Brightening (or First Fronting)"
-[@Hogg1992, §5.8].
+[@HoggGrammar1992, §5.10].
 
 The change is notable for what follows it: OE Breaking presupposes the fronted
 input; OE a-Restoration partially undoes it in back-vowel environments. The
@@ -1092,7 +1092,7 @@ The corpus derivation of *hwā* 'who' now fixes this rule's position empirically
 
 ## Historical discussion
 
-Hogg states that Germanic \emph{*z} yielded \emph{*r} in intervocalic position in Old English, while final \emph{*z} was generally lost [@Hogg1992, p. 37]. Ringe and Taylor argue that this merger of \emph{*z} with \emph{*r} was independent in Norse and West Germanic and belongs after the Proto-West-Germanic stage [@RingeTaylor2014, pp. 52, 98, 102]. Crist likewise places rhotacism after earlier West Germanic \emph{*z}-deletion rules and rejects treating it as an inherited Proto-Northwest-Germanic innovation [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
+Hogg states that Germanic \emph{*z} yielded \emph{*r} in intervocalic position in Old English, while final \emph{*z} was generally lost [@Bammesberger1992, p. 39]. Ringe and Taylor argue that this merger of \emph{*z} with \emph{*r} was independent in Norse and West Germanic and belongs after the Proto-West-Germanic stage [@RingeTaylor2014, pp. 52, 98, 102]. Crist likewise places rhotacism after earlier West Germanic \emph{*z}-deletion rules and rejects treating it as an inherited Proto-Northwest-Germanic innovation [@Crist2001, pp. 104--106; @Crist2002, pp. 1, 4].
 
 The internal identifier [SC003 EAFRhotacism](#rule-EAFRhotacism) places the change in CAPR's Early Anglo-Frisian corridor, the operational post-Proto-West-Germanic stage on the English line; historically the change is a West Germanic rhotacism, later than Proto-Germanic. It is also distinct from [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
 
@@ -1497,7 +1497,7 @@ treatments of the old low vowel generally
 
 Long after the Northwest Germanic lowering of \emph{*ē₁} to \emph{*ā}, the dialects of the North Sea coast fronted the surviving oral \emph{*ā} to a low front vowel: West Saxon \emph{ǣ} in *dǣd* 'deed', *slǣpan* 'to sleep', *lǣtan* 'to let', *rǣdan* 'to read', and *mǣl* 'meal', against Anglian, Kentish, and Old Frisian \emph{ē} (*dēd*, *slēpa*, *jēr*) [@RingeTaylor2014, pp. 146--150; @Campbell1959, pp. 50--51, §128]. Old Saxon and Old High German keep the back vowel (Old Saxon *dād*, Old High German *tāt*, *slāfan*, *lāzan*), but sporadic Old Saxon spellings in ⟨e⟩ show that the fronting lapped unevenly into Old Saxon territory [@RingeTaylor2014, p. 150]. The change is therefore a North Sea Germanic development rather than an exclusively Anglo-Frisian one, though only Old English and Old Frisian carry it through systematically.
 
-The fronting affected stressed, non-nasalized \emph{*ā}; nasalized \emph{*ą̄} was instead rounded, as treated in the rounding chapter. Ringe and Taylor further establish a conditioning by a following \emph{*w}. Before \emph{*w} plus a back or non-high vowel the \emph{*ā} was retained: the clearest witnesses are the *verba pura* — *sāwan* 'to sow', *cnāwan* 'to know', *blāwan* 'to blow', *māwan* 'to mow', *þrāwan* 'to turn' — together with *clāwu* 'claw' [@RingeTaylor2014, p. 151]; the simplest hypothesis, which Ringe and Taylor adopt from Hogg, is that fronting never occurred in that environment [@RingeTaylor2014, p. 151; @Hogg1992, p. 81]. Before \emph{*w} plus a high front vocalic, by contrast, the fronting did apply: \emph{*lēwijaną} 'to betray' (Gothic *lēwjan*, Old High German *gilāen*) yields West Saxon *lǣwan*, and the same environment appears in *eltǣwe* 'entire' and *brǣw* 'eyelid' [@RingeTaylor2014, p. 150]. Both sides of the condition are encoded in the rule below and witnessed in the corpus. Bennett states the retaining environment independently from the West Saxon evidence alone, and slightly more broadly: West Saxon "shows \emph{ǣ} as a regular isolative development of IE \emph{ē} but has \emph{ā} before \emph{w} or \emph{g} plus a back vowel", with the paradigmatic alternation *wǣg* 'wave' beside plural *wāgas* [@Bennett1950, p. 235, n. 6]. The rule below encodes the \emph{w} environment, for which the corpus supplies witnesses on both sides; the parallel \emph{g} environment is left for separate treatment.
+The fronting affected stressed, non-nasalized \emph{*ā}; nasalized \emph{*ą̄} was instead rounded, as treated in the rounding chapter. Ringe and Taylor further establish a conditioning by a following \emph{*w}. Before \emph{*w} plus a back or non-high vowel the \emph{*ā} was retained: the clearest witnesses are the *verba pura* — *sāwan* 'to sow', *cnāwan* 'to know', *blāwan* 'to blow', *māwan* 'to mow', *þrāwan* 'to turn' — together with *clāwu* 'claw' [@RingeTaylor2014, p. 151]; the simplest hypothesis, which Ringe and Taylor adopt from Hogg, is that fronting never occurred in that environment [@RingeTaylor2014, p. 151; @HoggGrammar1992, p. 81]. Before \emph{*w} plus a high front vocalic, by contrast, the fronting did apply: \emph{*lēwijaną} 'to betray' (Gothic *lēwjan*, Old High German *gilāen*) yields West Saxon *lǣwan*, and the same environment appears in *eltǣwe* 'entire' and *brǣw* 'eyelid' [@RingeTaylor2014, p. 150]. Both sides of the condition are encoded in the rule below and witnessed in the corpus. Bennett states the retaining environment independently from the West Saxon evidence alone, and slightly more broadly: West Saxon "shows \emph{ǣ} as a regular isolative development of IE \emph{ē} but has \emph{ā} before \emph{w} or \emph{g} plus a back vowel", with the paradigmatic alternation *wǣg* 'wave' beside plural *wāgas* [@Bennett1950, p. 235, n. 6]. The rule below encodes the \emph{w} environment, for which the corpus supplies witnesses on both sides; the parallel \emph{g} environment is left for separate treatment.
 
 Whether this fronting restored a front vowel that had earlier been backed, or whether — as Fulk argues — the North Sea dialects simply retained an old front \emph{*ǣ} that was never backed at all, is the same dispute recorded in the lowering chapter [@Fulk2018, pp. 60--61, §4.6; @Campbell1959, pp. 50--51, §§128--129]. On the retention analysis this chapter's change dissolves into the non-event of staying put; the present model follows Ringe and Taylor's two-step reconstruction, on the strength of the runic evidence for an early [aː] and the place-adverbs *þǣr* 'there' and *hwǣr* 'where' [@RingeTaylor2014, pp. 13--14].
 
@@ -1570,7 +1570,7 @@ steps.
 
 The existing reader-facing sound-change sections record which changes have
 pan-Old-English scope and which are specifically West Saxon or Anglian
-[@Campbell1959, §§ 1--10; @Hogg1992, §§ 1.1--1.15].
+[@Campbell1959, §§ 1--10; @HoggGrammar1992, §§1.1--1.15].
 
 ## Chapter structure
 
@@ -1589,14 +1589,14 @@ Old English consonantal changes:
 Velar palatalization (SC052), palatalization of `*sk` (SC051), j-cluster
 coalescence (SC057), and related changes produce the characteristically
 Old English consonant phonemes. Hogg discusses these as OE consonant changes
-that are not broadly West Germanic [@Hogg1992, §§ 7.18--7.23].
+that are not broadly West Germanic [@HoggGrammar1992, §§7.18--7.23].
 
 Old English i-umlaut and its context:
 The i-umlaut (SC055) is one of the most productive changes in the Old English
 nominal and verbal morphology. Its relative chronology in relation to breaking,
 palatalization, and back-mutation is carefully documented in the existing
 CAPR chronology evidence audit and individual dossiers
-[@Campbell1959, §§ 193--204; @Hogg1992, §§ 5.62--5.68].
+[@Campbell1959, §§ 193--204; @HoggGrammar1992, §§5.79--5.85].
 
 Late Old English syllabic reduction and apocope:
 High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
@@ -1624,7 +1624,7 @@ and a later renaming pass will resolve the residue:
 Campbell's *Old English Grammar* is the primary source for the dating and
 scope of individual changes in this chapter [@Campbell1959].
 Hogg's *Grammar of Old English* provides modern reassessments and additional
-relative-chronology evidence [@Hogg1992]. Ringe and Taylor supply the most
+relative-chronology evidence [@HoggPhonology1992]. Ringe and Taylor supply the most
 detailed relative-chronology analysis for the earlier portion of the chapter,
 through back-mutation [@RingeTaylor2014, pp. 70--160]. Fulk's *Comparative
 Grammar* provides additional coverage for morphological conditioning
@@ -1700,10 +1700,10 @@ paradigm-internal forms point to is precisely the one Fulk denies ever existed.
 Both accounts agree that \emph{*auj} is what enters Old English, and the
 disagreement concerns whether a discrete change took place.
 
-## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation}
+## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwwjResolution`) {#rule-OEAwwjResolution}
 
 ```foma
-define OEAwjGlideFormation [
+define OEAwwjResolution [
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j}
 ];
@@ -1755,10 +1755,10 @@ Old Frisian *gāk* has none [@Fulk2018, p. 73, §4.12]. Brightening of plain
 \emph{*a} is shared with Frisian; brightening of the first element of
 \emph{*au} is English.
 
-## SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuFronting`) {#rule-OEAuFronting}
+## SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuBrightening`) {#rule-OEAuBrightening}
 
 ```foma
-define OEAuFronting [
+define OEAuBrightening [
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
 ];
@@ -1794,7 +1794,7 @@ discusses inherited \emph{aw}/\emph{ew} outcomes, palatal-triggered
 diphthongization, and later Anglian smoothing in connected but separate parts
 of the vowel history; Hogg likewise distinguishes the palatal-diphthongal
 developments [@Campbell1959, pp. 46, 53--54, 65--70, 95--96,
-§§120, 135--136, 170--176, 185, 223--227; @Hogg1992, pp. 106--107, 111--112].
+§§120, 135--136, 170--176, 185, 223--227; @HoggPhonology1992, pp. 107--108, 112--113].
 
 The closest interaction joins \emph{ww}-simplification and long-\emph{aw} diphthongization, which together shape *dēaw* ‘dew’ and *hēawan* ‘hew’. Diphthong leveling regularizes a wider field, while long-\emph{ew} diphthongization carries \emph{ēow} into the later environment of breaking.
 
@@ -1873,7 +1873,7 @@ define OEDiphthongLeveling [
 ];
 ```
 
-The two edges of this interval fail differently. Before [SC030 OEAuFronting](#rule-OEAuFronting), PGmc [galáubijaną]{.recon} ‘believe’, [báug]{.recon} ‘bow’, and [bráudą]{.recon} ‘bread’ produce no output (\emph{+?}) instead of expected OE *ġelīefan* ‘believe’, *bēag* ‘bow’, and *brēad* ‘bread’, alongside fifteen other failed derivations. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [xáubudą]{.recon} ‘head’ yields [*hēafud*]{.pred} rather than expected *hēafod* ‘head’. Absence at the lower edge places diphthong leveling after fronting; the wrong surface form at the upper edge places it before medial unstressed-\emph{u} lowering.
+The two edges of this interval fail differently. Before [SC030 OEAuBrightening](#rule-OEAuBrightening), PGmc [galáubijaną]{.recon} ‘believe’, [báug]{.recon} ‘bow’, and [bráudą]{.recon} ‘bread’ produce no output (\emph{+?}) instead of expected OE *ġelīefan* ‘believe’, *bēag* ‘bow’, and *brēad* ‘bread’, alongside fifteen other failed derivations. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [xáubudą]{.recon} ‘head’ yields [*hēafud*]{.pred} rather than expected *hēafod* ‘head’. Absence at the lower edge places diphthong leveling after fronting; the wrong surface form at the upper edge places it before medial unstressed-\emph{u} lowering.
 
 \newpage
 
@@ -2043,7 +2043,7 @@ undergoes unrounding before
 [SC043 EAFBrightening](#rule-EAFBrightening). Campbell, Hogg,
 and Ringe and Taylor describe the surrounding fronting and restoration history
 without naming this feeder separately [@Campbell1959, pp. 52, 60,
-§§131, 157--158; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158,
+§§131, 157--158; @HoggPhonology1992, pp. 102, 120; @RingeTaylor2014, pp. 157--158,
 189--190].
 
 The sole witness establishes a local relation to brightening but supports no broader generalization.
@@ -2064,7 +2064,7 @@ The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emp
 
 ## Historical discussion
 
-Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \emph{*æ}-type outcomes outside nasal environments. Later Old English developments presuppose this fronted stage even where they partly conceal it. Campbell gives the classical statement of the change, Hogg supplies the standard modern labels, and Ringe and Taylor establish its local chronology with breaking and restoration [@Campbell1959, p. 52, §131; @Hogg1992, pp. 101, 119; @RingeTaylor2014, pp. 157--158, 189--190; @Fulk2018, pp. 73--74, §§4.12--4.13].
+Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \emph{*æ}-type outcomes outside nasal environments. Later Old English developments presuppose this fronted stage even where they partly conceal it. Campbell gives the classical statement of the change, Hogg supplies the standard modern labels, and Ringe and Taylor establish its local chronology with breaking and restoration [@Campbell1959, p. 52, §131; @HoggPhonology1992, pp. 102, 120; @RingeTaylor2014, pp. 157--158, 189--190; @Fulk2018, pp. 73--74, §§4.12--4.13].
 
 Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
 
@@ -2187,7 +2187,7 @@ The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a
 The positional alternation of Germanic \emph{*b} is a Proto-Germanic distributional feature. Hogg
 states the Old English distribution clearly: /b/ is a stop initially, after
 nasals, and in gemination, while the same segment is otherwise realized as a
-voiced bilabial fricative [@Hogg1992, pp. 101--102]. Ringe and Taylor support
+voiced bilabial fricative [@HoggPhonology1992, p. 108]. Ringe and Taylor support
 the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
 segment whose stop and fricative values depend on position
 [@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
@@ -2250,7 +2250,7 @@ cluster from plain velars when he remarks that \emph{*sk} is especially prone to
 palatalization and assibilation [@Campbell1959, p. 278, §440]. Hogg gives the
 same change a clearer structural place by treating \emph{*sk} beside the palatalization
 of plain velars and before the later West Saxon diphthongal developments
-[@Hogg1992, pp. 106--107, 111--112]. Ringe and Taylor make the same sequence
+[@HoggPhonology1992, pp. 107--108, 112--113]. Ringe and Taylor make the same sequence
 explicit when they distinguish the earlier palatalization of velars and \emph{*sk} from
 the later diphthongization after already palatal consonants
 [@RingeTaylor2014, pp. 213--216, §§6.4.1, 6.5.1].
@@ -2312,7 +2312,7 @@ into one process [@Campbell1959, pp. 69--72, 89, §§170, 190--191].
 
 Hogg makes the conditioning sharper still. He states that the change takes place
 when the velar consonant is adjacent to and in the same syllable as a front
-vowel or the palatal consonant `j` [@Hogg1992, pp. 103--104]. This formulation
+vowel or the palatal consonant `j` [@HoggPhonology1992, pp. 105--106]. This formulation
 replaces a broad list of palatal outcomes with a phonological environment
 defined by adjacency and syllable structure.
 
@@ -2441,11 +2441,10 @@ system, including forms such as *giest* ‘guest’, *giefan* ‘give’, *hierd
 ‘shepherd’, and *ieldra* ‘older’ [@Campbell1959, pp. 69--72, §§190--197].
 
 Hogg continues in the same vein: “we come now to a change which is almost as
-uncontroversial as it is important” [@Hogg1992, p. 112]. His examples, such as
+uncontroversial as it is important” [@HoggPhonology1992, p. 113]. His examples, such as
 *bryd* ‘bride’, *trymman* ‘strengthen’, *bedd* ‘bed’, *ciest* ‘chest’, and
 *wiersa* ‘worse’, likewise emphasize that the change is a broad redistribution
-of vowel quality across the Old English vowel system [@Hogg1992,
-pp. 112--114].
+of vowel quality across the Old English vowel system [@HoggPhonology1992, pp. 113--115].
 
 The narrower palatal-diphthongal material is described differently. Ringe and
 Taylor treat West-Saxon diphthongization after initial palatals as a distinct
@@ -2502,7 +2501,7 @@ The sources do not describe umlaut as simple fronting alone. Campbell notes that
 the low front vowel
 changes again before `m` and `n` in most dialects [@Campbell1959, p. 69, §190],
 and Hogg likewise treats short front vowels as part of the same assimilatory
-system [@Hogg1992, p. 112].
+system [@HoggPhonology1992, p. 113].
 
 ## SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong}
 
@@ -2525,8 +2524,7 @@ Diphthongal outcomes belong to the same system-wide assimilation as simple-vowel
 The relevant examples are the recurring West-Saxon `ie` forms cited in the
 handbooks, including *giest* ‘guest’, *giefan* ‘give’, and *hierde*
 ‘shepherd’ in Campbell and *ciest* ‘chest’ in Hogg
-[@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @Hogg1992,
-pp. 112--114]. These diphthongal outcomes form a distinct part of the general
+[@Campbell1959, pp. 69--72, 78--80, §§190--191, 248--251; @HoggPhonology1992, pp. 113--115]. These diphthongal outcomes form a distinct part of the general
 umlautal development alongside simple fronting.
 
 The chronology comes from the cow/lung and gift/sheath contrasts. Placed before velar palatalization, diphthongal mutation over-palatalizes [kūi]{.recon} ‘cow’ and [lúnganjō]{.recon} ‘lungs’; placed after West Saxon palatal diphthongization, it yields [*ġieft*]{.pred} and [*sċǣþ*]{.pred} instead of expected *ġift* 'gift' and *sċēaþ* 'sheath'. These failures place diphthongal mutation after velar palatalization and before West Saxon palatal diphthongization.
@@ -2560,7 +2558,7 @@ define OEWsPalatalDiphthongization [
 
 West Saxon *gieldan* ‘pay’, *scield* ‘shield’, and *scieppan* ‘create’ show diphthongization after an already palatal consonant [@RingeTaylor2014, pp. 215--216, §6.5.1]. Their dialectal and phonological restriction separates this development from system-wide i-umlaut.
 
-Hogg's *giefan* ‘give’ and *sceap* ‘sheep’ belong to the same palatal-consonant environment [@Hogg1992, pp. 108--109]. Fulk likewise assigns this diphthongization a place before front mutation and distinguishes the two processes [@Fulk2018, p. 74, §4.13].
+Hogg's *giefan* ‘give’ and *sceap* ‘sheep’ belong to the same palatal-consonant environment [@HoggPhonology1992, pp. 109--110]. Fulk likewise assigns this diphthongization a place before front mutation and distinguishes the two processes [@Fulk2018, p. 74, §4.13].
 
 The forms *ġift* ‘gift’ and *sċēaþ* ‘sheath’ fix the lower boundary. If West Saxon palatal diphthongization precedes general i-umlaut, PGmc [géftiz]{.recon} ‘gift’ yields [*ġieft*]{.pred} rather than expected *ġift*, and PGmc [skáiθiz]{.recon} ‘sheath’ yields [*sċǣþ*]{.pred} rather than expected *sċēaþ*. These witnesses place West Saxon palatal diphthongization after general umlaut; no tested lexical item supplies a later terminus ante quem.
 
@@ -2612,7 +2610,7 @@ West Saxon *giefan* ‘give’ and *wefan* ‘weave’ stand against non-West-Sa
 dialectal profile of back mutation [@RingeTaylor2014, p. 319, §6.9.4].
 Campbell's treatment of diphthongization before following back vowels includes
 *heofon* ‘heaven’ [@Campbell1959, p. 86, §207], while Hogg draws the instructive
-comparison with breaking [@Hogg1992, p. 112]. Fulk accordingly separates back
+comparison with breaking [@HoggPhonology1992, p. 113]. Fulk accordingly separates back
 mutation from the earlier umlautal changes [@Fulk2018, p. 69, §4.8].
 
 ## SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
@@ -2685,7 +2683,7 @@ any tested later change leaves both witness forms unchanged.
 The pathway from [dōną]{.recon} ‘do’ to *dōn* ‘do’ supplies the sole lexical thread
 through this reduction. Campbell, Hogg, and Fulk place such weak-tail losses
 among apocope and related late reductions [@Campbell1959, pp. 144--145,
-§§345--349; @Hogg1992, pp. 120--121; @Fulk2018, p. 91, §5.6]. The witness,
+§§345--349; @HoggPhonology1992, pp. 121--122; @Fulk2018, p. 91, §5.6]. The witness,
 however, ties the change to a much older development. Its immediate neighbors
 remain untested.
 
@@ -2717,7 +2715,7 @@ Final high vowels must survive long enough to condition umlaut before apocope
 removes them after heavy syllables and in the relevant trisyllabic patterns.
 Campbell, Hogg, Ringe and Taylor, and Fulk agree on this Old English
 development, though they differ over the extent of the surrounding syncope
-[@Campbell1959, pp. 144--145, §§345--349; @Hogg1992, p. 120;
+[@Campbell1959, pp. 144--145, §§345--349; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, pp. 284--303, §§6.8.1, 6.8.4; @Fulk2018, p. 91, §5.6].
 
 ## \CAPRRuleHeading{SC063. High-vowel apocope after heavy syllables and in trisyllables}{OEHighVowelApocope} {#rule-OEHighVowelApocope}
@@ -2783,7 +2781,7 @@ and oblique OE \emph{fyrhte} supplies the relevant evidence
 [@Orel2003, p. 120; @RingeTaylor2014, pp. 380--381; @Campbell1959, p. 236, §589.7].
 No comparable witness orders the medial syncope that follows. Hogg, Ringe and Taylor, and Fulk describe both
 processes within the late history of weak syllables
-[@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
+[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
 @Fulk2018, p. 91, §5.6].
 
 ## SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss}
@@ -2813,7 +2811,7 @@ genitive derivation and depend on one inherited lexeme/paradigm.
 
 Loss of medial \emph{*i} before dentals belongs to the late weak-tail history
 described by Hogg, Ringe and Taylor, and Fulk
-[@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
+[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
 @Fulk2018, p. 91, §5.6].
 
 ```foma
@@ -2838,7 +2836,7 @@ therefore remains preferable, but the present lexicon cannot demonstrate it.
 Vowel loss creates the clusters upon which later assimilation and degemination
 operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
 *netle* 'nettle' beside later *netele* 'nettle' supplies a concrete lexical type
-[@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
+[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
 @SieversBrunner1965, pp. 144--145, §§158--159]. Fulk places this syncope after
 i-umlaut [@Fulk2018, p. 91, §5.6].
 
@@ -2877,7 +2875,7 @@ define OEDentalAssimilation [
 ```
 
 Loss of \emph{*θ} after \emph{*t} resolves a dental cluster produced by syncope
-[@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
+[@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 No witness distinguishes its position: moving dental assimilation across every
 tested neighbor leaves the outputs unchanged. I nevertheless place it after
 syncope, which supplies its input, and before the more general cluster
@@ -2909,7 +2907,7 @@ After the principal palatal and umlautal changes, unstressed vowels undergo
 shortening, fronting, merger, and sometimes complete loss. Campbell describes
 the early shortening of unaccented long vowels, while Hogg, Ringe and Taylor,
 and Fulk relate it to apocope, syncope, and the later reductions
-[@Campbell1959, p. 148, §355; @Hogg1992, pp. 120--121;
+[@Campbell1959, p. 148, §355; @HoggPhonology1992, pp. 121--122;
 @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
 @Fulk2018, pp. 90--96, §§5.6--5.7].
 
@@ -2952,7 +2950,7 @@ local order.
 Campbell distinguishes the shortening of unaccented long vowels, while Hogg,
 Ringe and Taylor, and Fulk place fronting and shortening within a later history
 of syncope and final-vowel adjustment [@Campbell1959, p. 148, §355;
-@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
+@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
 @Fulk2018, pp. 90--96, §§5.6--5.7]. Earlier unstressed fronting precedes later
 o-shortening.
 
@@ -3034,7 +3032,7 @@ pp. 28--31].
 Campbell describes the shortening of unaccented long vowels, and Ringe and
 Taylor place it among the last prehistoric Old English changes before the
 merger of unstressed \emph{*æ} with \emph{*e}
-[@Campbell1959, p. 148, §355; @Hogg1992, pp. 120--121;
+[@Campbell1959, p. 148, §355; @HoggPhonology1992, pp. 121--122;
 @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
 @Fulk2018, pp. 90--96, §§5.6--5.7].
 
@@ -3089,7 +3087,7 @@ and places the merger before the later h-loss and contraction.
 ## Historical discussion
 
 Hogg and Ringe and Taylor treat the late weakening and merger of unstressed
-vowels as a continuing history [@Hogg1992, pp. 120--121;
+vowels as a continuing history [@HoggPhonology1992, pp. 121--122;
 @RingeTaylor2014, pp. 327--332, §§6.9.5--6.9.6].
 [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) lowers
 medial unstressed \emph{i}; [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering)
@@ -3142,7 +3140,7 @@ Late weak-tail reduction affects unstressed prefixes as well as inflectional
 endings and medial vowels. Fulk's discussion of prefix vowels accounts for OE
 \emph{*be-} and \emph{*ne-} [@Fulk2018, p. 97, §5.7]. Hogg and Ringe and
 Taylor place such weakening within the broader late history of unstressed
-vowels [@Hogg1992, pp. 120--121; @RingeTaylor2014, pp. 298--332,
+vowels [@HoggPhonology1992, pp. 121--122; @RingeTaylor2014, pp. 298--332,
 §§6.8.3--6.9.6].
 
 The tested forms do not determine the rule's position relative to a neighboring
@@ -3174,7 +3172,7 @@ remains approximate. No lexical failure fixes it.
 
 Campbell, Hogg, Ringe and Taylor, and Fulk describe a late history in which
 apocope, shortening, contraction, and further weak-tail reductions reshape
-final syllables [@Campbell1959, p. 148, §355; @Hogg1992, pp. 120--121;
+final syllables [@Campbell1959, p. 148, §355; @HoggPhonology1992, pp. 121--122;
 @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
 @Fulk2018, pp. 90--91, §5.6]. Lexical failures place the remaining weak-tail
 reduction after unstressed fronting and before contraction.
@@ -3459,7 +3457,7 @@ written with a preceding front glide letter, as in *geoc* 'yoke' for spoken
 [jok] and *geoguþ* 'youth' for a form whose root vowel remained [u]. Ringe and Taylor state the modern assessment
 directly: the *eo* of *geoc* is a spelling convention, and the word was
 pronounced [jok] [@RingeTaylor2014, p. 5]. Hogg reaches the same verdict for
-the back-vowel cases generally [@Hogg1992, p. 112]. The older handbooks —
+the back-vowel cases generally [@HoggPhonology1992, p. 113]. The older handbooks —
 Campbell, Brunner, Bülbring, Luick — analysed the same spellings as rising
 diphthongs; the section below presents both views
 [@Campbell1959, p. 17, § 44; @SieversBrunner1965, pp. 64--65, § 92].
@@ -3471,7 +3469,7 @@ Ringe and Taylor provide the modern phonological interpretation
 [@SieversBrunner1965, pp. 64--65, § 92], and Bülbring
 [@Bulbring1902, p. 120, §§ 298--299] document the
 distribution of the spellings; Hogg supplies the critical reassessment
-[@Hogg1992, p. 112].
+[@HoggPhonology1992, p. 113].
 
 # West Saxon palatal-glide spelling before back vowels
 
@@ -3496,7 +3494,7 @@ Taylor state flatly that *ġeoc* "is /jok/", the digraph being a spelling
 convention that became universal after word-initial /j/
 [@RingeTaylor2014, p. 5], and Hogg concludes that the back-vowel cases were
 "never anything more than an orthographic variation", judging Campbell's
-arguments to the contrary "insubstantial" [@Hogg1992, p. 112;
+arguments to the contrary "insubstantial" [@HoggPhonology1992, p. 113;
 @Campbell1959, pp. 66--67, §176]. This model follows Ringe and Taylor and
 Hogg: the rule is a spelling convention applied to the finished phonology,
 and it therefore stands at the end of the derivation, in the written-surface

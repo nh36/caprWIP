@@ -108,38 +108,112 @@ def gate_b_output_identity() -> list[str]:
     return errors
 
 
+def _tsv_rows(path: Path) -> list[dict[str, str]]:
+    """Read a TSV that may carry a leading '#' comment block.
+
+    Feeding comment lines straight to DictReader silently promotes a comment to
+    the header row, which yields no usable records at all.
+    """
+    if not path.exists():
+        return []
+    body = "\n".join(
+        line for line in path.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    )
+    return list(csv.DictReader(io.StringIO(body), delimiter="\t"))
+
+
+def _retired_identifiers() -> set[str]:
+    """Foma identifiers of rules the registry records as retired.
+
+    Such rules legitimately no longer appear in the live cascade even though the
+    frozen campaign-era manifest still lists them.
+    """
+    retired: set[str] = set()
+    for row in _tsv_rows(DOCS / "registry/sc_registry.tsv"):
+        if (row.get("lifecycle_status") or "").strip() == "retired":
+            identifier = (row.get("fst_identifier") or "").strip()
+            if identifier:
+                retired.add(identifier)
+    for row in _tsv_rows(BASELINE_DIR / "rename_migration_manifest.tsv"):
+        if (row.get("migration_status") or "").strip() == "retired":
+            former = (row.get("former_foma_identifier") or "").strip()
+            if former:
+                retired.add(former)
+    return retired
+
+
 def _completed_rename_map(former: str, canonical: str) -> dict[str, str]:
-    """former_foma_identifier -> canonical_foma_identifier for every completed
-    rename, so gate E compares the live order against the frozen (original) order
-    after undoing *all* relabelings, not just the current rule's. This keeps the
-    order-identity check valid as renames accumulate."""
+    """former_foma_identifier -> current_foma_identifier for every relabeling.
+
+    Gate E compares the live order against the frozen (original) order after
+    undoing *all* accumulated relabelings, not just the current rule's, so the
+    order-identity check stays valid as renames accumulate.
+
+    ``sound_change_aliases.tsv`` is the maintained authority here: it records a
+    ``former_foma_rule_name`` alias alongside the SC's current ``foma_rule_name``.
+    The archival rename-migration manifest is consulted as a fallback only; its
+    rows are a campaign-time snapshot and some are stale.
+    """
     mapping: dict[str, str] = {}
-    manifest = BASELINE_DIR / "rename_migration_manifest.tsv"
-    if manifest.exists():
-        with manifest.open(encoding="utf-8") as handle:
-            for row in csv.DictReader(handle, delimiter="\t"):
-                if row.get("migration_status") == "completed":
-                    f, c = row.get("former_foma_identifier", ""), row.get("canonical_foma_identifier", "")
-                    if f and c and f != c:
-                        mapping[f] = c
-    # Ensure the current rule is included even if not yet marked completed.
+    alias_rows = _tsv_rows(DOCS / "sound_change_aliases.tsv")
+    current: dict[str, str] = {}
+    for row in alias_rows:
+        if (row.get("alias_type") or "").strip() == "foma_rule_name":
+            current[(row.get("change_id") or "").strip()] = (row.get("alias") or "").strip()
+    for row in alias_rows:
+        if (row.get("alias_type") or "").strip() == "former_foma_rule_name":
+            sc = (row.get("change_id") or "").strip()
+            old = (row.get("alias") or "").strip()
+            new = current.get(sc, "")
+            if old and new and old != new:
+                mapping[old] = new
+    for row in _tsv_rows(BASELINE_DIR / "rename_migration_manifest.tsv"):
+        f = (row.get("former_foma_identifier") or "").strip()
+        c = (row.get("canonical_foma_identifier") or "").strip()
+        if f and c and f != c and f not in mapping:
+            mapping[f] = c
+    # Ensure the current rule is included even if not yet recorded.
     mapping[former] = canonical
     return mapping
 
 
 def gate_e_order_unchanged(former: str, canonical: str) -> list[str]:
+    """Assert the rename leaves the executable order intact.
+
+    The frozen manifest is a campaign-era snapshot and is deliberately never
+    rebaselined, so the live cascade legitimately contains rules added after
+    the freeze. Comparing raw lengths would therefore fail for every rename
+    once a single new rule is introduced. The invariant that actually matters
+    is that the rules recorded in the frozen snapshot still occur in the live
+    cascade, under their renamed identifiers, in the same relative order.
+    """
     errors: list[str] = []
     import cascade_order_manifest as com
-    live = com.build_manifest(FST)
+    live = list(csv.DictReader(io.StringIO(com.manifest_text()), delimiter="\t"))
     with FROZEN_ORDER_MANIFEST.open(encoding="utf-8") as handle:
         frozen = list(csv.DictReader(handle, delimiter="\t"))
-    if len(live) != len(frozen):
-        return [f"E: manifest length changed {len(frozen)} -> {len(live)}"]
     rename_map = _completed_rename_map(former, canonical)
-    for i, (lrow, frow) in enumerate(zip(live, frozen), start=1):
-        expected = rename_map.get(frow["foma_identifier"], frow["foma_identifier"])
-        if lrow["foma_identifier"] != expected:
-            errors.append(f"E: position {i} expected {expected!r} got {lrow['foma_identifier']!r}")
+    retired = _retired_identifiers()
+    expected = [
+        rename_map.get(r["foma_identifier"], r["foma_identifier"])
+        for r in frozen
+        if r["foma_identifier"] not in retired
+        and rename_map.get(r["foma_identifier"], r["foma_identifier"]) not in retired
+    ]
+    live_names = [r["foma_identifier"] for r in live]
+    missing = [name for name in expected if name not in live_names]
+    if missing:
+        errors.append(f"E: frozen rules absent from the live cascade: {missing}")
+        return errors
+    projected = [name for name in live_names if name in set(expected)]
+    if projected != expected:
+        for i, (got, want) in enumerate(zip(projected, expected), start=1):
+            if got != want:
+                errors.append(f"E: relative order changed at frozen position {i}: expected {want!r} got {got!r}")
+                break
+        else:
+            errors.append(f"E: frozen rule count changed {len(expected)} -> {len(projected)}")
     return errors
 
 

@@ -67,10 +67,10 @@ paradigm-internal forms point to is precisely the one Fulk denies ever existed.
 Both accounts agree that \emph{*auj} is what enters Old English, and the
 disagreement concerns whether a discrete change took place.
 
-## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation}
+## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwwjResolution`) {#rule-OEAwwjResolution}
 
 ```foma
-define OEAwjGlideFormation [
+define OEAwwjResolution [
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j}
 ];
@@ -122,10 +122,10 @@ Old Frisian *gāk* has none [@Fulk2018, p. 73, §4.12]. Brightening of plain
 \emph{*a} is shared with Frisian; brightening of the first element of
 \emph{*au} is English.
 
-## SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuFronting`) {#rule-OEAuFronting}
+## SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuBrightening`) {#rule-OEAuBrightening}
 
 ```foma
-define OEAuFronting [
+define OEAuBrightening [
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
 ];

@@ -317,8 +317,8 @@ unchanged surfaces.
 ```
 EnglishProtoInput:        *x*á*w*j*ą
 PWGmcJGemination:         *x*á*w*w*j*ą      <- SC010, newly firing
-OEAwjGlideFormation:      *x*áu*j*ą         <- SC029
-OEAuFronting:             *x*áeu*j*ą        <- SC030
+OEAwwjResolution:      *x*áu*j*ą         <- SC029
+OEAuBrightening:             *x*áeu*j*ą        <- SC030
 OEDiphthongLeveling:      *x*ēa*j*ą         <- SC032
 OEVelarFricativePalatalization: *ç*ēa*j*ą
 OEHeavySyllableNasalApocope:    *ç*ēa*j
@@ -331,8 +331,8 @@ OldEnglishOrthography:    h*īeġ
 ```
 EnglishProtoInput:        *s*t*r*á*w*j*a*n*ą
 PWGmcJGemination:         *s*t*r*á*w*w*j*a*n*ą   <- SC010, newly firing
-OEAwjGlideFormation:      *s*t*r*áu*j*a*n*ą      <- SC029
-OEAuFronting:             *s*t*r*áeu*j*a*n*ą     <- SC030
+OEAwwjResolution:      *s*t*r*áu*j*a*n*ą      <- SC029
+OEAuBrightening:             *s*t*r*áeu*j*a*n*ą     <- SC030
 OEDiphthongLeveling:      *s*t*r*ēa*j*a*n*ą      <- SC032
 ```
 
@@ -394,11 +394,13 @@ This is a diagnosed scientific correction, not a rebaseline.
 
 ## 11. Deferred, carried forward
 
-1. **Foma identifier renames.** `OEAwjGlideFormation` is plainly misleading:
-   the change is neither glide formation nor a singleton-input rule.
-   `OEAuFronting` is also weaker than SC030's established identity. Both are
-   discharged in the behaviour-neutral commit that follows this one, once the
-   SC030/SC043 ontology and the `*iwj` question were settled.
+1. **Foma identifier renames. Discharged.** `OEAwjGlideFormation` was plainly
+   misleading: the change is neither glide formation nor a singleton-input
+   rule. `OEAuFronting` was also weaker than SC030's established identity.
+   Both were discharged in a behaviour-neutral step once the SC030/SC043
+   ontology and the `*iwj` question were settled, becoming `OEAwwjResolution`
+   and `OEAuBrightening`. Display names are unchanged and the former
+   identifiers survive as `former_foma_rule_name` aliases.
 2. **The `*ja`-stem adjective inflection.** The cascade does not model the
    inflectional `*-e` of that class: `*grōnijaz` yields *grēn* for *grēne* and
    `*míldijaz` yields *mild* for *milde*. This is why Campbell's headline
@@ -413,5 +415,8 @@ This is a diagnosed scientific correction, not a rebaseline.
    developments, and SC031 `OEWWSimplification` is scoped to West Saxon
    although `*ww` degemination looks more general. Both are observations for
    the next bounded task, not conclusions of this one.
-5. **`docs/refs.bib` `Hogg1992` pointer defect**, unchanged from 11aa99e8
-   §11.4. Repaired in the hygiene commit that follows this one.
+5. **`docs/refs.bib` `Hogg1992` pointer defect. Discharged, and much larger
+   than recorded.** The key conflated two separate 1992 books by Hogg, and
+   carried several hundred citations rather than none. It has been retired in
+   favour of `HoggGrammar1992`, `HoggCHEL1992` and per-chapter keys. See
+   §11.4 of the SC029/SC030 memo.

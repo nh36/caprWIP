@@ -196,10 +196,10 @@ That matters for book use. The historical phenomenon is real and well attested, 
 
 ### Hogg 1992
 
-- source_key: Hogg1992
+- source_key: HoggPhonology1992
 - full source title: local text witness `docs/references/hogg_vol1.txt` (Hogg's survey of Old English phonology; the passage carries the running head "Phonology and morphology")
 - publication year: 1992
-- locator: p. 112
+- locator: p. 113
 - terminology used by the source: palatal diphthongisation; orthographic variation
 - exact quotation: "there is no need to accept that a parallel change affecting back vowels, represented by examples such as sc(e)op 'poet' and sc(e)acan 'shake', was ever anything more than an orthographic variation. The change was inconsistently carried out, and the arguments of, for example, Campbell (1959: §176) to demonstrate that the change had phonetic consequences are insubstantial."
 - paraphrase of the source's claim: Hogg accepts palatal diphthongisation of front vowels but rejects any phonological change before back vowels: the back-vowel spellings are purely orthographic.

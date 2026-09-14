@@ -24,7 +24,7 @@ steps.
 
 The existing reader-facing sound-change sections record which changes have
 pan-Old-English scope and which are specifically West Saxon or Anglian
-[@Campbell1959, §§ 1--10; @Hogg1992, §§ 1.1--1.15].
+[@Campbell1959, §§ 1--10; @HoggGrammar1992, §§1.1--1.15].
 
 ## Chapter structure
 
@@ -43,14 +43,14 @@ Old English consonantal changes:
 Velar palatalization (SC052), palatalization of `*sk` (SC051), j-cluster
 coalescence (SC057), and related changes produce the characteristically
 Old English consonant phonemes. Hogg discusses these as OE consonant changes
-that are not broadly West Germanic [@Hogg1992, §§ 7.18--7.23].
+that are not broadly West Germanic [@HoggGrammar1992, §§7.18--7.23].
 
 Old English i-umlaut and its context:
 The i-umlaut (SC055) is one of the most productive changes in the Old English
 nominal and verbal morphology. Its relative chronology in relation to breaking,
 palatalization, and back-mutation is carefully documented in the existing
 CAPR chronology evidence audit and individual dossiers
-[@Campbell1959, §§ 193--204; @Hogg1992, §§ 5.62--5.68].
+[@Campbell1959, §§ 193--204; @HoggGrammar1992, §§5.79--5.85].
 
 Late Old English syllabic reduction and apocope:
 High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
@@ -78,7 +78,7 @@ and a later renaming pass will resolve the residue:
 Campbell's *Old English Grammar* is the primary source for the dating and
 scope of individual changes in this chapter [@Campbell1959].
 Hogg's *Grammar of Old English* provides modern reassessments and additional
-relative-chronology evidence [@Hogg1992]. Ringe and Taylor supply the most
+relative-chronology evidence [@HoggPhonology1992]. Ringe and Taylor supply the most
 detailed relative-chronology analysis for the earlier portion of the chapter,
 through back-mutation [@RingeTaylor2014, pp. 70--160]. Fulk's *Comparative
 Grammar* provides additional coverage for morphological conditioning

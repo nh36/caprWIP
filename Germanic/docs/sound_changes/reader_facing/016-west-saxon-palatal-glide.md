@@ -21,7 +21,7 @@ Taylor state flatly that *ġeoc* "is /jok/", the digraph being a spelling
 convention that became universal after word-initial /j/
 [@RingeTaylor2014, p. 5], and Hogg concludes that the back-vowel cases were
 "never anything more than an orthographic variation", judging Campbell's
-arguments to the contrary "insubstantial" [@Hogg1992, p. 112;
+arguments to the contrary "insubstantial" [@HoggPhonology1992, p. 113;
 @Campbell1959, pp. 66--67, §176]. This model follows Ringe and Taylor and
 Hogg: the rule is a spelling convention applied to the finished phonology,
 and it therefore stands at the end of the derivation, in the written-surface

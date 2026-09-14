@@ -21,7 +21,7 @@ written with a preceding front glide letter, as in *geoc* 'yoke' for spoken
 [jok] and *geoguþ* 'youth' for a form whose root vowel remained [u]. Ringe and Taylor state the modern assessment
 directly: the *eo* of *geoc* is a spelling convention, and the word was
 pronounced [jok] [@RingeTaylor2014, p. 5]. Hogg reaches the same verdict for
-the back-vowel cases generally [@Hogg1992, p. 112]. The older handbooks —
+the back-vowel cases generally [@HoggPhonology1992, p. 113]. The older handbooks —
 Campbell, Brunner, Bülbring, Luick — analysed the same spellings as rising
 diphthongs; the section below presents both views
 [@Campbell1959, p. 17, § 44; @SieversBrunner1965, pp. 64--65, § 92].
@@ -33,4 +33,4 @@ Ringe and Taylor provide the modern phonological interpretation
 [@SieversBrunner1965, pp. 64--65, § 92], and Bülbring
 [@Bulbring1902, p. 120, §§ 298--299] document the
 distribution of the spellings; Hogg supplies the critical reassessment
-[@Hogg1992, p. 112].
+[@HoggPhonology1992, p. 113].

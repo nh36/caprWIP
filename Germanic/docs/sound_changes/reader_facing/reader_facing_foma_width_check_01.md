@@ -35,8 +35,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant law, first step (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | 70 | 64 | no |
 | 026-027-nasal-spirant-changes.md | SC027. North Sea Germanic nasal-spirant law, second step (`EAFNasalSpirantLoss`) {#rule-EAFNasalSpirantLoss} | 113 | 54 | no |
 | 028-preconsonantal-x-loss.md | SC028. Simplification of \emph{*xs} before a consonant (`PNWGmcPreconsonantalXLoss`) {#rule-PNWGmcPreconsonantalXLoss} | 94 | 44 | no |
-| 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation} | 17 | 38 | no |
-| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting} | 38 | 21 | no |
+| 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwwjResolution`) {#rule-OEAwwjResolution} | 17 | 38 | no |
+| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuBrightening`) {#rule-OEAuBrightening} | 38 | 21 | no |
 | 031-ww-simplification.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | 12 | 27 | no |
 | 032-diphthong-leveling.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 15 | 28 | no |
 | 033-long-eow-diphthong.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 27 | 49 | no |

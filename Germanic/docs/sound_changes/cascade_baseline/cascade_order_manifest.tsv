@@ -30,8 +30,8 @@ position	foma_identifier	origin_block
 29	EAFNasalizedLowRounding	EnglishProtoToOE
 30	EAFLongAFronting	EnglishProtoToOE
 31	EAFAiMonophthongization	EnglishProtoToOE
-32	OEAwjGlideFormation	EnglishProtoToOE
-33	OEAuFronting	EnglishProtoToOE
+32	OEAwwjResolution	EnglishProtoToOE
+33	OEAuBrightening	EnglishProtoToOE
 34	OEEwLongDiphthong	EnglishProtoToOE
 35	OEWWSimplification	EnglishProtoToOE
 36	OEDiphthongLeveling	EnglishProtoToOE

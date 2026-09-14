@@ -94,7 +94,7 @@ Historically, the safest reading is:
 - cautions: Campbell's formulation is excellent for the core historical claim, but it does not itself motivate CAPR's separate `SC026` / `SC027` split.
 
 ### Hogg 1992
-- source_key: Hogg1992
+- source_key: HoggPhonology1992
 - locator: runic-name discussion of `*ansuz` in the phonology chapter (OCR lines 4134-4137)
 - terminology: Inguaeonic dialects; rounding, loss of the nasal, compensatory lengthening
 - quotation: "`*a` before a nasal plus fricative became `/o:/` due to rounding, loss of the nasal and compensatory lengthening of the vowel"

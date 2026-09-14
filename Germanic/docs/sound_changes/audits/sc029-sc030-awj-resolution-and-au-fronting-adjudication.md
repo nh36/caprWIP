@@ -3,7 +3,7 @@
 Registry-verdict: SC029=RETAIN; SC030=RETAIN
 
 Status: adjudicated.
-Scope: SC029 (`OEAwjGlideFormation`) and SC030 (`OEAuFronting`), adjudicated jointly.
+Scope: SC029 (`OEAwwjResolution`) and SC030 (`OEAuBrightening`), adjudicated jointly.
 Supersedes for these two changes: `Germanic/docs/sound_changes/book_dossiers/028-030-glide-and-fronting-entry.book-dossier.md`.
 
 The normal one-change-per-adjudication rule was waived for this pass by explicit
@@ -38,14 +38,14 @@ placement problem in the registry.
 ## 1. What the executable rules actually do
 
 ```foma
-define OEAwjGlideFormation [
+define OEAwwjResolution [
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j},
     {*á} {*w}      {*j} -> {*áu} {*j},
     {*a} {*w}      {*j} -> {*au} {*j}
 ];
 
-define OEAuFronting [
+define OEAuBrightening [
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
 ];
@@ -59,8 +59,8 @@ CAPR executes as SC030 plus part of SC032 is the single textbook chain
 Executable order, at the head of the Old English corridor:
 
 ```
-EAFAiMonophthongization (SC004)  ->  OEAwjGlideFormation (SC029)
-  ->  OEAuFronting (SC030)  ->  ...  ->  OEDiphthongLeveling (SC032)
+EAFAiMonophthongization (SC004)  ->  OEAwwjResolution (SC029)
+  ->  OEAuBrightening (SC030)  ->  ...  ->  OEDiphthongLeveling (SC032)
   ->  ...  ->  EAFBrightening (SC043)
 ```
 
@@ -498,10 +498,15 @@ two, and that uncertainty belongs to SC032.
 
 1. **Foma identifier renames. Now discharged.** `OEAwjGlideFormation` was a
    misnomer twice over, since the change is not glide formation and the glide
-   is being made vocalic. `OEAuFronting` was accurate but understated the
-   identification with brightening. Both were renamed in an isolated
-   behaviour-neutral commit once the SC030/SC043 ontology of section 7.1 and
-   the \emph{*iwj} question were settled.
+   is being made vocalic; it is now `OEAwwjResolution`. `OEAuFronting` was
+   accurate but understated the identification with brightening; it is now
+   `OEAuBrightening`. Both were renamed in an isolated behaviour-neutral step
+   once the SC030/SC043 ontology of section 7.1 and the \emph{*iwj} question
+   were settled. The display names are deliberately unchanged, following the
+   `PGmcRhotacism` -> `EAFRhotacism` precedent, and the former identifiers are
+   retained as `former_foma_rule_name` aliases. Gates A, B and G pass, and
+   gate B's `outputs_sha256` identity is the operative proof that the rename
+   changed no behaviour.
 
 2. **`hay` protoform depth. Now discharged.** \emph{*xáwwją} encoded a West
    Germanic geminate in a Proto-Germanic slot (section 6). The follow-up
@@ -512,14 +517,20 @@ two, and that uncertainty belongs to SC032.
 
 3. **SC032 scope.** Recorded in section 8, and still open.
 
-4. **Bibliography defect. Now discharged.** `docs/refs.bib` entry `Hogg1992`
-   was titled "A Grammar of Old English. Volume 1: Phonology" while its `file`
-   field pointed at a transcript of *The Cambridge History of the English
-   Language*, volume 1, edited by Hogg. The key was uncited in the Germanic
-   documents, so nothing had been misattributed. It was corrected in the
-   hygiene commit that follows. Hogg's chapter in that volume corroborates
-   section 4.1 at p. 101, where he gives \emph{au} > \emph{æu} and lists
-   \emph{æu} in the post-fronting vowel system.
+4. **Bibliography defect. Now discharged, and far larger than recorded.** The
+   entry `Hogg1992` was titled "A Grammar of Old English. Volume 1: Phonology"
+   while its `file` field pointed at a transcript of *The Cambridge History of
+   the English Language*, volume I, edited by Hogg. The earlier note that the
+   key "was uncited in the Germanic documents, so nothing had been
+   misattributed" was wrong on both counts. The key carried several hundred
+   citations, and it conflated two genuinely different 1992 books by Hogg: the
+   sole-authored Blackwell *Grammar*, cited throughout by section number, and
+   the multi-author *Cambridge History* volume he only edited, cited throughout
+   by page. `Hogg1992` has been retired in favour of `HoggGrammar1992`,
+   `HoggCHEL1992` and per-chapter keys (`HoggPhonology1992`,
+   `Bammesberger1992`, `Toon1992`, and the rest). Hogg's own chapter 3
+   corroborates section 4.1 at p. 102, where he gives \emph{au} > \emph{æu} and
+   lists \emph{æu} in the post-fronting vowel system.
 
 5. **Citation defect, corrected here.** The reader chapter cited
    `[@RingeTaylor2014, p. 188]`. CAPR cites Ringe and Taylor by printed page,

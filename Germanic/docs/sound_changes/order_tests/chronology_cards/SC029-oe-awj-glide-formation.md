@@ -2,7 +2,7 @@
 
 ## Position at experiment time
 - order_at_experiment_time: `29`
-- rule_name: `OEAwjGlideFormation`
+- rule_name: `OEAwwjResolution`
 - safe computational window: `13-29` (earlier side runner-bounded)
 - status: `first_break_complete`
 

@@ -506,7 +506,7 @@ artifact of later i-umlaut); later syncope and *j-loss yield lǣwan.
 sow and lǣwan together give minimal-pair coverage of the *w
 conditioning: sow proves the block, lǣwan proves the high-front
 exception. Non-interference checks: OEWLossBeforeI applies only
-word-finally, OEAwjGlideFormation needs *awwj — neither touches
+word-finally, OEAwwjResolution needs *awwj — neither touches
 either form.
 
 ### 12.3 Alternatives considered and not added

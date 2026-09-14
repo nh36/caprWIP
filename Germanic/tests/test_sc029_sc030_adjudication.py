@@ -118,7 +118,7 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
         the *j to survive into the Old English developments; it is what later
         causes i-umlaut in hīeġ and strīeġan.
         """
-        body = self.define_body("OEAwjGlideFormation")
+        body = self.define_body("OEAwwjResolution")
         self.assertIn("{*á} {*w} {*w} {*j}", body,
                       "SC029 must cover the stressed geminate input, which "
                       "SC010 now supplies for both hay and strew")
@@ -129,7 +129,7 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
 
     def test_sc030_fronts_the_first_element_of_the_diphthong(self):
         """SC030 is brightening of the first element, so *au -> *aeu only."""
-        body = self.define_body("OEAuFronting")
+        body = self.define_body("OEAuBrightening")
         self.assertIn("{*au} -> {*aeu}", body)
         self.assertIn("{*áu} -> {*áeu}", body)
         self.assertNotIn("{*ēa}", body,
@@ -178,10 +178,10 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
     # ------------------------------------------------------------------
 
     def test_sc029_feeds_sc030_feeds_sc032(self):
-        self.assertLess(self.positions["OEAwjGlideFormation"],
-                        self.positions["OEAuFronting"],
+        self.assertLess(self.positions["OEAwwjResolution"],
+                        self.positions["OEAuBrightening"],
                         "the diphthong must exist before it can be fronted")
-        self.assertLess(self.positions["OEAuFronting"],
+        self.assertLess(self.positions["OEAuBrightening"],
                         self.positions["OEDiphthongLeveling"],
                         "Ringe and Taylor p. 172: fronted to *aeu FIRST, "
                         "offglide unrounded and lowered LATER")
@@ -189,7 +189,7 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
     def test_the_pair_still_follows_ai_monophthongization(self):
         """Campbell §132 p. 52 orders ai > a (step 2) before au > aeu (step 3)."""
         self.assertLess(self.positions["EAFAiMonophthongization"],
-                        self.positions["OEAwjGlideFormation"])
+                        self.positions["OEAwwjResolution"])
 
     # ------------------------------------------------------------------
     # Corpus witnesses
@@ -326,7 +326,8 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
                       "not come from the two SC029 words")
 
     def test_memo_records_the_deferred_items(self):
-        for needle in ("rename", "xáwwją", "Hogg1992"):
+        for needle in ("rename", "xáwwją", "Hogg1992", "OEAwwjResolution",
+                       "OEAuBrightening", "HoggGrammar1992"):
             self.assertIn(needle, self.memo_flat,
                           f"memo must record deferred item: {needle!r}")
 

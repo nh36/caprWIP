@@ -80,11 +80,11 @@ define S032EAFLongAFronting S031EAFNasalizedLowRounding
     .o. EAFLongAFronting;
 define S033EAFAiMonophthongization S032EAFLongAFronting
     .o. EAFAiMonophthongization;
-define S034OEAwjGlideFormation S033EAFAiMonophthongization
-    .o. OEAwjGlideFormation;
-define S035OEAuFronting S034OEAwjGlideFormation
-    .o. OEAuFronting;
-define S036OEEwLongDiphthong S035OEAuFronting
+define S034OEAwwjResolution S033EAFAiMonophthongization
+    .o. OEAwwjResolution;
+define S035OEAuBrightening S034OEAwwjResolution
+    .o. OEAuBrightening;
+define S036OEEwLongDiphthong S035OEAuBrightening
     .o. OEEwLongDiphthong;
 define S037OEWWSimplification S036OEEwLongDiphthong
     .o. OEWWSimplification;
@@ -348,12 +348,12 @@ regex S033EAFAiMonophthongization;
 save stack old_english_sandbox_after_eaf_ai_monophthongization.bin
 
 clear stack
-regex S034OEAwjGlideFormation;
-save stack old_english_sandbox_after_oe_awj_glide_formation.bin
+regex S034OEAwwjResolution;
+save stack old_english_sandbox_after_oe_awwj_resolution.bin
 
 clear stack
-regex S035OEAuFronting;
-save stack old_english_sandbox_after_oe_au_fronting.bin
+regex S035OEAuBrightening;
+save stack old_english_sandbox_after_oe_au_brightening.bin
 
 clear stack
 regex S036OEEwLongDiphthong;

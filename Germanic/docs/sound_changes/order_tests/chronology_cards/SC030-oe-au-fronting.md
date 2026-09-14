@@ -2,7 +2,7 @@
 
 ## Position at experiment time
 - order_at_experiment_time: `30`
-- rule_name: `OEAuFronting`
+- rule_name: `OEAuBrightening`
 - safe computational window: `30-31`
 - status: `first_break_complete`
 

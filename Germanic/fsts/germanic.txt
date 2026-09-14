@@ -2047,7 +2047,7 @@ define OEStripSecondaryStress [
     {*ù} -> {*u}
 ];
 
-# OEAwjGlideFormation (SC029): resolution of the PWGmc geminate
+# OEAwwjResolution (SC029): resolution of the PWGmc geminate
 # *aww + *j to *au + *j. The Foma identifier is retained for this
 # commit only; see the rename debt in
 # audits/sc010-w-gemination-and-hay-depth-adjudication.md. The change
@@ -2079,12 +2079,12 @@ define OEStripSecondaryStress [
 #
 # Stress preserved where present; the two branches are CAPR notation
 # variants, not a historical stress condition.
-define OEAwjGlideFormation [
+define OEAwwjResolution [
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j}
 ];
 
-define OEAuFronting [
+define OEAuBrightening [
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
 ];
@@ -3646,8 +3646,8 @@ define EnglishProtoToOE ( # capr:bundle
     .o. EAFNasalizedLowRounding
     .o. EAFLongAFronting
     .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; see sc004_split_movement_proofs.md
-    .o. OEAwjGlideFormation
-    .o. OEAuFronting
+    .o. OEAwwjResolution
+    .o. OEAuBrightening
     # SC033 before SC031/SC032: R/T date geminate-w vocalization to PWGmc
     # itself (*fewwar > PWGmc *feuwar, R/T 2014: 41-42; Fulk §8.3
     # pp.204-205), so *ew/*iw promotion to the long-diphthong tier must

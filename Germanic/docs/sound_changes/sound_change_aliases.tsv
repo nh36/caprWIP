@@ -173,13 +173,15 @@ SC028	Proto-Northwest Germanic Preconsonantal X Loss	Northwest Germanic Preconso
 SC028	Proto-Northwest Germanic Preconsonantal X Loss	NWGmc Preconsonantal X Loss	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC028	Proto-Northwest Germanic Preconsonantal X Loss	NWGmcPreconsonantalXLoss	former_foma_rule_name	former identifier before PNWGmc-stage rename (behaviour-neutral)	Germanic/fsts/germanic.txt
 SC029	OE Awj Glide Formation	OE Awj Glide Formation	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC029	OE Awj Glide Formation	OEAwjGlideFormation	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC029	OE Awj Glide Formation	OEAwjGlideFormation	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC029	OE Awj Glide Formation	OEAwwjResolution	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC029	OE Awj Glide Formation	OEAwwjResolution	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC029	OE Awj Glide Formation	OEAwjGlideFormation	former_foma_rule_name	former identifier before the *wwj-resolution rename (behaviour-neutral); the rule resolves a West Germanic geminate *wwj and never formed a glide	Germanic/fsts/germanic.txt
 SC029	OE Awj Glide Formation	Old English Awj Glide Formation	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC029	OE Awj Glide Formation	OE Awj Glide Formation	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC030	OE Au Fronting	OE Au Fronting	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
-SC030	OE Au Fronting	OEAuFronting	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
-SC030	OE Au Fronting	OEAuFronting	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC030	OE Au Fronting	OEAuBrightening	sandbox_stage_name		Germanic/fsts/old_english_sandbox.txt
+SC030	OE Au Fronting	OEAuBrightening	foma_rule_name	underlying germanic.txt define	Germanic/fsts/germanic.txt
+SC030	OE Au Fronting	OEAuFronting	former_foma_rule_name	former identifier before the brightening rename (behaviour-neutral); the rule is the English application of Anglo-Frisian Brightening to secondary *au	Germanic/fsts/germanic.txt
 SC030	OE Au Fronting	Old English Au Fronting	normalized_stage_name	abbreviations expanded for dossier matching	inventory_audit_02 normalization
 SC030	OE Au Fronting	OE Au Fronting	book_display_candidate	candidate label for the eventual sound-change volume entry	inventory_audit_02 planning
 SC031	OE WW Simplification	OE WW Simplification	trace_label		Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md

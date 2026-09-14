@@ -422,7 +422,7 @@ Clark Hall and Bosworth-Toller both attest simplex [_byrd_]{.iv lang=oe sort=byr
 
 #### Form note
 
-The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@Hogg1992].
+The relevant comparator here is the simplex noun _byrd_. The prefixed forms remain related attested material within the same lexical family, and Hogg's discussion of deverbal feminines provides the broader derivational setting [@HoggPhonology1992].
 
 #### Development to Old English
 
@@ -3332,7 +3332,7 @@ Clark Hall records _scilling_ 'shilling', and Campbell cites it among nouns with
 
 #### Development to Old English
 
-From [skíllingaz]{.recon} ‘shilling’, loss of final _-az_ yields [skílling]{.recon} ‘shilling’. Old English palatalization of initial _sk_ before front vocalism then gives _sċilling_ 'shilling'. The _i_ of derivational _-ing-_ remains, so the regular outcome is _sċilling_ 'shilling', not [sċilleng]{.recon} 'shilling' [@Campbell1959; @Hogg1992].
+From [skíllingaz]{.recon} ‘shilling’, loss of final _-az_ yields [skílling]{.recon} ‘shilling’. Old English palatalization of initial _sk_ before front vocalism then gives _sċilling_ 'shilling'. The _i_ of derivational _-ing-_ remains, so the regular outcome is _sċilling_ 'shilling', not [sċilleng]{.recon} 'shilling' [@Campbell1959; @HoggPhonology1992].
 
 #### Form note
 
@@ -3405,7 +3405,7 @@ From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input sour
 
 #### Form note
 
-The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33:1"} 'show' and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33:2"} 'show' is orthographic normalization of initial <_sc_>, not a difference of lexeme or paradigm cell [@Campbell1959; @Hogg1992].
+The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33:1"} 'show' and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33:2"} 'show' is orthographic normalization of initial <_sc_>, not a difference of lexeme or paradigm cell [@Campbell1959; @HoggPhonology1992].
 
 ### sleep — OE _slǣpan_
 
@@ -4053,7 +4053,7 @@ From [θánkijaną]{.recon} ‘think’, palatalization before _\*j_ and i-umlau
 
 #### Lexical note
 
-Campbell's assibilation discussion uses the same verb _þencan_ 'think'; the class-III relic _hycgan_ is a different lexeme [@Campbell1959; @Hogg1992].
+Campbell's assibilation discussion uses the same verb _þencan_ 'think'; the class-III relic _hycgan_ is a different lexeme [@Campbell1959; @HoggPhonology1992].
 
 ### thorn — OE _þorn_
 
@@ -4429,7 +4429,7 @@ Clark Hall records _weorpan_ as the strong verb headword and separately lists _w
 
 #### Development to Old English
 
-Breaking before _r + C_ yields _weor-_, and the infinitive develops regularly to _weorpan_ [@Campbell1959; @Hogg1992].
+Breaking before _r + C_ yields _weor-_, and the infinitive develops regularly to _weorpan_ [@Campbell1959; @HoggPhonology1992].
 
 #### Lexical note
 
@@ -4616,7 +4616,7 @@ Old English form: _weġ_
 
 #### Reconstruction and comparative evidence
 
-Kroonen cites the noun as _\*wega-_ 'way, road', while the selected derivational form here is nominative-singular [wégaz]{.recon} ‘way’ [@Kroonen2013]. Campbell, Hogg, and Ringe and Taylor use the same word as the standard contrast between singular palatal _weġ_ 'way' and inflected _wegas_ / _wegum_ [@Campbell1959; @Hogg1992; @RingeTaylor2014, 341].
+Kroonen cites the noun as _\*wega-_ 'way, road', while the selected derivational form here is nominative-singular [wégaz]{.recon} ‘way’ [@Kroonen2013]. Campbell, Hogg, and Ringe and Taylor use the same word as the standard contrast between singular palatal _weġ_ 'way' and inflected _wegas_ / _wegum_ [@Campbell1959; @HoggPhonology1992; @RingeTaylor2014, 341].
 
 #### Old English evidence
 
@@ -4624,7 +4624,7 @@ The Old English singular is the ordinary noun _weg_ 'way', here normalized as _w
 
 #### Development to Old English
 
-From [wégaz]{.recon} ‘way’, final _\*z_ is lost and the weak tail apocopates, leaving word-final _\*g_ after a front vowel. In that environment Old English palatalization yields _weġ_ 'way', whereas _wegas_ 'ways' remains velar because the following _a_ blocks the same outcome [@Campbell1959; @Hogg1992; @RingeTaylor2014, 341].
+From [wégaz]{.recon} ‘way’, final _\*z_ is lost and the weak tail apocopates, leaving word-final _\*g_ after a front vowel. In that environment Old English palatalization yields _weġ_ 'way', whereas _wegas_ 'ways' remains velar because the following _a_ blocks the same outcome [@Campbell1959; @HoggPhonology1992; @RingeTaylor2014, 341].
 
 #### Form note
 
@@ -6399,7 +6399,7 @@ The northern-WGmc / pre-OE → Old English development _\*xébun_ > _heofon_
 is regular and is the exact structural parallel of the independently regular
 numeral *seven*, _\*sébun_ > _seofon_ (row 2174, _DERIVATION_CLASS_ regular).
 Both have a medial *u* and a labial, and both undergo West Saxon back umlaut of
-*e* before *u* across that labial [@RingeTaylor2014, 324; @Hogg1992]. The live
+*e* before *u* across that labial [@RingeTaylor2014, 324; @HoggPhonology1992]. The live
 traces run in lock-step (medial _u_-lowering, labial spirantization, back
 mutation, orthography). Ringe and Taylor explicitly treat *heaven* and *seven*
 as parallel back-umlaut examples, which is why *seven* is retained here as the
@@ -7259,7 +7259,7 @@ The development discussed here follows the Ringe-Taylor alternant framework.
 Clark Hall records the attested citation form _nǣdl_ 'needle' [@ClarkHall1960, 210].
 Campbell lists _nédl_ 'needle' among the expected unbroken forms after _t_ and _d_
 [@Campbell1959, §367]. Hogg also includes _nidi_ / _nǣdl_ 'needle' in the same broader
-cluster history [@Hogg1992, 95].
+cluster history [@HoggPhonology1992].
 
 The target is therefore an attested citation form. No oblique-cell substitution
 is involved in this entry.
@@ -10164,7 +10164,7 @@ The singular and plural evidence point to different parts of the paradigm. The r
 
 #### Development to Old English
 
-Proto-Germanic [skúldramiz]{.recon} 'shoulder' can be interpreted as a dative/instrumental plural form. In this environment the post-tonic _a_ before _m_ is raised to _u_, giving a form of the [skúldrumiz]{.recon} 'shoulder' type. Unstressed _u_ is regularly preserved before _m_, especially in the dative plural ending _-um_: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @Hogg1992, §3.3.1.3]. Brunner points in the same direction by excluding _m_ from the environments in which medial _o_ became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
+Proto-Germanic [skúldramiz]{.recon} 'shoulder' can be interpreted as a dative/instrumental plural form. In this environment the post-tonic _a_ before _m_ is raised to _u_, giving a form of the [skúldrumiz]{.recon} 'shoulder' type. Unstressed _u_ is regularly preserved before _m_, especially in the dative plural ending _-um_: Campbell states this explicitly, and Hogg formulates the same condition for the dative plural inflexion [@Campbell1959, §373; @HoggPhonology1992, §3.3.1.3]. Brunner points in the same direction by excluding _m_ from the environments in which medial _o_ became general in West Saxon [@SieversBrunner1965, §44 Anm. 7].
 
 Subsequent reduction of the ending removes the final _\*i_ and _\*z_, so that the inflectional ending appears in Old English as _-um_. The initial cluster is written here as _sċ-_, and the development is [skúldramiz]{.recon} 'shoulder' > [skúldrumiz]{.recon} 'shoulder' > [skúldrum]{.recon} 'shoulder' > [_sċuldrum_]{.iv lang=oe sort=sculdrum role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39:1"} 'shoulder'.
 
@@ -11636,7 +11636,7 @@ morphological remodeling.
 
 #### Development to Old English
 
-From [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44:1"} 'fire', i-umlaut changes _ū_ to _ȳ_ [@Hogg1992, §3.3.3.1]. Subsequent
+From [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44:1"} 'fire', i-umlaut changes _ū_ to _ȳ_ [@HoggPhonology1992, §3.3.3.1]. Subsequent
 loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:45:1"} 'fire'
 [@Campbell1959, §345]. The inherited phonology is complete at that point.
 

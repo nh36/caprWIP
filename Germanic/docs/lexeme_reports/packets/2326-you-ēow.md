@@ -150,7 +150,7 @@ _None_
 3627: PGmc *aw before a following vowel → OE ēaw, parallel to the existing
 3628: OEEwLongDiphthong (*ew → ēow). The *w glide is preserved because it remains
 3629: intervocalic; in pre-consonantal / word-final position, *aw had already merged
-3630: with *au → ēa via OEAuFronting + OEDiphthongLeveling.
+3630: with *au → ēa via OEAuBrightening + OEDiphthongLeveling.
 ```
 
 #### Germanic/docs/DEV_NOTES.md:16347 (exact COUNTERPART)
