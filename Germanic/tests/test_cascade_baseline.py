@@ -86,6 +86,53 @@ class BaselineArtifactTests(unittest.TestCase):
                          "baseline rows must be sorted by (proto_norm, counterpart, concept)")
 
 
+class LegacySubsetTests(unittest.TestCase):
+    """Corpus-maturation baseline policy: the original 380-row corpus is a
+    frozen legacy subset. Corpus expansion may change the whole-corpus
+    fingerprint, but every legacy row must persist byte-identically and the
+    legacy-subset hash must reproduce the frozen constant."""
+
+    LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
+    LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
+
+    def setUp(self):
+        self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
+        with self.LEGACY_TSV.open(encoding="utf-8") as handle:
+            self.legacy_rows = list(csv.DictReader(handle, delimiter="\t"))
+        with OUTPUTS_TSV.open(encoding="utf-8") as handle:
+            self.current_rows = list(csv.DictReader(handle, delimiter="\t"))
+        self.summary = json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
+
+    def test_legacy_file_has_exactly_380_rows(self):
+        self.assertEqual(len(self.legacy_rows), 380)
+
+    def test_legacy_file_reproduces_frozen_fingerprint(self):
+        import hashlib
+        hasher = hashlib.sha256()
+        for r in self.legacy_rows:
+            hasher.update((r["proto_norm"] + "\x1f" + r["outputs"] + "\x1e").encode("utf-8"))
+        self.assertEqual(hasher.hexdigest(), self.LEGACY_SHA,
+                         "frozen legacy380 file no longer reproduces the frozen fingerprint")
+
+    def test_every_legacy_row_persists_identically_in_current_baseline(self):
+        current_by_key = {
+            (r["proto_norm"], r["counterpart"], r["concept"]): r
+            for r in self.current_rows
+        }
+        for legacy in self.legacy_rows:
+            key = (legacy["proto_norm"], legacy["counterpart"], legacy["concept"])
+            self.assertIn(key, current_by_key,
+                          f"legacy row {key} missing from current baseline")
+            current = current_by_key[key]
+            for field in ("proto", "accepted", "output_count", "match", "outputs"):
+                self.assertEqual(current[field], legacy[field],
+                                 f"legacy row {key} drifted in field {field!r}")
+
+    def test_summary_records_legacy_subset_invariant(self):
+        self.assertEqual(self.summary["legacy_subset_count"], 380)
+        self.assertEqual(self.summary["legacy_subset_sha256"], self.LEGACY_SHA)
+
+
 class OrderManifestTests(unittest.TestCase):
     def setUp(self):
         self.mod = _load_module("cascade_order_manifest", TOOLS / "cascade_order_manifest.py")
@@ -95,13 +142,8 @@ class OrderManifestTests(unittest.TestCase):
 
     def test_manifest_matches_current_fst_source(self):
         """The committed manifest must be an exact projection of germanic.txt."""
-        regenerated = self.mod.build_manifest(FST_SOURCE)
-        committed = [
-            {"position": r["position"], "foma_identifier": r["foma_identifier"],
-             "origin_block": r["origin_block"]}
-            for r in self.rows
-        ]
-        self.assertEqual(regenerated, committed,
+        self.assertEqual(self.mod.manifest_text(),
+                         ORDER_MANIFEST.read_text(encoding="utf-8"),
                          "cascade_order_manifest.tsv is stale relative to germanic.txt; "
                          "regenerate with tools/cascade_order_manifest.py")
 
@@ -111,11 +153,18 @@ class OrderManifestTests(unittest.TestCase):
 
     def test_manifest_begins_with_pwgmc_block(self):
         pwgmc = [r for r in self.rows if r["origin_block"] == "EarlyEnglishLineChanges"]
-        # The EarlyEnglishLineChanges block is expanded at the head of the pipeline, so its
-        # members must occupy the first contiguous positions.
-        head = self.rows[: len(pwgmc)]
+        # SC103 PGmcNasalLossBeforeX is pan-Germanic and leads the pipeline.
+        # SC096 RootNounNomZLoss follows immediately (it must precede
+        # PWGmcIjContraction, which creates monosyllabic *fríundz from
+        # *fríjōndz); the EarlyEnglishLineChanges block is expanded
+        # immediately after it, occupying contiguous positions.
+        self.assertEqual(self.rows[0]["foma_identifier"], "PGmcNasalLossBeforeX",
+                         "the pan-Germanic SC103 must lead the executable order")
+        self.assertEqual(self.rows[1]["foma_identifier"], "RootNounNomZLoss",
+                         "RootNounNomZLoss must lead the West Germanic block")
+        head = self.rows[2: 2 + len(pwgmc)]
         self.assertTrue(all(r["origin_block"] == "EarlyEnglishLineChanges" for r in head),
-                        "EarlyEnglishLineChanges members must lead the executable order")
+                        "EarlyEnglishLineChanges members must follow RootNounNomZLoss contiguously")
 
     def test_required_local_dependencies_hold_in_current_order(self):
         """Baseline sanity: the demonstrated local dependencies hold in the
@@ -124,12 +173,23 @@ class OrderManifestTests(unittest.TestCase):
         SC005 PNWGmcAToUBeforeM < SC017 PNWGmcULowering
         SC010 PWGmcJGemination < SC011 PWGmcSyllabicJ
         SC019 PNWGmcFinalLongORaising < SC020 EAFFinalZDeletion (final-*z* deletion)
+        SC096 RootNounNomZLoss < PWGmcIjContraction (friend must reach SC096
+            uncontracted/polysyllabic so its *-z falls under SC020, not SC096)
+        SC020 EAFFinalZDeletion < SC097 MonosyllabicFinalZLoss (chronology:
+            PWGmc unstressed loss precedes the later northern monosyllabic loss)
+        SC018/SC019 raisers < SC097 MonosyllabicFinalZLoss (English-doculect
+            *-ōz forms must not be exposed to final/monosyllabic ō-raising
+            by premature z-loss)
         """
         pos = {r["foma_identifier"]: int(r["position"]) for r in self.rows}
         pairs = [
             ("PNWGmcAToUBeforeM", "PNWGmcULowering"),
             ("PWGmcJGemination", "PWGmcSyllabicJ"),
             ("PNWGmcFinalLongORaising", "EAFFinalZDeletion"),
+            ("RootNounNomZLoss", "PWGmcIjContraction"),
+            ("EAFFinalZDeletion", "MonosyllabicFinalZLoss"),
+            ("PNWGmcStressedMonosyllableORaising", "MonosyllabicFinalZLoss"),
+            ("PNWGmcFinalLongORaising", "MonosyllabicFinalZLoss"),
         ]
         for earlier, later in pairs:
             self.assertIn(earlier, pos, f"{earlier} missing from manifest")

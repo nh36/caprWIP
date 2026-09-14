@@ -4,8 +4,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 84.
-- Sections with warnings: 54.
+- Sections checked: 93.
+- Sections with warnings: 62.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`PNWGmcAToUBeforeM`) {#rule-PNWGmcAToUBeforeM} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | yes | yes | yes | yes | yes | yes | no | — |
 | 007-final-o-lowering-before-r.md | SC007. Lowering of final bimoric \emph{*ō} before \emph{*r} (`PWGmcFinalOrLowering`) {#rule-PWGmcFinalOrLowering} | yes | yes | yes | yes | yes | no | no | — |
-| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
+| 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | yes | yes | yes | yes | yes | no | no | — |
 | 009-ij-contraction-in-friend.md | SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction} | yes | yes | yes | yes | yes | no | no | — |
 | 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | yes | yes | yes | yes | yes | no | no | — |
@@ -22,25 +22,25 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 013-dental-hardening.md | SC013. Dental hardening (`PWGmcDentalHardening`) {#rule-PWGmcDentalHardening} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
 | 014-015-opening-vowel-prelude.md | SC014. Monophthongization of unstressed \emph{*ai} (`PNWGmcUnstressedAiMonophthongization`) {#rule-PNWGmcUnstressedAiMonophthongization} | yes | yes | yes | yes | yes | no | no | — |
 | 014-015-opening-vowel-prelude.md | SC015. Leveling of early unstressed front vowels (`PNWGmcILowering`) {#rule-PNWGmcILowering} | yes | yes | yes | yes | yes | no | no | — |
-| 016-west-saxon-palatal-glide.md | SC016. West Saxon palatal glide before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 016-west-saxon-palatal-glide.md | SC016. West Saxon palatal-glide spelling before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`PNWGmcStressedMonosyllableORaising`) {#rule-PNWGmcStressedMonosyllableORaising} | no | no | no | yes | no | yes | no | missing move-condition wording |
 | 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 021-unstressed-o-raising.md | SC021. Raising of unstressed \emph{*o} before later \emph{*u} (`PNWGmcUnstressedORaising`) {#rule-PNWGmcUnstressedORaising} | yes | no | no | yes | no | yes | no | — |
+| 021-unstressed-o-raising.md | SC021. Retired PNWGmc unstressed \emph{*o}-raising (`RetiredPNWGmcUnstressedORaising`) {#rule-RetiredPNWGmcUnstressedORaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 022-mn-dissimilation.md | SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | yes | no | no | yes | no | yes | no | — |
-| 023-n-stem-n-loss.md | SC023. Loss of n-stem \emph{*n} in final position (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
-| 024-long-e-lowering.md | SC024. Lowering of long \emph{ē} before non-nasal consonants (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
-| 025-long-e-nasal-rounding.md | SC025. Rounding of long \emph{ē} before nasals (`PNWGmcLongENasalRounding`) {#rule-PNWGmcLongENasalRounding} | no | no | no | yes | yes | yes | no | missing move-condition wording |
-| 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant lengthening (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 026-027-nasal-spirant-changes.md | SC027. North Sea Germanic nasal-spirant loss (`EAFNasalSpirantLoss`) {#rule-EAFNasalSpirantLoss} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
-| 028-preconsonantal-x-loss.md | SC028. Loss of preconsonantal \emph{*x} (`PNWGmcPreconsonantalXLoss`) {#rule-PNWGmcPreconsonantalXLoss} | no | no | no | yes | no | yes | no | missing move-condition wording |
-| 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwjGlideFormation`) {#rule-OEAwjGlideFormation} | yes | yes | yes | no | yes | no | no | missing SC-plus-rule reference in chronology prose |
-| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuFronting`) {#rule-OEAuFronting} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
-| 031-034-west-saxon-diphthong-chain.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 031-034-west-saxon-diphthong-chain.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 031-034-west-saxon-diphthong-chain.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 031-034-west-saxon-diphthong-chain.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 023-n-stem-n-loss.md | SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
+| 024-long-e-lowering.md | SC024. Lowering of stressed long \emph{ē} (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 025-long-a-nasal-rounding.md | SC025. Nasalization of long \emph{ā} before nasals (`EAFLongANasalRounding`) {#rule-EAFLongANasalRounding} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 026-027-nasal-spirant-changes.md | SC026. North Sea Germanic nasal-spirant law, first step (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | no | no | yes | yes | yes | yes | no | missing move-condition wording |
+| 026-027-nasal-spirant-changes.md | SC027. North Sea Germanic nasal-spirant law, second step (`EAFNasalSpirantLoss`) {#rule-EAFNasalSpirantLoss} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 028-preconsonantal-x-loss.md | SC028. Simplification of \emph{*xs} before a consonant (`PNWGmcPreconsonantalXLoss`) {#rule-PNWGmcPreconsonantalXLoss} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 029-030-awj-glide-and-au-fronting.md | SC029. Glide formation in \emph{*awj} (`OEAwwjResolution`) {#rule-OEAwwjResolution} | yes | yes | yes | no | yes | no | no | missing SC-plus-rule reference in chronology prose |
+| 029-030-awj-glide-and-au-fronting.md | SC030. Fronting of \emph{*au} (`OEAuBrightening`) {#rule-OEAuBrightening} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
+| 031-ww-simplification.md | SC031. Simplification of \emph{*ww} sequences (`OEWWSimplification`) {#rule-OEWWSimplification} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 032-diphthong-leveling.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 033-long-eow-diphthong.md | SC033. Long \emph{ēow} before following vowels and weak endings (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 034-long-eaw-diphthong.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
@@ -79,6 +79,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | yes | yes | yes | yes | yes | no | no | — |
 | 070-071-early-unstressed-fronting-shortening-bridge.md | SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly} | yes | yes | yes | yes | yes | no | no | — |
 | 070-071-early-unstressed-fronting-shortening-bridge.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | yes | yes | yes | yes | yes | no | no | — |
+| 070-071-early-unstressed-fronting-shortening-bridge.md | SC099. Medial raising of shortened unstressed \emph{*o} (`OEMedUnstressedORaising`) {#rule-OEMedUnstressedORaising} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 070-071-early-unstressed-fronting-shortening-bridge.md | SC100. Final lowering of shortened unstressed \emph{*o} (`OEFinalUnstressedOLowering`) {#rule-OEFinalUnstressedOLowering} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | yes | yes | yes | yes | yes | no | no | — |
 | 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | yes | yes | yes | yes | yes | no | no | — |
 | 074-075-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | yes | yes | yes | yes | yes | no | no | — |
@@ -93,3 +95,10 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 085-086-h-loss-and-contraction.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | yes | yes | yes | yes | yes | no | no | — |
 | 085-086-h-loss-and-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | yes | yes | yes | yes | yes | no | no | — |
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | yes | yes | yes | yes | yes | no | no | — |
+| 096-root-noun-nominative-z-loss.md | SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | yes | yes | yes | yes | yes | no | no | — |
+| 097-monosyllabic-final-z-loss.md | SC097. Northern monosyllabic final \emph{*z}-loss (`MonosyllabicFinalZLoss`) {#rule-MonosyllabicFinalZLoss} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 098-early-apocope-in-unstressed-words.md | SC098. Early apocope in unstressed words (`PWGmcUnstressedWordFinalIApocope`) {#rule-PWGmcUnstressedWordFinalIApocope} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 101-long-a-fronting.md | SC101. Fronting of long \emph{ā} outside nasal and \emph{w} environments (`EAFLongAFronting`) {#rule-EAFLongAFronting} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 102-hiatus-w-insertion.md | SC102. Hiatus-filling \emph{w} after long \emph{ā} (`EAFHiatusWInsertion`) {#rule-EAFHiatusWInsertion} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
+| 103-pgmc-nasal-loss-before-x.md | SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
+| 104-nasalized-low-vowel-rounding.md | SC104. Rounding of the long nasalized low vowel (`EAFNasalizedLowRounding`) {#rule-EAFNasalizedLowRounding} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |

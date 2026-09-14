@@ -76,6 +76,14 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
   Polomé, "Notes on the Reflexes of IE /ms/ in Germanic" (*Revue belge de philologie et d'histoire* 45.3, 1967, 800–826).  
   Discusses IE nasal + s clusters in Germanic, with treatment of the \*stemn-/\*stibna problem. Directly relevant to the stefn/stemn problem. ~1,282 lines.
 
+- `thorhallsdottir_1993_intervocalic_j.vision.txt`  
+  Þórhallsdóttir, *The Development of Intervocalic \*j in Proto-Germanic* (Ph.D. dissertation, Cornell University, 1993; UMI 9410504). 293 scanned pages, no text layer; Google Vision OCR over 300 dpi renderings.  
+  Page markers are the dissertation's own **printed** folios (printed N = PDF sheet N + 11; front matter as roman iii–ix). The specialist source for the hiatus-breaking consonants of the *verba pura*: Ch. 5 (pp. 114–137) is the direct authority for CAPR SC102, giving the phonological insertion of \*w before \*u (pp. 120, 126–127) and its analogical generalization through the Anglo-Frisian paradigm (pp. 130, 134, 136). Heavy diacritic load — verify any quoted form against the page image. ~293 pages.
+
+- `lid_1952_nordiske_nominativ_an_stammer.vision.txt`  
+  Lid, "Den nordiske nominativ singularis av maskuline an-stammer" (*Norsk Tidsskrift for Sprogvidenskap* 16, 1952, 237–240). Norwegian Nynorsk; 2-up scan, split on the detected gutter, Google Vision OCR.  
+  Cited in CAPR for p. 238, where the Sámi loanword evidence (Sámi *mānno* etc.) is used to argue that Germanic \*ē (cf. Gothic *mēna*) had already become *ā* before the borrowing. Replaces the former indirect citation via Stiles 2017: 4. One OCR character (*å* for printed *ā*) was corrected against the page image and the correction is documented in the file header. ~258 lines.
+
 ## Other references
 
 - `oe_sound_change_index.md`  

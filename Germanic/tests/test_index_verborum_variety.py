@@ -493,24 +493,37 @@ class RealCorpusInvariantTests(unittest.TestCase):
             "print_excluded_occurrences": 88,
         }
         POST_ANNOTATION = {
-            # stem's proto-input *stámnaz surfaced (+1 occurrence) after the stale
-            # full-trace snapshot was regenerated: stem moved exact_match -> mismatch,
-            # matching the frozen baseline's 8 documented mismatches. Orthogonal to
-            # the rename migration (gate B: outputs_sha256 unchanged).
-            #
-            # unique counts are -1 vs the earlier snapshot because heaven's *hebun
-            # carried a duplicate chronological label (pgmc in the model entry vs
-            # pwgmc in reader-facing section 19); dating both to one stage merges
-            # them into a single headword.
-            #
-            # Occurrence totals are -2 vs the earlier snapshot: the SC021
-            # reader-facing chapter was rewritten for the "unwitnessed" adjudication
-            # (SC021 fires on 0 rows once heaven starts from *xébun), dropping a
-            # repeated *heofon span and the Old Saxon *heban comparative form.
-            "production_occurrences": 2362,
-            "production_unique_forms": 1159,
-            "print_main_occurrences": 2274,
-            "unique_printed_entries": 1077,
+            # +23 occurrences / +14 unique forms vs the pre-z-split snapshot: the
+            # SC020 final-z chapter was split three ways (SC096 RootNounNomZLoss,
+            # SC020 EAFFinalZDeletion, SC097 MonosyllabicFinalZLoss) in reader-facing
+            # section 20, and four model entries were added for the root-noun
+            # witnesses (book, flea, goose, louse), each contributing indexed
+            # protoform/target/evidence spans plus lexical-heading injections.
+            # +1 occurrence / +1 unique form again after the flea adjudication:
+            # the Kluge/Seebold a-stem reconstruction *flauha- was added to the
+            # flea model entry as a third comparison_form span.
+            # +21 occurrences / +14 unique forms after corpus-maturation pass 01:
+            # rows who (2322) and you (2326) were added with model entries and
+            # assembly-manifest rows, the new SC098 chapter
+            # (098-early-apocope-in-unstressed-words) entered reader-facing
+            # section 20, and chapters 008/097/021 gained witness prose (hwā,
+            # ēow, and the declined galgu candidate), each contributing indexed
+            # protoform/target/evidence spans plus lexical-heading injections.
+            # +1 occurrence / +3 unique printed entries after ġeoc became an
+            # explicitly typed OE reader-facing evidence form.
+            # +2 occurrences (no new unique forms) after the manifest-driven
+            # book gained the Chapter 1 (PGmc -> PNWGmc) intro, whose prose
+            # cites *draugma- and *taugma- a second time.
+            # +19 occurrences / +19 unique forms after the SC010 *w-gemination
+            # follow-up: row hue (2332) was added to the corpus as the *iwj
+            # witness with a model entry and source ledger, and thought (2330),
+            # added earlier without one, received the same pair. Neither lexeme
+            # is in the assembly manifest yet, so every new occurrence falls
+            # outside the book and the book counts are unchanged.
+            "production_occurrences": 2429,
+            "production_unique_forms": 1210,
+            "print_main_occurrences": 2341,
+            "unique_printed_entries": 1121,
             "print_excluded_occurrences": 88,
         }
         forms = self._rows("index_verborum_forms.tsv")
@@ -620,7 +633,9 @@ class VarietyAnnotationAuditTests(unittest.TestCase):
             if ":" not in ref:
                 continue
             path, ln = ref.rsplit(":", 1)
-            p = Path(path)
+            # source_refs are repo-root relative; resolve against REPO_ROOT so
+            # the check runs identically from any pytest invocation directory.
+            p = REPO_ROOT / path
             if not p.exists() or not ln.isdigit():
                 continue
             line = p.read_text(encoding="utf-8").splitlines()[int(ln) - 1]
@@ -901,13 +916,25 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bo = self._rows("index_verborum_book_occurrences.tsv")
         be = self._rows("index_verborum_book_emissions.tsv")
 
-        self.assertEqual(len(pm), 2274)
+        # +1 vs the z-split snapshot: Kluge/Seebold *flauha- comparison form
+        # added to the flea model entry during the flea adjudication.
+        # +21 corpus / +21 book occurrences after corpus-maturation pass 01
+        # (who/you rows, model entries, assembly-manifest rows, SC098 chapter,
+        # and 008/097/021 witness prose). +1 corpus / book occurrence and
+        # book emission after ġeoc became explicit reader-facing evidence.
+        # +2 corpus / book occurrences and book emissions after the
+        # manifest-driven book gained the Chapter 1 (PGmc -> PNWGmc) intro,
+        # whose prose cites *draugma- and *taugma- a second time.
+        # +19 vs the previous snapshot: the hue (2332) and thought (2330)
+        # model entries. Both fall outside the assembly manifest, so the
+        # book occurrence and emission counts are unchanged.
+        self.assertEqual(len(pm), 2341)
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
-        self.assertEqual(source_not_in_book, 233)
+        self.assertEqual(source_not_in_book, 248)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2041)
-        self.assertEqual(len(be), 1874)
+        self.assertEqual(len(bo), 2093)
+        self.assertEqual(len(be), 1920)
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
         self.assertEqual(
@@ -951,15 +978,29 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         bu = self._rows("index_verborum_book_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
 
-        self.assertEqual(len(pm), 2274, "corpus occurrence count")
-        source_not_in_book = 2274 - 2041
+        # +1 across corpus/book counts vs the z-split snapshot: Kluge/Seebold
+        # *flauha- comparison form added to the flea model entry during the
+        # flea adjudication.
+        # +21 corpus / +21 book occurrences and +19 book emissions after
+        # corpus-maturation pass 01 (who/you additions). +1 corpus / book
+        # occurrence and book emission after ġeoc became explicit
+        # reader-facing evidence.
+        # +2 corpus / book occurrences and book emissions (no new unique
+        # entries) after the manifest-driven book gained the Chapter 1
+        # (PGmc -> PNWGmc) intro citing *draugma- and *taugma- again.
+        # +19 vs the previous snapshot: the hue (2332) and thought (2330)
+        # model entries, none of whose spans are in the assembly manifest.
+        self.assertEqual(len(pm), 2341, "corpus occurrence count")
+        source_not_in_book = 2341 - 2093
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
-        self.assertEqual(len(be), 1874, "book emission count")
-        # -1 unique vs the pre-mn-adjudication snapshot: heaven's *hebun was labelled
-        # pgmc in the model entry but pwgmc in reader-facing section 19 (a duplicate
-        # chronological label). Dating both to pwgmc merges them into one headword.
-        self.assertEqual(len(pu), 1077, "unique corpus entries")
-        self.assertEqual(len(bu), 845, "unique book entries")
+        self.assertEqual(len(be), 1920, "book emission count")
+        # +10 corpus / +14 book unique entries vs the pre-z-split snapshot: the
+        # three-way SC020 split (SC096/SC020/SC097) and the four new root-noun
+        # model entries (book, flea, goose, louse) introduce new indexed headwords.
+        # +12 corpus / +12 book unique entries after corpus-maturation pass 01.
+        # +18 unique corpus entries from the same two model entries.
+        self.assertEqual(len(pu), 1121, "unique corpus entries")
+        self.assertEqual(len(bu), 875, "unique book entries")
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)
@@ -984,7 +1025,15 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(variety_labelled_unique, 34, "variety-labelled unique book entries")
 
         printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
-        self.assertEqual(printable_explicit, 1423, "printable explicit occurrences")
+        # +1 vs the z-split snapshot: the *flauha- span is an explicit .iv tag.
+        # +15 after corpus-maturation pass 01: the who/you model entries carry
+        # explicit .iv spans for protoforms, targets, and comparison forms.
+        # +1 after ġeoc became explicit reader-facing evidence.
+        # +2 after the Chapter 1 (PGmc -> PNWGmc) intro's explicit *draugma-
+        # and *taugma- spans entered the manifest-driven book.
+        # +14 after the hue (2332) and thought (2330) model entries, whose
+        # protoform, target and comparison spans are all explicit .iv tags.
+        self.assertEqual(printable_explicit, 1471, "printable explicit occurrences")
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

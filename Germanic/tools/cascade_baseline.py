@@ -139,6 +139,31 @@ def build_baseline(tsv_path: Path, bin_path: Path) -> dict[str, object]:
         hasher.update((r["proto_norm"] + "\x1f" + r["outputs"] + "\x1e").encode("utf-8"))
     outputs_sha256 = hasher.hexdigest()
 
+    # Legacy-380 subset invariant (corpus-maturation baseline policy): the
+    # original 380-row corpus is a frozen legacy subset. Its fingerprint is
+    # recomputed here over the live records restricted to the frozen keys, so
+    # corpus EXPANSION changes the whole-corpus hash while any drift in a
+    # legacy row still changes (and thereby fails) the legacy-subset hash.
+    legacy_subset_sha256 = ""
+    legacy_subset_count = 0
+    legacy_path = tsv_path.parent.parent / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv"
+    if not legacy_path.exists():
+        # container layout: /usr/app/data + /usr/app/docs
+        legacy_path = Path("docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv")
+    if legacy_path.exists():
+        import csv as _csv
+        with legacy_path.open(encoding="utf-8") as handle:
+            legacy_keys = {
+                (row["proto_norm"], row["counterpart"], row["concept"])
+                for row in _csv.DictReader(handle, delimiter="\t")
+            }
+        legacy_hasher = hashlib.sha256()
+        for r in records:
+            if (r["proto_norm"], r["counterpart"], r["concept"]) in legacy_keys:
+                legacy_hasher.update((r["proto_norm"] + "\x1f" + r["outputs"] + "\x1e").encode("utf-8"))
+                legacy_subset_count += 1
+        legacy_subset_sha256 = legacy_hasher.hexdigest()
+
     summary = {
         "total_lexemes": len(records),
         "accepted": accepted,
@@ -147,6 +172,8 @@ def build_baseline(tsv_path: Path, bin_path: Path) -> dict[str, object]:
         "mismatched": mismatched,
         "ambiguous_outputs": ambiguous,
         "outputs_sha256": outputs_sha256,
+        "legacy_subset_count": legacy_subset_count,
+        "legacy_subset_sha256": legacy_subset_sha256,
     }
     return {"summary": summary, "records": records}
 

@@ -62,6 +62,24 @@ For book purposes, the main point is architectural rather than technical: CAPR
 separates several related diphthong histories that the handbooks often describe
 in a more bundled way.
 
+**Internal reorder and context extension (corpus-maturation pass 01).**
+`OEEwLongDiphthong` (SC033) is now composed **before** `OEWWSimplification`
+(SC031) and `OEDiphthongLeveling` (SC032), and its context admits the
+word-final geminate (`{*w} .#.`) alongside the prevocalic cases. Both changes
+follow Ringe & Taylor's dating of the geminate-`w` vocalization to
+Proto-West Germanic itself: "PGmc *fedwōr 'four' ... > *fewwar > PWGmc
+*feuwar" and "PGmc *izwiz 'you (dat. pl.)' ... > *iwwi > PWGmc *iuwi ~ *iuw
+... > OE īow" [@RingeTaylor2014, §3.1.1, pp. 41–42]; cf. Campbell on West
+Germanic *iuu > OE *iow/eow* [@Campbell1959, §120.2–3, pp. 44–47]. The
+vocalization must therefore see the geminate before any degemination, and it
+must reach word-final `*-ww` (R&T's apocopated PWGmc variant `*iuw`, the
+form OE *ēow* continues). For every pre-existing corpus row the old and new
+orders are output-equivalent (validated: 0/380 regression differences; the
+reorder lies inside the recorded safe computational windows SC031 `14–33`
+and SC033 `14–43`); the correction becomes empirically visible only with the
+*you* lexeme. See `audits/corpus-maturation-01-candidate-adjudication.md`
+§2–2a and `audits/sc098-dossier-unstressed-word-final-i-apocope.md`.
+
 ## 5. Place in the cascade
 
 `SC031-SC034` sits in a narratively useful place.

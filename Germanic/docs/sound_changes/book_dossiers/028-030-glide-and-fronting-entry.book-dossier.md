@@ -1,5 +1,56 @@
 # SC028-SC030: Glide and fronting entry
 
+> **SUPERSEDED IN PART — the SC028 material below predates the SC028 adjudication
+> of 2026.** This dossier is retained as a dated research record; it is not
+> current guidance for SC028. See
+> `Germanic/docs/sound_changes/audits/sc028-xs-cluster-simplification-adjudication.md`.
+>
+> Four assumptions about SC028 in the text below are now known to be wrong.
+>
+> 1. **It is not a "kind of `x`-loss" in Campbell's broad sense.** The rule is the
+>    narrow simplification of *xs* before a further consonant (Campbell §417
+>    p. 170). The §461 citation with `flēam` and `hēla` conflated it with a
+>    different change, the loss of *x* between a vowel and a voiced consonant
+>    with compensatory lengthening (Campbell §461 p. 186, Bülbring §528 p. 215).
+> 2. **It is not Northwest Germanic.** Gothic retains the *h* of the cluster
+>    (`bi-niuhsjan`, `saihsta`), so the change is post-Proto-Germanic; Ringe and
+>    Taylor pp. 157-158 read it as northern West Germanic and allow that the
+>    North Germanic agreement is partly parallel drift.
+> 3. **Its chronology is not merely "negative" for want of searching.** The
+>    negative card is now explained: the sole witness `fist` is overdetermined,
+>    reaching the same surface form under either order relative to SC103, so no
+>    displacement probe can discriminate. The chronology is carried by
+>    comparative evidence instead, which bounds the change after the PWGmc
+>    *-CijV-* syncope and before breaking.
+> 4. **It no longer belongs to this editorial row.** SC028 has been restaged and
+>    moved out of the Ingvaeonic corridor into the northern West Germanic region
+>    of the cascade. Its former adjacency to SC029 and SC030 was an artifact of
+>    the old executable placement, not a historical grouping, so the "entry
+>    bridge" question below should be reopened for SC029-SC030 alone.
+>
+> The SC029 and SC030 material in this dossier has now also been superseded.
+>
+> **SUPERSEDED IN FULL AS TO SC029 AND SC030 — the 2026 joint adjudication.** See
+> `Germanic/docs/sound_changes/audits/sc029-sc030-awj-resolution-and-au-fronting-adjudication.md`.
+> Three further assumptions in the text below are now known to be wrong.
+>
+> 5. **SC029 is not "glide formation".** It is the reversal of the West Germanic
+>    gemination of *w* before *j*, restoring the diphthong: PNWGmc \*awj > PWGmc
+>    \*[aw'w'] > pre-OE \*[auj] (Ringe and Taylor p. 53 §3.1.3, "it was
+>    reversible"; Campbell §120.2 p. 46).
+> 6. **SC030 is not a separate Old English fronting.** It is Anglo-Frisian
+>    brightening applied to the first element of *au*, restricted to English
+>    (Campbell §132 p. 52 lists "West Gmc. a > OE æ; West Gmc. au > OE æu" as one
+>    step; Fulk §4.12 p. 73). Its population is 16 inherited *au* against only 2
+>    words from SC029, so the `hay` / `strew` pair does not define it.
+> 7. **The "post-brightening" placement claim was false, and there is no corridor
+>    problem.** SC030 is contemporaneous with SC043, and the two are provably
+>    non-interacting, so the executable order is free. SC029 and SC030 execute
+>    immediately after SC004, which reproduces Campbell §132's own steps (2) then
+>    (3). The verdict is RETAIN with no reorder, and the "entry bridge" question
+>    raised below is answered: the adjacency of SC029 and SC030 to SC031-SC034 is
+>    editorial, and their historical home is the brightening stage.
+
 ## 1. Role in the book
 
 This row is the compact entry into the early Old English fronting and
@@ -22,10 +73,10 @@ while SC029-SC030 carries most of the prose.
   - **FOMA rule:** `NWGmcPreconsonantalXLoss`
   - **Current role:** historically legible but chronology-negative left preface
 - **SC029:** OE Awj Glide Formation
-  - **FOMA rule:** `OEAwjGlideFormation`
+  - **FOMA rule:** `OEAwwjResolution`
   - **Current role:** left member of the real local `hay` / `strew` reciprocal pair
 - **SC030:** OE Au Fronting
-  - **FOMA rule:** `OEAuFronting`
+  - **FOMA rule:** `OEAuBrightening`
   - **Current role:** strongest member of the row, reciprocally tied to SC029 and handing forward to SC032
 - **Combined unit label:** Glide and fronting entry
 - **Present editorial judgment:** keep grouped as scaffold for now; if later promoted, the most plausible shapes are either a cautious grouped entry with SC028 kept brief or a later split into an SC028 note plus an SC029-SC030 core

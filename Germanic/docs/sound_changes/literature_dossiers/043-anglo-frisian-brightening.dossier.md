@@ -56,8 +56,8 @@ The literature strongly supports the order fronting before breaking and before r
 - notes: Campbell is still the cleanest section-safe source for the core order claim behind the current transducer
 
 ### Hogg 1992
-- source_key: Hogg1992
-- locator: p. 101 (§ 3.3.3.1); p. 119; p. 445
+- source_key: HoggPhonology1992
+- locator: p. 102 (§ 3.3.3.1); p. 119; p. 445
 - terminology: Anglo-Frisian Brightening; First Fronting
 - quotation: "This vowel normally fronted to /ae/ by the sound change of Anglo-Frisian Brightening (or First Fronting)"; "By First Fronting ... /a/ became /ae/ as in stressed syllables"
 - paraphrase: Hogg gives the most straightforward modern label pair for the change and states the main conditioning clearly: fronting is normal, but following nasals block it. He is also useful for the present transducer because he explicitly extends first fronting into the unstressed-vowel system. The later Toon chapter in the same volume preserves the standard handbook order fronting > breaking/retraction > restoration, while warning against excessive confidence about the full prehistoric sequence.
