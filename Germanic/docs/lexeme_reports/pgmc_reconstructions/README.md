@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4492 evidence records,1379 actual consultations and4635
-analytical positions, with421 comparisons and209 rationales. The RT
+There are4540 evidence records,1379 actual consultations and4687
+analytical positions, with423 comparisons and223 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred thirteen core rows now have individually reconciled, bounded alignment:
-1933-2045. The remaining280 are unreviewed. The second tranche builds on
+One hundred twenty-one core rows now have individually reconciled, bounded alignment:
+1933-2053. The remaining272 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,34 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The fifteenth tranche completes grave (the dig verb), gripe, ground,
+guest, hail, hair, hall and hammer (selected genitive), rows2046-2053.
+All81 inherited identities survive. Thirty-six literal receipts and
+twelve processes add48 records within existing consultations; four
+focused positions reuse evidence and fourteen rationales are added.
+Fourteen exact SOURCE field receipts cover nine dates, three cells and
+two hall arguments; one additional post-persistence receipt corrects
+the new Orel hammer precursor's full-word kind, not its literal
+[@Orel2003, p.158]. No consultation identity or status changes.
+Its133 positions link129 distinct records.
+
+Ground's source-explicit comparison concerns the usual n-root derivation
+versus Kroonen's Cimbrian-supported original mþ/nd paradigm. His voiced
+genitive still underlies OE grund: this is not rejection of every nd
+form [@Orel2003, p.144; @Kroonen2013, pp.xxxi-xxxii,192,321,426].
+Guest's source-explicit comparison concerns inherited genitive quantity
+versus a-stem replacement, not the entire guest history. Fulk's printed
+Ringe2017:311 pointer is retained as printed, while the checked i-stem
+argument and guest paradigm actually occur on304-305 and312
+[@Fulk2018, pp.159-161; @Ringe2017, pp.304-305,310-312].
+Distinct Ringe/Fulk/RT cells, Fulk's full-form attestation caveat, the
+sal-/heall etymon boundary, conditional dictionary histories and the
+selected hammer genitive remain explicit
+[@Fulk2018, pp.158-159; @Ringe2017, pp.310-312;
+@RingeTaylor2014, pp.114-116,184-186; @Orel2003, pp.156,158].
+All eight whole-row causes remain unestablished; no scientific selection,
+FST, baseline, introduction or PDF is changed.
 
 The fourteenth tranche completes gang, ghost, gift, give, god, gold,
 goose and grass (2038-2045). All141 inherited positions are individually

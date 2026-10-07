@@ -1598,6 +1598,220 @@ published PDF were unchanged. At that checkpoint the next alignment began2014;
 the full393-row alignment, conditioning census, explanatory synthesis
 and consistency watchlist remain unfinished.
 
+## Fifteenth bounded alignment: grave through hammer
+
+This tranche completes eight individual reviews, rows2046-2053, rather
+than treating a dictionary inventory as a completed historical alignment.
+The selected grave is the dig verb *grafan*, not a burial-place noun;
+hammer selects *hameres*, a genitive, not the dictionary nominative.
+The other targets are *grīpan*, *grund*, *ġiest*, *hæġl*, *hǣr* and
+*heall*. Every selected corpus field remains unchanged. Gripe's distinct
+Unicode spellings in PROTO and PROTOFORM and hammer's citation/input
+ending difference retain their existing explicit input-stage metadata;
+hammer's existing late-analogy classification is not erased by a new
+etymological discussion.
+
+All81 inherited analytical identities are retained and individually
+reconciled. Thirty-six exact literal receipts and twelve process records
+supplement existing consultations; four focused positions reuse evidence
+and fourteen rationales are added. Fourteen old/new SOURCE field receipts
+cover nine stage annotations, three cell descriptions and two hall
+arguments. A fifteenth receipt corrects the new Orel hammer precursor
+from stem to word: the complete thematic derivative includes its -os
+ending, without changing the literal or selected-genitive boundary
+[@Orel2003, p.158].
+No consultation identity or status is invented or changed.
+The133 tranche positions link129 distinct records; repeated words,
+homographic cells and focused reuses are not collapsed. The resulting
+research totals are4540 records,1379 consultations,4687 positions,
+423 comparisons and223 rationales. There are121 bounded core rows and
+272 still unreviewed, not121 completely resolved ancestral histories.
+
+### Dig and grasp: lexical identity before derivational comparison
+
+Orel's grave entry gives the strong dig verb and comparative connections;
+Kroonen's dig family includes the proposed iteratives and related nouns.
+The nouns are not reconstructed selected infinitives, and the separate
+devour iterative belongs to another family. Hittite evidence from that
+devour entry cannot silently become dig evidence merely because both
+discussions contain similar iterative notation
+[@Orel2003, p.139; @Kroonen2013, pp.169-170,185-187].
+The literal supplements retain the dig iterative stems and the nominal
+family as their actual comparison units. Ringe's *graban* is an actual
+Gothic attestation in a syntax example; his reconstructed *grab-* is a
+root, not a quoted complete infinitive. The surrounding discussion
+qualifies the proposed zero-grade ancestry. Neither item supplies the
+selected accented infinitive simply by adding an ending
+[@Ringe2017, p.238, pp.258-260].
+
+For gripe, long-ī strong-verb citation and probable iterative origin are
+different explanatory levels. Kroonen invokes the stop and Alsatian
+gemination and considers strong-verb backformation likely. His
+reconstructed singular and plural iterative cells remain separate,
+including the native text's uncertain dental representation in the
+plural. Orel does not explicitly deny that derivation, so his citation
+cannot become a categorical opposing origin theory
+[@Orel2003, p.143; @Kroonen2013, pp.186,190-191].
+Ringe's explicitly PGmc example supports the voiced-stop shift, not an
+independent denial of iterative prehistory
+[@Ringe2017, pp.117-119].
+The exact derivational warrant and source-specific ending conventions
+remain bounded questions; no exclusive interauthor dispute is fabricated.
+
+### Ground: original nasal and paradigm, not elimination of nd
+
+The useful opposition concerns the warrant for the original root and
+paradigm. Orel gives voiced and voiceless masculine u-stem alternatives,
+alongside other Nordic formations, and relates the deeper formation to
+the n-root conventionally represented as *ghren-*. Those are not all
+identical cells of the selected OE word
+[@Orel2003, p.144].
+Kroonen explicitly names Orel's usual account and invokes Cimbrian
+*grumf* for the alternative nasal and epenthetic consonant. Crucially,
+his introduction supplies the original mþ/nd Verner paradigm: the
+proposed voiced genitive underlies the West Germanic forms including
+OE *grund*. The account therefore retains nd; it does not replace every
+form by an m-stem or reject *grundu-* categorically
+[@Kroonen2013, pp.xxxi-xxxii,192].
+
+The new literal records preserve the native nominative and genitive
+spellings, including text-extraction limitations, rather than silently
+reconstructing a cleaner thorn glyph. Kroonen's arrival cross-reference
+retains alternatives concerning Grimm/Verner ordering and later
+epenthesis; his soft entry offers a qualified formation comparator
+[@Kroonen2013, pp.321,426].
+The focused source-explicit case records the stated n-root account versus
+the Cimbrian-supported original paradigm. This explains a local
+consonantal/segmentation premise difference, not the entire ancestry or
+the acceptability of CAPR's selected input. Stress, epenthesis, comparative
+equation, paradigm cell and adoption remain separate questions.
+
+### Guest: actual cells and a named genitive-quantity disagreement
+
+The lexical citation is a masculine i-stem, not the separate Nordic
+verb or associate formation. Ringe's singular and contracted plural
+are distinct cells; the contraction example cannot be read as another
+singular endpoint
+[@Orel2003, pp.127-128; @Kroonen2013, p.170;
+@Ringe2017, pp.155-157,170-172].
+The complete paradigm supplies eleven separate literal cells. Genitive
+singular and nominative/vocative plural both print *gastīz*; dative and
+instrumental singular both print *gastī*. They remain separate
+occurrences. The vocative *gastī?* keeps its question mark, and its
+uncertain form is not clipped into a supposedly unqualified dative.
+Starlessness, nasalization and the marked genitive-plural quantity
+remain diplomatic evidence, not executable symbol conventions
+[@Ringe2017, p.312].
+
+Fulk's eight OE paradigm cells similarly retain repeated nominative/
+accusative forms and singular/plural identities. His explicit note says
+not every displayed full form is actually attested, though all the
+endings are. These records are therefore illustrative words, not eight
+universally certified attestations
+[@Fulk2018, pp.158-159].
+The body forms on62 and125 are recorded separately from the starless
+index forms on387. Native body z and index ʒ are not silently
+identified, and an index heading does not date a reconstruction.
+The accusative-plural history remains another cell, not an ancestor
+of the selected singular assembled by CAPR
+[@Fulk2018, pp.62-63,125,387].
+
+The focused disagreement is the i-stem genitive's quantity and replacement
+history. Ringe discusses the conflicting daughter evidence, explicitly
+observing that short OHG i does not tell against inherited *-īz* because
+the nominative plural also has a short reflex of that ending. He
+tentatively accepts inherited i-vocalism with secondary spread of
+a-grade endings from the u-stems. His guest table supplies the long
+genitive and nominative-plural forms
+[@Ringe2017, pp.304-305,312].
+Fulk treats Gothic/OHG evidence as an objection to inherited long
+quantity and regards a-stem replacement as safer; early shared
+replacement then raises a further analogical-umlaut question
+[@Fulk2018, pp.159-161].
+
+Fulk literally prints “Otherwise Ringe2017:311”. That named pointer is
+preserved, not silently corrected. The held Ringe311 concerns z/
+consonant stems, whereas the actual checked i-stem quantity argument
+is on304-305 and the guest paradigm on312. The intended printed
+locator remains unverified, but the comparison is supported by those
+actual passages. It is a source-explicit local premise contrast, not
+an attribution based solely on the faulty pointer
+[@Fulk2018, p.160; @Ringe2017, pp.304-305,310-312].
+
+All37 inherited Ringe-Taylor guest identities survive, including nine
+starless PWGmc paradigm cells and conditional *gastj ?*. Locally stated
+PGmc, PWGmc, West Saxon, Anglian and Northumbrian labels remain distinct;
+unlabelled intermediate diphthongs remain undated. The repaired SOURCE
+dates follow actual local labels, not the chapter title
+[@RingeTaylor2014, pp.43-44,55-56,114-116,215-217,243-245,284-288].
+The source's palatal-diphthongization, mutation and final-i-loss account
+is research support, not a new production assay or reopening of settled
+guest/gift behavior. Dative, plural and other-case arguments retain their
+independent quantity and analogical alternatives.
+
+### Hail and hair: reservations cannot become exclusive denials
+
+Orel's hail alternatives and cold-root account coexist with Kroonen's
+uncertain masculine label, cold/reduplication possibility and torment
+alternative. Kroonen's hoarfrost cross-reference rejects a particular
+zero-grade precursor with an inappropriate predicted outcome; it does
+not reject every cold-root derivation. The added hoarfrost literal is
+on printed226, not the nearby hair-family page or a PDF-sheet number
+[@Orel2003, pp.150,168; @Kroonen2013, pp.199,226].
+The SOURCE cell repair retains m.? as uncertain. Orel's neuter
+alternative does not manufacture an exclusive masculine/neuter
+interauthor conflict.
+
+For hair, Orel's Baltic vowel-grade comparison does not select a cause
+of Germanic length. Kroonen reports the compensatory account attributed
+to Gąsiorowski and also allows a lengthened-grade precursor. The report
+and the conditional alternative remain independent attribution records,
+not two equally endorsed exclusive histories. The fiber-family
+formation on225 is a related formation, not the selected hair citation
+[@Orel2003, p.172; @Kroonen2013, pp.220,225].
+A discriminating comparative/chronological premise is still needed;
+matching long vowels do not settle their origin.
+
+### Hall and hammer: meanings, etyma and selected cases
+
+Orel's selected hall belongs to the cover/hide family. Its stone-slab
+homonym is different; the rudder formation in the cover-family
+cross-reference is not the helmet noun. Kroonen's cover and helmet
+discussion supplies family support, not an explicit quotation of the
+selected hall noun assembled from those components
+[@Orel2003, pp.156,168; @Kroonen2013, pp.218-220].
+Ringe's *salaz* and *saliz-* are represented by ON *salr* and OE
+*sele/sæl*, not selected *heall*. They are different-etymon semantic
+comparanda, not cover-root relatives. Their PGmc date is supported by
+the actual list preamble, independently of their relation to CAPR's row
+[@Ringe2017, pp.310-311].
+Two argument receipts and two cell receipts make that etymon boundary
+explicit without deleting the source forms or changing their confidence.
+Ringe-Taylor's starting *hallu* is explicitly PNWGmc, whereas *hellu*
+remains an undated intermediate. The fronting/breaking/retraction
+discussion is not a claimed analogical hallu-to-hellu leveling rule;
+the later high-vowel-loss argument is independently retained
+[@RingeTaylor2014, pp.184-186,284-286].
+
+Hammer selects the genitive *hameres*. Orel's stone derivative and
+initial metathesis and Kroonen's laryngeal/root analysis are overlapping
+accounts, not opposing metathesis directions. Kroonen explicitly cites
+Orel's Slavic comparison while rejecting a particular morphologically
+impossible alternative. His heaven/anvil paradigm is related evidence,
+not hammer genitive cells
+[@Orel2003, p.158; @Kroonen2013, pp.206-207,220].
+The added precursor literals never masquerade as a quoted selected
+genitive. Citation *xámaraz*, input *xámaras*, explicit input stage and
+late analogy remain separate current selections.
+
+The two focused source-explicit explanations are reusable research
+results; all eight whole-row causes remain unestablished. Current SOURCE
+tables, exact receipts and regressions are authority, never a rerun of
+the one-use candidate. Corpus, stages/contexts, FST semantics/order,
+scientific baselines, introduction and the published PDF are unchanged.
+Full alignment, conditioning census, explanatory synthesis and
+consistency watchlist remain unfinished.
+
 ## Fourteenth bounded alignment: gang through grass
 
 This continuation completes rows2038-2045. The selected targets are gang,

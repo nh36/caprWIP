@@ -1,0 +1,16 @@
+evidence_id	printed_pages	field	old_value	new_value	source_basis
+rt-complete-2049-007	55	asserted_stage	unspecified_local_endpoint	pgmc	RT55 explicitly labels the joint nominative and accusative input PGmc.
+rt-complete-2049-008	55	asserted_stage	unspecified_local_endpoint	pwgmc	RT55 explicitly labels merged nom.-acc.sg. gasti PWGmc.
+rt-complete-2049-017	244	asserted_stage	unspecified_local_endpoint	oe	RT244 locally labels WS geasti, not merely an OE chapter heading.
+rt-complete-2049-020	287	asserted_stage	unspecified_local_endpoint	pgmc	RT287 labels both nom.sg. gastiz and acc.sg. gastj PGmc before the PWGmc arrow.
+rt-complete-2049-025	287	asserted_stage	unspecified_local_endpoint	oe	RT287 labels WS OE geasti > giesti > giest locally.
+rt-complete-2049-026	287	asserted_stage	unspecified_local_endpoint	oe	RT287 locally distinguishes Anglian gesti from WS OE chain.
+rt-complete-2052-001	185	asserted_stage	unspecified_local_endpoint	northwest_germanic	RT185 explicitly prints PNWGmc hallu.
+ringe-complete-hall-a	311	asserted_stage	not locally dated; reconstructed Germanic context	pgmc	Ringe310 explicitly reconstructs the following z-stem list for PGmc;311 continues it with salaz/saliz-.
+ringe-complete-hall-i	311	asserted_stage	not locally dated; reconstructed Germanic context	pgmc	Ringe310 explicitly reconstructs the following z-stem list for PGmc;311 continues it with salaz/saliz-.
+kroonen-core-2050-1	199	cell	m.; citation formation	m.?; hail citation with explicitly uncertain masculine	Kroonen199 prints m.?; retain the question mark rather than treating gender as certain.
+ringe-complete-hall-a	311	cell	hall s-stem strong citation	sal- hall z-stem strong citation; different etymon from selected heall	Ringe311 gives ON salr and OE sele/sæl, not heall or Orel156's cover-root hall.
+ringe-complete-hall-i	311	cell	hall s-stem oblique	sal- hall z-stem oblique; different etymon from selected heall	Ringe311 gives ON salr and OE sele/sæl, not heall or Orel156's cover-root hall.
+ringe-complete-hall-a	311	argument	Contrast oblique saliz- and daughter thematicization, rather than deleting stem material.	Ringe310-311 reconstructs the sal- z-stem paradigm represented by ON salr and OE sele/sæl. This is a semantic comparandum, a different etymon from selected heall; strong/oblique alternation is internal to sal-, not disagreement over hallō.	Actual Ringe310-311 lexical examples versus Orel156's heall/cover formation establish the etymon boundary.
+ringe-complete-hall-i	311	argument	Different ablaut stem of the source s-stem analysis.	Ringe310-311's saliz- is the oblique stem of salaz, represented by ON salr and OE sele/sæl. Preserve the quoted form and row link as a different-etymon semantic comparandum, not a heall paradigm cell.	Actual Ringe310-311 lexical examples versus Orel156's heall/cover formation establish the etymon boundary.
+alignment-hammer-orel-preform	158	form_kind	stem	word	Post-persistence source check: Orel158 prints the complete thematic derivative *akmoros, including -os, not a bare stem. Only kind is repaired; literal, page, span, date, confidence and selected-cell boundary are unchanged.

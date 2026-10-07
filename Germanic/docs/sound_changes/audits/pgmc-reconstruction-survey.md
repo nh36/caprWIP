@@ -2167,6 +2167,233 @@ The query record is pgmc-one-hundred-thirteen-alignments-query-results.txt
 in the session workspace. The fourteenth tranche is complete and
 uncommitted; the full programme is not.
 
+Subsequent release supersedes that checkpoint's no-release boundary:
+the fourteenth tranche was committed and pushed as
+13b6cc9a2fce75b3e2601be4a193f1e285c45d36. HEAD and origin/update
+were verified identical before the authorized fifteenth continuation.
+The earlier measurements and persistence receipts remain historical
+evidence; the old one-use candidate is never rerun.
+
+## Fifteenth tranche: grave through hammer
+
+### Identity
+
+- SC id: n/a; this is the reconstruction-survey research continuation,
+  not a verdict on an executable sound law.
+- Executable identifier: n/a; no network is edited or inferred from its
+  identifier.
+- Branch/base: update,13b6cc9a2fce75b3e2601be4a193f1e285c45d36.
+  Scope is rows2046-2053: grave/dig, gripe, ground, guest, hail, hair,
+  hall and hammer/genitive. The user authorized preceding-work release
+  and completion of the next equal tranche, not scientific adoption.
+
+### Question
+
+- Hypothesis: the inherited inventory obscures selected-cell and etymon
+  boundaries, source reservations and individual repeated paradigm
+  occurrences; ground's original-nasal warrant and guest's genitive
+  quantity may support focused source-explicit differences.
+- Confirmation requires the complete held arguments, actual paradigm
+  cells, local stage assertions and directly named comparative premises.
+  Contrary source reservations or a different etymon refute an alleged
+  exclusive dispute. Failure to quote a selected cell is a bounded gap,
+  not evidence of source rejection.
+
+### Current state (before any edits)
+
+- Historical characterization:4492 evidence records,1379 consultations,
+  4635 positions,421 comparisons and209 rationales;113 bounded core
+  rows and280 unreviewed. The immutable snapshot records81 inherited
+  analytical identities for these eight rows.
+- Executable behavior: n/a to this research-only question. Production
+  rules/order, stored traces and scientific baseline are protected;
+  no fresh Foma evidence or counterfactual is required.
+- Selected-input assumptions: grave is the grafan verb, not a grave
+  noun; hammer selects hameres from *xámaras, not the citation *xámaraz.
+  Gripe's distinct Unicode PROTO/input spellings retain their explicit
+  stage sidecar. All eight selected rows are runnable; hammer's existing
+  late_analogy remains unchanged.
+- Existing verdicts/dossiers: the active survey SOURCE tables,
+  commentary, previous tranche audit/receipts and existing lexical
+  corpus/stage records. Settled guest/gift production is a protected
+  control, not a reopened adjudication.
+
+### Diagnosis
+
+- Complete firing census: n/a; no law is modified. The complete research
+  census is81 inherited identities, all retained, with48 supplemental
+  records and four focused reuses:133 positions link129 distinct records.
+- Principal witness traces: n/a for executable before/after claims.
+  Actual source evidence includes ground's mþ/nd paradigm, guest's
+  singular/plural and oblique cells, conditional vocative, Ringe's
+  different sal- etymon and hammer's unquoted selected genitive
+  [@Kroonen2013, pp.xxxi-xxxii,192; @Ringe2017, pp.310-312;
+  @Fulk2018, pp.158-161; @Orel2003, p.158].
+- Witness roles: source citations, other paradigm cells, family support,
+  different-etymon comparanda, processes and conditional/reported
+  precursors. These are not newly certified live firings or chronology
+  witnesses. Repeated forms and dates remain independently identified.
+
+### Literature
+
+- Existing CAPR dossiers checked: survey commentary/README, prior
+  tranche closeout, source/accountability tables, immutable inherited
+  positions and selected corpus/stage records.
+- Sources checked, printed pages:
+
+| Row | Complete arguments and necessary cross-references |
+| --- | --- |
+| Grave2046 | Orel139; Kroonen169-170,185-187; Ringe238,258-260 |
+| Gripe2047 | Orel143; Kroonen186,190-191; Ringe117-119 |
+| Ground2048 | Orel144; Kroonenxxxi-xxxii,192,321,426 |
+| Guest2049 | Orel127-128; Kroonen170; Ringe155-157,170-172,304-305,310-312; Fulk62-63,125,158-161,387; Ringe-Taylor43-44,55-56,114-116,215-217,243-245,284-288 |
+| Hail2050 | Orel150,168; Kroonen199,226 |
+| Hair2051 | Orel172; Kroonen220,225 |
+| Hall2052 | Orel156,168; Kroonen218-220; Ringe310-311; Ringe-Taylor184-186,284-286 |
+| Hammer2053 | Orel158; Kroonen206-207,220 |
+
+The dictionary passages separate selected etyma, related formations,
+conditional origins and reported accounts
+[@Orel2003, pp.139,143-144,150,156,158,168,172;
+@Kroonen2013, pp.169-170,185-187,190-192,199,206-207,218-220,225-226].
+The grammar passages distinguish roots, attestations, full paradigm
+cells and source-local dates
+[@Ringe2017, pp.117-119,155-157,170-172,238,258-260,304-305,310-312;
+@Fulk2018, pp.62-63,125,158-161,387;
+@RingeTaylor2014, pp.43-44,55-56,114-116,184-186,215-217,243-245,284-288].
+
+- Source-supported phenomena: Kroonen explicitly counters the usual
+  n-root account with Cimbrian m evidence while retaining an nd genitive
+  underlying OE grund; the difference is original-root/paradigm warrant
+  [@Orel2003, p.144; @Kroonen2013, pp.xxxi-xxxii,192,321,426].
+  Fulk's objection to inherited i-genitive quantity contrasts with
+  Ringe's expressly defended OHG quantity interpretation and tentative
+  inherited i-vocalism [@Fulk2018, pp.159-161;
+  @Ringe2017, pp.304-305,312].
+  Fulk's printed Ringe2017:311 pointer is preserved, although that held
+  page contains z/consonant stems; its intended locator is not silently
+  certified [@Fulk2018, p.160; @Ringe2017, pp.304-305,310-312].
+- CAPR modelling decisions: fourteen exact field amendments, individually
+  scoped analytical relations/features, literal occurrence receipts,
+  process records and two focused comparisons. SOURCE text remains
+  diplomatic. New text checks do not claim image certification or
+  original verification of authors reported by Kroonen.
+
+### Historical analysis
+
+- Historical stage: only explicit local labels warrant the nine SOURCE
+  stage repairs. Guest's labelled PGmc/PWGmc/OE cells are independent
+  from unlabelled intermediates; Ringe's hall list preamble establishes
+  PGmc for sal- comparanda, not identity with heall
+  [@Ringe2017, pp.117-119,310-311;
+  @RingeTaylor2014, pp.55-56,243-245,284-288].
+  Hall's hallu starts explicitly PNWGmc while hellu remains undated
+  [@RingeTaylor2014, pp.184-186,284-286].
+- Historical scope: author-specific comparative reconstruction and
+  daughter evidence, not new non-OE runtime pipelines. Fulk's full-form
+  table caveat remains independent from its ending attestations
+  [@Fulk2018, pp.158-159].
+- Phenomenon/proxy relationship: n/a to a new executable claim; these
+  source accounts are not automatically adopted histories. Grave root
+  and Gothic attestation are not selected infinitives; the sal- hall is
+  a different etymon; hammer family precursors do not quote its selected
+  genitive [@Ringe2017, p.238, pp.258-260,310-311;
+  @Orel2003, p.158; @Kroonen2013, pp.206-207,220].
+- Chronology evidence: no canonical edge is proposed. Ground's
+  epenthesis/Verner alternatives and guest/hall's source histories are
+  recorded as qualified arguments, not independently demonstrated
+  executable orders [@Kroonen2013, pp.xxxi-xxxii,321;
+  @RingeTaylor2014, pp.184-186,215-217,243-245,284-288].
+  Stage labels, confidence and verification never determine each other.
+
+### Verdict
+
+- REFORMULATE research annotations and complete bounded analytical
+  alignment; RETAIN all production selections, laws and baselines.
+  All eight whole-row causes remain unestablished.
+- Machine-readable registry line: n/a, because no SC verdict is issued.
+  Current comparisons record eight bounded core limits and the two
+  source_explicit focused causes.
+- Justification: complete arguments support a local ground
+  original-paradigm contrast and guest genitive-quantity contrast.
+  They refute an exclusive rejection of nd and a collapse of every
+  semantic hall into heall. Conditional hail/hair/gripe histories are
+  not categorical opposing accounts, and exact selected formation/cell
+  premises remain independently unresolved
+  [@Orel2003, pp.143-144,150,156,172;
+  @Kroonen2013, pp.xxxi-xxxii,190-192,199,220,226;
+  @Ringe2017, pp.304-305,310-312; @Fulk2018, pp.159-161].
+
+### Propagation (only after verdict)
+
+- Affected owners: forms, analyses, comparisons, rationales, coverage,
+  README, commentary, this audit and the two alignment-2046-2053
+  occurrence/amendment receipt tables. Generated reports follow only
+  adjudicate.py --refresh.
+- Regression controls: complete member/evidence links, separate source
+  cells and occurrences, vocative uncertainty, table-attestation caveat,
+  local dates versus index headings, ground's retained nd, sal-/heall
+  boundary, conditional/report attribution, selected hammer genitive,
+  exact receipt spans/hashes and deterministic focused-cause queries.
+  Negative controls forbid whole-row cause promotion, invented source
+  silence, stripped uncertainty and scientific adoption.
+- Baseline/fingerprint effect: none. All46 protected scientific owners,
+  sources, selected corpus records and unaffected research records
+  remain unchanged. Thirty-six literal records and twelve processes add
+  48 records; fourteen exact field repairs are the only changes to4492
+  inherited evidence records. A fifteenth receipt repairs only the kind
+  of the new hammer precursor: Orel's complete thematic derivative
+  includes -os and is a word, not a bare stem [@Orel2003, p.158].
+  All1379 consultation identities/statuses
+  survive, including786 actual dictionary reviews.
+
+### Residue
+
+The focused explanations do not resolve whole-row ancestry. Exact gaps
+remain dig nominal/iterative formation, gripe backformation warrant,
+ground original paradigm/adoption premises, guest intended pointer and
+independent case histories, hail selected neuter formation, hair length
+origin, hall noun derivation/date and hammer selected-genitive assembly.
+Native glyph uncertainty is retained, not image-certified
+[@Orel2003, pp.139,143-144,150,156,158,172;
+@Kroonen2013, pp.xxxi-xxxii,185-187,190-192,199,206-207,220,226;
+@Ringe2017, pp.304-305,310-312; @Fulk2018, pp.159-161].
+The remaining272 core alignments, conditioning census, aggregate
+explanation, watchlist and specialist dispatch remain unfinished.
+RT conventions verification remains a separate preserved gap.
+Current SOURCE/receipts/tests are authority; never rerun or import the
+persisted fifteenth candidate. No automatic fifteenth release or
+sixteenth start, scientific adoption, introduction revision or PDF render.
+
+Closeout: all222 focused survey/analysis tests pass on the final tables.
+The initial run's sole error was the new hammer regression using a
+nonexistent counterpart key instead of the loader's target key; the
+assertion was corrected, not the corpus or scientific prose.
+Canonical refresh reports CONTROL PLANE CLEAN. Bibliography,
+section-locator, all73 new-prose printed-page references and whitespace
+checks pass.
+
+The independent read-only verifier preserves4492 inherited evidence
+records except exactly fourteen receipted annotation fields; it separately
+checks the new hammer kind repair. All81 inherited identities survive.
+All4554 outside positions,413 unaffected comparisons,209 inherited
+rationales and1356 outside consultations are unchanged. All1379 actual
+consultation identities/statuses,786 dictionary reviews, sources,
+selected corpus records, unaffected research hashes and46 protected
+scientific hashes remain. All36 literal paragraph hashes/spans
+independently resolve, including the dative/instrumental occurrences
+distinct from the uncertain guest vocative.
+
+Repeated queries reproduce121 bounded/272 unreviewed core rows,
+133 tranche positions/129 distinct records, both two-source
+source-explicit focused causes and eight unestablished whole-row causes.
+They preserve the sal- comparanda, source-local guest dates and
+conditional/homographic cells. Independent alignment refuses272;
+verified reading separately refuses RT conventions. Query evidence is
+pgmc-one-hundred-twenty-one-alignments-query-results.txt in the session
+workspace. The fifteenth tranche is complete and uncommitted; the full
+programme is not.
+
 ## Residue
 
 The prioritized explanatory audit, full feature/paradigm alignment of
