@@ -1,0 +1,16 @@
+evidence_id	printed_pages	field	old_value	new_value	source_basis
+rt-complete-2039-003	171	asserted_stage	unspecified_local_endpoint	pwgmc	RT171 explicitly prints PWGrnc before gaist; not an inferred chapter date.
+rt-complete-2040-017	59	asserted_stage	unspecified_local_endpoint	pgmc	RT59 explicitly scopes the genitive-plural suffix and all three following examples with PGme; the following PWGmc label scopes separate outcomes.
+rt-complete-2040-018	59	asserted_stage	unspecified_local_endpoint	pgmc	RT59 explicitly scopes the genitive-plural suffix and all three following examples with PGme; the following PWGmc label scopes separate outcomes.
+rt-complete-2040-019	59	asserted_stage	unspecified_local_endpoint	pgmc	RT59 explicitly scopes the genitive-plural suffix and all three following examples with PGme; the following PWGmc label scopes separate outcomes.
+rt-complete-2040-024	61	asserted_stage	unspecified_local_endpoint	pgmc	RT61 explicitly introduces PGmc ō-stem dat.sg. before the suffix.
+rt-complete-2040-025	61	asserted_stage	unspecified_local_endpoint	pgmc	RT61 PGmc ō-stem dat.sg. scopes the following gift example, before the separate PWGmc outcome.
+rt-complete-2041-006	215	asserted_stage	unspecified_local_endpoint	pgmc	RT215 explicitly coordinates gebang, gab and gébun under PGmc before the following arrow.
+rt-complete-2041-007	215	asserted_stage	unspecified_local_endpoint	pgmc	RT215 explicitly coordinates gebang, gab and gébun under PGmc before the following arrow.
+rt-complete-2045-005	198	asserted_stage	unspecified_local_endpoint	pgmc	RT198 explicitly coordinates PGmc singular grasa and nom.-acc.pl. graso before the PNWGmc arrow.
+orel-core-2039-3	123	cell	comparative formation; exact relationship and qualifications in the argument	unattested terrify-base noun, not attested terrible adjective	Orel123 expressly says an unattested noun, despite comparing Avestan horrible; no adjective silently substituted.
+kroonen-core-2041-2	172-173	cell	remodeled give verb predecessor	Kortlandt's reported prefixed seize predecessor, not another give cell	Kroonen173 explicitly attributes the ga-ef remodeling proposal to Kortlandt1992 pp104-105; not an independently verified original.
+rt-complete-2040-016	59	cell	Local source label: gen. pl.	PGmc metalinguistic genitive plural ending, not gift word	RT59 prints gen.pl. before the suffix, then three whole-word examples.
+rt-complete-2040-024	61	cell	Local source label: dat. sg.	PGmc metalinguistic ō-stem dative singular ending, not gift word	RT61 separates the suffix from the following geboi example.
+rt-complete-2043-003	155	cell	Locally quoted historical word/stem/cell; exact inflection is not inferred from citation context	metalinguistic consonant-cluster input label, not gold lemma	RT155 discusses inherited cluster Ip becoming Id; these labels are not reconstructed gold words.
+rt-complete-2043-004	155	cell	Locally quoted historical word/stem/cell; exact inflection is not inferred from citation context	metalinguistic consonant-cluster output label, not gold lemma	RT155 discusses inherited cluster Ip becoming Id; whole gold alternatives follow later.

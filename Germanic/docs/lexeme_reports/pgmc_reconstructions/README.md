@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4459 evidence records,1379 actual consultations and4596
-analytical positions, with418 comparisons and195 rationales. The RT
+There are4492 evidence records,1379 actual consultations and4635
+analytical positions, with421 comparisons and209 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred five core rows now have individually reconciled, bounded alignment:
-1933-2037. The remaining288 are unreviewed. The second tranche builds on
+One hundred thirteen core rows now have individually reconciled, bounded alignment:
+1933-2045. The remaining280 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -137,7 +137,33 @@ none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
 
-The thirteenth tranche completes fowl, fox, freeze, friend, fright,
+The fourteenth tranche completes gang, ghost, gift, give, god, gold,
+goose and grass (2038-2045). All141 inherited positions are individually
+accounted for, including the two unchanged gift notation-control positions.
+Twenty-three literal receipts and ten processes add33 records to existing
+consultations; six focused positions reuse evidence and fourteen rationales
+are added. Fifteen exact SOURCE annotation receipts and two consultation
+status receipts account for the repairs. Its180 positions link171 distinct
+records; shared records and different analytical units are not collapsed.
+
+Fulk's directly named dispute with Ringe and Taylor concerns the related
+giefu-family genitive: trimoric inherited quantity plus analogical OE -e
+versus bimoric quantity plus etymological -e, not selected i-stem ġift
+[@Fulk2018, pp.154-156; @RingeTaylor2014, pp.58-61,114].
+Give's Irish-cognate admission and gold's collective-accent warrant have
+bounded analyst-inferred explanations, not directly named rebuttals or
+adopted histories [@Orel2003, p.130; @Kroonen2013, pp.172-173,194;
+@Ringe2017, pp.301-303].
+Orel's ghost relationship is not an opposite derivational direction;
+conditional god origins, goose plural versus later length, and grass
+singular versus collective plural remain distinct
+[@Orel2003, pp.123,126,140,145; @Kroonen2013, pp.163,168-169,187,193-194;
+@Fulk2018, pp.64,72; @RingeTaylor2014, pp.126-128,141,198].
+All eight whole-row causes remain unestablished. The existing gift velar-only
+control and adopted science are unchanged; corpus, stages/contexts, FSTs,
+scientific baselines, introduction and PDF are outside this research increment.
+
+The preceding thirteenth tranche completes fowl, fox, freeze, friend, fright,
 frost, furrow and gall (2030-2037). All89 inherited positions have
 individual decisions;29 literal receipts and eight processes add37
 records to existing consultations. Four focused positions reuse evidence,

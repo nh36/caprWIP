@@ -320,8 +320,12 @@ class LiveAnalyticalTests(unittest.TestCase):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "insufficient_evidence")
 
     def test_calibration_preserves_cells_components_and_rejected_positions(self):
-        for row_id in ("1983", "1996", "2040", "2085", "2119", "2254", "2302"):
+        for row_id in ("1983", "1996", "2085", "2119", "2254", "2302"):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "different_units")
+        self.assertEqual((self.cases["core-2040"]["comparability"],
+                          self.cases["core-2040"]["alignment_status"]),
+                         ("insufficient_evidence", "bounded_limit"))
+        self.assertIn("Selected i-stem ġift is not giefu", self.cases["core-2040"]["alignment_limits"])
         man = self.positions["a-2119-kroonen-core-2119-1"]
         self.assertEqual(man["attribution_status"], "rejected")
         self.assertEqual(self.positions["a-2302-kroonen-core-2302-1"]["relation_to_row"],
@@ -558,10 +562,34 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row_id in map(str, range(2030, 2038)):
             self.assertEqual(self.cases["core-" + row_id]["explanation_status"], "unestablished")
 
+    def test_fourteenth_tranche_scoped_causes_and_deterministic_queries(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT c.comparison_id,c.explanation_status,count(DISTINCT f.source_key) AS sources
+            FROM comparisons c JOIN comparison_analyses ca USING(comparison_id)
+            JOIN analyses p USING(analysis_id) JOIN forms f USING(evidence_id)
+            WHERE c.comparison_id IN ('gift-o-family-genitive-history','give-irish-cognate-admission',
+                                     'gold-collective-accent')
+            GROUP BY c.comparison_id,c.explanation_status ORDER BY c.comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\tsources\n"
+                    "gift-o-family-genitive-history\tsource_explicit\t2\n"
+                    "give-irish-cognate-admission\tanalyst_inference\t2\n"
+                    "gold-collective-accent\tanalyst_inference\t2\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2038 AND 2045
+        """), "positions\tevidence\n180\t171\n")
+        for row in map(str, range(2038, 2046)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1471)
+                             for form in self.forms), 1487)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

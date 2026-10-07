@@ -1598,6 +1598,253 @@ published PDF were unchanged. At that checkpoint the next alignment began2014;
 the full393-row alignment, conditioning census, explanatory synthesis
 and consistency watchlist remain unfinished.
 
+## Fourteenth bounded alignment: gang through grass
+
+This continuation completes rows2038-2045. The selected targets are gang,
+gāst, ġift, ġiefan, god, gold, gōs and græs; their unchanged inputs are
+*gángaz, *gáistaz, *gíftiz, *gébaną, *gúdą, *gúlθą, *gánsz and *grásą.
+These are current corpus selections, not new quotations attributed to every
+author. All141 inherited analytical identities receive individual review,
+including gift's three positions sharing a single Orel record. The two
+printed-representation control positions and their existing velar-only
+comparison are preserved exactly rather than overwritten by an
+evidence-ID dictionary.
+
+Twenty-three literal receipts and ten process records supplement existing
+consultations. Six focused positions reuse evidence, fourteen rationales
+are added, and fifteen exact old/new annotation receipts record repairs.
+The two Fulk consultations formerly labelled discussion-only now have
+actual quoted evidence: gift has a related ō-family ending/attestation,
+goose a plural precursor/attestation. Their status changes are separately
+receipted; neither becomes proof of the selected singular
+[@Fulk2018, pp.64,72,154-156].
+The tranche has180 positions linked to171 distinct records. Totals are
+4492 records,1379 consultations,4635 positions,421 comparisons and209
+rationales;113 core rows are bounded and280 unreviewed. These count research
+objects, not independent author votes or113 historically resolved inputs.
+
+### Gang: distinguish the nominal homonym from going
+
+Orel's selected nominal connection is the masculine journey noun,
+homonym I, not homonym II's adjective. His strong go verb is connected
+with that noun, and its possible backformation from the weak verb remains
+a qualified alternative. The neighboring weak entry itself derives from
+the strong verb/noun, while the feminine ti action noun is another formation
+[@Orel2003, pp.125-126].
+Kroonen's going family offers a present stem and zero-grade alternative,
+suppletive Gothic past, secondary weak OE past, explicitly NWGmc
+reduplicated singular/plural, gerundive adjective, ti noun and ja derivative.
+The possible e-grade course formation remains conditional. None licenses
+assembling a quoted masculine *gangaz out of a stem and guessed ending
+[@Kroonen2013, pp.166-167].
+
+Ringe's go infinitive and ti noun belong in his pre-t/s devoicing and
+fricativization discussion, whose borrowed-write control and alternative
+chronologies delimit the generalization. A consonantal derivation does
+not identify all the nominal and verbal cells
+[@Ringe2017, pp.134-136].
+The bounded result is a properly separated family, not an exclusive
+disagreement about the selected noun. The noun's derivational direction
+and exact selected ending are not quoted by every consulted author.
+
+### Ghost: relationship is not an exclusive directional derivation
+
+Kroonen permits a to-suffix noun from terrify, but prefers a substantivized
+terrible adjective with do formation because OE gæstan is clearly
+denominative. His terrify verb has its own causative connection.
+Orel calls ghost related to terrify; he does not thereby say that the noun
+was derived from the verb. His terrify account assumes an unattested
+base which the source actually calls a noun, despite comparing an Avestan
+word glossed 'horrible'. The annotation now preserves that noun label
+rather than silently making it an adjective
+[@Kroonen2013, p.163; @Orel2003, p.123].
+The two deeper ghost preforms and actual OE denominative receive literal
+receipts, but the texts do not prove an exclusive Orel-versus-Kroonen
+directional conflict.
+
+Ringe and Taylor's PWGmc inventory has a methodological restriction:
+items confined to West Germanic are reconstructed only to that endpoint,
+while accidental Gothic/Norse gaps remain possible. Their local ghost
+example explicitly says PWGmc, so its formerly unspecified source and
+analytical date are repaired. That date is not assigned from a chapter
+title, and the caution is not a categorical assertion that ghost could
+not have existed earlier
+[@RingeTaylor2014, pp.126-128,171].
+Native gast and gaist representations remain untouched; membership warrant,
+formation preference and actual target identity stay independent.
+
+### Gift: retain the adopted i-stem and isolate the ō-family dispute
+
+The selected i-stem and its already adopted science are not reconsidered.
+Orel's e citation, Ringe's i noun, the actual wedding plural and the
+separate Kroonen ō/ōn formations must nevertheless remain visible.
+Kroonen's give stem is family evidence, not an exact i-stem gift quotation;
+Fulk's giefu paradigm likewise belongs to another formation
+[@Orel2003, p.130; @Kroonen2013, pp.172-173;
+@Ringe2017, pp.135,324; @Fulk2018, pp.154-156].
+The shared Orel evidence supports a source-citation position and two
+unchanged printed-sign controls. Their existing equivalence concerns
+velar notation only: it does not identify e and i or establish stop versus
+fricative identity.
+
+The useful new disagreement is more precise than a generic gift-vowel
+contrast. Fulk explicitly derives the ō-stem genitive singular from a
+trimoric inherited ending, giving an expected OE ending different from
+usual -e; he explains -e by analogy, with a qualified source for the
+replacement. He then names Ringe and Taylor's alternative: bimoric PGmc
+*-ōz makes OE -e etymological. The literal endings *-ôz and *-ōz retain
+their own typography and the latter's quoted attribution
+[@Fulk2018, p.155; @RingeTaylor2014, pp.58-59].
+This is a source-explicit contrast of quantity and inflectional history,
+not a new secondary-source vote created by Fulk's quotation. Both the
+held RT argument and Fulk's own discussion are represented.
+
+Cell matching is decisive. RT's bimoric examples coordinate genitive
+and accusative singular before a shared outcome; the nominative plural
+and genitive plural belong to separately described quantity histories.
+Day and tongue genitive examples remain comparanda. The datives and
+their metalinguistic ending are another set, not an inferred gift noun.
+The nine starless PWGmc table cells remain nine separate evidence records
+even when their printed strings coincide
+[@RingeTaylor2014, pp.43,58-61,113-114].
+Fulk separately treats trimoric nominative plural, bimoric accusative
+plural and analogical replacement; identical daughter endings do not erase
+those distinctions [@Fulk2018, pp.155-156].
+Explicit PGmc genitive-plural examples and dative labels are repaired,
+but a later unlabelled *gebu and pre-diphthongization *gefu remain undated
+[@RingeTaylor2014, pp.15,59,61,288,325].
+
+The already read raising comparison is reused, not restarted. Ringe's
+high-front raising has qualified indirect PGmc dating; Fulk separates
+lowering, nasal/high-front raising and the questionable u condition;
+RT distinguishes inherited raising from rare or doubtful later repetitions.
+Cercignani's dating objection remains part of that comparison
+[@Ringe2017, pp.151-155; @Fulk2018, pp.55-59;
+@RingeTaylor2014, p.220; @Cercignani1980, pp.126-129].
+The ō-family genitive explanation therefore cannot become the whole-row
+cause of the selected i-stem citation difference.
+
+### Give: comparative admission, report ownership and principal parts
+
+Orel connects give with Latin habeō and Irish gaibid and says that original
+vocalism was adapted to the strong-verb system. Kroonen rejects the usual
+Irish comparison as formally impossible because of its laryngeal-bearing
+analysis, while finding Baltic semantics problematic. His prefixed-seize
+alternative is explicitly reported from Kortlandt, not promoted here to
+an independently checked original or unconditional author endorsement
+[@Orel2003, p.130; @Kroonen2013, pp.172-173].
+The focused explanation is bounded analyst inference: the sources differ
+in admission of the comparative equation and its formal premises.
+Kroonen does not name Orel as the target of a rebuttal, and this does not
+explain every give form, vowel or historical endpoint.
+
+Ringe's past second singular *gaft illustrates labial treatment before t;
+it is not default past singular *gab. His explicitly PGmc principal
+parts supply *gab, *gēbun and *gebanaz beside the infinitive, with distinct
+OE past singular, past plural and participle. New literal receipts
+retain those cell distinctions [@Ringe2017, pp.247-248,273].
+RT explicitly coordinates the PGmc infinitive and default singular/plural
+before subsequent intermediates. The two formerly unspecified past dates
+are repaired, but unlabelled native *seban, *geeb and *gebun are neither
+restored nor silently dated. Reconstructed OE *geban is not an attested
+infinitive. Northumbrian, Kentish and Mercian finite/prefixed evidence is
+not automatically the selected West Saxon cell
+[@RingeTaylor2014, pp.215-216,325].
+Fulk's initial-palatal EWS diphthong and other-dialect back-mutation
+alternatives describe OE dialect histories, not a PGmc e/i disagreement
+[@Fulk2018, p.289].
+
+### God: qualified origins are not categorical exclusions
+
+Orel preserves neuter/masculine alternatives, secondary masculine forms
+and traces of s inflection. His own libated-one derivation differs from
+the invocation alternative whose Tocharian/Dybo support is qualified.
+The deeper libated and invoked literals are not reconstructed whole
+selected neuter inputs [@Orel2003, p.145].
+Kroonen has no accepted etymology: libation is technically possible but
+semantically remote, the burial-mound connection unconvincing, and the
+Slavic revere-based Pre-Germanic account tentatively preferable.
+This is not an assertion that libation is formally impossible
+[@Kroonen2013, pp.193-194].
+
+Ringe's priest derivative uses god as its base without independently
+arguing the noun's participial origin. RT uses the PGmc noun in
+lowering/levelling evidence, not an exclusive origin argument
+[@Ringe2017, p.325; @RingeTaylor2014, pp.28-29].
+The selected neuter history remains bounded; neither masculine ending,
+priest formation nor one speculative participial account supplies a
+manufactured whole-row resolution.
+
+### Gold: the warrant for collective accent, not denial of Verner
+
+Kroonen retains both gold alternants and a to formation from the yellow
+root. He says the usual singular/plural PIE accent explanation seems
+unlikely specifically for gold because the word lacked a plural
+[@Kroonen2013, p.194].
+Ringe lists gold among alternating neuter a-stems and explains why
+derived prehistoric collectives can have shifted accent. His preceding
+footnote prefers inherited collective accent and individual analogies
+to some of Mottausch's rules/etymologies; the following discussion
+preserves ambiguity among other formation types
+[@Ringe2017, pp.301-303].
+The focused explanation is an analyst-inferred difference in the warrant
+for the collective premise. Neither author directly names the other,
+and a reconstructed collective is not automatically an attested gold
+plural. An independently evidenced archaic gold collective remains the
+precise missing diagnostic.
+
+This disagreement must not absorb all consonantal history. RT's Ip/Id
+are metalinguistic cluster labels, followed by actual gold variants and
+field comparanda. Gold's Verner alternative does not itself prove
+general PWGmc lþ-to-ld; the continuation separates northern regular
+development and analogical possibilities. Ringe's golden adjective is
+a related material derivative, not the gold noun's selected cell
+[@RingeTaylor2014, pp.155-156; @Ringe2017, p.326].
+Native gulba and the undated local cluster examples remain unchanged
+[@RingeTaylor2014, pp.28,155].
+
+### Goose and grass: later outcomes do not collapse roots and cells
+
+Kroonen uses the Sanskrit short vowel to choose an en rather than
+long-root analysis and conditionally recovers a zero-grade goose genitive
+from gander. The possible *gunzaz is another cell, not selected nominative.
+Orel's Gothic form inferred from Spanish is not PGmc, and continental
+i-stem reflexes do not change every citation into that formation
+[@Kroonen2013, pp.168-169; @Orel2003, p.126].
+Ringe's explicitly PIE citation and PGmc *gans are separate stages.
+Fulk's PGmc plural precursor and OE gēs belong to mutation evidence;
+his later nasal-fricative loss account concerns compensatory length.
+Neither the selected gōs nor plural gēs proves inherited PGmc long ō
+[@Ringe2017, p.170; @Fulk2018, pp.64,72].
+RT's northern distribution and actual goose chain preserve both the
+unlabelled intermediate and nonuniform OS participation
+[@RingeTaylor2014, pp.139-142].
+
+For grass, Kroonen explicitly predicts *gurs under the rejected immediate
+zero-grade derivation and prefers a secondary s formation to grow.
+That conditional prediction is illustrative, not his accepted grass
+lemma. The grow cross-reference has its own o-grade and secondary
+hiatus-filler argument [@Kroonen2013, pp.187,191].
+Orel's Latin/Slavic comparisons overlap rather than constitute an
+exclusive opposite formation; the grow connection is bibliographically
+reported. Fulk's Latin/Gothic lexical comparison is not a borrowing
+claim or reconstructed full PGmc grass noun
+[@Orel2003, p.140; @Fulk2018, pp.8-9].
+RT coordinates explicitly PGmc singular and collective plural, their
+PNWGmc/PWGmc histories, unlabelled later forms, and actual OE singular
+and plural. The formerly unspecified PGmc plural date is repaired;
+actual grasu remains plural and gers metathesized singular. Their role
+in phonemic/metathesis argument does not authorize a new CAPR chronology
+edge [@RingeTaylor2014, pp.147,197-199].
+
+All eight whole-row causes remain unestablished. The three focused
+explanations, repaired annotations and exact receipts are research
+results, not scientific adoption. Corpus, stages/contexts, FSTs,
+scientific baselines, introduction and published PDF are unchanged.
+The remaining280 alignments, conditioning census, aggregate explanatory
+synthesis, consistency watchlist and ranked specialist dispatch remain
+unfinished; the separate RT conventions verification gap remains.
+
 ## Thirteenth bounded alignment: fowl through gall
 
 This continuation completes the eight rows2030-2037: fowl, fox, freeze,

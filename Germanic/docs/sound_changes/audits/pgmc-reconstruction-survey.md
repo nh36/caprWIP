@@ -1993,6 +1993,180 @@ All29 literal spans independently resolve to the held paragraphs.
 This completes the thirteenth tranche, not the full programme; the
 tranche remains uncommitted. The preceding b4651334 release is pushed.
 
+Subsequent release: the user's explicit instruction authorized the
+thirteenth commit91c39d58a3d1dcff051f490bd37f4f2c7dfc4abd.
+HEAD and origin/update were verified identical before the fourteenth
+continuation. The historical uncommitted checkpoint above is preserved.
+
+## Fourteenth bounded alignment: 2038-2045
+
+### Identity
+
+Research-only continuation on update, based on91c39d58. No SC identifier,
+executable identifier or new registry verdict applies: this is source
+comparison for gang, ghost, gift, give, god, gold, goose and grass.
+The user's next-tranche instruction authorizes complete research
+execution, not scientific adoption or automatic release of this increment.
+
+### Question
+
+Can individually matched senses, formations, dates and paradigm cells
+explain consequential differences without collapsing gift's shared
+evidence units or treating every related formation as the selected input?
+Confirm with actual source arguments and precise receipts; refute proposed
+conflicts when the authors merely overlap, qualify alternatives or discuss
+different units. Whole-row explanation is a separate proposition.
+
+### Current state
+
+The immutable snapshot contains4459 forms,1379 consultations,4596
+positions,418 comparisons and195 rationales;105 bounded/288 unreviewed
+core rows. These eight rows have141 inherited analytical identities.
+Gift has three positions sharing one Orel record and an existing
+velar-only notation control. All eight selected inputs are unchanged
+equality-convention PGmc inputs. Existing gift adoption and complete
+raising comparison are protected context, not reopened scientific work.
+Executable rule text, position and current scientific metadata are n/a
+to the proposed research edits; no claim of a changed cascade is made.
+
+### Diagnosis
+
+Every inherited identity is accounted for; the two gift printed-sign
+positions and their control comparison are preserved exactly. The other
+positions individually distinguish selected/citation cells, other cells,
+families, comparanda and process/representation units.
+Firing census, immediate rule traces and counterfactual assays are n/a:
+no executable proposition is changed or tested in this evidence increment.
+Witness roles here are bibliographic/cell/attribution diagnostics, not
+newly certified live chronology witnesses.
+
+### Literature
+
+Existing survey commentary, prior alignment receipts, adopted gift
+discussion and reused raising account were checked. The protocol and
+every adjudication-template section govern this research record.
+Complete relevant entries, grammatical arguments, tables, footnotes,
+continuations and the grow cross-reference were read:
+Orel123,125-126,130,140-141,145-146;
+Kroonen163,166-169,172-173,187-188,191,193-195;
+Ringe134-136,151-155,170,247-248,273,301-303,324-327;
+Fulk8-9,55-59,64,72,105-106,154-156,289;
+RT15,28-29,43-44,58-62,113-115,126-129,139-142,147,
+155-156,170-172,197-199,215-216,220-221,288-289,325-326.
+The previously complete Cercignani1980 pp.126-129 argument is reused,
+not new image certification or a repeated article survey.
+
+Fulk directly contrasts trimoric genitive plus analogical OE -e with
+RT's bimoric genitive plus etymological -e; this concerns related
+giefu ō inflection, not selected ġift
+[@Fulk2018, pp.154-156; @RingeTaylor2014, pp.58-61,114].
+Give's admitted/rejected Irish equation has different formal/laryngeal
+premises, with the prefixed-seize alternative remaining reported
+[@Orel2003, p.130; @Kroonen2013, pp.172-173].
+Gold's collective-accent warrant differs from Kroonen's no-plural
+objection, without an independently attested archaic gold collective
+[@Kroonen2013, p.194; @Ringe2017, pp.301-303].
+Those last two causes are bounded analyst inference, not named rebuttal.
+Orel's related-to ghost wording, qualified god origins, goose singular
+versus plural and grass direct-zero versus secondary-s account do not
+license manufactured exclusive or whole-row explanations
+[@Orel2003, pp.123,126,140,145; @Kroonen2013, pp.163,168-169,187,193-194;
+@Fulk2018, pp.64,72; @RingeTaylor2014, pp.141,198].
+
+CAPR's modelling decisions are restricted to analytical attribution,
+relations, features and precise limits. Text-only receipts preserve
+native corruptions and are not new diplomatic image verification.
+
+### Historical analysis
+
+Stages are independently asserted or bounded: explicit PGmc, NWGmc,
+PWGmc, PIE, Pre-Germanic and OE cells do not share a silently inferred
+endpoint. RT's explicitly PWGmc ghost, PGmc genitive-plural/dative
+examples, coordinated give pasts and grass plural get exact annotation
+repairs [@RingeTaylor2014, pp.59,61,171,198,215].
+Unlabelled later *gebu, *gefu, *seban, *geeb, *gebun and grass
+intermediates remain unknown rather than dated from headings
+[@RingeTaylor2014, pp.198,215,288,325].
+Geographical/dialect scope distinguishes selected WS from other OE
+examples and later northern loss; it is not a new pan-Germanic verdict
+[@Fulk2018, pp.64,72,289; @RingeTaylor2014, pp.139-142,325].
+Relationship to executable proxy: n/a, no FST rewrite or implementation
+inference. Chronology edges: none proposed, whether stage-entailed or
+independently demonstrated; source accounts remain attributed evidence.
+
+### Verdict
+
+Research disposition: eight bounded core alignments, all whole-row
+causes unestablished, with three independently scoped comparisons.
+Fulk's genitive history is source-explicit; Irish-cognate and collective
+warrant explanations are analyst-inferred and precisely limited.
+No scientific RETAIN/REFORMULATE or registry-verdict line applies, because
+no sound-change identity or canonical scientific decision is adjudicated.
+This preserves actual disagreements without choosing reconstructions
+by author counting or output fit.
+
+### Propagation
+
+Editable owners: forms, analyses, comparisons, rationales and coverage;
+three new reading-accountability receipt tables; README, commentary,
+this audit and focused survey/analysis regressions.
+Twenty-three literals plus ten processes add33 forms; six focused
+positions reuse evidence and fourteen reasons are added. Fifteen
+SOURCE annotation receipts preserve old/new values, and two separate
+consultation receipts upgrade actual Fulk gift/goose discussions after
+literal supplements without fabricating new reviews
+[@Fulk2018, pp.64,72,154-156].
+Totals:4492 forms,1379 consultations,4635 positions,421 comparisons,
+209 rationales;113 bounded/280 unreviewed. This tranche's180 positions
+link171 distinct records.
+
+Positive and negative controls cover shared gift units, genitive quantity
+and reported attribution, cognate rejection versus reported alternatives,
+collective-warrant inference versus actual plural, explicit dates versus
+unlabelled/native intermediates, suffix/cluster labels, other cells and
+literal receipt resolution. Regeneration uses only adjudicate.py --refresh.
+Baseline/fingerprint effect: none. Corpus, stages/contexts, FSTs,
+scientific baselines, introduction and PDF are protected and unchanged.
+
+### Residue
+
+No selected whole-word history is declared settled. Exact remaining
+premises include nominal gang derivation/ending, ghost membership warrant,
+gift i/ō-family boundary and raising date, give comparative equation,
+god exclusive origin, gold archaic collective, goose deeper root/genitive
+and grass formation/cell history. The remaining280 core alignments,
+class census, aggregate explanation, watchlist and specialist dispatch
+remain unfinished. RT conventions verification is a separate preserved
+gap. Current SOURCE/receipts/tests, not a rerun of the one-use candidate,
+are authority. No automatic fourteenth commit/push or next tranche.
+
+Closeout: all212 focused survey/analysis tests pass. The initial run's
+single failure was the older calibration assertion requiring gift's
+citation-triage classification after its all-source bounded review.
+The assertion now checks the explicit formation limit and current bounded
+status while preserving the original cell/family controls; no source prose
+was rewritten to satisfy it. Canonical refresh reports CONTROL PLANE CLEAN.
+Bibliography, section-locator, all67 new-prose printed-page citations and
+whitespace checks pass.
+
+The independent read-only verifier retains all4459 inherited records
+except exactly fifteen receipted cell/date annotations. All141 analytical
+identities survive, both gift control positions are unchanged, and all
+4455 outside positions,410 unaffected comparisons,195 inherited rationales
+and1345 outside consultations are unchanged. The two actual Fulk owner
+status amendments exactly match their separate receipts. All786 dictionary
+reviews, sources, selected corpus records, unaffected research hashes and
+46 protected scientific hashes remain unchanged. All23 literal spans
+independently resolve.
+
+Repeated queries reproduce113/280,180 positions/171 records, the two-source
+source-explicit genitive cause, the two-source inferred give/gold causes,
+the shared gift units and eight unestablished core causes. Independent
+alignment refuses280; verified reading separately refuses RT conventions.
+The query record is pgmc-one-hundred-thirteen-alignments-query-results.txt
+in the session workspace. The fourteenth tranche is complete and
+uncommitted; the full programme is not.
+
 ## Residue
 
 The prioritized explanatory audit, full feature/paradigm alignment of
