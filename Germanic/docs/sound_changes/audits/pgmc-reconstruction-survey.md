@@ -2394,6 +2394,383 @@ pgmc-one-hundred-twenty-one-alignments-query-results.txt in the session
 workspace. The fifteenth tranche is complete and uncommitted; the full
 programme is not.
 
+## Sixteenth tranche: hand through hay
+
+### Identity
+
+Research alignment2054-2061, not an SC verdict. Branch update; released
+base c55a8ae48033d563dcf13e0f414fd6f2a823f54c. The user explicitly
+authorized committing/pushing the fifteenth tranche and completing the
+next tranche in like fashion. The fifteenth release was pushed and
+origin/update verified identical; this supersedes its historical
+"complete and uncommitted" checkpoint above. It does not automatically
+authorize a sixteenth release or a seventeenth start.
+Executable identifier: n/a; no network is edited or independently
+adjudicated by this source-comparison tranche.
+
+### Question
+
+Can the inherited evidence be individually aligned without mistaking
+hand-family material for a handle verb, harm homonyms for the selected
+noun, a/u harvest alternatives for exclusive opposition, citation have
+for its selected third singular, conditional haw cells for attestations,
+comparative hawk proposals for owned endorsements, or repeated hay stems
+for a single dated word? Exact source passages, actual paradigms and
+local stage assertions can confirm or refute those specific relations
+[@Orel2003, pp.147-150,159,161-163,167;
+@Kroonen2013, pp.197-199,207-208,210-212,215,227;
+@Fulk2018, pp.69,71-72,92,128,309-313;
+@Ringe2017, pp.157-158,160,250,326,328;
+@RingeTaylor2014, pp.53,131,173,219,246,269,272,287,363-364].
+A shared string or successful current output cannot answer those
+questions.
+
+### Current state (before any edits)
+
+The immutable start snapshot pins4540 forms,1379 consultations,
+4687 positions,423 comparisons,223 rationales and116 inherited
+tranche identities. There were121 bounded/272 unreviewed core rows.
+Selected cells remain hand, handlian, hearm, hierfest, hæfeþ, haga,
+hafoc and hīeġ; the live corpus snapshot, not this prose, owns their
+exact spellings and input/citation fields. Have's third singular
+cannot inherit an infinitive label or a complete dictionary-stem
+ancestry [@Orel2003, p.147; @Kroonen2013, p.197;
+@Fulk2018, pp.309-313].
+Existing characterization/verdicts/dossiers consulted: the current
+survey README, commentary, retained SOURCE and exact reading-accountability
+receipts. Historical SC characterization, environments and cascade
+positions are n/a: no new sound-law verdict is proposed.
+
+### Diagnosis
+
+All116 inherited analytical identities are reconciled individually,
+including the shared hand/handle base and all20 RT hay positions.
+Forty-one literal occurrences and fourteen source-specific processes
+add55 forms; four focused positions reuse evidence. The175 resulting
+positions link170 distinct records, not175 independent quotations.
+Thirteen exact SOURCE amendments cover nine dates, three cells and
+the RT phonetic hay stem's word-to-stem classification
+[@Ringe2017, p.326; @RingeTaylor2014, pp.53,131,173,272,287,363-364].
+The existing Fulk hay consultation's status is repaired because
+its actually checked footnote supplies *hauj-* [@Fulk2018, p.128].
+
+Firing census, witness traces, skip/displacement tests and executable
+witness roles: n/a, because no FST semantics, ordering, selected input
+or adopted history is changed. The scholarly witnesses are actual
+citations, other cells, family/components, comparanda, conditional or
+reported proposals and process arguments, not newly fired sound laws.
+The actual have table's repeated cells remain individually receipted;
+the native flattened second/third-plural preterite-subjunctive layout
+limit is explicitly retained [@Fulk2018, p.309].
+
+### Literature
+
+Complete relevant held arguments, paradigms, notes and necessary
+cross-references were checked against existing reading packets and
+holding anchors. Orel supplies the eight lexical entries and relevant
+formation alternatives [@Orel2003, pp.147-150,159,161-163,167].
+Kroonen supplies the separate comparative/formation arguments,
+including Nordic harvest and probable hawk Wanderwort status
+[@Kroonen2013, pp.197-199,207-208,210-212,215,227].
+Ringe's actual hand noun and derived adjective, have backformation
+argument, local chronological qualifications and hay variants are
+retained separately [@Ringe2017, pp.157-158,163-164,250,326,328].
+Fulk supplies literal hand/hawk/hay evidence, actual have paradigms,
+qualified gemination objections and explicit recognition of Ringe's
+plausible account [@Fulk2018, pp.69,71-72,92,128,309-313].
+RT supplies source-local stages, phonetic stems and analogical/dialect
+have discussions without being promoted to an independent author
+vote against Ringe [@RingeTaylor2014, pp.53,93,126-133,173,219,246,
+269-273,287,363-365].
+
+The source-supported results distinguish the quoted stem/cell and
+argument from a selected corpus ancestry. CAPR's analytical choices
+are the explicit row relations, bounded core dispositions and the
+focused hawk comparative-warrant inference; they are not quotations
+of an author's conclusion or adoption of a new historical chain.
+Harvest's Nordic-reflex admission premise remains unanswered rather
+than invented [@Kroonen2013, pp.210-211;
+@RingeTaylor2014, pp.126-128].
+No source acquisition, new image certification or specialist-wide
+survey is claimed. Native body/index and OCR glyph/layout limits
+remain visible [@Fulk2018, pp.309,312-313,387;
+@RingeTaylor2014, pp.93,363-364].
+
+### Historical analysis
+
+Stage and scope are local source assertions, independent of confidence.
+Hand's derived adjective has a local PGmc formation context; the actual
+RT hand accusative, merged ending and hawk dative have distinct PGmc,
+PWGmc or PNWGmc assertions. An undated subsequent intermediate does not
+inherit those dates [@Ringe2017, p.326;
+@RingeTaylor2014, pp.131,272,287].
+Have's present stem, conditional expected forms, scribal-confusion
+targets, actual finite examples and reported unstressed hypothesis
+remain different claims [@RingeTaylor2014, pp.93,363-364].
+Fulk's index long-ā and body short-a quotations are independently
+preserved; neither is silently normalized [@Fulk2018, pp.312-313,387].
+
+Hawk's divergence explanation is bounded analyst inference, supported
+by Orel's owned comparative equation and Kroonen's formal correspondence/
+root-structure objections. The latter's late falconry-spread discussion
+does not establish the borrowing date, and the comparison is not a
+directly named rebuttal [@Orel2003, p.148;
+@Kroonen2013, pp.197-198].
+No historical/executable edge is added; edge classification is n/a,
+not inferred from identifiers, output fit or an interaction result.
+No new relationship between a historical phenomenon and executable
+proxy is adopted.
+
+### Verdict
+
+RECONCILE analytical SOURCE and exact reporting annotations;
+RETAIN corpus, input stages/contexts, FSTs and scientific baselines.
+All eight core alignments are bounded with precise missing premises.
+Hawk's focused comparative-warrant explanation is analyst inference;
+harvest's focused Nordic admission question and all eight whole-row
+causes remain unestablished. The comparison is source-led, not a
+winner chosen by author counts, recency or output fit
+[@Orel2003, pp.148,161-162; @Kroonen2013, pp.197-198,210-211;
+@RingeTaylor2014, pp.126-128].
+
+Machine-readable registry-verdict line: n/a; this is not an SC
+adjudication and does not invent or amend a registry verdict.
+
+### Propagation (only after verdict)
+
+The guarded NEW candidate was dry-run validated before its one-time
+write. Current SOURCE and the occurrence/amendment/consultation receipts
+are authoritative; never execute or import that persisted candidate
+again. Editable owners are forms, analyses, comparisons, rationales,
+coverage, README, substantial page-cited commentary and this existing
+template-complete survey audit. Generated projections use only
+`python3 Germanic/tools/adjudicate.py --refresh`.
+
+Positive/negative regressions cover all inherited identity counts,
+receipt-backed annotations, shared hand/handle relations, harm's
+homonym, harvest's nonexclusive a/u alternatives and unanswered membership
+premise, actual/conditional/reported have cells and body/index differences,
+haw's conditional genitive, hawk's dative/unrelated suffix and inferred
+warrant, and repeated locally dated versus undated hay stems.
+The loan-hypothesis query now also returns hawk's core position-support
+reason; that does not promote its whole-row explanation.
+An independent read-only verifier resolves41 literal paragraph hashes/
+spans and preserves all4540 inherited forms except13 receipted fields,
+4571 outside positions,415 unaffected comparisons,223 inherited
+rationales and1350 outside consultations. All786 dictionary
+consultation identities/statuses, sources, selected corpus records,
+unaffected research hashes and46 protected scientific hashes survive.
+Baseline/fingerprint effect: none; no refreeze is attempted.
+
+Canonical refresh reports CONTROL PLANE CLEAN. The final focused
+survey/analysis run passes229 tests; the expanded literal-receipt
+regression also passes. Bibliography, section locators, all98 new-prose
+printed-page references and whitespace checks pass. Deterministic
+read-only queries and the independent preservation report are recorded
+in pgmc-one-hundred-twenty-nine-alignments-query-results.txt in the
+session workspace. Initial query expectations were corrected to the
+measured1516 dictionary-evidence records and hawk's newly added
+loan-hypothesis position-support link; scientific prose was not
+rewritten to satisfy an old expectation.
+
+### Residue
+
+Current totals are4595 forms,1379 consultations,4746 positions,
+425 comparisons and239 rationales;129 bounded/264 unreviewed core rows.
+The full393-row alignment, conditioning census, aggregate explanation,
+non-adopting watchlist and subsequent-source dispatch remain unfinished.
+Alignment independently refuses264; verified reading separately refuses
+the RT conventions gap. Local literal verification is text-only, not
+a new claim of original-image certification
+[@Fulk2018, pp.309,312-313,387;
+@RingeTaylor2014, pp.93,363-364].
+No corpus/input/stage/context/FST/scientific-baseline adoption,
+introduction, PDF, automatic sixteenth commit/push or seventeenth
+start is included. Unrelated .DS_Store and tmp_probe.foma are untouched.
+
+## Seventeenth individual alignment:2062-2069
+
+### Identity
+
+Research tranche2062-2069: hazel, head, heal, heart, hearth, heath,
+heaven and hedge. Base remains fifteenth release
+`c55a8ae48033d563dcf13e0f414fd6f2a823f54c` on update, with completed
+uncommitted sixteenth work preserved. SC id/executable identifier: n/a;
+this is source comparison and reporting reconciliation, not a new
+sound-law adjudication.
+
+### Question
+
+Can complete held arguments reconcile all101 inherited analytical
+identities while keeping quotation, lexical unit, cell, attribution,
+date and confidence independent? In particular, are head's proposed
+paradigms and actual cells, heart's comparanda/quantity evidence,
+hearth's competing derivations, and heaven's expected versus remodeled
+cells being falsely collapsed? Exact source passages and distinct
+occurrences can confirm or refute those suspected matching errors
+[@Orel2003, pp.148,165,169-170; @Kroonen2013, pp.215,220,222,258;
+@RingeTaylor2014, pp.59,257,270,272,378,387].
+
+### Current state (before any edits)
+
+The immutable snapshot pins4595 forms,1379 consultations,4746 positions,
+425 comparisons and239 rationales:129 bounded/264 unreviewed core rows.
+The selected rows and all46 protected scientific hashes are pinned;
+the three sixteenth receipt files are separately protected. Sources,
+outside identities and unrelated dirty files must survive.
+
+The scientific selected input for heaven is `*xébun`, nsgmc with
+early_analogy; its older prose ledger is not selected-input authority.
+Other selected inputs retain the existing equality convention and no
+new scientific dating. Existing executable rule texts, environments,
+positions and verdicts are unchanged and are not diagnosed here.
+Existing lexical model/source-ledger context and completed held-source
+reading owners were consulted; the full source-ledger watchlist remains
+non-adopting [@RingeTaylor2014, pp.272,324].
+
+### Diagnosis
+
+Complete executable firing census, traces, counterfactual displacement
+and live/feeding/bleeding roles: n/a, because no executable proposition
+or FST change is asserted. The research census instead reconciles all101
+inherited identities. Thirty literal receipts and eighteen processes
+add48 records; four focused positions reuse evidence. The resulting153
+positions link149 records, retaining expected table words separately
+from actual direct-plural alternatives [@RingeTaylor2014, p.378].
+
+Twenty-two exact SOURCE amendments cover fourteen dates, five cells,
+one obsolete uncompleted-reading claim, Hogg's reported-author field
+and one illustrative-table word classification. Eight owner-field
+receipts preserve an actual Fulk heart follow-up; one real target and
+consultation are added, without changing the initial class-only screen
+into historical source silence [@Fulk2018, pp.67-68,85-87;
+@RingeTaylor2014, pp.59,257,270,272,324,378,387;
+@Kroonen2013, pp.198,202; @Orel2003, pp.148,165].
+
+### Literature
+
+Complete germane dictionary arguments and necessary cross-references
+were read. Orel supplies the lexical groupings and cut/boundary account;
+Kroonen supplies comparative suffixes, conditional original paradigms,
+derivative formations and the followed burn/coal cross-reference
+[@Orel2003, pp.148,150-152,154,164-165,169-170;
+@Kroonen2013, pp.198-203,213,215,220,222,258].
+Ringe supplies explicit remodeled heart examples, actual heal/base
+quotation, and Gothic compound/oblique evidence, not invented full
+selected cells [@Ringe2017, pp.107,115,237,239,283].
+Fulk's actual body passages separate reported substrate reasoning,
+owned method caution, suggestive branch vocabulary, nasality limits,
+PNorse precursor and Gothic quantity/cell evidence
+[@Fulk2018, pp.8-10,15,67-68,85-87,121].
+RT supplies local chronological labels, suffix qualifications,
+expected/actual cells, epenthesis and distinct later heaven paradigms
+[@RingeTaylor2014, pp.59-60,182-183,234-235,257-258,270,272-273,
+324-325,329-330,377-378,386-388].
+
+Navigation is not certification: Fulk's frontmatter/contents false
+matches were rejected, and the actual body pages were read directly.
+New literal verification is text-only. Source-native q/@, doubled-e,
+mixed subscripts and existing image-checked signs remain distinguished.
+The northern heaven lexical span excludes an adjacent corrupted
+footnote marker, not lexical characters
+[@Fulk2018, pp.9,15,67,86,121; @RingeTaylor2014, pp.234,272,378;
+@Kroonen2013, p.220].
+
+### Historical analysis
+
+Source-local PGmc, PNWGmc, PWGmc, PNorse, northern WGmc and OE
+labels remain independent of confidence. Conditional dates are not
+derived from chapter titles or transferred across repeated forms.
+Tongue and other-word suffixes are comparanda; Gothic heart is a
+cell supporting inferred ancestral quantity, not a newly quoted full
+PGmc heart [@Ringe2017, p.283; @RingeTaylor2014, pp.59,257,270,387;
+@Fulk2018, pp.67,85-87].
+
+Hearth's focused explanation is analyst inference from Orel's owned
+boundary/cavity semantic connections versus Kroonen's burn/to-stem
+and coal/fire comparative warrant. No named rebuttal or settled
+ancestry is claimed. Head's secondary/taboo and possible original-
+paradigm/metathesis accounts remain insufficiently dated and not
+proved exclusive [@Orel2003, pp.165,170;
+@Kroonen2013, pp.215,222,258].
+Historical scope/geographical claims are quoted source comparisons,
+not new runtime branches or a revised Anglo-Frisian topology
+[@Kroonen2013, p.202].
+Historical phenomenon/executable proxy relationship and chronology
+edges: n/a; no stage_entailed or independently_demonstrated edge is
+added, and no interaction/output argument selects a history.
+
+### Verdict
+
+RECONCILE analytical SOURCE and exact reporting annotations;
+RETAIN scientific corpus, selected inputs, stages/contexts, FSTs
+and baselines. All eight core rows are individually bounded.
+Hearth has a focused analyst-inferred explanation; head's root-
+variation case and all eight whole-row causes remain unestablished.
+Source silence, shared authorship and successful output are not votes
+[@Orel2003, pp.165,170; @Kroonen2013, pp.215,222,258].
+
+Machine-readable registry-verdict line: n/a; no SC verdict is invented.
+
+### Propagation (only after verdict)
+
+The NEW guarded candidate passed dry-run table, scope, identity and
+preservation checks before one-time persistence. Never rerun/import
+it: current SOURCE and exact receipts are authoritative. Editable
+owners are forms, coverage, analyses, comparisons, rationales,
+targets/scopes, Fulk applicability, README, substantial commentary
+and this full-template survey audit. Generated projections use only
+`python3 Germanic/tools/adjudicate.py --refresh`.
+
+Positive/negative regressions cover source-sensitive lexical units,
+author/report ownership, conditional versus actual cells, local dates,
+independent literal occurrences, actual consultation/screen history,
+receipt-backed annotations and focused versus whole-row causes.
+Final source checking also corrects eight fields on newly added records,
+separately receipted in `alignment-2062-2069-new-record-amendments.tsv`.
+Heath's complete borrowing argument belongs to printed202, not203.
+Hearth's burn-root notation does not itself assert a PIE date; the
+cross-reference names a Germanic/Balto-Slavic root. SOURCE and analytical
+dates therefore remain unspecified, with confidence unchanged
+[@Kroonen2013, pp.202,222,258]. These corrections do not alter the22
+inherited-field receipts or any scientific owner. The expanded receipt,
+printed-page and stage guards pass after these corrections.
+The final focused survey/analysis suite passes237 tests. Two inherited
+global Fulk-count assertions were updated from137 to the measured138
+actual consultations after the real heart addition; no scientific prose
+was rewritten to satisfy them. The prior index ResourceWarning remains
+unrelated. Canonical refresh reports CONTROL PLANE CLEAN; bibliography,
+locators, the original73 new-prose printed-page references, the final
+page-cited correction note and whitespace checks pass.
+
+Independent read-only verification preserves all4595 inherited forms
+except22 exact receipted fields,4645 outside positions,417 unaffected
+comparisons,239 inherited rationales and1351 outside consultations.
+All786 dictionary identities/statuses, selected corpus records, sources,
+unaffected research hashes, the three sixteenth receipts and46 protected
+scientific hashes survive. Reverse application of the eight owner-field
+receipts reconstructs the exact original applicability/scope hashes;
+removing only the new target reconstructs the original target hash.
+All30 literal paragraph hashes and exact lexical spans independently
+resolve. Repeated queries reproduce137/256,153/149, the two distinct
+focused outcomes, eight unestablished core causes and the separate
+alignment/verified-reading refusals. Query evidence is recorded in the
+session's pgmc-one-hundred-thirty-seven-alignments-query-results.txt.
+Baseline/fingerprint effect: none; no refreeze or private Foma assay
+is requested.
+
+### Residue
+
+Current totals:4643 forms,1380 consultations,4798 positions,
+427 comparisons and259 rationales;137 bounded/256 unreviewed core rows.
+The complete393-row alignment, conditioning census, aggregate
+explanations, consistency watchlist and subsequent-source dispatch
+remain unfinished. The independent alignment refusal and separate
+RT-conventions gap must both remain visible.
+No scientific adoption, introduction/PDF, automatic commit/push or
+eighteenth start is included. Unrelated .DS_Store/tmp_probe.foma and
+completed sixteenth work remain preserved.
+
 ## Residue
 
 The prioritized explanatory audit, full feature/paradigm alignment of

@@ -1598,6 +1598,552 @@ published PDF were unchanged. At that checkpoint the next alignment began2014;
 the full393-row alignment, conditioning census, explanatory synthesis
 and consistency watchlist remain unfinished.
 
+## Seventeenth bounded alignment: hazel through hedge
+
+Rows2062-2069 now have actual individual alignment: hazel, head, heal,
+heart, hearth, heath, heaven and hedge. All101 inherited analytical
+identities survive, rather than being replaced by eight generic row
+labels. Thirty exact literal receipts and eighteen scoped processes
+add48 records; four focused positions reuse evidence and twenty
+rationales are added. Twenty-two SOURCE amendments record fourteen
+locally supported dates, five cells, a stale head-reading claim, Hogg's
+reported attribution and an illustrative head-table word classification.
+The153 positions link149 distinct records. Source quotation, cell,
+attribution, historical date, argument and explanation are separately
+represented; no selected reconstruction/input, stage/context, derivation
+class, FST or scientific baseline changes.
+
+One actual Fulk heart consultation and target are added. Its PNorse
+precursor and Gothic nominative are genuinely quoted, unlike the initial
+nominal-class screen that had no target-specific extraction. That screen
+survives as history in the applicability owner, with eight exact owner-field
+receipts for the follow-up and phonology scope. It does not create grammar
+negatives for hearth or hedge, or pretend that every n-stem was separately
+consulted [@Fulk2018, pp.67-68,85-87]. Newly addressed literals are
+text-checked, not newly certified against original images. Existing
+image-checked dictionary glyphs remain unchanged.
+
+### Hazel: comparative suffixes and later epenthesis
+
+Orel's masculine `*xaslaz` groups Latin hazel from `*kosulo-` and Celtic
+hazel from `*koslo-`. The quoted precursors are comparative-language
+units, not additional Germanic nominatives or automatically dated PIE
+words. His statement of identity does not expressly require identical
+suffix grades in all three branches [@Orel2003, p.164].
+
+Kroonen's masculine stem `*hasla-` instead explicitly derives from
+`*kos-lo-`; the Celtic precursor `*kos-elo-` is separately printed.
+His Latin argument requires a full-grade `*-elo-` or `*-olo-`, since the
+relevant Latin consonant cluster would lose s. Those four literals now
+have independent occurrence receipts. The suffix argument is substantive
+positive evidence, but Orel's brief wording is not an explicit rejection
+of that phonetic premise. An exclusive author opposition, or a whole-word
+agreement obtained by stripping the suffixes, would exceed the passages
+[@Kroonen2013, p.213; @Orel2003, p.164].
+
+RT separates PGmc `*haslaz`, PWGmc endingless `*hasl`, early Mercian
+*hesil* and *hesl*, and WS *hesel* and *hesl*. The unusually frequent
+epenthesis after s concerns later realization, not a second Proto-Germanic
+etyma pair. Native *hesel* is not silently converted into selected *hæsl*.
+The retained limit is the exact suffix-grade/comparative premise and
+selected spelling, not an invented PGmc e/a law
+[@RingeTaylor2014, pp.329-330].
+
+### Head: proposed origins, reported substrate and actual cells
+
+Orel's simple-root `*xabuđan` belongs to the Latin *caput* comparison
+and a probable Sanskrit connection. Beekes's non-Indo-European proposal
+appears as a bibliographic report, not Orel's own categorical verdict.
+The separate entry has now actually been read: `*xaubuđan` and `*xaubiđan`
+are called secondary, with a parenthetical taboo question. Reports of
+following-vowel influence and Pokorny's hood formation are kept distinct
+from those owned head variants. The old claim that the second entry
+remained unchecked is repaired with its exact SOURCE receipt
+[@Orel2003, pp.148,165].
+
+Kroonen owns `*ha(u)beda-` and `*ha(u)buda-`. The diphthongal root is
+younger than the simple root but certainly PGmc in his account, because
+of Gothic. His possible original proterodynamic nominative `*hafuþ`,
+genitive `*habweþaz`, and oblique metathesis remain a conditional
+paradigm, not an adopted selected nominative. The possibility of an
+inherited Indo-European paradigm motivates his explicit doubt about
+the reported non-Indo-European borrowing theory. Neither the optional
+root vowel nor the proposed f/þ paradigm is globally normalized into
+Orel's b/đ citations [@Kroonen2013, p.215].
+
+The focused root-variation comparison remains unexplained. Orel's
+secondary/taboo label and Kroonen's possible paradigm/metathesis can
+describe different aspects or compatible steps; their exact original
+paradigm dates and Orel's taboo mechanism are not established. It would
+be wrong to manufacture a named rebuttal or to treat every qualified
+proposal as an exclusive historical alternative
+[@Orel2003, p.165; @Kroonen2013, p.215].
+
+Fulk reports Boutkan's unusual suffix alternation as a substrate
+criterion and separately explains circularity in selecting a putatively
+borrowed vocabulary from words without recognized IE etymologies.
+New process records separate the reported proposal from Fulk's own
+methodological caution. That caution does not certify every individual
+word as inherited; the report does not make Fulk a second advocate of
+the borrowing verdict [@Fulk2018, pp.8-10].
+
+RT's suffix discussion contains numerous comparative units. PWGmc
+`*lakinon` and Hogg's reported native `*Jakunojan` are a heal/cure verb
+discussion, not head forms or a proved ancestry of selected *hǣlan*.
+The calf plural suffixes, bless formation, strength formation and
+forearm counterexample remain comparanda. Only head's `*-id-` and
+`*-ud-` belong to the head-suffix question. The possible conditioned
+i-to-u account and plural-to-singular leveling are qualified hypotheses,
+not a newly established CAPR sound law. The source says PWGmc
+`*haubid` is probable and PGmc `*haubida` certain; these confidence
+words do not assign the stages, which are separately explicit
+[@RingeTaylor2014, pp.257-258].
+
+The syncope chain independently labels PGmc citation and genitive
+`*haubida`, `*haubidas`, leaves the following u-suffix intermediates
+locally undated, and then prints reconstructed OE forms and actual
+*héafod*, *héafdes*. The expected later direct plural `*héafd` is not an
+attestation. Starless oblique cells in the expected table are illustrative
+word records, not newly certified attestations; the separate genitive
+occurrence in the syncope chain has its own receipt
+[@RingeTaylor2014, pp.270,378].
+
+The table's singular and the prose's singular-as-plural model retain
+separate identities. RT explicitly finds all three direct-plural
+alternatives in early OE: identical to the singular, syncopated
+*héafdu*, and unsyncopated *héafodu*, with the printed u variants retained
+as variants rather than assembled extra words. Genitive singular/plural
+and dative singular/plural now have separately addressed table literals.
+The native doubled-e spelling of the plural genitive remains visible.
+Ringe's Gothic *haubiþwundan* is a head-containing compound, not a
+whole PGmc head quotation [@RingeTaylor2014, p.378;
+@Ringe2017, p.237].
+
+### Heal: healthy adjective, factitive and other derivatives
+
+Orel's heal verb derives from healthy adjective II, not the homonymous
+omen noun I. His weak-verb spelling is not expanded into CAPR's full
+selected ending. Kroonen's whole/sound adjective supplies a base;
+greeting, oath and exorcising derivatives are other members of the
+family, not authored quotations of the selected heal factitive. Orel
+admits Welsh *coel* in the comparison, whereas Kroonen places the
+omen family outside the healthy-adjective account. This is a real
+cognate-admission question, not a resolved cause of every suffix
+difference [@Orel2003, pp.151-152; @Kroonen2013, p.200].
+
+Ringe actually quotes the deadjectival factitive `*hailijaną` and its
+adjective base `*hailaz`; the latter now has a literal receipt for this
+specific occurrence. A chapter title does not supply a paragraph-local
+date. His independently explicit PGmc adjective example elsewhere
+does not retrospectively change this occurrence's assertion
+[@Ringe2017, pp.107,283]. RT explicitly begins with PGmc
+`*hailijanq`, but the following contracted `*haljan` has no local
+stage label; native *he@lan* is retained rather than silently corrected.
+Adjective, derivative, infinitive and later reflex remain distinct
+units [@RingeTaylor2014, pp.234-235].
+
+### Heart: gender, remodeled stem and differently dated endings
+
+Both dictionaries cite a neuter reconstruction, but their OE gender
+labels disagree: Orel explicitly calls *heorte* feminine, Kroonen
+neuter. That reporting difference survives without declaring a winner.
+Kroonen's old IE nominative/genitive root variation and unexplained
+Indo-Iranian initial gh are separate from the quoted Germanic n-stem
+[@Orel2003, p.170; @Kroonen2013, p.222].
+
+Ringe's explicit PGmc remodeled `*hertōn-` is repeated in two distinct
+examples; the second now has its own literal receipt. It is not a
+complete selected nominative silently expanded from the stem.
+RT instead jointly labels tongue and heart nominatives PNWGmc,
+with bimoric endings, then their PWGmc unrounded endpoints. Tongue's
+three positions are comparanda, not heart's same-etymon cells. The
+PNWGmc heart date is now exactly receipted; RT's independent breaking
+example still separates PGmc stem, PWGmc word and OE reflex
+[@Ringe2017, pp.107,115; @RingeTaylor2014, pp.59-60,182-183].
+
+The newly recorded Fulk passages add PNorse `*herta` in the Norse
+fracture comparison and Gothic neuter nominative *hairtō*. The latter
+is an actual Gothic cell supporting an inferred trimoric ancestral
+ending, not a measured three-mora Gothic vowel or a newly quoted
+PGmc whole heart. Fulk says this instance cannot be explained by
+intervocalic laryngeal loss; the surrounding discussion retains
+alternative theories and warns about insecure trimoric/bimoric
+diagnostics. That quantity argument is preserved rather than forced
+into an apparent contradiction between identically dated cells
+[@Fulk2018, pp.67-68,85-87].
+
+### Hearth: an explained focused warrant, not a settled etymology
+
+Orel owns a cut-derived cavity/line/boundary account and adduces the
+delimiting function of a hearth/log arrangement through South Slavic
+and Albanian traditions. His bibliography reports burn/coal proposals;
+it does not make them his own preferred derivation. One pile-of-logs
+comparison is expressly judged phonetically impossible
+[@Orel2003, p.170].
+
+Kroonen instead owns a to-stem to the burn root `*kerh3-`. The
+cross-reference to `*hurja-` has been followed, not merely quoted:
+the coal/fire family provides Germanic and Balto-Slavic comparisons
+and a laryngeal-vocalization argument. The Latin charcoal comparison
+is questioned and is not added to an unconditional cognate consensus
+[@Kroonen2013, pp.222,258].
+
+CAPR infers a bounded cause for this focused difference: admitted
+comparative connections and semantic/formal warrants lead to cut/
+boundary versus burn derivations. This is analyst inference from both
+owned arguments, not a directly named rebuttal, a proved PIE root,
+or automatic inheritance of an explanation by the whole-row case.
+Exact original formation and the response to the rival formal account
+remain open [@Orel2003, p.170; @Kroonen2013, pp.222,258].
+
+### Heath: citation gender, derivative gender and contact
+
+Orel's feminine i-stem citation coexists with masculine/neuter OE
+reflexes. Kroonen's feminine archaic ih₂-stem, separate masculine/
+neuter OE ja-formation and dialectal hoath a-formation are independently
+retained. The two old derivative cells incorrectly inheriting generic
+feminine wording have exact SOURCE repairs; an unspecified dialectal
+gender is not replaced by a guess. The printed i/ja/a units cannot
+be equated by deleting their suffixes [@Orel2003, p.154;
+@Kroonen2013, p.202].
+
+Kroonen's preference for early Celtic/Germanic borrowing leaves donor
+direction undecided. His argument against a special Germano-Celtic
+subgroup is a source claim, not permission to change CAPR's required
+Anglo-Frisian tree. RT's explicit PGmc `*haipi`, undated contracted
+`*hapi` and native OE *h@p* remain separate, with no automatic
+replacement of p/@ or dating from the selected input
+[@Kroonen2013, p.202; @RingeTaylor2014, pp.234-235].
+
+### Heaven: expected versus remodeled cells and the protected later input
+
+Orel's thematic stone-vault/sky derivative owns a metathesis and
+vocalic-change account. Bibliographic dissimilation, suffix, cover/vault
+and axe/thunder proposals remain reports. Kroonen prefers two stems
+split from a paradigm's obliques over common OE/OS syncope as subgroup
+evidence; those are not two mechanisms proved equivalent
+[@Orel2003, p.169; @Kroonen2013, p.220].
+
+The PIE nominative, genitive and locative now have exact literal
+receipts. Expected Germanic `*ahmōn`, `*humnaz`, `*meni` remain
+counterfactual outcomes, not the remodeled `*hemō`, `*hemnaz`,
+`*hemeni`; the second occurrences of the remodeled cells are independently
+addressed. The expected `*meni` is genuinely printed as a locative,
+not a clipped word or a remodeled dative. Source-native mixed subscript
+typography remains in the PIE genitive. None of these undated Germanic
+paradigms becomes the selected northern-WGmc word
+[@Kroonen2013, p.220].
+
+Continental `*hemila-` is a source-recognized form; Braune's dissimilation
+and Wachter's sun influence are reported alternative explanations,
+not proof that the form itself is merely someone else's quotation.
+Fulk's suggestive-not-probative branch vocabulary argument is now
+separate from his mn/bn discussion. The latter calls dissimilation
+scarcely regular and retains reverse-direction evidence; reporting
+that limitation does not adopt lexical variability as a CAPR sound law
+[@Kroonen2013, p.220; @Fulk2018, pp.15,121].
+
+RT explicitly distinguishes northern WGmc `*hebun` and its genitive,
+PWGmc `*himil`, and PGmc `*himinaz`, while saying the detailed relationship
+does not seem recoverable. The literal northern-word span excludes
+the adjacent corrupted footnote marker, not letters or morphology.
+OE *heofones* in that chain and its later independent paradigm example
+have separate receipts. The later `*hebun-` is an actual heaven stem;
+angel, luminary, bird, water and acre are comparanda. Its local date
+is not inherited from the separately explicit northern-WGmc example.
+The OE heaven type does not alternate by syncope; it is not an example
+proving that this specific stem underwent analogical leveling
+[@RingeTaylor2014, pp.272-273,324-325,386-388].
+
+Current selected `*xébun`, nsgmc and early_analogy remain protected.
+The older source ledger's `*xémonų` and trace wording are a precise
+non-adopting consistency watchlist, not authority to migrate an input
+or restart released production experiments. Ringe's Gothic *himina*
+is an oblique after *du*, not a PGmc citation
+[@Ringe2017, p.239; @RingeTaylor2014, pp.272,324].
+
+### Hedge: a tree name is not the selected enclosure cell
+
+Orel groups bird cherry and hedge under a masculine ja citation,
+with a Welsh enclosure precursor and the enclosure-family cross-reference.
+The earlier image-checked velar and syllabicity signs are retained,
+not replaced by current OCR strings [@Orel2003, p.150].
+
+Kroonen distinguishes ON bird-cherry `*hagja-` from feminine OE/OHG
+hedge `*hagjō-`. The former is related-family/another lexical unit;
+the latter is the actual hedge formation. Both old generic masculine
+cell descriptions have exact SOURCE repairs. A related enclosure noun
+or a tree-name stem cannot supply an authored masculine whole hedge
+input. Original formation, comparative grouping and the selected OE
+cell's gender are precise remaining premises, not a manufactured
+author conflict or agreement [@Kroonen2013, pp.198-199].
+
+All eight whole-row causes remain unestablished. Hearth's focused
+explanation and head's precise unresolved comparison are reusable
+research results, not scientific adoption. At this checkpoint137
+of393 core rows are individually bounded and256 remain unreviewed;
+the full conditioning census, aggregate explanation and consistency/
+subsequent-source programme remain unfinished. The standalone alignment
+refusal and the separate RT-conventions verification limit are not
+collapsed into one completion counter. No introduction, PDF or
+automatic release is included.
+
+## Sixteenth bounded alignment: hand through hay
+
+This tranche completes rows2054-2061: hand, the handle verb, harm,
+harvest, have, haw as enclosure, hawk and hay. Have selects *hæfeþ*,
+a third singular, rather than *habban* or a reconstructed citation
+stem. Hand and handle share genuine base evidence but not a quoted
+selected verb; haw must not be confused with hawk. No selected corpus
+field, input stage/context, derivation class or executable rule is
+changed. The point is to identify what each source actually compares,
+not to assemble a preferred ancestry from similar-looking strings.
+
+All116 inherited analytical identities are individually reconciled.
+Forty-one exact literal receipts and fourteen process records supplement
+the actual consultations, four focused positions reuse evidence, and
+sixteen rationales are added. Thirteen old/new SOURCE receipts cover
+nine locally supported dates, three cell descriptions and one phonetic
+stem classification. Fulk's actual hay consultation changes from
+discussion-only to evidence-found because the checked footnote quotes
+*hauj-*; its owner-field amendment has a separate receipt
+[@Fulk2018, p.128]. The175 positions link170 distinct records.
+Repeated paradigm strings and shared hand/handle links are retained,
+not merged into one apparent author vote.
+
+### Hand and handle: a base is not a selected derivative
+
+Orel's hand noun, capture/reach verb and handle derivations must be
+kept apart. The noun is *xanđuz*; the separate *xenþanan* belongs to
+the comparative verb family, not the same nominal citation.
+His *xanđlōjanan* is the weak handle verb, whereas *xanđlan* and
+*xanđlō* are nominal handle alternatives. These are relevant formations,
+but different units, not competing verb cells
+[@Orel2003, p.159]. Kroonen's *handu-* supports hand directly and
+handle only through its base family. His reach-for connection and
+the independently printed related verb do not certify a source-authored
+complete handle input [@Kroonen2013, pp.207-208,227].
+
+The grammar evidence sharpens both stage and attribution limits.
+Ringe's productive PGmc ga-formation context locally dates
+*handugaz*, a derived adjective, not a second hand noun.
+His later discussion explicitly supplies PGmc *handuz* while listing
+words of doubtful or unknown origin: a positive reconstructed noun
+and an unresolved etymology can coexist. That is neither source
+silence nor a named rejection of another account
+[@Ringe2017, pp.326,328]. Fulk's body likewise explicitly quotes
+PGmc *xanduz*; the independently retained starless index entry does
+not acquire that date by proximity [@Fulk2018, pp.92,387].
+RT's hand accusative and merged ending have separate PGmc/PWGmc
+assertions, and the native *handy* is not silently rewritten.
+The proposed syncope in handle remains conditional rather than
+an independently demonstrated selected-verb derivation
+[@RingeTaylor2014, pp.131,269,287].
+
+The hand core limit is the comparative premise connecting the
+capture/reach family to the nominal etymon. Handle has an additional
+formation and timing limit: the nominal alternatives and hand base
+do not supply the selected weak verb's exact historical cell.
+No common whole-word endpoint follows merely from the shared hand
+component [@Orel2003, p.159; @Kroonen2013, pp.207-208,227;
+@RingeTaylor2014, pp.131,269].
+
+### Harm: preserve the homonym boundary
+
+Orel's selected *xarmaz* is the noun in homonym I, not the neighboring
+adjective in homonym II or the shrewmouse comparison. His proposed
+external semantic connection belongs to that noun's argument.
+Kroonen's *harma-* has its own noun/reflex evidence; equal-looking
+material is not a warrant to import all neighboring senses
+[@Orel2003, p.163; @Kroonen2013, p.212].
+These two actual dictionary consultations are retained without
+manufacturing three grammar negatives. The bounded question is the
+selected noun's exact formation and comparative admission premise,
+not a fabricated conflict with the unrelated homonyms.
+Neither headword alone establishes why the two descriptions differ
+[@Orel2003, p.163; @Kroonen2013, p.212].
+
+### Harvest: the Nordic reflex question is not an exclusive vowel dispute
+
+Orel records both *xarbistuz* and *xarbustuz* and also retains
+*xarbistaz*. Kroonen's *harbista-* therefore cannot be described
+as exclusively opposing an Orel u-stem: an a-formation is already
+present beside those alternatives. Orel's separate *xarfaz* comparison
+does not become another selected harvest cell
+[@Orel2003, pp.161-162; @Kroonen2013, pp.210-211].
+The distinction between an a-stem citation and an inflected u-noun
+remains queryable, but it is not automatically an explained
+whole-word disagreement.
+
+The focused case concerns comparative membership. Kroonen admits
+Nordic *haustr* while discussing distortion and syncope; RT treats
+the formation as PWGmc and does not discuss that Nordic reflex
+in the checked passage. RT's comparison with the harrow family,
+its rejected proposals and its native later-stage forms remain
+separate from the actual harvest quotation
+[@Kroonen2013, pp.210-211; @RingeTaylor2014, pp.126-128].
+The exact unanswered question is how the Nordic reflex is to be
+admitted or refused under those accounts. It would be unjustified
+to invent an RT rejection criterion or to treat non-discussion
+as a rebuttal of Kroonen. The focused membership case and the
+whole-row cause are consequently unestablished, with this precise
+reflex/formation premise named rather than a generic research gap
+[@Kroonen2013, pp.210-211; @RingeTaylor2014, pp.126-128].
+
+### Have: actual paradigms, hypothetical histories and acknowledged overlap
+
+The dictionaries quote infinitival/stem presentations, *xabēnan*
+and *habēn-*, not the selected third singular. Orel's separate
+*xafjanan* is lift, not an alternative have infinitive
+[@Orel2003, p.147; @Kroonen2013, p.197].
+The grammar arguments explain the relation between the ē/ja
+present, the weak-laryngeal development, participles and later
+remodeling, but their differently dated intermediates must not
+be collapsed into one PGmc finite cell
+[@Ringe2017, pp.157-158,163-164; @Fulk2018, pp.309-313].
+
+Fulk's actual OE paradigm is now represented with separately
+receipted indicative, subjunctive, imperative, preterite and
+nonfinite examples. Identical *hæbbe*, *habbaþ*, *hæfde* and
+*hæfden* strings retain their individual occurrences rather than
+losing cell identity. The OE imperative *hafa* is the occurrence
+following the imperative heading, not either earlier ON homograph.
+The native flattened text places two preterite-subjunctive plural
+*hæfden* tokens together; both literal occurrences are retained,
+but their second/third-plural row assignment is explicitly not
+newly certified from that OCR placement [@Fulk2018, p.309].
+This is a local table-layout limit, not permission to delete
+the plural evidence or pretend the literal words are absent.
+
+The body and index also remain independent. Fulk's short-a
+*xaba(j)iþ(i)* and *xab(aj)an-* are exact body quotations;
+the index's long-ā *xabā(j)iþ(i)* is not silently repaired
+to match them. His hypothetical table's native *xab-aip*
+likewise survives beside the separately printed prose *xab-aiþ*
+[@Fulk2018, pp.312-313,387].
+These are diplomatic presentation/verification boundaries,
+not four mutually exclusive endorsed selected inputs.
+
+There is genuine overlap, not an invented Fulk/Ringe opposition.
+Fulk explicitly calls Ringe's innovative passive-participle
+origin and spread to the present plausible. Ringe's backformation
+account and Fulk's account of actual weak-verb remodeling are
+retained with their arguments and qualifications
+[@Fulk2018, pp.312-313; @Ringe2017, pp.157-158].
+Say's usefulness as a less-remodeled present witness does not
+prove the selected have ancestry or turn the other position
+into a rejected proposal [@Fulk2018, pp.312-313].
+
+RT supplies actual dialect/paradigm forms, conditional expected
+forms, scribal-confusion targets and reported hypotheses separately.
+The first *habban* introducing the morphology discussion is not
+recertified as a later WS table cell; another occurrence belongs
+to the footnote about *hebban* written for *habban*, not a newly
+quoted Anglian infinitive. The *hab-* occurrence is a present
+stem, not an infinitive. The older-volume table's native
+`_heefde` and the footnote's native z-corruption are preserved
+with their actual text-only limits
+[@RingeTaylor2014, pp.93,363-364].
+The core remains bounded by which stem and remodeling history
+licenses the selected finite form; no dictionary citation or
+hypothetical paradigm is automatically the corpus's third singular
+[@Orel2003, p.147; @Kroonen2013, p.197;
+@Fulk2018, pp.309-313; @RingeTaylor2014, pp.363-364].
+
+### Haw: enclosure and conditional gemination
+
+Orel's enclosure noun, associated verb and adjective are distinct
+formations. Kroonen likewise separates *haga(n)-* from *hagna-*,
+with conditional nominative/genitive proposals *hagō* and
+*hakkaz*. Those proposals belong to the argument for the observed
+gemination; neither is a universally certified cell of the
+selected haw noun [@Orel2003, p.150; @Kroonen2013, pp.198-199].
+RT's separately dated and undated intermediates remain independent,
+including the relevant final-n and formation discussions
+[@RingeTaylor2014, pp.130,133].
+The exact remaining premise concerns the selected nominal
+formation and how the conditional paradigm analysis licenses its
+consonantism, not a comparison with the bird called hawk
+[@Orel2003, p.150; @Kroonen2013, pp.198-199].
+
+### Hawk: comparative warrant can explain a bounded divergence
+
+Orel owns the Slavic equation and IE *kobuĝo-* comparison.
+His bibliographic Etruscan and lift-derived borrowing proposals
+are reports, not two further endorsements automatically added
+to his own reconstruction [@Orel2003, p.148].
+Kroonen's *habuka-* and deeper *kabhu-k/g-* comparison come
+with explicit formal objections: the comparative consonant
+correspondences and PIE root restrictions motivate probable
+Wanderwort status. His fourth-century falconry-spread discussion
+is expressly too late to explain the inherited distribution;
+Welsh b is qualified articulation evidence, not an established
+global borrowing date [@Kroonen2013, pp.197-198].
+
+The focused comparative-inheritance-warrant case therefore
+has an analyst-inferred explanation: the admissibility of
+the proposed comparative equation and its root structure
+separates the two historical treatments. This inference is
+anchored in their actual arguments, not just contrasting
+headwords. It is not a directly named rebuttal, proof of
+one donor language, or a settled borrowing chronology
+[@Orel2003, p.148; @Kroonen2013, pp.197-198].
+The whole-row cause remains unestablished: the bounded
+comparative-warrant explanation does not settle the complete
+selected hawk formation.
+
+Fulk's explicit PGmc *xabukaz* is now recorded beside the
+Mercian/WS reflex contrast. RT's *habukai* is explicitly
+a PNWGmc dative; the following *habuke* has no automatically
+inherited date. The *-Ojan* fragment belongs to the preceding
+*gladian* discussion and is a comparandum, not hawk's suffix
+[@Fulk2018, p.69; @RingeTaylor2014, pp.219,272].
+Neither a source-local dative nor an adjacent unrelated
+verb ending is evidence for the selected nominative ending.
+
+### Hay: repeated stems and qualifications remain distinct
+
+Orel's *xawwjan* and reported *xaʒwjan* have separate ownership;
+Kroonen quotes *hauja-* with its own formation account
+[@Orel2003, p.167; @Kroonen2013, p.215].
+Ringe explicitly discusses both PGmc *hawją* and *haują*,
+while his separate retained-j example is locally undated
+[@Ringe2017, pp.160,250].
+RT's twenty inherited hay identities survive individually:
+the explicitly PWGmc direct form, phonetic oblique stems,
+later outcomes and independently repeated passages do not
+become one unqualified historical word
+[@RingeTaylor2014, pp.53,173,246].
+In particular, native *[haww’-]* is a phonetic stem, not
+a complete nominative word; that kind repair leaves its
+quotation untouched [@RingeTaylor2014, p.173].
+
+Fulk's checked *hauj-* footnote is actual lexical evidence.
+His hay discussion characterizes an exception or seeming
+exception, and his objections to consonantal-glide/dismantling
+assumptions use strew and new as independent comparisons.
+He is not made to assert that hay categorically never
+geminated [@Fulk2018, pp.71-72,128].
+RT's reversible phonetic-gemination account likewise remains
+qualified rather than a direct proof of every source's
+earliest citation stem [@RingeTaylor2014, pp.173,246].
+The missing premise is the relation between the independently
+asserted stem formations and their gemination/endpoint
+analyses. Neither global w/j normalization nor reopening
+the released production glide rules is licensed by that gap
+[@Orel2003, p.167; @Kroonen2013, p.215;
+@Fulk2018, pp.71-72,128; @RingeTaylor2014, pp.173,246].
+
+All eight whole-row causes remain unestablished. Hawk's focused
+inference and harvest's exact unanswered membership question
+are research dispositions, not scientific adoption. The
+resulting catalogue has4595 forms,1379 consultations,4746
+positions,425 comparisons and239 rationales;129 core rows
+are bounded and264 remain unreviewed. The full393-row
+alignment, conditioning census, explanatory synthesis and
+consistency watchlist remain unfinished. No introduction,
+PDF or automatic sixteenth release is included.
+
 ## Fifteenth bounded alignment: grave through hammer
 
 This tranche completes eight individual reviews, rows2046-2053, rather

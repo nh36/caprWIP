@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4540 evidence records,1379 actual consultations and4687
-analytical positions, with423 comparisons and223 rationales. The RT
+There are4643 evidence records,1380 actual consultations and4798
+analytical positions, with427 comparisons and259 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred twenty-one core rows now have individually reconciled, bounded alignment:
-1933-2053. The remaining272 are unreviewed. The second tranche builds on
+One hundred thirty-seven core rows now have individually reconciled, bounded alignment:
+1933-2069. The remaining256 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,66 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The seventeenth tranche completes hazel, head, heal, heart, hearth, heath,
+heaven and hedge, rows2062-2069. All101 inherited identities are individually
+reconciled. Thirty literal receipts and eighteen processes add48 records;
+four focused positions reuse evidence and twenty rationales are added.
+Twenty-two SOURCE amendments preserve exact old/new values: fourteen dates,
+five cells, one stale argument, one reported-author attribution and one
+illustrative-table word classification. Eight owner-field receipts preserve
+the actual heart follow-up in Fulk's applicability/phonology owners; the
+new target and consultation are actual PNorse/Gothic lexical evidence,
+not an invented PGmc selected word [@Fulk2018, pp.67-68,85-87].
+The153 positions link149 distinct records. The prior sixteenth receipts
+and all outside identities remain preserved.
+
+Hearth's focused explanation is bounded analyst inference: Orel's owned
+cut/boundary semantic connections differ from Kroonen's burn/to-stem and
+coal/fire comparative warrant. Bibliographic burn/coal theories are not
+Orel endorsements, and no named rebuttal or settled root ancestry is claimed
+[@Orel2003, p.170; @Kroonen2013, pp.222,258].
+Head's root-variation comparison remains unexplained: secondary/taboo
+variants and a possible original paradigm/metathesis are not proved
+exclusive or assigned identical dates [@Orel2003, pp.148,165;
+@Kroonen2013, p.215]. Actual/expected head cells, heart versus tongue,
+heath's derivative genders, heaven's locative versus remodeled dative
+and actual northern stem, and bird cherry versus hedge remain distinct
+[@RingeTaylor2014, pp.59,257,270,272,378,387;
+@Kroonen2013, pp.198,202,220]. All eight whole-row causes remain
+unestablished. Selected heaven `*xébun`, nsgmc and early_analogy are
+unchanged; the older ledger's input is a non-adopting watchlist item,
+not selected-input authority. No corpus/stage/context/FST/baseline,
+introduction or PDF adoption is included.
+
+The sixteenth tranche completes hand, handle (verb), harm, harvest,
+have (selected third singular), haw (enclosure), hawk and hay, rows2054-2061.
+All116 inherited identities survive. Forty-one literal receipts and
+fourteen processes add55 records; four focused positions reuse evidence
+and sixteen rationales are added. Thirteen SOURCE annotation receipts
+cover nine dates, three cells and one phonetic-stem kind. The existing
+Fulk hay consultation changes from discussion-only to evidence-found
+because its checked footnote actually quotes a reconstructed stem;
+that status change has its own receipt [@Fulk2018, p.128].
+No consultation identity is invented. Its175 positions link170 distinct
+records, including shared hand/handle evidence and separately identified
+have paradigm cells [@Fulk2018, pp.309-313; @RingeTaylor2014, pp.131,269].
+
+Hawk's focused explanation is bounded analyst inference: formal
+comparative admissibility separates Orel's own IE/Slavic equation from
+Kroonen's correspondence/root-structure objections. It neither establishes
+a borrowing date nor attributes both bibliographic borrowing theories
+to Orel [@Orel2003, p.148; @Kroonen2013, pp.197-198].
+Harvest's focused membership question remains unexplained: RT does not
+evaluate the Nordic reflex admitted by Kroonen, and Orel retains an
+a-formation beside the u-headwords, precluding an exclusive a/u conflict
+[@RingeTaylor2014, pp.126-128; @Kroonen2013, pp.210-211;
+@Orel2003, pp.161-162]. Have's analogical finite history, Fulk's explicit
+recognition of Ringe's plausible account, and hay's qualified gemination
+arguments remain source-specific [@Fulk2018, pp.71-72,128,309-313;
+@Ringe2017, pp.157-158; @RingeTaylor2014, pp.53,173,246,363-364].
+All eight whole-row causes remain unestablished. No corpus, stage/context,
+FST, scientific baseline, introduction or PDF changes are included.
 
 The fifteenth tranche completes grave (the dig verb), gripe, ground,
 guest, hail, hair, hall and hammer (selected genitive), rows2046-2053.

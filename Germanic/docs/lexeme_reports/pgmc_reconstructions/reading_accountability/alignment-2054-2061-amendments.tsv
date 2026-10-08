@@ -1,0 +1,14 @@
+evidence_id	printed_pages	field	old_value	new_value	source_basis
+ringe-complete-hand-derived	326	asserted_stage	not locally dated; reconstructed Germanic context	pgmc	Ringe326's local sentence calls the ga suffixes productive in PGmc and includes this uga example.
+rt-complete-2054-005	287	asserted_stage	unspecified_local_endpoint	pgmc	RT287 labels joint nom.sg.handuz and acc.sg.handy PGmc before PWGmc arrow.
+rt-complete-2058-001	93	asserted_stage	unspecified_local_endpoint	oe	RT93 labels the table column Old English.
+rt-complete-2058-003	363	asserted_stage	unspecified_local_endpoint	oe	RT363 introduces the case of habban in its OE morphology discussion; ensuing dialect forms are independently identified.
+rt-complete-2058-005	363	asserted_stage	unspecified_local_endpoint	oe	RT363 footnote names OE habban in the alternative explanation that hebban was written for it.
+rt-complete-2058-009	364	asserted_stage	unspecified_local_endpoint	oe	RT364 contrasts actual OE habban with counterfactual participle and original stem.
+rt-complete-2060-006	219	asserted_stage	unspecified_local_endpoint	oe	RT219 table column explicitly says West Saxon.
+rt-complete-2060-008	272	asserted_stage	unspecified_local_endpoint	northwest_germanic	RT272 labels both habukaz and dat.habukai PNWGmc.
+rt-complete-2061-019	53	asserted_stage	unspecified_local_endpoint	pwgmc	RT53 explicitly labels hawi PWGmc nom.-acc.sg.
+rt-complete-2058-011	131	cell	Source infinitive in the local historical example; complete ending retained	PGmc have ai present stem alternant, not infinitive	RT131 directly contrasts habja- and habai- before PWGmc habja-/habé-; neither is an infinitive.
+rt-complete-2060-008	272	cell	Locally quoted historical word/stem/cell; exact inflection is not inferred from citation context	PNWGmc hawk dative singular	RT272 explicitly prints dat. before habukai.
+rt-complete-2060-005	219	cell	Bound suffix/ending/alternant as printed; not an independently reconstructed whole word	gladian verb suffix comparandum; not hawk morphology	RT219 places -Ojan on to gladden, not the following hawk row.
+rt-complete-2061-003	173	form_kind	word	stem	RT173 labels this phonetic oblique stem; trailing hyphen and brackets are retained, not a complete paradigm word.

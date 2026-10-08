@@ -1,0 +1,23 @@
+evidence_id	printed_pages	field	old_value	new_value	source_basis
+orel-core-2063-1	148	argument	Cites OE hēafod; identifies it with Latin caput and probably a Sanskrit hair-tuft formation. The bibliography retains Beekes's non-Indo-European proposal. A separate *xaubuđan entry remains to be checked before completion.	Cites OE hēafod; identifies it with Latin caput and probably a Sanskrit hair-tuft formation. The bibliography reports Beekes's non-Indo-European proposal, not Orel's endorsement. The separate165 entry has been checked and retains both secondary (taboo?) variants independently.	Orel148 owns the Latin/Sanskrit comparisons;165 actually supplies xaubuđan/xaubiđan. Remove only the now-obsolete uncompleted-reading claim.
+rt-complete-2063-001	257	asserted_stage	unspecified_local_endpoint	pwgmc	RT257 explicitly labels the heal/cure comparandum PWGmc.
+rt-complete-2063-004	257	asserted_stage	unspecified_local_endpoint	pwgmc	RT257 says the PWGmc form was probably haubid; probability does not determine stage.
+rt-complete-2063-005	257	asserted_stage	unspecified_local_endpoint	pgmc	RT257 says the PGmc form was certainly haubida.
+rt-complete-2063-015	257	asserted_stage	unspecified_local_endpoint	oe	RT257 explicitly introduces OE héafod.
+rt-complete-2063-017	270	asserted_stage	unspecified_local_endpoint	pgmc	RT270 labels head citation and genitive jointly PGmc.
+rt-complete-2063-022	270	asserted_stage	unspecified_local_endpoint	oe	RT270's OE chain continues into héafod/héafdes, not an independently dated PGmc word.
+rt-complete-2063-023	378	asserted_stage	unspecified_local_endpoint	oe	RT378's expected head paradigm and proposed actual alternatives are explicitly early OE; the starred plural remains hypothetical.
+rt-complete-2063-024	378	asserted_stage	unspecified_local_endpoint	oe	RT378's singular in the head paradigm is an early-OE form.
+rt-complete-2063-025	378	asserted_stage	unspecified_local_endpoint	oe	RT378's singular used as plural model belongs to the early-OE alternatives.
+rt-complete-2065-002	59	asserted_stage	unspecified_local_endpoint	northwest_germanic	RT59 jointly dates tung@ and hert6 PNWGmc, distinct from Gothic analogical endings.
+rt-complete-2068-001	272	asserted_stage	unspecified_local_endpoint	oe	RT272 explicitly labels heaven output OE after northern WGmc hebun.
+rt-complete-2068-002	324	asserted_stage	unspecified_local_endpoint	northern_wgmc	RT324 explicitly labels hebun northern WGmc, not PGmc.
+rt-complete-2068-003	324	asserted_stage	unspecified_local_endpoint	oe	RT324 labels the joint WS/Northumbrian heaven reflex OE.
+rt-complete-2068-012	387	asserted_stage	unspecified_local_endpoint	oe	RT387 explicitly presents heofon/heofones among early-OE noun paradigms.
+rt-complete-2063-017	270	cell	Locally quoted historical word/stem/cell; exact inflection is not inferred from citation context	PGmc head genitive singular	RT270 explicitly prints gen. before haubidas.
+kroonen-core-2067-2	202-203	cell	f.; separately printed contextual variant	OE masculine/neuter heath ja-formation	Kroonen202 labels OE hæð m./n. and derives that reflex from haiþja-.
+kroonen-core-2067-3	202-203	cell	f.; separately printed contextual variant	dialectal hoath a-formation; gender unspecified	Kroonen202 assigns haiþa- to dialectal hoath, not to the feminine headword's cell.
+kroonen-core-2069-1	198	cell	m.; citation formation	ON bird-cherry ja-stem; not selected hedge	Kroonen198 distinguishes ON heggr bird cherry from the following OE/OHG hedge.
+kroonen-core-2069-2	198	cell	m.; separately printed contextual variant	feminine OE/OHG hedge jō-stem	Kroonen198 explicitly labels OE hecg/hegg and OHG hegga feminine.
+rt-complete-2063-002	257	quoted_author	Don Ringe	Hogg	RT257 explicitly attributes the lakunojan suggestion to Hogg; native Jakunojan is retained without OCR normalization.
+rt-complete-2063-024	378	form_kind	attestation	word	RT378's starless singular is in an expected illustrative paradigm, not a separately certified attestation receipt.

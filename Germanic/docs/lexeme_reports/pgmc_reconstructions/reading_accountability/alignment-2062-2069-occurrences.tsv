@@ -1,0 +1,909 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment-hazel-germanic-preform	Kroonen2013	213	253	1	2058	2066	*kos-lo-	d47457608cd40257ef1dd5ba7d9bec62a9e347b7c5a15df10f299781614c619a	"*harunda/ō-
+213
+-
+*harunda/ō- n./f. 'flesh' ON horund n./f. 'human flesh; skin, complexion',
+Icel. hōrund n. 'skin', Nw. dial. horung m. 'skin, skin tone', OSw. harund m./f.
+'flesh; skin', EDa. harend 'body' *Hr-nt-o- (WEUR?).
+A word possibly related to Lat. caro f. 'meat; flesh' <*(KrH-ōn (Hellquist
+1891: 21; De Vaan 2008: 94) or *Ḥr-ōn-. The Germanic form *harund-
+could then be an elongation of a corresponding neuter n-stem *(korH-ṇ or
+*Hr-on-. In synchronic Norse, however, the word clearly belonged to a
+wider cluster of original nt-stems denoting body parts, such as
+*waisunda/ō- 'wind-pipe' and *mundo- 'hand'.
+-
+-
+*harwa- adj. 'bitter' WFri. harch adj. 'dry, barren', Du. dial. haar adj. 'dry,
+parched', MHG har, herwe adj. 'bitter', G herb adj. 'id.' ⇒ *kor-uo- (IE) - Gr.
+Kɛipw 'to cut (off), shave, mow, ravage', Arm. k'erem 'to scratch; to chop; to
+skin' < *ker-; Skt. cárman- n. 'hide, flayed skin', YAv. carǝman- n. 'hide,
+leather', OP carman- n. 'skin, leather', NP čarm ‘id.' < *ker-men-; Lat. corium
+n. 'skin, animal hide' < *kor-io-; CS kora, Ru. korá, SCr. köra f. ‘bark' <
+*kor-ehz-.
+A wa-stem (cf. Fi. karvas 'bitter; sharp') derived from the PIE root *ker-
+'to cut'; its o-grade may point to derivation from a further unattested inten-
+sive verb *kór-e-. Also cf. ON herfiligr adj. 'wretched', OE ge-hierwan w.v. 'to
+despise', NFri. Hall. fer-heere w.v. 'to mock', MHG herwen w.v. 'to make bit-
+ter' < *harwjan- and MDu. hare f. 'dry cold wind'.
+-
+-
+Lat.
+*harzwa- m. 'flax' ON horr m. 'id.', Far. hørur m. 'id.', OFri. her m. 'flax',
+OHG haro, -wes m. 'id.', MHG har(e), har m. ‘id.' ⇒ *kors-uo- (EUR) -
+carro 'to card' < *krs-e-; Lith. kařšti (karšiù), Latv. karst 'to card, comb' <
+*kors-ie-.
+Cf. the diminutive MLG harl(e), harrel, herle 'stalk of flax', MDu. heerle 'id.',
+Du. harrel 'id.', E harl, herl 'fiber, filament (of flax)'.
+⇒
+*hasla- m. 'hazel' - ON hasl m. 'id.', Elfd. assel-buosk ‘id.', OE hæsel m. 'id.', E
+hazel, MDu. hasel m. ‘id.', Du. hazelaar c. ‘id.', OHG hasal m., hasala f. (<
+*-ōn-) 'id.', G Hasel f. 'id.' *kos-lo- (WEUR) - Lat. corulus f. 'hazel-tree, ha-
+zel-wood', Olr. coll, OW coll, MW coll(en), pl. cyll 'hazel-tree' < *kos-elo-;
+?OLith. kasùlas m. 'wooden spear, stick'.
+A European word. The Germanic forms point to *hasla- <*kos-lo-, but Lat.
+corulus implies a full-grade suffix *-elo- or *-olo-, as *-Vsl- would have de-
+veloped into *-VI-, cf. Lat. anhēlus 'gasping, panting' < *anaslo- < *h₂enh1-slo-
+(Schrijver 1991: 44-5).
+*haswa- adj. 'grey' - ON hoss adj. 'id.', OE haso adj. 'id.', MHG heswe adj.
+'pale, dull' (DRV)."		
+alignment-hazel-celtic-preform	Kroonen2013	213	253	1	2177	2186	*kos-elo-	d47457608cd40257ef1dd5ba7d9bec62a9e347b7c5a15df10f299781614c619a	"*harunda/ō-
+213
+-
+*harunda/ō- n./f. 'flesh' ON horund n./f. 'human flesh; skin, complexion',
+Icel. hōrund n. 'skin', Nw. dial. horung m. 'skin, skin tone', OSw. harund m./f.
+'flesh; skin', EDa. harend 'body' *Hr-nt-o- (WEUR?).
+A word possibly related to Lat. caro f. 'meat; flesh' <*(KrH-ōn (Hellquist
+1891: 21; De Vaan 2008: 94) or *Ḥr-ōn-. The Germanic form *harund-
+could then be an elongation of a corresponding neuter n-stem *(korH-ṇ or
+*Hr-on-. In synchronic Norse, however, the word clearly belonged to a
+wider cluster of original nt-stems denoting body parts, such as
+*waisunda/ō- 'wind-pipe' and *mundo- 'hand'.
+-
+-
+*harwa- adj. 'bitter' WFri. harch adj. 'dry, barren', Du. dial. haar adj. 'dry,
+parched', MHG har, herwe adj. 'bitter', G herb adj. 'id.' ⇒ *kor-uo- (IE) - Gr.
+Kɛipw 'to cut (off), shave, mow, ravage', Arm. k'erem 'to scratch; to chop; to
+skin' < *ker-; Skt. cárman- n. 'hide, flayed skin', YAv. carǝman- n. 'hide,
+leather', OP carman- n. 'skin, leather', NP čarm ‘id.' < *ker-men-; Lat. corium
+n. 'skin, animal hide' < *kor-io-; CS kora, Ru. korá, SCr. köra f. ‘bark' <
+*kor-ehz-.
+A wa-stem (cf. Fi. karvas 'bitter; sharp') derived from the PIE root *ker-
+'to cut'; its o-grade may point to derivation from a further unattested inten-
+sive verb *kór-e-. Also cf. ON herfiligr adj. 'wretched', OE ge-hierwan w.v. 'to
+despise', NFri. Hall. fer-heere w.v. 'to mock', MHG herwen w.v. 'to make bit-
+ter' < *harwjan- and MDu. hare f. 'dry cold wind'.
+-
+-
+Lat.
+*harzwa- m. 'flax' ON horr m. 'id.', Far. hørur m. 'id.', OFri. her m. 'flax',
+OHG haro, -wes m. 'id.', MHG har(e), har m. ‘id.' ⇒ *kors-uo- (EUR) -
+carro 'to card' < *krs-e-; Lith. kařšti (karšiù), Latv. karst 'to card, comb' <
+*kors-ie-.
+Cf. the diminutive MLG harl(e), harrel, herle 'stalk of flax', MDu. heerle 'id.',
+Du. harrel 'id.', E harl, herl 'fiber, filament (of flax)'.
+⇒
+*hasla- m. 'hazel' - ON hasl m. 'id.', Elfd. assel-buosk ‘id.', OE hæsel m. 'id.', E
+hazel, MDu. hasel m. ‘id.', Du. hazelaar c. ‘id.', OHG hasal m., hasala f. (<
+*-ōn-) 'id.', G Hasel f. 'id.' *kos-lo- (WEUR) - Lat. corulus f. 'hazel-tree, ha-
+zel-wood', Olr. coll, OW coll, MW coll(en), pl. cyll 'hazel-tree' < *kos-elo-;
+?OLith. kasùlas m. 'wooden spear, stick'.
+A European word. The Germanic forms point to *hasla- <*kos-lo-, but Lat.
+corulus implies a full-grade suffix *-elo- or *-olo-, as *-Vsl- would have de-
+veloped into *-VI-, cf. Lat. anhēlus 'gasping, panting' < *anaslo- < *h₂enh1-slo-
+(Schrijver 1991: 44-5).
+*haswa- adj. 'grey' - ON hoss adj. 'id.', OE haso adj. 'id.', MHG heswe adj.
+'pale, dull' (DRV)."		
+alignment-hazel-latin-e-suffix	Kroonen2013	213	253	1	2339	2345	*-elo-	d47457608cd40257ef1dd5ba7d9bec62a9e347b7c5a15df10f299781614c619a	"*harunda/ō-
+213
+-
+*harunda/ō- n./f. 'flesh' ON horund n./f. 'human flesh; skin, complexion',
+Icel. hōrund n. 'skin', Nw. dial. horung m. 'skin, skin tone', OSw. harund m./f.
+'flesh; skin', EDa. harend 'body' *Hr-nt-o- (WEUR?).
+A word possibly related to Lat. caro f. 'meat; flesh' <*(KrH-ōn (Hellquist
+1891: 21; De Vaan 2008: 94) or *Ḥr-ōn-. The Germanic form *harund-
+could then be an elongation of a corresponding neuter n-stem *(korH-ṇ or
+*Hr-on-. In synchronic Norse, however, the word clearly belonged to a
+wider cluster of original nt-stems denoting body parts, such as
+*waisunda/ō- 'wind-pipe' and *mundo- 'hand'.
+-
+-
+*harwa- adj. 'bitter' WFri. harch adj. 'dry, barren', Du. dial. haar adj. 'dry,
+parched', MHG har, herwe adj. 'bitter', G herb adj. 'id.' ⇒ *kor-uo- (IE) - Gr.
+Kɛipw 'to cut (off), shave, mow, ravage', Arm. k'erem 'to scratch; to chop; to
+skin' < *ker-; Skt. cárman- n. 'hide, flayed skin', YAv. carǝman- n. 'hide,
+leather', OP carman- n. 'skin, leather', NP čarm ‘id.' < *ker-men-; Lat. corium
+n. 'skin, animal hide' < *kor-io-; CS kora, Ru. korá, SCr. köra f. ‘bark' <
+*kor-ehz-.
+A wa-stem (cf. Fi. karvas 'bitter; sharp') derived from the PIE root *ker-
+'to cut'; its o-grade may point to derivation from a further unattested inten-
+sive verb *kór-e-. Also cf. ON herfiligr adj. 'wretched', OE ge-hierwan w.v. 'to
+despise', NFri. Hall. fer-heere w.v. 'to mock', MHG herwen w.v. 'to make bit-
+ter' < *harwjan- and MDu. hare f. 'dry cold wind'.
+-
+-
+Lat.
+*harzwa- m. 'flax' ON horr m. 'id.', Far. hørur m. 'id.', OFri. her m. 'flax',
+OHG haro, -wes m. 'id.', MHG har(e), har m. ‘id.' ⇒ *kors-uo- (EUR) -
+carro 'to card' < *krs-e-; Lith. kařšti (karšiù), Latv. karst 'to card, comb' <
+*kors-ie-.
+Cf. the diminutive MLG harl(e), harrel, herle 'stalk of flax', MDu. heerle 'id.',
+Du. harrel 'id.', E harl, herl 'fiber, filament (of flax)'.
+⇒
+*hasla- m. 'hazel' - ON hasl m. 'id.', Elfd. assel-buosk ‘id.', OE hæsel m. 'id.', E
+hazel, MDu. hasel m. ‘id.', Du. hazelaar c. ‘id.', OHG hasal m., hasala f. (<
+*-ōn-) 'id.', G Hasel f. 'id.' *kos-lo- (WEUR) - Lat. corulus f. 'hazel-tree, ha-
+zel-wood', Olr. coll, OW coll, MW coll(en), pl. cyll 'hazel-tree' < *kos-elo-;
+?OLith. kasùlas m. 'wooden spear, stick'.
+A European word. The Germanic forms point to *hasla- <*kos-lo-, but Lat.
+corulus implies a full-grade suffix *-elo- or *-olo-, as *-Vsl- would have de-
+veloped into *-VI-, cf. Lat. anhēlus 'gasping, panting' < *anaslo- < *h₂enh1-slo-
+(Schrijver 1991: 44-5).
+*haswa- adj. 'grey' - ON hoss adj. 'id.', OE haso adj. 'id.', MHG heswe adj.
+'pale, dull' (DRV)."		
+alignment-hazel-latin-o-suffix	Kroonen2013	213	253	1	2349	2355	*-olo-	d47457608cd40257ef1dd5ba7d9bec62a9e347b7c5a15df10f299781614c619a	"*harunda/ō-
+213
+-
+*harunda/ō- n./f. 'flesh' ON horund n./f. 'human flesh; skin, complexion',
+Icel. hōrund n. 'skin', Nw. dial. horung m. 'skin, skin tone', OSw. harund m./f.
+'flesh; skin', EDa. harend 'body' *Hr-nt-o- (WEUR?).
+A word possibly related to Lat. caro f. 'meat; flesh' <*(KrH-ōn (Hellquist
+1891: 21; De Vaan 2008: 94) or *Ḥr-ōn-. The Germanic form *harund-
+could then be an elongation of a corresponding neuter n-stem *(korH-ṇ or
+*Hr-on-. In synchronic Norse, however, the word clearly belonged to a
+wider cluster of original nt-stems denoting body parts, such as
+*waisunda/ō- 'wind-pipe' and *mundo- 'hand'.
+-
+-
+*harwa- adj. 'bitter' WFri. harch adj. 'dry, barren', Du. dial. haar adj. 'dry,
+parched', MHG har, herwe adj. 'bitter', G herb adj. 'id.' ⇒ *kor-uo- (IE) - Gr.
+Kɛipw 'to cut (off), shave, mow, ravage', Arm. k'erem 'to scratch; to chop; to
+skin' < *ker-; Skt. cárman- n. 'hide, flayed skin', YAv. carǝman- n. 'hide,
+leather', OP carman- n. 'skin, leather', NP čarm ‘id.' < *ker-men-; Lat. corium
+n. 'skin, animal hide' < *kor-io-; CS kora, Ru. korá, SCr. köra f. ‘bark' <
+*kor-ehz-.
+A wa-stem (cf. Fi. karvas 'bitter; sharp') derived from the PIE root *ker-
+'to cut'; its o-grade may point to derivation from a further unattested inten-
+sive verb *kór-e-. Also cf. ON herfiligr adj. 'wretched', OE ge-hierwan w.v. 'to
+despise', NFri. Hall. fer-heere w.v. 'to mock', MHG herwen w.v. 'to make bit-
+ter' < *harwjan- and MDu. hare f. 'dry cold wind'.
+-
+-
+Lat.
+*harzwa- m. 'flax' ON horr m. 'id.', Far. hørur m. 'id.', OFri. her m. 'flax',
+OHG haro, -wes m. 'id.', MHG har(e), har m. ‘id.' ⇒ *kors-uo- (EUR) -
+carro 'to card' < *krs-e-; Lith. kařšti (karšiù), Latv. karst 'to card, comb' <
+*kors-ie-.
+Cf. the diminutive MLG harl(e), harrel, herle 'stalk of flax', MDu. heerle 'id.',
+Du. harrel 'id.', E harl, herl 'fiber, filament (of flax)'.
+⇒
+*hasla- m. 'hazel' - ON hasl m. 'id.', Elfd. assel-buosk ‘id.', OE hæsel m. 'id.', E
+hazel, MDu. hasel m. ‘id.', Du. hazelaar c. ‘id.', OHG hasal m., hasala f. (<
+*-ōn-) 'id.', G Hasel f. 'id.' *kos-lo- (WEUR) - Lat. corulus f. 'hazel-tree, ha-
+zel-wood', Olr. coll, OW coll, MW coll(en), pl. cyll 'hazel-tree' < *kos-elo-;
+?OLith. kasùlas m. 'wooden spear, stick'.
+A European word. The Germanic forms point to *hasla- <*kos-lo-, but Lat.
+corulus implies a full-grade suffix *-elo- or *-olo-, as *-Vsl- would have de-
+veloped into *-VI-, cf. Lat. anhēlus 'gasping, panting' < *anaslo- < *h₂enh1-slo-
+(Schrijver 1991: 44-5).
+*haswa- adj. 'grey' - ON hoss adj. 'id.', OE haso adj. 'id.', MHG heswe adj.
+'pale, dull' (DRV)."		
+alignment-head-gen-syncope	RingeTaylor2014	270	285	2	177	184	héafdes	2cee2b30f7a3fd3055ec3fd6bbd34a78c87ae85861d9649c095092c4b1841e74	"PGmc *haubida ‘head’, gen. *haubidas, etc. (Goth. haubip, OS hobid, OHG houbit)
+>— *haubud, *haubudas, etc. (OF hdved; see 6.7.1 above) > OE *héabud,
+*héabudees, etc. > héafod, héafdes, etc.; nearly always syncopated in early WS
+(Cosijn 1883-8: 138) and the Angl. dialects, including verse (Bessinger 1978:
+550-1); on the nom.-acc. pl. see section 6.8.1;"		
+alignment-head-gen-sg-table	RingeTaylor2014	378	393	3	43	50	héafdes	9374f9a489dc0e2c686dab2d52129cd246ea7d402d0e1a77566bb100c1622eff	"sg pl
+nom.-acc. héafod (~ -ud) *héafd
+gen. héafdes héeafda
+dat. héafde héafdum"		
+alignment-head-gen-pl-table	RingeTaylor2014	378	393	3	51	58	héeafda	9374f9a489dc0e2c686dab2d52129cd246ea7d402d0e1a77566bb100c1622eff	"sg pl
+nom.-acc. héafod (~ -ud) *héafd
+gen. héafdes héeafda
+dat. héafde héafdum"		
+alignment-head-dat-sg-table	RingeTaylor2014	378	393	3	64	70	héafde	9374f9a489dc0e2c686dab2d52129cd246ea7d402d0e1a77566bb100c1622eff	"sg pl
+nom.-acc. héafod (~ -ud) *héafd
+gen. héafdes héeafda
+dat. héafde héafdum"		
+alignment-head-dat-pl-table	RingeTaylor2014	378	393	3	71	78	héafdum	9374f9a489dc0e2c686dab2d52129cd246ea7d402d0e1a77566bb100c1622eff	"sg pl
+nom.-acc. héafod (~ -ud) *héafd
+gen. héafdes héeafda
+dat. héafde héafdum"		
+alignment-head-plural-syncopated	RingeTaylor2014	378	393	4	393	399	héafdu	5c36161258b59941d49004c36378828a576478d699748546269cda800f90288c	"Again the nom.-acc. pl. appears anomalous; but in this case there are more
+ways to analyze it (Ringe 2002: 150-1) and more ways to obviate the
+problem: a native learner might decide that the nom.-acc. pl. should be
+identical with the sg. héafod (~ -ud), as in word, wif, déor, hors, hiss, etc.; or
+that the ending should be overt -u, which would trigger syncope like other
+overt endings, thus héafdu; or that -u should not trigger syncope (since
+there are no other instances in which it does), thus héafodu (~ -udu). In
+early OE we find att THREE alternatives in competition, in various propor-
+tions in the different dialects—and that too is not surprising, if the above
+reconstruction of the prehistory is correct. Finally, it seems likely that the
+spread of -u was facilitated by its survival in forms like nietenu ‘beasts of
+burden’, in which it can have survived by regular sound change; see 6.8.3
+above for discussion."		
+alignment-head-plural-unsyncopated	RingeTaylor2014	378	393	4	499	506	héafodu	5c36161258b59941d49004c36378828a576478d699748546269cda800f90288c	"Again the nom.-acc. pl. appears anomalous; but in this case there are more
+ways to analyze it (Ringe 2002: 150-1) and more ways to obviate the
+problem: a native learner might decide that the nom.-acc. pl. should be
+identical with the sg. héafod (~ -ud), as in word, wif, déor, hors, hiss, etc.; or
+that the ending should be overt -u, which would trigger syncope like other
+overt endings, thus héafdu; or that -u should not trigger syncope (since
+there are no other instances in which it does), thus héafodu (~ -udu). In
+early OE we find att THREE alternatives in competition, in various propor-
+tions in the different dialects—and that too is not surprising, if the above
+reconstruction of the prehistory is correct. Finally, it seems likely that the
+spread of -u was facilitated by its survival in forms like nietenu ‘beasts of
+burden’, in which it can have survived by regular sound change; see 6.8.3
+above for discussion."		
+alignment-heal-ringe-base	Ringe2017	283			1688	1695	*hailaz	86a661f138cb6dfe8e0e976d1f493d9ada1e3825ea8d357b734004a77b35904a	"There are also some derived verbs of this shape that seem to differ little in meaning
+from their bases; presumably they reﬂect (as a class) the PIE intensives and iteratives
+which were identical in form with causatives.15 The following seem reasonably clear
+(cf. Meid : ):
+   *draibijaną ‘drive’   *drībaną (cf. Goth. draibjan, ON dreifa, OE drǣfan, OHG
+     treiben);
+   *wagjaną ‘move’     *weganą (cf. Goth. wagjan, OE weċġan, OHG weggen);
+   *waljaną ‘choose’    *wiljaną ‘want’ (cf. Goth. waljan, ON velja, OHG wellen);
+   *wrakjaną ‘drive (out)’    *wrekaną (cf. Goth. wrakjan).
+However, some caution is necessary in judging examples of this type. In Gothic, at
+least, the difference between a basic strong verb and a derived class I verb can be a
+simple matter of transitivity, e.g. gastigqan ‘knock’ vs. gastagqjan ‘knock on’ (Feist
+ s.vv. gastagqjan, stigqan). Other cases are less clear; for instance, the semantic
+relationship between *windaną ‘wind, wrap’ and *wandijaną ‘turn’ (trans.) had
+obviously undergone some sort of idiosyncratic development, but the extra-Gmc
+cognates are not clear enough to allow us to reconstruct it with certainty (see Seebold
+: –).
+   Denominatives of this class were also common and productive. Those derived
+from adjectives were usually factitive, e.g.:
+   *daudijaną ‘kill’    *daudaz ‘dead’ (cf. Goth. dauþjan, ON deyða);
+   *fullijaną ‘ﬁll’   *fullaz ‘full’ (cf. Goth. fulljan, ON fylla, OE fyllan, OHG fullen);
+   *furhtijaną ‘frighten’     *furhtaz ‘afraid’ (cf. Goth. faúrhtjan, OE āfyrhtan, OHG
+      furhten);
+   *garwijaną ‘prepare’ *garwaz ‘ready’ (cf. ON gøra, OE ġierwan, OHG garawen);
+   *hailijaną ‘heal’     *hailaz ‘whole, healthy’ (cf. Goth. hailjan, OE hǣlan, OHG
+      heilen);
+   *lausijaną ‘release’    *lausaz ‘empty, loose, free’ (cf. Goth. lausjan, ON leysa, OE
+      līesan, OHG lōsen);
+   *warmijaną ‘heat, warm’         *warmaz ‘warm’ (cf. Goth. warmjan, ON verma, OE
+      wierman, OHG warmen)."	"There are also some derived verbs of this shape that seem to differ little in meaning
+from their bases; presumably they "	"G lōsen);
+   *warmijaną ‘heat, warm’         *warmaz ‘warm’ (cf. Goth. warmjan, ON verma, OE
+      wierman, OHG warmen)."
+alignment-heart-ringe-repeat	Ringe2017	115			516	524	*hertōn-	0ee55075a798286cf2b26a531ea6b831570c48bb03dd4262b142fd29d1356ec0	"PIE *tórmos ‘borehole’ (cf. Gk τόρμος /tórmos/ ‘socket’) > PGmc *þarmaz ‘intes-
+    tine’ (cf. ON þarmr, OE þearm);
+  PIE *tríns ‘three (acc. masc.)’ (cf. Skt trīn,́ Lat. trīs) > PGmc *þrinz (cf. Goth. þrins,
+    OHG drī);
+  post-PIE *teḱslah2 ‘ax’ (cf. OCS tesla) >! PGmc *þehslōn- (cf. ON þexla, OHG
+    dehsala);
+  PIE *ḱím ‘this’ (acc. sg. masc.; cf. Lith. šį )̃ >! PGmc *hinǭ (cf. OE hine ‘him’,
+    Goth. und hina dag ‘until this day’);
+  PIE *ḱérd- ~ *ḱr̥d- ‘heart’ (cf. Lat. cord-, Lith. širdìs) >! PGmc *hertōn- (cf. Goth.
+    haírto, OE heorte);
+  PIE *h2ḱ-h2ows-iéti ‘(s)he is sharp-eared’ (cf. Gk ἀκούειν /akóue:n/ ‘to hear’) >
+    *kowsiéti > PGmc *hauzīþi ‘(s)he hears’ (cf. Goth. hauseiþ, OE hīerþ);
+  (post-)PIE *ḱr̥n- ‘horn’ (cf. Skt śr̥ ́ṅgam, Lat. cornū; see Nussbaum : –)
+    >! PGmc *hurną (cf. Goth. haúrn, OE horn);
+  PIE *kátus ‘ﬁght’ (cf. OIr. cath ‘battle’, Russian CS kotora ‘quarrel’) > PGmc
+    *haþuz ‘battle’ (cf. OE heaþu-, OHG hadu-; ON Ho˛ðr, name of the god of
+    battle);
+  PIE *kus-dho- ‘treasure’ (cf. Lat. custōs ‘guardian’, Gk κύσθος /kústhos/ ‘vulva’) >
+    PGmc *huzdą (cf. Goth. huzd, OE hord);
+  PIE *kóryos ‘detachment’ (OIr. cuire ‘company’; Lith. kãrias ‘army’) > PGmc
+    *harjaz ‘army’ (cf. Goth. harjis, OE here);
+  PIE *klep- ‘to steal’ (cf. inf. Toch. B kälypītsi, Gk κλέπτειν /klépte:n/) > PGmc
+    *hlefaną (cf. Goth. hlifan);
+  post-PIE *kólsos ‘neck’ (cf. OLat. collus) > PGmc *halsaz (cf. Goth. hals, OE heals);
+  PIE *kwóm ‘which? (acc. sg. masc.; cf. Skt kám ‘which?, whom?’)’ > *kwón ‘whom?’
+    >! PGmc *hwanǭ (cf. Goth. ƕana, OE hwone);
+  PIE *kwóteros ‘which (of two)?’ (cf. Gk πότερος /póteros/; Skt katarás) > PGmc
+    *hwaþaraz (*-eraz?; cf. Goth. ƕaþar, OE hwæþer);
+  PIE *kwékwlos ‘wheel’ (cf. Gk κύκλος /kúklos/, Vedic Skt acc. cakrám) > PGmc
+    *hwehwlaz (cf. ON hvél, OE hwēol).
+Word-medial examples are also easy to ﬁnd.12 In addition to *klep-, *kátus, *kwóteros,
+*péḱu, and *kwékwlos, cited above, note the following:
+  PIE *swépnos ‘sleep’ (cf. Skt svápnas) > PGmc *swefnaz ‘sleep, dream’ (cf. ON
+    svefn, OE swefn);
+  PIE *népōts ‘grandson’ (cf. Lat. nepōs, Skt nápāt) >! PGmc *nefō̄ ‘grandson,
+    nephew’ (remodeled as an n-stem; cf. OE nefa, OHG nefo);"	"PIE *tórmos ‘borehole’ (cf. Gk τόρμος /tórmos/ ‘socket’) > PGmc *þarmaz ‘intes-
+    tine’ (cf. ON þarmr, OE þearm);
+  PI"	"son’ (cf. Lat. nepōs, Skt nápāt) >! PGmc *nefō̄ ‘grandson,
+    nephew’ (remodeled as an n-stem; cf. OE nefa, OHG nefo);"
+alignment-heart-fulk-norse	Fulk2018	67	84	1	3178	3184	*herta	4576facc0facb92037b79f0c17dac2e079ba559b1b128147213cb762209accbd	"§4.7 Front mutation
+67
+14. This word, however, with PGmc. *-rz-, is something of an exception (due to the geminate), since in
+Anglian, breaking usually failed before r when i appeared in the next syllable. EWS hierde ‘herdsman'
+(PGmc. *xirðijaz; Northumbrian hiorde, Mercian heorde) probably has the umlaut of eo extended analogic-
+ally from heord ‘herd'. See A. Campbell 1977: §§154, 201.
+15. See further Russ 1996.
+16. OFris. ei rather than ē is common before dental sounds and l.
+17. Thus, for example, Holthausen (1921) explains forms like andwirdi ‘answer' and fisid 'inclined' (for
+andwurdi, fusid), as scribal errors (§88 Anm. 4), and forms like ēhtin (< PGmc. *ā""xtinaz ‘regarded') and
+mēri 'glorious' (< Proto-WGmc. *mærja) as possibly due to English or Frisian influence (§§89, 92).
+18. Braune 2004a: §§51, 56. This analysis, however, is not universally accepted, as some are of the opinion
+that umlaut was not phonemicized, or perhaps not even realized allophonically, until late in the OHG period:
+see, e.g., Kastovsky 1995: 231 n. 8, Voyles 1996 (with refs. to his earlier work, and to opposing views of H.
+Penzl), Klein 2013: 184. Voyles, in particular, has argued in various studies that umlaut spread on a
+morphological or morpholexical rather than a phonological basis and thus need not have arisen in OHG before
+the tenth century. For an overview of the controversy, see Iverson & Salmons 1996 (arguing that primary
+umlaut did antecede secondary) and M.R. Barnes 1999. For criticisms of morpholexical approaches, see
+Holsinger & Salmons 1999: 245, though their concern is solely the status (phonological or morpholexical) of
+primary umlaut. Gütter (2011) highlights and discusses twelve names in documents from the period 827-957
+which show umlaut of vowels other than a. Some further studies relevant to OHG umlaut are van Coetsem &
+McCormick 1982, McCray 1983, Kortlandt 1993, Salmons 1994, Iverson, Davis, & Salmons 1996, Janda
+1998, Rauch 1999, Isakson 2002, and Panieri 2012–13.
+19. For discussion, see Liberman 1987.
+4.8
+Back mutation
+In both North and West Gmc., a back vowel may exert influence upon a front vowel in a
+preceding syllable. In some instances, especially in NGmc., the process closely parallels
+front mutation, in that the affected vowel remains monophthongal and assimilates one or
+more features of the back vowel, but more commonly the result is fracture—that is,
+development of the front vowel to a back diphthong. These processes are also some-
+times referred to as u-umlaut (or u/a-umlaut) or back umlaut, or labial (or labiovelar)
+umlaut, though in ON studies these terms are not commonly used to refer to fracture.
+Old Icelandic. When a appears in the next syllable, u is lowered to o, as in koma
+'come' (cf. OE cuman), gen. sonar ‘son' (nom. sunr). This change, known as a-umlaut,
+is very commonly reversed on an analogical basis, e.g. guð 'god' beside goð. See
+Noreen 1970: §61.1 for details.
+Stressed e before a in the next syllable (but not before nasalized a"")¹ undergoes
+fracture to the falling diphthong ea, with subsequent conversion to the rising diphthong
+ja, as with PNorse *berzan > bjarga 'save' (cf. Go. bairgan) and *herta > hjarta
+'heart' (cf. Go. hairtō).² In parallel fashion, e before u in the next syllable undergoes
+fracture to a falling diphthong that may be represented eo, later developing at least in
+West Norse to a rising diphthong jo, but jo before a geminate velar stop in Olcel. (e.g.
+þjokkr 'thick' <NWGmc. *þekkuz) and jó when lengthened (§4.9, e.g. mjólk ‘milk'; cf.
+Go. miluks). There is thus u-fracture in PNorse acc. pl. *skeldu > skjoldu ‘shields' and
+dat. pl. *heltum > hjoltum 'hilts'. There has been disagreement in the literature about
+the specifics of u-fracture.4
+In addition to these instances of fracture, there is rounding of a stressed non-back
+vowel or diphthong, often referred to as back umlaut, labial umlaut, or u/v-umlaut.5 The"		
+alignment-heart-fulk-gothic	Fulk2018	86	103	1	161	167	hairtō	54a53ab854ffb3aea37270895c47e97d672680c241af74fff50574227b8ee61b	"86
+A Comparative Grammar of the Early Germanic Languages
+A trimoric vowel must be assumed in certain masc. and neut. n-stem inflections, e.g.
+Go. neut. nom. sg. hairtō ‘heart', masc. OE nama, OHG namo (cf. PGmc. -ō"" in acc. sg.
+Go. giba, OE giefe, OFris. gife, OS geba, OHG geba ‘gift'). In this instance, however, ô
+is certainly not due to loss of an intervocalic laryngeal consonant, and although there
+are parallels to the trimoricity in Balto-Slavic (see Jasanoff 2002), such forms present a
+considerable obstacle to explaining Gmc. trimoricity purely on the basis of derivation
+from PIE.6 An example of a trimoric ô in absolute finality was given above, Go. saisō,
+Olcel. sera 'sowed' <* se-sóhe. The endings of the 1 & 3 sg. pres. sj. of weak verbs of
+class 2 (Go. -ō, OHG -o, etc.) give evidence of a trimoric vowel that arose in PGmc. by
+the loss of intervocalicj (Ringe 2017: 160). A fairly plain demonstration of the different
+developments of bimoric and trimoric vowels is afforded by the OE ō-stem inflections
+(§7.15), originally nom. pl. -a < *-ôz < PIE *-eh₂es: acc. pl. -e < *-ōz < PIE *-eh₂ns
+(Hollifield 1980: 43).
+The PIE i-stem nom. pl. ending *-ei-es should have developed to PGmc. *-i(j)iz
+> *-îz, and this accounts well for Go. -eis and ON -ir, though *-īz would probably
+produce the same results, and the WGmc. endings are difficult to explain (see §7.21).
+The PIE ā-stem dat. sg. inflection *-ah-ei gives PGmc. *-ôi, which develops
+regularly in Gothic (-ai) and in OE (-e < early -æ < NWGmc. *-a); on the reflex
+elsewhere in Gmc., see §7.15. Compare the development of final bimoric ai to Go. a in
+3 sg. pass. -da. The meter of Beowulf attests to a trimoric vowel in the masc. nom. pl.
+inflection of adjectives; perhaps the best explanation is that pronominal PGmc. *-ai
+(PIE *-oi) was added to the ending -a (Brunner 1965: §150.1).7
+If the analysis of weak verbs of the third class offered by Bennett (1962) is
+correct, certain forms in the present paradigm of these might be expected to show
+PGmc. *-âi- < *-a(j)i- < PIE *-hi-e-, e.g. Go. 2 sg. habáis ‘have', OE (Anglian)
+hafas(t), OS habes, -as; but Olcel. hef(i)r is hard to reconcile with this view (§12.47).
+It will be seen, then, that if trimoric vowels result only from the loss of a laryn-
+geal consonant between vocalic segments or the loss of j between unstressed vowels in
+PGmc., the undeniable examples are few-many fewer than the handbooks generally
+allow and undeniable exceptions do occur. 8 A great many of the supposed discrepant
+developments of bimoric and trimoric vocoids must instead be due to differences
+between the development of bimoric vowels in absolute finality and before an original
+final consonant.
+An alternative to the assumption of PGmc. trimoric vowels is the hypothesis that
+PIE ā and ō developed differently in WGmc., and perhaps elsewhere, when unstressed,
+except in absolute finality, where they both result in PGmc. ō (Möller 1880, Jellinek
+1891a, 1895, van Wijk 1907-8, A.W. Jones 1979; cf. Boutkan 1995b: 105-9). The idea
+has been revived and defended by Schrijver (2004), with extensive discussion and the
+theory of a Saami substrate in NWGmc. Earlier it was supposed that the Auslautgesetze
+could be regularized on the basis of accentual considerations: so, originally, Paul 1879:
+178-208, later Hamp 1959, Wagner 1986b: 43-8, d'Alquen 1988.
+1. For most purposes it matters little what the precise nature of trimoric vowels was, though certain analyses
+depend upon a particular specification, e.g. the argument of Jasanoff (2002: 37) that an extra mora was added
+to final -ō in Gmc. and Balto-Slavic, creating a trimoric vowel (see §7.31 n. 4) and the argument of Lane
+(1963) that trimoric vowels arose only when one of the two vowels involved was long. Similar to Lane's is
+the view of Ringe (2017: 93, 153–64), though he also credits trimoricity as a result of contractions like PIE
+*-o-es > *-ōs and of word-final vowel plus laryngeal, and he suggests that trimoric vowels may have been
+glottalized. Similarly, rejection of the theory of trimoricity generally depends upon a particular interpretation
+of what is meant by trimoricity: for example, Boutkan, who describes trimoricity as a matter of quantity and
+rejects the theory, nonetheless reconstructs a bivocalic sequence for the gen. pl. (1995b: 140, following F."		
+alignment-hearth-orel-root	Orel2003	170	209	1	2837	2847	*(s)ker-t-	6203b3f22e3f313a0243db01a285e108a02986b1e485cb3b2ae876254dbcbc70	"xerdjaz
+HOLTHAUSEN AEEW 159; FEIST 234;
+POKORNY I 579; CHEMODANOV SGGJa I
+72; FRAENKEL 242; VRIES ANEW 229;
+ZALIZNIAK I 137; ONIONS 437; BEN-
+VENISTE 48; LEHMANN GED 170–171;
+BAMMESBERGER Nom. 67; KLUGE-SEEBOLD
+377.
+*xerdō sb.f.: Goth hairda 'herd, flock', ON
+hjorð id. (partly *xerdiz), OE heord id., OS
+herda 'sequence, shift', OHG herta 'herd'.
+Connected with Skt śárdha- 'crowd,
+might', Av sarǝda- 'type', Gk Kópеuç
+'heap', MW cordd 'crowd', OPrus kērdan
+'time', Slav *čerda 'series, row, herd' (FICK
+KZ XX 167–168). WGmc *xerđōn > OE
+heorða 'deerskin', OHG herdo 'fleece' is
+derived from *xerdō. MEILLET MSL VIII
+297, Etudes II 256-257; ZUPITZA Gutt.
+105, 115; BARTHOLOMAE 1566-1567;
+TORP-FALK 78; TRAUTMANN BSW
+127-128; HOLTHAUSEN AEEW 156-157;
+Feist 234; LehmANN Language XVIII 130
+(to *er- 'to grow³); MAYRHOFER III
+309-310; POKORNY I 579, 941; VRIES
+ANEW 233 (to *ker- 'to braid'), 255 (to
+ON hreðr scrotum', Lat cortex ‘bark');
+FRISK I 921-922; ZALIZNIAK II 193;
+ONIONS 437; BENVENISTE IEL 48;
+TRUBACHEV ESSJa IV 60–63; LEHMANN
+GED 170-171; KLUGE-SEEBOLD 370.
+*xersjaz sb.m.: ON hirsi ‘millet', OHG
+~
+hirsi id. Any relation to *xersnōn *xers-
+nan? TORP-FALK 80 (to *ker- 'to feed, to
+grow'); POKORNY I 577.
+*xersn(j)a-skēlō sb.f.: ON hjarn-skál
+'skull', OHG hirni-scala id. Compound of
+*xersnōn *xersnan and *skēlō. CARR
+~
+Nom. comp. 83 (parallel formations).
+*xersnōn *xersnan sb.m./n.: ON
+hjarni 'brain', ME herne id., MDu hersene
+id. Cf. also OHG hirni id. < neut. *xerzn-
+jan. Based on a poorly attested masc.
+*xerson 'crown of the head': ON hjarsi.
+Closely related to the stem of oblique
+cases in Skt śīṛṣṇ- (of siras- ‘head'), cf. also
+Gk кópon 'temple'. Further connected
+with Lat cerebrum 'brain', Gk кépαç
+'head'. ZUPITZA Gutt. 185; TORP-FALK
+76; WALDE-HOFMANN I 203-204; MAYR-
+170
+xerþraz
+HOFER III 341; POKORNY I 574-576;
+VRIES ANEW 231–232; FRISK I 826-827,
+923 (кópon from кɛípo 'to cut'); BAMMES-
+BERGER Nom. 67-68; KLUGE-SEEBOLD
+376-377.
+*xertōn sb.n.: Goth hairto 'heart', ON hjar-
+ta id., OE heorte id. (fem.), OFris herte, hirte
+id., MLG herte id., OHG herza id. Related
+to Hitt kir-, kart- id., Toch A kri ‘will', B
+pl. käryan 'hearts', Arm sirt ‘heart', Gk
+Kapdía id., Lat cor id., OIr cride id., Lith
+širdis id., Slav *srdce id., *serda 'mid-
+dle'. ZUPITZA Gutt. 182; TORP-Falk 77;
+TRAUTMANN BSW 302; HOLTHAUSEN
+AEEW 157; WALDE-HOFMANN I 271–272;
+FEIST 234-235; POKORNY I 579–580;
+VRIES ANEW 232; FRISK I 787-788;
+ZALIZNIAK II 177; ONIONS 433; FRAENKEL
+986-987; VASMER-TRUBACHEV III 605-
+606; BENVENISTE IEL 143; SZEMERÉNYI
+Scripta 1290-1292; LEHMANN GED 171;
+BAMMESBERGER Nom. 175; PUHVEL IV
+189-191; KLUGE-SEEBOLD 372; ADAMS
+TB 165.
+*xerþaz sb.m.: OE heorð ‘hearth', OFris
+herth, herd id., OS herth id., OHG herd id.
+Related to Skt kartá- ‘cavity, hole', Slav
+*brta 'line, edge' and other derivatives
+of *(s)ker-t- 'to cut' denoting a (bound-
+ary) line. The delimiting function of the
+hearth, or of a log in it, is well attested in
+other traditions: SCr badnjak and Alb
+buzëm (TOPOROV Etim. 1974 3–15; OREL
+AED 43-44). TORP-FALK 75; HOLT-
+HAUSEN AEEW 157 (to Lat carbō ‘coal',
+cremāre 'to burn'); MÜHLENBACH-ENDZELIN
+I 375 (to Latv ceri ‘hot stones in a sauna',
+Slav *čern hearth'); MAYRHOFer I 173;
+POKORNY I 941-942; ONIONS 433; TRU-
+BACHEV ESSJa IV 161, XI 58–60 (to Slav
+*korda *krada 'pile of logs'; phonetically
+impossible); LEHMANN GED 180 (to *xur-
+jan *xurjaz).
+~
+~
+*xerþraz sb.n.: Goth pl. hairþra 'intestines,
+bosom, heart', OE hreðer 'breast, bosom'
+(masc.?), OHG smala-herdar 'small intes-
+tine, gut'. May be connected with ON
+hreðr scrotum'. Derived from *xerþaz.
+SAUSSURE MSL VI 246-248 (to *xerton,"		
+alignment-hearth-kroonen-root	Kroonen2013	222	262	1	2108	2115	*kerh3-	c47fc8b42182b11cb8c0608a4c306983e4a3c1ecab8476d65a5b2e49cb71a4d7	"222
+*hersja(n)-
+hjarre < *herzan-, on the other hand, arose as contamination forms of dif-
+ferent cases. Also note Du. hoorn-dol adj. 'mad', whose first element theo-
+retically can be derived from a zero-grade stem *hurzn- < *krh₂-s-n-.
+*hersja(n)- m. 'millet' - ON hirsi n. 'id.', MDu. herse, heerse f. 'id.', OHG hirsi
+m. 'id', G Hirse m. 'id.' ⇒ *kerh₁-s-io(n)- (IE) — Hitt. karaš- n. 'wheat, em-
+mer-wheat' <*Krhi-s-; Lat. Cerēs f. 'goddess of grain' < *kerh₁-es-; Gr.
+кoρέvvuμι 'to satiate, feed' <*Korh₁s-; Lith. šérti (šeriù) 'to feed' <*kerh₁-ie-.
+A word created with the collective suffix *-io- to the original neuter
+s-stem attested as Hitt. karaš-. The latter form is usually connected to
+*gerstō- 'barley' < *ghersd-, and has hence been reconstructed as *ghrsdh-
+(see Kloekhorst 2008: 444), but the link with *hersja(n)- 'millet' is more
+straightforward.
+*hertōn- n. 'heart' - Go. hairto n. 'id.', ON hjarta n. 'id.', Far. hjarta n. 'id.',
+Elfd. järta n. 'id.', OE heorte n. 'id.', E heart, OFri. herte f. 'id.', OS herta n. 'id.',
+Du. hart n. 'id.', OHG herza n. 'id.', G Herz n. 'id.' ⇒ *kerd-n- (IE) — Hitt. ker ~
+kard(i)- n. 'heart, center, core' < *kēr, *krd-; ToA kri m. 'will; worry', ToB
+käryäñ pl. 'heart' < *krd-ion-; Skt. hŕd-, OAv. zǝrǝd- n. 'id.', Oss. zærdæ 'id.' <
+*għrd-; Arm. sirt 'id.' < *kērd-; OPru. seyr 'id.' <*kēr-; Lith. šerdis f. 'core, ker-
+nel, pith' <*kerd-; Lith. širdis f. 'heart; anger', Latv. sirds f. 'id.' < *krd-; OCS
+srdce, Ru. sérdce, SCr. srce n. ‘hearť < *krd-ik-io-; CS srědь, srědi, Ru.
+poseredí, dial. seredь, SCr. sred, dial. sredi 'middle' < loc. *kerd-(e)i; SCr. sŕd
+m. 'anger' < *krd-o-; Gr. кñp n. ‘heart' < *kēr(d)-; Lat. cor, cordis n. ‘id.' <
+*krd-; Olr. cride n. 'id.', W craidd 'center' < *krd-.
+An old IE word, originally inflected as nom. *kér (< *kérd), gen. *krd-ós.
+See also *harta-. The initial *gh of the Indo-Iranian forms is unexplained.
+*herpa- m. 'hearth'
+-
+OE heorỗ m. 'id.', E hearth, OFri. herth m. ‘id.', OS
+herth m. 'id.', Du. haard c. 'id.', OHG herd m. ‘id.', G Herd m. 'id.'⇒ *kérhз-to-
+(NEUR).
+A to-stem created to the root *kerh3- 'to burn', for which see *hurja-.
+*herpra- n. 'intestines' - Go. hairþra n.pl. 'intestines, bosom', OHG
+smala-herdar'small intestine, gut' (GM).
+Also cf. ON hreōjar f.pl. 'scrotum' <*harþjō-(?).
+*heru- m. 'sword'
+-
+Go. hairus m. 'id.', ON hjorr m. ‘id.', OE heoru, heoro,
+hioro m. 'id.', OS heru-drōrag adj. ""sword-bloody"" → *ker-u- (IE) - Skt. śáru-
+m. 'projectile, spear, arrow'.
+An Indo-European term for some kind of projectile."		
+alignment-hearth-kroonen-coal	Kroonen2013	258	298	1	2021	2028	*hurja-	5f6b917fefa903a544e9636bec4778fbea4f5d110ab492c21b6df8c18ed7d17c	"258
+*hupp/boōn-2
+*hupp/bōn-2 w.v. 'to hop, jump' ON hoppa w.v. 'to hop, jump, skip', Elfd.
+uppa w.v. 'id.', OE hoppian w.v. 'to hop, leap, dance', E to hop, MDu. hoppen,
+hobben w.v. 'to hop', Du. hobbelen w.v. 'to bounce', MHG hopfen w.v. 'to hop',
+G hopfen w.v. 'id.' ⇒ *kup-néh₂- (NEUR) — OCS kúpěti 'to hop' <*kup-eh1-.
+An iterative 3sg. *huppōþi, 3pl. *hubunanþi < *kup-néh₂-ti, *kup-ṇh2-énti,
+apparently to a marginally attested root *kup-. MDu. hobben with PGm. *bb
+at any rate proves that the formation cannot be derived from the PIE root
+*kub- (pace Pokorny IEW: 588-92).
+*hurdi- f. 'wickerwork door' - Go. haurds f. '(lattice) door', ON hurð f.
+'door', Far. hurð f. 'id.', OS hurth f. 'hurdle, wickerwork', MDu. horde f. 'wat-
+tle', Du. hor c. 'insect screen', OHG hurt, hurd f. 'hurdle, grate, railing', G
+Hürde f. 'wattle, hurdle' *krh2-ti- (WEUR) - Lat. crātis f. 'construction of
+wickerwork, hurdle' < *krh₂-ti-; OPru. corto 'fence' < *korh₂-to-?
+Also cf. OE hyrdel m. 'frame of intertwined twigs or bars', E hurdle <
+*hurdila-.
+-
+*hurha- adj. 'lean' - ON horr adj. 'id.', Far. hor pred. 'skinny'⇒ *kŕk-o- (IE)
+Skt. kṛśá- adj. ‘lean, thin, emaciated, slim, weak' < *krk-o-; Lith. karšéti
+(karšeju) 'to reach the end of one's life, become frail with age, die' <
+*kork-eh1(-ie)-.
+Also cf. ON horr, lcel. hor m. 'starvation' <*hurha- and Icel. hora-st w.v. 'to
+become skinny'. It is possible to speculate that *hungru- 'hunger' belongs
+here, too; the word must then have been dissimilated from a form
+*kr-n-k-ru- with a nasal infix.
+-
+*hurhwa- n. 'dirt, mucus' ON horr m. 'mucus', Icel. hor m. 'id.', OE horh,
+horg, horu m./n. 'spit', OS horu, horo n. 'mud', ODu. horo n. 'mud', MDu. hore
+n. 'mud, dirt', OHG horo n. 'dirt, mud, manure'⇒ *kork-uo-(?) (WEUR?) — To
+MIr. corcach 'moor' < *kork-āko-?
+-
+Also cf. OE ge-horwian, -horgian w.v. 'to spit upon, defile' < *-hurwōjan-
+and hyran w.v. 'to spit' < *hurhwjan-. Possibly related to MIr. corcach. Other
+connections, e.g. to Gr. кópulα 'mucus', are doubtful.
+⇒
+*hurja- m./n. 'burning coal(?)' - Go. hauri n. 'coal, burning charcoal, em-
+ber', ON hyrr m. 'fire' *krhз-io- (NEUR) - Lat. carbō m. 'piece of char-
+coal'(?); Lith. kùrti (kuriù) ‘to light, kindle', Latv. kuřt 'to light, kindle, heat' <
+*krH-ie-; with secondary ablaut: OCS kuriti, Ru. kuríť' (kurjú), SCr. dial. kúriti
+'to smoke, set fire to' < quasi-PIE *kourh3-eie-.
+A ja-stem created to a Germanic and Balto-Slavic root *kerh³- (with h3
+because of the vocalization of -r- to PBS). *-ur-). See also *herpa-."		
+alignment-heaven-pie-nom	Kroonen2013	220	260	1	1467	1476	*h₂ék-mōn	e1f6798ad6ee07c9a9d5b689416d28b208ad26801aac4a9812c95d2773f46a9a	"220
+*hemina- ~ *hemna-
+-
+-
+*hemina- ~ *hemna- m. 'heaven' Go. himins m. ‘id.', ON himinn m. ‘id.',
+Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil,
+heban m. 'id.', ODu. himil m. ‘id.', Du. hemel c. 'id.', OHG himil m. 'id.', G
+Himmel m. 'id.'*h₂ek-mon- (IE) — Skt. áśman- m. 'stone, rock, sling-stone;
+thunderbolt', YAv. asman- m. 'stone, sling-stone; heaven', OCS kamy, Ru.
+kámen', SCr. kämen m. 'stone' (< *keh2-mon- by metathesis), Lith. akmuō m.
+'stone', Gr. άкμwv m. 'anvil, meteorite, sky' < *hzek-mon- (depalatalization in
+BSI. before -m-).
+The origin and derivation of the word for 'heaven' are not entirely evi-
+dent. Within Germanic, the dialectal difference between Go. himins, ON
+himinn on the one hand, and OE heofon, OS heban on the other, seems to
+point to two differen stems, viz. *hemina- and *hemna-. The alternative is to
+assume that *hemina- was syncopated to *hemna- in both Old English and
+Old Saxon, thus offering potential proof for a dialectal subclade. Still, it is
+probably more attractive to think that both stems split off from the oblique
+cases of a paradigm nom. *hemō, gen. *hemnaz, dat. *hemeni. The continen-
+tal WGm. forms with I have been explained as resulting from dissimilation
+of *hemina- to *hemila- (thus already Braune 1891: 94) and by lexical in-
+fluence from *sõel- ~ *sunnōn- 'sun' (Wachter 1997: 18).
+On the PIE level, the Germanic word is usually analyzed as a distorted
+continuant of *h₂ék-mōn, gen. *h2k-mn-ós, loc. *h₂k-mén-i (cf. Lühr 2000:
+79), which presumably meant 'heavenly vault' in view of Gr. άкµwv, which
+meant 'meteorite' (""chip from the vault"") and 'anvil (on which the Thunder
+God hit with his hammer)'. Since the regular outcome of this word in Gm.
+would be *ahmōn, *humnaz, *meni (initial *hm- does not exist in Gm.), it
+seems likely that the paradigm was remodeled into *hemō, *hemnaz,
+*hemeni on the basis of the genitive form.
+Also cf. OHG himilizi, MHG himelz(e), MLG hemelte n. 'ceiling', Du.
+ge-hemelte n. 'palate' <*(ga-)hemilatja-.
+-
+*hēra- n. 'hair' ON hár n. 'id', Far. hár n. 'id.', Elfd. år n. ‘id.', OE hær n.
+'id.', E hair, OFri. hēr n. ‘id.', OS hār n. ‘id.', Du. haar n. ‘id.', OHG hār n. ‘id.', G
+Haar n. 'id.' ⇒ *kĕs-ró- (IE) Hitt. kišzi ~ kišanzi 'to comb, card' < *kés-ti,
+*ks-énti; OCS česati 'to scratch, pluck' < *kes-eh2- etc. (see *hezdōn- for more
+cognates).
+-
+The word has been derived from *hezra- < *kes-ro- by Gąsiorowski 2012,
+who assumes pre-rhotic loss of *z and compensatory lengthening of the
+preceding vowel. It is possible, too, however, that the original form was
+*kēs-ró- with a lengthened grade, cf. Olr. cír f. ‘comb' < *kēs-reh₂-. The word
+served as the basis for OE hæring, hering, OFri. hēring, Du. haring, OHG
+haring, G Hering m. 'herring', a fish named after its many thin, hair-like
+bones (for the suffix, cf. E whiting, Du. wijting <*hwitinga-)."		
+alignment-heaven-pie-gen	Kroonen2013	220	260	1	1483	1493	*h2k-mn-ós	e1f6798ad6ee07c9a9d5b689416d28b208ad26801aac4a9812c95d2773f46a9a	"220
+*hemina- ~ *hemna-
+-
+-
+*hemina- ~ *hemna- m. 'heaven' Go. himins m. ‘id.', ON himinn m. ‘id.',
+Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil,
+heban m. 'id.', ODu. himil m. ‘id.', Du. hemel c. 'id.', OHG himil m. 'id.', G
+Himmel m. 'id.'*h₂ek-mon- (IE) — Skt. áśman- m. 'stone, rock, sling-stone;
+thunderbolt', YAv. asman- m. 'stone, sling-stone; heaven', OCS kamy, Ru.
+kámen', SCr. kämen m. 'stone' (< *keh2-mon- by metathesis), Lith. akmuō m.
+'stone', Gr. άкμwv m. 'anvil, meteorite, sky' < *hzek-mon- (depalatalization in
+BSI. before -m-).
+The origin and derivation of the word for 'heaven' are not entirely evi-
+dent. Within Germanic, the dialectal difference between Go. himins, ON
+himinn on the one hand, and OE heofon, OS heban on the other, seems to
+point to two differen stems, viz. *hemina- and *hemna-. The alternative is to
+assume that *hemina- was syncopated to *hemna- in both Old English and
+Old Saxon, thus offering potential proof for a dialectal subclade. Still, it is
+probably more attractive to think that both stems split off from the oblique
+cases of a paradigm nom. *hemō, gen. *hemnaz, dat. *hemeni. The continen-
+tal WGm. forms with I have been explained as resulting from dissimilation
+of *hemina- to *hemila- (thus already Braune 1891: 94) and by lexical in-
+fluence from *sõel- ~ *sunnōn- 'sun' (Wachter 1997: 18).
+On the PIE level, the Germanic word is usually analyzed as a distorted
+continuant of *h₂ék-mōn, gen. *h2k-mn-ós, loc. *h₂k-mén-i (cf. Lühr 2000:
+79), which presumably meant 'heavenly vault' in view of Gr. άкµwv, which
+meant 'meteorite' (""chip from the vault"") and 'anvil (on which the Thunder
+God hit with his hammer)'. Since the regular outcome of this word in Gm.
+would be *ahmōn, *humnaz, *meni (initial *hm- does not exist in Gm.), it
+seems likely that the paradigm was remodeled into *hemō, *hemnaz,
+*hemeni on the basis of the genitive form.
+Also cf. OHG himilizi, MHG himelz(e), MLG hemelte n. 'ceiling', Du.
+ge-hemelte n. 'palate' <*(ga-)hemilatja-.
+-
+*hēra- n. 'hair' ON hár n. 'id', Far. hár n. 'id.', Elfd. år n. ‘id.', OE hær n.
+'id.', E hair, OFri. hēr n. ‘id.', OS hār n. ‘id.', Du. haar n. ‘id.', OHG hār n. ‘id.', G
+Haar n. 'id.' ⇒ *kĕs-ró- (IE) Hitt. kišzi ~ kišanzi 'to comb, card' < *kés-ti,
+*ks-énti; OCS česati 'to scratch, pluck' < *kes-eh2- etc. (see *hezdōn- for more
+cognates).
+-
+The word has been derived from *hezra- < *kes-ro- by Gąsiorowski 2012,
+who assumes pre-rhotic loss of *z and compensatory lengthening of the
+preceding vowel. It is possible, too, however, that the original form was
+*kēs-ró- with a lengthened grade, cf. Olr. cír f. ‘comb' < *kēs-reh₂-. The word
+served as the basis for OE hæring, hering, OFri. hēring, Du. haring, OHG
+haring, G Hering m. 'herring', a fish named after its many thin, hair-like
+bones (for the suffix, cf. E whiting, Du. wijting <*hwitinga-)."		
+alignment-heaven-pie-loc	Kroonen2013	220	260	1	1500	1510	*h₂k-mén-i	e1f6798ad6ee07c9a9d5b689416d28b208ad26801aac4a9812c95d2773f46a9a	"220
+*hemina- ~ *hemna-
+-
+-
+*hemina- ~ *hemna- m. 'heaven' Go. himins m. ‘id.', ON himinn m. ‘id.',
+Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil,
+heban m. 'id.', ODu. himil m. ‘id.', Du. hemel c. 'id.', OHG himil m. 'id.', G
+Himmel m. 'id.'*h₂ek-mon- (IE) — Skt. áśman- m. 'stone, rock, sling-stone;
+thunderbolt', YAv. asman- m. 'stone, sling-stone; heaven', OCS kamy, Ru.
+kámen', SCr. kämen m. 'stone' (< *keh2-mon- by metathesis), Lith. akmuō m.
+'stone', Gr. άкμwv m. 'anvil, meteorite, sky' < *hzek-mon- (depalatalization in
+BSI. before -m-).
+The origin and derivation of the word for 'heaven' are not entirely evi-
+dent. Within Germanic, the dialectal difference between Go. himins, ON
+himinn on the one hand, and OE heofon, OS heban on the other, seems to
+point to two differen stems, viz. *hemina- and *hemna-. The alternative is to
+assume that *hemina- was syncopated to *hemna- in both Old English and
+Old Saxon, thus offering potential proof for a dialectal subclade. Still, it is
+probably more attractive to think that both stems split off from the oblique
+cases of a paradigm nom. *hemō, gen. *hemnaz, dat. *hemeni. The continen-
+tal WGm. forms with I have been explained as resulting from dissimilation
+of *hemina- to *hemila- (thus already Braune 1891: 94) and by lexical in-
+fluence from *sõel- ~ *sunnōn- 'sun' (Wachter 1997: 18).
+On the PIE level, the Germanic word is usually analyzed as a distorted
+continuant of *h₂ék-mōn, gen. *h2k-mn-ós, loc. *h₂k-mén-i (cf. Lühr 2000:
+79), which presumably meant 'heavenly vault' in view of Gr. άкµwv, which
+meant 'meteorite' (""chip from the vault"") and 'anvil (on which the Thunder
+God hit with his hammer)'. Since the regular outcome of this word in Gm.
+would be *ahmōn, *humnaz, *meni (initial *hm- does not exist in Gm.), it
+seems likely that the paradigm was remodeled into *hemō, *hemnaz,
+*hemeni on the basis of the genitive form.
+Also cf. OHG himilizi, MHG himelz(e), MLG hemelte n. 'ceiling', Du.
+ge-hemelte n. 'palate' <*(ga-)hemilatja-.
+-
+*hēra- n. 'hair' ON hár n. 'id', Far. hár n. 'id.', Elfd. år n. ‘id.', OE hær n.
+'id.', E hair, OFri. hēr n. ‘id.', OS hār n. ‘id.', Du. haar n. ‘id.', OHG hār n. ‘id.', G
+Haar n. 'id.' ⇒ *kĕs-ró- (IE) Hitt. kišzi ~ kišanzi 'to comb, card' < *kés-ti,
+*ks-énti; OCS česati 'to scratch, pluck' < *kes-eh2- etc. (see *hezdōn- for more
+cognates).
+-
+The word has been derived from *hezra- < *kes-ro- by Gąsiorowski 2012,
+who assumes pre-rhotic loss of *z and compensatory lengthening of the
+preceding vowel. It is possible, too, however, that the original form was
+*kēs-ró- with a lengthened grade, cf. Olr. cír f. ‘comb' < *kēs-reh₂-. The word
+served as the basis for OE hæring, hering, OFri. hēring, Du. haring, OHG
+haring, G Hering m. 'herring', a fish named after its many thin, hair-like
+bones (for the suffix, cf. E whiting, Du. wijting <*hwitinga-)."		
+alignment-heaven-nom-remodel-repeat	Kroonen2013	220	260	1	1871	1876	*hemō	e1f6798ad6ee07c9a9d5b689416d28b208ad26801aac4a9812c95d2773f46a9a	"220
+*hemina- ~ *hemna-
+-
+-
+*hemina- ~ *hemna- m. 'heaven' Go. himins m. ‘id.', ON himinn m. ‘id.',
+Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil,
+heban m. 'id.', ODu. himil m. ‘id.', Du. hemel c. 'id.', OHG himil m. 'id.', G
+Himmel m. 'id.'*h₂ek-mon- (IE) — Skt. áśman- m. 'stone, rock, sling-stone;
+thunderbolt', YAv. asman- m. 'stone, sling-stone; heaven', OCS kamy, Ru.
+kámen', SCr. kämen m. 'stone' (< *keh2-mon- by metathesis), Lith. akmuō m.
+'stone', Gr. άкμwv m. 'anvil, meteorite, sky' < *hzek-mon- (depalatalization in
+BSI. before -m-).
+The origin and derivation of the word for 'heaven' are not entirely evi-
+dent. Within Germanic, the dialectal difference between Go. himins, ON
+himinn on the one hand, and OE heofon, OS heban on the other, seems to
+point to two differen stems, viz. *hemina- and *hemna-. The alternative is to
+assume that *hemina- was syncopated to *hemna- in both Old English and
+Old Saxon, thus offering potential proof for a dialectal subclade. Still, it is
+probably more attractive to think that both stems split off from the oblique
+cases of a paradigm nom. *hemō, gen. *hemnaz, dat. *hemeni. The continen-
+tal WGm. forms with I have been explained as resulting from dissimilation
+of *hemina- to *hemila- (thus already Braune 1891: 94) and by lexical in-
+fluence from *sõel- ~ *sunnōn- 'sun' (Wachter 1997: 18).
+On the PIE level, the Germanic word is usually analyzed as a distorted
+continuant of *h₂ék-mōn, gen. *h2k-mn-ós, loc. *h₂k-mén-i (cf. Lühr 2000:
+79), which presumably meant 'heavenly vault' in view of Gr. άкµwv, which
+meant 'meteorite' (""chip from the vault"") and 'anvil (on which the Thunder
+God hit with his hammer)'. Since the regular outcome of this word in Gm.
+would be *ahmōn, *humnaz, *meni (initial *hm- does not exist in Gm.), it
+seems likely that the paradigm was remodeled into *hemō, *hemnaz,
+*hemeni on the basis of the genitive form.
+Also cf. OHG himilizi, MHG himelz(e), MLG hemelte n. 'ceiling', Du.
+ge-hemelte n. 'palate' <*(ga-)hemilatja-.
+-
+*hēra- n. 'hair' ON hár n. 'id', Far. hár n. 'id.', Elfd. år n. ‘id.', OE hær n.
+'id.', E hair, OFri. hēr n. ‘id.', OS hār n. ‘id.', Du. haar n. ‘id.', OHG hār n. ‘id.', G
+Haar n. 'id.' ⇒ *kĕs-ró- (IE) Hitt. kišzi ~ kišanzi 'to comb, card' < *kés-ti,
+*ks-énti; OCS česati 'to scratch, pluck' < *kes-eh2- etc. (see *hezdōn- for more
+cognates).
+-
+The word has been derived from *hezra- < *kes-ro- by Gąsiorowski 2012,
+who assumes pre-rhotic loss of *z and compensatory lengthening of the
+preceding vowel. It is possible, too, however, that the original form was
+*kēs-ró- with a lengthened grade, cf. Olr. cír f. ‘comb' < *kēs-reh₂-. The word
+served as the basis for OE hæring, hering, OFri. hēring, Du. haring, OHG
+haring, G Hering m. 'herring', a fish named after its many thin, hair-like
+bones (for the suffix, cf. E whiting, Du. wijting <*hwitinga-)."		
+alignment-heaven-gen-remodel-repeat	Kroonen2013	220	260	1	1878	1885	*hemnaz	e1f6798ad6ee07c9a9d5b689416d28b208ad26801aac4a9812c95d2773f46a9a	"220
+*hemina- ~ *hemna-
+-
+-
+*hemina- ~ *hemna- m. 'heaven' Go. himins m. ‘id.', ON himinn m. ‘id.',
+Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil,
+heban m. 'id.', ODu. himil m. ‘id.', Du. hemel c. 'id.', OHG himil m. 'id.', G
+Himmel m. 'id.'*h₂ek-mon- (IE) — Skt. áśman- m. 'stone, rock, sling-stone;
+thunderbolt', YAv. asman- m. 'stone, sling-stone; heaven', OCS kamy, Ru.
+kámen', SCr. kämen m. 'stone' (< *keh2-mon- by metathesis), Lith. akmuō m.
+'stone', Gr. άкμwv m. 'anvil, meteorite, sky' < *hzek-mon- (depalatalization in
+BSI. before -m-).
+The origin and derivation of the word for 'heaven' are not entirely evi-
+dent. Within Germanic, the dialectal difference between Go. himins, ON
+himinn on the one hand, and OE heofon, OS heban on the other, seems to
+point to two differen stems, viz. *hemina- and *hemna-. The alternative is to
+assume that *hemina- was syncopated to *hemna- in both Old English and
+Old Saxon, thus offering potential proof for a dialectal subclade. Still, it is
+probably more attractive to think that both stems split off from the oblique
+cases of a paradigm nom. *hemō, gen. *hemnaz, dat. *hemeni. The continen-
+tal WGm. forms with I have been explained as resulting from dissimilation
+of *hemina- to *hemila- (thus already Braune 1891: 94) and by lexical in-
+fluence from *sõel- ~ *sunnōn- 'sun' (Wachter 1997: 18).
+On the PIE level, the Germanic word is usually analyzed as a distorted
+continuant of *h₂ék-mōn, gen. *h2k-mn-ós, loc. *h₂k-mén-i (cf. Lühr 2000:
+79), which presumably meant 'heavenly vault' in view of Gr. άкµwv, which
+meant 'meteorite' (""chip from the vault"") and 'anvil (on which the Thunder
+God hit with his hammer)'. Since the regular outcome of this word in Gm.
+would be *ahmōn, *humnaz, *meni (initial *hm- does not exist in Gm.), it
+seems likely that the paradigm was remodeled into *hemō, *hemnaz,
+*hemeni on the basis of the genitive form.
+Also cf. OHG himilizi, MHG himelz(e), MLG hemelte n. 'ceiling', Du.
+ge-hemelte n. 'palate' <*(ga-)hemilatja-.
+-
+*hēra- n. 'hair' ON hár n. 'id', Far. hár n. 'id.', Elfd. år n. ‘id.', OE hær n.
+'id.', E hair, OFri. hēr n. ‘id.', OS hār n. ‘id.', Du. haar n. ‘id.', OHG hār n. ‘id.', G
+Haar n. 'id.' ⇒ *kĕs-ró- (IE) Hitt. kišzi ~ kišanzi 'to comb, card' < *kés-ti,
+*ks-énti; OCS česati 'to scratch, pluck' < *kes-eh2- etc. (see *hezdōn- for more
+cognates).
+-
+The word has been derived from *hezra- < *kes-ro- by Gąsiorowski 2012,
+who assumes pre-rhotic loss of *z and compensatory lengthening of the
+preceding vowel. It is possible, too, however, that the original form was
+*kēs-ró- with a lengthened grade, cf. Olr. cír f. ‘comb' < *kēs-reh₂-. The word
+served as the basis for OE hæring, hering, OFri. hēring, Du. haring, OHG
+haring, G Hering m. 'herring', a fish named after its many thin, hair-like
+bones (for the suffix, cf. E whiting, Du. wijting <*hwitinga-)."		
+alignment-heaven-dat-remodel-repeat	Kroonen2013	220	260	1	1887	1894	*hemeni	e1f6798ad6ee07c9a9d5b689416d28b208ad26801aac4a9812c95d2773f46a9a	"220
+*hemina- ~ *hemna-
+-
+-
+*hemina- ~ *hemna- m. 'heaven' Go. himins m. ‘id.', ON himinn m. ‘id.',
+Far. himin m. 'id.', OE heofon m. 'id.', E heaven, OFri. himel m. 'id.', OS himil,
+heban m. 'id.', ODu. himil m. ‘id.', Du. hemel c. 'id.', OHG himil m. 'id.', G
+Himmel m. 'id.'*h₂ek-mon- (IE) — Skt. áśman- m. 'stone, rock, sling-stone;
+thunderbolt', YAv. asman- m. 'stone, sling-stone; heaven', OCS kamy, Ru.
+kámen', SCr. kämen m. 'stone' (< *keh2-mon- by metathesis), Lith. akmuō m.
+'stone', Gr. άкμwv m. 'anvil, meteorite, sky' < *hzek-mon- (depalatalization in
+BSI. before -m-).
+The origin and derivation of the word for 'heaven' are not entirely evi-
+dent. Within Germanic, the dialectal difference between Go. himins, ON
+himinn on the one hand, and OE heofon, OS heban on the other, seems to
+point to two differen stems, viz. *hemina- and *hemna-. The alternative is to
+assume that *hemina- was syncopated to *hemna- in both Old English and
+Old Saxon, thus offering potential proof for a dialectal subclade. Still, it is
+probably more attractive to think that both stems split off from the oblique
+cases of a paradigm nom. *hemō, gen. *hemnaz, dat. *hemeni. The continen-
+tal WGm. forms with I have been explained as resulting from dissimilation
+of *hemina- to *hemila- (thus already Braune 1891: 94) and by lexical in-
+fluence from *sõel- ~ *sunnōn- 'sun' (Wachter 1997: 18).
+On the PIE level, the Germanic word is usually analyzed as a distorted
+continuant of *h₂ék-mōn, gen. *h2k-mn-ós, loc. *h₂k-mén-i (cf. Lühr 2000:
+79), which presumably meant 'heavenly vault' in view of Gr. άкµwv, which
+meant 'meteorite' (""chip from the vault"") and 'anvil (on which the Thunder
+God hit with his hammer)'. Since the regular outcome of this word in Gm.
+would be *ahmōn, *humnaz, *meni (initial *hm- does not exist in Gm.), it
+seems likely that the paradigm was remodeled into *hemō, *hemnaz,
+*hemeni on the basis of the genitive form.
+Also cf. OHG himilizi, MHG himelz(e), MLG hemelte n. 'ceiling', Du.
+ge-hemelte n. 'palate' <*(ga-)hemilatja-.
+-
+*hēra- n. 'hair' ON hár n. 'id', Far. hár n. 'id.', Elfd. år n. ‘id.', OE hær n.
+'id.', E hair, OFri. hēr n. ‘id.', OS hār n. ‘id.', Du. haar n. ‘id.', OHG hār n. ‘id.', G
+Haar n. 'id.' ⇒ *kĕs-ró- (IE) Hitt. kišzi ~ kišanzi 'to comb, card' < *kés-ti,
+*ks-énti; OCS česati 'to scratch, pluck' < *kes-eh2- etc. (see *hezdōn- for more
+cognates).
+-
+The word has been derived from *hezra- < *kes-ro- by Gąsiorowski 2012,
+who assumes pre-rhotic loss of *z and compensatory lengthening of the
+preceding vowel. It is possible, too, however, that the original form was
+*kēs-ró- with a lengthened grade, cf. Olr. cír f. ‘comb' < *kēs-reh₂-. The word
+served as the basis for OE hæring, hering, OFri. hēring, Du. haring, OHG
+haring, G Hering m. 'herring', a fish named after its many thin, hair-like
+bones (for the suffix, cf. E whiting, Du. wijting <*hwitinga-)."		
+alignment-heaven-northern-body	RingeTaylor2014	272	287	11	185	191	*hebun	69a62d556ee6c617f0b299fede7b52413a36b0aafa7eb419006fd366713517db	"PWGmnc *sikur ‘secure, safe’, masc. nom. pl. *sikuré, etc. (OF siker, OS sikor, sikora,
+etc., OHG sihhur, sihhure, etc.) > *sikur, *sikur&, etc. > OE sicor, sicore, etc.;
+northern WGmc *hebun”® ‘sky, heaven’, gen. *hebunas, etc. (OS heban, hebanas,"		
+alignment-heaven-northern-gen	RingeTaylor2014	272	287	11	214	222	*hebunas	69a62d556ee6c617f0b299fede7b52413a36b0aafa7eb419006fd366713517db	"PWGmnc *sikur ‘secure, safe’, masc. nom. pl. *sikuré, etc. (OF siker, OS sikor, sikora,
+etc., OHG sihhur, sihhure, etc.) > *sikur, *sikur&, etc. > OE sicor, sicore, etc.;
+northern WGmc *hebun”® ‘sky, heaven’, gen. *hebunas, etc. (OS heban, hebanas,"		
+alignment-heaven-oe-gen	RingeTaylor2014	272	287	12	19	27	heofones	1cacefbc83074f3dd8eacaa8816c091cfa954bb4655efc9df6e22d3d06e30471	etc.) > OE heofon, heofones;		
+alignment-heaven-continental-footnote	RingeTaylor2014	272	287	16	66	72	*himil	df258893655ab1ee6361da3f2c9e210de3162e6dce6aa28c8335e4d461ee5acc	"2° There is some sort of relationship between this word and PWGmc *himil (OF, OS, OHG himil),
+and between both and PGmc *himinaz (Goth. himins, ON himinn), but the details do not seem to be
+recoverable."		
+alignment-heaven-pgmc-footnote	RingeTaylor2014	272	287	16	120	128	*himinaz	df258893655ab1ee6361da3f2c9e210de3162e6dce6aa28c8335e4d461ee5acc	"2° There is some sort of relationship between this word and PWGmc *himil (OF, OS, OHG himil),
+and between both and PGmc *himinaz (Goth. himins, ON himinn), but the details do not seem to be
+recoverable."		
+alignment-heaven-oe-gen-repeat	RingeTaylor2014	387	402	2	593	601	heofones	8b81959bb7873a0b2fd316e6681e7122c9bcfe2342cd0208c871fcef63433879	"exceptionless alternation between -CVR in endingless forms and -CR- in forms
+with overt endings (e.g. engel ‘angel’, gen. sg. engles < *angil, *angilas, exactly
+like tungol ‘luminary’, gen. sg. tungles < *tungl, *tunglas, cf. ON tungl). Similar
+stems with light root syllables did not undergo syncope if the suffixal vowel
+was *i or *u. Thus there were two light root types, alternating (e.g. fugol
+‘bird’, gen. sg. fugles < *fugl- with epenthesis; weeter ‘water’, gen. sg. weetres
+< *weeter- with syncope of *z after a light syllable) and non-alternating (e.g.
+heofon ‘sky, heaven’, gen. sg. heofones < *hebun-). In early OE the heavy root
+type shows little tendency to level the alternation in the suffix, but the light
+root type has begun to level—not surprisingly, since whether or not there was
+an alternation is lexically determined. Also not surprisingly, the suffixal vowels
+tend to be levelled into the vowelless forms, creating invariant stems; thus we
+find gen. sg. eceres ‘of a field’, nom.-acc. pl. eceras beside inherited cecres,
+ecras (PWGmc *akr-), gen. sg. weeteres beside inherited weetres (see above—
+and nom.-acc. pl. wetru ~ weeteru, see 6.8.2)."		

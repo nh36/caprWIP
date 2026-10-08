@@ -120,22 +120,22 @@ row_id	status	comparison_ids	alignment_status	alignment_case_ids
 2051	reviewed	core-2051	bounded_limit	core-2051
 2052	reviewed	core-2052	bounded_limit	core-2052
 2053	reviewed	core-2053	bounded_limit	core-2053
-2054	reviewed	core-2054	unreviewed	
-2055	reviewed	core-2055	unreviewed	
-2056	reviewed	core-2056	unreviewed	
-2057	reviewed	core-2057	unreviewed	
-2058	reviewed	core-2058	unreviewed	
-2059	reviewed	core-2059	unreviewed	
-2060	reviewed	core-2060	unreviewed	
-2061	reviewed	core-2061	unreviewed	
-2062	reviewed	core-2062	unreviewed	
-2063	reviewed	core-2063	unreviewed	
-2064	reviewed	core-2064	unreviewed	
-2065	reviewed	core-2065	unreviewed	
-2066	reviewed	core-2066	unreviewed	
-2067	reviewed	core-2067	unreviewed	
-2068	reviewed	core-2068	unreviewed	
-2069	reviewed	core-2069	unreviewed	
+2054	reviewed	core-2054	bounded_limit	core-2054
+2055	reviewed	core-2055	bounded_limit	core-2055
+2056	reviewed	core-2056	bounded_limit	core-2056
+2057	reviewed	core-2057	bounded_limit	core-2057
+2058	reviewed	core-2058	bounded_limit	core-2058
+2059	reviewed	core-2059	bounded_limit	core-2059
+2060	reviewed	core-2060	bounded_limit	core-2060
+2061	reviewed	core-2061	bounded_limit	core-2061
+2062	reviewed	core-2062	bounded_limit	core-2062
+2063	reviewed	core-2063	bounded_limit	core-2063
+2064	reviewed	core-2064	bounded_limit	core-2064
+2065	reviewed	core-2065	bounded_limit	core-2065
+2066	reviewed	core-2066	bounded_limit	core-2066
+2067	reviewed	core-2067	bounded_limit	core-2067
+2068	reviewed	core-2068	bounded_limit	core-2068
+2069	reviewed	core-2069	bounded_limit	core-2069
 2070	reviewed	core-2070	unreviewed	
 2071	reviewed	core-2071	unreviewed	
 2072	reviewed	core-2072	unreviewed	
