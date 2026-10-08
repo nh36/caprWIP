@@ -1888,6 +1888,251 @@ refusal and the separate RT-conventions verification limit are not
 collapsed into one completion counter. No introduction, PDF or
 automatic release is included.
 
+## Eighteenth bounded alignment: helmet through hold
+
+Rows2070-2077 comprise helmet, help as verb, help as noun, herd, hew,
+hind, hoard and hold. The repeated English label help does not identify
+one selected unit: *helpan* is an infinitive and *help* a feminine noun.
+Likewise helmet is not a rudder, a herd is not its herdsman or skin
+derivative, and a hew preterite is not the selected infinitive. The
+tranche individually reconciles102 inherited identities, retaining
+source-native glyphs, local dates, cells and qualifications rather than
+collapsing them through spelling similarity.
+
+Thirty-two literal receipts and sixteen process records add48 evidence
+records, with four reused focused positions and eighteen rationales.
+Twenty-four SOURCE amendment receipts preserve exact old/new fields.
+Two status receipts supplement actual existing Fulk consultations with
+new literal evidence; no new consultation or grammar negative is
+manufactured. The154 positions link147 distinct records. All earlier
+receipts remain unchanged; the already adopted hew glide history is a
+protected production control, not reopened by comparative research.
+
+### Helmet: cover formation without a rudder homonym
+
+Orel's masculine `*xelmaz` cites helmet reflexes and connects Sanskrit
+protection/shelter and Thracian hide, referring to the conceal verb.
+The Latin summit/ridge proposal is an attributed bibliographic
+alternative. The neighboring helm/rudder n-stem is a different
+lexical unit, not another selected helmet cell
+[@Orel2003, pp.167-168].
+
+Kroonen's masculine `*helma-` is explicitly derived from the cover
+verb `*helan-` and compared with Sanskrit shelter `*kel-mn-`.
+The preceding verb entry calls the original cover meaning probable;
+the separate `*helman-` rudder is compared with stick/tree-stump
+material. The new literal receipts preserve the actual cover base
+and Sanskrit precursor without manufacturing a Germanic nominative
+from a stem. Shared root and semantic formation do not prove a
+shared fully dated whole word, and dictionary context alone still
+does not supply the analytical date [@Kroonen2013, pp.218-219].
+
+### Help verb: present raising is not past ablaut
+
+Orel owns the strong help citation and a Lithuanian comparison with
+unclear consonantism, reporting Fraenkel's secondary-b explanation.
+Kroonen explicitly finds no clear etymology. His tempting
+`*kélp-e-`/iterative account is qualified: no `*hulpōn-` iterative
+is attested. The alternative lost-Slavic/Baltic loan chain and
+explicit PGmc `*halpa-` belong to that conjecture, not a quotation
+of the feminine help noun. Both inherited shared-row identities
+are separately reconciled, and the hypothetical iterative remains
+conditional rather than an attestation [@Orel2003, p.168;
+@Kroonen2013, p.219].
+
+Ringe's explicitly PGmc paradigm distinguishes `*helpaną`,
+`*hilpidi`, `*halp` and `*hulpun`: infinitive, present3sg,
+past3sg and past3pl. Present raising before the following high
+front vowel is not the coda-nasal condition or a past-ablaut
+explanation. RT's independently quoted past plural and later
+*helpan/healp/hulpon/holpen* principal parts keep their cells.
+The starred `*Ih` in the same roster labels a feolan subclass;
+it is not a help word. Its literal spelling is retained, with an
+exact kind/cell/argument repair rather than a silent OCR replacement
+[@Ringe2017, p.252; @RingeTaylor2014, pp.30,346-348].
+
+Fulk's corresponding OE principal parts now have four individual
+literal receipts. The table's general warning that not every
+offered principal part is independently attested remains explicit:
+these illustrative word records are not new attestation
+certifications. His help/break discussion concerns lowering,
+analogy and actual class-specific distributions, not a convention
+equating every e/i or u/o representation [@Fulk2018, pp.285-288].
+
+### Help noun: finite examples and unrelated restoration models
+
+Orel's `*xelpō` is a feminine noun explicitly derived from the verb;
+his reconstructed Burgundian `*hilps` is a noun, not RT's
+homographic syncopated finite verb. Ringe quotes an e-grade
+action noun `*helpō`. Its inherited locally-undated SOURCE
+annotation remains: the general reconstruction context is not
+used to fabricate a separately explicit endpoint date
+[@Orel2003, p.168; @Ringe2017, pp.324-326].
+
+The29 inherited RT identities attached to the help noun have now
+been reviewed one by one. `*hilpisi > *hilpsi > *hilps` is
+present2sg and `*hilpipi > *hilppi` present3sg of the help verb.
+The actual *hilpst* and source-native *hilpp* endpoints are
+separately receipted. `*helpu` is explicitly 'I help', not the
+feminine noun. Strength, bliss and mile are different lexical
+comparanda. Level/judge and soul/learning/gift supply restoration
+models, not genetic help-family evidence
+[@RingeTaylor2014, pp.55-56].
+
+The monosyllabic endings keep their own cells: present1sg,
+imperative2sg, neuter a-stem direct plural, ō-stem nominative,
+i-stem nominative and consonant-stem genitive/dative singular
+and nominative plural. Their proposed loss/restoration does not
+supply a help-noun ending or independently date every arrow.
+Kroonen's absence of a quoted feminine help noun remains a
+specific comparability limit, not a vote against Orel or a new
+negative consultation [@RingeTaylor2014, pp.55-58;
+@Kroonen2013, p.219].
+
+### Herd: alternate noun and derivatives are distinct formations
+
+Orel distinguishes the feminine herd citation from an alternate
+i-bearing formation contributing to ON herd, and explicitly
+dates a deerskin/fleece n-derivative WGmc. Kroonen's queue
+meaning is inferred from order/sequence senses, and the
+masculine `*herdja-` herdsman is a separate derivative.
+New literal receipts isolate both derivatives rather than
+substitute them for the selected feminine noun
+[@Orel2003, pp.169-170; @Kroonen2013, p.221].
+
+Ringe explicitly labels the herd citation PGmc. RT separately
+gives PGmc `*herdo`, PNWGmc `*herdu` and OE *heord*.
+That sequence establishes different endpoints and processes,
+not permission to replace native o with a supplied macron.
+The alternate formation and selected full-cell ancestry remain
+bounded premises [@Ringe2017, p.107;
+@RingeTaylor2014, pp.182-183].
+
+### Hew: source-specific glides and regional preterites
+
+Orel's hew infinitive connects kill/strike/forge comparanda;
+Kroonen calls its formation an old o-grade intensive and keeps
+hay and pound as related but different formations. Ringe
+explicitly dates his citation PGmc. None is a new authorization
+to alter CAPR's already adopted selected input or glide cascade
+[@Orel2003, p.167; @Kroonen2013, p.218;
+@Ringe2017, p.108].
+
+Fulk's diphthong and Verschärfung discussions distinguish
+gemination from subsequent North/East obstruents, compare
+accentual/laryngeal/morphological analyses and question
+geminate dismantling in favor of a possibly more original
+WGmc diphthong-plus-glide sequence. Those are real scientific
+qualifications, not a reason to silently relabel every stem
+PGmc. His `*hawwan-`, Norse singular *hjó* and plural
+*hjoggu* now have separate literal receipts; no unquoted
+Frisian preterite is invented [@Fulk2018, pp.50-51,117-119,291].
+
+RT's two chains on the same page are particularly consequential:
+`*hagean` and `*hedw` are Norse intermediates, while
+`*hauwan` and `*heuw` belong to the West Germanic chain.
+The two occurrences of `*hehaww` are past3sg, not citation
+infinitives. The newly receipted OE *héow* is also a past cell.
+Different native endings in `*hawwang`, `*hawwana` and
+`*hawwanga` remain visible; exact selected-word equivalence
+is not manufactured by repairing them in analytical prose
+[@RingeTaylor2014, pp.65-67,88-90,171-173].
+
+### Hind: explaining a warrant, not every vowel and suffix
+
+Orel owns a young/new derivation from `*ken-t-`, with Sanskrit
+young, Greek new and Latin fresh/new comparisons. His Greek
+young-deer and Sanskrit hornless alternatives are bibliographic
+reports. The Sanskrit hornless receipt therefore retains Pokorny
+as quoted author, without claiming that original source was
+independently consulted [@Orel2003, p.169].
+
+Kroonen probably derives hind from explicitly PIE `*kem-`
+'hornless' and follows the connection through *hamala*
+truncated/mutilated with hornless comparanda. The cross-reference
+is on printed206, not a navigation-derived200. The adjacent
+membrane's formation is a different homonym
+[@Kroonen2013, pp.206,226].
+
+The focused comparison explains only the different comparative/
+semantic warrants, explicitly as CAPR analyst inference. It
+does not assert a directly named rebuttal, original ancestry
+or an explanation of all e/i, j/n and ō differences. Both
+owned citation formations remain independently represented;
+the whole-row cause stays unestablished
+[@Orel2003, p.169; @Kroonen2013, pp.206,226].
+
+### Hoard: different precursors behind a shared cluster
+
+Orel calls the origin uncertain. Brugmann's genital comparison
+and Pokorny's hide-verb connection are attributed reports, not
+Orel endorsements or the hoard noun itself. The inherited
+image-checked quantity of the hide comparandum is preserved:
+an unmarked navigation-text vowel is not a new glyph repair
+[@Orel2003, p.196].
+
+Kroonen's entire hoard entry is on printed260;261 begins hire.
+It conditionally connects Greek hide through Old Swedish
+shelter/hut and proposes `*kudh-to-`, assuming Bartholomae's
+law yielded zd. The neighboring house entry invokes hoard
+more strongly as showing a root `*keudh-` without a laryngeal.
+Both local formulations survive; the stronger cross-reference
+does not erase the hoard entry's conditional premise or
+explicitly date an otherwise undated precursor
+[@Kroonen2013, p.260].
+
+Ringe instead explicitly gives PIE `*kus-dho-` and PGmc
+`*huzdą` in the s-plus-voiced-aspirate discussion, comparing
+Latin guardian and Greek vulva. The focused comparison treats
+different precursor segmentation, admitted comparisons and
+law premises as the inferred warrant for the formation
+difference. It is not a direct rebuttal or a settled history.
+RT's lowering/rhotacism examples and retained zd have their
+own later-stage scope; they do not choose between the deeper
+accounts [@Ringe2017, p.115;
+@RingeTaylor2014, pp.27-28,84-85].
+
+### Hold: body citations, finite cells and dialects
+
+Orel's hold verb connects cattle-tending with Tocharian and
+Latin comparisons, while Ringe explicitly distinguishes the
+original pasture/keep-animals sense from *habai* hold and
+*aigan* have. Semantic overlap does not merge those etyma.
+Kroonen's existing bounded negative is retained; a neighboring
+incline/sideways family is not identified by spelling alone
+[@Orel2003, p.155; @Ringe2017, p.206;
+@Kroonen2013, pp.205-206].
+
+The starless Fulk index infinitive and present3sg remain
+separate from newly quoted body evidence. The finite PGmc
+`*xalðiþ(i)` leads to EWS *hielt*, not to the selected
+infinitive. The explicit PGmc body citation has its native
+ending representation; an index superscript is not silently
+substituted into it. Fulk's preferred infixation account for
+class-VII preterites, its alternatives and branch shortening
+remain qualified. OE *hēold* is an illustrative preterite
+record, not an independently certified selected cell
+[@Fulk2018, pp.63-64,266-270,289-291,387].
+
+RT's *healdan/haldan/halda* infinitives are dialect-distinct.
+The retraction versus failure-of-fronting discussion continues
+beyond the example and does not compel a unique history.
+The finite table separately gives late WS *hyltst*, WS *hielt*,
+Mercian *gehaldes/halded* and Northumbrian *haldes/gehalded*.
+Six exact receipts preserve that mapping. The old unrelated
+offer/ask pointer is replaced by the actual heavy-stem
+syncope/umlaut and later levelling argument
+[@RingeTaylor2014, pp.184-186,349-351].
+
+All eight whole-row causes remain unestablished. At this
+checkpoint145 of393 rows are individually bounded and248
+remain unreviewed. Focused warrant explanations do not
+complete the class census, aggregate synthesis, consistency
+watchlist or next-source programme. Independent alignment
+refusal remains separate from the RT-conventions holding gap.
+No corpus/input/stage/context/FST/baseline adoption,
+introduction, PDF or automatic release is included.
+
 ## Sixteenth bounded alignment: hand through hay
 
 This tranche completes rows2054-2061: hand, the handle verb, harm,

@@ -8,6 +8,162 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Eighteenth alignment checkpoint: helmet through hold
+
+### Identity
+
+SC id and executable identifier: none; this is non-adopting reconstruction
+research, not a new registry verdict. Branch update; base50277644.
+Rows2070-2077 are helmet, help verb, help noun, herd, hew, hind, hoard
+and hold. Prior sixteenth/seventeenth research is already released.
+
+### Question
+
+Hypothesis: some inherited help-noun and hew identities match finite or
+regional cells rather than the selected word, and hind/hoard warrant
+differences can be compared without claiming their entire ancestry is
+explained. Actual source labels and complete arguments can confirm or
+refute those unit assignments. Spelling similarity, output fit and
+unread adjacent entries cannot resolve them.
+
+### Current state (before edits)
+
+The immutable snapshot fixes4643 forms,1380 consultations,4798
+positions,427 comparisons and259 rationales;137 bounded/256 unreviewed
+core rows. There are102 inherited tranche identities. Current selected
+corpus/input/stage/context owners, all approved production histories and
+46 protected scientific hashes remain authority. Existing SOURCE
+consultations and the prior receipts are retained, not restarted.
+
+### Diagnosis
+
+Complete firing census and principal skip/displacement traces: n/a,
+because no executable rule or historical edge is proposed. Witness roles
+are citation, alternative cell, family, comparandum, process and focused
+warrant evidence, not invented live chronology witnesses.
+
+Individually reviewed identities distinguish the finite help verb from
+the noun, a Burgundian noun from its finite homograph, feolan's printed
+subclass label from a help word, Norse hew intermediates from English
+ones, herd derivatives from the selected noun, and hold's finite dialect
+table from its citation infinitive. The generic final-u summary is not
+the following third-plural final-i example
+[@RingeTaylor2014, pp.55-58,89,182,184-186,347,349-351].
+
+### Literature
+
+Existing research owners checked: survey SOURCE tables and prior
+alignment receipts/commentary, current selected corpus inventory,
+scientific protection snapshot and the released hew/glide control.
+
+Sources checked with printed pages: Orel167-170,196 and155;
+Kroonen218-219,221,226,260 with the actual hamala cross-reference206;
+Ringe107-108,115,206,252,324-326; Fulk50-51,55-59,63-64,
+116-119,266-270,285-291,387; RT27-31,55-59,65-67,84-90,
+171-175,182-186,346-351. Complete pertinent passages, footnotes,
+tables and necessary cross-references were read. Navigation278-280
+does not contain Fulk12.20; its actual hold discussion is266-270.
+New literals are text_checked, not falsely promoted to fresh image
+verification.
+
+Source-supported phenomena: different cover/herd formations, help
+raising versus ablaut and finite endings, source-specific hew glide/
+preterite accounts, hind's competing semantic comparisons, hoard's
+different cluster precursors, and hold's finite mutation, infixation
+and dialect evidence. Fulk's principal-part attestation warning is
+retained; new illustrative words do not certify every principal part
+as independently attested [@Fulk2018, pp.285-291].
+
+CAPR modelling decisions: scholarly comparison uses independent date,
+confidence, attribution, lexical/cell identity and divergence cause.
+Hind's young/new versus hornless warrant and hoard's dh-t/Bartholomae
+versus s-dh warrant are bounded analyst inference. The stronger
+neighboring house assertion is preserved beside Kroonen's conditional
+hoard wording, not substituted for it
+[@Orel2003, pp.169,196; @Kroonen2013, pp.206,226,260;
+@Ringe2017, p.115].
+
+### Historical analysis
+
+Historical stage and scope: per-source locally supported endpoints
+only. Explicit PGmc, PWGmc, PIE, OE and regional cells remain distinct;
+undated dictionary citations and arrow intermediates remain undated.
+Kroonen's hoard precursor has no locally explicit PIE date.
+
+Historical phenomenon versus executable proxy: research does not
+reopen the adopted hew history, alter inputs or infer correctness from
+final spellings. No chronology edge is proposed; independently
+demonstrated or stage-entailed edge adoption is therefore n/a.
+
+### Verdict
+
+Research disposition: all eight core rows have individually reconciled
+bounded_limit alignments; both focused comparisons have bounded
+analyst-inferred warrant explanations. All eight whole-row causes
+remain unestablished. This is not RETAIN/DEFER of a canonical law and
+there is no machine-readable Registry-verdict line.
+
+Justification: finite/paradigm identity must precede whole-word
+comparison. Different admitted comparanda and formation/law premises
+support a limited explanation without selecting ancestry or proving
+the remaining vowels/suffixes. Index headings and reconstruction
+notation cannot silently supply historical dates.
+
+### Propagation
+
+Editable owners: forms, coverage, analyses, comparisons and rationales;
+four exact receipt tables; page-cited README/commentary and this audit;
+focused survey/analysis regressions. Thirty-two literal receipts and
+sixteen processes add48 records; four positions reuse evidence and
+eighteen rationales are added. Twenty-four inherited SOURCE fields and
+two actual existing Fulk consultation statuses have exact receipts.
+Two post-persistence analytical field receipts repair the final-u
+scope/attribution without changing diplomatic evidence.
+
+Current totals:4691 forms,1380 consultations,4850 positions,429
+comparisons,277 rationales;145 bounded/248 unreviewed core rows.
+The154 tranche positions link147 distinct records. Canonical propagation
+is exclusively adjudicate.py --refresh. Regression controls distinguish
+related/unrelated units, finite/citation cells, conditional/owned/reported
+positions, actual dates and native spellings; literal hash/span receipts
+and read-only deterministic queries check the exact representation.
+
+Baseline/fingerprint effect: none intended; all prior receipts, inherited
+SOURCE fields except the24 exact amendments, outside analytical records,
+consultation identities, sources and selected scientific owners must
+survive independent closeout. No Foma rebuild or publication is needed.
+
+Independent closeout is complete. All4643 inherited evidence records
+survive except the24 exact receipted fields;4696 outside positions,
+419 unaffected comparisons,259 inherited rationales and1349 outside
+consultations are unchanged. All102 tranche identities, all prior
+receipts, unchanged scope/target/applicability tables, sources, selected
+corpus rows and46 protected scientific hashes survive. All32 literal
+paragraph hashes/spans independently resolve, including the conditional
+hoard prose rather than its header or the preceding house occurrence.
+The generic final-u span independently resolves to the summary sentence,
+not the following third-plural passage.
+
+All246 focused survey/analysis tests pass. One cumulative loan-reason
+query expectation now includes the newly recorded help argument;
+its whole-row cause remains unestablished. Canonical refresh reports
+CONTROL PLANE CLEAN; bibliography, locators, all46 new-prose
+printed-page references and whitespace checks pass. Repeated read-only
+queries reproduce145/248,154 positions/147 records and the bounded
+hind/hoard explanations. Alignment independently refuses248; verified
+reading separately refuses the RT-conventions gap. Completion here is
+the eighteenth tranche, not the entire393-row programme or a new release.
+
+### Residue
+
+Hind's complete e/i and suffix/formation cause, hoard's original ancestry,
+hold's precise alternative histories and every whole-row cause remain
+bounded questions. The248 unreviewed rows, class census, explanatory
+synthesis, consistency watchlist and specialist dispatch remain open.
+The independent alignment gate and RT-conventions holding gap are
+separate refusals. No scientific adoption, introduction, PDF or automatic
+new release is included.
+
 ## Identity
 
 - SC id: none. This is the user's corpus-wide reconstruction research,

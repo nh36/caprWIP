@@ -109,7 +109,7 @@ explanation or exact remaining premises, the conditioning census and a
 non-adopting consistency watchlist. The current analytical gate still
 certifies citation-unit triage only.
 
-All three relevant held-source passes are persisted: Ringe192, Fulk137
+All three relevant held-source passes are persisted: Ringe192, Fulk138
 and Ringe-Taylor255 actual consultations. Each has393 independent
 applicability dispositions; the1179 screens are not1179 grammar
 negatives. All786 core reviews remain. Of20 scopes,19 are reviewed
@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4643 evidence records,1380 actual consultations and4798
-analytical positions, with427 comparisons and259 rationales. The RT
+There are4691 evidence records,1380 actual consultations and4850
+analytical positions, with429 comparisons and277 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred thirty-seven core rows now have individually reconciled, bounded alignment:
-1933-2069. The remaining256 are unreviewed. The second tranche builds on
+One hundred forty-five core rows now have individually reconciled, bounded alignment:
+1933-2077. The remaining248 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,39 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The eighteenth tranche completes helmet, help verb, help noun, herd,
+hew, hind, hoard and hold, rows2070-2077. All102 inherited analytical
+identities are individually reconciled. Thirty-two literal receipts and
+sixteen processes add48 records; four focused positions reuse evidence,
+and eighteen rationales are added. Twenty-four exact SOURCE amendments
+repair seventeen cells, two arguments, two reported-author attributions,
+one metalinguistic stem classification, one locally explicit OE date and
+one overbroad page range. Two owner-field receipts change actual existing
+Fulk help/hew consultations from discussion-only to evidence-found; no
+consultation identities or dictionary statuses change
+[@Fulk2018, pp.286,291]. The154 positions link147 distinct records.
+All prior receipts and outside analytical identities are preserved.
+Two additional position-field receipts correct the generic final-u
+suffix/ending summary: it is not the following third-plural final-i
+example [@RingeTaylor2014, p.56].
+
+Hind's focused young/new versus hornless warrant and hoard's focused
+dh-t/Bartholomae versus s-dh formation warrant have bounded
+analyst-inferred explanations, not named rebuttals or selected histories.
+Neither explains the whole row. In particular, hind's e/i and j/n/ō
+formation differences remain open, and Kroonen's conditional hoard
+entry remains conditional beside its stronger house cross-reference
+[@Orel2003, pp.169,196; @Kroonen2013, pp.206,226,260;
+@Ringe2017, p.115]. The finite help cells attached to the noun, the
+unrelated restoration comparanda, RT's metalinguistic feolan label,
+regional hew preterites, herd derivatives and hold's index/body and
+dialect cells are independently matched, not normalized into agreement
+[@RingeTaylor2014, pp.55-58,89,182,184-186,347,349-351;
+@Fulk2018, pp.64,270,286,290-291,387].
+All eight whole-row causes remain unestablished. No corpus/input/stage/
+context/FST/baseline adoption, introduction, PDF or automatic release
+is included; the full393-row programme remains unfinished.
 
 The seventeenth tranche completes hazel, head, heal, heart, hearth, heath,
 heaven and hedge, rows2062-2069. All101 inherited identities are individually

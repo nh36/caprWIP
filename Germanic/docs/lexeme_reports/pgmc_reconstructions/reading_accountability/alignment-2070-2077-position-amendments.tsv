@@ -1,0 +1,3 @@
+owner	identity	field	old_value	new_value	source_basis	printed_pages
+analyses.tsv	a-rt-complete-2072-029	features	"{""cell"": ""third-person plural bound ending candidate for final vowel loss""}"	"{""cell"": ""final u in suffix-and-ending complexes considered vulnerable to loss; no specific person/number asserted""}"	RT56 PAGE71 paragraph2 chars1567:1570 is the general final-u suffix/ending summary, not the following third-plural final-i examples.	56
+analyses.tsv	a-rt-complete-2072-029	attribution_status	conditional	endorsed	RT56's author owns the vulnerable-complex argument; the quoted generic final-u unit is not a particular conditional restoration or third-plural cell.	56
