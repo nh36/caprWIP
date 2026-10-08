@@ -8,6 +8,174 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Nineteenth alignment checkpoint: home through knee
+
+### Identity
+
+SC id and executable identifier: none; this is non-adopting source and
+alignment research. Branch update; base579b7e1f. Rows2078-2085 are home,
+honey, hood, hoof, horn, hound, knead and knee. The eighteenth tranche
+is already committed and pushed; this continuation does not automatically
+release its new research.
+
+### Question
+
+Hypothesis: inherited instrumental/plural and finite-cell assignments
+obscure the actual selected words; source-local dates and knead's
+index/body distinction also need repair. Complete passages can confirm
+or refute those assignments. A source spelling, current FST output,
+generic IE label or daughter weak reflex cannot independently establish
+a shared dated selected ancestor or explain author divergence.
+
+### Current state (before edits)
+
+The immutable snapshot fixes4691 forms,1380 consultations,4850 positions,
+429 comparisons and277 rationales;145 bounded/248 unreviewed core rows.
+All82 inherited tranche identities and65 research hashes are pinned.
+Existing selected corpus/input/stage/context and production decisions
+remain authority, including knee's citation *knéwą, input *knéwai and
+short dative cneowe. The46 protected scientific owners are not editable
+in this research tranche. Existing survey commentary, prior receipts,
+current knee account and protocol were consulted.
+
+Existing executable behavior/census: n/a; no rule semantic/order or
+historical-edge change is proposed, so no executable experiment is
+needed to repair research annotation.
+
+### Diagnosis
+
+Complete firing census and skip/displacement traces: n/a, because this
+is source comparison, not executable adjudication. Witness roles are
+citations, other paradigm cells, family, comparanda, processes and
+focused warrants. They are not newly established chronology witnesses.
+
+Home's possible instrumental differs from its citation; honey's
+original/secondary n differs from its vowel history and the unrelated
+mili/milid etymon; hood has a real WGmc source limit. Horn's middle
+endpoint is qualified (post-)PNWGmc. Knead's first plurals are finite,
+and Fulk's weak ON reflex does not date/classify the PGmc form as weak.
+Knee's plural chain, singular chain and short pre-ending stem do not
+quote the selected short dative
+[@RingeTaylor2014, pp.15,45,61,78,152,187,212,335,380,387;
+@Kroonen2013, pp.255-256,295; @Orel2003, p.165;
+@Fulk2018, pp.153-154,264,387; @Ringe2017, pp.152,168,223,311-312].
+
+### Literature
+
+Existing CAPR dossiers checked: current survey research owners,
+released eighteenth receipts, selected scientific protection snapshot
+and current knee account. No settled knee/glide or FST assay is reopened.
+
+Sources checked with printed pages: Orel152,165,181,193,195,218;
+Kroonen201,214,216-217,227,238-239,255-257,259,267,295-296,298,521;
+Ringe109,115,119,151-153,167-169,222-224,235-237,273-276,310-313;
+Fulk153-154,263-265,387; RT15,27-32,44-46,60-62,77-79,105-107,
+151-153,169-175,186-188,211-213,334-336,379-381,386-388;
+Cercignani127 and footnote8. Complete relevant arguments, qualifications,
+tables, footnotes and necessary cross-references were read. Fulk's
+knead body is264, not its section start263; the knead index is387.
+New literals are text_checked; inherited image-checked glyphs are reused,
+not falsely promoted to new image certification.
+
+Source-supported phenomena: actual borrowing/admission differences,
+secondary/original suffixal n, comparative laryngeal placements,
+coda-nasal versus intervocalic-n lowering domains, dental formation,
+finite zero/full-grade remodeling and wa-stem cell/quantity distinctions.
+Fulk explicitly qualifies the generic Gothic paradigm's attestation;
+new knee examples are illustrative word records, not invented
+independently verified attestations [@Fulk2018, pp.153-154].
+
+CAPR modelling decisions: retain independent lexical/cell identity,
+attribution, date, confidence, support and cause. Home and honey focused
+causes remain unestablished; only hound's distinct morphological/
+comparative warrants support a bounded analyst inference
+[@Orel2003, pp.152,193; @Kroonen2013, pp.201,255-256,267].
+
+### Historical analysis
+
+Historical stage/scope: actual locally asserted PGmc, PWGmc, PNWGmc,
+WGmc, PIE, OE and regional endpoints remain distinct. The horn
+(post-)PNWGmc boundary is explicitly qualified; general IE headers,
+capital H and quasi-PIE illustrations do not become precise PIE dates.
+Neither original typography nor confidence assigns a historical stage.
+
+Historical phenomenon versus executable proxy: the comparison does not
+select inputs, date laws from names or infer history from current output.
+All existing production histories remain unchanged. Chronology edges:
+none proposed; stage-entailed or independently demonstrated adoption is
+n/a rather than a fabricated ordering result.
+
+### Verdict
+
+Research disposition: all eight rows individually reconciled with
+bounded_limit alignments. Three focused substantive comparisons retain
+two unestablished causes and one bounded analyst-inferred cause. All
+eight whole-row causes remain unestablished. No canonical law verdict
+or machine-readable Registry-verdict line applies.
+
+Justification: complete passage and cell identity precede form
+comparison. The sources establish several distinct alternatives and
+qualifications without proving whole-word equivalence. A focused
+warrant inference cannot automatically explain the core case.
+
+### Propagation
+
+Editable owners: forms, coverage, analyses, comparisons and rationales;
+three exact SOURCE/occurrence/owner receipt tables; README, substantial
+page-cited commentary and this template-complete research record;
+source-sensitive survey and deterministic-query regressions.
+
+The47 additions comprise28 literal receipts and19 processes; the
+missing horn/Cercignani position reuses existing evidence. Six focused
+positions also reuse evidence. Twenty-five rationales are added.
+Thirty-eight SOURCE amendments cover nine dates, four page ranges,
+twenty-four cells and one argument. One actual existing Fulk/knee
+consultation status changes after three new lexical cells, without
+changing consultation identity or creating grammar negatives.
+All82 inherited positions survive;136 positions link130 records.
+Totals:4738 forms,1380 consultations,4904 positions,432 comparisons,
+302 rationales;153 bounded/240 unreviewed core rows.
+
+Regression controls distinguish actual instrumental/citation, same-text
+occurrences, quoted versus own evidence, WGmc hood, qualified horn,
+finite knead and index/body, Gothic singular/plural and the selected
+short-dative boundary. SOURCE-only regeneration uses only
+adjudicate.py --refresh and reports CONTROL PLANE CLEAN. The complete
+focused survey/analysis suite passes257 tests. Bibliography, locator,
+new-prose printed-page and whitespace checks pass. Three initial
+assertions were updated to the actual retained wgmc_explicit SOURCE
+label, the newly bounded knee disposition and the added home
+loan-support query result; no scientific prose was rewritten for them.
+
+Independent verification preserves all4691 inherited records except
+the38 exact annotation fields,4768 outside positions,421 unaffected
+comparisons,277 inherited rationales and1351 outside consultations.
+All58 unaffected prior research hashes, including earlier receipts,
+the source catalogue, selected corpus and all46 scientific hashes
+survive. All28 literal paragraph hashes/spans independently resolve.
+Deterministic queries reproduce153/240, the three focused causes,
+136/130 position/evidence denominators and knee's distinct cells.
+The independent alignment gate refuses240; the separately checked
+reading gate still refuses RT conventions. Query evidence is saved as
+pgmc-one-hundred-fifty-three-alignments-query-results.txt in the session.
+
+Baseline/fingerprint effect: none; all46 scientific owner hashes,
+selected corpus and unchanged outside research/previous receipts are
+required to survive. No corpus, stage/context, FST, baseline,
+introduction or PDF adoption is authorized.
+
+### Residue
+
+Home's Baltic direction diagnostic, honey's secondary-n diagnostic,
+hood's dated PGmc membership, hoof's original laryngeal placement,
+horn's full ending/date equivalence, hound's settled dental origin,
+knead's fully dated e ancestry and knee's quoted selected-cell boundary
+remain explicit limits. No additional specialist-wide survey or
+scientific choice is implied. The full393-row alignment, class census,
+aggregate explanation, watchlist and report remain unfinished.
+Next alignment begins2086; no next tranche or automatic release is
+included in this checkpoint.
+
 ## Eighteenth alignment checkpoint: helmet through hold
 
 ### Identity

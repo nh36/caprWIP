@@ -320,8 +320,12 @@ class LiveAnalyticalTests(unittest.TestCase):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "insufficient_evidence")
 
     def test_calibration_preserves_cells_components_and_rejected_positions(self):
-        for row_id in ("1983", "1996", "2085", "2119", "2254", "2302"):
+        for row_id in ("1983", "1996", "2119", "2254", "2302"):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "different_units")
+        self.assertEqual((self.cases["core-2085"]["comparability"],
+                          self.cases["core-2085"]["alignment_status"]),
+                         ("insufficient_evidence", "bounded_limit"))
+        self.assertIn("not the selected short dative", self.cases["core-2085"]["alignment_limits"])
         self.assertEqual((self.cases["core-2040"]["comparability"],
                           self.cases["core-2040"]["alignment_status"]),
                          ("insufficient_evidence", "bounded_limit"))
@@ -376,11 +380,12 @@ class LiveAnalyticalTests(unittest.TestCase):
             FROM comparison_rationales cr JOIN rationales r USING(rationale_id)
             WHERE r.basis_type='loan_hypothesis' ORDER BY cr.comparison_id
         """)
-        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2272\n")
+        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2272\n")
         # Explicit reasons for a position need not explain the disagreement.
         self.assertTrue(self.cases["core-1975"]["rationale_ids"])
         self.assertEqual(self.cases["core-1975"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-2071"]["explanation_status"], "unestablished")
+        self.assertEqual(self.cases["core-2078"]["explanation_status"], "unestablished")
 
     def test_seventh_tranche_queries_scoped_causes_without_promoting_whole_rows(self):
         tables = {"forms": (survey.FORM_COLUMNS, self.forms),
@@ -609,7 +614,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t145\nunreviewed\t248\n")
+        """), "alignment_status\trows\nbounded_limit\t153\nunreviewed\t240\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -638,7 +643,7 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1558)
+                             for form in self.forms), 1590)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
@@ -715,6 +720,39 @@ class LiveAnalyticalTests(unittest.TestCase):
             FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2070 AND 2077
         """), "positions\tevidence\n154\t147\n")
         for row in map(str, range(2070, 2078)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
+
+    def test_nineteenth_focused_queries_keep_missing_causes_and_actual_cells(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT c.comparison_id,c.explanation_status,count(DISTINCT f.source_key) AS sources
+            FROM comparisons c JOIN comparison_analyses ca USING(comparison_id)
+            JOIN analyses p USING(analysis_id) JOIN forms f USING(evidence_id)
+            WHERE c.comparison_id IN ('home-baltic-admission','honey-suffix-n-origin',
+                                     'hound-dental-formation-warrant')
+            GROUP BY c.comparison_id,c.explanation_status ORDER BY c.comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\tsources\n"
+                    "home-baltic-admission\tunestablished\t2\n"
+                    "honey-suffix-n-origin\tunestablished\t2\n"
+                    "hound-dental-formation-warrant\tanalyst_inference\t2\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2078 AND 2085
+        """), "positions\tevidence\n136\t130\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,relation_to_row,attribution_status,stage_interpretation
+            FROM analyses WHERE row_id='2085' AND evidence_id IN
+                ('alignment-knee-plural-kneu','alignment-knee-short-stem')
+            ORDER BY evidence_id
+        """), "evidence_id\trelation_to_row\tattribution_status\tstage_interpretation\n"
+              "alignment-knee-plural-kneu\tsame_etymon_other_cell\tendorsed\tpwgmc\n"
+              "alignment-knee-short-stem\tsame_etymon_other_cell\tillustrative\toe\n")
+        for row in map(str, range(2078, 2086)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
 

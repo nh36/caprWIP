@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4691 evidence records,1380 actual consultations and4850
-analytical positions, with429 comparisons and277 rationales. The RT
+There are4738 evidence records,1380 actual consultations and4904
+analytical positions, with432 comparisons and302 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred forty-five core rows now have individually reconciled, bounded alignment:
-1933-2077. The remaining248 are unreviewed. The second tranche builds on
+One hundred fifty-three core rows now have individually reconciled, bounded alignment:
+1933-2085. The remaining240 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,35 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The nineteenth tranche completes home, honey, hood, hoof, horn, hound,
+knead and knee, rows2078-2085. All82 inherited analytical identities
+survive individual curation. Twenty-eight exact literal receipts and
+nineteen processes add47 records; the missing horn/Cercignani position
+reuses existing image-checked evidence. Six focused positions reuse
+process evidence, and twenty-five rationales are added. Thirty-eight
+SOURCE field amendments retain exact old/new/page-backed receipts:
+nine dates, four page ranges, twenty-four cells and one argument.
+One owner receipt upgrades the existing Fulk/knee consultation after
+three actual Gothic/Old Saxon literal cells are added; consultation
+identities and all786 dictionary reviews are unchanged
+[@Fulk2018, pp.153-154,264,387; @Cercignani1980, p.127].
+The136 positions link130 distinct evidence records.
+
+Home's inherited-comparison versus Baltic-loan premise and honey's
+secondary versus original suffixal n are focused substantive differences,
+but their causes remain unestablished. Hound's to-formation versus
+conditional dental-paradigm preference has a bounded analyst-inferred
+warrant explanation, not a named rebuttal or adopted ancestry
+[@Orel2003, pp.152,193; @Kroonen2013, pp.201,255-256,267].
+All eight whole-row causes remain unestablished. Explicit WGmc hood,
+qualified (post-)PNWGmc horn, knead's finite first-plural cells and
+body/index distinction, and knee's plural versus short pre-ending stem
+remain separate [@Orel2003, p.165; @RingeTaylor2014, pp.45,61,78,187,387;
+@Kroonen2013, p.295; @Fulk2018, pp.153-154,264,387].
+The protected knee input, target and stage are unchanged. No corpus,
+stage/context, FST, baseline, introduction or PDF adoption is included.
+The full393-row programme remains unfinished; next alignment begins2086.
 
 The eighteenth tranche completes helmet, help verb, help noun, herd,
 hew, hind, hoard and hold, rows2070-2077. All102 inherited analytical

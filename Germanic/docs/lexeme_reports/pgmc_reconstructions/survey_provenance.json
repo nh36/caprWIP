@@ -1,7 +1,7 @@
 {
   "alignment_statuses": {
-    "bounded_limit": 145,
-    "unreviewed": 248
+    "bounded_limit": 153,
+    "unreviewed": 240
   },
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
@@ -10,12 +10,12 @@
     "Germanic/docs/assembly/build_class_manifests.py": "56220c90df9a3dd73a5a678e18cf3cef8ea47d74dc4f81f475b4f5099753ea3e",
     "Germanic/docs/lexeme_reports/model_entries/2040-gift-\u0121ift.model.md": "53960957958afadcea0f3b4b788d7e25d6ccd45723cfc5f21d2ae4f64ae101de",
     "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.source_ledger.md": "b2390923a6d59dde723786212f6f8a457deb585717af1212a364092e5958bd39",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "cc1f82bfc42ed2dae3347f914c7599cad0a57d869a331db251edb65be9c29e55",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/commentary.md": "afddb1b1750b66e754574e825ab08deefae2ea2bcccfcd204e64471a0c1ea747",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "8c139853ab8f94502a766e37ee657f658678c153b3806fd07df8b040a21c0a98",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv": "0f424410cb4d63c64aa4a7615943528cde6d4b07fc56c4901da7e326f642e456",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv": "9dc906020b6521da171fcf61263a06611c935faab1ec230b91722ceaadbf9587",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv": "4eb63edb24aba0bf97a60af72d1ca07f8f75a9b977af18500bc83d00dd34f2d4",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "788716da5463f17124b33fce6796a9b2a06ca132c180bc21a6b466097a675753",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/commentary.md": "12e4543d1a687f4b7b2999319ff1ca7b3b3775a7a4c64ba790567ac6706f34ee",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "c649a46a879875b461f649f75b248043febb449ff4d0c86d7e442556dececfe9",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv": "8cef685ecfdefe8cfc76edc5f92cfe44060eaf74edc71ec7a6394305139263be",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv": "69e34cee6573ce4c0d373fca7902984fe91e428836964bd2f61e10c80b177a8b",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv": "a71de965eb9f10f50ad68ae4105a5b7ed4a3c2a4e46fc721c89b29b0c3651e83",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-1941-1949-amendments.tsv": "1f0a5f4a0a499654de6ffc6f262ee72bc17366320ea225e0dc4e67ee660ec4be",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-1941-1949-occurrences.tsv": "64a7f810df445749df9866114a25d33b991a4581d90b89eb3fe7f35518f6a978",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-1950-1957-amendments.tsv": "4299a7ded8f798453c1ecd7fe3d4bf8a8030b8f4358621d8b0e08ff541472a4f",
@@ -56,6 +56,9 @@
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-2070-2077-occurrences.tsv": "47a38a8ea924d65fb2a5d7cbf08dfb4e3fdb0772ce53ea61e7a7552729920183",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-2070-2077-owner-amendments.tsv": "eb57380b40007297b9e11ec15d58544ea4efd54d8fef24e2e6d78e92e3c7c433",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-2070-2077-position-amendments.tsv": "874d4f15a1bf4e8128d4953a798386c21eec4541ba136b2670ab5b1d9ff27b46",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-2078-2085-amendments.tsv": "abf2b2f7aeb4f3148de0ec32a416e075d6ac14774635ba6b88d6aebeba21b91e",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-2078-2085-occurrences.tsv": "d749cf9d38e6c21df09c01e4c12552d4933a846bf83079d803ddde1dfafdee00",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-2078-2085-owner-amendments.tsv": "74da0fa48b83ff545d7e8f5be7214318e41f1ae9c70d10cbb639f70e559fa9bf",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/fulk-applicability.tsv": "4554b7babefff75aab72fb0ac143912b06cc4bb2b5ab10dedd0dc3ea7570eb49",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/fulk-image_checks.tsv": "d826e492ec31ad21d54072f6bd94a567ea834620e2d71a98974a4443360f9e07",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/fulk-selected_cell_guard_provenance.tsv": "918e956e9e188aafe342343714fe680966adbe67f18fb4bda64c0998cf68a9b8",
@@ -98,9 +101,9 @@
     "verification_gap": 1
   },
   "reason_targets": {
-    "descriptive_bridge": 26,
-    "divergence_explanation": 30,
-    "position_support": 221
+    "descriptive_bridge": 30,
+    "divergence_explanation": 31,
+    "position_support": 241
   },
   "required_reading_targets": 1368,
   "source_row_checks": 1380,

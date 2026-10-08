@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-192 Ringe,137 Fulk and255 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains4384 evidence
-records,1379 actual consultations,4512 positions,414 comparisons and171
+192 Ringe,138 Fulk and255 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains4738 evidence
+records,1380 actual consultations,4904 positions,432 comparisons and302
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:89 core rows are bounded and304 unreviewed.
+explanation remain ongoing:153 core rows are bounded and240 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,230 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Nineteenth alignment: comparative admission, suffixal nasals and actual knee cells
+
+The eight rows2078-2085 are home, honey, hood, hoof, horn, hound, knead
+and knee. All82 inherited analytical identities are individually retained
+and reconciled; the horn quotation already held from Cercignani is now
+linked as a reviewed position rather than left outside the comparison.
+Twenty-eight new literal occurrences and nineteen complete-argument
+processes add47 evidence records. Six focused positions reuse evidence;
+twenty-five rationales distinguish source support, descriptive bridges and
+the one bounded inferred explanation. Thirty-eight exact SOURCE field
+amendments repair actual dates, pages, cells and the inherited knead-index
+classification without replacing diplomatic forms or confidence. The
+136 positions link130 distinct records. These are research denominators,
+not independent-author counts or a proportion of resolved ancestral histories.
+
+### Home: a citation, an instrumental and Baltic comparisons
+
+Orel's az/iz alternatives carry masculine/feminine labels, but this
+does not authorize individually assigning every alternative a gender
+when the entry does not do so. His Gothic plural-base formation is
+another cell. Greek village and Baltic/Slavic village-family comparisons
+are part of his own comparative account; the Irish relationship is
+qualified. Vine's rejection of the Greek comparison occurs as a reported
+bibliographical position, not a freshly consulted original and not an
+exclusive Orel rejection [@Orel2003, p.152].
+
+Kroonen's masculine mo-stem is linked to the explicitly PIE root
+\emph{*kei-} 'lie'. The separate \emph{*koi-mo-} header marked IE does
+not independently establish a precise PIE date. The Baltic village
+words are expressly Germanic loans, while the Celtic dear comparison
+uses the semantic bridge from same home to intimate. The actual
+household cross-reference gives an n-plural formation derived from
+marriage and relates it more deeply to home; it is not another home
+nominative [@Kroonen2013, pp.201,227].
+
+The focused Baltic comparison is therefore substantive: Orel admits a
+comparison where Kroonen identifies borrowing. It remains unexplained
+in the stronger sense. The passages do not supply a complete directional
+diagnostic accounting for why each author adopted that classification.
+Neither an inventory of different cognates nor the statement that one
+author says loan establishes the full cause of their divergence
+[@Orel2003, p.152; @Kroonen2013, p.201].
+
+Ringe-Taylor's PNWGmc \emph{*haimu} is a likely ancestor of an endingless
+OE dative/instrumental singular, not a substitute quotation for selected
+*hām* 'home'. The PGmc az citation belongs to the separate ai history.
+The later locative discussion conditionally invokes a PWGmc instrumental
+and notes the relatively late documentation of the home examples.
+Night's dative and day's hypothetical analogical i ending belong to
+another explanation; the first night occurrence explicitly carries both
+PGmc and PWGmc labels, while the repeated occurrence belongs to a
+later-loss discussion. Those examples do not become home case endings
+[@RingeTaylor2014, pp.15,170-171,379-380].
+
+### Honey: original versus secondary n is not a vowel-notation dispute
+
+Orel reconstructs a neuter honey formation, calls the additional ON n
+secondary, and proposes a taboo-motivated innovation from a yellow
+adjective. Sanskrit gold, Greek pale yellow and Prussian brown are
+admitted comparisons; Hilmarsson's Tocharian bee is a reported addition.
+The entry does not furnish a separate explicit diagnostic proving that
+the ON n is secondary [@Orel2003, p.193].
+
+Kroonen's citation is masculine despite the neuter OE reflex. The body
+explicitly calls the honey stem PGm, independently supplying the stage
+that its header alone would not establish. Safflower and honey seem
+derived from a brownish-yellow/amber root or adjective. Suffixal n is
+original in this account, retained in ON/OHG/Dutch and dissimilated in
+many other daughters. Tocharian bee, Prussian brown and Sanskrit gold
+are formally problematic. This is not merely a different way of writing
+Orel's same formation [@Kroonen2013, pp.255-256].
+
+The focused original-versus-secondary-n case retains that opposition.
+Kroonen's distributional warrant is visible, but Orel's specific
+diagnostic for secondary n is not supplied. Color derivation and taboo
+innovation must not automatically become an explanation of this nasal
+disagreement. Its cause therefore remains unestablished even though
+the actual claimed directions are now queryable
+[@Orel2003, p.193; @Kroonen2013, pp.255-256].
+
+Ringe's *mili/milid* honey material belongs to a different etymon,
+preserved in *mildēaw* 'nectar'; it cannot be counted as his selected
+*huniġ* 'honey' reconstruction or another positive vote for its suffix
+[@Ringe2017, pp.152,168,223,311-312].
+Ringe-Taylor's northern intervocalic-n inhibition of lowering is
+different from hound's coda-nasal blocker. His PWGmc honag/hunag pair
+is two alternatives under one label, not an arrow from one dated stage
+to another. Subsequent unstressed fronting, palatalization and late
+raising are separate processes. Both identical-looking huneg arrow
+occurrences are retained at each relevant passage; the native text's
+failure to preserve their phonetic distinction is not repaired by
+inventing characters. The holy adjective is a suffix comparandum, not
+honey family evidence, and the late honey i did not trigger earlier
+mutation [@RingeTaylor2014, pp.30-32,152-153,211-213,334-335].
+
+### Hood and hoof: a stage limit and two laryngeal placements
+
+Orel explicitly gives WGmc hood with unknown origin. The existing
+image-checked barred dental survives; plain OCR d cannot replace it.
+His hat/hood comparison is a separate family citation, not evidence
+that the selected hood whole word is explicitly dated PGmc
+[@Orel2003, p.165].
+Kroonen distinguishes hood, a potentially derived guard verb and a
+regular causative alternative. The cautious-meaning connection remains
+possible. The required hat cross-reference discusses an n-stem
+accusative-plural split and a possible goat-skin origin; neither that
+formation nor a generic IE header supplies a dated selected hood
+ancestor [@Kroonen2013, pp.214,238].
+
+Hoof is distinct from Orel's adjacent measure/moderation homonym.
+His Indo-Iranian comparisons belong to the hoof entry, not that
+homonym [@Orel2003, p.181].
+Kroonen compares Germanic \emph{*koHp-o-} with Indo-Iranian
+\emph{*kopH-o-}. Metathesis occurred on one side, but Germanic
+primacy remains possible rather than certain. Slavic hoof is explicitly
+unrelated and derived from dig. His heap cross-reference leads to the
+mountain/hump argument: Avestan supports one laryngeal placement,
+Slavic material another, the position is difficult, and Iranian
+metathesis seems likely. This strengthens a comparative warrant
+without changing the hoof entry's qualification into a proved
+chronology. A capital H alone is not a date
+[@Kroonen2013, pp.216-217,238-239,257].
+
+### Horn and hound: lowering domains, gender and the dental
+
+The horn citations are reconstructed neuters even where OE is labelled
+masculine. Deer and brain are derivatives, not alternative selected
+horn cells, and Orel's Sanskrit nominative comparison retains its
+probable/unattested qualification
+[@Orel2003, p.195; @Kroonen2013, p.259].
+Ringe's PGmc noun and Early Runic accusative inscription are different
+units: syntactic attestation is not another PGmc historical date
+[@Ringe2017, pp.115,236].
+Ringe-Taylor's lowering chain explicitly qualifies the middle stage
+as (post-)PNWGmc. Retaining the qualifier in SOURCE and recording the
+analytical stage-boundary alternative prevents an unqualified NWGmc
+assertion. The native hurnga/horng characters remain source text,
+not conjecturally corrected ending reconstructions. The external
+runic chronological qualification supplies no adopted edge
+[@RingeTaylor2014, pp.27-29,44-46].
+
+Cercignani's already image-checked PGmc horn quotation is now an
+analytical member. His footnote defines h as a voiceless velar spirant;
+removing phonemic slashes does not prove equivalence of final an and
+CAPR's nasal-vowel spelling. His objection to early lowering remains
+independent of agreement on the earlier u. His incidental hound
+example does not manufacture a new hound consultation
+[@Cercignani1980, p.127].
+
+Orel's masculine dog/hound is not hundred. He owns a to-formation and
+the Latvian deprecatory big-dog comparison. Kroonen calls the dental's
+origin uncertain; only if isolated greyhound full grade is taken at
+face value does the proposed ablauting dental paradigm suggest itself.
+Its nominative, genitive and accusative are independent cells, with
+capital K and qualifications retained. The actual greyhound
+cross-reference rejects Wendish-hound using initial hw
+[@Orel2003, p.193; @Kroonen2013, pp.256,267].
+CAPR's focused inference is limited to the competing warrants:
+suffixal formation with the Latvian comparison versus the conditional
+full-grade paradigm inference. It is not a directly named rebuttal,
+a settled dental origin or an explanation of the whole selected word.
+The PGmc coda-nasal lowering negative is separately owned by
+Ringe-Taylor, not merged with honey's nasal domain
+[@RingeTaylor2014, pp.28-29].
+
+### Knead and knee: finite forms and the selected-cell boundary
+
+Orel's strong knead infinitive and Old Swedish present antecedent
+remain distinct [@Orel2003, p.218].
+Kroonen's complete knead entry ends on printed295, not296. Its
+full/zero citation stems are not the finite kundume/knudume first-plural
+forms; its quasi-PIE full/zero present illustration is not an
+unqualified PIE date. Apparent remodeling, the Germanic loan in
+Prussian kneading-trough, iterative knuttōn and the tread cross-reference
+are separate arguments [@Kroonen2013, pp.295,298,521].
+Ringe argues original zero grade and later WGmc class-V e pattern
+pressure, with sketchier knead evidence than tread; OE/OHG regularization
+does not retrospectively create a PGmc full-grade endpoint
+[@Ringe2017, pp.109,274-275].
+Ringe-Taylor explicitly labels both zero-grade infinitives PGmc and
+both regularized infinitives PWGmc. Tread and ask are comparanda;
+ask's present n is not a knead ending [@RingeTaylor2014, pp.77-79].
+
+Fulk's actual aorist-present section begins263, with the explicit
+PGmc knead body form on264. Weak ON *knoða* 'knead' is compared with
+strong full-grade OE *cnedan* 'knead'; it does not prove a PGmc weak
+classification. The starless index quotation at387 remains a separate
+printed unit, including its native ending. The debated PIE inheritance
+versus post-PIE innovation and footnote qualifications survive; tread's
+root alternatives do not automatically assign knead a root
+[@Fulk2018, pp.263-265,387].
+
+Knee's dictionary noun citations are not its selected short dative.
+Orel's thematic derivative and Tocharian dual, Kroonen's possible
+genitive/proterodynamic account beside static-neuter alternatives,
+and Ringe's PGmc citation retain their actual scope
+[@Orel2003, p.218; @Kroonen2013, p.296; @Ringe2017, pp.109,119].
+Ringe-Taylor's chain on61 is nominative/accusative plural. On387 the
+first PWGmc kneu occurrence is singular and the second plural, deriving
+from different PGmc cells despite identical endingless spelling.
+His short pre-ending *cneow-* is not full *cneowe*; the high-front
+blocking condition and long endingless outcome are independent.
+Later long-vowel leveling is reasonable but metrically elusive.
+The straw and custom comparanda are not knee or pain
+[@RingeTaylor2014, pp.60-62,173-175,187-188,386-388].
+
+Fulk's Gothic *kniu* 'knee' is nominative/accusative singular,
+*kniwa* plural, and Old Saxon *kneohon* dative plural. Adding those
+three actual literal cells upgrades the existing consultation from
+discussion-only, without inventing an OE dative quotation or certifying
+every generic wa-stem table cell as independently attested. The
+general w-loss/analogy argument remains distinct from the selected
+regular knee input [@Fulk2018, pp.153-154].
+
+All eight whole-row causes remain unestablished. The source-specific
+lowering controls are not a completed conditioning census. Exact
+selected-cell, comparative-direction, formation and historical-date
+limits remain queryable rather than converted into agreement.
+The adopted knee input/target/stage, all other scientific owners,
+prior receipts and outside analytical identities are unchanged.
+This tranche completes153 bounded rows and leaves240 unreviewed;
+it does not implement a reconstruction recommendation, reopen
+production assays, revise the introduction or publish a PDF.
 
 ## First reconciled feature alignments: nine bounded cases, not a closed population
 
