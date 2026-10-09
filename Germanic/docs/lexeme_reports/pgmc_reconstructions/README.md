@@ -109,8 +109,8 @@ explanation or exact remaining premises, the conditioning census and a
 non-adopting consistency watchlist. The current analytical gate still
 certifies citation-unit triage only.
 
-All three relevant held-source passes are persisted: Ringe192, Fulk138
-and Ringe-Taylor255 actual consultations. Each has393 independent
+All three relevant held-source passes are persisted: Ringe192, Fulk144
+and Ringe-Taylor256 actual consultations. Each has393 independent
 applicability dispositions; the1179 screens are not1179 grammar
 negatives. All786 core reviews remain. Of20 scopes,19 are reviewed
 and the Ringe-Taylor conventions scope retains its genuine verification
@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4738 evidence records,1380 actual consultations and4904
-analytical positions, with432 comparisons and302 rationales. The RT
+There are4792 evidence records,1387 actual consultations and4962
+analytical positions, with434 comparisons and332 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred fifty-three core rows now have individually reconciled, bounded alignment:
-1933-2085. The remaining240 are unreviewed. The second tranche builds on
+One hundred sixty-one core rows now have individually reconciled, bounded alignment:
+1933-2093. The remaining232 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -137,7 +137,32 @@ none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
 
-The nineteenth tranche completes home, honey, hood, hoof, horn, hound,
+The twentieth tranche completes knight, knob, lade, land, lap, last,
+laugh and lead, rows2086-2093. All83 inherited identities are individually
+reconciled;28 exact literals and26 processes add54 records. Four focused
+positions reuse evidence and30 rationales are added. Fifty-five exact
+SOURCE amendments cover39 cells, seven local dates, five page ranges,
+three reported authors and one component kind. Forty-three owner-field
+receipts preserve the original screening while recording six real Fulk
+consultations and the previously missed RT/lade consultation; seven
+finite targets are added, not a blanket class review
+[@Fulk2018, pp.52-53,73-75,114-117,265-266,294-295,301-303;
+@RingeTaylor2014, pp.233,343-344].
+The141 positions link136 distinct records. Last's know/track commitment
+and lead's owned causative versus reported nominal derivation remain
+focused substantive but unexplained; all eight whole-row causes remain
+unestablished [@Kroonen2013, pp.323-324,339-340; @Orel2003, pp.232-233].
+Both RT landu occurrences are plural, not instrumental; landa is
+hypothetical Gothic, not an intermediate arrow. Laugh's underlying,
+surface and hj-component records remain distinct
+[@RingeTaylor2014, pp.15,51,286,348].
+Independent verification reverses the exact owner fields and removes
+only the seven new targets to reconstruct their frozen original hashes.
+All prior receipts, source catalogue,786 dictionary reviews, outside
+research and46 protected scientific hashes remain unchanged.
+This is not an input/stage/FST adoption or the completed393-row programme.
+
+The nineteenth tranche completed home, honey, hood, hoof, horn, hound,
 knead and knee, rows2078-2085. All82 inherited analytical identities
 survive individual curation. Twenty-eight exact literal receipts and
 nineteen processes add47 records; the missing horn/Cercignani position

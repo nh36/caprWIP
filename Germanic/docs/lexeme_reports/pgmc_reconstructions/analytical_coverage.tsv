@@ -152,14 +152,14 @@ row_id	status	comparison_ids	alignment_status	alignment_case_ids
 2083	reviewed	core-2083	bounded_limit	core-2083
 2084	reviewed	core-2084	bounded_limit	core-2084
 2085	reviewed	core-2085	bounded_limit	core-2085
-2086	reviewed	core-2086	unreviewed	
-2087	reviewed	core-2087	unreviewed	
-2088	reviewed	core-2088	unreviewed	
-2089	reviewed	core-2089	unreviewed	
-2090	reviewed	core-2090	unreviewed	
-2091	reviewed	core-2091	unreviewed	
-2092	reviewed	core-2092	unreviewed	
-2093	reviewed	core-2093	unreviewed	
+2086	reviewed	core-2086	bounded_limit	core-2086
+2087	reviewed	core-2087	bounded_limit	core-2087
+2088	reviewed	core-2088	bounded_limit	core-2088
+2089	reviewed	core-2089	bounded_limit	core-2089
+2090	reviewed	core-2090	bounded_limit	core-2090
+2091	reviewed	core-2091	bounded_limit	core-2091
+2092	reviewed	core-2092	bounded_limit	core-2092
+2093	reviewed	core-2093	bounded_limit	core-2093
 2094	reviewed	core-2094	unreviewed	
 2095	reviewed	core-2095	unreviewed	
 2096	reviewed	core-2096	unreviewed	

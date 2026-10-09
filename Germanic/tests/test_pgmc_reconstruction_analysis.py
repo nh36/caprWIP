@@ -614,7 +614,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t153\nunreviewed\t240\n")
+        """), "alignment_status\trows\nbounded_limit\t161\nunreviewed\t232\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -643,7 +643,7 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1590)
+                             for form in self.forms), 1605)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
@@ -753,6 +753,33 @@ class LiveAnalyticalTests(unittest.TestCase):
               "alignment-knee-plural-kneu\tsame_etymon_other_cell\tendorsed\tpwgmc\n"
               "alignment-knee-short-stem\tsame_etymon_other_cell\tillustrative\toe\n")
         for row in map(str, range(2078, 2086)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
+
+    def test_twentieth_scoped_queries_preserve_unknown_causes_and_reported_ownership(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT c.comparison_id,c.explanation_status,count(DISTINCT f.source_key) AS sources
+            FROM comparisons c JOIN comparison_analyses ca USING(comparison_id)
+            JOIN analyses p USING(analysis_id) JOIN forms f USING(evidence_id)
+            WHERE c.comparison_id IN ('last-know-family-warrant','lead-causative-versus-reported-nominal')
+            GROUP BY c.comparison_id,c.explanation_status ORDER BY c.comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\tsources\n"
+                    "last-know-family-warrant\tunestablished\t2\n"
+                    "lead-causative-versus-reported-nominal\tunestablished\t2\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2086 AND 2093
+        """), "positions\tevidence\n141\t136\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,stage_interpretation FROM analyses
+            WHERE row_id='2089' AND evidence_id='rt-complete-2089-003'
+        """), "evidence_id\tstage_interpretation\nrt-complete-2089-003\tother\n")
+        for row in map(str, range(2086, 2094)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
 

@@ -1,0 +1,962 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment-knight-variant	RingeTaylor2014	337	352	5	134	140	cnieht	3c0a6b8301cb67189e1171bd5db5c529aa7a22254d555ee882d063a3308b09e4	"PWGmc *kneht ‘boy’ (OF kniucht ‘servant’, OS, OHG kneht ‘boy, servant, retainer’)
+> OE *cneoht, nom. pl. *cneohtas > early WS cniht ~ cnieht, cneohtas — also sg.
+cneoht and pl. cnihtas."		
+alignment-knight-unraised-plural	RingeTaylor2014	337	352	5	142	150	cneohtas	3c0a6b8301cb67189e1171bd5db5c529aa7a22254d555ee882d063a3308b09e4	"PWGmc *kneht ‘boy’ (OF kniucht ‘servant’, OS, OHG kneht ‘boy, servant, retainer’)
+> OE *cneoht, nom. pl. *cneohtas > early WS cniht ~ cnieht, cneohtas — also sg.
+cneoht and pl. cnihtas."		
+alignment-knight-leveled-plural	RingeTaylor2014	337	352	5	177	184	cnihtas	3c0a6b8301cb67189e1171bd5db5c529aa7a22254d555ee882d063a3308b09e4	"PWGmc *kneht ‘boy’ (OF kniucht ‘servant’, OS, OHG kneht ‘boy, servant, retainer’)
+> OE *cneoht, nom. pl. *cneohtas > early WS cniht ~ cnieht, cneohtas — also sg.
+cneoht and pl. cnihtas."		
+alignment-knight-fulk-reflex	Fulk2018	75	92	1	695	700	cniht	ee2a9b6802d023b245ebc5cfb11a30bc603d0a91a5077830e7d46fdf6e928d9e	"§4.13 Stressed vowels in early Old English 75
+*sexwana""; slēan ‘strike' < *sleahan < *slæxan < *slaxana"": 5 freond 'friend' <
+*fri(j)ōnd-.6 Compensatory lengthening occurs upon loss of x between voiced sounds,
+even with an intervening liquid consonant, as in gen. sg. mēares (cf. nom. mearh
+'horse'), þweal 'washing' (cf. Go. þwahl), ēored 'troop' < *eoh-rād-. Poetic meter
+sometimes preserves evidence of the state before the application of contraction and
+compensatory lengthening (see Fulk 1992: 92-121).
+In a process referred to as palatal umlaut, e (or eo or io developed from it, where
+Anglian smoothing did not apply) before /x/ plus consonant in absolute finality was
+raised to i, as in cniht ‘boy', riht ‘right', wrixl 'change'. It cannot be determined
+whether the digraph in siex 'six' represents an actual diphthong.
+On front and back umlaut, see §§4.7-8. For further details of OE vowel develop-
+ments (especially changes of the literate period, which are for the most part left uncon-
+sidered here), consult the sources cited in §1.16.
+1. It appears rather that supposed instances of breaking before w can be explained as due to back mutation
+(§4.8): see Fulk 1993b: 350 n. 6, idem 1992: 146 n. 2. On Gmc. breaking in general, see Roelands 1989,
+Liberman 1998, Kostakis 2015. On OE breaking in particular, see H.F. Nielsen 1984 (and the refs. there),
+Strøjer 1984, Kortlandt 1994a, Suzuki 1994; also Hogg 1992: §§5.16–34, with refs.
+2. Howell (1991b) argues on the basis of parallels chiefly in German dialects that breaking in OE is instead
+a consequence of weakening of the relevant consonant. The chief difficulty confronting this view is that /x/
+would appear not to have been weakened in the relevant environments in OE, as shown by later develop-
+ments, including Anglian smoothing and LWS smoothing (see A. Campbell 1977: §§222–33, 312–14), and
+development of [x] to [y] and [f] in ME (Jordan 1974: §§196–7). Lutz 1991 likewise explains various vowel
+developments in the history of English as due to weakening of /x/. Gąsiorowski (2006) argues that the
+articulation of OE /r/ was hardly uniform- -as might be expected on the basis of modern dialects.
+3. At the time of breaking, WS had no ē in the relevant environments and non-WS no æ.
+4. Although WS had a where Anglian had ē at the time of this change, a new ē had arisen by lengthening
+under Prokosch's law (§2.5), hence *3ē ‘you (pl.)' (> Mercian gē) by analogy to we 'we' (§8.3).
+5. It is sometimes assumed that in forms like *seohan and *sleahan the loss of h induced lengthening of the
+preceding vowel before contraction: so, e.g., Hogg 1992: §7.45. Yet there would have been nothing to
+compensate in terms of syllable weight and structure if, as is usually supposed, h in such forms was in the
+syllable onset rather than the coda. See Fulk 1992: § 101. It should be noted that when contracted forms like
+seon demand disyllabic scansion in verse, a heavy initial syllable is never required.
+6. Unlike the other examples, frēond is never disyllabic in verse, and at some places the meter demands a
+monosyllable (i.e., not *frijōnd-), e.g. Beowulf 1385a.
+4.14 Changes of stressed vowels in Old Frisian
+There is breaking of e and i to iu, a rising diphthong, before /x/ + /x, s, t/, as in *texxō-
+> tiuche 'team, parcel of land',
+2 sg.
+*sixist *sixst > siuchst 'see', *fextan > fiuchta
+'fight'. Breaking is prevented by i in the following syllable, as in *plixti- > plecht
+'duty'. Unlike in OE, i-umlaut antecedes breaking in OFris. (see Stiles 1995: 194–5).¹
+As in OE, adjacent vowels contract upon loss of intervocalic h: -a-a- contracts to
+-ā-, as in WGmc. *slaxan> slā ‘strike’; -e-a- contracts to -iā-, as in *sexwan > siā
+'see', and -o-a-, whether in verba pura or due to loss of intervocalic x, yields -uā-, as in
+*do-an (§12.61) > dwā 'do' and WGmc. *xā""xan > *hōxan> hwā ‘hang'.
+PGmc. eu develops to a rising diphthong ia (cf. Kentish OE, §4.13 supra), as in
+PGmc. *leubaz > liāf ‘dear' and *beuðana""> biāda ‘offer'.
+Palatalization of 3 (§6.17) resulted in the rise of a new diphthong ei, as in
+*waznaz> *wæzn> wein 'cart' and *xu3iz> *hy3i> hei 'mind' (§4.7)."		
+alignment-knob-pre-nom	Kroonen2013	294	334	1	2222	2231	*gnobh-ōn	1209b781e8fc7eede0295e453092ed78c6634fb1e040a53dd3ed622bc37317ed	"294
+*klinnan-
+tinue an original nu-present through a Pre-Gm. paradigm 3sg. *klinkkeupi,
+3pl. *klingunnenbi < *glenk-néu-ti, *glenk-nu-énti. It must be stressed, how-
+ever, that the hypothetical geminate of *klinkwan- may also have been
+adopted from the iterative 3sg. *klunkkōþi, 3pl. *klungunanþi, for which cf.
+MHG klungeln 'glomerare'. Further cf. ON kløkkr adj. 'weak, moldable' <
+*klinkwa- and LG klinker adj. 'soft' < *klinkra-.
+*klinnan- s.v. 'to sound, resound' - OFri. klinnan s.v. 'id.'
+*glénu-e-? (GM).
+No certain etymology, but reminiscent of *klingan- ~*klinkan- (q.v.). The
+double n of *klinnan- as opposed to the related *klunjan- (q.v.) could point
+to a Pre-Gm. form *glénu-e, i.e. a nu-present to a root *gel-, cf. *kallōn-. For a
+similar derivational pathway, cf. *brinnan- 'to burn'.
+*kluban- m. 'cleft, rift' - ON klofi m. 'id.', MDu. clove m./f. 'id.', Du. kloof c.
+'id.' (DRV).
+An n-stem derived from the strong verb *kleuban- (q.v.).
+-
+*klumpan- m. 'lump' E clump, Du. klomp c. 'id.', G Klumpen m. 'id.' (DRV).
+A zero-grade n-stem derived from *klimman- ~ *klimb/pan- (q.v.).
+*klunjan-w.v. 'to sound?' - OE clynnan, clynian w.v. 'to sound, resound; to
+cause to sound, knock', MDu. clonen w.v. 'to hit', Du. kleunen w.v. 'id.' (GM).
+A ie-present related to the strong verb *klinnan- (q.v.).
+*klunk/gōn- w.v. 'to sound, ring'
+-
+E to clunk 'to sound; to hit', MDu.
+clongen, clonken w.v. 'to sound' ⇒ *glngh-néh₂-? (DRV).
+The iterative to the strong verb *klingan- ~ *klinkan-, apparently contin-
+uing Pre-Gm. 3sg. *klunkkōþi, 3pl. *klungunanþi < *glngh-néh₂-ti,
+*glngh-nha-énti.
+*knabila- m. '(horizontal) bar' - ON knefill m. 'post, pole', MLG knevel m.
+'short thick bail, toggle', EDu. knevel 'sinew, strap; fetter', Du. knevel c. 'gag',
+OHG knebil m. 'cudgel', G Knebel m. ‘handle, toggle, gag' (DRV).
+The diminutive to *knab/ppan- (q.v.).
+-
+*knab/ppan- m. 'knob; boy' — Nw. knape m. 'guy; pin', OE cnafa, cnapa m.
+'boy', E knave, OFri. knap(p)a m. 'id.', OS knapo m. 'id.', ODu. knapo m. 'id.',
+Du. knaap c. 'boy; coat hanger', OHG knabo, knappo m. 'boy', G Knabe,
+Knappe m. 'boy', dial. 'peg' (NEUR?).
+The root variation results from an allomorphic n-stem paradigm *knabō,
+gen. *knappaz < Pre-Gm. *gnobh-ōn, gen. *gnobh-n-ós, that split up into 1)
+*knabō, *knabbaz and 2) *knapō, *knappaz. The original meaning of the
+word may have been 'peg', cf. the closely related thematic formation ON"		
+alignment-knob-pre-gen	Kroonen2013	294	334	1	2238	2249	*gnobh-n-ós	1209b781e8fc7eede0295e453092ed78c6634fb1e040a53dd3ed622bc37317ed	"294
+*klinnan-
+tinue an original nu-present through a Pre-Gm. paradigm 3sg. *klinkkeupi,
+3pl. *klingunnenbi < *glenk-néu-ti, *glenk-nu-énti. It must be stressed, how-
+ever, that the hypothetical geminate of *klinkwan- may also have been
+adopted from the iterative 3sg. *klunkkōþi, 3pl. *klungunanþi, for which cf.
+MHG klungeln 'glomerare'. Further cf. ON kløkkr adj. 'weak, moldable' <
+*klinkwa- and LG klinker adj. 'soft' < *klinkra-.
+*klinnan- s.v. 'to sound, resound' - OFri. klinnan s.v. 'id.'
+*glénu-e-? (GM).
+No certain etymology, but reminiscent of *klingan- ~*klinkan- (q.v.). The
+double n of *klinnan- as opposed to the related *klunjan- (q.v.) could point
+to a Pre-Gm. form *glénu-e, i.e. a nu-present to a root *gel-, cf. *kallōn-. For a
+similar derivational pathway, cf. *brinnan- 'to burn'.
+*kluban- m. 'cleft, rift' - ON klofi m. 'id.', MDu. clove m./f. 'id.', Du. kloof c.
+'id.' (DRV).
+An n-stem derived from the strong verb *kleuban- (q.v.).
+-
+*klumpan- m. 'lump' E clump, Du. klomp c. 'id.', G Klumpen m. 'id.' (DRV).
+A zero-grade n-stem derived from *klimman- ~ *klimb/pan- (q.v.).
+*klunjan-w.v. 'to sound?' - OE clynnan, clynian w.v. 'to sound, resound; to
+cause to sound, knock', MDu. clonen w.v. 'to hit', Du. kleunen w.v. 'id.' (GM).
+A ie-present related to the strong verb *klinnan- (q.v.).
+*klunk/gōn- w.v. 'to sound, ring'
+-
+E to clunk 'to sound; to hit', MDu.
+clongen, clonken w.v. 'to sound' ⇒ *glngh-néh₂-? (DRV).
+The iterative to the strong verb *klingan- ~ *klinkan-, apparently contin-
+uing Pre-Gm. 3sg. *klunkkōþi, 3pl. *klungunanþi < *glngh-néh₂-ti,
+*glngh-nha-énti.
+*knabila- m. '(horizontal) bar' - ON knefill m. 'post, pole', MLG knevel m.
+'short thick bail, toggle', EDu. knevel 'sinew, strap; fetter', Du. knevel c. 'gag',
+OHG knebil m. 'cudgel', G Knebel m. ‘handle, toggle, gag' (DRV).
+The diminutive to *knab/ppan- (q.v.).
+-
+*knab/ppan- m. 'knob; boy' — Nw. knape m. 'guy; pin', OE cnafa, cnapa m.
+'boy', E knave, OFri. knap(p)a m. 'id.', OS knapo m. 'id.', ODu. knapo m. 'id.',
+Du. knaap c. 'boy; coat hanger', OHG knabo, knappo m. 'boy', G Knabe,
+Knappe m. 'boy', dial. 'peg' (NEUR?).
+The root variation results from an allomorphic n-stem paradigm *knabō,
+gen. *knappaz < Pre-Gm. *gnobh-ōn, gen. *gnobh-n-ós, that split up into 1)
+*knabō, *knabbaz and 2) *knapō, *knappaz. The original meaning of the
+word may have been 'peg', cf. the closely related thematic formation ON"		
+alignment-knob-fulk-b	Fulk2018	116	133	1	3658	3665	*knaba-	06fd15667f91aec069f5b8aba67bff26ba4f91e3eeadc951432b79b30d390912	"116
+A Comparative Grammar of the Early Germanic Languages
+weak verbs is difficult to perceive (e.g. OE cnotta ‘knot' and læppa ‘lobe'; Lühr 1988
+collects examples), and in view of such instances, the degree to which NWGmc. forms
+with geminate obstruents are to be found in n-stem nouns and in verbs (presumably)
+with n-suffix, as predicted by Kluge, is impressive. Thus, although Kluge's account de-
+mands much conjecture, it cannot justly be called improbable, and in fact in some in-
+stances it does seem the most plausible explanation.
+Yet even if Kluge's account is admitted, significant problems remain. Given the
+reconstruction of the PIE obstruents represented above (§6.1), it is difficult to see why
+the voiced aspirates should have been devoiced only when geminated. To explain this it
+has been proposed that Kluge's law applied before the devoicing of voiced stops under
+Grimm's law (so already Kluge 1884: 172 and, e.g., Prokosch 1939: §22, Lühr 1980:
+259, Scheungraber 2014: 133, assuming that devoicing of the PIE voiced stops was the
+final development in the consonant shift, and the other changes under Grimm's law
+preceded the application of Kluge's law), and thus, for example, there was the develop-
+ment PIE *ghn after unaccented vowel > *gg (Kluge's law)7 > *kk (Grimm's law). It
+was pointed out above (§6.7) that the devoicing of PIE voiced stops under a push chain
+analysis of Grimm's law is difficult to account for; the same must be said of voiced
+geminates in either a push chain or a drag chain. The identical treatment under Kluge's
+law of PGmc. voiced fricatives whether derived from PIE voiced aspirates or from
+voiceless stops (i.e., under Verner's law) has been taken as evidence that Verner's law
+antecedes both Kluge's and Grimm's laws (so Kortlandt 1991), though this requires an
+alternative reconstruction of the PGmc. consonant inventory in line with the glottalic
+theory (§6.2). Dating Kluge's law to PGmc. also means that the effects of the law
+should be evident in Gothic. But it was pointed out above that geminate obstruents are
+exceedingly few in Gothic and are found probably only in borrowed words and in
+names; moreover, although some counterexamples to the law in Gothic are likely to
+show root accent, in others this is not so plain, e.g. aúhns ‘oven' (cf. Gk. iлvós ‘oven',
+and see Orel 2003: 433, Casaretto 2004: 325–6).
+If Kluge's law is to be credited, it should be assumed that when a geminate arose
+after a long vowel or a diphthong, it was degeminated. This, after all, is what happened
+to geminates that arose by other means, e.g. Go. un-weis ‘unlearned', OE OS OHG wis
+‘wise' < *ueid-to- and OHG pret. muosa 'must' < *mōssa < PGmc. *mōt-t-. This
+assumption allows it to be explained why certain Gmc. voiceless stops correspond to the
+reflexes of PIE voiced aspirates (rather than non-aspirates) or voiceless stops in other IE
+languages. Kluge's examples (1884: 182-4) include Go. hveits, Olcel. hvítr (etc.)
+'white', as if from PIE *kueit-nó- (cf. Skt. śvētá-, śvítna-, śvitnyá- 'white'); others
+proposed include OE tacan ‘teach' beside Go. táiknjan, OIcel. teikna, OE tacnan,
+OHG zeihinen 'show' (cf. Gk. dɛíкvõµi ‘show') and OE scēap, OS skāp, OHG scāf
+'sheep' (cf. PGmc. *skab- in Go. OHG skaban, Olcel. skafa (etc.) ‘shave, shear'). Some
+of these examples, however, demand the assumption that Kluge's law applied in PGmc.,
+with later elimination of its effects in Gothic.
+Voiced geminates in Gmc. are less frequent, e.g. OE frogga ‘frog', docga 'dog',
+sceacga 'rough hair'; Kluge (1884: 176–7) explains them as having arisen on an ana-
+logical basis, by contamination of stems in alternation like *knaba- ~ *knappa-.
+1. See Tacitus, Germania v, xv.
+2. Kroonen (2011: 80-2) adds hypocoristic personal names found outside of Bible Gothic: Ibba, Faffo,
+Mammo, Oppa, Riggo, Wacca."		
+alignment-knob-fulk-pp	Fulk2018	116	133	1	3668	3676	*knappa-	06fd15667f91aec069f5b8aba67bff26ba4f91e3eeadc951432b79b30d390912	"116
+A Comparative Grammar of the Early Germanic Languages
+weak verbs is difficult to perceive (e.g. OE cnotta ‘knot' and læppa ‘lobe'; Lühr 1988
+collects examples), and in view of such instances, the degree to which NWGmc. forms
+with geminate obstruents are to be found in n-stem nouns and in verbs (presumably)
+with n-suffix, as predicted by Kluge, is impressive. Thus, although Kluge's account de-
+mands much conjecture, it cannot justly be called improbable, and in fact in some in-
+stances it does seem the most plausible explanation.
+Yet even if Kluge's account is admitted, significant problems remain. Given the
+reconstruction of the PIE obstruents represented above (§6.1), it is difficult to see why
+the voiced aspirates should have been devoiced only when geminated. To explain this it
+has been proposed that Kluge's law applied before the devoicing of voiced stops under
+Grimm's law (so already Kluge 1884: 172 and, e.g., Prokosch 1939: §22, Lühr 1980:
+259, Scheungraber 2014: 133, assuming that devoicing of the PIE voiced stops was the
+final development in the consonant shift, and the other changes under Grimm's law
+preceded the application of Kluge's law), and thus, for example, there was the develop-
+ment PIE *ghn after unaccented vowel > *gg (Kluge's law)7 > *kk (Grimm's law). It
+was pointed out above (§6.7) that the devoicing of PIE voiced stops under a push chain
+analysis of Grimm's law is difficult to account for; the same must be said of voiced
+geminates in either a push chain or a drag chain. The identical treatment under Kluge's
+law of PGmc. voiced fricatives whether derived from PIE voiced aspirates or from
+voiceless stops (i.e., under Verner's law) has been taken as evidence that Verner's law
+antecedes both Kluge's and Grimm's laws (so Kortlandt 1991), though this requires an
+alternative reconstruction of the PGmc. consonant inventory in line with the glottalic
+theory (§6.2). Dating Kluge's law to PGmc. also means that the effects of the law
+should be evident in Gothic. But it was pointed out above that geminate obstruents are
+exceedingly few in Gothic and are found probably only in borrowed words and in
+names; moreover, although some counterexamples to the law in Gothic are likely to
+show root accent, in others this is not so plain, e.g. aúhns ‘oven' (cf. Gk. iлvós ‘oven',
+and see Orel 2003: 433, Casaretto 2004: 325–6).
+If Kluge's law is to be credited, it should be assumed that when a geminate arose
+after a long vowel or a diphthong, it was degeminated. This, after all, is what happened
+to geminates that arose by other means, e.g. Go. un-weis ‘unlearned', OE OS OHG wis
+‘wise' < *ueid-to- and OHG pret. muosa 'must' < *mōssa < PGmc. *mōt-t-. This
+assumption allows it to be explained why certain Gmc. voiceless stops correspond to the
+reflexes of PIE voiced aspirates (rather than non-aspirates) or voiceless stops in other IE
+languages. Kluge's examples (1884: 182-4) include Go. hveits, Olcel. hvítr (etc.)
+'white', as if from PIE *kueit-nó- (cf. Skt. śvētá-, śvítna-, śvitnyá- 'white'); others
+proposed include OE tacan ‘teach' beside Go. táiknjan, OIcel. teikna, OE tacnan,
+OHG zeihinen 'show' (cf. Gk. dɛíкvõµi ‘show') and OE scēap, OS skāp, OHG scāf
+'sheep' (cf. PGmc. *skab- in Go. OHG skaban, Olcel. skafa (etc.) ‘shave, shear'). Some
+of these examples, however, demand the assumption that Kluge's law applied in PGmc.,
+with later elimination of its effects in Gothic.
+Voiced geminates in Gmc. are less frequent, e.g. OE frogga ‘frog', docga 'dog',
+sceacga 'rough hair'; Kluge (1884: 176–7) explains them as having arisen on an ana-
+logical basis, by contamination of stems in alternation like *knaba- ~ *knappa-.
+1. See Tacitus, Germania v, xv.
+2. Kroonen (2011: 80-2) adds hypocoristic personal names found outside of Bible Gothic: Ibba, Faffo,
+Mammo, Oppa, Riggo, Wacca."		
+alignment-lade-past-sg	Ringe2017	276	287	2	10	15	*hlōþ	ce631fd79bf5a386d2bcce03ecc664ef01dc4d33d543505650363441026d22e8	"*hlaþaną, *hlōþ, *hlōdun, *hladanaz ‘load’ (cf. Goth. ptc. afhlaþans; ON hlaða,
+    hlóð, hlóðu, hlaðinn; OE hladan, hlōd, hlōdon, hladen; OHG ladan, luod,
+    luodun, giladan);
+  *wadaną, *wōd, *wōdun, *wadanaz ‘wade, walk’ (ON vaða, óð, óðu, vaðinn; OE
+    wadan, wōd, wōdon, waden; OHG watan, wuot, *wuotun, giwatan; cognate with
+    Lat. vādere ‘walk, go’)."		
+alignment-lade-past-pl	Ringe2017	276	287	2	17	24	*hlōdun	ce631fd79bf5a386d2bcce03ecc664ef01dc4d33d543505650363441026d22e8	"*hlaþaną, *hlōþ, *hlōdun, *hladanaz ‘load’ (cf. Goth. ptc. afhlaþans; ON hlaða,
+    hlóð, hlóðu, hlaðinn; OE hladan, hlōd, hlōdon, hladen; OHG ladan, luod,
+    luodun, giladan);
+  *wadaną, *wōd, *wōdun, *wadanaz ‘wade, walk’ (ON vaða, óð, óðu, vaðinn; OE
+    wadan, wōd, wōdon, waden; OHG watan, wuot, *wuotun, giwatan; cognate with
+    Lat. vādere ‘walk, go’)."		
+alignment-lade-participle	Ringe2017	276	287	2	26	35	*hladanaz	ce631fd79bf5a386d2bcce03ecc664ef01dc4d33d543505650363441026d22e8	"*hlaþaną, *hlōþ, *hlōdun, *hladanaz ‘load’ (cf. Goth. ptc. afhlaþans; ON hlaða,
+    hlóð, hlóðu, hlaðinn; OE hladan, hlōd, hlōdon, hladen; OHG ladan, luod,
+    luodun, giladan);
+  *wadaną, *wōd, *wōdun, *wadanaz ‘wade, walk’ (ON vaða, óð, óðu, vaðinn; OE
+    wadan, wōd, wōdon, waden; OHG watan, wuot, *wuotun, giwatan; cognate with
+    Lat. vādere ‘walk, go’)."		
+alignment-lade-fulk-burden	Fulk2018	53	70	1	501	505	hlæd	bddf41a46940e4ff4ada8b64a4fb117a7f24ccbb4df9b4efab9c1fabb3b039fe	"§3.6 Ablaut in Proto-Germanic
+53
+53
+beside bryce 'breach' < *brukiz.¹ Many less regular alternations are also discoverable,
+e.g. Go. liufs 'dear' <*leub-ga-láubjan 'believe' (o-grade): lubō 'love' (weak grade);
+Go. bindan 'bind' bandi ‘band': ga-bundi ‘bond'; Olcel. bera ‘bear' : barn ‘child' :
+burðr ‘birth'; OE setl ‘seat' : ge-sæt ‘act of sitting' <*-sata"" : nest ‘nest' < PIE *ni-zd-
+o- (zero grade): sæt 'lurking place' < PGmc. *sētō (lengthened grade); Olcel. grof 'pit'
+<*3rabō gróf 'pit'; OE hlæd 'burden' < PIE *klḥ-tó- (cf. hladan ‘lade'): hlōð 'band'
+<*xlōþ- < PIE *kléh₂-t-.
+~
+Ablaut is also evident in derivational suffixes. The reflex of PIE *-on- must origi-
+nally have alternated with *-en- in the paradigm of OE morgen beside umlauted mergen
+'morning'; likewise in n-stems, e.g. Go. acc. sg. hanan ‘cock' <*xananu"" : gen. hanins
+<*xaninaz or *xaniniz (cf. Gk. лoчμεv- ‘shepherd' : Saíuov- ‘divinity'). Although there
+is analogical redistribution of the PIE variants *-es- *-os- in Gmc. s-stems, variation
+remained and is attested by alternative stems in the paradigm with and without umlaut
+in WGmc., e.g. OE (Northumbrian) nom./acc. sg. dog, pl. dōgor ‘day', OHG nom./acc.
+sg. lamb, pl. lembir ‘lamb'. Quantitative alternations are also detectable, as in r-stem
+nouns, e.g. Go. brōþar < *bhrāter- dat. brōþr < *bhrātri; and in the diminutive suffix
+*-ing- : *-ung- (< *-enko- : *-ņko-), as in OE cyning: Olcel. konungr ‘king'. As for
+inflectional suffixes, with the resegementation of stems and inflections in PGmc. (§7.1),
+the theme vowel was incorporated into the inflections, and its ablaut alternations be-
+came unrecognizable as such.
+For literature on the development of PIE ablaut in Gmc., see Kilbury 1975, Born
+1980, Stedje 1987, Lewickij 1996. For an overview of ablaut patterns in PGmc., see
+Ringe 2017: 253–60.
+1. The form *brukiz (rather than the expected *burkiz < *bhrg-) probably shows metathesis by analogy to
+*brekan-: see §12.31 n. 3.
+2. It is necessary to assume lowering of u to o in *murzanaz and subsequent extension of o throughout the
+paradigm, as otherwise the regular development of *murzin- would be OE myrgen (which does occur twice,
+in compounded words). Cf. Ringe & Taylor 2014: 18-20, attributing the alternation of *-in- and *-an- to a
+NWGmc. phonological change.
+3.7 Summary tables of Indo-European vowel developments
+For comparative purposes it may be useful to summarize in tabular form the main de-
+velopments of PIE syllabic segments in various IE languages. These tables are general-
+izations, with many exceptions under given conditions, for which the grammars cited in
+§1.2 n. 1 should be consulted, or grammars of the individual IE languages.
+PIE
+PGmc.
+Skt.
+Gk.
+Lat.
+Lith.
+OCS
+Olr.
+e
+e, i
+O
+a
+a
+a
+ABB
+a
+E
+e
+e
+a
+0
+01
+a
+a
+a
+a
+a
+COO
+e, i
+o, u
+a
+i
+i
+i
+1
+i
+i
+b
+i, e
+u
+u
+u
+v
+u
+u
+b
+u, o
+ē
+ā
+n
+ė
+ĕ
+í
+ā
+ō
+uo
+a
+á
+ā
+ā
+ā
+a
+á
+ī
+ī
+ī
+y
+i
+í
+ū
+ū
+ū
+ū
+ū
+ū
+y
+ú
+ei
+ī
+El
+ī
+ie, ei
+i
+é, ia"		
+alignment-lade-fulk-band	Fulk2018	53	70	1	551	555	hlōð	bddf41a46940e4ff4ada8b64a4fb117a7f24ccbb4df9b4efab9c1fabb3b039fe	"§3.6 Ablaut in Proto-Germanic
+53
+53
+beside bryce 'breach' < *brukiz.¹ Many less regular alternations are also discoverable,
+e.g. Go. liufs 'dear' <*leub-ga-láubjan 'believe' (o-grade): lubō 'love' (weak grade);
+Go. bindan 'bind' bandi ‘band': ga-bundi ‘bond'; Olcel. bera ‘bear' : barn ‘child' :
+burðr ‘birth'; OE setl ‘seat' : ge-sæt ‘act of sitting' <*-sata"" : nest ‘nest' < PIE *ni-zd-
+o- (zero grade): sæt 'lurking place' < PGmc. *sētō (lengthened grade); Olcel. grof 'pit'
+<*3rabō gróf 'pit'; OE hlæd 'burden' < PIE *klḥ-tó- (cf. hladan ‘lade'): hlōð 'band'
+<*xlōþ- < PIE *kléh₂-t-.
+~
+Ablaut is also evident in derivational suffixes. The reflex of PIE *-on- must origi-
+nally have alternated with *-en- in the paradigm of OE morgen beside umlauted mergen
+'morning'; likewise in n-stems, e.g. Go. acc. sg. hanan ‘cock' <*xananu"" : gen. hanins
+<*xaninaz or *xaniniz (cf. Gk. лoчμεv- ‘shepherd' : Saíuov- ‘divinity'). Although there
+is analogical redistribution of the PIE variants *-es- *-os- in Gmc. s-stems, variation
+remained and is attested by alternative stems in the paradigm with and without umlaut
+in WGmc., e.g. OE (Northumbrian) nom./acc. sg. dog, pl. dōgor ‘day', OHG nom./acc.
+sg. lamb, pl. lembir ‘lamb'. Quantitative alternations are also detectable, as in r-stem
+nouns, e.g. Go. brōþar < *bhrāter- dat. brōþr < *bhrātri; and in the diminutive suffix
+*-ing- : *-ung- (< *-enko- : *-ņko-), as in OE cyning: Olcel. konungr ‘king'. As for
+inflectional suffixes, with the resegementation of stems and inflections in PGmc. (§7.1),
+the theme vowel was incorporated into the inflections, and its ablaut alternations be-
+came unrecognizable as such.
+For literature on the development of PIE ablaut in Gmc., see Kilbury 1975, Born
+1980, Stedje 1987, Lewickij 1996. For an overview of ablaut patterns in PGmc., see
+Ringe 2017: 253–60.
+1. The form *brukiz (rather than the expected *burkiz < *bhrg-) probably shows metathesis by analogy to
+*brekan-: see §12.31 n. 3.
+2. It is necessary to assume lowering of u to o in *murzanaz and subsequent extension of o throughout the
+paradigm, as otherwise the regular development of *murzin- would be OE myrgen (which does occur twice,
+in compounded words). Cf. Ringe & Taylor 2014: 18-20, attributing the alternation of *-in- and *-an- to a
+NWGmc. phonological change.
+3.7 Summary tables of Indo-European vowel developments
+For comparative purposes it may be useful to summarize in tabular form the main de-
+velopments of PIE syllabic segments in various IE languages. These tables are general-
+izations, with many exceptions under given conditions, for which the grammars cited in
+§1.2 n. 1 should be consulted, or grammars of the individual IE languages.
+PIE
+PGmc.
+Skt.
+Gk.
+Lat.
+Lith.
+OCS
+Olr.
+e
+e, i
+O
+a
+a
+a
+ABB
+a
+E
+e
+e
+a
+0
+01
+a
+a
+a
+a
+a
+COO
+e, i
+o, u
+a
+i
+i
+i
+1
+i
+i
+b
+i, e
+u
+u
+u
+v
+u
+u
+b
+u, o
+ē
+ā
+n
+ė
+ĕ
+í
+ā
+ō
+uo
+a
+á
+ā
+ā
+ā
+a
+á
+ī
+ī
+ī
+y
+i
+í
+ū
+ū
+ū
+ū
+ū
+ū
+y
+ú
+ei
+ī
+El
+ī
+ie, ei
+i
+é, ia"		
+alignment-lade-fulk-pie	Fulk2018	113	130	1	1412	1421	*klḥ2-tó-	1f0d5531b0e8e1c6303c78815daa8060c32750de047423961fce453cc5d1c91d	"§6.8 Geminates in Proto-Germanic 113
+Geminates that arose this way appear usually to have been simplified, for example 2 sg.
+pres. ind. *hes-si ‘are' > *esi > Skt. ási, Gk. ɛỉ.
+An exception is -tt-, which arose by the addition of a t-suffix to a form ending in
+t or d. The resulting tt is usually said to have developed to tst (or tt) in PIE. It is
+reflected as tt in Skt., ts > ss in Celtic, st in most other IE languages (including
+Avestan), but ss in Latin and Gmc., and in Gmc. it is degeminated to s after a long
+vowel, a diphthong, or a consonant. Examples: PIE *mit-to- > *mit³to- ‘mis-' in Go.
+missa-, Olcel. OE OS mis-, OHG missa-, missi- (OIr. mí-, mis(s)-; cf. OHG mīdan
+'avoid' <*mīpan- < *meit-on-); PIE *uid-tó-s (> *uittós) 'seen' in Skt. vittáḥ, Gk. ǎ-
+1σtos, Lat. vīsus (with analogical lengthening), OE OS wiss, OHG gi-wissi 'certain' (cf.
+the degemination in OE wise, OHG wīsa ‘manner' < *ueid-to-); PIE *sed-t- in Skt.
+sattáḥ 'seated', Lat. sessiō ‘session', Olcel. OE sess ‘seat'. Forms that arose early in
+PGmc. are treated similarly, e.g., to the pret.-pres. verb Go. wáit ‘knows' (etc.), pret.
+Go. OS OHG wissa, OIcel. vissa, OE wisse (beside wiste, with analogical re-addition of
+the dental suffix). Naturally, as the last example shows, irregularities created by this
+change are frequently removed on the basis of analogy, e.g., beside OIcel. hlass 'cart-
+load' (cf. hlaða ‘lade' < PIE *klḥ2-tó-), OE hlæst, OHG (h)last, with re-addition of the
+abstract-forming suffix seen in OE forst, frost 'frost' (cf. frēosan 'freeze') and cost
+'choice' (cf. cēosan ‘choose').¹ Similarly, PIE *ts yields Gmc. s(s), as in Greek and
+Latin. Examples: PIE *-bhudh- + -s-> PGmc. *-buts- > -bus- in Go. ana-busns
+'command' (cf. ana-biudan 'command' and -sn- in ga-rēhsns ‘appointed time' beside
+rahnjan 'count'); PIE *h,rudh- + -s-> PGmc. *rutsman-> OHG rosomo 'rust' (cf. Gk.
+Epɛv0os, Lat. rubor 'redness').
+There is a tendency in Gmc. for assimilation to occur in consonant groups
+containing a sonorant consonant, giving rise to new geminate sonorants ll, nn, mm, and
+perhaps rr:
+Gmc. II. Notably, *-In- yields -ll-, as in PIE *plh-nó- > PGmc. *ful-n-> Go.
+fulls, Olcel. fullr (etc.) 'full' (cf. Skt. pṛnáti ‘fills', with infixed n, Lat. plēnus ‘full');
+PIE *pelh₂-n- > PGmc. *fel-n- > Go. -fill (in þrūtsfill ‘leprosy'), Olcel. fjall, OE fell
+(etc.) 'hide' (cf. *pelḥ- > Gk. ñáλas ‘hide'); PIE *h₂ulh₂-n-eh₂ > PGmc. *wul-n- > Go.
+wulla, OE wull (etc.) 'wool' (cf. Skt. úrṇā, Lat. lāna 'wool'). Likewise, PGmc. *-ŏl-
+probably yields -ll-, and when *-ŏl- is the result of Verner's law, -ll- may be in variation
+with -pl- (Sievers 1895): PGmc. *staðlaz > OE steall (etc.) 'position': *staþulaz > OE
+staðol (etc.) 'foundation'; PGmc. *waðlō- > OE weallian, OHG wallōn ‘wander' :
+*wap(u)l- in OE wadol 'wandering', OHG wadal 'migration'. Perhaps also there is a
+change of PGmc. *-zl- to -ll- (Kluge 1882: 521-5; cf. *-zn-, *-zm- below): PGmc.
+*knuzlijana"" > OIcel. knylla 'beat', OE cnyllan ‘toll', MHG knüllen ‘beat' : *knusjana""
+> OE cnyssan, OHG knussen ‘strike'; PGmc. *xruz-l-> Olcel. hrolla ‘shudder':
+*xreusana"" > Olcel. hrjósa 'shudder'.
+Gmc. nn. PIE *-nu- develops to Gmc. -nn-, as in PGmc. *punw-> Olcel. þunnr,
+but ja-stems OE þynne, OHG dunni ‘thin' (cf. Lat. tenuis, with full grade); PGmc.
+* *manw- > Go. manna, OE OS OHG man(n) ‘person' (cf. Skt. mánu- ‘person'). Verbs
+with an n-infix are a notable source: PGmc. *brinwana"" > Go. OS OHG brinnan, Olcel.
+brinna, OE beornan, birnan 'burn' (cf. Lat. ferveō 'boil, seethe', without infix); PGmc.
+*rinwana"" > Go. OE OS OHG rinnan ‘run' (cf. Skt. ṛṇóti, ṛṇváti ‘moves'). Go. kunnan,
+OIcel. kunna, etc. 'know' perhaps shows a geminate as the result of infixation of n in a
+stem already containing n, assuming PIE *gn-n-h₁- (so Pokorny 1959–69: I, 376; cf.
+§6.3 supra). PGmc. *-zn- also develops to -nn-, though never in Gothic: PGmc. *raznan"		
+alignment-lade-rt-infinitive	RingeTaylor2014	233	248	2	5	13	*hlabana	c9e8ba751ada8d201755e3d079eeabbe4cb9e8b1e9b4ac40803f65f388caaefc	"PGmc *hlabana ‘to load’, pres. indic. 2sg. *hlapizi, 3sg. *hlapidi (OHG ladan, 3sg.
+ledit; cf. Goth. past ptc. af-hlapans) >— *hladan, *hleedisi, *hleedipi (*-d- levelled
+in from the default past stem) — *hladan, *hladisi, *hladibi >— OE hladan ‘to
+load; to draw (water)’, hletst, a-hleett ‘it draws (it) off’;"		
+alignment-lade-rt-2sg	RingeTaylor2014	233	248	2	43	51	*hlapizi	c9e8ba751ada8d201755e3d079eeabbe4cb9e8b1e9b4ac40803f65f388caaefc	"PGmc *hlabana ‘to load’, pres. indic. 2sg. *hlapizi, 3sg. *hlapidi (OHG ladan, 3sg.
+ledit; cf. Goth. past ptc. af-hlapans) >— *hladan, *hleedisi, *hleedipi (*-d- levelled
+in from the default past stem) — *hladan, *hladisi, *hladibi >— OE hladan ‘to
+load; to draw (water)’, hletst, a-hleett ‘it draws (it) off’;"		
+alignment-lade-rt-3sg	RingeTaylor2014	233	248	2	58	66	*hlapidi	c9e8ba751ada8d201755e3d079eeabbe4cb9e8b1e9b4ac40803f65f388caaefc	"PGmc *hlabana ‘to load’, pres. indic. 2sg. *hlapizi, 3sg. *hlapidi (OHG ladan, 3sg.
+ledit; cf. Goth. past ptc. af-hlapans) >— *hladan, *hleedisi, *hleedipi (*-d- levelled
+in from the default past stem) — *hladan, *hladisi, *hladibi >— OE hladan ‘to
+load; to draw (water)’, hletst, a-hleett ‘it draws (it) off’;"		
+alignment-lap-mercian	RingeTaylor2014	219	234	7	21	27	leappa	f88b7987cb029741fbe1455b1cbfddde69a2befa55b80caf332fd8543a6caff8	“edge, border’ lappa leappa		
+alignment-lap-fulk-noun	Fulk2018	115	132	1	572	577	læppa	a70c47c5a1d56640d867648dd7d9b82ee9de31d763543c2ccaf26dfaf35de00f	"§6.9 Geminate obstruents and Kluge's law 115
+§31a): “there is no Gothic evidence for the Gmc. lengthening of stops."" Voiceless
+geminate stops are not uncommon in the other Gmc. languages, and Kluge (1884) ex-
+plains the majority of them as due to assimilation of a following n contained in an
+accented nasal suffix, as in these examples of n-stem nouns and verbs assumed origin-
+ally to have borne a nasal suffix *-néh₂- (as in Skt. grbhṇāti ‘seizes' <*ghṛbh-néh₂-ti:
+see $12.3):5
+Olcel. ruppa, MLG roppen, OHG ropfōn ‘pluck' < PIE *rup-néh₂-, as in Lat.
+rumpō 'break'
+OE læppa 'lappet, piece, lobe', OFris. lappa, OS lappo ‘cloth, rag' < PIE *lob-
+néh₂- (cf. Gk. hoßós ‘lobe')
+ME lappen 'lap' (verb) < PIE *labh-néh₂-, as in Lat. lambō ‘lick' (cf. Gk.
+λaqúoow 'devour' < *labh-)
+OE cnotta 'knot' < PIE *gnu-t-néh₂-; cf. OHG knodo ‘knob' < PGmc. *knupan-;
+also Lith. gniutúoti ‘squeeze, clutch'
+<*grd-
+OHG krazzōn 'scratch' < PIE *grod-néh₂-; cf. Olcel. krota ‘engrave' <*
+Possibly OE hættian ‘scalp' < PIE *khdh-néh₂-; cf. OE hōd 'hood'
+Possibly OE fricc(e)a ‘herald', jan-stem reformed from PIE *prek-néh₂-; cf. Go.
+fraihnan 'ask'
+OE paccian 'pat' < PIE *tag-néh₂-; cf. Lat. tangō 'touch'
+OS likkon 'lick' < PIE *liĝh-néh₂-, as in Gk. λixvɛów, Lat. lingō ‘lick'
+By contrast, when the accent precedes the PIE obstruent there is no assimilation. Prob-
+able examples, given their e-grade vocalism, are Olcel. regn ‘rain', svefn ‘sleep', OE
+þegn 'thegn'. Although much analogical disruption must be assumed, Kluge's findings
+also provide a means of accounting for the coöccurrence of the stems *ob- and *upp-
+(the latter, strikingly, unreflected in Gothic) in certain forms derived from prepositions,
+e.g. OS adv. oban(a), uppan, OHG obana, uffana ‘above' (cf. Gk. óñó ‘under'), due
+ultimately to variation in the ablative suffix *.
+*-an- (Kroonen 2011: 82–92). As the ex-
+amples above illustrate, *tt arising in this fashion did not develop to Gmc. ss, as PIE *tt
+did (§6.8).
+It will be noted that the etymologies of these words with geminate oral stops are
+not nearly as secure as those of some of the geminate sonorant consonants examined
+above. Accordingly, scholarly opinions about the validity of Kluge's explanation di-
+verge widely: e.g., Prokosch calls it “the standard view” (1939: §22), whereas Ringe
+says that the idea is “doubtful at best” (2006a: 115; cf. Ringe 2017: 136-40, rejecting it
+altogether). The commonest explanation for such geminates is that they are expressive
+in origin (so, e.g., Trautmann 1906, Fagan 1989), and indeed, geminates are very com-
+mon in hypocorisms (e.g. OE Cēol(l)a for Cēol(-mund, -noþ, etc.) and Ead(d)a for
+Ead(-red, -weard, etc.)) and in intensive and iterative verbs, e.g. OHG tocchōn 'exert
+oneself, brocchōn ‘crumble', zwecchōn ‘seize, pluck' (cf. zwigōn ‘pluck'), etc. Of
+expressive origin appear to be diminutives in reference to animals, e.g. OE ticcen, OHG
+zicchī, zikkīn ‘kid' (cf. OHG ziga ‘goat') and OIcel. krabbi, OE crabba, MLG krabbe
+'crab' (cf. OHG crebiz). But the categories in which an ablauting n-suffix most com-
+monly appears, n-stem nouns and certain weak verbs, are also the categories in which
+expressivity might most be expected to have played a role, since hypocorisms are
+generally n-stems, and weak verbs in general are commonly intensive or iterative. 6
+Much then depends upon examples in which expressivity must be excluded as an ex-
+planation, such as the doublet OS oban(a), uppan ‘above', which are infrequent and
+resistant to explanation on a purely phonological basis, since much analogical change
+must be assumed. Still, the expressive basis for gemination in many n-stem nouns and"		
+alignment-last-ringe-base	Ringe2017	284	295	2	315	323	*laistaz	a3600824e7bf447948c9e603cb9ce789ce034ac5183dd8640be5f353b60019c9	"The semantics of those derived from nouns seem to have been governed by the
+semantics of the noun, e.g.:
+  *dailijaną ‘divide’ *dailiz ‘part’ (cf. Goth. dailjan, ON deila, OE dǣlan, OHG teilen);
+  *dōmijaną ‘judge’ *dōmaz ‘judgment’ (cf. Goth. domjan, ON dœma, OE dēman,
+     OHG tuomen);
+  *laistijaną ‘follow’   *laistaz ‘track’ (cf. Goth. laistjan, OE lǣstan, OHG leisten);
+  *namnijaną ‘name’ *namō- ~ *namin- ~ *namn- ‘name’ (cf. Goth. namnjan, ON
+     nefna, OE nemnan, OHG nemnen);
+  *rikwizjaną ‘get dark’    *rekwaz ~ *rikwiz- ‘darkness’ (cf. Goth. riqizjan; Skt pres.
+     sg. rajasyáti).
+At least one denominative was already fully fossilized in PGmc:
+  *hauzijaną ‘hear’ < PIE *h2ḱ-h2ows-ié/ó- ‘be sharp-eared’ (cf. Goth. hausjan, ON
+    heyra, OE hīeran, OHG hōren).
+In some cases it is difﬁcult to determine whether a class I weak verb was derived from
+any of its associated nouns or whether they were all derived from the verb; typical
+examples are *gaumijaną ‘notice, pay attention to’ and *wrōgijaną ‘accuse’ (see Feist
+ s.vv. gaumjan, wrohjan).
+   Finally, a considerable number of these verbs are not well enough understood
+etymologically to allow conﬁdent statements about their derivational status; solidly
+reconstructable examples include *hazjaną ‘praise’, *huljaną ‘cover’, *saljaną ‘offer,
+give’, and *warjaną ‘ward off, defend’. At least one, *siwjaną ‘sew’, is the reﬂex of a
+PIE present in *-ye/o- whose reconstruction poses complex problems (cf. e.g. Feist
+ s.v. siujan).
+.. (ii.d) Class II weak verbs
+Because of the pre-PGmc loss of intervocalic *j and the subsequent contraction of the
+vowels thus brought into hiatus, the stem vowel of presents of this class was trimoric *ō-
+(see Cowgill ); the past sufﬁx complex was *-ō-d- (or possibly *-ō-d- ~ *-ō-dēd-),
+while the past ptc. ended in *-ō-da-. The endings of the present were the following:
+             indicative     subjunctive    imperative
+  active                                                  inﬁnitive -ō- -ną
+  sg.       -ō-            -ǭ̄            —              participle -ō- -nd- (-ō- -nþ- ?)
+            -ō- -si        -ō- -s         -ō-
+            -ō- -þi        -ō- -0/        -ō- -þau
+  du.       -ō- s (?)      -ō- -w         —
+            -ō- -þiz (?)   -ō- -þiz (?)   -ō- -þiz (?)
+  pl.       -ō- -maz       -ō- -m         —
+            -ō- -þ         -ō- -þ         -ō- -þ
+            -ō- -nþi       -ō- -n         -ō- -nþau"		
+alignment-laugh-ipresent-sg	Kroonen2013	228	268	1	740	751	*klok-éi-ti	880f20c3922279420a639d47bd55159ada1ee25f2e4cfceefaebe3fcd4c878dc	"228
+-
+*hlah(j)an-
+*hlah(j)an- s.v. 'to laugh' — ON hlæja s.v. 'id.', Far. læa w.v. 'id.', Elfd. läa s.v.
+'id.', OS hlahan s.v. 'id.', Du. lachen s./w.v., MHG lachen w.v. 'id.', G lachen w.v.
+‘id.'⇒*klok-ie- (NEUR) · Ru. klekotát' 'to scream (of bird of prey)'.
+-
+The meaning of Ru. klekotát' 'to scream (of birds of prey)' is especially
+close to the one of the iterative ON hlakka 'to scream (of birds); to rejoice' <
+*hlak(k)ōn- (q.v.), which may indicate that the root originally meant 'to
+cackle'. Regarding form of the strong verb, the suffix alternation of ON hlæja
+< *hlahjan- vs. OS hlahan < *hlahan- is reminiscent of the one displayed by
+*hanhan 'to hang'. Perhaps, this alternation echoes the paradigm of an an
+old i-present 3sg. *klok-éi-ti, 3pl. *klok-i-énti. See also *hlahtra- and
+*hlōgjan-.
+-
+*hlahtra- m. (n.?) 'laughter' ON hlátr m. ‘id.', Far. látur m. 'id.', OE
+hleahtor, hlehter m. 'id.', E laughter, OHG lahtar, hlahtar n. ‘id.', MHG lahter
+n. 'id.' (DRV).
+A tro-formation derived from *hlahjan- (q.v.).
+*hlaiba- n. 'bread' - Go. hlaifs m. 'id.', ON hleifr m. 'id.', OE hläf m. 'id.', E
+loaf, OHG leip m. 'id.', G Laib m. 'id.' (GM).
+Possibly related to MLG leve-kōke, MHG lebe-kuoche, G Leb-kuchen m.
+'gingerbread' < *hliba-kōkan-? No further etymology. The comparison with
+Gr. ißavos m. ‘oven, furnace' is spurious.
+*hlainjan- w.v. 'to cause to lean'
+leinen w.v. 'id.' (DRV).
+OE hlænan w.v. 'id.', E to lean, OHG
+A late causative to *hlinen- (q.v.). Also cf. Go. hlain 'hill', ON hlein f. 'pro-
+jecting rock, slope' < *hlaina/ō-.
+*hlaiwa- n. 'barrow, funeral mound'
+-
+Go. hlaiw m. 'tomb, grave', OE hlaw
+m. 'id.', OS hlēo m. 'grave', OHG lēo, hlēo m. 'id.', MHG lē m. 'id.' ⇒ *kloi-uo-
+(IE).
+A wa-stem to the root *klei- 'to be inclined', for which see *hlinēn-.
+-
+*hlak(k)ōn- w.v. 'to laugh' ON hlakka w.v. 'to cry, scream (of eagles); to
+rejoice, exult', OFri. hlakkia, hlakia w.v. 'id.', WFri. laitsje w.v. 'id.' ⇒
+*klok-néh₂- (DRV).
+The iterative 3sg. *hlakkōpi, 3pl. *hlagunanþi to *hlah(j)an- (q.v.). OFri.
+hlakia and WFri. laitsje continue a variant *hlakōn- with a secondary
+singulate.
+*hlankjan- w.v. 'to twist, turn' - OE ge-hlencan w.v. 'to braid', MHG lenken
+w.v. 'to bend' *klong-éie- (GM)."		
+alignment-laugh-ipresent-pl	Kroonen2013	228	268	1	758	770	*klok-i-énti	880f20c3922279420a639d47bd55159ada1ee25f2e4cfceefaebe3fcd4c878dc	"228
+-
+*hlah(j)an-
+*hlah(j)an- s.v. 'to laugh' — ON hlæja s.v. 'id.', Far. læa w.v. 'id.', Elfd. läa s.v.
+'id.', OS hlahan s.v. 'id.', Du. lachen s./w.v., MHG lachen w.v. 'id.', G lachen w.v.
+‘id.'⇒*klok-ie- (NEUR) · Ru. klekotát' 'to scream (of bird of prey)'.
+-
+The meaning of Ru. klekotát' 'to scream (of birds of prey)' is especially
+close to the one of the iterative ON hlakka 'to scream (of birds); to rejoice' <
+*hlak(k)ōn- (q.v.), which may indicate that the root originally meant 'to
+cackle'. Regarding form of the strong verb, the suffix alternation of ON hlæja
+< *hlahjan- vs. OS hlahan < *hlahan- is reminiscent of the one displayed by
+*hanhan 'to hang'. Perhaps, this alternation echoes the paradigm of an an
+old i-present 3sg. *klok-éi-ti, 3pl. *klok-i-énti. See also *hlahtra- and
+*hlōgjan-.
+-
+*hlahtra- m. (n.?) 'laughter' ON hlátr m. ‘id.', Far. látur m. 'id.', OE
+hleahtor, hlehter m. 'id.', E laughter, OHG lahtar, hlahtar n. ‘id.', MHG lahter
+n. 'id.' (DRV).
+A tro-formation derived from *hlahjan- (q.v.).
+*hlaiba- n. 'bread' - Go. hlaifs m. 'id.', ON hleifr m. 'id.', OE hläf m. 'id.', E
+loaf, OHG leip m. 'id.', G Laib m. 'id.' (GM).
+Possibly related to MLG leve-kōke, MHG lebe-kuoche, G Leb-kuchen m.
+'gingerbread' < *hliba-kōkan-? No further etymology. The comparison with
+Gr. ißavos m. ‘oven, furnace' is spurious.
+*hlainjan- w.v. 'to cause to lean'
+leinen w.v. 'id.' (DRV).
+OE hlænan w.v. 'id.', E to lean, OHG
+A late causative to *hlinen- (q.v.). Also cf. Go. hlain 'hill', ON hlein f. 'pro-
+jecting rock, slope' < *hlaina/ō-.
+*hlaiwa- n. 'barrow, funeral mound'
+-
+Go. hlaiw m. 'tomb, grave', OE hlaw
+m. 'id.', OS hlēo m. 'grave', OHG lēo, hlēo m. 'id.', MHG lē m. 'id.' ⇒ *kloi-uo-
+(IE).
+A wa-stem to the root *klei- 'to be inclined', for which see *hlinēn-.
+-
+*hlak(k)ōn- w.v. 'to laugh' ON hlakka w.v. 'to cry, scream (of eagles); to
+rejoice, exult', OFri. hlakkia, hlakia w.v. 'id.', WFri. laitsje w.v. 'id.' ⇒
+*klok-néh₂- (DRV).
+The iterative 3sg. *hlakkōpi, 3pl. *hlagunanþi to *hlah(j)an- (q.v.). OFri.
+hlakia and WFri. laitsje continue a variant *hlakōn- with a secondary
+singulate.
+*hlankjan- w.v. 'to twist, turn' - OE ge-hlencan w.v. 'to braid', MHG lenken
+w.v. 'to bend' *klong-éie- (GM)."		
+alignment-laugh-ringe-causative	Ringe2017	245	256	4	1519	1529	*hlōgijaną	2c955ad8a2ef7a4675abe68c4d7356d552f6cef47b17a8ef98ef362e229dfbc0	"The situation must have been stable, as the nasalization persisted down into the
+separate history of the Anglo-Frisian dialect group (see vol. ii, pp. –).
+   The alternation between voiceless fricatives and voiced obstruents (and between
+*hw and *w) resulting from Verner’s Law was pervasive and important in PGmc. It
+seems clear that the voiceless fricatives were underlying and were voiced by a rule
+with multiple morphological triggers. Numerous examples in the conjugation of
+strong verbs will appear in .. (i). Derivational examples were probably just as
+common; the following word-classes may serve as examples.
+   The root-ﬁnal fricatives of derived causative verbs were voiced by Verner’s Law;
+note the following examples:
+  PGmc *swabjaną ‘to put to sleep’ (cf. ON svefja ‘to smooth’, OE swebban ‘to kill’,
+    OHG inswebben ‘to fall asleep’) *swefaną ‘to fall asleep; to sleep’ (cf. ON sofa,
+    OE swefan; PIE *swep- ‘fall asleep’);
+  PGmc *frawardijaną ‘to destroy’ (cf. Goth. frawardjan, OE (for)wierdan)
+    *frawerþaną ‘to perish’ (cf. Goth. frawaírþan, OE forweorþan; PIE *wert-
+    ‘turn’, *pró ‘forward’);
+  PGmc *nazjaną ‘to save’ (cf. OE nerian; OHG nerien ‘to support’; Goth. nasjan ‘to
+    save’ has been remodeled on the basic verb)       *nesaną ‘to survive’ (cf. Goth.
+    ganisan, OE nesan, OHG ginesan; PIE *nes- ‘return home’);
+  PGmc *laizijaną ‘to teach’ (cf. OE lǣran, OHG lēren; Goth. laisjan has been
+    remodeled on the basic verb)     *lais ‘I know’ (cf. Goth. lais);
+  PGmc *hlōgijaną ‘to cause to laugh’ (cf. ON hlœgja; Goth. ufhlohjan has been
+    remodeled on the basic verb)       *hlahjaną ‘to laugh’ (cf. Goth. hlahjan, ON
+    hlæja, OE hliehhan)."		
+alignment-laugh-past-sg	Ringe2017	276	287	4	1048	1053	*hlōh	4ae548488ea6bcc38bdb18039201e7e405ddecdb1b26363e72ce9746197ea263	"*swarjaną, *swōr, *swōrun, *s(w)uranaz ‘swear’ (cf. Goth. swaran, swor; ON sverja,
+     sór, sóru, svarinn; OE swerian, swōr, swōron, sworen; OHG swerien, swuor,
+     swuorun, gisworan);
+  *habjaną, *hōf, *hōbun, *habanaz ‘lift’ (cf. Goth. hafjan, hof, hofun, hafans; ON
+     hefja, hóf, hófu, haﬁnn; OE hebban, hōf, hōfun, hafen; OHG heffen, huob,
+     huobun, gihaban);
+  *-sabjaną, *-sōf, *-sōbun, *-sabanaz ‘notice’ (OHG in-seffen, -suob, suobun; OS
+     af-sebbian, -sōf, -sōƀun; cognate with Lat. sapere ‘taste; discern’);
+  *kwabjaną, *kwōb, *kwōbun, *kwabanaz ‘dunk, submerge’ (cf. ON kvefja (> kefja),
+     ptc. kaﬁnn; apparently cognate with Gk βάπτειν /bápte:n/ < PIE *gwh2bh-ié/ó-);
+  *skaþjaną, *skōþ, *skōdun, *skadanaz ‘hurt, harm’ (cf. Goth. skaþjan, skoþ, skoþun;
+     OE sċeþþan, sċōd, sċōdon, sċaþen);
+  *skapjaną, *skōp, *skōpun, *skapanaz ‘make, fashion’ (cf. Goth. ga-skapjan, -skop,
+     -skopun, -skapans; ON skepja, skóp, skópu; OE sċieppan, sċōp, sċōpon, sċapen;
+     OHG skepfen, skuof, skuofun, giskaffan);
+  *hlahjaną, *hlōh, *hlōgun ‘laugh’ (cf. Goth. hlahjan, *hloh, hlohun; ON hlæja, hló,
+     hlógu, hleginn; OE hliehhan, hlōg, hlōgon);
+  *fraþjaną, *frōþ, *frōdun, *fradanaz ‘understand’ (cf. Goth. fraþjan, froþ, froþun;
+     deriv. *frōdaz ‘wise’ is pan-Gmc);
+  *wahsijaną, *wōhs, *wōhsun, *wahsanaz ‘grow’ (cf. Goth. wahsjan, wohs, *wohsun,
+     us-wahsans; ON vaxa (~ vexa), óx, óxu, vaxinn; OE weaxan, wēox, wēoxon,
+     waxen; OHG wahsan, wuohs, wuohsun, giwahsan)."		
+alignment-laugh-past-pl	Ringe2017	276	287	4	1055	1062	*hlōgun	4ae548488ea6bcc38bdb18039201e7e405ddecdb1b26363e72ce9746197ea263	"*swarjaną, *swōr, *swōrun, *s(w)uranaz ‘swear’ (cf. Goth. swaran, swor; ON sverja,
+     sór, sóru, svarinn; OE swerian, swōr, swōron, sworen; OHG swerien, swuor,
+     swuorun, gisworan);
+  *habjaną, *hōf, *hōbun, *habanaz ‘lift’ (cf. Goth. hafjan, hof, hofun, hafans; ON
+     hefja, hóf, hófu, haﬁnn; OE hebban, hōf, hōfun, hafen; OHG heffen, huob,
+     huobun, gihaban);
+  *-sabjaną, *-sōf, *-sōbun, *-sabanaz ‘notice’ (OHG in-seffen, -suob, suobun; OS
+     af-sebbian, -sōf, -sōƀun; cognate with Lat. sapere ‘taste; discern’);
+  *kwabjaną, *kwōb, *kwōbun, *kwabanaz ‘dunk, submerge’ (cf. ON kvefja (> kefja),
+     ptc. kaﬁnn; apparently cognate with Gk βάπτειν /bápte:n/ < PIE *gwh2bh-ié/ó-);
+  *skaþjaną, *skōþ, *skōdun, *skadanaz ‘hurt, harm’ (cf. Goth. skaþjan, skoþ, skoþun;
+     OE sċeþþan, sċōd, sċōdon, sċaþen);
+  *skapjaną, *skōp, *skōpun, *skapanaz ‘make, fashion’ (cf. Goth. ga-skapjan, -skop,
+     -skopun, -skapans; ON skepja, skóp, skópu; OE sċieppan, sċōp, sċōpon, sċapen;
+     OHG skepfen, skuof, skuofun, giskaffan);
+  *hlahjaną, *hlōh, *hlōgun ‘laugh’ (cf. Goth. hlahjan, *hloh, hlohun; ON hlæja, hló,
+     hlógu, hleginn; OE hliehhan, hlōg, hlōgon);
+  *fraþjaną, *frōþ, *frōdun, *fradanaz ‘understand’ (cf. Goth. fraþjan, froþ, froþun;
+     deriv. *frōdaz ‘wise’ is pan-Gmc);
+  *wahsijaną, *wōhs, *wōhsun, *wahsanaz ‘grow’ (cf. Goth. wahsjan, wohs, *wohsun,
+     us-wahsans; ON vaxa (~ vexa), óx, óxu, vaxinn; OE weaxan, wēox, wēoxon,
+     waxen; OHG wahsan, wuohs, wuohsun, giwahsan)."		
+alignment-laugh-fulk-earlier	Fulk2018	265	282	1	3330	3339	*hliehhan	8aaa30851bc4c240c5023d4d3203005e0f60142e0849c98d60e1caf5f6490297	"§12.18 Aorist presents
+265
+for a curtailed sound change eu > ū. There is the further consideration to be taken into account that short u in
+a form like *lukan should be expected to have been lowered to o (§4.3), creating irregularities in the para-
+digm. For a list of aorist presents of class II, distinguishing inherited from innovative forms, see Ringe &
+Taylor 2014: 39-40.
+5. Ringe (Ringe & Taylor 2014: 141–2), rather, posits a NWGmc. change *kweman > *kwiman (cf. *niman
+'take')> *kuman.
+6. WGmc. forms (OE tredan, OHG tretan) must be innovations by analogy to verbs of the fifth class
+(though it belongs to the fourth in Go. and Olcel.) if the PIE stem is *drey-, as in Skt. drávati 'runs' (so
+Osthoff 1901: 372–3); but *dr-t-ó- is also possible, though unattested outside of Germanic. See Seebold 1970:
+506.
+7. A possible example is Go. skáidan 'distinguish': see Pokorny 1959–69: I, 921.
+12.19 Strong verbs with so-called weak presents
+As noted in §12.3, the suffix *-ie/o- served as one marker of present stems in PIE.¹ A
+number of Gmc. strong verbs are formed this way, with the consequence that mor-
+phologically they are nearly identical to weak verbs of the first class in the present
+($12.34), for example showing (outside of Gothic) umlaut throughout the present para-
+digm and (in WGmc.) gemination in originally light stems. Unlike weak verbs, how-
+ever, they are not causative or iterative in meaning, and the suffix exerts no perceptible
+influence on the semantics of the verb.² Moreover, the root vowel of the present stem
+derives from the grade normal to strong presents (i.e., e in classes I-V) rather than the o
+characteristic of the oldest stratum of causatives. Such verbs are very commonly re-
+ferred to as strong verbs with weak presents, though they are sometimes called strong
+verbs with j-presents. Though the latter term is more accurate, the former, which is of
+long standing, is used here for the convenience of referring to other types, by contrast,
+simply as strong presents. The relevant verbs are these:
+Class I: OIcel. blík(j)a ‘gleam' (cf. suffixless OS blīkan);³ possibly OIcel. svíkja beside
+svíkva 'betray' (cf. strong pres. OS swikan); similarly Olcel. víkja beside víkva
+'turn'; possibly OHG *in-trihhen 'expose'.4
+Class II: Possibly Olcel. flýja 'flee' (pret. fló, Noreen 1970: §488, but usually weak; cf.
+suffixless OE fleon < *flēohan, and cognates); 5 possibly Olcel. spýja ‘vomit'
+(pret. spjó, Noreen 1970: $488, though also with a weak pret.; but suffixless Go.
+speiwan, OE spīwan, etc., belong to the first class).4
+Class III: Probably OE *gierran ‘chatter, make a noise' (see Hogg & Fulk 2011: §6.55).
+Class IV: No known examples.
+Class V: Go. bidjan 'request' (OIcel. biðja, OE biddan, OFris. bidda, OS biddian, OHG
+bitten; but cf. suffixless Go. us-bidan); Olcel. liggja 'lie' (OE licgan, OFris.
+lidza, OS liggian, OHG liggen, lickan; but cf. suffixless Go. ligan); Olcel. sitja
+'sit' (OE sittan, OFris. sitta, OS sittian, OHG sizzen; but cf. suffixless Go. sitan);
+Olcel. þiggja 'receive' (OE þicgan); OE fricgan ‘ask' (cf. Go. fraíhnan and
+cognates); possibly OE *ā-ficgan 'fry' (see Hogg & Fulk 2011: $6.63).
+Class VI: Go. fraþjan 'understand'; Go. hafjan 'lift' (OIcel. hefja, OE hebban, OFris.
+heva, OS hebbian, OHG heffen); Go. hlahjan ‘laugh' (ON hlæja, OE hlihhan <
+*hliehhan); Go. ga-raþjan 'count'; Go. ga-skapjan 'create' (OIcel. skepja, OE
+scieppan, OFris. skeppa, OS skeppian, OHG skepfen); Go. skaþjan ‘harm’
+(OIcel. skeðja, OE sceþþan beside suffixless sceaðan (see Hogg & Fulk 2011:
+§6.67 n. 5); Go. wahsjan ‘grow' (cf. suffixless OIcel. vaxa, OE weaxan, etc.);"		
+alignment-lead-fulk-later	Fulk2018	52	69	1	3320	3328	*laiðjan	b1ea63ba04fef19b1cd4b83945fc7c29f7817467e06091bc9372f73ae5bcaf0a	"52
+A Comparative Grammar of the Early Germanic Languages
+Connolly 1979, 1999, and cf. Polomé 1988: 384-401, Voyles 1989b, 1999,
+Müller 2007: 159.
+(d) Miscellaneous sources of 2 include lengthening and lowering of i upon loss of a
+following anteconsonantal z (a sound that arose in PIE in those rare instances in
+which s came to stand before a voiced stop), the securest example being OE mēd,
+OS mēda, OHG miata ‘reward' beside Go. mizdō, OE meord ‘reward' < PIE
+*mizdhó- in Gk. µσłóç ‘wages', OCS múzda, ‘reward', Skt. mīḍhá- ‘prize'. If
+the OHG demonstrative dē, die corresponds to Go. þái (see §8.10), ai may be
+supposed to have developed to 2 in NWGmc. unstressed syllables and then to
+have been extended to stressed forms of the demonstrative (so Karstien 1921:
+53).
+(e) Influential has been the hypothesis of van Coetsem (1956, 1970: 55–8, 1997) that at
+least some instances of 2 are to be derived from PIE ei before a low vowel in the
+next syllable. This could account for alternations like OHG stiaga 'path' ~ stīgan
+'ascend'. See also Knapp 1974, van Loon 1986.
+1. To explain how the two e-sounds failed to coalesce it is sometimes assumed that PIE ē became PGmc. a.
+This is also a step in the direction of ā, the NGmc. and, in part, WGmc. reflex of PIE ē, but this assumption
+requires that a have reverted to ē in Gothic, and at all events there are other possible values for the PGmc.
+reflex of PIE ē. The representation ē, is preferred here for its relative abstractness. See §3.3 n. 2.
+2. There also occur OS OFris. hīr. The derivation of this word is disputed. It is plainly related to Lat. cis 'on
+this side', but 2 has been derived from *ēi (Jellinek: see below) and by lengthening and lowering of i (Ringe
+1984). The latter explanation seems more probable in view of parallel forms, e.g. Go. þar 'there', har
+'where?'. For references, see Orel 2003: 172, and cf. Jörundur Hilmarsson 1991. For further possible sources,
+see Hirt 1931-4: I §29.4.
+3. In addition to works devoted specifically to the development of the reduplicated preterites in NWGmc.
+(references in §12.20), see Sievers 1892: 238-57, Holthausen 1891, van Helten 1896: 438-45, idem 1908,
+Lehmann 1952: 66-73, Grønvik 1998b: 91-5.
+4. See esp. Polomé 1988: 384-401; van Coetsem 1997; Kortlandt 2006a; for the earlier literature, see
+Streitberg 1896: §79, Hirt 1931–4: I, §29.4.
+3.6
+Ablaut in Proto-Germanic
+Whereas PIE ablaut alternations (§3.1) were not extensively maintained in most IE lan-
+guages, ablaut came to play an important grammatical role in Gmc., where it differ-
+entiates the stems used to form the principal parts of strong verbs, and thus it serves as
+an indicator of tense and/or number, or participial function. Unsurprisingly, then, ablaut
+alternations are most plainly observable in strong verbs: see §12.11 for an overview of
+the relevant alternations in this grammatical category. Ablaut alternations are evident,
+however, in other grammatical contexts, as well. One fairly regular correspondence is
+between strong verb stems with PIE e and derivatives, either verbal or nominal, with
+PIE o. Weak verbs of class 1 provide many examples, e.g. Go. strong ga-nisan 'be
+saved' beside weak nasjan 'save', strong siggan 'sink' (intrans.) beside weak sagqjan
+(trans.), strong af-leipan 'depart' beside OE weak lædan ‘lead' < *laiðjan < *laiþjána"".
+Similarly, beside strong verb stems with e-grade there occur fem. abstract nouns with o-
+grade, e.g. Go. bi-leiban ‘remain' beside láiba ‘remnant', OE stelan 'steal' beside stalu
+‘theft', Olcel. ríða ‘ride' < *rīðana"" beside reið ‘course' < *raiðō. Strong verb stems
+with e-grade often have i-stem derivatives with weak grade, e.g. Go. qiman 'come'
+beside qums 'advent', OE strican ‘stroke' beside Go. striks ‘stroke', OE brecan 'break'"		
+alignment-lead-fulk-earlier	Fulk2018	52	69	1	3331	3341	"*laiþjána"""	b1ea63ba04fef19b1cd4b83945fc7c29f7817467e06091bc9372f73ae5bcaf0a	"52
+A Comparative Grammar of the Early Germanic Languages
+Connolly 1979, 1999, and cf. Polomé 1988: 384-401, Voyles 1989b, 1999,
+Müller 2007: 159.
+(d) Miscellaneous sources of 2 include lengthening and lowering of i upon loss of a
+following anteconsonantal z (a sound that arose in PIE in those rare instances in
+which s came to stand before a voiced stop), the securest example being OE mēd,
+OS mēda, OHG miata ‘reward' beside Go. mizdō, OE meord ‘reward' < PIE
+*mizdhó- in Gk. µσłóç ‘wages', OCS múzda, ‘reward', Skt. mīḍhá- ‘prize'. If
+the OHG demonstrative dē, die corresponds to Go. þái (see §8.10), ai may be
+supposed to have developed to 2 in NWGmc. unstressed syllables and then to
+have been extended to stressed forms of the demonstrative (so Karstien 1921:
+53).
+(e) Influential has been the hypothesis of van Coetsem (1956, 1970: 55–8, 1997) that at
+least some instances of 2 are to be derived from PIE ei before a low vowel in the
+next syllable. This could account for alternations like OHG stiaga 'path' ~ stīgan
+'ascend'. See also Knapp 1974, van Loon 1986.
+1. To explain how the two e-sounds failed to coalesce it is sometimes assumed that PIE ē became PGmc. a.
+This is also a step in the direction of ā, the NGmc. and, in part, WGmc. reflex of PIE ē, but this assumption
+requires that a have reverted to ē in Gothic, and at all events there are other possible values for the PGmc.
+reflex of PIE ē. The representation ē, is preferred here for its relative abstractness. See §3.3 n. 2.
+2. There also occur OS OFris. hīr. The derivation of this word is disputed. It is plainly related to Lat. cis 'on
+this side', but 2 has been derived from *ēi (Jellinek: see below) and by lengthening and lowering of i (Ringe
+1984). The latter explanation seems more probable in view of parallel forms, e.g. Go. þar 'there', har
+'where?'. For references, see Orel 2003: 172, and cf. Jörundur Hilmarsson 1991. For further possible sources,
+see Hirt 1931-4: I §29.4.
+3. In addition to works devoted specifically to the development of the reduplicated preterites in NWGmc.
+(references in §12.20), see Sievers 1892: 238-57, Holthausen 1891, van Helten 1896: 438-45, idem 1908,
+Lehmann 1952: 66-73, Grønvik 1998b: 91-5.
+4. See esp. Polomé 1988: 384-401; van Coetsem 1997; Kortlandt 2006a; for the earlier literature, see
+Streitberg 1896: §79, Hirt 1931–4: I, §29.4.
+3.6
+Ablaut in Proto-Germanic
+Whereas PIE ablaut alternations (§3.1) were not extensively maintained in most IE lan-
+guages, ablaut came to play an important grammatical role in Gmc., where it differ-
+entiates the stems used to form the principal parts of strong verbs, and thus it serves as
+an indicator of tense and/or number, or participial function. Unsurprisingly, then, ablaut
+alternations are most plainly observable in strong verbs: see §12.11 for an overview of
+the relevant alternations in this grammatical category. Ablaut alternations are evident,
+however, in other grammatical contexts, as well. One fairly regular correspondence is
+between strong verb stems with PIE e and derivatives, either verbal or nominal, with
+PIE o. Weak verbs of class 1 provide many examples, e.g. Go. strong ga-nisan 'be
+saved' beside weak nasjan 'save', strong siggan 'sink' (intrans.) beside weak sagqjan
+(trans.), strong af-leipan 'depart' beside OE weak lædan ‘lead' < *laiðjan < *laiþjána"".
+Similarly, beside strong verb stems with e-grade there occur fem. abstract nouns with o-
+grade, e.g. Go. bi-leiban ‘remain' beside láiba ‘remnant', OE stelan 'steal' beside stalu
+‘theft', Olcel. ríða ‘ride' < *rīðana"" beside reið ‘course' < *raiðō. Strong verb stems
+with e-grade often have i-stem derivatives with weak grade, e.g. Go. qiman 'come'
+beside qums 'advent', OE strican ‘stroke' beside Go. striks ‘stroke', OE brecan 'break'"		

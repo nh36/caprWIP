@@ -8,6 +8,161 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twentieth alignment checkpoint: knight through lead
+
+### Identity
+
+SC id/executable identifier: none; non-adopting reconstruction research.
+Branch update; basea7acdf0d is the committed nineteenth tranche, now
+pushed with origin/update verified equal to HEAD. Rows2086-2093 are
+knight, knob, lade, land, lap, last, laugh and
+lead. The latest user instruction authorizes completing this next tranche;
+no automatic twentieth release or scientific adoption is included.
+
+### Question
+
+Hypothesis: inherited nominal/finite-cell matching, local dates and
+reported-author assignments obscure useful comparisons. Complete relevant
+arguments can refute the provisional land-instrumental interpretation,
+separate laugh's underlying/surface/component presentations and reveal
+actual missed consultations. Source titles, similar spellings, grammar
+silence and successful FST output cannot establish a shared dated ancestor
+or the cause of author divergence.
+
+### Current state (before edits)
+
+The immutable snapshot fixes4738 forms,1380 consultations,4904 positions,
+432 comparisons,302 rationales and153 bounded/240 unreviewed core rows.
+All83 inherited identities and68 research hashes are pinned; the
+preparation was executed once. Existing selected citation/input/stage/
+context fields and46 protected scientific owners remain authoritative.
+Previous survey owners, receipts, the research protocol, full template
+and CURRENT_STATE were consulted.
+
+Existing executable behavior/census: n/a; no semantic/order change,
+new witness admission or historical edge is proposed. No Foma rebuild,
+protected assay or PDF render is required for these source annotations.
+
+### Diagnosis
+
+Complete firing census and skip/displacement traces: n/a for this
+non-executable research. Citation, other-cell, family, comparandum and
+process roles do not become new chronology witnesses.
+
+Landu at15 is explicitly nominative/accusative plural, not instrumental;
+the hypothetical Gothic landa at286 is parenthetical comparison, not an
+arrow stage. Laugh's PWGmc underlying and phonetic surface forms are
+simultaneous representations; hj at348 is a component. Knight's later
+raising does not establish a PGmc i noun. Knob's a-grade comparison does
+not establish selected u-grade n-stem ancestry. The selected weak-shaped
+lade citation remains unadopted despite strong source accounts
+[@RingeTaylor2014, pp.15,51,286,337,348;
+@Kroonen2013, pp.229,294-295; @Orel2003, pp.175,217-219].
+
+### Literature
+
+Existing CAPR dossiers checked: current survey commentary and SOURCE,
+nineteenth receipts, frozen corpus/protected owners and protocol. No
+settled knee/glide or other production history was reopened.
+
+Sources checked with printed pages: Orel172-176,211-213,216-220,231-237,
+248-250; Kroonen99-100,228-231,294-295,323-327,339-343,536;
+Ringe142-144,244-246,249-251,275-277,283-285;
+Fulk52-53,73-75,113-117,265-266,294-295,301-303;
+RT14-16,50-53,126-128,176-178,218-220,232-235,239-241,
+285-287,336-338,342-344,347-349. Complete relevant arguments,
+cross-references, tables and necessary footnotes were read. New literals
+are text_checked; no new image certification is claimed.
+
+Source-supported phenomena: branch-membership limits, dental formation
+and voicing, actual finite/plural cells, static-paradigm proposals,
+conditional family admission, nasal-gemination qualifications,
+underlying/surface distinction, heavy/light inflection, causative and
+denominative formation. Fulk's final-xC knight example is75; his lead/lade
+ablaut section is52-53. Neither the former74 nor49-51 navigation leads
+remain the substantive source locator [@Fulk2018, pp.52-53,73-75].
+
+CAPR modelling decisions: retain independent identity, report ownership,
+date, confidence, support and cause. Last's track/know commitment differs;
+lead's nominal alternative is reported Onions, not Orel's exclusive
+opposition. Neither focused cause is established
+[@Kroonen2013, pp.323-324,339-340; @Orel2003, pp.232-233].
+
+### Historical analysis
+
+Stage/scope: PGmc, PWGmc, WGmc, PNWGmc, explicit Pre-Germanic and OE
+remain distinct; hypothetical Gothic is independently labeled, not a
+fabricated intermediate PGmc stage. Actual governing Ringe prose supports
+the lade/laugh dates, unlike a generic book/section title
+[@Ringe2017, pp.244-246,275-277; @RingeTaylor2014, p.286].
+Unknown dates coexist with medium confidence; no confidence-derived
+stage assignment or global diplomatic normalization is introduced.
+
+Phenomenon versus executable proxy: source comparisons do not choose
+inputs by output fit or infer history from network names. Chronology
+edges: none proposed; independently established adoption is n/a.
+Authors' analogy/formation accounts remain attributed research rather
+than CAPR grammatical conditioning or lexical exceptions.
+
+### Verdict
+
+Research disposition: all eight individually reconciled with bounded_limit
+alignments; two focused substantive comparisons remain unexplained.
+All eight whole-row causes remain unestablished. No canonical sound-law
+verdict or Registry-verdict line applies.
+
+Justification: actual page, lexical/cell identity, attribution and local
+labels precede comparison. A reported alternative does not create another
+directly consulted original or necessarily exclusive opposition.
+Qualified source evidence does not establish whole-word equivalence.
+
+### Propagation
+
+Editable owners: forms, coverage, analyses, comparisons, rationales,
+finite targets, reading scopes and the actual Fulk/RT applicability
+records; three exact amendment/occurrence/owner receipt tables; README,
+substantial printed-page commentary, this template-complete audit and
+source-sensitive survey/query regressions.
+
+Twenty-eight literals and26 processes add54 forms; four focused positions
+reuse evidence and30 rationales are added. Fifty-five SOURCE amendments
+cover39 cells, seven dates, five page ranges, three reported authors and
+one component kind. Forty-three owner-field receipts preserve the initial
+screens alongside six actual Fulk consultations and one RT/lade
+consultation; seven finite targets are new. The follow-up reconciles RT
+with its existing consulted_applicable vocabulary and appends Fulk's
+actual294-295/301-303 readings to the historical laugh screen. No
+additional class-only lexical reviews are fabricated.
+
+Totals:4792 forms,1387 consultations,4962 positions,434 comparisons,
+332 rationales;161 bounded/232 unreviewed. All83 inherited identities
+survive;141 positions link136 records. Independent verification preserves
+4738 inherited forms except55 exact annotations,4821 outside positions,
+424 unaffected comparisons,302 inherited reasons and1353 outside
+consultations. Reverse43 owner fields reconstruct the frozen scope/
+applicability hashes; removing only seven new targets reconstructs the
+original target hash. All57 unaffected research hashes/prior receipts,
+786 dictionary reviews, source catalogue, selected corpus and46
+scientific hashes survive. All28 paragraph hashes/literal spans resolve.
+
+SOURCE-only regeneration is exclusively adjudicate.py --refresh.
+Regressions cover plural versus instrumental, hypothetical Gothic,
+actual page/date governance, reported ownership, unresolved a/u identity,
+strong/causative and finite/nonfinite cells, underlying/surface/component
+representation, missing participles, precise receipts and finite
+consultations without class-review fabrication. The independent alignment
+gate refuses232; verified reading separately refuses RT conventions.
+Final focused validation passes all268 survey/analysis tests. The historical
+heart-owner regression follows the exact seventeenth-to-twentieth
+old/new receipt chain before comparing the cumulative current value;
+earlier receipts and scholarly evidence are unchanged. Canonical refresh
+reports CONTROL PLANE CLEAN; bibliography, section-locator, all47 new-prose
+printed-page reference checks and whitespace checks pass. The final
+independent verifier again confirms the preservation counts above.
+The full393-row alignment, class census, synthesis/watchlist/specialist
+dispatch, introduction and publication remain unfinished. No corpus,
+stage/context, FST or baseline adoption is included.
+
 ## Nineteenth alignment checkpoint: home through knee
 
 ### Identity

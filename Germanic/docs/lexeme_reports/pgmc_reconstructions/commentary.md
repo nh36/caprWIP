@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-192 Ringe,138 Fulk and255 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains4738 evidence
-records,1380 actual consultations,4904 positions,432 comparisons and302
+192 Ringe,144 Fulk and256 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains4792 evidence
+records,1387 actual consultations,4962 positions,434 comparisons and332
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:153 core rows are bounded and240 unreviewed.
+explanation remain ongoing:161 core rows are bounded and232 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,252 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twentieth alignment: attributed alternatives, actual plurals and distinct laugh representations
+
+Knight, knob, lade, land, lap, last, laugh and lead, rows2086-2093, are
+individually aligned without changing their selected scientific owners.
+All83 inherited analytical identities survive. Twenty-eight exact literal
+occurrences and26 complete-argument processes add54 records; four focused
+positions reuse evidence. Thirty rationales distinguish actual position
+support from descriptive bridges. Fifty-five SOURCE amendments retain
+the exact old/new values and printed-page grounds:39 cells, seven dates,
+five page ranges, three reported authors and one component kind.
+Forty-three owner-field receipts preserve the original applicability
+screens while recording seven genuine consultations and seven finite
+targets. The141 positions link136 distinct records. Neither this count
+nor source coverage measures resolved ancestral histories.
+
+### Knight: branch membership before later vowel raising
+
+Orel's actual knight quotation is explicitly West Germanic. The
+unknown-origin stool/peg alternatives can underlie it; the neighboring
+knob-to-boy development supplies a semantic parallel, not an independent
+selected knight etymon. The child and knag proposals are respectively
+attributed to Torp-Falk and Holthausen in the bibliography. Reading the
+child entry confirms the separate noun but does not turn a report into
+Orel's endorsement or a directly consulted original. The existing
+Kroonen negative remains bounded: his boy and retainer etyma do not
+establish a cniht/kneht connection [@Orel2003, pp.212-213,217;
+@Kroonen2013, pp.294-295,536].
+
+Ringe-Taylor reconstructs the noun only to PWGmc in the lexical roster,
+expressly allowing accidental Gothic/Norse attestation gaps. That is a
+methodological bound, not a proof that the word could not have existed
+earlier. The later history separates reconstructed OE singular
+\emph{*cneoht} and plural \emph{*cneohtas}, early WS *cniht* 'boy' and
+*cnieht*, and the preserved plural *cneohtas*. Attested variation and
+leveling are not automatically distinct inherited cells. The conditional
+Kentish comparison favors monophthongization before raising, with a
+following back vowel inhibiting the first change; the author does not
+claim that WS spelling variation uniquely determines the phonetics
+[@RingeTaylor2014, pp.126-128,336-338].
+
+Fulk's actual cniht example is on printed75, not74. It illustrates raising
+of e or its eo/io reflex before x plus consonant in absolute finality.
+This is a real new discussion-only consultation, not a reconstructed
+PGmc knight quotation. Its source-backed later conditioner cannot
+justify the corpus's PGmc i-citation automatically
+[@Fulk2018, pp.73-75].
+
+### Knob: do not turn a-grade comparison into a u-grade selected noun
+
+Kroonen's knob/boy material has an a-grade n-stem paradigm: nominative
+\emph{*knabō}, genitive \emph{*knappaz}, with explicitly Pre-Germanic
+\emph{*gnobh-ōn} and \emph{*gnobh-n-ós}. Remodeling produces separately
+voiced and voiceless paradigms. The header and original/remodeled cells
+are on printed294; the thematic cnæp continuation is295. His dranga
+cross-reference supports the stick/boy semantic parallel, not a
+demonstrated genealogical connection to the selected u-grade weak noun
+[@Kroonen2013, pp.99-100,294-295].
+
+These records are comparanda relative to selected cnobba, not a silently
+established same-family a/u equation. Orel's actual u-grade bud/knot
+\emph{*knuppaz} supplies the citation-family lead but neither quotes
+cnobba nor establishes its voiced-geminate n-stem. His nearby a-grade
+shoot/branch-to-boy example remains distinct. Fulk reports Kluge's
+contamination of \emph{*knaba-} and \emph{*knappa-} as an explanation of
+voiced geminates; the quotation remains attributed and locally undated.
+It is relevant comparison, not the missing u-grade genealogy
+[@Orel2003, pp.217-219; @Fulk2018, pp.114-117].
+
+### Lade: strong formation, dental origin and later leveling
+
+Kroonen judges the dental suffixal through a presumably aorist/perfect
+reanalysis after ā/ō merger and before the sound shifts. The nominal
+hlass comparison is supporting formation evidence, not the selected
+infinitive. Orel's actual strong citation likewise does not support the
+corpus's weak-shaped citation automatically. Ringe's complete class-VI
+argument explicitly introduces the simple thematic examples as
+reconstructable for PGmc; its governing prose supports that date for
+the following lade row. Present, past singular, past plural and participle
+are retained separately rather than copied from a modern lemma
+[@Kroonen2013, p.229; @Orel2003, p.175; @Ringe2017, pp.275-277].
+
+Fulk's ablaut argument is printed52-53, not49-51. OE *hlæd* 'burden'
+and *hlōð* 'band' are nominal relatives, not quoted full PGmc lade
+infinitives. The later dental-cluster discussion additionally preserves
+the alternative suffixation/readdition questions and Ringe's different
+cluster-development account. These arguments warrant a real family
+consultation but not a chosen sound-law history
+[@Fulk2018, pp.52-53,113-114].
+
+The previously screened RT/lade lead was not an actual consultation.
+Complete reading now supplies the quoted PGmc infinitive and separate
+second/third singular cells at233, with voiced-dental leveling from the
+default past and subsequent root-grade remodeling. The principal-part
+argument at344 discusses voiced-alternant generalization. Native b/p
+extraction signs are retained; they do not independently certify the
+phonemic dental inventory. The new consultation, finite target and
+scope/applicability changes have reversible owner receipts, preserving
+the original screen rather than pretending it already contained this
+target-specific research [@RingeTaylor2014, pp.232-233,343-344].
+
+### Land: citation, static root paradigm and plural apocope
+
+Kroonen's thematic o-grade neuter is not his possible static root noun.
+Full-grade and zero-grade relatives motivate the paradigm proposal,
+while a general European comparison is not itself an explicit PIE date.
+Orel owns his comparative family; Scardigli's non-IE/Basque and
+Mažiulis's Baltic fall-down proposals remain bibliography reports.
+They are not three directly inspected alternative authorities
+[@Kroonen2013, p.326; @Orel2003, p.235].
+
+Ringe's land argument contrasts later final-nasal-syllable survival
+with earlier vowel apocope in the bind/band examples. Possible nominal
+leveling is acknowledged but judged implausible as an explanation of
+the entire distribution. This is a source-stated chronology warrant,
+not a deduction from identical final nd spellings
+[@Ringe2017, pp.142-144].
+
+Both RT \emph{*landu} occurrences are explicitly nominative/accusative
+plural. The preliminary instrumental reading is refuted by the actual
+source, not retained as an alternative interpretation. At286 the
+parenthetical \emph{*landa} is hypothetical Gothic, not an undated arrow
+between PGmc and PNWGmc. The OE endingless plural is homophonous with
+singular but not the selected citation cell. Native lack of a macron
+on \emph{*lando} is not silently repaired. Nearby home/day instrumental
+examples do not license transferring their cell to land
+[@RingeTaylor2014, pp.14-16,285-287].
+
+### Lap: garment, palm/paw and licking stay separate
+
+Orel's clothing-lap/lobe noun and its separate ON rag j-formation are
+not a licking verb. The Greek lobe and Albanian bark comparisons belong
+to his account; the Latin totter connection is reported from Noreen.
+Kroonen's palm/paw paradigm and its ME love continuation do not establish
+the clothing-noun genealogy, and his licking/slurping entry is a semantic
+homonym. The existing bounded negative remains; neither identity nor
+unrelatedness is manufactured merely from lapp spelling
+[@Orel2003, p.236; @Kroonen2013, pp.339-341].
+
+Fulk explicitly distinguishes the lap noun's nasal formation from the
+ME verb's different root. Nonexpressive *læppa* 'lappet, piece, lobe'
+helps motivate the gemination hypothesis, but his etymological,
+chronological, Gothic-distribution and consonant-inventory reservations
+remain. This is not a new universal PGmc gemination law. His report of
+Ringe's opposition does not substitute for a fresh independent reading
+of that original argument, so no new Fulk/Ringe adjudication is claimed.
+RT's actual table contrasts WS *lappa* 'edge, border' with Mercian
+*leappa* after second fronting/back mutation; it supplies no PGmc word
+[@Fulk2018, pp.114-117; @RingeTaylor2014, pp.218-220].
+
+### Last: degrees of commitment are not exclusive opposition
+
+The selected verb follows or performs; shoe-last/track nouns are
+family bases, not selected infinitives. Kroonen calls the track ti-stem
+derived from the marginal preterite-present lisan and argues that
+know shifted from a perfective have-traced meaning. The actual lisan
+cross-reference is on339, not the earlier misdirected340 lead; the
+necessary learning/teaching family continuations preserve separate
+formations. Orel's know association is conditional and know's origin
+uncertain. This is a substantive difference in commitment and offered
+warrant, not a source-explicit rejection of Kroonen
+[@Kroonen2013, pp.324-325,339-340; @Orel2003, p.233].
+
+The focused cause remains unestablished: Kroonen supplies a semantic
+warrant, but the inspected Orel passage does not explain why he declines
+that stronger commitment. Ringe's denominative infinitive and track
+base are retained without inventing a local PGmc date from the book
+title. RT's explicitly PGmc infinitive, later undated lastjan and OE
+endpoint belong to contraction/mutation history; the native @ sign is
+preserved, not generalized into a normalization rule
+[@Ringe2017, pp.283-285; @RingeTaylor2014, pp.233-235].
+
+### Laugh: simultaneous representations versus different historical stages
+
+Kroonen's optional j and separate j/suffixless presents may continue an
+old i-present third-singular/plural opposition. Cackle semantics are
+possible; iterative, laughter noun and weak causative remain separate.
+The header does not independently assert a PIE date for every precursor.
+Orel supplies a descriptive stem and formal comparisons, while his
+reported alternatives are not proved directional genealogies
+[@Kroonen2013, pp.228-231; @Orel2003, p.173].
+
+Ringe's local PGmc label governs the voiced causative and strong base;
+the later roster explicitly calls the following j-presents securely
+reconstructable for PGmc. Past singular and plural are retained, but
+there is no quoted laugh participle to supply. Fulk's strong j-present
+is not a weak causative merely because its suffix resembles weak
+inflection. His causative quantity explanation distinguishes PIE oH
+from H; analogical quantity in other verbs is not automatically the
+explanation of laugh. The light-strong/heavy-weak inflectional contrast
+is physical, not CAPR grammatical conditioning. His simplified PGmc
+presentation of ij reduction is explicitly qualified in the footnote
+[@Ringe2017, pp.244-246,275-277;
+@Fulk2018, pp.265-266,294-295,301-303].
+
+RT's PWGmc phonetic surface and underlying hj representation are
+simultaneous analyses of the same word, not unrelated comparanda or two
+necessarily successive dates. Most consonants geminate before immediately
+following j; r/z are exempt, and ij is not silently treated as Cj.
+The source refuses to secure r/z-merger order from bleeding alone.
+Later fronting, breaking and mutation chains remain separate, including
+the native corrupt punctuation. The hj item at348 is a stem component,
+not a whole word. Anglian poetic and analogy alternatives are qualified,
+and the OE principal-part tables also leave the participle empty
+[@RingeTaylor2014, pp.50-53,176-178,239-241,342-344,347-349].
+
+### Lead: owned causative versus reported nominal alternative
+
+Kroonen owns causative derivation from go; the road noun's same grade
+does not make it the selected verb. The go entry explicitly identifies
+a PIE root, while an IE header alone does not independently date every
+lead precursor. Orel also owns the go causative, reporting the road
+derivation from Onions. The separately read go entry is not its
+homonymous remain verb. The focused comparison therefore retains
+reported attribution for the nominal alternative: it is not exclusive
+Orel opposition, an independently checked Onions original, or a proved
+cause of divergence [@Kroonen2013, pp.323,340;
+@Orel2003, pp.232,248-249].
+
+Ringe's heavy ij-present account supplies syllable-weight evidence,
+not a grammar-conditioned sound law. Fulk's actual lead antecedents are
+printed52, with dental and suffix accent retained separately; the
+section title alone does not date them PGmc. RT's go base, lead causative,
+PWGmc infinitive and undated contracted intermediate retain distinct
+roles and local labels. Native ampersand and final quotation signs remain
+beside the original forms, not normalized by the output expected from
+CAPR [@Ringe2017, pp.249-251; @Fulk2018, pp.52-53;
+@RingeTaylor2014, pp.233-235].
+
+### Completion boundary
+
+All eight rows have specific bounded alignments; all eight whole-row
+causes and both focused causes remain unestablished. No agreement,
+direct rebuttal or divergence explanation is fabricated to increase a
+completion measure. Independent verification preserves4738 inherited
+records except the55 exact annotations,4821 outside positions,424
+unaffected cases,302 inherited rationales and1353 outside consultations.
+Reversing43 owner fields reconstructs the frozen applicability/scope
+hashes; removing only seven new finite targets reconstructs the original
+target hash. All28 literal hashes/spans resolve independently.
+All57 unaffected research hashes, earlier receipts,786 dictionary
+reviews, selected corpus and46 protected scientific hashes survive.
+The cumulative161 bounded rows leave232 unreviewed; the separate
+Ringe-Taylor conventions gap remains. This tranche does not complete
+the conditioning census, aggregate explanation, specialist dispatch,
+input adoption, introduction or publication.
 
 ## Nineteenth alignment: comparative admission, suffixal nasals and actual knee cells
 
