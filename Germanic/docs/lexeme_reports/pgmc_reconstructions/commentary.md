@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,144 Fulk and256 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains4792 evidence
-records,1387 actual consultations,4962 positions,434 comparisons and332
+393 applicability screens per source. The database contains4838 evidence
+records,1387 actual consultations,5012 positions,436 comparisons and358
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:161 core rows are bounded and232 unreviewed.
+explanation remain ongoing:169 core rows are bounded and224 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,244 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-first alignment: family identity, qualified dates and competing class-VII warrants
+
+Rows2094-2101 are leaf, learn, leather, leek, let, lick, lid and life.
+The twentieth research is released as20448e0b; the next eight are now
+individually aligned, not merely prepared. Eighty inherited analytical
+identities survive. Twenty-five exact literal occurrences and21
+complete-argument processes add46 evidence records; four focused
+positions reuse processes and26 rationales are added. The130 positions
+link126 records. Forty-eight SOURCE amendment fields have exact
+old/new receipts:41 cell descriptions, three locally supported dates
+and four argument repairs. Two existing Fulk consultations move from
+discussion-only to evidence-found because actual lexical cells have
+been extracted; no new consultation, finite target, scope or
+applicability record is manufactured.
+
+The central result is a better separation of family genealogy,
+selected-cell identity and explanatory commitment. An IE-labeled
+precursor need not have an explicitly asserted PIE date; a grammar's
+actual PGmc catalogue can establish a local stage where an index or
+dictionary title cannot. Similar-looking words do not turn a noun,
+stative, causative or other finite cell into the selected citation.
+The source-native slash, missing quantity and corrupted signs remain
+quoted rather than silently converted into preferred reconstructions
+[@Kroonen2013, pp.328,335-338,340; @Ringe2017, pp.287,289-290;
+@RingeTaylor2014, pp.35,298].
+
+### Leaf: gender, contact arguments and relatives
+
+Kroonen's leaf citation has masculine/neuter alternatives. His deeper
+European comparison does not supply a clear PIE etymology. The potion
+entry and roof/air discussion are independently formed relatives,
+not two new leaf citation words. The potion contact discussion favors
+spread from Germanic into Celtic but reports Hyllested's Uralic
+alternative; retaining that reported proposal is not an independent
+author vote for a borrowing history of the selected noun
+[@Kroonen2013, pp.328,341-342].
+
+Orel's leaf citation is neuter. His reported substratum and external
+comparisons retain their respective authors and qualifications. The
+basket entry's leaf connection is qualified; its root does not become
+an authored selected leaf noun merely because the argument can connect
+the families [@Orel2003, pp.237,239]. Ringe-Taylor explicitly labels
+both masculine *laubaz and neuter *lauba PGmc, while Old English
+*lēaf* is the daughter-language citation. The formerly unspecified
+stage of the neuter record is therefore repaired from local prose,
+not from the title of the volume [@RingeTaylor2014, p.172].
+The remaining whole-row limit concerns the independently asserted
+formation and connection premises, not an alleged universal agreement
+between masculine and neuter cells.
+
+### Learn: preserve the actual dating tension
+
+Kroonen's mediopassive/factitive precursor is not an explicitly dated
+PGmc finite word. Orel preserves two verbal formations, rather than
+one automatically preferred infinitive. The know cross-reference
+also reports Benveniste's rejected reconstruction; this is family
+evidence with rejected attribution, not Orel's rejection of every
+possible ancestry for learn [@Kroonen2013, p.340;
+@Orel2003, pp.233,247].
+
+Ringe's no/na stems are explicitly reconstructed for PGmc. His voiced
+fricative supports an earlier accent on the suffix, but that argument
+does not uniquely reconstruct every finite cell: the exact first
+singular remains uncertain and the second plural unrecoverable.
+The actual fientive catalogue later identifies learn as securely
+reconstructable for PGmc. These are three mutually relevant passages,
+not three independent scholarly votes [@Ringe2017, pp.203,246,289-290].
+
+Fulk109 illustrates *liznō- in a Verner-class catalogue. At114 his
+zn-assimilation discussion says that *lizn- is probably a WGmc
+innovation. Both contexts must survive; the latter qualification
+cannot erase the former catalogue or become an exclusive denial of
+all inherited learn formations. The actual weak-IV cross-reference
+is313-315, which preserves qualified thematic and athematic accounts
+without explicitly retracting either learn passage. The starless
+liznō- in the index is a locator, not another independently dated
+reconstruction [@Fulk2018, pp.109-110,114-117,313-315,388].
+
+The focused fientive-membership comparison is substantive but its
+cause remains unestablished. Its precise missing premise is how
+Fulk's qualified local innovation claim relates to the formation
+and stem represented in the other catalogue contexts. The sources
+do not explicitly settle that relation; an analyst must not create
+a contradiction by treating every mentioned stem as one complete
+word at one date [@Fulk2018, pp.109,114,313-315;
+@Ringe2017, pp.203,246,289-290].
+
+Ringe-Taylor's teach material belongs to the family, not to learn's
+infinitive. His explanation of learn's absent i-mutation concerns
+the *ō/*ā following syllable at the date of the change. A later
+j-looking form cannot prove that a palatal trigger was then active.
+The weak-past corrigendum and stative/factitive merger are distinct
+general formation discussions, not direct replacements for that
+learn history [@RingeTaylor2014, pp.183,517-518]. No new early-raising
+law or selected-input repair follows from this alignment.
+
+### Leather and leek: loan versus homonym ambiguity
+
+Both dictionaries explicitly describe leather as a Celtic loan;
+that does not independently establish a borrowing date or an
+inherited PIE whole-word equation. Existing diplomatic thorn in
+*leþra- and *leþran is preserved; Orel's image-checked record remains
+authoritative over the native OCR's b, while Kroonen's record retains
+its existing text-checked status.
+Uncertain Celtic precursor signs are not silently repaired into
+a supposedly verified quotation [@Kroonen2013, p.332;
+@Orel2003, p.241].
+
+Kroonen's leek citation admits masculine/neuter formation and cites
+masculine Old English. The widely accepted close derivation invokes
+the enclosing leaves or scales; the close/pull semantic field may
+involve merged verbs, and the weed/tuft derivatives belong to
+separate pull formations [@Kroonen2013, pp.329,334,343].
+Orel's citation is masculine but its Old English reflex is neuter.
+He leaves the etymology unknown and questions the Dacian purslane
+comparison [@Orel2003, p.239].
+
+A necessary source-sensitive correction concerns Orel's bare
+*lūkanan cross-reference. His251-252 entries contain two homonyms,
+close and pull-up/weed. The short reference at239 does not uniquely
+choose one. It is consequently incorrect to declare that the
+inherited pull-up/weed interpretation is conclusively refuted and
+that Orel certainly meant close. The repaired argument preserves
+the homonym ambiguity, while distinguishing Kroonen's own positive
+derivational commitment [@Orel2003, pp.239,251-252;
+@Kroonen2013, pp.329,334]. Different commitments here need not be
+exclusive opposed histories.
+
+### Let: actual cells and a bounded explanation of model warrants
+
+Ringe reconstructs a PGmc infinitive *lētaną, third-singular
+preterite *lelōt and third-plural *leltun. His pre-Germanic perfect
+alternation belongs to another stage, not three alternative citation
+infinitives [@Ringe2017, p.215]. Fulk's actual Anglian *leort* is
+distinct from expected *leolt: the latter is a hypothetical word
+record, not an attested reflex. The Old English principal parts
+retain his actual quantity markings, including those absent in
+the source, rather than being harmonized with the selected target
+[@Fulk2018, pp.260-262,266,289-291].
+
+The complete class-VII comparison concerns the warrants for type2
+preterite formation, not an alleged disagreement about Ringe's
+PGmc infinitive. Fulk favors e-infixation and argues from broader
+phonological predictions and transparency, while considering
+model-size and analogical objections. Ringe-Taylor develops
+onset loss and contraction in limited groups followed by
+morphological rule extension. His footnote explicitly recognizes
+partial overlap with e-insertion. Both accounts include analogy,
+so an exclusive phonology-versus-analogy opposition would distort
+the arguments [@Fulk2018, pp.266-272;
+@RingeTaylor2014, pp.88-92].
+
+The focused case therefore receives a bounded analyst-inferred
+explanation: the accounts differ in the domain from which their
+model is motivated and the explanatory warrants they prioritize.
+This is not a source-explicit named rebuttal over let, a settled
+unique genealogy, or an adopted chronology. Ringe-Taylor's possible
+let remodeling before pre-PNWGmc lowering is expressly the less
+likely scenario. Its conditional status survives the explanation
+[@RingeTaylor2014, pp.90-92; @Fulk2018, pp.267-272].
+
+The PWGmc full and default stems are separate cells. The default
+stem is inherited from PGmc, not the result of ordinary vowel
+syncope. The distinct *lelt to *lert to *leort history concerns
+the preterite. The later first/third-singular, second-singular and
+default-stem proposal is conditional, and its read-family forms
+are comparanda. The generic vowel features in the class-VII
+argument are processes, not let's own printed suffixes
+[@RingeTaylor2014, pp.90-92,182,518]. All these distinctions
+constrain the focused explanation without promoting it to an
+explanation of the entire selected row.
+
+### Lick, lid and life: homologous forms are not identical endpoints
+
+Kroonen's first lick homonym is licking, not the second homonym's
+jumping. Its nasal/laryngeal iterative genealogy starts from a
+primary aorist; the IE label attached to its precursor does not
+independently assert a PIE date [@Kroonen2013, pp.337-338].
+Fulk's simple-present example is explicitly PIE, as is the
+nasal formation in his reported Kluge account. The complete
+objections about chronology, Gothic and the reconstructed
+inventory are retained; his simple atelic present does not
+explicitly rebut Kroonen's iterative genealogy
+[@Fulk2018, pp.114-117,243]. Ringe-Taylor's *li/ekk6n
+is an explicitly PWGmc i/e alternative. The slash is not a
+morpheme boundary, and its native6 is not silently replaced
+with a newly certified quantity sign [@RingeTaylor2014, p.35].
+No selected finite lick cell is fabricated.
+
+Orel's lid noun has short i, whereas the open/cover verb has
+long i. Its related protection, slope and tent formations retain
+their own lexical identities. The existing long-vowel verb now
+has the appropriate family relationship rather than selected
+noun status. Kroonen's bounded negative remains unchanged;
+the absent grammar consultations are not manufactured negatives
+[@Orel2003, pp.176-178].
+
+Life likewise requires separation of its long-i noun from
+the short-i live stative and strong stay/remain verb. Kroonen
+calls the strong verb's b in place of expected f obscure; the
+possibly more-primary stative is conditional, not a settled
+source of the noun. Its IE-labeled precursor alone does not
+assert a PIE date [@Kroonen2013, pp.335-336].
+Ringe explicitly projects the minority live j-stative back
+to PGmc; the repaired date remains attached to a family verb,
+not a reconstructed life noun [@Ringe2017, p.287].
+Ringe-Taylor's *liba is explicitly PNWGmc and endingless
+*lib PWGmc. Their native missing length is retained.
+Endinglessness and subsequent devoicing are distinct questions;
+pushed-past and sheath comparisons are not life cells
+[@RingeTaylor2014, p.298].
+
+### Measured boundary and subsequent research
+
+All eight whole-row causes remain unestablished. Learn's focused
+cause remains unestablished; let's focused warrant explanation
+is analyst inference with named premises and countercontext.
+The new literal records are text_checked, not newly image-certified.
+All4792 inherited forms survive except the48 exact annotation
+fields;4882 outside positions,426 unaffected comparisons,332
+inherited rationales and1360 outside consultations are unchanged.
+All786 dictionary reviews, source catalogue, scopes, targets,
+applicability records and prior receipts survive. Sixty-four
+unaffected frozen research hashes and all46 protected scientific
+hashes are unchanged. This is research annotation, not adoption
+of a corpus/input/stage/context/FST/baseline correction or a
+new publication.
+
+The database now contains4838 forms,1387 consultations,5012
+positions,436 comparisons and358 rationales. One hundred
+sixty-nine core rows are individually bounded;224 remain
+unreviewed. The independent alignment gate refuses those224,
+separately from the existing Ringe-Taylor convention/typography
+verification gap. Next alignment begins2102. Further finite
+consultations should target learn's exact stem/formation dating
+and the independently motivated class-VII model premises, not
+manufacture agreement or run a new FST assay for annotation.
 
 ## Twentieth alignment: attributed alternatives, actual plurals and distinct laugh representations
 

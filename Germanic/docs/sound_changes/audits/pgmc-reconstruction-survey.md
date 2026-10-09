@@ -8,6 +8,197 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-first alignment checkpoint: leaf through life
+
+### Identity
+
+SC id/executable identifier: none; non-adopting reconstruction research.
+Branch update; base20448e0b6a0365c3443f846ff0dae7fdcbd525a4 is the
+committed twentieth tranche. HEAD and origin/update are independently
+verified equal. Rows2094-2101 cover leaf, learn, leather, leek, let,
+lick, lid and life. The latest user instruction authorizes preceding
+release and execution of21, not automatic21 release or22.
+
+### Question
+
+Hypothesis: inherited cell assignments and implicit dates obscure
+different formation commitments; complete arguments and their actual
+cross-references can repair that matching without inventing agreement
+or exclusive opposition. An explicit local date can refute an
+unspecified SOURCE stage; a homonymous cross-reference can refute a
+supposedly unique lexical identification. A focused explanatory
+inference must remain narrower than the whole selected-row cause.
+
+### Current state (before edits)
+
+The immutable once-prepared snapshot fixes4792 forms,1387 consultations,
+4962 positions,434 comparisons,332 rationales and161 bounded/232
+unreviewed core rows. All80 inherited identities and71 research hashes
+are pinned. Corpus citation/input/cell/stage/context owners and46
+protected scientific hashes remain authoritative. Selected life has
+distinct citation/input accent encodings; no field is adopted here.
+Existing survey SOURCE/commentary, twentieth receipts, CURRENT_STATE,
+research protocol and full adjudication template were consulted.
+
+Existing historical/executable characterization: n/a; no sound-law
+semantics, order, metadata, verdict, witness admission or new edge is
+proposed. An FST rebuild, private assay and PDF render are unnecessary
+for this annotation research.
+
+### Diagnosis
+
+Complete firing census and skip/displacement traces: n/a because no
+executable proposition is being changed. Source selected cells,
+other paradigm cells, family relations, comparanda and processes
+remain research roles, not newly established chronology witnesses.
+
+Eighty inherited analytical identities are individually reconciled.
+Twenty-five literal receipts independently resolve complete native
+paragraphs and boundary-delimited Unicode spans;21 complete-argument
+processes add46 records. Four focused positions reuse evidence.
+The130 positions link126 distinct records. Forty-eight exact inherited
+SOURCE amendments comprise41 cell fields, three dates and four
+arguments. Two exact owner receipts upgrade existing Fulk let/lick
+statuses after genuine lexical extraction, with no new consultation
+identity, target, scope or applicability field.
+
+The corrected dates are RT's explicitly PGmc neuter leaf, Ringe's
+explicitly PGmc live stative and RT's PNWGmc life noun. The family
+live verb never becomes the life noun. Leek's bare Orel reference
+does not uniquely choose his close versus pull-up/weed homonyms
+[@RingeTaylor2014, pp.172,298; @Ringe2017, p.287;
+@Orel2003, pp.239,251-252].
+
+### Literature
+
+Existing dossiers checked: current survey commentary and source-specific
+analyses, previous tranche receipts, frozen selected corpus and protected
+owners. No settled production history is reopened.
+
+Sources with printed pages: Orel176-178,233,237,239,241,245,247,251-252;
+Kroonen328-329,332,334-343; Ringe202-205,214-216,245-247,287,289-290;
+Fulk109-110,113-117,243,260-262,266-272,289-291,313-315,388;
+RT11,34-38,83-85,88-92,94-96,172,182-183,297-299,517-518.
+Complete relevant arguments, cross-references, paradigms and footnotes
+are read. Fulk300-304 was navigation, not a substitute for the actual
+weak-IV cross-reference313-315. New literal evidence is text_checked;
+no new original-image certification is claimed.
+
+Source-supported phenomena: formation/gender and lexical-family
+distinctions; Celtic-loan leather; learn's inherited fientive,
+qualified WGmc zn innovation and lost mutation-trigger context;
+class-VII preterite formation, default grades and conditional
+remodeling; lick's iterative versus simple-present accounts;
+lid noun versus long-vowel verb; life noun versus stative/strong
+family [@Orel2003, pp.176-178,239,241,247;
+@Kroonen2013, pp.328-329,332,335-340;
+@Ringe2017, pp.215,287,289-290;
+@Fulk2018, pp.109,114-117,243,260-262,266-272,313-315;
+@RingeTaylor2014, pp.88-92,183,298].
+
+CAPR modelling decisions: no selected-source/input adoption. Preserve
+Fulk's109 learn illustration beside114's qualification, without
+inventing an exclusive denial. Preserve both authors' analogy in
+the let accounts; infer only different model domains and warrants,
+not an exclusive phonology-versus-analogy opposition
+[@Fulk2018, pp.109,114,266-272;
+@RingeTaylor2014, pp.88-92].
+
+### Historical analysis
+
+Stage/scope: local PGmc, PNWGmc, PWGmc, WGmc, pre-Germanic, PIE and
+OE statements remain independent. IE labels, indexes and titles
+do not supply a date. Confidence and native missing quantity do
+not choose a stage [@Kroonen2013, pp.336-338,340;
+@Ringe2017, pp.215,287; @Fulk2018, pp.114-117,243,388;
+@RingeTaylor2014, pp.35,298].
+
+The focused learn-fientive comparison remains substantive but
+unexplained: the exact relation between the qualified WGmc claim
+and the formations/stems in the inherited catalogues is not
+explicitly settled. The focused let comparison has a bounded
+analyst-inferred warrant explanation: phonological predictions
+and transparency versus limited onset-loss/contraction groups
+and morphological generalization. It retains acknowledged overlap,
+analogy on both sides and the less-likely conditional pre-PNWGmc
+let scenario [@Fulk2018, pp.109,114,266-272,313-315;
+@Ringe2017, pp.203,246,289-290;
+@RingeTaylor2014, pp.88-92].
+
+Phenomenon versus proxy: source annotation does not validate a
+current encoding by final output or infer historical scope from
+network names. Chronology edges: none proposed; no stage-entailed
+or independently demonstrated adoption is claimed. Authors'
+morphological/analogical explanations remain attributed evidence,
+not CAPR lexical exceptions or grammatical sound-law conditioning.
+
+### Verdict
+
+Research disposition: all eight individually reconciled as bounded_limit;
+all eight whole-row causes unestablished. Learn's focused cause is
+unestablished; let's is analyst_inference within its stated premises.
+No canonical sound-law verdict or Registry-verdict line applies.
+
+Justification: distinguish actual from expected forms, infinitives
+from preterites and family nouns from verbs before comparison.
+Orel's ambiguous homonym reference is retained as ambiguous.
+Fulk's apparently divergent learn contexts are preserved together.
+The class-VII comparison explains a bounded difference in warrants
+without pretending to reconstruct the entire selected word history
+[@Orel2003, pp.239,251-252; @Fulk2018, pp.109,114,261,266-272;
+@RingeTaylor2014, pp.88-92].
+
+### Propagation (only after research disposition)
+
+Affected owners: forms/coverage/analyses/comparisons/rationales,
+three new reading-accountability receipts, current README/commentary,
+this audit and focused survey/analysis regressions. Generated views
+are regenerated exclusively through adjudicate.py --refresh.
+
+Positive/negative controls: literal paragraph/hash/span identities;
+80 inherited identities and130/126 links; exact48 SOURCE and two
+owner fields; leaf genders/date, teach versus learn and Fulk's two
+contexts; leather glyph/status preservation and leek homonym limit;
+let actual/expected/default/conditional/read cells and separate
+reason targets; lick homonyms and native i/e slash; lid noun/verb;
+life/live dates and missing length; no fake grammar consultations.
+Deterministic queries separately expose learn's unresolved cause,
+let's bounded inference and eight unestablished whole-row causes.
+
+Independent verification preserves4792 inherited forms except48
+exact annotation fields,4882 outside positions,426 unaffected
+comparisons,332 inherited rationales and1360 outside consultations.
+All786 dictionary reviews, catalogue, consultation identities,
+scopes, targets, applicability and64 unaffected frozen research
+hashes/receipts are unchanged. All25 literal occurrences resolve
+without importing the historical candidate;46 scientific hashes
+remain unchanged.
+
+Baseline/fingerprint effect: none. No corpus/input/target/stage/context/
+FST/canonical registry/baseline/admission/introduction/PDF adoption.
+Current totals4838 forms,1387 consultations,5012 positions,436 cases,
+358 reasons;169 bounded/224 unreviewed. Canonical refresh reports
+CONTROL PLANE CLEAN; all277 focused survey/analysis tests pass.
+The cumulative loan-reason query includes leather's actual argument
+without promoting its whole-row cause. Bibliography, section locators,
+all60 new-prose printed-page references and whitespace checks pass.
+Post-refresh independent verification reconfirms all preservation
+counts, exact literal receipts and the separate completion-gate refusals.
+Session query evidence: pgmc-one-hundred-sixty-nine-alignments-query-results.txt.
+Never rerun/import the persisted pgmc_align_2094_2101.py candidate;
+current SOURCE, receipts and regressions are authority.
+
+### Residue
+
+Learn's exact formation/stem premise, conditional let chronology
+and all eight whole-row causes remain unresolved. Further source
+consultation is a named research queue, not automatic scientific
+adoption. The full393-row programme is unfinished; next alignment2102
+is not begun here. The independent alignment gate refuses224;
+the verified-reading gate separately refuses the unchanged
+Ringe-Taylor convention/typography gap. No automatic21 release,
+22 start, protected assay or book publication is included.
+
 ## Twentieth alignment checkpoint: knight through lead
 
 ### Identity

@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4792 evidence records,1387 actual consultations and4962
-analytical positions, with434 comparisons and332 rationales. The RT
+There are4838 evidence records,1387 actual consultations and5012
+analytical positions, with436 comparisons and358 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred sixty-one core rows now have individually reconciled, bounded alignment:
-1933-2093. The remaining232 are unreviewed. The second tranche builds on
+One hundred sixty-nine core rows now have individually reconciled, bounded alignment:
+1933-2101. The remaining224 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -137,7 +137,43 @@ none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
 
-The twentieth tranche completes knight, knob, lade, land, lap, last,
+The twenty-first tranche completes leaf, learn, leather, leek, let,
+lick, lid and life, rows2094-2101. All80 inherited analytical identities
+are individually reconciled. Twenty-five literal receipts and21
+complete-argument processes add46 records; four focused positions reuse
+evidence and26 rationales are added. The130 positions link126 distinct
+records. Forty-eight exact SOURCE amendments comprise41 cell fields,
+three locally supported dates and four argument repairs. Two actual
+existing Fulk consultations are upgraded after lexical evidence is added;
+no new consultation, target, scope or applicability record is created.
+All786 dictionary reviews survive; their evidence count is1624.
+
+Learn's inherited-fientive versus qualified WGmc-innovation question
+remains focused substantive but unexplained. Fulk's109 catalogue and
+114 qualification both survive, with the actual313-315 weak-IV
+cross-reference; Ringe's289-290 catalogue explicitly projects learn
+back to PGmc [@Fulk2018, pp.109,114,313-315; @Ringe2017, pp.289-290].
+Let's type2 comparison has a bounded analyst-inferred explanation of
+different model domains and explanatory warrants, not a direct named
+rebuttal, phonology-versus-analogy opposition, or adopted chronology
+[@Fulk2018, pp.260-262,266-272; @RingeTaylor2014, pp.88-92].
+All eight whole-row causes remain unestablished.
+
+Orel's leek cross-reference does not uniquely select between his
+close and pull-up/weed homonyms. Leather's Celtic-loan account does
+not itself fix a borrowing date; image-checked thorn remains unchanged.
+Lid's long-vowel verb is family evidence, not the short-vowel selected
+noun. Life's noun, live stative and conditional strong-verb account
+remain separate [@Orel2003, pp.176-178,239,241,251-252;
+@Kroonen2013, pp.329,332,334-338; @Ringe2017, p.287].
+Independent verification preserves all4792 inherited forms except the48
+exact fields, all outside research and64 unaffected prior research
+hashes/receipts, and all46 protected scientific hashes. The source
+catalogue, consultation identities, scopes, targets, corpus/input/stage/
+context/FST/baseline owners remain unchanged. Next alignment begins2102;
+this is neither scientific adoption nor completion of the393-row programme.
+
+The twentieth tranche completed knight, knob, lade, land, lap, last,
 laugh and lead, rows2086-2093. All83 inherited identities are individually
 reconciled;28 exact literals and26 processes add54 records. Four focused
 positions reuse evidence and30 rationales are added. Fifty-five exact

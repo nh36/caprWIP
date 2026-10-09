@@ -916,9 +916,9 @@ class ReadingScopeTests(unittest.TestCase):
                 self.assertTrue(case["alignment_limits"])
         self.assertEqual(sum(row["scope"] == "core_triage" and
                              row["alignment_status"] == "bounded_limit"
-                             for row in tables["comparisons"]), 161)
+                             for row in tables["comparisons"]), 169)
         self.assertEqual(len(reviews), 1387)
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "232"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "224"):
             survey.analytical.require_alignment_complete(corpus, tables["comparisons"])
 
     def test_both_neuter_does_not_absorb_other_genders_three_or_two(self):
@@ -4022,7 +4022,7 @@ class EighteenthAlignmentTests(unittest.TestCase):
                              ("discussion_only", "evidence_found", "evidence_found"))
         self.assertEqual(len(self.reviews), 1387)
         self.assertEqual(sum(r["source_key"] == "Fulk2018" for r in self.reviews), 144)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1605)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1624)
 
 
 class NineteenthAlignmentTests(unittest.TestCase):
@@ -4415,6 +4415,156 @@ class TwentiethAlignmentTests(unittest.TestCase):
         laugh_pages = next(r for r in receipts if (r["identity"], r["field"]) == ("2092", "read_printed_pages"))
         self.assertEqual((laugh_pages["old_value"], laugh_pages["new_value"]), ("245-291", "245-291,294-295,301-303"))
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
+
+
+class TwentyFirstAlignmentTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.corpus, cls.sources, cls.forms, cls.reviews = survey.load()
+        cls.tables = survey.load_analysis(survey.ROOT, cls.corpus, cls.forms)
+        cls.rows = set(map(str, range(2094, 2102)))
+        cls.members = [p for p in cls.tables["analyses"] if p["row_id"] in cls.rows]
+        cls.evidence = {f["evidence_id"]: f for f in cls.forms}
+        cls.cases = {c["comparison_id"]: c for c in cls.tables["comparisons"]}
+        cls.directory = survey.ROOT / survey.DIRECTORY / "reading_accountability"
+
+    def position(self, row, eid):
+        return next(p for p in self.members if (p["row_id"], p["evidence_id"]) == (row, eid))
+
+    def test_individual_identities_and_separate_completion_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (130, 126))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment-") for p in self.members), 80)
+        for row in self.rows:
+            case = self.cases["core-" + row]
+            members = [p for p in self.members if p["row_id"] == row]
+            with self.subTest(row=row):
+                self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                                 ("bounded_limit", "unestablished"))
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in members})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in members})
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in members))
+                self.assertTrue(case["alignment_limits"])
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "224"):
+            survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
+
+    def test_literal_receipts_resolve_actual_paragraphs_and_whole_tokens(self):
+        import hashlib
+        receipts = survey.read_table(self.directory / "alignment-2094-2101-occurrences.tsv")
+        self.assertEqual(len(receipts), 25)
+        for receipt in receipts:
+            form = self.evidence[receipt["evidence_id"]]
+            text = (survey.ROOT / form["basis"]).read_text()
+            sheet = int(receipt["holding_sheet"])
+            if receipt["source_key"] == "Ringe2017":
+                block = text.split("\f")[sheet - 1]
+            else:
+                marker = (rf"### PAGE {sheet}\s*\n" if receipt["source_key"] == "RingeTaylor2014"
+                          else rf"=== page {sheet:03d} ===\s*\n")
+                block = re.split(marker, text, maxsplit=1)[1]
+                block = re.split(r"### PAGE \d+|=== page \d+ ===", block, maxsplit=1)[0]
+            paragraph = [p.strip() for p in re.split(r"\n\s*\n", block) if p.strip()][int(receipt["paragraph"]) - 1]
+            start, end = int(receipt["start_char"]), int(receipt["end_char"])
+            with self.subTest(evidence=receipt["evidence_id"]):
+                self.assertEqual(paragraph, receipt["paragraph_text"])
+                self.assertEqual(hashlib.sha256(paragraph.encode()).hexdigest(), receipt["paragraph_sha256"])
+                self.assertEqual(paragraph[start:end], form["diplomatic_form"])
+                self.assertIn((start, end), {(m.start(), m.end()) for m in
+                    re.finditer(rf"(?<![\w*]){re.escape(form['diplomatic_form'])}(?!\w)", paragraph)})
+                self.assertEqual((form["printed_pages"], form["verification"]),
+                                 (receipt["printed_pages"], "text_checked"))
+        amendments = survey.read_table(self.directory / "alignment-2094-2101-amendments.tsv")
+        self.assertEqual(len(amendments), 48)
+        self.assertEqual({field: sum(r["field"] == field for r in amendments)
+                          for field in ("cell", "asserted_stage", "argument")},
+                         {"cell": 41, "asserted_stage": 3, "argument": 4})
+        for amendment in amendments:
+            self.assertEqual(self.evidence[amendment["evidence_id"]][amendment["field"]],
+                             amendment["new_value"])
+            self.assertNotEqual(amendment["old_value"], amendment["new_value"])
+
+    def test_leaf_gender_and_foliage_date_are_not_collapsed(self):
+        foliage = self.position("2094", "rt-complete-2094-002")
+        self.assertEqual((foliage["stage_interpretation"], self.evidence[foliage["evidence_id"]]["asserted_stage"]),
+                         ("pgmc", "pgmc"))
+        self.assertEqual(survey.analytical.feature_values(foliage)["gender"], "neuter")
+        leaf = self.position("2094", "rt-complete-2094-001")
+        self.assertEqual(survey.analytical.feature_values(leaf)["gender"], "masculine")
+        self.assertEqual(self.position("2094", "orel-core-2094-2")["relation_to_row"], "comparandum")
+        self.assertEqual(self.position("2094", "rt-complete-2094-003")["relation_to_row"], "selected_cell")
+
+    def test_learn_retains_fulk_countercontext_and_teach_family(self):
+        stem = self.position("2095", "fulk-complete-learn-stem-p114")
+        self.assertEqual((stem["stage_interpretation"], stem["attribution_status"]), ("wgmc", "conditional"))
+        self.assertIn("both contexts", self.evidence["fulk-complete-learn-endpoint"]["argument"])
+        self.assertEqual(self.evidence["fulk-complete-index-learn-stem-alternant"]["diplomatic_form"], "liznō-")
+        self.assertEqual(self.evidence["alignment-learn-fulk-verner-stem"]["diplomatic_form"], "*liznō-")
+        for n in (3, 5, 10, 13):
+            self.assertEqual(self.position("2095", f"rt-complete-2095-{n:03d}")["relation_to_row"], "same_family")
+        self.assertEqual(self.position("2095", "orel-core-2095-3")["attribution_status"], "rejected")
+        self.assertEqual(self.cases["learn-fientive-membership"]["explanation_status"], "unestablished")
+        argument = self.evidence["alignment-learn-lost-looking-trigger"]["argument"]
+        self.assertIn("not proof of an active earlier trigger", argument)
+        self.assertIn("different weak formation", self.evidence["rt-complete-2095-020"]["argument"])
+
+    def test_leather_glyphs_and_leek_homonym_limit(self):
+        self.assertEqual(self.evidence["kroonen-core-2096-1"]["diplomatic_form"], "*leþra-")
+        self.assertEqual(self.evidence["orel-core-2096-1"]["diplomatic_form"], "*leþran")
+        self.assertIn("Celtic loan", survey.analytical.feature_values(
+            self.position("2096", "kroonen-core-2096-1"))["cell"])
+        self.assertIn("does not uniquely identify one", self.evidence["orel-core-2097-1"]["argument"])
+        self.assertIn("explicitly neuter OE", survey.analytical.feature_values(
+            self.position("2097", "orel-core-2097-1"))["cell"])
+
+    def test_let_actual_expected_default_and_read_cells_are_separate(self):
+        for eid, literal, stage in (
+            ("alignment-let-ringe-past-sg", "*lelōt", "pgmc"),
+            ("alignment-let-ringe-past-pl", "*leltun", "pgmc"),
+            ("alignment-let-pre-perfect-zero", "*le-lh1d-´", "pre_germanic"),
+            ("alignment-let-fulk-expected", "*leolt", "oe"),
+        ):
+            self.assertEqual(self.evidence[eid]["diplomatic_form"], literal)
+            self.assertEqual(self.position("2098", eid)["stage_interpretation"], stage)
+        self.assertEqual(self.evidence["alignment-let-fulk-expected"]["form_kind"], "word")
+        self.assertEqual(self.evidence["alignment-let-fulk-relic"]["form_kind"], "attestation")
+        for n in (14, 16, 18, 20):
+            self.assertEqual(self.position("2098", f"rt-complete-2098-{n:03d}")["relation_to_row"], "comparandum")
+        for n in (15, 17, 19):
+            self.assertEqual(self.position("2098", f"rt-complete-2098-{n:03d}")["attribution_status"], "conditional")
+        focused = self.cases["let-type2-formation-warrants"]
+        self.assertEqual(focused["explanation_status"], "analyst_inference")
+        reason = next(r for r in self.tables["rationales"] if r["rationale_id"] == "r-let-type2-formation-warrants-cause")
+        self.assertEqual((reason["reason_target"], reason["support_mode"]),
+                         ("divergence_explanation", "analyst_inference"))
+        self.assertIn("partial overlap", reason["statement"])
+
+    def test_lick_lid_and_life_do_not_borrow_other_cells_or_dates(self):
+        self.assertEqual(self.evidence["rt-complete-2099-001"]["diplomatic_form"], "*li/ekk6n")
+        self.assertIn("homonym1", survey.analytical.feature_values(
+            self.position("2099", "kroonen-core-2099-1"))["cell"])
+        self.assertEqual(self.position("2100", "orel-core-2100-2")["relation_to_row"], "same_family")
+        live = self.position("2101", "ringe-complete-life-live")
+        self.assertEqual((live["relation_to_row"], live["stage_interpretation"]), ("same_family", "pgmc"))
+        self.assertEqual(self.evidence["ringe-complete-life-live"]["asserted_stage"], "pgmc")
+        self.assertEqual(self.evidence["rt-complete-2101-001"]["diplomatic_form"], "*liba")
+        self.assertEqual(self.evidence["rt-complete-2101-001"]["asserted_stage"], "northwest_germanic")
+        self.assertEqual(self.position("2101", "rt-complete-2101-002")["stage_interpretation"], "pwgmc")
+
+    def test_existing_fulk_status_upgrades_do_not_invent_consultations(self):
+        receipts = survey.read_table(self.directory / "alignment-2094-2101-owner-amendments.tsv")
+        self.assertEqual(len(receipts), 2)
+        for receipt in receipts:
+            source, row = receipt["identity"].split(":")
+            review = next(r for r in self.reviews if (r["row_id"], r["source_key"]) == (row, source))
+            self.assertEqual((receipt["old_value"], receipt["new_value"], review["status"]),
+                             ("discussion_only", "evidence_found", "evidence_found"))
+        self.assertEqual(len(self.reviews), 1387)
+        self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 786)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1624)
+        for row in ("2096", "2097", "2100"):
+            self.assertFalse(any(r["row_id"] == row and r["source_key"] in
+                                 ("Ringe2017", "Fulk2018", "RingeTaylor2014")
+                                 for r in self.reviews))
 
 
 if __name__ == "__main__":
