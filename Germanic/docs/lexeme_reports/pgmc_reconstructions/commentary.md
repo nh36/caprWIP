@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5286 evidence
-records,1391 actual consultations,5501 positions,452 comparisons and615
+393 applicability screens per source. The database contains5361 evidence
+records,1391 actual consultations,5580 positions,454 comparisons and651
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:233 core rows are bounded and160 unreviewed.
+explanation remain ongoing:241 core rows are bounded and152 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,250 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirtieth alignment: derivational warrants, hiatus alternatives and actual verb cells
+
+Salt, salve, sap, sea, seam, seek, send and set, rows2166-2173,
+continue from releasedf97dc0ca. Complete relevant dictionary bodies,
+grammar arguments, paradigms, footnotes and needed cross-references
+support individual reconciliation of all114 inherited identities.
+Forty-three source-native quotations and32 scoped arguments add75
+records. Four focused positions reuse evidence, not independent testimony;
+36 rationales remain position support. The193 tranche positions link189
+records. Exact receipts preserve128 annotation changes:114 cells,
+10 locally supported dates, two arguments and two locators.
+No new consultation or change of consultation status is invented.
+
+### Salt: direction of derivation is not a fabricated opposition
+
+Kroonen explicitly derives the neuter salt collective from the strong
+salt verb. The older annotation retained the collective, IE ablauting
+l-stem and dental suffix but omitted this direction. That omission is
+now repaired with an exact argument receipt. The dental parallels the
+sweet formation; it does not make salty an alternative inflected cell
+of the substance noun. Orel calls the strong salt verb related to the
+noun, and separately derives a weak salt verb from that noun. Since
+related-to is not an explicit noun-to-strong-verb assertion, these
+passages do not justify a focused case of mutually exclusive derivations.
+The weak denominative and the strong source verb are different identities
+[@Kroonen2013, p.425; @Orel2003, p.316].
+
+Ringe's brine example supplies a u-grade nominal derivative of the
+strong salt infinitive, in a discussion of classVII default ablaut.
+His suspicion that some such verbs once had zero-grade past stems
+is not a quoted salt preterite or salt substance noun. The local
+salt infinitive does not acquire an explicit date just because the
+surrounding book discusses PGmc morphology. Ringe-Taylor, by contrast,
+explicitly labels the substance noun PGmc and the salty adjective
+PNWGmc. Their coincident modern reflexes do not erase that difference.
+WS/Kentish breaking and Anglian retraction must be read against the
+exclusion of palatalized geminates, not converted into a change of the
+selected target dialect or an adjective substituted for the noun
+[@Ringe2017, pp.259-260; @RingeTaylor2014, pp.184-185].
+
+### Salve: nominal ancestry, verbal quantity and a conditional instrumental
+
+Both dictionaries separate the feminine ointment noun from the
+denominative anoint verb. Kroonen's native extracted header lacks
+the quantity shown by the inherited certified noun citation; that
+is a provenance distinction, not evidence for a new short-vowel
+reconstruction. Oil/grease cognates and the derived verb remain relevant
+family evidence without supplying another selected nominal cell
+[@Kroonen2013, p.424; @Orel2003, p.315].
+
+Ringe requires finer occurrence-level handling. The native Verner
+paragraph prints the nominal salve with a double combining macron,
+whereas the already certified nominal base in the weakII discussion
+has a single macron. The new native occurrence is retained beside the
+certified one, not used to overwrite it. His weakII contractions,
+present infinitive, finite past and past participle have distinct
+quantities and endings; the tables' unstarred verbal entries remain
+table quotations rather than newly certified attestations. Possible
+leveling also limits what those quantities establish about Osthoff's
+law. The unresolved original-level nominal discrepancy is exact and
+local; it does not make the anoint infinitive a salve noun
+[@Ringe2017, pp.123,160,189,284-285,297-299].
+
+Fulk's instrumental noun plus root aorist do is an illustration of
+the composition theory, not a settled identification of the selected
+salve citation as an instrumental. He discusses advantages, objections
+and dental-suffix polygenesis, and later returns to a possible classII
+origin in such compounds. The index's starless barred-b forms survive
+beside the native body forms. Neither the index nor the conditional
+compound is silently promoted into an endorsed full nominal ancestor.
+His reported speculative alternatives remain reported; no grammatical
+conditioning is adopted as a CAPR sound law
+[@Fulk2018, pp.291-294,304,388].
+
+Ringe-Taylor's earlier breaking example includes both salve and
+anoint; the later final-fricative example is a noun chain. The inherited
+same-family classification of every later noun stage was therefore
+too weak: PGmc/PWGmc nominal citations and later nominal endpoints
+are now explicitly distinct from verbs. Final-u apocope precedes
+bilabial-fricative devoicing and merger with f. Early Mercian salb and
+the later Corpus salf are evidence for that sequence, not proof of
+one selected verbal history. Repeated nominal occurrences on the two
+pages remain separately receipted
+[@RingeTaylor2014, pp.184,297].
+
+### Sap: a dissolved paradigm is not an unresolved lexical identity
+
+Kroonen's f/b n-stem and geminate/single-p a-stem continuations
+belong to the same sap etymon after dissolution of a primary n-stem.
+The inherited unresolved relations can therefore be replaced by
+specific stem/cell interpretations. Nominative and genitive, and their
+separate ancestral cells, remain distinct. A secondary neuter collective
+does not establish the exact selected nasal a-ending. The associated
+drool formation is not the same as the zero-grade soak iterative
+favored for the Nordic mud/trudge verb
+[@Kroonen2013, p.420].
+
+Orel retains masculine n-stem and neuter alternatives, admitting the
+Latin connection despite phonetic difficulties. Solmsen's proposed
+Germanic borrowing from Latin is a bibliography report, not Orel's
+explicit borrowed-word verdict. A further specialist would need to
+address those phonetic and formation premises, not merely repeat the
+Latin spelling. Sap remains dictionary-only: no grammar negative or
+consultation is fabricated to fill a five-author grid
+[@Orel2003, p.319].
+
+### Sea: etymological warrants and the limits of contraction evidence
+
+The first focused case compares actual warrants. Kroonen's i-stem,
+with Northwest a-stem, is probably derived from the flow/percolate
+family; swamp is a semantic derivational parallel. Orel instead favors
+the fierce/sharp comparison while retaining i/a alternatives and OE
+gender differences. Juice/moisten, see, shine, Uralic and pre-Germanic
+loan accounts are bibliographic reports, not equally endorsed positions.
+The difference is substantive, but neither passage states why the
+authors weight the external evidence differently. No named rebuttal or
+complete genealogy follows from author counts
+[@Kroonen2013, p.423; @Orel2003, p.314].
+
+Following Kroonen's actual flow cross-reference clarifies, rather than
+closes, the comparison. The percolate paradigm is not an inflection of
+sea. Its parallel voiced-velar verb is difficult as a straightforward
+Verner variant and is probably backformed from a causative, whose
+delabialization has its own condition. That account cannot be assembled
+into the selected sea ending or used to suppress the rival comparison
+[@Kroonen2013, pp.435-436].
+
+Ringe-Taylor's repeated sea histories retain separate page occurrences,
+native corruptions and locally explicit versus undated stages. His
+later hiatus discussion does not prove one obligatory sea contraction.
+Sea and law can reach their endpoints by high-vowel loss or contraction;
+several other examples require contraction to explain long quantity.
+New, merrymaking, flock and finite verbs are thus comparanda, not sea
+ancestors or interchangeable chronology witnesses. The delay after
+w-loss, and earlier identical-vowel versus one later general contraction
+episode, remain alternatives. Conditional mechanism does not make the
+lexical identity of the sea intermediate unresolved
+[@RingeTaylor2014, pp.234,259,317-319].
+
+### Seam: suffix identity and the real sewing cross-reference
+
+Kroonen's seam is a mo-stem of sew, with proposed Pre-Germanic
+loss of i. Sanskrit and Greek men formations are useful comparanda,
+not quotations of that Germanic suffix. The complete seam entry is
+on427; its inherited427-428 locator is repaired exactly. Derived seam
+verb, purse to-formation and old ie-present sew have separate roles.
+The purse discussion's alternative laryngeal placements and preferred
+ancestral sequence bear on i-loss without supplying a full selected
+nominal cell
+[@Kroonen2013, pp.427,434,437-438].
+
+Orel explicitly says the internal vowel changed in Germanic. His
+sew cross-reference on320 is now family evidence, not another seam
+citation; the actual sew body on329 is a distinct native occurrence.
+Shared band/membrane/twine semantics do not settle identical suffixes
+or the exact selected stress. Seam, like sap, remains honestly
+dictionary-only rather than acquiring invented grammar silence
+[@Orel2003, pp.320,329].
+
+### Seek: factitive ancestry is not settled by an irregular past
+
+The second focused case contrasts Orel's explicit factitive of
+dispute with Kroonen's historical reservation. Kroonen acknowledges
+the causative-looking synchronic form, but external e-grades and
+noncausative semantics make that derivation unlikely. Orel's report
+of Mezger rejecting the Greek comparisons is not his own blanket
+rejection. These complete arguments support a substantive comparison,
+not an established explanation for divergent weighting or a named
+rebuttal. The origin of the long vowel remains a further premise
+[@Kroonen2013, pp.423,464; @Orel2003, pp.314-315,360].
+
+Ringe explicitly reconstructs the present infinitive, finite past3sg
+and participle for PGmc in the anomalous weak class; their previously
+undated annotations receive exact date receipts. Fulk's optional-j/i
+present2sg is not the infinitive illustrated on the next page, and
+the native body quote remains independent of the certified index.
+His North/West versus Gothic past comparison preserves competing
+phonological, primary-formation and analogical explanations without
+a scholarly consensus on why the linking vowel is missing. Inflectional
+archaism does not by itself choose the causative genealogy
+[@Ringe2017, pp.280-281,297-299; @Fulk2018, pp.62-65,299-301,388].
+
+The later syncope, palatalization and long-vowel mutation examples
+retain repeated PGmc, PWGmc and OE occurrences and distinct dialect
+reflexes. An explicitly OE intermediate on226 cannot automatically
+date an identically extracted form on208. Restricted northern syncope
+and the missing trigger are supported chronology facts, not permission
+to change CAPR's input or claim that these passages defend Orel's
+etymology
+[@RingeTaylor2014, pp.156-158,208,226].
+
+### Send and set: actual finite cells and native representations
+
+Send's causative must be distinguished from its go/travel/feel base.
+Kroonen's actual nasal-present entry supplies head-for, long-for and
+thought meanings; Orel's cross-reference gloss go differs from the
+care/mind/heed base body. Native senpanan there is preserved beside
+the inherited certified thorn occurrence, not globally repaired.
+Ringe's fossilized root no longer survives as a verb but has a journey
+noun. These are family and root premises, not three competing send
+infinitives or permission to fabricate selected stress
+[@Kroonen2013, pp.426,437; @Orel2003, pp.318,325;
+@Ringe2017, pp.246,281-282].
+
+Fulk's sentst/sent are present2sg/3sg cluster adjustments, not an
+archaic weak past quote. The misleading inherited argument now has
+an exact receipt. His optional send2sg and past sende also remain
+separate. The OS/OE past comparison concerns syncope versus mutation
+order; Ringe-Taylor's nasal-conditioned raising is a later distinct
+process, not mutation by a palatalized geminate
+[@Fulk2018, pp.63,65,298-299; @RingeTaylor2014, pp.228-230].
+
+Set is the causative, sit the basic present. The dictionaries'
+cross-references, Ringe's PGmc contrast and Fulk's suffix alternatives
+do not license silently changing the native e-bearing sit example
+to a raised i quote. Fulk's expected unsyncopated past is counterfactual,
+not attestation; Northumbrian gesætte and WS sette have separate
+vowels. His WGmc dental-stem past argument explicitly lacks East/North
+evidence for back-projection to PGmc
+[@Kroonen2013, pp.427,434; @Orel2003, pp.319,325-326;
+@Ringe2017, pp.281-282; @Fulk2018, pp.248,265-266,295,298-301].
+
+Ringe-Taylor's underlying and phonetic set displays represent the same
+PWGmc verb, not a comparandum; the underlying date is repaired explicitly.
+Present2sg/3sg, Northumbrian principal parts, non-Northumbrian past/
+participial alternatives and the later explicit Ps(A)/earlyWS participles
+remain distinct occurrences. Gesatted was already in the inherited
+list, so its retention is not a new discovery. This is precisely why
+the frozen identities, rather than an abbreviated dispatch summary,
+govern extraction completeness
+[@RingeTaylor2014, pp.50-52,238,350-351,357-358].
+
+### Boundary and remaining premises
+
+All eight core rows are bounded with exact formation, comparison,
+quantity, cell or stress premises still missing. Neither focused case
+promotes a whole-row cause; all remain unestablished. Totals are5361
+forms,1391 consultations,5580 positions,454 cases and651 rationales,
+with241 bounded and152 unreviewed core rows. All786 dictionary reviews
+and their statuses remain, with1861 dictionary records. Scientific
+inputs, targets, stages, contexts, FSTs and baselines are unchanged.
+No automatic thirtieth release, next tranche, new PDF or completed
+393-row synthesis is claimed.
 
 ## Twenty-ninth alignment: nasal genealogies, gemination warrants and nominal cells
 

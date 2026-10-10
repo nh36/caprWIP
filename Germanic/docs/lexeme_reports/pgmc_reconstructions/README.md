@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5286 evidence records,1391 actual consultations and5501
-analytical positions, with452 comparisons and615 rationales. The RT
+There are5361 evidence records,1391 actual consultations and5580
+analytical positions, with454 comparisons and651 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred thirty-three core rows now have individually reconciled, bounded alignment:
-1933-2165. The remaining160 are unreviewed. The second tranche builds on
+Two hundred forty-one core rows now have individually reconciled, bounded alignment:
+1933-2173. The remaining152 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,52 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirtieth tranche completes salt, salve, sap, sea, seam, seek, send
+and set, rows2166-2173, from releasedf97dc0ca. All114 inherited
+analytical identities are individually reconciled. Forty-three native
+occurrences and32 scoped arguments add75 records; four focused
+positions reuse evidence and36 rationales are added. The193 positions
+link189 distinct records. Exact reversible receipts cover128 SOURCE
+fields:114 cells,10 explicit dates, two arguments and two locators.
+No consultation identity/status, target, scope or applicability owner
+changes; dictionary-only sap/seam remain dictionary-only.
+
+Salt's collective-from-strong-verb claim is not an exclusive disagreement
+with Orel's related strong verb and weak denominative. Salve's nominal
+chain is not an anoint verb; certified single-macron285 and native
+double-macron123 occurrences remain separate. The conditional salve
+instrumental/do compound is not a settled nominal genealogy
+[@Kroonen2013, pp.424-425; @Orel2003, pp.315-316;
+@Ringe2017, pp.123,160,189,284-285,297-299; @Fulk2018, pp.291-294,304;
+@RingeTaylor2014, pp.184,297].
+
+Sap's n-paradigm and dialectal continuations, seam's mo-stem and
+external men comparanda, send's causative versus go/feel base, and set's
+underlying/phonetic representations remain separate. Native Orel
+senpanan325 is not silently repaired to certified senþanan318.
+Repeated set present, past and participial cells remain distinct;
+gesatted was already inherited and is retained, not newly discovered
+[@Kroonen2013, pp.420,426-427,434-438; @Orel2003, pp.318-320,325-326,329;
+@Ringe2017, pp.246,280-282; @Fulk2018, pp.63-65,295,298-301;
+@RingeTaylor2014, pp.50-52,229,238,350-351,357-358].
+
+Sea's probable flow versus fierce/sharp etymologies and seek's explicit
+factitive versus disfavored historical causative are focused substantive
+comparisons with unestablished causes. They are not named rebuttals or
+whole-row explanations. Sea hiatus has apocope/contraction alternatives;
+long-vowel comparanda cannot prove one sea-specific mechanism
+[@Kroonen2013, pp.423,435-436,464; @Orel2003, pp.314-315,360;
+@RingeTaylor2014, pp.234,259,317-319].
+
+All786 dictionary reviews remain with1861 dictionary evidence records.
+Independent checks preserve5286 inherited forms except128 exact fields,
+5387 outside positions,444 unaffected comparisons,615 inherited
+rationales,1360 outside consultations and46 scientific hashes.
+Current SOURCE and exact receipts are authority; never run/import the
+persisted candidate or recreate its immutable preparation. No scientific
+adoption, PDF, automatic30 release or31 start is included. Full393-row
+alignment, conditioning census, synthesis and watchlist remain open.
 
 The twenty-ninth tranche completes room, rope, rudder, run, rust, rye,
 sail and sake, rows2158-2165, from released54cbd0b8.

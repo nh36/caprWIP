@@ -8,6 +8,164 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirtieth alignment checkpoint: salt through set
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base: releasedf97dc0cad4e24b3ebdaebf188d3e3fa535de1769 on update.
+Rows2166-2173: salt, salve, sap, sea, seam, seek, send, set.
+The user authorized release of29 and execution of30, not automatic30
+release or31 start. Immutable preparation pins5286 forms,114 inherited
+identities and95 research hashes. The46 original scientific hashes
+remain protected. Preparation is never recreated; the candidate
+persisted exactly once and must never run/import again.
+
+### Question
+
+Can every inherited identity be reconciled without confusing nouns
+with verbs, reported etymologies with endorsement, uncertain mechanisms
+with uncertain lexical identity, or repeated finite cells with one
+quotation? A fabricated exclusive derivational dispute, silent glyph
+repair, date inferred from confidence, lost identity or whole-row cause
+derived from focused support would falsify completion.
+
+### Current state
+
+Eight core rows were unreviewed despite complete dictionary baseline
+and actual applicable grammar readings. The frozen PROTO/PROTOFORM
+distinction for sap and sea remains; all selected stages remain pgmc.
+Those encoding facts are not source agreement. Existing SOURCE,
+receipts and commentary govern annotations, not adopted laws.
+No corpus, stage, context, FST, chronology or baseline change is proposed.
+
+### Diagnosis
+
+Executable census/traces: not applicable to annotation-only work.
+No Foma assay, protected rebuild, full Germanic suite or PDF is needed.
+Scientific preservation is checked against46 immutable hashes.
+
+Concrete errors were the omitted salt strong-verb-to-collective
+direction, nominal salve chains classified as family verbs, sea hiatus
+comparanda classified as possible sea antecedents, and set's underlying
+PWGmc representation classified as a comparandum. The seam entry
+ends on427. Fulk's send present2sg/3sg was misleadingly characterized
+as archaic weak-preterite evidence. All have exact annotation receipts
+[@Kroonen2013, pp.425,427; @Fulk2018, p.298;
+@RingeTaylor2014, pp.51,297,318].
+
+The inherited set list already contains gesatted. The abbreviated
+reading dispatch was incomplete, not the SOURCE list; no duplicate
+discovery is invented
+[@RingeTaylor2014, p.358].
+
+### Literature
+
+Existing survey/commentary, frozen row packets and previous receipts
+are method controls. Complete relevant held bodies, footnotes,
+tables and required cross-references are read. Native quotations
+remain text_checked, not newly image-certified.
+
+| Row | Held printed scope and principal distinction |
+| --- | --- |
+| Salt2166 | Kroonen425; Orel316; Ringe259-260; RT184-185: substance, strong verb, weak derivative and adjective. |
+| Salve2167 | Kroonen424; Orel315; Ringe123,160,189,284-285,297-299; Fulk291-294,304,388; RT184,297: noun, verb quantities and conditional instrumental. |
+| Sap2168 | Kroonen420; Orel319: n-allomorphy, secondary stems, cognates and reported borrowing. |
+| Sea2169 | Kroonen423,435-436; Orel314; RT234,259,317-319: etymological warrants and alternative hiatus mechanisms. |
+| Seam2170 | Kroonen427,434,437-438; Orel320,329: mo versus men, proposed i-loss and actual sew family. |
+| Seek2171 | Kroonen423,464; Orel314-315,360; Ringe280-281,297-299; Fulk62-65,299-301,388; RT156-158,208,226: factitive ancestry versus actual inflection. |
+| Send2172 | Kroonen426,437; Orel318,325; Ringe246,281-282; Fulk63,65,298-299,388; RT228-230: causative base, finite cells and mutation/syncope/raising. |
+| Set2173 | Kroonen427,434; Orel319,325-326; Ringe281-282; Fulk63-64,248,265-266,294-301,388; RT50-52,238,350-351,357-358: sit/set, underlying/surface and dialect cells. |
+
+Sea's probable flow versus fierce/sharp comparison and seek's factitive
+versus disfavored historical causative have substantive differences in
+warrants. Neither is a named rebuttal or a source-stated explanation
+of the divergence
+[@Kroonen2013, pp.423,435-436,464; @Orel2003, pp.314-315,360].
+
+### Historical analysis
+
+Ten exact stage repairs preserve locally explicit facts: the PNWGmc
+salty adjective, three Anglian/WS salve nominal stages, Ringe's three
+PGmc seek principal parts and independent send/set infinitives, and
+the PWGmc underlying set representation. Salt verb260 remains locally
+undated; identical seek glyphs on208 and226 do not force identical
+date annotations
+[@Ringe2017, pp.260,280-282; @RingeTaylor2014, pp.51,184,208,226,297].
+
+Native salve nominal double-macron123 remains separate from the
+certified single-macron285 noun. The conditional instrumental/do
+account cannot resolve that discrepancy or supply a selected noun
+case. Native Orel p versus certified thorn, and native Fulk quote
+versus certified superscript, remain independent of confidence
+[@Ringe2017, pp.123,285; @Fulk2018, pp.64,292,388;
+@Orel2003, pp.318,325].
+
+Sea hiatus allows apocope/contraction alternatives; comparanda requiring
+long-vowel contraction do not prove sea's unique mechanism. Set
+gemination's phonetic/underlying distinction and later dialectal
+leveling are separate, not a back-projected PGmc doubled form
+[@RingeTaylor2014, pp.50-52,317-319,350-351,357-358].
+
+Historical phenomenon versus executable proxy: unchanged.
+Chronology promotion: none; no stage-entailed or independently
+demonstrated edge is added. Authorial analogy and morphological
+alternatives are reported without adopting grammatical sound-law
+conditioning in CAPR.
+
+### Verdict
+
+Research disposition: complete individual bounded alignment of these
+eight rows. No canonical SC verdict or Registry-verdict is fabricated.
+Both focused causes and all eight whole-row causes are unestablished.
+Missing formation, comparative-admission, quantity, stress and
+selected-cell premises are independently recorded. Successful output
+and author counts do not choose a genealogy.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, two exact
+receipt tables, page-cited README/commentary and this full-template
+audit are updated. Forty-three native literal receipts and32 scoped
+processes add75 records; four focused positions reuse evidence;
+36 position-support rationales are added. Exact128 field receipts
+cover114 cells,10 dates, two arguments and two locators.
+No consultation/status, target, scope or applicability changes.
+
+Totals5361 forms,1391 consultations,5580 positions,454 comparisons,
+651 rationales;241 bounded/152 unreviewed. The193 tranche positions
+link189 records. All786 dictionary reviews survive with1861 records.
+Focused regressions cover native spans, reversible fields, noun/verb,
+finite/citation, conditional/reported attribution, comparanda and
+independent dates. Canonical regeneration uses only adjudicate --refresh.
+
+Independent verification protects5286 inherited forms except128
+exact fields,5387 outside positions,444 unaffected comparisons,
+615 inherited rationales,1360 outside consultations, all88 unaffected
+research hashes and46 scientific hashes. Every native paragraph/hash/
+Unicode span is independently resolved. Scientific fingerprints and
+selected owners do not change.
+
+All369 focused survey/analysis tests pass after updating only live
+cumulative expectations from29 to30; historical tranche receipts and
+counts are preserved. Canonical refresh reports CONTROL PLANE CLEAN,
+with runtime bins and full traces already fresh and no scientific
+rebuild. Bibliography, section locators, all57 new-prose printed-page
+references and whitespace checks pass. Independent post-refresh
+preservation and artifact freshness checks confirm the same results.
+Read-only query evidence is retained in the session closeout record.
+
+### Residue
+
+Sea comparative admission, seek causal weighting/long-vowel origin,
+salve's exact original nominal quantity occurrence, sap's selected
+formation and seam's suffix/vocalism premises remain named. Dictionary-
+only scope cannot become grammar silence. Every row's stress/cell
+limits remain explicit. The separate RT conventions verification
+gap survives; alignment independently refuses152 remaining rows.
+Full393 alignment, class census, synthesis/watchlist and specialist
+agenda remain unfinished. No automatic30 release or31 start.
+
 ## Twenty-ninth alignment checkpoint: room through sake
 
 ### Identity
