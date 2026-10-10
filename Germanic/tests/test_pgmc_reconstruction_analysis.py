@@ -380,13 +380,14 @@ class LiveAnalyticalTests(unittest.TestCase):
             FROM comparison_rationales cr JOIN rationales r USING(rationale_id)
             WHERE r.basis_type='loan_hypothesis' ORDER BY cr.comparison_id
         """)
-        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2096\ncore-2272\n")
+        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2096\ncore-2105\ncore-2272\n")
         # Explicit reasons for a position need not explain the disagreement.
         self.assertTrue(self.cases["core-1975"]["rationale_ids"])
         self.assertEqual(self.cases["core-1975"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-2071"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-2078"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-2096"]["explanation_status"], "unestablished")
+        self.assertEqual(self.cases["core-2105"]["explanation_status"], "unestablished")
 
     def test_seventh_tranche_queries_scoped_causes_without_promoting_whole_rows(self):
         tables = {"forms": (survey.FORM_COLUMNS, self.forms),
@@ -615,7 +616,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t169\nunreviewed\t224\n")
+        """), "alignment_status\trows\nbounded_limit\t177\nunreviewed\t216\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -644,7 +645,7 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1624)
+                             for form in self.forms), 1649)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
@@ -808,6 +809,39 @@ class LiveAnalyticalTests(unittest.TestCase):
         """), "rationale_id\treason_target\tsupport_mode\n"
               "r-let-type2-formation-warrants-cause\tdivergence_explanation\tanalyst_inference\n")
         for row in map(str, range(2094, 2102)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
+    def test_twenty_second_queries_keep_attribution_cells_and_focused_causes_independent(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT c.comparison_id,c.explanation_status,count(DISTINCT f.source_key) AS sources
+            FROM comparisons c JOIN comparison_analyses ca USING(comparison_id)
+            JOIN analyses p USING(analysis_id) JOIN forms f USING(evidence_id)
+            WHERE c.comparison_id IN ('linden-soft-connection','liver-inheritance-warrants')
+            GROUP BY c.comparison_id,c.explanation_status ORDER BY c.comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\tsources\n"
+                    "linden-soft-connection\tunestablished\t2\n"
+                    "liver-inheritance-warrants\tanalyst_inference\t2\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS records
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2102 AND 2109
+        """), "positions\trecords\n138\t134\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT rationale_id,reason_target,support_mode FROM rationales
+            WHERE rationale_id='r-liver-inheritance-warrants-cause'
+        """), "rationale_id\treason_target\tsupport_mode\n"
+              "r-liver-inheritance-warrants-cause\tdivergence_explanation\tanalyst_inference\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,relation_to_row FROM analyses
+            WHERE row_id='2102' AND evidence_id IN ('rt-complete-2102-002','rt-complete-2102-007')
+            ORDER BY evidence_id
+        """), "evidence_id\trelation_to_row\nrt-complete-2102-002\tsame_etymon_citation\n"
+              "rt-complete-2102-007\tcomparandum\n")
+        for row in map(str, range(2102, 2110)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
 

@@ -8,6 +8,213 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-second alignment checkpoint: illumination through loam
+
+### Identity
+
+SC id/executable identifier: none; non-adopting source-reconstruction
+research. Branch update; base5275848dad1066b96d1d5fc6186b0a2e5c7f2d75
+is the committed and pushed twenty-first tranche. This release
+supersedes the older uncommitted21 checkpoint below. Rows2102-2109
+are illumination, lime, linden, line, border/list, live, liver and loam.
+The user authorizes release21 and completion22, not automatic22
+release or23.
+
+### Question
+
+Hypothesis: complete arguments distinguish lexical coalescence,
+paradigm cells and qualified etymological commitments that generic
+inherited annotations obscure. Refutation would require actual
+source identity and selected-cell statements, not matching strings.
+An explicit stage refutes a locally unspecified date only at the
+quoted unit; a reported comparison cannot become exclusive author
+adoption. A focused explanation must not certify a whole-row cause.
+
+### Current state (before edits)
+
+The immutable once-prepared snapshot pins4838 forms,1387 actual
+consultations,5012 positions,436 comparisons,358 rationales and169
+bounded/224 unreviewed rows. It retains77 inherited analytical
+identities and74 research hashes. All46 protected scientific hashes
+remain authoritative, including selected corpus/input/stage/context/
+FST/registry/baseline owners.
+
+Current survey SOURCE, previous receipts, CURRENT_STATE, research
+protocol and full adjudication template were consulted. Historical/
+executable characterization: n/a; no sound-law or historical-edge
+adoption is proposed. Live selects3sg lifeþ with a separately chosen
+input, while loam's actual input is pre-OE. The research does not
+replace those selections with dictionary infinitives or citations.
+
+### Diagnosis
+
+Complete firing census, skip/displacement and principal executable
+traces: n/a because no executable proposition changes. Source
+selected-cell, other-cell, family, comparandum and process roles
+are not newly established chronology witnesses.
+
+All77 inherited identities are individually reconciled. Thirty-five
+literal receipts and22 complete arguments add57 forms; four focused
+positions reuse evidence and27 reasons are added. The138 positions
+link134 distinct records. Fifty-six exact SOURCE fields are repaired:
+41 cells, eight local dates, five arguments, one page range and
+one reported author. No diplomatic form, confidence or verification
+changes; no consultation/status/target/scope/applicability identity
+is created or altered.
+
+The decisive matching repair separates four light-weight factitive
+records from illumination despite identical intermediates. The noun
+locator is242-243, not the verb's243 alone. Collitz remains reported;
+Kroonen's four liver argument annotations restore possible/tentative
+qualification. The stative/factitive addendum is separated from its
+following let/read paragraph
+[@Orel2003, pp.242-243,245; @Kroonen2013, p.336;
+@RingeTaylor2014, pp.249,518].
+
+### Literature
+
+Existing dossiers checked: the current reconstruction survey,
+source-specific evidence/analyses, prior receipts and selected/
+protected owners. No completed production law is reopened.
+
+Sources with printed pages: Orel233,240-243,245,248;
+Kroonen323-325,333-336,338-339; Ringe157-158,203-206,222-224,
+238-240,286-288; Fulk7-9,55-67,308-313,388;
+Ringe-Taylor33-35,93-94,248-251,309-311,320-322,327-329,
+362-366,517-518. Relevant complete arguments, actual backward
+cross-references, tables and footnotes are read. Navigation packet
+presence alone is not reading completion; no claim is made that
+irrelevant neighboring pages were fully read. Newly quoted literal
+records are text_checked, not newly original-image certified.
+
+Source-supported phenomena: illumination versus light-weight verbs;
+nominal/factitive family distinctions; alternative glue/clay genders;
+tree/soft rejection versus reported connection; distinct Latin loans;
+border/track relations; stative/factitive formation, finite variants
+and dialect remodeling; conditional liver genealogy/influence;
+regional lowering and English epenthesis
+[@Orel2003, pp.233,240-243,245,248;
+@Kroonen2013, pp.323-325,333-336,338-339;
+@Ringe2017, pp.157-158,203-206,286-288;
+@Fulk2018, pp.55-59,308-313;
+@RingeTaylor2014, pp.249,321,328,364-366].
+
+CAPR modelling decisions: annotate independently; do not assemble
+a full live3sg from a generic ending, normalize native corrupted
+spellings, infer a date from an IE label, or treat the two Ringe
+volumes as independent votes. The revised edition explicitly adopts
+the earlier reported merger proposal and retains its own caveat
+[@Ringe2017, pp.205-206,286-287;
+@RingeTaylor2014, pp.93-94,518].
+
+### Historical analysis
+
+Stage/scope: Ringe's live list is locally PGmc; RT explicitly dates
+the governed northern-WGmc infinitive and3sg separately from its
+OE reflexes. Dictionary-context and IE labels still do not assert
+every intermediate's date. PN locative, PIE liver candidate and
+undated intermediary remain distinct. Confidence and verification
+do not select those dates [@Ringe2017, p.287;
+@RingeTaylor2014, pp.93,321,363-365; @Kroonen2013, p.336].
+
+The focused linden comparison retains the explicit rejection and
+the bibliographically reported Heidermanns connection; its cause
+is unestablished because the original reported warrant is not
+supplied. No original Heidermanns consultation is claimed
+[@Kroonen2013, pp.338-339; @Orel2003, pp.240-241].
+
+The liver comparison has a bounded analyst-inferred explanation
+of different admissibility/relationship warrants: possible irregular
+inherited continuation versus smear ancestry and probable influence.
+That is not an explicit named rebuttal, exclusive denial of every
+connection, or settled genealogy [@Kroonen2013, p.336;
+@Orel2003, p.245]. Lowering and later epenthesis remain independently
+supported questions [@Fulk2018, pp.55-59;
+@RingeTaylor2014, pp.33-35,327-329].
+
+Phenomenon versus proxy: no current encoding is justified by its
+output, and no network prefix supplies historical scope. Chronology
+edges: none proposed; no new stage-entailed or independently
+demonstrated adoption. Attributed analogy/irregular accounts are
+source evidence, not CAPR lexical exceptions or grammatical laws.
+
+### Verdict
+
+Research disposition: eight bounded_limit alignments; eight
+whole-row causes unestablished. Linden focused cause unestablished;
+liver focused cause analyst_inference under its declared premises.
+No canonical SC verdict or Registry-verdict line applies.
+
+Justification: matching texts do not establish lexical identity,
+a generic ending is not an authored complete finite word, and
+genealogy differs from influence. Restore source qualifications
+and attribution before attempting explanatory inference
+[@RingeTaylor2014, pp.249,364-366;
+@Ringe2017, pp.205-206,286-287;
+@Kroonen2013, pp.336,338-339; @Orel2003, pp.240,245].
+
+### Propagation (only after research disposition)
+
+Affected SOURCE: forms, coverage, analyses, comparisons, rationales,
+two new exact reading-accountability receipts, README/commentary,
+this audit and focused survey/analysis regressions. Derived ledger,
+map, coverage and provenance use adjudicate.py --refresh exclusively.
+
+Positive/negative controls cover77 surviving identities,138/134
+links,35 actual paragraph/hash/span occurrences and56 amendment
+fields; illumination/weight matching and body/index signs; line/
+linen and list/skill; reported author and tree/soft ownership;
+actual finite versus generic ending and participial cells;
+conditional liver genealogy and independently dated locative;
+unquoted selected loam ending; no fabricated consultations/statuses.
+Queries distinguish focused explanations from whole-row causes.
+
+Independent verification preserves4838 inherited forms except56
+exact fields,4935 outside positions,428 unaffected comparisons,
+358 inherited reasons,1362 outside consultations, all786 dictionary
+reviews, catalogue/scopes/targets/applicability,67 unaffected prior
+research hashes/receipts and46 scientific hashes. All35 literal
+occurrences independently resolve without importing the persisted
+candidate. No new review identity or status is manufactured.
+
+Baseline/fingerprint effect: none. Corpus/input/target/stage/context/
+FST/canonical registry/baselines remain unchanged; no admission,
+introduction revision or PDF. Current totals4895 forms,1387
+consultations,5073 positions,438 comparisons,385 rationales;
+177 bounded/216 unreviewed core rows.
+
+Completed closeout: all287 focused survey/analysis tests pass.
+Bibliography sanity, bibliographic section locators, all70 new-prose
+printed-page references and whitespace checks pass. Canonical refresh
+reports CONTROL PLANE CLEAN; runtime bins, full trace, lexical sources
+and interaction matrix remain fresh without rebuilding scientific
+evidence. The independent post-refresh verifier reproduces the
+preservation counts, all35 literal occurrences,177/216 dispositions
+and138/134 links, with separate alignment and verified-reading refusals.
+HEAD and origin/update are both5275848dad1066b96d1d5fc6186b0a2e5c7f2d75.
+The query/preservation record is the session artifact
+pgmc-one-hundred-seventy-seven-alignments-query-results.txt.
+Unrelated .DS_Store and tmp_probe.foma remain untouched.
+
+### Residue
+
+Selected illumination eu/suffix history, lime's exact selected
+formation, the reported tree/soft premise, line's borrowing date/
+weak-noun ending, border's graded ancestry, live's complete
+selected3sg history, liver genealogy and loam's pre-OE neuter
+ending remain independently bounded. Those are named questions,
+not a promised quota of resolved disagreements
+[@Orel2003, pp.233,240-243,245,248;
+@Kroonen2013, pp.323-325,333-336,338-339;
+@Ringe2017, pp.157-158,203-206,286-288;
+@Fulk2018, pp.308-313; @RingeTaylor2014, pp.249,321,364-366].
+
+Alignment refuses216 unreviewed rows separately from the unchanged
+RT conventions verification gap. Tranche22 remains uncommitted;
+no automatic23 or scientific adoption. Never rerun/import the
+persisted pgmc_align_2102_2109.py; current SOURCE, receipts and
+regressions are authority.
+
 ## Twenty-first alignment checkpoint: leaf through life
 
 ### Identity

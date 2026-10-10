@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,144 Fulk and256 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains4838 evidence
-records,1387 actual consultations,5012 positions,436 comparisons and358
+393 applicability screens per source. The database contains4895 evidence
+records,1387 actual consultations,5073 positions,438 comparisons and385
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:169 core rows are bounded and224 unreviewed.
+explanation remain ongoing:177 core rows are bounded and216 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,240 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-second alignment: lexical coalescence, finite cells and genealogical warrants
+
+Rows2102-2109 cover the illumination verb, lime, linden, line,
+border/list, live, liver and loam. Tranche21 is released as5275848d;
+the following eight rows are now individually persisted, not merely
+prepared. All77 inherited identities survive. Thirty-five exact
+literal occurrences and22 complete source arguments add57 records;
+four focused positions reuse evidence and27 rationales are added.
+The138 positions link134 records. Fifty-six annotation fields have
+reversible receipts:41 cells, eight local dates, five arguments,
+one printed-page range and one reported author. Actual consultations,
+their statuses, targets, scopes and applicability identities are
+unchanged.
+
+The methodological gain is not a new preferred reconstruction.
+The same written intermediate can belong to two different verbs;
+the same grammatical cell can have distinct source variants;
+an accepted historical scenario can remain explicitly qualified.
+Source notation, lexical relationship, date, confidence and the
+explanation of a difference therefore remain independently recorded
+[@RingeTaylor2014, pp.249,321,364-365;
+@Ringe2017, pp.205-206,286-287]. The following distinctions are
+research findings, not changes to selected corpus inputs or laws.
+
+### Illumination: identical intermediates do not establish lexical identity
+
+Orel's dental illumination verb derives from the light noun. That
+noun's entry begins on242 and continues on243, where the verb is
+also treated. Its sibilant shine factitive belongs with the separate
+bright adjective. The formerly noun-as-verb analytical assignment
+is repaired to family evidence, with a242-243 noun locator rather
+than silently borrowing the verb's page [@Orel2003, pp.242-243].
+
+Kroonen separately presents the dental noun, beam mn-stem,
+lightning formation, s-stem/thematic noun and adjective, and
+sibilant factitive. These are genuine light-family evidence, not
+five citations of the selected dental illumination infinitive.
+Ringe's nominal full-grade and zero-grade dental stems likewise
+support noun history; the PIE full/zero stems and suffixal accent
+cannot be expanded into an authored verb ending
+[@Kroonen2013, pp.333-334; @Ringe2017, pp.222-224].
+
+The more serious inherited matching error is in Ringe-Taylor:
+the illumination verb with inherited iu and the light-weight
+factitive meaning relieve/alight are adjacent examples. Each can
+yield a written liohtjan and liehtjan intermediate. Four records
+belong to the latter history, not to illumination. They are now
+comparanda with their own lexical identity, even when their text
+matches an illumination occurrence exactly. The later Anglian
+monophthongization example is again illumination; distinct dialect
+endpoints are retained rather than equated by their shared gloss
+[@RingeTaylor2014, pp.248-250,309-311].
+
+Fulk's actual body supplies explicit PGmc illumination iu at59
+and64; the starless index at388 remains an independent locator.
+The native quote-like nasal sign in the body is not silently
+replaced by the earlier index record's superscript n. His earlier
+eu/iu raising account, Gothic merger and later front mutation
+remain separate processes. Neither the index heading nor source
+agreement in a daughter infinitive dates every preceding step
+[@Fulk2018, pp.57-59,61-67,388]. The exact relationship of the
+selected eu input and dental suffix to these dated citations
+remains a non-adopting question.
+
+### Lime and loam: related roots do not erase gender or formation
+
+Kroonen's glue/lime citation admits masculine and neuter genders,
+whereas the clay/loam citation is masculine and its cited OE
+reflex neuter. The entries share a smear-root account, not one
+complete noun paradigm. The actual laiza cross-reference supplies
+the root-final laryngeal-color argument; it is not evidence for
+the selected loam ending. The lime entry's own mn-stem description
+and printed mo precursor are both retained rather than corrected
+by an analyst's unannounced reconstruction
+[@Kroonen2013, pp.323-325,338].
+
+Orel preserves neuter and masculine glue alternatives and a
+masculine clay n-stem, again with a neuter OE loam reflex. Greek
+moist-place and Latin silt comparisons do not themselves establish
+a loan direction. Fulk's Latin mud/OE loam pairing occurs in a
+footnoted Italo-Germanic lexical list, not a derivation of the
+selected pre-OE neuter word. Its broader contact discussion must
+not be made into a claim that this particular word was borrowed
+in a uniquely determined direction [@Orel2003, pp.233,248;
+@Fulk2018, pp.7-9]. The selected loam input remains pre-OE;
+the source citations do not independently quote its complete
+grade and ending.
+
+### Linden: rejection versus a reported connection
+
+Kroonen's tree/board account expressly excludes the mild/soft
+adjective. Its own adjective entry must actually be read: similar
+Latin and Lithuanian comparisons there belong to that adjective,
+not automatically to the tree. Orel's tree entry gives board/
+timber and bast comparisons and bibliographically reports
+Heidermanns' adjective derivation. It does not announce that
+reported derivation as Orel's exclusive adopted etymology
+[@Kroonen2013, pp.338-339; @Orel2003, pp.240-241].
+
+The focused comparison therefore contrasts an explicit rejection
+with a particular reported connection, not two independent
+dictionary votes. The newly quoted adjective occurrence keeps
+Heidermanns as reported author; no original Heidermanns reading
+is claimed. The missing premise is the original argument for
+the reported connection and why it differs from the explicit
+rejection. Cause remains unestablished. Optional j and the
+comparative precursor retain their own units and unknown dates
+[@Orel2003, pp.240-241; @Kroonen2013, pp.338-339].
+
+### Line and border: lexical similarity is not an ancestry
+
+Orel explicitly separates Latin-derived linen/flax from feminine
+line/rope. The latter comes from Latin linea and was secondarily
+associated with the linen noun from Latin linum. The linen
+reconstruction is consequently family evidence, not the selected
+line citation; the Latin source word is not a fabricated quoted
+Germanic linon. That account establishes a lexical direction
+without uniquely giving borrowing date or the selected weak-noun
+ending [@Orel2003, p.248].
+
+Long-i border/list is a feminine n-stem connected with track/
+sole alternatives. Its bibliography reports external shore/bank
+comparisons. Kroonen's short-i skill/cunning entry is a different
+family, not a competing border reconstruction. The existing
+bounded negative therefore survives without becoming a vote
+against the border etymology or a fabricated negative grammar
+consultation [@Orel2003, pp.233,248; @Kroonen2013, p.339].
+
+### Live: a whole verb, a generic ending and a selected third singular
+
+Kroonen's stative and Orel's infinitive do not quote the selected
+third singular. Their remain/be-left semantic accounts must
+also retain qualifications: Kroonen's strong stay verb has an
+obscure consonantal relationship and only a possible backformation;
+Orel reports Collitz's alternative root separately. Its previously
+missing reported-author field now names Collitz, without claiming
+another independently consulted original [@Kroonen2013, pp.335-336;
+@Orel2003, p.245].
+
+Ringe's actual list explicitly projects the relic live infinitive
+back to PGmc. That local statement repairs its unspecified date;
+it does not convert the infinitive into selected3sg. The generic
+class ending is separately quoted as a suffix/ending complex,
+conditional on the preceding reconstruction argument. No full
+live word is assembled and attributed to the author. The Gothic
+third singular used with a future translation remains Gothic,
+not a reconstructed PGmc future form
+[@Ringe2017, pp.239,286-288].
+
+Following the backward argument matters here. Ringe accepts the
+weak-grade laryngeal and relic-based ja account, discusses the
+different thematic alternant outcomes, and explicitly adopts
+Yakubovich's early majority stative/factitive merger in the revised
+edition. That is the earlier Ringe-Taylor addendum incorporated
+into the newer account, not an independent opposing author.
+He retains Goering's say-only objection as making the prehistory
+less certain, and elsewhere qualifies the Sievers extension.
+None licenses an unconditional original uniform ē paradigm
+[@Ringe2017, pp.157-158,203-206,286-288;
+@RingeTaylor2014, p.518].
+
+Fulk's have paradigm is an illustrative comparator, not live's
+own cells. Actual live leofast, leofað and leofa are respectively
+second singular, third singular and singular imperative; classII
+endings and back mutation are part of the account. A source3sg
+variant can be related to the selected grammatical cell without
+being the literal selected lifeþ or proving its entire ancestry
+[@Fulk2018, pp.308-313].
+
+Ringe-Taylor's relic table and later discussion quote lifed in
+distinct contexts. The latter identifies its Northumbrian3sg as
+archaic amid classII remodeling. Early-WS back-umlauted third
+singulars, retained past and participle, Mercian first singular
+and plural, and a Kentish genitive present participle each have
+their own occurrence receipts. The lifg stem is explicitly an
+innovation, not an archaic singleton inferred from spelling;
+the have leveling and general weak-past addendum do not become
+selected live cells [@RingeTaylor2014, pp.93-94,320-322,362-366,517-518].
+The remaining core limit is the unquoted complete selected cell/
+history, not lack of a collected string resembling the target.
+
+### Liver: genealogy, influence and later sound history are different questions
+
+Kroonen proposes only a possible irregular continuation of an
+explicitly PIE liver r/n-stem. Initial l and the proposed labial
+development are problematic, and the old locative explanation
+for Nordic umlaut is expressly tentative. The PN endpoint,
+its earlier precursor and the lipr intermediate do not share
+one automatically inferred date. Four inherited argument
+annotations now restore those qualifications; the headword,
+diplomatic forms, confidence and verification are unchanged
+[@Kroonen2013, p.336].
+
+Orel instead identifies the smear/fat connection, saying the
+word is hardly connected with, but probably influenced by,
+inherited IE liver. The focused difference is direct genealogy
+versus connection/influence, not merely alternative spelling.
+CAPR's bounded explanatory inference concerns the different
+warrants admitted: tolerating problematic irregular steps in
+a conditional inherited account versus preferring a smear
+connection while retaining inherited-word influence. Neither
+source explicitly names the other as a rebuttal; the inference
+does not establish which genealogy actually occurred
+[@Orel2003, p.245; @Kroonen2013, p.336].
+
+Fulk's lowering account and Ringe-Taylor's restricted southern
+lowering account concern another axis. They must be read with
+their reservations, including Fulk's actual reference to the
+latter account. Later English final-vowel loss and epenthesis
+likewise do not decide lexical ancestry: Ringe-Taylor distinguishes
+the PNWGmc noun/stem from early Mercian libr and WS lifer
+[@Fulk2018, pp.55-59; @RingeTaylor2014, pp.33-35,327-329].
+The whole-row cause therefore remains unestablished even though
+one focused warrant difference has an inferred explanation.
+
+### Preservation and the continuing programme
+
+Independent verification preserves4838 inherited evidence records
+except56 exact receipted annotation fields,4935 outside positions,
+428 unaffected cases,358 inherited rationales and1362 outside
+consultations. All786 dictionary reviews, catalogue, scopes, targets,
+applicability,67 unaffected prior research hashes/receipts and46
+scientific hashes survive. Every new literal resolves to its actual
+native paragraph hash and whole-token Unicode span; none gains
+new image certification.
+
+All eight core alignments are bounded and all whole-row causes
+unestablished. The linden focused cause remains unestablished;
+the liver focused cause is analyst inference under its stated
+premises. Current alignment is177 bounded/216 unreviewed, separate
+from the unchanged RT conventions verification gap. Tranche22
+remains uncommitted; no23, selected-input/stage/context/FST/baseline
+adoption, introduction revision or PDF is included.
 
 ## Twenty-first alignment: family identity, qualified dates and competing class-VII warrants
 

@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4838 evidence records,1387 actual consultations and5012
-analytical positions, with436 comparisons and358 rationales. The RT
+There are4895 evidence records,1387 actual consultations and5073
+analytical positions, with438 comparisons and385 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred sixty-nine core rows now have individually reconciled, bounded alignment:
-1933-2101. The remaining224 are unreviewed. The second tranche builds on
+One hundred seventy-seven core rows now have individually reconciled, bounded alignment:
+1933-2109. The remaining216 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,59 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-second tranche completes light (illumination verb), lime,
+linden, line, list (border), live (selected3sg), liver and loam,
+rows2102-2109. The preceding tranche is committed and pushed as5275848d.
+All77 inherited analytical identities survive individual reconciliation.
+Thirty-five exact literal occurrences and22 complete-argument processes
+add57 records; four focused positions reuse evidence and27 rationales
+are added. The138 positions link134 distinct records. Fifty-six SOURCE
+fields have exact old/new/page-backed receipts:41 cells, eight local
+dates, five qualified arguments, one page range and one reported author.
+There are no new consultations, status changes, targets, scopes or
+applicability identities;786 dictionary reviews and1649 dictionary
+evidence records remain separately counted.
+
+Four RT records formerly matched as illumination actually concern
+lightening a load. Their identical-looking intermediate forms remain
+distinct occurrences. The dental illumination verb, sibilant shine
+family and noun formations are not interchangeable
+[@Orel2003, pp.242-243; @Kroonen2013, pp.333-334;
+@RingeTaylor2014, pp.249,310]. Orel's Latin-derived line/rope is
+separate from linen/flax and their secondary association; long-i
+border is separate from skill/cunning [@Orel2003, pp.233,248].
+
+Linden's explicit rejection versus bibliographically reported
+adjective connection remains a focused substantive but unexplained
+comparison, without turning Orel's report into his exclusive position.
+Liver's possible irregular inherited continuation versus smear ancestry
+and probable inherited-word influence has a bounded analyst-inferred
+warrant explanation, not a named rebuttal or settled genealogy
+[@Kroonen2013, pp.336,338-339; @Orel2003, pp.240-241,245].
+All eight whole-row causes remain unestablished.
+
+Live's generic class ending is not an authored assembled third singular.
+Source3sg variants remain matched to that grammatical cell without
+becoming literal selected lifeþ. The revised Ringe account incorporates
+the earlier merger proposal while retaining its own uncertainty
+[@Ringe2017, pp.157-158,203-206,286-288;
+@Fulk2018, pp.308-313; @RingeTaylor2014, pp.93-94,364-366,518].
+Liver's lowering and epenthesis are different questions; loam's
+masculine citation does not quote the selected neuter pre-OE input
+[@Fulk2018, pp.55-59; @RingeTaylor2014, pp.33-35,327-329;
+@Kroonen2013, pp.323-325; @Orel2003, p.233].
+
+Independent verification preserves4838 inherited forms except56 exact
+annotation fields,4935 outside positions,428 unaffected cases,358
+inherited reasons,1362 outside consultations,67 unaffected prior
+research hashes/receipts and46 scientific hashes. All35 literal
+paragraph hashes and whole-token Unicode spans independently resolve.
+Confidence, verification, diplomatic forms and earlier receipts are
+unchanged. Alignment separately refuses216 rows; verified reading
+separately refuses the unchanged RT conventions gap. Next alignment
+begins2110; tranche22 is uncommitted and no23 or scientific adoption
+is included.
 
 The twenty-first tranche completes leaf, learn, leather, leek, let,
 lick, lid and life, rows2094-2101. All80 inherited analytical identities

@@ -168,14 +168,14 @@ row_id	status	comparison_ids	alignment_status	alignment_case_ids
 2099	reviewed	core-2099	bounded_limit	core-2099
 2100	reviewed	core-2100	bounded_limit	core-2100
 2101	reviewed	core-2101	bounded_limit	core-2101
-2102	reviewed	core-2102	unreviewed	
-2103	reviewed	core-2103	unreviewed	
-2104	reviewed	core-2104	unreviewed	
-2105	reviewed	core-2105	unreviewed	
-2106	reviewed	core-2106	unreviewed	
-2107	reviewed	core-2107	unreviewed	
-2108	reviewed	core-2108	unreviewed	
-2109	reviewed	core-2109	unreviewed	
+2102	reviewed	core-2102	bounded_limit	core-2102
+2103	reviewed	core-2103	bounded_limit	core-2103
+2104	reviewed	core-2104	bounded_limit	core-2104
+2105	reviewed	core-2105	bounded_limit	core-2105
+2106	reviewed	core-2106	bounded_limit	core-2106
+2107	reviewed	core-2107	bounded_limit	core-2107
+2108	reviewed	core-2108	bounded_limit	core-2108
+2109	reviewed	core-2109	bounded_limit	core-2109
 2110	reviewed	core-2110	unreviewed	
 2111	reviewed	core-2111	unreviewed	
 2112	reviewed	core-2112	unreviewed	
