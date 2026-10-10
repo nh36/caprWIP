@@ -8,6 +8,176 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-fifth alignment checkpoint: milk through navel
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Branch update; released24 base75bcc49a90206ac70c6f8d3351bd148828e331bd.
+The user's request authorizes24 release and25 execution, not automatic
+25 release or26 start. Rows2126-2133: milk, month, mood, mother, nail,
+name, nave and navel.
+
+### Question
+
+Hypothesis: inherited generic cells conflate oblique raising triggers
+with citation vowels, moon with month, root and suffix accent arguments,
+and full words with suffixes. Complete arguments can refute or confirm
+each suspected conflation independently. Matching strings and output
+compatibility cannot establish shared genealogy or historical date.
+
+### Current state (before edits)
+
+The immutable preparation fixes5011 forms,1390 consultations,
+5199 positions,442 comparisons,448 rationales,193 bounded/200
+unreviewed core rows,105 inherited analytical identities and83
+research hashes. The46 protected scientific hashes are not repinned.
+Research protocol, full template, existing source-method discussion,
+current SOURCE and prior receipts were consulted.
+
+Existing executable characterization, firing census and counterfactual
+behavior: n/a; no law adjudication or executable change is proposed.
+Selected navel input is pwgmc; the other seven inputs are pgmc.
+These input choices are not dates inferred from source spellings.
+
+### Diagnosis
+
+All105 inherited identities survive individual reconciliation.
+Three certified milk/Cercignani records receive missing analytical
+links without new consultations. Twenty-two literal occurrences
+and24 scoped arguments add46 records; five focused positions reuse
+evidence and29 rationales are added. The159 positions link154 records.
+All consultation identities/statuses, scopes, targets and applicability
+owners remain unchanged.
+
+The119 exact SOURCE-field receipts comprise105 cells, six local
+stages, four arguments, two page locators and two diplomatic/comparison
+fields for the original-image month correction. The original Fulk
+index reads *mēnōþi*, with final i; native extraction's p must not
+replace original thorn. Certification and confidence survive. Its
+dative context is distinct from a selected nominative and from
+the nonexistent mutated dative
+[@Fulk2018, pp.79-81,388].
+
+Principal traces and live/feeding/bleeding witnesses: n/a; complete
+source-cell histories are research annotations, not fresh Foma witnesses.
+No harness result, identifier or output score supports a chronology edge.
+
+### Literature
+
+Complete relevant arguments, tables, footnotes and necessary cross-
+references are consulted. The existing certified Cercignani milk
+evidence is reused. Milk's noun-u origin remains unsatisfactory;
+verbal contamination/reduplication possibilities are not adopted
+noun histories. Continental raising before u, conditional Anglian
+oblique triggers and later WS back-umlaut have different domains
+[@Kroonen2013, pp.364-365,374; @Orel2003, pp.266-267;
+@Ringe2017, pp.98,222; @Fulk2018, pp.68-69,79-81;
+@Cercignani1979, pp.75-76; @RingeTaylor2014, pp.253-254,324-325].
+
+Month's t-stem and secondary moon n-stem are related but distinct.
+Mood retains masculine citation/neuter OE and separate reported
+genealogies. Mother preserves explicit PGmc accent-shift/father-
+analogy, suffix-accent Verner and reported root-accent accounts;
+PWGmc suffixes are not assembled into attributed full words
+[@Kroonen2013, pp.365,371-372; @Orel2003, pp.270,273;
+@Ringe2017, pp.122-123,224,307-308,326;
+@Fulk2018, pp.173-176,179-180;
+@RingeTaylor2014, pp.11,143-145,381-383].
+
+Nail's l-derivation, secondary Nordic root inflection and absent
+epenthesis remain distinct. Name's probable proterodynamic zero-grade
+history differs from acrostatic-singular/amphikinetic-collective
+leveling and Osthoff shortening. Original double macrons and
+uncertain plural endings survive; printed94 supplies both explicit
+leveling premises, and95 states the relative Osthoff/laryngeal
+consequence. The two Ringe volumes are not independent author votes
+[@Kroonen2013, pp.381-383,391-392; @Orel2003, p.279;
+@Ringe2017, pp.56-57,91-95,122,306-308,312-313;
+@Fulk2018, pp.168-171;
+@RingeTaylor2014, pp.59,79,143-149,154,163-164,212-213,300-301,329].
+
+Hub's possible ablaut and belly comparison do not recover a certain
+paradigm. Navel retains optional u and an explicitly PNWGmc source
+ancestor; light-syllable retention and later retraction are separate
+from selected-input stage
+[@Kroonen2013, pp.24,380-381; @Orel2003, p.279;
+@RingeTaylor2014, pp.190-192,268-271].
+
+CAPR decisions: per-row relationship, scoped comparison, exact receipt
+and bounded limit. These are not quoted source endorsements or
+permission to adopt new corpus/FST histories.
+
+### Historical analysis
+
+Historical stage/scope are source-specific and independent of confidence.
+Six explicit local dates are repaired; unspecified intermediates remain
+unspecified. No executable or selected-entry-stage field changes.
+Milk's focused comparison is different_units/unestablished; name's
+genealogical comparison is substantive_difference/unestablished.
+Neither implies an exclusive dispute or established inter-author cause
+[@Cercignani1979, pp.75-76; @Fulk2018, pp.68-69,79-81;
+@Kroonen2013, pp.382-383; @Ringe2017, pp.56-57,91-95;
+@RingeTaylor2014, pp.253-254].
+
+Phenomenon/proxy relation and chronology edges: n/a; no scientific
+production modification or canonical chronology promotion.
+
+### Verdict
+
+Bounded annotation-only research, not a Registry-verdict on any law.
+Eight core cases are bounded_limit with unestablished whole-row causes.
+Both focused causes remain unestablished. Exact-source annotation
+repairs do not license corpus, input, target, stage/context or FST adoption.
+
+New native literals are text_checked, not image-certified. The actual
+month original-image correction retains its inherited certification.
+The separate Ringe-Taylor convention/typography holding gap remains.
+
+### Propagation
+
+SOURCE: forms, analyses, comparisons, rationales, coverage and two new
+immutable amendment/occurrence receipts. Page-cited commentary/README,
+this full-template audit and source-sensitive regressions accompany
+the persistence. Canonical projections use adjudicate.py --refresh only.
+
+All319 focused survey/analysis tests pass. The initially added
+certification assertions were corrected to the actual existing
+page_image_checked enum, without changing evidence certification.
+Canonical refresh reports CONTROL PLANE CLEAN; bibliography,
+section locators, all66 new-prose printed-page references and
+whitespace checks pass. No scientific rebuild, private assay
+or PDF is warranted by this annotation tranche.
+
+The independent current-SOURCE verifier preserves5011 inherited
+forms except119 exact receipted fields,5094 outside positions,
+434 unaffected cases,448 inherited rationales and1357 outside
+consultations. All1390 consultation identities/statuses and786
+dictionary reviews remain. All76 unaffected research hashes,
+including prior receipts/scopes/targets/applicability, and46
+protected scientific hashes are unchanged. All22 native paragraph
+hashes and end-exclusive whole-token spans independently resolve.
+
+Measured totals are5057 forms,1390 consultations,5253 positions,
+444 comparisons and477 rationales. Repeated read-only queries
+reproduce159 tranche positions/154 records and separate the two
+focused unestablished causes from eight unestablished core causes.
+The independent alignment gate refuses192; verified reading
+separately refuses the unchanged RT convention/typography gap.
+The month image repair preserves certification/confidence and
+the original thorn, while separately retaining native p in the
+new body occurrence.
+
+### Residue
+
+The corpus-wide programme remains open:201 bounded/192 unreviewed
+core rows. Exact selected-cell ancestry, milk u-origin, month dental
+remodeling, mood genealogy, mother accent/paradigm premises, nail
+formation, name collective/grade history and hub/navel endings remain
+bounded rather than silently solved. Class census, explanatory
+synthesis and RT convention verification are separate unfinished tasks.
+No automatic25 commit/push or26 start is included.
+
 ## Twenty-fourth alignment checkpoint: malt through might
 
 ### Identity

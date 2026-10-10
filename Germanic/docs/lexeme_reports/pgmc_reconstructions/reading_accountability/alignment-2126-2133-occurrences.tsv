@@ -1,0 +1,629 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment25-milk-fulk-dative	Fulk2018	80	97	1	670	677	*miluki	fa1e877f3f691c2aedb9ac74a8b48d666ce721dcebc867fea1d41a39a1ed8803	"80
+A Comparative Grammar of the Early Germanic Languages
+after heavy syllables, already in Go., later elsewhere, as in dat. sg. PGmc. *brōpri
+'brother' > Go. brōþr, OE brēðer (where the umlaut confirms retention of final *-i
+relatively late), rare Olcel. bræðr beside usual, analogical bróður; 2 and PGmc. *tagru
+'tear' > Go. tagr, OE teagor (cf. Gk. dáкpv).³ Compare the retention after light syllables
+in OE mere ‘sea' < *mari < PIE *mori and PGmc. *fexu 'property, goods, livestock'
+Go. faíhu, OS fehu, OHG fihu, as well as *filu 'much' > Go. OS OHG filu. That the Go.
+situation is in part the result of analogy is suggested by OE (Anglian) dat. sg. milc <
+*milyki < *miluki ‘milk' (or *-i?); by comparison, there is no dat. sg. †mēn(e)þ <
+*mōnaþi < *mēnōpi 'month'. Under Prokosch's law (§2.5) it might be expected that
+there would be variable loss in trisyllables, e.g. dat. sg. *zumini ‘man' > *zumin but
+*attini 'father', without change after a heavy initial syllable, also 3 sg. pres. *fariþi
+>*farip ‘goes' but *bīðiþi ‘awaits', without change. If there ever existed such variation,
+however, Gothic has generalized the apocopated endings (gumin, attin, fariþ, beidip),
+and there is no secure evidence that the other Gmc. languages did not do the same.4
+Monosyllabic words of lesser stress retained a final short vowel regardless of its height:
+examples are PIE *ne > PGmc. *ni > Go. OHG ni, OE ne, OFris. OS ni, ne 'not' and
+PIE *so > PGmc. *sa > Go. sa, lengthened in Olcel. sá ‘this'; cf. loss of the final vowel
+of the enclitic in Go. sa-h ‘(and) this' < *so-kwe.
+Vowels originally protected by a final consonant were not regularly lost in
+PGmc., though only Runic preserves a under such circumstances, as in pp. haitinar
+'called' (cf. Go. háitans, OE hāten). This a is preserved as well in early loan-words into
+Finnish ($1.7), e.g. kulta 'gold', borrowed from PGmc. *zulba"" < PIE *ghltom. Gothic
+has also lost i before final s in most case-forms of i-stems like gasts ‘guest' (cf. the
+umlaut in Olcel. gestr, OE giest), but u is preserved in u-stems (e.g. Go. handus ‘hand';
+cf. the back umlaut in OIcel. hond), showing that there is regularization of stems in
+opposite fashion in the two stem classes in Gothic:5 to analogically reformed i-stem
+qums ‘arrival' (cf. OE cyme < *kumiz) cf. hatis ‘hatred' (transferred to the a-stems; cf.
+i-stem OE hete, OS heti); also fem adj. nawis 'dead', etc.6 In most instances the final
+consonant that prevented loss of the preceding vowel was itself dropped, as is shown by
+the loss in forms like PIE 3 pl. *bhudhnt > PGmc. *buðun(p) > Go. -budun, OE budon,
+etc. 'offered'; PIE o-stem acc. sg. * -om > PGmc. *-a"" (with nasalization) in Runic
+staina ‘stone' (but Olcel. stein, Go. stáin, OE stān, etc.); cf. PIE o-stem acc. pl. *-ons
+PGmc. *-ans in Go. stáinans, Runic staba ‘runestaves'. There must have been loss of i
+early, perhaps in PGmc. itself, in the ending *-omiz reflected in the dat. (orig. instr.) pl.
+of a-stems (and the 1 pl. ind. of verbs), since the ending is reflected as -am already in
+Gothic; cf. Runic -umr (2×) on the Stentoften stone (mid-7th cent.).7 The only excep-
+tions to the loss of a lone final consonant after an unstressed vowel are s/z and r. Where-
+as s/z is plainly preserved in NGmc. and in Gothic (and see §§6.6, 6.12 on the fate of z
+in Go.), its development in WGmc. is contested, the commonest assumption being that z
+was lost but s preserved (see §6.16). Examples: PGmc. *dazaz > Go. dags, ON dagr,
+OE dæg OS dag, OHG tag ‘day'; PGmc. *under > Go. undar, OIcel. undir (without
+umlaut), OE under, OS undar, under, OHG untar. 8 On the development of final
+consonants, see further §§6.12, 6.14, 6.16.
+When a was lost in a final syllable (after the PGmc. period, but uniformly across
+the branches of Gmc.), a preceding glide was nuclearized. The process is partly ob-
+scured in WGmc. by the analogical extension of geminates within paradigms, but due to
+Sievers' law (§5.8), WGmc. high vowels thus generated may in some instances be
+preserved after heavy stems. Examples are *kunja"" > Go. kuni 'kind', Olcel. kyn (<"		
+alignment25-milk-fulk-mutated	Fulk2018	80	97	1	660	667	*milyki	fa1e877f3f691c2aedb9ac74a8b48d666ce721dcebc867fea1d41a39a1ed8803	"80
+A Comparative Grammar of the Early Germanic Languages
+after heavy syllables, already in Go., later elsewhere, as in dat. sg. PGmc. *brōpri
+'brother' > Go. brōþr, OE brēðer (where the umlaut confirms retention of final *-i
+relatively late), rare Olcel. bræðr beside usual, analogical bróður; 2 and PGmc. *tagru
+'tear' > Go. tagr, OE teagor (cf. Gk. dáкpv).³ Compare the retention after light syllables
+in OE mere ‘sea' < *mari < PIE *mori and PGmc. *fexu 'property, goods, livestock'
+Go. faíhu, OS fehu, OHG fihu, as well as *filu 'much' > Go. OS OHG filu. That the Go.
+situation is in part the result of analogy is suggested by OE (Anglian) dat. sg. milc <
+*milyki < *miluki ‘milk' (or *-i?); by comparison, there is no dat. sg. †mēn(e)þ <
+*mōnaþi < *mēnōpi 'month'. Under Prokosch's law (§2.5) it might be expected that
+there would be variable loss in trisyllables, e.g. dat. sg. *zumini ‘man' > *zumin but
+*attini 'father', without change after a heavy initial syllable, also 3 sg. pres. *fariþi
+>*farip ‘goes' but *bīðiþi ‘awaits', without change. If there ever existed such variation,
+however, Gothic has generalized the apocopated endings (gumin, attin, fariþ, beidip),
+and there is no secure evidence that the other Gmc. languages did not do the same.4
+Monosyllabic words of lesser stress retained a final short vowel regardless of its height:
+examples are PIE *ne > PGmc. *ni > Go. OHG ni, OE ne, OFris. OS ni, ne 'not' and
+PIE *so > PGmc. *sa > Go. sa, lengthened in Olcel. sá ‘this'; cf. loss of the final vowel
+of the enclitic in Go. sa-h ‘(and) this' < *so-kwe.
+Vowels originally protected by a final consonant were not regularly lost in
+PGmc., though only Runic preserves a under such circumstances, as in pp. haitinar
+'called' (cf. Go. háitans, OE hāten). This a is preserved as well in early loan-words into
+Finnish ($1.7), e.g. kulta 'gold', borrowed from PGmc. *zulba"" < PIE *ghltom. Gothic
+has also lost i before final s in most case-forms of i-stems like gasts ‘guest' (cf. the
+umlaut in Olcel. gestr, OE giest), but u is preserved in u-stems (e.g. Go. handus ‘hand';
+cf. the back umlaut in OIcel. hond), showing that there is regularization of stems in
+opposite fashion in the two stem classes in Gothic:5 to analogically reformed i-stem
+qums ‘arrival' (cf. OE cyme < *kumiz) cf. hatis ‘hatred' (transferred to the a-stems; cf.
+i-stem OE hete, OS heti); also fem adj. nawis 'dead', etc.6 In most instances the final
+consonant that prevented loss of the preceding vowel was itself dropped, as is shown by
+the loss in forms like PIE 3 pl. *bhudhnt > PGmc. *buðun(p) > Go. -budun, OE budon,
+etc. 'offered'; PIE o-stem acc. sg. * -om > PGmc. *-a"" (with nasalization) in Runic
+staina ‘stone' (but Olcel. stein, Go. stáin, OE stān, etc.); cf. PIE o-stem acc. pl. *-ons
+PGmc. *-ans in Go. stáinans, Runic staba ‘runestaves'. There must have been loss of i
+early, perhaps in PGmc. itself, in the ending *-omiz reflected in the dat. (orig. instr.) pl.
+of a-stems (and the 1 pl. ind. of verbs), since the ending is reflected as -am already in
+Gothic; cf. Runic -umr (2×) on the Stentoften stone (mid-7th cent.).7 The only excep-
+tions to the loss of a lone final consonant after an unstressed vowel are s/z and r. Where-
+as s/z is plainly preserved in NGmc. and in Gothic (and see §§6.6, 6.12 on the fate of z
+in Go.), its development in WGmc. is contested, the commonest assumption being that z
+was lost but s preserved (see §6.16). Examples: PGmc. *dazaz > Go. dags, ON dagr,
+OE dæg OS dag, OHG tag ‘day'; PGmc. *under > Go. undar, OIcel. undir (without
+umlaut), OE under, OS undar, under, OHG untar. 8 On the development of final
+consonants, see further §§6.12, 6.14, 6.16.
+When a was lost in a final syllable (after the PGmc. period, but uniformly across
+the branches of Gmc.), a preceding glide was nuclearized. The process is partly ob-
+scured in WGmc. by the analogical extension of geminates within paradigms, but due to
+Sievers' law (§5.8), WGmc. high vowels thus generated may in some instances be
+preserved after heavy stems. Examples are *kunja"" > Go. kuni 'kind', Olcel. kyn (<"		
+alignment25-milk-verb-u	Kroonen2013	365	405	1	165	174	*melukan-	973273f962f605b8343ed3f214f3117d9a851b039cdaeffddeb5f895770071ed	"*melwa-
+365
+A strong verb related to *meluka-, *mulkna-, *mulki- and *mulkōn- (q.v.).
+MHG has both melken and melchen, the latter pointing to *melVkan-. This
+may be *melukan-, a form influenced by *meluk-. Since, however, the u of
+the noun has no clear explanation, it is more likely that it arose in the verb
+itself. The PIE paradigm was athematic, 3sg. *h₂mélý-ti, 3pl. *h₂mló-énti,
+which would give PGm. *melhti, *mulkinpi. Perhaps this irregular paradigm
+gave rise to a contaminated root *melulk- that later was dissimilated to
+*meluk-. Another possibility is to assume a similar dissimilation in an origi-
+nally reduplicated present *mel-mulkan- < *h₂mel-h₂mlģ-e-.
+*melwa- n. 'meal, flour' - ON mjol n. 'id.', Far. mjøl n. 'id.', Elfd. myōl n. ‘id.',
+OE melo, melu n. 'id.', E meal, OFri. mele n. 'id.', OS melo n. 'id.', Du. meel n.
+'id.', OHG melo n. 'id.', G Mehl n. 'id.' *melh₁-uo- (DRV).
+A wa-stem derived from the strong verb *malan- (q.v.). For the suffix, cf.
+*smerwa-.
+-
+*mēnan- m. 'moon' Go. mena m. 'id.', ON máni m. 'id.', Far. máni m.
+'moon; month', OE mōna m. 'moon', E moon, OFri. mōna m. 'moon; month',
+OS māno m. 'moon', Du. maan c. 'id.', OHG māno m. ‘id.', G Mond m. 'id.' ⇒
+*mehin-os- (IE) — ToA mañ, ToB meñe m. 'moon, month' < *meh₁n(-ēn)-; Skt.
+más- m. 'moon, month', OAv. må 'moon', YAv. må, gen. måŋhō ‘id.' (also
+thematicized måŋha- m. 'moon, month'), Gr. µýv m. 'month, moon-cycle',
+Lat. mēnsis m. 'month', Olr. mí m./f. 'id.', MW mis m. 'id.' < *meh₁n-s-; Lith.
+ménuo, gen. mėnesio m. 'moon, month', Latv. mēness m. 'moon' < *mehin-os-;
+OPru. menig 'id.'; OCS měsęcь 'moon, month', Ru. mésjac 'month', SCr. mjềsēc
+'month, moon' < *meh₁ns-nk-o-; Alb. muaj | muej m. 'month' < *meh₁n-; Arm.
+amis 'id.' (with analogical a- after am 'year', awr 'day', arew 'sun' and ast
+'star', Winter 1965: 101).
+Most IE languages point to a stem *mehn-s-, but Lith. ménuo, obl. menes-
+and perhaps also PGm. *mēnan- point to an amphikinetic s-stem *méh₁n-ōs,
+*mehin-s-ós. The Germanic n-stem is considered to have arisen secondarily
+on the basis of the nom. *mēnō, which may regularly continue *mehin-ōs or
+*mehin-ōt. The latter possibility is usually preferred in view of PGm.
+*mēnōþ- 'month' (q.v.), which may have split off from an original paradigm
+*mehin-ōt, *meh₁n-t-ós. The t-suffix is only found in Germanic, however.
+Note that the dental of G Mond 'moon' is late, i.e. secondary.
+*mēnōþ- m. 'month' - Go. menops m. 'id.', ON mánaðr m. 'id.', Icel. mánaður
+m. 'id.', Far. mánaður m. ‘id.', OE mōnað m. 'id.', E month, OFri. mōnath m.
+'id.', Du. maand c. 'id.', OHG mānōd m. 'id.', G Monat m. 'id.' ⇒ *meh₁n-ot- (IE).
+A uniquely Germanic t-stem corresponding to the PIE s-stem *mehin-os-
+'moon; month', for which see *mēnan-."		
+alignment25-milk-giving-adjective	Kroonen2013	364	404	1	2294	2302	*meluka-	dc8ec3051db68dc4c8fa60bddb3355c0ecd1fcff119f71cf6a3541c5482411db	"364
+*meltja-
+*meltja- n. 'milt, spleen' -ON milti n. 'id.', Far. milt(i) n. 'id.', Nw. milte n.
+'id.', OSw. milter m. 'id.', OE milte f. 'id.', E milt, OFri. milte f. 'id.', MLG milte f.
+'id.', MDu. milt(e), melte f. 'id.', Du. milt c. 'id.', OHG milzi n. 'id.', MHG milze n.
+'id.', G Milz f. 'id.' (IE).
+The word is likely to be related to *meluk- 'milk' (q.v.), cf. Far. mjálki m.
+'milt, soft roe, fish semen' < *melkan-, and has accordingly been recon-
+structed as *melhtja- (quasi PIE *h₂melý-t-io-), which may be a collective
+formation to ON mjolt f. 'milking' < *melhtu-. Apparently, the milt, i.e. the
+testes of male fish, was named after the milky substance that it produces,
+and later came into use for the spleen and other soft parts of the body, cf.
+Nw. dial. hand-milte n. 'inside of the lower arm' and Nw. dial. molke m.
+'muscle' *mulht-kan-. Also cf. ON mjalti, Nw. mjelte m. 'milt' < *melhtan-
+and Elfd. mjälta n. 'id.' < *melhtōn-.
+*meluk-f. 'milk' — Go. miluks f. 'id.', ON mjolk, gen. mjolkr f. 'id.', Icel. mjólk f.
+'id.', Far. mjólk f. 'id.', Elfd. mjok f. 'id.', OE meoloc, meolc f. 'id.', E milk, OFri.
+melok f. 'id.', OS miluk f. 'id.', MDu. melc, mellic, meelc f. 'id.', Du. melk m. 'id.',
+OHG miluh f. 'id.', G Milch f. 'id.'⇒ *h₂mélý- (IE).
+An archaic root noun derived from the strong verb *mel(u)kan- (q.v.).
+Note that the Old Norse form was mjolk rather than the often cited mjolk:
+-jo- is the regular outcome of u-breaking of e. The confusion between o and
+Q results from the later merger of these two vowels when they were
+lengthened before -/- + velar or labial, cf. Icel. tólg f. 'tallow' < *tólg < ON
+*tolg <*talgō-. As for the origin of the form *meluk-, the u of the second
+syllable is unexpected and has not yet received a satisfactory explanation.
+Szemerényi 1992: 1125 proposed contamination of the full- and zero-grade
+in an ablauting paradigm *melk-z, gen. *mulk-iz, but this leaves the
+Schwebeablaut unexplained. It is not likely either that the u represents a
+schwa that arose between the 1 and the k in the nom. *melk-z
+(Bammesberger 1990: 196-7), as this solution fails to explain why the same
+did not happen in e.g. *alh- 'temple' (on the latter, see Kümmel 2004). Per-
+haps the -u- rather came about in the aforementioned strong verb
+*mel(u)kan-.
+*meluka- 'giving milk' - ON mjolkr adj. 'id.', OE meolc adj. 'id.', OHG melch
+adj. 'id.' (DRV).
+An adjective derived from *mel(u)kan- (q.v.).
+-
+*mel(u)kan- s.v. 'to milk' OE melcan s.v. 'id.', OFri. melka s.v. 'id.', Du.
+melken s.v. 'id.', OHG melkan s.v. 'id.', G melken s.v. 'id.' ⇒ *h₂mélģ- (IE) — Gr.
+άμελyw 'to milk', Alb. mjel ‘id.', Lat. mulgeō ‘id.', Olr. mligid 'id.', RuCS mlěsti
+(mlɩzu) 'to bring down, dislodge', SCr. müsti 'id.', Lith. mélžti (mélžiu) ‘id.' <
+*h2melý-/*h2mlģ-."		
+alignment25-month-fulk-dative	Fulk2018	80	97	1	753	760	*mēnōpi	fa1e877f3f691c2aedb9ac74a8b48d666ce721dcebc867fea1d41a39a1ed8803	"80
+A Comparative Grammar of the Early Germanic Languages
+after heavy syllables, already in Go., later elsewhere, as in dat. sg. PGmc. *brōpri
+'brother' > Go. brōþr, OE brēðer (where the umlaut confirms retention of final *-i
+relatively late), rare Olcel. bræðr beside usual, analogical bróður; 2 and PGmc. *tagru
+'tear' > Go. tagr, OE teagor (cf. Gk. dáкpv).³ Compare the retention after light syllables
+in OE mere ‘sea' < *mari < PIE *mori and PGmc. *fexu 'property, goods, livestock'
+Go. faíhu, OS fehu, OHG fihu, as well as *filu 'much' > Go. OS OHG filu. That the Go.
+situation is in part the result of analogy is suggested by OE (Anglian) dat. sg. milc <
+*milyki < *miluki ‘milk' (or *-i?); by comparison, there is no dat. sg. †mēn(e)þ <
+*mōnaþi < *mēnōpi 'month'. Under Prokosch's law (§2.5) it might be expected that
+there would be variable loss in trisyllables, e.g. dat. sg. *zumini ‘man' > *zumin but
+*attini 'father', without change after a heavy initial syllable, also 3 sg. pres. *fariþi
+>*farip ‘goes' but *bīðiþi ‘awaits', without change. If there ever existed such variation,
+however, Gothic has generalized the apocopated endings (gumin, attin, fariþ, beidip),
+and there is no secure evidence that the other Gmc. languages did not do the same.4
+Monosyllabic words of lesser stress retained a final short vowel regardless of its height:
+examples are PIE *ne > PGmc. *ni > Go. OHG ni, OE ne, OFris. OS ni, ne 'not' and
+PIE *so > PGmc. *sa > Go. sa, lengthened in Olcel. sá ‘this'; cf. loss of the final vowel
+of the enclitic in Go. sa-h ‘(and) this' < *so-kwe.
+Vowels originally protected by a final consonant were not regularly lost in
+PGmc., though only Runic preserves a under such circumstances, as in pp. haitinar
+'called' (cf. Go. háitans, OE hāten). This a is preserved as well in early loan-words into
+Finnish ($1.7), e.g. kulta 'gold', borrowed from PGmc. *zulba"" < PIE *ghltom. Gothic
+has also lost i before final s in most case-forms of i-stems like gasts ‘guest' (cf. the
+umlaut in Olcel. gestr, OE giest), but u is preserved in u-stems (e.g. Go. handus ‘hand';
+cf. the back umlaut in OIcel. hond), showing that there is regularization of stems in
+opposite fashion in the two stem classes in Gothic:5 to analogically reformed i-stem
+qums ‘arrival' (cf. OE cyme < *kumiz) cf. hatis ‘hatred' (transferred to the a-stems; cf.
+i-stem OE hete, OS heti); also fem adj. nawis 'dead', etc.6 In most instances the final
+consonant that prevented loss of the preceding vowel was itself dropped, as is shown by
+the loss in forms like PIE 3 pl. *bhudhnt > PGmc. *buðun(p) > Go. -budun, OE budon,
+etc. 'offered'; PIE o-stem acc. sg. * -om > PGmc. *-a"" (with nasalization) in Runic
+staina ‘stone' (but Olcel. stein, Go. stáin, OE stān, etc.); cf. PIE o-stem acc. pl. *-ons
+PGmc. *-ans in Go. stáinans, Runic staba ‘runestaves'. There must have been loss of i
+early, perhaps in PGmc. itself, in the ending *-omiz reflected in the dat. (orig. instr.) pl.
+of a-stems (and the 1 pl. ind. of verbs), since the ending is reflected as -am already in
+Gothic; cf. Runic -umr (2×) on the Stentoften stone (mid-7th cent.).7 The only excep-
+tions to the loss of a lone final consonant after an unstressed vowel are s/z and r. Where-
+as s/z is plainly preserved in NGmc. and in Gothic (and see §§6.6, 6.12 on the fate of z
+in Go.), its development in WGmc. is contested, the commonest assumption being that z
+was lost but s preserved (see §6.16). Examples: PGmc. *dazaz > Go. dags, ON dagr,
+OE dæg OS dag, OHG tag ‘day'; PGmc. *under > Go. undar, OIcel. undir (without
+umlaut), OE under, OS undar, under, OHG untar. 8 On the development of final
+consonants, see further §§6.12, 6.14, 6.16.
+When a was lost in a final syllable (after the PGmc. period, but uniformly across
+the branches of Gmc.), a preceding glide was nuclearized. The process is partly ob-
+scured in WGmc. by the analogical extension of geminates within paradigms, but due to
+Sievers' law (§5.8), WGmc. high vowels thus generated may in some instances be
+preserved after heavy stems. Examples are *kunja"" > Go. kuni 'kind', Olcel. kyn (<"		
+alignment25-month-fulk-counterfactual	Fulk2018	80	97	1	732	740	†mēn(e)þ	fa1e877f3f691c2aedb9ac74a8b48d666ce721dcebc867fea1d41a39a1ed8803	"80
+A Comparative Grammar of the Early Germanic Languages
+after heavy syllables, already in Go., later elsewhere, as in dat. sg. PGmc. *brōpri
+'brother' > Go. brōþr, OE brēðer (where the umlaut confirms retention of final *-i
+relatively late), rare Olcel. bræðr beside usual, analogical bróður; 2 and PGmc. *tagru
+'tear' > Go. tagr, OE teagor (cf. Gk. dáкpv).³ Compare the retention after light syllables
+in OE mere ‘sea' < *mari < PIE *mori and PGmc. *fexu 'property, goods, livestock'
+Go. faíhu, OS fehu, OHG fihu, as well as *filu 'much' > Go. OS OHG filu. That the Go.
+situation is in part the result of analogy is suggested by OE (Anglian) dat. sg. milc <
+*milyki < *miluki ‘milk' (or *-i?); by comparison, there is no dat. sg. †mēn(e)þ <
+*mōnaþi < *mēnōpi 'month'. Under Prokosch's law (§2.5) it might be expected that
+there would be variable loss in trisyllables, e.g. dat. sg. *zumini ‘man' > *zumin but
+*attini 'father', without change after a heavy initial syllable, also 3 sg. pres. *fariþi
+>*farip ‘goes' but *bīðiþi ‘awaits', without change. If there ever existed such variation,
+however, Gothic has generalized the apocopated endings (gumin, attin, fariþ, beidip),
+and there is no secure evidence that the other Gmc. languages did not do the same.4
+Monosyllabic words of lesser stress retained a final short vowel regardless of its height:
+examples are PIE *ne > PGmc. *ni > Go. OHG ni, OE ne, OFris. OS ni, ne 'not' and
+PIE *so > PGmc. *sa > Go. sa, lengthened in Olcel. sá ‘this'; cf. loss of the final vowel
+of the enclitic in Go. sa-h ‘(and) this' < *so-kwe.
+Vowels originally protected by a final consonant were not regularly lost in
+PGmc., though only Runic preserves a under such circumstances, as in pp. haitinar
+'called' (cf. Go. háitans, OE hāten). This a is preserved as well in early loan-words into
+Finnish ($1.7), e.g. kulta 'gold', borrowed from PGmc. *zulba"" < PIE *ghltom. Gothic
+has also lost i before final s in most case-forms of i-stems like gasts ‘guest' (cf. the
+umlaut in Olcel. gestr, OE giest), but u is preserved in u-stems (e.g. Go. handus ‘hand';
+cf. the back umlaut in OIcel. hond), showing that there is regularization of stems in
+opposite fashion in the two stem classes in Gothic:5 to analogically reformed i-stem
+qums ‘arrival' (cf. OE cyme < *kumiz) cf. hatis ‘hatred' (transferred to the a-stems; cf.
+i-stem OE hete, OS heti); also fem adj. nawis 'dead', etc.6 In most instances the final
+consonant that prevented loss of the preceding vowel was itself dropped, as is shown by
+the loss in forms like PIE 3 pl. *bhudhnt > PGmc. *buðun(p) > Go. -budun, OE budon,
+etc. 'offered'; PIE o-stem acc. sg. * -om > PGmc. *-a"" (with nasalization) in Runic
+staina ‘stone' (but Olcel. stein, Go. stáin, OE stān, etc.); cf. PIE o-stem acc. pl. *-ons
+PGmc. *-ans in Go. stáinans, Runic staba ‘runestaves'. There must have been loss of i
+early, perhaps in PGmc. itself, in the ending *-omiz reflected in the dat. (orig. instr.) pl.
+of a-stems (and the 1 pl. ind. of verbs), since the ending is reflected as -am already in
+Gothic; cf. Runic -umr (2×) on the Stentoften stone (mid-7th cent.).7 The only excep-
+tions to the loss of a lone final consonant after an unstressed vowel are s/z and r. Where-
+as s/z is plainly preserved in NGmc. and in Gothic (and see §§6.6, 6.12 on the fate of z
+in Go.), its development in WGmc. is contested, the commonest assumption being that z
+was lost but s preserved (see §6.16). Examples: PGmc. *dazaz > Go. dags, ON dagr,
+OE dæg OS dag, OHG tag ‘day'; PGmc. *under > Go. undar, OIcel. undir (without
+umlaut), OE under, OS undar, under, OHG untar. 8 On the development of final
+consonants, see further §§6.12, 6.14, 6.16.
+When a was lost in a final syllable (after the PGmc. period, but uniformly across
+the branches of Gmc.), a preceding glide was nuclearized. The process is partly ob-
+scured in WGmc. by the analogical extension of geminates within paradigms, but due to
+Sievers' law (§5.8), WGmc. high vowels thus generated may in some instances be
+preserved after heavy stems. Examples are *kunja"" > Go. kuni 'kind', Olcel. kyn (<"		
+alignment25-month-rt-plural	RingeTaylor2014	59	74	16	5	13	*mén6piz	b0c9225e1ca35504b8763a2065b5ba50a14ce8e527573571bcd599630668abd4	"PGmc *mén6piz nom. pl. ‘months’ (cf. Goth. acc. pl. menops) >(—) nom.-acc. pl.
+*manopi > PWGmc *manob >— OE monap ~ monapas, OHG manéda (1x
+manot, Braune and Reiffenstein 2004: 215, §238 Anm. 2);"		
+alignment25-mother-ringe-pie	Ringe2017	123	134	2	1292	1302	*mah2tē ́r	4ade8e8b02b6317a57b19db1767b1f7d4d69653a7252a74c6b6ce8c542dd3462	"conditions (cf. Schaffner : –). I postpone discussion of the labiovelar to
+Section .. (iii). There are about a hundred lexical examples, of which the following
+are typical:
+  PIE *upér(i) ‘over, above’ (cf. Skt upári, Gk ὑπέρ /hupér/) > *ufér, *uféri > PGmc
+    *ubar (*uber?), *ubiri (cf. OHG obar-, ubiri, OE ofer, ON yﬁr);
+  PIE *kh2piéti ‘(s)he grasps’ (cf. Lat. capit ‘(s)he takes’, Gk κάπτει /káptei/ ‘(s)he
+    gulps down’) > *kafjéþi > PGmc *habiþi ‘(s)he lifts’ (OE hefeþ, inf. hebban;
+    voiceless alternant leveled back into the present stem, and j leveled in from
+    forms in -ja-, in Goth. hafjiþ);
+  PIE *selp- ‘to anoint’, attested mostly in derived nouns (cf. Skt sarpís ‘ghee’, Toch.
+    B ṣalype ‘oil, fat’); derived action/result noun *sólpos ‘anointing, ointment’,
+    collective *solpáh2 > *solfā ́ > PGmc *salbō̄ ‘ointment’ (cf. OE sealf, OHG
+    salba), derived verb *salbō̄ną ‘to anoint’ (cf. Goth. salbon);
+  PIE *septḿ̥ ‘seven’ (cf. Skt saptá, Lat. septem) > *seftún ! *seftúnt (by lexical
+    analogy with *téhunt ‘ten’) > *sefúnt > PGmc *sebun (see Stiles –, part ,
+    pp. –; cf. Goth. sibun, OE seofon);
+  PIE *ph2tēŕ ‘father’ (cf. Skt pitā ́, Lat. pater) > *faþēr > PGmc *fadēr (cf. Goth.
+    vocative fadar, ON faðir, OE fæder);
+  PIE *mah2tē ́r ‘mother’ (cf. Skt mātā ́, Lat. māter) > *māþē ́r > PGmc *mōdēr (cf. ON
+    móðir, OE mōdor);
+  PIE *kwetwō ́r ‘four (neut.)’ (cf. Skt catvā ́ri, Lat. quattuor) >! *feþwō ́r (initial labial
+    probably by lexical analogy with ‘ﬁve’) > PGmc *fedwōr (cf. Goth. ﬁdwor, OE
+    fēower);
+  PIE *ḱm̥ tóm ‘hundred’ (cf. Skt śatám, Lat. centum, Lith. šim̃tas) > *hunþón >
+    PGmc *hundą (cf. Goth. pl. hunda, OE hundred);
+  PIE *h2ánh2t- ‘duck’ (cf. Lat. anat-, Lith. ántis) > *ánuþ- > PGmc *anud- (cf. OHG
+    anut, OE i-stem ened);
+  PIE *wr̥h1tóm ‘said’ (neut.; see .. (i)) > *wurþón > PGmc *wurdą ‘word’
+    (cf. Goth. waúrd, OE word);
+  PIE *tewtáh2 ‘tribe, people’ (cf. Oscan touto, OIr. túath, Lith. tautà) > *þeuþā ́ >
+    PGmc *þeudō (cf. Goth. þiuda, OE þēod);
+  post-PIE *kartús ‘sharp’ vel sim. (cf. Lith. kartùs ‘bitter’) > *harþús > PGmc
+    *harduz ‘hard’ (cf. Goth. hardus, OE heard);
+  PIE *sweḱrúh2 ‘mother-in-law’ (cf. Skt śvaśrū ́s) > *swehrū ́ > PGmc *swegrū? or
+    >! *swegrō?; in either case, > PWGmc *swegru (cf. OE sweġer, OHG swigar);
+  PIE *maḱrós ‘long’ (cf. Gk μακρός, Lat. macer ‘thin’) > *mahrós > PGmc *magraz
+    ‘lean, emaciated’ (cf. ON magr, OE mæġer);
+  PIE *h2yuHn̥ḱ ós ‘young’ (cf. Skt yuvaśás; Lat. iuvencus ‘steer’, i.e. ‘young bull’) >
+    *yunhós > PGmc *jungaz (cf. Goth. juggs, OE iung, ġeong);
+  PIE *h2ánkō ~ *h2n̥kn-´ ‘bend’ ! *h2ankō ́ (cf. Gk ἀγκών /ankɔ́:n/ ‘elbow’) > *anhō ́ >
+    PGmc *angō̄ ‘sharp point’ (cf. ON angi ‘spine, prickle’, OE anga ‘sting, goad’);"		
+alignment25-mother-womb	Kroonen2013	372	412	1	2068	2078	*méh₂-tro-	4a6bb44f2f2c45afda59a7ab27edab4818e566b55d367ce2c0368e6fa7e0a69d	"372
+*mōnjan-
+-
+*mōnjan- w.v. 'to tower' · ON mœna w.v. ‘id.' ⇒ *mōn-ie- (IE) — Av. maiti-,
+Lat. mōns, -tis m. 'mountain' < *m(o)n-ti-; OW minid, MW mynyd 'mountain'
+< *mon-io-; Lat. ēminēre 'to stand out' < *h₁eghs-mn-eh₁-ie- (with i from un-
+stressed a (schwa secundum)?).
+A lengthened-grade causative to the root *men- 'to jut out', which is also
+found in e.g. *manō- 'mane, neck' (q.v.). Further cf. ON monir m. 'ridge of a
+roof <*mōnja- and Far. møna f. 'ridge of a roof; spinal marrow', whence
+møna w.v. 'to make the ridge of a hayrick'.
+*mōra- m./n. 'marsh, moor'
+OE mōr n. 'id.', E moor, MDu. moer m./n. 'bog,
+peat, mud', OHG muor m./n. 'id.', G Moor n. 'id.' (DRV).
+An internally-Germanic derivation from *mari- 'sea' (q.v.).
+*mōsa- n. 'food'
+muos n. 'id.' (IE).
+-
+OE mōs n. 'id.', OFri. mōs n. 'id.', MDu. moes n. 'id.', OHG
+A to-formation closely related to *mati- 'food' (q.v.). Also cf. G Ge-mūse n.
+'vegetables', Du. moes-tuin 'vegetable garden' <*(ga)-mōsja-.
+*mōtan- pret.-pres. 'to approach, concede to(?)' — Go. ga-motan pret.-pres.
+'to find opportunity, be permitted', OFri. mōta pret.-pres. 'to be allowed, to
+be able, to have to', OS mōtan, 3sg. mōt pret.-pres. 'to be allowed, be per-
+mitted, have opportunity to', Du. moeten, 3sg. moet pret.-pres. 'to be obliged
+to', OHG muozan, 3sg. muot pret.-pres. 'to find room for, may, be able', G
+müssen, 3sg. muß pret.-pres. 'to be obliged to' (IE) — Arm. matč'im 'to ap-
+proach, come close' < *mod-.
+-
+-
+A preterite-present probably based on the root *mod- as attested in Ar-
+menian. See also *mapla- and *mōtjan-.
+-
+*mōtjan- w.v. 'to meet' Go. ga-motjan w.v. 'id.', ON mota w.v. 'id.', Far.
+møta w.v. 'id.', Elfd. myōta w.v. 'id.', OE mētan w.v. 'id.', E to meet, OFri. mēta
+w.v. 'id.', OS mōtian w.v. 'id.', Du. ont-moeten w.v. ‘id.' (IE).
+A jan-verb closely related to *mōtan- (q.v.).
+*mōpra-n. 'womb, belly, bodice' - OFri. mōther n. 'bodice(?)', MLG mōder f.
+'womb', Du. baar-moeder c. 'placenta', OHG muodar n. 'belly, waistcoat',
+MHG muoder, müeder n. 'body, bodice, girdle', G Mieder n. 'id.' ⇒ *méh₂-tro-
+(EUR/IE) Gr. unτpα f. 'womb' < *meh2-treh2-.
+-
+An instrumental noun created to the same root as found in *mōder-
+'mother' (q.v.). The modern German form Mieder arose from an umlauted
+plural form MHG müeder whose diphthong was unrounded dialectally. The
+non-neuter gender of MLG mōder and Du. moeder is probably due to influ-""
+ence from *mōder- 'mother', but in view of Gr. µnτpα it cannot entirely be
+excluded that PGm. had a feminine variant *mōþrō-."		
+alignment25-mother-rt-step	RingeTaylor2014	381	396	5	364	374	stéopmoder	3ea7743f4d004a1ca576699f6ffe444296d103f39bdd56eabf3ef126b417a723	"The case endings of the kinship terms in -r present a number of puzzles.
+PWGmc nom. sg. *-er and acc. sg. *-ar should both have become -@r > -er in
+OE; that ending appears to be preserved in early Merc. nom. sg. stéupfeedcer
+‘stepfather’ (EpGl 1070; = CorpGl 2124 stéopfeder), nom.-acc. sg. feder (Ps(A)),
+early WS nom.-acc. sg. feder ‘father’, and in early Merc. stéopmoder"		
+alignment25-mother-rt-dative	RingeTaylor2014	382	397	2	1359	1365	meéder	ba244ae891b6d5212e941e76774643ca27503de16ea69a7e3954fee71d851f35	"‘stepmother’ (CorpGl 1390). But in the lexemes with back vowels in their
+initial syllables the vowel of the suffixal syllable has generally been replaced by
+u or its later reflex; thus we find early Merc. modur ‘mother’, brodur ‘brother’,
+dohtur ‘daughter’ (all Ps(A)), early WS modor ~ -ur, brodor ~ -ur, dohtor,
+sweostor ‘sister’, and early Kent. mddar, dohtar (Ct. 38.12). Conversely, the
+original gen. sg. ending -ur (< PWGmc, PGmc *-urz) survives unchanged not
+only in early Merc. feadur ‘father’s’ (Ps(A)) and early North. wuldurfadur
+“glorious father’s’ (Ced 3), but also in gen. sg. modur (~ -or), brodur (~ -or),
+etc. (and note Kent. brddar in the passage cited above and swestar at Ct.
+41.39). But in early WS *fadur has been replaced by fader, homonymous with
+the nom.-acc. sg. It looks as though native learners, deducing correctly that -r
+was part of the stem (i.e. the lexically distinctive part of the word), found
+themselves confronted with rare vowel alternations and levelled them in
+various directions; we probably cannot prove that, but no other explanation
+seems plausible. (The solution of Boutkan 1992 violates known sound laws, so
+far as I can see; note also that the numerous lexemes like ober mentioned by
+Boutkan, 1992: 20, are in fact counterexamples to his scenario, though he does
+not present them as such.) Early Merc. dat. sg. meéder, breeder, deehter (= early
+WS meéder, brééder, later dehter) can only reflect the inherited forms in *-ri with
+no suffixal vowel; early WS dat. sg. feeder and sweostor, and probably also early
+Merc. (Ps(A)) feder, must reflect the levelling of vowel alternations."		
+alignment25-mother-rt-plural	RingeTaylor2014	382	397	3	1385	1390	médru	be4327bbbb38a39730e5abcf5838ce7e7fa10545f499a5d7175c9210b0c5b877	"R-stem gen. pl. -ra and dat. pl. -rum are the expected forms. The consistent
+lack of a suffixal vowel in Ps(A) fedra and feadrum matches the lack of a
+suffixal vowel in Goth. -re, -rum (though unstressed @ would have been
+syncopated even after a light syllable, see 6.7.3). But the OE nom.-acc. pl.
+forms are unexpected. ON fedr, mceedr, etc. must reflect PGmc nom. pl. *-ir-iz
+(< PIE *-ér-es, cf. Skt pitdras, Gk warépes /patéres/ ‘fathers’, etc.) or *-r-iz,
+with zero grade of the suffix generalized (cf. Lat. patrés). Goth. acc. pl.
+bropruns (< pre-PGmce *-r-ns), to which nom. pl. broprjus has been back-
+formed on the model of the u-stems, suggests the latter. But the OE forms
+cannot reflect any PGmc form with *i in the ending. Leaving aside early WS
+feederas ~ foedras, early Merc. (Ps(A)) fedras, which has adopted the a-stem
+ending, we find early Merc. (Ps(A)) moédur, brodur, early WS modor ~ -ur,
+brodor ~ -ur, dohtor, sweostor, early Kent. brodar (Ct. 41.36)—identical with
+the nom.-acc. sg. forms. It seems unlikely that i-umlaut was levelled out of
+these forms, given that it survived in the dat. sg. and that among root nouns it
+survived both in the dat. sg. and in the nom.-acc. pl. The inherited acc. pl. in
+*-r-unz should have yielded -ru (Boutkan 1992: 10, Hogg and Fulk 2011: 56,
+pace Brunner 1965: 230), and it is at least possible that later WS bropru ~ -ra
+and médru ~ -ra reflect the inherited acc. pl. (which presumably survived in"		
+alignment25-nail-root	Ringe2017	122	133	2	417	428	*h3nogh(w)-	e3036ef3ab0d87b806a4192da839991a724a5e642dbe0111ef8cc3b29dea7530	"PIE *dl ̥h1ghós ‘long’ (cf. Skt dīrghás, OCS dlŭgŭ) > PGmc *tulgaz ‘ﬁrm’ (cf. Goth.
+    tulgus ‘ﬁrm, steadfast’ (*‘long-lasting’), transferred into the u-stems; OE adv.
+    tulge ‘ﬁrmly’);
+  PIE *léghyeti ‘(s)he’s lying down (eventive)’ (cf. OCS ležitŭ (stative), Homeric Gk
+    aor. λέκτο /lékto/ ‘(s)he lay down’) >! PGmc *ligiþi (stative; cf. OE liġþ, OHG
+    ligit, and see .. (i) ad ﬁn. on the ending);
+  PIE *h3nogh(w)- ‘claw, nail’ (cf. Gk ὄνυχ- /ónukh-/, Lith. nãgas) >! PGmc *naglaz
+    (cf. ON nagl, OE næġl)."		
+alignment25-name-plural-acc	Ringe2017	313	324	2	112	117	namnō	0375eaadd29484ffbe31e1d8d6f4214974beb97410d2004e6fc2a8fa65c993ec	"pl. nom.    gumaniz        namnō     augōnō                tungōniz       hauhīniz
+      acc.    gumanunz       namnō     augōnō                tungōnunz      hauhīnunz
+      gen.    gumanǭ̄        namnǭ̄    auganǭ̄               tungōnǭ̄       hauhīnǭ̄
+      dat.    gumammaz       namnamaz? augammaz              tungōmaz       hauhīmaz
+      inst.   gumammiz       namnamiz? augammiz              tungōmiz       hauhīmiz
+              ‘brother’ (m.) ‘foot’ (m.)    ‘tooth’ (m.)     ‘night’ (f.)   ‘mouse’ (f.)
+  sg. nom.    brōþēr         fōts? (fōs?)   tanþs? (tans?)   nahts? (nahs?) mūs
+      voc.    brōþar         ???            ???              ???            ???
+      acc.    brōþarų        fōtų           tanþų            nahtų          mūsų
+      gen.    brōþurz        fōtiz          tundiz           nahtiz         mūsiz
+      dat.    brōþri         fōti           tundi            nahti          mūsi
+      inst.   ???            ???            ???              ???            ???
+  pl. n.-v.   brōþiriz       fōtiz          tanþiz           nahtiz         mūsiz
+      acc.    brōþrunz       fōtunz         tanþunz          nahtunz        mūsunz
+      gen.    brōþrǭ ̄       fōtǭ̄          tundǭ̄           nahtǭ ̄        mūsǭ̄
+      dat.    brōþrumaz fōtumaz?            tundumaz?        nahtumaz?      mūsumaz?
+      inst.   brōþrumiz fōtumiz?            tundumiz?        nahtumiz?      mūsumiz?"		
+alignment25-name-plural-gen	Ringe2017	313	324	2	198	204	namnǭ̄	0375eaadd29484ffbe31e1d8d6f4214974beb97410d2004e6fc2a8fa65c993ec	"pl. nom.    gumaniz        namnō     augōnō                tungōniz       hauhīniz
+      acc.    gumanunz       namnō     augōnō                tungōnunz      hauhīnunz
+      gen.    gumanǭ̄        namnǭ̄    auganǭ̄               tungōnǭ̄       hauhīnǭ̄
+      dat.    gumammaz       namnamaz? augammaz              tungōmaz       hauhīmaz
+      inst.   gumammiz       namnamiz? augammiz              tungōmiz       hauhīmiz
+              ‘brother’ (m.) ‘foot’ (m.)    ‘tooth’ (m.)     ‘night’ (f.)   ‘mouse’ (f.)
+  sg. nom.    brōþēr         fōts? (fōs?)   tanþs? (tans?)   nahts? (nahs?) mūs
+      voc.    brōþar         ???            ???              ???            ???
+      acc.    brōþarų        fōtų           tanþų            nahtų          mūsų
+      gen.    brōþurz        fōtiz          tundiz           nahtiz         mūsiz
+      dat.    brōþri         fōti           tundi            nahti          mūsi
+      inst.   ???            ???            ???              ???            ???
+  pl. n.-v.   brōþiriz       fōtiz          tanþiz           nahtiz         mūsiz
+      acc.    brōþrunz       fōtunz         tanþunz          nahtunz        mūsunz
+      gen.    brōþrǭ ̄       fōtǭ̄          tundǭ̄           nahtǭ ̄        mūsǭ̄
+      dat.    brōþrumaz fōtumaz?            tundumaz?        nahtumaz?      mūsumaz?
+      inst.   brōþrumiz fōtumiz?            tundumiz?        nahtumiz?      mūsumiz?"		
+alignment25-name-plural-dat	Ringe2017	313	324	2	283	292	namnamaz?	0375eaadd29484ffbe31e1d8d6f4214974beb97410d2004e6fc2a8fa65c993ec	"pl. nom.    gumaniz        namnō     augōnō                tungōniz       hauhīniz
+      acc.    gumanunz       namnō     augōnō                tungōnunz      hauhīnunz
+      gen.    gumanǭ̄        namnǭ̄    auganǭ̄               tungōnǭ̄       hauhīnǭ̄
+      dat.    gumammaz       namnamaz? augammaz              tungōmaz       hauhīmaz
+      inst.   gumammiz       namnamiz? augammiz              tungōmiz       hauhīmiz
+              ‘brother’ (m.) ‘foot’ (m.)    ‘tooth’ (m.)     ‘night’ (f.)   ‘mouse’ (f.)
+  sg. nom.    brōþēr         fōts? (fōs?)   tanþs? (tans?)   nahts? (nahs?) mūs
+      voc.    brōþar         ???            ???              ???            ???
+      acc.    brōþarų        fōtų           tanþų            nahtų          mūsų
+      gen.    brōþurz        fōtiz          tundiz           nahtiz         mūsiz
+      dat.    brōþri         fōti           tundi            nahti          mūsi
+      inst.   ???            ???            ???              ???            ???
+  pl. n.-v.   brōþiriz       fōtiz          tanþiz           nahtiz         mūsiz
+      acc.    brōþrunz       fōtunz         tanþunz          nahtunz        mūsunz
+      gen.    brōþrǭ ̄       fōtǭ̄          tundǭ̄           nahtǭ ̄        mūsǭ̄
+      dat.    brōþrumaz fōtumaz?            tundumaz?        nahtumaz?      mūsumaz?
+      inst.   brōþrumiz fōtumiz?            tundumiz?        nahtumiz?      mūsumiz?"		
+alignment25-name-plural-inst	Ringe2017	313	324	2	368	377	namnamiz?	0375eaadd29484ffbe31e1d8d6f4214974beb97410d2004e6fc2a8fa65c993ec	"pl. nom.    gumaniz        namnō     augōnō                tungōniz       hauhīniz
+      acc.    gumanunz       namnō     augōnō                tungōnunz      hauhīnunz
+      gen.    gumanǭ̄        namnǭ̄    auganǭ̄               tungōnǭ̄       hauhīnǭ̄
+      dat.    gumammaz       namnamaz? augammaz              tungōmaz       hauhīmaz
+      inst.   gumammiz       namnamiz? augammiz              tungōmiz       hauhīmiz
+              ‘brother’ (m.) ‘foot’ (m.)    ‘tooth’ (m.)     ‘night’ (f.)   ‘mouse’ (f.)
+  sg. nom.    brōþēr         fōts? (fōs?)   tanþs? (tans?)   nahts? (nahs?) mūs
+      voc.    brōþar         ???            ???              ???            ???
+      acc.    brōþarų        fōtų           tanþų            nahtų          mūsų
+      gen.    brōþurz        fōtiz          tundiz           nahtiz         mūsiz
+      dat.    brōþri         fōti           tundi            nahti          mūsi
+      inst.   ???            ???            ???              ???            ???
+  pl. n.-v.   brōþiriz       fōtiz          tanþiz           nahtiz         mūsiz
+      acc.    brōþrunz       fōtunz         tanþunz          nahtunz        mūsunz
+      gen.    brōþrǭ ̄       fōtǭ̄          tundǭ̄           nahtǭ ̄        mūsǭ̄
+      dat.    brōþrumaz fōtumaz?            tundumaz?        nahtumaz?      mūsumaz?
+      inst.   brōþrumiz fōtumiz?            tundumiz?        nahtumiz?      mūsumiz?"		
+alignment25-name-rt-genitive	RingeTaylor2014	163	178	4	204	210	namena	30959af5f73b1229ef723fef3153d14862f92f7e8c8671b147532828a915baa7	"OE OF OS OHG
+masc.
+sg. nom. nama noma namo namo
+acc. naman noma namon ~ -an namon ~ -un
+gen. naman noma namen namen ~ -in
+dat. naman noma namen namen ~ -in
+pl. nom.-acc. naman noma namon namon ~ -un
+gen. namena nomena namono nam6no
+dat. namum nomum  namon namom
+fem.
+sg. nom. tunge tunge tunga zunga
+acc. tungan  tunga tungun zungiun
+gen. tungan  tunga tungun zungiun
+dat. tungan  tunga tungun zungiun
+pl. nom.-acc. tungan tunga tungun zungiun
+gen. tungena tungena tungono zungono
+dat. tungum tungum  tungon zungom"		
+alignment25-name-rt-dative	RingeTaylor2014	163	178	4	237	242	namum	30959af5f73b1229ef723fef3153d14862f92f7e8c8671b147532828a915baa7	"OE OF OS OHG
+masc.
+sg. nom. nama noma namo namo
+acc. naman noma namon ~ -an namon ~ -un
+gen. naman noma namen namen ~ -in
+dat. naman noma namen namen ~ -in
+pl. nom.-acc. naman noma namon namon ~ -un
+gen. namena nomena namono nam6no
+dat. namum nomum  namon namom
+fem.
+sg. nom. tunge tunge tunga zunga
+acc. tungan  tunga tungun zungiun
+gen. tungan  tunga tungun zungiun
+dat. tungan  tunga tungun zungiun
+pl. nom.-acc. tungan tunga tungun zungiun
+gen. tungena tungena tungono zungono
+dat. tungum tungum  tungon zungom"		
+alignment25-nave-possible-nom	Kroonen2013	381	421	1	494	504	*hзnóbh-h₂	515e2b2775b305c9d627e20bff488362eca55619775020cb937903a15f6da14c	"*nadra-
+381
+(of wheel) <*hзnobh-io-; Skt. nábhi- f. 'hub, centre, navel (of the body or the
+world), origin, relationship, family' < *hзnobh-i- (also cf. OPru. nabis 'nave,
+navel'); YAv. nāfa- m. 'navel, origin, blood relationship', NP näf(a) 'navel',
+Oss. naffæ 'id.' <*hзnobh-h2-0- (with Ir. *-f- <*-bh-h2-?).
+An inherited word. In view of the ablaut variants mentioned under the
+closely related *nablan- 'navel' (q.v.), it is possible that the word originally
+had an ablauting paradigm, nom. *hзnóbh-h₂, gen. *hзmbh-h2-ós. This para-
+digm further offers a potential explanation for the Schwebeablaut of
+*amban- 'belly' (q.v.).
+*nadra- m. 'adder, snake' - Go. nadrs* m. 'id.', ON naðr m. 'id.' ⇒ *nḥ₁tr-ó-
+(WEUR) Lat. natrix f. 'water snake', OIr. nathir, gen. natrach f. 'viper' <
+*nh1-tr-ik-.
+Also cf. the feminine ON naðra f. 'id.'. A West European word of uncertain
+origin. The connection with *nēan- 'to sew' through an original meaning
+'winder' (cf. Pokorny IEW: 767) is uncertain. Compare, with ablaut, the se-
+mantically identical feminine *nēdrōn-(q.v.).
+-
+-
+*nagl- m. 'nail' ON nagl, pl. negl m. 'id.', Icel. nōgl, pl. neglur f. 'id.', Far.
+naglur, f.pl. negl m. 'id.', Elfd. nagel m. 'id.', OE nægel, nægl m. 'id.', E nail,
+OFri. neil m. 'id.', OS nagal m. 'id.', Du. nagel c. 'id.', OHG nagal m. 'id.', G
+Nagel m. 'id.'*hзnogwh-1-0- (IE) — Gr. ővu, -uxos m. 'nail, claw, hoof, Arm.
+etungn 'nail', OPru. nage 'foot', Lith. nãgas m. 'nail, claw', nagà f. 'hoof, OCS
+noga, Ru. nogá 'foot, leg' < *hзnogwh-; Lat. unguis f. 'id.', Olr. ingen f. 'id.', MW
+ewin 'id.' < *hзngwh-.
+An l-derivative from the PIE word for 'nail', which originally had an
+ablauting paradigm nom. *hзnógwh-s, gen. *hзngwh-és. The Old Norse word
+nagl was inflected as a root noun, but this may be secondary: all other Ger-
+manic forms point to an original a-stem *nagla-. Also cf. Go. ga-nagljan, ON
+negla, OS neglian, OHG negilen w.v. 'to nail' < *nagljan-.
+*naht- f. 'night' — Go. nahts f. 'id.', ON nótt, gen. nætr, náttar, pl. nætr f. 'id.',
+Icel. nótt, pl. nætur f. 'id.', Far. nátt, pl. nætur f. 'id.', Elfd. nąt, pl. néter f. ‘id.',
+OE næht, niht f. 'id.', E night, OFri. nacht f. 'id.', OS naht f. ‘id.', Du. nacht c.
+'id.', OHG naht f. 'id.', G Nacht f. 'id.' ⇒ *nokw-t- (IE) — Hitt. nekuz adv. 'in the
+evening' < *nekw-t-s; Gr. vúð, vuêtós f. ‘night', Lat. nox, noctis f. 'id.', Lith.
+naktis f. 'id.', OCS noštɩ f. ‘id.' <*nokw-t-.
+-
+A static t-stem nom. *nókw-t-s, gen. *nékw-t-s. In view of the formal and
+semantic similarities with the adjective *dinkwa- 'dark' (q.v.) < PIE
+*dhengw-o-, I assume that the word started out as *dnogw-t- in Pro-
+to-Indo-European, and lost its initial dental due to dissimilation against the
+t-suffix. This t-suffix is almost certainly parallel to that of *leuhada- 'light'
+(q.v.) <*leukw-ot-, cf. Hitt. lukkatt- c. 'dawn, next morning' < *l(e)uk-ot-."		
+alignment25-nave-possible-gen	Kroonen2013	381	421	1	511	523	*hзmbh-h2-ós	515e2b2775b305c9d627e20bff488362eca55619775020cb937903a15f6da14c	"*nadra-
+381
+(of wheel) <*hзnobh-io-; Skt. nábhi- f. 'hub, centre, navel (of the body or the
+world), origin, relationship, family' < *hзnobh-i- (also cf. OPru. nabis 'nave,
+navel'); YAv. nāfa- m. 'navel, origin, blood relationship', NP näf(a) 'navel',
+Oss. naffæ 'id.' <*hзnobh-h2-0- (with Ir. *-f- <*-bh-h2-?).
+An inherited word. In view of the ablaut variants mentioned under the
+closely related *nablan- 'navel' (q.v.), it is possible that the word originally
+had an ablauting paradigm, nom. *hзnóbh-h₂, gen. *hзmbh-h2-ós. This para-
+digm further offers a potential explanation for the Schwebeablaut of
+*amban- 'belly' (q.v.).
+*nadra- m. 'adder, snake' - Go. nadrs* m. 'id.', ON naðr m. 'id.' ⇒ *nḥ₁tr-ó-
+(WEUR) Lat. natrix f. 'water snake', OIr. nathir, gen. natrach f. 'viper' <
+*nh1-tr-ik-.
+Also cf. the feminine ON naðra f. 'id.'. A West European word of uncertain
+origin. The connection with *nēan- 'to sew' through an original meaning
+'winder' (cf. Pokorny IEW: 767) is uncertain. Compare, with ablaut, the se-
+mantically identical feminine *nēdrōn-(q.v.).
+-
+-
+*nagl- m. 'nail' ON nagl, pl. negl m. 'id.', Icel. nōgl, pl. neglur f. 'id.', Far.
+naglur, f.pl. negl m. 'id.', Elfd. nagel m. 'id.', OE nægel, nægl m. 'id.', E nail,
+OFri. neil m. 'id.', OS nagal m. 'id.', Du. nagel c. 'id.', OHG nagal m. 'id.', G
+Nagel m. 'id.'*hзnogwh-1-0- (IE) — Gr. ővu, -uxos m. 'nail, claw, hoof, Arm.
+etungn 'nail', OPru. nage 'foot', Lith. nãgas m. 'nail, claw', nagà f. 'hoof, OCS
+noga, Ru. nogá 'foot, leg' < *hзnogwh-; Lat. unguis f. 'id.', Olr. ingen f. 'id.', MW
+ewin 'id.' < *hзngwh-.
+An l-derivative from the PIE word for 'nail', which originally had an
+ablauting paradigm nom. *hзnógwh-s, gen. *hзngwh-és. The Old Norse word
+nagl was inflected as a root noun, but this may be secondary: all other Ger-
+manic forms point to an original a-stem *nagla-. Also cf. Go. ga-nagljan, ON
+negla, OS neglian, OHG negilen w.v. 'to nail' < *nagljan-.
+*naht- f. 'night' — Go. nahts f. 'id.', ON nótt, gen. nætr, náttar, pl. nætr f. 'id.',
+Icel. nótt, pl. nætur f. 'id.', Far. nátt, pl. nætur f. 'id.', Elfd. nąt, pl. néter f. ‘id.',
+OE næht, niht f. 'id.', E night, OFri. nacht f. 'id.', OS naht f. ‘id.', Du. nacht c.
+'id.', OHG naht f. 'id.', G Nacht f. 'id.' ⇒ *nokw-t- (IE) — Hitt. nekuz adv. 'in the
+evening' < *nekw-t-s; Gr. vúð, vuêtós f. ‘night', Lat. nox, noctis f. 'id.', Lith.
+naktis f. 'id.', OCS noštɩ f. ‘id.' <*nokw-t-.
+-
+A static t-stem nom. *nókw-t-s, gen. *nékw-t-s. In view of the formal and
+semantic similarities with the adjective *dinkwa- 'dark' (q.v.) < PIE
+*dhengw-o-, I assume that the word started out as *dnogw-t- in Pro-
+to-Indo-European, and lost its initial dental due to dissimilation against the
+t-suffix. This t-suffix is almost certainly parallel to that of *leuhada- 'light'
+(q.v.) <*leukw-ot-, cf. Hitt. lukkatt- c. 'dawn, next morning' < *l(e)uk-ot-."		
+alignment25-navel-rt-reflex	RingeTaylor2014	270	285	12	91	97	nafola	20a13702b50ee2f3037e930978c78b4286ef2da7444625bd366b2556beba1f8c	"PNWGrc *nabuls ‘navel’ (ON nafli) > PWGmce *nabul6 (OF navila, OHG nabalo)
+> *neebula > OE nafola;
+PNWGmc *klawibo ‘itch’ (ON klddi) > PWGmc *klawibo (OHG klouwida with
+shift of gender) > *klewipa > OE *klewipa > clewepa (see also 6.7.1 ad fin.);
+PWGmce *natila ‘nettle’ (OS netila, OHG ne3z3ila) > *nzetil@ > OE netele (but see
+below);"		

@@ -34,6 +34,256 @@ three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
 
+## Twenty-fifth alignment: oblique triggers, ancestral accents and lexical units
+
+This increment concerns milk, month, mood, mother, nail, name, nave
+and navel. It does not choose new corpus reconstructions or dates,
+and it does not treat compatible outputs as proof of genealogy.
+All105 inherited analytical identities are individually reconciled.
+Three already image-checked Cercignani milk records previously lacked
+analytical positions; their new links reuse the actual consultation
+and certification rather than manufacture another reading or author
+vote. Twenty-two exact native occurrences and24 scoped arguments
+supplement existing consultations. Source forms, relationship to
+the selected cell, attribution, historical stage, confidence and
+divergence explanation remain independently recorded.
+
+### Milk: origin of u is not the same question as raising before u
+
+The milk noun is an archaic feminine root formation, but its medial
+u is not explained simply by naming the strong milk verb. Kroonen
+calls the situation unsatisfactory. Szemerényi's contamination of
+full-grade nominative and zero-grade genitive does not explain the
+Schwebeablaut; Bammesberger's inserted schwa is judged unlikely
+because the comparable alh- formation lacks insertion. The two
+identical written *melk-z* occurrences therefore retain separate
+identities and attributed arguments. Neither becomes Kroonen's
+adopted reconstruction merely because he prints it
+[@Kroonen2013, pp.364-365].
+
+The continuation is consequential. Kroonen considers u arising
+in the verb more likely than its spreading from the noun to the
+verb. Contamination of athematic verbal grades and dissimilation,
+or dissimilation of a reduplicated verb, remain possibilities,
+not established noun corrections. The giving-milk adjective,
+gerundive, dairy noun and iterative milk verb are separately
+related formations, not additional citations of the selected milk
+noun. Orel likewise calls the medial vowel unclear and the noun's
+relation to the strong verb dubious. His *melikiz* belongs to
+the antecedent of OHG *milih*, not to the selected OE citation
+[@Kroonen2013, pp.364-365,374; @Orel2003, pp.266-267].
+
+Ringe's tentative account of medial laryngeal yielding u cannot
+be certified by milk: the requisite root-coda laryngeal is not
+clearly evidenced. This restriction must be read beside his
+separate listing of PGmc consonant stems with generalized full
+grade, including *meluk-*. The latter supplies a local PGmc date
+for that stem, not a proof of its u by the tentative laryngeal law.
+The exact stage repair therefore changes neither confidence nor
+the selected corpus input
+[@Ringe2017, pp.98,222].
+
+Raising presents a different set of propositions. Fulk discusses
+continental *miluk* and *miluh* under raising before u, while
+acknowledging failed examples unless analogy is invoked. His
+Anglian milk dative proceeds through *milyki* from *miluki*,
+with the ending alternative explicitly retained. These are not
+two quotations of one selected milk nominative. The starless
+index *miluki* directs to this dative argument; its heading alone
+does not supply an independently established PGmc date
+[@Fulk2018, pp.68-69,79-81,388].
+
+Cercignani conditionally proposes raising in inflected eCuCi
+forms, with genitive *melukez* preceding *melukiz*. His phonemic
+milk citation retains e; the full genitive is not explicitly
+dated PGmc. Contrastive i/e before u independently argues against
+pan-Germanic complementary distribution. This is not a claim
+that every particular later u-conditioned change is impossible
+[@Cercignani1979, pp.75-76].
+
+Ringe-Taylor gives usual WS *meolc* from *meoluc* from *meluk*.
+Anglian *milc* plausibly generalizes genitive/dative forms,
+either through double umlaut with u still present or through
+earlier syncope followed by mutation. The alternative chains
+retain conditional status. The proposal reported from Campbell
+that raising through u was PGmc is explicitly contradicted by
+Anglian ten and mountain histories; certainty is declared
+unattainable for isolated milk. WS back-umlaut of e before u
+across l/r/labials supplies a later, separately conditioned
+account of *meoluc*. Anglian generalized *milc* has a different
+input and is not a counterexample to that WS law
+[@RingeTaylor2014, pp.253-254,324-325].
+
+The focused comparison consequently records different units
+and scope commitments rather than an invented exclusive dispute.
+It does not count the two Ringe volumes as independent votes or
+derive a universal raising date from the final OE vowel. Its
+remaining premise is precise: establish the selected milk cell's
+ancestry and the noun-u origin independently of the proposed
+oblique trigger. Position-support reasons do not establish an
+inter-author cause
+[@Fulk2018, pp.68-69,79-81; @Cercignani1979, pp.75-76;
+@RingeTaylor2014, pp.253-254].
+
+### Month: moon is family evidence, not the selected dental cell
+
+Kroonen's month entry is wholly on printed365; printed366 begins
+the next entry. The t-stem is uniquely Germanic against the
+corresponding PIE s-stem. The moon n-stem is secondary from a
+nominative which could continue an s- or t-ending. Although
+the t-analysis is usually preferred because of month, that
+suffix is confined to Germanic; the later German dental is
+secondary. Orel's adjacent moon entry explicitly depends on
+month. Neither source licenses substituting moon's n-stem
+for the selected dental noun
+[@Kroonen2013, p.365; @Orel2003, p.270].
+
+Ringe separates PGmc *mēnōþ-* from *mēnan-* and allows
+remodeling from similar nominatives, while declaring further
+details unrecoverable. In Ringe-Taylor's introductory and
+nasalization examples, several inherited month records actually
+quote moon. Their identities survive but their row relationship
+is now family, not same-etymon citation. The native accents,
+corrupt dental glyphs and ending notation are not harmonized
+into modern editorial spellings
+[@Ringe2017, p.224; @RingeTaylor2014, pp.11,143-145].
+
+The original Fulk index reveals a concrete transcription error:
+*mēnōþi* has final i, omitted in the inherited record. The
+independently inspected original and full body establish a
+dative precursor, contrasted with an expressly nonexistent
+mutated OE month dative. The citation and comparison-form
+fields have exact reversible amendments; image certification
+and independent confidence remain intact. New native body
+*mēnōpi* and the dagger-marked counterfactual are separate
+occurrences, not an editorially assembled quotation. Only
+certain WGmc plural cells preserve the athematic category;
+none supplies the exact selected singular ending
+[@Fulk2018, pp.79-81,179-180,388].
+
+### Mood and mother: gender, accent and analogy are independent
+
+Orel's mood citation is masculine while his OE *mōd* is
+explicitly neuter. His probable moved formation differs from
+reported spiritual-arousal, seek, custom/will and anger proposals.
+Adjacent river/slime is called historically and formally identical
+despite semantic distance, but that statement is not a proved
+selected mood genealogy. Ringe's angry adjective is explicitly
+within the innovative PGmc suffix discussion: its stage is
+repairable, but it remains a derivative, not the noun.
+The bounded Kroonen negative is preserved; no grammar negatives
+are fabricated to compensate for the sparse noun evidence
+[@Orel2003, p.273; @Ringe2017, p.326].
+
+For mother, Kroonen's uniform d suggests an accent shift to
+the suffix in PGmc already, called almost certainly analogical
+to father. The inherited summary understated that authorial
+qualification. Expected *mōþer-* is counterfactual, not another
+adopted headword. His header and comparative prose have different
+accent presentations, which must not be collapsed. The instrumental
+womb/bodice derivative shares a root, not a mother case
+[@Kroonen2013, pp.371-372].
+
+Ringe's suffix-accent PIE mother gives the Verner outcome
+directly; his r-stem account distinguishes direct hysterokinetic
+forms from generalized weak suffix and uncertain oblique/plural
+reconstruction. Fulk reports Prokosch's root accent throughout
+the paradigm, with father analogy explaining the apparent
+Verner consonant; his own broader r-stem synthesis prefers
+Stiles but retains alternatives. Gothic mother in that discussion
+is reconstructible yet unattested. Possible collective origin
+of mother plurals does not identify the selected singular
+[@Ringe2017, pp.122-123,307-308; @Fulk2018, pp.173-176].
+
+Ringe-Taylor's kinship nominative er and accusative ar are
+both explicitly PWGmc. They are suffixes, not full mother
+words. Stepmother is actual compound evidence; dative mother
+reflects the inherited ri trigger without suffixal vowel.
+The later suffix-vowel leveling account seems plausible but
+cannot be proved. Endingless OE plurals cannot directly
+continue an ordinary inherited i-ending, and the proposed
+remodeling remains conditional. This is a distinct ending
+question, not support for rewriting the ancestral accent
+[@RingeTaylor2014, pp.381-383].
+
+### Nail and name: shared spelling does not collapse formations
+
+Nail is an l-derivative of an ablauting nail/claw root.
+Kroonen allows Nordic root-noun inflection to be secondary
+because the remaining Germanic evidence suggests an a-stem.
+Orel's Nordic root plural and OHG a/i evidence remain separate.
+Ringe's optional PIE labialization does not create an optional
+PGmc endpoint consonant. Ringe-Taylor distinguishes PGmc
+*naglaz*, PWGmc *nagl*, fronted intermediate and palatalized
+OE form. The unlabelled intermediate is not automatically
+PWGmc, and native *negl* is not silently converted into dotted
+ġ. His epenthesis account separately identifies the usual
+absence of insertion after a palatal consonant
+[@Kroonen2013, p.381; @Orel2003, p.279; @Ringe2017, p.122;
+@RingeTaylor2014, pp.147-149,212-213,329].
+
+Name exposes a genuinely different genealogy. Kroonen probably
+starts with proterodynamic inflection and generalization of
+zero-grade root with vocalized laryngeal. Ringe reconstructs
+acrostatic singular versus amphikinetic collective, with
+leveling and Osthoff shortening producing the Germanic root.
+Neither identical nam- nor their shared neuter ancestor
+establishes agreement about the formation history. The focused
+comparison preserves the difference but leaves its exact causal
+reconciliation unestablished; no named rebuttal is manufactured
+[@Kroonen2013, pp.382-383; @Ringe2017, pp.56-57,91-95].
+
+The existing image-certified double macrons in Ringe's citation,
+nominative and accusative remain untouched even though native
+extraction can flatten them. Separate identical singular cells
+remain separate; ordinary-long plural nominative and accusative,
+overlong nasal genitive and explicitly questioned plural dative
+and instrumental have their own identities. The question marks
+survive literal extraction. Fulk's disputed trimoric origins
+and WGmc gender transfer are not another assembled masculine
+nominative quotation
+[@Ringe2017, pp.306-308,312-313; @Fulk2018, pp.168-171].
+
+Ringe-Taylor's PGmc neuter to PWGmc masculine transfer, nasalized
+root history, unrounding and final ending belong to different
+claims. Moon tokens in the shared-ending example are comparanda
+of name, not its family. Northern n-stem remodeling admits
+several scenarios, none convincingly solving all problems.
+The later foot-based high-vowel apocope discussion does not by
+itself date the name nominative. Actual OE nominatives are
+distinguished from genitive and dative plurals, rather than
+calling every occurrence a citation
+[@RingeTaylor2014, pp.59,79,143-145,154,163-164,300-301].
+
+### Nave and navel: optional ancestral arguments do not assign input stage
+
+Kroonen's hub is inherited. A possible original ablauting
+nominative/genitive could explain belly's Schwebeablaut, but
+the proposed paradigm is not recovered certainty. Orel's
+separate i-stem explains part of the Nordic hub evidence,
+not the selected OE cell. Navel's l-derivation and Greek,
+Latin and Irish comparisons do not quote a full obligatory-u
+selected word. Its parenthesized u remains parenthesized
+[@Kroonen2013, pp.24,380-381; @Orel2003, p.279].
+
+Ringe-Taylor explicitly starts navel at PNWGmc before the
+PWGmc form. Medial high-vowel retention after a light syllable
+is not heavy-syllable syncope. The fronted root retracts under
+the suffixal back vowel; these phonological propositions are
+kept distinct from the dictionary's compressed citation.
+The selected navel input remains pwgmc, independently of
+the source ancestor's stage and the annotation confidence
+[@RingeTaylor2014, pp.190-192,268-271].
+
+This tranche closes eight actual bounded analytical reviews,
+not eight settled histories. All eight whole-row causes and
+the two focused causes remain unestablished. There are201
+bounded core rows and192 unreviewed; the complete393-row
+programme, source-backed class census and explanatory synthesis
+remain unfinished. No corpus, stage/context, FST, historical
+registry, baseline, introduction or PDF adoption accompanies
+these annotation receipts.
+
 ## Twenty-fourth alignment: paradigms, identical homonyms and source corrections
 
 Tranche23 is released as5208573f. The next eight rows2118-2125

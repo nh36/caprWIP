@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5011 evidence records,1390 actual consultations and5199
-analytical positions, with442 comparisons and448 rationales. The RT
+There are5057 evidence records,1390 actual consultations and5253
+analytical positions, with444 comparisons and477 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred ninety-three core rows now have individually reconciled, bounded alignment:
-1933-2125. The remaining200 are unreviewed. The second tranche builds on
+Two hundred one core rows now have individually reconciled, bounded alignment:
+1933-2133. The remaining192 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,49 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-fifth tranche completes milk, month, mood, mother, nail,
+name, nave and navel, rows2126-2133, on released24 base75bcc49a.
+All105 inherited analytical identities survive; three previously
+unlinked, image-checked milk/Cercignani records now have individual
+analytical positions in their existing consultation. Twenty-two
+native literal occurrences and24 scoped arguments add46 evidence
+records; five focused positions reuse evidence and29 rationales
+are added. The159 positions link154 distinct records. There are
+119 exact SOURCE-field amendments:105 cells, six local stages,
+four arguments, two page locators and the two fields correcting
+the clipped month index citation. All consultation identities,
+statuses, scopes, targets and applicability owners are unchanged.
+All786 dictionary reviews remain, with1727 dictionary evidence
+records; new native literals are text_checked, not image-certified.
+
+Fulk's original month index is independently rechecked as
+*mēnōþi*, not the clipped *mēnōþ*. Its final-i dative precursor
+is not a month nominative. The corresponding milk index likewise
+points to a dative, with the body's ending alternative retained.
+Moon/month, masculine/neuter name, identical nominative/accusative
+tokens and mother suffixes/whole words remain separately classified
+[@Fulk2018, pp.79-81,388; @Ringe2017, pp.306-308,312-313;
+@RingeTaylor2014, pp.11,59,79,143-145,163-164,300-301,381-383].
+
+The focused milk comparison separates continental u-conditioning
+from conditional oblique i-triggers, without asserting exclusive
+opposition or a universal PGmc date. The focused name genealogy
+comparison is substantive but unexplained. Both focused causes
+and all eight whole-row causes remain unestablished. Navel's
+selected pwgmc input remains distinct from the source's explicit
+PNWGmc ancestor
+[@Cercignani1979, pp.75-76; @Fulk2018, pp.68-69,79-81;
+@Kroonen2013, pp.382-383; @Ringe2017, pp.56-57,91-95;
+@RingeTaylor2014, pp.190-192,253-254,270-271].
+
+The new exact receipts are
+`reading_accountability/alignment-2126-2133-amendments.tsv` and
+`reading_accountability/alignment-2126-2133-occurrences.tsv`.
+Never execute/import the persisted tranche25 candidate again.
+Current SOURCE, receipts and regressions are authority. No corpus,
+input, stage/context, FST, scientific-baseline or publication
+adoption is included; the full393-row programme remains open.
 
 The twenty-fourth tranche completes malt, man, boundary march,
 mast, time/meal, mean, meed and might, rows2118-2125, on
