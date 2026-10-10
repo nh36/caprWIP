@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,146 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5664 evidence
-records,1393 actual consultations,5909 positions,466 comparisons and825
+393 applicability screens per source. The database contains5726 evidence
+records,1393 actual consultations,5975 positions,468 comparisons and855
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:289 core rows are bounded and104 unreviewed.
+explanation remain ongoing:297 core rows are bounded and96 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,298 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-seventh alignment: derivational direction, glide histories and nonavian comparanda
+
+Rows2222-2229 cover stork, storm, straw, stream, stretch, strew, string
+and stud. All82 inherited analytical identities are individually
+reconciled against complete relevant held arguments. Thirty-six native
+occurrences and26 scoped processes add62 evidence records;148
+positions link144 records because four focused positions reuse their
+actual source arguments. Ninety-three reversible SOURCE fields cover82
+cells, ten explicit stage repairs and one root-kind repair. No
+consultation, status, target, scope or applicability owner changes.
+All786 dictionary identities/statuses survive, with2052 dictionary
+evidence records. Thirty added rationales are source-explicit position
+support, not30 explanations of disagreement.
+
+Two focused questions are substantive: the local direction of derivation
+between straw and strew, and the phonetic/underlying premises of strew's
+glide history. Their causes remain unestablished, as do all eight
+whole-row causes. The changing annotation counts do not authorize
+selected-input adoption or reopening released glide, palatal or knee
+science. Every diplomatic token, including native corruptions and earlier
+certified characters, remains separately recoverable.
+
+### Stork: stiffness comparanda do not become an avian reconstruction
+
+Orel's *sturkaz* explicitly cites OE *storc* 'stork'. His explanation
+appeals to an original stiff bird or bird standing without moving and
+derives it from *sterkanan*. The actual verb body compares coagulation,
+Slavic guarding and probably Hittite ailment, while doubting the
+Lithuanian protect connection. Those are parts of the proposed semantic
+account, not synonymous glosses that prove every compared form was an
+avian noun. A separate *sturknōjanan* is explicitly derived from
+*sturkaz* in its unattested original sense. That direction must remain
+beside the bird-name derivation rather than be silently reversed to
+make one linear history [@Orel2003, pp.375,384].
+
+Kroonen's *sturki-* means strength, not stork. The lost stiffness verb
+*sterkan-* is substantiated by the inchoative *sturknan-*; the strong
+adjective *starka-* is an o-grade formation in the wider family. His
+rejection of a directly ablauting *sterka-* appeals to the expected
+Nordic breaking outcome *stjarkr*. Magnússon's reported *storkr* and
+plural *sterkir* concern the strong adjective's proposed u-stem
+paradigm, not a bird nominative and plural. Their superficial resemblance
+to the English label cannot overcome the explicit meaning and argument
+[@Kroonen2013, pp.474-475,488].
+
+Accordingly all seven inherited Kroonen positions are comparanda, with
+the rejected adjective and reported Nordic cells independently marked.
+This corrects citation matching without deleting the historical positive
+consultation or inventing a missing Kroonen bird headword. The selected
+avian stress, ending and deeper formation remain unproved by those
+comparators [@Orel2003, p.384; @Kroonen2013, pp.474-475,488].
+
+### Storm: related bases are not automatically exclusive etymologies
+
+Orel derives the storm noun *sturmaz* from *sturjanan* 'stir, move',
+whose body compares Sanskrit motion verbs. His separate *sturmjanan*
+is a secondary storm verb derived from the noun. The noun's source and
+its derivative therefore have opposite local roles; merely collecting
+their common onset does not recover a selected noun ending
+[@Orel2003, p.384].
+
+Kroonen describes the mo-stem *sturma-* as possibly derived from
+*staurjan-* 'disturb, destroy'. That factitive belongs to *staura-*;
+its deeper etymology is uncertain, and a Latvian connection may be a
+loan. The same discussion separately cites *sturjan-* and
+*(ga-)sturja-* 'stir, move', while *sturmjan-* is again a noun-based
+storm verb. Thus the full-grade factitive proposal is qualified, and
+its relation to the stir family cannot be treated as an explicit
+rejection of Orel's entire family. There is no manufactured focused
+opposition here: the exact derivational/ablaut bridge and deeper root
+remain the missing premises [@Kroonen2013, pp.476,488].
+
+### Straw: genuine local derivational reversal is separate from levelling
+
+Orel quotes neuter *strawan*, with native OE *streáw* 'straw'.
+The Gothic funeral-feast reflex has a different gender and meaning;
+reported loan and strawberry-etymology proposals retain their
+attribution. His original 'something spread out' meaning is revealed
+by the derivative *strawjanan*, which he explicitly derives from the
+noun [@Orel2003, p.381].
+
+Kroonen instead derives *strawa-* as a collective from *straujan-*.
+The latter is a European causative/intensive, with PIE
+*strou-eie-* and a root back-formed from the nasal-present family.
+These are genuinely opposite local noun/verb directions, not a
+notational difference between a whole word and a stem. The focused
+case preserves both warrants, but neither source supplies a named
+rebuttal or a complete explanation of why the other chose its
+direction. A cyclic-looking family narrative is not repaired by
+choosing whichever author better matches the current input
+[@Kroonen2013, pp.483-484; @Orel2003, p.381].
+
+RT describes endingless nom.-acc. straw with a long diphthong beside
+a short pre-ending *straw-* stem, then reciprocal levelling yielding
+the attested invariant forms. The compound strawberry preserves a
+relic of the endingless type. His knee and custom examples are
+comparison nouns, not additional straw cells: knee's singular and
+plural antecedents are independently quoted, and possible long-vowel
+levelling into its inflected stem remains metrically elusive. This
+research records the published argument without adopting levelling
+in a regular sound-law cascade or reopening the released knee cell
+[@RingeTaylor2014, pp.172-175,387].
+
+### Stream: an incorporated corrigendum is not continuing disagreement
+
+Orel's masculine *straumaz* is an IE mo-formation from flow, with
+Greek, Thracian, Albanian, Irish and Baltic/Slavic comparisons.
+The native *sroumo* body token is retained beside the certified
+hyphenated quotation. Kroonen's *strauma-* is direct stream
+evidence, not merely a family comparator; his Baltic feminine and
+Greek men-stem are different formations, not independently supplied
+masculine nominative endings [@Orel2003, pp.380-381;
+@Kroonen2013, p.483].
+
+Ringe explicitly dates sr-to-str excrescence to the PGmc development
+and gives stream and dawn/Easter as certain examples. Sister is not
+certain because analogy with daughter, and possibly mother under an
+earlier ordering, could supply its dental. His actual PIE stream
+antecedent is *srówmos*, and *hréwei* is a reconstructed Greek
+finite flow comparator, not a stream noun
+[@Ringe2017, pp.166-167].
+
+RT's older-volume corrigendum restores the omitted rule and prints
+native *sréwmos*. The newer Ringe account already incorporates
+the correction, so the omission must not be presented as a live
+inter-author dispute or two independent votes. Nor is the older
+native e silently repaired to the newer o: an exact glyph correction
+would need its own original-page basis. The actual OE stream
+citation on172 remains a citation, not an invented other inflected
+cell. Root, finite comparator, derivational suffix and selected
+stress/ending remain separate [@RingeTaylor2014, pp.172,515;
+@Ringe2017, p.167].
+
+### Stretch: present, innovative past and indirect family evidence
+
+Orel explicitly derives *strakkjanan* from *strak(k)az*
+'tight, strict, hard'. The optional second k belongs to the
+adjective citation, while WGmc substantivization supplies a
+different use. His native OE *strac* is not the stretch
+infinitive. Reported stretch-root and *rakjanan* proposals are
+not silently promoted to additional author endorsements
+[@Orel2003, p.380].
+
+Kroonen's string/strong/tightening family is relevant but does
+not quote selected *strakkjan-*. The i-stem string noun, bind-tight
+factitive, strong adjective and inferred strong verb are separate
+formations; *strunka-* could be an old participle, not a
+categorical alternative stretch infinitive
+[@Kroonen2013, p.483].
+
+RT quotes OE *streccan*, *streahte* and *streaht* as separate
+present, past and participle cells. His innovative-past account
+continues beyond the roster: apparent OHG parallels are
+etymologically ambiguous because southern syncope can create
+similar forms. He proposes an origin in the wake stative/causative
+family, with an uncertain participial-transfer suggestion reported
+from Jasanoff, and subsequent analogical extension. This is
+source-attributed morphology, not a grammatical CAPR sound law
+[@RingeTaylor2014, pp.97-99].
+
+The separate mutation example gives PWGmc *strak’k/an*,
+native *streeccan* and OE *streccan*. Prime/slash marks and
+the native double-e spelling are retained; the intermediate is
+not silently a phonemic long vowel. The palatalized geminate
+provides an actual mutation premise, but does not assemble
+every selected PGmc vowel, ending and stress
+[@RingeTaylor2014, pp.237-238].
+
+### Strew: two glide warrants, then distinct finite hiatus histories
+
+Orel's noun-derived *strawjanan* cites OE *streawian* 'strew',
+not selected *strīeġan*. His ON long-e formation is expressly
+new and preterite-based. Kroonen's actual OE *strēowian*
+likewise cannot be silently substituted for the selected
+class-I-looking infinitive. His causative/intensive genealogy
+and back-formed root from the nasal-present family argue that
+the relevant replacement began in PIE, not only Germanic
+[@Orel2003, p.381; @Kroonen2013, pp.483-484].
+
+Ringe's OE-only strong *streġdan* belongs to a different
+formation and his anomalous class-III discussion. It remains
+attestation/family evidence in the existing discussion-only
+consultation, without a fabricated PGmc strong infinitive
+[@Ringe2017, pp.253-255].
+
+Fulk doubts the conventional awj-to-geminate-to-diphthong
+derivation. Maintaining consonantal w is implausible in his
+account, and the proposed *strauwjan* should give
+*strīewjan* and *strīewan*, not EWS *striegan*.
+He instead offers a modal PGmc *straujanaⁿ* alternative.
+His broader Verschärfung account distinguishes glide doubling,
+diphthongal analogy and later fortition; quoting RT's objection
+to dismantling there does not endorse RT's particular strew
+chain. The WGmc gemination chapter and its continued notes
+retain the awj exception and sonority difficulties
+[@Fulk2018, pp.71-72,117-119,126-128].
+
+RT explicitly argues that gemination was reversible because
+it preserved contrasts and underlying forms. He proposes
+PGmc *strawjanq*, PWGmc *strawwan*, pre-OE *straujan*
+and *stréajan*, then Anglian *strégan*. The identical
+*straujan* token on53 is labelled Gothic: it is a comparator,
+not the same pre-OE occurrence on173. The focused glide case
+compares actual phonetic/underlying warrants, not merely two
+matching endpoints. Their divergence is substantive but its
+complete cause remains unestablished; no direct named Fulk
+rebuttal of this specific RT paragraph is manufactured
+[@RingeTaylor2014, pp.53,173; @Fulk2018, pp.71-72].
+
+RT separately quotes PGmc past3sg *strawidé* and participle
+*strawidaz*, followed by mutated forms, w-loss and hiatus.
+Early Mercian *streide*, Northumbrian *strédun* and poetic
+*stréd* are not infinitive variants; the participle is
+scanned disyllabically in the cited verse. WS *streowian*
+is remodelling, and southwest Mercian *strén* 'couch' is
+a derivative. The loss of w follows mutation and precedes
+general syncope in OE; similar northern developments are
+parallel rather than proof of a PWGmc event
+[@RingeTaylor2014, pp.258-260].
+
+The contraction paragraph distinguishes sea/law and
+recognize/betray/show, where apocope or syncope may compete,
+from new/merrymaking/flock/strew/call, whose long vowels
+require contraction. A single episode after h-loss is
+conditional; identical and unlike hiatus may have contracted
+at different times. These eleven inherited318 positions
+are individually classified, not collected as one strew
+paradigm or a single secure chronology
+[@RingeTaylor2014, pp.317-319].
+
+### String: explicit i-trigger does not normalize every velar
+
+Orel's certified *stranʒiz* and native *strangiz*
+remain separate quotations. His strong adjective has native
+z beside the earlier certified sign, and the possible
+deverbative account belongs to that adjective, not the
+string noun's exact ending. Kroonen's masculine i-stem and
+bind-tight factitive belong to the same family but are
+different cells and formations [@Orel2003, p.380;
+@Kroonen2013, p.483].
+
+RT's PNWGmc *strangiz*, intermediate *strangi* and
+OE *streng* supply an actual i-triggered history. The
+intermediate's dating is not inferred from its running
+head. This supports the vowel development without proving
+selected stress or a global g/z/ʒ notation equivalence;
+the original certified glyphs and their confidence are
+not changed to make an inventory story easier
+[@RingeTaylor2014, pp.208-210].
+
+### Stud: horse flock, not a post or fastener
+
+Orel's *stōđan* and native *stōdan* concern OE
+*stōd* 'herd of horses'. The neuter noun and feminine
+OS/OHG reflexes remain distinguished; the dialectal IE
+stand-based formation and the reported Slavic loan proposal
+are different claims. The native dental does not replace
+the earlier certified barred dental [@Orel2003, p.379].
+
+Kroonen probably derives the flock noun from the stand
+root with a dhh1 suffix, using parallel flock formations.
+Borrowing from Baltic or Slavic is theoretically possible,
+but he finds no direct reason for it. That is neither
+endorsement of a loan nor a categorical impossibility
+claim. The native suffix transcription is retained without
+assembling an attributed full selected input
+[@Kroonen2013, p.481].
+
+### Closeout and non-adopting limits
+
+The immutable preparation and exact93-field receipt permit
+reconstruction of the inherited5664 forms. The occurrence
+receipt certifies36 whole-token native spans as text-checked,
+not newly image-certified. Outside-tranche analytical
+identities, historical consultations, earlier receipts and
+the original46 scientific-owner hashes remain protected.
+No scope, target or applicability receipt is needed because
+none of those owners changes.
+
+The watchlist is analytical and non-adopting: stork needs
+avian rather than strong-adjective support; straw needs the
+derivational-direction warrant separately from reciprocal
+levelling; strew needs a source-sensitive phonetic/underlying
+comparison separately from finite hiatus chronology.
+Those questions are bounded by the arguments just read,
+not invitations to rewrite current inputs, add analogical
+sound laws or rebaseline successful outputs
+[@Orel2003, pp.381,384; @Kroonen2013, pp.474-475,483-484,488;
+@Fulk2018, pp.71-72,117-119; @RingeTaylor2014, pp.53,173,258-260,318,387].
+The full393-row alignment, conditioning census, explanatory
+synthesis and specialist agenda remain unfinished.
 
 ## Thirty-sixth alignment: semantic warrants, homonym exclusion and actual paradigm cells
 

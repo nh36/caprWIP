@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5664 evidence records,1393 actual consultations and5909
-analytical positions, with466 comparisons and825 rationales. The RT
+There are5726 evidence records,1393 actual consultations and5975
+analytical positions, with468 comparisons and855 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred eighty-nine core rows now have individually reconciled, bounded alignment:
-1933-2221. The remaining104 are unreviewed. The second tranche builds on
+Two hundred ninety-seven core rows now have individually reconciled, bounded alignment:
+1933-2229. The remaining96 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,51 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-seventh tranche completes stork, storm, straw, stream,
+stretch, strew, string and stud, rows2222-2229, from released
+fbfeb9c94a145cddf63e76be995835c475391e7a. All82 inherited analytical
+identities are individually reconciled. Thirty-six native occurrences
+and26 processes add62 records;148 positions link144 records.
+Ninety-three exact SOURCE fields cover82 cells, ten explicit dates
+and one root-kind repair. No consultation/status/target/scope/
+applicability owners change. All1393 consultations and786 dictionary
+identities/statuses survive, with2052 dictionary evidence records.
+Thirty new rationales supply position support, not inter-author causes.
+
+Stork's strength/strong-adjective comparanda are not avian citations;
+reported Nordic strong forms do not become bird plurals. Storm's
+qualified factitive and stir families are not fabricated exclusive
+etyma [@Orel2003, pp.375,384; @Kroonen2013, pp.474-476,488].
+Straw's noun-to-verb versus verb-to-collective direction is a
+substantive but unexplained focused case, separate from endingless/
+pre-ending levelling and knee/custom comparanda
+[@Orel2003, p.381; @Kroonen2013, pp.483-484;
+@RingeTaylor2014, pp.172-175,387].
+Stream's older-volume excrescence correction is already incorporated
+in Ringe2017; native e/o antecedents and Greek finite comparanda
+are not silently merged [@Ringe2017, pp.166-167;
+@RingeTaylor2014, pp.172,515].
+
+Stretch present, past and participle cells retain their actual
+quotation and innovative-past argument, while Kroonen's string
+family remains indirect evidence [@Orel2003, p.380;
+@Kroonen2013, p.483; @RingeTaylor2014, pp.97-99,237-238].
+Strew's early-diphthong versus reversible-gemination warrants
+form a substantive but unexplained focused case. Gothic53 and
+pre-OE173 identical spellings, finite past/participle hiatus,
+remodelled classII and strong-family infinitives remain separate
+[@Fulk2018, pp.71-72,117-119,126-128;
+@RingeTaylor2014, pp.53,173,258-260,317-319;
+@Ringe2017, pp.253-255].
+String's explicit i-trigger and native/certified velars remain
+independent; stud is horse-flock, not fastener, with probable
+suffix formation and unmotivated theoretical loan preserved
+[@Orel2003, pp.379-380; @Kroonen2013, pp.481,483;
+@RingeTaylor2014, pp.208-210].
+Both focused causes and all eight whole-row causes remain
+unestablished. No scientific adoption, next-tranche preparation
+or automatic release is included.
 
 The thirty-sixth tranche completes starve, steal, stem, still, stilt,
 stock, stone and stool, rows2214-2221, from released

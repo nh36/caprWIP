@@ -8,6 +8,155 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-seventh alignment checkpoint: stork through stud
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base fbfeb9c94a145cddf63e76be995835c475391e7a on update;36 is committed
+and pushed with independently identical HEAD/remote. Rows2222-2229
+cover stork, storm, straw, stream, stretch, strew, string and stud.
+Immutable preparation pins5664 forms,82 inherited identities and111
+research hashes. Complete37 is authorized; automatic37 release,
+38 preparation and scientific adoption are not. Preparation and
+analytical persistence each occurred once; never recreate the former
+or execute/import the persisted candidate.
+
+### Question
+
+Can all82 identities be individually reconciled without treating
+strength adjectives as stork birds, a Gothic occurrence as pre-OE,
+or finite strew pasts as selected infinitives? Do actual noun/verb
+direction and glide warrants justify focused differences without
+manufactured causes? Lost identities, unreceipted fields, conflated
+native/certified glyphs or confidence-derived dates refute completion.
+
+### Current state
+
+Eight unreviewed alignments, all selected inputs at pgmc,289 previously
+bounded core rows and104 unreviewed. Inherited stork positions contain
+strong-adjective/root comparanda, stream has a family-only direct
+noun and a root marked as an infinitive, and strew318 contains eleven
+separate hiatus comparators/cells. All46 ORIGINAL scientific hashes
+remain protected; no preparation is repinned.
+
+### Diagnosis
+
+Executable census, new traces, private variants and counterfactuals:
+n/a, because no scientific law or selected input is changed.
+No Foma, full Germanic suite, private assay or PDF is run.
+All82 analytical identities survive and are individually reviewed.
+Thirty-six native occurrences and26 processes add62 forms; four
+focused positions reuse processes, yielding148 positions/144 records.
+Native dental/velar, prime/slash, acute, quantity and old certified
+forms coexist. Distinct Gothic53 and pre-OE173 strew tokens are
+not merged merely because their spelling is identical.
+
+### Literature
+
+Complete relevant dictionary bodies/cross-references, grammar
+arguments, paradigms, footnotes and necessary continuations are read.
+New literals are text_checked, not newly image-certified.
+
+| Row | Printed reading scope and issue |
+| --- | --- |
+| Stork2222 | Orel375-376,384; Kroonen474-475,488: bird naming, stiffness root and nonavian strong-adjective cells. |
+| Storm2223 | Orel384; Kroonen476,488: noun, possible factitive base, stir sibling and secondary storm verb. |
+| Straw2224 | Orel381; Kroonen483-484; RT171-175,386-388: local derivational reversal, endingless/pre-ending levelling and knee/custom comparanda. |
+| Stream2225 | Orel380-381; Kroonen483; Ringe166-168; RT171-175,514-516: flow mo-formation, certain sr-excrescence and incorporated corrigendum. |
+| Stretch2226 | Orel380; Kroonen483; RT96-100,237-239: adjective base, indirect string family, actual past/participle and mutation premise. |
+| Strew2227 | Orel381; Kroonen483-484; Ringe253-255; Fulk70-73,117-120,125-128; RT52-54,171-175,247-251,257-261,317-319: conflicting glide warrants and finite hiatus histories. |
+| String2228 | Orel380; Kroonen483; RT208-210: i-stem, factitive, adjective and explicit mutation trigger. |
+| Stud2229 | Orel379; Kroonen481: horse-flock sense, genders, stand-root suffix and qualified loans. |
+
+### Historical analysis
+
+Orel's bird-name derivation and noun-based inchoative retain their
+directions; Kroonen's strength adjective, lost verb and reported
+Nordic u-stem are comparanda, not avian citations
+[@Orel2003, pp.375,384; @Kroonen2013, pp.474-475,488].
+Storm's possible full-grade factitive and stir sibling do not prove
+exclusive opposing roots; the secondary storm verb is separately
+noun-derived [@Orel2003, p.384; @Kroonen2013, pp.476,488].
+Straw/strew local derivation reverses between dictionaries, while
+RT's mutual levelling and knee/custom comparison remain separate
+[@Orel2003, p.381; @Kroonen2013, pp.483-484;
+@RingeTaylor2014, pp.172-175,387].
+
+Ringe2017 already incorporates the older-volume sr-excrescence
+corrigendum. Native sréwmos, newer srówmos and Greek finite flow
+remain separate, not evidence of continuing author opposition
+[@Ringe2017, pp.166-167; @RingeTaylor2014, p.515].
+Stretch infinitive, innovative past and participle have independent
+cells; indirect string-family and uncertain wake-based analogy
+do not assemble selected PGmc endings
+[@Orel2003, p.380; @Kroonen2013, p.483;
+@RingeTaylor2014, pp.97-99,237-238].
+
+Fulk's early-diphthong proposal and counterpredicted EWS outcomes
+differ from RT's reversible-gemination/underlying-form warrant.
+RT's Gothic53 comparator is not pre-OE173; finite past/participle
+w-loss and contraction are not infinitive stages or a secure
+single contraction episode [@Fulk2018, pp.71-72,117-119,126-128;
+@RingeTaylor2014, pp.53,173,258-260,318].
+String's actual i-trigger does not license global g/z/ʒ
+normalization [@Orel2003, p.380; @Kroonen2013, p.483;
+@RingeTaylor2014, pp.208-210].
+Stud is horse flock with probable suffix formation and theoretical
+but unmotivated loan, not fastener or categorical loan rejection
+[@Orel2003, p.379; @Kroonen2013, p.481].
+No source chronology claim is promoted to a canonical edge.
+
+### Verdict
+
+Research disposition: eight individually reconciled bounded
+alignments, two substantive focused cases with unestablished
+causes, and all eight whole-row causes unestablished. Thirty
+rationales support positions, not whole-case explanations.
+Ninety-three exact SOURCE fields comprise82 cells, ten explicit
+stages and one root-kind repair; no inherited diplomatic form,
+comparison string, confidence or verification field changes.
+No consultation/status/scope/target/applicability owners change.
+Registry verdict, corpus/input/context/FST/baseline adoption: none.
+
+### Propagation
+
+Editable forms/coverage/analyses/comparisons/rationales, exact
+SOURCE/occurrence receipts, substantial eight-row commentary,
+README and source-sensitive regressions. Current SOURCE and
+receipts, not the executed candidate, are authority.
+Totals5726 forms,1393 consultations,5975 positions,468
+comparisons and855 rationales;297 bounded and96 unreviewed.
+All786 dictionary reviews remain with2052 evidence records.
+Independent verification preserves5664 inherited forms except93
+exact fields,5827 outside positions,458 unaffected comparisons,
+825 inherited rationales and1369 outside consultations. All104
+untouched research hashes and46 ORIGINAL scientific hashes
+survive;36 native paragraphs/hashes/whole-token spans resolve.
+All420 focused survey/analysis tests pass. Two stale live-total
+expectations were updated without changing historical receipts or
+scientific evidence. All75 new-prose printed-page references and
+nine audit headings pass, as do bibliography and section-locator
+checks. Canonical refresh and independent artifact freshness report
+CONTROL PLANE CLEAN without scientific rebuild. Independent
+post-refresh verification reconfirms every preservation count and
+native span above; alignment refuses96 separately from the unchanged
+RT conventions gap. Whitespace checks pass.
+
+### Residue
+
+No exact selected-cell equivalence, deep etymology or complete
+inter-author cause is adopted. Avian evidence, noun/verb direction,
+glide phonetics/underlying representation, finite hiatus chronology,
+selected endings/stress and native-versus-certified signs remain
+precise non-adopting questions
+[@Orel2003, pp.379-381,384; @Kroonen2013, pp.474-476,481,483-484,488;
+@Fulk2018, pp.71-72; @RingeTaylor2014, pp.53,173,258-260,318,387].
+Full393 alignment, source-backed conditioning census, synthesis/
+watchlist and specialist agenda remain unfinished. No37 release,
+38 start, scientific adoption or publication. Unrelated .DS_Store
+and tmp_probe.foma remain untouched.
+
 ## Thirty-sixth alignment checkpoint: starve through stool
 
 ### Identity
