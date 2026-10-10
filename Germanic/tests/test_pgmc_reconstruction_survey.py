@@ -916,9 +916,9 @@ class ReadingScopeTests(unittest.TestCase):
                 self.assertTrue(case["alignment_limits"])
         self.assertEqual(sum(row["scope"] == "core_triage" and
                              row["alignment_status"] == "bounded_limit"
-                             for row in tables["comparisons"]), 265)
+                             for row in tables["comparisons"]), 273)
         self.assertEqual(len(reviews), 1391)
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(corpus, tables["comparisons"])
 
     def test_both_neuter_does_not_absorb_other_genders_three_or_two(self):
@@ -4024,7 +4024,7 @@ class EighteenthAlignmentTests(unittest.TestCase):
                              ("discussion_only", "evidence_found", "evidence_found"))
         self.assertEqual(len(self.reviews), 1391)
         self.assertEqual(sum(r["source_key"] == "Fulk2018" for r in self.reviews), 145)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
 
 
 class NineteenthAlignmentTests(unittest.TestCase):
@@ -4455,7 +4455,7 @@ class TwentyFirstAlignmentTests(unittest.TestCase):
                 self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                     for p in members))
                 self.assertTrue(case["alignment_limits"])
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_literal_receipts_resolve_actual_paragraphs_and_whole_tokens(self):
@@ -4570,7 +4570,7 @@ class TwentyFirstAlignmentTests(unittest.TestCase):
                              ("discussion_only", "evidence_found", "evidence_found"))
         self.assertEqual(len(self.reviews), 1391)
         self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 786)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
 
 
 class TwentySecondAlignmentTests(unittest.TestCase):
@@ -4601,7 +4601,7 @@ class TwentySecondAlignmentTests(unittest.TestCase):
                 self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                     for p in members))
                 self.assertTrue(case["alignment_limits"])
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_literal_receipts_resolve_native_paragraphs_and_whole_tokens(self):
@@ -4732,7 +4732,7 @@ class TwentySecondAlignmentTests(unittest.TestCase):
     def test_attestations_do_not_manufacture_reconstructions_or_new_consultations(self):
         self.assertEqual(len(self.reviews), 1391)
         self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 786)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
         for row in ("2107", "2108", "2109"):
             self.assertEqual(next(r for r in self.reviews if (r["row_id"], r["source_key"]) ==
                                   (row, "Fulk2018"))["status"], "discussion_only")
@@ -4746,6 +4746,158 @@ class TwentySecondAlignmentTests(unittest.TestCase):
             self.assertFalse(any(r["row_id"] == row and r["source_key"] in
                                  ("Ringe2017", "Fulk2018", "RingeTaylor2014")
                                  for r in self.reviews))
+
+
+class ThirtyFourthAlignmentTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.corpus, cls.sources, cls.forms, cls.reviews = survey.load()
+        cls.tables = survey.load_analysis(survey.ROOT, cls.corpus, cls.forms)
+        cls.members = [p for p in cls.tables["analyses"] if 2198 <= int(p["row_id"]) <= 2205]
+        cls.evidence = {f["evidence_id"]: f for f in cls.forms}
+        cls.cases = {c["comparison_id"]: c for c in cls.tables["comparisons"]}
+        cls.directory = survey.ROOT / survey.DIRECTORY / "reading_accountability"
+
+    def position(self, row, eid):
+        return next(p for p in self.members if (p["row_id"], p["evidence_id"]) == (row, eid))
+
+    def test_individual_identities_and_reciprocal_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (131, 126))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment34-") for p in self.members), 86)
+        for row in map(str, range(2198, 2206)):
+            case = self.cases["core-" + row]
+            members = [p for p in self.members if p["row_id"] == row]
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in members})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in members})
+            self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                             ("bounded_limit", "unestablished"))
+            self.assertTrue(case["alignment_limits"])
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                and survey.analytical.feature_values(p) for p in members))
+
+    def test_exact_reversible_source_annotations(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2198-2205-amendments.tsv")
+        self.assertEqual(len(receipts), 89)
+        self.assertEqual(Counter(r["field"] for r in receipts),
+                         dict(cell=82, asserted_stage=6, argument=1))
+        self.assertEqual(len({(r["evidence_id"], r["field"]) for r in receipts}), 89)
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["source_basis"] and r["printed_pages"])
+        self.assertFalse((self.directory / "alignment-2198-2205-owner-amendments.tsv").exists())
+        shared = [r for r in receipts if r["evidence_id"] == "kroonen-core-2202-1"]
+        self.assertEqual(len(shared), 1)
+        self.assertEqual(shared[0]["field"], "cell")
+        self.assertEqual(shared[0]["new_value"], "strong span verb, intensive from thematic nasal present")
+        self.assertNotIn("fulk-complete-hold-fall-span", {r["evidence_id"] for r in receipts})
+
+    def test_all_native_occurrences_resolve_without_new_certification(self):
+        import hashlib
+        receipts = survey.read_table(self.directory / "alignment-2198-2205-occurrences.tsv")
+        self.assertEqual(len(receipts), 18)
+        self.assertEqual({r["evidence_id"] for r in receipts}, {
+            f["evidence_id"] for f in self.forms
+            if f["evidence_id"].startswith("alignment34-") and f["form_kind"] != "process"})
+        for r in receipts:
+            form = self.evidence[r["evidence_id"]]
+            text = (survey.ROOT / form["basis"]).read_text()
+            sheet = int(r["holding_sheet"])
+            if form["source_key"] == "Ringe2017":
+                block = text.split("\f")[sheet - 1]
+            else:
+                marker = (rf"### PAGE {sheet}\s*\n" if form["source_key"] == "RingeTaylor2014"
+                          else rf"=== page {sheet:03d} ===\s*\n")
+                block = re.split(marker, text, maxsplit=1)[1]
+                block = re.split(r"### PAGE \d+|=== page \d+ ===", block, maxsplit=1)[0]
+            paragraph = [p.strip() for p in re.split(r"\n\s*\n", block) if p.strip()][int(r["paragraph"]) - 1]
+            start, end = int(r["start_char"]), int(r["end_char"])
+            self.assertEqual(paragraph, r["paragraph_text"])
+            self.assertEqual(hashlib.sha256(paragraph.encode()).hexdigest(), r["paragraph_sha256"])
+            self.assertEqual(paragraph[start:end], form["diplomatic_form"])
+            self.assertIn((start, end), {(m.start(), m.end()) for m in re.finditer(
+                rf"(?<![\w*]){re.escape(form['diplomatic_form'])}(?!\w)", paragraph)})
+            self.assertEqual(form["verification"], "text_checked")
+        self.assertEqual(self.evidence["alignment34-snow-ringe-pie-noun"]["diplomatic_form"], "*snóygwhos")
+        self.assertEqual(self.evidence["alignment34-spare-rt-native-imp"]["diplomatic_form"], "sp@r")
+
+    def test_smear_snow_and_sorrow_cells_do_not_collapse(self):
+        self.assertEqual(self.position("2198", "smear-kroonen-verb-stem")["relation_to_row"],
+                         "same_etymon_citation")
+        for eid in ("rt-complete-2198-007", "rt-complete-2198-012", "alignment34-smear-orel-grease"):
+            self.assertEqual(self.position("2198", eid)["relation_to_row"], "same_family")
+        self.assertEqual(self.position("2198", "rt-complete-2198-007")["stage_interpretation"],
+                         "northwest_germanic")
+        self.assertEqual(self.evidence["rt-complete-2198-012"]["form_kind"], "word")
+        self.assertEqual(self.position("2199", "alignment34-snow-ringe-present")["relation_to_row"],
+                         "same_family")
+        self.assertEqual(self.position("2199", "alignment34-snow-fulk-body")["stage_interpretation"],
+                         "unspecified")
+        self.assertEqual(self.evidence["fulk-complete-index-snow"]["diplomatic_form"], "snaiwaz")
+        self.assertEqual(self.evidence["ringe-complete-sorrow-verb"]["asserted_stage"], "pgmc")
+        self.assertEqual(self.position("2200", "ringe-complete-sorrow-verb")["relation_to_row"], "same_family")
+        self.assertIn("following prose calls it a verb", self.evidence["kroonen-core-2200-1"]["cell"])
+
+    def test_soul_origin_cause_and_restored_components_remain_separate(self):
+        case = self.cases["soul-origin-warrants"]
+        self.assertEqual((case["comparability"], case["explanation_status"], case["alignment_status"]),
+                         ("substantive_difference", "unestablished", "bounded_limit"))
+        self.assertFalse(any(r["reason_target"] == "divergence_explanation"
+                             and case["comparison_id"] in survey.ids(r["comparison_ids"])
+                             for r in self.tables["rationales"]))
+        self.assertEqual(self.position("2201", "rt-complete-2201-004")["relation_to_row"],
+                         "same_etymon_other_cell")
+        self.assertEqual(self.evidence["rt-complete-2201-004"]["asserted_stage"], "pgmc")
+        self.assertEqual(self.position("2201", "rt-complete-2201-011")["stage_interpretation"], "pwgmc")
+        for eid in ("rt-complete-2201-007", "rt-complete-2201-012"):
+            self.assertEqual(self.position("2201", eid)["relation_to_row"], "compound_component")
+        self.assertEqual(self.evidence["rt-complete-2201-001"]["diplomatic_form"], "*saiwal6")
+        self.assertEqual(self.position("2201", "orel-core-2201-2")["attribution_status"], "reported")
+        self.assertEqual(self.position("2201", "orel-core-2201-3")["attribution_status"], "reported")
+
+    def test_span_shared_family_and_spar_conditional_cells(self):
+        self.assertEqual(self.position("2202", "kroonen-core-2202-1")["relation_to_row"],
+                         "same_etymon_citation")
+        self.assertEqual(self.position("2203", "kroonen-core-2202-1")["relation_to_row"], "same_family")
+        self.assertEqual(self.position("2203", "rt-complete-2203-001")["relation_to_row"], "same_family")
+        self.assertEqual(self.position("2202", "rt-complete-2202-001")["stage_interpretation"], "pwgmc")
+        self.assertIn("substitute", self.evidence["alignment34-span-fulk-preterite"]["argument"].lower())
+        self.assertIn("bonna", self.evidence["alignment34-span-fulk-preterite"]["argument"])
+        self.assertEqual(next(r for r in self.reviews if (r["row_id"], r["source_key"]) ==
+                              ("2202", "Fulk2018"))["status"], "discussion_only")
+        for eid, relation in (("kroonen-core-2204-4", "same_etymon_citation"),
+                              ("kroonen-core-2204-5", "same_etymon_other_cell")):
+            p = self.position("2204", eid)
+            self.assertEqual((p["relation_to_row"], p["attribution_status"]), (relation, "conditional"))
+        self.assertEqual(self.evidence["kroonen-core-2204-4"]["diplomatic_form"], "*sparō")
+        self.assertEqual(self.evidence["kroonen-core-2204-5"]["diplomatic_form"], "*sparraz")
+        self.assertEqual({r["source_key"] for r in self.reviews if r["row_id"] == "2204"},
+                         set(survey.CORE_SOURCES))
+
+    def test_spare_ditto_predictions_and_input_are_independent(self):
+        receipts = survey.read_table(self.directory / "alignment-2198-2205-amendments.tsv")
+        receipt = next(r for r in receipts if r["evidence_id"] == "rt-complete-2205-017"
+                       and r["field"] == "argument")
+        self.assertIn("ditto", receipt["new_value"].lower())
+        self.assertEqual(self.position("2205", receipt["evidence_id"])["attribution_status"], "illustrative")
+        for eid in ("rt-complete-2205-003", "rt-complete-2205-008"):
+            p = self.position("2205", eid)
+            self.assertEqual((p["stage_interpretation"], p["attribution_status"]),
+                             ("northwest_germanic", "conditional"))
+        for eid in ("rt-complete-2205-014", "rt-complete-2205-015"):
+            p = self.position("2205", eid)
+            self.assertEqual((p["relation_to_row"], p["stage_interpretation"], p["attribution_status"]),
+                             ("same_etymon_other_cell", "unspecified", "conditional"))
+        for eid in ("alignment34-spare-rt-native-imp", "alignment34-spare-rt-native-past"):
+            self.assertEqual(self.position("2205", eid)["stage_interpretation"], "oe")
+        case = self.cases["stem-spare-premised"]
+        self.assertEqual(case["comparability"], "premised_equivalence")
+        self.assertEqual(case["alignment_status"], "bounded_limit")
+        self.assertEqual(len(survey.ids(case["analysis_ids"])), 2)
+        row = next(r for r in self.corpus if r["row_id"] == "2205")
+        self.assertEqual((row["proto"], row["protoform"], row["input_stage"]),
+                         ("*sparēną", "*spárōjaną", "preoe"))
 
 
 class ThirtyThirdAlignmentTests(unittest.TestCase):
@@ -4887,7 +5039,7 @@ class ThirtySecondAlignmentTests(unittest.TestCase):
             self.assertTrue(case["alignment_limits"])
             self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                 and survey.analytical.feature_values(p) for p in members))
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_exact_reversible_source_annotations(self):
@@ -5019,7 +5171,7 @@ class ThirtyFirstAlignmentTests(unittest.TestCase):
             self.assertTrue(case["alignment_limits"])
             self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                 and survey.analytical.feature_values(p) for p in members))
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_exact_reversible_source_fields(self):
@@ -5802,7 +5954,7 @@ class TwentySeventhAlignmentTests(unittest.TestCase):
             self.assertEqual(self.position("2149", f"kroonen-core-2149-{n}")["relation_to_row"], "same_etymon_other_cell")
         self.assertEqual(self.evidence["alignment27-raven-rt-late"]["diplomatic_form"], "hreefen")
         self.assertEqual(self.evidence["alignment27-raven-rt-mn"]["diplomatic_form"], "hreemn")
-        self.assertEqual((len(self.forms), len(self.reviews)), (5522, 1391))
+        self.assertEqual((len(self.forms), len(self.reviews)), (5565, 1391))
 
 
 class TwentySixthAlignmentTests(unittest.TestCase):
@@ -5836,7 +5988,7 @@ class TwentySixthAlignmentTests(unittest.TestCase):
                 self.assertTrue(case["alignment_limits"])
                 self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                     for p in members))
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_literal_receipts_resolve_whole_tokens_independently(self):
@@ -5965,8 +6117,8 @@ class TwentySixthAlignmentTests(unittest.TestCase):
             reasons = [r for r in self.tables["rationales"] if cid in survey.ids(r["comparison_ids"])]
             self.assertTrue(reasons)
             self.assertTrue(all(r["reason_target"] == "position_support" for r in reasons))
-        self.assertEqual((len(self.forms), len(self.reviews)), (5522, 1391))
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual((len(self.forms), len(self.reviews)), (5565, 1391))
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
 
 
 class TwentyFifthAlignmentTests(unittest.TestCase):
@@ -6002,7 +6154,7 @@ class TwentyFifthAlignmentTests(unittest.TestCase):
                 self.assertTrue(case["alignment_limits"])
                 self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                     for p in members))
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_new_literal_receipts_independently_resolve_native_whole_tokens(self):
@@ -6125,7 +6277,7 @@ class TwentyFifthAlignmentTests(unittest.TestCase):
     def test_actual_reviews_and_unestablished_causes_are_not_new_votes(self):
         self.assertEqual(len(self.reviews), 1391)
         self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 786)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
         for cid in ("milk-u-and-inflected-triggers", "name-root-and-collective-history"):
             case = self.cases[cid]
             self.assertEqual(case["explanation_status"], "unestablished")
@@ -6163,7 +6315,7 @@ class TwentyFourthAlignmentTests(unittest.TestCase):
                 self.assertTrue(case["alignment_limits"])
                 self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                     for p in members))
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_literal_receipts_resolve_whole_tokens_not_substrings(self):
@@ -6318,7 +6470,7 @@ class TwentyFourthAlignmentTests(unittest.TestCase):
         self.assertIn("conditional", self.evidence["alignment24-might-rt-endpoint"]["argument"])
         self.assertEqual(len(self.reviews), 1391)
         self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 786)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
         for row in ("2118", "2121", "2123"):
             self.assertFalse(any(r["row_id"] == row and r["source_key"] in
                                  ("Ringe2017", "Fulk2018", "RingeTaylor2014") for r in self.reviews))
@@ -6353,7 +6505,7 @@ class TwentyThirdAlignmentTests(unittest.TestCase):
                 self.assertTrue(case["alignment_limits"])
                 self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
                                     for p in members))
-        with self.assertRaisesRegex(survey.analytical.AnalysisError, "128"):
+        with self.assertRaisesRegex(survey.analytical.AnalysisError, "120"):
             survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
 
     def test_all_literal_receipts_resolve_native_whole_token_occurrences(self):
@@ -6431,7 +6583,7 @@ class TwentyThirdAlignmentTests(unittest.TestCase):
                          "illustrative")
         self.assertEqual(len(self.reviews), 1391)
         self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 786)
-        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1940)
+        self.assertEqual(sum(f["source_key"] in survey.CORE_SOURCES for f in self.forms), 1964)
 
     def test_conditional_lust_stage_and_following_u_are_independent(self):
         p = self.position("2115", "orel-core-2115-4")

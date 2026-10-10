@@ -8,6 +8,164 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-fourth alignment checkpoint: smear through spare
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base e875f0483ba8e0c793d420653ae63a0eaac43121 on update, independently
+verified pushed for33. Rows2198-2205 cover smear, snow, sorrow, soul,
+span verb, span noun, spar and spare. Immutable preparation pins5522
+forms,86 inherited analytical identities and103 research hashes. The user
+authorizes complete34, not automatic34 release or35 preparation.
+Persistence occurred once; never execute/import the persisted candidate
+or recreate preparation.
+
+### Question
+
+Can all86 identities retain their actual attribution, date, cell and
+shared-link responsibilities after complete source reading? Do nominal
+and verbal relatives, restored versus regular endings, conditional
+paradigms and native glyphs survive without becoming selected quotations?
+Lost identities, unreceipted SOURCE changes, fabricated consultations,
+title-derived dates or confidence-driven stage changes would refute
+completion. A focused warrant difference must not certify a whole-row cause.
+
+### Current state
+
+All eight core alignments were unreviewed. The selected span noun is
+*spanne* with pgmc input *spánnai*, not the dictionary verb infinitive;
+spare's citation *sparēną* differs from preoe input *spárōjaną*.
+The other six selected input labels are pgmc. These encoding choices
+do not independently date author forms. Two existing spare focused stem
+positions and their segmentation rationale are retained. All original46
+scientific-owner hashes remain protected.
+
+### Diagnosis
+
+Executable census, new traces, counterfactuals and Foma: n/a, because no
+executable history is changed. No private assay or publication is claimed.
+Individual source witnesses distinguish smear/grease/ointment, snow
+noun/verb/present, sorrow noun/care verb/stative, soul nominative/genitive,
+span infinitive/lure/nominal dative, spar n-cells and spare adjective/
+classIII/classII forms. Native terminal6, wh, and sp@r remain diplomatic
+text; new text_checked records do not inherit image certification.
+
+### Literature
+
+Existing survey/commentary, immutable packets and earlier receipts provide
+the evidence and method controls. Complete relevant entries, tables,
+footnotes and necessary continuations are read, including the actual
+smear noun predecessor, snow verb cross-reference, soul Auslautgesetze,
+Fulk classVII argument and RT northern-relic exclusions.
+
+| Row | Printed reading scope and principal issue |
+| --- | --- |
+| Smear2198 | Orel353-354; Kroonen458; RT183,248,259-261: noun base, unbroken ir, wij/wj and ointment w-loss. |
+| Snow2199 | Orel355-356,358; Kroonen460,462; Ringe128-129; Fulk152-155,388; RT171: nominal/verbal grades, labiovelar origin and restored w. |
+| Sorrow2200 | Orel388; Kroonen493-494; Ringe288-290; RT27-28: noun/verb/stative, internal noun-heading/prose mismatch and lowering. |
+| Soul2201 | Orel314; Kroonen423; RT55-59,171,264-266,329-331: origin warrants, restored nominative, actual genitive and epenthesis. |
+| Span verb2202 | Orel361-362; Kroonen465; Fulk267-270,289-291; RT126-128: intensive/lure, innovative preterite, substitute reflex and membership policy. |
+| Span noun2203 | Orel362; Kroonen465; RT127-128: feminine/neuter relatives versus selected nominal dative; shared verbal evidence. |
+| Spar2204 | Orel363; Kroonen466: conditional single/geminate n-cells, older precursors and ME versus OE citation. |
+| Spare2205 | Orel362; Kroonen465; RT161-163,190-192,218-220,366-368: ēn citation, adjective semantics, classIII alternants and classII transfer. |
+
+### Historical analysis
+
+Smear's general Anglian monophthongization explanation is explicitly
+insufficient for unbroken ir; neither noun base nor ointment w-loss settles
+that dialect alternative [@RingeTaylor2014, pp.183,248,259-261;
+@Orel2003, pp.353-354; @Kroonen2013, p.458].
+Snow's nominal o-grade and verbal finite grade remain separate; Fulk's
+rare regular snā and usual restored w qualify the selected target history
+[@Ringe2017, pp.128-129; @Fulk2018, pp.152-155].
+Sorrow's reconstructable PGmc stative and nominal base have explicit
+dates, independent of confidence. Kroonen's noun heading and verb prose
+are retained as an internal inconsistency, not corrected by inference
+[@Ringe2017, pp.288-290; @Kroonen2013, pp.493-494].
+
+Soul's sea/lake derivation and unknown/reported non-IE/conditional Baltic
+arguments support a focused substantive comparison, but no source names
+the cause of their divergence. Native gender inconsistencies remain
+[@Orel2003, p.314; @Kroonen2013, p.423].
+Explicit restoration of nominative u, genitive cells, syncope/apocope and
+epenthesis are separate propositions; the two *-u records are components
+[@RingeTaylor2014, pp.55-59,265,329-331].
+Span's dental-loss intensive and single-n lure do not identify the noun
+dative; the Frisian summon substitute is not a span reflex, and the
+PWGmc roster admits accidental older attestation gaps
+[@Kroonen2013, p.465; @Orel2003, pp.361-362;
+@Fulk2018, pp.267-270,289-291; @RingeTaylor2014, pp.126-128].
+
+Spar's probable n-paradigm retains single-r nominative/geminate genitive;
+ME citation does not certify the selected OE word
+[@Kroonen2013, p.466; @Orel2003, p.363].
+Spare's conditional a alternant belongs to the explicit PNWGmc group.
+The219 ditto marks repeat an Ojan timing note, not uncertainty;
+the367 actual relics and expected starred cells remain distinct.
+Adjective derivation and semantic borrowing do not date the selected
+preoe ōjan input [@RingeTaylor2014, pp.161-163,190-192,218-220,366-368;
+@Orel2003, p.362; @Kroonen2013, p.465].
+No canonical chronology edge is promoted. Source analogies are recorded
+without adopting grammatical conditioning in CAPR sound laws.
+
+### Verdict
+
+Research disposition: all eight rows individually aligned with precise
+bounded limits. No SC/Registry-verdict is fabricated. Soul's focused
+origin cause and all eight whole-row causes remain unestablished.
+The existing spare stem comparison remains premised_equivalence with its
+limited interpretation, not dated whole-word agreement or input adoption.
+Corpus, stage/context, FST and scientific baseline owners are unchanged.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, two exact receipt
+tables, substantial page-cited commentary/README and this nine-heading
+audit persist. Eighteen native occurrences and25 scoped processes add43
+records; two focused positions reuse evidence and27 rationales are added.
+Exact89 SOURCE fields cover82 cells, six dates and one argument; four
+shared reuse decisions do not overwrite primary SOURCE descriptions.
+Totals5565 forms,1391 consultations,5804 positions,463 comparisons and
+777 rationales;273 bounded/120 unreviewed. The131 positions link126 records.
+All786 dictionary consultations/statuses survive with1964 dictionary records.
+
+Independent current-SOURCE verification preserves5522 inherited forms
+except89 exact receipted fields,5673 outside positions,453 unaffected
+comparisons,750 inherited reasons,1364 outside consultations and96
+unaffected research hashes. All46 ORIGINAL scientific hashes remain
+unchanged; all18 native paragraphs/hashes/whole-token Unicode spans
+resolve. No persisted candidate is imported for verification.
+All395 focused survey/analysis tests pass. The initial cumulative
+loan-hypothesis query omitted spare's newly recorded adjective-borrowing
+argument; only the expected qualifying case list was updated, with an
+explicit guard that its whole-row cause remains unestablished. The
+initial new shared-cell test incorrectly expected no primary span-verb
+clarification; it now verifies the single exact receipt and the independent
+nominal family link rather than changing SOURCE to satisfy the test.
+Canonical refresh and independent artifact check report CONTROL PLANE
+CLEAN without scientific rebuild. Bibliography, section locators, all74
+new-prose printed-page references, nine audit headings and whitespace pass.
+Post-refresh independent verification reconfirms the preservation counts,
+native spans and separate refusals: alignment120, unchanged RT conventions.
+Deterministic query evidence is session
+pgmc-two-hundred-seventy-three-alignments-query-results.txt.
+No publication or Foma rebuild is claimed.
+
+### Residue
+
+Smear selected wij/stress/ending and dialect ancestry, snow restored
+versus direct nominal history, sorrow root/formation weighting, soul
+genealogy and exact selected suffix, span nominal dative/deeper
+membership, spar paradigm generalization and spare original/relic
+paradigm weighting remain bounded
+[@Orel2003, pp.314,353-354,355-356,361-363,388;
+@Kroonen2013, pp.423,458,460,462,465-466,493-494;
+@RingeTaylor2014, pp.126-128,183,265,366-368].
+Full393 alignment, source-backed conditioning census, synthesis/watchlist
+and specialist dispatch remain unfinished. Tranche34 stays uncommitted;
+no35 preparation, scientific adoption, introduction or PDF is included.
+
 ## Thirty-third alignment checkpoint: sing through slime
 
 ### Identity

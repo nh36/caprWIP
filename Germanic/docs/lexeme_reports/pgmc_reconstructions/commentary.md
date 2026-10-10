@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5522 evidence
-records,1391 actual consultations,5759 positions,462 comparisons and750
+393 applicability screens per source. The database contains5565 evidence
+records,1391 actual consultations,5804 positions,463 comparisons and777
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:265 core rows are bounded and128 unreviewed.
+explanation remain ongoing:273 core rows are bounded and120 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,242 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-fourth alignment: restored cells, related formations and qualified paradigms
+
+Rows2198-2205 are smear, snow, sorrow, soul, span verb, span noun, spar
+and spare. All86 inherited analytical identities are individually reconciled,
+including spare's two existing focused stem positions. Eighteen native
+occurrences and25 scoped arguments add43 records;89 exact reversible
+SOURCE fields cover82 cells, six explicit dates and one argument. Four
+reuse decisions do not overwrite the primary SOURCE description a second time.
+The selected fields, historical input stages, contexts and executable
+histories are unchanged. These are eight completed bounded alignments,
+not eight adopted or fully recovered ancestral paradigms.
+
+### Smear: the noun base and the unbroken dialect are different questions
+
+Orel's *smerwjanan is a weak smear verb derived from the grease nouns
+*smerwan and *smerwōn. The preceding noun entry supplies Tocharian and
+Irish comparisons; the following ointment formation belongs to the family,
+not to the selected infinitive. Its native cross-reference spelling is
+retained rather than silently used to replace the actual verb quotation.
+Kroonen likewise supplies a butter/grease wa-stem and explicitly prints
+the incidental verb *smerwjan-, citing OE *smierwan*. Reading the complete
+noun entry therefore resolves the inherited uncertain lexical relationship
+of the verb, without turning the noun into a selected verbal cell
+[@Orel2003, pp.353-354; @Kroonen2013, p.458].
+
+Neither wj quotation is an authored spelling of CAPR's selected wij.
+Ringe-Taylor instead begins the relevant history with PNWGmc
+*smirwijana. The Anglian *smirwjan* and Mercian *smirwan* contrast with
+the broken West Saxon form. His objection to a general monophthongization
+explanation is consequential: the ordinary Anglian process would not
+account for unbroken *ir* in this verb. He allows either failure to break
+in some dialects or subsequent reversal. That is a bounded alternative,
+not permission to assign a uniform never-broken history to every Anglian
+word [@RingeTaylor2014, p.183].
+
+The later discussion coordinates the PNWGmc verb with the ointment noun
+*smirwisla*, then separates the broken and mutated verbal and nominal
+endpoints. The noun's loss of w before i is not a verb suffix change.
+The starred *smierels* remains reconstructed, whereas late West Saxon
+*smyrwan* is an attested dialect endpoint. The general w-loss discussion
+argues its position after mutation and before general syncope using its
+own evidence; it does not resolve the earlier dialect-breaking alternative
+[@RingeTaylor2014, pp.248,259-261]. Precise selected stress, wij
+representation and ending remain questions rather than normalization
+defaults.
+
+### Snow: agreeing nouns do not erase verbal grade or analogical restoration
+
+Kroonen derives the masculine thematic snow noun *snaiwa-* from the
+strong snow verb *snīwan-*. His cross-reference confirms that the verb
+belongs to an Indo-European snow family. Latin *nix* is a zero-grade
+root noun, not another citation ending for the Germanic o-grade thematic
+noun. Orel's *snaiʒwaz* and *snīʒwanan* likewise have separate nominal
+and verbal functions. Gothic's a/i classification, the cited Norse
+genitives, doubtful Thracian comparison and bibliographic bath connection
+remain their actual qualifications, not competing exact selected inputs
+[@Kroonen2013, pp.460,462; @Orel2003, pp.355-356,358].
+
+Ringe provides a particularly explicit comparison: the PIE action/result
+noun has o-grade, while the PGmc present3sg *snīwidi* has the verbal
+grade. Both support the origin of intervocalic w from a labiovelar
+fricative, but they do not support equivalence of noun and present-tense
+endings. The native older noun quotation *snóygwhos* retains the holding's
+wh sequence rather than receiving an invented superscript normalization
+[@Ringe2017, pp.128-129].
+
+Fulk adds the important target qualification. Rare OE *snā* reflects
+*snāu* after loss of final vocalized u; the usual *snāw* belongs to the
+extensive analogical restoration of w/u/o in such paradigms. The new
+starred body citation is separately recorded beside the inherited starless
+index entry. Body occurrence does not retroactively certify the index's
+date or typography [@Fulk2018, pp.152-155,388]. Ringe-Taylor's PGmc
+noun in the ai discussion supplies a dated citation, but the discussion's
+chronological qualifications remain; matching noun strings do not establish
+one unanimous strict chain [@RingeTaylor2014, p.171].
+
+### Sorrow: three formations and an internal source inconsistency
+
+Orel calls the feminine sorrow noun deverbative and relates its root to
+illness/severity vocabulary. His separate weak care verb is derived from
+that noun. These are two distinct derivational propositions: the second
+does not prove that the same quoted weak verb generated its own noun in
+a direct circular history. The noun and verb keep their ō and ēn
+formations [@Orel2003, p.388].
+
+Kroonen prints a feminine noun heading and OE *sorg, sorh*, but the
+following prose calls the item a verb created to a root varying between
+*sergh-* and *suergh-*. The internal mismatch must remain visible.
+The conditional Sanskrit comparison and possible analogical sw in the
+continental comparison do not justify changing the noun's part of speech
+or inferring a dated root from the dictionary title
+[@Kroonen2013, pp.493-494].
+
+Ringe's reconstructable PGmc stative list explicitly includes *surgāną*
+and its nominal base *surgō*. The inherited verbal evidence receives its
+explicit PGmc date, and the newly recorded noun remains a separate unit.
+That distinction is independently supported by the list's nominal-versus-
+verbal layout, not inferred from similar strings
+[@Ringe2017, pp.288-290]. Ringe-Taylor's *surgo* to OE *sorg* supplies
+the nonhigh-following-vowel lowering example. The next page discusses
+levelling and root-noun differences, so the example must not become a
+blanket unqualified u/o equivalence [@RingeTaylor2014, pp.27-28].
+
+### Soul: a focused etymological difference and a restored nominative
+
+Orel endorses a sea derivation, probably mediated by beliefs about souls
+originating from and returning to sacred lakes. His Walde *saiwlō* and
+Mezger *swai-walō* alternatives are reported, not two additional
+endorsements. Kroonen instead calls the word a West Germanic item
+considered without etymology, reports Schrijver's non-Indo-European
+proposal, and permits a Baltic/Slavic comparison only conditionally,
+with a different suffix still unexplained. His Gothic citation and
+West Germanic prose label both survive, as do the feminine heading and
+masculine native OE labels. Nordic forms are identified as borrowings
+[@Orel2003, p.314; @Kroonen2013, p.423].
+
+The focused soul-origin case records a substantive difference in
+etymological warrants. It does not claim that Kroonen names and refutes
+Orel, endorses every reported non-IE account, or proves that the lake
+belief was irrelevant. Establishing the cause requires the actual
+criteria for admitting the semantic/formation connection and rejecting
+alternative suffix histories. Those criteria are not recovered merely
+by placing the two headwords side by side
+[@Orel2003, p.314; @Kroonen2013, p.423].
+
+The inflectional history presents a separate and more explicit result.
+Ringe-Taylor's final-vowel account says soul's nominative u should have
+been lost in PWGmc, but could be restored on frequent disyllabic models
+such as learning and gift. His later epenthesis passage expressly labels
+the PWGmc u restored and identifies the continental comparison as an
+accusative. Hence restored nominative u is not evidence that the regular
+loss failed [@RingeTaylor2014, pp.55-59,330].
+
+The syncope passage separately prints PGmc nominative and genitive,
+then their corresponding unsyncopated and syncopated forms. The
+genitive *saiwaloz*, *saweele* and *sawle* are other cells, not repeated
+nominatives. The two literal *-u* occurrences are ending components,
+not lexical comparanda. Syncope, apocope and epenthesis act on different
+parts of this history; the later nominative cannot be back-projected as
+an unchanged whole-word citation. Native terminal6 in *saiwal6* remains
+unrepaired text, separately from the explicit PGmc label
+[@RingeTaylor2014, pp.171,265,329-331].
+
+### Span verb and noun: formation, membership and a table substitute
+
+Orel's geminate strong span verb is related to the single-n lure verb.
+The latter's nasal-present and Greek pull comparison does not quote
+the selected geminate infinitive. The feminine span noun and neuter
+joining/clasp noun are distinct formations; nominal *spanne* is the
+selected dative, not a verbal citation in disguise
+[@Orel2003, pp.361-362].
+
+Kroonen proposes an o-grade intensive derived from a thematic nasal
+present: pre-Germanic *spond-n-* gives *spann-* by regular dental loss
+between two nasals. His rejection of the need for laryngeal gemination
+and reported Lühr connection to spin are particular formation warrants,
+not a newly adopted CAPR law. The existing verb evidence supports the
+noun only as family evidence. Its SOURCE cell is clarified once as verbal;
+the separate nominal link does not overwrite that description
+[@Kroonen2013, p.465].
+
+Ringe-Taylor explicitly reconstructs harness/span to PWGmc in a roster
+of etymologically isolated items. His next-page policy admits accidental
+older attestation gaps while refusing to force uncertain PGmc or PIE
+origins. The policy differs in purpose from presenting a possible deeper
+derivation; neither undated dictionary heading nor absence of a full
+older paradigm supplies an automatic membership vote
+[@RingeTaylor2014, pp.126-128].
+
+Fulk's classVII discussion supplies the innovative preterite account,
+its e-insertion and opacity arguments, the objections, and the
+long-versus-short vowel comparison. These are not proofs of the noun
+case or a complete strong present ancestry. Crucially, the table's
+Frisian *bonna* is a substitute meaning summon because no span cognate
+is attested there, as note15 states. It must not be counted as a span
+reflex supporting the vowel inference. The inherited Fulk consultation
+remains discussion_only, without a fabricated new reconstruction
+[@Fulk2018, pp.267-270,289-291].
+
+### Spar and spare: conditional n-cells versus later weak-verb remodelling
+
+Spar's optional-r heading is not an instruction to erase consonant
+quantity. Kroonen proposes that single-r and geminate-r stems reflect
+n-inflection, with single-r nominative *sparō* and geminate genitive
+*sparraz* from separately printed older cells. The paradigm proposal is
+probable, not categorical; the selected geminate nominative is not an
+exact quotation of the single-r cell. Orel's masculine geminate noun
+cites Middle English *sparre*, not OE *spearra*, and the house-bar verb
+is a derivative rather than another nominal case
+[@Kroonen2013, p.466; @Orel2003, p.363].
+
+Spare's dictionaries genuinely print ēn verb material. The existing
+focused stem comparison preserves its declared CAPR segmentation of
+Orel's final an; neither complete-word identity nor a shared dated
+endpoint follows. Orel derives the verb from the frugal adjective and
+reports Heidermanns' reverse direction separately. Kroonen's adjective
+has extra-Germanic cognate support and a rich-to-frugal semantic shift
+with Slavic borrowing before completion. That is adjective semantic
+chronology, not endorsement of a reverse verb derivation or an authored
+PGmc ōjan citation [@Orel2003, p.362; @Kroonen2013, p.465].
+
+Ringe-Taylor distinguishes PNWGmc ai/j/(conditional a), generalized
+PWGmc ē, northern ē/ēja extension, and later classII transfer.
+His conditional a still belongs to the explicitly dated alternant
+group: confidence does not decide that date. West Saxon *sparian*
+reflects retraction, whereas Mercian *spearian* exhibits second fronting
+and back umlaut. The following ditto signs repeat the table's Ojan
+timing note rather than asserting doubt about *spearian*
+[@RingeTaylor2014, pp.161-163,190-192,218-220].
+
+The northern relic passage is much more cautious: expected starred
+infinitive, singular imperative and preterite are not the attested
+*speria*, native *sp@r*, and *sperede*. Levelling can explain late
+shapes; a front root is unexpected in classII but does not by itself
+validate every isolated g-spelling or reconstruct a complete classIII
+paradigm. The methodological exclusions are part of the evidence
+[@RingeTaylor2014, pp.366-368]. Selected PROTO *sparēną* and
+preoe PROTOFORM *spárōjaną* remain unchanged and distinct.
+
+### Measured extent and remaining premises
+
+The131 tranche positions link126 distinct evidence records. All786
+dictionary consultations and their original statuses survive, now with1964
+dictionary records. The database totals5565 forms,1391 consultations,
+5804 positions,463 comparisons and777 rationales. Core alignment is273
+bounded and120 unreviewed. Soul's focused cause and all eight core causes
+remain unestablished; spare's older premised stem comparison retains its
+limited interpretation rather than becoming an adopted whole-word history.
+No corpus/input/stage/context/FST/baseline owner is changed.
+
+Further work must resolve the particular selected-cell, stress, suffix,
+genealogical and warrant questions above. It must not replace them with
+author counting, output fit, title-derived dates, or a quota of new
+forms. Full393-row alignment, the conditioning census, overall synthesis,
+non-adopting watchlist and finite specialist agenda remain unfinished.
 
 ## Thirty-third alignment: ancestry warrants, actual paradigms and quotation errors
 

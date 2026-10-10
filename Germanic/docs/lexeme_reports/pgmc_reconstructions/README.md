@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5522 evidence records,1391 actual consultations and5759
-analytical positions, with462 comparisons and750 rationales. The RT
+There are5565 evidence records,1391 actual consultations and5804
+analytical positions, with463 comparisons and777 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred sixty-five core rows now have individually reconciled, bounded alignment:
-1933-2197. The remaining128 are unreviewed. The second tranche builds on
+Two hundred seventy-three core rows now have individually reconciled, bounded alignment:
+1933-2205. The remaining120 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,63 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-fourth tranche completes smear, snow, sorrow, soul, span verb,
+span noun, spar and spare, rows2198-2205, from released
+e875f0483ba8e0c793d420653ae63a0eaac43121. All86 inherited identities are
+individually reconciled. Eighteen native occurrences and25 scoped processes
+add43 records; two new focused positions reuse evidence and27 rationales
+are added. The131 positions link126 records. Exact89 reversible SOURCE
+fields cover82 cells, six explicit dates and one argument; four shared
+reuse decisions avoid overwriting primary SOURCE descriptions. All786 dictionary
+consultations retain their identities/statuses with1964 evidence records.
+
+Smear's grease/ointment nouns are family evidence; actual wj versus wij
+quotations and Anglian/WS histories remain distinct. General Anglian
+monophthongization does not resolve the verb's unbroken ir
+[@Orel2003, pp.353-354; @Kroonen2013, p.458;
+@RingeTaylor2014, pp.183,248,259-261].
+Snow's o-grade noun and verbal present have different cells; final-u loss
+and restoration qualify the target history. New native body citations
+remain separate from the old starless index
+[@Kroonen2013, pp.460,462; @Orel2003, pp.355-356,358;
+@Ringe2017, pp.128-129; @Fulk2018, pp.152-155,388].
+Sorrow's noun, weak care verb and PGmc stative retain distinct formations.
+Kroonen's noun-heading/verb-prose mismatch is documented, not normalized
+away [@Orel2003, p.388; @Kroonen2013, pp.493-494;
+@Ringe2017, pp.288-290; @RingeTaylor2014, pp.27-28].
+
+Soul's focused origin-warrant difference remains unexplained, not a named
+rebuttal or an exclusive non-IE endorsement. Sea/lake derivation, reported
+alternatives, conditional Baltic connection and native gender labels are
+preserved [@Orel2003, p.314; @Kroonen2013, p.423].
+Its restored nominative u is distinct from the genitive; repeated *-u
+records are ending components. Explicit PWGmc restoration, syncope,
+apocope and epenthesis do not certify exact selected whole-word identity
+[@RingeTaylor2014, pp.55-59,171,265,329-331].
+Span's single-n lure, geminate intensive and selected noun dative stay
+separate. The shared verb SOURCE cell is clarified once as verbal, not
+overwritten by the noun's family link. PWGmc membership policy
+allows accidental older attestation gaps; Fulk's Frisian bonna is a
+summon substitute, not a span reflex
+[@Orel2003, pp.361-362; @Kroonen2013, p.465;
+@RingeTaylor2014, pp.126-128; @Fulk2018, pp.267-270,289-291].
+
+Spar's single-r nominative and geminate genitive are conditional n-cells,
+not exact selected geminate-nominative evidence; Orel cites ME, not OE
+[@Kroonen2013, p.466; @Orel2003, p.363].
+Spare retains its older premised ēn stem comparison. Adjective direction,
+reported reverse derivation and semantic borrowing arguments are not a
+quoted ōjan verb history [@Orel2003, p.362; @Kroonen2013, p.465].
+PNWGmc ai/j/conditional-a, PWGmc ē, northern ē/ēja and classII dialect
+forms remain separate;219 ditto marks refer to Ojan timing, while367
+starred expectations remain distinct from qualified actual relics
+[@RingeTaylor2014, pp.161-163,190-192,218-220,366-368].
+Selected span-noun pgmc and spare preoe inputs remain unchanged, as do all
+scientific owners. All eight whole-row causes remain unestablished.
+Tranche33 is released; tranche34 remains uncommitted, with no35 start.
+Full393 alignment, class census, synthesis/watchlist and specialist agenda
+remain unfinished.
 
 The thirty-third tranche completes sing, singe, sister, sit, six, slay,
 sleep and slime, rows2190-2197, from released6514c1b6.

@@ -384,7 +384,7 @@ class LiveAnalyticalTests(unittest.TestCase):
             FROM comparison_rationales cr JOIN rationales r USING(rationale_id)
             WHERE r.basis_type='loan_hypothesis' ORDER BY cr.comparison_id
         """)
-        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2096\ncore-2105\ncore-2139\ncore-2145\ncore-2153\ncore-2159\ncore-2179\ncore-2272\n")
+        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2096\ncore-2105\ncore-2139\ncore-2145\ncore-2153\ncore-2159\ncore-2179\ncore-2205\ncore-2272\n")
         # Explicit reasons for a position need not explain the disagreement.
         self.assertTrue(self.cases["core-1975"]["rationale_ids"])
         self.assertEqual(self.cases["core-1975"]["explanation_status"], "unestablished")
@@ -393,6 +393,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(self.cases["core-2096"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-2105"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-2139"]["explanation_status"], "unestablished")
+        self.assertEqual(self.cases["core-2205"]["explanation_status"], "unestablished")
 
     def test_seventh_tranche_queries_scoped_causes_without_promoting_whole_rows(self):
         tables = {"forms": (survey.FORM_COLUMNS, self.forms),
@@ -621,7 +622,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t265\nunreviewed\t128\n")
+        """), "alignment_status\trows\nbounded_limit\t273\nunreviewed\t120\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -815,7 +816,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t265\nunreviewed\t128\n")
+        """), "alignment_status\trows\nbounded_limit\t273\nunreviewed\t120\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -876,7 +877,7 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1940)
+                             for form in self.forms), 1964)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
