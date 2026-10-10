@@ -8,6 +8,162 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-seventh alignment checkpoint: nine through raven
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base: released678eafa61676300540d2bd5141022ccf547fc0d0 on update.
+Rows2142-2149: nine, nose, one, oven, ox, rain, rainbow, raven.
+The user requested release of26 followed by execution of27 in like manner.
+Scientific adoption and automatic release of27/start of28 are excluded.
+The immutable preparation pins5116 forms,79 inherited positions and88
+research hashes;46 independently pinned scientific hashes remain protected.
+
+### Question
+
+Can the complete relevant held arguments reconcile all79 identities
+without merging cardinals/ordinals, separate paradigm cells, reported
+alternatives or compound components? A claimed completion fails if any
+identity disappears, a global shared-row classification replaces a local
+relation, an unknown date is supplied by a title, or native text becomes
+new image certification. Whole-row causes must not inherit focused
+support automatically.
+
+### Current state
+
+Before edits, all eight core alignments remained unreviewed despite
+available citation-unit evidence. The existing survey/commentary and
+released tranche26 receipts supply the analytical conventions, not
+new canonical historical verdicts.
+
+### Diagnosis
+
+No FST experiment or rebuild is needed for this research increment.
+Selected PROTO/PROTOFORM, targets, stages and contexts are inspected
+owners, not adopted source quotations. Nine's g-origin question differs
+from its later back-umlaut blocking; one accusative history differs from
+selected ān; ox case grades and raven's older n-stem differ from
+selected citation inputs [@RingeTaylor2014, pp.17-21,33-35,165-167,323-325;
+@Kroonen2013, pp.240,389-390,558].
+
+### Literature
+
+The complete relevant entries, footnotes, tables and load-bearing
+cross-references are read. Printed folios, not navigation sheets,
+govern citations. Kroonen's early one/age and bow pages require
+piecewise navigation. Native glyph limits remain explicit.
+
+| Row | Held printed-page scope and decisive distinction |
+| --- | --- |
+| Nine2142 | Kroonen389-390; Orel285; Ringe161-163,229-230; Fulk57-59,120-121,226-228; RT165-167,323-325: cardinal, ordinal, inflected trigger and later blocker remain distinct. |
+| Nose2143 | Kroonen383; Orel281; Ringe221-223; RT384-386: root alternatives, consonant ancestry, nostril derivative and later OE u-stem are separate. |
+| One2144 | Kroonen11,16; Orel9; Ringe229; Fulk222,225,227-228,386; RT17-21,119-121: accusative/compound evidence and two comparanda are not one nominative paradigm. |
+| Oven2145 | Kroonen557-558; Orel433; Ringe136-140; RT329-332: qualified f/h alternatives, reported Wanderwort/borrowing and early ofen are independently recorded. |
+| Ox2146 | Kroonen558,566; Orel433-434; Ringe149,306-308,312-313; Fulk168-172; RT33-35: n-stem grades, general endings and repeated actual cells remain distinct. |
+| Rain2147 | Kroonen408; Orel300; Ringe137,328; RT211-213,329-332: root uncertainty, gender and separate palatalization/epenthesis arguments survive. |
+| Rainbow2148 | Kroonen61-62,82,408; Orel43-44,61,300; Ringe324; RT211-213: whole compound, noun components, bend family and arm-ring comparandum are local relations. |
+| Raven2149 | Kroonen240; Orel182-183; RT329-332: older n-stem cells, thematic citation and rare late epenthesis are separate. |
+
+Fulk's possible u-trigger and reported inflected-nine trigger remain
+qualified. Ringe-Taylor explicitly leaves nine's northern shape
+unexplained; its tenth-ordinal question mark cannot become a cardinal
+claim [@Fulk2018, pp.57-59,226-228;
+@RingeTaylor2014, pp.165-167].
+
+One's phonological raising proposal retains its exact unstressed/open
+domain, alternative pronoun morphology, date problems and further-study
+qualification. Fulk's i-stem argument considers that account rather
+than supplying a wholly exclusive alternative
+[@RingeTaylor2014, pp.17-21; @Fulk2018, pp.222,225,227-228].
+
+### Historical analysis
+
+Two focused substantive cases are persisted:
+`nine-velar-origin-and-trigger` and `one-accusative-raising-and-istems`.
+Their causes remain unestablished; reasons are position support.
+The record compares warrants, not author votes, exclusive laws or
+output-fit preferences [@Kroonen2013, pp.389-390;
+@Fulk2018, pp.57-59,120-121,222,225,226-228;
+@RingeTaylor2014, pp.17-21,165-167].
+
+No f-first/h-first exclusive dispute is invented for oven. Orel's
+phonetic qualifications and Mycenaean argument remain beside the
+reported alternatives. Ox growth semantics and rain root origin
+remain unresolved; a following loan list does not date or classify
+rain. All eight core causes stay unestablished
+[@Orel2003, pp.300,433-434; @Kroonen2013, pp.408,557-558,566;
+@Ringe2017, pp.137,328].
+
+### Verdict
+
+Annotation review is completed; no registry verdict is issued because
+no sound-change identity is being adjudicated. Historical stage and
+scope remain position-specific, independently supported or unspecified.
+No chronology edge is proposed from this review or an executable proxy.
+
+All79 inherited analytical identities are individually curated.
+Twenty-seven native literal occurrences and34 scoped processes add61
+records to existing consultations. Five focused positions reuse evidence;
+39 rationales are added. Exact SOURCE amendments cover98 fields:
+76 cells,12 local stages, two arguments, seven folios and one reported
+author. The one-time candidate passed all validation/preservation guards
+before persistence and must never be rerun/imported.
+
+Two new repository receipts:
+`alignment-2142-2149-amendments.tsv` and
+`alignment-2142-2149-occurrences.tsv` under reading_accountability.
+No consultation identity/status or target/scope/applicability change
+is made. Fulk/ox and RT/nose remain discussion_only. Shared bow/rain
+SOURCE and outside-row analysis are preserved; rainbow receives
+its own component interpretation [@Fulk2018, pp.168-172;
+@RingeTaylor2014, pp.384-386; @Kroonen2013, pp.61-62,82,408].
+
+### Propagation
+
+SOURCE forms, coverage links/assessments, analyses, comparisons and
+rationales are persisted. README and commentary give the complete
+page-cited account. Current totals:5177 forms,1390 consultations,5384
+positions,448 comparisons,552 rationales;217 bounded/176 unreviewed.
+The145 tranche positions link139 records. All786 dictionary
+consultations remain, with1773 dictionary evidence records.
+Existing receipts, scopes, targets, source holdings and scientific
+owners remain independently protected.
+
+Focused regressions cover receipt spans and inherited identities,
+cardinal/ordinal and blocker/origin separation, one/two cells and
+reported attribution, local nose date, oven's early ofen, ox duplicate
+oxan cells, shared rainbow component boundaries, rain uncertainty
+and raven's older paradigm. Independent closeout reads frozen
+before-state, current SOURCE and receipts, never the executed candidate.
+Canonical refresh alone regenerates derived projections; no scientific
+suite, Foma or PDF rebuild is part of this increment.
+
+Independent post-refresh verification preserves5116 inherited forms
+except98 receipted fields,5239 outside positions,438 unaffected cases,
+513 inherited rationales,1356 outside consultations,81 unaffected research
+hashes/receipts/scopes/targets and46 scientific hashes. All27 native
+paragraph/hash/span receipts resolve independently. The combined339-test
+run passes337; an exact wording assertion and a cumulative query newly
+including oven's actual loan argument are corrected. All11 tests in the
+targeted rerun pass, including every new tranche27 regression. SOURCE
+prose is not rewritten to satisfy the query. Canonical refresh is
+CONTROL PLANE CLEAN. All57 new-prose page references, bibliography,
+section locators and whitespace checks pass. Deterministic session query
+record: `pgmc-two-hundred-seventeen-alignments-query-results.txt`.
+Independent alignment refuses176; verified reading separately refuses
+the unchanged RT conventions gap.
+
+### Residue
+
+RESEARCH ONLY: eight bounded alignments, not eight settled histories.
+Both focused and all eight whole-row causes remain unestablished.
+No corpus/input/target/stage/context, FST semantic/order, baseline,
+canonical historical verdict, introduction or PDF adoption.
+The remaining176 core rows, aggregate conditioning census, explanatory
+synthesis and RT convention/typography verification remain unfinished.
+Tranche27 stops uncommitted; no automatic release or28 start.
+
 ## Twenty-sixth alignment checkpoint: neck through nightmare
 
 ### Identity

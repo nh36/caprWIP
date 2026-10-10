@@ -1,0 +1,861 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment27-nine-rt-pgmc	RingeTaylor2014	166	181	2	6	14	*ne(w)un	4c5c203fddb050fceef32fe99a660aa36145f262977f906361fc7e26f624e3fd	PGmce *ne(w)un ‘nine’ (see vol. i 3.2.6 (i), p. 137) > Goth. niun, ON niu, OHG niun;		
+alignment27-nine-rt-tenth	RingeTaylor2014	166	181	3	5	13	*tehundo	097c91b8bf39cf917ba00f2b1a794ba05736df2e12f056b7fcfb14158ff9339a	"PGmc *tehundo ‘tenth’ > Goth. tathunda (ending replaced), ON tiundi (ending
+replaced), OHG zehanto; *-h- also in OE téopa, OF tidnda, OS tehando, though
+the first exhibits a voiceless Verner’s Law alternant in the suffix."		
+alignment27-nine-rt-north	RingeTaylor2014	324	339	4	299	304	nigon	f2c96f77cd41195376401ed37c8b878b3fb354dceac88b98b15ab65b80f04b5b	"Back umlaut did not affect vowels through an intervening velar consonant
+in the Anglian dialects. Mercian examples with i are few, but we can at least
+cite tigule ‘potsherd’ and dat. sg. diccum, weak obl. diccan ‘thick from Ps(A).
+Northumbrian examples include liccedon ‘they licked’ (< *likkodun), nigon
+‘nine’, sticadun ‘they pierced’, gestricedon ‘they mended’ (< *gzestrikodun),
+and éswica ‘hypocrite’, all from Li, as well as sticung ‘strangulation’ in an early
+gloss (Sweet 1885: 123). The fact that Anglian documents yield examples only
+of cwic and wicu, not also of cucu and wucu (noticed by Brunner 1965: 93),
+suggests that this restriction also applies to combinative back umlaut, and that
+supports the hypothesis that the two changes were a single historical phenom-
+enon. But Ps(A) extends the scope of ordinary back umlaut by analogy
+between parallel paradigms; thus corresponding to WS and North. dstigon
+‘they ascended’ we find not the expected *astigun, but southwestern Merc.
+asteogun, with eo < *io as in dreosun ‘they arose’, geweotun ‘they went’, etc."		
+alignment27-nine-fulk-wloss	Fulk2018	120	137	1	2130	2136	*niwun	abd5349221adc5191b4cfa96849a0dadf7f89fe4c98dca01544acbfbcf280ff4	"120
+A Comparative Grammar of the Early Germanic Languages
+4. See van Coetsem 1949, Y. Tanaka 1970. Some of the laryngeal explanations referred to under (b) also
+invoke accentual support.
+5. So Jasanoff 1978a, Polomé 1988: 404–5, Suzuki 1991b; see also Cathey 1970: 57, and see Müller 2007:
+91-2 for discussion. Whether loss of the laryngeal without automatic lengthening of the glide would produce
+an impossible syllable structure (see Davis & Iverson 1996b) is debatable, as it may be assumed that the
+vowel plus glide sequence of PIE produced a Gmc. diphthong before the loss of the laryngeal.
+6. This raises the problem that the sequence *-VHR- is commonly thought to be reflected as -VR- in Ger-
+manic. Analyses of this kind thus usually appeal to the placement of the accent to distinguish forms with and
+without Verschärfung.
+7. See Fulk 1993b. A somewhat different analysis of a few forms as due to paradigm regularization is
+offered by Voyles (1989b: 27–8).
+6.11
+Further consonant changes common to all the Germanic languages
+PGmc. *-m-ð- > -nd-, as in PIE *mtóm ‘hundred' > PGmc. *xumða"" > Go. OE OS
+hund, OHG hunt; Go. OIcel. OE sund ‘swimming' (cf. OE swimman); PGmc. *skam-ðō
+‘disgrace' > Go. skanda, OE sc(e)and, OHG scanta (cf. Go. skaman ‘be ashamed').
+With the devoicing of PIE voiced stops under Grimm's law, an immediately
+preceding z was devoiced to s, as in OE OHG nest < PIE *ni-zd-os (> Lat. nīdus 'nest',
+with zero grade of the PIE root *sed- 'sit') and Go. asts, OHG ast ‘bough' = Gk. őÇoç,
+Armenian ost 'bough' < PIE *he-zd-os (again from *sed-). Before the reflex of a PIE
+voiced aspirated stop, however, PGmc. z remained, developing for the most part to r
+outside of Gothic (§6.6), as in *kuzdh- > Go. huzd, OE OS hord, OHG hort ‘hoard';
+*mizdhó- > Go. mizdō, OE meord (but also mēd, with ē₂ (§3.5))¹ 'reward' (cf. Avestan
+mĭžda-, OCS müzda 'reward', Gk. μoós 'recompense'); *mozgh""- 'marrow' > OIcel.
+mergr, OE mearh, OS OHG marg (cf. Avestan mazga-, OCS mozgó).
+PGmc. w was lost (and kw delabialized, if it had not already developed to kw in
+PGmc., §§6.5 ad fin., 6.11) before u, as in Go. niun ‘9' < *niwun < PIE *néun (cf. Skt.
+náva, Lat. novem), PGmc. *swum-ð-a"" > OIcel. OE sund ‘swimming' and *k""umana"" >
+OIcel. koma, OE cuman, OS kuman 'come'. An exception is when w is initial, as in Go.
+wulla 'wool'. But w could be restored to reduce paradigm allomorphy, e.g. Go. pret.
+swultun (inf. swiltan ‘die'), pret. qumun (inf. qiman ‘come'), OE pp. swungen beside
+sungen (inf. swingan 'beat').
+PGmc. antevocalic x may have become h in initial position already in PGmc. (so,
+e.g., Ringe 2006a: 215; otherwise Ringe 2017: 244), since it is nowhere reflected as
+[x].² However, initial x™- is unlikely to have become h""- in PGmc., given its fortition to
+[kv] in Modern Icelandic and Faroese, and given medieval Scottish and northern
+English spellings like quh-, qhw-, chu-, and similar, usually interpreted as representing
+[xw]. On the PGmc. loss of ŋ before x, with compensatory lengthening of the preceding
+vowel, see §4.1.
+All PIE final consonants after an unstressed vowel in a word of more than one
+syllable were lost in PGmc. except for s/z and r. Examples of obstruent loss are thus
+limited to dental consonants, since no other obstruents but s occurred finally in PIE
+polysyllables. The loss may be illustrated in Gothic: PIE *bhidh-nt > bidun ‘awaited' (3
+pl. pret. ind.); opt. *bheidh-o-ih-t> beidái (3 sg. pres. sj.; cf. 2 sg. -o-ih-s> -áis); PIE
+abl. *kwoteréd > hadrē 'whither'; PIE *nepōt-> OE nefa, OS nebo, OHG nefo 'neph-
+ew, grandson' (cf. Skt. nápāt ‘descendant'). For examples of the treatment of final s/z
+and r, see §5.2, and see below, §6.16, on s/z in West Germanic.³ A final nasal consonant"		
+alignment27-nine-fulk-u-option	Fulk2018	59	76	1	1088	1099	*ne(w)un(-)	b4860dbb2c78b8abc04fa48451d790dd3cf1300e5ffa9251b0680db94e826985	"$4.4
+Raising of short mid and high vowels 59
+'fight' beside gewegan, §4.3 n. 4). There is frequent lowering of i to e in the pret. pl.
+and pp. of verbs of class I in OFris. See further Polomé 1994: 28–9 n. 10.
+Just as PGmc. e was raised to i before i or j in the next syllable, so under the
+same conditions eu changed to iu. In ON and Anglo-Frisian, under normal circum-
+stances in would subsequently undergo front umlaut (§4.7). The further developments
+of eu are discussed under the treatment of vowels and diphthongs in the individual
+languages.
+1. On this analysis, OE fela (cf. Northumbrian feolu, Gk. лolós ‘many') has final -a probably from an
+oblique case-form of the original u-stem adjective (so A. Campbell 1977: §666), e.g. PGmc. nom. pl. fem.
+*felôz, in which there would have been no raising of /e/ (or later reversal of that raising). If this is correct,
+Olcel. fjol must show fracture of *e due to original final -u (as in the nom. acc. sg. of the adjective), with
+restoration of e in the root, prior to fracture, from oblique cases.
+2. Possibly also OE nigon ‘9' < PGmc. *ne(w)un(-) (with intrusive 3, §10.2), though Ross & Berns (1992:
+589) explain the raising as originating in the i-inflected stem *niwuni-.
+3. A possible exception is Olcel. OE OS wit 'we two', which Prokosch (1939: §98d) plausibly explains as
+having developed from *we-tu (see §8.2 infra); but the raising of *e in this word may instead be due to
+unstressed use of the pronoun (§5.5).
+4. Implicit in this analysis is the assumption that these changes also affected the diphthong eu: Prokosch
+(1939: §39a) thus maintains that “eu appears normally as eo before a, as iu elsewhere."" The change of ei to ī
+was not yet completed in the third century CE if the evidence of Alateiviae, the name of a deity from Xanten,
+is to be trusted (Polomé 1994: 6).
+5. That the vowel 7 of the present system was able to exert influence of this sort is also the premise behind
+all the most convincing explanations for the long ū (for expected u) in the so-called aorist presents of verbs of
+the second strong class, such as brūcan ‘enjoy', būgan ‘bend', and dūfan ‘dive': see §12.18.
+6. Seebold (1966b: 3 & n. 4) supposes that beðinn is due to confusion with the pp. of biðja ‘bid', a
+confusion paralleled in OE (though only in manuscripts of the late tenth and eleventh centuries, and never in
+the pp. of the verb). This would be a more convincing analysis if there were other evidence in ON of confu-
+sion of bíða and biðja and from an early date, seeing as *biðinn does not occur.
+4.5
+Changes of stressed vowels in Gothic
+PGmc. e and i fell together as i in Gothic, except that both appear before r, h, h as aí
+(/ε/), in a process commonly referred to as 'breaking', as in stilan 'steal' (OE OS OHG
+stelan), baíran ‘bear' (OE OS OHG beran), pp. laihans ‘lent' (OHG gi-liwan).¹ Simi-
+larly, PGmc. u appears as u in Gothic, but as aú (/ɔ/) before r, h, h, 2 as in pret. 3 pl.
+-budun 'offered' (OE budon, OS budun), pp. -budans 'offered' (OE boden, OHG gi-
+botan), pret. 3 pl. waúrþun 'became' (OE wurdon, OS wurdun).
+Before a vowel, PGmc. ē and ō develop to /ε:/ and /ɔ:/, transcribed as ai and
+au, without any acute, to distinguish them from the vowels identified in §3.4. Examples:
+PGmc. *seana"" > Go. saian ‘sow' and PGmc. 3 sg. pret. *stōiðē(þ) > Go. stauida
+'judged'.
+The diphthongs eu and iu (§4.4) fell together as iu in Gothic, e.g. *keusana"">
+Go. kiusan 'choose' (cf. OE ceosan) beside *liuxtijana"" > Go. liuhtjan 'give light' (cf.
+OE līehtan).
+1. Exceptions are waila 'well' (OE OS wel, OHG wela), aíþþáu ‘or' (OE eþþa beside usual oppe, OHG
+ed(d)o), and hiri, hirjats, hirjiþ ‘come here!', on which see Cercignani 1984, and on hiri in particular, van der
+Hoek 2007. Raising also fails in reduplicative syllables in verbs of strong class VII, e.g. pret. faifalþ 'fold',
+usually explained as due to the analogical influence of preterites like haíháit ‘call, or to weak stress. For
+alternative explanations, see Cercignani 1979 (with refs.), Ebbinghaus 1991."		
+alignment27-nine-fulk-i-option	Fulk2018	59	76	1	1218	1226	*niwuni-	b4860dbb2c78b8abc04fa48451d790dd3cf1300e5ffa9251b0680db94e826985	"$4.4
+Raising of short mid and high vowels 59
+'fight' beside gewegan, §4.3 n. 4). There is frequent lowering of i to e in the pret. pl.
+and pp. of verbs of class I in OFris. See further Polomé 1994: 28–9 n. 10.
+Just as PGmc. e was raised to i before i or j in the next syllable, so under the
+same conditions eu changed to iu. In ON and Anglo-Frisian, under normal circum-
+stances in would subsequently undergo front umlaut (§4.7). The further developments
+of eu are discussed under the treatment of vowels and diphthongs in the individual
+languages.
+1. On this analysis, OE fela (cf. Northumbrian feolu, Gk. лolós ‘many') has final -a probably from an
+oblique case-form of the original u-stem adjective (so A. Campbell 1977: §666), e.g. PGmc. nom. pl. fem.
+*felôz, in which there would have been no raising of /e/ (or later reversal of that raising). If this is correct,
+Olcel. fjol must show fracture of *e due to original final -u (as in the nom. acc. sg. of the adjective), with
+restoration of e in the root, prior to fracture, from oblique cases.
+2. Possibly also OE nigon ‘9' < PGmc. *ne(w)un(-) (with intrusive 3, §10.2), though Ross & Berns (1992:
+589) explain the raising as originating in the i-inflected stem *niwuni-.
+3. A possible exception is Olcel. OE OS wit 'we two', which Prokosch (1939: §98d) plausibly explains as
+having developed from *we-tu (see §8.2 infra); but the raising of *e in this word may instead be due to
+unstressed use of the pronoun (§5.5).
+4. Implicit in this analysis is the assumption that these changes also affected the diphthong eu: Prokosch
+(1939: §39a) thus maintains that “eu appears normally as eo before a, as iu elsewhere."" The change of ei to ī
+was not yet completed in the third century CE if the evidence of Alateiviae, the name of a deity from Xanten,
+is to be trusted (Polomé 1994: 6).
+5. That the vowel 7 of the present system was able to exert influence of this sort is also the premise behind
+all the most convincing explanations for the long ū (for expected u) in the so-called aorist presents of verbs of
+the second strong class, such as brūcan ‘enjoy', būgan ‘bend', and dūfan ‘dive': see §12.18.
+6. Seebold (1966b: 3 & n. 4) supposes that beðinn is due to confusion with the pp. of biðja ‘bid', a
+confusion paralleled in OE (though only in manuscripts of the late tenth and eleventh centuries, and never in
+the pp. of the verb). This would be a more convincing analysis if there were other evidence in ON of confu-
+sion of bíða and biðja and from an early date, seeing as *biðinn does not occur.
+4.5
+Changes of stressed vowels in Gothic
+PGmc. e and i fell together as i in Gothic, except that both appear before r, h, h as aí
+(/ε/), in a process commonly referred to as 'breaking', as in stilan 'steal' (OE OS OHG
+stelan), baíran ‘bear' (OE OS OHG beran), pp. laihans ‘lent' (OHG gi-liwan).¹ Simi-
+larly, PGmc. u appears as u in Gothic, but as aú (/ɔ/) before r, h, h, 2 as in pret. 3 pl.
+-budun 'offered' (OE budon, OS budun), pp. -budans 'offered' (OE boden, OHG gi-
+botan), pret. 3 pl. waúrþun 'became' (OE wurdon, OS wurdun).
+Before a vowel, PGmc. ē and ō develop to /ε:/ and /ɔ:/, transcribed as ai and
+au, without any acute, to distinguish them from the vowels identified in §3.4. Examples:
+PGmc. *seana"" > Go. saian ‘sow' and PGmc. 3 sg. pret. *stōiðē(þ) > Go. stauida
+'judged'.
+The diphthongs eu and iu (§4.4) fell together as iu in Gothic, e.g. *keusana"">
+Go. kiusan 'choose' (cf. OE ceosan) beside *liuxtijana"" > Go. liuhtjan 'give light' (cf.
+OE līehtan).
+1. Exceptions are waila 'well' (OE OS wel, OHG wela), aíþþáu ‘or' (OE eþþa beside usual oppe, OHG
+ed(d)o), and hiri, hirjats, hirjiþ ‘come here!', on which see Cercignani 1984, and on hiri in particular, van der
+Hoek 2007. Raising also fails in reduplicative syllables in verbs of strong class VII, e.g. pret. faifalþ 'fold',
+usually explained as due to the analogical influence of preterites like haíháit ‘call, or to weak stress. For
+alternative explanations, see Cercignani 1979 (with refs.), Ebbinghaus 1991."		
+alignment27-one-fulk-i-body	Fulk2018	222	239	1	735	741	*aini-	643ea22aa1d915743b0a5f7a3ee96de292192c02b4138d98a498664208c3b3a9	"CHAPTER 10
+Numerals
+I. Cardinals
+10.1
+The numerals 1-4
+In PIE the first four cardinal numbers were fully declined as adjectives which could be
+used as substantives, and they continued to be declined in PGmc., though, as in most IE
+languages, no gender distinctions are observed outside of the nom. and acc. ('1' aside),
+and '4' is inflected consistently only in ON.¹
+1. The PIE o-stem *oinos '1' (Gk. oivós, Lat. ūnus) by regular development
+yields Go. áins, Olcel. einn, OE ān, OS ēn, OHG ein, declined as a Gmc. a/ō-stem adj.,
+but OE has acc. masc. anne, also shortened to enne (beside analogical ānne), from
+*aininō"", an i-stem case form.² Inflection as an i-stem is a Gmc. innovation, but an old
+one, as Go. '11' probably requires *aini- (§10.3). Despite the singular meaning, ‘1’
+could be inflected in the plural, in constructions like Go. þans frijondans izwis áinans
+‘only those loving you' (acc.) and OE ānra gehwile ‘each one', literally ‘each of ones'.
+In NWGmc. it may take weak inflections, usually with the meaning ‘alone',³ always
+with that meaning in ON, though in OHG it is inflected weak in definite constructions.
+2. PIE had for '2' the form masc. *d(u)uoh₁, neut. (and fem.?)4 *d(u)uoi, initial
+*du- appearing after a short vowel in sandhi, otherwise *duu-; cf. Lat. duo, Gk. Svo
+(Homeric dów), Vedic Skt. d(u)váu, d(u)vá.5,6 It was given the dual inflections of o-
+stems (masc., neut.) and ā-stems (fem.), which are imperfectly known: see, e.g., Szem-
+erényi 1996: §7.6.7. The early Gmc. paradigms are these:
+m. nom.
+Go.
+twái
+OIcel.
+tveir
+OE
+OS
+OHG
+twēgen
+twēne, -a
+zwēne
+m. acc.
+twans
+tvá
+twegen
+twēne, -a
+zwēne
+f.
+gen.
+dat.
+n. nom./acc. twa
+nom./acc. twōs
+tvau
+twā, tū
+twē
+zwei
+tvær
+twā
+twā, twō
+zwā, zwō
+twaddjē
+twáim
+tveggja
+tveim(r)
+twēg(e)a, twēg(e)ra tweio
+twem, twām
+zweio
+twēm
+zweim
+The Go. endings are identical to those of plural a/ō-stem adjectives attached to a
+stem tw-, except that the gen. pl. has the stem twaddj- < *twajj-, due to the Verschärf-
+ung (§6.10), the same PGmc. stem that underlies the case-form elsewhere in Gmc.7
+With that one exception, the Olcel. forms are made up of a stem tv- plus the same
+endings found in the plural of the pronoun hann (§8.7: þeir, þau, þær, etc.); the by-form
+dat. tveimr is analogical to primr ‘3'. In WGmc., where the nom. and acc. are identical,
+the vowel ē has not been satisfactorily accounted for. The usual explanation, developed
+from a suggestion by Sievers (1885b: 495–6 n. 1; so, e.g., Krahe & Meid 1969: II, §61,
+Euler 2013: 124) is that OE twēgen is analogical to bēgen 'both', which may be"		
+alignment27-one-fulk-i-eleven	Fulk2018	227	244	1	3325	3331	*aini-	c23215060067554d8dc5a292bd021bdfda9063bcd32d7987c8eb844525d0746f	"§10.2 The numerals 5-10 227
+as níu above), OE tien, OS tehan, OHG zehan, since it accounts for the retention of the
+final nasal consonant (§5.2). The WGmc. forms correspond not to PIE *dékmt_but
+*dékomt, which is unparalleled as such in IE; but cf. PIE *mtóm 'hundred' < *dĥmt-
+dkom(t) and Gk. tpiá-kovta ‘30', tɛttapá-kovta ‘40', and so forth.5 OE tien must show
+umlaut originating in the inflected forms (with i-stem inflections, as elsewhere in Gmc.;
+so Brunner 1965: §129 Anm. 6); the Mercian equivalent is thus correctly tēn. The unin-
+flected form without umlaut is reflected in hund-tēon-tig '100' (§10.5).
+1. Final -un could, e.g., be analogical to the ending on '10', which is phonological. Hirt (1931–4: II, §91)
+actually reconstructs a pre-Gmc. *septnt; the approach of Ringe 2017: 105 is similar. If these numerals were
+inflected in PGmc., as they are in Go. and WGmc. under the conditions mentioned above, that would also
+explain preservation of the final nasal consonant, with analogical extension to uninflected forms; but the
+cogent account of the PGmc. numerals and their inflection offered by Stiles (1985–6) renders it much likelier
+that inflection of the numerals above '4' is a post-PGmc. development.
+2. Noreen (1970: §133b, 2) ascribes the noncontraction to a retained degree of stress on the final vowel,
+Prokosch (1939: §99a) to rhythmical patterns in counting. It is unnecessary to invoke analogy, as Prokosch
+does, to explain the long vowel, as a stressed antevocalic long vowel would be lengthened (Prokosch's law,
+§2.5). The development in nítján is *ni-u-> *nī-u- (Prokosch's law) > ní-. The same questions pertain to tíu
+'ten'.
+3. On *niwun- rather than *newun-, see §4.4 & n. 2.
+4. The problem of which is older is complex and much contested: see Szemerényi 1960: 67-114 for an
+overview, arguing that the form with -t is older.
+5. Szemerényi (1960: 101) supports the view of Brugmann (in Brugmann & Delbrück 1897–1916: II, 2.21-
+2) and others that -an in WGmc. *texan is analogical to -an- in the decads (cf. Gk. -кovτα), whereas Voyles
+(1987: 489) regards it as borrowed from '11'.
+10.3
+The numerals 11-19
+In terms of inflection these are treated the same way as the numerals 5–10, except that
+no inflected forms of 13-19 appear in OS, probably due simply to lack of attestation
+(Stiles 1985-6: 7.3). The majority of these are unattested in Go., where numerals are
+commonly expressed by alphabetic characters, as in Greek (§1.11). The relevant at-
+tested forms are these:
+Go.
+OIcel.
+OE
+11
+*áinlif
+ellifu
+12
+twalif
+tólf
+enlefan
+twelf
+OS
+el(l)evan, -en
+OHG
+einlif
+twe-, twi-, twu-lif
+zwelif
+13
+þrettán
+prēotīene
+thriu-, thrū-tein
+drīzehan
+14
+fidwōrtaíhun
+fjórtán
+fēowertīene
+fiertein
+fiorzehan
+15
+fimftaíhun
+fimtán
+fiftīene
+fiftein
+finfzehan
+16
+sextán
+sixtīene
+se(h)stein
+sehszehan
+17
+sjaut(j)án
+seofontiene
+sivontein
+18
+át(t)ján
+eahtatīene
+ahto-, ahte-tein
+ahtozehan
+19
+nítján
+nigontiene
+nigentein
+niunzehan
+‘11' and '12' stand apart, being formed of '1' and '2' with a suffix *-lib- < *-lif- (by
+Verner's law) < PIE *lik""- (cf. Gk. λɛíño, Lat. linquō ‘leave'), i.e. ‘one, two left' (after
+counting on ten fingers). They are thus parallel to Lith. venúo-lika, dvý-lika, with -lika
+as the reduced grade of liekas ‘left over'.¹ Go. *ainlif is attested only as dat. áinlibim,
+probably reflecting *aini- rather than *aina- (cf. OE ænne < *aini-, §10.1 supra), as -a-
+is more often retained (72×) than lost (21×) as a composition vowel in Gothic (Krause
+1968: §68), whereas the loss of -i-, though irregular, is more frequent. OE enlefan also"		
+alignment27-one-fulk-a-eleven	Fulk2018	227	244	1	3344	3350	*aina-	c23215060067554d8dc5a292bd021bdfda9063bcd32d7987c8eb844525d0746f	"§10.2 The numerals 5-10 227
+as níu above), OE tien, OS tehan, OHG zehan, since it accounts for the retention of the
+final nasal consonant (§5.2). The WGmc. forms correspond not to PIE *dékmt_but
+*dékomt, which is unparalleled as such in IE; but cf. PIE *mtóm 'hundred' < *dĥmt-
+dkom(t) and Gk. tpiá-kovta ‘30', tɛttapá-kovta ‘40', and so forth.5 OE tien must show
+umlaut originating in the inflected forms (with i-stem inflections, as elsewhere in Gmc.;
+so Brunner 1965: §129 Anm. 6); the Mercian equivalent is thus correctly tēn. The unin-
+flected form without umlaut is reflected in hund-tēon-tig '100' (§10.5).
+1. Final -un could, e.g., be analogical to the ending on '10', which is phonological. Hirt (1931–4: II, §91)
+actually reconstructs a pre-Gmc. *septnt; the approach of Ringe 2017: 105 is similar. If these numerals were
+inflected in PGmc., as they are in Go. and WGmc. under the conditions mentioned above, that would also
+explain preservation of the final nasal consonant, with analogical extension to uninflected forms; but the
+cogent account of the PGmc. numerals and their inflection offered by Stiles (1985–6) renders it much likelier
+that inflection of the numerals above '4' is a post-PGmc. development.
+2. Noreen (1970: §133b, 2) ascribes the noncontraction to a retained degree of stress on the final vowel,
+Prokosch (1939: §99a) to rhythmical patterns in counting. It is unnecessary to invoke analogy, as Prokosch
+does, to explain the long vowel, as a stressed antevocalic long vowel would be lengthened (Prokosch's law,
+§2.5). The development in nítján is *ni-u-> *nī-u- (Prokosch's law) > ní-. The same questions pertain to tíu
+'ten'.
+3. On *niwun- rather than *newun-, see §4.4 & n. 2.
+4. The problem of which is older is complex and much contested: see Szemerényi 1960: 67-114 for an
+overview, arguing that the form with -t is older.
+5. Szemerényi (1960: 101) supports the view of Brugmann (in Brugmann & Delbrück 1897–1916: II, 2.21-
+2) and others that -an in WGmc. *texan is analogical to -an- in the decads (cf. Gk. -кovτα), whereas Voyles
+(1987: 489) regards it as borrowed from '11'.
+10.3
+The numerals 11-19
+In terms of inflection these are treated the same way as the numerals 5–10, except that
+no inflected forms of 13-19 appear in OS, probably due simply to lack of attestation
+(Stiles 1985-6: 7.3). The majority of these are unattested in Go., where numerals are
+commonly expressed by alphabetic characters, as in Greek (§1.11). The relevant at-
+tested forms are these:
+Go.
+OIcel.
+OE
+11
+*áinlif
+ellifu
+12
+twalif
+tólf
+enlefan
+twelf
+OS
+el(l)evan, -en
+OHG
+einlif
+twe-, twi-, twu-lif
+zwelif
+13
+þrettán
+prēotīene
+thriu-, thrū-tein
+drīzehan
+14
+fidwōrtaíhun
+fjórtán
+fēowertīene
+fiertein
+fiorzehan
+15
+fimftaíhun
+fimtán
+fiftīene
+fiftein
+finfzehan
+16
+sextán
+sixtīene
+se(h)stein
+sehszehan
+17
+sjaut(j)án
+seofontiene
+sivontein
+18
+át(t)ján
+eahtatīene
+ahto-, ahte-tein
+ahtozehan
+19
+nítján
+nigontiene
+nigentein
+niunzehan
+‘11' and '12' stand apart, being formed of '1' and '2' with a suffix *-lib- < *-lif- (by
+Verner's law) < PIE *lik""- (cf. Gk. λɛíño, Lat. linquō ‘leave'), i.e. ‘one, two left' (after
+counting on ten fingers). They are thus parallel to Lith. venúo-lika, dvý-lika, with -lika
+as the reduced grade of liekas ‘left over'.¹ Go. *ainlif is attested only as dat. áinlibim,
+probably reflecting *aini- rather than *aina- (cf. OE ænne < *aini-, §10.1 supra), as -a-
+is more often retained (72×) than lost (21×) as a composition vowel in Gothic (Krause
+1968: §68), whereas the loss of -i-, though irregular, is more frequent. OE enlefan also"		
+alignment27-one-rt-pgmc-acc	RingeTaylor2014	18	33	6	79	86	*ainang	2ad7e071d4086f2221afcf5d747551fddb7a22a4ae2f48fa77a15587f50f4a5d	"OE (Angl.) enne ‘one’ (acc. sg. masc.) < enne (also WS) < @nne < *anine < PGmc
+*ainang (Goth. ainana; while the OE spelling (enne) can only reflect a form with"		
+alignment27-one-rt-intermediate	RingeTaylor2014	18	33	6	65	71	*anine	2ad7e071d4086f2221afcf5d747551fddb7a22a4ae2f48fa77a15587f50f4a5d	"OE (Angl.) enne ‘one’ (acc. sg. masc.) < enne (also WS) < @nne < *anine < PGmc
+*ainang (Goth. ainana; while the OE spelling (enne) can only reflect a form with"		
+alignment27-one-rt-oe-acc	RingeTaylor2014	18	33	6	11	15	enne	2ad7e071d4086f2221afcf5d747551fddb7a22a4ae2f48fa77a15587f50f4a5d	"OE (Angl.) enne ‘one’ (acc. sg. masc.) < enne (also WS) < @nne < *anine < PGmc
+*ainang (Goth. ainana; while the OE spelling (enne) can only reflect a form with"		
+alignment27-one-kroonen-age	Kroonen2013	16	54	1	102	110	*aiwa/ō-	3608489a94461fd0aa11403693a107f747177e598cee9aea41e3c90ca3f52f1d	"16
+*aiwa/ö- 1
+because this is the comparative suffix *-uman- < *-mh2-on-, cf. *fruman-,
+*ufuman- etc.
+*aiwa/ō- 1 m./f. 'eternity, age' - Go. aiws m. 'id.', OFri. ewe f. 'id.', OS ēwa f.
+'id.', Du. eeuw c. 'century', OHG ewa f. 'eternity' ⇒ *hzei-u- (IE) - Skt. áyu- n.
+'life, lifetime', OAv. āiiū, gen. yaoš n. 'life, lifetime, time', Lat. aevus m., aevum
+n. 'period of time' < *hzei-u-; Gr. aidov m./f. '(life)time, long time, eternity' <
+*hzei-u-on- (cf. orig. loc. atév 'always').
+The Latin and Germanic forms both go back to thematic *h₂ei-uo-, but the
+word was originally inflected as an athematic u-stem, nom. *h₂ói-u, gen.
+*h₂i-éu-s (cf. the Avestan paradigm). I assume that this u-stem served as the
+basis for the verbal root *Hieu-, as evinced by ToB yaw- 'to ripen, mature'.
+See also *ajuki-'eternal' and *junga- 'young'.
+*aiwa/ō- 2 m./f. 'law' - OE æ, æw f. 'law, religion, marriage', OFri. ēwe, ē f.
+'law', OS eo, eu m 'law', OHG ēwa, ea, eo f. 'law, right, will, contract', MHG
+ēwe, ē f. 'marriage, alliance' (IE).
+Probably related to Lat. jūs, jūris n. ‘law' < *Hieu-es- and etymologically
+identical to *aiwa/ō- 1 (q.v.). Hardly to Lat. aequus 'level, equal' < *h₂eikwo-
+or to Skt. évās m.pl. 'conduct, habit, usage, custom' < *h₁oi-uo-, which is de-
+rived from the root *h₁ei- 'to go' (see *aidja- and *idōjan-).
+*aiwiska- adj. 'shameful' - MHG eisch adj. 'horrible'
+-
+*h₂eigwh-isk-o- (IE)
+- To Skt. an-ehás- adj. ‘flawless' < *ṇ-h₂eigwh-os-; unrelated to Gr. aloxos n.
+'shame', which could be reconstructed as *h₂eigwh-sk-es-, but was actually
+derived from aïdoμα 'to be ashamed' < *h₂éid-e- (Lamberterie 1990:
+835ff.).
+Also cf. the derived Go. aiwiski n. 'shame, disgrace' < *aiwiskja-, OE æwisc
+f. 'dishonour, disgrace, offence' <*aiwiskō- and Go. aiwiskon, ga-aiwiskon
+w.v. 'to ill-treat, make ashamed' < *aiwiskōjan-.
+-
+*aiwjan-w.v. 'to graze' — ON æja w.v. (pret. áða) ‘to rest, eat', Du. eeuwen
+w.v. 'to feed, graze' (GM).
+Usually interpreted as a causative formation to the root *h₂ekH- 'to eat',
+cf. Skt. āśayati 'to make eat' (for which cf. *agana-), starting from a pro-
+to-form *ahjan-. Still, the implied PIE causative *h₂okH-éie- should have
+given PGm. *agjan-, ON *egja, which is not the case. The connection with Du.
+eeuwen (also cf. MDu. eeusel n. 'pasture') < *aiwjan- (cf. De Vries 1962: 681)
+is therefore preferable.
+*aiza- n. 'ore, brass' - Go. ais, gen. aizis n. 'ore', ON eir n. 'brass, copper',
+Icel. eir n. 'brass, copper', OE ār, ær n. 'ore, brass, copper', E ore, OS ēr n.
+'ore', MDu. eer n. 'copper, metal', OHG ēr n. 'ore', MHG ēr n. ‘ore, iron'⇒"		
+alignment27-oven-rt-epenthetic	RingeTaylor2014	331	346	4	74	78	ofen	f4869a5cae2e83f5e09f35a22acc34ab2a91f723d03a463a012b76b322b5af6d	"PNWGmc *ufnaz ‘oven’ (ON ofn) > PWGmc *ofn (OF oven, OHG ofan) > OE ofn
+~ ofen (the latter is the only instance of the word in Ps(A))."		
+alignment27-oven-kroonen-upmost	Kroonen2013	558	598	1	474	482	*ufuman-	6969a9639a5ac84028f43b1805f6e94080abb027570291a9220917cba8e82200	"558
+*uftō
+Considering the etymology, the irregularities between the IE languages
+suggest that the word entered Germanic as a prehistoric Wanderwort
+adopted from an indigenous European language that was spoken before the
+arrival of the Indo-Europeans.
+*uftō adv. 'often' -Go. ufta adv. 'id.', ON oft adv. 'id.', Far. ofta adv. 'id.', OE
+oft adv. 'id.', E often, OS ofto adv. 'id.', OHG ofto adv. 'id.', G oft adv. 'id.' →
+*h₁up-to- (DRV).
+An adverb derived from *uba (q.v.).
+*ufuman- comp. 'upmost, highest' - Go. auhuma* comp. 'higher', auhumists
+superl. 'highest', OE ufemest superl. 'highest' *h₁up-mHo- (IE) - Skt.
+upamá- 'upmost, highest, next from below', YAv. upama-, upama- 'upmost,
+highest, closest'.
+An old adverbial comparative to *uba 'above'. In Gothic, the f was dissim-
+ilated to h, for which cf. Go. auhns 'oven' < *ufna-. The dissimilation was
+triggered by the labial environment.
+*uhjōn- w.v. 'to sound' - Icel. ýja w.v. 'to remind, drop a hint' ⇒ *uk-ie-
+(NEUR).
+A ie-present possibly related to *wahan- and *wōgjan- (Magnússon 1989:
+1164). Go. auhjon w.v. 'to sound' rather belongs to Latv. auka f. 'gale', SCr.
+uka f. 'shouting' < *Houk-eh2-.
+*uhsan- m. 'ox' - Go. auhsa, dat./acc. auhsau, gen.pl. auhsne, acc.pl.
+auhsnuns m. 'id.', ON uxi m. 'id.', Far. oksi m. 'ox; castrated bull', Elfd. ukse m.
+'id.', OE oxa m. 'id.', E ox, OFri. oxa m. 'id.', OS ohso m. 'id.', Du. os c. 'id.', OHG
+ohso m. 'id.', G Ochse m. 'id.' ⇒ *Huks-en- (IE) — ToB okso m. 'ox', Skt. ukṣán-,
+Av. uxšan- m. 'young bull', MIr. oss 'deer', MW ych 'ox'.
+-
+The Indo-European word for ‘ox'. It was inflected as an n-stem in Pro-
+to-Germanic, but in Gothic, it partly surfaces as a u-stem, probably due to
+leveling from the dat.pl. *uhsummiz < *uks-n-mis. Within PIE, the derivation
+of the word is unclear. It is usually compared to Skt. ukṣáti 'to moisten,
+sprinkle', Av. uxšiieiti 'to sprinkle, spray' through an original meaning ""in-
+seminator"" (cf. Pokorny IEW: 1118), but this is in contradiction with the
+fact that the word refers to a calf that has not yet procreated in Sanskrit,
+and to a castrated bull (i.e. 'ox') in Tocharian, Germanic and Middle Welsh.
+Kiehnle 1979 alternatively derived the word from the IE base *h₂ueks- 'to
+grow', for which see *wahs(j)an-.
+-
+*umbi- prep. 'around, about ON umb, um prep. 'id.', Far. um prep. 'id.',
+Elfd. um prep. 'id.', OE ymbe, ymb prep. 'id.', OS umbi prep. 'id.', Du. om prep.
+'id.', OHG umbi prep. 'id.', G um prep. 'id.' ⇒ *h₂nt-bhi (IE) — Skt. abhí adv.,
+-"		
+alignment27-ox-kroonen-zero	Kroonen2013	558	598	1	1735	1745	*uks-n-mis	6969a9639a5ac84028f43b1805f6e94080abb027570291a9220917cba8e82200	"558
+*uftō
+Considering the etymology, the irregularities between the IE languages
+suggest that the word entered Germanic as a prehistoric Wanderwort
+adopted from an indigenous European language that was spoken before the
+arrival of the Indo-Europeans.
+*uftō adv. 'often' -Go. ufta adv. 'id.', ON oft adv. 'id.', Far. ofta adv. 'id.', OE
+oft adv. 'id.', E often, OS ofto adv. 'id.', OHG ofto adv. 'id.', G oft adv. 'id.' →
+*h₁up-to- (DRV).
+An adverb derived from *uba (q.v.).
+*ufuman- comp. 'upmost, highest' - Go. auhuma* comp. 'higher', auhumists
+superl. 'highest', OE ufemest superl. 'highest' *h₁up-mHo- (IE) - Skt.
+upamá- 'upmost, highest, next from below', YAv. upama-, upama- 'upmost,
+highest, closest'.
+An old adverbial comparative to *uba 'above'. In Gothic, the f was dissim-
+ilated to h, for which cf. Go. auhns 'oven' < *ufna-. The dissimilation was
+triggered by the labial environment.
+*uhjōn- w.v. 'to sound' - Icel. ýja w.v. 'to remind, drop a hint' ⇒ *uk-ie-
+(NEUR).
+A ie-present possibly related to *wahan- and *wōgjan- (Magnússon 1989:
+1164). Go. auhjon w.v. 'to sound' rather belongs to Latv. auka f. 'gale', SCr.
+uka f. 'shouting' < *Houk-eh2-.
+*uhsan- m. 'ox' - Go. auhsa, dat./acc. auhsau, gen.pl. auhsne, acc.pl.
+auhsnuns m. 'id.', ON uxi m. 'id.', Far. oksi m. 'ox; castrated bull', Elfd. ukse m.
+'id.', OE oxa m. 'id.', E ox, OFri. oxa m. 'id.', OS ohso m. 'id.', Du. os c. 'id.', OHG
+ohso m. 'id.', G Ochse m. 'id.' ⇒ *Huks-en- (IE) — ToB okso m. 'ox', Skt. ukṣán-,
+Av. uxšan- m. 'young bull', MIr. oss 'deer', MW ych 'ox'.
+-
+The Indo-European word for ‘ox'. It was inflected as an n-stem in Pro-
+to-Germanic, but in Gothic, it partly surfaces as a u-stem, probably due to
+leveling from the dat.pl. *uhsummiz < *uks-n-mis. Within PIE, the derivation
+of the word is unclear. It is usually compared to Skt. ukṣáti 'to moisten,
+sprinkle', Av. uxšiieiti 'to sprinkle, spray' through an original meaning ""in-
+seminator"" (cf. Pokorny IEW: 1118), but this is in contradiction with the
+fact that the word refers to a calf that has not yet procreated in Sanskrit,
+and to a castrated bull (i.e. 'ox') in Tocharian, Germanic and Middle Welsh.
+Kiehnle 1979 alternatively derived the word from the IE base *h₂ueks- 'to
+grow', for which see *wahs(j)an-.
+-
+*umbi- prep. 'around, about ON umb, um prep. 'id.', Far. um prep. 'id.',
+Elfd. um prep. 'id.', OE ymbe, ymb prep. 'id.', OS umbi prep. 'id.', Du. om prep.
+'id.', OHG umbi prep. 'id.', G um prep. 'id.' ⇒ *h₂nt-bhi (IE) — Skt. abhí adv.,
+-"		
+alignment27-ox-kroonen-growth	Kroonen2013	566	606	1	744	755	*wahs(j)an-	268e9a717d0d3cb18a3256cc7a48a752e6aeb2ec33266c0356eb9148768759c7	"566
+*wahsa-
+(maken) n. '(to make) mention' < *ga-waga-. See further *wōgjan- and
+*uhjōn-.
+*wahsa- n. 'wax'
+-
+ON vax n. 'id.', Far. vaks n. 'id.', Elfd. waks n. 'id.', OE
+weax n. 'id.', E wax, OFri. wax n. 'id.', Du. was c. 'id.', OHG wahs n. 'id.', G
+Wachs n. 'id.' ⇒ *uoks-o- (IE) Lith. vaškas, Latv. vasks m. 'id.'; OCS vosk,
+-
+Ru. vosk, gen. vóska, SCr. vosak, gen. vöska m. ‘id.'.
+The Balto-Slavic forms are suggestive of a formation *uosk-o-. However,
+the neuter gender of the Germanic word could point to an s-stem nom.
+*uok-os, gen. *uok-s-os, in which metathesis could have affected the genitive
+case. The alternative is to reconstruct *uok-sko- and assume dissimilar dis-
+similation in Germanic and Balto-Slavic (Kortlandt 1979:59).
+-
+*wahs(j)an- s.v. 'to grow' — Go. wahsjan s.v. 'id.', ON vaxa, vexa s.v. 'id.', Far.
+vaksa s.v. 'id.', Elfd. weksa w.v. 'id.', OE weahsan s.v. 'id.', E to wax, OFri. waxa,
+wexa s.v. 'id.', OS wahsan s.v. 'id.', OHG wahsan s.v. 'id.', G wachsen s.v. 'id.' ⇒
+*h₂uég-s- (IE) — Gr. άέw 'to increase' < *h₂uég-s-e-; Skt. úkṣati 'to grow', Gr.
+auw 'id.' <*hzug-s-é-.
+-
+An s-extension to the more common IE base *h₂eug- 'to grow', for which
+see *aukan-. The Germanic dialects vary between the pure o-grade present
+*wahsan- and the apparently secondary ie-present *wahsjan-. See also
+*wahstu-.
+-
+Go. wahstus m. 'id.', ON voxtr m. 'growth;
+*wahstu- m. 'growth; stature'
+stature; yield', Far. vøkstur m. 'id.' (DRV).
+A tu-stem derived from *wahs(j)an- (q.v.). With a similar meaning, also cf.
+ODu. wa(h)smo, OHG wahsamo m. 'growth, fruit' < *wahsman-.
+*wai interj. 'woe' - Go. wai interj. 'id.', ON vei interj. 'id.', OE wā interj. 'id.',
+E woe, OS wē interj. ‘id.', Du. wee interj. 'id.', OHG wē interj. ‘id.', G Weh interj.
+‘id.' ⇒ *uai (IE) — Av. vaii-ōi, Arm. vay, Lat. vae, Olr. fáe, W gwae, Latv. vai
+interj. 'id.'.
+An IE interjection. See also *wainaga-.
+-
+*waigō- f. 'strength' - ON veig f. 'pith, strength'⇒ *uoik-éh2- (EUR) — Lith.
+dial. viēkas m. (also viekà f.) 'physical strength, century, age, lifetime', OCS
+věk, Ru. věk m. < *uoik-o-.
+Also cf. Icel. vo f. 'id.' < *waihō-. Related to *wihan- (q.v.).
+*waigra- adj. 'resistant' - MDu. we(i)ger adj. 'id.', OHG weigar adj. 'id.'⇒
+*uoik-ró- (DRV).
+A ra-stem derived from *wihan- (q.v). Also cf. OFri. weigeria, MDu.
+we(i)geren, OHG weigerōn, G weigern w.v. 'to refuse, reject' < *waigrōjan-."		
+alignment27-ox-ringe-plural-repeat	Ringe2017	307	318	2	1928	1935	*uhsin-	d629356822624c197fde0b547cb64a0c7b6f5f79b72dbb5b75373f5ff1a92a93	"in Early Runic, masc. -a (-ą ?) was the result of the same remodeling as in Gothic,
+      but that vowel was subsequently lost by regular sound change, and a new -i was
+      added on the model of the ijan-stems (see Lid , Syrett : –, and
+      Stiles, loc. cit.); the number of the latter was substantial, cf. Noreen : –,
+      and for comparative data Braune and Heidermanns : , Meid :
+      –;29
+   throughout NWGmc the fem. and neut. nom. sg. are reconstructable as *-ǭ, but
+      since the entire fem. oblique and the nom.-acc. pl. neut. exhibited stems in *-ōn-,
+      that can easily be the result of NWGmc paradigmatic leveling.
+This is a good example of how morphological remodeling can make reconstruction
+impossible.
+   For the most part, the masc. and neut. n-stem sufﬁx was *-in- in the oblique cases
+of the sg., but *-an- in other forms; it seems clear that in the neut. nom.-acc. pl. it was
+*-ōn-. However, the inherited neuters—a very small class, including only *namō-
+‘name’, *sēmō- ‘seed’, *ankwō- ‘butter’ (Jasanoff : ), and probably *wīmō- ‘osier’
+(cf. MLG wīme)—seem to have exhibited zero-grade *-n- in at least some cases of the
+plural. Both the fact that ON nafn has been remodeled as an a-stem30 and the Goth.
+dat. pl. namnam suggest that a-stem endings had spread to those plurals already in
+PGmc. Finally, it is clear that at least some masculines also exhibited zero-grade *-n-
+in at least some plural forms. Surviving Gothic examples of gen. pls. are aúhsne ‘of
+oxen’ and abne ‘of husbands’. It is not surprising that there is also a dat. pl. abnam;
+but acc. pl. aúhsnuns is a striking archaism, showing not only a zero-grade sufﬁx but
+also the expected consonant-stem ending, which has otherwise been eliminated from
+the n-stems in Gothic (Braune and Heidermanns : ). On the other hand, the
+ON plural stem yxn- ‘oxen’ (Noreen : ) must reﬂect *uhsin- because of the
+i-umlaut of its root. These considerations strongly suggest that the inherited n-stem
+paradigm still exhibited substantial sufﬁxal ablaut, in part lexically determined,
+though not all the details are reconstructable.
+   Since the inherited n-stems were polysyllabic consonant-stem nouns in PIE, we
+expect to ﬁnd Verner’s Law relics of original accent alternations especially among the"		
+alignment27-ox-rt-acc-reflex	RingeTaylor2014	34	49	2	146	150	oxan	cbbd273cdec2fb7b08b6766d46d00b3ecae56b3efacea3e508aab614a6f18083	"PGmc *uhso, acc. sg. *uhsany, nom. pl. *uhsiniz, obl. *uhsn- (Goth. gen. pl. auhsne,
+acc. pl. atthsnuns) >— ON oxi, oxa, yxn(-) ~ axn(-); OE oxa, oxan, oxan ~ cexen
+(> exen), gen. pl. oxna (the paradigms of OF oxa and OHG ohso have been
+regularized)."		
+alignment27-ox-rt-pl-reflex	RingeTaylor2014	34	49	2	152	156	oxan	cbbd273cdec2fb7b08b6766d46d00b3ecae56b3efacea3e508aab614a6f18083	"PGmc *uhso, acc. sg. *uhsany, nom. pl. *uhsiniz, obl. *uhsn- (Goth. gen. pl. auhsne,
+acc. pl. atthsnuns) >— ON oxi, oxa, yxn(-) ~ axn(-); OE oxa, oxan, oxan ~ cexen
+(> exen), gen. pl. oxna (the paradigms of OF oxa and OHG ohso have been
+regularized)."		
+alignment27-ox-rt-genpl	RingeTaylor2014	34	49	2	184	188	oxna	cbbd273cdec2fb7b08b6766d46d00b3ecae56b3efacea3e508aab614a6f18083	"PGmc *uhso, acc. sg. *uhsany, nom. pl. *uhsiniz, obl. *uhsn- (Goth. gen. pl. auhsne,
+acc. pl. atthsnuns) >— ON oxi, oxa, yxn(-) ~ axn(-); OE oxa, oxan, oxan ~ cexen
+(> exen), gen. pl. oxna (the paradigms of OF oxa and OHG ohso have been
+regularized)."		
+alignment27-ox-fulk-exin	Fulk2018	169	186	1	175	179	exin	76ae61a0aa383b7b7faf48ffcaec34da3e49d2846efd46a7d53a2db78c70a067	"$7.30 The an-stems
+169
+gen. pl. aúhsně ‘oxen', Olcel. nom. acc. pl. yxn, øxn, gen. yxna, øxna, dat. yxnum,
+øxnum (nom. sg. uxi, oxi), OE (chiefly Anglian) nom. acc. pl. oxen, exin, exen, gen.
+oxna, dat. oxnum (nom. sg. oxa). In these the PIE suffix took the form *-en- in the
+strong cases, rather than *-on-.² On Go. manna, see §7.27.
+The neuters are declined similarly in the genitive and dative. The nominative and
+accusative inflections may be illustrated by forms of Go. augō ‘eye' and its cognates:
+Go.
+OIcel.
+OE
+OS
+OHG
+nom. acc. sg. augō
+auga
+ēage
+ōga, -e
+ouga
+nom. acc. pl. áugōna
+augu
+ēagan
+ōgun, -on, -an
+ougun, -on
+A different type of neuter is represented by Go. nom. acc. pl. namna ‘names', i.e. with
+the ending -na rather than -ōna. Such neuters had PGmc. *-6 or *-ồ” in the nom. sg.,³
+just as the masc. nouns did, and so they were made masc. in WGmc. (Bammesberger
+1990: 167; Jasanoff 2002: 35). Besides namō, only PGmc. *sēmô (OHG sāmo ‘seed')
+and *ankwo (OHG ancho ‘butter') are of this latter type. On heteroclitic stems like Go.
+watō, dat. pl. watnam, see §7.42.
+1. As in the ōn-stems, §7.32. It is otherwise usually replaced by a-stem -a (but cf. §7.31 n. 8); cf. Runic gen.
+pl. arbijano 'heirs' on the Tune stone, ca. 400.
+2. This is the PIE ‘hysterokinetic' or 'hysterodynamic' type (§7.4), in which the final syllable bore the ac-
+cent: for discussion, see Kroonen 2011: 27–40. Similar is Go. gen. pl. abnē, dat. abnam ‘men': see Sen 2002,
+Johnsen 2005; probably also Olcel. bogna ‘bows'. This is not the origin of OE genitives like brōgna, which
+occur in the conservative language of poetry, and which must be assumed to show syncope (for the reasons
+offered by Brunner 1965: §276 Anm. 4).
+3. This ending is unexplained; the PIE ending was *-n, reflected in Skt. nāma, Lat. nōmen, OCS imę.
+7.31 Origin and development of an-stem inflections
+These nouns in PIE bore the suffix *-en-/-on-. The Gmc. an-stems mostly reflect the PIE
+amphikinetic type, with accent on the root in the strong cases (§7.4), the stem-formative
+suffix taking the form *-on- (*-ōn < *-on-s in the nom. sg.), but the form *-en- in the
+loc. sg. (and acc. sg.?), and elsewhere *-n- or *-n-.1 The weak grades of the suffix are all
+replaced by full grades in Gmc. Only Gothic retains significant traces of the original in-
+flections; in the other languages it is mostly the n-suffix that has become the inflection.
+Reconstruction of the development of these nouns presents many difficulties (some of
+them remarked by Ringe 2017: 306–8); the nouns and the weak adjectives must have
+exerted considerable mutual analogical influence. But the agreement of Go. and OHG
+on key points leads to the conclusion that originally -on- (becoming -an- or -un-: see
+under acc. sg. below) appeared in the acc. sg. and all cases of the plural, whereas *-en-
+appeared in the gen. dat. sg.
+*
+*
+*
+Nom.sg. PIE had the endings *-ōn (< *-on-s), *-ō (< *-ōn),² and *-ēn (< *-en-s),
+but probably not the oft-posited *-ē (< *-ēn; see Jasanoff 2002: 34–5). Any of these
+would account for Go. masc. -a. Olcel. -i is commonly derived from *-ēn (or from ana-
+logically created *-ē, *-ê, or *-ên; see, e.g., Jasanoff 2002: 31, 44), but the older Runic
+ending, which is well attested, is -a, and so a morphological refashioning is perhaps to
+be assumed. Only *-ô or *-ô” will account for the WGmc. masc. forms (continental
+Runic -o is attested from the end of the 6th cent. in boso (name) and leubo 'beloved
+man': see Euler 2013: 80), and the origin of the trimoric vowel in these, as elsewhere
+among the n-stems, is perplexing. Likewise, *-ô is required to explain Go. neuter -ō,"		
+alignment27-ox-fulk-exen	Fulk2018	169	186	1	181	185	exen	76ae61a0aa383b7b7faf48ffcaec34da3e49d2846efd46a7d53a2db78c70a067	"$7.30 The an-stems
+169
+gen. pl. aúhsně ‘oxen', Olcel. nom. acc. pl. yxn, øxn, gen. yxna, øxna, dat. yxnum,
+øxnum (nom. sg. uxi, oxi), OE (chiefly Anglian) nom. acc. pl. oxen, exin, exen, gen.
+oxna, dat. oxnum (nom. sg. oxa). In these the PIE suffix took the form *-en- in the
+strong cases, rather than *-on-.² On Go. manna, see §7.27.
+The neuters are declined similarly in the genitive and dative. The nominative and
+accusative inflections may be illustrated by forms of Go. augō ‘eye' and its cognates:
+Go.
+OIcel.
+OE
+OS
+OHG
+nom. acc. sg. augō
+auga
+ēage
+ōga, -e
+ouga
+nom. acc. pl. áugōna
+augu
+ēagan
+ōgun, -on, -an
+ougun, -on
+A different type of neuter is represented by Go. nom. acc. pl. namna ‘names', i.e. with
+the ending -na rather than -ōna. Such neuters had PGmc. *-6 or *-ồ” in the nom. sg.,³
+just as the masc. nouns did, and so they were made masc. in WGmc. (Bammesberger
+1990: 167; Jasanoff 2002: 35). Besides namō, only PGmc. *sēmô (OHG sāmo ‘seed')
+and *ankwo (OHG ancho ‘butter') are of this latter type. On heteroclitic stems like Go.
+watō, dat. pl. watnam, see §7.42.
+1. As in the ōn-stems, §7.32. It is otherwise usually replaced by a-stem -a (but cf. §7.31 n. 8); cf. Runic gen.
+pl. arbijano 'heirs' on the Tune stone, ca. 400.
+2. This is the PIE ‘hysterokinetic' or 'hysterodynamic' type (§7.4), in which the final syllable bore the ac-
+cent: for discussion, see Kroonen 2011: 27–40. Similar is Go. gen. pl. abnē, dat. abnam ‘men': see Sen 2002,
+Johnsen 2005; probably also Olcel. bogna ‘bows'. This is not the origin of OE genitives like brōgna, which
+occur in the conservative language of poetry, and which must be assumed to show syncope (for the reasons
+offered by Brunner 1965: §276 Anm. 4).
+3. This ending is unexplained; the PIE ending was *-n, reflected in Skt. nāma, Lat. nōmen, OCS imę.
+7.31 Origin and development of an-stem inflections
+These nouns in PIE bore the suffix *-en-/-on-. The Gmc. an-stems mostly reflect the PIE
+amphikinetic type, with accent on the root in the strong cases (§7.4), the stem-formative
+suffix taking the form *-on- (*-ōn < *-on-s in the nom. sg.), but the form *-en- in the
+loc. sg. (and acc. sg.?), and elsewhere *-n- or *-n-.1 The weak grades of the suffix are all
+replaced by full grades in Gmc. Only Gothic retains significant traces of the original in-
+flections; in the other languages it is mostly the n-suffix that has become the inflection.
+Reconstruction of the development of these nouns presents many difficulties (some of
+them remarked by Ringe 2017: 306–8); the nouns and the weak adjectives must have
+exerted considerable mutual analogical influence. But the agreement of Go. and OHG
+on key points leads to the conclusion that originally -on- (becoming -an- or -un-: see
+under acc. sg. below) appeared in the acc. sg. and all cases of the plural, whereas *-en-
+appeared in the gen. dat. sg.
+*
+*
+*
+Nom.sg. PIE had the endings *-ōn (< *-on-s), *-ō (< *-ōn),² and *-ēn (< *-en-s),
+but probably not the oft-posited *-ē (< *-ēn; see Jasanoff 2002: 34–5). Any of these
+would account for Go. masc. -a. Olcel. -i is commonly derived from *-ēn (or from ana-
+logically created *-ē, *-ê, or *-ên; see, e.g., Jasanoff 2002: 31, 44), but the older Runic
+ending, which is well attested, is -a, and so a morphological refashioning is perhaps to
+be assumed. Only *-ô or *-ô” will account for the WGmc. masc. forms (continental
+Runic -o is attested from the end of the 6th cent. in boso (name) and leubo 'beloved
+man': see Euler 2013: 80), and the origin of the trimoric vowel in these, as elsewhere
+among the n-stems, is perplexing. Likewise, *-ô is required to explain Go. neuter -ō,"		
+alignment27-ox-fulk-genpl	Fulk2018	170	187	1	3068	3072	oxna	2e4de65382ec04941f20e1ee5a6a0f36439b0ef6818dd301a56c3d5a571bcf5e	"170
+A Comparative Grammar of the Early Germanic Languages
+whereas the neuter endings in the other languages require *-ō""; PIE neuter *-ōn,
+however, is to be derived from *-on-h₂, just as PIE *phter is to be derived from *phter-
+s (§1.6 n. 1; see Jasanoff 2002: 33).5 Boutkan (1995b: 285–6) rather assumes analogical
+extension of *-ō(n) from the neut. pl.
+*
+Acc. sg. The PIE animate ending was *-en-m (see Szemerényi 1996: §7.3.1), but
+Gmc. requires *-on-m> *-on-um, in which *-on- should have yielded, in (N)WGmc.,
+*-un- before *u in the next syllable, whereas *-on- in EGmc. developed to *-an- (§5.5).
+This accounts for the OS and OHG endings, but OE (and Olcel.? see §5.5) must have
+extended *-
+*-an- from other cases to the acc.6 (The an-stem acc. unfortunately is not
+attested in early Runic.) Early Northumbrian galgu <*zalzun < WGmc. *3al3unum on
+the Ruthwell Cross suggests that OE originally had *-un- in this case. The neuters bore
+the same inflection as in the nom.
+Gen. sg. Only in Skt. is the original weak form of the n-suffix preserved, as in
+gen. sg. rājñaḥ ‘king'. The other IE languages generally point to *-en-es or *-en-os,
+giving PGmc. *-iniz, *-inaz. This accounts for Go. -ins and OS OHG -en. The Olcel.
+and OE endings must derive from forms with the PIE alternant *-on-, as in Gk. acc. sg.
+Saíuova ‘divinity' <*-on-m, or by analogical extension (ultimately from the nom. pl.?),
+as in the accusative. OHG -in here and in the dat. produces umlaut (e.g. nemin ‘name'),
+though the original root vowel is always restored outside of the earliest texts.
+Dat. sg. PIE *-n-ei is to be expected (cf. Skt. dat. rājñē), but the Gmc. ending is
+more likely to derive from loc. *-en-i or *-on-i. The former will account for Go. -in, OS
+OHG -en (CG), -in (UG); the latter (cf. Gk. äкμovi ‘thunderbolt') for Olcel. -a and OE
+-an, assuming early loss of *-i in third syllables (§5.2 n. 7).
+Nom. pl. PIE *-on-es gives PGmc. masc. *-aniz, which accounts for the Go. and
+OE endings. OS and OHG -on, -un are probably analogical to the acc. pl., whereas
+Olcel. -ar is modeled on the a-stem ending. As for the neuter, the cognates point to PIE
+*-ōn-h₂, as in Skt. nāmāni ‘names', in which *-ōn- may be a collective suffix (Jasanoff
+1980: 376). This should have produced PGmc. *-ōna, but *-a in this was replaced by
+*-ō, borrowed from the a-stems, with the NWGmc. development *-ōnō > *-ōnu > *-ūn.
+Acc. pl. Only Skt. preserves the original weak form of the suffix, as in rājñaḥ
+‘kings'. Gmc. reflects the suffix in o-grade, PIE *-on-ns > masc. *-on-unz, in which
+-on- should have developed to *-an- in EGmc. and *-un- in (N)WGmc. (see §5.5).
+This accounts for the OS and OHG endings, whereas the OE ending is analogical to the
+nom. plural. Olcel. shows the same development as in the acc. singular. Go. -ans may
+be due to the combined forces of haplology ($12.33 n. 6) in *-an-unz and analogical
+influence from the nom. plural. The neuter ending was the same as the nominative.
+*
+Gen. pl. PIE weak *-n-(OH)om finds expression in forms like Go. aúhsně (see
+§7.30) and OE oxna. However, in Gmc. there should be expected the reflex of a full-
+grade form of the suffix, *-on-, and this accounts for Go. -anē. The Olcel. ending -a,
+like the nom. pl. ending, seems to be analogical to the a-stem ending, whereas the
+WGmc. endings reflect *-ōn-ô”, which is perhaps borrowed from the ōn-stems (§7.32),
+probably via the weak adjectives (§9.8).
+Dat. pl. PGmc. *-miz (cf. a-stems, §7.8) was attached directly to the suffix *-on-,
+giving *-on-miz > *-ammiz in EGmc., *-ummiz elsewhere (§5.5). This accounts for all
+the endings except OHG -ōm, which was influenced by the ōn-stems, as in the gen. pl.
+1. The precise distribution of accentual and ablaut variants is not wholly agreed upon: e.g., to Szemerényi
+1996: §7.3.1 cf. Kroonen 2011: 28."		
+alignment27-rain-ringe-origin	Ringe2017	328	339	3	331	337	*regną	adf2d077943b9ef09a7547cc175e7803b06c37c5fdd093b1cbeacdb396bbcb6b	". The PGmc lexicon
+Shifts in the meanings of words and the replacement of old lexemes by new ones are
+universal types of language change; it is therefore not surprising that the lexicon of
+PGmc, like that of all IE languages, included many words of doubtful or unknown
+origin (e.g. *blōþą ‘blood’, *bainą ‘bone’, *handuz ‘hand’, *regną ‘rain’, *stainaz
+‘stone’, *gōdaz ‘good’, *drinkaną ‘to drink’, etc.). Much more interesting are PGmc
+lexemes that can be shown to have been borrowed from other languages, because
+they reveal something about the prehistory of PGmc; that is the phenomenon that
+will be discussed here.
+   Celtic loanwords in PGmc included at least *rīk- ‘king’, *īsarną ‘iron’, *ambahtaz
+‘servant’, *brunjōn- ‘mailshirt’, *lēkijaz (*lē- kijaz?) ‘physician’, *gīslaz ‘hostage’,
+*Rīnaz ‘Rhine’, and *walhaz ‘foreigner’ (an adaptation of the Celtic tribal name
+that appears in Latin as Volcae). The ﬁrst is identiﬁable as Celtic because of its
+vowel: if it were cognate with Lat. rēx, rēg- the PGmc vowel would be *ē, but in Celtic
+(alone among the languages of ancient Europe) *ē merged with *ī. The same
+argument might apply to ‘iron’, if was originally a vr̥ddhi-derivative of PIE *ésh2r̥
+‘blood’ (Cowgill 1986: 68, fn. 10). The other loans are identiﬁable as distinctively
+Celtic words or formations. ‘Physician’ appears to reﬂect *leagis, the preform of OIr.
+liaig; if the vowel sequence *ea was treated like native vowel sequences (which of
+course is not certain), the PGmc word might have had a trimoric vowel in its root
+syllable. ‘King’, ‘physician’, and ‘foreigner’ were clearly borrowed before Grimm’s
+Law applied; since the *b’s and *g of the other words reﬂect, or could reﬂect, original
+breathy-voiced stops, it is possible that all these words were borrowed before
+Grimm’s Law applied. The preponderance of words indicating social and political
+relations (including warfare) is obvious, suggesting that the Celts enjoyed a higher
+level of ‘civilization’ at the time of the loans. There are also quite a few words shared
+only by Celtic and Germanic, which might or might not be loanwords; typical
+examples include *tūną ‘fortiﬁed enclosure’, *aiþaz ‘oath’, *rūnō ‘secret’, *marhaz
+‘horse’, and *rīdaną ‘to ride’. For further discussion see de Vries 1960.
+   Latin loanwords in PGmc were, by contrast, very few (though the daughter
+languages exhibit very many). In addition to *Rūmōnīz ‘Romans’ (see .. (i),"		
+alignment27-raven-rt-mn	RingeTaylor2014	330	345	15	76	82	hreemn	7de91290cb0da049fc5c486b0c04ca5a2604e29f30d9421dfaabf0772a01940c	"PNWGmce *hrabnaz ‘raven’ (ON hrafn) > PWGmc *hrabn (OHG raban) >
+OE hrefn > hreemn;"		
+alignment27-raven-rt-late	RingeTaylor2014	331	346	2	49	56	hreefen	117bd8d0a48058aa4b781ce18bd5338532dd7eadb1e3380cbe16a2f3cf9485e1	"In late WS we also find swefen, rarely begen and hreefen; it seems likely that the
+epenthetic vowels in those forms are later developments. However, at least two
+words exhibit epenthetic e in early documents:"		

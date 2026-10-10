@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and258 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5116 evidence
-records,1390 actual consultations,5318 positions,446 comparisons and513
+393 applicability screens per source. The database contains5177 evidence
+records,1390 actual consultations,5384 positions,448 comparisons and552
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:209 core rows are bounded and184 unreviewed.
+explanation remain ongoing:217 core rows are bounded and176 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,205 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-seventh alignment: numeral warrants, paradigm cells and shared components
+
+Nine, nose, one, oven, ox, rain, rainbow and raven, rows2142-2149,
+continue the research from released678eafa6. All79 inherited identities
+are individually reconciled. Twenty-seven exact native occurrences and34
+scoped arguments add61 records, not61 new consultations or independent
+author votes. Five focused positions reuse evidence and39 reasons are
+added. The145 analytical positions link139 distinct records. Reversible
+receipts record98 SOURCE fields; no consultation identity or status changes.
+Existing image verification and confidence survive. Newly quoted native
+text remains text_checked, never newly certified against original images.
+
+### Nine: vowel trigger and velar origin are separate questions
+
+Kroonen's cardinal entry starts with *newun-, and its continuation
+argues for secondary West Germanic *niwun. His velarization requires
+two high vowels, one rounded; e-raising before following u supplies
+the proposed environment. The next ordinal entry is not a replacement
+for the cardinal. Orel's cardinal and IE comparisons remain separate
+evidence [@Kroonen2013, pp.389-390; @Orel2003, p.285].
+
+Ringe's PIE-to-Germanic discussion distinguishes syllabic-n development,
+analogy to ten with added final t, and the later retained final n.
+His qualified w-loss and possible analogy do not support one universal
+deletion rule. The nasal and numeral arguments must be read together,
+not reduced to matching final strings [@Ringe2017, pp.161-163,229-230].
+
+Fulk's medial-w account predicts loss before u, with restoration in
+paradigms possible. His numeral discussion favors subsequent
+raising/contraction and probable inorganic gamma in North Sea Germanic
+to preserve a parallel with disyllabic ten. The explicit rejection of
+Euler's PWGmc *newun is retained. His earlier footnote also retains
+possible u-raising but reports Ross and Berns's inflected *niwuni-
+trigger; that report is not an independently consulted original or
+Fulk's exclusive replacement history. Norse disyllabicity, stress,
+rhythm, analogy and the Prokosch lengthening discussion are not
+collapsed into the origin of English g
+[@Fulk2018, pp.57-59,120-121,226-228].
+
+Ringe-Taylor explicitly leaves northern WGmc *nigun unexplained.
+Its *tegapa (?) is a tenth-ordinal comparandum, not nine's precursor.
+The later Northumbrian nigon example establishes a velar blocker of
+back umlaut, not the historical origin of that blocker. The focused
+`nine-velar-origin-and-trigger` comparison therefore preserves distinct
+warrants and acknowledged gaps. Its cause remains unestablished:
+no exclusive e-versus-i dispute or new chronology is manufactured
+[@RingeTaylor2014, pp.165-167,323-325].
+
+### Nose: root alternatives, stem ancestry and attestation
+
+Kroonen's *nasō- ~ *nusō- leaves the root a/u relation unclear and
+suggests secondary zero grade after remodeling. His reported Kortlandt
+s-stem proposal is distinct from the traditional a-vocalism account.
+The long-root-o Nordic snout/muzzle comparison and possible old-dual
+nostril derivative are related formations, not alternative singular
+quotations of the selected nose input. Orel calls *nasō an old dual and
+retains mixed daughter stem classes. Neither entry proves CAPR's
+selected *núsō ending or root vocalism
+[@Kroonen2013, p.383; @Orel2003, p.281].
+
+Ringe explicitly places full-grade *nas- among surviving PGmc consonant
+stems; this local prose, not the book title, warrants the date repair.
+Ringe-Taylor's early OE feminine u-stem nosu is attestation and later
+class history. The following calf z-stem discussion is another etymon,
+not a newly supplied nose paradigm. RT/nose remains discussion_only;
+no Fulk nose consultation is invented [@Ringe2017, pp.221-223;
+@RingeTaylor2014, pp.384-386].
+
+### One: old i-stem, conditioned raising and two comparanda
+
+Kroonen's actual one entry is printed11. His age/eternity entry on16
+relates the root family while distinguishing thematic and earlier u-stem
+formations; the law homonym is separate. The piecewise holding navigation
+does not license citing nominal sheet-derived pages as printed folios.
+Orel and Ringe supply their own cardinal citations
+[@Kroonen2013, pp.11,16; @Orel2003, p.9; @Ringe2017, p.229].
+
+Fulk's old i-stem argument uses accusative and compound evidence, not
+the selected nominative ān. His composition-vowel reasoning favors
+*aini- over *aina- for eleven, but other compounds allow alternatives.
+Gothic ainlibim is the attested dative, not a manufactured nominative.
+The starless index labels and body occurrences remain distinct.
+His printed225 footnote explicitly considers Ringe-Taylor's phonological
+account [@Fulk2018, pp.222,225,227-228,386].
+
+Ringe-Taylor's native *ainang and *anine are retained without silent
+glyph restoration. Its proposed raising concerns unstressed open a
+between n's with the first n preceded by a high-front vocalic.
+The initial account regards transfer of i-pronoun morphology as less
+likely, but adjective, participle and morning comparisons challenge
+the original domain and dating. PGmc rather than NWGmc placement
+remains possible; extensive leveling and need for further study are
+explicit. This is not a new universal unstressed law adopted by CAPR
+[@RingeTaylor2014, pp.17-21].
+
+On120, *ain belongs to PWGmc one, whereas *twaijo, *twaimi, *twai,
+*-n(-) and *twa belong to two's comparison. Cowgill's reported ancient
+endingless alternative does not automatically receive a PWGmc date.
+The focused `one-accusative-raising-and-istems` case compares the
+inflectional and phonological warrants, including their alternatives;
+it leaves the cause unexplained rather than asserting exclusive
+morphology-versus-phonology opposition [@RingeTaylor2014, pp.119-121].
+
+### Oven: qualified consonant alternatives and early epenthesis
+
+Kroonen considers h more probably secondary to f and compares labial
+dissimilation in the upmost entry. Swedish g is dissimilation from ufn,
+not a quoted third *ugna protoform. His prehistoric indigenous-European
+Wanderwort suggestion remains qualified. Orel calls f a phonetic variant
+of velar/labiovelar alternatives, yet the companion entry acknowledges
+phonetic problems and the Mycenaean i-po-no argument for archaic f.
+Separate-family, Wanderwort and Greek-borrowing accounts are reported
+alternatives, not an exclusive f-first/h-first dispute
+[@Kroonen2013, pp.557-558; @Orel2003, p.433].
+
+Ringe's Gothic aúhn is accusative-only anti-Kluge evidence, not a
+reconstructed selected nominative. Ringe-Taylor separately quotes
+PNWGmc *ufnaz, PWGmc *ofn and OE ofn/ofen. The sole Ps(A) oven
+instance with ofen is genuine early light-syllable epenthesis evidence;
+the complete cluster and timbre qualifications remain relevant
+[@Ringe2017, pp.136-140; @RingeTaylor2014, pp.329-332].
+
+### Ox: n-stem grades, repeated cases and quantity limits
+
+Kroonen's probable partial Gothic u-stem leveling uses the dative-plural
+history. His inseminator derivation faces the unprocreated-calf/castrated
+semantics; Kiehnle's growth alternative remains reported. The actual
+grow cross-reference preserves s-extension, variant grade and apparently
+secondary j-present rather than adopting that root with certainty.
+Orel retains the n-stem and comparative argument, including the reported
+Turkic proposal [@Kroonen2013, pp.558,566; @Orel2003, pp.433-434].
+
+Ringe distinguishes remodeled nominative and *uhsin-/*uhsn- suffix grades;
+Norse plural umlaut requires the full suffix grade. The sample n-stem
+table on312-313 is not an ox table. The inherited nominative on149
+retains its original-image quantity limit; new native text does not
+remove it [@Ringe2017, pp.149,306-308,312-313].
+
+Fulk supplies actual Anglian oxen/exin/exen and oxna plus the general
+hysterokinetic en/zero-grade discussion. General reconstructed endings
+are not lexical ox reconstructions, so Fulk/ox remains discussion_only.
+RT's explicitly PGmc *uhso, *uhsany, *uhsiniz and *uhsn- keep their
+native quantity and ending spellings. Its two oxan occurrences belong
+to distinct accusative and plural cells and receive separate spans;
+oxna is separately genitive plural [@Fulk2018, pp.168-172;
+@RingeTaylor2014, pp.33-35].
+
+### Rain and rainbow: local components, not global shared rewrites
+
+Kroonen leaves rain's root origin uncertain, with flow plausible and
+the dampness-root connection more doubtful. Orel's neuter citation
+retains explicitly masculine daughter reflexes and an/az alternatives;
+its no-derivative account is conditional and its Greek wet/rain
+comparison rejected. Ringe's Kluge counterexample and doubtful/
+unknown-origin list are separate occurrences. The following Celtic
+loan list does not classify rain as a loan
+[@Kroonen2013, p.408; @Orel2003, p.300; @Ringe2017, pp.137,328].
+
+RT's actual rain chains in palatalization and no-epenthesis arguments
+are separately retained, including its PWGmc masculine premise.
+For rainbow, only Orel supplies the whole compound. Kroonen's rain
+and bow nouns are components; the bend verb is family evidence.
+Ringe's *baugaz arm-ring is another bend-family noun, not a bow
+component. Its local PGmc noun-formation context supports its date
+without making it the whole compound. Shared bow SOURCE and outside
+row1963 analyses remain unchanged; rain's SOURCE repairs do not
+overwrite rainbow's row-specific component relation. The complete
+bow/bend arguments retain the uncertain Sanskrit connection
+[@RingeTaylor2014, pp.211-213,329-332; @Orel2003, pp.43-44,61,300;
+@Kroonen2013, pp.61-62,82,408; @Ringe2017, p.324].
+
+### Raven: older cells and the thematic endpoint
+
+Kroonen's entry ends on240, not241. It distinguishes *hrab/ppan-,
+the thematic *hrabna-, original nominative *hrabō and genitive
+*hrappaz, with contamination and probable onomatopoeic origin.
+Orel's thematic noun from an n-stem and imitative account retain the
+reported alternative comparisons [@Kroonen2013, p.240;
+@Orel2003, pp.182-183].
+
+RT's PNWGmc-to-PWGmc-to-OE history normally lacks epenthesis after
+a light syllable. Rare late West Saxon hreefen is separate from the
+ordinary hrefn/hreemn outcomes. Native ee and consonant strings are
+preserved, not silently converted into newly image-certified spellings
+[@RingeTaylor2014, pp.329-332].
+
+### Boundaries and current measurements
+
+All eight whole-row causes and both focused causes remain unestablished.
+Local reported/conditional claims, comparative stems, genuine later
+attestations and source-native limitations stay queryable. Totals are5177
+forms,1390 consultations,5384 positions,448 comparisons and552 rationales;
+217 bounded/176 unreviewed core rows. All786 dictionary identities remain,
+with1773 dictionary evidence records. The two new receipt tables retain
+exact old/new SOURCE fields and independently recoverable native spans.
+No corpus/input/stage/context/FST/baseline adoption, new assay, PDF,
+automatic27 release or28 start is included. Full393-row alignment and
+the aggregate explanatory/class programme remain unfinished.
 
 ## Twenty-sixth alignment: lexical identity, dental alternatives and repeated cells
 

@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5116 evidence records,1390 actual consultations and5318
-analytical positions, with446 comparisons and513 rationales. The RT
+There are5177 evidence records,1390 actual consultations and5384
+analytical positions, with448 comparisons and552 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred nine core rows now have individually reconciled, bounded alignment:
-1933-2141. The remaining184 are unreviewed. The second tranche builds on
+Two hundred seventeen core rows now have individually reconciled, bounded alignment:
+1933-2149. The remaining176 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,54 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-seventh tranche completes nine, nose, one, oven, ox, rain,
+rainbow and raven, rows2142-2149, after released26 base678eafa6.
+All79 inherited analytical identities survive. Twenty-seven native
+literal occurrences and34 scoped arguments add61 records; five focused
+positions reuse evidence and39 rationales are added. The145 positions
+link139 distinct records. Exact reversible SOURCE receipts cover98
+fields:76 cells,12 stages, two arguments, seven page locators and one
+reported-author attribution. No consultation identity or status changes.
+
+Nine's velar-origin question is distinct from its later blocking of
+back umlaut. One's accusative raising, old i-stem and compound evidence
+are distinct from two's paradigm and Cowgill's reported endingless
+alternative. Their two focused substantive comparisons remain
+unexplained, not exclusive competing laws
+[@Kroonen2013, pp.389-390; @Fulk2018, pp.57-59,120-121,222,225,226-228;
+@RingeTaylor2014, pp.17-21,120,165-167,323-325].
+
+Nose's PGmc consonant stem is not its OE u-stem. Fulk/ox and RT/nose
+remain discussion_only. Oven's qualified f/h histories do not supply
+a third g-protoform. Distinct ox accusative/plural occurrences and
+native quantity limits survive. Rainbow's component relations are
+row-specific: shared bow/rain SOURCE and outside-row analyses remain
+unchanged. Raven's older n-stem cells are not its thematic citation
+[@Kroonen2013, pp.61-62,82,240,383,408,557-558,566;
+@Orel2003, pp.182-183,281,300,433-434;
+@Ringe2017, pp.136-140,221-223,306-308,312-313,324,328;
+@Fulk2018, pp.168-172; @RingeTaylor2014, pp.33-35,211-213,329-332,384-386].
+
+All eight whole-row causes remain unestablished; selected inputs and
+stages are unchanged. The new receipts are
+`reading_accountability/alignment-2142-2149-amendments.tsv` and
+`reading_accountability/alignment-2142-2149-occurrences.tsv`.
+Never execute/import the persisted tranche27 candidate. Current SOURCE,
+receipts and regressions are authority. The full393-row alignment,
+aggregate class census and explanatory synthesis remain unfinished.
+No scientific adoption, publication, automatic27 release or28 start.
+
+Independent closeout preserves5116 inherited forms except98 exact
+fields,5239 outside positions,438 unaffected cases,513 inherited reasons,
+1356 outside consultations,81 unaffected research hashes and46 scientific
+hashes. All27 native paragraph hashes and whole-token spans independently
+resolve. Canonical refresh is clean without a scientific rebuild.
+The combined339-test run had two expectation-only failures; both are
+corrected, and the11-test targeted rerun passes. All57 new-prose
+printed-page references, bibliography, locators and whitespace pass.
+Alignment independently refuses176; the RT conventions refusal remains
+separate and unchanged.
 
 The twenty-sixth tranche completes neck, need, needle, nest, net,
 nettle, night and nightmare, rows2134-2141, on released25 basee8453591.
