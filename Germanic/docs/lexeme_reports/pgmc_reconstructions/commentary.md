@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and258 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5011 evidence
-records,1390 actual consultations,5199 positions,442 comparisons and448
+393 applicability screens per source. The database contains5116 evidence
+records,1390 actual consultations,5318 positions,446 comparisons and513
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:193 core rows are bounded and200 unreviewed.
+explanation remain ongoing:209 core rows are bounded and184 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,257 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-sixth alignment: lexical identity, dental alternatives and repeated cells
+
+The released twenty-fifth tranche is e8453591. This increment covers
+neck, need, needle, nest, net, nettle, night and nightmare, rows2134-2141.
+All91 inherited analytical identities are individually reconciled.
+Twenty-eight native whole-token occurrences and31 scoped arguments add59
+records; one previously unlinked, original-image-checked Cercignani nest
+record receives an analytical position in its existing consultation.
+Five focused positions reuse evidence rather than create new testimony.
+The156 positions link151 distinct records;36 rationales distinguish
+position support from an explanation of inter-author divergence.
+
+The120 reversible SOURCE amendments comprise91 cells,12 local stage
+fields, seven arguments and10 page locators. The one actual consultation
+status amendment concerns Ringe-Taylor/nettle: a newly isolated,
+explicitly PWGmc precursor supports evidence_found, whereas the previously
+recorded OE netle attestations alone supported discussion_only. No new
+consultation identity, target, scope or applicability owner is created.
+Original diplomatic forms, comparison strings, verification and confidence
+remain intact. Particularly, an image-certified cross-reference is not
+relocated to its headword page merely because that headword is now read.
+
+### Neck: a conditional paradigm is not a dated selected input
+
+Kroonen's account must be read across the entire neck entry rather than
+as a choice between two header strings. It distinguishes at least two
+ablauting n-stems: an e-bearing Ingvaeonic formation and an a-bearing
+Nordic/High-German formation. A zero-grade formation is apparent rather
+than a recovered universal third cell. The Tocharian neck comparison
+motivates a possible PIE paradigm with nominative, genitive and
+accusative-plural forms; the proposed regular Germanic outcomes are
+apparently remodeled. The e-bearing remodeled nominative is not identical
+in evidential status to the header stem or the inherited a-bearing
+genitive/accusative material. Each inherited form has its own relation,
+cell and qualification [@Kroonen2013, p.234].
+
+The top/summit senses are consequential comparative evidence: they
+support a likely borrowing of the Celtic hill word from Germanic,
+rather than a reason to assume the opposite donor direction. Orel's
+a-bearing nape alternatives and probable conch-grade connection are
+different questions; his bibliography's hill/press proposals remain
+reports, not independently reviewed author votes. Neither dictionary
+quotes the selected e-bearing input with its exact CAPR stress and
+ending [@Kroonen2013, p.234; @Orel2003, p.179].
+
+Ringe's objection is not a typographic mismatch. He constrains the
+proposed Kluge-law environment, examines absent nasal evidence and
+counterexamples, rejects the sound law as inadequately supported, and
+prefers a sound-symbolic explanation for the Northwest Germanic
+geminates. His neck citation is explicitly PNWGmc and retains the
+original double macron. That endpoint must not be relabeled PGmc
+because CAPR presently enters its selected form at pgmc. Faithfully
+recording Ringe's alternative does not adopt sound symbolism as a
+CAPR law, nor justify a new input through output fit
+[@Ringe2017, pp.137-140].
+
+The focused neck comparison therefore preserves a substantive difference
+in reconstruction warrants. It does not claim a named Kroonen/Ringe
+rebuttal, a recovered common paradigm or an established inter-author
+cause. The selected neck input, its early-analogy classification and
+its stage owner remain unchanged.
+
+### Need: homographic endpoints do not identify etyma
+
+The inherited Ringe-Taylor records on p.250 were attached as if they
+quoted the selected need etymon. The passage actually labels its
+PWGmc ui-bearing precursor 'desire, eagerness'; its subsequent io and
+WS ie forms belong to that history. The shared written endpoint nied
+does not demonstrate identity with the au-bearing need/compulsion
+etymon. These three records are now explicit comparanda, not erased
+consultation history, a proved same-family relationship or a fabricated
+opposition between authors [@RingeTaylor2014, pp.249-251].
+
+The actual need history is present in the same work on p.246. It supplies
+PGmc noun/stem alternatives, a PWGmc precursor, fronted and WS-mutated
+intermediates, and Anglian endpoints, with the meaning 'force, compulsion,
+necessity'. Seven separately receipted native tokens retain the holding's
+degraded dental and accent glyphs. They are not silently restored from
+the selected input or from another author's typography. This addition
+repairs a missed relevant passage without creating a second consultation
+or treating the two Ringe volumes as independent votes
+[@RingeTaylor2014, pp.245-247].
+
+Kroonen derives the need ti-stem from the destruction/corpse root; the
+corpse i-stem has a distinct zero-grade history and the compel verb is
+a separate derivative. Orel's qualified Prussian identification and
+other Baltic/Slavic comparisons must retain their different strengths.
+Ringe explicitly includes the dental alternatives in expected PGmc
+Verner alternations: Gothic final-devoicing leveling alone cannot
+explain every West Germanic voiceless dental. That complete argument
+supports the repaired local PGmc labels, independently of confidence,
+but not equivalence of every dental sign or a complete selected iz
+cell [@Kroonen2013, p.385; @Orel2003, p.282;
+@Ringe2017, pp.302-305].
+
+### Needle: genuinely alternative dental explanations
+
+The instrumental noun and its sewing base are related, not interchangeable
+selected cells. Kroonen's metathesis account and Nordic spindle comparison
+preserve possible s-mobile and Verner effects. His sewing continuation
+also leaves the absent s unexplained; it does not authorize treating all
+s-bearing and s-less forms as one normalized input. The Nordic spindle
+formation is not the corpus's OE spinl etymon
+[@Kroonen2013, pp.385-386,388].
+
+Orel's needle entry on p.287 cross-refers to the sewing headword on p.286.
+The existing certified p.287 cross-reference retains its original page
+and identity; the actual p.286 headword receives a separate native
+occurrence receipt. The same discipline applies below to dragnet and
+the nettle base. A cross-reference is evidence in its own location,
+not a misplaced headword quotation [@Orel2003, pp.286-287].
+
+Ringe's dental alternatives have two genuinely different proposed
+explanations: distinct instrument suffixes, or collective/base accent
+and Verner alternation. The complete argument does not choose between
+them for us. Ringe-Taylor's explicitly PGmc/PWGmc alternatives occur
+in an actual needle example of absent final-Cl epenthesis; the coronal,
+labial-fricative and palatal conditions are not proof that a vowel was
+inserted into this word. Thorn, d and selected ð remain distinct
+representational/historical questions
+[@Ringe2017, pp.302-305; @RingeTaylor2014, pp.328-331].
+
+### Nest: occurrence, recoverability and chronology are different claims
+
+Kroonen supplies the familiar down-adverb plus zero-grade sit formation.
+Orel preserves the i-bearing neuter citation alongside irregular
+comparative reflexes. Neither stem alone supplies the selected full
+nasal ending. Ringe's i citation and questioned e alternative coexist;
+West-Germanic-only survival makes the lowering history puzzling rather
+than demonstrating a uniform author disagreement about the root
+[@Kroonen2013, p.391; @Orel2003, p.287; @Ringe2017, pp.119-120].
+
+Ringe-Taylor's questioned e-form is an own conditional PGmc alternative,
+governed by the same explicit label as the i-form. The PIE token is
+the family ancestor, not an unrelated item. The general epenthesis/
+syncope discussion previously linked from p.330 has no nest example.
+It remains comparative process context with that exact limit, not a
+direct nest suffix-vowel history. Recovering the relationship of an
+inherited process record is as important as recovering a clipped
+word [@RingeTaylor2014, pp.33-35,329-331].
+
+Fulk expressly treats nest and wer as undeniable lowering examples and
+contrasts Ringe-Taylor's unexplained cases in his footnote. His method
+prefers a Northwest Germanic date while allowing a PGmc one. Cercignani
+quotes PGmc nistaz in p.127 footnote7 but rejects both common PGmc and
+Northwest Germanic umlaut dating. His p.131 discussion of nest/nisten
+adds probable genitive leveling and explicit material limits. The
+already certified nest quotation is reused; only its phonemic slash
+wrapper is removed analytically, never its az ending
+[@Fulk2018, pp.55-59; @Cercignani1980, pp.126-132].
+
+The focused case separates a direct stated contrast about whether the
+lowering is explained, a methodological dating preference, and a rejection
+of common-stage umlaut. Those are not one exclusive two-sided dispute.
+Neither the focused case nor the whole row has an established causal
+explanation. Cercignani's inventory/resistance and analogy account is
+recorded as his argument, not adopted lexical variability in CAPR.
+
+### Net and nettle: related formations, not flattened citations
+
+Kroonen's net is a collective to an unattested bind root. The Nordic
+lengthened-grade net, caul derivative and nettle base are separately
+related formations; the adjacent make-wet verb is not the selected
+net etymon. Ringe's lengthened-grade knot collective yielding Nordic
+dragnet is same-family evidence, not an alternative selected nett
+cell [@Kroonen2013, p.384; @Ringe2017, pp.90-91].
+
+Orel's net entry spans pp.281-282 and cross-refers to nōtō on p.282.
+The actual headword is on p.289. Both locations now remain independently
+represented. Ringe-Taylor's PWGmc label governs the citation and the
+geminated net stem together, but the later clipped endpoint remains
+native text, not a silently completed or quantity-normalized word
+[@Orel2003, pp.281-282,289; @RingeTaylor2014, pp.237-239].
+
+For nettle, the old diminutive, base n-stem and apparent Faroese zero
+grade are separate. The Baltic/Slavic dental and the net-making
+etymology motivate Kroonen's preference for borrowing from Germanic
+over Wanderwort/substrate; Celtic and Greek connections retain their
+qualifications. This is an actual donor-direction argument, not a
+generic 'loan' label. Orel's p.281 base cross-reference and p.282
+headword likewise remain distinct [@Kroonen2013, p.384;
+@Orel2003, pp.281-282].
+
+Ringe-Taylor explicitly gives a PWGmc precursor and OE netele in the
+light-syllable retention passage. The later netle examples are actual
+OE attestations. The reported l-adjacent syncope proposal, its temporal/
+environmental restrictions and subsequent anaptyxis must be read alongside
+the author's arrested-change/stable-variation account. We preserve that
+stance without importing lexical diffusion or grammatical conditioning
+into CAPR's exceptionless sound laws. Extracting the actual reconstructed
+precursor justifies the one receipted status upgrade; the two attested
+tokens alone did not [@RingeTaylor2014, pp.268-276].
+
+### Night: repeated cells and the selected-input boundary
+
+Kroonen proposes a static t-stem and says 'I assume' of the initial-dental
+PIE preform. The dark adjective comparison is consequently load-bearing,
+but its complete entry retains competing a/i options and a coexistence
+question. Light supplies a parallel t-suffix argument; the notation in
+that entry and in the night paragraph is not harmonized into an assembled
+quote. Orel's no-labiovelar statement is a bibliography report of Peeters,
+not another independently consulted source
+[@Kroonen2013, pp.96,333,381; @Orel2003, pp.279-280].
+
+Ringe's body accusative and table accusative are distinct occurrences.
+The complete table adds independent genitive and plural cells, including
+questioned dative/instrumental endings and a native space-plus-combining-
+macron genitive. Repeated nahtiz is not deduplicated across genitive
+singular and nominative plural. Source transcription need not obey
+the executable Foma single-codepoint constraint
+[@Ringe2017, pp.242-243,312-313].
+
+Ringe-Taylor's eight PWGmc table cells retain their own identities and
+the expressly hypothetical dative/instrumental syncretism. The PGmc
+genitive, dative and nominative-plural examples share a stage label
+before converging on one PWGmc form; convergence does not erase the
+earlier cells. The subsequent broken/mutated forms and opposing dialectal
+leveling histories do not establish that the selected niht is originally
+nominative [@RingeTaylor2014, pp.116-118,240-241].
+
+The later ending argument starts from night dative niht and explicitly
+supplies both PWGmc and PGmc labels for its precursor. The two attributed
+labels are retained rather than choosing one from spelling or confidence.
+Regular final-i loss likely precedes spreading the zero ending to day,
+though an earlier analogical day i-form remains possible. That hypothetical
+ending belongs to day; haimu is a home instrumental comparandum. The
+second niht reference concerns adverbial genitive analogy, not another
+dative quotation. None of these observations adopts the selected i-final
+input's exact case or genealogy [@RingeTaylor2014, pp.379-381].
+
+### Nightmare and the completion boundary
+
+Orel's nightmare is the spirit noun, not horse mare, carrot or a tender
+adjective. Kroonen's existing bounded negative remains untouched.
+Ringe-Taylor separates the PNWGmc n-stem, PWGmc nominative/oblique,
+undated front intermediates and OE mare/maran/mere. The retained front
+form prevents a blanket assertion that every n-stem retracts. Preceding
+stage labels are not automatically carried over every unlabeled arrow
+[@Orel2003, p.262; @RingeTaylor2014, pp.190-193].
+
+The tranche closes eight actual bounded alignments, not eight recovered
+complete histories. Both focused causes and all eight whole-row causes
+remain unestablished. The current totals are5116 records,1390 actual
+consultations,5318 positions,446 cases and513 rationales;209 core rows
+are bounded and184 remain unreviewed. All786 dictionary identities remain,
+with1753 dictionary records. SOURCE, receipts and regressions are authority;
+the one-use persisted candidate must never be executed or imported again.
+Selected corpus/input/target/stage/context, FSTs and scientific baselines
+are unchanged. No introduction revision, PDF or automatic tranche26
+release or tranche27 start is included.
 
 ## Twenty-fifth alignment: oblique triggers, ancestral accents and lexical units
 

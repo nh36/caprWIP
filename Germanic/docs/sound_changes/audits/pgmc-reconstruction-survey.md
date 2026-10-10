@@ -8,6 +8,184 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-sixth alignment checkpoint: neck through nightmare
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Branch update; released25 basee8453591bc6de4f3b57283bef1876ceee2054e7a.
+The user's request authorizes25 release and26 execution, not automatic
+26 release or27 start. Rows2134-2141: neck, need, needle, nest, net,
+nettle, night and nightmare.
+
+### Question
+
+Hypothesis: inherited generic units conflate homographic need/desire
+endpoints, dental explanation alternatives, comparative epenthesis
+with nest history, and repeated night cells with a selected nominative.
+Complete held arguments can refute each conflation separately.
+Matching strings, author count and successful output do not identify
+an etymon or establish a dated selected-input history.
+
+### Current state (before edits)
+
+The immutable preparation pins5057 forms,1390 consultations,
+5253 positions,444 comparisons,477 rationales,201 bounded/192
+unreviewed core rows,91 inherited analytical identities and85
+research hashes. The46 protected scientific hashes are not repinned.
+Research protocol, full template, current SOURCE, original-certified
+evidence and prior receipts are consulted.
+
+Existing executable characterization, firing census, principal traces
+and counterfactual behavior: n/a. No executable investigation or
+scientific production modification is proposed. All eight selected
+inputs remain pgmc; source labels do not migrate those owners.
+
+### Diagnosis
+
+All91 inherited identities are individually reconciled and preserved.
+One previously unlinked, image-certified Cercignani nest quotation
+receives an analytical position without new consultation. Twenty-eight
+literal occurrences and31 scoped arguments add59 records; five focused
+positions reuse evidence and36 rationales are added. The156 positions
+link151 distinct records.
+
+The120 exact SOURCE-field receipts cover91 cells,12 stage fields,
+seven arguments and10 page locators. No diplomatic/comparison,
+verification or confidence field changes. Orel cross-references retain
+the certified pages where they actually occur; distinct native
+headword receipts supplement sew, dragnet and nettle base
+[@Orel2003, pp.281-282,286-287,289].
+
+One actual RT/nettle consultation status upgrades because an explicitly
+PWGmc precursor is now quoted from270. The previous OE attestations
+alone did not warrant that change. One reversible owner receipt preserves
+the old status; no consultation/target identity or scope/applicability
+owner changes [@RingeTaylor2014, pp.268-276].
+
+### Literature
+
+Complete relevant arguments, continuations, tables, footnotes and
+necessary cross-references are read. The retained negative for nightmare
+is not reopened into a specialist-wide search.
+
+Neck's possible PIE paradigm and apparently remodeled outcomes are
+conditional; Ringe's full Kluge-law objection rejects the evidential
+warrant and favors sound symbolism. His neck endpoint remains explicitly
+PNWGmc. Orel's a-bearing nape alternatives do not quote selected
+e input [@Kroonen2013, p.234; @Orel2003, p.179;
+@Ringe2017, pp.137-140].
+
+RT250 desire/eagerness ui chain is lexical comparandum, not need au.
+Actual need246 is independently quoted. Ringe's complete Verner
+argument supports local PGmc dental alternants, not global dental
+normalization. Needle preserves two instrument-suffix versus
+accent/collective hypotheses and its actual no-epenthesis context
+[@Kroonen2013, pp.385-386,388; @Orel2003, pp.282,286-287;
+@Ringe2017, pp.302-305;
+@RingeTaylor2014, pp.245-247,249-251,328-331].
+
+Nest's PIE ancestor and conditional PGmc e alternative have their actual
+relationships;330 epenthesis is comparative-only. Fulk's explicit
+contrast with RT's unexplained lowering is distinct from Cercignani's
+rejection of common PGmc/NWGmc dating. The existing certified127
+footnote7 retains az and its independent stage/confidence
+[@Kroonen2013, p.391; @Orel2003, p.287;
+@Ringe2017, pp.119-120; @Fulk2018, pp.55-59;
+@RingeTaylor2014, pp.33-35,329-331; @Cercignani1980, pp.126-132].
+
+Net collective, Nordic dragnet, caul and nettle base/diminutive are
+distinct formations. Nettle's donor-direction argument is source-led;
+RT's reported syncope/arrested-change stance is preserved without
+adopting lexical diffusion or grammatical sound-law conditioning
+[@Kroonen2013, p.384; @Orel2003, pp.281-282,289;
+@Ringe2017, pp.90-91; @RingeTaylor2014, pp.237-239,268-276].
+
+Night's assumed dental prehistory and dark/light parallels remain
+qualified. Independently repeated table/body cells, questioned plural
+endings, PWGmc syncretism hypothesis and opposite dialectal leveling
+are not merged. The selected i-input is not assigned nominative by
+default; day -i and home instrumental are comparanda, and the dual
+PWGmc/PGmc dative attribution is preserved
+[@Kroonen2013, pp.96,333,381; @Orel2003, pp.279-280;
+@Ringe2017, pp.242-243,312-313;
+@RingeTaylor2014, pp.116-118,240-241,379-381].
+
+Nightmare retains spirit/horse distinction, PNWGmc/PWGmc chronology
+and unspecified front intermediates. OE mare/maran/mere do not
+prove universal n-stem retraction
+[@Orel2003, p.262; @RingeTaylor2014, pp.190-193].
+
+CAPR's decisions are per-record relationship, local stage interpretation,
+scoped support and exact bounded comparison. They are not adopted author
+histories, assembled quotations or independent author votes.
+
+### Historical analysis
+
+Stage, scope, source verification and confidence remain independent.
+Twelve locally justified SOURCE stage fields change, but no selected
+entry-stage/context owner does. The two night-dative labels explicitly
+co-occur; mixed analytical attribution retains both instead of guessing
+a preferred date [@RingeTaylor2014, pp.379-381].
+
+Neck's reconstruction warrants and nest's occurrence/recoverability/
+dating warrants are substantive focused questions. Both causes remain
+unestablished. Fulk's stated contrast is preserved, not inflated into an
+exclusive conflict or automatic explanation of every comparison
+[@Kroonen2013, p.234; @Ringe2017, pp.137-140;
+@Fulk2018, pp.55-59; @Cercignani1980, pp.126-132].
+
+Phenomenon/proxy relation and chronology edges: n/a. No harness result,
+FST identifier, executable position or output score promotes an edge.
+
+### Verdict
+
+Bounded annotation-only research, not a Registry-verdict on any law.
+Eight core cases are bounded_limit with unestablished whole-row causes;
+both focused causes remain unestablished. New native literals are
+text_checked, not image-certified. Existing certified records retain
+their certification. The separate RT convention/typography holding
+gap remains.
+
+### Propagation
+
+SOURCE: forms, analyses, comparisons, rationales, coverage and three
+new exact receipt tables. Page-cited commentary/README, this complete
+nine-heading audit and source-sensitive regressions accompany persistence.
+Canonical projections use adjudicate.py --refresh only. No scientific
+rebuild, private assay or PDF is warranted.
+
+The current totals are5116 forms,1390 actual consultations,5318
+positions,446 cases and513 rationales. There are209 bounded/184
+unreviewed core rows and1753 dictionary evidence records, with all786
+dictionary identities/statuses preserved. All329 focused survey/analysis
+tests pass. The cumulative loan-reason query now includes nettle's actual
+source argument without promoting its whole-row explanation.
+Canonical refresh reports CONTROL PLANE CLEAN; runtime bins and full
+trace remain fresh without a scientific rebuild.
+
+Independent post-refresh verification preserves5057 inherited forms
+except120 exact receipted fields,5162 outside positions,436 unaffected
+cases,477 inherited rationales and1359 outside consultations. Reversing
+the single exact status exception preserves the inherited review fields;
+all1390 consultation identities survive. All78 unaffected research
+hashes/receipts/scopes/targets and46 scientific hashes remain unchanged.
+All28 native paragraph hashes and whole-token spans independently
+resolve. Deterministic query evidence is saved in the session file
+pgmc-two-hundred-nine-alignments-query-results.txt. Independent alignment
+refuses184 separately from the unchanged RT conventions refusal.
+All73 new-prose printed-page references, bibliography records, section
+locators and whitespace checks pass. Tranche26 is complete and uncommitted.
+
+### Residue
+
+No selected reconstruction/input/target/stage/context, FST or scientific
+baseline adoption. Exact whole-row genealogy and both focused causes
+remain unestablished;184 rows are still unreviewed and RT conventions
+are separately unverified. No introduction/PDF, automatic26 release
+or27 start. Unrelated .DS_Store and tmp_probe.foma remain untouched.
+Never run/import the persisted tranche26 candidate again.
+
 ## Twenty-fifth alignment checkpoint: milk through navel
 
 ### Identity

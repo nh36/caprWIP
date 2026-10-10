@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5057 evidence records,1390 actual consultations and5253
-analytical positions, with444 comparisons and477 rationales. The RT
+There are5116 evidence records,1390 actual consultations and5318
+analytical positions, with446 comparisons and513 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred one core rows now have individually reconciled, bounded alignment:
-1933-2133. The remaining192 are unreviewed. The second tranche builds on
+Two hundred nine core rows now have individually reconciled, bounded alignment:
+1933-2141. The remaining184 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,65 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-sixth tranche completes neck, need, needle, nest, net,
+nettle, night and nightmare, rows2134-2141, on released25 basee8453591.
+All91 inherited identities survive; the existing image-checked
+Cercignani nest quotation now has its missing analytical position
+without a new consultation. Twenty-eight native literal receipts
+and31 scoped arguments add59 records; five focused positions reuse
+evidence and36 rationales are added. The156 positions link151
+distinct records. The120 exact SOURCE amendments cover91 cells,
+12 local stages, seven arguments and10 page locators.
+
+The inherited RT desire/eagerness chain on250 is comparandum, not
+selected au-bearing need. Actual need on246 is separately quoted.
+Needle's instrument-suffix versus accent explanations remain alternatives;
+nest's general330 epenthesis record is comparative-only, not direct
+nest history [@Ringe2017, pp.302-305;
+@RingeTaylor2014, pp.245-247,249-251,329-331].
+
+Image-certified Orel cross-references retain their original pages:
+sew287, dragnet282 and nettle-base281. Actual headwords are separately
+receipted on286,289 and282. One actual RT/nettle status upgrades
+discussion_only to evidence_found because270 supplies an explicitly
+reconstructed PWGmc precursor, not because netle is an OE attestation.
+The existing consultation identity, target and initial screen remain
+[@Orel2003, pp.281-282,286-287,289;
+@RingeTaylor2014, pp.268-276].
+
+Repeated night cells, uncertain plural endings, day/home comparanda
+and dual PWGmc/PGmc source attribution remain distinct. Selected
+*náxti is not automatically a nominative or an adopted source dative.
+Nightmare's retained front form and the Kroonen bounded negative
+survive; no horse/spirit merger or new grammar negative is introduced
+[@Ringe2017, pp.242-243,312-313;
+@RingeTaylor2014, pp.116-118,190-193,240-241,379-381].
+
+Both focused neck/nest causes and all eight whole-row causes remain
+unestablished. Nest's occurrence, recoverability and common-stage
+dating warrants are not flattened into an exclusive opposition
+[@Kroonen2013, p.234; @Ringe2017, pp.137-140;
+@Fulk2018, pp.55-59; @Cercignani1980, pp.126-132].
+
+The new receipts are
+`reading_accountability/alignment-2134-2141-amendments.tsv`,
+`reading_accountability/alignment-2134-2141-occurrences.tsv` and
+`reading_accountability/alignment-2134-2141-owner-amendments.tsv`.
+Never run/import the persisted tranche26 candidate. Current SOURCE,
+receipts and regressions are authority. All786 dictionary identities
+remain, with1753 dictionary evidence records; new native literals
+are text_checked, not image-certified. No corpus/input/stage/context,
+FST/baseline adoption, publication, automatic26 release or27 start
+is included. All329 focused tests pass; canonical refresh is clean
+without a scientific rebuild. Independent post-refresh verification
+preserves5057 inherited forms except120 exact fields,5162 outside
+positions,436 unaffected cases,477 inherited rationales,1359 outside
+consultations,78 unaffected research hashes and46 scientific hashes.
+All28 native spans independently resolve; all73 new-prose page references,
+bibliography, section locators and whitespace checks pass. Alignment
+independently refuses184; RT conventions remain a separate limit.
+The full393-row programme remains incomplete.
 
 The twenty-fifth tranche completes milk, month, mood, mother, nail,
 name, nave and navel, rows2126-2133, on released24 base75bcc49a.
