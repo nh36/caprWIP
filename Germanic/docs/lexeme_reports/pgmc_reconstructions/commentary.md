@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,146 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5604 evidence
-records,1393 actual consultations,5843 positions,463 comparisons and798
+393 applicability screens per source. The database contains5664 evidence
+records,1393 actual consultations,5909 positions,466 comparisons and825
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:281 core rows are bounded and112 unreviewed.
+explanation remain ongoing:289 core rows are bounded and104 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,262 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-sixth alignment: semantic warrants, homonym exclusion and actual paradigm cells
+
+Rows2214-2221 cover starve, steal, stem, still, stilt, stock, stone and
+stool. All39 inherited analytical identities are individually reconciled
+against complete relevant held arguments. Thirty-nine native occurrences
+and21 scoped processes add60 evidence records; the105 positions link99
+distinct records because six focused positions reuse existing arguments.
+Forty-five exact SOURCE-field receipts cover39 cells, three explicit
+stage repairs, two argument repairs and one reported-author attribution.
+Four reversible owner fields correct the RT stem target/applicability
+account without adding or deleting a consultation or target. All786
+dictionary review identities/statuses survive with2018 dictionary records.
+There are27 new source-explicit position-support rationales, not27
+explanations of inter-author disagreement.
+
+Three focused questions are substantive: steal's semantic/etymological
+starting point, stock's gemination/formation warrants, and stool's
+admission of Slavic/Baltic comparanda. Each retains an unestablished cause;
+none is automatically a named rebuttal, a recovered whole paradigm or a
+settled whole-row history. All eight core causes also remain unestablished.
+The unchanged selected inputs and source-native spelling distinctions
+are evidence boundaries, not obstacles to conceal with normalization.
+
+### Starve: the selected Old English verb means 'die'
+
+Orel's *sterbanan* explicitly cites OE *steorfan* 'die', not only
+death through lack of food. The Irish death and Slavic stiffen/die
+comparisons support an older semantic family, while the separate
+*sterbōn* supplies mortality, pestilence and dead-animal flesh senses.
+That noun is family evidence rather than another infinitive ending.
+The bibliography's hide/back and stiff-adjective proposals retain
+reported attribution [@Orel2003, p.375].
+
+Kroonen supplies a become-stiff/die history to European *sterbh-*,
+with actual *stérbh-e-* and differentiated Greek, Russian and
+Lithuanian formations. His strong-adjective cross-reference is not an
+excuse to merge *sterg-* with *sterbh-*: the account expressly objects
+that ON *sterkr* cannot establish an e-grade *sterka-* because breaking
+would predict *stjarkr*. The cited relationship through *stjarfur*
+belongs to an adjective, not the selected verb. The actual complete
+verb body is printed477; the inherited477-478 locator is preserved as
+history rather than silently narrowed [@Kroonen2013, pp.474-475,477].
+
+RT quotes PWGmc *sterban* and OE *steorfan* independently in the
+membership roster and the erC breaking examples. Its reconstruction
+policy admits that older Gothic/Norse attestations may have disappeared
+by chance, yet does not reconstruct beyond PWGmc without sufficient
+evidence. That is a warrant for a bounded endpoint, not a vote against
+every possible older ancestry. The later Northumbrian weor-to-wor
+argument is independently constrained by *werc* and Anglian
+monophthongization; it is not attached to every die reflex
+[@RingeTaylor2014, pp.127-128,182-183].
+
+### Steal: the semantic premise is separable from the strong paradigm
+
+Orel probably derives *stelanan* through stretch, then cover, then
+steal. His bibliography also reports crossed rob/hide roots, non-IE
+origin and a pre-Germanic account; those are not additional unqualified
+Orel endorsements. Kroonen instead argues that older sneak/stealth
+semantics are recoverable from reflexive uses and OE *be-stealcian*.
+He therefore prefers Sanskrit *tsárati* and Armenian *sotim*, with
+regular initial ts-to-st metathesis, to accounts beginning solely
+from theft. This is a genuine difference in etymological starting
+point and admitted comparative evidence, but the texts do not
+establish its complete inter-author cause or a direct named rebuttal
+[@Orel2003, p.374; @Kroonen2013, pp.476-477].
+
+The separate iterative *stullōn-* and its *tsl-néh₂-* antecedent
+support the wider family, not the selected strong infinitive. The
+new literal retains the clean actual cross-reference on477; its full
+body on487 is read and supplies the argument. An OCR-joined header
+does not justify altering the quoted word boundary
+[@Kroonen2013, pp.477,487].
+
+Ringe's complete classIV paradigm is *stelaną*, *stal*, *stēlun*,
+*stulanaz*, beside OE *stelan*, *stæl*, native *stǣlon* and *stolen*.
+Present, past singular, past plural and participle are individually
+receipted; the combining macron in the native plural remains intact.
+Ringe explicitly excepts steal and dwell from the otherwise good PIE
+etymologies of the group. That limitation neither removes the PGmc
+paradigm nor decides between the qualified dictionary accounts
+[@Ringe2017, pp.270-272].
+
+Fulk's actual body supplies starred PGmc *stulanaz* and OE *stolen*,
+independently of the inherited starless index. The full lowering
+argument distinguishes u-lowering before a mid/low following vowel,
+nasal-coda and j blockers, the separate less regular i-lowering
+pattern, and Gothic nonapplication. OE *stalu* 'theft' is an o-grade
+derivative, not the participle or an alternative present cell. Thus
+present e and participial u/o are not normalized into a single
+comparison word [@Fulk2018, pp.52,55-57,59,388].
+
+### Stem: an exact surface match can still be the wrong lexeme
+
+The selected concept is ship/tree stem, not voice. Orel's masculine
+*stamnaz* and *stamniz* cite the weak OE *stefna* 'prow/stern' and
+retain their different endings; the direction/steering verb is derived
+from this family. Torp's separated *stabnaz* is a reported formation,
+not a third Orel endorsement. Orel's separate feminine
+*stebnō*/*stemnō* means 'voice' and has unknown origin. His summons
+verb can have been influenced by the direction verb without making
+the two nominal etyma identical [@Orel2003, pp.371,373].
+
+RT's inherited *stebno > stebnu > stebn* evidence is explicitly
+glossed 'voice', and the complete chain continues through OE
+*stefn > stemn*. All three inherited literal positions now have
+comparandum relations; both final endpoints are independently
+receipted as voice, not promoted to selected-stem evidence. The
+surrounding Cn-cluster syncope/apocope/epenthesis account remains
+process comparison only. Its generic process record receives an
+exact argument repair rather than pretending to prove a stem history
+[@RingeTaylor2014, pp.329-331].
+
+The existing evidence_found consultation is retained because its
+reconstructed quotations really exist; it is explicitly qualified as
+an exclusion control, not a same-etymon positive. The target selection
+basis and actual applicability question, assessment and evidence links
+are reversibly corrected. No inappropriate discussion_only status
+hides reconstructed comparanda, no source-negative consultation is
+invented, and no source owner is deleted to improve a count.
+Kroonen's bounded negative for the selected stem remains unchanged:
+his voice *stimnō-* and proposed mouth/ear genealogy do not reverse
+that disposition [@Kroonen2013, p.480; @RingeTaylor2014, p.330].
+The lexical model's separate nautical/tree identity is used as a
+selected-sense guard, not rewritten or adopted anew.
+Its older claim that Kroonen treats a stam(m) trunk family on479-480
+is a non-adopting reporting watchlist item: the actual held pages
+supply the iterative stick verb and unrelated voice entry, not the
+claimed selected-stem account. The affected owner is the existing
+stem model's reconstruction/comparative-evidence paragraph; resolving
+its provenance requires genuine selected-etymon evidence, not a voice
+quotation. No model, input or law is changed by this survey repair
+[@Kroonen2013, pp.479-480].
+
+### Still and stilt: family claims do not supply an exact selected cell
+
+Orel directly derives quiet/moderate/soothe *stelljanan*, citing OE
+*stillan*, from *stelljaz*. The adjective is probably derived from
+*stelanan* in its proposed original stretch meaning. The adjective
+and its actual OE *stille* are family positions, not verb citations.
+The probable deeper claim and reported alternatives are preserved;
+neither supplies the selected ell/ill history or extra i before j
+[@Orel2003, p.374].
+
+Kroonen's standing/putting *stalljan-* cites OE *stellan*, not quiet
+*stillan*. A familiar semantic gloss or nearly matching spelling
+does not establish identity. His inherited bounded negative remains;
+dictionary-only scope does not acquire three fabricated grammar
+negatives [@Kroonen2013, pp.472-473].
+
+Stilt remains research-only. Orel has feminine *steltjōn* and
+*staltjōn*, cites ME *stilte*, and refers to related *stultaz*.
+The alternatives and cross-reference remain separate. The narrow
+held-text follow-up recovers the cross-reference, not an independent
+*stultaz* body; no missing argument is invented from an assumed
+alphabetic location. ME evidence does not create an OE target, and
+a generic standing/support family does not turn Kroonen's bounded
+negative into a lexical positive [@Orel2003, p.374].
+
+### Stock: formation and the general gemination objection are distinct warrants
+
+Orel's stock/trunk/log noun *stukkaz* connects with Sanskrit tuft
+despite an expressly irregular medial geminate. Its shy/stiff
+adjective and neuter piece formation are different family units.
+The actual native *stuzjaz* body is separately receipted, leaving
+the inherited image-certified *stuʒjaz* unchanged; source glyph
+status does not follow a preferred analytical transcription
+[@Orel2003, p.383].
+
+Kroonen derives *stukka-* from strong *stekan-* and says the
+formation looks like Pre-Germanic *stug-nó-*. That resemblance is
+conditional evidence, not a recovered stock case paradigm. The
+u-grade is secondary, like the iterative's; the strong verb appears
+to derive by a-mutation from older *stikan*. The complete
+*stik(k)ōn-* argument supplies a nasal-present singular/plural
+contrast, not another selected stock nominative
+[@Kroonen2013, pp.476,479-480,487].
+
+Ringe explicitly places *stokkaz* and separate piece *stukkiją*
+in PNWGmc while rejecting Kluge's Law. The surrounding objections
+involve the small and semantically uncertain evidence set and the
+n-stem distribution; sound symbolism and Seebold's intensive
+gemination are alternatives. The focused comparison therefore
+contrasts actual formation/gemination warrants, not two merely
+different strings. It does not claim that Ringe names or refutes
+Kroonen's later account directly, nor adopt an expressive or
+lexically variable sound law for CAPR. The inter-author cause
+remains unestablished [@Ringe2017, pp.137-140].
+
+### Stone: shared stage labels do not erase different case forms
+
+Orel admits stone-wall/thicken connections and reports a possible
+Slavic borrowing account. Kroonen gives a no-formation to stiffen,
+with a deeper stand-root i-present relation explicitly conditional.
+Ringe actually quotes PGmc *stainaz* in his list of words of
+'doubtful or unknown' origin. That disjunction is retained: it is
+not strengthened into a categorical rejection of every dictionary
+proposal or a direct named disagreement
+[@Orel2003, pp.369-370; @Kroonen2013, p.472;
+@Ringe2017, p.328].
+
+Ringe's material *stainīnaz* and stony *stainagaz* are expressly
+PGmc in the local prose. Their previously undated annotations are
+repaired exactly, with confidence unchanged. RT's distinct
+*staininaz > stanin > steéenen* illustrates the following-i mutation
+trigger; the native short i and damaged endpoint quantities are
+not silently replaced with Ringe's notation
+[@Ringe2017, p.326; @RingeTaylor2014, p.234].
+
+RT printed45 explicitly labels native *staing* both PGmc and
+PNWGmc and identifies it as accusative singular, followed by
+PWGmc *stain* and OE *stan*. The analytical stage is therefore
+mixed with the dual assertion retained in the SOURCE cell/date;
+neither source label is erased. The nominative *stainaz* and
+independent OE *stan* on170 remain separate occurrences.
+Contraction/tensing milestones can overlap, so these passages
+do not reopen the released contraction adjudication
+[@RingeTaylor2014, pp.45,170-171].
+
+Fulk's actual *stainomiz* belongs to the conditional alternative
+of weight-governed third-syllable loss under Prokosch's law,
+followed by generalization, rather than a blanket third-syllable
+loss. It remains a plural, independently quoted from the starless
+index, and is not assigned a date solely from a chapter heading.
+Gothic *stáina* is singular dative reflecting an older instrumental,
+not the plural or selected nominative
+[@Fulk2018, pp.79-83,388].
+
+### Stool: direct noun evidence and reported alternative genealogy
+
+Kroonen's *stōla-* directly cites the chair/seat/stool noun; its
+inherited same_family classification is repaired to a direct
+citation relation. His usual stand-root formation is distinguished
+from the possible sit-root *sd-ōl-o-* thematicization attributed
+to Peter Kerkhof, p.c. The latter receives exact reported-author
+attribution, not endorsement or a fabricated independently checked
+original. Native OCR '1-stem' is not treated as a different
+historical numeral-based formation [@Kroonen2013, p.481].
+
+Orel admits Slavic throne/table/chair alongside the Lithuanian
+stand comparison, whereas Kroonen says there is probably no
+connection with Slavic throne and Lithuanian table *stol-o-*,
+which he relates to a different standing family. This qualifies
+as a focused cognate-admission difference, while leaving its
+cause unestablished. Native Orel OE *stól* with acute coexists
+with the inherited certified macron quotation; neither is
+globally normalized to make a selected cell
+[@Orel2003, p.379; @Kroonen2013, p.481].
+
+No scientific corpus, input-stage/context, FST or baseline change
+is adopted. The completed36 increment leaves289 bounded core
+rows and104 unreviewed; the full393-row alignment, conditioning
+census, synthesis/watchlist and specialist agenda remain unfinished.
+Current SOURCE, exact receipts and regressions are authoritative;
+neither immutable preparations nor persisted candidates may be rerun.
 
 ## Thirty-fifth alignment: selected cells, reported proposals and qualified families
 

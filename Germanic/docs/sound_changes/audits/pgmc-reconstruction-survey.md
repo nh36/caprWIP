@@ -8,6 +8,147 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-sixth alignment checkpoint: starve through stool
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base db09adf1d92117aeff4abf72429167ba14a472f7 on update, independently
+verified pushed for35. Rows2214-2221 cover starve, steal, stem, still,
+stilt, stock, stone and stool. The one-use immutable preparation pins
+5604 forms,39 analytical identities and108 research hashes. Complete36
+is authorized; automatic36 release,37 preparation and scientific
+adoption are not. Persistence occurred once; never rerun/import the
+candidate or recreate the preparation.
+
+### Question
+
+Do complete source arguments support individual cell, attribution and
+stage decisions without confusing voice with selected ship/tree stem?
+Can substantive semantic, gemination and cognate-admission warrants
+remain precisely unexplained rather than manufacture causes? A lost
+identity, normalized native quote, confidence-derived stage, unreceipted
+owner edit or false whole-row explanation would refute completion.
+
+### Current state
+
+Eight unreviewed core alignments and39 inherited identities; all46
+ORIGINAL scientific-owner hashes remain protected. Selected stem has
+citation *stámnaz* but input *stámniz* and early_analogy classification.
+Other selected input stages are pgmc; stilt has no runnable target.
+Inherited RT stem evidence carries a voice history misclassified as
+selected-etymon evidence. Stone adjective dates are underreported,
+and stool's direct noun was incorrectly family-only.
+
+### Diagnosis
+
+Executable census, new traces, private variants and counterfactuals:
+n/a because this increment adopts no executable history. No Foma,
+full Germanic suite or PDF is needed or claimed. All39 positions are
+individually reconciled;39 native occurrences and21 processes add60
+records. Six focused positions reuse processes, yielding105 positions
+and99 distinct records. Native combining quantity, acute/macron and
+certified-versus-native z/ʒ remain separate. RT voice literals remain
+as comparanda rather than deleted evidence.
+
+### Literature
+
+Complete relevant arguments, footnotes, tables and necessary
+continuations are read; immutable packets retain inherited baselines.
+Source quotations are text_checked, not newly image-certified.
+
+| Row | Printed reading scope and principal issue |
+| --- | --- |
+| Starve2214 | Orel375; Kroonen474-475,477; RT127-128,182-183: die/stiffness, derivative and reconstructability. |
+| Steal2215 | Orel374; Kroonen476-477,487; Ringe270-272; Fulk52,55-57,59,388: semantic warrants, actual paradigm and lowering. |
+| Stem2216 | Orel371,373; Kroonen480; RT329-331: selected ship/tree stem versus unrelated voice, weak noun and reported formation. |
+| Still2217 | Orel374; Kroonen472-473: quiet weak verb/adjective versus standing/putting homonym. |
+| Stilt2218 | Orel374: separate feminine e/a alternatives, related cross-reference and ME rather than OE evidence. |
+| Stock2219 | Orel383; Kroonen476,479-480,487; Ringe137-140: grade, participial resemblance and general gemination objection. |
+| Stone2220 | Orel369-370; Kroonen472; Ringe326-328; Fulk79-83,388; RT45,170-171,234: local dates, case distinctions and qualified origin. |
+| Stool2221 | Orel379; Kroonen481: direct noun, usual versus reported alternative root, cognate admission. |
+
+### Historical analysis
+
+Die semantics and derivative cells do not prove exact selected
+endings; PWGmc reconstruction is a warrant, not a blanket older-stage
+denial [@Orel2003, p.375; @Kroonen2013, pp.474-475,477;
+@RingeTaylor2014, pp.127-128,182-183].
+Steal's probable stretch/cover and argued older stealth accounts
+differ substantively, while actual present/past/participle cells
+remain separate [@Orel2003, p.374; @Kroonen2013, pp.476-477,487;
+@Ringe2017, pp.270-272; @Fulk2018, pp.52,55-57,59].
+Voice explicitly excludes the selected nautical/tree stem: retained
+RT comparanda and process evidence are not same-etymon support
+[@Orel2003, pp.371,373; @Kroonen2013, p.480;
+@RingeTaylor2014, pp.329-331].
+Quiet adjective/verb and stilt alternatives neither quote all
+selected cells nor invent a missing OE target
+[@Orel2003, p.374; @Kroonen2013, pp.472-473].
+Stock's secondary grade/participial resemblance and general Kluge-law
+rejection are distinct source warrants, not a new CAPR expressive law
+[@Orel2003, p.383; @Kroonen2013, pp.476,479-480,487;
+@Ringe2017, pp.137-140].
+Stone's explicit PGmc adjective dates and mixed PGmc/PNWGmc
+accusative label are repaired without changing confidence; plural,
+instrumental-derived singular, nominative and adjectives are distinct
+[@Ringe2017, pp.326-328; @RingeTaylor2014, pp.45,170-171,234;
+@Fulk2018, pp.79-83,388].
+Stool's direct noun is separate from Kerkhof's reported possible
+sit-root alternative; cognate admission differs without an established
+cause [@Orel2003, p.379; @Kroonen2013, p.481].
+No source chronology argument becomes a canonical edge or new
+historical verdict.
+
+### Verdict
+
+Research disposition: eight individually reconciled bounded alignments,
+three substantive focused cases with causes unestablished, and all
+eight whole-row causes unestablished. Twenty-seven new rationales
+support positions only. Exact45 SOURCE fields cover39 cells, three
+dates, two arguments and one quoted author. Four reversible owner
+fields correct RT stem target/applicability; inherited consultation
+identities/statuses remain, explicitly separating reconstructed
+comparanda from same-etymon positives. No target or consultation added.
+Corpus, input-stage/context, FST and baseline adoption: none.
+
+### Propagation
+
+Editable forms/coverage/analyses/comparisons/rationales, exact SOURCE/
+occurrence/owner receipts, RT applicability and target selection basis,
+commentary/README and source-sensitive regressions. Current SOURCE and
+receipts, not the executed candidate, are authority. Totals5664 forms,
+1393 consultations,5909 positions,466 comparisons and825 rationales;
+289 bounded and104 unreviewed. All786 dictionary review identities/
+statuses remain with2018 records; Ringe/Fulk/RT consultations stay
+193/146/259. Independent verification preserves5604 inherited forms
+except45 exact fields,5804 outside positions,455 unaffected comparisons,
+798 inherited rationales and1369 outside consultations. Reversing four
+owner fields restores frozen hashes;99 untouched research hashes and
+46 ORIGINAL scientific hashes survive. All39 native paragraphs/hashes/
+whole-token spans independently resolve. Canonical refresh and focused
+closeout are complete: all411 final focused survey/analysis tests pass,
+canonical refresh and independent artifact freshness report CONTROL
+PLANE CLEAN without a scientific rebuild. Bibliography and section
+locators pass; all67 new-prose printed-page references and all nine
+audit headings are checked. Independent post-refresh verification
+reconfirms every preservation count above and demonstrates alignment's
+104-row refusal separately from the unchanged RT conventions refusal.
+The deterministic query record is session file
+pgmc-289-alignments-query-results.txt. HEAD and origin/update remain
+verified equal to db09adf1;36 is complete but uncommitted.
+
+### Residue
+
+Steal's complete comparative pedigree, stock's particular nominal
+gemination warrant and stool's cognate-admission cause remain open.
+Stem needs genuine selected strong-cell evidence, not the voice
+homonym; stilt's cross-reference has no independently recovered body
+and does not supply an OE target. The full393-row alignment,
+conditioning census, synthesis/watchlist, specialist queue and RT
+convention verification remain unfinished. No36 release,37 preparation,
+scientific adoption, introduction revision or PDF is claimed.
+
 ## Thirty-fifth alignment checkpoint: spear through start
 
 ### Identity

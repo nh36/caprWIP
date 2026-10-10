@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5604 evidence records,1393 actual consultations and5843
-analytical positions, with463 comparisons and798 rationales. The RT
+There are5664 evidence records,1393 actual consultations and5909
+analytical positions, with466 comparisons and825 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred eighty-one core rows now have individually reconciled, bounded alignment:
-1933-2213. The remaining112 are unreviewed. The second tranche builds on
+Two hundred eighty-nine core rows now have individually reconciled, bounded alignment:
+1933-2221. The remaining104 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,50 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-sixth tranche completes starve, steal, stem, still, stilt,
+stock, stone and stool, rows2214-2221, from released
+db09adf1d92117aeff4abf72429167ba14a472f7. All39 inherited identities are
+individually reconciled. Thirty-nine native occurrences and21 processes
+add60 evidence records;105 positions link99 records. Forty-five exact
+SOURCE fields cover39 cells, three dates, two arguments and one
+reported-author attribution. Four reversible target/applicability
+fields correct RT's voice-versus-stem match; all1393 consultations
+and all786 dictionary identities/statuses survive, with2018 dictionary
+records. No new target or source-negative review is invented.
+
+Die is not starvation-only; quiet still is not standing/putting,
+and stilt remains research-only with no invented OE target
+[@Orel2003, pp.374-375; @Kroonen2013, pp.472-473,477;
+@RingeTaylor2014, pp.127-128,182-183].
+Steal's complete strong paradigm and Fulk's actual lowered participle
+are individually retained; its stretch/cover versus older stealth
+warrants form a substantive but unexplained focused case
+[@Orel2003, p.374; @Kroonen2013, pp.476-477,487;
+@Ringe2017, pp.270-272; @Fulk2018, pp.52,55-57,59,388].
+The selected ship/tree stem is not voice: inherited RT330 quotations
+become comparanda, with the historical consultation preserved and
+explicitly qualified rather than deleted or promoted to same-etymon
+support [@Orel2003, pp.371,373; @Kroonen2013, p.480;
+@RingeTaylor2014, pp.329-331].
+
+Stock's secondary grade/participial resemblance and Ringe's general
+Kluge-law rejection form a focused warrant comparison, not an adopted
+expressive law or a direct named rebuttal
+[@Orel2003, p.383; @Kroonen2013, pp.476,479-480,487;
+@Ringe2017, pp.137-140].
+Stone retains explicitly PGmc adjectives, dual-labelled PGmc/PNWGmc
+accusative, independent nominative, conditional plural and Gothic
+instrumental-derived dative. Native missing quantities and the
+doubtful-or-unknown origin assessment remain qualified
+[@Ringe2017, pp.326-328; @RingeTaylor2014, pp.45,170-171,234;
+@Fulk2018, pp.79-83,388].
+Stool is direct noun evidence; Kerkhof's possible sit-root account
+is reported, and Slavic/Baltic cognate admission is substantive but
+unexplained [@Orel2003, p.379; @Kroonen2013, p.481].
+All three focused causes and all eight whole-row causes remain
+unestablished. Twenty-seven added rationales are position support.
+The393-row programme and scientific adoption remain incomplete.
 
 The thirty-fifth tranche completes spear, spin, spindle, spoon, spread,
 spur, staff and start, rows2206-2213, from released
