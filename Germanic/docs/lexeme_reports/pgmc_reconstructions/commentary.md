@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-192 Ringe,145 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5565 evidence
-records,1391 actual consultations,5804 positions,463 comparisons and777
+193 Ringe,146 Fulk and259 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains5604 evidence
+records,1393 actual consultations,5843 positions,463 comparisons and798
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:273 core rows are bounded and120 unreviewed.
+explanation remain ongoing:281 core rows are bounded and112 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,205 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-fifth alignment: selected cells, reported proposals and qualified families
+
+Rows2206-2213 are spear, spin, spindle, spoon, spread, spur, staff and
+start. All51 inherited analytical identities are individually reconciled.
+Eighteen native occurrences and21 scoped processes add39 records;56
+exact SOURCE-field receipts cover51 cells, three dates and two arguments.
+Twenty-one source-explicit position-support rationales accompany the90
+positions and90 distinct evidence records. No new focused comparison is
+manufactured: differing qualifications and incomplete formation premises
+do not establish mutually exclusive histories. All eight whole-row causes
+remain unestablished.
+
+Complete-argument reading also identifies two genuine missed consultations:
+Fulk's actual *spinnan* example and Ringe's reconstructed kick verb in the
+spur family. The former supplies attestation and reported process evidence,
+not a reconstructed spin quotation; the latter supplies a reconstructed
+family verb, not the implement noun. Two finite targets and13 exact owner
+fields preserve the original applicability screens through reversible
+receipts. These are actual consultations, not retrospective source-negative
+claims for every unscheduled row [@Fulk2018, pp.101-103;
+@Ringe2017, pp.116-118,269-271].
+
+### Spear: nominal gender and plural evidence do not determine the selected cell
+
+Orel's neuter *speru* cites OE *spere* 'spear' and Latin *sparus*.
+Kroonen instead has a masculine heading while citing the neuter OE word.
+That internal gender distinction remains visible; a shared spelling does
+not make the two headings identical inflectional claims. Kroonen calls
+the formation European and infers a root-final laryngeal from Latin's
+syllabic-r outcome. His Albanian oak comparison is doubtful, and the
+separate spar n-stem does not supply a spear nominative ending
+[@Orel2003, p.364; @Kroonen2013, p.467].
+
+Fulk's actual *speru* is a neuter nominative/accusative plural, not the
+singular *spere* and not a silent replacement for selected *speoru*.
+The surrounding argument matters: few neuter i-stems are inherited,
+West Germanic transfers include older s-stems, and the plural-u pattern
+is explained as analogical to a-stems. Recording that argument and its
+attested plural does not change the consultation's discussion_only
+status or invent an authored complete PGmc spear form
+[@Fulk2018, pp.158-161]. The selected number, dialect and exact ending
+therefore remain independent unanswered premises.
+
+### Spin: the reported gemination hypothesis is not Fulk's endorsement
+
+Orel's *spennanan* and Kroonen's *spinnan-* have different written vowels.
+Orel qualifies the wider etymological connections and reports deeper
+roots; Kroonen relates the nasal present to spinning and gives native
+*(s)pénh1-ne-*. Neither author supplies the selected whole infinitive
+ending merely by citing a stem. The spinning/yarn noun *spunan-* belongs
+to the family, not to spindle and not to an interchangeable spin cell
+[@Orel2003, p.364; @Kroonen2013, p.467].
+
+Fulk explicitly cites OE *spinnan* 'spin' in his discussion of proposed
+laryngeal-origin sonorant gemination. The Lühr/Ritter account is reported,
+not endorsed by Fulk: his introduction reserves broad acceptance to
+Verschärfung, whose explanation itself remains insecure. The example's
+presence is genuine lexical applicability, but it is not a confidently
+dated spin reconstruction or an accepted explanation of Orel's e versus
+Kroonen's i. The new process retains quoted-author attribution rather
+than acquiring source_explicit endorsement through its bibliography
+[@Fulk2018, pp.101-103]. Nasal-present formation, gemination, vocalism
+and the missing selected ending remain separately reviewable questions.
+
+### Spindle: syncope, apocope and epenthesis are three steps
+
+Orel's feminine *spennilō(n)* retains its optional n; neither an
+unqualified n-stem nor CAPR's exact selected formation is quoted.
+The two inherited Kroonen spin/spindle identities survive separately,
+including their different row responsibilities. The yarn noun remains
+family evidence rather than a spindle synonym
+[@Orel2003, p.364; @Kroonen2013, p.467].
+
+Ringe-Taylor gives the actual chain
+*spinnilu > *spinlu > *spinl > spinil > spinel*. The first loss is
+internal high-vowel syncope; the second is final-u apocope; the later
+vowel is epenthetic. Early Mercian *spinil* 'spindle' in EpGl967 and
+later *spinel* in CorpGl1922 and West Saxon are different attested
+endpoints. The full general argument explicitly puts general syncope
+before general high-vowel apocope, so the chain cannot be compressed
+into an undated single vowel deletion [@RingeTaylor2014, pp.263-266,330].
+This explains why different surface cells can coexist, but does not
+establish the selected PGmc e, suffix or exact OE endpoint.
+
+### Spoon: written quantity limits and parallel daughter rounding
+
+Orel retains *spēnuz* and *spōnuz* as genuine alternatives. The OE
+chip/splinter sense, different Norse semantic developments, probable
+external connection and reported cut-root are qualifications on the
+nominal history, not evidence that every alternative has the selected
+ending. Kroonen's previously completed bounded no_form_found disposition
+is preserved; no new negative consultation is manufactured
+[@Orel2003, pp.364-365].
+
+The native Ringe-Taylor text prints *spanuz*, *spanu* and *spon* without
+the quantity signs that the surrounding long-vowel argument requires.
+They remain diplomatic quotations, not image-certified corrected forms.
+The surrounding passage explicitly concerns stressed inherited long a
+from PGmc ē, nasalized before nasals. Its rounding is parallel daughter
+development, not one demonstrated shared ancestral rounding event;
+the later geographical discussion preserves the distributional
+qualifications [@RingeTaylor2014, pp.142-143,146]. That process evidence
+cannot silently identify undated ē/ō alternatives, their ending or the
+selected citation stage.
+
+### Spread: both dental causatives are direct, the iterative is family evidence
+
+Kroonen's d- and t-bearing causative variants are both direct citations
+for the spread verb. Their inherited family/unresolved classification
+is repaired from the actual passage. The strong d/t base and
+*sprit(t)ōn-* iterative are separate family units. The continental t
+is attributed to iterative influence: this is a formation/paradigm
+account, not a claimed exception to a general dental sound law
+[@Kroonen2013, pp.469-470].
+
+Orel's certified barred dental in the causative and referenced base
+survives. A new actual-body occurrence on367 prints native *sprīdanan*;
+it does not overwrite the inherited *sprīđanan* cross-reference on366
+or pretend that the old occurrence had always been located on367.
+The two records retain their distinct verification and locators
+[@Orel2003, pp.366-367]. The sources' family argument thus supports
+direct causative identity without supplying CAPR's selected i before j,
+stress or complete ending.
+
+### Spur: the implement is not the nasal-present kick verb
+
+Orel's implement n-stem, track/trace noun, tracking factitive and kick
+verb are distinct units. The track body says it is related to, or
+perhaps derived from, kick. Kroonen derives track from kick; these are
+not mutually exclusive directions requiring an invented focused
+dispute. His nasal-present analysis includes zero grade, Nordic
+full-grade replacement and probable root-aorist ancestry, each with its
+own scope [@Orel2003, pp.367-368; @Kroonen2013, p.471].
+
+Ringe actually prints PGmc *spurnaną* 'kick', together with native PIE
+weak *spr̥-n-h1-* and strong *spr̥-né-h1-* stems in separate passages.
+The later account allows PGmc or its immediate ancestor, notes the
+Northwest-Germanic-only attestation and states the reconstruction
+warrants. The date of n-leveling across the paradigm cannot be determined.
+The whole relevant argument therefore supports an actual evidence_found
+consultation but no exact implement-noun or trimoric-ending quotation
+[@Ringe2017, pp.116-118,269-271]. Every new kick position is same_family;
+none becomes selected_cell through its English gloss or shared root.
+
+### Staff: explicit dates survive independent confidence and uncertain plural-s
+
+Orel's i- and a-stem alternatives remain separate. Kroonen's a-stem
+citation and possible Celtic/Baltic connections support his inference
+of original a rather than o, not a quoted iz nominative or an exact
+date inferred from the dictionary title. The inherited471-472 locator
+survives alongside the new complete-body argument on471
+[@Orel2003, p.368; @Kroonen2013, p.471].
+
+Ringe-Taylor's explicitly PWGmc *stab* on147 receives that SOURCE date.
+The *staboz* plural on193 receives PGmc from the explicitly labelled
+shared pair, not from confidence or identical glyphs elsewhere.
+The full history distinguishes PGmc singular/plural, PWGmc *stab/*stabo,
+later *stab/*stabos*, fronted intermediates and native *stcef/stafas*.
+The plural *stafas* 'staves' has its own literal receipt; corrupt or
+quantity-incomplete *stcef*, *stzb* and *staebas* remain native text
+[@RingeTaylor2014, pp.147,193].
+
+The plural-s account is conditional: if reconstructed PWGmc plural -ō
+is correct, a demonstrative clitic is a possible source. Its fossilization
+in a single category remains unexplained. Back-vowel-conditioned
+retraction is a phonological environment, not a noun- or case-conditioned
+sound law [@RingeTaylor2014, pp.162-163,193]. None of this adopts an
+iz-to-az migration: current citation *stábiz*, selected *stábaz* and pgmc
+input stage remain unchanged, with the formation premise still missing.
+
+### Start: the adjective homonym and qualified motion family
+
+Orel's *startjanan* cites Middle English *sterten* 'start', not OE
+*styrtan*. The actual *stertaz* II body is the haughty/stately adjective,
+not homonym I 'tail'. It relates to the stiff adjective on375.
+The new native occurrence is anchored specifically in the II paragraph,
+and remains separate from the inherited certified barred dental
+[@Orel2003, pp.372,375-376].
+
+Kroonen's motion verb, disturbance factitive, destruction noun and
+optional-prefix tumult noun are family evidence, not a selected
+t-extended start citation. Only the explicitly PGmc destruction noun
+receives the repaired SOURCE date; an undated factitive does not inherit
+it. The Latvian comparison remains uncertain because of possible Low
+German borrowing. The separate storm mo-stem has only a possible
+connection to the disturbance root, so its new family position is
+conditional rather than another direct selected citation
+[@Kroonen2013, pp.476,488]. These arguments do not establish the selected
+u/t/i formation or its OE ancestry, and loan_hypothesis position support
+does not certify a whole-row divergence cause.
+
+The current research has5604 forms,1393 consultations,5843 positions,
+463 comparisons and798 rationales. All786 dictionary review identities
+and statuses survive with1988 evidence records. The281 bounded core rows
+run1933-2213;112 remain unreviewed. Native receipts, exact source and
+owner amendments, and unchanged scientific owners distinguish completed
+annotation from adopted history. The class census, aggregate synthesis,
+consistency watchlist and specialist agenda remain subsequent work.
 
 ## Thirty-fourth alignment: restored cells, related formations and qualified paradigms
 

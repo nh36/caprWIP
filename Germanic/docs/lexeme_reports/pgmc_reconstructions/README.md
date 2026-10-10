@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5565 evidence records,1391 actual consultations and5804
-analytical positions, with463 comparisons and777 rationales. The RT
+There are5604 evidence records,1393 actual consultations and5843
+analytical positions, with463 comparisons and798 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred seventy-three core rows now have individually reconciled, bounded alignment:
-1933-2205. The remaining120 are unreviewed. The second tranche builds on
+Two hundred eighty-one core rows now have individually reconciled, bounded alignment:
+1933-2213. The remaining112 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,55 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-fifth tranche completes spear, spin, spindle, spoon, spread,
+spur, staff and start, rows2206-2213, from released
+cb62699b5ef33ed0ff577748950251beaf178e33. All51 inherited identities are
+individually reconciled. Eighteen native occurrences and21 scoped
+processes add39 records and21 position-support rationales. The90
+positions link90 distinct records. Exact56 SOURCE fields cover51 cells,
+three dates and two arguments. Two genuinely missed consultations and
+finite targets have13 reversible owner fields, retaining initial screens
+as history. All786 dictionary consultations retain identities/statuses
+with1988 evidence records; Ringe/Fulk/RT consultations are193/146/259.
+
+Spear's actual Fulk plural is not the selected singular/dialect cell;
+his neuter-stem transfer and analogical-u argument remains discussion_only
+[@Orel2003, p.364; @Kroonen2013, p.467; @Fulk2018, pp.158-161].
+Spin's newly consulted Fulk passage reports Lühr/Ritter's gemination
+hypothesis without endorsing it or explaining the exact e/i difference
+[@Orel2003, p.364; @Kroonen2013, p.467; @Fulk2018, pp.101-103].
+Spindle retains optional n, distinct inherited Kroonen identities and
+the separately dated syncope, apocope and epenthesis endpoints
+[@Orel2003, p.364; @Kroonen2013, p.467;
+@RingeTaylor2014, pp.263-266,330].
+Spoon retains quantity-incomplete native quotations and explicitly
+parallel daughter rounding, not a single shared event
+[@Orel2003, pp.364-365; @RingeTaylor2014, pp.142-143,146].
+
+Spread's two dental causatives are direct citations; the strong base
+and iterative remain family evidence. Native body367 and certified
+cross-reference366 coexist without locator or glyph replacement
+[@Kroonen2013, pp.469-470; @Orel2003, pp.366-367].
+Spur's actual Ringe nasal-present kick evidence is same_family, not an
+implement-noun or trimoric-ending quote; the n-leveling date is unknown
+[@Orel2003, pp.367-368; @Kroonen2013, p.471;
+@Ringe2017, pp.116-118,269-271].
+Staff's explicit PWGmc147 and PGmc plural193 dates are independent of
+confidence; the plural-s clitic hypothesis remains conditional, with
+unexplained fossilization [@Orel2003, p.368; @Kroonen2013, p.471;
+@RingeTaylor2014, pp.147,162-163,193].
+Start's actual adjective homonym II is not tail I; the motion family
+and possible storm connection do not quote the selected t-extension
+[@Orel2003, pp.372,375-376; @Kroonen2013, pp.476,488].
+
+No new focused dispute is manufactured, and all eight whole-row causes
+remain unestablished. Substantial page-cited commentary and the full
+nine-heading audit preserve these arguments and exact remaining
+premises. Source stages, confidence, glyph verification and analytical
+attribution remain separate axes. Corpus/input/stage/context/FST/
+baseline adoption and publication are excluded;281 bounded rows do not
+complete the393-row programme.
 
 The thirty-fourth tranche completes smear, snow, sorrow, soul, span verb,
 span noun, spar and spare, rows2198-2205, from released

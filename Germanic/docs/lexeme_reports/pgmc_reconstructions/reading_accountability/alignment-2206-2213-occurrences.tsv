@@ -1,0 +1,890 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment35-spear-fulk-plural	Fulk2018	159	176	1	1955	1960	speru	317eed559eeace69653f99ff865ba17bbd2f379a71cf48047d0e7163197ce042	"$7.20 Masculine and neuter i-stems
+159
+OHG gestin, gesten. Also in OS and OHG, umlaut fails in the nom. acc. sg. because of
+the loss of -i after heavy syllables (§5.6), whence the unmutated vowel may have spread
+to the other cases of the singular (if these indeed originally underwent umlaut: see be-
+low), since this serves to heighten the contrast between singular and plural. In OE, i-
+umlaut was earlier (§5.6), so that it preceded loss of -i after heavy syllables.
+In Gothic there is no distinction in the inflection of light and heavy i-stems. The
+inflection of the light stems in the other languages may be illustrated by paradigms of
+Olcel. vinr 'friend' and its cognates:
+OIcel.
+sg. nom.
+vinr
+acc.
+vin
+gen.
+vinar
+wine
+win(i)es
+wini, win(i)e
+wini(u)
+TILM
+wini
+wines
+wine
+OE
+wine
+OS
+wini
+wini
+OHG
+wini
+wines
+dat.
+vin
+instr.
+wine
+wine
+sg. nom.
+vinir
+acc.
+vini
+vina
+vinum
+wine, winas
+wine, winas
+wina, winiga
+winum
+wini, winios
+wini, winios
+winio
+wini
+wini
+winio, wino
+winiun
+winim
+gen.
+dat.
+Nom. pl. OE wine and OS wini are the original forms; OE -e is found only in early or
+poetic texts and on ethnic names, e.g. Dene ‘Danes', with analogical extension to heavy
+stems, e.g. Seaxe 'Saxons' (without umlaut). OE winas and OS winios have been re-
+formed under the influence of the a-stems. Likewise, OE wina and OHG wino show
+substitution of the a-stem inflection; the earlier forms are OE winiga (very rare, and par-
+alleled only by Deniga ‘Danes') and OHG winio: see Fulk 1992: 243–5. Unlike wini,
+most OHG light i-stems in have been altered analogically to inflect like heavy stems,
+with removal of umlaut in the sg., e.g. nom. sg. slag ‘stroke': see Boutkan 1995b: 242–
+3 for lists of forms with and without -i and/or umlaut and a conspectus of explanations.
+Neuter i-stems, which remain distinct only when light-stemmed, are preserved
+only in OE and OS, where they are declined like the masculines, but with -u in the nom.
+and acc. pl., e.g. OE speru 'spears', OS urlagu ‘wars'. A possible neuter i-stem in OHG
+is indicated by dat. sg. meri ‘sea' (Sievers 1877–8: 107, Krahe & Meid 1969: II, §14),
+though this is indistinguishable from the fem. dative. Go. marei ‘sea' shows reformation
+of an original neuter as a fem. īn-stem.
+1. Not all these forms are actually attested, though all the given inflections themselves are.
+7.21
+Origin and development of masculine and neuter i-stem inflections
+In PIE, stem-final weak-grade *-i- appeared in the nom. acc. sg. and throughout the
+plural except for the nom. voc.; elsewhere this stem formative took the full-grade form
+*-ei-, and in the loc. sg. the lengthened grade *-ēį. To these stem-forms were added the
+usual athematic inflections (§7.2).
+Nom. sg. PIE masc. *-i-s (cf. Gk. лóliç ‘'city', Lat. ignis 'fire') develops to
+PGmc. *-iz, which is reflected as -iR in Runic, e.g. in names in -gastir. This develops
+regularly in all dialects. PIE neut. *-i-m develops the same way as the acc. (below).
+Voc. sg. The PIE vocative ending was probably *-eį (i.e. an endingless form with
+full grade of the i-suffix), as reflected in Skt. agnē ‘fire': cf. the parallel in the u-stems
+(e.g. Go. sunau 'son', §§7.24-5), and see Szemerényi 1996: $7.5.1. As in Greek (cf."		
+alignment35-spin-fulk-attestation	Fulk2018	101	118	1	3362	3369	spinnan	368c14ea084dad961381baff4c370182f034c1a4a4d9d61f338edb51a861728b	"§6.2 The glottalic theory 101
+Prior to the glottalic theory, there were attempts to address the improbability of
+the reconstructed PIE consonant inventory by assuming that the voiced aspirates were
+actually fricatives: so Walde 1897, Prokosch 1918–19, 1939: §18, Peeters 1971. Other
+solutions are surveyed by Huld (1986).
+1. Although there is disagreement in the literature, Szemerényi (1996: §6.7.1.8 & n. 1; so also Polomé 1994:
+33 n. 24) remarks that the distribution of b word internally is normal, and this is typologically odd, given its
+absence from initial position certainly a problem not solved by the glottalic theory. Melchert (1994: 93)
+offers examples of medial PIE b reflected in Anatolian. For possible explanations for the non-occurrence of
+initial b, see Ringe 2017: 19.
+2. In ejectives, closure and release of the oral and glottal points of closure are simultaneous, producing the
+sensation of a click.
+3. See, e.g., Salmons 1993 and Beckwith 2007. See also the papers in Vennemann 1989.
+4. For a comparison of the Anatolian and late PIE verb systems, see Clackson 2007: 129–51.
+6.3
+Laryngeal consonants in Germanic
+At the time when the study of PIE laryngeal consonants was still in the process of
+gaining the status of orthodoxy (see §3.1), a variety of studies suggested that laryngeals
+might have been preserved relatively late into the PGmc. period. The only proposal for
+the influence of laryngeal consonants in specifically Gmc. developments that is now
+widely credited pertains to the Verschärfung (though even this analysis is hardly se-
+cure), and the commonest view of the matter now is that it is not laryngeals but the
+hiatus left by the early loss of laryngeals that is responsible for this gemination of
+glides: see §6.10. (On the derivation of 2 from a laryngeal source, see §3.5; Polomé
+1988: 384–401; 1994: 21-4.) Some other proposals regarding laryngeal consonants are
+these:
+(a) In certain environments a laryngeal may be reflected as a velar consonant (Austin
+1946, Lehmann 1952: 47-52, Cowgill 1965 passim, Connolly 1977: 351-2,
+Ringe 2017: 86–8, but cf. Polomé 1988: 401–4, idem 1994: 23-4, Voyles 1989b:
+41-2 (with further references), Fulk 1993b: 341–2, Kortlandt 1997), as in Olcel.
+nokkvi, OE naca ‘boat' (cf. Lat. nāvis < *nehu̟-); OIcel. kvikr, OHG quec 'alive'
+(but Go. *qius, qiwa-; cf. Skt. jīváḥ < *g¹ihu̟-); and OHG zeihhur, OE tăcor
+'brother-in-law' (cf. Skt. dēvár-, Gk. Sanp, PIE stem *dhiuer-).
+(b) The reflex of PIE ǝ (i.e., H in laryngeal notation) did not always develop to Gmc. a
+or, in unstressed syllables, Ø. For discussion, see §5.5 ad fin.
+(c) Certain preterites in -r- in OHG, OE, and OIcel. have been assigned a laryngeal
+cause (Lehmann 1952: 56–61; idem 1954; Connolly 1983), e.g. OHG ki-screrot
+to scrōtan 'cut', OE leort to lætan ‘let', and OIcel. snera to snúa 'turn'; cf.
+§12.20. Cf. van Coetsem 1956: 68; Müller 2007: 157–8.
+(d) The seemingly sporadic change of PGmc. *i to e, as in PIE *slibro-> OE slipor,
+OHG sleffar 'slippery', has been claimed to take place only in the presence of a
+laryngeal: see Connolly 1977, 1999; cf. Polomé 1988: 386-9, Voyles 1989b: 38-
+41, idem 1999.
+(e) Lühr (1976) and Ritter (1984) argue that the gemination of certain sonorant conson-
+ants other than glides may be due to laryngeals, e.g. OS thimm 'dark' (cf. Skt.
+támisra- ‘dark night') and Go. OHG OE spinnan 'spin' (cf. Lith. pinù, pinti"		
+alignment35-spin-kroonen-n-present	Kroonen2013	467	507	1	2217	2230	*(s)pénh1-ne-	b7b56d360235f259075a32b8e2b18eed7d3893beddb580ea8d8ff3f95d12e20d	"*speru-
+467
+*speru- m. 'spear' - ON spjor n. 'id.', OE spere n. 'id.', E spear, OFri. spere,
+spiri m. 'id.', OS sper n. 'id.', Du. speer c. 'id.', OHG sper n. 'id.', G Speer m. 'id.'
+→ *sperH-u- (EUR) — Lat. sparus m. 'hunting-spear, javelin' < *sprH-o-; ?Alb.
+shpardh(e) m./f. 'kind of oak' <*sporH- (plus a suffix -dhë).
+A European word. The vocalization of the r in Latin points to a root-final
+laryngeal. See also *spar(r)an-.
+*speuta- n. 'spear' - ON spjót n. 'id.', Far. spjót n. 'id.', Elfd. spiuot n. 'id.', OS
+spiot n. 'id.', MDu. spiet n. 'id.', OHG spioz m. 'id.', G Spieß m. 'id.'⇒ *speud-o-
+(EUR) Gr. σлεúdш 'to hurry, strive, exert oneself, trans. 'to drive, aspire
+after' <*spéud-e-; Lith. spáusti (spáužiu) 'to press' < *spoud-ie-.
+If the original meaning of *speuta- was something driven into something,
+little objection can be found to the connection with Gr. σлεúw and Lith.
+spáusti.
+*spika- m. 'bacon' - ON spik n. 'blubber', OE spic n. 'bacon, lard', OS spek n.
+'id.', Du. spek n. 'id.', OHG spec m. 'id.', G Speck m. 'id.'*spig-o- (IE) - Skt.
+sphij-f. 'hip, buttock', Oss. sy3 | sizæ 'backside, bottom' < *spig-.
+A word with cognates only in Indo-Iranian.
+*spila- n. 'play; game' - OFri. spil, spel n. 'id.', OS spil n. 'play; movement',
+Du. spel n. 'id.', OHG spil n. 'id.', G Spiel n. 'id.' (GM).
+Also cf. the apparently denominal OE spilian, OS spilon, Du. spelen, OHG
+spilōn, G spielen w.v. 'to play' < *spilōjan-. MHG spilen in the meaning of 'to
+move vividly' (der wurm spilte gegen im als ein hunt) and 'to shine' (miner
+ougen spilndez lieht) rather points to a primary iterative. No certain ety-
+mology: the sometimes compared Latv. spîlêt 'to clamp, pinch' is semanti-
+cally remote.
+-
+*spinka(n)- m. 'finch' ON spiki m. 'tit', Nw. spikke 'sparrow, small bird',
+Sw.spink(e) 'small bird, sparrow, finch' (> E dial. spink ‘finch') ⇒*spi(n)g-o-
+(EUR?) Gr. Hsch. σníуyos 'small bird, finch', ?Skt. phingaka- m. 'shrike' <
+*sping-o-; Gr. σлízw 'to twitter' < *spig-ie-.
+—-
+Possibly related to *finkja(n)- 'finch'.
+*spinnan- s.v. 'to spin' - Go. spinnan s.v. 'id.', ON spinna s.v. 'id.', OE spinnan
+s.v. 'id.', E to spin, Du. spinnen s.v. 'id.', OHG spinnan s.v. 'id.', G spinnen s.v.
+'id.' ⇒ *(s)pénh1-ne- (EUR) Lith. pinti (pinu), Latv. pît 'to braid', Arm.
+hanum 'to weave, sow together‘< *pnh1-.
+- ·
+An n-present to the PIE root *(s) penH-. Also cf. ON, Far. spuni m. 'spin-
+ning', Elfd. spuni m. 'yarn' < *spunan- <*spnH-on-."		
+alignment35-spin-kroonen-yarn	Kroonen2013	467	507	1	2434	2442	*spunan-	b7b56d360235f259075a32b8e2b18eed7d3893beddb580ea8d8ff3f95d12e20d	"*speru-
+467
+*speru- m. 'spear' - ON spjor n. 'id.', OE spere n. 'id.', E spear, OFri. spere,
+spiri m. 'id.', OS sper n. 'id.', Du. speer c. 'id.', OHG sper n. 'id.', G Speer m. 'id.'
+→ *sperH-u- (EUR) — Lat. sparus m. 'hunting-spear, javelin' < *sprH-o-; ?Alb.
+shpardh(e) m./f. 'kind of oak' <*sporH- (plus a suffix -dhë).
+A European word. The vocalization of the r in Latin points to a root-final
+laryngeal. See also *spar(r)an-.
+*speuta- n. 'spear' - ON spjót n. 'id.', Far. spjót n. 'id.', Elfd. spiuot n. 'id.', OS
+spiot n. 'id.', MDu. spiet n. 'id.', OHG spioz m. 'id.', G Spieß m. 'id.'⇒ *speud-o-
+(EUR) Gr. σлεúdш 'to hurry, strive, exert oneself, trans. 'to drive, aspire
+after' <*spéud-e-; Lith. spáusti (spáužiu) 'to press' < *spoud-ie-.
+If the original meaning of *speuta- was something driven into something,
+little objection can be found to the connection with Gr. σлεúw and Lith.
+spáusti.
+*spika- m. 'bacon' - ON spik n. 'blubber', OE spic n. 'bacon, lard', OS spek n.
+'id.', Du. spek n. 'id.', OHG spec m. 'id.', G Speck m. 'id.'*spig-o- (IE) - Skt.
+sphij-f. 'hip, buttock', Oss. sy3 | sizæ 'backside, bottom' < *spig-.
+A word with cognates only in Indo-Iranian.
+*spila- n. 'play; game' - OFri. spil, spel n. 'id.', OS spil n. 'play; movement',
+Du. spel n. 'id.', OHG spil n. 'id.', G Spiel n. 'id.' (GM).
+Also cf. the apparently denominal OE spilian, OS spilon, Du. spelen, OHG
+spilōn, G spielen w.v. 'to play' < *spilōjan-. MHG spilen in the meaning of 'to
+move vividly' (der wurm spilte gegen im als ein hunt) and 'to shine' (miner
+ougen spilndez lieht) rather points to a primary iterative. No certain ety-
+mology: the sometimes compared Latv. spîlêt 'to clamp, pinch' is semanti-
+cally remote.
+-
+*spinka(n)- m. 'finch' ON spiki m. 'tit', Nw. spikke 'sparrow, small bird',
+Sw.spink(e) 'small bird, sparrow, finch' (> E dial. spink ‘finch') ⇒*spi(n)g-o-
+(EUR?) Gr. Hsch. σníуyos 'small bird, finch', ?Skt. phingaka- m. 'shrike' <
+*sping-o-; Gr. σлízw 'to twitter' < *spig-ie-.
+—-
+Possibly related to *finkja(n)- 'finch'.
+*spinnan- s.v. 'to spin' - Go. spinnan s.v. 'id.', ON spinna s.v. 'id.', OE spinnan
+s.v. 'id.', E to spin, Du. spinnen s.v. 'id.', OHG spinnan s.v. 'id.', G spinnen s.v.
+'id.' ⇒ *(s)pénh1-ne- (EUR) Lith. pinti (pinu), Latv. pît 'to braid', Arm.
+hanum 'to weave, sow together‘< *pnh1-.
+- ·
+An n-present to the PIE root *(s) penH-. Also cf. ON, Far. spuni m. 'spin-
+ning', Elfd. spuni m. 'yarn' < *spunan- <*spnH-on-."		
+alignment35-spindle-rt-spinel	RingeTaylor2014	330	345	8	98	104	spinel	07d2f2161086cb119694f86520f439e50f11316f870f78d390118fbd392b1adc	"PWGme *spinnilu ‘spindle’ (OHG spinnila) > *spinlu > *spinl > OE spinil (early
+Merc., EpGl 967) > spinel (CorpGl 1922, WS)."		
+alignment35-spoon-rt-endpoint	RingeTaylor2014	143	158	15	75	79	spon	dd57b2c37c3bf27cad56d3d2015cdcf88eecc5422cd74b67dc032fa700c75c9c	"PNWGme *spanuz ‘wood-chip, shaving’ (ON spdnn, OHG span) > *spanu > OE, OF
+spon;"		
+alignment35-spread-kroonen-iterative	Kroonen2013	470	510	1	1518	1530	*sprit(t)ōn-	c9a83c649a83d11d4dcd2ee9c9017a063bb361199c5803b659eb71b5913c65a1	"470
+*spreutan- *sprutan-
+~
+Derived from *sprekan- (q.v.).
+*spreutan- ~ *sprutan- s.v. 'to bud, sprout' - OE ā-sprutan s.v. 'id.', E to
+sprout, OFri. sprūta s.v. 'id.', MLG sprēten, spruten s.v. 'id.', MDu. spruten s.v.
+'id.', Du. spruiten s.v. 'id.', MHG spriezen s.v. 'id.', G sprießen s.v. 'id.' (DRV).
+A strong verb back-formed to the iterative *sprut(t)ōn- (q.v.). Also cf. Go.
+sprauto adv. 'fast'.
+-
+*spring/kan- s.v. 'to break out, leap' — ON springa s.v. 'to spring; to spurt
+out; to burst, break', Icel. springa, sprinka s.v. 'id.', Far. springa s.v. 'to leap,
+jump; to burst, explode', Elfd. springga s.v. 'to grow', OE springan, sprincan
+w.v. 'to spring, burst out; to grow', E to spring, OFri. springa s.v. 'to spring; to
+jump, leap, run', OS springan s.v. 'id.', Du. springen s.v. 'id.', OHG springan s.v.
+'to jump, gush, flow', G springen s.v. 'id.'⇒ *spré-n-gh-e- (IE) - Skt. sprhayati
+'to be eager, strive after, desire' < *sprģh-eie-; OAv. aspǝrǝzatā 3sg.(?) 'to
+strive after' <*sp(e)rģ¹-; Gr. σnέpxш, σлερ×μαι 'to come rushing in, huddle,
+be upset, be impassioned' <*spérģh-e-.
+A nasal present *springan- to an IE root *spregh-, which is to be separated
+from *spregh- as continued by *spurkōn- 'to roast' and MDu. sprink f. 'spark'
+<*springō-. The root-final k of OE sprincan as well as Icel. sprinka is likely to
+have arisen under the influence of an iterative *sprunkōn- < *sprngh-néh₂-.
+Without the nasal, cf. LG sprick n. 'dead wood', E sprig 'twig' < *sprikka- /
+*sprigga-. See also *sprangjan-.
+*sprit(t)ōn- w.v. 'to disperse'
+-
+Nw. sprita w.v. 'id.', G spritzen w.v. 'to
+squirt; to become dispersed' → *sprit-néh₂- (GM).
+The iterative to *spripan- ~ *spritan- (q.v.).
+*spripan- ~ *spritan- s.v. 'to break up, become scattered' - OHG sprīzan
+s.v. 'id.', MHG sprīden, spriten s.v. 'to spread' ⇒ *spréit-e- (GM).
+A strong verb apparently continuing a Pre-Gm. root *spreit-. The form
+*spritan- was influenced by the iterative. See also *spraidjan- ~ *spraitjan-.
+*sprut(t)ōn- w.v. 'to sprout' EDu. sprotten w.v. 'id.', G sprossen w.v. 'to
+germinate' ⇒ *sprud-néh₂- (EUR) - Lith. spráusti (spráudžiu) 'to force in' <
+*sproud-ie-; W ffrwst m. 'rush' <*sprud-tu-(?).
+The iterative belonging to the strong verb *spreutan- ~ *sprutan- (q.v.).
+Also cf. ON sproti, OE sprota, OHG sprozzo m. 'shoot' < *sprutan-.
+-
+*spurdi- f. 'track, course' - Go. spaurds f. 'id.', OE spyrd m. 'id.', OHG spurt
+m. ‘id.' ⇒ *sprdh-i- (IE) — Hitt. išparzizi 'to escape, get away', Skt. spárdhate
+'to contend', Arm. sprdem 'to escape' < *spérdh-; Skt. spŕdh- f. 'contest, fight',
+OAv. spǝrǝd-f. 'zeal, alacrity' < *sprdh-."		
+alignment35-spread-kroonen-strong-d	Kroonen2013	470	510	1	1662	1671	*spripan-	c9a83c649a83d11d4dcd2ee9c9017a063bb361199c5803b659eb71b5913c65a1	"470
+*spreutan- *sprutan-
+~
+Derived from *sprekan- (q.v.).
+*spreutan- ~ *sprutan- s.v. 'to bud, sprout' - OE ā-sprutan s.v. 'id.', E to
+sprout, OFri. sprūta s.v. 'id.', MLG sprēten, spruten s.v. 'id.', MDu. spruten s.v.
+'id.', Du. spruiten s.v. 'id.', MHG spriezen s.v. 'id.', G sprießen s.v. 'id.' (DRV).
+A strong verb back-formed to the iterative *sprut(t)ōn- (q.v.). Also cf. Go.
+sprauto adv. 'fast'.
+-
+*spring/kan- s.v. 'to break out, leap' — ON springa s.v. 'to spring; to spurt
+out; to burst, break', Icel. springa, sprinka s.v. 'id.', Far. springa s.v. 'to leap,
+jump; to burst, explode', Elfd. springga s.v. 'to grow', OE springan, sprincan
+w.v. 'to spring, burst out; to grow', E to spring, OFri. springa s.v. 'to spring; to
+jump, leap, run', OS springan s.v. 'id.', Du. springen s.v. 'id.', OHG springan s.v.
+'to jump, gush, flow', G springen s.v. 'id.'⇒ *spré-n-gh-e- (IE) - Skt. sprhayati
+'to be eager, strive after, desire' < *sprģh-eie-; OAv. aspǝrǝzatā 3sg.(?) 'to
+strive after' <*sp(e)rģ¹-; Gr. σnέpxш, σлερ×μαι 'to come rushing in, huddle,
+be upset, be impassioned' <*spérģh-e-.
+A nasal present *springan- to an IE root *spregh-, which is to be separated
+from *spregh- as continued by *spurkōn- 'to roast' and MDu. sprink f. 'spark'
+<*springō-. The root-final k of OE sprincan as well as Icel. sprinka is likely to
+have arisen under the influence of an iterative *sprunkōn- < *sprngh-néh₂-.
+Without the nasal, cf. LG sprick n. 'dead wood', E sprig 'twig' < *sprikka- /
+*sprigga-. See also *sprangjan-.
+*sprit(t)ōn- w.v. 'to disperse'
+-
+Nw. sprita w.v. 'id.', G spritzen w.v. 'to
+squirt; to become dispersed' → *sprit-néh₂- (GM).
+The iterative to *spripan- ~ *spritan- (q.v.).
+*spripan- ~ *spritan- s.v. 'to break up, become scattered' - OHG sprīzan
+s.v. 'id.', MHG sprīden, spriten s.v. 'to spread' ⇒ *spréit-e- (GM).
+A strong verb apparently continuing a Pre-Gm. root *spreit-. The form
+*spritan- was influenced by the iterative. See also *spraidjan- ~ *spraitjan-.
+*sprut(t)ōn- w.v. 'to sprout' EDu. sprotten w.v. 'id.', G sprossen w.v. 'to
+germinate' ⇒ *sprud-néh₂- (EUR) - Lith. spráusti (spráudžiu) 'to force in' <
+*sproud-ie-; W ffrwst m. 'rush' <*sprud-tu-(?).
+The iterative belonging to the strong verb *spreutan- ~ *sprutan- (q.v.).
+Also cf. ON sproti, OE sprota, OHG sprozzo m. 'shoot' < *sprutan-.
+-
+*spurdi- f. 'track, course' - Go. spaurds f. 'id.', OE spyrd m. 'id.', OHG spurt
+m. ‘id.' ⇒ *sprdh-i- (IE) — Hitt. išparzizi 'to escape, get away', Skt. spárdhate
+'to contend', Arm. sprdem 'to escape' < *spérdh-; Skt. spŕdh- f. 'contest, fight',
+OAv. spǝrǝd-f. 'zeal, alacrity' < *sprdh-."		
+alignment35-spread-kroonen-strong-t	Kroonen2013	470	510	1	1674	1683	*spritan-	c9a83c649a83d11d4dcd2ee9c9017a063bb361199c5803b659eb71b5913c65a1	"470
+*spreutan- *sprutan-
+~
+Derived from *sprekan- (q.v.).
+*spreutan- ~ *sprutan- s.v. 'to bud, sprout' - OE ā-sprutan s.v. 'id.', E to
+sprout, OFri. sprūta s.v. 'id.', MLG sprēten, spruten s.v. 'id.', MDu. spruten s.v.
+'id.', Du. spruiten s.v. 'id.', MHG spriezen s.v. 'id.', G sprießen s.v. 'id.' (DRV).
+A strong verb back-formed to the iterative *sprut(t)ōn- (q.v.). Also cf. Go.
+sprauto adv. 'fast'.
+-
+*spring/kan- s.v. 'to break out, leap' — ON springa s.v. 'to spring; to spurt
+out; to burst, break', Icel. springa, sprinka s.v. 'id.', Far. springa s.v. 'to leap,
+jump; to burst, explode', Elfd. springga s.v. 'to grow', OE springan, sprincan
+w.v. 'to spring, burst out; to grow', E to spring, OFri. springa s.v. 'to spring; to
+jump, leap, run', OS springan s.v. 'id.', Du. springen s.v. 'id.', OHG springan s.v.
+'to jump, gush, flow', G springen s.v. 'id.'⇒ *spré-n-gh-e- (IE) - Skt. sprhayati
+'to be eager, strive after, desire' < *sprģh-eie-; OAv. aspǝrǝzatā 3sg.(?) 'to
+strive after' <*sp(e)rģ¹-; Gr. σnέpxш, σлερ×μαι 'to come rushing in, huddle,
+be upset, be impassioned' <*spérģh-e-.
+A nasal present *springan- to an IE root *spregh-, which is to be separated
+from *spregh- as continued by *spurkōn- 'to roast' and MDu. sprink f. 'spark'
+<*springō-. The root-final k of OE sprincan as well as Icel. sprinka is likely to
+have arisen under the influence of an iterative *sprunkōn- < *sprngh-néh₂-.
+Without the nasal, cf. LG sprick n. 'dead wood', E sprig 'twig' < *sprikka- /
+*sprigga-. See also *sprangjan-.
+*sprit(t)ōn- w.v. 'to disperse'
+-
+Nw. sprita w.v. 'id.', G spritzen w.v. 'to
+squirt; to become dispersed' → *sprit-néh₂- (GM).
+The iterative to *spripan- ~ *spritan- (q.v.).
+*spripan- ~ *spritan- s.v. 'to break up, become scattered' - OHG sprīzan
+s.v. 'id.', MHG sprīden, spriten s.v. 'to spread' ⇒ *spréit-e- (GM).
+A strong verb apparently continuing a Pre-Gm. root *spreit-. The form
+*spritan- was influenced by the iterative. See also *spraidjan- ~ *spraitjan-.
+*sprut(t)ōn- w.v. 'to sprout' EDu. sprotten w.v. 'id.', G sprossen w.v. 'to
+germinate' ⇒ *sprud-néh₂- (EUR) - Lith. spráusti (spráudžiu) 'to force in' <
+*sproud-ie-; W ffrwst m. 'rush' <*sprud-tu-(?).
+The iterative belonging to the strong verb *spreutan- ~ *sprutan- (q.v.).
+Also cf. ON sproti, OE sprota, OHG sprozzo m. 'shoot' < *sprutan-.
+-
+*spurdi- f. 'track, course' - Go. spaurds f. 'id.', OE spyrd m. 'id.', OHG spurt
+m. ‘id.' ⇒ *sprdh-i- (IE) — Hitt. išparzizi 'to escape, get away', Skt. spárdhate
+'to contend', Arm. sprdem 'to escape' < *spérdh-; Skt. spŕdh- f. 'contest, fight',
+OAv. spǝrǝd-f. 'zeal, alacrity' < *sprdh-."		
+alignment35-spread-orel-base-body	Orel2003	367	406	1	236	246	*sprīdanan	eeb3a18327f67b950ba11ece73d7d1f11e1c6f32278f7523e1d40c522f3f13e0	"spreutanan
+LEHMANN GED 320–321; KLUGE-SEEBOLD
+783.
+~
+*sprēkjaz adj.: ON sprækr 'sprouting,
+sprightly', OE 3e-spráce 'eloquent, affable',
+OHG wāh-sprāhhi id. Derived from *spre-
+kanan. TORP-FALK 516; HOLTHAUSEN
+AEEW 312; VRIES ANEW 539.
+*sprīdanan str.vb.: OHG spritan 'to
+extend'. Related to OIr srédim 'to throw'.
+TORP-FALK 517; HOLTHAUSEN AEEW
+312; POKORNY I 994; ONIONS 857;
+HEIDERMANNS 137; KLUGE-SEEBOLD 783.
+*sprunzōn *sprunzaz sb.m./f.: ON
+sprunga 'crack in the skin, scratch', MLG
+sprunk jump, bound', OHG sprung id.
+Derived from *sprenzanan. HOLTHAUSEN
+AEEW 314; VRIES ANEW 539.
+*sprutōn sb.m.: ON sproti 'sprout, twig',
+OE sprota 'sprout', MLG sprote id., OHG
+sprozzo id. Derived from *spreutanan
+*sprutanan. TORP-FALK 518; HOLT-
+HAUSEN AEEW 313; POKORNY I 994 (to W
+ffrwst 'haste', Lith spriáusti 'to squeeze in');
+VRIES ANEW 538; ZALIZNIAK I 154;
+ONIONS 857; SEEBOLD 459; KLUGE-
+SEEBOLD 784.
+*spura-xunđaz sb.m.: ON spor-hundr
+'bloodhound', OS spuri-hunt id., OHG
+spuri-hunt id. Compound of *spuran and
+*xundaz. CARR Nom. comp. 84 (parallel
+formations).
+*spuran sb.n.: ON spor 'track', OE spor
+id., MLG spor id., OHG spor id. Related
+to (or derived from?) *spurnanan. TORP-
+FALK 509; HOLTHAUSEN AEEW 312;
+POKORNY I993; VRIES ANEW 537;
+ZALIZNIAK I 143; SEEBOLD 454; BAMMES-
+BERGER Nom. 58; KLUGE-SEEBOLD 784.
+*spurđaz sb.m.: ON sporðr 'fish tail',
+MHG sporte id. Related to Lith spūrù,
+spurti 'to be fringy', spùrdu, spurděti
+'to flounder, to fidget, to struggle',
+Latv spurstu, spurt 'to rove'. TORP-FALK
+509; POKORNY I 995; DYBO VSJа 33;
+FRAENKEL 885-886; VRIES ANEW 537 (to
+*sparron).
+*spurðz sb.f./m.: Goth spaurds ‘race-track,
+stadium course', OE spyrd 'race-track,
+course', OHG spurt ‘stadium course' (i-
+367
+spurōjanan
+stem). Identical with Skt spŕdh- ‘battle',
+Av sparǝd- 'zeal' derived from *sperdh-: Skt
+spárdhate to rival, to contend'. GRIMM
+DG II 57 (to Skt sphuráti 'to bound, to
+spurn, to dart'); GRIENBERGER Got. 196;
+BARTHOLOMAE 1623; TORP-FALK 514-
+515; HOLTHAUSEN AEEW 314; FEIST
+443-444; MAYRHOFER III 537; POKORNY
+I 995-996; LEHMANN GED 319;
+BAMMESBERGER Nom. 197; GRIEPENTROG
+Wurzelnomina 366–378.
+*spurjanan wk.vb.: ON spyrja 'to track, to
+ask', OE spyrian 'to track, to inquire',
+OFris spera 'to ask', OHG gi-spurren 'to
+trace, to find'. Derived from *spuran.
+TORP-FALK 509; HOLTHAUSEN AEEW
+314; VRIES ANEW 539; ONIONS 852;
+KLUGE-SEEBOLD 784.
+*spurnanan str.vb.: OE spornan 'to strike
+with the foot', OFris spurna id. (may be
+wk.), OS pres. bi-spurnan 'to trample',
+OHG fir-spurnan 'to push, to move'.
+Related to Lat spernō ‘to scorn' and fur-
+ther to Skt sphuráti ‘to bound, to spurt, to
+dart', Gk άoлaíрш 'to pant, to struggle',
+Lith spiriù, spirti 'to defy, to affront'.
+Probably based on an original present in
+*-n-ō. TORP-FALK 509; REICHELT KZ
+XXXIX 56; PERSSON Beiträge 167, 417;
+HOLTHAUSEN AEEW 312; WALDE-
+HOFMANN II 572-573; JÓHANNESSON IEW
+894-895; MAYRHOFER III 544; POKORNY
+I 992–993; FRAENKEL 873-874; VRIES
+ANEW 534; FRISK I 166-167; ONIONS
+858; SEEBOLD 453-454; KLUGE-SEEBOLD
+782.
+*spurnjanan wk.vb.: ON spyrna 'to
+spurn', OE spyrnan 'to step, to trample',
+OHG spurnen 'to trample'. Derived from
+*spurnanan. TORP-FALK 509-510; HOLT-
+HAUSEN AEEW 314; VRIES ANEW 534,
+539.
+*spurnōjanan wk.vb.: ON sporna 'to
+spurn, to kick', OHG spornōn ‘to spurn'.
+Derived from *spurnanan. VRIES ANEW
+537.
+*spurōjanan wk.vb.: ON spora 'to spurn,
+to kick', MDu sporen 'to follow a trace'.
+Derived from *spuran. MAYRHOFER III"		
+alignment35-spur-orel-track-body	Orel2003	367	406	1	1003	1010	*spuran	eeb3a18327f67b950ba11ece73d7d1f11e1c6f32278f7523e1d40c522f3f13e0	"spreutanan
+LEHMANN GED 320–321; KLUGE-SEEBOLD
+783.
+~
+*sprēkjaz adj.: ON sprækr 'sprouting,
+sprightly', OE 3e-spráce 'eloquent, affable',
+OHG wāh-sprāhhi id. Derived from *spre-
+kanan. TORP-FALK 516; HOLTHAUSEN
+AEEW 312; VRIES ANEW 539.
+*sprīdanan str.vb.: OHG spritan 'to
+extend'. Related to OIr srédim 'to throw'.
+TORP-FALK 517; HOLTHAUSEN AEEW
+312; POKORNY I 994; ONIONS 857;
+HEIDERMANNS 137; KLUGE-SEEBOLD 783.
+*sprunzōn *sprunzaz sb.m./f.: ON
+sprunga 'crack in the skin, scratch', MLG
+sprunk jump, bound', OHG sprung id.
+Derived from *sprenzanan. HOLTHAUSEN
+AEEW 314; VRIES ANEW 539.
+*sprutōn sb.m.: ON sproti 'sprout, twig',
+OE sprota 'sprout', MLG sprote id., OHG
+sprozzo id. Derived from *spreutanan
+*sprutanan. TORP-FALK 518; HOLT-
+HAUSEN AEEW 313; POKORNY I 994 (to W
+ffrwst 'haste', Lith spriáusti 'to squeeze in');
+VRIES ANEW 538; ZALIZNIAK I 154;
+ONIONS 857; SEEBOLD 459; KLUGE-
+SEEBOLD 784.
+*spura-xunđaz sb.m.: ON spor-hundr
+'bloodhound', OS spuri-hunt id., OHG
+spuri-hunt id. Compound of *spuran and
+*xundaz. CARR Nom. comp. 84 (parallel
+formations).
+*spuran sb.n.: ON spor 'track', OE spor
+id., MLG spor id., OHG spor id. Related
+to (or derived from?) *spurnanan. TORP-
+FALK 509; HOLTHAUSEN AEEW 312;
+POKORNY I993; VRIES ANEW 537;
+ZALIZNIAK I 143; SEEBOLD 454; BAMMES-
+BERGER Nom. 58; KLUGE-SEEBOLD 784.
+*spurđaz sb.m.: ON sporðr 'fish tail',
+MHG sporte id. Related to Lith spūrù,
+spurti 'to be fringy', spùrdu, spurděti
+'to flounder, to fidget, to struggle',
+Latv spurstu, spurt 'to rove'. TORP-FALK
+509; POKORNY I 995; DYBO VSJа 33;
+FRAENKEL 885-886; VRIES ANEW 537 (to
+*sparron).
+*spurðz sb.f./m.: Goth spaurds ‘race-track,
+stadium course', OE spyrd 'race-track,
+course', OHG spurt ‘stadium course' (i-
+367
+spurōjanan
+stem). Identical with Skt spŕdh- ‘battle',
+Av sparǝd- 'zeal' derived from *sperdh-: Skt
+spárdhate to rival, to contend'. GRIMM
+DG II 57 (to Skt sphuráti 'to bound, to
+spurn, to dart'); GRIENBERGER Got. 196;
+BARTHOLOMAE 1623; TORP-FALK 514-
+515; HOLTHAUSEN AEEW 314; FEIST
+443-444; MAYRHOFER III 537; POKORNY
+I 995-996; LEHMANN GED 319;
+BAMMESBERGER Nom. 197; GRIEPENTROG
+Wurzelnomina 366–378.
+*spurjanan wk.vb.: ON spyrja 'to track, to
+ask', OE spyrian 'to track, to inquire',
+OFris spera 'to ask', OHG gi-spurren 'to
+trace, to find'. Derived from *spuran.
+TORP-FALK 509; HOLTHAUSEN AEEW
+314; VRIES ANEW 539; ONIONS 852;
+KLUGE-SEEBOLD 784.
+*spurnanan str.vb.: OE spornan 'to strike
+with the foot', OFris spurna id. (may be
+wk.), OS pres. bi-spurnan 'to trample',
+OHG fir-spurnan 'to push, to move'.
+Related to Lat spernō ‘to scorn' and fur-
+ther to Skt sphuráti ‘to bound, to spurt, to
+dart', Gk άoлaíрш 'to pant, to struggle',
+Lith spiriù, spirti 'to defy, to affront'.
+Probably based on an original present in
+*-n-ō. TORP-FALK 509; REICHELT KZ
+XXXIX 56; PERSSON Beiträge 167, 417;
+HOLTHAUSEN AEEW 312; WALDE-
+HOFMANN II 572-573; JÓHANNESSON IEW
+894-895; MAYRHOFER III 544; POKORNY
+I 992–993; FRAENKEL 873-874; VRIES
+ANEW 534; FRISK I 166-167; ONIONS
+858; SEEBOLD 453-454; KLUGE-SEEBOLD
+782.
+*spurnjanan wk.vb.: ON spyrna 'to
+spurn', OE spyrnan 'to step, to trample',
+OHG spurnen 'to trample'. Derived from
+*spurnanan. TORP-FALK 509-510; HOLT-
+HAUSEN AEEW 314; VRIES ANEW 534,
+539.
+*spurnōjanan wk.vb.: ON sporna 'to
+spurn, to kick', OHG spornōn ‘to spurn'.
+Derived from *spurnanan. VRIES ANEW
+537.
+*spurōjanan wk.vb.: ON spora 'to spurn,
+to kick', MDu sporen 'to follow a trace'.
+Derived from *spuran. MAYRHOFER III"		
+alignment35-spur-orel-kick	Orel2003	367	406	1	1168	1178	*spurnanan	eeb3a18327f67b950ba11ece73d7d1f11e1c6f32278f7523e1d40c522f3f13e0	"spreutanan
+LEHMANN GED 320–321; KLUGE-SEEBOLD
+783.
+~
+*sprēkjaz adj.: ON sprækr 'sprouting,
+sprightly', OE 3e-spráce 'eloquent, affable',
+OHG wāh-sprāhhi id. Derived from *spre-
+kanan. TORP-FALK 516; HOLTHAUSEN
+AEEW 312; VRIES ANEW 539.
+*sprīdanan str.vb.: OHG spritan 'to
+extend'. Related to OIr srédim 'to throw'.
+TORP-FALK 517; HOLTHAUSEN AEEW
+312; POKORNY I 994; ONIONS 857;
+HEIDERMANNS 137; KLUGE-SEEBOLD 783.
+*sprunzōn *sprunzaz sb.m./f.: ON
+sprunga 'crack in the skin, scratch', MLG
+sprunk jump, bound', OHG sprung id.
+Derived from *sprenzanan. HOLTHAUSEN
+AEEW 314; VRIES ANEW 539.
+*sprutōn sb.m.: ON sproti 'sprout, twig',
+OE sprota 'sprout', MLG sprote id., OHG
+sprozzo id. Derived from *spreutanan
+*sprutanan. TORP-FALK 518; HOLT-
+HAUSEN AEEW 313; POKORNY I 994 (to W
+ffrwst 'haste', Lith spriáusti 'to squeeze in');
+VRIES ANEW 538; ZALIZNIAK I 154;
+ONIONS 857; SEEBOLD 459; KLUGE-
+SEEBOLD 784.
+*spura-xunđaz sb.m.: ON spor-hundr
+'bloodhound', OS spuri-hunt id., OHG
+spuri-hunt id. Compound of *spuran and
+*xundaz. CARR Nom. comp. 84 (parallel
+formations).
+*spuran sb.n.: ON spor 'track', OE spor
+id., MLG spor id., OHG spor id. Related
+to (or derived from?) *spurnanan. TORP-
+FALK 509; HOLTHAUSEN AEEW 312;
+POKORNY I993; VRIES ANEW 537;
+ZALIZNIAK I 143; SEEBOLD 454; BAMMES-
+BERGER Nom. 58; KLUGE-SEEBOLD 784.
+*spurđaz sb.m.: ON sporðr 'fish tail',
+MHG sporte id. Related to Lith spūrù,
+spurti 'to be fringy', spùrdu, spurděti
+'to flounder, to fidget, to struggle',
+Latv spurstu, spurt 'to rove'. TORP-FALK
+509; POKORNY I 995; DYBO VSJа 33;
+FRAENKEL 885-886; VRIES ANEW 537 (to
+*sparron).
+*spurðz sb.f./m.: Goth spaurds ‘race-track,
+stadium course', OE spyrd 'race-track,
+course', OHG spurt ‘stadium course' (i-
+367
+spurōjanan
+stem). Identical with Skt spŕdh- ‘battle',
+Av sparǝd- 'zeal' derived from *sperdh-: Skt
+spárdhate to rival, to contend'. GRIMM
+DG II 57 (to Skt sphuráti 'to bound, to
+spurn, to dart'); GRIENBERGER Got. 196;
+BARTHOLOMAE 1623; TORP-FALK 514-
+515; HOLTHAUSEN AEEW 314; FEIST
+443-444; MAYRHOFER III 537; POKORNY
+I 995-996; LEHMANN GED 319;
+BAMMESBERGER Nom. 197; GRIEPENTROG
+Wurzelnomina 366–378.
+*spurjanan wk.vb.: ON spyrja 'to track, to
+ask', OE spyrian 'to track, to inquire',
+OFris spera 'to ask', OHG gi-spurren 'to
+trace, to find'. Derived from *spuran.
+TORP-FALK 509; HOLTHAUSEN AEEW
+314; VRIES ANEW 539; ONIONS 852;
+KLUGE-SEEBOLD 784.
+*spurnanan str.vb.: OE spornan 'to strike
+with the foot', OFris spurna id. (may be
+wk.), OS pres. bi-spurnan 'to trample',
+OHG fir-spurnan 'to push, to move'.
+Related to Lat spernō ‘to scorn' and fur-
+ther to Skt sphuráti ‘to bound, to spurt, to
+dart', Gk άoлaíрш 'to pant, to struggle',
+Lith spiriù, spirti 'to defy, to affront'.
+Probably based on an original present in
+*-n-ō. TORP-FALK 509; REICHELT KZ
+XXXIX 56; PERSSON Beiträge 167, 417;
+HOLTHAUSEN AEEW 312; WALDE-
+HOFMANN II 572-573; JÓHANNESSON IEW
+894-895; MAYRHOFER III 544; POKORNY
+I 992–993; FRAENKEL 873-874; VRIES
+ANEW 534; FRISK I 166-167; ONIONS
+858; SEEBOLD 453-454; KLUGE-SEEBOLD
+782.
+*spurnjanan wk.vb.: ON spyrna 'to
+spurn', OE spyrnan 'to step, to trample',
+OHG spurnen 'to trample'. Derived from
+*spurnanan. TORP-FALK 509-510; HOLT-
+HAUSEN AEEW 314; VRIES ANEW 534,
+539.
+*spurnōjanan wk.vb.: ON sporna 'to
+spurn, to kick', OHG spornōn ‘to spurn'.
+Derived from *spurnanan. VRIES ANEW
+537.
+*spurōjanan wk.vb.: ON spora 'to spurn,
+to kick', MDu sporen 'to follow a trace'.
+Derived from *spuran. MAYRHOFER III"		
+alignment35-spur-ringe-pgmc	Ringe2017	117	128	4	195	204	*spurnaną	d5866ffa6cdd76cf5faab17d9f8ac96ce312484a773b3271574c58d7ddf537ed	"PIE *spr̥dh- ‘contest’ (cf. Skt spr̥dh-) > PGmc *spurd- ‘racecourse’ (cf. Goth.
+    spaúrds);
+  PIE *spr̥-n-h1- ‘be kicking’ (cf. Lat. spernere ‘to despise, to reject’, pf. sprēvisse) >
+    PGmc *spurnaną ‘to kick, to trample’ (cf. OE spurnan);
+  PIE *h2stér- ‘star’ (cf. Hitt. hasterz, Gk ἀστέρ- /astér-/) >! PGmc *sternan-
+    (cf. Goth. staírno, OE steorra);
+  PIE *stáh2ti- ~ *sth2téy- ‘act of standing, place to stand’ ! *sth2tís (cf. Skt sthitís) >
+    PGmc *stadiz ‘place’ (cf. Goth. staþs, OE stede);
+  PIE *stéygheti ‘(s)he’s walking’ (cf. Gk στείχει /stéikhei/; Skt stigh-, pres. sg. prá
+    stiṅnoti ‘(s)he makes progress’) > PGmc *stīgidi ‘(s)he climbs’ (cf. Goth. steigiþ,
+    OE stīġþ);
+  PIE *h1esti ‘(s)he is’ (cf. Gk ἐστι /esti/, Lat. est) > PGmc *isti (cf. Goth., OHG ist);
+  PIE *ghóstis ‘stranger’ (cf. Lat. hostis ‘enemy’, OCS gostĭ ‘guest’) > PGmc *gastiz
+    ‘guest’ (cf. Goth. gasts, OE ġiest);
+  PIE *sḱéydeti ‘(s)he will cut (it) off ’ (cf. Rigvedic Skt mā ́ chedma ‘may we not
+    break’) > PGmc *skītidi ‘(s)he defecates’ (cf. ModHG scheißt, ON skítr with
+    ending replaced; seldom attested in the older Gmc documents);
+  (post-)PIE *skabheti ‘(s)he’s scratching’ (cf. Lat. scabit) > PGmc *skabidi ‘(s)he
+    shaves’ (cf. Goth. skabiþ, OE sċæfþ);
+  post-PIE *pisk- ‘ﬁsh’ (cf. Lat. piscis) > PGmc *ﬁskaz (cf. Goth. ﬁsks, OE ﬁsċ)."		
+alignment35-spur-ringe-pie-weak	Ringe2017	117	128	4	100	111	*spr̥-n-h1-	d5866ffa6cdd76cf5faab17d9f8ac96ce312484a773b3271574c58d7ddf537ed	"PIE *spr̥dh- ‘contest’ (cf. Skt spr̥dh-) > PGmc *spurd- ‘racecourse’ (cf. Goth.
+    spaúrds);
+  PIE *spr̥-n-h1- ‘be kicking’ (cf. Lat. spernere ‘to despise, to reject’, pf. sprēvisse) >
+    PGmc *spurnaną ‘to kick, to trample’ (cf. OE spurnan);
+  PIE *h2stér- ‘star’ (cf. Hitt. hasterz, Gk ἀστέρ- /astér-/) >! PGmc *sternan-
+    (cf. Goth. staírno, OE steorra);
+  PIE *stáh2ti- ~ *sth2téy- ‘act of standing, place to stand’ ! *sth2tís (cf. Skt sthitís) >
+    PGmc *stadiz ‘place’ (cf. Goth. staþs, OE stede);
+  PIE *stéygheti ‘(s)he’s walking’ (cf. Gk στείχει /stéikhei/; Skt stigh-, pres. sg. prá
+    stiṅnoti ‘(s)he makes progress’) > PGmc *stīgidi ‘(s)he climbs’ (cf. Goth. steigiþ,
+    OE stīġþ);
+  PIE *h1esti ‘(s)he is’ (cf. Gk ἐστι /esti/, Lat. est) > PGmc *isti (cf. Goth., OHG ist);
+  PIE *ghóstis ‘stranger’ (cf. Lat. hostis ‘enemy’, OCS gostĭ ‘guest’) > PGmc *gastiz
+    ‘guest’ (cf. Goth. gasts, OE ġiest);
+  PIE *sḱéydeti ‘(s)he will cut (it) off ’ (cf. Rigvedic Skt mā ́ chedma ‘may we not
+    break’) > PGmc *skītidi ‘(s)he defecates’ (cf. ModHG scheißt, ON skítr with
+    ending replaced; seldom attested in the older Gmc documents);
+  (post-)PIE *skabheti ‘(s)he’s scratching’ (cf. Lat. scabit) > PGmc *skabidi ‘(s)he
+    shaves’ (cf. Goth. skabiþ, OE sċæfþ);
+  post-PIE *pisk- ‘ﬁsh’ (cf. Lat. piscis) > PGmc *ﬁskaz (cf. Goth. ﬁsks, OE ﬁsċ)."		
+alignment35-spur-ringe-pie-strong	Ringe2017	270	281	2	2147	2159	*spr̥-né-h1-	0c9a58a4f7bece795b20fdbcde21c579073e421669b8584c07412353c5e2d093	"There were no minority present formations in this subclass.
+   The ablaut pattern of the non-nasal subclass was pres. *eR (~ *[iR]), past indic. sg.
+*aR, default past *uR, past ptc. *uR; the root normally ended in a consonant (though
+see further below). About ﬁfteen verbs of this type are securely reconstructable for
+PGmc. Typical examples include:
+  *werþaną, *warþ, *wurdun, *wurdanaz ‘become’ (cf. Goth. waírþan, warþ,
+    waúrþun, waúrþans; ON verða, varð, urðu, orðinn; OE weorþan, wearþ, wur-
+    don, worden; OHG werdan, ward, wurtun, giwortan);
+  *berganą, *barg, *burgun, *burganaz ‘save, hide’ (cf. Goth. baírgan; ON bjarga,
+    barg, burgu, borginn; OE beorgan, bearg, burgon, borgen; OHG bergan, barg,
+    burgun, giborgan);
+  *geldaną, *gald, *guldun, *guldanaz ‘pay’ (cf. Goth. fragildan, ptc. fraguldans; ON
+    gjalda, galt, guldu, goldinn; OE ġieldan, ġeald, guldon, golden; OHG geltan, galt,
+    gultun, gigoltan);
+  *helpaną, *halp, *hulpun, *hulpanaz ‘help’ (cf. Goth. hilpan, halp; ON hjalpa, halp,
+    hulpu, holpinn; OE helpan, healp, hulpon, holpen; OHG helfan, half, hulfun,
+    giholfan).
+Another two dozen well-attested examples are conﬁned to various subgroups of
+the family.
+   Verbs with roots in *ll are fairly well attested in the daughter languages, but the
+only one securely reconstructable for PGmc seems to be *swellaną ‘swell’; Melchert
+ makes a reasonable case that its PIE ancestor was *swelH-, though most of the
+cognates mean ‘be arrogant’.
+   Though there are no simple thematic presents with zero-grade roots nor
+j-presents in this subclass, one nasal-sufﬁxed present, namely *spurnaną ‘kick,
+stomp on’, is reconstructable for PGmc or its immediate ancestor, and a second,
+*murnaną ‘lament, mourn’, might be. The ﬁrst of these verbs is attested only in
+NWGmc, and in every language the original present sufﬁx *-n- has spread to the
+other stems of the verb (to the extent that they occur, Seebold : ); but all
+the derivatives lack the *-n- (ibid. p. ), the zero-grade root is exactly what
+would be expected in a nasal-inﬁxed present, and the Gmc present is an unprob-
+lematic reﬂex of PIE *spr̥-né-h1- ~ *spr̥-n-h1-. Whether the present sufﬁx had
+already been leveled into the rest of the paradigm in PGmc cannot be determined.
+The second example is more problematic. Only OE murnan is actually inﬂected as
+a strong verb; Goth. maúrnan and OHG mornēn belong to the third weak class,
+and OE, OS weak class II mornian (OS also mornon) can reﬂect an earlier verb of
+that class. Yet the verb unquestionably exhibited a present-stem forming sufﬁx
+(since PIE roots could not end in two sonorants), and development of such a
+present into a class III weak verb in PGmc would be unparalleled. That is perhaps
+as much as can usefully be said."		
+alignment35-staff-rt-plural	RingeTaylor2014	193	208	8	185	191	stafas	c469e826703bcbd403d9440868218b6c06ae17e930af5c4dd9d99b03276a61f7	"PGme *stabaz ‘staff’, pl. *staboz (ON stafr, stafar; cf. Goth. i-stem dat. pl. stabim) >
+PWGmc *stab, *stabo (OHG stab, [acc. pl.] staba) — *stab, *stabos > *stzb,
+*staebas > OE stcef, stafas (OF stef, stavar);"		
+alignment35-start-orel-adjective-body	Orel2003	376	415	1	1482	1490	*stertaz	5c59d70a74205bc1e0f91f04f8b111dbc585d88c587263a72502fee583991449	"sternōn
+stŕbhiḥ 'star', Av acc. sg. stărâm id., Arm
+astł id., Gk άoτnp id., Lat stēlla id. < *stēr-
+lā, W seren id., MIr ser id. (BEnfey apud
+KUHN KZ I 540). BARTHOLOMAE 1598-
+1599; IPSEN IF XLI 179–180; TORP-FALK
+485; KROGMANN KZ LXIII 256-259;
+WALDE-HOFMANN II 587-588; HOLT-
+HAUSEN AEEW 320; FEIST 448; PORZIG
+Gliederung 155; MAYRHOFER III 512;
+POKORNY I 1027-1028; VRIES ANEW
+549; ZALIZNIAK II 222; Frisk I 170–171;
+ONIONS 863-864; WATKINS Sprache XX
+41-50; TISCHLER HEG I 204-206;
+PUHVEL III 338–339; LEHMANN GED 322;
+KLUGE-SEEBOLD 794; ADAMS TB 640;
+BURLAK IFTJa 258.
+*sterōn adj.: Goth fem. stairo 'barren',
+OHG sbst. stero ‘ram'. Related to Toch B
+sari ‘calf, heifer (?)', Skt starí ‘sterile cow',
+Arm stery ‘infertile', Gk otɛîpɑ id., Alb
+shtjerrë lamb, young cow, heifer'. TORP-
+FALK 486; SCHULZE Kl. Schr. 60; FEIST
+448; MAYRHOFER III 513; POKORNY I
+1031; FRISK II 783; LEHMANN GED
+322; BAMMESBERGER Nom. 177; KLUGE-
+SEEBOLD 794; OREL AED 440; ADAMS TB
+622.
+*stertaz I sb.m.: ON stertr 'tail', OE steort
+id., OFris stert id., MLG stert id., OHG
+sterz id. Despite the phonetical irregulari-
+ties, reminds of Gk otópn tò ở tù tou
+Sópatos, kai έdopatic (Hes.). At the
+same time, cf. *sterdaz and *stertaz II.
+LIDÉN SVSU VI/1 17 (to IE *sterd-), Studien
+17 (to Lat tardō 'to tarry, to hinder');
+TORP-FALK 487; HOLTHAUSEN AEEW 320;
+POKORNY I 1023 (to Gk tópdvλov ‘hart-
+wort, Tordylium officinale'); VRIES ANEW
+547; FRISK II 802; ONIONS 864; KLUGE-
+SEEBOLD 794 (to *starraz).
+*stertaz II adj.: ON upp-stertr ‘haughty,
+stately'. A variant of *sterdaz. TORP-
+FALK 487; POKORNY I 1023.
+*stertlōjanan wk.vb.: ON stirtla 'to
+hobble, to stagger', OE steartlian 'to kick
+with the foot, to stumble'. Related to
+*stertaz II. TORP-FALK 487%; HOLT-
+HAUSEN AEEW 318; VRIES ANEW 549.
+*steubanan *stubanan str.vb.: MLG
+~
+376
+steura-mannz
+stūven 'to be dispersed', OHG stioban id.
+Of unknown origin. Cf. also unclear
+WGmc *staumaz ‘steam' (?< *staubmaz):
+OE steám, WFris steam, Du stoom. WOOD
+JEGP II 225-226; UHLENBECK PBB
+XXVI 308–309; MUCH ZDW II 286 (to
+Gk túow 'to produce smoke'); TORP-FALK
+497; HOLTHAUSEN AEEW 318; FEIST 457;
+ONIONS 866; LEHMANN GED 328; KLUGE-
+SEEBOLD 789.
+*steupa-barnan sb.n.: ON stjúp-barn
+'stepchild', OE steóp-bearn ‘orphan'. Com-
+pound of *steupaz and *barnan. CARR
+Nom. comp. 82 (parallel formations).
+*steupa-đuxtēr sb.f.: ON stjúp-dóttir 'step-
+daughter', OE steóp-dohtor id., OFris
+stiap-dochter id., OS stef-dohtor id., OHG
+stiof-tohter id. Compound of *steupaz and
+*duxter. CARR Nom. comp. 52.
+*steupa-fađēr sb.m.: ON stjúp-faðir ‘step-
+father', OE steóp-fæder id., OFris stiāp-feder
+id., OS stef-fader id., OHG stiof-fater id.
+Compound of *steupaz and *fader. CARR
+Nom. comp. 52.
+*steupa-mōđēr sb.f.: ON stjúp-móðir
+'stepmother', OE steóp-módor id., OFris
+stiap-mōder id., OS stef-mōder id., OHG
+stiof-muotar id. Compound of *steupaz and
+*moder. CARR Nom. comp. 52.
+*steupa-sunuz sb.m.: ON stjúp-sonr 'step-
+son', OE steóp-sunu id., OFris stiāp-sunu
+id., OS stef-sun id., OHG stiof-sun id.
+Compound of *steupaz and *sūnuz.
+CARR Nom. comp. 52.
+~
+*steupaz adj.: ON stjúp-móðir step-
+mother', stjúpr ‘stepson', OE steóp-cild
+'stepchild', OFris stiap-feder 'stepfather',
+MDu stiep-kind 'stepchild', OHG stiof-kind
+id. Used predominantly in compounds.
+Related to *stubbaz *stubbon (HOLT-
+HAUSEN PBB LXVI 274). TORP-FALK
+497; HOLTHAUSEN AEEW 320; CARR
+Nom. comp. 52; POKORNY I 1034; VRIES
+ANEW 549; ONIONS 867; HEIDERMANNS
+554; KLUGE-SEEBOLD 795.
+~
+*steura-mannz *steurja-mannz
+sb.m.: ON stýri-maðr 'skipper, captain',
+OE steór-mann ‘steersman', MLG stūr-
+mann id., MHG stiur-man id. Compound"		
+alignment35-start-kroonen-storm	Kroonen2013	488	528	1	2086	2094	*sturma-	7b84517aa2672257f9850d4c41c738fbff852baffc48815ac14625dba02c58b4	"488
+*stüpēn-
+*stūpēn-w.v. 'to stoop' - ON stúpa w.v. 'id.', Nw. stupa s./w.v. 'to drop, fall
+down', OE stūpian w.v. 'to stoop, bend the back', E to stoop, MDu. stupen w.v.
+'to bend' (EUR) — Wystum f. 'bend, turn', Bret. stumm 'id.' < *stoup-meh2-.
+-
+A stative related to *staupa- (q.v.). The long *ū probably arose secondari-
+ly, and does not have to point to a root **steuHbh- with a laryngeal. In view
+of the remarkable similarity of Latv. staupe 'horse track' and Nw. staup n.
+'puddle; deep track; sharp turn', the original root must in all likelihood be
+reconstructed as *steup- rather than *steub(h)- (pace Pokorny IEW: 1032-4).
+The root-final p presumably spread from the iterative *stupp/bōn-, cf. Nw.
+stopa w.v. 'to make a track in the snow', whence Nw. stoppe f. 'deep track (in
+the snow); hare trace'.
+*sturja/ōn- m./f. 'sturgeon' - ON styrja f. 'id.', OE styria, styriga m. 'id.',
+ODu. sturio m. 'id.', Du. steur c. 'id.', OHG sturio, sturo m. 'id.', MHG stūre m.
+'id.', G Stör m. 'id.' (= LG) ⇒ *str- (NEUR/NIE) - OLith. ešketras 'whale', Lith.
+erškētas, dial. erškėtras m. 'sturgeon', OPru. esketres 'id.', ORu. esetrò, Ru.
+osĕtr, gen. osetrá m. 'id.', SCr. jèsetra f. 'id.' < PBSI. *asetra-.
+A Germanic/Balto-Slavic isogloss. The alternation of PSI. *osetr and Gm.
+*sturja/ōn- points to a non-IE doublet *asetr ~ *str containing the a-prefix
+discovered by Schrijver 1997. As the prefix usually causes the root vocalism
+to be reduced, the expected formal proportion should admittedly have been
+*astr *setr, but it is conceivable that the original ""ablaut"" was reshuffled.
+Note that the Baltic forms were distorted due to interference with erškėtis
+'thorn' (Toporov 1975-: II, 89).
+~
+*sturki- m. 'strength' - ON styrkr m. 'id.', Far. styrkur m. 'help, aid, assis-
+tance' *strg-i- (NEUR).
+An i-stem created to a lost strong verb *sterkan-. The reality of this verb
+is confirmed by the pertaining inchoative *sturknan-, cf. Go. ga-staurknan 'to
+freeze', ON storkna 'to coagulate', OHG gi-storkanen 'id.'. Apparently, the
+original meaning was 'stiff, for which cf. *starka-.
+-
+*sturma- m. 'storm' ON stormr m. 'id.', OE storm m. 'id.', E storm, OS
+storm m. 'id.', Du. storm c. 'id.', OHG sturm m. 'id.', G Sturm m. 'id.' ⇒
+*stur-mo- (DRV).
+A mo-stem possibly created to the root of *staurjan- 'to disturb, destroy'
+(q.v.). Also cf. ON styrma, OE styrman, G stürmen w.v. 'to storm' <*sturmjan-.
+-
+-
+*sturnen- w.v. 'to stand out' Go. and-staurran w.v. 'to stare at', OHG
+storren w.v. 'to stand out' ⇒ *str-néh₁- (IE) — Lith. stérti 'to be stiff, stand
+erect' < *stérh₁-e-; ToB ścire adj. 'hard, harsh' < *sterh1-0-; Gr. σtɛpɛós adj.
+'stiff, hard, firm, tenacious' < *sterh₁-uo-. Olr. seirt f. 'strength' < *sterh₁-ti-;
+W serth adj. 'steif, starr' < *sterh₁-to-."		

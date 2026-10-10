@@ -8,6 +8,162 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-fifth alignment checkpoint: spear through start
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base cb62699b5ef33ed0ff577748950251beaf178e33 on update, independently
+verified pushed for34. Rows2206-2213 cover spear, spin, spindle, spoon,
+spread, spur, staff and start. Immutable preparation pins5565 forms,
+51 inherited analytical identities and105 research hashes. The user
+authorizes complete35, not automatic35 release or36 preparation.
+Persistence occurred exactly once; never execute/import the persisted
+candidate or recreate any preparation.
+
+### Question
+
+Can all51 identities preserve actual cells, dates, attribution and
+source qualifications after complete held-argument reading? Can genuine
+missed consultations be added with exact reversible owner receipts,
+without turning family evidence into selected quotations, reported
+proposals into endorsement or quantity-defective text into certified
+glyphs? Lost identities, unreceipted SOURCE edits, fabricated negatives,
+confidence-derived dates or a falsely explained whole-row cause would
+refute completion.
+
+### Current state
+
+All eight core alignments were unreviewed. Staff's citation *stábiz*
+differs from selected *stábaz*, with pgmc input stage; the other seven
+input labels are also pgmc. The selected spear *speoru* and start
+*styrtan* are not automatically the dictionary's attested cells.
+All46 ORIGINAL scientific-owner hashes remain protected, including
+selected corpus, input-stage/context, FST and baseline owners.
+
+### Diagnosis
+
+Executable census, Foma, new traces and counterfactuals: n/a, because
+no executable history changes. No private assay or PDF is claimed.
+The principal traps are spear plural versus singular, spin reported
+gemination, spindle's three vowel steps, spoon's missing quantity signs,
+spread's direct causatives versus family iterative, spur implement
+versus kick, staff's dated cells and conditional plural-s, and start's
+adjective homonym II versus tail I. Native body receipts do not erase
+inherited image-certified signs or earlier cross-reference locators.
+
+### Literature
+
+The immutable packets and previous receipts supply preserved baseline
+identities. Complete relevant entries, arguments, footnotes and
+necessary continuations are read. Two missed consultations are actual
+Fulk spin and Ringe spur-family evidence, not arbitrary source negatives
+[@Fulk2018, pp.101-103; @Ringe2017, pp.116-118,269-271].
+
+| Row | Printed reading scope and principal issue |
+| --- | --- |
+| Spear2206 | Orel364; Kroonen467; Fulk158-161: gender, actual neuter plural, stem transfers and analogical u. |
+| Spin2207 | Orel364; Kroonen467; Fulk101-103: e/i, nasal present and explicitly reported gemination proposal. |
+| Spindle2208 | Orel364; Kroonen467; RT55-57,263-266,330: optional n, yarn family, syncope/apocope/epenthesis. |
+| Spoon2209 | Orel364-365; RT142-143,146: nominal alternatives, native quantity defects and parallel rounding. |
+| Spread2210 | Orel366-367; Kroonen469-470: direct dental causatives, strong base, iterative influence and distinct glyph receipts. |
+| Spur2211 | Orel367-368; Kroonen471; Ringe116-118,269-271: implement/track/kick, nasal-present cells, membership and unknown leveling date. |
+| Staff2212 | Orel368; Kroonen471; RT147,162-163,193: i/a formations, explicitly dated cells and conditional plural-s source. |
+| Start2213 | Orel372,375-376; Kroonen476,488: ME citation, adjective homonym II, motion family and possible mo-stem connection. |
+
+### Historical analysis
+
+Spear's dictionary gender and actual Fulk plural remain distinct
+questions; the selected cell cannot inherit the analogical plural-u
+account by spelling similarity [@Orel2003, p.364; @Kroonen2013, p.467;
+@Fulk2018, pp.158-161].
+Spin's Lühr/Ritter proposal is reported by Fulk, not endorsed.
+Its actual lexical example adds applicability without proving a dated
+cause of the dictionary e/i contrast [@Fulk2018, pp.101-103;
+@Orel2003, p.364; @Kroonen2013, p.467].
+Spindle's *spinnilu > *spinlu > *spinl > spinil > spinel* retains
+distinct internal syncope, final-u apocope and later epenthesis, with
+actual Mercian/later endpoints [@RingeTaylor2014, pp.263-266,330].
+Spoon's native missing quantities remain, while the explicit long-vowel
+context and parallel daughter rounding qualify the interpretation
+[@Orel2003, pp.364-365; @RingeTaylor2014, pp.142-143,146].
+
+Spread's d/t causatives are both direct; iterative influence is not
+an exclusive dental sound-law conflict. The certified cross-reference
+and actual native base body retain different locators/verification
+[@Kroonen2013, pp.469-470; @Orel2003, pp.366-367].
+Spur's track-related-to-or-derived-from-kick wording does not oppose
+Kroonen's kick derivation. Ringe's reconstructed kick and PIE present
+cells are family evidence, with no determined n-leveling date
+[@Orel2003, pp.367-368; @Kroonen2013, p.471;
+@Ringe2017, pp.116-118,269-271].
+Staff's147 PWGmc and193 PGmc plural dates come from explicit labels,
+not confidence. The conditional demonstrative-clitic explanation
+leaves fossilization unexplained; back-vowel-conditioned retraction
+does not become a grammatical sound law
+[@RingeTaylor2014, pp.147,162-163,193; @Orel2003, p.368;
+@Kroonen2013, p.471].
+Start's II adjective receipt excludes the tail homonym; qualified
+motion/storm relatives do not supply the selected t-extension or
+whole-row genealogy [@Orel2003, pp.372,375-376;
+@Kroonen2013, pp.476,488].
+No canonical chronology edge, input migration or historical verdict
+is promoted from these annotation arguments.
+
+### Verdict
+
+Research disposition: eight individually reconciled bounded alignments.
+All eight whole-row causes remain unestablished;21 new rationales are
+position support only. No exclusive focused dispute is manufactured
+from qualified or compatible formation directions. Corpus, selected
+inputs, stage/context sidecars, FST and scientific baseline owners
+remain unchanged. Annotation completeness is not scientific adoption.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, three exact
+receipt tables, two finite targets and the precisely amended
+scope/applicability fields persist. Eighteen native occurrences and21
+processes add39 forms. Exact56 SOURCE fields comprise51 cells, three
+dates and two arguments;13 owner fields are separately reversible.
+Current totals are5604 forms,1393 consultations,5843 positions,
+463 comparisons and798 rationales;281 bounded/112 unreviewed core rows.
+The90 tranche positions link90 records. All786 dictionary review
+identities/statuses survive with1988 evidence records.
+
+Independent current-SOURCE verification preserves5565 inherited forms
+except56 exact fields,5753 outside positions,455 unaffected comparisons,
+777 inherited reasons,1371 outside consultations, all1391 inherited
+consultation identities/statuses,94 untouched research hashes and46
+ORIGINAL scientific hashes. Reversing13 owner fields and removing only
+two new targets reconstructs frozen scope/applicability/target hashes.
+All18 paragraph hashes and Unicode whole-token spans resolve,
+including the actual adjective II anchor. Deterministic queries record
+281 bounded rows and separately refuse112 incomplete alignments and
+the unchanged RT convention/typography verification gap.
+
+Page-cited commentary/README and this full-template audit persist.
+All403 focused survey/analysis tests pass. Two initial historical owner
+expectations were extended through the exact35 successor receipts,
+checking each old/new link without rewriting earlier receipts or SOURCE.
+Canonical refresh and independent artifact freshness report CONTROL
+PLANE CLEAN, without a scientific rebuild. Bibliography, section locators,
+all66 new-prose printed-page references, nine headings and whitespace
+checks pass. Post-refresh independent verification reconfirms every
+preservation count, native span and separate completion-gate refusal.
+
+### Residue
+
+Specific remaining premises are spear's selected number/dialect,
+spin's e/i and ending, spindle's exact PGmc formation/selected endpoint,
+spoon's quantity/stage/ending, spread's selected i-before-j,
+spur's implement-noun ancestry/trimoric ending, staff's iz/az formation
+and plural-s fossilization, and start's u/t/i/OE ancestry.
+The complete393-row alignment, source-backed conditioning census,
+aggregate synthesis, consistency watchlist and finite specialist agenda
+remain unfinished. No automatic35 release,36 start, scientific adoption
+or publication is authorized.
+
 ## Thirty-fourth alignment checkpoint: smear through spare
 
 ### Identity
