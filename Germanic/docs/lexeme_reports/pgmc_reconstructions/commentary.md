@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-192 Ringe,145 Fulk and258 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5229 evidence
-records,1390 actual consultations,5440 positions,450 comparisons and582
+192 Ringe,145 Fulk and259 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains5286 evidence
+records,1391 actual consultations,5501 positions,452 comparisons and615
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:225 core rows are bounded and168 unreviewed.
+explanation remain ongoing:233 core rows are bounded and160 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,265 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-ninth alignment: nasal genealogies, gemination warrants and nominal cells
+
+Room, rope, rudder, run, rust, rye, sail and sake, rows2158-2165,
+continue from released54cbd0b8. All75 inherited analytical identities
+are individually reconciled. Twenty-eight native occurrences and29 scoped
+arguments add57 evidence records; four focused positions reuse evidence
+and33 rationales are added. The136 positions link132 distinct records.
+The86 reversible SOURCE-field amendments comprise75 cells, seven locally
+supported stages, three arguments and one printed-page locator.
+One genuinely missed Ringe-Taylor rudder consultation has six separate
+owner-field receipts and one new finite target. Initial screens survive
+reversibly; this is not an invented negative grammar review.
+
+### Room: adjective, noun and the actual gender claim
+
+The identical *rūma-* citation cannot carry one undifferentiated
+adjectival and nominal interpretation. Kroonen heads the entry with the
+roomy adjective and derives its mo-formation from the open-root family.
+He then explicitly prints the space noun, whose OE reflex is masculine;
+Dutch is neuter and German masculine. The inherited exclusively-neuter
+description of that incidental noun was therefore an annotation error,
+not an inter-author disagreement. Both its cell and its misleading
+argument now have exact receipts. The factitive is a further formation,
+not the noun's selected ending
+[@Kroonen2013, p.418].
+
+Orel has separate neuter and masculine room alternatives beside the
+roomy adjective. The noun is based on the adjective, whose open-space,
+countryside and field comparisons supply its genealogy. The bibliographic
+Sanskrit-world connection and proposed *rūzmaz* must remain reported,
+rather than an equally endorsed alternative appended to the main account.
+The nearby Rome name is another etymon. Neither author's mo-history
+quotes the exact selected nasal ending or CAPR's stress convention
+[@Orel2003, p.309].
+
+### Rope: shortened geminate versus an unknown origin
+
+Kroonen connects strap/rope with the swaddling-wrap formation and
+expressly interprets final p as a shortened geminate from Kluge's Law.
+The quoted ancestral *Hroip-nó-* is preserved separately from the
+Germanic citation and the wrap noun. The source's proposed genealogy
+does not authorize assembling the selected full-word ending, or
+assigning an explicit PIE date to every derivational header. Orel's
+neuter/masculine alternatives have unknown origin; ridge, boundary,
+cliff and bank comparisons in the bibliography are not all his adopted
+ancestry. The fastening verbs remain derivatives, not nominal cells
+[@Kroonen2013, pp.402-403; @Orel2003, p.296].
+
+Ringe-Taylor's stirrup example is especially important as a negative
+identity control. It is repeated translation from OHG into a hypothetical
+OE compound and then into Nordic, yielding pseudo-cognates. The rope
+component can be relevant without becoming a standalone inherited
+PGmc rope reconstruction or a direct selected-cell witness. The
+compound relationship and hypothetical OE date are retained
+[@RingeTaylor2014, p.213].
+
+### Rudder: instrument, rowing noun and a genuinely missed consultation
+
+Kroonen derives the neuter instrument noun from row. His Nordic rowing
+tu-stem is explicitly separate, even though related reflex labels can
+look similar. Sanskrit and Baltic instruments are comparative formations,
+not the same ending and grade copied into every Germanic cell. Orel
+distinguishes masculine/neuter alternatives and a j-formation with an
+OE plural reflex. The row infinitive is a family base, not a rudder
+citation; its actual entry is printed306, whereas the inherited307
+cross-reference occurrence remains preserved
+[@Kroonen2013, pp.414,416; @Orel2003, pp.306-307].
+
+Ringe's instrument-noun discussion explicitly concerns nouns surviving
+in PGmc. Its *rōþrą* can consequently receive a local PGmc date, rather
+than an unspecified label inherited from a first extraction. The date
+repair does not change confidence, gender, the quoted ending or the
+selected masculine input
+[@Ringe2017, pp.324-325].
+
+The complete epenthesis reading exposed a real omission from the
+earlier RT screen: a PWGmc neuter oar followed by an early Mercian
+cluster spelling and later vowel-inserted forms. This supplies an
+actual consultation, not evidence that the earlier search proved
+absence. The original screen is retained in reversible owner receipts;
+the new target is linked to the already inspected OE phonology scope.
+Native *ropr*, *r66r* and *ropor* are text-checked occurrences, not new
+certification of long vowels, thorn or the selected masculine ending.
+The preceding discussion distinguishes inherited final clusters from
+clusters created by high-vowel apocope and dates insertion using early
+spellings and metrical evidence
+[@RingeTaylor2014, pp.327-328].
+
+### Run: alternative nasal presents are not one reconstructed paradigm
+
+Kroonen gives two transitive nasal-present scenarios, with distinct
+third-singular and third-plural cells: nH with laryngeal gemination,
+or nu with assimilation. The intransitive meaning also permits a
+medio-passive starting point. Raising before nn and subsequent
+reanalysis as an underlying e-root in classIII are distinct propositions.
+The nongeminated running i-noun and iterative are further formations,
+not evidence that the selected present had a freely optional geminate.
+New finite occurrences retain the author's native Cyrillic-looking
+laryngeal digit; they do not silently modernize the source text
+[@Kroonen2013, pp.413-414,418].
+
+Orel's ren-w from re-nu account has its own external move/rise
+comparisons. The cited nH and flow alternatives are bibliographic
+positions, not automatic endorsement of every model. His causative
+and *run(n)iz* noun must not become selected run infinitives.
+Ringe likewise preserves two Sanskrit pedigrees: one involves a
+resolved syllabic root and metathesis, the other *ri-nw-* with underlying
+*/renn-/* reanalysis. His footnote explicitly leaves open whether
+single-n zero-grade derivatives point instead to nH and favor the
+second comparison. The explicitly PGmc action noun and conditional
+underlying root now have independent date receipts
+[@Orel2003, pp.297,302,308; @Ringe2017, pp.269,324].
+
+Fulk's actual body quotes the PGmc pre-assimilation infinitive on113.
+The native trailing quote-sign remains distinct from the existing
+certified superscript quotation. His later discussion of nasal infixes,
+suffixes and reinterpretation is general morphology: it does not itself
+quote run or supply its Sanskrit pedigree. The inherited process
+summary is corrected accordingly, without discarding either reading.
+An authorial nw account is not a claim that all competing nH proposals
+have been refuted
+[@Fulk2018, pp.113-114,245-247,388].
+
+Later dialect chronology is another axis. RT puts run/burn metathesis
+before breaking in Anglian and after it in early WS; the causatives
+have separate mutation and metathesis evidence. Native *iman* remains
+an explicitly corrupted intermediate, not a source-authenticated
+missing-r form repaired from the adjacent burn history. The actual
+early-WS label supports its own SOURCE date repair
+[@RingeTaylor2014, pp.340-341].
+
+### Rust: family support does not quote a nominal suffix
+
+Kroonen supplies the o-grade and e-grade red adjectives and zero-grade
+redden stative, not a rustō noun. The long ē belongs to the stative
+suffix, not a long root vowel inferred from an abbreviated search.
+The clear/remove verb and its iterative are a different branch despite
+similar spelling. Orel's rust ō/a alternatives connect with the red
+family, while the Nordic j/non-j rust noun is another formation.
+His actual red and redden entries supplement rather than replace the
+preserved rust cross-reference occurrences
+[@Kroonen2013, pp.406,409-410,416; @Orel2003, pp.299,303,307-309].
+
+Ringe's PGmc *rustaz* illustrates a genuine unresolved segmentation
+question within one author's account. A st-initial suffix is the usual
+analysis, but dental+t yielding st beside inherited ss is also possible.
+This is not two exclusive author positions manufactured from one list.
+Fulk discusses inherited dental+t to ss and analogical restoration,
+and specifically acknowledges Ringe's alternative. His rust-colored
+freckle comparandum is not the selected rust noun and creates no
+invented lexical consultation here
+[@Ringe2017, pp.247-248; @Fulk2018, pp.113-114].
+
+### Rye: a focused difference in gemination warrants
+
+Kroonen distinguishes the primary i-stem from the secondary n-stem.
+The actual n-entry on417 supplements the preserved416 cross-reference.
+If the weakly attested kk and single-g reconstructions are valid,
+the proposed nominative *rugō* and genitive *rukkaz* supply an
+allomorphic starting point for analogical *ruggan-*. The qualification
+is load-bearing: the argument assumes regular allomorphy and valid
+variant admission, rather than demonstrating every reconstructed cell.
+His geographical post-IE suggestion and possible Thracian connection
+remain distinct from the explicitly unrelated Iranian rice loan.
+Orel also keeps the Thracian initial-u relation unclear and reports
+competing donor proposals
+[@Kroonen2013, pp.416-417; @Orel2003, p.308].
+
+Ringe rejects Kluge's Law using its constrained formulation,
+counterexamples, the small number and semantics of external cognates,
+distribution across n-stems and problems with shortened-geminate
+examples. Daughter rye forms occur in that broader distribution
+argument, not as a newly quoted PGmc rye i-stem. The focused case
+therefore records a substantive difference in empirical warrants
+between the conditional n-paradigm argument and the general rejection.
+It does not claim that Ringe directly names and rebuts Kroonen's
+particular rye reconstruction, or that CAPR has selected an expressive
+alternative as its own sound law
+[@Ringe2017, pp.136-140].
+
+Fulk's conclusion is a useful qualification to any crude two-camp
+summary: Kluge's account is conjectural but sometimes plausible;
+devoicing, chronology and Gothic coverage still pose problems. His
+notes also distinguish weak-case nasal suffixes and competing
+explanations of verbal gemination. RT's cited chronological addendum
+concerns Grimm/Verner ordering and later stop allophony, not direct
+confirmation of the selected rye paradigm. These readings contextualize
+the focused question without becoming new independent author votes
+[@Fulk2018, pp.115-117; @RingeTaylor2014, pp.512-514].
+
+RT's actual PGmc *rugiz* and OE *ryge* belong to the i-mutation account.
+The high-front nominal trigger is independently queryable; it does
+not settle the n-stem gemination date or the borrowing direction.
+Both original Orel velar glyphs and new native occurrences survive
+without a blanket g/ʒ normalization
+[@RingeTaylor2014, pp.222-223; @Orel2003, p.308].
+
+### Sail: preferences, Celtic admission and final-cluster behavior
+
+Orel asserts an original piece-of-cloth meaning and a probable cut
+derivation, while treating Irish sail/kerchief as a Germanic borrowing.
+Kroonen has no certain etymology. He admits the cloth/sek possibility
+but prefers the Baltic shawl/sogh comparison; a mast/wood/lump account
+is a third possibility. A Germanic-Celtic isogloss is conditional on
+excluding borrowing. The focused comparison records the differing
+preferences and admission premises without inventing an exclusive
+denial of the retained alternative, or a resolved donor direction
+[@Orel2003, p.322; @Kroonen2013, pp.430-431].
+
+RT separates sail, the sailing verb and jewelry. Its repeated sail
+citations have distinct PNWGmc and PWGmc endpoints. The sail row
+normally lacks epenthesis even though insertion after other consonants
+is usual; an isolated sailyard spelling with a vowel is not a general
+inserted-vowel sail history. The process locator now includes the
+actual example on329 as well as the comparison on330. Equal strings
+at different positions remain independent occurrences
+[@RingeTaylor2014, pp.213,329-330].
+
+### Sake: semantics, nominative and oblique variants
+
+Both dictionaries link the nominal case/lawsuit formation to the
+strong charge/dispute verb. Kroonen's sign/track-to-pursuit semantic
+argument and Orel's comparative connections are preserved separately
+from reported say/Slavic proposals. The j-noun and adjacent sack-cloth
+borrowing are not selected sake. A nominal ending cannot be borrowed
+from the verbal citation
+[@Kroonen2013, pp.423-424; @Orel2003, pp.314-315].
+
+RT's thing history supplies semantic comparanda, not sake ancestors:
+time-to-assembly-to-lawsuit-to-matter is a different chain. Its sake
+cells separately distinguish PNWGmc nominative, genitive, PWGmc
+nominative and oblique, fronted intermediates and actual OE oblique
+variants. The surviving fronted/retracted variants must not be described
+as complete leveling of a throughout the paradigm. Native *sak6z*,
+*seek#&* and *szeku* remain unrepaired; date can be explicit even when
+the glyph or exact ending remains uncertain
+[@RingeTaylor2014, pp.128,195-197].
+
+The independent final-u example is nominative retention after a light
+stressed syllable, not a second undifferentiated selected PGmc citation.
+Heavy-syllable loss and the preposition's phonological-word boundary
+are other domains. The newly linked OE *sacu* occurrence on288 and
+the fronted/retracted obliques on195 retain independent identities.
+The author's ITH/analogical explanation is reported faithfully, not
+adopted as grammatical conditioning or lexical diffusion in CAPR
+[@RingeTaylor2014, pp.195-197,287-289].
+
+### Bounded outcome and subsequent premises
+
+Both focused causes and all eight whole-row causes remain unestablished.
+Specific limits concern nominal cells/genders, exact selected endings,
+conditional nasal pedigrees, admitted gemination variants, suffix
+segmentation and etymological/cognate warrants. No consulted source
+silence chooses a reconstruction. Stage, confidence, original glyph
+certification and new native-text occurrences remain independent.
+The corpus, selected stages/contexts, FSTs and scientific baselines are
+unchanged; the larger393-row alignment and explanatory synthesis remain
+unfinished.
 
 ## Twenty-eighth alignment: preterite mechanisms, cognate admission and phonetic comparanda
 

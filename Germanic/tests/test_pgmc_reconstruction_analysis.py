@@ -384,7 +384,7 @@ class LiveAnalyticalTests(unittest.TestCase):
             FROM comparison_rationales cr JOIN rationales r USING(rationale_id)
             WHERE r.basis_type='loan_hypothesis' ORDER BY cr.comparison_id
         """)
-        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2096\ncore-2105\ncore-2139\ncore-2145\ncore-2153\ncore-2272\n")
+        self.assertEqual(result, "comparison_id\nbuck-borrowing-direction\ncore-2060\ncore-2063\ncore-2067\ncore-2071\ncore-2078\ncore-2096\ncore-2105\ncore-2139\ncore-2145\ncore-2153\ncore-2159\ncore-2272\n")
         # Explicit reasons for a position need not explain the disagreement.
         self.assertTrue(self.cases["core-1975"]["rationale_ids"])
         self.assertEqual(self.cases["core-1975"]["explanation_status"], "unestablished")
@@ -621,7 +621,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t225\nunreviewed\t168\n")
+        """), "alignment_status\trows\nbounded_limit\t233\nunreviewed\t160\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -815,14 +815,43 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t225\nunreviewed\t168\n")
+        """), "alignment_status\trows\nbounded_limit\t233\nunreviewed\t160\n")
         for row in map(str, range(2110, 2118)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
+    def test_twenty_ninth_queries_keep_warrants_and_cells_separate(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,comparability,explanation_status FROM comparisons
+            WHERE comparison_id IN ('rye-n-stem-gemination-warrants','sail-etymological-preferences')
+            ORDER BY comparison_id
+        """
+        expected = ("comparison_id\tcomparability\texplanation_status\n"
+                    "rye-n-stem-gemination-warrants\tsubstantive_difference\tunestablished\n"
+                    "sail-etymological-preferences\tsubstantive_difference\tunestablished\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2158 AND 2165
+        """), "positions\tevidence\n136\t132\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,relation_to_row,stage_interpretation FROM analyses
+            WHERE row_id='2160' AND evidence_id IN
+                ('alignment29-rudder-rt-cluster','alignment29-rudder-rt-early','ringe-complete-rudder')
+            ORDER BY evidence_id
+        """), "evidence_id\trelation_to_row\tstage_interpretation\n"
+              "alignment29-rudder-rt-cluster\tsame_etymon_citation\tpwgmc\n"
+              "alignment29-rudder-rt-early\tsame_etymon_other_cell\toe\n"
+              "ringe-complete-rudder\tsame_etymon_citation\tpgmc\n")
+        for row in map(str, range(2158, 2166)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1793)
+                             for form in self.forms), 1826)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

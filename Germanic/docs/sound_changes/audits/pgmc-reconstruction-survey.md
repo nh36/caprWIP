@@ -8,6 +8,179 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-ninth alignment checkpoint: room through sake
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base: released54cbd0b89d5fd9320ec700d2dfd9259a761feaa5 on update.
+Rows2158-2165: room, rope, rudder, run, rust, rye, sail, sake.
+The user authorizes release of28 and execution of29, not automatic29
+release or30 start. Immutable preparation pins5229 forms,75 inherited
+analytical identities and92 research hashes. The46 separately pinned
+scientific hashes remain protected. Preparation is never recreated;
+the candidate persisted exactly once and must never run/import again.
+
+### Question
+
+Can all75 inherited identities be reconciled without collapsing nominal
+gender, actual and hypothetical cells, alternative nasal ancestries,
+semantic comparanda or source-specific etymological warrants?
+A lost identity, fabricated selected ending, repaired native corruption
+presented as a quotation, stage inferred from confidence, or focused
+support promoted to a whole-row cause would falsify completion.
+
+### Current state
+
+The eight core alignments were unreviewed despite dictionary and
+applicable grammar evidence. Earlier SOURCE/receipts and the survey
+commentary govern analytical conventions, not canonical sound-change
+decisions. The frozen selected inputs/stages and all six research-only
+owners remain unchanged. No scientific law, chronology edge, input
+migration or baseline transition is proposed.
+
+### Diagnosis
+
+Executable firing census/traces: not applicable because this is
+annotation-only research. Existing science is protected by46 immutable
+hashes. No Foma assay, protected rebuild, full Germanic suite or PDF.
+
+The room noun's exclusively-neuter summary is contradicted by the
+actual OE masculine reflex. Fulk's lexical run precursor and general
+nasal morphology must be distinguished. RT's sail example is actually
+on329, with the comparison continuing330. Reading epenthesis also
+exposed an actual PWGmc oar/rudder consultation missed by the earlier
+bounded screen; that screen is retained reversibly, not converted to
+an author-silence claim
+[@Kroonen2013, p.418; @Fulk2018, pp.113-114,245-247;
+@RingeTaylor2014, pp.327-330].
+
+### Literature
+
+Existing survey/commentary, inherited positions and prior receipts are
+method controls. Complete relevant held entries, arguments, footnotes
+and load-bearing cross-references are read. New native occurrences remain
+text_checked; no original image certification is invented.
+
+| Row | Actual held scope and decisive distinction |
+| --- | --- |
+| Room2158 | Kroonen418; Orel309: roomy adjective, nominal genders and reported Sanskrit alternative. |
+| Rope2159 | Kroonen402-403; Orel296; RT213: shortened geminate, unknown origin and translated compound. |
+| Rudder2160 | Kroonen414,416; Orel306-307; Ringe324-325; RT327-328: instrument, tu/j formations and actual PWGmc oar. |
+| Run2161 | Kroonen413-414,418; Orel297,302,308; Ringe269,324; Fulk113-114,245-247,388; RT340-341: alternative nasal presents, action noun and dialect metathesis. |
+| Rust2162 | Kroonen406,409-410,416; Orel299,303,307-309; Ringe247-248; Fulk113-114: red family versus actual rust and competing cluster segmentation. |
+| Rye2163 | Kroonen416-417; Orel308; Ringe136-140; Fulk115-117; RT222-223,512-514: conditional n-variants, broader gemination critique and independent mutation. |
+| Sail2164 | Kroonen430-431; Orel322; RT213,329-330: retained etymological alternatives, Celtic admission and final clusters. |
+| Sake2165 | Kroonen423-424; Orel314-315; RT128,195-197,287-289: verb/noun, thing comparanda, actual paradigm cells and final-u retention. |
+
+The rye focused case compares conditional allomorphy/variant admission
+with Ringe's broader objections to Kluge's Law. The sail case compares
+probable cloth/cut ancestry with a preferred Baltic connection that
+still admits alternatives. Neither is a directly named rebuttal or a
+settled genealogy
+[@Kroonen2013, pp.416-417,430-431; @Ringe2017, pp.136-140;
+@Orel2003, p.322].
+
+Fulk's qualified defense of Kluge preserves conjecture, chronology,
+Gothic and devoicing problems. The cited RT addendum addresses revised
+Grimm/Verner ordering and stop allophony, not a rye-specific confirmation
+[@Fulk2018, pp.115-117; @RingeTaylor2014, pp.512-514].
+
+### Historical analysis
+
+Local PGmc noun/phonology context supports Ringe's instrument, run
+action noun, conditional underlying run root and rust dates. RT's
+explicit PNWGmc sake genitive/nominative and early-WS run labels support
+their own stages independently of native corruption and confidence.
+Seven exact SOURCE-stage receipts retain these separate facts
+[@Ringe2017, pp.248,269,324-325;
+@RingeTaylor2014, pp.195,288,341].
+
+Run's two nasal-present scenarios and possible medio-passive origins
+remain conditional, with distinct finite cells. Single-n derivatives,
+underlying reanalysis and later Anglian/WS metathesis are not one
+uniform history
+[@Kroonen2013, pp.413-414,418; @Ringe2017, pp.269,324;
+@RingeTaylor2014, pp.340-341].
+
+Rudder's PWGmc neuter cell does not quote the selected masculine
+ending. Sake's repeated nominatives and obliques remain separate,
+including native corrupted endings and actual fronted/retracted
+variants. The light-syllable nominative-u example is not an endingless
+selected citation
+[@RingeTaylor2014, pp.195-197,287-289,327-328].
+
+Historical phenomenon versus executable proxy: no adopted relationship
+changes. Chronology promotion: none; no stage-entailed or independently
+demonstrated edge is added. Authorial analogy and methodological
+positions are recorded, not adopted as CAPR lexical diffusion or
+grammatical sound-law conditioning.
+
+### Verdict
+
+Research disposition: bounded_limit for eight individually reconciled
+core rows; substantive_difference/unestablished for rye and sail focused
+cases. Registry-verdict: not applicable; no SC adjudication or adoption.
+Both focused causes and all eight whole-row causes remain unestablished.
+
+All75 inherited identities survive. Twenty-eight native literals and29
+scoped arguments add57 records; four focused positions reuse evidence
+and33 rationales are added. Exact86 SOURCE fields comprise75 cells,
+seven dates, three arguments and one locator. One new actual RT/rudder
+consultation/target has six separate reversible owner-field receipts;
+no inherited status or identity changes. Persistence occurred once.
+
+### Propagation
+
+SOURCE: forms/coverage, analyses/comparisons/rationales, reading scope,
+finite target and RT applicability; three new exact receipt tables,
+commentary, README and this full-template audit. Regressions cover
+native whole-token spans, all inherited identities, actual cells/genders,
+conditional scenarios, original versus native glyphs, explicit dates,
+missed-consultation owners and focused support versus whole-row causes.
+Generated views use only `adjudicate.py --refresh`.
+
+Current totals:5286 forms,1391 consultations,5501 positions,452 cases,
+615 rationales;233 bounded core rows and160 unreviewed. The136 tranche
+positions link132 records. All786 dictionary reviews survive with1826
+dictionary records. Earlier receipts and outside research remain
+protected; selected science and46 scientific hashes remain unchanged.
+No corpus/input/target/stage/context/FST/baseline adoption or publication.
+
+Canonical refresh and the independent nonmutating artifact check both
+report CONTROL PLANE CLEAN, without rebuilding scientific evidence.
+The combined358-test survey/analysis run passes350 initially; eight
+live-count, exact successor-owner, target-field and cumulative-query
+expectations are corrected. All18 selected new/corrected regressions
+then pass. Earlier owner receipts remain byte-identical; their tests
+follow the exact old/new successor links instead of accepting a subset.
+Bibliography, section locators, all55 new-prose printed-page references,
+the nine audit headings and whitespace pass.
+
+Independent post-refresh verification preserves5229 old forms except86
+exact fields,5365 outside positions,442 unaffected cases,582 inherited
+rationales and1364 outside consultations. Reversing six owner fields
+and removing only the single new target restores the frozen original
+scope/applicability/target hashes. All82 unaffected research hashes
+and46 scientific hashes survive. Every one of28 native paragraph
+hashes and whole-token spans independently resolves. Deterministic
+queries reproduce233/160,136/132 and the focused unestablished causes.
+Alignment independently refuses160; verified reading separately refuses
+the unchanged RT conventions gap.
+
+### Residue
+
+Missing premises are precise: room/rope selected nominal endings;
+rudder instrument versus selected gender/cell; alternative run nasal
+ancestries and conventions; rust suffix segmentation; rye variant
+admission and gemination warrants; sail cognate/semantic preferences
+and donor direction; sake nominal cells and remodeling.
+The160 remaining core alignments, full conditioning census, explanatory
+synthesis, consistency watchlist and ranked specialist dispatch remain
+unfinished. The independent alignment refusal and the separate RT
+conventions/typography refusal must both remain visible.
+No automatic29 release or30 start.
+
 ## Twenty-eighth alignment checkpoint: read through rood
 
 ### Identity

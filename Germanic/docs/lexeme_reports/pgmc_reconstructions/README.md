@@ -110,7 +110,7 @@ non-adopting consistency watchlist. The current analytical gate still
 certifies citation-unit triage only.
 
 All three relevant held-source passes are persisted: Ringe192, Fulk145
-and Ringe-Taylor258 actual consultations. Each has393 independent
+and Ringe-Taylor259 actual consultations. Each has393 independent
 applicability dispositions; the1179 screens are not1179 grammar
 negatives. All786 core reviews remain. Of20 scopes,19 are reviewed
 and the Ringe-Taylor conventions scope retains its genuine verification
@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5229 evidence records,1390 actual consultations and5440
-analytical positions, with450 comparisons and582 rationales. The RT
+There are5286 evidence records,1391 actual consultations and5501
+analytical positions, with452 comparisons and615 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred twenty-five core rows now have individually reconciled, bounded alignment:
-1933-2157. The remaining168 are unreviewed. The second tranche builds on
+Two hundred thirty-three core rows now have individually reconciled, bounded alignment:
+1933-2165. The remaining160 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,49 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-ninth tranche completes room, rope, rudder, run, rust, rye,
+sail and sake, rows2158-2165, from released54cbd0b8.
+All75 inherited analytical identities survive individual reconciliation.
+Twenty-eight native occurrences and29 scoped arguments add57 records;
+four focused positions reuse evidence and33 rationales are added.
+The136 positions link132 distinct records. Exact receipts cover86
+SOURCE fields:75 cells, seven explicit stages, three arguments and one
+locator. One actual missed RT/rudder consultation adds one finite target
+and six reversible scope/applicability fields; initial screens remain
+auditable. No inherited consultation status changes.
+
+Room's adjective/noun and actual OE masculine gender are separated;
+rope's Kluge argument is not selected-ending evidence, and stirrup is a
+translated compound pseudo-cognate. Rudder's instrument, rowing tu-stem,
+j/plural derivative and newly found PWGmc oar are separate.
+Run retains nH/nu alternatives, actual third-singular/plural cells,
+conditional underlying reanalysis and later dialect metathesis
+[@Kroonen2013, pp.402-403,413-414,416,418; @Orel2003, pp.296-297,302,306-309;
+@Ringe2017, pp.269,324-325; @Fulk2018, pp.113-114,245-247;
+@RingeTaylor2014, pp.213,327-328,340-341].
+
+Rye's conditional n-allomorphy versus Ringe's broader Kluge rejection
+is a focused difference in empirical warrants, not a directly named
+rebuttal or adopted law. Sail's probable cut-cloth versus preferred
+Baltic-shawl account retains admitted alternatives and Celtic borrowing
+uncertainty. Both focused causes and all eight whole-row causes remain
+unestablished. Rust's st-suffix/dental+t alternatives occur within one
+source; red-family evidence is not a quoted rust noun. Sake keeps
+thing comparanda, nominative/oblique cells, native corrupted endings
+and light-syllable final-u retention separate
+[@Kroonen2013, pp.406,409-410,416-417,423-424,430-431;
+@Orel2003, pp.299,303,308-309,314-315,322;
+@Ringe2017, pp.136-140,247-248;
+@RingeTaylor2014, pp.128,195-197,222-223,287-289,329-330].
+
+All786 dictionary dispositions survive with1826 dictionary records.
+Earlier forms/verification/confidence, outside research and46 scientific
+hashes are protected. New literals are text_checked, not image-certified.
+No corpus/input/target/stage/context/FST/baseline adoption or PDF is
+included. The persisted candidate must never be executed/imported again;
+current SOURCE, receipts and regressions are authority. Full393-row
+alignment, class census, synthesis and watchlist remain unfinished.
 
 The twenty-eighth tranche completes read, reek, rest, ride, rind, coat,
 roe and rood, rows2150-2157, on released27 basea8ab6959.
