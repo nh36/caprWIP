@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5464 evidence records,1391 actual consultations and5696
-analytical positions, with460 comparisons and711 rationales. The RT
+There are5522 evidence records,1391 actual consultations and5759
+analytical positions, with462 comparisons and750 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred fifty-seven core rows now have individually reconciled, bounded alignment:
-1933-2189. The remaining136 are unreviewed. The second tranche builds on
+Two hundred sixty-five core rows now have individually reconciled, bounded alignment:
+1933-2197. The remaining128 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,46 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-third tranche completes sing, singe, sister, sit, six, slay,
+sleep and slime, rows2190-2197, from released6514c1b6.
+All131 inherited identities are individually reconciled;25 native
+occurrences and33 scoped processes add58 records, five focused positions
+reuse evidence and39 rationales are added. The194 positions link189
+records. Exact129 SOURCE fields cover120 cells, three arguments, two
+kinds, one diplomatic form, one comparison form, one locator and one date.
+Shared global methods/arguments retain their SOURCE fields and outside
+links. No consultation/status/scope/target/applicability owner changes.
+All786 dictionary consultations remain with1940 evidence records.
+
+Sing's song noun and postnasal w history are distinct from the conditional
+sing/singe connection; sister's daughter/mother comparanda, bound endings
+and repeated singular/dative/plural forms retain separate identities
+[@Ringe2017, pp.128,167; @Orel2003, pp.318,324,395;
+@Kroonen2013, pp.437,500; @RingeTaylor2014, pp.381-383,515,520].
+Sit surface i, derivational e and undated Fulk295 e are not automatically
+normalized; six's oldest initial pedigrees are not h/x notation
+[@Ringe2017, pp.151-153,249,256,273; @Fulk2018, pp.43,295;
+@Kroonen2013, pp.431,434; @Orel2003, pp.322,325-326].
+
+The focused slay warrant disagreement has a source-explicit cause:
+Fulk rejects Ringe's weak-grade lift premise and cites possible full-grade
+a and classVI polygenesis. This does not establish the complete PGmc
+paradigm or whole-row cause
+[@Fulk2018, pp.262-263; @RingeTaylor2014, pp.99-101].
+The newly checked Fulk index actually prints stroke noun slaziþō,
+not slay3sg slaxiþ; exact SOURCE correction is reversible. Native OE?
+language label and *ze metalinguistic symbol remain visibly nonlexical
+[@Fulk2018, pp.129,388; @RingeTaylor2014, pp.177,189].
+Sleep's conditional formation, explicitly dated paradigm, actual later
+cells and noun/adjective relatives stay separate. Slime's neuter citation,
+OE gender uncertainty and distinct selected Unicode strings survive
+[@Kroonen2013, pp.453-455; @Ringe2017, pp.274,277-279;
+@Fulk2018, pp.267-270,289-291; @RingeTaylor2014, pp.149,199,346,348;
+@Orel2003, pp.350-351].
+Six's focused cause and all eight whole-row causes remain unestablished.
+Selected corpus/input/stage/context/FST/baseline owners are unchanged;
+tranche33 stays unreleased, with no34 start or scientific adoption.
 
 The thirty-second tranche completes shine, shoulder, shove, shovel,
 show, shower, side and sieve, rows2182-2189, from released972265f0.

@@ -8,6 +8,144 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-third alignment checkpoint: sing through slime
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base6514c1b648bd7b18069b895fedbc09e65855a94d on update, independently
+verified pushed for completed32. Rows2190-2197: sing, singe, sister, sit,
+six, slay, sleep, slime. The immutable preparation pins5464 forms,
+131 inherited positions and101 research hashes. The user authorizes
+complete33 without automatic release or34 start. The new candidate
+persisted once; never execute/import it or recreate preparation.
+
+### Question
+
+Can all inherited identities be individually reconciled while preserving
+actual cells, source attribution, shared evidence, local dates and native
+strings? Does a named objection identify a focused divergence premise
+without proving a whole genealogy? A lost identity, invented review,
+unreceipted extraction correction, confidence-derived stage, deduplicated
+repeated case or focused cause silently assigned to a core case would
+falsify completion.
+
+### Current state
+
+The eight core cases were unreviewed and selected input labels all pgmc.
+That encoding does not establish author agreement. Singe and slime are
+dictionary-only; the Kroonen singe negative is bounded and retained.
+Selected sit e and slime's distinct combining/precomposed stress strings
+are unchanged. The original46 scientific-owner hashes remain protected.
+
+### Diagnosis
+
+Executable census/traces: n/a, annotation-only work; no Foma rebuild,
+private assay or PDF. Individual reconstruction witnesses distinguish
+sing/song, sister/daughter/mother, sit/set/root/participle, cardinal/ordinal,
+slay infinitive/past/subjunctive/participle and sleep/noun/adjective.
+The held Fulk388 image proves that prior slaxiþ finite extraction was
+actually slaziþō stroke noun; body129 confirms the nominal derivation.
+RT177 OE? is a language label, and189 *ze a corrupted vowel symbol
+[@Fulk2018, pp.129,388; @RingeTaylor2014, pp.177,189].
+
+### Literature
+
+Existing survey/commentary, immutable packets and earlier reversible
+receipts supply method controls. Complete relevant arguments, footnotes,
+tables and continuations are read, including RT99-101/343-344/381-383,
+Fulk263 note3, actual index-directed bodies68/75/90-91/129/147,
+and Ringe277-279. New native literals are text_checked, not new image
+certification. The exact Fulk388 correction separately uses the held image.
+
+| Row | Printed scope and principal question |
+| --- | --- |
+| Sing2190 | Orel318,324; Kroonen437; Ringe128; Fulk68,388; RT215,513: sing/song, postnasal labialization, actual infinitive versus index. |
+| Singe2191 | Orel318 plus inherited Kroonen bounded search: endorsed dry/boil versus conditional sacrificial ancestry, unattested strong base. |
+| Sister2192 | Orel395; Kroonen500; Ringe167; Fulk90-91,147,174-175,388; RT326,381-383,515,520: dental origin, r-stem cells, Runic vocative and suffix grades. |
+| Sit2193 | Orel325-326; Kroonen434; Ringe151-153,249,256,273; Fulk43,248,265-266,294-296,388; RT50-51,106,220,513: surface/root vowel, j-present pedigree and underlying representation. |
+| Six2194 | Orel322; Kroonen431; Ringe229; Fulk75,226,388; RT337: oldest initial pedigree, cardinal/ordinal and reported final-e premise. |
+| Slay2195 | Orel348; Kroonen452; Ringe213,237,246; Fulk74-75,129,262-263,270-271,388; RT99-101,177,189-190,315,343-344,348: Verner premises, contraction cells and extraction traps. |
+| Sleep2196 | Orel348-350; Kroonen453-454; Ringe274,277-279; Fulk267-272,289-291; RT10-11,149,199,346,348: conditional formation, dated paradigm, later dialects and family units. |
+| Slime2197 | Orel351; Kroonen455: European mo-family, source neuter versus OE gender uncertainty, exact selected ending/stress. |
+
+### Historical analysis
+
+Sister t-origin alternatives do not make its explicit noun date uncertain;
+three sweostor occurrences represent different cells. Sit surface PGmc i,
+derivational e and undated Fulk e remain separately justified. Six's oldest
+uek/s(u)ek/swék pedigrees are not a fricative notation equivalence
+[@Ringe2017, pp.167,229,249,256,273;
+@RingeTaylor2014, pp.381-383,515,520;
+@Fulk2018, pp.43,295; @Kroonen2013, pp.431,434;
+@Orel2003, p.322].
+
+Fulk263 note3 directly identifies the rejected weak-grade lift premise
+in RingeTaylor100 and offers possible PIE full-grade a/classVI polygenesis.
+This is a source-explicit focused divergence explanation, not an adopted
+replacement paradigm or whole-row cause. Sleep's conditional early low-ē
+formation proposal and its explicitly reconstructable PGmc paradigm are
+not forced into exclusive opposition
+[@Fulk2018, pp.262-263; @RingeTaylor2014, pp.99-101;
+@Kroonen2013, pp.453-454; @Ringe2017, pp.277-279].
+No canonical chronology edge or SC verdict is promoted. Authors' analogies
+remain reported historical accounts, not new grammar-conditioned CAPR laws.
+
+### Verdict
+
+Research disposition: all eight rows individually aligned with precise
+bounded limits. No canonical SC or Registry-verdict is fabricated.
+Slay's focused premise explanation is source_explicit; six's focused
+cause and all eight whole-row causes remain unestablished. Scientific
+inputs, stages, contexts, rules and baselines are unchanged.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, two exact receipt
+tables, substantial page-cited commentary/README and this full-template
+audit persist. Twenty-five native literals and33 scoped processes add58
+records, five focused positions reuse evidence and39 rationales are added.
+The exact129 SOURCE fields cover120 cells, three arguments, two kinds,
+one diplomatic form, one comparison form, one locator and one date;
+eleven shared position decisions do not overwrite global SOURCE cells.
+No consultation identity/status/scope/target/applicability owners change.
+Totals5522 forms,1391 consultations,5759 positions,462 comparisons,
+750 rationales;265 bounded/128 unreviewed. The194 tranche positions
+link189 records;786 dictionary reviews retain1940 records.
+All388 focused survey/analysis tests pass. The initial new rationale test
+expected the noun polygenesis rather than the persisted adjective
+polygenetic; only that assertion was corrected. The combined run then
+exposed a historical30 receipt pointing to the subsequently refined shared
+set/sit SOURCE cell. Its guard now verifies the exact old/new successor
+link while retaining the immutable30 receipt and outside30 analytical
+position. The complete rerun passes.
+
+Canonical refresh and independent artifact check report CONTROL PLANE
+CLEAN without scientific rebuild. Bibliography, section locators, all73
+new-prose printed-page references, nine headings and whitespace pass.
+Independent post-refresh verification preserves5464 inherited forms
+except129 exact receipted fields,5565 outside positions,452 unaffected
+comparisons,711 inherited reasons,1357 outside consultations, all
+consultation identities/statuses,94 unaffected research hashes and46
+ORIGINAL scientific hashes. All25 native paragraph hashes and whole-token
+Unicode spans independently resolve. Deterministic query evidence is
+session pgmc-two-hundred-sixty-five-alignments-query-results.txt.
+Alignment refuses128 separately from the unchanged RT conventions gap.
+
+### Residue
+
+Exact sing/singe ancestry, sister dental/case/vocative history, sit
+representation/date premises, six initial admission, slay PGmc Verner
+distribution/contraction, sleep formation weighting and slime gender/
+ending remain bounded
+[@Orel2003, pp.318,322,324,325-326,351,395;
+@Kroonen2013, pp.431,434,437,452-455,500;
+@Ringe2017, pp.167,229,249,273,277-279;
+@Fulk2018, pp.75,174-175,262-263].
+The full393-row alignment, class census, synthesis/watchlist and
+specialist agenda remain unfinished. Tranche32 is released6514c1b6;
+tranche33 remains uncommitted. No34 start or scientific adoption.
+
 ## Thirty-second alignment checkpoint: shine through sieve
 
 ### Identity

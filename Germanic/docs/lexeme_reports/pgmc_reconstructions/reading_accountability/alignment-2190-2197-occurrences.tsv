@@ -1,0 +1,933 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment33-sing-fulk-body	Fulk2018	68	85	1	1114	1124	"*singwana"""	8f0cf7a75825e4236ddbba57f88c4a55e08c73e610f8ecac99ae42808d69dad0	"68
+68
+A Comparative Grammar of the Early Germanic Languages
+vowels a and a are rounded before u in the next syllable; similarly, e, Ĕ, and ei are
+rounded before either u or w:
+a > 9: PGmc. *þankō > *þakku > þokk ‘pleasure' (cf. Go. þagkjan ‘think');
+PNorse *allum ollum ‘all' (dat. pl.; cf. nom. sg. allr).
+ā (from PGmc. ē, or a"") > ó: The ó produced by this change subsequently fell
+together with á by about 1250 and is represented thus in normalized orthography;
+however, ó is required by the rhymes in some earlier skaldic verse. Examples: PNorse
+dat. sg. *gātu > gótu, later gátu ‘riddle'; PGmc. *ax""ō > *āu > ó̟, later á 'river' (cf. Go.
+ahua); PGmc. 1 pl. pres. *fa""xum > OIcel. fóm, later analogical foum, fáum 'take'.
+e> ø: This change is infrequently caused by u because e in the relevant position
+underwent fracture except after r or next to 1 (see supra). Examples: PNorse *reru >
+røru 'rowed' (3 pl.); PGmc. *malwijana"" > *melwan > mølva 'crush' (cf. Go. ga-
+malwjan); PGmc. *stiŋkana""> *stekkwan (§6.14) > støkkva ‘spring' (cf. Go. stigqan).
+i > y: NWGmc. *mirkwiz > *mirkur > myrkr ‘darkness'; PGmc. *singwana""
+syngva 'sing' (cf. Go. siggwan)
+ī> ý: PGmc. *tīwaz > *tīur > Týr (name of a god; cf. Lat. dīvus 'god'); 6 PNorse
+*strikwan> strýkva (but usually analogical strýkja) ‘stroke' (cf. OE strīcan).
+ei ey: PGmc. *aiwa > *eiu > ey ‘ever' (cf. Go. ni-áiw ‘never'); Proto-West
+Norse *kwæik"" in kveykva 'kindling' (more commonly kveikja).
+Changes of this sort could also apply to vowels of lesser stress, e.g. in *-tezur
+-tøgr in þrítøgr '30'. According to the standard view, a in a medial syllable was
+mutated to o, later developing to u, as in nom. sg. fem. *zamalō > *zamolu > gomul
+'old'; on the possibility that this might be the result of an earlier change, see §5.5. In
+combination with various consonants, u-umlaut could produce further changes, referred
+to collectively as combinative back mutation, e.g. PGmc. *wērun(þ) > *wārun > óru
+'were' (beside analogically restored vóru, later váru, though óru is required by the
+poetic form in some skaldic verse: see Hornklofi, Haraldskvæði 2/2) and PNorse *nahtu
+> nótt 'night' ($6.14).
+As with i/j-umlaut (§4.7), there appear to have been two patterns of this back
+umlaut, (1) whereby the umlaut is always carried through and the u/w is lost in the early
+period, and (2) whereby the u/w is preserved and the umlaut is usually missing in East
+Norse. The East Norse results, however, cannot be due to phonological developments
+only, as there is evidence for the earlier occurrence of pattern (2) in East Norse: see
+Hreinn Benediktsson 1963, with references.
+Old English. A front vowel may be diphthongized by a back vowel in the fol-
+lowing syllable, though conditions for this set of developments vary by dialect, the
+changes being most widespread in Mercian and least in WS, where they are generally
+limited to the position before a lone labial or liquid consonant (f, p, w, m, l, r). With
+few exceptions (noted below), the change does not occur in closed syllables, and only in
+Kentish (and Mercian, if the change is not analogically induced) does it take place
+before a velar consonant. This change is most likely coeval with, or postdates, the
+earliest manuscript evidence (ca. 700: see the references in Fulk 1992: 347 n. 170).
+The product of this change is diphthongs that are orthographically indistinguish-
+able from diphthongs inherited from PGmc., but their subsequent histories show them to
+have differed from those diphthongs. In poetic meter they are treated like short vowels,
+whereas diphthongs inherited from PGmc. have the same scansion as long vowels.
+Despite the typological objections that have been raised, e.g. by Stockwell & Barritt
+(1951), it is generally assumed that phonemically long and short diphthongs were"		
+alignment33-song-ringe	Ringe2017	128	139	5	1656	1664	*sangwaz	d6101f0a96fe5c062a0946ac4042910685ac2a4cb390d1c646f61648e5581a8e	"This Germanic word is usually said to reﬂect a root *bher- ‘brown’; but while that is
+plausible semantically (in light of later historical developments in various languages),
+an actual PIE word of that shape and meaning is not recoverable, whereas ‘wild
+animal’ is securely reconstructable. The etymology given above should therefore
+perhaps be preferred (pace Seebold b: ).
+   It is difﬁcult to specify precisely the intermediate stages that led to this result. Since
+there seems to be a ‘phonological conspiracy’ to eliminate *gw from the consonant
+inventory of PGmc, it would be reasonable to suggest that the shift to labial
+articulation followed Grimm’s Law, the development being *gwh > *gw > *b. However,
+we cannot completely exclude the possibility that this rare consonant was eliminated
+in word-initial position before the relevant part of Grimm’s Law occurred, so that the
+development was *gwh > *bh > *b instead. All we can say for certain is that the shift
+followed the delabialization of labiovelars next to *u, which bled it (see .. (ii)).
+   In word-internal position it seems clear that Grimm’s Law applied before anything
+else happened, so that *gwh > *gw; in addition, Verner’s Law clearly voiced pre-PGmc
+*hw to *gw. It is the subsequent development of that outcome that concerns us here.
+   Immediately following a (homorganic) nasal, *gw survived in PGmc. There is one
+certain example that has not been delabialized next to *u:
+  PIE *sengwh- ‘to speak solemnly’ (cf. OCS sętŭ ‘(s)he says’), derived noun *sóngwhos
+    (collective *songwháh2 > *honkwhā ́ > Gk ὀμφή /omphɛ ́:/ ‘divine voice’) > PGmc
+    *singwaną ‘to sing’, *sangwaz ‘song’ (cf. Goth. siggwan, ON syngva, OF siunga;
+    labialization lost regularly in OE, OS, OHG singan; Goth. saggws, ON so˛ngr, OF
+    song, OE song ~ sang, OS, OHG sang, with regular loss of labialization in all
+    the WGmc languages and some shifts of stem class (i-stem in Gothic, neut.
+    in OHG)).
+The shape of a further possible example is somewhat problematic:"		
+alignment33-sister-fulk-body	Fulk2018	147	164	1	1969	1977	*swestēr	6a766abc39ab160d836c3a91b5e62f1ce28b043b52119c81953535fc59ceb21c	"$7.8 Origin and development of a-stem inflections
+147
+complicated account. 5 Mottausch (2011: 167) explains *-as as having acquired the
+vowel found elsewhere in the paradigm. See further Bjorvand 1991.
+6
+Dat. sg. Go. dat. sg. -a in the a-stems perhaps derives from PIE instr. *-ē (i.e.,
+*-e-h₁), given comparison to the relic instr. þē (as in ni þē haldis 'none the more', bi-pē
+'while', jab-bē ‘and if', þē-ei 'that, because'; also Go. dat. hammēh 'every' < PIE
+*-eh₂-kwe vs. hamma ‘who' < PIE *-e-h₁), with development of unstressed -ē to -a,
+though it would also be possible to derive Go. -a from a posited reduced form of the
+PIE dat. *-ō (beside usual *-ōį < *-o-ei: see Krahe & Meid 1969: II, §4; cf. Bammes-
+berger 1990: 42).7 The same ending *-ē perhaps underlies endingless locatives in
+WGmc., e.g. OE OS OHG hūs: see Dahl 1938: 51–5, Hogg & Fulk 2011: §2.18, but cf.
+Boutkan 1995b: 382–3. The WGmc. dat. sg., however, most likely derives from PGmc.
+dat. *-ai < *-ōi̟.8 The idea of Prokosch (1939: §79e) that this is an unnecessarily
+complicated derivation, since datives in other Gmc. classes derive from locatives, faces
+the difficulty of explaining forms like early OE facni that are instrumental in function
+but, apparently, locative in form, with -i from thematic PIE *-ei (cf. early OE dat. sg.
+hrōfæ 'roof' with -æ, probably from PGmc. dat. *-ai < PIE *-ōi̟ < *-o-ei), though such
+forms usually lack umlaut. There is thus some reason to doubt the idea of Hollifield
+(1980: 160) that ē in Go. hammēh reflects PGmc. ai, further reduced to a in hamma;
+this also leaves Go. þē (etc.) unexplained: cf. þái 'they' (masc.) < PIE *toi. It is
+nonetheless very commonly assumed that the Gmc. dat. reflects the PIE loc. *-oi: see
+Euler 2013: 69, with references. Runic -ē (woduride, walhakurne) can reflect either
+*-ē or *-ai; 10 note that although ē, developed to ā in stressed syllables early in NGmc.
+(§4.6), this was not so in unstressed syllables: cf., e.g., *swestēr > PNorse *swestær >
+Olcel. syster, later systir 'sister' (§5.6 & n. 4). See further Kotin 2012: 142–4. Pervasive
+uncertainties remain.
+Instr. sg. In early texts in OHG and in OS there appear forms reflecting instru-
+mental singular endings, e.g. OHG wortu 'word' and OS hobu 'court', with -u < PIE
+*-ō (i.e., *-o-h₁).¹¹ There must be assumed analogical restoration of the inflection after
+heavy stems (Gallée 1993: 197).
+Voc. sg. In masc. nouns the ending in PIE was *-e (i.e. the bare theme vowel);
+cf. Gk. ллɛ, Lat. eque ‘horse'. In neuter nouns, however, the vocative was probably
+identical to the nominative, as in Greek. This ending *-e is lost everywhere in Ger-
+manic, and this resulted in the loss of any distinction between vocative and nominative
+in WGmc. A distinction was preserved in Gothic, however (where the nom. ended in
+-s), 12 and in early Runic, as attested by the vocatives alawid and alugod (personal
+names, the latter from ca. 200; cf. nom. in -(a)R, as above).
+13
+Nom. pl. In masc. nouns the PIE ending was *-ōs < *-o-es (cf. athematic PIE
+*-es, §7.2). This *-o-es perhaps results directly in PGmc. *-ōz, which may be reflected
+in Olcel. -ar, OHG -ā, and Go. -ōs. ¹³ However, OE OS -as (cf. OFris. -ar, -er, -a, -an)
+require a different explanation, as *-z should have been lost in WGmc. Possibly PGmc.
+*-ōz and *-ōs were variants under Verner's law (§6.6), with generalization of one or the
+other in the different Gmc. languages (unless final *-s was always voiced to *- -Z: see
+under nom. sg. above). Alternatively, comparison has been drawn to Indo-Iranian -āsas
+(see Beekes 1989 for refs.), implying PIE *-ōses (i.e. normal *-o-es with re-addition of
+the athematic ending *-es), which could account for all the Gmc. endings (including -ar
+in Frisian- -so van Helten 1889: 282-though this could be a borrowing from ON: see
+Markey 1981: 14, but cf. Boutkan 1995b: 188–91, H.F. Nielsen 2000: 253-4) except
+OHG: see Bammesberger 1990: 43–4. The OHG variant -a with short vowel is likely to"		
+alignment33-sister-fulk-pnorse	Fulk2018	147	164	1	1987	1995	*swestær	6a766abc39ab160d836c3a91b5e62f1ce28b043b52119c81953535fc59ceb21c	"$7.8 Origin and development of a-stem inflections
+147
+complicated account. 5 Mottausch (2011: 167) explains *-as as having acquired the
+vowel found elsewhere in the paradigm. See further Bjorvand 1991.
+6
+Dat. sg. Go. dat. sg. -a in the a-stems perhaps derives from PIE instr. *-ē (i.e.,
+*-e-h₁), given comparison to the relic instr. þē (as in ni þē haldis 'none the more', bi-pē
+'while', jab-bē ‘and if', þē-ei 'that, because'; also Go. dat. hammēh 'every' < PIE
+*-eh₂-kwe vs. hamma ‘who' < PIE *-e-h₁), with development of unstressed -ē to -a,
+though it would also be possible to derive Go. -a from a posited reduced form of the
+PIE dat. *-ō (beside usual *-ōį < *-o-ei: see Krahe & Meid 1969: II, §4; cf. Bammes-
+berger 1990: 42).7 The same ending *-ē perhaps underlies endingless locatives in
+WGmc., e.g. OE OS OHG hūs: see Dahl 1938: 51–5, Hogg & Fulk 2011: §2.18, but cf.
+Boutkan 1995b: 382–3. The WGmc. dat. sg., however, most likely derives from PGmc.
+dat. *-ai < *-ōi̟.8 The idea of Prokosch (1939: §79e) that this is an unnecessarily
+complicated derivation, since datives in other Gmc. classes derive from locatives, faces
+the difficulty of explaining forms like early OE facni that are instrumental in function
+but, apparently, locative in form, with -i from thematic PIE *-ei (cf. early OE dat. sg.
+hrōfæ 'roof' with -æ, probably from PGmc. dat. *-ai < PIE *-ōi̟ < *-o-ei), though such
+forms usually lack umlaut. There is thus some reason to doubt the idea of Hollifield
+(1980: 160) that ē in Go. hammēh reflects PGmc. ai, further reduced to a in hamma;
+this also leaves Go. þē (etc.) unexplained: cf. þái 'they' (masc.) < PIE *toi. It is
+nonetheless very commonly assumed that the Gmc. dat. reflects the PIE loc. *-oi: see
+Euler 2013: 69, with references. Runic -ē (woduride, walhakurne) can reflect either
+*-ē or *-ai; 10 note that although ē, developed to ā in stressed syllables early in NGmc.
+(§4.6), this was not so in unstressed syllables: cf., e.g., *swestēr > PNorse *swestær >
+Olcel. syster, later systir 'sister' (§5.6 & n. 4). See further Kotin 2012: 142–4. Pervasive
+uncertainties remain.
+Instr. sg. In early texts in OHG and in OS there appear forms reflecting instru-
+mental singular endings, e.g. OHG wortu 'word' and OS hobu 'court', with -u < PIE
+*-ō (i.e., *-o-h₁).¹¹ There must be assumed analogical restoration of the inflection after
+heavy stems (Gallée 1993: 197).
+Voc. sg. In masc. nouns the ending in PIE was *-e (i.e. the bare theme vowel);
+cf. Gk. ллɛ, Lat. eque ‘horse'. In neuter nouns, however, the vocative was probably
+identical to the nominative, as in Greek. This ending *-e is lost everywhere in Ger-
+manic, and this resulted in the loss of any distinction between vocative and nominative
+in WGmc. A distinction was preserved in Gothic, however (where the nom. ended in
+-s), 12 and in early Runic, as attested by the vocatives alawid and alugod (personal
+names, the latter from ca. 200; cf. nom. in -(a)R, as above).
+13
+Nom. pl. In masc. nouns the PIE ending was *-ōs < *-o-es (cf. athematic PIE
+*-es, §7.2). This *-o-es perhaps results directly in PGmc. *-ōz, which may be reflected
+in Olcel. -ar, OHG -ā, and Go. -ōs. ¹³ However, OE OS -as (cf. OFris. -ar, -er, -a, -an)
+require a different explanation, as *-z should have been lost in WGmc. Possibly PGmc.
+*-ōz and *-ōs were variants under Verner's law (§6.6), with generalization of one or the
+other in the different Gmc. languages (unless final *-s was always voiced to *- -Z: see
+under nom. sg. above). Alternatively, comparison has been drawn to Indo-Iranian -āsas
+(see Beekes 1989 for refs.), implying PIE *-ōses (i.e. normal *-o-es with re-addition of
+the athematic ending *-es), which could account for all the Gmc. endings (including -ar
+in Frisian- -so van Helten 1889: 282-though this could be a borrowing from ON: see
+Markey 1981: 14, but cf. Boutkan 1995b: 188–91, H.F. Nielsen 2000: 253-4) except
+OHG: see Bammesberger 1990: 43–4. The OHG variant -a with short vowel is likely to"		
+alignment33-sister-fulk-runic	Fulk2018	175	192	1	143	150	swestar	4d604e259e06f3928167660a3a9ee2e78f066a3d91f4a440c43e84def6eba9dc	"§7.36 Origin and development of r-stem inflections
+175
+Streitberg (1892: 108, idem 1896: §§160, 179), followed by some others, has argued
+that swestar reflects the *-ōr of PIE *suesōr. Both of these assumptions have been
+challenged by Stiles, who argues that Go. fidwōr ‘four' must be derived from PIE neut.
+*kwetuor rather than the usually assumed masc. kwetuóres, with subsequent analogical
+extension of ō from the neuter (see Stiles 1985–6: 6.86–8), and therefore shortening in
+Gothic is not to be expected in *brōpēr; rather, Go. nom. brōpar has acquired the stem
+of the vocative or, less likely, the acc. (Stiles 1988). He also argues that Runic swestar
+is unlikely to represent a nom. in *-ēr but a voc. in *-ar (Stiles 1984). Hamp (1990)
+supports Stiles but posits nom. sg. *brōpē for PGmc. Boutkan (1992, 1995b: 272)
+argues that Runic swestar reflects the original *-ōr, whereas Olcel. systir reflects the
+analogical ending *-ēr. The issues are complex and capable of more than one interpreta-
+tion, but the analysis of Stiles seems quite likely.
+Acc. sg. PGmc. *brōþer-u"" < PIE *bhrāter-m develops normally in Gothic and
+OIcel., in the latter instance through the series of changes *-eru"" > *-aru *-qru > -ur
+(see Heusler 1967: §113). The WGmc. developments appear to be natural; on OE -or,
+see note 1.
+Gen. sg. The Gothic and main NWGmc. forms may be derived regularly from
+PIE *bhrátr-os or *bhrátr-es. Olcel. faðir has gen. sg. foður, which is usually
+associated with Skt. pitúr and derived from *ptrs, though how such a form arose in
+PIE is difficult to explain, since the original ending should have been PIE *. -r-os (see
+Szemerényi 1996: $7.3.3, with references, and cf. Stiles 2013: 30). Accordingly, Bam-
+mesberger (1983a) argues that the Gmc. and the Skt. forms are analogical creations.
+Corresponding to foour are the variant Anglian OE forms cited above, feadur, -fadur,
+fador.
+Dat. sg. The Gmc. dat. corresponds to the PIE locative, hence PIE *ph₂tr-i
+'father' (cf. Gk. лaτpí, Lat. ablative patre), in which the loss of final *-i after the heavy
+syllable was earlier in Go. than elsewhere in Gmc. (§5.2). PIE *bhrátr-i explains all the
+forms in the paradigms in §7.35 except for Olcel. bróður (for expected bræðr, which is
+rare), which is analogical to the acc. and gen., like dat. foður beside etymological feðr.
+But doubts have been raised about the retention of *-i in Proto-Norse: see §5.2 n. 2.
+Nom. pl. PIE *bhráter-es > PGmc. *brōper-iz develops regularly into the OS
+and OHG forms (aside from the elimination of voicing of þ under Verner's law, if
+instead *bhrātér-es is assumed, as explained above). Olcel. bræðr results from general-
+ization of the weak grade of the suffix *-- in PNorse, resulting in *brōprir; cf. Runic
+dohtrir on the Tune stone of ca. 400. OE fæderas has been analogically reformed on
+the model of the a-stems. Go. brōþrjus, with zero grade of the suffix, as in ON, has
+acquired the u-stem ending because the acc. and dat. pl. endings of Go. r-stems were
+indistinguishable from those of u-stems.
+Acc. pl. PIE *bhrátr-ns > PGmc. *brōbr-unz produces the Go. form by regular
+sound change, whereas the NWGmc. forms are analogical to the nom. pl.
+Gen. pl. PIE *bhrátr-oHom produces the expected results everywhere except in
+OIcel., where the umlauted vowel of the nom. pl. is extended throughout the plural, and
+in OHG, where bruodero may be due to analogical generalization of the stem with *-er-
+(cf. the dat. pl.), or, less likely, it may reflect an original variant with full grade of the
+suffix: cf. Gk. лatépov beside Homeric лatрov, Lat. patrum.
+Dat. pl. PIE *bhrátṛ-mis is an instr. form (§7.2; cf. Skt. instr. mātṛbhis
+'mothers') which may be assumed to give PGmc. *brōþru-miz (with *-ru- rather than
+*-ur- under the influence of the other weak cases: see §12.31 n. 3). This produces"		
+alignment33-sit-ringe-past-sg	Ringe2017	273	284	3	1104	1108	*sat	4a34075488add072cc1da246d29e400b6a774afdb60cd666074658931fc33a0c	"ON kveða, kvað, kváðu, kveðinn; OE cweþan, cwæþ, cwǣdon, cweden; OHG
+     quedan, quad, quātun, giquetan);
+  *sehwaną, *sahw, *sēgun (subj. *sēwī-), *sewanaz ‘see’ (cf. Goth. saíƕan, saƕ,
+     seƕun, saíƕans; ON sjá, sá, sá(g)u, sénn; OE sēon, seah, sāwon, sewen; OHG
+     sehan, sah, sāhun, gisewan);
+  *wesaną, *was, *wēzun ‘stay, be’ (cf. Goth. wisan, was, wesun; ON vesa (! vera),
+     vas (! var), váru, verit; OE wesan, wæs, wǣron; OHG wesan, was, wārun).
+Three further examples are conﬁned to WGmc. Once again we are in the presence of
+an old class that has undergone very little expansion.
+  Three verbs of this class reconstructable for PGmc exhibited j-presents, and all
+three have good PIE etymologies:
+  *bidjaną, *bad, *bēdun, *bedanaz ‘ask for’ (cf. Goth. bidjan, baþ, bedun; ON biðja,
+     bað, báðu, beðinn; OE biddan, bæd, bǣdon, beden; OHG bitten, bat, bātun,
+     gibetan; see .. (iii));
+  *ligjaną, *lag, *lēgun, *leganaz ‘lie’ (cf. Goth. ligan, lag; ON liggja, lá, lágu, leginn;
+     OE liċġan, læġ, lǣgon, leġen; OHG liggen, lag, lāgun, gilegan; see .. (ii));
+  *sitjaną, *sat, *sētun, *setanaz ‘sit’ (cf. Goth. sitan, sat, setun; ON sitja, sat, sátu,
+     setinn; OE sittan, sæt, sǣton, seten; OHG sizzen, saʒ , sāʒun, giseʒʒan; for the
+     root cf. Skt aor. sg. ásadat ‘(s)he has sat down’, Lat. stative sedēre ‘to be sitting’).
+The last two have been remodeled as simple thematic presents in Gothic (ligan,
+sitan). A fourth example, *þigjaną ‘receive’, appears to have been a NWGmc innov-
+ation. Note that the presence of the *j has raised the root vowel to *i throughout the
+present stem of these verbs."		
+alignment33-sit-ringe-past-pl	Ringe2017	273	284	3	1110	1116	*sētun	4a34075488add072cc1da246d29e400b6a774afdb60cd666074658931fc33a0c	"ON kveða, kvað, kváðu, kveðinn; OE cweþan, cwæþ, cwǣdon, cweden; OHG
+     quedan, quad, quātun, giquetan);
+  *sehwaną, *sahw, *sēgun (subj. *sēwī-), *sewanaz ‘see’ (cf. Goth. saíƕan, saƕ,
+     seƕun, saíƕans; ON sjá, sá, sá(g)u, sénn; OE sēon, seah, sāwon, sewen; OHG
+     sehan, sah, sāhun, gisewan);
+  *wesaną, *was, *wēzun ‘stay, be’ (cf. Goth. wisan, was, wesun; ON vesa (! vera),
+     vas (! var), váru, verit; OE wesan, wæs, wǣron; OHG wesan, was, wārun).
+Three further examples are conﬁned to WGmc. Once again we are in the presence of
+an old class that has undergone very little expansion.
+  Three verbs of this class reconstructable for PGmc exhibited j-presents, and all
+three have good PIE etymologies:
+  *bidjaną, *bad, *bēdun, *bedanaz ‘ask for’ (cf. Goth. bidjan, baþ, bedun; ON biðja,
+     bað, báðu, beðinn; OE biddan, bæd, bǣdon, beden; OHG bitten, bat, bātun,
+     gibetan; see .. (iii));
+  *ligjaną, *lag, *lēgun, *leganaz ‘lie’ (cf. Goth. ligan, lag; ON liggja, lá, lágu, leginn;
+     OE liċġan, læġ, lǣgon, leġen; OHG liggen, lag, lāgun, gilegan; see .. (ii));
+  *sitjaną, *sat, *sētun, *setanaz ‘sit’ (cf. Goth. sitan, sat, setun; ON sitja, sat, sátu,
+     setinn; OE sittan, sæt, sǣton, seten; OHG sizzen, saʒ , sāʒun, giseʒʒan; for the
+     root cf. Skt aor. sg. ásadat ‘(s)he has sat down’, Lat. stative sedēre ‘to be sitting’).
+The last two have been remodeled as simple thematic presents in Gothic (ligan,
+sitan). A fourth example, *þigjaną ‘receive’, appears to have been a NWGmc innov-
+ation. Note that the presence of the *j has raised the root vowel to *i throughout the
+present stem of these verbs."		
+alignment33-six-ringe-older	Ringe2017	229	240	3	1023	1030	*swéḱs	b456a5021898491840aa039a14acce96472ac1de166f0c847a354a3ee9249a09	".. (ii) Changes in the system of numerals The reconstruction of PGmc numeral
+inﬂection poses a number of serious problems, but many details are clear. *sem- ‘one’
+does not survive; PGmc *ainaz ‘one’ reﬂects PIE *óynos ‘single (?)’, which is also the
+usual word for ‘one’ in Italic, Celtic, and probably Balto-Slavic (to judge from Old
+Prussian ains; the other languages have remodeled the word). ‘Two’ is inﬂected as a
+plural in the attested languages, but it is at least possible that traces of its original dual
+inﬂection are detectable (cf. Ross and Berns : – with references, but also
+Cowgill b: –; see .. (i) for further discussion). The feminine stem of
+‘three’ has been replaced by the default stem *tri- > *þri-. ‘Four’ underwent gender
+syncretism: only the neut. forms survived, and they were used for all three genders
+(see Stiles –). The initial consonant of ‘four’ has clearly been replaced by that of
+‘ﬁve’; similar lexical analogies have affected several other PGmc numerals:
+  PIE *swéḱs ‘six’ (cf. Av. xšuuaš, Boiotian Gk ϝεξ /(h)wéks/, Welsh chwech) ! *séḱs
+    (cf. Lat. sex) under the inﬂuence of ‘seven’; > PGmc *sehs (cf. Goth. saíhs, OHG
+    sehs);
+  PIE *septm̥ ́ ‘seven’ (cf. Skt saptá, Lat. septem) > *seftún ! *seftúnt under the
+    inﬂuence of ‘ten’ and ‘nine’ (see below); > *sefúnt > PGmc *sebun (cf. Goth.
+    sibun, OE seofon; see .. (ii) and Stiles –, part , pp. –);
+  PIE *(h1)néwn̥ ‘nine’ (cf. Skt náva, Gk ἐννέα /ennéa/, Lat. novem—but cf. -n- in
+    nōnus ‘ninth’) > *néwun ! *néwunt under the inﬂuence of ‘ten’; > PGmc
+    *ne(w)un (cf. Goth., OHG niun; if the *-t had not been added the *-n would
+    have been lost, cf. .. (ii)).
+Very surprisingly, ‘eleven’ and ‘twelve’ were compounds *aina-lif- (cf. OHG einlif; or
+*-b-?, cf. Goth. dat. pl. ainlibim) and *twa-lif- (cf. OHG zwelif; or *-b-?, cf. Goth.
+twalib-wintrus ‘twelve years old’); neither the last consonant nor the vowel that must
+have followed it is securely reconstructable. There is general agreement that the literal
+meanings must originally have been *‘one left over’, *‘two left over’, but even the
+etymology of the second part is unclear. The only parallels within IE, Lithuanian
+vienúolika ‘eleven’ and dvýlika ‘twelve’, suggest *-likw-, the zero grade of PIE *leykw-
+‘leave behind’. A better phonological match would be *-lip-, the zero grade of PIE
+*leyp- ‘be left over’ (cf. Toch. B lipetär ‘is left over’, OCS prilĭpĕti ‘to adhere to’),"		
+alignment33-six-ringe-simplified	Ringe2017	229	240	3	1097	1103	*séḱs	b456a5021898491840aa039a14acce96472ac1de166f0c847a354a3ee9249a09	".. (ii) Changes in the system of numerals The reconstruction of PGmc numeral
+inﬂection poses a number of serious problems, but many details are clear. *sem- ‘one’
+does not survive; PGmc *ainaz ‘one’ reﬂects PIE *óynos ‘single (?)’, which is also the
+usual word for ‘one’ in Italic, Celtic, and probably Balto-Slavic (to judge from Old
+Prussian ains; the other languages have remodeled the word). ‘Two’ is inﬂected as a
+plural in the attested languages, but it is at least possible that traces of its original dual
+inﬂection are detectable (cf. Ross and Berns : – with references, but also
+Cowgill b: –; see .. (i) for further discussion). The feminine stem of
+‘three’ has been replaced by the default stem *tri- > *þri-. ‘Four’ underwent gender
+syncretism: only the neut. forms survived, and they were used for all three genders
+(see Stiles –). The initial consonant of ‘four’ has clearly been replaced by that of
+‘ﬁve’; similar lexical analogies have affected several other PGmc numerals:
+  PIE *swéḱs ‘six’ (cf. Av. xšuuaš, Boiotian Gk ϝεξ /(h)wéks/, Welsh chwech) ! *séḱs
+    (cf. Lat. sex) under the inﬂuence of ‘seven’; > PGmc *sehs (cf. Goth. saíhs, OHG
+    sehs);
+  PIE *septm̥ ́ ‘seven’ (cf. Skt saptá, Lat. septem) > *seftún ! *seftúnt under the
+    inﬂuence of ‘ten’ and ‘nine’ (see below); > *sefúnt > PGmc *sebun (cf. Goth.
+    sibun, OE seofon; see .. (ii) and Stiles –, part , pp. –);
+  PIE *(h1)néwn̥ ‘nine’ (cf. Skt náva, Gk ἐννέα /ennéa/, Lat. novem—but cf. -n- in
+    nōnus ‘ninth’) > *néwun ! *néwunt under the inﬂuence of ‘ten’; > PGmc
+    *ne(w)un (cf. Goth., OHG niun; if the *-t had not been added the *-n would
+    have been lost, cf. .. (ii)).
+Very surprisingly, ‘eleven’ and ‘twelve’ were compounds *aina-lif- (cf. OHG einlif; or
+*-b-?, cf. Goth. dat. pl. ainlibim) and *twa-lif- (cf. OHG zwelif; or *-b-?, cf. Goth.
+twalib-wintrus ‘twelve years old’); neither the last consonant nor the vowel that must
+have followed it is securely reconstructable. There is general agreement that the literal
+meanings must originally have been *‘one left over’, *‘two left over’, but even the
+etymology of the second part is unclear. The only parallels within IE, Lithuanian
+vienúolika ‘eleven’ and dvýlika ‘twelve’, suggest *-likw-, the zero grade of PIE *leykw-
+‘leave behind’. A better phonological match would be *-lip-, the zero grade of PIE
+*leyp- ‘be left over’ (cf. Toch. B lipetär ‘is left over’, OCS prilĭpĕti ‘to adhere to’),"		
+alignment33-slay-ringe-past-sg	Ringe2017	213	224	3	196	201	*slōh	3d0bb771dd282a349b0579cbdfb41979237426a8768389029a8d567daa57e6e1	"pres. inf.   past sg.          past pl.     past ptc.
+                       -
+  *faraną      *fōr (*fōr?)       *fōrun        *faranaz    ‘go, travel’
+                         -
+  *slahaną     *slōh (*slōh?)     *slōgun       *slaganaz   ‘hit, kill’"		
+alignment33-slay-ringe-uncertain	Ringe2017	213	224	3	203	209	*slōh?	3d0bb771dd282a349b0579cbdfb41979237426a8768389029a8d567daa57e6e1	"pres. inf.   past sg.          past pl.     past ptc.
+                       -
+  *faraną      *fōr (*fōr?)       *fōrun        *faranaz    ‘go, travel’
+                         -
+  *slahaną     *slōh (*slōh?)     *slōgun       *slaganaz   ‘hit, kill’"		
+alignment33-slay-ringe-past-pl	Ringe2017	213	224	3	215	222	*slōgun	3d0bb771dd282a349b0579cbdfb41979237426a8768389029a8d567daa57e6e1	"pres. inf.   past sg.          past pl.     past ptc.
+                       -
+  *faraną      *fōr (*fōr?)       *fōrun        *faranaz    ‘go, travel’
+                         -
+  *slahaną     *slōh (*slōh?)     *slōgun       *slaganaz   ‘hit, kill’"		
+alignment33-slay-ringe-participle	Ringe2017	213	224	3	229	238	*slaganaz	3d0bb771dd282a349b0579cbdfb41979237426a8768389029a8d567daa57e6e1	"pres. inf.   past sg.          past pl.     past ptc.
+                       -
+  *faraną      *fōr (*fōr?)       *fōrun        *faranaz    ‘go, travel’
+                         -
+  *slahaną     *slōh (*slōh?)     *slōgun       *slaganaz   ‘hit, kill’"		
+alignment33-slay-fulk-body	Fulk2018	75	92	1	95	104	"*slaxana"""	ee2a9b6802d023b245ebc5cfb11a30bc603d0a91a5077830e7d46fdf6e928d9e	"§4.13 Stressed vowels in early Old English 75
+*sexwana""; slēan ‘strike' < *sleahan < *slæxan < *slaxana"": 5 freond 'friend' <
+*fri(j)ōnd-.6 Compensatory lengthening occurs upon loss of x between voiced sounds,
+even with an intervening liquid consonant, as in gen. sg. mēares (cf. nom. mearh
+'horse'), þweal 'washing' (cf. Go. þwahl), ēored 'troop' < *eoh-rād-. Poetic meter
+sometimes preserves evidence of the state before the application of contraction and
+compensatory lengthening (see Fulk 1992: 92-121).
+In a process referred to as palatal umlaut, e (or eo or io developed from it, where
+Anglian smoothing did not apply) before /x/ plus consonant in absolute finality was
+raised to i, as in cniht ‘boy', riht ‘right', wrixl 'change'. It cannot be determined
+whether the digraph in siex 'six' represents an actual diphthong.
+On front and back umlaut, see §§4.7-8. For further details of OE vowel develop-
+ments (especially changes of the literate period, which are for the most part left uncon-
+sidered here), consult the sources cited in §1.16.
+1. It appears rather that supposed instances of breaking before w can be explained as due to back mutation
+(§4.8): see Fulk 1993b: 350 n. 6, idem 1992: 146 n. 2. On Gmc. breaking in general, see Roelands 1989,
+Liberman 1998, Kostakis 2015. On OE breaking in particular, see H.F. Nielsen 1984 (and the refs. there),
+Strøjer 1984, Kortlandt 1994a, Suzuki 1994; also Hogg 1992: §§5.16–34, with refs.
+2. Howell (1991b) argues on the basis of parallels chiefly in German dialects that breaking in OE is instead
+a consequence of weakening of the relevant consonant. The chief difficulty confronting this view is that /x/
+would appear not to have been weakened in the relevant environments in OE, as shown by later develop-
+ments, including Anglian smoothing and LWS smoothing (see A. Campbell 1977: §§222–33, 312–14), and
+development of [x] to [y] and [f] in ME (Jordan 1974: §§196–7). Lutz 1991 likewise explains various vowel
+developments in the history of English as due to weakening of /x/. Gąsiorowski (2006) argues that the
+articulation of OE /r/ was hardly uniform- -as might be expected on the basis of modern dialects.
+3. At the time of breaking, WS had no ē in the relevant environments and non-WS no æ.
+4. Although WS had a where Anglian had ē at the time of this change, a new ē had arisen by lengthening
+under Prokosch's law (§2.5), hence *3ē ‘you (pl.)' (> Mercian gē) by analogy to we 'we' (§8.3).
+5. It is sometimes assumed that in forms like *seohan and *sleahan the loss of h induced lengthening of the
+preceding vowel before contraction: so, e.g., Hogg 1992: §7.45. Yet there would have been nothing to
+compensate in terms of syllable weight and structure if, as is usually supposed, h in such forms was in the
+syllable onset rather than the coda. See Fulk 1992: § 101. It should be noted that when contracted forms like
+seon demand disyllabic scansion in verse, a heavy initial syllable is never required.
+6. Unlike the other examples, frēond is never disyllabic in verse, and at some places the meter demands a
+monosyllable (i.e., not *frijōnd-), e.g. Beowulf 1385a.
+4.14 Changes of stressed vowels in Old Frisian
+There is breaking of e and i to iu, a rising diphthong, before /x/ + /x, s, t/, as in *texxō-
+> tiuche 'team, parcel of land',
+2 sg.
+*sixist *sixst > siuchst 'see', *fextan > fiuchta
+'fight'. Breaking is prevented by i in the following syllable, as in *plixti- > plecht
+'duty'. Unlike in OE, i-umlaut antecedes breaking in OFris. (see Stiles 1995: 194–5).¹
+As in OE, adjacent vowels contract upon loss of intervocalic h: -a-a- contracts to
+-ā-, as in WGmc. *slaxan> slā ‘strike’; -e-a- contracts to -iā-, as in *sexwan > siā
+'see', and -o-a-, whether in verba pura or due to loss of intervocalic x, yields -uā-, as in
+*do-an (§12.61) > dwā 'do' and WGmc. *xā""xan > *hōxan> hwā ‘hang'.
+PGmc. eu develops to a rising diphthong ia (cf. Kentish OE, §4.13 supra), as in
+PGmc. *leubaz > liāf ‘dear' and *beuðana""> biāda ‘offer'.
+Palatalization of 3 (§6.17) resulted in the rise of a new diphthong ei, as in
+*waznaz> *wæzn> wein 'cart' and *xu3iz> *hy3i> hei 'mind' (§4.7)."		
+alignment33-slay-fulk-broken	Fulk2018	75	92	1	74	82	*sleahan	ee2a9b6802d023b245ebc5cfb11a30bc603d0a91a5077830e7d46fdf6e928d9e	"§4.13 Stressed vowels in early Old English 75
+*sexwana""; slēan ‘strike' < *sleahan < *slæxan < *slaxana"": 5 freond 'friend' <
+*fri(j)ōnd-.6 Compensatory lengthening occurs upon loss of x between voiced sounds,
+even with an intervening liquid consonant, as in gen. sg. mēares (cf. nom. mearh
+'horse'), þweal 'washing' (cf. Go. þwahl), ēored 'troop' < *eoh-rād-. Poetic meter
+sometimes preserves evidence of the state before the application of contraction and
+compensatory lengthening (see Fulk 1992: 92-121).
+In a process referred to as palatal umlaut, e (or eo or io developed from it, where
+Anglian smoothing did not apply) before /x/ plus consonant in absolute finality was
+raised to i, as in cniht ‘boy', riht ‘right', wrixl 'change'. It cannot be determined
+whether the digraph in siex 'six' represents an actual diphthong.
+On front and back umlaut, see §§4.7-8. For further details of OE vowel develop-
+ments (especially changes of the literate period, which are for the most part left uncon-
+sidered here), consult the sources cited in §1.16.
+1. It appears rather that supposed instances of breaking before w can be explained as due to back mutation
+(§4.8): see Fulk 1993b: 350 n. 6, idem 1992: 146 n. 2. On Gmc. breaking in general, see Roelands 1989,
+Liberman 1998, Kostakis 2015. On OE breaking in particular, see H.F. Nielsen 1984 (and the refs. there),
+Strøjer 1984, Kortlandt 1994a, Suzuki 1994; also Hogg 1992: §§5.16–34, with refs.
+2. Howell (1991b) argues on the basis of parallels chiefly in German dialects that breaking in OE is instead
+a consequence of weakening of the relevant consonant. The chief difficulty confronting this view is that /x/
+would appear not to have been weakened in the relevant environments in OE, as shown by later develop-
+ments, including Anglian smoothing and LWS smoothing (see A. Campbell 1977: §§222–33, 312–14), and
+development of [x] to [y] and [f] in ME (Jordan 1974: §§196–7). Lutz 1991 likewise explains various vowel
+developments in the history of English as due to weakening of /x/. Gąsiorowski (2006) argues that the
+articulation of OE /r/ was hardly uniform- -as might be expected on the basis of modern dialects.
+3. At the time of breaking, WS had no ē in the relevant environments and non-WS no æ.
+4. Although WS had a where Anglian had ē at the time of this change, a new ē had arisen by lengthening
+under Prokosch's law (§2.5), hence *3ē ‘you (pl.)' (> Mercian gē) by analogy to we 'we' (§8.3).
+5. It is sometimes assumed that in forms like *seohan and *sleahan the loss of h induced lengthening of the
+preceding vowel before contraction: so, e.g., Hogg 1992: §7.45. Yet there would have been nothing to
+compensate in terms of syllable weight and structure if, as is usually supposed, h in such forms was in the
+syllable onset rather than the coda. See Fulk 1992: § 101. It should be noted that when contracted forms like
+seon demand disyllabic scansion in verse, a heavy initial syllable is never required.
+6. Unlike the other examples, frēond is never disyllabic in verse, and at some places the meter demands a
+monosyllable (i.e., not *frijōnd-), e.g. Beowulf 1385a.
+4.14 Changes of stressed vowels in Old Frisian
+There is breaking of e and i to iu, a rising diphthong, before /x/ + /x, s, t/, as in *texxō-
+> tiuche 'team, parcel of land',
+2 sg.
+*sixist *sixst > siuchst 'see', *fextan > fiuchta
+'fight'. Breaking is prevented by i in the following syllable, as in *plixti- > plecht
+'duty'. Unlike in OE, i-umlaut antecedes breaking in OFris. (see Stiles 1995: 194–5).¹
+As in OE, adjacent vowels contract upon loss of intervocalic h: -a-a- contracts to
+-ā-, as in WGmc. *slaxan> slā ‘strike’; -e-a- contracts to -iā-, as in *sexwan > siā
+'see', and -o-a-, whether in verba pura or due to loss of intervocalic x, yields -uā-, as in
+*do-an (§12.61) > dwā 'do' and WGmc. *xā""xan > *hōxan> hwā ‘hang'.
+PGmc. eu develops to a rising diphthong ia (cf. Kentish OE, §4.13 supra), as in
+PGmc. *leubaz > liāf ‘dear' and *beuðana""> biāda ‘offer'.
+Palatalization of 3 (§6.17) resulted in the rise of a new diphthong ei, as in
+*waznaz> *wæzn> wein 'cart' and *xu3iz> *hy3i> hei 'mind' (§4.7)."		
+alignment33-slay-fulk-oe	Fulk2018	75	92	1	57	62	slēan	ee2a9b6802d023b245ebc5cfb11a30bc603d0a91a5077830e7d46fdf6e928d9e	"§4.13 Stressed vowels in early Old English 75
+*sexwana""; slēan ‘strike' < *sleahan < *slæxan < *slaxana"": 5 freond 'friend' <
+*fri(j)ōnd-.6 Compensatory lengthening occurs upon loss of x between voiced sounds,
+even with an intervening liquid consonant, as in gen. sg. mēares (cf. nom. mearh
+'horse'), þweal 'washing' (cf. Go. þwahl), ēored 'troop' < *eoh-rād-. Poetic meter
+sometimes preserves evidence of the state before the application of contraction and
+compensatory lengthening (see Fulk 1992: 92-121).
+In a process referred to as palatal umlaut, e (or eo or io developed from it, where
+Anglian smoothing did not apply) before /x/ plus consonant in absolute finality was
+raised to i, as in cniht ‘boy', riht ‘right', wrixl 'change'. It cannot be determined
+whether the digraph in siex 'six' represents an actual diphthong.
+On front and back umlaut, see §§4.7-8. For further details of OE vowel develop-
+ments (especially changes of the literate period, which are for the most part left uncon-
+sidered here), consult the sources cited in §1.16.
+1. It appears rather that supposed instances of breaking before w can be explained as due to back mutation
+(§4.8): see Fulk 1993b: 350 n. 6, idem 1992: 146 n. 2. On Gmc. breaking in general, see Roelands 1989,
+Liberman 1998, Kostakis 2015. On OE breaking in particular, see H.F. Nielsen 1984 (and the refs. there),
+Strøjer 1984, Kortlandt 1994a, Suzuki 1994; also Hogg 1992: §§5.16–34, with refs.
+2. Howell (1991b) argues on the basis of parallels chiefly in German dialects that breaking in OE is instead
+a consequence of weakening of the relevant consonant. The chief difficulty confronting this view is that /x/
+would appear not to have been weakened in the relevant environments in OE, as shown by later develop-
+ments, including Anglian smoothing and LWS smoothing (see A. Campbell 1977: §§222–33, 312–14), and
+development of [x] to [y] and [f] in ME (Jordan 1974: §§196–7). Lutz 1991 likewise explains various vowel
+developments in the history of English as due to weakening of /x/. Gąsiorowski (2006) argues that the
+articulation of OE /r/ was hardly uniform- -as might be expected on the basis of modern dialects.
+3. At the time of breaking, WS had no ē in the relevant environments and non-WS no æ.
+4. Although WS had a where Anglian had ē at the time of this change, a new ē had arisen by lengthening
+under Prokosch's law (§2.5), hence *3ē ‘you (pl.)' (> Mercian gē) by analogy to we 'we' (§8.3).
+5. It is sometimes assumed that in forms like *seohan and *sleahan the loss of h induced lengthening of the
+preceding vowel before contraction: so, e.g., Hogg 1992: §7.45. Yet there would have been nothing to
+compensate in terms of syllable weight and structure if, as is usually supposed, h in such forms was in the
+syllable onset rather than the coda. See Fulk 1992: § 101. It should be noted that when contracted forms like
+seon demand disyllabic scansion in verse, a heavy initial syllable is never required.
+6. Unlike the other examples, frēond is never disyllabic in verse, and at some places the meter demands a
+monosyllable (i.e., not *frijōnd-), e.g. Beowulf 1385a.
+4.14 Changes of stressed vowels in Old Frisian
+There is breaking of e and i to iu, a rising diphthong, before /x/ + /x, s, t/, as in *texxō-
+> tiuche 'team, parcel of land',
+2 sg.
+*sixist *sixst > siuchst 'see', *fextan > fiuchta
+'fight'. Breaking is prevented by i in the following syllable, as in *plixti- > plecht
+'duty'. Unlike in OE, i-umlaut antecedes breaking in OFris. (see Stiles 1995: 194–5).¹
+As in OE, adjacent vowels contract upon loss of intervocalic h: -a-a- contracts to
+-ā-, as in WGmc. *slaxan> slā ‘strike’; -e-a- contracts to -iā-, as in *sexwan > siā
+'see', and -o-a-, whether in verba pura or due to loss of intervocalic x, yields -uā-, as in
+*do-an (§12.61) > dwā 'do' and WGmc. *xā""xan > *hōxan> hwā ‘hang'.
+PGmc. eu develops to a rising diphthong ia (cf. Kentish OE, §4.13 supra), as in
+PGmc. *leubaz > liāf ‘dear' and *beuðana""> biāda ‘offer'.
+Palatalization of 3 (§6.17) resulted in the rise of a new diphthong ei, as in
+*waznaz> *wæzn> wein 'cart' and *xu3iz> *hy3i> hei 'mind' (§4.7)."		
+alignment33-slay-fulk-past-pl	Fulk2018	262	279	1	2149	2155	slōgon	a822e95d37f5e136a04d1f347892fe1d70f2ecb407982af5fa3356d66e56df62	"262
+A Comparative Grammar of the Early Germanic Languages
+are the result of analogical change: so, e.g., Adamczyk 2004, and most handbooks of
+the early Gmc. languages. However, Prokosch (1939: §63) shows effectively that such a
+pattern, though impressively regular in the first three classes, is almost never what is to
+be found in classes V-VII (class IV being irrelevant, since the stem ends only in a son-
+orant consonant or, exceptionally, a stop). Prokosch's idea is that voicing of a stem-final
+fricative should not be expected in any form containing a full- or lengthened-grade
+vowel, since this must have borne the accent, and he finds that the attested alternations
+in classes V-VII support this assumption, with voicing in class V only in the passive
+participle, in class VI only in the infinitive and the passive participle, and in class VII on
+an irregular basis, since the class represents a mixture of accentual types. On the basis
+of a survey of Germanic forms he concludes that this is indeed the general pattern. The
+evidence, however, is difficult to reconcile with this conclusion.
+He points to Go. standan, stop, stōþum, *sta(n)dans 'stand' in support of the
+posited pattern in class VI. It is true that þ in the preterite is unlikely to be due to
+devoicing of ð (§6.12), in view of forms like 3 pl. stōþun, 1 pl. afstōþum, 2 pl.
+gastōpub, 3 sg. sj. afstōpi. But there is no reason to assume on the basis of this model
+that the voicing in the infinitive is to be expected in the present stem of other verbs of
+this class, since PIE verbs with nasal infix bore suffixal accent in the dual and plural.
+The stem stand- plainly derives from a form with suffixal accent (PIE root *sth₂-; cf. full
+grade in Lat. stāre), whereas some verbs of class VI appear to derive from roots with
+full-grade a or he, as noted above (§12.15). Moreoever, in Old English there is to be
+found a consistent pattern almost precisely the opposite of the Gothic one, in *scieppan
+(LWS sceppan), sc(e)ōd, sc(e)ōdon, sceaðen ‘injure', and in contracted verbs (those
+with original root-final x, §12.1), where g, which is regular in the preterite plural (e.g.
+slōgon), is also predominant in the preterite singular slōg. Beside slōg there does occur
+slōh (which may be due to final devoicing, §6.17), but the voiced variant is the usual
+one in early texts (Hogg & Fulk 2011: §§6.65–6). Despite Prokosch to the contrary, g is
+also the rule in both the preterite singular and the plural in OHG, with few exceptions:
+see Braune 2004a: §346 Anm. 2, in agreement with Prokosch that g in the singular must
+have been extended analogically from the plural. Prokosch reasons that this extension is
+motivated by the need to distinguish the preterite from the present, but since the ablaut
+difference between the preterite stem and the present was plainly sufficient to differen-
+tiate the two in classes I-III, it is difficult to see why such a change should have taken
+place in this class but not those. There is the added difficulty that whereas Prokosch's
+analysis predicts a voiceless fricative in the passive participle in class VI, instead a
+voiced one is consistently to be found in both North and West Germanic, and this must
+be quite an old situation: cf. Runic slaginar (Möjbro stone, ca. 450).¹ Voicing in the
+last three principal parts but not the first appears also to have been the original rule for
+at least some verbs in class VII, to judge by OE fōn, fěng, fěngon, fangen 'take' (=
+Olcel. fá, fekk, fengu, fenginn) and hōn, hẽng, hẽĕngon, hangen ‘hang' and NWGmc.
+cognates. Yet no single pattern will explain all the verbs of class VII: for example, OE
+has a voiceless fricative in both pres. hwōsað ‘cough' and pret. hwēos, whereas, like
+Gothic, it reflects only a voiced fricative in scādan 'distinguish' (Go. skáidan), in
+contradistinction to OS and OHG, where the reflexes of voiceless fricatives are com-
+monest (OS skēdan, OHG skeidan). Similarly, OHG shows a mixture of forms in faldan
+beside faltan 'fold'.
+Patterns in class V are not much more supportive of the proposed distribution of
+alternants under Verner's law. In Old English, for example, the preterite plural consis-
+tently reflects a voiced fricative where Prokosch predicts a voiceless (cwadon 'said',"		
+alignment33-slay-fulk-past-g	Fulk2018	262	279	1	2204	2208	slōg	a822e95d37f5e136a04d1f347892fe1d70f2ecb407982af5fa3356d66e56df62	"262
+A Comparative Grammar of the Early Germanic Languages
+are the result of analogical change: so, e.g., Adamczyk 2004, and most handbooks of
+the early Gmc. languages. However, Prokosch (1939: §63) shows effectively that such a
+pattern, though impressively regular in the first three classes, is almost never what is to
+be found in classes V-VII (class IV being irrelevant, since the stem ends only in a son-
+orant consonant or, exceptionally, a stop). Prokosch's idea is that voicing of a stem-final
+fricative should not be expected in any form containing a full- or lengthened-grade
+vowel, since this must have borne the accent, and he finds that the attested alternations
+in classes V-VII support this assumption, with voicing in class V only in the passive
+participle, in class VI only in the infinitive and the passive participle, and in class VII on
+an irregular basis, since the class represents a mixture of accentual types. On the basis
+of a survey of Germanic forms he concludes that this is indeed the general pattern. The
+evidence, however, is difficult to reconcile with this conclusion.
+He points to Go. standan, stop, stōþum, *sta(n)dans 'stand' in support of the
+posited pattern in class VI. It is true that þ in the preterite is unlikely to be due to
+devoicing of ð (§6.12), in view of forms like 3 pl. stōþun, 1 pl. afstōþum, 2 pl.
+gastōpub, 3 sg. sj. afstōpi. But there is no reason to assume on the basis of this model
+that the voicing in the infinitive is to be expected in the present stem of other verbs of
+this class, since PIE verbs with nasal infix bore suffixal accent in the dual and plural.
+The stem stand- plainly derives from a form with suffixal accent (PIE root *sth₂-; cf. full
+grade in Lat. stāre), whereas some verbs of class VI appear to derive from roots with
+full-grade a or he, as noted above (§12.15). Moreoever, in Old English there is to be
+found a consistent pattern almost precisely the opposite of the Gothic one, in *scieppan
+(LWS sceppan), sc(e)ōd, sc(e)ōdon, sceaðen ‘injure', and in contracted verbs (those
+with original root-final x, §12.1), where g, which is regular in the preterite plural (e.g.
+slōgon), is also predominant in the preterite singular slōg. Beside slōg there does occur
+slōh (which may be due to final devoicing, §6.17), but the voiced variant is the usual
+one in early texts (Hogg & Fulk 2011: §§6.65–6). Despite Prokosch to the contrary, g is
+also the rule in both the preterite singular and the plural in OHG, with few exceptions:
+see Braune 2004a: §346 Anm. 2, in agreement with Prokosch that g in the singular must
+have been extended analogically from the plural. Prokosch reasons that this extension is
+motivated by the need to distinguish the preterite from the present, but since the ablaut
+difference between the preterite stem and the present was plainly sufficient to differen-
+tiate the two in classes I-III, it is difficult to see why such a change should have taken
+place in this class but not those. There is the added difficulty that whereas Prokosch's
+analysis predicts a voiceless fricative in the passive participle in class VI, instead a
+voiced one is consistently to be found in both North and West Germanic, and this must
+be quite an old situation: cf. Runic slaginar (Möjbro stone, ca. 450).¹ Voicing in the
+last three principal parts but not the first appears also to have been the original rule for
+at least some verbs in class VII, to judge by OE fōn, fěng, fěngon, fangen 'take' (=
+Olcel. fá, fekk, fengu, fenginn) and hōn, hẽng, hẽĕngon, hangen ‘hang' and NWGmc.
+cognates. Yet no single pattern will explain all the verbs of class VII: for example, OE
+has a voiceless fricative in both pres. hwōsað ‘cough' and pret. hwēos, whereas, like
+Gothic, it reflects only a voiced fricative in scādan 'distinguish' (Go. skáidan), in
+contradistinction to OS and OHG, where the reflexes of voiceless fricatives are com-
+monest (OS skēdan, OHG skeidan). Similarly, OHG shows a mixture of forms in faldan
+beside faltan 'fold'.
+Patterns in class V are not much more supportive of the proposed distribution of
+alternants under Verner's law. In Old English, for example, the preterite plural consis-
+tently reflects a voiced fricative where Prokosch predicts a voiceless (cwadon 'said',"		
+alignment33-slay-fulk-past-h	Fulk2018	262	279	1	2239	2243	slōh	a822e95d37f5e136a04d1f347892fe1d70f2ecb407982af5fa3356d66e56df62	"262
+A Comparative Grammar of the Early Germanic Languages
+are the result of analogical change: so, e.g., Adamczyk 2004, and most handbooks of
+the early Gmc. languages. However, Prokosch (1939: §63) shows effectively that such a
+pattern, though impressively regular in the first three classes, is almost never what is to
+be found in classes V-VII (class IV being irrelevant, since the stem ends only in a son-
+orant consonant or, exceptionally, a stop). Prokosch's idea is that voicing of a stem-final
+fricative should not be expected in any form containing a full- or lengthened-grade
+vowel, since this must have borne the accent, and he finds that the attested alternations
+in classes V-VII support this assumption, with voicing in class V only in the passive
+participle, in class VI only in the infinitive and the passive participle, and in class VII on
+an irregular basis, since the class represents a mixture of accentual types. On the basis
+of a survey of Germanic forms he concludes that this is indeed the general pattern. The
+evidence, however, is difficult to reconcile with this conclusion.
+He points to Go. standan, stop, stōþum, *sta(n)dans 'stand' in support of the
+posited pattern in class VI. It is true that þ in the preterite is unlikely to be due to
+devoicing of ð (§6.12), in view of forms like 3 pl. stōþun, 1 pl. afstōþum, 2 pl.
+gastōpub, 3 sg. sj. afstōpi. But there is no reason to assume on the basis of this model
+that the voicing in the infinitive is to be expected in the present stem of other verbs of
+this class, since PIE verbs with nasal infix bore suffixal accent in the dual and plural.
+The stem stand- plainly derives from a form with suffixal accent (PIE root *sth₂-; cf. full
+grade in Lat. stāre), whereas some verbs of class VI appear to derive from roots with
+full-grade a or he, as noted above (§12.15). Moreoever, in Old English there is to be
+found a consistent pattern almost precisely the opposite of the Gothic one, in *scieppan
+(LWS sceppan), sc(e)ōd, sc(e)ōdon, sceaðen ‘injure', and in contracted verbs (those
+with original root-final x, §12.1), where g, which is regular in the preterite plural (e.g.
+slōgon), is also predominant in the preterite singular slōg. Beside slōg there does occur
+slōh (which may be due to final devoicing, §6.17), but the voiced variant is the usual
+one in early texts (Hogg & Fulk 2011: §§6.65–6). Despite Prokosch to the contrary, g is
+also the rule in both the preterite singular and the plural in OHG, with few exceptions:
+see Braune 2004a: §346 Anm. 2, in agreement with Prokosch that g in the singular must
+have been extended analogically from the plural. Prokosch reasons that this extension is
+motivated by the need to distinguish the preterite from the present, but since the ablaut
+difference between the preterite stem and the present was plainly sufficient to differen-
+tiate the two in classes I-III, it is difficult to see why such a change should have taken
+place in this class but not those. There is the added difficulty that whereas Prokosch's
+analysis predicts a voiceless fricative in the passive participle in class VI, instead a
+voiced one is consistently to be found in both North and West Germanic, and this must
+be quite an old situation: cf. Runic slaginar (Möjbro stone, ca. 450).¹ Voicing in the
+last three principal parts but not the first appears also to have been the original rule for
+at least some verbs in class VII, to judge by OE fōn, fěng, fěngon, fangen 'take' (=
+Olcel. fá, fekk, fengu, fenginn) and hōn, hẽng, hẽĕngon, hangen ‘hang' and NWGmc.
+cognates. Yet no single pattern will explain all the verbs of class VII: for example, OE
+has a voiceless fricative in both pres. hwōsað ‘cough' and pret. hwēos, whereas, like
+Gothic, it reflects only a voiced fricative in scādan 'distinguish' (Go. skáidan), in
+contradistinction to OS and OHG, where the reflexes of voiceless fricatives are com-
+monest (OS skēdan, OHG skeidan). Similarly, OHG shows a mixture of forms in faldan
+beside faltan 'fold'.
+Patterns in class V are not much more supportive of the proposed distribution of
+alternants under Verner's law. In Old English, for example, the preterite plural consis-
+tently reflects a voiced fricative where Prokosch predicts a voiceless (cwadon 'said',"		
+alignment33-slay-fulk-runic-ptc	Fulk2018	262	279	1	3250	3258	slaginar	a822e95d37f5e136a04d1f347892fe1d70f2ecb407982af5fa3356d66e56df62	"262
+A Comparative Grammar of the Early Germanic Languages
+are the result of analogical change: so, e.g., Adamczyk 2004, and most handbooks of
+the early Gmc. languages. However, Prokosch (1939: §63) shows effectively that such a
+pattern, though impressively regular in the first three classes, is almost never what is to
+be found in classes V-VII (class IV being irrelevant, since the stem ends only in a son-
+orant consonant or, exceptionally, a stop). Prokosch's idea is that voicing of a stem-final
+fricative should not be expected in any form containing a full- or lengthened-grade
+vowel, since this must have borne the accent, and he finds that the attested alternations
+in classes V-VII support this assumption, with voicing in class V only in the passive
+participle, in class VI only in the infinitive and the passive participle, and in class VII on
+an irregular basis, since the class represents a mixture of accentual types. On the basis
+of a survey of Germanic forms he concludes that this is indeed the general pattern. The
+evidence, however, is difficult to reconcile with this conclusion.
+He points to Go. standan, stop, stōþum, *sta(n)dans 'stand' in support of the
+posited pattern in class VI. It is true that þ in the preterite is unlikely to be due to
+devoicing of ð (§6.12), in view of forms like 3 pl. stōþun, 1 pl. afstōþum, 2 pl.
+gastōpub, 3 sg. sj. afstōpi. But there is no reason to assume on the basis of this model
+that the voicing in the infinitive is to be expected in the present stem of other verbs of
+this class, since PIE verbs with nasal infix bore suffixal accent in the dual and plural.
+The stem stand- plainly derives from a form with suffixal accent (PIE root *sth₂-; cf. full
+grade in Lat. stāre), whereas some verbs of class VI appear to derive from roots with
+full-grade a or he, as noted above (§12.15). Moreoever, in Old English there is to be
+found a consistent pattern almost precisely the opposite of the Gothic one, in *scieppan
+(LWS sceppan), sc(e)ōd, sc(e)ōdon, sceaðen ‘injure', and in contracted verbs (those
+with original root-final x, §12.1), where g, which is regular in the preterite plural (e.g.
+slōgon), is also predominant in the preterite singular slōg. Beside slōg there does occur
+slōh (which may be due to final devoicing, §6.17), but the voiced variant is the usual
+one in early texts (Hogg & Fulk 2011: §§6.65–6). Despite Prokosch to the contrary, g is
+also the rule in both the preterite singular and the plural in OHG, with few exceptions:
+see Braune 2004a: §346 Anm. 2, in agreement with Prokosch that g in the singular must
+have been extended analogically from the plural. Prokosch reasons that this extension is
+motivated by the need to distinguish the preterite from the present, but since the ablaut
+difference between the preterite stem and the present was plainly sufficient to differen-
+tiate the two in classes I-III, it is difficult to see why such a change should have taken
+place in this class but not those. There is the added difficulty that whereas Prokosch's
+analysis predicts a voiceless fricative in the passive participle in class VI, instead a
+voiced one is consistently to be found in both North and West Germanic, and this must
+be quite an old situation: cf. Runic slaginar (Möjbro stone, ca. 450).¹ Voicing in the
+last three principal parts but not the first appears also to have been the original rule for
+at least some verbs in class VII, to judge by OE fōn, fěng, fěngon, fangen 'take' (=
+Olcel. fá, fekk, fengu, fenginn) and hōn, hẽng, hẽĕngon, hangen ‘hang' and NWGmc.
+cognates. Yet no single pattern will explain all the verbs of class VII: for example, OE
+has a voiceless fricative in both pres. hwōsað ‘cough' and pret. hwēos, whereas, like
+Gothic, it reflects only a voiced fricative in scādan 'distinguish' (Go. skáidan), in
+contradistinction to OS and OHG, where the reflexes of voiceless fricatives are com-
+monest (OS skēdan, OHG skeidan). Similarly, OHG shows a mixture of forms in faldan
+beside faltan 'fold'.
+Patterns in class V are not much more supportive of the proposed distribution of
+alternants under Verner's law. In Old English, for example, the preterite plural consis-
+tently reflects a voiced fricative where Prokosch predicts a voiceless (cwadon 'said',"		
+alignment33-stroke-fulk-base	Fulk2018	129	146	1	3169	3178	*slax-iþō	daa977c6bbb14d3990936e973d718f612737efbe38a4aa5f9bee3c6b76759049	"§6.15 West Germanic consonant gemination 129
+9. Apparently, gemination could also apply to UG consonants after a nasal consonant, leading to doublets
+like MHG swinken ~ swingen 'swing' and High Alemannic länten ~ länden ‘land': see Scheungraber 2013.
+10. A detailed argument along these lines, to the effect that OE orthographic geminates are primarily an
+indication of syllabification rather than consonant length, is offered in Fulk 1998b, including a discussion of
+vowel shortening before geminates.
+6.16
+Other consonant changes in the West Germanic protolanguage
+PGmc. developed to WGmc. d. Examples: OE fæder, OS fadar, OHG fater: Olcel.
+faðir ‘father'; OE bēodan, OS biodan, OHG biotan : Olcel. bjóða ‘bid, ask’; OE OS
+bīdan, OHG bītan: Olcel. bíða ‘wait'.
+It was once a common view that both s and z when final were lost in WGmc. (or
+that finals developed to z in WGmc. and was then lost), and even now this analysis has
+not been entirely abandoned.¹ Under this hypothessis, apparent exceptions to the loss of
+*-s can be explained in various fashion: e.g., OE nom. pl. dagas ‘days' (= Go. dagōs,
+Olcel. dagar) is often thought to reflect PGmc. *dazōsiz, or similar,² and so it may be
+supposed that the WGmc. loss of final *-s antedated the loss of *-iz in this form. Other
+exceptions are not so easily explained.3 The prevailing view, however, has always been
+that in WGmc. * -s was preserved and *-z was lost.4 An exception to the rule is that *-z
+is retained and develops to -r in light monosyllables in OHG and OLF (in the latter of
+which, e.g., wi coöccurs with wir ‘we').5 Given the coöccurrence of forms in the same
+inflectional classes with root and suffix accent in PIE (cf., e.g., Gk. iллoç ‘horse' beside
+лotaµóç ‘river'), there must have been extensive variance between final *-s and *.
+-z in
+PGmc. in words otherwise inflected identically. It appears that *-z was more commonly
+the variant that was generalized, with notable exceptions, though the evidence of Gothic
+is ambiguous. Leveling of one or the other variant in an inflectional class, however,
+must not have been completed in PGmc., or even in the WGmc. protolanguage, to judge
+by the divergent developments seen in, e.g., OHG nom. pl. tagā (= OIcel. dagar <
+*dazōz) and OE dagas, OS dagos, -as <*dazōs; likewise in OE 2 sg. sj. fare (= Olcel.
+farir <*faraiz) and OS fares, OHG farēs <*farais.
+In all the WGmc. languages, as in North Gmc., there was lenition of medial
+fricatives wherever it was not prevented by an adjacent voiceless consonant.6 Lenition
+amounts to voicing of f, þ, s, but x is lenited to h (if, in fact, the change of x to h is part
+of the same sound change, which seems most probable). The change does not apply to
+geminates, e.g. OE sippan 'after(ward)' < *sip-þon and lassa 'less' < PGmc. *lais-iz-
+o"", with voiceless geminates. This change must not be dated to the NWGmc. period, and
+it must postdate the WGmc. change of PGmc. ð to d, since þ lenited to o does not
+become d. It is best regarded as a change that took place in each of the WGmc.
+languages, since, for example, x appears not to have been lenited in forms like OE slieht
+‘stroke' < *sleaxiþu < *slæxiþu < *slax-iþō, in which syncope apparently follows front
+umlaut, which in turn must follow the specifically OE change of breaking of æ to ea
+(but see the discussion of problems related to verbs in §§12.38, 12.43). Moreover, the
+usual assumption is that x had not yet been lenited when breaking occurred (§4.13), yet
+the results of breaking in OE and OFris. are not identical.
+Although w was lost before u in PGmc. (§6.11), the sequence *-wu- could arise
+again, and in such instances w was again lost, though it could be restored analogically to
+reduce paradigm allomorphy. Examples are OE fea ‘few' < *fau < *fawu < *fawō,"		
+alignment33-stroke-fulk-oe	Fulk2018	129	146	1	3128	3134	slieht	daa977c6bbb14d3990936e973d718f612737efbe38a4aa5f9bee3c6b76759049	"§6.15 West Germanic consonant gemination 129
+9. Apparently, gemination could also apply to UG consonants after a nasal consonant, leading to doublets
+like MHG swinken ~ swingen 'swing' and High Alemannic länten ~ länden ‘land': see Scheungraber 2013.
+10. A detailed argument along these lines, to the effect that OE orthographic geminates are primarily an
+indication of syllabification rather than consonant length, is offered in Fulk 1998b, including a discussion of
+vowel shortening before geminates.
+6.16
+Other consonant changes in the West Germanic protolanguage
+PGmc. developed to WGmc. d. Examples: OE fæder, OS fadar, OHG fater: Olcel.
+faðir ‘father'; OE bēodan, OS biodan, OHG biotan : Olcel. bjóða ‘bid, ask’; OE OS
+bīdan, OHG bītan: Olcel. bíða ‘wait'.
+It was once a common view that both s and z when final were lost in WGmc. (or
+that finals developed to z in WGmc. and was then lost), and even now this analysis has
+not been entirely abandoned.¹ Under this hypothessis, apparent exceptions to the loss of
+*-s can be explained in various fashion: e.g., OE nom. pl. dagas ‘days' (= Go. dagōs,
+Olcel. dagar) is often thought to reflect PGmc. *dazōsiz, or similar,² and so it may be
+supposed that the WGmc. loss of final *-s antedated the loss of *-iz in this form. Other
+exceptions are not so easily explained.3 The prevailing view, however, has always been
+that in WGmc. * -s was preserved and *-z was lost.4 An exception to the rule is that *-z
+is retained and develops to -r in light monosyllables in OHG and OLF (in the latter of
+which, e.g., wi coöccurs with wir ‘we').5 Given the coöccurrence of forms in the same
+inflectional classes with root and suffix accent in PIE (cf., e.g., Gk. iллoç ‘horse' beside
+лotaµóç ‘river'), there must have been extensive variance between final *-s and *.
+-z in
+PGmc. in words otherwise inflected identically. It appears that *-z was more commonly
+the variant that was generalized, with notable exceptions, though the evidence of Gothic
+is ambiguous. Leveling of one or the other variant in an inflectional class, however,
+must not have been completed in PGmc., or even in the WGmc. protolanguage, to judge
+by the divergent developments seen in, e.g., OHG nom. pl. tagā (= OIcel. dagar <
+*dazōz) and OE dagas, OS dagos, -as <*dazōs; likewise in OE 2 sg. sj. fare (= Olcel.
+farir <*faraiz) and OS fares, OHG farēs <*farais.
+In all the WGmc. languages, as in North Gmc., there was lenition of medial
+fricatives wherever it was not prevented by an adjacent voiceless consonant.6 Lenition
+amounts to voicing of f, þ, s, but x is lenited to h (if, in fact, the change of x to h is part
+of the same sound change, which seems most probable). The change does not apply to
+geminates, e.g. OE sippan 'after(ward)' < *sip-þon and lassa 'less' < PGmc. *lais-iz-
+o"", with voiceless geminates. This change must not be dated to the NWGmc. period, and
+it must postdate the WGmc. change of PGmc. ð to d, since þ lenited to o does not
+become d. It is best regarded as a change that took place in each of the WGmc.
+languages, since, for example, x appears not to have been lenited in forms like OE slieht
+‘stroke' < *sleaxiþu < *slæxiþu < *slax-iþō, in which syncope apparently follows front
+umlaut, which in turn must follow the specifically OE change of breaking of æ to ea
+(but see the discussion of problems related to verbs in §§12.38, 12.43). Moreover, the
+usual assumption is that x had not yet been lenited when breaking occurred (§4.13), yet
+the results of breaking in OE and OFris. are not identical.
+Although w was lost before u in PGmc. (§6.11), the sequence *-wu- could arise
+again, and in such instances w was again lost, though it could be restored analogically to
+reduce paradigm allomorphy. Examples are OE fea ‘few' < *fau < *fawu < *fawō,"		
+alignment33-sleep-ringe-red-sg	Ringe2017	278	289	2	2062	2069	*sezlēp	23840d287b87f88b52c4abd21b54df8212893f5fbf6b399b3811a35c698213f6	"and it is reasonable to suppose that the (morphologized) Verner’s Law rule might
+have been more resistant to loss in the case of the sibilants for that reason. In what
+follows I will assume that only the alternation *s ~ *z survived in reduplication
+in PGmc.
+   Of the nine strong verbs with root-internal *ē reconstructable for PGmc, six can be
+shown to have replaced that vowel with *ō in the past indicative singular, because
+such forms are actually attested in Gothic (the only daughter that regularly preserves
+reduplication); an occasional Old Swedish past lōt ‘(s)he allowed’ conﬁrms that.
+On the other hand, the default past stem probably exhibited a vowelless root syllable,
+as in a handful of Anglian OE stems (see .. (ii) with references). The verbs
+in question are reconstructable as follows; I give only the Gothic and Anglian
+OE cognates for the ﬁrst two verbs, the Gothic and ON cognates for the third,
+and the Gothic cognates for the rest, since those languages alone preserve the
+reduplication:
+  *lētaną, *lelōt, *leltun, *lētanaz ‘let go, allow’ (cf. Goth. letan, laílot, laílotun, letans;
+     Mercian OE *forlētan, -leort, -leortun, -lēten);
+  *rēdaną, *rerōd, *rerdun, *rēdanaz ‘advise’ (cf. Goth. garedan, -raíroþ, *-raírodun,
+     -redans; Mercian OE ond-rēdan, -reord, -reordun);
+  *sēaną, *sezō, *sezun, *sēanaz ‘sow’ (cf. Goth. saian, saíso, *saísoun, saíans; ON sá,
+     seri, seru, sáinn);
+  *wēaną, *wewō, *wewun ‘blow’ (of wind; cf. Goth. waian, *waíwo, waíwoun);
+  *tēkaną, *tetōk, *tetkun? (*tetōkun?), *tēkanaz ‘touch’ (cf. Goth. tekan, taítok,
+     taítokun);
+  *grētaną, *gegrōt, ??? (*gegrōtun?) ‘weep’ (cf. Goth. gretan, gaígrot, gaígrotun).
+In addition, *hwētaną ‘push (continuously), drive out’, though it does not survive in
+Gothic, probably belonged to this group, since a derived verb with root-internal *ō is
+attested (Goth. ƕotjan, ON hœta ‘threaten’, formally parallel to ON grœta ‘cause to
+weep’). On the other hand, at least one verb of this shape did not ablaut, to judge
+from its Gothic paradigm:
+  *slēpaną, *sezlēp, *sezlēpun ‘sleep’ (cf. Goth. slepan, saíslep ~ gasaízlep,
+     gasaíslepun).
+The past of the remaining reconstructable verb, *blēsaną ‘blow [with the breath]’, is
+not reconstructable with certainty, because it is not attested in Gothic and (like all
+reduplicating pasts) has been drastically remodeled in NWGmc (see vol. ii,
+pp. –). It is true that there are no derivatives of this verb with internal *ō;
+but that is likewise true not only of *slēpaną, which does not ablaut, but also of
+*lētaną, *rēdaną, and *sēaną, which do. (*tēkaną and *wēaną have no reconstruct-
+able PGmc derivatives; though *windaz ‘wind’ is of course etymologically related to
+the latter, it must already have been a fossilized noun by the PGmc period.) About"		
+alignment33-sleep-ringe-red-pl	Ringe2017	278	289	2	2071	2080	*sezlēpun	23840d287b87f88b52c4abd21b54df8212893f5fbf6b399b3811a35c698213f6	"and it is reasonable to suppose that the (morphologized) Verner’s Law rule might
+have been more resistant to loss in the case of the sibilants for that reason. In what
+follows I will assume that only the alternation *s ~ *z survived in reduplication
+in PGmc.
+   Of the nine strong verbs with root-internal *ē reconstructable for PGmc, six can be
+shown to have replaced that vowel with *ō in the past indicative singular, because
+such forms are actually attested in Gothic (the only daughter that regularly preserves
+reduplication); an occasional Old Swedish past lōt ‘(s)he allowed’ conﬁrms that.
+On the other hand, the default past stem probably exhibited a vowelless root syllable,
+as in a handful of Anglian OE stems (see .. (ii) with references). The verbs
+in question are reconstructable as follows; I give only the Gothic and Anglian
+OE cognates for the ﬁrst two verbs, the Gothic and ON cognates for the third,
+and the Gothic cognates for the rest, since those languages alone preserve the
+reduplication:
+  *lētaną, *lelōt, *leltun, *lētanaz ‘let go, allow’ (cf. Goth. letan, laílot, laílotun, letans;
+     Mercian OE *forlētan, -leort, -leortun, -lēten);
+  *rēdaną, *rerōd, *rerdun, *rēdanaz ‘advise’ (cf. Goth. garedan, -raíroþ, *-raírodun,
+     -redans; Mercian OE ond-rēdan, -reord, -reordun);
+  *sēaną, *sezō, *sezun, *sēanaz ‘sow’ (cf. Goth. saian, saíso, *saísoun, saíans; ON sá,
+     seri, seru, sáinn);
+  *wēaną, *wewō, *wewun ‘blow’ (of wind; cf. Goth. waian, *waíwo, waíwoun);
+  *tēkaną, *tetōk, *tetkun? (*tetōkun?), *tēkanaz ‘touch’ (cf. Goth. tekan, taítok,
+     taítokun);
+  *grētaną, *gegrōt, ??? (*gegrōtun?) ‘weep’ (cf. Goth. gretan, gaígrot, gaígrotun).
+In addition, *hwētaną ‘push (continuously), drive out’, though it does not survive in
+Gothic, probably belonged to this group, since a derived verb with root-internal *ō is
+attested (Goth. ƕotjan, ON hœta ‘threaten’, formally parallel to ON grœta ‘cause to
+weep’). On the other hand, at least one verb of this shape did not ablaut, to judge
+from its Gothic paradigm:
+  *slēpaną, *sezlēp, *sezlēpun ‘sleep’ (cf. Goth. slepan, saíslep ~ gasaízlep,
+     gasaíslepun).
+The past of the remaining reconstructable verb, *blēsaną ‘blow [with the breath]’, is
+not reconstructable with certainty, because it is not attested in Gothic and (like all
+reduplicating pasts) has been drastically remodeled in NWGmc (see vol. ii,
+pp. –). It is true that there are no derivatives of this verb with internal *ō;
+but that is likewise true not only of *slēpaną, which does not ablaut, but also of
+*lētaną, *rēdaną, and *sēaną, which do. (*tēkaną and *wēaną have no reconstruct-
+able PGmc derivatives; though *windaz ‘wind’ is of course etymologically related to
+the latter, it must already have been a fossilized noun by the PGmc period.) About"		
+alignment33-slime-kroonen-root	Kroonen2013	455	495	1	191	202	*sleh₁i-mo-	e2318b23c278b833703edd5efb358bd74c01dcda05fe109dbf8f60606f7c1869	"*slīma-
+455
+-
+*slīma- n. 'slime' - ON slím n. 'id.', Far. slím n. 'smoke, haze; slime; mucus',
+OE slīm m./n. 'slime, mud', E slime, Du. slijm n. 'slime', MHG slīm m. 'id.', G
+Schleim m. 'id.'*sleh₁i-mo- (EUR) - OCS sliny f.pl., Ru. dial. slína, sliná f.,
+SCr. slina f. 'saliva'; Latv. sliēnas m.pl. 'id.' *sleh₁i-no/eh₂-; Gr. Aɛíµa m. 'slug',
+Lat. līmāx m. 'snail, slug', Ru. dial. slimák m. 'id.' < *sleh₁i-m-eh₂ko-.
+A European root. See also *slīwa/ōn-.
+*slindan- s.v. 'to devour' - Go. fra-slindan s.v. 'id.', OS far-slindan s.v. 'id.',
+Du. ver-slinden s.v. 'id.', OHG slintan, slindan s.v. 'id.', MHG slinden s.v. 'to
+devour', G ver-schlingen s.v. 'id.' (with dialectal -ng- < -nd-) (GM).
+Related to OS slund, OHG slunt, G Schlund m. 'gullet' < *slunda-. No ex-
+tra-Gm. etymology. The connection with Lith. listi (lendù) 'to creep, sneak
+(into)' through a hypothetical meaning 'to make slide down the throat' is
+uncompelling. See also *landjan-.
+*slingan- ~ *slinkan- s.v. 'to slink' - OSw. slinka s.v. 'to sneak, crawl, slip',
+Elfd. slinka s.v. 'id.', OE slingan, slincan s.v. 'to creep', E to slink, MDu. slinken
+w.v. 'to diminish; to slump, collapse'; slingen w.v. 'to creep, crawl', Du.
+slinken s.v. 'to decrease', OHG slingan s.v. 'to swing, wind', G schlingen s.v. 'to
+loop' *slénk-e- (NEUR) - Lith. sliñkti (slenkù) 'to creep, sneak' <*slé-n-k-e-.
+The two meanings 'to diminish' and 'to crawl, slink' can be reconciled by
+assuming an original sense 'to be low, lower (oneself)'. As the Pre-Gm. root
+was *slenk-, both the variants *slinkan- and *slingan- point to interference
+from the iterative 3sg. *slunkōpi, 3pl. *slungunanþi (see *slunkōn-). There is
+no evidence for a root variant *sleng- (pace Pokorny IEW: 961-2). See also
+*slangan-.
+*sliwa/ōn- m./f. 'tench' - OE slīw, slēow m. 'tench/mullet', MDu. slie f. 'id.',
+OHG slio m. 'id.', G Schleie f. 'id.'⇒ *sleh₁i-uo- (EUR).
+An ichthyonym derived from Icel. slý n. 'slimy plants, seaweed', Far. slýggj
+n. 'slime, mucous membrane; seaweed', ODu. slī top. 'mud' < *sliwa-. Proba-
+bly related to *slīma- 'slime' (q.v.).
+*slunkōn-w.v. 'to slink(?)'
+-
+Nw. slunka w.v. 'to stumble', G schlunken w.v.
+'to slouch' *slnk-néh₂- (NEUR).
+The iterative pertaining to *slingan- ~ *slinkan- (q.v.).
+-
+*slutila- m. 'key' ·
+OHG sluzzil m. 'id.', G Schlüssel m. 'id.' (DRV).
+OFri. sletel m. 'id.', OS slutil m. 'id.', Du. sleutel c. 'id.',
+~
+*slūtan-
+An instrumental noun derived from the strong verb *sleutan-
+(q.v.)."		

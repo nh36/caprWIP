@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5411 evidence
-records,1391 actual consultations,5637 positions,457 comparisons and682
+393 applicability screens per source. The database contains5522 evidence
+records,1391 actual consultations,5759 positions,462 comparisons and750
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:249 core rows are bounded and144 unreviewed.
+explanation remain ongoing:265 core rows are bounded and128 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,234 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-third alignment: ancestry warrants, actual paradigms and quotation errors
+
+Rows2190-2197 are sing, singe, sister, sit, six, slay, sleep and slime.
+All131 inherited analytical identities are individually reconciled, including
+shared methods and repeated forms whose cells differ. Twenty-five native
+literal occurrences and33 scoped arguments add58 records. Exact129 SOURCE
+fields comprise120 cells, three arguments, two kinds, one diplomatic form,
+one comparison form, one locator and one explicit date. Eleven shared
+position decisions leave their global SOURCE cells untouched; outside
+analytical links are preserved. This is research alignment, not a migration
+of selected inputs or an assertion that eight full histories are settled.
+
+### Sing and singe: shared phonetics do not establish shared ancestry
+
+Sing presents a useful segment-history control. Ringe quotes PGmc
+*singwaną and the related noun *sangwaz when explaining the survival of
+labialization after a nasal. Its loss in OE is a later development, not
+evidence that the reconstructed PGmc form lacked w. Kroonen's *singwan-
+belongs to a Germanic-Greek isogloss; Orel's *senʒwanan is a strong
+sing/recite verb, whereas *sanʒwaz is a song noun. Their grade and endings
+remain different units. Orel's religious-lexicon bibliography is not a
+newly checked original Benveniste argument
+[@Ringe2017, p.128; @Kroonen2013, p.437; @Orel2003, pp.318,324].
+
+Fulk's actual body has an explicitly PGmc sing quotation in the back-mutation
+discussion. It is retained beside, rather than replaced by, the starless
+index quotation. Ringe-Taylor's PGmc and PWGmc infinitives are citation
+representations of the same etymon, not finite cells arbitrarily inferred
+from the ending; the OE endpoint is a later witness. Native text corruption
+in the reconstructed ending is not silently repaired
+[@Fulk2018, pp.68,388; @RingeTaylor2014, p.215].
+
+Singe is not admitted into that etymon by phonetic similarity. Orel endorses
+the Slavic dry/boil comparison, expressly calls the underlying strong verb
+unattested, and offers a sacrificial semantic history only as an alternative
+that might connect singe with sing. Sanskrit invoke/pour and Slavic
+sing/drink supply semantic parallels in that conditional argument. The
+distinction is between endorsed and proposed lexical relationships, not
+two interchangeable quotations of the selected input. Kroonen's inherited
+bounded negative survives; it does not become opposition to Orel, and no
+grammar-negative consultations are invented [@Orel2003, p.318].
+
+### Sister: dental origin, suffix vowel and case are independent questions
+
+Orel derives Germanic str by generalization from oblique sr. Kroonen
+retains two explanations for the ter suffix: brother analogy or epenthetic
+t spreading from the genitive. Ringe does not count sister as a certain
+sr-to-str witness. Analogy to daughter or mother is possible; epenthesis
+in the dative *swésrey > pre-PGmc *swéstrei > PGmc *swistrī could instead
+have prompted transfer into the ter class. Neither alternative establishes
+every cell or the origin of the selected nominative's suffix vowel
+[@Orel2003, p.395; @Kroonen2013, p.500; @Ringe2017, p.167].
+
+The updated Ringe-Taylor account is preserved individually: daughter and
+mother are comparanda, not other sister cells; *-t- and *-ter- are bound
+components; and the two expressly dated dative intermediates remain
+distinct from the undated preceding dative. The held-text *swistri lacks
+the final length of Ringe's separate quotation; diplomatic fidelity does
+not confer a second glyph certification. The shared stream/three argument
+is not overwritten merely because its sister link is now reviewed
+[@RingeTaylor2014, p.515; @Ringe2017, p.167].
+
+The identical early WS spelling sweostor occurs as nominative-accusative
+singular, leveled dative singular, and nominative-accusative plural. These
+are three independent occurrences, not a deduplicated paradigm citation.
+Genitive *-urz, dative *-ri, full- and zero-grade nominative-plural endings,
+and the proposed accusative-plural *-r-unz are components whose history
+cannot be converted into quoted whole sister plurals. The continuation
+allows a northern remodeling of the nominative plural, while the corrigendum
+specifies full grade in WGmc against Gothic/Norse zero grade. The uncertainty
+in the complete plural history remains explicit
+[@RingeTaylor2014, pp.381-383,520].
+
+Runic swestar does not by itself prove a nominative in *-ēr. Fulk prefers
+Stiles's vocative explanation, retaining competing ē/ō accounts; his native
+*-ar presentation must not be flattened into Ringe-Taylor's *-er.
+Fulk's separately quoted PGmc *swestēr and PNorse *swestær show why local
+stage labels matter even when the lexical identity is secure. Early WS
+eo remains unclear, and dialectal forms without the same umlaut cannot
+be reverse-engineered into a unique PGmc vowel
+[@Fulk2018, pp.147,174-175; @RingeTaylor2014, pp.326,520].
+
+### Sit: realized vowel, derivational root and j-present pedigree
+
+Kroonen genuinely prints *set(j)an-, with a Gothic-corresponding *setan-
+and a Nordic/OE *setjan-. Their difference may point to an original
+i-present, whose third singular *sed-éi-ti and third plural *sed-i-énti
+are separate proposed IE cells. Orel's e-bearing *setjanan is not set's
+causative. His reported account of Gothic j loss does not turn the cited
+earlier authors into independently verified positions
+[@Kroonen2013, p.434; @Orel2003, pp.325-326].
+
+Ringe's surface PGmc *sitjaną, derivational *set-, and past participle
+*setanaz belong to distinct units. The past singular *sat and plural
+*sētun add the actual principal parts rather than manufactured ending
+matches. His general high-front raising date is the most probable hypothesis,
+not complete certainty, argued through the chronology of j loss and three.
+That qualification does not erase the explicit local date of his
+*sitjaną quotation [@Ringe2017, pp.151-153,249,256,273].
+
+Fulk's explicit PGmc *sit-j-anaⁿ on43 is retained beside the undated
+*setjanaⁿ on295 and starless i-bearing index on388. The e quotation is
+actually attached to sitja, not causative setja. Strong primary j-presents
+and causative/iterative weak verbs share some surface morphology without
+being identical formations; alternative suffix origins remain part of the
+argument. Ringe-Taylor's geminated phonetic sit and underlying */sitjan/
+are the same etymon represented differently, not unrelated comparanda.
+Inherited raising is centuries older than Mercian second fronting
+[@Fulk2018, pp.43,265-266,294-295,388;
+@RingeTaylor2014, pp.50-51,106,220].
+
+The selected *sétjaną and pgmc input label remain unchanged. This alignment
+identifies the precise representation, cell and inherited-vowel premises
+a future scientific decision must address; it neither silently normalizes
+all dictionary e nor repairs the FST to fit one preferred citation.
+
+### Six: initial ancestry is not h/x notation
+
+Kroonen's oldest *uek-s is supported by Old Prussian ordinal *uk-to-;
+initial s probably came from seven. Orel continues *s(u)eks with a broad
+comparative set. Ringe gives PIE *swéḱs > *séḱs under seven's influence
+before PGmc *sehs. These pedigrees differ in what is admitted and at which
+ancestral level; they are not merely different spellings of the final
+fricative cluster. The focused initial-ancestry comparison is substantive,
+but the comparative weighting that explains the differing oldest
+reconstructions is still unestablished
+[@Kroonen2013, p.431; @Orel2003, p.322; @Ringe2017, p.229].
+
+Fulk's report of Boutkan *sexse depends on universal final-s voicing and
+is not his own unqualified adoption. The added e is not a selected-ending
+correction. Later OE *seohs and early WS siex remain distinct from PGmc
+*sehs; the Kentish monophthongization/raising proposal is qualified, and
+the WS digraph does not establish unique phonetics. Cardinal, ordinal
+and group-of-six noun remain separate formations
+[@Fulk2018, pp.75,226; @RingeTaylor2014, p.337;
+@Orel2003, p.322; @Kroonen2013, p.431].
+
+### Slay: a named premise disagreement and a proved quotation repair
+
+Ringe-Taylor reconstructs a voiceless PGmc classVI past singular beside
+a voiced plural, with later daughter leveling. His lift argument matters:
+if the j-present had a weak-grade root, the expected voiced consonant
+would require OHG heffen's voiceless consonant to have come by analogy
+from a surviving voiceless past singular. That prevents projecting
+uniform voiced pasts into PWGmc. Rare sluoh may be archaic; other
+comparative forms are ambiguous. The argument continues beyond the
+slay paradigm, so it is not reduced to a spelling count
+[@RingeTaylor2014, pp.99-101,343-344].
+
+Fulk explicitly calls this inference inconclusive. His objection is not
+simply that analogy occurs: lift need not have had a weak-grade root,
+because PIE full-grade a is possible, and classVI present a has multiple
+sources. Polygenesis makes one inherited Verner distribution inadvisable.
+This directly named disagreement over the premise explains the focused
+acceptance versus refusal of Ringe's inference. Its cause is source_explicit;
+it does not recover a replacement PGmc paradigm or establish the whole-row
+ancestry. OE slōg, slōgon, possibly devoiced slōh and Runic slaginar remain
+different cells, not a vote for a selected infinitive
+[@Fulk2018, pp.262-263; @RingeTaylor2014, p.100].
+
+A separate image check proves that the inherited Fulk index extraction
+slaxiþ, classified as slay third singular, was wrong. The held printed388
+actually has starless slaziþō. Body129 confirms the related stroke noun
+slieht from *slax-iþō and uses its retained x through breaking/mutation/
+syncope to argue for daughter lenition. Exact old/new diplomatic,
+comparison, locator, cell and argument fields are receipted. This is an
+extraction repair, not an author disagreement, silent normalizing rule
+or new finite witness [@Fulk2018, pp.129,388].
+
+Two other lexical traps are repaired analytically without erasing their
+native strings: OE? is a language label plus footnote marker, and *ze a
+corrupted metalinguistic front-vowel sign, not reconstructed slay words.
+The schema's printed_representation unit keeps the label visibly
+nonlexical. The contraction paradigm individually preserves infinitive,
+present third plural and subjunctive third singular at PGmc/PWGmc/OE
+stages, plus hypothetical Gothic comparanda. Breaking's fronting/retraction
+argument is source chronology under stated premises, not a new canonical
+edge [@RingeTaylor2014, pp.177,189-190,315].
+
+Fulk separately questions lengthening before contraction when h was an
+onset: verse may require an uncontracted disyllable but not a heavy initial
+syllable. This is distinct from the Verner disagreement and from the
+Germanic-Celtic, possibly onomatopoeic, isogloss or Orel's Irish comparisons.
+Selected *sláxaną and slēan are not changed
+[@Fulk2018, pp.74-75,270-271; @Kroonen2013, p.452;
+@Orel2003, p.348].
+
+### Sleep and slime: uncertain formation does not abolish secure units
+
+Kroonen probably backforms strong sleep to *slapp/bōn-. His tempting
+proposal that ē was the analogical long counterpart of iterative a would
+require early PGmc ē pronounced ā; it is conditional, not an adopted
+universal low-vowel account. Related sleep noun and causative are family
+units. Orel's strong infinitive and masculine noun remain distinct, with
+Baltic/Slavic comparison and reported Greek/Latin alternatives preserved
+[@Kroonen2013, pp.453-454; @Orel2003, pp.348-350].
+
+Ringe explicitly reconstructs a PGmc sleep paradigm with long ē and
+reduplicated singular/plural past *sezlēp/*sezlēpun, without the ablaut
+of other long-ē verbs. Its uncertain complete genealogy does not make
+the local lexical date unknown. Poetic *swefaną is a different sleep
+lexeme. Fulk's classVII e-insertion/relic-reduplication argument concerns
+past formation, not a newly quoted selected sleep infinitive; his actual
+discussion_only review is retained
+[@Ringe2017, pp.274,277-279; @Fulk2018, pp.267-270,289-291].
+
+Ringe-Taylor's PGmc, PNWGmc, PWGmc and OE stages remain separate from
+sleepy adjective, sleep noun and later strong/weak pasts. Native slépan
+does not certify an exact æ glyph, and releveling belongs to the source
+account rather than a newly adopted grammatical sound law
+[@RingeTaylor2014, pp.10-11,149,199,346,348].
+
+Slime remains a legitimate dictionary-only alignment. Kroonen's European
+mo-formation, saliva n-formations, snail/slug derivatives and tench
+cross-reference do not quote the same Germanic neuter ending. Orel's
+neuter citation and explicit OE masculine-or-neuter uncertainty are
+preserved. Neither a gender choice nor Unicode normalization is made:
+selected PROTO *slī́mą and PROTOFORM *slḯmą remain byte-distinct
+[@Kroonen2013, p.455; @Orel2003, p.351].
+
+The tranche has194 positions linking189 distinct records and39 new
+rationales. All786 dictionary consultations retain their identities and
+statuses, now with1940 evidence records. Core coverage is265 bounded and
+128 unreviewed. The source-explicit slay premise explanation is scoped;
+six's focused cause and all eight whole-row causes remain unestablished.
+No corpus/input/stage/context/FST/baseline adoption, new publication,
+tranche33 release or tranche34 start is included.
 
 ## Thirty-second alignment: nasal genealogy, selected cells and cognate admission
 
