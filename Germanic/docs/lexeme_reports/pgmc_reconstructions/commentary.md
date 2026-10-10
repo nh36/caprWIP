@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5361 evidence
-records,1391 actual consultations,5580 positions,454 comparisons and651
+393 applicability screens per source. The database contains5411 evidence
+records,1391 actual consultations,5637 positions,457 comparisons and682
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:241 core rows are bounded and152 unreviewed.
+explanation remain ongoing:249 core rows are bounded and144 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,176 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-first alignment: seven's dental chronology and distinct sk-families
+
+Seven, shaft, shame, shear, sheath, sheep, shield and shilling,
+rows2174-2181, continue from released625eae95. All78 inherited identities
+are individually reconciled against complete relevant arguments,
+continuations, footnotes and internal cross-references. Twenty-five native
+occurrences and25 scoped arguments add50 records; the existing
+image-checked seven/Cercignani quotation receives its missing analytical
+link without a new consultation. Six focused positions reuse evidence.
+The135 positions link129 distinct records;31 new rationales are position
+support, not established causes of inter-author divergence. Eighty-four
+exact SOURCE receipts preserve78 cell refinements, three locally explicit
+dates, one fragment-kind repair, one argument repair and one page-range
+extension. No selected input, stage/context sidecar, law or baseline changes.
+
+### Seven: an actual chronology difference, not one undifferentiated analogy
+
+Ringe retains seven's medial dental through Grimm's law. His chain
+passes through *septún and *seftún, adds terminal t after ten and nine,
+then loses the medial dental dissimilatorily. The resulting *sefúnt
+undergoes Verner voicing; subsequent terminal-t loss leaves the retained
+final n. The account is embedded in an argument about final syllabic
+nasals and the earlier loss of ordinary final n, not merely a cardinal
+headword spelling. His independently repeated numeral table retains
+PGmc *sebun and distinguishes uninﬂected cardinals, later i-inflection,
+ordinal *sebundō- and the compound structure of seventy
+[@Ringe2017, pp.104-106,122-124,229-230,319-320].
+
+Fulk instead explicitly places medial dental loss before Grimm's law.
+He favors haplology in the ordinal, while reporting a phonological
+alternative. For final n he allows ordinal influence, the ending of ten,
+or inflection, but his footnote judges the relevant inflection likelier
+post-PGmc. That qualification cannot be dropped just because the main
+body prints PGmc *sibun. His footnote also calls Ringe's approach
+similar to Hirt's; this reported affinity does not erase the different
+placement of the medial dental in the actual chains
+[@Fulk2018, pp.226-227; @Ringe2017, pp.105,123,229].
+
+Kroonen favors dental dissimilation in the ordinal over a reported
+Para-Semitic borrowing. The expected zero-grade *sptm-tHó- makes that
+environment especially plausible, and ordinal influence also explains
+final n. Native prose *sebunþ/dan- and native header *sebunb/dan- remain
+separate occurrences. Orel's cardinal continues *sepm from IE *septm;
+the Hamp ordinal explanation in its bibliography remains a report.
+The independently printed ordinal alternatives and period-of-seven
+noun are different cells, not additional cardinal quotations
+[@Kroonen2013, p.429; @Orel2003, p.321].
+
+The focused dental-chronology case therefore records a substantive
+difference, without inventing a directly named rebuttal or choosing
+one account by author counts. A complete explanation still requires
+the comparative weighting of cardinal/ordinal and final-n evidence.
+Source-stated analogical mechanisms are reported faithfully; they
+are not adopted as grammatical conditioning of CAPR sound laws
+[@Ringe2017, pp.104-106,229-230; @Fulk2018, pp.226-227].
+
+Raising is a separate question. Fulk's native prose says raising of
+i before u even while narrating sebun beside sibun; the diplomatic
+wording is not silently repaired. His general account makes
+u-conditioned raising secure chiefly in OS/OHG and does not widely
+credit a PGmc date. Cercignani's alternative invokes i-bearing inflected
+seven and milk cells, not a universal u-trigger. Its corrupt native
+dative text is not recertified as a new precise word. Ringe-Taylor's
+later back mutation yields WS/North seofon beside Mercian seofen,
+under dialect-specific interveners. This e-to-eo history is not the
+earlier e-to-i dispute
+[@Fulk2018, pp.57-59,226-227; @Cercignani1979, p.75;
+@RingeTaylor2014, pp.323-325].
+
+### Shaft and shame: shared material or meaning is not lexical identity
+
+Orel gives neuter and masculine shaft alternatives, a j-noun and a
+derived shaft-making verb. Its probable shave/scrape connection remains
+qualified. Kroonen's creation verb and scrape iteratives supply
+family-level comparisons, not a recovered shaft noun; *skafti- means
+first fruits. Its shared skaft cluster cannot establish identity.
+Ringe-Taylor explicitly contrasts a PNWGmc neuter shaft with a PWGmc
+masculine one before the later palatal-diphthong history. Neither gender
+shift nor a matching target supplies every selected nominal ending
+[@Orel2003, pp.330-331; @Kroonen2013, pp.438-440;
+@RingeTaylor2014, pp.215-217].
+
+For shame, Orel derives the noun from the short adjective without
+gemination, while that adjective's origin itself remains unknown.
+The bibliography's cover, pudenda and crooked connections are reports.
+Kroonen regards short/maimed/crooked links as phonetically problematic
+and proposes a possible darkness connection with two distinct deeper
+formations. His ordinary weak be-ashamed verb and unexplained Nordic
+geminate remain different units. Ringe-Taylor repeats identical
+*skamu glyphs at different points in its sk-palatalization example;
+only the explicitly labelled PWGmc occurrence gets that date
+[@Orel2003, pp.333-334; @Kroonen2013, pp.439-440;
+@RingeTaylor2014, pp.206-207].
+
+### Shear: principal parts and a metalinguistic fragment
+
+Ringe's PGmc classIV roster has present *skeraną, singular past *skar,
+default past plural *skērun and participle *skuranaz. Lack of a Gothic
+example does not prevent his reconstruction, which also invokes Greek
+comparative evidence. Ringe-Taylor expressly labels its earlier three-cell
+roster PNWGmc; three exact SOURCE date receipts now preserve that local
+claim without redating Ringe's cells. Later OE infinitive, singular,
+plural and participle remain separate
+[@Ringe2017, pp.271-272; @RingeTaylor2014, pp.215-217,346-348].
+
+The inherited *Ih item on the shear page is not a shear ancestor. It
+labels a classIII cluster in the feolan row, whereas shear occupies
+classIV. Its literal is preserved and its whole-word classification
+repaired to a metalinguistic fragment with an exact reversible receipt;
+the analytical relation is comparandum. Fulk's body quote *skerana"
+and the certified starless index skeranaⁿ also remain separate.
+His palatal-diphthongization ordering argument does not newly certify
+the native ending. Kroonen's scissors noun and inferred old neuter
+dual are derivatives, not shear's finite principal parts
+[@RingeTaylor2014, p.347; @Fulk2018, pp.73-75,388;
+@Kroonen2013, pp.443-444].
+
+### Sheath and sheep: bounded membership and later reflexes
+
+Sheath's Orel i/ō nominal alternatives are distinct from the
+divide/separate verb and the denominal sheathing verb.
+Ringe-Taylor starts with a PNWGmc split-billet noun and an extended
+PWGmc sheath formation, then records scép and scéap in late WS
+and verse. The second actual endpoint receives its own occurrence.
+The inherited final-devoicing summary on298 instead discusses life,
+pushed and gave, not a sheath quotation. Its exact argument repair
+preserves general comparative relevance without pretending the page
+contains a sheath chain. The retained Kroonen bounded negative survives;
+ordinary PD and the pending SC105 late conditioner are not reopened
+[@Orel2003, pp.331-332; @RingeTaylor2014, pp.234-236,297-298].
+
+Sheep's probable shave derivation in Kroonen invokes *skaban-, not
+the shear verb *skeran- just because English glosses overlap. The
+sheepskin evidence supports a b variety without replacing every p
+citation. Orel instead favors a probable Wanderwort grouping while
+leaving origin unknown and retaining alternative connections as
+reports. These are substantive warrant differences, not a named
+exclusive refutation. Ringe-Taylor's PWGmc-only reconstructability is
+a cautious method tied to Gothic/Norse attestation gaps, which may
+be accidental; it is not a categorical denial of possible PGmc ancestry
+[@Kroonen2013, pp.438,443; @Orel2003, p.340;
+@RingeTaylor2014, pp.127-128,215-217].
+
+### Shield and shilling: nominal alternatives versus derivational warrants
+
+Shield's u/i/a formations remain separate; Orel explicitly assigns
+the a-stem to OE rather than supplying an automatic PGmc replacement.
+Split/divide verbs are family evidence. Kroonen's probable tu-derivation
+is qualified, and its split-verb cross-reference does not remove that
+qualification. Ringe-Taylor's independent shield chains on216 and287
+retain distinct occurrences, explicit PGmc/PWGmc labels and later
+Mercian versus WS outcomes
+[@Orel2003, pp.337-338; @Kroonen2013, pp.442-443;
+@RingeTaylor2014, pp.215-217,286-288].
+
+Kroonen reports the shield/coin-based *skeld-linga- explanation with
+explicit attribution to Schröder. Orel derives the shilling headword
+from clatter/sound and retains shield, shell, Romance-coin and other
+proposals as reports. The focused case compares their semantic and
+segmental warrants without certifying an inter-author cause. Short
+e in Orel is not silently harmonized with selected i; shilling remains
+dictionary-only rather than gaining fictitious grammar negatives
+[@Kroonen2013, p.442; @Orel2003, p.338].
+
+All eight core causes and all three focused causes remain unestablished.
+The exact remaining premises are recorded independently of lexical
+identity, source verification and stage confidence. The full393-row
+alignment, conditioning census, synthesis and specialist agenda remain
+unfinished.
 
 ## Thirtieth alignment: derivational warrants, hiatus alternatives and actual verb cells
 

@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5361 evidence records,1391 actual consultations and5580
-analytical positions, with454 comparisons and651 rationales. The RT
+There are5411 evidence records,1391 actual consultations and5637
+analytical positions, with457 comparisons and682 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred forty-one core rows now have individually reconciled, bounded alignment:
-1933-2173. The remaining152 are unreviewed. The second tranche builds on
+Two hundred forty-nine core rows now have individually reconciled, bounded alignment:
+1933-2181. The remaining144 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,51 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-first tranche completes seven, shaft, shame, shear, sheath,
+sheep, shield and shilling, rows2174-2181, from released625eae95.
+All78 inherited identities are individually reconciled. Twenty-five native
+occurrences and25 scoped arguments add50 records; one existing certified
+seven/Cercignani quotation receives its missing analytical link without
+a new consultation. Six focused positions reuse evidence and31
+position-support rationales are added. The135 positions link129 records.
+Exact84 SOURCE receipts preserve78 cells, three locally explicit
+dates, one argument, one locator and one fragment-kind repair.
+All786 dictionary reviews survive with1888 evidence records.
+
+Seven's actual medial-dental-loss chronology differs between retained
+dental through Grimm's law and earlier loss; cardinal, ordinal,
+decad resegmentation, final-n retention and inflected i-trigger are
+independent questions. Earlier raising and later back mutation are
+not one event
+[@Ringe2017, pp.104-106,123,229-230,319-320;
+@Fulk2018, pp.57-59,226-227; @Cercignani1979, p.75;
+@Kroonen2013, p.429; @Orel2003, p.321;
+@RingeTaylor2014, pp.323-325].
+
+Shaft is not creation or first fruits; shame's short-adjective and
+darkness proposals retain their qualifications. Shear's PGmc/PNWGmc
+principal parts remain separately dated, and the inherited *Ih item
+is a classIII feolan table fragment, not a shear ancestor
+[@Orel2003, pp.330-334; @Kroonen2013, pp.438-440,443-444;
+@Ringe2017, pp.271-272; @Fulk2018, pp.73-75,388;
+@RingeTaylor2014, pp.206-207,215-217,347].
+
+Sheath's nominal/verb formations and two late-WS endpoints remain
+distinct;298 is general final-devoicing comparative support, not a
+sheath quotation. Sheep's probable shave versus Wanderwort warrants
+do not settle its origin or turn PWGmc-only methodological caution
+into denial of possible PGmc ancestry. Shield's u/i/a alternatives
+and repeated source chains remain independent; shilling's reported
+shield-linga versus preferred clatter derivation stays dictionary-only
+[@Orel2003, pp.331-332,337-338,340; @Kroonen2013, pp.442-443;
+@RingeTaylor2014, pp.127-128,215-217,234-236,286-288,297-298].
+
+All three focused causes and eight core causes remain unestablished.
+No corpus/input/stage/context/FST/baseline adoption is included.
+Canonical closeout and independent preservation precede authorized
+release31; tranche32 is separately authorized for completion without
+release. The full393-row programme remains unfinished.
 
 The thirtieth tranche completes salt, salve, sap, sea, seam, seek, send
 and set, rows2166-2173, from releasedf97dc0ca. All114 inherited

@@ -8,6 +8,140 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-first alignment checkpoint: seven through shilling
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base625eae95baaeeec6750c4f58fce5dbb1637bceb0 on update.
+Rows2174-2181: seven, shaft, shame, shear, sheath, sheep, shield, shilling.
+The user explicitly authorizes completion/release31, followed by complete
+unreleased32. The immutable31 preparation pins5361 forms,78 inherited
+identities and97 research hashes. The46 original scientific hashes remain
+protected; the candidate persisted once and must never run/import again.
+
+### Question
+
+Can every inherited identity be individually reconciled without confusing
+cardinal/ordinal or raising/back-mutation events, shaft/creation homonyms,
+principal parts/table fragments, uncertain etymology/uncertain identity,
+or reported proposals/endorsement? Loss of an inherited identity, fabricated
+source silence, confidence-derived date or unreceipted glyph repair would
+falsify completion.
+
+### Current state
+
+The eight core rows were unreviewed. All selected inputs retain pgmc
+entry labels; this encoding is not independent agreement of the authors.
+No corpus, stage/context, FST, canonical chronology or baseline owner
+is changed. Existing dictionary coverage and the separate RT conventions
+verification gap survive.
+
+### Diagnosis
+
+Executable census/traces: n/a, annotation-only work. No Foma assay,
+scientific rebuild or PDF render is required.
+Seven has a real difference in medial dental chronology, not simply
+two spellings of the same analogy
+[@Ringe2017, pp.104-106,123,229; @Fulk2018, pp.226-227].
+
+Three shear dates were omitted despite the explicit PNWGmc label.
+The *Ih fragment is attached to classIII feolan, not classIV shear.
+Sheath's298 summary does not contain an actual sheath quotation;
+it is final-devoicing comparative evidence. Exact old/new/page-backed
+receipts preserve all three repairs without deleting inherited evidence
+[@RingeTaylor2014, pp.216,297-298,347].
+
+### Literature
+
+Existing survey, commentary, frozen row packets and prior exact receipts
+provide method controls. Complete relevant held bodies, footnotes, tables
+and necessary internal cross-references are read. New native occurrences
+are text_checked, not newly image-certified.
+
+| Row | Held printed scope and principal distinction |
+| --- | --- |
+| Seven2174 | Orel321; Kroonen429; Ringe104-106,122-124,228-230,319-321; Fulk57-61,225-227; Cercignani75; RT323-325: cardinal/ordinal, dental loss, final-n and separate raising/back mutation. |
+| Shaft2175 | Orel330-331; Kroonen438-440; RT215-217: shaft/creation/first fruits, scraping comparisons and different nominal genders. |
+| Shame2176 | Orel333-334; Kroonen439-440; RT206-207: short adjective versus darkness, nominal/verb and identical distinct intermediates. |
+| Shear2177 | Orel338-340; Kroonen443-444; Ringe270-272; Fulk73-75,388; RT215-217,346-348: PGmc/PNWGmc paradigms, scissors and feolan table label. |
+| Sheath2178 | Orel331-332; RT234-236,297-299; retained Kroonen bounded negative: nominal/verb, extended later formation and actual two endpoints. |
+| Sheep2179 | Orel340; Kroonen438,443; RT127-128,215-217: probable shave/Wanderwort warrants and cautious PWGmc reconstructability. |
+| Shield2180 | Orel337-338; Kroonen442-443; RT215-217,286-288: u/i/a formations, qualified split genealogy and repeated independent examples. |
+| Shilling2181 | Orel338; Kroonen442: reported shield-linga versus preferred clatter, native e versus selected i. |
+
+### Historical analysis
+
+Seven's ordinal/terminal-t/dental-loss accounts and inflected raising
+premises remain separately scoped. Fulk's post-PGmc inflection qualification
+does not become a universal u-raising law
+[@Ringe2017, pp.104-106,229-230; @Fulk2018, pp.57-59,226-227;
+@Cercignani1979, p.75].
+
+PNWGmc shear principal parts are locally asserted, not inferred from a
+network identifier, target dialect or confidence. Sheath's extended PWGmc
+noun and sheep's cautious reconstructability do not supply all selected
+PGmc endings. Neither alternate sheath reflexes nor unchanged output
+authorizes an optional lexical law or reopening SC105
+[@RingeTaylor2014, pp.127-128,216,235,347].
+
+No chronology edge is promoted. Historical phenomenon versus executable
+proxy stays unchanged; analogy in authors' accounts is reported, not adopted
+as grammatical conditioning of CAPR laws. Shilling's source attribution
+remains reported where appropriate
+[@Kroonen2013, p.442; @Orel2003, p.338].
+
+### Verdict
+
+Research disposition: individual bounded alignment of all eight rows.
+No canonical SC verdict or Registry-verdict is fabricated.
+All three focused causes and all eight whole-row causes are unestablished;
+each has specific comparative, cell, chronology, stress or formation limits.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, two exact receipt
+tables, README/commentary and this complete nine-heading audit persist.
+Fifty records comprise25 native occurrences and25 scoped processes;
+six focused positions reuse evidence and one existing certified quotation
+gets its missing link. Thirty-one rationales support positions.
+Exact84 fields comprise78 cells, three dates, one argument, one locator
+and one fragment kind. Consultation identities/statuses, targets,
+scopes and applicability owners do not change.
+
+Totals5411 forms,1391 consultations,5637 positions,457 comparisons,
+682 rationales;249 bounded/144 unreviewed. The135 tranche positions link129
+records; all786 dictionary reviews survive with1888 evidence records.
+The combined375-test run passes374 with one cumulative query expectation:
+the source-backed sheep borrowing rationale adds core-2179. Only that
+expected result is corrected; the seven-test rerun covering the query and
+all new tranche31 regressions passes. The final combined run passes all375
+tests. Canonical refresh and the independent
+artifact freshness check report CONTROL PLANE CLEAN without scientific
+rebuild. Bibliography, section locators,58 new-prose printed-page
+references, all nine audit headings and whitespace pass.
+
+Independent post-refresh verification preserves5361 inherited forms
+except84 exact fields,5502 outside positions,446 unaffected comparisons,
+651 inherited rationales, all consultation identities/statuses,
+90 unaffected research hashes and46 original scientific hashes.
+All25 native quotation paragraphs/hashes/whole-token spans resolve.
+Deterministic query evidence is retained in the session's
+pgmc-two-hundred-forty-nine-alignments-query-results.txt.
+Independent alignment refuses144; the separate reading gate still
+refuses the unchanged Ringe-Taylor conventions gap.
+
+### Residue
+
+Seven's comparative weighting and raising date, shame's etymology,
+sheep's cognate-admission premises and shilling's segmental/semantic
+warrants remain unestablished
+[@Ringe2017, pp.104-106; @Fulk2018, pp.57-59,226-227;
+@Kroonen2013, pp.439-440,442-443; @Orel2003, pp.333-334,338,340].
+Full393-row alignment, conditioning census, synthesis/watchlist and
+specialist agenda remain unfinished. Tranche32 completion is authorized
+but has not begun; no32 release or33 start is included.
+
 ## Thirtieth alignment checkpoint: salt through set
 
 ### Identity
