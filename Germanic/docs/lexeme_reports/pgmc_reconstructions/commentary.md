@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-192 Ringe,145 Fulk and257 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains4946 evidence
-records,1389 actual consultations,5129 positions,440 comparisons and414
+192 Ringe,145 Fulk and258 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains5011 evidence
+records,1390 actual consultations,5199 positions,442 comparisons and448
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:185 core rows are bounded and208 unreviewed.
+explanation remain ongoing:193 core rows are bounded and200 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,237 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-fourth alignment: paradigms, identical homonyms and source corrections
+
+Tranche23 is released as5208573f. The next eight rows2118-2125
+are malt, man, boundary march, mast, time/meal, mean, meed and
+might. All97 inherited analytical identities have individual
+relationship, attribution, cell and locally supported date decisions.
+Thirty-seven whole-token occurrences and28 complete scoped arguments
+add65 evidence records; five focused positions reuse evidence and34
+rationales are added. The167 positions link162 distinct records.
+Exact reversible SOURCE receipts cover97 cells, four arguments,
+three asserted stages and five page locators. One actually missed
+Ringe-Taylor/might consultation adds one target and six reversible
+scope/applicability fields. This is bounded alignment research,
+not adoption of any scientific field or law.
+
+### Malt: an ending is not a lexical identity
+
+The selected input has an az ending, but the current malt concept
+does not thereby become an adjective. Kroonen's soft/gone-bad
+adjective and its incidental neuter malt noun are independently
+printed; Orel's neuter noun is substantivized from the adjective,
+whose OE cooked/boiled gloss remains queried. Quoting the adjective
+does not certify the noun's exact selected cell
+[@Kroonen2013, p.351; @Orel2003, p.258].
+
+The melt cross-reference supplies a meaningful semantic argument:
+Kroonen's strong melt and causative crush can bridge crushed to
+weak/soft through medio-passive usage. His strong melt is expressly
+unrelated to smelt; Orel cross-refers to smelt without supplying
+that same rejection. A cross-reference alone is not an opposite,
+exclusive cognate commitment. Orel's brewing denominative and
+melt causative are different entries, and Martynov's Slavic-source
+suggestion remains reported bibliography
+[@Kroonen2013, pp.351-352,363; @Orel2003, pp.258,267].
+The precise selected nominal formation and dated genealogy remain
+open rather than being supplied by matching the az string.
+
+### Man: the genitive is not the whole ancestral paradigm
+
+The actual selected OE genitive *mannes* is quoted by Fulk, but the
+selected prehistoric s-ending is not established by the dictionaries'
+citations. Kroonen's presumed original nominative/plural, their
+PGmc syncope, probable analogical nominative/genitive and expressly
+quasi-PIE precursors are separate cells and epistemic commitments.
+The quasi-PIE genitive is a construction within the account, not
+an independently inherited full PIE word
+[@Fulk2018, pp.166-168; @Kroonen2013, pp.353-354].
+
+There is a real ancestry disagreement, not merely an n-counting
+problem. Kroonen prefers the earth/person stem with loss of its
+initial stop cluster; he rejects the Sanskrit-man connection because
+underlying *men-u-* would give *minn-*. Ringe displays an accepted
+PIE *mánu-s*/*mánw-* paradigm and derives PGmc *mann-* by assimilation.
+These displayed premises are not identical: the counterfactual
+men-u argument cannot simply be declared a conclusive answer to
+Ringe's actual mánu/mánw account. Kroonen refers to the older Ringe
+edition; the held2017 edition is not a newly consulted2006 passage
+[@Kroonen2013, p.354; @Ringe2017, pp.164-165].
+
+The focused ancestry/gemination case therefore records substantive
+commitments but leaves the exact ablaut and cognate-admission
+warrant unresolved. Orel's own Sanskrit/Avestan/Slavic connections,
+his Gothic alternative, and the Latin/think/hand bibliography retain
+their different ownership. Fulk explicitly prints PGmc *manw-* in
+the body, yet his origin footnote reports conflicting proposals
+rather than endorsing them all
+[@Orel2003, p.260; @Fulk2018, pp.113-114,166-168].
+
+Fulk's Gothic genitive degemination, OE weak *manna*, Norse plural
+mutation and archaic dative are not alternative selected genitives.
+The presumed restoration of a heavy-syllable dative vowel is
+qualified. The flattened paradigm's second singular-row label is
+not propagated as a scholarly plural classification. His starless
+index forms keep their literal spelling and illustrative status;
+the index's genitive pointer does not turn the form into a thematic
+nominative or automatically date it from the surrounding heading
+[@Fulk2018, pp.166-168,388].
+
+Ringe-Taylor's human-being stem and rounded *monn* concern
+nasalization/rounding, not the s-ending. The plural mutation chain
+and the independent final-i apocope occurrence both survive; the
+inherited description of the latter as plural syncope is corrected.
+His general inventory and chapter framing do not date every
+unlabelled intermediate
+[@RingeTaylor2014, pp.106,143-145,167,228-230,284-287].
+Cercignani's final argument distinguishes slight PGmc nasalization
+from later strengthening; man/mon and the Nordic vowel evidence
+do not establish the selected genitive's ancestry
+[@Cercignani1980, pp.133-134].
+
+### Boundary march: bare nouns, compounds and rules have different roles
+
+The feminine boundary noun is not the celery homonym. Its
+territorial meaning, Orel's derived silver-weight sense, the neuter
+mark noun and Kroonen's possible Hittite cut/divide derivation
+remain distinct. A plant loan proposal supplies no boundary loan
+[@Orel2003, p.262; @Kroonen2013, p.355].
+
+The three Ringe-Taylor histories are independent source occurrences:
+breaking, nominative-u apocope and Anglian monophthongization.
+The compound interval and branding-iron examples are components;
+the signify verb is family evidence; bare *mearc* is separately
+quoted. The inherited beard-only process annotation is corrected
+to the actual rC-breaking argument, retaining beard as a different
+example rather than importing its morphology into boundary
+[@RingeTaylor2014, pp.179-183,284-287,312-314].
+The rj exclusion, Northumbrian retraction possibilities and
+phonetic explanations of Anglian monophthongization remain
+source-qualified, not adopted chronology edges.
+
+### Mast: first preserve both homonyms, then compare warrants
+
+Neither the live gloss nor existing diagnostic prose independently
+disambiguates sail-support and forest-fruit mast. Orel's initial
+sail interpretation cannot silently exclude the other homonym,
+especially when Kroonen's inherited consultation explicitly retains
+the ambiguity. Both identical citations survive with their separate
+senses and ancestry arguments
+[@Orel2003, p.263; @Kroonen2013, p.357].
+
+Within the sail homonym, the focused admission case is useful.
+Orel identifies Latin mast and cites Irish club; Kroonen calls the
+Irish *matán* unattested and finds the required Latin formation
+unattractive, beside a reported dialectal alternative. The differing
+formal and attestation warrants are an explicitly bounded CAPR
+inference, not a named rebuttal or a complete selected genealogy
+[@Orel2003, p.263; @Kroonen2013, p.357].
+
+The forest-fruit argument instead has an especially close Irish
+acorn/feed comparison, a possible deeper Sanskrit-fat relation and
+a rejected food-plus-give analysis whose expected outcome is
+*massa-*. None can be transferred into the sail noun's ancestry.
+The reported Schrader comparisons and Kroonen's assigned
+Germanic-to-Slavic borrowing also retain ownership, rather than
+becoming independent author votes or new CAPR sound laws
+[@Orel2003, p.263; @Kroonen2013, p.357].
+
+### Meal and mean: matching headers do not prove shared derivations
+
+Meal here is time/mealtime, not flour. Kroonen prints time, mark
+and measure as three identical headers: time origin is disputed;
+mark's dark/blue link is uncertain; a semantic bridge and measure
+identity are alternatives. Orel instead asserts historical identity
+of time and mark. His OE neuter/masculine? qualification remains
+even though the entry header is neuter
+[@Kroonen2013, p.362; @Orel2003, pp.269-270].
+
+The explicit PIE measure root and cup/bowl derivative concern
+the measure family, not proof of every time genealogy. Fulk's
+measure-root illustration supports inherited quantity but does
+not quote the selected whole-word ending; phonetic value and
+alternative notation conventions remain separate. Ringe-Taylor's
+first time intermediate is expressly PNWGmc, correcting its
+previous undated annotation. His long-vowel comparison lists
+time without a mutation environment, not as proof of a lost
+trigger
+[@Kroonen2013, p.362; @Fulk2018, pp.47-49;
+@RingeTaylor2014, pp.149-150,238-240].
+
+For mean, Kroonen's prose says Germanic-Baltic causative even
+though the displayed comparisons include Slavic. The survey
+retains that wording and the opinion noun's optional j, instead
+of editorially changing Baltic to Slavic. Orel's own weak-verb
+comparison is distinct from the reported Torp-Falk denominative
+base, explicitly WGmc. Causative and denominative accounts are
+not proved mutually exclusive by those labels
+[@Kroonen2013, p.348; @Orel2003, p.255].
+
+### Meed: an explicit correction is not an independent vote
+
+The selected dative *meorde* and prehistoric ending are not the
+reward citations in these passages. Kroonen's optional-n header,
+explicit PGmc prose stem, WGmc ia and parenthetical ē² remain
+separate. His z-loss is described as sporadic, the distribution
+patchy and the OE doublet's dialect assignment queried. The
+whole argument is on printed370, not the next page's mother
+entry. Orel's secondary ē₂ variant is expressly WGmc, while
+compensatory length is reported with Hirt attribution
+[@Kroonen2013, p.370; @Orel2003, p.272].
+
+Ringe's footnote explicitly corrects volumeII84: the OHG form
+requires post-PWGmc z-loss before the High German consonant
+shift, with Stiles acknowledged. This is a source-explicit
+chronological correction to an earlier account, not an invented
+opposition between independent authors. The earlier volume itself
+prints the PWGmc z-bearing form and later reward doublet; its
+condensed arrows do not independently assert a loss already
+completed in PWGmc. The correction must not be inflated into
+agreement with every differently labelled dictionary stem
+[@Ringe2017, pp.120-121; @RingeTaylor2014, pp.83-85].
+The nominative-u apocope example is another occurrence, not a
+selected dative quotation
+[@RingeTaylor2014, pp.284-287].
+
+### Might: a missed actual consultation, not a fabricated negative
+
+The feminine ti noun, masculine Nordic tu noun, finite can
+forms and powerful adjective are different units. The tu cell's
+inherited feminine classification is corrected. Orel's can base
+belongs on printed252-253; the noun follows254. Its previously
+verified diplomatic sign is retained rather than replaced with
+the native text's simpler glyph
+[@Kroonen2013, pp.347,373; @Orel2003, pp.252-254].
+
+Ringe's finite *mag*, productive ti formation and adjective
+examples support different propositions. The following formation
+argument and borrowed-verb example establish productivity under
+his account, not a new quoted selected noun ending
+[@Ringe2017, pp.133-135,325-327].
+
+Ringe-Taylor actually supplies the might history: breaking,
+WS mutation, final-vowel loss and *miht*, beside different
+Kentish/Anglian outcomes and queried analogy. The initial screen
+had no specific commitment; it is preserved reversibly while an
+actual evidence_found consultation and finite target are added.
+The endpoint cross-reference excludes following back vowels,
+leaves phonetics unclear and treats Campbell's
+monophthongization-then-raising scenario conditionally
+[@RingeTaylor2014, pp.240-241,336-337].
+No new Fulk consultation or grammar silence is manufactured.
+
+All eight whole-row causes remain unestablished. The man focused
+ancestry warrant remains open; the mast focused admission
+explanation is analyst inference. The meed correction is recorded
+as source support without manufacturing another exclusive
+inter-author dispute. Corpus, selected inputs/targets, stages,
+contexts, FSTs and scientific baselines remain unchanged.
+Current SOURCE and receipts are authority; never rerun the
+persisted candidate. Full393-row alignment and publication
+remain unfinished.
 
 ## Twenty-third alignment: homonyms, conditional roots and derivational direction
 

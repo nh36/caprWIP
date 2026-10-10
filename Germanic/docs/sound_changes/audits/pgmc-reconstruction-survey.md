@@ -8,6 +8,179 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-fourth alignment checkpoint: malt through might
+
+### Identity
+
+SC/executable identifier: none; non-adopting reconstruction research.
+Branch update; base5208573f242b8520d6af823e92fc531d472c6c37
+is committed and pushed23. The user's explicit request authorizes
+that release and execution of24, not automatic24 release or25 start.
+Rows2118-2125: malt, man, boundary march, mast, time/meal,
+mean, meed and might.
+
+### Question
+
+Hypothesis: inherited generic annotations merge paradigm cells,
+identical homonyms, own/conditional/reported claims and differently
+dated endpoints. Source-specific cell and argument readings can
+refute each suspected conflation independently. String identity,
+author counts and unchanged final output cannot settle genealogy.
+
+### Current state (before edits)
+
+The once-prepared immutable snapshot fixes4946 forms,1389
+consultations,5129 positions,440 comparisons,414 rationales,
+185 bounded/208 unreviewed core rows,97 inherited identities
+and80 research hashes. All46 protected scientific hashes remain
+authoritative. The research protocol, full template, current
+entry points, SOURCE tables and prior receipts were consulted.
+
+Historical/executable characterization: n/a; no production law,
+stage, scope or chronology edge changes. Selected man and meed
+are genitives/datives respectively, not dictionary citation cells.
+The unchanged mast gloss alone does not decide between homonyms.
+
+### Diagnosis
+
+Complete firing census, executable principal traces and skip/
+displacement: n/a; annotation-only research needs no Foma assay.
+Existing mast diagnostic prose was inspected as provenance, not
+treated as a source-backed homonym decision.
+
+All97 inherited identities are individually reconciled. Thirty-seven
+literal receipts and28 scoped processes add65 forms; five focused
+positions reuse evidence and34 rationales are added. The167
+positions link162 records. Exact SOURCE amendments cover97
+cells, four arguments, three asserted stages and five page locators.
+Diplomatic forms, verification, confidence and inherited review
+identities/statuses remain independent. One missed RT/might
+consultation adds one finite target and six exact owner fields.
+The initial screen survives reversibly, not as a fake negative.
+
+Concrete repairs distinguish masculine Nordic tu from feminine ti;
+final-i apocope from syncope; boundary rC process from beard
+morphology; starless man genitive index from thematic nominative;
+explicit PNWGmc meal, PGmc meed prose and WGmc secondary
+meed from generic context. Can base is252-253; meed argument
+is370, not mother on371
+[@Kroonen2013, pp.347,370; @Orel2003, pp.252-254,272;
+@Fulk2018, pp.166-168,388;
+@RingeTaylor2014, pp.149-150,179-183,284-287].
+
+### Literature
+
+Existing dossier: current survey/commentary and linked evidence/
+analyses. No released sound-law dossier or scientific verdict
+is reopened. Relevant held arguments, continuations, tables,
+footnotes and cross-references were read, including the final
+Cercignani nasalization argument and its Nordic footnote
+[@Cercignani1980, pp.133-134].
+
+Principal sources: Orel252-255,258,260,262-263,267,269-270,272;
+Kroonen347-348,351-355,357,362-363,370,373;
+Ringe120-121,133-135,164-165,325-327;
+Fulk47-49,113-114,166-168,388;
+RT83-85,106,143-145,149-150,167,179-183,228-230,
+238-241,284-287,312-314,336-337. These are pertinent
+arguments, not a claim of researching every unrelated neighboring
+entry. New literals are text_checked, not image-certified.
+
+Malt noun/adjective and causatives, human-being genealogies/
+paradigms, boundary/sign/plant, sail/forest mast, time/mark/
+measure, meaning noun/causative, reward doublets and might/
+can/adjective remain separate
+[@Orel2003, pp.252-255,258,260,262-263,267,269-270,272;
+@Kroonen2013, pp.347-348,351-355,357,362-363,370,373].
+
+### Historical analysis
+
+Dates follow local explicit statements, not confidence or dictionary
+titles. Starless index and quasi-PIE constructions retain their
+representation and limited status. Fulk's actual selected genitive
+does not date every ancestral index form
+[@Fulk2018, pp.113-114,166-168,388;
+@Kroonen2013, pp.353-354].
+
+Man's focused ancestry/gemination case is substantive but
+unexplained: men-u/minn counterfactual and Ringe's actual
+mánu/mánw paradigm require a precise reconciliation warrant,
+not an assumed identical premise or conclusive rebuttal
+[@Kroonen2013, p.354; @Ringe2017, pp.164-165].
+Mast's focused Latin/Irish admission explanation is bounded
+analyst inference from different formal/attestation warrants;
+the selected homonym and whole genealogy remain open
+[@Kroonen2013, p.357; @Orel2003, p.263].
+
+Ringe's meed footnote explicitly corrects the earlier volume's
+chronology, on an OHG witness and acknowledged Stiles observation.
+The earlier text retains the PWGmc z-bearing citation. No
+exclusive opposition or independent author vote is manufactured
+[@Ringe2017, pp.120-121; @RingeTaylor2014, pp.83-85].
+Might's palatal-umlaut phonetics and conditional Campbell account
+remain qualified despite the actual matching endpoint
+[@RingeTaylor2014, pp.240-241,336-337].
+
+Phenomenon/proxy: output compatibility is not historical proof.
+Chronology edges: none proposed; no interaction, identifier or
+stage-entailed inference is promoted into canonical history.
+
+### Verdict
+
+Annotation-only bounded research, not a Registry-verdict or
+RETAIN/REFORMULATE decision on a sound law. Eight core cases
+are bounded_limit with unestablished whole-row causes.
+The mast explanation does not promote the core case; man remains
+substantive/unexplained; meed's correction is position support,
+not another invented exclusive dispute.
+
+Evidence strength: complete relevant held-text argument readings;
+new exact literals are text_checked. The inherited RT convention/
+typography holding gap remains. Selected input/citation/cell/
+stage/context and scientific baselines are not changed.
+
+### Propagation
+
+SOURCE: forms, analyses, comparisons, rationales, coverage,
+one target and exact RT scope/applicability amendments; three
+new immutable receipt tables. Page-cited commentary and README,
+this nine-heading audit and source-sensitive regressions accompany
+the persistence. Regeneration exclusively uses adjudicate.py --refresh;
+generated projections are not hand-edited.
+
+Current totals5011 forms,1390 consultations,5199 positions,
+442 comparisons,448 rationales;193 bounded/200 unreviewed
+core rows. Ringe192/Fulk145/RT258 consultations; all786
+dictionary reviews and1712 dictionary evidence records.
+Canonical refresh reports CONTROL PLANE CLEAN without a scientific
+rebuild. All309 focused survey/analysis tests pass. Independent
+post-refresh verification preserves4946 inherited forms except109
+exact receipted annotations,5032 outside positions,432 unaffected
+comparisons,414 inherited rationales,1363 outside consultations,
+70 untouched research hashes/receipts and46 scientific hashes.
+All37 literal paragraph hashes and whole-token spans resolve.
+Reversing six owner fields and removing only the new target
+reconstruct the original owner hashes. All78 new-prose printed-page
+references, bibliography, section-locator and whitespace checks pass.
+This completes the research tranche, not scientific adoption.
+
+### Residue
+
+Full393-row alignment, conditioning census, aggregate explanations,
+non-adopting watchlist and publication remain unfinished.
+Mast selected sense, man ancestry warrant, meal identity, exact
+selected nominal endings, meed doublet conditioning and
+might's endpoint phonetics are independently bounded
+[@Kroonen2013, pp.353-354,357,362,370;
+@Orel2003, pp.260,263,269-270,272;
+@Ringe2017, pp.164-165; @RingeTaylor2014, pp.336-337].
+
+No corpus/input/target/stage/context/FST/baseline adoption,
+introduction/PDF, automatic24 release or25 start. Never execute
+or import the persisted candidate; current SOURCE/receipts/tests
+are authority. A later proved correction needs its own exact
+receipt, not regeneration of the original snapshot or candidate.
+
 ## Twenty-third alignment checkpoint: loath through make
 
 ### Identity

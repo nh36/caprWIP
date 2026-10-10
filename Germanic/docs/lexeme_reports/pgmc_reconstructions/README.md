@@ -110,7 +110,7 @@ non-adopting consistency watchlist. The current analytical gate still
 certifies citation-unit triage only.
 
 All three relevant held-source passes are persisted: Ringe192, Fulk145
-and Ringe-Taylor257 actual consultations. Each has393 independent
+and Ringe-Taylor258 actual consultations. Each has393 independent
 applicability dispositions; the1179 screens are not1179 grammar
 negatives. All786 core reviews remain. Of20 scopes,19 are reviewed
 and the Ringe-Taylor conventions scope retains its genuine verification
@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4946 evidence records,1389 actual consultations and5129
-analytical positions, with440 comparisons and414 rationales. The RT
+There are5011 evidence records,1390 actual consultations and5199
+analytical positions, with442 comparisons and448 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred eighty-five core rows now have individually reconciled, bounded alignment:
-1933-2117. The remaining208 are unreviewed. The second tranche builds on
+One hundred ninety-three core rows now have individually reconciled, bounded alignment:
+1933-2125. The remaining200 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,60 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-fourth tranche completes malt, man, boundary march,
+mast, time/meal, mean, meed and might, rows2118-2125, on
+released23 base5208573f. All97 inherited identities survive.
+Thirty-seven literal receipts and28 scoped arguments add65
+records; five focused positions reuse evidence and34 rationales
+are added. The167 positions link162 records. Exact SOURCE
+receipts cover97 cells, four arguments, three stages and five
+page locators. One actual RT/might consultation adds one target;
+six owner fields preserve the initial scope/screen reversibly.
+All786 dictionary reviews remain, with1712 dictionary evidence
+records separately counted.
+
+Man's selected genitive differs from nominative, plural, dative,
+counterfactual and quasi-PIE units. The focused ancestry case
+retains distinct men-u versus mánu/mánw premises, with the
+reconciliation warrant unestablished
+[@Kroonen2013, pp.353-354; @Ringe2017, pp.164-165;
+@Fulk2018, pp.113-114,166-168,388].
+RT plural apocope is not syncope or a genitive quotation
+[@RingeTaylor2014, pp.228-230,284-287].
+
+Mast's selected sense remains bounded; identical sail/forest
+homonyms and their warrants survive. Its focused Latin/Irish
+admission explanation is analyst inference, not a named rebuttal
+or adopted genealogy [@Kroonen2013, p.357; @Orel2003, p.263].
+Meal's time/mark/measure identity is disputed, and the first
+RT time intermediate is explicitly PNWGmc
+[@Kroonen2013, p.362; @Orel2003, pp.269-270;
+@RingeTaylor2014, pp.149-150,238-240].
+
+Meed's whole Kroonen argument is on370; explicit PGmc and
+secondary WGmc annotations retain independent glyphs and stages.
+Ringe's post-PWGmc loss correction is source-explicit, not two
+independent author votes [@Kroonen2013, p.370;
+@Orel2003, p.272; @Ringe2017, pp.120-121;
+@RingeTaylor2014, pp.83-85].
+Might's masculine tu formation and can verb are not the feminine
+ti noun; the actual RT history supplies a previously missed
+consultation, preserving its endpoint reservations
+[@Kroonen2013, pp.347,373; @Orel2003, pp.252-254;
+@Ringe2017, pp.133-135,325-327;
+@RingeTaylor2014, pp.240-241,336-337].
+
+Malt's az-shaped input does not select an adjective etymon;
+boundary compounds and signifying verb are not bare boundary;
+mean's causative and reported denominative are not proved
+exclusive accounts [@Orel2003, pp.255,258,262,267;
+@Kroonen2013, pp.348,351-352,355,363;
+@RingeTaylor2014, pp.179-183,312-314].
+All eight whole-row causes remain unestablished. Current SOURCE,
+exact receipts and regressions are authority; never execute/import
+the persisted candidate. Corpus/input/stage/context/FST/baseline
+adoption, a new PDF, automatic24 release or25 start are not included.
 
 The twenty-third tranche completes loath, mechanical lock, hairlock,
 louse, lung, lust, lye and make, rows2110-2117, on released22 base1e2cb5cb.
