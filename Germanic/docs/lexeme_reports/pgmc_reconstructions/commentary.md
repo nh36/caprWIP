@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 192 Ringe,145 Fulk and258 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5177 evidence
-records,1390 actual consultations,5384 positions,448 comparisons and552
+393 applicability screens per source. The database contains5229 evidence
+records,1390 actual consultations,5440 positions,450 comparisons and582
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:217 core rows are bounded and176 unreviewed.
+explanation remain ongoing:225 core rows are bounded and168 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,253 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-eighth alignment: preterite mechanisms, cognate admission and phonetic comparanda
+
+Read, reek, rest, ride, rind, coat, roe and rood, rows2150-2157,
+continue from releaseda8ab6959. All56 inherited analytical identities
+are individually reconciled. Twenty-six native occurrences and26 scoped
+arguments add52 records; four focused positions reuse evidence and30
+rationales are added. The112 positions link108 records, not112
+independent testimonies. Exact reversible receipts cover61 SOURCE fields:
+56 cells, two arguments, two locally supported stages and one fragment
+comparison-unit classification. No consultation identity or status changes.
+Earlier diplomatic forms, verification and confidence survive; new
+native quotations remain text_checked, not newly image-certified.
+
+### Read: lexical verb, noun formations and the actual past cells
+
+The selected read infinitive is not every formation in its lexical family.
+Kroonen's strong *rēdan- concerns deciding, counseling and interpreting.
+The speak causative *rōdjan- has its own comparative argument and explicit
+relation to that strong verb. Orel distinguishes the strong counsel verb,
+advice noun alternatives and the management/reading noun; the last
+formation's OE feminine reflex cannot supply the selected verbal ending.
+The speak verb on the subsequent page remains another formation, not
+the similarly spelled rood noun
+[@Kroonen2013, pp.408,415; @Orel2003, pp.303-304,306].
+
+Ringe quotes PGmc *rēdaną, past third singular *rerōd and third plural
+*rerdun separately. His account uses the generalization of a default
+zero-grade past stem to explain Anglian *reord*, rather than deriving that
+form from a full long-vowel past. The corresponding let cells must remain
+comparanda: similarities of class and default grade do not make them
+read forms. Ringe-Taylor's corrigendum and body discussion preserve this
+full/default distinction and explicitly distinguish inherited default
+stems from the morphological rules built on them
+[@Ringe2017, pp.214-216; @RingeTaylor2014, pp.92,518].
+
+Fulk likewise argues that the read relic cannot plausibly continue a
+long-vowel *re-rōð-* without another premise. His conditional original
+singular *re-rōþ-* and plural *re-rð-* retain the printed dental and
+quantity differences. Actual Anglian *reord*, WS strong *rēd* and much
+commoner weak *rædde* are different cells/histories, not interchangeable
+endpoints. His expected *leolt* versus actual *leort* belongs to let.
+The starless, parenthesized infinitive in the index remains a distinct
+quotation; the actual body reading does not silently certify the index's
+superscript or every native-text dental
+[@Fulk2018, pp.260-261,388].
+
+Later weak reclassification is another question again. Ringe-Taylor
+distinguishes late-WS weak read/dread from the early-WS strong pasts
+actually attested. Nearby come/faran influence and the backformation
+of *funde* illustrate other histories; neither establishes read's cause.
+The preceding stative/factitive corrigendum on the same printed page as
+the read/let correction is also independent. Two inherited generic
+process summaries now have exact amendment receipts separating those
+paragraphs and their lexical owners
+[@RingeTaylor2014, pp.346,518].
+
+### Innovative read pasts: a real mechanism comparison, not exclusive slogans
+
+The focused comparison concerns innovative class-VII past formation,
+not whether either source recognizes inherited zero-grade read.
+Ringe-Taylor prefers initial root-consonant loss, contraction and subsequent
+generalization of newly abstracted ablaut patterns. The account follows
+the treatment of unstressed diphthongs and distinguishes partial
+reduplication, loss of the reduplicating syllable and later infixal/suffixal
+reinterpretations. It explicitly notes overlap with Fulk's e-insertion
+hypothesis while retaining a different mechanism
+[@RingeTaylor2014, pp.88-92].
+
+Fulk favors insertion of e before the root vowel, modeled on transparent
+vowel-initial verbs. His defense is not merely that the model produces
+the OE vowels. Comparative diphthong reflexes, early written sequences,
+the interpretation of intrusive r as hiatus notation and the account of
+stem-final w provide further warrants. He answers the objection that too
+few transparent models existed: the clarity of the rule, relative to
+opaque reduplication in a small class, matters independently of raw model
+counts. His criticisms of class-limited ad hoc sound rules and of more
+complex morphological repairs do not turn Ringe-Taylor into a supporter
+of a wholly phonological theory
+[@Fulk2018, pp.266-270].
+
+The substantive difference is therefore the mechanism and weight of
+these warrants, with overlap explicitly preserved. Both retain the relic
+past's independent default-grade history. The database records two
+position-support reasons in the focused comparison, not a proved cause
+of every difference or a selected complete input history. The broader
+strong-to-weak, contracted-verb and verba-pura discussions provide
+context, but their non-read examples do not become invented read cells
+[@Fulk2018, pp.260-261,266-272; @RingeTaylor2014, pp.88-92,346,518].
+
+Read's long-vowel staging is separately source-backed. The explicit PGmc
+and PNWGmc examples in Ringe-Taylor's lowering/backing discussion are
+not dated from their spelling alone. The defense of later northern
+fronting uses nasal outcomes and the independently back-vowel
+there/where argument, while preserving geographic and chronological
+qualifications. That argument supports its stated stages, not a new
+CAPR law or an automatic reassignment of selected metadata
+[@RingeTaylor2014, pp.10-13].
+
+### Reek: noun formation and the admission of smoke cognates
+
+Kroonen's masculine smoke i-stem and Orel's i-stem citation do not quote
+the selected OE a-stem cell. Orel separately assigns the continental
+smoke reflexes to *raukaz*. Both noun/verb links are preserved, but a
+continental full-word alternative cannot be expanded into a newly
+certified selected OE reconstruction. The actual smoke-verb body on
+printed303 is a separate occurrence from the earlier noun-entry
+cross-reference
+[@Kroonen2013, pp.406,410; @Orel2003, pp.299,303].
+
+Here the cognate-admission difference is substantive. Orel accepts the
+Lithuanian smoke comparison despite phonetic differences. Kroonen
+judges it highly unlikely because the relevant words might be Low German
+loans; he is still more doubtful about the Albanian comparison and does
+not treat one possible external reconstruction as unique. His preferred
+drift meaning and possible shortened geminate/backformation are
+additional qualified arguments, not demonstrated selected ancestry
+[@Orel2003, p.303; @Kroonen2013, pp.410-411].
+
+The backward iterative cross-reference matters. Kroonen distinguishes
+the formally identical rock/move iterative and the smoke/rush iterative.
+The second supplies the proposed semantic continuity; the first cannot
+simply replace it because of its spelling. Orel's separate current/smell
+noun is another derivative. The focused comparison records opposite
+admission judgments without claiming that their precise cause, the
+donor direction or the selected a-stem's history is established
+[@Kroonen2013, pp.410,417; @Orel2003, pp.303,308].
+
+### Rest, rind and coat: matching labels do not prove matching etyma
+
+Rest demonstrates why dictionary gloss matching is insufficient.
+Kroonen links interval/rest/grave to the rush/course family and
+explicitly excludes calm/rest *rōō-*. That other entry has its own
+comparative family and open-syllable history. Orel calls the selected
+rest family's origin uncertain and lists alternative connections in
+bibliography; those reports cannot all become endorsed genealogy.
+The actual course/rush and calm entries have been read separately.
+Neither a long-ō citation nor a Nordic i-stem plural supplies the
+selected *rástōz* ending by inference
+[@Kroonen2013, pp.405,415-416; @Orel2003, pp.298,304,307].
+
+Rind's optional-n bark citation, cross-beam and border/rim/shield
+formations likewise remain distinct. The support/ram-d proposals in
+the latter entries retain reported bibliography status, rather than
+becoming an exact selected bark derivation. Ringe-Taylor supplies
+an explicitly PWGmc i-bearing tree-bark form with its OE reflex;
+that is not evidence that the PGmc selected input has been quoted.
+Orel's earlier image-certified dental remains unchanged despite a
+different native-text rendering
+[@Orel2003, pp.297,302; @RingeTaylor2014, p.127].
+
+Only Orel supplies coat's citation in this bounded source set. His
+Irish tunic and Welsh coat comparisons belong to the upper-garment
+entry. The neighboring identical distaff headword has different
+reflexes and a tear/pluck argument, with a tunic connection reported
+in its bibliography. That juxtaposition does not merge the etyma,
+establish a borrowing direction or choose a geminate origin.
+Kroonen's completed bounded negative remains intact, as do its
+separately documented other-etymon limits
+[@Orel2003, pp.308-309].
+
+### Ride: long infinitive, short participle and conditional lowering
+
+Ride's long-vowel strong infinitive is distinct from Kroonen's short
+instrumental/spawning noun family, whose verbal identity is only
+possible. The rejected Greek comparison and Celtic/Baltic parallels
+remain source-specific warrants. Orel's road/riding and ready/arrange
+families are examined as separate formations, not merged with read
+or rood. Ringe's local PGmc lexicon context supports dating his
+infinitive, but its possible borrowing remains explicitly uncertain
+[@Kroonen2013, p.412; @Orel2003, pp.295,305; @Ringe2017, p.328].
+
+Two index pointers needed exact navigation: Fulk's infinitive body is
+printed52, not the guessed Prokosch passage; the participial body is
+printed285, not the later weak-verb discussion. The former quotes the
+long infinitive beside a riding-event noun. The latter hypothesizes
+lowering of short *riðanaz* to *reðanaz*, stresses slender evidence,
+and suggests near-complete analogical reversal if the change occurred.
+The proposed plural model is qualified, not an obligatory cause
+[@Fulk2018, pp.52-53,285-286,388].
+
+His general lowering discussion also distinguishes more secure u/o
+allophony from the less systematic i/e history. The method favors
+NWGmc dating while not declaring PGmc dating impossible; the
+footnotes retain competing accounts. Thus the conditional lowered
+participle is not an endorsed replacement for the long infinitive.
+The cited nonhigh-lowering reason contributes to the future census,
+not to a completed class or whole-row cause
+[@Fulk2018, pp.55-57,285-286].
+
+Ringe-Taylor's repeated riding-event noun illustrates ai development
+and final-u loss after a heavy syllable. The PNWGmc noun, intermediate
+and OE noun remain separate occurrences. They do not quote selected
+*rīdan* or transform a nominal u-ending into a verbal infinitive.
+The two exact selected proto strings, including their different Unicode
+acute composition, and their independently owned pgmc input stage
+are untouched
+[@RingeTaylor2014, pp.171,285].
+
+### Roe and rood: phonetics, runic uncertainty and lexical separation
+
+Roe remains research-only. Kroonen's masculine n-stem, feminine hj
+derivative and disfavored gj alternative retain separate gender,
+formation and attribution. His more primary zero-grade feminine
+and Kluge geminate argument do not supply a selected OE target.
+Orel's masculine citation and feminine ON formation remain distinct;
+his unknown-origin verdict is not displaced by the grey, deer or
+roebuck proposals listed in bibliography
+[@Kroonen2013, pp.402-403,413; @Orel2003, p.295].
+
+The runic evidence illustrates an independent uncertainty. Ringe-Taylor
+allows either an intermediate development or unchanged inherited ai
+for the fourth/early-fifth-century Caistor inscription. Object date,
+reading and phonetic interpretation cannot be collapsed. Its approximate
+phonetic chain contains native corruptions; the inherited ai fragment
+and all three bracketed representations are now explicitly analytical
+printed-representation comparanda, never whole roe words. The coarse
+legacy SOURCE kinds do not define their lexical relationship: their
+cell descriptions and analytical unit make that limitation explicit.
+No additional glyph certification or global normalization is claimed
+[@RingeTaylor2014, pp.170-172].
+
+The actual contraction paragraph supplies a separately labeled PNWGmc
+stem, PWGmc word and early Mercian forms before/after intervocalic-h
+loss. Its native *rda* spelling is retained rather than silently
+repaired. These cells corroborate the family without admitting a
+runnable target or deciding the earlier inscription's phonetic value
+[@RingeTaylor2014, p.314].
+
+Rood is not ride/road or speak. Orel gives the feminine rod/pole/cross
+citation with optional n and an unknown origin. Spoon, raft,
+lance-shaft and bank-tree comparisons are reported bibliography,
+not four simultaneously adopted ancestries. The adjacent speak
+causative cannot supply rood's missing premise. Its selected
+optional-free input and Kroonen's bounded negative are unchanged
+[@Orel2003, p.306; @Kroonen2013, p.415].
+
+### Bounded result and remaining work
+
+Both focused comparisons and all eight whole-row causes remain
+unestablished. There is no new corpus, stage/context, FST, baseline
+or publication adoption. All786 dictionary review identities/statuses
+survive, now with1793 dictionary records. The full393-row alignment,
+aggregate conditioning census, consistency watchlist and explanatory
+synthesis remain unfinished. Current SOURCE, exact receipts and
+regressions are authority; never execute/import the persisted
+tranche28 candidate or recreate its preparation.
 
 ## Twenty-seventh alignment: numeral warrants, paradigm cells and shared components
 

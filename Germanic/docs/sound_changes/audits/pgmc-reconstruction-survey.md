@@ -8,6 +8,185 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-eighth alignment checkpoint: read through rood
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base: releaseda8ab69595b0ce420876e8d861976fc741d68ccae on update.
+Rows2150-2157: read, reek, rest, ride, rind, coat, roe, rood.
+The user's instruction authorizes release of27 and execution of28,
+not automatic28 release or29 start. Immutable preparation pins5177
+forms,56 inherited positions and90 research hashes;46 separately
+pinned scientific hashes remain protected. Preparation is never
+recreated, and the persisted candidate is never run/imported again.
+
+### Question
+
+Can all56 inherited identities be individually reconciled without
+merging verbal/nominal formations, actual/conditional paradigm cells,
+homonyms, phonetic representations or different source stages?
+Completion is falsified by a dropped identity, a fabricated exact
+selected cell, a bibliography proposal promoted to endorsement,
+an original/native glyph conflation or a stage inferred from a title.
+Scoped position support must not establish a whole-row cause.
+
+### Current state
+
+Before edits, the eight core alignments remained unreviewed despite
+dictionary and applicable grammar evidence. Existing SOURCE, prior
+receipts and the survey commentary supply the analytical conventions,
+not a canonical sound-change verdict. Selected fields and six
+research-only owners remain unchanged; roe receives no target.
+No FST semantics, chronological edge or registry verdict is proposed.
+
+### Diagnosis
+
+Executable firing census/traces: not applicable, with reason.
+The task is source/analytical annotation, not scientific adoption;
+the immutable46 science hashes protect existing evidence and outputs.
+No Foma assay, protected rebuild, full Germanic suite or PDF is needed.
+
+Read includes distinct present, full/default past, innovative/relic
+preterites and weak forms. Ride includes long infinitive, short
+participle and event noun. Roe's phonetic fragments and uncertain
+runic interpretation are not reconstructed lexical words
+[@Ringe2017, pp.214-216; @Fulk2018, pp.52-53,260-261,285-286;
+@RingeTaylor2014, pp.92,170-172,285,314,346,518].
+
+### Literature
+
+Existing survey/commentary, prior SOURCE/analytical positions and
+tranche27 receipts are read as method controls. Complete relevant
+held entries, arguments, footnotes, tables and load-bearing cross-
+references are read, including corrected index navigation. Printed
+running heads, not guessed sheet labels, govern new citations.
+Native literal extraction remains text_checked.
+
+| Row | Held scope and decisive distinction |
+| --- | --- |
+| Read2150 | Kroonen408,415; Orel303-304,306; Ringe214-216; Fulk260-272,289-291; RT10-13,88-92,346,518: present, full/default past, mechanisms, nouns and late weakness separate. |
+| Reek2151 | Kroonen406,410-411,417; Orel299,303,308: i/a noun alternatives, strong verb, iterative homonyms and cognate-admission warrants. |
+| Rest2152 | Kroonen405,415-416; Orel298,304,307: interval/rest versus explicitly different calm/rest and reported etymologies. |
+| Ride2153 | Kroonen412; Orel295,305; Ringe328; Fulk52-53,55-57,285-286; RT171,285: long infinitive, conditional short participle/family and nominal apocope. |
+| Rind2154 | Orel297,302; RT127: bark, border/shield/beam, optional n, certified dental and explicit PWGmc stage. |
+| Coat2155 | Orel308-309: garment and identical distaff homonym; comparative connection does not establish donor direction. |
+| Roe2156 | Kroonen402-403,413; Orel295; RT170-172,314: masculine/feminine cells, rejected gj, phonetics, runic uncertainty and contraction. |
+| Rood2157 | Orel306: optional-n rod/pole/cross and unknown origin, not adjacent speak or road/ride. |
+
+Fulk's actual ride infinitive body is52 and participial body285;
+index388 navigation alone is not new glyph or dating certification.
+The hypothetical lowering and nearly complete reversal remain
+conditional with slender evidence
+[@Fulk2018, pp.52-53,55-57,285-286,388].
+
+The focused read mechanisms are explicitly partly overlapping,
+not an exclusive sound-law/analogy contest. The reek comparison is
+cognate admission versus possible loan contamination, not a resolved
+selected a-stem history
+[@Fulk2018, pp.266-270; @RingeTaylor2014, pp.88-92;
+@Kroonen2013, pp.406,410-411,417; @Orel2003, pp.299,303,308].
+
+### Historical analysis
+
+Historical stages/scopes are source-local analytical facts, not
+changed CAPR registry assignments. Explicit PGmc lexicon context
+dates Ringe's ride; RT314 explicitly labels its roe stem PNWGmc.
+Those two SOURCE repairs have exact receipts; confidence is not
+changed or consulted to assign the stages
+[@Ringe2017, p.328; @RingeTaylor2014, p.314].
+
+Read/let, advice/management/read and separate corrigenda retain
+their owners. Conditional RT518 singular/default cells remain
+unspecified there; separately quoted RT92 PWGmc cells retain their
+explicit date. Fulk's conditional full/reduced PGmc past and
+innovative NWGmc e-infixation are different claims
+[@Orel2003, pp.303-304; @Fulk2018, pp.260-261,267;
+@RingeTaylor2014, pp.92,518].
+
+Roe's approximate phonetic chain remains an analytical printed-
+representation comparandum with native corruption, not a word/cell
+claim. Object date and possible unchanged ai cannot establish a
+completed event's date or a new historical edge. All geographical,
+dating and source qualifications survive
+[@RingeTaylor2014, pp.170-172,314].
+
+Executable proxy relationship and chronology promotion: none.
+No stage-entailed/independently demonstrated edge is adopted.
+Read's focused mechanism and reek's admission differences remain
+substantive but their causes unestablished. All eight whole-row
+causes remain independently unestablished. Rest/calm, rind/beam,
+coat/distaff and rood/speak are distinct lexical questions
+[@Kroonen2013, pp.405,415-416; @Orel2003, pp.297-298,302,306,308-309].
+
+### Verdict
+
+Research disposition: bounded_limit for eight individually aligned
+core rows; substantive_difference/unestablished for the two focused
+comparisons. Registry-verdict: not applicable, because no SC is
+adjudicated or adopted. No canonical law or selected input changes.
+
+All56 inherited identities are reconciled,26 native quotations and26
+scoped processes added, four focused positions reused and30 reasons
+added. The61 exact SOURCE fields comprise56 cells, two arguments,
+two dates and one fragment-kind repair. Source-native text, existing
+image certification, attribution qualifications and stage/confidence
+independence survive. No consultation identity/status/scope/target
+owners change. Persistence occurred exactly once after validation.
+
+### Propagation
+
+Affected SOURCE: forms/coverage, analyses/comparisons/rationales,
+two new occurrence/amendment receipts, commentary, README and this
+complete-template audit. Focused source-sensitive regressions cover
+all inherited identities, reciprocal links, actual cells, exact
+native spans, homonyms, rejected alternatives, coarse-kind versus
+analytical-unit limits, explicit stages and roe's research-only status.
+
+Current totals:5229 forms,1390 consultations,5440 positions,450
+comparisons,582 rationales;225 bounded/168 unreviewed core rows.
+The112 tranche positions link108 records. All786 dictionary review
+identities/statuses survive, with1793 dictionary evidence records.
+Generated views follow only `adjudicate.py --refresh`.
+Independent verification reads immutable snapshot/current SOURCE
+and receipts, never the persisted candidate.
+
+Canonical refresh reports CONTROL PLANE CLEAN without rebuilding
+scientific evidence. The combined347-test run passes328 tests and
+identifies19 cumulative expectation updates; after exact count/query
+corrections, all27 selected new/corrected regressions pass. No source
+argument is rewritten to satisfy an expectation. Bibliography, section
+locators,64 new-prose printed-page references and whitespace pass.
+
+Post-refresh independent verification preserves5177 inherited forms
+except61 exact receipted fields,5328 outside positions,440 unaffected
+comparisons,552 inherited reasons and1366 outside consultations.
+All83 unaffected research hashes and46 scientific hashes survive.
+All26 native paragraph hashes and whole-token spans independently
+resolve. Deterministic query evidence is retained in the session
+artifact `pgmc-two-hundred-twenty-five-alignments-query-results.txt`.
+
+Baseline/fingerprint effect: none;46 protected scientific hashes
+remain unchanged. Corpus/input/target/stage/context/FST/registry/
+baseline adoption and publication are excluded.
+
+### Residue
+
+Selected-cell endings, complete ancestry and exact cause remain
+bounded separately per row. Read's overlapping mechanisms do not
+settle its whole history; reek's possible loan contamination does
+not establish direction; ride's lowering stays conditional; roe's
+runic interpretation remains unresolved without admitting a target
+[@Fulk2018, pp.266-270,285-286; @RingeTaylor2014, pp.88-92,170-172;
+@Kroonen2013, pp.410-411; @Orel2003, p.303].
+
+The full393-row alignment, conditioning census, consistency
+watchlist, ranked specialist dispatch and synthesis remain open.
+Independent alignment refuses168; the unchanged RT conventions
+refusal remains a distinct reading-verification limit.
+No automatic28 release,29 start, scientific assay or PDF is included.
+Unrelated .DS_Store and tmp_probe.foma remain untouched.
+
 ## Twenty-seventh alignment checkpoint: nine through raven
 
 ### Identity

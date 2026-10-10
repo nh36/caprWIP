@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5177 evidence records,1390 actual consultations and5384
-analytical positions, with448 comparisons and552 rationales. The RT
+There are5229 evidence records,1390 actual consultations and5440
+analytical positions, with450 comparisons and582 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred seventeen core rows now have individually reconciled, bounded alignment:
-1933-2149. The remaining176 are unreviewed. The second tranche builds on
+Two hundred twenty-five core rows now have individually reconciled, bounded alignment:
+1933-2157. The remaining168 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,48 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-eighth tranche completes read, reek, rest, ride, rind, coat,
+roe and rood, rows2150-2157, on released27 basea8ab6959.
+All56 inherited analytical identities survive. Twenty-six exact native
+occurrences and26 scoped processes add52 records; four focused
+positions reuse evidence and30 rationales are added. The112 positions
+link108 distinct records. Exact reversible receipts cover61 SOURCE
+fields:56 cells, two locally supported stages, two arguments and one
+fragment-kind repair. No consultation/status/scope/target owners change.
+
+Read's full/default past, innovative contraction/generalization versus
+e-insertion, relic preterites and weak reclassification remain separate.
+The focused mechanism comparison preserves the sources' explicit partial
+overlap. Reek's focused admission comparison contrasts accepted Lithuanian
+connections with possible Germanic-loan objections, without resolving
+the selected noun cell or genealogy
+[@Ringe2017, pp.214-216; @Fulk2018, pp.260-261,266-272;
+@RingeTaylor2014, pp.88-92,346,518;
+@Orel2003, pp.299,303; @Kroonen2013, pp.406,410-411,417].
+
+Rest/calm, bark/border/beam, garment/distaff and rood/speak are lexical
+boundaries, not matches established by a shared label. Ride's actual
+long-infinitive body is Fulk52 and short-participle body285; lowering is
+conditional, evidence slender, and borrowing uncertain. Roe's approximate
+phonetic comparanda and runic dating are not whole lexical inputs or
+admitted targets. Native corruptions and earlier image certifications
+remain independent
+[@Kroonen2013, pp.402-403,405,412-413,415-416;
+@Orel2003, pp.295,297-298,302,304-309;
+@Ringe2017, p.328; @Fulk2018, pp.52-53,55-57,285-286,388;
+@RingeTaylor2014, pp.127,170-172,285,314].
+
+Both focused causes and all eight whole-row causes remain unestablished.
+All786 dictionary dispositions survive with1793 dictionary records.
+Selected inputs/stages, roe's research-only status and46 scientific
+hashes remain unchanged. New receipts:
+`reading_accountability/alignment-2150-2157-amendments.tsv` and
+`reading_accountability/alignment-2150-2157-occurrences.tsv`.
+Never execute/import the persisted tranche28 candidate or recreate its
+immutable preparation. Current SOURCE, receipts and regressions are
+authority. Full393 alignment, class census and synthesis remain open;
+no scientific adoption, publication, automatic28 release or29 start.
 
 The twenty-seventh tranche completes nine, nose, one, oven, ox, rain,
 rainbow and raven, rows2142-2149, after released26 base678eafa6.
