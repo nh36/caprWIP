@@ -616,7 +616,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t177\nunreviewed\t216\n")
+        """), "alignment_status\trows\nbounded_limit\t185\nunreviewed\t208\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -642,10 +642,34 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row in map(str, range(2054, 2062)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
+    def test_twenty_third_queries_keep_focused_causes_separate(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,explanation_status FROM comparisons
+            WHERE comparison_id IN ('hairlock-direct-flexible','make-origin-and-direction')
+            ORDER BY comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\n"
+                    "hairlock-direct-flexible\tunestablished\n"
+                    "make-origin-and-direction\tanalyst_inference\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2110 AND 2117
+        """), "positions\tevidence\n103\t98\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
+            GROUP BY alignment_status ORDER BY alignment_status
+        """), "alignment_status\trows\nbounded_limit\t185\nunreviewed\t208\n")
+        for row in map(str, range(2110, 2118)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 1649)
+                             for form in self.forms), 1676)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

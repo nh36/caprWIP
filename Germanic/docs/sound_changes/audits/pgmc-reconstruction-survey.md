@@ -8,6 +8,205 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Twenty-third alignment checkpoint: loath through make
+
+### Identity
+
+SC/executable identifier: none; non-adopting reconstruction research.
+Branch update; base1e2cb5cbd2131d23baf87162de8e65eb668cdd1e
+is committed and pushed22. The user authorizes that release and
+completion of the next tranche, not automatic23 release or24 start.
+Rows2110-2117 are loath, mechanical lock, hairlock, louse, lung,
+lust, lye and make.
+
+### Question
+
+Hypothesis: generic inherited annotations conflate homonymous
+families, adjective/verb derivational directions, conditional
+genealogies and actual cells/dates. Explicit source commitments
+could refute each suspected conflation independently. Matching
+strings alone cannot refute lexical or cell distinctions, and an
+explained focused warrant cannot establish a whole-row cause.
+
+### Current state (before edits)
+
+The immutable once-prepared snapshot fixes4895 forms,1387
+consultations,5073 positions,438 comparisons,385 rationales,
+177 bounded/216 unreviewed rows,47 inherited identities and76
+research hashes. All46 protected scientific hashes remain
+authoritative. SOURCE/previous receipts, CURRENT_STATE, docs
+README, research protocol and full template were consulted.
+
+Historical/executable characterization: n/a; no sound-law change
+or edge adoption. Selected mechanical lock differs from hairlock,
+and selected lung retains its independent citation and a-derivative
+input. Current target/input/stage/context choices are not replaced
+with source citations or dictionary infinitives.
+
+### Diagnosis
+
+Complete firing census, principal executable traces and skip/
+displacement: n/a; no executable proposition changes. Research
+roles are selected cell, citation, other cell, family, comparandum
+and process, not new chronology witnesses.
+
+All47 inherited identities are individually reconciled. Twenty-eight
+literal receipts and23 complete arguments add51 records; five
+focused positions reuse evidence and29 rationales are added.
+The103 positions link98 records. Twenty-eight exact SOURCE
+amendments comprise16 cells, eight arguments, two dates and
+two page locators. Diplomatic forms, confidence, verification,
+inherited review identities/statuses and outside research survive.
+Two actual close-family consultations add finite targets with13
+exact scope/applicability owner fields; original screens remain
+recoverable rather than becoming silence or fake negatives.
+
+Important repairs: mechanical close infinitive is family evidence;
+joint close/pull stems retain both proposed etyma and the actual
+cognate allocation; Probably/Perhaps lust accounts remain qualified.
+Love's locator is249, dear's241. RT loath is explicitly PNWGmc;
+Ringe lust is locally governed PGmc
+[@Orel2003, pp.241,249-252; @Kroonen2013, pp.334,345;
+@RingeTaylor2014, p.129; @Ringe2017, pp.324-325].
+
+### Literature
+
+Existing dossiers: current survey/commentary, source-specific
+evidence/analyses, prior receipts and selected/protected owners.
+No released production law is reopened.
+
+Complete relevant arguments, cross-references, tables and footnotes
+are read at Orel233-234,238-241,249-252,257-258;
+Kroonen333-345,349-351 in the relevant entry groups;
+Ringe137-140,324-325; Fulk246-249,263-265,285-287;
+RT29-31,39-40,126-129,190-192,227-229,257-259,516-518,520-522.
+This records relevant entry/argument reading, not an assertion that
+every unrelated neighboring entry was researched. New literals are
+text_checked; no new image verification is claimed.
+
+Source-supported distinctions: adjective versus denominative;
+mechanical lock versus pull/hairlock and differently grouped
+cognates; direct flexible rejection versus conditional Kluge-law
+use; root versus i-stem/plural louse; lung header/prose gender
+and derivative; qualified love/lose genealogy versus asserted
+tu-formation; wash versus meadow/light; opposite make directions
+and separate root/suffix histories
+[@Orel2003, pp.233-234,238-241,249-252,257;
+@Kroonen2013, pp.334,338-339,343-345,350-351;
+@Ringe2017, pp.137-140,324-325;
+@RingeTaylor2014, pp.29-31,129,190-192,227-229].
+
+CAPR annotation choices: keep native b/p/6/e/slash/corruptions
+and Ringe's combining macron; quote elliptical principal parts
+without constructing prefixes or certifying every illustration
+as an independently attested form. Fulk's full aorist argument
+and RT's inherited-close/weed comparison concern verbs, not a
+selected noun or an adopted quantity law
+[@Fulk2018, pp.246-249,263-265,285-286;
+@RingeTaylor2014, pp.39-40].
+
+### Historical analysis
+
+Stage and scope are local, independent of confidence and lexical
+matching. RT's loath adjective is PNWGmc and its following
+adjective PWGmc; Ringe's lust formation is locally PGmc.
+Kroonen's uncertain PIE root is explicitly PIE despite uncertainty,
+whereas IE? heading and undated intermediates do not assign dates
+[@RingeTaylor2014, p.129; @Ringe2017, pp.324-325;
+@Kroonen2013, p.350].
+
+Hairlock focused cause remains unestablished: the direct flexible
+connection is explicitly rejected, adopted through bend, or used
+conditionally. No direct named rebuttal is invented
+[@Kroonen2013, p.343; @Orel2003, p.250;
+@Ringe2017, pp.137-140].
+
+Make has a bounded analyst-inferred semantic/derivational warrant
+explanation, not a settled genealogy. Adjective-to-verb and
+verb-to-adjective directions differ, as do original-match versus
+smear/knead premises [@Kroonen2013, pp.350-351;
+@Orel2003, p.257]. PWGmc restraint, physical root retraction,
+unstressed suffix mutation and later heavy-syllable syncope
+do not collapse into one event or grammatical sound condition
+[@RingeTaylor2014, pp.126-128,190-192,227-229,257-258].
+
+Phenomenon/proxy: current output does not justify a history,
+nor does an identifier date it. Chronology edges: none proposed;
+no stage-entailed or independently demonstrated canonical edge.
+Reported analogy/sound-symbolic accounts remain author evidence,
+not new CAPR lexical exceptions or grammatical sound laws
+[@Fulk2018, pp.264-265; @Ringe2017, pp.139-140].
+
+### Verdict
+
+Research disposition: eight bounded_limit alignments and eight
+unestablished whole-row causes. Hairlock focused cause remains
+unestablished; make focused explanation is analyst_inference
+under its declared premises. No canonical SC or Registry-verdict
+applies.
+
+Justification: complete arguments distinguish similar-looking
+words and differently allocated cognates, qualify proposed roots,
+and expose actual opposite derivational directions. Neither
+literal matching, author counts nor successful runtime output
+settles these differences [@Orel2003, pp.250-252,257;
+@Kroonen2013, pp.334,343-345,350].
+
+### Propagation (only after research disposition)
+
+SOURCE owners: forms, coverage, analyses, comparisons, rationales,
+reading scopes, finite targets, the two actual applicability
+records, four new accountability receipts, commentary/README/
+this audit and focused survey/analysis regressions. Regeneration
+is exclusively adjudicate.py --refresh.
+
+Independent current-SOURCE verification resolves all28 native
+literal hashes/spans and reverses every28 SOURCE and13 owner
+fields without importing a candidate. A separate one-field
+correction receipt changes the newly introduced RT disposition
+to the existing consulted_applicable value; reversing it first
+preserves the original13-field receipt exactly. It preserves4895 inherited
+forms except the exact28 annotation fields,5026 outside positions,
+430 unaffected cases,385 inherited rationales,1366 outside
+consultations, all786 dictionary review identities/statuses,
+65 unchanged prior research hashes/receipts and46 science hashes.
+Removing only the two new finite targets reconstructs the
+original target hash. Totals4946 forms,1389 consultations,
+5129 positions,440 comparisons,414 rationales;185 bounded/
+208 unreviewed. Dictionary evidence is1676, not a consultation
+or agreement denominator.
+
+Baseline/fingerprint effect: none; no corpus/input/target/stage/
+context/FST/registry/baseline or PDF change. All298 focused
+survey/analysis tests pass. An initial applicability failure
+exposed the new RT disposition's nonstandard spelling; the exact
+correction above fixes the owner, not the population invariant.
+Historical scope guards now follow successive exact receipts,
+checking every old/new link rather than weakening preservation.
+Bibliography, section locators, all79 new-prose printed-page
+references, template headings and whitespace pass. Canonical
+refresh is CONTROL PLANE CLEAN without scientific rebuilds.
+Independent post-refresh queries are saved in the session as
+pgmc-one-hundred-eighty-five-alignments-query-results.txt.
+
+### Residue
+
+Exact gaps remain: selected PGmc loath equivalence; lock noun
+formation/quantity/date apart from close; hairlock's direct-cognate
+warrants and gemination genealogy; louse root/continental/plural
+relationship; lung gender and selected a-versus-source-u derivative;
+conditional lust roots; lye's dated suffixal/velar ancestry; make
+direction/root and full selected PGmc ancestry
+[@Orel2003, pp.233-234,238-241,249-252,257;
+@Kroonen2013, pp.334,338-339,343-345,350-351;
+@Ringe2017, pp.137-140,324-325;
+@RingeTaylor2014, pp.39-40,126-129,190-192,227-229].
+The independent alignment gate refuses208; verified reading
+separately refuses unchanged RT conventions/typography. No
+automatic23 release,24 start, introduction/PDF or scientific
+adoption. Never execute/import a persisted candidate; current
+SOURCE, receipts and regressions are authority.
+
 ## Twenty-second alignment checkpoint: illumination through loam
 
 ### Identity

@@ -109,8 +109,8 @@ explanation or exact remaining premises, the conditioning census and a
 non-adopting consistency watchlist. The current analytical gate still
 certifies citation-unit triage only.
 
-All three relevant held-source passes are persisted: Ringe192, Fulk144
-and Ringe-Taylor256 actual consultations. Each has393 independent
+All three relevant held-source passes are persisted: Ringe192, Fulk145
+and Ringe-Taylor257 actual consultations. Each has393 independent
 applicability dispositions; the1179 screens are not1179 grammar
 negatives. All786 core reviews remain. Of20 scopes,19 are reviewed
 and the Ringe-Taylor conventions scope retains its genuine verification
@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are4895 evidence records,1387 actual consultations and5073
-analytical positions, with438 comparisons and385 rationales. The RT
+There are4946 evidence records,1389 actual consultations and5129
+analytical positions, with440 comparisons and414 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-One hundred seventy-seven core rows now have individually reconciled, bounded alignment:
-1933-2109. The remaining216 are unreviewed. The second tranche builds on
+One hundred eighty-five core rows now have individually reconciled, bounded alignment:
+1933-2117. The remaining208 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,71 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The twenty-third tranche completes loath, mechanical lock, hairlock,
+louse, lung, lust, lye and make, rows2110-2117, on released22 base1e2cb5cb.
+All47 inherited identities survive. Twenty-eight literal occurrences
+and23 scoped processes add51 records; five focused positions reuse
+evidence and29 rationales are added. The103 positions link98 records.
+Twenty-eight exact SOURCE fields comprise16 cells, eight qualified
+arguments, two dates and two page locators. Two genuine close-family
+consultations add two finite targets;13 exact owner fields preserve
+the original scopes/applicability by reversal. All786 dictionary
+review identities/statuses remain, with1676 dictionary evidence
+records separately counted.
+
+Mechanical noun and close/pull verb are different units; Orel and
+Kroonen allocate their external comparisons differently
+[@Orel2003, pp.250,252; @Kroonen2013, pp.334,343].
+Fulk's actual close-family aorist/principal-part argument does not
+quote the selected noun, and RT's explicit PGmc close date does
+not date that noun [@Fulk2018, pp.246-249,263-265,285-286;
+@RingeTaylor2014, pp.39-40]. Hairlock's focused direct-flexible
+case remains unexplained, preserving explicit rejection, owned
+bend connection and conditional substantivization separately
+[@Kroonen2013, p.343; @Orel2003, p.250;
+@Ringe2017, pp.137-140].
+
+Loath's actual PNWGmc adjective and PWGmc adjective differ from
+the denominative verb [@RingeTaylor2014, p.129]. Louse's root
+noun is not its continental i-stems or Celtic plural
+[@Orel2003, p.252]. Lung's feminine header/neuter prose and
+separate feminine OE derivative survive; source u does not
+silently replace the selected a-derivative
+[@Kroonen2013, pp.338-339,344; @Orel2003, pp.240-241,251].
+Lust's Probably-love and Perhaps-lose ancestries remain conditional;
+Ringe's tu-formation date, RT's following-u protection and the
+suffixed pleasant adjective are independent
+[@Orel2003, pp.238,241,249,251; @Kroonen2013, pp.334,345;
+@Ringe2017, pp.324-325; @RingeTaylor2014, pp.29-31,520-521].
+Lye's wash family does not establish a dated selected velar law
+[@Orel2003, pp.238-239].
+
+Make's focused original-meaning/derivational-direction explanation
+is bounded analyst inference, not a named rebuttal or adopted root
+[@Kroonen2013, pp.350-351; @Orel2003, p.257].
+PWGmc restraint, physical root retraction, later suffix shortening/
+syncope, default infinitive and present plural remain distinct;
+the general weak-past argument is not an authored make past
+[@RingeTaylor2014, pp.126-128,190-192,227-229,257-258,516-518].
+All eight whole-row causes remain unestablished. New literal
+receipts are text_checked, not newly image-certified; native
+corruptions and the combining macron in Ringe's entice form
+remain. No corpus/input/target/stage/context/FST/baseline adoption,
+introduction/PDF, automatic23 release or24 start is included.
+Current SOURCE, receipts and regressions are authority; never
+execute/import the persisted tranche23 candidate.
+
+The298-test focused survey/analysis suite passes. All79 new-prose
+printed-page references, bibliography, section locators, template
+headings and whitespace pass; canonical refresh is clean.
+Independent verification preserves all47 identities,4895 inherited
+records except28 exact annotations, all786 dictionary review
+identities/statuses,65 unaffected research hashes and46 scientific
+hashes. One separately receipted RT disposition correction uses
+the established consulted_applicable value; the original13 owner
+amendments and their reversal remain unchanged. Completion is not
+mere preparation, nor is it completion of the393-row programme.
 
 The twenty-second tranche completes light (illumination verb), lime,
 linden, line, list (border), live (selected3sg), liver and loam,

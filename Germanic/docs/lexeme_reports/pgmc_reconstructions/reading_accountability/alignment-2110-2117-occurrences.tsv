@@ -1,0 +1,1373 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment-loath-oe-adjective	RingeTaylor2014	129	144	8	55	58	lap	e1ea5d3d38e262ff0d188811cd2f405682f22f1f9bf4cb30ad924416f8217982	"PNWGrnc *laibaz ‘hateful’ (ON leidr) > PWGmc *laip (OE lap, OF léth, OS led,
+OHG leid) — *laipat't/an ‘to loathe’ > OE lapettan, OHG leidezzen ‘to curse’."		
+alignment-loath-oe-verb	RingeTaylor2014	129	144	8	119	127	lapettan	e1ea5d3d38e262ff0d188811cd2f405682f22f1f9bf4cb30ad924416f8217982	"PNWGrnc *laibaz ‘hateful’ (ON leidr) > PWGmc *laip (OE lap, OF léth, OS led,
+OHG leid) — *laipat't/an ‘to loathe’ > OE lapettan, OHG leidezzen ‘to curse’."		
+alignment-lock-fulk-oe-close	Fulk2018	263	280	1	3741	3746	lūcan	4c31f865e211efdbb5689c44976eb1d11f44c83034e5f461679753d22408d105	"§12.17 Verner's law in strong verbs 263
+waron 'were', gefægon ‘rejoiced'). It is true, nonetheless, that the passive participle
+reflects a voiced one, as predicted, in cweden ‘said' and sewen, gesawen 'seen'. The
+passive participle of wesan ‘be' is unattested in any of the earliest WGmc. languages;
+the later forms OFris. wes(s)en and MHG gewesen, with a voiceless fricative, are most
+likely analogical creations.2
+Whereas it is uncertain whether there was voicing under Verner's law originally
+in the passive participle in class V, the considerable preponderance of the evidence thus
+suggests that with that one possible exception, the pattern in this class was like that in
+classes I-III, whereas in class VI the commonest pattern was voicing in the preterite (sg.
+and pl.) and the pass. participle, and that this was also the pattern for the most secure
+examples of class VII. These patterns plainly have little to do with PIE vowel gradation,
+which thus furnishes no very good explanation for the alternants under Verner's law in
+classes V-VII.³
+1. As Prokosch rightly observes, Olcel. pret. sg. sló (to slá ‘strike') is ambiguous as to whether it reflects
+*slōz or *slōh (see above, §6.14).
+2. In OIcel., r has been extended throughout the paradigm, even to inf. vera, imp. ver(ið), and pp. verit
+(neut.).
+3. For this reason the argument of Ringe that only the pret. sg. in class VI retained a voiceless fricative in
+PGmc. must be regarded as inconclusive. He reasons that since OHG heffen 'lift' is a weak present with weak
+grade of the root, PGmc. *xabjan- should be expected (as in OE hebban, OS hebbian), and OHG can have
+acquired the voiceless fricative reflected throughout the pres. only by analogy to the pret. singular (Ringe &
+Taylor 2014: 100). Yet even if there were a plain correlation in class VI between assumed ablaut grade and
+voicing under Verner's law, it need not be the case that this verb, cognate with Lat. capiō 'take', shows weak
+grade of the root. Rather, this appears to be one of those instances in which full-grade a must be reconstructed
+for PIE (§3.1): so, e.g., Pokorny 1959–69: I, 527-8. There is, after all, the problem that PGmc. a in the pres.
+of class VI appears to have multiple sources (§12.15), and very few other verbs of this class reflect voiced
+fricatives in the pres. in WGmc. Polygenesis of the ablaut in this class renders it inadvisable to reconstruct a
+single pattern of alternants under Verner's law for PGmc. The PGmc. facts appear to be irrecoverable.
+12.18 Aorist presents
+Reflexes of the PIE tudáti-type present stem, with weak grade in the root rather than e
+(§12.3), are securely attested only in Indic and in Germanic, in regard to the latter of
+which they are most commonly referred to as aorist presents. In Greek, for example, the
+opposition between full and weak grades is regularly used to distinguish the present
+stem, and forms based on it, from the aorist stem, as with pres. inf. qɛúyɛı 'flee' and
+imperfect pɛvyov in opposition to aorist inf. Quyɛîv and aorist &qvyov.¹ For that reason
+the existence of the tudáti type in PIE has been doubted, though there is no consensus
+(see $12.3 n. 8). The following, whether they are inherited or post-PIE innovations,² are
+commonly regarded as verbs of this type in Germanic:
+1
+Class I: Go. digandin 'made of clay' (beside full-grade inf. deigan); OIcel. vega 'fight,
+kill' (OHG ubar-wehan 'overcome', OE gewegan, pp. forwegen; cf. full-grade
+Go. weihan, OE wīgan; the verb corresponds to OIr. fichid); also class V Go.
+bidjan ‘request' and cognates (see §12.19 infra), if this has been transferred from
+class I (so Osthoff 1882; cf. Seebold 1970: 92-3, Pokorny 1959–69: I, 114).³
+Class II: Go. ga-lūkan ‘shut' (OIcel. lúka, OE lūcan, OFris. lūka, OS bi-lūkan, OHG
+bi-lühhan); Olcel. lúta ‘bow' (OE lūtan); Olcel. súga 'suck' (OE sūgan, sūcan,
+OS OHG sūgan); OIcel. súpa ‘sip' (OE sūpan, OFris. sūpa, MLG sūpen, OHG
+sufan); OE brūcan 'use' (OFris. brūka, OS brükan, OHG brūhhan; cf. Go. weak"		
+alignment-lock-fulk-gothic-close	Fulk2018	286	303	1	1692	1700	ga-lūkan	226e163af35d6d275c2dd572bdd46dce53c44c4f27674334b57bdbca24666a78	"286
+A Comparative Grammar of the Early Germanic Languages
+and thus, though perhaps not immune to analogical effects (see, e.g., Steriade 2000),
+less disposed to them, whereas e in class I would have been a phoneme. Taking into ac-
+count language- or subfamily-specific sound changes, the following principal parts to
+Go. beitan 'bite' and cognates are representative of the ablaut patterns in the individual
+languages:
+(1)
+(2)
+(3)
+(4)
+Go.
+beitan
+báit
+bitun
+bitans
+OIcel.
+bíta
+beit
+bitu
+bitinn
+OE
+bītan
+bāt
+biton
+biten
+OFris.
+bīta
+bēt
+biten
+biten
+OS
+bītan
+bēt
+bitun
+gibitan
+OHG
+bīzan
+beiz
+bizun
+gibizan
+OHG verbs with stem-final h or w have ē rather than ei in the pret. sg. (§4.17), e.g.
+zīhan 'accuse', zēh, zigun, gizigan.
+*
+Class II, PGmc. (1) eu, (2) au, (3) u, (4) u: The root contains the reflex of PIE
+/u/, which in full grade is preceded by the root vowel. In part (2), PIE oụ > PGmc. au.
+Outside of Gothic, Gmc. u was lowered to o before a in the next syllable. In OFris., on
+the other hand, *-in- (in alternation with much commoner -an-: §12.30) was general-
+ized in the pp., with resulting umlaut, e.g. WGmc. *budin-> beden, with analogical
+extension of e to the pret. pl. (Bremmer 2009: $132). The following principal parts to
+Go. -biudan (in ana-biudan 'command' and faúr-biudan 'forbid') and cognates are
+representative of the ablaut patterns in this class:
+(1)
+(2)
+(3)
+Go.
+OIcel.
+-biudan
+-báup
+-budun
+-budans
+bjóða
+bauð
+buðu
+boðinn
+OE
+bēodan
+bēad
+budon
+boden
+OFris.
+biāda
+bād
+beden
+beden
+OS
+biodan
+bōd
+budun
+gibodan
+OHG
+beotan
+bōt
+butun
+gibotan
+The chief variant of this ablaut pattern is represented by the aorist presents (§12.18),
+which have u in the present stem, e.g. Go. ga-lūkan ‘shut', -láuk, -lukun, -lukans. Olcel.
+jó in the present stem occurs only before dental consonants, otherwise jú, as in fljúga
+'fly', to which the pret. sg. is fló (§4.9).¹ In OS the original diphthong *eu of the present
+stem is preserved before w, as in hreuwan 'rue'. OHG has in part (2) ō only before
+dental consonants and h, otherwise ou (§4.17), e.g. liogan ‘lie', loug, lugun, gilogan.
+Class III, PGmc. (1) e, (2) a, (3) u, (4) u: The stem ends in a consonant cluster,
+usually consisting of a sonorant plus another consonant, which may effect changes upon
+the preceding vowel. Typical is the paradigm of Go. hilpan 'help' and cognates:
+(1)
+(2)
+(3)
+(4)
+Go.
+hilpan
+halp
+hulpun
+hulpans
+OIcel.
+hjálpa
+halp
+hulpu
+holpinn
+OE
+helpan
+healp
+hulpon
+holpen
+OFris.
+helpa
+halp
+hulpen
+hulpen
+OS
+helpan
+halp
+hulpun
+giholpan
+OHG
+helfan
+half
+hulfun
+giholfan
+Olcel. hjálpa shows fracture followed by stress shift and lengthening (§§4.8-9); the
+pret. sg. may also be hjálp, by analogy. In OE healp there is breaking (§4.13), and"		
+alignment-lock-fulk-past-sg	Fulk2018	286	303	1	1709	1714	-láuk	226e163af35d6d275c2dd572bdd46dce53c44c4f27674334b57bdbca24666a78	"286
+A Comparative Grammar of the Early Germanic Languages
+and thus, though perhaps not immune to analogical effects (see, e.g., Steriade 2000),
+less disposed to them, whereas e in class I would have been a phoneme. Taking into ac-
+count language- or subfamily-specific sound changes, the following principal parts to
+Go. beitan 'bite' and cognates are representative of the ablaut patterns in the individual
+languages:
+(1)
+(2)
+(3)
+(4)
+Go.
+beitan
+báit
+bitun
+bitans
+OIcel.
+bíta
+beit
+bitu
+bitinn
+OE
+bītan
+bāt
+biton
+biten
+OFris.
+bīta
+bēt
+biten
+biten
+OS
+bītan
+bēt
+bitun
+gibitan
+OHG
+bīzan
+beiz
+bizun
+gibizan
+OHG verbs with stem-final h or w have ē rather than ei in the pret. sg. (§4.17), e.g.
+zīhan 'accuse', zēh, zigun, gizigan.
+*
+Class II, PGmc. (1) eu, (2) au, (3) u, (4) u: The root contains the reflex of PIE
+/u/, which in full grade is preceded by the root vowel. In part (2), PIE oụ > PGmc. au.
+Outside of Gothic, Gmc. u was lowered to o before a in the next syllable. In OFris., on
+the other hand, *-in- (in alternation with much commoner -an-: §12.30) was general-
+ized in the pp., with resulting umlaut, e.g. WGmc. *budin-> beden, with analogical
+extension of e to the pret. pl. (Bremmer 2009: $132). The following principal parts to
+Go. -biudan (in ana-biudan 'command' and faúr-biudan 'forbid') and cognates are
+representative of the ablaut patterns in this class:
+(1)
+(2)
+(3)
+Go.
+OIcel.
+-biudan
+-báup
+-budun
+-budans
+bjóða
+bauð
+buðu
+boðinn
+OE
+bēodan
+bēad
+budon
+boden
+OFris.
+biāda
+bād
+beden
+beden
+OS
+biodan
+bōd
+budun
+gibodan
+OHG
+beotan
+bōt
+butun
+gibotan
+The chief variant of this ablaut pattern is represented by the aorist presents (§12.18),
+which have u in the present stem, e.g. Go. ga-lūkan ‘shut', -láuk, -lukun, -lukans. Olcel.
+jó in the present stem occurs only before dental consonants, otherwise jú, as in fljúga
+'fly', to which the pret. sg. is fló (§4.9).¹ In OS the original diphthong *eu of the present
+stem is preserved before w, as in hreuwan 'rue'. OHG has in part (2) ō only before
+dental consonants and h, otherwise ou (§4.17), e.g. liogan ‘lie', loug, lugun, gilogan.
+Class III, PGmc. (1) e, (2) a, (3) u, (4) u: The stem ends in a consonant cluster,
+usually consisting of a sonorant plus another consonant, which may effect changes upon
+the preceding vowel. Typical is the paradigm of Go. hilpan 'help' and cognates:
+(1)
+(2)
+(3)
+(4)
+Go.
+hilpan
+halp
+hulpun
+hulpans
+OIcel.
+hjálpa
+halp
+hulpu
+holpinn
+OE
+helpan
+healp
+hulpon
+holpen
+OFris.
+helpa
+halp
+hulpen
+hulpen
+OS
+helpan
+halp
+hulpun
+giholpan
+OHG
+helfan
+half
+hulfun
+giholfan
+Olcel. hjálpa shows fracture followed by stress shift and lengthening (§§4.8-9); the
+pret. sg. may also be hjálp, by analogy. In OE healp there is breaking (§4.13), and"		
+alignment-lock-fulk-past-pl	Fulk2018	286	303	1	1716	1722	-lukun	226e163af35d6d275c2dd572bdd46dce53c44c4f27674334b57bdbca24666a78	"286
+A Comparative Grammar of the Early Germanic Languages
+and thus, though perhaps not immune to analogical effects (see, e.g., Steriade 2000),
+less disposed to them, whereas e in class I would have been a phoneme. Taking into ac-
+count language- or subfamily-specific sound changes, the following principal parts to
+Go. beitan 'bite' and cognates are representative of the ablaut patterns in the individual
+languages:
+(1)
+(2)
+(3)
+(4)
+Go.
+beitan
+báit
+bitun
+bitans
+OIcel.
+bíta
+beit
+bitu
+bitinn
+OE
+bītan
+bāt
+biton
+biten
+OFris.
+bīta
+bēt
+biten
+biten
+OS
+bītan
+bēt
+bitun
+gibitan
+OHG
+bīzan
+beiz
+bizun
+gibizan
+OHG verbs with stem-final h or w have ē rather than ei in the pret. sg. (§4.17), e.g.
+zīhan 'accuse', zēh, zigun, gizigan.
+*
+Class II, PGmc. (1) eu, (2) au, (3) u, (4) u: The root contains the reflex of PIE
+/u/, which in full grade is preceded by the root vowel. In part (2), PIE oụ > PGmc. au.
+Outside of Gothic, Gmc. u was lowered to o before a in the next syllable. In OFris., on
+the other hand, *-in- (in alternation with much commoner -an-: §12.30) was general-
+ized in the pp., with resulting umlaut, e.g. WGmc. *budin-> beden, with analogical
+extension of e to the pret. pl. (Bremmer 2009: $132). The following principal parts to
+Go. -biudan (in ana-biudan 'command' and faúr-biudan 'forbid') and cognates are
+representative of the ablaut patterns in this class:
+(1)
+(2)
+(3)
+Go.
+OIcel.
+-biudan
+-báup
+-budun
+-budans
+bjóða
+bauð
+buðu
+boðinn
+OE
+bēodan
+bēad
+budon
+boden
+OFris.
+biāda
+bād
+beden
+beden
+OS
+biodan
+bōd
+budun
+gibodan
+OHG
+beotan
+bōt
+butun
+gibotan
+The chief variant of this ablaut pattern is represented by the aorist presents (§12.18),
+which have u in the present stem, e.g. Go. ga-lūkan ‘shut', -láuk, -lukun, -lukans. Olcel.
+jó in the present stem occurs only before dental consonants, otherwise jú, as in fljúga
+'fly', to which the pret. sg. is fló (§4.9).¹ In OS the original diphthong *eu of the present
+stem is preserved before w, as in hreuwan 'rue'. OHG has in part (2) ō only before
+dental consonants and h, otherwise ou (§4.17), e.g. liogan ‘lie', loug, lugun, gilogan.
+Class III, PGmc. (1) e, (2) a, (3) u, (4) u: The stem ends in a consonant cluster,
+usually consisting of a sonorant plus another consonant, which may effect changes upon
+the preceding vowel. Typical is the paradigm of Go. hilpan 'help' and cognates:
+(1)
+(2)
+(3)
+(4)
+Go.
+hilpan
+halp
+hulpun
+hulpans
+OIcel.
+hjálpa
+halp
+hulpu
+holpinn
+OE
+helpan
+healp
+hulpon
+holpen
+OFris.
+helpa
+halp
+hulpen
+hulpen
+OS
+helpan
+halp
+hulpun
+giholpan
+OHG
+helfan
+half
+hulfun
+giholfan
+Olcel. hjálpa shows fracture followed by stress shift and lengthening (§§4.8-9); the
+pret. sg. may also be hjálp, by analogy. In OE healp there is breaking (§4.13), and"		
+alignment-lock-fulk-participle	Fulk2018	286	303	1	1724	1731	-lukans	226e163af35d6d275c2dd572bdd46dce53c44c4f27674334b57bdbca24666a78	"286
+A Comparative Grammar of the Early Germanic Languages
+and thus, though perhaps not immune to analogical effects (see, e.g., Steriade 2000),
+less disposed to them, whereas e in class I would have been a phoneme. Taking into ac-
+count language- or subfamily-specific sound changes, the following principal parts to
+Go. beitan 'bite' and cognates are representative of the ablaut patterns in the individual
+languages:
+(1)
+(2)
+(3)
+(4)
+Go.
+beitan
+báit
+bitun
+bitans
+OIcel.
+bíta
+beit
+bitu
+bitinn
+OE
+bītan
+bāt
+biton
+biten
+OFris.
+bīta
+bēt
+biten
+biten
+OS
+bītan
+bēt
+bitun
+gibitan
+OHG
+bīzan
+beiz
+bizun
+gibizan
+OHG verbs with stem-final h or w have ē rather than ei in the pret. sg. (§4.17), e.g.
+zīhan 'accuse', zēh, zigun, gizigan.
+*
+Class II, PGmc. (1) eu, (2) au, (3) u, (4) u: The root contains the reflex of PIE
+/u/, which in full grade is preceded by the root vowel. In part (2), PIE oụ > PGmc. au.
+Outside of Gothic, Gmc. u was lowered to o before a in the next syllable. In OFris., on
+the other hand, *-in- (in alternation with much commoner -an-: §12.30) was general-
+ized in the pp., with resulting umlaut, e.g. WGmc. *budin-> beden, with analogical
+extension of e to the pret. pl. (Bremmer 2009: $132). The following principal parts to
+Go. -biudan (in ana-biudan 'command' and faúr-biudan 'forbid') and cognates are
+representative of the ablaut patterns in this class:
+(1)
+(2)
+(3)
+Go.
+OIcel.
+-biudan
+-báup
+-budun
+-budans
+bjóða
+bauð
+buðu
+boðinn
+OE
+bēodan
+bēad
+budon
+boden
+OFris.
+biāda
+bād
+beden
+beden
+OS
+biodan
+bōd
+budun
+gibodan
+OHG
+beotan
+bōt
+butun
+gibotan
+The chief variant of this ablaut pattern is represented by the aorist presents (§12.18),
+which have u in the present stem, e.g. Go. ga-lūkan ‘shut', -láuk, -lukun, -lukans. Olcel.
+jó in the present stem occurs only before dental consonants, otherwise jú, as in fljúga
+'fly', to which the pret. sg. is fló (§4.9).¹ In OS the original diphthong *eu of the present
+stem is preserved before w, as in hreuwan 'rue'. OHG has in part (2) ō only before
+dental consonants and h, otherwise ou (§4.17), e.g. liogan ‘lie', loug, lugun, gilogan.
+Class III, PGmc. (1) e, (2) a, (3) u, (4) u: The stem ends in a consonant cluster,
+usually consisting of a sonorant plus another consonant, which may effect changes upon
+the preceding vowel. Typical is the paradigm of Go. hilpan 'help' and cognates:
+(1)
+(2)
+(3)
+(4)
+Go.
+hilpan
+halp
+hulpun
+hulpans
+OIcel.
+hjálpa
+halp
+hulpu
+holpinn
+OE
+helpan
+healp
+hulpon
+holpen
+OFris.
+helpa
+halp
+hulpen
+hulpen
+OS
+helpan
+halp
+hulpun
+giholpan
+OHG
+helfan
+half
+hulfun
+giholfan
+Olcel. hjálpa shows fracture followed by stress shift and lengthening (§§4.8-9); the
+pret. sg. may also be hjálp, by analogy. In OE healp there is breaking (§4.13), and"		
+alignment-lock-rt-pgmc-close	RingeTaylor2014	39	54	5	5	12	*lakang	5125fbf168607fb81cb77dc19c09605d3e7ffc5149027cfe0ad71e6452746999	"PGme *lakang ‘to close’ > Goth. galiikan, ON lika, OE lucan, OF bi-luka, OS bi-
+lukan, OHG bi-lahhan."		
+alignment-lock-rt-oe-weed	RingeTaylor2014	40	55	6	3	8	lican	fea648e8a32d5cf9ea368114684acebb3eecd56af006cd9b034cd9cd4d33188a	"OE lican ‘to weed’, OF lika ‘to pull’, but OHG arliohhan ‘to root out’ (OE deriv.
+with *u, Seebold 1970: 337);"		
+alignment-hairlock-flexible	Kroonen2013	343	383	1	1280	1286	lùgnas	39f251e1618445d389b4fbfac7190e7073433a4a767be98191b7d394492e7e0f	"*luka-
+343
+A European word for 'lynx'. The form *luhsa- corresponds to the feminine
+*luhō- (q.v.) as *fuhsa- 'fox' to *fuhōn- 'vixen', but in spite of this regular
+proportion, it is difficult to reconstruct a proto-form beyond Germanic. All
+potential cognates show some kind of irregular sound correspondence: the
+laryngeal of Baltic, the r of Slavic, the n of Greek, the g of Irish. Perhaps,
+these irregularities result from multiple tabooistic distortions. The alterna-
+tive is to assume repeated borrowing from a non-Indo-European language
+(or languages).
+*luka-n. 'weed(s)' - ON lok n. 'id.', Far. lok n. 'id.', Sw. dial. luk 'id.', EDa. lug
+'id.' (DRV).
+The etymological link with Gr. Aúyos 'twig' (e.g. Falk/Torp 1960: 653) is
+formally apt, but since the Germanic word was derived directly from to
+strong verb *leukan- ~ *lūkan- 'to pull' (q.v.), the formal and semantic
+match with the Greek word is likely to be coincidental.
+-
+*lukka- m. 'tuft' ON lokkr m. 'lock of hair', Far. lokkur m. ‘id.', OE loc m.
+'id.', E lock, Du. lok c. 'id.', OHG loc m. 'id.', G Locke f. 'id.' (DRV).
+An a-stem that in view of Cimb. lock m. 'tuft of wool' must have been de-
+rived from the strong verb *leukan- ~ *lūkan- 'to pull' (cf. also *luka-
+'weeds'). There is no direct link with Lith. lùgnas adj. 'flexible' (pace
+Pokorny IEW: 685-6).
+*luk(k)ōn- w.v. 'to caress, lure, entice' - ON lokka w.v. 'to allure, entice',
+Elfd. lukka w.v. 'id.', OE a-loccian w.v. 'to entice', ge-loccian w.v. 'to caress',
+MDu. locken w.v. 'to entice', Du. lokken w.v. 'id.', OHG lockōn, lohhōn w.v. 'id.',
+Glocken w.v. 'id.'⇒ *lugh)-néh₂- (NEUR) Lith. lù(n)ginti 'to allure, fondle' <
+*lug(h)-nh2-.
+- –
+An iterative verb of ambiguous origin. It is usually derived from *leugan-
+'to lie' or connected to Lith. lugóti 'to ask' (cf. Falk/Torp 1960: 653). Alter-
+natively, it has been interpreted as belonging to *leukan- ~ *lūkan- 'to pull'
+with a semantic shift of 'to attract' to 'to entice'. The Germanic meaning 'to
+entice', however, clearly developed from a more primitive 'to caress', which
+occurs both in Old Norse and Old High German. A more suitable cognate
+therefore is Lith. lù(n)ginti, which similarly combines both meanings. In
+addition, it is formally parallel to the Pre-Germanic neh2-present, and thus
+allows us to explain the variation of OHG lockōn < *lukkōn- and lohhōn <
+*lukōn as resulting from an iterative paradigm 3sg. *lukkōþi, 3pl.
+*lukunanpi < *lug-néh₂-ti, *lug-nh2-énti.
+*lumen-w.v. 'to beat' - Icel. luma w.v. 'to beat, thrash' *h3lmh1-eh1- (EUR)
+-Lith. limti (limstu, limau) 'to bend, stoop', dial. 'to break', Latv. limt² 'to
+slip, collapse', OPru. limtwei 'to break' < *h3lmh₁-."		
+alignment-hairlock-ringe-flexible	Ringe2017	138	149	2	1243	1249	lùgnas	9f87f3262067a6844338e6e1c37d2385618009c81f4a0e8bc4d285f254f0dc24	"But there are also counterexamples to that formulation. The following three21
+seem especially convincing:
+   PIE *dh2pn̥óm ‘sacriﬁcial meal’ (cf. Gk. δαπάνη ‘expense’, orig. collective with
+     productively shifted accent; orig. meaning in Lat. daps) ! post-PIE *dh2pnóm
+     (cf. Lat. damnum ‘expense’) > PGmc *tabną ‘sacriﬁce’ (cf. ON tafn);
+   PGmc *siuniz ‘sight’ (Goth. siuns, ON sýn, OE sīen, etc.) < *seǥwniz < *sehwnís,
+     cf. *sehwaną ‘to see’ (Goth. saíƕan, ON sjá, OE sēon, OHG sehan, etc.);
+   PGmc (?) *þegnaz ‘servant, retainer’ (ON þegn, OE þeġn, OS thegan, OHG degan).
+The last example is not certainly reconstructable for PGmc, since there is no Gothic
+cognate; but if it is really connected with Gk. τέκνον /téknon/ ‘child’ (Lühr : ),
+its *g seems to show that the accent fell on the sufﬁx in pre-PGmc, and in that case it
+is a counterexample.
+   What is the evidence for Kluge’s Law, then, and how can the counterexamples be
+explained away? There seem to be exactly two Germanic words with geminate stops
+that have plausible cognates with a sufﬁx *-nó- outside Germanic:
+   PNWGmc *lokkaz ‘lock (of hair)’ (cf. ON lokkr, OE locc, OHG lok, etc.) could be a
+     substantivization of an adjective cognate with Lith. lùgnas ‘ﬂexible’;
+   PNWGmc *lokkōną ‘to entice’ (cf. ON lokka, OE loccian, OHG lockōn) could be
+     derived from an adjective cognate with Lith. palùgnas ‘ﬂattering, insincere’, or
+     from one cognate with Lith. palugnùs ‘pleasing’.
+The former is often connected with Gk λύγος /lúgos/ ‘withy’—but Greek γ reﬂects PIE
+*g, not *gh, and we have already seen a better example of pre-PGmc *gn in which
+Kluge’s Law did not operate. In any case, two examples whose semantics are not
+entirely straightforward are an inadequate basis for postulating a regular sound change.
+   Both Kluge and later proponents have attempted to increase the empirical basis for
+the sound change by suggesting that geminate stops seem to be especially common
+among n-stems; it is suggested that the alternation of the n-stem sufﬁx *-´C-e/on- ~
+*-C-n-´ (where *C is a root-ﬁnal stop and *´ indicates the position of the accent)
+became *-´C-e/on- ~ *-CC-´ by Kluge’s Law, and the resulting alternation between
+root-ﬁnal *-C- and geminate *-CC- was leveled in both directions (Kluge :"		
+alignment-hairlock-ringe-entice	Ringe2017	138	149	2	1271	1280	*lokkōną	9f87f3262067a6844338e6e1c37d2385618009c81f4a0e8bc4d285f254f0dc24	"But there are also counterexamples to that formulation. The following three21
+seem especially convincing:
+   PIE *dh2pn̥óm ‘sacriﬁcial meal’ (cf. Gk. δαπάνη ‘expense’, orig. collective with
+     productively shifted accent; orig. meaning in Lat. daps) ! post-PIE *dh2pnóm
+     (cf. Lat. damnum ‘expense’) > PGmc *tabną ‘sacriﬁce’ (cf. ON tafn);
+   PGmc *siuniz ‘sight’ (Goth. siuns, ON sýn, OE sīen, etc.) < *seǥwniz < *sehwnís,
+     cf. *sehwaną ‘to see’ (Goth. saíƕan, ON sjá, OE sēon, OHG sehan, etc.);
+   PGmc (?) *þegnaz ‘servant, retainer’ (ON þegn, OE þeġn, OS thegan, OHG degan).
+The last example is not certainly reconstructable for PGmc, since there is no Gothic
+cognate; but if it is really connected with Gk. τέκνον /téknon/ ‘child’ (Lühr : ),
+its *g seems to show that the accent fell on the sufﬁx in pre-PGmc, and in that case it
+is a counterexample.
+   What is the evidence for Kluge’s Law, then, and how can the counterexamples be
+explained away? There seem to be exactly two Germanic words with geminate stops
+that have plausible cognates with a sufﬁx *-nó- outside Germanic:
+   PNWGmc *lokkaz ‘lock (of hair)’ (cf. ON lokkr, OE locc, OHG lok, etc.) could be a
+     substantivization of an adjective cognate with Lith. lùgnas ‘ﬂexible’;
+   PNWGmc *lokkōną ‘to entice’ (cf. ON lokka, OE loccian, OHG lockōn) could be
+     derived from an adjective cognate with Lith. palùgnas ‘ﬂattering, insincere’, or
+     from one cognate with Lith. palugnùs ‘pleasing’.
+The former is often connected with Gk λύγος /lúgos/ ‘withy’—but Greek γ reﬂects PIE
+*g, not *gh, and we have already seen a better example of pre-PGmc *gn in which
+Kluge’s Law did not operate. In any case, two examples whose semantics are not
+entirely straightforward are an inadequate basis for postulating a regular sound change.
+   Both Kluge and later proponents have attempted to increase the empirical basis for
+the sound change by suggesting that geminate stops seem to be especially common
+among n-stems; it is suggested that the alternation of the n-stem sufﬁx *-´C-e/on- ~
+*-C-n-´ (where *C is a root-ﬁnal stop and *´ indicates the position of the accent)
+became *-´C-e/on- ~ *-CC-´ by Kluge’s Law, and the resulting alternation between
+root-ﬁnal *-C- and geminate *-CC- was leveled in both directions (Kluge :"		
+alignment-hairlock-iterative-sg	Kroonen2013	343	383	1	2411	2419	*lukkōþi	39f251e1618445d389b4fbfac7190e7073433a4a767be98191b7d394492e7e0f	"*luka-
+343
+A European word for 'lynx'. The form *luhsa- corresponds to the feminine
+*luhō- (q.v.) as *fuhsa- 'fox' to *fuhōn- 'vixen', but in spite of this regular
+proportion, it is difficult to reconstruct a proto-form beyond Germanic. All
+potential cognates show some kind of irregular sound correspondence: the
+laryngeal of Baltic, the r of Slavic, the n of Greek, the g of Irish. Perhaps,
+these irregularities result from multiple tabooistic distortions. The alterna-
+tive is to assume repeated borrowing from a non-Indo-European language
+(or languages).
+*luka-n. 'weed(s)' - ON lok n. 'id.', Far. lok n. 'id.', Sw. dial. luk 'id.', EDa. lug
+'id.' (DRV).
+The etymological link with Gr. Aúyos 'twig' (e.g. Falk/Torp 1960: 653) is
+formally apt, but since the Germanic word was derived directly from to
+strong verb *leukan- ~ *lūkan- 'to pull' (q.v.), the formal and semantic
+match with the Greek word is likely to be coincidental.
+-
+*lukka- m. 'tuft' ON lokkr m. 'lock of hair', Far. lokkur m. ‘id.', OE loc m.
+'id.', E lock, Du. lok c. 'id.', OHG loc m. 'id.', G Locke f. 'id.' (DRV).
+An a-stem that in view of Cimb. lock m. 'tuft of wool' must have been de-
+rived from the strong verb *leukan- ~ *lūkan- 'to pull' (cf. also *luka-
+'weeds'). There is no direct link with Lith. lùgnas adj. 'flexible' (pace
+Pokorny IEW: 685-6).
+*luk(k)ōn- w.v. 'to caress, lure, entice' - ON lokka w.v. 'to allure, entice',
+Elfd. lukka w.v. 'id.', OE a-loccian w.v. 'to entice', ge-loccian w.v. 'to caress',
+MDu. locken w.v. 'to entice', Du. lokken w.v. 'id.', OHG lockōn, lohhōn w.v. 'id.',
+Glocken w.v. 'id.'⇒ *lugh)-néh₂- (NEUR) Lith. lù(n)ginti 'to allure, fondle' <
+*lug(h)-nh2-.
+- –
+An iterative verb of ambiguous origin. It is usually derived from *leugan-
+'to lie' or connected to Lith. lugóti 'to ask' (cf. Falk/Torp 1960: 653). Alter-
+natively, it has been interpreted as belonging to *leukan- ~ *lūkan- 'to pull'
+with a semantic shift of 'to attract' to 'to entice'. The Germanic meaning 'to
+entice', however, clearly developed from a more primitive 'to caress', which
+occurs both in Old Norse and Old High German. A more suitable cognate
+therefore is Lith. lù(n)ginti, which similarly combines both meanings. In
+addition, it is formally parallel to the Pre-Germanic neh2-present, and thus
+allows us to explain the variation of OHG lockōn < *lukkōn- and lohhōn <
+*lukōn as resulting from an iterative paradigm 3sg. *lukkōþi, 3pl.
+*lukunanpi < *lug-néh₂-ti, *lug-nh2-énti.
+*lumen-w.v. 'to beat' - Icel. luma w.v. 'to beat, thrash' *h3lmh1-eh1- (EUR)
+-Lith. limti (limstu, limau) 'to bend, stoop', dial. 'to break', Latv. limt² 'to
+slip, collapse', OPru. limtwei 'to break' < *h3lmh₁-."		
+alignment-hairlock-iterative-pl	Kroonen2013	343	383	1	2426	2436	*lukunanpi	39f251e1618445d389b4fbfac7190e7073433a4a767be98191b7d394492e7e0f	"*luka-
+343
+A European word for 'lynx'. The form *luhsa- corresponds to the feminine
+*luhō- (q.v.) as *fuhsa- 'fox' to *fuhōn- 'vixen', but in spite of this regular
+proportion, it is difficult to reconstruct a proto-form beyond Germanic. All
+potential cognates show some kind of irregular sound correspondence: the
+laryngeal of Baltic, the r of Slavic, the n of Greek, the g of Irish. Perhaps,
+these irregularities result from multiple tabooistic distortions. The alterna-
+tive is to assume repeated borrowing from a non-Indo-European language
+(or languages).
+*luka-n. 'weed(s)' - ON lok n. 'id.', Far. lok n. 'id.', Sw. dial. luk 'id.', EDa. lug
+'id.' (DRV).
+The etymological link with Gr. Aúyos 'twig' (e.g. Falk/Torp 1960: 653) is
+formally apt, but since the Germanic word was derived directly from to
+strong verb *leukan- ~ *lūkan- 'to pull' (q.v.), the formal and semantic
+match with the Greek word is likely to be coincidental.
+-
+*lukka- m. 'tuft' ON lokkr m. 'lock of hair', Far. lokkur m. ‘id.', OE loc m.
+'id.', E lock, Du. lok c. 'id.', OHG loc m. 'id.', G Locke f. 'id.' (DRV).
+An a-stem that in view of Cimb. lock m. 'tuft of wool' must have been de-
+rived from the strong verb *leukan- ~ *lūkan- 'to pull' (cf. also *luka-
+'weeds'). There is no direct link with Lith. lùgnas adj. 'flexible' (pace
+Pokorny IEW: 685-6).
+*luk(k)ōn- w.v. 'to caress, lure, entice' - ON lokka w.v. 'to allure, entice',
+Elfd. lukka w.v. 'id.', OE a-loccian w.v. 'to entice', ge-loccian w.v. 'to caress',
+MDu. locken w.v. 'to entice', Du. lokken w.v. 'id.', OHG lockōn, lohhōn w.v. 'id.',
+Glocken w.v. 'id.'⇒ *lugh)-néh₂- (NEUR) Lith. lù(n)ginti 'to allure, fondle' <
+*lug(h)-nh2-.
+- –
+An iterative verb of ambiguous origin. It is usually derived from *leugan-
+'to lie' or connected to Lith. lugóti 'to ask' (cf. Falk/Torp 1960: 653). Alter-
+natively, it has been interpreted as belonging to *leukan- ~ *lūkan- 'to pull'
+with a semantic shift of 'to attract' to 'to entice'. The Germanic meaning 'to
+entice', however, clearly developed from a more primitive 'to caress', which
+occurs both in Old Norse and Old High German. A more suitable cognate
+therefore is Lith. lù(n)ginti, which similarly combines both meanings. In
+addition, it is formally parallel to the Pre-Germanic neh2-present, and thus
+allows us to explain the variation of OHG lockōn < *lukkōn- and lohhōn <
+*lukōn as resulting from an iterative paradigm 3sg. *lukkōþi, 3pl.
+*lukunanpi < *lug-néh₂-ti, *lug-nh2-énti.
+*lumen-w.v. 'to beat' - Icel. luma w.v. 'to beat, thrash' *h3lmh1-eh1- (EUR)
+-Lith. limti (limstu, limau) 'to bend, stoop', dial. 'to break', Latv. limt² 'to
+slip, collapse', OPru. limtwei 'to break' < *h3lmh₁-."		
+alignment-lung-light-base	Kroonen2013	344	384	1	1478	1486	*lungra-	7675b76fe878ee80cce6761066c2424a8759a46a0492967d426ebe88e65cb4a9	"344
+*lunda/ō-
+A stative formation closely related to *lamjan- (q.v.).
+-
+*lunda/ō- m./f. 'grove' - ON lundr m. 'id.', Icel. lundur m. 'id.', Far. lund f.
+'id.', Sw. lund c. 'id.'⇒ *Indh-o/ehz- (EUR) Ir. land m./f. 'land, ground, plot;
+house, building, church', MW llann f. 'church-yard', OPru. lindan acc. 'valley',
+Ru. ljadá f. 'recently overgrown land, fallow land' < *Indh-o/eh2- (also cf. CS
+lędina, SCr. lèdina, ledina f. 'id.').
+A zero-grade formation closely related to *landa- (q.v.).
+*lund(j)ō- f. 'fat' - ON lund f. 'mind, temper', Far. lund f. 'disposition', pl.
+'internal back muscles, tenderloin', OE lynd f. 'fat', OHG lunda f. 'tallow'⇒
+*Indh-(i)eh2- (IE).
+A zero-grade formation related to *landjō- (q.v.). With OE lynd <*lundi-, it
+is possible to postulate an ablauting ih₂-stem nom. *landi, gen. *lundjōz.
+*lungōn- f. 'lung' - ON lungu n.pl. 'id.', Far. lunga n. 'id.', Elfd. lungga f. 'id.',
+E lung, OS lunga f. 'id.', Du. long c. 'id.', OHG lungun f.pl. 'id.', G Lunge f. 'id.' ⇒
+*hilngwh-on- (IE) Arm. lanj-k' pl. 'breast' < *h₁lngwh-ih₁- (Beekes 2003:
+178, 190).
+-
+A neuter n-stem derived from the stem of *lungra- 'light' (q.v.). For the
+semantic development, cf. Ru. lëgkoe, which belongs to Ru. lëgkij adj. 'light'
+<*hilngwh-u-, Lat. leve iecur, EDu. lichte 'lung', E lights pl. 'lungs (esp. of cat-
+tle)'. Also cf. OE lungen, OFri. lungen(e), OS lungannia, OHG lungunna f. 'lung'
+<*lungunjō-. There probably is no link with ON lungi m. 'core, essence'.
+*lungra- adj. 'quick, light' - OE lungre adv. 'id.', OHG lungar adj. 'easy,
+quick', MHG lunger adj. 'quick, happy' *h₁lngwh-ro- (IE).
+A PIE ro-stem identical to Gr. Éλappós adj. 'light, nimble, quick, small'.
+Related to *linhta- (q.v.).
+-
+*luniz- n. 'linchpin' OE lynis m. 'id.', E linch, OS lunis m. 'id.', MDu. lunse,
+lense f. 'id.', Du. luns c. 'id.', OHG lun f. 'id.', G Lünse f. 'id.' (GM).
+All dialectal variants split off from a primary s-stem *lunaz, gen. *lunizaz:
+1. OHG lun < *luni(z)-; 2. OE lynis, OS lunis < *lunisa-; 3. MDu. lunse, G Lünse
+< *lunisō-. MDu. lense could theoretically be based on a full-grade root
+(Franck 1949: 404), thus implying a paradigm nom. *lenaz, gen. *lunizaz <
+*lénH-os, *InH-és-os. Extra-Gm. parallels are lacking, however, and lense may
+actually be a Frisianism, the expected outcome of PGm. *lunisō- being *lense
+in Old Frisian. The traditionally compared Skt. āṇí- ‘axle-pin, linchpin; part
+of the leg above the knee' as well as ToB yoñiye 'hip' were borrowed from a
+lost language in Central Asia (Pinault 2003)."		
+alignment-lung-pie-ro	Kroonen2013	344	384	1	1593	1605	*h₁lngwh-ro-	7675b76fe878ee80cce6761066c2424a8759a46a0492967d426ebe88e65cb4a9	"344
+*lunda/ō-
+A stative formation closely related to *lamjan- (q.v.).
+-
+*lunda/ō- m./f. 'grove' - ON lundr m. 'id.', Icel. lundur m. 'id.', Far. lund f.
+'id.', Sw. lund c. 'id.'⇒ *Indh-o/ehz- (EUR) Ir. land m./f. 'land, ground, plot;
+house, building, church', MW llann f. 'church-yard', OPru. lindan acc. 'valley',
+Ru. ljadá f. 'recently overgrown land, fallow land' < *Indh-o/eh2- (also cf. CS
+lędina, SCr. lèdina, ledina f. 'id.').
+A zero-grade formation closely related to *landa- (q.v.).
+*lund(j)ō- f. 'fat' - ON lund f. 'mind, temper', Far. lund f. 'disposition', pl.
+'internal back muscles, tenderloin', OE lynd f. 'fat', OHG lunda f. 'tallow'⇒
+*Indh-(i)eh2- (IE).
+A zero-grade formation related to *landjō- (q.v.). With OE lynd <*lundi-, it
+is possible to postulate an ablauting ih₂-stem nom. *landi, gen. *lundjōz.
+*lungōn- f. 'lung' - ON lungu n.pl. 'id.', Far. lunga n. 'id.', Elfd. lungga f. 'id.',
+E lung, OS lunga f. 'id.', Du. long c. 'id.', OHG lungun f.pl. 'id.', G Lunge f. 'id.' ⇒
+*hilngwh-on- (IE) Arm. lanj-k' pl. 'breast' < *h₁lngwh-ih₁- (Beekes 2003:
+178, 190).
+-
+A neuter n-stem derived from the stem of *lungra- 'light' (q.v.). For the
+semantic development, cf. Ru. lëgkoe, which belongs to Ru. lëgkij adj. 'light'
+<*hilngwh-u-, Lat. leve iecur, EDu. lichte 'lung', E lights pl. 'lungs (esp. of cat-
+tle)'. Also cf. OE lungen, OFri. lungen(e), OS lungannia, OHG lungunna f. 'lung'
+<*lungunjō-. There probably is no link with ON lungi m. 'core, essence'.
+*lungra- adj. 'quick, light' - OE lungre adv. 'id.', OHG lungar adj. 'easy,
+quick', MHG lunger adj. 'quick, happy' *h₁lngwh-ro- (IE).
+A PIE ro-stem identical to Gr. Éλappós adj. 'light, nimble, quick, small'.
+Related to *linhta- (q.v.).
+-
+*luniz- n. 'linchpin' OE lynis m. 'id.', E linch, OS lunis m. 'id.', MDu. lunse,
+lense f. 'id.', Du. luns c. 'id.', OHG lun f. 'id.', G Lünse f. 'id.' (GM).
+All dialectal variants split off from a primary s-stem *lunaz, gen. *lunizaz:
+1. OHG lun < *luni(z)-; 2. OE lynis, OS lunis < *lunisa-; 3. MDu. lunse, G Lünse
+< *lunisō-. MDu. lense could theoretically be based on a full-grade root
+(Franck 1949: 404), thus implying a paradigm nom. *lenaz, gen. *lunizaz <
+*lénH-os, *InH-és-os. Extra-Gm. parallels are lacking, however, and lense may
+actually be a Frisianism, the expected outcome of PGm. *lunisō- being *lense
+in Old Frisian. The traditionally compared Skt. āṇí- ‘axle-pin, linchpin; part
+of the leg above the knee' as well as ToB yoñiye 'hip' were borrowed from a
+lost language in Central Asia (Pinault 2003)."		
+alignment-lung-light-to	Kroonen2013	339	379	1	0	8	*linhta-	62509a5339a3eea7e3c8daa8f1d6f91dd7eeb2872eca4d8228c0718005beeca2	"*linhta-
+339
+A strong verb continuing an old nasal present to the root *hilegwh-. See
+also *linhta- and *lungra-.
+*linhta- adj. 'light' -Go. leihts adj. 'id.', ON léttr adj. 'light, easy; nimble,
+active', Far. lættur adj. 'light, easy', Elfd. litt adj. 'id.', OE līht, leoht adj. 'id.', E
+light, OFri. licht adj. 'id.', Du. licht adj. 'id.', OHG liht adj. 'easy', G leicht adj.
+'id.' (DRV).
+A to-stem adjective derived from *lingwan- (q.v.).
+*linpa- adj. 'flexible, soft' - ON linnr adj. 'mild, soft', Far. linur adj. 'soft,
+slack, limp', Elfd. lin adj. 'soft', OE līð, līõe adj. 'id.', E lithe, OS līthi adj. 'id.',
+OHG lind, lindi adj. 'mild, tender', G ge-linde adj. 'delicate, soft'⇒ *lén-to-
+(EUR) Identical to Lat. lentus adj. 'pliant, flexible; tough; sticky; slow' and
+Lith. dial. lentas adj. 'quiet, calm'.
+Also cf. the inchoative Go. af-linnan 'to abate, go away', ON linna 'to desist
+from', OE linnan 'to cease', OHG bi-linnan 'to give away' < *linnōn- <
+*linpnōn-.
+*lisan-pret.-pres. 'to know' - Go. lisan*, 3sg. lais 'id.' (EUR).
+A marginally attested preterite-present, 3sg. *laise, 3pl. *lisunp, to a root
+*leis-, cf. Go. lubja-leis adj. 'having knowledge about drugs' < *-līsa-. The
+meaning of the verb must in view of the obviously related *laisti- ‘track;
+model' (q.v.) have shifted from an aspectually perfective 'to have traced'.
+See also *laizjan-, *liznōn- and *listi-.
+-
+*listi- f. 'skill' — Go. list f. 'cunning', ON list f. 'art, craft', Far. list f. 'art; cun-
+ning', OE list f. 'art, skill; trick', OFri. list f. 'knowledge; deceit', OS list f.
+'craftiness, cleverness', Du. list c. 'trick', OHG list m./f. 'knowledge', G List f.
+'cunning'⇒ *lis-ti- (DRV).
+A ti-stem to the preterite-present *lisan- (q.v.).
+*litila- adj. 'small' - Go. leitils adj. 'id.', ON lítill adj. 'id.', Far. lítil adj. 'id.',
+Elfd. litn, lisl- adj. 'id.', OE lytel, lītel, Nrth. lyttil adj. 'id.', E little, OS luttil adj.
+'id.', Du. luttel adj. 'few', OHG lūzil, luzzil adj. ‘id.', MHG lūtzel adj. 'id.' (GM).
+The default Germanic word for 'small'. The derivation of the word is still
+problematic. The suffix *-ila- is paralleled by the antonym *mekila- ‘big,
+much' (q.v.). Equally parallel is the lack of this suffix in the closely related
+OE lýt, OS lňt, MHG lūz adj. 'few' < *lūtja- ~ *luttja- and the antonym ME
+mich(e), much(e), E much < *mekja-. The radical alternation of *līt-, *lūt- and
+*lutt- remains unexplained, however. Until this alternation has been re-
+solved, it will be difficult to find a good etymology. The comparisons with
+*lūtan- 'to stoop' and Olr. lútu 'little finger' (cf. Elfd. sår-ludd 'finger stall'?)
+are futile, for instance, because they fail to account for the root variant *līt-."		
+alignment-lust-verbal-root	Kroonen2013	345	385	1	939	944	*lus-	4485a5d25e4b0adff6fd21067ba42b7e2516bc8308b29752c4d40b89f37ed6d2	"*luppōn-
+345
+*luppōn- f. 'flea' - Far. loppa f. 'id.', OSw. loppa f. 'id.', Elfd. luppa f. 'id.', OE
+loppe f. 'id.' (GM).
+An Anglo-Norse words perhaps created to MHG lupfen, lüpfen w.v. 'to lift
+(oneself) up, hop' <*luppjan-.
+*lusti- f. 'loss' - Go. fra-lusts f. 'id.', OS far-lust f. 'id.', OHG for-lust f. 'id.', G
+Ver-lust m. 'id.' (DRV).
+-
+A ti-stem derived from *leusan- 'to lose' (q.v.).
+-
+,
+*lustu- m. 'desire, lust' Go. lustus m. 'id.', OE lust m. 'id.', E lust, OFri. lust
+m./f. 'id.', OS lust f. 'id.', Du. lust c. 'id.', OHG lust m./f. 'id.', G Lust f. 'id.' (DRV)
+Gr. Maioua 'to desire, long for' < *li-lh₂s-ie-; Lat. lascīvus adj. 'playful,
+unrestrained' < *lh₂s-sko- (plus īvus-suffix); OIr. lainn adj. 'avaricious' <
+*lh₂s-ni-; Ru. lásyj, Pol. obs. łasy adj. 'greedy, eager' < *leh₂s-o-; Lith. lokšnùs
+adj. ‘sensitive' < *leh2s-nu- (with secondary k emerging before sibilants in
+acute syllables).
+A tu-stem to a verbal root *lus- (it was replaced by an n-stem in ON losti
+m. ‘id.' < *lustan-, just as in the case of *purstu- 'thirst', q.v.). The Germanic
+root *lus- has often been compared to the PIE root *lh2s- 'to desire' as sup-
+ported by the aforementioned non-Germanic forms, but this connection can
+only be maintained by assuming an awkward secondary zero grade. Per-
+haps then, the word was simply derived from the strong verb *leusan- 'to
+lose, be empty' (q.v.) through a semantic shift 'idle' > 'frivolous' > 'lustful'.
+Further cf. the denominal OE lystan, E to list, OS lustian, Du. lusten, OHG
+lusten, G lusten < *lustjan-.
+-
+*lūtan- s.v. 'to stoop, bend forward' ON lúta s.v. 'id.', Far. lúta w.v. 'id.',
+Elfd. lauta s.v. 'id.', OE lūtan s.v. 'id.', E to lout (DRV).
+In view of the long *ū of this strong verb, it is likely to be a
+back-formation to the iterative *luttōn- (q.v.). The root-final *t may then
+continue a Pre-Germanic geminate *tt. Also cf. Far. lotur adj. 'curved (of a
+ship's deck); embarrassed' <*luta- and Elfd. lutå, obl. lutu f. 'slope' < *lutō-.
+*lutta- n. 'puddle(?)'G Rhnl. Lotz n. 'deep spot in a creek (to scoop wa-
+ter)' *lut-no- (WEUR?) Olr. loth f. 'mud, mire', Lat. lutum 'mud' <
+*lut-o/eh2-.
+-
+An obscure word with only a few uncertain cognates in the Italo-Celtic
+languages.
+*luttōn- w.v. 'to stoop, droop(?)' - Nw. lota w.v. 'to be askew, slanted', G
+Rhnl. lotzen w.v. 'to feel drowsy, sleep'⇒ *lud (h)-néh₂- (GM).
+The iterative to the strong verb *lūtan- 'to stoop' (q.v.). It is identical to
+*lud(d)ōn- 'to dangle', cf. Icel. loða, lodda, Far. loða, Nw. loda w.v. 'to hang"		
+alignment-lust-denominal	Kroonen2013	345	385	1	1540	1549	*lustjan-	4485a5d25e4b0adff6fd21067ba42b7e2516bc8308b29752c4d40b89f37ed6d2	"*luppōn-
+345
+*luppōn- f. 'flea' - Far. loppa f. 'id.', OSw. loppa f. 'id.', Elfd. luppa f. 'id.', OE
+loppe f. 'id.' (GM).
+An Anglo-Norse words perhaps created to MHG lupfen, lüpfen w.v. 'to lift
+(oneself) up, hop' <*luppjan-.
+*lusti- f. 'loss' - Go. fra-lusts f. 'id.', OS far-lust f. 'id.', OHG for-lust f. 'id.', G
+Ver-lust m. 'id.' (DRV).
+-
+A ti-stem derived from *leusan- 'to lose' (q.v.).
+-
+,
+*lustu- m. 'desire, lust' Go. lustus m. 'id.', OE lust m. 'id.', E lust, OFri. lust
+m./f. 'id.', OS lust f. 'id.', Du. lust c. 'id.', OHG lust m./f. 'id.', G Lust f. 'id.' (DRV)
+Gr. Maioua 'to desire, long for' < *li-lh₂s-ie-; Lat. lascīvus adj. 'playful,
+unrestrained' < *lh₂s-sko- (plus īvus-suffix); OIr. lainn adj. 'avaricious' <
+*lh₂s-ni-; Ru. lásyj, Pol. obs. łasy adj. 'greedy, eager' < *leh₂s-o-; Lith. lokšnùs
+adj. ‘sensitive' < *leh2s-nu- (with secondary k emerging before sibilants in
+acute syllables).
+A tu-stem to a verbal root *lus- (it was replaced by an n-stem in ON losti
+m. ‘id.' < *lustan-, just as in the case of *purstu- 'thirst', q.v.). The Germanic
+root *lus- has often been compared to the PIE root *lh2s- 'to desire' as sup-
+ported by the aforementioned non-Germanic forms, but this connection can
+only be maintained by assuming an awkward secondary zero grade. Per-
+haps then, the word was simply derived from the strong verb *leusan- 'to
+lose, be empty' (q.v.) through a semantic shift 'idle' > 'frivolous' > 'lustful'.
+Further cf. the denominal OE lystan, E to list, OS lustian, Du. lusten, OHG
+lusten, G lusten < *lustjan-.
+-
+*lūtan- s.v. 'to stoop, bend forward' ON lúta s.v. 'id.', Far. lúta w.v. 'id.',
+Elfd. lauta s.v. 'id.', OE lūtan s.v. 'id.', E to lout (DRV).
+In view of the long *ū of this strong verb, it is likely to be a
+back-formation to the iterative *luttōn- (q.v.). The root-final *t may then
+continue a Pre-Germanic geminate *tt. Also cf. Far. lotur adj. 'curved (of a
+ship's deck); embarrassed' <*luta- and Elfd. lutå, obl. lutu f. 'slope' < *lutō-.
+*lutta- n. 'puddle(?)'G Rhnl. Lotz n. 'deep spot in a creek (to scoop wa-
+ter)' *lut-no- (WEUR?) Olr. loth f. 'mud, mire', Lat. lutum 'mud' <
+*lut-o/eh2-.
+-
+An obscure word with only a few uncertain cognates in the Italo-Celtic
+languages.
+*luttōn- w.v. 'to stoop, droop(?)' - Nw. lota w.v. 'to be askew, slanted', G
+Rhnl. lotzen w.v. 'to feel drowsy, sleep'⇒ *lud (h)-néh₂- (GM).
+The iterative to the strong verb *lūtan- 'to stoop' (q.v.). It is identical to
+*lud(d)ōn- 'to dangle', cf. Icel. loða, lodda, Far. loða, Nw. loda w.v. 'to hang"		
+alignment-lust-lose-base	Kroonen2013	334	374	1	1549	1557	*leusan-	f253c8d58a83b7a2641bff7fb3cbf10ea884ebe059ac5f7a30a6f99f00b0899d	"334
+*leuhsa-
+-
+*leuhsa- adj. 'light, bright' ON ljóss adj. 'id.', Far. ljósur adj. 'id.', Elfd. liuos
+adj. ‘id.' ⇒ *leuk-so- (IE) — Skt. rócas-, Av. raocah- n. 'light' < *leuk-es-.
+-
+An adjective close to ON ljós n. 'light' < *leuhsa-, which is no doubt a
+thematicization of the PIE s-stem *leuk-es-. It gave rise to the factitive ON
+lýsa, OE liexan w.v. 'to shine' < *leuhsjan-. See also *leuhman-, *leuhna- and
+*leuskan-.
+~
+-
+*leukan- *lukan- s.v. 'to close; to pull' Go. ga-lukan s.v. 'to close',
+us-lukan s.v. 'to pull (a sword)', ON lúka, ljúka s.v. 'to close, finish', Far. lúka
+s.v. 'to close; to weed, clean out', OE lūcan s.v. 'to plait', OFri. lūka s.v. 'to
+close; to join; to pull', MDu. luken s.v. 'to weed; to pull; to draw a sword or
+knife; to stab(?)', Du. luiken s.v. 'to close', OHG liohhan s.v. 'to pull, pluck',
+luhhan s.v. 'to close', MHG liechen, lüchen s.v. 'to close; to pull; to shirk,
+crouch; to slip'⇒ *léu'ģ³-e- (IE).
+A verb with a complex semantic field. It is likely that two entirely differ-
+ent verbs merged in view of the formal distinction between OHG liohhan 'to
+pull' and OHG lühhan 'to close'. The former can be compared to Gr. Aúyoç
+'flexible branch, twig suited for twisting' < *lug-o- and Lith. lùgnas adj. 'flex-
+ible' < *lug-no-, by assuming that the original meaning 'to bend', cf. ON lykna
+w.v. 'to bend the knees', developed into 'to jerk' and 'to pull out' (cf. *lukka-
+'tuft'). The verb 'to close', on the other hand, is semantically closer to Skt.
+rujáti 'to break', Lith. lúžti ‘id.' < *lu'ģ)-.
+⇒ ·
+-
+*leusan- s.v. 'to lose' - Go. fra-liusan s.v. 'id.', OE for-lēosan s.v. 'id.', OFri.
+for-liāsa, for-liēsa s.v. 'id.', OS far-liosan s.v. 'id.', Du. ver-liezen s.v. 'id.', G
+ver-lieren s.v. 'id.' *léus-e- (IE) Hitt. lūri- c./n. 'loss of honor, disgrace,
+humiliation; financial loss' < *luh₁-ri-; TOAB lāwā- 'to send' < *leuh1-; Skt.
+lunáti 'to cut (off)' < *lu-n-eh1-; Gr. λúw 'to loosen, liberate, make loose, de-
+stroy, pay', Lat. luō, -ere 'to suffer, make amends for', Olr. as-loí 'to escape' <
+*eks-luw-e- < *luh₁-e-.
+A strong verb based on an extension of the PIE root *leuh1- 'to loosen'. See
+also *lausa-.
+*leuskan- m. 'groin' - Icel. ljóski m. 'id.', OSw. liuske m. 'id.', Sw. ljumske c.
+'id.', Elfd. liuoska f. 'id.', E leske 'flank', NFri. Hall. jaoskǝ pl. 'id.', MLG lēsche,
+leische 'genitalia', MDu. liesche f. ‘groin; membrane', Du. lies c. 'groin' (DRV).
+A word of disputed origin. Some have compared *lawiz- (cf. De Vries
+1971: 400), but in view of the formally identical Far. ljóski m. ‘light, glim-
+mer, gleam', it is more likely that the word was derived from *leuhsa- adj.
+'light' (with the kan-suffix for body parts). The original meaning may then
+have been 'transparent or light skin'. MLG liese 'thin skin' is probably the
+same word (Teuchert 1972: 330), cf. Brandenburg liëse f. 'layer of fat
+around the kidneys'."		
+alignment-lust-rt-same	RingeTaylor2014	521	536	4	11	18	*-sama-	ae8723e2485a2d9ffc514f4708c0ddfb82622b6a2898a44e46ca9cfb39c3837f	"An element *-sama- ‘same’ developed into an adjective-forming suffix at such an
+early date that the process can no longer be reconstructed. Note the following examples:"		
+alignment-make-fit-base	Kroonen2013	350	390	1	1371	1377	*maka-	ba352bc5732bbfe50428441f125779a6f38dcee45115a6c2cf928706df76afb7	"350
+*maizan-
+*maiwa-. Further cf. OE maw, mēaw m. 'id.', E mew < *maiwi- as well as the
+Nordic diminutives Far. mási, Nw. måse, Sw. mås < *-san- and Sw. måke, Da.
+måge <*-kan-. The latter formation was presumably adopted by Frisian and
+Dutch as mok 'sea-gull'.
+-
+*maizan- comp. 'more' Go. maiza comp. 'id.', ON meiri comp. 'id.', OE
+māra comp. 'id.', E more, OFri. māra, mēra comp. 'id.', OS mēro comp. ‘id.',
+Du. meer comp. 'id.', OHG mēro comp. 'id.', G mehr comp. 'id.'⇒ *méh₂-is-on-
+(IE) OIr. mór adj. 'great' < *meh2-ro-; W mwy comp. 'more' < *meh₂-iōs
+(Osc. mais comp. 'id.' does not belong here, but is to be equated with Lat.
+magis with schwa secundum as in maior < *mģ-ios- (cf. *mekila-).
+-
+Since PIE comparatives in *-is- had root stress, the fact that Verner's law
+operated in *maizan- proves that the word originally must have been
+trisyllabic, i.e. *mǎisan- < PIE *méhzis-on-. Just like the development of PGm.
+*winda- 'wind' < PIE *h₂uéh₁-ento-, this comparative thus demonstrates that
+Verner's law preceded Osthoff's law. This again implies that Osthoff's law in
+Germanic must be separated from Osthoff's law in Greek and Latin. As for
+the etymology of the root *meh2-, it is likely, in my opinion, that it served as
+the basis for the comparative and superlative suffix PIE *-mh2(-on)- > PGm.
+*-uman-, cf. Go. auhuma 'higher' <*ufuman- <*up-mh2-on-, etc.
+*maka- adj. 'fit, comfortable' - ON makr adj. 'easy to deal with; suitable',
+Far. makur adj. 'quite, still, calm', MDu. ge-mak adj. 'settled, calm, pleasant',
+Du. mak adj. 'tame', OHG gi-mah adj. 'modest, suitable', MHG ge-mach adj.
+'appropriate, convenient, pleasant' (IE?) — Olr. mám ‘yoke' < *mag-mo-(?);
+Lith. mėgti (mégiu) 'to like', Latv. mêgt 'to be able' <*meg-ie-.
+-
+An adjective with an original meaning 'fit, suitable' (cf. *makan- 'match').
+It served as the derivational base for the weak verb OE macian 'to prepare,
+make', E to make, OFri. makia 'id.', OS (gi-)makon 'to make, form, fix', Du.
+maken 'to make', OHG mahhōn 'id.', G machen 'id.' < *makōjan-. Under the
+assumption that the original meaning was 'to knead', the verb is usually
+compared to Gr. µάσow 'to knead, mold; to wipe' < *mhzg-ie and OCS mazati
+'to anoint', SCr. mäzati 'to smear' < *meh₂g-eh2-. The original meaning is
+more likely to have been 'to match, put together', however, which renders
+these connections obsolete. The etymological link with the aforementioned
+non-Germanic forms is more attractive, but the reconstruction of a PIE root
+*meg- nevertheless remains uncertain.
+*makan-m. 'match' - ON maki m. 'id.', Far. maki m. 'equal, peer; spouse',
+Elfd. matji m. 'spouse; match', OE ge-maca m. 'mate, equal, companion', ME
+make 'spouse', OS gi-mako m. 'comrade', OHG ga-mahho m. 'id.' (DRV).
+Derived from *makojan-, for which see *maka- adj. 'fit'. Also cf. OE
+ge-mæcca m. 'match' < *ga-makjan- and - for the original meaning 'to fix up'"		
+alignment-make-match-noun	Kroonen2013	350	390	1	1806	1813	*makan-	ba352bc5732bbfe50428441f125779a6f38dcee45115a6c2cf928706df76afb7	"350
+*maizan-
+*maiwa-. Further cf. OE maw, mēaw m. 'id.', E mew < *maiwi- as well as the
+Nordic diminutives Far. mási, Nw. måse, Sw. mås < *-san- and Sw. måke, Da.
+måge <*-kan-. The latter formation was presumably adopted by Frisian and
+Dutch as mok 'sea-gull'.
+-
+*maizan- comp. 'more' Go. maiza comp. 'id.', ON meiri comp. 'id.', OE
+māra comp. 'id.', E more, OFri. māra, mēra comp. 'id.', OS mēro comp. ‘id.',
+Du. meer comp. 'id.', OHG mēro comp. 'id.', G mehr comp. 'id.'⇒ *méh₂-is-on-
+(IE) OIr. mór adj. 'great' < *meh2-ro-; W mwy comp. 'more' < *meh₂-iōs
+(Osc. mais comp. 'id.' does not belong here, but is to be equated with Lat.
+magis with schwa secundum as in maior < *mģ-ios- (cf. *mekila-).
+-
+Since PIE comparatives in *-is- had root stress, the fact that Verner's law
+operated in *maizan- proves that the word originally must have been
+trisyllabic, i.e. *mǎisan- < PIE *méhzis-on-. Just like the development of PGm.
+*winda- 'wind' < PIE *h₂uéh₁-ento-, this comparative thus demonstrates that
+Verner's law preceded Osthoff's law. This again implies that Osthoff's law in
+Germanic must be separated from Osthoff's law in Greek and Latin. As for
+the etymology of the root *meh2-, it is likely, in my opinion, that it served as
+the basis for the comparative and superlative suffix PIE *-mh2(-on)- > PGm.
+*-uman-, cf. Go. auhuma 'higher' <*ufuman- <*up-mh2-on-, etc.
+*maka- adj. 'fit, comfortable' - ON makr adj. 'easy to deal with; suitable',
+Far. makur adj. 'quite, still, calm', MDu. ge-mak adj. 'settled, calm, pleasant',
+Du. mak adj. 'tame', OHG gi-mah adj. 'modest, suitable', MHG ge-mach adj.
+'appropriate, convenient, pleasant' (IE?) — Olr. mám ‘yoke' < *mag-mo-(?);
+Lith. mėgti (mégiu) 'to like', Latv. mêgt 'to be able' <*meg-ie-.
+-
+An adjective with an original meaning 'fit, suitable' (cf. *makan- 'match').
+It served as the derivational base for the weak verb OE macian 'to prepare,
+make', E to make, OFri. makia 'id.', OS (gi-)makon 'to make, form, fix', Du.
+maken 'to make', OHG mahhōn 'id.', G machen 'id.' < *makōjan-. Under the
+assumption that the original meaning was 'to knead', the verb is usually
+compared to Gr. µάσow 'to knead, mold; to wipe' < *mhzg-ie and OCS mazati
+'to anoint', SCr. mäzati 'to smear' < *meh₂g-eh2-. The original meaning is
+more likely to have been 'to match, put together', however, which renders
+these connections obsolete. The etymological link with the aforementioned
+non-Germanic forms is more attractive, but the reconstruction of a PIE root
+*meg- nevertheless remains uncertain.
+*makan-m. 'match' - ON maki m. 'id.', Far. maki m. 'equal, peer; spouse',
+Elfd. matji m. 'spouse; match', OE ge-maca m. 'mate, equal, companion', ME
+make 'spouse', OS gi-mako m. 'comrade', OHG ga-mahho m. 'id.' (DRV).
+Derived from *makojan-, for which see *maka- adj. 'fit'. Also cf. OE
+ge-mæcca m. 'match' < *ga-makjan- and - for the original meaning 'to fix up'"		
+alignment-make-uncertain-root	Kroonen2013	350	390	1	2496	2501	*meg-	ba352bc5732bbfe50428441f125779a6f38dcee45115a6c2cf928706df76afb7	"350
+*maizan-
+*maiwa-. Further cf. OE maw, mēaw m. 'id.', E mew < *maiwi- as well as the
+Nordic diminutives Far. mási, Nw. måse, Sw. mås < *-san- and Sw. måke, Da.
+måge <*-kan-. The latter formation was presumably adopted by Frisian and
+Dutch as mok 'sea-gull'.
+-
+*maizan- comp. 'more' Go. maiza comp. 'id.', ON meiri comp. 'id.', OE
+māra comp. 'id.', E more, OFri. māra, mēra comp. 'id.', OS mēro comp. ‘id.',
+Du. meer comp. 'id.', OHG mēro comp. 'id.', G mehr comp. 'id.'⇒ *méh₂-is-on-
+(IE) OIr. mór adj. 'great' < *meh2-ro-; W mwy comp. 'more' < *meh₂-iōs
+(Osc. mais comp. 'id.' does not belong here, but is to be equated with Lat.
+magis with schwa secundum as in maior < *mģ-ios- (cf. *mekila-).
+-
+Since PIE comparatives in *-is- had root stress, the fact that Verner's law
+operated in *maizan- proves that the word originally must have been
+trisyllabic, i.e. *mǎisan- < PIE *méhzis-on-. Just like the development of PGm.
+*winda- 'wind' < PIE *h₂uéh₁-ento-, this comparative thus demonstrates that
+Verner's law preceded Osthoff's law. This again implies that Osthoff's law in
+Germanic must be separated from Osthoff's law in Greek and Latin. As for
+the etymology of the root *meh2-, it is likely, in my opinion, that it served as
+the basis for the comparative and superlative suffix PIE *-mh2(-on)- > PGm.
+*-uman-, cf. Go. auhuma 'higher' <*ufuman- <*up-mh2-on-, etc.
+*maka- adj. 'fit, comfortable' - ON makr adj. 'easy to deal with; suitable',
+Far. makur adj. 'quite, still, calm', MDu. ge-mak adj. 'settled, calm, pleasant',
+Du. mak adj. 'tame', OHG gi-mah adj. 'modest, suitable', MHG ge-mach adj.
+'appropriate, convenient, pleasant' (IE?) — Olr. mám ‘yoke' < *mag-mo-(?);
+Lith. mėgti (mégiu) 'to like', Latv. mêgt 'to be able' <*meg-ie-.
+-
+An adjective with an original meaning 'fit, suitable' (cf. *makan- 'match').
+It served as the derivational base for the weak verb OE macian 'to prepare,
+make', E to make, OFri. makia 'id.', OS (gi-)makon 'to make, form, fix', Du.
+maken 'to make', OHG mahhōn 'id.', G machen 'id.' < *makōjan-. Under the
+assumption that the original meaning was 'to knead', the verb is usually
+compared to Gr. µάσow 'to knead, mold; to wipe' < *mhzg-ie and OCS mazati
+'to anoint', SCr. mäzati 'to smear' < *meh₂g-eh2-. The original meaning is
+more likely to have been 'to match, put together', however, which renders
+these connections obsolete. The etymological link with the aforementioned
+non-Germanic forms is more attractive, but the reconstruction of a PIE root
+*meg- nevertheless remains uncertain.
+*makan-m. 'match' - ON maki m. 'id.', Far. maki m. 'equal, peer; spouse',
+Elfd. matji m. 'spouse; match', OE ge-maca m. 'mate, equal, companion', ME
+make 'spouse', OS gi-mako m. 'comrade', OHG ga-mahho m. 'id.' (DRV).
+Derived from *makojan-, for which see *maka- adj. 'fit'. Also cf. OE
+ge-mæcca m. 'match' < *ga-makjan- and - for the original meaning 'to fix up'"		
+alignment-make-orel-adjective	Orel2003	257	296	1	1256	1262	*makaz	a59f64a595f04216d54d72665f10dfae3e6c8a3476152469f47ef21a270eac0b	"maiwaz
+HEIDERMANNS 397-398; ADAMS TB 472-
+473.
+*maiwjanan wk.vb.: ME mawen ‘to shout,
+to mew', MDu mauwen id., MHG māwen
+id. Of imitative origin. POKORNY I 751
+(to Latv maût 'to roar', Slav *myjati 'to
+mew').
+*maiz adv.: Goth mais 'more', ON meir
+id., OE má id., OFris mār, mā id., OS
+mē, mēr id., OHG mēr id. Comparative
+based on *mē- ‘large' similar to Osc mais
+'more' (SOMMER IF XI 84-90), W mwy
+id. *meis (OSTHOFF Morph. Unt. VI
+219-221). TORP-FALK 300; MEILLET
+BSL XXVII 232-233; FEIST 341; HOLT-
+HAUSEN AEEW 209; POKORNY I 704;
+VRIES ANEW 382; PISANI Glotta L 28-29
+(to archaic Aeol *μαis 'more'); ONIONS
+583; LEHMANN GED 241; BOUTKAN
+OFED s.v.
+*maizōn adj.: Goth maiza 'larger', ON
+meiri 'bigger, higher', OE mára 'larger,
+more', OFris māra ‘bigger', OS mēro ‘big-
+ger, higher', OHG mēro ‘larger, more'.
+See *maiz. TORP-FALK 300-301; FEIST
+341-342; HOLTHAUSEN AEEW 209;
+KLUGE 470-471%; POKORNY I 704; VRIES
+ANEW 382; ONIONS 589; LINDEMAN
+Verschärfung 105; LEHMANN GED 242;
+BAMMESBERGER Nom. 236; HEIDERMANNS
+398-399; KLUGE-SEEBOLD 550.
+*maka-līkaz adj.: ON mak-ligr 'proper,
+becoming', OHG gi-mah-lih 'comfortable'.
+Derived from *makaz. HEIDERMANNS
+399.
+*makan sb.n.: OESC mak 'condition,
+state', OS un-gimak 'precipitousness',
+OHG mah 'thing'. See *makaz. HEIDER-
+MANNS 399.
+*makaz adj.: ON makr 'more unsuitable',
+OE mac 'well-matched, equal, agreeable',
+OS un-gimak 'hostile', OHG gi-mah
+'appropriate'. Derived from *makojanan
+(SPITZER WUS VI 37). KARSTEN NB II
+453; TORP-FALK 303; HOLTHAUSEN
+AEEW 209–210, ANW 190 (ON <
+MLG); LIDÉN SSUF 1898 67 (to OIr
+mám ‘yoke' < *magmu); POKORNY I 696-
+697; VRIES ANEW 376; ONIONS 561;
+257
+malxaz
+HEIDERMANNS 399-400; KLUGE-SEEBOLD
+311.
+*makōjanan wk.vb.: Icel maka ‘to smear',
+OE macian 'to make, to do', OFris makia
+id., OS makōn id., OHG mahhōn id.
+Identical with Slav *mažo, *mazati 'to
+smear'. Further connected with Gk
+μάσσ 'to knead' (MERINGER IF XVII
+146-148). TORP-FALK 303; MEILLET
+MSL XIX 122; ENDZELIN KZ XLIV 66
+(on Baltic parallels: Latv muôzêt 'to tor-
+ment < *to smear'); HolthauSEN AEEW
+209; POKORNY I 696-697; FRISK II
+180-181; ONIONS 547; VASMER-TRUBA-
+CHEV II 557-558; HEIDERMANNS 400;
+KLUGE-SEEBOLD 530; BOUTKAN OFED s.v.
+*makōn sb.m.: ON maki 'match, mate',
+OE 3e-maca 'mate, equal, companion',
+OS gi-mako 'match'. Derived from
+*makaz. TORP-FALK 303; HOLTHAUSEN
+AWN 190 (ON < OS); TRIER Lehm
+87-88; VRIES ANEW 376.
+*malanan str.vb.: Goth malan 'to grind',
+ON mala id., OS part. gi-malan id., OHG
+malan id. Related to Hitt malla- id., Toch
+A malyw-, B mely- 'to crush, to grind', Skt
+mṛṇáti id., Arm malem id., Lat molō 'to
+grind', OIr melim id., Lith malù, málti id.,
+Slav *meljo, *melti id. (LOTTNER KZ VII
+22). TORP-FALK 314-315; TRAUTMANN
+BSW 168; WALDE-HOFMANN II 104-106;
+FEIST 342; HOLTHAUSEN AEEW 218–219;
+JÓHANNESSON IEW 672–675; TRIER Lehm
+67-75; MAYRHOFER II 672-673; Po-
+KORNY I 716-717; FRAENKEL 403-404;
+VRIES ANEW 377; SEEBOLD 344-345;
+LEHMANN GED 242; TISCHLER HEG II
+102–103; TRUBACHEV ESSJa XVIII
+90-91; KLUGE-SEEBOLD 532-533; ADAMS
+TB 456–457; BURLAK IFTJa 251.
+*maldriz *maldran sb.m./n.: ON
+meldr ‘flour, corn in the mill', OS maldar
+'milling, grinding', OHG maltar 'flour'.
+Derived from *malanan. TORP-FALK
+314; VRIES ANEW 383.
+*malxaz ~ *malxō(n) sb.m./f.: ON malr
+'knapsack', ME male id., MLG male id.,
+OHG malaha id. A Wanderwort similar to
+Gk uάλyoç leather sack'. Torp-Falk
+~"		
+alignment-make-orel-match	Orel2003	257	296	1	2191	2197	*makōn	a59f64a595f04216d54d72665f10dfae3e6c8a3476152469f47ef21a270eac0b	"maiwaz
+HEIDERMANNS 397-398; ADAMS TB 472-
+473.
+*maiwjanan wk.vb.: ME mawen ‘to shout,
+to mew', MDu mauwen id., MHG māwen
+id. Of imitative origin. POKORNY I 751
+(to Latv maût 'to roar', Slav *myjati 'to
+mew').
+*maiz adv.: Goth mais 'more', ON meir
+id., OE má id., OFris mār, mā id., OS
+mē, mēr id., OHG mēr id. Comparative
+based on *mē- ‘large' similar to Osc mais
+'more' (SOMMER IF XI 84-90), W mwy
+id. *meis (OSTHOFF Morph. Unt. VI
+219-221). TORP-FALK 300; MEILLET
+BSL XXVII 232-233; FEIST 341; HOLT-
+HAUSEN AEEW 209; POKORNY I 704;
+VRIES ANEW 382; PISANI Glotta L 28-29
+(to archaic Aeol *μαis 'more'); ONIONS
+583; LEHMANN GED 241; BOUTKAN
+OFED s.v.
+*maizōn adj.: Goth maiza 'larger', ON
+meiri 'bigger, higher', OE mára 'larger,
+more', OFris māra ‘bigger', OS mēro ‘big-
+ger, higher', OHG mēro ‘larger, more'.
+See *maiz. TORP-FALK 300-301; FEIST
+341-342; HOLTHAUSEN AEEW 209;
+KLUGE 470-471%; POKORNY I 704; VRIES
+ANEW 382; ONIONS 589; LINDEMAN
+Verschärfung 105; LEHMANN GED 242;
+BAMMESBERGER Nom. 236; HEIDERMANNS
+398-399; KLUGE-SEEBOLD 550.
+*maka-līkaz adj.: ON mak-ligr 'proper,
+becoming', OHG gi-mah-lih 'comfortable'.
+Derived from *makaz. HEIDERMANNS
+399.
+*makan sb.n.: OESC mak 'condition,
+state', OS un-gimak 'precipitousness',
+OHG mah 'thing'. See *makaz. HEIDER-
+MANNS 399.
+*makaz adj.: ON makr 'more unsuitable',
+OE mac 'well-matched, equal, agreeable',
+OS un-gimak 'hostile', OHG gi-mah
+'appropriate'. Derived from *makojanan
+(SPITZER WUS VI 37). KARSTEN NB II
+453; TORP-FALK 303; HOLTHAUSEN
+AEEW 209–210, ANW 190 (ON <
+MLG); LIDÉN SSUF 1898 67 (to OIr
+mám ‘yoke' < *magmu); POKORNY I 696-
+697; VRIES ANEW 376; ONIONS 561;
+257
+malxaz
+HEIDERMANNS 399-400; KLUGE-SEEBOLD
+311.
+*makōjanan wk.vb.: Icel maka ‘to smear',
+OE macian 'to make, to do', OFris makia
+id., OS makōn id., OHG mahhōn id.
+Identical with Slav *mažo, *mazati 'to
+smear'. Further connected with Gk
+μάσσ 'to knead' (MERINGER IF XVII
+146-148). TORP-FALK 303; MEILLET
+MSL XIX 122; ENDZELIN KZ XLIV 66
+(on Baltic parallels: Latv muôzêt 'to tor-
+ment < *to smear'); HolthauSEN AEEW
+209; POKORNY I 696-697; FRISK II
+180-181; ONIONS 547; VASMER-TRUBA-
+CHEV II 557-558; HEIDERMANNS 400;
+KLUGE-SEEBOLD 530; BOUTKAN OFED s.v.
+*makōn sb.m.: ON maki 'match, mate',
+OE 3e-maca 'mate, equal, companion',
+OS gi-mako 'match'. Derived from
+*makaz. TORP-FALK 303; HOLTHAUSEN
+AWN 190 (ON < OS); TRIER Lehm
+87-88; VRIES ANEW 376.
+*malanan str.vb.: Goth malan 'to grind',
+ON mala id., OS part. gi-malan id., OHG
+malan id. Related to Hitt malla- id., Toch
+A malyw-, B mely- 'to crush, to grind', Skt
+mṛṇáti id., Arm malem id., Lat molō 'to
+grind', OIr melim id., Lith malù, málti id.,
+Slav *meljo, *melti id. (LOTTNER KZ VII
+22). TORP-FALK 314-315; TRAUTMANN
+BSW 168; WALDE-HOFMANN II 104-106;
+FEIST 342; HOLTHAUSEN AEEW 218–219;
+JÓHANNESSON IEW 672–675; TRIER Lehm
+67-75; MAYRHOFER II 672-673; Po-
+KORNY I 716-717; FRAENKEL 403-404;
+VRIES ANEW 377; SEEBOLD 344-345;
+LEHMANN GED 242; TISCHLER HEG II
+102–103; TRUBACHEV ESSJa XVIII
+90-91; KLUGE-SEEBOLD 532-533; ADAMS
+TB 456–457; BURLAK IFTJa 251.
+*maldriz *maldran sb.m./n.: ON
+meldr ‘flour, corn in the mill', OS maldar
+'milling, grinding', OHG maltar 'flour'.
+Derived from *malanan. TORP-FALK
+314; VRIES ANEW 383.
+*malxaz ~ *malxō(n) sb.m./f.: ON malr
+'knapsack', ME male id., MLG male id.,
+OHG malaha id. A Wanderwort similar to
+Gk uάλyoç leather sack'. Torp-Falk
+~"		
+alignment-make-default-infinitive	RingeTaylor2014	228	243	3	96	105	maci(g)an	e3648ed846f7c384f0890dc1d020a0d00ff55a037a21d20ce169e3a110dd938b	"PWGmc *mak6n ‘to make’ (OS makon, OHG mahhon) — *makojan (OF makia) >
+OW *makcejan > *makejan > maci(g)an; so also in pres. indic. pl. maci(g)ap, etc."		
+alignment-make-present-plural	RingeTaylor2014	228	243	3	135	144	maci(g)ap	e3648ed846f7c384f0890dc1d020a0d00ff55a037a21d20ce169e3a110dd938b	"PWGmc *mak6n ‘to make’ (OS makon, OHG mahhon) — *makojan (OF makia) >
+OW *makcejan > *makejan > maci(g)an; so also in pres. indic. pl. maci(g)ap, etc."		

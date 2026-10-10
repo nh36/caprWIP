@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-192 Ringe,144 Fulk and256 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains4895 evidence
-records,1387 actual consultations,5073 positions,438 comparisons and385
+192 Ringe,145 Fulk and257 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains4946 evidence
+records,1389 actual consultations,5129 positions,440 comparisons and414
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:177 core rows are bounded and216 unreviewed.
+explanation remain ongoing:185 core rows are bounded and208 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,226 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Twenty-third alignment: homonyms, conditional roots and derivational direction
+
+Rows2110-2117 are loath, mechanical lock, hairlock, louse, lung,
+lust, lye and make. Tranche22 is committed and pushed as1e2cb5cb.
+The new tranche reconciles all47 inherited analytical identities,
+preserving quotation and source-native glyphs while separating
+relationship, attribution, cell, date and confidence. Twenty-eight
+literal occurrences and23 scoped arguments add51 evidence records;
+five focused positions reuse evidence and29 rationales are added.
+The103 positions link98 distinct records. Twenty-eight inherited
+annotation fields have reversible receipts:16 cells, eight arguments,
+two dates and two printed-page locators. Two actual close-family
+consultations have two new finite targets and13 exact scope/
+applicability amendment fields; the initial screens remain recoverable.
+New literal evidence is text-checked, not newly image-certified.
+
+### Loath: adjective history is not the denominative verb
+
+Orel's hateful/evil adjective belongs to the selected etymon. Its
+Greek transgress/sinner and Irish loathing comparisons must be
+distinguished from the bibliography's harm derivation and go
+association: citing an earlier proposal does not establish Orel's
+exclusive adoption of it [@Orel2003, pp.233-234]. Ringe and Taylor
+explicitly start their example with a PNWGmc hateful adjective,
+continue to a PWGmc adjective, and derive a verb meaning 'to loathe'.
+The first endpoint therefore no longer has an unspecified SOURCE
+date; the derivative remains a different word, not the selected
+adjective. Native *laibaz*, *laip* and *laipat't/an* survive unchanged,
+as do the separately quoted adjective and verb reflexes
+[@RingeTaylor2014, p.129].
+
+This establishes the local source's date and derivational direction,
+not the full dated equivalence of CAPR's selected PGmc input.
+Kroonen's completed bounded negative is preserved. There are no
+invented Ringe or Fulk negative consultations, and lexical-roster
+membership cannot supply an earlier adjective date by inference
+[@Orel2003, pp.233-234; @RingeTaylor2014, pp.128-129].
+
+### Two locks and two allocations of comparative evidence
+
+The mechanical noun is Orel's neuter lock/bolt; its related close
+infinitive is now explicitly family evidence rather than a selected
+noun citation. Orel prints distinct close and pull homonyms. His
+close entry connects Greek withy/screw-press and Lithuanian flexible,
+whereas pull/weed connects Sanskrit break, Armenian break open and
+Lithuanian break. His hairlock entry separately invokes bend
+[@Orel2003, pp.250,252]. Kroonen's joint close/pull stems embody a
+proposed merger of two etyma, and he allocates the comparisons
+differently: flexible branch/bend through jerk and pull on one side,
+Sanskrit/Lithuanian break on the close side. Neither printed stem
+variant uniquely reconstructs the selected mechanical noun
+[@Kroonen2013, pp.334,343].
+
+These are genuinely different grouping arguments, not a dispute
+discovered by comparing similar spellings. The same comparative
+languages or glosses cannot certify agreement when their allocation
+to the two etyma differs. Nor may the shared close-verb family
+silently establish the noun's short vowel, neuter ending or date
+[@Orel2003, pp.250,252; @Kroonen2013, p.334].
+
+The newly actual Fulk consultation reads the close verb in the
+aorist-present argument and the representative principal parts.
+The tudati type's inheritance is disputed; class II long quantity
+has analogical and curtailed-sound-change accounts, with hypothetical
+short-vowel lowering also considered. Fulk's general caveat matters:
+not every representative roster part is necessarily individually
+attested. The Gothic infinitive, elliptical singular and plural
+pasts, and participle remain separate illustrative cells; no prefix
+is assembled into a new quotation and no lock noun is manufactured
+[@Fulk2018, pp.246-249,263-265,285-286].
+
+The new Ringe-Taylor consultation distinguishes securely PGmc
+close from the separate weed/pull eu/u byform example. Their broader
+distributional argument concerns innovative verbal patterns, not
+a proof of the selected noun's chronology. The native corrupted
+close and weed tokens are retained rather than silently repaired
+[@RingeTaylor2014, pp.39-40]. Both consultations have exact finite
+owners; neither retroactively converts the original screening
+disposition into a grammar negative.
+
+### Hairlock: direct connection and sound-law warrant are separate
+
+Kroonen's hair-tuft a-stem must derive from pull because Cimbrian
+has 'tuft of wool'; he expressly refuses the direct Lithuanian
+flexible connection, naming Pokorny. The neighboring caress/entice
+verb has an ambiguous origin, with allure/fondle preferred. Its
+iterative third singular and plural are new literal controls but
+remain comparanda, not hairlock inflection [@Kroonen2013, pp.334,343].
+Orel owns a bend/flexible connection for hairlock
+[@Orel2003, pp.250,252]. Ringe permits a possible flexible-adjective
+substantivization for his explicitly PNWGmc hairlock, but Greek
+g rather than gh is an objection and the small, semantically
+imperfect sample does not substantiate Kluge's Law in his account
+[@Ringe2017, pp.137-140].
+
+The focused case therefore distinguishes adoption, explicit
+rejection and conditional evidential use. It does not claim that
+Kroonen explicitly answers Orel or Ringe, that Ringe's alternative
+sound-symbolic account is CAPR's own sound law, or that these
+arguments resolve hairlock gemination. The direct-connection
+disagreement is substantive but its full cause remains unestablished
+[@Kroonen2013, p.343; @Orel2003, p.250;
+@Ringe2017, pp.138-140].
+
+### Louse and lung: alternative cells and gender do not disappear
+
+Louse remains a feminine root noun with source long ū and sz.
+Continental i-stems are not the selected root citation, and the
+Celtic plural comparison is not a singular cell. The Slavic
+comparison attributed bibliographically to Schulze does not
+constitute an independently inspected original. The completed
+Kroonen negative remains bounded; three absent grammar rows are
+not filled with manufactured silence [@Orel2003, p.252].
+
+Lung is a formation problem before it is a vowel-normalization
+problem. Kroonen labels the n-stem header feminine while his
+prose calls it neuter and derives it from quick/light. OE *lungen*
+belongs to the separately printed feminine derivative. Both
+header and prose survive; neither is corrected by fiat. The
+explicit PIE light ro-stem and the light-weight to-stem's nasal
+present base are different formations, and Armenian breast plus
+semantic light parallels are comparative evidence, not selected
+lung cells. His probably-no-link statement about Norse core/essence
+is qualified [@Kroonen2013, pp.338-339,344].
+
+Orel's neuter and feminine lung headwords likewise differ from
+the OE-specific u-derivative with optional j. Its quick/strong
+adjective cross-reference reaches light-weight, not the illumination
+verb from the preceding tranche. The selected a-derivative is not
+literally supplied by either quoted u-derivative. CAPR preserves
+its current citation/input/stage choices and records that exact
+non-adopting formation question [@Orel2003, pp.240-241,251;
+@Kroonen2013, pp.339,344].
+
+### Lust: asserted formation does not make a conditional root certain
+
+Orel offers masculine u/a desire alternatives and the late Norse
+feminine, but his love-derived structural precursor is introduced
+with 'Probably'. Schmidt/Pokorny desire, Sperber bow and Trier
+lose alternatives are attributed bibliography, not independently
+read authors or exclusive Orel votes. The family locators are
+individually corrected: love is on249, permission on238 and dear/
+beloved on241. Destruction/loss is a separate homonym
+[@Orel2003, pp.238,241,249,251].
+
+Kroonen asserts a tu-stem to a verbal base and a Nordic replacement
+n-stem. The traditional PIE desire connection needs an awkward
+secondary zero grade; his lose/be-empty through idle/frivolous/
+lustful proposal is introduced with 'Perhaps'. It remains conditional,
+not a certain genealogy or a categorical rejection of the entire
+desire comparison set. His loss ti-stem and the denominal desire
+verb remain separate [@Kroonen2013, pp.334,345].
+
+Ringe's PGmc masculine tu-formation discussion supplies a locally
+governed date, not a preferred love/desire/lose ancestry. Ringe
+and Taylor's base desire noun belongs among following-u examples
+protected from lowering; it is not following-i raising. Their
+longed-for adjective and its further-suffixed OE pleasant reflex
+are different words. Possible already-PGmc suffixalization is
+separate from the adjective's explicit date, and sama/same must
+not be merged with the next lika/body account
+[@Ringe2017, pp.324-325; @RingeTaylor2014, pp.29-31,520-521].
+The older addendum and revised book do not become independent
+author votes. None of these distinctions establishes a complete
+selected-word genealogy.
+
+### Lye: wash-family evidence is not an independently dated law
+
+Orel's feminine bath/lye and suffixal precursor belong to wash,
+with Greek/Latin comparison and a real lather cross-reference.
+The neighboring meadow/light etymon is different, and Kroonen's
+bark-to-lye sense lead does not supply a wash-family reconstruction.
+Orel's IE wash notation does not independently assert a PIE date,
+unique semantic direction, donor direction or the precise selected
+velar law. The deeper precursor and dictionary citation remain
+distinct research units [@Orel2003, pp.238-239].
+
+### Make: semantic warrants, derivational direction and physical chronology
+
+Kroonen derives make from the fit adjective and the match/mate
+noun from the verb. He prefers original match/put-together over
+the assumed knead meaning, rendering the conventional knead/
+smear connections obsolete in his argument; the more attractive
+Baltic/Irish comparison still leaves the PIE root uncertain.
+The IE? header is not a historical date [@Kroonen2013, pp.350-351].
+Orel identifies make with Slavic smear and further Greek knead,
+derives the adjective from the verb, and derives mate from the
+adjective. The opposite adjective/verb directions are a real
+analytical difference, not interchangeable family glosses
+[@Orel2003, p.257].
+
+The focused explanation is bounded analyst inference: the authors
+use different original-meaning and derivational warrants. It is
+not an explicitly named rebuttal, established exclusive genealogy,
+or resolution of the uncertain PIE root
+[@Kroonen2013, p.350; @Orel2003, p.257]. All eight whole-row
+causes remain independently unestablished.
+
+Ringe and Taylor reconstruct make only to PWGmc while permitting
+accidental Gothic/Norse gaps. That is restraint, not proof of
+PGmc absence [@RingeTaylor2014, pp.126-128]. Root fronting and
+retraction follow physical vowel conditions even though examples
+are grouped morphologically for convenience. The native e in
+the root-fronted intermediate is retained
+[@RingeTaylor2014, pp.190-192]. Unstressed suffix mutation has
+its own sequence: shortening after general syncope, then ej-to-ij,
+then selective syncope before a following heavy syllable in the
+participle/inflected infinitive. Default infinitive and present
+indicative plural are separately quoted; corrupted OW does not
+independently date the intermediate
+[@RingeTaylor2014, pp.227-229,257-258]. The general weak-past
+corrigendum is not an authored make past or grounds for amending
+the released live-family account [@RingeTaylor2014, pp.516-518].
+
+This tranche changes annotations and actual research accountability,
+not corpus inputs, targets, stage/context sidecars, FST semantics/
+order, canonical verdicts, baselines, the introduction or a PDF.
+The full393-row alignment, conditioning census and explanatory
+synthesis remain unfinished.
 
 ## Twenty-second alignment: lexical coalescence, finite cells and genealogical warrants
 
