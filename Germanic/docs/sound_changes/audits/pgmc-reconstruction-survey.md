@@ -8,6 +8,129 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-second alignment checkpoint: shine through sieve
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base972265f08d05d1a5fc4d2b028eb7deda8855ec26 on update, independently
+verified pushed for completed31. Rows2182-2189: shine, shoulder, shove,
+shovel, show, shower, side, sieve. Explicit authorization is complete32
+without release; no33 start or scientific adoption. Immutable preparation
+pins5411 forms,42 inherited positions and99 research hashes. The candidate
+persisted exactly once; never execute/import it or recreate preparation.
+
+### Question
+
+Can every inherited identity be individually reconciled without confusing
+uncertain older genealogy with locally explicit date, identical continental/
+OE tokens, selected dative plural/preterite with citation stems, homonym
+labels with lexical identity, or possible cognate admission with certainty?
+An unreceipted source change, confidence-derived date, lost identity,
+fabricated consultation or whole-row cause from focused support would
+falsify completion.
+
+### Current state
+
+Eight core cases were unreviewed. All selected entry labels are pgmc;
+that encoding is not independent source agreement. Shoulder selects a
+dative plural and shove a strong singular preterite, while show selects
+an infinitive. Dictionary-only shovel/show/side and the actual Kroonen
+sieve negative remain legitimate scopes, not missing grammar reviews.
+Scientific corpus, contexts, FST and baseline owners are protected.
+
+### Diagnosis
+
+Executable census/traces: n/a, annotation-only work; no Foma assay, science
+rebuild or PDF. Ringe's shine is explicitly PGmc despite its uncertain
+older nasal history; the continuation actually gives the regular paradigm.
+Ringe-Taylor's first parenthetical scinan is OS/OHG, not the later OE
+occurrence. Shower's proposed nom/gen are explicitly PGmc, whereas the
+possible dative's local date remains separately unasserted
+[@Ringe2017, pp.267-268; @RingeTaylor2014, p.204;
+@Kroonen2013, p.451].
+
+### Literature
+
+Existing survey/commentary, immutable row packets and earlier exact receipts
+provide method controls. Complete relevant bodies, notes, tables and necessary
+cross-references are read; Fulk248 note6 continues249, and the actual
+aorist-present cross-reference is RT39-40. New native occurrences are
+text_checked, not new original-image certification.
+
+| Row | Printed scope and principal question |
+| --- | --- |
+| Shine2182 | Orel340-342; Kroonen445-446; Ringe266-268; Fulk246-249; RT203-205: nasal genealogy versus explicit paradigm/date and actual continental/OE cells. |
+| Shoulder2183 | Orel337-338,345; Kroonen450; RT127-128: shield-zero-grade versus problematic instrumental, WGmc scope, selected dative plural. |
+| Shove2184 | Orel339,347; Kroonen444-445,450-451; Fulk263-265; RT39-40,297-299: admitted/refused Slavic family, long-u presents and actual singular preterite. |
+| Shovel2185 | Orel339,347; Kroonen444-445: long-u/b/f citations versus selected short-u input, dictionary-only scope. |
+| Show2186 | Orel337,347; Kroonen441-442,452: weak infinitive, observant adjective, lost strong verb, mirror and hāwian. |
+| Shower2187 | Orel347; Kroonen451; RT204,207: wind admission, explicit proposed PGmc heteroclitic nom/gen and possible dative. |
+| Side2188 | Orel329; Kroonen435: n-noun versus adjective and conditional participial/i-present ancestry. |
+| Sieve2189 | Orel327-329; Kroonen435-436 plus inherited bounded search: actual neuter az, sow-family suffix versus other sieve/percolate etyma. |
+
+### Historical analysis
+
+Dates are assigned from local statements, not titles, network names or
+confidence. Shine's apparent thematic and possible fientive pedigree is
+not forced into exclusive opposition with an older nasal present.
+Shoulder's cautious WGmc scope does not deny possible PGmc inheritance.
+Shove's selected preterite is not206 sheaf noun; its final-devoicing spelling
+date is supported by other gloss witnesses, not a new shove manuscript
+[@Ringe2017, pp.267-268; @Kroonen2013, pp.445-446,450;
+@RingeTaylor2014, pp.127-128,206,297-299].
+
+Orel's possible versus Kroonen's excluded Slavic shove and northern-wind
+shower groupings are substantive differences in admitted evidence,
+not settled donor directions or named rebuttals
+[@Orel2003, pp.339,347; @Kroonen2013, pp.444-445,451].
+No chronology edge or sound-law verdict is promoted. Reported analogy
+remains source argument, not adopted grammatical conditioning of CAPR laws.
+
+### Verdict
+
+Research disposition: all eight rows individually aligned with specific
+bounded limits. No canonical SC or Registry-verdict is fabricated.
+The three focused causes and eight whole-row causes remain unestablished;
+uncertain genealogy does not make lexical identity automatically uncertain.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, two exact receipt
+tables, page-cited commentary/README and this nine-heading audit persist.
+Thirty native literals and23 scoped processes add53 records; six focused
+positions reuse evidence and29 rationales supply position support.
+Exact48 fields comprise42 cells, three dates, two page ranges and one
+argument. No consultation identity/status or scope/target/applicability
+owner changes. Totals5464 forms,1391 consultations,5696 positions,
+460 comparisons,711 rationales;257 bounded/136 unreviewed. The101
+tranche positions link95 records;786 dictionary reviews retain1925 records.
+All382 focused survey/analysis tests pass. Canonical refresh and the
+independent artifact freshness check report CONTROL PLANE CLEAN without
+a scientific rebuild. Bibliography, section locators, all52 new-prose
+printed-page references, nine audit headings and whitespace checks pass.
+Independent post-refresh verification preserves5595 outside positions,
+449 unaffected comparisons,682 inherited rationales, all consultation
+identities/statuses and1368 outside consultations,92 unaffected research
+hashes and46 ORIGINAL scientific hashes. All30 native paragraph hashes
+and whole-token Unicode spans independently resolve; inherited SOURCE
+changes match the48 exact frozen old/new receipts.
+Query evidence:
+`files/pgmc-two-hundred-fifty-seven-alignments-query-results.txt`.
+Alignment independently refuses136; the RT conventions refusal remains
+separate. The persisted candidate must never be executed or imported again.
+
+### Residue
+
+Nasal genealogy, shoulder formation/date/ending, Slavic admission,
+shovel quantity/segment history, show semantic/cell specificity, shower
+wind genealogy and sieve selected ending remain bounded
+[@Ringe2017, pp.267-268; @Orel2003, pp.328-329,337,339,345,347;
+@Kroonen2013, pp.435,442,445-446,450-451].
+Full393-row alignment, conditioning census, synthesis/watchlist and
+specialist agenda remain unfinished. Tranche32 is uncommitted; no32
+release,33 start or scientific adoption is included.
+
 ## Thirty-first alignment checkpoint: seven through shilling
 
 ### Identity

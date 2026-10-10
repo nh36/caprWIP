@@ -34,6 +34,197 @@ three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
 
+## Thirty-second alignment: nasal genealogy, selected cells and cognate admission
+
+The eight rows2182-2189 are shine, shoulder, shove, shovel, show, shower,
+side and sieve. Their selected cells must be distinguished before comparing
+histories: shoulder is a dative plural, shove a strong singular preterite,
+and show an infinitive. Dictionary citation stems, adjective bases and
+incidental family formations do not quote those endings. All42 inherited
+analytical identities are individually reconciled;30 native occurrences
+and23 scoped arguments add53 records. Forty-eight exact SOURCE amendments
+record42 cells, three explicit dates, two page ranges and one argument.
+No consultation identity/status, source scope, target or applicability
+owner is replaced.
+
+### Shine: a dated paradigm with an uncertain older genealogy
+
+Ringe explicitly includes shine among three PGmc classI verbs whose presents
+originally had a nasal suffix. The apparently thematic *-ni-/*-na- suffix,
+its reinterpretation as root-final n, and its spread through paradigms are
+separate propositions. Derivatives without n show its earlier morphological
+status, but repeated innovations make the complete PGmc situation
+unrecoverable with certainty. From a PIE standpoint Ringe expects zero-grade
+roots and considers a fientive *-nō-/*-na- ancestry possible. These
+reservations do not undo his explicit PGmc designation: the continuation
+actually reconstructs the regular paradigm *skīnaną, *skain, *skinun,
+*skinanaz. The inherited undated annotation and incomplete page range are
+therefore repaired with exact receipts, without making the older genealogy
+more certain or changing confidence
+[@Ringe2017, pp.266-268].
+
+Kroonen derives the strong verb from an older nasal present *skinōn-,
+supported by dialectal shimmer and its *skh₁-i-néh2- ancestry. Membrane
+*skĭa/ō- lacks n; brightness is an mn-stem. Orel connects shine with the
+shadow/reflection and Slavic shine families, and distinguishes shining,
+torch/brightness, cloud and clear formations. These are relevant genealogical
+premises, not four independent quotations of the selected infinitive
+[@Kroonen2013, pp.445-446; @Orel2003, pp.340-342].
+
+The two grammatical accounts are not forced into an exclusive suffix
+opposition. Ringe's possible fientive ancestry leaves room for an older
+nasal present; the missing question is how to weigh the comparative evidence
+and reconstruct its inflection. Fulk's actual shine example occurs in
+note6 on248, in the argument that nasal formations can be detected through
+derivatives without the nasal. The note continues on249. His native
+scinan and brightness scīma are retained separately, without inventing a
+fully reconstructed Germanic shine word or upgrading discussion_only
+[@Ringe2017, pp.267-268; @Fulk2018, pp.246-249].
+
+Ringe-Taylor's shine illustrates palatalization without following
+diphthongization because the vowel is high. Its parenthetical scinan belongs
+to OS/OHG; the later scinan is the OE endpoint. Identical tokens thus do
+not have identical language or cell attribution. Both inherited occurrences
+survive, with the continental one individually classified as a comparandum.
+The native header lacking a macron also survives beside Kroonen's existing
+certified long-vowel quotation; text presence is not new image certification
+[@RingeTaylor2014, pp.203-205; @Kroonen2013, pp.445-446].
+
+### Shoulder: formation warrants do not supply a dative plural
+
+Orel's feminine optional-j citation explicitly accompanies an OE masculine
+reflex and is derived by zero grade from shield's u/i alternatives. The
+Greek thighbone and shoulder-bone-as-digging-tool accounts remain attributed
+bibliographic proposals. Kroonen instead explicitly calls shoulder West
+Germanic, explains Swedish as a Middle Low German borrowing, and retains
+masculine a-stem and High German feminine jan-formation evidence. A possible
+Greek thigh/leg/hip/shank connection faces an instrumental-suffix semantic
+problem; his entry establishes no certain etymology
+[@Orel2003, pp.337-338,345; @Kroonen2013, p.450].
+
+The focused derivation case preserves these different warrants rather than
+pretending that Kroonen categorically refutes Orel's shield account. Its
+cause remains unestablished. Ringe-Taylor reconstructs shoulder only PWGmc
+in the lexical roster, while expressly allowing accidental Gothic/Norse
+attestation gaps. That caution is not a categorical denial of PGmc
+inheritance. None of these citations supplies the selected *skúldramiz
+dative-plural ending or independently proves its selected pgmc input date
+[@RingeTaylor2014, pp.127-128; @Orel2003, p.345;
+@Kroonen2013, p.450].
+
+### Shove and shovel: cognate grouping, quantity and actual preterite
+
+Orel relates strong shove's eu/long-u alternatives to Lithuanian hurry
+and Slavic pluck; the weak long-u shove/push derivative is separate.
+Kroonen's Sanskrit shake/tremble, Iranian and Baltic comparisons accompany
+regular ks-to-sk metathesis, but he explicitly excludes Slavic tear,
+reconstructing it as *skoubh-eh2-. This is a substantive cognate-admission
+difference, not merely a different presentation of one stem. Its comparative
+weighting remains unestablished; no direct named rebuttal is invented
+[@Orel2003, pp.339,347; @Kroonen2013, pp.444-445].
+
+The related iterative is shove homonym1. The next page's reference to
+homonym2 'to shove' conflicts with the preceding entry's mock homonym2;
+that internal label inconsistency cannot authorize merging the two lexical
+families. Their actual roots and semantic arguments remain separate
+[@Kroonen2013, pp.450-451].
+
+Fulk's aorist-present inventory supplies native scufan beside scēofan.
+He reports the common analogical explanation of long ū through classI
+ī/ai and classII ū/au proportions, alongside Perridon's curtailed eu-to-ū
+proposal based on related words. Expected short-u lowering is an additional
+paradigm consideration. The actual distribution in Ringe-Taylor distinguishes
+inherited from innovative types; Gothic/OHG shared eu is a premise for the
+innovation argument, not an author-count vote or an exact shove preterite
+quotation
+[@Fulk2018, pp.263-265; @RingeTaylor2014, pp.39-40].
+
+The selected sċēaf is instead the endingless strong past singular. The
+actual Ringe-Taylor *skaub > *scéab > scéaf example supplies that cell;
+the identically spelled sheaf noun in another passage does not. Final
+fricative devoicing/merger is relevant, but its seventh-century spelling
+diagnostic comes from other gloss examples, not a newly dated shove
+manuscript. Neither strong infinitive nor weak derivative replaces this
+selected preterite
+[@RingeTaylor2014, pp.206,297-299].
+
+Shovel is dictionary-only. Kroonen's incidental long-u *skūblō- and Orel's
+image-certified long-u *skūflō retain their b/f and quantity distinction.
+Orel's native extract flattening does not overturn the existing image
+check. Both sources connect the noun with shove, but neither warrants
+silently shortening its citation into the current short-u selected input.
+Quantity, segment history and nominal-cell identification remain explicit
+non-adopting questions
+[@Kroonen2013, pp.444-445; @Orel2003, pp.339,347].
+
+### Show: a weak infinitive within a larger see family
+
+The weak see/inspect verb belongs with Kroonen's observant adjective and
+see root. Beautiful's gerundival ni-formation implies a lost strong verb;
+mirror is a separate n-stem. Orel derives weak look/observe from the
+adjective, compares Greek notice, Latin beware and Slavic perceive without
+initial s, and keeps hāwian with its separate *xē(u)we- stem. The surrounding
+shadow/mirror entry preserves reported cover and see connections rather
+than attributing every proposal to Orel's own endorsement
+[@Kroonen2013, pp.441-442,452; @Orel2003, pp.337,347].
+
+These are family positions, not imperative or third-singular cells quoted
+for the selected infinitive. The exact ending, stress and semantic
+specialization to transitive show remain bounded; no grammar negative is
+manufactured and the previously adopted singleton show FST history is not
+reopened by this annotation review
+[@Orel2003, p.337; @Kroonen2013, p.442].
+
+### Shower: an explicit proposed PGmc paradigm, not one undifferentiated stem
+
+Kroonen explicitly proposes a PGmc heteroclitic *skewur, genitive skūnaz,
+continuing a PIE ur/n paradigm. The missing local PGmc dates of the
+inherited nominative/genitive annotations are repaired independently of
+confidence. The certified starred genitive survives beside a new native
+starless occurrence. Absence of Dybo's law motivates an early shift of
+accent to the stem. Barn/shelter *sku(w)enjō- implies a third stem possibly
+from dative *sku(w)eni: this separately inferred dative is not automatically
+dated by the preceding explicit PGmc label
+[@Kroonen2013, p.451].
+
+His shade/cloud genealogy replaces a reported cut/tear comparison and
+explicitly excludes Latin and Baltic/Slavic northern-wind connections.
+Orel instead allows a possible northwest/north-wind grouping with Armenian
+cold/shower, while preserving feminine/masculine alternatives and a
+separate OHG i-formation. Possible admission and explicit exclusion are
+different propositions; the focused explanation remains unestablished.
+Ringe-Taylor's later palatalization example does not resolve the older
+etymology. Native skar and séur remain without an unreceipted quantity
+or glyph correction
+[@Kroonen2013, p.451; @Orel2003, p.347;
+@RingeTaylor2014, pp.204,207].
+
+### Side and sieve: bounded dictionary-only comparisons
+
+Both dictionaries connect side's feminine n-formation with the long/wide
+adjective. Kroonen makes the broad-surface semantic bridge explicit and
+offers a conditional participial/i-present ancestry; Orel compares Latin
+late and Irish long-of-time. The adjective is family evidence, not the
+selected nominal case. Long ī, n-citation and the source dental signs remain
+separate from exact ending/stress and deeper-genealogy questions
+[@Kroonen2013, p.435; @Orel2003, p.329].
+
+Orel's sieve/sedge citation genuinely has neuter gender and az. It is an
+isolated *si-bho- derivative related to sow, with seip/seib retained as
+a bibliographic alternative. The seed-derived sieve and percolate/sink
+families are not the selected sieve etymon simply because glosses overlap.
+Kroonen's actual bounded no_form_found remains unchanged; no exact
+quotation is assembled from another family's root or from selected *síbi.
+The missing selected-ending derivation is stated rather than repaired by
+normalization
+[@Orel2003, pp.327-329; @Kroonen2013, pp.435-436].
+
+All eight whole-row causes remain unestablished. The three focused cases
+retain particular formation/cognate warrants, not adopted histories or
+whole-row explanations. The survey now has257 bounded core rows and136
+unreviewed; full393 alignment, conditioning census, explanatory synthesis,
+consistency watchlist and specialist dispatch remain unfinished.
+
 ## Thirty-first alignment: seven's dental chronology and distinct sk-families
 
 Seven, shaft, shame, shear, sheath, sheep, shield and shilling,

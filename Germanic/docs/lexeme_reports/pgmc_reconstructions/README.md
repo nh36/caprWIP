@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5411 evidence records,1391 actual consultations and5637
-analytical positions, with457 comparisons and682 rationales. The RT
+There are5464 evidence records,1391 actual consultations and5696
+analytical positions, with460 comparisons and711 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred forty-nine core rows now have individually reconciled, bounded alignment:
-1933-2181. The remaining144 are unreviewed. The second tranche builds on
+Two hundred fifty-seven core rows now have individually reconciled, bounded alignment:
+1933-2189. The remaining136 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,36 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-second tranche completes shine, shoulder, shove, shovel,
+show, shower, side and sieve, rows2182-2189, from released972265f0.
+All42 inherited identities are individually reconciled. Thirty native
+occurrences and23 scoped processes add53 records; six focused positions
+reuse evidence and29 position-support rationales are added. The101
+positions link95 records. Exact48 SOURCE fields comprise42 cells, three
+explicit dates, two page ranges and one argument. Consultation identities/
+statuses and scope/target/applicability owners remain unchanged.
+All786 dictionary reviews survive with1925 evidence records.
+
+Shine's explicit PGmc paradigm does not settle its older nasal genealogy.
+The continental and OE scinan occurrences remain distinct; Fulk's actual
+derivative comparison stays discussion_only
+[@Ringe2017, pp.266-268; @Fulk2018, pp.246-249;
+@RingeTaylor2014, pp.203-205; @Kroonen2013, pp.445-446].
+Shoulder's dative plural, shove's singular preterite, shovel's long-u
+source citations and show's weak infinitive are not interchangeable
+with dictionary stems or adjacent homonyms
+[@Orel2003, pp.337-339,345,347; @Kroonen2013, pp.441-445,450-452;
+@RingeTaylor2014, pp.127-128,297-299].
+Shower's explicitly proposed PGmc nom/gen and separately inferred dative
+remain distinct; side's adjective and sieve's printed neuter az retain
+their actual source scope
+[@Kroonen2013, pp.435,451; @Orel2003, pp.327-329,347].
+Shoulder derivation, shove Slavic admission and shower northern-wind
+admission have focused substantive differences with unestablished causes.
+All eight whole-row causes remain unestablished. Selected corpus/input/
+stage/context/FST/baseline owners are unchanged; no tranche32 release
+or next-tranche start is included.
 
 The thirty-first tranche completes seven, shaft, shame, shear, sheath,
 sheep, shield and shilling, rows2174-2181, from released625eae95.
