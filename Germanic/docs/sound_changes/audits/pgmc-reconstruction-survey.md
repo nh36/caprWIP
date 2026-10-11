@@ -8,6 +8,150 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Forty-eighth alignment checkpoint: make through show finite cells
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base31bf5b44f4a89da0775f5af41b8b664c1ad4b03a, branch update.
+Tranche47 is committed and pushed. Immutable48 preparation pins6467 forms,
+92 inherited identities and137 research hashes. It is never recreated;
+the new candidate was dry-run validated and persisted exactly once with
+a completion receipt. Current SOURCE/receipts/tests replace that candidate
+as authority. No48 release,49 start or scientific adoption is authorized.
+
+### Question
+
+Can all92 inherited identities be reconciled without inventing finite
+words from infinitives, mistaking nominal bases/related verbs for paradigm
+cells, transferring class-II imperative endings to original fientives,
+or deriving a date from confidence? Actual word quotations would refute
+a specific quotation limit; general paradigms can establish ending
+warrants without refuting the whole-word limit
+[@Ringe2017, pp.201-209,281-290;
+@RingeTaylor2014, pp.158-162,356-361].
+
+### Current state
+
+Before edits:6467 forms,1395 consultations,6765 positions,492 cases and1193
+rationales;377 bounded/16 unreviewed. Selected macaþ, bora/boraþ,
+liorna/liornaþ, licca/liccaþ and sċēawa are finite cells; the inherited
+dictionary and most grammar quotations are infinitives or stems.
+All selected PROTO/PROTOFORM/input stages/contexts and current scientific
+baselines are protected. Shared SOURCE belongs also to earlier make,
+bore, learn, lick and show infinitives; show includes outside2318.
+Existing make direction and learn/lick formation cases are preserved,
+not replicated as new finite causes.
+
+### Diagnosis
+
+No executable census or Foma assay is warranted: no rule or input changes.
+The complete92-position research census, not an output score, supplies
+the denominator. Dictionary/infinitive evidence is classified per row.
+Teach and know are related family; strike is not another bore cell;
+lick homonyms and show's nominal/adjectival relatives are distinct.
+The RT make plural is not third singular; later learn infinitives remain
+same-etymon other cells. Native glyphs and certified forms are retained
+independently [@Orel2003, pp.37,64,233,245-247,257,336-337;
+@Kroonen2013, pp.85,337-340,350-351,441-442,452;
+@RingeTaylor2014, pp.34-40,82-85,94-96,182-184,227-229].
+
+### Literature
+
+Checked the prior family alignment accounts and complete held arguments,
+including load-bearing continuations/cross-references:
+Orel's actual strike body, bore, know/learn, lick header plus continuation,
+make and show; Kroonen's piecewise bore folio, learn/lick, make and actual
+mirror body [@Orel2003, pp.37,64,233,245-247,257,336-337;
+@Kroonen2013, pp.85,337-340,350-351,441-442,452].
+Ringe's nasal-infix/fientive account, Verner-ending qualifications,
+lexical stem inventory, class-II paradigm and full class-IV continuation
+are distinct arguments [@Ringe2017, pp.201-209,245-247,281-290].
+Fulk's Verner/formation qualifications, lick/aspect/nasal account,
+weak-II morphology and weak-IV argument retain the objections and
+comparator paradigms [@Fulk2018, pp.108-117,242-249,304-308,313-317].
+RT's lowering, rhotacism, class transfer, lexical restraint, actual
+northern short/long paradigm, breaking/mutation chains, weak-verb
+morphology and corrigenda are read in their full relevant contexts
+[@RingeTaylor2014, pp.34-40,82-85,94-96,126-128,158-162,
+182-184,227-229,356-361,516-518].
+
+These are held-text readings, not new image certifications or independent
+author votes. Native paragraph/hash/Unicode receipts certify exact
+extract occurrences separately from scientific interpretation.
+
+### Historical analysis
+
+The actual general fientive third-singular *-nōþi* is real ending evidence,
+not an authored whole learn form. Ringe's second-plural uncertainty and
+refusal of a full class-IV table constrain imperative assembly; historical
+suffix accent is not CAPR's root acute
+[@Ringe2017, pp.202-204,289-290].
+Class-II trimoric notation and PGmc imperative levelling remain explicit
+premises, not silently normalized quantities [@Ringe2017, pp.281-286].
+Fulk's probable-WGmc learn formation remains beside his PGmc illustration;
+his preferred weak-IV account retains weak-past and evidence difficulties
+[@Fulk2018, pp.109,114,313-315].
+
+RT's northern innovation distinguishes short finite stems from longer
+j-bearing presents. Fulk's note6 specifically criticizes the conservative
+OS distribution account, not the existence of that OE distinction
+[@RingeTaylor2014, pp.158-162,356-361; @Fulk2018, pp.304-308].
+Learn's later j must not be projected into earlier root mutation; the
+later-lowering note likewise excludes an invalid chronology inference
+[@RingeTaylor2014, pp.38,182-184].
+The single new date repair identifies explicitly OW make on p.228,
+independently of its native extraction glyph and confidence
+[@RingeTaylor2014, pp.227-229].
+No strict chronology edge, source-endpoint equivalence, adopted historical
+stage or whole-row ancestry is inferred from these annotation decisions.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN all scientific owners.
+No Registry-verdict line: this is not an SC adjudication.
+All eight cases are bounded_limit with precise cell/formation/ending/
+accent/date premises; all whole-row causes remain unestablished.
+No new focused case is required merely by finding generic morphology.
+Thirty-three additions comprise nine native occurrences and24 processes;
+42 reasons support positions. The79 exact amendments cover53 local cells,
+25 arguments and one date. Shared outside SOURCE is unchanged.
+
+### Propagation
+
+Editable research tables, commentary/README, this nine-heading audit,
+two new exact receipt tables and finite-sensitive regressions.
+Totals6500 forms,1395 consultations,6825 positions,492 cases,1235 reasons;
+385 bounded/8 unreviewed. The152 positions link108 records;2457 dictionary
+records preserve all786 dispositions. No consultation/status/target/
+scope owner is added or removed. Canonical regeneration is exclusively
+`python3 Germanic/tools/adjudicate.py --refresh`; scientific hashes remain
+those of the ORIGINAL46 protection, never a newly repinned baseline.
+
+Final focused survey/analysis run:534 tests pass in659.041s. The first
+534-test run passed533; its only failure was the inherited learn-stem
+relation expectation, corrected to the individually reviewed other-cell
+decision without changing SOURCE. The complete final rerun passes.
+Canonical refresh and independent freshness report CONTROL PLANE CLEAN.
+Bibliography, locators,45 new-section printed-page references, all nine
+headings and whitespace pass. Independent current-SOURCE verification
+reverses79 exact fields and preserves6467 inherited forms,22 outside-shared
+SOURCE records,6673 outside positions,484 unaffected cases,1193 old reasons,
+1368 outside consultations,130 research hashes and46 ORIGINAL scientific
+hashes. All nine native paragraph/hash/whole-token spans resolve.
+Session `files/pgmc-385-alignments-query-results.txt` records deterministic
+queries and the8-row alignment refusal separately from RT conventions.
+
+### Residue
+
+No exact selected full finite word is manufactured. Generic ending
+warrants coexist with missing whole-cell quantity/accent/dating premises;
+Fulk qualifications, native slash/quantity glyphs and reported/rejected
+etymologies survive. The remaining8 core alignments, conditioning census,
+substantive-case synthesis, watchlist and subsequent-source agenda remain
+unfinished. No48 commit/push,49 preparation, scientific adoption,
+introduction/PDF or unrelated local-file change is included.
+
 ## Forty-seventh alignment checkpoint: world through make imperative
 
 ### Identity

@@ -10,13 +10,228 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6467 evidence
-records,1395 actual consultations,6765 positions,492 comparisons and1193
+393 applicability screens per source. The database contains6500 evidence
+records,1395 actual consultations,6825 positions,492 comparisons and1235
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:377 core rows are bounded and16 unreviewed.
+explanation remain ongoing:385 core rows are bounded and8 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
+
+## Forty-eighth alignment: finite make, bore, learn, lick and show
+
+Tranche47 is released as31bf5b44. Rows2310-2317 retain all92 inherited
+analytical identities, individually distinguished by lexical identity,
+actual cell, attribution and date. Nine native occurrences and24
+finite-scoped arguments add33 records. Shared evidence is recorded once
+and linked independently to both applicable finite rows:152 positions
+therefore link108 distinct records, not152 consultations. Forty-two new
+rationales are position support, not explanations of disagreement.
+The79 reversible SOURCE amendments comprise53 local cells,25 arguments
+and one explicit date. All inherited evidence shared with earlier
+infinitives or the next show row remains unchanged.
+
+### Finite endings are evidence, not whole-word quotations
+
+The central result is a distinction between a missing quotation and a
+missing morphological warrant. Ringe explicitly reconstructs generic
+fientive third-singular *-nōþi*, alongside second-singular *-nōsi*.
+His long/short *-nō- ~ -na-* alternation has an independently argued
+nasal-infix pedigree. The general third-singular complex is consequently
+real ending evidence for the learn question. It is not an authored full
+learn third singular, however, and supplies no imperative. The first
+singular remains less clear, the second plural unrecoverable, and the
+later class-IV discussion declines even a tentative complete ending
+table [@Ringe2017, pp.201-204,289-290].
+
+That restraint matters because the neighboring class-II paradigm really
+does include an imperative. Its third-singular and imperative stem
+vowels use trimoric notation, which must not be silently identified
+with CAPR's selected *ō* and *ô*. Ringe explains that regular loss of
+the original imperative vowel should have preceded j-loss and
+contraction; the resulting long vowel must already have been levelled
+into the imperative in PGmc. This is a source-supported morphological
+account, not a license to append the table ending to every dictionary
+stem or to transfer it unchanged into the original fientive class.
+The two tables have different evidential reach
+[@Ringe2017, pp.281-289].
+
+Ringe's ending conventions also require explicit qualifications. Verner
+alternants and later levelling mean that a present-ending citation is
+not a transparent historical observation. Derived weak-II/III/IV verbs
+should retain voiceless endings, but his more general reconstruction
+adopts a simplifying convention and expressly warns against taking
+that decision too seriously. A plausible dental therefore does not
+establish the full word, root accent, vowel quantity or equivalence of
+the authors' historical endpoints [@Ringe2017, pp.206-209].
+
+### Short finite stems versus longer presents
+
+Ringe's northern West Germanic account preserves the stem vowel in
+indicative second and third singular and imperative second singular,
+while extending longer j-bearing stems into other cells. The actual
+dwell paradigm demonstrates this contrast; the later weak-II discussion
+likewise distinguishes the short finite cells from longer presents.
+An infinitive with a mutation-bearing longer suffix cannot automatically
+be used as the complete history of the selected short finite stem
+[@RingeTaylor2014, pp.158-162,356-361].
+
+Fulk's account is relevant to the same cell distinction without providing
+a new lick attestation. His explicit wander imperative and third
+singular are comparanda, not the selected lick words. He regards
+Cowgill's j-loss/contraction and northern restoration analysis as the
+only very plausible account then available, while retaining serious
+objections. In particular, his note6 challenges the explanation of
+conservative Old Saxon longer forms on Ringe-Taylor's p.161. That is a
+scoped disagreement about a distributional premise, not a denial of
+the Old English short/long contrast or a cause of every disagreement
+about a selected finite reconstruction
+[@Fulk2018, pp.304-308; @RingeTaylor2014, p.161].
+
+No new focused case is manufactured merely because two sources discuss
+this morphology. The existing formation questions remain attached to
+their actual infinitive cases. The finite rows receive the relevant
+warrants and precise limits, not duplicate author votes or inherited
+whole-row explanations.
+
+### Make third singular
+
+Kroonen's make verb, fit adjective and match noun remain separate
+units. His preferred match/put-together semantics and objection to
+the assumed knead connection are not a finite-ending argument.
+Orel's adjective-from-verb direction and smear/knead connections remain
+beside them; the earlier origin-and-direction case is neither rewritten
+nor duplicated for the third singular
+[@Kroonen2013, pp.350-351; @Orel2003, p.257].
+
+Ringe-Taylor's actual chain is infinitival. Its PWGmc beginning is not
+a PGmc full third singular; the OW label dates the suffix-mutated
+intermediate to Old English independently of the native extraction
+glyph and its confidence. The attested *maci(g)ap* is a present plural,
+not *macaþ*. The northern short-stem account supplies the important
+negative control against simply importing the infinitive's j into the
+third singular. Neither the lexical restraint nor the weak-past
+corrigendum denies all possible earlier inheritance or reconstructs
+the selected whole present word
+[@RingeTaylor2014, pp.126-128,158-162,227-229,516-518].
+
+### Bore imperative and third singular
+
+The bore infinitives are same-etymon other cells, not merely vague
+family evidence. The alternatives *burō-* and *bura-* are proposed
+nominal bases, while the file/graving-iron derivative illustrates
+suffixation. Kroonen's barjan connection is questioned. The actual
+short-o native *burojan-* header is retained beside the certified
+long-ō quotation without inventing another author reconstruction or
+silently replacing either representation. Printed p.85 is reached
+through the early piecewise pagination, on holding sheet123
+[@Kroonen2013, p.85].
+
+Orel's *barjanan* on p.37 is the strike/take-away/treat-cruelly verb.
+The bore entry's p.64 cross-reference survives beside that independently
+recorded body occurrence. A proposed connection does not make this
+verb another bore paradigm cell. Dictionary-only scope is legitimate:
+neither generic class membership nor an invented grammar silence
+supplies the selected imperative quantity or third-singular dental
+[@Orel2003, pp.37,64].
+
+### Learn imperative and third singular
+
+Orel's ōjanan/ēnan alternatives and uncertain know etymology are
+independent questions. The reported objection to the *leis-* root and
+the reported Gothic-innovation proposal are not a rejection of the
+learn etymon. Know and teach belong to the derivational family but are
+not learn cells. Kroonen's medio-passive factitive genealogy means
+'make oneself know'; it is a formation account, not an attributed
+complete imperative [@Orel2003, pp.233,247;
+@Kroonen2013, pp.339-340].
+
+Ringe's learn example is particularly informative about historical
+accent. Zero-grade root and root-final voiced fricative support
+pre-PGmc suffix accent, not CAPR's selected root acute. His fientive
+function remains a puzzle, and the participial-origin proposal has
+difficulty accounting for the alternating suffix. These qualifications
+survive beside the actual ending warrant rather than being replaced
+by a generic uncertainty about lexical identity
+[@Ringe2017, pp.202-204,245-247,289-290].
+
+Fulk's Verner illustration on p.109 and probable-WGmc formation on
+p.114 must be read together. Neither is turned into an exclusive
+denial of inherited learn ancestry. His preferred thematic/athematic
+account retains limited-evidence and weak-past difficulties; the
+Gothic fullnan paradigm is a comparator, not a quoted learn finite
+paradigm. An index entry supplies no independent date
+[@Fulk2018, pp.108-110,113-114,245-249,313-315,388].
+
+The actual Ringe-Taylor learn chains retain their own PGmc, PWGmc and
+OE endpoints. *Liornian* is an infinitive of the selected etymon,
+not just a related word. The later longer suffix and its j must not
+be projected back into root mutation at an earlier date; p.183
+explicitly excludes that root mutation because the following vowel
+was then ō/a. Later io/eo merger and continental lowering before r
+have no bearing on the earlier lowering question. The final
+stative/let/read corrigenda are separate topics, not extra learn
+fientive proof [@RingeTaylor2014, pp.34-40,82-85,94-96,182-184,517-518].
+
+### Lick imperative and third singular
+
+Kroonen's lick homonym1, jump homonym2 and smoothing/equality verb
+cannot be merged by spelling. The lickable derivative is family
+evidence, not a finite cell. Orel's header at the end of p.245 belongs
+with its p.246 continuation; the aspirated-root comparisons establish
+the etymological argument, not a Germanic finite quotation
+[@Kroonen2013, pp.337-338; @Orel2003, pp.245-246].
+
+Fulk's atelic present, s-aorist, nasal formation and assimilation
+arguments remain qualified formation evidence. They do not supply
+an authored selected Germanic imperative or third singular.
+His existing discussion_only consultations therefore remain unchanged,
+even when the general weak-II morphology is relevant
+[@Fulk2018, pp.114-117,242-249,304-308].
+
+The native PWGmc *li/ekk6n* retains its i/e slash and extraction glyph;
+*liccian* is another cell of the selected etymon. Regional lowering,
+levelling and later extension are not one universal earlier law.
+Generic short finite endings support a cell distinction without
+settling the exact PGmc ending, accent or dental convention
+[@RingeTaylor2014, pp.34-40,158-162,356-361].
+
+### Show imperative
+
+The weak show/inspect citation inside the observant adjective is
+same-etymon other-cell evidence. The adjective, beautiful formation,
+proposed lost strong verb and mirror n-stem belong to other units.
+The mirror passage is actually on p.452; its shadow/shade comparisons
+do not quote the show imperative. Orel's related *hāwian* family and
+proposed Gothic reading correction likewise remain separate from the
+selected weak finite cell. Earlier2186 and outside2318's shared
+SOURCE are unchanged [@Kroonen2013, pp.441-442,452;
+@Orel2003, pp.336-337].
+
+### Bounded outcome
+
+All eight core causes remain unestablished. This is completion of the
+eight individual alignment reviews, not proof of full-word equivalence
+or approval of selected input changes. Exact finite endings, quantity,
+accent and independently supported cell dates remain explicit limits.
+Totals are6500 forms,1395 consultations,6825 positions,492 comparisons
+and1235 rationales;385 bounded/8 unreviewed core rows. All786 dictionary
+dispositions survive with2457 dictionary records. No scientific corpus,
+stage, FST, baseline, introduction or PDF change is included;48 remains
+uncommitted and49 has not begun.
+
+The final combined focused run passes all534 tests. One inherited
+learn-stem expectation was corrected from citation to other-cell relation,
+not by altering its protected SOURCE. Independent reversal preserves all
+6467 inherited forms and22 outside-shared records;6673 outside positions,
+484 unaffected cases,1193 old reasons and1368 outside consultations survive.
+All nine native paragraphs/hashes/whole-token spans resolve, with130
+research hashes and46 ORIGINAL scientific hashes preserved. Canonical
+refresh/freshness, bibliography, locators,45 new-section printed-page
+references, nine audit headings and whitespace are clean. Deterministic
+queries in `files/pgmc-385-alignments-query-results.txt` reproduce the
+shared-ending control and8-row alignment refusal independently of the
+unchanged Ringe-Taylor convention gap.
 
 ## Forty-seventh alignment: world through make imperative
 

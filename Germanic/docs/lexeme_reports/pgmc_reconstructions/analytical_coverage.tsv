@@ -376,14 +376,14 @@ row_id	status	comparison_ids	alignment_status	alignment_case_ids
 2307	reviewed	core-2307	bounded_limit	core-2307
 2308	reviewed	core-2308	bounded_limit	core-2308
 2309	reviewed	core-2309	bounded_limit	core-2309
-2310	reviewed	core-2310	unreviewed	
-2311	reviewed	core-2311	unreviewed	
-2312	reviewed	core-2312	unreviewed	
-2313	reviewed	core-2313	unreviewed	
-2314	reviewed	core-2314	unreviewed	
-2315	reviewed	core-2315	unreviewed	
-2316	reviewed	core-2316	unreviewed	
-2317	reviewed	core-2317	unreviewed	
+2310	reviewed	core-2310	bounded_limit	core-2310
+2311	reviewed	core-2311	bounded_limit	core-2311
+2312	reviewed	core-2312	bounded_limit	core-2312
+2313	reviewed	core-2313	bounded_limit	core-2313
+2314	reviewed	core-2314	bounded_limit	core-2314
+2315	reviewed	core-2315	bounded_limit	core-2315
+2316	reviewed	core-2316	bounded_limit	core-2316
+2317	reviewed	core-2317	bounded_limit	core-2317
 2318	reviewed	core-2318	unreviewed	
 2322	reviewed	core-2322	unreviewed	
 2326	reviewed	core-2326	unreviewed	

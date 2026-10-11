@@ -631,7 +631,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t377\nunreviewed\t16\n")
+        """), "alignment_status\trows\nbounded_limit\t385\nunreviewed\t8\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -825,7 +825,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t377\nunreviewed\t16\n")
+        """), "alignment_status\trows\nbounded_limit\t385\nunreviewed\t8\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -1181,10 +1181,36 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row in map(str, range(2302, 2310)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
+    def test_forty_eighth_shared_finite_ending_and_no_new_causes(self):
+        projection = {
+            "forms": (survey.FORM_COLUMNS, self.forms),
+            **{name: (columns, self.tables[name]) for name, columns in analytical.TABLES.items()},
+        }
+        sql = """
+            SELECT row_id,relation_to_row,stage_interpretation,analytical_form
+            FROM analyses WHERE evidence_id='alignment48-learn-ringe-generic-third'
+            ORDER BY row_id
+        """
+        expected = ("row_id\trelation_to_row\tstage_interpretation\tanalytical_form\n"
+                    "2313\tcomparandum\tpgmc\t*-nōþi\n"
+                    "2314\tcomparandum\tpgmc\t*-nōþi\n")
+        self.assertEqual(analytical.query(projection, sql), expected)
+        self.assertEqual(analytical.query(projection, sql), expected)
+        self.assertEqual(analytical.query(projection, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS records
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2310 AND 2317
+        """), "positions\trecords\n152\t108\n")
+        self.assertEqual(analytical.query(projection, """
+            SELECT reason_target,count(*) AS reasons FROM rationales
+            WHERE rationale_id LIKE 'r48-%' GROUP BY reason_target
+        """), "reason_target\treasons\nposition_support\t42\n")
+        for row in map(str, range(2310, 2318)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2441)
+                             for form in self.forms), 2457)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
@@ -1212,7 +1238,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(position("2010", "fight-wg")["stage_interpretation"], "pwgmc")
         self.assertEqual(position("2233", "sup")["attribution_status"], "conditional")
         self.assertEqual(analytical.feature_values(position("1972", "brook"))["stem_class"], "weak")
-        self.assertEqual(position("2313", "learn-no")["relation_to_row"], "same_etymon_citation")
+        self.assertEqual(position("2313", "learn-no")["relation_to_row"], "same_etymon_other_cell")
         self.assertIn("Neither is an authored imperative", self.evidence["ringe-system-learn-no"]["argument"])
         self.assertEqual(self.cases["core-2193"]["explanation_status"], "unestablished")
         self.assertEqual(self.cases["core-1950"]["explanation_status"], "unestablished")

@@ -6,7 +6,59 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-seventh alignment checkpoint
+## Forty-eighth alignment checkpoint
+
+Tranche47 is committed and pushed as31bf5b44f4a89da0775f5af41b8b664c1ad4b03a.
+Rows2310-2317 cover make third singular; bore, learn and lick imperative/
+third singular; and show imperative. All92 inherited identities are
+individually reconciled. Nine native occurrences and24 finite-scoped
+arguments add33 records;152 positions link108 distinct records, with
+shared occurrences recorded once for both applicable finite rows.
+Forty-two position-support reasons do not establish whole-row causes.
+Exact79 reversible SOURCE fields comprise53 local cells,25 arguments
+and one explicit date; every inherited record shared with outside
+infinitive or next show research remains unchanged.
+
+Infinitives are other cells of the same etymon, not automatically
+selected finite quotes. Ringe's actual general fientive third-singular
+*-nōþi* is a separately receipted fragment, not an assembled full learn
+word or an imperative. His class-II trimoric imperative paradigm is a
+control, not a missing class-IV ending table
+[@Ringe2017, pp.201-209,281-290].
+The general northern short/long stem account distinguishes finite cells
+from longer j-bearing presents; Fulk's objection to the conservative OS
+distribution premise does not deny that OE contrast
+[@RingeTaylor2014, pp.158-162,356-361; @Fulk2018, pp.304-308].
+Fulk's learn illustration and probable-WGmc qualification remain together;
+lick's lexical consultations remain discussion_only
+[@Fulk2018, pp.108-114,242-249,313-315].
+Bore/strike, know/teach, lick homonyms and show/mirror/observant are
+different units, while the selected etyma's infinitives remain same-etymon
+other cells [@Orel2003, pp.37,64,233,245-247,257,336-337;
+@Kroonen2013, pp.85,337-340,350-351,441-442,452].
+
+Totals6500 forms,1395 consultations,6825 positions,492 comparisons and1235
+rationales;385 bounded/8 unreviewed core rows. All786 dictionary dispositions
+survive with2457 dictionary records. Current SOURCE, page-cited commentary,
+nine-heading audit and `reading_accountability/alignment-2310-2317-*.tsv`
+receipts are authority. Never recreate the immutable48 preparation or
+execute/import its persisted candidate. Tranche48 remains uncommitted;
+no49 preparation, scientific adoption, introduction or PDF is included.
+The full393-row alignment and explanatory programme remain unfinished.
+
+All534 focused survey/analysis tests pass in659.041s after correcting one
+stale learn-stem relation expectation, without rewriting SOURCE for a test.
+Canonical refresh and independent freshness are CONTROL PLANE CLEAN;
+bibliography, section locators,45 new-section printed-page references,
+nine audit headings and whitespace pass. Independent current-SOURCE
+verification reverses79 fields, preserves6467 inherited forms and22
+outside-shared records,6673 outside positions,484 unaffected cases,
+1193 old reasons,1368 outside consultations,130 research hashes and46
+ORIGINAL scientific hashes. All nine native spans independently resolve.
+Queries are recorded in session `files/pgmc-385-alignments-query-results.txt`;
+alignment refuses8 separately from the unchanged RT convention gap.
+
+## Forty-seventh alignment checkpoint (released31bf5b44)
 
 Tranche46 is committed and pushed ascf9f1ed969dc153aba4ea3ddd19332286dc84227.
 Rows2302-2309 (world, worm, wring, yarn, year, yoke, youth and make
