@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5726 evidence records,1393 actual consultations and5975
-analytical positions, with468 comparisons and855 rationales. The RT
+There are5792 evidence records,1393 actual consultations and6049
+analytical positions, with472 comparisons and890 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Two hundred ninety-seven core rows now have individually reconciled, bounded alignment:
-1933-2229. The remaining96 are unreviewed. The second tranche builds on
+Three hundred five core rows now have individually reconciled, bounded alignment:
+1933-2237. The remaining88 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,62 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-eighth tranche completes summer, sun, sunder, sup,
+swallow bird, swan, swell and swim, rows2230-2237, from released
+d2a2eac34ad1b64fcd6358eda9d365af5b9b5f78. All50 inherited identities
+are individually reconciled. Thirty-nine native occurrences and27
+scoped processes add66 records;124 positions link116 records.
+Fifty-three exact SOURCE fields cover49 cells, three dates and
+one page range. The shared Fulk process stays unchanged outside
+sup; all1393 consultations and786 dictionary identities/statuses
+survive, with2097 dictionary records. Thirty-five new rationales
+are position support, not inter-author causes.
+
+Summer distinguishes source/reflex gender, medial e/a, syllabic-m
+resolution and intervocalic-nasal lowering inhibition
+[@Orel2003, p.386; @Kroonen2013, pp.491-492,575;
+@Ringe2017, pp.99-101; @RingeTaylor2014, pp.28-32].
+Sun's old direct/oblique l/n forms remain distinct from the n-stem;
+Kroonen's PGmc w-loss and Ringe's retained-w/disyllabic argument
+form an unexplained focused chronology case. Native tilde/macron,
+missing quantity and Brugmann's reported cells remain separate
+[@Orel2003, p.387; @Kroonen2013, pp.463-464;
+@Ringe2017, pp.161-162,309-310; @Fulk2018, p.180].
+Sunder's actual sundrian/syndrian formations and comparative base
+are separated; Kroonen's swimming/sound/south families do not
+erase the inherited bounded negative [@Orel2003, pp.386-387;
+@Kroonen2013, p.492].
+
+Sup's shortened-geminate/iterative pedigree, conditional inherited
+quantity and P(NW)Gmc date are distinct, overlapping questions.
+Native stipang is retained; actual OE sūpan is not a quoted PGmc
+ending [@Orel2003, pp.388-389; @Kroonen2013, p.493;
+@Ringe2017, pp.254-255; @Fulk2018, pp.263-265;
+@RingeTaylor2014, pp.38-40].
+Swallow compares swallowing-verb and wedge-tail naming, separately
+from optional velars and WS/Mercian endpoints
+[@Orel2003, pp.390,394; @Kroonen2013, pp.491,495;
+@RingeTaylor2014, pp.184-186].
+Swan's selected genitive is not a dictionary citation, and the
+sound-family agreement is not a manufactured ending conflict
+[@Orel2003, p.391; @Kroonen2013, p.496].
+
+Swell's necessary boil cross-reference supplies the nasal-present
+argument, compared with Ringe's reasonable laryngeal pedigree.
+The explicit securely-PGmc date on270 supports a local repair;
+burn and sill remain different etyma
+[@Orel2003, pp.393-394; @Kroonen2013, pp.494-495,498-499,503;
+@Ringe2017, pp.99,270].
+Swim compares secondary ablaut from the long-i motion verb with
+nasal-present ancestry; conditional j-present, rejected zero
+grade and independent past-singular occurrences stay separate
+[@Orel2003, pp.390,394,397; @Kroonen2013, pp.492,495,501-502;
+@Ringe2017, p.269; @RingeTaylor2014, pp.143-145].
+All four focused causes and eight core causes are unestablished.
+The exact receipts are `alignment-2230-2237-amendments.tsv` and
+`alignment-2230-2237-occurrences.tsv`. No scientific adoption,
+automatic38 release,39 preparation or PDF is included.
 
 The thirty-seventh tranche completes stork, storm, straw, stream,
 stretch, strew, string and stud, rows2222-2229, from released

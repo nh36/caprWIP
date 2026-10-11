@@ -8,6 +8,145 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-eighth alignment checkpoint: summer through swim
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base d2a2eac34ad1b64fcd6358eda9d365af5b9b5f78 on update;37 is
+committed and pushed, with remote independently equal. Rows2230-2237
+cover summer, sun, sunder, sup, swallow bird, swan, swell and swim.
+Immutable preparation pins5726 forms,50 inherited identities and113
+research hashes. Complete38 is authorized, not its release,39 preparation
+or scientific adoption. Preparation and analytical persistence occurred
+once; never recreate preparation or execute/import the persisted candidate.
+
+### Question
+
+Can all50 identities be individually reconciled without conflating
+n-stem/direct sun paradigms, sunder weak formations, bird/verb swallow,
+selected genitive swan, or swim present/past cells? Do actual glide,
+naming and sonorant-pedigree warrants justify focused differences?
+Unreceipted changes, erased qualifications, lost shared owners or
+confidence-derived dates refute completion.
+
+### Current state
+
+Eight unreviewed core rows;297 previously bounded/96 unreviewed,
+5726 forms,1393 consultations,5975 positions,468 comparisons and855
+rationales. All selected input stages are pgmc; swan's differing input
+already has explicit sidecar ownership. Original46 scientific hashes
+remain protected. Shared Fulk aorist-present evidence also belongs to
+brook and shove and must not be globally repurposed.
+
+### Diagnosis
+
+Executable census, new traces, private variants and counterfactuals:
+n/a because no rule, selected input or canonical chronology changes.
+No Foma, full Germanic suite, private assay or PDF is run.
+All50 identities are individually retained. Thirty-nine native
+occurrences and27 processes add66 forms; eight focused positions
+reuse processes, yielding124 positions/116 records. Exact53 SOURCE
+fields cover49 cells, three locally supported dates and one page
+range. Shared Fulk SOURCE remains unchanged; no owner/status
+amendments are necessary.
+
+### Literature
+
+Complete relevant entries, arguments, footnotes and necessary
+cross-references are read, not just isolated preferred quotations.
+Summer/sun/sunder/sup: [@Orel2003, pp.386-389;
+@Kroonen2013, pp.463-464,491-493,575;
+@Ringe2017, pp.99-101,161-163,253-255,309-311;
+@Fulk2018, pp.179-181,263-265; @RingeTaylor2014, pp.28-32,38-40].
+Swallow/swan/swell/swim: [@Orel2003, pp.390-391,393-395,397;
+@Kroonen2013, pp.491-492,494-496,498-499,501-503;
+@Ringe2017, pp.99,269-271; @RingeTaylor2014, pp.143-145,184-186].
+
+Summer's sonorant resolution and intervocalic-nasal lowering
+inhibition are not a blanket explanation of medial e/a
+[@Ringe2017, p.100; @RingeTaylor2014, pp.28-32].
+Sun compares explicit PGmc glide loss with retained-w/disyllabic
+evidence, apart from obscure n-stem remodelling
+[@Kroonen2013, pp.463-464; @Ringe2017, pp.161-162,309-310].
+Sunder formations have distinct cited reflexes
+[@Orel2003, pp.386-387].
+Sup's iterative/back-formation, conditional quantity and qualified
+P(NW)Gmc membership are overlapping, not an invented exclusive dispute
+[@Kroonen2013, p.493; @Ringe2017, pp.254-255;
+@Fulk2018, pp.263-265; @RingeTaylor2014, pp.38-40].
+Swallow's naming arguments differ; WS/Mercian outcomes are distinct
+[@Orel2003, pp.390,394; @Kroonen2013, pp.491,495;
+@RingeTaylor2014, pp.184-186].
+Swan's genitive is not quoted by either dictionary
+[@Orel2003, p.391; @Kroonen2013, p.496].
+Swell's actual nasal-present cross-reference contrasts with the
+reasonable laryngeal pedigree [@Kroonen2013, pp.499,503;
+@Ringe2017, pp.99,270].
+Swim's secondary-ablaut and nasal-present pedigrees remain distinct
+from actual past singulars [@Orel2003, pp.394,397;
+@Kroonen2013, pp.501-502; @RingeTaylor2014, pp.143-145].
+
+### Historical analysis
+
+Source stage, geographic scope, confidence, verification and
+selected-input conventions are independent. Summer PIE root with
+combining syllabicity/internal space is not a full PIE noun
+[@Ringe2017, p.100]. Native sun tilde and certified macron, native
+swallow digit3/z and certified velar, native missing motion-base
+macrons and certified long-i forms coexist
+[@Kroonen2013, p.464; @Orel2003, pp.387,390,394,397].
+Swell's explicitly secure PGmc statement supports its local
+date repair, not a new law or confidence increase
+[@Ringe2017, p.270].
+PNWGmc swim past and nasalized intermediate have identical native
+strings but separate occurrences; actual OE past is not the
+selected infinitive [@RingeTaylor2014, pp.143-145].
+Historical edges: none adopted. Source chronology arguments remain
+research positions, not promoted from executable environment.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+No registry verdict is emitted: this is not an SC adjudication.
+All eight alignments are bounded by exact remaining premises,
+not whole-word equivalence. Four substantive focused cases have
+unestablished causes; all eight whole-row causes remain unestablished.
+Thirty-five rationales supply position support, not disguised
+divergence explanations. No majority, recency or output score
+selects an ancestry.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, exact amendment
+and occurrence receipts, page-cited commentary/README, this complete
+nine-heading audit and source-sensitive regressions are updated.
+All430 focused survey/analysis tests pass (482.787seconds), including
+ten new source-sensitive regressions. Canonical refresh and independent
+artifact freshness report CONTROL PLANE CLEAN. Bibliography, section
+locators, all91 new-prose printed-page references, nine headings and
+whitespace pass. Independent post-refresh verification preserves5726
+inherited forms except53 exact fields,5925 outside positions,460
+unaffected comparisons,855 inherited rationales,1365 outside
+consultations, all1393 consultation identities/statuses,106 untouched
+research hashes and46 ORIGINAL scientific hashes. All39 native
+paragraph hashes and whole-token Unicode spans independently resolve.
+Measured totals:5792 forms,6049 positions,472 comparisons,890 rationales;
+305 bounded/88 unreviewed. Deterministic query evidence is retained
+in the session's pgmc-305-alignments-query-results.txt.
+No baseline/fingerprint effect occurs.
+
+### Residue
+
+Exact selected cells/endings/accents, source naming and sonorant
+pedigrees and focused causes remain bounded. All305 core rows through
+2237 are now bounded and88 remain unreviewed; full393 alignment,
+conditioning census, synthesis/watchlist, specialist dispatch and
+publication are unfinished. The independent alignment refusal is
+separate from the unchanged Ringe-Taylor convention/typography gap.
+No automatic38 release,39 preparation, science adoption or PDF.
+Unrelated .DS_Store and tmp_probe.foma remain untouched.
+
 ## Thirty-seventh alignment checkpoint: stork through stud
 
 ### Identity

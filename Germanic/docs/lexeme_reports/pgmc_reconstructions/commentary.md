@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,146 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5726 evidence
-records,1393 actual consultations,5975 positions,468 comparisons and855
+393 applicability screens per source. The database contains5792 evidence
+records,1393 actual consultations,6049 positions,472 comparisons and890
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:297 core rows are bounded and96 unreviewed.
+explanation remain ongoing:305 core rows are bounded and88 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,267 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-eighth alignment: sun paradigms, bird naming and sonorant pedigrees
+
+Rows2230-2237 cover summer, sun, sunder, sup, swallow bird, swan,
+swell and swim. All50 inherited identities are individually reconciled.
+Thirty-nine native occurrences and27 scoped processes add66 records;
+124 positions link116 distinct records because eight focused positions
+reuse actual process evidence. Fifty-three reversible SOURCE fields
+cover49 cells, three explicitly supported dates and one page range.
+The shared Fulk aorist-present process keeps its SOURCE cell and argument
+unchanged for brook and shove; sup receives an individual analytical
+cell and a new scoped process instead. Consultation identities/statuses,
+targets, scopes and applicability owners are unchanged.
+
+### Summer: gender, season formation and two nasal domains
+
+Orel's masculine *sumeraz cites *sumer* 'summer', with an additional
+neuter Nordic reflex, whereas Kroonen heads the entry with neuter
+*sumara-* but explicitly prints masculine Old English *sumer, sumor*.
+These are a header/reflex gender distinction and a medial e/a distinction,
+not evidence that the selected form should acquire a different gender
+by majority vote. Orel compares Armenian summer and Sanskrit half-year,
+year and season; Kroonen explicitly connects PGmc *sumar-* with an
+Indo-European half-year/season word and the half prefix. His spring
+cross-reference compares suffixes, not an asserted literal compound of
+the summer word and a spring noun. The spring entry has its own
+heteroclitic and Verner alternatives, which cannot be imported as summer
+case endings [@Orel2003, p.386; @Kroonen2013, pp.491-492,575].
+
+Ringe's explicit PIE *sm̥ H-* retains syllabic m and the internal space.
+Its arrow to PGmc *sumaraz* is marked for remodeling, so the root
+quotation does not supply a full PIE noun. Resolution of the syllabic
+sonorant supports um; it does not independently explain Orel's medial
+e or certify the selected accent and ending [@Ringe2017, pp.99-101].
+Ringe-Taylor's summer example belongs to inhibition of u-lowering
+before an intervocalic nasal. They consider both inhibition and lowering
+followed by raising, preferring inhibition because unlowered southern
+examples also exist. This is not their distinct coda-nasal exclusion,
+illustrated by sun. Actual *sumor* is an Old English citation, not a
+newly inferred inflected summer cell [@RingeTaylor2014, pp.28-32].
+The exact common dated formation and the cause of the medial-vowel
+presentation remain unestablished; no general e/a normalization follows.
+
+### Sun: direct forms, obliques and a real glide-date question
+
+Orel's native header *sunnon*, without a macron, remains beside the
+inherited certified *sunnōn*. His main feminine n-stem and the masculine
+Old Saxon alternative are individually recorded. The bibliography
+reports Brugmann's nominative *sunōn*, genitive *sun-n-ez* and later
+generalization of nn; these are reported paradigm cells, not two
+unqualified Orel replacements for the selected sun citation
+[@Orel2003, p.387]. Kroonen's neuter header and mostly feminine daughter
+reflexes also remain separate. He derives the old genitive *sunaz*
+through *sūnós* by Dybo shortening, then attributes replacement of
+sun- by sunn- probably to other n-stem genitives. The conditional
+gemination pedigree does not independently establish the nominative
+glide history [@Kroonen2013, pp.463-464].
+
+For that history Kroonen explicitly derives the PGmc nominative from
+*sōwel* by regular loss of w after ō in open syllables. The native
+endpoint is *sõel*, with a tilde, whereas the certified citation stem
+is *sōel-*; both survive without an automatic phonemic equivalence.
+Ringe, however, reconstructs (pre-)PGmc *sōwul* and regards the early
+Old Norse disyllabic *soulu* as strong evidence that w was not lost in
+PGmc. His later derivation explicitly labels *sōwul* PGmc before
+remodeling to *sōwulō* and the Nordic continuation. These are competing
+precursor and chronology warrants, not merely different endings on the
+selected n-stem [@Kroonen2013, p.464; @Ringe2017, pp.161-162,309].
+
+The focused `sun-glide-loss-chronology` case retains both arguments;
+their cause is unestablished. It does not imply that every sun n-stem
+question is thereby answered. Ringe separately discusses the expected
+oblique *suwen-*, then *swen-*, and apparently remodeled *sunwen-*,
+explicitly admitting difficulty in explaining the eventual form.
+His n-stem is normally feminine, apparently originally neuter on
+Gothic evidence. Fulk's l/n footnote remains a reported reconstruction
+discussion, not a newly quoted PGmc word or an independent resolution
+of either pedigree [@Ringe2017, pp.309-310; @Fulk2018, pp.179-181].
+Ringe-Taylor's native *sunnon-* is explicitly PGmc in the coda-nasal
+lowering argument, but its missing written quantity is not repaired
+from the selected ending [@RingeTaylor2014, pp.28-30].
+
+### Sunder: actual weak formations and a retained bounded negative
+
+Orel's *sundrōjanan* cites actual *sundrian* 'sunder', whereas
+*sundrjanan* cites *syndrian* 'separate'. They are distinct weak
+formations with distinct reflexes, not automatically spelling variants
+of one selected cell. Both refer to the comparative base *sundraz*,
+whose entry starts on386 and continues on387; its exact page-range
+repair has a reversible receipt. Bugge/Schmidt's one-root proposals
+and Meringer's being proposal are reports, not an adopted unanimous
+base genealogy [@Orel2003, pp.386-387].
+
+Kroonen's inherited completed negative remains legitimate. His
+*sunda-* swimming/sound entry derives from swim, his south entry uses
+the sun family, and sin has its own formation: none is the separation
+etymon merely because the spelling resembles sundr
+[@Kroonen2013, p.492]. No grammar consultation or negative is invented.
+The selected long-o input is unchanged, while its exact stress/ending
+and base ancestry remain bounded rather than falsely corroborated.
+
+### Sup: back-formation is not the same claim as inherited quantity
+
+Orel prints the strong drink/sup verb, refers to the soup/drink noun,
+and explicitly leaves the verb's origin unclear. The noun resembles
+Sanskrit soup, but unvoiced p creates a problem; mouthful and sop
+entries remain related nouns, not full verb pedigrees
+[@Orel2003, pp.388-389]. Kroonen instead regards the strong sup verb
+as best analyzed as a back-formation from the soak iterative, citing
+secondary full grade and shortened gemination. The native sentence
+writes *u* for expected *eu*, without the header's macron; the argument
+about long ū does not silently repair the quotation. His iterative
+entry also relates short *supan-* to Pre-Germanic *suppan-*.
+The proposed Sanskrit compound of pour and drink roots gives possible
+laryngeal-dissimilation and loss explanations for aspiration and short
+u. It addresses an obstacle Orel leaves open without being an explicitly
+named rebuttal or an exclusive borrowing dispute [@Kroonen2013, p.493].
+
+Ringe permits PGmc sup because the absence of Gothic evidence may be
+accidental, but leaves two origins of ū open: early reanalysis of the
+ablaut system, or inherited long-u roots attracted into it. The earlier
+Ringe-Taylor account explicitly qualifies its sup reconstruction as
+P(NW)Gmc; native *stipang* remains corrupt but retained, with a mixed
+analytical date rather than an unequivocal PGmc assertion. These are
+two Ringe publications, not two independent author votes
+[@Ringe2017, pp.254-255; @RingeTaylor2014, pp.38-40].
+
+Fulk's actual *sūpan* 'sup' belongs to the aorist-present list. The
+common class-I analogical explanation, Perridon's curtailed sound-change
+alternative and the problem of lowering short u remain separately
+attributed. The shared older process is not globally rewritten to make
+all these theories a sup-specific conclusion
+[@Fulk2018, pp.263-265]. These partially overlapping questions do not
+justify a manufactured fifth focused conflict. The full-row cause,
+exact inherited quantity and selected genealogy remain unestablished.
+
+### Swallow: naming, optional velars and dialect endpoints
+
+This is the bird, not the ingestion verb. Orel derives the bird
+*swal(ʒ)wōn* from the swallowing verb, but leaves that verb's origin
+unclear. The certified velar forms remain beside native
+*swal(3)wōn* and the actual verbal header *swelzanan* on394.
+The original390 cross-reference is not overwritten as though it had
+been a verb-body quotation. Mythical kingfisher, whistle and nightingale
+connections in the bibliography remain reports
+[@Orel2003, pp.390,394].
+
+Kroonen relates swallow, gannet and the nick/cut/wedge family, apparently
+explaining both birds as wedge-tailed. The pillar entry supplies the
+internal cross-reference and does not independently settle the
+pillar's origin. His pretonic-shortening account and the Nordic
+labial loss based on an oblique cell are distinct claims.
+Native gannet *sülōn-* retains its umlaut sign; it is not silently
+converted to a certified long-u stem
+[@Kroonen2013, pp.491,495]. The focused `swallow-bird-naming` case
+compares the swallowing-verb and wedge-tail arguments, but no reason
+for the authors' different allocation is established.
+
+Ringe-Taylor provides explicit PWGmc *swalwa*, a fronted intermediate
+*swelwe*, actual Mercian *swalwe* and West Saxon *swealwe* 'swallow'.
+The Mercian word is neither the selected WS form nor another inferred
+inflected cell. Geography and phonetics argue against simple failure
+of fronting; retraction before nonpalatalized lC contrasts with
+palatalized geminates. Their possible simultaneous relationship with
+breaking does not settle shared ancestry versus convergence and is
+not adopted as an FST edge [@RingeTaylor2014, pp.184-186].
+
+### Swan: a genitive cannot be obtained by deleting a citation ending
+
+Selected *swanes* 'swan' is a genitive, with citation PROTO *swánaz*
+and input *swánas*, already explicitly staged as pgmc by the established
+sidecar. Orel's masculine *swanaz* compares Sanskrit and Latin sound
+nouns and their sound verbs. Kroonen's masculine citation stem
+*swana-* prints Old English *swan, swon* and qualifies the familiar
+singing-bird interpretation: the mute-swan death-song belief is false,
+but the whooper has a distinctive honk
+[@Orel2003, p.391; @Kroonen2013, p.496].
+
+Neither entry quotes the selected genitive or its reconstructed ending.
+Kroonen's native anomalous Nordic “adj.” label is not reverse-engineered
+into a different Old English gender/cell. The shared sound family
+is useful lexical evidence, not a substantive conflict manufactured
+from stem-versus-word presentation. Exact selected genitive history
+and accent remain separate missing premises; no corpus field changes.
+
+### Swell: following the cross-reference changes the actual comparison
+
+Orel questions derivation of swell from burn; burn's Sanskrit shine
+and Lithuanian singe comparisons belong to that other verb.
+The lump/swelling noun derives from swell, and sill is another noun
+altogether. None is silently relabelled as the selected infinitive
+[@Orel2003, pp.393-394]. Kroonen's swell header says exclusively
+Germanic, but his required boil cross-reference explicitly proposes
+a likely nasal-present *suel-ne-* on the strength of short l in
+Old English *swyle* 'boil'. Reading the header alone would falsely
+erase that ancestry proposal [@Kroonen2013, pp.499,503].
+
+Ringe explicitly calls swell securely reconstructable for PGmc,
+supporting the local SOURCE/analytical date repair independently of
+confidence. He regards Melchert's PIE *swelH-* as reasonable, while
+noting that most cognates mean 'be arrogant'. His laryngeal-development
+discussion identifies swell and chew as the only convincing examples
+for possible RH gemination, not a demonstrated source for every
+Germanic geminate [@Ringe2017, pp.99,270].
+
+The focused `swell-geminate-origin` case therefore compares actual
+nasal-present and laryngeal-root warrants. Kroonen's burn account,
+including its laryngeal and possible root-dental origin, cannot serve
+as a swell endorsement merely because the roots resemble one another
+[@Kroonen2013, pp.494-495,498]. The cause of this focused divergence
+and the whole-row cause remain unestablished; no new gemination rule
+or historical stage is adopted.
+
+### Swim: present pedigrees and independent past-cell occurrences
+
+Orel's e-grade swim verb is a secondary ablaut formation based on
+the long-i move-back-and-forth verb, probably with a segmented
+swip-m pedigree. The native *swimanan* and *swip-m-anan* on397 lack
+the certified macrons and remain separate receipts. The sweep body
+is actually390; the original397 lead remains as a cross-reference.
+Reported hunting connections and Fraenkel's objection are not
+unqualified Orel endorsements [@Orel2003, pp.390,394,397].
+
+Kroonen instead supplies two possible nasal presents,
+*suem-ne-* and *sue-n-m-e-*, with regular i before a covered nasal.
+His Nordic single/geminate alternation survives comparatively late;
+the single-m present probably comes from the past, since otherwise
+its i is unexplained. The conditional e-grade j-present explains
+*symja*, while Magnusson's zero-grade *s(w)umjan-* is explicitly
+rejected. The Irish reach/bring connection is extremely doubtful.
+The swim-derived sound noun and make-swim causative are family
+evidence, not additional selected present cells or sunder evidence
+[@Kroonen2013, pp.492,495,501-502].
+
+The focused `swim-present-pedigree` comparison is substantive because
+secondary ablaut from the long-i motion verb and nasal-present ancestry
+are different arguments; a global e/i spelling rule cannot explain
+that difference. Ringe separately confirms PGmc swim as the only
+labial-ending geminate in the nasal subclass, whose general geminate
+origin remains difficult to recover. That class-level limitation is
+not a direct rejection of every proposed nasal present
+[@Ringe2017, p.269].
+
+Ringe-Taylor's two *swamm* occurrences are respectively an explicit
+PNWGmc past indicative singular and a nasalized intermediate, followed
+by actual Old English *swam, swom* 'swam'. Identical native spelling
+does not merge their dates; neither past is an infinitive. The
+late-Old-English rounding argument does not reconstruct an o-grade
+present or establish a precise date for shortening mm. Their
+variable-change terminology is reported, not adopted as CAPR's
+sound-law mechanism [@RingeTaylor2014, pp.143-145].
+
+All four focused causes and all eight whole-row causes remain
+unestablished. Thirty-five new rationales are position support,
+not disguised explanations of divergence. The immutable preparation,
+original46 scientific hashes, selected reconstructions/inputs/stages,
+context/FST/baselines and historical receipts remain protected.
+Current totals are5792 forms,1393 consultations,6049 positions,
+472 comparisons and890 rationales, with305 bounded rows and88
+unreviewed. The full393-row alignment, conditioning census, synthesis,
+watchlist, specialist dispatch and publication remain unfinished.
 
 ## Thirty-seventh alignment: derivational direction, glide histories and nonavian comparanda
 
