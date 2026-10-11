@@ -10,15 +10,296 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6392 evidence
-records,1395 actual consultations,6686 positions,490 comparisons and1158
+393 applicability screens per source. The database contains6467 evidence
+records,1395 actual consultations,6765 positions,492 comparisons and1193
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:369 core rows are bounded and24 unreviewed.
+explanation remain ongoing:377 core rows are bounded and16 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
-## Forty-sixth alignment: wind through word
+## Forty-seventh alignment: world through make imperative
+
+Tranche46 is released ascf9f1ed9. Rows2302-2309 now retain all95 inherited
+analytical identities with individual lexical, cell, attribution and
+historical-date decisions. Forty-four native occurrences and31 scoped
+arguments add75 records. Four focused positions reuse arguments already
+linked to their core rows;35 new reasons support positions, not causes
+of disagreement. The174 positions link170 evidence records, not174
+independent consultations. All1395 consultation identities/statuses and
+786 dictionary dispositions survive. Exact102 amendments comprise92
+cell descriptions, three explicit dates and seven argument repairs.
+
+The reading receipts preserve true holding sheets, whole paragraphs and
+their hashes, and Unicode start/end-exclusive spans. A native OCR glyph
+is not silently repaired to its certified counterpart. In particular,
+Kroonen's early printed20 is holding sheet58, not the nominal global
+offset's sheet60; native unmarked *alþin-* remains beside the inherited
+certified long-vowel quotation. The repeated yoke cases each have their
+own occurrence coordinate. Neither reuse nor source typography creates
+an additional independent author vote
+[@Kroonen2013, p.20; @Ringe2017, p.312].
+
+### World: a real compound, not a synthetic union of components
+
+The central identity repair is to distinguish a full world reconstruction
+from evidence for its members. Kroonen quotes *wira-* 'man' and separately
+*aldi-* 'age', *alda-* 'old', its derivatives, and *aldra-* 'age, lifespan'.
+These are not interchangeable second components. The age ti-stem is
+derived from the grow/rear verb; the old adjective continues its original
+participle, whereas lifespan is an instrumental formation. None supplies
+Kroonen's authored whole world compound, and none licenses assembling the
+selected *wír-àldu* as his exact quotation
+[@Kroonen2013, pp.20-21,588].
+
+Orel does quote the whole feminine compound, explicitly connecting man
+with the generation/age/lifetime noun. The independent man body belongs
+to printed463; the wire homonym on printed467 is separate despite the
+native extract obscuring its length. Age's old/growth family and lifespan
+formations remain independently recorded rather than substituted for
+the compound noun's cell
+[@Orel2003, pp.13-14,462-463,467].
+
+Ringe's man discussion preserves both irregular shortening and unexplained
+lowering; it does not endorse Kroonen's shortening law wholesale. His
+probable old-adjective paradigm instead concerns Verner alternation and
+different daughter remodelling directions. An adjective's probable PGmc
+date does not date the nominal age component or the whole world compound
+[@Ringe2017, pp.96-98,317-318;
+@Kroonen2013, p.588].
+
+Ringe-Taylor's two world chains really are the same etymon, not merely
+family examples. The PWGmc optional-i citation leads through unstressed
+fronting/retraction to later second-member raising; the independently
+quoted PNWGmc i-form is often transferred to ō-stems. Its u-ending
+intermediate and later OE citations must not be classified as unrelated
+to world merely because the selected input has a different ending
+[@RingeTaylor2014, pp.201-203,325-327].
+
+Their man-component discussion explicitly permits an already lowered
+PGmc e-form, marked with two question marks. The literal uncertainty
+survives, but its date no longer defaults to unknown merely because it
+is uncertain. Conversely the causes of man shortening/lowering remain
+unrecoverable, and the intermediate compound strings gain no date from
+their appearance alone [@RingeTaylor2014, pp.33-35].
+
+The earlier world process conflated sister's unexplained eo with world's
+back umlaut. The exact repair now records world as a variable WS
+combinative-back-umlaut example while preserving sister as a separately
+discussed unresolved case. This is a source-identification correction,
+not a newly adopted optional sound law or a recovered cause of the
+whole compound's history [@RingeTaylor2014, pp.325-327].
+
+### Worm and wring: root admission is independent of matching vowels
+
+Worm's i-stem and Orel's a/i alternatives belong to the same masculine
+etymon. Female snake, vermin collective and purple snail/colour are
+related formations, not alternative grammatical cases of that selected
+worm. Orel explicitly objects to conflating the reflexes of another
+worm root; an English gloss match cannot override that restriction
+[@Kroonen2013, pp.600-601; @Orel2003, p.476].
+
+Ringe explicitly dates the unlabialized antecedent post-PIE before its
+PGmc outcome. It is therefore not back-projected to PIE simply to line
+up with the dictionary equation. Ringe-Taylor's PGmc *wurmiz* and OE
+*wyrm* illustrate following-i mutation. No other OE case is specified:
+the attested citation is same-etymon evidence, not automatically
+same-etymon-other-cell. That mutation argument neither selects Orel's
+a-alternative nor erases the independently meaningful ending
+[@Ringe2017, pp.100-102; @RingeTaylor2014, pp.222-224].
+
+Wring poses a different question. Kroonen retains traditional *wringan-*
+while allowing replacement of an older *wrinhan-* if Icelandic *rjá*
+belongs to that history. The alternative tear/jerk verb allocation is
+itself uncertain; it prevents turning the voiceless-root proposal into
+an unqualified adopted reconstruction. The wrong adjective and snare
+are derivational family evidence, whereas the weak twisting verb has
+a preferred iterative explanation with an alternative nasal-present
+base explicitly discussed [@Kroonen2013, pp.411-412,594,596-597].
+
+Orel's e-vowel/velar citation and Lithuanian prepare/set-up comparison
+retain their own argument. Fulk's full nasal-present discussion and
+continued note include actual *wringan* and Lithuanian confine/press,
+but no newly reconstructed whole selected Germanic infinitive. The
+Fulk consultation consequently stays discussion-only. No global
+e-to-i or velar-sign normalization establishes lexical or phonological
+equivalence [@Orel2003, p.472; @Fulk2018, pp.245-249].
+
+### Yarn and year: semantic derivation versus ancestral paradigm
+
+Kroonen's yarn is an incidental neuter citation in the feminine intestine
+entry. Strings made from intestines supply a semantic explanation;
+the gut noun and internal-fat collective do not become yarn inflections.
+Orel's yarn/gut/internal-fat distinctions agree on the need to preserve
+formation identity, without certifying agreement on the selected full
+ending or a shared reconstructed date
+[@Kroonen2013, p.169; @Orel2003, pp.126-127].
+
+Ringe-Taylor explicitly begins the yarn chain at PNWGmc. It is presented
+among already-broken vowels: northern fronting and breaking precede the
+initial-palatal outcome. This is not a second application of ordinary
+palatal diphthongization to the same simple vowel. Native *geern* and
+*gearn* remain separate quoted representations, not silently harmonized
+phonemic transcriptions. No fictitious Ringe or Fulk lexical consultation
+is introduced for a dictionary/RT-only row
+[@RingeTaylor2014, pp.203-206].
+
+Year instead exposes a real ancestral paradigm distinction. Kroonen
+uses Avestan n-cases and cross-dialect e/o-ablaut to support a static
+heteroclitic paradigm: an o-grade nominative and e-grade n-genitive.
+These ancestral cells share the year etymon but not a case, grade or
+suffix; they are not unrelated comparanda and not two interchangeable
+spellings of the Germanic thematic citation
+[@Kroonen2013, p.273].
+
+Orel's long-ē neuter retains its own cognate/formation account. Fulk's
+actual initial-j-loss body adds a full native quotation beside the
+starless index token. Neither the index's PGmc heading nor another
+explicitly dated lexical example in the discussion supplies the year
+token's independent PGmc date
+[@Orel2003, p.206; @Fulk2018, pp.123-125,387].
+
+Ringe-Taylor independently specifies PGmc, PNWGmc and PWGmc year
+endpoints before northern fronting and the WS palatal outcome. Those
+dates survive with the native accented vowels, z/ger representations
+and q-ending corruption. Earlier and later occurrences of an identical
+string remain independent; explicit dating of one does not silently
+date every intermediate in another chain
+[@RingeTaylor2014, pp.11-13,149-151,215-217].
+
+### Yoke: conditioned cells and an explicitly assumed levelled paradigm
+
+The dictionaries' neuter yoke citations differ from yoke-fellow, yoking
+verb and acreage formations. Baltic/Slavic nasal counterparts do not
+insert n into the Germanic noun: Orel explicitly assigns Lithuanian n
+to the verbal present infix. Those comparisons retain their precise
+family role [@Kroonen2013, p.274; @Orel2003, pp.206-208].
+
+Ringe's explicitly PGmc citation and the separate unstarred table
+represent reconstructed noun cells, not new attestations. Eleven
+table positions preserve nominative, vocative and accusative singular,
+all singular obliques, and the plural cells. The identical singular
+*juką* strings and three plural/instrumental *jukō* strings have distinct
+coordinates and case assignments. Counting them as separate sites does
+not count them as independent evidence for different vowel histories
+[@Ringe2017, pp.118-120,311-313].
+
+Fulk's actual body contrasts accusative singular *joka"* with genitive
+plural *jukum*. The former is not a nominative simply because it
+appears in a lexical index; the latter is specifically genitive plural,
+not a generic oblique. Their conditioned u/o distinction is useful even
+though neither lexical token has an independently asserted local PGmc
+date [@Fulk2018, pp.55-57,387].
+
+Ringe-Taylor's PWGmc table instead assumes o levelled through yoke for
+concreteness. The following page explicitly says actual dialect
+distributions might differ. Individual nominative, accusative,
+instrumental and plural positions therefore remain separate, including
+the assumed dative/instrumental plural syncretism
+[@RingeTaylor2014, pp.113-116].
+
+The focused yoke comparison is different-units, not manufactured
+exclusive opposition. A conditioned earlier accusative/genitive pair
+can coexist with an assumed later levelled paradigm; the real issue
+is their stage/cell and modelling warrants. The complete lowering
+discussion preserves high-front/high-back blockers, coda-nasal
+conditions, paradigm levelling and northern-domain qualifications.
+It does not establish an inter-author cause or a single fully dated
+selected ancestry [@Fulk2018, pp.55-57;
+@RingeTaylor2014, pp.26-35,113-116].
+
+### Youth and make: family, exact cell and historical stage
+
+Youth's nominal ti-stem is not the young adjective's grammatical cell,
+but young is related family, not an unrelated etymon. Kroonen expressly
+assigns the w-bearing precursor to West Germanic and specifies regular
+velarization between two high vowels, one rounded. The probably
+secondary hiatus w remains a conditional earlier step rather than an
+invented universal input. The selected CAPR input independently stays
+pwgmc [@Kroonen2013, pp.274-276].
+
+The only Gothic attestation at issue is dative *jundai*. It admits
+ō- and i-stem analyses; Kroonen prefers i from the wider Germanic
+evidence and calls the often cited nominative *junda* a ghost form.
+An attested dative therefore cannot certify an otherwise unattested
+nominal citation. Orel's youth account instead adopts a taboo velar
+origin and separately reports analogy and a laryngeal proposal.
+Those are authored alternatives, not CAPR's own lexical exception
+[@Kroonen2013, p.276; @Orel2003, pp.207-208].
+
+The focused velar-origin case is substantive but unexplained. Each
+source supplies its own conditioning or etymological warrant, but
+neither directly explains why the other author adopted a different
+account. A support rationale is not a divergence explanation.
+Fulk's actual northern nasal-loss example and Ringe-Taylor's explicit
+PWGmc youth chain concern a later phenomenon, including compensation
+and shortening, not the origin of the velar. The latter chain is
+same-etymon evidence, not merely young-family evidence
+[@Kroonen2013, p.276; @Orel2003, p.207;
+@Fulk2018, pp.90-96; @RingeTaylor2014, pp.139-142].
+
+Make imperative2sg shares real dictionary evidence with the earlier
+make-infinitive row. Its dictionary SOURCE fields remain unchanged
+for that outside owner. The row-local analyses now say same-etymon
+other-cell: an infinitive is neither an unrelated family member nor
+an authored imperative. Fit adjective, mate noun and imperative *maca*
+remain distinct, despite their possible written resemblance
+[@Kroonen2013, pp.350-351; @Orel2003, p.257].
+
+The existing make-origin-and-direction case and its bounded inferred
+explanation remain intact; no duplicate case or newly discovered
+cause is claimed. Kroonen's match/put-together semantic preference
+and adjective-to-verb direction are still compared with Orel's
+smear/knead connections and opposite derivational direction
+[@Kroonen2013, pp.350-351; @Orel2003, p.257].
+
+Ringe-Taylor's actual make chain supplies infinitival and present-plural
+history, not the selected imperative. Its locally OW-labelled
+suffix-mutated intermediate is explicitly OE even though the native
+token remains corrupted. The PWGmc-only lexical reconstruction policy
+allows accidental earlier attestation gaps, not dissent-by-silence.
+The later general weak-past correction supplies no missing make
+imperative. Exact ending, accent and independently dated PGmc
+*mákô* ancestry therefore remain an explicit non-adopting question
+[@RingeTaylor2014, pp.126-128,227-229,516-518].
+
+### Bounded closeout
+
+The524-test focused run passes522. Its two stale expectations concern
+the measured92-cell/seven-argument partition of102 amendments and
+world's old component-only different-units classification. Only those
+expectations are corrected; source arguments are not rewritten to
+satisfy tests. Both and the added deterministic scoped-case query pass
+the three-test final rerun, covering all525 current focused tests.
+The unrelated pre-existing ResourceWarning is left unchanged.
+Canonical refresh and independent artifact freshness are clean;
+bibliography, locators,80 new-prose printed-page references, all nine
+audit headings and whitespace pass.
+
+Independent current-SOURCE verification reverses102 exact fields and
+preserves6392 inherited forms,6591 outside positions,482 unaffected
+cases,1158 old rationales,1365 outside consultations,128 research hashes
+and46 ORIGINAL scientific hashes. All44 native paragraph/hash/Unicode
+spans resolve, including the piecewise early Kroonen folio. Shared
+make SOURCE, outside analyses and its existing focused explanation are
+unchanged. Deterministic query evidence is in the session
+`files/pgmc-377-alignments-query-results.txt`; alignment refuses16
+independently of the unchanged RT conventions refusal.
+
+Current totals6467 forms,1395 consultations,6765 positions,492 cases and
+1193 rationales;377 bounded/16 unreviewed core rows. All eight core causes
+and both new focused causes remain unestablished. There is no new
+consultation identity/status, source scope, target or applicability
+owner. Scientific corpus/input/stage/context/FST/baseline owners and
+the shared outside make research remain unchanged.
+
+Tranche47 is completed research, not an approved scientific adoption
+or a publication. It stays uncommitted; no48 preparation is included.
+The full393-row alignment, conditioning census, explanatory synthesis,
+consistency watchlist and finite specialist agenda remain unfinished.
+Historical closeout paragraphs below retain their measured counts.
+
+## Forty-sixth alignment: wind through word (releasedcf9f1ed9)
 
 Tranche45 is released as47615578. This increment individually reconciles
 all55 inherited analytical identities for rows2294-2301. Thirty-seven

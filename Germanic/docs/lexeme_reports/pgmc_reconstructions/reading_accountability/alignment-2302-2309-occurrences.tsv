@@ -1,0 +1,2172 @@
+evidence_id	source_key	printed_pages	holding_sheet	paragraph	start_char	end_char	diplomatic_form	paragraph_sha256	paragraph_text	begin_anchor	end_anchor
+alignment47-world-orel-native	Orel2003	462	501	1	3305	3316	*wira-aldiz	754fa384e22528d91bf3e3e9160206074dc22720862ea3c98783075e0ddcf04d	"wērō
+462
+(isolates werō from *weraz); FEIST 484;
+POKORNY I 1165; DYBO VSJа 26; VRIES
+ANEW 645; ZALIZNIAK I 148; FRISK I
+641; VASMER-TRUBACHEV I 292–293;
+CHANTRAINE 415; ONIONS 992; LEHMANN
+GED 350; HEIDERMANNS 672.
+*wēsan sb.n.: Icel vás ‘aura refrigerans',
+Du waas ‘haze, mist'. Close to Skt vāsa-
+‘perfume, fragrance', Lith vesà 'coolness'
+(PERSSON Beiträge 11–12). Further con-
+nected with *wējanan I. HOLTHAUSEN IF
+LXII 152; MAYRHOFER III 197-198
+(against comparison with Skt); POKORNY
+I 83; FRAENKEL 1232.
+~
+*wētaz adj.: ON vátr 'wet', OE wát id.,
+OFris wet id. A vṛddhi form related to
+*watnan *watar. Identical with Hier.
+Luw wida- 'watery' (WATKINS FuW 373–
+374). KARSTEN NB I 31; TORP-Falk
+384; HOLTHAUSEN AEEW 381; POKORNY I
+80; VRIES ANEW 648; ONIONS 1000;
+DARMS Vrddhi 13-24, 450; BAMMESBERGER
+Nom. 255; HEIDERMANNS 676–677.
+*wētjanan wk.vb.: ON vata 'to wet, to
+make wet', OE wátan 'to moisten, to wet',
+OFris weta id. Derived from *wetaz.
+TORP-FALK 384; HOLTHAUSEN AEEW
+381; HEIDERMANNS 677.
+*wētjōn sb.f.: ON vata 'wetness, sleet,
+rain', OE wáte ‘wet, moisture'. Derived
+from *wetaz. HOLTHAUSEN AEEW 381;
+VRIES ANEW 672.
+*wētōn sb.m.: ON váta-drífa 'fall of sleet',
+OE wáta 'wet, moisture'. Substantivized
+*wetaz. HOLTHAUSEN AEEW 381; HEI-
+DERMANNS 677.
+*widuwōn sb.f.: Goth widuwo 'widow',
+OE widuwe id., OFris widwe id., OS widowa
+id., OHG wituwa id. Etymologically
+connected with Skt vidhávā id., Av vidavā
+id., Lat uidua id., OIr fedb id., OPrus
+widdewu id., Slav *vodova id. BARTHO-
+LOMAE 1443; TORP-FALK 411; TRAUTMANN
+BSW 357; HOLTHAUSEN AEEW 393;
+WALDE-HOFMANN II 785-786; FEIST 562;
+MAYRHOFER III 211; POKORNY I 1128;
+ZALIZNIAK I 156; ONIONS 1006; VASMER-
+TRUBACHEV I 281-282; SZEMERÉNYI
+Kinship 85; LINDEMAN Verschärfung 1.4;
+wira-aldiz
+LEHMANN GED 402; BAMMESBERGER Nom.
+179; BEEKES KZ CV 181–182; KLUGE-
+SEEBOLD 895.
+*widuz sb.m.: ON viðr 'tree, forest, wood',
+OE widu, wudu 'wood', OS wido-hoppa
+'hoopoe', OHG witu 'wood'. Etymologic-
+ally identical with OIr fid ‘tree, wood',
+W gwydd. Cf. also Hom ""Idŋ < *uidu̟ā
+(GINDIN apud TRUBACHEV VJa XXXIII/2
+26). TORP-FALK 411; HOLTHAUSEN AEEW
+393; DETSCHEW Thr. 214; POKORNY I 1177;
+VRIES ANEW 660; ZALIZNIAK I 152;
+ONIONS 1012; BAMMESBERGER Nom. 155.
+*wixslan *wixslaz sb.n./m.: ON á
+~
+víxl 'across', OS wehsal 'change, ex-
+change', OHG wehsal id. Related to Lat
+acc. uicem id. ZUPITZA Gutt. 210; TORP-
+FALK 407 (to wikanan); WALDE-HOFMANN
+II 781-782; POKORNY I 1131; VRIES
+ANEW 671; KLUGE-SEEBOLD 877.
+*wixslōjanan wk.vb.: ON víxla 'to cross,
+to put across', OE wixlan 'to change',
+OFris wixlia id., OS wehslōn id., OHG
+wehsalon id. Derived from *wixslan
+*wixslaz. HOLTHAUSEN AEEW 402; VRIES
+ANEW 670.
+~
+*wikōn sb.f.: Goth wiko 'sequence, táčiç',
+ON vika 'week, nautical mile', OE wicu
+'week', OFris wike id., OS wika id., OHG
+wehha id. Derived from *wīkanan (GRIEN-
+BERGER Got. 241). KLUGE DS 187 (the
+meaning 'week' developed under the influ-
+ence of Lat uicem 'exchange'); TORP-FALK
+407; HOLTHAUSEN AEEW 392; FEIST 563
+(against GRIENBERGER); POKORNY I 1131
+(to Lat uicem exchange'); VRIES ANEW
+662; ZALIZNIAK I 156; ONIONS 997; LEH-
+MANN GED 403; KLUGE-SEEBOLD 895.
+*wippōjanan wk.vb.: Icel vippa 'to see-
+saw', ME wippen 'to tremble', MLG
+wippen 'to rock, to swing', OHG wipfōn
+'to wander'. Of imitative origin. VRIES
+ANEW 667.
+*wira-aldiz sb.f.: ON ver-old 'world', OE
+weor-old id., OFris warld id., OLFrank
+wer-old id., OHG wer-alt id. Compound
+of wiraz and *aldiz. TORP-FALK 20;
+HOLTHAUSEN AEEW 390; ONIONS 1012;
+KLUGE-SEEBOLD 885."		
+alignment47-world-orel-man	Orel2003	463	502	1	268	274	*wiraz	d67d0ce4cad3a6a29e0489c852d4e794a74f21baddb7a3f8847570c3919e2d9f	"wira-peudō
+*wira-peudō sb.f.: ON ver-þjóð 'mankind,
+men', OE wer-deód 'nation, people'.
+Compound of wiraz and *peudō. CARR
+Nom. comp. 53.
+*wira-wulfaz sb.m.: ON varg-úlfr 'were-
+wolf', Norw var-ulf id., OE were-wulf id.,
+MLG wer-wulf id., MHG wer-wolf id.
+Compound of *wiraz and *wulfaz with
+various taboo modifications in individual
+languages (e.g. with *wiraz replaced by
+*warzaz in ON). On the other hand, cf.
+an alternative reconstruction *wazi-wulfaz
+with the first component related to *was-
+janan *wwazjanan. The Gmc word for
+werewolf will be then semantically identi-
+cal with Slav *lko-dlak 'werewolf', with
+*dlako to *dlaka ‘animal hair, fur'. VRIES
+ANEW 646; ONIONS 1000; ANIKIN BS
+231-233.
+~
+463
+*wiraz sb.m.: Goth wair 'man', ON verr
+id., OE wer id., OFris wer- id., OS wer id.,
+OHG wer id. Belongs to IE *uiros ‘man':
+Lat uir, OIr fer, W gwr. Other forms
+reflect *utros like Skt vīrá- id., Av vīra- id.,
+Umbr ueiro id., Lith výras id. BARTHO-
+LOMAE 1453; HIRT Idg. Gr. II 187 (*-i- :
+*-- originally in compounds); TORP-FALK
+412; TRAUTMANN BSW 360; HOLTHAU-
+SEN AEEW 391; WALDE-HOFMANN II
+796-797; FEIST 544; PORZIG Gliederung
+124; MAYRHOFER III 238-239; POKORNY
+I 1177-1178; DYBO VSJa 24 (pretonic
+shortening of in Gmc, Celt and Lat);
+CHEMODANOV SGGJa I 101; FRAENKEL
+1258; VRIES ANEW 657; ZALIZNIAK I 137;
+SCHULZE Kl. Schr. 398 (long *-7- from_IE
+*ueies 'strength'); LEHMANN GED 389–390;
+BAMMESBERGER Nom. 74; SCHRIJVER LL
+354 (follows DYBO); KLUGE-SEEBOLD 885.
+*wiskō sb.f.: ON visk 'wisp', OE wisc id.,
+MLG masc. wisch id., OHG masc. wisc
+id. Identical with Lat uirga branch, twig'
+< *uizgā. KÖGEL IF IV 317; WOOD CPh
+VII 334 (to Lat uīscus 'mistletoe'); TORP-
+FALK 413; HOLTHAUSEN AEEW 399;
+WALDE-HOFMANN II 797-798; POKORNY I
+1134; VRIES ANEW 668; ONIONS 1003;
+KLUGE-SEEBOLD 894.
+*wisnōjan wk.vb.: ON visna 'to wither',
+witēnan
+OE wisnian, weosnian 'to wizen, to dry up',
+OHG wesanen 'to wither'. Derived from
+*wisanan. TORP-FALK 413; HOLTHAUSEN
+AEEW 399; ONIONS 1010 (to Lat uiescō
+'to shrink up, to shrivel'); SEEBOLD 548;
+KLUGE-SEEBOLD 862.
+*wissaz adj.: Goth un-wiss 'uncertain',
+ON viss certain', OE 3e-wis id., OFris
+wiss id., OS wiss id., OHG gi-wis 'definite,
+certain'. Derived from *waita. Continues
+*uid-to- as in Skt vittá- 'known', Gk ""to-
+τo 'unknown', OIr rofess it is known',
+Slav *věsto 'known' (with secondary
+vocalism). KARSTEN NB II 309; TORP-
+FALK 410; FEIST 171, 364; HOLTHAUSEN
+AEEW 399; FEIST 526; POKORNY I
+1125–1126; VRIES ANEW 669; VASMER-
+TRUBACHEV I 304; SEEBOLD 534; LEH-
+MANN GED 130-131; BAMMESBERGER
+Nom. 249; HEIDERMANNS 681-682; KLUGE-
+SEEBOLD 322–323.
+*wissīn sb.f.: Goth mip-wissei 'awareness,
+consciousness', OHG gi-wissi 'attempt,
+proof'. Derived from *wissaz. FEIST 364;
+HEIDERMANNS 681.
+*wisunđaz sb.m.: OE wesend id., MDu
+wesent id., OHG wisant, wisunt id. ON
+vísundr 'bison-ox' is a LG loanword.
+Related to waison due to the specific
+smell of the male animal. CHARPENTIER
+MO VI 128-129 (to OPrus wis-sambrs
+‘aurochs'); SCHRADER-NEHRING II 60
+(same as CHARPENTIER); TORP-FALK 413
+(to wes(u)lon and further to Lat uīrus
+'stench'); BŪGA IORJaS XVII/1 45-46;
+PETERSSON Heter. 39-40; HOLTHAUSEN
+AEEW 391; PETERSSON KZ XLVII 131
+(to Skt visánā horn'); POKORNY I 1134;
+VRIES ANEW 669; KLUGE-SEEBOLD 894.
+*wita-lausaz adj.: ON vit-lauss 'witless',
+OE wit-leás id., Fris wit-lās id., MLG wit-
+lōs id. Compound of *witan and *lausaz.
+CARR Nom. comp. 61.
+*witan sb.n.: ON vit 'consciousness, sense,
+intelligence', OHG gi-wiz 'knowledge'.
+Derived from *waita. SEEBOLD 534.
+*witēnan wk.vb.: Goth witan 'to keep
+watch over', OHG gi-wizzen 'to be-
+come reasonable'. Derived from *waita."		
+alignment47-world-age-native	Kroonen2013	20	58	1	2464	2471	*alþin-	7e011a82e994bef2c1720432194283244bc21f645328f44d35f752703c6e12b9	"20
+20
+*alasnō-
+*alasnō- f. 'awl' - MLG alse, else(ne) 'id.', MDu. alsene, elsen(e), els(e) 'id.',
+Du. els c. 'id.', OHG alansa, alunsa f. 'id.' (DRV).
+A formation apparently created to *ala- with the suffix *-asno-, cf. Go.
+arhazna 'arrow' and hlaiwazna 'grave'. The Middle Germanic forms with
+e-vocalism are sometimes assumed to point to a variant *alisnō-, but the
+derivationally less problematic *alasnjō- would work, too.
+*albī- f. ‘river' — ON elfr f. 'id.', Elfd. ōve f. 'id.', MLG elve 'riverbed' (GM).
+Likely to be related to the name of the river Elbe.
+*albut- f. 'swan' - ON olpt, gen. alptar, elptr f. 'id.', Icel. álft f. 'id.', OE ielfetu
+f. 'id.', E obs. elk(?) 'swan, goose', MHG albiz, elbiz f. 'swan'⇒ *albhVd- (NIE)
+- Close to Ru. lébed' (< PSlav. *elbedь-) < *h₁elbhedh-i-, SCr. läbūd (<
+*olbó̟dɩ) <*h₁olbhond-i-, arch. lèbūt (< *elbo̟tɩ) m. 'swan'.
+The Germanic form can be reconstructed as *albut- with the suffix for
+animals that is also found in *heruta- 'deer' and *hurnuta-/ō- 'hornet', and is
+often connected to the PIE adjective *h₂elbh-o- 'white', cf. Lat. albus. The
+Slavic forms, on the other hand, seem to preclude that the word is an in-
+tra-Germanic coinage. They point to a set of conspicuously close, but pho-
+netically irregular proto-forms, e.g. *h₁elbhedh-, *h₁olbond/t-. It has been
+argued, on the basis of these formal difficulties, that the word is of non-IE
+origin (Derksen 1999). This is corroborated by the possibility that the Slav-
+ic forms contain the suffix *-√d (h)- that is also found in other substrate
+words (cf. *arwit- 'pea') and by the fact that the Germanic word is inflected
+as a root noun. Also note the utterly irregular relation with SCr. kúp m.
+'swan' <*klp- and Lith. gulbis f. 'id.', SCr. dial. gûb m. 'id.' < *g(h)lbh-. There
+seems to be no connection, on the other hand, with Lat. olor m. 'swan' <
+*hiel-ōr; Olr. elu f. 'id.' < *h₁el-ieh2- and W alarch, pl. eleirch 'swan' <
+*h₁el-r-sko-.
+-
+*alda- adj. '(grown) old' Go. alþeis adj. 'old' (< *alþja-), ON ellri comp.
+'id.', OE eald adj. 'id.', E old, OFri. ald, auld adj. 'id.', OS ald adj. 'id.', Du. oud
+adj. 'id.', OHG alt adj. 'id.', G alt adj. 'id.'⇒ *h₂el-tó (DRV) - Lat. altus adj.
+'high', Olr. alt m. ‘height, cliff' <*h₂el-to-; W allt f. 'hill' < *h₂el-teh2-.
+An adjective continuing the original participle of the verb *alan- 'to grow;
+to bring up' (q.v.). It gave rise to ON elli, OE ild(e), ildu, OS eldi, OHG alti, eltī
+f. '(old) age' <*alþin-. See also *aldi- and *aldra..
+*aldi- f. 'age'
+*h₂el-tí- (DRV).
+-
+Go. alps f. 'generation, age', ON old f. 'age', pl. 'mankind' ⇒
+A ti-stem derived from the strong verb *alan- (q.v.)."		
+alignment47-world-man-shortening	Kroonen2013	588	628	1	1174	1180	*uiró-	830a29178337805780a5badaae5d1ed485fca10feb594d2b2a69d3e1369582f7	"588
+*wintru-
+through assimilation of the labial glide. Cf. Go. winna, winno f. 'suffering',
+OHG winna f. 'battle' < *winnō(n)- as well as *wunni-.
+-
+*wintru- m. 'winter; year' Go. wintrus adj. 'id.', ON vetr m. 'id.', Far. vetur
+m. 'id.', Elfd. witter m. 'id.', OE winter m. 'id.', E winter, OFri. winter m. 'id.', OS
+wintar m. 'id.', Du. winter c. 'id.', OHG wintar m. 'id.', G Winter m. 'id.' (GM).
+A word with no certain etymology. The traditional derivation from a na-
+salized variant of the root *wed- 'to be wet' (see *wēta-) is unconvincing: it
+is based on the wrong analysis of Lat. unda f. 'wave' as continuing
+*u-n-d-eh2 rather than correct *ud-neh2- (with Thurneysen's law). The
+connection with Olr. find adj. 'white' < *windo- is semantically weak.
+-
+*wira- m. 'man' Go. wair m. 'id.', ON verr m. 'id.', OE wer m. 'id.', OS wer m.
+'id.', OHG wer m. 'id.' ⇒ *uiH-ró- (IE) — Identical to Skt. vīrá- m. 'man, hero,
+son', Av. vīra m. 'man, human', MP wir 'man, hero', Lith. výras, Latv. vīrs,
+OPru. wijrs m. 'man', Lat. vir m. 'id.', Olr. fer m. 'id.', OW gur, MW gwr 'id.';
+ToA wir adj. 'young; fresh'(?).
+One of the IE words for 'man'. The Gm. form developed from *uiró- by
+Dybo's law (pretonic shortening).
+*wissa- adj. 'certain' - Go. un-wiss adj. 'uncertain', ON viss adj. 'id.', OE wiss
+adj. 'id.', OFri. wis adj. 'id.', Du. wis adj. 'id.', on-gewis adj. 'uncertain', OHG
+gi-wis adj. 'certain', G ge-wiß adj. 'id.' *uid-to- (IE) - Cf. Skt. vittá- adj. 'id.',
+Gr. atστos adj. 'unseen'.
+An adjective continuing the original past ptc. to *witan- 'to know'.
+*wisund- m. 'wisent' ON vísundr, gen. vísundar m. 'id.' (<< WGm.?), OE
+wesend, weosend m. ‘id.', MLG wisent, wesent m. 'id.', MDu. wesent m. ‘id.',
+OHG wisunt, wisant, pl. wisunti m. 'id.', G Wisund m. 'id.' ⇒ *uisond (h).
+(NEUR/NIE) Lith. stumbras m. 'wisent, aurochs', Latv. sumbrs, stumbr(i)s,
+subrs m. 'aurochs', OPru. wissambs' 'id.'; Ru. zubr m. 'wisent', dial. iz(j)úbr
+'red deer', Oss. dombaj 'aurochs', Abkh. a-dawp-èy 'id.'.
+-
+The word has been derived from several IE bases, e.g. *uis- 'to smell'
+(VLat. vissiō 'smell, fart'), *uis- 'horned' (Skt. viṣánā- f. ‘horn') and *ues- 'to
+consume' (Stiles 2004), but none of these IE-oriented explanations seem
+convincing. The various Balto-Slavic forms combined with the Germanic
+word result in a remarkable cluster of formally irreconcilable proto-forms.
+This, as well as the occurrence of some correspondences in the Caucasian
+languages, is highly suggestive of a non-IE word that passed into the differ-
+ent daughter languages independently: 1) Lith. stumbras and Ru. zubr point
+to *tsomb(h). and *dzomb(h)- correspondingly; 2) Ru. iz(j)úbr and OPru.
+wissambs' appear to continue *uidzomb(h)-; and 3) Gm. *wisund- seems to
+have developed from *uisond (h)-. I therefore start from a non-IE element"		
+alignment47-world-rt-o-reflex	RingeTaylor2014	202	217	15	108	115	weorold	12cbb0ba28eca4a263d346109b5e20e37ad5ade657403b904f49235507e6f85c	"PWGmec *werald(i) ‘world’ (lit. ‘age of men’; OS werold, OHG weralt) > *werzeld(i)
+> *werald > OE weoruld ~ weorold (OF warld; late ON verold is probably a
+loanword, see de Vries 1962 s.v.);"		
+alignment47-world-rt-backumlaut	RingeTaylor2014	326	341	4	170	177	weorold	5140fdb897c88552b45de7f4c10bb8f354294de362d5d976bb09485002b48834	"PNWGmce *weraldiz ‘world’ (lit. “age of men’, often shifted into the 6-stems: ON
+vergld, OF warld vs. i-stem OS werold, OHG weralt) >— *weraldu > *weruld
+(6.3.3) > WS OE weorold ~ worold (also with u in the 2nd syll.), Merc. weoruld,
+North. woruld, Kent. wiarald."		
+alignment47-worm-kroonen-ancestor	Kroonen2013	600	640	1	1947	1954	*urm-i-	c010f78ffcc6d9fd0d36e9addd8a5ee59d0cac7ae918530acc3301451a8e885d	"600
+*wurda-
+*wurda- n. 'word'
+-
+Go. waurd n. ‘id.', ON orð n. 'id.', OE word n. 'id.', E
+word, OFri. word n. 'id.', OS word n. 'id.', Du. woord n. 'id.', OHG wort n. 'id.', G
+Wort n. 'id.' *(h₂)urdh-o- (IE?) — (?) Hitt. huuartai ~ hurtanzi* 'to curse' <
+*hzuórdh-ei, *h₂urdh-énti; Lat. verbum n. 'word' < *h₂u(e/o)rdh-o-; Lith.
+vardas, Latv. vàrds m. 'id.' < *hzuordh-o-; OPru. wirds 'id.' <*h₂urdh-.
+-
+The forms in the European languages straightforwardly point to *urdh-,
+but if the Hittite verb belongs here, it proves that the root had an initial
+laryngeal.
+*wurdi- f. 'fate, chance' - OE wyrd f. 'id.', OS wurd f. 'id.', OHG wurt f. 'id.' →
+*urt-í- (DRV).
+An i-stem to the root of *werpan- (q.v.).
+*wurgjan- w.v. 'to strangle' - OE wyrigan, wirgan w.v. 'id.', OFri. wergia
+w.v. 'id.', WFri. wjirgje w.v. 'id.', Du. wurgen w.v. 'id.', OHG wurgen w.v. 'id.', G
+würgen w.v. 'id.'⇒ *urgh-ie- (NEUR).
+A zero-grade jan-present related to *wergan-. Also cf. ON urga f. 'strap' <
+*wurgōn-.
+*wurkjan-w.v. 'to work, produce, effect' - Go. waurkjan w.v. 'id.', ON yrkja
+w.v. 'to work; to write verses', Far. yrkja w.v. 'to compose, write', OE wyrcan
+w.v. 'to work', OHG wurchen w.v. 'id.', MHG wurken, würken w.v. 'id.' ⇒
+*urg-ie- (IE) — Identical to YAv. varaziieiti 'to do, act' < *urg-ie-; also cf. Gr.
+Ep8w, pέw 'to act, perform; to sacrifice' (with secondary full grades?).
+-
+A zero-grade ie-present related to *werka- 1. It occurs beside the mixed
+strong and weak verb *werkjan-, pret. *warht-, cf. OFri. werkia, wertzia,
+wirtza, pret. wrocht, OS wirka, pret. warhta, OHG wirchen, pret. warahta 'to
+work, produce; to perform' < *uerg-ie-. Also cf. Go. waurstw n. 'deed' <
+*wurhstwa-.
+-
+-
+*wurmi- m. 'worm' Go. waurms m. 'snake', ON ormr m. 'id.', Far. ormur m.
+'id.', Elfd. uorm m. 'id.', OE wyrm m. 'snake, worm', OFri. wirm m. 'worm',
+WFri. wjirm c. 'id.', OS wurm m. 'id.', Du. worm, wurm c. 'id.', OHG wurm m.
+'worm, snake', G Wurm m. 'id.' ⇒ *urm-i- (IE) Identical to Lat. vermis m.
+'worm, maggot' < *urmi-; further cf. Gr. póμos m. 'wood-worm' < *urm-o-
+(with dialectal vocalization of *r?); Lith. varmas m. 'insect, mosquito' <
+*uorm-o-; OCS vörmöjе n. 'insects' < *urm-io-; OPru. wormyan adj. 'red' <
+*urm-io-.
+Also note Nw. dial. yrme f. 'female snake' < *wurmjō- (quasi PIE
+*urm-ieh2-) and ON yrmi n. 'vermin' < *ga-wurmja-, which is formally iden-
+tical to OCS värmыjе. OHG wormo m. 'purple', OFri. worma m. 'id.', OE wurma
+m. 'purple snail, woad' is a derivation referring to the color of the earth-
+worm."		
+alignment47-worm-kroonen-female	Kroonen2013	600	640	1	2264	2272	*wurmjō-	c010f78ffcc6d9fd0d36e9addd8a5ee59d0cac7ae918530acc3301451a8e885d	"600
+*wurda-
+*wurda- n. 'word'
+-
+Go. waurd n. ‘id.', ON orð n. 'id.', OE word n. 'id.', E
+word, OFri. word n. 'id.', OS word n. 'id.', Du. woord n. 'id.', OHG wort n. 'id.', G
+Wort n. 'id.' *(h₂)urdh-o- (IE?) — (?) Hitt. huuartai ~ hurtanzi* 'to curse' <
+*hzuórdh-ei, *h₂urdh-énti; Lat. verbum n. 'word' < *h₂u(e/o)rdh-o-; Lith.
+vardas, Latv. vàrds m. 'id.' < *hzuordh-o-; OPru. wirds 'id.' <*h₂urdh-.
+-
+The forms in the European languages straightforwardly point to *urdh-,
+but if the Hittite verb belongs here, it proves that the root had an initial
+laryngeal.
+*wurdi- f. 'fate, chance' - OE wyrd f. 'id.', OS wurd f. 'id.', OHG wurt f. 'id.' →
+*urt-í- (DRV).
+An i-stem to the root of *werpan- (q.v.).
+*wurgjan- w.v. 'to strangle' - OE wyrigan, wirgan w.v. 'id.', OFri. wergia
+w.v. 'id.', WFri. wjirgje w.v. 'id.', Du. wurgen w.v. 'id.', OHG wurgen w.v. 'id.', G
+würgen w.v. 'id.'⇒ *urgh-ie- (NEUR).
+A zero-grade jan-present related to *wergan-. Also cf. ON urga f. 'strap' <
+*wurgōn-.
+*wurkjan-w.v. 'to work, produce, effect' - Go. waurkjan w.v. 'id.', ON yrkja
+w.v. 'to work; to write verses', Far. yrkja w.v. 'to compose, write', OE wyrcan
+w.v. 'to work', OHG wurchen w.v. 'id.', MHG wurken, würken w.v. 'id.' ⇒
+*urg-ie- (IE) — Identical to YAv. varaziieiti 'to do, act' < *urg-ie-; also cf. Gr.
+Ep8w, pέw 'to act, perform; to sacrifice' (with secondary full grades?).
+-
+A zero-grade ie-present related to *werka- 1. It occurs beside the mixed
+strong and weak verb *werkjan-, pret. *warht-, cf. OFri. werkia, wertzia,
+wirtza, pret. wrocht, OS wirka, pret. warhta, OHG wirchen, pret. warahta 'to
+work, produce; to perform' < *uerg-ie-. Also cf. Go. waurstw n. 'deed' <
+*wurhstwa-.
+-
+-
+*wurmi- m. 'worm' Go. waurms m. 'snake', ON ormr m. 'id.', Far. ormur m.
+'id.', Elfd. uorm m. 'id.', OE wyrm m. 'snake, worm', OFri. wirm m. 'worm',
+WFri. wjirm c. 'id.', OS wurm m. 'id.', Du. worm, wurm c. 'id.', OHG wurm m.
+'worm, snake', G Wurm m. 'id.' ⇒ *urm-i- (IE) Identical to Lat. vermis m.
+'worm, maggot' < *urmi-; further cf. Gr. póμos m. 'wood-worm' < *urm-o-
+(with dialectal vocalization of *r?); Lith. varmas m. 'insect, mosquito' <
+*uorm-o-; OCS vörmöjе n. 'insects' < *urm-io-; OPru. wormyan adj. 'red' <
+*urm-io-.
+Also note Nw. dial. yrme f. 'female snake' < *wurmjō- (quasi PIE
+*urm-ieh2-) and ON yrmi n. 'vermin' < *ga-wurmja-, which is formally iden-
+tical to OCS värmыjе. OHG wormo m. 'purple', OFri. worma m. 'id.', OE wurma
+m. 'purple snail, woad' is a derivation referring to the color of the earth-
+worm."		
+alignment47-worm-kroonen-vermin	Kroonen2013	600	640	1	2322	2333	*ga-wurmja-	c010f78ffcc6d9fd0d36e9addd8a5ee59d0cac7ae918530acc3301451a8e885d	"600
+*wurda-
+*wurda- n. 'word'
+-
+Go. waurd n. ‘id.', ON orð n. 'id.', OE word n. 'id.', E
+word, OFri. word n. 'id.', OS word n. 'id.', Du. woord n. 'id.', OHG wort n. 'id.', G
+Wort n. 'id.' *(h₂)urdh-o- (IE?) — (?) Hitt. huuartai ~ hurtanzi* 'to curse' <
+*hzuórdh-ei, *h₂urdh-énti; Lat. verbum n. 'word' < *h₂u(e/o)rdh-o-; Lith.
+vardas, Latv. vàrds m. 'id.' < *hzuordh-o-; OPru. wirds 'id.' <*h₂urdh-.
+-
+The forms in the European languages straightforwardly point to *urdh-,
+but if the Hittite verb belongs here, it proves that the root had an initial
+laryngeal.
+*wurdi- f. 'fate, chance' - OE wyrd f. 'id.', OS wurd f. 'id.', OHG wurt f. 'id.' →
+*urt-í- (DRV).
+An i-stem to the root of *werpan- (q.v.).
+*wurgjan- w.v. 'to strangle' - OE wyrigan, wirgan w.v. 'id.', OFri. wergia
+w.v. 'id.', WFri. wjirgje w.v. 'id.', Du. wurgen w.v. 'id.', OHG wurgen w.v. 'id.', G
+würgen w.v. 'id.'⇒ *urgh-ie- (NEUR).
+A zero-grade jan-present related to *wergan-. Also cf. ON urga f. 'strap' <
+*wurgōn-.
+*wurkjan-w.v. 'to work, produce, effect' - Go. waurkjan w.v. 'id.', ON yrkja
+w.v. 'to work; to write verses', Far. yrkja w.v. 'to compose, write', OE wyrcan
+w.v. 'to work', OHG wurchen w.v. 'id.', MHG wurken, würken w.v. 'id.' ⇒
+*urg-ie- (IE) — Identical to YAv. varaziieiti 'to do, act' < *urg-ie-; also cf. Gr.
+Ep8w, pέw 'to act, perform; to sacrifice' (with secondary full grades?).
+-
+A zero-grade ie-present related to *werka- 1. It occurs beside the mixed
+strong and weak verb *werkjan-, pret. *warht-, cf. OFri. werkia, wertzia,
+wirtza, pret. wrocht, OS wirka, pret. warhta, OHG wirchen, pret. warahta 'to
+work, produce; to perform' < *uerg-ie-. Also cf. Go. waurstw n. 'deed' <
+*wurhstwa-.
+-
+-
+*wurmi- m. 'worm' Go. waurms m. 'snake', ON ormr m. 'id.', Far. ormur m.
+'id.', Elfd. uorm m. 'id.', OE wyrm m. 'snake, worm', OFri. wirm m. 'worm',
+WFri. wjirm c. 'id.', OS wurm m. 'id.', Du. worm, wurm c. 'id.', OHG wurm m.
+'worm, snake', G Wurm m. 'id.' ⇒ *urm-i- (IE) Identical to Lat. vermis m.
+'worm, maggot' < *urmi-; further cf. Gr. póμos m. 'wood-worm' < *urm-o-
+(with dialectal vocalization of *r?); Lith. varmas m. 'insect, mosquito' <
+*uorm-o-; OCS vörmöjе n. 'insects' < *urm-io-; OPru. wormyan adj. 'red' <
+*urm-io-.
+Also note Nw. dial. yrme f. 'female snake' < *wurmjō- (quasi PIE
+*urm-ieh2-) and ON yrmi n. 'vermin' < *ga-wurmja-, which is formally iden-
+tical to OCS värmыjе. OHG wormo m. 'purple', OFri. worma m. 'id.', OE wurma
+m. 'purple snail, woad' is a derivation referring to the color of the earth-
+worm."		
+alignment47-wring-orel-native	Orel2003	472	511	1	781	791	*wrenzanan	ad7d8e898b21dbfc8ca45c53f185678320119d827218bef604d56f2217d53fc7	"wrekanan
+squeeze', Slav *vbrzo, *verzti 'to bind'.
+ZUPITZA Gutt. 170; TORP-FALK 415-416;
+TRAUTMANN BSW 342; FEIST 574; HOL-
+THAUSEN AEEW 407; WALDE-HOFMANN
+II 839-840; JÓHANNESSON IEW 172–173;
+MAYRHOFER III 276-277; POKORNY I
+1181; FRAENKEL 1230–1231; MEZGER KZ
+LXXVI 179; VRIES ANEW 440;
+FRAENKEL 1225; ONIONS 1014; SEEBOLD
+568-569; LEHMANN GED 410; KLUGE-
+SEEBOLD 662; ADAMS TB 609–610 (to
+Toch B werke 'chase, hunt, hunting').
+*wrekaz adj.: Burg sbst. *wriks ‘persecu-
+tor', ON aptr-reka ‘driven back (by stress
+of weather)', OHG wreh 'banished'.
+Derived from *wrekanan. KÖBLER 715;
+HEIDERMANNS 694.
+*wrempanan str.vb.: MLG wrimpen 'to
+grimace, to wince'. Identical with Gk
+péµßo ‘to turn in circles' (PERSSON Beit-
+räge I 498). TORP-FALK 417; POKORNY I
+1153; FRISK II 648-649.
+*wrenzanan str.vb.: OE wrinzan 'to
+wring, to twist', WFris wringe 'to wring',
+MLG wringen id., OHG ringan 'to fight'.
+Identical with Lith rengiù, rengti 'to pre-
+pare, to set up' (LOTTNER KZ XI 200).
+AUFRECHT KZ XII 400; ZUPITZA Gutt.
+170; TORP-FALK 416-417; HOLTHAUSEN
+AEEW 408; POKORNY I 1155 (from
+*ureng""h-); FRAENKEL 719-720; ONIONS
+1015; SEEBOLD 570; LEHMANN GED 411;
+KLUGE-SEEBOLD 688.
+*wreskwanan str.vb.: Goth ga-wrisqan 'to
+bear fruit', ON part. roskinn 'to grow'.
+Unclear. UHLENBECK PBB XXX 283 (to
+Skt vrkṣá- 'tree'); DIEFENBACH VW I 241
+(to W gwrysg(en) ‘branch'); SCHEFTELOWITZ
+KZ LVIII 132 (to Av varǝda- ‘shrub');
+ZUPITZA Gutt. 90; TORP-FALK 417; FEIST
+213; POKORNY I 1167; VRIES ANEW 451;
+SEEBOLD 571.
+472
+*wrēkiz adj.: ON rækr 'reprehensible,
+banished', OFris in-wresze 'driven in,
+penetrating'. Derived from *wrekanan.
+KARSTEN NB I 103; TORP-FALK 416;
+WISSMANN NP 113; SEEBOLD 569; MATZEL
+Festschr. Schröder 100-101, 117, KZ CV
+109; HEIDERMANNS 694-695.
+writan
+*wrēkjanan wk.vb.: ON rækja 'to refuse,
+to reject'. Derived from *wrekanan. Struc-
+turally close to Skt pra-vrājayati ‘to banish'.
+VRIES ANEW 456; POKORNY I 1181.
+*wrēkō sb.f.: ON klauf-rák 'driving of cat-
+tle', OE wrác 'vengeance', OFris wrēke id.,
+OS wrāka id., OHG rāhha id. Cf. also
+Goth wrekei persecution'. Derived from
+*wrekanan. TORP-FALK 416; HOLTHAUSEN
+AEEW 406; VRIES ANEW 432, 456;
+SEEBOLD 569; KLUGE-SEEBOLD 662.
+*wrēþuz sb.m.: Goth wripus ‘herd' (leg.
+*wrebus), ODan vrath ‘herd of twelve pigs',
+OE wráð, wrád ‘bandage, band, flock'.
+Close to Skt vráta- 'troop, swarm, flock'.
+TORP-FALK 416; HOLTHAUSEN AEEW
+406; FEIST 574–575; MAYRHOFER III 280;
+POKORNY I 1151; CHEMODANOV SGGJa I
+106; VRIES ANEW 431; BENVENISTE IEL
+48; LEHMANN GED 411.
+*wrisjōn sb.m.: ON risi ‘giant', OHG riso
+id. Cf. a derivative in OS wrisi-līk ‘enor-
+mous'. Probably related to Gk þíov ‘peak,
+headland *uriso- (BEZZENBERGER apud
+WALDE-POKORNY I 267; LIDÉN Festschr.
+Kuhn 144-145: to Thrac ẞpía 'wall, town'
+< *urio-) unless the latter is from *urso-
+and connected with Slav *brxb 'top'.
+DETSCHEW Thr. 86; VRIES ANEW 447 (to
+Slav *brx 'top'); POKORNY I 1152; FRISK
+II 658.
+*wristiz sb.f.: ON rist 'wrist, ankle', OE
+wrist 'wrist', OFris wirst id., MLG wrist
+id., OHG masc., neut. rist id. Derived
+from *wrīþanan (JOHANSSON IF XIX
+117). Probably connected with Lith riešas
+id. (PERSSON Beiträge 343). TORP-FALK
+418-419; HOLTHAUSEN AEEW 409;
+POKORNY I 1159 (reconstructs *wrixs-t-);
+FRAENKEL 730; VRIES ANEW 448;
+ZALIZNIAK II 212; ONIONS 1015; Seebold
+566 (<*wrixstiz, to OHG part. gi-rigan
+'woven'); STANG LS 45; HEIDERMANNS
+691; KLUGE-SEEBOLD 688.
+*writan sb.n.: ON rit ‘writing', OE writ
+'writing, writ'. Derived from *wrītanan.
+TORP-FALK 418; HOLTHAUSEN AEEW
+409; POKORNY I 1163-1164; VRIES
+ANEW 448; ZALIZNIAK II 191; ONIONS"		
+alignment47-wring-kroonen-voiceless-root	Kroonen2013	596	636	1	1760	1767	*urenk-	54029a0d81625a4da77a67d46d558ec7a1b57e5cfeeec0ef31a836b0a25ce377	"596
+*wrihan-
+Also cf. ON ráði m. 'boar' < *wrēþan-, ON ráða 'to have sex with' <
+*wrēpōjan-(?) and Nw. ræda, vræda w.v. 'to be in heat' <*wrēbjan-.
+*wrihan- m. 'instep' - MDu. wrijghe, wrijch, wrijf m. 'id.', Du. wreef c. 'id.',
+OHG rīho m. 'id.', G Reihen m. 'id.'⇒ *uréik-on- (IE) — Lith. ríešas m., ríeša f.
+'instep, wrist, knuckle' < *ureik-o- (with métatonie rude).
+-
+An ablauting n-stem nom. *wrīhō, gen. *wrikkaz, dat. *wriheni <*uréik-ōn,
+*urik-n-ós, *urik-én-i (Kroonen 2011a: 261-2). The zero grade forms are
+attested in late and dialectal Germanic only, cf. Du. dial. wree, Swi. (Rhtl.)
+reǝhǝ < *wrihan- and Du. obs. wreeg < *wrigan-. Related to *wraiha- (q.v.).
+*wrīnan- s.v. 'to howl'
+-
+Nw. vrina s.v. 'to howl; to bare one's teeth', Elfd.
+rwaina s.v. 'to howl, wail' ⇒ *uréiH-ne- (IE?).
+A strong verb, in association with *hrinan-, cf. ON hrína, Far. rína s.v. 'to
+cry, wail'. Related to OE wræne adj. 'lascivious' <*wrainja- and ODu. wrēnisk
+adj. 'id.' < *wrainiska-. Also cf. OHG reinnio, OS wrēnio, MDu. wrene m. 'stal-
+lion' <*wrainjan-.
+-
+*wringan- s.v. 'to wring, squeeze' - OE wringan s.v. 'to wring, twist', E to
+wring, OS ut-wringan s.v. 'to squeeze out', Du. wringen s.v. 'to wring', OHG
+ringan s.v. 'to wring; to wrestle', G ringen s.v. 'id.' ⇒ *uréngh-e- (NEUR)
+Lith. rangýti 'to wind, bend' < *urongh-eie-; Lith. rañgas m. 'wrap, clew, ring'
+<*urongh-o-.
+On the basis of the WGm. forms, the verb is traditionally reconstructed as
+*wringan-, which could be related to Lith. rangýti. There is a possibility,
+however, that *wringan- replaced older *wrinhan-, a formation that perhaps
+can be retrieved from Icel. rjá w.v. 'to wrestle, fight; to move, tear' (related
+to Far. riggin adj. 'fickle; resentful'?). This would imply a PIE root *urenk-
+rather than *urengh-. However, Icel. rjá can alternatively be reconstructed
+as *rewan- (q.v.). See also *wranga-, *wrankjan- and *wrungōn-.
+*wrinpla-(?) m. 'a certain plant' - Gutn. rind 'clubmoss', ME writhel 'wild
+lettuce(?)' (GM).
+Etymology uncertain. It is possible that both the formations Gutn. rind (<
+*wrinda-) and ME writhel (< *wrinpla-) were derived from a root *wrinþ- 'to
+wind'. This could technically be a nasal infixed root belonging to the strong
+verb *wrīban- ~ *wrītan- 'to twist' (q.v.).
+-
+*wrītan- s.v. 'to carve' OE wrītan s.v. 'to write; to carve', OFri. wrīta s.v.
+'to write', WFri. write s.v. 'to tear; to ache, hurt', OS wrītan s.v. 'to tear; to
+write' ⇒ *uréid-e- (GM).
+A strong verb derived from a further unknown root *ureid-. It merged
+with *rītan- 'to tear' (cf. Du. rijten s.v. 'id.') in Old Norse and Old High Ger-"		
+alignment47-wring-kroonen-voiced-root	Kroonen2013	596	636	1	1780	1788	*urengh-	54029a0d81625a4da77a67d46d558ec7a1b57e5cfeeec0ef31a836b0a25ce377	"596
+*wrihan-
+Also cf. ON ráði m. 'boar' < *wrēþan-, ON ráða 'to have sex with' <
+*wrēpōjan-(?) and Nw. ræda, vræda w.v. 'to be in heat' <*wrēbjan-.
+*wrihan- m. 'instep' - MDu. wrijghe, wrijch, wrijf m. 'id.', Du. wreef c. 'id.',
+OHG rīho m. 'id.', G Reihen m. 'id.'⇒ *uréik-on- (IE) — Lith. ríešas m., ríeša f.
+'instep, wrist, knuckle' < *ureik-o- (with métatonie rude).
+-
+An ablauting n-stem nom. *wrīhō, gen. *wrikkaz, dat. *wriheni <*uréik-ōn,
+*urik-n-ós, *urik-én-i (Kroonen 2011a: 261-2). The zero grade forms are
+attested in late and dialectal Germanic only, cf. Du. dial. wree, Swi. (Rhtl.)
+reǝhǝ < *wrihan- and Du. obs. wreeg < *wrigan-. Related to *wraiha- (q.v.).
+*wrīnan- s.v. 'to howl'
+-
+Nw. vrina s.v. 'to howl; to bare one's teeth', Elfd.
+rwaina s.v. 'to howl, wail' ⇒ *uréiH-ne- (IE?).
+A strong verb, in association with *hrinan-, cf. ON hrína, Far. rína s.v. 'to
+cry, wail'. Related to OE wræne adj. 'lascivious' <*wrainja- and ODu. wrēnisk
+adj. 'id.' < *wrainiska-. Also cf. OHG reinnio, OS wrēnio, MDu. wrene m. 'stal-
+lion' <*wrainjan-.
+-
+*wringan- s.v. 'to wring, squeeze' - OE wringan s.v. 'to wring, twist', E to
+wring, OS ut-wringan s.v. 'to squeeze out', Du. wringen s.v. 'to wring', OHG
+ringan s.v. 'to wring; to wrestle', G ringen s.v. 'id.' ⇒ *uréngh-e- (NEUR)
+Lith. rangýti 'to wind, bend' < *urongh-eie-; Lith. rañgas m. 'wrap, clew, ring'
+<*urongh-o-.
+On the basis of the WGm. forms, the verb is traditionally reconstructed as
+*wringan-, which could be related to Lith. rangýti. There is a possibility,
+however, that *wringan- replaced older *wrinhan-, a formation that perhaps
+can be retrieved from Icel. rjá w.v. 'to wrestle, fight; to move, tear' (related
+to Far. riggin adj. 'fickle; resentful'?). This would imply a PIE root *urenk-
+rather than *urengh-. However, Icel. rjá can alternatively be reconstructed
+as *rewan- (q.v.). See also *wranga-, *wrankjan- and *wrungōn-.
+*wrinpla-(?) m. 'a certain plant' - Gutn. rind 'clubmoss', ME writhel 'wild
+lettuce(?)' (GM).
+Etymology uncertain. It is possible that both the formations Gutn. rind (<
+*wrinda-) and ME writhel (< *wrinpla-) were derived from a root *wrinþ- 'to
+wind'. This could technically be a nasal infixed root belonging to the strong
+verb *wrīban- ~ *wrītan- 'to twist' (q.v.).
+-
+*wrītan- s.v. 'to carve' OE wrītan s.v. 'to write; to carve', OFri. wrīta s.v.
+'to write', WFri. write s.v. 'to tear; to ache, hurt', OS wrītan s.v. 'to tear; to
+write' ⇒ *uréid-e- (GM).
+A strong verb derived from a further unknown root *ureid-. It merged
+with *rītan- 'to tear' (cf. Du. rijten s.v. 'id.') in Old Norse and Old High Ger-"		
+alignment47-wring-kroonen-tear	Kroonen2013	411	451	1	26	33	*rewan-	0e470e2b61e8ad5009a6e3aa906fff0ea6233585da4a9e9211a6167ca024b63e	"~
+*reuman- *rauma(n)-
+411
+*rewan- 'to jerk' (q.v.)? ON reim f. 'lash, thong' was borrowed from Low
+German (with the substitution of -e- by -ei-).
+*reuman- ~ *rauma(n)- m. 'cream' ON rjómi m. 'id.', Far. rómi m. 'id.', OE
+rēoma, rēama m. 'membrane', WFri. rjemme c. 'id.', MDu. rome, room m./f.
+'id.', Du. room c. 'id.', OHG roum m. 'id.', G Rahm m. 'id.' *Hre/ough)-mon-
+(IE) Av. raoyna- 'butter' < *Hrough)-mno- (for the PIE loss of the m-, cf.
+see *budman- ~ *buttman- 'bottom').
+-
+~
+An ablauting mn-stem (cf. Kroonen 2011a: 186-7). At least two ablaut.
+grades can be discerned, but as in the word for 'udder' (see PGm. *eudra-
+*ūdra-) the original paradigmatic distribution of the e- and o-grades re-
+mains unclear. Perhaps, the PIE paradigm was static, nom. *Hróugh-mn, gen.
+*Hréugh-mn-s. A possible zero grade is represented by Swi. ruumme f. 'crust;
+butter' (Pokorny IEW: 873), but it is also not entirely certain whether this
+form really could have developed from PIE *Hrug(h)-m-, e.g. through PGm.
+*rugmōn-.
+*reupōn- f. 'grouse' ON rjúpa f. 'id.', Far. rýpa f. 'id.' (<< Da. rype?), Nw.
+rjupe, rype f. 'id.', Elfd. rjoppa f. 'id.' (DRV).
+A North Germanic word often connected to *erpa- 'light brown' and -
+outside Germanic to Lith. jérube f. 'hazel grouse', Latv. rubenis ‘black
+grouse', RuCS rěbь 'partridge' (cf. Derksen 2000; Kroonen 2010b: 257-258).
+Within the parameters of Germanic derivational history, however, it is clear
+that *reupōn- was derived from the verb *rup(p)ōn- attested as e.g. ON ropa
+w.v. 'to belch; to shout (esp. of grouse)' and MDu. roppen w.v. 'to belch'. The
+connection between the verb, an onomatopoetic iterative related to OSw.
+rapa, Nw. dial. rapa w.v. 'to belch', and the bird name further follows from
+the compounds Icel. rop-karri, -keri and rjúp-karri, -keri 'male grouse', for
+which see *kurrōn-. Also cf. ON, Icel. raupa, Far. reypa w.v. 'to boast'.
+-
+*reutan- s.v. 'to cry' · OE reotan s.v. 'to make a noise; to cry'⇒ *Hréud-e-
+(IE) Skt. róditi, 3pl. rudánti 'to lament', Lat. rudō, -ere 'to roar' < *Hr(e)ud-.
+Formally close to *hreutan- ~*hrūtan- (q.v.). See also *rut(t)ōn- and
+*rautōjan-.
+-
+*rewan- s.v.(?) 'to tear, jerk, fight' - Icel. rjá w.v. 'to wrestle, fight; to move,
+tear' ⇒ *HréuH-e-(?) (IE) — TOAB räwä- 'to tear out' <*HreuH-; Skt. rávati
+'to break, hurt' (also cf. Skt. róman- n. ‘hair, body hair', NP rum(a), rōm(a)
+'pubic hair' < *HreuH-men-); Lat. ruō, -ere 'to churn; to plow up, dig out' <
+*Hré/óuH-e-; Lith. ráuti 'to tear out, pull', Latv. raût 'tear, pull, take' <
+*HróuH-e-; Lith. ravéti (raviù), Latv. ravêt 'to weed' < *HrouH-eh1-; CS rovati
+'to tear', Ru. rvat' 'id.', SCr. ŕvati 'to tense, strain' < *HruH-eh2-."		
+alignment47-wring-kroonen-wrong	Kroonen2013	594	634	1	1606	1614	*wranga-	a3aa7d73ea00f20386c931d4e08dae52acc96fe4173d32638dc8393b4fe75218	"594
+*wraitjan-
+*wraitjan- w.v. 'to vex, excite'
+ON reita w.v. 'id.', OHG reizen w.v. 'to vex,
+tease, tempt', G reizen w.v. 'id.' (GM).
+A causative-iterative formation to *wrītan- (q.v.).
+*wraipa- adj. 'twisted; angry' - ON reiðr adj. 'angry', Far. reiður adj. 'id.',
+OE wræð adj. 'id.', OS wrēth adj. 'wretched, hostile', OHG reid, reidi adj.
+'curly, wavy' (DRV).
+An adjective derived from the strong verb *wriþan- ~ *wrītan- (q.v.). Also
+cf. ON, Icel., Far. reiði, OSw. vrēþe, Elfd. rwiede m. 'anger' < *wraipan-.
+*wrakjan- m. 'persecutor' - OE wrecca m. 'exile, stranger', OS wrekkio m.
+'foreign warrior, stranger, exile', OHG reck(e)o m. 'fugitive, hero', G Recke m.
+'champion' (DRV).
+A jan-stem directly derived from *wrekan- (q.v.). The word probably
+originally meant ‘avenger', i.e. one who ventures into unknown territory,
+whence both 'champion' and 'exile'. Also note OFr. garçun, Fr. garçon 'boy,
+servant', which is assumed to continue OLFra. *wrakkio.
+*wrandan-(?) m. 'wren' - ON rindil-þvari m. 'id.', Icel. rindill m. 'id.', Nw.
+dial. rennil m. 'wagtail', OE wrenna, werna m. 'wren', E wren, OS wrendo,
+wrendilo m. 'id.', OHG wrentilo m. 'id.' (GM).
+A word that is difficult to reconstruct because of the derivational irrecon-
+cilability of the attested forms: 1) ON rindill < *wrendila-; 2) OS wrendilo,
+OHG wrentilo < *wrandilan-; 3) OE wrenna < *wrandjan-. No certain ety-
+mology. Unrelated to MDu. wranten w.v. 'to mope', but possibly connected
+to Icel. rindill m. 'tail'. Elfd. rwain-fugel m. 'brambling' does not belong here,
+but was derived from rwaina s.v. 'to wail' < *wrīnan- (q.v.).
+*wranga- adj. 'twisted, wrong' - ON rangr adj. 'wry, crooked; wrong', Far.
+rangur adj. 'slanted, inside out, wrong', Elfd. rwaungg adj. 'contrary, obsti-
+nate', OE wrang n. 'wrong', E wrong, MDu. wranc adj. 'bitter, sharp, un-
+friendly, brave', Du. wrang adj. 'bitter' (DRV).
+An o-grade adjective derived from *wringan- (q.v.).
+*wrankjan- w.v. 'to twist, wring' - OE wrencan w.v. 'id.', MHG renken w.v.
+'id.', G renken w.v. 'id.' (DRV).
+One way of arriving at an etymology is to assume a causative formation
+related to an unattested verb *wrinkan-, which in turn could be a nasal pre-
+sent to *werkan- (q.v.). The verb is more likely to have been derived from
+the iterative *wrunkōn- < *urngh-néh₂-, however, for which cf. MDu.
+wronckelen 'to twist, squirm, wrap'. This iterative clearly belongs to the
+strong verb *wringan- (q.v.)."		
+alignment47-wring-kroonen-causative	Kroonen2013	594	634	1	1934	1944	*wrankjan-	a3aa7d73ea00f20386c931d4e08dae52acc96fe4173d32638dc8393b4fe75218	"594
+*wraitjan-
+*wraitjan- w.v. 'to vex, excite'
+ON reita w.v. 'id.', OHG reizen w.v. 'to vex,
+tease, tempt', G reizen w.v. 'id.' (GM).
+A causative-iterative formation to *wrītan- (q.v.).
+*wraipa- adj. 'twisted; angry' - ON reiðr adj. 'angry', Far. reiður adj. 'id.',
+OE wræð adj. 'id.', OS wrēth adj. 'wretched, hostile', OHG reid, reidi adj.
+'curly, wavy' (DRV).
+An adjective derived from the strong verb *wriþan- ~ *wrītan- (q.v.). Also
+cf. ON, Icel., Far. reiði, OSw. vrēþe, Elfd. rwiede m. 'anger' < *wraipan-.
+*wrakjan- m. 'persecutor' - OE wrecca m. 'exile, stranger', OS wrekkio m.
+'foreign warrior, stranger, exile', OHG reck(e)o m. 'fugitive, hero', G Recke m.
+'champion' (DRV).
+A jan-stem directly derived from *wrekan- (q.v.). The word probably
+originally meant ‘avenger', i.e. one who ventures into unknown territory,
+whence both 'champion' and 'exile'. Also note OFr. garçun, Fr. garçon 'boy,
+servant', which is assumed to continue OLFra. *wrakkio.
+*wrandan-(?) m. 'wren' - ON rindil-þvari m. 'id.', Icel. rindill m. 'id.', Nw.
+dial. rennil m. 'wagtail', OE wrenna, werna m. 'wren', E wren, OS wrendo,
+wrendilo m. 'id.', OHG wrentilo m. 'id.' (GM).
+A word that is difficult to reconstruct because of the derivational irrecon-
+cilability of the attested forms: 1) ON rindill < *wrendila-; 2) OS wrendilo,
+OHG wrentilo < *wrandilan-; 3) OE wrenna < *wrandjan-. No certain ety-
+mology. Unrelated to MDu. wranten w.v. 'to mope', but possibly connected
+to Icel. rindill m. 'tail'. Elfd. rwain-fugel m. 'brambling' does not belong here,
+but was derived from rwaina s.v. 'to wail' < *wrīnan- (q.v.).
+*wranga- adj. 'twisted, wrong' - ON rangr adj. 'wry, crooked; wrong', Far.
+rangur adj. 'slanted, inside out, wrong', Elfd. rwaungg adj. 'contrary, obsti-
+nate', OE wrang n. 'wrong', E wrong, MDu. wranc adj. 'bitter, sharp, un-
+friendly, brave', Du. wrang adj. 'bitter' (DRV).
+An o-grade adjective derived from *wringan- (q.v.).
+*wrankjan- w.v. 'to twist, wring' - OE wrencan w.v. 'id.', MHG renken w.v.
+'id.', G renken w.v. 'id.' (DRV).
+One way of arriving at an etymology is to assume a causative formation
+related to an unattested verb *wrinkan-, which in turn could be a nasal pre-
+sent to *werkan- (q.v.). The verb is more likely to have been derived from
+the iterative *wrunkōn- < *urngh-néh₂-, however, for which cf. MDu.
+wronckelen 'to twist, squirm, wrap'. This iterative clearly belongs to the
+strong verb *wringan- (q.v.)."		
+alignment47-wring-kroonen-snare	Kroonen2013	597	637	1	1898	1907	*wrungōn-	158a7886b1fb516f7348ef20bb31f554e893e280a2933cf0688bdd6a94f5b2cb	"*writi-
+597
+man, where initial *w was lost in front of r. Also cf. *writi-, *wraitjan- and
+*writtōn-.
+-
+*writi- m. 'stroke' Go. writs m. 'id.', MDu. ret m. 'crack, fissure, lacuna',
+OHG riz m. 'scratching, line, letter', G Riß m. 'crack, scratch' (DRV).
+An i-stem to the strong verb *wrītan- (q.v.).
+*writtōn- w.v. 'to carve, write'.
+-
+OHG rizzon, rezzōn w.v. 'id.', G ritzen w.v.
+'id.'*urid-néh₂- (GM).
+The iterative to *writan- (q.v.). It is possible that the *t of the strong verb
+continues *-tt-, thus pointing to influence from this iterative.
+-
+*wripan- ~ *writan- s.v. 'to twist' ON ríða s.v. 'to turn, ring, tie', OSw.
+vrība s.v. 'to ring', Elfd. rwaiða s.v. 'to turn, twist, ring', OE wrīŎen s.v. 'to
+twist, ring', E writhe s.v. 'id.', MDu. writen s.v. 'to twist, ring, wrap', OHG
+rīdan s.v. 'to wind, turn', MHG rīden s.v. 'to wind, wrap' *uréit-e- (NEUR) —
+Lith. riēsti (riečiù) 'to bend, curve, warp', Latv. riest 'to fall off, shed, shoot,
+sprout' <*ureit-ie-; Lith. rietéti 'to hatch' < *ureit-eh1-; Lith. risti 'to roll',
+Latv. rist ‘id.' < *urit-.
+-
+The original meaning was 'to twist', which remarkably enough in both
+Baltic and Germanic developed into 'to squirm' (cf. WPhal. vrissen 'worm' <
+*wrib-man- and Lith. rietéti 'to hatch') as well as 'to sprout' (cf. OE wrīdian
+'to bud', Latv. riest 'to sprout'). MDu. writen continues *wrītan- from
+Pre-Gm. *writtan-, a variant whose geminate implies that it was influenced
+by an iterative *writtōn-, cf. Nw. ritla w.v. 'to swerve'. See also *wraipa-.
+-
+*wrōt- f. 'root' ON rót, p. rætr f. 'id.', Far. rót, pl. røtur f. 'id.', OSw. rōt f.
+'id.', Elfd. ruot, pl. ryōter f. 'id.' (EUR?).
+A root noun usually reconstructed as PGm. *wrōt-. The loss of the initial
+*w is unexpected in East Norse, however. This means that the standard
+etymological connection with *wurti- 'root' can only be maintained by as-
+suming ad hoc deletion of *w.
+*wrungōn- f. 'snare' - Go. wruggo f. 'snare, noose' (DRV).
+Also cf. MDu. wronc m. 'noose, wreath; twisting; anger', Du. wrong c.
+'braid' <*wrunga-. Derived from *wringan- (q.v.).
+*wulan- s.v. 'to well up, boil, seethe' Go. wulan s.v. 'to boil, be hot' ⇒
+*ulH-e- (IE).
+A zero-grade present closely related to *wallan- (q.v.). With the same
+vocalism, cf. ON olmr adj. 'raging' < *wulma- and Nw. olle f. ‘wave' <
+*wullōn-, which is fully parallel to OCS vlna 'id.'< *ulH-neh₂-."		
+alignment47-yarn-orel-native	Orel2003	127	166	1	618	625	*zarnan	9acc811a19d184a0127fe42dcc9323a44505ffe20b4e4afe818163608357c057	"zardaz
+HOFER I 344; POKORNY I 444; FRAENKEL
+135-136; VRIES ANEW 156; ZALIZNIAK II
+195; ONIONS 1018; BENVENISTE IEL 274;
+TRUBACHEV ESSJa VII 37–38; LEHMANN
+GED 147-148; KLUGE-SEEBOLD 300;
+OREL AED 110; ADAMS TB 196.
+*zardjan sb.n.: ON gerði 'fenced field'.
+Derived from *zarđaz. Derivationally
+identical with Toch B kercci 'palace',
+Phryg pln. Fópdiov (LIDÉN Toch. 21-22).
+ADAMS TB 196,
+*zarđōn sb.m.: Goth garda ‘enclosed yard,
+stockyard', OFris garda land property',
+OS gardo 'garden', OHG garto id. A mor-
+phological variant of *3ardaz. TORP-
+FALK 129; FEIST 197; POKORNY I 444;
+ZALIZNIAK II 195; KLUGE-SEEBOLD 300.
+*zarnan sb.n.: ON garn 'yarn', OE zearn
+id., MLG garn id., OHG garn id. See
+*zarno. ZUPITZA Gutt. 201; TORP-FALK
+129; HOLTHAUSEN AEEW 125-126;
+POKORNY I 443; VRIES ANEW 157;
+ZALIZNIAK I 140; FRAENKEL II 1291;
+ONIONS 1018; KLUGE-SEEBOLD 299-
+300.
+*zarn(j)a-wendōn sb.f.: ON garn-vinda
+'skein of yarn', OE 3earn-winde 'reel'
+(masc.?), OFris jern-wine id., MLG garn-
+winde id., OHG garn-winta id. Compound
+of *zarnō and *wendon. CARR Nom. comp.
+72 (parallel formations).
+*zarnō sb.f.: ON gorn ‘gut'. Cf. WGmc
+neut. *zarnjan > OE myc-3ern fat about
+the kidneys', OS mid-garni ‘internal fať,
+OHG mitti-garni id. Identical with Lith
+žarnà 'gut', Latv zarna ‘intestine'. Further
+cf. Alb zorrë id. < PAlb *džārnā with a
+long *ā < *ē. TORP-FALK 129; TRAUT-
+MANN BSW 367; POKORNY I 787; FRAEN-
+KEL 1291; VRIES ANEW 199; STANG LS
+65; KLUGE-SEEBOLD 299; OREL AED
+525-526.
+~
+*3arstaz *3arstiz adj.: ON gerstr 'sour,
+dismal', MLG garst ‘rancid', MHG garst
+id. Identical with MIr goirt ‘bitter' <
+*ghorsti-. TORP-FALK 130; POKORNY I
+445 (to Lith grastis ‘menace, threat', grasùs
+'causing weariness' based on gresiù, gresti
+'to menace, to threaten'); FRAENKEL 166–
+127
+3astiz
+167; HEIDERMANNS 233; KLUGE-SEEBOLD
+300.
+*zarwaz adj.: ON gorr 'ready for some-
+thing', OE gearu ‘ready, prepared', OS
+garu id., OHG garo id. Related to *zeraz.
+KAUFMANN PBB XX 530 (from *za-arwaz,
+see *arwaz); KARSTEN NB II 17, 414–416;
+TORP-FALK 128; HOLTHAUSEN AEEW
+126; POKORNY I 494; VRIES ANEW
+163-164 (to IE *gher- 'to burn'), 199;
+ONIONS 1018; SEEBOLD LuE 458-460
+(against the connection_with_ *gher- 'to
+burn'); KABELL KZ LXXXVII 26-31;
+SANDERS Festschr. Kolb 558-568 (follows
+KAUFMANN); BAMMESBERGER Nom. 244;
+HEIDERMANNS 233-234; KLUGE-SEEBOLD
+298-299.
+~
+*zarwibō sb.f.: ON gerð ‘gear, harness,
+armor', OHG garawida ‘garment, gear'.
+Derived from *zarwaz. TORP-FALK 128;
+VRIES ANEW 164; HEIDERMANNS 234.
+*zarwin *3arwjō sb.f.: ON gorvi 'gear,
+apparel', OE 3earwe 'clothing, attire,
+gear, OHG garawi 'equipment, attire,
+jewelry'. Derived from *zarwaz. HOLT-
+HAUSEN AEEW 126; VRIES ANEW 165;
+ONIONS 392; HEIDERMANNS 234.
+*zarwjanan wk.vb.: ON gørva 'to get
+ready, to make ready', OE zierwan 'to
+make ready, to prepare', OS garwian, ger-
+wian id., OHG garawen id. Derived from
+*zarwaz. TORP-FALK 128; HOLTHAUSEN
+AEEW 130; VRIES ANEW 163–164;
+ONIONS 389; HEIDERMANNS 234; KLUGE-
+SEEBOLD 315–316.
+*zasti-zebōn sb.m.: ON gest-gjafi ‘host',
+MHG gast-gebe id. Compound of *zastiz
+and *zebon. CARR Nom. comp. 83 (paral-
+lel formations).
+*3astiz sb.m.: Goth gasts 'stranger, guest',
+ON gestr 'guest', OE 3æst, ziest ‘stranger,
+guest, enemy', OFris jest ‘guest', OS gast
+'enemy, guest', OHG gast 'guest,
+stranger'. Etymologically identical with
+Lat hostis 'stranger', Slav *gostь 'guest'.
+BRUGMANN IF I 172–174; ZUPITZA Gutt.
+172; MEILLET MSL IX 374; TORP-FALK
+133; HOLTHAUSEN AEEW 130; WALDE-
+HOFMANN I 662-664; FEIST 202; MEZGER"		
+alignment47-yarn-kroonen-gut	Kroonen2013	169	209	1	1931	1938	*garnō-	81e99161870f2ac3b6051529cc438814c3e2e4e6253132af279ee76d9e7daddd	"*ganuta(n)-
+*ganuta(n)- m. 'gander'
+169
+OE ganot m. 'id.', MDu. gent m. 'id.', Du.
+jan-van-gent 'gannet', OHG ganzo, ganazzo m. 'gander', MHG ganze m. 'id.'
+(IE).
+A formation derived from the root of *gans- 'goose' (q.v.) < PIE ģħh₂en-s-
+by adding the animal suffix *-uta- (for which cf. *heruta- 'deer') or the vari-
+ant *-ita- as in MDu. gent. In addition, G Rhnl., Lorr. Gunz m. 'gander' points
+to a variant *gunuta- with zero grade of the root. It may preserve the
+oblique stem of an originally ablauting paradigm *gans, gen. *gunzaz <
+*ģħh₂én-s, *għh₂n-s-ós.
+*gapp/bōn-w.v. 'to joke' - ON gabba w.v. 'to mock, make game of one', OE
+gabbian w.v. 'to mock; to chat', OFri. gabbia w.v. 'to denounce, accuse, pros-
+ecute', MLG gabben, gabberen w.v. 'to joke, monkey about', MDu. gabben
+w.v. 'to joke', Du. ginne-gappen 'id.' (GM).
+An iterative formation 3sg. *gappōþi-, 3pl. *gabunanþi < *ghHbh-néh₂-, no
+doubt related to *gapōn- 'to gape', cf. ON gapa, OE gapian, Du. gapen, (M)HG
+gaffen, cf. for the shift of meaning: Nw. dial. gapa w.v. 'to gape; gaze; insult'.
+Lith. gablióti and Pol. gabać 'to vex' were borrowed from Low German.
+-
+*garda- m. 'courtyard' Go. gards m. 'house, household enclosure, court-
+yard', ON garðr m. 'fence, wall; yard; courtyard, court', Far. garður m. ‘fence;
+enclosure; farm; ring; gust of wind creating ripples in the water', OE geard
+m. 'id', OS gard m. 'field, ground, house', OHG gart m. 'enclosure' =>
+*ghordh-o- (IE) - Lith. gardas m. 'fold, pen', OCS gradɩ m. 'city, town', Alb.
+gardh m. 'hedge, fence' <*ghordh-o-; also cf. Skt. grhá- m. 'house' < *għrd³-ó-.
+An o-stem derived from the root *gherdh-, for which see *gerdan-. The
+original Proto-Indo-European meaning 'circle' has been preserved in Faro-
+ese, cf. sláin garð um ein 'to form a (defensive) circle around someone'. Also
+cf. OFri. garda m. 'family property, court', OS gardo m. 'garden', OHG garto,
+G Garten m. 'id.' <*gardan-.
+-
+*garnō- f. 'intestines' - ON gorn f. 'id.'⇒ *ghór-n-eh2- (EUR) Lith. žarnà f.
+'intestine'; Lat. hernia f. 'hernia' < *gher-n-ieh2-.
+Also cf. the collective OE micgern, OS mid-garni, OHG mitti-garni n.
+'paunch-fat' <*midja-garnja- and the semantically more secondary ON garn,
+OE gearn, OHG garn, G Garn 'yarn' < *garna-. Apparently, intestines were
+used for making strings.
+*garp/bōn- / *gurp/bōn- w.v. 'to gobble; to belch' - Far. gorpa w.v. 'to
+cough violently; to vomit', Nw. garpa, garva, gurpa w.v. 'to talk loudly;
+belch; gormandize' *ghorbh-néh₂- (IE) Hitt. karāpi karipanzi 'to de-
+vour, to consume' < *għórbh-ei, *għrbh-énti.
+⇒
+~"		
+alignment47-yarn-kroonen-fat	Kroonen2013	169	209	1	2146	2160	*midja-garnja-	81e99161870f2ac3b6051529cc438814c3e2e4e6253132af279ee76d9e7daddd	"*ganuta(n)-
+*ganuta(n)- m. 'gander'
+169
+OE ganot m. 'id.', MDu. gent m. 'id.', Du.
+jan-van-gent 'gannet', OHG ganzo, ganazzo m. 'gander', MHG ganze m. 'id.'
+(IE).
+A formation derived from the root of *gans- 'goose' (q.v.) < PIE ģħh₂en-s-
+by adding the animal suffix *-uta- (for which cf. *heruta- 'deer') or the vari-
+ant *-ita- as in MDu. gent. In addition, G Rhnl., Lorr. Gunz m. 'gander' points
+to a variant *gunuta- with zero grade of the root. It may preserve the
+oblique stem of an originally ablauting paradigm *gans, gen. *gunzaz <
+*ģħh₂én-s, *għh₂n-s-ós.
+*gapp/bōn-w.v. 'to joke' - ON gabba w.v. 'to mock, make game of one', OE
+gabbian w.v. 'to mock; to chat', OFri. gabbia w.v. 'to denounce, accuse, pros-
+ecute', MLG gabben, gabberen w.v. 'to joke, monkey about', MDu. gabben
+w.v. 'to joke', Du. ginne-gappen 'id.' (GM).
+An iterative formation 3sg. *gappōþi-, 3pl. *gabunanþi < *ghHbh-néh₂-, no
+doubt related to *gapōn- 'to gape', cf. ON gapa, OE gapian, Du. gapen, (M)HG
+gaffen, cf. for the shift of meaning: Nw. dial. gapa w.v. 'to gape; gaze; insult'.
+Lith. gablióti and Pol. gabać 'to vex' were borrowed from Low German.
+-
+*garda- m. 'courtyard' Go. gards m. 'house, household enclosure, court-
+yard', ON garðr m. 'fence, wall; yard; courtyard, court', Far. garður m. ‘fence;
+enclosure; farm; ring; gust of wind creating ripples in the water', OE geard
+m. 'id', OS gard m. 'field, ground, house', OHG gart m. 'enclosure' =>
+*ghordh-o- (IE) - Lith. gardas m. 'fold, pen', OCS gradɩ m. 'city, town', Alb.
+gardh m. 'hedge, fence' <*ghordh-o-; also cf. Skt. grhá- m. 'house' < *għrd³-ó-.
+An o-stem derived from the root *gherdh-, for which see *gerdan-. The
+original Proto-Indo-European meaning 'circle' has been preserved in Faro-
+ese, cf. sláin garð um ein 'to form a (defensive) circle around someone'. Also
+cf. OFri. garda m. 'family property, court', OS gardo m. 'garden', OHG garto,
+G Garten m. 'id.' <*gardan-.
+-
+*garnō- f. 'intestines' - ON gorn f. 'id.'⇒ *ghór-n-eh2- (EUR) Lith. žarnà f.
+'intestine'; Lat. hernia f. 'hernia' < *gher-n-ieh2-.
+Also cf. the collective OE micgern, OS mid-garni, OHG mitti-garni n.
+'paunch-fat' <*midja-garnja- and the semantically more secondary ON garn,
+OE gearn, OHG garn, G Garn 'yarn' < *garna-. Apparently, intestines were
+used for making strings.
+*garp/bōn- / *gurp/bōn- w.v. 'to gobble; to belch' - Far. gorpa w.v. 'to
+cough violently; to vomit', Nw. garpa, garva, gurpa w.v. 'to talk loudly;
+belch; gormandize' *ghorbh-néh₂- (IE) Hitt. karāpi karipanzi 'to de-
+vour, to consume' < *għórbh-ei, *għrbh-énti.
+⇒
+~"		
+alignment47-year-kroonen-nom	Kroonen2013	273	313	1	1447	1454	*ióh1-r	762689cc1615a6ee697c9b7cc7009fec2ff01bd95606a2f8ced0c2ae73d54b1a	"*jeka(n)-
+273
+*jeka(n)- m. 'ice' - ON jaki m. 'broken ice, ice-floe', LG is-jack 'icicle', G Swi.
+jäch m. 'hoar-frost' ⇒ *ieg-o(n)- (IE) - Hitt. eka- n./c. 'cold, frost, ice' <
+ekan./c.
+*ieg-o-; Olr. aig, gen. ega f. 'ice'; W ia m. ‘id.' < *ieģ-i-; Lith. yžià f. 'ice-floe' <
+*ig-ieh2-(?).
+Also cf. ON jokull m. 'icicle; glacier', OFri *j(i)ūkul (with u-mutation, cf.
+Löfstedt 1931: 141, fn. 2), WFri. jûkel c. 'icicle, cone', NFri. jugl m. ‘id.' (=
+MLG jokele 'id.'); OSw. ikil m. 'id.', Elfd. ais-ikkel m. 'id.', OFri. itsil, OE gicel m.
+'ice-floe; icicle' (E icicle <*ice-yickle) <*jekila-; OHG ihhilla, OS jikila f. 'icicle'
+<*jekiljō-.
+*jēra- n. 'year' — Go. jer n. 'id.', ON ár n. 'id.', OFri. jēr n. ‘'id.', OS jār n. ‘id.',
+Du. jaar n. 'id.', OHG jar n. 'id.', G Jahr n. 'id.' ⇒ *ieh₁-ro- (IE) - Luv. āra/i- c.
+'time' < *ieh-ro-?; YAv. yāra, gen. yå, yā n. 'year' < *ieh1-r/n-; Gr. wpa, f.
+'season, year, hour, time' < *ioh1-reh2-; Lat. hōrnus adj. 'grown, produced in
+this year (of crops and yield)' <*ghi-ioh1-r-no-(?); OCS jĕrú m., jĕra f. 'spring'
+< *ieh1-ro/eh2-; RuCS, ORu. jarę m. 'lamb', SCr. järe m. 'kid, young goat' <
+*iehir-en-; Lith. éras, dial. jéras, Latv. jērs m. ‘lamb' < *ieh₁-ro-.
+Most languages show an r-suffix, but the Avestan paradigm preserved an
+archaic heteroclitic inflection. With the additional evidence for e/o-ablaut in
+the different dialects, the paradigm is therefore to be reconstructed as stat-
+ic, nom. *ióh1-r, gen. *iéh1-n-s (Schindler 1975: 5).
+-
+*jesan-s.v. 'to ferment' - Sw. jäsa w.v. 'id.', Elfd. jäså s.v. 'id.', OHG jesan s.v.
+'id.', MHG jesen s.v. 'id.'⇒ *iés-e- (IE) ToA yäs- 'to boil', ToB yäs- 'to excite
+sexually; ravish', Skt. yásati 'to boil, become hot', YAv. yaēšiiaņt- ptc. 'boil-
+ing', Gr. 3έw 'to boil, ferment'.
+A strong verb *jesan-. There also seems to have been an o-grade variant,
+cf. Icel. asa w.v. 'to rush', Far. asa w.v. 'to struggle', Nw. ase s.v. 'to ferment' <
+*jasan-, which probably represents an old intensive formation. It again gave
+rise to the secondary causative ON œesa, Icel. æsa, Far., Nw. Øsa w.v. 'to in-
+cite' <*jōsjan-.
+*jestu- m. 'yeast' - ON jostr m. 'id.', Nw.jest m. 'id.', OSw. iæster m. ‘id.', Elfd.
+jäst c. 'id.', E yeast, MLG gest 'id.', MDu. gest, gist m. 'id.', Du. gist c. 'id.', MHG
+jest m. 'foam', G Gischt f. 'id.' ⇒ *ies-tu- (DRV) — Identical to W iās f. 'seeth-
+ing'.
+-
+A tu-stem derived from the root of *jesan- (q.v.).
+-
+*jewan- m. 'creeping insect(?)' ― Nw. dial. jo(e) m. 'maggot' ⇒ *ieuH-on-
+(IE) — Skt.yúkā- f. 'louse' < *iuH-k-eh2-.
+-
+An n-stem related to Nw.y w.v. 'to squirm' < *jūjan- < *iuH-ie-. The word
+has not yet been etymologized, but is reconcilable with Skt. yúkā-."		
+alignment47-year-kroonen-gen	Kroonen2013	273	313	1	1461	1470	*iéh1-n-s	762689cc1615a6ee697c9b7cc7009fec2ff01bd95606a2f8ced0c2ae73d54b1a	"*jeka(n)-
+273
+*jeka(n)- m. 'ice' - ON jaki m. 'broken ice, ice-floe', LG is-jack 'icicle', G Swi.
+jäch m. 'hoar-frost' ⇒ *ieg-o(n)- (IE) - Hitt. eka- n./c. 'cold, frost, ice' <
+ekan./c.
+*ieg-o-; Olr. aig, gen. ega f. 'ice'; W ia m. ‘id.' < *ieģ-i-; Lith. yžià f. 'ice-floe' <
+*ig-ieh2-(?).
+Also cf. ON jokull m. 'icicle; glacier', OFri *j(i)ūkul (with u-mutation, cf.
+Löfstedt 1931: 141, fn. 2), WFri. jûkel c. 'icicle, cone', NFri. jugl m. ‘id.' (=
+MLG jokele 'id.'); OSw. ikil m. 'id.', Elfd. ais-ikkel m. 'id.', OFri. itsil, OE gicel m.
+'ice-floe; icicle' (E icicle <*ice-yickle) <*jekila-; OHG ihhilla, OS jikila f. 'icicle'
+<*jekiljō-.
+*jēra- n. 'year' — Go. jer n. 'id.', ON ár n. 'id.', OFri. jēr n. ‘'id.', OS jār n. ‘id.',
+Du. jaar n. 'id.', OHG jar n. 'id.', G Jahr n. 'id.' ⇒ *ieh₁-ro- (IE) - Luv. āra/i- c.
+'time' < *ieh-ro-?; YAv. yāra, gen. yå, yā n. 'year' < *ieh1-r/n-; Gr. wpa, f.
+'season, year, hour, time' < *ioh1-reh2-; Lat. hōrnus adj. 'grown, produced in
+this year (of crops and yield)' <*ghi-ioh1-r-no-(?); OCS jĕrú m., jĕra f. 'spring'
+< *ieh1-ro/eh2-; RuCS, ORu. jarę m. 'lamb', SCr. järe m. 'kid, young goat' <
+*iehir-en-; Lith. éras, dial. jéras, Latv. jērs m. ‘lamb' < *ieh₁-ro-.
+Most languages show an r-suffix, but the Avestan paradigm preserved an
+archaic heteroclitic inflection. With the additional evidence for e/o-ablaut in
+the different dialects, the paradigm is therefore to be reconstructed as stat-
+ic, nom. *ióh1-r, gen. *iéh1-n-s (Schindler 1975: 5).
+-
+*jesan-s.v. 'to ferment' - Sw. jäsa w.v. 'id.', Elfd. jäså s.v. 'id.', OHG jesan s.v.
+'id.', MHG jesen s.v. 'id.'⇒ *iés-e- (IE) ToA yäs- 'to boil', ToB yäs- 'to excite
+sexually; ravish', Skt. yásati 'to boil, become hot', YAv. yaēšiiaņt- ptc. 'boil-
+ing', Gr. 3έw 'to boil, ferment'.
+A strong verb *jesan-. There also seems to have been an o-grade variant,
+cf. Icel. asa w.v. 'to rush', Far. asa w.v. 'to struggle', Nw. ase s.v. 'to ferment' <
+*jasan-, which probably represents an old intensive formation. It again gave
+rise to the secondary causative ON œesa, Icel. æsa, Far., Nw. Øsa w.v. 'to in-
+cite' <*jōsjan-.
+*jestu- m. 'yeast' - ON jostr m. 'id.', Nw.jest m. 'id.', OSw. iæster m. ‘id.', Elfd.
+jäst c. 'id.', E yeast, MLG gest 'id.', MDu. gest, gist m. 'id.', Du. gist c. 'id.', MHG
+jest m. 'foam', G Gischt f. 'id.' ⇒ *ies-tu- (DRV) — Identical to W iās f. 'seeth-
+ing'.
+-
+A tu-stem derived from the root of *jesan- (q.v.).
+-
+*jewan- m. 'creeping insect(?)' ― Nw. dial. jo(e) m. 'maggot' ⇒ *ieuH-on-
+(IE) — Skt.yúkā- f. 'louse' < *iuH-k-eh2-.
+-
+An n-stem related to Nw.y w.v. 'to squirm' < *jūjan- < *iuH-ie-. The word
+has not yet been etymologized, but is reconcilable with Skt. yúkā-."		
+alignment47-year-fulk-body	Fulk2018	124	141	1	98	104	"*jēra"""	1e202e877c92a235f71e00d2835d0c450dfc64076842df7069f8bf1bf74b3c1d	"124
+A Comparative Grammar of the Early Germanic Languages
+Initial j was lost categorically, as in *jēra"" > ár ‘year', *juŋgaz > ungr ‘young', a
+change that can be dated on the basis of the use of the rune *, which originally
+represented j, to represent a vowel (A), the earliest instance being on the Vallentuna dice
+(ca. 600: see H.F. Nielsen 2000: 256–7). Otherwise, j is preserved only when syllable-
+initial (i.e., after a light syllable) or after a velar obstruent: to selja ‘deliver', nom. pl.
+niðjar ‘kinsmen', sækja ‘seek', þykkja ‘seem' cf. deila ‘distribute' (Go. dáiljan), senda
+'send' (Go. sandjan). There was also loss of j before all front vowels, including those
+resulting from front umlaut, except for æ. Initial w was lost before rounded vowels (but
+not o or ó, developed from a and á), even when r intervened, as in ormr ‘serpent' (Go.
+waúrms), óðr 'mad' (Go. wōds, 1×, for expected *wōps: $6.12), yrkja 'make' (Go.
+waúrkjan), apa ‘shout' (Go. wōpjan), róta ‘disarrange' (OE wrōtan); the loss of w
+before other instances of initial r is later, as shown by the alliteration in some early
+verse. Internal w was lost under similar conditions, as in sætr 'sweet' (cf. OE swōt),
+hósti 'cough' (OE hwōsta). Medial w was also lost after a heavy syllable unless pre-
+ceded by a velar consonant, as in benda ‘betoken' (Go. bandwjan), ótta ‘early morning'
+(Go. ühtwō), but syngva ‘sing', sokkva ‘sink'. There was also loss of w before u, as in
+bọð ‘battle' < *baðu < *baðwō (gen. boðvar, wō-stem), a change that may belong to
+Proto-NWGmc. (see §6.16). On the date of the loss of j and w, see Isakson 2000.
+Medially, voiceless fricatives other than s were lenited wherever this was not
+prevented by an adjacent voiceless consonant. For f and þ this meant voicing, as in
+PGmc. *wulfaz > úlfr 'wolf' (where <f> = b, but still wul(a)f- in Runic), *brōper->
+bróðir 'brother', and *werpana"" > verða 'become"".³ For x, lenition meant a change to h,
+which was subsequently lost, though the sound is usually preserved in Runic, with loss
+securely attested only in wurte, wortaa, worte (East and West Norse, ca. 500–550) <
+*worxtē 'made'. 4 Loss of final h is not in evidence until late in the tenth century; cf.
+*þōh (> Olcel. þó) ‘though' (Go. þáuh), borrowed into OE (> ME þō3). Vowels were
+lengthened before xt (§4.9), which developed to tt at about the end of the PNorse period.
+Examples: átta ‘8' (Go. ahtáu), máttr 'might' (Go. mahts), réttr 'straight' (Go. raíhts),
+sótt 'sickness' (Go. saúhts).
+Medially and finally there was voicing assimilation in consonant clusters, as in
+nom./acc. sg. neut. ljúft ‘dear' (with [f]; cf. nom. sg. masc. ljúfr, with a voiced labial),
+víðka 'widen' (with [0]; cf. víðr ‘wide', with [*]), pret. œpði ‘shouted' (with [0], from
+*wōpiðē, later opti), and gen. sg. dags ‘day' (with [×]; cf. dagr, with [y]). The voiceless
+fricatives so produced frequently become stops, especially next to another fricative, by
+dissimilation, as in pret. fýsti ‘urged' < *fys-þi < *funsiðē(þ), and in gen. sg. e(i)nskis
+‘no, none' < *eins-3i-s. But fricatives in clusters with uniform place of articulation be-
+come stops (excluding s, which has no corresponding stop in Gmc.), at least after a
+stressed vowel, as in motti ‘moth' (OE moppe), pret. gladdi ‘gladdened' < *zlað-ið-ē(þ)
+and nom./acc. sg. neut. glatt ‘glad' < *glað-t. In addition, after a heavy syllable, lỗ that
+arose by syncope developed to ld, as in pret. deildi ‘distributed' < *dail-iðē(þ) and fylldi
+‘filled' < *full-iðē(þ); but ð remained until about 1300 after a light syllable, as in malði
+'ground' and valði ‘chose'; compare halda 'hold', falda ‘fold', with PGmc. *-lo- (§6.5).
+In addition, there was loss of ð before n and sometimes r, as in beina ‘assist' (related to
+beiða 'request'), Skáney ‘Skåne' (OE Scedenig), nom. masc. fjórir ‘4' < *fjo̟ðrir (and
+cf. the change to 3 between back vowels in neut. fjogur < *feuður < PNorse *feðuru,
+likewise in Old Norwegian laugur-dagr ‘Saturday' ('bath-day'), with laugur- < lauður-
+(cf. OE leador 'soap', PDE lather)."		
+alignment47-yoke-kroonen-nasal	Kroonen2013	274	314	1	469	479	*iu-n-g-o-	b98cc7df4175fa9ff2fe7321b3b5267d75edef1fbbd6d17da8ec3deeb845df63	"274
+*juka-
+=>
+*juka-n. 'yoke' - Go. juk n. 'id.', ON ok n. 'id.', Far. ok n. 'id.', Elfd. uok n. ‘id.',
+OE geoc n. 'id.', E yoke, OS juk n. ‘id.', Du. juk n. ‘id.', OHG joh n. ‘id.', G Joch n.
+'id.' ⇒ *iug-o- (IE) - Identical to Hitt. juka- n. 'yoke, pair', Skt. yugá- n. 'yoke,
+MP ywg 'id.', Gr. Zuyóv n. 'id.', Lat. iugum n. 'id.', OW iou 'id.', MW iau, yeu 'id.';
+also cf. Lith. jùngas, Latv. jûgs m. 'id.', OCS igo, Ru. ígo 'yoke', SCr. arch. igo n.
+'cross-beam' < *iu-n-g-o-.
+Also cf. Go. jukuzi f. 'yoke' < *iug-us-ih2- and MHG jiuch n. 'acreage' <
+*jeuka-. See further *jaukja-.
+*jukjan- w.v. 'to itch' - OE gyccan w.v. 'id.', E to itch, OS juk(k)ian w.v. 'id.',
+Du. jeuken w.v. 'id.', OHG jucken w.v. 'id.', G jucken w.v. 'id.' (GM?).
+A WGm. jan-verb 3sg. *jukjeþi, 3pl. *jukjanþi. The *j was lost before front
+vowels, which after WGm. j-gemination resulted in an allomorphic para-
+digm 3sg. *jukiþi, 3pl. *jukkjanpi. This allomorphy explains the difference
+between e.g. G jucken and Du. jeuken. Also cf. OE gycða m. 'itch', MDu. jucte,
+joocte f. 'id.', OHG jukido, MHG jukede m. 'scabies' < *jukipan-. No certain
+etymology. It is perhaps conceivable that the verb, which appears to have
+had an oblique subject (*mike jukjeþi 'I have an itch'), is related to *jukkōn-,
+cf. G Als., Pal. jucken 'to jerk'.
+*jukkōn-w.v. 'to hop; to run' - G dial. jucken w.v. Swab. 'to jump, hop', Pal.
+'to jerk, rock', Als. 'to jerk, jump up, turn away', Swab. 'to jump, run; to hop',
+Cimb. 'to throw; jump', Swi. (Rhntl.) 'to run fast', (Schfh.) jūkxə w.v. 'to hop'
+(GM?).
+Probably related to *jakk/gōn- (q.v.) 'to rush' in view of the semantics of
+e.g. G Pal. jacken w.v. 'to rock'. In the German dialects, the word has often
+merged with jucken 'to itch' < *jukjan-, but this may originally have been a
+different verb.
+-
+*jumja- m. 'divine twin(?)' ON Ymir m. 'primordial giant in Norse my-
+thology' ⇒ *imH-io- (IE) - Skt. yamá- m. 'twin; name of the mythical first
+man', OAv. yama- m. 'twin', Av. yima- (< *yǝma-) m. 'name of a mythical pri-
+meval king'; Olr. emon m. 'twin' < *i(e)mH-o-; Latv. jumis 'paired couple,
+double fruit' < *imH-io-.
+-
+*junga- adj. 'young' ― Go. juggs adj. 'id.', ON ungr adj. 'id.', Far. ungur adj.
+'id.', Elfd. ungg adj. 'id.', OE geong adj. 'id.', E young, OFri. jung adj. 'id.', OS
+jung adj. 'id.', Du. jong adj. 'id.', OHG jung adj. ‘id.', G jung adj. 'id.' ⇒
+*h₂iu-nk-ó- (IE) — Identical to Skt. yuvaśá- adj. 'young, youthful', m. 'youth';
+Lat. iuvencus m. 'young bull'; Olr. óac adj. 'young', W ieuanc 'id.', Bret.
+yaouank 'id.'.
+This adjective is commonly reconstructed as *h₂iu-Hn-ko-, i.e. a formation
+derived from PIE *h2oi-u- 'lifetime, age' (for which see *aiwa/ō- 1) with the"		
+alignment47-yoke-orel-verb	Orel2003	207	246	1	1568	1578	*jukōjanan	1df535ebe7d190b2d8bdde522de3e28142d76b44a53211fc0a1022cddd42bebd	"ju
+*ju adv.: Goth ju 'just now, already', OE
+3eó ""formerly, before', OS ju already',
+OHG jū id. Identical with Lith jaŭ id.,
+Latv jau id., Slav *ju id. KRETSCHMER
+KZ XXXI 466 (to IE *ieuen- ‘young');
+MEILLET MSL IX 52; TRAUTMANN BSW
+106; TORP-FALK 328; HOLTHAUSEN
+AEEW 141; FEIST 303; POKORNY I 285;
+FRAENKEL 190; STANG LS 25; TRUBACHEV
+ESSJa VIII 190-191; LEHMANN GED
+212.
+*juzunbiz sb.f.: OE zeózuð 'youth', OFris
+jogethe id., OS juguth id., OHG jugund id.
+Identical with Skt yuvatí- ‘young woman'
+< *iuunti-, with a taboo change of *-w- >
+*-3-. Related to junzaz. BRUGMANN
+Grundriß II/1 439 (*-w- > *-3- by anal-
+ogy with *duzunþiz > OE duguð, OHG
+tugund); TORP-FALK 331; HOLTHAUSEN
+AEEW 141; MAYRHOFER III 23; LEHMANN
+Phon. 48 (*3 < *Hu), GED 213; KLUGE-
+SEEBOLD 412-413.
+*jukan sb.n.: Goth juk ‘yoke', ON ok id.,
+OE 3eoc id., OS juk id., OHG joh, juh id.
+Etymologically related to Hitt i-ú-ga-an
+id., Skt yugá- id., Gk Juyóv id., Arm luc
+id. iugio-, Lat iugum id., W iau id., Lith
+jungas id. (with *-n- from the nasal infix
+of the verbal present), Slav *jбgo id.
+PEDERSEN Kelt. Gr. I 64, 98; MEILLET MSL
+VII 57; TORP-FALK 330; TRAUTMANN
+BSW 109; HOLTHAUSEN AEEW 141;
+WALDE-HOFMANN I 728-729; FEIST 304;
+POKORNY I 508; VRIES ANEW 417; MAYR-
+HOFER III 19; FRAENKEL 196; ZALIZNIAK
+I 142; FRISK I 615-616; ONIONS 1020;
+PUHVEL II 495–496; TrubachEV ESSJa
+VIII 206-208; LEHMANN GED 212;
+KLUGE-SEEBOLD 411.
+*jukkjanan wk.vb.: OE 3iccan 'to itch',
+OS jukkian id., OHG jucken id. Related
+to jeukenan. BARTHOLOMAE 1231–1232;
+HOLTHAUSEN AEEW 142; POKORNY I 512;
+ONIONS 488.
+*jukōjanan wk.vb.: ON oka 'to yoke', OE
+zeocian 'to preserve, to save'. Derived
+from *jukan. Cf. a structural similarity in
+Lat iugō id. WALDE-HOFMANN I 728;
+VRIES ANEW 418.
+207
+junzaz
+*jukōn sb.m.: Goth ga-juka ‘companion,
+yoke-fellow', ON oki 'cross-beam'. Iden-
+tical with Skt sam-yúj- joined through
+friendship or relationship', Lat con-iux
+'spouse'. Derived from *jukan. WALDE-
+HOFMANN I 261; FEIST 186-187; VRIES
+ANEW 418; LEHMANN GED 141.
+*jukuzjō sb.n.: Goth jukuzi ‘yoke' (with an
+unclear -u-), OE 3ýcer ‘acre'. Fem. *(ie)-
+jug-usi of a perfect participle from IE
+*eug- (BAMMESBERGER Language XLI
+416-419, Nom. 213). NOREEN IF IV 325
+(Goth -uz- <IE *-ues-); STREITBERG IF
+XIV 494; UNWERTH PBB XXXVI 20 (s-
+stem, cf. Gk (ɛûyoç ‘team', Lat iūgera
+'acre', Slav jugo 'yokе'); HOLTHAUSEN
+AEEW 142; FEIST 304; LEHMANN GED
+213.
+*jundō sb.f.: Goth junda 'youth'. Identical
+with Lat iuuenta id. < *iuuntā (BRUGMANN
+Grundriß II/1 418). TORP-FALK 331;
+WALDE-HOFMANN I 736; FEIST 304-305;
+CHEMODANOV SGGJa I 91; LEHMANN GED
+213; BAMMESBERGER Nom. 148.
+*junzalinzaz sb.m.: ON ynglingr 'young
+person', OE zeon3linz id., OFris jungeling
+id., OS jungling id., MHG jungeling id.
+Derived from *junzaz. ONIONS 1021;
+KLUGE-SEEBOLD 413.
+*junza-līkaz adj.: ON ung-ligr 'youthful',
+OHG jung-lih id. Derived from *junzaz.
+HEIDERMANNS 326.
+*junzaz adj.: Goth juggs 'young', ON ungr
+id., OE zeon3 id., OFris jung id., OS jung
+id., OHG jung id. Related to Skt yuvaśá-
+'youthful', Lat iuuencus 'youth', OIr óac
+'young', W ieuanc id. from *iuun-kó- fur-
+ther connected with *eu- 'young'. Cf.
+also Khwar yw'nk ‘young' < Iran *aiwā-
+nak (TEUBNER Gedenkschr. Güntert 302).
+TORP-FALK 331; WALDE-HOFMANN I
+735; FEIST 303–304; HOLTHAUSEN AEEW
+142; KLUGE 342-343; MAYRHOFER III
+23-24; PORZIG Festschr. Debrunner
+343-349; HOFFMANN MSS VI 39-40;
+POKORNY I 510-511; VRIES ANEW 635;
+EGGERS Festschr. Starck 62-81; ONIONS
+1021; Hamp KZ LXXXIV 1; LEHMANN
+GED 212; BAMMESBERGER Nom. 253;"		
+alignment47-yoke-orel-fellow	Orel2003	207	246	1	1753	1759	*jukōn	1df535ebe7d190b2d8bdde522de3e28142d76b44a53211fc0a1022cddd42bebd	"ju
+*ju adv.: Goth ju 'just now, already', OE
+3eó ""formerly, before', OS ju already',
+OHG jū id. Identical with Lith jaŭ id.,
+Latv jau id., Slav *ju id. KRETSCHMER
+KZ XXXI 466 (to IE *ieuen- ‘young');
+MEILLET MSL IX 52; TRAUTMANN BSW
+106; TORP-FALK 328; HOLTHAUSEN
+AEEW 141; FEIST 303; POKORNY I 285;
+FRAENKEL 190; STANG LS 25; TRUBACHEV
+ESSJa VIII 190-191; LEHMANN GED
+212.
+*juzunbiz sb.f.: OE zeózuð 'youth', OFris
+jogethe id., OS juguth id., OHG jugund id.
+Identical with Skt yuvatí- ‘young woman'
+< *iuunti-, with a taboo change of *-w- >
+*-3-. Related to junzaz. BRUGMANN
+Grundriß II/1 439 (*-w- > *-3- by anal-
+ogy with *duzunþiz > OE duguð, OHG
+tugund); TORP-FALK 331; HOLTHAUSEN
+AEEW 141; MAYRHOFER III 23; LEHMANN
+Phon. 48 (*3 < *Hu), GED 213; KLUGE-
+SEEBOLD 412-413.
+*jukan sb.n.: Goth juk ‘yoke', ON ok id.,
+OE 3eoc id., OS juk id., OHG joh, juh id.
+Etymologically related to Hitt i-ú-ga-an
+id., Skt yugá- id., Gk Juyóv id., Arm luc
+id. iugio-, Lat iugum id., W iau id., Lith
+jungas id. (with *-n- from the nasal infix
+of the verbal present), Slav *jбgo id.
+PEDERSEN Kelt. Gr. I 64, 98; MEILLET MSL
+VII 57; TORP-FALK 330; TRAUTMANN
+BSW 109; HOLTHAUSEN AEEW 141;
+WALDE-HOFMANN I 728-729; FEIST 304;
+POKORNY I 508; VRIES ANEW 417; MAYR-
+HOFER III 19; FRAENKEL 196; ZALIZNIAK
+I 142; FRISK I 615-616; ONIONS 1020;
+PUHVEL II 495–496; TrubachEV ESSJa
+VIII 206-208; LEHMANN GED 212;
+KLUGE-SEEBOLD 411.
+*jukkjanan wk.vb.: OE 3iccan 'to itch',
+OS jukkian id., OHG jucken id. Related
+to jeukenan. BARTHOLOMAE 1231–1232;
+HOLTHAUSEN AEEW 142; POKORNY I 512;
+ONIONS 488.
+*jukōjanan wk.vb.: ON oka 'to yoke', OE
+zeocian 'to preserve, to save'. Derived
+from *jukan. Cf. a structural similarity in
+Lat iugō id. WALDE-HOFMANN I 728;
+VRIES ANEW 418.
+207
+junzaz
+*jukōn sb.m.: Goth ga-juka ‘companion,
+yoke-fellow', ON oki 'cross-beam'. Iden-
+tical with Skt sam-yúj- joined through
+friendship or relationship', Lat con-iux
+'spouse'. Derived from *jukan. WALDE-
+HOFMANN I 261; FEIST 186-187; VRIES
+ANEW 418; LEHMANN GED 141.
+*jukuzjō sb.n.: Goth jukuzi ‘yoke' (with an
+unclear -u-), OE 3ýcer ‘acre'. Fem. *(ie)-
+jug-usi of a perfect participle from IE
+*eug- (BAMMESBERGER Language XLI
+416-419, Nom. 213). NOREEN IF IV 325
+(Goth -uz- <IE *-ues-); STREITBERG IF
+XIV 494; UNWERTH PBB XXXVI 20 (s-
+stem, cf. Gk (ɛûyoç ‘team', Lat iūgera
+'acre', Slav jugo 'yokе'); HOLTHAUSEN
+AEEW 142; FEIST 304; LEHMANN GED
+213.
+*jundō sb.f.: Goth junda 'youth'. Identical
+with Lat iuuenta id. < *iuuntā (BRUGMANN
+Grundriß II/1 418). TORP-FALK 331;
+WALDE-HOFMANN I 736; FEIST 304-305;
+CHEMODANOV SGGJa I 91; LEHMANN GED
+213; BAMMESBERGER Nom. 148.
+*junzalinzaz sb.m.: ON ynglingr 'young
+person', OE zeon3linz id., OFris jungeling
+id., OS jungling id., MHG jungeling id.
+Derived from *junzaz. ONIONS 1021;
+KLUGE-SEEBOLD 413.
+*junza-līkaz adj.: ON ung-ligr 'youthful',
+OHG jung-lih id. Derived from *junzaz.
+HEIDERMANNS 326.
+*junzaz adj.: Goth juggs 'young', ON ungr
+id., OE zeon3 id., OFris jung id., OS jung
+id., OHG jung id. Related to Skt yuvaśá-
+'youthful', Lat iuuencus 'youth', OIr óac
+'young', W ieuanc id. from *iuun-kó- fur-
+ther connected with *eu- 'young'. Cf.
+also Khwar yw'nk ‘young' < Iran *aiwā-
+nak (TEUBNER Gedenkschr. Güntert 302).
+TORP-FALK 331; WALDE-HOFMANN I
+735; FEIST 303–304; HOLTHAUSEN AEEW
+142; KLUGE 342-343; MAYRHOFER III
+23-24; PORZIG Festschr. Debrunner
+343-349; HOFFMANN MSS VI 39-40;
+POKORNY I 510-511; VRIES ANEW 635;
+EGGERS Festschr. Starck 62-81; ONIONS
+1021; Hamp KZ LXXXIV 1; LEHMANN
+GED 212; BAMMESBERGER Nom. 253;"		
+alignment47-yoke-fulk-acc	Fulk2018	57	74	1	1391	1397	"*joka"""	8e12ea91ae8ca5bf8a01c0792b30f4ac81cc5bca01acd4d7f4bf2b800dcbef3d	"§4.3 Lowering of short mid and high vowels 57
+the redistribution of the short mid and high vowels in Gothic, though the distribution of
+the two types there is so nearly perfectly regular (see §4.5) that a purely phonological
+explanation does seem more probable.
+It should be added that it has sometimes been argued that there was no asym-
+metry in the PGmc. short vowels, rather that e and i were allophones, just as o and u
+were (so Trager & Smith 1950: 67, 70; Marchand 1957a; see also Hock 1973). Beeler
+(1966) shows that this assumption creates problems for the analaysis of ON, since there
+e cannot have been raised before u in the next syllable (and thus it stood in phonemic
+constrast with i in that environment), given the facts of u-fracture (§4.8). For discussion
+and references to further studies pro and con, see Durie 1996, with further evidence
+against the merger.
+1. On the other hand, it would appear that lowering has not yet occurred in the divine name Hludana of
+Ubian dedicatory inscriptions of ca. 200 CE (Polomé 1994: 9). Ringe, with extensive discussion and copious
+examples in various grammatical classes, dates this lowering before the loss of WGmc. *-az, since it is
+common in a-stem nouns but not root-stems (Ringe & Taylor 2014: 27–34, at 29).
+2. The coöccurrence of forms with o and u is presumably due to alternation within the original paradigm,
+e.g. acc. sg. *joka"" beside gen. pl. *jukum.
+3. Kock (1898: 545) argues that this lowering of i is prevented in North Germanic when g or k immediately
+precedes the vowel, as in gin 'maw' and skip ‘ship'. It is also prevented when j or nasal + consonant inter-
+venes (§4.4).
+4. A rather probable example, however, is OE gewegan 'fight' (beside wīgan; cf. OIcel. vega), pp. forwegen
+'killed'. The voicing under Verner's law (cf. Go. weihan) suggests the PGmc. suffixal accent characteristic of
+aorist presents, hence PGmc. *wizana"" (Seebold 1966b: 3-4). Another possible example is ME steken 'pierce'
+(Seebold 1970: 467–8). On these, see Lloyd 1966: 743–4.
+5. Ringe (Ringe & Taylor 2014: 34–6) takes the position that this lowering is a Franconian change that
+spread northward irregularly in WGmc., and that in OFris. the change is unrelated, choosing to leave excep-
+tions like OE nest, wer unexplained. By contrast, Lloyd (1966) argues that an allophone [e] of /i/ arose occa-
+sionally in Gmc. on the basis of systemic analogy. Cercignani (1980b) explains the rarity of the change out-
+side of High German as due to avoidance of merger of /e/ with /i/; cf. Kylstra 1983.
+6. So, e.g., Streitberg 1896: §68; cf. Krahe & Meid 1969: I, §36; for further references, see Kock 1898: 544
+and Hirt 1931-4: I, §34.1.
+4.4
+Redistribution of the Proto-Germanic short mid and high vowels: raising
+PIE e > PGmc. i under at least two, possibly three, conditions: (a) before 7 or j in the
+next syllable; (b) before a tautosyllabic nasal consonant; (c) before u in the next
+syllable. The change represented by (c) is not now widely credited as a development of
+Proto-Germanic: see the discussion below. These changes cannot be illustrated in
+Gothic, since PGmc. e always yields i in that language (but is lowered again to e, or
+prevented from rising, before /r, x, xw/: §4.5). Examples:
+(a) PIE *uen-i-s > OIcel. vinr, OE wine, OS OHG wini 'friend' (cf. PIE *uen- in
+Lat. Venus); PIE *bher-e-ti > PGmc. *beriþi > *biriþi > OE birð, OS birid, OHG birit
+'bears'; PIE *meg-el- > PGmc. *mek-il- > *mikil-> OIcel. mikill, OE micel, OS mikil,
+OHG mihhil 'large' (cf. PIE *meg- in Lat. magnus 'large'); PIE *medh-io- > Lat.
+medius, OIcel. miðr, OE midd, OHG mitti 'middle'; PIE *sed-io-> OIcel. sitja, OE
+sittan, OS sittian, OHG sitzen 'sit'; PIE *uegh-io-> Skt. vahyá- 'vehicle', Olcel. vigg,
+OE wicg, OS wigg 'horse'.
+(b) PIE *(-)bhendh- in Avestan bandayaiti ‘binds', Gk. лɛvеɛрóç 'father-in-law'
+(*bound by marriage'), Lat. dēfendō ‘defend' (**release from bonds'), Go. OE OS"		
+alignment47-yoke-fulk-gen	Fulk2018	57	74	1	1414	1420	*jukum	8e12ea91ae8ca5bf8a01c0792b30f4ac81cc5bca01acd4d7f4bf2b800dcbef3d	"§4.3 Lowering of short mid and high vowels 57
+the redistribution of the short mid and high vowels in Gothic, though the distribution of
+the two types there is so nearly perfectly regular (see §4.5) that a purely phonological
+explanation does seem more probable.
+It should be added that it has sometimes been argued that there was no asym-
+metry in the PGmc. short vowels, rather that e and i were allophones, just as o and u
+were (so Trager & Smith 1950: 67, 70; Marchand 1957a; see also Hock 1973). Beeler
+(1966) shows that this assumption creates problems for the analaysis of ON, since there
+e cannot have been raised before u in the next syllable (and thus it stood in phonemic
+constrast with i in that environment), given the facts of u-fracture (§4.8). For discussion
+and references to further studies pro and con, see Durie 1996, with further evidence
+against the merger.
+1. On the other hand, it would appear that lowering has not yet occurred in the divine name Hludana of
+Ubian dedicatory inscriptions of ca. 200 CE (Polomé 1994: 9). Ringe, with extensive discussion and copious
+examples in various grammatical classes, dates this lowering before the loss of WGmc. *-az, since it is
+common in a-stem nouns but not root-stems (Ringe & Taylor 2014: 27–34, at 29).
+2. The coöccurrence of forms with o and u is presumably due to alternation within the original paradigm,
+e.g. acc. sg. *joka"" beside gen. pl. *jukum.
+3. Kock (1898: 545) argues that this lowering of i is prevented in North Germanic when g or k immediately
+precedes the vowel, as in gin 'maw' and skip ‘ship'. It is also prevented when j or nasal + consonant inter-
+venes (§4.4).
+4. A rather probable example, however, is OE gewegan 'fight' (beside wīgan; cf. OIcel. vega), pp. forwegen
+'killed'. The voicing under Verner's law (cf. Go. weihan) suggests the PGmc. suffixal accent characteristic of
+aorist presents, hence PGmc. *wizana"" (Seebold 1966b: 3-4). Another possible example is ME steken 'pierce'
+(Seebold 1970: 467–8). On these, see Lloyd 1966: 743–4.
+5. Ringe (Ringe & Taylor 2014: 34–6) takes the position that this lowering is a Franconian change that
+spread northward irregularly in WGmc., and that in OFris. the change is unrelated, choosing to leave excep-
+tions like OE nest, wer unexplained. By contrast, Lloyd (1966) argues that an allophone [e] of /i/ arose occa-
+sionally in Gmc. on the basis of systemic analogy. Cercignani (1980b) explains the rarity of the change out-
+side of High German as due to avoidance of merger of /e/ with /i/; cf. Kylstra 1983.
+6. So, e.g., Streitberg 1896: §68; cf. Krahe & Meid 1969: I, §36; for further references, see Kock 1898: 544
+and Hirt 1931-4: I, §34.1.
+4.4
+Redistribution of the Proto-Germanic short mid and high vowels: raising
+PIE e > PGmc. i under at least two, possibly three, conditions: (a) before 7 or j in the
+next syllable; (b) before a tautosyllabic nasal consonant; (c) before u in the next
+syllable. The change represented by (c) is not now widely credited as a development of
+Proto-Germanic: see the discussion below. These changes cannot be illustrated in
+Gothic, since PGmc. e always yields i in that language (but is lowered again to e, or
+prevented from rising, before /r, x, xw/: §4.5). Examples:
+(a) PIE *uen-i-s > OIcel. vinr, OE wine, OS OHG wini 'friend' (cf. PIE *uen- in
+Lat. Venus); PIE *bher-e-ti > PGmc. *beriþi > *biriþi > OE birð, OS birid, OHG birit
+'bears'; PIE *meg-el- > PGmc. *mek-il- > *mikil-> OIcel. mikill, OE micel, OS mikil,
+OHG mihhil 'large' (cf. PIE *meg- in Lat. magnus 'large'); PIE *medh-io- > Lat.
+medius, OIcel. miðr, OE midd, OHG mitti 'middle'; PIE *sed-io-> OIcel. sitja, OE
+sittan, OS sittian, OHG sitzen 'sit'; PIE *uegh-io-> Skt. vahyá- 'vehicle', Olcel. vigg,
+OE wicg, OS wigg 'horse'.
+(b) PIE *(-)bhendh- in Avestan bandayaiti ‘binds', Gk. лɛvеɛрóç 'father-in-law'
+(*bound by marriage'), Lat. dēfendō ‘defend' (**release from bonds'), Go. OE OS"		
+alignment47-youth-kroonen-native	Kroonen2013	276	316	1	1071	1082	*ju(w)unbi-	3cb1173f9c9c7aaaac7a0291dc186984bde6d9c850d49aa66e2cc051ca7e8e51	"276
+*jut
+(with the same agentive suffix as in Icel. hleypir m. 'rennet' < *hlaupja-), cf.
+ON kæsa w.v. 'to allow to ferment'.
+-
+*jut pron. 'you (du.)' — Go. obl. igqis pron. 'id.', ON it, obl. ykkr pron. ‘id.',
+Far. tit, obl. tykkum, tygum pron. 'id.', Elfd. ið pron. 'id.', OE git, obl. inc pron.
+'id.', OS git, obl. ink pron. 'id.' ⇒ *iud (IE) — Lith. jùdu, f. jùdvi 'you (du.]' <
+*iu-du- (the absence of Winter's law points to late univerbation).
+The dual pronoun of the second person. The original nominative was
+probably *jut in view of Lith. judu. This form is not attested in Gothic, how-
+ever, and NWGm. introduced *jit under the influence of *wit 'we two' (q.v.).
+The oblique case is to be reconstructed as *inke. It is entirely parallel to
+*unke 'us two', and is likely to have arisen analogically by the substitution of
+initial u by i on the basis of *iwe, the oblique form of *jūz (q.v.). Similarly,
+the dative *inkwiz, continued by Go. igqis, ON ykkr, adopted the element
+*-wiz that was abstracted from the parallel second person plural oblique
+form *izwiz.
+*ju(w)unbi- f. 'youth' - Go. junds* f. 'id.', OE geogoð f. 'id.', E youth, OS
+juguth f. 'id.', ODu. iugint f. 'id.', MDu. joghet f., Du. jeugd c. 'id.', OHG jugund f.
+'id.', G Jugend f. 'id.' *h₂iu-Hņ-ti- (IE) - Close to Lat. iuventus, -tūtis f.
+'youth', Olr. óetiu, óitiu, gen. -ted 'id.' < *h₂iu-Hn-tuH-t-.
+A ti-stem usually assumed to have been created to the PIE word for
+'young', i.e. *h2iu-Hōn, gen. *h₂iu-Hn-os, for which see *junga-. The West
+Germanic material points to a form *juwunþi- with regular velarization of
+the *w (cf. *su- 'sow' and *newun '9') between two high vowels (one of them
+being rounded). The w probably arose in hiatus position of a proto-form
+*juunbi-. Go.junds*, on the other hand, seems simply to have lost the hiatus.
+Note that the often cited Go. junda*, supposedly comparable to Lat. iūventa
+f. 'youth'), is a ghost form. The only attestation is the dat. jundai, which
+could belong to either an ō-stem junda* or an i-stem junds*. The latter pos-
+sibility is more likely, however, because of the other Germanic languages
+pointing to an old ti-stem.
+K
+*kabla/ōn- m./f. 'piece of wood' - ON kafli m. 'piece cut off, MDu. cavele
+m./f. 'stick, lot', Du. kavel c. 'lot, parcel', MHG kabel m./f. 'lot' ⇒ *gobh-l-on-
+(EUR)
+Lith. žabas m. ‘branch, cane' < * ģobh-o-."		
+alignment47-youth-kroonen-dative	Kroonen2013	276	316	1	1961	1967	jundai	3cb1173f9c9c7aaaac7a0291dc186984bde6d9c850d49aa66e2cc051ca7e8e51	"276
+*jut
+(with the same agentive suffix as in Icel. hleypir m. 'rennet' < *hlaupja-), cf.
+ON kæsa w.v. 'to allow to ferment'.
+-
+*jut pron. 'you (du.)' — Go. obl. igqis pron. 'id.', ON it, obl. ykkr pron. ‘id.',
+Far. tit, obl. tykkum, tygum pron. 'id.', Elfd. ið pron. 'id.', OE git, obl. inc pron.
+'id.', OS git, obl. ink pron. 'id.' ⇒ *iud (IE) — Lith. jùdu, f. jùdvi 'you (du.]' <
+*iu-du- (the absence of Winter's law points to late univerbation).
+The dual pronoun of the second person. The original nominative was
+probably *jut in view of Lith. judu. This form is not attested in Gothic, how-
+ever, and NWGm. introduced *jit under the influence of *wit 'we two' (q.v.).
+The oblique case is to be reconstructed as *inke. It is entirely parallel to
+*unke 'us two', and is likely to have arisen analogically by the substitution of
+initial u by i on the basis of *iwe, the oblique form of *jūz (q.v.). Similarly,
+the dative *inkwiz, continued by Go. igqis, ON ykkr, adopted the element
+*-wiz that was abstracted from the parallel second person plural oblique
+form *izwiz.
+*ju(w)unbi- f. 'youth' - Go. junds* f. 'id.', OE geogoð f. 'id.', E youth, OS
+juguth f. 'id.', ODu. iugint f. 'id.', MDu. joghet f., Du. jeugd c. 'id.', OHG jugund f.
+'id.', G Jugend f. 'id.' *h₂iu-Hņ-ti- (IE) - Close to Lat. iuventus, -tūtis f.
+'youth', Olr. óetiu, óitiu, gen. -ted 'id.' < *h₂iu-Hn-tuH-t-.
+A ti-stem usually assumed to have been created to the PIE word for
+'young', i.e. *h2iu-Hōn, gen. *h₂iu-Hn-os, for which see *junga-. The West
+Germanic material points to a form *juwunþi- with regular velarization of
+the *w (cf. *su- 'sow' and *newun '9') between two high vowels (one of them
+being rounded). The w probably arose in hiatus position of a proto-form
+*juunbi-. Go.junds*, on the other hand, seems simply to have lost the hiatus.
+Note that the often cited Go. junda*, supposedly comparable to Lat. iūventa
+f. 'youth'), is a ghost form. The only attestation is the dat. jundai, which
+could belong to either an ō-stem junda* or an i-stem junds*. The latter pos-
+sibility is more likely, however, because of the other Germanic languages
+pointing to an old ti-stem.
+K
+*kabla/ōn- m./f. 'piece of wood' - ON kafli m. 'piece cut off, MDu. cavele
+m./f. 'stick, lot', Du. kavel c. 'lot, parcel', MHG kabel m./f. 'lot' ⇒ *gobh-l-on-
+(EUR)
+Lith. žabas m. ‘branch, cane' < * ģobh-o-."		
+alignment47-youth-kroonen-ghost	Kroonen2013	276	316	1	1852	1858	junda*	3cb1173f9c9c7aaaac7a0291dc186984bde6d9c850d49aa66e2cc051ca7e8e51	"276
+*jut
+(with the same agentive suffix as in Icel. hleypir m. 'rennet' < *hlaupja-), cf.
+ON kæsa w.v. 'to allow to ferment'.
+-
+*jut pron. 'you (du.)' — Go. obl. igqis pron. 'id.', ON it, obl. ykkr pron. ‘id.',
+Far. tit, obl. tykkum, tygum pron. 'id.', Elfd. ið pron. 'id.', OE git, obl. inc pron.
+'id.', OS git, obl. ink pron. 'id.' ⇒ *iud (IE) — Lith. jùdu, f. jùdvi 'you (du.]' <
+*iu-du- (the absence of Winter's law points to late univerbation).
+The dual pronoun of the second person. The original nominative was
+probably *jut in view of Lith. judu. This form is not attested in Gothic, how-
+ever, and NWGm. introduced *jit under the influence of *wit 'we two' (q.v.).
+The oblique case is to be reconstructed as *inke. It is entirely parallel to
+*unke 'us two', and is likely to have arisen analogically by the substitution of
+initial u by i on the basis of *iwe, the oblique form of *jūz (q.v.). Similarly,
+the dative *inkwiz, continued by Go. igqis, ON ykkr, adopted the element
+*-wiz that was abstracted from the parallel second person plural oblique
+form *izwiz.
+*ju(w)unbi- f. 'youth' - Go. junds* f. 'id.', OE geogoð f. 'id.', E youth, OS
+juguth f. 'id.', ODu. iugint f. 'id.', MDu. joghet f., Du. jeugd c. 'id.', OHG jugund f.
+'id.', G Jugend f. 'id.' *h₂iu-Hņ-ti- (IE) - Close to Lat. iuventus, -tūtis f.
+'youth', Olr. óetiu, óitiu, gen. -ted 'id.' < *h₂iu-Hn-tuH-t-.
+A ti-stem usually assumed to have been created to the PIE word for
+'young', i.e. *h2iu-Hōn, gen. *h₂iu-Hn-os, for which see *junga-. The West
+Germanic material points to a form *juwunþi- with regular velarization of
+the *w (cf. *su- 'sow' and *newun '9') between two high vowels (one of them
+being rounded). The w probably arose in hiatus position of a proto-form
+*juunbi-. Go.junds*, on the other hand, seems simply to have lost the hiatus.
+Note that the often cited Go. junda*, supposedly comparable to Lat. iūventa
+f. 'youth'), is a ghost form. The only attestation is the dat. jundai, which
+could belong to either an ō-stem junda* or an i-stem junds*. The latter pos-
+sibility is more likely, however, because of the other Germanic languages
+pointing to an old ti-stem.
+K
+*kabla/ōn- m./f. 'piece of wood' - ON kafli m. 'piece cut off, MDu. cavele
+m./f. 'stick, lot', Du. kavel c. 'lot, parcel', MHG kabel m./f. 'lot' ⇒ *gobh-l-on-
+(EUR)
+Lith. žabas m. ‘branch, cane' < * ģobh-o-."		
+alignment47-youth-kroonen-young	Kroonen2013	274	314	1	2137	2144	*junga-	b98cc7df4175fa9ff2fe7321b3b5267d75edef1fbbd6d17da8ec3deeb845df63	"274
+*juka-
+=>
+*juka-n. 'yoke' - Go. juk n. 'id.', ON ok n. 'id.', Far. ok n. 'id.', Elfd. uok n. ‘id.',
+OE geoc n. 'id.', E yoke, OS juk n. ‘id.', Du. juk n. ‘id.', OHG joh n. ‘id.', G Joch n.
+'id.' ⇒ *iug-o- (IE) - Identical to Hitt. juka- n. 'yoke, pair', Skt. yugá- n. 'yoke,
+MP ywg 'id.', Gr. Zuyóv n. 'id.', Lat. iugum n. 'id.', OW iou 'id.', MW iau, yeu 'id.';
+also cf. Lith. jùngas, Latv. jûgs m. 'id.', OCS igo, Ru. ígo 'yoke', SCr. arch. igo n.
+'cross-beam' < *iu-n-g-o-.
+Also cf. Go. jukuzi f. 'yoke' < *iug-us-ih2- and MHG jiuch n. 'acreage' <
+*jeuka-. See further *jaukja-.
+*jukjan- w.v. 'to itch' - OE gyccan w.v. 'id.', E to itch, OS juk(k)ian w.v. 'id.',
+Du. jeuken w.v. 'id.', OHG jucken w.v. 'id.', G jucken w.v. 'id.' (GM?).
+A WGm. jan-verb 3sg. *jukjeþi, 3pl. *jukjanþi. The *j was lost before front
+vowels, which after WGm. j-gemination resulted in an allomorphic para-
+digm 3sg. *jukiþi, 3pl. *jukkjanpi. This allomorphy explains the difference
+between e.g. G jucken and Du. jeuken. Also cf. OE gycða m. 'itch', MDu. jucte,
+joocte f. 'id.', OHG jukido, MHG jukede m. 'scabies' < *jukipan-. No certain
+etymology. It is perhaps conceivable that the verb, which appears to have
+had an oblique subject (*mike jukjeþi 'I have an itch'), is related to *jukkōn-,
+cf. G Als., Pal. jucken 'to jerk'.
+*jukkōn-w.v. 'to hop; to run' - G dial. jucken w.v. Swab. 'to jump, hop', Pal.
+'to jerk, rock', Als. 'to jerk, jump up, turn away', Swab. 'to jump, run; to hop',
+Cimb. 'to throw; jump', Swi. (Rhntl.) 'to run fast', (Schfh.) jūkxə w.v. 'to hop'
+(GM?).
+Probably related to *jakk/gōn- (q.v.) 'to rush' in view of the semantics of
+e.g. G Pal. jacken w.v. 'to rock'. In the German dialects, the word has often
+merged with jucken 'to itch' < *jukjan-, but this may originally have been a
+different verb.
+-
+*jumja- m. 'divine twin(?)' ON Ymir m. 'primordial giant in Norse my-
+thology' ⇒ *imH-io- (IE) - Skt. yamá- m. 'twin; name of the mythical first
+man', OAv. yama- m. 'twin', Av. yima- (< *yǝma-) m. 'name of a mythical pri-
+meval king'; Olr. emon m. 'twin' < *i(e)mH-o-; Latv. jumis 'paired couple,
+double fruit' < *imH-io-.
+-
+*junga- adj. 'young' ― Go. juggs adj. 'id.', ON ungr adj. 'id.', Far. ungur adj.
+'id.', Elfd. ungg adj. 'id.', OE geong adj. 'id.', E young, OFri. jung adj. 'id.', OS
+jung adj. 'id.', Du. jong adj. 'id.', OHG jung adj. ‘id.', G jung adj. 'id.' ⇒
+*h₂iu-nk-ó- (IE) — Identical to Skt. yuvaśá- adj. 'young, youthful', m. 'youth';
+Lat. iuvencus m. 'young bull'; Olr. óac adj. 'young', W ieuanc 'id.', Bret.
+yaouank 'id.'.
+This adjective is commonly reconstructed as *h₂iu-Hn-ko-, i.e. a formation
+derived from PIE *h2oi-u- 'lifetime, age' (for which see *aiwa/ō- 1) with the"		
+alignment47-youth-orel-native	Orel2003	207	246	1	374	383	*juzunbiz	1df535ebe7d190b2d8bdde522de3e28142d76b44a53211fc0a1022cddd42bebd	"ju
+*ju adv.: Goth ju 'just now, already', OE
+3eó ""formerly, before', OS ju already',
+OHG jū id. Identical with Lith jaŭ id.,
+Latv jau id., Slav *ju id. KRETSCHMER
+KZ XXXI 466 (to IE *ieuen- ‘young');
+MEILLET MSL IX 52; TRAUTMANN BSW
+106; TORP-FALK 328; HOLTHAUSEN
+AEEW 141; FEIST 303; POKORNY I 285;
+FRAENKEL 190; STANG LS 25; TRUBACHEV
+ESSJa VIII 190-191; LEHMANN GED
+212.
+*juzunbiz sb.f.: OE zeózuð 'youth', OFris
+jogethe id., OS juguth id., OHG jugund id.
+Identical with Skt yuvatí- ‘young woman'
+< *iuunti-, with a taboo change of *-w- >
+*-3-. Related to junzaz. BRUGMANN
+Grundriß II/1 439 (*-w- > *-3- by anal-
+ogy with *duzunþiz > OE duguð, OHG
+tugund); TORP-FALK 331; HOLTHAUSEN
+AEEW 141; MAYRHOFER III 23; LEHMANN
+Phon. 48 (*3 < *Hu), GED 213; KLUGE-
+SEEBOLD 412-413.
+*jukan sb.n.: Goth juk ‘yoke', ON ok id.,
+OE 3eoc id., OS juk id., OHG joh, juh id.
+Etymologically related to Hitt i-ú-ga-an
+id., Skt yugá- id., Gk Juyóv id., Arm luc
+id. iugio-, Lat iugum id., W iau id., Lith
+jungas id. (with *-n- from the nasal infix
+of the verbal present), Slav *jбgo id.
+PEDERSEN Kelt. Gr. I 64, 98; MEILLET MSL
+VII 57; TORP-FALK 330; TRAUTMANN
+BSW 109; HOLTHAUSEN AEEW 141;
+WALDE-HOFMANN I 728-729; FEIST 304;
+POKORNY I 508; VRIES ANEW 417; MAYR-
+HOFER III 19; FRAENKEL 196; ZALIZNIAK
+I 142; FRISK I 615-616; ONIONS 1020;
+PUHVEL II 495–496; TrubachEV ESSJa
+VIII 206-208; LEHMANN GED 212;
+KLUGE-SEEBOLD 411.
+*jukkjanan wk.vb.: OE 3iccan 'to itch',
+OS jukkian id., OHG jucken id. Related
+to jeukenan. BARTHOLOMAE 1231–1232;
+HOLTHAUSEN AEEW 142; POKORNY I 512;
+ONIONS 488.
+*jukōjanan wk.vb.: ON oka 'to yoke', OE
+zeocian 'to preserve, to save'. Derived
+from *jukan. Cf. a structural similarity in
+Lat iugō id. WALDE-HOFMANN I 728;
+VRIES ANEW 418.
+207
+junzaz
+*jukōn sb.m.: Goth ga-juka ‘companion,
+yoke-fellow', ON oki 'cross-beam'. Iden-
+tical with Skt sam-yúj- joined through
+friendship or relationship', Lat con-iux
+'spouse'. Derived from *jukan. WALDE-
+HOFMANN I 261; FEIST 186-187; VRIES
+ANEW 418; LEHMANN GED 141.
+*jukuzjō sb.n.: Goth jukuzi ‘yoke' (with an
+unclear -u-), OE 3ýcer ‘acre'. Fem. *(ie)-
+jug-usi of a perfect participle from IE
+*eug- (BAMMESBERGER Language XLI
+416-419, Nom. 213). NOREEN IF IV 325
+(Goth -uz- <IE *-ues-); STREITBERG IF
+XIV 494; UNWERTH PBB XXXVI 20 (s-
+stem, cf. Gk (ɛûyoç ‘team', Lat iūgera
+'acre', Slav jugo 'yokе'); HOLTHAUSEN
+AEEW 142; FEIST 304; LEHMANN GED
+213.
+*jundō sb.f.: Goth junda 'youth'. Identical
+with Lat iuuenta id. < *iuuntā (BRUGMANN
+Grundriß II/1 418). TORP-FALK 331;
+WALDE-HOFMANN I 736; FEIST 304-305;
+CHEMODANOV SGGJa I 91; LEHMANN GED
+213; BAMMESBERGER Nom. 148.
+*junzalinzaz sb.m.: ON ynglingr 'young
+person', OE zeon3linz id., OFris jungeling
+id., OS jungling id., MHG jungeling id.
+Derived from *junzaz. ONIONS 1021;
+KLUGE-SEEBOLD 413.
+*junza-līkaz adj.: ON ung-ligr 'youthful',
+OHG jung-lih id. Derived from *junzaz.
+HEIDERMANNS 326.
+*junzaz adj.: Goth juggs 'young', ON ungr
+id., OE zeon3 id., OFris jung id., OS jung
+id., OHG jung id. Related to Skt yuvaśá-
+'youthful', Lat iuuencus 'youth', OIr óac
+'young', W ieuanc id. from *iuun-kó- fur-
+ther connected with *eu- 'young'. Cf.
+also Khwar yw'nk ‘young' < Iran *aiwā-
+nak (TEUBNER Gedenkschr. Güntert 302).
+TORP-FALK 331; WALDE-HOFMANN I
+735; FEIST 303–304; HOLTHAUSEN AEEW
+142; KLUGE 342-343; MAYRHOFER III
+23-24; PORZIG Festschr. Debrunner
+343-349; HOFFMANN MSS VI 39-40;
+POKORNY I 510-511; VRIES ANEW 635;
+EGGERS Festschr. Starck 62-81; ONIONS
+1021; Hamp KZ LXXXIV 1; LEHMANN
+GED 212; BAMMESBERGER Nom. 253;"		
+alignment47-youth-fulk-body	Fulk2018	92	109	1	2655	2663	*juzunb-	7d8111f2a8cc55421946841452a545c29db3c6af7f0db9b7004522b371ee885a	"92
+A Comparative Grammar of the Early Germanic Languages
+ization there is anaptyxis in the WGmc. languages: it is infrequent in OE (see Hogg
+1992: §§6.34–7); in OHG it occurs between a liquid and h (e.g. forahta, forohta beside
+forhta 'fright') and in some clusters containing w (e.g. garawēr beside garwēr 'ready':
+see Braune 2004a: §69); and in OS it is particularly common, occurring in a
+considerable variety of consonant combinations (see Holthausen 1921: §144). Unlike
+inherited vowels, such vowels are unstable.
+Although the change did not take place in the WGmc. protolanguage itself, the
+pattern of retention of unstressed high vowels after light syllables but not heavy is
+plainer in WGmc. than elsewhere, though OS and OHG obscure the original pattern
+more than OE through analogical change. 10 In Anglo-Frisian this syncope took place
+later than the application of i-umlaut (cf. OE giest, OFris. iest ‘guest') but before i-
+umlaut elsewhere in WGmc. (OS OHG gast). The change does not occur in a closed
+syllable, nor in a final syllable closed by a consonant, as this would result in unwieldy
+consonant clusters. Examples: PGmc. *winiz > WGmc. *wini > OE wine, OS OHG wini
+'friend'; PGmc. *brūðiz > OE bryd, OFris. brēd, OS brūd, OHG brūt ‘bride'; WGmc.
+*azisô"" > OE egesa, OS OHG egiso ‘fear'; PGmc. 3 sg. pret. *xauzidē > OE hierde, OS
+hōrda, OHG hōrta ‘heard', but PGmc. pp. *xauziðaz > WGmc. *xaurid(a) > OE hiered,
+OS-hōrid, OHG -hōrit; PGmc. *sunuz > OE OS sunu, OHG sun, sunu 'son'; PGmc.
+*xanduz > OE OS hand, OHG hant; WGmc. gen. pl. *eburô"" > OE eofora, OHG eburo
+'boar'; (Greek-derived) Lat. diabolus borrowed as *diubul- (see A. Campbell 1977:
+§492) > OE deofol, OS diubal, diubul, OHG tiufal, but OE dat. pl. deoflum, OS diublun,
+OHG tiuflun (Wessobrunn). Again, a sequence of light syllable plus another of any
+weight is equivalent to a heavy syllable (§2.5) in regard to this change, as in OE neut.
+pl. we(o)rod < *werudu, though there is much analogical leveling of alternants. An
+exception to the rule is that, at least in OE, although a medial high vowel in an open
+syllable might be expected to have been syncopated after a heavy syllable, it is instead
+preserved before the inflection -u, as in OE (Mercian) neut. nom./acc. pl. lytelu ‘little' <
+*lūtilō and nētenu ‘cattle' < *nēatinu < *nautīnō: see Fulk 2010b.
+Ingvaeonic and Anglo-Frisian. In general, in Ingvaeonic and Anglo-Frisian the
+same changes occurred medially as in stressed syllables. Thus, there is the NSGmc. loss
+of a nasal consonant before a voiceless fricative, with compensatory lengthening (and
+later shortening) of the preceding vowel (§4.11), as with *juzunb-> OE geogub, OFris.
+iogethe, OS jugud, but OHG jugund ‘youth' (cf. Lat. juvent- < *iuHnt-) and the 3 pl.
+pres. ind. inflection *-anþ(i) > OE -aþ, OFris. -at(h), -et(h), OS -að, but Go. -and, OHG
+-ant. As in stressed syllables, Anglo-Frisian a was nasalized before a nasal consonant
+(but only a tautosyllabic one if the vowel was unstressed), otherwise fronted to æ
+(§4.11, later e: see below), as in OE faran, OFris. fara ‘go' and acc. sg. OE naman,
+OFris. noma, but with fronting in OE masc. a-stem gen. sg. -es (early -æs), OFris. -es,
+and before heterosyllabic n in inflected forms of OE OFris. pp. faren- 'gone' <*faræn-
+< *faran-. The same change appears to have applied in OS, where the fronted vowel is
+variously spelt (a) and (e), as with the a-stem gen. sg. inflection -as, -es (Klein 1977:
+390–537). Front mutation is fully operative in unstressed syllables, as in *apalijaz >
+*apali > OE æðele, OFris. ethele, but OS adali; OE -ede in æpplede 'embossed' (cf.,
+e.g., OS hringodi 'ringed').
+Unaccented non-high vowels (that is, a, as well as short vowels derived from
+it-fronted æ, umlauted e, raised i before palatal consonants and e preserved before
+r), were lost in all medial open syllables in Anglo-Frisian, regardless of the weight of
+the preceding syllable, as in acc. sg. masc. OE OFris. gōdne 'good' < *-anō"" (cf. OS"		
+alignment47-yoke-ringe-nom	Ringe2017	312	323	3	189	193	juką	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-voc	Ringe2017	312	323	3	269	273	juką	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-acc	Ringe2017	312	323	3	349	353	juką	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-gen	Ringe2017	312	323	3	429	434	jukas	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-dat	Ringe2017	312	323	3	510	515	jukai	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-inst	Ringe2017	312	323	3	597	601	jukō	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-nompl	Ringe2017	312	323	3	686	690	jukō	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-accpl	Ringe2017	312	323	3	769	773	jukō	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-genpl	Ringe2017	312	323	3	850	855	jukǭ̄	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-datpl	Ringe2017	312	323	3	931	938	jukamaz	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		
+alignment47-yoke-ringe-instpl	Ringe2017	312	323	3	1014	1021	jukamiz	2ab521d888c48f443967ac7c9bffabccfab94d5a01f0b522b2c55ac3c87a1040	".. (ii) Sample noun paradigms
+              day (m.)     army (m.)        herdsman (m.) yoke (n.)        gift (f.)
+   singular
+   nom.       dagaz        harjaz           hirdijaz       juką            gebō
+   voc.       dag          hari (?)         hirdī (?)      juką            gebō
+   acc.       dagą         harją            hirdiją        juką            gebǭ
+   gen.       dagas        harjas           hirdijas       jukas           gebōz
+   dat.       dagai        harjai           hirdijai       jukai           gebō- i (?)
+   inst.      dagō         harjō            hirdijō        jukō            gebō
+  plural
+  n.-v.       dagōziz?         harjōziz?    hirdijōziz?    jukō            gebō- z
+  acc.        daganz           harjanz      hirdijanz      jukō            gebōz
+  gen.        dagǭ̄            harjǭ̄       hirdijǭ̄       jukǭ̄           gebǭ̄
+  dat.        dagamaz          harjamaz     hirdijamaz     jukamaz         gebōmaz
+  inst.       dagamiz          harjamiz     hirdijamiz     jukamiz         gebōmiz
+              fetter (f.)      guest (m.)   deed (f.)      son (m.)        livestock (n.)
+  singular
+  nom.        bandī            gastiz       dēdiz          sunuz           fehu
+  voc.        bandī            gastī?       dēdī?          sunau           fehu
+  acc.        bandijǭ          gastį        dēdį           sunų            fehu
+  gen.        bandijōz         gastīz       dēdīz          sunauz          fehauz
+  dat.        bandijō- i (?)   gastī        dēdī           suniwi          fehiwi
+  inst.       bandijō          gastī        dēdī           sunū            fehū
+  plural
+  n.-v.       bandijō- z       gastīz       dēdīz          suniwiz
+  acc.        bandijōz         gastinz      dēdinz         sununz
+  gen.        bandijǭ̄         gastijǭ̄     dēdijǭ̄        suniwǭ̄
+  dat.        bandijōmaz       gastimaz     dēdimaz        sunumaz
+  inst.       bandijōmiz       gastimiz     dēdimiz        sunumiz
+              human (m.)       name (n.)    eye (n.)       tongue (f.)     height (f.)
+  sg. nom.    gumō-            namō-        ???            ???             ???
+      acc.    gumanų           namō-        ???            tungōnų         hauhīnų
+      gen.    guminiz          naminiz      auginiz        tungōniz        hauhīniz
+      dat.    gumini           namini       augini         tungōni         hauhīni
+      inst.   ???              ???          ???            ???             ???"		

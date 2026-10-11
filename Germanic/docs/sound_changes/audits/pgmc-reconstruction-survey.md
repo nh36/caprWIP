@@ -8,7 +8,165 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
-## Forty-sixth alignment checkpoint: wind through word
+## Forty-seventh alignment checkpoint: world through make imperative
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Basecf9f1ed969dc153aba4ea3ddd19332286dc84227, branch update.
+Tranche46 is committed and pushed. Immutable47 preparation pins6392 forms,
+95 inherited analytical identities and135 research hashes. Do not recreate
+it or execute/import a candidate after persistence starts. Authorization
+covers47 research completion, not47 release,48 preparation, science or PDF.
+
+### Question
+
+Can all95 identities be reconciled without confusing world with its
+components, masculine worm with female/vermin derivatives, wring with
+an uncertain Nordic tear verb, yarn with intestine/fat, year citation
+with ancestral r/n cases, yoke's repeated case forms with spelling
+variants, youth with young, or a make infinitive with imperative2sg?
+Does a scoped source-supported difference supply a cause, or only
+independent warrants? The held bodies can confirm or refute each claim.
+
+### Current state
+
+Before edits:369 bounded/24 unreviewed;6392 forms,1395 consultations,
+6686 positions,490 cases and1158 rationales. World retains PROTO
+*wíra-àldiz* and input *wír-àldu*; youth retains selected *júgunθ*
+at pwgmc; make retains citation *makōną* and input *mákô* at pgmc.
+All selected corpus fields, scientific hashes and outside research
+are frozen. Shared dictionary make records also belong to outside2117.
+
+### Diagnosis
+
+New firing census, traces and counterfactuals: n/a, no executable change.
+All95 inherited identities are individually reconciled. Forty-four
+native literals and31 scoped processes add75 evidence records; four
+focused positions reuse evidence. Thirty-five rationales are all
+position_support. The174 tranche positions link170 records.
+Exact102 amendments comprise92 cell descriptions, three explicit dates
+and seven argument repairs. No consultation identity/status, target,
+source scope or applicability changes.
+
+World compound chains and youth noun chains are same-etymon evidence;
+make infinitives are other cells, not family-only evidence. The world
+process no longer treats sister's unexplained eo as world's historical
+cause [@RingeTaylor2014, pp.201-203,325-327,139-142,227-229].
+Repeated yoke strings retain separate table cells and occurrence
+coordinates, not multiple independent attested forms
+[@Ringe2017, p.312; @RingeTaylor2014, pp.114-115].
+
+### Literature
+
+Complete relevant held dictionary arguments and necessary cross-references:
+[@Kroonen2013, pp.20-21,168-169,273-276,350-351,411-412,588,594-597,600-601;
+@Orel2003, pp.13-14,126-127,206-208,257,462-463,467,472,476].
+Complete applicable grammar arguments, tables, qualifications and footnotes:
+[@Ringe2017, pp.96-98,100-102,118-120,311-313,316-318;
+@Fulk2018, pp.55-57,67-69,90-96,123-125,245-249,387;
+@RingeTaylor2014, pp.11-13,26-35,113-116,126-129,139-142,149-151,
+201-206,215-217,222-224,227-229,325-327,516-518].
+These readings supplement existing consultations, not a restarted
+whole-source extraction campaign. Reported originals remain reports,
+not independently acquired/certified sources.
+
+World's actual compound and components, yarn's semantic family,
+year's static ancestry, yoke's conditioned/levelled cells and youth's
+alternative velar warrants remain separately documented
+[@Kroonen2013, pp.20-21,169,273-276,588;
+@Orel2003, pp.13-14,127,207-208,462-463;
+@Fulk2018, pp.55-57; @RingeTaylor2014, pp.113-116,201-206,325-327].
+New native certification is text-checked. No image campaign is claimed.
+
+### Historical analysis
+
+Historical stage/scope: dictionary contexts and undated antecedents
+remain unspecified unless the actual passage asserts a date.
+Possible PGmc *weraz??* remains conditional with an explicit PGmc date;
+Kroonen's w-bearing youth precursor is explicitly WGmc; RT's
+OW-labelled make intermediate is OE. Neither uncertainty nor confidence
+sets the stage [@RingeTaylor2014, pp.34,228; @Kroonen2013, p.276].
+Fulk's year, yoke and youth examples are not dated by index headings,
+adjacent lexical examples or the appearance of their endings
+[@Fulk2018, pp.57,92,124,387].
+
+Wring's older h/root proposal depends on uncertain rjá admission;
+the full tear-verb cross-reference prevents unqualified endorsement.
+Its weak verb, adjective and snare family members do not supply the
+selected strong infinitive [@Kroonen2013, pp.411-412,594,596-597].
+The yoke focused case compares different cell/stage modelling warrants,
+not exclusive opposition: conditioned earlier u/o may coexist with
+an explicitly assumed levelled later paradigm
+[@Fulk2018, pp.55-57; @RingeTaylor2014, pp.26-35,113-116].
+Youth's regular versus taboo account is a substantive focused
+difference without a source-stated cause or named rebuttal
+[@Kroonen2013, p.276; @Orel2003, p.207].
+
+Historical phenomenon versus executable proxy: no new characterization.
+Chronology edges promoted: none. No date/domain derives from a network,
+output fit, grammatical category or confidence. Authors' analogy,
+taboo and dialect accounts are recorded without adopting lexical
+variability or grammatical sound-law conditioning
+[@Orel2003, p.207; @RingeTaylor2014, pp.113-116].
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+All eight core dispositions are bounded by precise remaining premises.
+Both new focused causes and all eight whole-row causes are unestablished.
+The existing make-origin-and-direction case/rationales remain unchanged,
+not duplicated or promoted to an imperative history
+[@Kroonen2013, pp.350-351; @Orel2003, p.257].
+Registry-verdict: n/a, no sound-change adjudication lands.
+
+### Propagation
+
+SOURCE: forms/coverage/analyses/comparisons/rationales, two exact receipts,
+README/commentary, this nine-heading audit and focused regressions.
+Validation and output serialization preceded one-use persistence.
+Current SOURCE/receipts/tests are authority, not the persisted candidate.
+Independent verification reverses exact amendments, checks native
+paragraph/hash/Unicode spans and all outside/shared make records,
+previous research hashes and46 ORIGINAL scientific hashes.
+Generated projections follow only `adjudicate.py --refresh`.
+Annotation-only work needs no Foma assay, full Germanic suite or PDF.
+
+Focused validation:524-test combined run in638.888s passes522; two stale
+assertions (amendment partition and world calibration classification)
+are corrected without changing SOURCE. The final three-test rerun passes
+both and the additional scoped query test in7.658s. All525 current
+focused tests are covered by passing results across the combined run
+and targeted reruns. A pre-existing unrelated ResourceWarning remains.
+Canonical refresh/freshness, bibliography, section locators,80 new-prose
+printed-page references, nine headings and whitespace pass.
+Independent post-refresh verification reverses102 fields, preserves6392
+old forms,6591 outside positions,482 cases,1158 old reasons,1365 outside
+consultations,128 research hashes and46 ORIGINAL scientific hashes;
+all44 native paragraph/hash/Unicode spans independently resolve.
+Current SOURCE and query record `files/pgmc-377-alignments-query-results.txt`
+are authority; the persisted candidate is never rerun or imported.
+
+### Residue
+
+Totals6467 forms,1395 consultations,6765 positions,492 comparisons and1193
+rationales;377 bounded/16 unreviewed. Dictionary records2441 retain all786
+dispositions. Independent alignment refusal remains separate from the
+unchanged RT convention/typography gap.
+Named gaps: exact world cell/date and shortening/lowering; worm
+root/formation admission; wring's uncertain Nordic allocation; yarn
+full-cell ancestry; year quantity/ancestral-case representation; yoke
+lowering/levelling chronology; youth hiatus/velar origin and selected
+ending loss; make's actual imperative ending/accent and PGmc date
+[@Kroonen2013, pp.20-21,169,273-276,350-351,411-412,588,596,600-601;
+@Orel2003, pp.127,206-208,257,462-463,472,476;
+@Ringe2017, pp.97,101,119,312,317;
+@Fulk2018, pp.57,92,124,248-249;
+@RingeTaylor2014, pp.34,114-115,141,150,202,205,216,228,326].
+Tranche47 remains uncommitted; no48 start, scientific adoption,
+introduction or PDF. The full393-row programme remains unfinished.
+
+## Forty-sixth alignment checkpoint: wind through word (releasedcf9f1ed9)
 
 ### Identity
 

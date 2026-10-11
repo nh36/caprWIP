@@ -6,7 +6,59 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-sixth alignment checkpoint
+## Forty-seventh alignment checkpoint
+
+Tranche46 is committed and pushed ascf9f1ed969dc153aba4ea3ddd19332286dc84227.
+Rows2302-2309 (world, worm, wring, yarn, year, yoke, youth and make
+imperative2sg) are individually reconciled. All95 inherited identities
+survive;44 native occurrences and31 scoped processes add75 records.
+Four focused positions reuse evidence;35 position-support rationales
+do not establish either focused cause or any whole-row cause.
+Exact102 SOURCE amendments comprise92 cells, three explicit dates and
+seven argument repairs. Shared make dictionary SOURCE and outside2117's
+positions, original focused case and rationales remain unchanged.
+
+World's full compound chains are distinguished from man/age components,
+old adjective and instrumental lifespan; sister's unexplained vowel
+does not make world's back umlaut unexplained
+[@Kroonen2013, pp.20-21,588; @Orel2003, pp.13-14,462-463;
+@RingeTaylor2014, pp.33-35,201-203,325-327].
+Yoke's individual PGmc and PWGmc cells remain distinct, including repeated
+identical strings; conditioned accusative/genitive vowels are not an
+exclusive objection to an explicitly assumed levelled later paradigm
+[@Ringe2017, pp.311-313; @Fulk2018, pp.55-57;
+@RingeTaylor2014, pp.26-35,113-116].
+Youth's regular versus taboo velar-origin warrants remain substantive
+but unexplained; its selected input stays pwgmc. Make infinitives are
+same-etymon other cells, not an authored imperative
+[@Kroonen2013, pp.274-276,350-351; @Orel2003, pp.207-208,257;
+@RingeTaylor2014, pp.126-128,139-142,227-229].
+
+Totals6467 forms,1395 consultations,6765 positions,492 comparisons and1193
+rationales;377 bounded/16 unreviewed core rows. The174 tranche positions
+link170 records;2441 dictionary records retain all786 dispositions.
+The page-cited commentary, nine-heading audit and
+`reading_accountability/alignment-2302-2309-*.tsv` receipts record the
+decisions. Current SOURCE/receipts/tests are authority; never recreate
+the immutable preparation or execute/import the persisted candidate.
+Tranche47 remains uncommitted. No48 preparation, scientific adoption,
+introduction or PDF is included; the full393-row programme remains open.
+
+The524-test focused run passes522, with two expectation-only failures:
+the exact amendment field partition and the older world component-only
+classification. Both assertions are corrected to current SOURCE; the
+three-test final rerun passes both plus the newly added deterministic
+scoped-case regression. Thus all525 current focused tests are covered
+by passing results across the combined run and targeted reruns.
+Canonical refresh/freshness, bibliography, locators,80 new-prose
+printed-page references, nine headings and whitespace pass.
+Independent verification reverses102 fields and preserves6392 old forms,
+6591 outside positions,482 unaffected cases,1158 old reasons,1365
+outside consultations,128 research hashes and46 ORIGINAL scientific
+hashes. All44 native paragraph/hash/Unicode spans resolve. Query record:
+session `files/pgmc-377-alignments-query-results.txt`.
+
+## Forty-sixth alignment checkpoint (releasedcf9f1ed9)
 
 Tranche45 is committed and pushed as476155782954a1246ef9bf56cecd9d57edd5b20b.
 Rows2294-2301 (wind verb, winter, withy, wold, wolf, wonder, wool and word)

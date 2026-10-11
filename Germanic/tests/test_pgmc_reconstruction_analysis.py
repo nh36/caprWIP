@@ -320,8 +320,12 @@ class LiveAnalyticalTests(unittest.TestCase):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "insufficient_evidence")
 
     def test_calibration_preserves_cells_components_and_rejected_positions(self):
-        for row_id in ("1983", "1996", "2302"):
+        for row_id in ("1983", "1996"):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "different_units")
+        self.assertEqual((self.cases["core-2302"]["comparability"],
+                          self.cases["core-2302"]["alignment_status"]),
+                         ("insufficient_evidence", "bounded_limit"))
+        self.assertIn("whole world chains are separate", self.cases["core-2302"]["alignment_limits"])
         self.assertEqual((self.cases["core-2254"]["comparability"],
                           self.cases["core-2254"]["alignment_status"]),
                          ("insufficient_evidence", "bounded_limit"))
@@ -627,7 +631,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t369\nunreviewed\t24\n")
+        """), "alignment_status\trows\nbounded_limit\t377\nunreviewed\t16\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -821,7 +825,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t369\nunreviewed\t24\n")
+        """), "alignment_status\trows\nbounded_limit\t377\nunreviewed\t16\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -1150,10 +1154,37 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row in map(str, range(2246, 2254)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
+    def test_forty_seventh_scoped_warrants_do_not_promote_causes(self):
+        projection = {
+            "forms": (survey.FORM_COLUMNS, self.forms),
+            **{name: (columns, self.tables[name]) for name, columns in analytical.TABLES.items()},
+        }
+        sql = """
+            SELECT comparison_id,comparability,explanation_status FROM comparisons
+            WHERE comparison_id IN (
+              'yoke-case-conditioned-lowering-warrants',
+              'youth-velar-origin-warrants','make-origin-and-direction')
+            ORDER BY comparison_id
+        """
+        expected = (
+            "comparison_id\tcomparability\texplanation_status\n"
+            "make-origin-and-direction\tsubstantive_difference\tanalyst_inference\n"
+            "yoke-case-conditioned-lowering-warrants\tdifferent_units\tunestablished\n"
+            "youth-velar-origin-warrants\tsubstantive_difference\tunestablished\n"
+        )
+        self.assertEqual(analytical.query(projection, sql), expected)
+        self.assertEqual(analytical.query(projection, sql), expected)
+        self.assertEqual(analytical.query(projection, """
+            SELECT count(*) AS reasons FROM rationales
+            WHERE rationale_id LIKE 'r47-%' AND reason_target='divergence_explanation'
+        """), "reasons\n0\n")
+        for row in map(str, range(2302, 2310)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2398)
+                             for form in self.forms), 2441)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
