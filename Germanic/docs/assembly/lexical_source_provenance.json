@@ -168,7 +168,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2330-thought-\u00fe\u014dhte.model.md": "b5dddd8e355118ac6791fbcb9d995a3e448e4420fb47963de7775a19c3778757",
     "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.model.md": "0aa4946f448bd1756cf35f8ba3a23ecc89f989684fc3a7f49b654ee29ada51a9",
     "Germanic/fsts/old_english_sandbox.txt": "f7f9462e3aba4bc15ecf7eab8d517763d792945449433cb45093d5a883d0f57f",
-    "Germanic/tools/artifact_graph.py": "dedb26ef8a981b1821226414f4ab5dce084bddb9f7ccc70aaa6af6692dcce780",
+    "Germanic/tools/artifact_graph.py": "4264ae5879c4374dcc81e605a5872ca8124dc3802cf29c7feb8c405b29fc195d",
     "Germanic/tools/compact_trace_report.py": "b5dbb5d467d0dabe7dc1ba4e55646dd3c33d4d0fb841bfa09f4cd11da8505707",
     "Germanic/tools/oe_derivation_class_trace_report.py": "dc3cc09015e0ac25638fe17b1697a3e05179a3d2e17d3408a98b3d1ee3041f65",
     "Germanic/tools/oe_full_trace_report.py": "168a8abdc6d4fc9388163acf888a36c18edbb1aa0a5dd80ae9298b1650e55cf8",

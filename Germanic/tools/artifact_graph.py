@@ -204,6 +204,15 @@ def _render_pgmc_reconstruction_survey() -> dict:
         raise SystemExit(f"PGmc reconstruction research SOURCE error: {exc}") from exc
 
 
+def _render_pgmc_lexical_integration() -> dict:
+    import pgmc_lexical_integration
+    try:
+        return pgmc_lexical_integration.render()
+    except (ValueError, OSError, pgmc_reconstruction_survey.SurveyError,
+            pgmc_reconstruction_survey.analytical.AnalysisError) as exc:
+        raise SystemExit(f"PGmc lexical integration SOURCE error: {exc}") from exc
+
+
 def _lexical_outputs() -> list:
     names = ("regular", "attested_variant", "early_analogy", "late_analogy",
              "reconstructed_oe", "known_unmodelled", "unexplained", "all_by_class")
@@ -506,6 +515,9 @@ def nodes() -> tuple:
                  "corpus + model entries + fresh bins via lexical builders",
                  _lexical_verify, _lexical_build,
                  lambda: _lexical_outputs() + [LEXICAL_PROVENANCE]),
+        _projection("pgmc_lexical_integration",
+                    "live populations + protected audit + provisional scoped editorial SOURCE",
+                    _render_pgmc_lexical_integration),
         _projection("book_draft",
                     "assembly sources via build_capr_book_draft",
                     _render_book_draft),
