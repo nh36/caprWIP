@@ -320,8 +320,12 @@ class LiveAnalyticalTests(unittest.TestCase):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "insufficient_evidence")
 
     def test_calibration_preserves_cells_components_and_rejected_positions(self):
-        for row_id in ("1983", "1996", "2254", "2302"):
+        for row_id in ("1983", "1996", "2302"):
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "different_units")
+        self.assertEqual((self.cases["core-2254"]["comparability"],
+                          self.cases["core-2254"]["alignment_status"]),
+                         ("insufficient_evidence", "bounded_limit"))
+        self.assertIn("contraction", self.cases["core-2254"]["alignment_limits"])
         self.assertEqual((self.cases["core-2119"]["comparability"],
                           self.cases["core-2119"]["alignment_status"]),
                          ("insufficient_evidence", "bounded_limit"))
@@ -623,7 +627,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t321\nunreviewed\t72\n")
+        """), "alignment_status\trows\nbounded_limit\t329\nunreviewed\t64\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -817,7 +821,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t321\nunreviewed\t72\n")
+        """), "alignment_status\trows\nbounded_limit\t329\nunreviewed\t64\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -909,6 +913,42 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row in map(str, range(2238, 2246)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
+    def test_forty_first_queries_keep_cells_scopes_and_causes_independent(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,explanation_status FROM comparisons
+            WHERE comparison_id IN
+                ('three-genitive-warrants','three-ohg-genitive-warrants','tongs-tang-allocation')
+            ORDER BY comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\n"
+                    "three-genitive-warrants\tunestablished\n"
+                    "three-ohg-genitive-warrants\tunestablished\n"
+                    "tongs-tang-allocation\tunestablished\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS records
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2254 AND 2261
+        """), "positions\trecords\n200\t194\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,stage_interpretation,stage_basis FROM analyses
+            WHERE row_id='2255' AND evidence_id='rt-complete-2255-003'
+        """), "evidence_id\tstage_interpretation\tstage_basis\n"
+              "rt-complete-2255-003\tunspecified\tunknown\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT diplomatic_form,count(*) AS cells FROM forms
+            WHERE evidence_id LIKE 'alignment41-three-fulk-%' AND diplomatic_form='drīo'
+            GROUP BY diplomatic_form
+        """), "diplomatic_form\tcells\ndrīo\t3\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS reasons,count(DISTINCT reason_target) AS targets
+            FROM rationales WHERE rationale_id LIKE 'r41-%'
+        """), "reasons\ttargets\n35\t1\n")
+        for row in map(str, range(2254, 2262)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_fortieth_queries_keep_local_dates_cells_and_causes_independent(self):
         tables = {"forms": (survey.FORM_COLUMNS, self.forms),
                   **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
@@ -947,7 +987,7 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2179)
+                             for form in self.forms), 2229)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

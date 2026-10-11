@@ -137,6 +137,60 @@ none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
 
+The forty-first tranche completes three, thunder, tick, tide, timber,
+toe, token and tongs. All93 inherited identities are individually
+reconciled;72 native occurrences and29 scoped processes add101 records.
+Six focused positions reuse evidence, so200 positions link194 records.
+Exact89 SOURCE fields cover87 owned cell descriptions and two explicit
+local stages. All786 dictionary identities/statuses remain, with2229
+dictionary records. One actual Fulk thunder discussion_only consultation
+and finite target have six reversible scope/applicability owner fields;
+the initial relevance screen remains history
+[@Fulk2018, pp.120-122].
+
+Current totals are6025 forms,1395 consultations,6300 positions,
+481 comparisons and992 rationales;329 bounded core rows and64
+unreviewed. The three focused genitive/allocation causes and all
+eight whole-row causes remain unestablished. Three's inherited
+genitive-jj versus probable Norse analogy question is independent
+of Fulk's expected OHG genitive versus Ringe-Taylor's apparently
+reformed genitive. Repeated table forms retain different gender/
+case occurrences, not one deduplicated assertion
+[@Kroonen2013, pp.546-547; @Fulk2018, pp.117-120,223-225;
+@RingeTaylor2014, pp.120-122].
+
+Thunder's P(NW) scope does not become certain PGmc; tick's ticia
+emendations are not certified unique OE attestations. Tide's native
+suffix-accented quotation and explicitly PGmc time comparandum,
+timber's undated inserted-b intermediate, toe's twig homonym and
+token's Gothic feminine formation remain distinct. Tongs/tang
+root allocation is substantive but unexplained
+[@RingeTaylor2014, pp.31-33,327-332; @Kroonen2013, pp.505-506,509,515-518;
+@Fulk2018, pp.252-254; @Orel2003, pp.400-401].
+
+The first serialization stopped after `forms.tsv` because the new
+coverage record contained an unsupported extra field. The candidate
+was not rerun or imported. A separate bounded recovery used the
+written SOURCE, frozen preimages and literal syntax data, then
+pre-serialized every remaining output before writing. Independent
+current-SOURCE verification reverses all89 field amendments and
+six owner amendments, preserving outside research and all46
+ORIGINAL scientific hashes. The exact native receipt layer retains
+paragraph hashes and whole-token Unicode spans. Corpus/input/stage/
+context/FST/baselines, introduction and PDF remain unchanged.
+
+Canonical refresh and independent artifact checks report CONTROL
+PLANE CLEAN. The466-test focused run passes464; two inherited
+three wording/triage expectations are corrected without changing
+SOURCE for a checker. All14 selected new/corrected regressions then
+pass; no all466 rerun is claimed. All69 new-prose printed-page
+references, bibliography, section locators, nine audit headings and
+whitespace pass. Independent verification preserves6100 outside
+positions,470 unaffected comparisons,957 inherited rationales,
+1394 consultation identities/statuses,1368 outside consultations,
+110 untouched research hashes and46 ORIGINAL scientific hashes.
+Tranche41 is complete and uncommitted;42 is not prepared.
+
 The fortieth tranche completes thief, thing, think, thirst, thistle,
 thorn, thousand and thrash. All57 inherited identities are individually
 reconciled. Forty-one native occurrences and27 scoped processes add68

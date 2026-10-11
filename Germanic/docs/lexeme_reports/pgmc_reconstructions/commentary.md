@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-193 Ringe,146 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5924 evidence
-records,1394 actual consultations,6193 positions,478 comparisons and957
+193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains6025 evidence
+records,1395 actual consultations,6300 positions,481 comparisons and992
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:321 core rows are bounded and72 unreviewed.
+explanation remain ongoing:329 core rows are bounded and64 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,242 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Forty-first alignment: three through tongs, with numeral warrants and native cells
+
+Three2254, thunder2255, tick2256, tide2257, timber2258, toe2259,
+token2260 and tongs2261 now have individual reconciliations of all93
+inherited analytical identities. Seventy-two whole-token native occurrences
+and29 scoped processes add101 records; six focused positions reuse
+process evidence, yielding200 positions linked194 distinct records.
+The89 reversible SOURCE fields comprise87 individually owned cell
+descriptions and two explicit local stages. Source-wide shared method
+records are not rewritten for this numeral. All786 dictionary identities
+and statuses remain, with2229 dictionary records. One actual Fulk
+thunder consultation/target has six reversible scope/applicability
+fields. The new consultation is discussion_only: an OE attestation and
+process, not a reconstructed thunder word.
+
+The three focused cases separate inherited genitive gemination,
+OHG genitive formation and tongs/tang lexical allocation. Their causes
+remain unestablished, as do all eight whole-row causes. This is a
+complete bounded review of these rows, not a complete historical
+genealogy, scientific adoption or final393-row synthesis.
+
+### Three: contraction does not recover every gender and case
+
+Orel's e-bearing cardinal and the selected *θréjez retain a question
+that cannot be answered by replacing e with i. His entry compares
+the older *trei-es formation; it does not quote the selected OE
+adjective ending or independently date the contraction. Kroonen
+distinguishes the short citation stem, contracted nominative,
+accusative, feminine, neuter, genitive and dative, and supplies a
+separate Pre-Germanic paradigm. His native *pri-, *priz, prins and
+*þriō remain beside the already certified quotations: missing macrons,
+p/thorn and h2/h₂ are not silently normalized
+[@Orel2003, pp.424-425; @Kroonen2013, pp.546-547].
+
+Ringe's chain from *tréyes through *þréjes, *þrejiz and *þrijiz
+to *þrīz makes the raising date indirectly probable rather than
+certain. The unattested Gothic nominative and isolated Norse forms
+belong to the argument's limitations. The adjacent j-loss framework
+distinguishes loss between i vowels from retention before other
+back vowels; it is not a numeral-specific rule selected for output
+fit. Neighboring disputed stative analyses cannot be inserted into
+the numeral's pedigree. His later PGmc table separates nominative,
+accusative, neuter, genitive, dative and instrumental; native genitive
+þrijǭ̄ preserves its combining macron. The source-transcription layer
+is not constrained by Foma's executable symbol alphabet
+[@Ringe2017, pp.151-158,318-320].
+
+Fulk explicitly derives an expected PGmc *þri(j)iz and says the
+OE and OS equivalents add adjective endings. His table supplies
+actual OE *þrīe* 'three', not merely a quoted PGmc ancestor with
+an inferred OE suffix. Native OE accusative brie, neuter/feminine
+prēo, genitive prēora and dative prim are retained as distinct
+occurrences. Gothic and Old Icelandic comparisons keep their own
+cells. In particular, three identical OHG drīo occurrences mean
+feminine nominative, feminine accusative and genitive: they cannot
+be deduplicated into a single paradigmatic assertion
+[@Fulk2018, pp.223-225].
+
+Two focused questions follow, not one blanket gemination controversy.
+Kroonen reconstructs genitive jj. Fulk instead judges Old Icelandic
+*þriggja* probably analogical to 'two', while reporting that some
+scholars consider it etymological. His broader Verschärfung argument
+discusses competing accent, laryngeal and morphological premises
+and favors a West Germanic diphthong-plus-glide account; it does not
+uniquely settle this numeral's genitive. Separately, Fulk calls OHG
+genitive drīo the expected counterpart of Gothic prijē, whereas
+Ringe-Taylor calls it apparently reformed to the masculine
+nominative/accusative. These are identifiable different warrants,
+not a directly named rebuttal or a recovered complete paradigm
+[@Kroonen2013, p.547; @Fulk2018, pp.117-120,224;
+@RingeTaylor2014, pp.120-122].
+
+The probable PWGmc table, later OE adjective endings and inherited
+OHG dri versus late drie remain separate. Four on printed121 is
+a PWGmc numeral-inflection comparandum, not an ancestor of three;
+two on printed388 is explicitly PWGmc and likewise comparative.
+Those two SOURCE-stage repairs follow local labels, not confidence.
+The unchanged selected e-input remains on the non-adopting
+contraction/cell/remodeling watchlist
+[@RingeTaylor2014, pp.120-122,387-389,514-516].
+
+### Thunder: ambiguous earlier vowel and later epenthesis
+
+Orel separates masculine thunder, its weak verbal derivative and
+the divine name. Comparative ton/moan connections do not establish
+the exact selected accent or pre-r vowel. Kroonen's inherited
+bounded negative survives: the weather/thunder lead in a different
+root family is not a recovered quotation of this etymon
+[@Orel2003, pp.428-429; @Kroonen2013, pp.542-543].
+
+Ringe-Taylor's optional *bun(a)raz preserves an actual dilemma:
+the Norse outcome requires no pre-r vowel, whereas the OHG lowering
+requires a vowel. One branch innovated; if the continental vowel
+was inserted, the insertion must be early enough for lowering.
+The later thunder passage explicitly has P(NW) scope, then PWGmc
+and OE cluster histories. Its earlier stage is not silently made
+certain PGmc. The native pbunraz, punr and punor quotations retain
+their actual extraction glyphs and separate occurrences
+[@RingeTaylor2014, pp.31-33,327-332].
+
+Fulk's printed122 note4 actually mentions OE *þunor* 'thunder'.
+This is a missed topical consultation, now recorded, not a newly
+reconstructed b-bearing thunder form. His transitional-consonant
+discussion and later comparison cannot date the selected input.
+The initial relevance screen remains reversible history; the actual
+reading earns one finite target rather than retrospective fabricated
+grammar negatives for unrelated rows
+[@Fulk2018, pp.120-122].
+
+### Tick: a rejected root is not an unambiguous OE reading
+
+Orel's insect noun has ME tyke among its reflexes, not a direct
+OE ticca quotation; the neighboring imitative tick/nudge verb
+is not the insect's ancestral cell. Kroonen rejects the usual
+*d(e)ig- root under the prohibition on two voiced unaspirated stops,
+and prefers *deigh- using Armenian tiz and a voiced dialectal
+comparison. Older *tīgō/*tikkaz and analogical short/long k stems
+must retain their different nominative/genitive and quantity
+premises. The root rejection is a substantive author argument,
+but Orel supplies no explicit opposed root position that would
+license a manufactured inter-author dispute
+[@Orel2003, pp.406-407; @Kroonen2013, pp.515-517].
+
+The OE gloss is ticia. The reported emendations *tiica and *ticca
+are two possible readings, not two independently verified
+attestations or an automatic certification of selected *ticca*
+'tick'. Neither the root argument nor successful production output
+resolves that attestation question. The young-goat/ticcen formation
+remains a different etymon
+[@Kroonen2013, pp.515-517].
+
+### Tide: the nominal suffix and its accent are independent axes
+
+The long-ī feminine time noun, ti formation and related adjective/
+verb are not equivalent citation units. Orel's age/day comparisons
+and questioned brightness connection differ from Kroonen's
+division/allotment and striving account, without automatically
+forming exclusive root alternatives. The source's suffix-accented
+*dh2i-tí- does not establish the selected root-accent notation
+[@Orel2003, pp.406-407; @Kroonen2013, pp.516-517].
+
+Fulk's non-finite verbal-noun discussion expressly labels both
+*tī-mon- and *tī-ðá- PGmc. The former is a time-family comparison,
+not a tide ending; the latter's unexpected native suffix and accent
+remain beside the inherited quotation. It is not silently repaired
+to ti or presented as a strong-verb principal part. Exact suffix
+genealogy, source typography and full selected ending remain
+distinct open premises. PROTO/PROTOFORM accent encodings are unchanged
+[@Fulk2018, pp.252-254].
+
+### Timber: inserted b cannot inherit the date of the noun
+
+Orel's *temran and *dem-ro- comparison connect timber with fitting/
+building while reporting doubt about the original semantic identity.
+Kroonen's *timbra- and *dem(H)-ro- retain a different consonantal
+presentation and optional laryngeal; his e-grade denominal verb
+is not a noun ending. Ringe's heavy-root *timrijaną is explicitly
+a PGmc build verb illustrating Sievers's law, not a b-bearing
+timber noun
+[@Orel2003, pp.404-405; @Kroonen2013, p.517;
+@Ringe2017, pp.249-250].
+
+Fulk says mr may develop to mbr and gives actual build-verb
+variants, including Gothic timbrjan beside usual timrjan and OE
+timbran. Ringe-Taylor explicitly distinguishes PGmc *timra,
+PWGmc *timr, undated later *timbr and OE *timber* 'timber'.
+Ending loss, consonant insertion and later vowel epenthesis
+cannot be collapsed into a single dated PGmc law. Heaven's
+separate branch discussion and the later thunder note do not
+repair that inference. The selected *tímbrą input still has its
+unchanged pgmc metadata; this research records the discrepancy
+without adopting a stage or input migration
+[@Fulk2018, pp.14-16,120-122; @RingeTaylor2014, pp.326-332].
+
+### Toe: pointing, optional glides and the twig homonym
+
+Kroonen's hw/w alternatives, possible athematic *dóik-uh₂/
+*dik-uéh₂-s paradigm, possible zero grade and disfavored long-i
+proposal remain differently qualified. None quotes the exact
+selected w-less full input with its accent. Orel's *taixwō(n)
+and probable verb connection retain their own velar/glide notation.
+The actual pointing-verb antecedent *déik-e- is receipted from
+printed517; a clipped *tihan- header is not manufactured by
+weakening the whole-token boundary guard
+[@Kroonen2013, pp.505-506,517; @Orel2003, pp.398-399,406-407].
+
+The twig citation *taina- is a comparandum: the author explains
+loss of its n through conflation with toe, not loss of n in every
+toe form. Ringe-Taylor's PNWGmc, PWGmc and early Mercian tahe
+before contraction are likewise different stages and witnesses,
+not one assembled PGmc selected word
+[@Kroonen2013, p.506; @RingeTaylor2014, pp.170-172,313-315].
+
+### Token: repair the formation's gender, not its history
+
+Kroonen distinguishes the neuter sign noun from the Gothic
+feminine *taik-ni-* omen/miracle formation. The inherited neuter
+annotation on that latter cell is corrected, with an exact
+receipt. Optional root gemination, the separately dated
+Pre-Germanic iterative cells and qualified causative/dissimilation
+discussion remain family evidence; they do not establish a
+complete noun-specific gemination conditioner
+[@Kroonen2013, pp.505-506].
+
+Orel calls the noun a phonetically irregular derivative of the
+show verb. Native *tixanan on printed399 is retained rather
+than silently acquiring the certified macron from another
+occurrence. Ringe-Taylor separates PGmc ending loss, PWGmc
+sonorant persistence and later tacn/tacen epenthesis. Native
+*taikng is not repaired to the selected nasal-vowel ending;
+likely syllabicity is not proof that the early meter counted
+another syllable. Unequal explanatory detail is not a sufficient
+reason to create another focused opposition
+[@Orel2003, pp.398-399,406-407; @RingeTaylor2014, pp.47-49,330-332].
+
+### Tongs: lexical allocation precedes consonantal equivalence
+
+Orel calls tang/blade historically identical with tongs and links
+the fasten/tie verb. Kroonen instead derives tongs from the
+press/throng *donk- family while allocating blade *tangan- to
+*dongh-on- and the tongue connection. The actual *tingan- entry
+and its qualified nasal-less-verb discussion are read rather
+than supplying an invented noun-specific law. Different English
+uses of tang and superficially similar Germanic forms do not
+prove the same etymon or a purely notational consonant difference
+[@Orel2003, pp.400-401; @Kroonen2013, pp.508-510,518].
+
+This is a focused substantive allocation question, with a named
+missing premise: the comparative and semantic warrant for one
+historical identity versus two root allocations. Neither that
+warrant nor the selected accent/ending is established here.
+The35 new reasons support source positions; they do not promote
+any focused or whole-row cause. The remaining64 unreviewed rows,
+source-backed conditioning census, consistency synthesis and
+ranked specialist agenda remain unfinished.
 
 ## Fortieth alignment: thief through thrash, with independent formations and dates
 

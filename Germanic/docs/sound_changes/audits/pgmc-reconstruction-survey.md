@@ -8,6 +8,172 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Forty-first alignment checkpoint: three through tongs
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base48cbb83144a0bdf4e63ac5af08e7fae6707ce292 on update;40 is committed
+and pushed. The user authorizes completing41, not releasing41,
+starting42 or adopting science. Rows2254-2261 are three, thunder,
+tick, tide, timber, toe, token and tongs. Immutable preparation
+pins5924 forms,93 inherited identities and120 research hashes.
+Never recreate preparation or execute/import a persisted candidate.
+
+### Question
+
+Can every inherited identity be reconciled without conflating numeral
+gender/case, genitive gemination versus remodeling, thunder's earlier
+vowel versus later epenthesis, tick's etymology versus OE gloss reading,
+tide's accent versus suffix, timber's noun versus build verb or inserted
+b date, toe versus twig, token's formation gender or tongs/tang lexical
+allocation? Exact source cells, full arguments and reversible receipts,
+not output-fit selection or review counts, test these propositions.
+
+### Current state
+
+Previously321 bounded/72 unreviewed core rows;5924 forms,1394
+consultations,6193 positions,478 comparisons and957 rationales.
+All eight selected inputs have pgmc metadata. Three retains e before
+j; timber's citation lacks the selected input's b. These scientific
+owners and the ORIGINAL46 protections remain unchanged. Existing
+Kroonen thunder's bounded negative is not reopened as a new positive.
+
+### Diagnosis
+
+Executable census, new traces, private variants and counterfactuals:
+n/a; no rule/input/chronology change. All93 inherited identities
+survive individual reconciliation. Seventy-two native occurrences
+and29 scoped processes add101 records; six focused positions reuse
+evidence, so200 positions link194 records. The89 exact SOURCE fields
+are87 owned cells and two explicit local stages. Shared source-wide
+method records are not overwritten for one row. One actual missed
+Fulk thunder consultation/target has six scope/applicability fields.
+Its attestation/process evidence does not hide a reconstructed word.
+
+The candidate's first write serialized only forms before the coverage
+serializer rejected an unsupported extra field. No candidate rerun or
+import occurred. A separate bounded recovery read the written SOURCE,
+frozen preimages and literal syntax data, validated the complete tables
+and pre-serialized all remaining outputs before writing them. The
+independent verifier neither imports nor executes either write script;
+the SOURCE and exact old/new receipts are the persistent authority.
+
+### Literature
+
+Complete relevant held arguments, tables, footnotes, neighboring pages
+and necessary cross-references are read. Dictionary blocks:
+[@Orel2003, pp.398-401,404-409,424-425,428-429;
+@Kroonen2013, pp.505-506,508-510,515-518,542-543,546-547].
+Grammar blocks: [@Ringe2017, pp.151-158,249-250,318-320;
+@Fulk2018, pp.14-16,116-122,223-225,252-254;
+@RingeTaylor2014, pp.31-33,47-49,105-106,120-122,170-172,219-221,313-315,326-332,387-389,514-516].
+
+Three's contraction supports an indirectly probable raising date,
+not a unique full selected cell. Different genitive warrants are
+separately compared: reconstructed jj versus probable Norse analogy;
+expected OHG counterpart versus apparently remodeled genitive
+[@Ringe2017, pp.151-158; @Kroonen2013, pp.546-547;
+@Fulk2018, pp.117-120,224; @RingeTaylor2014, pp.120-122].
+Thunder's optional earlier vowel and later cluster histories differ;
+Fulk122 note4 supplies an actual OE attestation
+[@RingeTaylor2014, pp.31-33,327-332; @Fulk2018, pp.120-122].
+Tick's rejected unaspirated root and supported aspirated connection
+do not certify one OE gloss emendation
+[@Orel2003, pp.406-407; @Kroonen2013, pp.515-517].
+Tide's nominal suffix and stress, timber's noun/verb and b chronology,
+toe's optional hw/w and twig comparandum, and token's Gothic feminine
+formation require independent identities
+[@Fulk2018, pp.252-254; @Orel2003, pp.398-399,404-407;
+@Kroonen2013, pp.505-506,516-517; @Ringe2017, pp.249-250;
+@RingeTaylor2014, pp.326-332].
+Tongs/tang allocation has an actual historical-identity versus
+different-root question, not an automatic spelling equivalence
+[@Orel2003, pp.400-401; @Kroonen2013, pp.508-510,518].
+
+### Historical analysis
+
+Stage, scope, confidence and verification stay independent. Four121
+and two388 are locally PWGmc comparanda, not three ancestors.
+Thunder's P(NW) ambiguity retains unspecified/unknown analytical
+stage basis, not a fabricated definite PGmc label. Fulk explicitly
+labels the time mon-formation PGmc; it remains a family comparison,
+not tide's selected suffix
+[@RingeTaylor2014, pp.120-122,327-328,387-389;
+@Fulk2018, pp.252-254].
+
+Native missing quantities, p/b/thorn, h2/h₂ and the combining macron
+remain distinct from prior certification. Three identical OHG drīo
+table occurrences have separate feminine nominative, feminine
+accusative and genitive receipts; OE prēo likewise retains separate
+gender/case occurrences
+[@Fulk2018, p.224; @Ringe2017, p.319; @Kroonen2013, pp.546-547].
+The actual pointing-verb root is receipted rather than clipping an
+adjacent part-of-speech header. Orel's native short-i show-verb
+cross-reference is not silently changed to the separately certified
+quantity [@Kroonen2013, p.517; @Orel2003, p.399].
+
+Timber's PGmc mr, PWGmc mr and undated later mbr cannot date the
+selected preencoded b. Reported tick emendations cannot become
+certified attestations; source theories are recorded without
+adopting grammatical sound-law conditioning or lexical diffusion
+[@RingeTaylor2014, pp.326-332; @Kroonen2013, pp.515-517].
+Historical edges: none adopted. Successful output does not select history.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+No registry verdict: this is not an SC adjudication. All eight
+whole-row alignments are bounded with unestablished causes.
+Three's two genitive questions and the tongs allocation question
+retain substantive differences without manufactured exclusivity,
+named rebuttal or cause promotion. All35 new reasons are position
+support. No corpus/input/stage/context/FST/baseline adoption or PDF.
+
+### Propagation
+
+SOURCE, exact amendment/occurrence/owner receipts, page-cited
+commentary/README, this nine-heading audit and eleven source-sensitive
+regressions are persisted. The eleven new regressions pass. Independent
+current-SOURCE verification preserves5924 inherited forms except89
+exact fields,6100 outside positions,470 unaffected comparisons,
+957 inherited rationales,1394 consultation identities/statuses and
+1368 outside consultations. Reversing six owner fields and removing
+only the new Fulk thunder target reconstructs frozen owner hashes.
+All110 untouched research hashes and46 ORIGINAL scientific hashes
+survive. All72 native paragraph/hash/whole-token spans resolve.
+Deterministic queries reproduce329 bounded/64 unreviewed rows,
+three unestablished focused causes, position-only reasons and
+separate alignment/RT-conventions gate refusals.
+
+Canonical refresh and independent artifact checks report CONTROL
+PLANE CLEAN without a scientific rebuild. The466-test focused run
+passes464; two inherited expectations refer to the old three
+wording and citation-triage disposition. They are corrected to the
+actual source-backed ending description and bounded feature review,
+without rewriting SOURCE to satisfy a checker. All14 selected
+new/corrected tests then pass. This is not an all466 rerun.
+
+All69 new-prose printed-page references, nine headings, bibliography,
+section locators and whitespace checks pass. Independent post-refresh
+verification reconfirms the preserved outside research, exact owner
+reversal and all46 ORIGINAL scientific hashes. Query evidence:
+`pgmc-three-hundred-twenty-nine-alignments-query-results.txt` in the
+session files. Tranche41 is complete and uncommitted; no42 preparation
+or scientific adoption is included.
+
+### Residue
+
+Precise open premises are recorded for every row: numeral inherited
+genitive versus remodeling and full selected cell; thunder's earlier
+vowel and branch chronology; tick's OE emendation; tide's nominal
+suffix/stress; timber's b date and semantic derivation; toe's hw/w
+and selected ending; token's exact formation/gemination premises;
+tongs/tang comparative allocation. The remaining64 rows, full
+source-backed conditioning census, consistency synthesis and ranked
+specialist agenda remain unfinished. No41 release,42 preparation,
+scientific adoption or new publication is performed.
+
 ## Fortieth alignment checkpoint: thief through thrash
 
 ### Identity
