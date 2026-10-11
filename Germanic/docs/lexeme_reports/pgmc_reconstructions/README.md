@@ -6,7 +6,53 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-fourth alignment checkpoint
+## Forty-fifth alignment checkpoint
+
+Tranche44 is committed and pushed as6c956e61733608d23851e97e1cbe6a4fb1971fa6.
+Rows2286-2293 (whine, whore, widow, wield, wife, wight, will verb and
+will noun) are individually reconciled. All92 inherited analytical
+identities survive;48 native occurrences and29 scoped processes add77
+records. Five focused positions reuse evidence;34 rationales are
+position_support, not manufactured explanations of divergence.
+Exact102 SOURCE amendments comprise91 cells,10 local dates and one
+argument. A shared verbal optative keeps distinct verb/nominal relations;
+there is no consultation/status/target/scope change.
+
+Want's qualified primary-aorist ancestry versus weak-dental formation
+and Anglian *walde*'s regular phonology versus choose-conflation warrants
+are substantive focused questions. Fulk permits mixture as an alternative,
+so these are not exclusive accounts or a named Kroonen rebuttal
+[@Kroonen2013, p.578; @Ringe2017, pp.219,294;
+@Fulk2018, pp.328-330; @RingeTaylor2014, pp.73-75,371-372].
+Both focused causes and all eight whole-row causes remain unestablished.
+Fulk's explicitly PGmc *wixtiz* is glossed 'weight': its local date
+does not establish selected 'being' identity [@Fulk2018, pp.71,389].
+
+Totals6323 forms,1395 consultations,6615 positions,489 comparisons and1123
+rationales;361 bounded/32 unreviewed core rows. The174 tranche positions
+link168 records; all786 dictionary dispositions survive with2362 records.
+Native paragraph/hash/Unicode spans retain starless paradigm cells and
+uncertainty beside certified quotations, without new image certification
+[@Ringe2017, pp.121,294]. See the substantial commentary, full-nine-heading
+survey audit and the two `reading_accountability/alignment-2286-2293-*.tsv`
+receipts. Current SOURCE/receipts are authority: never rerun/import the
+persisted candidate or recreate immutable preparation.
+
+Tranche45 remains uncommitted. No45 release,46 preparation, scientific
+adoption or PDF is included; all46 ORIGINAL scientific protections and
+outside research remain unchanged. The full393 alignment, class census
+and explanatory closeout remain unfinished.
+
+All506 focused survey/analysis tests pass. Canonical refresh and freshness
+checks are clean; bibliography, section locators,64 new-prose printed-page
+references, all nine audit headings and whitespace pass. Independent
+post-refresh verification reverses102 SOURCE fields and preserves6246
+inherited records,6441 outside positions,479 unaffected comparisons,1089
+old rationales,1366 outside consultations,124 untouched research hashes
+and46 ORIGINAL scientific hashes. All48 distinct native spans resolve.
+The independent alignment gate refuses32, separately from RT conventions.
+
+## Forty-fourth alignment checkpoint (released6c956e61)
 
 Tranche43 is committed and pushed as7109ebd2. Rows2278-2285 (weapon,
 weasel, weather, weave, west, wether, whale and while) are now individually

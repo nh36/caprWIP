@@ -10,15 +10,282 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6246 evidence
-records,1395 actual consultations,6533 positions,487 comparisons and1089
+393 applicability screens per source. The database contains6323 evidence
+records,1395 actual consultations,6615 positions,489 comparisons and1123
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:353 core rows are bounded and40 unreviewed.
+explanation remain ongoing:361 core rows are bounded and32 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
-## Forty-fourth alignment: weapon through while
+## Forty-fifth alignment: whine through the two wills
+
+Tranche44 is released as6c956e61. This annotation-only increment reconciles
+all92 inherited identities for rows2286-2293, retaining distinct attribution,
+lexical relation, cell and date. Forty-eight native occurrences and29
+scoped processes add77 evidence records. Five focused positions reuse
+arguments;34 rationales support positions without claiming a cause of
+inter-author divergence. The174 positions link168 records, not174
+independent readings or author votes. Exact102 SOURCE amendments comprise
+91 cells,10 local dates and one substantive argument. One shared optative
+record explains the difference between92 analytical identities and91
+SOURCE cell amendments. All1395 consultation identities/statuses and786
+dictionary dispositions survive.
+
+The native receipts preserve actual paragraphs, hashes and whole-token
+Unicode coordinates. Their starless table forms, corrupted extracted
+vowels and mixed laryngeal typography are not replacements for earlier
+certified quotations. Repeated forms have separate occurrence coordinates;
+uncertain endings remain uncertain. This is text certification, not a new
+image campaign or independent consultation of reported originals
+[@Ringe2017, pp.121,294; @Fulk2018, pp.329-330;
+@Kroonen2013, pp.578-579]. Corpus citations/inputs, stages, contexts, laws,
+scientific baselines and publication owners remain unchanged.
+
+### Whine: the strong nasal verb is not its derivatives
+
+Kroonen's strong nasal whine/whistle belongs to a probable onomatopoeic
+formation. His native header lacks the quantity mark retained in the
+certified quotation; that difference is receipted, not normalized away.
+The causative *-hwainjan-* leads to the separately mentioned vex/trouble
+verb, while *hwijōn-* and its whinny variants lack the nasal. Their
+expressive similarities and uncertain relationship cannot make them
+alternative cells of one strong paradigm. The reconstructed
+*kwéi-n-e-* comparison describes proposed ancestry, not the selected
+whole infinitive [@Kroonen2013, pp.266-267].
+
+Orel likewise calls the family imitative, distinguishing nasal whine
+from explicitly attributed Norse and High German squeal formations.
+The native *xwinanan* occurrence survives beside the certified long-vowel
+reading. Neither the imitative characterization nor another language's
+verb licenses replacing the selected etymon [@Orel2003, p.201].
+Ringe-Taylor distinguishes a strong PNWGmc infinitive from the certainly
+deverbative PWGmc *hwinison*. The latter produces *hwinsian*, whereas
+the former is represented by *hwinan*: two related verbs, not two
+infinitive spellings of one paradigm [@RingeTaylor2014, pp.129-131].
+
+The unchanged PROTO *wainōjaną* versus input *xwḯnaną* therefore remains
+a non-adopting citation/identity watchlist question. The readings support
+the nasal strong family and its derivatives; they do not certify the
+selected accented full-word serialization or choose a replacement.
+
+### Whore: gender and formation precede etymological comparison
+
+The feminine *hōrōn-* has a *hōrjōn-* variant supported by the High German
+reflex. The Low German short-grade comparison is less secure; Kroonen's
+possible *harjōn-* invokes theoretical pretonic shortening from
+*keh₂r-iéh₂-*. A qualified formation alternative is not an established
+second paradigm. The masculine adulterer and neuter adultery entries
+belong to the family but are not feminine citation cells; the neuter
+is independently connected with an adultery verb
+[@Kroonen2013, pp.239-240].
+
+Orel explicitly derives the female noun from masculine *xōraz*.
+Desire/love comparanda thus support that base rather than proving a
+selected female ending. His bibliography reports Machek's Slavic-loan
+proposal and Martynov's following it; it does not turn the entry into
+Orel's adopted borrowing verdict [@Orel2003, p.182].
+Dictionary-only scope is sufficient for this bounded review. No three
+invented grammar negatives are added, and exact historical formation
+remains open rather than decided by the number of citations.
+
+### Widow: actual paradigms, explicit remodeling and dialectal outcomes
+
+Kroonen's feminine optional-w on-stem rests on an explicit PIE
+set-apart/widowed formation. The proposed univerbation resembles that
+of 'wide', while a connection with 'wood' is qualified. Neither comparison
+is another widow cell. The orphan derivative has its own suffix, and
+the explicitly PGmc masculine widower is a separate gender/formation,
+not a female oblique inferred from the shared root
+[@Kroonen2013, pp.584-585]. Orel's external kinship cognates and native
+d-bearing *widuwōn* remain independently attributable beside the
+certified barred-dental citation [@Orel2003, p.462].
+
+Ringe gives actual PIE *h1widhéwh2* and alternating *h1widhwáh2-*,
+then PGmc *widuwōn-*. His >! marks remodeling as well as inherited
+phonological development. Both PIE cells receive their own native
+receipts; the alternating stem is not expanded into a fabricated
+full oblique word, and the resulting n-stem is not presented as a
+sound-law-only derivation [@Ringe2017, p.121].
+
+Ringe-Taylor uses widow first as a light-syllable non-syncope example,
+then independently in the combinative/back-umlaut discussion. The
+PGmc and PWGmc labels are local statements; the intervening *widuwe*
+at the earlier occurrence remains undated. WS *wuduwe* beside *widuwe*,
+Mercian *widwe* and Northumbrian *widua* are dialectal citation outcomes,
+not automatically distinct case endings
+[@RingeTaylor2014, pp.270,322-323]. The author permits incomplete
+development or subdialect differences in the wider evidence; this is
+reported accurately, not adopted as lexical variability in CAPR's
+exceptionless laws. It does not settle selected stress or every ending.
+
+### Wield: strong present, preterite and weak derived control
+
+Kroonen treats the o-grade present as probably backformed to the
+preterite formation. The latter is another cell of the same etymon,
+not a merely similar family word. Norse *olla* continues a primary
+aorist, whose native laryngeal notation is preserved rather than
+harmonized with neighboring formulas. He prefers dental attachment
+within Germanic to a direct Baltic secondary-suffix genealogy, and
+allows Balto-Slavic borrowing without claiming it proved
+[@Kroonen2013, p.569].
+
+Orel's strong verbal citation and Baltic/Slavic comparisons preserve
+their own connection and reported borrowing proposals
+[@Orel2003, p.443]. Ringe-Taylor's pre-OE and Anglian weak 'control'
+verb belongs to the derived family. It cannot be substituted for the
+strong *wealdan* selected here, even though the paragraph explicitly
+names the strong PGmc base. Its retraction and mutation arguments
+support the derived example, not a unique full ancestry for the
+selected accented infinitive [@RingeTaylor2014, pp.231-232].
+
+### Wife: unknown origin does not mean unknown lexical identity
+
+The wife header is the selected etymon, correcting the inherited
+family-only analytical relation. Kroonen states that its etymology
+is unclear; the proposed veiled-woman/wrap and Tocharian shame/modesty
+connections require semantic developments. These qualifications concern
+ancestry, not whether the header denotes wife. Native *wiba-* and
+certified long-ī notation remain separate
+[@Kroonen2013, p.584]. Orel's native *wiban* and multiple reported
+proposals likewise do not establish one preferred genealogy
+[@Orel2003, pp.464-465].
+
+Ringe-Taylor's *wibu* 'women' is a PWGmc neuter nom.-acc. plural:
+final-u loss and devoicing produce the plural *wif*. Identical
+singular/plural spelling does not turn this history into the selected
+singular cell. The charter's extreme archaism or morphological spelling
+remains an alternative interpretation. A later comparison uses wife's
+singular/plural identity to explain remodeling of another noun;
+it does not select a uniquely singular occurrence
+[@RingeTaylor2014, pp.297,378]. The corpus's two acute encodings remain
+unchanged; no Unicode cleanup is treated as a scientific decision.
+
+### Wight: secure date and unresolved identity are different axes
+
+Kroonen distinguishes being/thing from weight. The former is a
+Germanic-Slavic isogloss, with the act/time comparison conditional;
+the latter is a ti-stem from 'weigh'. The Faroese miserable-creature
+ja derivative belongs to being's family, while prefixed weight
+formations are not interchangeable with it
+[@Kroonen2013, p.578]. Orel also separates the two homonyms.
+Bammesberger's combination is a bibliographical report, not automatic
+permission to merge their evidence [@Orel2003, pp.452-453].
+
+Fulk's body explicitly labels *wixtiz* PGmc and glosses the Norse chain
+'weight'. That local stage statement repairs the inherited unknown date
+without supplying the missing selected-being bridge. The starless
+index remains starless, and a newly receipted body occurrence retains
+its actual gloss. Secure dating does not make uncertain lexical
+identity certain [@Fulk2018, pp.70-71,389].
+By contrast, Ringe-Taylor's explicit 'thing' chain supplies PGmc
+*wihtiz*, PWGmc *wihti*, an undated broken intermediate, pre-WS
+*wiehti* and early WS *wiht*. The last pre-WS label supports the
+narrow date repair; spelling alone does not prove every phonetic
+step. Probable monophthongization before palatal raising and the
+back-vowel blocker are attributed proposals, not adopted new laws
+[@RingeTaylor2014, pp.336-337].
+
+### Will verb: preserve the paradigm before comparing histories
+
+Kroonen's infinitive comes from the subjunctive conjugation. His actual
+first-singular word and second/third-singular suffix shorthands are
+distinct records; no complete words are fabricated from the latter.
+The explicit PIE optative cells are ancestral same-etymon evidence.
+The probable IE present/middle and the primary-aorist past account
+retain their qualifications; an IE label alone does not supply a new
+PIE analytical date. The past 'appears' to continue the primary
+aorist, rather than establishing an unconditional complete genealogy
+[@Kroonen2013, p.578].
+
+Ringe's PGmc optative stem has indicative/subjunctive syncretism,
+possibly fossilized politeness. His full paradigm supplies separate
+starless first/second/third singular, two dual and three plural words.
+The uncertain first-singular ending and second-dual (?) survive;
+no third-dual word is invented. The thematic infinitive and participle
+are constructed to that paradigm, and the weak past is *wel-d-* or
+*wel-d- ~ wel-dēd-*. The explicit local PGmc paragraph dates the
+inherited infinitive without using the book title
+[@Ringe2017, pp.219,294].
+
+Fulk's complete table and discussion distinguish actual OE cells
+from reconstructed ancestry. A weak dental past without connecting
+vowel could be early, or modeled late in PGmc on preterite-presents.
+Reported Bammesberger perfect alternatives are not Fulk's endorsement:
+an existing perfect would make adding a weak suffix peculiar, while
+apparent ablaut is difficult without such a premise. His reservations
+about necessary *wal-/*wul-* reconstructions are not categorical
+rejection of every alternative [@Fulk2018, pp.328-330].
+
+The focused past-formation case therefore compares qualified
+primary-aorist ancestry, weak-dental formation and Fulk's explicit
+reservations. The warrants are substantive; their overlap and missing
+ancestral bridges prevent a settled cause. Fulk is not represented
+as naming and directly rebutting Kroonen
+[@Kroonen2013, p.578; @Ringe2017, p.294; @Fulk2018, pp.329-330].
+
+### Anglian walde: nonexclusive alternatives, not a forced opposition
+
+Ringe-Taylor proposes want/choose conflation for Anglian *walde*;
+the original want past is *weldé/*welde*, while WS *wolde* is
+remodeled on 'should'. Local joint PWGmc labels govern the actual
+infinitive, phonetic representation, third singular and past cells;
+separate later repetitions are not dated by a distant title
+[@RingeTaylor2014, pp.73-75,371-372].
+
+Fulk allows regular development between a labial and covered l/r for
+Anglian *walde*. He also considers unstressed unrounding for *nelle*,
+subjunctive lowering and rhyming attraction for *wolde*. Crucially,
+his footnote permits mixture with PGmc 'choose' as another alternative:
+it would be false to manufacture an exclusive phonology-versus-mixture
+dispute. The focused case records differing emphasis/warrants but
+leaves the cause unestablished [@Fulk2018, pp.329-330].
+
+The first-singular discussion does not license reassigning every nearby
+fragment to wanting: the u/z contract endings concern 'go'. The
+footnote's *willio* probably belongs to a separate weak-II 'desire'
+verb, whereas actual *wille* illustrates wanting's mood syncretism.
+Second-singular remodeling, original *wille* versus conditional
+*willu*, and later spellings remain separate premises
+[@RingeTaylor2014, pp.355,371-372]. Authors' analogy is reported,
+not imported as grammatical conditioning in CAPR's sound laws.
+
+### Will noun: shared verbal evidence remains family evidence
+
+Kroonen prefers a masculine Germanic jan-stem derived from wanting.
+Swedish feminine *vilja* is an actual reflex comparison; the conditional
+OCS proterodynamic proposal is reported from Kortlandt. Native
+*ihr-stem* typography is preserved in the process account rather
+than fabricated into a Germanic feminine whole word
+[@Kroonen2013, pp.578-579]. Orel's masculine weak noun and neuter
+self-will formation remain distinct [@Orel2003, p.453].
+Ringe's shared verbal optative and Ringe-Taylor's wanting infinitive
+support the noun's family, not its own paradigm or selected ending
+[@Ringe2017, p.219; @RingeTaylor2014, p.52].
+
+Fulk's OHG *willeo* 'volition' is an attested nominal spelling example
+in the j discussion. It does not supply a reconstructed PGmc noun,
+so the existing discussion_only disposition remains. Hypothetical
+companion spellings are not will ancestry [@Fulk2018, p.128].
+
+This tranche reaches361 bounded core rows and leaves32 unreviewed.
+All eight whole-row causes and both focused causes remain unestablished.
+The remaining work includes exact selected formations, class census,
+aggregate synthesis and specialist dispatch; an eight-row closeout
+does not complete that programme. Tranche45 stays uncommitted, with
+no46 preparation, scientific adoption or new publication.
+
+All506 focused survey/analysis tests pass. Canonical refresh and independent
+freshness checking are clean. Bibliography, section locators,64 new-prose
+printed-page references, all nine audit headings and whitespace pass.
+The new independent verifier reconstructs6246 inherited forms by reversing
+102 exact fields, preserves6441 outside positions,479 unaffected cases,
+1089 old rationales,1366 outside consultations,124 untouched research hashes
+and46 ORIGINAL scientific hashes. All48 distinct native paragraph/hash/spans
+resolve. Deterministic queries reproduce361/32 and the two unestablished
+focused causes; the separate RT conventions refusal remains unchanged.
+
+## Forty-fourth alignment: weapon through while (released6c956e61)
 
 Tranche43 is released as7109ebd2. This annotation-only increment reconciles
 all56 inherited identities for rows2278-2285;41 native occurrences and23

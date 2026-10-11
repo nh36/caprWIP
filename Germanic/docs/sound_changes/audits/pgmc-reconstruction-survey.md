@@ -8,7 +8,128 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
-## Forty-fourth alignment checkpoint: weapon through while
+## Forty-fifth alignment checkpoint: whine through the two wills
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base6c956e61733608d23851e97e1cbe6a4fb1971fa6 on update; Tranche44 is
+committed/pushed. Authorized45 completion excludes45 release,46 preparation,
+scientific adoption and publication. Immutable preparation pins6246 forms,
+92 inherited identities and131 research hashes. Never recreate it or
+execute/import a candidate whose persistence has started.
+
+### Question
+
+Can each identity be reconciled without merging strong whine with its
+derivatives, female whore with male base, widow with widower, wield with
+derived control, wife singular with women plural, being with weight, or
+wanting with choosing and nominal will? Do differing past/Anglian warrants
+really establish an inter-author cause, or merely nonexclusive alternatives?
+Identity, attribution, cell and date are falsifiable independent assertions.
+
+### Current state
+
+Before edits:353 bounded/40 unreviewed rows;6246 forms,1395 consultations,
+6533 positions,487 comparisons and1089 rationales. All eight input stages
+are pgmc. Whine retains distinct PROTO *wainōjaną* and input *xwḯnaną*;
+wife retains distinct acute encodings. All scientific owners are protected.
+Previously completed source readings are not restarted as an extraction quota.
+
+### Diagnosis
+
+Executable census, new traces and counterfactuals: n/a. This research changes
+no law, input or output. All92 inherited analytical identities survive.
+Forty-eight native occurrences and29 scoped processes add77 records;
+five focused positions reuse evidence and34 rationales support positions.
+The174 positions link168 records. Exact102 SOURCE amendments comprise91
+cells,10 local dates and one argument; the shared verbal optative has two
+row-local analyses and one SOURCE cell. No review identity/status, target,
+scope or applicability owner changes.
+
+Ringe's actual PGmc wanting paragraph and RT's locally governed PWGmc
+underlying/cell labels justify narrow date repairs
+[@Ringe2017, p.294; @RingeTaylor2014, pp.52,74].
+Fulk's explicit PGmc weight body dates the indexed representation without
+establishing selected-being identity; RT's pre-WS label independently dates
+its intermediate [@Fulk2018, pp.71,389; @RingeTaylor2014, p.337].
+
+### Literature
+
+Complete relevant dictionary arguments and necessary cross-references:
+[@Kroonen2013, pp.239-241,266-268,568-570,577-579,583-586;
+@Orel2003, pp.181-183,200-202,442-444,452-454,461-466].
+Complete relevant grammar bodies, tables, footnotes and cross-references:
+[@Ringe2017, pp.120-122,218-220,293-295;
+@Fulk2018, pp.70-72,127-129,327-331,389;
+@RingeTaylor2014, pp.51-53,73-75,129-131,231-233,269-271,296-298,
+321-323,336-338,354-356,370-372,377-379].
+Native text receipts are not new image certification. Reported Bammesberger
+and Kortlandt arguments are held authors' reports, not separately read originals
+[@Fulk2018, pp.329-330; @Kroonen2013, pp.578-579].
+
+### Historical analysis
+
+Stage/scope: explicit PGmc/PWGmc statements, actual PIE widow cells,
+later OE/dialect outcomes and unspecified local intermediates remain
+separate. Confidence neither derives nor gates stage
+[@Ringe2017, pp.121,294; @RingeTaylor2014, pp.74,270,322,337].
+The Fulk weight identity gap remains despite a secure local PGmc date
+[@Fulk2018, p.71].
+
+Historical phenomenon versus executable proxy: no new law characterization.
+Want's probable primary aorist, weak dental formation and alternative
+Anglian developments are attributed histories, not selected new rules
+[@Kroonen2013, p.578; @Ringe2017, p.294; @Fulk2018, pp.329-330;
+@RingeTaylor2014, pp.74-75,372]. Fulk's possible choose mixture prevents
+a false exclusive opposition. Chronology edges promoted: none.
+No historical stage is inferred from an FST prefix or environment.
+Authors' analogy and dialectal alternatives are recorded without adopting
+grammatical sound-law conditioning or lexical diffusion in CAPR.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+All eight core alignments are bounded by named missing premises.
+Both focused comparisons are substantive but their causes remain
+unestablished; all eight whole-row causes are also unestablished.
+Nothing in focused position support certifies a whole-word genealogy.
+Scientific adoption remains outside this verdict.
+
+### Propagation
+
+Editable SOURCE: forms/coverage/analyses/comparisons/rationales TSVs,
+two exact reading-accountability receipts, commentary, README and this audit.
+Validation and pre-serialization preceded single persistence.
+Never rerun/import the persisted candidate: current SOURCE and receipts
+are authority. A new independent verifier reverses all102 SOURCE fields,
+checks all outside research/old receipts and46 ORIGINAL scientific hashes,
+and resolves all48 native paragraphs/coordinates without importing it.
+Generated projections follow only `adjudicate.py --refresh`.
+Focused regressions protect identity/date/cell/attribution and deterministic
+query shapes; full Foma assays, full Germanic suite and PDF are unnecessary.
+All506 focused tests pass. Canonical refresh/freshness, bibliography, section
+locators,64 new-prose printed-page references, nine headings and whitespace
+pass. Post-refresh verification preserves6246 inherited forms through exact
+102-field reversal,6441 outside positions,479 unaffected cases,1089 old
+rationales,1366 outside consultations,124 untouched research hashes and46
+ORIGINAL scientific hashes. All48 distinct native spans resolve.
+
+### Residue
+
+Totals6323 forms,1395 consultations,6615 positions,489 comparisons and1123
+rationales;361 bounded/32 unreviewed rows. All786 dictionary dispositions
+survive with2362 records. Alignment still refuses32, separately from
+the unchanged RT convention/typography limit. Exact whine citation,
+widow paradigm/ending, wield dental ancestry, wife origin, being/weight
+bridge, want past/Anglian warrants and nominal will formation remain
+bounded questions, documented in the page-cited commentary
+[@Kroonen2013, pp.267,569,578-579,584-585; @Orel2003, pp.201,453;
+@Ringe2017, pp.121,294; @Fulk2018, pp.71,329-330].
+Tranche45 remains uncommitted; no46 preparation, scientific adoption,
+introduction or PDF. The full393-row programme is unfinished.
+
+## Forty-fourth alignment checkpoint: weapon through while (released6c956e61)
 
 ### Identity
 
