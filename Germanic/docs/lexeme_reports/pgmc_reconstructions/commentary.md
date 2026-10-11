@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6025 evidence
-records,1395 actual consultations,6300 positions,481 comparisons and992
+393 applicability screens per source. The database contains6113 evidence
+records,1395 actual consultations,6392 positions,483 comparisons and1027
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:329 core rows are bounded and64 unreviewed.
+explanation remain ongoing:337 core rows are bounded and56 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,223 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Forty-second alignment: tongue through warp, with paradigms and homograph controls
+
+Tongue2262, town2263, tread2264, trough2265, wade2266, wain2267,
+wake2268 and warp2269 have individual reconciliations of all84 inherited
+analytical identities. Fifty-seven whole-token native occurrences and31
+scoped processes add88 records. Four focused positions reuse processes,
+so176 positions link172 records. The99 reversible SOURCE fields are83
+owned cells,10 locally asserted stages and six arguments. The shared
+throw record and outside2270 position are unchanged. All1395 consultation
+identities/statuses survive; no new owner/target/applicability record is
+needed. All786 dictionary reviews remain, with2257 dictionary records.
+New quotations are text-checked, not newly image-certified.
+
+Two focused questions concern town's borrowing warrants and tongue's
+unstressed raising warrants. Their causes and all eight whole-row causes
+remain unestablished. Position arguments are not automatically explanations
+of divergence, and completion of these bounded reviews does not establish
+the exact selected histories or finish the393-row synthesis.
+
+### Tongue: root vowel, suffix raising and paradigm remodeling are separate
+
+Kroonen gives a feminine tongue citation but regards the earlier formation
+as probably a masculine h₂-stem. Variable Indo-European cognates have often
+been influenced by the verb 'lick'; their differences do not transparently
+recover one nominative. Orel likewise retains a highly variable comparison
+set. His native *tunzōn remains beside the certified *tunʒōn; a native z is
+not silently relabeled as a verified velar. Ringe explicitly derives a
+remodeled PGmc n-stem from PIE *dn̥ǵhwáh2-. Agreement on the lexical family
+does not erase different formation premises [@Kroonen2013, pp.526-527;
+@Orel2003, p.412; @Ringe2017, pp.117-119].
+
+The actual PGmc paradigm table has unknown nominative and instrumental
+singular cells. Those question marks cannot be filled with CAPR's selected
+*túngōn. Its accusative tungōnų, genitive tungōniz and dative tungōni have
+separate evidence. The identical genitive singular and nominative plural
+tungōniz occur on different pages and retain independent receipts.
+Plural accusative, genitive, dative and instrumental likewise remain
+separate; the native combining macron in tungōnǭ̄ is not collapsed into a
+newly certified quantity sign [@Ringe2017, pp.312-313].
+
+Fulk's OE table distinguishes nominative *tunge* 'tongue', five separate
+occurrences of oblique/plural *tungan*, genitive plural *tungena* and
+dative plural *tungum*. The five identical *tungan* cells are not one
+undifferentiated quotation. His formation account makes feminine *-ōn-*
+regularization most likely an effect of ō-stem nouns, with possible
+adjectival influence. Gothic relics imply relatively late conversion.
+The inherited summary's unqualified ā-stem claim is repaired rather than
+silently harmonized with a supposed consensus. OE conformity to masculine
+inflection remains qualified by northern relics and masculine parallels
+[@Fulk2018, pp.170-172].
+
+Three vowel questions must not be conflated. The root-u example illustrates
+nasal-coda blocking of lowering. The suffix account concerns disputed
+unstressed ō raising. Northern low-vowel fronting and later ending
+remodeling constitute another domain. Fulk reports the common account
+of raising before following u in accusatives and before tautosyllabic n
+later. His discussion expressly notes that runic -on discourages a common
+NWGmc-protolanguage date, and reports a separate later Norse development.
+The index tungōn(i) points to the actual following-i discussion on printed90,
+not directly to the tongue paradigm. Panieri's proposal remains Fulk's
+report, not a newly consulted independent source
+[@RingeTaylor2014, pp.28-30; @Fulk2018, pp.87-90,172,389].
+
+Ringe-Taylor rejects general PNWGmc ōn raising because early runic -on
+and continental genitive-plural o survive. Raising before newly final n
+after ending loss is preferred for southern West Germanic; northern
+participation versus separate histories remains undecidable. The authors
+also reject a broad following-u mechanism that demands excessive leveling
+from too few forms. Fulk's retained common following-u account and this
+rejection create a substantive warrant comparison, but not the fabricated
+opposition 'Fulk universal NW raising versus Ringe no raising'. Both retain
+qualifications about date, analogical spread and the evidence
+[@RingeTaylor2014, pp.62-65,163-165; @Fulk2018, pp.87-90,172].
+
+PWGmc tongue and eye nominatives jointly carry an explicit local label;
+the eye is a comparandum, not a tongue ancestor. The fronted *tunge* and
+*auge* intermediates remain undated where the passage gives no new stage
+name. The genitive-plural chain preserves distinct PGmc and PWGmc native
+*tungono*, subsequent *tungona* and OE *tungena*. Early West Saxon *tungna*
+supplies a syncope witness before restored a and later dissimilation.
+The four-language table combines nominative/accusative plural in one row:
+that actual occurrence is not split into invented duplicate receipts.
+Three proposed routes to northern n-stem inflection remain alternatives,
+not a uniquely recovered selected nominative [@RingeTaylor2014, pp.58-60,
+152-154,163-165].
+
+### Town: borrowing status is not donor reversal
+
+Kroonen explicitly treats town/enclosure as a Pre-Germanic Celtic loan.
+His down/dune alternatives concern a different lexical question, not a
+reversal of town's donor direction. Orel also calls the enclosure word
+borrowed from Celtic, while retaining neuter/masculine variants and an
+OHG-specific i-formation. That continental *tūniz* is not the selected
+OE ending. Ringe instead includes town among shared Celtic/Germanic
+words that might or might not be loanwords, contrasted with demonstrable
+loans. This is a genuine admission-warrant difference, not an assertion
+that Germanic supplied Celtic [@Kroonen2013, p.526; @Orel2003, p.413;
+@Ringe2017, pp.327-329].
+
+The selected *tūną* does not settle borrowing date, original gender or
+the exact source convention for its ending/stress. Ringe's local PGmc
+lexicon label dates his citation independently of uncertain borrowing
+status; uncertainty on one axis must not erase a supported label on another
+[@Ringe2017, pp.327-329].
+
+### Tread: innovative grade and conditional ancestry
+
+Kroonen's alternating e/u presents invite an aorist-present account,
+possible dental origin and a possible run-root extension. Orel calls
+the e-grade a secondary thematic transformation of the u-verb. Ringe
+reconstructs anomalous zero-grade PGmc class IV presents for tread and
+knead; the WGmc class V form must be innovative, apparently under
+paradigm pattern pressure and possibly derivatives. Fulk's inference
+is conditional on the PIE run stem: an alternative *dr-t-ó-* formation
+is possible but unattested outside Germanic. Conditional warrant and
+stronger innovation inference are not mutually exclusive theories
+[@Kroonen2013, pp.520-521; @Orel2003, pp.409-410;
+@Ringe2017, pp.273-275; @Fulk2018, pp.264-265].
+
+Ringe-Taylor's jointly labeled PGmc tread/knead and regularized PWGmc
+presents supply exact stage repairs. Knead and ask remain comparanda;
+ask's *-n-* is not tread's suffix. Mercian *for-treodan* illustrates later
+back umlaut with a coronal intervener, not inherited high-front raising
+or the selected West Saxon infinitive. The selected e-input's pgmc label
+therefore stays on the non-adopting stage/grade watchlist
+[@RingeTaylor2014, pp.77-79,324-326].
+
+### Trough and wade: bounded lexical and paradigm evidence
+
+Trough's wood-derived formation, neuter/masculine alternatives and distinct
+tray, tree and saddletree derivatives do not quote the exact selected
+ending or stress. Kroonen's explicit IE *dru-kó-* is on printed523,
+not524. Dictionary-only scope is legitimate; three unconsulted grammars
+are not silently counted as negative witnesses
+[@Kroonen2013, pp.523-524; @Orel2003, pp.409-410].
+
+Wade has a recoverable class VI paradigm but uncertain deeper formation.
+Kroonen contrasts a zero-grade tudáti/aorist present with a possible
+ablauting root present, and suggests an older flow/wash sense. Orel's
+motion comparisons and ford/net derivatives do not choose one verbal
+cell. Ringe notes that the present can reflect an inherited root or a
+secondary zero-grade; the long Latin vowel obstructs a unique analysis.
+His PGmc present, singular/plural past and participle are locally dated
+under the explicit class VI paragraph, and corresponding OE cells are
+distinct attestations. That label is repaired without changing confidence
+or selecting a PIE pedigree [@Kroonen2013, pp.563-564; @Orel2003, p.438;
+@Ringe2017, pp.212-214,275-277].
+
+### Wain: carry, cradle and the actual Frisian passage
+
+Kroonen's masculine no-stem relates wagon to carry, with cart-transport
+evidence in the actual carry entry. Orel allows either carry directly or
+cradle as the immediate base. Cradle and the neighboring movement noun
+must not be collapsed because their citations look similar. The actual
+carry headword begins printed452 and continues453; earlier navigation
+misses are not evidential pages [@Kroonen2013, pp.565,577-578;
+@Orel2003, pp.439,452-453].
+
+Fulk's index directs to §4.14, printed75-76, not the comparative-vowel
+table on54. The native *waznaz*, intermediate *wæzn* and Frisian *wein*
+illustrate a daughter palatalization/diphthong history, not the selected
+OE *wæġn* cell or an independently dated intermediate. The index language
+heading cannot assign the body's whole chain one PGmc date
+[@Fulk2018, pp.75-76,389].
+
+### Wake: identical j strings do not identify formations
+
+Strong wake, weak stative, fientive and causative remain separate. Kroonen's
+incite-based semantic account differs from an unconvincing cry/babble
+connection. Orel's ē stative and nē/nōj derivatives do not quote the selected
+strong infinitive; the residual strong is supported by native OE *wóc*.
+Ringe separates fientive nō/na, causative j and fossilized stative *wakāną*.
+The latter's PGmc stage follows the explicit paragraph, not the appearance
+of a or its confidence [@Kroonen2013, p.568; @Orel2003, pp.441-442;
+@Ringe2017, pp.134-136,277,287-289].
+
+Fulk's strong *wæcnan* has *wōc*, *wōcon* and no attested strong
+participle. His favored thematic/athematic account is constrained by
+parallel weak *wæcnian*, *wæcnode* and opportunities for analogy.
+Ringe-Taylor's *wakja-* belongs locally to the stative alternation, not
+the causative just because its string matches a different source.
+The generic native *¢j* is metalinguistic, not a lexical wake word.
+Innovative northern ē/ēja and weak-class-II on/ojan intermediates remain
+undated where no independent label is supplied. These passages do not
+validate CAPR's unchanged *wakēną* citation versus *wákaną* input bridge
+[@Fulk2018, pp.288-290,313-315; @RingeTaylor2014, pp.161-163,189-191].
+
+### Warp: source meaning defeats automatic homograph matching
+
+The shared Kroonen throw/bend verb is family evidence for the textile
+noun, not a quotation of its selected cell. His distinct *werkan-* on580
+is not merged merely because it can mean 'warp'. Orel's actual neuter
+textile/cast noun is on450 and derives from the throw verb on457; its
+reported Slavic-reel objection is retained as such
+[@Kroonen2013, pp.580-582; @Orel2003, pp.449-451,457].
+
+Most importantly, the first native *warp* > *weerb* > *wearp* chain on
+RT180 means 'became'. The following *warp* > *weerp* > *wearp* means
+'threw'. The infinitive comparison on182 confirms their distinct etyma.
+Neither quotes the textile warp noun. All three first-chain positions
+are therefore unrelated comparanda; all three second-chain positions
+are throw-family finite cells. The inherited beard-only process synopsis
+is repaired to the actual rC-breaking/rj-exclusion argument with dialect
+qualifications, without extracting an unfinished claim about exceptional
+Northumbrian developments [@RingeTaylor2014, pp.179-182].
+
+### Boundary and next questions
+
+Every source claim above retains printed pages. Scientific selections,
+input stages, contexts, FST semantics/order and baselines are unchanged.
+Town borrowing, tongue suffix chronology, tread grade/stage, trough
+formation, wade ancestry, wain's immediate base, wake's citation/input
+bridge and textile-versus-verb warp remain precisely bounded questions,
+not automatic migration proposals. No new publication or42 release is
+implied. Full alignment, conditioning census, synthesis, consistency
+watchlist and ranked specialist dispatch remain unfinished.
 
 ## Forty-first alignment: three through tongs, with numeral warrants and native cells
 

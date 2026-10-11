@@ -6,6 +6,52 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
+## Forty-second alignment checkpoint
+
+Rows2262-2269 (tongue, town, tread, trough, wade, wain, wake, warp)
+are individually reconciled:84 inherited identities,57 native occurrences,
+31 scoped processes, four reused focused positions and35 position-support
+rationales. The99 exact SOURCE amendments cover83 cells,10 asserted stages
+and six arguments. Shared throw SOURCE/outside2270 analysis and all1395
+consultation identities/statuses survive; no consultation/target/scope owner
+changes. Totals6113 forms,6392 positions,483 comparisons,1027 rationales;
+337 bounded/56 unreviewed core rows. All786 dictionary dispositions remain,
+with2257 dictionary records.
+
+Tongue separates unknown PGmc nominative, repeated genitive/plural cells,
+root lowering, disputed suffix raising and northern leveling. Town's explicit
+Celtic loan versus uncertain borrowing status is not donor reversal. Tread's
+zero/e-grade innovation and Fulk's conditional PIE warrant are not exclusive
+accounts. Trough remains dictionary-only; wade's actual class VI cells do not
+choose its deeper ancestry [@Ringe2017, pp.118,212-214,274-277,312-313,328;
+@Fulk2018, pp.87-90,170-172,264-265; @RingeTaylor2014, pp.62-65,77-79,152-154,
+163-165,324-326; @Kroonen2013, pp.520-527,563-564; @Orel2003, pp.409-413,438].
+
+Wain's actual carry entry starts452, and Fulk's body is75-76, not54.
+Wake stative/fientive/strong/causative formations remain separate.
+The first RT180 wearp chain is 'became', the second 'threw'; neither
+quotes the textile noun. Town and tongue focused causes, and all eight
+whole-row causes, remain unestablished [@Orel2003, pp.439,441-442,450,452-453,457;
+@Kroonen2013, pp.565,568,577-582; @Fulk2018, pp.75-76,288-290,313-315,389;
+@Ringe2017, pp.134-136,277,287-289; @RingeTaylor2014, pp.161-163,179-182,189-191].
+
+See the latest commentary and nine-heading survey audit, together with
+`reading_accountability/alignment-2262-2269-amendments.tsv` and
+`alignment-2262-2269-occurrences.tsv`. Exact native text/paragraph/hash/span
+receipts do not claim new image certification. Scientific owners and the
+46 ORIGINAL protections remain unchanged. No42 commit/push,43 preparation,
+science adoption or PDF is included; the full393-row programme remains open.
+Older totals below are historical checkpoints.
+
+Canonical refresh/artifact checks are clean. The477-test combined run
+passes476; its sole cumulative loan-query expectation is updated to include
+town's actual support, and all12 selected new/corrected tests pass.
+Independent verification preserves6025 inherited records except99 exact
+fields,6216 outside positions,473 unaffected cases,992 inherited reasons,
+1366 outside consultations,116 unchanged research hashes and46 ORIGINAL
+scientific hashes. All57 native spans and68 new-prose printed-page references
+resolve; the separate alignment and RT-conventions refusals remain.
+
 ## Ownership
 
 - SOURCE: `sources.tsv` declares the reasonable held source universe,

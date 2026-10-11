@@ -8,6 +8,142 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Forty-second alignment checkpoint: tongue through warp
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base8118b77ac0c6faca3d2c0d86f9f5a8a8326bfb49 on update;41 is committed
+and pushed. Authorized42 completion excludes42 release,43 preparation and
+scientific adoption. Immutable preparation pins6025 forms,84 inherited
+identities and123 research hashes. Never recreate preparation or execute/import
+the persisted candidate.
+
+### Question
+
+Can all eight selected rows be reconciled without conflating tongue's
+unknown nominative with its recovered paradigm, root versus suffix raising,
+borrowing status versus donor direction, tread's grade/date versus conditional
+PIE pedigree, trough versus tray, wade's paradigm versus root formation,
+wain's carry/cradle alternatives, wake's four formations or warp's became/
+throw/textile homographs? Actual source arguments and cells can refute matching
+claims; numeric review completion or final output cannot.
+
+### Current state
+
+Previously329 bounded/64 unreviewed core rows,6025 forms,1395 consultations,
+6300 positions,481 comparisons and992 rationales. All eight inputs have
+pgmc metadata; wake has an explicit sidecar/early_analogy citation/input
+distinction. Those scientific owners and all46 ORIGINAL protections are
+unchanged. Source identity/stage/confidence are independent axes.
+
+### Diagnosis
+
+New executable census/traces/variants/counterfactuals: n/a, with reason:
+annotation-only work has no adopted law/input/order change.
+All84 inherited positions survive individual reconciliation. Fifty-seven
+native occurrences and31 scoped processes add88 records; four focused
+positions reuse evidence, producing176 positions linked172 records.
+The99 SOURCE amendments are83 locally owned cells,10 asserted stages
+and six arguments. All tables/receipts were pre-serialized and validated
+in memory before the single persistence. No partial write/recovery occurred.
+
+The first RT180 chain means became, the second threw. Their lexical roles
+are respectively unrelated comparandum and throw-family finite cells,
+neither selected textile noun. The outside2270 shared throw SOURCE/analysis
+is unchanged [@RingeTaylor2014, pp.179-182; @Kroonen2013, p.581].
+Actual table occurrence coordinates distinguish five Fulk171 *tungan*
+cells and four RT163 *tungan* cells; the latter has one combined plural row,
+not two fabricated quoted occurrences [@Fulk2018, p.171;
+@RingeTaylor2014, p.163].
+
+### Literature
+
+Complete relevant dictionary arguments and family cross-references:
+[@Orel2003, pp.408-414,437-442,449-451,452-453,457;
+@Kroonen2013, pp.520-527,563-571,577-578,580-582].
+Complete relevant grammar blocks, tables, footnotes and needed cross-references:
+[@Ringe2017, pp.117-119,134-136,212-214,273-277,287-289,311-313,327-329;
+@Fulk2018, pp.7-9,53-55,75-76,87-90,170-173,264-266,288-290,312-316,388-389;
+@RingeTaylor2014, pp.28-30,58-65,77-79,152-154,161-165,179-182,189-191,324-326].
+Readings are held-text argument review, not new exhaustive image certification
+or independent consultation of every author reported in a footnote.
+
+Town's explicit Celtic loan and Ringe's uncertain borrowing are a focused
+warrant difference, not donor reversal [@Kroonen2013, p.526;
+@Orel2003, p.413; @Ringe2017, p.328]. Tongue's common following-u account
+versus RT's restricted newly-final-n account preserves runic and northern
+qualifications, not a universal-raising/no-raising opposition
+[@Fulk2018, pp.87-90,172; @RingeTaylor2014, pp.62-65,163-165].
+Tread's conditional PIE warrant does not contradict innovative e-grade
+[@Fulk2018, pp.264-265; @Ringe2017, pp.274-275].
+Wade's actual PGmc paradigm does not choose zero-grade versus root-present
+ancestry [@Ringe2017, pp.212-214,275-277; @Kroonen2013, p.564].
+
+### Historical analysis
+
+Locally explicit PGmc town lexicon, wade paradigm and fossilized wake
+stative labels are independent from borrowing/formation uncertainty.
+RT jointly labels tongue/eye and tread/knead; neither eye nor knead becomes
+a selected-row ancestor. Stative a? uncertainty concerns form, not the
+explicit local PGmc label. Later unlabeled intermediates remain unspecified
+[@Ringe2017, pp.275-276,288,328; @RingeTaylor2014, pp.78,153,162,190].
+
+Fulk's wain index points to actual Frisian body75-76, not54; Orel's carry
+entry starts452, continuing453. Native glyphs survive beside inherited
+certification [@Fulk2018, pp.75-76,389; @Orel2003, pp.439,452-453].
+Fulk's tongue formation is most likely from ō-stem nouns, with possible
+adjective influence; the inherited unqualified ā-stem synopsis is repaired
+[@Fulk2018, pp.171-172].
+No historical edge adopted; no stage inferred from FST prefix, executable
+environment, confidence or successful output. Published analogy is recorded
+faithfully without adopting grammatical conditioning or lexical diffusion.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+No registry verdict: not an SC adjudication. Town and tongue focused
+comparisons retain substantive differences with unestablished causes.
+All eight whole-row causes remain unestablished; all35 new rationales are
+position_support. Trough's dictionary-only scope remains legitimate.
+No corpus/input/target/stage/context/FST/baseline adoption or PDF.
+
+### Propagation
+
+SOURCE tables, two exact receipt tables, page-cited commentary/README,
+this full-template record and source-sensitive regressions are the persistent
+owners. Canonical propagation uses only adjudicate.py --refresh.
+Independent verification resolves actual native paragraphs/hash/spans, exact
+old/new SOURCE differences, inherited/outside records and ORIGINAL46 hashes.
+No new consultation/target/scope/applicability owner exists to reverse.
+Expected scientific fingerprint effect: none; no refreeze authorized.
+
+Canonical refresh and independent artifact check report CONTROL PLANE CLEAN.
+The combined477-test run passes476; the sole failure was a cumulative loan
+query expectation missing town's new actual position support. Updating only
+that expected qualifying ID leaves SOURCE reasoning unchanged; all12 selected
+new/corrected tests then pass. No claim of a full477-test rerun is made.
+Bibliography, section locators,68 new-prose printed-page references, nine
+template headings and whitespace checks pass.
+
+Independent post-refresh verification preserves6025 inherited forms except99
+exact receipted annotations,6216 outside positions,473 unaffected comparisons,
+992 inherited rationales,1366 outside consultations, all1395 consultation
+identities/statuses,116 untouched research hashes and46 ORIGINAL scientific
+hashes. All57 native paragraphs/hashes/whole-token Unicode spans resolve.
+Deterministic query evidence is retained in the session artifact
+pgmc-three-hundred-thirty-seven-alignments-query-results.txt.
+
+### Residue
+
+Exact selected tongue nominative/ending history, town borrowing warrants,
+tread grade/stage bridge, trough formation, wade ancestry, wain immediate
+base, wake citation/input bridge and warp nominal genealogy remain bounded.
+Further56 core alignments, class census, aggregate explanatory synthesis,
+non-adopting watchlist and specialist dispatch remain unfinished.
+The independent alignment gate refuses56; fully verified reading separately
+refuses the unchanged RT conventions gap. No42 release or43 start.
+
 ## Forty-first alignment checkpoint: three through tongs
 
 ### Identity
