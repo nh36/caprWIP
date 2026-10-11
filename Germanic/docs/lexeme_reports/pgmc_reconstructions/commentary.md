@@ -10,15 +10,277 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6500 evidence
-records,1395 actual consultations,6825 positions,492 comparisons and1235
+393 applicability screens per source. The database contains6546 evidence
+records,1395 actual consultations,6874 positions,493 comparisons and1271
 rationales. The fully verified reading gate still refuses the named
-Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:385 core rows are bounded and8 unreviewed.
+Ringe-Taylor convention/typography gap; explanatory research remains
+ongoing. All393 core rows now have bounded alignment
+reviews, with no unreviewed core alignment. This closes the finite core
+alignment milestone, not the explanatory or publication programme.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
-## Forty-eighth alignment: finite make, bore, learn, lick and show
+## Forty-ninth alignment: final pronouns, verbal cells and hue
+
+Tranche48 is released asc746b983. The final eight rows are explicitly
+noncontiguous:2318,2322,2326,2327,2328,2329,2330 and2332. Their133 inherited
+identities are individually reconciled, preserving shared earlier SOURCE,
+the selected inputs and every scientific owner. Thirteen native occurrences
+and33 scoped arguments add46 records; three focused positions reuse
+existing arguments. The182 positions consequently link179 distinct
+records, not182 consultations. Thirty-six new rationales support positions;
+none automatically establishes a whole-row or inter-author cause.
+
+The127 exact SOURCE-field amendments comprise118 local cells and nine
+body-backed dates. One separate owner receipt upgrades the existing
+Fulk/thought consultation from discussion_only to evidence_found after
+actual reconstructed past-stem evidence is recorded. It creates neither
+a new consultation nor an authored full selected finite word. Native
+paragraph/hash/Unicode receipts certify extract occurrences, not new
+original-image checks or silent repairs of already certified forms.
+
+### Missing finite words versus actual finite evidence
+
+Show third singular and wound weak past make a useful negative pair.
+Kroonen's show verb is quoted inside the observant-adjective entry;
+beautiful and mirror/shadow provide additional see-root formations.
+Those passages bear on ancestry and derivation, not the selected
+third-singular ending. Orel likewise derives the weak verb from the
+observant adjective; his proposed Gothic reading correction and the
+separate *hāwian* family must not be turned into additional show cells.
+All four inherited records shared with the earlier infinitive and
+imperative remain unchanged. A completed dictionary-only alignment can
+therefore retain an exact finite-word quotation limit without inventing
+three grammar negatives [@Kroonen2013, pp.441-442,452;
+@Orel2003, pp.336-337].
+
+Wound has a different asymmetry. Kroonen supplies wounded, wound,
+suffer and suffering family formations, while Orel actually quotes
+the weak wound infinitive and its alternative nominal bases.
+An explicitly unattested strong verb under the wounded adjective
+is not that weak verb or its selected past. Ringe's present infinitive
+has certified trimoric notation, *wundō̄ną*; his questioned noun
+*wundō* and adjective *wundaz* are separate bases. The generic
+class-II past stem in *-ō-d-* is a real morphological warrant, but
+it is not an attributed quotation of *wúndōdē*. Present quantity,
+past morphology, root accent and dental convention remain independent
+questions [@Kroonen2013, pp.598-600; @Orel2003, pp.474-475;
+@Ringe2017, pp.284-286].
+
+Ringe's Gothic *haubiþwundan* illustrates a compound adjective in
+a syntactic example. It supplies wound-family evidence, not a weak
+finite past or an assembled proto-head word. That record is also
+owned by the earlier head row and remains unchanged. A shared string
+is reusable evidence only for each row's actual relationship
+[@Ringe2017, p.237].
+
+Thought refutes a different inherited limitation. Ringe's body
+explicitly says that exactly five class-I verbs without a linking
+vowel in the past are reconstructable for PGmc, then lists
+*þankijaną*, *þanhtē* and *þanhtaz*. The selected finite past is
+therefore locally dated by the argument itself, not merely by a
+chapter heading. Its inherited undated annotation is repaired to
+pgmc. The infinitive and participle remain other cells; participial
+*-az* is not substituted for finite *-ē*
+[@Ringe2017, pp.135-137,281].
+
+The older volume independently supplies the same kind of local
+warrant within Ringe's account: the five PGmc pasts are introduced
+on p.71 and explicitly labelled indicative third singular on p.72.
+Native *panhté* is think; buy, seek and work are comparanda, and
+seem is a related but separate etymon. Their shared cluster is not
+a full word. The later *pohte* chain is likewise the finite think
+past, not a thought noun. The native clipped *[0é* representation
+is retained as a recoverability limit, not repaired into an invented
+complete phonetic form [@RingeTaylor2014, pp.71-75,141-143].
+
+Fulk's actual connector argument adds substantial evidence without
+settling its cause. His *þaŋk-t-* and *þaŋxta* intermediates belong
+to the think preterite discussion, while the counterfactual
+*bu3-dē* tests the wrong dental in buy. The archaic voiceless dental
+and the later voiced pattern are distinct. He finds a restriction
+to primary ja-presents attractive, but retains the velar-distribution
+problem, phonological alternatives and analogical remodelling;
+he expressly records the absence of consensus. His report of
+Ringe's just-five claim is not a newly verified original-source
+vote. Later innovative northern connectorless pasts must not be
+used to explain away the inherited five or to manufacture a new
+grammatically conditioned CAPR law [@Fulk2018, pp.297-301;
+@RingeTaylor2014, pp.97-99].
+
+### Who: nominative alternatives and later quantity
+
+Kroonen's *hwa-* is a stem citation, not an automatically completed
+*hwaz*. The masculine *hwaz/hwiz*, feminine *hwō* and neuter *hwat*
+are different cells. Orel's short-vowel *xwaz/xwez* alternatives
+likewise supply no inherited long *ā*. Ringe's starless table
+*hwaz (hwiz?)* keeps a questioned doublet rather than concealing
+it in a single normalized word. Root-vowel agreement and full
+dated paradigm equivalence remain different achievements
+[@Kroonen2013, pp.260-262; @Orel2003, pp.198-199;
+@Ringe2017, pp.321-323].
+
+Fulk allows *hwā* to continue short-vowel PGmc *xʷaz*, with z-loss
+and subsequent lengthening before fronting. His other-language
+analogies and footnote alternatives are retained; they do not
+make the feminine quantity a masculine inheritance. Ringe's
+northern account similarly distinguishes PGmc and PWGmc nominatives,
+while leaving the antiquity of southern front-vowel preforms uncertain.
+He rejects a stresslessness-only account of z-loss. The probable
+PWGmc nominative table is relevant selected-cell evidence, whereas
+the genitive, dative, instrumental and later interrogative derivatives
+are not replacements for that cell
+[@Fulk2018, pp.201-203; @RingeTaylor2014, pp.84-87,124-125,
+390-391,519-521].
+
+### You: one oblique cell, genuinely different genealogies
+
+The selected *ēow* is plural oblique. Nominative *jūz/jiz* and the
+dual oblique are other cells; accusative additions *-ik*, *-it* and
+*-k-* are suffix comparanda, not separately reconstructed full
+you words. Fulk explicitly says the quantity of the Gothic
+nominative cannot be determined. The dictionary long-vowel citation
+must not override that author's independent uncertainty
+[@Kroonen2013, pp.275-276; @Orel2003, pp.206-208;
+@Fulk2018, pp.185-188; @RingeTaylor2014, pp.124-125,390-391].
+
+The new focused comparison concerns genealogy, not three votes
+for the identical *izwiz* string. Kroonen starts from original
+oblique *iwe*, proposes a suffix abstracted from *unsiz*, and
+derives North/East *izwiz* through metathesis of *iw-siz*. His
+older dative *iwiz* continues in West Germanic. Ringe instead
+builds on Katz's PIE *uswé*, with sandhi aphaeresis and prothetic
+*i*, or Weiss's dissimilation alternative; an instrumental-plural
+model and later accusative replacement are important premises.
+The expected accusative *is* is not a surviving endorsed PGmc
+quotation [@Kroonen2013, pp.275-276; @Ringe2017, pp.233-235].
+
+Fulk prefers the reported Krahe-Meid reduplication *wiz-wiz*,
+with initial-w dissimilation, and retains two routes to WGmc
+*iuwiz*. He finds a reduced *iwiz* plus later OE w-restoration
+less adequate, reports the Prokosch alternative and Ringe's
+different ancestry separately, and states that there is no
+consensus. These are substantive structural differences, not
+merely orthographic variants. Their individual warrants are
+recorded as position support; the cause of the authors' differing
+premise choices and the preferred comparative reconstruction
+remain unestablished. No named direct rebuttal of Kroonen is
+invented [@Fulk2018, pp.187-188].
+
+The later path also has independent axes. Coronal assimilation,
+Vww reanalysis and longer versus endingless oblique forms do not
+assign sentence stress. Early high-vowel loss is conditioned by
+heavy syllable, unstressed word and phonological finality, not
+pronoun identity. The PWGmc table's common shorter acc/dat
+*iuw* is selected-oblique evidence. The later discussion says
+you was endingless by mutation, possibly through analogy with
+us; the older-volume proportional proposal remains tentative.
+The already adopted unstressed/final input context is preserved,
+not newly inferred from the successful output
+[@RingeTaylor2014, pp.40-42,55-58,124-125,390-391,518-521].
+
+### Sow and betray: hiatus and actual following segments
+
+Sow's selected infinitive must be kept separate from PIE perfect
+and PGmc preterite cells. Kroonen's native *se-sõe* occurrence is
+recorded beside the certified *se-sōe*; the extract's nasal sign
+is not a new author-vowel proposal. He rejects a Germanic ie-suffix
+and treats daughter j/w as hiatus fillers; Gothic ai represents
+lowered ē rather than an original diphthong. Orel's bibliographical
+report of the original-ai proposal is not his own endorsement.
+Ringe's *sēaną*, *sezō* and *sezun* supply separately identified
+present and past cells for the reduplication/Verner argument
+[@Kroonen2013, pp.427-429; @Orel2003, pp.326-328;
+@Ringe2017, pp.213-216].
+
+Fulk's e-insertion and relic-reduplication discussion retains
+Jasanoff's objections and does not provide a universally inherited
+j-present. His hiatus-w account can begin in past third plural
+*ō-un* and extend to the present; a first-singular-u alternative
+is noted. The older Ringe volume emphasizes w before first-singular
+u and past-plural un, with early enough insertion to block fronting
+under its preferred account. Earlier fronting followed by retraction
+remains possible. The accounts therefore differ in premises or
+emphasis without being manufactured into an exclusive contradiction
+[@Fulk2018, pp.260-261,266-272,289-291;
+@RingeTaylor2014, pp.11-13,149-151].
+
+Betray offers the phonological contrast: w followed by a high
+front vocalic, rather than sow's nonhigh continuation. Its occasion/
+opportunity nominal base and factitive verb are separate formations;
+source jan and selected wijan require an explicit segmentation
+comparison, not silent suffix stripping. Ringe's PGmc, PWGmc,
+WS OE and Anglian OE infinitives are individually dated. The
+explicit Anglian branch warrants a local oe annotation repair;
+prefixed Northumbrian *be-léwa* is another cell. Native acute
+notation is preserved rather than silently made into CAPR quantity
+[@Kroonen2013, pp.334-336; @Orel2003, pp.244-245;
+@RingeTaylor2014, pp.149-151].
+
+### Hue: preserved scientific selection, unfinished comparisons
+
+Hue's adopted inherited-i input and glide account are unchanged.
+Kroonen's visible-layer *heuja-* has a qualified Dybo genealogy;
+the bluish adjective and Nordic skin/dew noun are family evidence,
+not replacement hue nouns. Native *hiwa-* remains beside the
+already image-certified *hīwa-* without an invented original
+recheck. Orel's e-form and probable derivation remain genuinely
+attributed alternatives, not automatically pre-PGmc notation
+[@Kroonen2013, pp.223-225; @Orel2003, pp.170-172].
+
+Ringe's probable PGmc high-front raising date depends on indirect
+j-loss/contraction evidence; Gothic merger prevents a direct
+demonstration. Fulk's high-front and coda-nasal domains, disputed
+following-u raising and separate lowering domains must not be
+collapsed. His geminate-dismantling and Verschärfung objections
+are independent of the inherited-vowel date. Cercignani's
+individual-language-prehistory objection recognizes relevant
+conditioners but rejects the shared allophonic reconstruction;
+it supplies no independently quoted full hue form
+[@Ringe2017, pp.151-155; @Fulk2018, pp.55-59,71-72,116-119,
+126-127; @Cercignani1980, pp.126-129].
+
+Ringe's older hue chain separates PGmc citation, nongeminated
+PWGmc form, geminated oblique stem and later dialectal forms.
+The queried *hiow/-*, palatal semivowel and endingless *hi*
+are distinct units, not interchangeable full words. The proposed
+iww-to-iuw-to-iow development has expressly unclear phonemic
+analysis. That limit does not erase the explicit PGmc i
+quotation, prove universal diphthong height harmony or resolve
+every earlier/later raising question
+[@RingeTaylor2014, pp.173-175,219-221,249-251].
+
+### What the final milestone certifies
+
+All393 core rows now have actual bounded alignment reviews and
+the independent alignment gate passes. This does not mean393
+settled ancestries, a fully verified Ringe-Taylor convention
+survey, a completed source-backed conditioning census, a finished
+consistency watchlist or a new publication. Exact missing premises,
+reported/rejected proposals and unknown dates remain queryable.
+The final tranche stays uncommitted; its one-use candidate is
+never executed or imported after persistence. Current SOURCE,
+exact receipts and regressions are authority.
+
+Closeout covers all547 focused survey/analysis tests across passing
+runs. The combined run passes546; the sole failure is an obsolete
+live assertion expecting unreviewed core rows. Its correction and
+all13 new regressions pass together, without any SOURCE rewrite.
+Canonical refresh and independent freshness checks are clean.
+Bibliography, section locators, all70 new-section printed-page
+citation objects and all nine audit headings pass.
+
+Independent post-refresh reversal reproduces6500 inherited forms
+except127 exact receipted fields and the separately receipted status.
+It preserves15 outside-shared SOURCE records,6692 outside positions,
+484 unaffected cases,1235 old reasons,1361 outside consultations,
+all132 untouched research hashes and46 ORIGINAL scientific hashes.
+All13 native paragraph/hash/Unicode spans resolve. Deterministic
+queries reproduce393 bounded core rows,182 final-tranche positions
+and179 records; restoring the eight predecessor dispositions refuses,
+while the unchanged conventions refusal remains independent.
+
+## Forty-eighth alignment: finite make, bore, learn, lick and show (releasedc746b983)
 
 Tranche47 is released as31bf5b44. Rows2310-2317 retain all92 inherited
 analytical identities, individually distinguished by lexical identity,

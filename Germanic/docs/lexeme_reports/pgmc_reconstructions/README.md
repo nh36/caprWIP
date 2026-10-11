@@ -6,7 +6,85 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-eighth alignment checkpoint
+## Forty-ninth final alignment checkpoint
+
+Tranche48 is committed and pushed asc746b983b87cff89441da9a352df775ef799cee2.
+The final eight IDs are explicitly2318,2322,2326,2327,2328,2329,2330 and2332:
+show third singular, who, plural oblique you, wound weak past, sow,
+betray, finite thought past and hue. All133 inherited analytical identities
+are individually reconciled. Thirteen native occurrences and33 scoped
+processes add46 records; three focused positions reuse arguments.
+The182 positions link179 distinct records. Thirty-six new reasons
+support positions, not whole-row or inter-author causes.
+
+The127 reversible SOURCE-field amendments comprise118 local cells and
+nine body-backed dates. The separate one-field owner receipt upgrades
+the existing Fulk/thought review from discussion_only to evidence_found
+after actual reconstructed past-stem intermediates are recorded; no
+consultation or target is created. Inherited evidence shared with earlier
+show, head, class-VII, think and raising research remains unchanged.
+All ORIGINAL scientific protections, selected inputs and independent
+context/stage axes are preserved.
+
+Finite thought is genuinely dated by Ringe's body: exactly five PGmc
+connectorless class-I verbs, explicitly listing *þanhtē* separately
+from infinitive and participle. The older volume labels the pasts
+indicative third singular; later innovative connectorless pasts are
+a different question [@Ringe2017, p.281; @RingeTaylor2014, pp.71-75,97-99].
+Fulk's dental/connector argument supplies reconstructed intermediates,
+not an assembled selected whole-word quotation or a consensus origin
+[@Fulk2018, pp.297-301].
+
+Who nominatives, plural oblique you and dual/nominative comparanda
+remain distinct. The new `you-oblique-origin` focused case records
+metathesis/older iwiz, Katz-based ancestry and preferred reported
+reduplication as genuinely different proposals, with their cause
+unestablished [@Kroonen2013, pp.260-262,275-276;
+@Ringe2017, pp.233-235,321-323; @Fulk2018, pp.185-188,201-203].
+Wound present quantity does not quote its finite past; sow preterites
+are not infinitives. Betray's explicit Anglian date and high-front
+continuation contrast with sow's hiatus-w account
+[@Ringe2017, pp.213-216,284-286; @RingeTaylor2014, pp.149-151].
+Hue's adopted i/glide science remains unchanged, with native/certified
+quantity and uncertain later phonemics kept separate
+[@Kroonen2013, pp.223-225; @Ringe2017, pp.151-155;
+@Fulk2018, pp.55-59,71-72,126-127; @RingeTaylor2014, pp.249-251].
+
+Current totals:6546 forms,1395 actual consultations,6874 positions,
+493 comparisons and1271 rationales. All786 dictionary dispositions
+remain, with2481 dictionary records. All393 core alignments are
+bounded_limit, with zero unreviewed core alignments; the standalone
+alignment gate passes independently of the unchanged fully verified
+Ringe-Taylor conventions refusal. Bounded alignment does not establish
+every ancestry or complete the conditioning census, explanatory synthesis,
+non-adopting consistency watchlist, subsequent-source agenda or publication.
+
+Current SOURCE, the substantial page-cited commentary, nine-heading
+audit and `reading_accountability/alignment-2318-2332-*.tsv` receipts
+are authority. Never recreate the immutable preparation or execute/import
+the final one-use candidate after persistence. Tranche49 stays uncommitted;
+no scientific adoption, next tranche, introduction/PDF or unrelated
+local-file changes are included.
+
+Closeout covers all547 focused survey/analysis tests across passing runs:
+the combined run passed546, with one obsolete live assertion expecting
+unreviewed rows; its correction and all13 new regressions passed together
+in the14-test rerun. No SOURCE was changed to satisfy that assertion.
+Canonical refresh and independent freshness checks report CONTROL PLANE
+CLEAN. Bibliography, section locators, all70 new-section printed-page
+citation objects and the nine audit headings pass.
+
+Independent post-refresh reversal preserves6500 old forms except127
+receipted fields,15 outside-shared records,6692 outside positions,
+484 unaffected cases,1235 old reasons and1361 outside consultations.
+All1395 consultation identities survive; exactly one status amendment
+is reversed separately. All132 untouched research hashes and46 ORIGINAL
+scientific hashes are preserved. All13 native paragraph/hash/Unicode
+spans resolve. Deterministic queries reproduce393 bounded core rows,
+182 tranche positions/179 records,36 position-support reasons and the
+separate conventions refusal.
+
+## Forty-eighth alignment checkpoint (releasedc746b983)
 
 Tranche47 is committed and pushed as31bf5b44f4a89da0775f5af41b8b664c1ad4b03a.
 Rows2310-2317 cover make third singular; bore, learn and lick imperative/

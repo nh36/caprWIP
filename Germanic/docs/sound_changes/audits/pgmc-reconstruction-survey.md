@@ -8,7 +8,156 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
-## Forty-eighth alignment checkpoint: make through show finite cells
+## Forty-ninth final alignment checkpoint: show through hue
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Basec746b983b87cff89441da9a352df775ef799cee2, branch update;48 released.
+Immutable49 preparation pins6500 forms,133 inherited identities and139
+research hashes. Exact IDs2318,2322,2326,2327,2328,2329,2330,2332 are
+noncontiguous. The new candidate is guarded, dry-run validated and
+persisted exactly once; it is never executed/imported thereafter.
+Authorization covers final49 completion, not49 release or science/PDF.
+
+### Question
+
+Can the final133 identities be individually reconciled without inventing
+finite words, merging pronoun cells, deriving dates from confidence or
+changing shared research/science? Does the actual finite thought body
+refute its inherited undated annotation? An explicit PGmc statement
+and selected finite quote would refute that particular limit, whereas
+generic weak morphology would not establish a whole wound/show word
+[@Ringe2017, pp.281,284-286; @RingeTaylor2014, pp.71-75].
+
+### Current state
+
+Before edits:6500 forms,1395 reviews,6825 positions,492 comparisons,
+1235 rationales;385 bounded/8 unreviewed. Selected show3sg and wound
+weak past differ from dictionary infinitives/adjectives; thought is
+a finite past, not a noun. You is plural oblique, not nominative or
+dual. Shared show/head/class-VII/think/raising SOURCE, original hue
+rationales and all scientific owners are protected. All selected input
+stages are pgmc; adopted you prosody and hue i/glide account are unchanged.
+
+### Diagnosis
+
+No Foma assay or firing census is appropriate: no rule/input changes.
+The complete133-position research census supplies the denominator.
+Individual relations distinguish selected cells, other cells, family,
+comparanda and processes. Exact native spans retain corruptions separately
+from certified glyphs. Ringe's finite thought body and older-volume
+third-singular labels warrant dates; mere quotation occurrence or title
+does not [@Ringe2017, p.281; @RingeTaylor2014, pp.71-72,141-143].
+Wound present trimoric quantity, generic past morphology and head-wounded
+adjective are distinct evidence [@Ringe2017, pp.237,284-286].
+
+### Literature
+
+Prior show/think/class-VII alignments and released hue dossier are checked.
+Complete relevant held dictionary bodies and cross-references retain
+show family, who paradigms, you plural/dual, wound/suffer, sow
+reduplication, betray factitive and hue ancestry
+[@Orel2003, pp.170-172,198-199,206-208,244-245,326-328,336-337,416,
+474-475; @Kroonen2013, pp.223-225,260-262,275-276,334-336,427-429,
+441-442,452,533-534,598-600].
+Ringe's raising/j-loss, Verner/reduplication, pronoun formation, actual
+finite-past body, weak-II quantities and interrogative tables are read
+with qualifications [@Ringe2017, pp.135-137,151-155,213-216,232-237,
+281,284-286,321-323].
+Fulk's raising/lowering, geminate alternatives, pronouns, class-VII
+theory and actual connector/dental argument remain separate
+[@Fulk2018, pp.55-59,71-72,116-119,126-127,185-189,200-203,
+260-261,266-272,289-291,297-301].
+The older Ringe volume's prosody, inherited versus innovative weak
+pasts, pronoun tables, fronting, raising, hue and later morphology/
+corrigenda are read in full relevant contexts
+[@RingeTaylor2014, pp.11-13,40-42,55-58,71-75,84-87,97-99,
+105-107,124-126,141-143,149-151,173-175,219-221,249-251,
+390-392,518-521].
+Cercignani's shared-allophonic-stage objection is retained, including
+the actual p.129 body/notes; no full hue form is attributed
+[@Cercignani1980, pp.126-129].
+These are held-argument readings, not new image certifications or
+independent votes for reported original sources.
+
+### Historical analysis
+
+The finite thought quote is explicitly PGmc by the body, not a confidence
+inference; the older volume separately labels its finite cell. Later
+innovative connectorless pasts do not replace inherited formation evidence
+[@Ringe2017, p.281; @RingeTaylor2014, pp.71-75,97-99].
+Fulk's archaic dental and connector-origin alternatives remain unresolved,
+not converted into a grammatical CAPR sound law [@Fulk2018, pp.297-301].
+
+Who quantity follows the nominative history, not feminine or oblique
+cell substitution. You's original oblique, metathesized North/East form,
+WGmc endpoint and competing genealogies are independently compared
+[@Fulk2018, pp.185-188,201-203; @Kroonen2013, pp.275-276;
+@Ringe2017, pp.233-235; @RingeTaylor2014, pp.84-87,124-125].
+Betray's explicit Anglian OE date warrants a local repair; sow's nonhigh
+hiatus continuation and betray's high-front continuation are distinct
+[@RingeTaylor2014, pp.149-151].
+Hue's native/certified quantities and later uncertain phonemics remain
+separate from its adopted inherited-i input
+[@Kroonen2013, pp.223-225; @RingeTaylor2014, pp.249-251].
+No historical edge, selected-stage migration or sound-change verdict
+is inferred from these research annotations.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN all scientific owners.
+No Registry-verdict line: no SC adjudication occurs.
+All eight final core cases are bounded_limit; all393 core alignment
+reviews are now complete at that explicit depth. The new plural-oblique
+genealogy case is substantive_difference with unestablished cause.
+The46 additions comprise13 native occurrences and33 scoped processes;
+three reused focused positions and36 position-support reasons are added.
+Exact127 field receipts cover118 cells/nine dates; one separate owner
+receipt corrects actual Fulk/thought status without a new consultation.
+
+### Propagation
+
+Editable research tables, exact amendments/occurrences/owner receipts,
+page-cited commentary/README, this nine-heading audit and source-sensitive
+survey/analysis regressions. Totals6546 forms,1395 consultations,6874
+positions,493 cases,1271 reasons;182 tranche positions/179 records.
+All786 dictionary dispositions survive with2481 dictionary records.
+All393 core rows are bounded, zero unreviewed. The standalone alignment
+gate passes; fully verified RT conventions still refuse independently.
+Canonical regeneration uses only
+`python3 Germanic/tools/adjudicate.py --refresh`.
+The combined focused run passes546/547 in690.094s. One historical
+ask test still asserted that some live core rows were unreviewed;
+the assertion is updated to the actual alignment gate without any
+SOURCE rewrite. Its corrected test plus all13 new regressions pass
+together:14 tests in18.236s. Thus all547 current focused tests are
+covered across passing runs, not claimed as a single all-green run.
+
+Canonical refresh and independent artifact freshness report CONTROL
+PLANE CLEAN. Bibliography, section locators, all70 printed-page
+citation objects across the three new sections, nine audit headings
+and whitespace pass. Independent post-refresh verification reverses
+127 exact fields and one status, preserving6500 old forms,15
+outside-shared SOURCE records,6692 outside positions,484 unaffected
+cases,1235 old reasons,1361 outside consultations,132 research hashes
+and46 ORIGINAL scientific hashes. All13 native paragraph/hash/whole-token
+Unicode spans resolve. The read-only query record is session
+`files/pgmc-393-alignments-query-results.txt`.
+The final alignment gate passes; restoring the eight unreviewed
+predecessor dispositions refuses, separately from unchanged RT
+conventions. HEAD and origin/update are reverified equalc746b983.
+
+### Residue
+
+Bounded alignment is not393 established histories or a completed
+conditioning census, explanation synthesis, consistency watchlist,
+specialist agenda or publication. Shared SOURCE, unknown dates,
+reported/rejected accounts and original hue reasons are preserved.
+No49 commit/push, scientific adoption, next tranche, Foma assay,
+introduction/PDF or unrelated local-file changes are included.
+
+## Forty-eighth alignment checkpoint: make through show finite cells (releasedc746b983)
 
 ### Identity
 
