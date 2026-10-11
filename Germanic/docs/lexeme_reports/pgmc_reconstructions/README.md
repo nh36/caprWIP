@@ -6,7 +6,55 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-second alignment checkpoint
+## Forty-third alignment checkpoint
+
+Rows2270-2277 (throw, wart, wash, wasp, water, wax noun, grow and way)
+are individually reconciled:111 inherited identities,39 native occurrences,
+30 scoped processes, four reused focused positions and34 position-support
+rationales. The113 exact SOURCE amendments cover108 cells, three arguments,
+one form kind and one asserted stage. Shared throw SOURCE/outside2269
+analysis is unchanged. One reversible Fulk/wash status upgrade records an
+actual reported lexical quotation, not a new consultation or adopted
+derivation [@Fulk2018, p.249]. All1395 consultation identities and786
+dictionary dispositions survive; there are2286 dictionary records.
+Totals6182 forms,6465 positions,485 comparisons and1061 rationales;
+345 bounded/48 unreviewed core rows.
+
+Throw versus become and the metalinguistic feolan subclass label remain
+separate. Wart/callus and wasp's inherited versus transferred gender are
+not exact-cell equivalences. Wash's conditional PGmc admission versus
+conservative PWGmc lexicon and grow's secondary versus probably older
+j-present are substantive focused questions whose causes remain
+unestablished [@Kroonen2013, pp.566,575,581; @Orel2003, pp.438-439,450-451;
+@Ringe2017, pp.134,140-141,213,252; @RingeTaylor2014, pp.127-128,182,347,350].
+
+Water's singular/collective, r/n cases, suffix vocalism and later leveling
+are separately attributed; Fulk's actual final-r body says 'perhaps also'
+water, not an unqualified chronological witness. Wax's s-stem versus
+sko alternatives remain intra-author; strong grow, weak wax-cover and
+material wax are distinct. Short-e way is not the long-vowel wave chain
+[@Kroonen2013, pp.566,575-578; @Orel2003, pp.439,451-452;
+@Ringe2017, pp.55-58,308-309; @Fulk2018, pp.82,180,265-266;
+@RingeTaylor2014, pp.59-60,212,312,387].
+
+See the latest commentary and nine-heading survey audit, plus the three
+`reading_accountability/alignment-2270-2277-*.tsv` receipt tables.
+Native paragraph/hash/Unicode spans preserve diplomatic text without
+claiming new image certification. Scientific owners and all46 ORIGINAL
+protections remain unchanged. Tranche42 is released as d1dc6a83;
+Tranche43 remains uncommitted. No43 release,44 preparation, scientific
+adoption or PDF is included. The full393-row programme remains open.
+
+All488 focused survey/analysis tests pass. Canonical refresh and independent
+artifact check are clean; bibliography, section locators,55 new-prose
+printed-page references, nine audit headings and whitespace pass.
+Independent post-refresh verification preserves6113 inherited forms except
+113 exact fields,6281 outside positions,475 unaffected comparisons,
+1027 inherited rationales,1367 outside consultations,118 untouched research
+hashes and all46 ORIGINAL science hashes. All39 native spans resolve;
+alignment refuses48 separately from unchanged RT conventions.
+
+## Forty-second alignment checkpoint (released d1dc6a83)
 
 Rows2262-2269 (tongue, town, tread, trough, wade, wain, wake, warp)
 are individually reconciled:84 inherited identities,57 native occurrences,

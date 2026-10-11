@@ -10,13 +10,224 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6113 evidence
-records,1395 actual consultations,6392 positions,483 comparisons and1027
+393 applicability screens per source. The database contains6182 evidence
+records,1395 actual consultations,6465 positions,485 comparisons and1061
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:337 core rows are bounded and56 unreviewed.
+explanation remain ongoing:345 core rows are bounded and48 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
+
+## Forty-third alignment: throw through way
+
+This increment follows the released forty-second checkpoint and reconciles
+all111 inherited analytical identities for rows2270-2277. Thirty-nine native
+occurrences and30 scoped arguments add69 records; four focused positions
+reuse arguments, and34 rationales record position support rather than causes
+of inter-author divergence. The184 positions link179 distinct records: the
+shared wash/water process is one record with two row-local interpretations,
+not two independent source votes. Exact receipts retain113 SOURCE fields:
+108 cells, three arguments, one metalinguistic form-kind correction and one
+explicit date. All1395 consultation identities survive. The sole status
+change is Fulk/wash, discussion_only to evidence_found, because the checked
+footnote actually quotes reconstructed wash; reported or conditional
+evidence is still lexical evidence [@Fulk2018, p.249].
+
+The governing questions are lexical identity, paradigm cell and source
+warrant, not whether an alternative string would improve the present output.
+The selected inputs, targets, stages, contexts, FSTs and scientific baselines
+are unchanged. No unique original water paradigm or grow genealogy is
+selected by this annotation tranche. The receipts preserve native text,
+including extraction artifacts, beside existing certified quotations; they
+do not claim a fresh image verification or independent reading of originals
+reported in the held sources.
+
+### Throw: secure word, disputed deeper connection
+
+The selected verb is *weorpan* 'throw', not the textile noun reviewed in the
+preceding tranche. Kroonen's entry traces the original meaning to bending
+and proposes a connection with Greek circular motion, assuming an n-present
+of the root native *uergw-*. He redirects the Slavic throw comparison to a
+different Germanic verb. His possible labial reflex after a resonant in a
+word beginning with a labial is a phonological proposal, not evidence that
+every admitted comparison has already established that law. Orel adopts
+the Lithuanian movement/shivering connection while separately reporting
+spin, raid, turn and Greek proposals in his bibliography. A bibliographical
+entry does not turn those reports into one endorsed pedigree
+[@Kroonen2013, pp.580-582; @Orel2003, pp.457-458].
+
+Ringe retains the verb's PGmc identity while suspending judgment about
+regular labialization: the examples are too few and counterexamples remain.
+That reservation does not reject the verb. His class III paradigm separately
+gives infinitive *werpaną*, present3sg *wirpidi*, past3sg *warp* and past3pl
+*wurpun*. Present raising before a high-front continuation is not the same
+conditioning as bind's nasal-coda raising, and neither is the past-grade
+alternation [@Ringe2017, pp.140-141,251-253].
+
+Ringe-Taylor's neighboring become and throw histories require exact row
+attribution. Throw has the *weorpan/wearp/wurpon/worpen* principal parts;
+become has the distinct plural and participle *wurdon/worden*. The native
+*Ih* is a subclass label attached to *feolan*, not a reconstructed throw
+word. On the present table, throw's *wyrpst* and *towierpd* distinguish its
+row from become's *wyrst* and *wierd*. These later forms support actual
+cell/leveling questions, not an invented selected PGmc ending. The shared
+Kroonen SOURCE record and preceding textile-row analysis are preserved
+[@RingeTaylor2014, pp.181-183,346-351].
+
+### Wart and wasp: family and gender are not endings to erase
+
+Orel's feminine optional-n wart formation includes *weart/wearte*. Kroonen's
+masculine callus formation and OE *wearr* supply relevant family evidence,
+not the exact selected feminine n-stem. His height/top comparisons are
+usual but semantically uncompelling; optional grades and suffix units are
+retained separately. The remaining question is the justified formation and
+relation of the feminine wart and masculine callus, not a normalization
+that discards gender, dental or optional n. The dictionary-only scope is
+legitimate, without fabricated grammar negatives
+[@Orel2003, pp.449-451; @Kroonen2013, pp.574-576].
+
+Orel gives masculine *wabsaz* and feminine *wabsjō*, linking the insect to
+weaving. Ringe reconstructs feminine *wafsō* from apparently weave-derived
+PIE *wobhsah2*, then explicitly identifies OE *wæfs* as transferred into
+masculine a-stems. Those claims are not two spellings of an identical
+original masculine cell. The held arguments establish a formation/gender
+problem, not the exact chronology of transfer or every selected consonant
+and ending value. Kroonen's bounded no-form disposition remains unchanged
+[@Orel2003, pp.437-439; @Ringe2017, pp.133-135].
+
+### Wash: conditional membership and a genuine reported quotation
+
+Kroonen explicitly makes wash a water-derived ske-present. Orel's
+pan-Germanic admission depends on whether the Norse weak verb is inherited
+rather than borrowed from West Germanic. Ringe-Taylor instead includes wash
+in the conservative PWGmc-only lexicon, suspects a Norse loan, and allows
+that accidental attestation gaps may conceal wider inheritance. This is
+a real difference in reconstruction warrants, not an unconditional
+inheritance-versus-proved-loan opposition. The focused
+wash-membership-warrants case remains substantive with its cause
+unestablished [@Kroonen2013, pp.575-576; @Orel2003, pp.450-451;
+@RingeTaylor2014, pp.126-128].
+
+Fulk's complete ske-formation discussion supplies a previously missed
+lexical quotation. His footnote reports Bammesberger's possible derivation
+of PGmc wash from PIE *uod-sk-* and actually quotes OE *wæscan*. Fulk
+adds that a reduced-grade root is expected and suggests schwa secundum
+for the o. The native extracted PGmc token ends in an ASCII quotation
+mark; the receipt retains that literal instead of silently certifying a
+corrected nasal sign. Bammesberger remains a reported author, not a newly
+consulted source, and the shared wash/water process retains its caveat
+while acquiring separate row-local roles. Genuine lexical evidence
+requires the reversible status upgrade even though neither derivation
+nor PGmc membership has been adopted [@Fulk2018, pp.246-249].
+
+The later *wescep* present form is only possibly relevant and is late/not
+strictly West Saxon. It cannot decide the original strong/weak formation
+or conservative lexical admission. The exact reduced-grade derivational
+premise, Norse transmission and selected full input remain separate gaps
+[@RingeTaylor2014, pp.232-234].
+
+### Water: preserve the entire comparison, not one nominative
+
+The selected citation and input are different: PROTO *wátną*, PROTOFORM
+*wátōr*, with unchanged pgmc input-stage metadata. Kroonen gives r/n
+stems and an explicit PGmc *watōr/watenaz* contrast. His possible static
+PIE direct/oblique pair is separate from the long-suffix and accented-oblique
+pair to which the Germanic material points. Qualified e-grade wetland
+derivatives and later Nordic n-thematization versus West Germanic
+r-thematization are not original singular cases. Orel likewise preserves
+the heteroclitic n/r material; his *watōn* is explicitly Gothic, not a
+general PGmc label inferred from the dictionary title
+[@Kroonen2013, pp.575-576; @Orel2003, pp.450-452].
+
+Ringe's singular acrostatic-to-proterokinetic history and collective are
+different paradigms. The collective's root grade/accent changes and
+reinterpretation as singular lead to the PGmc direct *watōr*, genitive
+*watiniz* with the questioned *watinz?*, and dative *watini*. The apparently
+collective plural stem *wat-n-* does not supply an invented set of plural
+endings. Gothic attests only dative plural *watnam*; its dative singular
+*watin* is another cell. The en/in suffix difference between accounts
+deserves a precise original-paradigm question, not automatic vowel
+normalization [@Ringe2017, pp.55-58,146-148,161-163,221-223,308-310].
+
+Fulk's heteroclitic discussion preserves Gothic genitive *watins* and
+dative plural *watnam*, explicitly says other plural cases are unattested,
+and distinguishes thematic Norse *vatn* from rare, rhyme-supported *vatr*.
+His report of Schindler's singular/collective paradigms expressly does
+not attribute the initial laryngeal assumption to Schindler. The actual
+final-r quantity argument is on printed82, where water is 'perhaps also'
+an example beside four. The index is an anchor, not a replacement for that
+qualification, and the new water quotation remains analytically undated
+rather than being dated by an index or confidence score
+[@Fulk2018, pp.14-16,81-85,179-181,388-389].
+
+Ringe-Taylor separately treats final-r unrounding/shortening, root fronting,
+unstressed suffix fronting and later merger. Water's relative chronology
+role is qualified as 'perhaps'. Identical native intermediate glyphs at
+different arrows retain separate occurrences and stage premises. His
+light-root inflection argument distinguishes syncopated genitive
+*weetres* from leveled *weeteres*, and plural *wetru* from *weeteru*.
+The native *weeter-* is a water stem, whereas fire, angel/luminary, bird
+epenthesis and nonalternating heaven are comparative controls. None
+supplies a selected water case merely because it occurs in the same
+paragraph [@RingeTaylor2014, pp.58-60,118-120,146-148,151-153,332-334,386-388].
+
+### Wax and grow: intra-author alternatives versus actual priority
+
+Kroonen's wax account retains two alternatives: an s-stem with genitive
+metathesis, or sko formation with different dissimilation. They are
+intra-author hypotheses, not an exclusive inter-author dispute. The
+Germanic neuter versus Balto-Slavic masculine contrast is part of the
+formation warrant. Orel does not exclude connection with growth, citing
+the Slavic folklore power/might designation, while weave and borrowing
+accounts remain reports [@Kroonen2013, pp.565-567; @Orel2003, pp.438-439].
+
+Grow exposes a genuinely consequential priority difference. Kroonen calls
+the j-present apparently secondary; Orel derives his strong grow
+homograph I from the unsuffixed strong verb. Ringe prefers a probably
+older PGmc j-present instead of the unsuffixed PGmc reconstruction,
+interpreting daughter thematic forms as innovations. His intensive
+formation is apparently post-PIE and is parallel to, but historically
+unconnected with, the Sanskrit causative. Preserve 'apparently' and
+'probably': qualifications do not eliminate a priority difference, but
+they also do not prove its cause. The focused grow-derivational-priority
+case remains substantive/unestablished
+[@Kroonen2013, pp.565-567; @Orel2003, pp.438-439;
+@Ringe2017, pp.133-135,212-214].
+
+Orel's second identical *waxsjanan* token is homograph II, a weak wax-cover
+verb derived from the material noun; its independent coordinates matter.
+Fulk's class VI list and actual footnote report Mailhammer's reasons against
+the usual causative/iterative account while retaining etymological
+uncertainty. That report is not Fulk's unqualified endorsement or a newly
+verified Mailhammer original. Ringe-Taylor's historical j-present,
+Northumbrian infinitive *weexa*, early Mercian finite *wexit* and West
+Saxon *wyxt/wihst* likewise remain separate cells and dates. Native
+corruptions are not silently repaired into quoted selected infinitives
+[@Orel2003, p.439; @Fulk2018, pp.263-267,388-389;
+@RingeTaylor2014, pp.175-177,311-313,349-351].
+
+### Way and the boundary of this result
+
+Kroonen and Orel derive the road noun from the carry/move verb; the verb
+and Norse u-stem supply family/formation evidence, not the exact OE
+a-stem ending. Orel's native z remains beside the previously certified
+velar glyph. Ringe-Taylor's short-e way chain is distinct from the
+long-vowel wave example even where later native glyphs coincide. Literal
+identity alone cannot identify etyma or assign a shared historical stage
+[@Kroonen2013, pp.577-578; @Orel2003, p.452;
+@RingeTaylor2014, pp.211-213].
+
+All eight whole-row causes remain unestablished. Dictionary-only wart and
+wax remain valid bounded research outcomes, not missing invented reviews.
+Independent verification preserves6113 inherited records except the113
+exact receipt fields,6281 outside positions,475 unaffected comparisons,
+1027 inherited rationales,1367 outside consultations,118 untouched research
+hashes and all46 ORIGINAL scientific hashes. All39 native paragraph hashes
+and whole-token Unicode spans resolve. The alignment gate refuses48
+remaining rows independently of the unchanged RT conventions refusal.
+The full393-row alignment, conditioning census, explanatory synthesis,
+non-adopting watchlist and finite specialist agenda remain unfinished.
+No Tranche43 release, Tranche44 preparation or publication is included.
 
 The approved stage requires the complete relevant Ringe/Fulk/
 Ringe-Taylor pass, followed by alignment of all393 core rows. Its initial

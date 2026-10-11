@@ -336,14 +336,14 @@ row_id	status	comparison_ids	alignment_status	alignment_case_ids
 2267	reviewed	core-2267	bounded_limit	core-2267
 2268	reviewed	core-2268	bounded_limit	core-2268
 2269	reviewed	core-2269	bounded_limit	core-2269
-2270	reviewed	core-2270	unreviewed	
-2271	reviewed	core-2271	unreviewed	
-2272	reviewed	core-2272	unreviewed	
-2273	reviewed	core-2273	unreviewed	
-2274	reviewed	core-2274	unreviewed	
-2275	reviewed	core-2275	unreviewed	
-2276	reviewed	core-2276	unreviewed	
-2277	reviewed	core-2277	unreviewed	
+2270	reviewed	core-2270	bounded_limit	core-2270
+2271	reviewed	core-2271	bounded_limit	core-2271
+2272	reviewed	core-2272	bounded_limit	core-2272
+2273	reviewed	core-2273	bounded_limit	core-2273
+2274	reviewed	core-2274	bounded_limit	core-2274
+2275	reviewed	core-2275	bounded_limit	core-2275
+2276	reviewed	core-2276	bounded_limit	core-2276
+2277	reviewed	core-2277	bounded_limit	core-2277
 2278	reviewed	core-2278	unreviewed	
 2279	reviewed	core-2279	unreviewed	
 2280	reviewed	core-2280	unreviewed	

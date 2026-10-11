@@ -8,7 +8,143 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
-## Forty-second alignment checkpoint: tongue through warp
+## Forty-third alignment checkpoint: throw through way
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base d1dc6a833b6cbd60943a51adc403eac387cdf7c5 on update; Tranche42 is
+committed and pushed. Authorized43 completion excludes43 release,
+44 preparation and scientific adoption. Immutable preparation pins6113
+forms,111 inherited identities and125 research hashes. Never recreate
+preparation or execute/import the persisted candidate.
+
+### Question
+
+Can the eight rows be reconciled without conflating throw/become/textile
+warp, wart/callus, wash's quotation with adopted derivation, inherited
+versus transferred wasp gender, water singular/collective/case histories,
+wax's two formation hypotheses, grow versus weak wax-cover, or way/wave?
+The falsifiable claims concern actual source identities, cells, qualifiers
+and stage premises. Whole-token matching or numeric completion alone
+cannot establish them.
+
+### Current state
+
+Before edits:337 bounded/56 unreviewed core rows,6113 forms,1395
+consultations,6392 positions,483 comparisons and1027 rationales.
+All eight input stages are pgmc. Water retains citation *wátną* versus
+input *wátōr*; no selected corpus/target/stage/context owner is changed.
+Prior survey/commentary/Tranche42 receipts and the immutable43 packets
+are consulted as research history, not new source arguments.
+
+### Diagnosis
+
+Executable firing census, new traces and counterfactuals: n/a, because
+annotation-only research adopts no law, input or order change.
+All111 inherited identities survive individual reconciliation.
+Thirty-nine native occurrences and30 scoped processes add69 records;
+four focused positions reuse evidence and34 rationales record position
+support. The184 positions link179 distinct records, including one shared
+wash/water process. Exact113 SOURCE amendments comprise108 cells, three
+arguments, one form kind and one asserted date. Prospective tables and
+receipts are fully validated and pre-serialized before single persistence.
+
+The native *Ih* belongs to feolan's subclass, not a lexical throw word;
+throw/become rows have distinct principal parts and present cells
+[@RingeTaylor2014, pp.182,347,350]. Fulk249 genuinely quotes PGmc wash
+and PIE derivational material in a reported possibility; the status upgrade
+has one reversible owner receipt, not a fabricated new consultation
+[@Fulk2018, pp.246-249]. Shared throw SOURCE and outside2269 analysis
+are preserved [@Kroonen2013, p.581].
+
+### Literature
+
+Complete relevant dictionary arguments and necessary family cross-references:
+[@Orel2003, pp.437-439,449-452,457-458;
+@Kroonen2013, pp.565-567,574-578,580-583].
+Complete relevant grammar bodies, tables, footnotes and cross-references:
+[@Ringe2017, pp.55-58,133-135,139-141,146-148,161-163,212-214,221-223,
+251-253,308-310; @Fulk2018, pp.14-16,81-85,179-181,246-250,263-267,388-389;
+@RingeTaylor2014, pp.58-60,118-120,126-128,146-148,151-153,166-168,
+175-177,181-183,211-213,232-234,311-313,332-334,346-351,386-388].
+These are held-argument readings, not new exhaustive image certification.
+Reported Bammesberger, Schindler and Mailhammer arguments remain reports.
+
+Source-supported findings include conditional wash admission versus
+conservative PWGmc-only reconstruction, wasp gender transfer, independent
+water singular/collective material and grow j-present priority
+[@Orel2003, pp.438-439,450-451; @RingeTaylor2014, pp.126-128;
+@Ringe2017, pp.55-58,134,213,308-309; @Kroonen2013, pp.566,575-576].
+CAPR's relation labels, separately queryable local cells and decision not to
+adopt a genealogy are modelling/research decisions, not attributed source claims.
+
+### Historical analysis
+
+Historical stage/scope is retained per individual explicit statement or
+named unknown. Dictionary context and confidence cannot date an endpoint.
+Fulk's actual final-r water example is qualified 'perhaps also'; its new
+analytical quotation remains undated. The post-PIE intensive is not
+silently relabeled PIE or PGmc [@Fulk2018, p.82; @Ringe2017, p.213].
+RT's water root fronting, suffix fronting/merger and later syncope/leveling
+are different domains; the later stem is actual water, not an unrelated
+comparator [@RingeTaylor2014, pp.147,152,333,387].
+
+Historical phenomenon versus executable proxy: no new correspondence or
+rule characterization is adopted. Chronology edges, stage-entailed or
+independently demonstrated: none promoted. Source histories and qualifications
+are recorded without deriving a date from an FST prefix, environment or
+successful output. Published analogy/formation arguments are reported
+faithfully without adopting grammatical conditioning or lexical diffusion.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+Registry-verdict: n/a, because this is not an SC adjudication.
+Wash membership and grow priority are focused substantive differences
+with unestablished causes; all eight whole-row causes remain unestablished.
+Position support is not inter-author explanation. Wart/wax dictionary-only
+scope and Kroonen's bounded wasp negative remain legitimate.
+No corpus/input/target/stage/context/FST/baseline adoption or PDF.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, three new receipt
+tables, page-cited commentary/README, this nine-heading record and focused
+regressions are the persistent owners. Only adjudicate.py --refresh
+regenerates projections. The positive/negative controls distinguish lexical
+homographs, selected versus other cells, reported versus endorsed claims,
+explicit versus unknown dates, actual source paragraphs and exact owner
+reversal. Scientific fingerprint effect: none; no refreeze authorized.
+
+Independent current-SOURCE verification preserves6113 inherited forms except
+113 exact fields,6281 outside positions,475 unaffected comparisons,
+1027 inherited rationales and1367 outside consultations. All1395 consultation
+identities survive with exactly one Fulk/wash status exception. All118
+untouched research hashes and46 ORIGINAL science hashes survive. All39
+native paragraphs/hash/whole-token Unicode spans resolve; queries reproduce
+345 bounded/48 unreviewed,184 positions/179 records and34 position-support
+rationales. Alignment refusal and RT-conventions refusal remain separate.
+
+The combined focused survey/analysis suite passes all488 tests.
+Canonical refresh and independent artifact check report CONTROL PLANE CLEAN.
+Bibliography, section locators,55 new-prose printed-page references, all
+nine headings and whitespace pass. Post-refresh independent verification
+reconfirms every preservation count and native occurrence. The pre-existing
+resource warning in index emission does not affect the result; no unrelated
+tooling edit is included.
+
+### Residue
+
+Exact deeper throw pedigree/labialization, feminine wart/callus relation,
+wash's reduced-grade and transmission premises, wasp gender chronology,
+water original paradigm/suffix history, wax formation and grow priority
+cause remain open. Selected cells and historical inputs are not adopted
+from output fit. Full393-row alignment, conditioning census, synthesis,
+non-adopting watchlist and specialist agenda remain unfinished.
+Tranche43 stays uncommitted; no44 preparation is included.
+
+## Forty-second alignment checkpoint: tongue through warp (released d1dc6a83)
 
 ### Identity
 
